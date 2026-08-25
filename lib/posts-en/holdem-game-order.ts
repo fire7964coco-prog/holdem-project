@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A hand of Texas Hold'em runs: post blinds → deal two hole cards → preflop → flop (3 cards) → turn (1 card) → river (1 card) → showdown, with four betting rounds in total.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-08-10",
+  updated: "2026-08-25",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎬",
@@ -306,7 +306,7 @@ The closer you are to the button, the better — acting last lets you see what e
 
 ### 3. Chasing draws blindly
 
-A flush or straight draw doesn't mean an automatic call. You have to weigh **pot odds** — the price of the call against the size of the pot. If the pot is 100,000 and you must call 50,000, your draw needs to complete at least about 33% of the time to be worth it.
+A flush or straight draw doesn't mean an automatic call. You have to weigh **pot odds** — the price of the call against the size of the pot. If the pot — with your opponent's bet already in it — is 100,000 and you must call 50,000, your draw needs to complete at least about 33% of the time to be worth it.
 
 ### 4. Bluffing the river with a weak hand out of nowhere
 

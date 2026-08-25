@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Ações de aposta no Texas Hold'em: check, call, raise e fold",
   seoTitle: "Check, pagar ou foldar? — Ações de aposta e regras do raise",
   desc: "Chegou a sua vez e deu branco? Entenda o que são check, call, raise e fold no poker, como funciona a regra do min-raise e quantas vezes dá para reaumentar.",
-  tldr: "O Texas Hold'em tem 5 ações de aposta: check (passar de graça), apostar (abrir a rodada), pagar/call (igualar uma aposta), aumentar/raise (o aumento mínimo é igual à aposta ou ao raise anterior) e foldar. Você só pode dar check quando não há aposta viva à sua frente — no preflop, isso só acontece sendo o big blind.",
+  tldr: "O Texas Hold'em tem 5 ações de aposta: check (passar de graça), apostar (abrir a rodada), pagar/call (igualar uma aposta), aumentar/raise (o aumento mínimo é igual à aposta ou ao raise anterior) e foldar. Você só pode dar check quando não há aposta viva à sua frente — no pré-flop, isso só acontece sendo o big blind.",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-07-12",
-  masterUpdated: "2026-07-11",
+  updated: "2026-08-25",
+  masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "🃏",
@@ -18,6 +18,7 @@ export const POST: Post = {
     "o que e check no poker",
     "o que e call no poker",
     "min raise poker",
+    "regras raise poker",
     "quantas vezes pode aumentar no poker",
     "check raise e permitido",
     "string bet",
@@ -49,7 +50,7 @@ Toda decisão que você toma numa mesa de poker é uma destas cinco:
 | Ação | Quando está disponível | Custo em fichas |
 |--------|---------------|-----------|
 | Fold | Sempre que a ação estiver com você | Grátis — mas as fichas que já foram para o pote ficam lá |
-| Check | Só quando não há aposta viva à sua frente (preflop: só como big blind) | Grátis — você passa a vez sem colocar fichas |
+| Check | Só quando não há aposta viva à sua frente (pré-flop: só como big blind) | Grátis — você passa a vez sem colocar fichas |
 | Call | Depois que alguém apostou ou aumentou | Você iguala exatamente a aposta atual |
 | Bet | Primeira aposta da rodada | O valor que você escolher (mínimo = 1 big blind) |
 | Raise | Depois que alguém apostou | Pelo menos o tamanho da aposta ou do raise anterior por cima |
@@ -91,7 +92,7 @@ Check vs call é a confusão mais comum de iniciante, então aqui vai a separaç
 
 | | Check | Call |
 |-|-------|------|
-| Quando existe | Não há aposta viva à sua frente (preflop: só como big blind) | Alguém apostou antes de você |
+| Quando existe | Não há aposta viva à sua frente (pré-flop: só como big blind) | Alguém apostou antes de você |
 | Custo em fichas | Grátis | Você iguala a aposta atual |
 | O que diz | "Passo, mas continuo" | "Pago para continuar" |
 
@@ -103,7 +104,7 @@ Exemplo real: você está no flop com K♠ 8♦. Ninguém apostou, então você 
 
 Foldar significa entregar suas cartas e desistir da mão. Você não paga nada novo, mas ==r:cada ficha que você já colocou fica no pote==.
 
-Sim — sempre que a ação estiver com você pode foldar, mesmo antes de apostar qualquer coisa, e o fold é vinculante. De graça não é: em torneio, foldar quando não há aposta à sua frente conta como "fold não padrão" pela ==regra 84 da WSOP== e pode render uma advertência. E repare na armadilha: **foldar quando você poderia dar check de graça é jogar uma mão fora sem motivo nenhum**. Se ninguém apostou, apenas dê check.
+Sim — sempre que a ação estiver com você, você pode foldar, mesmo antes de apostar qualquer coisa, e o fold é vinculante. De graça não é: em torneio, foldar quando não há aposta à sua frente conta como "fold não padrão" pela ==regra 84 da WSOP== e pode render uma advertência. E repare na armadilha: **foldar quando você poderia dar check de graça é jogar uma mão fora sem motivo nenhum**. Se ninguém apostou, apenas dê check.
 
 Uma regra de etiqueta do jogo ao vivo: não folde ==fora da sua vez==. Espere a ação chegar até você — foldar antes entrega informação aos jogadores que ainda estão decidindo, e a maioria dos clubes avisa ou penaliza. Saber *quando* foldar é a jogada certa é uma habilidade à parte — é o tema de [quando foldar no poker](/pt/blog/holdem-when-to-fold).
 
@@ -182,7 +183,7 @@ Primeiro a agir no flop, ninguém apostou, e um jogador novato empurra fichas **
 
 ### Erro 2 — O string raise
 
-"Eu pago... aliás, aumento!" Não. No poker ao vivo, sua ação trava no momento em que você anuncia. Já vi dealer decretar call no meio da frase mais vezes do que consigo contar. Anuncie "raise" *primeiro*, depois mova as fichas.
+"Eu pago... aliás, aumento!" Não. No poker ao vivo, sua ação trava no momento em que você anuncia. Já vi dealer decretar call no meio da frase mais vezes do que eu gostaria. Anuncie "raise" *primeiro*, depois mova as fichas.
 
 ### Erro 3 — O big blind foldando um flop grátis
 

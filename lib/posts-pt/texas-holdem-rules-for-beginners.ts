@@ -3,13 +3,13 @@ import type { Post } from "../posts";
 export const POST: Post = {
   slug: "texas-holdem-rules-for-beginners",
   title: "Como jogar Texas Hold'em para iniciantes — regras, fichas, mãos e primeira estratégia",
-  seoTitle: "Nunca jogou pôquer? — Regras do Texas Hold'em passo a passo",
-  desc: "Nunca jogou pôquer? Aprenda a jogar Texas Hold'em passo a passo: blinds, quantas fichas dar a cada um, ranking de mãos e uma cola pronta para deixar na mesa.",
+  seoTitle: "Nunca jogou poker? — Regras do Texas Hold'em passo a passo",
+  desc: "Nunca jogou poker? Aprenda a jogar Texas Hold'em passo a passo: blinds, quantas fichas dar a cada um, ranking de mãos e uma cola pronta para deixar na mesa.",
   tldr: "No Texas Hold'em cada jogador recebe 2 cartas fechadas, usa 5 cartas comunitárias, e a melhor mão de 5 cartas ganha depois de quatro rodadas de apostas.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-08-14",
-  masterUpdated: "2026-07-12",
+  updated: "2026-08-25",
+  masterUpdated: "2026-08-14",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
@@ -32,6 +32,8 @@ Você precisa saber o que são os blinds, quando é a sua vez de agir, como func
 
 Este guia explica ==como jogar Texas Hold'em para iniciantes== em português claro, com a ordem exata do jogo, a configuração de fichas para começar, como dar as cartas e uma cola pronta para deixar do lado da mesa.
 
+Tudo o que vem abaixo sai de mesas de verdade — mesa da cozinha, home game e clube — e não só do livro de regras, então vou apontar os lugares exatos onde jogador novo tropeça na prática.
+
 ### Como jogar Texas Hold'em em 30 segundos
 
 1. Dois jogadores pagam os **blinds** (apostas obrigatórias)
@@ -49,7 +51,7 @@ Fatos essenciais:
 
 ---
 
-## Regras básicas do Texas Hold'em
+## Quais são as regras básicas do Texas Hold'em?
 
 As regras básicas do Texas Hold'em são simples quando você enxerga a mesa em ordem.
 
@@ -69,15 +71,15 @@ Em seguida, o dealer revela cinco cartas compartilhadas no centro da mesa:
 
 </div>
 
-==r:Você **não** é obrigado a usar as duas cartas da sua mão.== Dá para usar duas, uma, ou até nenhuma, se a própria mesa formar a melhor mão — uma habilidade chamada [ler a mesa](/pt/blog/holdem-reading-the-board).
+==r:Você **não** é obrigado a usar as duas cartas da sua mão.== Dá para usar duas, uma, ou até nenhuma, se a própria mesa formar a melhor mão — uma habilidade chamada [ler o board](/pt/blog/holdem-reading-the-board).
 
 Por exemplo:
 
-| Suas cartas | Mesa | Sua melhor mão |
+| Suas cartas | Board | Sua melhor mão |
 |-----------|-------|----------------|
 | A♠ K♠ | A♦ 7♣ 7♥ 2♠ 9♣ | Dois pares, ases e setes |
 | 8♠ 8♦ | K♣ 8♥ 4♠ 4♦ J♣ | Full house de oitos com quatros |
-| 2♣ 3♦ | A♠ K♠ Q♠ J♠ 10♠ | Royal flush na mesa |
+| 2♣ 3♦ | A♠ K♠ Q♠ J♠ 10♠ | Royal flush no board |
 
 Se o ranking de mãos ainda é novidade, abra o [ranking de mãos do Texas Hold'em](/pt/blog/holdem-hand-rankings) antes de jogar. Saber [se um flush ganha de uma sequência](/pt/blog/holdem-flush-vs-straight) é mais importante do que decorar estratégia avançada.
 
@@ -114,9 +116,9 @@ O Texas Hold'em funciona com **2 a 10 jogadores** em uma mesa. Você não precis
 | 3–6 | Short-handed (6-max) | O mais comum online; mais mãos são jogáveis |
 | 7–10 | Full ring (9-max) | O clássico de casa/cassino; jogue mais fechado, foldando mais |
 
-Para um primeiro jogo em casa, **4 a 6 jogadores** é o ponto ideal — ação suficiente para aprender, e poucos o bastante para as mãos andarem rápido.
+Para um primeiro jogo em casa, **4 a 6 jogadores** é o ponto ideal — ação suficiente para aprender, e sem gente demais para as mãos andarem rápido.
 
-==g:Quando sobram só dois jogadores (ou você começa com dois), isso se chama heads-up.== As regras são as mesmas, com uma inversão: ==o botão paga o small blind e age primeiro antes do flop, mas o big blind age primeiro no flop, no turn e no river.== Essa inversão mantém o jogo justo, já que, sem ela, um jogador sempre agiria por último.
+==g:Quando sobram só dois jogadores (ou você começa com dois), isso se chama heads-up.== As regras são as mesmas, com uma inversão: ==o botão paga o small blind e age primeiro antes do flop, mas o big blind age primeiro no flop, no turn e no river.== Essa inversão mantém o jogo justo, já que, sem ela, o mesmo jogador agiria por último em todas as streets.
 
 O número de jogadores também muda sua estratégia — quanto mais adversários, maior a chance de alguém ter uma mão forte, então você folda as mãos mais fracas. Se estiver em dúvida entre um jogo casual de cash e um formato competitivo, veja [cash game vs torneio](/pt/blog/holdem-tournament-vs-cash-game).
 
@@ -124,7 +126,7 @@ O número de jogadores também muda sua estratégia — quanto mais adversários
 
 ## Quem age primeiro no Texas Hold'em?
 
-Essa é uma das dúvidas mais comuns de iniciante, porque a resposta muda depois do flop.
+A resposta direta: no pré-flop, age primeiro o jogador à esquerda do big blind; do flop em diante, age primeiro o primeiro jogador ativo à esquerda do botão — e o botão age por último. É uma das dúvidas mais comuns de iniciante, justamente porque a resposta muda depois do flop.
 
 | Rodada | Primeiro a agir | Por quê |
 |------|---------------------|-----|
@@ -137,13 +139,13 @@ O truque fácil para memorizar:
 
 ==**Antes do flop, olhe à esquerda do big blind. Depois do flop, olhe à esquerda do botão.**==
 
-É por isso que ==g:o botão é uma posição tão poderosa==. ==O botão geralmente age por último no flop, no turn e no river==, o que significa ver o que todos os outros fazem antes de decidir. Um guia completo de cada assento — do UTG ao botão, 6-max vs 9-max e o range de abertura de cada posição — fica no [guia de posições do pôquer](/pt/blog/holdem-positions).
+É por isso que ==g:o botão é uma posição tão poderosa==. ==O botão geralmente age por último no flop, no turn e no river==, o que significa ver o que todos os outros fazem antes de decidir. Um guia completo de cada assento — do UTG ao botão, 6-max vs 9-max e o range de abertura de cada posição — fica no [guia de posições do poker](/pt/blog/holdem-positions).
 
 ---
 
 ## Com quantas fichas se começa no Texas Hold'em?
 
-No cassino, os valores das fichas já estão definidos. No jogo em casa, você escolhe a configuração.
+A resposta curta: cerca de 200 em fichas por jogador, com blinds 1/2 — isso dá 100 big blinds, o padrão de cash game. No cassino, os valores já estão definidos; no jogo em casa, você escolhe a configuração.
 
 Para iniciantes, mantenha os números simples. Não precisa de cinco cores de fichas. Três ou quatro cores bastam.
 
@@ -217,13 +219,13 @@ Esta é a sequência amigável para iniciantes:
 3. Small blind e big blind colocam suas fichas.
 4. Distribua uma carta por vez, em sentido horário, começando à esquerda do botão.
 5. Distribua a segunda carta de cada jogador do mesmo jeito.
-6. Rode a rodada de apostas do pré-flop.
+6. Rode as apostas do pré-flop.
 7. Queime uma carta e abra o flop.
 8. Queime uma carta e abra o turn.
 9. Queime uma carta e abra o river.
 10. No showdown, compare as melhores mãos de cinco cartas.
 
-A carta queimada é a carta do topo colocada virada para baixo antes do flop, do turn e do river. Ela protege o baralho e é padrão no pôquer ao vivo.
+A carta queimada é a carta do topo colocada virada para baixo antes do flop, do turn e do river. Ela protege o baralho e é padrão no poker ao vivo.
 
 ![Infográfico visto de cima de uma mesa de Texas Hold'em no momento em que o flop A♠ K♦ 8♥ é aberto no centro](/images/rules-step3-flop.webp "Como dar as cartas no Texas Hold'em — o flop aparece depois da rodada de apostas do pré-flop")
 
@@ -244,7 +246,7 @@ Posição significa **quando você age em cada rodada de apostas**. Agir mais ta
 | Esquerda do dealer | SB (Small Blind) | 8º pré, 1º pós | Pior assento — age primeiro em toda street pós-flop |
 | Dois à esquerda do dealer | BB (Big Blind) | Último pré (9º), 2º pós | Tem a opção de aumentar no pré-flop; fora de posição no pós-flop |
 
-==g:O botão é o assento mais lucrativo da mesa.== Você age por último no flop, no turn e no river — ou seja, todo jogador mostra a força da mão antes de você decidir. Para um guia completo de posições, veja [posições no pôquer: do UTG ao botão](/pt/blog/holdem-positions).
+==g:O botão é o assento mais lucrativo da mesa.== Você age por último no flop, no turn e no river — ou seja, todo jogador mostra a força da mão antes de você decidir. Para um guia completo de posições, veja [posições no poker: do UTG ao botão](/pt/blog/holdem-positions).
 
 ---
 
@@ -316,7 +318,7 @@ Se a sua chance percentual de ganhar for **maior** do que o percentual que as po
 
 ---
 
-## Cola de regras do Texas Hold'em para imprimir
+## Cola de regras do Texas Hold'em em PDF para imprimir
 
 Esta é a versão rápida para deixar do lado da mesa. Copie para as suas notas, imprima a página ou use o PDF em inglês antes do jogo em casa.
 
@@ -326,7 +328,7 @@ Esta é a versão rápida para deixar do lado da mesa. Copie para as suas notas,
 |------|-----------------|
 | Cartas por jogador | 2 cartas fechadas privadas |
 | Cartas comunitárias | 5 cartas compartilhadas na mesa |
-| Melhor mão | A melhor mão de pôquer de 5 cartas |
+| Melhor mão | A melhor mão de poker de 5 cartas |
 | Rodadas de apostas | Pré-flop, flop, turn, river |
 | Apostas obrigatórias | Small blind e big blind |
 | Primeira ação pré-flop | À esquerda do big blind |
@@ -356,13 +358,15 @@ Se dois jogadores têm o mesmo tipo de mão, comparam-se as cartas relevantes ma
 
 ## Erros comuns de iniciante
 
+Depois de anos organizando home games, vejo os mesmos cinco erros em quase toda mesa de iniciantes — e nenhum deles exige estratégia avançada para ser evitado.
+
 ### Erro 1: achar que precisa usar as duas cartas da mão
 
 Você pode usar as duas, uma ou nenhuma das suas cartas fechadas. A melhor mão de cinco cartas ganha.
 
 ### Erro 2: esquecer que a ordem de ação muda
 
-O pré-flop começa à esquerda do big blind. Depois do flop, a ação começa à esquerda do botão.
+O pré-flop começa à esquerda do big blind. Depois do flop, a ação começa à esquerda do botão. No primeiro home game em que dei as cartas, dois jogadores agiam fora de vez em todos os flops — colocamos um botão de dealer físico na mesa, e a confusão sumiu em uma volta.
 
 ### Erro 3: pagar porque "vai que vem"
 
@@ -370,7 +374,7 @@ Draw precisa do preço certo. Se o pote é pequeno e a aposta é enorme, correr 
 
 ### Erro 4: jogar qualquer ás
 
-A♣4♦ parece empolgante para o iniciante, mas ases fracos costumam fazer o segundo melhor par. Ases grandes, como AK e AQ, são muito mais fortes.
+A♣4♦ parece empolgante para o iniciante — já vi mais jogador novo perder fichas com um ás fraco do que com quase qualquer outra mão —, mas ases fracos costumam fazer o segundo melhor par. Ases grandes, como AK e AQ, são muito mais fortes.
 
 ### Erro 5: ignorar a posição
 
@@ -380,12 +384,12 @@ As mãos ficam mais fáceis de jogar quando você age mais tarde. Se você é o 
 
 :::readnext[Continue lendo]
 /pt/blog/holdem-game-order | A ordem do jogo | /images/blog-holdem-game-flow.webp
-/pt/blog/holdem-hand-rankings | Ranking de mãos de pôquer | /images/holdem-hand-rankings-hero.webp
+/pt/blog/holdem-hand-rankings | Ranking de mãos de poker | /images/holdem-hand-rankings-hero.webp
 :::
 
 ## Perguntas frequentes
 
-**Q. Como se joga Texas Hold'em passo a passo?**
+**Q. Como jogar poker Texas Hold'em passo a passo?**
 
 A. Pague os blinds, distribua duas cartas fechadas para cada jogador, rode as apostas do pré-flop, abra o flop, o turn e o river com apostas depois de cada street, e no showdown compare as melhores mãos de cinco cartas.
 
@@ -409,7 +413,15 @@ A. Sim. A-2-3-4-5 é uma sequência válida, chamada de wheel. É a sequência m
 
 A. Existem 1.326 combinações exatas de duas cartas, mas os jogadores costumam agrupá-las em 169 tipos de mão inicial, como AA, AK do mesmo naipe ou 76 de naipes diferentes.
 
-**Q. Qual é a versão mais simples das regras do Texas Hold'em?**
+**Q. Quais são as regras do flush no poker?**
+
+A. Flush é qualquer conjunto de cinco cartas do mesmo naipe. Entre dois flushes, ganha o que tiver a carta mais alta (depois a segunda mais alta, e assim por diante) — não existe hierarquia de naipes no Texas Hold'em. O flush ganha da sequência e da trinca, mas perde para full house, quadra e straight flush. A comparação completa está em [flush vs sequência](/pt/blog/holdem-flush-vs-straight).
+
+**Q. As regras mudam entre cash game e torneio?**
+
+A. A mecânica da mão é idêntica — blinds, streets, showdown. O que muda é a moldura: no cash game os blinds são fixos e você entra e sai quando quiser; no torneio o buy-in é fixo, os blinds sobem no relógio e joga-se até alguém ficar com todas as fichas. A comparação completa está em [cash game vs torneio](/pt/blog/holdem-tournament-vs-cash-game).
+
+**Q. Quais são as regras do poker na versão mais simples?**
 
 A. A versão mais simples: cada jogador recebe 2 cartas privadas. Cinco cartas compartilhadas são reveladas em três etapas (3, depois 1, depois 1). Você aposta depois de cada etapa. A melhor mão de 5 cartas, usando qualquer combinação das suas cartas com as compartilhadas, ganha. Se todos os outros foldarem, você ganha — não importa quais cartas tenha.
 
@@ -429,6 +441,10 @@ A. Você precisa de pelo menos 2 jogadores e pode sentar até 10. Com exatamente
 
 A. No-Limit significa que você pode apostar qualquer valor, até todas as suas fichas, em qualquer rodada de apostas — esse é o famoso "all-in". É o formato padrão e mais popular, incluindo o Main Event da WSOP. Já no Limit Hold'em, cada aposta tem um tamanho fixo; e no Pot-Limit, a aposta é limitada ao tamanho atual do pote.
 
+**Q. Quais são as melhores dicas de poker para iniciantes?**
+
+A. Jogue poucas mãos e jogue-as com agressividade: pares de TT para cima, AK e AQ, aumentando em vez de pagar. Respeite a posição (quanto mais perto do botão, mais mãos dá para jogar), aprenda as pot odds antes de pagar draws e comece em mesas grátis online até a ordem de ação virar automática. Só então suba para stakes baixos de verdade.
+
 **Q. Quanto tempo dura uma mão de Texas Hold'em?**
 
 A. Ao vivo, uma única mão costuma levar de 30 segundos a 2 minutos, embora um pote grande com vários jogadores e decisões difíceis possa levar vários minutos. Uma sessão casual em casa de algumas horas passa por dezenas de mãos, então ninguém precisa dedicar a noite inteira a uma só rodada.
@@ -441,7 +457,7 @@ O Texas Hold'em fica mais fácil de aprender quando você separa as regras da es
 
 Primeiro, ==aprenda o fluxo==: blinds, duas cartas fechadas, cinco cartas comunitárias, quatro rodadas de apostas e a melhor mão de cinco cartas. ==g:Depois aprenda posição, mãos iniciais e as decisões básicas de pote.==
 
-Como próximo passo, revise o [ranking de mãos do Texas Hold'em](/pt/blog/holdem-hand-rankings), pratique com a [tabela de mãos iniciais](/hand-chart) e use a [calculadora de odds de pôquer](/calculator) quando quiser entender por que um call é lucrativo ou não.
+Como próximo passo, revise o [ranking de mãos do Texas Hold'em](/pt/blog/holdem-hand-rankings) e pratique de graça no [solver de poker no navegador](/pt/solver) — as tabelas pré-flop substituem a cola de mãos iniciais, e a aba Equity mostra por que um call é lucrativo ou não.
 
 ---
 
@@ -455,12 +471,12 @@ Como próximo passo, revise o [ranking de mãos do Texas Hold'em](/pt/blog/holde
   </a>
   <a href="/pt/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Ranking de mãos</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Mãos de pôquer — da melhor à pior</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Mãos de poker — da melhor à pior</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">As 10 mãos com probabilidades, exemplos e problemas de mesa</div>
   </a>
   <a href="/pt/blog/holdem-positions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Posições</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Posições no pôquer: do UTG ao botão</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Posições no poker: do UTG ao botão</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Por que o botão vence — mapa de assentos e ranges de abertura</div>
   </a>
   <a href="/pt/blog/holdem-betting-actions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">

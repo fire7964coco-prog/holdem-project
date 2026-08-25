@@ -8,14 +8,14 @@ export const POST: Post = {
   tldr: "Uma mão de Texas Hold'em segue esta ordem: postar os blinds → receber duas cartas fechadas → pré-flop → flop (3 cartas) → turn (1 carta) → river (1 carta) → showdown, com quatro rodadas de apostas no total.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-08-10",
-  masterUpdated: "2026-07-02",
+  updated: "2026-08-25",
+  masterUpdated: "2026-08-25",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎬",
   image: "/images/blog-holdem-game-flow.webp",
   imageAlt: "Diagrama da ordem do jogo no Texas Hold'em — as seis etapas: blinds, pré-flop, flop, turn, river e showdown",
-  tags: ["como jogar texas holdem", "regras do texas holdem", "ordem do poker", "pre-flop flop turn river", "rodadas de apostas no poker", "quem age primeiro no poker", "como funciona uma mao de poker", "showdown poker"],
+  tags: ["ordem do poker", "ordem de jogadas poker", "flop turn river", "pre-flop flop turn river", "rodadas de apostas no poker", "quem age primeiro no poker", "como funciona uma mao de poker", "regras do dealer poker"],
   content: `
 Todo mundo que senta pela primeira vez numa mesa de Texas Hold'em faz a mesma pergunta: ==r:*"Peraí — de quem é a vez, e quando eu coloco fichas no meio?"*== Você sabe que recebe cartas. O que você não sabe é quando apostar, quando saem mais cartas e como o vencedor é decidido de verdade.
 
@@ -76,8 +76,8 @@ A ação começa à esquerda do big blind e segue no sentido horário. Na sua ve
 ### Mãos iniciais sólidas para iniciantes
 
 - **Premium:** A♠A♥ (par de ases), K♠K♥, Q♠Q♥, J♠J♥
-- **Fortes:** A♠K♥ ("Big Slick"), A♠Q♥, A♠J♥, 10♠10♥
-- **Situacionais:** 9♠9♥, 8♠8♥, K♠Q♥, K♠J♥
+- **Fortes:** A♠K♥ ("Big Slick"), A♠Q♥, 10♠10♥, 9♠9♥
+- **Situacionais:** A♠J♥, 8♠8♥, K♠Q♥, K♠J♥
 
 Quais dessas você pode realmente abrir depende da sua cadeira — a [tabela completa das 169 mãos iniciais, separada por posição](/pt/blog/holdem-starting-hands-chart), mostra isso em detalhe.
 
@@ -100,7 +100,7 @@ O flop também libera uma opção nova: o **check**. Se ninguém apostou ainda, 
 
 ## Etapa 3 — O turn: a imagem fica mais nítida
 
-Depois da rodada de apostas do flop, mais uma carta comunitária é distribuída — o **turn**. Agora há quatro cartas na mesa.
+Depois da rodada de apostas do flop, mais uma carta comunitária é distribuída — o **turn** (também chamado de *fourth street*). Agora há quatro cartas na mesa.
 
 O turn é uma street estrategicamente pesada:
 
@@ -114,7 +114,7 @@ O turn é uma street estrategicamente pesada:
 
 ## Etapa 4 — O river: a última carta, a última decisão
 
-Depois da rodada de apostas do turn, a quinta e última carta comunitária é revelada — o **river**. As cinco cartas comunitárias estão na mesa, e não há mais informação nova por vir.
+Depois da rodada de apostas do turn, a quinta e última carta comunitária é revelada — o **river** (também chamado de *fifth street*). As cinco cartas comunitárias estão na mesa, e não há mais informação nova por vir.
 
 Erros clássicos de river:
 
@@ -146,20 +146,20 @@ Quem é obrigado a mostrar primeiro, quando você pode dar muck e a etiqueta em 
 
 ## Quem age primeiro em cada street?
 
-"De quem é a vez?" tem uma resposta antes do flop e outra depois — e é exatamente essa mudança que move toda a estratégia de posição.
+"De quem é a vez?" tem uma resposta antes do flop e outra depois: no pré-flop, age primeiro quem está à esquerda do big blind; do flop em diante, age primeiro o primeiro jogador ativo à esquerda do botão. É exatamente essa mudança que move toda a estratégia de posição.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Street | Age primeiro | Age por último |
 |------|------|------|
 | Pré-flop | Jogador à esquerda do big blind ("UTG") | Big blind |
-| Flop | Small blind (ou o primeiro jogador vivo à esquerda do botão) | Botão |
+| Flop | Small blind (ou o primeiro jogador ativo à esquerda do botão) | Botão |
 | Turn | Igual ao flop | Botão |
 | River | Igual ao flop | Botão |
 
 </div>
 
-O truque para memorizar: ==**antes do flop, olhe à esquerda do big blind; depois do flop, olhe à esquerda do botão.**== O botão age por último em todas as streets do pós-flop — e é exatamente por isso que é a cadeira mais lucrativa da mesa; veja [posições no pôquer: do UTG ao botão](/pt/blog/holdem-positions).
+O truque para memorizar: ==**antes do flop, olhe à esquerda do big blind; depois do flop, olhe à esquerda do botão.**== O botão age por último em todas as streets do pós-flop — e é exatamente por isso que é a cadeira mais lucrativa da mesa; veja [posições no poker: do UTG ao botão](/pt/blog/holdem-positions).
 
 ==g:**Heads-up (2 jogadores) é a exceção:**== o botão posta o *small* blind e age **primeiro** no pré-flop, mas **por último** no flop, no turn e no river. É essa a ordem usada na mão completa que vamos acompanhar logo abaixo.
 
@@ -208,7 +208,7 @@ A aumenta para **6.000** com o Big Slick. B paga com o par de noves.
 
 ### Flop: K♦ 9♠ 3♥
 
-- **A:** par máximo com o melhor kicker (par de reis). Parece forte.
+- **A:** top pair com o melhor kicker (par de reis). Parece forte.
 - **B:** três noves — um **set**. Já é um monstro.
 
 B dá check, A aposta **8.000**, B paga.
@@ -216,7 +216,7 @@ B dá check, A aposta **8.000**, B paga.
 
 ### Turn: 2♣
 
-- **A:** nada muda, segue com o par máximo.
+- **A:** nada muda, segue com o top pair.
 - **B:** segue com o set, não precisa melhorar.
 
 B dá check, A aposta **15.000** (cerca de metade do pote), B paga.
@@ -242,7 +242,7 @@ A lição: ==r:quando o river deu dois pares para A, a mão *pareceu* vencedora 
 
 ---
 
-## As 7 ações de aposta, explicadas de vez
+## As 7 jogadas que você pode fazer, explicadas de vez
 
 ![As ações de aposta do poker — check, call, fold, bet, raise, re-raise, all-in](/images/holdem-betting-options-guide.webp "Todas as ações de aposta disponíveis no Texas Hold'em")
 
@@ -252,13 +252,13 @@ Aqui está tudo o que você pode fazer na mesa — a parte que os iniciantes mai
 
 | Ação | O que faz | Quando está disponível |
 |------|------|------|
-| Fold | Desiste da mão e descarta as cartas | A qualquer momento |
+| Fold | Desiste da mão e descarta as cartas | Sempre que a ação estiver com você |
 | Check | Passa a ação sem apostar | Só quando não há aposta para você |
 | Call | Iguala a aposta atual | Quando há uma aposta para você |
 | Bet | Faz a primeira aposta da rodada | Quando ninguém apostou ainda |
 | Raise | Aumenta por cima da aposta atual | Quando há uma aposta para você |
 | Re-raise (3-bet) | Aumenta por cima de um aumento | Quando há um aumento para você |
-| All-in | Empurra todas as suas fichas | A qualquer momento |
+| All-in | Empurra todas as suas fichas | Sempre que a ação estiver com você |
 
 </div>
 
@@ -295,19 +295,19 @@ Quer o detalhamento completo — incluindo como kickers e empates decidem o venc
 
 ## 5 erros que todo iniciante precisa evitar
 
-Você pode decorar a ordem do jogo e ainda assim sangrar fichas se cometer estes erros.
+Você pode decorar a ordem do jogo e ainda assim sangrar fichas se cometer estes erros. Já vi cada um deles custar o pote a um iniciante em tempo real — geralmente mais de uma vez na mesma sessão.
 
 ### 1. Jogar quase todas as mãos
 
-"Vou só ver um flop" é prejuízo garantido no longo prazo. Jogadores fortes jogam só 15% a 25% das mãos e foldam o resto sem hesitar. Se você está pagando o pré-flop com quaisquer duas cartas, está pagando para perder.
+"Vou só ver um flop" é prejuízo garantido no longo prazo — é o vazamento mais comum que eu vejo na primeira mesa de um jogador novo. Jogadores fortes jogam só 15% a 25% das mãos e foldam o resto sem hesitar. Se você está pagando o pré-flop com quaisquer duas cartas, está pagando para perder.
 
 ### 2. Ignorar a posição
 
-Quanto mais perto do botão, melhor — agir por último deixa você ver o que todos fazem antes de decidir. Jogue fechado nas posições iniciais e com mais agressividade nas posições finais. Para o mapa completo de assentos e os ranges de abertura por posição, veja [posições no pôquer explicadas: do UTG ao botão](/pt/blog/holdem-positions).
+Quanto mais perto do botão, melhor — agir por último deixa você ver o que todos fazem antes de decidir. Jogue fechado nas posições iniciais e com mais agressividade nas posições finais. Para o mapa completo de assentos e os ranges de abertura por posição, veja [posições no poker explicadas: do UTG ao botão](/pt/blog/holdem-positions).
 
 ### 3. Perseguir draws às cegas
 
-Um draw de flush ou sequência não é um call automático. Você precisa pesar as **pot odds** — o preço do call contra o tamanho do pote. Se o pote tem 100.000 e você precisa pagar 50.000, seu draw tem que completar pelo menos uns 33% das vezes para valer a pena.
+Um draw de flush ou sequência não é um call automático. Você precisa pesar as **pot odds** — o preço do call contra o tamanho do pote. Se o pote — já com a aposta do adversário dentro — tem 100.000 e você precisa pagar 50.000, seu draw tem que completar pelo menos uns 33% das vezes para valer a pena.
 
 ### 4. Blefar o river do nada com uma mão fraca
 
@@ -315,7 +315,7 @@ Se você deu check passivo o caminho inteiro e de repente shova o river, o adver
 
 ### 5. Ler errado a própria mão no showdown
 
-Erro clássico de iniciante: achar "tenho dois pares!" quando na verdade tem um par só. Treine escolher as **melhores cinco cartas** entre suas duas fechadas e as cinco da mesa até virar automático.
+Erro clássico de iniciante: achar "tenho dois pares!" quando na verdade tem um par só. Já vi jogador virar as cartas todo orgulhoso, certo de que tinha uma sequência, e descobrir que as cartas não eram conectadas — a mesa fica em silêncio e o pote desliza para o outro lado. Treine escolher as **melhores cinco cartas** entre suas duas fechadas e as cinco da mesa até virar automático.
 
 ---
 
@@ -367,6 +367,18 @@ A. All-in significa apostar todas as suas fichas. Use com uma mão muito forte (
 
 A. Quatro: pré-flop, flop, turn e river. Os blinds são apostas obrigatórias, e no showdown não há apostas.
 
+**Q. O que são flop, turn e river no poker?**
+
+A. São as três aberturas de cartas comunitárias: o flop revela três cartas de uma vez, o turn (fourth street) adiciona a quarta e o river (fifth street) traz a quinta e última. Depois de cada uma acontece uma rodada de apostas — somando o pré-flop, uma mão tem quatro rodadas no total.
+
+**Q. Quais são as regras do dealer no poker?**
+
+A. O dealer embaralha, distribui uma carta por vez em sentido horário começando à esquerda do botão, queima uma carta antes de cada street comunitária e conduz a ação — anuncia apostas, monta os potes e lê as mãos no showdown. No jogo em casa, o botão de dealer gira a cada mão; no clube, um profissional dá as cartas, mas o botão continua definindo a ordem de ação.
+
+**Q. Por que o dealer queima uma carta, e quantas são queimadas?**
+
+A. Antes de abrir o flop, o turn e o river, o dealer descarta a carta do topo do baralho virada para baixo — a "burn card". São três cartas queimadas por mão, uma antes de cada street comunitária. Queimar protege o jogo: se a carta do topo estivesse marcada ou tivesse sido exposta por acidente, um jogador poderia saber o que vem por aí — por isso ela sai de jogo primeiro. É uma das regras que o dealer segue à risca em qualquer clube.
+
 ---
 
 ## As 3 coisas para lembrar
@@ -394,7 +406,7 @@ Decore a sequência, treine em mesas grátis e você nunca mais vai travar sem s
   </a>
   <a href="/pt/blog/holdem-positions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Posições</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Posições no pôquer: do UTG ao botão</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Posições no poker: do UTG ao botão</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Mapa de assentos, ranges de abertura e por que a posição vence</div>
   </a>
 </div>

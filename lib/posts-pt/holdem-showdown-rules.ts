@@ -8,20 +8,21 @@ export const POST: Post = {
   tldr: "No showdown, o último jogador que apostou ou aumentou mostra primeiro. Se todos deram check no river, o primeiro jogador ativo à esquerda do botão abre o jogo. Quem perdeu pode dar muck sem mostrar, mas quem pagou a aposta do river pode pedir para ver a mão de quem apostou.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-08-09",
-  masterUpdated: "2026-07-12",
+  updated: "2026-08-25",
+  masterUpdated: "2026-08-25",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
   tags: [
     "regras de showdown no poker",
+    "showdown poker",
     "quem mostra as cartas primeiro no poker",
     "muck no poker",
     "slow roll poker",
     "showdown all-in poker",
   ],
   image: "/images/holdem-showdown-rules-hero.webp",
-  imageAlt: "Infográfico do showdown no Texas Hold'em — em uma mesa 4♥ 7♣ Q♦ K♠ 2♥, A♠ K♥ vence com par de reis e kicker Ás",
+  imageAlt: "Infográfico do showdown no Texas Hold'em — em um board 4♥ 7♣ Q♦ K♠ 2♥, A♠ K♥ vence com par de reis e kicker Ás",
   content: `
 Você pagou a aposta no river. Agora vocês dois estão se encarando, cada um esperando o outro virar as cartas primeiro.
 
@@ -33,19 +34,19 @@ O dealer olha de um lado para o outro. O resto da mesa suspira.
 
 ## Quem mostra as cartas primeiro no showdown?
 
-A regra depende de como a última rodada de apostas terminou (para a sequência completa, rua por rua, que leva até aqui, veja [a ordem do jogo](/pt/blog/holdem-game-order "thumb:/images/blog-holdem-game-flow.webp")).
+A regra depende de como a última rodada de apostas terminou (para a sequência completa, street por street, que leva até aqui, veja [a ordem do jogo](/pt/blog/holdem-game-order "thumb:/images/blog-holdem-game-flow.webp")).
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Ação na última rua | Quem mostra primeiro |
+| Ação na última street | Quem mostra primeiro |
 |--------------------|-----------------|
 | Alguém apostou ou aumentou no river | ==O último jogador que apostou ou aumentou== mostra primeiro |
 | Todos deram check no river | O primeiro jogador ativo à esquerda do botão mostra primeiro |
-| All-in em rua anterior (sem apostas no river) | Todas as mãos viradas para cima antes/durante o runout |
+| All-in em street anterior (sem apostas no river) | Todas as mãos viradas para cima antes/durante o runout |
 
 </div>
 
-![Infográfico da ordem do showdown no Texas Hold'em — quem mostra primeiro em uma mesa J♥ 9♠ 4♦ 2♠ K♥](/images/holdem-showdown-who-shows-first.webp)
+![Infográfico da ordem do showdown no Texas Hold'em — quem mostra primeiro em um board J♥ 9♠ 4♦ 2♠ K♥](/images/holdem-showdown-who-shows-first.webp)
 
 ==g:A expressão-chave é "último agressor".== Se você apostou no river e foi pago, você mostra primeiro — não quem pagou. Quem pagou tem o direito de ver a sua mão antes de decidir se mostra ou dá muck na dele.
 
@@ -57,7 +58,7 @@ Sim — **se você perdeu**.
 
 Depois que o último agressor mostra a mão, os outros jogadores podem:
 - **Mostrar a mão**, se acharem que ganham
-- **Dar muck com as cartas viradas para baixo**, se virem que perderam — sem precisar revelar nada. Isso só vale enquanto ninguém tiver ido all-in: assim que um jogador está all-in, a regra 16 da TDA manda mostrar todas as mãos do pote e ninguém pode dar muck
+- **Dar muck com as cartas viradas para baixo**, se virem que perderam — sem precisar revelar nada. Isso só vale enquanto ninguém tiver ido all-in: em torneio, assim que um jogador está all-in, a regra 16 da TDA manda mostrar todas as mãos do pote e ninguém pode dar muck (no cash valem as regras da casa, e a maioria deixa o pagador dar muck)
 
 ==r:Mas existe uma exceção importante:== se a sua aposta no river foi paga, quem pagou comprou o direito de ver a sua mão. Pedir ao dealer para virar uma mão descartada é a regra **"I want to see that hand"** ("quero ver essa mão"). Em torneio a regra 18 da TDA fecha o cerco: quem não tem mais cartas no showdown, ou deu muck virado para baixo, perde o direito de pedir; o direito é inviolável apenas para quem pagou a aposta do river e mostrou ou manteve as cartas, e só sobre a mão do último agressor. O resto fica a critério do diretor do torneio, e no cash muitos clubes são mais generosos. (Não confunda com o "show one, show all", que significa que, se você mostrar suas cartas voluntariamente a um jogador, todo mundo na mesa tem o direito de vê-las.)
 
@@ -84,7 +85,7 @@ Quando um jogador vai de all-in e não há mais apostas possíveis, as cartas re
 | Cenário de all-in | Regra de showdown |
 |----------------|---------------|
 | Jogador vai all-in, os outros pagam, sem mais apostas possíveis | Todas as mãos viradas para cima antes ou durante o runout |
-| Aposta all-in no river é paga | Quem foi all-in mostra primeiro como último agressor — mas ==r:aqui ninguém pode dar muck==: pela regra 16 da TDA quem pagou também precisa mostrar |
+| Aposta all-in no river é paga | Quem foi all-in mostra primeiro como último agressor — e em torneio ==r:aqui ninguém pode dar muck==: pela regra 16 da TDA quem pagou também precisa mostrar |
 | Vários all-ins criando vários side pots | Cada pote é resolvido separadamente; todas as mãos envolvidas são mostradas |
 
 </div>
@@ -97,7 +98,7 @@ Para entender como os side pots são montados e pagos quando alguém está all-i
 
 ## O que é a regra "cards speak" (as cartas falam)?
 
-![Infográfico da regra cards speak — uma mesa 8♠ 9♣ 10♥ J♦ Q♠ forma uma sequência até a dama, e no showdown as cartas falam por si](/images/holdem-showdown-cards-speak.webp)
+![Infográfico da regra cards speak — um board 8♠ 9♣ 10♥ J♦ Q♠ forma uma sequência até a dama, e no showdown as cartas falam por si](/images/holdem-showdown-cards-speak.webp)
 
 "Cards speak" — as cartas falam — significa que ==a melhor mão ganha, não importa o que os jogadores digam==.
 
@@ -105,7 +106,7 @@ Se um jogador lê errado a própria mão e anuncia "tenho um par", mas na verdad
 
 Isso vale para os dois lados. Se você acha que perdeu e dá muck sem mostrar, mas a sua mão era a vencedora — ==r:o pote já era==. Sua mão só morre quando o dealer a empurra para o muck e ela deixa de ser claramente identificável — cartas viradas para baixo não morrem automaticamente (regra 14 da TDA). Ainda assim, nunca conte com isso. Se não tiver 100% de certeza de que perdeu, sempre deixe o dealer ler a sua mão antes de descartar.
 
-Situação real: você tem J♥ 10♥ em uma mesa Q♥ 9♥ 8♥ 2♣ 5♦. Você tem um straight flush até a dama (Q-J-10-9-8 de copas). O adversário mostra K♣ Q♦ (um par de damas). Você ganha de lavada. Não dê muck só porque viu a dama dele.
+Situação real: você tem J♥ 10♥ em um board Q♥ 9♥ 8♥ 2♣ 5♦. Você tem um straight flush até a dama (Q-J-10-9-8 de copas). O adversário mostra K♣ Q♦ (um par de damas). Você ganha de lavada. Não dê muck só porque viu a dama dele.
 
 ---
 
@@ -117,7 +118,7 @@ Você tem os nuts. O adversário mostra uma mão forte. Você pausa, finge pensa
 
 ![Slow roll no poker — jogadores irritados enquanto um deles demora de propósito para mostrar a mão vencedora](/images/holdem-showdown-slow-roll.webp)
 
-==r:Slow roll é o jeito mais rápido de criar inimigos numa mesa de pôquer.== É interpretado como esfregar a vitória na cara do adversário. A regra não escrita: se você tem a melhor mão possível, vire na hora. Não existe nenhum ganho estratégico em dar slow roll. O único resultado é clima pesado.
+==r:Slow roll é o jeito mais rápido de criar inimigos numa mesa de poker.== É interpretado como esfregar a vitória na cara do adversário. A regra não escrita: se você tem a melhor mão possível, vire na hora. Não existe nenhum ganho estratégico em dar slow roll. O único resultado é clima pesado.
 
 Compare com o **tank** — levar tempo de verdade para tomar uma decisão difícil. Isso é aceito, até respeitado. Dar slow roll com os nuts é outra história.
 
@@ -129,15 +130,17 @@ Não. ==g:Se todo mundo foldar antes do showdown, você leva o pote sem mostrar 
 
 Você pode mostrar se quiser — tem jogador que mostra o blefe para tiltar o adversário, ou mostra a mão forte para construir uma imagem tight. Mas você nunca é obrigado a mostrar as cartas quando ganha porque todos os outros foldaram.
 
-Essa é uma das razões pelas quais o pôquer é interessante. Nem sempre a melhor mão ganha — ganha o último que fica de pé.
+Essa é uma das razões pelas quais o poker é interessante. Nem sempre a melhor mão ganha — ganha o último que fica de pé.
 
 ---
 
 ## Etiqueta no showdown — o que os iniciantes erram
 
+Nada azeda uma mesa mais rápido do que um showdown mal conduzido. E nem sempre é questão de má intenção — muitas vezes são regras e hábitos que ninguém ensinou ao jogador novo. Estes são os quatro que eu mais acabo corrigindo.
+
 ### Erro 1: esperar que quem pagou mostre primeiro
 
-Você apostou no river. Alguém pagou. Você trava e fica esperando o outro mostrar. É o contrário. ==Você mostra primeiro — você foi o último agressor.== Ficar esperando parece slow roll, mesmo quando não é.
+Você apostou no river. Alguém pagou. Você trava e fica esperando o outro mostrar. É o contrário. ==Você mostra primeiro — você foi o último agressor.== Ficar esperando parece slow roll, mesmo quando não é — já vi uma mesa amistosa ficar gelada por uma volta inteira do botão porque um jogador que não conhecia a regra travava em todo showdown, e todo mundo lia aquilo como provocação.
 
 ### Erro 2: dar muck antes de o dealer ler a mão
 
@@ -166,11 +169,11 @@ A. O último jogador que fez uma ação agressiva (aposta ou aumento) na última
 
 **Q. Sou obrigado a mostrar as cartas se pagarem minha aposta no showdown?**
 
-A. Sim — se você foi o último a apostar ou aumentar no river, você mostra primeiro quando é pago. Se foi você quem pagou a aposta de alguém, pode dar muck com as cartas viradas para baixo depois de ver a mão dele, caso tenha perdido. A exceção é o all-in: pela regra 16 da TDA quem pagou também precisa mostrar. E em torneio só pode pedir para ver uma mão quem ainda tem cartas ou já as mostrou — inviolável, apenas a do último agressor.
+A. Sim — se você foi o último a apostar ou aumentar no river, você mostra primeiro quando é pago. Se foi você quem pagou a aposta de alguém, pode dar muck com as cartas viradas para baixo depois de ver a mão dele, caso tenha perdido. A exceção é o all-in em torneio: pela regra 16 da TDA quem pagou também precisa mostrar. E em torneio só pode pedir para ver uma mão quem ainda tem cartas ou já as mostrou — inviolável, apenas a do último agressor.
 
 **Q. Dá para dar muck no showdown sem mostrar?**
 
-A. Sim, mas só se você claramente perdeu. Depois que a mão vencedora é mostrada, os perdedores podem dar muck com as cartas viradas para baixo. A exceção é quando a sua mão foi paga — os adversários podem pedir para vê-la. Nunca dê muck antes de o dealer ler as duas mãos se houver qualquer dúvida sobre quem ganhou.
+A. Sim, mas só se você claramente perdeu. Depois que a mão vencedora é mostrada, os perdedores podem dar muck com as cartas viradas para baixo. A exceção é quando a sua mão foi paga — quem pagou por ela pode pedir para vê-la — e, se alguém estava all-in num torneio, ninguém pode dar muck. Nunca dê muck antes de o dealer ler as duas mãos se houver qualquer dúvida sobre quem ganhou.
 
 **Q. O que é slow roll no poker e por que é tão malvisto?**
 
@@ -178,7 +181,7 @@ A. Slow roll é atrasar de propósito a exibição de uma mão vencedora que voc
 
 **Q. Em um all-in, quem mostra as cartas primeiro?**
 
-A. Quando um jogador vai de all-in e não há mais apostas possíveis, todas as mãos envolvidas naquele pote normalmente são viradas para cima antes ou durante a abertura das cartas comunitárias. Se existe um side pot com apostas em andamento, o último agressor entre esses jogadores mostra primeiro para o side pot. A mão de quem está all-in é mostrada separadamente para o pote principal.
+A. Quando um jogador vai de all-in e não há mais apostas possíveis, todas as mãos envolvidas naquele pote normalmente são viradas para cima antes ou durante a abertura das cartas comunitárias. Se existe um side pot, ele é pago primeiro e o pote principal depois — mas as cartas de quem está all-in já estão abertas muito antes disso. Enquanto os outros ainda têm fichas e podem apostar, tudo continua virado para baixo.
 
 **Q. O que significa "cards speak" no poker?**
 

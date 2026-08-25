@@ -2,24 +2,24 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "holdem-blind-meaning",
-  title: "O que são os blinds no pôquer? Small blind e big blind explicados de forma simples",
-  seoTitle: "Pagar sem ver as cartas? — O que são os blinds no pôquer",
+  title: "O que são os blinds no poker? Small blind e big blind explicados de forma simples",
+  seoTitle: "Pagar sem ver as cartas? — O que são os blinds no poker",
   desc: "Dois jogadores pagam antes de qualquer carta sair — por quê? O que são small blind e big blind, quem paga, valores, big blind ante e a regra do heads-up.",
   tldr: "Blinds são apostas obrigatórias pagas antes de as cartas serem distribuídas. O small blind fica à esquerda do botão do dealer e o big blind à esquerda dele; o big blind — normalmente o dobro do small blind — é a unidade de aposta da mesa.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-07-12",
-  masterUpdated: "2026-07-11",
+  updated: "2026-08-25",
+  masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "💰",
   image: "/images/holdem-blind-meaning-hero.webp",
-  imageAlt: "Pilhas de fichas do small blind e do big blind com etiquetas ao lado de um botão de dealer dourado em uma mesa de pôquer",
-  tags: ["o que sao blinds no poker", "big blind poker", "small blind poker", "small blind e big blind", "regras dos blinds", "big blind ante", "blinds texas holdem"],
+  imageAlt: "Pilhas de fichas do small blind e do big blind com etiquetas ao lado de um botão de dealer dourado em uma mesa de poker",
+  tags: ["o que sao blinds no poker", "big blind poker", "small blind poker", "small blind e big blind", "regras do poker small blind", "regras dos blinds", "big blind ante", "blinds texas holdem"],
   content: `
-Na primeira mão de pôquer ao vivo que joguei na vida, o dealer bateu no feltro na minha frente antes de eu ver uma única carta: "Small blind, por favor." Eu travei — pagar? Pagar *o quê*? Doze anos e milhares de horas depois, ainda vejo alguém novo travar exatamente nesse momento em quase toda sessão.
+Na primeira mão de poker ao vivo que joguei na vida, o dealer bateu no feltro na minha frente antes de eu ver uma única carta: "Small blind, por favor." Eu travei — pagar? Pagar *o quê*? Doze anos e milhares de horas depois, ainda vejo alguém novo travar exatamente nesse momento em quase toda sessão.
 
-Os blinds são ==o motor que mantém o pôquer andando== — a primeira parte das [regras do Texas Hold'em](/pt/blog/texas-holdem-rules-for-beginners) que de fato custa fichas. Quando eles fazem sentido, toda a conversa numérica do jogo ("raise de 2BB", "stack de 20BB") destrava de uma vez. Aqui vai tudo em uma leitura rápida.
+Os blinds são ==o motor que mantém o poker andando== — a primeira parte das [regras do Texas Hold'em](/pt/blog/texas-holdem-rules-for-beginners) que de fato custa fichas. Quando eles fazem sentido, toda a conversa numérica do jogo ("raise de 2BB", "stack de 20BB") destrava de uma vez. Aqui vai tudo em uma leitura rápida.
 
 ---
 
@@ -38,7 +38,7 @@ Os blinds são ==o motor que mantém o pôquer andando== — a primeira parte da
 
 ---
 
-## O que é um blind no pôquer — e por que ele existe?
+## O que é um blind no poker — e por que ele existe?
 
 Um **blind** é uma aposta que você é obrigado a fazer *antes* de as suas cartas chegarem — você aposta "no escuro", sem ver nada. Dois jogadores pagam em toda mão: o small blind e o big blind, os dois assentos imediatamente à esquerda do botão do dealer.
 
@@ -72,7 +72,7 @@ Não é à toa que tanta gente pesquisa "big blind" sozinho: ele não é só um 
 
 </div>
 
-Entenda o big blind e toda a conversa numérica do jogo — tamanhos de raise, profundidade de stack, pressão de torneio — destrava de uma vez só.
+Entenda o big blind, e toda a conversa numérica do jogo — tamanhos de raise, profundidade de stack, pressão de torneio — destrava de uma vez só.
 
 ---
 
@@ -87,7 +87,7 @@ Os dois blinds são pagos **antes da distribuição das cartas**, e o botão do 
 | Ordem pré-flop | Age em penúltimo | Age **por último** (a "option") |
 | Ordem pós-flop | Age **primeiro** (uma desvantagem) | Age em segundo |
 
-> **Atenção:** antes do flop, a ação começa no jogador à esquerda do big blind e o BB age por último — ele vê a decisão de todo mundo antes. Do flop em diante a ordem zera e os blinds agem cedo. A sequência street por street está mapeada em [a ordem de jogo no Texas Hold'em](/pt/blog/holdem-game-order), e os nomes de cada assento ao redor do botão são assunto de [posições no pôquer explicadas](/pt/blog/holdem-positions).
+> **Atenção:** antes do flop, a ação começa no jogador à esquerda do big blind e o BB age por último — ele vê a decisão de todo mundo antes. Do flop em diante a ordem zera e os blinds agem cedo. A sequência street por street está mapeada em [a ordem de jogo no Texas Hold'em](/pt/blog/holdem-game-order), e os nomes de cada assento ao redor do botão são assunto de [posições no poker explicadas](/pt/blog/holdem-positions).
 
 ---
 
@@ -97,7 +97,7 @@ Os stakes se escrevem **SB/BB**. Uma mesa "$1/$2" significa small blind de $1 e 
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Stakes | Small Blind | Big Blind | Buy-in típico |
+| Stakes | Small Blind | Big Blind | Buy-in típico / nível |
 |:---|:---:|:---:|:---:|
 | $0,50/$1 | $0,50 | $1 | $60–$100 |
 | $1/$2 | $1 | $2 | $100–$300 |
@@ -111,7 +111,7 @@ Os stakes se escrevem **SB/BB**. Uma mesa "$1/$2" significa small blind de $1 e 
 </div>
 
 - **Cash game:** os blinds ficam ==g:**fixos**==. Sente em uma mesa $1/$2 e ela é $1/$2 até você sair. (Para uma comparação mais profunda, veja [torneios vs cash games](/pt/blog/holdem-tournament-vs-cash-game).)
-- **Torneio:** os blinds ==r:**sobem** no relógio== (ex.: 25/50 → 50/100 → 100/200), então a pressão cresce conforme a noite avança. Níveis de blinds, o clock e as folhas de estrutura são assunto de [como funcionam os torneios de pôquer](/pt/blog/holdem-tournament).
+- **Torneio:** os blinds ==r:**sobem** no relógio== (ex.: 25/50 → 50/100 → 100/200), então a pressão cresce conforme a noite avança. Níveis de blinds, o clock e as folhas de estrutura são assunto de [como funcionam os torneios de poker](/pt/blog/holdem-tournament).
 
 ---
 
@@ -137,7 +137,9 @@ Ao sentar em um cash game ao vivo, normalmente você não joga de graça: ou **p
 
 ## Como jogar dos blinds — a versão de 30 segundos
 
-![Pilha de fichas caindo em direção ao pote em uma mesa de pôquer — um push de roubo de blinds a partir do botão](/images/holdem-blind-steal.webp)
+![Pilha de fichas caindo em direção ao pote em uma mesa de poker — um push de roubo de blinds a partir do botão](/images/holdem-blind-steal.webp)
+
+É nos blinds que eu mais vejo iniciante sangrar fichas sem perceber — não em um pote grande, mas um pouquinho a cada volta do botão. Dois hábitos resolvem a maior parte disso:
 
 - **Small blind: simplifique.** Penúltimo no pré-flop mas **primeiro a agir** depois do flop — a linha limpa para iniciante é **aumentar ou foldar**, não pagar. Dar limp e levar pressão fora de posição é um vazamento constante de fichas.
 - **Big blind: defenda com as odds.** Você já pôs uma aposta completa, então pode pagar aumentos com um range mais largo do que qualquer outro assento — com lucro. Contra um open de 2,5 BB (com o small blind foldando), você paga 1,5 BB para um pote de 4 BB — cerca de 2,7 para 1, ou seja, aproximadamente 27% de equity já empata o call. Essa matemática são as [pot odds](/pt/blog/holdem-pot-odds), e é por isso que existe a "defesa de big blind".
@@ -192,7 +194,7 @@ A. Não exatamente — "os blinds" se refere ao small blind e ao big blind junto
 2. O **big blind é a unidade da mesa** — raises, stacks e a pressão do torneio são todos medidos em BBs.
 3. Jogue os blinds com cuidado: **aumente ou folde no small blind**, **defenda o big blind com as pot odds** e estude os roubos de posição final quando todos foldarem até você.
 
-Novo no jogo como um todo? O [guia de regras do Texas Hold'em para iniciantes](/pt/blog/texas-holdem-rules-for-beginners "thumb:/images/rules-texas-holdem.webp") cobre a base, [a ordem de jogo em uma mão](/pt/blog/holdem-game-order) mostra exatamente quando cada blind age, e [posições no pôquer explicadas](/pt/blog/holdem-positions) cobre como o seu assento na mesa — não só os blinds — molda cada decisão.
+Novo no jogo como um todo? O [guia de regras do Texas Hold'em para iniciantes](/pt/blog/texas-holdem-rules-for-beginners "thumb:/images/rules-texas-holdem.webp") cobre a base, [a ordem de jogo em uma mão](/pt/blog/holdem-game-order) mostra exatamente quando cada blind age, e [posições no poker explicadas](/pt/blog/holdem-positions) cobre como o seu assento na mesa — não só os blinds — molda cada decisão.
 
 ---
 
@@ -201,7 +203,7 @@ Novo no jogo como um todo? O [guia de regras do Texas Hold'em para iniciantes](/
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/pt/blog/holdem-positions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Posições</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Posições no pôquer explicadas</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Posições no poker explicadas</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Do UTG ao botão, 6-max vs 9-max, ranges de abertura</div>
   </a>
   <a href="/pt/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
@@ -211,7 +213,7 @@ Novo no jogo como um todo? O [guia de regras do Texas Hold'em para iniciantes](/
   </a>
   <a href="/pt/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Torneios</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Como funcionam os torneios de pôquer</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Como funcionam os torneios de poker</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Níveis de blinds, antes, premiações e formatos</div>
   </a>
 </div>

@@ -3,18 +3,19 @@ import type { Post } from "../posts";
 export const POST: Post = {
   slug: "holdem-all-in-rules",
   title: "Regras de all-in no Texas Hold'em: side pots, re-raise e showdown",
-  seoTitle: "Foi de all-in e travou? — Regras de all-in e side pot no Hold'em",
+  seoTitle: "Foi de all-in e travou? — Regras de all-in e side pot",
   desc: "Shovou todas as fichas e não sabe o que pode ganhar? Regras de all-in no Texas Hold'em: table stakes, pote paralelo (side pot), re-raise e ordem do showdown.",
   tldr: "Ir de all-in é apostar todas as fichas que você tem. Você só pode ganhar de cada adversário o valor que igualou (o pote principal). O que os stacks maiores apostam além disso vira um pote paralelo (side pot) que você não pode ganhar. Um all-in menor que um aumento completo NÃO reabre a aposta para quem já agiu.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-08-10",
+  updated: "2026-08-25",
   masterUpdated: "2026-07-25",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "♠",
   tags: [
     "regras de all in no poker",
+    "all in poker",
     "all in texas holdem",
     "side pot poker o que e",
     "pote paralelo poker",
@@ -35,7 +36,7 @@ Eu já estive nessa mesa. Na primeira vez que fui de all-in num cash game ao viv
 
 Ir de all-in significa apostar todas as fichas que você tem na sua frente. Depois que você se compromete, não pode adicionar mais fichas — e ninguém pode te forçar a foldar.
 
-A base é a regra de **table stakes**: você só pode apostar as fichas que estavam na mesa no início da mão. Não vale tirar dinheiro do bolso, pedir emprestado a um amigo, nem colocar relógio ou chave do carro — isso é pôquer de filme.
+A base é a regra de **table stakes**: você só pode apostar as fichas que estavam na mesa no início da mão. Não vale tirar dinheiro do bolso, pedir emprestado a um amigo, nem colocar relógio ou chave do carro — isso é poker de filme.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -49,7 +50,7 @@ A base é a regra de **table stakes**: você só pode apostar as fichas que esta
 
 </div>
 
-==g:Uma vez de all-in, você tem garantia de ver todas as cartas comunitárias restantes.== Ninguém pode te tirar da mão com um blefe. Suas cartas seguem vivas até o river.
+==g:Depois que você está de all-in, tem garantia de ver todas as cartas comunitárias restantes.== Ninguém pode te tirar da mão com um blefe. Suas cartas seguem vivas até o river.
 
 ---
 
@@ -61,7 +62,7 @@ Duas formas válidas:
 
 **2. Empurrar todas as fichas** — Deslize o stack inteiro para o centro em um único movimento. Empurrar fichas aos poucos pode parecer string bet, então mova tudo de uma vez.
 
-![Showdown de all-in no Texas Hold'em — mesa K♠ 10♣ 7♦ 4♥ 2♣ com as fichas separadas em pote principal e pote paralelo identificados](/images/holdem-all-in-declare.webp)
+![Showdown de all-in no Texas Hold'em — board K♠ 10♣ 7♦ 4♥ 2♣ com as fichas separadas em pote principal e pote paralelo identificados](/images/holdem-all-in-declare.webp)
 
 ==r:Nunca empurre uma única ficha sem dizer nada — se houver uma aposta à sua frente, o dealer conta como call — e, se não houver aposta pendente, apenas o valor daquela ficha. Nunca o seu stack inteiro.== Sempre declare "all-in" em voz alta, ou mova o stack completo de uma vez.
 
@@ -119,7 +120,7 @@ A regra: ==cada pote paralelo é montado pegando a diferença até o próximo st
 
 **A regra:** se um jogador vai de all-in por **menos que um [aumento completo](/pt/blog/holdem-betting-actions)**, esse all-in NÃO reabre a aposta para quem já agiu naquela rodada.
 
-![Regra de re-raise após all-in no pôquer — um all-in curto por menos que um aumento completo, então o Jogador A, que já agiu, só pode pagar ou foldar](/images/holdem-all-in-reraise-rule.webp)
+![Regra de re-raise após all-in no poker — um all-in curto por menos que um aumento completo, então o Jogador A, que já agiu, só pode pagar ou foldar](/images/holdem-all-in-reraise-rule.webp)
 
 **Exemplo:**
 
@@ -148,7 +149,7 @@ Por que essa regra existe? Ela protege os jogadores de serem forçados a aumento
 
 Essa é a versão que derruba até os regulares. Vários all-ins curtos podem **se somar** até um aumento completo — e se os incrementos combinados atingirem o mínimo, a aposta reabre para quem já agiu.
 
-Essa é a regra oficial de "re-opening the bet" da TDA, e a maioria dos clubes de pôquer a segue.
+Essa é a regra oficial de "re-opening the bet" da TDA, e a maioria dos clubes de poker a segue.
 
 **Exemplo (blinds de $1/$2, no flop):**
 
@@ -241,7 +242,7 @@ A. Você leva o pote principal (o que igualou de cada jogador) e o outro jogador
 
 A. Em torneios, sim — quando as apostas terminam com um all-in, todas as mãos envolvidas costumam ser abertas. Em cash games ao vivo, valem as regras normais de showdown: o último agressor mostra primeiro, e os demais mostram ou dão muck.
 
-**Q. Pode fazer run it twice num all-in de pôquer?**
+**Q. Pode fazer run it twice num all-in de poker?**
 
 A. O run it twice (distribuir as cartas comunitárias restantes duas vezes e dividir o pote) é permitido em muitos cash games se os dois jogadores concordarem após o all-in. Em torneios, geralmente não é permitido. O acordo precisa acontecer antes de as cartas comunitárias restantes serem abertas.
 
