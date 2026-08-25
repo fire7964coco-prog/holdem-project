@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SITE } from "@/lib/site";
 import { CHROME, type SecondaryLocale } from "@/lib/intl";
 
 /**
@@ -21,11 +22,21 @@ import { CHROME, type SecondaryLocale } from "@/lib/intl";
  *   브랜드는 `CHROME[locale].brand` 단일 소스에서 가져온다(현재 25개 언어 전부 "HoldemMaster").
  *   여기서 손으로 적으면 CHROME과 갈린다.
  *
+ *   저자명도 마찬가지다 — `intl-blog-page.tsx`가 이미 **두 곳**에서 쓰고 있는
+ *   «{brand} Editorial Team»과 한 글자도 다르지 않게 맞춘다:
+ *     · `openGraph.authors` → `<meta property="article:author">`
+ *     · Article 스키마 `author.name` (JSON-LD)
+ *   🔴 «Redaktion»·«編集部» 같은 현지어 저자명을 여기서 새로 지으면 **같은 페이지 안에서
+ *      meta author와 JSON-LD author가 갈린다.** 구글은 그 불일치를 그대로 본다.
+ *      현지어로 가려면 og·JSON-LD·about 페이지까지 같은 커밋에서 함께 옮겨야 하고,
+ *      그건 이 기계적 치환 회차의 몫이 아니다(§14 검수가 붙는 별건).
+ *
  * ▶ 게이트: `npm run check:meta-lang`
  */
 export function localeLayoutMetadata(locale: SecondaryLocale): Metadata {
   const brand = CHROME[locale].brand;
   return {
     applicationName: brand,
+    authors: [{ name: `${brand} Editorial Team`, url: SITE }],
   };
 }
