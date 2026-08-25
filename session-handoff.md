@@ -16,25 +16,25 @@
 「2026-08-25」 · 뱅크 = `docs/keyword-bank/fr-gto-solver.md` · 절차 정본 = `docs/solver-landing-playbook.md`
 (⚠ 플레이북 머리의 «8언어·zh-hant가 마지막» 서술은 낡았다 — 다음에 열 때 9언어로 갱신).
 
-**▶ 다음 착수 = 🔴 pt 경화 «회차 1: rules 클러스터 6편» (사장님 확정 2026-08-25 · 회차 0 완료)**
+**▶ 다음 착수 = 🔴 pt 경화 «회차 2: hand-rankings 클러스터 6편» (회차 1 완료 2026-08-25 · 커밋 8ee6b047)**
 
-**회차 0(2026-08-25)이 끝났다 — 재료는 전부 준비돼 있다. 다시 만들지 마라:**
-1. **뱅크 = `docs/keyword-bank/pt-hardening-2026-08.md` 통독이 선행** — 라쿠 39종(requestId
-   1256433) + lowfruits 9시드 전부 클러스터별 배정 완료. **§4 전략 방침(사장님 축어: 정면 금지 ·
-   롱테일 진입) 필독.**
-2. **드리프트 diff 완료** — 실질 드리프트 10편. **rules 6편 중 5편이 드리프트 확정**(betting-actions ·
-   blind-meaning · game-order · showdown-rules · texas-holdem-rules-for-beginners — pt 기준일
-   07-02~12 vs EN 07-19~08-14). 나머지 드리프트: continuation-bet(EN 08-19) · glossary · kicker ·
-   tournament-vs-cash-game(EN 08-11 vs pt 06-11) · apt-incheon(하루 차 — 자산화 전환분 확인).
-3. **회차 1 케이던스**: EN 대응 6편 diff 대조(후속 링크·FAQ·§13 소급) → 시드 3 롱테일 재조준
-   (desempate→tiebreak 연계 · small/big blind FS · all in FS · dealer FS · `regras do poker flush`
-   DA2 · cash game · fichas · iniciantes pdf/dicas) → 글별 편집→`audit:hard --slug` 0건→빌드→커밋→
-   푸시 → 클러스터 마감: **브라질 네이티브 적대 QA + 4렌즈 + 2차 교열**.
-4. 회차 순서(확정): ①rules 6 → ②hand-rankings 6(«maos DO poker» 8,100 편입 · sequencia 27,100
-   의도 실측 선행) → ③odds 7 → ④strategy 8(range 축 금맥 — 시드 9) → ⑤glossary 6(termos 약점층) →
-   ⑥tournament 9(§14 EN verbatim + apt-incheon 자산화 확인).
-5. 절차 = `REVIEW-PROTOCOL.md` 3층 게이트 · posting.mdc 필독 · 경화된 글 재수정 = **2차 교열 필수**.
-   EN 소급분(es 회차발 «불일치 5건» 포함)은 발견 즉시 같은 커밋으로.
+**회차 1(rules 6편)은 끝났다** — 경위 = WORKLOG 「2026-08-25 (3)」. 회차 2 진행법:
+1. **뱅크 = `docs/keyword-bank/pt-hardening-2026-08.md` §0·§시드 1·2 통독 선행** — §4 전략 방침
+   (사장님 축어: 정면 금지 · 롱테일 진입) 필독.
+2. 🔴 **선행 실측 2건**(뱅크 §3): ① `sequencia poker` 27,100 SERP 의도(스트레이트 vs 순서 →
+   flush-vs-straight·hand-rankings 어느 몫인지) ② `maos do poker` 8,100 vs `maos de poker` 3,600
+   SERP 동일성 → 태그·H2 표기 결정(**do 형태 편입이 이 회차 핵심**).
+3. 드리프트 잔여: kicker · (glossary는 회차 5) — hand-rankings 6편 중 드리프트는 회차 0 diff 참조.
+   재조준 재료 = 시드 1·2 winnable(piores mãos DA5·FS · melhor a pior FS · suited · marginais ·
+   tabela/ordem 계열) + `desempate poker` 30→tiebreak.
+4. 회차 순서(확정): ①rules ✅ → ②hand-rankings 6 → ③odds 7 → ④strategy 8(range 축 금맥 — 시드 9) →
+   ⑤glossary 6(termos 약점층) → ⑥tournament 9(§14 EN verbatim + apt-incheon 자산화 확인 —
+   나머지 드리프트 continuation-bet·tournament-vs-cash-game도 해당 회차에서).
+5. 절차 = `REVIEW-PROTOCOL.md` 3층 게이트 · posting.mdc 필독 · 4렌즈+브라질 네이티브 QA+2차 교열 ·
+   EN 소급분은 발견 즉시 같은 커밋으로. 게이트는 `--locale=pt`(slug 단위 없음 — 코퍼스 전체가 돈다).
+6. 🆕 **회차 1이 정한 pt 클러스터 표기**(회차 2~6도 따를 것): 본문 **poker**(pôquer 금지) ·
+   **street**(rua 금지) · 카드 나열 앞은 **board**(mesa 금지) · top pair. ⚠ 나머지 pt 37편은 혼재 —
+   각 회차에서 그 클러스터만 통일한다.
 
 **그다음 후보(지시 대기)**:
 - fr 전략 코퍼스 확장(랜딩 내부링크 보강 겸 — `docs/local-voice/fr-fr.md`·fr 뱅크 준비됨)
@@ -62,6 +62,9 @@
 
 | 무엇 | 메모 |
 |---|---|
+| 🔴 **showdown-rules TDA Rule 16 «토너먼트 한정» 누락 — 23로케일 잔존** | pt 회차 1의 딜러 렌즈가 잡은 EN 발원 결함(캐시에선 pagador가 muck 가능한데 전면 규칙처럼 서술 — all-in-rules와 모순). EN·pt는 8ee6b047로 정정(4곳: 본문 불릿·표·FAQ 2). **나머지 23로케일 미러 필요** — 각 로케일을 여는 회차에서, 또는 별건 미러 커밋으로(선례: 97e46572 «25 로케일 × 2자리») |
+| 🟠 pt 도구 링크 `/calculator`(KO 도구) 잔존 9곳 — bubble 2·icm 2·short-stack 2·starting-hands-chart의 `/hand-chart` 1 등 5파일 | rules 필라는 8ee6b047에서 `/pt/solver`로 교체 완료. 나머지는 **해당 클러스터 회차**(odds·tournament·strategy)에서 /pt/solver(Equity·Tabelas pré-flop 탭)로 전환 검토 |
+| 🟠 규칙 PDF pt판 부재 — `public/downloads/`에 ko·ja·zh·de판만 있고 beginners는 «PDF (em inglês)» 링크 | `poker para iniciantes pdf`(약점 3/1·DA20) 수요 실재. pt판 제작은 사장님 판단(제작 시 beginners 링크 교체) |
 | 🟠 **비한국어 537페이지 «메타 4종 + 스킵링크»가 한국어** | `application-name`·`author`·`keywords`·언어 전환 라벨·스킵링크 `본문 바로가기` — 루트 레이아웃 소관. `check:meta-lang`은 이 4종을 못 본다(사각지대). ⚠ **537페이지라 랜딩 회차에 끼우지 마라 — 별건으로 열고 게이트를 그 4종까지 넓혀라.** 우선순위: 스킵링크 → application-name → author → keywords |
 | 🆕 **fr 랜딩 내부링크 보강** — fr 코퍼스가 규칙 6편뿐이라 표준 링크 세트(chart·pot-odds·equity·3bet·strategy·glossary) 불성립. 프리플랍 안내는 앱 Charts préflop 탭으로 임시 대체 중 | **fr 전략 코퍼스 확장 시 함께**(위 착수 후보 1번). 뱅크 §3·랜딩 헤더에 명기 |
 | ⚠ **fr 뱅크는 라쿠 단일 벤더** — DFS 인증 만료(40100)로 교차검증 미실시 | DFS 복구 시 `solver poker`·`gto poker`·`range poker`·`solver poker gratuit` 4종 교차검증 + France SERP 실측(뱅크 §7) |
@@ -89,7 +92,7 @@
 |---|---|---|
 | 0 | 대회 글 3편 검수장 원장 신규 편입 여부 | `wsop-2026-tournament-guide`·`como-entrar-al-wsop`·`korea-poker-marathon-2026` — 편입하면 행 추가가 아니라 신규 1편씩(주장 전수 추출+판정) |
 | 1 | `starting-hands-chart #13` — 수치를 고칠지 핸드 목록을 고칠지 | UTG 13% vs 조합수 144콤보=10.86% 충돌. SEO·전략 판단 |
-| 2 | 다국어 «판 전체 재동기화» 할지 말지 | 노출 미미(전 언어 클릭 합 2). `blind-meaning` 표 헤더 23로케일 동일 결함 중 5곳만 고침. 착수 시 `docs/multilang-sync-plan.md` |
+| 2 | 다국어 «판 전체 재동기화» 할지 말지 | 노출 미미(전 언어 클릭 합 2). `blind-meaning` 표 헤더 23로케일 동일 결함 중 6곳 고침(pt는 8ee6b047). 착수 시 `docs/multilang-sync-plan.md` |
 | 3 | de 콘텐츠 신설 | 칩 분배 계산기(`verteilung rechner` LDA7) · 세금 FAQ 흡수(승인·미착수) · 툴 브랜드 대응 |
 | 4 | 「홀덤사이트」 클러스터 착수 | `/ranking` 14.1위 · 노출 28.7%로 최대 상승폭. 착수 전 자동완성 의도 확인 + 홈 카니발 확인 |
 | 5 | EN 제목 보강 3편 | `holdem-3bet`·`holdem-continuation-bet`·`holdem-pot-odds` — 제목에 poker/hold'em 없음. 🔴 GSC 먼저(노출 붙었으면 교체 순간 측정 끊김) |

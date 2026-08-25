@@ -1,3 +1,27 @@
+## 2026-08-25 (3) — pt 경화 회차 1: rules 클러스터 6편 완료 (커밋 8ee6b047)
+
+**대상**: texas-holdem-rules-for-beginners · holdem-game-order · holdem-betting-actions ·
+holdem-blind-meaning · holdem-all-in-rules · holdem-showdown-rules
+
+- **드리프트 소급 5편**(betting-actions는 미러 3커밋으로 기반영 — 날짜 필드만): blind 표 헤더
+  «/ nível»(23로케일 결함 중 pt 닫음 — 판단 대기 #2 카운트 5→6) · showdown FAQ 구버전 2곳
+  (본문 정정과 모순이던 all-in FAQ) · game-order 스타팅핸드 재분류·«7 jogadas» H2·번카드 FAQ ·
+  beginners KO 도구 링크 → **/pt/solver** 교체(뱅크 시드 6 «연습은 트레이너» CTA) · 경험담 EN parity
+- **롱테일 재조준**(시드 3·6): 신규 FAQ 5(flush DA2 · cash game DA6 · dicas · flop turn river 260 ·
+  **regras do dealer poker** — dealer 880이 6편 무주공산이던 축) + H2 질문형·직답 3곳 + 태그
+  카니발 3건 해소 + all-in seoTitle 64→53자
+- **4렌즈+2차 교열**: 🔴 **EN 발원 결함 2건 같은 커밋 소급** — ① showdown TDA Rule 16
+  «토너먼트 한정» 누락 4곳(캐시는 pagador muck 가능 — all-in-rules와 모순) ② game-order
+  팟오즈 관례 모호(«já com a aposta dentro» 명시). ⚠ ①은 **나머지 23로케일에 잔존** — 핸드오프
+  미결로. 네이티브 12건(pôquer→poker 6편 통일 · rua→street · mesa→board 카드 나열 자리 ·
+  top pair · 문법 2) · 교열 4건(단언 완화·SB 중복 꼬리 삭제·일화 논지 정합). 2차 교열 결함 0
+- 게이트 `--locale=pt` 42/42 🔴0 · `--locale=en` 56/56 🔴0 · 2층 손검산(rules 표 3행·showdown
+  스트플 예시·game-order 예시핸드) · 빌드·배포 ✅
+- 다음 = **회차 2: hand-rankings 6편** — 선행 실측 2건(`sequencia poker` 27,100 의도 ·
+  `maos do/de poker` SERP 동일성) 필수
+
+---
+
 ## 2026-08-25 (2) — pt 경화 회차 0: 드리프트 diff 42편 + 키워드 수확(라쿠 39종·lowfruits 9시드) + 전략 확정
 
 **다음 세션 = 회차 1(rules 6편)** · 재료 = `docs/keyword-bank/pt-hardening-2026-08.md`
