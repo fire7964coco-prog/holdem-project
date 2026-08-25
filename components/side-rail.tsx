@@ -189,6 +189,17 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
     { href: "/zh-hant/solver",      icon: "🧠", label: "GTO 解算器" },
     { href: "/zh-hant/tournaments", icon: "🏆", label: "錦標賽" },
   ],
+  /**
+   * ★2026-08-24 — `/fr/solver` 신설과 함께 추가(9번째 · 솔버 앱 fr 배포 당일). 라벨은 검증된
+   *   값에서: "Blog" = CHROME.fr.blogLabel(lib/intl.ts) · "Solver GTO"는 솔버 본체를 `?lang=fr`로
+   *   열어 읽은 title 축어(«HoldemMaster GTO Trainer — **Solver et trainer GTO** gratuits…»)에서
+   *   딴 것이다. ⚠ **`/fr/tournaments`는 없다** — 다른 로케일 항목을 복사하지 마라.
+   *   🔴 라벨은 «검색 축»이 아니라 «메뉴 이름»이다 — 어순 규율(solver poker 320)과 층이 다르다.
+   */
+  fr: [
+    { href: "/fr/blog",   icon: "📚", label: "Blog" },
+    { href: "/fr/solver", icon: "🧠", label: "Solver GTO" },
+  ],
 };
 
 /**
@@ -199,7 +210,9 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
  */
 // zh도 같은 규칙: BOARD_STRINGS.zh guideLink "详细指南" → "指南"(ja 詳細ガイド→ガイド와 동형).
 // zh-hant도 동일: BOARD_STRINGS["zh-hant"] guideLink "詳細指南" → "指南"(2026-08-24).
-const HUB_HEADING: Record<string, string> = { en: "Guides", ja: "ガイド", es: "Guías", de: "Guides", zh: "指南", "zh-hant": "指南" };
+// fr — BOARD_STRINGS에 fr이 없다(fr에 tournaments 페이지 자체가 없음). "Guides"는 프랑스어에서도
+//      같은 철자·같은 뜻의 표준어라 en 값을 그대로 쓴다(2026-08-24).
+const HUB_HEADING: Record<string, string> = { en: "Guides", ja: "ガイド", es: "Guías", de: "Guides", zh: "指南", "zh-hant": "指南", fr: "Guides" };
 
 /**
  * 그 로케일의 허브 메뉴 — **좌측 레일과 모바일 상단 탭이 같은 목록을 쓴다.**

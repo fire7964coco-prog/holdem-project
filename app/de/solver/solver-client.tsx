@@ -130,7 +130,8 @@ const SPEC: [string, string][] = [
   ["Kompatibilität", "Moderne Browser – Windows, macOS, Linux und Handy"],
   // ⚠ 이 열거는 앱 셀렉터(8개: ko,en,ja,es,pt,de,zh,zh-hant)와 1:1이 아니다 — 간체·번체를
   //    «Chinesisch» 하나로 묶었다(숫자를 주장하지 않으므로 허용 · M-046 §3 판정).
-  ["Sprache", "Deutsch (auch Koreanisch, Englisch, Japanisch, Spanisch, Portugiesisch und Chinesisch)"],
+  // ★2026-08-24 갱신 — 앱이 fr을 배포해 셀렉터가 9개가 됐다(Französisch 추가).
+  ["Sprache", "Deutsch (auch Koreanisch, Englisch, Japanisch, Spanisch, Portugiesisch, Französisch und Chinesisch)"],
   ["Engine", "Open-Source WASM Postflop (AGPL-3.0) · geänderter Quellcode veröffentlicht"],
 ];
 

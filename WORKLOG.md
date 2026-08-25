@@ -1,4 +1,51 @@
-## 2026-08-24 (5) — /zh-hant/solver 신설: 8번째 = 마지막 솔버 랜딩(앱 8언어 = 랜딩 8개 완성) + M-053·M-054 수신 + M-055 발신
+## 2026-08-25 — /fr/solver 신설: 9번째 솔버 랜딩(앱 fr 배포 당일 착수) + fr 앱 축어 납품(M-056)
+
+**통지** = M-057(`docs/reply-to-review-2026-08-25-m057.md` — ⚠ ID 충돌로 M-056→M-057 조정: 발신 직전
+재확인에서 검수장 M-056 선점 발견, 규약 2 이행) + 납품 `docs/solver-app-verbatim-fr-2026-08-24.md`
+
+### 📬 M-056 수신 (검수장→본체 · 같은 회차 처리)
+- **zh-hant 신설 당일 전수 = 결함 0**(«당일 0» 세 번째 — en 5·pt 3·de 0·zh 0·zh-hant 0) ·
+  원장 17행 + **의도적 제외 목록 등재**(M-055 ③ 기각 8건 이행) · 여덟 랜딩 완성 판정
+- **es ⑩ 재판정 = 수용** → **앱 잔존 ⑩ = ko·zh·zh-hant·es 4언어 확정** · (c) 부류 전건 종결 ·
+  솔버 왕복 일괄 동봉(①+③+es ⑩) 계획 동의
+- 검수장 추출기 CJK 가드 결함 자체 발견·수정(중문·일문 FAQ 추출 누락 — 세 번째 구멍 ·
+  «빌드 산출물 재검사 병행 유지» 요청 → 유지) · JSX 공백 zh·ja 소급 = 본체 몫 확인(회귀 영향 없음 검증)
+- 🪶 검수장이 **솔버 직통 우편함(S-001) + 앱 9언어 전수 검수 계획**을 신설(08-25) —
+  fr 축어 납품이 그 계획의 fr 조각을 겸한다(M-057 §2에 명기)
+
+### 만든 것
+- `app/fr/solver/` 3파일 — FAQ **23문항**(`calculateur poker` 390·`apprendre le poker` 720 흡수
+  fr 고유 2문항) · 등록 6곳 · **hreflang 9파일 세트**(`fr-FR` — 기존 8파일 동시)
+- `docs/keyword-bank/fr-gto-solver.md` 신설(라쿠 France 48개월 + 서제스트 3종 + 웹서치 3건 —
+  ⚠ DFS 인증 만료라 단일 벤더 · 복구 시 교차검증 §7) + `docs/local-voice/fr-fr.md` 신설
+- `lib/hub-i18n.ts` FR 신설 — ⚠ **유일하게 축어 복사가 아니다**(community-client LABELS에 fr 키
+  부재 — 신규 번역 · 원어민 확인 대상 명기) · side-rail fr 2행(Blog·Solver GTO — tournaments 없음)
+
+### 🔴 fr 실측이 확정한 것 — 7연속 «물려받는 것은 규율이지 값이 아니다»
+- **어순 정본 = `solver poker`**(320 대 `poker solver` 90 — es와 같고 de·zh와 반대)
+- 🟢 **무료 축이 문자열로 실재** — `solver poker gratuit` 110(de kostenlos 전부 null과 대조).
+  **훅=조준축이 겹치는 첫 로케일** → H1이 정면으로 받았다
+- `solveur` 단독 2,900 = Excel·équation·sudoku·scrabble 오염(서제스트 실증) · GTO 단독 규율 승계
+- `range poker`/`ranges poker` 각 1,600 — **단·복수가 월별 시계열까지 동일 = 구글 정규화**
+  (zh 자형 정규화와 동형 · SEO 렌즈 질의로 규명) · register = tutoiement
+- 🔴 **앱 셀렉터가 9개가 됐다** → 기존 6개 랜딩(de·es·ja·pt·zh·zh-hant)의 «언어 열거»
+  (SPEC+FAQ) 전건 프랑스어 포함으로 소급(같은 커밋)
+- fr 앱: title이 9언어 중 유일하게 «GTO Trainer» 선두 · 소수점 쉼표+% 앞 공백 ·
+  **①④⑦⑧ 결함형 → 9/9 전 언어 확정** · ⑩은 «presque» 완화형 통과
+
+### 검수·규율
+- 적대검수 4렌즈 병렬(세션 한도로 3렌즈 1회 중단 → 리셋 후 재실행) + 2차 교열:
+  산수 1건(⑨ «toujours au même sizing» 절대형 — §4-B 작은벳 0,7 %와 모순 · 삭제) ·
+  네이티브 20건 → 반영 19/기각 1(«il check» 무활용 = 앱 축어 스타일) ·
+  SEO 4건 반영(`solveur poker`·`equity poker` 연속열 · TITLE 97→79자 · range 귀속 규명) ·
+  정합 9건 반영(본문↔FAQ 축어 중복 — fr이 zh-hant보다 많았다 · 전부 FAQ 변주)
+- ⚠ fr 코퍼스 = 규칙 6편뿐 — 표준 내부링크 세트 불성립(실존 6편으로만 · 프리플랍은 앱
+  Charts préflop 탭으로) → **fr 전략 코퍼스 확장이 다음 착수 후보 1번**(핸드오프)
+- 게이트: build + hreflang(9코드 세트)·meta-lang·directives ✅ · robots index,follow · 사이트맵 등재
+
+---
+
+## 2026-08-24 (5) — /zh-hant/solver 신설: 8번째 솔버 랜딩(당시 앱 8언어 = 랜딩 8개) + M-053·M-054 수신 + M-055 발신
 
 **통지** = M-055(`docs/reply-to-review-2026-08-24-m053-m054.md`) + 납품 `docs/solver-app-verbatim-ja-es-2026-08-24.md`
 

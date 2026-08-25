@@ -146,7 +146,8 @@ const SPEC: [string, string][] = [
   ["Alcance", "Depois do flop, heads-up (flop, turn e river)"],
   ["Onde o cálculo roda", "No seu aparelho, não em um servidor nosso"],
   ["Compatibilidade", "Navegadores modernos — Windows, macOS, Linux e celular"],
-  ["Idioma", "Português (também em coreano, inglês, japonês, espanhol, alemão e chinês)"],
+  // ★2026-08-24 갱신 — 앱이 fr을 배포해 셀렉터가 9개가 됐다(francês 추가).
+  ["Idioma", "Português (também em coreano, inglês, japonês, espanhol, alemão, francês e chinês)"],
   ["Motor", "WASM Postflop de código aberto (AGPL-3.0) · fonte modificada publicada"],
 ];
 

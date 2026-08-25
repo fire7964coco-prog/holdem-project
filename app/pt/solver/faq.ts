@@ -143,7 +143,7 @@ export const SOLVER_FAQ_PT: FaqItem[] = [
   },
   {
     q: "O aplicativo está em português?",
-    a: "Está, a interface inteira em português, e você também pode trocar para coreano, inglês, japonês, espanhol, alemão e chinês no seletor de idioma. Não é tradução parcial: os menus, os spots de estudo e o Treinador estão localizados.",
+    a: "Está, a interface inteira em português, e você também pode trocar para coreano, inglês, japonês, espanhol, alemão, francês e chinês no seletor de idioma. Não é tradução parcial: os menus, os spots de estudo e o Treinador estão localizados.",
   },
   {
     q: "Onde encontro material de estudo de poker de graça?",

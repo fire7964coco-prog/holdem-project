@@ -141,7 +141,7 @@ export const SOLVER_FAQ_DE: FaqItem[] = [
     // ⚠ 언어 열거는 앱 셀렉터(8개: ko,en,ja,es,pt,de,zh,zh-hant)와 1:1이 아니다 — 간체·번체를
     //    «Chinesisch» 하나로 묶었다(숫자를 주장하지 않으므로 허용 · M-046 §3 판정과 같은 처리).
     q: "Ist die Oberfläche auf Deutsch?",
-    a: "Ja, komplett – Menüs, Lernspots und Trainer sind lokalisiert, keine Teilübersetzung. In der Sprachauswahl kannst du außerdem auf Koreanisch, Englisch, Japanisch, Spanisch, Portugiesisch und Chinesisch umschalten.",
+    a: "Ja, komplett – Menüs, Lernspots und Trainer sind lokalisiert, keine Teilübersetzung. In der Sprachauswahl kannst du außerdem auf Koreanisch, Englisch, Japanisch, Spanisch, Portugiesisch, Französisch und Chinesisch umschalten.",
   },
   {
     // 🔴 `poker simulator kostenlos`(20 · +50%) 흡수 + 게임 의도(`poker simulator` 390 SERP

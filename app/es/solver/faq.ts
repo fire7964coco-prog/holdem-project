@@ -125,7 +125,7 @@ export const SOLVER_FAQ_ES: FaqItem[] = [
   },
   {
     q: "¿Está la aplicación en español?",
-    a: "Sí, la interfaz completa está en español, y también puedes cambiar a coreano, inglés, japonés, portugués, alemán y chino desde el selector de idioma. No es una traducción parcial: los menús, los spots de estudio y el Entrenador están localizados.",
+    a: "Sí, la interfaz completa está en español, y también puedes cambiar a coreano, inglés, japonés, portugués, alemán, francés y chino desde el selector de idioma. No es una traducción parcial: los menús, los spots de estudio y el Entrenador están localizados.",
   },
   {
     q: "¿Cuál es la mejor aplicación para jugar poker?",

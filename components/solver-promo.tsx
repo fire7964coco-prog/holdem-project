@@ -126,6 +126,24 @@ const COPY = {
     desc: "用瀏覽器裡的 GTO 解算器算德州撲克翻牌後的範圍——免下載、免註冊、完全免費",
     cta: "打開解算器 →",
   },
+  /**
+   * ★2026-08-24 — `/fr/solver` 신설과 함께 추가(9번째 · 솔버 앱 fr 배포 당일). 표기는 앱 fr
+   *   축어(«La stratégie GTO, directement dans ton navigateur.» · «Rien à installer»)와 랜딩
+   *   훅(«sans téléchargement ni inscription»)에서 왔다. title «Solver GTO» = 앱 title의
+   *   «Solver et trainer GTO»에서 딴 라벨.
+   * 🔴 **`GTO`도 `solver`도 단독으로 두지 않는다** — fr에서 solver/solveur 단독은 Excel·수학
+   *   (뱅크 `fr-gto-solver.md` §1-②) · GTO 단독은 자동차·아니메(§1-①). 항상 poker와 결합.
+   * 🔴 차별화어는 «무료»가 아니라 **«sans téléchargement · sans inscription»**다 — 프랑스어
+   *   무료 축의 실질 경쟁이 설치형(TexasSolver)·구독 웹(GTO Wizard fr)·푸시폴드 한정(poktools)
+   *   이라 SERP 전체와 갈린다. register = tu(앱·커뮤니티 실측).
+   */
+  fr: {
+    href: "/fr/solver",
+    badge: "♠ Outil gratuit",
+    title: "Solver GTO",
+    desc: "Calcule tes ranges poker postflop avec un solver GTO dans ton navigateur — sans téléchargement, sans inscription, gratuit",
+    cta: "Ouvrir le solver →",
+  },
 } as const;
 
 export type SolverPromoLocale = keyof typeof COPY;

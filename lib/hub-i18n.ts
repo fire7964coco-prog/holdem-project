@@ -158,7 +158,27 @@ const ZH_HANT: HubLabels = {
   languages: "🌐 社群語言",
 };
 
-const MAP: Partial<Record<SecondaryLocale, HubLabels>> = { en: EN, ja: JA, es: ES, pt: PT, de: DE, zh: ZH, "zh-hant": ZH_HANT };
+/**
+ * ★2026-08-24 신설 — `/fr/solver` 랜딩과 함께(9번째).
+ * ⚠ **다른 로케일과 달리 «축어 복사»가 아니다** — `community-client.tsx` LABELS에 fr 키가
+ *   **존재하지 않는다**(커뮤니티 UI가 fr 미지원 · 2026-08-24 grep 확인). 원천이 없어 신규
+ *   번역했다(tutoiement — 앱 fr·프랑스 커뮤니티 register 실측, 뱅크 §2). **원어민 확인 대상.**
+ *   금액·시각($30·$200·$1,000 · KST)은 전 로케일 공통 값을 그대로 복사했다(위 ⚠ 경고 준수).
+ *   LABELS에 fr이 생기면 그 축어로 교체할 것.
+ */
+const FR: HubLabels = {
+  login: "Se connecter",
+  write: "✏️ Écrire",
+  trending: "🔥 Tendances de la semaine",
+  eventBadge: "🎰 Événement · Bientôt",
+  eventTitle: "Choisis 6 numéros\nGagne des cartes cadeaux !",
+  eventDesc: "3 bons → $30 · 4 → $200\n5 → $1,000",
+  eventSchedule: "🔗 Chaque dimanche 19h KST\nTirage auto via le hash de bloc Bitcoin",
+  eventButton: "Voir l'événement →",
+  languages: "🌐 Langues de la communauté",
+};
+
+const MAP: Partial<Record<SecondaryLocale, HubLabels>> = { en: EN, ja: JA, es: ES, pt: PT, de: DE, zh: ZH, "zh-hant": ZH_HANT, fr: FR };
 
 /** locale이 null/undefined면 한국어 */
 export function hubLabels(locale: SecondaryLocale | null | undefined): HubLabels {
