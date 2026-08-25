@@ -16,7 +16,7 @@
 「2026-08-25」 · 뱅크 = `docs/keyword-bank/fr-gto-solver.md` · 절차 정본 = `docs/solver-landing-playbook.md`
 (⚠ 플레이북 머리의 «8언어·zh-hant가 마지막» 서술은 낡았다 — 다음에 열 때 9언어로 갱신).
 
-## 🔀 다음 두 갈래 — **모델 분담이 다르다** (2026-08-25 사장님 정정)
+## 🔀 다음 갈래 — **B만 남았다** (A는 2026-08-25 완결)
 
 > 기준: **«무엇을 쓸지 정해져 있으면 Opus, 무엇을 쓸지 정해야 하면 Fable».**
 > 경화 회차는 번역처럼 보이지만 SERP 의도 판정·롱테일 재조준·태그 카니발 해소가 본체라 **판정 작업**이다.
@@ -24,7 +24,7 @@
 
 | 갈래 | 작업 | 모델 |
 |---|---|---|
-| **A** | **비한국어 537페이지 «메타 4종 + 스킵링크»** — 아래 🔵 미결 표에 상세. 순서 = 스킵링크 → `application-name` → `author` → `keywords` → **게이트를 이 4종까지 확장** | **Opus** (기계적 대량 치환·판단 없음) |
+| ~~**A**~~ | ~~비한국어 «메타 4종 + 스킵링크»~~ **✅ 완결** — 실측 **541**페이지(537 아님) · 5커밋 `551f1325`~`ac5decf2` · 경위 = WORKLOG 「2026-08-25 (7)」 | — |
 | **B** | **pt 경화 회차 2 (hand-rankings 6편)** — 아래 상세 | **Fable** (판정) |
 
 🔴 **두 갈래 모두 랜딩(`app/*/solver`)을 건드리지 마라** — 검수장과 왕복이 진행 중이고
@@ -55,7 +55,7 @@ M-064에서 게이트 9편 118주장이 «OK 100% · 미해결 0»으로 확정�
 
 **그다음 후보(지시 대기)**:
 - fr 전략 코퍼스 확장(랜딩 내부링크 보강 겸 — `docs/local-voice/fr-fr.md`·fr 뱅크 준비됨)
-- 🟠 비한국어 537페이지 «메타 4종 + 스킵링크» 별건 · zh·ja 랜딩 JSX 공백 소급 별건 · 판단 대기 표 0~6
+- 🟠 zh·ja 랜딩 JSX 공백 소급 별건 · 판단 대기 표 0~6
 
 ---
 
@@ -81,7 +81,7 @@ M-064에서 게이트 9편 118주장이 «OK 100% · 미해결 0»으로 확정�
 |---|---|
 | 🟠 pt 도구 링크 `/calculator`(KO 도구) 잔존 9곳 — bubble 2·icm 2·short-stack 2·starting-hands-chart의 `/hand-chart` 1 등 5파일 | rules 필라는 8ee6b047에서 `/pt/solver`로 교체 완료. 나머지는 **해당 클러스터 회차**(odds·tournament·strategy)에서 /pt/solver(Equity·Tabelas pré-flop 탭)로 전환 검토 |
 | 🟠 규칙 PDF pt판 부재 — `public/downloads/`에 ko·ja·zh·de판만 있고 beginners는 «PDF (em inglês)» 링크 | `poker para iniciantes pdf`(약점 3/1·DA20) 수요 실재. pt판 제작은 사장님 판단(제작 시 beginners 링크 교체) |
-| 🔵 **[갈래 A — 다음 착수 · Opus]** **비한국어 537페이지 «메타 4종 + 스킵링크»가 한국어** | `application-name`·`author`·`keywords`·언어 전환 라벨·스킵링크 `본문 바로가기` — 루트 레이아웃 소관. `check:meta-lang`은 이 4종을 못 본다(사각지대). ⚠ **537페이지라 랜딩 회차에 끼우지 마라 — 별건으로 열고 게이트를 그 4종까지 넓혀라.** 우선순위: 스킵링크 → application-name → author → keywords |
+| 🆕 🔴 **게이트가 프로덕션 배포에서 안 돈다** — `vercel.json` `buildCommand`에 `check-meta-lang`·`check-hreflang`이 **없다** | 2026-08-25 갈래 A 마감 중 드러났다. npm 훅(prebuild·postbuild)은 프로덕션에서 안 돈다([[vercel-buildcommand-skips-npm-hooks]])는 건 알려져 있었는데, 그 buildCommand에 **넣어 둔 게이트가 넷 중 둘뿐**이다(hsl·rangechart·meta-length·patch-html-lang·directives는 있음). 방금 10종으로 넓힌 meta-lang이 **로컬 `npm run build`에서만** 돈다. 넣는 건 5초짜리지만 **오탐 1건이 프로덕션 배포를 세운다** — 그래서 임의로 안 했다. 사장님 판단. 백로그 P3·P4의 `check:clusters` 건과 **같은 자리**라 한 번에 여는 게 낫다 |
 | 🆕 **fr 랜딩 내부링크 보강** — fr 코퍼스가 규칙 6편뿐이라 표준 링크 세트(chart·pot-odds·equity·3bet·strategy·glossary) 불성립. 프리플랍 안내는 앱 Charts préflop 탭으로 임시 대체 중 | **fr 전략 코퍼스 확장 시 함께**(위 착수 후보 1번). 뱅크 §3·랜딩 헤더에 명기 |
 | ⚠ **fr 뱅크는 라쿠 단일 벤더** — DFS 인증 만료(40100)로 교차검증 미실시 | DFS 복구 시 `solver poker`·`gto poker`·`range poker`·`solver poker gratuit` 4종 교차검증 + France SERP 실측(뱅크 §7) |
 | 🆕 **zh·ja 랜딩 JSX 개행 공백 소급** — JSX가 텍스트 런 안의 개행을 공백으로 치환해 중문·일문 문장 한가운데 ASCII 공백이 렌더된다(zh-hant 회차가 빌드 산출물로 실측: zh «不限 次数» 등 3곳+ · ja «を 計算» 1곳+) | zh-hant는 신설 시점에 제거(중문 텍스트 런은 한 줄 규칙 — client 파일 헤더). **zh·ja는 검수된 파일이라 별건으로 열고 수정 후 재검수** — M-055 §4-④로 검수장에 공유됨. 🆕 08-25 실측: **블로그 본문에도 같은 유형이 생길 수 있다** — Rule 16 미러 때 `==r:` 앞에 공백을 두자 하이라이트가 태그로 치환되며 본문에 노출되는 자리가 zh·zh-hant에서 2건 발생(2차 교열이 제거). 다만 **빌드 산출물 기준 `holdem-showdown-rules` 3편(zh·zh-hant·ja) 본문은 현재 0건**이고 ja의 72건은 전부 `meta keywords`·`article:tag`의 의도된 구분 공백이다 — 본문 전수는 미확인 |

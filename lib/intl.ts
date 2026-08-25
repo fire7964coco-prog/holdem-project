@@ -1,7 +1,15 @@
 /**
  * 홀덤마스터(한국어 본진)에 곁들이는 보조 다국어 섹션 설정.
  * 한국어는 루트(/)에 그대로 두고, 추가 언어만 /{locale}/... 로 발행한다.
- * 새 언어 추가 = 아래 SECONDARY_LOCALES + CHROME 에 항목만 추가.
+ *
+ * ★새 언어 추가 체크리스트 — **셋 다 해야 한다**
+ *   ① 아래 `SECONDARY_LOCALES` 에 코드 추가
+ *   ② `CHROME`(+ `HTML_LANG`·`OG_LOCALE`·`POST_LABELS` 등 Record 전부)에 항목 추가
+ *   ③ 🔴 **`app/<locale>/layout.tsx` 생성** — 기존 파일 하나를 복사해 로케일 문자열만 바꾸면 된다.
+ *      빠뜨리면 **그 언어만 조용히 루트 `app/layout.tsx` 의 한국어 메타를 상속한다**
+ *      (`application-name`·`author`·`keywords`). Next 메타데이터는 얕은 병합이라
+ *      «안 준 필드»는 루트가 그대로 내려온다. 2026-08-25에 25개 언어 전부가 그 상태였다.
+ *      값 정본 = `lib/intl-locale-layout.ts` · 게이트 = `npm run check:meta-lang`
  */
 export const SECONDARY_LOCALES = ["en", "ja", "es", "zh", "zh-hant", "ar", "pt", "id", "ms", "vi", "hi", "de", "tr", "fr", "ru", "it", "pl", "th", "fa", "sw", "bn", "ro", "fil", "uk", "he"] as const;
 export type SecondaryLocale = (typeof SECONDARY_LOCALES)[number];
