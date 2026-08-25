@@ -31,6 +31,20 @@ import { CHROME, type SecondaryLocale } from "@/lib/intl";
  *      현지어로 가려면 og·JSON-LD·about 페이지까지 같은 커밋에서 함께 옮겨야 하고,
  *      그건 이 기계적 치환 회차의 몫이 아니다(§14 검수가 붙는 별건).
  *
+ * ★keywords는 «지운다» — 25개 언어분을 지어내지 않는다
+ *   구글은 meta keywords를 2009년부터 무시한다. 이 레포엔 이미 선례가 있다:
+ *   `app/hands/hands-client.tsx`가 «구글이 2009년부터 무시하는 신호이고 실측 볼륨 0인
+ *   어구가 조준을 흐린다»는 이유로 뺐다(커밋 691a7390).
+ *   25개 언어의 사이트 전역 키워드를 새로 짓는 것은 SERP 실측이 붙는 **판정 작업**이고,
+ *   지어낸 어구는 순위 효과가 0인데 검수 부채만 남는다. 그래서 한국어를 다른 언어로
+ *   바꾸는 대신 **상속을 끊는다.**
+ *   ⚠ 자기 keywords를 가진 페이지는 영향받지 않는다 — 비한국어 541페이지 중 471편(blog 글)은
+ *     `intl-blog-page.tsx`가 `post.tags`로 이미 덮고 있고, 그 값들은 로케일별 실측 태그다.
+ *     여기서 끊기는 건 그걸 안 가진 70페이지(로케일 홈 25 · blog 인덱스 25 · solver 9 ·
+ *     tournaments 6 · en 도구 6)뿐이다.
+ *   🔴 Next에서 상속을 끊으려면 `undefined`가 아니라 **`null`**이어야 한다.
+ *      `undefined`는 «값을 안 줬다»로 읽혀 루트의 한국어가 그대로 내려온다.
+ *
  * ▶ 게이트: `npm run check:meta-lang`
  */
 export function localeLayoutMetadata(locale: SecondaryLocale): Metadata {
@@ -38,5 +52,6 @@ export function localeLayoutMetadata(locale: SecondaryLocale): Metadata {
   return {
     applicationName: brand,
     authors: [{ name: `${brand} Editorial Team`, url: SITE }],
+    keywords: null,
   };
 }
