@@ -25,7 +25,7 @@
     "check:meta:selftest": "node scripts/check-meta-length.mjs --selftest",
     "prebuild": "npm run check:hsl && npm run check:intl-links && npm run check:rangechart && npm run check:meta && npm run check:cjk && npm run generate:sitemap",
     "build": "next build",
-    "build:vercel": "node scripts/check-hsl-tokens.mjs && node scripts/check-rangechart.mjs && node scripts/check-meta-length.mjs && node scripts/check-cjk-linebreak.mjs && next build && node scripts/patch-html-lang.mjs && node scripts/check-hreflang.mjs && node scripts/check-directives.mjs && node scripts/check-meta-lang.mjs",
+    "build:vercel": "node scripts/check-hsl-tokens.mjs && node scripts/check-intl-links.mjs && node scripts/check-rangechart.mjs && node scripts/check-meta-length.mjs && node scripts/check-cjk-linebreak.mjs && next build && node scripts/patch-html-lang.mjs && node scripts/check-hreflang.mjs && node scripts/check-directives.mjs && node scripts/check-meta-lang.mjs",
     "postbuild": "node scripts/patch-html-lang.mjs && npm run check:hreflang && npm run check:directives && npm run check:meta-lang",
     "start": "next start",
     "lint": "next lint",
@@ -78,6 +78,7 @@
     "@types/react-dom": "^18.3.1",
     "critters": "^0.0.23",
     "googleapis": "^173.0.0",
+    "jiti": "^2.6.1",
     "playwright": "^1.60.0",
     "tailwindcss": "^4.0.0",
     "typescript": "^5.6.3"
