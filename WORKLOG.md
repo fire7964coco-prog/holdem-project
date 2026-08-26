@@ -1,3 +1,40 @@
+## 2026-08-26 (5) — pt 경화 회차 5: glossary 클러스터 6편 · EN 드리프트 이식 + 렌즈 최다급 검출 (커밋 2a6f49d5)
+
+**대상**: glossary · bad-beat · cooler · fish · rake · straddle. 렌즈 5종(수학·딜러·SEO·교열·네이티브)
+전부 Opus + 2차 교열 패스 — 회차 4에 확정한 분담 그대로.
+
+- **glossary 드리프트 종결**: pt 07-05 < EN 07-19. `git show 1cec9b13`로 10행 추출·재저작 이식
+  (Boat/Quads/Runner-runner · NL/Limit·PLO·GTD·Hand-for-hand · Heads-up·RFI·Splash). 스트라이프
+  80+→**100+**(실측 111행). 뱅크 «letra-b 브라우징» 가설은 **기각** — pt glossary는 알파벳이 아니라
+  카테고리 구조라 자리 자체가 없음(구글 자동완성 실측으로 GL·GG·ITM 굴이 대신 나옴 → 신규 행)
+- **pt 전용 신규**: ITM·Bolha(bubble)·Outs·GG/GL/NH 4행 + FAQ «termos em português vs inglês»
+  (자동완성 실측 termos de poker em portugues/em ingles → 태그·도입부 «dicionário» 재조준)
+- **§13급 2건(렌즈 3~4종 교차 검출)**: ① bad-beat «flush draw drawing dead» — 9아웃 드로가
+  drawing dead일 수 없고 같은 문장이 자기모순(EN 관용구를 pt가 전문용어로 승격시킨 번역 유입) ②
+  쿼드 에이스 «apenas uma combinação em todo o poker» — 스트레이트 플러시 40콤보(에이스 없는 32콤보
+  포함, Python 전수)라 거짓. FAQ는 옳게 적혀 있어 본문↔FAQ 모순이기도 → «só um straight flush»로 통일
+- **SEO 렌즈 최대 지적 = 허브 역링크 0/5**: EN 경화 커밋(838d3fe3·108c8dc0)이 5편 도입부에 심은
+  glossary 역링크가 pt에 전부 누락(로케일 실측 zh 5/5·ja 4/5·es 1/5·de 0/5·id 0/5·pt 0/5).
+  pt 5편 복원 → **glossary 인바운드 4→9**. 나머지 로케일은 소급 미결로
+- **실전 절차 3건(딜러 렌즈)**: 스트래들 위 최소 레이즈 $8 누락 · string bet «무조건 콜» 반쪽 서술
+  (첫 동작만 유효 + 구두 raise 선언 보호 추가) · 잭팟 «앉은 전원»→«dealt-in» (EN 동일 결함 → 같은 커밋)
+- **winnable FAQ 4개 복원**(rake Quem paga/Como pagar menos·straddle Quem pode·cooler set-over-set) —
+  set-over-set 1%(1/96)·11,8%(set ou melhor) 수치는 2차 교열이 조합 전수로 재검산 통과
+- **pt-BR 직역 잔재 소탕(네이티브 렌즈)**: repartidas→distribuídas ×6 · resfriado(감기!)·estacar·
+  raquear·esbanjador·«espantá-lo embora» 칼크 · as paradas→os blinds · cassino/cardroom→clube/sala ·
+  Rounders 브라질 제목 **«Cartas na Mesa»** AdoroCinema 원문 축어 확인 후 병기 · rake에 브라질 클럽
+  R$ 맥락 1문단. ⚠️ «ases full de valetes»는 네이티브 렌즈가 «full de ases com valetes»를 제안했으나
+  **회차 1 정본 «X full de Y» 유지로 기각**(재론 시 settled 참조)
+- **EN 같은 커밋 수정 12곳**: overpair 행 caso-limite 분리(F3 자기모순) · 서크아웃 정의 flop 포함 ·
+  rake cap $4–$6→$3–$6 통일 · (0 a −1) · glossary RFI 재서술(Open 행 축어중복)·ante BB앤티·run it
+  twice 조건·string bet · straddle 최소레이즈·sleeper 헤지(표 셀 «Usually no»→«House rules» 포함) ·
+  straddle FAQ SPR 논거→본문 포지션 논거 정렬 · fish PFR 괄호. EN 5편 updated 08-26 → pt masterUpdated 동기
+- **교훈**: ① 2차 교열이 잡은 «같은 커밋에서 한쪽 표만 고침»(ante 46행 vs 195행, sleeper 산문 vs 표 셀)
+  — 수정은 **같은 주장 전 좌표를 grep한 뒤** 넣을 것 ② 신규 사실 병기(영화 제목)는 삽입 즉시 원문 검증
+- **회차 4 드리프트 오탐 정리**: 회차 4가 EN을 08-26으로 올리며 pt masterUpdated를 안 올려 게이트가
+  5편 드리프트 오탐 → masterUpdated 08-26 동기(3bet·implied-odds·limping·shc·when-to-fold)
+- 게이트 pt 42/42·en 56/56 🔴 0건 · 빌드·FAQ 스키마(glossary Question 9개) 정상 · 배포 확인
+
 ## 2026-08-26 (4) — pt 경화 회차 4: strategy 클러스터 8편 · range 축 금맥 (커밋 adcffae4 · Fable+Opus 렌즈)
 
 **대상**: strategy · positions · position-play · starting-hands-chart · limping · 3bet ·

@@ -156,9 +156,14 @@ quais sao as maos de poker
 - **용어집 축 전체가 약점층** — analyzed 15행 중 winnable 12(최저 DA 20~21 · 약점 3~4/10 ·
   등록 볼륨 없음 = 저볼륨×약한 SERP = 전형적 롱테일 진입로):
   `termos do poker (em português)` · `termos poker significado` · **`dicionario termos do poker`(FS)** ·
-  `termos de poker com a letra b`(FS — **알파벳 브라우징 의도** · glossary 글의 알파벳 구조와 정합) ·
+  `termos de poker com a letra b`(FS — ~~알파벳 브라우징 의도 · glossary 글의 알파벳 구조와 정합~~
+  ⚠ **2026-08-26 회차 5에서 기각**: pt glossary는 알파벳이 아니라 **카테고리 구조**가 정본이라
+  이 의도를 받을 자리가 없다 — settled-decisions §1 등재) ·
   `em inglês` 쌍(영·포 대응 수요 — glossary의 中(英) 병기 관습과 정합) → **holdem-glossary 몫**
 - `quais são os termos de poker`(질문) — FAQ 후보
+- ✅ **2026-08-26 회차 5 소화 완료**(커밋 2a6f49d5): 태그 «termos de poker em português/em inglês/
+  dicionário de poker» + 도입부 «dicionário» + 신규 FAQ(português vs inglês). 구글 자동완성 실측
+  보완에서 **GL·GG·ITM** 굴 발견(«o que significa X no poker» 서제스트) → glossary 신규 행으로 흡수
 
 ### ⚠ 중간 와일드카드 시드 2종(`como * no poker`·`o que e * no poker`) = lowfruits가 못 펼침(narrow)
 
