@@ -201,7 +201,7 @@ Un **kicker** es simplemente una carta que no forma parte de tu mano hecha pero 
 
 ## Lee la mesa: 3 problemas reales
 
-![Mesa K-K-K-A-4 sobre el tapete — ¿ves el full antes que el dealer?](/images/holdem-hand-rankings-board-puzzle.webp "Problema de lectura de mesa — encuentra tus mejores cinco cartas")
+![Mesa K-K-K-A-2 sobre el tapete — ¿ves el full antes que el dealer?](/images/holdem-hand-rankings-board-puzzle.webp "Problema de lectura de mesa — encuentra tus mejores cinco cartas")
 
 Saber el orden no es lo mismo que leerlo rápido. Aquí van tres situaciones reales. Tapa la respuesta, busca tus mejores cinco cartas de las siete y comprueba.
 

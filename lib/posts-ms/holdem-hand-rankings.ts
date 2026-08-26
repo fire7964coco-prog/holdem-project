@@ -206,9 +206,9 @@ Anda pegang **Q♥ Q♦**. Apakah tangan terbaik anda?
 
 :::hand[7♥,8♥,9♥,10♥,J♠] Meja (5 kad):::
 
-Anda pegang **K♥ 2♣**. Meja ada empat heart.
+Anda pegang **6♥ 2♣**. Meja ada empat heart.
 
-→ K♥ anda ialah heart kelima, jadi anda fikir "flush". Tetapi lihat jujukannya: **K♥ 10♥ 9♥ 8♥ 7♥** ialah lima heart *berturutan* — sebuah **straight flush ber-K**, tangan #2. Sentiasa semak sama ada kad flush anda turut bersambung sebelum menganggap ia cuma flush.
+→ 6♥ anda ialah heart kelima, jadi anda fikir "flush". Tetapi lihat jujukannya: **10♥ 9♥ 8♥ 7♥ 6♥** ialah lima heart *berturutan* — sebuah **straight flush 10-high**, tangan #2. Sentiasa semak sama ada kad flush anda turut bersambung sebelum menganggap ia cuma flush.
 
 ### Soalan 3 — Apabila terpaksa berkongsi
 

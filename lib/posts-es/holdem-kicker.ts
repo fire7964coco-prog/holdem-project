@@ -170,7 +170,7 @@ A. Sí, el póker tiene un kicker de una carta, pero rara vez importa en Hold'em
 
 **Q. ¿Importa el kicker con trío?**
 
-A. Sí. El trío usa dos kickers, así que cuando dos jugadores hacen el mismo trío las dos cartas más altas siguientes rompen el empate — K-K-K-A-2 gana a K-K-K-Q-J porque el as supera a la reina. (Un *set* de verdad hecho con una pareja servida rara vez empata, ya que solo un jugador puede tener esa pareja exacta.)
+A. Sí. El trío usa dos kickers, así que cuando dos jugadores hacen el mismo trío las dos cartas más altas siguientes rompen el empate — en un board K♣ K♥ 7♦ 5♣ 2♠, K♠ A♠ juega K-K-K-A-7 y gana al K-K-K-Q-7 de K♦ Q♦ porque el as supera a la reina. (Un *set* de verdad hecho con una pareja servida rara vez empata, ya que solo un jugador puede tener esa pareja exacta.)
 
 **Q. ¿La doble pareja tiene kicker?**
 

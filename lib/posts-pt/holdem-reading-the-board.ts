@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "No Texas Hold'em você sempre joga a melhor mão de 5 cartas entre 7 (2 cartas na mão + 5 comunitárias) — usando as duas cartas, uma só, ou nenhuma (jogar a mesa). Varra as 7 cartas numa ordem fixa: flush → sequência → valores pareados → carta alta.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-08-11",
+  updated: "2026-08-26",
   masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "11 min",
@@ -40,7 +40,7 @@ A primeira vez que um dealer leu minha mão melhor do que eu, eu achava que tinh
 :::
 
 > **Resposta rápida**
-> Sua mão final é a ==melhor combinação de 5 cartas== que você consegue montar com suas 2 cartas na mão mais as 5 comunitárias. Você pode usar as duas cartas, só uma, ou nenhuma ("jogar a mesa"). Varra as 7 cartas numa ordem fixa — flush, sequência, valores pareados, carta alta — e depois encaixe o que achar na escada do [ranking de mãos de pôquer](/pt/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp").
+> Sua mão final é a ==melhor combinação de 5 cartas== que você consegue montar com suas 2 cartas na mão mais as 5 comunitárias. Você pode usar as duas cartas, só uma, ou nenhuma ("jogar a mesa"). Varra as 7 cartas numa ordem fixa — flush, sequência, valores pareados, carta alta — e depois encaixe o que achar na escada do [ranking de mãos de poker](/pt/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp").
 
 ---
 
@@ -48,7 +48,7 @@ A primeira vez que um dealer leu minha mão melhor do que eu, eu achava que tinh
 
 No Texas Hold'em você recebe 2 cartas na mão, e a mesa acaba mostrando 5 cartas comunitárias. Dessas 7, ==você joga exatamente 5 — as 5 mais fortes disponíveis==. Só há três caminhos possíveis:
 
-| Quantas cartas da mão você usa | Como fica | Frequência |
+| Quantas cartas da mão você usa | Como fica | Das 21 combinações |
 |------|------|------|
 | **As duas** | Suas duas cartas se conectam com três cartas da mesa | 10 das 21 formas |
 | **Uma** | Uma carta pareia ou completa algo; a outra fica de fora | 10 das 21 formas |
@@ -56,13 +56,13 @@ No Texas Hold'em você recebe 2 cartas na mão, e a mesa acaba mostrando 5 carta
 
 Três exemplos rápidos, todos resolvidos:
 
-| Suas cartas na mão | Mesa | Melhores 5 cartas | Mão |
+| Suas cartas na mão | Board | Melhores 5 cartas | Mão |
 |----------------|-------|-------------|------|
 | A♠ K♥ | Q♦ J♣ 10♠ 2♦ 7♣ | A-K-Q-J-10 | Sequência Broadway (as duas cartas jogam) |
 | 9♥ 9♦ | 9♠ 2♦ J♣ 5♥ K♣ | 9-9-9-K-J | Trinca de noves, kickers K e J |
 | 7♦ 2♣ | A♠ K♠ Q♠ J♠ 10♠ | A própria mesa | Royal flush — jogando a mesa |
 
-==g:Sempre leia as 7 cartas juntas antes de decidir o que você tem.== O erro clássico de iniciante é ficar olhando as duas cartas da mão e nunca reparar no que a mesa montou ao redor delas. Qual carta lateral vale quando as mãos estão apertadas é um tópico à parte — é o [kicker](/pt/blog/holdem-kicker), e ele decide mais potes do que a maioria dos jogadores imagina.
+==g:Sempre leia as 7 cartas juntas antes de decidir o que você tem.== O erro clássico de iniciante é ficar olhando as duas cartas da mão e nunca reparar no que a mesa montou ao redor delas. Qual carta lateral vale quando o confronto é parelho é um tópico à parte — é o [kicker](/pt/blog/holdem-kicker), e ele decide mais potes do que a maioria dos jogadores imagina.
 
 ---
 
@@ -77,22 +77,22 @@ Confira valores pareados | Pares, trincas, full houses, quadras — combine os v
 Fique com a mais alta | Seja qual for a coisa mais forte que você achou, essa é sua mão. Complete com as cartas mais altas restantes até ter exatamente 5.
 :::
 
-Passo a passo: você tem A♥ 5♥ e a mesa mostra A♦ 7♦ 4♠ 10♣ 2♠.
+Passo a passo: você tem A♥ 5♥ e o board mostra A♦ 7♦ 4♠ 10♣ 2♠.
 
 - **Flush?** Copas 2, ouros 2, espadas 2, paus 1 — não.
 - **Sequência?** Valores A-10-7-5-4-2 — não há cinco seguidos (a wheel A-2-3-4-5 não tem o 3).
 - **Valores pareados?** Sim — A♥ + A♦.
 - **Melhores 5:** A-A-10-7-5. ==Um par de ases com 10-7-5 atrás — não "um par de ases e pronto".== Essas três cartas laterais decidem os empates.
 
-:::tip[Você sempre joga exatamente 5 cartas — se você fez uma sequência E tem um par, a sequência é sua mão. O pôquer nunca soma as duas.]:::
+:::tip[Você sempre joga exatamente 5 cartas — se você fez uma sequência E tem um par, a sequência é sua mão. O poker nunca soma as duas.]:::
 
 ---
 
-## O que significa "jogar a mesa" no pôquer?
+## O que significa "jogar a mesa" no poker?
 
 Jogar a mesa significa que ==suas cartas na mão não acrescentam nada — as 5 cartas comunitárias já são a melhor mão de 5 cartas que dá para fazer==.
 
-Mesa: A♠ A♦ A♣ 7♥ 7♦ — um full house, ases com setes. Você tem K♣ Q♣. Teste: ficar com o full house (A-A-A-7-7) ganha de qualquer combinação de 5 cartas usando seu rei ou dama (A-A-A-K-7 é só trinca). ==Sua melhor mão é a própria mesa.==
+Board: A♠ A♦ A♣ 7♥ 7♦ — um full house, ases com setes. Você tem K♣ Q♣. Teste: ficar com o full house (A-A-A-7-7) ganha de qualquer combinação de 5 cartas usando seu rei ou dama (A-A-A-K-7 é só trinca). ==Sua melhor mão é a própria mesa.==
 
 E aqui está a parte que importa para o seu stack: ==r:a mesa pertence a todo mundo que ainda está na mão==. Se ninguém consegue melhorá-la, o pote é dividido — a mecânica completa está nas [regras de divisão de pote](/pt/blog/holdem-split-pot-rules "thumb:/images/holdem-split-pot-hero.webp"). Mas antes de supor que é split, pergunte quem PODE ganhar da mesa:
 
@@ -108,11 +108,11 @@ E aqui está a parte que importa para o seu stack: ==r:a mesa pertence a todo mu
 
 Uma sequência são 5 valores consecutivos. O método confiável: ==liste os 7 valores do maior ao menor e procure 5 seguidos==.
 
-Você tem 8♦ 6♣. Mesa: 7♥ 5♠ 4♣ K♦ 2♠. Valores em ordem: K, 8, 7, 6, 5, 4, 2. Aí está — ==8-7-6-5-4, uma sequência de oito alto== — mesmo que suas duas cartas na mão pareçam lixo lado a lado.
+Você tem 8♦ 6♣. Board: 7♥ 5♠ 4♣ K♦ 2♠. Valores em ordem: K, 8, 7, 6, 5, 4, 2. Aí está — ==8-7-6-5-4, uma sequência de oito alto== — mesmo que suas duas cartas na mão pareçam lixo lado a lado.
 
 ![Sequência de oito alto no Texas Hold'em — 7 cartas espalhadas com 8-7-6-5-4 destacadas em dourado mostrando a sequência formada](/images/holdem-reading-straight-example.webp)
 
-| Mão | Mesa | Sequência? |
+| Mão | Board | Sequência? |
 |------|-------|-----------|
 | 8♦ 6♣ | 7♥ 5♠ 4♣ K♦ 2♠ | Sim — 8-7-6-5-4 |
 | J♠ 9♣ | 10♥ 8♦ 7♠ 2♣ K♥ | Sim — J-10-9-8-7 |
@@ -122,7 +122,7 @@ Você tem 8♦ 6♣. Mesa: 7♥ 5♠ 4♣ K♦ 2♠. Valores em ordem: K, 8, 7, 
 Duas dúvidas sobre o ás que confundem todo mundo o tempo todo:
 
 - **Dá para usar um ás numa sequência?** Sim, em qualquer das duas pontas: alto em A-K-Q-J-10 (Broadway) ou baixo em A-2-3-4-5 (a wheel — a sequência mais baixa que existe).
-- **A sequência pode dar a volta?** ==r:Não. K-A-2-3-4 não é sequência — é só ás alto.== Tenha A♦ 2♦ numa mesa K♠ Q♥ 3♣ 4♦ 9♠ e você não tem par, não tem sequência, nada além de A-K-Q-9-4.
+- **A sequência pode dar a volta?** ==r:Não. K-A-2-3-4 não é sequência — é só ás alto.== Tenha A♦ 2♦ num board K♠ Q♥ 3♣ 4♦ 9♠ e você não tem par, não tem sequência, nada além de A-K-Q-9-4.
 
 Quando duas sequências se enfrentam, ganha a de carta mais alta — a escada completa de quem-ganha-de-quem está nas [regras de desempate](/pt/blog/holdem-tiebreak-rules).
 
@@ -141,17 +141,17 @@ Um flush precisa de 5 cartas de um mesmo naipe entre suas 7. A mesa te diz na ho
 
 ![NÃO É FLUSH — ter A♠ com só 3 espadas na mesa não forma flush no Texas Hold'em](/images/holdem-reading-flush-draw-mistake.webp)
 
-==r:A leitura errada clássica: ter A♠ 4♦ numa mesa 2♠ 5♠ 9♥ J♥ 10♠ e anunciar flush.== Conte: a mesa tem três espadas (2♠ 5♠ 10♠), seu ás faz quatro. ==Quatro não é cinco.== Sua mão de verdade é ás alto — A-J-10-9-5 — e é péssimo descobrir isso depois de ter pago uma aposta no river.
+==r:A leitura errada clássica: ter A♠ 4♦ num board 2♠ 5♠ 9♥ J♥ 10♠ e anunciar flush.== Conte: o board tem três espadas (2♠ 5♠ 10♠), seu ás faz quatro. ==Quatro não é cinco.== Sua mão de verdade é ás alto — A-J-10-9-5 — e é péssimo descobrir isso depois de ter pago uma aposta no river.
 
 A armadilha inversa importa tanto quanto: numa mesa com 4 do mesmo naipe você tem ZERO desse naipe, e — desde que a mesa não esteja pareada — qualquer adversário com uma única carta dele te ganha. E se você está pesando um flush feito contra uma sequência feita, [flush ganha de sequência, sempre](/pt/blog/holdem-flush-vs-straight).
 
 ---
 
-## O que uma mesa pareada muda — trincas, boats e quadras
+## O que uma mesa pareada muda — trincas, full houses e quadras
 
 No momento em que duas cartas comunitárias compartilham um valor, ==o teto da mão sobe: trincas, full houses e quadras ficam todos vivos==.
 
-Mesa: K♣ K♦ 7♠ 3♥ 2♣
+Board: K♣ K♦ 7♠ 3♥ 2♣
 
 | Você tem | Suas melhores 5 | Mão |
 |------|------|------|
@@ -167,10 +167,10 @@ Repare na última linha: ==mesmo sem nada, o par da mesa faz parte da sua mão==
 
 ## Dá para ter flush e par ao mesmo tempo?
 
-Você pode TER os dois — mas nunca pode JOGAR os dois. ==Uma mão de pôquer são exatamente 5 cartas, então combinações que se sobrepõem não se somam; você simplesmente joga a mais forte.==
+Você pode TER os dois — mas nunca pode JOGAR os dois. ==Uma mão de poker são exatamente 5 cartas, então combinações que se sobrepõem não se somam; você simplesmente joga a mais forte.==
 
-- Você tem A♠ K♠ numa mesa Q♠ 7♠ 2♠ K♦ 3♣. Você fez um par de reis E cinco espadas. Sua mão é o ==nut flush, A♠ K♠ Q♠ 7♠ 2♠== — o par de reis simplesmente nunca entra na conta.
-- Você tem 8♥ 8♦ numa mesa 7♣ 6♦ 5♠ 4♥ K♦. Par de oitos E 8-7-6-5-4. Sua mão é a ==sequência de oito alto== — anuncie isso, não "um par com uma sequência".
+- Você tem A♠ K♠ num board Q♠ 7♠ 2♠ K♦ 3♣. Você fez um par de reis E cinco espadas. Sua mão é o ==nut flush, A♠ K♠ Q♠ 7♠ 2♠== — o par de reis simplesmente nunca entra na conta.
+- Você tem 8♥ 8♦ num board 7♣ 6♦ 5♠ 4♥ K♦. Par de oitos E 8-7-6-5-4. Sua mão é a ==sequência de oito alto== — anuncie isso, não "um par com uma sequência".
 
 A mesma lógica responde "dá para ter três pares?" — você pode ter três valores pareados entre 7 cartas, mas só os dois melhores cabem nas 5 cartas (explicado no [guia de ranking de mãos](/pt/blog/holdem-hand-rankings)).
 
@@ -178,15 +178,15 @@ A mesma lógica responde "dá para ter três pares?" — você pode ter três va
 
 ## Qual é a melhor mão possível? Lendo os nuts
 
-Jogadores fortes fazem mais uma varredura: não "o que eu tenho?" mas ==**"qual é a melhor mão que QUALQUER UM poderia ter nesta mesa?"**== Essa mão é chamada de os nuts (mais gírias de mesa como essa no [glossário de pôquer](/pt/blog/holdem-glossary)).
+Jogadores fortes fazem mais uma varredura: não "o que eu tenho?" mas ==**"qual é a melhor mão que QUALQUER UM poderia ter nesta mesa?"**== Essa mão é chamada de os nuts (mais gírias de mesa como essa no [glossário de poker](/pt/blog/holdem-glossary)).
 
-Mesa: Q♣ 9♥ 6♣ 5♦ 2♠
+Board: Q♣ 9♥ 6♣ 5♦ 2♠
 
 1. **Flush possível?** Só dois paus — não. Ninguém no mundo tem flush aqui.
 2. **Mesa pareada?** Não — então não existem full houses nem quadras.
 3. **Melhor sequência?** O 9-6-5 da mesa mais 8-7 na mão faz 9-8-7-6-5. Nada mais alto se conecta.
 
-Então os nuts são ==8-7 — uma sequência de nove alto==, e até um par de damas (top set) perde para ela. Rodar esse check de 3 perguntas em todo river te diz se sua mão "forte" é realmente o teto ou só enfeite.
+Então os nuts são ==8-7 — uma sequência de nove alto==, e até um par de damas (top set) perde para ela. Rodar essa checagem de 3 perguntas em todo river te diz se sua mão "forte" é realmente o teto ou só enfeite.
 
 ---
 
@@ -215,11 +215,11 @@ Visão de túnel no seu par ou no draw que não veio. Minha história do 8-6 lá
 
 ### Erro 2 — Contar quatro cartas do mesmo naipe como flush
 
-Quatro espadas entre suas 7 **não** é flush — precisa de cinco. E a imagem espelhada: mesa 9♠ 6♠ 3♠ Q♠ J♦ com A♥ K♥ na mão te dá A-K-Q-J-9 — só carta alta — enquanto ==qualquer adversário com uma única espada tem flush==.
+Quatro espadas entre suas 7 **não** é flush — precisa de cinco. E a imagem espelhada: board 9♠ 6♠ 3♠ Q♠ J♦ com A♥ K♥ na mão te dá A-K-Q-J-9 — só carta alta — enquanto ==qualquer adversário com uma única espada tem flush==.
 
 ### Erro 3 — Esquecer que a mesa é compartilhada
 
-Iniciantes foldam para "ele deve ter paus" numa mesa com três paus — mas esses paus só ajudam um adversário se as cartas na MÃO dele forem paus. Todo mundo aluga a mesma mesa; ==só as cartas na mão fazem a mão de alguém ser diferente da sua==.
+Iniciantes foldam para "ele deve ter paus" numa mesa com três paus — mas esses paus só ajudam um adversário se as cartas na MÃO dele forem paus. A mesa é de todo mundo; ==só as cartas na mão fazem a mão de alguém ser diferente da sua==.
 
 ### Erro 4 — Ignorar o boat numa mesa pareada
 
@@ -248,13 +248,13 @@ A. Pode. Se a própria mesa é a melhor mão de 5 cartas e as cartas na mão de 
 
 **Q. Dá para ter flush e par ao mesmo tempo?**
 
-A. Você pode fazer os dois com suas 7 cartas, mas uma mão de pôquer são exatamente 5 cartas — então você joga só a mais forte. Como o flush ganha do par, o flush é sua mão e o par é ignorado. A mesma regra vale para uma sequência mais um par: anuncie a sequência.
+A. Você pode fazer os dois com suas 7 cartas, mas uma mão de poker são exatamente 5 cartas — então você joga só a mais forte. Como o flush ganha do par, o flush é sua mão e o par é ignorado. A mesma regra vale para uma sequência mais um par: anuncie a sequência.
 
 **Q. Dá para usar um ás numa sequência?**
 
 A. Sim, em qualquer das duas pontas — alto em A-K-Q-J-10 (Broadway, a melhor sequência) ou baixo em A-2-3-4-5 (a wheel, a sequência mais baixa). Ele não pode ficar no meio de uma sequência.
 
-**Q. A sequência pode dar a volta no pôquer?**
+**Q. A sequência pode dar a volta no poker?**
 
 A. Não. Sequências como K-A-2-3-4 ou Q-K-A-2-3 não são sequências no Texas Hold'em — o ás só conecta para baixo a partir do 5 ou para cima a partir do dez. Uma mão que "dá a volta" é só carta alta, a não ser que forme outra coisa.
 

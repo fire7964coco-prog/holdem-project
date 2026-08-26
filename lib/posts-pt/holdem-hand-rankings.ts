@@ -2,31 +2,33 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "holdem-hand-rankings",
-  title: "Ranking de mãos de pôquer no Texas Hold'em — da melhor à pior, com probabilidades",
-  seoTitle: "Achou que tinha ganhado e perdeu o pote? — Mãos de pôquer",
-  desc: "Fez flush e mesmo assim perdeu o pote? Aqui estão as 10 mãos de pôquer da melhor à pior, as probabilidades reais de cada uma e como o kicker decide o vencedor.",
-  tldr: "O ranking de mãos de pôquer, da melhor à pior, é: Royal Flush, Straight Flush, Quadra, Full House, Flush, Sequência, Trinca, Dois Pares, Par e Carta Alta.",
+  title: "Mãos do poker em ordem — ranking da melhor à pior, com probabilidades",
+  seoTitle: "Achou que tinha ganhado e perdeu o pote? — Mãos do poker",
+  desc: "Fez flush e mesmo assim perdeu o pote? A tabela com as 10 mãos do poker da melhor à pior, as probabilidades de cada uma e como o kicker decide o vencedor.",
+  tldr: "A ordem das mãos do poker, da melhor à pior: Royal Flush, Straight Flush, Quadra, Full House, Flush, Sequência, Trinca, Dois Pares, Par e Carta Alta. Essa escada vale para o Texas Hold'em e quase todas as variantes.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-08-12",
+  updated: "2026-08-26",
 
   masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🃏",
-  tags: ["maos de poker", "ranking de maos de poker", "maos de texas holdem", "qual mao ganha no poker", "kicker poker", "empate no poker", "melhores maos de poker", "ordem das maos de poker"],
+  image: "/images/holdem-hand-rankings-hero.webp",
+  imageAlt: "Royal Flush — 10 J Q K A de espadas sobre a mesa de poker com pilhas de fichas e o botão do dealer",
+  tags: ["maos do poker", "maos de poker", "sequencia poker", "ordem das maos de poker", "tabela de maos de poker", "rank de maos poker", "melhores maos de poker", "piores maos do poker"],
   content: `
-Você está mano a mano no river. Fechou seu flush, tem certeza de que é o melhor… e então o dealer empurra o pote para o outro lado. A mesa estava pareada, seu adversário tinha full house, e você nunca viu isso chegando.
+Você está mano a mano no river. Fechou seu flush, tem certeza de que é o melhor… e então o dealer empurra o pote para o outro lado. A mesa estava pareada, seu adversário tinha full house, e você nem viu de onde veio.
 
-Quase todo momento de "achei que tinha ganhado" se resume à mesma coisa: não ler o **ranking de mãos de pôquer** rápido o suficiente. A ordem se aprende em cinco minutos. O difícil é lê-la ao vivo, sob pressão, com uma mesa pareada ou conectada — e quase ninguém explica isso bem.
+Quase todo momento de "achei que tinha ganhado" se resume à mesma coisa: não ler o **ranking de mãos do poker** rápido o suficiente. A ordem se aprende em cinco minutos. O difícil é lê-la ao vivo, sob pressão, com uma mesa pareada ou conectada — e quase ninguém explica isso bem.
 
 Este guia resolve as duas coisas. Você terá a ordem completa com as probabilidades reais, todas as regras de desempate, três problemas de mesa reais para treinar o "ache suas melhores cinco cartas" e uma rotina de 1 segundo para ler qualquer mesa.
 
 ---
 
-## Ranking de mãos de pôquer: a ordem completa
+## Tabela de mãos do poker: a ordem completa, da melhor à pior
 
-Comece por aqui. Este é o ranking inteiro, da mais forte à mais fraca, com a probabilidade aproximada de fechar cada mão até o river no Texas Hold'em.
+Comece por aqui. Esta é a tabela com o ranking inteiro, da mão mais forte à mais fraca, com a probabilidade aproximada de fechar cada uma até o river no Texas Hold'em.
 
 | # | Mão | Também chamada de | O que é | Probabilidade (até o river) |
 |------|------|------|------|------|
@@ -40,6 +42,8 @@ Comece por aqui. Este é o ranking inteiro, da mais forte à mais fraca, com a p
 | **8** | Dois Pares | — | Dois pares diferentes | 23,5% |
 | **9** | Par | — | Duas cartas do mesmo valor | 43,8% |
 | **10** | Carta Alta | "Sem nada" | Nenhuma combinação | 17,4% |
+
+Se você chegou aqui buscando a =="sequência do poker"== — o jeito mais comum de buscar essa ordem no Brasil — é exatamente a tabela acima. Só não confunda com a **Sequência (Straight)**, que é a mão #6 dessa escada: cinco cartas seguidas de naipes variados, explicada mais abaixo.
 
 > **A regra que encerra discussões**
 > Par e Carta Alta juntos somam cerca de 61% de todas as mãos de sete cartas até o river. As mãos grandes parecem comuns porque ficam na memória — mas a maioria dos potes é decidida por um par ou uma carta alta e o [kicker](/pt/blog/holdem-kicker "thumb:/images/holdem-kicker-hero.webp").
@@ -64,13 +68,13 @@ No Texas Hold'em padrão, **nenhum naipe ganha de outro**. Espadas não ganham d
 
 ---
 
-## As 10 mãos de pôquer explicadas
+## As 10 mãos de poker explicadas
 
 ### #1 — Royal Flush
 
 :::hand[A♠,K♠,Q♠,J♠,10♠] Royal Flush — A-K-Q-J-10 de espadas:::
 
-**A♠ K♠ Q♠ J♠ 10♠** — o straight flush mais alto e a melhor mão do pôquer.
+**A♠ K♠ Q♠ J♠ 10♠** — o straight flush mais alto e a melhor mão do poker.
 
 Não pode ser batido; o único empate possível é um royal flush que está inteiro na mesa e pertence a todos — aí o pote é dividido. Aparece mais ou menos uma vez a cada 31.000 mãos, então muitos jogadores passam anos sem fechá-lo. Quando fechar, seu único trabalho é colocar o máximo de fichas possível.
 
@@ -99,7 +103,7 @@ Entre duas quadras, ganha a de valor mais alto. Se as quatro estão *na mesa*, d
 Compare **primeiro a trinca**: QQQ55 ganha de JJJ99 porque as damas superam os valetes, não importa o tamanho do par. Só se a trinca empatar é que se compara o par.
 
 > **O "cooler" mais comum**
-> Toda vez que a mesa parear, procure um full house antes de se comprometer com flush ou sequência. "Meu flush máximo perdeu para um full house" é o bad beat mais frequente do Hold'em.
+> Toda vez que a mesa parear, procure um full house antes de se comprometer com flush ou sequência. "Meu nut flush perdeu para um full house" é o bad beat mais frequente do Hold'em.
 
 ### #5 — Flush
 
@@ -136,7 +140,7 @@ O set tira mais fichas porque ninguém vê chegar.
 
 ### #8 — Dois Pares
 
-:::hand[10♠,10♥,8♣,8♦,A♠] Dois Pares — dezes e oitos + kicker Ás:::
+:::hand[10♠,10♥,8♣,8♦,A♠] Dois Pares — dez e oitos + kicker Ás:::
 
 **10♠ 10♥ 8♣ 8♦ A♠** — dois pares diferentes.
 
@@ -148,7 +152,7 @@ Compara-se nesta ordem: **par alto → par baixo → kicker**. KK99-A ganha de Q
 
 **K♠ K♦ 9♥ 6♣ 2♠** — duas cartas do mesmo valor.
 
-A mão feita mais comum do Hold'em. Dois pares iguais se decidem pelos kickers: **valor do par → kicker 1 → kicker 2 → kicker 3**, do maior ao menor. É aqui que acontece a maioria das derrotas com "a mesma mão": cuide do seu kicker.
+A mão feita mais comum do Hold'em. Quando dois jogadores têm o mesmo par, os kickers decidem: **valor do par → kicker 1 → kicker 2 → kicker 3**, do maior ao menor. É aqui que acontece a maioria das derrotas com "a mesma mão": cuide do seu kicker.
 
 ### #10 — Carta Alta
 
@@ -162,7 +166,7 @@ No showdown ganha a carta mais alta, depois a seguinte, e assim com as cinco. Se
 
 ## Como kickers e empates funcionam de verdade
 
-![Showdown de pôquer — comparando as melhores cinco cartas de dois jogadores](/images/holdem-kicker-showdown-neutral.webp "No showdown, a melhor mão de cinco cartas leva o pote")
+![Showdown de poker — comparando as melhores cinco cartas de dois jogadores](/images/holdem-kicker-showdown-neutral.webp "No showdown, a melhor mão de cinco cartas leva o pote")
 
 Esta é a parte que decide potes de verdade — e que a maioria das tabelas pula. Quando dois jogadores têm o **mesmo tipo de mão**, siga esta ordem exata:
 
@@ -192,31 +196,33 @@ Um **kicker** é simplesmente uma carta que não faz parte da sua mão feita, ma
 
 ## Leia a mesa: 3 problemas reais
 
+![Board K-K-K-A-2 sobre a mesa de poker — você enxerga o full house antes do dealer?](/images/holdem-hand-rankings-board-puzzle.webp "Problema de leitura de board — ache suas melhores cinco cartas")
+
 Saber a ordem não é o mesmo que lê-la rápido. Aqui vão três situações reais. Cubra a resposta, ache suas melhores cinco cartas entre as sete e confira.
 
 ### Problema 1 — O full house escondido
 
-:::hand[A♠,A♦,K♥,K♣,Q♠] Mesa (5 cartas):::
+:::hand[A♠,A♦,K♥,K♣,Q♠] Board (5 cartas):::
 
 Você tem **Q♥ Q♦**. Qual é sua melhor mão?
 
-→ A mesa já mostra dois pares (A-A e K-K). Suas duas damas mais a Q♠ da mesa fazem **trinca de damas**, e junto com os ases da mesa você tem um **full house — QQQ + AA**. Essas são suas melhores cinco. Os iniciantes travam em "AAKK + Q não é só dois pares?" — não. Assim que você tem trinca, fica com o full house. **O full house ganha dos dois pares.**
+→ O board já mostra dois pares (A-A e K-K). Suas duas damas mais a Q♠ do board fazem **trinca de damas**, e junto com os ases você tem um **full house — QQQ + AA**. Essas são suas melhores cinco. Os iniciantes travam em "AAKK + Q não é só dois pares?" — não. Assim que você tem trinca, fica com o full house. **O full house ganha dos dois pares.**
 
 ### Problema 2 — O flush que na verdade é melhor
 
-:::hand[7♥,8♥,9♥,10♥,J♠] Mesa (5 cartas):::
+:::hand[7♥,8♥,9♥,10♥,J♠] Board (5 cartas):::
 
-Você tem **K♥ 2♣**. A mesa tem quatro copas.
+Você tem **6♥ 2♣**. O board tem quatro copas.
 
-→ Seu K♥ é a quinta copas, então você pensa "flush". Mas olhe a sequência: **K♥ 10♥ 9♥ 8♥ 7♥** são cinco copas *seguidas* — um **straight flush com K**, a mão #2. Sempre confira se suas cartas de flush também estão conectadas antes de supor que é só flush.
+→ Seu 6♥ é a quinta copas, então você pensa "flush". Mas olhe a sequência: **10♥ 9♥ 8♥ 7♥ 6♥** são cinco copas *seguidas* — um **straight flush de dez alto**, a mão #2. (Troque esse 6♥ por um K♥ e as copas viram K-10-9-8-7 — não são mais consecutivas, então a mão cai para um flush simples de rei.) Sempre confira se suas cartas de flush também estão *conectadas* antes de supor que é só flush.
 
 ### Problema 3 — Quando é preciso dividir
 
-:::hand[K♠,K♦,K♥,A♠,2♠] Mesa (5 cartas):::
+:::hand[K♠,K♦,K♥,A♠,2♠] Board (5 cartas):::
 
-Você tem **A♥ 3♣**. A mesa já traz trinca de reis.
+Você tem **A♥ 3♣**. O board já traz trinca de reis.
 
-→ Seu A♥ pareia com o A♠ da mesa e te dá um **full house, KKK + AA**. Mas se seu adversário também tem um único Ás — e não o último Rei —, ele tem o *mesmo* full house e o pote é dividido. Só duas coisas ainda te ganham: o par de Áses na mão (A-A) faz um full maior (Áses cheios de Reis), e o último Rei (K♣) faz **quadra de Reis** seja qual for a outra carta — o A♠ da mesa já serve de kicker para ele. Se ele não tem nem Ás nem esse Rei, seu full house ganha. A lição: quando a mesa faz quase todo o trabalho, sua mão muitas vezes vale só uma carta extra.
+→ Seu A♥ pareia com o A♠ do board e te dá um **full house, KKK + AA**. Mas se seu adversário também tem um único Ás — e não o último Rei —, ele tem o *mesmo* full house e o pote é dividido. Só duas coisas ainda te ganham: o par de ases na mão (A-A) faz um full maior (ases full de reis), e o último Rei (K♣) faz **quadra de Reis** seja qual for a outra carta — o A♠ do board já serve de kicker para ele. Se ele não tem nem Ás nem esse Rei, seu full house ganha. A lição: quando o board faz quase todo o trabalho, sua mão muitas vezes vale só uma carta extra.
 
 ---
 
@@ -236,13 +242,15 @@ Você tem **A♥ 3♣**. A mesa já traz trinca de reis.
 
 ## Por que a ordem é essa
 
-O ranking não é arbitrário: é pura probabilidade. **Quanto mais difícil de fechar uma mão, mais alto ela está.** Em um baralho de 52 cartas, simplesmente há menos formas de fazer cinco do mesmo naipe do que cinco em sequência de qualquer naipe — por isso o flush fica acima da sequência. Esse único princípio explica todo o ranking — veja os números exatos no [gráfico de odds e probabilidade do pôquer](/pt/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
+O ranking não é arbitrário: é pura probabilidade. **Quanto mais difícil de fechar uma mão, mais alto ela está.** Em um baralho de 52 cartas, simplesmente há menos formas de fazer cinco do mesmo naipe do que cinco em sequência de qualquer naipe — por isso o flush fica acima da sequência. Esse único princípio explica todo o ranking — medido nas combinações de cinco cartas, de onde a ordem oficial vem (jogando sete cartas até o river, um par até sai mais vezes que uma carta alta, mas a escada não muda). Veja os números exatos no [gráfico de odds e probabilidade do poker](/pt/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
-Ele também explica a grande exceção que você vai encontrar: no **Short Deck (6+) Hold'em**, onde se tiram os dois aos cincos, os flushes ficam mais difíceis que os full houses — então, nesse formato, um **flush ganha de um full house**. A matemática mudou, a ordem mudou. Mais sobre as diferenças por modalidade abaixo.
+Ele também explica a grande exceção que você vai encontrar: no **Short Deck (6+) Hold'em**, onde as cartas do 2 ao 5 são retiradas do baralho, os flushes ficam mais difíceis que os full houses — então, nesse formato, um **flush ganha de um full house**. A matemática mudou, a ordem mudou. Mais sobre as diferenças por modalidade abaixo.
 
 ---
 
 ## A rotina de 1 segundo para ler a mesa
+
+![Infográfico de um board pareado 9♥ Q♥ 9♠ 8♣ 7♠ — lendo os pares e as possíveis sequências para achar suas melhores cinco cartas](/images/holdem-hand-rankings-board-read.webp "Como ler um board de poker rápido — naipes, sequências e pares, nessa ordem")
 
 Com o relógio correndo, repasse isto em ordem toda vez que a mesa estiver completa:
 
@@ -262,7 +270,7 @@ Jogadores treinados leem a mesa nesta ordem — primeiro o perigo (flush/sequên
 |------|------|------|
 | **1** | Aprenda três grupos: Premium (#1-3), Médio (#4-6), Comum (#7-10) | 1 dia |
 | **2** | Treine só os duelos confusos: flush vs sequência, full house vs flush | 3 dias |
-| **3** | Assista a streams de pôquer e cante o vencedor antes do dealer | 1-2 semanas |
+| **3** | Assista a streams de poker e cante o vencedor antes do dealer | 1-2 semanas |
 
 Agrupar primeiro evita que a ordem pareça dez coisas aleatórias. Os duelos confusos do passo 2 causam 90% dos erros de iniciante, então insista neles.
 
@@ -270,7 +278,7 @@ Agrupar primeiro evita que a ordem pareça dez coisas aleatórias. Os duelos con
 
 ## Ranking de mãos por modalidade
 
-A ordem é comum a quase todas as variantes de pôquer, com alguns detalhes importantes.
+A ordem é comum a quase todas as variantes de poker, com alguns detalhes importantes.
 
 | Jogo | Ranking | Diferença principal |
 |------|------|------|
@@ -290,7 +298,7 @@ A conclusão: aprenda a ordem padrão uma vez e ela serve em quase todos os jogo
 
 ## Perguntas frequentes
 
-**Q. O flush ganha da sequência no pôquer?**
+**Q. O flush ganha da sequência no poker?**
 
 A. Sim. O flush é a #5 e a sequência a #6, então o flush sempre ganha — veja [por que o flush ganha da sequência](/pt/blog/holdem-flush-vs-straight). Ele fica acima porque cinco cartas do mesmo naipe são mais difíceis de fechar do que cinco em sequência.
 
@@ -314,13 +322,29 @@ A. No Hold'em, não — você forma suas melhores cinco com qualquer combinaçã
 
 A. Os dois são trinca. Um *set* é um par na mão mais uma carta da mesa (bem disfarçado); *trips* é um par na mesa mais uma carta sua (mais fácil de ler). O set tira mais fichas.
 
-**Q. Qual é a melhor mão do pôquer?**
+**Q. Qual é a melhor mão do poker?**
 
 A. O Royal Flush (A-K-Q-J-10 do mesmo naipe). Não pode ser batido — o único "empate" é um royal flush que está inteiro na mesa e pertence a todos, o que divide o pote.
 
 **Q. A trinca é melhor que dois pares?**
 
 A. Sim. A trinca é a #7 e os dois pares a #8, então a trinca ganha. Dois pares só ganham do par e da carta alta.
+
+**Q. Quais são as piores mãos do poker?**
+
+A. Como categoria, a pior mão é a carta alta — nenhuma combinação. Já entre as mãos iniciais, a pior do Texas Hold'em é o famoso 7-2 offsuit: as duas cartas mais baixas que não conectam em sequência nem em naipe. Ases de kicker fraco (A2–A9 offsuit) também perdem mais potes do que parecem — veja quais mãos jogar na [tabela de mãos iniciais](/pt/blog/holdem-starting-hands-chart).
+
+**Q. Quais são as melhores mãos iniciais do poker?**
+
+A. A-A, K-K, Q-Q e A-K do mesmo naipe formam o topo absoluto — o grupo "premium" que se joga de qualquer posição. Depois vêm J-J, 10-10, A-Q e A-J suited. Não confunda com o ranking desta página: aqui comparamos mãos *prontas* de cinco cartas; a força das duas cartas iniciais é assunto da [tabela de mãos iniciais por posição](/pt/blog/holdem-starting-hands-chart).
+
+**Q. O que são mãos suited e mãos marginais?**
+
+A. "Suited" é uma mão inicial com as duas cartas do mesmo naipe (A♠ K♠), que fecha flush com mais frequência — vale só cerca de 2 pontos percentuais a mais de equity que a versão offsuit (A-K suited tem ==67%== contra uma mão aleatória; offsuit, ==65%==). "Marginais" são mãos no limite entre jogar e foldar (K-10 offsuit, A-9), que dependem de posição para serem lucrativas.
+
+**Q. Como se chamam as mãos do poker em português?**
+
+A. No Brasil se usa uma mistura: royal flush, straight flush, flush e full house ficam em inglês mesmo, enquanto quadra, sequência, trinca, dois pares, par e carta alta são correntes em português. "Straight" e "sequência" são a mesma mão (#6). A coluna "também chamada de" da tabela acima traz os apelidos mais comuns.
 
 ---
 

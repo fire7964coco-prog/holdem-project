@@ -2,13 +2,14 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "holdem-kicker",
-  title: "O que é kicker no pôquer — regras, contagem e o ás dominado",
-  seoTitle: "O que é kicker no pôquer? A carta lateral que leva o pote",
-  desc: "O kicker é a carta lateral que desempata no pôquer — quais mãos têm um e quantos, por que A9 perde para AK e a exceção da quadra que quase todo guia erra.",
+  title: "O que é kicker no poker — regras, contagem e o ás dominado",
+  seoTitle: "O que é kicker no poker? A carta lateral que leva o pote",
+  desc: "O kicker é a carta lateral que desempata no poker — quais mãos têm um e quantos, por que A9 perde para AK e a exceção da quadra que quase todo guia erra.",
   tldr: "O kicker é a carta lateral mais alta que não faz parte da sua mão feita — ele desempata quando dois jogadores têm o mesmo valor. Um par usa 3 kickers, dois pares 1, a trinca 2; sequências, flushes e full houses não têm nenhum. É por isso que AK ganha de AQ quando a mesa pareia um ás.",
   category: "hand-rankings",
   date: "2026-07-08",
-  updated: "2026-07-08",
+  updated: "2026-08-26",
+  masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -18,9 +19,9 @@ export const POST: Post = {
   content: `
 A mão que finalmente me ensinou o que é um kicker me custou um buy-in inteiro. Eu tinha ==b:A♠ 9♣==, a mesa pareou meu ás e eu fui de all-in achando que top pair era ouro. Ele virou ==b:A♥ K♦== — o mesmo par de ases, mas o rei dele superava meu nove, e o pote deslizou para o lado dele. Eu não tinha perdido para uma *mão* melhor; tinha perdido para uma ==carta lateral melhor.== Essa carta lateral é o kicker, e ele decide mais potes do que qualquer iniciante imagina.
 
-==O kicker é o desempate embutido no próprio pôquer — quando dois jogadores têm o mesmo valor, ganha a carta restante mais alta.== A maioria dos guias te dá uma definição de uma linha e um exemplo de AK contra AQ. Este aqui te dá o quadro completo: exatamente quais mãos têm kicker (e quantos), a única exceção que todo mundo erra e por que "jogar a mesa" significa que seu kicker de repente não importa mais nada.
+==O kicker é o desempate embutido no próprio poker — quando dois jogadores têm o mesmo valor, ganha a carta restante mais alta.== A maioria dos guias te dá uma definição de uma linha e um exemplo de AK contra AQ. Este aqui te dá o quadro completo: exatamente quais mãos têm kicker (e quantos), a única exceção que todo mundo erra e por que "jogar a mesa" significa que seu kicker de repente não importa mais nada.
 
-Onde o kicker se encaixa no quadro maior do [ranking de mãos de pôquer](/pt/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp") é simples: ele só aparece *depois* que dois jogadores empatam no valor — nunca ganha de uma mão de valor mais alto.
+Onde o kicker se encaixa no quadro maior do [ranking de mãos de poker](/pt/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp") é simples: ele só aparece *depois* que dois jogadores empatam no valor — nunca ganha de uma mão de valor mais alto.
 
 ---
 
@@ -34,19 +35,19 @@ Onde o kicker se encaixa no quadro maior do [ranking de mãos de pôquer](/pt/bl
 
 ---
 
-## O que é um kicker no pôquer?
+## O que é um kicker no poker?
 
-**O kicker é a carta mais alta da sua mão de cinco cartas que não faz parte da sua combinação de valor — ele define o vencedor quando dois jogadores têm o mesmo valor.** Também é chamado de "carta lateral". O pôquer é sempre um jogo de cinco cartas (suas melhores cinco entre sete no Hold'em), então, assim que seu par ou trinca está travado, os espaços restantes são preenchidos por kickers.
+**O kicker é a carta mais alta da sua mão de cinco cartas que não faz parte da sua combinação de valor — ele define o vencedor quando dois jogadores têm o mesmo valor.** Também é chamado de "carta lateral". O poker é sempre um jogo de cinco cartas (suas melhores cinco entre sete no Hold'em), então, assim que seu par ou trinca está travado, os espaços restantes são preenchidos por kickers.
 
-A ideia central: um kicker ==nunca ganha de uma mão de valor mais alto.== Um par de reis com kicker dois ainda esmaga um par de dezes com kicker ás — valor primeiro, kicker só como desempate. Kickers só importam quando os ==r:valores são idênticos==: par contra o mesmo par, trinca contra a mesma trinca.
+A ideia central: um kicker ==nunca ganha de uma mão de valor mais alto.== Um par de reis com kicker dois ainda esmaga um par de dez com kicker ás — valor primeiro, kicker só como desempate. Kickers só importam quando os ==r:valores são idênticos==: par contra o mesmo par, trinca contra a mesma trinca.
 
 Digamos que você tenha A-K e seu adversário tenha A-Q, e a mesa pareie um ás. Os dois têm "um par de ases" — valor idêntico. Agora as cartas laterais decidem, e seu rei supera a dama dele. Ninguém fez uma mão melhor; o kicker apenas fez seu trabalho silencioso.
 
 ---
 
-## Quais mãos de pôquer têm kicker — e quais não têm
+## Quais mãos de poker têm kicker — e quais não têm
 
-**Só as mãos que usam menos de cinco cartas para a combinação têm kicker — tudo que preenche as cinco cartas sozinho não tem nenhum.** Esta é a tabela que os concorrentes enterram no meio de parágrafos. Aqui está ela de relance:
+**Só as mãos que usam menos de cinco cartas para a combinação têm kicker — tudo que preenche as cinco cartas sozinho não tem nenhum.** Esta é a tabela que outros guias enterram no meio de parágrafos. Aqui está ela de relance:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -66,7 +67,7 @@ Digamos que você tenha A-K e seu adversário tenha A-Q, e a mesa pareie um ás.
 
 A lógica é pura aritmética: **cartas da combinação + kickers sempre somam cinco.** Um par usa 2 cartas, então 3 kickers preenchem o resto. Uma sequência, flush ou full house já usa as cinco, então não sobra nada para desempatar — duas sequências ou dois full houses se resolvem pelos valores *dentro* deles, não por uma carta lateral.
 
-==*Os flushes são a exceção com asterisco:== tecnicamente, um flush não tem "kicker". Quando dois flushes se enfrentam, você compara as cinco cartas da mais alta à mais baixa (um flush com ás ganha de um flush com rei). As pessoas chamam de forma solta a carta mais alta de "kicker", mas, a rigor, é uma comparação de cinco cartas altas. A ordem completa de desempate de cada mão está em [como os empates são desfeitos no pôquer](/pt/blog/holdem-tiebreak-rules "thumb:/images/holdem-tiebreak-hero.webp").
+==*Os flushes são a exceção com asterisco:== tecnicamente, um flush não tem "kicker". Quando dois flushes se enfrentam, você compara as cinco cartas da mais alta à mais baixa (um flush com ás ganha de um flush com rei). As pessoas chamam informalmente a carta mais alta de "kicker", mas, a rigor, é uma comparação de cinco cartas altas. A ordem completa de desempate de cada mão está em [como os empates são desfeitos no poker](/pt/blog/holdem-tiebreak-rules "thumb:/images/holdem-tiebreak-hero.webp").
 
 ---
 
@@ -85,7 +86,7 @@ A lógica é pura aritmética: **cartas da combinação + kickers sempre somam c
 
 </div>
 
-Isso importa no showdown porque os kickers são comparados ==em ordem, do mais alto primeiro.== Com um par, se os primeiros kickers empatam, você passa para o segundo, depois o terceiro. Dois jogadores podem ter o mesmo par *e* o mesmo kicker de topo e ainda serem separados pela terceira carta — que é exatamente por que "meu kicker era bom" nem sempre é bom o suficiente.
+Isso importa no showdown porque os kickers são comparados ==em ordem, do mais alto primeiro.== Com um par, se os primeiros kickers empatam, você passa para o segundo, depois o terceiro. Dois jogadores podem ter o mesmo par *e* o mesmo kicker de topo e ainda serem separados pela terceira carta — é exatamente por isso que "meu kicker era bom" nem sempre basta.
 
 ---
 
@@ -93,7 +94,7 @@ Isso importa no showdown porque os kickers são comparados ==em ordem, do mais a
 
 Vamos rodar carta por carta para deixar a mecânica concreta.
 
-A mesa é ==b:A♣ 9♦ 5♠ 2♥ 7♣==. Você tem ==b:A♠ K♠==, seu adversário tem ==b:A♦ Q♦==.
+O board é ==b:A♣ 9♦ 5♠ 2♥ 7♣==. Você tem ==b:A♠ K♠==, seu adversário tem ==b:A♦ Q♦==.
 
 - **Você:** A♠ K♠ + mesa → um par de ases. Melhores cinco = ==g:A♠ A♣ K♠ 9♦ 7♣== (par de ases, kickers K-9-7).
 - **Adversário:** A♦ Q♦ + mesa → também um par de ases. Melhores cinco = ==A♦ A♣ Q♦ 9♦ 7♣== (kickers Q-9-7).
@@ -108,7 +109,7 @@ Mesmo par, então compare os kickers de cima para baixo: seu ==g:K ganha da Q de
 
 **Se as cinco cartas comunitárias já formam a melhor mão possível e suas cartas de mão não podem melhorá-la, você está "jogando a mesa" — e não existe kicker nenhum.** Todos que continuam na mão usam as mesmas cinco cartas, então o pote é dividido.
 
-A mesa é ==b:10♠ J♦ Q♣ K♥ A♠== — uma sequência feita de dez a ás (Broadway), em naipes variados, então nenhum flush é possível.
+O board é ==b:10♠ J♦ Q♣ K♥ A♠== — uma sequência feita de dez a ás (Broadway), em naipes variados, então nenhum flush é possível.
 
 - Você tem ==b:2♣ 3♦==. Suas melhores cinco são a sequência da mesa; o 2 e o 3 não somam nada.
 - Seu adversário tem ==b:4♥ 5♦==. Mesma história — a sequência da mesa também é a melhor cinco dele.
@@ -123,7 +124,7 @@ Nenhum de vocês consegue passar do ás, então os dois "jogam a mesa" e ==g:div
 
 ![Duas mãos iniciais lado a lado no feltro verde — A-K ao lado de A-9 — mostrando como o mesmo ás com um kicker mais fraco vira uma armadilha dominada](/images/holdem-kicker-dominated.webp "Mesmo ás, destino diferente: o kicker é o que separa uma mão premium de uma dominada")
 
-De volta ao meu buy-in. Mesa ==b:A♦ 7♣ 2♥ Q♠ 4♦==, sem sequência nem flush por ali.
+De volta ao meu buy-in. Board ==b:A♦ 7♣ 2♥ Q♠ 4♦==, sem sequência nem flush por ali.
 
 - **A9:** A♠ 9♣ → par de ases, melhores cinco ==A♠ A♦ Q♠ 9♣ 7♣==.
 - **AK:** A♥ K♦ → par de ases, melhores cinco ==g:A♥ A♦ K♦ Q♠ 7♣==.
@@ -136,24 +137,24 @@ Mesmo par de novo — e meu 9 nem teve direito a voto. Ele foi empurrado para se
 
 **Sim — a quadra tem um kicker de uma carta, mas ele quase nunca decide uma mão no Hold'em: seria preciso dois jogadores empatados na mesma quadra, o que exige as quatro cartas na mesa — algo raro.** Esta é a exceção que a maioria dos guias erra ao jogar a quadra no balaio das "mãos de cinco cartas que não têm kicker".
 
-A conta é clara: quatro cartas fazem a quadra, uma carta é o kicker. Ela só importa quando dois jogadores de alguma forma empatam na *mesma* quadra — o que, no Hold'em, exige que as quatro estejam na mesa (já que só há quatro de cada valor). Se a mesa é ==b:5♠ 5♥ 5♦ 5♣ K♦==, todo mundo tem quadra de cincos, e a quinta carta é o kicker: um jogador com um ás joga ==g:5-5-5-5-A== e ganha de quem fica com o ==5-5-5-5-K== da mesa. Raro, mas real — e estar certo nos casos de borda é o que separa um guia confiável de um vago.
+A conta é clara: quatro cartas fazem a quadra, uma carta é o kicker. Ela só importa quando dois jogadores de alguma forma empatam na *mesma* quadra — o que, no Hold'em, exige que as quatro estejam na mesa (já que só há quatro de cada valor). Se o board é ==b:5♠ 5♥ 5♦ 5♣ K♦==, todo mundo tem quadra de cincos, e a quinta carta é o kicker: um jogador com um ás joga ==g:5-5-5-5-A== e ganha de quem fica com o ==5-5-5-5-K== da mesa. Raro, mas real — e estar certo nos casos-limite é o que separa um guia confiável de um vago.
 
 ---
 
 :::readnext[Continue lendo]
-/pt/blog/holdem-hand-rankings | Ranking de Mãos de Pôquer (Ordem Completa) | /images/holdem-hand-rankings-hero.webp
-/pt/blog/holdem-tiebreak-rules | Como os Empates São Desfeitos no Pôquer | /images/holdem-tiebreak-hero.webp
+/pt/blog/holdem-hand-rankings | Ranking de Mãos de Poker (Ordem Completa) | /images/holdem-hand-rankings-hero.webp
+/pt/blog/holdem-tiebreak-rules | Como os Empates São Desfeitos no Poker | /images/holdem-tiebreak-hero.webp
 :::
 
 ## FAQ
 
-**Q. O que é um kicker no pôquer?**
+**Q. O que é um kicker no poker?**
 
 A. O kicker é a carta lateral mais alta da sua mão de cinco cartas que não faz parte da sua combinação de valor. Ele desempata quando dois jogadores têm o mesmo valor — por exemplo, A-K ganha de A-Q quando a mesa pareia um ás, porque o kicker rei supera a dama. Um kicker nunca ganha de uma mão de valor mais alto.
 
 **Q. O flush tem kicker?**
 
-A. Não. Um flush usa as cinco cartas, então não há kicker separado. Quando dois flushes se enfrentam, você compara as cinco cartas da mais alta à mais baixa — um flush com ás ganha de um flush com rei. As pessoas às vezes chamam a carta mais alta de "kicker" de forma solta, mas é, na verdade, uma comparação de cinco cartas.
+A. Não. Um flush usa as cinco cartas, então não há kicker separado. Quando dois flushes se enfrentam, você compara as cinco cartas da mais alta à mais baixa — um flush com ás ganha de um flush com rei. As pessoas às vezes chamam informalmente a carta mais alta de "kicker", mas é, na verdade, uma comparação de cinco cartas.
 
 **Q. A sequência tem kicker?**
 
@@ -167,17 +168,33 @@ A. Não. Um full house é uma trinca mais um par — as cinco cartas. Os empates
 
 A. Sim, a quadra tem um kicker de uma carta, mas ele raramente importa no Hold'em. Ele só decide uma mão quando dois jogadores empatam na mesma quadra exata — o que exige que as quatro cartas estejam na mesa — e aí ganha a quinta carta mais alta.
 
-**Q. Quantos kickers há em uma mão de pôquer?**
+**Q. O kicker importa na trinca?**
+
+A. Sim. A trinca usa dois kickers, então quando dois jogadores fazem a mesma trinca as duas cartas seguintes mais altas desempatam — num board K♣ K♥ 7♦ 5♣ 2♠, quem tem K♠ A♠ joga K-K-K-A-7 e ganha do K-K-K-Q-7 de quem tem K♦ Q♦, porque o ás supera a dama. (Um *set* de verdade, feito com um par na mão, quase nunca empata: só um jogador pode ter aquele par exato.)
+
+**Q. Dois pares têm kicker?**
+
+A. Sim — dois pares usam um kicker. Se você tem K-Q e seu adversário tem J-Q num board Q-7-7, os dois fazem damas e setes, mas seu kicker rei ganha do valete dele. O kicker só entra em jogo quando ambos têm exatamente os mesmos dois pares.
+
+**Q. O kicker precisa estar na sua mão?**
+
+A. Não. Um kicker pode ser uma carta comunitária. O poker sempre monta as melhores cinco entre sete, então se uma carta do board supera sua carta da mão, é ela que preenche o espaço de kicker — para os dois jogadores — e a próxima carta decide. Sua carta da mão só joga como kicker quando é mais alta que as cartas do board que ela substituiria.
+
+**Q. Quantos kickers há em uma mão de poker?**
 
 A. Depende da mão: um par usa três kickers, a trinca usa dois, e dois pares e a quadra usam um cada. Sequências, flushes, full houses e straight flushes não têm kicker porque já preenchem as cinco cartas.
 
-**Q. O que é um bom kicker no pôquer?**
+**Q. O que é um bom kicker no poker?**
 
 A. Um alto — um kicker ás ou rei é forte, enquanto um kicker baixo como um nove te deixa "dominado". É por isso que AK e AQ são muito melhores que A9 ou A5: quando todo mundo pareia o ás, o maior kicker leva o pote.
 
+**Q. O que é um "kicker ás" (ou "kicker rei")?**
+
+A. Kicker ás significa que sua carta lateral mais alta é um ás — o kicker mais forte que existe, então "top pair com kicker ás" ganha quase todo showdown de par igual. O kicker rei é o segundo melhor. É exatamente por isso que A-K e A-Q dominam um ás fraco como A-9 na batalha de kickers.
+
 **Q. O que significa "jogar a mesa"?**
 
-A. Jogar a mesa significa que as cinco cartas comunitárias são sua melhor mão e suas cartas de mão não podem melhorá-la. Como todo mundo usa as mesmas cinco cartas, o pote é dividido. Não há kicker porque a mesa já forma uma mão completa de cinco cartas.
+A. Jogar a mesa significa que as cinco cartas comunitárias são sua melhor mão e suas cartas de mão não podem melhorá-la. Se ninguém consegue melhorar o board, todos usam as mesmas cinco cartas e o pote é dividido. Não há kicker porque a mesa já forma uma mão completa de cinco cartas.
 
 **Q. Os kickers importam no Texas Hold'em?**
 
@@ -191,7 +208,7 @@ A. Muito. Como todo mundo divide as cartas comunitárias, os jogadores frequente
 2. **Combinação + kickers = cinco.** Um par tem 3 kickers, a trinca 2, dois pares e a quadra 1; sequências, flushes e full houses não têm nenhum.
 3. **Kickers decidem dinheiro de verdade.** A dominação (A9 vs AK) e jogar a mesa se resumem ao kicker — escolha mãos com cartas laterais fortes e saiba quando a sua está morta.
 
-Acerte o kicker e uma categoria inteira de mãos "como foi que eu perdi essa?" deixa de ser mistério. Daqui, veja a ordem completa do [ranking de mãos de pôquer](/pt/blog/holdem-hand-rankings), ou as [regras completas de desempate](/pt/blog/holdem-tiebreak-rules) para cada tipo de mão.
+Acerte o kicker e uma categoria inteira de mãos "como foi que eu perdi essa?" deixa de ser mistério. Daqui, veja a ordem completa do [ranking de mãos de poker](/pt/blog/holdem-hand-rankings), ou as [regras completas de desempate](/pt/blog/holdem-tiebreak-rules) para cada tipo de mão.
 
 ---
 
@@ -200,7 +217,7 @@ Acerte o kicker e uma categoria inteira de mãos "como foi que eu perdi essa?" d
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/pt/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Ranking de Mãos</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Ranking de Mãos de Pôquer</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Ranking de Mãos de Poker</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">A ordem completa embaixo da qual o kicker fica</div>
   </a>
   <a href="/pt/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">

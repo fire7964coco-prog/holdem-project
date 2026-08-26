@@ -206,9 +206,9 @@ Bạn cầm **Q♥ Q♦**. Tay bài tốt nhất của bạn là gì?
 
 :::hand[7♥,8♥,9♥,10♥,J♠] Bàn (5 lá):::
 
-Bạn cầm **K♥ 2♣**. Bàn có bốn lá cơ.
+Bạn cầm **6♥ 2♣**. Bàn có bốn lá cơ.
 
-→ K♥ của bạn là lá cơ thứ năm, nên bạn nghĩ "Thùng". Nhưng nhìn chuỗi: **K♥ 10♥ 9♥ 8♥ 7♥** là năm lá cơ *liên tiếp* — một **Thùng Phá Sảnh đầu K**, tay #2. Luôn kiểm tra xem các lá Thùng của bạn có liên kết không trước khi mặc định đó chỉ là Thùng.
+→ 6♥ của bạn là lá cơ thứ năm, nên bạn nghĩ "Thùng". Nhưng nhìn chuỗi: **10♥ 9♥ 8♥ 7♥ 6♥** là năm lá cơ *liên tiếp* — một **Thùng Phá Sảnh đầu 10**, tay #2. Luôn kiểm tra xem các lá Thùng của bạn có liên kết không trước khi mặc định đó chỉ là Thùng.
 
 ### Bài toán 3 — Khi buộc phải chia
 

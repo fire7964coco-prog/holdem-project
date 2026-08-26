@@ -200,7 +200,7 @@ A **kicker** is simply a card that isn't part of your made hand but is still use
 
 ## Read the Board: 3 Live Puzzles
 
-![K-K-K-A-4 board on a poker table — can you spot the full house before the dealer does?](/images/holdem-hand-rankings-board-puzzle.webp "Poker board reading puzzle — find your best five-card hand")
+![K-K-K-A-2 board on a poker table — can you spot the full house before the dealer does?](/images/holdem-hand-rankings-board-puzzle.webp "Poker board reading puzzle — find your best five-card hand")
 
 Knowing the order isn't the same as reading it fast. Here are three real spots. Cover the answer, find your best five cards out of seven, then check.
 

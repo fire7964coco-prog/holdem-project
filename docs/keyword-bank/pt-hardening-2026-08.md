@@ -180,7 +180,15 @@ quais sao as maos de poker
 
 ## 3. 다음 실측 할 일
 
-- [ ] `sequencia poker` 27,100 SERP 의도 실측(스트레이트 vs 순서) → 배정
-- [ ] `maos do poker` vs `maos de poker` SERP 동일성 확인 → 태그·H2 표기 결정
+- [x] `sequencia poker` 27,100 SERP 의도 실측 → **«족보 순서» 의도가 지배** (2026-08-26 Playwright 실측,
+  google.com gl=br·hl=pt-BR·pws=0). top 결과 = PokerStars hand-rankings · partypoker(제목이 «Mãos do
+  Poker | Sequência do Poker» — sequência를 족보 순서의 동의어로 사용) · Wikipédia 족보표 · 888 mãos.
+  개별 스트레이트(족보 #6) 글은 top10에 1건(meutimao)뿐. → **hand-rankings 몫으로 배정**(태그
+  `sequencia poker` + 표 직후 자연문 편입 — §4 정면 금지라 H1은 안 건드림). flush-vs-straight에는
+  일부러 안 넣었다(카니발 방지 — straight 개별 의미는 그 글 본문이 이미 커버).
+- [x] `maos do poker` vs `maos de poker` SERP 동일성 → **실질 동일**(top 8~9 중 7개 도메인 공통:
+  pokerstars 1위 동일 · ggpoker · ge.globo(기사만 다름) · wikipédia · WPF · superpoker · 888).
+  구글이 같은 의도로 정규화하되 볼륨 시계열만 별도 집계 → **별도 글 불필요, hand-rankings 한 글에
+  do 형태 편입**(2026-08-26 이행: title·seoTitle·desc·tags[0]을 do 형태로, de 형태는 tags[1] 유지).
 - [ ] rules 클러스터 회차 착수 시: exa로 브라질 상위글 패턴(Kill Tilt 브라질판? — 현지 매체 조사)
 - [ ] 시드 3~10 편입

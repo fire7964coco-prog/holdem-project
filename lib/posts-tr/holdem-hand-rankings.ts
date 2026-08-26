@@ -206,9 +206,9 @@ Elinde **Q♥ Q♦** var. En iyi elin ne?
 
 :::hand[7♥,8♥,9♥,10♥,J♠] Board (5 kart):::
 
-Elinde **K♥ 2♣** var. Board'da dört kupa var.
+Elinde **6♥ 2♣** var. Board'da dört kupa var.
 
-→ K♥ beşinci kupa, bu yüzden "flush" diye düşünüyorsun. Ama sıraya bak: **K♥ 10♥ 9♥ 8♥ 7♥** beş *ardışık* kupa — yani **papazlı bir straight flush**, el #2. Sadece flush sanmadan önce flush kartlarının bağlı olup olmadığını her zaman kontrol et.
+→ 6♥ beşinci kupa, bu yüzden "flush" diye düşünüyorsun. Ama sıraya bak: **10♥ 9♥ 8♥ 7♥ 6♥** beş *ardışık* kupa — yani **onlu tepeli bir straight flush**, el #2. Sadece flush sanmadan önce flush kartlarının bağlı olup olmadığını her zaman kontrol et.
 
 ### Soru 3 — Paylaşmak gerektiğinde
 

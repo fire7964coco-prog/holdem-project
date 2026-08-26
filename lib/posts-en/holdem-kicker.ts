@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A kicker is the highest side card that isn't part of your main hand — it breaks ties when two players share the same rank. One pair uses 3 kickers, two pair 1, trips 2; straights, flushes, and full houses have none. It's why AK beats AQ when the board pairs an ace.",
   category: "hand-rankings",
   date: "2026-07-08",
-  updated: "2026-07-18",
+  updated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -169,7 +169,7 @@ A. Yes, four of a kind has a one-card kicker, but it rarely matters in Hold'em. 
 
 **Q. Does the kicker matter with three of a kind?**
 
-A. Yes. Three of a kind uses two kickers, so when two players make the same trips the next two highest cards break the tie — K-K-K-A-2 beats K-K-K-Q-J because the ace outkicks the queen. (A true *set* made from a pocket pair rarely ties, since only one player can hold that exact pair.)
+A. Yes. Three of a kind uses two kickers, so when two players make the same trips the next two highest cards break the tie — on a K♣ K♥ 7♦ 5♣ 2♠ board, K♠ A♠ plays K-K-K-A-7 and beats the K-K-K-Q-7 of K♦ Q♦ because the ace outkicks the queen. (A true *set* made from a pocket pair rarely ties, since only one player can hold that exact pair.)
 
 **Q. Do two pairs have a kicker?**
 
@@ -193,7 +193,7 @@ A. An ace kicker means your highest side card is an ace — the strongest kicker
 
 **Q. What does "playing the board" mean?**
 
-A. Playing the board means the five community cards are your best hand and your hole cards can't improve on it. Since everyone uses the same five cards, the pot is split. There's no kicker because the board already forms a complete five-card hand.
+A. Playing the board means the five community cards are your best hand and your hole cards can't improve on it. If nobody can improve on the board, everyone uses the same five cards and the pot is split. There's no kicker because the board already forms a complete five-card hand.
 
 **Q. Do kickers matter in Texas Hold'em?**
 

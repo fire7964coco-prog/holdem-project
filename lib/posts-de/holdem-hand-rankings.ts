@@ -216,7 +216,7 @@ Ein **Kicker** ist einfach eine Karte, die nicht Teil deiner fertigen Hand ist, 
 
 ## Findest du deine besten fünf Karten? 3 echte Aufgaben
 
-![K-K-K-A-4-Board auf einem Pokertisch – erkennst du das Full House vor dem Dealer?](/images/holdem-hand-rankings-board-puzzle.webp "Poker-Board-Aufgabe – finde deine besten fünf Karten")
+![K-K-K-A-2-Board auf einem Pokertisch – erkennst du das Full House vor dem Dealer?](/images/holdem-hand-rankings-board-puzzle.webp "Poker-Board-Aufgabe – finde deine besten fünf Karten")
 
 Die Reihenfolge zu kennen ist nicht dasselbe wie sie schnell zu lesen. Hier sind drei echte Situationen. Decke die Antwort ab, finde deine besten fünf Karten aus den sieben und prüfe nach.
 
