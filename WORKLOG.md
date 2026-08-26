@@ -17,6 +17,16 @@
 - 🪶 **교훈**: 로컬에서 buildCommand 문자열을 그대로 돌려 EXIT=0을 확인했는데도 배포가 깨졌다.
   **로컬 실행은 «명령이 맞는가»만 검증하고 «Vercel이 이 설정을 받아주는가»는 검증하지 못한다.**
   `vercel.json`을 고치면 **길이·스키마도 함께** 봐야 한다. 정본 = `docs/settled-decisions.md` §6.
+- ✅ **재배포 success**(`75b83a8e`) + **라이브 실물 대조 7로케일**: id `Menu situs` · tr `Site menüsü` ·
+  ru `Меню сайта` · **fil `Menu ng site`**(전엔 레일 자체가 없던 자리) · he `תפריט האתר` ·
+  th `เมนูเว็บไซต์` · vi `Menu trang web` — 전부 200 · 한국어 aria-label 0.
+- 🔴 **새 함정: 라이브 확인을 `curl` 폴링으로 하면 Vercel BotID에 걸린다.** 20초×30회쯤에서
+  `403` + `X-Vercel-Mitigated: challenge`가 돌아오고 **그 뒤 모든 curl이 챌린지 HTML을 받는다.**
+  내용이 비어 보여 «배포가 안 됐다»로 오독하기 쉽다(실제로 한 번 그렇게 읽을 뻔했다).
+  → **라이브 대조는 Playwright로.** 챌린지는 브라우저가 몇 초 만에 스스로 푼다. 페이지 안에서
+  `fetch()`로 여러 로케일을 한 번에 긁으면 세션을 재사용해 빠르다.
+  🪶 배포 성패 자체는 `gh api repos/<o>/<r>/commits/<sha>/status` 로 본다 —
+  **이 레포의 Vercel MCP 토큰은 권한이 없어**(list 403 · deployment 404) 로그를 못 읽는다.
 
 ---
 
