@@ -2,13 +2,14 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "holdem-equity",
-  title: "Equity no pôquer explicada — Win %, fold equity e realização",
-  seoTitle: "Seu Win % não é o que você fica — Equity no pôquer",
+  title: "Equity no poker explicada — Win %, fold equity e realização",
+  seoTitle: "Seu Win % não é o que você fica — Equity no poker",
   desc: "Equity é sua fatia do pote — mas você nem sempre fica com ela. Por que 40% de equity não é 40% de vitórias, mais fold equity, realização e equity no all-in.",
   tldr: "Equity é sua fatia do pote — a fatia que cabe à sua mão em média quando todas as cartas são distribuídas, com os empates contando proporcionalmente. Você paga quando sua equity supera as pot odds, mas posição e apostas fazem você raramente ficar com toda a sua equity — e a fold equity deixa você ganhar potes mesmo quando sua mão está atrás.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-08-12",
+  updated: "2026-08-26",
+  masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🥧",
@@ -18,9 +19,9 @@ export const POST: Post = {
   content: `
 Durante um ano eu achei que "equity" era só uma palavra pomposa para "quão provável é eu ganhar". Aí perdi três potes grandes numa noite em que eu era o favorito na entrada, e um jogador melhor me disse a frase que reformulou o jogo inteiro para mim: ==sua equity é o que você *tem direito*, não o que você *coleta*.== Você pode ter 40% de chance de ganhar uma mão e realizar quase nada dela — ou estar atrás e ainda assim imprimir dinheiro. Entender a diferença entre essas coisas é boa parte do que separa jogadores vencedores dos esperançosos.
 
-==Equity é o único número que amarra todas as outras peças da matemática do pôquer — outs, pot odds, posição e agressão se resolvem numa só pergunta: que fatia deste pote é realmente minha?== Este guia cobre o que é equity, como estimá-la, e as três coisas que ninguém conta para iniciantes: por que você não fica com tudo, como um adversário que desiste te entrega um extra, e por que sua mão grande encolhe contra uma multidão.
+==Equity é o único número que amarra todas as outras peças da matemática do poker — outs, pot odds, posição e agressão se resolvem numa só pergunta: que fatia deste pote é realmente minha?== Este guia cobre o que é equity, como estimá-la, e as três coisas que ninguém conta para iniciantes: por que você não fica com tudo, como um adversário que desiste te entrega um extra, e por que sua mão grande encolhe contra uma multidão.
 
-As porcentagens brutas de vitória por trás de cada mão vêm da [tabela de odds e probabilidade no pôquer](/pt/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp"); este guia é como você transforma essas porcentagens em decisões na mesa.
+As porcentagens brutas de vitória por trás de cada mão vêm da [tabela de odds e probabilidade no poker](/pt/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp"); este guia é como você transforma essas porcentagens em decisões na mesa.
 
 ---
 
@@ -34,13 +35,13 @@ aposta ÷ (pote + aposta) | O % de fold que um blefe puro precisa
 
 ---
 
-## O que é equity no pôquer?
+## O que é equity no poker?
 
 **Equity é sua fatia do pote — a fatia que cabe à sua mão em média se ela for jogada até o showdown, com os empates contando proporcionalmente.** Se o pote é $100 e 60% dele cabem a você, sua mão vale ==$60 agora==, mesmo que as fichas ainda não tenham sido empurradas.
 
 Pense nela como sua fatia da pizza. Toda mão ainda viva tem uma fatia; as fatias sempre somam 100%. Quando você está heads-up com 70% de chance de ganhar um pote de $200, ==g:$140 dele são "seus"== no longo prazo — você não vai ganhar *este* pote 70% das vezes e perder o resto, mas ao longo de mil situações idênticas, essa é a fatia que você coleta.
 
-Essa é a razão inteira de a equity importar: ela transforma "estou na frente?" em "quanto deste pote eu possuo?" — e esse é o número que você compara com o preço de um pagamento.
+Essa é a razão inteira de a equity importar: ela transforma "estou na frente?" em "quanto deste pote eu possuo?" — e esse é o número que você compara com o preço de um call.
 
 ---
 
@@ -48,7 +49,7 @@ Essa é a razão inteira de a equity importar: ela transforma "estou na frente?"
 
 **Num projeto, multiplique seus outs por 4 no flop ou por 2 no turn; no pré-flop, memorize o punhado de confrontos que aparecem de novo e de novo.** Você quase nunca vai calcular a equity exata na mesa — você estima, e esses dois atalhos cobrem 90% das situações.
 
-**Projetos (a Regra do 4 e 2):** conte seus [outs](/pt/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp"), depois multiplique. Um projeto de flush tem 9 outs → ==9 × 4 = 36%== no flop (valor real 35%). Os números exatos de cada projeto estão em [odds de projetos](/pt/blog/holdem-drawing-odds); aqui vai a referência rápida:
+**Projetos (a regra do 2 e 4):** conte seus [outs](/pt/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp"), depois multiplique. Um projeto de flush tem 9 outs → ==9 × 4 = 36%== no flop (valor real 35%) — o ×4 vale quando você vê as duas cartas sem mais aposta; com aposta por vir, use o ×2 de uma carta. Os números exatos de cada projeto estão em [odds de projetos](/pt/blog/holdem-drawing-odds); aqui vai a referência rápida:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -68,7 +69,7 @@ Essa é a razão inteira de a equity importar: ela transforma "estou na frente?"
 | Confronto | Equity | Tipo |
 |:---|:---:|:---|
 | AA vs KK | 82% / 18% | Overpair domina |
-| QQ vs AK | ~57% / ~43% | Par leva a "corrida" |
+| QQ vs AK | ~57% / ~43% | Par leva o flip |
 | 22 vs AK | ~52% / ~48% | O verdadeiro coin flip |
 | AK vs AQ | ~74% / ~26% | Dominação |
 | 88 vs A7 | ~70% / ~30% | Par vs uma overcard |
@@ -79,13 +80,13 @@ Duas coisas confundem as pessoas aqui. Um par contra duas overcards (QQ vs AK) =
 
 ---
 
-## Equity vs pot odds: a única regra que decide todo pagamento
+## Equity vs pot odds: a única regra que decide todo call
 
-**Pague quando sua equity for maior que suas pot odds — essa única comparação decide quase todo pagamento no pôquer.** As [pot odds](/pt/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") te dizem a equity que você *precisa* para empatar; a equity te diz o que você *tem*. Se você tem mais do que precisa, pagar dá lucro.
+**Pague quando sua equity for maior que suas pot odds — essa única comparação decide quase todo call no poker.** As [pot odds](/pt/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") te dizem a equity que você *precisa* para empatar; a equity te diz o que você *tem*. Se você tem mais do que precisa, pagar dá lucro.
 
-Encarando uma aposta de meio pote, suas pot odds exigem ==25%== para pagar. Um projeto de flush com duas cartas por vir tem ~35% de equity — 35 supera 25, então é um pagamento lucrativo. Essa é a decisão inteira, sem chute nenhum.
+Encarando uma aposta de meio pote, suas pot odds exigem ==25%== para pagar. Um projeto de flush com as *duas* cartas por vir tem ~35% de equity — 35 supera 25, então é um call lucrativo ==quando você vê as duas cartas== (all-in, ou sem mais apostas). Se ainda vem aposta no turn, o call só compra uma carta — use o número de uma carta (19,6%), que sozinho *não* fecha o preço. Essa é a comparação inteira, sem chute nenhum.
 
-Mas aqui está o detalhe que quase todo guia pula: **"sua equity é igual à sua fatia do pote" só é verdade quando não há mais apostas.** No momento em que mais dinheiro pode entrar em ruas seguintes, 35% brutos não se traduzem automaticamente em 35% do pote final — você pode ser expulso do seu projeto, ou pagar quando acerta o segundo melhor. Essa diferença é exatamente onde entram as [implied odds](/pt/blog/holdem-implied-odds "thumb:/images/holdem-implied-odds-hero.webp") (dinheiro que você vai ganhar depois) e a realização de equity (abaixo). Equity é onde a matemática *começa*, não onde ela termina.
+Mas aqui está o detalhe que quase todo guia pula: **"sua equity é igual à sua fatia do pote" só é verdade quando não há mais apostas.** No momento em que mais dinheiro pode entrar em streets seguintes, 35% brutos não se traduzem automaticamente em 35% do pote final — você pode ser expulso do seu projeto, ou pagar quando acerta o segundo melhor. Essa diferença é exatamente onde entram as [implied odds](/pt/blog/holdem-implied-odds "thumb:/images/holdem-implied-odds-hero.webp") (dinheiro que você vai ganhar depois) e a realização de equity (abaixo). Equity é onde a matemática *começa*, não onde ela termina.
 
 ---
 
@@ -110,7 +111,7 @@ EV = (0,40 × $100) + (0,60 × [0,35 × $150 − 0,65 × $50])
 EV = $40 + (0,60 × [$52,50 − $32,50]) = $40 + $12 = ==g:+$52==
 :::
 
-Apostar aquele projeto de flush vale ==+$52== versus dar check-fold — e a maior parte desse valor vem das vezes em que eles foldam, não das vezes em que você acerta. Isso é fold equity: a razão de a agressão vencer a passividade, e por que um projeto vale muito mais como aposta do que como pagamento.
+Apostar aquele projeto de flush vale ==+$52== versus dar check-fold — e a maior parte desse valor vem das vezes em que eles foldam, não das vezes em que você acerta. (Com um projeto desse tamanho, check-call também seria lucrativo — a comparação com check-fold mostra o *teto* do que a agressão acrescenta, não a única alternativa.) Isso é fold equity: a razão de a agressão vencer a passividade, e por que um projeto vale muito mais como aposta do que como call.
 
 ---
 
@@ -120,14 +121,14 @@ Apostar aquele projeto de flush vale ==+$52== versus dar check-fold — e a maio
 
 ==b:Equity realizada = equity bruta × realização%==
 
-Uma mão com 40% de equity bruta que só realiza 75% dela vale de verdade ==0,75 × 40% = 30%==. É por isso que você pode estar "na frente do range do adversário" e ainda perder dinheiro — você nunca consegue descontar a fatia inteira.
+Uma mão com 40% de equity bruta que só realiza 75% dela vale de verdade ==0,75 × 40% = 30%==. É por isso que você pode estar "na frente do range do adversário" e ainda perder dinheiro — você nunca consegue embolsar a fatia inteira.
 
 O que move sua realização para cima ou para baixo:
 
 :::card
 🪑 | Posição | Em posição você realiza *mais* que sua equity bruta (vê cartas de graça, controla o pote); fora de posição você realiza menos. Este é o maior fator
-🎯 | Jogabilidade | Suited connectors e mãos que flopam projetos realizam bem; clunkers offsuit realizam mal mesmo com equity bruta decente
-📚 | Profundidade de stack e habilidade | Stacks mais profundos e adversários mais duros deixam a equity marginal mais difícil de realizar
+🎯 | Jogabilidade | Suited connectors e mãos que flopam projetos realizam bem; mãos desconexas offsuit realizam mal mesmo com equity bruta decente
+📚 | Profundidade de stack e habilidade | Stacks mais profundos e adversários mais fortes deixam a equity marginal mais difícil de realizar
 :::
 
 Esta é a ideia mais importante que a maioria dos guias para iniciantes deixa de fora, e é por isso que a [mesma mão joga de forma completamente diferente conforme a posição](/pt/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp"). Equity bruta é o teto; realização é o que você leva para casa.
@@ -140,22 +141,22 @@ Esta é a ideia mais importante que a maioria dos guias para iniciantes deixa de
 
 É por isso que as equities de all-in pré-flop importam tanto: AA all-in contra KK embolsa seus ==82%== inteiros — sem imposto de realização, sem fold equity, só o número bruto se desenrolando. É também por isso que um "coin flip" (22 vs AK a ~52/48) é um verdadeiro cara-ou-coroa no all-in, mesmo que as mesmas duas mãos jogadas no pós-flop divergissem muito conforme a mesa e quem tem posição.
 
-O all-in é o único ponto do pôquer onde a pizza é fatiada exatamente como a matemática diz — o que é tanto seu apelo quanto seu perigo.
+O all-in é o único ponto do poker onde a pizza é fatiada exatamente como a matemática diz — o que é tanto seu apelo quanto seu perigo.
 
 ---
 
 ## Equity multiway: por que sua mão grande encolhe contra uma multidão
 
-**Sua equity cai rápido em potes multiway, porque a mesma pizza de 100% agora é dividida entre mais mãos.** Um par de ases fica em torno de 85% heads-up, mas contra três adversários isso desliza para ==r:~64%==, e contra quatro para ~56% — ainda a melhor mão, mas não mais o esmagamento que parece. Em três mãos, a equity *tem média* de 33% por definição, porque três jogadores dividem um pote.
+**Sua equity cai rápido em potes multiway, porque a mesma pizza de 100% agora é dividida entre mais mãos.** Um par de ases fica em torno de 85% heads-up, mas contra três adversários isso cai para ==r:~64%==, e contra quatro para ~56% — ainda a melhor mão, mas não mais o esmagamento que parece. Em três mãos, a equity *média* é de 33% por definição, porque três jogadores dividem um pote.
 
-![Infográfico de uma mesa Q♣ 9♥ 5♦ 3♠ J♦ mostrando como cada jogador extra no pote corta a equity de todas as mãos](/images/holdem-equity-multiway.webp "Quanto mais jogadores ainda no pote, menor a fatia de cada um — até um par de ases")
+![Infográfico de um board Q♣ 9♥ 5♦ 3♠ J♦ mostrando como cada jogador extra no pote corta a equity de todas as mãos](/images/holdem-equity-multiway.webp "Quanto mais jogadores ainda no pote, menor a fatia de cada um — até um par de ases")
 
 Duas coisas pioram multiway, não só sua fatia bruta:
 
 - **A fold equity desaba.** Para ganhar um pote com uma aposta, agora *todo mundo* tem que foldar — muito menos provável com três adversários do que com um. Blefes e semi-blefes finos perdem valor rápido.
 - **A realização cai.** Mais jogadores para agir significa mais formas de tomar um outdraw ou ser expulso da sua mão, então você realiza ainda menos de uma fatia já menor.
 
-A lição prática: mãos que querem um pote multiway são as que fazem os nuts (trincas, suited aces para o nut flush), não pares grandes que jogam melhor heads-up. Quando o campo é grande, aperte na direção de mãos cuja equity se sustenta quando a pizza é cortada em cinco.
+A lição prática: mãos que querem um pote multiway são as que fazem os nuts (trincas, suited aces para o nut flush), não pares grandes que jogam melhor heads-up. Quando o campo é grande, dê preferência a mãos cuja equity se sustenta quando a pizza é cortada em cinco.
 
 ---
 
@@ -176,26 +177,26 @@ Naquela noite que mencionei lá no começo, eu estava fazendo o passo um e paran
 
 :::readnext[Continue lendo]
 /pt/blog/holdem-pot-odds | Como calcular pot odds | /images/holdem-pot-odds-hero.webp
-/pt/blog/holdem-implied-odds | Implied odds — quando um preço ruim é um bom pagamento | /images/holdem-implied-odds-hero.webp
+/pt/blog/holdem-implied-odds | Implied odds — quando um preço ruim é um bom call | /images/holdem-implied-odds-hero.webp
 :::
 
 ## FAQ
 
-**Q. O que é equity no pôquer?**
+**Q. O que é equity no poker?**
 
-A. Equity é sua fatia do pote — a fatia que cabe à sua mão em média se ela vai ao showdown, com os empates contando proporcionalmente. Se o pote é $100 e 60% dele cabem a você, sua equity vale $60. É o número central que você compara com o preço de um pagamento para decidir se continua.
+A. Equity é sua fatia do pote — a fatia que cabe à sua mão em média se ela vai ao showdown, com os empates contando proporcionalmente. Se o pote é $100 e 60% dele cabem a você, sua equity vale $60. É o número central que você compara com o preço de um call para decidir se continua.
 
-**Q. Como calcular equity no pôquer?**
+**Q. Como calcular equity no poker?**
 
-A. Para projetos, use a Regra do 4 e 2: multiplique seus outs por 4 no flop (duas cartas por vir) ou por 2 no turn. Nove outs de flush ≈ 36% no flop. No pré-flop, memorize confrontos comuns (AA vs KK é 82/18). Para números exatos, os jogadores usam calculadoras de equity longe da mesa para estudar — você estima enquanto joga.
+A. Num projeto, a conta é outs ×4 com duas cartas por vir, ×2 com uma — nove outs de flush dão perto de 36% no flop. Nos all-ins pré-flop, o que funciona é ter os confrontos clássicos decorados (AA contra KK: 82/18). Para números exatos, estude longe da mesa — a aba **Equity** do [solver do site](/pt/solver) roda o confronto exato no navegador — e estime enquanto joga.
 
 **Q. Qual a diferença entre equity e pot odds?**
 
-A. Equity é sua fatia do pote (o que você tem); pot odds são a equity que você precisa para empatar num pagamento (o que o preço exige). A regra é simples: pague quando sua equity for maior que suas pot odds. As pot odds vêm do tamanho da aposta; a equity vem da sua mão e da mesa.
+A. Equity é sua fatia do pote (o que você tem); pot odds são a equity que você precisa para empatar num call (o que o preço exige). A regra é simples: pague quando sua equity for maior que suas pot odds. As pot odds vêm do tamanho da aposta; a equity vem da sua mão e da mesa.
 
-**Q. 50% de equity é bom no pôquer?**
+**Q. 50% de equity é bom no poker?**
 
-A. Não é nem bom nem ruim por si só — 50% é um coin flip. Se é um pagamento depende do preço: contra uma aposta de meio pote você só precisa de 25%, então 50% é um pagamento fácil; mas arriscar seu stack inteiro como azarão de 50/50 por nada é aposta, não vantagem. Equity só faz sentido ao lado das pot odds.
+A. Não é nem bom nem ruim por si só — 50% é um coin flip. Se é um call depende do preço: contra uma aposta de meio pote você só precisa de 25%, então 50% é um pagamento fácil; mas arriscar seu stack inteiro num 50/50 sem nenhum edge é aposta, não vantagem. Equity só faz sentido ao lado das pot odds.
 
 **Q. De quanta fold equity eu preciso para blefar com lucro?**
 
@@ -218,10 +219,10 @@ A. Porque o mesmo pote de 100% agora é dividido entre mais mãos — um par de 
 ## As 3 coisas para lembrar
 
 1. **Equity é sua fatia do pote** — equity% × tamanho do pote. Pague quando ela supera suas pot odds. Essa comparação é a espinha dorsal de toda decisão.
-2. **Você raramente fica com tudo.** Equity realizada = bruta × realização%, e posição é o maior fator. Equity bruta é o teto, não o pagamento.
+2. **Você raramente fica com tudo.** Equity realizada = bruta × realização%, e posição é o maior fator. Equity bruta é o teto, não o que você embolsa.
 3. **Agressão fabrica equity.** Fold equity deixa uma aposta ganhar potes que sua mão perderia — mas ela desaba multiway, onde você precisa que todo mundo folde.
 
-Domine isso e o resto da matemática do pôquer se encaixa. Daqui, transforme equity em pagamentos corretos com o [guia de pot odds](/pt/blog/holdem-pot-odds), ou veja como stacks profundos mudam o quadro com as [implied odds](/pt/blog/holdem-implied-odds).
+Domine isso e o resto da matemática do poker se encaixa. Daqui, transforme equity em calls corretos com o [guia de pot odds](/pt/blog/holdem-pot-odds), ou veja como stacks profundos mudam o quadro com as [implied odds](/pt/blog/holdem-implied-odds).
 
 ---
 
@@ -230,7 +231,7 @@ Domine isso e o resto da matemática do pôquer se encaixa. Daqui, transforme eq
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/pt/blog/holdem-probability" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Odds & Matemática</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Tabela de odds e probabilidade no pôquer</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Tabela de odds e probabilidade no poker</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">As porcentagens brutas de vitória por trás de cada mão</div>
   </a>
   <a href="/pt/blog/holdem-pot-odds" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">

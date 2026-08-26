@@ -2,24 +2,24 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "holdem-probability",
-  title: "Tabela de odds e probabilidade no pôquer — as chances reais de cada mão no Hold'em",
-  seoTitle: "Com que frequência você acerta de verdade? — Tabela de odds no pôquer",
+  title: "Tabela de odds e probabilidade no poker — as chances reais de cada mão no Hold'em",
+  seoTitle: "Acerta menos do que pensa? — Tabela de probabilidade poker",
   desc: "As odds reais de cada mão, flop e projeto no Texas Hold'em — mais a regra do 2 e 4 e pot odds numa única tabela de probabilidade completa.",
   tldr: "Até o river você faz um par 43,8% das vezes, dois pares 23,5%, um flush 3,0% e um full house 2,6% — enquanto um royal flush aparece só uma vez a cada 31.000 mãos.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-08-11",
+  updated: "2026-08-26",
   masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🎲",
   image: "/images/holdem-probability-hero.webp",
   imageAlt: "Vista de cima de uma mesa de Texas Hold'em em ação com cinco cartas comunitárias, pilhas de fichas espalhadas e jogadores no meio da mão",
-  tags: ["odds no pôquer", "tabela de probabilidade pôquer", "odds das mãos de pôquer", "odds de trincar no flop", "regra do 2 e 4", "pot odds", "tabela de outs pôquer", "odds texas holdem"],
+  tags: ["probabilidade poker", "tabela de probabilidade poker", "probabilidade das maos do poker", "odds no poker", "odds das maos de poker", "odds de trincar no flop", "probabilidade flush poker", "odds texas holdem"],
   content: `
-A primeira vez que eu fiz set mining com um par de cincos numa mesa ao vivo e trinquei no flop, o cara do meu lado resmungou "quais são as *odds*?" — e eu sabia mesmo: cerca de ==1 em 8,5==. Foi esse número que me fez pagar em primeiro lugar.
+A primeira vez que eu fiz set mining com um par de cincos numa mesa ao vivo e trinquei no flop, o cara do meu lado resmungou "quais são as *odds*?" — e eu sabia mesmo: cerca de ==1 em 8,5==. Foi esse número que me fez pagar, para começar.
 
-Pôquer não é jogo de adivinhação. Cada call, fold e shove é uma ==pergunta de probabilidade disfarçada==, e os jogadores que ganham são os que transformaram "quais são as odds?" num reflexo. Esta é a ==**tabela de odds e probabilidade** completa== do Texas Hold'em — cada mão feita, cada flop, cada projeto — com o ==g:único atalho mental== que deixa você fazer a conta na mesa em dois segundos.
+Poker não é jogo de adivinhação. Cada call, fold e shove é uma ==pergunta de probabilidade disfarçada==, e os jogadores que ganham são os que transformaram "quais são as odds?" num reflexo. Esta é a ==**tabela de odds e probabilidade** completa== do Texas Hold'em — cada mão feita, cada flop, cada projeto — com o ==g:único atalho mental== que deixa você fazer a conta na mesa em dois segundos.
 
 ---
 
@@ -35,9 +35,9 @@ Pôquer não é jogo de adivinhação. Cada call, fold e shove é uma ==pergunta
 
 ---
 
-## Tabela de odds das mãos de pôquer: a probabilidade de cada mão
+## Tabela de probabilidade do poker: as odds de cada mão
 
-Aqui está a tabela mestra. O truque que a maioria dos sites pula: existem ==dois números diferentes== para cada mão, e confundir os dois é o motivo de as pessoas discutirem o quão raro um royal flush "realmente" é.
+Aqui está a tabela mestra com a probabilidade das mãos do poker. O truque que a maioria dos sites pula: existem ==dois números diferentes== para cada mão, e confundir os dois é o motivo de as pessoas discutirem o quão raro um royal flush "realmente" é.
 
 - **Odds de 5 cartas** = a chance de uma única mão aleatória de cinco cartas *ser* aquela mão (o número clássico dos livros).
 - **Hold'em (até o river)** = a chance de você *terminar* com aquela mão depois de ver todas as sete cartas (suas 2 cartas na mão + 5 comunitárias). É esse o número que realmente importa na mesa.
@@ -62,7 +62,7 @@ Aqui está a tabela mestra. O truque que a maioria dos sites pula: existem ==doi
 > **A estatística que surpreende todo mundo**
 > Carta alta é a mão de cinco cartas *mais* comum (50,1%), mas no Hold'em cai para **17,4%** — o terceiro resultado mais frequente, atrás de um par (43,8%) e dois pares (23,5%). Por quê? Sete cartas te dão tantas chances de parear que "nenhum par até o river" vira a exceção. Mais cartas, mais conexões.
 
-A ordem do ranking segue a **coluna de cinco cartas**: quanto mais rara uma mão é entre cinco cartas aleatórias, mais alto ela ganha — sem exceção, da carta alta até o royal flush. Com sete cartas isso vale em tudo, menos na carta alta: ela é mais rara que um par (43,8%) e ainda assim continua sendo a mão mais fraca. Essa é a lógica por trás do [ranking de mãos de pôquer](/pt/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp"): a probabilidade *é* o ranking — medida sobre cinco cartas.
+A ordem do ranking segue a **coluna de cinco cartas**: quanto mais rara uma mão é entre cinco cartas aleatórias, mais alto ela fica no ranking — sem exceção, da carta alta até o royal flush. Com sete cartas isso vale em tudo, menos na carta alta: ela é mais rara que um par (43,8%) e ainda assim continua sendo a mão mais fraca. Essa é a lógica por trás do [ranking de mãos de poker](/pt/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp"): a probabilidade *é* o ranking — medida sobre cinco cartas.
 
 :::quiz:::
 
@@ -70,7 +70,7 @@ A ordem do ranking segue a **coluna de cinco cartas**: quanto mais rara uma mão
 
 ## Odds de receber cada mão inicial
 
-![Par de ases — o ás de espadas e o ás de copas recém-distribuídos no feltro verde ao lado de fichas de pôquer](/images/holdem-probability-starting-hands.webp "Par de ases: a melhor mão inicial, distribuída só uma vez a cada 221 mãos")
+![Par de ases — o ás de espadas e o ás de copas recém-distribuídos no feltro verde ao lado de fichas de poker](/images/holdem-probability-starting-hands.webp "Par de ases: a melhor mão inicial, distribuída só uma vez a cada 221 mãos")
 
 Antes de qualquer flop, existem exatamente **1.326 mãos iniciais de duas cartas possíveis**. Veja com que frequência aparecem as que as pessoas mais perguntam.
 
@@ -127,11 +127,11 @@ Você tem um projeto no flop. Com que frequência você o completa? Tudo se resu
 
 </div>
 
-O caso clássico: você flopa um **projeto de flush** (nove outs). Você chega lá ==35% das vezes até o river== — melhor que uma em três. Um **projeto de sequência aberta** (oito outs) acerta 31,5%. Repare nas duas colunas: quando o turn vem em branco, suas odds numa *única* carta praticamente caem pela metade, e é exatamente por isso que os projetos ficam mais caros de perseguir rua após rua.
+O caso clássico: você flopa um **projeto de flush** (nove outs). Você chega lá ==35% das vezes até o river== — melhor que uma em três. Um **projeto de sequência aberta** (oito outs) acerta 31,5%. Repare nas duas colunas: quando o turn é um brick, suas odds numa *única* carta praticamente caem pela metade, e é exatamente por isso que os projetos ficam mais caros de perseguir street após street.
 
 ---
 
-## Como calcular odds no pôquer: contando outs e a regra do 2 e 4
+## Como calcular odds no poker: contando outs e a regra do 2 e 4
 
 Você não consegue carregar aquela tabela na cabeça — mas nem precisa. A **regra do 2 e 4** te deixa dentro de um ponto percentual ou dois em um segundo:
 
@@ -145,7 +145,7 @@ No turn (1 carta por vir) | Multiplique outs × 2 → sua % aproximada de acerta
 
 :::tip[A regra *super*estima um pouco quando você tem mais de uns 9 outs. Com um monstro de 15 outs, "×4" diz 60% mas o número real é 54% — desconte alguns pontos para projetos grandes.]:::
 
-É esse o truque inteiro. Outs → vezes quatro no flop → sua [equity](/pt/blog/holdem-equity "thumb:/images/holdem-equity-hero.webp"). Todo o resto é só saber o que fazer com esse número. A única habilidade que essa regra assume que você já dominou é a própria contagem — para projetos combinados, outs sobrepostos e os outs "sujos" que não deveriam contar, veja o guia completo de [como contar outs no pôquer](/pt/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp").
+É esse o truque inteiro. Outs → vezes quatro no flop → sua [equity](/pt/blog/holdem-equity "thumb:/images/holdem-equity-hero.webp"). Todo o resto é só saber o que fazer com esse número. A única habilidade que essa regra assume que você já dominou é a própria contagem — para projetos combinados, outs sobrepostos e os outs "sujos" que não deveriam contar, veja o guia completo de [como contar outs no poker](/pt/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp").
 
 ---
 
@@ -173,7 +173,7 @@ Decisão | Com duas cartas por vir: 35% > 25% → um ==g:call== claramente lucra
 
 ## Odds de royal flush e straight flush (e por que são tão raros)
 
-![Infográfico de um royal flush de copas — A♥ K♥ na mão completando A-K-Q-J-10 de copas numa mesa 10♥ J♥ Q♥](/images/holdem-probability-royal-flush.webp "Um royal flush de copas: a mão mais rara do pôquer, cerca de 1 em 30.940 até o river")
+![Infográfico de um royal flush de copas — A♥ K♥ na mão completando A-K-Q-J-10 de copas num board 10♥ J♥ Q♥](/images/holdem-probability-royal-flush.webp "Um royal flush de copas: a mão mais rara do poker, cerca de 1 em 30.940 até o river")
 
 As duas mãos mais raras são as que os jogadores se gabam por anos — com razão.
 
@@ -190,7 +190,7 @@ Um mito comum: "um royal flush ganha de tudo, então pode dar *empate*". O pote 
 
 ## Odds improváveis: coolers, quadras e bad beats
 
-Alguns números existem principalmente para explicar a pior noite da sua vida no pôquer.
+Alguns números existem principalmente para explicar a pior noite da sua vida no poker.
 
 | Improvável | Odds |
 |:---|:---:|
@@ -204,7 +204,7 @@ Alguns números existem principalmente para explicar a pior noite da sua vida no
 ---
 
 :::readnext[Continue lendo]
-/pt/blog/holdem-hand-rankings | Ranking de mãos de pôquer, do melhor ao pior | /images/holdem-hand-rankings-hero.webp
+/pt/blog/holdem-hand-rankings | Ranking de mãos de poker, do melhor ao pior | /images/holdem-hand-rankings-hero.webp
 /pt/blog/holdem-starting-hands-chart | Quais mãos iniciais realmente jogar | /images/holdem-starting-hands-chart-hero.webp
 :::
 
@@ -230,9 +230,21 @@ A. Cerca de 11,8%, ou mais ou menos 1 em 8,5, quando você segura um par na mão
 
 A. 1 em 221 (0,45%) para os ases especificamente. Qualquer par na mão, porém, aparece bem mais vezes — cerca de 1 em 17 mãos (5,9%).
 
-**Q. O que é a regra do 2 e 4 no pôquer?**
+**Q. Qual é a probabilidade de fazer um flush no Texas Hold'em?**
 
-A. Um atalho para as odds de projeto: multiplique seus outs por 4 no flop (duas cartas por vir) ou por 2 no turn (uma carta por vir) para estimar sua chance em porcentagem de acertar. É preciso dentro de um ponto ou dois até uns nove outs.
+A. Jogando as sete cartas até o river, 3,03% — cerca de 1 em 33 mãos (em cinco cartas distribuídas, só 0,197%). Não confunda com *completar* um projeto de flush já flopado, que fecha 35% das vezes: um número é a chance de a mão inteira terminar em flush, o outro pressupõe que você já tem quatro cartas do naipe.
+
+**Q. Qual é a probabilidade de uma quadra no poker?**
+
+A. 0,168% até o river — 1 em 595 mãos. Com um par na mão, você flopa a quadra só 1 vez em 408 (0,245%). Em cinco cartas distribuídas é ainda mais raro: 1 em 4.165. É por isso que uma quadra costuma virar história de mesa por meses.
+
+**Q. Qual é a probabilidade de uma sequência no poker?**
+
+A. 4,62% até o river — cerca de 1 em 22 mãos. Com conectores você flopa uma sequência *feita* só 1,3% das vezes, mas flopa um projeto aberto perto de 10% — e esse projeto completa 31,5% até o river. Em cinco cartas distribuídas, a sequência sai 0,392%.
+
+**Q. O que é a regra do 2 e 4 no poker?**
+
+A. Um atalho para as odds de projeto: multiplique seus outs por 4 no flop (duas cartas por vir) ou por 2 no turn (uma carta por vir) para estimar sua chance em porcentagem de acertar. É preciso dentro de um ponto ou dois até uns nove outs. Use o ×4 só quando for ver as duas cartas sem mais aposta.
 
 **Q. Como calcular pot odds?**
 
@@ -250,7 +262,7 @@ A. Não há um número fixo único — depende de quantos adversários seguram p
 2. **Projeto de flush até o river: 35%.** Nove outs, regra do 4 → 9 × 4 = 36%.
 3. **Pot odds ganham do feeling.** Se sua chance de acertar for maior que o preço do call, você paga — toda vez.
 
-O pôquer recompensa os jogadores que tornaram isso automático. Aprenda a tabela, treine a regra do 2 e 4, e comece a perguntar "quais são as odds?" *antes* de agir, em vez de depois. Em seguida, ponha a matemática para trabalhar aprendendo [quais mãos iniciais jogar de cada posição](/pt/blog/holdem-starting-hands-chart), ou revise [por que um flush ganha de uma sequência](/pt/blog/holdem-flush-vs-straight) para sempre saber o quanto seus outs valem.
+O poker recompensa os jogadores que tornaram isso automático. Aprenda a tabela, treine a regra do 2 e 4, e comece a perguntar "quais são as odds?" *antes* de agir, em vez de depois. Em seguida, ponha a matemática para trabalhar aprendendo [quais mãos iniciais jogar de cada posição](/pt/blog/holdem-starting-hands-chart), ou revise [por que um flush ganha de uma sequência](/pt/blog/holdem-flush-vs-straight) para sempre saber o quanto seus outs valem.
 
 ---
 
@@ -259,7 +271,7 @@ O pôquer recompensa os jogadores que tornaram isso automático. Aprenda a tabel
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/pt/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Ranking de Mãos</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Ranking de mãos de pôquer, do melhor ao pior</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Ranking de mãos de poker, do melhor ao pior</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">A ordem que essas odds criam — cada mão no ranking</div>
   </a>
   <a href="/pt/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">

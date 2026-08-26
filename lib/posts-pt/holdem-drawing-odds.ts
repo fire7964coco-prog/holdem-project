@@ -2,23 +2,24 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "holdem-drawing-odds",
-  title: "Odds de projeto no pôquer — as chances de flopar e completar cada mão",
-  seoTitle: "Qual a real chance de você flopar? — Odds de projeto no pôquer",
+  title: "Odds de projeto no poker — as chances de flopar e completar cada mão",
+  seoTitle: "Qual a real chance de flopar? — Odds de projeto no poker",
   desc: "As chances reais de flopar um set, um flush, quadra e cada projeto no Hold'em — com a combinatória e a matemática de set mining que as outras páginas escondem.",
   tldr: "Você flopa um set com um par na mão 11,8% das vezes (7,5 para 1 contra), flopa um flush com duas cartas do mesmo naipe apenas 0,84%, e completa um flush draw flopado até o river 35% das vezes. Cada número abaixo vem do baralho, não de chute.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-08-11",
+  updated: "2026-08-26",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🎲",
   image: "/images/holdem-drawing-odds-hero.webp",
   imageAlt: "Um par pequeno na mão ao lado de uma pilha de fichas no feltro verde enquanto o flop é distribuído, o momento em que um call de set mining acerta ou erra",
-  tags: ["odds de projeto", "odds de flopar um set", "odds de flopar um flush", "odds de flopar quadra", "set mining", "odds de receber par de ases", "odds de flop no poker", "odds de projeto texas holdem"],
+  tags: ["odds de projeto", "odds de flopar um set", "odds de flopar um flush", "odds de flopar quadra", "probabilidade aa poker", "odds de receber par de ases", "odds de flop no poker", "odds de projeto texas holdem"],
   content: `
 A mão que me fez aprender isso de cor: eu paguei um aumento com um par de cincos, flopei meu set, quebrei um cara que tinha ases, e meu parceiro perguntou como eu "sabia" que era pra pagar. Eu não *sabia* — eu sabia o número. ==Você flopa um set mais ou menos 1 vez em cada 8,5 tentativas==, e os stacks estavam fundos o bastante pra me pagar quando eu acertei. Aquela fração sozinha transformou um call de "parece sorte" num call lucrativo.
 
-É isso que odds de projeto realmente são: não sorte, mas a ==matemática fixa de um baralho de 52 cartas==. Com que frequência você flopa um set, flopa um flush, completa um projeto até o river — cada um desses é um número que dá pra derivar, e os jogadores que ganham têm tudo memorizado. Este guia são as ==g:probabilidades por trás do flop e do projeto==, cada uma com a combinatória de verdade pra você enxergar *por que* o número é o que é. É o companheiro da [tabela completa de odds e probabilidade do pôquer](/pt/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp"); depois que você sabe as odds daqui, [contar outs](/pt/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp") e [pot odds](/pt/blog/holdem-pot-odds) transformam elas em decisões.
+É isso que odds de projeto realmente são: não sorte, mas a ==matemática fixa de um baralho de 52 cartas==. Com que frequência você flopa um set, flopa um flush, completa um projeto até o river — cada um desses é um número que dá pra derivar, e os jogadores que ganham têm tudo memorizado. Este guia são as ==g:probabilidades por trás do flop e do projeto==, cada uma com a combinatória de verdade pra você enxergar *por que* o número é o que é. É o companheiro da [tabela completa de odds e probabilidade do poker](/pt/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp"); depois que você sabe as odds daqui, [contar outs](/pt/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp") e [pot odds](/pt/blog/holdem-pot-odds) transformam elas em decisões.
 
 ---
 
@@ -43,7 +44,7 @@ Aqui está a tabela que ninguém monta num lugar só. A maioria dos sites te con
 |:---|:---:|:---|:---|
 | Par na mão → set | 11,8% (7,5 para 1) | — | set→boat 33% até o river |
 | Duas do naipe → flush | 0,84% (118 para 1) | 10,9% flush draw | 35% (9 outs) |
-| Conectoras → sequência | 1,3% (76 para 1) | ~10% OESD | 31,5% (8 outs) |
+| Conectores → sequência | 1,3% (76 para 1) | ~10% OESD | 31,5% (8 outs) |
 | Duas despareadas → par | ~32% | — | — |
 | Par na mão → quadra | 0,245% (407 para 1) | — | — |
 
@@ -74,7 +75,7 @@ De onde vem 11,8%? Segure um par na mão e sobram duas cartas no baralho que te 
 
 ### Quando o set mining realmente compensa
 
-Flopar um set 11,8% das vezes significa que você **erra 88% das vezes** e folda. Pra lucrar, os 12% em que você acerta têm que pagar por todas as vezes que você erra. O ponto de equilíbrio é 7,5 para 1 — então se você paga pra fazer set mining, você quer que o pote mais o que dá pra ganhar nas ruas seguintes valha **pelo menos 7,5×** o seu call, e na prática ==g:15 para 1 ou mais== pra cobrir as vezes em que seu set não é pago ou é ultrapassado.
+Flopar um set 11,8% das vezes significa que você **erra 88% das vezes** e folda. Pra lucrar, os 12% em que você acerta têm que pagar por todas as vezes que você erra. O ponto de equilíbrio é 7,5 para 1 — então se você paga pra fazer set mining, você quer que o pote mais o que dá pra ganhar nas streets seguintes valha **pelo menos 7,5×** o seu call, e na prática ==g:15 para 1 ou mais== pra cobrir as vezes em que seu set não é pago ou é ultrapassado.
 
 :::tip[A regra prática: só pague um aumento pra fazer set mining se os stacks efetivos forem mais ou menos 15-20× o preço do call. Stacks fundos fazem pares pequenos valerem ouro; stacks curtos os transformam em lixo. O par não mudou — as implied odds mudaram.]:::
 
@@ -91,7 +92,7 @@ Dois números relacionados que as pessoas perguntam:
 
 ![Ás-rei de copas com um flop dama-sete de copas no feltro verde, um flush draw de nove outs flopado ao lado de uma pilha curta de fichas](/images/holdem-drawing-odds-flush-draw.webp "Duas copas na mão, duas no flop — um flush draw, não um flush feito: 10,9% pra flopar, 35% pra completar até o river")
 
-É aqui que os concorrentes borram três números completamente diferentes. Com duas cartas do mesmo naipe na mão, existem **três perguntas separadas**, e elas estão a uma ordem de grandeza de distância:
+É aqui que outros guias borram três números completamente diferentes. Com duas cartas do mesmo naipe na mão, existem **três perguntas separadas**, e elas estão a uma ordem de grandeza de distância:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -105,7 +106,7 @@ Dois números relacionados que as pessoas perguntam:
 
 Então a frase honesta é: duas cartas do mesmo naipe flopam um **projeto** muito mais do que um flush feito, e esse projeto chega a 35% — 1,9 para 1 contra, ou seja, mais perto de um em três do que de um cara-ou-coroa. Perseguir toda mão do mesmo naipe "pelo flush" ignora que você vai flopar o flush feito menos de uma vez a cada 100 mãos.
 
-O número de completar se divide por rua, e isso importa no instante em que ainda há aposta:
+O número de completar se divide por street, e isso importa no instante em que ainda há aposta:
 
 - **Flop → river (as duas cartas):** 35,0% — use isso só quando você está all-in no flop.
 - **Flop → turn (uma carta):** 9 ÷ 47 = 19,1%.
@@ -119,18 +120,18 @@ Um flush **backdoor** (runner-runner) — você flopa só *uma* carta extra do s
 
 ![Uma sequência de oito alto disposta em ordem no feltro verde, a mão pronta que um open-ended draw está perseguindo](/images/holdem-reading-straight-example.webp "Um open-ended straight draw completa por qualquer das pontas — oito outs, 31,5% pra completar até o river")
 
-Conectoras como 8♠7♠ têm o próprio ciclo de vida. Você vai **flopar uma sequência feita só 1,3%** das vezes (76 para 1) — mais raro do que a maioria dos jogadores imagina. Bem mais frequente é flopar um **projeto**:
+Conectores como 8♠7♠ têm o próprio ciclo de vida. Você vai **flopar uma sequência feita só 1,3%** das vezes (76 para 1) — mais raro do que a maioria dos jogadores imagina. Bem mais frequente é flopar um **projeto**:
 
-- **Open-ended straight draw (OESD):** ~10% dos flops com conectoras. Oito outs, completa **31,5%** até o river — 1 − C(39,2)/C(47,2) — ou 17% em qualquer carta única.
-- **Gutshot (projeto de sequência por dentro):** quatro outs, completa **16,5%** até o river, 8,5% numa carta. Metade da equity de um open-ended, e é por isso que as mesmas conectoras jogam tão diferente dependendo do flop.
+- **Open-ended straight draw (OESD):** ~10% dos flops com conectores. Oito outs, completa **31,5%** até o river — 1 − C(39,2)/C(47,2) — ou 17% em qualquer carta única.
+- **Gutshot (projeto de sequência por dentro):** quatro outs, completa **16,5%** até o river, 8,5% numa carta. Metade da equity de um open-ended, e é por isso que os mesmos conectores jogam tão diferente dependendo do flop.
 
-Repare que o OESD (31,5%) e o flush draw (35%) estão perto — os dois são "um projeto grande", os dois mais ou menos um terço pra acertar até o river. Esse é o atalho que vale internalizar: um projeto grande normal é cerca de ==**um em três**== pra completar até o river, e cai pra mais ou menos um em seis numa rua só.
+Repare que o OESD (31,5%) e o flush draw (35%) estão perto — os dois são "um projeto grande", os dois mais ou menos um terço pra acertar até o river. Esse é o atalho que vale internalizar: um projeto grande normal é cerca de ==**um em três**== pra completar até o river, e cai pra mais ou menos um em seis numa street só.
 
 ---
 
 ## Flops raros: quadra, trinca, full house e straight flush
 
-Esses são os números por trás das melhores (e piores) noites da sua vida no pôquer. Cada um é um problema limpo de combinatória sobre os 19.600 flops possíveis:
+Esses são os números por trás das melhores (e piores) noites da sua vida no poker. Cada um é um problema limpo de combinatória sobre os 19.600 flops possíveis:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -139,13 +140,13 @@ Esses são os números por trás das melhores (e piores) noites da sua vida no p
 | **Quadra** | Um par na mão | 0,245% · 407 para 1 | 48 ÷ 19.600 |
 | **Full house** | Um par na mão | 0,98% · 101 para 1 | 192 ÷ 19.600 |
 | **Trinca** | Duas cartas despareadas | 1,35% · 73 para 1 | 264 ÷ 19.600 |
-| **Straight flush** | Conectoras do mesmo naipe | 0,02% · ~4.900 para 1 | 4 ÷ 19.600 |
+| **Straight flush** | Conectores do mesmo naipe | 0,02% · ~4.900 para 1 | 4 ÷ 19.600 |
 
 </div>
 
 Uma distinção crucial que as páginas do topo erram sempre: um **set** é um par na mão mais uma carta da mesa que combina (11,8%), enquanto **trinca** é uma carta *despareada* da mão que a mesa pareia duas vezes (1,35%). A mesma trinca no papel, odds e jogabilidade completamente diferentes — um set é disfarçado, a trinca é óbvia. Não deixe ninguém te dizer que são a mesma coisa.
 
-O número do straight flush é o de emoldurar: com conectoras do mesmo naipe existem exatamente **quatro** flops que o fazem (uma sequência no seu naipe), então 4 ÷ 19.600 ≈ 1 em 4.900. É por isso que straight flushes flopados são histórias que as pessoas contam por uma década.
+O número do straight flush é o de emoldurar: com conectores do mesmo naipe existem exatamente **quatro** flops que o fazem (uma sequência no seu naipe), então 4 ÷ 19.600 ≈ 1 em 4.900. É por isso que straight flushes flopados são histórias que as pessoas contam por uma década.
 
 O número do full house conta cada jeito de o flop te dar um boat com um par na mão — incluindo os flops que vêm como trinca de outro valor por cima do seu par — e é por isso que dá 0,98% em vez dos ~0,73% mais estreitos que algumas tabelas citam pra "set mais um par na mesa" só.
 
@@ -171,7 +172,7 @@ O que surpreende as pessoas: se **você** tem ases numa mesa de 10 jogadores, a 
 ---
 
 :::readnext[Continue lendo]
-/pt/blog/holdem-outs | Como contar outs no pôquer | /images/holdem-outs-hero.webp
+/pt/blog/holdem-outs | Como contar outs no poker | /images/holdem-outs-hero.webp
 /pt/blog/holdem-pot-odds | Como calcular pot odds | /images/holdem-pot-odds-hero.webp
 :::
 
@@ -215,9 +216,9 @@ A. Não existe um número fixo único — depende de quantos adversários têm p
 
 1. **Flopar um set: 11,8% (7,5 para 1).** O número que decide todo call de set mining — só pague fundo o bastante pra ser pago 15× ou mais quando você acerta.
 2. **Feito vs projeto vs completar são números diferentes.** Duas cartas do mesmo naipe flopam um flush feito 0,84%, um flush draw 10,9%, e completam esse projeto 35%. Nunca cite o errado.
-3. **Um projeto grande é cerca de um em três até o river.** Flush draw 35%, open-ended 31,5% — e mais ou menos um em seis numa rua só.
+3. **Um projeto grande é cerca de um em três até o river.** Flush draw 35%, open-ended 31,5% — e mais ou menos um em seis numa street só.
 
-Cada número aqui vem direto do baralho, não de um palpite. Leve isso pra [como contar outs](/pt/blog/holdem-outs) pra montar o número em tempo real, depois [pot odds](/pt/blog/holdem-pot-odds) pra transformar num call ou fold — ou volte pra tabela completa de [odds e probabilidade do pôquer](/pt/blog/holdem-probability) pra ter todo número de mão feita e de tiro longo num lugar só.
+Cada número aqui vem direto do baralho, não de um palpite. Leve isso pra [como contar outs](/pt/blog/holdem-outs) pra montar o número em tempo real, depois [pot odds](/pt/blog/holdem-pot-odds) pra transformar num call ou fold — ou volte pra tabela completa de [odds e probabilidade do poker](/pt/blog/holdem-probability) pra ter todo número de mão feita e de tiro longo num lugar só.
 
 ---
 
@@ -226,12 +227,12 @@ Cada número aqui vem direto do baralho, não de um palpite. Leve isso pra [como
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/pt/blog/holdem-probability" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Odds e Matemática</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Tabela de odds e probabilidade do pôquer</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Tabela de odds e probabilidade do poker</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Todo número de mão feita e de tiro longo num lugar só</div>
   </a>
   <a href="/pt/blog/holdem-outs" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Odds e Matemática</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Como contar outs no pôquer</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Como contar outs no poker</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Transforme essas odds numa contagem de outs ao vivo</div>
   </a>
   <a href="/pt/blog/holdem-pot-odds" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
