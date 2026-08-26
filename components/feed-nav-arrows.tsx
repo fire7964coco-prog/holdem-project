@@ -1,7 +1,9 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState, type RefObject } from "react";
+import { usePathname } from "next/navigation";
 import { smoothScrollWindowTo } from "@/lib/smooth-scroll";
+import { localeFromPath, POST_LABELS } from "@/lib/intl";
 
 /**
  * 데스크톱 홈피드 우측 세로 중앙 ↑/↓ 화살표 (유튜브 쇼츠 스타일).
@@ -27,6 +29,18 @@ export default function FeedNavArrows({
   const [canUp, setCanUp] = useState(false);
   const [canDown, setCanDown] = useState(false);
   const tickingRef = useRef(false);
+  /**
+   * ★2026-08-26 — 라벨이 「이전 글」·「다음 글」 한국어로 하드코딩돼 있었다.
+   *   이 화살표는 `aria-label` + `title` **둘 다**에 라벨을 쓴다. 즉 **화면에는 ↑↓ 도형만
+   *   보이고 문자열은 스크린리더·툴팁에만 나오는** 자리라, 25개 로케일 홈에서 한국어가
+   *   낭독되고 있었는데 눈으로는 아무도 못 봤다(빌드 산출물 실측: aria-label 50 · title 50).
+   *   스킵링크(551f1325)와 **같은 유형**이다.
+   *   🔴 새 문자열을 짓지 않았다 — `POST_LABELS[locale].prev/next`(이전/다음 항목)를 그대로 쓴다.
+   */
+  const locale = localeFromPath(usePathname() || "/");
+  const labels = locale
+    ? { prev: POST_LABELS[locale].prev, next: POST_LABELS[locale].next }
+    : { prev: "이전 글", next: "다음 글" };
 
   const getOffset = useCallback(() => {
     const h = headerRef.current?.getBoundingClientRect().height;
@@ -104,8 +118,8 @@ export default function FeedNavArrows({
       className="hidden lg:flex fixed flex-col gap-2.5"
       style={{ right: 16, top: "50%", transform: "translateY(-50%)", zIndex: 40 }}
     >
-      <ArrowButton dir="up" disabled={!canUp} onClick={() => go(-1)} label="이전 글" />
-      <ArrowButton dir="down" disabled={!canDown} onClick={() => go(1)} label="다음 글" />
+      <ArrowButton dir="up" disabled={!canUp} onClick={() => go(-1)} label={labels.prev} />
+      <ArrowButton dir="down" disabled={!canDown} onClick={() => go(1)} label={labels.next} />
     </div>
   );
 }

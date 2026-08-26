@@ -94,7 +94,7 @@ const SOFT = [["og:site_name", /property="og:site_name" content="([^"]*)"/]];
  *    2026-08-26에 비한국어 541페이지가 전부 이 값을 달고 있었는데, 게이트를 «한글 찾기»로만
  *    만들었으면 확장하고도 못 봤을 자리다.
  */
-const EXTRA = ["JSON-LD inLanguage", "SearchAction(KO전용)"];
+const EXTRA = ["JSON-LD inLanguage", "SearchAction(KO전용)", "aria-label·title"];
 
 /**
  * 한 페이지를 판정한다. **파일시스템을 안 탄다** — 셀프테스트가 이 함수를 직접 부른다.
@@ -122,6 +122,16 @@ export function judgePage(html) {
   present["JSON-LD inLanguage"] = /"inLanguage":"/.test(html);
   const il = html.match(/"inLanguage":"(ko[^"]*)"/);
   if (il) red.push({ name: "JSON-LD inLanguage", v: il[1] });
+
+  // 🟠 aria-label·title 속성의 한국어 — 스킵링크와 **같은 유형**이다(화면엔 안 보이는데 낭독된다).
+  //    ⚠ 🟠인 이유: 2026-08-26 현재 `side-rail.tsx` 의 `aria-label="사이트 메뉴"` 1종이
+  //      **미해결로 남아 있다**(16페이지). 새 문자열 25개가 필요해 판정 대기 중이라,
+  //      지금 🔴로 두면 빌드가 그것 때문에 계속 멈춘다. **그 건이 닫히면 🔴로 승격하라.**
+  //    ⚠ 본문 텍스트는 보지 않는다 — 푸터 언어전환 «한국어»(endonym)가 매번 걸린다.
+  present["aria-label·title"] = /(?:aria-label|title)="/.test(html);
+  for (const m of html.matchAll(/(?:aria-label|title)="([^"]*[가-힣][^"]*)"/g)) {
+    orange.push({ name: "aria-label·title", v: m[1] });
+  }
 
   // 🟠 SearchAction 은 KO `/blog?q=` 만 가리킨다(로케일 목록엔 검색 UI·`?q=` 처리가 없다).
   //    비한국어 페이지에 새면 독자를 **한국어 목록**으로 보낸다.
@@ -196,10 +206,21 @@ function run() {
     console.log("   ↳ 🟠 스킵링크가 **한 페이지에도 없다** — 라벨 검사가 아니라 요소가 사라진 것이다(a11y 회귀 의심).");
   }
 
+  // 🟠 는 자리마다 «정상일 수 있는 이유»가 다르다 — 뭉뚱그리면 라벨이 거짓말을 한다
+  //    (실제로 한 번 그랬다: aria-label 지적이 «og:site_name 이 한국어» 로 출력됐다).
+  const WHY_ORANGE = {
+    "og:site_name": "브랜드명이면 정상이다(ja 「ホールデムマスター」처럼 로케일 브랜드를 쓸 수 있다)",
+    "SearchAction(KO전용)": "KO `/blog?q=` 만 가리킨다 — 로케일 blog 에 검색을 붙였다면 정상",
+    "aria-label·title": "🔴 화면엔 안 보이는데 스크린리더가 읽는다 — 스킵링크와 같은 유형이다. **고쳐라**",
+  };
   if (orange.length) {
-    console.log(`\n🟠 og:site_name 이 한국어인 페이지 ${orange.length}개 — 브랜드명이면 정상이다:`);
-    for (const o of orange.slice(0, 5)) console.log(`   ${o.lang.padEnd(8)} ${o.rel} → «${o.v}»`);
-    if (orange.length > 5) console.log(`   … 외 ${orange.length - 5}개`);
+    const byOrange = {};
+    for (const o of orange) (byOrange[o.name] ??= []).push(o);
+    for (const [name, list] of Object.entries(byOrange)) {
+      console.log(`\n🟠 [${name}] ${list.length}건 — ${WHY_ORANGE[name] ?? ""}`);
+      for (const o of list.slice(0, 5)) console.log(`   ${o.lang.padEnd(8)} ${o.rel} → «${o.v.slice(0, 50)}»`);
+      if (list.length > 5) console.log(`   … 외 ${list.length - 5}건`);
+    }
   }
 
   if (red.length === 0) {
@@ -335,6 +356,17 @@ function selftest() {
     {
       name: "오탐 방지: isPartOfSite 처럼 description 없는 WebSite 노드도 안 울린다",
       html: HEAD('<script type="application/ld+json">{"@type":"WebSite","name":"HoldemMaster","url":"https://x"}</script>'),
+      want: [],
+    },
+    {
+      name: "🟠 aria-label 한국어 검출 (화면엔 안 보이는데 낭독된다)",
+      html: `<html lang="de"><head></head><body>${SKIP("Zum Inhalt springen")}<aside aria-label="사이트 메뉴"></aside></body></html>`,
+      want: [],
+      wantOrange: ["aria-label·title"],
+    },
+    {
+      name: "🔴 오탐 방지: 본문 텍스트의 «한국어»(endonym)는 속성이 아니라 안 걸린다",
+      html: `<html lang="de"><head></head><body>${SKIP("Zum Inhalt springen")}<nav aria-label="Sprache"><a href="/">한국어</a></nav></body></html>`,
       want: [],
     },
     {
