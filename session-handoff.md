@@ -10,68 +10,33 @@
 
 ---
 
-## ▶▶▶ 지금 할 일 — **갈래 B: pt 경화 회차 6 (tournament 9편 — 마지막 클러스터) · 모델 = Fable(본체) + Opus(렌즈)**
+## ▶▶▶ 지금 할 일 — **지시 대기 (pt 경화 6회차 전부 완결 — 42/42)**
 
-**회차 2·3·4·5는 2026-08-26 완결** — `a4588d9e`(rankings 6) · `dc614d75`(odds 7) ·
-`adcffae4`(strategy 8 + EN 소급 5 + PDF 자산 정정) · `2a6f49d5`(glossary 6 + EN 동시 수정 12곳) ·
-경위 = WORKLOG 「2026-08-26 (2)~(5)」.
-🆕 **렌즈 분담 정본**(사장님 지시·주간 한도 절약): 렌즈 5종은 `model: "opus"` 지정, 본체
-판정만 Fable — 회차 4에서 성과 저하 없음(오히려 최다 검출) 실증.
-**갈래 A는 08-25~26 완결**(WORKLOG 「2026-08-25 (7)」·「2026-08-26」).
+🎉 **pt 경화 트랙 종결** — 회차 1~6 완결: `8ee6b047`(rules) · `a4588d9e`(rankings 6) ·
+`dc614d75`(odds 7) · `adcffae4`(strategy 8) · `2a6f49d5`(glossary 6) · **`79341df8`(tournament 9 —
+2026-08-26, EN 소급 5편 동반)**. 경위 = WORKLOG 「2026-08-26 (2)~(6)」.
+렌즈 분담 정본(렌즈 = Opus · 본체 판정 = Fable)은 회차 4~6 3연속 실증 — 회차 6은 **EN 사실대조
+렌즈를 6번째로 신설**해 masterUpdated 허위 동기 2건(ept·wpt)을 잡았다.
+
+**다음 착수 후보 (지시 대기)**:
+1. **fr 전략 코퍼스 확장**(랜딩 내부링크 보강 겸 — `docs/local-voice/fr-fr.md`·fr 뱅크 준비됨)
+2. **M-067 이행 — 랜딩 8로케일 «구형 앱 축어» 갱신**(검수장 권고·경미·문안은 본체 몫 —
+   아래 회신·대기 참조. 🪶 랜딩 금지령의 전제였던 «왕복 진행 중»이 이 통지로 갱신 국면에 들어섬)
+3. **회차 6 EN 수정의 잔여 로케일 소급 묶음**(아래 미결 표 — es·de·ja·zh·zh-hant·id)
+4. 🟠 zh·ja 랜딩 JSX 공백 소급 별건 · 판단 대기 표 0~6
 
 > 🪶 솔버 랜딩은 **9개**(앱 9언어와 1:1). `/fr/solver` 신설 완료(2026-08-25) ·
 > 뱅크 = `docs/keyword-bank/fr-gto-solver.md` · 절차 정본 = `docs/solver-landing-playbook.md`
 > (⚠ 플레이북 머리의 «8언어·zh-hant가 마지막» 서술은 낡았다 — 다음에 열 때 9언어로 갱신).
 
-## 🔀 다음 갈래 — **B만 남았다** (A는 2026-08-26 완결)
+> 🪶 pt 표기 정본은 이제 **`docs/translation-terms-pt.md` §1이 정본**이다(회차 6에서 bolha·
+> risk premium·Modelo Independente de Fichas·o EPT·pay jump·entradas·Taipé·equity de premiação
+> 7행 등재). 핸드오프에 목록을 다시 쌓지 않는다. 확정 결정(bolha·cash game 필라 태그 이관 예약)은
+> `docs/settled-decisions.md` §1.
 
-> 기준: **«무엇을 쓸지 정해져 있으면 Opus, 무엇을 쓸지 정해야 하면 Fable».**
-> 경화 회차는 번역처럼 보이지만 SERP 의도 판정·롱테일 재조준·태그 카니발 해소가 본체라 **판정 작업**이다.
-> (내가 pt 회차 2를 Opus로 추천했다가 정정받았다 — 축어: *«pt2회차는 fable로 해야된다며? 판단이 들어가는부분이라»*)
-
-| 갈래 | 작업 | 모델 |
-|---|---|---|
-| ~~**A**~~ | ~~비한국어 «메타 4종 + 스킵링크»~~ **✅ 완결** — 실측 **541**페이지(537 아님) · 커밋 `551f1325`·`ac5ae041`·`d389887c`·`f12ae9e2`·`ac5decf2` + 후속 `0aec8bf9`(WebSite JSON-LD)·`5764a0b4`(피드 화살표 aria-label) · 게이트 5종 → **15종**(셀프테스트 20/20) · 경위 = WORKLOG 「2026-08-25 (7)」·「2026-08-26」. ⚠ **미결 2건이 아래 표에 남아 있다**(`사이트 메뉴` 라벨 · 게이트가 프로덕션에서 안 돎) | — |
-| **B** | **pt 경화 — ✅회차 1~5 완결(rules·rankings·odds·strategy·glossary = 33편) · 다음 = 회차 6(tournament 9, 마지막)** — 아래 상세 | **Fable**(본체)+**Opus**(렌즈) |
-
-🔴 **두 갈래 모두 랜딩(`app/*/solver`)을 건드리지 마라** — 검수장과 왕복이 진행 중이고
-M-064에서 게이트 9편 118주장이 «OK 100% · 미해결 0»으로 확정됐다. 지금 손대면 기준선이 어긋난다.
-(그래서 「zh·ja 랜딩 JSX 공백 소급」도 이 왕복이 닫힌 뒤에 연다.)
-
----
-
-**▶ 갈래 B 상세 = 🔴 pt 경화 «회차 6: tournament 클러스터 9편 — 마지막» (회차 5 완료 2026-08-26 · 커밋 2a6f49d5)**
-
-**회차 1~5는 끝났다** — 경위 = WORKLOG 「2026-08-25 (3)」·「2026-08-26 (2)~(5)」. 회차 6 진행법:
-1. 대상 9편(42 − 33): tournament(필라) · tournament-vs-cash-game · icm · bubble · short-stack ·
-   apt-incheon-2026-guide · ept-barcelona-2026-guide · wpt-australia-2026-guide ·
-   korea-poker-marathon-2026. **뱅크 §0·§4 + 토너먼트 축 시드 통독 선행**(사장님 축어:
-   정면 금지·롱테일 진입) — 착수 시 라쿠 서제스트 + exa PAA 보완.
-2. 이벤트 4편은 **§14 EN verbatim 규율**(이벤트글 일관성 검수 교훈 — fact-instance 전수 diff) +
-   **apt-incheon 자산화**(8/16 종료 — 결과 아카이브 전환 예약 건) + 드리프트
-   apt-incheon 08-17<EN 08-18 해소. 수치·날짜·바이인은 [[primary-source-self-contradiction]]
-   계열 커밋 주석 확인 후 손댈 것.
-3. 남은 미결 중 이 회차 귀속분: /calculator 잔존(bubble 2·icm 2·short-stack 2 → /pt/solver 전환
-   검토) · 태그 `fold equity`(short-stack 쪽 제거)·`Paradise City`(apt↔marathon) ·
-   **pôquer 잔존 스윕**(tournament 31·bubble 11·icm 11·short-stack 10·vs-cash 8 + 이벤트 4편
-   58건 — 회차 5에서 제목·desc 포함 전체 스윕이 관례로 확정됨) · vs-cash `desc` 꼬리.
-4. 절차 = `REVIEW-PROTOCOL.md` 3층 게이트 · posting.mdc 필독 · **렌즈 5종 전부 Opus 지정** +
-   2차 교열 · EN 소급분은 발견 즉시 같은 커밋(대조는 **방향 없이**). 게이트 `--locale=pt`.
-   🔴 pt 콤마 소수점 = F13 미검사 → 수학 렌즈에 «파이썬 전수 재계산» 명시.
-   🔴 **PS 배치 치환 함정**(해시테이블 pair 평탄화 — 회차 4 사고): 파일별 개별 실행 또는 Edit.
-   🔴 회차 5 교훈: ① 같은 주장을 고칠 땐 **전 좌표를 grep 먼저**(산문만 고치고 표 셀을 남겨
-   2차 교열에서 2건 잡힘) ② 신규 사실 병기(제목·연도 등)는 삽입 즉시 원문 검증.
-5. **pt 클러스터 표기 정본**(회차 1~5 확정): 본문·제목·desc **poker**((?i) 재확인) ·
-   **street**(rua 금지) · 카드 나열 앞 **board**(남성 · 관용구 mesa 유지) · top pair · **wheel** ·
-   **«X full de Y»**(🆕 회차 5에서 네이티브 렌즈의 «full de ases com valetes» 제안 **기각** —
-   재론 금지) · **«regra do 2 e 4»**(본가 holdem-outs) · **conectores** · overcard 여성 ·
-   **os blinds**(남성) · **pré-flop/pós-flop** · **leak**(vazamento 금지) · 명사 call(동사 pagar) ·
-   set ou melhor(11,8%) · seco/molhado (dry)/(wet) 병기 가능 · 🆕 **distribuir**(repartir 금지) ·
-   **clube/sala**(cardroom·cassino 지양) · **suckout**(붙여쓰기) · 쿨러류는 영어 «X over X».
-
-**그다음 후보(지시 대기)**:
-- fr 전략 코퍼스 확장(랜딩 내부링크 보강 겸 — `docs/local-voice/fr-fr.md`·fr 뱅크 준비됨)
-- 🟠 zh·ja 랜딩 JSX 공백 소급 별건 · 판단 대기 표 0~6
+🔴 **랜딩(`app/*/solver`)은 M-067 이행 회차로만 연다** — 검수장이 S-007로 «앱 축어 기준선 =
+정정형»을 확정하고 8로케일 구형 축어 갱신을 권고해 왔다(문안은 본체 몫). 그 회차 밖에서는
+여전히 손대지 마라.
 
 ---
 
@@ -79,12 +44,12 @@ M-064에서 게이트 9편 118주장이 «OK 100% · 미해결 0»으로 확정�
 
 | 무엇 | 상태 |
 |---|---|
-| **M-065** (M-064 ④ 규율 이행 + ja 전제 정정 · `docs/reply-to-review-2026-08-25-m065.md` · 커밋 `3c9885cb`) | 회신 대기 — 🔴 **판정 요청 1건**: ja `solver-client.tsx` L206·L255의 앱 폐기 문구 원어 인용을 소급 의역할지. 의역하면 회귀 앵커 계수가 6→4로 강해지는데 **L255는 §13 논증의 도입부**라 «앱이 무엇을 잘못 썼는지»가 사라진다(앵커 강화 ↔ 논증 보존 상충). 나머지 4건(L257·258·260·262)은 폐기 문구가 아니라 **ja 코퍼스 용어 구조 정본**이라 규율 대상 아님으로 본체가 판정했다 |
+| **M-067** (검수장→본체 · 08-26 · S-007 기준선 갱신 회차) | 🔴 **이행 대기 — 착수 후보 2번.** ⑤(srp-monotone) **구형 앱 축어가 랜딩 8로케일에 잔존**(en·ja·es·pt·de·fr·zh·zh-hant 학습 스팟 note + ja는 본문 L802도 · ko는 자체 문안이라 무관) — 앱 `190d293`이 «사라진다»→«드물어진다» 완화형으로 정정했고 라이브 배포를 검수장이 md5로 독립 검증. **판정 = 권고(경미) · 문안(앱 신형 동조 vs 자체 문안 전환)은 본체 몫** + 절 헤더 «앱 축어 N» 계수 갱신. 대조표는 검수장 본문 파일 §2. M-068 §2에서 수신 확인·별건 회차 예고함 |
 | **솔버 통지 2026-08-24**(`docs/reply-to-solver-2026-08-24.md` — ④·⑦·⑧·⑩) | 회신 대기. **다시 보내지 마라.** 배포 통보 오면 번들 해시 한 줄로만 확인(`docs/mailbox-protocol.md` §4). 🔴 **다음 솔버 왕복 때 한 번에 얹을 것**(검수장 M-056이 일괄 동봉 계획에 동의): ①(RP-20 — **fr 확인으로 9/9 확정** · `docs/solver-app-verbatim-fr-2026-08-24.md`) · ④⑦⑧도 fr 결함형 확인(9/9) · ③ «13개 스팟 중» 하드코딩 권고 — 🆕 **9/9 전 언어 실측**(M-059 ② · 기존 «5~6언어» 집계는 과소였다) · **⑩ 절대형 — 🆕 앱 잔존 5언어(ko·zh·zh-hant·es + pt · M-059 ①로 pt 편입)** · **EN 해설 13편 완결(08-21) 통지 여부 확인**(앱 내 해설 링크 영어 전환용). ⚠ ④의 KO·EN 앱 문구 동일 여부는 미확인. 🪶 검수장이 **솔버 직통 우편함(S-001)·앱 9언어 전수 검수 계획**을 신설했다(08-25 커밋 `5b22ee6`·`a12938d`) — 솔버 왕복 전에 그쪽 계획과 중복 발신이 없는지 확인 |
 | **M-022** (K-ETA 4축 정정) | 🟡 재구성(08-24 아카이브 대조) — 회신은 기도착(M-029 §1 지시). **미이행 확인 필요**: «22» 분해형 4로케일(zh 「日本等 22 国」 · en 「and 16 more」 · es 「y 16 más」 · zh-hant 「及另外 16 國」)을 고쳤는지 실물 확인 후 닫아라 |
 | **de M-041 원장** | 반영 완료(쫓54+닫14) — M-048 재판정로 미해결 80→14(보류 11+잔여 3 반영 완료). 보류 건은 트리거 대기(APT 인천 종료 / EPT 8/29) |
 | 원장 갱신 요청 4건 (#100·#99 종결 · #100 로케일 수 de→6 · pt 새 행 · 총계 22 UNVERIFIABLE) | 검수장 처리 대기 |
-| **GOP 메인 바이인 `KRW 2,7 Mio.`** — 귀속 정정 + 값 재확정 | 🔴 **본체가 아직 못 보낸 답**이다. godsofpoker.com이 5월 대회만 실어 10/30~11/8 회차 1차가 없다. **GOP 1차를 새로 파면 #55가 한 번에 닫힌다**(events. 서브도메인 등 — [[data-hierarchy-mixing-error]]) |
+| **GOP 메인 바이인 `KRW 2,7 Mio.`** — 귀속 정정 답 **M-068로 발신(08-26)** | 회신 대기. 1차 실측(godsofpoker.com): Labyrinth Trail(10/30–11/8)은 시리즈 목록에만 있고 **바이인·스케줄 미공개**(events. 서브도메인은 DNS 미해석 — APT 것과 혼동 말 것) → **KRW 2,7M의 정당 귀속 = APT Jeju Main**(pt·EN «KRW 2.7M ≈ $1,800» 일치), de의 GOP 귀속은 정정 대상(de를 다음에 열 때 — 스케줄 공개 예상 9월 초는 update-calendar에 등재) |
 
 > 🧹 2026-08-24 정리(M-054 §3 권고 이행): M-052(→M-053 회신 도착·처리) · M-047 재판정(→M-048 종결) ·
 > M-043 ③(→M-046 이행) · M-020/M-021(→M-029 회신 존재) · M-030(→M-032 — ② 수용·목록 08-23 제작 완료) 행 삭제.
@@ -95,7 +60,7 @@ M-064에서 게이트 9편 118주장이 «OK 100% · 미해결 0»으로 확정�
 
 | 무엇 | 메모 |
 |---|---|
-| 🟠 pt 도구 링크 `/calculator`(KO 도구) 잔존 9곳 — bubble 2·icm 2·short-stack 2·starting-hands-chart의 `/hand-chart` 1 등 5파일 | rules 필라는 8ee6b047에서 `/pt/solver`로 교체 완료. 나머지는 **해당 클러스터 회차**(odds·tournament·strategy)에서 /pt/solver(Equity·Tabelas pré-flop 탭)로 전환 검토 |
+| 🆕 **회차 6 EN 수정의 잔여 로케일 소급 묶음** — ① ept Gold Pass 4요소(€1.100·€690): es·de·ja·zh·zh-hant·id 미이식(€690 출현 실측 en4·es4·ja4·zh4·zh-hant3 vs de2·id2) ② wpt 트로피 고유명·NSW 귀속·아젠다 12/36: `Perpetual` 보유 en·de·es·zh / **미보유 id·ja·zh-hant**(pt는 79341df8로 해소) ③ marathon «Oct–Dez» 제목: de·id 잔존 ④ EN 08-26 수정 8건(satellite stall·rebuy 정의·앤티 시점·10bb 포지션·홈칩 FAQ·hit-and-run 하우스룰·EPT 브레이크·apt 시제 2곳)의 타 로케일 거울 ⑤ EPT «진행 중» 배너는 EN·pt만(8/29 전환 때 일괄이 나음) | 각 로케일을 다음에 열 때 소급([[rehardening-stale-link-drift]]). 🔴 **masterUpdated가 «동기화됨»이라고 적혀 있어도 내용은 안 왔을 수 있다** — 회차 6에서 ept(07-25)·wpt(08-16)가 그 상태였다. 열 때 EN 커밋 diff로 실물 대조 |
 | 🆕 **회차 5 타 로케일 소급 묶음** — ① EN 5편(glossary·bad-beat·rake·straddle·fish) 08-26 갱신 → es·de·ja·zh·id 등 드리프트 발생 ② glossary 허브 역링크 누락(실측 zh 5/5 ✅·ja 4/5·es 1/5·de 0/5·id 0/5) ③ rake 라이브 캡 $4–$6→$3–$6 통일(EN·pt만 정정) | 각 로케일을 다음에 열 때 소급([[rehardening-stale-link-drift]] 패턴). pt·EN은 2a6f49d5로 완료 |
 | 🆕 rake «GGPoker는 일부 프리플롭 팟도 레이크» 주장 — 사업자·시점 종속(EN 상속·다로케일) | 딜러 렌즈 판정 유보 — GG 공식 레이크 표 라이브 재확인 후 유지/중립화. 서두르지 않아도 됨 |
 | 🆕 straddle «solvers abrem 15–20% menos no button» — GTO Wizard 귀속이 이 수치엔 안 걸려 있고 상대/절대 감소 중의적(EN 상속·다로케일) | 수학 렌즈 검증 불가 판정. 출처 원문 확인 시 명시·수정 |
@@ -103,7 +68,9 @@ M-064에서 게이트 9편 118주장이 «OK 100% · 미해결 0»으로 확정�
 | 🆕 pt vazamento↔leak 분열 — 정본은 leak인데 회차 5가 glossary 클러스터 3편만 전환, strategy는 **H2 제목·표 헤더까지 vazamento**(20+곳) | 잔여 스윕을 회차 6 뒤 별건으로 열지 판정. strategy H2는 태그·검색어와 얽혀 단순 치환 금지 |
 | 🆕 태그 어순 변형쌍 «bad beat vs cooler»(bad-beat)↔«cooler vs bad beat»(cooler) | 태그 아카이브 라우트가 없어 URL 카니발 없음(SEO 렌즈 실측) — 기록만, 조치 불요 후보 |
 | 🆕 EN 경쟁 페이지 언급 문구 잔존(rake:48 «no single competitor page» 등 3곳) — pt만 스타일 정리함 | EN도 지울지 판정(2차 교열이 분기 지적). 독자 노출 문구라 지우는 쪽 권장이나 EN 재검수 동반 |
-| 🟠 pt 코퍼스 태그 중복 잔여 2쌍 — ~~regra do 2 e 4 · pot odds · set mining~~(회차 3) · ~~quando dar 3-bet · quando foldar · quem age primeiro~~(회차 4 `adcffae4`) · `fold equity`(equity↔**short-stack** — short-stack 쪽 제거)·`Paradise City Casino pôquer`(apt-incheon↔korea-marathon)는 **회차 6** | 회차 2~4 SEO 렌즈 검출 |
+| 🆕 EN↔pt FAQ 개수 드리프트 — bubble EN 9↔pt 7 · short-stack 9↔7 · tournament 9↔8 · icm 8↔7 (수학 렌즈 관찰 · 수치 손실은 없음 — 빠진 43,9%/52,65%는 pt 본문에 실재) | pt를 다음에 열 때 EN FAQ를 이식할지 판정(재저작 원칙상 의도적 차이일 수도 — EN 경화가 나중에 추가한 FAQ들) |
+| 🆕 pt `flush-vs-straight`·`split-pot-rules` 2편만 masterUpdated 부재(게이트 🟠 추적불가 2) | rules·rankings 회차(1~2) 산물 — 해당 글을 다음에 열 때 EN 동기 시점 실측 후 등재 |
+| 🆕 tvc «Situação/Melhor encaixe» 표가 «Quando sair» H2 아래 있는데 내용은 포맷 적합성(뒤의 «filtro rápido» 표와 행 단위 중복) — EN 동형 | EN에서 먼저 판단 후 전 로케일(교열 렌즈 B-3 — 삭제·흡수 후보) |
 | 🆕 PDF 앵커 «9-max e 6-max lado a lado» 거짓 — **잔여 6로케일**(es·de·id·ja·zh·zh-hant) | EN·pt는 adcffae4에서 정정(PDF 실물엔 6-max 한 줄 규칙뿐 + 수치도 12/26/42→13/27/43 재생성). 각 로케일 재저작 문구라 해당 언어 열 때 소급 |
 | 🆕 shc «AQo/**AJo** conforme evolui» — EN 07-19가 AJo 삭제, pt 등 6로케일이 낡은 판 | **UTG 13% 구성 논쟁(사장님 판단 대기 #1)과 같은 갈래**라 임의 소급 안 함. #1 판정 시 함께 |
 | 🆕 pt «dar raise/deu raise»(cb 16곳) vs «aumentar»(나머지) 동사 혼재 | 네이티브 렌즈는 aumentar 통일 제안, 본체는 둘 다 BR 실사용이라 기각 — 코퍼스 단위 통일 여부는 후속 판정 후보 |
@@ -127,7 +94,7 @@ M-064에서 게이트 9편 118주장이 «OK 100% · 미해결 0»으로 확정�
 | ja 판단 대기 ① `ポーカー gtoとは`(170) | 뱅크는 `ja/holdem-strategy`에 양보시켰는데 그 글 H2 12개 전부 GTO 0회 — 양보가 명목뿐. 그 글 경화 시 GTO 축을 세우든지 랜딩이 가져오든지 판정 필요 |
 | ja 판단 대기 ② 사이트맵 solver 3종 hreflang 부재 | HTML에는 있음. 컨벤션 분열(tournaments `ko\|en\|ja` 무지역 vs solver `ko-KR\|…` 지역포함) — **넣으려면 표기 통일이 먼저.** 급하지 않다 |
 | ja 판단 대기 ③ 저자 소개 컴포넌트가 레포에 없다 | §13은 「WSOP·12년 경력」 소개를 전제하는데 `components/author*` 0개. ja SERP에서 note.com 개인 글이 이기는 이유가 저자 권위였다 — 다국어 도구 페이지에 필요한 자산일 수 있다 |
-| `desc` 🟠 꼬리 정보 11편 (KO 6 · es 3 · de 1 · pt 1) | 글 열 때 함께 |
+| `desc` 🟠 꼬리 정보 10편 (KO 6 · es 3 · de 1 — pt 1은 회차 6 tvc desc 재작성으로 해소) | 글 열 때 함께 |
 | ja `desc` 손대는 회차 | M-016 §4의 5 슬러그를 회신 목록에 포함(`ja/holdem-flush-vs-straight`·`holdem-kicker`·`holdem-limping`·`holdem-straddle`·`holdem-tournament-vs-cash-game`) |
 | `holdem-bubble #27` | 검수장이 룰 중립안으로 교체해 뒀다 — 그 글을 다시 열 때 닫아라 |
 | KO `apt-incheon` `$3.50` 스텝 위성 실재 여부 | Natural8 페이지가 시즌 종료로 다운 — **판정 불가.** 취소선 과거 기록 행 하나만 남았다. 서둘러 지우지 마라 |

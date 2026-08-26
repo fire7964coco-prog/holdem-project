@@ -1,3 +1,48 @@
+## 2026-08-26 (6) — pt 경화 회차 6: tournament 클러스터 9편 — pt 42/42 완결 (커밋 79341df8 · Fable+Opus 렌즈 6종)
+
+**대상**: tournament(필라) · tvc · icm · bubble · short-stack + 이벤트 4편(apt-incheon·ept·wpt·korea-marathon).
+렌즈 6종 전부 Opus(수학·딜러·SEO·교열diff·네이티브 + **EN 사실대조 렌즈 신설**) + 2차 교열(20건 검출·전건 반영).
+
+- **pôquer→poker 전면 스윕 120곳**(제목·seoTitle·desc·태그 포함 — 회차 5 관례) · **bubble→bolha 재조준**:
+  산문·제목·태그 전부 bolha(제목 «Como jogar a bolha no poker»), 기술용어(bubble factor·bubble boy·
+  on the bubble·stone/soft bubble)는 영어 유지 — settled-decisions §1 승격. «o bolha» BR 속칭 병기
+  (Bolavip·PokerNews BR 실사용 확인). 코퍼스 33편 잔존 0 실측(SEO 렌즈)
+- **tvc 전면 재경화**: 06-11 초기 번역본이 EN 07-03 FAQ·07-11 리트로핏(266줄)·07-19 경화를 전부 놓친
+  상태였다(updated 필드만으론 안 보임 — 생성 커밋 추적으로 판정). EN 구조 이식 재저작: 신규 H2 3종
+  («O que é um cash game»·«mais difícil?»·«Quando sair») + FAQ 6→10 + hero image + 태그 재조준
+  (`cash game poker como funciona` 자동완성 실측). H2↔FAQ 20개 EN 1:1(교열 렌즈 실측)
+- 🔴 **EN 사실대조 렌즈가 masterUpdated 허위 동기 2건 검출**: ept(07-25로 적었는데 973144bc Gold Pass
+  4요소 미이식 — tldr·바로답·표·FAQ·예산표 5곳) · wpt(08-16인데 910f6f92 딥서치 정정 미이식 —
+  **트로피 고유명 오류**(Prime 우승자에게 Champions Cup을 줌 → Prime Perpetual Trophy/Mike Sexton
+  Champions Cup) · NSW 귀속(폐기된 Casino Control Act 잔존→cash-handling reforms+일몰+carded) ·
+  아젠다 «완전한 일정»→«12/36 하이라이트»+starpoker 링크). marathon: set–dez·표 상태셀 2곳·
+  «50.000 fãs»(EN은 sold-out — 근사→정밀 승격 금지 위반) 정정. **apt는 특별확인 3종 전부 통과 0건**
+- **딜러 렌즈(WSOP 2026 PDF 축어 재확인)**: hand-for-hand 126.a/c «수정 금지» 판정 + 🔴 새틀라이트
+  «매 핸드 stall» 조언이 WSOP 페널티 조항과 정면 충돌 → 재작성(EN 동반) · rebuy 정의 3층(표·본문·FAQ)
+  정합 · 앤티 시점 타임라인이 자기 블라인드 표와 모순 → 이동 · 홈게임 칩 FAQ가 cash 질문에 토너식 답 →
+  재작성 · 🔴 **wpt 송금 박스 pt 단독 자기모순**(공개 시트만 쓰라면서 개별 계좌를 요청하라) 제거
+- **수학 렌즈 파이썬 전수 재계산 불일치 0**: ICM 재귀표·딜표·BF표(1,875/1,9841 실계산 재현)·43,9%·
+  22vsAKo 52,65%(2,054만 회 전수) + WPT Seminole 페이아웃 사다리 합산($4,592,000 정확)·TDA RP-8·
+  arXiv 2506.00180(2025 ICM 실증 연구 실존 확인). ★렌즈 스스로 WebFetch 환각(«181자리») 잡고
+  Playwright 재실측 — §12-B 실증
+- **네이티브 렌즈**: 🔴 BSOP 개최지 정정(내가 넣은 «clubes»가 오류 — 리조트/컨벤션, bsop.com.br 근거) ·
+  «Assento WC»=변기 시트 → World Championship · **o EPT 남성 통일**(SuperPoker 실사용 · ept 파일 전수
+  스윕) · WPT 비자표 브라질 콜아웃 신설(subclass 600) · 직역투 30여 건(dêem→deem 맞춤법 · torno→cerco ·
+  abri-e-foldei 등) · Title Case 헤딩 → 문장형(이벤트 3편) · 소수점 미국식 잔재($2.7M→$2,7M) ·
+  기각: «WSOP LIVE» 앱명 의심(68fa9ae9 확정 정본 — 검수자도 틀린다)
+- **재조준**: /calculator→**/en/calculator** 6곳(EN 패리티 — 솔버엔 ICM 탭이 없어 앵커 약속 위반이라
+  기각) + «(em inglês)» 표기 · 태그 카니발 4쌍 해소 · 시드 10 편입(regras de torneio·maior torneio FAQ·
+  reta final·BSOP 앵커·tabela push fold·icm calculadora·quantos big blinds) · APT 앵커 5곳 «guia»→결과형 ·
+  ept·marathon seoTitle 45자 내 단축(+브랜드 15자 절삭 실측) · EPT «진행 중» 배너(EN·pt)
+- **GOP #55 1차 실측**: godsofpoker.com 시리즈 목록에 Labyrinth Trail(10/30–11/8) 있으나 바이인·스케줄
+  미공개(9월 초 공개 예상 — 2차) → «KRW 2,7 Mio.» 정당 귀속은 APT Jeju Main(pt·EN 일치), de GOP 귀속은
+  정정 대상. M-068로 발신
+- **2차 교열 20건**: marathon 신규 문장이 «JTBC 열림» 사실과 자기부정(F1) · rebuy FAQ 미수정(F3) ·
+  stall 불릿 자기모순(F4·F5) · ept 배너↔«지금 예약» 충돌(F6) · tvc 직답 3중 축어중복(F11) · 홈칩 전제
+  붕괴(F12) 등 — 수정이 결함 주입 공정임을 6회차 연속 실증
+- EN 같은 커밋 소급 5편(bubble·tournament·tvc·ept·apt — updated 08-26·pt masterUpdated 동기).
+  잔여 6로케일 소급은 핸드오프 미결로. 게이트 pt 42/42·en 56/56 🔴 0 · 드리프트 0 · 빌드·배포 확인
+
 ## 2026-08-26 (5) — pt 경화 회차 5: glossary 클러스터 6편 · EN 드리프트 이식 + 렌즈 최다급 검출 (커밋 2a6f49d5)
 
 **대상**: glossary · bad-beat · cooler · fish · rake · straddle. 렌즈 5종(수학·딜러·SEO·교열·네이티브)
