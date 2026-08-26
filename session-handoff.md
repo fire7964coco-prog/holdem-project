@@ -38,6 +38,21 @@ ept Gold Pass 4요소(€1.100·€690), NSW 귀속, 아젠다 12/36. EN·pt는 
 | 8 | ar hi ms tr vi | **필라 일부만** — 포스팅 트랙 미착수 |
 | 6 | bn fa fil fr he it pl ro ru sw th uk | **필라 일부만** — 포스팅 트랙 미착수 |
 
+**🗂 세션 분할 계획 (2026-08-26 확정 · 컨텍스트 품질 보호 — 1세션 1구획, 순서 고정)**
+각 세션은 자기 행 하나만 한다. 끝나면 해당 행에 ✅와 커밋 해시를 적는다.
+
+| 세션 | 트랙 | 대상 | 비고 |
+|---|---|---|---|
+| 1 | A | es + de 드리프트 소급 | 미결 표 «회차 5·6 소급 묶음»의 es·de 몫 전부. marathon «Oct–Dez»는 de 잔존 |
+| 2 | A | zh + zh-hant 드리프트 소급 | 수정 내용 거의 동일이라 병행. wpt Perpetual은 zh-hant만 미보유 |
+| 3 | A | ja 드리프트 소급 (단독) | 몫이 가장 큼. 🔴 손댄 자리를 커밋 diff로 WORKLOG에 명시 — 이후 ja 43편 경화가 이 경계를 본다 |
+| 4 | B | id rules 6편 | beginners·game-order·betting-actions·blind-meaning·all-in·showdown (pt 8ee6b047 구획) |
+| 5 | B | id rankings 6편 | + hand-rankings hero `image`/`imageAlt` 복원(미결 표 참조) |
+| 6 | B | id odds 7편 | probability·outs·pot-odds·implied·drawing·equity·card-counting |
+| 7 | B | id strategy 8편 | + PDF 앵커 «9-max/6-max» 거짓 id 소급. ⚠ shc AJo는 판단 대기 #1 — 소급 금지 |
+| 8 | B | id glossary 6편 | + 회차 5 드리프트 id 몫 흡수(glossary 역링크·rake 캡 $3–$6) |
+| 9 | B | id tournament 9편 | + 회차 6 드리프트 id 몫 흡수(Gold Pass·wpt·아젠다·EN 8건 거울). 가장 무거운 회차 |
+
 **착수 전 필독**: `REVIEW-PROTOCOL.md` · `.cursor/rules/posting.mdc` · 모델 분담은
 `docs/settled-decisions.md` **§5-A**(본체=Fable · 렌즈=Opus — **방향 뒤집지 마라**).
 🔴 **`masterUpdated`가 «동기화됨»이어도 내용은 안 왔을 수 있다** — 회차 6에서 ept·wpt가 그랬다.
