@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Limping is entering a pot preflop by just calling the big blind instead of raising or folding. Open-limping (being first in) is almost always a mistake — you can't win the pot preflop, you give up initiative, and good players punish you. But limping isn't always wrong: completing the small blind, over-limping speculative hands behind other limpers, and some live and short-stack spots are legitimate exceptions.",
   category: "strategy",
   date: "2026-07-05",
-  updated: "2026-08-11",
+  updated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🚶",
@@ -129,7 +129,7 @@ The fix is refreshingly simple: **raise or fold as your default, and reserve lim
 
 One honest caveat, because context changes everything. In **online and tougher games**, open-limping is close to indefensible — the fields are aggressive, someone will iso-raise you almost every time, and the GTO baseline is essentially "don't open-limp in a normal 100bb game" — outside the small blind, where completing stays defensible for the reasons above.
 
-In **very passive live low-stakes games**, it's a different world. If the table routinely lets limpers see cheap flops and nobody punishes them, open-limping speculative hands from early position is far less costly — you're not being isolated, and you get to realize equity with hands that would rather not face a raise. It's still not *optimal*, but the penalty is small, and set-mining in a family pot can print money. Read your table: the softer and more passive the game, the more limping you can get away with; the tougher the game, the more strictly you should raise or fold.
+In **very passive live low-stakes games**, it's a different world. If the table routinely lets limpers see cheap flops and nobody punishes them, limping along with speculative hands costs far less — you're not being isolated, and you get to realize equity with hands that would rather not face a raise. It's still not *optimal* — and open-limping from early position stays the worst version of it — but the penalty is small, and set-mining in a family pot can print money. Read your table: the softer and more passive the game, the more limping you can get away with; the tougher the game, the more strictly you should raise or fold.
 
 ---
 

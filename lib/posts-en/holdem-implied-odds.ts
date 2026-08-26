@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Implied odds are the extra chips you expect to win on later streets when your draw hits. They let you profitably call a draw that pot odds alone say to fold — but only if stacks are deep and your opponent will actually pay you off.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-08-12",
+  updated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "💰",
@@ -67,7 +67,7 @@ The practical rule: **start with pot odds.** If your equity already beats the pr
 Written cleanly, with ==g:x== as the extra money you must win when you complete:
 
 :::steps
-Find your hit chance | Count outs, convert to a percentage (the [Rule of 4 and 2](/en/blog/holdem-pot-odds) gets you close)
+Find your hit chance | Count outs, convert to a percentage (the [rule of 2 and 4](/en/blog/holdem-outs) gets you close)
 Divide your call by that hit chance | This is the total you need to win to break even
 Subtract the current pot **plus your own call** | What's left is the extra you must win later — that's your ==g:x==
 Judge if it's realistic | Deep stacks + a payoff-happy opponent = yes. Short stacks or a scary board = no

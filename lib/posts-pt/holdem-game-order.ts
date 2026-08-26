@@ -15,7 +15,7 @@ export const POST: Post = {
   emoji: "🎬",
   image: "/images/blog-holdem-game-flow.webp",
   imageAlt: "Diagrama da ordem do jogo no Texas Hold'em — as seis etapas: blinds, pré-flop, flop, turn, river e showdown",
-  tags: ["ordem do poker", "ordem de jogadas poker", "flop turn river", "pre-flop flop turn river", "rodadas de apostas no poker", "quem age primeiro no poker", "como funciona uma mao de poker", "regras do dealer poker"],
+  tags: ["ordem do poker", "ordem de jogadas poker", "flop turn river", "pre-flop flop turn river", "rodadas de apostas no poker", "como funciona uma mao de poker", "regras do dealer poker"],
   content: `
 Todo mundo que senta pela primeira vez numa mesa de Texas Hold'em faz a mesma pergunta: ==r:*"Peraí — de quem é a vez, e quando eu coloco fichas no meio?"*== Você sabe que recebe cartas. O que você não sabe é quando apostar, quando saem mais cartas e como o vencedor é decidido de verdade.
 

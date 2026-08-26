@@ -3,18 +3,19 @@ import type { Post } from "../posts";
 export const POST: Post = {
   slug: "holdem-strategy",
   title: "Estratégia de Texas Hold'em: as 5 decisões por trás de toda mão vencedora",
-  seoTitle: "Por que 'dicas' de pôquer nunca colam — estratégia em 5 decisões",
-  desc: "Pôquer vencedor não são dez dicas soltas — são as mesmas cinco decisões toda mão: posição, seleção de mãos, aumentar ou foldar, c-bet e quando largar.",
+  seoTitle: "Por que dicas de poker não colam — estratégia em 5 decisões",
+  desc: "Poker vencedor não são dez dicas soltas — são as mesmas cinco decisões toda mão: posição, seleção de mãos, aumentar ou foldar, c-bet e quando largar.",
   tldr: "Toda decisão vencedora no Texas Hold'em se resume a cinco perguntas que se repetem: onde estou sentado (posição), essa mão vale a pena jogar, eu aumento ou foldo (nunca dou limp), continuo apostando no flop, e quando eu largo a mão? Um jogador tight-aggressive que responde bem a essas cinco folda ~80% das mãos no pré-flop, joga com agressividade quando entra, e ganha de quase todo jogo casual — sem lista de dicas decorada.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-08-11",
+  updated: "2026-08-26",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
   image: "/images/holdem-strategy-hero.webp",
   imageAlt: "Um jogador concentrado pesando uma decisão numa mesa de Texas Hold'em de feltro verde, fichas e cartas comunitárias na frente dele no meio da mão",
-  tags: ["estratégia texas holdem", "estratégia de poker", "estratégia de poker para iniciantes", "como ganhar no texas holdem", "tight aggressive", "quando foldar no poker", "quando blefar", "quando dar 3-bet", "estratégia de c-bet"],
+  tags: ["estratégia de poker", "estrategia poker", "estratégia texas holdem", "estrategia gto poker", "tipos de range poker", "range polarizado", "tight aggressive"],
   content: `
 Nos meus primeiros dois anos eu fiz o que todo mundo faz: li as listas de dicas. "Dez dicas rápidas." "Nove regras essenciais." Eu conseguia recitar todas — jogue menos mãos, seja agressivo, respeite a posição — e mesmo assim *continuava* perdendo. O problema não era que as dicas estavam erradas. É que eram um monte de regras soltas sem nada ligando uma à outra, então na mesa, na hora, eu não fazia ideia de qual aplicar.
 
@@ -27,17 +28,17 @@ O que finalmente me tornou um jogador vencedor não foi uma lista mais longa. Fo
 :::stripe
 5 | Decisões que se repetem em toda mão
 ~80% | Mãos que um jogador tight-aggressive folda no pré-flop
-11,8% | Chance de um par na mão flopar uma trinca (≈1 em 8,5)
+11,8% | Chance de um par na mão flopar um set ou melhor (≈1 em 8,5)
 0% | Chance de um limp ganhar o pote antes do flop
 :::
 
 ---
 
-## Estratégia de pôquer não é uma lista de dicas — são cinco decisões
+## Estratégia de poker não é uma lista de dicas — são cinco decisões
 
-Abra qualquer artigo de "estratégia de pôquer para iniciantes" e você recebe uma listinha numerada: dez dicas, nove regras, sete hábitos. Elas não estão *erradas* — mas uma lista é a pior forma de aprender, porque o jogo não te entrega um cardápio numerado. Ele te entrega uma cadeira, duas cartas e uma aposta para reagir.
+Abra qualquer artigo de "estratégia de poker para iniciantes" e você recebe uma listinha numerada: dez dicas, nove regras, sete hábitos. Elas não estão *erradas* — mas uma lista é a pior forma de aprender, porque o jogo não te entrega um cardápio numerado. Ele te entrega uma cadeira, duas cartas e uma aposta para reagir.
 
-Então, em vez de uma lista, use uma **espinha de decisões**. Toda mão que você joga passa pelas mesmas cinco perguntas, na mesma ordem. Cada uma tem um manual dedicado neste site — este hub é o mapa que conecta todas:
+Então, em vez de uma lista, use uma **espinha dorsal de decisões**. Toda mão que você joga passa pelas mesmas cinco perguntas, na mesma ordem. Cada uma tem um manual dedicado neste site — este hub é o mapa que conecta todas:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -59,7 +60,7 @@ A mágica não está em nenhuma decisão isolada — está em como elas *se enca
 
 ![Um jogador no botão do dealer com cartas e fichas no feltro verde, a cadeira que age por último em cada street depois do flop](/images/holdem-button-position-hero.webp "O botão age por último em todas as streets pós-flop — a cadeira mais lucrativa da mesa")
 
-Antes mesmo de olhar suas cartas, a informação mais importante já está definida: **sua cadeira.** No Hold'em, o jogador que age *por último* depois do flop tem uma vantagem enorme — ele vê o que todo mundo faz antes de comprometer uma ficha. É por isso que o [botão](/pt/blog/holdem-position-play "thumb:/images/holdem-button-position-hero.webp") é a cadeira mais lucrativa do jogo e os blinds são as menos.
+Antes mesmo de olhar suas cartas, a informação mais importante já está definida: **sua cadeira.** No Hold'em, o jogador que age *por último* depois do flop tem uma vantagem enorme — ele vê o que todo mundo faz antes de comprometer uma ficha. É por isso que o [botão](/pt/blog/holdem-position-play "thumb:/images/holdem-button-position-hero.webp") é a cadeira mais lucrativa do jogo e os blinds, as piores.
 
 Agir por último te permite fazer três coisas que ninguém em posição inicial consegue:
 
@@ -73,13 +74,13 @@ A regra prática que sai disso: **jogue mais mãos em posição tardia e menos e
 
 ## Decisão 2 — Essa mão vale a pena jogar? (Seleção de mãos)
 
-O maior vazamento do pôquer é jogar mãos demais. Iniciantes pagam com qualquer ás, quaisquer duas figuras, quaisquer duas cartas do mesmo naipe — e depois passam o resto da mão em apuros. A correção é a habilidade menos glamourosa do jogo e a mais lucrativa: **folde a maior parte do que te deram.**
+O maior vazamento do poker é jogar mãos demais. Iniciantes pagam com qualquer ás, quaisquer duas figuras, quaisquer duas cartas do mesmo naipe — e depois passam o resto da mão em apuros. A correção é a habilidade menos glamourosa do jogo e a mais lucrativa: **folde a maior parte do que te deram.**
 
 Quanto é "a maior parte"? Um bom iniciante [tight-aggressive](/pt/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") folda **cerca de 80% das mãos antes do flop.** Isso soa absurdamente apertado até você internalizar o motivo: as mãos que você *de fato* joga são, na média, mais fortes que as dos adversários, então você ganha os potes que importam e pula os spots marginais que sangram fichas em silêncio.
 
 Quais mãos entram na conta depende da sua posição (a Decisão 1 alimentando a Decisão 2), mas uma regra de bolso pra começar:
 
-- **Sempre aumente:** pares grandes (A‑A, K‑K, Q‑Q, J‑J) e A‑K.
+- **Sempre aumente:** pares grandes (de A‑A a T‑T) e A‑K.
 - **Geralmente aumente:** pares médios, A‑Q e broadways fortes do mesmo naipe (K‑Q, A‑J suited) — mais livremente quanto mais tarde a sua cadeira.
 - **Especulativas, dependentes de posição:** pares pequenos e suited connectors, que querem potes multiway baratos (mais da matemática abaixo).
 - **Folde:** quase todo o resto, especialmente lixo de naipes diferentes como J‑4, Q‑7, K‑3.
@@ -90,27 +91,27 @@ O [starting hands chart](/pt/blog/holdem-starting-hands-chart) transforma isso n
 
 ## Decisão 3 — Aumentar ou foldar. Nunca só dar limp.
 
-![Infográfico de um botão de dealer dourado, duas hole cards viradas para baixo e um flop K♦ 7♣ 2♠ — o botão age por último pós-flop](/images/holdem-button-dealer-board.webp "Dar open-limp convida um pote multiway inflado sem iniciativa — aumente para ganhar agora, ou folde e espere um spot melhor")
+![Infográfico de um botão de dealer dourado, duas cartas fechadas viradas para baixo e um flop K♦ 7♣ 2♠ — o botão age por último pós-flop](/images/holdem-button-dealer-board.webp "Dar open-limp convida um pote multiway inflado sem iniciativa — aumente para ganhar agora, ou folde e espere um spot melhor")
 
 Depois de decidir que uma mão vale a pena jogar, tem uma segunda decisão que a maioria dos iniciantes erra: *como* entrar no pote. A resposta, quase sempre, é **aumentar — não dar limp.**
 
-Dar [limp](/pt/blog/holdem-limping) é só igualar o big blind em vez de aumentar. Parece seguro e barato, e é um dos hábitos mais caros do pôquer, por três motivos:
+Dar [limp](/pt/blog/holdem-limping) é só igualar o big blind em vez de aumentar. Parece seguro e barato, e é um dos hábitos mais caros do poker, por três motivos:
 
 1. **Um limp nunca ganha o pote no pré-flop.** Quando você aumenta sendo o primeiro a entrar, todo mundo pode foldar e você abocanha os blinds de graça. Dê limp e essa chance é exatamente **zero** — você jogou fora a forma mais limpa de ganhar.
 2. **Você entrega a iniciativa.** Quem aumentou no pré-flop continua contando uma história no flop (Decisão 4). Dê limp e você entrega essa história para outra pessoa.
-3. **Você pinta um alvo em você mesmo.** Jogadores fortes aumentam grande atrás de um limper para isolá-lo, e depois passam a mão inteira jogando melhor em posição. Um open-limp anuncia "jogador fraco e passivo aqui".
+3. **Você pinta um alvo nas suas costas.** Jogadores fortes aumentam grande atrás de um limper para isolá-lo, e depois passam a mão inteira jogando melhor em posição. Um open-limp anuncia "jogador fraco e passivo aqui".
 
-O padrão que corrige isso é direto: **se a mão é boa o suficiente para jogar, é boa o suficiente para aumentar; se não é, folde.** E quando *outra* pessoa já aumentou, aumentar de novo — um [3-bet](/pt/blog/holdem-3bet "thumb:/images/holdem-3bet-hero.webp") — é como você pune aberturas largas e constrói potes com suas melhores mãos. As exceções a esse padrão de aumentar-ou-foldar são reais, e todas elas são sobre **preço**. O *over*-limp — pagar *atrás* de alguém que já deu limp, em posição, com uma mão especulativa como um par pequeno — compra um lugar barato num pote multiway. A maior é **defender o big blind**: contra uma abertura de 2,5bb você já tem ==1bb postado==, então paga 1,5bb num pote de 4bb e precisa de apenas ==1,5 ÷ 5,5 = 27%== de equity — e o seu call fecha a ação. Por isso boa parte do range do big blind paga em vez de dar 3-bet ou foldar. A terceira é o **set-mining** de um par pequeno contra um aumento com stacks profundos (a matemática está abaixo). Isso são descontos, não estratégias — fora de spots assim, aumentar ou foldar.
+O padrão que corrige isso é direto: **se a mão é boa o suficiente para jogar, é boa o suficiente para aumentar; se não é, folde.** E quando *outra* pessoa já aumentou, aumentar de novo — um [3-bet](/pt/blog/holdem-3bet "thumb:/images/holdem-3bet-hero.webp") — é como você pune aberturas largas e constrói potes com suas melhores mãos. As exceções a esse padrão de aumentar-ou-foldar são reais, e todas elas são sobre **preço**. O *over*-limp — pagar *atrás* de alguém que já deu limp, em posição, com uma mão especulativa como um par pequeno — compra um lugar barato num pote multiway. A maior é **defender o big blind**: contra uma abertura de 2,5bb você já tem ==1bb postado==, então paga 1,5bb num pote de 4bb e precisa de apenas ==1,5 ÷ 5,5 = 27%== de equity — e o seu call fecha a ação. (Na prática a barra é um pouco mais alta: fora de posição você não realiza 100% dessa equity.) Por isso boa parte do range do big blind paga em vez de dar 3-bet ou foldar. A terceira é o **set-mining** de um par pequeno contra um aumento com stacks profundos (a matemática está abaixo). Isso são descontos, não estratégias — fora de spots assim, aumentar ou foldar.
 
 ---
 
 ## Decisão 4 — Continuo apostando no flop? (O C-Bet)
 
-Você aumentou no pré-flop, alguém pagou, e agora o flop está aberto. É aqui que a maioria dos potes é de fato ganha e perdida — e a ferramenta é o [continuation bet (c-bet)](/pt/blog/holdem-continuation-bet "thumb:/images/holdem-continuation-bet-hero.webp"): apostar no flop depois de ter sido quem aumentou no pré-flop, tendo o board ajudado você ou não.
+Você aumentou no pré-flop, alguém pagou, e agora o flop está aberto. É aqui que a maioria dos potes é de fato ganha e perdida — e a ferramenta é a [continuation bet (c-bet)](/pt/blog/holdem-continuation-bet "thumb:/images/holdem-continuation-bet-hero.webp"): apostar no flop depois de ter sido quem aumentou no pré-flop, tendo o board ajudado você ou não.
 
 O c-bet funciona porque *você* é quem representou força no pré-flop, então o board "pertence" a você. Mas eis o erro a evitar: **não existe uma única porcentagem de c-bet correta.** O conselho antigo dizia "aposte quase todo flop". A estratégia moderna diz que depende de três coisas:
 
-- **Posição** — em posição num board seco de carta alta (digamos K‑7‑2), você pode dar c-bet com frequência; fora de posição a frequência cai bastante porque você tem menos informação e menos fold equity. As faixas concretas estão no [guia de c-bet](/pt/blog/holdem-continuation-bet).
+- **Posição** — em posição num board seco («dry») de carta alta (digamos K‑7‑2), você pode dar c-bet com frequência; fora de posição a frequência cai bastante porque você tem menos informação e menos fold equity. As faixas concretas estão no [guia de c-bet](/pt/blog/holdem-continuation-bet).
 - **Textura do board** — boards secos que erram o adversário favorecem apostar; boards molhados e conectados (9‑8‑7 com duas do mesmo naipe) que acertam ranges de pagador pedem cautela.
 - **Número de adversários** — heads-up você pode apostar livremente; contra dois ou mais pagadores, dê c-bet **menos da metade** das vezes, porque alguém conectou com *alguma coisa*.
 
@@ -120,11 +121,11 @@ Sobre sizing, uma aposta pequena de **25–35% do pote** funciona quando você e
 
 ## Decisão 5 — Quando eu foldo? (A decisão que economiza mais dinheiro)
 
-![Infográfico visto de cima de uma mesa de Hold'em com um board completo K♦ 7♣ 2♠ 9♥ 3♦, pilhas de fichas e o botão do dealer](/images/holdem-pub-players-table.webp "A jogada mais lucrativa do pôquer é a que ninguém repara — foldar uma mão vencida antes que ela te custe um stack")
+![Infográfico visto de cima de uma mesa de Hold'em com um board completo K♦ 7♣ 2♠ 9♥ 3♦, pilhas de fichas e o botão do dealer](/images/holdem-pub-players-table.webp "A jogada mais lucrativa do poker é a que ninguém repara — foldar uma mão vencida antes que ela te custe um stack")
 
-Agressão ganha potes. **Disciplina mantém stacks.** A decisão que separa jogadores empate-zero de vencedores não é um hero call ou um blefe genial — é o ato chato e repetido de foldar quando você está vencido.
+Agressão ganha potes. **Disciplina mantém stacks.** A decisão que separa jogadores que ficam no zero a zero de vencedores não é um hero call ou um blefe genial — é o ato chato e repetido de foldar quando você está vencido.
 
-Aqui vai um concreto de uma mão que joguei. Aumentei ==A♣K♣== e peguei um pagador. O flop veio ==2♥ 7♦ 9♠== — miss total. Tenho ás alto, sem par, sem projeto. Disparo um c-bet (Decisão 4, em posição, board seco), e meu adversário me dá check-**raise**. Nesse ponto a matemática é simples: tenho a melhor carta alta possível e mais nada, e um check-raise nesse board quase nunca é um blefe em stakes baixas. Então eu foldo o ás alto e perco o mínimo. Dois anos antes eu teria "só pagado para ver" — e pagado uma trinca de noves toda vez.
+Aqui vai um exemplo concreto de uma mão que joguei. Aumentei ==A♣K♣== e peguei um pagador. O flop veio ==2♥ 7♦ 9♠== — miss total. Tenho ás alto, sem par, sem projeto. Disparo um c-bet (Decisão 4, em posição, board seco), e meu adversário me dá check-**raise**. Nesse ponto a matemática é simples: tenho a melhor carta alta possível e mais nada, e um check-raise nesse board quase nunca é um blefe em stakes baixas. Então eu foldo o ás alto e perco o mínimo. Dois anos antes eu teria "só pagado para ver" — e pagado uma trinca de noves toda vez.
 
 A regra geral: **[quando a história que seu adversário está contando bate a mão que você de fato tem](/pt/blog/holdem-when-to-fold "thumb:/images/holdem-when-to-fold-hero.webp"), e você não tem odds para melhorar, largue.** Foldar uma mão boa mas vencida parece perder. Na verdade é o hábito mais lucrativo do jogo. Quando você *de fato* tem um projeto, a decisão de foldar ou pagar se resume a [pot odds](/pt/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") — o preço que você está pegando versus a chance de acertar.
 
@@ -136,7 +137,7 @@ Você não precisa ser matemático, mas dois números sustentam metade das suas 
 
 **Pot odds** te dizem se um call é lucrativo: compare o preço do call com o tamanho do pote, depois com a sua chance de acertar. Se o pote te oferece 4 para 1 e seu projeto fecha cerca de 1 em 5, pagar fica mais ou menos no empate; melhor que isso, é lucro. Esse é o motor por trás de todo spot de "eu persigo esse projeto?" — e o [guia de pot odds](/pt/blog/holdem-pot-odds) transforma isso numa leitura de tabela de 10 segundos.
 
-**Odds de set-mining** explicam por que pares pequenos são especulativos. Pague um aumento com um par de cincos na esperança de flopar uma trinca — three-of-a-kind — e você vai conectar só cerca de **11,8% das vezes, mais ou menos 1 em 8,5.** Quando funciona é lindo: flopar ==5♣ K♠ 2♦== com ==5♠5♦== e você tem uma trinca escondida que estaca um overpair. Mas como você erra ~88% dos flops, set-mining só é lucrativo quando os stacks efetivos são profundos o bastante para te pagar quando você acerta — um guia grosseiro é **pelo menos ~15–20× o tamanho do call.** Stacks curtos? Aquele call especulativo vira um vazamento. A [tabela completa de odds e probabilidade](/pt/blog/holdem-probability) tem todo número que você um dia vai precisar.
+**Odds de set-mining** explicam por que pares pequenos são especulativos. Pague um aumento com um par de cincos na esperança de flopar um set (ou melhor) e você vai conectar só cerca de **11,8% das vezes, mais ou menos 1 em 8,5.** Quando funciona é lindo: flopar ==5♣ K♠ 2♦== com ==5♠5♦== e você tem uma trinca escondida que estaca um overpair. Mas como você erra ~88% dos flops, set-mining só é lucrativo quando os stacks efetivos são profundos o bastante para te pagar quando você acerta — um guia grosseiro é **pelo menos ~15–20× o tamanho do call.** Stacks curtos? Aquele call especulativo vira um vazamento. A [tabela completa de odds e probabilidade](/pt/blog/holdem-probability) tem todo número que você um dia vai precisar.
 
 ---
 
@@ -168,7 +169,22 @@ Se as cinco decisões são o *o quê*, **tight-aggressive (TAG)** é o *como* �
 - **Tight** — você joga poucas mãos (Decisão 2). Você folda e folda e folda, e espera spots em que provavelmente está na frente.
 - **Aggressive** — mas quando você *de fato* joga, você entra aumentando e apostando (Decisões 3 e 4), não pagando. Você coloca os adversários em decisões, em vez do contrário.
 
-TAG funciona porque ataca os dois maiores vazamentos de iniciante de uma vez — jogar demais e jogar passivo demais — com a curva de aprendizado mais rasa de qualquer estilo vencedor. Não é o *ótimo* teórico; jogadores modernos fortes abrem para ranges mais agressivos (LAG) e balanceados. Mas como base com a qual você bate quase qualquer jogo casual, nada chega perto. Domine tight-aggressive primeiro, depois solte deliberadamente quando as cinco decisões forem segunda natureza.
+TAG funciona porque ataca os dois maiores vazamentos de iniciante de uma vez — jogar demais e jogar passivo demais — com a curva de aprendizado mais suave entre os estilos vencedores. Não é o *ótimo* teórico; jogadores modernos fortes abrem para ranges mais agressivos (LAG) e balanceados. Mas como base com a qual você bate quase qualquer jogo casual, nada chega perto. Domine tight-aggressive primeiro, depois solte deliberadamente quando as cinco decisões forem segunda natureza.
+
+---
+
+## O que é range no poker — e os termos que aparecem em toda análise
+
+**Um range é o leque inteiro de mãos com que um jogador chegaria até aquele ponto jogando daquele jeito** — em vez de adivinhar "duas cartas", você pensa em todas as combinações possíveis de uma vez. É a palavra mais usada da análise moderna, e quatro termos cobrem quase tudo o que você vai ler por aí:
+
+| Termo | O que significa | Onde aparece |
+|:---|:---|:---|
+| **Linear (merged)** | Um bloco sólido das melhores mãos, sem buracos | Aberturas padrão; 3-bets contra opens fracos |
+| **Polarizado** | Só mãos muito fortes + blefes — nada no meio | 3-bets dos blinds; apostas grandes no river e c-bets grandes em board molhado |
+| **Capado** | Um range sem as mãos mais fortes possíveis | Quem só paga (as premium teriam aumentado) |
+| **Vantagem de range** | Não é um formato — é qual range conecta melhor com um board específico | A base de toda decisão de [c-bet](/pt/blog/holdem-continuation-bet) |
+
+Montar o *seu* range por posição é o trabalho da [tabela de mãos iniciais](/pt/blog/holdem-starting-hands-chart); pensar no range *do adversário* é o que separa jogar as próprias cartas de jogar poker de verdade. E para ver ranges completos calculados spot a spot, o [solver do site](/pt/solver) mostra a grade 13×13 inteira, direto no navegador.
 
 ---
 
@@ -183,23 +199,23 @@ TAG funciona porque ataca os dois maiores vazamentos de iniciante de uma vez —
 
 A. Jogue um estilo tight-aggressive construído em torno de cinco decisões que se repetem: escolha mãos com base na sua posição, folde a maior parte do que te dão (cerca de 80% no pré-flop), entre nos potes aumentando em vez de dar limp, dê continuation bet no flop quando tiver a iniciativa, e faça folds disciplinados quando estiver vencido. Essa combinação bate quase todo jogo casual sem nenhuma teoria avançada.
 
-**Q. Qual a melhor estratégia de pôquer para iniciantes?**
+**Q. Qual a melhor estratégia de poker para iniciantes?**
 
-A. Tight-aggressive (TAG). Jogue poucas mãos, mas jogue com agressividade — aumente em vez de pagar, e folde rápido quando erra. Corrige diretamente os dois vazamentos mais comuns de iniciante (jogar mãos demais e jogar passivo demais) e tem a curva de aprendizado mais rasa de qualquer estilo vencedor. Comece por aí antes de experimentar abordagens mais soltas e avançadas.
+A. Tight-aggressive (TAG). Jogue poucas mãos, mas jogue com agressividade — aumente em vez de pagar, e folde rápido quando erra. Corrige diretamente os dois vazamentos mais comuns de iniciante (jogar mãos demais e jogar passivo demais) e tem a curva de aprendizado mais suave entre os estilos vencedores. Comece por aí antes de experimentar abordagens mais soltas e avançadas.
 
 **Q. Como se ganha no Texas Hold'em?**
 
 A. Você não ganha jogando mais mãos — ganha tomando decisões melhores nos mesmos cinco spots em toda mão: posição, seleção de mãos, aumentar ou foldar, c-bet e foldar. Vencedores foldam mais, aumentam mais e pagam menos que perdedores. Com o tempo, mãos iniciais mais apertadas e folds disciplinados significam que você ganha os potes grandes e perde os pequenos — que é o jogo inteiro.
 
-**Q. Quando você deve foldar no pôquer?**
+**Q. Quando você deve foldar no poker?**
 
-A. Folde quando a história que seu adversário está contando bate a mão que você de fato tem e você não tem as pot odds para continuar puxando o projeto. Concretamente: folde mãos fracas antes do flop, folde quando erra e enfrenta agressão de verdade, e folde projetos quando o preço está errado. Foldar uma mão boa mas vencida parece perder, mas é o hábito mais lucrativo do pôquer.
+A. Folde quando a história que seu adversário está contando bate a mão que você de fato tem e você não tem as pot odds para continuar puxando o projeto. Concretamente: folde mãos fracas antes do flop, folde quando erra e enfrenta agressão de verdade, e folde projetos quando o preço está errado. Foldar uma mão boa mas vencida parece perder, mas é o hábito mais lucrativo do poker.
 
-**Q. Quando você deve apostar vs. dar check no pôquer?**
+**Q. Quando você deve apostar vs. dar check no poker?**
 
-A. Aposte quando você tem uma mão que vale a pena construir um pote, ou um bom spot de blefe onde os adversários conseguem foldar — apostar ganha potes de duas formas (eles foldam, ou você tem a melhor mão). Dê check quando sua mão é marginal e você prefere manter o pote pequeno, quando está fora de posição sem plano claro, ou quando dar check te deixa armar uma cilada com uma mão forte. Como quem aumentou no pré-flop, um continuation bet no flop costuma ser seu padrão.
+A. Aposte quando você tem uma mão que vale a pena construir um pote, ou um bom spot de blefe onde os adversários conseguem foldar — apostar ganha potes de duas formas (eles foldam, ou você tem a melhor mão). Dê check quando sua mão é marginal e você prefere manter o pote pequeno, quando está fora de posição sem plano claro, ou quando dar check te deixa armar uma cilada com uma mão forte. Como quem aumentou no pré-flop, uma continuation bet no flop costuma ser seu padrão.
 
-**Q. Quando você deve blefar no pôquer?**
+**Q. Quando você deve blefar no poker?**
 
 A. Blefe quando a história é crível e seu adversário de fato consegue foldar — não só porque você errou. Os melhores blefes vêm com backup: um projeto (um semi-blefe) que ainda pode ganhar se pago, em posição, contra um adversário, num board que favorece o seu range. Blefar contra vários pagadores ou jogadores que nunca foldam é só tocar fogo no dinheiro.
 
@@ -214,6 +230,10 @@ A. Prefira aumentar a pagar sempre que tiver uma mão que vale a pena continuar.
 **Q. Quantas mãos você deve jogar no Texas Hold'em?**
 
 A. Bem menos do que parece natural. Um jogador tight-aggressive vencedor folda cerca de 80% das mãos antes do flop, jogando mais apertado em posição inicial e mais solto no botão. Se você está entrando em potes com mais de uma em cada cinco mãos, quase certamente está jogando demais — apertar é a forma mais rápida de melhorar.
+
+**Q. O que é estratégia GTO no poker?**
+
+A. GTO (Game Theory Optimal) é o jogo teoricamente perfeito que um solver calcula — ninguém consegue explorá-lo, mas ele vive de frequências mistas difíceis de executar. Para o iniciante, a ordem certa é dominar o framework tight-aggressive desta página primeiro e tratar GTO como ferramenta de estudo depois: os [spots já calculados do solver](/pt/solver) deixam você conferir a resposta sem instalar nada.
 
 **Q. O que significa tight-aggressive (TAG)?**
 

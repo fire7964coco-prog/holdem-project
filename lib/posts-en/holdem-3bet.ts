@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A 3-bet is the first re-raise before the flop — called a 3-bet because the big blind is the first bet, the open-raise the second, and your re-raise the third. Value-3-bet a tight core (QQ+, AK) plus a few suited blocker bluffs like A5s, size it around 3x the open in position and 4x out of position, and keep your overall 3-bet frequency near 6–10%. When you're the one facing a 3-bet, 4-bet your premiums, call the hands that play well, and fold the rest — folding more than 'balanced' against low-stakes players who never bluff.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-08-11",
+  updated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "♦️",
@@ -82,7 +82,7 @@ A winning 3-bet range has **two distinct parts**, and understanding the split is
 
 </div>
 
-Here's the blocker logic in one sentence: **holding an ace makes it mathematically less likely your opponent holds aces or ace-king**, so A5s is a far better bluff than, say, A9o — which blocks the same premiums but plays terribly when called and just makes weak pairs. Backup equity matters because your opponent won't fold every time; you want a bluff that can still win the pot. That's why A5s ≈ 28% equity against a QQ+/AK calling range, while offsuit junk sits well below it. This is the same [starting-hand](/en/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") discipline as always — just applied to re-raising.
+Here's the blocker logic in one sentence: **holding an ace makes it mathematically less likely your opponent holds aces or ace-king**, so A5s is a far better bluff than, say, A9o — which blocks the same premiums but plays terribly when called and just makes weak pairs. Backup equity matters because your opponent won't fold every time; you want a bluff that can still win the pot. That's why A5s ≈ 30% equity against a QQ+/AK calling range, while offsuit junk sits well below it. This is the same [starting-hand](/en/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") discipline as always — just applied to re-raising.
 
 ---
 

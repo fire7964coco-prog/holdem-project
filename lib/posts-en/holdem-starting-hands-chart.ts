@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Of the 169 starting hand types, only a small top slice — about 15–20% of the hands you're dealt — is profitable for a beginner. Big pairs (AA–TT) and AK raise from any seat; the later you act, the wider you open — from ~13% under the gun to ~43% on the button (wider again in 6-max). Start with a simplified chart, add GTO preflop charts once raise-or-fold is automatic.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-08-11",
+  updated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🂡",
@@ -208,7 +208,7 @@ The ==r:most expensive mistake beginners make is calling raises with weak aces==
 
 Charts only work if they're in front of you when it matters. For home games and study sessions, we made the whole thing printable:
 
-**[Download the free printable poker starting hands chart (PDF)](/downloads/poker-starting-hands-chart.pdf)** — one page, 9-max and 6-max opening ranges side by side, cheat-sheet format. Print it, or keep it open on your phone between hands.
+**[Download the free printable poker starting hands chart (PDF)](/downloads/poker-starting-hands-chart.pdf)** — one page: the full 9-max opening chart plus the one-line 6-max adjustment, cheat-sheet format. Print it, or keep it open on your phone between hands.
 
 Then use it literally, every hand, for your first 20+ sessions:
 
@@ -275,7 +275,7 @@ A. Not at first. GTO preflop charts use mixed frequencies designed to be unexplo
 
 **Q. Does being suited really matter?**
 
-A. Suited adds about 2–3% equity over the same offsuit hand — meaningful, but not a reason to play a bad hand. Two suited cards make a flush by the river only ~6.5% of the time (and a flopped flush draw completes about 35% of the time by the river). Suited trash is still trash.
+A. Suited adds about 2 percentage points of equity over the same offsuit hand (AKs is 67% against a random hand; AKo, 65%) — meaningful, but not a reason to play a bad hand. Two suited cards make a flush by the river only ~6.5% of the time (and a flopped flush draw completes about 35% of the time by the river). Suited trash is still trash.
 
 **Q. Should I always fold small pocket pairs like 22 or 33?**
 

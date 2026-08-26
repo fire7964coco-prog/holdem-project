@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Folding is the most underrated skill in poker — a fold's worst outcome is zero, while a losing call bleeds chips every time. A solid player folds around 75–85% of hands before the flop, releases missed hands and weak draws that don't meet their pot odds after it, and — hardest of all — lays down strong-but-beaten hands when a passive opponent's line screams value. Most players don't call too much because they can't read hands; they call because the chips already in the pot feel like theirs. They aren't.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-08-11",
+  updated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🛡️",
@@ -87,7 +87,7 @@ Close calls aren't a feeling — they're a fraction. To call a bet profitably, y
 
 </div>
 
-Now put it to work. Say you have a flush draw — nine cards complete it — with one card to come. Nine outs out of the 46 unseen cards is ==9 ÷ 46 ≈ 19.6%==, or about **4-to-1 against** hitting. (Quick shortcut: the [rule of 2](/en/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") — outs × 2 ≈ your percentage for one card, so 9 × 2 ≈ 18%.)
+Now put it to work. Say you have a flush draw — nine cards complete it — with one card to come. Nine outs out of the 46 unseen cards is ==9 ÷ 46 ≈ 19.6%==, or about **4-to-1 against** hitting. (Quick shortcut: the [rule of 2 and 4](/en/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp") — outs × 2 ≈ your percentage for one card, so 9 × 2 ≈ 18%.)
 
 - **The pot is $100 and your opponent bets $50 on the turn.** You call $50 to win $150 — that's 3-to-1, so you need **25%** equity. Your draw is only ~19.6%. ==r:Fold.== The price is wrong.
 - **Same draw, but they bet only $25 into $100.** Now you call $25 to win $125 — 5-to-1, needing just **16.7%**. Your ~19.6% clears it easily. ==g:Call.==
