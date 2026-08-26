@@ -1,7 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": "nextjs",
-  "buildCommand": "node scripts/check-hsl-tokens.mjs && node scripts/check-rangechart.mjs && node scripts/check-meta-length.mjs && next build && node scripts/patch-html-lang.mjs && node scripts/check-hreflang.mjs && node scripts/check-directives.mjs && node scripts/check-meta-lang.mjs",
+  "buildCommand": "npm run build:vercel",
   "devCommand": "next dev",
   "installCommand": "npm install",
   "crons": [

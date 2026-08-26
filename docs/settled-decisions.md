@@ -107,12 +107,23 @@
     한국어를 하드코딩하지 말고 `CHROME[locale]`에 문자열을 신설해 써라. ⚠ `menuOpen`처럼
     **동작 라벨**을 랜드마크 이름으로 재사용하지 마라 — 명사구여야 한다.
 
-- 🔴 **`vercel.json` `buildCommand` 정본 (2026-08-26)** — npm 훅(`prebuild`·`postbuild`)은
+- 🔴 **프로덕션 빌드 파이프라인 정본 (2026-08-26)** — npm 훅(`prebuild`·`postbuild`)은
   **프로덕션에서 안 돈다**(`buildCommand`가 명시돼 있어 Vercel이 `npm run build`를 안 부른다 ·
-  [[vercel-buildcommand-skips-npm-hooks]]). 그래서 게이트는 **여기에 직접** 적혀야 한다.
-  현재 순서(= `postbuild`와 동일하게 유지할 것):
+  [[vercel-buildcommand-skips-npm-hooks]]). 그래서 게이트는 **프로덕션이 실제로 부르는 자리**에
+  적혀야 한다. 그 자리는 이제 **`package.json`의 `build:vercel`** 이고,
+  `vercel.json`은 `"buildCommand": "npm run build:vercel"` 한 줄만 갖는다.
+  순서(= `postbuild`와 동일하게 유지할 것):
   `check-hsl-tokens → check-rangechart → check-meta-length → next build → patch-html-lang →
    check-hreflang → check-directives → check-meta-lang`
+  · ✅ `npm run build:vercel`은 `prebuild`·`postbuild`를 **부르지 않는다**(npm은 `prebuild:vercel`·
+    `postbuild:vercel`만 찾는다 — 실측 확인). 그래서 훅을 우회하는 성질은 그대로 유지된다.
+  · 🔴 **`buildCommand`는 256자가 한도다** — 공식 스키마(`https://openapi.vercel.sh/vercel.json`)의
+    `maxLength: 256`. 2026-08-26에 게이트 둘을 인라인으로 붙여 **266자**가 되자
+    **배포가 8초 만에 실패**했다(커밋 `cdaee49f`). 빌드가 시작조차 못 해서 **빌드 로그가 없고**,
+    GitHub 커밋 상태에만 «Deployment has failed»가 붙는다 — 로그가 없다고 원인을 못 찾는 게 아니라
+    **로그가 없다는 것 자체가 «설정 거부»라는 증거다**(정상 실패는 로그를 남긴다).
+    · 판별법: 커밋 시각과 실패 시각의 **간격**을 봐라. 몇 초면 설정, 몇 분이면 빌드다.
+    · 그래서 체인을 `package.json`으로 옮겼다 — 거기엔 길이 제한이 없어 이 함정이 재발하지 않는다.
   · **JSON이라 주석을 못 단다 — 그래서 이 항목이 그 주석 자리다.** 게이트를 빼려면 여기부터 고쳐라.
   · ⚠ **아직 안 들어간 것 2개**(둘 다 `prebuild`에만 있다 = 프로덕션 미실행):
     ① `check:intl-links` — `jiti`를 쓰는데 그게 **package.json에 없는 전이 의존성**이다(2.6.1).
