@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A 'fish' is poker slang for a weak, losing player the stronger players ('sharks') make their money from. Fish play too many hands, call too much, and can't fold — and the famous line warns that if you can't spot the fish at your table, you're it. It's the single most important read in the game: find the fish, or become one.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-08-11",
+  updated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🐟",
@@ -127,7 +127,7 @@ Here's the uncomfortable part. If you've read this far quietly hoping you're a s
 
 | | VPIP (hands played) | PFR (hands raised) | The read |
 |:---|:---:|:---:|:---|
-| **Solid player** | 15–22% | 12–18% | Tight, aggressive, close gap |
+| **Solid player** | 15–22% | 12–18% (never higher than their VPIP) | Tight, aggressive, close gap |
 | **Fish** | 40–70% | under 10% | Loose and passive — playing everything, leading nothing |
 | **Nit** | under 12% | under 8% | Too tight — predictable, not a fish |
 

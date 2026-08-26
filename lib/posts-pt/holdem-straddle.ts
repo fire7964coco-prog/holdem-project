@@ -2,24 +2,24 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "holdem-straddle",
-  title: "O que é straddle no pôquer? Regras, tipos e se você deveria",
-  seoTitle: "A aposta que dobra as paradas — o que é straddle no pôquer?",
-  desc: "O straddle é um blind voluntário que dobra as paradas antes das cartas. Veja as regras, cada tipo de straddle, quem age primeiro e se straddar dá lucro.",
-  tldr: "O straddle é uma aposta de blind opcional — normalmente o dobro do big blind — postada antes de as cartas serem repartidas. Ela compra pro straddler a última ação e a opção de aumentar no pré-flop, dobrando as paradas. Em quase todo caso é uma jogada -EV, permitida só em cash games conforme as regras da casa.",
+  title: "O que é straddle no poker? Regras, tipos e se você deveria",
+  seoTitle: "A aposta que dobra os blinds — o que é straddle no poker?",
+  desc: "O straddle é uma aposta voluntária que dobra os blinds antes das cartas. Veja as regras, cada tipo de straddle, quem age primeiro e se straddar dá lucro.",
+  tldr: "O straddle é uma aposta de blind opcional — normalmente o dobro do big blind — postada antes de as cartas serem distribuídas. Ela compra pro straddler a última ação e a opção de aumentar no pré-flop, dobrando os blinds do jogo. Em quase todo caso é uma jogada -EV, permitida só em cash games conforme as regras da casa.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-08-11",
-  masterUpdated: "2026-08-11",
+  updated: "2026-08-26",
+  masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "💰",
   image: "/images/holdem-straddle-hero.webp",
-  imageAlt: "Um jogador under the gun postando uma aposta de blind extra de duas fichas na frente do big blind antes de as cartas serem repartidas",
+  imageAlt: "Um jogador under the gun postando uma aposta de blind extra de duas fichas na frente do big blind antes de as cartas serem distribuídas",
   tags: ["straddle", "o que é straddle no poker", "regras do straddle no poker", "mississippi straddle", "button straddle", "sleeper straddle", "straddle dá lucro", "utg straddle"],
   content: `
-Na primeira vez que alguém deu um straddle na minha mesa de $1/$2, eu não fazia ideia de por que o cara under the gun jogou $4 antes de as cartas virem — e por que o dealer de repente começou a action uma cadeira adiante. Chamei aquilo de "a aposta do rico" por uns bons trinta dias antes de aprender o que ela realmente faz: um straddle ==dobra as paradas e compra pra um jogador a última palavra==, tudo antes de qualquer um ter olhado uma carta.
+Na primeira vez que alguém deu um straddle na minha mesa de $1/$2, eu não fazia ideia de por que o cara under the gun jogou $4 antes de as cartas virem — e por que o dealer de repente começou a action uma cadeira adiante. Chamei aquilo de "a aposta do rico" por uns bons trinta dias antes de aprender o que ela realmente faz: um straddle ==dobra os blinds e compra pra um jogador a última palavra==, tudo antes de qualquer um ter olhado uma carta.
 
-Se você já viu um jogo ao vivo em que um blind extra aparece do nada, é esse o termo que você procura. Abaixo está exatamente o que é um **straddle**, cada tipo que você vai encontrar, quem age primeiro quando ele é postado, e a resposta honesta pra única pergunta que importa: ==g:você deveria mesmo fazer isso?==
+Se você já viu um jogo ao vivo em que um blind extra aparece do nada, é esse o termo que você procura. É uma das entradas mais mal entendidas de todo o [glossário de poker](/pt/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp"), então vamos acertar em cheio. Abaixo está exatamente o que é um **straddle**, cada tipo que você vai encontrar, quem age primeiro quando ele é postado, e a resposta honesta pra única pergunta que importa: ==g:você deveria mesmo fazer isso?==
 
 ---
 
@@ -34,16 +34,16 @@ Só cash | Quase nunca permitido em torneios
 
 ---
 
-## O que é straddle no pôquer?
+## O que é straddle no poker?
 
-**Um straddle é uma aposta de blind voluntária — normalmente o dobro do big blind — postada antes de as cartas serem repartidas.** Num jogo de $1/$2 o jogador under the gun (logo à esquerda do big blind) pode largar $4 "no straddle", e o jogo passa na hora a rolar como uma mesa de $1/$2/$4 naquela mão.
+**Um straddle é uma aposta de blind voluntária — normalmente o dobro do big blind — postada antes de as cartas serem distribuídas.** Num jogo de $1/$2 o jogador under the gun (logo à esquerda do big blind) pode colocar $4 "no straddle", e o jogo passa na hora a rolar como uma mesa de $1/$2/$4 naquela mão.
 
 Duas coisas fazem disso mais do que só dinheiro extra no pote:
 
 - É um **blind vivo (live).** Exatamente como o big blind, o straddler comprou a **opção de aumentar** mesmo que todo mundo só pague — um "terceiro blind" com o direito de agir sobre ele.
-- É postado **às cegas.** Você dá o straddle *antes* de olhar suas cartas (na maioria das salas, antes mesmo de elas serem repartidas). Você está comprometendo dinheiro sem informação nenhuma, que é justamente por isso que costuma ser uma má ideia — mais sobre isso abaixo.
+- É postado **às cegas.** Você dá o straddle *antes* de olhar suas cartas (na maioria das salas, antes mesmo de elas serem distribuídas). Você está comprometendo dinheiro sem informação nenhuma, que é justamente por isso que costuma ser uma má ideia — mais sobre isso abaixo.
 
-Um straddle não é um aumento no sentido normal — é um blind que reseta o preço. Se você entende [o que são o small e o big blind](/pt/blog/holdem-blind-meaning "thumb:/images/holdem-blind-meaning-hero.webp"), um straddle é simplesmente um *terceiro* opcional que o jogador escolhe postar pra inflar as paradas e agarrar posição.
+Um straddle não é um aumento no sentido normal — é um blind que reseta o preço. Se você entende [o que são o small e o big blind](/pt/blog/holdem-blind-meaning "thumb:/images/holdem-blind-meaning-hero.webp"), um straddle é simplesmente um *terceiro* opcional que o jogador escolhe postar pra inflar o jogo e comprar posição.
 
 ---
 
@@ -54,14 +54,14 @@ Um straddle não é um aumento no sentido normal — é um blind que reseta o pr
 Essa é a parte que as páginas de definição pulam, e é onde os novatos se perdem. Um straddle **reorganiza a ordem de ação do pré-flop.** Acompanhe um jogo padrão de $1/$2 onde o UTG dá straddle pra $4:
 
 :::steps
-UTG posta o straddle | O jogador under the gun coloca $4 (2× o big blind de $2) antes de as cartas serem repartidas
+UTG dá o straddle | O jogador under the gun coloca $4 (2× o big blind de $2) antes de as cartas serem distribuídas
 Primeiro a agir = à esquerda do straddler | A action agora começa com o jogador à esquerda do straddler (UTG+1), não o UTG — o straddle age como um novo big blind
-Volta na mesa | Todo mundo tem que pagar $4 (não $2) pra jogar; podem foldar, pagar ou aumentar normalmente
+Volta na mesa | Todo mundo tem que pagar $4 (não $2) pra jogar; podem foldar, pagar ou aumentar — e o aumento mínimo agora é $8, o dobro do straddle, como sobre um big blind normal
 Os blinds decidem | O small e o big blind agem na sua vez, encarando o preço de $4
 O straddler age POR ÚLTIMO | Se ninguém aumentou, o straddler pode dar check na sua opção ou aumentar — a última palavra antes do flop
 :::
 
-Essa "última ação no pré-flop" é o que o straddler está pagando. Mas repare na pegadinha: pra um **straddle UTG, o privilégio da última ação é só no pré-flop.** Assim que o flop vem, a ordem de aposta volta ao normal — o small blind age primeiro, e o straddler está de volta a uma cadeira inicial, fora de posição, com um pote inchado. Esse único fato é a razão de o straddle UTG tão frequentemente ser um perdedor de dinheiro: você paga o dobro pra ser o último por uma rua, e depois joga as três ruas seguintes fora de posição.
+Essa "última ação no pré-flop" é o que o straddler está pagando. Mas repare na pegadinha: pra um **straddle UTG, o privilégio da última ação é só no pré-flop.** Assim que o flop vem, a ordem de aposta volta ao normal — o small blind age primeiro, e o straddler está de volta a uma posição inicial, fora de posição, com um pote inchado. Esse único fato é a razão de o straddle UTG tão frequentemente ser um perdedor de dinheiro: você paga o dobro pra ser o último por uma street, e depois joga as três streets seguintes fora de posição.
 
 ---
 
@@ -69,7 +69,7 @@ Essa "última ação no pré-flop" é o que o straddler está pagando. Mas repar
 
 ![Uma aposta de straddle postada ao lado do button do dealer, mostrando um button ou Mississippi straddle que compra a última posição na mão](/images/holdem-straddle-button.webp "Um button (Mississippi) straddle é postado a partir do button — o único straddle que compra a última ação também no pós-flop")
 
-Nem todos os straddles são iguais — e as diferenças são todas sobre **onde a action começa e por quanto tempo você mantém a última posição.** Aqui está a comparação que nenhuma outra página coloca num só lugar:
+Nem todos os straddles são iguais — e as diferenças são todas sobre **onde a action começa e por quanto tempo você mantém a última posição.** Aqui está a comparação completa, num só lugar:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -78,7 +78,7 @@ Nem todos os straddles são iguais — e as diferenças são todas sobre **onde 
 | **UTG (padrão)** | Under the gun | À esquerda do straddler | Só pré-flop | Sim |
 | **Mississippi** | Qualquer cadeira (muitas vezes button/CO) | À esquerda do straddler | Pré-flop — pós-flop só a partir do button* | Sim |
 | **Button** | O button | Small blind | Pré + pós-flop | Sim |
-| **Sleeper** | Uma cadeira que não é UTG | Normal (UTG) | Não | Geralmente não |
+| **Sleeper** | Uma cadeira que não é UTG | Normal (UTG) | Não | Regra da casa |
 | **Re-straddle** | À esquerda de um straddler | À esquerda do re-straddler | Só pré-flop | Sim |
 
 </div>
@@ -88,7 +88,7 @@ Nem todos os straddles são iguais — e as diferenças são todas sobre **onde 
 - **Straddle UTG** — o clássico. Postado under the gun, última ação só no pré-flop. O mais comum e o mais fraco, em termos de posição.
 - **Mississippi straddle** — pode ser postado de **qualquer posição**, com mais força a partir do button ou cutoff. A action começa à esquerda do straddler, então um Mississippi straddle no button compra a **última ação tanto no pré-flop quanto no pós-flop** — o único straddle com um argumento posicional de verdade. Não é permitido em toda parte.
 - **Button straddle** — um straddle no estilo Mississippi especificamente a partir do button; o button mantém a última ação até o fim. O fluxo exato (onde o small blind se encaixa) varia por sala — confirme com o dealer.
-- **Sleeper straddle** — um blind de uma cadeira que não é UTG e que fica "dormindo": é **inativo a menos que a action folde toda de volta até ele**, e na maioria das salas ele **não** compra posição nem a opção de aumentar. Raro, e quase nunca visto online.
+- **Sleeper straddle** — um blind de uma cadeira que não é UTG e que fica "dormindo": é **inativo a menos que a action folde toda de volta até ele**. Posição ele nunca compra; se, ao "acordar", ele ganha a opção de aumentar como um blind vivo, é regra da casa. Raro, e quase nunca visto online.
 - **Re-straddle (double straddle)** — um jogador à esquerda pode dar straddle *por cima* de um straddle, por no mínimo o dobro do anterior ($4 → $8 → $16). Se é permitido, e de quais cadeiras, é pura regra da casa.
 
 ⚠️ Cada um desses depende das **regras da casa.** Na dúvida, pergunte ao floor antes de jogar fichas — a mecânica realmente muda de sala pra sala.
@@ -97,12 +97,12 @@ Nem todos os straddles são iguais — e as diferenças são todas sobre **onde 
 
 ## Quanto vale um straddle?
 
-O straddle padrão é **exatamente 2× o big blind** — $4 num jogo de $1/$2, $10 num jogo de $2/$5. Esse é o padrão em quase toda cardroom.
+O straddle padrão é **exatamente 2× o big blind** — $4 num jogo de $1/$2, $10 num jogo de $2/$5. Esse é o padrão em quase toda sala.
 
 Algumas salas no-limit permitem mais:
 
 - **Straddle sem teto / all-in** — algumas salas deixam o straddler postar qualquer valor, até o stack inteiro, como aposta de blind. Um straddle grande pode transformar um jogo pequeno num muito grande por uma única mão.
-- **Progressão de re-straddle** — onde o re-straddle é permitido, cada um é no mínimo o dobro do último: $4, depois $8, depois $16, e assim por diante. Jogos onde a mesa toda dá straddle e re-straddle podem inflar as paradas efetivas várias vezes.
+- **Progressão de re-straddle** — onde o re-straddle é permitido, cada um é no mínimo o dobro do último: $4, depois $8, depois $16, e assim por diante. Jogos onde a mesa toda dá straddle e re-straddle podem inflar os stakes efetivos várias vezes.
 
 Se você está pagando pra entrar num pote com straddle, lembre que suas [pot odds](/pt/blog/holdem-pot-odds) agora são medidas contra um blind maior — o preço pra jogar cada mão dobrou, o que silenciosamente pune o call frouxo.
 
@@ -139,23 +139,27 @@ O que o straddle *não* vai fazer é "criar uma imagem loose" que compensa — v
 ---
 
 :::readnext[Continue lendo]
-/pt/blog/holdem-blind-meaning | O que são os blinds no pôquer? | /images/holdem-blind-meaning-hero.webp
+/pt/blog/holdem-blind-meaning | O que são os blinds no poker? | /images/holdem-blind-meaning-hero.webp
 /pt/blog/holdem-position-play | Como a posição muda tudo | /images/holdem-position-play-hero.webp
 :::
 
 ## FAQ
 
-**Q. O que é straddle no pôquer?**
+**Q. O que é straddle no poker?**
 
-A. Um straddle é uma aposta de blind voluntária, geralmente o dobro do big blind, postada antes de as cartas serem repartidas — na maioria das vezes pelo jogador under the gun. Ele dobra as paradas na mão e dá ao straddler a opção de aumentar e a última ação no pré-flop, igual a um terceiro blind.
+A. Um straddle é uma aposta de blind voluntária, geralmente o dobro do big blind, postada antes de as cartas serem distribuídas — na maioria das vezes pelo jogador under the gun. Ele dobra os blinds na mão e dá ao straddler a opção de aumentar e a última ação no pré-flop, igual a um terceiro blind.
 
-**Q. Quanto vale um straddle no pôquer?**
+**Q. Quanto vale um straddle no poker?**
 
 A. O straddle padrão é 2× o big blind — $4 num jogo de $1/$2. Algumas salas no-limit permitem straddles maiores ou até sem teto (all-in), e onde o re-straddle é permitido cada um tem que ser no mínimo o dobro do straddle anterior ($4, $8, $16, e assim por diante).
 
 **Q. Quem age primeiro depois de um straddle?**
 
 A. O jogador logo à esquerda do straddler age primeiro, porque um straddle vivo funciona como um novo big blind. A action então dá a volta na mesa, o small e o big blind agem na sua vez, e o straddler age por último no pré-flop — com a opção de dar check ou aumentar se ninguém aumentou antes dele.
+
+**Q. Quem pode dar straddle no poker?**
+
+A. Depende do tipo. No straddle padrão, só o jogador under the gun — a cadeira logo à esquerda do big blind — pode postá-lo. O Mississippi straddle, onde a casa permite, deixa qualquer posição dar straddle, mais comumente o button ou o cutoff. Nos dois casos você só pode dar straddle *antes* de as cartas serem distribuídas, e quais cadeiras podem fazê-lo é pura regra da casa — algumas salas só permitem UTG, outras qualquer assento, e muitos jogos online e torneios o proíbem por completo.
 
 **Q. Um straddle é considerado um aumento?**
 
@@ -167,21 +171,21 @@ A. Um Mississippi straddle pode ser postado de qualquer posição, não só unde
 
 **Q. O que é um sleeper straddle?**
 
-A. Um sleeper straddle é um blind postado de uma cadeira que não é UTG e que fica inativo ("dormindo") a menos que a action folde toda a volta até ele. Na maioria das salas ele não compra a opção de aumentar nem concede posição do jeito que um straddle vivo faz. É incomum e raramente oferecido online — sempre confirme a regra da casa.
+A. Um sleeper straddle é um blind postado de uma cadeira que não é UTG e que fica inativo ("dormindo") a menos que a action folde toda a volta até ele. Ele não concede posição do jeito que um straddle vivo faz, e se ganha a opção de aumentar quando "acorda" varia por sala. É incomum e raramente oferecido online — sempre confirme a regra da casa.
 
 **Q. Straddle é permitido em torneios?**
 
-A. Quase nunca. Torneios dependem de uma estrutura fixa de blinds que precisa ser idêntica em todas as mesas, então um blind extra voluntário quebraria o formato. O straddle é essencialmente uma opção só de cash game, e mesmo ali depende das regras da casa da cardroom específica.
+A. Quase nunca. Torneios dependem de uma estrutura fixa de blinds que precisa ser idêntica em todas as mesas, então um blind extra voluntário quebraria o formato. O straddle é essencialmente uma opção só de cash game, e mesmo ali depende das regras da casa do clube ou da sala específica.
 
 **Q. Straddle dá lucro? Você deveria straddar?**
 
-A. Pra maioria dos jogadores, não — é uma jogada -EV. Você compromete dinheiro às cegas, comprime sua razão stack-to-pot (o que significa que você deveria jogar menos mãos, não mais) e infla o rake. Só é defensável em mesas loose-passive, em jogos onde todo mundo já dá straddle, ou puramente por diversão — nunca como um jeito de ganhar dinheiro.
+A. Pra maioria dos jogadores, não — é uma jogada -EV. Você compromete dinheiro às cegas, encolhe sua vantagem posicional (os solvers abrem *menos* mãos em potes com straddle, não mais) e infla o rake. Só é defensável em mesas loose-passive, em jogos onde todo mundo já dá straddle, ou puramente por diversão — nunca como um jeito de ganhar dinheiro.
 
 ---
 
 ## As 3 coisas para lembrar
 
-1. **Um straddle é um terceiro blind opcional, geralmente 2× o big blind,** postado antes das cartas — ele dobra as paradas e compra a última ação no pré-flop.
+1. **Um straddle é um terceiro blind opcional, geralmente 2× o big blind,** postado antes das cartas — ele dobra os blinds e compra a última ação no pré-flop.
 2. **A cadeira decide a posição, não o nome do straddle.** Um straddle UTG é o último só no pré-flop. O único que também é o último depois do flop é o postado ==a partir do button== — porque no pós-flop a ordem sempre segue o button. Tudo depende das regras da casa.
 3. **É -EV pra quase todo mundo.** Comprometer às cegas, inchar o pote fora de posição e alimentar o rake pesam mais que a diversão. Dê straddle pela imagem na mesa ou pelo entretenimento, não pelo lucro.
 
@@ -194,7 +198,7 @@ Agora que você conhece o blind extra, aperte os fundamentos que ele distorce: [
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/pt/blog/holdem-blind-meaning" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Regras</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">O que são os blinds no pôquer?</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">O que são os blinds no poker?</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">O small e o big blind sobre os quais um straddle é construído</div>
   </a>
   <a href="/pt/blog/holdem-position-play" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">

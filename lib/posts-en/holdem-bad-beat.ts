@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A bad beat is when you get your money in as a heavy favorite — usually 80% or more — and lose because your opponent hits a lucky card to 'suck out' on you. Unlike a cooler, you were ahead the whole way; the deck just betrayed you at the end. It stings, but bad beats are actually a sign you're playing in a profitable game.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-08-11",
+  updated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "💔",
@@ -37,7 +37,7 @@ Secretly good | What it means for your long-term profit
 
 **A bad beat is a hand you lose despite being a strong statistical favorite when the chips went in, because your opponent hit an unlikely card to overtake you.** You played it correctly — you got your money in "good," ahead in the math — and the deck simply produced the one runout that beats you. The loss isn't your fault; it's variance doing its worst.
 
-The mechanism is always a **suckout**: a card on the turn or river that turns a losing hand into a winning one. Your aces were crushing their pocket fives until that third five appeared. Your top pair had their flush draw dead until the last heart fell. That moment — the favorite getting run down by a draw that had no business getting there — is the beating heart of the term. Understanding it is also the first step to not letting it wreck your session, the same emotional discipline that separates a pro from a [fish](/en/blog/holdem-fish).
+The mechanism is always a **suckout**: a card — on the flop, turn or river — that arrives after the money goes in and turns a losing hand into a winning one. Your aces were crushing their pocket fives until that third five appeared. Your top pair had their flush draw dead until the last heart fell. That moment — the favorite getting run down by a draw that had no business getting there — is the beating heart of the term. Understanding it is also the first step to not letting it wreck your session, the same emotional discipline that separates a pro from a [fish](/en/blog/holdem-fish).
 
 ---
 
@@ -89,11 +89,13 @@ Every bad beat has the same shape: you're the favorite, the underdog needs help,
 |:---|:---|:---:|:---|
 | **Aces cracked by a set** | AA vs a lower pair (e.g. 7‑7) | ~80% (4:1) | Their pair hits a set on the flop, turn or river |
 | **Aces vs a random hand** | AA all-in preflop | ~85% | Any two cards run you down |
-| **Overpair vs a flush draw** | Overpair on the flop | ~65% (2:1) | Their 9-out flush draw fills on the river |
+| **Overpair vs a flush draw (borderline)** | Overpair on the flop | ~65% (2:1) | Their 9-out flush draw fills on the river |
 | **Runner-runner** | A made hand ahead on the flop | ~90%+ | Two perfect cards (turn *and* river) complete a draw |
 | **The one-outer** | A near-locked hand | ~96% | The single card left in the deck beats you |
 
 </div>
+
+*By the bar in the previous section, overpair vs flush draw is the family's borderline case: at ~65%, it's more variance than a "true" bad beat — but it's what the table calls it anyway.*
 
 The most iconic is **aces cracked by a set.** You get pocket aces all in preflop against pocket sevens — you're roughly an 80% favorite, a 4-to-1 lock in your favor. But there are two more sevens in the deck, and if one hits the board, their three-of-a-kind beats your pair. Four times out of five you scoop it; the fifth time, you've got a bad beat story nobody wants to hear. The math was never wrong — you just landed on the wrong side of it, which is exactly why a single hand tells you [nothing about whether you played well](/en/blog/holdem-cooler).
 
@@ -107,7 +109,7 @@ The rules **vary by room**, but the common structure looks like this:
 
 - **The qualifier.** A typical minimum is **"aces full of jacks or better, beaten by four of a kind or better."** Some rooms set the bar higher (quads beaten). The losing hand has to be huge — you can't trigger it with a normal cooler.
 - **Both hole cards must play.** Nearly every room requires *both* of the loser's hole cards (and often the winner's) to be part of the hand, so you can't claim it on a hand made entirely by the board.
-- **The split.** The player who took the bad beat gets the **biggest share**, the winner of the hand gets the second share, and everyone else seated at the table splits the rest.
+- **The split.** The player who took the bad beat gets the **biggest share**, the winner of the hand gets the second share, and the other players **dealt into that hand** split the rest.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -162,7 +164,7 @@ Because a bad beat carries no lesson about your play, its only real danger is wh
 
 **Q. What is a bad beat in poker?**
 
-A. A bad beat is when you lose a hand you were a strong statistical favorite to win, because your opponent hit an unlikely card to overtake you. You got your money in "good" — ahead in the math — and only an improbable suckout on the turn or river flipped the result. The classic case is pocket aces getting cracked by a smaller pair that spikes a set.
+A. A bad beat is when you lose a hand you were a strong statistical favorite to win, because your opponent hit an unlikely card to overtake you. You got your money in "good" — ahead in the math — and only an improbable suckout flipped the result. The classic case is pocket aces getting cracked by a smaller pair that spikes a set.
 
 **Q. What is the difference between a bad beat and a cooler?**
 
@@ -174,7 +176,7 @@ A. No. A bad beat requires you to be a heavy favorite — usually around 80% or 
 
 **Q. What is a bad beat jackpot and what qualifies?**
 
-A. A bad beat jackpot is a progressive prize some cardrooms pay when an exceptionally strong hand loses at showdown. A common qualifier is "aces full of jacks or better beaten by four of a kind or better," with both of the loser's hole cards required to play. The loser usually gets the largest share, the winner second, and the rest of the table splits the remainder — but qualifiers and splits vary by room, so always check local rules.
+A. A bad beat jackpot is a progressive prize some cardrooms pay when an exceptionally strong hand loses at showdown. A common qualifier is "aces full of jacks or better beaten by four of a kind or better," with both of the loser's hole cards required to play. The loser usually gets the largest share, the winner second, and the other players dealt into the hand split the remainder — but qualifiers and splits vary by room, so always check local rules.
 
 **Q. What is the worst bad beat in poker history?**
 

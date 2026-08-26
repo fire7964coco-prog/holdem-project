@@ -2,13 +2,14 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "holdem-rake",
-  title: "O que é rake no pôquer? Como a casa é paga — e quanto você realmente paga",
+  title: "O que é rake no poker? Como a casa é paga — e quanto você realmente paga",
   seoTitle: "A taxa que come seus lucros em silêncio — o que é rake?",
   desc: "O rake é a taxa que a casa tira de cada pote no cash game. Veja como funcionam o rake do pote, o time charge e a taxa de torneio — e quanto você paga mesmo.",
-  tldr: "O rake é a pequena fatia que a sala de pôquer tira de cada pote para sediar o jogo — geralmente 2,5–10% até um cap de alguns dólares. A maioria das salas não tira nada se todo mundo folda antes do flop ('no flop, no drop'). Ele pesa mais para quem joga stakes baixos e short-handed, e o rakeback devolve uma parte dele aos regulares.",
+  tldr: "O rake é a pequena fatia que a sala de poker tira de cada pote para sediar o jogo — geralmente 2,5–10% até um cap de alguns dólares. A maioria das salas não tira nada se todo mundo folda antes do flop ('no flop, no drop'). Ele pesa mais para quem joga stakes baixos e short-handed, e o rakeback devolve uma parte dele aos regulares.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-08-11",
+  updated: "2026-08-26",
+  masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🏦",
@@ -18,7 +19,7 @@ export const POST: Post = {
   content: `
 Levei um mês deprimente de sessões "no zero" para descobrir para onde meu dinheiro estava realmente indo. Eu não estava perdendo para os outros jogadores — eu estava batendo eles, de leve. Eu estava perdendo para a ==fatia da casa em cada pote que eu ganhava.== Essa taxa silenciosa se chama **rake**, e até você entendê-la, você pode ser um jogador vencedor no papel e um perdedor no caixa.
 
-O rake é como uma sala de pôquer ganha dinheiro num jogo em que ela não joga uma única mão. Abaixo está exatamente o que ele é, cada forma de cobrá-lo, a conta honesta de ==g:quanto você realmente paga por sessão==, e como o rakeback recupera parte dele. É a taxa que decide se bater o pôquer de stakes baixos é sequer possível.
+O rake é como uma sala de poker ganha dinheiro num jogo em que ela não joga uma única mão. Abaixo está exatamente o que ele é, cada forma de cobrá-lo, a conta honesta de ==g:quanto você realmente paga por sessão==, e como o rakeback recupera parte dele. É a taxa que decide se bater o poker de stakes baixos é sequer possível — e um dos termos mais caros de entender errado em todo o [glossário de poker](/pt/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp").
 
 ---
 
@@ -33,9 +34,9 @@ No flop, no drop | Geralmente sem rake se todos foldam no preflop
 
 ---
 
-## O que é rake no pôquer?
+## O que é rake no poker?
 
-**O rake é a comissão que uma sala de pôquer tira de um cash game por sediá-lo.** Como o pôquer é jogado jogador-contra-jogador — a casa nunca aposta — o rake é como a sala, o cassino ou o app de fato ganha dinheiro. É uma taxa de serviço pelo dealer, pela mesa, pelas fichas e pela segurança, tirada aos poucos dos potes.
+**O rake é a comissão que uma sala de poker tira de um cash game por sediá-lo.** Como o poker é jogado jogador-contra-jogador — a casa nunca aposta — o rake é como a sala, o cassino ou o app de fato ganha dinheiro. É uma taxa de serviço pelo dealer, pela mesa, pelas fichas e pela segurança, tirada aos poucos dos potes.
 
 Num cash game ele geralmente é tirado direto do pote: uma pequena porcentagem do dinheiro que está no meio, jogada numa fenda na mesa antes de o vencedor ser pago. Num torneio funciona diferente — a taxa já vem embutida no seu buy-in lá no começo (mais sobre isso abaixo). De qualquer forma, o rake é separado de qualquer coisa que você ganhe ou perca para os outros jogadores, o que é exatamente por que ele é tão fácil de ignorar. Essa é uma das maiores diferenças práticas entre um [cash game e um torneio](/pt/blog/holdem-tournament-vs-cash-game "thumb:/images/tournament-table-action.webp").
 
@@ -45,7 +46,7 @@ Num cash game ele geralmente é tirado direto do pote: uma pequena porcentagem d
 
 ![Um dealer varrendo algumas fichas do centro do pote para a fenda de rake da mesa antes de empurrar o resto para o vencedor](/images/holdem-rake-drop.webp "Rake do pote: uma pequena porcentagem tirada do pote e recolhida antes de o vencedor ser pago")
 
-Não existe só um tipo de rake. Como a casa recolhe seu dinheiro depende dos stakes e da sala, e as diferenças importam — aqui está a comparação que nenhuma página concorrente coloca sozinha:
+Não existe só um tipo de rake. Como a casa recolhe seu dinheiro depende dos stakes e da sala, e as diferenças importam — aqui está a comparação completa, lado a lado:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -62,18 +63,18 @@ Algumas regras governam como o rake do pote é de fato tirado:
 
 - **No flop, no drop.** Na maioria das salas, se a mão acaba antes do flop — todo mundo folda para um aumento no preflop — a casa não tira **nenhum rake**. (Não é universal: alguns sites, notadamente o GGPoker, tiram rake de alguns potes preflop, então cheque a sua sala.)
 - **O cap do rake.** A casa nunca tira a porcentagem cheia num pote gigante — ela para num máximo, comumente **$3–$6 ao vivo** e **$1–$3 online**. Os caps sobem quando os stakes sobem, mas não de forma proporcional — eles se movem em degraus, então vários stakes costumam compartilhar o mesmo cap. Além disso, frequentemente encolhem quando menos jogadores estão na mão (um pote heads-up pode ter cap de $1).
-- **Time charge em vez de rake do pote.** Nos stakes mais altos, as salas frequentemente param de raquear os potes e em vez disso cobram uma taxa fixa — digamos $10–$15 por hora por jogador, tirada a cada meia hora. Isso favorece quem ganha potes grandes, embora o que você economize seja o rake *no cap*, não uma fatia do pote: contra um cap de $3–$6, um pote de $2.000 só deixava alguns dólares.
+- **Time charge em vez de rake do pote.** Nos stakes mais altos, as salas frequentemente param de tirar rake dos potes e em vez disso cobram uma taxa fixa — digamos $10–$15 por hora por jogador, tirada a cada meia hora. Isso favorece quem ganha potes grandes, embora o que você economize seja o rake *no cap*, não uma fatia do pote: contra um cap de $3–$6, um pote de $2.000 só deixaria alguns dólares.
 - **Dead drop.** Um método menos comum em que só o jogador no botão paga um rake fixo por mão, recolhido antes de as cartas serem distribuídas — feito para que os vencedores de potes grandes não sejam taxados mais do que os outros.
 
 ---
 
 ## Quanto de rake você realmente paga?
 
-![Um pote modesto de fichas no feltro com alguns dólares já separados como rake, mostrando quanto uma única mão custa em silêncio](/images/holdem-rake-lowstakes.webp "Em jogos de stakes baixos o cap quase não sobe conforme os potes crescem, então os potes pequenos são proporcionalmente os mais raqueados")
+![Um pote modesto de fichas no feltro com alguns dólares já separados como rake, mostrando quanto uma única mão custa em silêncio](/images/holdem-rake-lowstakes.webp "Em jogos de stakes baixos o cap quase não sobe conforme os potes crescem, então os potes pequenos são proporcionalmente os mais rakeados")
 
 Aqui está a parte que mudou como eu penso o jogo. A porcentagem parece minúscula — 5%, com cap de alguns dólares — mas você paga em quase todo pote que ganha, por horas.
 
-**Um jogo ao vivo de $1/$2.** Com 10% de rake com cap de $5 e cerca de 30 mãos distribuídas por hora, a maioria dos potes disputados atinge ou chega perto do cap. Uma única mesa cheia pode pagar **$100+ por hora** para o drop entre todos os jogadores. Esse dinheiro sai direto dos ganhos coletivos — é a razão pela qual uma mesa cheia de jogadores mais ou menos parelhos sangra fichas devagar para a casa.
+**Um jogo ao vivo de $1/$2.** Com 10% de rake com cap de $5 e cerca de 30 mãos distribuídas por hora, a maioria dos potes disputados atinge ou chega perto do cap. Uma única mesa cheia pode pagar **$100+ por hora** para o drop entre todos os jogadores. Esse dinheiro sai direto dos ganhos coletivos — é a razão pela qual uma mesa cheia de jogadores mais ou menos parelhos sangra fichas devagar para a casa. E o rake nem é o único drop: muitas salas ao vivo ainda tiram um ou dois dólares por mão pra promoções ou jackpot, e a gorjeta do dealer também sai do seu lado da mesa. No Brasil, a mesma lógica vale nos clubes — R$1/R$2, R$2/R$5, com rake por mão ou taxa por hora; as porcentagens e o raciocínio do cap são idênticos, só muda a moeda.
 
 **A "armadilha do rake" dos stakes baixos.** Essa é a moral que todo iniciante deveria ouvir. Como o cap quase não desce junto conforme você desce nos stakes, quanto *mais baixo* você joga, *maior* a mordida que o rake tira proporcionalmente. Um exemplo trabalhado no NL50 online (ilustrativo, e varia conforme quantas mãos você joga):
 
@@ -82,7 +83,7 @@ Aqui está a parte que mudou como eu penso o jogo. A porcentagem parece minúscu
 | Mesmo jogador, mesmo jogo | Rake pago | Resultado |
 |:---|:---:|:---|
 | Sala com **cap de $2** | ~5 bb/100 | Win rate de +8 bb/100 continua **vencedor (+3)** |
-| Sala com **cap de $4** | ~8–9 bb/100 | +8 bb/100 vira **perdedor (−1)** |
+| Sala com **cap de $4** | ~8–9 bb/100 | +8 bb/100 empata ou vira **perdedor (0 a −1)** |
 
 </div>
 
@@ -92,13 +93,13 @@ Mesma habilidade, mesma vantagem sobre o campo — e só o rake é a diferença 
 
 ## O que é rakeback?
 
-Como a casa lucra com o volume que você gera, a maioria das salas devolve parte dele para te manter jogando. **Rakeback é uma porcentagem do rake que você paga pessoalmente, devolvida a você** — geralmente através de pontos, cashback ou um programa de fidelidade, pago semanal ou mensalmente. Um deal de 30% de rakeback simplesmente significa que você recebe de volta 30 centavos de cada dólar que você raqueia.
+Como a casa lucra com o volume que você gera, a maioria das salas devolve parte dele para te manter jogando. **Rakeback é uma porcentagem do rake que você paga pessoalmente, devolvida a você** — geralmente através de pontos, cashback ou um programa de fidelidade, pago semanal ou mensalmente. Um deal de 30% de rakeback simplesmente significa que você recebe de volta 30 centavos de cada dólar de rake que você gera.
 
 Há duas formas de calcular:
 
 :::compare
 Contributed | Dealt
-Baseado no rake dos potes **em que você pôs dinheiro** — o método moderno padrão | Dividido igualmente entre **todos que receberam cartas** no pote raqueado, tenham contribuído ou não — hoje raro
+Baseado no rake dos potes **em que você pôs dinheiro** — o método moderno padrão | Dividido igualmente entre **todos que receberam cartas** no pote com rake, tenham contribuído ou não — hoje raro
 :::
 
 Para um jogador casual, o rakeback é um bônus menor. Para um regular de alto volume ele é enorme: a distância entre um deal de 20% e um de 40% escala com o rake que você de fato gera, então só vira dinheiro sério se você joga **muito volume em stakes relevantes**, e para muitos grinders no zero, o rakeback *é* o lucro deles. Ele efetivamente baixa o seu rake real, então vale a pena checar antes de escolher onde jogar. Só fique atento a que boa parte dos conselhos de rakeback online é movida por afiliação — trate as páginas de "cadastre-se aqui" com o ceticismo que você daria a qualquer discurso de venda.
@@ -107,13 +108,13 @@ Para um jogador casual, o rakeback é um bônus menor. Para um regular de alto v
 
 ## Torneios têm rake?
 
-Não do tipo do pote — mas você ainda paga uma taxa, e ela está escondida à vista de todos. Um buy-in de torneio é dividido em duas partes, mostradas com um **sinal de "+"**:
+Sim — só que não do tipo do pote: você ainda paga uma taxa, e ela está escondida à vista de todos. Um buy-in de torneio é dividido em duas partes, mostradas com um **sinal de "+"**:
 
 :::pull
 Um torneio de **$100 + $9** significa que $100 vão para a premiação e **$9 são a taxa da casa.**
 :::
 
-Essa taxa — também chamada de **juice** ou **vig** — é o equivalente do rake no torneio. Ela costuma ser **5–20% do buy-in**, e é fixa: você a paga quer estoure em primeiro, quer ganhe o torneio inteiro. Buy-ins menores carregam taxas proporcionalmente mais altas (um sit-and-go de $3 + $0,30 é 10%), e como os formatos **turbo rápidos comprimem a sua vantagem**, é ali que a taxa morde mais — quanto menor a porcentagem, mais da sua habilidade sobrevive. Como a estrutura de um torneio é totalmente diferente da de um cash game, a forma como você paga para jogar também é — uma distinção que vale a pena entender junto com os fundamentos de [torneio vs cash game](/pt/blog/holdem-tournament-vs-cash-game).
+Essa taxa — também chamada de **juice** ou **vig** — é o equivalente do rake no torneio. Ela costuma ser **5–20% do buy-in**, e é fixa: você a paga quer quebre na primeira mão, quer ganhe o torneio inteiro. Buy-ins menores carregam taxas proporcionalmente mais altas (um sit-and-go de $3 + $0,30 é 10%), e como os formatos **turbo rápidos comprimem a sua vantagem**, é ali que a taxa morde mais — quanto menor a porcentagem, mais da sua habilidade sobrevive. Como a estrutura de um torneio é totalmente diferente da de um cash game, a forma como você paga para jogar também é — uma distinção que vale a pena entender junto com os fundamentos de [torneio vs cash game](/pt/blog/holdem-tournament-vs-cash-game).
 
 ---
 
@@ -121,7 +122,7 @@ Essa taxa — também chamada de **juice** ou **vig** — é o equivalente do ra
 
 É um trade-off de verdade, e a resposta surpreende as pessoas:
 
-- **O rake ao vivo** tende a ser uma **porcentagem mais alta (frequentemente 10%) com um cap mais alto ($4–$6)** — mas você só joga ~30 mãos por hora, então paga menos vezes.
+- **O rake ao vivo** tende a ser uma **porcentagem mais alta (frequentemente 10%) com um cap mais alto ($3–$6)** — mas você só joga ~30 mãos por hora, então paga menos vezes.
 - **O rake online** geralmente é uma **porcentagem mais baixa (3–5%) com um cap menor ($1–$3)** — mas você pode ver 250+ mãos por hora em várias mesas, então um grinder de volume pode pagar *mais* rake por hora do que um jogador ao vivo apesar da taxa menor.
 
 A lição: nunca julgue o rake só pela porcentagem. O que importa é a porcentagem **vezes quantas vezes você paga.** Um jogo online "barato" de 5% que você joga em quatro mesas pode te custar mais do que um jogo ao vivo "caro" de 10% — que é exatamente por que o rakeback e a seleção de mesa importam mais online.
@@ -129,19 +130,23 @@ A lição: nunca julgue o rake só pela porcentagem. O que importa é a porcenta
 ---
 
 :::readnext[Continue lendo]
-/pt/blog/holdem-straddle | O que é um straddle no pôquer? | /images/holdem-straddle-hero.webp
+/pt/blog/holdem-straddle | O que é um straddle no poker? | /images/holdem-straddle-hero.webp
 /pt/blog/holdem-tournament-vs-cash-game | Torneio vs Cash Game | /images/tournament-table-action.webp
 :::
 
 ## FAQ
 
-**Q. O que é rake no pôquer?**
+**Q. O que é rake no poker?**
 
-A. O rake é a taxa que uma sala de pôquer tira de um cash game por sediá-lo — normalmente uma pequena porcentagem de cada pote (2,5–10%) até um máximo com cap. Como a casa não joga, o rake é a principal fonte de receita dela. Os torneios cobram uma taxa equivalente embutida no buy-in em vez disso.
+A. O rake é a taxa que uma sala de poker tira de um cash game por sediá-lo — normalmente uma pequena porcentagem de cada pote (2,5–10%) até um máximo com cap. Como a casa não joga, o rake é a principal fonte de receita dela. Os torneios cobram uma taxa equivalente embutida no buy-in em vez disso.
 
 **Q. Como o rake é calculado?**
 
 A. Na maioria dos cash games é uma porcentagem do pote, recolhida antes de o vencedor ser pago, até um cap de alguns dólares. A porcentagem e o cap variam por sala e stakes, e o cap frequentemente encolhe quando menos jogadores estão na mão. Nos stakes mais altos, as salas podem cobrar uma taxa fixa de tempo por jogador em vez disso.
+
+**Q. Quem paga o rake no poker?**
+
+A. O rake sai direto do pote, então no papel quem paga é o vencedor da mão — o stack que ele puxa volta menor pelo valor do rake. Na prática, todo mundo que colocou fichas naquele pote contribuiu, então a mesa inteira divide o custo ao longo da sessão. Em torneios não há ambiguidade: cada inscrito paga a mesma taxa embutida no buy-in, quer vença, quer caia na primeira mão.
 
 **Q. Você paga rake se todo mundo folda antes do flop?**
 
@@ -155,15 +160,19 @@ A. Comumente 10% do pote com cap em torno de $5. A maioria dos potes disputados 
 
 A. O rakeback devolve uma porcentagem do rake que você paga pessoalmente — frequentemente 20–40% — através de pontos, cashback ou um programa de fidelidade. Ele efetivamente baixa o seu rake real. Para jogadores casuais é um bônus pequeno; para regulares de alto volume pode ser a diferença entre um ano perdedor e um vencedor.
 
-**Q. Torneios de pôquer têm rake?**
+**Q. Como pagar menos rake no poker?**
+
+A. Você não escapa do rake num jogo com rake, mas dá pra encolhê-lo: consiga o melhor deal de rakeback possível, escolha salas com caps amigáveis ao jogador e jogue menos potes, maiores, em vez de uma enxurrada de potes pequenos no cap. Evite mesas muito short-handed — ali você joga muito mais mãos por hora e paga blinds com mais frequência, então entra em muito mais potes com rake. Subir de stakes também encolhe o rake proporcionalmente, mas só dê o passo quando o bankroll e a sua vantagem sobre o campo mais duro acompanharem.
+
+**Q. Torneios de poker têm rake?**
 
 A. Sim, mas não do pote. A taxa é somada ao seu buy-in e mostrada com um "+" — um torneio de $100 + $9 manda $100 para a premiação e $9 para a casa. Essa taxa (o "juice" ou "vig") é tipicamente 5–20% do buy-in e é paga independentemente de como você termine.
 
 **Q. Como o rake afeta o seu win rate?**
 
-A. Significativamente — principalmente em stakes baixos, onde o cap não desce junto com os stakes. Short-handed acrescenta um segundo efeito que não tem nada a ver com o cap: o mesmo rake por pote é dividido entre menos jogadores, e você paga os blinds com muito mais frequência a cada 100 mãos — então a sua parte por mão sobe. (Por *hora* você também paga mais, simplesmente porque rodam mais mãos, mas essa é uma pergunta diferente de bb/100.) O rake pode transformar um pequeno vencedor num perdedor: o mesmo jogador de +8 bb/100 pode acabar levemente negativo simplesmente por mudar para uma sala com um cap de rake mais alto. Sempre meça o seu win rate depois do rake.
+A. Significativamente — principalmente em stakes baixos, onde o cap não desce junto com os stakes. Short-handed acrescenta um segundo efeito que não tem nada a ver com o cap: o mesmo rake por pote é dividido entre menos jogadores, e você paga os blinds com muito mais frequência a cada 100 mãos — então a sua parte por mão sobe. O rake pode transformar um pequeno vencedor num perdedor: o mesmo jogador de +8 bb/100 pode acabar levemente negativo simplesmente por mudar para uma sala com um cap de rake mais alto. Sempre meça o seu win rate depois do rake.
 
-**Q. O rake do pôquer online ou ao vivo é mais alto?**
+**Q. O rake do poker online ou ao vivo é mais alto?**
 
 A. O rake ao vivo é uma porcentagem mais alta com um cap mais alto, mas você joga bem menos mãos por hora. O rake online é uma porcentagem mais baixa com um cap menor, mas jogar em várias mesas significa que você o paga em muito mais mãos — então um grinder de volume pode pagar mais rake por hora online. Julgue o rake pela taxa vezes a frequência, não só pela taxa.
 
@@ -175,7 +184,7 @@ A. O rake ao vivo é uma porcentagem mais alta com um cap mais alto, mas você j
 2. **Ele pesa mais em stakes baixos.** O cap quase não se move conforme você desce, então proporcionalmente você paga mais rake lá embaixo — a "armadilha do rake" que torna os micro-stakes tão difíceis de bater.
 3. **Rakeback e estrutura importam.** Receber 20–40% do seu rake de volta, e escolher salas com caps amigáveis ao jogador, pode virar o seu resultado no longo prazo — meça tudo *depois* do rake.
 
-Agora que você consegue enxergar a fatia da casa, os números que você lê em todo lugar fazem mais sentido: as suas [pot odds](/pt/blog/holdem-pot-odds), o seu win rate, e por que um [straddle](/pt/blog/holdem-straddle) que infla o pote também alimenta o rake em silêncio. O pôquer é batível — mas só quando você está batendo os outros jogadores por *mais* do que a casa tira.
+Agora que você consegue enxergar a fatia da casa, os números que você lê em todo lugar fazem mais sentido: as suas [pot odds](/pt/blog/holdem-pot-odds), o seu win rate, e por que um [straddle](/pt/blog/holdem-straddle) que infla o pote também alimenta o rake em silêncio. O poker é batível — mas só quando você está batendo os outros jogadores por *mais* do que a casa tira.
 
 ---
 
@@ -199,7 +208,7 @@ Agora que você consegue enxergar a fatia da casa, os números que você lê em 
   </a>
   <a href="/pt/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Torneio</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Como funcionam os torneios de pôquer</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Como funcionam os torneios de poker</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Para onde a taxa do buy-in realmente vai</div>
   </a>
 </div>

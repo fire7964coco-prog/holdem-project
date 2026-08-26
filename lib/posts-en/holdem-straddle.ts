@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A straddle is an optional blind bet — usually twice the big blind — posted before the cards are dealt. It buys the straddler the last action and the option to raise preflop, doubling the stakes. In almost every case it's a -EV play, allowed only in cash games under house rules.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-08-11",
+  updated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "💰",
@@ -55,7 +55,7 @@ This is the part definition pages skip, and it's where new players get lost. A s
 :::steps
 UTG posts the straddle | The under-the-gun player puts out $4 (2× the $2 big blind) before cards are dealt
 First to act = left of the straddler | Action now begins with the player to the straddler's left (UTG+1), not UTG — the straddle acts like a new big blind
-Around the table | Everyone must call $4 (not $2) to play; they can fold, call, or raise as normal
+Around the table | Everyone must call $4 (not $2) to play; they can fold, call, or raise — and the minimum raise is now $8, double the straddle, just as over a normal big blind
 Blinds decide | The small and big blinds act in turn, facing the $4 price
 The straddler acts LAST | If no one raised, the straddler can check their option or raise — the last word before the flop
 :::
@@ -77,7 +77,7 @@ Not all straddles are the same — and the differences are all about **where the
 | **UTG (standard)** | Under the gun | Left of straddler | Preflop only | Yes |
 | **Mississippi** | Any seat (often button/CO) | Left of straddler | Preflop — postflop only from the button* | Yes |
 | **Button** | The button | Small blind | Pre + postflop | Yes |
-| **Sleeper** | A non-UTG seat | Normal (UTG) | No | Usually no |
+| **Sleeper** | A non-UTG seat | Normal (UTG) | No | House rules |
 | **Re-straddle** | Left of a straddler | Left of re-straddler | Preflop only | Yes |
 
 </div>
@@ -87,7 +87,7 @@ Not all straddles are the same — and the differences are all about **where the
 - **UTG straddle** — the classic. Posted under the gun, last action preflop only. The most common and the weakest, positionally.
 - **Mississippi straddle** — can be posted from **any position**, most powerfully from the button or cutoff. Action starts to the straddler's left, so a button Mississippi straddle buys **last action both preflop and postflop** — the one straddle with a real positional case. Not allowed everywhere.
 - **Button straddle** — a Mississippi-style straddle specifically from the button; the button keeps last action all the way down. Exact flow (where the small blind fits) varies by room — confirm with the dealer.
-- **Sleeper straddle** — a blind from a non-UTG seat that stays "asleep": it's **inactive unless the action folds all the way to it**, and in most rooms it does **not** buy position or the option to raise. Rare, and almost never seen online.
+- **Sleeper straddle** — a blind from a non-UTG seat that stays "asleep": it's **inactive unless the action folds all the way to it**. Position it never buys; whether it gains the option to raise as a live blind once it "wakes up" is house-rules territory. Rare, and almost never seen online.
 - **Re-straddle (double straddle)** — a player to the left can straddle *over* a straddle, for a minimum of double the previous one ($4 → $8 → $16). Whether it's allowed, and from which seats, is pure house rules.
 
 ⚠️ Every one of these is **house-rules dependent.** When in doubt, ask the floor before you toss chips out — the mechanics genuinely differ from room to room.
@@ -170,7 +170,7 @@ A. A Mississippi straddle can be posted from any position, not just under the gu
 
 **Q. What is a sleeper straddle?**
 
-A. A sleeper straddle is a blind posted from a non-UTG seat that stays inactive ("asleep") unless the action folds all the way around to it. In most rooms it doesn't buy the option to raise or grant position the way a live straddle does. It's uncommon and rarely offered online — always confirm the house rule.
+A. A sleeper straddle is a blind posted from a non-UTG seat that stays inactive ("asleep") unless the action folds all the way around to it. It doesn't grant position the way a live straddle does, and whether it gains the option to raise once it "wakes up" varies by room. It's uncommon and rarely offered online — always confirm the house rule.
 
 **Q. Is straddling allowed in tournaments?**
 
@@ -178,7 +178,7 @@ A. Almost never. Tournaments rely on a fixed blind structure that must be identi
 
 **Q. Is straddling profitable? Should you straddle?**
 
-A. For most players, no — it's a -EV play. You commit money blind, you compress your stack-to-pot ratio (which means you should play fewer hands, not more), and you inflate the rake. It's defensible only at loose-passive tables, in games where everyone already straddles, or purely for fun — never as a way to make money.
+A. For most players, no — it's a -EV play. You commit money blind, you shrink your positional edge (solvers open *fewer* hands in straddled pots, not more), and you inflate the rake. It's defensible only at loose-passive tables, in games where everyone already straddles, or purely for fun — never as a way to make money.
 
 ---
 

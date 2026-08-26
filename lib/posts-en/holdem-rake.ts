@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Rake is the small cut the cardroom takes from each pot to host the game — usually 2.5–10% up to a cap of a few dollars. Most rooms take nothing if everyone folds before the flop ('no flop, no drop'). It hits low-stakes and short-handed players hardest, and rakeback returns a slice of it to regulars.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-08-11",
+  updated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🏦",
@@ -82,7 +82,7 @@ Here's the part that changed how I think about the game. The percentage sounds t
 | Same player, same game | Rake paid | Result |
 |:---|:---:|:---|
 | Room with a **$2 cap** | ~5 bb/100 | +8 bb/100 win rate stays a **winner (+3)** |
-| Room with a **$4 cap** | ~8–9 bb/100 | +8 bb/100 turns into a **loser (−1)** |
+| Room with a **$4 cap** | ~8–9 bb/100 | +8 bb/100 breaks even or turns into a **loser (0 to −1)** |
 
 </div>
 
@@ -121,7 +121,7 @@ That fee — also called the **juice** or **vig** — is the tournament equivale
 
 It's a genuine trade-off, and the answer surprises people:
 
-- **Live rake** tends to be a **higher percentage (often 10%) with a higher cap ($4–$6)** — but you only play ~30 hands an hour, so you pay it fewer times.
+- **Live rake** tends to be a **higher percentage (often 10%) with a higher cap ($3–$6)** — but you only play ~30 hands an hour, so you pay it fewer times.
 - **Online rake** is usually a **lower percentage (3–5%) with a smaller cap ($1–$3)** — but you might see 250+ hands an hour across multiple tables, so a volume grinder can pay *more* rake per hour than a live player despite the lower rate.
 
 The lesson: never judge rake by the percentage alone. What matters is the percentage **times how often you pay it.** A "cheap" 5% online game you four-table can cost you more than a "pricey" 10% live game — which is exactly why rakeback and table selection matter more online.

@@ -2,23 +2,24 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "holdem-cooler",
-  title: "O que é cooler no pôquer? A derrota inevitável — e por que não é bad beat",
+  title: "O que é cooler no poker? A derrota inevitável — e por que não é bad beat",
   seoTitle: "A mão que você não folda nem se quiser — o que é cooler?",
   desc: "Cooler é quando sua mão monstro esbarra numa maior e foldar nunca foi opção — e por que não é bad beat, com os exemplos clássicos.",
-  tldr: "Cooler é uma mão em que você perde um pote grande com uma mão fortíssima que jamais poderia foldar corretamente — como um par de reis esbarrando em ases, ou uma trinca perdendo para uma trinca maior. Diferente de um bad beat, você estava atrás o caminho inteiro e nenhuma carta de sorte te \"sugou\": você jogou certo e mesmo assim perdeu. É o tipo de desastre mais honesto do pôquer.",
+  tldr: "Cooler é uma mão em que você perde um pote grande com uma mão fortíssima que jamais poderia foldar corretamente — como um par de reis esbarrando em ases, ou uma trinca perdendo para uma trinca maior. Diferente de um bad beat, você estava atrás o caminho inteiro e nenhuma carta de sorte te \"sugou\": você jogou certo e mesmo assim perdeu. É o tipo de desastre mais honesto do poker.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-08-11",
+  updated: "2026-08-26",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🧊",
   image: "/images/holdem-cooler-hero.webp",
-  imageAlt: "Um jogador de pôquer atônito com a mão na cabeça após perder um pote grande, olhando o adversário puxar uma pilha alta de fichas pelo feltro verde",
+  imageAlt: "Um jogador de poker atônito com a mão na cabeça após perder um pote grande, olhando o adversário puxar uma pilha alta de fichas pelo feltro verde",
   tags: ["cooler", "o que é cooler no poker", "cooler vs bad beat", "significado de cooler no poker", "setup poker", "levei um cooler", "set over set", "exemplos de cooler"],
   content: `
 Ainda lembro da mão que me ensinou a palavra. Flopei uma trinca de reis, coloquei tudo no all-in no turn e virei minhas cartas já esticando o braço para o pote — então vi meu adversário abrir uma trinca de ases. Eu não tinha feito nada errado. Não havia jogada ruim para lamentar, nenhum projeto do qual eu devesse ter foldado. Eu estava batido desde o momento em que as fichas entraram, e ==não havia nada que eu pudesse ter feito==. Isso é um cooler, e assim que você entende, para de se culpar pelas derrotas que nunca foram suas para evitar.
 
-Um **cooler** é uma mão em que você faz uma mão fortíssima, perde um pote grande e ==g:foldar nunca foi uma opção de verdade== — a outra mão era simplesmente maior. Abaixo está exatamente o que isso significa, a diferença crucial entre um cooler e um **bad beat** (a maioria das pessoas confunde os dois), os confrontos clássicos de cooler, e a parte honesta que ninguém gosta: quando *"foi só um cooler"* é na verdade uma desculpa educada para um erro.
+Um **cooler** é uma mão em que você faz uma mão fortíssima, perde um pote grande e ==g:foldar nunca foi uma opção de verdade== — a outra mão era simplesmente maior. Abaixo está exatamente o que isso significa, a diferença crucial entre um cooler e um **bad beat** (a maioria das pessoas confunde os dois), os confrontos clássicos de cooler, e a parte honesta que ninguém gosta: quando *"foi só um cooler"* é na verdade uma desculpa educada para um erro. De todo o [glossário de poker](/pt/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp"), poucas entradas são tão mal usadas quanto essa.
 
 ---
 
@@ -33,13 +34,13 @@ Não foi culpa sua | A única derrota que não deve te dar tilt
 
 ---
 
-## O que é cooler no pôquer?
+## O que é cooler no poker?
 
 ![Uma imagem mostrando um par de reis perdendo para um par de ases, rotulada COOLER — duas mãos premium colidindo sem nenhuma jogada errada](/images/holdem-cooler-collision.webp "A essência de um cooler: duas mãos enormes colidem, a segunda melhor não consegue foldar, e ninguém fez nada errado")
 
 **Um cooler é uma mão em que duas mãos fortíssimas colidem, e o jogador perdedor estava sempre atrás mas não conseguia foldar corretamente.** A mão é simplesmente boa demais para abrir mão — então as fichas entram, e o segundo melhor monstro paga o melhor. Ninguém jogou mal. A derrota não foi um erro; foi o preço inevitável de segurar uma mão premium no mesmo momento em que outra pessoa segurava uma um pouco maior.
 
-A palavra pinta o quadro: você foi "resfriado" — sua mão quente esfriou sem culpa nenhuma sua. Você também vai ouvir usada como verbo ("**levei um cooler**", ou fui **coolerado**) e como quase sinônimo, **"setup,"** porque parece que o baralho foi *armado* para levar seu stack inteiro. O que torna um cooler diferente de uma derrota comum é que um bom jogador perderia exatamente as mesmas fichas todas as vezes. Reconhecer isso é o primeiro passo para não deixar essas mãos arruinarem sua sessão — a mesma disciplina que separa um jogador vencedor de um [fish](/pt/blog/holdem-fish "thumb:/images/holdem-fish-hero.webp").
+A palavra pinta o quadro: sua mão quente "esfriou" sem culpa nenhuma sua. Você também vai ouvir a palavra usada como verbo ("**levei um cooler**", ou fui **coolerado**) e como quase sinônimo, **"setup,"** porque parece que o baralho foi *armado* para levar seu stack inteiro. O que torna um cooler diferente de uma derrota comum é que um bom jogador perderia exatamente as mesmas fichas todas as vezes. Reconhecer isso é o primeiro passo para não deixar essas mãos arruinarem sua sessão — a mesma disciplina que separa um jogador vencedor de um [fish](/pt/blog/holdem-fish "thumb:/images/holdem-fish-hero.webp").
 
 ---
 
@@ -70,7 +71,7 @@ Aqui estão os mesmos jogadores mostrando os dois, para a ficha cair. **Bad beat
 
 ---
 
-## Exemplos clássicos de cooler (a família inteira)
+## Quais são os coolers mais comuns? (a família inteira)
 
 ![Infográfico de um botão de dealer dourado, duas cartas de mão viradas para baixo, e um flop K♦ 7♣ 2♠ no feltro verde](/images/holdem-button-dealer-board.webp "Coolers acontecem quando os dois jogadores têm mãos fortes demais para foldar — o dinheiro entra e o segundo melhor monstro paga")
 
@@ -82,10 +83,10 @@ Coolers vêm numa família reconhecível. Em todos, *ambas* as mãos são fortes
 |:---|:---|:---|
 | **Reis vs Ases** | KK all-in no preflop contra AA | KK é azarão de ~4,5:1 contra AA, mas você nunca folda reis no preflop |
 | **Set over set** | Sua trinca flopada vs uma trinca flopada maior | Uma trinca flopada quase nunca é foldada; a trinca menor está praticamente morta |
-| **Flush sobre flush** | Seu flush de K vs um flush de A | Um flush de rei parece enorme — você raramente coloca o cara no nut flush exato |
-| **Full house sobre full house** | Seu full house vs um full house maior | Um full house é um monstro; abrir mão de um é quase impossível |
+| **Flush over flush** | Seu flush de K vs um flush de A | Um flush de rei parece enorme — você raramente coloca o cara no nut flush exato |
+| **Full over full** | Seu full house vs um full house maior | Um full house é um monstro; abrir mão de um é quase impossível |
 | **Full house vs quadra** | Seus ases full vs uma quadra | O cooler supremo — um full house perdendo para uma quadra |
-| **Sequência sobre sequência** | Sua sequência vs uma sequência mais alta | Uma sequência feita numa mesa conectada é muito difícil de abrir mão |
+| **Straight over straight** | Sua sequência vs uma sequência mais alta | Uma sequência feita numa mesa conectada é muito difícil de abrir mão |
 
 </div>
 
@@ -107,20 +108,20 @@ Um mito importante para matar: **um cooler não precisa ser all-in.** A caracter
 
 ## Dá para evitar coolers de verdade?
 
-Na maioria das vezes não — e aqui está a parte que bons jogadores entendem e iniciantes não: **você nem deveria tentar.** A razão pela qual coolers te custam dinheiro é a mesma pela qual você *ganha* dinheiro: você coloca o máximo de fichas com mãos premium. Se você começasse a foldar trincas e full houses para desviar do raro cooler, sangraria muito mais valor em todas as mãos em que seu monstro era de fato o melhor. No longo prazo, pagar o cooler ocasional é simplesmente o custo de estacar todo mundo na esmagadora maioria das vezes.
+Na maioria das vezes não — e aqui está a parte que bons jogadores entendem e iniciantes não: **você nem deveria tentar.** A razão pela qual coolers te custam dinheiro é a mesma pela qual você *ganha* dinheiro: você coloca o máximo de fichas com mãos premium. Se você começasse a foldar trincas e full houses para desviar do raro cooler, sangraria muito mais valor em todas as mãos em que seu monstro era de fato o melhor. No longo prazo, pagar o cooler ocasional é simplesmente o custo de levar o stack de todo mundo na esmagadora maioria das vezes.
 
-Dito isso, "inevitável" tem um pequeno asterisco no mais alto nível. Jogadores habilidosos *conseguem* ocasionalmente abrir mão da segunda melhor mão quando a ação grita os nuts — um adversário que só faz essa linha com uma mão exata, um sizing que não faz sentido a menos que ele a tenha. Foldar uma mão grande nesse spot é uma das habilidades mais difíceis e avançadas do pôquer. Mas essas leituras são raras, e para a esmagadora maioria dos coolers a jogada correta e lucrativa é colocar o dinheiro e seguir em frente. Jogar bem sua [posição](/pt/blog/holdem-position-play) te ajuda a *ler* esses spots — não te deixa desviar do baralho.
+Dito isso, "inevitável" tem um pequeno asterisco no mais alto nível. Jogadores habilidosos *conseguem* ocasionalmente abrir mão da segunda melhor mão quando a ação grita os nuts — um adversário que só faz essa linha com uma mão exata, um sizing que não faz sentido a menos que ele a tenha. Foldar uma mão grande nesse spot é uma das habilidades mais difíceis e avançadas do poker. Mas essas leituras são raras, e para a esmagadora maioria dos coolers a jogada correta e lucrativa é colocar o dinheiro e seguir em frente. Jogar bem sua [posição](/pt/blog/holdem-position-play) te ajuda a *ler* esses spots — não te deixa desviar do baralho.
 
 ---
 
 ## Quando "foi um cooler" é só desculpa
 
-Agora a verdade incômoda, e a razão pela qual essa palavra importa para a sua evolução. **"Cooler" é a desculpa mais abusada do pôquer.** É muito mais confortável se convencer de que o baralho te armou do que admitir que você superjogou um top pair, pagou um river que não tinha motivo para pagar, ou colocou o stack mal. Jogadores perdedores se apoiam em "foi um cooler" precisamente porque isso encerra a conversa e não exige estudo.
+Agora a verdade incômoda, e a razão pela qual essa palavra importa para a sua evolução. **"Cooler" é a desculpa mais abusada do poker.** É muito mais confortável se convencer de que o baralho te armou do que admitir que você superjogou um top pair, pagou um river que não tinha motivo para pagar, ou colocou o stack mal. Jogadores perdedores se apoiam em "foi um cooler" precisamente porque isso encerra a conversa e não exige estudo.
 
 Existe um teste limpo, e jogadores honestos o usam depois de toda derrota grande:
 
 :::pull
-Eu faria exatamente a mesma jogada de novo, só com a informação que tinha na hora? Se **sim**, você levou um cooler. Se **não**, você jogou mal — e isso é um vazamento para corrigir, não azar.
+Eu faria exatamente a mesma jogada de novo, só com a informação que tinha na hora? Se **sim**, você levou um cooler. Se **não**, você jogou mal — e isso é um leak para corrigir, não azar.
 :::
 
 Um cooler de verdade significa que você jogou corretamente com uma mão forte e esbarrou numa maior. No momento em que seu "cooler" envolve um call do qual você não tinha certeza, um blefe do qual você se convenceu, ou um fold que deveria ter feito, ele deixa de ser um cooler e vira um **erro disfarçado.** Ser impiedosamente honesto sobre qual é qual — em vez de arquivar toda derrota como "azar" — é exatamente o que separa os jogadores que evoluem dos que continuam [fish](/pt/blog/holdem-fish) para sempre.
@@ -139,13 +140,13 @@ Como um cooler não carrega nenhuma lição, o único dano real que pode causar 
 ---
 
 :::readnext[Continue lendo]
-/pt/blog/holdem-fish | O que é fish no pôquer? | /images/holdem-fish-hero.webp
+/pt/blog/holdem-fish | O que é um fish no poker? | /images/holdem-fish-hero.webp
 /pt/blog/holdem-tiebreak-rules | Qual mão vence no showdown? | /images/holdem-tiebreak-hero.webp
 :::
 
 ## FAQ
 
-**Q. O que é cooler no pôquer?**
+**Q. O que é cooler no poker?**
 
 A. Cooler é uma mão em que você perde um pote grande com uma mão fortíssima que jamais poderia foldar corretamente — o outro jogador simplesmente tinha uma mão maior. Você estava atrás desde o momento em que as fichas entraram, e nenhuma jogada errada esteve envolvida. Um par de reis esbarrando num par de ases é o cooler de manual.
 
@@ -165,6 +166,10 @@ A. Sim — "setup" é um sinônimo informal de cooler. Enfatiza a sensação de 
 
 A. Sim — é o cooler mais clássico de todos. Reis são azarão de aproximadamente 4,5 para 1 contra ases no preflop, mas nenhum jogador razoável folda um par de reis antes do flop. Então o dinheiro entra, você fica atrás o caminho inteiro, e perde uma mão da qual jamais poderia ter escapado.
 
+**Q. Com que frequência acontece set over set?**
+
+A. Raramente — e é exatamente por isso que dói. Quando dois jogadores têm um par de bolso e os dois veem o flop, *ambos* floparem uma trinca acontece só cerca de 1% das vezes (mais ou menos 1 em 96). Flopar um set ou melhor com um par de bolso acontece cerca de ==11,8%== das vezes — por volta de 1 em 8,5 — então um segundo jogador flopar um set maior no mesmíssimo board é o tipo de cooler que a gente lembra por anos.
+
 **Q. O que significa "levar um cooler"?**
 
 A. Levar um cooler é perder um pote grande no lado errado de um cooler — você tinha uma mão forte demais para foldar e esbarrou numa maior. Usado corretamente, "levei um cooler" é na verdade uma admissão de que você jogou a mão certo e simplesmente perdeu para o baralho, não para o seu próprio erro.
@@ -183,9 +188,9 @@ A. Confirme que foi genuinamente inevitável, e então solte — não há liçã
 
 1. **Cooler é uma derrota inevitável com uma mão forte demais para foldar** — você estava atrás o caminho inteiro, nenhum suckout aconteceu, e um bom jogador perde as mesmas fichas todas as vezes.
 2. **É o oposto de um bad beat.** Um bad beat é estar na frente e ser superado; um cooler é estar atrás e nunca ter chance. Saber qual aconteceu te diz se há algo para corrigir.
-3. **Seja honesto sobre a diferença entre um cooler e um erro.** Se você faria a jogada de novo com a mesma informação, dê de ombros. Se não faria, não era um cooler — era um vazamento disfarçado.
+3. **Seja honesto sobre a diferença entre um cooler e um erro.** Se você faria a jogada de novo com a mesma informação, dê de ombros. Se não faria, não era um cooler — era um leak disfarçado.
 
-Os melhores jogadores perdem exatamente tantos coolers quanto todo mundo; eles só não deixam que causem dano extra. Registre como variância, proteja suas próximas decisões do tilt, e volte a superar a [mesa](/pt/blog/holdem-fish). O baralho resfria todo mundo eventualmente — vencer é o que você faz em todas as mãos que não são coolers.
+Os melhores jogadores perdem exatamente tantos coolers quanto todo mundo; eles só não deixam que causem dano extra. Registre como variância, proteja suas próximas decisões do tilt, e volte a superar a [mesa](/pt/blog/holdem-fish). O baralho esfria todo mundo eventualmente — vencer é o que você faz em todas as mãos que não são coolers.
 
 ---
 

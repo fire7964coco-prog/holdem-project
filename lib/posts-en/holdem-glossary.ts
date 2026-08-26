@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "This is a plain-English glossary of the poker terms that actually come up in a Texas Hold'em game, grouped by how you'll meet them — betting actions, positions, hands and board, player types, money, and table situations. Start with the 'most confused' terms below (check vs call, set vs trips, cooler vs bad beat), then browse by category. Terms with a deeper guide link straight to it.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-07-19",
+  updated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "📖",
@@ -42,7 +42,7 @@ If you only clear up a dozen terms, make it these — they're the ones that caus
 | These get mixed up | The difference |
 |:---|:---|
 | **Check vs Call** | A check risks **no chips** (only when no bet is live); a call **matches** an existing bet. |
-| **Blind vs Ante** | Blinds are **positional** forced bets (SB/BB); antes are paid by **everyone** to seed the pot. |
+| **Blind vs Ante** | Blinds are **positional** forced bets (SB/BB); antes seed the pot and come from **everyone** (in tournaments today, usually via a big blind ante). |
 | **Set vs Trips** | Both are three of a kind — a **set** uses a pocket pair; **trips** uses one hole card + a board pair. |
 | **Cooler vs Bad Beat** | A [cooler](/en/blog/holdem-cooler) = you were behind and couldn't fold; a [bad beat](/en/blog/holdem-bad-beat) = you were ahead and got outdrawn. |
 | **Value bet vs Bluff** | A value bet wants a **call from worse**; a bluff wants **better hands to fold**. |
@@ -80,7 +80,7 @@ Everything you can physically do on your turn. If you're brand new, start with t
 | **Bluff / Semi-bluff** | A bluff bets a weak hand to fold out better; a semi-bluff does it with a draw that can still improve. |
 | **Check-raise** | Check, then raise after an opponent bets — a strong, deceptive line (legal in modern rooms). |
 | **Min-raise** | The smallest legal raise. |
-| **String bet** | An illegal, undeclared reach-back for more chips; ruled a call, not a raise. |
+| **String bet** | An undeclared reach-back for more chips — only the first motion counts (usually ruled a call). Announcing "raise" first makes split motions legal. |
 | **Jam / Shove** | To move all-in. |
 | **Snap call** | An instant, no-hesitation call. |
 | **Hero call** | Calling with a weak hand because you've read the opponent as bluffing. |
@@ -190,7 +190,7 @@ Chips, stakes, and the two formats. The big fork is [cash game vs tournament](/e
 | Term | Meaning |
 |:---|:---|
 | **Blinds** | The forced SB/BB bets that start the action — also the name for stake levels ([blinds explained](/en/blog/holdem-blind-meaning)). |
-| **Ante** | A small forced bet from everyone to seed the pot, separate from the blinds. |
+| **Ante** | Traditionally a small forced bet from everyone to seed the pot, separate from the blinds — most tournaments now use a big blind ante paid by one seat for the table. |
 | **Pot** | The total chips being played for. |
 | **Side pot** | A separate pot made when a player is all-in and others keep betting. |
 | **Stack** | The chips in front of a player. |
@@ -240,9 +240,9 @@ The words for what's happening — and how to behave while it does.
 | **Range** | The full set of hands a player could hold in a spot; pros think in ranges, not single hands. |
 | **Cold deck** | An unlucky deal producing a cooler (originally a cheat's pre-stacked deck). |
 | **"Don't tap the glass"** | Don't criticize weak players — you'll scare away the ones you profit from. |
-| **Run it twice** | All-in players deal the remaining board twice, each for half the pot, to cut variance. |
+| **Run it twice** | All-in players deal the remaining board twice, each for half the pot, to cut variance — cash-game only, and everyone involved must agree. |
 | **Heads-up** | Playing one-on-one — either a two-player game or the final two of a tournament. |
-| **RFI (raise first in)** | Being the first player to enter the pot with a raise (an open-raise). |
+| **RFI (raise first in)** | The range-and-stats shorthand for the open-raise: how often you open the pot when no one has entered before you. |
 | **Splash the pot** | Throwing chips messily into the pot instead of stacking them in front of you — discouraged, since the amount can't be verified. |
 
 </div>

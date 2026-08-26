@@ -2,23 +2,24 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "holdem-glossary",
-  title: "Glossário de Texas Hold'em: todo termo de pôquer que você vai ouvir na mesa",
+  title: "Glossário de Texas Hold'em: todo termo de poker que você vai ouvir na mesa",
   seoTitle: "Das nuts ao fish — o glossário de Texas Hold'em",
-  desc: "Todo termo de pôquer que você vai ouvir na mesa, explicado simples e agrupado por situação: apostas, posições, mãos, gírias e os termos que todo mundo confunde.",
-  tldr: "Este é um glossário direto dos termos de pôquer que realmente aparecem numa mesa de Texas Hold'em, agrupados pela forma como você vai encontrá-los — ações de aposta, posições, mãos e board, tipos de jogador, dinheiro e situações de mesa. Comece pelos termos 'mais confundidos' logo abaixo (check vs call, set vs trips, cooler vs bad beat) e depois navegue por categoria. Os termos com um guia mais completo linkam direto pra ele.",
+  desc: "Todo termo de poker que você vai ouvir na mesa, explicado de forma simples e agrupado por situação: apostas, posições, mãos, gírias e confusões comuns.",
+  tldr: "Este é um glossário direto dos termos de poker que realmente aparecem numa mesa de Texas Hold'em, agrupados pela forma como você vai encontrá-los — ações de aposta, posições, mãos e board, tipos de jogador, dinheiro e situações de mesa. Comece pelos termos 'mais confundidos' logo abaixo (check vs call, set vs trips, cooler vs bad beat) e depois navegue por categoria. Os termos com um guia mais completo linkam direto pra ele.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-07-05",
+  updated: "2026-08-26",
+  masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "📖",
   image: "/images/holdem-glossary-hero.webp",
-  imageAlt: "Uma mesa de Texas Hold'em com fichas, o botão do dealer e as cartas comunitárias espalhadas no feltro verde, representando a linguagem do pôquer",
-  tags: ["termos de poker", "glossário de poker", "termos texas holdem", "gírias de poker", "terminologia de poker", "vocabulário de poker", "palavras de poker", "o que significa no poker"],
+  imageAlt: "Uma mesa de Texas Hold'em com fichas, o botão do dealer e as cartas comunitárias espalhadas no feltro verde, representando a linguagem do poker",
+  tags: ["termos de poker", "termos de poker em português", "termos de poker em inglês", "glossário de poker", "dicionário de poker", "gírias de poker", "termos texas holdem", "o que significa no poker"],
   content: `
 Na primeira vez que sentei num jogo ao vivo, a mesa bem que podia estar falando outra língua. Um cara estava "under the gun", outro "deu three-bet no cutoff", o dealer perguntou se eu queria "run it twice" e, quando perdi com os reis, me disseram que "nem foi bad beat, foi só um [cooler](/pt/blog/holdem-cooler "thumb:/images/holdem-cooler-hero.webp")". Acenei com a cabeça como se tivesse entendido. Não entendi nada.
 
-O pôquer tem um vocabulário próprio, e sabê-lo faz duas coisas: te impede de parecer um [fish](/pt/blog/holdem-fish "thumb:/images/holdem-fish-hero.webp") e te deixa acompanhar de verdade a estratégia que dá dinheiro. Este glossário reúne os termos que realmente aparecem numa mesa de Texas Hold'em — agrupados por ==g:como você vai de fato esbarrar neles==, não jogados numa parede gigante de A a Z. Comece pelos termos que as pessoas mais confundem e depois navegue pela categoria que você precisar. Onde um termo tem um guia completo, você vai achar um link direto pra ele.
+O poker tem um vocabulário próprio, e sabê-lo faz duas coisas: te impede de parecer um [fish](/pt/blog/holdem-fish "thumb:/images/holdem-fish-hero.webp") e te deixa acompanhar de verdade a estratégia que dá dinheiro. Este glossário funciona como um dicionário dos termos — em inglês e em português — que realmente aparecem numa mesa de Texas Hold'em, agrupados por ==g:como você vai de fato esbarrar neles==, não jogados numa parede gigante de A a Z. Comece pelos termos que as pessoas mais confundem e depois navegue pela categoria que você precisar. Onde um termo tem um guia completo, você vai achar um link direto pra ele.
 
 ---
 
@@ -26,8 +27,8 @@ O pôquer tem um vocabulário próprio, e sabê-lo faz duas coisas: te impede de
 
 :::stripe
 6 | Categorias, agrupadas por como você as encontra
-80+ | Termos definidos em português simples
-8 | Pares "mais confundidos", resolvidos primeiro
+100+ | Termos definidos em português simples
+8 | Confusões mais comuns, resolvidas primeiro
 → | Guias mais completos linkados a partir dos termos-chave
 :::
 
@@ -42,7 +43,7 @@ Se você só for esclarecer uma dúzia de termos, que sejam estes — são os qu
 | A galera confunde | A diferença |
 |:---|:---|
 | **Check vs Call** | Um check não arrisca **nenhuma ficha** (só quando não há aposta ativa); um call **iguala** uma aposta que já existe. |
-| **Blind vs Ante** | Blinds são apostas forçadas **posicionais** (SB/BB); antes são pagos por **todo mundo** pra alimentar o pote. |
+| **Blind vs Ante** | Blinds são apostas forçadas **posicionais** (SB/BB); o ante alimenta o pote e vem de **todo mundo** (hoje, em torneios, geralmente via big blind ante). |
 | **Set vs Trips** | Ambos são uma trinca — um **set** usa um par de bolso; **trips** usa uma carta da mão + um par no board. |
 | **Cooler vs Bad Beat** | Um [cooler](/pt/blog/holdem-cooler) = você estava atrás e não tinha como largar; um [bad beat](/pt/blog/holdem-bad-beat) = você estava na frente e foi ultrapassado. |
 | **Value bet vs Bluff** | Uma value bet quer um **call de mão pior**; um bluff quer que **mãos melhores desistam**. |
@@ -78,9 +79,9 @@ Tudo o que você pode fazer fisicamente na sua vez. Se você é totalmente novat
 | **Donk bet** | Liderar contra o agressor da street anterior estando fora de posição (já foi visto como erro, hoje é uma ferramenta de baixa frequência). |
 | **Value bet** | Uma aposta com uma mão forte esperando ser paga por uma pior. |
 | **Bluff / Semi-bluff** | Um bluff aposta uma mão fraca pra fazer as melhores largarem; um semi-bluff faz isso com um draw que ainda pode melhorar. |
-| **Check-raise** | Dar check e depois aumentar depois que o oponente aposta — uma linha forte e enganosa (legal nas salas modernas). |
+| **Check-raise** | Dar check e depois aumentar depois que o oponente aposta — uma linha forte e enganosa (permitida nas salas modernas). |
 | **Min-raise** | O menor aumento legal. |
-| **String bet** | Um movimento ilegal e não declarado de voltar pra buscar mais fichas; é julgado como call, não raise. |
+| **String bet** | Voltar pra buscar mais fichas sem anunciar — só vale o que saiu no primeiro movimento (na prática, quase sempre vira call). Declarar "raise" em voz alta antes protege a jogada. |
 | **Jam / Shove** | Ir de all-in. |
 | **Snap call** | Um call instantâneo, sem hesitação. |
 | **Hero call** | Pagar com uma mão fraca porque você leu que o oponente está blefando. |
@@ -115,7 +116,7 @@ Pra ver o mapa completo dos assentos, veja o [guia de posições na mesa](/pt/bl
 
 ## Mãos e o board
 
-![Infográfico de um botão de dealer dourado e duas hole cards viradas pra baixo com um flop K♦ 7♣ 2♠ no feltro verde](/images/holdem-button-dealer-board.webp "O board e suas hole cards se combinam na sua melhor mão de cinco cartas — a maior parte do vocabulário de pôquer descreve exatamente como")
+![Infográfico de um botão de dealer dourado e duas hole cards viradas pra baixo com um flop K♦ 7♣ 2♠ no feltro verde](/images/holdem-button-dealer-board.webp "O board e suas hole cards se combinam na sua melhor mão de cinco cartas — a maior parte do vocabulário de poker descreve exatamente como")
 
 As cartas em si, e o que você faz com elas. Novato no fluxo das streets? Comece pela [ordem do jogo](/pt/blog/holdem-game-order).
 
@@ -134,11 +135,15 @@ As cartas em si, e o que você faz com elas. Novato no fluxo das streets? Comece
 | **Set** | Trinca usando um **par de bolso** + uma carta do board (bem disfarçada). |
 | **Trips** | Trinca usando **uma hole card** + um par no board (controle de kicker pior). |
 | **Two pair** | Dois pares diferentes. |
+| **Boat / Full boat** | Gíria (mais americana) pra **full house** — no Brasil você vai ouvir mais "full". |
+| **Quads** | Gíria pra **quadra** (four of a kind). |
 | **Made hand** | Uma mão já formada, em oposição a um draw. |
-| **Draw** | Uma mão que precisa melhorar — ex.: um **flush draw** (4 pro flush) ou um straight draw. |
-| **Gutshot** | Um straight draw por dentro precisando de um valor do meio (4 [outs](/pt/blog/holdem-outs)). |
+| **Draw (projeto)** | Uma mão que precisa melhorar — ex.: um **flush draw** (4 pro flush) ou um straight draw. |
+| **Outs** | As cartas que ainda podem transformar sua mão na vencedora — [como contá-las](/pt/blog/holdem-outs) antes de pagar qualquer draw. |
+| **Gutshot** | Um straight draw por dentro precisando de um valor do meio (4 outs). |
 | **Open-ender** | Um straight draw aberto dos dois lados, que fecha em qualquer ponta (8 outs). |
 | **Backdoor** | Um draw que precisa de **duas** cartas seguidas (turn *e* river). |
+| **Runner-runner** | Fechar a mão com o turn **e** o river — um backdoor draw que completou (ex.: "fechou o flush no runner-runner"). |
 | **Overcard** | Uma carta mais alta que o board. |
 | **Suited connectors** | Duas cartas consecutivas do mesmo naipe (ex.: 8♥9♥). |
 | **Broadway** | O straight 10-J-Q-K-A, o straight mais alto. |
@@ -164,7 +169,7 @@ O zoológico de apelidos pras pessoas do outro lado do feltro. A análise comple
 |:---|:---|
 | **Fish** | Um jogador recreativo fraco e perdedor — a fonte de lucro da mesa. |
 | **Shark** | Um jogador forte e vencedor que ataca os mais fracos. |
-| **Whale** | Um recreativo rico e fraco em stakes altas — um "fish com bolso fundo". |
+| **Whale** | Um recreativo rico e fraco em stakes altos — um "fish com bolso fundo". |
 | **Nit** | Um jogador extremamente fechado que só joga mãos premium. |
 | **Donkey (donk)** | Um termo pejorativo pra um jogador ruim e sem habilidade. |
 | **Calling station** | Um jogador passivo que paga demais e raramente larga ou aumenta. |
@@ -187,18 +192,24 @@ Fichas, stakes e os dois formatos. A grande bifurcação é [cash game vs tornei
 | Termo | Significado |
 |:---|:---|
 | **Blinds** | As apostas forçadas SB/BB que iniciam a ação — também o nome dos níveis de stake ([blinds explicados](/pt/blog/holdem-blind-meaning)). |
-| **Ante** | Uma pequena aposta forçada de todo mundo pra alimentar o pote, separada dos blinds. |
+| **Ante** | Tradicionalmente, uma pequena aposta forçada de todo mundo pra alimentar o pote, separada dos blinds — hoje a maioria dos torneios usa o big blind ante, em que um só assento paga pela mesa. |
 | **Pot** | O total de fichas em disputa (pote). |
 | **Side pot** | Um pote separado criado quando um jogador está all-in e os outros continuam apostando. |
 | **Stack** | As fichas na frente de um jogador. |
-| **Bankroll** | O dinheiro reservado pro pôquer no geral — não as fichas na mesa. |
+| **Bankroll** | O dinheiro reservado pro poker no geral — não as fichas na mesa. |
 | **Buy-in** | O valor necessário pra entrar num jogo ou torneio. |
 | **Rake** | A parte que a casa tira de cada pote — [guia completo](/pt/blog/holdem-rake). |
 | **Rakeback** | Uma devolução que retorna parte do rake que você pagou. |
 | **Straddle** | Um blind opcional (em geral 2× BB) que compra a última ação pré-flop — [guia completo](/pt/blog/holdem-straddle). |
 | **Cash game** | Fichas de valor real, entra ou sai a qualquer hora, blinds fixos. |
+| **No-limit (NLH) / Limit** | Num jogo no-limit você pode apostar qualquer valor até o stack inteiro; no limit cada aposta tem tamanho fixo. O Hold'em é quase sempre no-limit (no pot-limit, o formato do PLO, o teto de cada aposta é o tamanho do pote). |
+| **PLO** | Pot-Limit Omaha — uma variante popular em que você recebe quatro hole cards e precisa usar exatamente duas (não é o mesmo jogo, mas você vai ouvir o nome). |
 | **Tournament** | Buy-in fixo, blinds subindo, joga até quebrar ou vencer. |
 | **Freezeout** | Um torneio sem rebuys — quebrou, acabou. |
+| **GTD (garantido)** | A premiação mínima garantida de um torneio, paga mesmo que as inscrições não cubram o valor. |
+| **Bolha (bubble)** | A última posição antes das premiações de um torneio — quem quebra ali sai sem nada ([guia da bolha](/pt/blog/holdem-bubble)). |
+| **ITM (in the money)** | Terminar um torneio dentro das posições pagas — sobreviveu à bolha, garantiu prêmio. |
+| **Hand-for-hand (mão a mão)** | Perto da bolha da premiação, todas as mesas jogam uma mão por vez, pra ninguém enrolar até entrar no dinheiro. |
 | **Bounty (knockout)** | Um torneio que paga um prêmio por cada jogador que você elimina. |
 | **Sit & Go (SNG)** | Um torneio pequeno que começa assim que enche. |
 | **MTT** | Um torneio multi-mesa que junta as mesas conforme os jogadores quebram. |
@@ -232,8 +243,12 @@ As palavras pro que está acontecendo — e como se comportar enquanto acontece.
 | **GTO** | Game Theory Optimal — uma estratégia equilibrada e inexplorável vinda dos solvers. |
 | **Range** | O conjunto completo de mãos que um jogador pode ter num spot; os pros pensam em ranges, não em mãos únicas. |
 | **Cold deck** | Uma distribuição azarada que produz um cooler (originalmente um baralho pré-arrumado de trapaceiro). |
-| **"Don't tap the glass"** | Não critique jogadores fracos — você vai espantar aqueles de quem lucra. |
-| **Run it twice** | Os jogadores all-in distribuem o resto do board duas vezes, cada uma valendo metade do pote, pra reduzir a variância. |
+| **"Don't tap the glass" (não bata no vidro)** | Não critique jogadores fracos — você vai espantar aqueles de quem lucra. |
+| **Run it twice** | Os jogadores all-in distribuem o resto do board duas vezes, cada uma valendo metade do pote, pra reduzir a variância — coisa de cash game, e só com acordo de todos os envolvidos. |
+| **Heads-up** | Jogar um contra um — seja uma mesa de dois jogadores, seja os dois últimos de um torneio. |
+| **RFI (raise first in)** | A sigla de ranges e estatísticas pro open-raise: com que frequência você abre o pote quando ninguém entrou antes. |
+| **Splash the pot** | Jogar as fichas de qualquer jeito no meio do pote em vez de empilhá-las na sua frente — barrado pelo dealer, porque o valor não dá pra conferir. |
+| **GG / GL / NH** | "Good game", "good luck" e "nice hand" — o padrão do chat online: GG marca o fim (em geral de quem foi eliminado), GL deseja sorte, NH elogia uma mão bem jogada. |
 
 </div>
 
@@ -241,16 +256,16 @@ As palavras pro que está acontecendo — e como se comportar enquanto acontece.
 
 :::readnext[Continue lendo]
 /pt/blog/holdem-cooler | Cooler vs Bad Beat, explicados | /images/holdem-cooler-hero.webp
-/pt/blog/holdem-fish | O que é um fish no pôquer? | /images/holdem-fish-hero.webp
+/pt/blog/holdem-fish | O que é um fish no poker? | /images/holdem-fish-hero.webp
 :::
 
 ## FAQ
 
-**Q. Quais são os termos de pôquer mais comuns que todo iniciante deveria saber?**
+**Q. Quais são os termos de poker mais comuns que todo iniciante deveria saber?**
 
 A. O essencial são as ações de aposta (check, bet, call, raise, fold, all-in), as streets (flop, turn, river), as posições (button, small blind, big blind, UTG) e um punhado de termos de mão (the nuts, kicker, set, top pair). Aprenda os pares "mais confundidos" lá de cima — principalmente check vs call e set vs trips — e você vai acompanhar quase qualquer conversa de mesa.
 
-**Q. O que significa UTG (under the gun) no pôquer?**
+**Q. O que significa UTG (under the gun) no poker?**
 
 A. UTG é o assento imediatamente à esquerda do big blind, então esse jogador é o primeiro a agir antes do flop. Como todo mundo age depois dele com mais informação, UTG é a posição mais fechada — você deve abrir as poucas e mais fortes mãos de lá.
 
@@ -266,17 +281,21 @@ A. Ambos são uma trinca e valem exatamente o mesmo, mas são formados de jeitos
 
 A. Num bad beat você era o favorito quando o dinheiro entrou e foi ultrapassado por uma carta de sorte. Num cooler você esteve atrás o tempo todo com uma mão forte demais pra largar, e nenhuma carta de sorte foi necessária — a mão maior estava na frente desde o começo. Teste rápido: se o oponente precisou *melhorar* pra ganhar, é bad beat; se não, é cooler.
 
-**Q. O que é um 3-bet no pôquer, e por que o primeiro aumento não é o "1-bet"?**
+**Q. O que é um 3-bet no poker, e por que o primeiro aumento não é o "1-bet"?**
 
 A. Um 3-bet é o primeiro re-raise antes do flop. A contagem inclui os blinds: o big blind é tratado como a primeira aposta, o aumento de abertura é a segunda aposta ("2-bet"), então o próximo aumento é o terceiro — o 3-bet. Um re-raise em cima disso é um 4-bet. Confunde os iniciantes porque o "primeiro aumento" já é a segunda aposta da sequência.
 
-**Q. O que significa "the nuts" no pôquer?**
+**Q. O que significa "the nuts" no poker?**
 
 A. The nuts é a melhor mão possível dadas as cartas no board naquele momento. Se você tem the nuts, nenhuma outra mão pode te vencer agora — embora uma carta posterior possa mudar qual é the nuts. As "second nuts" são a segunda melhor mão possível.
 
-**Q. O que significam VPIP e PFR nas estatísticas de pôquer?**
+**Q. O que significam VPIP e PFR nas estatísticas de poker?**
 
 A. VPIP (Voluntarily Put money In Pot) é a porcentagem de mãos que um jogador escolhe jogar no pré-flop — uma medida de quão solto ou fechado ele é. PFR (Pre-Flop Raise) é a porcentagem em que ele aumenta no pré-flop — uma medida de agressão. O PFR nunca pode ser maior que o VPIP, e uma diferença grande entre os dois marca um jogador passivo e de muito call.
+
+**Q. Os termos de poker são em inglês ou têm tradução em português?**
+
+A. Na prática, a mesa brasileira mistura os dois. Os termos técnicos circulam em inglês mesmo — call, fold, raise, all-in, tilt — e é assim que você vai ouvi-los em qualquer sala ou transmissão. Alguns ganharam forma aportuguesada no dia a dia, como "pagar" (call), "aumentar" (raise) e o verbo "foldar". A exceção são os nomes das mãos — trinca, quadra, sequência — e o [guia de ranking de mãos](/pt/blog/holdem-hand-rankings) traz os dois nomes de cada uma.
 
 ---
 

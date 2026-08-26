@@ -2,23 +2,24 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "holdem-fish",
-  title: "O que é um fish no pôquer? Como identificar um — e garantir que não é você",
-  seoTitle: "Se você não acha o fish, é você — o que é um fish no pôquer?",
+  title: "O que é um fish no poker? Como identificar um — e garantir que não é você",
+  seoTitle: "Se você não acha o fish, é você — o que é um fish no poker?",
   desc: "Fish é o jogador fraco de quem a mesa inteira lucra. Como identificar um, a gíria shark/whale/nit/donkey decifrada, e como garantir que o fish não é você.",
-  tldr: "\"Fish\" é a gíria do pôquer para um jogador fraco e perdedor, aquele com quem os jogadores mais fortes (\"sharks\") faturam. Fish jogam mãos demais, pagam demais e não conseguem dar fold — e a frase famosa avisa: se você não consegue identificar o fish na sua mesa, o fish é você. É a leitura mais importante do jogo: ache o fish, ou vire um.",
+  tldr: "\"Fish\" é a gíria do poker para um jogador fraco e perdedor, aquele com quem os jogadores mais fortes (\"sharks\") faturam. Fish jogam mãos demais, pagam demais e não conseguem dar fold — e a frase famosa avisa: se você não consegue identificar o fish na sua mesa, o fish é você. É a leitura mais importante do jogo: ache o fish, ou vire um.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-08-11",
+  updated: "2026-08-26",
+  masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🐟",
   image: "/images/holdem-fish-hero.webp",
-  imageAlt: "Um jogador recreativo relaxado numa mesa de pôquer empurrando uma pilha grande de fichas para o pote enquanto adversários mais afiados observam em silêncio",
+  imageAlt: "Um jogador recreativo relaxado numa mesa de poker empurrando uma pilha grande de fichas para o pote enquanto adversários mais afiados observam em silêncio",
   tags: ["fish", "o que é fish no poker", "significado de fish no poker", "como identificar um fish no poker", "fish vs shark", "sou eu o fish", "tipos de jogador no poker", "como parar de ser um fish"],
   content: `
-A primeira vez que alguém numa mesa de cassino me chamou de fish baixinho, eu nem percebi que tinha sido ofendido. Achava que estava jogando bem — via um monte de flops, pagava para "manter todo mundo honesto", corria atrás de todo projeto porque ==sabe como é==. Seis meses e vários buy-ins perdidos depois, entendi: eu *era* o fish. Todo mundo na mesa já sabia disso antes de eu sentar.
+A primeira vez que alguém numa mesa de clube me chamou de fish baixinho, eu nem percebi que tinha sido ofendido. Achava que estava jogando bem — via um monte de flops, pagava para "manter todo mundo honesto", corria atrás de todo projeto porque ==sabe como é==. Seis meses e vários buy-ins perdidos depois, entendi: eu *era* o fish. Todo mundo na mesa já sabia disso antes de eu sentar.
 
-Um **fish** é a gíria do pôquer para um jogador fraco e perdedor — aquele com quem os jogadores mais fortes faturam em silêncio. É o rótulo mais importante do jogo, porque toda sessão lucrativa começa com a mesma pergunta: *quem é o fish aqui?* Abaixo está exatamente o que a palavra significa, ==g:como identificar um fish== na primeira volta de mesa, todo o zoológico de gírias de tipos de jogador (shark, whale, nit, donkey), a verdade por trás da famosa frase do "ache o otário" — e um autoexame honesto para que o fish nunca seja você.
+Um **fish** é a gíria do poker para um jogador fraco e perdedor — aquele com quem os jogadores mais fortes faturam em silêncio. É o rótulo mais importante do jogo, porque toda sessão lucrativa começa com a mesma pergunta: *quem é o fish aqui?* Abaixo está exatamente o que a palavra significa, ==g:como identificar um fish== na primeira volta de mesa, todo o zoológico de gírias de tipos de jogador (shark, whale, nit, donkey), a verdade por trás da famosa frase do "ache o otário" — e um autoexame honesto para que o fish nunca seja você. É a primeira palavra que a maioria aprende do [vocabulário de mesa](/pt/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp") do poker, e aqui está tudo por trás dela.
 
 ---
 
@@ -33,7 +34,7 @@ Shark | O oposto — o jogador vencedor
 
 ---
 
-## O que "fish" significa no pôquer?
+## O que "fish" significa no poker?
 
 **Fish é um jogador fraco, inexperiente ou perdedor — a fonte de dinheiro que todo mundo na mesa está tentando ganhar.** É o termo guarda-chuva para um jogador ruim, e é definido inteiramente pelo seu oposto: o **shark**, o jogador forte que "se alimenta" dos fish. Se os sharks são os predadores, os fish são o que está no cardápio.
 
@@ -43,11 +44,11 @@ A palavra não tem a ver com o quanto a pessoa é *simpática* ou o quanto ela c
 
 ## Por que jogadores ruins são chamados de "fish"?
 
-![Infográfico visto de cima de uma mesa de pôquer de pub com um board K♦ 7♣ 2♠ 9♥ 3♦, pilhas de fichas e o botão do dealer](/images/holdem-pub-players-table.webp "Toda mesa tem uma cadeia alimentar: os sharks identificam o fish em silêncio e constroem o lucro em torno dele")
+![Infográfico visto de cima de uma mesa de poker de pub com um board K♦ 7♣ 2♠ 9♥ 3♦, pilhas de fichas e o botão do dealer](/images/holdem-pub-players-table.webp "Toda mesa tem uma cadeia alimentar: os sharks identificam o fish em silêncio e constroem o lucro em torno dele")
 
-A metáfora vem direto da cadeia alimentar do oceano. **Sharks comem fish.** Um jogador habilidoso, agressivo e vencedor circula a mesa procurando o jogador fraco e passivo de quem pode lucrar — e esse jogador é o fish. A imagem está tão enraizada na cultura do pôquer que uma dúzia de termos relacionados brotaram dela (whale, minnow, guppy), todos descrevendo graus da mesma coisa.
+A metáfora vem direto da cadeia alimentar do oceano. **Sharks comem fish.** Um jogador habilidoso, agressivo e vencedor circula a mesa procurando o jogador fraco e passivo de quem pode lucrar — e esse jogador é o fish. A imagem está tão enraizada na cultura do poker que uma dúzia de termos relacionados brotaram dela (whale, minnow, guppy), todos descrevendo graus da mesma coisa.
 
-Existe uma frase companheira que você vai ouvir o tempo todo: **"Não bata no vidro."** Ela vem das placas de aquário que pedem aos visitantes para não baterem no tanque e assustarem os peixes. No pôquer significa: *nunca critique, ensine ou constranja um jogador fraco.* Um jogador perdedor que se sente burro levanta e vai embora — levando as fichas junto. Bons jogadores querem o fish confortável, entretido e ficando para mais um buy-in. É por isso que jogadores experientes ficam amigáveis com quem está enchendo o stack deles.
+Existe uma frase companheira que você vai ouvir o tempo todo: **"Não bata no vidro."** Ela vem das placas de aquário que pedem aos visitantes para não baterem no tanque e assustarem os peixes. No poker significa: *nunca critique, ensine ou constranja um jogador fraco.* Um jogador perdedor que se sente burro levanta e vai embora — levando as fichas junto. Bons jogadores querem o fish confortável, entretido e ficando para mais um buy-in. É por isso que jogadores experientes ficam amigáveis com quem está enchendo o stack deles.
 
 ---
 
@@ -70,11 +71,11 @@ Nenhum sinal isolado é prova — até bons jogadores dão limp de vez em quando
 
 ---
 
-## O zoológico do pôquer: fish vs shark vs whale vs nit vs donkey
+## Qual a diferença entre fish, shark, whale, nit e donkey?
 
-![Um visual simples da cadeia alimentar do pôquer mostrando quatro tipos de jogador como ícones de fichas de pôquer — FISH, SHARK, WHALE e NIT — do mais fraco ao mais forte](/images/holdem-fish-food-chain.webp "A cadeia alimentar do pôquer num relance: o fish alimenta os sharks, o whale é o grande prêmio, e o nit só fica sentado quieto")
+![Um visual simples da cadeia alimentar do poker mostrando quatro tipos de jogador como ícones de fichas de poker — FISH, SHARK, WHALE e NIT — do mais fraco ao mais forte](/images/holdem-fish-food-chain.webp "A cadeia alimentar do poker num relance: o fish alimenta os sharks, o whale é o grande prêmio, e o nit só fica sentado quieto")
 
-"Fish" é a manchete, mas a gíria do pôquer tem todo um bestiário de tipos de jogador — e a maioria dos glossários só define dois ou três. Aqui está a tabela única que coloca todos lado a lado, para você nomear exatamente contra quem está jogando:
+"Fish" é a manchete, mas a gíria do poker tem todo um bestiário de tipos de jogador. Aqui está a tabela que coloca todos lado a lado, para você nomear exatamente contra quem está jogando:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -84,30 +85,30 @@ Nenhum sinal isolado é prova — até bons jogadores dão limp de vez em quando
 | **Shark** | Jogador forte e vencedor | Tight-agressivo, adaptável | Evite — escolha mesas mais moles |
 | **Whale** | Um fish *rico* que perde **alto** | Muito frouxo, stakes altos, não liga | Igual a um fish, recompensa maior |
 | **Nit** | Extremamente tight, avesso a risco | Só mãos premium, nunca blefa | Dê fold aos raises dele; roube os blinds |
-| **Donkey (donk)** | Fish que faz jogadas especialmente *ruins* | Ilógico, esbanjador | Igual a um fish — deixe ele se enforcar sozinho |
+| **Donkey (donk)** | Fish que faz jogadas especialmente *ruins* | Ilógico, joga spew | Igual a um fish — deixe ele se enforcar sozinho |
 | **Calling station** | Pagador passivo em excesso | Paga qualquer coisa, nunca aumenta/folda | Value bet sem parar, nunca blefe |
 | **Reg** | Um "regular" de um stake | Varia — nem sempre um vencedor | Leia cada um individualmente |
 | **Grinder** | Pro/semipro jogando alto volume | Sólido, constante, baixa variância | Evite; ache o jogador recreativo |
 | **TAG** | Um estilo *vencedor* (tight-agressivo) | Range estreito, mas aposta e aumenta forte | Não é fish — respeite as apostas dele |
-| **LAG** | Um estilo *vencedor* (loose-agressivo) | Range amplo, pressão sem parar, blefa muito | Não foldar demais — abra seus calls e 3-bets e pegue mais blefes |
+| **LAG** | Um estilo *vencedor* (loose-agressivo) | Range amplo, pressão sem parar, blefa muito | Não foldar demais — alargue seu range de call e 3-bet e pegue mais blefes |
 
 </div>
 
-Três distinções que os concorrentes vivem embaralhando, que vale a pena acertar:
+Três distinções que todo mundo vive embaralhando, que vale a pena acertar:
 
 - **Fish ≠ whale.** Um whale é um *subconjunto* de fish — um que perde quantias **grandes**, geralmente rico e jogando stakes altos de forma frouxa. Todo whale é fish; nem todo fish é whale. Um whale no jogo é o motivo pelo qual os sharks aparecem.
 - **Fish ≠ donkey.** Quase sinônimos, mas "donkey" enfatiza *decisões ruins* e é mais duro; "fish" enfatiza *inexperiência e derrota*. Chamar alguém de donk é mais um insulto.
-- **Um nit não é um fish.** Nits são *tight* — muitas vezes zerados ou levemente vencedores. São exploráveis porque o range deles é transparente, mas não estão esbanjando fichas como um fish. E **LAG/TAG são estilos vencedores**, não rótulos de jogador fraco — só as versões quebradas deles (o imprudente "maniac", o congelado "TAG fish") é que são leaks.
+- **Um nit não é um fish.** Nits são *tight* — muitas vezes zerados ou levemente vencedores. São exploráveis porque o range deles é transparente, mas não estão esbanjando fichas como um fish. E **LAG/TAG são estilos vencedores**, não rótulos de jogador fraco — só as versões quebradas deles (o imprudente "maniac", o travado "TAG fish") é que são leaks.
 
 ---
 
 ## "Se você não acha o otário…": a frase famosa, corrigida
 
-![Uma mão de pôquer fraca e impossível de jogar segurada sobre o feltro, ilustrando os calls frouxos e a péssima seleção de mãos que marcam um fish](/images/holdem-starting-hands-weak-ace-trap.webp "O autoexame que importa: se você está pagando raises com mãos assim, a mesa já te identificou")
+![Uma mão de poker fraca e impossível de jogar segurada sobre o feltro, ilustrando os calls frouxos e a péssima seleção de mãos que marcam um fish](/images/holdem-starting-hands-weak-ace-trap.webp "O autoexame que importa: se você está pagando raises com mãos assim, a mesa já te identificou")
 
-Você já ouviu alguma versão dela: *"Se você não conseguir achar o fish na mesa na primeira meia hora, o fish é você."* É a frase mais citada do pôquer — e quase todo mundo erra um pouquinho.
+Você já ouviu alguma versão dela: *"Se você não conseguir achar o fish na mesa na primeira meia hora, o fish é você."* É a frase mais citada do poker — e quase todo mundo erra um pouquinho.
 
-A frase que a maioria lembra é do filme de 1998 **Rounders**, dita pelo personagem de Matt Damon:
+A frase que a maioria lembra é do filme de 1998 **Rounders** (no Brasil, *Cartas na Mesa*), dita pelo personagem de Matt Damon:
 
 :::pull
 "Se você não consegue achar o otário na sua primeira meia hora à mesa, então o otário é você."
@@ -127,13 +128,13 @@ Aqui vem a parte desconfortável. Se você leu até aqui torcendo baixinho para 
 
 | | VPIP (mãos jogadas) | PFR (mãos aumentadas) | A leitura |
 |:---|:---:|:---:|:---|
-| **Jogador sólido** | 15–22% | 12–18% | Tight, agressivo, diferença pequena |
+| **Jogador sólido** | 15–22% | 12–18% (nunca maior que o VPIP) | Tight, agressivo, diferença pequena |
 | **Fish** | 40–70% | abaixo de 10% | Frouxo e passivo — joga tudo, lidera nada |
 | **Nit** | abaixo de 12% | abaixo de 8% | Tight demais — previsível, não é fish |
 
 </div>
 
-A assinatura do fish é a **diferença VPIP alto / PFR baixo**: você está jogando 45% das mãos mas só aumentando 5% de todas as mãos distribuídas. Isso significa que você está *pagando* seu caminho para dentro dos potes e torcendo — o maior leak do pôquer. Além das estatísticas, se pergunte com honestidade:
+A assinatura do fish é a **diferença VPIP alto / PFR baixo**: você está jogando 45% das mãos mas só aumentando 5% de todas as mãos distribuídas. Isso significa que você está *pagando* seu caminho para dentro dos potes e torcendo — o maior leak do poker. Além das estatísticas, se pergunte com honestidade:
 
 - Você paga raises no pré-flop com mãos como K‑7 offsuit ou Q‑9 porque "são meio jogáveis"?
 - Você dá limp, depois paga um raise, planejando "acertar o flop"?
@@ -146,9 +147,9 @@ Se você está balançando a cabeça, isso não é uma sentença — é um prese
 
 ## Como parar de ser um fish
 
-A boa notícia: os leaks do fish são os *mais fáceis* de corrigir no pôquer, porque todos têm a ver com fazer **menos**, não com aprender alguma jogada secreta. Em ordem aproximada de impacto:
+A boa notícia: os leaks do fish são os *mais fáceis* de corrigir no poker, porque todos têm a ver com fazer **menos**, não com aprender alguma jogada secreta. Em ordem aproximada de impacto:
 
-1. **Jogue menos mãos.** Foldá seu lixo antes do flop. Apertar seu [range de mãos iniciais](/pt/blog/holdem-starting-hands-chart) sozinho transforma mais jogadores perdedores em vencedores do que qualquer outra mudança isolada.
+1. **Jogue menos mãos.** Dê fold no seu lixo antes do flop. Apertar seu [range de mãos iniciais](/pt/blog/holdem-starting-hands-chart) sozinho transforma mais jogadores perdedores em vencedores do que qualquer outra mudança isolada.
 2. **Dê fold quando estiver batido.** A capacidade de largar o top pair quando a história não fecha é o que separa o fish de todo mundo. Aprenda a confiar na ação.
 3. **Pare de correr atrás sem preço.** Aprenda [pot odds](/pt/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") básicas para só puxar projeto quando a matemática paga — não "porque você pode acertar".
 4. **Aumente ou dê fold — dê menos limp.** Pagar passivamente sangra fichas. Se uma mão é boa o bastante para jogar, geralmente é boa o bastante para aumentar; se não é, dê fold.
@@ -166,15 +167,15 @@ Faça essas seis coisas e você para de ser o dinheiro. Você não precisa virar
 
 ## FAQ
 
-**Q. O que significa fish no pôquer?**
+**Q. O que significa fish no poker?**
 
-A. Fish é a gíria do pôquer para um jogador fraco, inexperiente ou perdedor — aquele com quem os jogadores mais fortes ("sharks") faturam. Descreve qualquer um que faça decisões ruins de forma consistente e perca fichas com o tempo, não importa o quão simpático ou confiante seja. É definido pelo seu oposto — embora nem todo mundo que não é shark seja um fish: nits e grinders ficam no meio do caminho.
+A. Fish é a gíria do poker para um jogador fraco, inexperiente ou perdedor — aquele com quem os jogadores mais fortes ("sharks") faturam. Descreve qualquer um que faça decisões ruins de forma consistente e perca fichas com o tempo, não importa o quão simpático ou confiante seja. É definido pelo seu oposto — embora nem todo mundo que não é shark seja um fish: nits e grinders ficam no meio do caminho.
 
 **Q. Chamar alguém de fish é um insulto?**
 
-A. Sim, na cara é grosseiro, e muitas cardrooms tratam esse tipo de conversa de mesa como abusivo. Entre jogadores falando *sobre* o jogo, porém, "fish" é jargão normal do meio para um adversário fraco. A regra de etiqueta é "não bata no vidro" — você nunca quer insultar um jogador perdedor e espantá-lo (e às fichas dele) embora.
+A. Dito na cara, é grosseiro — e muitos clubes tratam esse tipo de conversa de mesa como abusivo. Entre jogadores falando *sobre* o jogo, porém, "fish" é jargão normal do meio para um adversário fraco. A regra de etiqueta é "não bata no vidro" — você nunca quer insultar um jogador perdedor e fazer ele, e as fichas dele, irem embora da mesa.
 
-**Q. Qual é o oposto de um fish no pôquer?**
+**Q. Qual é o oposto de um fish no poker?**
 
 A. Um shark — um jogador forte e vencedor que lucra com adversários mais fracos. A metáfora inteira é uma cadeia alimentar: sharks se alimentam de fish. Um "reg" (regular) ou "grinder" também é, em termos amplos, o oposto no sentido de ser um jogador competente e disciplinado, embora nem todo reg seja um vencedor.
 
@@ -190,7 +191,7 @@ A. São quase sinônimos, mas o tom difere. "Fish" enfatiza inexperiência e per
 
 A. Fique de olho num conjunto de sinais: jogar mãos demais, dar limp em vez de aumentar, pagar demais e raramente aumentar, nunca dar fold num par, correr atrás de todo projeto e sizing de aposta errático. Nenhum tell isolado é prova, mas três ou quatro juntos — especialmente call frouxo combinado com passividade — identificam o fish de forma confiável dentro de uma ou duas voltas de mesa.
 
-**Q. Como parar de ser um fish no pôquer?**
+**Q. Como parar de ser um fish no poker?**
 
 A. Faça menos, não mais: jogue muito menos mãos iniciais, dê fold quando a ação diz que você está batido, pare de correr atrás de projetos sem as pot odds certas, aumente-ou-folde em vez de dar limp, use sua posição e pare quando estiver em tilt. Esses são os seis maiores leaks do jogo fraco, e cada um deles é corrigível sem aprender uma única jogada avançada.
 
@@ -204,9 +205,9 @@ A. A famosa versão da tela é do filme de 1998 *Rounders*, dita pelo personagem
 
 1. **Um fish é o jogador fraco de quem todo mundo lucra** — frouxo, passivo e geralmente sem saber disso. Identificar o fish é o primeiro trabalho em qualquer mesa.
 2. **Conheça o zoológico inteiro.** Fish, whale, nit, donkey e calling station não são intercambiáveis — nomear o tipo exato do seu adversário te diz precisamente como bater ele.
-3. **Garanta que não é você.** Um VPIP alto com uma porcentagem de raise baixa é a assinatura do fish. Se isso é você, as correções são as vitórias mais fáceis do pôquer: jogue menos mãos, dê mais fold e pare de correr atrás.
+3. **Garanta que não é você.** Um VPIP alto com uma porcentagem de raise baixa é a assinatura do fish. Se isso é você, as correções são as vitórias mais fáceis do poker: jogue menos mãos, dê mais fold e pare de correr atrás.
 
-A velha frase está certa por um motivo. Olhe ao redor da sua próxima mesa e ache o fish na primeira meia hora — e se você genuinamente não conseguir, a coisa mais valiosa que o pôquer vai te ensinar é que está na hora de trabalhar no seu próprio jogo. Comece com um [range de mãos iniciais](/pt/blog/holdem-starting-hands-chart) mais apertado e uma noção real de [pot odds](/pt/blog/holdem-pot-odds), e deixe outra pessoa ser a refeição.
+A velha frase está certa por um motivo. Olhe ao redor da sua próxima mesa e ache o fish na primeira meia hora — e se você genuinamente não conseguir, a coisa mais valiosa que o poker vai te ensinar é que está na hora de trabalhar no seu próprio jogo. Comece com um [range de mãos iniciais](/pt/blog/holdem-starting-hands-chart) mais apertado e uma noção real de [pot odds](/pt/blog/holdem-pot-odds), e deixe outra pessoa ser a refeição.
 
 ---
 
