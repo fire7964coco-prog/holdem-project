@@ -10,11 +10,11 @@
 
 ---
 
-## ▶▶▶ 지금 할 일 — **갈래 B: pt 경화 회차 3 (odds 7편) · 모델 = Fable(판정)**
+## ▶▶▶ 지금 할 일 — **갈래 B: pt 경화 회차 4 (strategy 8편 — range 축 금맥) · 모델 = Fable(판정)**
 
-**회차 2(hand-rankings 6편)는 2026-08-26 완결** — 커밋 `a4588d9e` · 경위 = WORKLOG 「2026-08-26 (2)」.
-선행 실측 2건도 종결(뱅크 §3에 근거 기록): `sequencia poker`=족보 순서 의도 → hand-rankings 소유 ·
-`maos do/de` SERP 동일 → do 형태 한 글 편입 완료. **갈래 A는 08-25~26 완결**(WORKLOG 「2026-08-25 (7)」·「2026-08-26」).
+**회차 2·3은 2026-08-26 완결** — 커밋 `a4588d9e`(rankings 6) · `dc614d75`(odds 7) · 경위 =
+WORKLOG 「2026-08-26 (2)」·「(3)」. odds 7번째 멤버는 **card-counting**으로 확정(배분 검증).
+**갈래 A는 08-25~26 완결**(WORKLOG 「2026-08-25 (7)」·「2026-08-26」).
 
 > 🪶 솔버 랜딩은 **9개**(앱 9언어와 1:1). `/fr/solver` 신설 완료(2026-08-25) ·
 > 뱅크 = `docs/keyword-bank/fr-gto-solver.md` · 절차 정본 = `docs/solver-landing-playbook.md`
@@ -29,7 +29,7 @@
 | 갈래 | 작업 | 모델 |
 |---|---|---|
 | ~~**A**~~ | ~~비한국어 «메타 4종 + 스킵링크»~~ **✅ 완결** — 실측 **541**페이지(537 아님) · 커밋 `551f1325`·`ac5ae041`·`d389887c`·`f12ae9e2`·`ac5decf2` + 후속 `0aec8bf9`(WebSite JSON-LD)·`5764a0b4`(피드 화살표 aria-label) · 게이트 5종 → **15종**(셀프테스트 20/20) · 경위 = WORKLOG 「2026-08-25 (7)」·「2026-08-26」. ⚠ **미결 2건이 아래 표에 남아 있다**(`사이트 메뉴` 라벨 · 게이트가 프로덕션에서 안 돎) | — |
-| **B** | **pt 경화 — ✅회차 1(rules 6) `8ee6b047` · ✅회차 2(hand-rankings 6) `a4588d9e` · 다음 = 회차 3(odds 7)** — 아래 상세 | **Fable** (판정) |
+| **B** | **pt 경화 — ✅회차 1(rules 6) `8ee6b047` · ✅회차 2(rankings 6) `a4588d9e` · ✅회차 3(odds 7) `dc614d75` · 다음 = 회차 4(strategy 8)** — 아래 상세 | **Fable** (판정) |
 
 🔴 **두 갈래 모두 랜딩(`app/*/solver`)을 건드리지 마라** — 검수장과 왕복이 진행 중이고
 M-064에서 게이트 9편 118주장이 «OK 100% · 미해결 0»으로 확정됐다. 지금 손대면 기준선이 어긋난다.
@@ -37,27 +37,33 @@ M-064에서 게이트 9편 118주장이 «OK 100% · 미해결 0»으로 확정�
 
 ---
 
-**▶ 갈래 B 상세 = 🔴 pt 경화 «회차 3: odds 클러스터 7편» (회차 2 완료 2026-08-26 · 커밋 a4588d9e)**
+**▶ 갈래 B 상세 = 🔴 pt 경화 «회차 4: strategy 클러스터 8편» (회차 3 완료 2026-08-26 · 커밋 dc614d75)**
 
-**회차 1·2는 끝났다** — 경위 = WORKLOG 「2026-08-25 (3)」·「2026-08-26 (2)」. 회차 3 진행법:
-1. **뱅크 = `docs/keyword-bank/pt-hardening-2026-08.md` §0·§4·시드 7 통독 선행** — §4 전략 방침
-   (사장님 축어: 정면 금지 · 롱테일 진입) 필독. 시드 7 = 개별 족보 확률 롱테일(`probabilidade aa`
-   5/2·DA20 · `calculadora (de) probabilidade poker` 40+30+10·최저 DA6 → pot-odds 글+솔버 랜딩
-   Equity 탭이 받는다 · `tabela de probabilidade` 20).
-2. 대상 7편은 회차 0 diff의 구획 확인 후 확정(후보: probability·outs·pot-odds·implied-odds·
-   drawing-odds·equity + 1 — es 확률6과 달리 pt는 7이라 구획을 먼저 검증하라).
-3. 🟠 이 클러스터에 **KO 도구 링크 `/calculator` 잔존**이 걸려 있다(아래 미결 표 — bubble·icm·
-   short-stack 등과 함께 odds 몫은 이 회차에서 `/pt/solver`(Equity 탭)로 전환 검토).
-4. 회차 순서(확정): ①rules ✅ → ②hand-rankings ✅ → ③odds 7 → ④strategy 8(range 축 금맥 — 시드 9) →
-   ⑤glossary 6(termos 약점층) → ⑥tournament 9(§14 EN verbatim + apt-incheon 자산화 확인 —
-   드리프트 잔여 continuation-bet·tournament-vs-cash-game·apt-incheon(08-17<EN 08-18)도 해당 회차).
+**회차 1~3은 끝났다** — 경위 = WORKLOG 「2026-08-25 (3)」·「2026-08-26 (2)」·「(3)」. 회차 4 진행법:
+1. **뱅크 §0·§4·시드 8·9 통독 선행** — §4 방침(정면 금지·롱테일) 필독. **시드 9 = 이번 수확의
+   금맥**: «range 축 전체가 pt-BR 무주공산»(분석 335행 중 winnable 300+ · `range poker` 590 ·
+   약점 5/2·DA10). 배정 정본(뱅크·translation-terms §5): **레인지 표 본진 = starting-hands-chart** ·
+   **개념(range polarizado·vantagem de range 등) = holdem-strategy** · 도구·GTO = /pt/solver(기소유).
+   시드 8 = 전략 서브축(`estrategia gto poker` 3/2·DA14 · preflop 3/1·DA14 · cash 등).
+2. 대상 8편(es·zh 선례와 동일 구획): strategy · positions · position-play · starting-hands-chart ·
+   limping · 3bet · continuation-bet · when-to-fold. ⚠ 드리프트 기지: **continuation-bet**(회차 0
+   diff 실질 드리프트 목록에 있음 — EN 대조 필수).
+3. 🟠 이 회차 몫 잔존: `starting-hands-chart`의 `/hand-chart` 링크 1곳(→/pt/solver Tabelas
+   pré-flop 탭 전환 검토) · 태그 중복 `quando dar 3-bet`(3bet↔strategy)·`quando foldar no poker`
+   (strategy↔when-to-fold)·`quem age primeiro no poker`(positions 쪽) 해소.
+4. 회차 순서(확정): ①rules ✅ → ②rankings ✅ → ③odds ✅ → ④strategy 8 → ⑤glossary 6(termos
+   약점층 · 드리프트 glossary) → ⑥tournament 9(§14 EN verbatim + apt-incheon 자산화 + 드리프트
+   tournament-vs-cash·apt-incheon 08-17<EN 08-18 · bubble·icm·short-stack의 /calculator 잔존).
 5. 절차 = `REVIEW-PROTOCOL.md` 3층 게이트 · posting.mdc 필독 · 4렌즈+브라질 네이티브 QA+2차 교열 ·
-   EN 소급분은 발견 즉시 같은 커밋으로. 게이트는 `--locale=pt`(slug 단위 없음 — 코퍼스 전체가 돈다).
-6. **pt 클러스터 표기 정본**(회차 1~2 확정 · 회차 3~6도 따를 것): 본문 **poker**(pôquer 금지 —
-   🔴 replace_all이 **대문자 Pôquer를 놓친다**, (?i)로 재확인) · **street**(rua 금지) · 카드 나열
-   앞은 **board**(«jogar a mesa»·«mesa pareada» 등 관용구는 mesa 유지) · top pair ·
-   🆕 **wheel**(«a roda» 금지) · 🆕 full house 표현은 **«X full de Y»**(«cheios de» 금지 —
-   bad-beat 선례). ⚠ 나머지 pt 31편은 혼재 — 각 회차에서 그 클러스터만 통일한다.
+   EN 소급분은 발견 즉시 같은 커밋으로. 게이트는 `--locale=pt`(코퍼스 전체가 돈다).
+   🔴 **pt는 콤마 소수점이라 F13이 원리상 미검사** — 수치 많은 회차는 수학 렌즈에 «파이썬
+   전수 재계산»을 명시 요구하라(회차 3이 그렇게 메웠다).
+6. **pt 클러스터 표기 정본**(회차 1~3 확정): 본문 **poker**(pôquer 금지 — 🔴 대문자는 (?i)로
+   재확인) · **street**(rua 금지) · 카드 나열 앞 **board**(«jogar a mesa»·«mesa pareada» 관용구는
+   mesa 유지) · top pair · **wheel** · **«X full de Y»** · 🆕 **«regra do 2 e 4»**(«4 e 2» 금지) ·
+   🆕 **conectores**(conectoras 금지) · 🆕 overcard는 여성(«uma overcard») · 🆕 leak(vazamento
+   금지) · 명사 call(«pagamento» 금지 — 동사 pagar는 정본 유지). ⚠ 나머지 pt 23편은 혼재 —
+   각 회차에서 그 클러스터만 통일.
 
 **그다음 후보(지시 대기)**:
 - fr 전략 코퍼스 확장(랜딩 내부링크 보강 겸 — `docs/local-voice/fr-fr.md`·fr 뱅크 준비됨)
@@ -86,7 +92,9 @@ M-064에서 게이트 9편 118주장이 «OK 100% · 미해결 0»으로 확정�
 | 무엇 | 메모 |
 |---|---|
 | 🟠 pt 도구 링크 `/calculator`(KO 도구) 잔존 9곳 — bubble 2·icm 2·short-stack 2·starting-hands-chart의 `/hand-chart` 1 등 5파일 | rules 필라는 8ee6b047에서 `/pt/solver`로 교체 완료. 나머지는 **해당 클러스터 회차**(odds·tournament·strategy)에서 /pt/solver(Equity·Tabelas pré-flop 탭)로 전환 검토 |
-| 🆕 🟠 pt 코퍼스 태그 중복 8건(전부 회차 2 범위 밖) — `regra do 2 e 4`(outs·pot-odds·probability 3편)·`pot odds`(2)·`quando dar 3-bet`·`quando foldar no poker`·`set mining`·`fold equity`·`quem age primeiro no poker`·`Paradise City Casino pôquer` | 회차 2 SEO 렌즈 검출(hand-rankings 6편 내부는 0건). **각 해당 회차에서 카니발 해소** — odds 3건은 회차 3 몫 |
+| 🟠 pt 코퍼스 태그 중복 잔여 5쌍 — ~~regra do 2 e 4 · pot odds · set mining~~(회차 3 해소 `dc614d75`) · `quando dar 3-bet`(3bet↔strategy)·`quando foldar no poker`(strategy↔when-to-fold)·`quem age primeiro no poker`(game-order↔positions)는 **회차 4** · `fold equity`(equity↔**short-stack** — equity가 전용 H2 보유, short-stack 쪽 제거)·`Paradise City Casino pôquer`(apt-incheon↔korea-marathon)는 **회차 6** | 회차 2·3 SEO 렌즈 검출 |
+| 🆕 pt odds 클러스터 3편(outs·drawing-odds·reading-the-board)이 본문 이미지 `holdem-reading-straight-example.webp`를 공유 — «클러스터 글 본문 이미지 고유화» 규율 저촉 후보 | 18언어 공용 자산이라 교체는 이미지 신설 작업(스트레이트 드로 인포그래픽 1~2장 — HTML+Playwright). board-puzzle ✦마크 건과 함께 이미지 일괄 회차 후보 |
+| 🆕 «mesa pareada / mesa assustadora» → «board pareado» 전환 여부 — 네이티브 렌즈가 «마지막 남은 번역 냄새»로 지목 | 회차 1 판정(«카드 나열 앞만 board»)의 범위 밖이라 재론 필요. 바꾸면 태그 «mesa pareada poker»(reading)와의 정합도 함께 판단. 사장님/다음 회차 판정 |
 | 🆕 `id/holdem-hand-rankings`에 hero `image`·`imageAlt` 필드 부재 — es·de·ja·zh·pt는 있음(pt는 a4588d9e에서 복원) | imageAlt를 인도네시아어로 새로 써야 해서(판정) pt 회차에서 임의로 안 했다. id를 다음에 열 때 |
 | 🆕 🟠 `holdem-hand-rankings-board-puzzle.webp` 우하단 **생성AI ✦ 마크 잔존 + 워터마크(로고+URL) 부재** — 18언어 공용 자산 | 2026-07-26 워터마크 규율 위반 상태. 실사 생성분 일괄 점검·sharp 후합성 소급이 나은 별건(다른 히어로도 같은 상태일 수 있다). alt 오기(K-K-K-A-4→A-2)는 a4588d9e에서 7로케일 수정 완료 |
 | 🆕 pt 홀카드 지칭 3종 혼용 — split-pot «cartas fechadas» vs kicker «cartas de mão» vs reading «cartas na mão» | 네이티브 렌즈는 «cartas da mão» 통일 제안했으나 브리프(`translation-terms-pt.md`)에 hole cards 정본 항목이 없어 **판정 필요**(«cartas fechadas»도 BR에서 통용). 정하면 브리프에 등재 후 코퍼스 단위 통일 |

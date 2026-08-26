@@ -1,3 +1,39 @@
+## 2026-08-26 (3) — pt 경화 회차 3: odds 클러스터 7편 (커밋 dc614d75 · Fable)
+
+**대상**: holdem-probability · outs · pot-odds · implied-odds · drawing-odds · equity ·
+**card-counting**(7번째 멤버 확정 — 잔여 30편 배분상 카운팅=아웃츠 축이 odds 몫이어야 6·6·7·8·6·9=42)
+
+- **§13: 이 클러스터는 오류 0** — 통독 손검산(조합수 전건 재유도: C(48,3)·192/19.600·264·
+  백도어 4,16%·AA vs AA 1/136) + 수학 렌즈 파이썬 전수 재계산(프리플랍 대결표는 C(48,5)
+  보드 전수 열거·멀티웨이 MC n=200k)이 독립 일치. 🔴 **pt는 콤마 소수점이라 F13이 원리상
+  미검사인 클러스터** — 이 이중 재계산이 사실상 유일한 검증층이었다(게이트 확장 후보 여전)
+- **재조준(시드 7)**: probability FAQ 3건 신설(개별 족보 확률 — flush·quadra·sequência) +
+  첫 H2·seoTitle «tabela de probabilidade poker»(20) · 계산기 수요(calculadora/simulador
+  DA6)는 pot-odds FAQ 신설 + **/pt/solver Equity 탭 CTA 2곳**(랜딩 내부링크 강화 · 앱 축어
+  «Equity» 확인) · probabilidade aa(5/2·DA20)→drawing-odds 태그
+- **태그 카니발 4+1종 해소**: regra do 2 e 4→outs · pot odds→pot-odds · set mining→implied ·
+  implied odds(영어형)→implied · «pot odds vs equity»↔«equity vs pot odds» 어순쌍은 equity에
+  양보(SEO 렌즈 — 구글이 어순 접음)
+- **표기 통일**: pôquer→poker(대소문자 — (?i) 재확인 루틴 정착) · 🆕 **rua→street 18곳**
+  (회차 1 정본 위반이 이 클러스터에 집중돼 있었다) · «regra do 2 e 4» 명칭 통일(4 e 2 혼재
+  5곳 — 표기 하나가 볼륨 가르는 시장) · conectores · overcards 여성형 · masterUpdated 4편
+  신설(pt upd=EN upd 실측 근거 · 추적불가 23→19) · seoTitle 60자 초과 4편 단축(기존 결함)
+- **딜러 렌즈 성과(D유형)**: equity 글이 클러스터 전체가 세운 «×4=올인 한정» 방어선에서
+  이탈한 유일한 구멍 — 35% vs 25% 직답이 국면 단서 없이 «decisão inteira»로 못박던 자리
+  교정(+규칙 문단·probability FAQ 단서). 수학 렌즈 4편이 독립으로 못 본 것을 딜러 렌즈만
+  잡음 — 렌즈 다양성 실증 재확인
+- **네이티브 QA**: alta 12건 전건(four-flush·ao nut→para os nuts·quarto naipe·«que é por
+  que» 칼크 3번째 검출·pagamento→call 계열·clunkers 등) + média 선별(leak·reverso da moeda·
+  brick·flip). 기각: «X alto» 표기(회차 2 정본 «de dez alto»와 충돌 — 코퍼스 정본 유지) ·
+  «mesa pareada»→«board pareado» 재론(회차 1 판정 범위 밖 — 미결로)
+- **2차 교열 자기 검출 2건**: ① probability 아웃츠 표 중간에 빈 줄 삽입 사고(잘못된 edit —
+  표 파손) 즉시 원복 ② implied compare 앞 불필요 구절 삽입 원복. 수정이 결함 주입 공정임을
+  또 실증
+- 게이트 `--locale=pt` 42/42 🔴 0 · 빌드 653p · 푸시·배포. 다음 = **회차 4: strategy 8편**
+  (range 축 금맥 — 시드 9 · /calculator 링크 일부 이 회차 몫)
+
+---
+
 ## 2026-08-26 (2) — pt 경화 회차 2: hand-rankings 클러스터 6편 (커밋 a4588d9e · Fable)
 
 **대상**: holdem-hand-rankings(필라) · flush-vs-straight · kicker · tiebreak-rules ·
