@@ -5,45 +5,45 @@ export const POST: Post = {
   title: "APT Incheon 2026 — Resultados, Campeão e Recorde de Entradas",
   seoTitle: "Quem venceu o APT Incheon 2026? Resultados e recorde",
   desc: "O APT Incheon 2026 acabou com recorde: 1.393 entradas. O campeão Stephen Pang (Hong Kong) levou KRW 411.180.000 (~$293.700). Resultados + guia da Coreia.",
-  tldr: "O Main Event do APT Incheon 2026 foi vencido por Stephen Pang, de Hong Kong, que levou KRW 411.180.000 (~$293.700) após um acordo ICM a três, além do troféu do Leão em ouro 24K. O field marcou recorde com 1.393 entradas e premiação total de KRW 3.008.880.000. O vice foi Shoumin Zhang (China, KRW 366.500.000 / ~$261.785) e o terceiro Yifu He (EUA). O top 3 também ganhou vagas para o Main Event do APT Championship 2026 em Taipé (~$10.000 cada). Só estrangeiros (cidadãos coreanos sem residência no exterior não podem entrar). Seul fica a ~1 hora — na próxima parada, a viagem de pôquer e a viagem pela Coreia continuam sendo a mesma viagem.",
+  tldr: "O Main Event do APT Incheon 2026 foi vencido por Stephen Pang, de Hong Kong, que levou KRW 411.180.000 (~$293.700) após um acordo ICM a três, além do troféu do Leão em ouro 24K. O field marcou recorde com 1.393 entradas e premiação total de KRW 3.008.880.000. O vice foi Shoumin Zhang (China, KRW 366.500.000 / ~$261.785) e o terceiro Yifu He (EUA). O top 3 também ganhou vagas para o Main Event do APT Championship 2026 em Taipé (~$10.000 cada). Só estrangeiros (cidadãos coreanos sem residência no exterior não podem entrar). Seul fica a ~1 hora — na próxima parada, a viagem de poker e a viagem pela Coreia continuam sendo a mesma viagem.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-08-18",
-  masterUpdated: "2026-08-17",
+  updated: "2026-08-26",
+  masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🇰🇷",
   image: "/images/apt-incheon-2026-guide-hero.webp",
-  imageAlt: "APT Incheon 2026 no Paradise City — uma sala premium de torneio de pôquer à noite com mesas de feltro verde, pilhas de fichas e o skyline do porto de Incheon através das janelas do chão ao teto",
+  imageAlt: "APT Incheon 2026 no Paradise City — uma sala premium de torneio de poker à noite com mesas de feltro verde, pilhas de fichas e o skyline do porto de Incheon através das janelas do chão ao teto",
   tags: [
     "APT Incheon 2026",
-    "torneio de pôquer Coreia 2026",
-    "Paradise City Casino pôquer",
-    "viagem de pôquer Seul",
+    "torneio de poker Coreia 2026",
+    "Paradise City Casino poker",
+    "viagem de poker Seul",
     "satellite Natural8 APT",
-    "pôquer viagem Coreia",
+    "APT Incheon resultados",
     "poker tour Ásia Incheon",
-    "viagem de pôquer Coreia",
+    "viagem de poker Coreia",
   ],
   content: `
-Seul entrou na lista de viagem de todo mundo desde que Parasita ganhou o Oscar, Round 6 dominou toda conversa e o BTS virou um fenômeno global. Agora tem mais um motivo pra fechar aquela passagem: ==**um dos maiores festivais de pôquer da Ásia acontece bem do lado do Aeroporto Internacional de Incheon**==.
+Seul entrou na lista de viagem de todo mundo desde que Parasita ganhou o Oscar, Round 6 dominou toda conversa e o BTS virou um fenômeno global. Agora tem mais um motivo pra fechar aquela passagem: ==**um dos maiores festivais de poker da Ásia acontece bem do lado do Aeroporto Internacional de Incheon**==.
 
-APT Incheon 2026. 7 a 16 de agosto. Paradise City Casino. $2.7 milhões em premiações garantidas. E quando as cartas descansam — bibimbap, noites à beira do Rio Han, passeios por palácios e frango frito coreano até as 4 da manhã.
+O APT Incheon 2026 rodou de 7 a 16 de agosto no Paradise City Casino, com $2,7 milhões em premiações garantidas. E quando as cartas descansavam — bibimbap, noites à beira do Rio Han, passeios por palácios e frango frito coreano até as 4 da manhã.
 
-A viagem de pôquer e a viagem pela Coreia são a mesma viagem. ==g:O Paradise City fica a 10 minutos do aeroporto, e Seul fica a 1 hora de metrô.== Você pode vir só pelo cassino, só pelo turismo, ou fazer os dois — a localização deixa fácil de qualquer jeito.
+A viagem de poker e a viagem pela Coreia são a mesma viagem. ==g:O Paradise City fica a 10 minutos do aeroporto, e Seul fica a 1 hora de metrô.== Você pode vir só pelo cassino, só pelo turismo, ou fazer os dois — a localização deixa fácil de qualquer jeito.
 
 :::note[**★Resultado final (16 de agosto de 2026) — o festival acabou.** O Main Event foi vencido por **Stephen Pang**, de Hong Kong, com **KRW 411.180.000 (~$293.700)** após um acordo ICM a três, superando um field **recorde de 1.393 entradas** com premiação total de **KRW 3.008.880.000**. Vice: Shoumin Zhang (China, KRW 366.500.000 / ~$261.785); terceiro: Yifu He (EUA, KRW 257.000.000 / ~$183.570). O top 3 também ganhou vagas para o Main Event do APT Championship 2026 em Taipé (~$10.000 cada). O cronograma e o registro abaixo ficam como referência para a próxima parada do APT. — Fonte: relatório oficial do APT, *Hong Kong’s Stephen Pang Wins Record APT Incheon Main Event for KRW 411M (~USD 293K) After 3-Way Deal* (verificado em 17/08/2026)]:::
 
 ---
 
 > **Resposta rápida**
-> O APT Incheon 2026 rolou de ==**7 a 16 de ago**== no Paradise City Casino, em Incheon. O resort fica a ==g:10 min de shuttle grátis do Terminal 1 do Aeroporto de Incheon== — sai a cada 30 min, sem custo. Buy-in do Main Event: ==**KRW 2.500.000 (~$1.703)**==, $1M garantido. Os classificatórios online da Natural8 distribuíram ==g:**74 vagas no total**==. ==r:O Mega de $35 e o OnLive encerraram em 2 de agosto, e a última via (Step de $20 → Mega de $200) em 7 de agosto==. ==g:**A classificação online já tinha acabado antes do primeiro dia.**== O cassino é ==r:só para estrangeiros== — cidadãos coreanos sem residência no exterior não podem entrar.
+> **Campeão: Stephen Pang (Hong Kong) — KRW 411.180.000 (~$293.700), num field recorde de 1.393 entradas.** O APT Incheon 2026 rolou de ==**7 a 16 de ago**== no Paradise City Casino, em Incheon. O resort fica a ==g:10 min de shuttle grátis do Terminal 1 do Aeroporto de Incheon== — sai a cada 30 min, sem custo. Buy-in do Main Event: ==**KRW 2.500.000 (~$1.703)**==, $1M garantido. Os classificatórios online da Natural8 distribuíram ==g:**74 vagas no total**==. ==r:O Mega de $35 e o OnLive encerraram em 2 de agosto, e a última via (Step de $20 → Mega de $200) em 7 de agosto==. ==g:**A classificação online já tinha acabado antes do primeiro dia.**== O cassino é ==r:só para estrangeiros== — cidadãos coreanos sem residência no exterior não podem entrar.
 
 ---
 
-## Por que a Coreia em 2026? (O argumento fora do pôquer)
+## Por que a Coreia em 2026? (O argumento fora do poker)
 
-Antes do pôquer: a Coreia do Sul virou silenciosamente um dos melhores países pra visitar na Ásia, e o resto do mundo está sacando isso rápido.
+Antes do poker: a Coreia do Sul virou silenciosamente um dos melhores países pra visitar na Ásia, e o resto do mundo está sacando isso rápido.
 
 - **Segurança:** Seul aparece consistentemente como uma das cidades mais seguras do mundo. Andar sozinho às 3 da manhã é rotina tanto pra locais quanto pra turistas.
 - **Comida:** a comida de rua, a cultura de churrasco e os restaurantes com estrela Michelin de Seul rivalizam com qualquer capital gastronômica do mundo — pela metade do preço.
@@ -53,11 +53,11 @@ Antes do pôquer: a Coreia do Sul virou silenciosamente um dos melhores países 
 
 E pra visitantes internacionais: ==g:a maioria dos portadores de passaporte ocidental entra na Coreia sem visto ou via um K-ETA (autorização eletrônica de viagem). **Atenção, brasileiro: o Brasil não está na lista de isenção** — você entra sem visto por 90 dias, mas **precisa do K-ETA: ₩10.000 (~$7)**, em k-eta.go.kr, válido por 3 anos.==
 
-**E tem um motivo que vale só pra este ano.** O próprio anúncio da APT diz sem rodeios: *"with the APT turning twenty in 2026"* — o tour completa vinte anos em 2026. Ele nasceu em 2006, quando Antanas "Tony G" Guoga venceu o Main Event inaugural em Singapura. A temporada de aniversário fecha com o APT Championship em Taipei, e é por isso que **os assentos para o Championship distribuídos em Incheon valem mais que o normal neste ano**.
+**E tem um motivo que vale só pra este ano.** O próprio anúncio da APT diz sem rodeios: *"with the APT turning twenty in 2026"* — o tour completa vinte anos em 2026. Ele nasceu em 2006, quando Antanas "Tony G" Guoga venceu o Main Event inaugural em Singapura. A temporada de aniversário fecha com o APT Championship em Taipé, e é por isso que **os assentos para o Championship distribuídos em Incheon valem mais que o normal neste ano**.
 
 ---
 
-## APT Incheon 2026 — O Torneio num Relance
+## APT Incheon 2026 — o torneio num relance
 
 <div style="overflow-x:auto;margin:20px 0">
 
@@ -65,7 +65,7 @@ E pra visitantes internacionais: ==g:a maioria dos portadores de passaporte ocid
 |---|---|
 | **Datas** | ==**7 a 16 de agosto de 2026**== |
 | **Local** | Paradise City Casino, Incheon, Coreia do Sul |
-| **Total Garantido** | ==g:**Mais de KRW 4 bilhões (~$2.7M USD)**== |
+| **Total Garantido** | ==g:**Mais de KRW 4 bilhões (~$2,7M USD)**== |
 | **Buy-In do Main Event** | KRW 2.500.000 ==**($1.703 USD)**== |
 | **GTD do Main Event** | ==g:KRW 1.500.000.000 (~$1M USD)== |
 | **Classificação Online** | ==r:**Encerrada — a última via (Step $20 → Mega $200) fechou em 7 de ago**== |
@@ -78,7 +78,7 @@ E pra visitantes internacionais: ==g:a maioria dos portadores de passaporte ocid
 
 ---
 
-## Agenda Completa de Eventos
+## Agenda completa de eventos
 
 <div style="overflow-x:auto;margin:20px 0">
 
@@ -124,7 +124,7 @@ Ao longo do festival são distribuídos **nove assentos para o APT Championship 
 
 > ⚠️ **Dois torneios de nome parecido: não confunda.** A vaga sai do **#37 High Roller – Ultra Stack (KRW 4,5M, 10–11 de agosto)**. O **#90 Ultra Stack (KRW 700K, 15–16 de agosto)** que aparece na agenda acima **não dá vaga**. Os nomes se sobrepõem; os buy-ins diferem em mais de seis vezes.
 
-**Pra onde esse ticket te leva:** o APT Championship 2026 acontece de **13 a 29 de novembro no Red Space, em Taipei**. O Main Event do Championship é de **23 a 27 de novembro, um freezeout de $10.000 com $5.000.000 garantidos** — o maior evento do ano da APT. E Taipei, diferente do Paradise City, **não tem restrição de nacionalidade na entrada**.
+**Pra onde esse ticket te leva:** o APT Championship 2026 acontece de **13 a 29 de novembro no Red Space, em Taipé**. O Main Event do Championship é de **23 a 27 de novembro, um freezeout de $10.000 com $5.000.000 garantidos** — o maior evento do ano da APT. E Taipé, diferente do Paradise City, **não tem restrição de nacionalidade na entrada**.
 
 ## Como o pessoal se classificou pela Natural8 — e quando cada satélite fechou
 
@@ -147,7 +147,7 @@ A Natural8 é a parceira online oficial do APT e roda a campanha de satellites =
 Step de $20 → ganhe o ticket pro Mega Satellite de $200 → ganhe a vaga no Main Event (valor ~$1.703) · o último dia foi 7 de agosto
 </div>
 
-==g:A Natural8 também roda um bônus de 8% sobre a premiação== para os classificados via satellite — se você ganhar $10.000 no evento ao vivo, recebe $800 extras por cima. **Uma conferida antes de montar o plano em cima disso.** A Natural8 é o skin Ásia-Pacífico da rede GG e **o acesso depende do seu país de residência** — pelos próprios termos, se o seu país não estiver na lista de cadastro, eles não podem te aceitar. Jogadores do Brasil normalmente são direcionados pro skin principal **GGPoker**, que tem site e suporte em português. ⚠️ Contornar com VPN viola os termos e coloca conta e saldo em risco. **A rota aberta pra todo mundo é se inscrever direto com o organizador em registrations@apt.poker, pagando o buy-in cheio.**
+==g:A Natural8 também roda um bônus de 8% sobre a premiação== para os classificados via satellite — se você ganhar $10.000 no evento ao vivo, recebe $800 extras por cima. **Vale uma conferida antes de montar o plano em cima disso.** A Natural8 é a skin Ásia-Pacífico da rede GG e **o acesso depende do seu país de residência** — pelos próprios termos, se o seu país não estiver na lista de cadastro, eles não podem te aceitar. Jogadores do Brasil normalmente são direcionados pra skin principal **GGPoker**, que tem site e suporte em português. ⚠️ Contornar com VPN viola os termos e coloca conta e saldo em risco. **A rota aberta pra todo mundo é se inscrever direto com o organizador em registrations@apt.poker, pagando o buy-in cheio.**
 
 > **O que era o OnLive:** a rota deixava você jogar o Day 1 do seu próprio fuso horário e só voar pra Coreia se sobrevivesse até o Day 3 — o caminho mais esperto quando o orçamento de viagem estava apertado. ==r:Ela encerrou em 2 de agosto, então nesta edição já não é uma opção== — fica anotada porque vale ficar de olho na próxima parada do APT.
 
@@ -186,9 +186,9 @@ Na prática isso significa duas coisas. Primeira: na mesa se ouve mais japonês 
 
 ---
 
-## O Local: Paradise City Casino
+## O local: Paradise City Casino
 
-![Interior do Paradise City Casino — cassino resort de luxo conectado ao Aeroporto Internacional de Incheon com mesas de pôquer, máquinas caça-níqueis e lobby de hotel sofisticado](/images/apt-incheon-2026-guide-venue.webp)
+![Interior do Paradise City Casino — cassino resort de luxo conectado ao Aeroporto Internacional de Incheon com mesas de poker, máquinas caça-níqueis e lobby de hotel sofisticado](/images/apt-incheon-2026-guide-venue.webp)
 
 O Paradise City não é um cassino isolado — é um ==**resort integrado construído como parte da expansão do Aeroporto Internacional de Incheon**==, projetado pra capturar o fluxo de trânsito e chegada internacional.
 
@@ -207,7 +207,7 @@ O Paradise City não é um cassino isolado — é um ==**resort integrado constr
 
 ---
 
-## Como Chegar Lá: Aeroporto de Incheon ao Paradise City
+## Como chegar lá: do Aeroporto de Incheon ao Paradise City
 
 O Paradise City roda o seu próprio transfer gratuito a partir do aeroporto:
 
@@ -222,7 +222,7 @@ Se você está passando por Incheon e tem uma escala longa: ==g:o cassino é ace
 
 ---
 
-## Bate-Volta a Seul: 1 Hora do Paradise City
+## Bate-volta a Seul: 1 hora do Paradise City
 
 Aqui está o esquema que a maioria dos jogadores de torneio não sacam até chegar: ==**o Paradise City é a sua base, e Seul fica a só 1 hora**==.
 
@@ -235,7 +235,7 @@ Você pode ficar no hotel do cassino a viagem toda — jogue suas sessões, durm
 | Rota | Destino | Trajeto | Custo |
 |:---|:---|:---:|:---:|
 | ==g:**Shuttle grátis → T1 → AREX Express**== | ==g:Estação de Seul== | ==g:~53 min== | ==g:~₩11.000 (~$8)== |
-| Shuttle grátis → T1 → AREX All-Stop | Hongdae (Univ. Hongik) | ~70 min | ~₩4.750 (~$3.50) |
+| Shuttle grátis → T1 → AREX All-Stop | Hongdae (Univ. Hongik) | ~70 min | ~₩4.750 (~$3,50) |
 | Ônibus do Aeroporto 6001 | Myeongdong / City Hall | ~60 min | ~₩17.000 (~$13) |
 | Ônibus do Aeroporto 6015 | Gangnam / Yangjae | ~70 min | ~₩17.000 (~$13) |
 | Táxi direto | Hongdae / Myeongdong | ~50–60 min | ~$35–50 |
@@ -250,7 +250,7 @@ Aqui está o que fazer com 1–3 dias livres:
 
 ![Google Maps com zoom no centro de Seul com o Namsan (N Seoul Tower) marcado — Hongdae a oeste, Rio Han ao sul](/images/apt-incheon-2026-guide-map-seoul.webp)
 
-### Dia 1 — Seul Antiga: Palácios, Hanoks e Comida de Rua
+### Dia 1 — Seul antiga: palácios, hanoks e comida de rua
 
 **Manhã:** comece no ==**Palácio Gyeongbokgung**== (Estação Gyeongbokgung, Linha 3). Construído em 1395, o terreno do palácio é enorme. A entrada custa ~₩3.000 — ou alugue um hanbok (~₩20.000) nas lojas próximas pra ==g:entrar de graça no palácio==. Reserve 2 horas.
 
@@ -315,7 +315,7 @@ Aqui está o que fazer com 1–3 dias livres:
 
 ---
 
-### Dia 3 — Seul Moderna: Gangnam, Seongsu e o Rio Han
+### Dia 3 — Seul moderna: Gangnam, Seongsu e o Rio Han
 
 **Manhã:** pegue a Linha 2 até ==**Gangnam**==. A Gangnam de verdade não é o que a música descreveu — é o distrito sofisticado de negócios e entretenimento de Seul, lar do COEX Mall (cidade subterrânea), do Templo Budista Bongeunsa e de algumas das melhores cafeterias do país.
 
@@ -325,7 +325,7 @@ Aqui está o que fazer com 1–3 dias livres:
 
 ---
 
-## Orçamento da Coreia para a Viagem de Pôquer
+## Orçamento da Coreia para a viagem de poker
 
 <div style="overflow-x:auto;margin:20px 0">
 
@@ -339,7 +339,7 @@ Aqui está o que fazer com 1–3 dias livres:
 | Transporte em Seul (cartão T-money) | $5–$10/dia |
 | Buy-in do APT Main Event | ==**~$1.703**== |
 | Side events baratos (Mini Main, Ultra Stack) | ==g:**$270–$610**== |
-| **Total estimado de uma viagem de pôquer de 7 dias** | ==**$2.500–$5.000 + buy-ins de pôquer**== |
+| **Total estimado de uma viagem de poker de 7 dias** | ==**$2.500–$5.000 + buy-ins de poker**== |
 
 </div>
 
@@ -347,7 +347,7 @@ Comparado ao EPT Barcelona (Main ~€5.300) ou ao WPT Australia (Main ~AUD $5.00
 
 ---
 
-## Exigências de Entrada: Vistos e Acesso ao Cassino
+## Exigências de entrada: vistos e acesso ao cassino
 
 **Visto pra Coreia:**
 
@@ -369,7 +369,7 @@ Comparado ao EPT Barcelona (Main ~€5.300) ou ao WPT Australia (Main ~AUD $5.00
 
 :::readnext[Continue lendo]
 /pt/blog/holdem-tournament | Guia de Torneio de Texas Hold'em | /images/holdem-tournament-hero.webp
-/pt/blog/korea-poker-marathon-2026 | Korea Poker Marathon 2026 | /images/korea-poker-marathon-2026-hero.webp
+/pt/blog/korea-poker-marathon-2026 | Maratonas + poker na Coreia 2026 | /images/korea-poker-marathon-2026-hero.webp
 :::
 
 ## FAQ
@@ -380,7 +380,7 @@ A. Bem pertinho. O Paradise City roda um shuttle grátis a partir do Terminal 1 
 
 **Q. Posso jogar o Main Event do APT Incheon se nunca joguei um torneio ao vivo?**
 
-A. Sim. O buy-in (~$1.703) é considerável, mas a estrutura é amigável pra iniciante — stacks iniciais profundos e níveis longos. Se você se vira bem em home games ou pôquer online, a transição pro ao vivo é administrável. O Mini Main Event (~$610, KRW 900K) e o Ultra Stack (~$477) são opções de stakes mais baixos pra começar.
+A. A edição 2026 já terminou — mas a resposta vale pra próxima parada do APT: sim. O buy-in (~$1.703) é considerável, mas a estrutura é amigável pra iniciante — stacks iniciais profundos e níveis longos. Se você se vira bem em home games ou poker online, a transição pro ao vivo é administrável. O Mini Main Event (~$610, KRW 900K) e o Ultra Stack (~$477) são opções de stakes mais baixos pra começar.
 
 **Q. Como vou do Paradise City a Seul?**
 
@@ -396,22 +396,23 @@ A. Os dois funcionam, mas ==g:é recomendado chegar 2–3 dias antes==. Você se
 
 ---
 
-## Os Pontos-Chave
+## Os pontos-chave
 
-1. **APT Incheon 2026** rolou de ==**7 a 16 de ago**== no Paradise City Casino — 10 min do Aeroporto de Incheon de shuttle grátis, $2.7M GTD.
+1. **APT Incheon 2026** rolou de ==**7 a 16 de ago**== no Paradise City Casino — 10 min do Aeroporto de Incheon de shuttle grátis, $2,7M GTD.
 2. **Main Event** buy-in: ==**~$1.703**== com ==g:$1M garantido==. Cerca de um terço do Main do EPT Barcelona e metade do buy-in do Championship do WPT Australia.
-3. **A classificação online acabou** — o Mega de $35 e o OnLive encerraram em 2 de agosto, e a última via (Step de $20 → Mega de $200) em 7 de agosto. Agora só dá pra entrar pelo registro presencial.
+3. **A classificação online acabou antes do festival** — o Mega de $35 e o OnLive encerraram em 2 de agosto, e a última via (Step de $20 → Mega de $200) em 7 de agosto. Na reta final, a única via de entrada era o registro presencial.
 4. **Seul fica a 60 min** e é um dos melhores destinos de viagem da Ásia — ==g:palácios, churrasco, vida noturna e comida de rua imbatível.==
 5. **Com passaporte estrangeiro você entra** — esse torneio foi feito pra jogadores internacionais. O seu passaporte é o seu cartão de acesso.
 
-Indo pro APT Incheon? O [guia de torneio vs cash game](/pt/blog/holdem-tournament-vs-cash-game "thumb:/images/tournament-table-action.webp") cobre as diferenças estruturais se você está migrando do cash. E pros formatos de pôquer que você vai encontrar além do NLHE, [as ações de aposta no pôquer](/pt/blog/holdem-betting-actions) são uma referência limpa pra ter lido antes do Day 1.
+Indo pro APT Incheon? O [guia de torneio vs cash game](/pt/blog/holdem-tournament-vs-cash-game "thumb:/images/tournament-table-action.webp") cobre as diferenças estruturais se você está migrando do cash. E pros formatos de poker que você vai encontrar além do NLHE, [as ações de aposta no poker](/pt/blog/holdem-betting-actions) valem a leitura antes do Day 1.
 
 ---
 
 ## Fontes
 
-Todos os números foram checados contra fontes primárias. **Verificado em: 28 de julho de 2026.**
+Todos os números foram checados contra fontes primárias. **Verificado em: 17 de agosto de 2026.**
 
+- **Resultado 2026 (relatório oficial do organizador)** — [APT — Hong Kong's Stephen Pang Wins Record APT Incheon Main Event](https://www.theasianpokertour.com/news/hong-kong-s-stephen-pang-wins-record-apt-incheon-main-event-for-krw-411-m-usd-293-k-after-3-way-deal) · 1.393 entradas · premiação KRW 3.008.880.000 · final table e acordo ICM a três
 - **Página oficial da série** — [APT — Incheon, South Korea 2026](https://www.theasianpokertour.com/series/apt-incheon-south-korea-2026) · datas, buy-in e garantido do Main Event #20, estrutura de flights
 - **Preview oficial** — [APT Incheon 2026: The Preview](https://www.theasianpokertour.com/news/apt-incheon-2026-the-preview) · garantido total, stack inicial de 40.000, **os nove assentos APTC Taipei e como são divididos**
 - **APT Championship 2026** — [Full APTC 2026 Schedule](https://www.theasianpokertour.com/news/apt-announces-full-aptc2026-schedule) · 13–29 de novembro, Taipei; Main Event 23–27 nov, $10.000, $5.000.000 GTD
@@ -431,7 +432,7 @@ Todos os números foram checados contra fontes primárias. **Verificado em: 28 d
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/pt/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Básico de Torneio</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Como Funcionam os Torneios de Pôquer</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Como Funcionam os Torneios de Poker</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Buy-ins, blinds, satellites e checklist de estreante</div>
   </a>
   <a href="/pt/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "EPT Barcelona 2026 is Aug 16–29 at Casino Barcelona. Main Event buy-in: €5,300. Cheapest online path: Power Path from $0.50 → Gold Pass (€5,300 ME + €1,100 side event + 8-night hotel + €690 expenses). You need a PokerStars Live account and a valid passport. Book hotels early — August is peak season.",
   category: "tournament",
   date: "2026-06-17",
-  updated: "2026-07-25",
+  updated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🃏",
@@ -37,8 +37,10 @@ New to live tournaments? Skim [the tournament guide](/en/blog/holdem-tournament 
 
 ---
 
+:::note[**★In progress (August 26, 2026).** The EPT Main Event (€5,300) runs Aug 22–29 — online qualifying and 2026 travel planning have closed. The guide below stands as the record of the 2026 edition and a playbook for anyone targeting 2027.]:::
+
 > **Quick answer**
-> EPT Barcelona 2026 is ==**Aug 16–29**== at Casino Barcelona. Main Event: ==**€5,300**==. Cheapest path: Power Path from $0.50 → ==g:Gold Pass (€5,300 ME seat + €1,100 side event + 8-night hotel + €690 expenses)==. You need a PokerStars Live account and a valid passport. ==r:Book hotels now — August is peak season.==
+> EPT Barcelona 2026 is ==**Aug 16–29**== at Casino Barcelona. Main Event: ==**€5,300**==. Cheapest path: Power Path from $0.50 → ==g:Gold Pass (€5,300 ME seat + €1,100 side event + 8-night hotel + €690 expenses)==. You need a PokerStars Live account and a valid passport. ==r:For 2027, book hotels early — August is peak season.==
 
 ---
 
@@ -179,7 +181,7 @@ Don't want to grind four steps? PokerStars also runs **direct satellites** for E
 | Item | Estimated Cost |
 |:---|:---:|
 | Power Path buy-ins to reach Step 4 | **$11–$55** |
-| Gold Pass covers: ME entry + side event + 8 nights | ==g:✅ Included (~$10,300 value)== |
+| Gold Pass covers: ME entry + side event + 8 nights + €690 expenses | ==g:✅ Included (~$10,300 value)== |
 | Flights (not always included) | €150–€400 |
 | Food & extra days | €400–€600 |
 | ==**Total out-of-pocket**== | ==g:**~€550–€1,000**== |
@@ -326,7 +328,7 @@ Day 1 is split across multiple starting flights (Day 1A, 1B, 1C, sometimes 1D). 
 - Your ==**PokerStars Live account**== verified and active
 - **Source of Funds form** completed if paying with cash
 - A light jacket (==r:the casino AC is aggressive in August==)
-- Snacks for the pocket (official breaks are infrequent)
+- Snacks for the pocket (breaks are short and the food lines are long)
 - Headphones (optional, but they help with table noise)
 
 ### The Day 1 Timeline
@@ -339,7 +341,7 @@ Day 1 is split across multiple starting flights (Day 1A, 1B, 1C, sometimes 1D). 
 |---|---|
 | ~11:00 | Registration opens (==r:be there 30 min early minimum==) |
 | ~12:00 | Cards in the air — Day 1 begins |
-| ~20:30 | End of play for Day 1 (usually 8–10 levels) |
+| Evening | End of play for Day 1 — usually 8 levels; the exact time depends on the structure |
 | Day 2+ | ==g:Only players who bagged chips continue== |
 
 </div>
@@ -429,5 +431,5 @@ A. Barcelona's Port Olímpic area is generally safe. ==r:Pickpocketing is common
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Master the basics before your first live event</div>
   </a>
 </div>
-`,
+`.trim(),
 };

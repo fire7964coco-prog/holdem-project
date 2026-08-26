@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In a poker tournament you pay a fixed buy-in for chips, blinds increase on a timer until one player holds all chips. Top 10–15% of players cash. Formats include freezeout, PKO, satellite, and deepstack — enter via direct buy-in, satellite, or online pre-registration.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-08-16",
+  updated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏆",
@@ -86,7 +86,7 @@ This is what most beginner guides skip, and it's the most important mechanical c
 
 Notice: **you didn't lose a single chip** between Level 1 and Level 9. But your stack went from 200BB to 10BB because the blinds rose. This is how tournaments force action and eventually eliminate players.
 
-==g:Rule of thumb: below 20 big blinds you're edging into push-or-fold territory, and by 15 it's your main mode. Below 10 big blinds, you must shove almost any playable hand before the blinds eat you alive.==
+==g:Rule of thumb: below 20 big blinds you're edging into push-or-fold territory, and by 15 it's your main mode. Below 10 big blinds, you must shove almost any playable hand — especially from late position or the small blind — before the blinds eat you alive.==
 
 When you get there, the exact shoving ranges live in [short-stack strategy — when to push or fold](/en/blog/holdem-short-stack).
 
@@ -117,7 +117,7 @@ Usually 6–9 players left. Payouts increase sharply with each elimination. [ICM
 | Format | How it works | Best for |
 |:---|:---|:---|
 | **Freezeout** | One buy-in, no rebuy. Bust = out. | Beginners — fixed cost |
-| **Rebuy / Re-entry** | Pay again after busting (during early levels) | Aggressive players with a bigger bankroll |
+| **Rebuy / Re-entry** | Buy chips again during the early window — in rebuys, often without busting first | Aggressive players with a bigger bankroll |
 | **Bounty / KO** | Win a fixed cash bounty for each player you eliminate | Action players — extra income per knockout |
 | **PKO (Progressive KO)** | Bounties grow with each knockout — part paid to you, part added to your head | High-variance, big-upside players |
 | **Deepstack** | Starting stack well above the standard event in the same series, plus slower levels | Players who want more postflop play |
@@ -141,7 +141,7 @@ A PKO (Progressive Knockout) is a bounty tournament where typically around half 
 
 A deepstack poker tournament starts you with far more chips relative to the blinds than the standard event in the same series, and usually pairs that with longer blind levels. **There is no standardised threshold for it** — "deepstack" is always a relative label. Work out from the structure sheet how many big blinds your Level 1 stack is worth, then compare that against the 100–200 BB of a standard event. More chips and a slower clock mean more postflop play, more room to recover from a mistake, and longer days.
 
-**What about rebuys and add-ons?** In a rebuy event you can pay again after busting during a set early window; an add-on is a one-time optional chip purchase usually offered when that window closes. After that, the event plays out like a freezeout.
+**What about rebuys and add-ons?** In a rebuy event you can buy again during a set early window — in many events, any time your stack is at or below the starting amount, without having to bust first; an add-on is a one-time optional chip purchase usually offered when that window closes. After that, the event plays out like a freezeout.
 
 ---
 
@@ -156,7 +156,7 @@ A satellite is a smaller tournament where the prize isn't cash — it's **an ent
 
 Instead of spending $10,000, you compete in a $500 tournament against 19 other players. One person wins the $10,000 seat.
 
-**Chained satellites** go even lower. A $5 super-satellite → $55 qualifier → $215 event → $1,050 Main Event. Many players at major events entered through a satellite chain for a fraction of the direct buy-in.
+**Chained satellites** go even lower. A $5 super-satellite → $55 qualifier → $215 event → a $1,050 online Main Event. Many players at major events entered through a satellite chain for a fraction of the direct buy-in.
 
 ==g:Satellite strategy is different from regular tournament play — once you have enough chips to guarantee a seat, stop taking risks. Fold even good hands to avoid busting on the bubble.==
 
@@ -221,11 +221,11 @@ This is what no other guide tells you. Here's a realistic Day 1 timeline for a l
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
 <div style="color:hsl(var(--primary));font-weight:700">1:00–3pm</div>
-<div style="color:hsl(var(--foreground))">Levels 2–4. Late registration still open. Field grows. Some players already bust.</div>
+<div style="color:hsl(var(--foreground))">Levels 2–4. Late registration still open. Field grows. Antes kick in per the structure sheet (Level 3 in the example above). Some players already bust.</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
 <div style="color:hsl(var(--primary));font-weight:700">~3:30pm</div>
-<div style="color:hsl(var(--foreground))">Late reg closes. Final field size announced. Prize pool confirmed. Antes kick in.</div>
+<div style="color:hsl(var(--foreground))">Late reg closes. Final field size announced. Prize pool confirmed.</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
 <div style="color:hsl(var(--primary));font-weight:700">~5:00pm</div>
@@ -328,7 +328,7 @@ A. In a regular bounty (knockout) tournament, every player carries a fixed bount
 
 **Q. What are the rules on rebuys and add-ons?**
 
-A. In a rebuy tournament you can pay the entry fee again after busting (or sometimes when your stack falls below a threshold), but only during a set rebuy period — usually the first few blind levels. An add-on is a one-time optional chip purchase, typically offered to everyone at the end of the rebuy period regardless of stack size. Once that window closes, the event plays out as a freezeout. Exact rules vary by venue, so check the structure sheet.
+A. In a rebuy tournament you can buy chips again during a set period — in many events, any time your stack is at or below the starting amount, without having to bust first — usually the first few blind levels. An add-on is a one-time optional chip purchase, typically offered to everyone at the end of the rebuy period regardless of stack size. Once that window closes, the event plays out as a freezeout. Exact rules vary by venue, so check the structure sheet.
 
 **Q. How do poker tournaments make money?**
 

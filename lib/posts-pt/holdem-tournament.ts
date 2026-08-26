@@ -3,30 +3,31 @@ import type { Post } from "../posts";
 export const POST: Post = {
   slug: "holdem-tournament",
   seoTitle: "Nunca jogou um torneio? Veja como funciona de verdade",
-  title: "Como funcionam os torneios de pôquer — buy-in, formatos e o Day 1",
-  desc: "Como funcionam os torneios de pôquer? Buy-in, estrutura de blinds, payout, freezeout vs PKO vs satellite e um checklist de Day 1 pra quem é de primeira viagem.",
-  tldr: "Num torneio de pôquer você paga um buy-in fixo por fichas, e os blinds sobem num relógio até uma pessoa ficar com todas as fichas. Os 10–15% melhores do field entram no dinheiro. Os formatos incluem freezeout, PKO, satellite e deepstack — você entra por buy-in direto, satellite ou pré-registro online.",
+  title: "Como funcionam os torneios de poker — buy-in, formatos e o Day 1",
+  desc: "Como funcionam os torneios de poker? Buy-in, estrutura de blinds, payout, freezeout vs PKO vs satellite e um checklist de Day 1 pra quem é de primeira viagem.",
+  tldr: "Num torneio de poker você paga um buy-in fixo por fichas, e os blinds sobem num relógio até uma pessoa ficar com todas as fichas. Os 10–15% melhores do field entram no dinheiro. Os formatos incluem freezeout, PKO, satellite e deepstack — você entra por buy-in direto, satellite ou pré-registro online.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-08-16",
+  updated: "2026-08-26",
+  masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏆",
   image: "/images/holdem-tournament-hero.webp",
-  imageAlt: "Salão lotado de um torneio de pôquer ao vivo com o relógio dos blinds marcando 12.000/24.000 enquanto os jogadores disputam uma mão",
+  imageAlt: "Salão lotado de um torneio de poker ao vivo com o relógio dos blinds marcando 12.000/24.000 enquanto os jogadores disputam uma mão",
   tags: [
-    "como funcionam torneios de pôquer",
-    "estrutura de torneio de pôquer",
-    "estrutura de blinds torneio de pôquer",
-    "payout torneio de pôquer",
-    "tipos de torneio de pôquer",
-    "freezeout torneio de pôquer",
+    "como funcionam torneios de poker",
+    "estrutura de torneio de poker",
+    "estrutura de blinds torneio de poker",
+    "regras de torneio de poker",
+    "tipos de torneio de poker",
+    "freezeout torneio de poker",
     "pko poker",
-    "satellite torneio de pôquer",
-    "como jogar torneio de pôquer",
+    "satellite torneio de poker",
+    "como jogar torneio de poker",
   ],
   content: `
-Entrei no meu primeiro torneio de pôquer ao vivo com $200, uma ideia vaga de como o Texas Hold'em funcionava e zero noção do que era um "nível de blind" ou uma "bubble".
+Entrei no meu primeiro torneio de poker ao vivo com $200, uma ideia vaga de como o Texas Hold'em funcionava e zero noção do que era um "nível de blind" ou uma "bolha".
 
 Quatro horas depois eu estava fora. Mas sabia exatamente o que cada termo significava, por que perdi e quando voltar.
 
@@ -42,9 +43,9 @@ Este guia é tudo o que eu queria que alguém tivesse me contado antes daquele d
 $100+$9 | como um buy-in típico se divide — prize pool + taxa
 :::
 
-## O que é um torneio de pôquer? (resposta em 30 segundos)
+## O que é um torneio de poker? (resposta em 30 segundos)
 
-Um torneio de pôquer é uma competição em que todo mundo paga a mesma taxa de inscrição (o **buy-in**), recebe a mesma quantidade de fichas iniciais e joga até uma pessoa ficar com todas as fichas do jogo.
+Um torneio de poker é uma competição em que todo mundo paga a mesma taxa de inscrição (o **buy-in**), recebe a mesma quantidade de fichas iniciais e joga até uma pessoa ficar com todas as fichas do jogo.
 
 **Resumo em uma frase:** num cash game suas fichas são dinheiro de verdade e você pode sair a qualquer hora. Num torneio freezeout, sua perda máxima é exatamente o buy-in — com re-entry e add-on ela passa disso — mas você está disputando uma fatia de um prize pool muito maior.
 
@@ -52,7 +53,7 @@ Essa única diferença muda o valor das fichas, a pressão dos blinds e a estrat
 
 ---
 
-## Estrutura de um torneio de pôquer — buy-in, taxas e stacks iniciais
+## Estrutura de um torneio de poker — buy-in, taxas e stacks iniciais
 
 Quando você se registra, paga um buy-in. Esse dinheiro se divide em dois:
 
@@ -61,7 +62,7 @@ Quando você se registra, paga um buy-in. Esse dinheiro se divide em dois:
 | **$100** | → Prize pool, dividido entre todos os inscritos |
 | **$9** | → Taxa da casa (rake) que fica com o local |
 
-Grandes eventos ao vivo costumam ficar com 8–10% do buy-in como taxa (torneios diários pequenos muitas vezes pegam mais) — aqui $9 de $109, cerca de 8,3%. Como essa taxa funciona (e por que o online é diferente do ao vivo) é o tema de [como funciona o rake no pôquer](/pt/blog/holdem-rake).
+Grandes eventos ao vivo costumam ficar com 8–10% do buy-in como taxa (torneios diários pequenos muitas vezes pegam mais) — aqui $9 de $109, cerca de 8,3%. Como essa taxa funciona (e por que o online é diferente do ao vivo) é o tema de [como funciona o rake no poker](/pt/blog/holdem-rake).
 
 Em troca, você recebe um **stack inicial** — normalmente de 10.000 a 50.000 fichas de torneio, em geral com 100–300 big blinds de profundidade no Nível 1.
 
@@ -86,7 +87,7 @@ Isto é o que a maioria dos guias pra iniciante pula, e é o conceito mecânico 
 
 Repare: **você não perdeu uma única ficha** entre o Nível 1 e o Nível 9. Mas seu stack foi de 200BB pra 10BB porque os blinds subiram. É assim que os torneios forçam ação e acabam eliminando os jogadores.
 
-==g:Regra de bolso: abaixo de 20 big blinds, você está em território de push-or-fold. Abaixo de 10 big blinds, precisa dar all-in com quase qualquer mão jogável antes que os blinds te devorem vivo.==
+==g:Regra de bolso: abaixo de 20 big blinds, você está em território de push-or-fold. Abaixo de 10 big blinds, precisa dar all-in com quase qualquer mão jogável — especialmente da late position ou do small blind — antes que os blinds te devorem vivo.==
 
 Quando chegar lá, os ranges exatos de all-in estão em [estratégia de short stack — quando dar push ou fold](/pt/blog/holdem-short-stack).
 
@@ -104,20 +105,20 @@ Você tem espaço pra jogar. Mãos especulativas, set-mining, ver flops — tudo
 ### Estágio 2 — Estágios intermediários (30–60 BB)
 Os antes já costumam estar em jogo a essa altura. A pressão sobre o stack começa. Jogadores com short stack começam a dar all-in. É aqui que a maior parte do field é eliminada.
 
-### Estágio 3 — A bubble
-O estágio mais estressante. Mais uma eliminação e todos os que sobram **entram no dinheiro** (ITM = In The Money). Short stacks travam. Big stacks intimidam. Jogar bem aqui pode agregar equity de verdade sem ganhar um único pote — [a bubble merece o próprio guia](/pt/blog/holdem-bubble).
+### Estágio 3 — A bolha (bubble)
+O estágio mais estressante. Mais uma eliminação e todos os que sobram **entram no dinheiro** (ITM = In The Money). Short stacks travam. Big stacks intimidam. Jogar bem aqui pode agregar equity de verdade sem ganhar um único pote — [a bolha merece o próprio guia](/pt/blog/holdem-bubble).
 
 ### Estágio 4 — Final table
-Normalmente sobram 6–9 jogadores. Os payouts sobem forte a cada eliminação. O [ICM (Modelo de Fichas Independente)](/pt/blog/holdem-icm "thumb:/images/holdem-icm-hero.webp") comanda as decisões aqui — o EV em fichas e o EV em dinheiro real divergem bastante.
+Normalmente sobram 6–9 jogadores. Os payouts sobem forte a cada eliminação. O [ICM (Modelo Independente de Fichas)](/pt/blog/holdem-icm "thumb:/images/holdem-icm-hero.webp") comanda as decisões aqui — o EV em fichas e o EV em dinheiro real divergem bastante.
 
 ---
 
-## Tipos de torneio de pôquer — freezeout, PKO, satellite, deepstack e mais
+## Tipos de torneio de poker — freezeout, PKO, satellite, deepstack e mais
 
 | Formato | Como funciona | Melhor para |
 |:---|:---|:---|
 | **Freezeout** | Um buy-in, sem rebuy. Quebrou = fora. | Iniciantes — custo fixo |
-| **Rebuy / Re-entry** | Paga de novo depois de quebrar (durante os níveis iniciais) | Jogadores agressivos com bankroll maior |
+| **Rebuy / Re-entry** | Compra fichas de novo durante a janela inicial — no rebuy, muitas vezes até sem quebrar | Jogadores agressivos com bankroll maior |
 | **Bounty / KO** | Ganha um bounty fixo em dinheiro por cada jogador que eliminar | Jogadores de ação — renda extra por knockout |
 | **PKO (Progressive KO)** | Os bounties crescem a cada knockout — parte vem pra você, parte é somada à sua cabeça | Jogadores de alta variância e grande upside |
 | **Deepstack** | Stack inicial bem acima do evento padrão da mesma série, com níveis mais lentos | Quem quer mais jogo pós-flop |
@@ -135,13 +136,13 @@ Um torneio freezeout dá a cada jogador exatamente um buy-in. Perdeu suas fichas
 
 ### O que é PKO no poker? (Progressive Knockout)
 
-Um PKO (Progressive Knockout) é um torneio de bounty em que tipicamente cerca de metade de cada buy-in vai pro prize pool normal e a outra metade vira um bounty na cabeça daquele jogador. Quando você elimina alguém, normalmente embolsa parte do bounty dele em dinheiro na hora, e o resto é somado ao seu próprio bounty — te tornando um alvo maior conforme você ganha. A divisão exata varia por site e evento; 50/50 é comum mas não universal, então confira o lobby ou a structure sheet. (Um guia completo de estratégia de PKO chega em breve a este cluster.)
+Um PKO (Progressive Knockout) é um torneio de bounty em que tipicamente cerca de metade de cada buy-in vai pro prize pool normal e a outra metade vira um bounty na cabeça daquele jogador. Quando você elimina alguém, normalmente embolsa parte do bounty dele em dinheiro na hora, e o resto é somado ao bounty na sua cabeça — te tornando um alvo maior conforme você ganha. A divisão exata varia por site e evento; 50/50 é comum mas não universal, então confira o lobby ou a structure sheet. (Um guia completo de estratégia de PKO chega em breve a este cluster.)
 
 ### O que é um torneio deepstack?
 
-Um torneio deepstack te dá muito mais fichas em relação aos blinds do que o evento padrão da mesma série, e em geral vem com níveis de blind mais longos. **Não existe um limiar padronizado** — "deepstack" é sempre um rótulo relativo. Tire do structure sheet quantos big blinds vale o seu stack no Nível 1 e compare com os 100–200 BB de um evento padrão. Mais fichas e um relógio mais lento significam mais jogo pós-flop, mais espaço pra se recuperar de um erro e dias mais longos.
+Um torneio deepstack te dá muito mais fichas em relação aos blinds do que o evento padrão da mesma série, e em geral vem com níveis de blind mais longos. **Não existe um limiar padronizado** — "deepstack" é sempre um rótulo relativo. Tire da structure sheet quantos big blinds vale o seu stack no Nível 1 e compare com os 100–200 BB de um evento padrão. Mais fichas e um relógio mais lento significam mais jogo pós-flop, mais espaço pra se recuperar de um erro e dias mais longos.
 
-**E os rebuys e add-ons?** Num evento de rebuy você pode pagar de novo depois de quebrar durante uma janela inicial definida; um add-on é uma compra opcional única de fichas, geralmente oferecida quando essa janela fecha. Depois disso, o evento segue como um freezeout.
+**E os rebuys e add-ons?** Num evento de rebuy você pode comprar de novo durante uma janela inicial definida — em muitos eventos, sempre que seu stack estiver no valor inicial ou abaixo, sem precisar quebrar; um add-on é uma compra opcional única de fichas, geralmente oferecida quando essa janela fecha. Depois disso, o evento segue como um freezeout.
 
 ---
 
@@ -151,18 +152,20 @@ Um satellite é um torneio menor em que o prêmio não é dinheiro — é **um t
 
 **Exemplo:**
 - Buy-in do WSOP Main Event: **$10.000**
-- Buy-in do satellite: **$500** (20 jogadores)
+- Buy-in do satellite: **$500** (20 jogadores — ignorando a taxa da casa para simplificar)
 - Prêmio: **1 vaga** no Main Event
 
 Em vez de gastar $10.000, você disputa um torneio de $500 contra outros 19 jogadores. Uma pessoa ganha a vaga de $10.000.
 
-**Satellites encadeados** vão ainda mais baixo. Um super-satellite de $5 → qualifier de $55 → evento de $215 → Main Event de $1.050. Muitos jogadores em grandes eventos entraram por uma corrente de satellites por uma fração do buy-in direto.
+**Satellites encadeados** vão ainda mais baixo. Um super-satellite de $5 → qualifier de $55 → evento de $215 → um Main Event online de $1.050. Muitos jogadores em grandes eventos entraram por uma corrente de satellites por uma fração do buy-in direto.
 
-==g:A estratégia de satellite é diferente do jogo de torneio normal — assim que você tem fichas suficientes pra garantir uma vaga, pare de correr riscos. Folde até mãos boas pra não quebrar na bubble.==
+==g:A estratégia de satellite é diferente do jogo de torneio normal — assim que você tem fichas suficientes pra garantir uma vaga, pare de correr riscos. Folde até mãos boas pra não quebrar na bolha.==
 
 ---
 
-## Como entrar num torneio de pôquer — 3 formas
+## Como entrar num torneio de poker — 3 formas
+
+Há três caminhos: **buy-in direto no balcão**, **pré-registro online** e **vaga via satellite** — o passo a passo de cada um vem abaixo. No Brasil, o circuito ao vivo mais conhecido é o **BSOP (Brazilian Series of Poker)**, que roda etapas ao longo do ano em resorts e centros de convenções — e o fluxo de registro é o mesmo de uma etapa da WSOP ou do APT: documento, buy-in, seat card.
 
 ### Opção A: buy-in direto no cassino (mais fácil)
 1. Ache o balcão de registro da poker room (ou o balcão de torneios em eventos maiores)
@@ -186,21 +189,21 @@ A maioria dos grandes festivais ao vivo deixa você se registrar online com ante
 
 **O registro normalmente abre 1–3 horas antes do início do torneio.** Em grandes festivais, registre-se online no dia anterior pra garantir a vaga.
 
-Jogando na Ásia? Veja o [guia do APT Incheon 2026](/pt/blog/apt-incheon-2026-guide) pra ver a programação, os buy-ins e o fluxo de registro de um festival de verdade.
+Jogando na Ásia? O [APT Incheon 2026 — resultados e campeão](/pt/blog/apt-incheon-2026-guide) mostra a programação, os buy-ins e o fluxo de registro de um festival de verdade.
 
 ---
 
-## Como jogar torneio de pôquer — estratégia por estágio
+## Como jogar torneio de poker — estratégia por estágio
 
 Um post só não ensina estratégia completa de torneio — é pra isso que servem os guias do cluster — mas aqui está o esqueleto estágio a estágio no qual todo plano vencedor se apoia:
 
-**Níveis iniciais (100BB+):** jogue um pôquer apertado e atento à posição, e veja flops baratos com mãos que quebram pares grandes. Uma [tabela de starting hands](/pt/blog/holdem-starting-hands-chart) disciplinada evita a maioria dos desastres de iniciante. Não blefe seu stack inteiro na primeira hora — ninguém dá fold no Nível 1.
+**Níveis iniciais (100BB+):** jogue um poker apertado e atento à posição, e veja flops baratos com mãos que quebram pares grandes. Uma [tabela de starting hands](/pt/blog/holdem-starting-hands-chart) disciplinada evita a maioria dos desastres de iniciante. Não blefe seu stack inteiro na primeira hora — ninguém dá fold no Nível 1.
 
 **Estágios intermediários (30–60BB):** os antes fazem todo pote valer a briga. Abra mais leve das posições finais, roube blinds, defenda seu big blind com mais frequência e comece a rastrear quem está de short stack na sua mesa.
 
 **Short stack (abaixo de 20BB):** o push-or-fold assume — a matemática aqui está essencialmente resolvida, e chutar custa dinheiro de verdade. Aprenda os ranges de all-in em [estratégia de short stack](/pt/blog/holdem-short-stack).
 
-**Bubble e final table:** a matemática da sobrevivência passa por cima da matemática das fichas. A pressão do payout muda quais mãos você pode jogar — os guias de bubble e ICM linkados na seção de estágios acima explicam exatamente como.
+**Bolha e reta final (final table):** a matemática da sobrevivência passa por cima da matemática das fichas. A pressão do payout muda quais mãos você pode jogar — os guias de bolha e ICM linkados na seção de estágios acima explicam exatamente como.
 
 ---
 
@@ -217,15 +220,15 @@ Isto é o que nenhum outro guia te conta. Aqui está uma linha do tempo realista
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
 <div style="color:hsl(var(--primary));font-weight:700">12h00</div>
-<div style="color:hsl(var(--foreground))">Cartas na mesa. Nível 1: blinds 25/50. Você tem 200BB. Jogue um pôquer exploratório.</div>
+<div style="color:hsl(var(--foreground))">Cartas na mesa. Nível 1: blinds 25/50. Você tem 200BB. Jogue um poker exploratório.</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
 <div style="color:hsl(var(--primary));font-weight:700">13h–15h</div>
-<div style="color:hsl(var(--foreground))">Níveis 2–4. Late registration ainda aberto. O field cresce. Alguns jogadores já quebram.</div>
+<div style="color:hsl(var(--foreground))">Níveis 2–4. Late registration ainda aberto. O field cresce. Os antes entram conforme a structure sheet (no exemplo acima, no nível 3). Alguns jogadores já quebram.</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
 <div style="color:hsl(var(--primary));font-weight:700">~15h30</div>
-<div style="color:hsl(var(--foreground))">Late reg fecha. Tamanho final do field anunciado. Prize pool confirmado. Antes entram.</div>
+<div style="color:hsl(var(--foreground))">Late reg fecha. Tamanho final do field anunciado. Prize pool confirmado.</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
 <div style="color:hsl(var(--primary));font-weight:700">~17h00</div>
@@ -233,11 +236,11 @@ Isto é o que nenhum outro guia te conta. Aqui está uma linha do tempo realista
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
 <div style="color:hsl(var(--primary));font-weight:700">18h–21h</div>
-<div style="color:hsl(var(--foreground))">A bubble se aproxima. Começa o jogo hand-for-hand. A pressão atinge o pico. Um quebra = todo mundo entra no dinheiro.</div>
+<div style="color:hsl(var(--foreground))">A bolha se aproxima. Começa o jogo hand-for-hand. A pressão atinge o pico. Um quebra = todo mundo entra no dinheiro.</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0">
 <div style="color:#22c55e;font-weight:700">21h–23h</div>
-<div style="color:hsl(var(--foreground))">ITM — a money bubble estoura. Os jogadores restantes ensacam fichas ou jogam até um final table hoje à noite.</div>
+<div style="color:hsl(var(--foreground))">ITM — a bolha do dinheiro estoura. Os jogadores restantes ensacam fichas ou jogam até um final table hoje à noite.</div>
 </div>
 </div>
 </div>
@@ -267,13 +270,13 @@ A estrutura de payout é sempre anunciada antes de o torneio começar. Peça a *
 
 ## Glossário de torneio — termos que você vai ouvir no Day 1
 
-Estes 13 termos cobrem a maior parte do que você vai ouvir na mesa. Pra ver o A a Z completo, veja o [glossário de pôquer](/pt/blog/holdem-glossary).
+Estes 13 termos cobrem a maior parte do que você vai ouvir na mesa. Pra ver o A a Z completo, veja o [glossário de poker](/pt/blog/holdem-glossary).
 
 | Termo | O que significa |
 |------|--------------|
 | **ITM** | In The Money — você chegou a uma posição paga |
-| **Bubble** | O estágio logo antes do ITM — uma eliminação de todo mundo entrar no dinheiro |
-| **Hand-for-hand** | Todas as mesas jogam uma mão de cada vez durante a bubble pra evitar enrolação |
+| **Bolha (bubble)** | O estágio logo antes do ITM — uma eliminação de todo mundo entrar no dinheiro |
+| **Hand-for-hand** | Todas as mesas jogam uma mão de cada vez durante a bolha pra evitar enrolação |
 | **Structure sheet** | O documento oficial com níveis de blind, antes e payouts |
 | **Chip leader** | O jogador com mais fichas |
 | **Short stack** | Um jogador com pouquíssimas fichas em relação aos blinds |
@@ -292,7 +295,7 @@ Estes 13 termos cobrem a maior parte do que você vai ouvir na mesa. Pra ver o A
 <div style="background:rgba(255,248,210,0.06);border:1px solid rgba(255,240,180,0.25);border-radius:12px;padding:20px 24px;margin:20px 0">
 <div style="font-size:13px;font-weight:700;color:hsl(var(--primary));margin-bottom:14px">Antes de sair de casa</div>
 <div style="display:grid;gap:8px;font-size:13px">
-<div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span><strong>Documento com foto válido</strong> — passaporte ou carteira de motorista. Sem exceção.</span></div>
+<div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span><strong>Documento com foto válido</strong> — no Brasil, RG ou CNH; no exterior, passaporte. Sem exceção.</span></div>
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span><strong>Buy-in + 20% extra</strong> em dinheiro — alguns locais não aceitam cartão</span></div>
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span><strong>Cartão de fidelidade do cassino</strong> se exigido (ex.: Caesars Rewards pro WSOP)</span></div>
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span><strong>E-mail de confirmação do registro</strong> se você se pré-registrou online</span></div>
@@ -312,15 +315,15 @@ Estes 13 termos cobrem a maior parte do que você vai ouvir na mesa. Pra ver o A
 
 :::readnext[Continue lendo]
 /pt/blog/holdem-tournament-vs-cash-game | Torneio vs Cash Game | /images/tournament-table-action.webp
-/pt/blog/holdem-bubble | O que é a bubble no pôquer? | /images/holdem-bubble-hero.webp
-/pt/blog/apt-incheon-2026-guide | Guia do APT Incheon 2026 | /images/apt-incheon-2026-guide-hero.webp
+/pt/blog/holdem-bubble | Como jogar a bolha no poker | /images/holdem-bubble-hero.webp
+/pt/blog/apt-incheon-2026-guide | APT Incheon 2026 — resultados e campeão | /images/apt-incheon-2026-guide-hero.webp
 :::
 
 ## FAQ
 
-**Q. Quanto tempo dura um torneio de pôquer?**
+**Q. Quanto tempo dura um torneio de poker?**
 
-A. Torneios diários em cassinos locais normalmente rolam por 4–8 horas. Grandes eventos de série como os campeonatos do WPT duram 4–6 dias com vários day bags — e o WSOP Main Event se estende por quase duas semanas, dos flights de Day 1 até o final table. Quando você se registrar, peça a structure sheet — ela vai te dizer a duração esperada do dia com base na duração dos níveis de blind e no tamanho inicial do field.
+A. Torneios diários em cassinos locais normalmente rolam por 4–8 horas. Grandes eventos de série como os campeonatos do WPT duram 4–6 dias — você ensaca as fichas no fim de cada dia — e o WSOP Main Event se estende por quase duas semanas, dos flights de Day 1 até o final table. Quando você se registrar, peça a structure sheet — ela vai te dizer a duração esperada do dia com base na duração dos níveis de blind e no tamanho inicial do field.
 
 **Q. Qual a diferença entre PKO e torneios de bounty?**
 
@@ -328,21 +331,25 @@ A. Num torneio de bounty (knockout) normal, cada jogador carrega um bounty fixo 
 
 **Q. Quais são as regras de rebuy e add-on?**
 
-A. Num torneio de rebuy você pode pagar a taxa de inscrição de novo depois de quebrar (ou às vezes quando seu stack cai abaixo de um limite), mas só durante um período de rebuy definido — normalmente os primeiros níveis de blind. Um add-on é uma compra opcional única de fichas, geralmente oferecida a todo mundo no fim do período de rebuy, independentemente do tamanho do stack. Assim que essa janela fecha, o evento segue como um freezeout. As regras exatas variam por local, então confira a structure sheet.
+A. Num torneio de rebuy você pode comprar fichas de novo durante um período definido — em muitos eventos, sempre que seu stack estiver no valor inicial ou abaixo, sem precisar quebrar — normalmente nos primeiros níveis de blind. Um add-on é uma compra opcional única de fichas, geralmente oferecida a todo mundo no fim do período de rebuy, independentemente do tamanho do stack. Assim que essa janela fecha, o evento segue como um freezeout. As regras exatas variam por local, então confira a structure sheet.
 
-**Q. É legal organizar um torneio de pôquer em casa?**
+**Q. É legal organizar um torneio de poker em casa?**
 
 A. Depende da sua jurisdição. Não existe regra de bolso que resolva isso — a linha está na legislação local, e guias que te entregam um teste de uma frase estão chutando por você. As leis variam muito por país e por estado, então confira as regulamentações locais antes de organizar.
 
-**Q. O que significa ITM no pôquer?**
+**Q. Qual é o maior torneio de poker do mundo?**
+
+A. Em prestígio, o Main Event da WSOP (World Series of Poker), em Las Vegas — buy-in de $10.000 e um field de milhares de jogadores todo ano. Em buy-in, existem eventos maiores (Super High Rollers de €100.000, como o do EPT Barcelona), e em número de entradas os recordes vêm de eventos de buy-in baixo. Mas se a pergunta é "qual torneio todo jogador sonha em jogar", a resposta é o Main Event da WSOP.
+
+**Q. O que significa ITM no poker?**
 
 A. ITM = "In The Money". Você chegou a uma colocação que garante um payout. Num torneio de 200 jogadores que paga 25 posições, você está ITM assim que 175 jogadores forem eliminados e só restarem 25. Seu min-cash normalmente é 1,5–2x o seu buy-in.
 
-**Q. Dá pra entrar num torneio de pôquer depois de ele ter começado?**
+**Q. Dá pra entrar num torneio de poker depois de ele ter começado?**
 
 A. Sim, durante a janela de late registration — normalmente os primeiros níveis de blind, muitas vezes de duas a quatro horas depois do início. Você ainda recebe o stack inicial completo, mas como os blinds subiram vai sentar com menos big blinds que os inscritos do começo. Assim que o late reg fecha, nenhuma nova entrada é permitida.
 
-**Q. Dá pra sair cedo de um torneio de pôquer e ficar com as fichas?**
+**Q. Dá pra sair cedo de um torneio de poker e ficar com as fichas?**
 
 A. Não. Diferente de um cash game, as fichas de torneio não têm valor em dinheiro e não podem ser trocadas no meio do evento. Se você for embora, suas fichas continuam em jogo e seguem pagando blinds e antes até acabarem. Você só recebe dinheiro se terminar numa posição paga (ITM).
 
@@ -373,12 +380,12 @@ A. Não. Diferente de um cash game, as fichas de torneio não têm valor em dinh
   </a>
   <a href="/pt/blog/holdem-blind-meaning" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Blinds</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">O que são os blinds no pôquer?</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">O que são os blinds no poker?</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Os níveis de blind começam aqui — SB, BB e antes</div>
   </a>
   <a href="/pt/blog/holdem-positions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Posições</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Posições na mesa de pôquer explicadas</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Posições na mesa de poker explicadas</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Por que a sua cadeira comanda cada decisão no torneio</div>
   </a>
 </div>

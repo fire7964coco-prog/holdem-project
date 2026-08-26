@@ -333,5 +333,5 @@ A. Yes. The Star Poker room runs cash games daily ==g:10 AM – 4 AM==, stakes f
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Which format fits your style?</div>
   </a>
 </div>
-`,
+`.trim(),
 };

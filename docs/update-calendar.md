@@ -115,9 +115,21 @@
 > ⚠ **8로케일도 같은 상태**다 — 1차 전환은 ko만 했다. 2차 때 9개 언어를 함께 정리하면 된다.
 > 🪶 참고: `:::note` 블록에 「2026년 8월 13일 현재」 날짜가 박혀 있다 — 전환 시 반드시 갱신.
 
+### 🆕 9/4 (금) 23:59 KST — JTBC 서울 마라톤 외국인 등록 마감 → `korea-poker-marathon-2026` desc가 죽는 날
+- **대상**: `korea-poker-marathon-2026` — **8개 언어** (en·ja·zh·zh-hant·es·de·pt·id)
+- **왜**: desc가 «só a JTBC Seoul ainda aceita inscrição»(pt) / EN도 동형 — **9/5부터 전 항목 마감**이라
+  desc·표의 JTBC 행(«Aberta»)이 거짓이 된다. 본문 L125가 9/4 마감을 명시하고 있다.
+- **할 일**: desc를 «2026년 등록은 모두 마감 — 2027 준비 가이드» 프레임으로, JTBC 행 상태를 마감으로 (8로케일)
+- 🪶 «훅이 죽는 날» 유형(masters-7th 교훈과 동일) — 대회일(11/1)이 아니라 이 날짜에 알림
+
 ### 8/29 (토) — EPT 바르셀로나 종료
 - **대상**: `ept-barcelona-2026-guide` — **8개 언어** (en·ja·zh·zh-hant·es·de·pt·id, ko판 없음 / 2026-08-06 실측)
 - **할 일**: 결과 아카이브 전환
+- 🆕 **2026-08-26에 EN·pt에 «★진행 중» `:::note` 배너를 신설했다** — 전환 때 이 배너를 결과 노트로 교체하라
+  (잔여 6로케일은 배너 없음). pt는 EN 07-25 Gold Pass 4요소 정정(€1.100 side event·€690)도 이식 완료 —
+  **es·de·ja·zh·zh-hant·id는 아직 미이식**이라 전환 회차 때 함께 소급.
+- 🆕 pt·EN의 Day 1 타임라인 «~20:30 (8–10 níveis)» 산수 모순은 08-26에 «Noite — 8 níveis»로 중화했다.
+  전환 때 2026 실측 스케줄로 확정 가능.
 - ⚠️ ja는 수요가 거의 0(`バルセロナ ポーカー大会` 0)이므로 **투자를 최소화**해도 됨
 
 > 🔴 **`apt-incheon`처럼 «반쪽»이 되지 마라 — 2026-08-17에 실제로 그렇게 터졌다.**
@@ -342,6 +354,8 @@
 | 항목 | 확인 주기 | 근거 |
 |---|---|---|
 | **WPT Tokyo 2026 발표** | 8~9월 재확인 | `wptevent.jp`가 아직 "WPT TOKYO 2025" 헤드라인. 발표는 통상 여름 |
+| 🆕 **cash game 필라 신설 약속** | 착수 시 | EN·pt `holdem-tournament-vs-cash-game` 본문 `:::note`가 «guia completo de cash game está a caminho»를 독자에게 공개 약속(08-26 EN 구조 이식). 신설 시 settled-decisions §1의 태그 이관 규칙 필수 |
+| 🆕 **GOP Incheon II 스케줄 공개(9월 초 예상)** | 9월 초 | godsofpoker.com 1차엔 시리즈 목록만 있고 바이인 미공개(08-26 실측). 공개되면 `korea-poker-marathon-2026`의 «buy-ins TBA» 갱신 + de의 «KRW 2,7 Mio.» 귀속 오류 정정 근거 |
 | JOPT 2027 전체 일정 | 연말 | 2027 Tokyo #01·Osaka #01만 나와 있음 |
 | ETIAS(유럽) 시행 | 2026 4분기 | 시행 직후 유럽 대회 글 재확인 |
 | 일미 조세조약 원천징수율 | 상시 | `market-profile/ja.md` 미해결 #2. WSOP 참가자에 직결 |

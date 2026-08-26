@@ -2,24 +2,24 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "holdem-icm",
-  title: "O que é ICM no pôquer? O Independent Chip Model explicado",
-  seoTitle: "Suas fichas não valem o valor de face — ICM no pôquer",
+  title: "O que é ICM no poker? O Independent Chip Model explicado",
+  seoTitle: "Suas fichas não valem o valor de face — ICM no poker",
   desc: "Num torneio suas fichas não são dinheiro — ganhar só paga o 1º lugar. O ICM (Independent Chip Model) transforma seu stack em prêmio real. Veja como funciona.",
-  tldr: "O ICM (Independent Chip Model) converte seu stack de fichas de torneio no seu valor real em premiação, usando os payouts e os stacks de todo mundo. Como você só ganha um primeiro prêmio, dobrar suas fichas nunca dobra seu dinheiro — então o stack do chip leader vale menos do que sua fatia de fichas, e os short stacks valem mais. Essa diferença é o motivo de você foldar na bubble mãos que seriam calls fáceis num cash game.",
+  tldr: "O ICM (Independent Chip Model) converte seu stack de fichas de torneio no seu valor real em premiação, usando os payouts e os stacks de todo mundo. Como você só ganha um primeiro prêmio, dobrar suas fichas nunca dobra seu dinheiro — então o stack do chip leader vale menos do que sua fatia de fichas, e os short stacks valem mais. Essa diferença é o motivo de você foldar na bolha mãos que seriam calls fáceis num cash game.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-08-13",
+  updated: "2026-08-26",
   masterUpdated: "2026-08-13",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🏆",
   image: "/images/holdem-icm-hero.webp",
-  imageAlt: "Fichas de pôquer empilhadas na final table diante de uma escada de payout, mostrando que um stack maior de fichas não se converte um-para-um numa fatia maior da premiação",
-  tags: ["poker icm", "o que é icm no poker", "significado de icm no poker", "icm vs chip ev", "icm deal", "chip chop vs icm", "como calcular icm", "estratégia de icm no poker"],
+  imageAlt: "Fichas de poker empilhadas na final table diante de uma escada de payout, mostrando que um stack maior de fichas não se converte um-para-um numa fatia maior da premiação",
+  tags: ["poker icm", "o que é icm no poker", "significado de icm no poker", "icm vs chip ev", "icm deal", "chip chop vs icm", "como calcular icm", "calculadora de icm poker"],
   content: `
-A primeira vez que o ICM me custou dinheiro, eu nem sabia que ele existia. Sobravam quatro de nós, três ganhavam prêmio, e eu olhei para baixo e vi um par de valetes com um stack mediano. Dei shove, o chip leader pagou com ás-dez e eu bustei na bubble sem levar nada. ==Por anos arquivei aquilo como prova de que o shove estava errado. Não estava== — eu só não fazia ideia de *onde* uma bubble realmente cobra de você, e isso acaba sendo a ideia mais importante de todo o pôquer de torneio.
+A primeira vez que o ICM me custou dinheiro, eu nem sabia que ele existia. Sobravam quatro de nós, três ganhavam prêmio, e eu abri um par de valetes com um stack mediano. Dei shove, o chip leader pagou com ás-dez e eu bustei na bolha sem levar nada. ==Por anos arquivei aquilo como prova de que o shove estava errado. Não estava== — eu só não fazia ideia de *onde* uma bolha realmente cobra de você, e isso acaba sendo a ideia mais importante de todo o poker de torneio.
 
-==Fichas num torneio não são dinheiro. Você só ganha *um* primeiro prêmio, então dobrar seu stack nunca dobra o quanto você realmente vale.== O ICM — o Independent Chip Model — é a matemática que transforma sua pilha de fichas nos dólares reais que ela representa, e quando você enxerga isso, calls e folds que pareciam errados de repente fazem sentido. Este guia te leva de "o que significa ICM" até a divisão de um deal de final table, com cada número resolvido para você conferir na mão.
+==Fichas num torneio não são dinheiro. Você só ganha *um* primeiro prêmio, então dobrar seu stack nunca dobra o quanto você realmente vale.== O ICM — o Independent Chip Model — é a matemática que transforma sua pilha de fichas nos dólares reais que ela representa, e quando você enxerga isso, calls e folds que pareciam errados de repente fazem sentido. Este guia te leva de "o que significa ICM" até a divisão de um deal de final table, com cada número resolvido para você conferir no papel.
 
 O ICM vive dentro do [jogo de torneio](/pt/blog/holdem-tournament "thumb:/images/holdem-tournament-hero.webp") especificamente — é por isso que o MTT nas fases finais não se parece em nada com um cash game.
 
@@ -35,11 +35,11 @@ short stack | vale MAIS que sua fatia de fichas
 
 ---
 
-## O que é ICM no pôquer?
+## O que é ICM no poker?
 
 **O ICM (o Independent Chip Model) converte um stack de fichas no seu valor real em premiação, usando os payouts restantes e o tamanho do stack de cada jogador.** Ele responde uma pergunta: ==se o torneio acabasse agora com esses stacks, quanto a minha fatia da premiação realmente vale em dólares?==
 
-Ele funciona estimando com que frequência cada jogador termina em cada posição paga — primeiro, segundo, terceiro e assim por diante — a partir da sua fatia de fichas, e depois multiplicando essas probabilidades pelos payouts. Quanto maior o seu stack, mais vezes você termina no alto; mas como ==o prêmio do topo é limitado, fichas extras compram cada vez menos dinheiro.==
+Ele funciona estimando com que frequência cada jogador termina em cada posição paga — primeiro, segundo, terceiro e assim por diante — a partir da sua fatia de fichas, e depois multiplicando essas probabilidades pelos payouts. Quanto maior o seu stack, mais vezes você termina no alto; mas como ==o prêmio do topo é limitado, cada ficha extra vale cada vez menos em premiação.==
 
 A virada mental chave: num cash game uma ficha é um dólar, ponto final. Num torneio uma ficha é um *bilhete de loteria* sobre um conjunto fixo de prêmios. O ICM precifica esse bilhete. Ele se aplica só a torneios e sit-and-gos — [nunca a cash games](/pt/blog/holdem-tournament-vs-cash-game "thumb:/images/tournament-table-action.webp"), onde suas fichas já valem o valor de face.
 
@@ -57,7 +57,7 @@ Vire ao contrário e o short stack é o vencedor dessa matemática. Ele já tem 
 
 ## Como o ICM é calculado? (O modelo Malmuth–Harville)
 
-**O ICM atribui a cada jogador a probabilidade de terminar em cada posição baseada puramente no tamanho do stack, e depois multiplica pelos payouts.** O método costuma ser chamado de modelo Malmuth–Harville — a matemática das probabilidades de colocação vem do trabalho de David Harville nos anos 1970 sobre odds de corrida de cavalos, que Mason Malmuth aplicou ao pôquer.
+**O ICM atribui a cada jogador a probabilidade de terminar em cada posição baseada puramente no tamanho do stack, e depois multiplica pelos payouts.** O método costuma ser chamado de modelo Malmuth–Harville — a matemática das probabilidades de colocação vem do trabalho de David Harville nos anos 1970 sobre odds de corrida de cavalos, que Mason Malmuth aplicou ao poker.
 
 A regra é simples e recursiva:
 
@@ -91,7 +91,7 @@ Agora multiplique cada linha pelos payouts e você tem o valor em dólares de ca
 
 </div>
 
-Lá está em números: o leader tem ==metade das fichas mas só 38,4% do dinheiro==, enquanto os 20% de fichas do short stack valem 28,9%. Você não precisa fazer essa conta na mão na mesa — a [calculadora de ICM](/calculator) faz na hora — mas ver a máquina funcionando uma vez é o que faz a estratégia grudar.
+Lá está em números: o leader tem ==metade das fichas mas só 38,4% do dinheiro==, enquanto os 20% de fichas do short stack valem 28,9%. Você não precisa fazer essa conta na mão na mesa — a [calculadora de ICM](/en/calculator) (em inglês) faz na hora — mas ver a máquina funcionando uma vez é o que faz a estratégia grudar.
 
 ---
 
@@ -99,9 +99,9 @@ Lá está em números: o leader tem ==metade das fichas mas só 38,4% do dinheir
 
 **O chip EV mede uma decisão em fichas ganhas ou perdidas; o ICM (ou "$EV") mede em premiação real. Eles concordam cedo e se separam feio no fim.** Cedo num torneio, com pay jumps pequenos e distantes, uma ficha é basicamente uma ficha — você joga [chip EV](/pt/blog/holdem-equity "thumb:/images/holdem-equity-hero.webp"), acumulando sem parar. Perto do dinheiro e na final table, o ICM assume.
 
-O confronto clássico é *pagar* um all-in marginal. No chip EV, um cara-ou-coroa por um pote grande pode ser ok ou até bom — você ganha tantas fichas quanto perde. No ICM pode ser um ==fold== claro, porque bustar te custa premiação travada que você não recupera, enquanto as fichas que você ganharia valem menos que o valor de face.
+O confronto clássico é *pagar* um all-in marginal. No chip EV, um cara ou coroa por um pote grande pode ser ok ou até bom — você ganha tantas fichas quanto perde. No ICM pode ser um ==fold== claro, porque bustar te custa premiação travada que você não recupera, enquanto as fichas que você ganharia valem menos que o valor de face.
 
-É aqui que eu entendia aqueles valetes ao contrário. O imposto é cobrado no *call*, e o outro lado disso é justamente o que torna uma bubble jogável: como o range de pagar de todo mundo aperta, sua fold equity vale **mais** do que vale em fichas. Dar shove sendo o primeiro é a arma do stack médio na bubble, não o vazamento dele — eu esbarrei no único jogador que podia pagar mais aberto, e isso é variância, não erro de estratégia. ==O chip EV pergunta "isso vai construir meu stack?" O ICM pergunta "isso vai construir minha bankroll?"== — e só o segundo paga de verdade.
+É aqui que eu entendia aqueles valetes ao contrário. O imposto é cobrado no *call*, e o outro lado disso é justamente o que torna uma bolha jogável: como o range de pagar de todo mundo aperta, sua fold equity vale **mais** do que vale em fichas. Dar shove sendo o primeiro é a arma do stack médio na bolha, não o leak dele — eu esbarrei no único jogador que podia pagar mais aberto, e isso é variância, não erro de estratégia. ==O chip EV pergunta "isso vai construir meu stack?" O ICM pergunta "isso vai construir meu bankroll?"== — e só o segundo paga de verdade.
 
 ---
 
@@ -111,11 +111,11 @@ O confronto clássico é *pagar* um all-in marginal. No chip EV, um cara-ou-coro
 
 O imposto aparece em todo all-in como um **risk premium** — a equity extra que você precisa *além* do break-even do chip EV antes de um call ser de fato lucrativo em dólares. Se a matemática das fichas diz que você precisa de 40% para pagar, o ICM pode exigir 48-50%, porque o lado ruim (bustar, perder a equity dos pay jumps) supera o lado bom (fichas valendo menos que o valor de face).
 
-O jogador que sente isso mais é o **stack médio na bubble** — grande o bastante para ter equity real a perder, não curto o bastante para ser forçado a entrar. Ele carrega o maior risk premium e deve jogar o mais tight. O stack grande carrega o *menor* risk premium, que é o motor inteiro por trás da pressão de ICM.
+O jogador que sente isso mais é o **stack médio na bolha** — grande o bastante para ter equity real a perder, não curto o bastante para ser forçado a entrar. Ele carrega o maior risk premium e deve jogar o mais tight. O stack grande carrega o *menor* risk premium, que é o motor inteiro por trás da pressão de ICM.
 
 ---
 
-![Um stack médio de torneio foldando ao shove de um stack grande na bubble do dinheiro, fichas e uma escada de payout à vista — o momento em que a pressão de ICM transforma um call normal num fold](/images/holdem-icm-pressure.webp "Pressão de ICM: o stack médio folda porque bustar custa premiação travada que as fichas não podem comprar de volta")
+![Um stack médio de torneio foldando ao shove de um stack grande na bolha do dinheiro, fichas e uma escada de payout à vista — o momento em que a pressão de ICM transforma um call normal num fold](/images/holdem-icm-pressure.webp "Pressão de ICM: o stack médio folda porque bustar custa premiação travada que as fichas não podem comprar de volta")
 
 ## Bubble factor & risk premium: como o ICM muda seus shoves e calls
 
@@ -126,7 +126,7 @@ Duas regras práticas saem disso:
 - **Stack grande: ataque.** Seu risk premium baixo te deixa [abrir e dar 3-bet](/pt/blog/holdem-3bet) sem parar contra jogadores que não podem pagar sem arriscar a vida no torneio. Isso é "aplicar pressão de ICM", e é a forma mais confiável de ganhar fichas numa final table.
 - **Stacks médio e short: aperte seu range de call, mas continue sendo o primeiro a dar shove.** Ser quem move all-in (com fold equity) é muito melhor do que ser quem tem que pagar. Sob pressão, seu range de call deve encolher forte enquanto seu range de open-shove segue agressivo.
 
-O assento pesadelo é o stack médio recebendo o shove — foldando mãos tão fortes quanto algumas que você pagaria na hora num cash game. Isso não é fraqueza; isso é ICM.
+A pior cadeira é a do stack médio recebendo o shove — foldando mãos tão fortes quanto algumas que você pagaria na hora num cash game. Isso não é fraqueza; isso é ICM.
 
 ---
 
@@ -146,16 +146,16 @@ Digamos que três jogadores com 50% / 30% / 20% das fichas estão dividindo um p
 
 </div>
 
-O short stack recebe ==$97 a mais== de um ICM deal do que de um chip chop, porque o ICM credita os pay jumps que ele já conquistou. Então a regra é fácil: ==se você está short, peça um ICM deal; se você é o chip leader, proponha um chip chop.== Na prática o chip leader muitas vezes negocia um pouco *acima* do seu número de ICM (e os short stacks aceitam um pouco abaixo) em troca da certeza de travar o dinheiro — tudo bem, desde que você saiba seu número de ICM primeiro. Rode seus próprios stacks e payouts na [calculadora de ICM deal](/calculator) antes de concordar com qualquer coisa.
+O short stack recebe ==$97 a mais== de um ICM deal do que de um chip chop, porque o ICM credita os pay jumps que ele já conquistou. Então a regra é fácil: ==se você está short, peça um ICM deal; se você é o chip leader, proponha um chip chop.== Na prática o chip leader muitas vezes negocia um pouco *acima* do seu número de ICM (e os short stacks aceitam um pouco abaixo) em troca da certeza de travar o dinheiro — tudo bem, desde que você saiba seu número de ICM primeiro. Rode seus próprios stacks e payouts na [calculadora de ICM deal](/en/calculator) antes de concordar com qualquer coisa.
 
 ---
 
 ## Quando o ICM importa mais — e quando você deve ignorá-lo?
 
-**O ICM importa mais perto dos pay jumps e menos quando eles estão longe.** Apoie-se nele nestes spots:
+**O ICM importa mais perto dos pay jumps e menos quando eles estão longe: perto do dinheiro e na final table você joga $EV; no início, no jogo profundo e no heads-up você volta ao chip EV e acumula.** Apoie-se nele nestes spots:
 
-- **A [bubble do dinheiro](/pt/blog/holdem-bubble "thumb:/images/holdem-bubble-hero.webp")** — o maior pulo de todos é de $0 para um prêmio, então os risk premiums batem no teto.
-- **A bubble da final table e cada pay jump na final table** — cada degrau da escada é dinheiro real.
+- **A [bolha do dinheiro](/pt/blog/holdem-bubble "thumb:/images/holdem-bubble-hero.webp")** — o maior pulo de todos é de $0 para um prêmio, então os risk premiums batem no teto.
+- **A bolha da final table e cada pay jump na final table** — cada degrau da escada é dinheiro real.
 - **Satellites** — o caso extremo: cada vaga classificatória vale o mesmo, então quando você tem fichas suficientes para ganhar uma vaga, fichas extras valem quase *nada* e você folda quase tudo.
 
 Ignore-o (jogue chip EV) quando:
@@ -164,7 +164,7 @@ Ignore-o (jogue chip EV) quando:
 - **Jogo deep-stacked com blinds pequenos**, onde você tem espaço para superar os adversários no jogo em vez de meter tudo.
 - **Heads-up pelo título**, onde só restam dois prêmios e o ICM para de mudar sua estratégia — na prática é chip EV de novo.
 
-Um vazamento comum é aplicar ICM demais: foldar até virar um short stack "para subir na escada" em vez de acumular quando a pressão ainda não está realmente ali. O ICM é uma ferramenta de fim de jogo, não uma desculpa para jogar com medo o torneio inteiro.
+Um leak comum é aplicar ICM demais: foldar até virar um short stack "para subir na escada" em vez de acumular quando a pressão ainda não está realmente ali. O ICM é uma ferramenta de fim de jogo, não uma desculpa para jogar com medo o torneio inteiro.
 
 ---
 
@@ -182,12 +182,12 @@ Tem até respaldo empírico para o ponto cego dele: um grande estudo de 2025 que
 
 :::readnext[Continue lendo]
 /pt/blog/holdem-tournament | Estratégia de torneio no Texas Hold'em | /images/holdem-tournament-hero.webp
-/pt/blog/holdem-equity | Equity no pôquer explicada | /images/holdem-equity-hero.webp
+/pt/blog/holdem-equity | Equity no poker explicada | /images/holdem-equity-hero.webp
 :::
 
 ## FAQ
 
-**Q. O que é ICM no pôquer?**
+**Q. O que é ICM no poker?**
 
 A. O ICM (o Independent Chip Model) é uma fórmula que converte seu stack de fichas de torneio no seu valor real em premiação, usando os payouts restantes e o stack de cada jogador. Ele funciona porque você só ganha um primeiro prêmio, então fichas e dólares não são a mesma coisa — o ICM precifica a diferença.
 
@@ -213,7 +213,7 @@ A. Fases inicial e média, jogo deep-stacked com blinds pequenos, e heads-up pel
 
 **Q. Quem inventou o ICM?**
 
-A. A matemática das probabilidades de colocação costuma ser creditada a David Harville (a partir de pesquisa de corrida de cavalos dos anos 1970), que Mason Malmuth aplicou a torneios de pôquer — daí o modelo "Malmuth–Harville". Ele virou a forma padrão de avaliar stacks de torneio e dividir deals de final table.
+A. A matemática das probabilidades de colocação costuma ser creditada a David Harville (a partir de pesquisa de corrida de cavalos dos anos 1970), que Mason Malmuth aplicou a torneios de poker — daí o modelo "Malmuth–Harville". Ele virou a forma padrão de avaliar stacks de torneio e dividir deals de final table.
 
 ---
 
@@ -223,7 +223,7 @@ A. A matemática das probabilidades de colocação costuma ser creditada a David
 2. **Fim de jogo, troque de chip EV para $EV.** Perto dos pay jumps, um call precisa de equity extra (um risk premium) para ser lucrativo. O stack médio folda mãos que um cash game pagaria na hora.
 3. **Saiba seu número antes de fazer o deal.** Short stacks querem um ICM deal, stacks grandes querem um chip chop — rode a calculadora primeiro.
 
-Daqui, veja como a pressão de ICM se encaixa na [estratégia de torneio](/pt/blog/holdem-tournament) mais ampla, ou volte à base com [equity no pôquer](/pt/blog/holdem-equity) e [pot odds](/pt/blog/holdem-pot-odds).
+Daqui, veja como a pressão de ICM se encaixa na [estratégia de torneio](/pt/blog/holdem-tournament) mais ampla, ou volte à base com [equity no poker](/pt/blog/holdem-equity) e [pot odds](/pt/blog/holdem-pot-odds).
 
 ---
 
@@ -242,12 +242,12 @@ Daqui, veja como a pressão de ICM se encaixa na [estratégia de torneio](/pt/bl
   </a>
   <a href="/pt/blog/holdem-equity" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Estratégia</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Equity no pôquer explicada</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Equity no poker explicada</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Chip EV é só equity em fichas</div>
   </a>
-  <a href="/calculator" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/en/calculator" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Ferramenta grátis</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Calculadora de ICM</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Calculadora de ICM (em inglês)</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Rode seus próprios stacks e deals</div>
   </a>
 </div>

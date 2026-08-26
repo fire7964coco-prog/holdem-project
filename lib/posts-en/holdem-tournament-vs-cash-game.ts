@@ -8,9 +8,9 @@ export const POST: Post = {
   tldr: "In cash games, chips are real money and blinds stay fixed. In tournaments, chips are survival equity, blinds rise, and payouts depend on where you finish.",
   category: "tournament",
   date: "2026-06-11",
-  updated: "2026-08-11",
+  updated: "2026-08-26",
   hideSummaryImageSlot: true,
-  readTime: "16 min",
+  readTime: "18 min",
   emoji: "🏆",
   image: "/images/holdem-tournament-vs-cash-hero.webp",
   imageAlt: "Side-by-side infographic comparing cash game and tournament poker — chip value, blind structure, and when you can leave",
@@ -33,7 +33,7 @@ Almost every new Hold'em player eventually asks the same question:
 
 At first, they look like the same game. You still get two hole cards, five community cards, and four betting rounds from preflop to river. But strategically, they are almost two different worlds. In a cash game, your chips are money. In a tournament, your chips are your tournament life.
 
-This guide breaks down ==cash game vs tournament poker== the way beginners actually need it: what a cash game is and how it works, chip value, blind structure, how strategy changes, which format is harder, which is more profitable, bankroll, ICM, and which one you should start with. If tournaments themselves are still a mystery, read [how poker tournaments work — buy-ins, blind levels, and the Day-1 flow](/en/blog/holdem-tournament) first; this article compares the two formats instead of repeating that structure guide.
+This guide breaks down ==cash game vs tournament poker== the way beginners actually need it: what a cash game is and how it works, chip value, blind structure, how strategy changes, which format is harder, which is more profitable, bankroll, ICM, when to leave a table, and which one you should start with. If tournaments themselves are still a mystery, read [how poker tournaments work — buy-ins, blind levels, and the Day-1 flow](/en/blog/holdem-tournament) first; this article compares the two formats instead of repeating that structure guide.
 
 ### The 15-second answer
 
@@ -266,7 +266,9 @@ So when *should* you leave a cash game? The rules say "whenever you want," but t
 - **Leave when the game is no longer good.** The weakest players quit, the lineup tightened up, or the seats that made the table profitable are gone.
 - **Leave when *you* are no longer good.** Tilt, fatigue, and distraction destroy win rates faster than bad cards. If you catch yourself calling out of frustration, rack up.
 - **Do not leave just because you hit a number.** Being up or down a buy-in says nothing about whether the next hour is profitable. Quitting winners in a great game and grinding losses in a terrible one are both leaks.
-- **Leaving right after a big pot is allowed.** No rule forces you to "give action" — though etiquette-wise, a short cool-down lap is smoother than an instant hit-and-run.
+- **Leaving right after a big pot is allowed.** No rule forces you to "give action" — though etiquette-wise, playing a few more hands before racking up is smoother than an instant hit-and-run.
+
+Two house rules that apply almost everywhere: you can't pocket chips off the table while you keep playing ("ratholing"), and if you leave and return to the same game soon after, you usually must buy back in for at least what you left with.
 
 | Player situation | Better fit |
 |------|------|
@@ -381,11 +383,11 @@ A. A common guideline is 20-40 buy-ins for cash games and 100+ buy-ins for large
 
 **Q. How many big blinds should you start with in a cash game vs a tournament?**
 
-A. In a cash game, buy in for the table maximum — usually around 100 big blinds ($200 at $1/$2) — because deep stacks reward postflop skill and let you win a full stack when you're ahead. A tournament picks your depth for you: you typically start around 100-300 big blinds, but rising blinds shrink that to 20, then 10, then push/fold territory. Short version: buy in deep for cash, and in a tournament watch your big-blind count fall and adjust as it does.
+A. In a cash game, buy in for the table maximum — at $1/$2 that's usually $200–$300, i.e. 100–150 big blinds — because deep stacks reward postflop skill and let you win a full stack when you're ahead. A tournament picks your depth for you: you typically start around 100-300 big blinds, but rising blinds shrink that to 20, then 10, then push/fold territory. Short version: buy in deep for cash, and in a tournament watch your big-blind count fall and adjust as it does.
 
 **Q. How many chips do you need for a home cash game?**
 
-A. A standard 300-chip set comfortably covers up to about 6 players — at 7-8 it's 300 ÷ 8 = under 40 chips each, so a 500-chip set is the better buy. Give everyone the same starting stack across 3-4 denominations, with most chips in the smallest values so players can bet and make change easily. The exact count matters less than everyone agreeing what each color is worth in real money before the first hand.
+A. A standard 300-chip set comfortably covers up to about 6 players — at 7-8 it would be 300 ÷ 8 = under 40 chips each if you dealt out everything, and in a cash game you shouldn't: set the buy-in as a min/max range, use 3-4 denominations with most chips in the smallest values, and keep the rest in the case for rebuys. That's why a 500-chip set serves 7-8 players better. The exact count matters less than everyone agreeing what each color is worth in real money before the first hand.
 
 **Q. Do professional players play cash games or tournaments?**
 

@@ -128,6 +128,12 @@ Sources: pokernobrasil.com · checkraise.com.br · pokerlab.com.br · ggpoker.co
 | **trinca** | 트리플(세트/트립스 상위) | 앱 ⑬ 축어 「As **trincas** não são raras」 · 이 파일 「용어 (현지 관습)」절의 브라질 속어 「세트 적중 → trincar」와 같은 뿌리 |
 | **overcard / overpair** | 영어 그대로 | 앱 스팟 축어 「guerra de **overcards**」·「os **overpairs** … mantêm a pressão」 |
 | regular(단골) | **regs** | 이 파일 「4. 용어 (브라질 포커 미디어 실사용)」절. 🟢 `range poker` PAA에 **`O que é reg poker?`**가 실재해 FAQ로 흡수했다 |
+| 🆕 **bubble(국면)** | **bolha** (산문·제목·태그 전부) | 2026-08-26 회차 6 확정 — settled-decisions §1 참조. 기술용어 **bubble factor·bubble boy·on the bubble·stone/soft bubble은 영어 유지**. 버블 보이 속칭 «o bolha»(남성 — 사람 지칭) 실사용 확인 |
+| 🆕 **risk premium** | **risk premium** (영어) — 첫 등장에 «(prêmio de risco)» 병기 가능 | 2026-08-26 회차 6 통일(icm·short-stack 다수 용례에 bubble 2곳을 맞춤) |
+| 🆕 **ICM 풀네임** | **Modelo Independente de Fichas** | «Modelo de Fichas Independente(s)» 두 변형을 2026-08-26에 통일 |
+| 🆕 **EPT 성별** | **o EPT** (남성 — WPT·APT와 동일) | 2026-08-26 통일. SuperPoker 등 BR 매체가 «do EPT Barcelona»로 일관. «a principal série»처럼 술어 명사가 여성인 것은 정당 |
+| 🆕 pay jump · entradas · Taipé | **pay jump**(띄어쓰기) · **entradas**(entries 금지) · **Taipé**(도시 지칭 — 공식 이벤트명 «APTC Taipei»는 유지) | 2026-08-26 회차 6 표기 통일 |
+| 🆕 **prize/payout equity** | **equity de premiação** (또는 equity de prêmio) | 영어 «prize equity·payout equity»를 본문에 남기지 않는다(2026-08-26) |
 
 ## 2. 「플랍 이후」를 뭐라고 쓰나 — 🔴 es 와 갈리는 자리
 

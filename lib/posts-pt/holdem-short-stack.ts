@@ -2,23 +2,24 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "holdem-short-stack",
-  title: "Como jogar short stack no pôquer — estratégia de push/fold por profundidade de stack",
-  seoTitle: "Como jogar short stack (push/fold) no pôquer",
-  desc: "Curto num torneio? Aprenda push/fold por profundidade de stack — quando dar shove com 15, 10 e 5 big blinds, as zonas de M-ratio e a virada do ICM na bubble.",
-  tldr: "Um short stack (grosso modo abaixo de 20–25 big blinds) não consegue jogar pôquer pós-flop normal, e de uns 15 big blinds para baixo ele troca para push/fold: vai de all-in first-in para manter a fold equity, e nunca faz open-limp nem min-raise-depois-fold. Dê shove com mais mãos da late position, mantenha seu range de pagar mais fechado que o de shove, e não fique blindando até o zero 'esperando uma mão' — a fold equity é a arma, e abaixo de uns 8 big blinds ela some rápido.",
+  title: "Como jogar short stack no poker — estratégia de push/fold por profundidade de stack",
+  seoTitle: "Como jogar short stack (push/fold) no poker",
+  desc: "Curto num torneio? Aprenda push/fold por profundidade de stack — quando dar shove com 15, 10 e 5 big blinds, as zonas de M-ratio e a virada do ICM na bolha.",
+  tldr: "Um short stack (grosso modo abaixo de 20–25 big blinds) não consegue jogar poker pós-flop normal, e de uns 15 big blinds para baixo ele troca para push/fold: vai de all-in first-in para manter a fold equity, e nunca faz open-limp nem min-raise-depois-fold. Dê shove com mais mãos da late position, mantenha seu range de pagar mais fechado que o de shove, e não fique blindando até o zero 'esperando uma mão' — a fold equity é a arma, e abaixo de uns 8 big blinds ela some rápido.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-08-13",
+  updated: "2026-08-26",
+  masterUpdated: "2026-08-13",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "📉",
   image: "/images/holdem-short-stack-hero.webp",
   imageAlt: "Um short stack de fichas de torneio ao lado de um stack grande no feltro verde com um relógio de torneio atrás — o momento em que um jogador curto precisa ir de all-in ou foldar",
-  tags: ["estratégia de short stack", "como jogar short stack", "estratégia push fold", "push fold chart", "M ratio pôquer", "short stack pôquer", "estratégia all in pôquer", "fold equity"],
+  tags: ["estratégia de short stack", "como jogar short stack", "estratégia push fold", "tabela push fold poker", "M ratio poker", "short stack poker", "estratégia all in poker", "quantos big blinds é short stack"],
   content: `
-A vez que mais rápido saí de "ainda vivo" para "eliminado" foi numa noite em que fiquei dando min-raise com um stack de 12 big blinds, foldando para o re-raise toda vez, e sangrando um big blind e meio a cada órbita até ficar curto demais para assustar qualquer um. Quando finalmente dei shove, eu tinha quatro big blinds e fui pago por dois jogadores. ==Não tive azar — joguei um short stack como se fosse um profundo.== Assim que seu stack fica pequeno, o jogo inteiro muda, e os jogadores que conhecem as novas regras dominam a mesa.
+A vez que mais rápido saí de "ainda vivo" para "eliminado" foi numa noite em que fiquei dando min-raise com um stack de 12 big blinds, foldando para o re-raise toda vez, e sangrando um big blind e meio a cada órbita até ficar curto demais para assustar qualquer um. Quando finalmente dei shove, eu tinha quatro big blinds e fui pago por dois jogadores. ==Não tive azar — joguei um short stack como se fosse um stack profundo.== Assim que seu stack fica pequeno, o jogo inteiro muda, e os jogadores que conhecem as novas regras dominam a mesa.
 
-==Um short stack tem uma única tarefa: ir de all-in primeiro, manter sua fold equity, e escolher o momento certo antes que os blinds escolham por você.== Isso é push/fold, e é a vantagem mais aprendível dos torneios — um conjunto limpo de regras que você aplica no instante em que seu stack cai. Este guia é o capítulo de ação da trilogia de matemática de torneio: o [ICM](/pt/blog/holdem-icm "thumb:/images/holdem-icm-hero.webp") é a teoria, a [bubble](/pt/blog/holdem-bubble "thumb:/images/holdem-bubble-hero.webp") é o spot, e o jogo de short stack são os movimentos que você de fato faz no [torneio](/pt/blog/holdem-tournament "thumb:/images/holdem-tournament-hero.webp").
+==Um short stack tem uma única tarefa: ir de all-in primeiro, manter sua fold equity, e escolher o momento certo antes que os blinds escolham por você.== Isso é push/fold, e é a vantagem mais aprendível dos torneios — um conjunto limpo de regras que você aplica no instante em que seu stack cai. Este guia é o capítulo de ação da trilogia de matemática de torneio: o [ICM](/pt/blog/holdem-icm "thumb:/images/holdem-icm-hero.webp") é a teoria, a [bolha](/pt/blog/holdem-bubble "thumb:/images/holdem-bubble-hero.webp") é o spot, e o jogo de short stack são os movimentos que você de fato faz no [torneio](/pt/blog/holdem-tournament "thumb:/images/holdem-tournament-hero.webp").
 
 ---
 
@@ -32,9 +33,9 @@ pague mais fechado | do que você dá shove
 
 ---
 
-## O que é um short stack no pôquer? (E quantos big blinds)
+## O que é um short stack no poker? (E quantos big blinds)
 
-**Um short stack é qualquer stack pequeno demais para jogar pôquer pós-flop normal — grosso modo abaixo de uns 20–25 big blinds, com o push/fold assumindo a partir de uns 15 big blinds para baixo.** Esses não são cortes rígidos; são as zonas em que suas opções colapsam. Com 60 big blinds você pode aumentar, pagar, flutuar e superar as pessoas depois do flop. Com 12, quase tudo isso some — você está decidindo, quase sempre antes do flop, entre ir de all-in ou foldar.
+**Um short stack é qualquer stack pequeno demais para jogar poker pós-flop normal — grosso modo abaixo de uns 20–25 big blinds, com o push/fold assumindo a partir de uns 15 big blinds para baixo.** Esses não são cortes rígidos; são as zonas em que suas opções colapsam. Com 60 big blinds você pode aumentar, pagar, flutuar e superar as pessoas depois do flop. Com 12, quase tudo isso some — você está decidindo, quase sempre antes do flop, entre ir de all-in ou foldar.
 
 Aqui está o mapa prático por profundidade de stack (aproximações sem-ante, full-ring — antes empurram cada faixa um pouco para baixo):
 
@@ -42,7 +43,7 @@ Aqui está o mapa prático por profundidade de stack (aproximações sem-ante, f
 
 | Stack | Modo de jogo | Sua arma principal |
 |:--|:--|:--|
-| 25bb+ | Ainda um jogo pós-flop de verdade — aumenta/folda, calls ocasionais | Jogabilidade |
+| 25bb+ | Ainda um jogo pós-flop de verdade — aumenta/folda, calls ocasionais | Margem de manobra |
 | 20bb | Aumenta-ou-folda; re-shove all-in por cima de opens e limpers | Alavancagem de re-jam |
 | 15bb | Push/fold assume — jams first-in, quase sempre da late position | Fold equity |
 | 10bb | Push/fold puro; dê shove com um range amplo e razoável first-in | Fold equity (ainda forte) |
@@ -74,7 +75,7 @@ O detalhe é que a fold equity ==decai conforme seu stack encolhe==. Com 12–15
 
 | Zona | M-ratio | Grosso modo (sem antes) | Como jogar |
 |:--|:--:|:--:|:--|
-| 🟢 Verde | 20+ | ~30bb+ | Arsenal completo, jogue pôquer normal |
+| 🟢 Verde | 20+ | ~30bb+ | Arsenal completo, jogue poker normal |
 | 🟡 Amarelo | 10–20 | ~15–30bb | Feche o jogo, comece a procurar shoves |
 | 🟠 Laranja | 6–10 | ~9–15bb | Push/fold; agressão first-in, roube blinds |
 | 🔴 Vermelho | 1–5 | ~1,5–8bb | Shove-ou-folda qualquer mão razoável |
@@ -120,25 +121,25 @@ Uma frase para lembrar: ==seja quem dá shove, não quem paga.== A agressão fir
 
 Use-os para construir intuição, não como lei da natureza:
 
-- **Eles pressupõem condições específicas.** Charts de Nash padrão ignoram antes e ICM; adicione antes e seus shoves ficam mais amplos, adicione [pressão de bubble/ICM](/pt/blog/holdem-bubble) e seus calls ficam bem mais fechados.
+- **Eles pressupõem condições específicas.** Charts de Nash padrão ignoram antes e ICM; adicione antes e seus shoves ficam mais amplos, adicione [pressão de bolha/ICM](/pt/blog/holdem-bubble) e seus calls ficam bem mais fechados.
 - **Eles são um modelo heads-up / só-blinds.** Spots reais têm vários jogadores restando para agir, reads, e saltos de premiação que um chart não enxerga.
-- **A lição confiável é o formato**, não a mão exata: dê shove mais amplo tarde, pague mais fechado do que você dá shove, e dê jam com mais mãos conforme seu stack cai. Para o número real num spot de ICM ou bubble de verdade, jogue seus stacks e premiações na [calculadora de ICM](/calculator) em vez de confiar num range impresso.
+- **A lição confiável é o formato**, não a mão exata: dê shove mais amplo tarde, pague mais fechado do que você dá shove, e dê jam com mais mãos conforme seu stack cai. Para o número real num spot de ICM ou bolha de verdade, jogue seus stacks e premiações na [calculadora de ICM](/en/calculator) (em inglês) em vez de confiar num range impresso.
 
-*(Uma nuance para os curiosos: com 10–15 big blinds, jogadores fortes às vezes misturam um pequeno min-raise com mãos premium para induzir shoves de mãos dominadas. Isso pode render mais que o jam puro — mas é um add-on avançado. O push/fold é o framework confiável; domine ele primeiro.)*
+*(Uma nuance para os curiosos: com 10–15 big blinds, jogadores fortes às vezes misturam um pequeno min-raise com mãos premium para induzir shoves de mãos dominadas. Isso pode render mais que o jam puro — mas é um recurso avançado. O push/fold é o framework confiável; domine ele primeiro.)*
 
 ---
 
-## Short stack na bubble: a virada do ICM
+## Short stack na bolha: a virada do ICM
 
-**Aqui está a parte contraintuitiva: na bubble, um short stack claro costuma ter um bubble factor menor do que um stack médio — então você pode arriscar mais, mas só dando shove, não pagando.** Todo mundo supõe que o short stack é o mais pressionado. Pela matemática, não é: você já tem chance grande de ser eliminado, e dobrar te ajuda enormemente, então seu risk premium é menor que o dos stacks médios encurralados (o [guia da bubble](/pt/blog/holdem-bubble) detalha por que o stack médio é o verdadeiro prisioneiro).
+**Aqui está a parte contraintuitiva: na bolha, um short stack claro costuma ter um bubble factor menor do que um stack médio — então você pode arriscar mais, mas só dando shove, não pagando.** Todo mundo supõe que o short stack é o mais pressionado. Pela matemática, não é: você já tem chance grande de ser eliminado, e dobrar te ajuda enormemente, então seu risk premium é menor que o dos stacks médios encurralados (o [guia da bolha](/pt/blog/holdem-bubble) detalha por que o stack médio é o verdadeiro prisioneiro).
 
 O que isso significa na prática:
 
 - **Continue dando shove first-in** para roubar dos stacks médios que estão foldando tudo para sobreviver — eles são os alvos perfeitos.
-- **Você pode esperar se outros estão mais curtos.** Se dois jogadores têm menos fichas que você na bubble do dinheiro, você pode foldar spots marginais e deixá-los serem eliminados primeiro, subindo na escada de graça — mas só se você de fato tiver fichas para esperar, não se você for o mais curto.
+- **Você pode esperar se outros estão mais curtos.** Se dois jogadores têm menos fichas que você na bolha do dinheiro, você pode foldar spots marginais e deixá-los serem eliminados primeiro, subindo na escada de graça — mas só se você de fato tiver fichas para esperar, não se você for o mais curto.
 - **Não transforme o ICM numa desculpa para foldar tudo.** Blindar até ficar sem fold equity para "entrar de fininho no min-cash" troca o torneio pelo seu menor prêmio. Respeite o salto de premiação, depois volte a acumular.
 
-A matemática real por trás de "quanto menor é o meu bubble factor" vive no [guia de ICM](/pt/blog/holdem-icm) — jogue seu spot exato na [calculadora](/calculator) quando importar.
+A matemática real por trás de "quanto menor é o meu bubble factor" vive no [guia de ICM](/pt/blog/holdem-icm) — jogue seu spot exato na [calculadora](/en/calculator) quando importar.
 
 ---
 
@@ -150,12 +151,12 @@ A matemática real por trás de "quanto menor é o meu bubble factor" vive no [g
 4. **Blindar até o zero.** Esperar por ases até ter três big blinds joga fora a fold equity que torna o shove lucrativo. Aja enquanto seu all-in ainda assusta as pessoas (comumente, antes de cair abaixo de ~8–10bb).
 5. **Ignorar a posição.** Dar jam só com premiums do button, ou dar shove amplo demais under the gun, ambos vazam fichas. Amplie tarde, feche cedo.
 
-Evite esses cinco e você já vai vencer a maior parte do field, que trata um short stack como um profundo bem até serem eliminados.
+Evite esses cinco e você já vai vencer a maior parte do field, que trata um short stack como um stack profundo até quebrar.
 
 ---
 
 :::readnext[Continue lendo]
-/pt/blog/holdem-bubble | Como jogar a bubble | /images/holdem-bubble-hero.webp
+/pt/blog/holdem-bubble | Como jogar a bolha | /images/holdem-bubble-hero.webp
 /pt/blog/holdem-icm | ICM explicado — por que fichas não são dinheiro | /images/holdem-icm-hero.webp
 :::
 
@@ -163,7 +164,7 @@ Evite esses cinco e você já vai vencer a maior parte do field, que trata um sh
 
 **Q. Quantos big blinds é um short stack?**
 
-A. Grosso modo, abaixo de uns 20–25 big blinds é "curto", e o jogo de push/fold assume a partir de uns 15 big blinds para baixo, virando quase puro shove-ou-fold com 10. Essas são zonas, não regras rígidas — antes, tamanho de mesa e ICM todos as deslocam. O ponto-chave é que abaixo de ~15 big blinds você está quase sempre decidindo entre ir de all-in antes do flop, não jogando pôquer pós-flop.
+A. Grosso modo, abaixo de uns 20–25 big blinds é "curto", e o jogo de push/fold assume a partir de uns 15 big blinds para baixo, virando quase puro shove-ou-fold com 10. Essas são zonas, não regras rígidas — antes, tamanho de mesa e ICM todos as deslocam. O ponto-chave é que abaixo de ~15 big blinds você está quase sempre decidindo entre ir de all-in antes do flop, não jogando poker pós-flop.
 
 **Q. O que é a estratégia push/fold?**
 
@@ -177,7 +178,7 @@ A. Quase nunca quando você é o primeiro a entrar. O open-limp entrega a fold e
 
 A. Como padrão de iniciante, não — min-raise-depois-fold é um leak clássico. Como movimento avançado com 10–15 big blinds, jogadores fortes às vezes dão min-raise com mãos premium para induzir shoves de mãos piores. Aprenda o push/fold confiável primeiro; acrescente a firula do min-raise só depois que isso for automático.
 
-**Q. O que é o M-ratio no pôquer?**
+**Q. O que é o M-ratio no poker?**
 
 A. O M-ratio é seu stack dividido pelo custo de uma órbita (small blind + big blind + antes) — quantas voltas você consegue sobreviver foldando. As zonas de Harrington são Verde (20+), Amarelo (10–20), Laranja (6–10), Vermelho (1–5) e Morto (abaixo de 1). Quanto menor seu M, mais você precisa pegar spots de shove-ou-fold. Sem antes, o M é aproximadamente seus big blinds ÷ 1,5.
 
@@ -187,7 +188,7 @@ A. Fold equity é o lucro que você faz quando os adversários foldam para sua a
 
 **Q. A estratégia de short stack é diferente em cash games?**
 
-A. Sim. Num cash game você pode fazer rebuy ou completar para um stack cheio a qualquer momento, e normalmente não há antes nem saltos de premiação, então estar curto é um estado temporário que você conserta recarregando — não um modo de jogo. O push/fold de short stack de torneio existe porque você não pode fazer rebuy tarde e o ICM torna a sobrevivência valiosa. Este guia é sobre torneios.
+A. Sim. Num cash game você pode fazer rebuy ou completar para um stack cheio entre uma mão e outra, e normalmente não há antes nem saltos de premiação, então estar curto é um estado temporário que você conserta recarregando — não um modo de jogo. O push/fold de short stack de torneio existe porque você não pode fazer rebuy tarde e o ICM torna a sobrevivência valiosa. Este guia é sobre torneios.
 
 ---
 
@@ -197,7 +198,7 @@ A. Sim. Num cash game você pode fazer rebuy ou completar para um stack cheio a 
 2. **Pague mais fechado do que você dá shove.** Dois ranges diferentes — os shoves first-in são amplos (você também ganha quando eles foldam); os calls são fechados (você só ganha no showdown).
 3. **Aja antes que sua fold equity morra.** Não fique blindando até o zero esperando uma mão. Amplie seus shoves tarde, feche cedo, e coloque as fichas enquanto seu all-in ainda assusta as pessoas.
 
-O jogo de short stack é onde a matemática de torneio vira memória muscular — combine-o com [ICM](/pt/blog/holdem-icm) e [estratégia de bubble](/pt/blog/holdem-bubble) para saber não só *como* dar shove, mas *quando* isso mais importa.
+O jogo de short stack é onde a matemática de torneio vira memória muscular — combine-o com [ICM](/pt/blog/holdem-icm) e [estratégia de bolha](/pt/blog/holdem-bubble) para saber não só *como* dar shove, mas *quando* isso mais importa.
 
 ---
 
@@ -206,7 +207,7 @@ O jogo de short stack é onde a matemática de torneio vira memória muscular �
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/pt/blog/holdem-bubble" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Torneio</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Como jogar a bubble</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Como jogar a bolha</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Onde seus shoves de short stack mais importam</div>
   </a>
   <a href="/pt/blog/holdem-icm" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
@@ -216,12 +217,12 @@ O jogo de short stack é onde a matemática de torneio vira memória muscular �
   </a>
   <a href="/pt/blog/holdem-when-to-fold" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Estratégia</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Quando foldar no pôquer</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Quando foldar no poker</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Quando o preço manda foldar</div>
   </a>
-  <a href="/calculator" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/en/calculator" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Ferramenta grátis</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Calculadora de ICM</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Calculadora de ICM (em inglês)</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Calcule seu spot real de shove/call</div>
   </a>
 </div>

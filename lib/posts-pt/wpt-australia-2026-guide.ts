@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "WPT Australia 2026: 10 a 30 de set, The Star Sydney. Dois flagships: AUD $1.500 WPT Prime (17 a 22 de set) e AUD $5.000 WPT Championship (24 a 30 de set). Satellites on-site a partir de AUD $270, com qualifiers do Championship a $290 e $550. A premiação de primeiro lugar do Championship inclui um assento de $15.000 no WPT World Championship. Precisa ser 18+, membro do Star Club, e o dress code smart-casual é cobrado.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-08-16",
+  updated: "2026-08-26",
+  masterUpdated: "2026-08-16",
   readTime: "14 min",
   emoji: "🦘",
   layout: "tournament-guide",
@@ -17,16 +18,16 @@ export const POST: Post = {
     "agenda WPT Australia 2026",
     "como se classificar WPT Australia 2026",
     "buy-in WPT Australia",
-    "The Star Sydney pôquer",
+    "The Star Sydney poker",
     "WPT Prime Australia 2026",
     "satellite WPT Australia",
     "jogador internacional WPT Australia",
   ],
   image: "/images/wpt-australia-2026-guide-hero.webp",
-  imageAlt: "Torneio de pôquer WPT Australia 2026 no The Star Sydney — sala de pôquer em Darling Harbour com a mesa final do WPT championship",
+  imageAlt: "Torneio de poker WPT Australia 2026 no The Star Sydney — sala de poker em Darling Harbour com a mesa final do WPT championship",
   keepImagesInBody: true,
   content: `
-Três semanas de pôquer sem parar. Duas finais transmitidas ao vivo pro mundo inteiro. Sydney em setembro — não tem como melhorar isso.
+Três semanas de poker sem parar. Duas finais transmitidas ao vivo pro mundo inteiro. Sydney em setembro — não tem como melhorar isso.
 
 O WPT Australia 2026 volta pro The Star Sydney pro maior festival australiano da história do WPT. Mas se você nunca jogou um evento WPT ao vivo na Austrália, tem ==r:várias coisas que vão te pegar de surpresa== — desde como pagar o seu buy-in sendo jogador internacional até por que os satellites do WPT Global não vão te ajudar aqui.
 
@@ -37,13 +38,13 @@ Primeiro festival ao vivo? Comece pelo [guia de torneios](/pt/blog/holdem-tourna
 ---
 
 > **Resposta rápida**
-> O WPT Australia 2026 vai de ==**10 a 30 de set**== no The Star Sydney, Darling Harbour. Dois eventos championship: ==**AUD $1.500 WPT Prime**== (17 a 22 de set) e ==**AUD $5.000 WPT Australia Championship**== (24 a 30 de set). A premiação de primeiro lugar do Championship inclui um ==g:assento de $15.000 no WPT World Championship== — atenção: ==r:ele é descontado do prize pool, não pago por fora==. ==r:O WPT Global NÃO opera na Austrália — só satellites on-site.==
+> O WPT Australia 2026 vai de ==**10 a 30 de set**== no The Star Sydney, Darling Harbour. Dois campeonatos: ==**AUD $1.500 WPT Prime**== (17 a 22 de set) e ==**AUD $5.000 WPT Australia Championship**== (24 a 30 de set). A premiação de primeiro lugar do Championship inclui um ==g:assento de $15.000 no WPT World Championship== — atenção: ==r:ele é descontado do prize pool, não pago por fora==. ==r:O WPT Global NÃO opera na Austrália — só satellites on-site.==
 
 ---
 
 ## WPT Australia 2026 em 30 segundos — o que mudou e por que importa
 
-O festival deste ano volta pro ==**The Star Sydney**== e estreia um **formato de dupla championship** — inédito em qualquer parada australiana do WPT. (O evento de 2024 rolou no The Star Gold Coast; a mudança pra Sydney começou na edição de 2025.)
+O festival deste ano volta pro ==**The Star Sydney**== e estreia um **formato de duplo championship** — inédito em qualquer parada australiana do WPT. (O evento de 2024 rolou no The Star Gold Coast; a mudança pra Sydney começou na edição de 2025.)
 
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.25);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -53,15 +54,15 @@ O festival deste ano volta pro ==**The Star Sydney**== e estreia um **formato de
 | Local | ==**The Star Sydney**== | The Star Sydney |
 | Championship 1 | WPT Prime AUD $1.500 | — (formato de campeão único) |
 | Championship 2 | ==**WPT Australia AUD $5.000**== | AUD $5.500 |
-| Prize Pool 2025 | — | ==g:AUD $3.000.000== (600 entries) |
+| Prize Pool 2025 | — | ==g:AUD $3.000.000== (600 entradas) |
 | Campeão 2025 | — | Alan Pham (AUD $558.211) |
 | Eventos | ==**36 eventos**==, AUD $10M+ est. | ~20 eventos |
 | Livestream | Ambas as finais globalmente | Só o main event |
-| Assento WC | ==g:$15.000, descontado do prize pool== | +$10.400 |
+| Assento World Championship | ==g:$15.000, descontado do prize pool== | +$10.400 |
 
 </div>
 
-**Por que 2026 é maior**: o formato de dupla championship significa duas chances separadas de fisgar a WPT Champions Cup. Jogadores internacionais com um bankroll no nível de $1.500 agora têm um caminho realista pro troféu sem precisar cravar $5.000.
+**Por que 2026 é maior**: o formato de duplo championship coloca dois títulos transmitidos ao vivo num festival só — o **WPT Prime Perpetual Trophy** no evento de AUD $1.500 e a **Mike Sexton Champions Cup** no de AUD $5.000. Jogadores internacionais com um bankroll no nível de $1.500 agora têm um caminho realista pra um troféu sem precisar desembolsar $5.000.
 
 ---
 
@@ -75,15 +76,15 @@ Essa é a pergunta que todo estreante faz. Aqui vai o resumo honesto:
 |:---:|---|---|
 | Datas | ==**17 a 22 de set**== | ==**24 a 30 de set**== |
 | Buy-In | ==g:AUD $1.500== (~USD $980) | AUD $5.000 (~USD $3.270) |
-| Tamanho do field (est.) | 500–800 entries | 400–600 entries |
+| Tamanho do field (est.) | 500–800 entradas | 400–600 entradas |
 | Estrutura | Deep-stack, multi-flight | Deep-stack, 3 flights |
 | Mesa final | ==g:Transmitida ao vivo globalmente== | ==g:Transmitida ao vivo globalmente== |
-| WPT Champions Cup | ✅ Sim | ✅ Sim + assento WC |
+| Título em jogo | WPT Prime Perpetual Trophy | Mike Sexton Champions Cup + vaga no World Championship |
 | Melhor pra | Estreantes, grinders de bankroll médio | Regulares experientes de torneio |
 
 </div>
 
-**Recomendação**: se este é o seu primeiro evento WPT, ==g:comece pelo Prime de AUD $1.500==. Você vive toda a atmosfera do WPT — mesa final ao vivo, estrutura deep, WPT Champions Cup — por cerca de um terço do buy-in do Championship. Muita gente entra nos dois.
+**Recomendação**: se este é o seu primeiro evento WPT, ==g:comece pelo Prime de AUD $1.500==. Você vive toda a atmosfera do WPT — mesa final ao vivo, estrutura deep, uma chance no Prime Perpetual Trophy — por cerca de um terço do buy-in do Championship. Muita gente entra nos dois.
 
 ---
 
@@ -118,7 +119,7 @@ Se você está fora da Austrália e quer esquentar com satellites online antes d
 
 ---
 
-## Agenda completa do WPT Australia 2026 — todos os eventos-chave de AUD $460 a $10.000
+## Destaques da agenda do WPT Australia 2026 — 12 eventos-chave de AUD $460 a $10.000
 
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.25);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -128,18 +129,18 @@ Se você está fora da Austrália e quer esquentar com satellites online antes d
 | Aussie Monster Stack | 13 a 14 de set | $1.250 | Deep stack |
 | Ladies Australian Championship | 15 a 16 de set | ==g:$500== | Aberto a todos |
 | **WPT Prime Australia Championship** | ==**17 a 22 de set**== | ==**$1.500**== | ==g:Mesa final ao vivo== |
-| Bonzai Bounty | 19 de set | $460 | Bounty progressiva |
+| Bonzai Bounty | 19 de set | $460 | Bounty progressivo |
 | **$10K WPT High Roller** | 23 a 24 de set | $10.000 | High roller |
 | **WPT Australia Championship** | ==**24 a 30 de set**== | ==**$5.000**== | ==g:Mesa final ao vivo== |
 | Mini-Championship | 27 a 28 de set | $2.000 | Formato de 2 dias |
-| WPT World Champs Warm-Up | 29 a 30 de set | $1.150 | Aquecimento pro WC de dez |
+| WPT World Champs Warm-Up | 29 a 30 de set | $1.150 | Aquecimento pro World Championship de dez |
 | Australian PLO Championship | 29 a 30 de set | $5.000 | Pot Limit Omaha |
 | The Ultimate Freeze | 30 de set | $1.500 | Freezeout |
 | Sydney Finale | 30 de set | $680 | Evento de encerramento |
 
 </div>
 
-> **36 eventos no total.** Este festival não anuncia prize pools garantidos — o calendário oficial garante **assentos** nos satellites — então trate qualquer número do festival inteiro como estimativa. Pelos comparecimentos históricos, AUD $10M+ é uma expectativa razoável: só o Championship de 2025 gerou AUD $3.000.000.
+> **Os 12 eventos acima são os destaques — a agenda completa tem 36 eventos** (veja [starpoker.com.au](https://www.starpoker.com.au/wpt-australia)). Este festival não anuncia prize pools garantidos — o calendário oficial garante **assentos** nos satellites — então trate qualquer número do festival inteiro como estimativa. Pelos comparecimentos históricos, AUD $10M+ é uma expectativa razoável: só o Championship de 2025 gerou AUD $3.000.000.
 
 ---
 
@@ -147,7 +148,7 @@ Se você está fora da Austrália e quer esquentar com satellites online antes d
 
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.25);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Ano | Campeão | Buy-In | Entries | Prize Pool | 1º lugar |
+| Ano | Campeão | Buy-In | Entradas | Prize Pool | 1º lugar |
 |:---:|---|---|---|---|---|
 | **2025** | Alan Pham | AUD $5.500 | 600 | ==g:AUD $3.000.000== | AUD $558.211 |
 | **2024** | James Obst | AUD $8.000 | 396 | AUD $2.930.400 | AUD $585.359 |
@@ -155,15 +156,15 @@ Se você está fora da Austrália e quer esquentar com satellites online antes d
 
 </div>
 
-Com o buy-in de 2026 reduzido pra AUD $5.000 (abaixo dos $5.500 de 2025) e um novo formato de dupla championship trazendo mais gente pro festival, os fields devem ser os maiores da história do evento.
+Com o buy-in de 2026 reduzido pra AUD $5.000 (abaixo dos $5.500 de 2025) e um novo formato de duplo championship trazendo mais gente pro festival, os fields devem ser os maiores da história do evento.
 
 **O assento do campeão**: a premiação de primeiro lugar do WPT Australia Championship inclui um ==g:assento de $15.000 no WPT World Championship== de dezembro de 2026. Leia com atenção o texto oficial: o assento é ==r:parte do prêmio de primeiro lugar e sai descontado do prize pool geral==, não é um extra pago por cima do dinheiro. O campeão do Prime Championship recebe, nas mesmas condições, um assento Prime de $1.500.
 
 ---
 
-![Mesas de pôquer do WPT Australia no The Star Sydney com vista pra Darling Harbour — jogadores disputando o championship de 2026](/images/wpt-australia-2026-tournament-floor.webp)
+![Mesas de poker do WPT Australia no The Star Sydney com vista pra Darling Harbour — jogadores disputando o championship de 2026](/images/wpt-australia-2026-tournament-floor.webp)
 
-*A sala de pôquer do The Star Sydney tem vista pra Darling Harbour. Sydney em setembro: máximas diurnas de 19–22°C, noites frescas por volta de 11–13°C — leve uma jaqueta leve pras sessões de cash game da madrugada.*
+*A sala de poker do The Star Sydney tem vista pra Darling Harbour. Sydney em setembro: máximas diurnas de 19–22°C, noites frescas por volta de 11–13°C — leve uma jaqueta leve pras sessões de cash game da madrugada.*
 
 ---
 
@@ -189,7 +190,7 @@ Você não joga uma única mão sem ser **membro do Star Club**. A associação 
 
 O The Star Sydney cobra um **dress code smart-casual**. Ser barrado na porta significa perder a sua janela de registro no torneio.
 
-==r:Não permitido: regatas, chinelos/sandálias de dedo, jeans rasgado, roupa de praia ou qualquer roupa esportiva.== Jeans arrumado, camisas de gola e tênis estão de boa.
+==r:Não permitido: regatas, chinelos de dedo, jeans rasgado, roupa de praia ou qualquer roupa esportiva.== Jeans arrumado, camisas de gola e tênis estão de boa.
 
 ### 3. Como chegar
 
@@ -216,7 +217,7 @@ Esta seção é o que ==r:o guia de todo concorrente pula== — e é o que mais 
 
 ### Lei de NSW: limite diário de AUD $5.000 em dinheiro pra jogo
 
-Sob o **NSW Casino Control Act**, existe um **limite diário de AUD $5.000 em dinheiro** pra jogo. Todas as entradas de torneio (incluindo satellites) precisam ser compradas com fichas de jogo — não com cartão de crédito ou dinheiro na mesa.
+Sob as **reformas de manejo de dinheiro dos cassinos de NSW**, existe um **limite diário de AUD $5.000 em dinheiro** pra jogo (é o teto que vale ao longo do festival de setembro de 2026; a próxima etapa das reformas deve reduzi-lo pra AUD $1.000/dia a partir de agosto de 2027). O jogo é **carded** — você joga através do seu cartão Star Club — e todas as entradas de torneio (incluindo satellites) precisam ser compradas com fichas de jogo, não com cartão de crédito ou dinheiro na mesa.
 
 ### Transferência bancária pro The Star Sydney — antes de chegar
 
@@ -226,8 +227,8 @@ Pra buy-ins acima de AUD $5.000 (ou pra evitar a logística de saques diários),
 <strong>The Star Sydney — Sobre a transferência bancária</strong><br/>
 ⚠️ Vire membro do Star Club <strong>primeiro</strong>. A referência da transferência é o seu <strong>Member ID e sobrenome</strong>, então sem número de membro você nem consegue enviar direito.<br/>
 Os dados da conta estão <strong>publicados no Funds Management Sheet oficial</strong> em starpoker.com.au — não são emitidos individualmente por hóspede. Pegue os dados só nessa folha, nunca de um número de conta que alguém te mandar.<br/>
-Antes de embarcar, escreva pro Star Poker ou pra caixa do The Star Sydney (via starpoker.com.au ou o Guest Service Desk) pra solicitar os dados de transferência atuais <strong>emitidos no seu nome</strong>.<br/>
-Considere: conta NAB, <strong>somente contas bancárias pessoais</strong> (sem Wise/Revolut/terceiros) e alguns dias úteis pra compensar.
+Antes de embarcar, confirme com o Star Poker (via starpoker.com.au) que a folha publicada está atualizada.<br/>
+Atenção: conta NAB, <strong>somente contas bancárias pessoais</strong> (sem Wise/Revolut/terceiros) e alguns dias úteis pra compensar.
 </div>
 
 ==r:Restrições importantes:==
@@ -261,7 +262,9 @@ A maioria dos visitantes internacionais precisa de um **ETA (Electronic Travel A
 
 </div>
 
-==r:Solicite antes de comprar as passagens.== O eVisitor/ETA costuma sair na hora, mas solicite pelo menos 1 semana antes. Confira os requisitos do seu passaporte específico em [homeaffairs.gov.au/visa-subclass-601](https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/electronic-travel-authority-601).
+⚠️ **Brasileiro:** você não se enquadra no ETA nem no eVisitor — é a Visitor Visa (subclass 600), AUD $200, com prazo de dias a semanas. Comece cedo.
+
+==r:Solicite antes de comprar as passagens.== O eVisitor/ETA costuma sair na hora pra quem se enquadra; a Visitor Visa (subclass 600) leva de dias a semanas — solicite com folga. Confira os requisitos do seu passaporte específico em [immi.homeaffairs.gov.au](https://immi.homeaffairs.gov.au).
 
 ---
 
@@ -279,7 +282,7 @@ Aqui está quanto uma viagem completa ao WPT Australia realmente custa, com base
 
 </div>
 
-> **Nota**: o cenário econômico assume que você ganhou o assento em um único direct qualifier de AUD $290 — a entrada avulsa mais barata que leva a um assento de championship. Os cenários Padrão e Experiência completa incluem buy-in direto. Voos do Leste da Ásia/Sudeste Asiático normalmente variam de AUD $700–1.500 ida e volta.
+> **Nota**: o cenário econômico assume que você ganhou o assento em um único direct qualifier de AUD $290 — a entrada avulsa mais barata que leva a um assento de championship. Os cenários Padrão e Experiência completa incluem buy-in direto. Voos do Leste da Ásia/Sudeste Asiático normalmente variam de AUD $700–1.500 ida e volta — saindo do Brasil, o voo é o item mais pesado do orçamento, então conte bem acima dessa faixa.
 
 ---
 
@@ -302,9 +305,9 @@ A. Você pode pré-cadastrar online em thestarclub.com.au/sign-up pra economizar
 
 A. O ==g:Championship Direct Qualifier de AUD $290== é a rota mais barata — um satellite único que joga direto por um assento de $5.000, sem escada de steps. A versão de $290 está no calendário pré-festival (a partir de 24 de julho); com o festival em andamento, os qualifiers do Championship passam a $550. Lista completa de satellites: [starpoker.com.au](https://www.starpoker.com.au/wpt-australia).
 
-**Q. Os ganhos no pôquer são taxados na Austrália?**
+**Q. Os ganhos no poker são taxados na Austrália?**
 
-A. ==g:Pra jogadores recreativos, os ganhos no pôquer geralmente não são taxados na Austrália== — o ATO costuma tratar o pôquer como um jogo de azar, não como um negócio. Jogadores profissionais podem ter uma obrigação diferente. Consulte um consultor tributário pra sua situação específica.
+A. ==g:Pra jogadores recreativos, os ganhos no poker geralmente não são taxados na Austrália== — o ATO costuma tratar o poker como um jogo de azar, não como um negócio. Jogadores profissionais podem ter uma obrigação diferente. Consulte um consultor tributário pra sua situação específica.
 
 **Q. Quando abre o registro do torneio a cada dia?**
 
@@ -321,13 +324,13 @@ A. Sim. A sala The Star Poker roda cash games diariamente ==g:das 10h às 4h==, 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/pt/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Leitura obrigatória</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Como funcionam os torneios de pôquer</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Como funcionam os torneios de poker</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Buy-ins, blinds, satellites e checklist do Day 1</div>
   </a>
   <a href="/pt/blog/ept-barcelona-2026-guide" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Comparar</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Guia do EPT Barcelona 2026</div>
-    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">O maior festival de pôquer do verão europeu</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">O maior festival de poker do verão europeu</div>
   </a>
   <a href="/pt/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Comece aqui</div>
@@ -335,7 +338,7 @@ A. Sim. A sala The Star Poker roda cash games diariamente ==g:das 10h às 4h==, 
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Qual formato combina com o seu estilo?</div>
   </a>
 </div>
-`,
+`.trim(),
 };
 
 export default POST;
