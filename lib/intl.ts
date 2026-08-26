@@ -95,6 +95,19 @@ interface ChromeStrings {
   blogLabel: string;
   menuOpen: string;
   menuClose: string;
+  /**
+   * 좌측 고정 레일(`<aside>`)의 랜드마크 이름 — **화면에는 안 보이고 스크린리더만 읽는다.**
+   *
+   * ★2026-08-26 신설. 그 전엔 `side-rail.tsx` 에 `aria-label="사이트 메뉴"` 가 하드코딩돼 있어
+   *   **비한국어 16페이지에서 한국어가 낭독됐다**(`check:meta-lang` 이 🟠로 잡아 둔 마지막 1건).
+   *   스킵링크(`skip`)와 **완전히 같은 유형**이다 — 「화면에 안 보이니 다국어에 무해하다」는
+   *   추정이 두 번 다 틀렸다.
+   *
+   * 🔴 `menuOpen`(「Menü öffnen」)을 재사용하면 안 된다 — 그건 **버튼의 동작 라벨**이라
+   *    랜드마크 이름으로 쓰면 «메뉴 열기»라는 영역이 있는 것처럼 낭독된다.
+   *    여기 값은 **명사구**여야 한다(«사이트 메뉴» = 이 영역이 무엇인지).
+   */
+  siteMenu: string;
   koLabel: string;
   /** footer */
   tagline: string;
@@ -582,6 +595,7 @@ export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
     blogLabel: "Blog",
     menuOpen: "Open menu",
     menuClose: "Close menu",
+    siteMenu: "Site menu",
     koLabel: "한국어",
     tagline:
       "Clear, practical Texas Hold'em strategy. Guides that explain not just what beats what, but why.",
@@ -596,6 +610,7 @@ export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
     blogLabel: "ブログ",
     menuOpen: "メニューを開く",
     menuClose: "メニューを閉じる",
+    siteMenu: "サイトメニュー",
     koLabel: "한국어",
     tagline:
       "わかりやすく実戦的なテキサスホールデム戦略。何が何に勝つかだけでなく、その理由まで解説します。",
@@ -610,6 +625,7 @@ export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
     blogLabel: "Blog",
     menuOpen: "Abrir menú",
     menuClose: "Cerrar menú",
+    siteMenu: "Menú del sitio",
     koLabel: "한국어",
     tagline:
       "Estrategia de Texas Hold'em clara y práctica. Guías que explican no solo qué gana a qué, sino por qué.",
@@ -624,6 +640,7 @@ export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
     blogLabel: "博客",
     menuOpen: "打开菜单",
     menuClose: "关闭菜单",
+    siteMenu: "站点菜单",
     koLabel: "한국어",
     tagline:
       "清晰实用的德州扑克策略。不只告诉你什么牌赢什么牌，更讲清背后的原因。",
@@ -638,6 +655,7 @@ export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
     blogLabel: "部落格",
     menuOpen: "開啟選單",
     menuClose: "關閉選單",
+    siteMenu: "網站選單",
     koLabel: "한국어",
     tagline:
       "清晰實用的德州撲克策略。不只告訴你什麼牌贏什麼牌，更講清楚背後的原因。",
@@ -652,6 +670,7 @@ export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
     blogLabel: "المدوّنة",
     menuOpen: "فتح القائمة",
     menuClose: "إغلاق القائمة",
+    siteMenu: "قائمة الموقع",
     koLabel: "한국어",
     tagline:
       "استراتيجية تكساس هولدم بشكل واضح وعملي. أدلّة تشرح ليس فقط أي يد تتفوق على الأخرى، بل لماذا.",
@@ -666,6 +685,7 @@ export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
     blogLabel: "Blog",
     menuOpen: "Abrir menu",
     menuClose: "Fechar menu",
+    siteMenu: "Menu do site",
     koLabel: "한국어",
     tagline:
       "Estratégia de Texas Hold'em de forma clara e prática. Guias que explicam não só qual mão ganha de qual, mas por quê.",
@@ -680,6 +700,7 @@ export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
     blogLabel: "Blog",
     menuOpen: "Buka menu",
     menuClose: "Tutup menu",
+    siteMenu: "Menu situs",
     koLabel: "한국어",
     tagline:
       "Strategi Texas Hold'em yang jelas dan praktis. Panduan yang menjelaskan bukan hanya tangan mana yang menang, tapi kenapa.",
@@ -694,6 +715,7 @@ export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
     blogLabel: "Blog",
     menuOpen: "Buka menu",
     menuClose: "Tutup menu",
+    siteMenu: "Menu laman web",
     koLabel: "한국어",
     tagline:
       "Strategi Texas Hold'em yang jelas dan praktikal. Panduan yang menerangkan bukan sekadar tangan mana menang, tetapi sebabnya.",
@@ -708,6 +730,7 @@ export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
     blogLabel: "Blog",
     menuOpen: "Mở menu",
     menuClose: "Đóng menu",
+    siteMenu: "Menu trang web",
     koLabel: "한국어",
     tagline:
       "Chiến thuật Texas Hold'em rõ ràng và thực dụng. Những hướng dẫn giải thích không chỉ tay bài nào thắng, mà còn vì sao.",
@@ -722,6 +745,7 @@ export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
     blogLabel: "ब्लॉग",
     menuOpen: "मेन्यू खोलें",
     menuClose: "मेन्यू बंद करें",
+    siteMenu: "साइट मेन्यू",
     koLabel: "한국어",
     tagline:
       "स्पष्ट और व्यावहारिक टेक्सस होल्डम रणनीति। ऐसी गाइड जो सिर्फ़ यह नहीं बतातीं कि कौन-सा हाथ जीतता है, बल्कि क्यों जीतता है यह भी समझाती हैं।",
@@ -736,6 +760,7 @@ export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
     blogLabel: "Blog",
     menuOpen: "Menü öffnen",
     menuClose: "Menü schließen",
+    siteMenu: "Website-Menü",
     koLabel: "한국어",
     tagline:
       "Klare und praxisnahe Texas-Hold'em-Strategie. Ratgeber, die nicht nur erklären, welche Hand gewinnt, sondern auch warum.",
@@ -750,6 +775,7 @@ export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
     blogLabel: "Blog",
     menuOpen: "Menüyü aç",
     menuClose: "Menüyü kapat",
+    siteMenu: "Site menüsü",
     koLabel: "한국어",
     tagline:
       "Net ve pratik Texas Hold'em stratejisi. Sadece hangi elin kazandığını değil, neden kazandığını da açıklayan rehberler.",
@@ -764,6 +790,7 @@ export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
     blogLabel: "Blog",
     menuOpen: "Ouvrir le menu",
     menuClose: "Fermer le menu",
+    siteMenu: "Menu du site",
     koLabel: "한국어",
     tagline:
       "Stratégie Texas Hold'em claire et pratique. Des guides qui expliquent non seulement quelle main gagne, mais pourquoi.",
@@ -778,6 +805,7 @@ export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
     blogLabel: "Блог",
     menuOpen: "Открыть меню",
     menuClose: "Закрыть меню",
+    siteMenu: "Меню сайта",
     koLabel: "한국어",
     tagline:
       "Понятная и практичная стратегия Техасского Холдема. Гайды о том, какая рука выигрывает и почему.",
@@ -792,6 +820,7 @@ export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
     blogLabel: "Blog",
     menuOpen: "Apri menu",
     menuClose: "Chiudi menu",
+    siteMenu: "Menu del sito",
     koLabel: "한국어",
     tagline:
       "Strategia Texas Hold'em chiara e pratica. Guide che spiegano non solo quale mano vince, ma perché.",
@@ -806,6 +835,7 @@ export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
     blogLabel: "Blog",
     menuOpen: "Otwórz menu",
     menuClose: "Zamknij menu",
+    siteMenu: "Menu witryny",
     koLabel: "한국어",
     tagline:
       "Jasna i praktyczna strategia Texas Hold'em. Poradniki, które tłumaczą nie tylko która ręka wygrywa, ale dlaczego.",
@@ -820,6 +850,7 @@ export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
     blogLabel: "บล็อก",
     menuOpen: "เปิดเมนู",
     menuClose: "ปิดเมนู",
+    siteMenu: "เมนูเว็บไซต์",
     koLabel: "한국어",
     tagline:
       "กลยุทธ์ Texas Hold'em ที่ชัดเจนและใช้ได้จริง คู่มือที่อธิบายไม่ใช่แค่ว่าไพ่ไหนชนะ แต่ทำไม",
@@ -834,6 +865,7 @@ export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
     blogLabel: "وبلاگ",
     menuOpen: "باز کردن منو",
     menuClose: "بستن منو",
+    siteMenu: "منوی سایت",
     koLabel: "한국어",
     tagline:
       "استراتژی تگزاس هولدم روشن و کاربردی. راهنماهایی که توضیح می‌دهند نه فقط کدام دست برنده است، بلکه چرا.",
@@ -848,6 +880,7 @@ export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
     blogLabel: "Blogu",
     menuOpen: "Fungua menyu",
     menuClose: "Funga menyu",
+    siteMenu: "Menyu ya tovuti",
     koLabel: "한국어",
     tagline:
       "Mkakati wa Texas Hold'em ulio wazi na wa vitendo. Miongozo inayoeleza si tu mkono gani unashinda, bali kwa nini.",
@@ -862,6 +895,7 @@ export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
     blogLabel: "ব্লগ",
     menuOpen: "মেনু খুলুন",
     menuClose: "মেনু বন্ধ করুন",
+    siteMenu: "সাইট মেনু",
     koLabel: "한국어",
     tagline:
       "স্পষ্ট ও ব্যবহারিক টেক্সাস হোল্ডেম কৌশল। যেসব গাইড শুধু কোন হাত জেতে তা নয়, কেন জেতে তাও ব্যাখ্যা করে।",
@@ -876,6 +910,7 @@ export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
     blogLabel: "Blog",
     menuOpen: "Deschide meniul",
     menuClose: "Închide meniul",
+    siteMenu: "Meniul site-ului",
     koLabel: "한국어",
     tagline:
       "Strategie Texas Hold'em clară și practică. Ghiduri care explică nu doar ce mână câștigă, ci și de ce.",
@@ -890,6 +925,7 @@ export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
     blogLabel: "Blog",
     menuOpen: "Buksan ang menu",
     menuClose: "Isara ang menu",
+    siteMenu: "Menu ng site",
     koLabel: "한국어",
     tagline:
       "Malinaw at praktikal na Texas Hold'em strategy. Mga gabay na nagpapaliwanag hindi lang kung anong hand ang nananalo, kundi kung bakit.",
@@ -904,6 +940,7 @@ export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
     blogLabel: "Блог",
     menuOpen: "Відкрити меню",
     menuClose: "Закрити меню",
+    siteMenu: "Меню сайту",
     koLabel: "한국어",
     tagline:
       "Зрозуміла та практична стратегія Техаського Холдему. Гайди про те, яка рука виграє і чому.",
@@ -918,6 +955,7 @@ export const CHROME: Record<SecondaryLocale, ChromeStrings> = {
     blogLabel: "בלוג",
     menuOpen: "פתח תפריט",
     menuClose: "סגור תפריט",
+    siteMenu: "תפריט האתר",
     koLabel: "한국어",
     tagline:
       "אסטרטגיית טקסס הולדם ברורה ומעשית. מדריכים שמסבירים לא רק איזו יד מנצחת, אלא גם למה.",

@@ -37,10 +37,19 @@
  *      만들었으면 확장하고도 통과시켰을 자리다. 그래서 코드·구조로 보는 규칙을 따로 뒀다.
  *   (커밋: 아래 «SiteJsonLd» — `components/site-chrome.tsx`)
  *
+ * ★2026-08-26 재확장 ② — **aria-label·title 을 🟠 에서 🔴 로 올렸다**
+ *   이 자리는 처음부터 스킵링크와 같은 등급이었다(화면엔 안 보이고 스크린리더만 읽는다).
+ *   그런데도 🟠 였던 이유는 **딱 하나** — `side-rail.tsx` 의 `aria-label="사이트 메뉴"` 가
+ *   비한국어 16페이지에 남아 있었고, 그걸 고치려면 «site menu» 문자열 25개를 새로
+ *   정해야 해서 판정 대기였다. 🔴 로 두면 빌드가 그 한 건 때문에 계속 멈춘다.
+ *   → 사장님 판정으로 `CHROME[locale].siteMenu` 25개를 신설해 닫았고, **애초 계획대로
+ *     승격했다.** 🟠 로 되돌리지 마라 — 그건 「낭독되는 한국어」를 경고로 강등하는 것이다.
+ *
  * ▶ 무엇을 보나: `.next/server/app` 의 **비한국어**(`<html lang>` 이 ko 로 시작하지 않는) HTML.
  *   🔴 <title> · og:title · og:description · twitter:title · twitter:description
  *      application-name · author · keywords · 스킵링크(`a[href="#main-content"]`)
  *      WebSite.name · WebSite.description · JSON-LD inLanguage(=ko)
+ *      aria-label·title 속성 (2026-08-26 🟠→🔴 승격 — 아래 «재확장 ②» 참조)
  *   🟠 og:site_name · SearchAction(KO 전용 `/blog?q=` 이라 로케일에 새면 한국어 목록으로 보낸다)
  *
  * ▶ 의도적 예외 — **여기 없는 것은 «판정 안 함»이지 «통과»가 아니다**
@@ -123,14 +132,16 @@ export function judgePage(html) {
   const il = html.match(/"inLanguage":"(ko[^"]*)"/);
   if (il) red.push({ name: "JSON-LD inLanguage", v: il[1] });
 
-  // 🟠 aria-label·title 속성의 한국어 — 스킵링크와 **같은 유형**이다(화면엔 안 보이는데 낭독된다).
-  //    ⚠ 🟠인 이유: 2026-08-26 현재 `side-rail.tsx` 의 `aria-label="사이트 메뉴"` 1종이
-  //      **미해결로 남아 있다**(16페이지). 새 문자열 25개가 필요해 판정 대기 중이라,
-  //      지금 🔴로 두면 빌드가 그것 때문에 계속 멈춘다. **그 건이 닫히면 🔴로 승격하라.**
+  // 🔴 aria-label·title 속성의 한국어 — 스킵링크와 **같은 유형**이다(화면엔 안 보이는데 낭독된다).
+  //    ★2026-08-26 🟠 → 🔴 승격. 🟠로 둔 유일한 이유는 `side-rail.tsx` 의
+  //      `aria-label="사이트 메뉴"` 1종이 **판정 대기로 미해결**이었기 때문이다(16페이지).
+  //      그걸 🔴로 두면 빌드가 그것 때문에 계속 멈추니까 경고로 낮춰 뒀던 것이다.
+  //      사장님 판정으로 `CHROME[locale].siteMenu` 25개를 신설해 닫았으므로(커밋 동봉)
+  //      **애초 계획대로 🔴로 올린다.** 되돌리지 마라 — 이 자리는 스킵링크와 같은 등급이다.
   //    ⚠ 본문 텍스트는 보지 않는다 — 푸터 언어전환 «한국어»(endonym)가 매번 걸린다.
   present["aria-label·title"] = /(?:aria-label|title)="/.test(html);
   for (const m of html.matchAll(/(?:aria-label|title)="([^"]*[가-힣][^"]*)"/g)) {
-    orange.push({ name: "aria-label·title", v: m[1] });
+    red.push({ name: "aria-label·title", v: m[1] });
   }
 
   // 🟠 SearchAction 은 KO `/blog?q=` 만 가리킨다(로케일 목록엔 검색 UI·`?q=` 처리가 없다).
@@ -211,7 +222,7 @@ function run() {
   const WHY_ORANGE = {
     "og:site_name": "브랜드명이면 정상이다(ja 「ホールデムマスター」처럼 로케일 브랜드를 쓸 수 있다)",
     "SearchAction(KO전용)": "KO `/blog?q=` 만 가리킨다 — 로케일 blog 에 검색을 붙였다면 정상",
-    "aria-label·title": "🔴 화면엔 안 보이는데 스크린리더가 읽는다 — 스킵링크와 같은 유형이다. **고쳐라**",
+    // aria-label·title 은 2026-08-26에 🔴로 승격했다 — 여기 남아 있으면 안 된다.
   };
   if (orange.length) {
     const byOrange = {};
@@ -246,6 +257,10 @@ function run() {
       "  · application-name·author·keywords → `app/<locale>/layout.tsx` 가 있는지부터 봐라.\n" +
       "    없으면 **그 언어만** 루트의 한국어를 상속한다. 값 정본 = `lib/intl-locale-layout.ts`.\n" +
       "  · 스킵링크 → `components/site-chrome.tsx` 의 `SkipLink` 가 `CHROME[locale].skip` 을 쓰는지 봐라.\n" +
+      "  · aria-label·title → 스킵링크와 **같은 유형**이다(화면엔 안 보이는데 낭독된다).\n" +
+      "    한국어를 하드코딩하지 말고 `CHROME[locale]` 에 문자열을 신설해 써라\n" +
+      "    (선례 = `siteMenu` · `side-rail.tsx` 의 고정 레일 랜드마크 이름. 2026-08-26).\n" +
+      "    ⚠ `menuOpen` 같은 **동작 라벨**을 랜드마크 이름으로 재사용하지 마라 — 명사구여야 한다.\n" +
       "  · WebSite.* · JSON-LD inLanguage → 같은 파일의 `SiteJsonLd`. 루트 `app/layout.tsx` 의\n" +
       "    `<head>` 로 되돌아갔는지 의심하라 — 거기선 경로를 못 봐서 한국어가 전 언어에 박힌다."
   );
@@ -359,10 +374,14 @@ function selftest() {
       want: [],
     },
     {
-      name: "🟠 aria-label 한국어 검출 (화면엔 안 보이는데 낭독된다)",
+      name: "🔴 aria-label 한국어 검출 (화면엔 안 보이는데 낭독된다 · 2026-08-26 🟠→🔴 승격)",
       html: `<html lang="de"><head></head><body>${SKIP("Zum Inhalt springen")}<aside aria-label="사이트 메뉴"></aside></body></html>`,
+      want: ["aria-label·title"],
+    },
+    {
+      name: "오탐 방지: aria-label 이 현지어면 안 울린다 (CHROME.de.siteMenu — 승격의 짝)",
+      html: `<html lang="de"><head></head><body>${SKIP("Zum Inhalt springen")}<aside aria-label="Website-Menü"></aside></body></html>`,
       want: [],
-      wantOrange: ["aria-label·title"],
     },
     {
       name: "🔴 오탐 방지: 본문 텍스트의 «한국어»(endonym)는 속성이 아니라 안 걸린다",

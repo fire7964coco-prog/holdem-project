@@ -92,15 +92,34 @@
   · 매 실행 **자리별 커버리지**를 찍는다 — 태그가 없는 자리는 «검증»이 아니라 «미검사»다.
   ⚠ 남은 한계 — ① es 페이지에 **일본어**가 들어가도 통과한다(잡는 건 «한국어 상속» 한 유형뿐)
     ② 산출물만 본다(빌드 전엔 못 돈다)
-  🔴 ③ **`vercel.json`의 `buildCommand`에 없다 → 프로덕션 배포에서는 안 돈다.**
-    로컬 `npm run build`에서만 돈다(`check:hreflang`도 같다). 미결 — 핸드오프 참조.
+  ✅ ③ **2026-08-26 해소** — `vercel.json`의 `buildCommand`에 `check-hreflang`·`check-meta-lang`을
+    넣었다(사장님 지시). 그전엔 로컬 `npm run build`에서만 돌아서, **프로덕션 배포는 이 두 게이트를
+    통과하지 않은 채로 나갔다.** 아래 「buildCommand 정본」 항목이 이 자리의 정본이다.
   🆕 2026-08-26 재확장(10 → **15종**): `WebSite.name`·`WebSite.description`·
     `JSON-LD inLanguage(=ko)` 🔴 · `SearchAction(KO전용)`·`aria-label·title` 🟠. 셀프테스트 20/20.
   🔴 **«한글 찾기»만으로 만들면 안 된다** — `inLanguage:"ko-KR"`에는 한글이 한 글자도 없다.
     541페이지가 전부 그 값을 달고 있었는데 한글 정규식은 통과시켰다. **코드·구조로 보는 규칙을
     따로 둬라.** 「게이트가 무엇을 보는지부터 의심하라」의 실사례다.
-  ⚠ `aria-label·title`이 🔴가 아니라 🟠인 것은 `side-rait.tsx` 「사이트 메뉴」 1종이 미해결이라서다
-    — **그 건이 닫히면 🔴로 승격하라**(규칙 옆 주석에 적혀 있다). (파일명은 `side-rail.tsx`)
+  ✅ 2026-08-26 — `aria-label·title`을 **🟠 → 🔴 승격**했다. 🟠였던 유일한 이유(`side-rail.tsx`의
+    `aria-label="사이트 메뉴"` 1종 미해결 · 비한국어 16페이지)가 `CHROME[locale].siteMenu` 25개
+    신설로 닫혔기 때문이다. 셀프테스트 21/21(🔴검출 10 · 🟠검출 2 · 무반응 9).
+    🔴 **되돌리지 마라** — 이 자리는 스킵링크와 **같은 등급**이다(화면엔 안 보이고 낭독된다).
+    한국어를 하드코딩하지 말고 `CHROME[locale]`에 문자열을 신설해 써라. ⚠ `menuOpen`처럼
+    **동작 라벨**을 랜드마크 이름으로 재사용하지 마라 — 명사구여야 한다.
+
+- 🔴 **`vercel.json` `buildCommand` 정본 (2026-08-26)** — npm 훅(`prebuild`·`postbuild`)은
+  **프로덕션에서 안 돈다**(`buildCommand`가 명시돼 있어 Vercel이 `npm run build`를 안 부른다 ·
+  [[vercel-buildcommand-skips-npm-hooks]]). 그래서 게이트는 **여기에 직접** 적혀야 한다.
+  현재 순서(= `postbuild`와 동일하게 유지할 것):
+  `check-hsl-tokens → check-rangechart → check-meta-length → next build → patch-html-lang →
+   check-hreflang → check-directives → check-meta-lang`
+  · **JSON이라 주석을 못 단다 — 그래서 이 항목이 그 주석 자리다.** 게이트를 빼려면 여기부터 고쳐라.
+  · ⚠ **아직 안 들어간 것 2개**(둘 다 `prebuild`에만 있다 = 프로덕션 미실행):
+    ① `check:intl-links` — `jiti`를 쓰는데 그게 **package.json에 없는 전이 의존성**이다(2.6.1).
+       넣으려면 `devDependencies`에 명시하는 게 먼저다.
+    ② `generate:sitemap` — 사이트맵이 레포에 커밋돼 있는 이유가 이것이다. 프로덕션에서 재생성하면
+       커밋본과 갈릴 수 있어 별도 판정이 필요하다.
+  · `check:clusters`(백로그 P3·P4)는 **아직 스크립트가 없다** — 만들면 여기에도 넣어라.
 - 🔴 **`title: { absolute: … }`를 쓸 때는 `LocaleHomeJsonLd`를 함께 봐라** — `metadata.title as string`
   캐스팅은 객체를 JSON-LD에 넣는다. `const PAGE_TITLE`로 빼서 양쪽이 같은 문자열을 쓰게 한다.
 - **DOM 밖 문자열(manifest·twitter 메타·스킵링크)은 언어 검사가 통째로 지나간다** — 새 로케일 화면을

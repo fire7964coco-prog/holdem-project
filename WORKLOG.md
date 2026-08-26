@@ -1,3 +1,43 @@
+## 2026-08-26 (7) — 인프라 2건 마감(사장님 지시): 프로덕션 게이트 편입(#88) + 레일 aria-label 25언어(#87)
+
+**둘 다 「임의로 안 했다」로 판정 대기 중이던 항목.** 지시받고 열었다.
+
+- **#88 — `vercel.json` `buildCommand`에 `check-hreflang`·`check-meta-lang` 편입.**
+  npm 훅(prebuild·postbuild)은 프로덕션에서 안 돈다([[vercel-buildcommand-skips-npm-hooks]])는 건
+  알려져 있었는데 **그 buildCommand에 넣어 둔 게이트가 넷 중 둘뿐**이었다 → **프로덕션 배포는
+  hreflang·meta-lang 게이트를 통과하지 않은 채로 나가고 있었다.** 순서는 `postbuild`와 동일하게 맞췄다
+  (`patch-html-lang → check-hreflang → check-directives → check-meta-lang`).
+  · 검증 = **buildCommand 문자열을 그대로 로컬 실행**(`eval`) → EXIT=0. hreflang 0건 · 디렉티브 0건 ·
+    meta-lang 🔴 0건(541페이지 · 자리 15종 커버리지 동봉). 「오탐 1건이 배포를 세운다」는 우려가
+    실체가 없음을 배포 전에 확인한 것이다.
+  · 🔴 JSON이라 주석을 못 단다 → **정본 주석은 `docs/settled-decisions.md` §6 「buildCommand 정본」**.
+  · ⚠ **아직 안 넣은 것 2개**(둘 다 prebuild에만 있음 = 여전히 프로덕션 미실행) — ① `check:intl-links`는
+    `jiti`를 쓰는데 그게 **package.json에 없는 전이 의존성**(2.6.1)이다. devDependencies 명시가 선행.
+    ② `generate:sitemap` — 사이트맵이 레포에 커밋돼 있는 이유가 이것. 프로덕션 재생성은 별도 판정.
+    `check:clusters`(백로그 P3·P4)는 **스크립트 자체가 아직 없다.**
+
+- **#87 — `side-rail.tsx` `aria-label="사이트 메뉴"` → `CHROME[locale].siteMenu` 25개 신설.**
+  화면엔 안 보이고 **스크린리더만 읽는** 자리라 비한국어 16페이지에서 한국어가 낭독되고 있었다
+  (스킵링크와 **같은 유형** — 두 번 다 「안 보이니 다국어에 무해하다」는 추정이 틀렸다).
+  🔴 `menuOpen`(「Menü öffnen」)을 재사용하지 않았다 — **동작 라벨**이라 랜드마크 이름으로 쓰면
+  «메뉴 열기»라는 영역이 있는 것처럼 낭독된다. 값은 전부 **명사구**(Site menu·サイトメニュー·
+  Website-Menü·網站選單·站点菜单·قائمة الموقع·Меню сайта…).
+  · `CHROME`에 넣은 이유 = `site-chrome.tsx`가 이미 `lib/intl.ts`를 클라이언트 번들에 들고 있어
+    **추가 비용 0**이다(로컬 맵을 또 두면 그게 다음 드리프트가 된다).
+  · 검증 = 빌드 산출물에서 로케일별 실물 대조 **17/17** · 비한국어 541페이지 한국어 aria-label 0.
+  · **게이트 규칙 🟠 → 🔴 승격**(핸드오프 지시 이행). 🟠였던 유일한 이유가 이 1건이었다.
+    셀프테스트 21/21(🔴검출 10 · 🟠검출 2 · 무반응 9 — 승격 짝으로 «현지어 aria-label은 안 울린다»
+    오탐방지 케이스 추가).
+
+- 🆕 **잠복 버그 1건 — `stripLocale`이 `fil`(3글자)을 로케일로 못 봤다.**
+  `/^\/[a-z]{2}(-[a-z]+)?(?=\/|$)/i` 는 «fi»를 잡고 나면 다음 글자가 `l`이라 lookahead가 깨진다 →
+  `hasFixedSideRail("/fil/blog")`가 **거짓** → **`/fil/blog`만 데스크톱 전역 레일도 `<main>` 패딩도
+  못 받고 있었다.** aria-label 실물 대조에서 fil만 MISS로 나와 드러났다(집계가 16이고 로케일이
+  17이라는 **1 차이**가 단서였다). `SECONDARY_LOCALES` 판정으로 교체 — site-chrome.tsx 상단이
+  경고하는 「손으로 적은 로케일 목록이 25개와 어긋난다」와 같은 유형이다. 재빌드 후 fil 17/17 OK.
+
+---
+
 ## 2026-08-26 (6) — pt 경화 회차 6: tournament 클러스터 9편 — pt 42/42 완결 (커밋 79341df8 · Fable+Opus 렌즈 6종)
 
 **대상**: tournament(필라) · tvc · icm · bubble · short-stack + 이벤트 4편(apt-incheon·ept·wpt·korea-marathon).

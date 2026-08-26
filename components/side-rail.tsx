@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { BG, CARD, BORDER, INK, MUTED } from "@/app/community/post-card";
 import { tabLabels, type BottomTabActive, type BottomTabKey } from "@/components/bottom-tab-bar";
+import { CHROME, isSecondaryLocale } from "@/lib/intl";
 
 /**
  * 데스크톱 전역 좌측 레일 — 모바일 하단 탭바(bottom-tab-bar.tsx)의 데스크톱 짝.
@@ -275,9 +276,20 @@ const LEGAL_PAGES_INTL = [
  */
 const FIXED_RAIL_PATHS = ["/blog", "/calculator", "/tournaments"];
 
-/** 로케일 접두어 제거: /ja/calculator → /calculator */
+/**
+ * 로케일 접두어 제거: /ja/calculator → /calculator
+ *
+ * 🔴 **정규식으로 세지 마라 — SECONDARY_LOCALES 에서 판정한다.**
+ *   전엔 `/^\/[a-z]{2}(-[a-z]+)?(?=\/|$)/i` 였다. 이 패턴은 **2글자 + 하이픈꼬리**만 알아서
+ *   `fil`(3글자)을 로케일로 못 봤다 — `[a-z]{2}` 가 «fi» 를 잡고 나면 다음 글자가 `l` 이라
+ *   `(?=\/|$)` 가 깨진다. 그래서 `hasFixedSideRail("/fil/blog")` 가 **거짓**이었고,
+ *   `/fil/blog` 만 데스크톱 전역 레일도 `<main>` 패딩도 못 받았다(2026-08-26 빌드 산출물 실측 —
+ *   나머지 16개 로케일엔 레일이 있는데 fil 만 없었다).
+ *   site-chrome.tsx 상단이 경고하는 **「손으로 적은 로케일 목록이 25개와 어긋난다」와 같은 유형**이다.
+ */
 function stripLocale(pathname: string): string {
-  return pathname.replace(/^\/[a-z]{2}(-[a-z]+)?(?=\/|$)/i, "") || "/";
+  const seg = (pathname.split("/")[1] ?? "").toLowerCase();
+  return isSecondaryLocale(seg) ? pathname.slice(seg.length + 1) || "/" : pathname;
 }
 
 export function hasFixedSideRail(pathname: string): boolean {
@@ -446,6 +458,27 @@ export default function SideRail({
 }
 
 /**
+ * 이 레일(`<aside>`) 랜드마크의 이름 — **화면엔 안 보이고 스크린리더만 읽는다.**
+ *
+ * ★2026-08-26 — 전엔 아래 `aria-label`이 `"사이트 메뉴"`로 하드코딩돼 있어
+ *   **비한국어 16페이지에서 한국어가 낭독됐다**(`npm run check:meta-lang`이 🟠로
+ *   들고 있던 마지막 1건. 그 규칙은 이 수정과 함께 🔴로 승격했다).
+ *   스킵링크(`CHROME[locale].skip`)와 **완전히 같은 유형**이다 — 두 번 다
+ *   「화면에 안 보이니 다국어에 무해하다」는 추정이 틀렸다.
+ *
+ * 🔴 `CHROME[locale].menuOpen`(「Menü öffnen」)을 재사용하지 마라 — 그건 버튼의
+ *    **동작** 라벨이라 랜드마크 이름으로 쓰면 «메뉴 열기»라는 영역이 있는 것처럼 낭독된다.
+ *    값 정본은 `lib/intl.ts`의 `CHROME[locale].siteMenu`(명사구)다.
+ *
+ * ⚠ `locale`이 `LOCALE_HUB_PAGES`에 없는 언어여도 이 레일 자체는 렌더된다
+ *   (탭 4개는 언제나 있다) — 그래서 25개 로케일 전부에 값이 필요했다.
+ */
+function siteMenuLabel(locale: string | null | undefined): string {
+  if (!locale) return "사이트 메뉴";
+  return isSecondaryLocale(locale) ? CHROME[locale].siteMenu : CHROME.en.siteMenu;
+}
+
+/**
  * 고정 배치 래퍼 — site-chrome이 쓴다.
  * 하단 탭바가 `fixed bottom-0` + body `pb-[62px]`인 것과 같은 방식으로,
  * 레일은 `fixed left-0` + <main> `xl:ps-[212px]`로 자리를 만든다.
@@ -456,7 +489,7 @@ export function FixedSideRail(props: Props) {
     <aside
       className="hidden xl:block fixed start-0 top-0 bottom-0 z-30 overflow-y-auto overscroll-contain py-6 ps-4 pe-2"
       style={{ width: SIDE_RAIL_WIDTH + 12, borderInlineEnd: `1px solid ${BORDER}` }}
-      aria-label="사이트 메뉴"
+      aria-label={siteMenuLabel(props.locale)}
     >
       <SideRail {...props} />
     </aside>
