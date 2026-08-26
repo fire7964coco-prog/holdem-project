@@ -3,6 +3,7 @@
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { localeFromPath, HTML_LANG, NAV_CTA, NAV_HOME_FEED, dirForLocale, SECONDARY_LOCALES, CHROME } from "@/lib/intl";
+import { SITE } from "@/lib/site";
 import BlogTopBar from "@/components/blog-top-bar";
 import { hasBottomTabBar } from "@/components/bottom-tab-bar";
 import { FixedSideRail, hasFixedSideRail } from "@/components/side-rail";
@@ -92,6 +93,76 @@ export function SkipLink() {
     >
       {locale ? CHROME[locale].skip : "본문 바로가기"}
     </a>
+  );
+}
+
+/**
+ * 사이트 전역 `WebSite` 구조화 데이터.
+ *
+ * ★2026-08-26 — 원래 `app/layout.tsx`의 `<head>`에 **한국어로 하드코딩**돼 있었다.
+ *   루트 layout은 서버 컴포넌트라 경로를 못 보므로, 그 한국어가 **비한국어 541페이지 전부**에
+ *   그대로 박혔다: `name: "홀덤마스터"` · 한국어 `description` · `inLanguage: "ko-KR"` ·
+ *   `publisher.name: "홀덤마스터"`.
+ *
+ *   🔴 **같은 페이지 안에서 스키마가 갈리고 있었다.** 독일어 글 하나가
+ *      Article 스키마에선 publisher 를 «HoldemMaster»(`intl-blog-page.tsx`)로,
+ *      이 WebSite 스키마에선 «홀덤마스터»로 선언했다. `lib/intl-jsonld.tsx`의
+ *      `isPartOfSite()`도 진작 `CHROME[locale].brand`를 쓰고 있었으니
+ *      **같은 URL의 WebSite 엔티티에 이름이 둘**이었다. 그 파일 주석이 «루트 layout이 이미
+ *      내보내는 사이트 WebSite와 충돌한다»고 경고해 둔 것이 바로 이 자리다.
+ *      2026-08-25에 `<meta name="author">`를 og·JSON-LD와 3자 일치시킨 것과 **같은 유형**이다.
+ *
+ * ★문자열을 새로 짓지 않는다 — 전부 이미 검증돼 화면에 나가는 값이다
+ *   `name`·`publisher.name` = `CHROME[locale].brand` (푸터·og:site_name 과 같은 소스)
+ *   `description`           = `CHROME[locale].tagline` (푸터에 이미 렌더되는 문장)
+ *   `inLanguage`            = `HTML_LANG[locale]` (`<html lang>`·hreflang 과 같은 소스)
+ *
+ * 🔴 **비한국어에는 `potentialAction`(SearchAction)을 넣지 않는다 — 거짓 주장이 된다.**
+ *   KO `/blog`는 `blog-index-client.tsx`가 `window.location.search`로 `?q=`를 **실제로 읽는다**
+ *   (2026-08-26 원문 확인). 그런데 로케일 목록 `lib/intl-blog-index.tsx`에는
+ *   **검색 UI도 `?q=` 처리도 없다.** 그래서 KO 에서만 선언한다.
+ *   로케일 blog 에 검색을 붙이는 날 여기도 같이 열어라.
+ *
+ * ⚠ 한국어 출력은 이전과 **의미상 동일**하다(값 전부 동일). 위치만 `<head>` → `<body>`로 옮겼다 —
+ *   경로를 봐야 해서 클라이언트 컴포넌트여야 하기 때문이다. JSON-LD는 body 에 있어도 유효하고,
+ *   이 레포의 다른 JSON-LD(`intl-jsonld.tsx`·`intl-blog-page.tsx`)도 전부 body 에 있다.
+ */
+export function SiteJsonLd() {
+  const pathname = usePathname() || "/";
+  const locale = localeFromPath(pathname);
+
+  const brand = locale ? CHROME[locale].brand : "홀덤마스터";
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: brand,
+    url: SITE,
+    description: locale
+      ? CHROME[locale].tagline
+      : "텍사스 홀덤 규칙·전략·확률 계산기·홀덤펍 정보 포털. 입문자부터 고수까지.",
+    inLanguage: locale ? HTML_LANG[locale] : "ko-KR",
+    publisher: {
+      "@type": "Organization",
+      name: brand,
+      url: SITE,
+      logo: { "@type": "ImageObject", url: `${SITE}/favicon.svg` },
+    },
+    ...(locale
+      ? {}
+      : {
+          potentialAction: {
+            "@type": "SearchAction",
+            target: `${SITE}/blog?q={search_term_string}`,
+            "query-input": "required name=search_term_string",
+          },
+        }),
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+    />
   );
 }
 

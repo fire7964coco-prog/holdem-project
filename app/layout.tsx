@@ -4,7 +4,7 @@ import { Inter, Lora } from "next/font/google";
 import localFont from "next/font/local";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
-import { SiteHeader, SiteFooter, HtmlLangSync, MainContent, ScrollToTopButton, SiteRail, SkipLink } from "@/components/site-chrome";
+import { SiteHeader, SiteFooter, HtmlLangSync, MainContent, ScrollToTopButton, SiteRail, SkipLink, SiteJsonLd } from "@/components/site-chrome";
 import { BrushDefs } from "@/components/brush-defs";
 import SitePopup from "@/components/site-popup";
 import "./globals.css";
@@ -214,32 +214,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         {/* 보조 언어 경로에서 lang/dir을 페인트 직전 보정 (RTL 깜빡임·언어 신호) */}
         <script dangerouslySetInnerHTML={{ __html: LANG_BOOTSTRAP }} />
-        {/* Organization JSON-LD (사이트 전역) */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebSite",
-              name: "홀덤마스터",
-              url: SITE,
-              description:
-                "텍사스 홀덤 규칙·전략·확률 계산기·홀덤펍 정보 포털. 입문자부터 고수까지.",
-              inLanguage: "ko-KR",
-              publisher: {
-                "@type": "Organization",
-                name: "홀덤마스터",
-                url: SITE,
-                logo: { "@type": "ImageObject", url: `${SITE}/favicon.svg` },
-              },
-              potentialAction: {
-                "@type": "SearchAction",
-                target: `${SITE}/blog?q={search_term_string}`,
-                "query-input": "required name=search_term_string",
-              },
-            }),
-          }}
-        />
+        {/*
+         * 사이트 전역 WebSite JSON-LD 는 **여기 있으면 안 된다** — 2026-08-26에 body 의
+         * `<SiteJsonLd />`(components/site-chrome.tsx)로 옮겼다.
+         * 🔴 되돌리지 마라. 이 자리는 서버 컴포넌트라 경로를 못 봐서, 여기 적힌 한국어가
+         *    **비한국어 541페이지 전부**에 그대로 박혔다(name «홀덤마스터» · inLanguage «ko-KR»).
+         *    같은 독일어 글이 Article 스키마에선 publisher 를 «HoldemMaster»로 선언하고 있어
+         *    **같은 URL 의 WebSite 엔티티에 이름이 둘**이었다. 경위·근거는 SiteJsonLd 주석.
+         */}
       </head>
       <body>
         {/*
@@ -252,6 +234,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
          *     site-chrome.tsx의 SkipLink 주석 참조(경로를 봐야 해서 클라이언트 컴포넌트다).
          */}
         <SkipLink />
+        {/* 사이트 전역 WebSite JSON-LD — 경로를 봐야 해서 클라이언트 컴포넌트다(위 <head> 주석 참조) */}
+        <SiteJsonLd />
         <BrushDefs />
         <HtmlLangSync />
         <SiteHeader />

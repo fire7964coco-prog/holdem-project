@@ -28,10 +28,20 @@
  *   → 그래서 이 게이트의 기준을 «DOM 밖»이 아니라 **«아무도 눈으로 안 보는 자리»**로 넓혔다.
  *      (커밋 551f1325 · ac5ae041 · d389887c · f12ae9e2)
  *
+ * ★2026-08-26 재확장 — **«한글 찾기»만으로는 못 보는 자리가 또 있었다**
+ *   사이트 전역 `WebSite` JSON-LD 가 루트 `app/layout.tsx` 의 `<head>` 에 한국어로 박혀 있어
+ *   비한국어 541페이지 전부가 `name:"홀덤마스터"` · 한국어 `description` ·
+ *   **`inLanguage:"ko-KR"`** 를 내보내고 있었다. 같은 독일어 글이 Article 스키마에선
+ *   publisher 를 «HoldemMaster» 로 선언했으니 **같은 URL 의 WebSite 엔티티에 이름이 둘**이었다.
+ *   🔴 그중 `inLanguage:"ko-KR"` 은 **한글이 한 글자도 없다** — 이 게이트를 «한글 찾기»로만
+ *      만들었으면 확장하고도 통과시켰을 자리다. 그래서 코드·구조로 보는 규칙을 따로 뒀다.
+ *   (커밋: 아래 «SiteJsonLd» — `components/site-chrome.tsx`)
+ *
  * ▶ 무엇을 보나: `.next/server/app` 의 **비한국어**(`<html lang>` 이 ko 로 시작하지 않는) HTML.
  *   🔴 <title> · og:title · og:description · twitter:title · twitter:description
  *      application-name · author · keywords · 스킵링크(`a[href="#main-content"]`)
- *   🟠 og:site_name
+ *      WebSite.name · WebSite.description · JSON-LD inLanguage(=ko)
+ *   🟠 og:site_name · SearchAction(KO 전용 `/blog?q=` 이라 로케일에 새면 한국어 목록으로 보낸다)
  *
  * ▶ 의도적 예외 — **여기 없는 것은 «판정 안 함»이지 «통과»가 아니다**
  *   · `og:site_name` 은 브랜드명이라 로케일에 따라 한국어일 수 있다(ja `ホールデムマスター` 처럼
@@ -71,9 +81,20 @@ const HARD = [
   ["author", /name="author" content="([^"]*)"/],
   ["keywords", /name="keywords" content="([^"]*)"/],
   ["스킵링크", /<a[^>]*href="#main-content"[^>]*>([^<]*)<\/a>/],
+  // ↓ 2026-08-26 확장분 — 사이트 전역 WebSite JSON-LD
+  ["WebSite.name", /"@type":"WebSite","name":"([^"]*)"/],
+  ["WebSite.description", /"@type":"WebSite","name":"[^"]*","url":"[^"]*","description":"([^"]*)"/],
 ];
 /** 🟠 — 한국어여도 정상일 수 있는 자리 */
 const SOFT = [["og:site_name", /property="og:site_name" content="([^"]*)"/]];
+
+/**
+ * 한글 정규식으로는 못 잡는 자리 — 코드·구조로 판정한다.
+ * 🔴 `inLanguage:"ko-KR"` 에는 **한글이 한 글자도 없다.** 위 KO 정규식은 이걸 통과시킨다.
+ *    2026-08-26에 비한국어 541페이지가 전부 이 값을 달고 있었는데, 게이트를 «한글 찾기»로만
+ *    만들었으면 확장하고도 못 봤을 자리다.
+ */
+const EXTRA = ["JSON-LD inLanguage", "SearchAction(KO전용)"];
 
 /**
  * 한 페이지를 판정한다. **파일시스템을 안 탄다** — 셀프테스트가 이 함수를 직접 부른다.
@@ -96,6 +117,19 @@ export function judgePage(html) {
     present[name] = m !== null;
     if (m && KO.test(m[1])) orange.push({ name, v: m[1] });
   }
+
+  // 🔴 inLanguage 가 ko — 한글 0자라 위 루프는 통과시킨다.
+  present["JSON-LD inLanguage"] = /"inLanguage":"/.test(html);
+  const il = html.match(/"inLanguage":"(ko[^"]*)"/);
+  if (il) red.push({ name: "JSON-LD inLanguage", v: il[1] });
+
+  // 🟠 SearchAction 은 KO `/blog?q=` 만 가리킨다(로케일 목록엔 검색 UI·`?q=` 처리가 없다).
+  //    비한국어 페이지에 새면 독자를 **한국어 목록**으로 보낸다.
+  //    ⚠ 로케일 blog 에 검색을 붙였다면 이 경고는 정상이다 — 그때 이 규칙을 해제하라.
+  present["SearchAction(KO전용)"] = true;
+  const sa = html.match(/"@type":"SearchAction","target":"([^"]*)"/);
+  if (sa) orange.push({ name: "SearchAction(KO전용)", v: sa[1] });
+
   return { lang, red, orange, present };
 }
 
@@ -122,7 +156,8 @@ function run() {
   const orange = [];
   /** 자리별 커버리지 — 태그가 없으면 «미검사»다 */
   const cover = {};
-  for (const [name] of [...HARD, ...SOFT]) cover[name] = { checked: 0, absent: 0 };
+  for (const name of [...HARD.map((h) => h[0]), ...SOFT.map((s) => s[0]), ...EXTRA])
+    cover[name] = { checked: 0, absent: 0 };
 
   for (const p of walk(ROOT)) {
     const html = fs.readFileSync(p, "utf8");
@@ -133,7 +168,7 @@ function run() {
     }
     scanned++;
     const rel = path.relative(ROOT, p).split(path.sep).join("/");
-    for (const [name] of [...HARD, ...SOFT]) {
+    for (const name of Object.keys(cover)) {
       if (v.present[name]) cover[name].checked++;
       else cover[name].absent++;
     }
@@ -141,14 +176,16 @@ function run() {
     for (const o of v.orange) orange.push({ rel, lang: v.lang, ...o });
   }
 
-  console.log(`비한국어 HTML ${scanned}개 검사 · 한국어 ${koPages}개는 대상 아님 · 자리 ${HARD.length + SOFT.length}종`);
+  console.log(
+    `비한국어 HTML ${scanned}개 검사 · 한국어 ${koPages}개는 대상 아님 · 자리 ${Object.keys(cover).length}종`
+  );
 
   // 🔴 «0건»을 커버리지 없이 내보내지 않는다 — 태그가 없어서 못 본 자리를 0건으로 읽으면 안 된다.
   console.log("\n커버리지 (태그 없음 = 검증이 아니라 미검사):");
-  for (const [name] of [...HARD, ...SOFT]) {
+  for (const name of Object.keys(cover)) {
     const c = cover[name];
     const tail = c.absent ? `  ⚠ 태그 없음 ${c.absent}` : "";
-    console.log(`   ${name.padEnd(18)} 검사 ${String(c.checked).padStart(3)}${tail}`);
+    console.log(`   ${name.padEnd(20)} 검사 ${String(c.checked).padStart(3)}${tail}`);
   }
   if (cover["keywords"].absent) {
     console.log(
@@ -187,7 +224,9 @@ function run() {
       "    ⚠ **문구는 그 페이지의 openGraph 를 재사용하라 — 새로 짓지 마라**(메타와 스키마가 갈린다).\n" +
       "  · application-name·author·keywords → `app/<locale>/layout.tsx` 가 있는지부터 봐라.\n" +
       "    없으면 **그 언어만** 루트의 한국어를 상속한다. 값 정본 = `lib/intl-locale-layout.ts`.\n" +
-      "  · 스킵링크 → `components/site-chrome.tsx` 의 `SkipLink` 가 `CHROME[locale].skip` 을 쓰는지 봐라."
+      "  · 스킵링크 → `components/site-chrome.tsx` 의 `SkipLink` 가 `CHROME[locale].skip` 을 쓰는지 봐라.\n" +
+      "  · WebSite.* · JSON-LD inLanguage → 같은 파일의 `SiteJsonLd`. 루트 `app/layout.tsx` 의\n" +
+      "    `<head>` 로 되돌아갔는지 의심하라 — 거기선 경로를 못 봐서 한국어가 전 언어에 박힌다."
   );
   return 1;
 }
@@ -199,6 +238,9 @@ function run() {
    ══════════════════════════════════════════════════════════════════════════ */
 const HEAD = (inner, lang = "de") => `<html lang="${lang}"><head>${inner}</head><body></body></html>`;
 const SKIP = (label) => `<a href="#main-content" class="sr-only focus:not-sr-only">${label}</a>`;
+/** 산출물의 WebSite JSON-LD 와 **필드 순서까지 같은** 축약 노드 (JSON.stringify 순서에 정규식이 걸린다) */
+const WEBSITE = ({ name, desc, lang }) =>
+  `<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"${name}","url":"https://x","description":"${desc}","inLanguage":"${lang}","publisher":{"@type":"Organization","name":"${name}","url":"https://x"}}</script>`;
 
 function selftest() {
   const cases = [
@@ -268,6 +310,42 @@ function selftest() {
       want: [], // red 는 비어야 하고
       wantOrange: ["og:site_name"],
     },
+
+    // ── 2026-08-26 확장분: 사이트 전역 WebSite JSON-LD ──
+    {
+      name: "WebSite.name 한국어 검출",
+      html: HEAD(WEBSITE({ name: "홀덤마스터", desc: "Klare Strategie.", lang: "de" })),
+      want: ["WebSite.name"],
+    },
+    {
+      name: "WebSite.description 한국어 검출",
+      html: HEAD(WEBSITE({ name: "HoldemMaster", desc: "텍사스 홀덤 규칙·전략 포털.", lang: "de" })),
+      want: ["WebSite.description"],
+    },
+    {
+      name: "🔴 inLanguage «ko-KR» 검출 — **한글이 0자라 한글 정규식은 통과시킨다**",
+      html: HEAD(WEBSITE({ name: "HoldemMaster", desc: "Klare Strategie.", lang: "ko-KR" })),
+      want: ["JSON-LD inLanguage"],
+    },
+    {
+      name: "오탐 방지: 정상 로케일 WebSite 노드는 안 울린다",
+      html: HEAD(WEBSITE({ name: "HoldemMaster", desc: "Klare Strategie.", lang: "de" })),
+      want: [],
+    },
+    {
+      name: "오탐 방지: isPartOfSite 처럼 description 없는 WebSite 노드도 안 울린다",
+      html: HEAD('<script type="application/ld+json">{"@type":"WebSite","name":"HoldemMaster","url":"https://x"}</script>'),
+      want: [],
+    },
+    {
+      name: "SearchAction 은 🔴 가 아니라 🟠 (로케일 검색이 생기면 정상)",
+      html: HEAD(
+        WEBSITE({ name: "HoldemMaster", desc: "Klare Strategie.", lang: "de" }) +
+          '<script type="application/ld+json">{"@type":"SearchAction","target":"https://x/blog?q={search_term_string}"}</script>'
+      ),
+      want: [],
+      wantOrange: ["SearchAction(KO전용)"],
+    },
   ];
 
   console.log("── check-meta-lang 셀프테스트 ──");
@@ -291,7 +369,15 @@ function selftest() {
     console.log(`  ${ok ? "✅" : "❌"} ${c.name}`);
     if (!ok) console.log(`       기대: ${c.want === null ? "대상 아님" : `🔴[${c.want.join(",")}] 🟠[${(c.wantOrange || []).join(",")}]`}\n       실제: ${got}`);
   }
-  console.log(fail ? `\n❌ ${fail}/${cases.length} 실패 — 게이트를 고치기 전엔 그 판정을 믿지 마라.` : `\n✅ ${cases.length}/${cases.length} 통과 (검출 6 · 오탐방지 6).`);
+  // 🔴 내역은 **세어서** 낸다 — 손으로 적으면 케이스를 늘릴 때마다 낡는다(실제로 한 번 낡았다).
+  const nRed = cases.filter((c) => c.want && c.want.length).length;
+  const nOrange = cases.filter((c) => c.wantOrange && c.wantOrange.length).length;
+  const nSilent = cases.length - nRed - nOrange;
+  console.log(
+    fail
+      ? `\n❌ ${fail}/${cases.length} 실패 — 게이트를 고치기 전엔 그 판정을 믿지 마라.`
+      : `\n✅ ${cases.length}/${cases.length} 통과 (🔴검출 ${nRed} · 🟠검출 ${nOrange} · 무반응 기대 ${nSilent}).`
+  );
   return fail ? 1 : 0;
 }
 
