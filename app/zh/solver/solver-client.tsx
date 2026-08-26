@@ -234,7 +234,13 @@ const SPOT_GROUPS = [
       //    ▸ 「BTN C벳 빈도」는 화면에서 확인 불가다 — 스팟은 플랍 첫 액션(BB 차례)에서 멈춘다.
       //    §4-B ④: OOP(BB) 첫 액션 벳 **23.7%**. 앱 문구로 되돌리지 마라.
       { board: "9♥8♥7♣", name: "中张连张双色牌面", note: "单加注底池里唯一一个 BB 真会主动领打的牌面：BB 有 23.7% 先下注（不过范围优势仍在 BTN——胜率 BB 48.5% 对 BTN 51.5%）" },
-      { board: "Q♠9♠2♠", name: "单色牌面（3 张同花）", note: "看看大注为什么消失了，只剩下小注和过牌——连已经成同花的牌都经常只过牌" },
+      // 🔄 M-067 축어 재동기(2026-08-26) — 앱이 `190d293`에서 ⑤ lesson을 **완화형**으로 정정했다
+      //    (구형 = «사라진다»형 → 신형 = «变少了，主要剩下» 형). 🔴 **구형 문자열은 주석에도 적지 마라** —
+      //    검수장 회귀 앵커가 그 출현 수를 세고 «0 = 정정 반영»으로 읽는다. 화면값에 큰 벳이 3.2%
+      //    남아 «사라진다»가 과장이었다(솔버 S-003 ③ · 검수장 S-007 라이브 md5 검증).
+      //    ⚠ zh-hant 원장의 «消失» 지적 기각 근거가 «앱 축어 그대로»였는데 **그 근거가 소멸했다** —
+      //       재지적이 아니라 근거 뒤집힘이다(검수장 §2). 간체·번체 동형 판정.
+      { board: "Q♠9♠2♠", name: "单色牌面（3 张同花）", note: "看看大注为什么变少了，主要剩下小注和过牌——连已经成同花的牌都经常只过牌" },
       { board: "6♣6♦3♥", name: "对子牌面", note: "谁都不太容易打中的牌面，诈唬（bluff）的频率就上去了。到详情表里找找看，是哪些手牌被当作诈唬来下注" },
       // 🔴 M-045 RP-19 정정 — 앱 zh는 아직 «체크레이즈 빈도 단언 + 벳 뒤를 따라가라» 류다
       //    (빈도 단언 + 조작 지시 — 화면은 BB 첫 액션에서 멈춘다. 원문 인용은 의역으로, M-047).
@@ -342,12 +348,9 @@ export default function SolverClientZh() {
             첫 문장에 정의 + 구체 수치, 앞 문단 의존 없이 자기완결.
         */}
         <p className="mt-3 text-muted-foreground">
-          <strong className="text-foreground">Poker Solver（扑克求解器）</strong>是把一个具体牌局的
-          均衡策略算出来的程序：你输入双方的范围、公共牌和下注尺寸，它告诉你{" "}
-          <strong className="text-foreground">169 种起手牌</strong>各自该以多少频率下注、过牌或
-          弃牌——全部摆在一张 13×13 矩阵里。HoldemMaster 的这个求解器
-          <strong className="text-foreground">直接在你的浏览器里算——不用下载、不用注册、不限
-          次数</strong>。矩阵旁边还有每手牌的胜率、EV 和权益实现（EQR）。覆盖范围：翻牌后、单挑。
+          <strong className="text-foreground">Poker Solver（扑克求解器）</strong>是把一个具体牌局的均衡策略算出来的程序：你输入双方的范围、公共牌和下注尺寸，它告诉你{" "}
+          <strong className="text-foreground">169 种起手牌</strong>各自该以多少频率下注、过牌或弃牌——全部摆在一张 13×13 矩阵里。HoldemMaster 的这个求解器
+          <strong className="text-foreground">直接在你的浏览器里算——不用下载、不用注册、不限次数</strong>。矩阵旁边还有每手牌的胜率、EV 和权益实现（EQR）。覆盖范围：翻牌后、单挑。
         </p>
         <div className="mt-5 text-center">
           <Cta label="打开求解器 →" />
@@ -363,10 +366,7 @@ export default function SolverClientZh() {
         <h2 className="text-xl font-bold">Poker Solver 是什么？和现成的范围表差在哪</h2>
         <p className="mt-2 text-sm text-muted-foreground">
           求解器从零开始计算{" "}
-          <strong className="text-foreground">GTO（Game Theory Optimal，博弈论最优）策略</strong>。
-          你给它范围、公共牌、筹码量和下注尺寸的决策树，它就朝着均衡点一轮一轮迭代，直到 169 种
-          手牌各自的下注、过牌、弃牌频率全部定下来。这正是它和范围表的分界线：表存的是别人提前
-          算好的答案，求解器<strong className="text-foreground">算的是你眼前这一手</strong>。
+          <strong className="text-foreground">GTO（Game Theory Optimal，博弈论最优）策略</strong>。你给它范围、公共牌、筹码量和下注尺寸的决策树，它就朝着均衡点一轮一轮迭代，直到 169 种手牌各自的下注、过牌、弃牌频率全部定下来。这正是它和范围表的分界线：表存的是别人提前算好的答案，求解器<strong className="text-foreground">算的是你眼前这一手</strong>。
         </p>
         <p className="mt-3 text-sm text-muted-foreground">
           公共牌换掉一张，答案就跟着变——它不是背下来的，是重新算的。
@@ -378,9 +378,7 @@ export default function SolverClientZh() {
         */}
         <p className="mt-3 text-sm text-muted-foreground">
           同一样东西有好几个叫法：<strong className="text-foreground">poker solver</strong>、
-          <strong className="text-foreground">GTO solver</strong>、GTO 求解器，或者干脆叫
-          德扑 GTO 软件。它算出来的东西常被叫作 GTO 范围。不管你用哪个词搜过来——本页这个工具算的
-          就是它。
+          <strong className="text-foreground">GTO solver</strong>、GTO 求解器，或者干脆叫德扑 GTO 软件。它算出来的东西常被叫作 GTO 范围。不管你用哪个词搜过来——本页这个工具算的就是它。
         </p>
         <Table
           head={["你想要什么", "去哪里"]}
@@ -397,8 +395,7 @@ export default function SolverClientZh() {
             약속해 놓고 본문에 0회였다. 개념 설명 없이 «내장 탭» 사실만 — 라벨은 앱 네비 축어
             («翻前范围表 开池·防守» · «胜率计算器 Equity»)다. */}
         <p className="mt-4 text-sm text-muted-foreground">
-          应用里还内置了两个顺手的标签——翻前范围表（开池·防守）和胜率计算器（Equity）。
-          搭牌局的时候直接查，不用切出去。
+          应用里还内置了两个顺手的标签——翻前范围表（开池·防守）和胜率计算器（Equity）。搭牌局的时候直接查，不用切出去。
         </p>
         <p className="mt-4 text-sm text-muted-foreground">
           如果你真正想知道的是 GTO 这个概念本身：完整定义和常见误解在{" "}
@@ -424,9 +421,7 @@ export default function SolverClientZh() {
         <h2 className="text-xl font-bold">为什么你的范围一到翻牌后就散了？</h2>
         <p className="mt-2 text-sm text-muted-foreground">
           因为翻前范围是稳定的，翻牌后的范围不是。
-          <strong className="text-foreground">翻前范围装得进一张表</strong>——你在按钮位每次
-          开池的范围都差不多。可三张公共牌一摊开，同一个范围立刻散成成牌、听牌和空气，接下来怎么打，
-          完全取决于牌面的质地。
+          <strong className="text-foreground">翻前范围装得进一张表</strong>——你在按钮位每次开池的范围都差不多。可三张公共牌一摊开，同一个范围立刻散成成牌、听牌和空气，接下来怎么打，完全取决于牌面的质地。
         </p>
         <p className="mt-3 text-sm text-muted-foreground">
           本页的两个案例比任何解释都直观。两个局面里 BB 都是跟注按钮位的加注、翻牌先行动——
@@ -444,8 +439,7 @@ export default function SolverClientZh() {
         </ul>
         <p className="mt-3 text-sm text-muted-foreground">
           两个牌面都是连张、双色，看着像亲兄弟，正确打法却毫不相干。
-          <strong className="text-foreground">没有任何一张翻前表装得下这个差别</strong>——表是在
-          翻牌出现之前写好的。这正是求解器的活儿：它给你的是「之后」的范围，不是「之前」的。
+          <strong className="text-foreground">没有任何一张翻前表装得下这个差别</strong>——表是在翻牌出现之前写好的。这正是求解器的活儿：它给你的是「之后」的范围，不是「之前」的。
         </p>
         <p className="mt-3 text-sm text-muted-foreground">
           还在搭「之前」的范围？先从{" "}
@@ -483,8 +477,7 @@ export default function SolverClientZh() {
         </ol>
         <p className="mt-4 text-sm text-muted-foreground">
           自己搭的牌局里，筹码就是任意整数。想按大盲思考的话，用{" "}
-          <strong className="text-foreground">10 筹码 = 1bb</strong>（底池 55 就是 5.5bb）。
-          教学案例和训练器已经在用这个换算。
+          <strong className="text-foreground">10 筹码 = 1bb</strong>（底池 55 就是 5.5bb）。教学案例和训练器已经在用这个换算。
         </p>
         {/* 🔴 두 출처를 가른다(M-046 E-2 처방) — 포지션별 오픈 레인지는 chart의 것, 아래 표는
             학습 스팟이 쓰는 것. es(08-22)·en·ja(08-24)·de와 같은 형태다. */}
@@ -510,16 +503,12 @@ export default function SolverClientZh() {
         <p className="mt-2 text-sm text-muted-foreground">
           结果页有五个工作区：顶部的<strong className="text-foreground">动作条</strong>、左侧的{" "}
           <strong className="text-foreground">13×13 矩阵</strong>，以及右侧的{" "}
-          <strong className="text-foreground">频率、手牌/听牌面板和详情表</strong>。记一条经验
-          法则：左边读「一手牌怎么打」，右边读「整个范围怎么打」——只有右下的详情表再把它拆回
-          逐手牌。
+          <strong className="text-foreground">频率、手牌/听牌面板和详情表</strong>。记一条经验法则：左边读「一手牌怎么打」，右边读「整个范围怎么打」——只有右下的详情表再把它拆回逐手牌。
         </p>
         <Table head={["在哪", "写着什么", "怎么读"]} rows={READ_SCREEN} />
         <p className="mt-4 text-sm text-muted-foreground">
-          权益实现（EQR）跌破 100% 的时候值得多看一眼：你手里的胜率没有全部兑现成底池份额。
-          原因每个局面都不一样——位置、主动权、谁的范围顶端更厚。
-          <strong className="text-foreground">求解器不是告诉你「该怎么打」，而是让你看见
-          「频率为什么长成这样」</strong>，而这个「为什么」在 EQR 里最清楚。
+          权益实现（EQR）跌破 100% 的时候值得多看一眼：你手里的胜率没有全部兑现成底池份额。原因每个局面都不一样——位置、主动权、谁的范围顶端更厚。
+          <strong className="text-foreground">求解器不是告诉你「该怎么打」，而是让你看见「频率为什么长成这样」</strong>，而这个「为什么」在 EQR 里最清楚。
         </p>
         <p className="mt-3 text-sm text-muted-foreground">
           这些词还很陌生的话：先读{" "}
@@ -538,8 +527,7 @@ export default function SolverClientZh() {
       <section className="mt-12">
         <h2 className="text-xl font-bold">真的全部免费吗？——能用到哪一步</h2>
         <p className="mt-2 text-sm text-muted-foreground">
-          真的——而且没有那些常见的小字条款：不要支付信息、没有锁起来的功能、没有每天的计算
-          上限、不用注册。连通常只在付费桌面求解器里才有的设置——
+          真的——而且没有那些常见的小字条款：不要支付信息、没有锁起来的功能、没有每天的计算上限、不用注册。连通常只在付费桌面求解器里才有的设置——
           <strong className="text-foreground">抽水和抽水封顶、精度模式、逐节点编辑决策树</strong>
           ——也都在。唯一真正的边界是：这个工具只管
           <strong className="text-foreground">翻牌之后的单挑局面</strong>。
@@ -565,22 +553,17 @@ export default function SolverClientZh() {
       <section className="mt-12">
         <h2 className="text-xl font-bold">为什么只算翻牌、转牌、河牌？</h2>
         <p className="mt-2 text-sm text-muted-foreground">
-          这是一个<strong className="text-foreground">翻牌后（postflop）求解器</strong>：从翻牌
-          摊开的那一刻起，替双方一路往下算。不做翻牌前是有意的——翻前是另一类问题，开池范围稳定
-          到装得进一张表，而翻牌之后的打法每换一个牌面就要重写一遍。
+          这是一个<strong className="text-foreground">翻牌后（postflop）求解器</strong>：从翻牌摊开的那一刻起，替双方一路往下算。不做翻牌前是有意的——翻前是另一类问题，开池范围稳定到装得进一张表，而翻牌之后的打法每换一个牌面就要重写一遍。
         </p>
         <p className="mt-3 text-sm text-muted-foreground">
-          在这条边界之内什么都不缺：<strong className="text-foreground">双方的范围</strong>、任何
-          翻牌·转牌·河牌、起始底池和有效筹码，以及每条街完整的尺寸树。算出来的不是一份通用答案，
-          而是你那张牌桌的答案——连大部分教材都不提的抽水也算进去。
+          在这条边界之内什么都不缺：<strong className="text-foreground">双方的范围</strong>、任何翻牌·转牌·河牌、起始底池和有效筹码，以及每条街完整的尺寸树。算出来的不是一份通用答案，而是你那张牌桌的答案——连大部分教材都不提的抽水也算进去。
         </p>
         <p className="mt-3 text-sm text-muted-foreground">
           缺翻牌前那一块的话：{" "}
           <Link href="/zh/blog/holdem-starting-hands-chart" className="font-semibold text-primary hover:underline">
             起手牌表
           </Link>
-          按位置整理了开池范围。两块拼起来，一手牌就从头到尾都有了答案：表决定你带什么进场，
-          求解器决定翻牌之后的事。
+          按位置整理了开池范围。两块拼起来，一手牌就从头到尾都有了答案：表决定你带什么进场，求解器决定翻牌之后的事。
         </p>
       </section>
 
@@ -590,15 +573,11 @@ export default function SolverClientZh() {
             그대로 + 练习 표현을 본문에 얹는다. */}
         <h2 className="text-xl font-bold">GTO 训练器——给你的每个决定打分的德州扑克练习工具</h2>
         <p className="mt-2 text-sm text-muted-foreground">
-          GTO 训练器就在同一个工具里，不用另外注册。它把算好的牌局变成练习题：在一个真实的决策点
-          发给你一手牌，你选一个动作，它打一个分。如果你想找的是免费的德州扑克练习软件，又不想
-          背线路、只想练<strong className="text-foreground">决定</strong>——从这里开始。
+          GTO 训练器就在同一个工具里，不用另外注册。它把算好的牌局变成练习题：在一个真实的决策点发给你一手牌，你选一个动作，它打一个分。如果你想找的是免费的德州扑克练习软件，又不想背线路、只想练<strong className="text-foreground">决定</strong>——从这里开始。
         </p>
         <p className="mt-3 text-sm text-muted-foreground">
           分数不是「对」或「错」，而是
-          <strong className="text-foreground">你这个选择亏掉了多少期望值（EV）</strong>。GTO 本来
-          就混合动作，选了较少见的那个不自动算失误——问题只在它亏了多少 EV。选完之后，每个动作的
-          频率和 EV 会跟你自己那个选择的成本摆在一起。
+          <strong className="text-foreground">你这个选择亏掉了多少期望值（EV）</strong>。GTO 本来就混合动作，选了较少见的那个不自动算失误——问题只在它亏了多少 EV。选完之后，每个动作的频率和 EV 会跟你自己那个选择的成本摆在一起。
         </p>
         <ul className="mt-4 space-y-1.5 text-sm">
           {/*
@@ -622,16 +601,13 @@ export default function SolverClientZh() {
           </li>
           <li className="text-muted-foreground">
             题目出自每个牌局的多个决策点，组合数
-            <strong className="text-foreground">上万</strong>（目标可剥削度 0.5%）。也可以专练
-            一类局面：单加注底池、3bet 底池或盲位对战
+            <strong className="text-foreground">上万</strong>（目标可剥削度 0.5%）。也可以专练一类局面：单加注底池、3bet 底池或盲位对战
           </li>
           <li className="text-muted-foreground">
-            发牌按 <strong className="text-foreground">GTO 范围里的真实权重</strong>来——一手牌
-            出现的频率，就是你在那个局面里真会拿到它的频率
+            发牌按 <strong className="text-foreground">GTO 范围里的真实权重</strong>来——一手牌出现的频率，就是你在那个局面里真会拿到它的频率
           </li>
           <li className="text-muted-foreground">
-            连胜纪录、弱点分析和<strong className="text-foreground">重练队列</strong>（把你亏 EV 最多
-            的题排回来）都建立在做题记录上。不登录的话，记录只留在你的设备里
+            连胜纪录、弱点分析和<strong className="text-foreground">重练队列</strong>（把你亏 EV 最多的题排回来）都建立在做题记录上。不登录的话，记录只留在你的设备里
           </li>
         </ul>
         <div className="mt-5">
@@ -648,8 +624,7 @@ export default function SolverClientZh() {
         </h2>
         <p className="mt-2 text-sm text-muted-foreground">
           下面的牌局全部提前算完——点开的那一刻策略就摆在眼前，不用等、不用配置。范围取的是
-          100bb 线上标准局的近似；学得最快的方式是加载一个案例、改改范围、重新算一遍，看什么
-          变了。要理解牌面质地怎么改写策略，没有比这更快的路。
+          100bb 线上标准局的近似；学得最快的方式是加载一个案例、改改范围、重新算一遍，看什么变了。要理解牌面质地怎么改写策略，没有比这更快的路。
         </p>
         {SPOT_GROUPS.map((g) => (
           <div key={g.label} className="mt-5">
@@ -692,10 +667,8 @@ export default function SolverClientZh() {
         <p className="mt-2 text-sm text-muted-foreground">
           它们都可以叫 GTO solver 或 poker solver，差别在
           <strong className="text-foreground">「在哪算、什么时候算」</strong>。
-          GTO Wizard 这类解决方案库是查询式的：翻的是提前算好的目录，速度快，常常连翻牌前一起
-          覆盖。PioSOLVER、TexasSolver 这类桌面求解器要下载安装，用你自己的电脑算。本页的工具
-          <strong className="text-foreground">在浏览器里现场算——你问的那一刻才开始算</strong>，
-          范围和决策树随便改，而且什么都不用装。
+          GTO Wizard 这类解决方案库是查询式的：翻的是提前算好的目录，速度快，常常连翻牌前一起覆盖。PioSOLVER、TexasSolver 这类桌面求解器要下载安装，用你自己的电脑算。本页的工具
+          <strong className="text-foreground">在浏览器里现场算——你问的那一刻才开始算</strong>，范围和决策树随便改，而且什么都不用装。
         </p>
         <Table
           head={["", "HoldemMaster 求解器", "解决方案库", "桌面求解器"]}
@@ -708,10 +681,7 @@ export default function SolverClientZh() {
              흘러간다 — 2026-08-24 실측.
         */}
         <p className="mt-4 text-sm text-muted-foreground">
-          搜「免费 poker solver」最后往往落进论坛帖和开源项目——而免费的选项几乎都带一个条件：
-          要么订阅后只开放部分目录，要么每天限定次数，要么点开一条线就扣点数，要么就得下载安装。
-          这里没有那个条件——<strong className="text-foreground">不用注册、没有每日上限、没有
-          点数</strong>。所以复盘手牌的时候，把这页开在旁边就行。
+          搜「免费 poker solver」最后往往落进论坛帖和开源项目——而免费的选项几乎都带一个条件：要么订阅后只开放部分目录，要么每天限定次数，要么点开一条线就扣点数，要么就得下载安装。这里没有那个条件——<strong className="text-foreground">不用注册、没有每日上限、没有点数</strong>。所以复盘手牌的时候，把这页开在旁边就行。
         </p>
         {/*
           🔴 이 문단의 근거는 wasm-postflop.pages.dev의 **자기 고지**와 GitHub 저장소 제목
@@ -719,9 +689,7 @@ export default function SolverClientZh() {
              우리 앱의 AGPL 고지 축어(«本应用基于 WASM Postflop …»)와 일치한다.
         */}
         <p className="mt-3 text-sm text-muted-foreground">
-          给从 <strong className="text-foreground">WASM Postflop</strong> 找过来的人顺带说一句：
-          开源原版的页面自己写明已停止开发，仓库也标记为停更。这个求解器是把那台引擎接着开下去的
-          分支——同样的 AGPL-3.0 协议、同样公开的源码，再加上新界面、教学案例和训练器。
+          给从 <strong className="text-foreground">WASM Postflop</strong> 找过来的人顺带说一句：开源原版的页面自己写明已停止开发，仓库也标记为停更。这个求解器是把那台引擎接着开下去的分支——同样的 AGPL-3.0 协议、同样公开的源码，再加上新界面、教学案例和训练器。
         </p>
       </section>
 
@@ -736,18 +704,14 @@ export default function SolverClientZh() {
         <h2 className="text-xl font-bold">手机上能用吗？离线呢？</h2>
         <p className="mt-2 text-sm text-muted-foreground">
           都行。上手的时候什么都不用装——手机浏览器打开就是完整版。不过
-          <strong className="text-foreground">想要的话，可以点「添加到主屏幕」</strong>把它放到
-          桌面，它就会像一个 App：自己的图标、全屏、没有地址栏。那只是浏览器快捷方式，不是
-          程序——从不弹系统权限。
+          <strong className="text-foreground">想要的话，可以点「添加到主屏幕」</strong>把它放到桌面，它就会像一个 App：自己的图标、全屏、没有地址栏。那只是浏览器快捷方式，不是程序——从不弹系统权限。
         </p>
         <p className="mt-3 text-sm text-muted-foreground">
           添加之后，教学案例和 GTO 训练器都存在设备里，
-          <strong className="text-foreground">断网也能接着练</strong>——地铁上、飞机上、流量紧张
-          的时候都一样。重要的边界：要从零算一个自己的牌局，计算引擎得先被加载过一次。
+          <strong className="text-foreground">断网也能接着练</strong>——地铁上、飞机上、流量紧张的时候都一样。重要的边界：要从零算一个自己的牌局，计算引擎得先被加载过一次。
         </p>
         <p className="mt-3 text-sm text-muted-foreground">
-          iPhone 和 Safari 里，浏览器限制让求解器只能单线程计算，大牌局会慢一些——电脑上更顺。
-          添加入口：Chrome 和 Edge 在地址栏的安装图标，iPhone 在分享菜单里的「添加到主屏幕」。
+          iPhone 和 Safari 里，浏览器限制让求解器只能单线程计算，大牌局会慢一些——电脑上更顺。添加入口：Chrome 和 Edge 在地址栏的安装图标，iPhone 在分享菜单里的「添加到主屏幕」。
         </p>
       </section>
 
@@ -759,8 +723,7 @@ export default function SolverClientZh() {
             <Link href="/zh/blog/holdem-starting-hands-chart" className="font-semibold text-primary hover:underline">
               起手牌表
             </Link>{" "}
-            ——这个工具只管翻牌之后。<strong>带什么牌进场</strong>看那篇；① 和 ② 里粘的范围来自
-            教学案例
+            ——这个工具只管翻牌之后。<strong>带什么牌进场</strong>看那篇；① 和 ② 里粘的范围来自教学案例
           </li>
           <li>
             <Link href="/zh/blog/holdem-pot-odds" className="font-semibold text-primary hover:underline">
@@ -823,8 +786,7 @@ export default function SolverClientZh() {
            FAQ · 이 꼬리 고지. **제목·H1·H2에 없다는 것이 지켜야 할 선**이다.
       */}
       <p className="mt-8 text-xs text-muted-foreground">
-        本应用基于 Wataru Inariba 的 WASM Postflop（AGPL-3.0），由 HoldemMaster 本地化并改进。
-        修改后的完整源代码以同样的协议公开。
+        本应用基于 Wataru Inariba 的 WASM Postflop（AGPL-3.0），由 HoldemMaster 本地化并改进。修改后的完整源代码以同样的协议公开。
       </p>
     </div>
   );

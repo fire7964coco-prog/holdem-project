@@ -355,7 +355,7 @@
 |---|---|---|
 | **WPT Tokyo 2026 발표** | 8~9월 재확인 | `wptevent.jp`가 아직 "WPT TOKYO 2025" 헤드라인. 발표는 통상 여름 |
 | 🆕 **cash game 필라 신설 약속** | 착수 시 | EN·pt `holdem-tournament-vs-cash-game` 본문 `:::note`가 «guia completo de cash game está a caminho»를 독자에게 공개 약속(08-26 EN 구조 이식). 신설 시 settled-decisions §1의 태그 이관 규칙 필수 |
-| 🆕 **GOP Incheon II 스케줄 공개(9월 초 예상)** | 9월 초 | godsofpoker.com 1차엔 시리즈 목록만 있고 바이인 미공개(08-26 실측). 공개되면 `korea-poker-marathon-2026`의 «buy-ins TBA» 갱신 + de의 «KRW 2,7 Mio.» 귀속 오류 정정 근거 |
+| 🆕 **GOP Incheon II 스케줄 공개(9월 초 예상)** | 9월 초 | godsofpoker.com 1차엔 시리즈 목록만 있고 바이인 미공개(08-26 실측). 공개되면 `korea-poker-marathon-2026`의 «buy-ins TBA»(de GOP 절 «Buy-ins folgen») 갱신. 🔴 **«de의 KRW 2,7 Mio. 귀속 오류 정정»은 여기서 삭제했다 — 그런 오류가 없다**(2026-08-26 · M-069). de L207의 그 값은 처음부터 **`### APT Jeju 2026` 절**(L203) 안에 있다(실물 확인). 원장 #55의 «이 절은 GOP다»가 검수장 08-15 오독이었고 본체 M-068 §3이 그걸 전파했다. **되살리지 마라** |
 | JOPT 2027 전체 일정 | 연말 | 2027 Tokyo #01·Osaka #01만 나와 있음 |
 | ETIAS(유럽) 시행 | 2026 4분기 | 시행 직후 유럽 대회 글 재확인 |
 | 일미 조세조약 원천징수율 | 상시 | `market-profile/ja.md` 미해결 #2. WSOP 참가자에 직결 |

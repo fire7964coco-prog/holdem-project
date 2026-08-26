@@ -165,10 +165,18 @@ const SPOT_GROUPS = [
       //    EN ④ FAQ 「Does the big blind have the advantage? → No.」
       //    ⚠ BB가 «먼저 친다»(23.7%)는 것과 «우위»는 다른 말이다. 앱 문구로 되돌리지 마라.
       { board: "9♥8♥7♣", name: "Middle Connected, Two-Tone", slug: "donk-bet-strategy", note: "The only single-raised board where BB truly leads: it bets first 23.7% of the time (the range advantage still belongs to BTN — 48.5% equity against 51.5%)" },
-      { board: "Q♠9♠2♠", name: "Monotone Board", slug: "monotone-board-strategy", note: "Big bets disappear — even made flushes check often" },
+      // 🔄 M-067 축어 재동기(2026-08-26) — 앱이 `190d293`에서 ⑤ lesson을 **완화형**으로 정정했다
+      //    (구형 = «사라진다»형 → 신형 = «give way» 형). 사유는 앱 쪽과 동일하다:
+      //    🔴 **구형 문자열을 주석에도 적지 마라** — 검수장 회귀 앵커가 이 파일에서 그 문자열의
+      //       출현 수를 세고 «0이 되는 순간»을 정정 반영 신호로 쓴다. 주석에 남기면 0이 안 된다.
+      //    화면값에 큰 벳이 3.2% 남아 있어 «사라진다»가 과장이었다(솔버 S-003 ③ · 검수장 S-007 라이브 md5 검증).
+      //    이 note는 «앱 축어» 선언 지위라 앱이 바뀌면 **같이 바뀌어야 한다** — 안 바꾸면 축어가 아니게 된다.
+      { board: "Q♠9♠2♠", name: "Monotone Board", slug: "monotone-board-strategy", note: "Big bets give way to small bets and checks — even made flushes check often" },
       { board: "6♣6♦3♥", name: "Paired Board", slug: "paired-board-strategy", note: "Nobody connects, so the bluffing share goes up" },
-      // ⚠ 「peaks」(=13개 중 최대)로 쓸 뻔했다. 앱은 "BB check-raises a lot on this texture"라고만
+      // ⚠ 「peaks」(=13개 중 최대)로 쓸 뻔했다. 앱은 "BB check-raises often on this texture"라고만
       //    적고 최대라고 하지 않는다 — 13개를 비교해 확인하지 않은 주장은 쓰지 않는다.
+      //    🔄 축어 갱신(2026-08-26 · M-067 🪶): 앱은 08-20 `531c347`(원어민 211건)부터 «a lot»이 아니라
+      //       **«often»**이다. 논증(«많이 한다»라고만 적고 «최대»라 하지 않는다)은 often으로도 그대로 성립한다.
       // 🔴 M-045 RP-19 정정(2026-08-24) — 「체크레이즈를 많이 한다」 자체가 화면에 없는 값이다.
       //    KO ⑦ 239줄: 「교육 예제는 플랍의 첫 액션(BB 차례)까지만 … BB의 체크레이즈 빈도가 그 화면에는 없습니다」.
       //    §4-B ⑦이 주는 값은 체크 96.8 · 벳 3.2뿐이다. 앱 축어(위 주석)로 되돌리지 마라.

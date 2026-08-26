@@ -238,7 +238,12 @@ const SPOT_GROUPS = [
       //    ▸ 「BTN C벳 빈도」는 화면에서 확인 불가다 — 스팟은 플랍 첫 액션(BB 차례)에서 멈춘다.
       //    §4-B ④: OOP(BB) 첫 액션 벳 **23.7%**. 앱 문구로 되돌리지 마라.
       { board: "9♥8♥7♣", name: "Verbundenes Middle-Board, Two-Tone", note: "Das einzige Single-Raised-Board, auf dem die BB wirklich vorangeht: Sie setzt in 23,7% der Fälle zuerst (der Range-Vorteil bleibt trotzdem beim BTN – die BB hält 48,5% Equity gegen 51,5%)" },
-      { board: "Q♠9♠2♠", name: "Monotones Board (eine Farbe)", note: "Sieh, warum große Bets verschwinden und kleine Bets und Checks übernehmen – selbst ein fertiger Flush checkt hier oft" },
+      // 🔄 M-067 축어 재동기(2026-08-26) — 앱이 `190d293`에서 ⑤ lesson을 **완화형**으로 정정했다
+      //    (구형 = «사라진다»형 → 신형 = «seltener werden» 형). 🔴 **구형 문자열은 주석에도 적지 마라** —
+      //    검수장 회귀 앵커가 그 출현 수를 세고 «0 = 정정 반영»으로 읽는다. 화면값에 큰 벳이 3.2% 남아
+      //    «사라진다»가 과장이었다(솔버 S-003 ③ · 검수장 S-007 라이브 md5 검증).
+      //    이 note는 «앱 축어» 선언 지위라 앱이 바뀌면 같이 바뀐다.
+      { board: "Q♠9♠2♠", name: "Monotones Board (eine Farbe)", note: "Sieh, warum große Bets seltener werden und kleine Bets und Checks übernehmen – selbst ein fertiger Flush checkt hier oft" },
       { board: "6♣6♦3♥", name: "Gepaartes Board", note: "Niemand trifft dieses Board, also steigt die Bluff-Frequenz. Finde in der Detailtabelle heraus, welche Hände als Bluff betten" },
       // 🔴 M-045 RP-19 정정 — 앱 de는 아직 「die BB check-raist … oft. Verfolge die obere
       //    Leiste über eine Bet hinaus」다(빈도 단언 + 조작 지시 — 화면은 BB 첫 액션에서 멈춘다).
@@ -282,6 +287,24 @@ const SPOT_GROUPS = [
 ];
 
 const SPOT_TOTAL = SPOT_GROUPS.reduce((n, g) => n + g.items.length, 0);
+
+/**
+ * 3-Bet-Pot 스팟 개수 — **배열에서 센다.**
+ *
+ * ★2026-08-26 — 아래 3-Bet-Guide 링크 문장이 「drei der Lernspots」로 개수를 **박아** 두고 있었다.
+ *   이 파일 머리(L217)가 「개수를 문장에 박지 않는다 — 배열에서 세어 쓴다(RP-08)」고 적어 놓고
+ *   `SPOT_TOTAL` 은 그렇게 하면서, **이 한 자리만 손으로 적혀 있었다.** 값은 지금 맞다(3개) —
+ *   그래서 **렌더 결과는 바뀌지 않는다.** 바꾸는 것은 «앱이 스팟을 하나 더 넣으면 조용히
+ *   거짓이 되는» 성질뿐이다.
+ * 🪶 독일어는 1일 때 «einer … ist» 로 격·수가 달라진다 — 그래서 숫자만 갈아끼우지 않고
+ *   문장째 분기한다(숫자만 바꾸면 `einer der Lernspots **sind**` 라는 비문이 나온다).
+ */
+const THREEBET_SPOTS = SPOT_GROUPS.find((g) => g.label.startsWith("3-Bet-Pot"))?.items.length ?? 0;
+const DE_CARDINAL = ["null", "einer", "zwei", "drei", "vier", "fünf", "sechs", "sieben", "acht", "neun"];
+const THREEBET_PHRASE =
+  THREEBET_SPOTS === 1
+    ? "einer der Lernspots ist ein 3-Bet-Pot"
+    : `${DE_CARDINAL[THREEBET_SPOTS] ?? THREEBET_SPOTS} der Lernspots sind 3-Bet-Pots`;
 
 /* ── 공통 조각 ───────────────────────────────────────────────────────── */
 
@@ -841,7 +864,7 @@ export default function SolverClientDe() {
             <Link href="/de/blog/holdem-3bet" className="font-semibold text-primary hover:underline">
               3-Bet-Guide
             </Link>{" "}
-            – drei der Lernspots sind 3-Bet-Pots. Dieser Artikel erklärt, wie es zu diesem Flop kommt
+            – {THREEBET_PHRASE}. Dieser Artikel erklärt, wie es zu diesem Flop kommt
           </li>
           <li>
             <Link href="/de/blog/holdem-strategy" className="font-semibold text-primary hover:underline">

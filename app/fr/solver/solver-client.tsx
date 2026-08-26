@@ -201,7 +201,12 @@ const SPOT_GROUPS = [
       // 🔴🔴 RP-01 계열 + RP-02 정정 — 앱 fr은 아직 «콜러 우위 + C벳 빈도 붕괴» 류다(9언어 전건 ·
       //    원문은 fr 축어 문서 — 주석 인용은 의역으로, M-047). §4-B ④: OOP 벳 23,7 % · 48,5 대 51,5.
       { board: "9♥8♥7♣", name: "Board médian connecté, bicolore", note: "Le seul board du single raised pot où BB prend vraiment l'initiative : BB mise en premier à 23,7 % — mais l'avantage de range reste à BTN : 48,5 % d'equity pour BB contre 51,5 % pour BTN" },
-      { board: "Q♠9♠2♠", name: "Board monochrome", note: "Regarde pourquoi les grosses mises disparaissent au profit des petites mises et des checks. Remarque à quelle fréquence même une couleur faite se contente de checker" },
+      // 🔄 M-067 축어 재동기(2026-08-26) — 앱이 `190d293`에서 ⑤ lesson을 **완화형**으로 정정했다
+      //    (구형 = «사라진다»형 → 신형 = «se raréfient» 형). 🔴 **구형 문자열은 주석에도 적지 마라** —
+      //    검수장 회귀 앵커가 그 출현 수를 세고 «0 = 정정 반영»으로 읽는다. 화면값에 큰 벳이 3.2% 남아
+      //    «사라진다»가 과장이었다(솔버 S-003 ③ · 검수장 S-007 라이브 md5 검증).
+      //    🔴 이 자리는 **구형 완전 축어**였다 — 앱과 갈라지면 즉시 «축어 아님»이 된다.
+      { board: "Q♠9♠2♠", name: "Board monochrome", note: "Regarde pourquoi les grosses mises se raréfient au profit des petites mises et des checks. Remarque à quelle fréquence même une couleur faite se contente de checker" },
       { board: "6♣6♦3♥", name: "Board pairé", note: "Personne ne touche ce board, donc la part de bluffs augmente. Utilise le tableau détaillé pour trouver quelles mains misent en bluff" },
       // 🔴 M-045 RP-19 정정 — 앱 fr은 아직 «체크레이즈 빈도 단언 + 따라가 보라» 류다(원문 인용은
       //    의역으로 — M-047). §4-B ⑦ = 체크 96,8 · 벳 3,2뿐.

@@ -259,7 +259,12 @@ const SPOT_GROUPS = [
       //    ▸ 「«sempre dar c-bet» é um erro」 절도 같은 이유로 뺐다(es가 먼저 뺐다).
       //    §4-B ④: OOP(BB) 첫 액션 벳 **23.7%**. ja·es·pt 세 언어에서 같은 결함을 확인했다.
       { board: "9♥8♥7♣", name: "Board médio conectado, two-tone", note: "O único board de pote simples em que o BB realmente lidera: ele aposta primeiro em 23,7% das vezes (a vantagem de range continua sendo do BTN — equity de 48,5% contra 51,5%)" },
-      { board: "Q♠9♠2♠", name: "Board monotone", note: "As apostas grandes somem e dão lugar a apostas pequenas e checks — repare com que frequência até um flush fechado só dá check" },
+      // 🔄 M-067 축어 재동기(2026-08-26) — 앱이 `190d293`에서 ⑤ lesson을 **완화형**으로 정정했다
+      //    (구형 = «사라진다»형 → 신형 = «ficam raras» 형). 🔴 **구형 문자열은 주석에도 적지 마라** —
+      //    검수장 회귀 앵커가 그 출현 수를 세고 «0 = 정정 반영»으로 읽는다. 화면값에 큰 벳이 3.2% 남아
+      //    «사라진다»가 과장이었다(솔버 S-003 ③ · 검수장 S-007 라이브 md5 검증).
+      //    🔴 이 자리는 **구형 완전 축어**였다 — 그래서 앱과 갈라지면 즉시 «축어 아님»이 된다.
+      { board: "Q♠9♠2♠", name: "Board monotone", note: "As apostas grandes ficam raras e dão lugar a apostas pequenas e checks — repare com que frequência até um flush fechado só dá check" },
       { board: "6♣6♦3♥", name: "Board pareado", note: "Ninguém conecta com este board, então a proporção de blefes sobe — use a tabela de detalhes para achar quais mãos apostam como blefe" },
       // 🔴 M-045 RP-19 + M-046 P-3 정정(2026-08-24) — 결함이 한 문장에 둘이었다:
       //    ① 「BB가 체크레이즈를 아주 자주 한다」(구 문구)는 화면에 없는 값(KO ⑦ 239줄 · §4-B ⑦ = 체크 96,8 · 벳 3,2뿐)

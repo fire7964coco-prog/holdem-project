@@ -222,7 +222,12 @@ const SPOT_GROUPS = [
       //    ⚠ 앱 ja 화면이 아직 옛 문구를 쓴다 — **화면을 보고 되돌리지 마라.**
       //    「常にCベット」 절도 뺐다: 스팟은 플랍 첫 액션(BB 차례)에서 멈춰 BTN 빈도를 화면에서 못 본다(RP-02).
       { board: "9♥8♥7♣", name: "ミドルのコネクトボード（2トーン）", note: "シングルレイズポットで唯一、BBが本当にリードするボード。BBの先制ベットは23.7%です（レンジ優位は依然としてBTN側 — エクイティ48.5%対51.5%）" },
-      { board: "Q♠9♠2♠", name: "モノトーンボード（同スート3枚）", note: "大きなベットが消えます。完成したフラッシュでさえ頻繁にチェックします" },
+      // 🔄 M-067 축어 재동기(2026-08-26) — 앱이 `190d293`에서 ⑤ lesson을 **완화형**으로 정정했다
+      //    (구형 = «사라진다»형 → 신형 = «減り» 형). 🔴 **구형 문자열은 주석에도 적지 마라** —
+      //    검수장 회귀 앵커가 이 파일에서 그 출현 수를 세고 «0 = 정정 반영»으로 읽는다. 화면값에 큰 벳이 3.2% 남아
+      //    «사라진다»가 과장이었다(솔버 S-003 ③ · 검수장 S-007 라이브 md5 검증). 이 note는 «앱 축어»
+      //    선언 지위라 앱이 바뀌면 같이 바뀐다. ⚠ **같은 문구가 본문 FAQ ②에도 있다 — 함께 고칠 것.**
+      { board: "Q♠9♠2♠", name: "モノトーンボード（同スート3枚）", note: "大きなベットが減り、小さなベットとチェックが中心になります。完成したフラッシュでさえ頻繁にチェックします" },
       { board: "6♣6♦3♥", name: "ペアボード", note: "どちらのレンジもボードと噛み合わないため、ブラフの比率が上がります" },
       // 🔴 M-045 RP-19 정정(2026-08-24) — 「BB가 체크레이즈로 저항해 온다」(구 문구)는 화면에 없는 값이다.
       //    KO ⑦ 239줄: 「교육 예제는 플랍의 첫 액션(BB 차례)까지만 … BB의 체크레이즈 빈도가 그 화면에는 없습니다」.
@@ -340,14 +345,9 @@ export default function SolverClientJa() {
           🔴 두괄식 — 일본어 SEO 글의 관습이자 GEO 원칙이다(결론 먼저).
         */}
         <p className="mt-3 text-muted-foreground">
-          <strong className="text-foreground">GTOツール（GTOソルバー）</strong>は、両プレイヤーのレンジ・
-          ボード・スタックから「どの手をどのくらいの頻度でベット・チェック・フォールドすべきか」を
-          計算するプログラムです。スターティングハンドの169パターンすべてについて、
-          その頻度が13×13グリッドに返ってきます。
+          <strong className="text-foreground">GTOツール（GTOソルバー）</strong>は、両プレイヤーのレンジ・ボード・スタックから「どの手をどのくらいの頻度でベット・チェック・フォールドすべきか」を計算するプログラムです。スターティングハンドの169パターンすべてについて、その頻度が13×13グリッドに返ってきます。
           HoldemMasterのGTOツールはその計算を
-          <strong className="text-foreground">ブラウザの中で実行します — ダウンロードもアカウントも
-          有料プランもありません</strong>。戦略グリッドと並べて、ハンドごとのエクイティ・EV・
-          エクイティ実現率まで表示します。対応範囲はヘッズアップのポストフロップです。
+          <strong className="text-foreground">ブラウザの中で実行します — ダウンロードもアカウントも有料プランもありません</strong>。戦略グリッドと並べて、ハンドごとのエクイティ・EV・エクイティ実現率まで表示します。対応範囲はヘッズアップのポストフロップです。
         </p>
         <div className="mt-5 text-center">
           <Cta label="GTOツールを開く →" />
@@ -362,15 +362,10 @@ export default function SolverClientJa() {
       <section className="mt-12">
         <h2 className="text-xl font-bold">ポーカーのGTOツールとは — チャートとの違い</h2>
         <p className="mt-2 text-sm text-muted-foreground">
-          GTOツールは、<strong className="text-foreground">ゲーム理論最適</strong>の戦略をゼロから
-          計算するプログラムです。レンジ・ボード・スタック・ベットサイズツリーを与えると、
-          ナッシュ均衡に向けて反復計算し、169ハンドすべてのベット・チェック・フォールド頻度を返します。
-          チャートとの違いはここにあります — チャートは誰かが以前に出した答えを保存したものですが、
-          ソルバーは<strong className="text-foreground">あなたが今いるスポットそのものを計算します</strong>。
+          GTOツールは、<strong className="text-foreground">ゲーム理論最適</strong>の戦略をゼロから計算するプログラムです。レンジ・ボード・スタック・ベットサイズツリーを与えると、ナッシュ均衡に向けて反復計算し、169ハンドすべてのベット・チェック・フォールド頻度を返します。チャートとの違いはここにあります — チャートは誰かが以前に出した答えを保存したものですが、ソルバーは<strong className="text-foreground">あなたが今いるスポットそのものを計算します</strong>。
         </p>
         <p className="mt-3 text-sm text-muted-foreground">
-          チャートとも、誰かの主観が入ったトレーニングアプリとも違います。ボードを1枚変えれば答えも変わります。
-          思い出すのではなく、計算し直すからです。
+          チャートとも、誰かの主観が入ったトレーニングアプリとも違います。ボードを1枚変えれば答えも変わります。思い出すのではなく、計算し直すからです。
         </p>
         {/*
           «부르는 이름» 문단 — 같은 것을 가리키는 검색어가 실제로 갈려 있다(2026-08-21 실측):
@@ -381,9 +376,7 @@ export default function SolverClientJa() {
         <p className="mt-3 text-sm text-muted-foreground">
           同じものが、いくつもの名前で呼ばれています。
           <strong className="text-foreground">GTOツール</strong>・GTOアプリ・
-          <strong className="text-foreground">GTOソルバー</strong>・ポストフロップソルバーは、
-          どれもこの種のプログラムを指します。出力の方をGTOチャートやレンジ表と呼ぶこともあります。
-          違うのは検索する言葉だけで、このページのツールが計算するものは同じです。
+          <strong className="text-foreground">GTOソルバー</strong>・ポストフロップソルバーは、どれもこの種のプログラムを指します。出力の方をGTOチャートやレンジ表と呼ぶこともあります。違うのは検索する言葉だけで、このページのツールが計算するものは同じです。
         </p>
         <Table
           head={["やりたいこと", "どこを見るか"]}
@@ -411,8 +404,7 @@ export default function SolverClientJa() {
         <p className="mt-2 text-sm text-muted-foreground">
           はじめてソルバーに触るなら、
           <strong className="text-foreground">設定より先に学習スポットを開いてください。</strong>
-          学習スポットはすでに計算済みなので、入力の操作を覚える前に出力の読み方を覚えられます。
-          自分でスポットを組む段になったら、左サイドバーのタブが上から順番になっています。
+          学習スポットはすでに計算済みなので、入力の操作を覚える前に出力の読み方を覚えられます。自分でスポットを組む段になったら、左サイドバーのタブが上から順番になっています。
         </p>
         <ol className="mt-4 space-y-4">
           {STEPS.map((s) => (
@@ -429,8 +421,7 @@ export default function SolverClientJa() {
         </ol>
         <p className="mt-4 text-sm text-muted-foreground">
           カスタムスポットの入力は任意の整数チップです。bb で考えたいときは
-          <strong className="text-foreground">10チップ = 1bb</strong> と決めてください
-          （ポット55なら5.5bb）。学習スポットとトレーナーは、このスケールで自動的に換算されます。
+          <strong className="text-foreground">10チップ = 1bb</strong> と決めてください（ポット55なら5.5bb）。学習スポットとトレーナーは、このスケールで自動的に換算されます。
         </p>
         {/* 🔴 es 적대검수 처방 소급(2026-08-24) — 표 앞에 소유 글 링크 + 헤더를 도구 조작 라벨로.
             랜딩이 「또 하나의 프리플랍 레인지 표」로 읽히지 않게 하는 처방(es 08-22 · en과 같은 날 반영).
@@ -440,8 +431,7 @@ export default function SolverClientJa() {
           <Link href="/ja/blog/holdem-starting-hands-chart" className="font-semibold text-primary hover:underline">
             スターティングハンド表
           </Link>
-          にあります。下の2つのレンジは別物で、Single Raised Pot の
-          学習スポットが使っているレンジそのものです（BTN vs BB）。①と②にそのまま貼り付けてください。
+          にあります。下の2つのレンジは別物で、Single Raised Pot の学習スポットが使っているレンジそのものです（BTN vs BB）。①と②にそのまま貼り付けてください。
         </p>
         <Table head={["貼り付け先", "レンジ"]} rows={STARTER_RANGES.map(([seat, r]) => [seat, <code key={seat} className="text-xs break-all">{r}</code>])} />
       </section>
@@ -455,17 +445,12 @@ export default function SolverClientJa() {
           結果画面には5つの作業エリアがあります。上部の
           <strong className="text-foreground">場面を切り替えるアクションバー</strong>、左の
           <strong className="text-foreground">13×13戦略マトリクス</strong>、そして右側の
-          <strong className="text-foreground">頻度タイル・ハンド分類・詳細テーブル</strong>です。
-          左は個別のハンドが何をするか、右はレンジ全体が何をするかを読む場所だと覚えてください。
+          <strong className="text-foreground">頻度タイル・ハンド分類・詳細テーブル</strong>です。左は個別のハンドが何をするか、右はレンジ全体が何をするかを読む場所だと覚えてください。
         </p>
         <Table head={["場所", "何があるか", "どう読むか"]} rows={READ_SCREEN} />
         <p className="mt-4 text-sm text-muted-foreground">
-          エクイティ実現率（EQR）が100%を下回っていたら、そこは立ち止まる価値があります。
-          持っているエクイティを、そのまま取り切れていないという意味だからです。
-          何がその差を作るかはスポットごとに違います — ポジション、イニシアチブ、そして
-          ナッツ級のハンドをどちらが多く持っているか。
-          <strong className="text-foreground">ソルバーが教えてくれるのは「どう打つか」ではなく
-          「なぜその頻度になるのか」</strong>で、EQRはその理由が最も見えやすい数字です。
+          エクイティ実現率（EQR）が100%を下回っていたら、そこは立ち止まる価値があります。持っているエクイティを、そのまま取り切れていないという意味だからです。何がその差を作るかはスポットごとに違います — ポジション、イニシアチブ、そしてナッツ級のハンドをどちらが多く持っているか。
+          <strong className="text-foreground">ソルバーが教えてくれるのは「どう打つか」ではなく「なぜその頻度になるのか」</strong>で、EQRはその理由が最も見えやすい数字です。
         </p>
         <p className="mt-3 text-sm text-muted-foreground">
           これらの用語になじみがなければ、
@@ -485,9 +470,7 @@ export default function SolverClientJa() {
         <h2 className="text-xl font-bold">本当に無料? — 機能一覧</h2>
         <p className="mt-2 text-sm text-muted-foreground">
           無料です。しかも条件つきの無料ではありません — 支払い方法の登録なし、ロックされた機能なし、
-          1日の計算回数制限なし、アカウントも不要です。通常は有料のデスクトップソルバーに置かれている
-          設定 — レーキとレーキキャップ、精度モード、ゲームツリーのノード単位編集 — もすべて使えます。
-          制約と言えるのは一つだけで、このツールが
+          1日の計算回数制限なし、アカウントも不要です。通常は有料のデスクトップソルバーに置かれている設定 — レーキとレーキキャップ、精度モード、ゲームツリーのノード単位編集 — もすべて使えます。制約と言えるのは一つだけで、このツールが
           <strong className="text-foreground">ポストフロップ・ヘッズアップ専用</strong>だということです。
         </p>
         <Table
@@ -511,18 +494,12 @@ export default function SolverClientJa() {
       <section className="mt-12">
         <h2 className="text-xl font-bold">なぜポストフロップ専用なのか</h2>
         <p className="mt-2 text-sm text-muted-foreground">
-          これは<strong className="text-foreground">ポストフロップのソルバー</strong>です。
-          フロップが開いた時点から始まり、そこから先を2人分計算します。
-          プリフロップを意図的に外してあるのは、プリフロップが別種の問題だからです —
-          プリフロップのレンジは表から読めるくらい安定していますが、
-          ポストフロップはボードが変わるたびに書き換わります。
+          これは<strong className="text-foreground">ポストフロップのソルバー</strong>です。フロップが開いた時点から始まり、そこから先を2人分計算します。プリフロップを意図的に外してあるのは、プリフロップが別種の問題だからです —
+          プリフロップのレンジは表から読めるくらい安定していますが、ポストフロップはボードが変わるたびに書き換わります。
         </p>
         <p className="mt-3 text-sm text-muted-foreground">
           その境界の内側では、何も出し惜しみしていません。両者の
-          <strong className="text-foreground">ポストフロップレンジ</strong>、任意のフロップ・ターン・
-          リバー、開始ポットと実効スタック、ストリートごとの完全なベットサイズツリーを設定できます。
-          出てくる戦略は一般論ではなく、あなたのゲームのものです — 多くの学習教材が触れない
-          レーキも、設定に含められます。
+          <strong className="text-foreground">ポストフロップレンジ</strong>、任意のフロップ・ターン・リバー、開始ポットと実効スタック、ストリートごとの完全なベットサイズツリーを設定できます。出てくる戦略は一般論ではなく、あなたのゲームのものです — 多くの学習教材が触れないレーキも、設定に含められます。
         </p>
         <p className="mt-3 text-sm text-muted-foreground">
           プリフロップ側が必要なら、
@@ -540,17 +517,11 @@ export default function SolverClientJa() {
           無料のGTOトレーナー — EVロスで採点する練習アプリ
         </h2>
         <p className="mt-2 text-sm text-muted-foreground">
-          GTOトレーナーはこのGTOツールに最初から組み込まれていて、別に登録する必要もありません。
-          計算済みのスポットをそのまま練習問題に変えます — 実際の意思決定ポイントでハンドが配られ、
-          アクションを選ぶと採点されます。無料のポーカー練習アプリや練習サイトを探していて、
-          役の練習ではなく<strong className="text-foreground">判断の練習</strong>がしたいなら、
-          ここが入口です。
+          GTOトレーナーはこのGTOツールに最初から組み込まれていて、別に登録する必要もありません。計算済みのスポットをそのまま練習問題に変えます — 実際の意思決定ポイントでハンドが配られ、アクションを選ぶと採点されます。無料のポーカー練習アプリや練習サイトを探していて、役の練習ではなく<strong className="text-foreground">判断の練習</strong>がしたいなら、ここが入口です。
         </p>
         <p className="mt-3 text-sm text-muted-foreground">
           採点は正解・不正解ではなく<strong className="text-foreground">EVロス</strong>で行います。
-          GTOはアクションを混ぜるため、頻度の低い方を選んだことが即ミスとは限りません。
-          問われているのは、その選択がどれだけ期待値を手放したかです。
-          アクションを選ぶと、各アクションの頻度とEV、そしてあなたの選択のコストが並んで表示されます。
+          GTOはアクションを混ぜるため、頻度の低い方を選んだことが即ミスとは限りません。問われているのは、その選択がどれだけ期待値を手放したかです。アクションを選ぶと、各アクションの頻度とEV、そしてあなたの選択のコストが並んで表示されます。
         </p>
         <ul className="mt-4 space-y-1.5 text-sm">
           {/*
@@ -564,16 +535,13 @@ export default function SolverClientJa() {
             <span className="font-semibold text-orange-500">それ以上</span>は見直し対象
           </li>
           <li className="text-muted-foreground">
-            同じ0.08bbでも、5.5bbのポットでは1.45%で見直し対象、22.5bbのポットでは0.36%で許容範囲です。
-            境界は5.5bbのシングルレイズポットで0.02bbと0.06bb、22.5bbの3ベットポットで
-            0.08bbと0.23bbになります。0.02bbと0.05bbの下限があり、ソルバー自体の誤差に
-            埋もれないようにしてあります
+            同じ0.08bbでも、5.5bbのポットでは1.45%で見直し対象、22.5bbのポットでは0.36%で許容範囲です。境界は5.5bbのシングルレイズポットで0.02bbと0.06bb、22.5bbの3ベットポットで
+            0.08bbと0.23bbになります。0.02bbと0.05bbの下限があり、ソルバー自体の誤差に埋もれないようにしてあります
           </li>
           <li className="text-muted-foreground">
             出題は学習スポットごとの複数の意思決定ポイントから来るので、組み合わせは
             <strong className="text-foreground">1万通りを超えます</strong>
-            （目標エクスプロイタビリティ0.5%）。シングルレイズポット・3ベットポット・
-            ブラインド戦を単独で絞って練習することもできます
+            （目標エクスプロイタビリティ0.5%）。シングルレイズポット・3ベットポット・ブラインド戦を単独で絞って練習することもできます
           </li>
           <li className="text-muted-foreground">
             ハンドは<strong className="text-foreground">実際のGTOレンジのウェイトに比例して</strong>
@@ -581,8 +549,7 @@ export default function SolverClientJa() {
           </li>
           <li className="text-muted-foreground">
             連続正解の記録、苦手分野の内訳、EVロスが大きかった問題を集めた
-            <strong className="text-foreground">復習キュー</strong>は、この履歴をもとに動いています。
-            履歴はログインしない限り端末内に残ります
+            <strong className="text-foreground">復習キュー</strong>は、この履歴をもとに動いています。履歴はログインしない限り端末内に残ります
           </li>
         </ul>
         <div className="mt-5">
@@ -609,25 +576,20 @@ export default function SolverClientJa() {
         <ol className="mt-4 list-decimal space-y-2 pl-6 text-sm text-muted-foreground">
           <li>
             <strong className="text-foreground">計算済みの学習スポットを開く。</strong>
-            設定を覚える前に、出力の読み方に慣れます。待ち時間がないので、
-            ボードを変えると戦略がどう変わるかを続けて見られます
+            設定を覚える前に、出力の読み方に慣れます。待ち時間がないので、ボードを変えると戦略がどう変わるかを続けて見られます
           </li>
           <li>
             <strong className="text-foreground">GTOトレーナーで問題を解く。</strong>
-            読めるようになったら、自分で選んでみます。EVロス採点なので、
-            「間違えた」ではなく「いくら損した」で返ってきます
+            読めるようになったら、自分で選んでみます。EVロス採点なので、「間違えた」ではなく「いくら損した」で返ってきます
           </li>
           <li>
             <strong className="text-foreground">実戦で迷ったスポットを自分で組む。</strong>
-            ここまで来てはじめて、①〜⑤のカスタムスポットが役に立ちます。
-            覚えているうちに、そのボードとレンジをそのまま入力して計算します
+            ここまで来てはじめて、①〜⑤のカスタムスポットが役に立ちます。覚えているうちに、そのボードとレンジをそのまま入力して計算します
           </li>
         </ol>
         <p className="mt-4 text-sm text-muted-foreground">
           <strong className="text-foreground">暗記しようとしないことが、いちばんの近道です。</strong>
-          169ハンド×ボードの組み合わせは覚えきれる量ではありません。
-          覚えるのは頻度そのものではなく、「このボードはどちらのレンジに味方するか」という
-          読み方の方です。それが身につくと、見たことのないボードでも自分で判断できるようになります。
+          169ハンド×ボードの組み合わせは覚えきれる量ではありません。覚えるのは頻度そのものではなく、「このボードはどちらのレンジに味方するか」という読み方の方です。それが身につくと、見たことのないボードでも自分で判断できるようになります。
         </p>
       </section>
 
@@ -637,10 +599,7 @@ export default function SolverClientJa() {
           すぐ使える計算済みの学習スポット{SPOT_TOTAL}種
         </h2>
         <p className="mt-2 text-sm text-muted-foreground">
-          下のスポットはすべて計算済みなので、開いた瞬間に戦略が表示されます — 待ち時間も設定も不要です。
-          レンジは100bbオンライン標準の近似値なので、ひとつ読み込んでレンジを変え、
-          計算し直して、どこが変わったかを見てください。
-          ボードテクスチャが戦略を書き換える感覚をつかむのに、これがいちばん速い方法です。
+          下のスポットはすべて計算済みなので、開いた瞬間に戦略が表示されます — 待ち時間も設定も不要です。レンジは100bbオンライン標準の近似値なので、ひとつ読み込んでレンジを変え、計算し直して、どこが変わったかを見てください。ボードテクスチャが戦略を書き換える感覚をつかむのに、これがいちばん速い方法です。
         </p>
         {SPOT_GROUPS.map((g) => (
           <div key={g.label} className="mt-5">
@@ -684,11 +643,8 @@ export default function SolverClientJa() {
         <p className="mt-2 text-sm text-muted-foreground">
           どれもソルバーと呼ばれますが、違うのは
           <strong className="text-foreground">計算がどこで・いつ行われるか</strong>です。
-          GTO Wizardのようなソリューションライブラリは、あらかじめ計算された解を閲覧する方式で、
-          表示が速くプリフロップも含みます。PioSOLVERのようなデスクトップソルバーはWindowsに
-          インストールして手元で計算します。このツールは
-          <strong className="text-foreground">ブラウザの中でその場で計算する</strong>ので、
-          レンジもツリーも自由に書き換えられ、インストールするものが何もありません。
+          GTO Wizardのようなソリューションライブラリは、あらかじめ計算された解を閲覧する方式で、表示が速くプリフロップも含みます。PioSOLVERのようなデスクトップソルバーはWindowsにインストールして手元で計算します。このツールは
+          <strong className="text-foreground">ブラウザの中でその場で計算する</strong>ので、レンジもツリーも自由に書き換えられ、インストールするものが何もありません。
         </p>
         <Table
           head={["", "HoldemMasterのGTOツール", "ソリューションライブラリ", "インストール型デスクトップソルバー"]}
@@ -708,8 +664,7 @@ export default function SolverClientJa() {
           料金について、ひとつだけはっきりしていることがあります。GTO Wizardは公式の日本語ページで
           <strong className="text-foreground">プリフロップのソリューションは誰でも無料で使える</strong>
           と案内しています。このツールが無料で提供しているのは、その反対側の
-          <strong className="text-foreground">ポストフロップ</strong>です。
-          どちらが上という話ではなく、無料で触れる範囲が違うということです。
+          <strong className="text-foreground">ポストフロップ</strong>です。どちらが上という話ではなく、無料で触れる範囲が違うということです。
         </p>
         {/*
           🪶 일본어 시장의 «쪼개짐»은 SERP top-30 전수(2026-08-21)에서 관찰된 것이다 —
@@ -718,11 +673,7 @@ export default function SolverClientJa() {
         */}
         <p className="mt-3 text-sm text-muted-foreground">
           日本語で使えるGTOツールを探すと、
-          <strong className="text-foreground">プリフロップのレンジ表を見せるものと、ポストフロップを
-          計算するものが別々のサービスに分かれている</strong>ことに気づくはずです。
-          しかもポストフロップまで行くものは、ブラウザではなくダウンロードを求められるものがほとんどです。
-          「BTNがオープン → BBがコール → フロップ」という一本の流れを、
-          日本語のまま、インストールもせずに最後まで追える場所が意外とありません。
+          <strong className="text-foreground">プリフロップのレンジ表を見せるものと、ポストフロップを計算するものが別々のサービスに分かれている</strong>ことに気づくはずです。しかもポストフロップまで行くものは、ブラウザではなくダウンロードを求められるものがほとんどです。「BTNがオープン → BBがコール → フロップ」という一本の流れを、日本語のまま、インストールもせずに最後まで追える場所が意外とありません。
         </p>
         {/*
           🔴 이 문단의 근거는 wasm-postflop.pages.dev의 **자기 고지 축어**다
@@ -730,11 +681,7 @@ export default function SolverClientJa() {
              추측이 아니라 원본이 스스로 적어 둔 문장이다.
         */}
         <p className="mt-3 text-sm text-muted-foreground">
-          <strong className="text-foreground">WASM Postflop</strong>を探してここに来た方に、
-          もうひとつ。元のオープンソースプロジェクトは、自身のサイトで今後は更新しないと告知しており、
-          リポジトリも開発停止と記されています。このソルバーはそのエンジンを引き継いで
-          メンテナンスしているフォークです — 同じAGPL-3.0ライセンス、ソースコードも同じく公開で、
-          その上にインターフェース・学習スポット・トレーナーを載せています。
+          <strong className="text-foreground">WASM Postflop</strong>を探してここに来た方に、もうひとつ。元のオープンソースプロジェクトは、自身のサイトで今後は更新しないと告知しており、リポジトリも開発停止と記されています。このソルバーはそのエンジンを引き継いでメンテナンスしているフォークです — 同じAGPL-3.0ライセンス、ソースコードも同じく公開で、その上にインターフェース・学習スポット・トレーナーを載せています。
         </p>
       </section>
 
@@ -784,10 +731,7 @@ export default function SolverClientJa() {
             <p className="font-semibold">① 相手がGTOで打っていないなら、最適ではないのでは?</p>
             <p className="mt-1 text-sm text-muted-foreground">
               その通りです。GTOは最も勝てる戦略ではなく、
-              <strong className="text-foreground">相手が誰であっても大きく崩されない基準線</strong>です。
-              ただ、相手を搾取するには「相手がどこからどれだけ外れているか」を測る必要があり、
-              外れていない基準がなければその差は測れません。降りすぎなのか降りなさすぎなのかを
-              判定する物差しがGTOで、搾取はその物差しの上ではじめて成立します。
+              <strong className="text-foreground">相手が誰であっても大きく崩されない基準線</strong>です。ただ、相手を搾取するには「相手がどこからどれだけ外れているか」を測る必要があり、外れていない基準がなければその差は測れません。降りすぎなのか降りなさすぎなのかを判定する物差しがGTOで、搾取はその物差しの上ではじめて成立します。
               <strong className="text-foreground">GTOと搾取は対立しません — 順番の関係です。</strong>
             </p>
           </div>
@@ -795,21 +739,21 @@ export default function SolverClientJa() {
           <div>
             <p className="font-semibold">② 頻度を覚えきれないから、実戦では使えないのでは?</p>
             <p className="mt-1 text-sm text-muted-foreground">
-              覚えなくていいので問題ありません。169ハンド×ボードの組み合わせは、
-              そもそも人間が記憶できる量ではありません。身につけるのは頻度そのものではなく、
+              {/* 🔄 M-067 축어 재동기(2026-08-26) — 이 산문의 «사라진다»형 문장은 학습 스팟 note와
+                  **같은 앱 축어**였다. 앱 `190d293`이 완화형(「減り」)으로 정정했으므로 여기도 함께 바꾼다 — note만 고치면
+                  같은 페이지 안에서 두 문장이 갈린다(검수장 M-067이 이 자리를 따로 짚은 이유).
+                  🔴 텍스트 런은 **한 줄**로 둔다 — JSX가 텍스트↔텍스트 개행을 공백 1개로 치환해
+                  일본어 문장 한가운데 ASCII 공백이 렌더된다(zh-hant 회차가 빌드 산출물로 실증한 그 결함). */}
+              {"覚えなくていいので問題ありません。169ハンド×ボードの組み合わせは、そもそも人間が記憶できる量ではありません。身につけるのは頻度そのものではなく、"}
               <strong className="text-foreground">「このボードはどちらのレンジに味方するか」という読み方</strong>
-              です。上の学習スポットでミドルのコネクトボード（9♥8♥7♣）を開くと、BBが自分から
-              23.7%も先に仕掛けます。モノトーンボード（Q♠9♠2♠）では大きなベットが消えて、
-              完成したフラッシュでさえ頻繁にチェックします。この2つを自分の目で見るだけで、見たことのないボードでも打ち方が変わります。
+              {"です。上の学習スポットでミドルのコネクトボード（9♥8♥7♣）を開くと、BBが自分から23.7%も先に仕掛けます。モノトーンボード（Q♠9♠2♠）では大きなベットが減り、完成したフラッシュでさえ頻繁にチェックします。この2つを自分の目で見るだけで、見たことのないボードでも打ち方が変わります。"}
             </p>
           </div>
 
           <div>
             <p className="font-semibold">③ 相手のレベルが高くないレートでは、GTO以前の問題では?</p>
             <p className="mt-1 text-sm text-muted-foreground">
-              相手が大きく外れているテーブルほど、むしろ基準が要ります。
-              どれだけ外れているか分からなければ、どれだけ調整すべきかも決まらないからです。
-              「常にCベットする」が有効に見えるテーブルでも、
+              相手が大きく外れているテーブルほど、むしろ基準が要ります。どれだけ外れているか分からなければ、どれだけ調整すべきかも決まらないからです。「常にCベットする」が有効に見えるテーブルでも、
               <strong className="text-foreground">それがどのボードで、どれだけ損をしている打ち方なのか</strong>
               は基準を見ないと分かりません。上の9♥8♥7♣でBBが23.7%も先に仕掛けてくるのが、その答えの一部です。
             </p>
@@ -819,22 +763,15 @@ export default function SolverClientJa() {
             <p className="font-semibold">④ 結局、入力した条件の下での最適解にすぎないのでは?</p>
             <p className="mt-1 text-sm text-muted-foreground">
               その通りで、だからこそ
-              <strong className="text-foreground">条件を自分で入れられることが重要になります</strong>。
-              レーキ、実効スタック、実際に使っているベットサイズ——あなたのゲームの条件を入れれば、
-              その条件の下での答えが返ってきます。誰かが決めた条件で計算済みの解を眺めるのとは、
-              ここが決定的に違います。この批判は、実はソルバーを否定する理由ではなく、
+              <strong className="text-foreground">条件を自分で入れられることが重要になります</strong>。レーキ、実効スタック、実際に使っているベットサイズ——あなたのゲームの条件を入れれば、その条件の下での答えが返ってきます。誰かが決めた条件で計算済みの解を眺めるのとは、ここが決定的に違います。この批判は、実はソルバーを否定する理由ではなく、
               <strong className="text-foreground">自分で条件を書き換えられるソルバーを使う理由</strong>です。
             </p>
           </div>
         </div>
 
         <p className="mt-5 text-sm text-muted-foreground">
-          GTOトレーナーがEVロスで採点するのも、同じ考え方からです。
-          正解・不正解ではなく「その選択がいくら手放したか」を返すので、
-          意図的にGTOから外す判断をしたときも、そのコストが分かります。
-          <strong className="text-foreground">外していいかどうかではなく、外すのにいくらかかるかを
-          知っている状態</strong>——それが基準を持つということで、
-          その基準は、このページから登録なしで開けます。
+          GTOトレーナーがEVロスで採点するのも、同じ考え方からです。正解・不正解ではなく「その選択がいくら手放したか」を返すので、意図的にGTOから外す判断をしたときも、そのコストが分かります。
+          <strong className="text-foreground">外していいかどうかではなく、外すのにいくらかかるかを知っている状態</strong>——それが基準を持つということで、その基準は、このページから登録なしで開けます。
         </p>
         <div className="mt-5 text-center">
           <Cta label="基準を画面で確かめる →" variant="outline" />
@@ -849,9 +786,7 @@ export default function SolverClientJa() {
             <Link href="/ja/blog/holdem-starting-hands-chart" className="font-semibold text-primary hover:underline">
               スターティングハンド表
             </Link>{" "}
-            — このツールはポストフロップ専用です。各ポジションで<strong>何を開くか</strong>は
-            この記事にあります。①と②に貼り付けるレンジはそこから取ったものではなく、
-            学習スポットが使っているレンジそのものです
+            — このツールはポストフロップ専用です。各ポジションで<strong>何を開くか</strong>はこの記事にあります。①と②に貼り付けるレンジはそこから取ったものではなく、学習スポットが使っているレンジそのものです
           </li>
           <li>
             <Link href="/ja/blog/holdem-pot-odds" className="font-semibold text-primary hover:underline">
@@ -908,13 +843,11 @@ export default function SolverClientJa() {
         <p className="mt-3 text-xs text-muted-foreground">
           ホーム画面に追加すると、学習スポットとトレーナーが端末に保存され、
           <strong className="text-foreground">インターネットなしでも練習できます</strong> —
-          Chrome・Edgeはアドレスバーのインストールアイコンから、iPhoneは共有メニューの
-          「ホーム画面に追加」から行えます。
+          Chrome・Edgeはアドレスバーのインストールアイコンから、iPhoneは共有メニューの「ホーム画面に追加」から行えます。
         </p>
       </section>
       <p className="mt-8 text-xs text-muted-foreground">
-        本アプリは Wataru Inariba 氏による WASM Postflop（AGPL-3.0）をベースに、HoldemMaster が
-        ローカライズ・改良したバージョンです。修正した全ソースコードは同じライセンスで公開しています。
+        本アプリは Wataru Inariba 氏による WASM Postflop（AGPL-3.0）をベースに、HoldemMaster がローカライズ・改良したバージョンです。修正した全ソースコードは同じライセンスで公開しています。
       </p>
     </div>
   );

@@ -239,7 +239,12 @@ const SPOT_GROUPS = [
       //    초판은 앱 문구를 따라 `favorece al que paga` 로 썼다 — 검수장이 ja에서 잡았고 **언어 불변**이라 es에도 있었다.
       //    ⚠ 「우위가 넘어갔다」가 아니라 **「리드가 처음으로 전략의 한 축이 된다」**가 정확한 서술이다.
       { board: "9♥8♥7♣", name: "Conectado medio, two-tone", note: "El único board de bote simple donde BB lidera de verdad: apuesta primero el 23.7% (la ventaja de rango sigue siendo de BTN — equity 48.5% contra 51.5%)" },
-      { board: "Q♠9♠2♠", name: "Board monotone", note: "Las apuestas grandes desaparecen — fíjate con qué frecuencia incluso un color hecho se limita a pasar" },
+      // 🔄 M-067 축어 재동기(2026-08-26) — 앱이 `190d293`에서 ⑤ lesson을 **완화형**으로 정정했다
+      //    (구형 = «사라진다»형 → 신형 = «ceden el paso» 형). 🔴 **구형 문자열은 주석에도 적지 마라** —
+      //    검수장 회귀 앵커가 그 출현 수를 세고 «0 = 정정 반영»으로 읽는다. 화면값에 큰 벳이 3.2% 남아
+      //    «사라진다»가 과장이었다(솔버 S-003 ③ · 검수장 S-007 라이브 md5 검증).
+      //    이 note는 «앱 축어» 선언 지위라 앱이 바뀌면 같이 바뀐다.
+      { board: "Q♠9♠2♠", name: "Board monotone", note: "Las apuestas grandes ceden el paso a apuestas pequeñas y checks — fíjate con qué frecuencia incluso un color hecho se limita a pasar" },
       { board: "6♣6♦3♥", name: "Board pareado", note: "Nadie conecta con este board, así que sube la proporción de faroles — ni siquiera BB apuesta primero (solo el 3%)" },
       // 🔴 M-045 RP-19 정정(2026-08-24) — 「BB가 체크레이즈를 자주 한다」(구 문구)는 화면에 없는 값이다.
       //    KO ⑦ 239줄: 「BB의 체크레이즈 빈도가 그 화면에는 없습니다」. §4-B ⑦ = 체크 96.8 · 벳 3.2뿐.
