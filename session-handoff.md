@@ -43,7 +43,7 @@ ept Gold Pass 4요소(€1.100·€690), NSW 귀속, 아젠다 12/36. EN·pt는 
 
 | 세션 | 트랙 | 대상 | 비고 |
 |---|---|---|---|
-| 1 | A | ✅ **완료 (2026-08-26)** — es 15편 + de 16편 · 렌즈 4종(Opus) 33건 판정·반영 · 게이트 🔴 0 ·빌드 ✓ | 경위 = WORKLOG 「2026-08-26 (12)」. PDF 앵커·adcffae4 수치분(A5s 30%·suited 2pt·룰 링크)도 es·de 몫 흡수 완료 |
+| 1 | A | ✅ **완료 (2026-08-26 · `bbca2acc`)** — es 15편 + de 16편 · 렌즈 4종(Opus) 33건 판정·반영 · 게이트 🔴 0 · 빌드 ✓ | 경위 = WORKLOG 「2026-08-26 (12)」. PDF 앵커·adcffae4 수치분(A5s 30%·suited 2pt·룰 링크)도 es·de 몫 흡수 완료 |
 | 2 | A | zh + zh-hant 드리프트 소급 | 수정 내용 거의 동일이라 병행. wpt Perpetual은 zh-hant만 미보유 |
 | 3 | A | ja 드리프트 소급 (단독) | 몫이 가장 큼. 🔴 손댄 자리를 커밋 diff로 WORKLOG에 명시 — 이후 ja 43편 경화가 이 경계를 본다 |
 | 4 | B | id rules 6편 | beginners·game-order·betting-actions·blind-meaning·all-in·showdown (pt 8ee6b047 구획) |
