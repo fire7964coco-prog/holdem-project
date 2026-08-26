@@ -1,3 +1,47 @@
+## 2026-08-26 (4) — pt 경화 회차 4: strategy 클러스터 8편 · range 축 금맥 (커밋 adcffae4 · Fable+Opus 렌즈)
+
+**대상**: strategy · positions · position-play · starting-hands-chart · limping · 3bet ·
+continuation-bet · when-to-fold. 🆕 **렌즈 분담 전환**(사장님 지시 — 주간 한도 절약): 렌즈 5종
+전부 `model: "opus"` 지정, 본체 판정만 Fable. 성과 저하 없음 — 오히려 이번 회차 최다 검출.
+
+- **시드 9 «range 축» 편입**: shc = 레인지 표 본진(range de maos/tabela de range/por posicao/
+  pdf 태그 + /pt/solver Tabelas pré-flop CTA — 🔴 **13×13 그리드 주장은 라이브 실측 후 서술**
+  (851셀·UTG~BB 확인). 두 렌즈가 «미검증 약속»으로 지적한 것을 실측으로 잠금) · strategy =
+  개념(신규 H2 «O que é range» + linear/polarizado/capado/vantagem 4용어 표 + GTO FAQ)
+- **cb 드리프트 판정 종결**: EN 08-19·08-20 변경 = 전부 GTO 시리즈(ko·en 전용) 역링크 —
+  «전파 제외» 명시 확인. ⑨ 문단은 **EN updated가 안 올라 스테일 게이트 밖**임을 발견 →
+  locale-intentional-diffs에 별도 등재. masterUpdated=08-19 + 근거 주석
+- 🔴 **수학 렌즈(Opus)가 커밋 근거로 검출**: EN 07-19 하모나이징(`3db72382`)이 pt에 미반영 —
+  pp UTG 코어 88+→TT+ · strategy 상시 레이즈 JJ→TT 소급. 🟢 역방향 1건: **A5s vs QQ+/AK =
+  30.0%**(MC 40만·3방식 수렴)로 pt가 맞고 **EN 28%가 오답** → EN 교정. «pt를 EN에 맞추면
+  개악»의 실증 — 대조는 방향 없이
+- 🔴 **SEO 렌즈가 자산 검출**: ① PDF 실물이 본문과 다른 수치(12/26/42 vs 13/27/43) —
+  print HTML 수정+재생성. `check-rangechart`는 본문↔컴포넌트만 봐서 **자산은 사각지대** ②
+  PDF 앵커 «9-max e 6-max lado a lado»가 거짓(실물엔 6-max 한 줄 규칙) — EN 발원 8로케일,
+  EN+pt 정정(잔여 6로케일 미결) ③ rangechart 디렉티브는 4좌석 막대인데 본문이 «13×13 grade»
+  약속 — 약속을 실물이 있는 솔버 CTA로 이동
+- **딜러 렌즈(Opus)**: 트레이너 CTA가 **앱에 없는 프리플랍 드릴을 약속**(앱 FAQ «pré-flop?
+  Não» 축어 대조) → pós-flop 명시 교정 · SB 컴플리트 두 글 정면 모순 조정(limping 완화+
+  국면 명시) · EP 오픈림프 «imprimir dinheiro» 완화(EN 동조) · BB 27%에 실현 단서 ·
+  MDF 33%↔«55% 균형» 화해절(본문+FAQ) · cb에 «상대가 안 폴드하면» 익스플로잇 불릿 ·
+  shc 폴드 목록 77,88→66 이하(:119 «77–99 포함»과 자기모순이던 자리)
+- **네이티브 QA(Opus) — 이번 회차 최다**: 문법 파손 11 전건(cash game 남성 · «um concreto» ·
+  «o mucke» · causativa 파손 · open-raiseia 등) + 칼크 30여 건(mão-cheia=풀하우스 충돌!·
+  espinha·empate-zero·four-flush류) + 클러스터 일관성(blinds 남성 6곳 · pré-flop 표기 ·
+  «regra do 2 e 4» 링크 본가 outs로 EN 2편 동조 · seco(dry) 병기 · set ou melhor 3곳 ·
+  positions 표 헤더 Assento→Posição[자기 논증 정합]) · wtf div 마크업 버그(문단이 골드 박스
+  안) · 기각 기록: «dar raise» 통일(BR 실사용 병존 — 미결 후보) · X-alto 표기(회차 2 정본)
+- ⚠ **작업 사고 1건(자기 검출·복구)**: PS 해시테이블이 단일 원소 배열을 평탄화해 배치 치환이
+  **문자 단위 Replace('t','a')·Replace('e',' ')**로 실행 — strategy·when-to-fold 전문 오염.
+  즉시 git checkout 복원 후 전량 재적용, 22개 체크스트링 검증으로 잠금. **교훈: PS 해시테이블
+  값에 단일 pair를 넣지 마라(@(,@(...)) 또는 파일별 개별 실행)**
+- 보류(사장님 대기 인접): shc :119 «AQo/AJo conforme evolui» — EN 07-19가 AJo를 삭제했고
+  6로케일이 낡은 판. UTG 13% 구성 논쟁(판단 대기 #1)과 같은 갈래라 임의 소급 안 함
+- 게이트 pt 42/42·en 56/56 🔴 0 · 빌드 653p · 배포. 다음 = **회차 5: glossary 6편**(termos
+  약점층 · 드리프트 glossary)
+
+---
+
 ## 2026-08-26 (3) — pt 경화 회차 3: odds 클러스터 7편 (커밋 dc614d75 · Fable)
 
 **대상**: holdem-probability · outs · pot-odds · implied-odds · drawing-odds · equity ·
