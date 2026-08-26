@@ -10,10 +10,11 @@
 
 ---
 
-## ▶▶▶ 지금 할 일 — **갈래 B: pt 경화 회차 2 (hand-rankings 6편) · 모델 = Fable**
+## ▶▶▶ 지금 할 일 — **갈래 B: pt 경화 회차 3 (odds 7편) · 모델 = Fable(판정)**
 
-사장님 지시(2026-08-26): *「새 세션에서 fable5로 작업하자」*. 상세는 아래 «갈래 B 상세».
-**갈래 A(비한국어 메타 누수)는 08-25~26에 완결됐다** — 경위 = WORKLOG 「2026-08-25 (7)」·「2026-08-26」.
+**회차 2(hand-rankings 6편)는 2026-08-26 완결** — 커밋 `a4588d9e` · 경위 = WORKLOG 「2026-08-26 (2)」.
+선행 실측 2건도 종결(뱅크 §3에 근거 기록): `sequencia poker`=족보 순서 의도 → hand-rankings 소유 ·
+`maos do/de` SERP 동일 → do 형태 한 글 편입 완료. **갈래 A는 08-25~26 완결**(WORKLOG 「2026-08-25 (7)」·「2026-08-26」).
 
 > 🪶 솔버 랜딩은 **9개**(앱 9언어와 1:1). `/fr/solver` 신설 완료(2026-08-25) ·
 > 뱅크 = `docs/keyword-bank/fr-gto-solver.md` · 절차 정본 = `docs/solver-landing-playbook.md`
@@ -28,7 +29,7 @@
 | 갈래 | 작업 | 모델 |
 |---|---|---|
 | ~~**A**~~ | ~~비한국어 «메타 4종 + 스킵링크»~~ **✅ 완결** — 실측 **541**페이지(537 아님) · 커밋 `551f1325`·`ac5ae041`·`d389887c`·`f12ae9e2`·`ac5decf2` + 후속 `0aec8bf9`(WebSite JSON-LD)·`5764a0b4`(피드 화살표 aria-label) · 게이트 5종 → **15종**(셀프테스트 20/20) · 경위 = WORKLOG 「2026-08-25 (7)」·「2026-08-26」. ⚠ **미결 2건이 아래 표에 남아 있다**(`사이트 메뉴` 라벨 · 게이트가 프로덕션에서 안 돎) | — |
-| **B** | **pt 경화 회차 2 (hand-rankings 6편)** — 아래 상세 | **Fable** (판정) |
+| **B** | **pt 경화 — ✅회차 1(rules 6) `8ee6b047` · ✅회차 2(hand-rankings 6) `a4588d9e` · 다음 = 회차 3(odds 7)** — 아래 상세 | **Fable** (판정) |
 
 🔴 **두 갈래 모두 랜딩(`app/*/solver`)을 건드리지 마라** — 검수장과 왕복이 진행 중이고
 M-064에서 게이트 9편 118주장이 «OK 100% · 미해결 0»으로 확정됐다. 지금 손대면 기준선이 어긋난다.
@@ -36,25 +37,27 @@ M-064에서 게이트 9편 118주장이 «OK 100% · 미해결 0»으로 확정�
 
 ---
 
-**▶ 갈래 B 상세 = 🔴 pt 경화 «회차 2: hand-rankings 클러스터 6편» (회차 1 완료 2026-08-25 · 커밋 8ee6b047)**
+**▶ 갈래 B 상세 = 🔴 pt 경화 «회차 3: odds 클러스터 7편» (회차 2 완료 2026-08-26 · 커밋 a4588d9e)**
 
-**회차 1(rules 6편)은 끝났다** — 경위 = WORKLOG 「2026-08-25 (3)」. 회차 2 진행법:
-1. **뱅크 = `docs/keyword-bank/pt-hardening-2026-08.md` §0·§시드 1·2 통독 선행** — §4 전략 방침
-   (사장님 축어: 정면 금지 · 롱테일 진입) 필독.
-2. 🔴 **선행 실측 2건**(뱅크 §3): ① `sequencia poker` 27,100 SERP 의도(스트레이트 vs 순서 →
-   flush-vs-straight·hand-rankings 어느 몫인지) ② `maos do poker` 8,100 vs `maos de poker` 3,600
-   SERP 동일성 → 태그·H2 표기 결정(**do 형태 편입이 이 회차 핵심**).
-3. 드리프트 잔여: kicker · (glossary는 회차 5) — hand-rankings 6편 중 드리프트는 회차 0 diff 참조.
-   재조준 재료 = 시드 1·2 winnable(piores mãos DA5·FS · melhor a pior FS · suited · marginais ·
-   tabela/ordem 계열) + `desempate poker` 30→tiebreak.
-4. 회차 순서(확정): ①rules ✅ → ②hand-rankings 6 → ③odds 7 → ④strategy 8(range 축 금맥 — 시드 9) →
+**회차 1·2는 끝났다** — 경위 = WORKLOG 「2026-08-25 (3)」·「2026-08-26 (2)」. 회차 3 진행법:
+1. **뱅크 = `docs/keyword-bank/pt-hardening-2026-08.md` §0·§4·시드 7 통독 선행** — §4 전략 방침
+   (사장님 축어: 정면 금지 · 롱테일 진입) 필독. 시드 7 = 개별 족보 확률 롱테일(`probabilidade aa`
+   5/2·DA20 · `calculadora (de) probabilidade poker` 40+30+10·최저 DA6 → pot-odds 글+솔버 랜딩
+   Equity 탭이 받는다 · `tabela de probabilidade` 20).
+2. 대상 7편은 회차 0 diff의 구획 확인 후 확정(후보: probability·outs·pot-odds·implied-odds·
+   drawing-odds·equity + 1 — es 확률6과 달리 pt는 7이라 구획을 먼저 검증하라).
+3. 🟠 이 클러스터에 **KO 도구 링크 `/calculator` 잔존**이 걸려 있다(아래 미결 표 — bubble·icm·
+   short-stack 등과 함께 odds 몫은 이 회차에서 `/pt/solver`(Equity 탭)로 전환 검토).
+4. 회차 순서(확정): ①rules ✅ → ②hand-rankings ✅ → ③odds 7 → ④strategy 8(range 축 금맥 — 시드 9) →
    ⑤glossary 6(termos 약점층) → ⑥tournament 9(§14 EN verbatim + apt-incheon 자산화 확인 —
-   나머지 드리프트 continuation-bet·tournament-vs-cash-game도 해당 회차에서).
+   드리프트 잔여 continuation-bet·tournament-vs-cash-game·apt-incheon(08-17<EN 08-18)도 해당 회차).
 5. 절차 = `REVIEW-PROTOCOL.md` 3층 게이트 · posting.mdc 필독 · 4렌즈+브라질 네이티브 QA+2차 교열 ·
    EN 소급분은 발견 즉시 같은 커밋으로. 게이트는 `--locale=pt`(slug 단위 없음 — 코퍼스 전체가 돈다).
-6. 🆕 **회차 1이 정한 pt 클러스터 표기**(회차 2~6도 따를 것): 본문 **poker**(pôquer 금지) ·
-   **street**(rua 금지) · 카드 나열 앞은 **board**(mesa 금지) · top pair. ⚠ 나머지 pt 37편은 혼재 —
-   각 회차에서 그 클러스터만 통일한다.
+6. **pt 클러스터 표기 정본**(회차 1~2 확정 · 회차 3~6도 따를 것): 본문 **poker**(pôquer 금지 —
+   🔴 replace_all이 **대문자 Pôquer를 놓친다**, (?i)로 재확인) · **street**(rua 금지) · 카드 나열
+   앞은 **board**(«jogar a mesa»·«mesa pareada» 등 관용구는 mesa 유지) · top pair ·
+   🆕 **wheel**(«a roda» 금지) · 🆕 full house 표현은 **«X full de Y»**(«cheios de» 금지 —
+   bad-beat 선례). ⚠ 나머지 pt 31편은 혼재 — 각 회차에서 그 클러스터만 통일한다.
 
 **그다음 후보(지시 대기)**:
 - fr 전략 코퍼스 확장(랜딩 내부링크 보강 겸 — `docs/local-voice/fr-fr.md`·fr 뱅크 준비됨)
@@ -83,6 +86,11 @@ M-064에서 게이트 9편 118주장이 «OK 100% · 미해결 0»으로 확정�
 | 무엇 | 메모 |
 |---|---|
 | 🟠 pt 도구 링크 `/calculator`(KO 도구) 잔존 9곳 — bubble 2·icm 2·short-stack 2·starting-hands-chart의 `/hand-chart` 1 등 5파일 | rules 필라는 8ee6b047에서 `/pt/solver`로 교체 완료. 나머지는 **해당 클러스터 회차**(odds·tournament·strategy)에서 /pt/solver(Equity·Tabelas pré-flop 탭)로 전환 검토 |
+| 🆕 🟠 pt 코퍼스 태그 중복 8건(전부 회차 2 범위 밖) — `regra do 2 e 4`(outs·pot-odds·probability 3편)·`pot odds`(2)·`quando dar 3-bet`·`quando foldar no poker`·`set mining`·`fold equity`·`quem age primeiro no poker`·`Paradise City Casino pôquer` | 회차 2 SEO 렌즈 검출(hand-rankings 6편 내부는 0건). **각 해당 회차에서 카니발 해소** — odds 3건은 회차 3 몫 |
+| 🆕 `id/holdem-hand-rankings`에 hero `image`·`imageAlt` 필드 부재 — es·de·ja·zh·pt는 있음(pt는 a4588d9e에서 복원) | imageAlt를 인도네시아어로 새로 써야 해서(판정) pt 회차에서 임의로 안 했다. id를 다음에 열 때 |
+| 🆕 🟠 `holdem-hand-rankings-board-puzzle.webp` 우하단 **생성AI ✦ 마크 잔존 + 워터마크(로고+URL) 부재** — 18언어 공용 자산 | 2026-07-26 워터마크 규율 위반 상태. 실사 생성분 일괄 점검·sharp 후합성 소급이 나은 별건(다른 히어로도 같은 상태일 수 있다). alt 오기(K-K-K-A-4→A-2)는 a4588d9e에서 7로케일 수정 완료 |
+| 🆕 pt 홀카드 지칭 3종 혼용 — split-pot «cartas fechadas» vs kicker «cartas de mão» vs reading «cartas na mão» | 네이티브 렌즈는 «cartas da mão» 통일 제안했으나 브리프(`translation-terms-pt.md`)에 hole cards 정본 항목이 없어 **판정 필요**(«cartas fechadas»도 BR에서 통용). 정하면 브리프에 등재 후 코퍼스 단위 통일 |
+| 🆕 TDA «Rule 19»(쇼다운 시 두 장 공개) 번호 원문 대조 — `reading-the-board`·`showdown-rules` 다로케일 인용 | 내용은 맞고 WSOP Rule 75는 1차 확인분. 레포 TDA 자산([[tda-rules-primary-source-path]])엔 12·16·18·68만 있어 **19라는 번호만 미대조** — TDA PDF 열 일 있을 때 함께 |
 | 🟠 규칙 PDF pt판 부재 — `public/downloads/`에 ko·ja·zh·de판만 있고 beginners는 «PDF (em inglês)» 링크 | `poker para iniciantes pdf`(약점 3/1·DA20) 수요 실재. pt판 제작은 사장님 판단(제작 시 beginners 링크 교체) |
 | 🆕 🟠 **`side-rail.tsx` `aria-label="사이트 메뉴"` — 비한국어 16페이지에서 한국어가 낭독된다** | 2026-08-26 전수 스캔의 **마지막 남은 1건**(나머지는 endonym·원어병기라 정본). 화면엔 안 보이고 스크린리더만 읽는 자리 — 스킵링크와 같은 유형. 🔴 **고치려면 «site menu»를 25개 언어로 새로 써야 한다** — `CHROME`에 쓸 기존 문자열이 없다(`menuOpen` 「Menü öffnen」은 버튼 동작 라벨이라 랜드마크 이름으로 틀리다). 새 문자열 25개는 «무엇을 쓸지 정해야 하는» 판정이라 Opus가 임의로 안 지었다. 사장님 판단(번역할지 / 영어 하나로 통일할지). **닫히면 `check:meta-lang`의 `aria-label·title` 규칙을 🟠 → 🔴로 승격하라**(규칙 옆 주석에 적어 뒀다) |
 | 🆕 🔴 **게이트가 프로덕션 배포에서 안 돈다** — `vercel.json` `buildCommand`에 `check-meta-lang`·`check-hreflang`이 **없다** | 2026-08-25 갈래 A 마감 중 드러났다. npm 훅(prebuild·postbuild)은 프로덕션에서 안 돈다([[vercel-buildcommand-skips-npm-hooks]])는 건 알려져 있었는데, 그 buildCommand에 **넣어 둔 게이트가 넷 중 둘뿐**이다(hsl·rangechart·meta-length·patch-html-lang·directives는 있음). 방금 10종으로 넓힌 meta-lang이 **로컬 `npm run build`에서만** 돈다. 넣는 건 5초짜리지만 **오탐 1건이 프로덕션 배포를 세운다** — 그래서 임의로 안 했다. 사장님 판단. 백로그 P3·P4의 `check:clusters` 건과 **같은 자리**라 한 번에 여는 게 낫다 |

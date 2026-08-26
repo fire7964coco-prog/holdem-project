@@ -1,3 +1,40 @@
+## 2026-08-26 (2) — pt 경화 회차 2: hand-rankings 클러스터 6편 (커밋 a4588d9e · Fable)
+
+**대상**: holdem-hand-rankings(필라) · flush-vs-straight · kicker · tiebreak-rules ·
+split-pot-rules · reading-the-board (= zh·es 회차와 같은 구획)
+
+- **선행 실측 2건**(Playwright · google gl=br·pws=0 — 뱅크 §3에 근거 기록):
+  ① `sequencia poker` 27,100 = **«족보 순서» 의도 지배**(partypoker가 제목에서 Mãos do Poker와
+  동의어로 씀) → hand-rankings 배정(태그+표 직후 자연문 — §4 정면 금지라 H1 무변).
+  flush-vs-straight엔 일부러 안 넣음(카니발 방지). ② `maos do/de poker` SERP **실질 동일**
+  (top 중 7개 도메인 공통·1위 동일) → 별도 글 불필요, **do 형태를 hand-rankings 한 글에 편입**
+- **재조준**: 신규 FAQ 5축(piores mãos DA5·FS / melhores iniciais / suited·marginais 67% vs 65% /
+  nomes em português / kicker EN 드리프트 4종) + 태그 카니발 해소(`kicker poker`→kicker 단독 ·
+  `empate no poker`→split-pot) + hand-rankings hero image 필드 복원(es·de·ja·zh는 있는데
+  pt·id만 없었다 — pt 복원, **id는 미결**) + EN parity 본문 이미지 2장
+- **표기 클러스터 통일**: poker(pôquer 0) · 카드 나열 앞 board(관용구 «jogar a mesa»·«mesa
+  pareada»는 mesa 유지 — 회차 1 판정 그대로) · 🆕 **wheel**(tiebreak만 «a roda»여서 형제 3편과
+  갈렸다 — 회차 3~6도 wheel)
+- 🔴 **§13 사실오류 2건 발견·다국어 소급**(둘 다 게이트 커버리지 밖 — «0건은 미검사» 실증):
+  ① pt 문제 2 «K♥ 10♥ 9♥ 8♥ 7♥ = 스트플» — **K-10 불연속, 그냥 K하이 플러시**(posting.mdc
+  §13 표본 사고와 동일 유형). 6♥ 정본 교정 + **ar·hi·ms·tr·vi 5개 로케일 잔존분 소급**
+  (13/13 로케일 6♥ 통일 실측). ② kicker 트립스 FAQ «K-K-K-A-2 vs K-K-K-Q-J» — 홀덤 구성
+  불가(둘째 킥커 2면 보드 KKK22=풀하우스 — de 렌즈가 잡았던 유형이 EN 마스터에 잔존) →
+  en·es·zh·zh-hant 4로케일을 board K♣K♥7♦5♣2♠ 기반 KKK-A-7 vs KKK-Q-7로 교정.
+  덤: board-puzzle 이미지 alt «K-K-K-A-4»가 실물(K-K-K-A-2)과 불일치 — 7로케일 일괄
+- **4렌즈+네이티브 QA+2차 교열**: 수학(전 표 재계산 — 오류 0 · flush vs flush 표 구성 불가
+  지적→보드 공유형 재구성) · 딜러(D유형 0 — split-pot 팁 EV 손검산 통과) · SEO(alt 불일치
+  검출·태그 카니발 0 확인) · 교열(성 일치 melhorá-lo · 대문자 Pôquer 잔존 3 · 5로케일 §13
+  잔존 검출 — **replace_all이 대문자를 놓친다**) · 네이티브 alta 9건 전건+média 선별 반영
+  (Áses→ases · cheios de→full de(bad-beat 선례) · roda→wheel · 칼크 다수). 기각: «cartas
+  fechadas» 통일(브리프 정본과 충돌 — 미결로) · pote paralelo 병기(브리프 정본 유지).
+  **2차 교열 자기 검출 1건**: 내가 쓴 «quase sempre do mesmo naipe»→**sempre**(보드 5장에
+  두 무늬 3+3 불가)
+- 게이트 `--locale=pt` 42/42 🔴0 · `--locale=en` 56/56 🔴0 · 2층 미판정 문단 전수 손검산 ·
+  빌드 653p · 푸시·배포. 다음 = **회차 3: odds 7편** (드리프트 잔여 없음 · 시드 7 확률 롱테일)
+
+---
+
 ## 2026-08-26 — 갈래 A 후속: 「다 한 거냐」를 실측으로 답하다 (WebSite JSON-LD + 피드 화살표)
 
 사장님 질문 *「그럼 오퍼스로 할수잇는건 다한거야?」* 에 **주장 대신 실측으로** 답하려고
