@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ein „Fish“ ist Poker-Slang für einen schwachen, verlierenden Spieler, an dem die stärkeren Spieler ('Sharks') ihr Geld verdienen. Fische spielen zu viele Hände, callen zu viel und können nicht folden – und der berühmte Spruch warnt: Wenn du den Fish an deinem Tisch nicht erkennst, bist du es. Es ist der wichtigste Read im ganzen Spiel: Finde den Fish, oder werde selbst einer.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-08-18",
-  masterUpdated: "2026-08-11",
+  updated: "2026-08-26",
+  masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "🐟",
@@ -19,7 +19,7 @@ export const POST: Post = {
   content: `
 Als mich das erste Mal jemand am Casinotisch leise einen Fish nannte, wusste ich nicht einmal, dass ich beleidigt worden war. Ich dachte, ich würde ganz ordentlich spielen – ich sah jede Menge Flops, callte, um sie „ehrlich zu halten“, jagte jeden Draw, weil ==man ja nie weiß==. Sechs Monate und eine Menge verlorener Buy-ins später verstand ich: Ich *war* der Fish. Alle am Tisch hatten es gewusst, bevor ich mich überhaupt hingesetzt hatte.
 
-Ein **Fish** ist Poker-Slang für einen schwachen, verlierenden Spieler – den, an dem die stärkeren Spieler still ihr Geld verdienen. Es ist das wichtigste Etikett im ganzen Spiel, denn jede profitable Session beginnt mit derselben Frage: *Wer ist hier der Fish?* Unten steht genau, was das Wort bedeutet, ==g:wie du einen Fish erkennst== schon im ersten Orbit, der ganze Zoo an Spielertyp-Slang (Shark, Whale, Nit, Donkey), die Wahrheit hinter dem berühmten „Spot the sucker“-Spruch – und ein ehrlicher Selbstcheck, damit der Fish niemals du bist.
+Ein **Fish** ist Poker-Slang für einen schwachen, verlierenden Spieler – den, an dem die stärkeren Spieler still ihr Geld verdienen. Es ist das wichtigste Etikett im ganzen Spiel, denn jede profitable Session beginnt mit derselben Frage: *Wer ist hier der Fish?* Unten steht genau, was das Wort bedeutet, ==g:wie du einen Fish erkennst== schon im ersten Orbit, der ganze Zoo an Spielertyp-Slang (Shark, Whale, Nit, Donkey), die Wahrheit hinter dem berühmten „Spot the sucker“-Spruch – und ein ehrlicher Selbstcheck, damit der Fish niemals du bist. Es ist das erste Wort, das die meisten aus dem breiteren [Pokerjargon](/de/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp") lernen.
 
 ---
 
@@ -148,7 +148,7 @@ Jetzt kommt der unangenehme Teil. Wenn du bis hierher gelesen und still gehofft 
 
 | | VPIP (gespielte Hände) | PFR (geraiste Hände) | Der Read |
 |:---|:---:|:---:|:---|
-| **Solider Spieler** | 15–22% | 12–18% | Tight, aggressiv, enge Lücke |
+| **Solider Spieler** | 15–22% | 12–18% (nie höher als sein VPIP) | Tight, aggressiv, enge Lücke |
 | **Fish** | 40–70% | unter 10% | Loose und passiv – spielt alles, führt nichts an |
 | **Nit** | unter 12% | unter 8% | Zu tight – vorhersehbar, kein Fish |
 

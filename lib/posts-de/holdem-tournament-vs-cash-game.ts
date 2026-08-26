@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Im Cash Game sind Chips echtes Geld und die Blinds bleiben fest. Im Turnier sind Chips Überlebens-Equity, die Blinds steigen und Auszahlungen hängen von deiner Platzierung ab.",
   category: "tournament",
   date: "2026-06-11",
-  updated: "2026-08-18",
+  updated: "2026-08-26",
   hideSummaryImageSlot: true,
   readTime: "16 Min.",
   emoji: "🏆",
@@ -33,7 +33,7 @@ Fast jeder neue Hold'em-Spieler stellt sich irgendwann dieselbe Frage:
 
 Auf den ersten Blick sieht es nach demselben Spiel aus. Du bekommst weiterhin zwei Hole Cards, fünf Gemeinschaftskarten und vier Setzrunden von Preflop bis River. Strategisch sind es aber fast zwei verschiedene Welten. Im Cash Game sind deine Chips Geld. Im Turnier sind deine Chips dein Turnierleben.
 
-Diese Anleitung erklärt ==Cash Game vs Turnier Poker== so, wie es Anfänger wirklich brauchen: was ein Cash Game ist und wie es funktioniert, Chipwert, Blind-Struktur, wie sich die Strategie ändert, welches Format schwerer ist, welches profitabler ist, Bankroll, ICM und mit welchem du starten solltest. Wenn Turniere selbst noch ein Rätsel sind, lies zuerst [wie Pokerturniere funktionieren – Buy-ins, Blind-Level und der Day-1-Ablauf](/de/blog/holdem-tournament); dieser Artikel vergleicht die beiden Formate, statt jenen Struktur-Guide zu wiederholen.
+Diese Anleitung erklärt ==Cash Game vs Turnier Poker== so, wie es Anfänger wirklich brauchen: was ein Cash Game ist und wie es funktioniert, Chipwert, Blind-Struktur, wie sich die Strategie ändert, welches Format schwerer ist, welches profitabler ist, Bankroll, ICM, wann du den Tisch verlässt und mit welchem du starten solltest. Wenn Turniere selbst noch ein Rätsel sind, lies zuerst [wie Pokerturniere funktionieren – Buy-ins, Blind-Level und der Day-1-Ablauf](/de/blog/holdem-tournament); dieser Artikel vergleicht die beiden Formate, statt jenen Struktur-Guide zu wiederholen.
 
 ### Die Antwort in 15 Sekunden
 
@@ -284,7 +284,9 @@ Wann *solltest* du also ein Cash Game verlassen? Die Regeln sagen „wann immer 
 - **Geh, wenn das Game nicht mehr gut ist.** Die schwächsten Spieler haben aufgehört, das Lineup ist enger geworden, oder die Sitze, die den Tisch profitabel machten, sind weg.
 - **Geh, wenn *du* nicht mehr gut bist.** Tilt, Müdigkeit und Ablenkung zerstören Winrates schneller als schlechte Karten. Wenn du dich beim Callen aus Frust ertappst, sammle deine Chips ein.
 - **Geh nicht nur, weil du eine Zahl erreicht hast.** Ob du ein Buy-in vorn oder hinten liegst, sagt nichts darüber aus, ob die nächste Stunde profitabel ist. In einem tollen Game als Gewinner aufzuhören und in einem miesen Verluste durchzuspielen sind beides Leaks.
-- **Direkt nach einem großen Pot zu gehen ist erlaubt.** Keine Regel zwingt dich, „Action zu geben“ – auch wenn eine kurze Abkühlungsrunde vom Umgang her runder ist als ein sofortiger Hit-and-Run.
+- **Direkt nach einem großen Pot zu gehen ist erlaubt.** Keine Regel zwingt dich, „Action zu geben“ – auch wenn es vom Umgang her runder ist, noch ein paar Hände zu spielen, bevor du einpackst, statt eines sofortigen Hit-and-Run.
+
+Zwei Hausregeln, die fast überall gelten: Du darfst keine Chips vom Tisch nehmen, solange du weiterspielst („Ratholing“), und wenn du gehst und kurz darauf ins selbe Game zurückkehrst, musst du meist mindestens mit dem Betrag wieder einsteigen, den du mitgenommen hast.
 
 | Situation | Besser geeignet |
 |------|------|
@@ -399,7 +401,7 @@ A. Eine gängige Regel sind 20-40 Buy-ins für Cash Games und 100+ Buy-ins für 
 
 **Q. Wie viele Chips brauche ich für ein Cash Game zu Hause?**
 
-A. Ein Standard-Set mit 300 Chips deckt bequem bis etwa 6 Spieler ab – bei acht Spielern sind es 300 ÷ 8 = keine 40 Chips pro Person (bei sieben immerhin noch rund 43), dann lohnt sich ein 500er-Set. Gib allen denselben Startstack über 3-4 Nennwerte, mit den meisten Chips in den kleinsten Werten, damit die Spieler leicht setzen und wechseln können. Die genaue Anzahl zählt weniger als die Einigung aller, was jede Farbe vor der ersten Hand in echtem Geld wert ist.
+A. Ein Standard-Set mit 300 Chips deckt bequem bis etwa 6 Spieler ab – bei acht Spielern wären es 300 ÷ 8 = keine 40 Chips pro Person (bei sieben immerhin noch rund 43), wenn du alles austeilen würdest, und in einem Cash Game solltest du das nicht: Setz das Buy-in als Min/Max-Spanne an, nutze 3-4 Nennwerte mit den meisten Chips in den kleinsten Werten und lass den Rest für Rebuys im Koffer. Genau deshalb bedient ein 500er-Set 7-8 Spieler besser. Die genaue Anzahl zählt weniger als die Einigung aller, was jede Farbe vor der ersten Hand in echtem Geld wert ist.
 
 **Q. Spielen Profis Cash Games oder Turniere?**
 

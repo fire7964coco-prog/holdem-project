@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "El Main Event del APT Incheon 2026 lo ganó Stephen Pang, de Hong Kong, que se llevó KRW 411,180,000 (~$293,700) tras un acuerdo ICM a tres y el trofeo del León de oro de 24K. El campo marcó un récord con 1,393 entradas y una bolsa de KRW 3,008,880,000. El subcampeón fue Shoumin Zhang (China, KRW 366,500,000 / ~$261,785) y el tercero Yifu He (EE. UU.). Los tres primeros también ganaron asientos para el Main Event del APT Championship 2026 en Taipéi (~$10,000 cada uno). Solo para extranjeros (los ciudadanos coreanos sin residencia en el extranjero no pueden entrar). Seúl está a ~1 hora — para la próxima parada, el viaje de póker y el viaje a Corea siguen siendo el mismo viaje.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-08-18",
-  masterUpdated: "2026-08-17",
+  updated: "2026-08-26",
+  masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🇰🇷",
@@ -376,11 +376,11 @@ Comparado con el EPT Barcelona (~€5,300 el Main) o el WPT Australia (~AUD $5,0
 
 **Q. ¿De verdad se puede ir andando desde el aeropuerto de Incheon al Paradise City Casino?**
 
-A. Está muy cerca. Paradise City opera una shuttle gratuito desde la Terminal 1 (puertas 3C y 14C) cada 30 minutos — el trayecto dura unos 10 minutos. La Terminal 2 tiene su propia shuttle cada 60 minutos desde la puerta 4A. El resort es un complejo integrado pegado al aeropuerto, pensado específicamente para las llegadas internacionales.
+A. Está muy cerca. Paradise City opera un shuttle gratuito desde la Terminal 1 (puertas 3C y 14C) cada 30 minutos — el trayecto dura unos 10 minutos. La Terminal 2 tiene su propio shuttle cada 60 minutos desde la puerta 4A. El resort es un complejo integrado pegado al aeropuerto, pensado específicamente para las llegadas internacionales.
 
 **Q. ¿Puedo jugar el Main Event del APT Incheon si nunca he jugado un torneo en vivo?**
 
-A. Sí. La entrada (~$1,703) es considerable, pero la estructura es amable para principiantes — stacks iniciales profundos y niveles largos. Si te manejas con los home games o el póker online, la transición al juego en vivo es asumible. El Mini Main Event (~$610, KRW 900K) y el Ultra Stack (~$477) son opciones de stakes más bajos para empezar.
+A. La edición de 2026 ya terminó — pero la respuesta vale para la próxima parada del APT: sí. La entrada (~$1,703) es considerable, pero la estructura es amable para principiantes — stacks iniciales profundos y niveles largos. Si te manejas con los home games o el póker online, la transición al juego en vivo es asumible. El Mini Main Event (~$610, KRW 900K) y el Ultra Stack (~$477) son opciones de stakes más bajos para empezar.
 
 **Q. ¿Cómo voy de Paradise City a Seúl?**
 
@@ -400,7 +400,7 @@ A. Ambos funcionan, pero ==g:se recomienda llegar 2–3 días antes==. Te recupe
 
 1. **El APT Incheon 2026** se jugó del ==**7 al 16 de agosto**== en el Paradise City Casino — a 10 min del Aeropuerto de Incheon en shuttle gratuito, $2.7M GTD.
 2. **Main Event** entrada: ==**~$1,703**== con ==g:$1M garantizado==. Alrededor de un tercio del Main del EPT Barcelona y la mitad del buy-in del Championship del WPT Australia.
-3. **La clasificación online ya terminó** — el Mega de $35 y OnLive cerraron el 2 de agosto, y la última vía (Step de $20 → Mega de $200) el 7 de agosto. Ahora solo se entra por el registro presencial.
+3. **La clasificación online quedó cerrada con el arranque del festival** — el Mega de $35 y OnLive cerraron el 2 de agosto, y la última vía (Step de $20 → Mega de $200) el 7 de agosto, el mismo día en que arrancaba la serie. En la recta final, el registro presencial era la única vía de entrada.
 4. **Seúl está a 60 min** y es uno de los mejores destinos de viaje de Asia — ==g:palacios, BBQ, vida nocturna y comida callejera imbatible.==
 5. **Con un pasaporte extranjero entras** — este torneo se construyó para los jugadores internacionales. Tu pasaporte es tu tarjeta de acceso.
 
@@ -410,7 +410,7 @@ A. Ambos funcionan, pero ==g:se recomienda llegar 2–3 días antes==. Te recupe
 
 ## Fuentes
 
-Todas las cifras se contrastaron con fuentes primarias. **Verificado: 28 de julio de 2026** — el prize pool de 2025 y la elegibilidad de los Country Exclusives se re-verificaron el **15 de agosto de 2026**.
+Todas las cifras se contrastaron con fuentes primarias. **Verificado: 17 de agosto de 2026.**
 
 - **Página oficial de la serie** — [APT — Incheon, South Korea 2026](https://www.theasianpokertour.com/series/apt-incheon-south-korea-2026) · fechas, buy-in y garantizado del Main Event #20, estructura de flights
 - **Preview oficial** — [APT Incheon 2026: The Preview](https://www.theasianpokertour.com/news/apt-incheon-2026-the-preview) · garantizado total, stack inicial de 40.000, **los nueve asientos APTC Taipéi y cómo se reparten**

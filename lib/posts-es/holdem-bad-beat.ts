@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un bad beat es cuando metes las fichas siendo favorito clarísimo —normalmente 80% o más— y pierdes porque tu rival liga una carta afortunada para 'cazarte' (suck out). A diferencia de un cooler, ibas por delante todo el rato; la baraja simplemente te traicionó al final. Duele, pero los bad beats son en realidad señal de que juegas en una partida rentable.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-08-11",
-  masterUpdated: "2026-08-11",
+  updated: "2026-08-26",
+  masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "💔",
@@ -19,7 +19,7 @@ export const POST: Post = {
   content: `
 El que todavía me escuece: tenía pareja de ases, metí todas las fichas contra un rival que pagó con pareja de cincos y vi caer uno de los dos cincos que quedaban en el river. Lo había hecho todo bien. Mi dinero entró siendo mejor que 4 a 1 favorito, y aun así perdí todo el stack ante ==una de las dos cartas del mazo que podían batirme==. Eso es un bad beat, y si juegas al póker el tiempo suficiente, te pasará miles de veces.
 
-Un **bad beat** (una mala derrota, un golpe brutal de mala suerte) es cuando vas all-in siendo favorito estadístico claro —normalmente 75% o más antes del river— y pierdes igual, porque tu rival caza una carta improbable para ==g:cazarte (suck out)==. La palabra clave es *favorito* — ibas ganando cuando entró el dinero, y solo una carta improbable dio la vuelta al resultado. Aquí tienes exactamente qué cuenta como bad beat, en qué se diferencia de un [cooler](/es/blog/holdem-cooler "thumb:/images/holdem-cooler-hero.webp"), cuánto paga un "bad beat jackpot" y la verdad contraintuitiva que todo jugador ganador acaba aprendiendo: los bad beats son *buenos* para ti.
+Un **bad beat** (una mala derrota, un golpe brutal de mala suerte) es cuando vas all-in siendo favorito estadístico claro —normalmente 80% o más antes del river— y pierdes igual, porque tu rival caza una carta improbable para ==g:cazarte (suck out)==. La palabra clave es *favorito* — ibas ganando cuando entró el dinero, y solo una carta improbable dio la vuelta al resultado. Aquí tienes exactamente qué cuenta como bad beat, en qué se diferencia de un [cooler](/es/blog/holdem-cooler "thumb:/images/holdem-cooler-hero.webp"), cuánto paga un "bad beat jackpot" y la verdad contraintuitiva que todo jugador ganador acaba aprendiendo: los bad beats son *buenos* para ti. Es una de las palabras que más se usan a la ligera en todo el [glosario de póker](/es/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp").
 
 ---
 
@@ -38,7 +38,7 @@ Bueno en secreto | Lo que significa para tu beneficio a largo plazo
 
 **Un bad beat es una mano que pierdes pese a ser favorito estadístico claro cuando entraron las fichas, porque tu rival ligó una carta improbable para adelantarte.** Lo jugaste bien — metiste el dinero "por delante", ganando en la matemática — y la baraja simplemente sacó el único desarrollo que te gana. La derrota no es culpa tuya; es la varianza haciendo de las suyas.
 
-El mecanismo siempre es un **suckout**: una carta en el turn o el river que convierte una mano perdedora en ganadora. Tus ases arrasaban su pareja de cincos hasta que apareció ese tercer cinco. Tu par top tenía su proyecto de color muerto hasta que cayó el último corazón. Ese momento — el favorito adelantado por un proyecto que no tenía por qué llegar — es el corazón mismo del término. Entenderlo es también el primer paso para no dejar que te reviente la sesión, la misma disciplina emocional que separa a un profesional de un [fish](/es/blog/holdem-fish).
+El mecanismo siempre es un **suckout**: una carta — en el flop, el turn o el river — que llega después de que el dinero haya entrado y convierte una mano perdedora en ganadora. Tus ases arrasaban su pareja de cincos hasta que apareció ese tercer cinco. Tu par top tenía su proyecto de color muerto hasta que cayó el último corazón. Ese momento — el favorito adelantado por un proyecto que no tenía por qué llegar — es el corazón mismo del término. Entenderlo es también el primer paso para no dejar que te reviente la sesión, la misma disciplina emocional que separa a un profesional de un [fish](/es/blog/holdem-fish).
 
 ---
 
@@ -90,11 +90,13 @@ Todo bad beat tiene la misma forma: eres el favorito, el desfavorecido necesita 
 |:---|:---|:---:|:---|
 | **Ases rotos por un trío** | AA vs una pareja menor (p. ej. 7‑7) | ~80% (4:1) | Su pareja liga trío en el flop, el turn o el river |
 | **Ases vs una mano cualquiera** | AA all-in preflop | ~85% | Dos cartas cualesquiera te adelantan |
-| **Sobrepar vs proyecto de color** | Sobrepar en el flop | ~65% (2:1) | Su proyecto de color de 9 outs se completa en el river |
+| **Sobrepar vs proyecto de color (caso límite)** | Sobrepar en el flop | ~65% (2:1) | Su proyecto de color de 9 outs se completa en el river |
 | **Runner-runner** | Una mano hecha por delante en el flop | ~90%+ | Dos cartas perfectas (turn *y* river) completan un proyecto |
 | **El one-outer** | Una mano casi blindada | ~96% | La única carta que queda en la baraja te gana |
 
 </div>
+
+*Según el listón de la sección anterior, el sobrepar contra proyecto de color es el caso límite de la familia: con ~65%, es más varianza que un bad beat "de verdad" — pero es como lo llama la mesa de todos modos.*
 
 El más icónico es **ases rotos por un trío.** Metes pareja de ases all-in preflop contra pareja de sietes — eres favorito de en torno al 80%, un candado de 4 a 1 a tu favor. Pero quedan dos sietes más en la baraja, y si uno cae en la mesa, su trío gana a tu pareja. Cuatro de cada cinco veces te llevas el bote; la quinta, tienes una historia de bad beat que nadie quiere oír. La matemática nunca se equivocó — simplemente caíste en el lado malo de ella, que es exactamente por qué una sola mano no te dice [nada sobre si jugaste bien](/es/blog/holdem-cooler).
 
@@ -108,7 +110,7 @@ Las reglas **varían según la sala**, pero la estructura común tiene esta pint
 
 - **El cualificador.** Un mínimo típico es **"full de ases con jotas o mejor, batido por póker o mejor".** Algunas salas suben el listón (póker batido). La mano perdedora tiene que ser enorme — no puedes activarlo con un cooler normal.
 - **Ambas cartas privadas deben jugar.** Casi todas las salas exigen que *ambas* cartas privadas del perdedor (y a menudo las del ganador) formen parte de la mano, así que no puedes reclamarlo con una mano hecha entera por la mesa.
-- **El reparto.** El jugador que sufrió el bad beat se lleva la **mayor parte**, el ganador de la mano se lleva la segunda parte, y todos los demás sentados en la mesa se reparten el resto.
+- **El reparto.** El jugador que sufrió el bad beat se lleva la **mayor parte**, el ganador de la mano se lleva la segunda parte, y los demás jugadores **que recibieron cartas en esa mano** se reparten el resto.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -163,7 +165,7 @@ Como un bad beat no lleva ninguna lección sobre tu juego, su único peligro rea
 
 **Q. ¿Qué es un bad beat en póker?**
 
-A. Un bad beat es cuando pierdes una mano de la que eras favorito estadístico claro para ganar, porque tu rival ligó una carta improbable para adelantarte. Metiste el dinero "por delante" — ganando en la matemática — y solo un suckout improbable en el turn o el river dio la vuelta al resultado. El caso clásico es una pareja de ases rota por una pareja menor que clava un trío.
+A. Un bad beat es cuando pierdes una mano de la que eras favorito estadístico claro para ganar, porque tu rival ligó una carta improbable para adelantarte. Metiste el dinero "por delante" — ganando en la matemática — y solo un suckout improbable dio la vuelta al resultado. El caso clásico es una pareja de ases rota por una pareja menor que clava un trío.
 
 **Q. ¿Cuál es la diferencia entre un bad beat y un cooler?**
 
@@ -175,7 +177,7 @@ A. No. Un bad beat requiere que seas favorito claro — normalmente en torno al 
 
 **Q. ¿Qué es un bad beat jackpot y qué cualifica?**
 
-A. Un bad beat jackpot es un premio progresivo que algunas salas pagan cuando una mano excepcionalmente fuerte pierde en el showdown. Un cualificador común es "full de ases con jotas o mejor batido por póker o mejor", con ambas cartas privadas del perdedor obligadas a jugar. El perdedor suele llevarse la mayor parte, el ganador la segunda, y el resto de la mesa se reparte lo que queda — pero los cualificadores y repartos varían según la sala, así que consulta siempre las reglas locales.
+A. Un bad beat jackpot es un premio progresivo que algunas salas pagan cuando una mano excepcionalmente fuerte pierde en el showdown. Un cualificador común es "full de ases con jotas o mejor batido por póker o mejor", con ambas cartas privadas del perdedor obligadas a jugar. El perdedor suele llevarse la mayor parte, el ganador la segunda, y los demás jugadores que recibieron cartas en esa mano se reparten lo que queda — pero los cualificadores y repartos varían según la sala, así que consulta siempre las reglas locales.
 
 **Q. ¿Cuál es el peor bad beat de la historia del póker?**
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Koreas beste Herbstmarathons (Chuncheon 25. Okt, JTBC Seoul 1. Nov, Garmin Run 15. Nov) treffen auf perfektes Laufwetter – für 2026 ist allerdings nur noch der JTBC Seoul offen, Chuncheon und Garmin Run haben im Juli geschlossen. Das Paradise City Casino nahe dem Flughafen Incheon bietet Cash Games – nur für Ausländer, 10 Min. vom Terminal. Eine Reise deckt beides ab.",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-08-18",
+  updated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "14 Min.",
   emoji: "🏃",
@@ -163,7 +163,7 @@ Hinweis: Koreas Sommerhitze erreicht im August ihren Höhepunkt. Der September i
 
 ---
 
-## Korea Pokerturniere: Okt–Dez 2026
+## Korea Pokerturniere: Sep–Dez 2026
 
 Hier wird der Kalender interessant. Drei Poker-Festivals laufen an koreanischen Austragungsorten im exakt gleichen Herbstfenster wie die Marathons – und eines überschneidet sich direkt mit JTBC Seoul.
 

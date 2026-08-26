@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un straddle es una apuesta ciega voluntaria — normalmente el doble de la ciega grande (2× BB) — que un jugador pone antes de repartir las cartas, casi siempre desde UTG; en España se le llama 'matar la ciega'. Le compra al que lo pone la última acción y la opción de subir en preflop, doblando la apuesta de la mano. Para casi todo el mundo es una jugada -EV, y solo se permite en cash games según las reglas de la casa (casi nunca en torneos).",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-08-11",
-  masterUpdated: "2026-08-11",
+  updated: "2026-08-26",
+  masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "💰",
@@ -19,7 +19,7 @@ export const POST: Post = {
   content: `
 La primera vez que alguien puso un straddle en mi mesa de $1/$2, no tenía ni idea de por qué el jugador en UTG soltó $4 antes de que salieran las cartas — ni de por qué el repartidor de repente empezó la acción un asiento más allá. Durante un mes lo llamé "la apuesta del rico" hasta que aprendí lo que hace de verdad: un straddle ==dobla la apuesta y le compra a un jugador la última palabra==, todo antes de que nadie haya mirado una sola carta.
 
-Si has visto una partida en vivo donde aparece una ciega extra de la nada, este es el término que buscas. Abajo tienes exactamente qué es un **straddle**, cada tipo con el que te vas a encontrar, quién actúa primero cuando se pone uno, y la respuesta honesta a la única pregunta que importa: ==g:¿deberías ponerlo de verdad?==
+Si has visto una partida en vivo donde aparece una ciega extra de la nada, este es el término que buscas. Es una de las entradas peor entendidas de todo el [glosario de póker](/es/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp"). Abajo tienes exactamente qué es un **straddle**, cada tipo con el que te vas a encontrar, quién actúa primero cuando se pone uno, y la respuesta honesta a la única pregunta que importa: ==g:¿deberías ponerlo de verdad?==
 
 ---
 
@@ -56,7 +56,7 @@ Esta es la parte que las páginas de definiciones se saltan, y donde los jugador
 :::steps
 UTG pone el straddle | El jugador en UTG saca $4 (2× la ciega grande de $2) antes de repartir las cartas
 Primero en actuar = a la izquierda del que straddlea | La acción ahora empieza con el jugador a la izquierda del que puso el straddle (UTG+1), no UTG — el straddle actúa como una nueva ciega grande
-Alrededor de la mesa | Todos deben igualar $4 (no $2) para jugar; pueden foldear, igualar o subir con normalidad
+Alrededor de la mesa | Todos deben igualar $4 (no $2) para jugar; pueden foldear, igualar o subir — y la subida mínima es ahora $8, el doble del straddle, igual que sobre una ciega grande normal
 Deciden las ciegas | La ciega pequeña y la grande actúan por turno, enfrentándose al precio de $4
 El que straddlea actúa el ÚLTIMO | Si nadie subió, quien puso el straddle puede pasar su opción o subir — la última palabra antes del flop
 :::
@@ -78,7 +78,7 @@ No todos los straddles son iguales — y las diferencias tienen que ver con **d�
 | **UTG (estándar)** | En UTG | A la izquierda del que straddlea | Solo preflop | Sí |
 | **Mississippi** | Cualquier asiento (a menudo botón/CO) | A la izquierda del que straddlea | Preflop — postflop solo desde el botón* | Sí |
 | **Button** | El botón | Ciega pequeña | Pre + postflop | Sí |
-| **Sleeper** | Un asiento que no es UTG | Normal (UTG) | No | Normalmente no |
+| **Sleeper** | Un asiento que no es UTG | Normal (UTG) | No | Regla de la casa |
 | **Re-straddle** | A la izquierda de un straddle | A la izquierda del re-straddle | Solo preflop | Sí |
 
 </div>
@@ -88,7 +88,7 @@ No todos los straddles son iguales — y las diferencias tienen que ver con **d�
 - **Straddle UTG** — el clásico. Se pone en UTG, última acción solo en preflop. El más común y el más débil en cuanto a posición.
 - **Mississippi straddle** — se puede poner desde **cualquier posición**, con más fuerza desde el botón o el cutoff. La acción empieza a la izquierda del que lo pone, así que un Mississippi straddle desde el botón compra la **última acción tanto en preflop como en postflop** — el único straddle con un argumento posicional real. No está permitido en todas partes.
 - **Button straddle** — un straddle estilo Mississippi específicamente desde el botón; el botón conserva la última acción hasta el final. El flujo exacto (dónde encaja la ciega pequeña) varía según la sala — confírmalo con el repartidor.
-- **Sleeper straddle** — una ciega desde un asiento que no es UTG y que se queda "dormida": está **inactiva a menos que la acción foldee hasta llegar a ella**, y en la mayoría de salas **no** compra posición ni la opción de subir. Rara, y casi nunca se ve online.
+- **Sleeper straddle** — una ciega desde un asiento que no es UTG y que se queda "dormida": está **inactiva a menos que la acción foldee hasta llegar a ella**. Nunca compra posición; que al "despertar" gane la opción de subir como ciega viva depende de las reglas de la casa. Rara, y casi nunca se ve online.
 - **Re-straddle (doble straddle)** — un jugador a la izquierda puede straddlear *por encima* de un straddle, por un mínimo del doble del anterior ($4 → $8 → $16). Si está permitido, y desde qué asientos, es pura regla de la casa.
 
 ⚠️ Cada uno de estos **depende de las reglas de la casa.** Ante la duda, pregunta al floor antes de soltar fichas — la mecánica cambia de verdad de una sala a otra.
@@ -175,7 +175,7 @@ A. Un Mississippi straddle se puede poner desde cualquier posición, no solo des
 
 **Q. ¿Qué es un sleeper straddle?**
 
-A. Un sleeper straddle es una ciega puesta desde un asiento que no es UTG y que se queda inactiva ("dormida") a menos que la acción foldee hasta llegar a ella. En la mayoría de salas no compra la opción de subir ni concede posición como sí hace un straddle vivo. Es poco común y rara vez se ofrece online — confirma siempre la regla de la casa.
+A. Un sleeper straddle es una ciega puesta desde un asiento que no es UTG y que se queda inactiva ("dormida") a menos que la acción foldee hasta llegar a ella. No concede posición como sí hace un straddle vivo, y si al "despertar" gana la opción de subir varía según la sala. Es poco común y rara vez se ofrece online — confirma siempre la regla de la casa.
 
 **Q. ¿Se permite el straddle en torneos?**
 
@@ -183,7 +183,7 @@ A. Casi nunca. Los torneos dependen de una estructura fija de ciegas que debe se
 
 **Q. ¿Es rentable el straddle? ¿Deberías ponerlo?**
 
-A. Para la mayoría de jugadores, no — es una jugada -EV. Comprometes dinero a ciegas, comprimes tu ratio stack-bote (lo que significa que deberías jugar menos manos, no más) e inflas el rake. Solo es defendible en mesas loose-passive, en partidas donde ya todos straddlean, o puramente por diversión — nunca como forma de ganar dinero.
+A. Para la mayoría de jugadores, no — es una jugada -EV. Comprometes dinero a ciegas, encoges tu ventaja posicional (los solvers abren *menos* manos en botes con straddle, no más) e inflas el rake. Solo es defendible en mesas loose-passive, en partidas donde ya todos straddlean, o puramente por diversión — nunca como forma de ganar dinero.
 
 ---
 

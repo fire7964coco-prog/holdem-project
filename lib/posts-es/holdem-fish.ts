@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un 'fish' (pez) es la jerga del póker para el jugador débil y perdedor del que los jugadores fuertes (los 'tiburones') sacan su dinero. El pez juega demasiadas manos, iguala demasiado y no sabe foldear — y la famosa frase avisa: si no ves al pez en tu mesa, el pez eres tú. Es la lectura más importante del juego: encuentra al pez, o conviértete en uno.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-08-11",
-  masterUpdated: "2026-08-11",
+  updated: "2026-08-26",
+  masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🐟",
@@ -19,7 +19,7 @@ export const POST: Post = {
   content: `
 La primera vez que alguien en una mesa de casino me llamó pez por lo bajo, ni siquiera me di cuenta de que me habían insultado. Pensaba que jugaba bien — veía un montón de flops, igualaba para "mantenerlos honestos", perseguía cada proyecto porque ==nunca se sabe==. Seis meses y muchos buy-ins perdidos después lo entendí: yo *era* el pez. Todos en la mesa lo sabían antes de que me sentara.
 
-Un **fish** (pez) es la jerga del póker para un jugador débil y perdedor — ese del que los jugadores más fuertes sacan su dinero en silencio. Es la etiqueta más importante del juego, porque toda sesión rentable empieza con la misma pregunta: *¿quién es el pez aquí?* Abajo tienes exactamente qué significa la palabra, ==g:cómo detectar a un fish== en la primera órbita, todo el zoo de jerga de tipos de jugador (tiburón, ballena, nit, donk), la verdad detrás de la famosa frase del "detecta al primo" — y una autoevaluación honesta para que el pez nunca seas tú.
+Un **fish** (pez) es la jerga del póker para un jugador débil y perdedor — ese del que los jugadores más fuertes sacan su dinero en silencio. Es la etiqueta más importante del juego, porque toda sesión rentable empieza con la misma pregunta: *¿quién es el pez aquí?* Abajo tienes exactamente qué significa la palabra, ==g:cómo detectar a un fish== en la primera órbita, todo el zoo de jerga de tipos de jugador (tiburón, ballena, nit, donk), la verdad detrás de la famosa frase del "detecta al primo" — y una autoevaluación honesta para que el pez nunca seas tú. Es la primera palabra que la mayoría aprende del [vocabulario de mesa del póker](/es/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp").
 
 ---
 
@@ -128,7 +128,7 @@ Aquí viene la parte incómoda. Si has llegado hasta aquí esperando en silencio
 
 | | VPIP (manos jugadas) | PFR (manos subidas) | La lectura |
 |:---|:---:|:---:|:---|
-| **Jugador sólido** | 15–22% | 12–18% | Tight, agresivo, diferencia estrecha |
+| **Jugador sólido** | 15–22% | 12–18% (nunca por encima de su VPIP) | Tight, agresivo, diferencia estrecha |
 | **Fish** | 40–70% | menos del 10% | Suelto y pasivo — jugándolo todo, sin liderar nada |
 | **Nit** | menos del 12% | menos del 8% | Demasiado tight — predecible, no es un fish |
 

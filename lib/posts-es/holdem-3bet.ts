@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un 3-bet es la primera resubida antes del flop — se llama 3-bet porque la ciega grande es la primera apuesta, la subida de apertura la segunda y tu resubida la tercera. Haz un 3-bet de valor con un núcleo cerrado (QQ+, AK) más unos pocos faroles con bloqueadores del mismo palo como A5s, dale un tamaño de unas 3x la apertura en posición y 4x fuera de posición, y mantén tu frecuencia global de 3-bet cerca del 6–10%. Cuando eres tú quien se enfrenta a un 3-bet, resube con un 4-bet tus manos premium, iguala las que se juegan bien y foldea el resto — foldeando más de lo 'balanceado' contra jugadores de stakes bajos que nunca farolean.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-08-11",
-  masterUpdated: "2026-08-11",
+  updated: "2026-08-26",
+  masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "♦️",
@@ -83,7 +83,7 @@ Un rango de 3-bet ganador tiene **dos partes bien distintas**, y entender esa di
 
 </div>
 
-Aquí tienes la lógica de los bloqueadores en una frase: **tener un as hace matemáticamente menos probable que tu rival tenga ases o as-rey**, así que A5s es un farol mucho mejor que, digamos, A9o — que bloquea las mismas premium pero se juega fatal cuando te pagan y solo liga parejas flojas. La equity de respaldo importa porque tu rival no va a foldear todas las veces; quieres un farol que aún pueda ganar el bote. Por eso A5s ≈ 28% de equity contra un rango de call de QQ+/AK, mientras que la basura offsuit se queda muy por debajo. Es la misma disciplina de [manos iniciales](/es/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") de siempre — solo que aplicada a resubir.
+Aquí tienes la lógica de los bloqueadores en una frase: **tener un as hace matemáticamente menos probable que tu rival tenga ases o as-rey**, así que A5s es un farol mucho mejor que, digamos, A9o — que bloquea las mismas premium pero se juega fatal cuando te pagan y solo liga parejas flojas. La equity de respaldo importa porque tu rival no va a foldear todas las veces; quieres un farol que aún pueda ganar el bote. Por eso A5s ≈ 30% de equity contra un rango de call de QQ+/AK, mientras que la basura offsuit se queda muy por debajo. Es la misma disciplina de [manos iniciales](/es/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") de siempre — solo que aplicada a resubir.
 
 ---
 

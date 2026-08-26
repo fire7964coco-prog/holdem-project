@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Von den 169 Starthand-Typen ist nur eine kleine Spitzengruppe – etwa 15–20% der Hände, die du bekommst – für einen Anfänger profitabel. Große Paare (AA–TT) und AK raist du aus jeder Position; je später du agierst, desto weiter öffnest du – von ~13% unter der Gun bis ~43% am Button (im 6-Max nochmals weiter). Starte mit einem vereinfachten Chart, füge GTO-Preflop-Charts hinzu, sobald Raise-or-Fold automatisch sitzt.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-08-11",
+  updated: "2026-08-26",
   masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "10 Min.",
@@ -215,7 +215,7 @@ Der ==r:teuerste Fehler, den Anfänger machen, ist Raises mit schwachen Assen zu
 
 Charts funktionieren nur, wenn sie vor dir liegen, wenn es zählt. Für Homegames und Study-Sessions haben wir das Ganze druckbar gemacht:
 
-**[Lade das kostenlose druckbare Poker-Starthände-Chart (PDF) herunter](/downloads/poker-starting-hands-chart.pdf)** – eine Seite, 9-Max- und 6-Max-Opening-Ranges nebeneinander, Cheat-Sheet-Format. Druck es aus oder lass es zwischen den Händen auf deinem Handy offen.
+**[Lade das kostenlose druckbare Poker-Starthände-Chart (PDF) herunter](/downloads/poker-starting-hands-chart.pdf)** – eine Seite: das komplette 9-Max-Opening-Chart plus die 6-Max-Anpassung in einer Zeile, Cheat-Sheet-Format. Druck es aus oder lass es zwischen den Händen auf deinem Handy offen.
 
 Dann nutze es wörtlich, jede Hand, für deine ersten 20+ Sessions:
 
@@ -282,7 +282,7 @@ A. Nicht am Anfang. GTO-Preflop-Charts nutzen gemischte Frequenzen, die gegen st
 
 **Q. Macht suited zu sein wirklich einen Unterschied?**
 
-A. Suited fügt gegenüber derselben Offsuit-Hand etwa 2–3% Equity hinzu – bedeutsam, aber kein Grund, eine schlechte Hand zu spielen. Zwei suited Karten machen bis zum River nur ~6,5% der Zeit einen Flush (und ein geflopter Flushdraw komplettiert bis zum River etwa 35% der Zeit). Suited Trash ist immer noch Trash.
+A. Suited fügt gegenüber derselben Offsuit-Hand etwa 2 Prozentpunkte Equity hinzu (AKs hat 67% gegen eine zufällige Hand; AKo 65%) – bedeutsam, aber kein Grund, eine schlechte Hand zu spielen. Zwei suited Karten machen bis zum River nur ~6,5% der Zeit einen Flush (und ein geflopter Flushdraw komplettiert bis zum River etwa 35% der Zeit). Suited Trash ist immer noch Trash.
 
 **Q. Sollte ich kleine Pocket Pairs wie 22 oder 33 immer folden?**
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ein Bad Beat ist, wenn du dein Geld als klarer Favorit reinbekommst – meist mit 80% oder mehr – und verlierst, weil dein Gegner eine Glückskarte trifft und dich aussaugt. Anders als beim Cooler warst du die ganze Zeit vorne; das Deck hat dich erst am Ende verraten. Es schmerzt, aber Bad Beats sind eigentlich ein Zeichen, dass du in einem profitablen Spiel sitzt.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-08-18",
-  masterUpdated: "2026-08-11",
+  updated: "2026-08-26",
+  masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "💔",
@@ -19,7 +19,7 @@ export const POST: Post = {
   content: `
 Der eine, der immer noch schmerzt: Ich hielt zwei Asse, bin all-in gegangen gegen einen Spieler, der mit einem Paar Fünfen gecallt hat, und musste zusehen, wie eine der letzten beiden Fünfen auf den River knallte. Ich hatte alles richtig gemacht. Mein Geld ging als besser als 4:1-Favorit rein, und trotzdem verlor ich den ganzen Stack an ==eine der beiden Karten im Deck, die mich schlagen konnten==. Das ist ein Bad Beat, und wenn du lange genug Poker spielst, wird er dir tausende Male passieren.
 
-Ein **Bad Beat** ist, wenn du deine Chips als klarer statistischer Favorit reinbekommst und trotzdem verlierst, weil dein Gegner eine Glückskarte fängt und dich ==g:aussaugt==. Das Schlüsselwort ist *Favorit* – du warst vorne, als das Geld reinging, und nur eine unwahrscheinliche Karte hat das Ergebnis gedreht. Unten steht genau, was als Bad Beat zählt, wie er sich von einem [Cooler](/de/blog/holdem-cooler "thumb:/images/holdem-cooler-hero.webp") unterscheidet, was ein „Bad Beat Jackpot“ auszahlt, und die kontraintuitive Wahrheit, die jeder gewinnende Spieler irgendwann lernt: Bad Beats sind *gut* für dich.
+Ein **Bad Beat** ist, wenn du deine Chips als klarer statistischer Favorit reinbekommst und trotzdem verlierst, weil dein Gegner eine Glückskarte fängt und dich ==g:aussaugt==. Das Schlüsselwort ist *Favorit* – du warst vorne, als das Geld reinging, und nur eine unwahrscheinliche Karte hat das Ergebnis gedreht. Unten steht genau, was als Bad Beat zählt, wie er sich von einem [Cooler](/de/blog/holdem-cooler "thumb:/images/holdem-cooler-hero.webp") unterscheidet, was ein „Bad Beat Jackpot“ auszahlt, und die kontraintuitive Wahrheit, die jeder gewinnende Spieler irgendwann lernt: Bad Beats sind *gut* für dich. Es ist eines der am häufigsten überstrapazierten Wörter im ganzen [Poker-Glossar](/de/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp").
 
 ---
 
@@ -39,7 +39,7 @@ Insgeheim gut | Was es für deinen langfristigen Profit bedeutet
 > **Kurze Antwort**
 > Ein Bad Beat ist eine Hand, die du verlierst, obwohl du beim Einsetzen der Chips ==ein starker statistischer Favorit== warst – dein Gegner hat eine unwahrscheinliche Karte getroffen und dich überholt. Du hast dein Geld „gut“ reinbekommen, in der Mathematik vorne, und das Deck hat trotzdem den einen Runout geliefert, der dich schlägt. Der Verlust ist nicht dein Fehler, sondern Varianz von ihrer schlimmsten Seite.
 
-Der Mechanismus ist immer ein **Suckout**: eine Karte auf dem Turn oder River, die eine verlierende Hand in eine gewinnende verwandelt. Deine Asse haben ihr Paar Fünfen zerlegt, bis diese dritte Fünf auftauchte. Dein Top Pair lag klar vor ihrem Flushdraw, bis das letzte Herz fiel. Dieser Moment – der Favorit, der von einem Draw überrannt wird, der es nie hätte schaffen dürfen – ist der Kern des Begriffs. Ihn zu verstehen ist auch der erste Schritt, ihn deine Session nicht ruinieren zu lassen, dieselbe emotionale Disziplin, die einen Profi von einem [Fish](/de/blog/holdem-fish) trennt.
+Der Mechanismus ist immer ein **Suckout**: eine Karte – am Flop, Turn oder River –, die ankommt, nachdem das Geld reingegangen ist, und eine verlierende Hand in eine gewinnende verwandelt. Deine Asse haben ihr Paar Fünfen zerlegt, bis diese dritte Fünf auftauchte. Dein Top Pair lag klar vor ihrem Flushdraw, bis das letzte Herz fiel. Dieser Moment – der Favorit, der von einem Draw überrannt wird, der es nie hätte schaffen dürfen – ist der Kern des Begriffs. Ihn zu verstehen ist auch der erste Schritt, ihn deine Session nicht ruinieren zu lassen, dieselbe emotionale Disziplin, die einen Profi von einem [Fish](/de/blog/holdem-fish) trennt.
 
 ---
 
@@ -90,7 +90,7 @@ Die Faustregel: Ein Bad Beat braucht **beides** – einen großen Vorteil (ein k
 ![Infografik eines goldenen Dealer Buttons und zweier verdeckter Hole Cards hinter einem K♦ 7♣ 2♠ Flop – der Button agiert nach dem Flop als Letzter](/images/holdem-button-dealer-board.webp "Bei jedem Bad Beat war die Mathematik auf deiner Seite – der Underdog hat nur die Karte gefangen, die er brauchte")
 
 > **Kurze Antwort**
-> Fünf Formen decken fast alles ab: **Asse, die ein Set knackt** (~80%), **Asse gegen eine zufällige Hand** (~85%), ein **Overpair gegen einen Flushdraw** (~65%), ein **Runner-Runner-Draw** (~90%+) und der **One-Outer** (~96%). Das Muster ist immer identisch: Du bist der Favorit, der Underdog braucht Hilfe, und die Hilfe kommt an.
+> Fünf Formen decken fast alles ab: **Asse, die ein Set knackt** (~80%), **Asse gegen eine zufällige Hand** (~85%), ein **Overpair gegen einen Flushdraw** (~65% – der Grenzfall), ein **Runner-Runner-Draw** (~90%+) und der **One-Outer** (~96%). Das Muster ist immer identisch: Du bist der Favorit, der Underdog braucht Hilfe, und die Hilfe kommt an.
 
 Die häufigsten Versionen, mit ungefähren Preflop- und Flop-Equities:
 
@@ -100,11 +100,13 @@ Die häufigsten Versionen, mit ungefähren Preflop- und Flop-Equities:
 |:---|:---|:---:|:---|
 | **Asse geknackt durch ein Set** | AA vs. ein kleineres Paar (z. B. 7‑7) | ~80% (4:1) | Sein Paar trifft ein Set am Flop, Turn oder River |
 | **Asse vs. eine zufällige Hand** | AA all-in preflop | ~85% | Zwei beliebige Karten überrennen dich |
-| **Overpair vs. ein Flushdraw** | Overpair auf dem Flop | ~65% (2:1) | Sein 9-Out-Flushdraw füllt sich auf dem Turn oder River |
+| **Overpair vs. ein Flushdraw (Grenzfall)** | Overpair auf dem Flop | ~65% (2:1) | Sein 9-Out-Flushdraw füllt sich auf dem Turn oder River |
 | **Runner-Runner** | Eine fertige Hand vorne auf dem Flop | ~90%+ | Zwei perfekte Karten (Turn *und* River) vervollständigen einen Draw |
 | **Der One-Outer** | Eine fast sichere Hand | ~96% | Die einzige übrige Karte im Deck schlägt dich |
 
 </div>
+
+*Gemessen an der Latte von oben ist Overpair gegen Flushdraw der Grenzfall der Familie: Bei ~65% ist es eher Varianz als ein „echter“ Bad Beat – aber am Tisch heißt es trotzdem so.*
 
 Am ikonischsten ist **Asse geknackt durch ein Set.** Du bekommst zwei Asse all-in preflop gegen ein Paar Siebenen – du bist ungefähr ein 80%-Favorit, ein klarer 4:1-Vorsprung zu deinen Gunsten. Aber es sind noch zwei Siebenen im Deck, und wenn eine das Board trifft, schlägt ihr Drilling dein Paar. Vier von fünf Malen holst du den Pot; beim fünften hast du eine Bad-Beat-Story, die niemand hören will. Die Mathematik war nie falsch – du bist nur auf der falschen Seite gelandet, was genau der Grund ist, warum eine einzelne Hand dir [nichts darüber sagt, ob du gut gespielt hast](/de/blog/holdem-cooler).
 
@@ -202,7 +204,7 @@ A. Die Spieler selbst. Der Jackpot wächst aus einem zusätzlichen Drop, den der
 
 **Q. Was ist der Unterschied zwischen einem Bad Beat und einem Suckout?**
 
-A. Ein Suckout ist die *Karte*, ein Bad Beat die *ganze Hand* aus Sicht des Verlierers. Trifft der Underdog auf dem Turn oder River die Karte, die er brauchte, war das ein Suckout – und aus Sicht dessen, der vorn lag, wird daraus ein Bad Beat. Beides beschreibt denselben Moment aus zwei Blickwinkeln: „Ich hab ihn ausgesaugt“ sagt der Gewinner, „ich habe einen Bad Beat kassiert“ der Verlierer.
+A. Ein Suckout ist die *Karte*, ein Bad Beat die *ganze Hand* aus Sicht des Verlierers. Trifft der Underdog die Karte, die er brauchte, nachdem das Geld drin war, war das ein Suckout – und aus Sicht dessen, der vorn lag, wird daraus ein Bad Beat. Beides beschreibt denselben Moment aus zwei Blickwinkeln: „Ich hab ihn ausgesaugt“ sagt der Gewinner, „ich habe einen Bad Beat kassiert“ der Verlierer.
 
 **Q. Sind Bad Beats online häufiger?**
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Foldear es la habilidad más infravalorada del póker: en el peor de los casos un fold te cuesta cero, mientras que un call perdedor sangra fichas todas las veces. Un jugador sólido foldea entre el 75 y el 85% de sus manos antes del flop, suelta las manos falladas y los proyectos débiles que no cumplen sus pot odds después, y —lo más difícil de todo— tira manos fuertes pero batidas cuando la línea de un rival pasivo grita valor. La mayoría no paga de más porque no sepa leer manos; paga porque las fichas que ya están en el bote las siente suyas. No lo son.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-08-11",
-  masterUpdated: "2026-08-11",
+  updated: "2026-08-26",
+  masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🛡️",
@@ -88,7 +88,7 @@ Los calls ajustados no son una sensación — son una fracción. Para pagar una 
 
 </div>
 
-Ahora ponlo en práctica. Digamos que tienes un proyecto de color —nueve cartas lo completan— con una carta por venir. Nueve outs de las 46 cartas sin ver son ==9 ÷ 46 ≈ 19.6%==, o unas **4 a 1 en contra** de ligar. (Atajo rápido: la [regla del 2](/es/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") — outs × 2 ≈ tu porcentaje para una carta, así que 9 × 2 ≈ 18%.)
+Ahora ponlo en práctica. Digamos que tienes un proyecto de color —nueve cartas lo completan— con una carta por venir. Nueve outs de las 46 cartas sin ver son ==9 ÷ 46 ≈ 19.6%==, o unas **4 a 1 en contra** de ligar. (Atajo rápido: la [regla del 2 y 4](/es/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp") — outs × 2 ≈ tu porcentaje para una carta, así que 9 × 2 ≈ 18%.)
 
 - **El bote es de $100 y tu rival apuesta $50 en el turn.** Igualas $50 para ganar $150 — eso es 3 a 1, así que necesitas un **25%** de equity. Tu proyecto es solo ~19.6%. ==r:Foldea.== El precio está mal.
 - **El mismo proyecto, pero apuesta solo $25 en un bote de $100.** Ahora igualas $25 para ganar $125 — 5 a 1, necesitando solo un **16.7%**. Tu ~19.6% lo supera de sobra. ==g:Paga.==

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Das ist ein Poker-Lexikon in einfachem Deutsch mit den Begriffen, die in einem Texas-Hold'em-Spiel wirklich vorkommen, gruppiert danach, wie du ihnen begegnest – Setzaktionen, Positionen, Hände und Board, Spielertypen, Geld, Tischsituationen und die Turnier- und Online-Abkürzungen. Beginn mit den „am häufigsten verwechselten“ Begriffen unten (Check vs. Call, Set vs. Trips, Cooler vs. Bad Beat), dann stöber nach Kategorie. Begriffe mit einem tieferen Guide verlinken direkt darauf.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-08-11",
-  masterUpdated: "2026-07-19",
+  updated: "2026-08-26",
+  masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "12 Min.",
   emoji: "📖",
@@ -44,7 +44,7 @@ Poker hat sein eigenes Vokabular, und es zu kennen bringt zwei Dinge: Es verhind
 | Diese werden verwechselt | Der Unterschied |
 |:---|:---|
 | **Check vs. Call** | Ein Check riskiert **keine Chips** – möglich nur, solange keine Bet läuft; ein Call **gleicht** eine bestehende Bet aus. |
-| **Blind vs. Ante** | Blinds sind **positionale** Pflichteinsätze (SB/BB); Antes werden von **allen** gezahlt, um den Pot zu füttern. |
+| **Blind vs. Ante** | Blinds sind **positionale** Pflichteinsätze (SB/BB); Antes füttern den Pot und kommen von **allen** (im modernen Turnier meist als Big Blind Ante). |
 | **Set vs. Trips** | Beide sind ein Drilling – ein **Set** nutzt ein Pocket Pair; **Trips** nutzt eine Hole Card + ein Paar auf dem Board. |
 | **Cooler vs. Bad Beat** | Ein [Cooler](/de/blog/holdem-cooler) = du lagst hinten und konntest nicht folden; ein [Bad Beat](/de/blog/holdem-bad-beat) = du lagst vorn und wurdest outgedrawt. |
 | **Value Bet vs. Bluff** | Eine Value Bet will einen **Call von einer schwächeren Hand**; ein Bluff will, dass **bessere Hände folden**. |
@@ -251,7 +251,7 @@ Die große Gabelung dahinter ist [Cash Game vs. Turnier](/de/blog/holdem-tournam
 | **Range** | Die gesamte Menge an Händen, die ein Spieler in einem Spot halten kann; Profis denken in Ranges, nicht in einzelnen Händen. |
 | **Cold Deck** | Ein Pechdeal, der einen Cooler erzeugt (ursprünglich das vorpräparierte Deck eines Betrügers). |
 | **„Don't tap the glass“** | Kritisiere schwache Spieler nicht – du verschreckst die, an denen du verdienst. |
-| **Run it twice** | All-in-Spieler teilen das restliche Board zweimal aus, jeweils für den halben Pot, um Varianz zu senken. |
+| **Run it twice** | All-in-Spieler teilen das restliche Board zweimal aus, jeweils für den halben Pot, um Varianz zu senken – nur im Cashgame, und alle Beteiligten müssen zustimmen. |
 
 </div>
 

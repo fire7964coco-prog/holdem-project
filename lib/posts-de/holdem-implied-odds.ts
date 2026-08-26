@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Implied Odds sind die zusätzlichen Chips, die du auf späteren Streets zu gewinnen erwartest, wenn dein Draw ankommt. Sie erlauben dir, einen Draw profitabel zu callen, den die Pot Odds allein zum Fold verurteilen – aber nur, wenn die Stacks tief sind und dein Gegner dich wirklich auszahlt.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-08-13",
-  masterUpdated: "2026-08-12",
+  updated: "2026-08-26",
+  masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "💰",
@@ -68,7 +68,7 @@ Die praktische Regel: **Fang mit den Pot Odds an.** Wenn deine Equity den Preis 
 Sauber geschrieben, mit ==g:x== als dem zusätzlichen Geld, das du gewinnen musst, wenn du komplettierst:
 
 :::steps
-Finde deine Trefferquote | Zähle Outs, wandle sie in einen Prozentwert um (die [Faustregel](/de/blog/holdem-pot-odds) bringt dich nah dran)
+Finde deine Trefferquote | Zähle Outs, wandle sie in einen Prozentwert um (die [Faustregel](/de/blog/holdem-outs) bringt dich nah dran)
 Teile deinen Call durch diese Trefferquote | Das ist der Gesamtbetrag, den du gewinnen musst, um break-even zu sein
  Ziehe den aktuellen Pot **plus deinen eigenen Call** ab | Was übrig bleibt, ist das Extra, das du später gewinnen musst – das ist dein ==g:x==
 Beurteile, ob es realistisch ist | Tiefe Stacks + ein auszahlfreudiger Gegner = ja. Kurze Stacks oder ein gefährliches Board = nein

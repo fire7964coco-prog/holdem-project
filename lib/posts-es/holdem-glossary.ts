@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Este es un glosario en lenguaje llano de los términos de póker que de verdad salen en una partida de Texas Hold'em, agrupados según cómo te los vas a encontrar: acciones de apuesta, posiciones, manos y mesa, tipos de jugador, dinero y situaciones de mesa. Empieza por los términos que más se confunden (pasar vs igualar, trío/set vs trips, cooler vs bad beat) y luego navega por categoría. Los términos con una guía más completa enlazan directamente a ella.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-07-24",
-  masterUpdated: "2026-07-19",
+  updated: "2026-08-26",
+  masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "📖",
@@ -43,7 +43,7 @@ Si solo vas a aclarar una docena de términos, que sean estos: son los que causa
 | Estos se confunden | La diferencia |
 |:---|:---|
 | **Pasar (check) vs Igualar (call)** | Pasar no arriesga **ninguna ficha** (solo cuando no hay apuesta viva); igualar **paga** una apuesta ya hecha. |
-| **Ciega (blind) vs Ante** | Las ciegas son apuestas forzadas **posicionales** (SB/BB); el ante lo pagan **todos** para engordar el bote. |
+| **Ciega (blind) vs Ante** | Las ciegas son apuestas forzadas **posicionales** (SB/BB); el ante engorda el bote y sale de **todos** (en los torneos de hoy, normalmente vía big blind ante). |
 | **Set vs Trips** | Ambos son trío — un **set** usa un par servido; los **trips** usan una carta de mano + una pareja en la mesa. |
 | **Cooler vs Bad Beat** | Un [cooler](/es/blog/holdem-cooler) = ibas por detrás y no podías foldear; un [bad beat](/es/blog/holdem-bad-beat) = ibas por delante y te cazaron con carta. |
 | **Apuesta de valor vs Farol (bluff)** | La apuesta de valor busca **que pague una mano peor**; el farol busca **que manos mejores se retiren**. |
@@ -81,7 +81,7 @@ Todo lo que puedes hacer físicamente en tu turno. Si acabas de empezar, arranca
 | **Farol / Semifarol (bluff)** | Un farol apuesta con mano floja para que manos mejores se retiren; un semifarol lo hace con un proyecto que aún puede mejorar. |
 | **Check-raise** | Pasar y luego subir después de que un rival apueste — una línea fuerte y engañosa (legal en salas modernas). |
 | **Min-raise (subida mínima)** | La subida legal más pequeña. |
-| **String bet** | Un movimiento ilegal: volver a por más fichas sin declararlo; se sanciona como call, no como subida. |
+| **String bet** | Volver a por más fichas sin declararlo — solo cuenta el primer movimiento (normalmente se resuelve como call). Anunciar "subo" primero hace legales los movimientos partidos. |
 | **Jam / Shove** | Ir all-in. |
 | **Snap call** | Un call instantáneo, sin dudar. |
 | **Hero call** | Pagar con mano floja porque has leído al rival como que va de farol. |
@@ -188,7 +188,7 @@ Fichas, límites y los dos formatos. La gran bifurcación es [cash game vs torne
 | Término | Significado |
 |:---|:---|
 | **Ciegas (blinds)** | Las apuestas forzadas SB/BB que arrancan la acción — también el nombre de los niveles de límite ([ciegas explicadas](/es/blog/holdem-blind-meaning)). |
-| **Ante** | Una pequeña apuesta forzada de todos para engordar el bote, aparte de las ciegas. |
+| **Ante** | Tradicionalmente, una pequeña apuesta forzada de todos para engordar el bote, aparte de las ciegas — la mayoría de los torneos usa hoy un big blind ante que paga un solo asiento por la mesa. |
 | **Bote (pot)** | El total de fichas que se juegan. |
 | **Bote secundario (side pot)** | Un bote aparte que se forma cuando un jugador va all-in y otros siguen apostando. |
 | **Stack** | Las fichas que tiene un jugador delante. |
@@ -238,9 +238,9 @@ Las palabras para lo que está pasando — y cómo comportarse mientras pasa.
 | **Rango (range)** | El conjunto completo de manos que un jugador podría tener en un spot; los pros piensan en rangos, no en manos sueltas. |
 | **Cold deck** | Un reparto de mala suerte que produce un cooler (originalmente la baraja pre-ordenada de un tramposo). |
 | **"Don't tap the glass"** | No critiques a los jugadores flojos — espantarás a los que te dan de comer. |
-| **Run it twice** | Los jugadores all-in reparten la mesa restante dos veces, cada una por la mitad del bote, para reducir la varianza. |
+| **Run it twice** | Los jugadores all-in reparten la mesa restante dos veces, cada una por la mitad del bote, para reducir la varianza — por lo general solo en cash, y todos los implicados deben aceptar. |
 | **Mano a mano (heads-up)** | Jugar uno contra uno — ya sea una partida de dos jugadores o los dos últimos de un torneo. |
-| **RFI (raise first in)** | Ser el primer jugador en entrar al bote con una subida (un open-raise). |
+| **RFI (raise first in)** | La abreviatura de rangos y stats para el open-raise: con qué frecuencia abres el bote cuando nadie ha entrado antes que tú. |
 | **Splash the pot** | Tirar las fichas de cualquier manera al bote en vez de apilarlas delante de ti — mal visto, porque no se puede verificar la cantidad. |
 
 </div>

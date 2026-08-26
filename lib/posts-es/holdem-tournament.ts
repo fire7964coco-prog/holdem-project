@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "En un torneo de póker pagas un buy-in fijo por fichas; las ciegas suben con el reloj hasta que un jugador tiene todas las fichas. El 10-15% de arriba cobra. Formatos: freezeout, PKO, satélite y deepstack — entras por buy-in directo, satélite o preinscripción online.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-08-16",
-  masterUpdated: "2026-08-16",
+  updated: "2026-08-26",
+  masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏆",
@@ -87,7 +87,7 @@ Esto es lo que la mayoría de guías para principiantes se salta, y es el concep
 
 Fíjate: **no perdiste ni una sola ficha** entre el Nivel 1 y el Nivel 9. Pero tu stack pasó de 200BB a 10BB porque las ciegas subieron. Así es como los torneos fuerzan la acción y acaban eliminando jugadores.
 
-==g:Regla general: por debajo de 20 ciegas grandes estás en terreno de push-or-fold, y a partir de 15 es tu modo principal. Por debajo de 10 ciegas grandes, tienes que ir all-in con casi cualquier mano jugable antes de que las ciegas te coman vivo.==
+==g:Regla general: por debajo de 20 ciegas grandes estás en terreno de push-or-fold, y a partir de 15 es tu modo principal. Por debajo de 10 ciegas grandes, tienes que ir all-in con casi cualquier mano jugable — sobre todo desde posición tardía o la ciega pequeña — antes de que las ciegas te coman vivo.==
 
 Cuando llegues ahí, los rangos exactos de shove están en [estrategia de short stack — cuándo hacer push o fold](/es/blog/holdem-short-stack).
 
@@ -118,7 +118,7 @@ Suelen quedar 6-9 jugadores. Los premios suben con fuerza en cada eliminación. 
 | Formato | Cómo funciona | Ideal para |
 |:---|:---|:---|
 | **Freezeout** | Un buy-in, sin recompra. Bustear = fuera. | Principiantes — coste fijo |
-| **Recompra (rebuy) / Re-entry** | Vuelves a pagar tras bustear (durante los niveles tempranos) | Jugadores agresivos con más bankroll |
+| **Recompra (rebuy) / Re-entry** | Vuelves a comprar fichas durante la ventana temprana — en los rebuys, a menudo sin bustear antes | Jugadores agresivos con más bankroll |
 | **Bounty / KO** | Ganas una recompensa fija por cada jugador que eliminas | Jugadores de acción — ingreso extra por knockout |
 | **PKO (KO Progresivo)** | Los bounties crecen con cada knockout — parte se te paga, parte se suma a tu cabeza | Jugadores de alta varianza y gran upside |
 | **Deepstack** | Stack inicial muy por encima del evento estándar de la misma serie, con niveles más lentos | Jugadores que quieren más juego postflop |
@@ -142,7 +142,7 @@ Un PKO (Progressive Knockout) es un torneo de bounty donde normalmente alrededor
 
 Un torneo deepstack te arranca con muchas más fichas en relación con las ciegas que el evento estándar de la misma serie, y suele acompañarlo con niveles de ciegas más largos. **No existe un umbral estandarizado** — "deepstack" es siempre una etiqueta relativa. Saca del structure sheet cuántas ciegas grandes vale tu stack en el Nivel 1 y compáralo con las 100-200 BB de un evento estándar. Más fichas y un reloj más lento significan más juego postflop, más margen para recuperarte de un error y jornadas más largas.
 
-**¿Y las recompras y los add-ons?** En un evento con recompra puedes volver a pagar tras bustear durante una ventana temprana fijada; un add-on es una compra de fichas opcional única que suele ofrecerse cuando esa ventana se cierra. Después de eso, el evento se juega como un freezeout.
+**¿Y las recompras y los add-ons?** En un evento con recompra puedes volver a comprar durante una ventana temprana fijada — en muchos eventos, siempre que tu stack esté en el importe inicial o por debajo, sin necesidad de bustear antes; un add-on es una compra de fichas opcional única que suele ofrecerse cuando esa ventana se cierra. Después de eso, el evento se juega como un freezeout.
 
 ---
 
@@ -157,7 +157,7 @@ Un satélite es un torneo más pequeño donde el premio no es dinero — es **un
 
 En lugar de gastar $10,000, compites en un torneo de $500 contra otros 19 jugadores. Una persona gana el asiento de $10,000.
 
-**Los satélites encadenados** bajan aún más. Un súper-satélite de $5 → clasificatorio de $55 → evento de $215 → Main Event de $1,050. Muchos jugadores en grandes eventos entraron a través de una cadena de satélites por una fracción del buy-in directo.
+**Los satélites encadenados** bajan aún más. Un súper-satélite de $5 → clasificatorio de $55 → evento de $215 → un Main Event online de $1,050. Muchos jugadores en grandes eventos entraron a través de una cadena de satélites por una fracción del buy-in directo.
 
 ==g:La estrategia de satélite es distinta a la de un torneo normal — una vez tienes fichas suficientes para asegurar el asiento, deja de arriesgar. Foldea incluso buenas manos para no bustear en la burbuja.==
 
@@ -222,11 +222,11 @@ Esto es lo que ninguna otra guía te cuenta. Aquí tienes una cronología realis
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
 <div style="color:hsl(var(--primary));font-weight:700">1:00-3pm</div>
-<div style="color:hsl(var(--foreground))">Niveles 2-4. El registro tardío sigue abierto. El campo crece. Algunos jugadores ya bustean.</div>
+<div style="color:hsl(var(--foreground))">Niveles 2-4. El registro tardío sigue abierto. El campo crece. Los antes entran según la hoja de estructura (Nivel 3 en el ejemplo de arriba). Algunos jugadores ya bustean.</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
 <div style="color:hsl(var(--primary));font-weight:700">~3:30pm</div>
-<div style="color:hsl(var(--foreground))">Cierra el late reg. Se anuncia el tamaño final del campo. Se confirma la bolsa de premios. Entran los antes.</div>
+<div style="color:hsl(var(--foreground))">Cierra el late reg. Se anuncia el tamaño final del campo. Se confirma la bolsa de premios.</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
 <div style="color:hsl(var(--primary));font-weight:700">~5:00pm</div>
@@ -333,7 +333,7 @@ A. En un torneo de bounty (knockout) normal, cada jugador lleva un bounty fijo �
 
 **Q. ¿Cuáles son las reglas de las recompras y los add-ons?**
 
-A. En un torneo con recompra puedes volver a pagar la entrada tras bustear (o a veces cuando tu stack cae por debajo de un umbral), pero solo durante un periodo de recompra fijado — normalmente los primeros niveles de ciegas. Un add-on es una compra de fichas opcional única, que suele ofrecerse a todos al final del periodo de recompra sin importar el tamaño del stack. Una vez que esa ventana se cierra, el evento se juega como un freezeout. Las reglas exactas varían según el local, así que revisa la hoja de estructura.
+A. En un torneo con recompra puedes volver a comprar fichas durante un periodo de recompra fijado — normalmente los primeros niveles de ciegas. En muchos eventos basta con que tu stack esté en el importe inicial o por debajo; no hace falta bustear antes. Un add-on es una compra de fichas opcional única, que suele ofrecerse a todos al final del periodo de recompra sin importar el tamaño del stack. Una vez que esa ventana se cierra, el evento se juega como un freezeout. Las reglas exactas varían según el local, así que revisa la hoja de estructura.
 
 **Q. ¿Es legal organizar un torneo de póker en casa?**
 

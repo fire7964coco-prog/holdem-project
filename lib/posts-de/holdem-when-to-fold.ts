@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Folden ist die am meisten unterschätzte Fähigkeit im Poker – das schlechteste Ergebnis eines Folds ist null, während ein verlorener Call jedes Mal Chips verblutet. Ein solider Spieler foldet rund 75–85% seiner Hände vor dem Flop, legt nach dem Flop verfehlte Hände und schwache Draws ab, die seine Pot Odds nicht erfüllen, und – am schwersten von allem – gibt starke, aber geschlagene Hände auf, wenn die Linie eines passiven Gegners nach Value schreit. Die meisten Spieler callen nicht zu viel, weil sie Hände nicht lesen können; sie callen, weil sich die Chips im Pot bereits wie ihre eigenen anfühlen. Sind sie aber nicht.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-08-18",
-  masterUpdated: "2026-08-11",
+  updated: "2026-08-26",
+  masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "16 Min.",
   emoji: "🛡️",
@@ -97,7 +97,7 @@ Enge Calls sind kein Gefühl – sie sind ein Bruch. Um eine Bet profitabel zu c
 
 </div>
 
-Jetzt in die Praxis. Sagen wir, du hast einen Flushdraw – neun Karten vervollständigen ihn – mit einer Karte, die noch kommt. Neun Outs von den 46 ungesehenen Karten sind ==9 ÷ 46 ≈ 19,6%==, oder etwa **4:1 gegen** ein Treffen. (Schneller Shortcut: die [Regel der 2](/de/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") – Outs × 2 ≈ dein Prozentsatz für eine Karte, also 9 × 2 ≈ 18%.)
+Jetzt in die Praxis. Sagen wir, du hast einen Flushdraw – neun Karten vervollständigen ihn – mit einer Karte, die noch kommt. Neun Outs von den 46 ungesehenen Karten sind ==9 ÷ 46 ≈ 19,6%==, oder etwa **4:1 gegen** ein Treffen. (Schneller Shortcut: die [Faustregel für Outs](/de/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp") – Outs × 2 ≈ dein Prozentsatz für eine Karte, also 9 × 2 ≈ 18%.)
 
 - **Der Pot ist €100 und dein Gegner bettet €50 auf dem Turn.** Du callst €50, um €150 zu gewinnen – das sind 3:1, also brauchst du **25%** Equity. Dein Draw ist nur ~19,6%. ==r:Fold.== Der Preis ist falsch.
 - **Derselbe Draw, aber sie betten nur €25 in €100.** Jetzt callst du €25, um €125 zu gewinnen – 5:1, es braucht nur **16,7%**. Deine ~19,6% übersteigen das locker. ==g:Call.==

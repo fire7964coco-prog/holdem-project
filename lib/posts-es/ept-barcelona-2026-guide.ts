@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "El EPT Barcelona 2026 es del 16 al 29 de agosto en Casino Barcelona. Buy-in del Main Event: €5,300. La vía online más barata: Power Path desde $0.50 → Gold Pass (Main de €5,300 + side event de €1,100 + 8 noches de hotel + €690 de gastos). Necesitas una cuenta de PokerStars Live y un pasaporte en regla. Reserva hotel cuanto antes: agosto es plena temporada alta.",
   category: "tournament",
   date: "2026-06-17",
-  updated: "2026-07-25",
+  updated: "2026-08-26",
   masterUpdated: "2026-07-25",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -39,7 +39,7 @@ No cometas mi error. Esta guía lo cubre todo — desde ganar tu asiento por men
 ---
 
 > **Respuesta rápida**
-> El EPT Barcelona 2026 es del ==**16 al 29 de agosto**== en Casino Barcelona. Main Event: ==**€5,300**==. Vía más barata: Power Path desde $0.50 → ==g:Gold Pass (asiento al Main de €5,300 + 8 noches de hotel + €690 de gastos)==. Necesitas una cuenta de PokerStars Live y un pasaporte en regla. ==r:Reserva hotel ya — agosto es plena temporada alta.==
+> El EPT Barcelona 2026 es del ==**16 al 29 de agosto**== en Casino Barcelona. Main Event: ==**€5,300**==. Vía más barata: Power Path desde $0.50 → ==g:Gold Pass (asiento al Main de €5,300 + side event de €1,100 + 8 noches de hotel + €690 de gastos)==. Necesitas una cuenta de PokerStars Live y un pasaporte en regla. ==r:Reserva hotel ya — agosto es plena temporada alta.==
 
 ---
 
@@ -180,7 +180,7 @@ Gana el Paso 4 y recibirás uno de estos tres Power Passes:
 | Concepto | Coste estimado |
 |:---|:---:|
 | Buy-ins del Power Path para llegar al Paso 4 | **$11–$55** |
-| El Gold Pass cubre: entrada al Main + side event + 8 noches | ==g:✅ Incluido (~$10,300 de valor)== |
+| El Gold Pass cubre: entrada al Main + side event + 8 noches + €690 de gastos | ==g:✅ Incluido (~$10,300 de valor)== |
 | Vuelos (no siempre incluidos) | €150–€400 |
 | Comida y días extra | €400–€600 |
 | ==**Total de tu bolsillo**== | ==g:**~€550–€1,000**== |
@@ -327,7 +327,7 @@ El Día 1 se reparte en varios flights de salida (Día 1A, 1B, 1C, a veces 1D). 
 - Tu cuenta de ==**PokerStars Live**== verificada y activa
 - **Formulario de Origen de Fondos** completado si vas a pagar en efectivo
 - Una chaqueta ligera (==r:el aire acondicionado del casino va agresivo en agosto==)
-- Snacks para el bolsillo (los descansos oficiales son escasos)
+- Snacks para el bolsillo (los descansos son cortos y las colas para comer, largas)
 - Auriculares (opcional, pero ayudan con el ruido de la mesa)
 
 ### El horario del Día 1
@@ -340,7 +340,7 @@ El Día 1 se reparte en varios flights de salida (Día 1A, 1B, 1C, a veces 1D). 
 |---|---|
 | ~11:00 | Abre el registro (==r:llega 30 min antes como mínimo==) |
 | ~12:00 | Cartas al aire — arranca el Día 1 |
-| ~20:30 | Fin del juego del Día 1 (normalmente 8–10 niveles) |
+| Por la noche | Fin del juego del Día 1 — normalmente 8 niveles; la hora exacta depende de la estructura |
 | Día 2+ | ==g:Solo continúan los jugadores que embolsaron fichas== |
 
 </div>

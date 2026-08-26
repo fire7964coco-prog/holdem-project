@@ -5,10 +5,10 @@ export const POST: Post = {
   seoTitle: "EPT Barcelona zu teuer? Der $0,50-Weg zum €5.300-Main-Event",
   title: "EPT Barcelona 2026 – kompletter Spieler-Guide: Zeitplan, Buy-ins & Qualifikation",
   desc: "EPT Barcelona 2026 – 16.–29. Aug., Casino Barcelona. $0,50 Power Path zum €5.300-Main-Event. Zeitplan, Buy-ins, Hotels und Tipps für Erstteilnehmer.",
-  tldr: "Die EPT Barcelona 2026 läuft vom 16.–29. Aug. im Casino Barcelona. Main-Event-Buy-in: €5.300. Günstigster Online-Weg: Power Path ab $0,50 → Gold Pass (€5.300 ME + 8 Nächte Hotel + €690 Spesen). Du brauchst ein PokerStars-Live-Konto und einen gültigen Personalausweis oder Reisepass. Buch die Hotels früh – der August ist Hochsaison.",
+  tldr: "Die EPT Barcelona 2026 läuft vom 16.–29. Aug. im Casino Barcelona. Main-Event-Buy-in: €5.300. Günstigster Online-Weg: Power Path ab $0,50 → Gold Pass (€5.300 ME + €1.100 Side Event + 8 Nächte Hotel + €690 Spesen). Du brauchst ein PokerStars-Live-Konto und einen gültigen Personalausweis oder Reisepass. Buch die Hotels früh – der August ist Hochsaison.",
   category: "tournament",
   date: "2026-06-17",
-  updated: "2026-08-15",
+  updated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "16 Min.",
   emoji: "🃏",
@@ -38,7 +38,7 @@ Neu bei Live-Turnieren? Überflieg zuerst [den Turnier-Guide](/de/blog/holdem-to
 ---
 
 > **Kurze Antwort**
-> Die EPT Barcelona 2026 läuft vom ==**16.–29. Aug.**== im Casino Barcelona. Main Event: ==**€5.300**==. Günstigster Weg: Power Path ab $0,50 → ==g:Gold Pass (€5.300 ME-Platz + 8 Nächte Hotel + €690 Spesen)==. Du brauchst ein PokerStars-Live-Konto und einen gültigen Personalausweis oder Reisepass. ==r:Buch jetzt die Hotels – der August ist Hochsaison.==
+> Die EPT Barcelona 2026 läuft vom ==**16.–29. Aug.**== im Casino Barcelona. Main Event: ==**€5.300**==. Günstigster Weg: Power Path ab $0,50 → ==g:Gold Pass (€5.300 ME-Platz + €1.100 Side Event + 8 Nächte Hotel + €690 Spesen)==. Du brauchst ein PokerStars-Live-Konto und einen gültigen Personalausweis oder Reisepass. ==r:Buch jetzt die Hotels – der August ist Hochsaison.==
 
 ---
 
@@ -113,7 +113,7 @@ Gewinnst du Step 4, erhältst du einen von drei Power Passes:
 |:---|:---:|:---|
 | Bronze Pass | ~$530 | Online-Turnier-Guthaben |
 | Silver Pass | ~$2.300 | Mid-Tier-Live-Event-Einträge |
-| ==**Gold Pass**== | ==g:**~$10.300** (USD)== | ==g:€5.300 ME + €1.100 Side Event + 8 Nächte Hotel + Spesen== |
+| ==**Gold Pass**== | ==g:**~$10.300** (USD)== | ==g:€5.300 ME + €1.100 Side Event + 8 Nächte Hotel + €690 Spesen== |
 
 ==g:Der **Gold Pass** ist der, den du willst.== PokerStars zielt darauf ab, dass mindestens 25% des Main-Event-Felds Satellite-Qualifikanten sind – die Plätze sind also echt.
 
@@ -179,7 +179,7 @@ Keine Lust, vier Stufen zu grinden? PokerStars fährt den ganzen Sommer über au
 | Posten | Geschätzte Kosten |
 |:---|:---:|
 | Power-Path-Buy-ins (nur Step 1–3 sind kaufbar) | **$0,50–$11** |
-| Gold Pass deckt: ME-Eintritt + Side Event + 8 Nächte | ==g:✅ Enthalten (~$10.300 USD Wert)== |
+| Gold Pass deckt: ME-Eintritt + Side Event + 8 Nächte + €690 Spesen | ==g:✅ Enthalten (~$10.300 USD Wert)== |
 | Flüge (nicht immer enthalten) | €150–€400 |
 | Essen & Extra-Tage | €400–€600 |
 | ==**Gesamt aus eigener Tasche**== | ==g:**~€550–€1.000**== |
@@ -326,7 +326,7 @@ Day 1 ist auf mehrere Start-Flights aufgeteilt (Day 1A, 1B, 1C, manchmal 1D). Du
 - Dein ==**PokerStars-Live-Konto**== verifiziert und aktiv
 - **Source-of-Funds-Formular** ausgefüllt, falls du bar zahlst
 - Eine leichte Jacke (==r:die Casino-Klimaanlage ist im August aggressiv==)
-- Snacks für die Tasche (offizielle Pausen sind selten)
+- Snacks für die Tasche (die Pausen sind kurz und die Schlangen an der Essensausgabe lang)
 - Kopfhörer (optional, aber sie helfen gegen den Tischlärm)
 
 ### Die Day-1-Zeitleiste
@@ -339,7 +339,7 @@ Day 1 ist auf mehrere Start-Flights aufgeteilt (Day 1A, 1B, 1C, manchmal 1D). Du
 |---|---|
 | ~11:00 | Registrierung öffnet (==r:sei mindestens 30 Min. früher da==) |
 | ~12:00 | Cards in the air – Day 1 beginnt |
-| ~20:30 | Spielende für Day 1 (üblicherweise 8–10 Level) |
+| Abends | Spielende für Day 1 – üblicherweise 8 Level; die genaue Uhrzeit hängt von der Struktur ab |
 | Day 2+ | ==g:Nur Spieler, die Chips eingetütet haben, machen weiter== |
 
 </div>
@@ -402,7 +402,7 @@ A. Ja. Unter den spanischen Casino-Vorschriften erfordert **jede** Bar-Transakti
 
 **Q. Was passiert, wenn ich einen Power Path Gold Pass gewinne – wird das Hotel automatisch gebucht?**
 
-A. PokerStars kontaktiert dich, nachdem du den Pass gewonnen hast. Der Gold Pass enthält typischerweise: ==g:€5.300 ME-Eintritt + €1.100 Side-Event-Guthaben + 8 Nächte Hotel + tägliche Spesen==. Du koordinierst die Buchung mit dem PokerStars-Live-Team – es hat einen dedizierten Support.
+A. PokerStars kontaktiert dich, nachdem du den Pass gewonnen hast. Der Gold Pass enthält typischerweise: ==g:€5.300 ME-Eintritt + €1.100 Side-Event-Guthaben + 8 Nächte Hotel + €690 Spesen==. Du koordinierst die Buchung mit dem PokerStars-Live-Team – es hat einen dedizierten Support.
 
 **Q. Ist Barcelona sicher für Pokerspieler, die große Mengen Bargeld tragen?**
 

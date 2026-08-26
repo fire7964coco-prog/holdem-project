@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In einem Pokerturnier zahlst du ein festes Buy-in für Chips, die Blinds steigen auf einem Timer, bis ein Spieler alle Chips hält. Die Top 10–15% des Feldes kommen in die Payouts. Formate sind Freezeout, PKO, Satellite und Deepstack – der Einstieg läuft über direktes Buy-in, Satellite oder Online-Vorregistrierung.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-08-16",
+  updated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "14 Min.",
   emoji: "🏆",
@@ -94,7 +94,7 @@ Genau das lassen die meisten Anfänger-Guides aus, und es ist das wichtigste mec
 
 Beachte: **Du hast keinen einzigen Chip verloren** zwischen Level 1 und Level 9. Aber dein Stack ging von 200 BB auf 10 BB, weil die Blinds gestiegen sind. So erzwingen Turniere Action und eliminieren am Ende Spieler.
 
-==g:Faustregel: unter 20 Big Blinds bist du im Push-or-Fold-Territorium. Unter 10 Big Blinds musst du fast jede spielbare Hand shoven, bevor die Blinds dich lebendig auffressen.==
+==g:Faustregel: unter 20 Big Blinds bist du im Push-or-Fold-Territorium. Unter 10 Big Blinds musst du fast jede spielbare Hand shoven – vor allem aus später Position oder dem Small Blind –, bevor die Blinds dich lebendig auffressen.==
 
 Wenn du dort ankommst, findest du die exakten Shove-Ranges in [Short-Stack-Strategie – wann pushen oder folden](/de/blog/holdem-short-stack).
 
@@ -126,12 +126,12 @@ Meist bleiben 6–9 Spieler übrig. Die Payouts steigen mit jeder Eliminierung s
 ## Welche Arten von Pokerturnieren gibt es?
 
 > **Kurze Antwort**
-> Die acht Formate auf einem Turnier-Schedule unterscheiden sich in vier Punkten: ob du nach dem Busten nachkaufen darfst (Freezeout gegen Rebuy und Re-entry), ob es Kopfgelder gibt (regulär gegen Bounty und PKO), ob der Preis Bargeld oder ein Sitzplatz ist (regulär gegen Satellite) und wie tief die Startstacks sind (Standard gegen Deepstack). MTT und SNG sagen dagegen nur, wie viele Tische laufen und ob es eine feste Startzeit gibt.
+> Die acht Formate auf einem Turnier-Schedule unterscheiden sich in vier Punkten: ob du während des frühen Fensters Chips nachkaufen darfst (Freezeout gegen Rebuy und Re-entry), ob es Kopfgelder gibt (regulär gegen Bounty und PKO), ob der Preis Bargeld oder ein Sitzplatz ist (regulär gegen Satellite) und wie tief die Startstacks sind (Standard gegen Deepstack). MTT und SNG sagen dagegen nur, wie viele Tische laufen und ob es eine feste Startzeit gibt.
 
 | Format | Wie es funktioniert | Am besten für |
 |:---|:---|:---|
 | **Freezeout** | Ein Buy-in, kein Rebuy. Bust = raus. | Anfänger – feste Kosten |
-| **Rebuy / Re-entry** | Zwei verschiedene Formate: beim **Rebuy** kaufst du Chips nach, während du noch sitzt (meist wenn dein Stack unter eine Schwelle fällt), beim **Re-entry** steigst du nach dem Bust komplett neu ein – beides nur während der frühen Levels | Aggressive Spieler mit größerer Bankroll |
+| **Rebuy / Re-entry** | Zwei verschiedene Formate: beim **Rebuy** kaufst du Chips nach – nach einem Bust genauso wie (in vielen Events) schon dann, wenn dein Stack auf oder unter den Startstack fällt; beim **Re-entry** steigst du nach dem Bust komplett neu ein – beides nur während der frühen Levels | Aggressive Spieler mit größerer Bankroll |
 | **Bounty / KO** | Kassiere ein festes Bounty in bar für jeden Spieler, den du eliminierst | Action-Spieler – Extra-Einkommen pro Knockout |
 | **PKO (Progressive KO)** | Bounties wachsen mit jedem Knockout – ein Teil an dich ausgezahlt, ein Teil auf deinen Kopf addiert | High-Variance-Spieler mit großem Upside |
 | **Deepstack** | Startstack deutlich über dem Standard-Event derselben Serie, dazu langsamere Levels | Spieler, die mehr Postflop-Spiel wollen |
@@ -155,7 +155,7 @@ Ein PKO (Progressive Knockout) ist ein Bounty-Turnier, bei dem typischerweise ru
 
 Ein Deepstack-Pokerturnier startet dich mit deutlich mehr Chips im Verhältnis zu den Blinds als das Standard-Event derselben Serie und kombiniert das meist mit längeren Blind-Levels. **Einen genormten Schwellenwert gibt es dafür nicht** – „Deepstack“ ist immer eine relative Angabe. Rechne im Structure Sheet nach, wie viele Big Blinds dein Startstack auf Level 1 wert ist, und vergleiche ihn mit den 100–200 BB eines Standard-Events. Mehr Chips und eine langsamere Uhr bedeuten mehr Postflop-Spiel, mehr Raum, um einen Fehler zu korrigieren, und längere Tage.
 
-**Was ist mit Rebuys und Add-ons?** In einem Rebuy-Event kannst du nach dem Busten während eines festgelegten frühen Zeitfensters erneut zahlen; ein Add-on ist ein einmaliger optionaler Chip-Kauf, der meist angeboten wird, wenn dieses Fenster schließt. Danach spielt sich das Event wie ein Freezeout aus.
+**Was ist mit Rebuys und Add-ons?** In einem Rebuy-Event kannst du während eines festgelegten frühen Zeitfensters nachkaufen – in vielen Events immer dann, wenn dein Stack auf oder unter dem Startstack liegt, ohne vorher busten zu müssen; ein Add-on ist ein einmaliger optionaler Chip-Kauf, der meist angeboten wird, wenn dieses Fenster schließt. Danach spielt sich das Event wie ein Freezeout aus.
 
 ---
 
@@ -171,7 +171,7 @@ Ein Deepstack-Pokerturnier startet dich mit deutlich mehr Chips im Verhältnis z
 
 Statt $10.000 auszugeben, trittst du in einem $500-Turnier gegen 19 andere Spieler an. Eine Person gewinnt den $10.000-Sitzplatz.
 
-**Verkettete Satellites** gehen sogar noch tiefer. Ein $5-Super-Satellite → $55-Qualifier → $215-Event → $1.050-Main-Event. Viele Spieler bei Major-Events sind über eine Satellite-Kette für einen Bruchteil des direkten Buy-ins eingestiegen.
+**Verkettete Satellites** gehen sogar noch tiefer. Ein $5-Super-Satellite → $55-Qualifier → $215-Event → ein $1.050-Online-Main-Event. Viele Spieler bei Major-Events sind über eine Satellite-Kette für einen Bruchteil des direkten Buy-ins eingestiegen.
 
 ==g:Satellite-Strategie unterscheidet sich vom regulären Turnierspiel – **aber nur, wenn mehrere Plätze vergeben werden.** Sobald dein Stack in einem Mehrplatz-Satellite für einen Sitzplatz reicht, hör auf, Risiken einzugehen, und folde sogar gute Hände. **Im Beispiel oben mit nur einem Sitzplatz gilt das Gegenteil: Bei Winner-take-all entspricht dein Geldanteil exakt deinem Chipanteil – da musst du bis zum letzten Chip akkumulieren.**==
 
@@ -328,7 +328,7 @@ Das erzählt dir kein anderer Guide. Hier ist eine realistische Tag-1-Timeline f
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
 <div style="color:hsl(var(--primary));font-weight:700">13:00–15:00</div>
-<div style="color:hsl(var(--foreground))">Levels 2–4. Late Registration noch offen. Das Feld wächst. Einige Spieler busten bereits.</div>
+<div style="color:hsl(var(--foreground))">Levels 2–4. Late Registration noch offen. Das Feld wächst. Die Antes setzen ein, wie im Structure Sheet festgelegt (Level 3 im Beispiel oben). Einige Spieler busten bereits.</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
 <div style="color:hsl(var(--primary));font-weight:700">~15:30</div>
@@ -438,7 +438,7 @@ A. In einem regulären Bounty- (Knockout-) Turnier trägt jeder Spieler ein fest
 
 **Q. Wie sind die Regeln für Rebuys und Add-ons?**
 
-A. In einem Rebuy-Turnier kannst du die Startgebühr nach dem Busten erneut zahlen (oder manchmal, wenn dein Stack unter eine Schwelle fällt), aber nur während einer festgelegten Rebuy-Periode – meist der ersten paar Blind-Levels. Ein Add-on ist ein einmaliger optionaler Chip-Kauf, der typischerweise allen am Ende der Rebuy-Periode angeboten wird, unabhängig von der Stack-Größe. Sobald dieses Fenster schließt, spielt sich das Event als Freezeout aus. Die genauen Regeln variieren je nach Veranstaltungsort, also prüf das Structure Sheet.
+A. In einem Rebuy-Turnier kannst du während einer festgelegten Periode Chips nachkaufen – in vielen Events immer dann, wenn dein Stack auf oder unter dem Startstack liegt, ohne vorher busten zu müssen – meist in den ersten paar Blind-Levels. Ein Add-on ist ein einmaliger optionaler Chip-Kauf, der typischerweise allen am Ende der Rebuy-Periode angeboten wird, unabhängig von der Stack-Größe. Sobald dieses Fenster schließt, spielt sich das Event als Freezeout aus. Die genauen Regeln variieren je nach Veranstaltungsort, also prüf das Structure Sheet.
 
 **Q. Was brauche ich, um zu Hause ein Pokerturnier zu veranstalten?**
 

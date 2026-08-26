@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Limpear es entrar en un bote preflop solo igualando la ciega grande en lugar de subir o foldear. El open-limp (ser el primero en entrar) casi siempre es un error — no puedes ganar el bote preflop, cedes la iniciativa y los buenos jugadores te castigan. Pero limpear no siempre está mal: completar la ciega pequeña, hacer over-limp con manos especulativas detrás de otros limpers, y algunos casos en vivo y con stack corto son excepciones legítimas.",
   category: "strategy",
   date: "2026-07-05",
-  updated: "2026-08-11",
-  masterUpdated: "2026-08-11",
+  updated: "2026-08-26",
+  masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🚶",
@@ -130,7 +130,7 @@ El arreglo es refrescantemente simple: **subir o foldear como estándar, y reser
 
 Una salvedad honesta, porque el contexto lo cambia todo. En las **partidas online y más duras**, el open-limp es casi indefendible — los campos son agresivos, alguien te va a iso-raisear casi siempre, y la base GTO es esencialmente "no hagas open-limp en una partida normal de 100bb" — salvo desde la ciega pequeña, donde completar sigue siendo defendible por las razones de arriba.
 
-En las **partidas en vivo muy pasivas de stakes bajos**, es otro mundo. Si en la mesa dejan rutinariamente que los limpers vean flops baratos y nadie los castiga, hacer open-limp con manos especulativas desde posición temprana es mucho menos costoso — no te aíslan, y llegas a realizar equity con manos que preferirían no enfrentarse a una subida. Sigue sin ser *óptimo*, pero la penalización es pequeña, y buscar trío en un bote familiar puede imprimir dinero. Lee tu mesa: cuanto más blanda y pasiva sea la partida, más limpear te puedes permitir; cuanto más dura sea, más estrictamente deberías subir o foldear.
+En las **partidas en vivo muy pasivas de stakes bajos**, es otro mundo. Si en la mesa dejan rutinariamente que los limpers vean flops baratos y nadie los castiga, limpear con manos especulativas cuesta mucho menos — no te aíslan, y llegas a realizar equity con manos que preferirían no enfrentarse a una subida. Sigue sin ser *óptimo* — y el open-limp desde posición temprana sigue siendo la peor versión de ello — pero la penalización es pequeña, y buscar trío en un bote familiar puede imprimir dinero. Lee tu mesa: cuanto más blanda y pasiva sea la partida, más limpear te puedes permitir; cuanto más dura sea, más estrictamente deberías subir o foldear.
 
 ---
 

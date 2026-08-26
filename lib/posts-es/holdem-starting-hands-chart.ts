@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "De los 169 tipos de mano inicial, solo una pequeña franja superior — cerca del 15–20% de las manos que te reparten — es rentable para un principiante. Los pares grandes (AA–TT) y AK suben desde cualquier asiento; cuanto más tarde actúas, más abres tu rango — desde ~13% en UTG hasta ~43% en el botón (más amplio aún en 6-max). Empieza con una tabla simplificada y añade las tablas preflop GTO cuando el subir-o-foldear ya te salga automático.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-08-22",
+  updated: "2026-08-26",
   masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -211,7 +211,7 @@ El ==r:error más caro que cometen los principiantes es igualar subidas con ases
 
 Las tablas solo funcionan si las tienes delante cuando importa. Para partidas caseras y sesiones de estudio, la hicimos entera imprimible:
 
-**[Descarga gratis la tabla de manos iniciales de póker imprimible (PDF)](/downloads/poker-starting-hands-chart.pdf)** — una página, los rangos de apertura de 9-max y 6-max lado a lado, en formato chuleta. Imprímela o mantenla abierta en el móvil entre mano y mano.
+**[Descarga gratis la tabla de manos iniciales de póker imprimible (PDF)](/downloads/poker-starting-hands-chart.pdf)** — una página: la tabla de apertura 9-max completa más el ajuste 6-max de una línea, en formato chuleta. Imprímela o mantenla abierta en el móvil entre mano y mano.
 
 Luego úsala al pie de la letra, en cada mano, durante tus primeras 20+ sesiones:
 
@@ -278,7 +278,7 @@ A. No al principio. Las tablas preflop GTO usan frecuencias mixtas diseñadas pa
 
 **Q. ¿Importa de verdad ser del mismo palo?**
 
-A. Ser del mismo palo añade en torno a un 2–3% de equity sobre la misma mano de distinto palo — significativo, pero no una razón para jugar una mano mala. Dos cartas del mismo palo hacen color en el river solo ~6.5% de las veces (y un proyecto de color ligado en el flop se completa cerca del 35% de las veces para el river). La basura del mismo palo sigue siendo basura.
+A. Ser del mismo palo añade en torno a 2 puntos porcentuales de equity sobre la misma mano de distinto palo (AKs tiene 67% contra una mano aleatoria; AKo, 65%) — significativo, pero no una razón para jugar una mano mala. Dos cartas del mismo palo hacen color en el river solo ~6.5% de las veces (y un proyecto de color ligado en el flop se completa cerca del 35% de las veces para el river). La basura del mismo palo sigue siendo basura.
 
 **Q. ¿Debería foldear siempre los pares servidos bajos como 22 o 33?**
 

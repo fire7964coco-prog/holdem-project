@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Las odds implícitas son las fichas extra que esperas ganar en las calles siguientes cuando ligas tu proyecto. Te permiten pagar de forma rentable un proyecto que las pot odds por sí solas dirían foldear — pero solo si los stacks son profundos y tu rival de verdad va a pagarte.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-08-12",
-  masterUpdated: "2026-08-12",
+  updated: "2026-08-26",
+  masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "💰",
@@ -68,7 +68,7 @@ La regla práctica: **empieza por las pot odds.** Si tu equity ya supera el prec
 Escrito limpio, con ==g:x== como el dinero extra que debes ganar cuando completas:
 
 :::steps
-Halla tu probabilidad de ligar | Cuenta outs, conviértelas a porcentaje (la [regla del 4 y 2](/es/blog/holdem-pot-odds) te acerca)
+Halla tu probabilidad de ligar | Cuenta outs, conviértelas a porcentaje (la [regla del 2 y 4](/es/blog/holdem-outs) te acerca)
 Divide tu call entre esa probabilidad | Este es el total que necesitas ganar para quedar en tablas
 Resta el bote actual **más tu propio call** | Lo que queda es el extra que debes ganar después — esa es tu ==g:x==
 Juzga si es realista | Stacks profundos + un rival que paga a gusto = sí. Stacks cortos o una mesa peligrosa = no

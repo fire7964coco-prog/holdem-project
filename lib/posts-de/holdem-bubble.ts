@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Die Bubble ist der Moment kurz vor dem Geld, wo eine weitere Elimination allen anderen auszahlt. Weil ein Bust nichts bringt, ist Überleben mehr wert als die Chips, die du gewinnen würdest – Calling Ranges ziehen sich hart zusammen, während Shoves weit bleiben. Big Stacks attackieren, Medium Stacks sitzen am meisten in der Falle (nicht die Short Stacks), und an einer Satellite-Bubble foldest du alles, sogar Asse, sobald dein Platz gesichert ist.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-08-18",
-  masterUpdated: "2026-08-13",
+  updated: "2026-08-26",
+  masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "13 Min.",
   emoji: "🫧",
@@ -162,7 +162,7 @@ Die andere Hälfte: Der Bubble Factor richtet sich danach, **wer dir gegenübers
 Ohne diese Regel könnten Spieler an langsamen Tischen Hand um Hand folden, während schnellere Tische durch die Bubble brennen. Hand for Hand gleicht das Feld an:
 
 - **Wie es funktioniert:** Der Turnierdirektor kündigt Hand for Hand an – die Turnieruhr wird dabei angehalten, und stattdessen laufen pro gespielter Hand feste ==2 Minuten== vom Level ab, egal wie lange die Hand tatsächlich dauert (WSOP-Regel 126.a und 126.c; TDA RP-8). Die Blinds steigen also auch während der Bubble weiter – nur eben pro Hand statt pro Echtzeitminute. Alle Tische teilen eine Hand aus, und kein Tisch startet die nächste, bis jeder Tisch fertig ist. Busten zwei Spieler in derselben Hand-for-Hand-Runde am **selben Tisch**, nimmt derjenige mit weniger Chips zu Beginn der Hand die niedrigere (Bubble-)Platzierung; busten sie an **verschiedenen Tischen**, werden sie als gleichrangig gewertet und teilen sich die beiden betroffenen Auszahlungen.
-- **Stalling:** die volle Time Bank bei jeder Entscheidung nehmen, um weniger Hände zu sehen (und sich ins Geld zu folden). Es funktioniert genau deshalb, weil Tanken auf der Uhr nichts kostet – die Hand zieht ihre 2 Minuten ab, ob du sofort foldest oder die ganze Time Bank verbrennst. Big Stacks haben keinen Grund zu stallen – sie wollen mehr Hände zum Attackieren. Short und Medium Stacks stallen manchmal, um zu überleben, ==aber exzessives Stalling kann einen Clock-Call oder eine Penalty einbringen==, also tanke in Maßen.
+- **Stalling:** die volle Time Bank bei jeder Entscheidung nehmen, um weniger Hände zu sehen (und sich ins Geld zu folden). Es funktioniert genau deshalb, weil Tanken auf der Uhr nichts kostet – die Hand zieht ihre 2 Minuten ab, ob du sofort foldest oder die ganze Time Bank verbrennst. Big Stacks haben keinen Grund zu stallen – sie wollen mehr Hände zum Attackieren. Short und Medium Stacks stallen manchmal, um zu überleben, ==aber exzessives Stalling kann einen Clock-Call oder eine Penalty einbringen== – tanke in Maßen, ohne die Time Bank absichtlich zu verbrennen.
 - **Nutze es aus:** Weil alle anderen langsamer werden, sammelt ein Big Stack, der während Hand for Hand weiter Druck macht, Blinds und Antes fast unangefochten ein.
 
 ---
@@ -174,9 +174,9 @@ Ohne diese Regel könnten Spieler an langsamen Tischen Hand um Hand folden, wäh
 
 Dieser Fold ist der kontraintuitivste Spot im Poker – und er ist korrekt. Wenn dir das Gewinnen eines Flips ==denselben Platz gibt, den du bereits gesichert hast==, während das Verlieren dich eliminiert, gibt es keine Belohnung und ein enormes Risiko:
 
-- **Sobald dein Platz mathematisch sicher ist** (du bist weit genug innerhalb der Bubble, dass du nicht mehr eingeholt werden kannst), folde jede Hand – ja, sogar AA und KK – und lass die kürzeren Stacks es ausfechten.
+- **Sobald dein Platz mathematisch sicher ist** (du bist weit genug innerhalb der Bubble, dass du nicht mehr eingeholt werden kannst), folde jede Hand – ja, sogar AA und KK – und lass die kürzeren Stacks es ausfechten. Rechne diese Schwelle bei jedem Blind-Anstieg neu: Die „sichere Zone“ schrumpft, sobald die Antes greifen.
 - **Spiel bewusst langsam, aber bleib innerhalb der Regeln.** An einer Satellite-Bubble schaut der Floor am schärfsten auf Stalling und geht oft früh in Hand for Hand. Exzessives Tanken bringt einen Clock-Call – läuft die Zeit ab, wird deine Hand für tot erklärt – und wiederholtes Stallen zieht Penalties nach sich, von der Verwarnung über ausgesetzte Hände bis zu mehreren ausgesetzten Runden. An der Sicherheitsschwelle kostet dich das genau den Sitzplatz, den du schützen wolltest.
-- **Die eine Ausnahme:** Calle nur, wenn das Busten des spezifischen Short Stacks, gegen den du antrittst, die Bubble *für dich* platzen ließe – d.h. seine Elimination garantiert deinen Platz.
+- **Die eine Ausnahme:** Calle nur, wenn du den betreffenden Short Stack coverst und seine Elimination die Bubble *für dich* platzen lässt – und nur, solange dein Platz auch dann garantiert bleibt, wenn du den Pot verlierst.
 
 Wenn du eine Sache aus diesem Abschnitt mitnimmst: Ein Satellite ist kein normales Turnier. Chips über der Sicherheitsschwelle sind wertlos, also spiel entsprechend.
 

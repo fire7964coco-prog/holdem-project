@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "En los cash games las fichas son dinero real y las ciegas se mantienen fijas. En los torneos las fichas son equity de supervivencia, las ciegas suben y los premios dependen de en qué puesto termines.",
   category: "tournament",
   date: "2026-06-11",
-  updated: "2026-08-11",
-  masterUpdated: "2026-08-11",
+  updated: "2026-08-26",
+  masterUpdated: "2026-08-26",
   hideSummaryImageSlot: true,
   readTime: "16 min",
   emoji: "🏆",
@@ -34,7 +34,7 @@ Casi todo jugador que empieza en Hold'em acaba haciéndose la misma pregunta:
 
 Al principio parecen el mismo juego. Sigues recibiendo dos cartas privadas, cinco comunitarias y cuatro rondas de apuestas desde preflop hasta river. Pero a nivel estratégico son casi dos mundos distintos. En un cash game, tus fichas son dinero. En un torneo, tus fichas son tu supervivencia.
 
-Esta guía desglosa ==cash game vs torneo en póker== tal como lo necesita de verdad un principiante: qué es un cash game y cómo funciona, valor de las fichas, estructura de ciegas, cómo cambia la estrategia, qué formato es más difícil, cuál es más rentable, bankroll, ICM y con cuál deberías empezar. Si los torneos en sí todavía son un misterio, lee primero [cómo funcionan los torneos de póker — buy-ins, niveles de ciegas y el flujo del Día 1](/es/blog/holdem-tournament); este artículo compara los dos formatos en lugar de repetir esa guía de estructura.
+Esta guía desglosa ==cash game vs torneo en póker== tal como lo necesita de verdad un principiante: qué es un cash game y cómo funciona, valor de las fichas, estructura de ciegas, cómo cambia la estrategia, qué formato es más difícil, cuál es más rentable, bankroll, ICM, cuándo dejar la mesa y con cuál deberías empezar. Si los torneos en sí todavía son un misterio, lee primero [cómo funcionan los torneos de póker — buy-ins, niveles de ciegas y el flujo del Día 1](/es/blog/holdem-tournament); este artículo compara los dos formatos en lugar de repetir esa guía de estructura.
 
 ### La respuesta en 15 segundos
 
@@ -267,7 +267,9 @@ Entonces, ¿cuándo *deberías* dejar un cash game? Las reglas dicen "cuando qui
 - **Vete cuando la mesa deje de ser buena.** Los jugadores más flojos se marchan, la alineación se ha vuelto tight o han desaparecido los asientos que hacían la mesa rentable.
 - **Vete cuando *tú* dejes de estar bien.** El tilt, el cansancio y la distracción destruyen los win rates más rápido que las malas cartas. Si te pillas pagando por frustración, recoge las fichas.
 - **No te vayas solo porque llegaste a una cifra.** Ir arriba o abajo un buy-in no dice nada sobre si la próxima hora será rentable. Dejar la mesa ganando en una gran partida y seguir grindeando pérdidas en una malísima ambos son leaks.
-- **Irte justo después de un bote grande está permitido.** Ninguna regla te obliga a "dar acción" — aunque, por etiqueta, una vuelta corta de enfriamiento queda mejor que un "hit-and-run" instantáneo (levantarte justo tras ganar el bote).
+- **Irte justo después de un bote grande está permitido.** Ninguna regla te obliga a "dar acción" — aunque, por etiqueta, jugar unas cuantas manos más antes de recoger queda mejor que un "hit-and-run" instantáneo (levantarte justo tras ganar el bote).
+
+Dos reglas de la casa que aplican casi en todas partes: no puedes guardarte fichas fuera de la mesa mientras sigues jugando ("ratholing"), y si te vas y vuelves a la misma partida poco después, normalmente debes reentrar por al menos lo que te llevaste.
 
 | Situación del jugador | Mejor ajuste |
 |------|------|
@@ -382,11 +384,11 @@ A. Una guía común es 20-40 buy-ins para cash games y 100+ buy-ins para torneos
 
 **Q. ¿Con cuántas ciegas grandes se empieza en un cash game vs un torneo?**
 
-A. En un cash game entras por el máximo de la mesa — normalmente en torno a 100 ciegas grandes ($200 en un $1/$2) — porque los stacks profundos recompensan la habilidad postflop y te dejan ganar un stack completo cuando vas por delante. En un torneo la profundidad te la elige el propio evento: sueles empezar en torno a 100-300 ciegas grandes, pero las ciegas que suben lo reducen a 20, luego a 10 y luego a terreno de push/fold. En corto: en cash entras profundo, y en torneo vigila cómo baja tu cuenta de ciegas grandes y ajusta a medida que lo hace.
+A. En un cash game entras por el máximo de la mesa — en un $1/$2 suele ser $200–$300, es decir, 100–150 ciegas grandes — porque los stacks profundos recompensan la habilidad postflop y te dejan ganar un stack completo cuando vas por delante. En un torneo la profundidad te la elige el propio evento: sueles empezar en torno a 100-300 ciegas grandes, pero las ciegas que suben lo reducen a 20, luego a 10 y luego a terreno de push/fold. En corto: en cash entras profundo, y en torneo vigila cómo baja tu cuenta de ciegas grandes y ajusta a medida que lo hace.
 
 **Q. ¿Cuántas fichas hacen falta para un cash game en casa?**
 
-A. Un set estándar de 300 fichas cubre cómodamente hasta unos 6 jugadores — con 7-8 son 300 ÷ 8 = menos de 40 fichas por persona, así que conviene un set de 500. Dale a todos el mismo stack inicial repartido en 3-4 denominaciones, con la mayoría de las fichas en los valores más pequeños para que se pueda apostar y dar cambio con facilidad. El número exacto importa menos que el hecho de que todos acuerden cuánto vale cada color en dinero real antes de la primera mano.
+A. Un set estándar de 300 fichas cubre cómodamente hasta unos 6 jugadores — con 7-8 serían 300 ÷ 8 = menos de 40 fichas por persona si lo repartieras todo, y en un cash game no deberías: fija el buy-in como un rango mín/máx, usa 3-4 denominaciones con la mayoría de las fichas en los valores más pequeños, y guarda el resto en el maletín para las recompras. Por eso un set de 500 sirve mejor para 7-8 jugadores. El número exacto importa menos que el hecho de que todos acuerden cuánto vale cada color en dinero real antes de la primera mano.
 
 **Q. ¿Los jugadores profesionales juegan cash games o torneos?**
 

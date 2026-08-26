@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "tournament",
   date: "2026-06-19",
   updated: "2026-08-18",
-  masterUpdated: "2026-08-17",
+  masterUpdated: "2026-08-18",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏃",

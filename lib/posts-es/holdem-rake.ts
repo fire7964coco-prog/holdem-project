@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "El rake es la pequeña tajada que la sala se lleva de cada bote por montar la partida — normalmente entre 2.5 y 10% hasta un tope de unos pocos dólares. La mayoría de salas no cobra nada si todos foldean antes del flop ('no flop, no drop'). Golpea más fuerte a los límites bajos y a las mesas cortas, y el rakeback devuelve una parte a los regulares.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-08-11",
-  masterUpdated: "2026-08-11",
+  updated: "2026-08-26",
+  masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🏦",
@@ -19,7 +19,7 @@ export const POST: Post = {
   content: `
 Me hizo falta un mes deprimente de sesiones "en tablas" para descubrir a dónde iba realmente mi dinero. No estaba perdiendo contra los otros jugadores — les estaba ganando, por poco. Estaba perdiendo contra la ==tajada que la sala se lleva de cada bote que gano.== Esa comisión silenciosa se llama **rake**, y hasta que no lo entiendes, puedes ser un jugador ganador sobre el papel y un perdedor en la caja.
 
-El rake es la forma en que una sala gana dinero en un juego donde no juega ni una sola mano. Aquí tienes exactamente qué es, todas las formas en que se cobra, las cuentas honestas sobre ==g:cuánto pagas de verdad por sesión==, y cómo el rakeback recupera una parte. Es la comisión que decide si batir el póker de límites bajos es siquiera posible.
+El rake es la forma en que una sala gana dinero en un juego donde no juega ni una sola mano. Aquí tienes exactamente qué es, todas las formas en que se cobra, las cuentas honestas sobre ==g:cuánto pagas de verdad por sesión==, y cómo el rakeback recupera una parte. Es la comisión que decide si batir el póker de límites bajos es siquiera posible — y uno de los términos más caros de malinterpretar de todo el [glosario de póker](/es/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp").
 
 ---
 
@@ -83,7 +83,7 @@ Aquí viene la parte que cambió mi forma de ver el juego. El porcentaje suena m
 | Mismo jugador, mismo juego | Rake pagado | Resultado |
 |:---|:---:|:---|
 | Sala con un **tope de $2** | ~5 bb/100 | +8 bb/100 de win rate sigue siendo **ganador (+3)** |
-| Sala con un **tope de $4** | ~8–9 bb/100 | +8 bb/100 se convierte en **perdedor (−1)** |
+| Sala con un **tope de $4** | ~8–9 bb/100 | +8 bb/100 queda en tablas o se convierte en **perdedor (0 a −1)** |
 
 </div>
 
@@ -124,10 +124,10 @@ Esa comisión — también llamada **juice** o **vig** — es el equivalente del
 
 Es un trade-off real, y la respuesta sorprende:
 
-- **El rake en vivo** tiende a ser un **porcentaje más alto (a menudo 10%) con un tope mayor ($4–$6)** — pero solo juegas ~30 manos por hora, así que lo pagas menos veces.
+- **El rake en vivo** tiende a ser un **porcentaje más alto (a menudo 10%) con un tope mayor ($3–$6)** — pero solo juegas ~30 manos por hora, así que lo pagas menos veces.
 - **El rake online** suele ser un **porcentaje más bajo (3–5%) con un tope menor ($1–$3)** — pero puedes ver 250+ manos por hora entre varias mesas, así que un grinder de volumen puede pagar *más* rake por hora que un jugador en vivo a pesar de la tasa más baja.
 
-Y hay un sitio donde nada de esto aplica: en **California la ley prohíbe que la sala cobre un porcentaje del bote**, así que los cardrooms cobran una tarifa fija o una renta por tiempo. Los cardrooms de allá cobran una tarifa fija por mano o una renta por tiempo.
+Y hay un sitio donde nada de esto aplica: en **California la ley prohíbe que la sala cobre un porcentaje del bote**, así que los cardrooms de allá cobran una tarifa fija por mano o una renta por tiempo.
 
 La lección: nunca juzgues el rake solo por el porcentaje. Lo que importa es el porcentaje **multiplicado por cuántas veces lo pagas.** Una partida online "barata" del 5% a cuatro mesas puede costarte más que una partida en vivo "cara" del 10% — que es exactamente por qué el rakeback y la selección de mesa importan más online.
 
@@ -170,7 +170,7 @@ A. Hay tres formas de calcularlo. El **contribuido (contributed)** se basa solo 
 
 **Q. ¿Cuánto rake cobran las salas como GGPoker o PokerStars?**
 
-A. Varía según la sala, los límites y el formato, así que siempre conviene mirar la estructura de rake concreta antes de elegir mesa. Como referencia, el rake online suele moverse en un 3–5% del bote con un tope de $1–$3, mientras que en vivo tiende a ser un porcentaje más alto (a menudo el 10%) con un tope de $4–$6. Un detalle a tener en cuenta: la mayoría de salas siguen el "no flop, no drop" y no rakean los botes preflop, pero unas pocas (sobre todo GGPoker) sí sacan rake de algunos, así que comprueba la regla de tu sala.
+A. Varía según la sala, los límites y el formato, así que siempre conviene mirar la estructura de rake concreta antes de elegir mesa. Como referencia, el rake online suele moverse en un 3–5% del bote con un tope de $1–$3, mientras que en vivo tiende a ser un porcentaje más alto (a menudo el 10%) con un tope de $3–$6. Un detalle a tener en cuenta: la mayoría de salas siguen el "no flop, no drop" y no rakean los botes preflop, pero unas pocas (sobre todo GGPoker) sí sacan rake de algunos, así que comprueba la regla de tu sala.
 
 **Q. ¿Cómo puedes pagar menos rake en póker?**
 

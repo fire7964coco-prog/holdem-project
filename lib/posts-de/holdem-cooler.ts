@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ein Cooler ist eine Hand, bei der du einen großen Pot mit einer sehr starken Holding verlierst, die du niemals korrekt folden könntest – wie Pocket Kings, die auf Asse treffen, oder ein Set, das gegen ein größeres Set verliert. Anders als beim Bad Beat lagst du die ganze Zeit hinten und keine Glückskarte hat dich „ausgesaugt“: Du hast alles richtig gemacht und trotzdem verloren. Es ist die ehrlichste Art von Poker-Katastrophe.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-08-18",
-  masterUpdated: "2026-08-11",
+  updated: "2026-08-26",
+  masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "🧊",
@@ -19,7 +19,7 @@ export const POST: Post = {
   content: `
 Ich erinnere mich noch an die Hand, die mir das Wort beigebracht hat. Ich habe am Flop ein Set Könige getroffen, bin am Turn all-in gegangen und habe meine Karten schon aufgedeckt, während ich nach dem Pot gegriffen habe – dann sah ich, wie mein Gegner ein Set Asse umdrehte. Ich hatte nichts falsch gemacht. Es gab kein schlechtes Play zu bereuen, keinen Draw, gegen den ich hätte folden müssen. Ich war geschlagen ab dem Moment, in dem die Chips reingingen, und es gab ==nichts, was ich hätte tun können==. Das ist ein Cooler, und sobald du ihn verstehst, hörst du auf, dir selbst die Schuld für Verluste zu geben, die du nie vermeiden konntest.
 
-Ein **Cooler** ist eine Hand, bei der du eine sehr starke Holding baust, einen großen Pot verlierst und ==g:Folden nie eine echte Option war== – die andere Hand war einfach größer. Unten steht genau, was das bedeutet, der entscheidende Unterschied zwischen einem Cooler und einem **Bad Beat** (die meisten verwechseln sie), die klassischen Cooler-Matchups und der ehrliche Teil, den keiner mag: wann *„das war nur ein Cooler“* in Wahrheit eine höfliche Ausrede für einen Fehler ist.
+Ein **Cooler** ist eine Hand, bei der du eine sehr starke Holding baust, einen großen Pot verlierst und ==g:Folden nie eine echte Option war== – die andere Hand war einfach größer. Unten steht genau, was das bedeutet, der entscheidende Unterschied zwischen einem Cooler und einem **Bad Beat** (die meisten verwechseln sie), die klassischen Cooler-Matchups und der ehrliche Teil, den keiner mag: wann *„das war nur ein Cooler“* in Wahrheit eine höfliche Ausrede für einen Fehler ist. Es ist einer der am häufigsten falsch verwendeten Begriffe im ganzen [Poker-Glossar](/de/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp").
 
 ---
 

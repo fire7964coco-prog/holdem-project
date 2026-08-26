@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ein Straddle ist ein optionaler Blind-Einsatz – meist das Doppelte des Big Blinds – der gesetzt wird, bevor die Karten ausgeteilt werden. Er kauft dem Straddler die letzte Action preflop und die Option zu raisen, und verdoppelt so den Einsatz. In fast jedem Fall ist es ein -EV-Spielzug, erlaubt nur im Cashgame nach Hausregeln.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-08-18",
-  masterUpdated: "2026-08-11",
+  updated: "2026-08-26",
+  masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "💰",
@@ -19,7 +19,7 @@ export const POST: Post = {
   content: `
 Als an meinem €1/€2-Tisch das erste Mal jemand gestraddelt hat, hatte ich keine Ahnung, warum der Typ under the gun €4 rauswarf, bevor die Karten kamen – und warum der Dealer die Action plötzlich einen Platz weiter eröffnete. Ich nannte es einen Monat lang „den Reiche-Leute-Einsatz“, bevor ich lernte, was er wirklich bewirkt: Ein Straddle ==verdoppelt den Einsatz und kauft einem Spieler das letzte Wort==, alles noch bevor irgendwer auf eine Karte geschaut hat.
 
-Wenn du in einem Live-Spiel schon mal gesehen hast, wie aus dem Nichts ein zusätzlicher Blind auftaucht – das ist der Begriff, den du suchst. Hier steht genau, was ein **Straddle** ist, jeder Typ, dem du begegnen wirst, wer zuerst handelt, wenn einer gesetzt wird, und die ehrliche Antwort auf die einzige Frage, die zählt: ==g:Solltest du ihn wirklich spielen?==
+Wenn du in einem Live-Spiel schon mal gesehen hast, wie aus dem Nichts ein zusätzlicher Blind auftaucht – das ist der Begriff, den du suchst. Es ist einer der meistmissverstandenen Einträge im ganzen [Poker-Glossar](/de/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp"). Hier steht genau, was ein **Straddle** ist, jeder Typ, dem du begegnen wirst, wer zuerst handelt, wenn einer gesetzt wird, und die ehrliche Antwort auf die einzige Frage, die zählt: ==g:Solltest du ihn wirklich spielen?==
 
 ---
 
@@ -60,7 +60,7 @@ Das ist der Teil, den Definitionsseiten überspringen, und genau hier verlieren 
 :::steps
 UTG setzt den Straddle | Der UTG-Spieler legt €4 raus (2× den €2 Big Blind), bevor die Karten ausgeteilt werden
 Zuerst am Zug = links vom Straddler | Die Action beginnt jetzt beim Spieler links vom Straddler (UTG+1), nicht bei UTG – der Straddle wirkt wie ein neuer Big Blind
-Rund um den Tisch | Jeder muss €4 callen (nicht €2), um mitzuspielen; er kann folden, callen oder ganz normal raisen
+Rund um den Tisch | Jeder muss €4 callen (nicht €2), um mitzuspielen; er kann folden, callen oder raisen – und der Mindest-Raise liegt jetzt bei €8, dem Doppelten des Straddles, genau wie über einem normalen Big Blind
 Die Blinds entscheiden | Small Blind und Big Blind handeln der Reihe nach, dem €4-Preis gegenüber
 Der Straddler handelt ZULETZT | Wenn niemand geraist hat, kann der Straddler seine Option checken oder raisen – das letzte Wort vor dem Flop
 :::
@@ -85,7 +85,7 @@ Nicht alle Straddles sind gleich – und die Unterschiede drehen sich alle darum
 | **UTG (Standard)** | Under the Gun | Links vom Straddler | Nur preflop | Ja |
 | **Mississippi** | Jeder Platz (oft Button/CO) | Links vom Straddler | Preflop – postflop nur vom Button* | Ja |
 | **Button** | Der Button | Small Blind | Pre + postflop | Ja |
-| **Sleeper** | Ein Nicht-UTG-Platz | Normal (UTG) | Nur wenn alle bis zu ihm folden | Hausregelsache |
+| **Sleeper** | Ein Nicht-UTG-Platz | Normal (UTG) | Nein | Hausregelsache |
 | **Re-Straddle** | Links von einem Straddler | Links vom Re-Straddler | Nur preflop | Ja |
 
 </div>
@@ -95,7 +95,7 @@ Nicht alle Straddles sind gleich – und die Unterschiede drehen sich alle darum
 - **UTG-Straddle** – der Klassiker. Unter der Pistole gesetzt, letzte Action nur preflop. Der häufigste und positionell der schwächste.
 - **Mississippi-Straddle** – kann von **jeder Position** gesetzt werden, am stärksten vom Button oder Cutoff. Die Action beginnt links vom Straddler, also kauft ein Button-Mississippi-Straddle die **letzte Action sowohl preflop als auch postflop** – der einzige Straddle mit einem echten positionellen Argument. Nicht überall erlaubt.
 - **Button-Straddle** – ein Straddle im Mississippi-Stil speziell vom Button; der Button behält die letzte Action bis zum Ende. Der genaue Ablauf (wo der Small Blind hineinpasst) variiert je nach Room – kläre es mit dem Dealer.
-- **Sleeper-Straddle** – ein Blind von einem Nicht-UTG-Platz, der „schlafend“ bleibt: Er ist **inaktiv, es sei denn, die Action foldet ganz bis zu ihm durch**. Wird er dadurch aktiv, wirkt er wie ein normaler Straddle; ob er dann auch die Option zu raisen mitbringt, ist Hausregelsache. Selten und online fast nie zu sehen.
+- **Sleeper-Straddle** – ein Blind von einem Nicht-UTG-Platz, der „schlafend“ bleibt: Er ist **inaktiv, es sei denn, die Action foldet ganz bis zu ihm durch**. Wird er dadurch aktiv, ist er ein Live-Blind – Position bringt er trotzdem nie; ob er dann auch die Option zu raisen mitbringt, ist Hausregelsache. Selten und online fast nie zu sehen.
 - **Re-Straddle (Double Straddle)** – ein Spieler links kann *über* einen Straddle straddeln, mindestens für das Doppelte des vorherigen (€4 → €8 → €16). Ob es erlaubt ist und von welchen Plätzen, ist reine Hausregelsache.
 
 ⚠️ Jeder einzelne davon ist **hausregelabhängig.** Im Zweifel frag den Floor, bevor du Chips rauswirfst – die Mechanik unterscheidet sich wirklich von Room zu Room.
@@ -179,7 +179,7 @@ A. Ein Mississippi-Straddle kann von jeder Position gesetzt werden, nicht nur vo
 
 **Q. Was ist ein Sleeper-Straddle?**
 
-A. Ein Sleeper-Straddle ist ein Blind, der von einem Nicht-UTG-Platz gesetzt wird und inaktiv („schlafend“) bleibt, es sei denn, die Action foldet ganz bis zu ihm durch. In den meisten Rooms kauft er nicht die Option zu raisen und verleiht auch keine Position, wie ein lebender Straddle es tut. Er ist ungewöhnlich und wird online selten angeboten – kläre immer die Hausregel.
+A. Ein Sleeper-Straddle ist ein Blind, der von einem Nicht-UTG-Platz gesetzt wird und inaktiv („schlafend“) bleibt, es sei denn, die Action foldet ganz bis zu ihm durch. Position verleiht er nie, wie ein lebender Straddle es tut – und ob er beim „Aufwachen“ die Option zu raisen mitbringt, variiert je nach Room. Er ist ungewöhnlich und wird online selten angeboten – kläre immer die Hausregel.
 
 **Q. Gibt es Straddles auch im Onlinepoker?**
 

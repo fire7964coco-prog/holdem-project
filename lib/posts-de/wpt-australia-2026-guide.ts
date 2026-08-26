@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "WPT Australia 2026: 10.–30. Sep, The Star Sydney. Zwei Flaggschiffe: AUD $1.500 WPT Prime (17.–22. Sep) und AUD $5.000 WPT Championship (24.–30. Sep). On-Site-Satellites ab AUD $270, Championship-Qualifier ab $290. Im Preisgeld für Platz 1 steckt ein $15.000 WPT-World-Championship-Seat. Mindestalter 18, Star-Club-Mitgliedschaft und Smart-Casual-Dresscode sind Pflicht.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-08-18",
+  updated: "2026-08-26",
   readTime: "14 Min.",
   emoji: "🦘",
   layout: "tournament-guide",
@@ -117,7 +117,7 @@ Wenn du außerhalb Australiens bist und dich vor dem Abflug mit Online-Satellite
 
 ---
 
-## WPT Australia 2026 kompletter Schedule – alle Key-Events von AUD $460 bis $10.000
+## WPT Australia 2026 Schedule-Highlights – 12 Key-Events von AUD $460 bis $10.000
 
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.25);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -138,7 +138,7 @@ Wenn du außerhalb Australiens bist und dich vor dem Abflug mit Online-Satellite
 
 </div>
 
-> **36 Events insgesamt.** Für dieses Festival sind keine garantierten Prize Pools ausgeschrieben – der offizielle Schedule garantiert stattdessen **Seats** in den Satellites. Behandle jede Festival-Gesamtzahl also als Schätzung: AUD $10M+ ist auf Basis historischer Zahlen realistisch, allein die 2025er-Championship generierte AUD $3.000.000.
+> **Die 12 Events oben sind die Festival-Highlights – der komplette Schedule umfasst insgesamt 36 Events** (siehe [starpoker.com.au](https://www.starpoker.com.au/wpt-australia)). Für dieses Festival sind keine garantierten Prize Pools ausgeschrieben – der offizielle Schedule garantiert stattdessen **Seats** in den Satellites. Behandle jede Festival-Gesamtzahl also als Schätzung: AUD $10M+ ist auf Basis historischer Zahlen realistisch, allein die 2025er-Championship generierte AUD $3.000.000.
 
 ---
 
@@ -215,7 +215,7 @@ Dieser Abschnitt ist das, was ==r:jeder Guide der Konkurrenz auslässt== – und
 
 ### NSW-Recht: tägliches Bargeld-Limit von AUD $5.000
 
-Nach dem **NSW Casino Control Act** gilt ein **tägliches Bargeld-Limit von AUD $5.000** für das Spiel. Alle Turnier-Entries (inklusive Satellites) müssen mit Gaming-Chips gekauft werden – nicht per Kreditkarte oder Bargeld am Tisch.
+Nach den **NSW-Reformen zur Bargeldhandhabung in Casinos** gilt ein **tägliches Bargeld-Limit von AUD $5.000** für das Spiel (diese Grenze gilt bis einschließlich September 2026 und soll ab August 2027 auf AUD $1.000/Tag sinken). Gespielt wird **carded** – du spielst über deine Star-Club-Karte – und alle Turnier-Entries (inklusive Satellites) müssen mit Gaming-Chips gekauft werden, nicht per Kreditkarte oder Bargeld am Tisch.
 
 ### Wire-Transfer ans The Star Sydney – bevor du ankommst
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Das Main Event der APT Incheon 2026 gewann Stephen Pang aus Hongkong – KRW 411.180.000 (~$293.700) nach einem Dreier-ICM-Deal plus die 24K-Gold-Löwentrophäe. Das Feld setzte mit 1.393 Entries einen neuen Rekord, der Preispool lag bei KRW 3.008.880.000. Zweiter wurde Shoumin Zhang (China, KRW 366.500.000 / ~$261.785), Dritter Yifu He (USA). Die Top 3 erhielten zusätzlich Seats für das Main Event der APT Championship 2026 in Taipeh (~$10.000 pro Seat). Nur für ausländische Staatsbürger (koreanische Bürger ohne Wohnsitz im Ausland dürfen nicht rein). Seoul ist ~1 Stunde entfernt – beim nächsten Stopp sind Pokerreise und Korea-Reise wieder dieselbe Reise.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-08-18",
-  masterUpdated: "2026-08-17",
+  updated: "2026-08-26",
+  masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "16 Min.",
   emoji: "🇰🇷",
@@ -37,7 +37,7 @@ Die Pokerreise und die Korea-Reise sind dieselbe Reise. ==g:Paradise City ist 10
 ---
 
 > **Kurze Antwort**
-> Die APT Incheon 2026 lief ==**7.–16. Aug**== im Paradise City Casino, Incheon. Das Resort liegt ==g:10 Min mit dem kostenlosen Shuttle vom Terminal 1 des Flughafens Incheon== – fährt alle 30 Min, gratis. Main-Event-Buy-in: ==**KRW 2.500.000 (~$1.703)**==, $1M garantiert. Natural8s Online-Qualifikationen vergaben insgesamt ==g:**74 Seats**==. ==r:Das $35-Mega und OnLive endeten am 2. August, die letzte Route ($20 Step → $200 Mega) am 7. August==. ==g:**Die Online-Qualifikation war schon vor dem ersten Spieltag beendet.**== Das Casino ist ==r:nur für ausländische Staatsbürger== – koreanische Bürger ohne Wohnsitz im Ausland dürfen nicht rein.
+> Die APT Incheon 2026 lief ==**7.–16. Aug**== im Paradise City Casino, Incheon. Das Resort liegt ==g:10 Min mit dem kostenlosen Shuttle vom Terminal 1 des Flughafens Incheon== – fährt alle 30 Min, gratis. Main-Event-Buy-in: ==**KRW 2.500.000 (~$1.703)**==, $1M garantiert. Natural8s Online-Qualifikationen vergaben insgesamt ==g:**74 Seats**==. ==r:Das $35-Mega und OnLive endeten am 2. August, die letzte Route ($20 Step → $200 Mega) am 7. August==. ==g:**Die Online-Qualifikation endete mit dem Eröffnungstag der Serie.**== Das Casino ist ==r:nur für ausländische Staatsbürger== – koreanische Bürger ohne Wohnsitz im Ausland dürfen nicht rein.
 
 ---
 
@@ -382,7 +382,7 @@ A. Sehr nah. Paradise City betreibt einen kostenlosen Shuttle vom Terminal 1 (Ga
 
 **Q. Kann ich das APT Incheon Main Event spielen, wenn ich noch nie ein Live-Turnier gespielt habe?**
 
-A. Ja. Der Buy-in (~$1.703) ist beträchtlich, aber die Struktur ist anfängerfreundlich – tiefe Starting Stacks und lange Levels. Wenn du mit Home Games oder Online-Poker vertraut bist, ist der Umstieg auf Live gut machbar. Das Mini Main Event (~$610, KRW 900K) und der Ultra Stack (~$477) sind Optionen mit niedrigeren Stakes für den Einstieg.
+A. Die Ausgabe 2026 ist vorbei – aber die Antwort gilt für den nächsten APT-Stopp: ja. Der Buy-in (~$1.703) ist beträchtlich, aber die Struktur ist anfängerfreundlich – tiefe Starting Stacks und lange Levels. Wenn du mit Home Games oder Online-Poker vertraut bist, ist der Umstieg auf Live gut machbar. Das Mini Main Event (~$610, KRW 900K) und der Ultra Stack (~$477) sind Optionen mit niedrigeren Stakes für den Einstieg.
 
 **Q. Wie komme ich vom Paradise City nach Seoul?**
 
@@ -402,7 +402,7 @@ A. Beides geht, aber ==g:2–3 Tage früher anzureisen ist empfehlenswert==. Du 
 
 1. **APT Incheon 2026** lief ==**7.–16. Aug**== im Paradise City Casino – 10 Min vom Flughafen Incheon mit dem kostenlosen Shuttle, $2,7M GTD.
 2. **Main Event** Buy-in: ==**~$1.703**== mit ==g:$1M garantiert==. Rund ein Drittel des EPT-Barcelona-Main und die Hälfte des WPT-Australia-Championship-Buy-ins.
-3. **Die Online-Qualifikation war schon vor dem ersten Spieltag beendet** – $35-Mega und OnLive endeten am 2. August, die letzte Route ($20 Step → $200 Mega) am 7. August.
+3. **Die Online-Qualifikation endete mit dem Eröffnungstag der Serie** – $35-Mega und OnLive endeten am 2. August, die letzte Route ($20 Step → $200 Mega) am 7. August.
 4. **Seoul ist 60 Min entfernt** und eines der besten Reiseziele Asiens – ==g:Paläste, BBQ, Nachtleben und unschlagbares Streetfood.==
 5. **Mit einem ausländischen Pass kommst du rein** – dieses Turnier wurde für internationale Spieler gebaut. Dein Pass ist deine Zutrittskarte.
 
@@ -412,7 +412,7 @@ Auf dem Weg zur APT Incheon? Der [Guide Turnier vs Cash Game](/de/blog/holdem-to
 
 ## Quellen
 
-Alle Zahlen wurden anhand der Primärquellen geprüft. **Stand: 9. August 2026.**
+Alle Zahlen wurden anhand der Primärquellen geprüft. **Stand: 17. August 2026.**
 
 - **Offizielle Serienseite** – [APT – Incheon, South Korea 2026](https://www.theasianpokertour.com/series/apt-incheon-south-korea-2026) · Termine, Buy-in und Garantie des Main Events #20, Flight-Struktur
 - **Offizielle Preview** – [APT Incheon 2026: The Preview](https://www.theasianpokertour.com/news/apt-incheon-2026-the-preview) · Gesamtgarantie, Startstack 40.000, **die neun APTC-Taipeh-Seats und ihre Verteilung**

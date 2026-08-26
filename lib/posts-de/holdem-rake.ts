@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Der Rake ist der kleine Anteil, den der Cardroom aus jedem Pot nimmt, um das Spiel auszurichten – meist 2,5–10% bis zu einem Cap – in deutschen Spielbanken €10 bis €20. Die meisten Räume nehmen nichts, wenn vor dem Flop alle folden („no flop, no drop“). Er trifft Low-Stakes- und Short-handed-Spieler am härtesten, und Rakeback gibt Stammspielern einen Teil zurück.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-08-18",
-  masterUpdated: "2026-08-11",
+  updated: "2026-08-26",
+  masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "🏦",
@@ -19,7 +19,7 @@ export const POST: Post = {
   content: `
 Es hat mich einen deprimierenden Monat voller „Break-even“-Sessions gekostet, um herauszufinden, wohin mein Geld eigentlich floss. Ich verlor nicht gegen die anderen Spieler – ich schlug sie, ganz knapp. Ich verlor gegen den ==Anteil des Hauses an jedem Pot, den ich gewann.== Diese stille Gebühr heißt **Rake**, und solange du sie nicht verstehst, kannst du auf dem Papier ein Gewinner und an der Kasse ein Verlierer sein.
 
-Der Rake (die Gebühr) ist die Art, wie ein Cardroom an einem Spiel verdient, in dem er keine einzige Hand mitspielt. Unten steht genau, was er ist, jede Art wie er kassiert wird, die ehrliche Rechnung dazu, ==g:wie viel du pro Session wirklich zahlst==, und wie Rakeback einen Teil davon zurückholt. Es ist die Gebühr, die darüber entscheidet, ob Low-Stakes-Poker überhaupt schlagbar ist.
+Der Rake (die Gebühr) ist die Art, wie ein Cardroom an einem Spiel verdient, in dem er keine einzige Hand mitspielt. Unten steht genau, was er ist, jede Art wie er kassiert wird, die ehrliche Rechnung dazu, ==g:wie viel du pro Session wirklich zahlst==, und wie Rakeback einen Teil davon zurückholt. Es ist die Gebühr, die darüber entscheidet, ob Low-Stakes-Poker überhaupt schlagbar ist – und einer der teuersten Begriffe im ganzen [Poker-Glossar](/de/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp"), wenn man ihn missversteht.
 
 ---
 
@@ -93,7 +93,7 @@ Hier kommt der Teil, der geändert hat, wie ich über das Spiel denke. Der Betra
 | Gleicher Spieler, gleiches Game | Gezahlter Rake | Ergebnis |
 |:---|:---:|:---|
 | Raum mit **$2-Cap** | ~5 bb/100 | +8 bb/100 Winrate bleibt **Gewinner (+3)** |
-| Raum mit **$4-Cap** | ~8–9 bb/100 | +8 bb/100 wird zum **Verlierer (−1)** |
+| Raum mit **$4-Cap** | ~8–9 bb/100 | +8 bb/100 landet bei break-even oder wird zum **Verlierer (0 bis −1)** |
 
 </div>
 

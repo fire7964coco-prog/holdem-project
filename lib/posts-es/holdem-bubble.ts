@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "La burbuja es el punto justo antes de premios, donde una eliminación más deja cobrar a todos los demás. Como bustear significa no ganar nada, sobrevivir vale más que las fichas que ganarías: los rangos de call se cierran a lo bestia mientras los shoves siguen amplios. Los stacks grandes atacan, los stacks medios son los más atrapados (no los cortos), y en una burbuja de satélite foldeas todo, incluso ases, una vez que tu asiento está asegurado.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-08-13",
-  masterUpdated: "2026-08-13",
+  updated: "2026-08-26",
+  masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🫧",
@@ -138,7 +138,7 @@ La otra mitad es que el bubble factor depende de **quién tienes enfrente**, no 
 **Cuando el dinero está cerca, los torneos pasan a "hand-for-hand" — todas las mesas juegan exactamente una mano a la vez y luego esperan — precisamente para impedir que los jugadores hagan stalling hasta colarse en premios.** Sin ello, los jugadores de mesas lentas podrían foldear mano tras mano mientras las mesas más rápidas queman la burbuja. El hand-for-hand nivela el terreno:
 
 - **Cómo funciona:** el director del torneo pausa el reloj, y a partir de ahí cada mano descuenta ==2 minutos== fijos del nivel, dure lo que dure (regla 126.a y 126.c de las WSOP; RP-8 de la TDA) — así que las ciegas siguen subiendo durante la burbuja, solo que por mano y no por minuto real. Todas las mesas reparten una mano, y ninguna empieza la siguiente hasta que todas han terminado. Si dos jugadores bustean en la misma mano de hand-for-hand en la misma mesa, el que tenía menos fichas al inicio de la mano se lleva el puesto más bajo (el de la burbuja); si bustean en mesas distintas, quedan clasificados como empate y reparten los dos premios implicados.
-- **Stalling:** consumir todo el banco de tiempo en cada decisión para ver menos manos (y foldear hasta premios). Funciona justo porque tanquear no cuesta reloj: la mano descuenta sus 2 minutos igual, foldees al instante o quemes entero el banco de tiempo. Los stacks grandes no tienen razón para hacer stalling — quieren más manos para atacar. Los stacks cortos y medios a veces hacen stalling para sobrevivir, ==pero un stalling excesivo puede ganarte que te pidan el reloj (clock call) o una penalización==, así que tanquea con cabeza.
+- **Stalling:** consumir todo el banco de tiempo en cada decisión para ver menos manos (y foldear hasta premios). Funciona justo porque tanquear no cuesta reloj: la mano descuenta sus 2 minutos igual, foldees al instante o quemes entero el banco de tiempo. Los stacks grandes no tienen razón para hacer stalling — quieren más manos para atacar. Los stacks cortos y medios a veces hacen stalling para sobrevivir, ==pero un stalling excesivo puede ganarte que te pidan el reloj (clock call) o una penalización== — tanquea con cabeza, sin quemar el banco de tiempo a propósito.
 - **Explótalo:** como todos los demás bajan el ritmo, un stack grande que sigue aplicando presión durante el hand-for-hand acumula ciegas y antes casi sin oposición.
 
 ---
@@ -147,9 +147,9 @@ La otra mitad es que el bubble factor depende de **quién tienes enfrente**, no 
 
 **En un satélite, cada asiento paga lo mismo — así que en el momento en que tu stack está a salvo dentro de la burbuja, foldeas todo, incluidos ases servidos.** Este es el spot más contraintuitivo del póker, y es correcto. Si ganar un flip te da el ==mismo asiento que ya tienes asegurado== mientras que perderlo te elimina, no hay recompensa y sí un riesgo enorme:
 
-- **Una vez que tu asiento está matemáticamente a salvo** (estás lo bastante dentro de la burbuja como para que no te alcancen), foldea cada mano — sí, incluso AA y KK — y deja que los stacks más cortos se peleen.
-- **Haz stalling en cada mano** para preservar ese stack. En una burbuja de satélite, el stalling no solo se tolera: es óptimo.
-- **La única excepción:** paga solo si bustear al stack corto concreto al que te enfrentas asegurara la burbuja *para ti* — es decir, su eliminación te garantiza el asiento.
+- **Una vez que tu asiento está matemáticamente a salvo** (estás lo bastante dentro de la burbuja como para que no te alcancen), foldea cada mano — sí, incluso AA y KK — y deja que los stacks más cortos se peleen. Rehaz esa cuenta cada vez que suban las ciegas: la "zona segura" encoge cuando entran los antes.
+- **No cuentes con el stalling en vivo.** Online, usar todo tu reloj es gratis; en vivo, quemar bancos de tiempo a propósito para escalar premios es explícitamente sancionable bajo las reglas de las WSOP — foldea a velocidad normal.
+- **La única excepción:** paga solo si cubres al stack corto en cuestión y su eliminación asegura la burbuja *para ti* — y solo mientras tu asiento siga garantizado aunque pierdas el bote.
 
 Si te llevas una sola cosa de esta sección: un satélite no es un torneo normal. Las fichas por encima del umbral de seguridad no valen nada, así que juega en consecuencia.
 

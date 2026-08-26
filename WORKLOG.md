@@ -1,3 +1,28 @@
+## 2026-08-26 (12) — 세션 1/9: EN 드리프트 소급 es+de (회차 5·6 묶음 + adcffae4 수치분) · 렌즈 4종
+
+9세션 분할 계획(863d8367)의 **세션 1 완결**. es 15편 + de 16편, 라이브 §13급 오류 지혈.
+
+- **회차 6 몫**: ept Gold Pass 4요소 정합(es 요약박스 1곳·de 4곳 — tldr·요약·표 2개·FAQ에 €1.100/€690 보강) ·
+  wpt de 「12/36 하이라이트」 프레임 + H2 «kompletter Schedule»→«Highlights – 12 Key-Events»(EN 동조) +
+  NSW 귀속 재작성(현금 개혁·일몰 bis einschließlich Sep 2026→$1.000 Aug 2027·carded) ·
+  marathon de «Okt–Dez»→«Sep–Dez» · apt 시제 2곳(FAQ «2026 종료+다음 스톱 유효»·검증일 8/17) ·
+  EN 08-26 수정 8건 거울(satellite stall 3불릿·rebuy 정의·앤티 시점 Level 3·10bb 포지션·홈칩 FAQ·
+  hit-and-run+ratholing·EPT 브레이크·Day1 «Abends 8 Level»)
+- **회차 5 몫**: glossary 행 정정(es 5행·de 2행 — 나머지는 이미 정정본) · glossary 허브 역링크 es+4·de+5 ·
+  rake 캡 $3–$6(es 2곳 — de는 €10–€20 현지화라 미적용) · rake $4캡 행 «0~−1» · bad-beat suckout flop 포함·
+  overpair 경계사례 노트·잭팟 dealt-in · straddle 최소레이즈 8·sleeper 3곳 정합·FAQ 솔버 논거 · fish PFR 괄호
+- **adcffae4 수치분**(§13급): es 3bet A5s 28→30%(de는 이미 30) · shc PDF 앵커 «9/6-max 나란히» 거짓 정정 +
+  suited 2pt(67/65) · when-to-fold·implied-odds 규칙 링크 pot-odds→outs · limping EP 오픈림프 완화
+- **렌즈 4종 전부 Opus**(교열 diff es/de + 네이티브·딜러 es/de) → 지적 33건 전건 원문 판정, 반영 ~25건:
+  🔴 es rake FAQ $4–$6 잔존·캘리포니아 문장 중복 · es apt 재검증일 역전(꼬리 삭제)·shuttle 성 ·
+  bad-beat 75%↔80% 통일 · de wpt H2 모순 · de tournament 표 rebuy 배타 서술(«버스트 후 재구매» 복원) ·
+  de bad-beat 전용 FAQ suckout 미러 · de rake 동격구 오귀속(2문단으로 이동) · de «covered hast»→coverst ·
+  인트로 꼬리 중복 4편 제거(de) + es 3편 · apt «개막일 전 종료» 거짓(8/7=개막일) es·de «개막일과 함께 종료»로
+- **기각·보류(오탐/EN 상속)**: bubble 스톨링 «explícitamente»는 회차 6 WSOP 축어 근거 유지 · de bubble
+  스톨링 불릿=자체 정정본 유지 · glossary ante 이중서술=EN 동일 · fish 괄호 1행=EN 동일 · EN-먼저 판정
+  후보 5건은 핸드오프 미결로(wpt NSW 공백·apt «before festival»·bad-beat river행·ept 비용표 상계·잭팟 표 라벨)
+- 게이트 es 47/47·de 43/43 🔴 0건(2회) · 빌드 ✓(70+471) · masterUpdated 동기(ept es·shc는 의도적 보류 유지)
+
 ## 2026-08-26 (11) — 경화 트랙 전수 점검 + 사장님 판정 3건 + 모델 분담 정본 승격 (다음 세션 인수)
 
 작업이 아니라 **판정·정리 회차**. 다음 세션이 바로 착수할 수 있게 핸드오프를 다시 세웠다.
