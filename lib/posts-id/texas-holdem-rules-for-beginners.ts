@@ -2,9 +2,9 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "texas-holdem-rules-for-beginners",
-  title: "Cara Bermain Texas Hold'em untuk Pemula — Aturan, Chip, Peringkat Kartu, dan Strategi Pertama",
-  seoTitle: "Cara Main Texas Hold'em — Aturan, Chip & Cheat Sheet Pemula",
-  desc: "Belum pernah main? Pelajari cara main Texas Hold'em langkah demi langkah — blind, pembagian chip, peringkat kartu, plus cheat sheet siap cetak untuk pemula.",
+  title: "Cara Main Poker Texas Hold'em untuk Pemula — Aturan, Chip, Peringkat Kartu, dan Strategi Pertama",
+  seoTitle: "Cara Main Poker Texas Hold'em — Aturan, Chip & Cheat Sheet",
+  desc: "Belum pernah main? Pelajari cara main poker Texas Hold'em langkah demi langkah — blind, chip, peringkat kartu, plus cheat sheet siap cetak untuk pemula.",
   tldr: "Di Texas Hold'em, setiap pemain menerima 2 hole cards, ada 5 kartu bersama di tengah meja, dan tangan poker 5 kartu terbaik menang setelah empat ronde taruhan.",
   category: "rules",
   date: "2026-06-11",
@@ -16,26 +16,26 @@ export const POST: Post = {
   image: "/images/rules-texas-holdem.webp",
   imageAlt: "Infografis dasar Texas Hold'em — hole cards A♣ K♦ di samping lima kartu bersama A♠ K♥ Q♦ J♣ 10♠ yang dibuka seperti kipas",
   tags: [
+    "cara main poker",
+    "cara main kartu poker",
+    "cara main poker kartu remi",
     "cara bermain texas holdem",
     "aturan texas holdem untuk pemula",
     "aturan dasar poker texas holdem",
     "siapa yang jalan duluan di texas holdem",
-    "cheat sheet texas holdem",
     "chip poker untuk pemula",
-    "berapa pemain texas holdem",
-    "no limit texas holdem",
-    "cara main poker kartu remi",
+    "cheat sheet texas holdem",
   ],
   content: `
 Kalau Anda mencari ==aturan Texas Hold'em untuk pemula==, yang Anda butuhkan sekarang mungkin bukan buku peraturan kasino.
 
 Yang Anda butuhkan: apa itu blind, kapan giliran Anda bertindak, bagaimana lima kartu bersama bekerja, tangan mana yang menang, dan berapa chip yang dibagikan ke tiap orang saat main di rumah.
 
-Panduan ini menjelaskan ==cara bermain Texas Hold'em untuk pemula== dengan bahasa sehari-hari — lengkap dengan urutan main yang tepat, pembagian chip untuk pemula, dasar membagikan kartu, dan cheat sheet siap cetak yang bisa Anda taruh di samping meja.
+Panduan ini menjelaskan ==cara main poker Texas Hold'em== untuk pemula dengan bahasa sehari-hari — lengkap dengan urutan main yang tepat, pembagian chip untuk pemula, dasar membagikan kartu, dan cheat sheet siap cetak yang bisa Anda taruh di samping meja.
 
 Semua isi panduan ini lahir dari pengalaman langsung menjalankan permainannya — dari meja makan, home game, sampai cardroom — bukan cuma dari buku aturan. Jadi saya akan tunjukkan di bagian mana saja pemain baru biasanya tersandung di dunia nyata.
 
-### Cara main Texas Hold'em dalam 30 detik
+### Cara main poker Texas Hold'em dalam 30 detik
 
 1. Dua pemain memasang **blind** (taruhan wajib)
 2. Semua pemain menerima **2 hole cards** tertutup
@@ -86,9 +86,9 @@ Kalau peringkat kartu poker masih terasa asing, buka dulu [peringkat kartu Texas
 
 ---
 
-## Cara Main Texas Hold'em — Ringkasan Alur untuk Pemula
+## Cara Main Poker Texas Hold'em — Ringkasan Alur untuk Pemula
 
-Cara main Texas Hold'em pada dasarnya begini: setiap pemain menerima 2 hole cards, dua pemain memasang blind lebih dulu, lalu 5 kartu bersama dibuka bertahap (3, lalu 1, lalu 1) dengan satu ronde taruhan setelah tiap tahap — dan kombinasi 5 kartu terbaik menang di showdown.
+Cara main poker Texas Hold'em pada dasarnya begini: setiap pemain menerima 2 hole cards, dua pemain memasang blind lebih dulu, lalu 5 kartu bersama dibuka bertahap (3, lalu 1, lalu 1) dengan satu ronde taruhan setelah tiap tahap — dan kombinasi 5 kartu terbaik menang di showdown.
 
 Artikel ini memberi Anda **versi pemula dari alur permainan** supaya Anda bisa duduk di meja tanpa panik. Kalau Anda mau panduan lebih dalam street demi street dengan satu tangan lengkap, urutan taruhan, dan contoh, lanjutkan ke [urutan main Texas Hold'em](/id/blog/holdem-game-order "thumb:/images/blog-holdem-game-flow.webp").
 
@@ -430,11 +430,15 @@ A. Pasang blind → bagikan 2 hole cards → taruhan preflop → buka 3 kartu be
 
 **Q. Berapa pemain yang dibutuhkan untuk main Texas Hold'em?**
 
-A. Minimal 2 pemain dan maksimal 10. Dengan tepat dua pemain, permainan disebut heads-up dan posisi blind dibalik — Button memasang small blind dan bertindak duluan preflop, sementara big blind bertindak duluan setelah flop. Untuk home game pertama, 4 sampai 6 pemain menjaga aksi tetap cepat dan mudah diikuti.
+A. Minimal 2 pemain dan maksimal 10. Main poker 2 orang saja pun bisa — formatnya disebut heads-up, dan posisi blind dibalik: Button memasang small blind dan bertindak duluan preflop, sementara big blind bertindak duluan setelah flop. Untuk home game pertama, 4 sampai 6 pemain menjaga aksi tetap cepat dan mudah diikuti.
 
 **Q. Apakah Texas Hold'em bisa dimainkan dengan kartu remi biasa?**
 
 A. Bisa — justru itu standarnya. Texas Hold'em memakai satu dek kartu remi standar 52 lembar tanpa joker, dek yang sama dengan yang dijual di warung mana pun. Anda tidak butuh kartu khusus: satu dek remi, chip (atau penggantinya), dan penanda tombol dealer sudah cukup untuk poker tongkrongan bareng teman.
+
+**Q. Main poker itu pakai berapa kartu — dan apa itu "poker 2 kartu"?**
+
+A. Satu dek 52 kartu untuk seluruh meja, dan setiap pemain hanya memegang 2 kartu tertutup — itulah kenapa Texas Hold'em sering disebut "poker 2 kartu". Lima kartu bersama dibuka di tengah meja, dan Anda membentuk kombinasi 5 kartu terbaik dari total 7 kartu itu.
 
 **Q. Apa arti no-limit di Texas Hold'em?**
 

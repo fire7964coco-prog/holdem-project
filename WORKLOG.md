@@ -1,3 +1,24 @@
+## 2026-08-27 (4) — id rules 클러스터 키워드 소급 (라쿠 배치 2) + 필라 제목 축 전환 (사장님 지시)
+
+세션 4 직후 사장님 지시 2건: ① 필라 제목 교체(GSC-먼저 유보를 지시로 해제) ② 완료된 rules
+클러스터에 MCP 키워드 서치 소급. 자동완성(hl=id) 발굴 → 라쿠 배치 2(29종·15크레딧·requestId
+1258295) 실측 → 판정 반영. 정본 = `docs/keyword-bank/id-core-volumes.md` 배치 2 절.
+
+- **필라(beginners) 제목 축 전환**: «Cara Bermain Texas Hold'em»(축 실측 월 30) →
+  **«Cara Main Poker Texas Hold'em»**(cara main poker 4.400). title·seoTitle(58자)·desc(152자)·
+  H2·직답·30초 H3 일괄 전환, bermain은 태그로 유지. slug 불변
+- **필라 태그 재편**: +cara main poker(4.400)·cara main kartu poker(590) / −no limit texas
+  holdem·berapa pemain texas holdem(영어 의도·측정 불가 축) — 9태그
+- **FAQ 1신설**: «Main poker itu pakai berapa kartu — poker 2 kartu?»(계열 ~240+50 흡수 —
+  홀덤=«poker 2 kartu» id 고유 지칭 실측) + 플레이어 FAQ에 «main poker 2 orang»(+145%↑) 삽입
+- 🔴 **자릿수 함정 1건 차단**: «all in artinya» 14.800은 자동완성 실측상 비포커 슬랭(연애·ML 게임)
+  지배 — 채택 금지로 뱅크에 기록([[keyword-volume-order-of-magnitude-trap]] 적중 사례)
+- **나머지 5편 판정 = 변경 근거 없음**: 측정 가능한 id 축 전부 ≤50·null·영어 의도(check·muck·
+  showdown 등은 영어 쿼리) — 저볼륨 흡수 전략이 데이터로 재확인. istilah poker(110·+27%)는
+  세션 8(glossary) 몫으로 이관 기록
+- DFS 재확인 40100 지속(대시보드 재발급 필요 — 사장님 몫·핸드오프 기재) · 게이트 id 42/42 🔴 0 ·
+  빌드 ✓ · 산출물 FAQ 스키마 14문·신제목 렌더 실측 확인
+
 ## 2026-08-27 (3) — 세션 4/9: id 경화 트랙 B 착수 — rules 클러스터 6편 (pt 8ee6b047 구획) · 렌즈 4종
 
 9세션 분할 계획의 **세션 4 완결** — id 첫 경화 회차. beginners·game-order·betting-actions·
