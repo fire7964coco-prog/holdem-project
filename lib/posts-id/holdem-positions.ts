@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "Posisi poker adalah nama kursi yang diukur dari tombol dealer — UTG, lojack, hijack, cutoff, button, dan blind — dan semuanya bergerak satu kursi searah jarum jam setiap tangan. Preflop, UTG aksi lebih dulu dan big blind terakhir; postflop, small blind aksi lebih dulu dan button terakhir. Nomor kursi fisik tak pernah berpindah; posisi berpindah.",
   category: "strategy",
   date: "2026-06-13",
-  updated: "2026-08-11",
+  updated: "2026-08-27",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "🎯",
@@ -39,7 +40,7 @@ Tangan yang sama. Hasil yang sepenuhnya berbeda. Satu-satunya yang berubah hanya
 
 ## Apa Saja Posisi di Meja Poker? (Peta Kursi Lengkap)
 
-Posisi bukanlah kursi — ia adalah **nama untuk tempat Anda duduk relatif terhadap tombol dealer**, dan ia menentukan ==kapan Anda aksi di setiap street==. Karena button berpindah satu kursi searah jarum jam setelah setiap tangan, setiap pemain di meja mengenakan nama yang berbeda di setiap tangan.
+Posisi bukanlah kursi — ia adalah **nama untuk tempat Anda duduk relatif terhadap tombol dealer**, dan ia menentukan ==kapan Anda aksi di setiap street==. Karena button berpindah satu kursi searah jarum jam setelah setiap tangan, setiap pemain di meja menyandang nama yang berbeda di setiap tangan.
 
 Berikut bagan posisi 9-max lengkap — setiap nama kursi, singkatannya, zonanya, dan persis kapan ia aksi sebelum dan sesudah flop:
 
@@ -121,7 +122,7 @@ Itulah definisinya. *Cara memainkan* UTG — kenapa ia menuntut range paling ket
 Nama-nama itu tak punya asal-usul resmi yang terdokumentasi — slang poker jarang punya — tapi cerita yang umum beredar seperti ini:
 
 - **Hijack:** cutoff dan button adalah kursi klasik pencuri blind. Ketika pemain satu kursi lebih awal raise lebih dulu, ia ==**"membajak" (hijack) steal**== yang hendak dilakukan kursi-kursi akhir — jadi kursi itu sendiri mendapat namanya.
-- **Lojack:** muncul belakangan, sebagai ==pelesetan main-main dari "hijack"== — kursi satu tingkat "lebih rendah" dalam hierarki. Kebanyakan cerita juga mendengar gema merek anti-maling LoJack: sebuah hijack, satu tingkat di bawah.
+- **Lojack:** muncul belakangan, sebagai ==pelesetan main-main dari "hijack"== — kursi satu tingkat "lebih rendah" dalam hierarki. Banyak versi cerita juga mengaitkannya dengan merek anti-maling LoJack: sebuah hijack, satu tingkat di bawah.
 
 Anggap keduanya sebagai cerita rakyat meja, bukan etimologi. Yang bukan cerita rakyat: hijack dan lojack adalah nama nyata dan standar yang akan Anda lihat di setiap bagan range modern dan situs latihan, itulah kenapa mereka layak dihafal mati.
 
@@ -169,7 +170,7 @@ Satu pertanyaan tetangga yang layak sebaris: pada **showdown**, defaultnya adala
 
 ## Posisi Poker Berdasarkan Jumlah Pemain: Heads-Up hingga 10 Pemain (6-Max vs Full Ring)
 
-Nama posisi tak berubah menurut ukuran meja — ==mereka terkelupas dari posisi awal lebih dulu== seiring pemain dikurangi. Button, blind, cutoff, dan hijack bertahan paling lama; kursi-kursi UTG hanya ada ketika meja penuh. Berikut petanya dari 2 pemain hingga 10, disusun dalam urutan aksi preflop:
+Nama posisi tak berubah menurut ukuran meja — ==nama-nama itu dipangkas mulai dari posisi awal== seiring pemain dikurangi. Button, blind, cutoff, dan hijack bertahan paling lama; kursi-kursi UTG hanya ada ketika meja penuh. Berikut petanya dari 2 pemain hingga 10, disusun dalam urutan aksi preflop:
 
 | Pemain | Urutan aksi preflop (pertama → terakhir) |
 |:---:|:---|
@@ -214,7 +215,7 @@ A. Small blind aksi sebelum big blind di setiap street. Preflop, kedua blind aks
 
 **Q. Ada berapa posisi di poker 6-max?**
 
-A. Enam: UTG (juga disebut lojack), hijack, cutoff, button, small blind, dan big blind. Dibandingkan meja 9-max, UTG+1, UTG+2, dan satu kursi tengah cukup tidak ada — nama dihapus dari posisi awal lebih dulu. Jumlah pemain di belakang sebuah kursi sama saja dengan kursi senama di full ring, tapi karena kursi-kursi awal hilang Anda jauh lebih sering duduk di blind dan di posisi akhir, jadi rata-rata range jadi lebih lebar.
+A. Enam: UTG (juga disebut lojack), hijack, cutoff, button, small blind, dan big blind. Dibandingkan meja 9-max, UTG+1, UTG+2, dan satu kursi tengah memang tidak ada — nama dihapus dari posisi awal lebih dulu. Jumlah pemain di belakang sebuah kursi sama saja dengan kursi senama di full ring, tapi karena kursi-kursi awal hilang Anda jauh lebih sering duduk di blind dan di posisi akhir, jadi rata-rata range jadi lebih lebar.
 
 **Q. Apakah posisi poker berubah setiap tangan?**
 

@@ -128,7 +128,7 @@ Here's the secret the strategy charts don't tell you: **most bad calls aren't re
 
 **Sunk cost — "I've already put so much in."** This is the big one. The chips you bet earlier are *no longer yours* — they belong to the pot. Every decision is independent, judged only on what happens *from here.* "I'm pot-committed because I've invested so much" is the sunk-cost fallacy in a poker chair. (Real pot-commitment exists, but it comes from the *current* price relative to a big pot — not from what you spent three streets ago.)
 
-**Ego — "I have to know if he's bluffing."** Calling to satisfy curiosity, or to avoid the sting of *maybe* being bluffed, is paying the maximum for information you don't need. You will get bluffed sometimes. That's fine — a fold button that's *never* wrong means you're folding far too much and bleeding to every value bet. Manage your decisions, not your ego.
+**Ego — "I have to know if he's bluffing."** Calling to satisfy curiosity, or to avoid the sting of *maybe* being bluffed, is paying the maximum for information you don't need. You will get bluffed sometimes. That's fine — a fold button that's *never* wrong means you're folding far too much and getting bluffed out of pot after pot. Manage your decisions, not your ego.
 
 **Fear — folding the best hand to a scare card.** The opposite failure: so afraid of being beaten that you release winners. The fix for both poles is the same phrase — ==fold out of math, not out of fear.== Fold because the price is wrong or the story is value, not because you "have a bad feeling."
 

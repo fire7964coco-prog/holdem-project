@@ -8,7 +8,11 @@ export const POST: Post = {
   tldr: "Dari 169 tipe starting hand, hanya irisan atas kecil — sekitar 15–20% kartu yang Anda terima — yang profit untuk pemula. Pair besar (AA–TT) dan AK raise dari kursi mana pun; makin belakang Anda beraksi, makin lebar Anda open — dari ~13% di under the gun hingga ~43% di button (lebih lebar lagi di 6-max). Mulai dengan chart sederhana, tambahkan chart preflop GTO setelah raise-or-fold jadi otomatis.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-08-11",
+  updated: "2026-08-27",
+  // masterUpdated 08-11 유지 — EN 08-26 변경 중 PDF 앵커 정정(9-max 전용 + 6-max 한 줄)과
+  //   suited FAQ 정밀화(2pt·AKs 67/AKo 65)는 08-27에 이식 완료. 남은 유일한 델타 = UTG 확장 목록의
+  //   AJo 삭제(EN은 «AQo»만) — 사장님 판단 대기 #1(UTG 13% 구성)과 같은 갈래라 임의 소급 금지.
+  //   #1 판정 후 함께 반영하고 그때 masterUpdated를 08-26으로 올릴 것.
   masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "10 mnt",
@@ -140,7 +144,7 @@ Aturan kunci: ==tangan speculative ini butuh posisi agar profit==. Jika pemain U
 
 ## Starting Hands 6-Max: Bagaimana Chart Berubah
 
-Kebanyakan cash game online adalah 6-max, dan chart bergeser ke satu arah: ==lebih lebar==. Hapus tiga kursi paling ketat dari meja 9-max dan setiap posisi tersisa efektif "naik". Pemain pertama yang beraksi di 6-max sedang open melawan lima lawan, bukan delapan — jadi ==g:UTG di 6-max bermain kira-kira seperti MP di 9-max== (~15–17% alih-alih ~13%).
+Kebanyakan cash game online adalah 6-max, dan chart bergeser ke satu arah: ==lebih lebar==. Hapus tiga kursi paling ketat dari meja 9-max dan setiap posisi tersisa secara efektif "naik". Pemain pertama yang beraksi di 6-max sedang open melawan lima lawan, bukan delapan — jadi ==g:UTG di 6-max bermain kira-kira seperti MP di 9-max== (~15–17% alih-alih ~13%).
 
 :::compare
 9-Max (Full Ring) | 6-Max
@@ -157,11 +161,11 @@ Kesalahan yang harus dihindari adalah memainkan chart 9-max di game 6-max: Anda 
 
 ## Berapa Persen Starting Hand yang Harus Anda Mainkan?
 
-Sepanjang satu sesi penuh, ==target pemula yang solid adalah memainkan kira-kira 15–20% kartu yang Anda terima== — yang berarti fold 80–85% preflop. Itu bukan satu angka rata: angka per posisi di atas — ~13% dari UTG, ~17% dari MP, ~27% dari cutoff, ~43% dari button — adalah seberapa lebar Anda *membuka pot yang belum dibuka siapa pun*. Rata-rata sesi Anda jatuh di bawah rata-rata mentah angka-angka itu, karena Anda sering menghadapi raise (di situ Anda lanjut dengan jauh lebih sedikit tangan) dan banyak orbit Anda tersangkut di posisi awal dan di blind.
+Sepanjang satu sesi penuh, ==target pemula yang solid adalah memainkan kira-kira 15–20% kartu yang Anda terima== — yang berarti fold 80–85% preflop. Itu bukan satu angka tunggal: angka per posisi di atas — ~13% dari UTG, ~17% dari MP, ~27% dari cutoff, ~43% dari button — adalah seberapa lebar Anda *membuka pot yang belum dibuka siapa pun*. Rata-rata sesi Anda jatuh di bawah rata-rata mentah angka-angka itu, karena Anda sering menghadapi raise (di situ Anda lanjut dengan jauh lebih sedikit tangan) dan banyak orbit Anda tersangkut di posisi awal dan di blind.
 
 :::stat[15–20%] kartu yang dibagi — range pemula yang sehat di 9-max:::
 
-Jika Anda memainkan 30–40% tangan di meja full-ring, Anda bukan "melihat lebih banyak flop" — Anda membayar rake dan reverse-implied odds pada tangan yang sudah chart suruh Anda fold. Lacak dengan jujur untuk satu sesi; angkanya biasanya lebih tinggi daripada yang terasa.
+Jika Anda memainkan 30–40% tangan di meja full-ring, Anda bukan "melihat lebih banyak flop" — Anda membayar rake dan reverse-implied odds pada tangan yang menurut chart seharusnya sudah Anda fold. Lacak dengan jujur untuk satu sesi; angkanya biasanya lebih tinggi daripada yang terasa.
 
 Satu catatan lingkup: ini soal berapa persen dari *range* Anda yang dimainkan, bukan soal seberapa sering tangan tertentu menang melawan satu sama lain. Untuk win rate tangan-vs-tangan (AK vs QQ, pair vs dua overcard, dan sisanya), lihat [panduan peluang dan probabilitas poker](/id/blog/holdem-probability) — itu tugasnya, bukan tugas chart ini.
 
@@ -192,14 +196,14 @@ Starting hand terburuk di poker bukan sampah acak seperti 7-2 — tak ada yang b
 
 | Tipe tangan | Kenapa merugi | Apa yang dipikir pemula |
 |-----------|-------------|---------------------|
-| ==r:Ace lemah (A2o–A8o)== | Membuat pair terbaik-kedua vs. ace lebih baik | "Saya punya ace, pasti bagus" |
+| ==r:Ace lemah (A2o–A8o)== | Membuat pair terbaik kedua vs. ace yang lebih baik | "Saya punya ace, pasti bagus" |
 | Connector offsuit rendah (76o, 65o) | Jarang nyambung bersih, sulit dimainkan saat nyambung | "Bisa membuat straight" |
 | King-rag offsuit (K3o, K4o) | Terdominasi oleh setiap king yang lebih baik | "King itu kartu besar" |
-| Dua kartu suited apa pun | Membuat flush di river hanya ~6,5% dari waktu (flop satu ~0,8%) | "Tapi mereka suit yang sama" |
+| Dua kartu suited apa pun | Membuat flush di river hanya ~6,5% dari waktu (flop satu ~0,8%) | "Tapi kartunya satu suit, kan" |
 
 ![Jebakan ace lemah di Texas Hold'em — A♣ 4♦ dilingkari merah sebagai tangan yang merugi, terdominasi oleh A♠ K♦ berwarna emas](/images/holdem-starting-hands-weak-ace-trap.webp "Ace lemah terlihat kuat tapi tetap terdominasi — fold preflop")
 
-==r:Kesalahan paling mahal yang dibuat pemula adalah call raise dengan ace lemah== seperti A♣ 4♦ dari intro. Saat akhirnya Anda hit pair ace, Anda sering terbaik-kedua melawan A♠ K♦ atau A♥ Q♦ — dan Anda kehilangan pot besar yakin bahwa Anda punya top pair. Anda memang punya. Begitu pula mereka, dengan kicker lebih baik.
+==r:Kesalahan paling mahal yang dibuat pemula adalah call raise dengan ace lemah== seperti A♣ 4♦ dari intro. Saat akhirnya Anda hit pair ace, Anda sering cuma jadi yang terbaik kedua melawan A♠ K♦ atau A♥ Q♦ — dan Anda kehilangan pot besar sambil yakin Anda punya top pair. Anda memang punya. Begitu pula mereka, dengan kicker lebih baik.
 
 (Dan tangan terburuk sebenarnya di poker? 7-2 offsuit — lebih lanjut soal itu, dan "aturan 7-2" yang terkenal, di FAQ di bawah.)
 
@@ -209,9 +213,9 @@ Starting hand terburuk di poker bukan sampah acak seperti 7-2 — tak ada yang b
 
 Chart hanya berguna jika ada di depan Anda saat penting. Untuk home game dan sesi belajar, kami membuat semuanya bisa dicetak:
 
-**[Unduh chart starting hands poker gratis yang bisa dicetak (PDF)](/downloads/poker-starting-hands-chart.pdf)** — satu halaman, range open 9-max dan 6-max berdampingan, format cheat-sheet. Cetak, atau biarkan terbuka di ponsel Anda di antara tangan.
+**[Unduh chart starting hands poker gratis yang bisa dicetak (PDF)](/downloads/poker-starting-hands-chart.pdf)** — satu halaman: chart open 9-max lengkap plus penyesuaian 6-max satu baris, format cheat-sheet. Cetak, atau biarkan terbuka di ponsel Anda di antara tangan.
 
-Lalu gunakan secara harfiah, setiap tangan, untuk 20+ sesi pertama Anda:
+Lalu benar-benar pakai chart itu di setiap tangan, untuk 20+ sesi pertama Anda:
 
 :::steps
 Cek posisi Anda dulu | Sebelum melihat kartu Anda, catat di mana Anda duduk relatif terhadap button
@@ -264,11 +268,11 @@ A. Ada 169 tipe starting hand berbeda (13 pair, 78 suited, 78 offsuit) dari 1.32
 
 **Q. Apa aturan 7-2 di poker?**
 
-A. Aturan 7-2 adalah game sampingan rumahan, bukan aturan poker resmi: jika seorang pemain memenangkan pot dengan 7-2 offsuit — tangan terburuk — setiap pemain lain membayar mereka bounty kecil. Ia ada murni untuk membumbui home game dan pub game dengan menghadiahi bluff yang keterlaluan.
+A. Aturan 7-2 adalah game sampingan rumahan, bukan aturan poker resmi: jika seorang pemain memenangkan pot dengan 7-2 offsuit — tangan terburuk — setiap pemain lain membayar bounty kecil kepadanya. Ia ada murni untuk membumbui home game dan pub game dengan menghadiahi bluff yang keterlaluan.
 
 **Q. Apa starting hand terburuk di poker?**
 
-A. 7-2 offsuit luas dianggap sebagai starting hand terburuk di poker. Kartunya terlalu berjauhan untuk membuat straight bersama, terlalu rendah untuk menang tanpa perbaikan, dan bahkan hit sebuah pair meninggalkan Anda dengan tangan lemah dan kicker buruk.
+A. 7-2 offsuit umumnya dianggap sebagai starting hand terburuk di poker. Kartunya terlalu berjauhan untuk membuat straight bersama, terlalu rendah untuk menang tanpa perbaikan, dan bahkan kalau kena pair, tangan Anda tetap lemah dengan kicker buruk.
 
 **Q. Apakah pemula harus memakai chart preflop GTO?**
 
@@ -276,7 +280,7 @@ A. Tidak di awal. Chart preflop GTO memakai frekuensi campuran yang dirancang ag
 
 **Q. Apakah suited benar-benar penting?**
 
-A. Suited menambah sekitar 2–3% equity atas tangan offsuit yang sama — berarti, tapi bukan alasan memainkan tangan buruk. Dua kartu suited membuat flush di river hanya ~6,5% dari waktu (dan flush draw yang di-flop selesai sekitar 35% dari waktu di river). Trash suited tetap trash.
+A. Suited menambah sekitar 2 poin persentase equity atas tangan offsuit yang sama (AKs 67% melawan satu tangan acak; AKo 65%) — berarti, tapi bukan alasan memainkan tangan buruk. Dua kartu suited membuat flush di river hanya ~6,5% dari waktu (dan flush draw yang di-flop selesai sekitar 35% dari waktu di river). Trash suited tetap trash.
 
 **Q. Haruskah saya selalu fold pocket pair kecil seperti 22 atau 33?**
 

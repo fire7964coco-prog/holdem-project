@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "3-bet adalah re-raise pertama sebelum flop — disebut 3-bet karena big blind adalah taruhan pertama, open-raise yang kedua, dan re-raise Anda yang ketiga. Value-3-bet inti yang ketat (QQ+, AK) plus beberapa bluff blocker suited seperti A5s, ukur sekitar 3x dari open in position dan 4x out of position, dan jaga frekuensi 3-bet keseluruhan Anda dekat 6–10%. Saat Andalah yang menghadapi 3-bet, 4-bet tangan premium Anda, call tangan yang bermain baik, dan fold sisanya — fold lebih banyak daripada 'balanced' melawan pemain stake rendah yang tak pernah bluff.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-08-11",
+  updated: "2026-08-27",
+  masterUpdated: "2026-08-27",
   keepImagesInBody: true,
   readTime: "16 mnt",
   emoji: "♦️",
@@ -47,14 +48,14 @@ Itulah seluruh tangganya. Segala hal lain di panduan ini adalah tentang anak tan
 
 ---
 
-## Kenapa 3-Bet Sama Sekali? Apa yang Sebenarnya Dilakukan Sebuah 3-Bet
+## Kenapa Harus 3-Bet? Apa yang Sebenarnya Dilakukan Sebuah 3-Bet
 
 Meng-call open-raise (disebut **flatting**) menjaga Anda tetap di pot, tapi 3-bet melakukan empat hal yang tak bisa dilakukan flat:
 
-1. **Ia sering langsung memenangkan pot.** Cukup sering, raiser fold dan Anda menyapu pot sebelum flop tanpa showdown. Flat tak pernah melakukan ini.
-2. **Ia membangun pot besar dengan tangan terbaik Anda.** Saat Anda memegang aces atau kings, flatting membiarkan tiga pemain lain masuk dengan murah. 3-betting mengisolasi raiser dan memasukkan uang selagi Anda favorit besar.
-3. **Ia merebut inisiatif dan leverage posisi.** Anda menjadi agresor dengan pimpinan taruhan di setiap street — dan melawan opener yang lebar, tekanan itu mencetak uang.
-4. **Ia menyangkal equity dan informasi.** Sebuah raise menagih lawan untuk lanjut alih-alih membiarkan mereka melihat flop murah dengan tangan yang mungkin menghancurkan Anda.
+1. **3-bet sering langsung memenangkan pot.** Cukup sering, raiser fold dan Anda menyapu pot sebelum flop tanpa showdown. Flat tak pernah melakukan ini.
+2. **Taruhan ini membangun pot besar dengan tangan terbaik Anda.** Saat Anda memegang aces atau kings, flatting membiarkan tiga pemain lain masuk dengan murah. 3-betting mengisolasi raiser dan memasukkan uang selagi Anda favorit besar.
+3. **3-bet merebut inisiatif dan leverage posisi.** Anda menjadi agresor dengan pimpinan taruhan di setiap street — dan melawan opener yang lebar, tekanan itu mencetak uang.
+4. **3-bet memangkas equity dan informasi lawan.** Sebuah raise menagih lawan untuk lanjut alih-alih membiarkan mereka melihat flop murah dengan tangan yang mungkin menghancurkan Anda.
 
 Jebakannya: karena 3-bet itu ampuh, melakukannya *salah* itu mahal. Terlalu banyak pemain yang hanya pernah meng-3-bet monster mereka, yang membuat mereka sepenuhnya terbaca. Sisa panduan ini adalah tentang melakukannya dengan benar.
 
@@ -70,13 +71,13 @@ Range 3-bet yang menang punya **dua bagian berbeda**, dan memahami pembagian ini
 - **Intinya, hampir selalu:** ==g:QQ+ dan AK.==
 - **Perluas ke** JJ, TT, AQs, dan KQs saat Anda melawan open posisi-akhir yang lebih lebar — dan pangkas kembali menuju inti melawan raiser posisi-awal yang ketat.
 
-**Light 3-bet (3-bet bluff)** — tangan yang Anda 3-bet *dengan harapan* melipatnya keluar, tapi yang masih punya equity cadangan saat di-call. Kandidat terbaik bukanlah sampah acak; mereka dipilih karena **blocker** dan **playability**:
+**Light 3-bet (3-bet bluff)** — tangan yang Anda 3-bet *dengan harapan* membuat lawan fold, tapi yang masih punya equity cadangan saat di-call. Kandidat terbaik bukanlah sampah acak; mereka dipilih karena **blocker** dan **playability**:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Tangan light 3-bet | Kenapa ia bluff hebat |
 |:---|:---|
-| **A5s–A2s** (suited wheel aces) | Ace Anda **memblokir** premium mereka — ia menurunkan kombo AA mereka dari 6 ke 3 dan AK dari 16 ke 12 — jadi mereka lebih kecil kemungkinan punya tangan yang lanjut. Plus ia mem-flop flush, straight, dan wheel draw. |
+| **A5s–A2s** (suited wheel aces) | Ace Anda **memblokir** premium mereka — ia menurunkan kombo AA mereka dari 6 menjadi 3 dan AK dari 16 menjadi 12 — jadi mereka lebih kecil kemungkinan punya tangan yang lanjut. Plus ia mem-flop flush, straight, dan wheel draw. |
 | **Suited connector** (76s, 65s) | Playability luar biasa — mereka mem-flop straight, flush, dan draw, jadi mereka menang banyak bahkan saat bluff-nya di-call. |
 | **Suited one-gapper** (T8s, 97s) | Ide sama, sedikit lebih lemah: tersamar, fleksibel, dan murah untuk fold jika di-4-bet. |
 
@@ -100,9 +101,9 @@ Anda akan melihat dua kata ini di mana-mana dalam strategi 3-bet. Mereka menggam
 
 </div>
 
-Alasannya sederhana: melawan open yang **lebar, lemah**, tangan seperti AQ dan TT benar-benar unggul, jadi Anda 3-bet mereka untuk value dalam satu blok merged (**linear**). Melawan open yang **ketat**, tangan tengah yang sama itu terdominasi dan "ditiup keluar" oleh 4-bet, jadi Anda hanya 3-bet value sejati plus bluff yang bersih dan *flat* bagian tengah (**polarized**).
+Alasannya sederhana: melawan open yang **lebar, lemah**, tangan seperti AQ dan TT benar-benar unggul, jadi Anda 3-bet mereka untuk value dalam satu blok merged (**linear**). Melawan open yang **ketat**, tangan tengah yang sama itu terdominasi dan "dipaksa fold" oleh 4-bet, jadi Anda hanya 3-bet value sejati plus bluff yang bersih dan *flat* bagian tengah (**polarized**).
 
-Satu nuansa jujur yang dilewatkan kelompok hand-chart: **posisi bukan satu-satunya faktor.** Pertanyaan sebenarnya adalah *seberapa besar kemungkinan Anda ditiup keluar dari tangan Anda* — yang juga bergantung pada agresi lawan, rake, dan sizing Anda. Menghadapi seseorang yang banyak call dan jarang 4-bet, dengan size kecil dan rake rendah, condong **linear**. Menghadapi lawan yang gemar 4-bet dengan size besar dan rake tinggi, condong **polarized**. Baca spot-nya, jangan hafal aturan.
+Satu nuansa jujur yang dilewatkan kelompok hand-chart: **posisi bukan satu-satunya faktor.** Pertanyaan sebenarnya adalah *seberapa besar kemungkinan Anda dipaksa melepas tangan Anda* — yang juga bergantung pada agresi lawan, rake, dan sizing Anda. Menghadapi seseorang yang banyak call dan jarang 4-bet, dengan size kecil dan rake rendah, condong **linear**. Menghadapi lawan yang gemar 4-bet dengan size besar dan rake tinggi, condong **polarized**. Baca spot-nya, jangan hafal aturan.
 
 ---
 
@@ -115,12 +116,12 @@ Kebanyakan panduan memberi tahu Anda "3x in position, 4x out of position" lalu b
 | Situasi | Size | Open 3bb menjadi… | Kenapa |
 |:---|:---:|:---:|:---|
 | **In position** (Anda beraksi terakhir) | ~3x dari open | **9bb** ($18) | Posisi membiarkan Anda menang dengan size lebih kecil, jadi Anda mempertaruhkan lebih sedikit. |
-| **Out of position** (Anda beraksi lebih dulu) | ~4–4,5x | **12–13,5bb** ($24–27) | Lebih besar menagih mereka lebih banyak untuk melihat flop dan menyangkal tumpangan murah bagi kelemahan posisi Anda. |
+| **Out of position** (Anda beraksi lebih dulu) | ~4–4,5x | **12–13,5bb** ($24–27) | Lebih besar menagih mereka lebih banyak untuk melihat flop dan menutup jalan murah untuk mengeksploitasi kelemahan posisi Anda. |
 | **Squeeze** (open + seorang caller) | Size OOP **+ ~1x per caller** | **~15–16,5bb** ($30–33) | Dead money ekstra dan pemain ekstra untuk didorong keluar. |
 
 </div>
 
-⚠ **Mengisolasi limper bukan 3-bet.** Kalau sebelum Anda semua hanya limp, raise Anda adalah raise *pertama* di ronde itu — sebuah 2-bet. Sizing-nya menjawab pertanyaan yang sama, jadi tempatnya di sini: **3bb + 1bb per limper** (tambah 1 lagi live), kira-kira **4–5bb**. Ini menghukum limp dan mencegah overcall — Anda tetap di-call lebar.
+⚠ **Mengisolasi limper bukan 3-bet.** Kalau semua orang sebelum Anda hanya limp, raise Anda adalah raise *pertama* di ronde itu — sebuah 2-bet. Sizing-nya menjawab pertanyaan yang sama, jadi tempatnya di sini: **3bb + 1bb per limper** (di game live, tambah 1bb lagi), kira-kira **4–5bb**. Ini menghukum limp dan mencegah overcall — Anda tetap di-call lebar.
 
 Matematikanya sengaja ditampilkan karena di situlah pemula bocor: **3 × 3bb = 9bb** in position, **4 × 3bb = 12bb** out of position. Dua aturan yang mengesampingkan pengali:
 
@@ -161,7 +162,7 @@ Dua hal membuat squeeze istimewa:
 - **Ada lebih banyak dead money.** Pot sudah memuat raise dan call, jadi squeeze yang berhasil menang lebih banyak, artinya bluff Anda perlu berhasil *lebih jarang* untuk profit.
 - **Ukur lebih besar.** Tambah kira-kira satu open-raise ekstra untuk tiap caller. Melawan open 3bb plus satu caller, squeeze ke sekitar **15–16,5bb** itu standar — size ekstra itulah yang mendorong kedua pemain keluar.
 
-Bluff squeeze yang bagus adalah tangan blocker suited yang sama (A5s dan kawan-kawan) yang membuat bluff 3-bet yang bagus, karena Anda tetap ingin melipat keluar tangan medium raiser dan punya equity saat di-call.
+Bluff squeeze yang bagus adalah tangan blocker suited yang sama (A5s dan kawan-kawan) yang membuat bluff 3-bet yang bagus, karena Anda tetap ingin membuat tangan medium si raiser fold dan punya equity saat di-call.
 
 ---
 
@@ -196,8 +197,8 @@ MDF mengasumsikan lawan yang *balanced*. Di stake rendah dan game live, pemain s
 Cukup teori — inilah tangan penuh dengan angka-angkanya, agar Anda bisa melihat seluruh alurnya. Cash $1/$2, 100bb deep.
 
 - **Preflop:** Cutoff longgar membuka ke ==$6== (3bb). Saya di button dengan ==A♠Q♠==. Ini jelas **value 3-bet** melawan open posisi-akhir yang lebar, dan saya in position, jadi saya jadikan ==$18== (3x). Blinds fold; cutoff call. Pot-nya $39.
-- **Flop:** ==Q♦ 8♣ 4♥.== Saya mem-flop **top pair, top kicker** — A♠Q♠ saya membuat pair of queens dengan kicker terbaik yang mungkin (ace). Lima kartu terbaik: Q♠ Q♦ A♠ 8♣ 4♥ = one pair (queens) dengan kicker ace. Melawan range-nya berupa queens lebih buruk, delapan-delapan, dan float, saya jauh unggul.
-- **Poinnya:** karena saya 3-bet preflop, pot-nya sudah besar dan saya punya pimpinan taruhan, jadi saya bet lagi untuk value dan dibayar oleh queens lebih buruk dan draw. Seandainya saya hanya *flat* preflop, tiga pemain lain mungkin melihat flop itu, tangan saya akan jauh lebih sulit dimainkan, dan pot-nya akan sepersekian ukurannya. 3-bet itulah yang mengubah top pair menjadi sebuah stack.
+- **Flop:** ==Q♦ 8♣ 4♥.== Saya mem-flop **top pair, top kicker** — A♠Q♠ saya membuat pair of queens dengan kicker terbaik yang mungkin (ace). Lima kartu terbaik: Q♠ Q♦ A♠ 8♣ 4♥ = one pair (queens) dengan kicker ace. Melawan range-nya berupa queens yang lebih lemah, eights, dan float, saya jauh unggul.
+- **Poinnya:** karena saya 3-bet preflop, pot-nya sudah besar dan saya punya pimpinan taruhan, jadi saya bet lagi untuk value dan dibayar oleh queens yang lebih lemah dan draw. Seandainya saya hanya *flat* preflop, tiga pemain lain mungkin melihat flop itu, tangan saya akan jauh lebih sulit dimainkan, dan pot-nya akan sepersekian ukurannya. 3-bet itulah yang mengubah top pair menjadi sebuah stack.
 
 Sekarang balik: seandainya saya meng-3-bet tangan **ringan** seperti A5s di sana dan cutoff **4-bet** ke $55, saya cukup fold — bluff blocker itu menjalankan tugasnya dengan memberi saya laydown murah dan bersih. Itulah disiplin yang membuat light 3-betting profit alih-alih spewy.
 
@@ -218,7 +219,7 @@ Sekarang balik: seandainya saya meng-3-bet tangan **ringan** seperti A5s di sana
 
 </div>
 
-Perhatikan benang yang mengalir melalui keenamnya: 3-bet yang bagus punya *alasan* — value yang Anda ingin di-call, atau bluff dengan blocker dan equity cadangan. Re-raising acak tanpa rencana adalah cara stack menghilang.
+Perhatikan benang merah yang menghubungkan keenamnya: 3-bet yang bagus punya *alasan* — value yang Anda ingin di-call, atau bluff dengan blocker dan equity cadangan. Re-raising acak tanpa rencana adalah cara stack menghilang.
 
 ---
 
@@ -241,6 +242,14 @@ A. Karena namanya menghitung taruhan dalam urutan, bukan raise. Big blind adalah
 
 A. 3-bet adalah re-raise pertama (di atas open-raise); 4-bet adalah re-raise berikutnya, dibuat di atas 3-bet. Jadi tangganya begini: open-raise (taruhan ke-2) → 3-bet (taruhan ke-3) → 4-bet (taruhan ke-4) → 5-bet (biasanya all-in). Sebuah 4-bet mewakili range yang sangat kuat dan polarized.
 
+**Q. Tangan apa yang harus Anda 4-bet, dan seberapa besar?**
+
+A. 4-bet dengan range polarized: premium untuk value (QQ+ dan AK — melawan lawan yang jarang 3-bet, pangkas intinya ke AA–KK) dan sedikit bluff blocker seperti A5s yang memblokir aces dan ace-king lawan Anda. Ukur 4-bet kira-kira 2,2–2,5x dari 3-bet saat in position dan sedikit lebih besar out of position — lebih kecil dari dugaan kebanyakan pemula, karena pot-nya sudah besar. Sebagai frekuensi, pemain solid hanya 4-bet beberapa persen dari tangannya; perlebar value 4-bet Anda melawan lawan yang terlalu sering 3-bet.
+
+**Q. Kapan Anda harus 5-bet di poker?**
+
+A. 5-bet adalah re-raise di atas 4-bet, dan pada sekitar 100 big blind ia hampir selalu all-in. 5-bet untuk value dengan puncak paling atas range Anda (AA, KK, sering AK) dan, melawan pemain agresif yang 4-bet ringan, tambahkan bluff ace-blocker sesekali. Bagi kebanyakan lawan stake rendah sebuah 5-bet berteriak "aces atau kings" — jadi kalau pemain pasif yang 5-bet, fold semuanya kecuali premium mutlak Anda.
+
 **Q. Tangan apa yang harus Anda 3-bet?**
 
 A. Bagi 3-bet Anda menjadi value dan bluff. Inti value adalah QQ+ dan AK, meluas ke JJ, TT, AQs, dan KQs melawan open yang lebih lebar. Untuk bluff, pakai tangan suited dengan blocker dan playability — A5s hingga A2s dan suited connector seperti 76s dan 65s — bukan sampah offsuit acak.
@@ -251,11 +260,11 @@ A. 3-bet saat Anda punya premium, saat opener lebar dan lemah, atau saat Anda ou
 
 **Q. Apa itu light 3-bet?**
 
-A. Light 3-bet (atau 3-bet bluff) adalah re-raising dengan tangan yang tak Anda harapkan menjadi terbaik, berharap melipat opener keluar. Light 3-bet terbaik punya blocker dan equity cadangan — suited wheel aces seperti A5s memblokir aces dan ace-king lawan Anda sambil tetap mem-flop flush dan straight, jadi mereka menang bahkan saat di-call.
+A. Light 3-bet (atau 3-bet bluff) adalah re-raising dengan tangan yang tak Anda harapkan menjadi terbaik, berharap membuat si opener fold. Light 3-bet terbaik punya blocker dan equity cadangan — suited wheel aces seperti A5s memblokir aces dan ace-king lawan Anda sambil tetap mem-flop flush dan straight, jadi mereka menang bahkan saat di-call.
 
 **Q. Apa beda antara range 3-bet linear dan polarized?**
 
-A. Range linear (merged) adalah satu blok solid dari tangan terbaik Anda — dipakai melawan open lebar dan lemah atau saat in position. Range polarized adalah tangan terkuat Anda plus bluff, dengan tangan medium dihapus dan di-flat saja — dipakai melawan open ketat atau dari blinds, di mana tangan medium ditiup keluar oleh 4-bet.
+A. Range linear (merged) adalah satu blok solid dari tangan terbaik Anda — dipakai melawan open lebar dan lemah atau saat in position. Range polarized adalah tangan terkuat Anda plus bluff, dengan tangan medium dihapus dan di-flat saja — dipakai melawan open ketat atau dari blinds, di mana tangan medium dipaksa fold oleh 4-bet.
 
 **Q. Seberapa besar Anda harus 3-bet?**
 
@@ -263,7 +272,7 @@ A. Sekitar 3x dari open in position dan 4–4,5x out of position. Jadi melawan o
 
 **Q. Berapa persentase 3-bet yang bagus?**
 
-A. Untuk pemain solid, frekuensi 3-bet keseluruhan sekitar 6–10% itu sehat, dengan sekitar 8% tipikal untuk pemain cash 6-max yang bagus. Di bawah ~4% terlalu ketat dan face-up; di atas ~10% biasanya terlalu agresif dan membuat Anda di-4-bet dan di-call terlalu ringan. Ia secara alami lebih tinggi dari blinds dan button daripada melawan open posisi-awal.
+A. Untuk pemain solid, frekuensi 3-bet keseluruhan sekitar 6–10% itu sehat, dengan sekitar 8% tipikal untuk pemain cash 6-max yang bagus. Di bawah ~4% terlalu ketat dan face-up; di atas ~10% biasanya terlalu agresif dan membuat Anda di-4-bet dan di-call terlalu ringan. Frekuensinya wajar lebih tinggi saat Anda di blinds atau button ketimbang saat melawan open posisi awal.
 
 **Q. Apa itu squeeze play?**
 
@@ -275,7 +284,7 @@ A. Anda punya tiga pilihan: 4-bet premium Anda (QQ+, AK) plus bluff blocker sese
 
 **Q. Berapa persentase fold-to-3-bet yang bagus?**
 
-A. Sekitar 55% adalah baseline yang wajar dan kira-kira balanced — Anda lanjut dengan bagian atas range Anda dan biarkan sisanya pergi. Fold jauh lebih dari itu membuat Anda bisa dieksploitasi oleh light 3-bet; fold jauh lebih sedikit berarti Anda call atau 4-bet terlalu lebar. Sesuaikan ke lawan: fold lebih banyak melawan pemain yang tak pernah bluff-3-bet.
+A. Sekitar 55% adalah baseline yang wajar dan kira-kira balanced — Anda lanjut dengan bagian atas range Anda dan biarkan sisanya pergi. (Itu lebih lebar daripada MDF matematika murni, yang melawan 3-bet besar hanya menyuruh Anda bertahan sekitar sepertiga range; karena range 3-bet yang seimbang memuat bluff, Anda fold sedikit lebih jarang daripada angka vakum itu.) Fold jauh lebih dari 55% membuat Anda bisa dieksploitasi oleh light 3-bet; fold jauh lebih sedikit berarti Anda call atau 4-bet terlalu lebar. Sesuaikan ke lawan: fold lebih banyak melawan pemain yang tak pernah bluff-3-bet.
 
 **Q. Haruskah Anda 3-bet atau 4-bet all-in dengan stack pendek di turnamen?**
 
@@ -295,7 +304,7 @@ Kuasai 3-betting dengan benar dan Anda berhenti menjadi pemain yang hanya call d
 
 ---
 
-## Baca Juga
+## Postingan Terkait
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/id/blog/holdem-strategy" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">

@@ -5,7 +5,8 @@
 
 > 실측 2026-08-27 · 라쿠 search-volume-history · **location=Indonesia · language=Indonesian** ·
 > requestId **1258288**(배치 1 · 22종 · 12m) + **1258295**(배치 2 · 29종 — rules 소급용 · 12m) +
-> **1258342**(배치 3 · 44종 — rankings 클러스터 · 48m) + **1258391**(배치 4 · 40종 — odds 클러스터 · 48m)
+> **1258342**(배치 3 · 44종 — rankings 클러스터 · 48m) + **1258391**(배치 4 · 40종 — odds 클러스터 · 48m) +
+> **1258443**(배치 5 · 56종 — strategy 클러스터 · 48m · 2026-08-27 세션 7)
 >
 > ✅ **교차검증 완료(2026-08-27 세션 5)** — DataForSEO REST(google_ads search_volume ·
 > location=Indonesia · language=id)로 15종 재실측: 라쿠와 **전 항목 일치**(cara main poker 4.400 ·
@@ -129,6 +130,38 @@
 - 🔴 **apa itu equity** 자동완성 = trading·forex·akuntansi 지배 — equity 단독 조준 금지(자릿수 함정).
 - → **결론: odds 7편의 경화 본체는 볼륨 재조준이 아니라 «드리프트 소급 + EN 경화분 FAQ 이식»**
   (kicker·tiebreak 판정과 동일 계열). 세션 6이 그렇게 실행했다.
+
+## 배치 5 (2026-08-27 · 세션 7 strategy 클러스터 — 자동완성(hl=id) + DFS Labs 발굴 + 라쿠 56종 실측 · 48m)
+
+> 발굴 = 자동완성 40여 시드(strategi·cara menang·trik·tips·posisi·starting hand·fold·limp·3bet·
+> cbet·bluff 계열) + DFS Labs `keyword_suggestions` 6시드. ⚠ DFS **MCP는 이 세션에도 40100**
+> (env 등록 후에도 재현) — node `.mjs` REST 직접 경로만 유효했다(자격증명은 정상).
+
+### 실측표 — 전략축은 전부 ≤50 (재조준 근거 없음)
+
+| 키워드 | 볼륨 | 12m | 판정 |
+|---|--:|--:|---|
+| fold poker | 50 | −14% | 영어 일반어 혼재. «fold dalam poker» 30(**2024-07 신생**·최근 50~70 터치) + «arti fold dalam poker» 10 — when-to-fold 태그·H2가 기커버 |
+| belajar poker · tips poker · tips main poker | 각 30 | −25~+3% | 필라·beginners가 기커버 — 흡수 유지 |
+| **cara menang poker / cara menang main poker** | 각 30 | −23%/−20% | ✅ **필라 태그 채택**(«cara menang texas holdem» 사어 대체 — poker-헤드 규율·세션 4 선례). 파생 «cara main poker biar menang (terus)» 10 — 필라 FAQ가 사실상 커버 |
+| bluff poker | 30 | +13% | 전략 필라 FAQ가 커버 — 단독 글 근거 없음 |
+| trik poker | 20 | **+80%↑** | ⚠ 성장이나 자동완성 의도 혼재(sulap 카드마술·zynga·겜블링앱). 태그 보류 — 재실측 추적만 |
+| trik main/bermain/menang poker | 각 10~20 | 하락 | 흡수 유지 |
+| best starting hand poker 20 · starting hand (poker) 각 10 · poker starting hand chart 10 | — | 하락 | shc가 영어 태그로 기보유 — 조치 불요 |
+| range poker 20 · hand range poker 10 | — | −43% | 흡수 유지 |
+| strategi poker 10 · strategi main/bermain poker 각 10 · strategi texas holdem poker 10→0 | — | 평탄 | 필라 태그 기보유 — 재조준 없음 |
+| 3 bet poker · c bet poker · continuation bet poker · limp poker · check raise poker · semi bluff poker · re raise poker | 각 10 | 평탄/소멸 | 전용글 태그 기보유 — 흡수 전략 실측 재확인 |
+| posisi poker · posisi dalam poker · posisi meja poker · kartu awal poker · kapan harus fold poker · apa itu limp poker · kartu paling bagus di poker · raise poker artinya · gertakan poker · cara jago poker | null | — | 라쿠 DB 부재 — **id 전략 질문축은 검색으로 실재하지 않는다** |
+
+### 함정·노이즈 기록
+
+- 🔴 **«cara menang …» 계열의 DFS 서제스트 하위는 겜블링 사이트 브랜드 지배**(idn poker·poker88·
+  dewa poker·zynga) — 브랜드 결합형 채택 금지.
+- «fold artinya» 자동완성 = 비포커(빨래 개기·fold up) — all in artinya와 같은 함정 계열.
+- «posisi poker» DFS Labs total=0 — 발굴 자체가 비어 있다(축 부재의 독립 확인).
+
+→ **결론: strategy 8편의 경화 본체도 «드리프트 소급 + EN 경화분 FAQ 이식 + 언어 품질»**
+  (odds·kicker 판정과 동일 계열). 세션 7이 그렇게 실행했다. 실채택 = 필라 태그 1교체뿐.
 
 ## 세션 5~9에 주는 결론
 

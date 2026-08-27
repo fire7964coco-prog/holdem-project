@@ -129,7 +129,7 @@ Aqui está o segredo que as tabelas de estratégia não te contam: **a maioria d
 
 **Sunk cost — "Eu já botei tanto ali."** Este é o principal. As fichas que você apostou antes *não são mais suas* — pertencem ao pote. Toda decisão é independente, julgada apenas pelo que acontece *daqui pra frente.* "Estou pot-committed porque investi tanto" é a falácia do sunk cost numa cadeira de poker. (Pot-commitment real existe, mas vem do preço *atual* em relação a um pote grande — não do que você gastou três streets atrás.)
 
-**Ego — "Eu tenho que saber se ele está blefando."** Pagar para satisfazer a curiosidade, ou para evitar a dor de *talvez* estar sendo blefado, é pagar o máximo por uma informação de que você não precisa. Você vai ser blefado às vezes. Tudo bem — um botão de fold que *nunca* está errado significa que você folda demais e sangra para toda aposta de valor. Gerencie suas decisões, não seu ego.
+**Ego — "Eu tenho que saber se ele está blefando."** Pagar para satisfazer a curiosidade, ou para evitar a dor de *talvez* estar sendo blefado, é pagar o máximo por uma informação de que você não precisa. Você vai ser blefado às vezes. Tudo bem — um botão de fold que *nunca* está errado significa que você folda demais e entrega pote atrás de pote para os blefes. Gerencie suas decisões, não seu ego.
 
 **Medo — foldar a melhor mão para uma carta assustadora.** A falha oposta: com tanto medo de estar batido que você larga vencedoras. A correção para os dois polos é a mesma frase — ==folde por matemática, não por medo.== Folde porque o preço está errado ou a história é valor, não porque você "tem um mau pressentimento".
 

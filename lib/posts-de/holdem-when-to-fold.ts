@@ -144,7 +144,7 @@ Hier ist das Geheimnis, das die Strategie-Charts dir nicht verraten: **die meist
 
 **Sunk Cost – „Ich habe schon so viel reingesteckt.“** Das ist der große. Die Chips, die du früher gebettet hast, gehören *nicht mehr dir* – sie gehören dem Pot. Jede Entscheidung ist unabhängig, beurteilt nur danach, was *ab hier* passiert. „Ich bin Pot-committed, weil ich so viel investiert habe“ ist der Sunk-Cost-Fehlschluss im Pokerstuhl. (Echtes Pot-Commitment existiert, aber es kommt aus dem *aktuellen* Preis relativ zu einem großen Pot – nicht aus dem, was du vor drei Streets ausgegeben hast.)
 
-**Ego – „Ich muss wissen, ob er blufft.“** Aus Neugier zu callen, oder um den Stich zu vermeiden, *vielleicht* geblufft worden zu sein, heißt, das Maximum für Informationen zu zahlen, die du nicht brauchst. Du wirst manchmal geblufft. Das ist okay – ein Fold-Knopf, der *nie* falsch liegt, bedeutet, dass du viel zu viel foldest und jeder Value-Bet Blut spendest. Manage deine Entscheidungen, nicht dein Ego.
+**Ego – „Ich muss wissen, ob er blufft.“** Aus Neugier zu callen, oder um den Stich zu vermeiden, *vielleicht* geblufft worden zu sein, heißt, das Maximum für Informationen zu zahlen, die du nicht brauchst. Du wirst manchmal geblufft. Das ist okay – ein Fold-Knopf, der *nie* falsch liegt, bedeutet, dass du viel zu viel foldest und Pot um Pot an Bluffs abgibst. Manage deine Entscheidungen, nicht dein Ego.
 
 **Angst – die beste Hand auf eine Scare Card folden.** Das entgegengesetzte Versagen: so ängstlich, geschlagen zu sein, dass du Gewinner loslässt. Der Fix für beide Pole ist derselbe Satz – ==folde aus Mathematik, nicht aus Angst.== Folde, weil der Preis falsch ist oder die Geschichte Value erzählt, nicht weil du „ein schlechtes Gefühl“ hast.
 

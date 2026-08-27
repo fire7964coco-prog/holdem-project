@@ -8,13 +8,14 @@ export const POST: Post = {
   tldr: "Setiap keputusan Texas Hold'em yang menang menyusut menjadi lima pertanyaan berulang: di mana saya duduk (position), apakah tangan ini layak dimainkan, apakah saya raise atau fold (jangan pernah limp), apakah saya terus bertaruh di flop, dan kapan saya melepasnya? Pemain tight-aggressive yang menjawab lima ini dengan baik akan fold ~80% tangan preflop, memainkannya secara agresif saat main, dan mengalahkan hampir setiap permainan santai — tanpa perlu daftar tips hafalan.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-08-11",
+  updated: "2026-08-27",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "14 mnt",
   emoji: "♠️",
   image: "/images/holdem-strategy-hero.webp",
   imageAlt: "Seorang pemain poker yang fokus menimbang keputusan di meja felt hijau Texas Hold'em, chip dan kartu bersama di depannya di tengah tangan",
-  tags: ["strategi texas holdem", "strategi poker", "strategi poker untuk pemula", "cara menang texas holdem", "tight aggressive", "kapan fold di poker", "kapan bluff", "kapan 3-bet", "strategi c-bet"],
+  tags: ["strategi texas holdem", "strategi poker", "strategi poker untuk pemula", "cara menang poker", "tight aggressive", "kapan fold di poker", "kapan bluff", "kapan 3-bet", "strategi c-bet"],
   content: `
 Selama dua tahun pertama saya melakukan apa yang semua orang lakukan: saya membaca daftar tips. "Sepuluh tips cepat." "Sembilan aturan penting." Saya bisa melafalkan semuanya — mainkan lebih sedikit tangan, jadilah agresif, hormati position — dan saya *tetap* kalah. Masalahnya bukan bahwa tips itu salah. Masalahnya, semua itu adalah tumpukan aturan terpisah tanpa apa pun yang mengikatnya, jadi di meja, pada saat itu juga, saya tak tahu mana yang berlaku.
 
@@ -51,7 +52,7 @@ Jadi alih-alih daftar, gunakan **tulang punggung keputusan**. Setiap tangan yang
 
 </div>
 
-Keajaibannya bukan pada satu keputusan mana pun — melainkan bahwa semuanya *saling berantai*. Position yang baik membuat seleksi tangan lebih mudah. Seleksi tangan yang lebih ketat membuat raise Anda lebih menakutkan. Raise yang menakutkan memenangkan lebih banyak pot di flop. Dan tahu kapan harus fold menjaga pot yang Anda kalahkan tetap kecil. Lewatkan satu mata rantai dan rantainya putus. Mari kita telusuri satu per satu.
+Keajaibannya bukan pada satu keputusan mana pun — melainkan bahwa semuanya *saling berantai*. Position yang baik membuat seleksi tangan lebih mudah. Seleksi tangan yang lebih ketat membuat raise Anda lebih menakutkan. Raise yang menakutkan memenangkan lebih banyak pot di flop. Dan tahu kapan harus fold menjaga pot tetap kecil saat Anda kalah. Lewatkan satu mata rantai dan rantainya putus. Mari kita telusuri satu per satu.
 
 ---
 
@@ -79,8 +80,8 @@ Seberapa banyak "sebagian besar" itu? Seorang pemula [tight-aggressive](/id/blog
 
 Tangan mana yang lolos tergantung pada position Anda (Keputusan 1 memberi umpan ke Keputusan 2), tapi aturan awal umum:
 
-- **Selalu raise:** pair besar (A‑A, K‑K, Q‑Q, J‑J), dan A‑K.
-- **Biasanya raise:** pair menengah, A‑Q, dan broadway suited kuat (K‑Q, A‑J suited) — makin bebas makin belakang kursi Anda.
+- **Selalu raise:** pair besar (A‑A sampai T‑T), dan A‑K.
+- **Biasanya raise:** pair menengah, A‑Q, dan broadway suited kuat (K‑Q, A‑J suited) — makin belakang kursi Anda, makin longgar.
 - **Spekulatif, tergantung position:** small pocket pair dan suited connector, yang menginginkan pot multiway murah (lebih banyak soal matematikanya di bawah).
 - **Fold:** hampir semua lainnya, terutama sampah offsuit seperti J‑4, Q‑7, K‑3.
 
@@ -96,17 +97,17 @@ Setelah Anda memutuskan sebuah tangan layak dimainkan, ada keputusan kedua yang 
 
 [Limp](/id/blog/holdem-limping) adalah sekadar call big blind alih-alih raise. Rasanya aman dan murah, dan itu salah satu kebiasaan paling mahal di poker, karena tiga alasan:
 
-1. **Sebuah limp tak pernah bisa memenangkan pot di preflop.** Ketika Anda raise pertama, semua orang mungkin fold dan Anda menyapu blinds secara gratis. Limp, dan peluang itu tepat **nol** — Anda telah membuang cara termudah untuk menang.
+1. **Sebuah limp tak pernah bisa memenangkan pot di preflop.** Ketika Anda raise pertama, semua orang mungkin fold dan Anda mengambil blinds tanpa perlawanan. Limp, dan peluang itu tepat **nol** — Anda telah membuang cara termudah untuk menang.
 2. **Anda menyerahkan inisiatif.** Preflop raiser bisa terus menceritakan sebuah kisah di flop (Keputusan 4). Limp, dan Anda menyerahkan kisah itu ke orang lain.
-3. **Anda melukis target di diri sendiri.** Pemain kuat raise besar di belakang limper untuk mengisolasinya, lalu mengalahkannya dalam position sepanjang tangan. Sebuah open-limp mengumumkan "ada pemain lemah dan pasif di sini."
+3. **Anda memasang target di punggung sendiri.** Pemain kuat raise besar di belakang limper untuk mengisolasinya, lalu mengalahkannya dalam position sepanjang tangan. Sebuah open-limp mengumumkan "ada pemain lemah dan pasif di sini."
 
-Default yang memperbaikinya blak-blakan: **jika sebuah tangan cukup baik untuk dimainkan, ia cukup baik untuk di-raise; jika tidak, fold.** Dan ketika orang *lain* sudah raise, raise lagi — sebuah [3-bet](/id/blog/holdem-3bet "thumb:/images/holdem-3bet-hero.webp") — adalah cara Anda menghukum open yang lebar dan membangun pot dengan tangan terbaik Anda. Pengecualian terhadap default raise-atau-fold itu nyata, dan semuanya soal **harga**. *Over*-limp — call *di belakang* seseorang yang sudah limp, dalam position, dengan tangan spekulatif seperti small pair — membelikan Anda kursi murah di pot multiway. Yang lebih besar adalah **big blind defense**: melawan open 2,5bb Anda sudah memasang ==1bb==, jadi Anda call 1,5bb ke pot 4bb dan hanya butuh ==1,5 ÷ 5,5 = 27%== equity — dan call Anda menutup aksi. Itulah kenapa sebagian besar range big blind memilih call ketimbang 3-bet atau fold. Yang ketiga adalah **set-mining** small pair melawan raise saat stack dalam (matematikanya ada di bawah). Itu diskon, bukan strategi — di luar spot seperti itu, raise atau fold.
+Default yang memperbaikinya tegas: **jika sebuah tangan cukup baik untuk dimainkan, ia cukup baik untuk di-raise; jika tidak, fold.** Dan ketika orang *lain* sudah raise, raise lagi — sebuah [3-bet](/id/blog/holdem-3bet "thumb:/images/holdem-3bet-hero.webp") — adalah cara Anda menghukum open yang lebar dan membangun pot dengan tangan terbaik Anda. Pengecualian terhadap default raise-atau-fold itu nyata, dan semuanya soal **harga**. *Over*-limp — call *di belakang* seseorang yang sudah limp, dalam position, dengan tangan spekulatif seperti small pair — membelikan Anda kursi murah di pot multiway. Yang lebih besar adalah **big blind defense**: melawan open 2,5bb Anda sudah memasang ==1bb==, jadi Anda call 1,5bb ke pot 4bb dan hanya butuh ==1,5 ÷ 5,5 = 27%== equity — dan call Anda menutup aksi. Itulah kenapa sebagian besar range big blind memilih call ketimbang 3-bet atau fold. Yang ketiga adalah **set-mining** small pair melawan raise saat stack dalam (matematikanya ada di bawah). Itu diskon, bukan strategi — di luar spot seperti itu, raise atau fold.
 
 ---
 
 ## Keputusan 4 — Apakah Saya Terus Bertaruh di Flop? (C-Bet)
 
-Anda raise di preflop, seseorang call, dan sekarang flop keluar. Di sinilah sebagian besar pot sebenarnya dimenangkan dan dikalahkan — dan alatnya adalah [continuation bet (c-bet)](/id/blog/holdem-continuation-bet "thumb:/images/holdem-continuation-bet-hero.webp"): bertaruh di flop setelah Anda menjadi preflop raiser, entah board membantu Anda atau tidak.
+Anda raise di preflop, seseorang call, dan sekarang flop keluar. Di sinilah sebagian besar pot sebenarnya dimenangkan dan hilang — dan alatnya adalah [continuation bet (c-bet)](/id/blog/holdem-continuation-bet "thumb:/images/holdem-continuation-bet-hero.webp"): bertaruh di flop setelah Anda menjadi preflop raiser, entah board membantu Anda atau tidak.
 
 C-bet bekerja karena *Anda*-lah yang merepresentasikan kekuatan di preflop, jadi board "milik" Anda. Tapi inilah kesalahan yang harus dihindari: **tidak ada satu persentase c-bet yang benar.** Nasihat lama berkata "bet hampir setiap flop." Strategi modern berkata itu tergantung pada tiga hal:
 
@@ -124,7 +125,7 @@ Soal ukuran, bet kecil **25–35% dari pot** cocok saat Anda bertaruh dengan ran
 
 Agresi memenangkan pot. **Disiplin menjaga stack.** Keputusan yang memisahkan pemain impas dari pemenang bukanlah hero call atau bluff licin — melainkan tindakan membosankan dan berulang untuk fold saat Anda kalah.
 
-Ini satu contoh konkret dari tangan yang saya mainkan. Saya raise ==A♣K♣== dan mendapat satu caller. Flop keluar ==2♥ 7♦ 9♠== — meleset total. Saya punya ace-high, tanpa pair, tanpa draw. Saya melepas c-bet (Keputusan 4, dalam position, board kering), dan lawan saya check-**raise**. Pada titik itu matematikanya sederhana: saya punya high card terbaik yang mungkin dan tak ada yang lain, dan sebuah check-raise di board itu hampir tak pernah bluff di stake rendah. Jadi saya fold ace-high dan kalah minimum. Dua tahun sebelumnya saya akan "sekadar call untuk melihat" — dan membayari set of nines setiap kali.
+Ini satu contoh konkret dari tangan yang saya mainkan. Saya raise ==A♣K♣== dan mendapat satu caller. Flop keluar ==2♥ 7♦ 9♠== — meleset total. Saya punya ace-high, tanpa pair, tanpa draw. Saya melepas c-bet (Keputusan 4, dalam position, board kering), dan lawan saya check-**raise**. Pada titik itu matematikanya sederhana: saya punya high card terbaik yang mungkin dan tak ada yang lain, dan sebuah check-raise di board itu hampir tak pernah bluff di stake rendah. Jadi saya fold ace-high dan kalah minimum. Dua tahun sebelumnya saya akan "sekadar call untuk melihat" — dan membayar set nines setiap kali.
 
 Aturan umumnya: **[ketika kisah yang diceritakan lawan mengalahkan tangan yang sebenarnya Anda pegang](/id/blog/holdem-when-to-fold "thumb:/images/holdem-when-to-fold-hero.webp"), dan Anda tak punya odds untuk draw out, lepaskan.** Fold tangan yang baik-tapi-kalah terasa seperti kalah. Itu justru kebiasaan tunggal paling menguntungkan dalam permainan. Ketika Anda *memang* punya draw, keputusan fold-atau-call bergantung pada [pot odds](/id/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") — harga yang Anda dapat versus peluang Anda mengenai.
 
@@ -136,7 +137,7 @@ Anda tak perlu menjadi matematikawan, tapi dua angka mendasari separuh keputusan
 
 **Pot odds** memberitahu Anda apakah sebuah call menguntungkan: bandingkan harga call dengan ukuran pot, lalu dengan peluang Anda mengenai. Jika pot memberi Anda 4:1 dan draw Anda mengenai sekitar 1 dari 5, call kira-kira impas; lebih baik dari itu, ia profit. Inilah mesin di balik setiap spot "haruskah saya mengejar draw ini?" — dan [panduan pot odds](/id/blog/holdem-pot-odds) mengubahnya menjadi pembacaan tabel 10 detik.
 
-**Odds set-mining** menjelaskan kenapa small pair itu spekulatif. Call sebuah raise dengan pocket fives berharap flop set — three-of-a-kind — dan Anda hanya terhubung sekitar **11,8% dari waktu, kira-kira 1 dari 8,5.** Ketika berhasil, ia indah: flop ==5♣ K♠ 2♦== memegang ==5♠5♦== dan Anda punya set tersembunyi yang menumpuk overpair. Tapi karena Anda meleset ~88% flop, set-mining hanya menguntungkan saat effective stack cukup dalam untuk membayari Anda ketika mengenai — patokan kasar adalah **setidaknya ~15–20× ukuran call.** Stack dangkal? Call spekulatif itu menjadi kebocoran. [Tabel odds dan probabilitas](/id/blog/holdem-probability) lengkap punya setiap angka yang akan pernah Anda butuhkan.
+**Odds set-mining** menjelaskan kenapa small pair itu spekulatif. Call sebuah raise dengan pocket fives berharap flop set — three-of-a-kind — dan Anda hanya terhubung sekitar **11,8% dari waktu, kira-kira 1 dari 8,5.** Ketika berhasil, hasilnya indah: Anda memegang ==5♠5♦==, flop datang ==5♣ K♠ 2♦==, dan set tersembunyi Anda menumpuk overpair. Tapi karena Anda meleset ~88% flop, set-mining hanya menguntungkan saat effective stack cukup dalam untuk membayari Anda ketika mengenai — patokan kasar adalah **setidaknya ~15–20× ukuran call.** Stack dangkal? Call spekulatif itu menjadi kebocoran. [Tabel odds dan probabilitas](/id/blog/holdem-probability) lengkap punya setiap angka yang akan pernah Anda butuhkan.
 
 ---
 
@@ -148,16 +149,16 @@ Jika Anda mengupas strategi hingga apa yang benar-benar merugikan pemain baru, i
 
 | Kebocoran | Kenapa ia menguras chip | Perbaikan |
 |:---|:---|:---|
-| **Memainkan terlalu banyak tangan** | Starting hand lemah flop menjadi made hand lemah yang merugikan Anda di postflop | Fold ~80% preflop (Keputusan 2) |
+| **Memainkan terlalu banyak tangan** | Starting hand lemah menjadi made hand lemah di flop, lalu merugikan Anda di postflop | Fold ~80% preflop (Keputusan 2) |
 | **Terlalu banyak call** | Sebuah call hanya bisa menang jika Anda sudah unggul — ia tak pernah membuat siapa pun fold | Raise atau fold; berhenti "call untuk melihat" (Keputusan 3) |
-| **Terlalu pasif** | Pemenang bet dan raise untuk value; pasivitas memenangkan pot kecil dan mengalahkan yang besar | Ambil garis agresif saat Anda memilikinya |
+| **Terlalu pasif** | Pemenang bet dan raise untuk value; pasivitas menang pot kecil dan kalah pot besar | Ambil line agresif saat Anda memang punya tangannya |
 | **Mengabaikan position** | Memainkan sampah di luar position berarti menebak setiap street | Main lebih ketat di awal, lebih longgar di belakang (Keputusan 1) |
 | **Mengejar draw tanpa odds** | Call "harapan" yang tak dibenarkan pot | Cek pot odds sebelum setiap call draw (Keputusan 5) |
 | **Bermain saat tilt** | Keputusan emosional membakar sesi yang bagus | Berhenti saat Anda tak berpikir jernih |
 
 </div>
 
-Perhatikan bahwa lima dari enam kebocoran memetakan langsung ke lima keputusan. Kerangkanya tak abstrak — ia secara harfiah adalah daftar kebocoran, dibalik ke posisi yang benar.
+Perhatikan bahwa lima dari enam kebocoran memetakan langsung ke lima keputusan. Kerangkanya tak abstrak — kerangka ini memang persis daftar kebocoran itu, dibalik ke arah yang benar.
 
 ---
 
@@ -168,12 +169,12 @@ Jika lima keputusan adalah *apa*-nya, **tight-aggressive (TAG)** adalah *bagaima
 - **Tight** — Anda memainkan sedikit tangan (Keputusan 2). Anda fold dan fold dan fold, dan menunggu spot di mana Anda kemungkinan unggul.
 - **Aggressive** — tapi ketika Anda *memang* bermain, Anda masuk dengan raise dan bet (Keputusan 3 dan 4), bukan call. Anda memaksa lawan mengambil keputusan alih-alih sebaliknya.
 
-TAG bekerja karena ia menyerang dua kebocoran pemula terbesar sekaligus — bermain terlalu banyak dan bermain terlalu pasif — dengan kurva belajar paling dangkal dari gaya menang mana pun. Ia bukan *optimum* teoretis; pemain modern kuat melebar ke range yang lebih agresif (LAG) dan seimbang. Tapi sebagai fondasi yang bisa mengalahkan hampir semua permainan santai, tak ada yang menandinginya. Kuasai tight-aggressive dulu, lalu longgarkan secara sengaja setelah lima keputusan menjadi refleks.
+TAG bekerja karena ia menyerang dua kebocoran pemula terbesar sekaligus — bermain terlalu banyak dan bermain terlalu pasif — dengan kurva belajar paling landai di antara semua gaya yang menang. Ia bukan *optimum* teoretis; pemain modern kuat melebar ke range yang lebih agresif (LAG) dan seimbang. Tapi sebagai fondasi yang bisa mengalahkan hampir semua permainan santai, tak ada yang menandinginya. Kuasai tight-aggressive dulu, lalu longgarkan secara sengaja setelah lima keputusan menjadi refleks.
 
 ---
 
 :::readnext[Lanjut membaca]
-/id/blog/holdem-position-play | Bagaimana Position Memenangkan Pot untuk Anda | /images/holdem-position-play-hero.webp
+/id/blog/holdem-position-play | Bagaimana Posisi Memenangkan Pot untuk Anda | /images/holdem-position-play-hero.webp
 /id/blog/holdem-starting-hands-chart | Tangan Mana yang Sebenarnya Dimainkan | /images/holdem-starting-hands-chart-hero.webp
 :::
 
@@ -185,11 +186,11 @@ A. Mainkan gaya tight-aggressive yang dibangun di sekitar lima keputusan berulan
 
 **Q. Apa strategi poker terbaik untuk pemula?**
 
-A. Tight-aggressive (TAG). Mainkan sedikit tangan, tapi mainkan secara agresif — raise alih-alih call, dan fold cepat saat Anda meleset. Ia langsung memperbaiki dua kebocoran pemula paling umum (memainkan terlalu banyak tangan dan bermain terlalu pasif) dan punya kurva belajar paling dangkal dari gaya menang mana pun. Mulailah dari sana sebelum Anda bereksperimen dengan pendekatan yang lebih longgar dan lebih lanjut.
+A. Tight-aggressive (TAG). Mainkan sedikit tangan, tapi mainkan secara agresif — raise alih-alih call, dan fold cepat saat Anda meleset. Ia langsung memperbaiki dua kebocoran pemula paling umum (memainkan terlalu banyak tangan dan bermain terlalu pasif) dan punya kurva belajar paling landai di antara semua gaya yang menang. Mulailah dari sana sebelum Anda bereksperimen dengan pendekatan yang lebih longgar dan lebih lanjut.
 
 **Q. Bagaimana cara menang di Texas Hold'em?**
 
-A. Anda tak menang dengan memainkan lebih banyak tangan — Anda menang dengan membuat keputusan lebih baik di lima spot yang sama setiap tangan: position, seleksi tangan, raise-atau-fold, c-bet, dan fold. Pemenang lebih banyak fold, lebih banyak raise, dan lebih sedikit call daripada pecundang. Seiring waktu, starting hand yang lebih ketat dan fold yang disiplin berarti Anda memenangkan pot besar dan mengalahkan yang kecil — dan itulah seluruh permainannya.
+A. Anda tak menang dengan memainkan lebih banyak tangan — Anda menang dengan membuat keputusan lebih baik di lima spot yang sama setiap tangan: position, seleksi tangan, raise-atau-fold, c-bet, dan fold. Pemenang lebih banyak fold, lebih banyak raise, dan lebih sedikit call daripada pecundang. Seiring waktu, starting hand yang lebih ketat dan fold yang disiplin berarti Anda memenangkan pot besar dan hanya kalah pot kecil — dan itulah seluruh permainannya.
 
 **Q. Kapan Anda harus fold di poker?**
 
@@ -223,6 +224,18 @@ A. Tight-aggressive menggambarkan memainkan range sempit berisi tangan kuat (tig
 
 A. Tak ada satu angka — ia tergantung pada position, board, dan berapa banyak lawan yang Anda hadapi. Dalam position melawan satu pemain di board kering Anda c-bet paling sering; di luar position atau menghadapi dua lawan atau lebih jauh lebih jarang — angka rentangnya ada di [panduan c-bet](/id/blog/holdem-continuation-bet). Bet lebih banyak di board yang meleset dari range lawan, lebih sedikit di board basah yang terhubung dengannya, dan ukuran kecil (25–35% pot) saat bertaruh lebar, lebih besar (65%+) saat terpolarisasi.
 
+**Q. Poker itu permainan skill atau keberuntungan?**
+
+A. Dua-duanya — tapi skill yang menang seiring waktu. Satu tangan mana pun sarat unsur keberuntungan, dan itulah kenapa seorang pemula bisa mengalahkan pemain pro dalam satu sesi. Namun sepanjang ribuan tangan, keunggulan si pengambil keputusan yang lebih baik mendominasi dan variansinya saling meniadakan — persis itulah kenapa nama-nama yang sama terus masuk posisi uang. Poker adalah permainan skill yang dimainkan dengan setumpuk kartu keberuntungan.
+
+**Q. Apa itu GTO poker?**
+
+A. GTO (Game Theory Optimal) adalah strategi seimbang secara matematis yang tak bisa dieksploitasi — Anda mencampur bluff dan value bet dalam rasio yang tak menyisakan counter menguntungkan bagi lawan. Ia ideal teoretis yang dihitung solver, tapi di stake rendah Anda menghasilkan lebih banyak dengan poker *eksploitatif*: menyimpang dari GTO untuk menghukum kebocoran spesifik (pemain yang terlalu sering fold atau terlalu banyak call). Mulailah dengan tight-aggressive, belajarlah mengeksploitasi, dan perlakukan GTO sebagai titik acuan — bukan target hari pertama.
+
+**Q. Bagaimana cara menjadi lebih jago main poker?**
+
+A. Belajar di luar meja, dan main lebih ketat di meja. Perbaikan tercepat bagi kebanyakan pemain: fold lebih banyak tangan di preflop (aturan ~80%), raise atau fold alih-alih limp, dan tinjau ulang tangan-tangan kalah terbesar Anda seusai sesi untuk menemukan kebocorannya. Tambahkan satu konsep pada satu waktu — position, lalu pot odds, lalu c-bet — bukan semuanya sekaligus. Volume ditambah evaluasi yang jujur mengalahkan "tips" tunggal mana pun.
+
 ---
 
 ## Lima Keputusan, Sekali Lagi
@@ -242,7 +255,7 @@ Itulah seluruh kerangkanya. Bukan sepuluh tips untuk dihafal — lima pertanyaan
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/id/blog/holdem-position-play" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Strategi</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Memainkan Position Anda</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Memainkan Posisi Anda</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Kenapa button mencetak uang</div>
   </a>
   <a href="/id/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">

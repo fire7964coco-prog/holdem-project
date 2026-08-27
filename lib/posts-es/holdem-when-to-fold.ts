@@ -129,7 +129,7 @@ Aquí está el secreto que las tablas de estrategia no cuentan: **la mayoría de
 
 **Coste hundido — "ya he metido tanto".** Este es el grande. Las fichas que apostaste antes *ya no son tuyas* — pertenecen al bote. Cada decisión es independiente, juzgada solo por lo que pasa *de aquí en adelante.* "Estoy comprometido con el bote porque he invertido mucho" es la falacia del coste hundido en una silla de póker. (El compromiso real con el bote existe, pero viene del precio *actual* respecto a un bote grande — no de lo que gastaste tres calles atrás.)
 
-**Ego — "tengo que saber si va de farol".** Igualar para saciar la curiosidad, o para evitar el escozor de *quizá* estar siendo faroleado, es pagar el máximo por información que no necesitas. Te van a farolear a veces. No pasa nada — un botón de fold que *nunca* se equivoca significa que estás foldeando muchísimo de más y sangrando ante cada apuesta de valor. Gestiona tus decisiones, no tu ego.
+**Ego — "tengo que saber si va de farol".** Igualar para saciar la curiosidad, o para evitar el escozor de *quizá* estar siendo faroleado, es pagar el máximo por información que no necesitas. Te van a farolear a veces. No pasa nada — un botón de fold que *nunca* se equivoca significa que estás foldeando muchísimo de más y regalando bote tras bote a los faroles. Gestiona tus decisiones, no tu ego.
 
 **Miedo — foldear la mejor mano ante una carta de miedo.** El fallo opuesto: tan asustado de estar batido que sueltas ganadoras. El arreglo para ambos polos es la misma frase — ==foldea por matemática, no por miedo.== Foldea porque el precio está mal o la historia es valor, no porque "tienes una mala corazonada".
 
