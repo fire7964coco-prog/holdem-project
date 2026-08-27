@@ -1,3 +1,35 @@
+## 2026-08-27 (3) — 세션 4/9: id 경화 트랙 B 착수 — rules 클러스터 6편 (pt 8ee6b047 구획) · 렌즈 4종
+
+9세션 분할 계획의 **세션 4 완결** — id 첫 경화 회차. beginners·game-order·betting-actions·
+blind-meaning·all-in·showdown 6편. 🔴 **id는 masterUpdated가 거짓 신호였다** — 07-19·07-25로
+«동기»라 적힌 파일들에 EN 07-17~08-25 내용이 안 와 있었다(경고 그대로 적중). 대조는 날짜 필드가
+아니라 **EN 07-15 기준선→HEAD 커밋 diff 실물**로 했다.
+
+- **드리프트 소급**: showdown FAQ 2곳 구버전(all-in FAQ가 본문 08-12 미러 정정과 모순 + muck FAQ
+  토너먼트 한정 누락) · game-order 스타팅핸드 재분류(AJo→Situasional·99→Kuat — beginners 4티어
+  표와 정합 회복, 교열 렌즈 확인) + fourth/fifth street + «7 Aksi»→«7 Pilihan di Giliran Anda»
+  (betting-actions «5 aksi»와 교차문서 모순 — pt «7 jogadas» 선례, id는 langkah가 beginners
+  단계 서술과 충돌해 Pilihan으로) + 팟오즈 관례 · betting-actions FAQ string bet 1곳(Rule 103/
+  90.d 구분 — 본문과 모순이던 자리) · 경험담 이식 11곳(beginners 4·game-order 3·blind 2·all-in 2·
+  showdown 2) · all-in «bukan pernah» 비문 정정
+- **id 롱테일(뱅크 부재 — 구글 자동완성 hl=id 실측으로 대체·명시)**: «kartu remi»(cara main poker
+  kartu remi)·«poker tongkrongan» 전 코퍼스 무주공산 실측 → beginners FAQ 1문 신설(+태그) ·
+  태그 카니발 3건 해소(all-in↔showdown 어순쌍→showdown 존치·all-in은 re-raise 축으로 / game-order
+  cara main·aturan texas holdem·showdown poker 3종 양보, urutan taruhan poker 추가) · GEO 직답
+  3곳(beginners «Ringkasan Alur»·«Siapa Jalan Duluan»·game-order «Siapa Bertindak Duluan»)
+- **렌즈 4종 전부 Opus**(딜러TD+수학·네이티브 id·SEO/GEO·교열 diff) ~60건 판정, ~45건 반영:
+  딜러 §13 핸드 14곳·산수 전건·룰 번호 11종(WSOP 84/90/97/100.b/103/117·TDA 14/16/18) 재검산
+  **오류 0** · 네이티브 직역투 ~35건(jarum jam·pohon keahlian·felt·kalian→Anda berdua 등) +
+  tangan «판» 뜻 3곳→hand · inkremen 통일 · TDA Rule 16 표기 통일 · SEO FAQ 51개 정형·desc
+  초과 0·링크 전건 실존 · 교열이 내 편집 유래 결함 재검출(blind 중복 경험담 꼬리 삭제 ·
+  «Dua kebiasaan» vs 3불릿 → id 재저작으로 회피)
+- **기각·EN-먼저 등재(임의 소급 금지)**: blind «Two habits» 수량 · beginners «none about strategy»
+  모순 · 2·4법칙 «×4 = 두 장 전제» 캐비어트 부재(D유형·딜러) · showdown all-in FAQ의 side pot
+  공개 순서 문장 소실(EN·pt) · 쿼드 «bet it hard»(소품) — 핸드오프 EN-먼저 묶음에 ⑩~⑬ 등재
+- **후속 판정 후보 신설**: id cek/check·tangan/hand 코퍼스 표기(파일 간 분열 — 앵커만 이번에 정합화)
+- 게이트 id 42/42 🔴 0(재실행) · 2층 손검산(beginners 표 3행·showdown 스트플·game-order 셋vs투페어)
+  전건 일치 · 빌드 ✓ · 잔여 드리프트 6편 표시는 전부 세션 5~9 몫
+
 ## 2026-08-27 (2) — 세션 3/9: EN 드리프트 소급 ja 단독 (회차 5·6 묶음 + adcffae4 수치분) · 렌즈 4종
 
 9세션 분할 계획의 **세션 3 완결** — 커밋 **`f8d9b2bd`**. 🔴 **이후 ja 43편 경화는 이 커밋 diff가 경계다**
