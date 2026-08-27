@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Aturan Showdown Texas Hold'em: Siapa Buka Kartu Duluan, Muck, dan Slow Roll",
   seoTitle: "Siapa Buka Kartu Duluan? Aturan Showdown & Muck Poker",
   desc: "Siapa yang buka kartu duluan saat showdown? Boleh muck tanpa buka? Aturan showdown Hold'em — agresor terakhir, cards speak, slow roll, dan all-in.",
-  tldr: "Saat showdown, pemain terakhir yang bet atau raise buka kartu duluan. Kalau river di-cek habis, pemain aktif pertama di kiri tombol dealer yang buka duluan. Anda boleh muck tanpa menunjukkan kartu kalau kalah, tapi lawan boleh minta melihat hand yang sudah di-call.",
+  tldr: "Saat showdown, pemain terakhir yang bet atau raise buka kartu duluan. Kalau river di-cek habis, pemain aktif pertama di kiri tombol dealer yang buka duluan. Anda boleh muck tanpa menunjukkan kartu kalau kalah, tapi pemain yang meng-call bet river boleh minta melihat hand si pembuat bet.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-08-09",
-  masterUpdated: "2026-07-12",
+  updated: "2026-08-27",
+  masterUpdated: "2026-08-25",
   keepImagesInBody: true,
   readTime: "10 menit",
   emoji: "🃏",
@@ -23,7 +23,7 @@ export const POST: Post = {
   image: "/images/holdem-showdown-rules-hero.webp",
   imageAlt: "Infografis showdown Texas Hold'em — di board 4♥ 7♣ Q♦ K♠ 2♥, A♠ K♥ menang dengan sepasang king dan kicker As",
   content: `
-Anda call bet di river. Sekarang kalian berdua saling menatap, masing-masing menunggu lawan membuka kartu duluan.
+Anda call bet di river. Sekarang Anda berdua saling menatap, masing-masing menunggu lawan membuka kartu duluan.
 
 Tidak ada yang bergerak.
 
@@ -59,9 +59,9 @@ Begitu agresor terakhir membuka hand-nya, pemain lain bisa memilih:
 - **Buka hand** kalau merasa menang
 - **Muck menghadap ke bawah** kalau sudah jelas kalah — tidak perlu memperlihatkan kartu Anda. Ini hanya berlaku selama tidak ada yang all-in: di turnamen, begitu seorang pemain all-in, TDA Rule 16 mewajibkan semua hand di pot itu dibuka dan tidak seorang pun boleh muck (cash game mengikuti house rule masing-masing, dan kebanyakan cardroom membolehkan pemain yang call untuk muck)
 
-==r:Tapi ada satu pengecualian penting:== kalau bet river Anda di-call, pemain yang call sudah membayar harga penuh untuk melihat hand Anda. Meminta dealer membuka hand yang sudah di-muck itulah aturan **"I want to see that hand"**. Di turnamen, ==TDA Rule 18== membatasinya ketat: siapa pun yang di showdown sudah tidak memegang kartu, atau sudah muck tertutup, kehilangan hak untuk memintanya. Hak yang tak bisa diganggu gugat hanya milik pemain yang meng-call bet river dan membuka atau masih memegang kartunya — dan hanya atas hand ==agresor terakhir==, yaitu hand yang ia bayar untuk dilihat. Sisanya adalah kewenangan direktur turnamen; di cash game banyak cardroom lebih longgar. (Jangan tertukar dengan "show one, show all", yang artinya kalau Anda sukarela memperlihatkan kartu ke satu pemain, semua orang di meja berhak melihatnya.)
+==r:Tapi ada satu pengecualian penting:== kalau bet river Anda di-call, pemain yang call sudah membayar harga penuh untuk melihat hand Anda. Aturan **"I want to see that hand"** inilah yang memungkinkan ia meminta dealer membuka hand yang sudah di-muck. Di turnamen, ==TDA Rule 18== membatasinya ketat: siapa pun yang di showdown sudah tidak memegang kartu, atau sudah muck tertutup, kehilangan hak untuk memintanya. Hak yang tak bisa diganggu gugat hanya milik pemain yang meng-call bet river dan membuka atau masih memegang kartunya — dan hanya atas hand ==agresor terakhir==, yaitu hand yang ia bayar untuk dilihat. Sisanya adalah kewenangan direktur turnamen; di cash game banyak cardroom lebih longgar. (Jangan tertukar dengan "show one, show all", yang artinya kalau Anda sukarela memperlihatkan kartu ke satu pemain, semua orang di meja berhak melihatnya.)
 
-Aturan praktisnya: ==sebagai agresor terakhir Andalah yang membuka kartu — termasuk gertakan yang di-call.== Muck tertutup itu pilihan pemain yang call, setelah ia melihat hand si pembuat bet. Kalau Anda yang bet lalu buru-buru muck, Anda rugi dua kali: pemain yang call tetap boleh meminta melihat hand Anda, dan karena cards speak, banyak pot terbuang oleh pemain yang ace-high-nya justru unggul.
+Aturan praktisnya: ==sebagai agresor terakhir Andalah yang membuka kartu — termasuk gertakan yang di-call.== Muck tertutup itu pilihan pemain yang call, setelah ia melihat hand si pembuat bet. Kalau Anda yang bet lalu buru-buru muck, Anda rugi dua kali: pemain yang call tetap boleh meminta melihat hand Anda, dan karena cards speak, banyak pot melayang gara-gara pemain yang ace-high-nya sebenarnya unggul malah ikut muck.
 
 ---
 
@@ -89,7 +89,7 @@ Ketika seorang pemain all-in dan tidak ada taruhan lagi yang mungkin, sisa kartu
 
 </div>
 
-Satu detail penting: kalau ada **side pot** (pemain lain masih punya chip dan terus bertaruh), side pot dibagikan lebih dulu, baru pot utama. Itu **urutan pembayaran**, dan tidak ada hubungannya dengan kapan kartu dibuka: hand pemain all-in sudah terbuka sejak tidak ada taruhan lagi yang mungkin. Ilustrasi TDA untuk Rule 16 menyebutnya terang-terangan — jangan menunggu side pot dibagi dulu baru membuka hand pemain all-in.
+Satu detail penting: kalau ada **side pot** (pemain lain masih punya chip dan terus bertaruh), side pot dibagikan lebih dulu, baru pot utama. Itu **urutan pembayaran**, dan tidak ada hubungannya dengan kapan kartu dibuka: hand pemain all-in sudah terbuka sejak tidak ada taruhan lagi yang mungkin. Ilustrasi TDA untuk Rule 16 menyebutkannya secara eksplisit — jangan menunggu side pot dibagi dulu baru membuka hand pemain all-in.
 
 Untuk cara side pot dibentuk dan dibayarkan saat ada pemain all-in, lihat [aturan all-in dan side pot](/id/blog/holdem-all-in-rules); untuk pot yang dibagi rata, lihat [aturan split pot dan chop](/id/blog/holdem-split-pot-rules).
 
@@ -113,7 +113,7 @@ Situasi nyata: Anda pegang J♥ 10♥ di board Q♥ 9♥ 8♥ 2♣ 5♦. Anda pu
 
 Slow roll adalah ==sengaja berlama-lama membuka hand yang sangat kuat padahal Anda sudah tahu menang==.
 
-Anda pegang nuts. Lawan membuka hand yang kuat. Anda berhenti sejenak, pura-pura berpikir, mengintip kartu Anda pelan-pelan, membuat semua orang menunggu — lalu membuka kartu pemenang. Secara teknis legal. Secara universal dibenci.
+Anda pegang nuts. Lawan membuka hand yang kuat. Anda berhenti sejenak, pura-pura berpikir, mengintip kartu Anda pelan-pelan, membuat semua orang menunggu — lalu membuka kartu pemenang. Secara teknis legal. Dan dibenci semua orang.
 
 ![Slow roll dalam poker — pemain lain frustrasi karena satu pemain sengaja menunda membuka hand pemenang](/images/holdem-showdown-slow-roll.webp)
 
@@ -135,9 +135,11 @@ Inilah salah satu alasan poker menarik. Hand terbaik tidak selalu menang — yan
 
 ## Etika Showdown — Kesalahan yang Sering Dilakukan Pemula
 
+Tidak ada yang lebih cepat merusak suasana meja daripada showdown yang ditangani keliru. Kebanyakan bukan soal aturannya — melainkan kebiasaan yang tidak pernah diajarkan ke pemain baru. Ini empat yang paling sering saya luruskan.
+
 ### Kesalahan 1: Menunggu pemain yang call buka duluan
 
-Anda bet di river. Ada yang call. Anda diam menunggu dia buka. Itu terbalik. ==Anda yang buka duluan — Anda agresor terakhir.== Menunggu seperti itu terlihat seperti slow roll walaupun bukan.
+Anda bet di river. Ada yang call. Anda diam menunggu dia buka. Itu terbalik. ==Anda yang buka duluan — Anda agresor terakhir.== Menunggu seperti itu terlihat seperti slow roll walaupun bukan — saya pernah melihat suasana meja yang tadinya hangat jadi dingin selama satu orbit penuh gara-gara satu pemain yang tidak tahu aturan ini dan terus menunggu lawannya membuka duluan.
 
 ### Kesalahan 2: Muck sebelum dealer membaca hand
 
@@ -149,7 +151,7 @@ Di kebanyakan cardroom Anda boleh minta dealer membuka hand yang di-muck — tap
 
 ### Kesalahan 4: Tidak tahu Anda boleh buka lebih awal
 
-Di showdown — yaitu setelah semua taruhan ditutup — tidak ada aturan yang melarang membuka hand sebelum giliran Anda secara resmi tiba. Selama hand masih berjalan dan masih ada aksi tertunda, yang berlaku justru sebaliknya: memperlihatkan kartu berbuah penalti menurut ==WSOP Rule 117==. ==g:Kalau Anda pegang nuts atau hand yang sangat kuat, langsung buka.== Pemain lain akan menghargainya. Permainan jadi lebih cepat. Dan itu kebalikan dari slow roll.
+Di showdown — yaitu setelah semua taruhan ditutup — tidak ada aturan yang melarang membuka hand sebelum giliran Anda secara resmi tiba. Selama hand masih berjalan dan masih ada aksi tertunda, yang berlaku justru sebaliknya: memperlihatkan kartu berujung pada penalti menurut ==WSOP Rule 117==. ==g:Kalau Anda pegang nuts atau hand yang sangat kuat, langsung buka.== Pemain lain akan menghargainya. Permainan jadi lebih cepat. Dan itu kebalikan dari slow roll.
 
 ---
 
@@ -170,7 +172,7 @@ A. Ya — kalau Anda pemain terakhir yang bet atau raise di river, Anda wajib bu
 
 **Q. Boleh muck saat showdown tanpa menunjukkan kartu?**
 
-A. Boleh, tapi hanya kalau Anda jelas-jelas kalah. Begitu hand pemenang dibuka, pemain yang kalah boleh muck menghadap ke bawah. Pengecualiannya kalau hand Anda di-call — lawan boleh minta melihatnya. Kalau masih ada keraguan siapa yang menang, jangan pernah muck sebelum dealer membaca kedua hand.
+A. Boleh, tapi hanya kalau Anda jelas-jelas kalah. Begitu hand pemenang dibuka, pemain yang kalah boleh muck menghadap ke bawah. Pengecualiannya kalau hand Anda di-call — pemain yang sudah membayar untuk itu boleh minta melihatnya — dan kalau ada yang all-in di turnamen, tidak seorang pun boleh muck sama sekali. Kalau masih ada keraguan siapa yang menang, jangan pernah muck sebelum dealer membaca kedua hand.
 
 **Q. Apa itu slow roll dalam poker dan kenapa buruk?**
 
@@ -178,7 +180,7 @@ A. Slow roll adalah sengaja menunda membuka hand pemenang yang Anda sudah tahu p
 
 **Q. Dalam situasi all-in, siapa yang buka kartu duluan?**
 
-A. Ketika seorang pemain all-in dan tidak ada taruhan lagi yang mungkin, semua hand yang terlibat di pot itu biasanya dibuka menghadap ke atas sebelum atau saat sisa kartu bersama dibagikan. Kalau ada side pot dengan taruhan yang masih berjalan, agresor terakhir di antara pemain itu buka duluan untuk side pot. Hand pemain yang all-in dibuka terpisah untuk pot utama.
+A. Ketika seorang pemain all-in dan tidak ada taruhan lagi yang mungkin, semua hand yang terlibat di pot itu biasanya dibuka menghadap ke atas sebelum atau saat sisa kartu bersama dibagikan. Kalau ada side pot, side pot dibagikan lebih dulu dan pot utama sesudahnya — tapi kartu pemain yang all-in sudah terbuka jauh sebelum itu. Selama pemain lain masih punya chip dan masih bisa bertaruh, semua kartu tetap tertutup; begitu side pot sampai ke showdown, aturan agresor terakhir yang biasa berlaku di antara mereka.
 
 **Q. Apa arti "cards speak" dalam poker?**
 

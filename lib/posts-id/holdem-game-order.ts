@@ -8,14 +8,14 @@ export const POST: Post = {
   tldr: "Satu hand Texas Hold'em berjalan begini: pasang blinds → bagikan dua kartu tertutup → preflop → flop (3 kartu) → turn (1 kartu) → river (1 kartu) → showdown, dengan total empat ronde taruhan.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-08-14",
-  masterUpdated: "2026-07-19",
+  updated: "2026-08-27",
+  masterUpdated: "2026-08-25",
   keepImagesInBody: true,
   readTime: "16 menit",
   emoji: "🎬",
   image: "/images/blog-holdem-game-flow.webp",
   imageAlt: "Diagram urutan main Texas Hold'em — keenam tahap: blinds, preflop, flop, turn, river, dan showdown",
-  tags: ["cara main texas holdem", "aturan texas holdem", "urutan main poker", "preflop flop turn river", "ronde taruhan poker", "siapa bertindak duluan di poker", "cara kerja satu hand poker", "showdown poker"],
+  tags: ["urutan main poker", "urutan taruhan poker", "preflop flop turn river", "ronde taruhan poker", "siapa bertindak duluan di poker", "cara kerja satu hand poker"],
   content: `
 Semua orang yang baru pertama kali duduk di meja Texas Hold'em pasti menanyakan hal yang sama: ==r:*"Bentar — ini giliran siapa, dan kapan saya harus masukkan chip?"*== Anda tahu bakal dapat kartu. Yang tidak Anda tahu: kapan harus bertaruh, kapan kartu berikutnya dibuka, dan bagaimana pemenangnya benar-benar ditentukan.
 
@@ -43,7 +43,7 @@ Aturan intinya sederhana: Anda membentuk **kombinasi lima kartu terbaik** dari *
 
 Sebelum satu kartu pun keluar, dua hal mengatur meja: **tombol dealer (button)** dan **blinds**.
 
-**Tombol dealer (si "button", ditandai huruf D)** adalah cakram bundar yang menandai siapa yang "giliran membagi" di hand itu. Meskipun ada dealer khusus (house dealer), button-lah yang menentukan urutan taruhan, dan dia bergeser satu kursi searah jarum jam setiap selesai satu hand.
+**Tombol dealer (si "button", ditandai huruf D)** adalah cakram bundar yang menandai siapa yang "giliran membagi" di hand itu. Meskipun ada dealer khusus (house dealer), button-lah yang menentukan urutan taruhan, dan button itu bergeser satu kursi searah jarum jam setiap selesai satu hand.
 
 **Blinds** adalah taruhan wajib yang dipasang sebelum kartu dibagikan. Tanpa blinds, semua orang bisa cek dan fold gratis; ==g:blinds menaruh uang di tengah dan memberi pemain alasan untuk bertarung==. (Masih asing? Lihat persisnya [cara kerja small blind dan big blind](/id/blog/holdem-blind-meaning).)
 
@@ -76,8 +76,8 @@ Aksi dimulai dari kiri big blind dan bergerak searah jarum jam. Di giliran Anda,
 ### Kartu awal yang solid untuk pemula
 
 - **Premium:** A♠A♥ (pocket aces), K♠K♥, Q♠Q♥, J♠J♥
-- **Kuat:** A♠K♥ ("Big Slick"), A♠Q♥, A♠J♥, 10♠10♥
-- **Situasional:** 9♠9♥, 8♠8♥, K♠Q♥, K♠J♥
+- **Kuat:** A♠K♥ ("Big Slick"), A♠Q♥, 10♠10♥, 9♠9♥
+- **Situasional:** A♠J♥, 8♠8♥, K♠Q♥, K♠J♥
 
 Mana dari ini yang benar-benar bisa Anda buka tergantung posisi Anda di meja. Untuk tabel lengkap 169 kartu awal yang dipecah per posisi, lihat [chart kartu awal Texas Hold'em](/id/blog/holdem-starting-hands-chart).
 
@@ -100,7 +100,7 @@ Flop juga membuka opsi baru: **cek (check)**. Kalau belum ada yang bertaruh, And
 
 ## Tahap 3 — Turn: Gambarannya Makin Jelas
 
-Setelah ronde taruhan flop, satu kartu bersama lagi dibagikan — **turn**. Sekarang ada empat kartu di board.
+Setelah ronde taruhan flop, satu kartu bersama lagi dibagikan — **turn** (disebut juga *fourth street*). Sekarang ada empat kartu di board.
 
 Turn adalah ronde dengan bobot strategi yang berat:
 
@@ -114,7 +114,7 @@ Turn adalah ronde dengan bobot strategi yang berat:
 
 ## Tahap 4 — River: Kartu Terakhir, Keputusan Terakhir
 
-Setelah ronde taruhan turn, kartu bersama kelima sekaligus terakhir dibuka — **river**. Kelima kartu bersama sudah terbuka semua, dan tidak ada informasi baru lagi yang akan datang.
+Setelah ronde taruhan turn, kartu bersama kelima sekaligus terakhir dibuka — **river** (disebut juga *fifth street*). Kelima kartu bersama sudah terbuka semua, dan tidak ada informasi baru lagi yang akan datang.
 
 Kesalahan klasik di river:
 
@@ -146,7 +146,7 @@ Siapa yang wajib buka duluan, kapan Anda boleh muck, dan etika soal slow roll di
 
 ## Siapa yang Bertindak Duluan di Setiap Ronde?
 
-"Sekarang giliran siapa?" punya jawaban berbeda sebelum dan sesudah flop — dan satu pergeseran itulah mesin di balik strategi posisi.
+"Sekarang giliran siapa?" punya jawaban berbeda sebelum dan sesudah flop: di preflop, pemain di kiri big blind yang mulai; dari flop sampai river, pemain aktif pertama di kiri button yang mulai dan button bertindak terakhir. Satu pergeseran itulah mesin di balik strategi posisi.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -194,7 +194,7 @@ Trik mengingatnya: ==**sebelum flop, lihat ke kiri big blind; setelah flop, liha
 
 ![Contoh satu hand Texas Hold'em lengkap — dari preflop sampai showdown](/images/holdem-game-example-fullhand.webp "Mengikuti satu hand utuh melewati semua ronde sampai showdown")
 
-Baca teori soal ronde itu abstrak. Mari kita jalankan satu hand heads-up dari kartu pertama sampai terakhir dengan kartu dan jumlah chip sungguhan.
+Membaca teori soal ronde-ronde ini terasa abstrak. Mari kita jalankan satu hand heads-up dari kartu pertama sampai terakhir dengan kartu dan jumlah chip sungguhan.
 
 **Situasi:** Heads-up. Blinds SB 1.000 / BB 2.000.
 
@@ -238,11 +238,11 @@ B cek, A bertaruh **15.000** (sekitar setengah pot), B call.
 
 **Pemenang: B** — three of a kind mengalahkan two pair.
 
-Pelajarannya: ==r:saat river menjadikan kartu A two pair, *rasanya* seperti pemenang — padahal B sudah pegang set dari flop sepanjang waktu.== ==g:**Membaca seluruh board, bukan cuma perbaikan kartu Anda sendiri, itulah jantung Hold'em.**==
+Pelajarannya: ==r:saat river membuat kartu Pemain A jadi two pair, *rasanya* seperti pemenang — padahal B sudah pegang set dari flop sepanjang waktu.== ==g:**Membaca seluruh board, bukan cuma perbaikan kartu Anda sendiri, itulah jantung Hold'em.**==
 
 ---
 
-## 7 Aksi Taruhan, Dijelaskan Tuntas
+## 7 Pilihan di Giliran Anda, Dijelaskan Tuntas
 
 ![Aksi-aksi taruhan poker — cek, call, fold, bet, raise, re-raise, all-in](/images/holdem-betting-options-guide.webp "Semua aksi taruhan yang bisa Anda lakukan di Texas Hold'em")
 
@@ -295,11 +295,11 @@ Mau pembahasan lengkapnya — termasuk bagaimana kicker dan hasil seri menentuka
 
 ## 5 Kesalahan yang Wajib Dihindari Setiap Pemula
 
-Anda bisa hafal urutan permainan di luar kepala dan tetap kehilangan chip terus kalau melakukan ini.
+Anda bisa hafal urutan permainan di luar kepala dan tetap kehilangan chip terus kalau melakukan ini. Saya pernah melihat masing-masing kesalahan ini membuat pemula kehilangan pot saat itu juga — biasanya lebih dari sekali dalam satu sesi.
 
 ### 1. Memainkan hampir semua hand
 
-"Lihat flop dulu deh" itu rugi dalam jangka panjang. Pemain kuat hanya memainkan 15–25% hand dan mem-fold sisanya tanpa ragu. Kalau Anda call preflop dengan dua kartu apa saja, Anda sedang membayar untuk kalah.
+"Lihat flop dulu deh" itu rugi dalam jangka panjang — ini kebocoran paling umum yang saya lihat di meja pertama seorang pemain baru. Pemain kuat hanya memainkan 15–25% hand dan mem-fold sisanya tanpa ragu. Kalau Anda call preflop dengan dua kartu apa saja, Anda sedang membayar untuk kalah.
 
 ### 2. Mengabaikan posisi
 
@@ -307,7 +307,7 @@ Makin dekat Anda ke button, makin bagus — bertindak terakhir membuat Anda bisa
 
 ### 3. Mengejar draw membabi buta
 
-Draw Flush atau Straight bukan berarti call otomatis. Anda harus menimbang **pot odds** — harga call dibanding ukuran pot. Kalau pot-nya 100.000 dan Anda harus call 50.000, draw Anda perlu jadi setidaknya sekitar 33% dari waktu supaya sepadan.
+Draw Flush atau Straight bukan berarti call otomatis. Anda harus menimbang **pot odds** — harga call dibanding ukuran pot. Kalau pot sudah berisi 100.000 — termasuk taruhan lawan Anda — dan Anda harus call 50.000, peluang draw Anda jadi harus minimal sekitar 33% supaya call-nya sepadan.
 
 ### 4. Bluff dadakan di river dengan kartu lemah
 
@@ -315,7 +315,7 @@ Kalau Anda cek pasif sepanjang jalan lalu tiba-tiba dorong semua di river, lawan
 
 ### 5. Salah membaca kartu Anda sendiri di showdown
 
-Kesalahan klasik pemula: mengira "saya punya two pair!" padahal cuma one pair. Latih terus memilih **lima kartu terbaik** dari dua kartu tertutup Anda dan lima kartu board sampai jadi refleks.
+Kesalahan klasik pemula: mengira "saya punya two pair!" padahal cuma one pair. Pernah ada pemain yang dengan bangga membuka kartu yang ia yakini straight, lalu ternyata kartunya tidak berurutan — meja mendadak hening, dan dealer menggeser pot ke arah lawan. Latih terus memilih **lima kartu terbaik** dari dua kartu tertutup Anda dan lima kartu board sampai jadi refleks.
 
 ---
 
@@ -383,7 +383,7 @@ Hafalkan urutannya sampai mendarah daging, asah lewat permainan gratis, dan Anda
 
 ---
 
-## Related Posts
+## Artikel Terkait
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/id/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">

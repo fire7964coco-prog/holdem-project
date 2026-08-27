@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Texas Hold'em punya 5 aksi taruhan: check (lewat gratis), bet (membuka ronde), call (menyamai taruhan), raise (menaikkannya — raise minimum sama dengan bet atau raise sebelumnya), dan fold. Anda hanya boleh check kalau tidak ada taruhan aktif di depan Anda — di preflop itu cuma terjadi kalau Anda big blind.",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-07-15",
-  masterUpdated: "2026-07-11",
+  updated: "2026-08-27",
+  masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "9 menit",
   emoji: "🃏",
@@ -25,9 +25,9 @@ export const POST: Post = {
   image: "/images/holdem-betting-actions-hero.webp",
   imageAlt: "Meja Texas Hold'em dengan tumpukan chip bertanda CHECK, CALL, RAISE, FOLD — seorang pemain memegang kartu tertutup sambil menimbang aksinya",
   content: `
-Sesi live pertama saya, dealer bilang "action is on you" dan saya langsung membeku — hening beberapa detik penuh sementara seisi meja menatap saya.
+Di sesi live pertama saya, dealer bilang "action is on you" dan saya langsung membeku — hening beberapa detik yang terasa panjang sementara seisi meja menatap saya.
 
-Check? Call? Raise? Saya hafal peringkat kartu. Yang tidak benar-benar saya pahami justru ==aturan dari aksi-aksinya sendiri== — dan celah itulah yang ditutup panduan ini.
+Check? Call? Raise? Saya hafal peringkat kartu. Yang tidak benar-benar saya pahami justru ==aturan aksi-aksinya itu sendiri== — dan celah itulah yang ditutup panduan ini.
 
 Texas Hold'em hanya punya ==5 aksi taruhan==, tapi aturan di sekelilingnya (kapan check itu sah, seberapa besar raise minimal, berapa kali boleh re-raise) bikin pemula tersandung berminggu-minggu. Kalau Anda benar-benar baru, baca dulu [panduan lengkap aturan Texas Hold'em](/id/blog/texas-holdem-rules-for-beginners "thumb:/images/rules-texas-holdem.webp") — lalu kembali ke sini untuk buku aturan aksi demi aksi.
 
@@ -52,7 +52,7 @@ Setiap keputusan yang Anda ambil di meja poker adalah salah satu dari lima ini:
 | Check | Hanya kalau tidak ada taruhan aktif di depan Anda (preflop: hanya sebagai big blind) | Gratis — Anda lewat tanpa menambah chip |
 | Call | Setelah ada yang bet atau raise | Anda menyamai taruhan berjalan persis |
 | Bet | Taruhan pertama di ronde itu | Jumlah pilihan Anda (minimum = 1 big blind) |
-| Raise | Setelah ada yang bertaruh | Minimal sebesar bet atau raise sebelumnya, di atasnya |
+| Raise | Setelah ada yang bertaruh | Minimal sebesar bet atau raise sebelumnya, ditambahkan di atas taruhan berjalan |
 
 ==All-in== bukan aksi keenam yang terpisah — itu adalah bet, call, atau raise dengan seluruh sisa chip yang Anda punya. Detailnya ada di bawah.
 
@@ -87,15 +87,15 @@ Untuk gambaran lengkap street demi street soal siapa bertindak kapan, lihat [uru
 
 Call artinya Anda ==menyamai taruhan berjalan persis== untuk tetap ikut di hand itu. Ada yang bet $10, Anda call $10 — tidak lebih, tidak kurang.
 
-Check vs call adalah kebingungan pemula yang paling umum, jadi ini pemisahannya yang bersih:
+Check vs call adalah kebingungan pemula yang paling umum, jadi ini bedanya, sejelas mungkin:
 
 | | Check | Call |
 |-|-------|------|
-| Kapan ada | Tidak ada taruhan aktif di depan Anda (preflop: hanya sebagai big blind) | Ada yang bertaruh sebelum Anda |
+| Kapan bisa dipakai | Tidak ada taruhan aktif di depan Anda (preflop: hanya sebagai big blind) | Ada yang bertaruh sebelum Anda |
 | Biaya chip | Gratis | Anda menyamai taruhan berjalan |
 | Artinya | "Saya lewat, masih ikut" | "Saya bayar untuk lanjut" |
 
-Contoh nyata: Anda di flop dengan K♠ 8♦. Belum ada yang bertaruh, jadi Anda ==check==. Pemain berikutnya bet $10. Sekarang pilihan Anda adalah ==call== $10, ==raise== (ke $20 atau lebih), atau ==fold==. Check sudah hilang — jendela itu tertutup begitu taruhan masuk.
+Contoh nyata: Anda di flop dengan K♠ 8♦. Belum ada yang bertaruh, jadi Anda ==check==. Pemain berikutnya bet $10. Sekarang pilihan Anda adalah ==call== $10, ==raise== (ke $20 atau lebih), atau ==fold==. Check sudah hilang — kesempatannya lewat begitu taruhan masuk.
 
 ---
 
@@ -103,7 +103,7 @@ Contoh nyata: Anda di flop dengan K♠ 8♦. Belum ada yang bertaruh, jadi Anda 
 
 Fold artinya Anda membuang kartu dan keluar dari hand itu. Anda tidak membayar apa pun lagi, tapi ==r:setiap chip yang sudah Anda masukkan tetap tinggal di pot==.
 
-Ya — kapan pun giliran Anda, Anda boleh fold, bahkan sebelum bertaruh apa pun, dan fold itu mengikat. Bebas konsekuensi juga tidak: di turnamen, fold saat tidak ada taruhan di depan Anda dihitung sebagai "non-standard fold" menurut ==WSOP Rule 84== dan bisa berbuah peringatan. Dan awas jebakan ini: **fold saat Anda bisa check gratis sama dengan membuang hand tanpa alasan**. Kalau belum ada yang bertaruh, check saja.
+Ya — kapan pun giliran Anda, Anda boleh fold, bahkan sebelum bertaruh apa pun, dan fold itu mengikat. Bukan berarti tanpa konsekuensi: di turnamen, fold saat tidak ada taruhan di depan Anda dihitung sebagai "non-standard fold" menurut ==WSOP Rule 84== dan bisa berujung pada peringatan. Dan awas jebakan ini: **fold saat Anda bisa check gratis sama dengan membuang hand tanpa alasan**. Kalau belum ada yang bertaruh, check saja.
 
 Satu aturan etika di poker live: jangan fold ==di luar giliran==. Tunggu sampai giliran benar-benar sampai pada Anda — fold lebih awal memberi informasi ke pemain yang masih menimbang, dan kebanyakan cardroom akan menegur atau menjatuhkan penalti. Tahu *kapan* fold jadi langkah yang benar adalah keahlian tersendiri — itu dibahas di [kapan harus fold di poker](/id/blog/holdem-when-to-fold).
 
@@ -133,7 +133,7 @@ Dua aturan poker live yang menyertai raise:
 1. **Ucapkan "raise" sebelum menggerakkan chip.** Bilang "call" lalu mendorong chip lebih banyak? Ucapan Anda sudah mengikat sejak saat itu (==Rule 90.d==) — kelebihannya tidak dihitung. ==String bet== yang sebenarnya lain lagi: mendorong chip dalam beberapa gerakan **tanpa** mengucapkan "raise" lebih dulu (==Rule 103==).
 2. **Satu gerakan.** Kalau Anda tidak mengucapkannya, chip Anda harus masuk dalam satu gerakan maju.
 
-*Seberapa besar* Anda sebaiknya raise (open 2,5x, 3-bet 3x, ukuran sesuai tekstur board) adalah strategi, bukan aturan — itu ada di [pilar strategi Texas Hold'em](/id/blog/holdem-strategy).
+*Seberapa besar* Anda sebaiknya raise (open 2,5x, 3-bet 3x, ukuran sesuai tekstur board) adalah strategi, bukan aturan — itu ada di [panduan strategi lengkap Texas Hold'em](/id/blog/holdem-strategy).
 
 ---
 
@@ -154,7 +154,7 @@ Di permainan **Fixed-Limit**, tiap ronde punya batas (pot "capped"). Aturan turn
 
 All-in artinya mempertaruhkan ==setiap chip yang tersisa pada Anda==. Anda boleh melakukannya kapan saja giliran Anda — sebagai bet, call, atau raise.
 
-Kalau all-in Anda *lebih kecil* dari taruhan berjalan, Anda tidak dianggap fold: Anda tetap bersaing memperebutkan ==pot utama== yang dibatasi sebesar kontribusi Anda, sementara chip lebih dari stack yang lebih besar membentuk ==side pot== yang tidak bisa Anda menangkan. Dan all-in yang *kurang dari min-raise penuh* umumnya tidak membuka kembali kesempatan raise bagi pemain yang sudah bertindak — aturan halus yang bahkan bikin pemain reguler kaget.
+Kalau all-in Anda *lebih kecil* dari taruhan berjalan, Anda tidak dianggap fold: Anda tetap bersaing memperebutkan ==pot utama== yang dibatasi sebesar kontribusi Anda, sementara kelebihan chip dari stack yang lebih besar membentuk ==side pot== yang tidak bisa Anda menangkan. Dan all-in yang *kurang dari min-raise penuh* umumnya tidak membuka kembali kesempatan raise bagi pemain yang sudah bertindak — aturan halus yang bahkan bikin pemain reguler kaget.
 
 Mekanisme lengkapnya — hitungan side pot, siapa buka kartu duluan, table stakes — ada di [aturan all-in dan side pot](/id/blog/holdem-all-in-rules), dan apa yang terjadi saat hand all-in seri dibahas di [aturan split pot dan chop](/id/blog/holdem-split-pot-rules).
 
@@ -162,23 +162,23 @@ Mekanisme lengkapnya — hitungan side pot, siapa buka kartu duluan, table stake
 
 ## Tahu Aksinya Itu Langkah Pertama — Memilihnya Itu Strategi
 
-Panduan ini membahas apa *itu* tiap aksi dan kapan aksi itu *sah*. Mana yang dipilih — kapan bet, kapan call menguntungkan, kapan hand bagus justru harus di-fold — adalah pohon keahlian yang berbeda:
+Panduan ini membahas apa *itu* tiap aksi dan kapan aksi itu *sah*. Mana yang dipilih — kapan bet, kapan call menguntungkan, kapan hand bagus justru harus di-fold — adalah ranah keahlian yang lain lagi:
 
 - Kerangka untuk setiap keputusan: [strategi Texas Hold'em — 5 keputusan](/id/blog/holdem-strategy)
 - Menilai kekuatan mentah kartu Anda lebih dulu: [peringkat kartu poker](/id/blog/holdem-hand-rankings)
 - Kenapa posisi duduk mengubah segalanya: [penjelasan posisi di poker](/id/blog/holdem-positions)
 
-Satu patokan yang menyelamatkan uang pemula sampai Anda sampai ke sana: ==kalau sebuah hand tidak cukup kuat untuk di-raise, fold biasanya lebih baik daripada call.==
+Satu patokan yang menyelamatkan uang pemula sampai Anda menguasai itu semua: ==kalau sebuah hand tidak cukup kuat untuk di-raise, fold biasanya lebih baik daripada call.==
 
 ---
 
 ## Kesalahan Taruhan Live yang Saya Lihat Tiap Minggu
 
-Saya main di game live taruhan kecil tiap minggu, dan kesalahan aksi yang sama terus berulang seperti jarum jam:
+Saya main di game live taruhan kecil tiap minggu, dan kesalahan aksi yang sama berulang terus, nyaris tiap minggu:
 
 ### Kesalahan 1 — Call padahal bisa check
 
-Bertindak pertama di flop, belum ada yang bertaruh, dan pemain baru mendorong chip **tanpa bersuara**, "untuk call". Tidak ada yang perlu di-call: menurut ==WSOP Rule 90.a==, bet dilakukan lewat ucapan *atau* dengan mendorong chip — dia baru saja bertaruh tanpa sengaja. Kalau dia *mengucapkan* "call", ==Rule 90.b.1== menjadikannya check. Kalau street belum dibuka, check saja dan lihat kartunya gratis.
+Seorang pemain baru bertindak pertama di flop, belum ada yang bertaruh, tapi dia mendorong chip **tanpa bersuara** — maksudnya "untuk call". Tidak ada yang perlu di-call: menurut ==WSOP Rule 90.a==, bet dilakukan lewat ucapan *atau* dengan mendorong chip — dia baru saja bertaruh tanpa sengaja. Kalau dia *mengucapkan* "call", ==Rule 90.b.1== menjadikannya check. Kalau street belum dibuka, check saja dan lihat kartunya gratis.
 
 ### Kesalahan 2 — String raise
 
@@ -186,7 +186,7 @@ Bertindak pertama di flop, belum ada yang bertaruh, dan pemain baru mendorong ch
 
 ### Kesalahan 3 — Big blind membuang flop gratis
 
-Semua orang limp, giliran sampai ke big blind, dan dia fold. Itu sama saja membuang flop gratis ke muck. ==g:Kalau tidak ada yang raise, BB boleh check dan melihat tiga kartu tanpa biaya tambahan== — blind-nya sudah hidup. Ini terjadi di hampir setiap orbit.
+Semua orang limp, giliran sampai ke big blind, dan dia fold. Itu sama saja membuang kesempatan melihat flop gratis. ==g:Kalau tidak ada yang raise, BB boleh check dan melihat tiga kartu tanpa biaya tambahan== — blind-nya sudah hidup. Ini terjadi di hampir setiap orbit.
 
 ### Kesalahan 4 — Satu chip besar tanpa suara
 
@@ -227,7 +227,7 @@ A. Tergantung ukuran all-in-nya. Kalau all-in itu merupakan raise penuh yang sah
 
 **Q. Apa itu string bet di poker?**
 
-A. Memasukkan chip dalam beberapa gerakan, atau bilang "call" lalu menambahkan raise, tanpa mengucapkan "raise" lebih dulu. Dealer memutuskan string bet sebagai call sebesar jumlah awal. Ucapkan aksi Anda dengan jelas atau gerakkan semua chip dalam satu gerakan.
+A. Memasukkan chip dalam beberapa gerakan tanpa mengucapkan "raise" lebih dulu (==Rule 103==). Dealer memutuskan string bet sebagai call sebesar jumlah awal. Bilang "call" lalu menambahkan chip bukan string bet, melainkan deklarasi yang mengikat (==Rule 90.d==) — hasil akhirnya sama: tetap dihitung call. Ucapkan aksi Anda dengan jelas atau gerakkan semua chip dalam satu gerakan.
 
 **Q. Apa arti limp di poker?**
 

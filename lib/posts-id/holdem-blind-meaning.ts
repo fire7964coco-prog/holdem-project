@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Blinds adalah taruhan wajib yang dipasang sebelum kartu dibagikan. Small Blind duduk di kiri tombol dealer dan Big Blind di kirinya lagi; Big Blind — biasanya dua kali lipat Small Blind — adalah satuan taruhan di meja.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-08-14",
+  updated: "2026-08-27",
   masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "9 menit",
@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Tumpukan chip Small Blind dan Big Blind dengan label di samping tombol dealer emas di meja poker",
   tags: ["apa itu blind poker", "arti big blind", "arti small blind", "small blind vs big blind", "aturan big blind small blind", "big blind ante", "blinds texas holdem"],
   content: `
-Di hand pertama poker live yang pernah saya mainkan, dealer mengetuk felt di depan saya sebelum saya sempat melihat satu kartu pun: "Small Blind, silakan." Saya membeku — bayar? Bayar *untuk apa*? Dua belas tahun dan ribuan jam kemudian, hampir setiap sesi saya masih melihat pemain baru membeku di momen yang persis sama.
+Di hand pertama poker live yang pernah saya mainkan, dealer mengetuk meja di depan saya sebelum saya sempat melihat satu kartu pun: "Small Blind, silakan." Saya membeku — bayar? Bayar *untuk apa*? Dua belas tahun dan ribuan jam kemudian, hampir setiap sesi saya masih melihat pemain baru membeku di momen yang persis sama.
 
 Blinds adalah ==mesin yang membuat poker terus bergerak== — bagian pertama dari [aturan Texas Hold'em](/id/blog/texas-holdem-rules-for-beginners) yang benar-benar memakan chip Anda. Begitu Anda paham, semua obrolan angka di game ini ("raise 2BB", "stack 20BB") mendadak masuk akal. Ini semuanya dalam satu bacaan singkat.
 
@@ -50,13 +50,13 @@ Kenapa harus ada yang dipaksa bayar? Supaya game tetap hidup. ==r:Tanpa blinds, 
 
 **Small Blind (SB)** adalah yang lebih kecil dari dua taruhan wajib, dipasang oleh pemain yang duduk **tepat di kiri tombol dealer**. Besarnya biasanya **setengah Big Blind** — di game $1/$2, Small Blind-nya $1.
 
-Kursi ini juga terkenal sebagai kursi paling sulit di meja: Anda sudah membayar setengah taruhan dengan kartu acak, dan dari flop ke depan Anda bertindak **paling awal** di setiap street, dengan informasi paling sedikit. Itulah kenapa Small Blind dalam jangka panjang merugi bagi hampir semua orang — tujuannya di sana adalah rugi *lebih sedikit*, bukan menang.
+Kursi ini juga terkenal sebagai kursi paling sulit di meja: Anda sudah membayar setengah taruhan dengan kartu acak, dan dari flop ke depan Anda bertindak **paling awal** di setiap street, dengan informasi paling sedikit. Itulah kenapa Small Blind dalam jangka panjang merugi bagi hampir semua orang — target Anda di kursi itu adalah rugi *sesedikit mungkin*, bukan menang.
 
 ---
 
 ## Apa Itu Big Blind?
 
-**Big Blind (BB)** adalah **taruhan dasar penuh**, dipasang oleh pemain tepat **di kiri Small Blind**. Di game $1/$2, Big Blind-nya $2. Kalau tidak ada yang raise sebelum flop, Big Blind mendapat keistimewaan khusus — **"option"** untuk [cek](/id/blog/holdem-betting-actions) dan melihat flop gratis.
+**Big Blind (BB)** adalah **taruhan dasar penuh**, dipasang oleh pemain tepat **di kiri Small Blind**. Di game $1/$2, Big Blind-nya $2. Kalau tidak ada yang raise sebelum flop, Big Blind mendapat keistimewaan khusus — **"option"** untuk [cek dan melihat flop gratis](/id/blog/holdem-betting-actions).
 
 Orang mencari "big blind" secara terpisah bukan tanpa alasan: dia bukan sekadar kursi, dia adalah ==**tolok ukur** untuk seluruh permainan==.
 
@@ -99,7 +99,7 @@ Stakes ditulis **SB/BB**. Game "$1/$2" berarti Small Blind $1 dan Big Blind $2; 
 
 | Stakes | Small Blind | Big Blind | Buy-in umum / level |
 |:---|:---:|:---:|:---:|
-| $0,5/$1 | $0,50 | $1 | $60–$100 |
+| $0,50/$1 | $0,50 | $1 | $60–$100 |
 | $1/$2 | $1 | $2 | $100–$300 |
 | $2/$5 | $2 | $5 | $200–$500 |
 | $5/$10 | $5 | $10 | $500–$2.000 |
@@ -110,16 +110,16 @@ Stakes ditulis **SB/BB**. Game "$1/$2" berarti Small Blind $1 dan Big Blind $2; 
 
 </div>
 
-- **Cash game:** blinds ==g:**tetap**==. Duduk di game $1/$2 dan tetap $1/$2 sampai Anda berdiri. (Untuk perbandingan lebih dalam, lihat [turnamen vs cash game](/id/blog/holdem-tournament-vs-cash-game).)
+- **Cash game:** blinds ==g:**tetap**==. Anda duduk di game $1/$2, dan blind-nya tetap $1/$2 sampai Anda berdiri. (Untuk perbandingan lebih dalam, lihat [turnamen vs cash game](/id/blog/holdem-tournament-vs-cash-game).)
 - **Turnamen:** blinds ==r:**naik** mengikuti timer== (misal 25/50 → 50/100 → 100/200), jadi tekanannya makin besar seiring malam berjalan. Level blind, clock, dan lembar struktur dibahas di [cara kerja turnamen poker](/id/blog/holdem-tournament).
 
 ---
 
 ## Apa Itu Big Blind Ante? (Plus Straddle)
 
-Sejak fase awal atau menengah di kebanyakan turnamen, ditambahkan **ante** — taruhan wajib ekstra kecil yang dikumpulkan setiap hand di atas blinds, yang menggemukkan pot dan menghargai agresi. Versi modern yang umum adalah **big blind ante**: alih-alih semua orang melempar chip, ==Big Blind memasang satu ante — biasanya senilai satu Big Blind — untuk seluruh meja==, sehingga permainan tetap cepat dan rapi. Kapan dan bagaimana ante mulai berlaku adalah bagian dari [struktur blind turnamen](/id/blog/holdem-tournament).
+Mulai dari level awal atau menengah, kebanyakan turnamen menambahkan **ante** — taruhan wajib ekstra kecil yang dikumpulkan setiap hand di atas blinds, yang menggemukkan pot dan menghargai agresi. Versi modern yang umum adalah **big blind ante**: alih-alih semua orang melempar chip, ==Big Blind memasang satu ante — biasanya senilai satu Big Blind — untuk seluruh meja==, sehingga permainan tetap cepat dan rapi. Kapan dan bagaimana ante mulai berlaku adalah bagian dari [struktur blind turnamen](/id/blog/holdem-tournament).
 
-Satu lagi kerabat taruhan wajib yang akan Anda lihat di cash game: **straddle** — blind ekstra yang *sukarela* (biasanya 2x BB) dipasang dari kursi di kiri Big Blind, yang menaikkan stakes untuk hand itu sementara. Straddle punya aturan, jenis, dan urutan aksinya sendiri — pembahasan lengkapnya ada di [apa itu straddle dan apakah Anda perlu memasangnya](/id/blog/holdem-straddle "thumb:/images/holdem-straddle-hero.webp").
+Masih satu keluarga dengan blind, ada satu taruhan lagi yang akan Anda lihat di cash game: **straddle** — blind ekstra yang *sukarela* (biasanya 2x BB) dipasang dari kursi di kiri Big Blind, yang menaikkan stakes untuk hand itu sementara. Straddle punya aturan, jenis, dan urutan aksinya sendiri — pembahasan lengkapnya ada di [apa itu straddle dan apakah Anda perlu memasangnya](/id/blog/holdem-straddle "thumb:/images/holdem-straddle-hero.webp").
 
 ---
 
@@ -131,7 +131,7 @@ Ketika hanya tersisa dua pemain (atau di match heads-up), aturan biasanya ==r:te
 
 ## Apa yang Terjadi Kalau Anda Melewatkan Blind? (Dead Blinds)
 
-Duduk di cash game live dan biasanya Anda tidak bisa main gratis: Anda **memasang satu Big Blind** untuk langsung dibagikan kartu, atau menunggu blind sampai ke kursi Anda. Kalau Anda meninggalkan meja dan ==**melewatkan blind Anda**==, di kebanyakan cardroom Anda memasangnya saat kembali untuk ikut lagi — Big Blind yang terlewat berlaku sebagai taruhan hidup, dan Small Blind yang terlewat menjadi chip ==**mati**== yang langsung masuk ke pot. Meja online mengurus semua ini secara otomatis.
+Kalau Anda duduk di cash game live, biasanya Anda tidak bisa langsung main gratis: Anda **memasang satu Big Blind** untuk langsung dibagikan kartu, atau menunggu blind sampai ke kursi Anda. Kalau Anda meninggalkan meja dan ==**melewatkan blind Anda**==, di kebanyakan cardroom Anda memasangnya saat kembali untuk ikut lagi — Big Blind yang terlewat berlaku sebagai taruhan hidup, dan Small Blind yang terlewat menjadi chip ==**mati**== yang langsung masuk ke pot. Meja online mengurus semua ini secara otomatis.
 
 ---
 
@@ -139,7 +139,9 @@ Duduk di cash game live dan biasanya Anda tidak bisa main gratis: Anda **memasan
 
 ![Tumpukan chip jatuh ke arah pot di meja poker — dorongan blind steal dari tombol](/images/holdem-blind-steal.webp)
 
-- **Small Blind: jangan ribet.** Kedua dari terakhir di preflop tapi **bertindak pertama** setelah flop; pendekatan bersih untuk pemula adalah **raise atau fold**, bukan call. Limp lalu diserang balik saat out of position adalah kebocoran chip yang konstan.
+Kursi blind adalah tempat saya paling sering melihat pemula kehilangan chip secara diam-diam — bukan dalam satu pot besar, tapi sedikit demi sedikit di setiap orbit. Dua kebiasaan di kursi blind memperbaiki sebagian besarnya — ditambah satu pola dari posisi akhir yang perlu Anda kenali:
+
+- **Small Blind: jangan ribet.** Kedua dari terakhir di preflop tapi **bertindak pertama** setelah flop; pendekatan bersih untuk pemula adalah **raise atau fold**, bukan call. Limp lalu diserang balik saat out of position bikin chip bocor terus-terusan.
 - **Big Blind: bertahan dengan odds.** Anda sudah memasang satu taruhan penuh, jadi Anda bisa call raise dengan lebih banyak kartu secara menguntungkan dibanding kursi mana pun. Menghadapi open 2,5 BB (dengan Small Blind fold), Anda call 1,5 BB untuk pot 4 BB — sekitar 2,7:1, artinya kira-kira 27% equity sudah cukup impas untuk call. Hitungan itu namanya [pot odds](/id/blog/holdem-pot-odds), dan itulah kenapa "big blind defense" ada.
 - **Posisi akhir: steal.** Ketika semua fold sampai ke button atau cutoff, raise yang cuma mengincar dua blind disebut **blind steal** — dan raise balik untuk melawannya disebut **re-steal**. Ukuran steal, range per kursi, dan seberapa lebar bertahan adalah topik strategi, dibahas mendalam di [panduan strategi in position vs out of position](/id/blog/holdem-position-play).
 
