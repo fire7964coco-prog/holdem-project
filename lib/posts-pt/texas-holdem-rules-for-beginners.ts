@@ -2,13 +2,13 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "texas-holdem-rules-for-beginners",
-  title: "Como jogar Texas Hold'em para iniciantes — regras, fichas, mãos e primeira estratégia",
-  seoTitle: "Nunca jogou poker? — Regras do Texas Hold'em passo a passo",
+  title: "Como jogar poker Texas Hold'em para iniciantes — regras, fichas, mãos e primeira estratégia",
+  seoTitle: "Nunca jogou? — Regras do poker Texas Hold'em passo a passo",
   desc: "Nunca jogou poker? Aprenda a jogar Texas Hold'em passo a passo: blinds, quantas fichas dar a cada um, ranking de mãos e uma cola pronta para deixar na mesa.",
   tldr: "No Texas Hold'em cada jogador recebe 2 cartas fechadas, usa 5 cartas comunitárias, e a melhor mão de 5 cartas ganha depois de quatro rodadas de apostas.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-08-25",
+  updated: "2026-08-27",
   masterUpdated: "2026-08-14",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -16,6 +16,8 @@ export const POST: Post = {
   image: "/images/rules-texas-holdem.webp",
   imageAlt: "Infográfico com o básico do Texas Hold'em — cartas fechadas A♣ K♦ ao lado de um leque de cinco cartas comunitárias A♠ K♥ Q♦ J♣ 10♠",
   tags: [
+    "poker regras",
+    "como jogar poker",
     "regras do texas holdem",
     "como jogar poker texas holdem",
     "poker para iniciantes",
@@ -23,7 +25,6 @@ export const POST: Post = {
     "quem comeca no poker",
     "fichas de poker para iniciantes",
     "quantos jogadores no poker",
-    "no limit texas holdem",
   ],
   content: `
 Se você pesquisou ==regras do Texas Hold'em para iniciantes==, provavelmente ainda não precisa de um livro de regras de cassino.

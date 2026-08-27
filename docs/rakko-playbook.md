@@ -85,6 +85,27 @@ lowfruits 화면에서 바로 보인 것 둘 —
 
 ---
 
+## 🔴 2026-08-27 실증 — 지역·스크립트 한계 3종 + DFS 복구 경위 (전 언어 태그 소급 실측에서 확보)
+
+1. **DFS «인증 만료»는 오진이었다.** `.env.local` 자격증명은 유효(직접 REST = 20000 Ok · 잔액 확인).
+   진짜 원인 = `.mcp.json`이 `${DATAFORSEO_LOGIN}` **부모 환경변수 확장**인데 그 변수가 시스템에
+   없었다 — MCP가 빈 자격증명으로 떠서 40100. **사용자 환경변수(User)로 등록 완료(2026-08-27)** →
+   세션 재시작 후 MCP 정상. 그전엔 curl REST 직접(§6 기존 처방 그대로).
+2. **대만(zh-hant) 중문 볼륨은 현재 도구로 측정 불가 — 3중 실증**:
+   ① 라쿠: 대만 **국가 레벨 location이 없다**(«Taiwan,Taiwan»=성 단위 → 전부 0 오측. 쓰지 마라)
+   ② DFS google_ads: **CJK 키워드 입력 자체를 거부**(40501 Invalid Field)
+   ③ DFS Labs: Taiwan DB에 중문 미수록(«德州撲克» 단독 프로브도 items 0)
+   → zh-hant 재조준 도구 = **자동완성(hl=zh-TW) + 경쟁 SERP 실측**. 볼륨 표를 요구하지 마라.
+3. **zh 간체는 본토 구글 데이터가 없다** — Singapore 측정은 참고치(상대 비교 전용). 절대값 금지.
+4. **DFS REST에 CJK·비ASCII를 보낼 땐 페이로드를 `\uXXXX` 이스케이프(ASCII-only)로 만들어라** —
+   PowerShell Invoke-RestMethod는 charset을 붙여도 서버가 Latin-1로 읽어 mojibake가 났다.
+   curl.exe + `--data-binary @file`(ASCII 파일)이 검증된 경로다.
+5. **단일 영어 일반어(cooler·fish·outs·limp·straddle·スクイーズ)의 볼륨은 비포커 의도 지배** —
+   pt cooler 135k·ja スクイーズ 301k가 실증. 자릿수 함정 규칙의 태그판. 근거 금지.
+
+> 전 언어 태그 전수 실측 정본 = `docs/keyword-bank/<locale>-tag-volumes.md`(pt·de·ja·zh·zh-hant·es)
+> + `id-core-volumes.md`. 갱신 절차: 태그 수확 스크립트 → 라쿠 배치(15크레딧/언어) → 판정.
+
 ## 0. 🔴🔴 가장 큰 발견 — **우리는 ja 시장의 헤드텀을 보지 못하고 있었다**
 
 2026-08-21 `/ja/solver` 회차에 나는 「`ポーカー gto` **880**이 이 판의 헤드텀」이라고 적었다.

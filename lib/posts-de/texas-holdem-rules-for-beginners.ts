@@ -2,13 +2,13 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "texas-holdem-rules-for-beginners",
-  title: "Texas Hold'em Regeln für Anfänger – Ablauf, Chips, Pokerhände und deine erste Strategie",
-  seoTitle: "Texas Hold'em Regeln für Anfänger – einfach erklärt",
+  title: "Poker Regeln für Anfänger – Texas Hold'em Ablauf, Chips, Pokerhände und deine erste Strategie",
+  seoTitle: "Poker Regeln für Anfänger – Texas Hold'em einfach erklärt",
   desc: "Nie gespielt? So funktioniert Texas Hold'em Schritt für Schritt – Blinds, Chip-Verteilung, Pokerhände und ein Spickzettel für deinen ersten Pokerabend.",
   tldr: "Beim Texas Hold'em bekommt jeder Spieler 2 Hole Cards, dazu kommen 5 Gemeinschaftskarten – nach vier Setzrunden gewinnt die beste Fünf-Karten-Hand.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-08-13",
+  updated: "2026-08-27",
   // 🔴 masterUpdated는 07-12 그대로 둔다 – 이 글은 「판 전체 재동기화」 보류분(드리프트 잔존)이다.
   //    남은 항목이 있는 채로 올리면 드리프트 추적이 거짓말을 한다(session-handoff §착수 전 7).
   masterUpdated: "2026-07-12",
@@ -18,15 +18,15 @@ export const POST: Post = {
   image: "/images/rules-texas-holdem.webp",
   imageAlt: "Texas-Hold'em-Grundlagen-Infografik – Hole Cards A♣ K♦ neben fünf aufgefächerten Gemeinschaftskarten A♠ K♥ Q♦ J♣ 10♠",
   tags: [
+    "poker regeln",
     "texas holdem regeln",
     "poker regeln für anfänger",
-    "texas holdem regeln für anfänger",
+    "poker lernen",
     "wer fängt an beim poker",
     "poker spickzettel",
     "pokerchips verteilung",
     "wie viele spieler texas holdem",
     "wie viele karten beim poker",
-    "mit wie vielen karten spielt man poker",
     "no limit texas holdem",
   ],
   content: `

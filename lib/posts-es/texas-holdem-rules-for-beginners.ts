@@ -2,13 +2,13 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "texas-holdem-rules-for-beginners",
-  title: "Cómo jugar al Texas Hold'em para principiantes — reglas, fichas, manos y primera estrategia",
-  seoTitle: "Cómo jugar al Texas Hold'em — reglas, fichas y chuleta",
+  title: "Cómo jugar poker Texas Hold'em para principiantes — reglas, fichas, manos y primera estrategia",
+  seoTitle: "Cómo jugar poker Texas Hold'em — reglas, fichas y chuleta",
   desc: "¿Primera partida? Cómo jugar al Texas Hold'em paso a paso: ciegas, reparto de fichas, jerarquía de manos y una chuleta imprimible para aprender desde cero.",
   tldr: "En el Texas Hold'em cada jugador recibe 2 cartas propias y comparte 5 cartas comunitarias en la mesa. Se apuesta en cuatro rondas — preflop, flop, turn y river — y gana quien forma la mejor mano de póker de 5 cartas, o el último que quede si todos los demás se retiran. Puedes usar tus dos cartas, una sola o ninguna: lo que forme la mano más fuerte.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-08-14",
+  updated: "2026-08-27",
   masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -16,6 +16,8 @@ export const POST: Post = {
   image: "/images/rules-texas-holdem.webp",
   imageAlt: "Infografía básica de Texas Hold'em — cartas propias A♣ K♦ junto a un abanico de cinco cartas comunitarias A♠ K♥ Q♦ J♣ 10♠",
   tags: [
+    "como jugar poker",
+    "reglas del poker",
     "como jugar texas holdem",
     "reglas texas holdem principiantes",
     "reglas basicas del poker texas holdem",
@@ -23,7 +25,6 @@ export const POST: Post = {
     "chuleta poker texas holdem",
     "fichas de poker para principiantes",
     "cuantos jugadores texas holdem",
-    "no limit texas holdem",
   ],
   content: `
 Si has buscado ==reglas del Texas Hold'em para principiantes==, lo que necesitas todavía no es el reglamento de un casino.
