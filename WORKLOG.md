@@ -1,3 +1,37 @@
+## 2026-08-27 (1) — 세션 2/9: EN 드리프트 소급 zh+zh-hant (회차 5·6 묶음 + adcffae4 수치분) · 렌즈 4종
+
+9세션 분할 계획의 **세션 2 완결**. zh 15편 + zh-hant 15편, 세션 1(es·de)과 동일 스코프.
+
+- **조치 불요 확인**: wpt(트로피 고유명·NSW 개혁+일몰+carded·12/36 프레임)·marathon(9–12월 제목)은
+  zh·zh-hant **이미 정정본**(af6c77c8 계열 8로케일 전수 정정이 커버) — 핸드오프의 「wpt는 나머지가
+  안 고쳐졌다」는 zh·zh-hant에는 해당 없음이 실측으로 확인됨. glossary 허브 역링크 zh-hant도 5/5 실측.
+- **회차 6 몫**: ept Gold Pass 4요소(비용표 +€690 양쪽 · zh-hant FAQ 「每日費用」→「€690 費用」) ·
+  간식(휴식 짧고 줄 김 — zh-hant는 大排長龍) · Day1 타임라인(晚間·8레벨) · apt 시제(FAQ 「2026 이 站
+  수관+다음 스톱 유효」·검증일 8/17) · apt 「개막 전 수관」 거짓 3자리 전부 「개막 당일」로(요약·표·note —
+  EN 「before the festival」은 따르지 않음, 세션 1 판정 준수. 표 행은 EN 동조 ==r:已關閉==로) ·
+  EN 08-26 수정 8건 거울(satellite stall 3불릿 — 현장 스톨링 WSOP 가벌·커버+석패안전 조건 ·
+  rebuy 정의 3층(표·본문·FAQ, 「파산 불요」) · 앤티 Level 2–4 행 이동 · 10bb 후위/소블 ·
+  홈칩 FAQ cash식 재작성 · hit-and-run+ratholing 2문장 · $1,050 線上 주赛)
+- **회차 5 몫**: glossary 5행(BB앤티×2·string bet 첫동작·run it twice 현금+동의·RFI 통계용어) ·
+  bad-beat(suckout 정의 flop 포함 — zh-hant는 이 정정으로 AA vs KK 플랍셋 이미지와의 기존 모순도 해소 ·
+  overpair 邊界案例+표 아래 노트 · 잭팟 dealt-in 2곳) · rake 캡 $3–$6 + 「0 到 −1」 ·
+  straddle(최소레이즈 $8 · sleeper 표/불릿/FAQ 하우스룰 헤지 · FAQ SPR→포지션 논거) · fish PFR 괄호
+- **adcffae4 수치분(§13급)**: 3bet A5s 28→30%(렌즈 2종이 독립 MC로 30.0~30.3% 재확인) ·
+  shc PDF 앵커 「9/6-max 나란히」 거짓 정정 + suited 2pt(67/65) · 2·4법칙 링크 pot-odds→outs
+  (zh 앵커는 도착 글 표기 「二四法则」로 통일 · zh-hant는 기존 「四二法則」이 이미 도착 글 정본) · limping EP 완화
+- **렌즈 4종 전부 Opus**(교열 diff zh/zh-hant + 네이티브·딜러 zh/zh-hant) → 지적 ~25건 전건 원문 판정:
+  🔴 apt 「개막 전」 사본 2곳 잔존(요약·note — 한 곳만 고쳐 모순 만들 뻔) · zh bad-beat tldr river 한정 잔존 ·
+  zh-hant 下海(tanking 오역, 유일 출현)→長考 · limping 「跟着limp…其中open-limp」 소속 모순(양쪽) ·
+  glossary 代收 방향 반대(zh-hant) · 底池→彩池(zh-hant straddle) · 場規 명시(tvc 양쪽) · 厮杀 인접 반복 해소 ·
+  RFI 「有多常」 대만어투(zh) · 「主模式」 직역(zh) · 前注 동사 통일(zh) · 재입장 「同一桌」→「같은 牌局」(양쪽) ·
+  **범위 밖 원본 결함 2건도 즉시 수정**: runner-runner 「凑成听牌」 의미 뒤집힘(양쪽) · zh-hant apt 짝 없는 `**`
+- **기각·보류**: bad-beat 분배 표 「同桌其他人」 = EN 동형 → EN-먼저 판정 후보 ⑤ 유지(임의 소급 금지) ·
+  ept 비용표 €690↔식비 무상계 = EN 동형 → EN-먼저 후보 ④ · ept 「진행 중」 배너 미이식(masterUpdated 07-25 유지) ·
+  shc AJo 소급 금지 유지(masterUpdated 08-11 유지)
+- 게이트 zh 43/43·zh-hant 43/43 🔴 0건(렌즈 반영 후 재실행) · 빌드 ✓(70+471) · 잔여 드리프트 표시는
+  전부 범위 밖(회차 1·2 미러분 — masterUpdated 미상향이 의도) — zh-hant 잔여 8편 목록은 교열 렌즈 D절 실측:
+  betting-actions·card-counting·continuation-bet·game-order·kicker·showdown-rules·marathon·beginners
+
 ## 2026-08-26 (12) — 세션 1/9: EN 드리프트 소급 es+de (회차 5·6 묶음 + adcffae4 수치분) · 렌즈 4종
 
 9세션 분할 계획(863d8367)의 **세션 1 완결**. es 15편 + de 16편, 라이브 §13급 오류 지혈.

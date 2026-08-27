@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "3bet 就是翻前的第一次再加注——之所以叫 3bet，是因为大盲是第一次下注、开池加注是第二次、你的再加注是第三次。价值 3bet 用一个紧的核心范围（QQ+、AK）再加上几个带阻挡牌的同花诈唬牌（比如 A5s），有位置时加到开池的 3x 左右、无位置时加到 4x，整体 3bet 频率保持在 6–10% 附近。轮到你面对 3bet 时，用超强牌 4bet，跟那些好打的牌，其余全弃——面对从不诈唬的低级别牌手，弃得比「平衡」更多。",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-08-11",
-  masterUpdated: "2026-08-11",
+  updated: "2026-08-26",
+  masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "16 分钟",
   emoji: "♦️",
@@ -83,7 +83,7 @@ QQ+、AK | 几乎所有人都认可的价值核心
 
 </div>
 
-一句话讲清阻挡牌逻辑：**你手里拿着一张 A，会让对手拿到 AA 或 AK 这件事在数学上变得更不可能**，所以 A5s 是比方说 A9o 好得多的诈唬牌——A9o 阻挡了同样的超强牌，但被跟时打得很烂，只能凑成弱对子。后备胜率之所以重要，是因为对手不会每次都弃牌；你想要一个被跟时还能赢下底池的诈唬牌。这就是为什么面对 QQ+/AK 的跟注范围，A5s ≈ 28% 胜率，而非同花的垃圾牌远在其下。这跟一直以来的 [起手牌](/zh/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") 纪律是同一套——只是用到了再加注上。
+一句话讲清阻挡牌逻辑：**你手里拿着一张 A，会让对手拿到 AA 或 AK 这件事在数学上变得更不可能**，所以 A5s 是比方说 A9o 好得多的诈唬牌——A9o 阻挡了同样的超强牌，但被跟时打得很烂，只能凑成弱对子。后备胜率之所以重要，是因为对手不会每次都弃牌；你想要一个被跟时还能赢下底池的诈唬牌。这就是为什么面对 QQ+/AK 的跟注范围，A5s ≈ 30% 胜率，而非同花的垃圾牌远在其下。这跟一直以来的 [起手牌](/zh/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") 纪律是同一套——只是用到了再加注上。
 
 ---
 

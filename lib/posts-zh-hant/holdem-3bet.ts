@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "3-bet 就是翻前的第一次再加注——之所以叫 3-bet，是因為大盲是第一個下注、開牌加注是第二個、你的再加注是第三個。價值 3bet 一個緊實的核心（QQ+、AK）再加幾張帶阻擋牌的同花詐唬如 A5s，有利位置加到開牌的約 3 倍、不利位置約 4 倍，整體 3bet 頻率抓在 6～10%。換你面對 3bet 時：頂級牌 4bet、打得好的牌跟注、其餘蓋掉——碰上從不詐唬的低額對手，就蓋得比「平衡」還要多。",
   category: "strategy",
   date: "2026-07-23",
-  updated: "2026-08-11",
-  masterUpdated: "2026-08-11",
+  updated: "2026-08-26",
+  masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "16 分鐘",
   emoji: "♦️",
@@ -83,7 +83,7 @@ QQ+、AK | 幾乎人人都同意的價值核心
 
 </div>
 
-一句話講完阻擋牌的邏輯：**你手上握著一張 A，數學上就讓對手握有一對 A 或 A-K 的機率變低**，所以 A5s 是遠比 A9o 更好的詐唬——A9o 阻擋的是同樣那些頂級牌，但被跟時打得很爛，還只湊得出弱對子。後備勝率之所以重要，是因為對手不會每次都蓋牌；你要的是一手就算被跟也還能贏下底池的詐唬。這就是為什麼 A5s 對上一個 QQ+/AK 的跟注範圍時 ≈ 28% 勝率，而不同花的垃圾牌則遠低於此。這跟一貫的[起手牌](/zh-hant/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp")紀律是同一套——只是套用在再加注上。
+一句話講完阻擋牌的邏輯：**你手上握著一張 A，數學上就讓對手握有一對 A 或 A-K 的機率變低**，所以 A5s 是遠比 A9o 更好的詐唬——A9o 阻擋的是同樣那些頂級牌，但被跟時打得很爛，還只湊得出弱對子。後備勝率之所以重要，是因為對手不會每次都蓋牌；你要的是一手就算被跟也還能贏下底池的詐唬。這就是為什麼 A5s 對上一個 QQ+/AK 的跟注範圍時 ≈ 30% 勝率，而不同花的垃圾牌則遠低於此。這跟一貫的[起手牌](/zh-hant/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp")紀律是同一套——只是套用在再加注上。
 
 ---
 

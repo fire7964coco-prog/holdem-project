@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "隱含賠率就是你聽牌成牌後，預期在之後的街上多贏到的額外籌碼。它讓你能划算地跟一個光看底池賠率會說蓋的聽牌——但前提是籌碼夠深、而且對手真的會付你錢。",
   category: "odds",
   date: "2026-07-23",
-  updated: "2026-08-12",
-  masterUpdated: "2026-08-12",
+  updated: "2026-08-26",
+  masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "12 分鐘",
   emoji: "💰",
@@ -68,7 +68,7 @@ export const POST: Post = {
 寫乾淨一點，用 ==g:x== 代表你成牌時必須多贏到的那筆錢：
 
 :::steps
-找出你的成牌率 | 數[補牌（Outs）](/zh-hant/blog/holdem-outs)，換算成百分比（[四二法則](/zh-hant/blog/holdem-pot-odds)能讓你八九不離十）
+找出你的成牌率 | 數補牌（Outs），換算成百分比（[四二法則](/zh-hant/blog/holdem-outs)能讓你八九不離十）
 用你的跟注除以那個成牌率 | 這是你為了打平需要贏到的總額
 減去目前底池 **加上你自己的跟注** | 剩下的，就是你之後必須多贏到的額外——這就是你的 ==g:x==
 判斷它現不現實 | 深籌碼 + 一個愛付錢的對手 = 行。短籌碼、或一張嚇人的牌面 = 不行
