@@ -1,11 +1,11 @@
-# id 코어 볼륨 실측 — rules·rankings 축
+# id 코어 볼륨 실측 — rules·rankings·odds 축
 
 > 🪶 발굴 원자료·의도 판정(자릿수 함정)·현지화 노트·커버리지 맵은 **`id-posting-reference.md`**
 > (신규 포스팅·경화 공용 참고 파일). 볼륨 정본은 이 파일이다.
 
 > 실측 2026-08-27 · 라쿠 search-volume-history · **location=Indonesia · language=Indonesian** ·
 > requestId **1258288**(배치 1 · 22종 · 12m) + **1258295**(배치 2 · 29종 — rules 소급용 · 12m) +
-> **1258342**(배치 3 · 44종 — rankings 클러스터 · 48m)
+> **1258342**(배치 3 · 44종 — rankings 클러스터 · 48m) + **1258391**(배치 4 · 40종 — odds 클러스터 · 48m)
 >
 > ✅ **교차검증 완료(2026-08-27 세션 5)** — DataForSEO REST(google_ads search_volume ·
 > location=Indonesia · language=id)로 15종 재실측: 라쿠와 **전 항목 일치**(cara main poker 4.400 ·
@@ -104,6 +104,31 @@
   «full house poker» 1.000(+30%)은 Xbox 게임 동명 혼재 — 태그 채택 보류, 본문 커버리지로만.
 - «seri poker» 90(하락·−18%) = 영어 «poker series» 의도 지배(자동완성 실측) — split-pot에 쓰지 마라.
 - «apa itu kicker» 자동완성 = 비포커(roblox·bullish kicker) — kicker 글 제목에 단독 사용 금지.
+
+## 배치 4 (2026-08-27 · 세션 6 odds 클러스터 — 자동완성(hl=id) 발굴 + 라쿠 40종 실측 · 48m)
+
+> 발굴 = 구글 자동완성(pot odds·peluang·probabilitas·outs·equity·implied·rumus·menghitung 계열
+> 20여 시드). DFS Labs 미사용(자동완성 실측만으로 축 소멸이 판명돼 발굴 확장 불요).
+
+### 유일한 실재 축
+
+| 키워드 | 볼륨 | 12m | 판정 |
+|---|--:|--:|---|
+| **rumus poker** | **390** | **+28%↑** | ✅ **odds 클러스터의 유일한 id 고유 축**(48m 우상향 210→480). 의도 = «포커 공식/계산법» — probability 허브가 정확히 그 내용이라 태그 채택 + 본문 «rumus poker» 직조(2026-08-27 세션 6). 파생: rumus kartu poker 20 · rumus main poker 10 · rumus poker jitu null |
+| poker calculator | 90 | −14%↓ | 도구 의도(계산기) — id 계산기 페이지 없음, 하락세라 신설 근거 없음. 기록만 |
+| odds poker / poker odds | 70 | −87%↓ | 2025-08~12 스파이크(210) 후 기저 10~20 — 스포츠베팅 노이즈 추정. 조치 불요 |
+
+### 축 소멸 확정 (재조사 불요)
+
+- **pot odds·implied odds·outs poker·equity poker 계열 전부 10 또는 null** — pot odds adalah ·
+  apa itu pot odds · cara menghitung pot odds · implied odds adalah · outs poker adalah ·
+  cara menghitung outs poker · equity poker adalah · apa itu equity poker **전부 null**.
+- peluang kartu poker 10 · peluang menang poker null · probabilitas poker null ·
+  matematika poker 10 · persentase menang poker null · flush draw (poker) 각 10 ·
+  straight draw poker 10 · ev poker / expected value poker 각 10 · kalkulator poker 10.
+- 🔴 **apa itu equity** 자동완성 = trading·forex·akuntansi 지배 — equity 단독 조준 금지(자릿수 함정).
+- → **결론: odds 7편의 경화 본체는 볼륨 재조준이 아니라 «드리프트 소급 + EN 경화분 FAQ 이식»**
+  (kicker·tiebreak 판정과 동일 계열). 세션 6이 그렇게 실행했다.
 
 ## 세션 5~9에 주는 결론
 

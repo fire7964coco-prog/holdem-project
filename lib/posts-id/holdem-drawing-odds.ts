@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "Anda flop set dengan pocket pair 11,8% dari waktu (7,5:1 melawan), flop flush dengan dua kartu suited hanya 0,84%, dan menyelesaikan flush draw yang di-flop hingga river 35% dari waktu. Setiap angka di bawah diturunkan dari deck, bukan ditebak.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-08-11",
+  updated: "2026-08-27",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "🎲",
@@ -18,7 +19,7 @@ export const POST: Post = {
   content: `
 Tangan yang membuat saya menghafal ini mati-matian: saya call sebuah raise dengan pocket fives, flop set saya, menghabiskan stack lawan yang pegang aces, dan teman saya bertanya bagaimana saya "tahu" harus call. Saya tidak *tahu* — saya tahu angkanya. ==Anda flop set kira-kira 1 dari 8,5 kali==, dan stack cukup dalam untuk membayar saya saat itu terjadi. Pecahan tunggal itu mengubah call yang "terasa hoki" menjadi call yang profit.
 
-Itulah drawing odds sebenarnya: bukan keberuntungan, melainkan ==matematika tetap dari deck 52 kartu==. Seberapa sering Anda flop set, flop flush, menyelesaikan draw hingga river — setiap angka ini bisa Anda turunkan, dan pemain yang menang sudah menghafalnya. Panduan ini adalah ==g:probabilitas di balik flop dan draw==, masing-masing dengan kombinatorika sesungguhnya agar Anda bisa melihat *mengapa* angkanya seperti itu. Ini pendamping [tabel odds dan probabilitas poker lengkap](/id/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp"); begitu Anda tahu peluang di sini, [menghitung outs](/id/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp") dan [pot odds](/id/blog/holdem-pot-odds) mengubahnya menjadi keputusan.
+Itulah drawing odds sebenarnya: bukan keberuntungan, melainkan ==matematika tetap dari deck 52 kartu==. Seberapa sering Anda flop set, flop flush, menyelesaikan draw hingga river — setiap angka ini bisa Anda turunkan, dan pemain yang menang sudah menghafalnya. Panduan ini adalah ==g:probabilitas di balik flop dan draw==, masing-masing dengan kombinatorika sesungguhnya agar Anda bisa melihat *mengapa* angkanya seperti itu. Ini pendamping [bagan odds dan probabilitas poker lengkap](/id/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp"); begitu Anda tahu peluang di sini, [menghitung outs](/id/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp") dan [pot odds](/id/blog/holdem-pot-odds) mengubahnya menjadi keputusan.
 
 ---
 
@@ -41,7 +42,7 @@ Inilah tabel yang tak dibuat siapa pun di satu tempat. Kebanyakan situs memberi 
 
 | Pegangan | Flop jadi | Flop draw-nya | Selesaikan draw hingga river |
 |:---|:---:|:---|:---|
-| Pocket pair → set | 11,8% (7,5:1) | — | set→boat 33% hingga river |
+| Pocket pair → set | 11,8% (7,5:1) | — | set→full house 33% hingga river |
 | Dua suited → flush | 0,84% (118:1) | 10,9% flush draw | 35% (9 outs) |
 | Connectors → straight | 1,3% (76:1) | ~10% OESD | 31,5% (8 outs) |
 | Dua unpaired → pair | ~32% | — | — |
@@ -49,7 +50,7 @@ Inilah tabel yang tak dibuat siapa pun di satu tempat. Kebanyakan situs memberi 
 
 </div>
 
-Baca menyeberang satu baris dan Anda melihat seluruh siklus hidup sebuah tangan. Dua kartu suited hampir tak pernah flop flush *jadi* (0,84%) — tapi mereka flop **flush draw** tiga belas kali lebih sering (10,9%), dan draw itu sampai di river 35% dari waktu. Mencampuradukkan ketiga angka itu adalah kesalahan odds yang paling umum, jadi kita akan pisahkan masing-masing di bawah dengan matematikanya ditampilkan.
+Ikuti satu baris dari kiri ke kanan, dan Anda melihat seluruh siklus hidup sebuah tangan. Dua kartu suited hampir tak pernah flop flush *jadi* (0,84%) — tapi dua kartu itu flop **flush draw** tiga belas kali lebih sering (10,9%), dan draw itu sampai di river 35% dari waktu. Mencampuradukkan ketiga angka itu adalah kesalahan odds yang paling umum, jadi kita akan pisahkan masing-masing di bawah dengan matematikanya ditampilkan.
 
 ---
 
@@ -91,7 +92,7 @@ Dua angka terkait yang sering ditanyakan:
 
 ![Ace-king hati dengan flop queen-seven hati di atas felt hijau, sebuah flush draw sembilan-out yang di-flop di samping tumpukan chip pendek](/images/holdem-drawing-odds-flush-draw.webp "Dua hati di tangan, dua di flop — sebuah flush draw, bukan flush jadi: 10,9% untuk flop, 35% untuk selesai hingga river")
 
-Di sinilah para pesaing mengaburkan tiga angka yang sama sekali berbeda. Dengan dua kartu suited di tangan Anda, ada **tiga pertanyaan terpisah**, dan mereka berselisih satu orde besaran:
+Di sinilah para pesaing mengaburkan tiga angka yang sama sekali berbeda. Dengan dua kartu suited di tangan Anda, ada **tiga pertanyaan terpisah**, dan ketiganya berselisih satu orde besaran:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -111,7 +112,7 @@ Angka penyelesaian terpecah per street, yang penting begitu masih ada taruhan te
 - **Flop → turn (satu kartu):** 9 ÷ 47 = 19,1%.
 - **Turn → river (satu kartu):** 9 ÷ 46 = 19,6%.
 
-Sebuah flush **backdoor** (runner-runner) — Anda flop hanya *satu* kartu ekstra dari jenis Anda dan butuh turn maupun river jadi jenis Anda — muncul sekitar 4,2%, kira-kira senilai satu out ekstra dari equity. Bukan alasan untuk call, tapi pemecah seri nyata di spot yang ketat. Untuk mengubah salah satunya jadi call atau fold, jalankan angkanya lewat [cara menghitung pot odds](/id/blog/holdem-pot-odds).
+Sebuah flush **backdoor** (runner-runner) — Anda flop hanya *satu* kartu ekstra dari jenis Anda dan butuh turn maupun river jadi jenis Anda — muncul sekitar 4,2%, kira-kira senilai satu out ekstra dari equity. Bukan alasan untuk call, tapi penentu nyata di spot yang ketat. Untuk mengubah salah satunya jadi call atau fold, jalankan angkanya lewat [cara menghitung pot odds](/id/blog/holdem-pot-odds).
 
 ---
 
@@ -119,12 +120,12 @@ Sebuah flush **backdoor** (runner-runner) — Anda flop hanya *satu* kartu ekstr
 
 ![Sebuah straight eight-high tersusun berurutan di atas felt hijau, tangan jadi yang dikejar sebuah open-ended draw](/images/holdem-reading-straight-example.webp "Sebuah open-ended straight draw terisi dari ujung mana pun — delapan outs, 31,5% untuk selesai hingga river")
 
-Connectors seperti 8♠7♠ punya siklus hidupnya sendiri. Anda akan **flop straight jadi hanya 1,3%** dari waktu (76:1) — lebih langka dari dugaan kebanyakan pemain. Jauh lebih sering Anda flop sebuah **draw**:
+Connector seperti 8♠7♠ punya siklus hidupnya sendiri. Anda akan **flop straight jadi hanya 1,3%** dari waktu (76:1) — lebih langka dari dugaan kebanyakan pemain. Jauh lebih sering Anda flop sebuah **draw**:
 
 - **Open-ended straight draw (OESD):** ~10% dari flop dengan connectors. Delapan outs, selesai **31,5%** hingga river — 1 − C(39,2)/C(47,2) — atau 17% pada satu kartu mana pun.
 - **Gutshot (inside) straight draw:** empat outs, selesai **16,5%** hingga river, 8,5% pada satu kartu. Setengah equity dari open-ender, itulah mengapa connectors yang sama bermain sangat berbeda tergantung flop.
 
-Perhatikan OESD (31,5%) dan flush draw (35%) berdekatan — keduanya "satu draw besar", keduanya kira-kira sepertiga untuk kena hingga river. Itulah jalan pintas yang layak diinternalisasi: sebuah draw besar normal kira-kira ==**satu dari tiga**== untuk selesai hingga river, dan itu terbelah jadi kira-kira satu dari enam pada satu street.
+Perhatikan OESD (31,5%) dan flush draw (35%) berdekatan — keduanya "satu draw besar", keduanya kira-kira sepertiga untuk kena hingga river. Itulah jalan pintas yang layak dihafal: sebuah draw besar normal kira-kira ==**satu dari tiga**== untuk selesai hingga river, dan itu terbelah jadi kira-kira satu dari lima sampai enam pada satu street.
 
 ---
 
@@ -145,9 +146,9 @@ Inilah angka di balik malam terbaik (dan terburuk) hidup poker Anda. Masing-masi
 
 Satu perbedaan krusial yang rutin dikacaukan halaman teratas: sebuah **set** adalah pocket pair plus satu kartu board yang cocok (11,8%), sedangkan **trips** adalah satu kartu hole *unpaired* yang di-pair-kan board dua kali (1,35%). Three of a kind yang sama di atas kertas, peluang dan playability yang jauh berbeda — set tersamar, trips terlihat jelas. Jangan biarkan siapa pun bilang keduanya bentuk yang sama.
 
-Angka straight flush adalah yang pantas dibingkai: dengan suited connectors ada tepat **empat** flop yang membentuknya (satu rangkaian di jenis Anda), jadi 4 ÷ 19.600 ≈ 1 dari 4.900. Itulah mengapa straight flush yang di-flop jadi cerita yang diceritakan orang selama satu dekade.
+Angka straight flush adalah yang pantas dibingkai: dengan suited connector di rentang tengah umumnya ada **empat** flop yang membentuknya (satu rangkaian di jenis Anda — connector pinggir seperti A-K atau 3-2 punya lebih sedikit), jadi 4 ÷ 19.600 ≈ 1 dari 4.900. Itulah mengapa straight flush yang di-flop jadi cerita yang diceritakan orang selama satu dekade.
 
-Angka full house menghitung setiap cara flop memberi Anda boat dengan pocket pair — termasuk flop yang muncul sebagai trips dari rank lain di atas pair Anda — itulah mengapa terbaca 0,98% bukan ~0,73% yang lebih sempit yang dikutip beberapa tabel untuk "set plus board pair" saja.
+Angka full house menghitung setiap cara flop memberi Anda full house dengan pocket pair — termasuk flop yang muncul sebagai trips dari rank lain di atas pair Anda — itulah mengapa terbaca 0,98% bukan ~0,73% yang lebih sempit yang dikutip beberapa tabel untuk "set plus board pair" saja.
 
 ---
 
@@ -166,7 +167,7 @@ Sebelum semua di atas, ada pembagiannya. Dengan **1.326 kombinasi dua-kartu yang
 
 </div>
 
-Yang satu ini mengejutkan orang: kalau **Anda** pegang aces di meja 10-handed, peluang pemain *kedua* juga pegang aces kira-kira **1 dari 136** (sembilan lawan masing-masing 1 ÷ C(50,2) = 1/1.225). Langka, tapi persis inilah cooler aces-vs-aces yang menguras stack dan disalahkan pada software "rigged". Itu cuma deck-nya. Untuk tangan mana dari 1.326 itu yang layak dimainkan dari tiap kursi, pelajari [tabel starting hands per posisi](/id/blog/holdem-starting-hands-chart).
+Yang satu ini mengejutkan orang: kalau **Anda** pegang aces di meja 10-handed, peluang pemain *kedua* juga pegang aces kira-kira **1 dari 136** (sembilan lawan masing-masing 1 ÷ C(50,2) = 1/1.225). Langka, tapi persis inilah cooler aces-vs-aces yang menguras stack dan membuat orang menuduh software-nya "rigged". Itu cuma deck-nya. Untuk tangan mana dari 1.326 itu yang layak dimainkan dari tiap kursi, pelajari [tabel starting hands per posisi](/id/blog/holdem-starting-hands-chart).
 
 ---
 
@@ -189,6 +190,10 @@ A. Keduanya odds yang sama dinyatakan dua cara. "7,5:1 melawan" menghitung meles
 
 A. Sebuah set adalah pocket pair plus satu kartu cocok di board — Anda flop itu 11,8% dari waktu dan tersembunyi rapi. Trips adalah satu kartu hole unpaired yang di-pair-kan board (dua kartu board cocok) — hanya 1,35% di flop, dan jauh lebih jelas bagi lawan. Rank three of a kind yang sama, peluang dan nilai yang sangat berbeda.
 
+**Q. Apa itu flush draw?**
+
+A. Flush draw adalah saat Anda memegang empat kartu menuju flush dan butuh satu lagi dari jenis itu — misalnya A♥ K♥ di flop 9♥ 5♥ 2♠, di mana sembilan hati mana pun yang tersisa melengkapinya. Flush draw yang di-flop punya sembilan outs dan sampai di sana sekitar 35% dari waktu hingga river, atau kira-kira 19% pada satu kartu.
+
 **Q. Berapa peluang flop flush?**
 
 A. Hanya 0,84% (kira-kira 118:1) dengan dua kartu suited — itulah C(11,3)/C(50,3). Jangan kelirukan dengan flop flush *draw*, yang 10,9%, atau *menyelesaikan* draw itu hingga river, yang 35%. Dua kartu suited flop draw tiga belas kali lebih sering daripada flush jadi.
@@ -196,6 +201,14 @@ A. Hanya 0,84% (kira-kira 118:1) dengan dua kartu suited — itulah C(11,3)/C(50
 **Q. Kalau saya flop flush draw, berapa peluang saya menyelesaikannya?**
 
 A. Sekitar 35% hingga river dengan sembilan outs (1 − C(38,2)/C(47,2)) — sedikit lebih baik dari satu dari tiga. Pada satu kartu itu kira-kira 19%: 9/47 flop-ke-turn, 9/46 turn-ke-river. Pakai angka satu-kartu kapan pun masih ada taruhan yang akan datang.
+
+**Q. Berapa peluang hit flush dengan empat kartu menuju flush versus tiga?**
+
+A. Dengan empat menuju flush setelah flop — flush draw sungguhan dengan sembilan outs — Anda akan menyelesaikannya sekitar 35% dari waktu hingga river. Dengan hanya tiga menuju flush, Anda butuh turn *dan* river sama-sama jenis Anda (backdoor, alias runner-runner, flush), yang hanya masuk ~4,2%. Itulah kenapa empat-menuju-flush adalah draw yang layak dimainkan, sedangkan tiga nyaris hanya bonus tipis.
+
+**Q. Apa itu straight draw, dan berapa peluang hit-nya?**
+
+A. Straight draw adalah empat kartu menuju straight. Open-ended straight draw (seperti 8-7 di board 9-6-2, butuh 5 atau 10) punya delapan outs dan selesai sekitar 31,5% dari waktu hingga river. Gutshot (inside) draw hanya punya empat outs — satu nilai saja yang mengisi celahnya — jadi hit sekitar 16,5%, kira-kira separuhnya.
 
 **Q. Berapa peluang flop quads?**
 
@@ -211,23 +224,23 @@ A. Tak ada satu angka tetap — tergantung berapa banyak lawan pegang pocket pai
 
 ---
 
-## 3 hal yang harus diingat
+## 3 Hal yang Harus Diingat
 
 1. **Flop set: 11,8% (7,5:1).** Angka yang menentukan setiap call set mining — hanya call cukup dalam agar dibayar 15× atau lebih saat Anda kena.
 2. **Jadi vs draw vs selesai adalah angka berbeda.** Dua kartu suited flop flush jadi 0,84%, flush draw 10,9%, dan menyelesaikan draw itu 35%. Jangan pernah mengutip yang keliru.
-3. **Sebuah draw besar kira-kira satu dari tiga hingga river.** Flush draw 35%, open-ender 31,5% — dan kira-kira satu dari enam pada satu street.
+3. **Sebuah draw besar kira-kira satu dari tiga hingga river.** Flush draw 35%, open-ender 31,5% — dan kira-kira satu dari lima sampai enam pada satu street.
 
-Setiap angka di sini datang langsung dari deck, bukan firasat. Bawa ini ke [cara menghitung outs](/id/blog/holdem-outs) untuk membangun angkanya secara real time, lalu [pot odds](/id/blog/holdem-pot-odds) untuk mengubahnya jadi call atau fold — atau kembali ke [tabel odds dan probabilitas poker lengkap](/id/blog/holdem-probability) untuk setiap angka tangan-jadi dan long-shot di satu tempat.
+Setiap angka di sini datang langsung dari deck, bukan firasat. Bawa ini ke [cara menghitung outs](/id/blog/holdem-outs) untuk membangun angkanya secara real time, lalu [pot odds](/id/blog/holdem-pot-odds) untuk mengubahnya jadi call atau fold — atau kembali ke [bagan odds dan probabilitas poker lengkap](/id/blog/holdem-probability) untuk setiap angka tangan-jadi dan peluang tipis di satu tempat.
 
 ---
 
-## Postingan terkait
+## Postingan Terkait
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/id/blog/holdem-probability" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Odds &amp; Matematika</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Tabel odds &amp; probabilitas poker</div>
-    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Setiap angka tangan-jadi dan long-shot di satu tempat</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Bagan odds &amp; probabilitas poker</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Setiap angka tangan-jadi dan peluang tipis di satu tempat</div>
   </a>
   <a href="/id/blog/holdem-outs" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Odds &amp; Matematika</div>

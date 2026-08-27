@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "Equity adalah bagian Anda dari pot — porsi yang rata-rata jatuh ke tangan Anda saat semua kartu dibagikan, dengan pot seri dihitung proporsional. Anda call saat equity mengalahkan pot odds, tapi posisi dan taruhan membuat Anda jarang menyimpan seluruh equity — dan fold equity membuat Anda bisa memenangkan pot bahkan saat tangan Anda tertinggal.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-08-12",
+  updated: "2026-08-27",
+  masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "🥧",
@@ -20,7 +21,7 @@ Selama setahun saya kira "equity" hanya kata keren untuk "seberapa besar peluang
 
 ==Equity adalah satu angka yang mengikat setiap bagian matematika poker lainnya — outs, pot odds, posisi, dan agresi semua bermuara pada satu pertanyaan: berapa bagian pot ini yang benar-benar milik saya?== Panduan ini membahas apa itu equity, cara memperkirakannya, dan tiga hal yang tak pernah dikatakan kepada pemula: kenapa Anda tak menyimpan semuanya, bagaimana lawan yang fold memberi Anda tambahan, dan kenapa tangan besar Anda menyusut melawan banyak orang.
 
-Persen menang mentah di balik setiap tangan berasal dari [chart odds dan probabilitas poker](/id/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp"); panduan ini adalah cara Anda mengubah persentase itu menjadi keputusan di meja.
+Persen menang mentah di balik setiap tangan berasal dari [bagan odds dan probabilitas poker](/id/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp"); panduan ini adalah cara Anda mengubah persentase itu menjadi keputusan di meja.
 
 ---
 
@@ -28,7 +29,7 @@ Persen menang mentah di balik setiap tangan berasal dari [chart odds dan probabi
 
 :::stripe
 pot × equity% | Berapa nilai tangan Anda saat ini
-raw × realization% | Berapa yang benar-benar Anda kumpulkan
+equity mentah × % realisasi | Berapa yang benar-benar Anda kumpulkan
 bet ÷ (pot + bet) | Persen fold yang dibutuhkan bluff murni
 :::
 
@@ -38,7 +39,7 @@ bet ÷ (pot + bet) | Persen fold yang dibutuhkan bluff murni
 
 **Equity adalah bagian Anda dari pot — porsi yang rata-rata jatuh ke tangan Anda jika tangan dimainkan sampai showdown, dengan pot seri dihitung proporsional.** Jika pot $100 dan 60% darinya menjadi hak Anda, tangan Anda bernilai ==$60 saat ini==, meski chip belum didorong ke mana pun.
 
-Bayangkan sebagai potongan kue Anda. Setiap tangan yang masih hidup punya potongan; potongan-potongan itu selalu berjumlah 100%. Saat Anda head-up dan 70% untuk menang pot $200, ==g:$140 di antaranya "milik Anda"== dalam jangka panjang — Anda tak akan menang *pot ini* 70% waktu dan kalah sisanya, tapi di seribu situasi identik, itulah bagian yang Anda kumpulkan.
+Bayangkan sebagai potongan kue Anda. Setiap tangan yang masih hidup punya potongan; potongan-potongan itu selalu berjumlah 100%. Saat Anda heads-up dan 70% untuk menang pot $200, ==g:$140 di antaranya "milik Anda"== dalam jangka panjang — di satu tangan Anda menang seluruhnya atau kalah seluruhnya, bukan membawa pulang 70% dari pot ini; tapi di seribu situasi identik, itulah bagian yang Anda kumpulkan.
 
 Itulah alasan equity penting: ia mengubah "apakah saya unggul?" menjadi "berapa bagian pot ini yang saya miliki?" — dan itulah angka yang Anda bandingkan dengan harga sebuah call.
 
@@ -48,7 +49,7 @@ Itulah alasan equity penting: ia mengubah "apakah saya unggul?" menjadi "berapa 
 
 **Pada draw, kalikan outs Anda dengan 4 di flop atau dengan 2 di turn; preflop, hafalkan segelintir matchup yang muncul berulang kali.** Anda hampir tak pernah menghitung equity persis di meja — Anda memperkirakan, dan dua pintasan ini mencakup 90% situasi.
 
-**Draw (Rule of 4 dan 2):** hitung [outs](/id/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp") Anda, lalu kalikan. Flush draw adalah 9 outs → ==9 × 4 = 36%== di flop (nilai sebenarnya 35%). Angka persis untuk setiap draw ada di [drawing odds](/id/blog/holdem-drawing-odds); ini referensi cepatnya:
+**Draw (Rule of 4 and 2):** hitung [outs](/id/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp") Anda, lalu kalikan. Flush draw adalah 9 outs → ==9 × 4 = 36%== di flop (nilai sebenarnya 35%). Angka persis untuk setiap draw ada di [drawing odds](/id/blog/holdem-drawing-odds); ini referensi cepatnya:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -83,7 +84,7 @@ Dua hal yang menjebak orang di sini. Pair melawan dua overcard (QQ vs AK) ==r:bu
 
 **Call saat equity Anda lebih besar dari pot odds Anda — satu perbandingan itu menentukan hampir setiap call di poker.** [Pot odds](/id/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") memberi tahu equity yang Anda *butuhkan* untuk impas; equity memberi tahu apa yang Anda *miliki*. Jika Anda punya lebih dari yang dibutuhkan, call menghasilkan uang.
 
-Menghadapi taruhan setengah pot, pot odds Anda membutuhkan ==25%== untuk call. Flush draw dengan dua kartu tersisa punya ~35% equity — 35 mengalahkan 25, jadi ini call yang menguntungkan. Itulah keseluruhan keputusannya, tanpa tebak-tebakan.
+Menghadapi taruhan setengah pot, pot odds Anda membutuhkan ==25%== untuk call. Flush draw dengan dua kartu tersisa punya ~35% equity — 35 mengalahkan 25, jadi ini call yang menguntungkan. Itulah keseluruhan keputusannya, tanpa tebak-tebakan. Catatan: angka 35% itu berlaku hanya kalau Anda melihat **kedua** kartu; kalau taruhan turn masih menanti, call ini cuma membeli satu kartu (==9 ÷ 47 = 19,1%==, di bawah harga 25%).
 
 Tapi inilah jebakan yang hampir setiap panduan lewatkan: **"equity Anda sama dengan bagian pot Anda" hanya benar saat tak ada taruhan lagi.** Begitu lebih banyak uang bisa masuk di street berikutnya, 35% mentah tak otomatis berubah menjadi 35% dari pot akhir — Anda bisa dipaksa lepas draw, atau membayar saat Anda kena tapi jadi terbaik kedua. Jurang itulah tempat [implied odds](/id/blog/holdem-implied-odds "thumb:/images/holdem-implied-odds-hero.webp") (uang yang akan Anda menangkan nanti) dan realisasi equity (di bawah) berperan. Equity adalah tempat matematika *dimulai*, bukan tempat ia berakhir.
 
@@ -100,9 +101,9 @@ Mereka call dan Anda kena → Anda menang | Anda kena → Anda menang
 ==g:Dua cara menang== | ==r:Satu cara menang==
 :::
 
-Untuk ==bluff murni== tanpa peluang membaik, titik impasnya sederhana: Anda butuh lawan fold cukup sering untuk menutupi risiko. Bertaruh $50 ke pot $100, tingkat fold impas Anda adalah ==bet ÷ (pot + bet) = 50 ÷ 150 = 33%==. Jika mereka fold lebih dari sepertiga waktu, bertaruh menguntungkan — bahkan dengan tangan terburuk di meja.
+Untuk ==bluff murni== tanpa peluang membaik, titik impasnya sederhana: Anda butuh lawan fold cukup sering untuk menutupi risiko. Bertaruh $50 ke pot $100, tingkat fold impas Anda adalah ==bet ÷ (pot + bet) = 50 ÷ 150 = 33%==. Jika mereka fold lebih dari sepertiga kesempatan, bertaruh menguntungkan — bahkan dengan tangan terburuk di meja.
 
-Sekarang tambahkan draw, dan jadi jauh lebih baik. Ini gambaran penuhnya sebagai ==g:semi-bluff==: pot $100, Anda bertaruh $50 dengan flush draw, lawan fold 40% waktu, dan saat mereka call Anda masih punya 35% equity untuk kena di river.
+Sekarang tambahkan draw, dan jadi jauh lebih baik. Ini gambaran penuhnya sebagai ==g:semi-bluff==: pot $100, Anda bertaruh $50 dengan flush draw, lawan fold 40% dari waktu, dan saat mereka call Anda masih punya 35% equity untuk kena hingga river.
 
 :::note
 EV = (fold% × pot) + (call% × [equity × (pot + bet) − (miss% × bet)])
@@ -118,7 +119,7 @@ Bertaruh flush draw itu bernilai ==+$52== dibanding check-fold — dan sebagian 
 
 **Realisasi equity adalah seberapa banyak equity mentah Anda yang benar-benar Anda kumpulkan — dan biasanya kurang dari 100%, karena posisi dan taruhan menguras Anda.** "40% untuk menang" Anda mengasumsikan Anda selalu mencapai showdown; kenyataannya Anda dipaksa lepas draw, terpaksa fold, dan didorong-dorong saat out of position. Yang Anda simpan adalah:
 
-==b:Realized equity = raw equity × realization%==
+==b:Equity terealisasi = equity mentah × % realisasi==
 
 Tangan dengan 40% equity mentah yang hanya merealisasi 75%-nya sebenarnya bernilai ==0,75 × 40% = 30%==. Itulah kenapa Anda bisa "unggul atas range lawan" namun tetap kehilangan uang — Anda tak pernah sempat mencairkan potongan penuh.
 
@@ -126,7 +127,7 @@ Yang menggerakkan realisasi Anda naik atau turun:
 
 :::card
 🪑 | Posisi | In position Anda merealisasi *lebih* dari equity mentah (Anda dapat kartu gratis, mengontrol pot); out of position Anda merealisasi lebih sedikit. Ini faktor terbesar
-🎯 | Playability | Suited connector dan tangan yang mem-flop draw merealisasi dengan baik; clunker offsuit merealisasi buruk bahkan dengan equity mentah lumayan
+🎯 | Playability | Suited connector dan tangan yang mem-flop draw merealisasi dengan baik; tangan offsuit lemah realisasinya buruk bahkan dengan equity mentah lumayan
 📚 | Kedalaman stack & skill | Stack lebih dalam dan lawan lebih tangguh membuat equity marjinal lebih sulit direalisasi
 :::
 
@@ -140,13 +141,13 @@ Ini adalah ide terpenting yang sebagian besar panduan pemula tinggalkan, dan ini
 
 Inilah kenapa equity all-in preflop begitu penting: AA all-in melawan KK menyimpan penuh ==82%==-nya — tanpa pajak realisasi, tanpa fold equity, hanya angka mentah yang terjadi. Ini juga kenapa "coin flip" (22 vs AK di ~52/48) adalah adu untung-untungan yang benar-benar dekat saat all-in, meski dua tangan sama yang dimainkan postflop akan menyimpang liar tergantung board dan siapa yang punya posisi.
 
-All-in adalah satu-satunya titik di poker di mana kue dipotong persis seperti kata matematika — yang menjadi daya tariknya sekaligus bahayanya.
+All-in adalah satu-satunya titik di poker saat kue dipotong persis seperti kata matematika — yang menjadi daya tariknya sekaligus bahayanya.
 
 ---
 
 ## Equity Multiway: Kenapa Tangan Besar Anda Menyusut Melawan Banyak Orang
 
-**Equity Anda turun cepat di pot multiway, karena kue 100% yang sama kini terbagi di antara lebih banyak tangan.** Pocket aces sekitar 85% head-up, tapi melawan tiga lawan itu meluncur ke ==r:~64%==, dan melawan empat ke ~56% — masih tangan terbaik, tapi tak lagi sekejam yang terasa. Bertiga, equity *rata-rata* 33% menurut definisi, karena tiga pemain membagi satu pot.
+**Equity Anda turun cepat di pot multiway, karena kue 100% yang sama kini terbagi di antara lebih banyak tangan.** Pocket aces sekitar 85% heads-up, tapi melawan tiga lawan itu meluncur ke ==r:~64%==, dan melawan empat ke ~56% — masih tangan terbaik, tapi tak lagi sekejam yang terasa. Bertiga, equity *rata-rata* 33% menurut definisi, karena tiga pemain membagi satu pot.
 
 ![Infografik board Q♣ 9♥ 5♦ 3♠ J♦ yang menunjukkan bagaimana setiap pemain tambahan di pot memotong equity setiap tangan](/images/holdem-equity-multiway.webp "Makin banyak pemain yang masih di pot, makin kecil potongan semua orang — bahkan pocket aces")
 
@@ -155,7 +156,7 @@ Dua hal jadi lebih buruk di multiway, bukan hanya bagian mentah Anda:
 - **Fold equity runtuh.** Untuk memenangkan pot dengan taruhan, kini *semua orang* harus fold — jauh lebih kecil kemungkinannya dengan tiga lawan daripada satu. Bluff dan semi-bluff tipis kehilangan nilai dengan cepat.
 - **Realisasi turun.** Lebih banyak pemain yang masih akan beraksi berarti lebih banyak cara ter-outdraw atau dipaksa lepas tangan, jadi Anda merealisasi bahkan lebih sedikit dari potongan yang sudah lebih kecil.
 
-Kesimpulan praktisnya: tangan yang menginginkan pot multiway adalah yang membuat nuts (set, suited aces untuk nut flush), bukan pair besar yang bermain terbaik head-up. Saat lapangan besar, ketatkan ke arah tangan yang equity-nya bertahan saat kue dipotong lima cara.
+Kesimpulan praktisnya: tangan yang menginginkan pot multiway adalah yang membuat nuts (set, suited aces untuk nut flush), bukan pair besar yang bermain terbaik heads-up. Saat banyak pemain ikut, ketatkan ke arah tangan yang equity-nya bertahan saat kue dibagi lima.
 
 ---
 
@@ -165,12 +166,12 @@ Kesimpulan praktisnya: tangan yang menginginkan pot multiway adalah yang membuat
 
 :::steps
 Perkirakan equity mentah | Outs × 4 atau × 2 untuk draw; ingat matchup saat preflop
-Diskon untuk realisasi | Out of position atau sulit dimainkan? Pangkas — 40% mentah bisa jadi 30% nyata
+Kurangi untuk realisasi | Out of position atau sulit dimainkan? Pangkas — 40% mentah bisa jadi 30% nyata
 Tambahkan fold equity | Jika Anda bertaruh, seberapa sering villain fold? Itu equity tambahan yang tak dimiliki tangan Anda sendiri
 Bandingkan dengan harga | Realized equity + fold equity vs pot odds Anda → call, bet, atau fold
 :::
 
-Malam yang saya sebut di awal, saya melakukan langkah satu lalu berhenti — menghitung equity mentah saya dan mengabaikan bahwa out of position, melawan pemain bagus, saya tak akan pernah merealisasikannya. Begitu saya mulai mendiskon untuk posisi dan memikirkan fold *mereka* alih-alih hanya kartu saya, kebocorannya tertutup. Equity bukan angka yang Anda cari; ia adalah lensa yang Anda jalankan pada setiap keputusan.
+Malam yang saya sebut di awal, saya melakukan langkah satu lalu berhenti — menghitung equity mentah saya dan mengabaikan bahwa out of position, melawan pemain bagus, saya tak akan pernah merealisasikannya. Begitu saya mulai mengurangi untuk posisi dan memikirkan fold *mereka* alih-alih hanya kartu saya, kebocorannya tertutup. Equity bukan angka yang Anda cari; ia adalah lensa yang Anda jalankan pada setiap keputusan.
 
 ---
 
@@ -187,7 +188,7 @@ A. Equity adalah bagian Anda dari pot — porsi yang rata-rata jatuh ke tangan A
 
 **Q. Bagaimana cara menghitung equity di poker?**
 
-A. Untuk draw, gunakan Rule of 4 dan 2: kalikan outs Anda dengan 4 di flop (dua kartu tersisa) atau dengan 2 di turn. Sembilan flush outs ≈ 36% di flop. Preflop, hafalkan matchup umum (AA vs KK adalah 82/18). Untuk angka persis, pemain memakai kalkulator equity di luar meja untuk belajar — Anda memperkirakan saat bermain.
+A. Untuk draw, gunakan Rule of 4 and 2: kalikan outs Anda dengan 4 di flop (dua kartu tersisa) atau dengan 2 di turn. Sembilan flush outs ≈ 36% di flop. Preflop, hafalkan matchup umum (AA vs KK adalah 82/18). Untuk angka persis, pemain memakai kalkulator equity di luar meja untuk belajar — Anda memperkirakan saat bermain.
 
 **Q. Apa perbedaan antara equity dan pot odds?**
 
@@ -195,7 +196,11 @@ A. Equity adalah bagian Anda dari pot (apa yang Anda miliki); pot odds adalah eq
 
 **Q. Apakah equity 50% bagus di poker?**
 
-A. Tak baik atau buruk dengan sendirinya — 50% adalah coin flip. Apakah ini call tergantung harga: melawan taruhan setengah pot Anda hanya butuh 25%, jadi 50% adalah call besar; tapi mempertaruhkan seluruh stack sebagai underdog 50/50 demi apa-apa adalah judi, bukan keunggulan. Equity hanya bermakna di samping pot odds.
+A. Tak baik atau buruk dengan sendirinya — 50% adalah coin flip. Apakah ini call tergantung harga: melawan taruhan setengah pot Anda hanya butuh 25%, jadi 50% adalah call besar; tapi mempertaruhkan seluruh stack pada coin flip 50/50 tanpa nilai tambah apa pun adalah judi, bukan keunggulan. Equity hanya bermakna di samping pot odds.
+
+**Q. Apa arti equity 20%?**
+
+A. Artinya seperlima pot menjadi milik tangan Anda dalam jangka panjang — jadi di pot $100 bagian Anda bernilai kira-kira $20. Apakah 20% layak call tergantung harganya: melawan taruhan seperempat pot Anda butuh sekitar 17%, jadi 20% cukup; melawan taruhan setengah pot (butuh 25%) itu fold. Angka equity apa pun baru bermakna saat disandingkan dengan pot odds.
 
 **Q. Berapa fold equity yang saya butuhkan untuk bluff menguntungkan?**
 
@@ -203,7 +208,7 @@ A. Untuk bluff murni, Anda butuh lawan fold setidaknya bet ÷ (pot + bet) dari w
 
 **Q. Apa itu realisasi equity?**
 
-A. Realisasi equity adalah seberapa banyak equity mentah Anda yang benar-benar Anda kumpulkan. Realized equity = raw equity × realization%. Tangan dengan 40% equity mentah yang merealisasi 75% sebenarnya bernilai 30%. Posisi adalah pendorong terbesar — in position Anda merealisasi lebih, out of position lebih sedikit — itulah kenapa tangan yang sama lebih bernilai di button daripada di blind.
+A. Realisasi equity adalah seberapa banyak equity mentah Anda yang benar-benar Anda kumpulkan. Equity terealisasi = equity mentah × % realisasi. Tangan dengan 40% equity mentah yang merealisasi 75% sebenarnya bernilai 30%. Posisi adalah pendorong terbesar — in position Anda merealisasi lebih, out of position lebih sedikit — itulah kenapa tangan yang sama lebih bernilai di button daripada di blind.
 
 **Q. Apa itu equity all-in?**
 
@@ -211,7 +216,15 @@ A. Equity all-in hanyalah equity mentah Anda — bagian Anda dari pot, dengan po
 
 **Q. Kenapa equity saya turun di pot multiway?**
 
-A. Karena pot 100% yang sama kini terbagi di antara lebih banyak tangan — pocket aces di ~85% head-up jatuh ke ~64% melawan tiga pemain dan ~56% melawan empat. Multiway juga memangkas fold equity Anda (semua orang harus fold, bukan hanya satu pemain) dan realisasi Anda (lebih banyak pemain berarti lebih banyak cara ter-outdraw), jadi bagian mentah Anda dan apa yang Anda simpan darinya sama-sama menyusut.
+A. Karena pot 100% yang sama kini terbagi di antara lebih banyak tangan — pocket aces di ~85% heads-up jatuh ke ~64% melawan tiga pemain dan ~56% melawan empat. Multiway juga memangkas fold equity Anda (semua orang harus fold, bukan hanya satu pemain) dan realisasi Anda (lebih banyak pemain berarti lebih banyak cara ter-outdraw), jadi bagian mentah Anda dan apa yang Anda simpan darinya sama-sama menyusut.
+
+**Q. Apa itu EV (expected value) di poker?**
+
+A. Expected value adalah rata-rata jumlah yang Anda menangkan atau kalahkan dari sebuah keputusan dalam jangka panjang. Permainan yang rata-rata menghasilkan lebih dari nol adalah +EV (menguntungkan); kurang dari nol berarti −EV (merugi); nol berarti impas. Poker yang menang sesederhana memilih aksi +EV dan mem-fold yang −EV — setiap taruhan, call, dan fold punya EV, bahkan saat Anda tak bisa melihat angkanya persis.
+
+**Q. Apa beda equity dan EV?**
+
+A. Equity adalah bagian Anda dari pot *ini* jika tangan dimainkan sampai selesai (sebuah persentase); EV adalah apakah *bertindak* atas equity itu benar-benar menghasilkan uang (sebuah jumlah, dalam chip). Anda bisa memegang equity tinggi tapi tetap membuat call −EV jika harganya salah, atau memegang equity rendah tapi membuat bluff +EV jika lawan cukup sering fold. Equity memberi tahu posisi Anda; EV memberi tahu apakah keputusannya profit.
 
 ---
 
@@ -230,7 +243,7 @@ Kuasai ini dan sisa matematika poker jatuh pada tempatnya. Dari sini, ubah equit
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/id/blog/holdem-probability" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Odds & Matematika</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Chart Odds & Probabilitas Poker</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Bagan Peluang & Probabilitas Poker</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Persen menang mentah di balik setiap tangan</div>
   </a>
   <a href="/id/blog/holdem-pot-odds" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
