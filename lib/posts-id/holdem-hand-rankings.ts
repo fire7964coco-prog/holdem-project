@@ -2,31 +2,33 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "holdem-hand-rankings",
-  title: "Peringkat tangan poker di Texas Hold'em — dari terkuat ke terlemah, lengkap dengan peluang",
-  seoTitle: "Mengira menang tapi kalah pot? — Peringkat tangan poker",
-  desc: "Sudah dapat flush tapi tetap kalah pot? Inilah 10 tangan poker dari terkuat ke terlemah, peluang nyata tiap tangan, dan bagaimana kicker menentukan pemenang.",
-  tldr: "Peringkat tangan poker dari terkuat ke terlemah adalah: Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, Pair, dan High Card.",
+  title: "Urutan kartu poker dari tertinggi sampai terendah — 10 kombinasi, peluang, dan kicker",
+  seoTitle: "Kira menang, ternyata kalah? — Urutan Kartu Poker Tertinggi",
+  desc: "Sudah dapat flush tapi tetap kalah? Ini urutan kartu poker dari tertinggi sampai terendah — 10 kombinasi, peluang nyata, aturan kicker, dan cara membacanya.",
+  tldr: "Urutan kartu poker dari tertinggi sampai terendah: Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, Pair, dan High Card. As adalah kartu tertinggi; simbol (sekop, hati) tidak punya peringkat.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-08-12",
+  updated: "2026-08-27",
 
   masterUpdated: "2026-08-12",
+  image: "/images/holdem-hand-rankings-hero.webp",
+  imageAlt: "Royal Flush — 10 J Q K A sekop di meja poker dengan tumpukan chip dan tombol dealer",
   keepImagesInBody: true,
   readTime: "14 mnt",
   emoji: "🃏",
-  tags: ["tangan poker", "peringkat tangan poker", "urutan kartu poker", "tangan texas holdem", "tangan mana yang menang poker", "kicker poker", "aturan seri poker", "tangan poker terbaik"],
+  tags: ["urutan kartu poker", "urutan kartu poker tertinggi", "susunan kartu poker", "kombinasi kartu poker", "urutan kartu remi poker", "kartu poker tertinggi", "peringkat kartu poker", "urutan kartu poker dari tertinggi sampai terendah"],
   content: `
-Anda head-up di river. Flush Anda jadi, Anda yakin itu yang terbaik — lalu dealer mendorong pot ke sisi lawan. Meja sudah berpasangan, lawan punya full house, dan Anda sama sekali tak menyangka.
+Anda heads-up di river. Flush Anda jadi, Anda yakin itu yang terbaik — lalu dealer mendorong pot ke sisi lawan. Meja sudah berpasangan, lawan punya full house, dan Anda sama sekali tak menyangka.
 
-Hampir setiap momen "saya kira menang" berujung pada hal yang sama: tidak membaca **peringkat tangan poker** cukup cepat. Urutannya bisa dihafal dalam lima menit. Yang sulit adalah membacanya langsung, di bawah tekanan, dengan meja yang berpasangan atau terhubung — dan itu jarang dijelaskan dengan baik.
+Hampir setiap momen "saya kira menang" berujung pada hal yang sama: tidak membaca **urutan kartu poker** cukup cepat. Urutannya bisa dihafal dalam lima menit. Yang sulit adalah membacanya langsung, di bawah tekanan, dengan meja yang berpasangan atau terhubung — dan itu jarang dijelaskan dengan baik.
 
 Panduan ini menyelesaikan keduanya. Anda akan mendapat urutan lengkap dengan peluang nyata, semua aturan seri, tiga soal meja sungguhan untuk melatih "temukan lima kartu terbaikmu", dan rutinitas 1 detik untuk membaca meja apa pun.
 
 ---
 
-## Peringkat tangan poker: urutan lengkap
+## Urutan kartu poker dari tertinggi sampai terendah
 
-Mulai dari sini. Inilah seluruh peringkat, dari terkuat ke terlemah, dengan peluang kira-kira menjadikan tiap tangan hingga river di Texas Hold'em.
+Mulai dari sini. Inilah urutan kartu poker lengkap — susunan (kombinasi) dari tertinggi sampai terendah, dengan peluang kira-kira menjadikan tiap tangan hingga river di Texas Hold'em.
 
 | # | Tangan | Disebut juga | Apa itu | Peluang (hingga river) |
 |------|------|------|------|------|
@@ -56,7 +58,7 @@ Sebelum tangan, Anda butuh kekuatan kartu. Hanya dua hal.
 
 **A > K > Q > J > 10 > 9 > 8 > 7 > 6 > 5 > 4 > 3 > 2**
 
-As adalah kartu terkuat sekaligus satu-satunya yang melanggar aturan: bisa main tinggi (A-K-Q-J-10) dan rendah (A-2-3-4-5, "the wheel"). Tapi tidak bisa berputar lewat tengah: Q-K-A-2-3 **bukan** straight.
+As adalah kartu tertinggi di poker sekaligus satu-satunya yang melanggar aturan: bisa main tinggi (A-K-Q-J-10) dan rendah (A-2-3-4-5, "the wheel"). Tapi tidak bisa berputar lewat tengah: Q-K-A-2-3 **bukan** straight.
 
 ### Jenis kartu tidak punya nilai
 
@@ -148,7 +150,7 @@ Dibandingkan dengan urutan ini: **pasangan tinggi → pasangan rendah → kicker
 
 **K♠ K♦ 9♥ 6♣ 2♠** — dua kartu bernilai sama.
 
-Tangan jadi paling umum di Hold'em. Dua pasangan yang sama ditentukan kicker: **nilai pasangan → kicker 1 → kicker 2 → kicker 3**, dari tinggi ke rendah. Di sinilah sebagian besar kekalahan "tangan yang sama" terjadi: jaga kicker Anda.
+Inilah tangan jadi yang paling umum di Hold'em. Dua pasangan yang sama ditentukan kicker: **nilai pasangan → kicker 1 → kicker 2 → kicker 3**, dari tinggi ke rendah. Di sinilah sebagian besar kekalahan "tangan yang sama" terjadi: jaga kicker Anda.
 
 ### #10 — High Card
 
@@ -191,6 +193,8 @@ Sebuah **kicker** hanyalah kartu yang bukan bagian dari tangan jadi tapi memecah
 ---
 
 ## Baca meja: 3 soal nyata
+
+![Meja K-K-K-A-2 di meja poker — bisakah Anda menemukan full house sebelum dealer?](/images/holdem-hand-rankings-board-puzzle.webp "Soal membaca meja poker — temukan lima kartu terbaik Anda")
 
 Tahu urutan tidak sama dengan membacanya cepat. Berikut tiga situasi nyata. Tutup jawabannya, temukan lima kartu terbaik dari tujuh, lalu cek.
 
@@ -244,6 +248,8 @@ Ia juga menjelaskan pengecualian besar yang akan Anda temui: di **Short Deck (6+
 
 ## Rutinitas 1 detik membaca meja
 
+![Infografik meja komunitas berpasangan 9♥ Q♥ 9♠ 8♣ 7♠ — membaca pasangan dan kemungkinan straight untuk menemukan lima kartu terbaik](/images/holdem-hand-rankings-board-read.webp "Cara membaca meja poker dengan cepat — jenis, straight, pasangan berurutan")
+
 Saat waktu mepet, periksa ini berurutan setiap meja lengkap:
 
 **1. Jenis dulu** — apakah ada tiga kartu atau lebih satu jenis di meja? Jika ya, flush mungkin. Lihat jenis Anda.
@@ -264,7 +270,7 @@ Pemain terlatih membaca meja dengan urutan ini — bahaya dulu (flush/straight d
 | **2** | Latih hanya duel membingungkan: flush vs straight, full house vs flush | 3 hari |
 | **3** | Tonton stream poker dan sebutkan pemenang sebelum dealer | 1-2 minggu |
 
-Mengelompokkan dulu mencegah urutan terasa seperti sepuluh hal acak. Duel membingungkan di langkah 2 menyebabkan 90% kesalahan pemula, jadi perbanyak latihannya.
+Mengelompokkan dulu membuat urutannya tidak terasa seperti sepuluh hal acak. Duel membingungkan di langkah 2 menyebabkan 90% kesalahan pemula, jadi perbanyak latihannya.
 
 ---
 
@@ -283,8 +289,8 @@ Intinya: pelajari urutan standar sekali dan ia berlaku di hampir semua permainan
 
 ---
 
-:::readnext[Lanjut baca]
-/id/blog/holdem-flush-vs-straight | Apakah Flush Menang atas Straight? | /images/holdem-flush-vs-straight-hero.webp
+:::readnext[Lanjut membaca]
+/id/blog/holdem-flush-vs-straight | Apakah Flush Mengalahkan Straight? | /images/holdem-flush-vs-straight-hero.webp
 /id/blog/holdem-tiebreak-rules | Aturan Kicker & Pemecah Seri | /images/holdem-tiebreak-hero.webp
 :::
 
@@ -292,11 +298,11 @@ Intinya: pelajari urutan standar sekali dan ia berlaku di hampir semua permainan
 
 **Q. Apakah flush menang atas straight di poker?**
 
-A. Ya. Flush adalah #5 dan straight #6, jadi flush selalu menang — lihat [kenapa flush menang atas straight](/id/blog/holdem-flush-vs-straight). Ia lebih tinggi karena lima kartu satu jenis lebih sulit dibentuk daripada lima berurutan.
+A. Ya. Flush adalah #5 dan straight #6, jadi flush selalu menang — lihat [kenapa flush mengalahkan straight](/id/blog/holdem-flush-vs-straight). Alasannya: lima kartu satu jenis lebih sulit dibentuk daripada lima berurutan.
 
 **Q. Apakah full house menang atas flush?**
 
-A. Ya. Full house (#4) menang atas flush (#5) dan straight. Ia hanya kalah dari four of a kind, straight flush, dan royal flush.
+A. Ya. Full house (#4) menang atas flush (#5) dan straight. Full house hanya kalah dari four of a kind, straight flush, dan royal flush.
 
 **Q. Apa itu kicker?**
 
@@ -322,6 +328,22 @@ A. Royal Flush (A-K-Q-J-10 satu jenis). Tak bisa dikalahkan — satu-satunya "se
 
 A. Ya. Three of a kind adalah #7 dan two pair #8, jadi three of a kind menang. Two pair hanya menang atas pair dan high card.
 
+**Q. Apakah ada "super royal flush" di poker?**
+
+A. Tidak ada dalam urutan kartu poker standar — termasuk aturan yang dipakai turnamen resmi seperti WSOP: tangan tertinggi adalah royal flush (A-K-Q-J-10 satu jenis). Jika Anda menemukan istilah "super royal flush", itu bukan kategori tangan dalam Texas Hold'em standar.
+
+**Q. Apakah urutan kartu remi sama dengan urutan kartu poker?**
+
+A. Untuk nilai tiap kartu, ya — poker dimainkan dengan dek remi standar 52 kartu, urutannya 2 terendah sampai As tertinggi. Bedanya, di poker yang menentukan menang adalah kombinasi lima kartu (tabel di atas), bukan kartu satu per satu — dan simbolnya tidak punya peringkat.
+
+**Q. Apa kartu tertinggi di poker?**
+
+A. As. Nilai kartu berurut 2-3-4-5-6-7-8-9-10-J-Q-K-A, dengan As di puncak. As juga satu-satunya kartu yang bisa main rendah, sebagai "1" dalam straight A-2-3-4-5 (the wheel) — dan the wheel adalah straight terendah, bukan tertinggi.
+
+**Q. Apa urutan simbol (lambang) kartu poker?**
+
+A. Tidak ada. Simbol — di artikel ini disebut jenis kartu — tidak punya urutan di Texas Hold'em: sekop tidak mengalahkan hati, dan simbol hanya berperan saat membentuk flush. Dua tangan yang nilainya sama persis membagi pot, apa pun simbolnya.
+
 ---
 
 ## 3 hal yang harus diingat
@@ -341,7 +363,7 @@ Setelah tahu peringkatnya, langkah alami berikutnya adalah tahu tangan mana yang
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/id/blog/holdem-flush-vs-straight" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Duel Tangan</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Apakah Flush Menang atas Straight?</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Apakah Flush Mengalahkan Straight?</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Matematikanya, salah baca, dan semua aturan seri</div>
   </a>
   <a href="/id/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
@@ -365,7 +387,7 @@ Setelah tahu peringkatnya, langkah alami berikutnya adalah tahu tangan mana yang
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Kartu awal mana yang dimainkan dari UTG sampai button</div>
   </a>
   <a href="/id/blog/holdem-reading-the-board" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Baca Meja</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Baca Board</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Cara Membaca Board di Hold'em</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Temukan 5 kartu terbaik dari 7 — board basah vs kering</div>
   </a>

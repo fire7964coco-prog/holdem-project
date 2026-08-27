@@ -1,13 +1,17 @@
-# id 코어 볼륨 실측 — rules·rankings 축 (라쿠 단일 벤더)
+# id 코어 볼륨 실측 — rules·rankings 축
 
-> 실측 2026-08-27 · 라쿠 search-volume-history · **location=Indonesia · language=Indonesian ·
-> 집계 12개월** · requestId **1258288**(배치 1 · 22종) + **1258295**(배치 2 · 29종 — rules 소급용)
+> 실측 2026-08-27 · 라쿠 search-volume-history · **location=Indonesia · language=Indonesian** ·
+> requestId **1258288**(배치 1 · 22종 · 12m) + **1258295**(배치 2 · 29종 — rules 소급용 · 12m) +
+> **1258342**(배치 3 · 44종 — rankings 클러스터 · 48m)
 >
-> ⚠ **단일 벤더다.** DataForSEO 인증 만료(40100 — fr 뱅크와 동일 상태)로 교차검증·SD 미실시.
-> DFS 복구 시 헤드텀 4종(cara main poker·urutan kartu poker·kartu poker·texas holdem) 교차검증
-> + Indonesia SERP 실측을 얹을 것. 🔴 CPC는 벤더 간 30배 규칙대로 근거 금지(여기도 기록 안 함).
-> ⚠ 라쿠 발굴계 22종은 Japan 고정이라 id **발굴**은 구글 자동완성(hl=id&gl=id) 실측으로 대체한다
-> (세션 4 선례 — «kartu remi»·«tongkrongan» 발굴 경로).
+> ✅ **교차검증 완료(2026-08-27 세션 5)** — DataForSEO REST(google_ads search_volume ·
+> location=Indonesia · language=id)로 15종 재실측: 라쿠와 **전 항목 일치**(cara main poker 4.400 ·
+> urutan kartu poker 1.900 · kartu poker 27.100 · texas holdem 2.400 · tertinggi 1.300 ·
+> susunan/kombinasi 각 320). 배치 1~2의 단일 벤더 경고는 해소. 🔴 CPC는 벤더 간 30배 규칙대로
+> 근거 금지(여기도 기록 안 함). ⚠ DFS MCP는 40100 지속(프로세스가 env 등록 전에 뜸) — REST 직접
+> 경로 유효(settled-decisions §6).
+> ⚠ 라쿠 발굴계 22종은 Japan 고정이라 id **발굴**은 DFS Labs `keyword_suggestions`(location=
+> Indonesia·kd 동봉) + 구글 자동완성(hl=id) 실측으로 한다(세션 4~5 선례).
 
 ## 실측표 (월평균 · 12m 증감률)
 
@@ -53,6 +57,50 @@
 > (제목 축 전환 + 태그 재편 + FAQ 1신설 + 표현 2삽입). 나머지 5편(betting·blind·all-in·showdown·
 > game-order)은 **측정 가능한 id 축이 전부 ≤50·null·영어 의도**라 변경 근거 없음 — 저볼륨 흡수
 > 전략이 데이터로 재확인됐다. 이건 «안 했다»가 아니라 «측정하고 안 하기로 판정했다»다.
+
+## 배치 3 (2026-08-27 · 세션 5 rankings 클러스터 — DFS Labs 발굴 + 라쿠 44종 실측 · 48m)
+
+> 발굴 = DFS Labs `keyword_suggestions`(시드 urutan kartu poker·kartu remi·flush poker·
+> kartu poker tertinggi·poker seri·kicker poker) + 자동완성(hl=id). kd = DFS keyword_difficulty.
+
+### hand-rankings 조준축 (합산 ~6k · 전반 성장)
+
+| 키워드 | 볼륨 | 12m | kd | 판정 |
+|---|--:|--:|--:|---|
+| **urutan kartu poker** | 1.900 | +19% | 19 | 헤드텀 — title·seoTitle·H2 1순위 |
+| **urutan kartu poker tertinggi** | 1.300 | +41%↑ | 14 | yoy3y +222% 지속 성장 — 직답 자리 필수 |
+| **urutan kartu remi** | 1.600 | −6% | 8 | ⚠ 광의(remi 덱 일반) — 단독 조준 대신 FAQ 흡수. «urutan kartu remi poker» 140(+46%)이 포커 명시형 |
+| urutan kartu remi tertinggi | 1.300 | +6% | 8 | 〃 같은 계열 |
+| **urutan kartu poker dari tertinggi sampai terendah** | 480 | **+50%↑** | 20 | 질문 원문형 — H2/직답으로 흡수 |
+| susunan kartu poker | 320 | +44%↑ | — | 동의어 병기 |
+| kombinasi kartu poker | 320 | +34%↑ | — | 〃 (본문 기존재) |
+| kartu poker tertinggi | 210 | +90%↑ | 15 | «kartu tertinggi di poker» 210(12m +116% · yoy1y +586%↑↑)와 한 질문축 — As 직답 FAQ |
+| urutan kartu remi tertinggi sampai terendah | 110 | **+244%↑↑** | — | 2025-11 신생 급성장 |
+| **urutan kartu poker super royal flush** | 90 | +76%↑ | — | 🔴 **비표준 용어**(로컬 카드게임 유래 — 표준 포커에 없음). 신화격파 FAQ 자리 — 사실 왜곡 없이 «표준 족보엔 없다» 직답 |
+| urutan lambang kartu poker / simbol | 40 / 20 | 신생 | — | 무늬 서열 질문 — §13 «무늬 서열 없음» FAQ 정합 |
+| urutan kartu poker texas / holdem / terkuat | 70/20/20 | 혼조 | — | 기존 커버리지로 충분 |
+
+### flush-vs-straight 조준축
+
+| 키워드 | 볼륨 | 12m | 판정 |
+|---|--:|--:|---|
+| poker flush / flush poker | 720 | +23% | 조준 확인 — 태그·H2 |
+| **royal flush** | 2.400 | +17% | 영어 일반어지만 자동완성 의도 포커 우세(adalah·vs quad aces·chance). 단독 글 금지 — flush 글 커버리지로 |
+| straight poker | 390 | +6% | 〃 |
+| royal flush adalah / artinya | 260↓ / 170↑ | −81% / +54% | adalah→artinya로 표현 이동 중 — FAQ 표현에 artinya 채택 |
+| straight flush poker / artinya | 90 / 70 | +19% / +39% | FAQ 커버 |
+| flush dalam poker · apa itu flush poker | 각 40 | +65%/+36% | 질문 직답 자리 |
+| poker flush vs straight | 10 | — | slug 그 자체 — 저볼륨이나 의도 정확 |
+
+### 저볼륨·함정 판정
+
+- **kicker poker 10 · split pot poker 10 · cara membaca kartu poker 10 · poker 4 kartu sama null**
+  → kicker·tiebreak·split-pot·reading-the-board 4편은 **id 검색축이 없다 = 흡수 전략 유지.**
+  볼륨 재조준 대신 **드리프트 소급 + EN 경화분 현지화 이식**이 이 4편의 본체다.
+- 🔴 **full house 22.200 = 자릿수 함정** — 자동완성 상위가 한국 드라마(korea·drakor·OST). 채택 금지.
+  «full house poker» 1.000(+30%)은 Xbox 게임 동명 혼재 — 태그 채택 보류, 본문 커버리지로만.
+- «seri poker» 90(하락·−18%) = 영어 «poker series» 의도 지배(자동완성 실측) — split-pot에 쓰지 마라.
+- «apa itu kicker» 자동완성 = 비포커(roblox·bullish kicker) — kicker 글 제목에 단독 사용 금지.
 
 ## 세션 5~9에 주는 결론
 

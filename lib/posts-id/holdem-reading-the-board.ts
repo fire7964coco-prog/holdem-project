@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Di Texas Hold'em Anda selalu memainkan tangan 5-kartu terbaik dari 7 (2 kartu tertutup + 5 kartu komunitas) — memakai kedua kartu tertutup, satu, atau tak satu pun (main dengan board). Pindai ketujuh kartu dengan urutan tetap: flush → straight → nilai berpasangan → kartu tinggi.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-08-11",
+  updated: "2026-08-27",
   masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "11 mnt",
@@ -40,7 +40,7 @@ Pertama kali seorang dealer membaca tangan saya lebih baik daripada saya sendiri
 :::
 
 > **Jawaban cepat**
-> Tangan akhir Anda adalah ==kombinasi 5-kartu terbaik== yang bisa Anda bentuk dari 2 kartu tertutup ditambah 5 kartu komunitas. Anda boleh memakai kedua kartu tertutup, hanya satu, atau tak satu pun ("main dengan board"). Pindai ketujuh kartu dengan urutan tetap — flush, straight, nilai berpasangan, kartu tinggi — lalu tempatkan yang Anda temukan pada tangga [peringkat tangan poker](/id/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp").
+> Tangan akhir Anda adalah ==kombinasi 5-kartu terbaik== yang bisa Anda bentuk dari 2 kartu tertutup ditambah 5 kartu komunitas. Anda boleh memakai kedua kartu tertutup, hanya satu, atau tak satu pun ("main dengan board"). Pindai ketujuh kartu dengan urutan tetap — flush, straight, nilai berpasangan, kartu tinggi — lalu tempatkan yang Anda temukan pada tangga [urutan kartu poker](/id/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp").
 
 ---
 
@@ -110,7 +110,7 @@ Straight adalah 5 nilai berurutan. Metode yang andal: ==daftar ketujuh nilai dar
 
 Anda memegang 8♦ 6♣. Board: 7♥ 5♠ 4♣ K♦ 2♠. Nilai berurutan: K, 8, 7, 6, 5, 4, 2. Itu dia — ==8-7-6-5-4, straight eight high== — meski dua kartu tertutup Anda tampak seperti sampah kalau dilihat berdampingan.
 
-![Straight 8 high di Texas Hold'em — 7 kartu terbentang dengan 8-7-6-5-4 ditandai emas menunjukkan straight yang terbentuk](/images/holdem-reading-straight-example.webp)
+![Straight 8 high di Texas Hold'em — 7 kartu terbentang dengan 8-7-6-5-4 ditandai emas menunjukkan straight yang terbentuk](/images/holdem-reading-straight-example.webp "Straight tersembunyi: susun ketujuh nilai dan cari 5 berurutan")
 
 | Pegang | Board | Straight? |
 |------|-------|-----------|
@@ -139,7 +139,7 @@ Flush butuh 5 kartu satu jenis di antara 7 kartu Anda. Board langsung memberi ta
 | 4 | Siapa pun yang memegang cuma 1 kartu jenis itu punya flush |
 | 5 | Board itu sendiri sebuah flush — hanya kartu jenis itu yang lebih tinggi dari kartu terendah di board yang memperbaikinya |
 
-![BUKAN FLUSH — memegang A♠ dengan hanya 3 sekop di board tidak membentuk flush di Texas Hold'em](/images/holdem-reading-flush-draw-mistake.webp)
+![BUKAN FLUSH — memegang A♠ dengan hanya 3 sekop di board tidak membentuk flush di Texas Hold'em](/images/holdem-reading-flush-draw-mistake.webp "Empat kartu sejenis bukan flush — hitung sampai lima")
 
 ==r:Salah baca klasik: memegang A♠ 4♦ di board 2♠ 5♠ 9♥ J♥ 10♠ lalu menyebut flush.== Hitung: board punya tiga sekop (2♠ 5♠ 10♠), As Anda menjadikannya empat. ==Empat bukan lima.== Tangan Anda yang sebenarnya adalah ace high — A-J-10-9-5 — dan rasanya menyakitkan mengetahuinya setelah Anda call taruhan river.
 
@@ -201,7 +201,7 @@ Tak ada flush atau straight draw | Flush draw dan straight draw di mana-mana
 Top pair adalah tangan yang benar-benar kuat | Top pair rapuh — banyak river mengalahkannya
 :::
 
-![Dry board vs wet board di Texas Hold'em — K72 rainbow (dry) vs JT8 two-tone (wet) dengan panah flush dan straight draw](/images/holdem-reading-dry-vs-wet-board.webp)
+![Dry board vs wet board di Texas Hold'em — K72 rainbow (dry) vs JT8 two-tone (wet) dengan panah flush dan straight draw](/images/holdem-reading-dry-vs-wet-board.webp "Tekstur board: kering berarti aman, basah berarti banyak draw hidup")
 
 Di J♥ 10♥ 8♣, hati apa pun, 9 apa pun, 7 apa pun, dan Q apa pun mengubah siapa yang menang. Di K♠ 7♦ 2♣, hampir tak ada yang mengubahnya. ==Pair yang sama, tekanan yang sama sekali berbeda== — itu sebabnya kebiasaan urutan-pindai (flush → straight → pair) sekaligus jadi radar bahaya Anda.
 
@@ -238,6 +238,10 @@ Anda river sebuah flush, board menampilkan dua Q, dan Anda tak pernah bertanya. 
 
 A. Pindai ketujuh kartu (2 tertutup + 5 board) dengan urutan tetap: flush dulu (jenis apa pun 5+ kali), lalu straight (5 nilai berurutan), lalu nilai berpasangan (pair, trips, full house, quads). Ambil hal terkuat yang Anda temukan dan isi sampai tepat 5 kartu dengan kartu tersisa tertinggi. Anda boleh memakai kedua kartu tertutup, satu, atau tak satu pun.
 
+**Q. Apakah wajib memakai kedua kartu tertutup di Texas Hold'em?**
+
+A. Tidak. Anda membentuk tangan lima-kartu terbaik dari kombinasi mana pun antara dua kartu tertutup dan lima kartu komunitas — keduanya, hanya satu, atau tak satu pun. Memakai tak satu pun disebut "main dengan board". (Omaha kebalikannya: di sana wajib memakai tepat dua dari empat kartu tertutup.)
+
 **Q. Apa arti "main dengan board" di Texas Hold'em?**
 
 A. Artinya 5 kartu komunitas sudah jadi tangan 5-kartu terbaik Anda — tak ada kartu tertutup yang memperbaikinya. Karena board itu bersama, setiap pemain bisa mengklaim tangan yang sama, jadi main dengan board biasanya berujung pada split pot kecuali kartu tertutup lawan memperbaiki board. Satu formalitas tetap memakan pot: sekalipun Anda main dengan board, Anda **wajib membuka kedua kartu tertutup** untuk mendapat bagian (==WSOP Rule 75==, TDA Rule 19) — kalau didorong ke muck tanpa dibuka, Anda tidak dapat apa-apa.
@@ -262,6 +266,14 @@ A. Tidak. Rangkaian seperti K-A-2-3-4 atau Q-K-A-2-3 bukan straight di Texas Hol
 
 A. Hitung jenis di board. Dengan 0–2 kartu satu jenis, tak ada flush bagi siapa pun. Dengan 3, pemain butuh dua kartu jenis itu di tangan; dengan 4, cukup satu; dengan kelimanya, board itu sendiri adalah flush dan hanya kartu jenis itu yang lebih tinggi dari kartu terendah di board yang memperbaikinya.
 
+**Q. Jika ada flush di board, siapa yang menang?**
+
+A. Ketika lima kartu komunitas membentuk flush, semua pemain tersisa memilikinya bersama. Hanya kartu jenis itu yang lebih tinggi dari kartu terendah board yang memperbaikinya, jadi pemenangnya adalah siapa pun yang memegang kartu tertinggi seperti itu. Jika tak ada, semua orang main dengan board dan pot dibagi. (Dengan hanya tiga atau empat kartu sejenis di board, hanya pemain yang memegang kartu jenis itu yang benar-benar punya flush.)
+
+**Q. Jika ada straight di board, siapa yang menang?**
+
+A. Ketika lima kartu komunitas sudah membentuk straight, semua orang punya setidaknya straight itu — jadi siapa pun yang memperpanjangnya jadi straight lebih tinggi dengan kartu tertutup yang menang. Di board 5-6-7-8-9, pemain yang memegang 10 membentuk 6-7-8-9-10 dan mengalahkan board. Waspada begitu tiga kartu satu jenis ada di sana: lawan dengan dua kartu sejenis mengalahkan semua straight itu dengan flush. Jika tak ada yang bisa lebih tinggi, pot dibagi.
+
 **Q. Apakah pair di board dihitung sebagai bagian tangan Anda?**
 
 A. Ya — kartu komunitas milik tangan setiap pemain. Pair di board dihitung ke dalam 5 terbaik Anda bahkan jika kartu tertutup Anda meleset total. Itu juga berarti lawan bisa memegang trips atau full house, jadi evaluasi ulang tangan sepasang di paired board mana pun.
@@ -274,7 +286,7 @@ A. Ya — kartu komunitas milik tangan setiap pemain. Pair di board dihitung ke 
 2. **Pindai berurutan** — flush → straight → nilai berpasangan → kartu tinggi. Tangan yang Anda lewatkan adalah tangan yang jadi alasan pindaian ini ada.
 3. **Baca untuk semua orang** — board itu bersama, jadi pindaian yang sama mengungkap the nuts, bahayanya, dan apakah tangan Anda langit-langit atau lantai.
 
-Jika Anda masih mempelajari alur permainan itu sendiri, mulai dari [panduan aturan Texas Hold'em untuk pemula](/id/blog/texas-holdem-rules-for-beginners), lalu kunci tangganya dengan [peringkat tangan lengkap](/id/blog/holdem-hand-rankings).
+Jika Anda masih mempelajari alur permainan itu sendiri, mulai dari [panduan aturan Texas Hold'em untuk pemula](/id/blog/texas-holdem-rules-for-beginners), lalu kunci tangganya dengan [urutan kartu poker lengkap](/id/blog/holdem-hand-rankings).
 
 ---
 
@@ -283,7 +295,7 @@ Jika Anda masih mempelajari alur permainan itu sendiri, mulai dari [panduan atur
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/id/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Pillar</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Peringkat Tangan Texas Hold'em</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Urutan Kartu Poker Texas Hold'em</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Peringkat lengkap dari royal flush ke high card</div>
   </a>
   <a href="/id/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">

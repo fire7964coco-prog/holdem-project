@@ -3,20 +3,21 @@ import type { Post } from "../posts";
 export const POST: Post = {
   slug: "holdem-flush-vs-straight",
   title: "Apakah Flush Mengalahkan Straight? Matematika dan Salah Bacanya",
-  seoTitle: "Apakah Flush Mengalahkan Straight? Ya — dan Apa yang Mengalahkan Flush",
+  seoTitle: "Apakah Flush Mengalahkan Straight? Ya — Ini Alasannya",
   desc: "Menyodorkan straight lalu flush yang ambil pot? Flush selalu mengalahkan straight. Inilah matematikanya, apa yang mengalahkan flush, dan 3 meja pengecoh.",
   tldr: "Flush (lima kartu satu jenis — sekitar 0,197% dari pembagian lima kartu) selalu mengalahkan straight (lima kartu berurutan, sekitar 0,392%) di Texas Hold'em — karena flush lebih langka: sepanjang tujuh kartu sampai river, 3,03% berbanding 4,62% untuk straight.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-08-12",
+  updated: "2026-08-27",
+  masterUpdated: "2026-08-12",
   keepImagesInBody: true,
-  readTime: "11 min",
+  readTime: "11 mnt",
   emoji: "⚡",
   image: "/images/holdem-flush-vs-straight-hero.webp",
   imageAlt: "Infografik: flush ber-As A♠ J♠ 9♠ 6♠ 2♠ di samping straight nine-high dengan lencana emas FLUSH WINS yang menjelaskan kenapa flush berperingkat lebih tinggi",
-  tags: ["apakah flush mengalahkan straight", "flush vs straight", "apa yang mengalahkan flush", "apa itu straight flush", "kenapa flush mengalahkan straight", "flush vs full house", "flush lebih tinggi", "beda flush dan straight"],
+  tags: ["apakah flush mengalahkan straight", "flush vs straight", "flush poker", "straight poker", "apa yang mengalahkan flush", "apa itu straight flush", "kenapa flush mengalahkan straight", "flush vs full house"],
   content: `
-Pot besar pertama yang pernah saya kalahkan di cash game live berjalan persis begini: saya membentuk ten-high straight di river, menyodorkannya seolah itu emas — lalu seorang regular yang pendiam membuka dua hati. ==r:Dealer mendorong pot ke arah sebaliknya==, dan saya memutar ulang tangan itu sepanjang perjalanan pulang.
+Pot besar pertama yang pernah saya lepas di cash game live berjalan persis begini: saya membentuk ten-high straight di river, menyodorkannya seolah itu emas — lalu seorang regular yang pendiam membuka dua hati. ==r:Dealer mendorong pot ke arah sebaliknya==, dan saya memutar ulang tangan itu sepanjang perjalanan pulang.
 
 Kalau itu baru saja terjadi pada Anda, jawaban singkatnya adalah ==g:ya — flush mengalahkan straight, setiap kali tanpa terkecuali==. Bagian yang menariknya adalah *kenapa*, apa lagi yang mengalahkan flush, dan tiga situasi meja di mana pemain masih sering salah baca secara live di meja.
 
@@ -37,7 +38,7 @@ Flush > Straight | Tanpa pengecualian di Texas Hold'em standar
 
 ## Apakah Flush Mengalahkan Straight? Di Mana Kedua Tangan Ini Berada
 
-Ya — dan ini sama sekali bukan soal penilaian subjektif. ==Flush berada satu tingkat di atas straight, dan itu tak pernah berubah di Hold'em standar.== Inilah lingkungan di sekitar dua tangan yang paling sering dibingungkan orang:
+Ya — dan ini sama sekali bukan soal penilaian subjektif. ==Flush berada satu tingkat di atas straight, dan itu tak pernah berubah di Hold'em standar.== Inilah posisi dua tangan yang paling sering dibingungkan orang, beserta tangan tepat di atas dan di bawahnya:
 
 | Peringkat | Tangan | Contoh |
 |------|------|------|
@@ -47,7 +48,7 @@ Ya — dan ini sama sekali bukan soal penilaian subjektif. ==Flush berada satu t
 | **#6** | **Straight** | 9♣ 8♥ 7♦ 6♣ 5♠ |
 | #7 | Three of a Kind | Q♠ Q♥ Q♦ 7♠ 3♣ |
 
-Ingin melihat seluruh sepuluh tangan lengkap dengan peluang, contoh, dan soal meja? Semua itu ada di [panduan peringkat tangan poker lengkap](/id/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp") — artikel ini fokus pada duel flush-versus-straight dan tetangga terdekatnya.
+Ingin melihat seluruh sepuluh tangan lengkap dengan peluang, contoh, dan soal meja? Semua itu ada di [panduan urutan kartu poker lengkap](/id/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp") — artikel ini fokus pada duel flush-versus-straight dan tangan-tangan di sekitarnya.
 
 ---
 
@@ -99,13 +100,13 @@ Anda pegang **9♥ 5♥**. Anda sudah punya **straight 5-6-7-8-9** — jadi kena
 
 :::hand[J♠,9♠,7♠,4♣,2♦] Meja (5 kartu):::
 
-Anda pegang **A♠ 6♠** → **A♠ J♠ 9♠ 7♠ 6♠**, sebuah flush ber-As. Lawan Anda menunjukkan **10♥ 8♦** untuk straight 7-8-9-10-J dan mengumumkannya dengan percaya diri. Jangan berkedip: flush Anda lebih tinggi. Flush di atas straight, selalu.
+Anda pegang **A♠ 6♠** → **A♠ J♠ 9♠ 7♠ 6♠**, sebuah flush ber-As. Lawan Anda menunjukkan **10♥ 8♦** untuk straight 7-8-9-10-J dan mengumumkannya dengan percaya diri. Jangan ragu: flush Anda lebih tinggi. Flush di atas straight, selalu.
 
 ---
 
 ## Apa yang Mengalahkan Flush di Poker?
 
-Flush Anda adalah favorit melawan sebagian besar deck — tapi tepat **empat jenis tangan** (plus flush yang lebih besar) mengalahkannya:
+Flush Anda unggul melawan hampir semua tangan lain — tapi tepat **empat jenis tangan** mengalahkannya: **full house, four of a kind, straight flush, dan royal flush** — plus flush mana pun yang lebih tinggi. Semua yang di bawah flush (straight, three of a kind, two pair, pair, high card) kalah darinya:
 
 :::compare
 Mengalahkan flush Anda | Kalah dari flush Anda
@@ -128,14 +129,14 @@ Ketika dua pemain punya *jenis tangan yang sama*, pemenangnya ditentukan lewat p
 
 ## Flush vs Flush, Straight vs Straight — Siapa yang Menang Serinya?
 
-Ya, satu flush benar-benar bisa lebih tinggi dari flush lain. **Jenis kartu tidak relevan** — bandingkan kelima kartu dari atas ke bawah, tertinggi dulu:
+Ya, satu flush benar-benar bisa lebih tinggi dari flush lain. **Jenis kartu tidak relevan** — bandingkan kelima kartu dari atas ke bawah, tertinggi dulu. Di meja **J♠ 9♠ 6♠ 2♠ 7♦**, Pemain A pegang A♠ dan Pemain B pegang K♠:
 
 | Pemain | Flush | Hasil |
 |--------|------|------|
-| A | A♠ J♠ 9♠ 6♠ 2♠ | **Menang** |
-| B | K♥ Q♥ 10♥ 8♥ 3♥ | Kalah |
+| A (dengan A♠) | A♠ J♠ 9♠ 6♠ 2♠ | **Menang** |
+| B (dengan K♠) | K♠ J♠ 9♠ 6♠ 2♠ | Kalah |
 
-As Pemain A mengalahkan king Pemain B di kartu pertama, jadi A menang. Flush sekop **tidak** mengalahkan flush hati — hanya rank yang menentukan.
+As Pemain A mengalahkan king Pemain B di kartu pertama, jadi A menang. Perhatikan: kedua flush memakai empat sekop yang sama dari meja — di Hold'em, flush yang saling berhadapan selalu satu jenis, karena meja tak punya ruang untuk dua jenis dengan tiga kartu masing-masing. Dan bahkan di permainan yang memungkinkan flush beda jenis, sekop tidak mengalahkan hati: hanya nilai yang menentukan.
 
 Straight bahkan lebih sederhana: bandingkan **kartu tertinggi** saja — tak ada kicker.
 
@@ -155,7 +156,7 @@ Queen mengalahkan jack, jadi A menang. Kalau lima kartu terbaik kedua pemain ide
 
 ![9♥ 8♥ 7♥ 6♥ 5♥ — straight flush dalam hati, tangan #2 di poker](/images/holdem-flush-vs-straight-sf.webp "Straight flush — lima hati berurutan, hanya bisa dikalahkan royal flush")
 
-Sebuah **straight flush** adalah lima kartu *berurutan* dari *satu jenis* — seperti 9♥ 8♥ 7♥ 6♥ 5♥. Ini adalah **tangan #2 di poker**, hanya bisa dikalahkan oleh royal flush (yang sebenarnya hanyalah straight flush ber-As, A-K-Q-J-10 satu jenis). Dengan hanya **36 kombinasi (~0,00139%)**, ia lebih langka dari segalanya kecuali royal itu sendiri.
+Sebuah **straight flush** adalah lima kartu *berurutan* dari *satu jenis* — seperti 9♥ 8♥ 7♥ 6♥ 5♥. Ini adalah **tangan #2 di poker**, hanya bisa dikalahkan oleh royal flush (yang sebenarnya hanyalah straight flush ber-As, A-K-Q-J-10 satu jenis). Dengan hanya **36 kombinasi dari 2.598.960 tangan lima-kartu (~0,00139%)**, straight flush lebih langka dari segalanya kecuali royal itu sendiri.
 
 Jebakannya: ==*lima kartu yang sama* harus sekaligus satu jenis dan berurutan==. Perhatikan bedanya di meja **8♥ 7♥ 6♥ Q♠ 3♦**:
 
@@ -189,7 +190,7 @@ A. Tidak. Straight (#6) tak pernah mengalahkan flush (#5) di Texas Hold'em stand
 
 **Q. Kenapa flush mengalahkan straight?**
 
-A. Murni matematika. Straight mengabaikan jenis, jadi ada sekitar 10.200 cara membentuknya, berbanding hanya 5.108 cara membentuk flush. Itu membuat flush kira-kira dua kali lebih langka di antara tangan lima-kartu; sepanjang tujuh kartu sampai river tersisa faktor sekitar 1,5 (3,03% berbanding 4,62%). Di poker tanganyang lebih langka selalu berperingkat lebih tinggi.
+A. Murni matematika. Straight mengabaikan jenis, jadi ada sekitar 10.200 cara membentuknya, berbanding hanya 5.108 cara membentuk flush. Itu membuat flush kira-kira dua kali lebih langka di antara tangan lima-kartu; sepanjang tujuh kartu sampai river tersisa faktor sekitar 1,5 (3,03% berbanding 4,62%). Di poker, tangan yang lebih langka selalu berperingkat lebih tinggi.
 
 **Q. Apa yang mengalahkan flush di poker?**
 
@@ -197,7 +198,7 @@ A. Full house, four of a kind, straight flush, dan royal flush semuanya mengalah
 
 **Q. Apa yang mengalahkan straight di poker?**
 
-A. Flush, full house, four of a kind, straight flush, dan royal flush semuanya mengalahkan straight — plus straight mana pun yang lebih tinggi. Straight masih mengalahkan three of a kind dan segala yang di bawahnya. Urutan lengkap dari terbaik ke terburuk ada di [peringkat tangan lengkap](/id/blog/holdem-hand-rankings).
+A. Flush, full house, four of a kind, straight flush, dan royal flush semuanya mengalahkan straight — plus straight mana pun yang lebih tinggi. Straight masih mengalahkan three of a kind dan segala yang di bawahnya. Urutan lengkap dari terbaik ke terburuk ada di [urutan kartu poker lengkap](/id/blog/holdem-hand-rankings).
 
 **Q. Bisakah flush Anda lebih tinggi dari pemain lain?**
 
@@ -211,6 +212,14 @@ A. Tidak. Texas Hold'em tidak punya peringkat jenis. Jenis hanya penting untuk *
 
 A. Tidak. Salah satu tangan selalu berperingkat di atas yang lain, jadi flush cukup menang. Split hanya terjadi antara dua tangan dengan peringkat yang persis sama dan nilai lima-kartu yang persis sama.
 
+**Q. Apa itu flush dalam poker?**
+
+A. Flush adalah lima kartu satu jenis, nilai berapa pun — misalnya A♠ J♠ 9♠ 6♠ 2♠. Urutan nilainya tidak perlu berurutan; kalau berurutan sekaligus satu jenis, tangan itu naik jadi straight flush. Empat kartu satu jenis belum flush: harus lima.
+
+**Q. Royal flush artinya apa?**
+
+A. Royal flush artinya straight flush tertinggi: A-K-Q-J-10 dalam satu jenis. Ini tangan #1 di poker — tidak bisa dikalahkan, dan hanya ada 4 kombinasi dari 2.598.960 tangan lima-kartu. Straight flush lain (misalnya 9-8-7-6-5 satu jenis) kalah darinya.
+
 ---
 
 ## Poin Penting
@@ -219,20 +228,20 @@ A. Tidak. Salah satu tangan selalu berperingkat di atas yang lain, jadi flush cu
 2. Ia menang karena lebih langka: **5.108** kombinasi flush berbanding **10.200** kombinasi straight di antara tangan lima-kartu — dan 3,03% berbanding 4,62% sepanjang tujuh kartu sampai river.
 3. Perhatikan meja: **tiga kartu satu jenis** berarti flush hidup, **meja yang berpasangan** berarti full house bisa mengalahkan flush Anda, dan satu jenis *plus* berurutan adalah straight flush.
 
-Kunci urutan lengkapnya dengan [peringkat tangan lengkap](/id/blog/holdem-hand-rankings), pelajari bagaimana tangan-tangan berdekatan diputuskan di [panduan seri dan kicker](/id/blog/holdem-tiebreak-rules), dan kalau Anda benar-benar baru, [panduan pemula aturan Texas Hold'em](/id/blog/texas-holdem-rules-for-beginners) merangkai semuanya jadi satu.
+Kunci urutan lengkapnya dengan [urutan kartu poker lengkap](/id/blog/holdem-hand-rankings), pelajari bagaimana tangan-tangan berdekatan diputuskan di [panduan seri dan kicker](/id/blog/holdem-tiebreak-rules), dan kalau Anda benar-benar baru, [panduan pemula aturan Texas Hold'em](/id/blog/texas-holdem-rules-for-beginners) merangkai semuanya jadi satu.
 
 ---
 
-## Related Posts
+## Artikel Terkait
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/id/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Hand Rankings</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Peringkat Tangan Poker — Terbaik ke Terburuk</div>
-    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Kesepuluh tangan dengan peluang, contoh, dan soal meja</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Urutan Kartu Poker — Tertinggi ke Terendah</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Kesepuluh tangan dengan peluang, contoh, dan soal board</div>
   </a>
   <a href="/id/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Tiebreaker</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Pemecah Seri</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Aturan Kicker & Seri</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Flush atau straight sama — siapa yang menang pot?</div>
   </a>

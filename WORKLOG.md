@@ -1,3 +1,41 @@
+## 2026-08-27 (6) — 세션 5/9: id rankings 클러스터 6편 경화 (MCP 2종 키워드 서치 동반) · 렌즈 4종
+
+사장님 지시 «MCP 2종 서치해 가면서 경화» 이행 확인 후 착수: rules 소급은 기완료(0525a4d2 실측 확인)
+→ 세션 5를 같은 방식으로. hand-rankings·flush-vs-straight·kicker·tiebreak·split-pot·reading 6편.
+
+- **키워드 서치(MCP 2종)**: DFS REST 복구 확인(MCP 프로세스는 40100 지속 — env 등록 전 기동. REST
+  직접 경로로 15종 교차검증 → **라쿠와 전 항목 일치**, 뱅크 배치 1~2 단일벤더 경고 해소) + DFS Labs
+  `keyword_suggestions` 발굴 7시드 + 자동완성(hl=id) 의도 분해 + 라쿠 배치 3(44종·48m·requestId
+  1258342). 뱅크 «배치 3» 절 신설. **fr 헤드텀 10종 DFS 교차검증도 10/10 일치**(fr 뱅크 갱신 —
+  핸드오프 예약 이행)
+- **필라 제목 축 전환(실측 근거)**: 옛 축 «peringkat tangan poker» **볼륨 null 실측** → «Urutan
+  Kartu Poker dari tertinggi sampai terendah»(1.900+1.300+480 합산 성장 클러스터)로 title·seoTitle·
+  desc·tldr·첫 H2·태그 전환(훅 유지·slug 불변 — 세션 4 필라 선례). 태그 8종 전면 재편(remi
+  poker 140·kartu poker tertinggi 210↑ 편입) + FAQ 4신설(super royal flush 90↑ 신화격파 ·
+  urutan kartu remi 흡수 · kartu tertinggi · simbol/lambang §13 정합)
+- **자릿수 함정 2건 차단 기록**: full house 22.200=한국 드라마 지배 · «apa itu kicker» 자동완성
+  비포커(roblox) — 뱅크에 채택 금지 기록
+- **드리프트 소급**: hand-rankings hero image/imageAlt 복원(a4588d9e에서 id만 누락) + EN parity
+  본문 이미지 2장(board-puzzle은 정정본 K-K-K-A-2 alt로) · flush-vs-flush 표 **홀덤 구성 불가
+  스페이드vs하트 대비 → 보드 공유형(J♠9♠6♠2♠7♦) 재구성**(a4588d9e pt 정본 미러 — es·ja·zh·
+  zh-hant는 잔존, EN은 캐비어트로 자기정합) · kicker FAQ 4종 이식(트립스는 정정본 K-K-K-A-7 기반)
+  · tiebreak who-wins FAQ 5종 · split-pot FAQ 4종 · reading FAQ 3종 이식 · masterUpdated 4편 정직화
+- **렌즈 4종 전부 Opus**(딜러TD+수학·네이티브 id·SEO/GEO·교열 diff) ~50건 판정 ~35건 반영:
+  **§13·산수 0건**(카드 예시 42개 기계 검산 — 두 렌즈 독립 재현 일치) · 렌더 깨짐 2(하이라이트 내
+  마침표) · 의미 역전 1(«saya kalahkan»=이겼다로 읽힘) · masterUpdated 미래값 오기 1(자기 검출) ·
+  FAQ 예시-주장 불일치 1(FH 트리오 동률 예 → EN 정본 K-K-K-2-2 vs Q-Q-Q-A-A로) · 확률 기준 충돌
+  1(royal 7장% ↔ SF 5장 병기 → 5장 통일) · 영어 잔재(Related Posts·tie-breaker·min·head-up·
+  first kicker·kings-and-nines 계열 전건) · 직역투 ~10(menyewa board·tanda bintangnya·berkedip 등)
+  · 카드/앵커 축 정렬(«urutan kartu poker» 인바운드 통일·menang atas→mengalahkan)
+- **2차 교열 자기 검출 2건**: 사이드팟 FAQ 2문 종결문 축어 중복 삭제 · readnext 라벨 통일 방향
+  오판 정정(클러스터 «Lanjut baca» 3편 → 코퍼스 표준 «Lanjut membaca» 26편으로 6편 정렬)
+- **기각·등재(임의 소급 금지)**: EN-먼저 — reading «Seberapa umum» 표 헤더(21조합 가짓수를 빈도로
+  — 딜러·SEO 렌즈 독립 재발견) · tiebreak/hand-rankings «Royal Flush|Selalu seri» 행 · FAQ↔H2
+  축어중복 9건(EN 구조 상속) · 코퍼스 판정 후보 — id meja/board 분열(4:2·reading 태그는 board) ·
+  kicker ace/As 36:0 · «super royal flush» 잭팟 용어설(1차 출처 미확보 — 기원 서술 제거로 중립화)
+- 게이트 --locale=id 42/42 🔴 0(재실행) · 2층 손검산(tiebreak 8예시·reading 12예시 — 게이트
+  미검사 구간) 전건 일치 · 빌드 653페이지 ✓
+
 ## 2026-08-27 (5) — 전 언어 태그 전수 실측 소급 + 4필라 헤드 축 편입 + DFS 복구 (사장님 지시)
 
 사장님 지시 «이전 클러스터 전부 소급 — MCP 안 쓰고 추측하면 경화가 아니다» 이행.

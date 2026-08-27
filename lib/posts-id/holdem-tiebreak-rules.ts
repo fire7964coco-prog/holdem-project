@@ -5,21 +5,21 @@ export const POST: Post = {
   title: "Bagaimana seri dipecahkan di poker — tangan sama, siapa yang menang?",
   seoTitle: "Tangan sama, pair sama — siapa menang? Aturan pemecah seri",
   desc: "Pair sama saat showdown tapi tetap kalah? Inilah aturan seri poker: siapa menang saat pair sama, kapan kartu kelima menentukan, dan kapan pot dibagi.",
-  tldr: "Seri dipecahkan dalam urutan tetap: jenis tangan dulu, lalu kartu pembentuk tangan, lalu kicker dari tertinggi ke terendah. Pair sama → first kicker tertinggi menang; lima kartu identik → pot dibagi. Jenis kartu tak pernah menentukan seri.",
+  tldr: "Seri dipecahkan dalam urutan tetap: jenis tangan dulu, lalu kartu pembentuk tangan, lalu kicker dari tertinggi ke terendah. Pair sama → kicker pertama tertinggi menang; lima kartu identik → pot dibagi. Jenis kartu tak pernah menentukan seri.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-08-09",
+  updated: "2026-08-27",
   masterUpdated: "2026-07-19",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "⚖️",
   image: "/images/holdem-tiebreak-hero.webp",
   imageAlt: "Showdown poker: A♠ K♦ vs A♥ 9♣ dengan meja A♦ Q♠ 7♥ 3♣ 2♦ — sepasang As yang sama, kicker menentukan pemenang",
-  tags: ["aturan pemecah seri poker", "bagaimana seri dipecahkan di poker", "siapa menang pair sama poker", "seri two pair poker", "apakah kartu kelima penting di poker", "kicker poker", "straight lebih tinggi", "seri texas holdem"],
+  tags: ["aturan pemecah seri poker", "bagaimana seri dipecahkan di poker", "siapa menang pair sama poker", "seri two pair poker", "apakah kartu kelima penting di poker", "straight lebih tinggi", "seri texas holdem"],
   content: `
 Anda membuka sepasang As. Lawan juga. Dealer menghitung kartu samping sejenak — lalu mendorong seluruh pot ke *arahnya*. ==r:Pair sama. Bagaimana Anda bisa kalah?==
 
-Saya sudah menyaksikan momen persis itu menghentikan lebih banyak permainan daripada aturan mana pun: seseorang setengah berdiri, dealer mengetuk felt, dan seluruh meja menunggu penjelasan. Inilah penjelasannya. Setiap seri di Texas Hold'em diselesaikan oleh satu prosedur tetap yang berada satu tingkat di bawah [peringkat tangan poker](/id/blog/holdem-hand-rankings) — peringkat memberi tahu *tangan mana* yang menang; aturan pemecah seri memberi tahu *pemain mana* yang menang saat kedua tangan berjenis sama.
+Saya sudah menyaksikan momen persis itu menghentikan lebih banyak permainan daripada aturan mana pun: seseorang setengah berdiri, dealer mengetuk felt, dan seluruh meja menunggu penjelasan. Inilah penjelasannya. Setiap seri di Texas Hold'em diselesaikan oleh satu prosedur tetap yang berada satu tingkat di bawah [urutan kartu poker](/id/blog/holdem-hand-rankings) — peringkat memberi tahu *tangan mana* yang menang; aturan pemecah seri memberi tahu *pemain mana* yang menang saat kedua tangan berjenis sama.
 
 Sebagian besar pekerjaan dilakukan oleh satu kartu: ==**kicker**==. Definisi lengkapnya — tangan mana saja yang punya kicker dan berapa banyak — ada di [apa itu kicker di poker](/id/blog/holdem-kicker "thumb:/images/holdem-kicker-hero.webp"). Panduan ini adalah *prosedurnya*: persis bagaimana seri dipecahkan untuk pair yang sama, two pair, trips, straight, dan flush — plus kartu kelima yang selalu terlupakan.
 
@@ -44,7 +44,7 @@ Sebagian besar pekerjaan dilakukan oleh satu kartu: ==**kicker**==. Definisi len
 | Langkah | Bandingkan | Detail |
 |:---:|---|---|
 | **1** | Jenis tangan | Kategori lebih tinggi selalu menang (flush mengalahkan straight, dst.) |
-| **2** | Kartu pembentuk tangan | Jenis sama? Pair / trips / kartu teratas yang lebih tinggi menang |
+| **2** | Kartu pembentuk tangan | Kategori sama? Pair / trips / kartu teratas yang lebih tinggi menang |
 | **3** | Kicker, tertinggi dulu | Perbedaan pertama memenangkan pot |
 
 </div>
@@ -55,7 +55,7 @@ Jika langkah 1 sudah menyelesaikannya, Anda tak pernah sampai ke langkah 2. Jika
 
 ## Siapa yang menang jika dua pemain punya pair sama?
 
-**First kicker tertinggi yang menang. One pair memakai tiga kicker, dibandingkan satu per satu dari atas — perbedaan pertama menentukan pot.**
+**Kicker pertama tertinggi yang menang. One pair memakai tiga kicker, dibandingkan satu per satu dari atas — perbedaan pertama menentukan pot.**
 
 Ambil tangan di foto atas:
 
@@ -106,24 +106,24 @@ Tiga baris yang paling memicu perdebatan di meja:
 
 **Bandingkan pasangan lebih tinggi, lalu pasangan lebih rendah, lalu kicker tunggal — dalam urutan itu.** Two pair membawa tepat satu kicker, jadi setelah pasangannya sendiri hanya tersisa satu kartu untuk diperdebatkan.
 
-Di meja **K♦ 9♣ 9♠ 5♦ 2♥**, K♠ Q♦ membentuk K♠ K♦ 9♣ 9♠ ==g:Q♦== dan K♥ J♥ membentuk K♥ K♦ 9♣ 9♠ ==r:J♥==. Sama-sama kings-and-nines, jadi kicker tunggal yang menentukan: ==g:queen di atas jack.==
+Di meja **K♦ 9♣ 9♠ 5♦ 2♥**, K♠ Q♦ membentuk K♠ K♦ 9♣ 9♠ ==g:Q♦== dan K♥ J♥ membentuk K♥ K♦ 9♣ 9♠ ==r:J♥==. Sama-sama dua pair K dan 9, jadi kicker tunggal yang menentukan: ==g:queen di atas jack.==
 
 Lalu ada jebakan yang menentukan uang sungguhan — ==r:**counterfeiting**==:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:16px 20px;margin:20px 0">
 
 **Anda:** 5♠ 4♠  ·  **Lawan:** A♣ K♦
-**Flop:** 5♦ 4♥ K♣ — two pair Anda (fives dan fours) unggul atas sepasang king lawan
+**Flop:** 5♦ 4♥ K♣ — two pair Anda (pasangan 5 dan 4) unggul atas sepasang king lawan
 **Turn 9♠, river 9♥** — meja akhir 5♦ 4♥ K♣ 9♠ 9♥
 
 | Pemain | Lima Terbaik | Tangan |
 |--------|-----------|------|
-| Anda | ==r:9♠ 9♥== 5♠ 5♦ K♣ | Nines dan fives — fours Anda lenyap |
-| Lawan | K♦ K♣ 9♠ 9♥ A♣ | **Kings dan nines — menang** |
+| Anda | ==r:9♠ 9♥== 5♠ 5♦ K♣ | Dua pair 9 dan 5 — pasangan 4 Anda lenyap |
+| Lawan | K♦ K♣ 9♠ 9♥ A♣ | **Dua pair K dan 9 — menang** |
 
 </div>
 
-Meja yang memasangkan angka 9 memberi *kedua* pemain pasangan kedua yang lebih baik — fours Anda ter-==r:counterfeit==, dan satu-satunya perbandingan tersisa adalah top pair: kings di atas nines. Tangan yang unggul di flop kalah pot tanpa satu pun pemain memperbaiki kartunya sendiri.
+Meja yang memasangkan angka 9 memberi *kedua* pemain pasangan kedua yang lebih baik — fours Anda ter-==r:counterfeit==, dan satu-satunya perbandingan tersisa adalah pasangan teratas: pasangan K di atas pasangan 9. Tangan yang unggul di flop kalah pot tanpa satu pun pemain memperbaiki kartunya sendiri.
 
 ---
 
@@ -141,7 +141,7 @@ Dua hal yang *tidak* bisa dilakukan wheel: As tak bisa berputar lewat tengah (Q-
 
 **Ya — kapan pun empat kartu pertama dua tangan identik, kartu kelima adalah seluruh pot.**
 
-Meja **A♥ K♣ Q♦ 4♣ 2♥**, dan pertarungannya A♠ 8♠ melawan A♦ 7♦. Keduanya punya sepasang As. First kicker: K milik meja — seri. Second kicker: Q milik meja — seri. Third kicker: ==g:8 mengalahkan 7.== Kartu kelima tangan itu secara harfiah baru saja menentukan segala hal di atasnya.
+Meja **A♥ K♣ Q♦ 4♣ 2♥**, dan pertarungannya A♠ 8♠ melawan A♦ 7♦. Keduanya punya sepasang As. Kicker pertama: K milik meja — seri. Kicker kedua: Q milik meja — seri. Kicker ketiga: ==g:8 mengalahkan 7.== Kartu kelima tangan itu secara harfiah baru saja menentukan segala hal di atasnya.
 
 Logika yang sama berlaku pada pot dengan quads di meja: semua orang berbagi empat kartu, jadi yang kelima adalah seluruh showdown. Dan berlaku pada seri high-card dan flush, di mana setiap kartu hingga yang terakhir dibandingkan. Kartu kelima baru berhenti penting saat meja mengungguli nilainya — yang merupakan kepingan puzzle terakhir.
 
@@ -159,11 +159,11 @@ Versi yang lebih halus adalah saat tangan Anda main tapi kicker Anda tidak. Meja
 
 ![Infografik: di meja A-K-Q-J-9, A-3 dan A-2 sama-sama main A-A-K-Q-J, jadi tangan identik membagi pot](/images/holdem-tiebreak-split.webp "Saat lima terbaik cocok nilai per nilai, pot dibagi — jenis kartu tak pernah memecah seri")
 
-Mengenali runout ini sebelum taruhan river adalah keahlian tersendiri — itulah [membaca meja](/id/blog/holdem-reading-the-board). Dan apa yang terjadi pada chip begitu tangan seri — bagian sama rata, chip ganjil, chop tiga arah, side pot all-in — semuanya ada di [panduan aturan split pot](/id/blog/holdem-split-pot-rules "thumb:/images/holdem-split-pot-hero.webp").
+Mengenali runout ini sebelum taruhan river adalah keahlian tersendiri — itulah [membaca board](/id/blog/holdem-reading-the-board). Dan apa yang terjadi pada chip begitu tangan seri — bagian sama rata, chip ganjil, chop tiga arah, side pot all-in — semuanya ada di [panduan aturan split pot](/id/blog/holdem-split-pot-rules "thumb:/images/holdem-split-pot-hero.webp").
 
 ---
 
-:::readnext[Lanjut baca]
+:::readnext[Lanjut membaca]
 /id/blog/holdem-kicker | Apa itu kicker di poker? | /images/holdem-kicker-hero.webp
 /id/blog/holdem-split-pot-rules | Kapan pot dibagi? | /images/holdem-split-pot-hero.webp
 :::
@@ -180,7 +180,11 @@ A. Pemain yang lima terbaiknya punya kicker lebih tinggi. One pair membawa tiga 
 
 **Q. Siapa yang menang jika kedua pemain punya two pair?**
 
-A. Bandingkan pasangan lebih tinggi dulu, lalu pasangan lebih rendah, lalu kicker tunggal. Aces-and-threes mengalahkan kings-and-queens, karena pasangan teratas dicek sebelum yang lain.
+A. Bandingkan pasangan lebih tinggi dulu, lalu pasangan lebih rendah, lalu kicker tunggal. Dua pair As dan 3 mengalahkan dua pair K dan Q, karena pasangan teratas dicek sebelum yang lain.
+
+**Q. Siapa yang menang jika dua pemain punya three of a kind yang sama?**
+
+A. Dua kartu tertinggi berikutnya — dua kicker-nya — yang memecah seri, dibandingkan dari atas. Trips yang sama praktis hanya terjadi lewat pasangan di meja; set dari pocket pair tak bisa dimiliki dua pemain sekaligus. Kalau kedua kicker juga sama, pot dibagi.
 
 **Q. Apakah kartu kelima penting di poker?**
 
@@ -193,6 +197,22 @@ A. Bisa, tapi hanya dalam straight A-2-3-4-5 (the "wheel"), di mana ia main seba
 **Q. Bisakah Anda punya straight yang lebih tinggi dari pemain lain?**
 
 A. Bisa — straight diperingkat murni oleh kartu teratasnya, jadi 6-5-4-3-2 mengalahkan wheel A-5, dan Broadway (A-K-Q-J-10) mengalahkan semuanya. Kartu teratas sama berarti straight identik dan pot dibagi.
+
+**Q. Siapa yang menang jika dua pemain punya straight yang sama?**
+
+A. Tidak ada yang menang — straight dengan kartu teratas sama adalah tangan identik, jadi pot dibagi. Straight tak punya kicker, sehingga kartu tertutup sisa tak berpengaruh. Ini salah satu chop paling umum di Hold'em, biasanya saat straight-nya terbentang di meja.
+
+**Q. Siapa yang menang jika dua pemain sama-sama punya flush?**
+
+A. Bandingkan kelima kartu dari tertinggi ke terendah — perbedaan pertama menentukan. Flush ber-As mengalahkan flush ber-K; kartu teratas sama berarti lanjut ke kartu kedua, dan seterusnya. Kelima kartu identik nilainya berarti pot dibagi — jenis kartu tak pernah dipakai.
+
+**Q. Siapa yang menang jika dua pemain punya full house yang sama?**
+
+A. Full house dibandingkan trio-nya dulu, baru pasangannya: K-K-K-2-2 mengalahkan Q-Q-Q-A-A, meski pasangan As tampak lebih besar. Pasangan baru menentukan jika trio-nya seri, dan jika trio dan pasangan kedua pemain sama persis — biasanya karena sebagian besar terbentang di meja — pot dibagi. Full house tak punya kicker.
+
+**Q. Apa yang terjadi jika dua pemain sama-sama punya straight flush?**
+
+A. Kartu teratas lebih tinggi yang menang, persis seperti straight biasa. Dua straight flush dengan kartu teratas sama membagi pot — dan di Hold'em itu praktis berarti kelima kartunya ada di meja. Royal flush adalah kasus khususnya: tak terkalahkan, dan hanya "seri" jika seluruhnya kartu komunitas.
 
 **Q. Apakah jenis kartu pernah memecah seri di Texas Hold'em?**
 
@@ -210,7 +230,7 @@ A. Pot dibagi rata — sebuah "chop". Bagaimana chip dibagi secara fisik, siapa 
 2. Sebuah kicker hanya dihitung jika ia ==g:masuk lima terbaik Anda== — kartu meja bisa menggantikannya, dan meja dengan dua pasang bisa meng-counterfeit two pair Anda sepenuhnya.
 3. Straight diperingkat oleh kartu teratasnya (wheel yang terendah), flush membandingkan kelimanya — dan saat tak ada yang memisahkan kedua tangan, pot di-chop.
 
-Kunci urutan lengkapnya dengan [peringkat tangan lengkap](/id/blog/holdem-hand-rankings), pahami kartu samping itu sendiri di [apa itu kicker](/id/blog/holdem-kicker), dan lihat persis bagaimana pot seri dibagi di [panduan split pot](/id/blog/holdem-split-pot-rules).
+Kunci urutan lengkapnya dengan [urutan kartu poker lengkap](/id/blog/holdem-hand-rankings), pahami kartu samping itu sendiri di [apa itu kicker](/id/blog/holdem-kicker), dan lihat persis bagaimana pot seri dibagi di [panduan split pot](/id/blog/holdem-split-pot-rules).
 
 ---
 
@@ -224,8 +244,8 @@ Kunci urutan lengkapnya dengan [peringkat tangan lengkap](/id/blog/holdem-hand-r
   </a>
   <a href="/id/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Peringkat Tangan</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Peringkat tangan poker — terkuat ke terlemah</div>
-    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Semua 10 tangan dengan peluang, contoh, dan teka-teki meja</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Urutan kartu poker — tertinggi ke terendah</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Semua 10 tangan dengan peluang, contoh, dan soal board</div>
   </a>
   <a href="/id/blog/holdem-flush-vs-straight" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Duel Tangan</div>

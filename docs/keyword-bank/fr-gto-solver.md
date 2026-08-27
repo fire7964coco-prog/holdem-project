@@ -2,8 +2,11 @@
 
 > 도구 = **라쿠 `search-volume-history`**(볼륨 · France/French · requestId **1255949** · 48개월) +
 > 라쿠 서제스트 3종(solveur·gto·solver poker) + **웹서치 3건**(exa — 프랑스 커뮤니티·SERP 지형) +
-> **앱 fr 라이브 실측**(Playwright DOM · `?lang=fr`). ⚠ DataForSEO는 이날 40100(인증 만료)라 교차검증 불가 —
-> **단일 벤더(라쿠) 값이다.** DFS 복구 시 교차검증 후보(§7).
+> **앱 fr 라이브 실측**(Playwright DOM · `?lang=fr`).
+> ✅ **DFS 교차검증 완료(2026-08-27)** — REST(google_ads search_volume · France·fr)로 헤드텀 10종
+> 재실측: **10/10 완전 일치**(gto wizard 8.100 · solveur 2.900 · range/ranges poker 각 1.600 ·
+> gto poker 480 · calculateur 390 · solver poker 320 · tableau range 210 · piosolver 170 ·
+> gratuit 110). 단일 벤더 경고 해소 — §7의 교차검증 예약 이행.
 
 ---
 
