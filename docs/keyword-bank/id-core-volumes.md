@@ -1,5 +1,8 @@
 # id 코어 볼륨 실측 — rules·rankings 축
 
+> 🪶 발굴 원자료·의도 판정(자릿수 함정)·현지화 노트·커버리지 맵은 **`id-posting-reference.md`**
+> (신규 포스팅·경화 공용 참고 파일). 볼륨 정본은 이 파일이다.
+
 > 실측 2026-08-27 · 라쿠 search-volume-history · **location=Indonesia · language=Indonesian** ·
 > requestId **1258288**(배치 1 · 22종 · 12m) + **1258295**(배치 2 · 29종 — rules 소급용 · 12m) +
 > **1258342**(배치 3 · 44종 — rankings 클러스터 · 48m)

@@ -47,7 +47,7 @@ wpt·marathon은 zh·zh-hant·ja 모두 이미 정정본이었음이 실측 확�
 | 3 | A | ✅ **완료 (2026-08-27 · `f8d9b2bd`)** — ja 15편 · 렌즈 4종(Opus) ~34건 판정·~20건 반영 · 게이트 🔴 0 · 빌드 ✓ | 경위 = WORKLOG 「2026-08-27 (2)」(커밋 diff 경계 명시 완료). wpt·marathon·3bet A5s는 이미 정정본 실측 · apt 「開幕当日」 편차 = locale-intentional-diffs.md 등재 · glossary 역링크 ja 5/5 완성 |
 | 4 | B | ✅ **완료 (2026-08-27 · `30ec8632`)** — id rules 6편 · 렌즈 4종(Opus) ~60건 판정·~45건 반영 · 게이트 🔴 0 · 빌드 ✓ | 경위 = WORKLOG 「2026-08-27 (3)」. ⚠ **id masterUpdated는 거짓 신호였다**(07-19·07-25 «동기» 파일에 EN 내용 부재 — 경고 적중). 다음 세션도 **EN 07-15 기준선→HEAD diff 실물**로 대조하라. id 뱅크 부재 → 구글 자동완성(hl=id) 실측 대체(«kartu remi»·«tongkrongan» 발굴). EN-먼저 후보 ⑩~⑬ 등재 |
 | 5 | B | ✅ **완료 (2026-08-27 · `6afcdb56`)** — id rankings 6편 · MCP 2종(DFS 교차검증 id 15/15·fr 10/10 일치 + Labs 발굴 + 라쿠 배치 3 44종) · 필라 제목 «Urutan Kartu Poker dari tertinggi sampai terendah» 축 전환(옛 축 «peringkat tangan poker» 실측 **null**) · hero image/imageAlt 복원 + 본문 이미지 2 · FAQ 18문 신설/이식 · 렌즈 4종(Opus) ~50건 판정·~35건 반영 · 게이트 🔴 0 · 빌드 ✓ | 경위 = WORKLOG 「2026-08-27 (6)」. ⚠ flush-vs-flush 구성불가 표(이종 플러시)는 pt 정본(보드 공유형)으로 교정 — **es·ja·zh·zh-hant 잔존**(EN은 캐비어트로 자기정합 — EN-먼저 ⑮ 참조) |
-| 6 | B | id odds 7편 | probability·outs·pot-odds·implied·drawing·equity·card-counting |
+| 6 | B | id odds 7편 | probability·outs·pot-odds·implied·drawing·equity·card-counting. 🆕 착수 전 **`docs/keyword-bank/id-posting-reference.md` 통독**(사장님 지시 2026-08-27 신설 — 도구 경로·자릿수 함정·현지화 노트·커버리지 맵. 볼륨 정본은 id-core-volumes.md) |
 | 7 | B | id strategy 8편 | + PDF 앵커 «9-max/6-max» 거짓 id 소급. ⚠ shc AJo는 판단 대기 #1 — 소급 금지 |
 | 8 | B | id glossary 6편 | + 회차 5 드리프트 id 몫 흡수(glossary 역링크·rake 캡 $3–$6) |
 | 9 | B | id tournament 9편 | + 회차 6 드리프트 id 몫 흡수(Gold Pass·wpt·아젠다·EN 8건 거울). 가장 무거운 회차 |
