@@ -1,3 +1,37 @@
+## 2026-08-27 (9) — 세션 7/9: id strategy 클러스터 8편 경화 (`971b58c3`) · #41 8로케일 전수 정정 · 렌즈 4종 + 2차 교열
+
+strategy(필라)·3bet·continuation-bet·position-play·positions·starting-hands-chart·when-to-fold·limping 8편.
+
+- **기준선 대조**: EN 07-15→HEAD diff 실물 전수 — strategy 클러스터는 08-11/08-18 미러 커밋이 대부분
+  기이식(BB 디펜스 27%·above 100%·6-max 정정·set 34% 문단·블러프캐처 문단 전부 기존재).
+  잔여 델타만 이식: EN 경화 FAQ 10문(1:1) + PDF 앵커 «9-max 전체+6-max 한 줄» + suited 2pt
+  (AKs 67/AKo 65) + UTG TT+ + A-A~T-T + aturan 4 dan 2→/holdem-outs + limping 라이브 문단(D유형 제거)
+- **pt 원장 #41 정정(핸드오프 예약 이행)**: «폴드 과다→밸류벳 출혈» 누수 뒤바뀜 —
+  **8로케일 전수**(en·es·de·ja·zh·zh-hant·pt·id) «블러프에 팟을 내준다»로 정정(날짜 필드 불변,
+  검수장 pt 회귀 앵커 점등 = 설계 의도)
+- **키워드 실측(라쿠 배치 5 · 1258443 · 56종·48m + DFS Labs + 자동완성 hl=id)**: 전략축 전부 ≤50
+  (fold 50·cara menang 30·trik 20↑·strategi 10·posisi null) → **재조준 없음이 판정**. 실채택 =
+  필라 태그 «cara menang poker» 1교체. ⚠ DFS MCP는 env 등록·재시작 후에도 40100 재현 — node .mjs
+  REST 직접 경로만 유효(자격증명 정상)
+- **렌즈 4종(Opus)**: 수학 102건 재계산+몬테카를로 6건(AKs 67,09·A5s 30,16·set 34,41 등) —
+  **§13·산수 오류 0**(§13 핸드 5건 베스트5 전수 통과) · PDF 앵커는 print HTML 소스로 1차 확인.
+  네이티브 ~70곳 정정: air/udara→tangan kosong 10곳(전 코퍼스 소거 실측) · mengalahkan 의미역전 7곳 ·
+  melipat/ditiup/menyangkal 직역 13곳 · 명백 비문 12곳(mesetnya·perugi·Sama Sekali H2 등).
+  SEO — desc 160 초과 0 · FAQ 스키마 87문 무결 · 태그 카니발 2건 «조치 불요» 판정(허브 설계 일관).
+  교열 diff — 이번 회차 신규 결함 0, EN 상속 6건 검출
+- **EN 자기모순 선정정(2로케일 한정 신규 FAQ — EN·id 동시)**: position-play «EP는 preflop에 블라인드
+  뒤» → postflop(5줄 위 신규 FAQ와 직접 모순이었다) · SB/BB 순서 FAQ **헤즈업 예외** 추가(positions와
+  모순이었다) · OOP FAQ 무조건형 괄호 삭제 · 3bet 4-bet 레인지 QQ+ 봉합 + **A5s «aces and kings»→
+  «aces and ace-king»**(A는 KK를 못 막는다) + MDF 괄호 balanced · limping fish FAQ calling station
+  구분 괄호(같은 글이 두 번 금지한 혼용이었다) — EN 3bet·limping·position-play updated 08-27
+- **2차 교열(Opus)**: 반영 편집의 잔존·신결함 12건 검출·정정(mengalahkan 잔존 1·rule of→aturan 4 dan 2
+  앵커 정본 정합·랭크 표기 분열 3·kedua-terbaik·중의문 2·menyangkal 잔존 1·평행성 2·레지스터 1) +
+  locale-intentional-diffs 2행 등재(3bet SPR·position-play check-raise GTO 링크 미전파)
+- **검수자 오판 기각**: «N% dari waktu» 재지적 → 세션 6 기판정(문법 성립) 유지 · «kings dan nines
+  복귀» 제안 → 세션 4~5 정본 판정(복수+dan 혼종 금지 «K dan 9»)이 심판
+- 게이트 --locale=id 42/42 🔴 0 · --locale=en 56/56 🔴 0(🟠 3은 기존 C2 육안 대조 표) · 빌드 ✓
+  (70+471) · FAQ 스키마 산출물 8편 전건 일치(14/15/12/10/7/8/12/9) · 커밋 `971b58c3` 푸시·배포
+
 ## 2026-08-27 (8) — 세션 6/9: id odds 클러스터 7편 경화 (`74f18a17`) · 렌즈 4종 + 2차 교열
 
 probability·pot-odds·outs·drawing-odds·implied-odds·equity·card-counting 7편.
