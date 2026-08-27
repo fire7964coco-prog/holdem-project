@@ -1,3 +1,31 @@
+## 2026-08-27 (2) — 세션 3/9: EN 드리프트 소급 ja 단독 (회차 5·6 묶음 + adcffae4 수치분) · 렌즈 4종
+
+9세션 분할 계획의 **세션 3 완결** — 커밋 **`f8d9b2bd`**. 🔴 **이후 ja 43편 경화는 이 커밋 diff가 경계다**
+(손댄 15편: apt·ept·bubble·tournament·tvc·bad-beat·rake·straddle·fish·glossary·3bet·shc·
+when-to-fold·implied-odds·limping — 이 파일들의 이번 수정 자리와 겹치는 재작업은 diff 먼저 볼 것).
+
+- **조치 불요 실측**: wpt(트로피 고유명·NSW 일몰·carded·12/36)·marathon 제목 — ja **이미 정정본**
+  (af6c77c8 계열 커버, 세션 2의 「ja는 wpt부터 실측」 예고 적중). 3bet A5s도 ja는 이미 30%
+  (masterUpdated만 동기, updated 유지 = de 선례).
+- **회차 6 몫**: ept 비용표 +€690(tldr·요약·표엔 기존재 — 비용표 1곳만 공백) · 간식·Day1 「夜·8레벨」 ·
+  apt FAQ 시제+검증일 8/17 · apt 「開幕前日/開幕前」 거짓 → 「開幕当日/開幕日」(EN 미추종 —
+  **locale-intentional-diffs.md에 5로케일 편차 행 등재**) · EN 08-26 수정 8건 거울
+- **회차 5 몫**: glossary 5행 · **glossary 허브 역링크 ja 5/5 완성**(straddle 도입부 신설 — 실측 4/5의
+  공백이 straddle이었다) · rake 캡 $3–$6+「0〜−1」 · bad-beat suckout flop·境界例 노트·dealt-in 2곳 ·
+  straddle 최소레이즈 $8·sleeper 3곳·FAQ 솔버 논거 · fish PFR 괄호
+- **adcffae4 몫**: shc PDF 앵커 정정(딜러 렌즈가 pdftotext 실물 재확인) + suited 2pt(67/65) ·
+  2·4법칙 링크 pot-odds→outs 2편 · limping EP 완화
+- **렌즈 4종 전부 Opus**(교열 diff·네이티브·딜러·EN 사실대조) ~34건 전건 원문 판정, 반영 ~20건:
+  bubble 스톨 불릿 지시형(「〜こと。」)→정의형+「燃やす」 직역 제거+문말체·중복 해소(딜러: ja가 EN보다
+  처방적으로 읽히던 자리) · apt 「:はい。」 해소·「現地登録」 글 내 경로 서술과 정합화 · 一族→分類 ·
+  ウィンドウ→リバイ期間 · tvc 하우스룰 「해외 카지노」 한정·「リバイ」→「買い足し」·readTime 16分 유지
+  (zh·de·es 선례 실측 — EN 18min 미추종) · glossary 앤티 행 자기모순 해소 · straddle 세미콜론
+- **기각·보류(EN 동형 → EN-먼저, 임의 소급 금지)**: bad-beat 분배표 라벨(후보 ⑤ — 딜러 독립 재발견) ·
+  ept 비용표 상계(후보 ④) · PDF 자산 「~2–3%」(소품 ⑥ — 교열 독립 재발견) · 🆕 bubble 스톨 실익
+  «H4H 개시 후 0» 한정 부재 — EN-먼저 신규 등재 · .trim() 미이식(es·de·zh 공통 잔여)
+- 게이트 ja 43/43 🔴 0건(렌즈 반영 후 재실행) · 빌드 ✓ · FAQ 스키마 스팟체크 4편 정상 ·
+  잔여 드리프트 10편 표시는 전부 범위 밖(회차 1~3 미러분 + ept·shc 의도 보류)
+
 ## 2026-08-27 (1) — 세션 2/9: EN 드리프트 소급 zh+zh-hant (회차 5·6 묶음 + adcffae4 수치분) · 렌즈 4종
 
 9세션 분할 계획의 **세션 2 완결**. zh 15편 + zh-hant 15편, 세션 1(es·de)과 동일 스코프.

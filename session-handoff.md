@@ -15,11 +15,10 @@
 **착수 지시 떨어짐.** 두 개를 **한 묶음으로** 한다 — 겹치기 때문이다. id를 경화하려고 열면
 드리프트도 그 자리에서 같이 들어간다. 따로 두 번 열지 마라.
 
-**A. EN 드리프트 소급 — 5개 언어**(~~es · de~~ ✅ 세션 1 · ~~zh · zh-hant~~ ✅ 세션 2 완료 · 잔여 `ja`)
-경화는 끝났는데 **그 뒤 EN이 또 바뀐 분**이 안 갔다. 목록은 아래 미결 표 「회차 5·6 소급 묶음」.
-🔴 **라이브에 사실 오류가 있는 상태다** — wpt 트로피 고유명(Prime 우승자에게 Champions Cup),
-ept Gold Pass 4요소(€1.100·€690), NSW 귀속, 아젠다 12/36. EN·pt는 고쳤고 나머지가 안 고쳐졌다.
-**같은 사실을 언어마다 다르게 말하는 상태**라 §13 등급이다.
+**A. EN 드리프트 소급 — 5개 언어** ✅ **트랙 A 완결**(~~es · de~~ 세션 1 · ~~zh · zh-hant~~ 세션 2 ·
+~~ja~~ 세션 3 `f8d9b2bd`). 잔여 = **id 몫뿐이며 트랙 B가 흡수한다**(세션 4~9).
+라이브 §13급 오류(wpt 트로피·ept Gold Pass·NSW·아젠다 12/36)는 **경화 언어 전부에서 지혈 완료** —
+wpt·marathon은 zh·zh-hant·ja 모두 이미 정정본이었음이 실측 확인됨(af6c77c8 계열이 커버).
 
 **B. id 경화 — 42편**(A의 id 몫을 흡수한다)
 `id`는 **2026-07-15 발행**인데 EN 마스터 락이 **07-19**다. 즉 **경화 이전 EN을 번역한 마지막 언어**.
@@ -45,7 +44,7 @@ ept Gold Pass 4요소(€1.100·€690), NSW 귀속, 아젠다 12/36. EN·pt는 
 |---|---|---|---|
 | 1 | A | ✅ **완료 (2026-08-26 · `bbca2acc`)** — es 15편 + de 16편 · 렌즈 4종(Opus) 33건 판정·반영 · 게이트 🔴 0 · 빌드 ✓ | 경위 = WORKLOG 「2026-08-26 (12)」. PDF 앵커·adcffae4 수치분(A5s 30%·suited 2pt·룰 링크)도 es·de 몫 흡수 완료 |
 | 2 | A | ✅ **완료 (2026-08-27 · `8ee372f4`)** — zh 15편 + zh-hant 15편 · 렌즈 4종(Opus) ~25건 판정·반영 · 게이트 🔴 0 · 빌드 ✓ | 경위 = WORKLOG 「2026-08-27 (1)」. ⚠ **wpt·marathon·zh-hant 역링크는 이미 정정본이었다**(af6c77c8 계열 8로케일 전수 정정이 커버 — zh-hant 「Perpetual 미보유」는 «永久獎盃» 의역이라 정상). **ja 세션도 wpt부터 실측하고 시작하라** — 미결 표의 wpt 항목이 ja에는 이미 해소돼 있을 수 있다 |
-| 3 | A | ja 드리프트 소급 (단독) | 몫이 가장 큼. 🔴 손댄 자리를 커밋 diff로 WORKLOG에 명시 — 이후 ja 43편 경화가 이 경계를 본다 |
+| 3 | A | ✅ **완료 (2026-08-27 · `f8d9b2bd`)** — ja 15편 · 렌즈 4종(Opus) ~34건 판정·~20건 반영 · 게이트 🔴 0 · 빌드 ✓ | 경위 = WORKLOG 「2026-08-27 (2)」(커밋 diff 경계 명시 완료). wpt·marathon·3bet A5s는 이미 정정본 실측 · apt 「開幕当日」 편차 = locale-intentional-diffs.md 등재 · glossary 역링크 ja 5/5 완성 |
 | 4 | B | id rules 6편 | beginners·game-order·betting-actions·blind-meaning·all-in·showdown (pt 8ee6b047 구획) |
 | 5 | B | id rankings 6편 | + hand-rankings hero `image`/`imageAlt` 복원(미결 표 참조) |
 | 6 | B | id odds 7편 | probability·outs·pot-odds·implied·drawing·equity·card-counting |
@@ -113,8 +112,8 @@ ept Gold Pass 4요소(€1.100·€690), NSW 귀속, 아젠다 12/36. EN·pt는 
 
 | 무엇 | 메모 |
 |---|---|
-| **회차 6 EN 수정의 잔여 로케일 소급 묶음** — 🟢 **es·de(세션 1)·zh·zh-hant(세션 2 `8ee372f4`) 완료** · 잔여 = **ja·id**: ① ept Gold Pass 4요소(€1.100·€690) ② wpt 트로피 고유명·NSW 귀속·아젠다 12/36(`Perpetual` 미보유 id·ja·zh-hant) ③ marathon «Oct–Dez» 제목 id 잔존 ④ EN 08-26 수정 8건(satellite stall·rebuy 정의·앤티 시점·10bb 포지션·홈칩 FAQ·hit-and-run 하우스룰·EPT 브레이크·apt 시제 2곳)의 거울 ⑤ EPT «진행 중» 배너는 EN·pt만(8/29 전환 때 일괄이 나음 — es·de도 의도적 미이식·masterUpdated 07-25 유지) | 각 로케일을 다음에 열 때 소급([[rehardening-stale-link-drift]]). 🔴 **masterUpdated가 «동기화됨»이어도 내용은 안 왔을 수 있다** — EN 커밋 diff로 실물 대조. ⚠ 세션 1 판정: apt stripe는 EN «before the festival»을 따르지 말 것(아래 EN-먼저 묶음 ②) |
-| **회차 5 타 로케일 소급 묶음** — 🟢 **es·de(세션 1)·zh(세션 2) 완료** · 잔여 = **ja·id**: ① EN 5편(glossary·bad-beat·rake·straddle·fish) 08-26 갱신 거울 ② glossary 허브 역링크(실측 ja 4/5·id 0/5 — zh·zh-hant 5/5 ✅) ③ rake 라이브 캡 $4–$6→$3–$6 | 각 로케일을 다음에 열 때 소급. pt·EN=2a6f49d5 · es·de=세션 1 · zh·zh-hant=8ee372f4 |
+| **회차 6 EN 수정의 잔여 로케일 소급 묶음** — 🟢 **es·de(세션 1)·zh·zh-hant(세션 2 `8ee372f4`)·ja(세션 3 `f8d9b2bd`) 완료** · 잔여 = **id뿐**(세션 8·9가 흡수): ① ept Gold Pass 4요소(€1.100·€690) ② wpt 트로피 고유명·NSW 귀속·아젠다 12/36(`Perpetual` 미보유 — **id는 실측부터**, zh·zh-hant·ja 모두 이미 정정본이었다) ③ marathon «Oct–Dez» 제목 id 잔존 ④ EN 08-26 수정 8건(satellite stall·rebuy 정의·앤티 시점·10bb 포지션·홈칩 FAQ·hit-and-run 하우스룰·EPT 브레이크·apt 시제 2곳)의 거울 ⑤ EPT «진행 중» 배너는 EN·pt만(8/29 전환 때 일괄이 나음 — es·de·ja도 의도적 미이식·masterUpdated 07-25 유지) | id를 열 때 소급([[rehardening-stale-link-drift]]). 🔴 **masterUpdated가 «동기화됨»이어도 내용은 안 왔을 수 있다** — EN 커밋 diff로 실물 대조. ⚠ apt는 EN «before the festival»을 따르지 말 것(8/7=개막일 — 5로케일 편차가 `docs/locale-intentional-diffs.md`에 등재됨) |
+| **회차 5 타 로케일 소급 묶음** — 🟢 **es·de(세션 1)·zh·zh-hant(세션 2)·ja(세션 3) 완료** · 잔여 = **id뿐**: ① EN 5편(glossary·bad-beat·rake·straddle·fish) 08-26 갱신 거울 ② glossary 허브 역링크(실측 id 0/5 — ja는 세션 3에서 5/5 완성) ③ rake 라이브 캡 $4–$6→$3–$6 | id를 열 때 소급. pt·EN=2a6f49d5 · es·de=세션 1 · zh·zh-hant=8ee372f4 · ja=f8d9b2bd |
 | 🆕 rake «GGPoker는 일부 프리플롭 팟도 레이크» 주장 — 사업자·시점 종속(EN 상속·다로케일) | 딜러 렌즈 판정 유보 — GG 공식 레이크 표 라이브 재확인 후 유지/중립화. 서두르지 않아도 됨 |
 | 🆕 straddle «solvers abrem 15–20% menos no button» — GTO Wizard 귀속이 이 수치엔 안 걸려 있고 상대/절대 감소 중의적(EN 상속·다로케일) | 수학 렌즈 검증 불가 판정. 출처 원문 확인 시 명시·수정 |
 | 🆕 🟠 `stripMd`(intl-blog-page.tsx:127)가 홑별표 이탤릭을 못 벗겨 **FAQ JSON-LD에 `*` 누출** — glossary 6편에만 8곳, 사이트 전역 이슈 | 렌더러 수정은 DOM 게이트 동반 별건. `**`·`==`·링크는 벗김 확인됨 |
@@ -124,8 +123,8 @@ ept Gold Pass 4요소(€1.100·€690), NSW 귀속, 아젠다 12/36. EN·pt는 
 | 🆕 EN↔pt FAQ 개수 드리프트 — bubble EN 9↔pt 7 · short-stack 9↔7 · tournament 9↔8 · icm 8↔7 (수학 렌즈 관찰 · 수치 손실은 없음 — 빠진 43,9%/52,65%는 pt 본문에 실재) | pt를 다음에 열 때 EN FAQ를 이식할지 판정(재저작 원칙상 의도적 차이일 수도 — EN 경화가 나중에 추가한 FAQ들) |
 | 🆕 pt `flush-vs-straight`·`split-pot-rules` 2편만 masterUpdated 부재(게이트 🟠 추적불가 2) | rules·rankings 회차(1~2) 산물 — 해당 글을 다음에 열 때 EN 동기 시점 실측 후 등재 |
 | 🆕 tvc «Situação/Melhor encaixe» 표가 «Quando sair» H2 아래 있는데 내용은 포맷 적합성(뒤의 «filtro rápido» 표와 행 단위 중복) — EN 동형 | EN에서 먼저 판단 후 전 로케일(교열 렌즈 B-3 — 삭제·흡수 후보) |
-| PDF 앵커 «9-max e 6-max lado a lado» 거짓 — **잔여 2로케일**(id·ja — es·de 세션 1 · zh·zh-hant 세션 2 완료) | EN·pt는 adcffae4에서 정정(PDF 실물엔 6-max 한 줄 규칙뿐). 각 로케일 재저작 문구라 해당 언어 열 때 소급 |
-| 🆕 **세션 1 렌즈 발견 — EN-먼저 판정 후보 묶음**(전부 EN 상속·로케일 임의 소급 금지): ① EN wpt NSW 서술의 **11개월 공백**(캡 «through Sep 2026»→«from Aug 2027», 2026-10~2027-07 한도 미정 — 1차 출처 재확인) ② EN apt **«개막 전 마감» 거짓 — 실은 3자리다**(stripe «closed before the festival» + 요약 «before day one» + note «the day before the series opened» — 세션 2 렌즈가 EN 원문 3곳 실측. 8/7 마감 = 개막일. es·de·zh·zh-hant는 «개막일과 함께 종료»로 이미 정정 — EN을 따라 되돌리지 마라) ③ EN bad-beat overpair 행 **«fills on the river»** — 65%는 두 장 기준이라 «turn or river»가 정확(de 표기가 맞음) ④ EN ept 비용표 — Gold Pass에 €690 포함인데 «Food & extra days €400–600» 만액 계상·총액 무상계 ⑤ EN bad-beat 잭팟 분배 **표** 라벨 «Rest of the table»만 구표현(불릿·FAQ는 dealt-in 정정됨) | EN에서 먼저 판정 후 전 로케일 소급. 별건 소품 2건: ⑥ PDF 자산 내 «Suited adds only ~2–3% equity» 문구 vs 본문 «~2 percentage points»(print HTML 수정+재생성 후보) ⑦ es glossary «Mano a mano»가 hand-for-hand·heads-up 두 항목에 중복(es 다음 회차 판정) |
+| PDF 앵커 «9-max e 6-max lado a lado» 거짓 — **잔여 1로케일**(id — es·de 세션 1 · zh·zh-hant 세션 2 · ja 세션 3 완료) | EN·pt는 adcffae4에서 정정(PDF 실물엔 6-max 한 줄 규칙뿐 — 세션 3 딜러 렌즈가 pdftotext로 재확인). id 재저작 문구라 그 언어 열 때 소급 |
+| 🆕 **세션 1 렌즈 발견 — EN-먼저 판정 후보 묶음**(전부 EN 상속·로케일 임의 소급 금지): ① EN wpt NSW 서술의 **11개월 공백**(캡 «through Sep 2026»→«from Aug 2027», 2026-10~2027-07 한도 미정 — 1차 출처 재확인) ② EN apt **«개막 전 마감» 거짓 — 실은 3자리다**(stripe «closed before the festival» + 요약 «before day one» + note «the day before the series opened» — 세션 2 렌즈가 EN 원문 3곳 실측. 8/7 마감 = 개막일. es·de·zh·zh-hant는 «개막일과 함께 종료»로 이미 정정 — EN을 따라 되돌리지 마라) ③ EN bad-beat overpair 행 **«fills on the river»** — 65%는 두 장 기준이라 «turn or river»가 정확(de 표기가 맞음) ④ EN ept 비용표 — Gold Pass에 €690 포함인데 «Food & extra days €400–600» 만액 계상·총액 무상계 ⑤ EN bad-beat 잭팟 분배 **표** 라벨 «Rest of the table»만 구표현(불릿·FAQ는 dealt-in 정정됨 — **세션 3 딜러 렌즈가 ja에서 독립 재발견, 신뢰도 ↑**) ⑧ 🆕 EN bubble 핸드포핸드 스톨 불릿(세션 3 딜러 렌즈) — 정의문이 사실상 권고로 읽히고, **H4H 개시 후에는 스톨의 실익이 0**(핸드당 고정 2분·전 테이블 동수 진행)이라는 한정이 없어 새틀 불릿(«라이브 스톨 가벌»)과 긴장 — ja는 지시형 어감만 정의형으로 완화했고 실익 한정은 EN-먼저 | EN에서 먼저 판정 후 전 로케일 소급. 별건 소품 3건: ⑥ PDF 자산 내 «Suited adds only ~2–3% equity» 문구 vs 본문 «~2 percentage points»(print HTML 수정+재생성 후보 — **세션 3 교열 렌즈가 pdftotext로 독립 재발견**) ⑦ es glossary «Mano a mano»가 hand-for-hand·heads-up 두 항목에 중복(es 다음 회차 판정) ⑨ 🆕 content 종단 `.trim()` — EN 56편 전부인데 ja(ept·wpt·wsop)·es·de·zh 일부 미이식(렌더 영향 선행 개행 1개뿐 — 각 로케일 열 때 겸사) |
 | 🆕 shc «AQo/**AJo** conforme evolui» — EN 07-19가 AJo 삭제, pt 등 6로케일이 낡은 판 | **UTG 13% 구성 논쟁(사장님 판단 대기 #1)과 같은 갈래**라 임의 소급 안 함. #1 판정 시 함께 |
 | 🆕 pt «dar raise/deu raise»(cb 16곳) vs «aumentar»(나머지) 동사 혼재 | 네이티브 렌즈는 aumentar 통일 제안, 본체는 둘 다 BR 실사용이라 기각 — 코퍼스 단위 통일 여부는 후속 판정 후보 |
 | 🆕 strategy 허브 표의 결정 4·5 목적지가 betting-actions·pot-odds(전용 필라 cb·when-to-fold 아님) | EN 패리티 — **EN에서 먼저** 바꿀지 판정 후 전 로케일 소급(SEO 렌즈 제안) |
