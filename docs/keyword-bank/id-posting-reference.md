@@ -104,8 +104,14 @@ kicker·tiebreak·split-pot·reading 4편은 id 검색축이 없다 — 이 4편
   «Siapa Bertindak Duluan …» — 명사구+질문 혼합형이 id 실검색 형태소와 정합(영어 질문형 직역 금지).
 - **표기 분열 미결 3종**(코퍼스 판정 대기 — 신규 글은 권고안으로): 액션=check · 확인=cek ·
   판=hand · 보드=board · 본문 산문은 As(키워드 «ace kicker»는 영어 유지).
-- **메타 규격**: readTime 단위 = `mnt`(코퍼스 36편 — min/menit 아님) · readnext 라벨 =
-  `Lanjut membaca`(26편 표준) · 관련글 H2 = `Artikel Terkait` · seoTitle ~60자 · desc ≤160자.
+- **메타 규격**: readTime 단위 = `mnt`(코퍼스 전편 — min/menit 아님. outs «11 min»이 마지막
+  이탈이었고 세션 6에서 해소) · readnext 라벨 = `Lanjut membaca`(33편 표준 — Lanjut baca 6·
+  Terus baca는 세션 6에서 소멸) · 관련글 H2 = **`Postingan Terkait`**(⚠ 2026-08-27 정정 —
+  구판이 Artikel Terkait라 적었으나 코퍼스 실측 23:12로 Postingan이 다수. 통일 방향은 코퍼스가
+  심판) · seoTitle ~60자 · desc ≤160자.
+- **probability 허브 지칭 = «bagan»**(세션 6 통일): 그 글 title이 Bagan인데 인바운드 앵커가
+  tabel 8/chart 4로 갈라져 있던 것을 bagan 14곳으로 통일. 새 글에서 이 허브를 링크할 땐
+  «bagan (peluang dan) probabilitas poker»로.
 
 ## 6. 검증된 사실 자산 — §13·룰 번호 (경화에서 확정된 정본, 새 글에서 그대로 재사용)
 
@@ -138,7 +144,8 @@ kicker·tiebreak·split-pot·reading 4편은 id 검색축이 없다 — 이 4편
 |---|---|---|---|---|
 | 4 (`30ec8632`+`0525a4d2`) | rules 6편 | beginners·game-order·betting-actions·blind·all-in·showdown | 제목 축 «Cara Main Poker» 전환 · 드리프트 소급 · 경험담 11곳 · FAQ 신설 | 각 파일 확인 |
 | 5 (`6afcdb56`) | rankings 6편 | hand-rankings(축 전환+hero 복원+FAQ 4)·flush(표 재구성+FAQ 2)·kicker(FAQ 4 이식)·tiebreak(FAQ 5)·split-pot(FAQ 4)·reading(FAQ 3+캡션) | §13·산수 0건(42예시 기계검산) | HR 08-12 · flush 08-12 · kicker 08-26 · tiebreak 07-19 · split 08-11 · reading 08-11 |
-| 6~9 | odds 7 · strategy 8 · glossary 6 · tournament 9 | 미착수 | 잔여 드리프트(회차 5·6 묶음의 id 몫)는 세션 8·9가 흡수 — 정본 = 핸드오프 미결 표 | — |
+| 6 (`74f18a17`) | odds 7편 | EN 경화 FAQ 24문 이식(EN 1:1) · rumus poker 채택 · 국면 라벨 정정(«Flop → turn») · bagan 앵커 통일 14곳 · 네이티브 비문·직역 ~50곳 · 2차 교열 신결함 5건 정정 | prob 08-11 · pot 08-09 · outs 08-12 · draw 08-11 · **implied 08-26** · equity 08-12 · counting 08-14 (전부 EN updated와 일치 실측) |
+| 7~9 | strategy 8 · glossary 6 · tournament 9 | 미착수 | 잔여 드리프트(회차 5·6 묶음의 id 몫)는 세션 8·9가 흡수 — 정본 = 핸드오프 미결 표 | — |
 
 ## 8. 함정·교훈 (id 경화에서 실증된 것 — 다음 회차 필수 숙지)
 
@@ -162,6 +169,12 @@ kicker·tiebreak·split-pot·reading 4편은 id 검색축이 없다 — 이 4편
    코퍼스 26편 실측으로 뒤집혔다 — **통일 방향은 코퍼스 전수 grep이 심판**).
 8. **이미지**: hero·본문 이미지는 18언어 공용 자산 — alt만 id로 재저작(EN alt 1:1 미러가 안전).
    board-puzzle alt는 K-K-K-**A-2**가 정본(구판 A-4는 오기).
+9. 🆕 **세션 6 교훈**: ① odds처럼 id 검색축이 죽은 클러스터의 경화 본체 = «EN FAQ 이식 + 국면
+   라벨·언어 품질» — 실측으로 «재조준 없음»을 판정하는 것 자체가 경화다. ② **19,1(9÷47 플랍→턴)
+   vs 19,6(9÷46 턴→리버) 국면 구분은 이 코퍼스 최다 함정** — 표 컬럼 라벨까지 의심하라(EN
+   «Turn only»가 라벨 오답이었고 3렌즈+기계가 수렴). ③ 렌즈 지적도 1차 출처로 기각된다
+   (penurunan=derivation·equity 70% EN 동형 — 2건 기각). ④ 렌즈가 파일 하나를 컨텍스트 소진으로
+   못 보면 «전수 통과» 보고에서 그 파일을 빼고 본체가 보충 검산하라(수학 렌즈의 card-counting).
 
 ## 9. 신규 포스팅 후보 판정 (2026-08-27 기준)
 

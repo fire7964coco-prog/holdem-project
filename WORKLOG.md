@@ -1,3 +1,41 @@
+## 2026-08-27 (8) — 세션 6/9: id odds 클러스터 7편 경화 (`74f18a17`) · 렌즈 4종 + 2차 교열
+
+probability·pot-odds·outs·drawing-odds·implied-odds·equity·card-counting 7편.
+
+- **기준선 대조(masterUpdated 불신 규율)**: EN 07-15(id 발행 커밋 527f24cc)→HEAD diff 실물 전수.
+  판명 — id odds는 다로케일 미러 커밋들(30b820db·5b831dab·861e4c77·71f4b90d·92d392eb 등)로
+  본문 대부분 기동기 상태였고, **빠진 것은 EN 경화 커밋들의 FAQ와 EN-단독 정정 4건**뿐.
+  probability는 masterUpdated=08-11인데 FAQ 7문 부재 = 거짓 신호 재실증(세션 4·6 연속)
+- **드리프트 소급**: implied-odds FAQ 공식 «−(pot+call)»·앵커 rule of 2&4→/holdem-outs ·
+  card-counting «di kebanyakan yurisdiksi» · (outs 19,1·probability 408은 기미러 확인)
+- **EN 경화 FAQ 24문 이식**: probability 7(쿼즈·희귀도·플랍로열 1/19.600·최다승리핸드·AA 85%·
+  플랍히트 32%·nuts) · pot-odds 3(팟사이즈·벳사이징·equity 상하) · outs 1(9아웃 뜻) ·
+  drawing-odds 3(플드 정의·4vs3장 백도어 4,2%·스트드로) · implied-odds 1(사용 시점) ·
+  equity 3(20%·EV·equity vs EV) — 7편 전부 EN FAQ 순서·개수 1:1
+- **키워드 실측(라쿠 배치 4 · 1258391 · 40종·48m)**: odds 축 유일 생존 = «rumus poker» 390(+28%)
+  → probability 태그·본문 채택. 계열 전멸(pot odds·outs·equity·implied 전부 10/null ·
+  apa itu equity는 트레이딩 지배 함정) → **흡수 전략 실측 재확인, 재조준 없음이 판정**
+- **렌즈 4종(Opus)**: 수학+딜러 ~430수치 재검산 **오류 0·D유형 0**(§13 핸드 5건 통과) —
+  card-counting은 렌즈 컨텍스트 소진으로 미검산 → 본체가 보충 손검산(블로커 16→12 등 전건 일치).
+  네이티브 — 비문 7(tekstbuk·melebih-perkirakan·Abaikan ia·kalaupun nyawanya taruhannya·
+  Bacalah terhadap·disalahkan pada·demi apa-apa) + 패턴(«% waktu» 12곳·무생물 ia/mereka·
+  di mana H2·diskon·head-up 4곳·Rule of 4 dan 2 혼종·boat·long-shot) ~50곳 정정.
+  SEO/GEO — seoTitle 초과 2편 단축(outs 67→59·counting 63→54) · **probability 인바운드 앵커
+  3분열(tabel 8/chart 4/bagan 0) → bagan 통일 14곳** · desc 160 초과 0 실측.
+  교열 — FAQ 삽입 위치 2건 EN 정합 복원(outs·equity) · Terus baca→Lanjut membaca
+- **국면 라벨(3렌즈 독립 수렴 — 값어치 최상)**: outs 변환표 컬럼 «Turn saja»→«Flop → turn»
+  (값이 전부 ÷47이라 옛 라벨이 오답 — **EN이 지금도 «Turn only»로 틀려 있음, EN-먼저 등재**) ·
+  pot-odds·outs 본문에 9÷47/9÷46 병기 · equity·pot-odds 신규 FAQ에 «두 장 전제» 캐비어트 ·
+  implied-odds·pot-odds 예시에 «오버카드는 클린 아웃 아님» 절(id 단독 추가 — EN-먼저 후보)
+- **2차 교열(Opus)**: 반영 편집의 신결함 5건 검출·정정(bagan 치환 잔존 5곳·diskon 잔존 2·
+  equity 공식 영문 표기 3곳 잔존·Tapi-Tapi 중복·오버카드 문구 하프팟 국면 과장) — «수정이
+  결함 주입 공정» 규율 재실증
+- **검수자 오판 기각 2건**(1차 출처가 심판): «penurunan=breakdown 오역» 주장 → EN «derivation»
+  이고 실제 유도가 있어 정확(유지) · 수학 렌즈 «equity 70% 문장 논리 반전» → EN 원문 동형
+  (문법 재저작으로 오독만 제거)
+- 게이트 --locale=id 42/42 🔴 0 · 빌드 653p ✓ · FAQ 스키마 산출물 실측 7편 전건 일치
+  (15·11·9·11·10·11·8) · 커밋 `74f18a17` 푸시·배포
+
 ## 2026-08-27 (7) — 우편함 처리: M-072 수신 + pt 원장 WRONG 2건 다로케일 전수 선정정 (사장님 지시 «검수폴더 우편함 확인»)
 
 - **M-072 확인(유일한 🔴 미확인)**: M-070 요청 3건 이행 완료(`0bd14cc`) · M-071 전건 동의(fact-judge
