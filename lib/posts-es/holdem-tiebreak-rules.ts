@@ -155,7 +155,7 @@ La misma lógica gobierna los botes con póker en la mesa: todos comparten cuatr
 
 Toma la mesa de arriba: A♠ K♥ Q♣ J♦ 10♠, Broadway ya completa. Tu 9♥ 7♠ *sí* hace escalera — K-Q-J-10-9 — pero es **más baja** que la escalera con As que está en el fieltro, así que tus mejores cinco son la propia mesa. Las de todos los demás también.
 
-La versión más sutil es cuando tu mano juega pero tu kicker no. Mesa A♥ K♣ Q♦ J♠ 9♥: A♠ 3♠ contra A♦ 2♦. Ambos emparejan el as, y ambos huecos de kicker se llenan desde la mesa — A-A-K-Q-J para cada jugador. El 3 y el 2 son peso muerto; mejores cinco idénticas, ==g:se reparte.==
+La versión más sutil es cuando tu mano juega pero tu kicker no. Mesa A♥ K♣ Q♦ J♠ 9♥: A♠ 3♠ contra A♦ 2♦. Ambos emparejan el as, y los tres huecos de kicker se llenan desde la mesa — A-A-K-Q-J para cada jugador. El 3 y el 2 son peso muerto; mejores cinco idénticas, ==g:se reparte.==
 
 ![Infografía: en una mesa A-K-Q-J-9, A-3 y A-2 juegan ambos A-A-K-Q-J, así que las manos idénticas dividen el bote](/images/holdem-tiebreak-split.webp "Cuando las mejores cinco coinciden carta por carta, el bote se divide — los palos nunca rompen el empate")
 

@@ -155,7 +155,7 @@ Board: K♣ K♦ 7♠ 3♥ 2♣
 
 | Você tem | Suas melhores 5 | Mão |
 |------|------|------|
-| K♥ 9♦ | K-K-K-9-7 | Trinca de reis (uma carta da mão joga) |
+| K♥ 9♦ | K-K-K-9-7 | Trinca de reis (as duas cartas da mão jogam) |
 | 7♥ 7♦ | 7-7-7-K-K | Full house, setes com reis |
 | A♠ Q♦ | K-K-A-Q-7 | Só um par — os reis da mesa — com A-Q atrás |
 

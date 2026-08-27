@@ -155,7 +155,7 @@ Board: K♣ K♦ 7♠ 3♥ 2♣
 
 | Du hältst | Deine besten 5 | Hand |
 |------|------|------|
-| K♥ 9♦ | K-K-K-9-7 | Drei Könige (eine Hole Card spielt) |
+| K♥ 9♦ | K-K-K-9-7 | Drei Könige (beide Hole Cards spielen) |
 | 7♥ 7♦ | 7-7-7-K-K | Full House, Siebenen voll mit Königen |
 | A♠ Q♦ | K-K-A-Q-7 | Nur ein Paar – die Könige des Boards – mit A-Q dahinter |
 

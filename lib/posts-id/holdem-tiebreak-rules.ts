@@ -155,7 +155,7 @@ Logika yang sama berlaku pada pot dengan quads di meja: semua orang berbagi empa
 
 Ambil meja di atas: A♠ K♥ Q♣ J♦ 10♠, Broadway sudah lengkap. Kartu 9♥ 7♠ Anda *memang* membentuk straight — K-Q-J-10-9 — tapi **lebih rendah** dari straight ace-high yang tergeletak di felt, jadi lima terbaik Anda adalah meja itu sendiri. Begitu pula milik semua orang.
 
-Versi yang lebih halus adalah saat tangan Anda main tapi kicker Anda tidak. Meja A♥ K♣ Q♦ J♠ 9♥: A♠ 3♠ melawan A♦ 2♦. Keduanya memasangkan As, dan kedua slot kicker terisi dari meja — A-A-K-Q-J untuk masing-masing pemain. Angka 3 dan 2 adalah beban mati; lima terbaik identik, ==g:chop.==
+Versi yang lebih halus adalah saat tangan Anda main tapi kicker Anda tidak. Meja A♥ K♣ Q♦ J♠ 9♥: A♠ 3♠ melawan A♦ 2♦. Keduanya memasangkan As, dan ketiga slot kicker terisi dari meja — A-A-K-Q-J untuk masing-masing pemain. Angka 3 dan 2 adalah beban mati; lima terbaik identik, ==g:chop.==
 
 ![Infografik: di meja A-K-Q-J-9, A-3 dan A-2 sama-sama main A-A-K-Q-J, jadi tangan identik membagi pot](/images/holdem-tiebreak-split.webp "Saat lima terbaik cocok nilai per nilai, pot dibagi — jenis kartu tak pernah memecah seri")
 

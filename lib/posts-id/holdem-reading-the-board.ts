@@ -155,7 +155,7 @@ Board: K♣ K♦ 7♠ 3♥ 2♣
 
 | Anda pegang | 5 terbaik Anda | Tangan |
 |------|------|------|
-| K♥ 9♦ | K-K-K-9-7 | Three of a kind K (satu kartu tertutup dipakai) |
+| K♥ 9♦ | K-K-K-9-7 | Three of a kind K (kedua kartu tertutup dipakai) |
 | 7♥ 7♦ | 7-7-7-K-K | Full house, sevens full of kings |
 | A♠ Q♦ | K-K-A-Q-7 | Cuma sepasang — sepasang K dari board — dengan A-Q di belakang |
 

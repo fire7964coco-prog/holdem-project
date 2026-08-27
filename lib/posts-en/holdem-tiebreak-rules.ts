@@ -154,7 +154,7 @@ The same logic runs quads-on-board pots: everyone shares four cards, so the fift
 
 Take the board above: A♠ K♥ Q♣ J♦ 10♠, Broadway already complete. Your 9♥ 7♠ *does* make a straight — K-Q-J-10-9 — but it's **lower** than the ace-high straight sitting on the felt, so your best five is the board itself. So is everyone else's.
 
-The subtler version is when your hand plays but your kicker doesn't. Board A♥ K♣ Q♦ J♠ 9♥: A♠ 3♠ against A♦ 2♦. Both pair the ace, and both kicker slots fill from the board — A-A-K-Q-J for each player. The 3 and the 2 are dead weight; identical best fives, ==g:chop.==
+The subtler version is when your hand plays but your kicker doesn't. Board A♥ K♣ Q♦ J♠ 9♥: A♠ 3♠ against A♦ 2♦. Both pair the ace, and all three kicker slots fill from the board — A-A-K-Q-J for each player. The 3 and the 2 are dead weight; identical best fives, ==g:chop.==
 
 ![Infographic: on an A-K-Q-J-9 board, A-3 and A-2 both play A-A-K-Q-J, so the identical hands split the pot](/images/holdem-tiebreak-split.webp "When best fives match rank for rank, the pot is divided — suits never break the tie")
 

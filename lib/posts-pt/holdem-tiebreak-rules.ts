@@ -155,7 +155,7 @@ A mesma lógica vale em potes de quadra-na-mesa: todos compartilham quatro carta
 
 Pegue o board acima: A♠ K♥ Q♣ J♦ 10♠, Broadway já completa. Seu 9♥ 7♠ *até* faz uma sequência — K-Q-J-10-9 — mas ela é **mais baixa** do que a sequência de ás alto que está no feltro, então suas melhores cinco são a própria mesa. As de todo mundo também.
 
-A versão mais sutil é quando sua mão joga, mas seu kicker não. Board A♥ K♣ Q♦ J♠ 9♥: A♠ 3♠ contra A♦ 2♦. Ambos pareiam o ás, e os dois espaços de kicker se preenchem pela mesa — A-A-K-Q-J para cada jogador. O 3 e o 2 são peso morto; melhores cinco idênticas, ==g:divide.==
+A versão mais sutil é quando sua mão joga, mas seu kicker não. Board A♥ K♣ Q♦ J♠ 9♥: A♠ 3♠ contra A♦ 2♦. Ambos pareiam o ás, e os três espaços de kicker se preenchem pela mesa — A-A-K-Q-J para cada jogador. O 3 e o 2 são peso morto; melhores cinco idênticas, ==g:divide.==
 
 ![Infográfico: num board A-K-Q-J-9, A-3 e A-2 jogam ambos A-A-K-Q-J, então as mãos idênticas dividem o pote](/images/holdem-tiebreak-split.webp "Quando as melhores cinco coincidem valor a valor, o pote é repartido — os naipes nunca desempatam")
 

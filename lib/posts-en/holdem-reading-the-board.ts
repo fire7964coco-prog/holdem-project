@@ -154,7 +154,7 @@ Board: K♣ K♦ 7♠ 3♥ 2♣
 
 | You hold | Your best 5 | Hand |
 |------|------|------|
-| K♥ 9♦ | K-K-K-9-7 | Three kings (one hole card plays) |
+| K♥ 9♦ | K-K-K-9-7 | Three kings (both hole cards play) |
 | 7♥ 7♦ | 7-7-7-K-K | Full house, sevens full of kings |
 | A♠ Q♦ | K-K-A-Q-7 | Just one pair — the board's kings — with A-Q behind |
 

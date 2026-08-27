@@ -155,7 +155,7 @@ Mesa: K♣ K♦ 7♠ 3♥ 2♣
 
 | Tienes | Tus mejores 5 | Mano |
 |------|------|------|
-| K♥ 9♦ | K-K-K-9-7 | Trío de reyes (juega una carta propia) |
+| K♥ 9♦ | K-K-K-9-7 | Trío de reyes (juegan las dos cartas propias) |
 | 7♥ 7♦ | 7-7-7-K-K | Full, full de sietes con reyes |
 | A♠ Q♦ | K-K-A-Q-7 | Solo pareja — los reyes de la mesa — con A-Q detrás |
 
