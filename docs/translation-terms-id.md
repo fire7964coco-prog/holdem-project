@@ -1,5 +1,11 @@
 # id 포커 용어·표기 브리프 (번역 착수 전 웹리서치 결과)
 
+> 🔴 **2026-08-28 라우팅**: 이 파일은 **2026-07 번역 착수 시점의 브리프**다. 그 뒤 경화 트랙
+> (세션 4~8)이 확정·갱신한 용어·표기 판정의 **정본은 `docs/keyword-bank/id-posting-reference.md`
+> §5(문체·용어 판정)**다 — 여기와 그쪽이 갈리면 **그쪽이 심판**이다(예: 이 파일의 «check → cek»는
+> 코퍼스 분열 미결로 재분류됨 · «peringkat kartu» 축은 세션 5에서 «urutan kartu poker»로 전환 ·
+> Anda체·숫자 인니식·§13 불변 등 골격은 그대로 유효). 이 파일엔 새 판정을 쌓지 마라.
+
 > 대상 = **인도네시아어(id, Bahasa Indonesia)**. 인니 포커 글로시(ggpoker.com/id · id.wikipedia Daftar tangan dalam poker · bonanza88 urutan kartu · texasholdemseal-id · merdeka.com 파듀안) 기준. **인니 포커 커뮤니티는 영어 차용어를 매우 많이 사용** → 억지 번역보다 영어 용어 유지가 현지 느낌.
 
 ## 용어 (현지 관습 — 영어 차용 우세 + 인니어 등가)

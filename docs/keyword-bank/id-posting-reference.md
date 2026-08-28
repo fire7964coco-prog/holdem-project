@@ -112,6 +112,21 @@ kicker·tiebreak·split-pot·reading 4편은 id 검색축이 없다 — 이 4편
 - **probability 허브 지칭 = «bagan»**(세션 6 통일): 그 글 title이 Bagan인데 인바운드 앵커가
   tabel 8/chart 4로 갈라져 있던 것을 bagan 14곳으로 통일. 새 글에서 이 허브를 링크할 땐
   «bagan (peluang dan) probabilitas poker»로.
+- 🆕 **세션 8 확정 판정(2026-08-28 · glossary 클러스터 — 새 글에서 그대로 적용)**:
+  · **«saya kena cooler»** — 영어 과거분사를 술어로 쓰는 «saya coolered» 금지(문장 안에서는
+    kena cooler · 용어 표제/정의 대상으로서의 coolered는 유지)
+  · **flat fee = «biaya tetap»**(rata 금지 — biaya rata-rata 평균 요금으로 오독. 단 «dibagi rata»
+    균등 분배 뜻은 정상) · 선불 = **«di muka»**(di depan은 물리적 위치만)
+  · 코퍼스 다수파 표기: **variance**(varians ✗) · **leak**(kebocoran ✗) · «핸드 내내» =
+    **«sepanjang jalan»**(sepanjang waktu ✗) · 대회·판 진행 강조엔 위 형태 유지
+  · 관련 카드 아이브로 라벨: tiebreak 카드 = **«Pemecah Seri»**(코퍼스 4:2:2 다수파) ·
+    odds 카드 = **«Peluang & Matematika»** 방향(Odds & Math 계열 6:6 분열 — 신규는 Peluang으로)
+  · 🔴 **함정 맨몸 태그 금지**: rake·straddle·cooler·fish·tilt를 태그에 단독으로 쓰지 마라 —
+    id에서 전부 비포커 의도 지배(rake=creepypasta/갈퀴 · straddle=체조 · cooler=쿨러백 ·
+    fish=낚시 · tilt=bahasa gaul). 반드시 «~ poker» 한정형(근거 = 뱅크 배치 6)
+  · 직역 지뢰 추가분: membeli+수혜자(→memberi) · «dengan good»(→saat unggul) · mengkreditkan
+    (금융 뜻 — 귀속은 menyebut) · pejudi jalanan(→penjudi keliling) · menikahi(핸드에 «결혼» ✗)
+    · gantung diri(자살 직설 — 관용구로 쓰지 마라) · «akan pernah»(will ever 직역)
 
 ## 6. 검증된 사실 자산 — §13·룰 번호 (경화에서 확정된 정본, 새 글에서 그대로 재사용)
 
@@ -146,7 +161,8 @@ kicker·tiebreak·split-pot·reading 4편은 id 검색축이 없다 — 이 4편
 | 5 (`6afcdb56`) | rankings 6편 | hand-rankings(축 전환+hero 복원+FAQ 4)·flush(표 재구성+FAQ 2)·kicker(FAQ 4 이식)·tiebreak(FAQ 5)·split-pot(FAQ 4)·reading(FAQ 3+캡션) | §13·산수 0건(42예시 기계검산) | HR 08-12 · flush 08-12 · kicker 08-26 · tiebreak 07-19 · split 08-11 · reading 08-11 |
 | 6 (`74f18a17`) | odds 7편 | EN 경화 FAQ 24문 이식(EN 1:1) · rumus poker 채택 · 국면 라벨 정정(«Flop → turn») · bagan 앵커 통일 14곳 · 네이티브 비문·직역 ~50곳 · 2차 교열 신결함 5건 정정 | prob 08-11 · pot 08-09 · outs 08-12 · draw 08-11 · **implied 08-26** · equity 08-12 · counting 08-14 (전부 EN updated와 일치 실측) |
 | 7 | strategy 8편 | strategy(필라)·3bet·continuation-bet·position-play·positions·shc·when-to-fold·limping | EN 경화 FAQ 이식 10문(EN 1:1) · 드리프트 소급(PDF 앵커 «9-max+6-max 한 줄»·suited 2pt AKs67/AKo65·TT+·rule of 2 dan 4→/holdem-outs·squeeze 15–16,5는 기미러 확인) · pt 원장 #41 «폴드 과다→밸류벳 출혈» 누수 뒤바뀜 — **8로케일 전수 정정**(en·es·de·ja·zh·zh-hant·pt·id) · 배치 5 실측 56종(전략축 전부 ≤50 = 재조준 없음 판정·필라 태그 «cara menang poker» 1교체) · «Baca Juga»(3bet 단독) → Postingan Terkait 정합화 | 각 파일 헤더(shc는 AJo 보류로 08-11 유지+주석) |
-| 8~9 | glossary 6 · tournament 9 | 미착수 | 잔여 드리프트(회차 5·6 묶음의 id 몫)는 세션 8·9가 흡수 — 정본 = 핸드오프 미결 표 | — |
+| 8 (`79bc8b55`) | glossary 6편 | glossary(허브)·bad-beat·cooler·fish·rake·straddle | 역링크 0/5→5/5 · rake 캡 $3–$6 · glossary 표 10행+스트라이프 100+(실측 107행) · 배치 6(istilah/kamus/muck 채택·함정 4종 기록) · **마부치 올인 시점 EN·id 선정정**(PokerNews 축어 — 6로케일 소급 미결) · 인포그래픽 alt 3건 실물 대조 정정 · FAQ 스키마 9/8/10/8/11/9 | glossary·fish·rake·straddle 08-26 · cooler 08-11 · bad-beat 08-28 |
+| 9 | tournament 9편 | 미착수 | 잔여 드리프트(회차 5·6 묶음의 id 몫)는 세션 9가 흡수 — 정본 = 핸드오프 미결 표 | — |
 
 ## 8. 함정·교훈 (id 경화에서 실증된 것 — 다음 회차 필수 숙지)
 
@@ -176,6 +192,14 @@ kicker·tiebreak·split-pot·reading 4편은 id 검색축이 없다 — 이 4편
    «Turn only»가 라벨 오답이었고 3렌즈+기계가 수렴). ③ 렌즈 지적도 1차 출처로 기각된다
    (penurunan=derivation·equity 70% EN 동형 — 2건 기각). ④ 렌즈가 파일 하나를 컨텍스트 소진으로
    못 보면 «전수 통과» 보고에서 그 파일을 빼고 본체가 보충 검산하라(수학 렌즈의 card-counting).
+10. 🆕 **세션 8 교훈**: ① **인포그래픽 alt는 이미지 실물을 열어 대조하라** — glossary 카테고리
+    alt가 «Situasi»를 적었는데 실물 타일은 SLANG이었고(EN 유래), fish food-chain «terlemah ke
+    terkuat»도 실물(칩 크기=판돈)·본문(whale⊂fish)과 정면 모순이었다. 텍스트만 보면 못 잡는다.
+    ② **유명 핸드 서사는 액션 «순서»까지 1차 출처 축어로** — 마부치 2008은 올인이 리버 뒤였는데
+    8로케일 전부 «올인 후 리버»로 서술하고 있었다(PokerNews 축어로 판정 · EN·id 선정정).
+    ③ 렌즈 지적의 «수치 제안»은 실측 없으면 받지 마라(time charge $5–$8/30분 제안은 산수일 뿐
+    실측 아님 — 기각). ④ 검수 반영 자체가 잔존을 만든다 — 치환형 정정은 반영 직후 같은 파일을
+    **옛 형태로 재grep**(coolered 2·dengan good 1·rata 1이 2차 교열에서 나왔다).
 
 ## 9. 신규 포스팅 후보 판정 (2026-08-27 기준)
 
