@@ -1,3 +1,39 @@
+## 2026-08-28 (3) — M-073 이행: pt 세션 0~6 정정 지시 선발신 처리 (`0ba0687c`) — WRONG 4클러스터 다로케일 + pt RISKY 16 + 소급 3건
+
+검수장 M-073(선발신) 수신 → 당일 전량 이행. 31파일 · 9로케일 + KO. 게이트 8로케일 전부 🔴 0 · --schema 일치 · 빌드 ✓ · push 완료.
+
+- **A-1 셔틀(8로케일 × apt 4곳 + marathon 2곳)**: p-city 공지 N_SEQ=5591 본체 라이브 독립 재현(Playwright 축어) —
+  T1 14C 폐지→3C 단독 · 30분→20분 · 5h/23h 불변. KO 무행위 실측 확인. 🔴 **de «2A» 재실사 = 오기 확정**
+  (공식 오시는 길 실측: T2 = 1층 4A · 60분 · 05:05/23:05) + **id에도 동일 «2A» 2곳 실측 발견**(0건≠없음) → 둘 다 4A.
+  ⚠ 같은 공식 페이지의 숨은 «운영 시간표 상세» 팝업에 2A·14C·구시각이 잔존(가시 탭과 자기모순) — de·id 오기의
+  출처로 추정, 검수장에 통지(공식 자기모순 사례)
+- **A-2 «8/7=시리즈 첫날»**: KO 3곳(L50·L319·FAQ) + EN 3곳(tldr·note·결론) + pt 3곳 + es 3곳(**L142는 검수장
+  앵커 미매치 자리 — 실측으로 발견**) + id tldr 1곳. ja·zh·zh-hant는 이미 정정본 실측(개막당일/随開幕). 전부
+  «개막일» 라벨 + «ME는 8/9 시작» 국면 병기 — «antes do primeiro dia»류 일괄 치환 금지 준수
+- **A-3 WPT 3건**: starpoker 이벤트 페이지 3건(13881·13941·14151) 본체 축어 재현 — «This is a Ladies event.» ·
+  «One Bounty Chip … valued at $150»(고정) · HR Qualifier $1,050. 8로케일: Ladies «전원 참가»→여성 전용 ·
+  Bonzai «누진»→고정 $150 · 새틀 상한 $270–550→**$270–1.050**(pt·zh·zh-hant 범위 행) + EN형 표 5로케일
+  (en·de·es·id·ja)에 $10K HR Direct Qualifier 행 신설. 브로슈어 PDF도 확보("progressive" 0건 재확인 — 이미지 기반이라 pdftotext 7.7KB뿐)
+- **A-4 AJPC 4–13 Des**: en·es·de·ja·pt·zh·zh-hant 7로케일 확정 기입(표 2곳+H3+상세 불릿 — pokercalendar 8/28 검증
+  표기), 인접 «이벤트 일정·buy-in TBA»는 참 유지(지시서 ⚠ 준수). 핸드오프 소급 ① 종결
+- **소급 ③ NSW «~Sep 2026» 파편**: de·ja + **es·zh·zh-hant 3곳 추가 실측 발견**(0건≠없음) — 5로케일 삭제.
+  pt는 «축제 한정» 서술로 자기정합이라 유지. 소급 ③ 종결
+- **소급 ④ marathon Chuncheon 매진 상태 장치**: id 08-28 정본을 EN+es·de·ja·zh·zh-hant에 이식(tldr·직답·루트
+  캐비어트·FAQ 2문·결론 — de는 tldr·직답 기보유라 3곳만·pt는 4곳). AJPC와 함께 marathon 8로케일 완결. 소급 ④ 종결
+- **pt RISKY 16 반영**(17 중 #20은 A-2가 해소 · 전부 원장 행번호 근거): apt 4(«Agenda completa»→principais ·
+  등록 시제 과거화+próxima parada · 사이드 범위 라벨에 Micro Main 병기 · K-ETA 11개국 실명 열거+«Portugal não está
+  entre eles») · bubble 1(H4H 스톨 «Funciona»→실익 0으로 재작성) · icm 3(Harville «costuma ser creditada» 완화 ·
+  버블 점프 상대화 · 포지션 불릿 EN 08-28 거울) · tvc 2(목표 셀 «Maximizar EV de premiação (ICM)» · 맥스바이인
+  조건절) · tournament 5(구조표 payouts 3중 분리 서술 · 100–200→100–300BB 2중 · WSOP ME 2026 파이널 분리 개최)
+- **권고 ② short-stack pt 미러 2**: M 귀속 «O nome vem de Paul Magriel…Harrington» + 규칙 1 «Quase nunca…first-in»
+  (fc404ca8 de 거울). 권고 ①(비자·NSW §73A 재실사)은 별도 리서치 회차로 미결 유지 · 권고 ③은 접수(반영 불요)
+- 🔴 **세션 9 «버튼 로테이션 반전(BTN→SB→BB)» 판정 반증**: 본 세션 직접 검산(3인·4인·풀링 시뮬) — 버튼 다음
+  핸드는 **CO**이고(BTN→CO→…→UTG→BB→SB), «버튼이 블라인드를 가장 늦게 낸다»는 **참이었다.** EN·id에 넣은 대체
+  문구(first-in 셔브 fold equity)도 참이라 본문 무해 — 그러나 «반전» 근거는 폐기. pt는 EN 08-28 문구 거울로 처리
+  (RISKY #61 BB «다음 핸드 강제 올인» 괄호 오류 동시 해소). 잔여 de·ja·zh·zh-hant 소급은 «반전 정정»이 아니라
+  **«EN 08-28 문구 거울»**로 재정의(핸드오프 갱신)
+- 우편함: M-073 🟡 확인(`b3e1603`) → 이행 후 M-074 회신 발신. 감시 앵커 34행 🔴 점등 = 반영 신호(정상)
+
 ## 2026-08-28 (2) — 세션 9/9: id tournament 클러스터 9편 경화 — 트랙 B 완결(id 42/42) · 라이브 전수 실측 · EN·id 선정정 2건
 
 개념 5편(tournament 필라·tvc·icm·bubble·short-stack) + 이벤트 4편(apt·ept·wpt·marathon). 트랙 B(세션 4~9) 종결.
