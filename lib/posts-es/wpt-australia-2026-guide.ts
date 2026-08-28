@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "WPT Australia 2026: 10–30 sep, The Star Sydney. Dos eventos estrella: AUD $1,500 WPT Prime (17–22 sep) y AUD $5,000 WPT Championship (24–30 sep). Satélites presenciales desde AUD $270, con clasificatorios al Championship por $290 y $550. El premio de primer puesto del Championship incluye un asiento de $15,000 al WPT World Championship. Obligatorio ser mayor de 18 años, socio del Star Club y respetar el código de vestimenta smart-casual.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-08-16",
-  masterUpdated: "2026-08-16",
+  updated: "2026-08-28",
+  masterUpdated: "2026-08-28",
   readTime: "14 min",
   emoji: "🦘",
   layout: "tournament-guide",
@@ -107,6 +107,7 @@ Es la pregunta que hace todo debutante. Aquí va el desglose honesto:
 | **Prime Championship** | Satélite 1 de cada 6 | ==g:$290== | Asiento al Prime |
 | **Australian Poker Cup** | Satélite 1 de cada 5 | $270 | Asiento al Poker Cup |
 | **Mini-Championship** | Satélite 1 de cada 8 | $290 | Asiento al Mini-Championship |
+| **$10K High Roller Direct Qualifier** | 22 sep, 1 de cada 10 | $1,050 | Asiento al High Roller de $10K |
 
 </div>
 
@@ -126,9 +127,9 @@ Si estás fuera de Australia y quieres calentar con satélites online antes de v
 |:---|:---|:---:|:---|
 | Australian Poker Cup | 10–14 sep | ==g:$1,150== | Multi-flight |
 | Aussie Monster Stack | 13–14 sep | $1,250 | Deep stack |
-| Ladies Australian Championship | 15–16 sep | ==g:$500== | Abierto a todos |
+| Ladies Australian Championship | 15–16 sep | ==g:$500== | Evento femenino (Ladies) |
 | **WPT Prime Australia Championship** | ==**17–22 sep**== | ==**$1,500**== | ==g:Mesa final retransmitida== |
-| Bonzai Bounty | 19 sep | $460 | Bounty progresivo |
+| Bonzai Bounty | 19 sep | $460 | Ficha de bounty fija de $150 |
 | **$10K WPT High Roller** | 23–24 sep | $10,000 | High roller |
 | **WPT Australia Championship** | ==**24–30 sep**== | ==**$5,000**== | ==g:Mesa final retransmitida== |
 | Mini-Championship | 27–28 sep | $2,000 | Formato de 2 días |
@@ -216,7 +217,7 @@ Esta sección es la que ==r:se salta la guía de toda la competencia== — y es 
 
 ### Ley de NSW: límite diario de juego en efectivo de AUD $5,000
 
-Bajo las **reformas de manejo de efectivo de los casinos de NSW**, existe un **límite diario de AUD $5,000 en efectivo** para el juego (este tope se mantiene hasta septiembre de 2026 y está previsto que baje a AUD $1,000/día a partir de agosto de 2027). El juego es **carded** — juegas a través de tu tarjeta del Star Club — y todas las entradas de torneo (incluidos los satélites) deben comprarse con fichas de juego, no con tarjetas de crédito ni efectivo en la mesa.
+Bajo las **reformas de manejo de efectivo de los casinos de NSW**, existe un **límite diario de AUD $5,000 en efectivo** para el juego (está previsto que este tope baje a AUD $1,000/día a partir de agosto de 2027). El juego es **carded** — juegas a través de tu tarjeta del Star Club — y todas las entradas de torneo (incluidos los satélites) deben comprarse con fichas de juego, no con tarjetas de crédito ni efectivo en la mesa.
 
 ### Transferencia bancaria a The Star Sydney — antes de llegar
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A bolha é o momento logo antes do dinheiro, onde mais uma eliminação paga todo mundo. Como quebrar significa não ganhar nada, sobreviver vale mais que as fichas que você ganharia — então os ranges de call apertam muito enquanto os shoves continuam largos. Big stacks atacam, médios são os mais presos (não os short stacks), e numa bolha de satélite você folda tudo, até ases, assim que sua vaga está garantida.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-08-26",
+  updated: "2026-08-28",
   masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "13 min",
@@ -138,7 +138,7 @@ A outra metade é que o bubble factor acompanha **quem está do outro lado**, n�
 **Quando o dinheiro está perto, os torneios mudam para "hand-for-hand" — toda mesa joga exatamente uma mão ao mesmo tempo, e então espera — justamente para impedir que jogadores deem stall para dentro do dinheiro.** Sem isso, jogadores em mesas lentas poderiam foldar mão após mão enquanto mesas mais rápidas queimavam a bolha. O hand-for-hand nivela o jogo:
 
 - **Como funciona:** o diretor de torneio pausa o relógio, e a partir daí cada mão desconta ==2 minutos== fixos do nível, não importa quanto ela demore (regra 126.a e 126.c da WSOP; RP-8 da TDA) — então os blinds continuam subindo durante a bolha, só que por mão e não por minuto real. Todas as mesas dão uma mão, e nenhuma mesa começa a próxima até que todas tenham terminado. Se dois jogadores quebram na mesma mão hand-for-hand **na mesma mesa**, o que tinha menos fichas no início da mão fica com a colocação mais baixa (a da bolha); se quebram em **mesas diferentes**, são classificados como empate e dividem os dois prêmios envolvidos.
-- **Stalling:** usar todo o time bank em cada decisão para ver menos mãos (e foldar para dentro do dinheiro). Funciona justamente porque enrolar não custa relógio: a mão desconta os seus 2 minutos do mesmo jeito, você foldando na hora ou queimando o time bank inteiro. Big stacks não têm motivo para dar stall — eles querem mais mãos para atacar. Short stacks e stacks médios às vezes dão stall para sobreviver, ==mas stall em excesso pode render um clock call ou uma penalidade== — tanke dentro do razoável, sem queimar o time bank de propósito.
+- **Stalling:** usar todo o time bank em cada decisão para tentar ver menos mãos (e foldar para dentro do dinheiro). Dentro do hand-for-hand, porém, isso não compra nada: a mão desconta os seus 2 minutos do mesmo jeito e todas as mesas jogam o mesmo número de mãos — enrolar só estica o tempo real, sem reduzir os blinds que você paga nem as mãos que vê. Big stacks não têm motivo para dar stall — eles querem mais mãos para atacar. E ==stall em excesso pode render um clock call ou uma penalidade== — tanke dentro do razoável, sem queimar o time bank de propósito.
 - **Explore isso:** porque todo mundo desacelera, um big stack que continua aplicando pressão durante o hand-for-hand junta blinds e antes quase sem oposição.
 
 ---

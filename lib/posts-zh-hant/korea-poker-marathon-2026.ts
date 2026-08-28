@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "韓國撲克馬拉松 2026 全攻略——賽事、馬拉松與仁川賭場一趟玩透",
   seoTitle: "韓國撲克馬拉松 2026——賽事×馬拉松行程指南",
   desc: "2026 年只剩 JTBC 首爾還收報名——春川與 YTN 都已截止。賽程表、報名窗口，加上仁川機場十分鐘就到的 Paradise City，一趟飛韓國全串起來。",
-  tldr: "韓國秋季頂級馬拉松（春川 10/25、JTBC 首爾 11/1、Garmin Run 11/15）正好落在最舒服的跑步天氣。仁川機場旁的 Paradise City 賭場全年開放現金桌——僅限外國人、離航廈十分鐘。撲克錦標賽（APT 仁川 8/7–16、APT 濟州 9/25–10/7）也在同一個秋季窗口——一趟行程兩邊都吃得到。",
+  tldr: "韓國秋季頂級馬拉松（春川 10/25、JTBC 首爾 11/1、Garmin Run 11/15）正好落在最舒服的跑步天氣。仁川機場旁的 Paradise City 賭場全年開放現金桌——僅限外國人、離航廈十分鐘。撲克錦標賽（APT 仁川 8/7–16、APT 濟州 9/25–10/7）也在同一個秋季窗口——一趟行程兩邊都吃得到。2026 年還開放報名的只剩 JTBC（至 9/4）。",
   category: "tournament",
   date: "2026-07-23",
-  updated: "2026-08-17",
-  masterUpdated: "2026-08-17",
+  updated: "2026-08-28",
+  masterUpdated: "2026-08-28",
   keepImagesInBody: true,
   readTime: "14 分鐘",
   emoji: "🏃",
@@ -44,7 +44,7 @@ export const POST: Post = {
 ---
 
 > **快速解答**
-> 韓國撲克錦標賽：==**APT 仁川 8/7–16**==、==**APT 濟州 9/25–10/7**==（都在僅限外國人的賭場）。韓國馬拉松：==**春川 10/25**==、==**JTBC 首爾 11/1**==、==**Garmin Run 11/15**==。APT 濟州 10/7 結束 → 春川馬拉松 10/25 開跑——==g:中間隔 18 天，一趟行程全吃。==
+> 韓國撲克錦標賽：==**APT 仁川 8/7–16**==、==**APT 濟州 9/25–10/7**==（都在僅限外國人的賭場）。韓國馬拉松：==**春川 10/25**==、==**JTBC 首爾 11/1**==、==**Garmin Run 11/15**==。APT 濟州 10/7 結束 → 春川馬拉松 10/25 開跑——==g:中間隔 18 天，一趟行程全吃。== ==r:2026 年馬拉松報名只剩 JTBC 還開放（至 9/4）——春川與 Garmin 都已額滿。==
 
 ---
 
@@ -54,7 +54,7 @@ export const POST: Post = {
 
 **天氣窗口：** 韓國的夏天（六到八月）又熱又極度潮濕——跑步或觀光都不理想。但 ==**十月和十一月大概是造訪東亞最好的兩個月**==。氣溫降到 8–15°C，空氣乾爽通透，鄉間的楓葉轉成橙紅。韓國每個認真的跑者都懂這一點，整份馬拉松賽曆都是繞著這個窗口排的。
 
-**賭場位置：** Paradise City 賭場座落在一個度假村園區裡，==g:與仁川國際機場實體相連==。第一航廈免費接駁車每 30 分鐘一班。賭場全年營運、有現金桌——不必打錦標賽也能玩。對國際牌手來說，這是全亞洲最好進的賭場：仁川落地、入住、開打。
+**賭場位置：** Paradise City 賭場座落在一個度假村園區裡，==g:與仁川國際機場實體相連==。第一航廈免費接駁車每 20 分鐘一班。賭場全年營運、有現金桌——不必打錦標賽也能玩。對國際牌手來說，這是全亞洲最好進的賭場：仁川落地、入住、開打。
 
 **交通：** 首爾的地鐵又便宜又快，還有雙語標示。從 Paradise City（搭 AREX 機場快線）進首爾市中心約 1 小時。從首爾到春川（馬拉松所在城市）搭特快列車 90 分鐘。所有點都串得起來。
 
@@ -192,10 +192,10 @@ export const POST: Post = {
       <td style="padding:10px 14px"><span style="background:rgba(239,68,68,0.15);color:#f87171;padding:2px 7px;border-radius:4px;font-size:12px;font-weight:600">⚡ JTBC 馬拉松 11/1 = 本賽事第 3 天</span></td>
     </tr>
     <tr style="background:rgba(212,175,55,0.07);border-bottom:1px solid rgba(255,255,255,0.06)">
-      <td style="padding:10px 14px;font-weight:700;white-space:nowrap">2026 年 12 月（待定）</td>
+      <td style="padding:10px 14px;font-weight:700;white-space:nowrap">12/4–13</td>
       <td style="padding:10px 14px"><strong>AJPC Samurai Circuit<br/><span style="font-size:12px;color:hsl(var(--muted-foreground))">Incheon 2026 III</span></strong></td>
       <td style="padding:10px 14px">Paradise City，仁川</td>
-      <td style="padding:10px 14px;color:hsl(var(--muted-foreground))">年末選項 · 賽程未定</td>
+      <td style="padding:10px 14px;color:hsl(var(--muted-foreground))">年末選項 · 單項賽程與買入未定</td>
     </tr>
   </tbody>
 </table>
@@ -230,11 +230,11 @@ export const POST: Post = {
 
 ---
 
-### AJPC Samurai Circuit Incheon III（2026 年 12 月——日期待定）
+### AJPC Samurai Circuit Incheon III（2026 年 12 月 4–13 日）
 
 ==**AJPC Samurai Circuit**== 為韓國撲克賽曆收尾，12 月在 Paradise City 開打。對錯過 10–11 月窗口的牌手，這是年末的選項。
 
-- **日期：** 2026 年 12 月（日期待定——等待官方賽程）
+- **日期：** 2026 年 12 月 4–13 日（據 pokercalendar.asia 賽曆 · 8/28 查核）
 - **場館：** Paradise City 賭場，仁川
 - **資訊：** [pokercalendar.asia](https://pokercalendar.asia/en/pokertournaments/ajpc-samurai-circuit-incheon-2026-iii/)
 - 賽程與買入待公布
@@ -249,7 +249,7 @@ export const POST: Post = {
 
 **基本資訊：**
 - 地點：仁川，與仁川國際機場實體相連
-- 免費接駁：第一航廈（3C 與 14C 登機門），每 30 分鐘一班，車程約 10 分鐘
+- 免費接駁：第一航廈（3C 登機門），每 20 分鐘一班，車程約 10 分鐘
 - 飯店：Hotel Paradise，五星級，園區內
 - ==r:僅限外國人——無海外永久居留權的韓國公民不得進入==
 - 海外韓國人（在海外的永久居民）可持韓國護照＋綠卡或移民證明進入
@@ -327,10 +327,10 @@ export const POST: Post = {
       <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">半馬 · 10K · 8:00 · 報名 7/1–3</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
-      <td style="padding:9px 12px;font-weight:700;white-space:nowrap">12 月（待定）</td>
+      <td style="padding:9px 12px;font-weight:700;white-space:nowrap">12/4–13</td>
       <td style="padding:9px 12px">🃏 AJPC Samurai Circuit III</td>
       <td style="padding:9px 12px">Paradise City，仁川</td>
-      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">賽程待公布</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">單項賽程與買入待公布</td>
     </tr>
     <tr style="border-top:1px solid rgba(255,255,255,0.08)">
       <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">全年</td>
@@ -344,7 +344,7 @@ export const POST: Post = {
 
 ==g:沒人在講的甜蜜點：== **APT 濟州 10 月 7 日結束——春川馬拉松是 10 月 25 日。** 中間隔 18 天。打完錦標賽，留在韓國，跑那場馬拉松。一張機票兩件事全包。如果你願意待到 11 月 1 日，JTBC 首爾也就在那裡。
 
-最乾淨的一趟雙吃：APT 仁川（8/7–16）→ 在首爾休養 → 春川馬拉松（10/25）或 JTBC（11/1）。或者：APT 濟州（9/25–10/7）→ 在韓國待 18 天 → 春川（10/25）。
+最乾淨的一趟雙吃：APT 仁川（8/7–16）→ 在首爾休養 → 春川馬拉松（10/25）或 JTBC（11/1）。或者：APT 濟州（9/25–10/7）→ 在韓國待 18 天 → 春川（10/25）。⚠ 2026 年還開放的馬拉松報名只有 JTBC（至 9/4）——春川這條路線請當作 2027 年的模板。
 
 ---
 
@@ -487,7 +487,7 @@ A. 可以。春川與 JTBC 馬拉松都有專為外國跑者設的英文報名�
 
 **Q. 同一趟能同時跑春川（10/25）和 JTBC 首爾（11/1）嗎？**
 
-A. 可以——兩者只差一週。春川離首爾搭車約 80 分鐘。週日跑春川，週一到週六恢復，隔週日跑 JTBC。很多韓國跑者就是這樣連兩週跑。記得多留恢復時間；春川賽道有坡。
+A. 就賽曆而言可以——兩者只差一週。春川離首爾搭車約 80 分鐘。週日跑春川，週一到週六恢復，隔週日跑 JTBC。很多韓國跑者就是這樣連兩週跑。2026 年注意：春川名額已售罄，所以這套完整組合實際上是 2027 年的計畫。記得多留恢復時間；春川賽道有坡。
 
 **Q. 週日跑完馬拉松抵達，Paradise City 賭場還開嗎？**
 
@@ -495,7 +495,7 @@ A. 開。Paradise City 賭場 24 小時營運。週日賽後入住對國際旅�
 
 **Q. 沒有韓國地址，外國人能報名春川馬拉松嗎？**
 
-A. 可以。chuncheonmarathon.com 的外國人報名分頁就是為海外參賽者設計的。你需要護照號碼、電子郵件和付款方式。賽事包在賽前於現場發放。
+A. 可以——流程每年都一樣（2026 年名額已售罄；下一個窗口約在 2027 年 7 月開啟）。chuncheonmarathon.com 的外國人報名分頁就是為海外參賽者設計的。你需要護照號碼、電子郵件和付款方式。賽事包在賽前於現場發放。
 
 **Q. Garmin Run 場地跟 K-pop 有什麼關聯？**
 
@@ -513,7 +513,7 @@ A. 帶好護照（無海外永久居留權的韓國公民不得進入）、年�
 
 同時握著一份撲克資金和一本馬拉松訓練日誌的人，是真實存在的社群。BTS 的 Suga 沒有發明這個重疊——他只是讓它被看見。
 
-要記下的日期：==**春川 10/25**==、==**JTBC 首爾 11/1**==、Garmin Run 11/15。Paradise City 全年開放。
+要記下的日期：==**春川 10/25**==、==**JTBC 首爾 11/1**==、Garmin Run 11/15——2026 年唯一還開放的報名是 JTBC，至 9/4 止。Paradise City 全年開放。
 
 想看完整的撲克錦標賽全貌（APT 仁川，保證獎池 $2.7M，8 月 7–16 日）與賽事運作，先讀[德州撲克錦標賽入門指南](/zh-hant/blog/holdem-tournament)。想搞懂錦標賽與現金桌的策略差異：[錦標賽 vs 現金桌](/zh-hant/blog/holdem-tournament-vs-cash-game)。
 

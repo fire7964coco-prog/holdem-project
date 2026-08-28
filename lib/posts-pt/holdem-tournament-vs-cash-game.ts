@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "No cash game, as fichas representam dinheiro real e os blinds costumam ficar fixos. No torneio, as fichas são sua vida no evento, os blinds sobem e o pagamento depende da colocação final.",
   category: "tournament",
   date: "2026-06-11",
-  updated: "2026-08-26",
+  updated: "2026-08-28",
   masterUpdated: "2026-08-26",
   hideSummaryImageSlot: true,
   readTime: "18 min",
@@ -66,7 +66,7 @@ Na mesa, a diferença aparece assim: em um cash game $1/$2, pagar $60 no river c
 | Entrada | Buy-in no valor escolhido | Buy-in fixo |
 | Saída | Quando quiser | Até cair ou terminar |
 | Blinds | Geralmente fixos | Sobem com o tempo |
-| Objetivo | Maximizar EV no longo prazo | Sobreviver e subir pay jumps |
+| Objetivo | Maximizar EV no longo prazo | Maximizar EV de premiação (ICM) |
 | Estratégia-chave | Deep-stack postflop | Pressão de stack, ICM, bolha |
 
 </div>
@@ -382,7 +382,7 @@ A. Regra comum: 20-40 buy-ins para cash game e 100+ para MTTs de field grande, c
 
 **Q. Com quantos big blinds se começa num cash game vs num torneio?**
 
-A. No cash game, entre com o máximo da mesa — num $1/$2 isso costuma ser $200–$300, ou seja, uns 100–150 big blinds — porque stacks profundos recompensam skill pós-flop e deixam você ganhar um stack inteiro quando está na frente. O torneio escolhe a profundidade por você: normalmente se começa com 100-300 big blinds, mas os blinds subindo encolhem isso para 20, depois 10, depois território de push/fold. Versão curta: entre deep no cash e, no torneio, acompanhe seu número de big blinds cair e se ajuste.
+A. No cash game, se você já se sente sólido no pós-flop, entre com o máximo da mesa — num $1/$2 isso costuma ser $200–$300, ou seja, uns 100–150 big blinds — porque stacks profundos recompensam skill pós-flop e deixam você ganhar um stack inteiro quando está na frente (se ainda está aprendendo o pós-flop, um stack mais curto simplifica as decisões). O torneio escolhe a profundidade por você: normalmente se começa com 100-300 big blinds, mas os blinds subindo encolhem isso para 20, depois 10, depois território de push/fold. Versão curta: entre deep no cash e, no torneio, acompanhe seu número de big blinds cair e se ajuste.
 
 **Q. Quantas fichas preciso para um cash game em casa?**
 

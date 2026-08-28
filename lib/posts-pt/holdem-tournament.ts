@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Num torneio de poker você paga um buy-in fixo por fichas, e os blinds sobem num relógio até uma pessoa ficar com todas as fichas. Os 10–15% melhores do field entram no dinheiro. Os formatos incluem freezeout, PKO, satellite e deepstack — você entra por buy-in direto, satellite ou pré-registro online.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-08-26",
+  updated: "2026-08-28",
   masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -68,7 +68,7 @@ Em troca, você recebe um **stack inicial** — normalmente de 10.000 a 50.000 f
 
 **Seu stack inicial não tem valor em dinheiro.** Um stack de 10.000 fichas não equivale a $10.000 — é só a sua vida no torneio. O que importa é ter mais fichas que os outros jogadores quando os spots de dinheiro chegarem.
 
-Todo torneio publica sua estrutura numa **structure sheet**: stack inicial, níveis de blind, duração de cada nível, tabela de antes e payouts. Peça na hora de se registrar — é o documento mais útil que existe na sala.
+Todo torneio publica sua estrutura numa **structure sheet**: stack inicial, níveis de blind, duração de cada nível e a tabela de antes (a tabela de payout costuma ser publicada à parte). Peça na hora de se registrar — é o documento mais útil que existe na sala.
 
 ---
 
@@ -99,7 +99,7 @@ Novo em blinds no geral? Comece por [o que são de verdade o small blind e o big
 
 ## Os 4 estágios pelos quais todo torneio passa
 
-### Estágio 1 — Níveis iniciais (100–200 BB de profundidade)
+### Estágio 1 — Níveis iniciais (100–300 BB de profundidade)
 Você tem espaço pra jogar. Mãos especulativas, set-mining, ver flops — tudo razoável. A maioria dos iniciantes joga apertado demais aqui. Os blinds são baratos; aprenda a mesa.
 
 ### Estágio 2 — Estágios intermediários (30–60 BB)
@@ -140,7 +140,7 @@ Um PKO (Progressive Knockout) é um torneio de bounty em que tipicamente cerca d
 
 ### O que é um torneio deepstack?
 
-Um torneio deepstack te dá muito mais fichas em relação aos blinds do que o evento padrão da mesma série, e em geral vem com níveis de blind mais longos. **Não existe um limiar padronizado** — "deepstack" é sempre um rótulo relativo. Tire da structure sheet quantos big blinds vale o seu stack no Nível 1 e compare com os 100–200 BB de um evento padrão. Mais fichas e um relógio mais lento significam mais jogo pós-flop, mais espaço pra se recuperar de um erro e dias mais longos.
+Um torneio deepstack te dá muito mais fichas em relação aos blinds do que o evento padrão da mesma série, e em geral vem com níveis de blind mais longos. **Não existe um limiar padronizado** — "deepstack" é sempre um rótulo relativo. Tire da structure sheet quantos big blinds vale o seu stack no Nível 1 e compare com os 100–300 BB de um evento padrão. Mais fichas e um relógio mais lento significam mais jogo pós-flop, mais espaço pra se recuperar de um erro e dias mais longos.
 
 **E os rebuys e add-ons?** Num evento de rebuy você pode comprar de novo durante uma janela inicial definida — em muitos eventos, sempre que seu stack estiver no valor inicial ou abaixo, sem precisar quebrar; um add-on é uma compra opcional única de fichas, geralmente oferecida quando essa janela fecha. Depois disso, o evento segue como um freezeout.
 
@@ -264,7 +264,7 @@ Isto é o que nenhum outro guia te conta. Aqui está uma linha do tempo realista
 - Min-cash: aproximadamente 1,83x o buy-in
 - 1º lugar: $662.200 (~14% do prize pool)
 
-A estrutura de payout é sempre anunciada antes de o torneio começar. Peça a **structure sheet** no registro — ela lista os níveis de blind, os antes, o stack inicial e a tabela de payout.
+A estrutura de payout é sempre anunciada antes de o torneio começar. Peça a **structure sheet** no registro — ela lista os níveis de blind, os antes e o stack inicial (a tabela de payout costuma sair num pay chart separado, publicado pela sala).
 
 ---
 
@@ -277,7 +277,7 @@ Estes 13 termos cobrem a maior parte do que você vai ouvir na mesa. Pra ver o A
 | **ITM** | In The Money — você chegou a uma posição paga |
 | **Bolha (bubble)** | O estágio logo antes do ITM — uma eliminação de todo mundo entrar no dinheiro |
 | **Hand-for-hand** | Todas as mesas jogam uma mão de cada vez durante a bolha pra evitar enrolação |
-| **Structure sheet** | O documento oficial com níveis de blind, antes e payouts |
+| **Structure sheet** | O documento oficial com níveis de blind, antes e stack inicial (payouts saem à parte) |
 | **Chip leader** | O jogador com mais fichas |
 | **Short stack** | Um jogador com pouquíssimas fichas em relação aos blinds |
 | **Shove / JAM** | Dar all-in (empurrar o stack inteiro pro meio) |
@@ -323,7 +323,7 @@ Estes 13 termos cobrem a maior parte do que você vai ouvir na mesa. Pra ver o A
 
 **Q. Quanto tempo dura um torneio de poker?**
 
-A. Torneios diários em cassinos locais normalmente rolam por 4–8 horas. Grandes eventos de série como os campeonatos do WPT duram 4–6 dias — você ensaca as fichas no fim de cada dia — e o WSOP Main Event se estende por quase duas semanas, dos flights de Day 1 até o final table. Quando você se registrar, peça a structure sheet — ela vai te dizer a duração esperada do dia com base na duração dos níveis de blind e no tamanho inicial do field.
+A. Torneios diários em cassinos locais normalmente rolam por 4–8 horas. Grandes eventos de série como os campeonatos do WPT duram 4–6 dias — você ensaca as fichas no fim de cada dia — e o WSOP Main Event roda quase duas semanas dos flights de Day 1 até definir o final table — que, desde 2026, é disputado à parte, cerca de três semanas depois. Quando você se registrar, peça a structure sheet — ela vai te dizer a duração esperada do dia com base na duração dos níveis de blind e no tamanho inicial do field.
 
 **Q. Qual a diferença entre PKO e torneios de bounty?**
 

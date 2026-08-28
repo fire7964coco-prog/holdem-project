@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "tournament",
   date: "2026-06-18",
   updated: "2026-08-28",
-  masterUpdated: "2026-08-26",
+  masterUpdated: "2026-08-28",
   keepImagesInBody: true,
   readTime: "16 mnt",
   emoji: "🇰🇷",
@@ -37,7 +37,7 @@ Trip poker dan trip Korea adalah trip yang sama. ==g:Paradise City hanya 10 meni
 ---
 
 > **Jawaban singkat**
-> APT Incheon 2026 sudah berlangsung ==**7–16 Agustus**== di Paradise City Casino, Incheon. Resor ini ==g:10 menit dengan shuttle gratis dari Terminal 1 Bandara Incheon== — berangkat setiap 30 menit, tanpa biaya. Buy-in Main Event: ==**KRW 2.500.000 (~$1.703)**==, bergaransi $1 juta. Kualifikasi online Natural8 total membagikan ==g:**74 kursi**==. ==r:Mega $35 dan OnLive tutup pada 2 Agustus, dan jalur terakhir (Step $20 → Mega $200) tutup 7 Agustus==. ==g:**Kualifikasi online sudah selesai sebelum hari pertama.**== Kasino ==r:hanya untuk warga negara asing== — warga negara Korea tanpa izin tinggal tetap di luar negeri tidak boleh masuk.
+> APT Incheon 2026 sudah berlangsung ==**7–16 Agustus**== di Paradise City Casino, Incheon. Resor ini ==g:10 menit dengan shuttle gratis dari Terminal 1 Bandara Incheon== — berangkat setiap 20 menit, tanpa biaya. Buy-in Main Event: ==**KRW 2.500.000 (~$1.703)**==, bergaransi $1 juta. Kualifikasi online Natural8 total membagikan ==g:**74 kursi**==. ==r:Mega $35 dan OnLive tutup pada 2 Agustus, dan jalur terakhir (Step $20 → Mega $200) tutup 7 Agustus, hari pembukaan festival==. ==g:**Kualifikasi online sudah selesai sebelum Main Event dimulai 9 Agustus.**== Kasino ==r:hanya untuk warga negara asing== — warga negara Korea tanpa izin tinggal tetap di luar negeri tidak boleh masuk.
 
 ---
 
@@ -194,7 +194,7 @@ Paradise City bukan kasino yang berdiri sendiri — ini adalah ==**resor terpadu
 
 **Apa artinya bagi Anda:**
 
-- ==g:Bus shuttle gratis berjalan setiap 30 menit dari Terminal 1 (Gate 3C & 14C)== — ~10 menit, tanpa biaya, tanpa masalah cuaca
+- ==g:Bus shuttle gratis berjalan setiap 20 menit dari Terminal 1 (Gate 3C)== — ~10 menit, tanpa biaya, tanpa masalah cuaca
 - Hotel bintang 5 (Hotel Paradise) di lokasi dengan akses langsung ke kasino
 - Food hall internasional, spa, dan kompleks hiburan
 - 45–60 menit ke pusat Seoul via kereta AREX dari bandara
@@ -213,8 +213,8 @@ Paradise City menjalankan transfer gratisnya sendiri dari bandara:
 
 | Opsi | Perjalanan | Biaya | Catatan |
 |:---|:---:|:---|:---|
-| ==g:**Shuttle gratis (dari T1)**== | ==g:~10 mnt== | ==g:Gratis== | Opsi terbaik — Gate 3C atau 14C, setiap 30 mnt (jam 5 pagi–11 malam) |
-| Shuttle gratis (dari T2) | ~20 mnt | Gratis | Gate 2A, setiap 60 mnt |
+| ==g:**Shuttle gratis (dari T1)**== | ==g:~10 mnt== | ==g:Gratis== | Opsi terbaik — Gate 3C, setiap 20 mnt (jam 5 pagi–11 malam) |
+| Shuttle gratis (dari T2) | ~20 mnt | Gratis | Gate 4A, setiap 60 mnt |
 | Taksi dari T1 | ~15–20 mnt | ~$15–20 | Argometer, tersedia 24/7 |
 | AREX ke Stasiun Unseo → taksi | ~20 mnt total | ~$8 | Berguna jika jadwal kereta pas |
 
@@ -382,7 +382,7 @@ Dibanding EPT Barcelona (Main ~€5.300) atau WPT Australia (Main ~AUD $5.000), 
 
 **Q. Apakah Paradise City Casino benar-benar bisa dijangkau berjalan kaki dari Bandara Incheon?**
 
-A. Sangat dekat. Paradise City menjalankan shuttle gratis dari Terminal 1 (Gate 3C & 14C) setiap 30 menit — perjalanannya sekitar 10 menit. Terminal 2 punya shuttle sendiri setiap 60 menit dari Gate 2A. Resor ini adalah kompleks terpadu yang bersebelahan dengan bandara, dirancang khusus untuk kedatangan internasional.
+A. Sangat dekat. Paradise City menjalankan shuttle gratis dari Terminal 1 (Gate 3C) setiap 20 menit — perjalanannya sekitar 10 menit. Terminal 2 punya shuttle sendiri setiap 60 menit dari Gate 4A. Resor ini adalah kompleks terpadu yang bersebelahan dengan bandara, dirancang khusus untuk kedatangan internasional.
 
 **Q. Bisakah saya bermain di APT Incheon Main Event kalau belum pernah main turnamen live?**
 

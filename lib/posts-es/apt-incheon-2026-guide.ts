@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "El Main Event del APT Incheon 2026 lo ganó Stephen Pang, de Hong Kong, que se llevó KRW 411,180,000 (~$293,700) tras un acuerdo ICM a tres y el trofeo del León de oro de 24K. El campo marcó un récord con 1,393 entradas y una bolsa de KRW 3,008,880,000. El subcampeón fue Shoumin Zhang (China, KRW 366,500,000 / ~$261,785) y el tercero Yifu He (EE. UU.). Los tres primeros también ganaron asientos para el Main Event del APT Championship 2026 en Taipéi (~$10,000 cada uno). Solo para extranjeros (los ciudadanos coreanos sin residencia en el extranjero no pueden entrar). Seúl está a ~1 hora — para la próxima parada, el viaje de póker y el viaje a Corea siguen siendo el mismo viaje.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-08-26",
-  masterUpdated: "2026-08-26",
+  updated: "2026-08-28",
+  masterUpdated: "2026-08-28",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🇰🇷",
@@ -37,7 +37,7 @@ El viaje de póker y el viaje a Corea son el mismo viaje. ==g:Paradise City est�
 ---
 
 > **Respuesta rápida**
-> El APT Incheon 2026 se jugó del ==**7 al 16 de agosto**== en el Paradise City Casino, Incheon. El resort está a ==g:10 min en shuttle gratuito desde la Terminal 1 del Aeropuerto de Incheon== — sale cada 30 min, gratis. Entrada del Main Event: ==**KRW 2,500,000 (~$1,703)**==, $1M garantizado. Los clasificatorios online de Natural8 repartieron ==g:**74 asientos en total**==. ==r:El Mega de $35 y OnLive cerraron el 2 de agosto, y la última vía (Step de $20 → Mega de $200) el 7 de agosto==. ==g:**La clasificación online ya había terminado antes del primer día.**== El casino es ==r:solo para extranjeros== — los ciudadanos coreanos sin residencia en el extranjero no pueden entrar.
+> El APT Incheon 2026 se jugó del ==**7 al 16 de agosto**== en el Paradise City Casino, Incheon. El resort está a ==g:10 min en shuttle gratuito desde la Terminal 1 del Aeropuerto de Incheon== — sale cada 20 min, gratis. Entrada del Main Event: ==**KRW 2,500,000 (~$1,703)**==, $1M garantizado. Los clasificatorios online de Natural8 repartieron ==g:**74 asientos en total**==. ==r:El Mega de $35 y OnLive cerraron el 2 de agosto, y la última vía (Step de $20 → Mega de $200) el 7 de agosto, el día de apertura del festival==. ==g:**La clasificación online ya había terminado antes de que arrancara el Main Event el 9 de agosto.**== El casino es ==r:solo para extranjeros== — los ciudadanos coreanos sin residencia en el extranjero no pueden entrar.
 
 ---
 
@@ -139,7 +139,7 @@ Natural8 es el partner online oficial del APT y organiza la campaña de satélit
 
 </div>
 
-:::note[**★Situación al 9 de agosto de 2026 — la clasificación online ya terminó.** El Mega de $35 y los clasificatorios OnLive Día 1 cerraron el 2 de agosto, y la última vía, el **Step de $20 → Mega de $200**, cerró el **viernes 7 de agosto**, el día antes de que arrancara la serie. Los 52 + 22 = 74 asientos de la tabla son el total ya repartido. Las rutas quedan documentadas porque la misma estructura vuelve en la próxima parada del APT.]:::
+:::note[**★Situación al 9 de agosto de 2026 — la clasificación online ya terminó.** El Mega de $35 y los clasificatorios OnLive Día 1 cerraron el 2 de agosto, y la última vía, el **Step de $20 → Mega de $200**, cerró el **viernes 7 de agosto** — el día de apertura del festival (el Main Event en sí arrancó el 9 de agosto). Los 52 + 22 = 74 asientos de la tabla son el total ya repartido. Las rutas quedan documentadas porque la misma estructura vuelve en la próxima parada del APT.]:::
 
 **La ruta de Steps, tal como funcionó:**
 
@@ -194,7 +194,7 @@ Paradise City no es un casino independiente — es un ==**resort integrado const
 
 **Qué significa eso para ti:**
 
-- ==g:Shuttle gratuito cada 30 min desde la Terminal 1 (puertas 3C y 14C)== — ~10 min, gratis, sin depender del tiempo
+- ==g:Shuttle gratuito cada 20 min desde la Terminal 1 (puerta 3C)== — ~10 min, gratis, sin depender del tiempo
 - Hotel de 5 estrellas (Hotel Paradise) en el mismo recinto con acceso directo al casino
 - Zona gastronómica internacional, spa y complejo de ocio
 - A 45–60 minutos del centro de Seúl en el tren AREX desde el aeropuerto
@@ -213,7 +213,7 @@ Paradise City opera su propio traslado gratuito desde el aeropuerto:
 
 | Opción | Trayecto | Costo | Notas |
 |:---|:---:|:---|:---|
-| ==g:**Shuttle gratuito (desde T1)**== | ==g:~10 min== | ==g:Gratis== | La mejor opción — puerta 3C o 14C, cada 30 min (5:00–23:00) |
+| ==g:**Shuttle gratuito (desde T1)**== | ==g:~10 min== | ==g:Gratis== | La mejor opción — puerta 3C, cada 20 min (5:00–23:00) |
 | Shuttle gratuito (desde T2) | ~20 min | Gratis | Puerta 4A, cada 60 min |
 | Taxi desde T1 | ~15–20 min | ~$15–20 | Con taxímetro, disponible 24/7 |
 | AREX hasta la estación de Unseo → taxi | ~20 min en total | ~$8 | Útil si el horario del tren encaja |
@@ -376,7 +376,7 @@ Comparado con el EPT Barcelona (~€5,300 el Main) o el WPT Australia (~AUD $5,0
 
 **Q. ¿De verdad se puede ir andando desde el aeropuerto de Incheon al Paradise City Casino?**
 
-A. Está muy cerca. Paradise City opera un shuttle gratuito desde la Terminal 1 (puertas 3C y 14C) cada 30 minutos — el trayecto dura unos 10 minutos. La Terminal 2 tiene su propio shuttle cada 60 minutos desde la puerta 4A. El resort es un complejo integrado pegado al aeropuerto, pensado específicamente para las llegadas internacionales.
+A. Está muy cerca. Paradise City opera un shuttle gratuito desde la Terminal 1 (puerta 3C) cada 20 minutos — el trayecto dura unos 10 minutos. La Terminal 2 tiene su propio shuttle cada 60 minutos desde la puerta 4A. El resort es un complejo integrado pegado al aeropuerto, pensado específicamente para las llegadas internacionales.
 
 **Q. ¿Puedo jugar el Main Event del APT Incheon si nunca he jugado un torneo en vivo?**
 

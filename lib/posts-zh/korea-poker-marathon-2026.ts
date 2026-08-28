@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "2026 韩国跑步 + 打牌 — 一趟行程搞定马拉松和扑克",
   seoTitle: "2026 韩国扑克 + 马拉松 — 春川、JTBC 首尔 + Paradise City 指南",
   desc: "2026 年只剩 JTBC 首尔还在收报名——春川和 YTN 都已截止。完整赛程表、报名窗口，以及仁川机场旁 Paradise City 的扑克，一趟行程串起来。",
-  tldr: "韩国最好的秋季马拉松（春川 10 月 25 日、JTBC 首尔 11 月 1 日、Garmin Run 11 月 15 日）正好赶上完美的跑步天气。仁川机场旁的 Paradise City Casino 全年开放现金局——只对外国人开放，离航站楼 10 分钟。一趟行程两样都能拿下。",
+  tldr: "韩国最好的秋季马拉松（春川 10 月 25 日、JTBC 首尔 11 月 1 日、Garmin Run 11 月 15 日）正好赶上完美的跑步天气。仁川机场旁的 Paradise City Casino 全年开放现金局——只对外国人开放，离航站楼 10 分钟。一趟行程两样都能拿下。2026 年还开放报名的只剩 JTBC（截至 9 月 4 日）。",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-08-18",
-  masterUpdated: "2026-08-17",
+  updated: "2026-08-28",
+  masterUpdated: "2026-08-28",
   keepImagesInBody: true,
   readTime: "14 分钟",
   emoji: "🏃",
@@ -44,7 +44,7 @@ export const POST: Post = {
 ---
 
 > **快速回答**
-> 韩国扑克赛事：==**APT Incheon 8 月 7–16 日**==、==**APT Jeju 9 月 25 日–10 月 7 日**==（都在只对外国人开放的赌场）。韩国马拉松：==**春川 10 月 25 日**==、==**JTBC 首尔 11 月 1 日**==、==**Garmin Run 11 月 15 日**==。APT Jeju 10 月 7 日结束 → 春川 10 月 25 日开跑——==g:中间隔 18 天，一趟行程两样都占。==
+> 韩国扑克赛事：==**APT Incheon 8 月 7–16 日**==、==**APT Jeju 9 月 25 日–10 月 7 日**==（都在只对外国人开放的赌场）。韩国马拉松：==**春川 10 月 25 日**==、==**JTBC 首尔 11 月 1 日**==、==**Garmin Run 11 月 15 日**==。APT Jeju 10 月 7 日结束 → 春川 10 月 25 日开跑——==g:中间隔 18 天，一趟行程两样都占。== ==r:2026 年马拉松报名只剩 JTBC 还开放（截至 9 月 4 日）——春川和 Garmin 都已满员。==
 
 ---
 
@@ -54,7 +54,7 @@ export const POST: Post = {
 
 **天气窗口：** 韩国的夏天（6–8 月）又热又极其潮湿——跑步和旅游都不理想。但 ==**10 月和 11 月大概是东亚最值得去的月份**==。气温降到 8–15°C。空气干燥通透。乡野被秋叶染成橙红。韩国每个认真的跑者都懂这一点。整张马拉松赛程表就是围着它排的。
 
-**赌场位置：** Paradise City Casino 坐落在一个度假综合体里，==g:紧挨着仁川国际机场==。从 1 号航站楼出发的免费摆渡车每 30 分钟一班。赌场全年运营现金局牌桌——不需要参加锦标赛。对国际牌手来说，它是亚洲最好进的赌场：落地仁川，办理入住，直接开打。
+**赌场位置：** Paradise City Casino 坐落在一个度假综合体里，==g:紧挨着仁川国际机场==。从 1 号航站楼出发的免费摆渡车每 20 分钟一班。赌场全年运营现金局牌桌——不需要参加锦标赛。对国际牌手来说，它是亚洲最好进的赌场：落地仁川，办理入住，直接开打。
 
 **交通：** 首尔的地铁便宜、快、双语标识。从 Paradise City（经 AREX 机场快线）到首尔市中心大约 1 小时。从首尔坐快速列车到春川（马拉松所在城市）90 分钟。一切都连得上。
 
@@ -192,10 +192,10 @@ export const POST: Post = {
       <td style="padding:10px 14px"><span style="background:rgba(239,68,68,0.15);color:#f87171;padding:2px 7px;border-radius:4px;font-size:12px;font-weight:600">⚡ JTBC 马拉松 11 月 1 日 = 这场赛事的 Day 3</span></td>
     </tr>
     <tr style="background:rgba(212,175,55,0.07);border-bottom:1px solid rgba(255,255,255,0.06)">
-      <td style="padding:10px 14px;font-weight:700;white-space:nowrap">2026 年 12 月（待定）</td>
+      <td style="padding:10px 14px;font-weight:700;white-space:nowrap">12 月 4–13 日</td>
       <td style="padding:10px 14px"><strong>AJPC Samurai Circuit<br/><span style="font-size:12px;color:hsl(var(--muted-foreground))">Incheon 2026 III</span></strong></td>
       <td style="padding:10px 14px">Paradise City, Incheon</td>
-      <td style="padding:10px 14px;color:hsl(var(--muted-foreground))">年末之选 · 赛程待定</td>
+      <td style="padding:10px 14px;color:hsl(var(--muted-foreground))">年末之选 · 单项赛程与买入待定</td>
     </tr>
   </tbody>
 </table>
@@ -230,11 +230,11 @@ export const POST: Post = {
 
 ---
 
-### AJPC Samurai Circuit Incheon III（2026 年 12 月 · 日期待定）
+### AJPC Samurai Circuit Incheon III（2026 年 12 月 4–13 日）
 
 ==**AJPC Samurai Circuit**== 以 12 月在 Paradise City 的一轮，为韩国扑克赛程收尾。对错过 10–11 月窗口的牌手，这是年末之选。
 
-- **日期：** 2026 年 12 月（日期待定 · 等待官方赛程）
+- **日期：** 2026 年 12 月 4–13 日（据 pokercalendar.asia 赛历 · 8 月 28 日核实）
 - **场馆：** Paradise City Casino, Incheon
 - **信息：** [pokercalendar.asia](https://pokercalendar.asia/en/pokertournaments/ajpc-samurai-circuit-incheon-2026-iii/)
 - 赛程和买入待定
@@ -249,7 +249,7 @@ export const POST: Post = {
 
 **基本情况：**
 - 位置：仁川，紧挨着仁川国际机场
-- 免费摆渡：1 号航站楼（3C 与 14C 门），每 30 分钟一班，车程约 10 分钟
+- 免费摆渡：1 号航站楼（3C 门），每 20 分钟一班，车程约 10 分钟
 - 酒店：Hotel Paradise，五星，就在场内
 - ==r:仅限外国人——无海外永久居留权的韩国公民不得入场==
 - 海外韩国人（在海外的永久居民）可凭韩国护照 + 绿卡或移民证明入场
@@ -327,10 +327,10 @@ export const POST: Post = {
       <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">半程 · 10K · 8:00 · 7 月 1–3 日报名</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
-      <td style="padding:9px 12px;font-weight:700;white-space:nowrap">12 月（待定）</td>
+      <td style="padding:9px 12px;font-weight:700;white-space:nowrap">12 月 4–13 日</td>
       <td style="padding:9px 12px">🃏 AJPC Samurai Circuit III</td>
       <td style="padding:9px 12px">Paradise City, Incheon</td>
-      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">赛程待定</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">单项赛程与买入待定</td>
     </tr>
     <tr style="border-top:1px solid rgba(255,255,255,0.08)">
       <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">全年</td>
@@ -344,7 +344,7 @@ export const POST: Post = {
 
 ==g:没人提的甜蜜点：== **APT Jeju 10 月 7 日结束——春川马拉松是 10 月 25 日。** 中间隔 18 天。打完锦标赛，留在韩国，再去跑比赛。一趟机票两样都占。而且如果你愿意留到 11 月 1 日，JTBC 首尔也就在那儿。
 
-最干净的一鱼两吃：APT Incheon（8 月 7–16 日）→ 在首尔休整 → 春川马拉松（10 月 25 日）或 JTBC（11 月 1 日）。或者：APT Jeju（9 月 25 日–10 月 7 日）→ 在韩国待 18 天 → 春川（10 月 25 日）。
+最干净的一鱼两吃：APT Incheon（8 月 7–16 日）→ 在首尔休整 → 春川马拉松（10 月 25 日）或 JTBC（11 月 1 日）。或者：APT Jeju（9 月 25 日–10 月 7 日）→ 在韩国待 18 天 → 春川（10 月 25 日）。⚠ 2026 年还开放的马拉松报名只有 JTBC（截至 9 月 4 日）——春川这条线请当作 2027 年的模板来看。
 
 ---
 
@@ -487,7 +487,7 @@ A. 不需要。春川和 JTBC 马拉松都有专门给外国跑者的英文报�
 
 **Q. 我能在同一趟行程里既跑春川（10 月 25 日）又跑 JTBC 首尔（11 月 1 日）吗？**
 
-A. 能——它们相隔一周。春川坐火车离首尔约 80 分钟。周日跑春川，周一到周六恢复，隔周周日跑 JTBC。很多韩国跑者就是这样背靠背连跑两周。多留些恢复时间；春川赛道有坡。
+A. 从赛历上看能——它们相隔一周。春川坐火车离首尔约 80 分钟。周日跑春川，周一到周六恢复，隔周周日跑 JTBC。很多韩国跑者就是这样背靠背连跑两周。2026 年注意：春川名额已售罄，所以这套完整组合实际上是 2027 年的计划。多留些恢复时间；春川赛道有坡。
 
 **Q. 如果我马拉松后周日抵达，Paradise City Casino 开着吗？**
 
@@ -495,7 +495,7 @@ A. 开。Paradise City Casino 24/7 运营。国际客人周日赛后办理入住
 
 **Q. 外国人没有韩国地址能报名春川马拉松吗？**
 
-A. 能。chuncheonmarathon.com 上的外国人报名标签就是给海外参赛者设计的。你需要护照号码、邮箱和付款方式。参赛包在赛前于赛事现场发放。
+A. 能——流程每年都一样（2026 年名额已售罄；下一个窗口约在 2027 年 7 月开启）。chuncheonmarathon.com 上的外国人报名标签就是给海外参赛者设计的。你需要护照号码、邮箱和付款方式。参赛包在赛前于赛事现场发放。
 
 **Q. Garmin Run 场地和 K-pop 有什么关系？**
 
@@ -509,7 +509,7 @@ A. 高阳综合运动场是韩国最大的演唱会体育场之一——BTS、BL
 
 那群手里既攥着扑克 bankroll、又记着一本马拉松训练日志的人，是真实存在的。BTS 的 Suga 没有发明这个重叠——他只是让它被看见了。
 
-值得记下的日期：==**春川 10 月 25 日**==、==**JTBC 首尔 11 月 1 日**==、Garmin Run 11 月 15 日。Paradise City 全年开放。
+值得记下的日期：==**春川 10 月 25 日**==、==**JTBC 首尔 11 月 1 日**==、Garmin Run 11 月 15 日——2026 年唯一还开放的报名是 JTBC，截至 9 月 4 日。Paradise City 全年开放。
 
 想看完整的扑克锦标赛情况（APT Incheon，$2.7M GTD，8 月 7–16 日）：[2026 APT Incheon 指南](/zh/blog/apt-incheon-2026-guide)。想了解锦标赛与现金局的策略差异：[锦标赛 vs 现金局](/zh/blog/holdem-tournament-vs-cash-game)。
 

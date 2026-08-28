@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "WPT Australia 2026: 10.–30. Sep, The Star Sydney. Zwei Flaggschiffe: AUD $1.500 WPT Prime (17.–22. Sep) und AUD $5.000 WPT Championship (24.–30. Sep). On-Site-Satellites ab AUD $270, Championship-Qualifier ab $290. Im Preisgeld für Platz 1 steckt ein $15.000 WPT-World-Championship-Seat. Mindestalter 18, Star-Club-Mitgliedschaft und Smart-Casual-Dresscode sind Pflicht.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-08-26",
+  updated: "2026-08-28",
   readTime: "14 Min.",
   emoji: "🦘",
   layout: "tournament-guide",
@@ -106,6 +106,7 @@ Das ist die Frage, die jeder First-Timer stellt. Hier die ehrliche Aufschlüssel
 | **Prime Championship** | 1-in-6-Satellite | ==g:$290== | Prime-Seat |
 | **Australian Poker Cup** | 1-in-5-Satellite | $270 | Poker-Cup-Seat |
 | **Mini-Championship** | 1-in-8-Satellite | $290 | Mini-Championship-Seat |
+| **$10K High Roller Direct Qualifier** | 22. Sep, 1-in-10 | $1.050 | $10K-High-Roller-Seat |
 
 </div>
 
@@ -125,9 +126,9 @@ Wenn du außerhalb Australiens bist und dich vor dem Abflug mit Online-Satellite
 |:---|:---|:---:|:---|
 | Australian Poker Cup | 10.–14. Sep | ==g:$1.150== | Multi-Flight |
 | Aussie Monster Stack | 13.–14. Sep | $1.250 | Deep Stack |
-| Ladies Australian Championship | 15.–16. Sep | ==g:$500== | offen für alle |
+| Ladies Australian Championship | 15.–16. Sep | ==g:$500== | Ladies-Event |
 | **WPT Prime Australia Championship** | ==**17.–22. Sep**== | ==**$1.500**== | ==g:livestreamter FT== |
-| Bonzai Bounty | 19. Sep | $460 | Progressive Bounty |
+| Bonzai Bounty | 19. Sep | $460 | Fester $150-Bounty-Chip |
 | **$10K WPT High Roller** | 23.–24. Sep | $10.000 | High Roller |
 | **WPT Australia Championship** | ==**24.–30. Sep**== | ==**$5.000**== | ==g:livestreamter FT== |
 | Mini-Championship | 27.–28. Sep | $2.000 | 2-Tage-Format |
@@ -215,7 +216,7 @@ Dieser Abschnitt ist das, was ==r:jeder Guide der Konkurrenz auslässt== – und
 
 ### NSW-Recht: tägliches Bargeld-Limit von AUD $5.000
 
-Nach den **NSW-Reformen zur Bargeldhandhabung in Casinos** gilt ein **tägliches Bargeld-Limit von AUD $5.000** für das Spiel (diese Grenze gilt bis einschließlich September 2026 und soll ab August 2027 auf AUD $1.000/Tag sinken). Gespielt wird **carded** – du spielst über deine Star-Club-Karte – und alle Turnier-Entries (inklusive Satellites) müssen mit Gaming-Chips gekauft werden, nicht per Kreditkarte oder Bargeld am Tisch.
+Nach den **NSW-Reformen zur Bargeldhandhabung in Casinos** gilt ein **tägliches Bargeld-Limit von AUD $5.000** für das Spiel (diese Grenze soll ab August 2027 auf AUD $1.000/Tag sinken). Gespielt wird **carded** – du spielst über deine Star-Club-Karte – und alle Turnier-Entries (inklusive Satellites) müssen mit Gaming-Chips gekauft werden, nicht per Kreditkarte oder Bargeld am Tisch.
 
 ### Wire-Transfer ans The Star Sydney – bevor du ankommst
 

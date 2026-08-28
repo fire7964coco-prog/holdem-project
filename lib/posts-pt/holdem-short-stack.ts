@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Um short stack (grosso modo abaixo de 20–25 big blinds) não consegue jogar poker pós-flop normal, e de uns 15 big blinds para baixo ele troca para push/fold: vai de all-in first-in para manter a fold equity, e nunca faz open-limp nem min-raise-depois-fold. Dê shove com mais mãos da late position, mantenha seu range de pagar mais fechado que o de shove, e não fique blindando até o zero 'esperando uma mão' — a fold equity é a arma, e abaixo de uns 8 big blinds ela some rápido.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-08-26",
+  updated: "2026-08-28",
   masterUpdated: "2026-08-13",
   keepImagesInBody: true,
   readTime: "13 min",
@@ -69,7 +69,7 @@ O detalhe é que a fold equity ==decai conforme seu stack encolhe==. Com 12–15
 
 ## O M-ratio (zonas de Harrington): verde, amarelo, laranja, vermelho, morto
 
-**O M-ratio mede quantas órbitas você consegue sobreviver foldando — seu stack dividido pelo custo de uma volta completa de blinds e antes — e ele classifica seu stack em cinco zonas.** Popularizado por Dan Harrington, ==M = seu stack ÷ (small blind + big blind + todos os antes por órbita)==. Ele responde "quanto tempo consigo ficar aqui sentado sem fazer nada?" — e quanto menor fica, mais você precisa agir.
+**O M-ratio mede quantas órbitas você consegue sobreviver foldando — seu stack dividido pelo custo de uma volta completa de blinds e antes — e ele classifica seu stack em cinco zonas.** O nome vem de Paul Magriel, e quem popularizou a métrica foi Dan Harrington: ==M = seu stack ÷ (small blind + big blind + todos os antes por órbita)==. Ele responde "quanto tempo consigo ficar aqui sentado sem fazer nada?" — e quanto menor fica, mais você precisa agir.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -194,7 +194,7 @@ A. Sim. Num cash game você pode fazer rebuy ou completar para um stack cheio en
 
 ## As 3 coisas para lembrar
 
-1. **Dê shove first-in, e mantenha sua fold equity.** Nunca faça open-limp nem min-raise-depois-fold. Os blinds e antes de graça são a maior parte do lucro de um short stack.
+1. **Dê shove first-in, e mantenha sua fold equity.** Quase nunca faça open-limp nem min-raise-depois-fold quando você é o primeiro a entrar. Os blinds e antes de graça são a maior parte do lucro de um short stack.
 2. **Pague mais fechado do que você dá shove.** Dois ranges diferentes — os shoves first-in são amplos (você também ganha quando eles foldam); os calls são fechados (você só ganha no showdown).
 3. **Aja antes que sua fold equity morra.** Não fique blindando até o zero esperando uma mão. Amplie seus shoves tarde, feche cedo, e coloque as fichas enquanto seu all-in ainda assusta as pessoas.
 

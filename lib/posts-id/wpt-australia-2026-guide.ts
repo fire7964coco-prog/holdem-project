@@ -107,6 +107,7 @@ Ini pertanyaan yang ditanyakan setiap pemula. Berikut penjelasan jujurnya:
 | **Prime Championship** | Satelit 1-dari-6 | ==g:$290== | Kursi Prime |
 | **Australian Poker Cup** | Satelit 1-dari-5 | $270 | Kursi Poker Cup |
 | **Mini-Championship** | Satelit 1-dari-8 | $290 | Kursi Mini-Championship |
+| **$10K High Roller Direct Qualifier** | 22 Sep, 1-dari-10 | $1.050 | Kursi High Roller $10K |
 
 </div>
 
@@ -126,9 +127,9 @@ Kalau Anda di luar Australia dan ingin pemanasan dengan satelit online sebelum t
 |:---|:---|:---:|:---|
 | Australian Poker Cup | 10–14 Sep | ==g:$1.150== | Multi-flight |
 | Aussie Monster Stack | 13–14 Sep | $1.250 | Deep stack |
-| Ladies Australian Championship | 15–16 Sep | ==g:$500== | Terbuka untuk semua |
+| Ladies Australian Championship | 15–16 Sep | ==g:$500== | Event khusus wanita (Ladies) |
 | **WPT Prime Australia Championship** | ==**17–22 Sep**== | ==**$1.500**== | ==g:FT livestream== |
-| Bonzai Bounty | 19 Sep | $460 | Progressive bounty |
+| Bonzai Bounty | 19 Sep | $460 | Chip bounty tetap $150 |
 | **$10K WPT High Roller** | 23–24 Sep | $10.000 | High roller |
 | **WPT Australia Championship** | ==**24–30 Sep**== | ==**$5.000**== | ==g:FT livestream== |
 | Mini-Championship | 27–28 Sep | $2.000 | Format 2 hari |

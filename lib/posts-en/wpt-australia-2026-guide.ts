@@ -106,6 +106,7 @@ This is the question every first-timer asks. Here's the honest breakdown:
 | **Prime Championship** | 1-in-6 satellite | ==g:$290== | Prime seat |
 | **Australian Poker Cup** | 1-in-5 satellite | $270 | Poker Cup seat |
 | **Mini-Championship** | 1-in-8 satellite | $290 | Mini-Championship seat |
+| **$10K High Roller Direct Qualifier** | Sep 22, 1-in-10 | $1,050 | $10K High Roller seat |
 
 </div>
 
@@ -125,9 +126,9 @@ If you're outside Australia and want to warm up with online satellites before fl
 |:---|:---|:---:|:---|
 | Australian Poker Cup | Sep 10–14 | ==g:$1,150== | Multi-flight |
 | Aussie Monster Stack | Sep 13–14 | $1,250 | Deep stack |
-| Ladies Australian Championship | Sep 15–16 | ==g:$500== | Open to all |
+| Ladies Australian Championship | Sep 15–16 | ==g:$500== | Ladies event |
 | **WPT Prime Australia Championship** | ==**Sep 17–22**== | ==**$1,500**== | ==g:Livestreamed FT== |
-| Bonzai Bounty | Sep 19 | $460 | Progressive bounty |
+| Bonzai Bounty | Sep 19 | $460 | Fixed $150 bounty chip |
 | **$10K WPT High Roller** | Sep 23–24 | $10,000 | High roller |
 | **WPT Australia Championship** | ==**Sep 24–30**== | ==**$5,000**== | ==g:Livestreamed FT== |
 | Mini-Championship | Sep 27–28 | $2,000 | 2-day format |

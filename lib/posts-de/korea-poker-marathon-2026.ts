@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Koreas beste Herbstmarathons (Chuncheon 25. Okt, JTBC Seoul 1. Nov, Garmin Run 15. Nov) treffen auf perfektes Laufwetter – für 2026 ist allerdings nur noch der JTBC Seoul offen, Chuncheon und Garmin Run haben im Juli geschlossen. Das Paradise City Casino nahe dem Flughafen Incheon bietet Cash Games – nur für Ausländer, 10 Min. vom Terminal. Eine Reise deckt beides ab.",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-08-26",
+  updated: "2026-08-28",
   keepImagesInBody: true,
   readTime: "14 Min.",
   emoji: "🏃",
@@ -53,7 +53,7 @@ Der Fall ist nicht kompliziert. Es geht um Timing und Lage.
 
 **Das Wetterfenster:** Koreas Sommer (Juni–August) ist heiß und extrem schwül – nicht ideal zum Laufen oder für Tourismus. Aber ==**Oktober und November sind wohl die besten Monate für eine Ostasien-Reise**==. Die Temperaturen fallen auf 8–15 °C. Die Luft ist trocken und klar. Das Land färbt sich orange und rot mit Herbstlaub. Jeder ernsthafte Läufer in Korea weiß das. Der gesamte Marathonkalender ist darauf ausgerichtet.
 
-**Die Lage des Casinos:** Das Paradise City Casino liegt in einem Resort-Komplex ==g:direkt neben dem Flughafen Incheon International==. Der kostenlose Shuttle von Terminal 1 fährt alle 30 Minuten. Das Casino betreibt ganzjährig Cash-Game-Tische – kein Turnier nötig. Für internationale Spieler ist es das am leichtesten erreichbare Casino Asiens: in Incheon landen, einchecken, spielen.
+**Die Lage des Casinos:** Das Paradise City Casino liegt in einem Resort-Komplex ==g:direkt neben dem Flughafen Incheon International==. Der kostenlose Shuttle von Terminal 1 fährt alle 20 Minuten. Das Casino betreibt ganzjährig Cash-Game-Tische – kein Turnier nötig. Für internationale Spieler ist es das am leichtesten erreichbare Casino Asiens: in Incheon landen, einchecken, spielen.
 
 **Der Nahverkehr:** Seouls U-Bahn-System ist günstig, schnell und zweisprachig. Von Paradise City (via AREX) ins Zentrum von Seoul dauert es ~1 Stunde. Von Seoul nach Chuncheon (Marathonstadt) mit dem Schnellzug 90 Minuten. Alles ist verbunden.
 
@@ -191,10 +191,10 @@ Hier wird der Kalender interessant. Drei Poker-Festivals laufen an koreanischen 
       <td style="padding:10px 14px"><span style="background:rgba(239,68,68,0.15);color:#f87171;padding:2px 7px;border-radius:4px;font-size:12px;font-weight:600">⚡ JTBC Marathon 1. Nov = Day 3 dieses Turniers</span></td>
     </tr>
     <tr style="background:rgba(212,175,55,0.07);border-bottom:1px solid rgba(255,255,255,0.06)">
-      <td style="padding:10px 14px;font-weight:700;white-space:nowrap">Dez 2026 (offen)</td>
+      <td style="padding:10px 14px;font-weight:700;white-space:nowrap">4.–13. Dez</td>
       <td style="padding:10px 14px"><strong>AJPC Samurai Circuit<br/><span style="font-size:12px;color:hsl(var(--muted-foreground))">Incheon 2026 III</span></strong></td>
       <td style="padding:10px 14px">Paradise City, Incheon</td>
-      <td style="padding:10px 14px;color:hsl(var(--muted-foreground))">Jahresend-Option · Zeitplan folgt</td>
+      <td style="padding:10px 14px;color:hsl(var(--muted-foreground))">Jahresend-Option · Event-Zeitplan & Buy-ins folgen</td>
     </tr>
   </tbody>
 </table>
@@ -229,11 +229,11 @@ Für einen Spieler, der ohnehin fürs Turnier in Korea ist: Renn-Morgen bedeutet
 
 ---
 
-### AJPC Samurai Circuit Incheon III (Dezember 2026 – Termine offen)
+### AJPC Samurai Circuit Incheon III (4.–13. Dezember 2026)
 
 Der ==**AJPC Samurai Circuit**== schließt den koreanischen Poker-Kalender mit einem Dezember-Lauf in Paradise City ab. Für Spieler, die das Oktober–November-Fenster verpassen, ist das die Jahresend-Option.
 
-- **Daten:** Dezember 2026 (Termine offen – offizieller Zeitplan folgt)
+- **Daten:** 4.–13. Dezember 2026 (laut pokercalendar.asia-Kalender – geprüft am 28. Aug)
 - **Austragungsort:** Paradise City Casino, Incheon
 - **Info:** [pokercalendar.asia](https://pokercalendar.asia/en/pokertournaments/ajpc-samurai-circuit-incheon-2026-iii/)
 - Zeitplan und Buy-ins folgen
@@ -248,7 +248,7 @@ Während die Marathons von Okt–Nov laufen, läuft ==**Paradise City Casino**==
 
 **Die Basics:**
 - Lage: Incheon, direkt neben dem Flughafen Incheon International
-- Kostenloser Shuttle: Terminal 1 (Gates 3C & 14C), alle 30 Min., ~10 Min. Fahrt
+- Kostenloser Shuttle: Terminal 1 (Gate 3C), alle 20 Min., ~10 Min. Fahrt
 - Hotel: Hotel Paradise, 5 Sterne, vor Ort
 - ==r:Nur Ausländer – koreanische Staatsbürger ohne Wohnsitz im Ausland dürfen nicht rein==
 - Auslandskoreaner (Daueraufenthalt im Ausland) dürfen mit koreanischem Pass + Green Card oder Auswanderungsbescheinigung rein
@@ -326,10 +326,10 @@ Für das vollständige Turnier-Bild (APT Incheon lief vom 7.–16. August mit $2
       <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">Half · 10K · 8:00 Uhr · Anmeldung 1.–3. Jul</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
-      <td style="padding:9px 12px;font-weight:700;white-space:nowrap">Dez (offen)</td>
+      <td style="padding:9px 12px;font-weight:700;white-space:nowrap">4.–13. Dez</td>
       <td style="padding:9px 12px">🃏 AJPC Samurai Circuit III</td>
       <td style="padding:9px 12px">Paradise City, Incheon</td>
-      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">Zeitplan folgt</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">Event-Zeitplan & Buy-ins folgen</td>
     </tr>
     <tr style="border-top:1px solid rgba(255,255,255,0.08)">
       <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">Ganzjährig</td>
@@ -343,7 +343,7 @@ Für das vollständige Turnier-Bild (APT Incheon lief vom 7.–16. August mit $2
 
 ==g:Der Sweet Spot, über den niemand redet:== **APT Jeju endet am 7. Oktober – der Chuncheon Marathon ist am 25. Oktober.** Das ist ein Abstand von 18 Tagen. Spiel das Turnier, bleib in Korea, lauf das Rennen. Ein Flug deckt beides ab. Und wenn du bereit bist, bis zum 1. November zu bleiben, ist JTBC Seoul gleich dort auch dabei.
 
-Der sauberste Doppel-Coup: APT Incheon (7.–16. Aug) → in Seoul ausruhen → Chuncheon Marathon (25. Okt) oder JTBC (1. Nov). Oder: APT Jeju (25. Sep–7. Okt) → 18 Tage in Korea → Chuncheon (25. Okt).
+Der sauberste Doppel-Coup: APT Incheon (7.–16. Aug) → in Seoul ausruhen → Chuncheon Marathon (25. Okt) oder JTBC (1. Nov). Oder: APT Jeju (25. Sep–7. Okt) → 18 Tage in Korea → Chuncheon (25. Okt). ⚠ Für 2026 ist nur noch die JTBC-Anmeldung offen (bis 4. Sep) – die Chuncheon-Route ist als Vorlage für 2027 zu lesen.
 
 ---
 
@@ -486,7 +486,7 @@ A. Nein. Die Marathons Chuncheon und JTBC haben englischsprachige Anmelde-Tracks
 
 **Q. Kann ich auf einer Reise sowohl Chuncheon (25. Okt) als auch JTBC Seoul (1. Nov) laufen?**
 
-A. Ja – sie liegen eine Woche auseinander. Chuncheon ist etwa 80 Min. von Seoul mit dem Zug entfernt. Lauf Chuncheon am Sonntag, erhol dich von Montag bis Samstag, lauf JTBC am darauffolgenden Sonntag. Viele koreanische Läufer machen solche Back-to-Back-Wochen. Plan zusätzliche Erholungszeit ein; der Chuncheon-Kurs hat Hügel.
+A. Im Kalender ja – sie liegen eine Woche auseinander. Chuncheon ist etwa 80 Min. von Seoul mit dem Zug entfernt. Lauf Chuncheon am Sonntag, erhol dich von Montag bis Samstag, lauf JTBC am darauffolgenden Sonntag. Viele koreanische Läufer machen solche Back-to-Back-Wochen. Hinweis für 2026: Die Chuncheon-Plätze sind ausverkauft, das volle Doppel ist also praktisch ein Plan für 2027. Plan zusätzliche Erholungszeit ein; der Chuncheon-Kurs hat Hügel.
 
 **Q. Ist das Paradise City Casino geöffnet, wenn ich nach einem Marathon an einem Sonntag ankomme?**
 
@@ -494,7 +494,7 @@ A. Ja. Das Paradise City Casino ist 24/7 in Betrieb. Der Sonntags-Check-in nach 
 
 **Q. Können sich Ausländer ohne koreanische Adresse für den Chuncheon Marathon anmelden?**
 
-A. Ja. Der Anmelde-Tab für Ausländer auf chuncheonmarathon.com ist für Teilnehmer aus Übersee gedacht. Du brauchst eine Passnummer, eine E-Mail und ein Zahlungsmittel. Das Startpaket wird vor dem Rennen am Austragungsort ausgegeben.
+A. Ja – das Verfahren ist jedes Jahr gleich (die Plätze für 2026 sind weg; das nächste Fenster öffnet um Juli 2027). Der Anmelde-Tab für Ausländer auf chuncheonmarathon.com ist für Teilnehmer aus Übersee gedacht. Du brauchst eine Passnummer, eine E-Mail und ein Zahlungsmittel. Das Startpaket wird vor dem Rennen am Austragungsort ausgegeben.
 
 **Q. Was ist die Verbindung zu K-Pop am Austragungsort des Garmin Run?**
 
@@ -508,7 +508,7 @@ Korea hat die besten Herbst-Laufbedingungen Ostasiens, ein Casino 10 Minuten vom
 
 Die Community der Menschen, die sowohl eine Poker-Bankroll als auch ein Marathon-Trainingslog führen, ist real. BTS-Suga hat die Überschneidung nicht erfunden – er hat sie nur sichtbar gemacht.
 
-Daten zum Vormerken: ==**Chuncheon 25. Okt**==, ==**JTBC Seoul 1. Nov**==, Garmin Run 15. Nov. Paradise City ganzjährig geöffnet.
+Daten zum Vormerken: ==**Chuncheon 25. Okt**==, ==**JTBC Seoul 1. Nov**==, Garmin Run 15. Nov – und die einzige noch offene Anmeldung für 2026 ist der JTBC, bis 4. September. Paradise City ganzjährig geöffnet.
 
 Für das vollständige Pokerturnier-Bild (APT Incheon, $2,7M GTD, 7.–16. August): [APT Incheon 2026 Guide](/de/blog/apt-incheon-2026-guide). Für die strategischen Unterschiede zwischen Turnier und Cash Game: [Turnier vs Cash Game](/de/blog/holdem-tournament-vs-cash-game).
 

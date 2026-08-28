@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Das Main Event der APT Incheon 2026 gewann Stephen Pang aus Hongkong – KRW 411.180.000 (~$293.700) nach einem Dreier-ICM-Deal plus die 24K-Gold-Löwentrophäe. Das Feld setzte mit 1.393 Entries einen neuen Rekord, der Preispool lag bei KRW 3.008.880.000. Zweiter wurde Shoumin Zhang (China, KRW 366.500.000 / ~$261.785), Dritter Yifu He (USA). Die Top 3 erhielten zusätzlich Seats für das Main Event der APT Championship 2026 in Taipeh (~$10.000 pro Seat). Nur für ausländische Staatsbürger (koreanische Bürger ohne Wohnsitz im Ausland dürfen nicht rein). Seoul ist ~1 Stunde entfernt – beim nächsten Stopp sind Pokerreise und Korea-Reise wieder dieselbe Reise.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-08-26",
-  masterUpdated: "2026-08-26",
+  updated: "2026-08-28",
+  masterUpdated: "2026-08-28",
   keepImagesInBody: true,
   readTime: "16 Min.",
   emoji: "🇰🇷",
@@ -37,7 +37,7 @@ Die Pokerreise und die Korea-Reise sind dieselbe Reise. ==g:Paradise City ist 10
 ---
 
 > **Kurze Antwort**
-> Die APT Incheon 2026 lief ==**7.–16. Aug**== im Paradise City Casino, Incheon. Das Resort liegt ==g:10 Min mit dem kostenlosen Shuttle vom Terminal 1 des Flughafens Incheon== – fährt alle 30 Min, gratis. Main-Event-Buy-in: ==**KRW 2.500.000 (~$1.703)**==, $1M garantiert. Natural8s Online-Qualifikationen vergaben insgesamt ==g:**74 Seats**==. ==r:Das $35-Mega und OnLive endeten am 2. August, die letzte Route ($20 Step → $200 Mega) am 7. August==. ==g:**Die Online-Qualifikation endete mit dem Eröffnungstag der Serie.**== Das Casino ist ==r:nur für ausländische Staatsbürger== – koreanische Bürger ohne Wohnsitz im Ausland dürfen nicht rein.
+> Die APT Incheon 2026 lief ==**7.–16. Aug**== im Paradise City Casino, Incheon. Das Resort liegt ==g:10 Min mit dem kostenlosen Shuttle vom Terminal 1 des Flughafens Incheon== – fährt alle 20 Min, gratis. Main-Event-Buy-in: ==**KRW 2.500.000 (~$1.703)**==, $1M garantiert. Natural8s Online-Qualifikationen vergaben insgesamt ==g:**74 Seats**==. ==r:Das $35-Mega und OnLive endeten am 2. August, die letzte Route ($20 Step → $200 Mega) am 7. August==. ==g:**Die Online-Qualifikation endete mit dem Eröffnungstag der Serie.**== Das Casino ist ==r:nur für ausländische Staatsbürger== – koreanische Bürger ohne Wohnsitz im Ausland dürfen nicht rein.
 
 ---
 
@@ -196,7 +196,7 @@ Paradise City ist kein alleinstehendes Casino – es ist ein ==**integriertes Re
 
 **Was das für dich bedeutet:**
 
-- ==g:Kostenloser Shuttlebus fährt alle 30 Min vom Terminal 1 (Gates 3C & 14C)== – ~10 Min, gratis, wetterunabhängig
+- ==g:Kostenloser Shuttlebus fährt alle 20 Min vom Terminal 1 (Gate 3C)== – ~10 Min, gratis, wetterunabhängig
 - 5-Sterne-Hotel (Hotel Paradise) vor Ort mit direktem Casino-Zugang
 - Internationale Food-Hall, Spa und Entertainment-Komplex
 - 45–60 Minuten ins Zentrum von Seoul mit dem AREX-Zug vom Flughafen
@@ -215,8 +215,8 @@ Paradise City betreibt seinen eigenen kostenlosen Transfer vom Flughafen:
 
 | Option | Fahrt | Kosten | Hinweise |
 |:---|:---:|:---|:---|
-| ==g:**Kostenloser Shuttle (ab T1)**== | ==g:~10 Min== | ==g:Gratis== | Beste Option – Gate 3C oder 14C, alle 30 Min (5–23 Uhr) |
-| Kostenloser Shuttle (ab T2) | ~20 Min | Gratis | Gate 2A, alle 60 Min |
+| ==g:**Kostenloser Shuttle (ab T1)**== | ==g:~10 Min== | ==g:Gratis== | Beste Option – Gate 3C, alle 20 Min (5–23 Uhr) |
+| Kostenloser Shuttle (ab T2) | ~20 Min | Gratis | Gate 4A, alle 60 Min |
 | Taxi ab T1 | ~15–20 Min | ~$15–20 | Mit Taxameter, 24/7 verfügbar |
 | AREX bis Unseo Station → Taxi | ~20 Min gesamt | ~$8 | Nützlich, wenn der Fahrplan passt |
 
@@ -378,7 +378,7 @@ Verglichen mit der EPT Barcelona (~€5.300 Main) oder WPT Australia (~AUD $5.00
 
 **Q. Ist das Paradise City Casino wirklich vom Flughafen Incheon aus zu Fuß erreichbar?**
 
-A. Sehr nah. Paradise City betreibt einen kostenlosen Shuttle vom Terminal 1 (Gates 3C & 14C) alle 30 Minuten – die Fahrt dauert etwa 10 Minuten. Terminal 2 hat seinen eigenen Shuttle alle 60 Minuten ab Gate 2A. Das Resort ist ein flughafennaher integrierter Komplex, speziell für internationale Ankünfte konzipiert.
+A. Sehr nah. Paradise City betreibt einen kostenlosen Shuttle vom Terminal 1 (Gate 3C) alle 20 Minuten – die Fahrt dauert etwa 10 Minuten. Terminal 2 hat seinen eigenen Shuttle alle 60 Minuten ab Gate 4A. Das Resort ist ein flughafennaher integrierter Komplex, speziell für internationale Ankünfte konzipiert.
 
 **Q. Kann ich das APT Incheon Main Event spielen, wenn ich noch nie ein Live-Turnier gespielt habe?**
 

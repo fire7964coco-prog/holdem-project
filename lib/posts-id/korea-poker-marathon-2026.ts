@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "tournament",
   date: "2026-06-19",
   updated: "2026-08-28",
-  masterUpdated: "2026-08-18",
+  masterUpdated: "2026-08-28",
   keepImagesInBody: true,
   readTime: "14 mnt",
   emoji: "🏃",
@@ -54,7 +54,7 @@ Alasannya tidak rumit. Ini soal waktu dan lokasi.
 
 **Jendela cuaca:** Musim panas Korea (Juni–Agustus) panas dan sangat lembap — tidak ideal untuk lari maupun wisata. Tetapi ==**Oktober dan November bisa dibilang bulan terbaik untuk mengunjungi Asia Timur**==. Suhu turun ke 8–15°C. Udara kering dan cerah. Pedesaan berubah oranye dan merah oleh dedaunan musim gugur. Setiap pelari serius di Korea tahu ini. Seluruh kalender maraton dibangun di sekitarnya.
 
-**Lokasi kasino:** Paradise City Casino berada di dalam kompleks resor yang ==g:secara fisik bersebelahan dengan Bandara Internasional Incheon==. Antar-jemput gratis dari Terminal 1 beroperasi setiap 30 menit. Kasino ini buka sepanjang tahun dengan meja cash game — tanpa perlu turnamen. Bagi pemain internasional, inilah kasino paling mudah diakses di Asia: mendarat di Incheon, check in, main.
+**Lokasi kasino:** Paradise City Casino berada di dalam kompleks resor yang ==g:secara fisik bersebelahan dengan Bandara Internasional Incheon==. Antar-jemput gratis dari Terminal 1 beroperasi setiap 20 menit. Kasino ini buka sepanjang tahun dengan meja cash game — tanpa perlu turnamen. Bagi pemain internasional, inilah kasino paling mudah diakses di Asia: mendarat di Incheon, check in, main.
 
 **Transportasi:** Sistem kereta bawah tanah Seoul murah, cepat, dan dwibahasa. Dari Paradise City (via AREX) ke pusat Seoul memakan waktu ~1 jam. Dari Seoul ke Chuncheon (kota maraton) dengan kereta ekspres butuh 90 menit. Semuanya terhubung.
 
@@ -249,7 +249,7 @@ Sementara maraton berlangsung Okt–Nov, ==**Paradise City Casino**== beroperasi
 
 **Dasar-dasarnya:**
 - Lokasi: Incheon, tepat bersebelahan dengan Bandara Internasional Incheon
-- Antar-jemput gratis: Terminal 1 (Gerbang 3C & 14C), setiap 30 menit, perjalanan ~10 menit
+- Antar-jemput gratis: Terminal 1 (Gerbang 3C), setiap 20 menit, perjalanan ~10 menit
 - Hotel: Hotel Paradise, bintang 5, di lokasi
 - ==r:Khusus warga asing — warga negara Korea tanpa izin tinggal tetap di luar negeri tidak boleh masuk==
 - Warga Korea perantauan (penduduk tetap di luar negeri) boleh masuk dengan paspor Korea + green card atau surat keterangan emigrasi

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "WPT Australia 2026: 10 a 30 de set, The Star Sydney. Dois flagships: AUD $1.500 WPT Prime (17 a 22 de set) e AUD $5.000 WPT Championship (24 a 30 de set). Satellites on-site a partir de AUD $270, com qualifiers do Championship a $290 e $550. A premiação de primeiro lugar do Championship inclui um assento de $15.000 no WPT World Championship. Precisa ser 18+, membro do Star Club, e o dress code smart-casual é cobrado.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-08-26",
-  masterUpdated: "2026-08-16",
+  updated: "2026-08-28",
+  masterUpdated: "2026-08-28",
   readTime: "14 min",
   emoji: "🦘",
   layout: "tournament-guide",
@@ -107,7 +107,7 @@ Essa é a pergunta que todo estreante faz. Aqui vai o resumo honesto:
 | **Prime Championship** | Satellite 1-em-6 | ==g:$290== | Assento Prime |
 | **Australian Poker Cup** | Satellite 1-em-5 | $270 | Assento Poker Cup |
 | **Mini-Championship** | Satellite 1-em-8 | $290 | Assento Mini-Championship |
-| **Outros satellites do festival** | diários, ==**até 28 de set**== | $270–550 | Assento do respectivo evento |
+| **Outros satellites do festival** | diários, ==**até 28 de set**== | $270–1.050 | Assento do respectivo evento |
 
 </div>
 
@@ -127,9 +127,9 @@ Se você está fora da Austrália e quer esquentar com satellites online antes d
 |:---|:---|:---:|:---|
 | Australian Poker Cup | 10 a 14 de set | ==g:$1.150== | Multi-flight |
 | Aussie Monster Stack | 13 a 14 de set | $1.250 | Deep stack |
-| Ladies Australian Championship | 15 a 16 de set | ==g:$500== | Aberto a todos |
+| Ladies Australian Championship | 15 a 16 de set | ==g:$500== | Evento feminino (Ladies) |
 | **WPT Prime Australia Championship** | ==**17 a 22 de set**== | ==**$1.500**== | ==g:Mesa final ao vivo== |
-| Bonzai Bounty | 19 de set | $460 | Bounty progressivo |
+| Bonzai Bounty | 19 de set | $460 | Ficha de bounty fixa de $150 |
 | **$10K WPT High Roller** | 23 a 24 de set | $10.000 | High roller |
 | **WPT Australia Championship** | ==**24 a 30 de set**== | ==**$5.000**== | ==g:Mesa final ao vivo== |
 | Mini-Championship | 27 a 28 de set | $2.000 | Formato de 2 dias |

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "WPT Australia 2026：9 月 10–30 日，The Star Sydney。两个旗舰赛：AUD $1,500 WPT Prime（9 月 17–22 日）和 AUD $5,000 WPT Championship（9 月 24–30 日）。现场卫星赛 AUD $270 起，主赛资格赛为 $290 与 $550。冠军的头名奖金里包含一个 $15,000 的 WPT World Championship 席位。必须年满 18 岁、成为 Star Club 会员，并遵守 smart-casual 着装要求。",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-08-16",
-  masterUpdated: "2026-08-16",
+  updated: "2026-08-28",
+  masterUpdated: "2026-08-28",
   readTime: "14 分钟",
   emoji: "🦘",
   layout: "tournament-guide",
@@ -107,7 +107,7 @@ WPT Australia 2026 重回 The Star Sydney，规模是 WPT 历史上最大的一�
 | **Prime Championship** | 1/6 卫星赛 | ==g:$290== | Prime 席位 |
 | **Australian Poker Cup** | 1/5 卫星赛 | $270 | Poker Cup 席位 |
 | **Mini-Championship** | 1/8 卫星赛 | $290 | Mini-Championship 席位 |
-| **赛事期间其他卫星赛** | 每日开赛，==**至 9 月 28 日**== | $270–550 | 对应赛事席位 |
+| **赛事期间其他卫星赛** | 每日开赛，==**至 9 月 28 日**== | $270–1,050 | 对应赛事席位 |
 
 </div>
 
@@ -127,9 +127,9 @@ WPT Australia 2026 重回 The Star Sydney，规模是 WPT 历史上最大的一�
 |:---|:---|:---:|:---|
 | Australian Poker Cup | 9 月 10–14 日 | ==g:$1,150== | 多单日赛 |
 | Aussie Monster Stack | 9 月 13–14 日 | $1,250 | 深筹码 |
-| Ladies Australian Championship | 9 月 15–16 日 | ==g:$500== | 对所有人开放 |
+| Ladies Australian Championship | 9 月 15–16 日 | ==g:$500== | 女士专场（Ladies）赛事 |
 | **WPT Prime Australia Championship** | ==**9 月 17–22 日**== | ==**$1,500**== | ==g:决赛桌直播== |
-| Bonzai Bounty | 9 月 19 日 | $460 | 累进赏金赛 |
+| Bonzai Bounty | 9 月 19 日 | $460 | 固定 $150 赏金筹码 |
 | **$10K WPT High Roller** | 9 月 23–24 日 | $10,000 | 豪客赛 |
 | **WPT Australia Championship** | ==**9 月 24–30 日**== | ==**$5,000**== | ==g:决赛桌直播== |
 | Mini-Championship | 9 月 27–28 日 | $2,000 | 两日赛制 |
@@ -217,7 +217,7 @@ The Star Sydney 位于 **80 Pyrmont Street, Pyrmont NSW 2009**——就在达令
 
 ### NSW 法律：每日现金博彩上限 AUD $5,000
 
-根据 **NSW 现金处理改革（cash-handling reforms）**，博彩游戏有 **AUD $5,000 每日现金上限**（该上限维持到 2026 年 9 月，并将从 2027 年 8 月起降到 AUD $1,000/日）。入场以**记名方式（carded）**进行——你通过 Star Club 会员卡记名游戏——所有锦标赛报名（包括卫星赛）都必须用博彩筹码支付，不能在牌桌用信用卡或现金。
+根据 **NSW 现金处理改革（cash-handling reforms）**，博彩游戏有 **AUD $5,000 每日现金上限**（该上限计划从 2027 年 8 月起降到 AUD $1,000/日）。入场以**记名方式（carded）**进行——你通过 Star Club 会员卡记名游戏——所有锦标赛报名（包括卫星赛）都必须用博彩筹码支付，不能在牌桌用信用卡或现金。
 
 ### 电汇到 The Star Sydney——在你抵达之前
 

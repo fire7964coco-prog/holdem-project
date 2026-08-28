@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "APT Incheon 2026 wrapped on Aug 16 at Paradise City Casino, Incheon. Hong Kong's Stephen Pang won the Main Event for KRW 411,180,000 (~$293,700) after a three-handed ICM deal, topping a record 1,393-entry field with a KRW 3,008,880,000 prize pool. Runner-up Shoumin Zhang (China) took KRW 366,500,000 (~$261,785), and the top three also earned APT Championship 2026 Main Event seats (~$10,000 each). Foreign nationals only (Korean citizens without overseas residency cannot enter). Seoul is ~1 hour away — for the next stop, the poker trip and the Korea trip are still the same trip.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-08-26",
+  updated: "2026-08-28",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🇰🇷",
@@ -36,7 +36,7 @@ The poker trip and the Korea trip are the same trip. ==g:Paradise City is 10 min
 ---
 
 > **Quick answer**
-> APT Incheon 2026 ran ==**Aug 7–16**== at Paradise City Casino, Incheon. The resort is ==g:10 min by free shuttle from Incheon Airport Terminal 1== — departs every 30 min, no charge. Main Event buy-in: ==**KRW 2,500,000 (~$1,703)**==, $1M guaranteed. Natural8's qualifiers awarded 74 seats in total, but ==r:the $35 Mega and OnLive closed on Aug 2, and the last route — the $20 Step → $200 Mega — closed on Aug 7==. ==g:**Online qualifying was already finished before day one.**== Casino is ==r:foreign nationals only== — Korean citizens without overseas residency cannot enter.
+> APT Incheon 2026 ran ==**Aug 7–16**== at Paradise City Casino, Incheon. The resort is ==g:10 min by free shuttle from Incheon Airport Terminal 1== — departs every 20 min, no charge. Main Event buy-in: ==**KRW 2,500,000 (~$1,703)**==, $1M guaranteed. Natural8's qualifiers awarded 74 seats in total, but ==r:the $35 Mega and OnLive closed on Aug 2, and the last route — the $20 Step → $200 Mega — closed on Aug 7, the festival's opening day==. ==g:**Online qualifying was already finished before the Main Event started on Aug 9.**== Casino is ==r:foreign nationals only== — Korean citizens without overseas residency cannot enter.
 
 ---
 
@@ -140,7 +140,7 @@ Natural8 is APT's official online partner and runs the ==**Journey to APT Incheo
 
 </div>
 
-:::note[**★Status as of Aug 9, 2026 — online qualifying is finished.** The $35 Mega Satellite and the OnLive Day 1 qualifiers closed on Aug 2, and the last route standing, the **$20 Step → $200 Mega**, closed on **Friday Aug 7** — the day before the series opened. The 52 + 22 = 74 seats above are the totals already awarded. The routes are documented here because the same structure returns at the next APT stop.]:::
+:::note[**★Status as of Aug 9, 2026 — online qualifying is finished.** The $35 Mega Satellite and the OnLive Day 1 qualifiers closed on Aug 2, and the last route standing, the **$20 Step → $200 Mega**, closed on **Friday Aug 7** — the festival's opening day (the Main Event itself started Aug 9). The 52 + 22 = 74 seats above are the totals already awarded. The routes are documented here because the same structure returns at the next APT stop.]:::
 
 **The step path, as it ran:**
 
@@ -193,7 +193,7 @@ Paradise City isn't a standalone casino — it's an ==**integrated resort built 
 
 **What that means for you:**
 
-- ==g:Free shuttle bus runs every 30 min from Terminal 1 (Gates 3C & 14C)== — ~10 min, no charge, no weather issues
+- ==g:Free shuttle bus runs every 20 min from Terminal 1 (Gate 3C)== — ~10 min, no charge, no weather issues
 - 5-star hotel (Hotel Paradise) on-site with direct casino access
 - International food hall, spa, and entertainment complex
 - 45–60 minutes to central Seoul via AREX train from the airport
@@ -212,7 +212,7 @@ Paradise City runs its own complimentary transfer from the airport:
 
 | Option | Journey | Cost | Notes |
 |:---|:---:|:---|:---|
-| ==g:**Free shuttle (from T1)**== | ==g:~10 min== | ==g:Free== | Best option — Gate 3C or 14C, every 30 min (5am–11pm) |
+| ==g:**Free shuttle (from T1)**== | ==g:~10 min== | ==g:Free== | Best option — Gate 3C, every 20 min (5am–11pm) |
 | Free shuttle (from T2) | ~20 min | Free | Gate 4A, hourly |
 | Taxi from T1 | ~15–20 min | ~$15–20 | Metered, available 24/7 |
 | AREX to Unseo Station → taxi | ~20 min total | ~$8 | Useful if train schedule aligns |
@@ -375,7 +375,7 @@ Compared to EPT Barcelona (~€5,300 Main) or WPT Australia (~AUD $5,000 Main), 
 
 **Q. Is Paradise City Casino really walkable from Incheon Airport?**
 
-A. Very close. Paradise City runs a free shuttle from Terminal 1 (Gates 3C & 14C) every 30 minutes — the ride takes about 10 minutes. Terminal 2 has its own hourly shuttle from Gate 4A. The resort is an airport-adjacent integrated complex specifically designed for international arrivals.
+A. Very close. Paradise City runs a free shuttle from Terminal 1 (Gate 3C) every 20 minutes — the ride takes about 10 minutes. Terminal 2 has its own hourly shuttle from Gate 4A. The resort is an airport-adjacent integrated complex specifically designed for international arrivals.
 
 **Q. Can I play the APT Incheon Main Event if I've never played a live tournament?**
 
@@ -399,7 +399,7 @@ A. Both work, but ==g:arriving 2–3 days early is recommended==. You recover fr
 
 1. **APT Incheon 2026** ran ==**Aug 7–16**== at Paradise City Casino — 10 min from Incheon Airport by free shuttle, $2.7M GTD.
 2. **Main Event** buy-in: ==**~$1,703**== with ==g:$1M guaranteed==. Around a third of the EPT Barcelona Main and half the WPT Australia Championship buy-in.
-3. **Online qualifying closed before the festival** — the $35 Mega and OnLive closed on Aug 2, and the last route ($20 Step → $200 Mega) closed on Aug 7. Down the stretch, on-site registration was the only way in.
+3. **Online qualifying closed by the end of the festival's first day** — the $35 Mega and OnLive closed on Aug 2, and the last route ($20 Step → $200 Mega) closed on Aug 7, the opening day. Down the stretch, on-site registration was the only way in.
 4. **Seoul is 60 min away** and is one of Asia's best travel destinations — ==g:palaces, BBQ, nightlife, and unbeatable street food.==
 5. **A foreign passport gets you in** — this tournament was built for international players. Your passport is your access card.
 

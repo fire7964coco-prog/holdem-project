@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "O Main Event do APT Incheon 2026 foi vencido por Stephen Pang, de Hong Kong, que levou KRW 411.180.000 (~$293.700) após um acordo ICM a três, além do troféu do Leão em ouro 24K. O field marcou recorde com 1.393 entradas e premiação total de KRW 3.008.880.000. O vice foi Shoumin Zhang (China, KRW 366.500.000 / ~$261.785) e o terceiro Yifu He (EUA). O top 3 também ganhou vagas para o Main Event do APT Championship 2026 em Taipé (~$10.000 cada). Só estrangeiros (cidadãos coreanos sem residência no exterior não podem entrar). Seul fica a ~1 hora — na próxima parada, a viagem de poker e a viagem pela Coreia continuam sendo a mesma viagem.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-08-26",
-  masterUpdated: "2026-08-26",
+  updated: "2026-08-28",
+  masterUpdated: "2026-08-28",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🇰🇷",
@@ -37,7 +37,7 @@ A viagem de poker e a viagem pela Coreia são a mesma viagem. ==g:O Paradise Cit
 ---
 
 > **Resposta rápida**
-> **Campeão: Stephen Pang (Hong Kong) — KRW 411.180.000 (~$293.700), num field recorde de 1.393 entradas.** O APT Incheon 2026 rolou de ==**7 a 16 de ago**== no Paradise City Casino, em Incheon. O resort fica a ==g:10 min de shuttle grátis do Terminal 1 do Aeroporto de Incheon== — sai a cada 30 min, sem custo. Buy-in do Main Event: ==**KRW 2.500.000 (~$1.703)**==, $1M garantido. Os classificatórios online da Natural8 distribuíram ==g:**74 vagas no total**==. ==r:O Mega de $35 e o OnLive encerraram em 2 de agosto, e a última via (Step de $20 → Mega de $200) em 7 de agosto==. ==g:**A classificação online já tinha acabado antes do primeiro dia.**== O cassino é ==r:só para estrangeiros== — cidadãos coreanos sem residência no exterior não podem entrar.
+> **Campeão: Stephen Pang (Hong Kong) — KRW 411.180.000 (~$293.700), num field recorde de 1.393 entradas.** O APT Incheon 2026 rolou de ==**7 a 16 de ago**== no Paradise City Casino, em Incheon. O resort fica a ==g:10 min de shuttle grátis do Terminal 1 do Aeroporto de Incheon== — sai a cada 20 min, sem custo. Buy-in do Main Event: ==**KRW 2.500.000 (~$1.703)**==, $1M garantido. Os classificatórios online da Natural8 distribuíram ==g:**74 vagas no total**==. ==r:O Mega de $35 e o OnLive encerraram em 2 de agosto, e a última via (Step de $20 → Mega de $200) em 7 de agosto, o dia de abertura do festival==. ==g:**A classificação online já tinha acabado antes de o Main Event começar em 9 de agosto.**== O cassino é ==r:só para estrangeiros== — cidadãos coreanos sem residência no exterior não podem entrar.
 
 ---
 
@@ -78,7 +78,7 @@ E pra visitantes internacionais: ==g:a maioria dos portadores de passaporte ocid
 
 ---
 
-## Agenda completa de eventos
+## Agenda dos principais eventos
 
 <div style="overflow-x:auto;margin:20px 0">
 
@@ -139,7 +139,7 @@ A Natural8 é a parceira online oficial do APT e roda a campanha de satellites =
 
 </div>
 
-:::note[**★Situação em 9 de agosto de 2026 — a classificação online acabou.** O Mega de $35 e os classificatórios OnLive Day 1 encerraram em 2 de agosto, e a última via, o **Step de $20 → Mega de $200**, fechou na **sexta-feira, 7 de agosto**, um dia antes de a série começar. As 52 + 22 = 74 vagas da tabela são o total já distribuído. As rotas ficam documentadas porque a mesma estrutura volta na próxima parada do APT.]:::
+:::note[**★Situação em 9 de agosto de 2026 — a classificação online acabou.** O Mega de $35 e os classificatórios OnLive Day 1 encerraram em 2 de agosto, e a última via, o **Step de $20 → Mega de $200**, fechou na **sexta-feira, 7 de agosto** — o dia de abertura do festival (o Main Event em si começou em 9 de agosto). As 52 + 22 = 74 vagas da tabela são o total já distribuído. As rotas ficam documentadas porque a mesma estrutura volta na próxima parada do APT.]:::
 
 **O caminho de steps que continua aberto:**
 
@@ -147,7 +147,7 @@ A Natural8 é a parceira online oficial do APT e roda a campanha de satellites =
 Step de $20 → ganhe o ticket pro Mega Satellite de $200 → ganhe a vaga no Main Event (valor ~$1.703) · o último dia foi 7 de agosto
 </div>
 
-==g:A Natural8 também roda um bônus de 8% sobre a premiação== para os classificados via satellite — se você ganhar $10.000 no evento ao vivo, recebe $800 extras por cima. **Vale uma conferida antes de montar o plano em cima disso.** A Natural8 é a skin Ásia-Pacífico da rede GG e **o acesso depende do seu país de residência** — pelos próprios termos, se o seu país não estiver na lista de cadastro, eles não podem te aceitar. Jogadores do Brasil normalmente são direcionados pra skin principal **GGPoker**, que tem site e suporte em português. ⚠️ Contornar com VPN viola os termos e coloca conta e saldo em risco. **A rota aberta pra todo mundo é se inscrever direto com o organizador em registrations@apt.poker, pagando o buy-in cheio.**
+==g:A Natural8 também roda um bônus de 8% sobre a premiação== para os classificados via satellite — se você ganhar $10.000 no evento ao vivo, recebe $800 extras por cima. **Vale uma conferida antes de montar o plano em cima disso.** A Natural8 é a skin Ásia-Pacífico da rede GG e **o acesso depende do seu país de residência** — pelos próprios termos, se o seu país não estiver na lista de cadastro, eles não podem te aceitar. Jogadores do Brasil normalmente são direcionados pra skin principal **GGPoker**, que tem site e suporte em português. ⚠️ Contornar com VPN viola os termos e coloca conta e saldo em risco. **A rota que ficava aberta pra todo mundo era se inscrever direto com o organizador em registrations@apt.poker, pagando o buy-in cheio — vale igual na próxima parada.**
 
 > **O que era o OnLive:** a rota deixava você jogar o Day 1 do seu próprio fuso horário e só voar pra Coreia se sobrevivesse até o Day 3 — o caminho mais esperto quando o orçamento de viagem estava apertado. ==r:Ela encerrou em 2 de agosto, então nesta edição já não é uma opção== — fica anotada porque vale ficar de olho na próxima parada do APT.
 
@@ -194,7 +194,7 @@ O Paradise City não é um cassino isolado — é um ==**resort integrado constr
 
 **O que isso significa pra você:**
 
-- ==g:Ônibus shuttle grátis sai a cada 30 min do Terminal 1 (Portões 3C e 14C)== — ~10 min, sem custo, sem problemas com o clima
+- ==g:Ônibus shuttle grátis sai a cada 20 min do Terminal 1 (Portão 3C)== — ~10 min, sem custo, sem problemas com o clima
 - Hotel 5 estrelas (Hotel Paradise) no local com acesso direto ao cassino
 - Praça de alimentação internacional, spa e complexo de entretenimento
 - 45–60 minutos até o centro de Seul via trem AREX a partir do aeroporto
@@ -213,7 +213,7 @@ O Paradise City roda o seu próprio transfer gratuito a partir do aeroporto:
 
 | Opção | Trajeto | Custo | Observações |
 |:---|:---:|:---|:---|
-| ==g:**Shuttle grátis (do T1)**== | ==g:~10 min== | ==g:Grátis== | Melhor opção — Portão 3C ou 14C, a cada 30 min (5h–23h) |
+| ==g:**Shuttle grátis (do T1)**== | ==g:~10 min== | ==g:Grátis== | Melhor opção — Portão 3C, a cada 20 min (5h–23h) |
 | Shuttle grátis (do T2) | ~20 min | Grátis | Portão 4A, a cada 60 min |
 | Táxi do T1 | ~15–20 min | ~$15–20 | Taxímetro, disponível 24/7 |
 | AREX até a Estação Unseo → táxi | ~20 min no total | ~$8 | Útil se o horário do trem bater |
@@ -338,7 +338,7 @@ Aqui está o que fazer com 1–3 dias livres:
 | Refeições diárias (comida de rua + restaurantes) | $20–$40/dia |
 | Transporte em Seul (cartão T-money) | $5–$10/dia |
 | Buy-in do APT Main Event | ==**~$1.703**== |
-| Side events baratos (Mini Main, Ultra Stack) | ==g:**$270–$610**== |
+| Side events baratos (Micro Main, Ultra Stack, Mini Main) | ==g:**$270–$610**== |
 | **Total estimado de uma viagem de poker de 7 dias** | ==**$2.500–$5.000 + buy-ins de poker**== |
 
 </div>
@@ -353,7 +353,7 @@ Comparado ao EPT Barcelona (Main ~€5.300) ou ao WPT Australia (Main ~AUD $5.00
 
 | Nacionalidade | Precisa de visto? | Como entrar |
 |---|---|---|
-| EUA, Canadá, Reino Unido, Austrália, Nova Zelândia, onze países da UE, Noruega, Suíça, Liechtenstein | **Sem visto** | **Isentos de K-ETA até 31 de dezembro de 2026** — basta a e-Arrival Card gratuita; países não isentos: K-ETA ₩10.000 em k-eta.go.kr |
+| EUA, Canadá, Reino Unido, Austrália, Nova Zelândia, onze países da UE (Alemanha, França, Itália, Países Baixos, Espanha, Polônia, Suécia, Finlândia, Bélgica, Dinamarca, Áustria — **Portugal não está entre eles**), Noruega, Suíça, Liechtenstein | **Sem visto** | **Isentos de K-ETA até 31 de dezembro de 2026** — basta a e-Arrival Card gratuita; países não isentos (incluindo Portugal e Brasil): K-ETA ₩10.000 em k-eta.go.kr |
 | Japão, Singapura, Hong Kong, Macau, Taiwan | **Sem visto** | Também isentos de K-ETA até 31 de dezembro de 2026 — basta o e-Arrival Card gratuito |
 | Maioria dos outros países | Confira [mofa.go.kr](https://www.mofa.go.kr) | Pode precisar de visto de turista |
 
@@ -376,7 +376,7 @@ Comparado ao EPT Barcelona (Main ~€5.300) ou ao WPT Australia (Main ~AUD $5.00
 
 **Q. O Paradise City Casino é mesmo caminhável a partir do Aeroporto de Incheon?**
 
-A. Bem pertinho. O Paradise City roda um shuttle grátis a partir do Terminal 1 (Portões 3C e 14C) a cada 30 minutos — a viagem leva cerca de 10 minutos. O Terminal 2 tem o seu próprio shuttle a cada 60 minutos a partir do Portão 4A. O resort é um complexo integrado adjacente ao aeroporto, projetado especificamente pra chegadas internacionais.
+A. Bem pertinho. O Paradise City roda um shuttle grátis a partir do Terminal 1 (Portão 3C) a cada 20 minutos — a viagem leva cerca de 10 minutos. O Terminal 2 tem o seu próprio shuttle a cada 60 minutos a partir do Portão 4A. O resort é um complexo integrado adjacente ao aeroporto, projetado especificamente pra chegadas internacionais.
 
 **Q. Posso jogar o Main Event do APT Incheon se nunca joguei um torneio ao vivo?**
 
@@ -400,7 +400,7 @@ A. Os dois funcionam, mas ==g:é recomendado chegar 2–3 dias antes==. Você se
 
 1. **APT Incheon 2026** rolou de ==**7 a 16 de ago**== no Paradise City Casino — 10 min do Aeroporto de Incheon de shuttle grátis, $2,7M GTD.
 2. **Main Event** buy-in: ==**~$1.703**== com ==g:$1M garantido==. Cerca de um terço do Main do EPT Barcelona e metade do buy-in do Championship do WPT Australia.
-3. **A classificação online acabou antes do festival** — o Mega de $35 e o OnLive encerraram em 2 de agosto, e a última via (Step de $20 → Mega de $200) em 7 de agosto. Na reta final, a única via de entrada era o registro presencial.
+3. **A classificação online acabou até o fim do primeiro dia do festival** — o Mega de $35 e o OnLive encerraram em 2 de agosto, e a última via (Step de $20 → Mega de $200) em 7 de agosto, o dia de abertura. Na reta final, a única via de entrada era o registro presencial.
 4. **Seul fica a 60 min** e é um dos melhores destinos de viagem da Ásia — ==g:palácios, churrasco, vida noturna e comida de rua imbatível.==
 5. **Com passaporte estrangeiro você entra** — esse torneio foi feito pra jogadores internacionais. O seu passaporte é o seu cartão de acesso.
 

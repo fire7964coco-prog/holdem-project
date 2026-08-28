@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "O ICM (Independent Chip Model) converte seu stack de fichas de torneio no seu valor real em premiação, usando os payouts e os stacks de todo mundo. Como você só ganha um primeiro prêmio, dobrar suas fichas nunca dobra seu dinheiro — então o stack do chip leader vale menos do que sua fatia de fichas, e os short stacks valem mais. Essa diferença é o motivo de você foldar na bolha mãos que seriam calls fáceis num cash game.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-08-26",
+  updated: "2026-08-28",
   masterUpdated: "2026-08-13",
   keepImagesInBody: true,
   readTime: "13 min",
@@ -57,7 +57,7 @@ Vire ao contrário e o short stack é o vencedor dessa matemática. Ele já tem 
 
 ## Como o ICM é calculado? (O modelo Malmuth–Harville)
 
-**O ICM atribui a cada jogador a probabilidade de terminar em cada posição baseada puramente no tamanho do stack, e depois multiplica pelos payouts.** O método costuma ser chamado de modelo Malmuth–Harville — a matemática das probabilidades de colocação vem do trabalho de David Harville nos anos 1970 sobre odds de corrida de cavalos, que Mason Malmuth aplicou ao poker.
+**O ICM atribui a cada jogador a probabilidade de terminar em cada posição baseada puramente no tamanho do stack, e depois multiplica pelos payouts.** O método costuma ser chamado de modelo Malmuth–Harville — a matemática das probabilidades de colocação costuma ser creditada ao trabalho de David Harville nos anos 1970 sobre odds de corrida de cavalos, e Mason Malmuth foi quem publicou o modelo aplicado ao poker.
 
 A regra é simples e recursiva:
 
@@ -154,7 +154,7 @@ O short stack recebe ==$97 a mais== de um ICM deal do que de um chip chop, porqu
 
 **O ICM importa mais perto dos pay jumps e menos quando eles estão longe: perto do dinheiro e na final table você joga $EV; no início, no jogo profundo e no heads-up você volta ao chip EV e acumula.** Apoie-se nele nestes spots:
 
-- **A [bolha do dinheiro](/pt/blog/holdem-bubble "thumb:/images/holdem-bubble-hero.webp")** — o maior pulo de todos é de $0 para um prêmio, então os risk premiums batem no teto.
+- **A [bolha do dinheiro](/pt/blog/holdem-bubble "thumb:/images/holdem-bubble-hero.webp")** — em termos relativos, nenhum pulo é maior que o de $0 para um prêmio (cada degrau seguinte é dinheiro real, mas nenhum muda "sair sem nada" para "sair pago"), então os risk premiums batem no teto.
 - **A bolha da final table e cada pay jump na final table** — cada degrau da escada é dinheiro real.
 - **Satellites** — o caso extremo: cada vaga classificatória vale o mesmo, então quando você tem fichas suficientes para ganhar uma vaga, fichas extras valem quase *nada* e você folda quase tudo.
 
@@ -173,7 +173,7 @@ Um leak comum é aplicar ICM demais: foldar até virar um short stack "para subi
 **O ICM é o melhor modelo simples que temos, mas é uma aproximação — ele assume que todo jogador tem a mesma habilidade e ignora quase tudo exceto o tamanho dos stacks.** Seja honesto sobre o que ele deixa de fora:
 
 - **Habilidade.** O ICM trata um campeão mundial e um estreante com stacks iguais como iguais. As fichas de um jogador melhor valem mais do que o modelo diz.
-- **Posição.** Um stack de 3 big blinds no button (que paga os blinds por último e ainda ganha algumas mãos de graça antes de ser forçado a entrar) vale mais do que o mesmo stack no big blind (all-in forçado na mão seguinte). O ICM não enxerga os assentos.
+- **Posição.** Um stack de 3 big blinds no button (ainda livre para escolher o spot e dar open-shove com todo o fold equity, do melhor assento da mesa) vale mais do que o mesmo stack no big blind (um terço dele já postado, forçado ao all-in em uma ou duas mãos). O ICM não enxerga os assentos.
 - **Blinds e jogo futuro.** O ICM congela o torneio neste instante; ele ignora blinds subindo, antes, e como as próximas rodadas vão de fato se desenrolar.
 
 Tem até respaldo empírico para o ponto cego dele: um grande estudo de 2025 que testou o ICM contra resultados reais de torneio descobriu que ele tende a ==subestimar stacks grandes e superestimar short stacks==, em parte porque um chip leader habilidoso consegue alavancar a pressão de ICM para ganhar *mais* do que o modelo bruto prevê. Solvers avançados adicionam uma correção de "jogo futuro" exatamente por isso. Nada disso torna o ICM errado — torna ele uma forte primeira aproximação que você ajusta por habilidade e posição, não uma lei da física.
