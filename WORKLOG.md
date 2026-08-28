@@ -1,3 +1,53 @@
+## 2026-08-28 (1) — 세션 8/9: id glossary 클러스터 6편 경화 · 마부치 올인 시점 EN·id 선정정 · 렌즈 4종 + 2차 교열
+
+glossary(허브)·bad-beat·cooler·fish·rake·straddle 6편. pt 회차 5(2a6f49d5)가 선례.
+
+- **기준선 대조(masterUpdated 불신 규율)**: EN 63c3f679(id 발행 07-15)→HEAD diff 실물 전수 —
+  다로케일 미러 커밋들(739730d0·a66ef978·8f2e6eae·cba8b3fa·6579679b 계열)로 본문 다수 기동기,
+  빠진 것은 **EN 경화 커밋들**(1cec9b13 glossary 10행 · fb769871/108c8dc0/6ff14a70/fd2a1085 역링크·FAQ ·
+  2a6f49d5 12곳)뿐
+- **드리프트 소급(핸드오프 회차 5 id 몫 이행)**: ① glossary 허브 역링크 **0/5→5/5**(5편 도입부·썸네일 힌트)
+  ② rake 라이브 캡 $4–$6→$3–$6(스트라이프와 자기모순이던 자리) ③ EN 08-26 수정 거울 —
+  glossary 표 10행(Boat·Quads·Runner-runner·NL/Limit·PLO·GTD·Hand-for-hand·Heads-up·RFI·Splash) +
+  스트라이프 80+→100+(실측 107행) + Blind vs Ante/String bet/Ante/Run it twice 행 · bad-beat(suckout
+  플랍 포함·overpair 캐비어트·쿼드에이스 «스트레이트 플러시만» 2곳·dealt-in 2곳) · cooler FAQ 2문
+  (set-over-set 1%·1/96·11,8% + 카지노 cooler/The Cooler 2003) · fish PFR 괄호 · rake(0~−1·FAQ 3문) ·
+  straddle(최소 레이즈 $8·sleeper 헤지 3곳·Siapa boleh straddle FAQ·솔버 근거 교체)
+- **키워드 실측(라쿠 배치 6 · 1258880 · 40종·48m + DFS Labs 3시드 REST + 자동완성 hl=id 22시드)**:
+  실재 축 = istilah poker/istilah dalam poker 각 110·kd=1 + kamus poker 70(+211%↑ 신생) + muck artinya
+  110(2024-07 신생) → glossary 집중 채택(태그 3·seoTitle «Kamus Istilah Poker»·muck FAQ 신설·첫 H2
+  «Istilah Dalam Poker…» 편입). 함정 기록 = tilt artinya 1.600·rake artinya 590·straddle artinya 170·
+  vpip 70(전부 비포커 지배). 용어 개별축 전멸(≤20) → 흡수 전략 4연속 재확인
+- 🔴 **마부치 2008 핸드 올인 시점 — EN·id 선정정(수학 렌즈 검출 · PokerNews 축어 재확인)**: 보드
+  A♥9♣Q♦10♦A♦ 리버가 **먼저** 깔리고 체크→벳→올인→즉시 콜 — 기존 서술(«올인했고, 리버가…»)은
+  순서 역전. + «엄밀히는 suckout 없음» 이탤릭 캐비어트(2차 교열 A — 글 자기기준과 충돌 봉합) +
+  EN «7이 오면 무조건 트립스 승» ace 예외 삽입. **EN updated 08-28 — 잔여 6로케일(es·de·ja·zh·
+  zh-hant·pt) 소급 미결 등재**
+- **렌즈 4종(Opus)**: 수학·딜러 — §13 핸드·확률 전수 재계산 **오류 0**(set-over-set 1/96.1·플랍셋
+  11.755%·one-outer 95.7%·KK vs AA 4.6:1 등 + cooler 카드 문단 2건 손검산) · 인포그래픽 육안 3건
+  검출(glossary 카테고리 alt «Situasi»→실물 SLANG · fish food-chain «terlemah ke terkuat» 오독 ·
+  weak-ace-trap 캡션이 A♠K♦까지 fish 핸드로 지시 — 전부 이미지 실물 재확인 후 id alt/캡션 정정,
+  EN 동형은 EN-먼저 등재). 네이티브 — **의미 역전 1**(정의문 «tangan yang Anda kalahkan»=이긴 핸드
+  — 원본 유래) + «flush draw mati»=drawing dead 오독(pt §13급 ① 계열) + 비문·칼크 ~40곳 정정
+  (membeli→memberi·pejudi jalanan·mengkreditkan·menikahi·gantung diri·biaya rata→tetap·berskala 등).
+  SEO — seoTitle cooler·rake에 «Poker» 앵커 보강(절단선 밖+앵커 0이던 유이한 2편) · 함정 맨몸 태그
+  한정형 전환(rake/straddle/fish/cooler → +poker) · 영어 잔재 태그 교체 · desc 6편 149~159 실측 무결 ·
+  내부링크 23슬러그·이미지 26장 전수 무결. 교열 diff — EN 축어 이식 검증 + NL50 «온라인» 예시 cap $4
+  ↔ 온라인 캡 $1–$3 선언 자기모순(EN 유래) 신규 검출
+- **2차 교열(Opus)**: 반영 편집의 잔존·신결함 5건 검출·정정(coolered 잔존 2·dengan good 1·time fee
+  rata 1·bad-beat 캡션 «이긴 kings에 cooler» 오라벨 → preflop 한정어 복원) + 마부치 캐비어트 제안
+  수렴. 베팅 순서 재구성 의심(G)은 PokerNews 축어 기확보로 기각
+- **검수자 오판·선례 기각**: «bad beat vs cooler» 어순쌍 태그 제거 제안 → pt 회차 기판정(아카이브
+  라우트 부재 = 조치 불요) 유지 · straddle 정의 3중·Mississippi 근접 축어 → EN 동형 기각 · rake
+  pay-less FAQ«시간당 논리» 모순 주장 → 총액 질문이라 성립(기각) · H2↔직답 사이 이미지(cooler) →
+  EN-먼저 ㉒ 유형 기각
+- 표기 정합(6편 범위): Artikel Terkait→Postingan Terkait(glossary) · 카드 라벨 영어 잔재
+  (Glossary/Odds & Math/Hand Rankings)→Glosarium/Peluang & Matematika/Pemecah Seri ·
+  sepanjang waktu→jalan 3 · varians→variance 2 · kebocoran→leak 1 · «saya coolered»→«kena cooler»
+- locale-intentional-diffs 1행 등재(glossary 스트라이프 N+ 로케일별 실측 하한 — 오탐 방지)
+- 게이트 --locale=id 42/42 · --locale=en 56/56 🔴 0 · 빌드 653p ✓(70+471) · FAQ 스키마 산출물
+  6편 전건 일치(9/8/10/8/11/9)
+
 ## 2026-08-27 (9) — 세션 7/9: id strategy 클러스터 8편 경화 (`971b58c3`) · #41 8로케일 전수 정정 · 렌즈 4종 + 2차 교열
 
 strategy(필라)·3bet·continuation-bet·position-play·positions·starting-hands-chart·when-to-fold·limping 8편.
