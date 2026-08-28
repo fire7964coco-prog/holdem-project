@@ -1,4 +1,4 @@
-# id 코어 볼륨 실측 — rules·rankings·odds 축
+# id 코어 볼륨 실측 — rules·rankings·odds·tournament 축
 
 > 🪶 발굴 원자료·의도 판정(자릿수 함정)·현지화 노트·커버리지 맵은 **`id-posting-reference.md`**
 > (신규 포스팅·경화 공용 참고 파일). 볼륨 정본은 이 파일이다.
@@ -7,7 +7,8 @@
 > requestId **1258288**(배치 1 · 22종 · 12m) + **1258295**(배치 2 · 29종 — rules 소급용 · 12m) +
 > **1258342**(배치 3 · 44종 — rankings 클러스터 · 48m) + **1258391**(배치 4 · 40종 — odds 클러스터 · 48m) +
 > **1258443**(배치 5 · 56종 — strategy 클러스터 · 48m · 2026-08-27 세션 7) +
-> **1258880**(배치 6 · 40종 — glossary 클러스터 · 48m · 2026-08-28 세션 8)
+> **1258880**(배치 6 · 40종 — glossary 클러스터 · 48m · 2026-08-28 세션 8) +
+> **1259026**(배치 7 · 54종 — tournament 클러스터 · 48m · 2026-08-28 세션 9)
 >
 > ✅ **교차검증 완료(2026-08-27 세션 5)** — DataForSEO REST(google_ads search_volume ·
 > location=Indonesia · language=id)로 15종 재실측: 라쿠와 **전 항목 일치**(cara main poker 4.400 ·
@@ -163,6 +164,33 @@
 
 → **결론: strategy 8편의 경화 본체도 «드리프트 소급 + EN 경화분 FAQ 이식 + 언어 품질»**
   (odds·kicker 판정과 동일 계열). 세션 7이 그렇게 실행했다. 실채택 = 필라 태그 1교체뿐.
+
+## 배치 7 — tournament 클러스터 (2026-08-28 세션 9 · requestId 1259026 · 48m)
+
+| 키워드 | 볼륨 | 추이 | 소속/판정 |
+|---|--:|--:|---|
+| **wsop = world series of poker** | **590** | **12m +58%↑ · 2026-07 880** | ★ **id tournament 축 최대 키워드 — 무주공산이던 것을 세션 9가 편입**(competition 1). 필라 태그 «wsop» + FAQ «Apa itu WSOP?» 신설. de 90.500·ja 60.500 «poker-헤드 놓침» 패턴의 id판 |
+| wpt poker | 70 | −10% | 이벤트 글이 간접 커버 — 조치 불요 |
+| turnamen poker | 50 | **+33%↑** | 필라 소유(«cara kerja turnamen poker» 태그 계열). 자동완성 생태계 생존: indonesia·dunia·terbesar·jakarta·hadiah·«apakah … uang asli» |
+| apt poker | 40 | −48% | apt-incheon 글 커버 |
+| turnamen poker indonesia · gratis | 각 30 | 하락 | 로컬 대회 탐색 의도 — 우리 글 축 아님, 채택 안 함 |
+| wsop 2026 | 20 | **+288%↑↑**(7월 110) | 급성장 신생 — 재실측 추적. id에 WSOP 가이드 글 없음(신규 후보는 아직 아님 — 헤드 590이 먼저) |
+| buy in poker | 20 | **+71%↑** | 필라·tvc가 커버. «apa itu buy in poker»는 자동완성 실재 → 이미 본문 직답 |
+| korea marathon 20 · chuncheon marathon 20 · jtbc marathon 10 · marathon korea 2026 10 | — | 평탄 | marathon 글 태그 기보유 |
+| turnamen poker online 20 · ept barcelona 10 · ept 2026 10 · wpt australia (2026) 10 · apt incheon (2026) 10 · main event poker 10 · cash game poker 10 · poker turnamen 10 | — | 평탄 | 기존 글 커버 — 조치 불요 |
+| icm poker · bubble poker · short stack poker · satelit/satellite poker · freezeout poker · rebuy poker · add on poker · big blind ante · final table poker · prize pool poker | 각 10↓ | 평탄/소멸 | **개념축 전멸 = 흡수 전략 확정**(odds·strategy 판정과 동일 계열) — 재조준 없음 |
+| cara ikut turnamen poker (dunia) · apa itu turnamen poker · wsop adalah · hadiah turnamen poker · apakah turnamen poker menggunakan uang asli · tips/strategi/daftar turnamen poker · apa itu icm/bubble/buy in/final table | null | — | 라쿠 DB 부재이나 **자동완성 실재** → FAQ/H2 흡수(세션 9: 필라 H2 «Cara Ikut Turnamen Poker» 전환 + FAQ «uang asli»·«WSOP» 신설) |
+
+### 배치 7 함정·판정 기록
+
+- «apa itu icm» 자동완성 = 비포커 지배(ICMP·ICMI·조산학) — **icm 단독 시드 금지**, «icm poker» 결합형만.
+- «short stack» 단독 = 팬케이크·폰트·밴드 지배 — 결합형만.
+- «maraton korea» = 북한 마라톤·드라마 혼재 — 태그는 영어형(korea marathon) 유지가 옳다(기존 판정 유지).
+- «full house» 22.200 함정(§3)과 동급 신규 없음.
+
+→ **결론: tournament 개념 5편의 경화 본체 = «EN 08-26 드리프트 거울 + EN FAQ 이식(7문) + 언어 품질»,
+  이벤트 4편 = «라이브 재실측(JTBC 9/4 마감·AJPC 4–13 Des 확정·EPT/WPT/APT Jeju 공식 일치) + 정정 잔존 소급».
+  실채택 = 필라 wsop 축 편입 + H2 1전환 + FAQ 4신설.**
 
 ## 배치 6 (2026-08-28 · 세션 8 glossary 클러스터 — 자동완성(hl=id) + DFS Labs 발굴 + 라쿠 40종 실측 · 48m)
 

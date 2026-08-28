@@ -1,3 +1,53 @@
+## 2026-08-28 (2) — 세션 9/9: id tournament 클러스터 9편 경화 — 트랙 B 완결(id 42/42) · 라이브 전수 실측 · EN·id 선정정 2건
+
+개념 5편(tournament 필라·tvc·icm·bubble·short-stack) + 이벤트 4편(apt·ept·wpt·marathon). 트랙 B(세션 4~9) 종결.
+
+- **키워드 배치 7**(라쿠 1259026 · 54종 · 48m + 자동완성 hl=id 40시드): ★**«wsop» 590(12m +58%↑·7월 880)
+  = id tournament 축 최대 무주공산** → 필라 태그+FAQ 편입(de 90.500 계열 «poker-헤드 놓침» 패턴의 id판).
+  «wsop 2026» 20(+288%↑↑) 추적 등재. 개념축(icm·bubble·short stack·satellite·freezeout·rebuy) 전멸
+  = 흡수 전략 확정. 질문축(cara ikut·apa itu turnamen·uang asli — 볼륨 null·자동완성 실재) FAQ 흡수.
+  필라 H2 «Cara Masuk»→«Cara Ikut Turnamen Poker» 전환. 정본 = id-core-volumes.md 배치 7 절
+- **드리프트 소급(회차 6 묶음 id 몫 전량 — EN 커밋 diff 실물 대조)**: EN 08-26(79341df8) 8건 거울 —
+  rebuy 정의 3층·새틀라이트 스톨 3불릿(WSOP 페널티 축어 계열)·앤티 시점(Level 2–4행)·10bb 포지션·
+  홈칩 FAQ 재작성·hit-and-run/ratholing·EPT 브레이크·apt 시제 2곳+Verified 8/17. ⚠ apt 요약은
+  EN «before the festival»을 따르지 않고 «개막일과 함께 종료» 5로케일 판정 준수 + :142 «sehari
+  sebelum seri dibuka» 잔존(EN note 상속 거짓)도 같은 판정으로 정정. EPT «진행 중» 배너는 의도적
+  미이식 유지(8/29 일괄·masterUpdated 미기입 유지)
+- **EN FAQ 이식 9문**(EN 1:1): 필라 2(money·luck/skill) · tvc 2(big blinds·tax) · bubble 2(pay the
+  bubble·bubble factor — c·BF÷(P+c·BF) 본문 수치와 정합) · icm 1(mistakes) · short-stack 2(all-in or
+  fold·respond to shove 43,9%/52,65%) + id 고유 2문 신설(uang asli·WSOP — 딜러 렌즈로 bracelet 한정 교정)
+- **라이브 전수 실측(사장님 지시 «포스팅마다 새 웹서치» — 공식 원문 축어)**: JTBC «Registration closes
+  on 04 September (8 days left)» 실측(Playwright — 서술 정확·열림 유지) · **AJPC Samurai Circuit III
+  4–13 Des 확정**(pokercalendar — 기존 TBD 4곳 갱신, 잔여 7로케일 소급 미결 등재) · APT Jeju 공식 축어
+  전건 일치(25 Sept–7 Oct·KRW 5.2B≈$3.5M·136 trophy events·ME 2.7M/2.2B) · EPT 공식 일치(Aug 16–29·
+  ME Aug 22–29 €5,300) · WPT 공식 일치(10–30 Sep·$1,500/$5,000·36 events) · Chuncheon/Garmin 마감 반영
+- **wpt 정정 잔존 3곳 발견·정정**: 트로피 오귀속(«dua kesempatan WPT Champions Cup»→Prime Perpetual
+  Trophy/Mike Sexton Champions Cup 분리 — af6c77c8 8로케일 정정이 놓친 자리·표 «WPT Champions Cup ✅ Ya»
+  행 포함) + NSW 귀속·일몰·carded 이식 + 아젠다 «12 sorotan/36 total» 프레임 + H2 «Jadwal Lengkap»→
+  «Sorotan Jadwal»(EN은 이미 Highlights) + Prime WC 좌석 한정어 복원
+- **marathon 자기모순 해소**: desc(마감)↔표 «Dibuka sekarang» 충돌 정정 + Garmin desc 반영 + 타임라인
+  Reg. 셀 3행 통일 + APT Incheon 행 (selesai) 처리 + H2 «Okt–Des»→«Sep–Des» + Suga 50.000→매진(pt 정본)
+  + 영어식 표기 혼입 7곳($3.5M→$3,5 juta·42.195K→42,195K 계열) + **Chuncheon 축 2026 상태 장치**(tldr·
+  직답·Opsi B·FAQ 2문·결론 — 매진 대회를 축으로 여행 설계가 남던 자리, EN+6로케일 소급 미결 등재)
+- **EN·id 선정정 2건**(세션 7·8 선례 — EN updated 08-28·잔여 로케일 드리프트 🔴 = 의도 신호):
+  ① icm «버튼이 블라인드를 가장 늦게 낸다» 로테이션 반전(BTN→SB→BB — 근거를 «first-in 셔브 fold
+  equity 온전 vs BB 강제»로 교체 · 잔여 de·ja·pt·zh·zh-hant + es 표기 재확인) ② wpt NSW «hingga Sep
+  2026» 자기모순 파편 삭제(Aug 2027 일몰과 공존 불가 — 2년 유예 2차 출처 2종 확인 · 잔여 de·ja)
+- **렌즈 4종(전부 Opus: 수학·딜러/TD·네이티브+SEO·교열 diff) ~40건 판정·~35건 반영 + 2차 교열 스윕**:
+  수학 = 약 150개 수치 재계산 **산술 오류 0**(22 vs AKo 685만 보드 전수 = 52,65% 소수 2자리 일치·
+  ICM 26값·WPT Seminole·예산표) — id 몫 2건만(marathon 표기·apt «Dan dan») · 딜러 = 버튼 로테이션(반영)·
+  bracelet 한정(반영)·H4H 스톨 논리 반전(EN-먼저)·TDA RP-8-A 동시탈락 귀속(EN-먼저)·WC 9석 분포
+  (EN-먼저) · 네이티브 = 신규 FAQ 직역투 10여 곳·«Andalkan ia» 문법 오류·«akan pernah»·라벨 3종
+  (Panduan Terkait 3편→Postingan 소멸·readnext 유일 이탈·ekuitas→equity 263:9) · 교열 = apt 개막일
+  모순 승격 검출·상태셀 잔존·치환 잔존표 전건 ✅ · **기각 판정**: ⚠ Merah 되돌리기(본문 🔴 금지 규율이
+  심판)·태그 교체(실측 null)·EN 동형 다수(전부 EN-먼저 등재) · 검수자 오판 기각: jam=shove 코퍼스
+  실사용(bubble)·ekuitas 추상명사 7건(tvc)
+- **게이트**: audit:hard --locale=id 42/42 🔴 0(드리프트 1 = shc 보류 의도·추적불가 1 = ept 의도) ·
+  --locale=en 56/56 🔴 0 · 빌드 653页 + sitemap ✓ · FAQ 스키마 산출물 11/10/9/8/9 전건 정합
+- 정본 등재: id-core-volumes 배치 7 절 · id-posting-reference §7 세션 9 행·§8 교훈 · 미결 정리
+  (bubble #27 닫힘 — de 원장 08-24 OK + id 인원수 주장 자체 부재 실측 / tvc 100-300BB ↔ 초반 100-200
+  모순 아님 확정 닫힘 / wpt 하이라이트 마침표 소품 닫힘)
+
 ## 2026-08-28 (1) — 세션 8/9: id glossary 클러스터 6편 경화 · 마부치 올인 시점 EN·id 선정정 · 렌즈 4종 + 2차 교열
 
 glossary(허브)·bad-beat·cooler·fish·rake·straddle 6편. pt 회차 5(2a6f49d5)가 선례.
