@@ -8,18 +8,18 @@ export const POST: Post = {
   tldr: "Straddle adalah taruhan blind opsional — biasanya dua kali big blind — yang dipasang sebelum kartu dibagi. Ia membeli aksi terakhir bagi si straddler dan opsi untuk raise preflop, menggandakan taruhan. Dalam hampir semua kasus ini adalah play -EV, hanya diizinkan di cash game sesuai aturan rumah.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-08-11",
-  masterUpdated: "2026-08-11",
+  updated: "2026-08-28",
+  masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "10 mnt",
   emoji: "💰",
   image: "/images/holdem-straddle-hero.webp",
   imageAlt: "Seorang pemain under-the-gun memasang taruhan blind ekstra dua chip di depan big blind sebelum kartu dibagi",
-  tags: ["straddle", "apa itu straddle di poker", "aturan straddle poker", "mississippi straddle", "button straddle", "sleeper straddle", "apakah straddle profit", "utg straddle"],
+  tags: ["straddle poker", "apa itu straddle di poker", "aturan straddle poker", "mississippi straddle", "button straddle", "sleeper straddle", "apakah straddle profit", "utg straddle"],
   content: `
-Pertama kali seseorang straddle di meja $1/$2 saya, saya tak tahu kenapa orang di under the gun melempar $4 sebelum kartu keluar — dan kenapa dealer tiba-tiba memulai aksi satu kursi lebih jauh. Saya menyebutnya "taruhan orang kaya" selama sekitar sebulan sebelum akhirnya paham apa fungsinya: sebuah straddle ==menggandakan taruhan dan membeli satu pemain hak bicara terakhir==, semua sebelum siapa pun melihat kartu.
+Pertama kali seseorang straddle di meja $1/$2 saya, saya tak tahu kenapa orang di under the gun melempar $4 sebelum kartu keluar — dan kenapa dealer tiba-tiba memulai aksi satu kursi lebih jauh. Saya menyebutnya "taruhan orang kaya" selama sekitar sebulan sebelum akhirnya paham apa fungsinya: sebuah straddle ==menggandakan taruhan dan memberi satu pemain hak bicara terakhir==, semua sebelum siapa pun melihat kartu.
 
-Jika Anda pernah melihat game live di mana sebuah blind ekstra muncul entah dari mana, inilah istilah yang Anda cari. Di bawah ini persisnya apa itu **straddle**, setiap jenis yang akan Anda temui, siapa yang beraksi lebih dulu saat satu dipasang, dan jawaban jujur atas satu-satunya pertanyaan yang penting: ==g:apakah Anda benar-benar harus melakukannya?==
+Jika Anda pernah melihat game live di mana sebuah blind ekstra muncul entah dari mana, inilah istilah yang Anda cari. Ini salah satu entri yang paling sering disalahpahami di seluruh [istilah poker](/id/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp"), jadi mari kita luruskan dengan tepat. Di bawah ini persisnya apa itu **straddle**, setiap jenis yang akan Anda temui, siapa yang beraksi lebih dulu saat satu dipasang, dan jawaban jujur atas satu-satunya pertanyaan yang penting: ==g:apakah Anda benar-benar harus melakukannya?==
 
 ---
 
@@ -43,7 +43,7 @@ Dua hal membuatnya lebih dari sekadar uang ekstra di pot:
 - Ia adalah **blind hidup (live blind).** Persis seperti big blind, si straddler telah membeli **opsi untuk raise** bahkan jika semua orang hanya call — sebuah "blind ketiga" dengan hak untuk beraksi atasnya.
 - Ia dipasang **buta (blind).** Anda straddle *sebelum* melihat kartu Anda (di sebagian besar ruangan, bahkan sebelum kartu dibagi). Anda mengeluarkan uang tanpa informasi, dan itulah alasan utama kenapa biasanya ini ide buruk — lebih lanjut di bawah.
 
-Straddle bukanlah raise dalam arti biasa — ia adalah blind yang mereset harga. Jika Anda paham [apa itu small blind dan big blind](/id/blog/holdem-blind-meaning "thumb:/images/holdem-blind-meaning-hero.webp"), straddle sekadar blind *ketiga* opsional yang pemain pilih untuk dipasang guna menggelembungkan taruhan dan merebut posisi.
+Straddle bukanlah raise dalam arti biasa — melainkan blind yang mereset harga. Jika Anda paham [apa itu small blind dan big blind](/id/blog/holdem-blind-meaning "thumb:/images/holdem-blind-meaning-hero.webp"), straddle sekadar blind *ketiga* opsional yang pemain pilih untuk dipasang guna menggelembungkan taruhan dan merebut posisi.
 
 ---
 
@@ -56,7 +56,7 @@ Inilah bagian yang dilewati halaman-halaman definisi, dan di sinilah pemain baru
 :::steps
 UTG memasang straddle | Pemain under-the-gun menaruh $4 (2× big blind $2) sebelum kartu dibagi
 Pertama beraksi = kiri si straddler | Aksi kini dimulai dari pemain di kiri si straddler (UTG+1), bukan UTG — straddle berlaku seperti big blind baru
-Berkeliling meja | Semua orang harus call $4 (bukan $2) untuk bermain; mereka bisa fold, call, atau raise seperti biasa
+Berkeliling meja | Semua orang harus call $4 (bukan $2) untuk bermain; mereka bisa fold, call, atau raise — dan raise minimum kini $8, dua kali straddle, persis seperti di atas big blind biasa
 Blind memutuskan | Small blind dan big blind beraksi bergiliran, menghadapi harga $4
 Si straddler beraksi TERAKHIR | Jika tak ada yang raise, si straddler bisa check opsinya atau raise — hak bicara terakhir sebelum flop
 :::
@@ -69,7 +69,7 @@ Si straddler beraksi TERAKHIR | Jika tak ada yang raise, si straddler bisa check
 
 ![Taruhan straddle dipasang di samping tombol dealer, menunjukkan button atau Mississippi straddle yang membeli posisi terakhir untuk tangan itu](/images/holdem-straddle-button.webp "Sebuah button (Mississippi) straddle dipasang dari button — satu-satunya straddle yang membeli aksi terakhir postflop juga")
 
-Tak semua straddle sama — dan perbedaannya semuanya soal **di mana aksi dimulai dan berapa lama Anda mempertahankan posisi terakhir.** Berikut perbandingan yang tak ada halaman lain menyusunnya di satu tempat:
+Tak semua straddle sama — dan perbedaannya semuanya soal **di mana aksi dimulai dan berapa lama Anda mempertahankan posisi terakhir.** Berikut perbandingan yang tak Anda temukan tersusun di satu tempat di halaman mana pun:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -78,7 +78,7 @@ Tak semua straddle sama — dan perbedaannya semuanya soal **di mana aksi dimula
 | **UTG (standar)** | Under the gun | Kiri si straddler | Preflop saja | Ya |
 | **Mississippi** | Kursi mana pun (sering button/CO) | Kiri si straddler | Preflop — postflop hanya dari button* | Ya |
 | **Button** | Button | Small blind | Pre + postflop | Ya |
-| **Sleeper** | Kursi non-UTG | Normal (UTG) | Tidak | Biasanya tidak |
+| **Sleeper** | Kursi non-UTG | Normal (UTG) | Tidak | Aturan rumah |
 | **Re-straddle** | Kiri seorang straddler | Kiri si re-straddler | Preflop saja | Ya |
 
 </div>
@@ -88,7 +88,7 @@ Tak semua straddle sama — dan perbedaannya semuanya soal **di mana aksi dimula
 - **UTG straddle** — yang klasik. Dipasang di under the gun, aksi terakhir hanya preflop. Paling umum dan, secara posisi, paling lemah.
 - **Mississippi straddle** — bisa dipasang dari **posisi mana pun**, paling kuat dari button atau cutoff. Aksi dimulai dari kiri si straddler, jadi sebuah button Mississippi straddle membeli **aksi terakhir baik preflop maupun postflop** — satu-satunya straddle dengan alasan posisi yang nyata. Tak diizinkan di semua tempat.
 - **Button straddle** — straddle gaya Mississippi khusus dari button; button mempertahankan aksi terakhir sepanjang jalan. Alur persisnya (di mana small blind masuk) berbeda per ruangan — pastikan dengan dealer.
-- **Sleeper straddle** — sebuah blind dari kursi non-UTG yang tetap "tidur": ia **tidak aktif kecuali aksi fold sampai ke sana**, dan di sebagian besar ruangan ia **tidak** membeli posisi atau opsi untuk raise. Langka, dan hampir tak pernah terlihat online.
+- **Sleeper straddle** — sebuah blind dari kursi non-UTG yang tetap "tidur": ia **tidak aktif kecuali aksi fold sampai ke sana**. Sleeper straddle tak pernah membeli posisi; apakah opsi untuk raise ikut hidup begitu blind-nya "terbangun" adalah wilayah aturan rumah. Langka, dan hampir tak pernah terlihat online.
 - **Re-straddle (double straddle)** — pemain di kiri bisa straddle *di atas* sebuah straddle, minimal dua kali lipat dari yang sebelumnya ($4 → $8 → $16). Apakah diizinkan, dan dari kursi mana, murni aturan rumah.
 
 ⚠️ Setiap satu dari ini **tergantung aturan rumah.** Jika ragu, tanya floor sebelum melempar chip — mekanismenya benar-benar berbeda dari ruangan ke ruangan.
@@ -110,7 +110,7 @@ Jika Anda call ke dalam pot yang di-straddle, ingat [pot odds](/id/blog/holdem-p
 
 ## Apakah Straddle Diizinkan di Turnamen?
 
-**Hampir tak pernah.** Straddle adalah fitur cash game. Turnamen berjalan dengan struktur level blind tetap yang harus tetap identik di setiap meja demi keadilan, dan blind ekstra sukarela akan merusaknya — jadi mayoritas besar turnamen, live maupun online, **melarang straddle sepenuhnya.**
+**Hampir tak pernah.** Straddle adalah fitur cash game. Turnamen berjalan dengan struktur level blind tetap yang harus tetap identik di setiap meja demi keadilan, dan blind ekstra sukarela akan merusaknya — jadi sebagian besar turnamen, live maupun online, **melarang straddle sepenuhnya.**
 
 Bahkan di cash game pun ia opsional dan tergantung aturan rumah: beberapa ruangan hanya mengizinkan UTG straddle, beberapa membolehkan Mississippi dan button straddle, beberapa membatasi ukurannya, beberapa melarang re-straddle. Online, straddle langka dan, di mana ditawarkan, biasanya terbatas pada toggle button UTG sederhana. Perbedaan antara taruhan cash game seperti ini dan format turnamen yang kaku adalah topik tersendiri — lihat [turnamen vs cash game](/id/blog/holdem-tournament-vs-cash-game).
 
@@ -157,9 +157,13 @@ A. Straddle standar adalah 2× big blind — $4 di game $1/$2. Beberapa ruangan 
 
 A. Pemain tepat di kiri si straddler beraksi lebih dulu, karena straddle hidup bekerja seperti big blind baru. Aksi kemudian berkeliling meja, small blind dan big blind beraksi bergiliran, dan si straddler beraksi terakhir preflop — dengan opsi untuk check atau raise jika tak ada yang raise sebelumnya.
 
+**Q. Siapa yang boleh straddle di poker? Apakah semua orang bisa?**
+
+A. Tergantung jenisnya. Untuk straddle standar, hanya pemain di under the gun — kursi tepat di kiri big blind — yang boleh memasangnya. Mississippi straddle, di ruangan yang mengizinkannya, membolehkan pemain mana pun straddle dari posisi mana pun, paling sering button atau cutoff. Bagaimanapun Anda hanya bisa straddle *sebelum* kartu dibagi (atau sebelum Anda melihatnya), dan apakah suatu kursi boleh straddle sama sekali sepenuhnya tergantung aturan rumah — sebagian ruangan hanya mengizinkan UTG, sebagian membolehkan kursi mana pun, dan banyak game online serta turnamen melarangnya sama sekali.
+
 **Q. Apakah straddle dianggap raise?**
 
-A. Tidak. Straddle adalah taruhan blind, bukan raise — ia mereset harga yang harus di-call semua orang untuk masuk pot, dan ia mempertahankan opsi si straddler untuk raise nanti. Apakah ia terhitung dalam batas raise di game limit adalah aturan rumah: banyak ruangan tak menghitungnya, tapi beberapa memperlakukannya sebagai raise untuk tujuan itu, jadi periksa secara lokal.
+A. Tidak. Straddle adalah taruhan blind, bukan raise — ia mereset harga yang harus di-call semua orang untuk masuk pot, dan ia mempertahankan opsi si straddler untuk raise nanti. Apakah ia terhitung dalam batas raise di game limit tergantung aturan rumah: banyak ruangan tak menghitungnya, tapi beberapa memperlakukannya sebagai raise untuk tujuan itu, jadi periksa secara lokal.
 
 **Q. Apa itu Mississippi straddle?**
 
@@ -167,7 +171,7 @@ A. Mississippi straddle bisa dipasang dari posisi mana pun, tak hanya under the 
 
 **Q. Apa itu sleeper straddle?**
 
-A. Sleeper straddle adalah blind yang dipasang dari kursi non-UTG yang tetap tidak aktif ("tidur") kecuali aksi fold berkeliling sampai ke sana. Di sebagian besar ruangan ia tak membeli opsi untuk raise atau memberi posisi seperti straddle hidup. Ia jarang dan langka ditawarkan online — selalu pastikan aturan rumahnya.
+A. Sleeper straddle adalah blind yang dipasang dari kursi non-UTG yang tetap tidak aktif ("tidur") kecuali aksi fold berkeliling sampai ke sana. Ia tak memberi posisi seperti straddle hidup, dan apakah ia mendapat opsi untuk raise begitu "terbangun" berbeda-beda per ruangan. Ia jarang dan langka ditawarkan online — selalu pastikan aturan rumahnya.
 
 **Q. Apakah straddle diizinkan di turnamen?**
 
@@ -175,7 +179,7 @@ A. Hampir tak pernah. Turnamen bergantung pada struktur blind tetap yang harus i
 
 **Q. Apakah straddle profit? Perlukah Anda straddle?**
 
-A. Untuk sebagian besar pemain, tidak — ini play -EV. Anda mengeluarkan uang secara buta, Anda menekan rasio stack-ke-pot (yang berarti Anda harus bermain lebih sedikit tangan, bukan lebih banyak), dan Anda menggembungkan rake. Ia hanya bisa dibela di meja loose-passive, di game di mana semua orang sudah straddle, atau murni untuk bersenang-senang — tak pernah sebagai cara menghasilkan uang.
+A. Untuk sebagian besar pemain, tidak — ini play -EV. Anda mengeluarkan uang secara buta, Anda mengecilkan keunggulan posisi Anda (solver membuka *lebih sedikit* tangan di pot yang di-straddle, bukan lebih banyak), dan Anda menggembungkan rake. Ia hanya bisa dibela di meja loose-passive, di game di mana semua orang sudah straddle, atau murni untuk bersenang-senang — tak pernah sebagai cara menghasilkan uang.
 
 ---
 

@@ -3,22 +3,23 @@ import type { Post } from "../posts";
 export const POST: Post = {
   slug: "holdem-glossary",
   title: "Glosarium Texas Hold'em: Semua Istilah Poker yang Anda Dengar di Meja",
-  seoTitle: "Dari the Nuts sampai Fish — Glosarium Texas Hold'em",
-  desc: "Semua istilah poker yang Anda dengar di meja, dijelaskan sederhana per situasi: taruhan, posisi, tangan, slang, dan istilah yang sering tertukar.",
+  seoTitle: "Dari the Nuts sampai Fish — Kamus Istilah Poker di Meja",
+  desc: "Semua istilah dalam poker yang Anda dengar di meja, dijelaskan sederhana per situasi: taruhan, posisi, tangan, slang, dan istilah yang sering tertukar.",
   tldr: "Ini glosarium bahasa sederhana untuk istilah poker yang benar-benar muncul di permainan Texas Hold'em, dikelompokkan berdasarkan cara Anda menemuinya — aksi taruhan, posisi, tangan dan board, tipe pemain, uang, dan situasi meja. Mulai dari istilah yang paling sering tertukar di bawah (check vs call, set vs trips, cooler vs bad beat), lalu jelajahi per kategori. Istilah dengan panduan mendalam langsung tertaut ke sana.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-07-05",
+  updated: "2026-08-28",
+  masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "📖",
   image: "/images/holdem-glossary-hero.webp",
   imageAlt: "Meja Texas Hold'em dengan chip, tombol dealer, dan kartu bersama terbentang di atas felt hijau, mewakili bahasa poker",
-  tags: ["istilah poker", "glosarium poker", "istilah texas holdem", "slang poker", "terminologi poker", "kosakata poker", "kata-kata poker", "apa artinya di poker"],
+  tags: ["istilah poker", "istilah dalam poker", "kamus poker", "glosarium poker", "istilah texas holdem", "slang poker", "kosakata poker", "istilah poker dalam bahasa indonesia"],
   content: `
 Pertama kali saya duduk di permainan live, meja itu seolah berbicara dalam bahasa lain. Ada yang "under the gun," orang lain "three-bet the cutoff," dealer bertanya apakah saya mau "run it twice," dan saat saya kalah dengan kings saya diberi tahu itu "bahkan bukan bad beat, cuma [cooler](/id/blog/holdem-cooler "thumb:/images/holdem-cooler-hero.webp")." Saya mengangguk seolah paham. Padahal tidak.
 
-Poker punya kosakatanya sendiri, dan menguasainya melakukan dua hal: menghentikan Anda terlihat seperti [fish](/id/blog/holdem-fish "thumb:/images/holdem-fish-hero.webp"), dan membuat Anda benar-benar bisa mengikuti strategi yang menghasilkan uang. Glosarium ini mengumpulkan istilah yang sungguh muncul di meja Texas Hold'em — dikelompokkan berdasarkan ==g:cara Anda benar-benar menemuinya==, bukan sekadar ditumpuk dalam satu dinding A-sampai-Z raksasa. Mulai dari istilah yang paling sering ditukar orang, lalu jelajahi kategori mana pun yang Anda butuhkan. Jika suatu istilah punya panduan lengkap, Anda akan menemukan tautan langsung ke sana.
+Poker punya kosakatanya sendiri, dan menguasainya melakukan dua hal: membuat Anda berhenti terlihat seperti [fish](/id/blog/holdem-fish "thumb:/images/holdem-fish-hero.webp"), dan membuat Anda benar-benar bisa mengikuti strategi yang menghasilkan uang. Glosarium ini mengumpulkan istilah yang sungguh muncul di meja Texas Hold'em — dikelompokkan berdasarkan ==g:cara Anda benar-benar menemuinya==, bukan sekadar ditumpuk dalam satu daftar A-sampai-Z raksasa. Mulai dari istilah yang paling sering ditukar orang, lalu jelajahi kategori mana pun yang Anda butuhkan. Jika suatu istilah punya panduan lengkap, Anda akan menemukan tautan langsung ke sana.
 
 ---
 
@@ -26,14 +27,14 @@ Poker punya kosakatanya sendiri, dan menguasainya melakukan dua hal: menghentika
 
 :::stripe
 6 | Kategori, dikelompokkan berdasarkan cara Anda menemuinya
-80+ | Istilah dijelaskan dalam bahasa sederhana
+100+ | Istilah dijelaskan dalam bahasa sederhana
 8 | Pasangan yang "paling sering tertukar", diluruskan lebih dulu
 → | Panduan mendalam tertaut dari istilah kunci
 :::
 
 ---
 
-## Istilah yang Paling Sering Tertukar
+## Istilah Dalam Poker yang Paling Sering Tertukar
 
 Kalau Anda hanya sempat memperjelas selusin istilah, jadikan yang ini — inilah yang paling banyak menimbulkan kebingungan (dan kesalahan paling mahal) di meja:
 
@@ -42,7 +43,7 @@ Kalau Anda hanya sempat memperjelas selusin istilah, jadikan yang ini — inilah
 | Yang sering tertukar | Bedanya |
 |:---|:---|
 | **Check vs Call** | Check tidak mempertaruhkan **chip apa pun** (hanya saat belum ada taruhan aktif); call **menyamai** taruhan yang sudah ada. |
-| **Blind vs Ante** | Blind adalah taruhan wajib berdasarkan **posisi** (SB/BB); ante dibayar **semua orang** untuk mengisi pot. |
+| **Blind vs Ante** | Blind adalah taruhan wajib berdasarkan **posisi** (SB/BB); ante mengisi pot dan datang dari **semua orang** (di turnamen masa kini biasanya lewat big blind ante). |
 | **Set vs Trips** | Keduanya three of a kind — **set** memakai pocket pair; **trips** memakai satu kartu tertutup + pair di board. |
 | **Cooler vs Bad Beat** | [Cooler](/id/blog/holdem-cooler) = Anda tertinggal dan tak bisa fold; [bad beat](/id/blog/holdem-bad-beat) = Anda unggul lalu tersalip. |
 | **Value bet vs Bluff** | Value bet ingin **call dari tangan lebih lemah**; bluff ingin **tangan lebih kuat fold**. |
@@ -54,7 +55,7 @@ Kalau Anda hanya sempat memperjelas selusin istilah, jadikan yang ini — inilah
 
 ---
 
-![Peta visual enam kategori istilah poker dalam glosarium ini — Aksi Taruhan, Posisi, Tangan, Tipe Pemain, Uang, dan Situasi](/images/holdem-glossary-categories.webp "Enam kelompok yang menjadi dasar penyusunan glosarium ini — jelajahi berdasarkan situasi yang Anda hadapi, bukan sekadar berurutan abjad")
+![Peta visual enam kategori istilah poker dalam glosarium ini — ACTIONS, POSITIONS, HANDS, PLAYERS, MONEY, dan SLANG](/images/holdem-glossary-categories.webp "Enam ranah yang dicakup glosarium ini — di halaman ini slang digabung ke bagian Tipe Pemain, dan ada satu bagian tambahan untuk situasi, statistik, dan etika")
 
 ## Aksi Taruhan
 
@@ -69,18 +70,18 @@ Segala hal yang bisa Anda lakukan secara fisik pada giliran Anda. Jika Anda bena
 | **Call** | Menyamai taruhan saat ini untuk tetap dalam tangan. |
 | **Raise** | Menaikkan taruhan saat ini, memaksa lawan menyamai lebih banyak atau fold. |
 | **Fold** | Menyerahkan tangan Anda dan semua klaim atas pot. |
-| **All-in** | Mempertaruhkan seluruh chip Anda; Anda hanya bisa memenangkan bagian pot yang Anda cover (lihat [side pot](/id/blog/holdem-all-in-rules)). |
+| **All-in** | Mempertaruhkan seluruh chip Anda; Anda hanya bisa memenangkan bagian pot yang disamai tiap lawan sampai sebesar taruhan Anda (lihat [side pot](/id/blog/holdem-all-in-rules)). |
 | **Limp** | Masuk preflop dengan sekadar call big blind alih-alih raise — biasanya permainan lemah dan pasif. |
 | **Open (open-raise)** | Menjadi pemain pertama yang masuk pot dengan raise. |
 | **3-bet** | Re-raise setelah open (taruhan ketiga, dengan menghitung blind sebagai yang pertama). |
 | **4-bet** | Re-raise atas sebuah 3-bet. |
 | **C-bet** | "Continuation bet" di flop oleh pemain yang raise preflop. |
-| **Donk bet** | Memimpin taruhan ke agresor street sebelumnya dari out of position (dulu dianggap kesalahan, kini alat berfrekuensi rendah). |
+| **Donk bet** | Bertaruh lebih dulu ke arah agresor street sebelumnya saat Anda out of position (dulu dianggap kesalahan, kini alat berfrekuensi rendah). |
 | **Value bet** | Taruhan dengan tangan kuat berharap di-call oleh tangan lebih lemah. |
 | **Bluff / Semi-bluff** | Bluff bertaruh tangan lemah untuk memaksa tangan lebih baik fold; semi-bluff melakukannya dengan draw yang masih bisa membaik. |
 | **Check-raise** | Check, lalu raise setelah lawan bertaruh — garis kuat dan menipu (legal di room modern). |
 | **Min-raise** | Raise legal terkecil. |
-| **String bet** | Gerakan ilegal mengambil chip tambahan tanpa dideklarasikan; diputuskan sebagai call, bukan raise. |
+| **String bet** | Meletakkan chip dalam beberapa gerakan terpisah tanpa mendeklarasikannya — hanya gerakan pertama yang dihitung (biasanya diputuskan sebagai call). Mengucapkan "raise" lebih dulu membuat gerakan bertahap menjadi sah. |
 | **Jam / Shove** | Bergerak all-in. |
 | **Snap call** | Call instan tanpa ragu. |
 | **Hero call** | Call dengan tangan lemah karena Anda membaca lawan sedang bluff. |
@@ -99,7 +100,7 @@ Tempat Anda duduk menentukan kapan Anda beraksi — dan beraksi terakhir adalah 
 |:---|:---|
 | **Button (BTN)** | Posisi dealer; beraksi **terakhir** postflop — kursi terbaik di meja. |
 | **Small blind (SB)** | Taruhan wajib di kiri button; beraksi pertama postflop (kursi postflop terburuk). |
-| **Big blind (BB)** | Yang lebih besar dari dua blind; level stake dinamai berdasarkan ukuran blind ($1/$2), dan satu big blind adalah satuan standar untuk mengukur stack. |
+| **Big blind (BB)** | Blind terbesar dari dua blind wajib; level stake dinamai berdasarkan ukuran blind ($1/$2), dan satu big blind adalah satuan standar untuk mengukur stack. |
 | **UTG (under the gun)** | Beraksi pertama preflop — butuh opening range paling ketat. |
 | **Cutoff (CO)** | Di kanan button; kursi terbaik kedua, bagus untuk mencuri blind. |
 | **Hijack (HJ)** | Dua kursi di kanan button; posisi tengah (MP), tepat sebelum cutoff. |
@@ -134,11 +135,14 @@ Kartunya sendiri, dan apa yang Anda buat darinya. Baru mengenal alur street? Mul
 | **Set** | Three of a kind memakai **pocket pair** + satu kartu board (sangat tersamar). |
 | **Trips** | Three of a kind memakai **satu kartu tertutup** + pair di board (kontrol kicker lebih lemah). |
 | **Two pair** | Dua pair yang berbeda. |
+| **Boat / Full boat** | Slang untuk **full house** — three of a kind plus satu pair. |
+| **Quads** | Slang untuk **four of a kind**. |
 | **Made hand** | Tangan yang sudah jadi sekarang, sebagai lawan dari draw. |
 | **Draw** | Tangan yang butuh membaik — mis. **flush draw** (kurang satu untuk flush) atau straight draw. |
 | **Gutshot** | Straight draw dalam yang butuh satu rank tengah (4 [outs](/id/blog/holdem-outs)). |
 | **Open-ender** | Straight draw terbuka, bisa lengkap di kedua ujung (8 outs). |
 | **Backdoor** | Draw yang butuh **dua** kartu berurutan (turn *dan* river). |
+| **Runner-runner** | Melengkapi tangan dengan turn **dan** river sekaligus — draw backdoor yang kesampaian (mis. "runner-runner flush"). |
 | **Overcard** | Kartu yang lebih tinggi dari board. |
 | **Suited connectors** | Dua kartu berurutan dengan jenis yang sama (mis. 8♥9♥). |
 | **Broadway** | Straight 10-J-Q-K-A, straight tertinggi. |
@@ -172,7 +176,7 @@ Kebun binatang julukan untuk orang-orang di seberang felt. Rinciannya ada di [pa
 | **Grinder** | Pemain yang untung lewat volume stabil dan disiplin. |
 | **LAG / TAG** | Loose-aggressive / tight-aggressive — dua gaya agresif yang menang. |
 | **Maniac** | Pemain hiper-agresif yang raise dan bluff serampangan. |
-| **Mark** | Pemain lemah yang uangnya coba dimenangkan meja. |
+| **Mark** | Pemain lemah yang menjadi incaran seisi meja. |
 
 </div>
 
@@ -187,7 +191,7 @@ Chip, stake, dan dua format. Percabangan besarnya adalah [cash game vs turnamen]
 | Istilah | Arti |
 |:---|:---|
 | **Blinds** | Taruhan wajib SB/BB yang memulai aksi — juga nama untuk level stake ([blind dijelaskan](/id/blog/holdem-blind-meaning)). |
-| **Ante** | Taruhan wajib kecil dari semua orang untuk mengisi pot, terpisah dari blind. |
+| **Ante** | Secara tradisional taruhan wajib kecil dari semua orang untuk mengisi pot, terpisah dari blind — sebagian besar turnamen kini memakai big blind ante yang dibayar satu kursi untuk seisi meja. |
 | **Pot** | Total chip yang diperebutkan. |
 | **Side pot** | Pot terpisah yang dibuat saat seorang pemain all-in dan yang lain terus bertaruh. |
 | **Stack** | Chip yang ada di depan seorang pemain. |
@@ -197,8 +201,12 @@ Chip, stake, dan dua format. Percabangan besarnya adalah [cash game vs turnamen]
 | **Rakeback** | Pengembalian sebagian dari rake yang telah Anda bayar. |
 | **Straddle** | Blind opsional (biasanya 2× BB) yang membeli aksi preflop terakhir — [panduan lengkap](/id/blog/holdem-straddle). |
 | **Cash game** | Chip bernilai riil, bergabung atau keluar kapan saja, blind tetap. |
+| **No-limit (NLH) / Limit** | No-limit membolehkan Anda bertaruh berapa pun sampai seluruh stack; limit membatasi tiap taruhan pada ukuran tetap. Hold'em hampir selalu no-limit. |
+| **PLO** | Pot-Limit Omaha — varian populer dengan empat kartu tertutup dan wajib memakai tepat dua (bukan permainan yang sama, tapi namanya akan sering Anda dengar). |
 | **Tournament** | Buy-in tetap, blind naik, main sampai bust atau menang. |
 | **Freezeout** | Turnamen tanpa rebuy — keluar berarti keluar. |
+| **GTD (guaranteed)** | Prize pool minimum yang dijanjikan sebuah turnamen, tetap dibayar meski jumlah entri kurang. |
+| **Hand-for-hand** | Menjelang money bubble, setiap meja memainkan satu tangan pada waktu yang sama supaya tak ada yang bisa mengulur waktu demi masuk ke zona hadiah. |
 | **Bounty (knockout)** | Turnamen yang membayar hadiah untuk setiap pemain yang Anda eliminasi. |
 | **Sit & Go (SNG)** | Turnamen kecil yang dimulai begitu terisi penuh. |
 | **MTT** | Turnamen multi-meja yang menggabungkan meja saat pemain bust. |
@@ -232,8 +240,11 @@ Kata-kata untuk apa yang sedang terjadi — dan bagaimana bersikap selama itu be
 | **GTO** | Game Theory Optimal — strategi seimbang dan tak bisa dieksploitasi dari solver. |
 | **Range** | Seluruh himpunan tangan yang mungkin dipegang seorang pemain dalam suatu spot; pro berpikir dalam range, bukan tangan tunggal. |
 | **Cold deck** | Pembagian sial yang menghasilkan cooler (aslinya kartu yang sudah disusun oleh penipu). |
-| **"Don't tap the glass"** | Jangan mengkritik pemain lemah — Anda akan menakut-nakuti mereka yang justru menjadi sumber profit Anda. |
-| **Run it twice** | Pemain all-in membagikan sisa board dua kali, masing-masing untuk setengah pot, guna mengurangi varians. |
+| **"Don't tap the glass"** | Jangan mengkritik pemain lemah — Anda akan mengusir pergi mereka yang justru menjadi sumber profit Anda. |
+| **Run it twice** | Pemain yang all-in sepakat agar sisa board dibagikan dua kali, masing-masing untuk setengah pot, guna mengurangi variance — khusus cash game, dan semua yang terlibat harus setuju. |
+| **Heads-up** | Bermain satu lawan satu — entah permainan dua pemain atau dua orang terakhir sebuah turnamen. |
+| **RFI (raise first in)** | Singkatan range dan statistik untuk open-raise: seberapa sering Anda membuka pot saat belum ada yang masuk sebelum Anda. |
+| **Splash the pot** | Melempar chip berantakan ke tengah pot alih-alih menumpuknya di depan Anda — tidak dianjurkan, karena jumlahnya jadi tak bisa diverifikasi. |
 
 </div>
 
@@ -260,7 +271,7 @@ A. Check melewatkan giliran tanpa memasukkan chip apa pun, dan hanya boleh dilak
 
 **Q. Apa perbedaan antara set dan trips?**
 
-A. Keduanya three of a kind dan berperingkat identik, tapi dibuat secara berbeda. Set adalah pocket pair yang bertemu kartu senada di board (Anda pegang 7‑7, lalu keluar 7). Trips adalah satu kartu tertutup yang cocok dengan pair yang sudah ada di board (Anda pegang A‑7, dan 7‑7 ada di board). Set lebih tersamar dan punya kontrol kicker lebih baik, jadi biasanya memenangkan lebih banyak uang.
+A. Keduanya three of a kind dan berperingkat identik, tapi dibuat secara berbeda. Set adalah pocket pair yang bertemu kartu ber-rank sama di board (Anda pegang 7‑7, lalu keluar 7). Trips adalah satu kartu tertutup yang cocok dengan pair yang sudah ada di board (Anda pegang A‑7, dan 7‑7 ada di board). Set lebih tersamar dan punya kontrol kicker lebih baik, jadi biasanya memenangkan lebih banyak uang.
 
 **Q. Apa perbedaan antara cooler dan bad beat?**
 
@@ -278,6 +289,10 @@ A. The nuts adalah tangan terbaik yang mungkin dibuat dari kartu di board pada s
 
 A. VPIP (Voluntarily Put money In Pot) adalah persentase tangan yang dipilih seorang pemain untuk dimainkan preflop — ukuran seberapa loose atau tight mereka. PFR (Pre-Flop Raise) adalah persentase mereka raise preflop — ukuran agresi. PFR tak pernah bisa lebih tinggi dari VPIP, dan selisih besar antara keduanya menandai pemain pasif yang banyak call.
 
+**Q. Muck artinya apa di poker?**
+
+A. Muck punya dua arti yang berkaitan. Sebagai kata kerja, muck berarti membuang tangan Anda dalam keadaan tertutup — fold tanpa memperlihatkan kartu, termasuk melepas tangan kalah di showdown tanpa membukanya. Sebagai kata benda, the muck adalah tumpukan kartu buangan di depan dealer; kartu yang sudah menyentuh muck umumnya dinyatakan mati dan tak bisa diambil kembali.
+
 ---
 
 ## Ke Mana Selanjutnya
@@ -293,7 +308,7 @@ Tandai halaman ini dan kembali lagi kapan pun sebuah kata membuat Anda tersandun
 
 ---
 
-## Artikel Terkait
+## Postingan Terkait
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/id/blog/holdem-fish" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">

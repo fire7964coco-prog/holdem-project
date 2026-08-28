@@ -8,17 +8,18 @@ export const POST: Post = {
   tldr: "Bad beat adalah saat uang Anda masuk sebagai favorit berat — biasanya 80% atau lebih — dan Anda kalah karena lawan menangkap kartu beruntung untuk 'suck out' pada Anda. Berbeda dengan cooler, Anda unggul sepanjang tangan; hanya di akhir kartu berkhianat. Perih, tapi bad beat sebenarnya tanda Anda bermain di permainan yang menguntungkan.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-08-11",
+  updated: "2026-08-28",
+  masterUpdated: "2026-08-28",
   keepImagesInBody: true,
   readTime: "11 mnt",
   emoji: "💔",
   image: "/images/holdem-bad-beat-hero.webp",
   imageAlt: "Seorang pemain poker mencengkeram kepalanya penuh kepedihan setelah kalah di pot besar yang seharusnya sangat ia ungguli, chip-nya tersusun di meja felt hijau",
-  tags: ["bad beat", "apa itu bad beat di poker", "bad beat vs cooler", "bad beat jackpot", "poker suckout", "getting your money in good", "cara menghadapi bad beat"],
+  tags: ["bad beat", "apa itu bad beat di poker", "bad beat vs cooler", "bad beat jackpot", "poker suckout", "bad beat artinya", "cara menghadapi bad beat"],
   content: `
 Yang masih perih sampai sekarang: saya pegang pocket aces, all-in melawan pemain yang call dengan pocket fives, dan menyaksikan salah satu dari dua five terakhir menghantam river. Saya sudah melakukan semuanya dengan benar. Uang saya masuk sebagai favorit lebih dari 4:1, dan saya tetap kehilangan seluruh stack ke ==salah satu dari dua kartu di dek yang bisa mengalahkan saya==. Itulah bad beat, dan jika Anda cukup lama bermain poker, itu akan terjadi pada Anda ribuan kali.
 
-Sebuah **bad beat** adalah saat chip Anda masuk sebagai favorit statistik berat dan Anda tetap kalah, karena lawan menangkap kartu beruntung untuk ==g:suck out== pada Anda. Kata kuncinya adalah *favorit* — Anda unggul saat uang masuk, dan hanya satu kartu yang tak mungkin membalikkan hasilnya. Berikut ini persisnya apa yang dihitung sebagai bad beat, bedanya dengan [cooler](/id/blog/holdem-cooler "thumb:/images/holdem-cooler-hero.webp"), berapa bayaran "bad beat jackpot," dan kebenaran kontraintuitif yang akhirnya dipelajari setiap pemain pemenang: bad beat itu *bagus* untuk Anda.
+Sebuah **bad beat** adalah saat chip Anda masuk sebagai favorit statistik berat dan Anda tetap kalah, karena lawan menangkap kartu beruntung untuk ==g:suck out== pada Anda. Kata kuncinya adalah *favorit* — Anda unggul saat uang masuk, dan hanya sebuah kartu yang tak terduga yang membalikkan hasilnya. Berikut ini persisnya apa yang dihitung sebagai bad beat, bedanya dengan [cooler](/id/blog/holdem-cooler "thumb:/images/holdem-cooler-hero.webp"), berapa bayaran "bad beat jackpot," dan kebenaran kontraintuitif yang akhirnya dipelajari setiap pemain pemenang: bad beat itu *bagus* untuk Anda. Ini salah satu kata yang paling sering dipakai serampangan di seluruh [istilah poker](/id/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp"), jadi inilah yang benar-benar memenuhi syarat.
 
 ---
 
@@ -35,15 +36,15 @@ Diam-diam bagus | Artinya bagi profit jangka panjang Anda
 
 ## Apa Itu Bad Beat di Poker?
 
-**Bad beat adalah tangan yang Anda kalahkan meski Anda favorit statistik kuat saat chip masuk, karena lawan menangkap kartu tak terduga untuk menyalip Anda.** Anda memainkannya dengan benar — uang Anda masuk "good," unggul dalam matematika — dan dek sekadar menghasilkan satu-satunya runout yang mengalahkan Anda. Kekalahan itu bukan salah Anda; itu variance sedang melakukan yang terburuk.
+**Bad beat adalah tangan di mana Anda kalah meski Anda favorit statistik kuat saat chip masuk, karena lawan menangkap kartu tak terduga untuk menyalip Anda.** Anda memainkannya dengan benar — uang Anda masuk "good," unggul dalam matematika — dan dek sekadar menghasilkan satu-satunya runout yang mengalahkan Anda. Kekalahan itu bukan salah Anda; itu variance sedang melakukan yang terburuk.
 
-Mekanismenya selalu **suckout**: sebuah kartu di turn atau river yang mengubah tangan kalah menjadi tangan menang. Aces Anda menghancurkan pocket fives mereka sampai five ketiga itu muncul. Top pair Anda membuat flush draw mereka mati sampai heart terakhir jatuh. Momen itu — favorit dikejar hingga tersusul oleh draw yang seharusnya tak sampai — adalah inti dari istilah ini. Memahaminya juga langkah pertama agar tidak membiarkannya menghancurkan sesi Anda, disiplin emosional yang sama yang memisahkan pro dari [fish](/id/blog/holdem-fish).
+Mekanismenya selalu **suckout**: sebuah kartu — di flop, turn, atau river — yang datang setelah uang masuk dan mengubah tangan kalah menjadi tangan menang. Aces Anda menghancurkan pocket fives mereka sampai five ketiga itu muncul. Top pair Anda unggul atas flush draw mereka sampai heart terakhir jatuh di river. Momen itu — favorit dikejar hingga tersusul oleh draw yang seharusnya tak sampai — adalah inti dari istilah ini. Memahaminya juga langkah pertama agar tidak membiarkannya menghancurkan sesi Anda, disiplin emosional yang sama yang memisahkan pro dari [fish](/id/blog/holdem-fish).
 
 ---
 
 ## Bad Beat vs Cooler: Perbedaan yang Penting
 
-![Infografik pocket aces A♠ A♦ melawan pocket kings K♥ K♦ di board K♠ 7♦ 2♣ 8♥ 3♠ — set kings yang flop menghancurkan aces](/images/holdem-cooler-vs-badbeat.webp "Aces memasukkan uang saat unggul dan tetap kalah — king di flop menyerahkan pot ke set")
+![Infografik pocket aces A♠ A♦ melawan pocket kings K♥ K♦ di board K♠ 7♦ 2♣ 8♥ 3♠ — set kings yang flop menghancurkan aces](/images/holdem-cooler-vs-badbeat.webp "Satu tabrakan, dua label — preflop, KK melawan AA adalah spot cooler klasik bagi si kings (itulah label pada gambar); begitu king kena flop, tangan yang sama menjadi bad beat bagi si aces, dan sisi itulah yang dibahas bagian ini")
 
 Orang memakai "bad beat" dan "cooler" secara bergantian, padahal keduanya berlawanan — dan mengetahui yang mana yang baru saja terjadi memberi tahu Anda apakah harus jengkel pada dek atau justru kagum padanya. Seluruh perbedaannya adalah **siapa yang unggul saat uang masuk, dan apakah suckout terjadi:**
 
@@ -59,7 +60,7 @@ Orang memakai "bad beat" dan "cooler" secara bergantian, padahal keduanya berlaw
 
 </div>
 
-Uji cepat: **jika lawan Anda perlu *improve* untuk menang, itu bad beat.** Jika mereka sudah unggul saat uang masuk dan Anda sekadar tak bisa fold monster Anda, itu [cooler](/id/blog/holdem-cooler) — tanpa suckout, tanpa bad beat. Dan perhatikan jebakannya: **set over set bukan bad beat.** Saat set of queens Anda kalah ke set of kings, tak ada yang beruntung di river — set yang lebih besar unggul sepanjang waktu. Itu cooler yang berpakaian bad beat.
+Uji cepat: **jika lawan Anda perlu *improve* untuk menang, itu bad beat.** Jika mereka sudah unggul saat uang masuk dan Anda sekadar tak bisa fold monster Anda, itu [cooler](/id/blog/holdem-cooler) — tanpa suckout, tanpa bad beat. Dan perhatikan jebakannya: **set over set bukan bad beat.** Saat set of queens Anda kalah ke set of kings, tak ada yang beruntung di river — set yang lebih besar unggul sepanjang jalan. Itu cooler yang berpakaian bad beat.
 
 ---
 
@@ -69,7 +70,7 @@ Uji cepat: **jika lawan Anda perlu *improve* untuk menang, itu bad beat.** Jika 
 
 Di sinilah pemain kasual dan pemain serius berpisah jalan: **tidak setiap kekalahan sebagai favorit adalah bad beat.** Ada ambang equity tak tertulis, dan itu penting jika Anda ingin memakai istilah ini dengan jujur.
 
-- **~80% atau lebih, dan Anda kalah ke suckout** — bad beat sejati. Aces Anda (favorit ~4:1 atas pair lebih rendah) yang dihancurkan adalah kasus buku teks. Sebuah **one-outer** — kalah ke satu-satunya kartu tersisa di dek — adalah bad beat termurni dari semuanya.
+- **~80% atau lebih, dan Anda kalah ke suckout** — bad beat sejati. Aces Anda (favorit ~4:1 atas pair lebih rendah) yang dihancurkan adalah kasus buku teks. Sebuah **one-outer** — kalah oleh satu-satunya kartu di dek yang bisa mengalahkan Anda — adalah bad beat termurni dari semuanya.
 - **Favorit 60–70% yang kalah** — tak enak, tapi sebenarnya hanya variance. Anda hanya favorit sedang; hasil satunya memang akan cukup sering terjadi.
 - **Coinflip tak pernah jadi bad beat.** Kalah A‑K ke Q‑Q, atau sebuah pair ke dua overcard, kira-kira 50/50 — menyebut itu bad beat sama seperti menyebut lemparan koin yang kalah sebagai perampokan. Jika hampir seimbang, Anda tidak *dikalahkan*, Anda sekadar kalah lemparan.
 
@@ -89,13 +90,15 @@ Setiap bad beat punya bentuk yang sama: Anda favorit, underdog butuh bantuan, da
 |:---|:---|:---:|:---|
 | **Aces dihancurkan set** | AA vs pair lebih rendah (mis. 7‑7) | ~80% (4:1) | Pair mereka kena set di flop, turn, atau river |
 | **Aces vs tangan acak** | AA all-in preflop | ~85% | Dua kartu apa pun mengejar Anda |
-| **Overpair vs flush draw** | Overpair di flop | ~65% (2:1) | Flush draw 9-out mereka lengkap di river |
+| **Overpair vs flush draw (kasus batas)** | Overpair di flop | ~65% (2:1) | Flush draw 9-out mereka lengkap di river |
 | **Runner-runner** | Made hand unggul di flop | ~90%+ | Dua kartu sempurna (turn *dan* river) melengkapi draw |
 | **One-outer** | Tangan hampir terkunci | ~96% | Satu-satunya kartu tersisa di dek mengalahkan Anda |
 
 </div>
 
-Yang paling ikonik adalah **aces dihancurkan set.** Anda dapat pocket aces all-in preflop melawan pocket sevens — Anda kira-kira favorit 80%, kunci 4:1 di pihak Anda. Tapi ada dua seven lagi di dek, dan jika salah satunya kena board, three-of-a-kind mereka mengalahkan pair Anda. Empat dari lima kali Anda menyapu pot; kali kelima, Anda punya cerita bad beat yang tak ingin didengar siapa pun. Matematikanya tak pernah salah — Anda sekadar mendarat di sisi yang salah darinya, dan justru itulah kenapa satu tangan tidak memberi tahu Anda [apa pun tentang apakah Anda bermain baik](/id/blog/holdem-cooler).
+*Menurut ambang di bagian sebelumnya, overpair vs flush draw adalah kasus batas dalam daftar ini: pada ~65%, kasus itu lebih tepat disebut variance ketimbang bad beat "sejati" — tapi begitulah meja tetap menyebutnya.*
+
+Yang paling ikonik adalah **aces dihancurkan set.** Anda dapat pocket aces all-in preflop melawan pocket sevens — Anda kira-kira favorit 80%, kunci 4:1 di pihak Anda. Tapi ada dua seven lagi di dek, dan jika salah satunya kena board — dan tak ada ace ikut datang — three-of-a-kind mereka mengalahkan pair Anda. Empat dari lima kali Anda menyapu pot; kali kelima, Anda punya cerita bad beat yang tak ingin didengar siapa pun. Matematikanya tak pernah salah — Anda sekadar mendarat di sisi yang salah darinya, dan justru itulah kenapa satu tangan tidak memberi tahu Anda [apa pun tentang apakah Anda bermain baik](/id/blog/holdem-cooler).
 
 ---
 
@@ -107,7 +110,7 @@ Aturannya **bervariasi per ruangan**, tapi struktur umumnya terlihat seperti ini
 
 - **Kualifikasinya.** Minimum yang lazim adalah **"aces full of jacks atau lebih baik, dikalahkan oleh four of a kind atau lebih baik."** Sebagian ruangan menaikkan standarnya (quads yang dikalahkan). Tangan yang kalah harus sangat besar — Anda tak bisa memicunya dengan cooler biasa.
 - **Kedua hole card harus terpakai.** Hampir setiap ruangan mensyaratkan *kedua* hole card yang kalah (dan sering yang menang) menjadi bagian dari tangan, jadi Anda tak bisa mengklaimnya pada tangan yang seluruhnya dibentuk board.
-- **Pembagiannya.** Pemain yang terkena bad beat mendapat **bagian terbesar**, pemenang tangan mendapat bagian kedua, dan semua yang lain yang duduk di meja membagi sisanya.
+- **Pembagiannya.** Pemain yang terkena bad beat mendapat **bagian terbesar**, pemenang tangan mendapat bagian kedua, dan pemain lain yang **ikut menerima kartu pada tangan itu** membagi sisanya.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -125,9 +128,11 @@ Satu catatan penting: **setiap kasino dan situs poker menetapkan kualifikasi dan
 
 ## Bad Beat Paling Terkenal di Poker
 
-Jika Anda ingin merasa lebih baik soal bad beat Anda sendiri, ingatlah bahwa yang terburuk terjadi di panggung terbesar. Yang paling legendaris terjadi di **2008 World Series of Poker Main Event**, di mana **Motoyuki Mabuchi** mengubah pocket aces-nya menjadi **four of a kind — quad aces**, sebuah tangan yang hanya bisa dikalahkan oleh satu holding di seluruh poker — dan *tetap kalah*. Ia all-in melawan **Justin Phillips** (memegang K♦ J♦), dan river **A♦** melengkapi quads-nya sementara, di kartu yang sama persis, memberi Phillips sebuah **royal flush** — 10‑J‑Q‑K‑A diamond. Satu kartu yang membuat four aces adalah satu kartu yang bisa mengalahkannya.
+Jika Anda ingin merasa lebih baik soal bad beat Anda sendiri, ingatlah bahwa yang terburuk terjadi di panggung terbesar. Yang paling legendaris terjadi di **2008 World Series of Poker Main Event**, di mana **Motoyuki Mabuchi** mengubah pocket aces-nya menjadi **four of a kind — quad aces**, sebuah tangan yang hanya bisa dikalahkan oleh straight flush — dan *tetap kalah*. River **A♦** melengkapi quads-nya sementara, di kartu yang sama persis, memberi **Justin Phillips** (memegang K♦ J♦) sebuah **royal flush** — 10‑J‑Q‑K‑A diamond. Baru setelah kartu itu jatuh uangnya masuk: Mabuchi check, Phillips bertaruh, Mabuchi mendorong seluruh stack-nya, dan Phillips call seketika. Satu kartu yang membuat four aces adalah satu kartu yang bisa mengalahkannya.
 
-Itulah puncak rasa sakit bad beat: bukan favorit 80% yang tumbang, tapi *four aces* — tangan yang bisa Anda mainkan seumur hidup tanpa pernah kalah — dikalahkan oleh satu-satunya holding yang mengunggulinya. Layak disimpan di saku Anda lain kali aces Anda dihancurkan: seburuk apa pun dek memperlakukan Anda, seseorang pernah kalah dengan quad aces.
+*Menurut ambang di atas, secara teknis ini bahkan bukan bad beat — uangnya baru masuk setelah kartu terakhir jatuh, jadi tak ada suckout yang menyusul. Tapi poker mengenangnya sebagai bad beat paling terkenal yang pernah ada, dan nama itulah yang melekat.*
+
+Itulah puncak rasa sakit bad beat: bukan favorit 80% yang tumbang, tapi *four aces* — tangan yang bisa Anda mainkan seumur hidup tanpa pernah kalah — dikalahkan oleh straight flush, satu-satunya kategori tangan yang mengungguli four of a kind. Layak disimpan di saku Anda lain kali aces Anda dihancurkan: seburuk apa pun dek memperlakukan Anda, seseorang pernah kalah dengan quad aces.
 
 ---
 
@@ -135,9 +140,9 @@ Itulah puncak rasa sakit bad beat: bukan favorit 80% yang tumbang, tapi *four ac
 
 Sekarang kebenaran yang mengubah bad beat dari bahan bakar tilt menjadi sumber percaya diri yang tenang. **Setiap bad beat yang Anda terima adalah bukti Anda bermain di permainan yang bisa dikalahkan.**
 
-Pikirkan apa yang dibutuhkan sebuah bad beat: lawan yang memasukkan uang saat *tertinggal*, sebagai underdog matematis, dan beruntung. Itu pemain yang membuat **keputusan-keputusan kalah** — persis lawan yang Anda inginkan. Jika tak ada seorang pun di meja Anda yang pernah menyusul Anda, itu berarti semua orang mem-fold tangan lemah mereka dengan benar, dan tak akan ada uang untuk dimenangkan. Seperti kata maksim coaching yang terkenal, suckout dari pemain lemah adalah sebuah *hadiah*: itu harga tiket untuk mengambil chip mereka empat kali lainnya.
+Pikirkan apa yang dibutuhkan sebuah bad beat: lawan yang memasukkan uang saat *tertinggal*, sebagai underdog matematis, dan beruntung. Itu pemain yang membuat **keputusan-keputusan kalah** — persis lawan yang Anda inginkan. Jika tak ada seorang pun di meja Anda yang pernah menyusul Anda, itu berarti semua orang mem-fold tangan lemah mereka dengan benar, dan tak akan ada uang untuk dimenangkan. Seperti kata pepatah pelatih poker yang terkenal, suckout dari pemain lemah adalah sebuah *hadiah*: itu harga tiket untuk mengambil chip mereka empat kali lainnya.
 
-Di atas sampel yang cukup besar, bad beat yang Anda terima dan bad beat yang Anda *berikan* kira-kira saling meniadakan. Yang tersisa — satu-satunya hal yang benar-benar menggerakkan hasil jangka panjang Anda — adalah kualitas keputusan Anda. **Memasukkan uang dengan good dan kalah tetaplah sebuah kemenangan** dalam segala hal yang penting seiring waktu. Chip akan kembali; edge itu permanen, variance itu sementara.
+Di atas sampel yang cukup besar, bad beat yang Anda terima dan bad beat yang Anda *berikan* kira-kira saling meniadakan. Yang tersisa — satu-satunya hal yang benar-benar menggerakkan hasil jangka panjang Anda — adalah kualitas keputusan Anda. **Memasukkan uang saat unggul lalu kalah tetaplah sebuah kemenangan** dalam segala hal yang penting seiring waktu. Chip akan kembali; edge itu permanen, variance itu sementara.
 
 ---
 
@@ -146,8 +151,8 @@ Di atas sampel yang cukup besar, bad beat yang Anda terima dan bad beat yang And
 Karena sebuah bad beat tak membawa pelajaran soal permainan Anda, satu-satunya bahaya nyata adalah dampaknya pada beberapa tangan *berikutnya*. Lindungi tangan-tangan itu:
 
 1. **Terima dengan lantang.** Sebuah "Uang saya masuk good, tak ada yang bisa saya perbuat" lebih baik daripada memendam dalam diam. Menamainya sebagai variance menutup berkasnya.
-2. **Waspadai tilt.** Pot yang Anda kalahkan sudah lenyap; tiga tangan gegabah yang Anda mainkan mencoba merebutnya kembali itulah biaya sebenarnya dari bad beat. Jika Anda merasa panas naik, itu isyarat untuk memperlambat.
-3. **Ambil jeda.** Duduk sejenak melewati satu orbit, minum air, menjauh selama lima menit. Itu asuransi termurah di poker melawan mengubah satu tangan yang kalah menjadi satu sesi yang kalah.
+2. **Waspadai tilt.** Pot itu sudah lenyap; tiga tangan gegabah yang Anda mainkan mencoba merebutnya kembali itulah biaya sebenarnya dari bad beat. Jika Anda merasa darah mulai mendidih, itu isyarat untuk memperlambat.
+3. **Lewati satu orbit.** Sit out sebentar, minum air, menjauh selama lima menit. Itu asuransi termurah di poker melawan mengubah satu tangan yang kalah menjadi satu sesi yang kalah.
 4. **Percayai bankroll Anda.** Bad beat adalah alasan Anda menjaga bankroll yang dibangun untuk menyerap variance. Satu kekalahan hanyalah kesalahan pembulatan di antara puluhan ribu tangan — itu hanya melukai hasil Anda jika Anda membiarkannya mengubah cara bermain Anda.
 5. **Lewati cerita bad beat.** Tak ada yang ingin mendengarnya, dan menceritakannya lagi hanya membuat Anda mengalami ulang tilt-nya. Tanda seorang pro bukan tak pernah kena bad beat — melainkan melupakannya pada tangan berikutnya.
 
@@ -162,7 +167,7 @@ Karena sebuah bad beat tak membawa pelajaran soal permainan Anda, satu-satunya b
 
 **Q. Apa itu bad beat di poker?**
 
-A. Bad beat adalah saat Anda kalah di sebuah tangan yang seharusnya Anda menangkan sebagai favorit statistik kuat, karena lawan menangkap kartu tak terduga untuk menyalip Anda. Uang Anda masuk "good" — unggul dalam matematika — dan hanya suckout tak mungkin di turn atau river yang membalikkan hasil. Kasus klasiknya adalah pocket aces yang dihancurkan pair lebih kecil yang memasang set.
+A. Bad beat adalah saat Anda kalah di sebuah tangan yang seharusnya Anda menangkan sebagai favorit statistik kuat, karena lawan menangkap kartu tak terduga untuk menyalip Anda. Uang Anda masuk "good" — unggul dalam matematika — dan hanya suckout yang tak terduga yang membalikkan hasil. Kasus klasiknya adalah pocket aces yang dihancurkan pair lebih kecil yang memasang set.
 
 **Q. Apa perbedaan antara bad beat dan cooler?**
 
@@ -174,7 +179,7 @@ A. Bukan. Bad beat menuntut Anda jadi favorit berat — biasanya sekitar 80% ata
 
 **Q. Apa itu bad beat jackpot dan apa yang memenuhi syarat?**
 
-A. Bad beat jackpot adalah hadiah progresif yang dibayar sebagian cardroom saat tangan luar biasa kuat kalah di showdown. Kualifikasi umum adalah "aces full of jacks atau lebih baik dikalahkan oleh four of a kind atau lebih baik," dengan kedua hole card yang kalah wajib terpakai. Yang kalah biasanya mendapat bagian terbesar, yang menang kedua, dan sisa meja membagi sisanya — tapi kualifikasi dan pembagian bervariasi per ruangan, jadi selalu cek aturan lokal.
+A. Bad beat jackpot adalah hadiah progresif yang dibayar sebagian cardroom saat tangan luar biasa kuat kalah di showdown. Kualifikasi umum adalah "aces full of jacks atau lebih baik dikalahkan oleh four of a kind atau lebih baik," dengan kedua hole card yang kalah wajib terpakai. Yang kalah biasanya mendapat bagian terbesar, yang menang kedua, dan pemain lain yang ikut menerima kartu pada tangan itu membagi sisanya — tapi kualifikasi dan pembagian bervariasi per ruangan, jadi selalu cek aturan lokal.
 
 **Q. Apa bad beat terburuk dalam sejarah poker?**
 
@@ -190,7 +195,7 @@ A. Terima tangan itu sebagai variance, waspadai keras terhadap tilt, dan lindung
 
 **Q. Apakah bad beat sama dengan bermain buruk?**
 
-A. Tidak — keduanya berlawanan. Bad beat berarti Anda membuat keputusan yang *benar* dan memasukkan uang sebagai favorit, lalu kalah karena keberuntungan. Kalah karena *Anda* membuat call buruk atau permainan longgar bukan bad beat, itu kesalahan. Pemain jujur berhati-hati agar tidak mengarsipkan kesalahan mereka sendiri di bawah "bad beat," karena begitulah kebocoran tak pernah diperbaiki.
+A. Tidak — keduanya berlawanan. Bad beat berarti Anda membuat keputusan yang *benar* dan memasukkan uang sebagai favorit, lalu kalah karena keberuntungan. Kalah karena *Anda* membuat call buruk atau permainan longgar bukan bad beat, itu kesalahan. Pemain jujur berhati-hati agar tidak mengarsipkan kesalahan mereka sendiri di bawah "bad beat," karena begitulah leak tak pernah diperbaiki.
 
 ---
 
@@ -198,9 +203,9 @@ A. Tidak — keduanya berlawanan. Bad beat berarti Anda membuat keputusan yang *
 
 1. **Bad beat adalah kalah sebagai favorit besar ke suckout beruntung** — Anda unggul saat uang masuk, memainkannya benar, dan di-outdraw. Itu variance, bukan kesalahan.
 2. **Itu kebalikan dari cooler.** Bad beat butuh suckout (underdog membaik); cooler tidak (pemimpin unggul sepanjang jalan). Jika lawan Anda harus improve untuk menang, itu bad beat.
-3. **Bad beat diam-diam bagus untuk Anda.** Artinya lawan memasukkan uang saat tertinggal dan beruntung — keputusan kalah yang membayar Anda jauh lebih sering daripada membakar Anda. Masukkan uang dengan good, abaikan bad beat-nya, dan biarkan variance meratakan diri.
+3. **Bad beat diam-diam bagus untuk Anda.** Artinya lawan memasukkan uang saat tertinggal dan beruntung — keputusan kalah yang membayar Anda jauh lebih sering daripada membakar Anda. Masukkan uang saat unggul, abaikan bad beat-nya, dan biarkan variance meratakan diri.
 
-Bad beat adalah pajak yang Anda bayar untuk memainkan permainan yang menang. Pemain terbaik menerima persis sebanyak orang lain — mereka hanya belajar mencatatnya sebagai variance, melindungi tangan berikutnya dari tilt, dan kembali [mengungguli meja](/id/blog/holdem-fish). Masukkan uang dengan good cukup sering, dan kekejaman dek menjadi profit Anda.
+Bad beat adalah pajak yang Anda bayar untuk memainkan permainan yang menang. Pemain terbaik menerima persis sebanyak orang lain — mereka hanya belajar mencatatnya sebagai variance, melindungi tangan berikutnya dari tilt, dan kembali [mengungguli meja](/id/blog/holdem-fish). Masukkan uang saat unggul cukup sering, dan kekejaman dek menjadi profit Anda.
 
 ---
 
@@ -208,22 +213,22 @@ Bad beat adalah pajak yang Anda bayar untuk memainkan permainan yang menang. Pem
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/id/blog/holdem-cooler" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Glossary</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Glosarium</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Apa Itu Cooler?</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Kekalahan tanpa suckout — dan tanpa bad beat</div>
   </a>
   <a href="/id/blog/holdem-fish" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Glossary</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Glosarium</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Apa Itu Fish?</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Pemain yang suckout-nya membayar tagihan Anda</div>
   </a>
   <a href="/id/blog/holdem-pot-odds" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Odds &amp; Math</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Peluang &amp; Matematika</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Cara Menghitung Pot Odds</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Ketahui dulu kapan Anda yang jadi favorit</div>
   </a>
   <a href="/id/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Hand Rankings</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Pemecah Seri</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Siapa Menang di Showdown</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Bagaimana tangan pemenang sebenarnya ditentukan</div>
   </a>

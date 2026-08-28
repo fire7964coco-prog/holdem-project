@@ -3,22 +3,23 @@ import type { Post } from "../posts";
 export const POST: Post = {
   slug: "holdem-cooler",
   title: "Apa Itu Cooler di Poker? Kekalahan Tak Terhindarkan — dan Kenapa Itu Bukan Bad Beat",
-  seoTitle: "Tangan yang Tak Bisa Anda Fold Sekeras Apa Pun — Apa Itu Cooler?",
+  seoTitle: "Tangan yang Tak Bisa Anda Fold — Apa Itu Cooler Poker?",
   desc: "Cooler adalah saat tangan monster Anda bertemu tangan lebih besar dan fold tak pernah jadi pilihan — kenapa itu bukan bad beat, lengkap dengan contoh klasik.",
   tldr: "Cooler adalah tangan di mana Anda kalah pot besar dengan holding sangat kuat yang tak pernah bisa Anda fold dengan benar — seperti pocket kings bertemu aces, atau sebuah set kalah oleh set yang lebih besar. Berbeda dari bad beat, Anda tertinggal sepanjang jalan dan tak ada kartu keberuntungan yang 'suckout' pada Anda: Anda memainkannya dengan benar dan tetap kalah. Inilah jenis bencana poker yang paling jujur.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-08-11",
+  updated: "2026-08-28",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "10 mnt",
   emoji: "🧊",
   image: "/images/holdem-cooler-hero.webp",
   imageAlt: "Pemain poker yang terpana memegang kepalanya setelah kalah pot besar, menatap lawannya menarik tumpukan chip tinggi melintasi felt hijau",
-  tags: ["cooler", "apa itu cooler di poker", "cooler vs bad beat", "arti cooler poker", "poker setup", "got coolered", "set over set", "contoh tangan cooler"],
+  tags: ["cooler poker", "apa itu cooler di poker", "cooler vs bad beat", "arti cooler poker", "poker setup", "kena cooler", "set over set", "contoh tangan cooler"],
   content: `
 Saya masih ingat tangan yang mengajarkan saya istilah ini. Saya flop set of kings, mendorong semua chip masuk di turn, dan membalik kartu saya sambil sudah meraih pot — lalu menyaksikan lawan saya membuka set of aces. Saya tidak melakukan kesalahan apa pun. Tak ada permainan buruk yang perlu disesali, tak ada draw yang seharusnya saya fold. Saya sudah kalah sejak momen chip masuk, dan ==tak ada yang bisa saya lakukan soal itu==. Itulah cooler, dan begitu Anda memahaminya, Anda berhenti menyalahkan diri sendiri atas kekalahan yang memang tak pernah bisa Anda hindari.
 
-**Cooler** adalah tangan di mana Anda membuat holding sangat kuat, kalah pot besar, dan ==g:fold tak pernah jadi pilihan nyata== — tangan lawan memang sekadar lebih besar. Di bawah ini persis apa artinya, perbedaan krusial antara cooler dan **bad beat** (kebanyakan orang mencampuradukkannya), match-up cooler klasik, dan bagian jujur yang tak disukai siapa pun: kapan *"itu cuma cooler"* sebenarnya adalah dalih sopan untuk sebuah kesalahan.
+**Cooler** adalah tangan di mana Anda membuat holding sangat kuat, kalah pot besar, dan ==g:fold tak pernah jadi pilihan nyata== — tangan lawan memang sekadar lebih besar. Di bawah ini persis apa artinya, perbedaan krusial antara cooler dan **bad beat** (kebanyakan orang mencampuradukkannya), match-up cooler klasik, dan bagian jujur yang tak disukai siapa pun: kapan *"itu cuma cooler"* sebenarnya adalah dalih sopan untuk sebuah kesalahan. Ini salah satu kata yang paling sering salah dipakai di seluruh [istilah poker](/id/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp"), jadi mari kita tetapkan persis apa yang terhitung.
 
 ---
 
@@ -39,7 +40,7 @@ Bukan salah Anda | Satu kekalahan yang tak seharusnya membuat Anda tilt
 
 **Cooler adalah tangan di mana dua holding sangat kuat bertabrakan, dan pemain yang kalah selalu tertinggal tapi tak bisa fold dengan benar.** Tangan itu memang terlalu bagus untuk dilepas — jadi chip masuk, dan monster kedua-terbaik membayar yang terbaik. Tak ada yang salah main. Kekalahan itu bukan kesalahan; itu adalah harga tak terhindarkan dari memegang tangan premium tepat di saat orang lain memegang tangan yang sedikit lebih besar.
 
-Istilahnya melukiskan gambarannya: Anda "didinginkan" — tangan panas Anda menjadi dingin tanpa kesalahan Anda sendiri. Anda juga akan mendengarnya dipakai sebagai kata kerja ("saya **coolered**") dan sebagai sinonim dekat, **"setup,"** karena rasanya seperti deck-nya *disusun* untuk mengambil seluruh stack Anda. Yang membuat cooler berbeda dari kekalahan biasa adalah bahwa pemain bagus pun akan kehilangan chip yang persis sama setiap kali. Menyadari itu adalah langkah pertama untuk tidak membiarkan tangan-tangan ini menghancurkan sesi Anda — disiplin yang sama yang memisahkan pemain menang dari seorang [fish](/id/blog/holdem-fish "thumb:/images/holdem-fish-hero.webp").
+Istilahnya melukiskan gambarannya: Anda "didinginkan" — tangan panas Anda menjadi dingin tanpa kesalahan Anda sendiri. Anda juga akan mendengarnya dipakai sebagai kata kerja ("saya **kena cooler**") dan sebagai sinonim dekat, **"setup,"** karena rasanya seperti deck-nya *disusun* untuk mengambil seluruh stack Anda. Yang membuat cooler berbeda dari kekalahan biasa adalah bahwa pemain bagus pun akan kehilangan chip yang persis sama setiap kali. Menyadari itu adalah langkah pertama untuk tidak membiarkan tangan-tangan ini menghancurkan sesi Anda — disiplin yang sama yang memisahkan pemain menang dari seorang [fish](/id/blog/holdem-fish "thumb:/images/holdem-fish-hero.webp").
 
 ---
 
@@ -49,8 +50,8 @@ Istilahnya melukiskan gambarannya: Anda "didinginkan" — tangan panas Anda menj
 
 Inilah pembeda yang menentukan pemahaman Anda akan istilah ini — dan hampir setiap pemain kasual mengaburkannya. Keduanya terasa mengerikan, tapi keduanya berlawanan:
 
-- **Cooler** — Anda **tertinggal** saat chip masuk dan **tetap tertinggal.** Tak ada kartu keberuntungan yang menyelamatkan siapa pun; pemenang unggul sepanjang waktu. Anda kalah karena tangan raksasa Anda bertemu yang lebih besar.
-- **Bad beat** — Anda **unggul** (sering kali favorit besar) saat chip masuk, dan lawan Anda **suckout** — mengenai kartu keberuntungan di turn atau river untuk menyalip Anda.
+- **Cooler** — Anda **tertinggal** saat chip masuk dan **tetap tertinggal.** Tak ada kartu keberuntungan yang menyelamatkan siapa pun; pemenang unggul sepanjang jalan. Anda kalah karena tangan raksasa Anda bertemu yang lebih besar.
+- **Bad beat** — Anda **unggul** (sering kali favorit besar) saat chip masuk, dan lawan Anda **suckout** — mengenai kartu keberuntungan di flop, turn, atau river untuk menyalip Anda.
 
 Cara paling bersih untuk membedakannya:
 
@@ -66,7 +67,7 @@ Cara paling bersih untuk membedakannya:
 
 </div>
 
-Berikut pemain yang sama menunjukkan keduanya, agar klik. **Bad beat:** Anda pegang A♠A♥, mendorong semua chip masuk preflop melawan 7♣7♦, dan sebuah **7** kena di meja — aces Anda adalah favorit ~4:1 (sekitar 80%) dan tersalip. **Cooler:** balikkan — Anda pegang **7♣7♦**, flop set of sevens, dan stack off melawan sebuah set yang datang dari pair lebih besar. Anda underdog sepanjang jalan dan sekadar tak bisa fold sebuah flopped set. Kartu yang sama, cerita yang berlawanan. Mengetahui mana yang baru saja terjadi memberi tahu Anda apakah perlu [meninjau permainan Anda](/id/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") atau sekadar mengabaikannya.
+Berikut pemain yang sama menunjukkan keduanya, supaya perbedaannya benar-benar terasa. **Bad beat:** Anda pegang A♠A♥, mendorong semua chip masuk preflop melawan 7♣7♦, dan sebuah **7** kena di meja — aces Anda adalah favorit ~4:1 (sekitar 80%) dan tersalip. **Cooler:** balikkan — Anda pegang **7♣7♦**, flop set of sevens, dan stack off melawan sebuah set yang datang dari pair lebih besar. Anda underdog sepanjang jalan dan sekadar tak bisa fold sebuah flopped set. Kartu yang sama, cerita yang berlawanan. Mengetahui mana yang baru saja terjadi memberi tahu Anda apakah perlu [meninjau permainan Anda](/id/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") atau sekadar mengabaikannya.
 
 ---
 
@@ -82,14 +83,14 @@ Cooler datang dalam satu keluarga yang mudah dikenali. Di setiap kasusnya, *kedu
 |:---|:---|:---|
 | **Kings vs Aces** | KK all-in preflop melawan AA | KK adalah underdog ~4,5:1 terhadap AA, tapi Anda tak pernah fold kings preflop |
 | **Set over set** | Flopped set Anda vs flopped set lebih besar | Sebuah flopped set nyaris tak pernah di-fold; set lebih rendah nyaris drawing dead |
-| **Flush over flush** | K-high flush Anda vs A-high flush | King-high flush terlihat luar biasa besar — Anda jarang menempatkan lawan pada persis nut flush |
+| **Flush over flush** | K-high flush Anda vs A-high flush | King-high flush terlihat luar biasa besar — Anda jarang membaca lawan tepat memegang nut flush |
 | **Full house over full house** | Full house Anda vs full house lebih besar | Sebuah boat adalah monster; melepasnya nyaris mustahil |
 | **Boat vs quads** | Aces full Anda vs four of a kind | Cooler puncak — sebuah full house kalah oleh quads |
 | **Straight over straight** | Straight Anda vs straight lebih tinggi | Sebuah made straight di board tersambung sangat sulit dilepas |
 
 </div>
 
-Yang paling ikonik adalah **set over set.** Katakan Anda pegang **7♣7♦** dan flop-nya datang **J♦ 7♥ 2♣** — Anda flop middle set, three sevens. Ini tangan yang akan Anda stack off dengan senang hati hampir selalu. Tapi lawan Anda pegang **J♠J♥** dan flop top set, three jacks. Sampai river pada board **J♦ 7♥ 2♣ 5♠ Q♦**, lima kartu terbaik Anda adalah 7‑7‑7‑Q‑J dan miliknya J‑J‑J‑Q‑7 — three jacks mengalahkan three sevens, dan satu-satunya jalan keluar Anda adalah satu-satunya seven yang tersisa di deck. Anda tak salah main satu pun; Anda sekadar drawing ke satu kartu sepanjang waktu. Itulah cooler dalam bentuknya yang paling murni, dan itulah kenapa memahami [tangan mana yang menang di showdown](/id/blog/holdem-tiebreak-rules) penting bahkan saat hasilnya di luar kendali Anda.
+Yang paling ikonik adalah **set over set.** Katakan Anda pegang **7♣7♦** dan flop-nya datang **J♦ 7♥ 2♣** — Anda flop middle set, three sevens. Ini tangan yang akan Anda stack off dengan senang hati hampir selalu. Tapi lawan Anda pegang **J♠J♥** dan flop top set, three jacks. Sampai river pada board **J♦ 7♥ 2♣ 5♠ Q♦**, lima kartu terbaik Anda adalah 7‑7‑7‑Q‑J dan miliknya J‑J‑J‑Q‑7 — three jacks mengalahkan three sevens, dan satu-satunya jalan keluar Anda adalah satu-satunya seven yang tersisa di deck. Anda tak salah main satu pun; Anda sekadar drawing ke satu kartu sepanjang jalan. Itulah cooler dalam bentuknya yang paling murni, dan itulah kenapa memahami [tangan mana yang menang di showdown](/id/blog/holdem-tiebreak-rules) penting bahkan saat hasilnya di luar kendali Anda.
 
 ---
 
@@ -98,10 +99,10 @@ Yang paling ikonik adalah **set over set.** Katakan Anda pegang **7♣7♦** dan
 Tiga cara membicarakan bencana yang sama ini membingungkan banyak pemain, jadi cepat saja:
 
 - **Setup** — sinonim informal untuk cooler. Ia menekankan perasaan *terjebak* — seolah deck "disusun" agar Anda kehilangan seluruh stack dengan tangan yang tak bisa Anda hindari. Jika seseorang berkata "itu setup total," maksudnya adalah cooler.
-- **Coolered (kata kerja)** — berada di pihak yang kalah dalam sebuah cooler. "Saya coolered" berarti Anda kalah pot besar dengan tangan yang terlalu kuat untuk fold. Menurut definisinya, mengatakannya dengan benar adalah pengakuan bahwa Anda *melakukan permainan yang benar* dan tetap kalah.
+- **Coolered (kata kerja)** — berada di pihak yang kalah dalam sebuah cooler. "Saya kena cooler" berarti Anda kalah pot besar dengan tangan yang terlalu kuat untuk fold. Menurut definisinya, mengatakannya dengan benar adalah pengakuan bahwa Anda *melakukan permainan yang benar* dan tetap kalah.
 - **Cold deck** — istilah aliran lama terkait untuk rentetan tangan kalah tak terhindarkan; secara historis ia juga merujuk pada gerakan curang (menukar masuk deck "dingin" yang telah diatur), tapi secara santai ia sekadar berarti kartu berjalan brutal melawan Anda.
 
-Satu mitos penting untuk dibunuh: **cooler tak harus all-in.** Ciri penentunya adalah tabrakan dua tangan yang terlalu-kuat-untuk-fold, bukan ukuran stack. Anda bisa coolered untuk pot besar tanpa pernah memasukkan chip terakhir Anda — ini tentang tangan, bukan tentang all-in.
+Satu mitos penting untuk dibunuh: **cooler tak harus all-in.** Ciri penentunya adalah tabrakan dua tangan yang terlalu-kuat-untuk-fold, bukan ukuran stack. Anda bisa kena cooler di pot besar tanpa pernah memasukkan chip terakhir Anda — ini tentang tangan, bukan tentang all-in.
 
 ---
 
@@ -120,7 +121,7 @@ Sekarang kebenaran yang tak nyaman, dan alasan kenapa istilah ini penting untuk 
 Ada tes lakmus yang bersih, dan pemain jujur memakainya setelah setiap kekalahan besar:
 
 :::pull
-Akankah saya membuat permainan yang persis sama lagi, hanya dengan informasi yang saya miliki saat itu? Jika **ya**, Anda coolered. Jika **tidak**, Anda salah main — dan itu leak untuk diperbaiki, bukan nasib buruk.
+Akankah saya membuat permainan yang persis sama lagi, hanya dengan informasi yang saya miliki saat itu? Jika **ya**, Anda kena cooler. Jika **tidak**, Anda salah main — dan itu leak untuk diperbaiki, bukan nasib buruk.
 :::
 
 Cooler sejati berarti Anda bermain dengan benar dengan tangan kuat dan bertemu tangan yang lebih besar. Begitu "cooler" Anda melibatkan sebuah call yang Anda tak yakin, sebuah bluff yang Anda bujuk diri sendiri untuk melakukannya, atau sebuah fold yang seharusnya Anda buat, ia berhenti menjadi cooler dan menjadi **kesalahan yang menyamar.** Bersikap jujur tanpa ampun tentang mana yang mana — alih-alih menyimpan setiap kekalahan di bawah "sial" — persis itulah yang memisahkan pemain yang berkembang dari pemain yang tetap [fish](/id/blog/holdem-fish) selamanya.
@@ -165,17 +166,25 @@ A. Ya — "setup" adalah sinonim informal untuk cooler. Ia menekankan perasaan b
 
 A. Ya — itu cooler paling klasik dari semuanya. Kings kira-kira underdog 4,5:1 terhadap aces preflop, tapi tak ada pemain masuk akal yang fold pocket kings sebelum flop. Jadi chip masuk, Anda tertinggal sepanjang jalan, dan Anda kalah tangan yang tak pernah bisa Anda hindari.
 
+**Q. Seberapa sering set over set terjadi?**
+
+A. Jarang — dan justru itulah kenapa ia begitu perih. Saat dua pemain sama-sama memegang pocket pair dan sama-sama melihat flop, *keduanya* flop set hanya sekitar 1% dari waktu (kira-kira 1 dari 96). Flop set itu sendiri terjadi sekitar 11,8% dari waktu — kira-kira 1 dari 8,5 — saat Anda memegang pocket pair, jadi kehadiran pemain kedua yang flop set lebih besar di board yang sama persis adalah jenis cooler yang dikenang orang bertahun-tahun.
+
 **Q. Apa artinya "coolered"?**
 
-A. Menjadi coolered adalah kalah pot besar di pihak yang salah dari sebuah cooler — Anda punya tangan terlalu kuat untuk fold dan bertemu tangan lebih besar. Dipakai dengan benar, "saya coolered" sebenarnya pengakuan bahwa Anda memainkan tangan itu dengan benar dan sekadar kalah oleh deck, bukan oleh kesalahan Anda sendiri.
+A. Menjadi coolered adalah kalah pot besar di pihak yang salah dari sebuah cooler — Anda punya tangan terlalu kuat untuk fold dan bertemu tangan lebih besar. Dalam percakapan sehari-hari biasanya diucapkan "saya kena cooler," dan dipakai dengan benar itu sebenarnya pengakuan bahwa Anda memainkan tangan itu dengan benar dan sekadar kalah oleh deck, bukan oleh kesalahan Anda sendiri.
 
 **Q. Apakah cooler selalu all-in?**
 
-A. Tidak. Cooler biasanya berujung all-in, terutama di turnamen, tapi all-in bukanlah yang membuatnya cooler — tabrakan dua tangan yang terlalu kuat untuk fold-lah yang membuatnya. Anda bisa coolered untuk pot besar tanpa pernah memasukkan chip terakhir Anda.
+A. Tidak. Cooler biasanya berujung all-in, terutama di turnamen, tapi all-in bukanlah yang membuatnya cooler — tabrakan dua tangan yang terlalu kuat untuk fold-lah yang membuatnya. Anda bisa kena cooler di pot besar meski chip terakhir Anda tak pernah masuk ke tengah.
 
 **Q. Bagaimana menghadapi sebuah cooler?**
 
 A. Konfirmasi bahwa itu benar-benar tak terhindarkan, lalu lepaskan — tak ada pelajaran untuk dipelajari. Waspadai keras terhadap tilt, karena biaya sebenarnya biasanya adalah tangan yang Anda mainkan buruk setelahnya untuk mencoba memenangkannya kembali. Bersandar pada bankroll yang dibangun untuk menyerap variance, dan menjauh beberapa menit jika ia mengguncang Anda.
+
+**Q. Apa arti cooler di kasino? Apakah sama dengan di poker?**
+
+A. Tidak persis — kata ini punya makna judi yang lebih tua. Dalam cerita rakyat kasino, "cooler" adalah orang, atau kehadiran sial, yang diyakini mendinginkan meja yang sedang panas — terkenal didramatisasi di film tahun 2003 *The Cooler*, tentang kasino yang mempekerjakan seorang pria sial untuk mengakhiri rentetan kemenangan tamunya. Secara historis ia juga berarti "cold deck," dek yang sudah disusun lalu ditukar diam-diam untuk mencurangi sebuah tangan. Di poker modern, cooler hampir selalu berarti tabrakan premium-vs-premium tak terhindarkan di atas — nasib buruk, bukan pembawa sial atau kecurangan.
 
 ---
 

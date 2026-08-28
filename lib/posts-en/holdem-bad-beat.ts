@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A bad beat is when you get your money in as a heavy favorite — usually 80% or more — and lose because your opponent hits a lucky card to 'suck out' on you. Unlike a cooler, you were ahead the whole way; the deck just betrayed you at the end. It stings, but bad beats are actually a sign you're playing in a profitable game.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-08-26",
+  updated: "2026-08-28",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "💔",
@@ -97,7 +97,7 @@ Every bad beat has the same shape: you're the favorite, the underdog needs help,
 
 *By the bar in the previous section, overpair vs flush draw is the family's borderline case: at ~65%, it's more variance than a "true" bad beat — but it's what the table calls it anyway.*
 
-The most iconic is **aces cracked by a set.** You get pocket aces all in preflop against pocket sevens — you're roughly an 80% favorite, a 4-to-1 lock in your favor. But there are two more sevens in the deck, and if one hits the board, their three-of-a-kind beats your pair. Four times out of five you scoop it; the fifth time, you've got a bad beat story nobody wants to hear. The math was never wrong — you just landed on the wrong side of it, which is exactly why a single hand tells you [nothing about whether you played well](/en/blog/holdem-cooler).
+The most iconic is **aces cracked by a set.** You get pocket aces all in preflop against pocket sevens — you're roughly an 80% favorite, a 4-to-1 lock in your favor. But there are two more sevens in the deck, and if one hits the board — and no ace comes along — their three-of-a-kind beats your pair. Four times out of five you scoop it; the fifth time, you've got a bad beat story nobody wants to hear. The math was never wrong — you just landed on the wrong side of it, which is exactly why a single hand tells you [nothing about whether you played well](/en/blog/holdem-cooler).
 
 ---
 
@@ -127,7 +127,9 @@ One important caveat: **every casino and poker site sets its own qualifier and s
 
 ## The Most Famous Bad Beat in Poker
 
-If you want to feel better about your own beats, remember that the worst ones happen on the biggest stages. The most legendary occurred at the **2008 World Series of Poker Main Event**, where **Motoyuki Mabuchi** turned his pocket aces into **four of a kind — quad aces**, a hand only a straight flush can beat — and *still lost*. He got it in against **Justin Phillips** (holding K♦ J♦), and the river **A♦** completed his quads while, on the very same card, handing Phillips a **royal flush** — the 10‑J‑Q‑K‑A of diamonds. The one card that made four aces was the one card that could beat them.
+If you want to feel better about your own beats, remember that the worst ones happen on the biggest stages. The most legendary occurred at the **2008 World Series of Poker Main Event**, where **Motoyuki Mabuchi** turned his pocket aces into **four of a kind — quad aces**, a hand only a straight flush can beat — and *still lost*. The river **A♦** completed his quads while, on the very same card, handing **Justin Phillips** (holding K♦ J♦) a **royal flush** — the 10‑J‑Q‑K‑A of diamonds. Only then did the money go in: Mabuchi checked, Phillips bet, Mabuchi moved all in, and Phillips called instantly. The one card that made four aces was the one card that could beat them.
+
+*By the bar above, this technically isn't even a bad beat — the money went in after the last card fell, so no suckout followed. But poker remembers it as the most famous bad beat ever dealt, and the name stuck.*
 
 That's the ceiling of bad-beat pain: not an 80% favorite going down, but *four aces* — a hand you could play a lifetime without ever losing — beaten by a straight flush, the one category of hand that outranks four of a kind. It's worth keeping in your back pocket the next time your aces get cracked: however badly the deck treated you, someone once lost with quad aces.
 

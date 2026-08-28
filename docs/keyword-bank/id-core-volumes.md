@@ -6,7 +6,8 @@
 > 실측 2026-08-27 · 라쿠 search-volume-history · **location=Indonesia · language=Indonesian** ·
 > requestId **1258288**(배치 1 · 22종 · 12m) + **1258295**(배치 2 · 29종 — rules 소급용 · 12m) +
 > **1258342**(배치 3 · 44종 — rankings 클러스터 · 48m) + **1258391**(배치 4 · 40종 — odds 클러스터 · 48m) +
-> **1258443**(배치 5 · 56종 — strategy 클러스터 · 48m · 2026-08-27 세션 7)
+> **1258443**(배치 5 · 56종 — strategy 클러스터 · 48m · 2026-08-27 세션 7) +
+> **1258880**(배치 6 · 40종 — glossary 클러스터 · 48m · 2026-08-28 세션 8)
 >
 > ✅ **교차검증 완료(2026-08-27 세션 5)** — DataForSEO REST(google_ads search_volume ·
 > location=Indonesia · language=id)로 15종 재실측: 라쿠와 **전 항목 일치**(cara main poker 4.400 ·
@@ -162,6 +163,36 @@
 
 → **결론: strategy 8편의 경화 본체도 «드리프트 소급 + EN 경화분 FAQ 이식 + 언어 품질»**
   (odds·kicker 판정과 동일 계열). 세션 7이 그렇게 실행했다. 실채택 = 필라 태그 1교체뿐.
+
+## 배치 6 (2026-08-28 · 세션 8 glossary 클러스터 — 자동완성(hl=id) + DFS Labs 발굴 + 라쿠 40종 실측 · 48m)
+
+> 발굴 = 자동완성 22시드(istilah·kamus·rake·straddle·bad beat·cooler·fish·tilt 계열) + DFS Labs
+> `keyword_suggestions` 3시드(istilah poker·rake·bad beat). DFS는 REST 직접 경로(.mjs)로 실행 —
+> MCP 40100은 이 세션에서 재확인 안 함(기판정 유지).
+
+### 실재 축 — glossary 허브에 집중
+
+| 키워드 | 볼륨 | 12m | kd | 판정 |
+|---|--:|--:|--:|---|
+| **istilah poker** | 110 | +27%↑ | 1 | ✅ 헤드텀 — 태그 기보유·seoTitle에 «Kamus Istilah Poker» 편입(2026-08-28) |
+| **istilah dalam poker** | 110 | +8% | 1 | ✅ 쌍둥이 헤드텀(DFS 교차 일치) — 태그 채택. 파생: istilah di poker 30 · istilah dalam permainan poker 20 · istilah-istilah dalam poker 20 |
+| **muck artinya** | 110 | +1% | — | ✅ **2024-07 신생 축**(그 전 48m 전부 0) — glossary FAQ «Apa arti muck di poker?» 신설로 흡수(2026-08-28) |
+| **kamus poker** | 70 | **+211%↑↑** | — | ✅ **2025-12 신생 급성장**(0→2026-07 210) — 태그 채택 + seoTitle 편입. 다음 재실측 때 성장 지속 확인 |
+| slang poker | 10 | +9% | — | 태그 기보유 — 조치 불요 |
+| 자동완성 발굴(볼륨 null): istilah poker dalam bahasa indonesia · istilah dalam kartu poker · istilah raise/full house/bom dalam poker | null | — | — | 질문축은 살아 있음 — 태그 «istilah poker dalam bahasa indonesia» 유지. ⚠ «istilah bom dalam poker»는 뜻 미확인(로컬 슬랭 추정) — **원문 확인 전 본문 서술 금지** |
+
+### 함정·자릿수 기록 (채택 금지)
+
+- 🔴 **tilt artinya 1.600** — 자동완성 실측 = bahasa gaul·촬영(tilt down/up)·ML 게임 지배. 포커 몫 파편.
+- 🔴 **rake artinya 590 · apa itu rake 170** — The Rake(creepypasta·roblox)·정원 갈퀴·raker/rakernas(회의 약어) 지배. 2023-09 스파이크 3.600 = 비포커 이벤트. rake 글은 한정형 H2(«Apa Itu Rake di Poker?»)가 정본 — 비한정 태그 금지.
+- 🔴 **straddle artinya 170** — 체조(lompat tinggi)·straddle injury·옵션거래 지배. 단 «apa itu straddle di poker» 자동완성 실재 — 글 태그 «apa itu straddle di poker» 기보유로 충분.
+- vpip 70 = «vip» 오타 트래픽(자동완성 실증) — 조치 불요.
+- bad beat 20(−43%↓·manhwa BL 혼재) · bad beat poker 10 · bad beat jackpot 10 · cooler poker 10 ·
+  fish poker 10 · shark/whale/nit/tilt poker 각 10 · calling station 20 · mississippi straddle 10 ·
+  rakeback 40(stake.com 카지노 의도 혼재) — **용어 개별축 전멸 = 흡수 전략이 판정.**
+
+→ **결론: glossary 6편의 경화 본체도 «드리프트 소급 + EN 경화분 이식»**(rankings·odds·strategy와
+  동일 계열). 실채택 = glossary 허브 1편 집중(태그 3추가·seoTitle 1교체·FAQ 1신설·표 10행 이식).
 
 ## 세션 5~9에 주는 결론
 

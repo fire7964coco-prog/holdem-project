@@ -8,17 +8,18 @@ export const POST: Post = {
   tldr: "Fish adalah slang poker untuk pemain lemah yang kalah, sumber uang yang dikeruk pemain kuat (shark). Fish memainkan terlalu banyak tangan, terlalu banyak call, dan tak bisa fold — dan kalimat terkenal itu memperingatkan: kalau Anda tak bisa mengenali fish di meja Anda, Anda-lah fish-nya. Ini read paling penting dalam permainan: temukan fish, atau jadilah fish.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-08-11",
+  updated: "2026-08-28",
+  masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "10 mnt",
   emoji: "🐟",
   image: "/images/holdem-fish-hero.webp",
   imageAlt: "Pemain rekreasional yang santai di meja poker mendorong tumpukan chip besar ke pot sementara lawan-lawan yang lebih tajam mengamati diam-diam",
-  tags: ["fish", "apa itu fish di poker", "arti fish poker", "cara mengenali fish di poker", "fish vs shark", "apakah saya fish-nya", "tipe pemain poker", "cara berhenti jadi fish"],
+  tags: ["fish poker", "apa itu fish di poker", "arti fish poker", "cara mengenali fish di poker", "fish vs shark", "apakah saya fish-nya", "tipe pemain poker", "cara berhenti jadi fish"],
   content: `
 Pertama kali seseorang di meja kasino diam-diam menyebut saya fish, saya bahkan tak sadar sedang dihina. Saya kira saya bermain baik-baik saja — saya melihat banyak flop, call untuk "menjaga mereka tetap jujur," mengejar setiap draw karena ==siapa yang tahu==. Enam bulan dan banyak buy-in yang hilang kemudian, saya paham: saya *memang* fish-nya. Semua orang di meja sudah tahu itu sebelum saya duduk.
 
-Sebuah **fish** adalah slang poker untuk pemain lemah yang kalah — orang yang chip-nya diam-diam dikeruk pemain yang lebih kuat. Ini label paling penting dalam permainan, karena setiap sesi yang profit dimulai dengan pertanyaan yang sama: *siapa fish-nya di sini?* Berikut ini persisnya apa arti kata itu, ==g:cara mengenali fish== dalam orbit pertama, seluruh kebun binatang slang tipe pemain (shark, whale, nit, donkey), kebenaran di balik kalimat terkenal "spot the sucker" — dan pemeriksaan diri yang jujur agar fish itu tak pernah Anda.
+Sebuah **fish** adalah slang poker untuk pemain lemah yang kalah — orang yang chip-nya diam-diam dikeruk pemain yang lebih kuat. Ini label paling penting dalam permainan, karena setiap sesi yang profit dimulai dengan pertanyaan yang sama: *siapa fish-nya di sini?* Berikut ini persisnya apa arti kata itu, ==g:cara mengenali fish== dalam orbit pertama, seluruh kebun binatang slang tipe pemain (shark, whale, nit, donkey), kebenaran di balik kalimat terkenal "spot the sucker" — dan pemeriksaan diri yang jujur agar fish itu tak pernah Anda. Ini kata pertama yang dipelajari kebanyakan pemain dari [istilah poker](/id/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp") yang lebih luas, dan inilah semua yang ada di baliknya.
 
 ---
 
@@ -37,7 +38,7 @@ Shark | Kebalikannya — pemain yang menang
 
 **Fish adalah pemain yang lemah, tak berpengalaman, atau kalah — sumber uang yang coba dimenangkan semua orang lain di meja.** Ini istilah payung untuk pemain buruk, dan ia didefinisikan sepenuhnya oleh kebalikannya: si **shark**, pemain kuat yang "memakan" fish. Kalau shark adalah predatornya, fish adalah menunya.
 
-Kata ini bukan soal seberapa *baik* seseorang atau seberapa mereka menikmati permainan — banyak fish justru orang paling menyenangkan di meja. Ini murni soal hasil dan keputusan: seorang fish secara konsisten membuat langkah yang merugi dan, seiring waktu, menyerahkan chip-nya ke pemain yang lebih baik. Yang krusial, seorang fish jarang tahu bahwa dirinya fish. Titik buta itulah inti dari istilah ini, dan itulah kenapa konsepnya jauh lebih penting daripada yang terlihat pada awalnya.
+Kata ini bukan soal seberapa *baik* seseorang atau seberapa besar ia menikmati permainan — banyak fish justru orang paling menyenangkan di meja. Ini murni soal hasil dan keputusan: seorang fish secara konsisten membuat langkah yang merugi dan, seiring waktu, menyerahkan chip-nya ke pemain yang lebih baik. Yang krusial, seorang fish jarang tahu bahwa dirinya fish. Titik buta itulah inti dari istilah ini, dan itulah kenapa konsepnya jauh lebih penting daripada yang terlihat pada awalnya.
 
 ---
 
@@ -59,10 +60,10 @@ Anda biasanya tak perlu satu sesi penuh — seorang fish menyingkap dirinya dala
 Memainkan terlalu banyak tangan | Melihat flop dengan dua kartu apa pun — VPIP 40–70% vs 15–22% pemain solid
 Limp terus-menerus | Call big blind alih-alih raise atau fold, berulang kali
 Call, jarang raise | Pasif — lebih suka "lihat apa yang terjadi" daripada mengambil kendali
-Tak bisa fold sepasang | Menikahi top pair atau overpair sampai river tak peduli aksinya
+Tak bisa fold sepasang | Terlalu cinta pada top pair atau overpair — dibawa sampai river tak peduli aksinya
 Mengejar setiap draw | Membayar harga berapa pun untuk flush atau straight, mengabaikan odds
 Ukuran taruhan aneh | Min-bet tangan besar, overbet tangan lemah — sizing tak memberi tahu apa pun
-Muncul di showdown dengan tangan lemah | Membuka tangan yang seharusnya tak pernah sejauh itu
+Muncul di showdown dengan tangan lemah | Membuka tangan yang seharusnya tak pernah sampai sejauh itu
 Bermain secara emosional | Tilt setelah bad beat, mengejar kekalahan, bermain takut saat tekor
 :::
 
@@ -72,7 +73,7 @@ Tak ada satu tanda pun yang menjadi bukti — bahkan pemain bagus sesekali limp 
 
 ## Kebun Binatang Poker: Fish vs Shark vs Whale vs Nit vs Donkey
 
-![Visual sederhana rantai makanan poker menampilkan empat tipe pemain sebagai ikon chip poker — FISH, SHARK, WHALE, dan NIT — dari terlemah ke terkuat](/images/holdem-fish-food-chain.webp "Rantai makanan poker sekilas: fish memberi makan shark, whale adalah hadiah besar, dan nit hanya duduk diam")
+![Visual sederhana rantai makanan poker menampilkan empat tipe pemain sebagai ikon chip poker — FISH, SHARK, WHALE, dan NIT — ukuran chip menandai seberapa besar uang yang mereka bawa ke meja, bukan seberapa kuat mereka bermain](/images/holdem-fish-food-chain.webp "Rantai makanan poker sekilas: fish memberi makan shark, whale adalah hadiah besar, dan nit hanya duduk diam")
 
 "Fish" adalah judulnya, tapi slang poker punya seluruh koleksi tipe pemain — dan kebanyakan glosari hanya mendefinisikan dua atau tiga. Inilah satu tabel yang menjabarkan semuanya, agar Anda bisa menyebut persis siapa yang Anda hadapi:
 
@@ -84,10 +85,10 @@ Tak ada satu tanda pun yang menjadi bukti — bahkan pemain bagus sesekali limp 
 | **Shark** | Pemain kuat yang menang | Tight-aggressive, adaptif | Hindari — pilih meja yang lebih empuk |
 | **Whale** | Fish *kaya* yang kalah **besar** | Sangat loose, stakes tinggi, tak peduli | Sama seperti fish, imbalan lebih tinggi |
 | **Nit** | Sangat tight, menghindari risiko | Hanya tangan premium, tak pernah bluff | Fold ke raise mereka; curi blind |
-| **Donkey (donk)** | Fish yang membuat langkah *sangat buruk* | Tak logis, spew | Sama seperti fish — biarkan mereka gantung diri |
+| **Donkey (donk)** | Fish yang membuat langkah *sangat buruk* | Tak logis, spew | Sama seperti fish — biarkan mereka menggali kuburannya sendiri |
 | **Calling station** | Over-caller yang pasif | Call apa saja, tak pernah raise/fold | Value-bet tanpa henti, jangan pernah bluff |
 | **Reg** | "Regular" di sebuah stake | Beragam — tak selalu pemenang | Baca mereka satu per satu |
-| **Grinder** | Pro/semi-pro bervolume tinggi | Solid, stabil, varians rendah | Hindari; cari pemain rekreasional |
+| **Grinder** | Pro/semi-pro bervolume tinggi | Solid, stabil, variance rendah | Hindari; cari pemain rekreasional |
 | **TAG** | Gaya *menang* (tight-aggressive) | Range sempit, tapi di-bet dan di-raise keras | Bukan fish — hormati taruhan mereka |
 | **LAG** | Gaya *menang* (loose-aggressive) | Range lebar, menekan terus, sering bluff | Jangan fold terlalu banyak — lebarkan call dan 3-bet, tangkap bluff-nya |
 
@@ -103,7 +104,7 @@ Tiga pembedaan yang terus dikaburkan kompetitor, layak dibuat benar:
 
 ## "Kalau Tak Bisa Kenali Sucker-nya…": Kalimat Terkenal, Dikoreksi
 
-![Tangan poker lemah yang tak layak dimainkan dipegang di atas felt, mengilustrasikan loose call dan seleksi tangan buruk yang menandai seorang fish](/images/holdem-starting-hands-weak-ace-trap.webp "Pemeriksaan diri yang penting: kalau Anda call raise dengan tangan seperti ini, meja sudah mengenali Anda")
+![Dua tangan awal dibandingkan di atas felt: A♣4♦ yang lemah disorot merah sebagai jebakan, terdominasi oleh A♠K♦ yang disorot emas](/images/holdem-starting-hands-weak-ace-trap.webp "Pemeriksaan diri yang penting: kalau Anda call raise dengan ace lemah seperti A‑4, meja sudah mengenali Anda — A‑K yang disorot emas justru tangan yang layak dimainkan")
 
 Anda pernah dengar versinya: *"Kalau Anda tak bisa mengenali fish di meja dalam setengah jam pertama, Anda-lah fish-nya."* Ini kalimat paling sering dikutip di poker — dan hampir semua orang salah sedikit.
 
@@ -113,7 +114,7 @@ Kalimat yang paling diingat orang berasal dari film **Rounders** tahun 1998, diu
 "Kalau Anda tak bisa mengenali sucker dalam setengah jam pertama Anda di meja, maka Anda-lah sucker-nya."
 :::
 
-Perhatikan katanya: itu **"sucker,"** bukan "fish." Versi fish adalah parafrase rakyat yang ditukar pemain poker selama bertahun-tahun — akurat secara semangat, tapi bukan kutipan aslinya. Dan gagasannya **lebih tua dari filmnya.** Ini peribahasa dunia judi dengan asal yang diperdebatkan: pejudi jalanan besar **Amarillo Slim** memasukkan sebuah versi dalam edisi revisi 2005 bukunya *Play Poker to Win*, tapi dalam bagian yang sama ia mengkreditkan **Warren Buffett** "dan sejuta orang lain" sebelum dirinya. Buffett sudah lama memakai citra yang sama untuk memperingatkan investor agar tak ikut duduk tanpa sadar bahwa merekalah yang paling minim informasi.
+Perhatikan katanya: itu **"sucker,"** bukan "fish." Versi fish adalah parafrase rakyat yang ditukar pemain poker selama bertahun-tahun — akurat secara semangat, tapi bukan kutipan aslinya. Dan gagasannya **lebih tua dari filmnya.** Ini peribahasa dunia judi dengan asal yang diperdebatkan: penjudi keliling legendaris **Amarillo Slim** memasukkan sebuah versi dalam edisi revisi 2005 bukunya *Play Poker to Win*, tapi dalam bagian yang sama ia menyebut **Warren Buffett** "dan sejuta orang lain" sudah memakainya sebelum dirinya. Buffett sudah lama memakai citra yang sama untuk memperingatkan investor agar tak ikut duduk tanpa sadar bahwa merekalah yang paling minim informasi.
 
 Jadi atribusi yang jujur — yang memisahkan sumber teliti dari sumber malas — adalah ini: *kalimat yang Anda dengar* dipopulerkan di layar oleh Rounders, tapi *gagasannya* adalah peribahasa lama tanpa satu pengarang yang bisa diverifikasi. Bagaimanapun, poinnya sama, dan itulah seluruh alasan artikel ini ada.
 
@@ -127,7 +128,7 @@ Inilah bagian yang tak nyaman. Kalau Anda membaca sejauh ini sambil diam-diam be
 
 | | VPIP (tangan dimainkan) | PFR (tangan di-raise) | Read-nya |
 |:---|:---:|:---:|:---|
-| **Pemain solid** | 15–22% | 12–18% | Tight, agresif, celah sempit |
+| **Pemain solid** | 15–22% | 12–18% (tak pernah lebih tinggi dari VPIP mereka) | Tight, agresif, celah sempit |
 | **Fish** | 40–70% | di bawah 10% | Loose dan pasif — memainkan segalanya, memimpin apa pun tidak |
 | **Nit** | di bawah 12% | di bawah 8% | Terlalu tight — mudah ditebak, bukan fish |
 
@@ -168,7 +169,7 @@ Lakukan enam hal itu dan Anda berhenti menjadi uangnya. Anda tak harus menjadi s
 
 **Q. Apa arti fish di poker?**
 
-A. Fish adalah slang poker untuk pemain yang lemah, tak berpengalaman, atau kalah — orang yang chip-nya dikeruk pemain yang lebih kuat ("shark"). Ia menggambarkan siapa pun yang secara konsisten membuat keputusan buruk dan kehilangan chip seiring waktu, tak peduli seberapa disukai atau percaya diri mereka. Ia didefinisikan oleh kebalikannya — walau tidak semua yang bukan shark itu fish: nit dan grinder ada di antaranya.
+A. Fish adalah slang poker untuk pemain yang lemah, tak berpengalaman, atau kalah — orang yang chip-nya dikeruk pemain yang lebih kuat ("shark"). Istilah ini menggambarkan siapa pun yang secara konsisten membuat keputusan buruk dan kehilangan chip seiring waktu, tak peduli seberapa disukai atau percaya diri mereka. Ia didefinisikan oleh kebalikannya — walau tidak semua yang bukan shark itu fish: nit dan grinder ada di antaranya.
 
 **Q. Apakah menyebut seseorang fish itu penghinaan?**
 
@@ -184,7 +185,7 @@ A. Whale adalah tipe fish yang spesifik — yang kalah dalam jumlah *besar*, bia
 
 **Q. Apa beda fish dan donkey?**
 
-A. Keduanya nyaris sinonim, tapi nadanya berbeda. "Fish" menekankan ketidakberpengalaman dan kehilangan uang; "donkey" (atau "donk") menekankan membuat langkah yang sangat buruk dan tak logis, dan lebih terang-terangan menghina. Setiap donkey adalah fish, tapi "donkey" adalah sebutan untuk fish yang baru saja membuat keputusan yang spektakuler buruknya.
+A. Keduanya nyaris sinonim, tapi nadanya berbeda. "Fish" menekankan ketidakberpengalaman dan kehilangan uang; "donkey" (atau "donk") menekankan membuat langkah yang sangat buruk dan tak logis, dan lebih terang-terangan menghina. Setiap donkey adalah fish, tapi "donkey" adalah sebutan untuk fish yang baru saja membuat keputusan yang luar biasa buruk.
 
 **Q. Bagaimana cara tahu seseorang adalah fish?**
 
@@ -206,7 +207,7 @@ A. Versi layar yang terkenal berasal dari film *Rounders* tahun 1998, diucapkan 
 2. **Kenali seluruh kebun binatangnya.** Fish, whale, nit, donkey, dan calling station bukanlah hal yang bisa dipertukarkan — menyebut tipe persis lawan Anda memberi tahu Anda persis cara mengalahkan mereka.
 3. **Pastikan itu bukan Anda.** VPIP lebar dengan persentase raise rendah adalah tanda tangan fish. Kalau itu Anda, perbaikannya adalah kemenangan termudah di poker: mainkan lebih sedikit tangan, lebih banyak fold, dan berhenti mengejar.
 
-Kalimat lama itu benar karena suatu alasan. Lihatlah sekeliling meja Anda berikutnya dan temukan fish-nya dalam setengah jam pertama — dan kalau Anda benar-benar tak bisa, hal paling berharga yang akan pernah diajarkan poker kepada Anda adalah bahwa saatnya menggarap permainan Anda sendiri. Mulai dengan [range starting hand](/id/blog/holdem-starting-hands-chart) yang lebih tight dan rasa nyata untuk [pot odds](/id/blog/holdem-pot-odds), dan biarkan orang lain yang menjadi santapannya.
+Kalimat lama itu benar karena suatu alasan. Lihatlah sekeliling meja Anda berikutnya dan temukan fish-nya dalam setengah jam pertama — dan kalau Anda benar-benar tak bisa, pelajaran paling berharga yang bisa poker berikan kepada Anda adalah bahwa saatnya menggarap permainan Anda sendiri. Mulai dengan [range starting hand](/id/blog/holdem-starting-hands-chart) yang lebih tight dan rasa nyata untuk [pot odds](/id/blog/holdem-pot-odds), dan biarkan orang lain yang menjadi santapannya.
 
 ---
 
@@ -219,7 +220,7 @@ Kalimat lama itu benar karena suatu alasan. Lihatlah sekeliling meja Anda beriku
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Cara tercepat berhenti menjadi fish</div>
   </a>
   <a href="/id/blog/holdem-pot-odds" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Odds &amp; Matematika</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Peluang &amp; Matematika</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Cara Menghitung Pot Odds</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Berhenti mengejar draw tanpa harga</div>
   </a>
