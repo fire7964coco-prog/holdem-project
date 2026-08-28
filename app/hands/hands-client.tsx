@@ -203,7 +203,8 @@ export default function Hands() {
               { href: "/rules", label: "기초 규칙", desc: "블라인드·쇼다운 6단계" },
               { href: "/strategy", label: "전략 가이드", desc: "포지션·팟 오즈·블러핑" },
               { href: "/glossary", label: "용어 사전", desc: "필수 홀덤 용어 26개" },
-              { href: "/ranking", label: "추천 사이트", desc: "TOP5 홀덤 사이트" },
+              // ★앵커에 「홀덤사이트」를 담는다(2026-08-28) — 근거는 glossary-client 동일 자리 주석.
+              { href: "/ranking", label: "홀덤사이트 고르는 법", desc: "안전 기준·먹튀 경고 신호" },
               { href: "/blog", label: "전략 블로그", desc: "실전 전략 칼럼" },
             ].map(({ href, label, desc }) => (
               <Link key={href} href={href}>

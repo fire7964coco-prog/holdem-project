@@ -37,6 +37,8 @@
     "gsc:inspect": "node scripts/gsc-inspect.mjs",
     "ga": "node scripts/ga-fetch.mjs",
     "psi": "node scripts/psi-check.mjs",
+    "analytics": "node scripts/analytics-snapshot.mjs",
+    "analytics:dry": "node scripts/analytics-snapshot.mjs --dry",
     "compress:images": "node scripts/compress-images.mjs --apply",
     "compress:images:preview": "node scripts/compress-images.mjs",
     "generate:beginner-pdf": "node scripts/generate-beginner-pdf.mjs",
