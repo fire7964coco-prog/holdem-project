@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Bubble adalah spot tepat sebelum uang, di mana satu eliminasi lagi membayar semua orang lainnya. Karena bust berarti tidak menang apa-apa, bertahan lebih berharga daripada chip yang bisa Anda dapatkan — jadi calling range mengetat keras sementara shove tetap lebar. Big stack menyerang, medium stack paling terjebak (bukan short stack), dan di bubble satelit Anda fold semuanya, bahkan aces, begitu kursi Anda terkunci.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-08-13",
-  masterUpdated: "2026-08-13",
+  updated: "2026-08-28",
+  masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "13 mnt",
   emoji: "🫧",
@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Short stack chip dan big stack menjulang di seberang meja turnamen pada money bubble, tangga pembayaran di latar belakang — momen bertahan menjadi lebih berharga daripada chip",
   tags: ["bubble poker", "cara bermain bubble", "strategi bubble poker", "bubble factor", "short stack bubble", "money bubble", "bubble satelit", "hand for hand poker"],
   content: `
-Permainan paling disiplin yang pernah saya mainkan adalah tiga pemain dari uang dalam sebuah turnamen Jumat, semua orang fold seolah kartunya terbakar. Saya punya middle stack dan open-fold ace-jack dua kali — tangan yang akan saya raise setiap saat di cash game. Dua orbit kemudian short stack bust, saya limp ke dalam min-cash… dan finis ke-14 untuk pembayaran yang nyaris di atas buy-in saya. ==Saya "bertahan" keluar dari uang yang sebenarnya.== Itulah bubble dalam satu cerita: mainkan terlalu takut dan Anda mengunci recehan; mainkan dengan benar dan di situlah turnamen sebenarnya dimenangkan.
+Permainan paling disiplin yang pernah saya mainkan terjadi saat tinggal tiga eliminasi menuju uang di sebuah turnamen Jumat, semua orang fold seolah kartunya terbakar. Saya punya middle stack dan open-fold ace-jack dua kali — tangan yang akan saya raise setiap saat di cash game. Dua orbit kemudian short stack bust, saya limp ke dalam min-cash… dan finis ke-14 untuk pembayaran yang nyaris di atas buy-in saya. ==Saya "bertahan" keluar dari uang yang sebenarnya.== Itulah bubble dalam satu cerita: mainkan terlalu takut dan Anda mengunci recehan; mainkan dengan benar dan di situlah turnamen sebenarnya dimenangkan.
 
 ==Di bubble, satu bust-out lagi membayar semua orang lainnya — jadi untuk beberapa tangan penting, tetap hidup lebih berharga daripada chip yang bisa Anda menangkan.== Fakta tunggal itu membalik poker normal, dan hampir semua orang salah dengan dua cara yang sama: big stack tidak cukup menyerang, dan medium stack call terlalu banyak. Panduan ini adalah playbook stack demi stack — apa yang harus dilakukan dengan big, medium, atau short stack, di tiga bubble berbeda yang akan Anda hadapi.
 
@@ -138,7 +138,7 @@ Separuh lainnya: bubble factor mengikuti **siapa yang duduk di seberang Anda**, 
 **Ketika uang sudah dekat, turnamen beralih ke "hand-for-hand" — setiap meja memainkan persis satu tangan pada waktu yang sama, lalu menunggu — khusus untuk menghentikan pemain melakukan stall ke dalam uang.** Tanpa itu, pemain di meja lambat bisa fold tangan demi tangan sementara meja lebih cepat membakar bubble. Hand-for-hand meratakan medan:
 
 - **Cara kerjanya:** tournament director menjeda jam, dan sejak itu setiap tangan memotong ==2 menit== tetap dari level, tak peduli berapa lama tangan itu sebenarnya berlangsung (WSOP Rule 126.a dan 126.c; TDA RP-8) — jadi blind tetap naik sepanjang bubble, hanya saja per tangan, bukan per menit nyata. Semua meja membagikan satu tangan, dan tidak ada meja yang memulai tangan berikutnya sampai setiap meja selesai. Jika dua pemain bust pada hand-for-hand yang sama di **meja yang sama**, yang chip-nya lebih sedikit di awal tangan mendapat finis lebih rendah (bubble); kalau mereka bust di **meja berbeda**, keduanya dianggap seri dan membagi dua hadiah untuk posisi tersebut.
-- **Stalling:** memakai seluruh time bank pada setiap keputusan untuk melihat lebih sedikit tangan (dan fold ke dalam uang). Justru itu yang membuatnya berhasil: tank tidak memakan jam sama sekali — tangan itu tetap memotong 2 menitnya, mau Anda fold seketika atau menghabiskan seluruh time bank. Big stack tidak punya alasan untuk stall — mereka ingin lebih banyak tangan untuk menyerang. Short dan medium stack kadang stall untuk bertahan, ==tapi stalling berlebihan bisa mengundang clock call atau penalti==, jadi tank sewajarnya.
+- **Stalling:** memakai seluruh time bank pada setiap keputusan untuk melihat lebih sedikit tangan (dan fold sampai masuk uang). Justru itu yang membuatnya berhasil: tank tidak memakan jam sama sekali — tangan itu tetap memotong 2 menitnya, mau Anda fold seketika atau menghabiskan seluruh time bank. Big stack tidak punya alasan untuk stall — mereka ingin lebih banyak tangan untuk menyerang. Short dan medium stack kadang stall untuk bertahan, ==tapi stalling berlebihan bisa mengundang clock call atau penalti== — tank sewajarnya, tanpa sengaja membakar time bank Anda.
 - **Eksploitasi:** karena semua orang lain melambat, big stack yang terus memberi tekanan selama hand-for-hand mengumpulkan blind dan ante hampir tanpa perlawanan.
 
 ---
@@ -147,9 +147,9 @@ Separuh lainnya: bubble factor mengikuti **siapa yang duduk di seberang Anda**, 
 
 **Di satelit, setiap kursi membayar sama — jadi begitu stack Anda aman di dalam bubble, Anda fold semuanya, termasuk pocket aces.** Ini adalah spot paling kontra-intuitif di poker, dan itu benar. Jika memenangkan sebuah flip memberi Anda ==kursi yang sama yang sudah Anda kunci== sementara kalah mengeliminasi Anda, tidak ada imbalan dan risikonya sangat besar:
 
-- **Begitu kursi Anda secara matematis aman** (Anda cukup jauh di dalam bubble sehingga tak bisa terkejar), fold setiap tangan — ya, bahkan AA dan KK — dan biarkan short stack bertarung sendiri.
-- **Stall setiap tangan** untuk mempertahankan stack itu. Di bubble satelit, stalling bukan hanya ditoleransi, itu optimal.
-- **Satu pengecualian:** call hanya jika membuat short stack spesifik yang Anda hadapi bust akan mengunci bubble *untuk Anda* — yaitu, eliminasi mereka menjamin kursi Anda.
+- **Begitu kursi Anda secara matematis aman** (Anda cukup jauh di dalam bubble sehingga tak bisa terkejar), fold setiap tangan — ya, bahkan AA dan KK — dan biarkan short stack bertarung sendiri. Hitung ulang matematika itu setiap kali blind naik: "zona aman" menyusut begitu ante mulai berlaku.
+- **Jangan mengandalkan stalling di live.** Online, memakai seluruh clock Anda gratis; di live, sengaja membakar time bank demi naik tangga hadiah secara eksplisit bisa kena penalti menurut aturan WSOP — fold dengan tempo normal dan biarkan short stack bertarung.
+- **Satu pengecualian:** call hanya jika Anda meng-cover short stack yang bersangkutan dan eliminasi mereka mengunci bubble *untuk Anda* — dan hanya selama kursi Anda tetap terjamin meski Anda kalah di pot itu.
 
 Jika Anda mengambil satu hal dari bagian ini: satelit bukan turnamen normal. Chip di atas ambang keamanan tidak berharga, jadi mainkan sesuai itu.
 
@@ -182,6 +182,10 @@ A. Bubble boy adalah pemain yang bust di posisi tak berbayar terakhir — satu t
 
 A. Stone (atau hard) bubble adalah saat satu eliminasi menempatkan setiap pemain tersisa ke dalam uang pada saat yang sama. Soft bubble lebih longgar — rentang beberapa eliminasi di dekat uang alih-alih satu spot persis. Stone bubble menciptakan tekanan paling ekstrem karena satu bust-out membayar semua yang tersisa.
 
+**Q. Apa arti "pay the bubble" atau memecahkan bubble?**
+
+A. "Bubble" adalah spot terakhir sebelum uang, jadi pemain yang bust di sana tidak menang apa pun sementara semua yang masih bertahan dibayar. "Memecahkan bubble" adalah eliminasi terakhir itu: begitu terjadi, setiap pemain tersisa masuk uang dan tekanan bertahan hidup yang intens mereda. Adapun "pay the bubble" merujuk pada kesepakatan sebagian event (atau para pemain) untuk memberi finisher bubble pembayaran kecil — itu pengecualian, bukan aturan.
+
 **Q. Haruskah Anda fold di bubble?**
 
 A. Anda harus fold *call* jauh lebih banyak dari biasanya, tapi bukan semuanya — dan Anda harus terus shove dan mencuri. Bertahan lebih berharga daripada chip di dekat pay jump, jadi call off dan bust adalah kesalahan yang mahal. Ketatkan calling range Anda keras sambil menjaga agresi first-in Anda tetap lebar.
@@ -189,6 +193,10 @@ A. Anda harus fold *call* jauh lebih banyak dari biasanya, tapi bukan semuanya �
 **Q. Apakah short stack merasakan tekanan bubble paling besar?**
 
 A. Tidak — itu kesalahpahaman umum. Menurut bubble factor, medium stack yang paling terkekang: cukup prize equity untuk hilang, tidak cukup pendek untuk membenarkan berjudi. Short stack sebenarnya punya bubble factor lebih rendah karena bust sudah cenderung terjadi dan menggandakan sangat membantu, jadi mereka bisa berjudi lebih bebas (dengan shove, bukan call).
+
+**Q. Apa itu bubble factor di poker?**
+
+A. Bubble factor mengukur seberapa jauh kalah di sebuah pot merugikan Anda dibanding menang di pot yang sama membantu, dalam ukuran uang nyata (ICM). Bubble factor 1,0 berarti chip setara uang; 1,5 berarti bust menyakitkan 1,5× lebih besar daripada manfaat menang. Itu dikonversi jadi equity yang Anda butuhkan untuk call: c · BF ÷ (P + c · BF), untuk call sebesar c ke pot sebesar P. Kalau yang dipertaruhkan persis sebesar yang bisa dimenangkan, hasilnya BF ÷ (1 + BF) — 60% pada bubble factor 1,5 — tapi pot sungguhan berisi dead money, jadi jam 10bb tipikal yang Anda call 9bb ke pot 12bb butuh sekitar 53%. Dua-duanya di atas 50% yang diberikan coin flip chip-EV — itulah kenapa flip berubah jadi fold di bubble.
 
 **Q. Apa itu permainan hand-for-hand?**
 

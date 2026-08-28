@@ -5,10 +5,10 @@ export const POST: Post = {
   seoTitle: "Tak Sanggup Buy-In EPT Barcelona? Jalur $0,50 ke Main Event €5.300",
   title: "EPT Barcelona 2026 — Panduan Pemain Lengkap: Jadwal, Buy-In & Cara Kualifikasi",
   desc: "EPT Barcelona 2026 — 16–29 Agu, Casino Barcelona. Power Path $0,50 ke Main €5.300. Jadwal, buy-in, hotel, dan tips pemula pertama.",
-  tldr: "EPT Barcelona 2026 berlangsung 16–29 Agu di Casino Barcelona. Buy-in Main Event: €5.300. Jalur online termurah: Power Path dari $0,50 → Gold Pass (Main Event €5.300 + hotel 8 malam + biaya €690). Anda butuh akun PokerStars Live dan paspor yang berlaku. Pesan hotel lebih awal — Agustus adalah musim puncak.",
+  tldr: "EPT Barcelona 2026 berlangsung 16–29 Agu di Casino Barcelona. Buy-in Main Event: €5.300. Jalur online termurah: Power Path dari $0,50 → Gold Pass (Main Event €5.300 + side event €1.100 + hotel 8 malam + biaya €690). Anda butuh akun PokerStars Live dan paspor yang berlaku. Pesan hotel lebih awal — Agustus adalah musim puncak.",
   category: "tournament",
   date: "2026-06-17",
-  updated: "2026-08-15",
+  updated: "2026-08-28",
   keepImagesInBody: true,
   readTime: "16 mnt",
   emoji: "🃏",
@@ -38,7 +38,7 @@ Baru di turnamen live? Baca sekilas [panduan turnamen](/id/blog/holdem-tournamen
 ---
 
 > **Jawaban singkat**
-> EPT Barcelona 2026 berlangsung ==**16–29 Agu**== di Casino Barcelona. Main Event: ==**€5.300**==. Jalur termurah: Power Path dari $0,50 → ==g:Gold Pass (kursi Main Event €5.300 + hotel 8 malam + biaya €690)==. Anda butuh akun PokerStars Live dan paspor yang berlaku. ==r:Pesan hotel sekarang — Agustus adalah musim puncak.==
+> EPT Barcelona 2026 berlangsung ==**16–29 Agu**== di Casino Barcelona. Main Event: ==**€5.300**==. Jalur termurah: Power Path dari $0,50 → ==g:Gold Pass (kursi Main Event €5.300 + side event €1.100 + hotel 8 malam + biaya €690)==. Anda butuh akun PokerStars Live dan paspor yang berlaku. ==r:Untuk 2027, pesan hotel lebih awal — Agustus adalah musim puncak.==
 
 ---
 
@@ -113,7 +113,7 @@ Menangkan Step 4 dan Anda menerima salah satu dari tiga Power Pass:
 |:---|:---:|:---|
 | Bronze Pass | ~$530 | Kredit turnamen online |
 | Silver Pass | ~$2.300 | Entri event live tingkat menengah |
-| ==**Gold Pass**== | ==g:**~$10.300** (USD)== | ==g:Main Event €5.300 + side event €1.100 + hotel 8 malam + biaya== |
+| ==**Gold Pass**== | ==g:**~$10.300** (USD)== | ==g:Main Event €5.300 + side event €1.100 + hotel 8 malam + biaya €690== |
 
 ==g:**Gold Pass** adalah yang Anda inginkan.== PokerStars menargetkan setidaknya 25% field Main Event berasal dari kualifikasi satelit — jadi kursinya nyata.
 
@@ -179,7 +179,7 @@ Tidak mau grind empat langkah? PokerStars juga menjalankan **satelit langsung** 
 | Item | Perkiraan Biaya |
 |:---|:---:|
 | Buy-in Power Path untuk mencapai Step 4 | **$11–$55** |
-| Gold Pass mencakup: entri Main Event + side event + hotel 8 malam | ==g:✅ Termasuk (nilai ~$10.300 USD)== |
+| Gold Pass mencakup: entri Main Event + side event + hotel 8 malam + biaya €690 | ==g:✅ Termasuk (nilai ~$10.300 USD)== |
 | Penerbangan (tidak selalu termasuk) | €150–€400 |
 | Makan & hari tambahan | €400–€600 |
 | ==**Total pengeluaran pribadi**== | ==g:**~€550–€1.000**== |
@@ -326,7 +326,7 @@ Day 1 terbagi menjadi beberapa flight awal (Day 1A, 1B, 1C, kadang 1D). Anda mem
 - Akun ==**PokerStars Live**== Anda yang sudah diverifikasi dan aktif
 - Formulir **Source of Funds** yang sudah dilengkapi jika membayar dengan tunai
 - Jaket tipis (==r:AC casino agresif di bulan Agustus==)
-- Camilan untuk kantong (istirahat resmi jarang)
+- Camilan yang muat di saku (istirahat singkat dan antrean makanan panjang)
 - Headphone (opsional, tapi membantu dengan kebisingan meja)
 
 ### Linimasa Day 1
@@ -339,7 +339,7 @@ Day 1 terbagi menjadi beberapa flight awal (Day 1A, 1B, 1C, kadang 1D). Anda mem
 |---|---|
 | ~11:00 | Registrasi dibuka (==r:datang minimal 30 menit lebih awal==) |
 | ~12:00 | Kartu dibagikan — Day 1 dimulai |
-| ~20:30 | Akhir permainan Day 1 (biasanya 8–10 level) |
+| Malam | Akhir permainan Day 1 — biasanya 8 level; jam persisnya tergantung struktur |
 | Day 2+ | ==g:Hanya pemain yang mengantongi chip yang lanjut== |
 
 </div>
@@ -402,7 +402,7 @@ A. Ya. Berdasarkan regulasi casino Spanyol, setiap transaksi tunai di atas amban
 
 **Q. Apa yang terjadi jika saya memenangkan Gold Pass Power Path — apakah hotel otomatis dipesan?**
 
-A. PokerStars akan menghubungi Anda setelah Anda memenangkan pass. Gold Pass biasanya mencakup: ==g:entri Main Event €5.300 + kredit side event €1.100 + hotel 8 malam + biaya harian==. Anda akan berkoordinasi soal pemesanan dengan tim PokerStars Live — mereka punya dukungan khusus.
+A. PokerStars akan menghubungi Anda setelah Anda memenangkan pass. Gold Pass biasanya mencakup: ==g:entri Main Event €5.300 + kredit side event €1.100 + hotel 8 malam + biaya €690==. Anda akan berkoordinasi soal pemesanan dengan tim PokerStars Live — mereka punya dukungan khusus.
 
 **Q. Apakah Barcelona aman bagi pemain poker yang membawa uang tunai dalam jumlah besar?**
 
@@ -410,7 +410,7 @@ A. Kawasan Port Olímpic Barcelona umumnya aman. ==r:Pencopetan lazim di area pa
 
 ---
 
-## Panduan Terkait
+## Postingan Terkait
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/id/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
@@ -429,5 +429,5 @@ A. Kawasan Port Olímpic Barcelona umumnya aman. ==r:Pencopetan lazim di area pa
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Kuasai dasar sebelum event live pertama Anda</div>
   </a>
 </div>
-`,
+`.trim(),
 };

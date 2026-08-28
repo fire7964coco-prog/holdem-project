@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "ICM (Independent Chip Model) mengubah stack chip turnamen Anda menjadi nilai uang hadiah nyata, memakai payout dan stack setiap pemain. Karena Anda hanya memenangkan satu hadiah pertama, menggandakan chip tidak pernah menggandakan uang Anda — jadi stack chip leader bernilai lebih kecil dari porsi chipnya, dan short stack bernilai lebih besar. Celah itulah alasan Anda fold tangan di bubble yang akan jadi call mudah di cash game.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-08-13",
-  masterUpdated: "2026-08-13",
+  updated: "2026-08-28",
+  masterUpdated: "2026-08-28",
   keepImagesInBody: true,
   readTime: "13 mnt",
   emoji: "🏆",
@@ -39,7 +39,7 @@ short stack | bernilai LEBIH BESAR dari porsi chipnya
 
 **ICM (Independent Chip Model) mengubah stack chip menjadi nilai uang hadiah nyatanya, memakai payout tersisa dan ukuran stack setiap pemain.** Ia menjawab satu pertanyaan: ==jika turnamen berakhir sekarang juga dengan stack ini, berapa nilai irisan saya dari prize pool sebenarnya dalam dolar?==
 
-Ia bekerja dengan memperkirakan seberapa sering setiap pemain finis di tiap posisi berbayar — pertama, kedua, ketiga, dan seterusnya — dari porsi chip mereka, lalu mengalikan probabilitas itu dengan payout. Makin besar stack Anda, makin sering Anda finis tinggi; tapi karena ==hadiah teratas dibatasi, chip ekstra membeli uang yang makin sedikit.==
+Model ini bekerja dengan memperkirakan seberapa sering setiap pemain finis di tiap posisi berbayar — pertama, kedua, ketiga, dan seterusnya — dari porsi chip mereka, lalu mengalikan probabilitas itu dengan payout. Makin besar stack Anda, makin sering Anda finis tinggi; tapi karena ==hadiah teratas dibatasi, chip ekstra membeli uang yang makin sedikit.==
 
 Pergeseran mental kuncinya: di cash game satu chip adalah satu dolar, titik. Di turnamen satu chip adalah *tiket lotre* atas seperangkat hadiah tetap. ICM memberi harga tiket itu. Ia hanya berlaku untuk turnamen dan sit-and-go — [tidak pernah untuk cash game](/id/blog/holdem-tournament-vs-cash-game "thumb:/images/tournament-table-action.webp"), tempat chip Anda sudah setara nilai nominalnya.
 
@@ -51,7 +51,7 @@ Pergeseran mental kuncinya: di cash game satu chip adalah satu dolar, titik. Di 
 
 Itu membuat kurva chip-ke-uang ==melengkung==: chip pertama (bertahan hidup) bernilai banyak, chip terakhir (mengejar kemenangan) bernilai lebih sedikit. Pemain dengan separuh chip tidak memiliki separuh prize pool — mereka memiliki jauh lebih sedikit, karena mereka tak bisa finis lebih baik dari juara pertama tapi *bisa* tetap bust.
 
-Balik keadaannya dan short stack adalah pemenang matematika ini. Mereka sudah punya klaim nyata atas pay jump di bawah mereka, jadi ==setiap chip mereka bernilai lebih dari nominalnya==. Asimetri tunggal ini — big stack dinilai berlebih dalam chip, short stack dinilai kurang — menggerakkan setiap keputusan ICM yang akan pernah Anda buat.
+Balik keadaannya dan short stack adalah pemenang matematika ini. Mereka sudah punya klaim nyata atas pay jump di bawah mereka, jadi ==setiap chip mereka bernilai lebih dari nominalnya==. Asimetri tunggal ini — big stack dinilai berlebih dalam chip, short stack dinilai kurang — menggerakkan setiap keputusan ICM yang Anda buat.
 
 ---
 
@@ -152,13 +152,13 @@ Short stack mendapat ==$97 lebih banyak== dari ICM deal daripada chip chop, kare
 
 ## Kapan ICM Paling Penting — dan Kapan Harus Mengabaikannya?
 
-**ICM paling penting menjelang pay jump dan paling tak penting saat pay jump masih jauh.** Andalkan ia di spot ini:
+**ICM paling penting menjelang pay jump dan paling tak penting saat pay jump masih jauh.** Andalkan ICM di spot ini:
 
 - **[Money bubble](/id/blog/holdem-bubble "thumb:/images/holdem-bubble-hero.webp")** — lompatan terbesar dari semua adalah dari $0 ke uang, jadi risk premium memuncak.
 - **Bubble final table dan setiap pay jump di final table** — tiap anak tangga adalah uang nyata.
 - **Satelit** — kasus ekstrem: tiap kursi kualifikasi bernilai sama, jadi begitu Anda punya cukup chip untuk memenangkan kursi, chip ekstra bernilai hampir *nol* dan Anda fold hampir semuanya.
 
-Abaikan ia (main chip EV) saat:
+Abaikan ICM (main chip EV) saat:
 
 - **Tahap awal dan tengah**, tempat pay jump berikutnya adalah abstraksi yang jauh dan mengumpulkan chip adalah yang memenangkan turnamen.
 - **Permainan deep-stack dengan blind kecil**, tempat Anda punya ruang untuk mengalahkan lawan lewat permainan alih-alih memasukkan chip.
@@ -173,7 +173,7 @@ Kebocoran umum adalah menerapkan ICM secara berlebihan: memfold diri sampai jadi
 **ICM adalah model sederhana terbaik yang kita punya, tapi ia aproksimasi — ia mengasumsikan setiap pemain sama terampil dan mengabaikan hampir segalanya kecuali ukuran stack.** Jujurlah tentang apa yang ia tinggalkan:
 
 - **Skill.** ICM memperlakukan juara dunia dan pemula dengan stack sama sebagai setara. Chip pemain lebih baik bernilai lebih dari yang dikatakan model.
-- **Posisi.** Stack 3-big-blind di button (yang membayar blind paling akhir, jadi masih dapat beberapa tangan gratis sebelum terpaksa masuk) bernilai lebih dari stack sama di big blind (all-in paksa di tangan berikutnya). ICM tak bisa melihat kursi.
+- **Posisi.** Stack 3-big-blind di button (masih bebas memilih momen dan open-shove dengan fold equity penuh dari kursi terbaik) bernilai lebih dari stack sama di big blind (sepertiganya sudah terpasang, terpaksa all-in dalam satu-dua tangan). ICM tak bisa melihat kursi.
 - **Blind dan permainan mendatang.** ICM membekukan turnamen pada saat ini juga; ia mengabaikan blind yang naik, ante, dan bagaimana beberapa orbit berikutnya akan benar-benar berjalan.
 
 Bahkan ada dukungan empiris untuk titik butanya: sebuah studi besar 2025 yang menguji-mundur ICM terhadap hasil turnamen nyata menemukan ia cenderung ==meremehkan big stack dan melebihkan short stack==, sebagian karena chip leader terampil bisa memanfaatkan tekanan ICM untuk menang *lebih* dari yang diprediksi model mentah. Solver canggih menambahkan koreksi "future game" persis karena alasan ini. Tak satu pun dari itu membuat ICM salah — ia membuatnya aproksimasi awal yang kuat yang Anda sesuaikan untuk skill dan posisi, bukan hukum fisika.
@@ -193,7 +193,7 @@ A. ICM (Independent Chip Model) adalah rumus yang mengubah stack chip turnamen A
 
 **Q. Bagaimana ICM dihitung?**
 
-A. Ia memberi setiap pemain probabilitas finis di tiap posisi berbayar berdasarkan porsi chip mereka (peluang Anda finis pertama = stack Anda ÷ total chip, lalu rekursif untuk spot lebih rendah), lalu mengalikan probabilitas itu dengan payout. Jumlahnya adalah nilai dolar stack Anda. Dalam praktik Anda memakai kalkulator ICM; intinya adalah memahami apa yang ia lakukan.
+A. ICM memberi setiap pemain probabilitas finis di tiap posisi berbayar berdasarkan porsi chip mereka (peluang Anda finis pertama = stack Anda ÷ total chip, lalu rekursif untuk spot lebih rendah), lalu mengalikan probabilitas itu dengan payout. Jumlahnya adalah nilai dolar stack Anda. Dalam praktik Anda memakai kalkulator ICM; intinya adalah memahami apa yang ia lakukan.
 
 **Q. Apa beda ICM dan chip EV?**
 
@@ -210,6 +210,10 @@ A. Tidak. Di cash game setiap chip sudah setara nilai nominalnya dalam dolar dan
 **Q. Kapan saya harus mengabaikan ICM?**
 
 A. Tahap awal dan tengah, permainan deep-stack dengan blind kecil, dan heads-up untuk gelar — semua spot tempat pay jump masih jauh atau hanya dua hadiah tersisa. Dalam kasus itu Anda main chip EV dan fokus mengumpulkan chip.
+
+**Q. Apa kesalahan ICM yang paling umum?**
+
+A. Tiga yang terbesar. Pertama, menerapkan ICM secara berlebihan — fold terus demi "naik tangga hadiah" padahal pay jump masih jauh, alih-alih mengakumulasi chip. Kedua, call terlalu lebar sebagai medium stack di dekat bubble, persis di tempat risk premium Anda tertinggi dan bust menguras uang yang sudah terkunci. Ketiga, menyetujui chip chop saat Anda short stack (atau ICM deal saat Anda chip leader) tanpa menghitung angkanya dulu. ICM adalah alat late-game: memakainya terlalu dini, atau mengabaikannya di final table, dua-duanya membocorkan uang.
 
 **Q. Siapa yang menemukan ICM?**
 

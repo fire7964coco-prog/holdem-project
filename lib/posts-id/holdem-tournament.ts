@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "Di turnamen poker Anda membayar buy-in tetap untuk mendapat chip, blind naik mengikuti timer sampai satu pemain memegang semua chip. 10–15% pemain teratas ITM. Formatnya meliputi freezeout, PKO, satellite, dan deepstack — masuk lewat buy-in langsung, satellite, atau pra-registrasi online.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-08-16",
+  updated: "2026-08-28",
+  masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "14 mnt",
   emoji: "🏆",
@@ -24,6 +25,8 @@ export const POST: Post = {
     "pko poker",
     "satellite poker tournament",
     "cara main turnamen poker",
+    "cara ikut turnamen poker",
+    "wsop",
   ],
   content: `
 Saya masuk ke turnamen poker live pertama saya dengan $200, gambaran samar soal cara kerja Texas Hold'em, dan nol pemahaman soal apa itu "blind level" atau "bubble."
@@ -86,7 +89,7 @@ Ini yang paling sering dilewati panduan pemula, dan ini konsep mekanis paling pe
 
 Perhatikan: **Anda tidak kehilangan satu chip pun** antara Level 1 dan Level 9. Tapi stack Anda turun dari 200BB ke 10BB karena blind naik. Beginilah turnamen memaksa aksi dan pada akhirnya mengeliminasi pemain.
 
-==g:Aturan praktis: di bawah 20 big blind, Anda ada di wilayah push-or-fold. Di bawah 10 big blind, Anda harus shove hampir semua tangan yang bisa dimainkan sebelum blind melahap Anda hidup-hidup.==
+==g:Aturan praktis: di bawah 20 big blind Anda mulai masuk wilayah push-or-fold, dan pada 15 BB itu menjadi mode utama Anda. Di bawah 10 big blind, Anda harus shove hampir semua tangan yang bisa dimainkan — terutama dari posisi akhir atau small blind — sebelum blind melahap Anda hidup-hidup.==
 
 Saat Anda sampai di sana, range shove persisnya ada di [short-stack strategy — kapan push atau fold](/id/blog/holdem-short-stack).
 
@@ -117,7 +120,7 @@ Biasanya tersisa 6–9 pemain. Payout naik tajam dengan setiap eliminasi. [ICM (
 | Format | Cara kerjanya | Cocok untuk |
 |:---|:---|:---|
 | **Freezeout** | Satu buy-in, tanpa rebuy. Bust = keluar. | Pemula — biaya tetap |
-| **Rebuy / Re-entry** | Bayar lagi setelah bust (selama level awal) | Pemain agresif dengan bankroll lebih besar |
+| **Rebuy / Re-entry** | Beli chip lagi selama jendela awal — di format rebuy, sering tanpa harus bust dulu | Pemain agresif dengan bankroll lebih besar |
 | **Bounty / KO** | Menangkan bounty tunai tetap untuk setiap pemain yang Anda eliminasi | Pemain aksi — pemasukan ekstra per knockout |
 | **PKO (Progressive KO)** | Bounty tumbuh dengan setiap knockout — sebagian dibayar ke Anda, sebagian ditambahkan ke kepala Anda | Pemain high-variance, upside besar |
 | **Deepstack** | Starting stack jauh di atas event standar di seri yang sama, plus level lebih lambat | Pemain yang ingin lebih banyak permainan postflop |
@@ -141,7 +144,7 @@ PKO (Progressive Knockout) adalah turnamen bounty di mana biasanya sekitar separ
 
 Turnamen poker deepstack memulai Anda dengan chip yang jauh lebih banyak relatif terhadap blind dibanding event standar di seri yang sama, dan biasanya dipadukan dengan blind level yang lebih panjang. **Tidak ada ambang baku untuk ini** — "deepstack" selalu label yang relatif. Hitung dari structure sheet berapa big blind nilai stack Anda di Level 1, lalu bandingkan dengan 100–200 BB event standar. Lebih banyak chip dan jam yang lebih lambat berarti lebih banyak permainan postflop, lebih banyak ruang untuk pulih dari kesalahan, dan hari yang lebih panjang.
 
-**Bagaimana dengan rebuy dan add-on?** Di event rebuy Anda bisa bayar lagi setelah bust selama jendela awal yang ditetapkan; add-on adalah pembelian chip opsional satu kali yang biasanya ditawarkan saat jendela itu ditutup. Setelah itu, event berjalan seperti freezeout.
+**Bagaimana dengan rebuy dan add-on?** Di event rebuy Anda bisa membeli chip lagi selama jendela awal yang ditetapkan — di banyak event, kapan saja stack Anda berada di atau di bawah jumlah awal, tanpa harus bust dulu; add-on adalah pembelian chip opsional satu kali yang biasanya ditawarkan saat jendela itu ditutup. Setelah itu, event berjalan seperti freezeout.
 
 ---
 
@@ -156,13 +159,13 @@ Satellite adalah turnamen lebih kecil di mana hadiahnya bukan uang tunai — mel
 
 Alih-alih mengeluarkan $10.000, Anda berkompetisi di turnamen $500 melawan 19 pemain lain. Satu orang memenangkan kursi $10.000.
 
-**Satellite berantai** turun lebih rendah lagi. Super-satellite $5 → qualifier $55 → event $215 → Main Event $1.050. Banyak pemain di event besar masuk lewat rantai satellite dengan sebagian kecil dari buy-in langsung.
+**Satellite berantai** turun lebih rendah lagi. Super-satellite $5 → qualifier $55 → event $215 → Main Event online $1.050. Banyak pemain di event besar masuk lewat rantai satellite dengan sebagian kecil dari buy-in langsung.
 
 ==g:Strategi satellite berbeda dari permainan turnamen biasa — begitu Anda punya cukup chip untuk menjamin sebuah kursi, berhentilah mengambil risiko. Fold bahkan tangan bagus untuk menghindari bust di bubble.==
 
 ---
 
-## Cara Masuk ke Turnamen Poker — 3 Cara
+## Cara Ikut Turnamen Poker — 3 Cara
 
 ### Opsi A: Buy-In Langsung di Kasino (Paling Mudah)
 1. Cari meja registrasi poker room (atau tournament desk untuk event lebih besar)
@@ -221,11 +224,11 @@ Ini yang tidak diberitahukan panduan lain. Inilah timeline Day 1 realistis untuk
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
 <div style="color:hsl(var(--primary));font-weight:700">13:00–15:00</div>
-<div style="color:hsl(var(--foreground))">Level 2–4. Late registration masih buka. Field bertambah. Beberapa pemain sudah bust.</div>
+<div style="color:hsl(var(--foreground))">Level 2–4. Late registration masih buka. Field bertambah. Ante mulai berlaku sesuai structure sheet (Level 3 pada contoh di atas). Beberapa pemain sudah bust.</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
 <div style="color:hsl(var(--primary));font-weight:700">~15:30</div>
-<div style="color:hsl(var(--foreground))">Late reg tutup. Ukuran field final diumumkan. Prize pool dikonfirmasi. Ante mulai berlaku.</div>
+<div style="color:hsl(var(--foreground))">Late reg tutup. Ukuran field final diumumkan. Prize pool dikonfirmasi.</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
 <div style="color:hsl(var(--primary));font-weight:700">~17:00</div>
@@ -328,7 +331,19 @@ A. Di turnamen bounty (knockout) biasa, setiap pemain membawa bounty tetap — e
 
 **Q. Apa aturan tentang rebuy dan add-on?**
 
-A. Di turnamen rebuy Anda bisa membayar biaya masuk lagi setelah bust (atau kadang saat stack Anda jatuh di bawah ambang batas), tapi hanya selama periode rebuy yang ditetapkan — biasanya beberapa blind level pertama. Add-on adalah pembelian chip opsional satu kali, biasanya ditawarkan ke semua orang di akhir periode rebuy tanpa memandang ukuran stack. Begitu jendela itu ditutup, event berjalan sebagai freezeout. Aturan persisnya berbeda-beda tergantung venue, jadi cek structure sheet.
+A. Di turnamen rebuy Anda bisa membeli chip lagi selama periode yang ditetapkan — di banyak event, kapan saja stack Anda berada di atau di bawah jumlah awal, tanpa harus bust dulu — biasanya beberapa blind level pertama. Add-on adalah pembelian chip opsional satu kali, biasanya ditawarkan ke semua orang di akhir periode rebuy tanpa memandang ukuran stack. Begitu jendela itu ditutup, event berjalan sebagai freezeout. Aturan persisnya berbeda-beda tergantung venue, jadi cek structure sheet.
+
+**Q. Bagaimana turnamen poker menghasilkan uang?**
+
+A. Venue mengambil fee di atas setiap buy-in — bagian "+$9" dari entri "$100+$9". Fee itu (biasanya sekitar 8–10% di event live besar, lebih tinggi di turnamen harian kecil) adalah pendapatan rumah; bagian "$100" masuk seluruhnya ke prize pool yang diperebutkan pemain. Jadi ruang turnamen mendapat untung dari volume entri dan fee-nya, bukan dari uang hadiah itu sendiri — hadiah hanya berputar di antara para pemain.
+
+**Q. Apakah turnamen poker menggunakan uang asli?**
+
+A. Di turnamen live, ya — baik saat masuk maupun saat cash out: buy-in dibayar dengan uang sungguhan dan hadiahnya juga uang sungguhan. Yang bukan uang adalah chip di atas meja — nilainya hanya menentukan siapa bertahan, dan baru berubah jadi uang kalau Anda finis di posisi ITM. Di luar itu ada juga turnamen online berhadiah tiket atau yang memakai play money; cek lobby event untuk tahu jenisnya.
+
+**Q. Apa itu WSOP (World Series of Poker)?**
+
+A. WSOP adalah seri turnamen poker tahunan terbesar di dunia, digelar di Las Vegas sejak 1970. Event-event utamanya memperebutkan gelang juara (bracelet), dan Main Event-nya, dengan buy-in $10.000, dianggap kejuaraan dunia poker de facto. Banyak pemain lolos ke sana lewat satellite — persis seperti contoh satellite $500 di atas — itulah kenapa nama WSOP muncul di hampir semua pembahasan turnamen.
 
 **Q. Apakah legal menyelenggarakan turnamen poker di rumah?**
 
@@ -346,9 +361,13 @@ A. Bisa, selama jendela late registration — biasanya beberapa blind level pert
 
 A. Tidak. Berbeda dari cash game, chip turnamen tidak punya nilai uang tunai dan tidak bisa dicairkan di tengah event. Jika Anda pergi, chip Anda tetap dalam permainan dan terus membayar blind dan ante sampai habis. Anda hanya menerima uang jika finis di posisi yang dibayar (ITM).
 
+**Q. Turnamen poker lebih banyak keberuntungan atau skill?**
+
+A. Dua-duanya — tapi skill yang menentukan siapa menang dalam jangka panjang. Satu turnamen membawa variance besar: Anda bisa bermain tanpa cela dan tetap bust saat pocket aces Anda pecah, itulah kenapa pro elite pun bisa lama tanpa cash besar. Namun sepanjang ratusan event, pemain yang lebih baik mencapai final table jauh lebih sering daripada peluang acak. Poker adalah permainan skill yang diselimuti keberuntungan jangka pendek — dan turnamen memuat porsi keberuntungan itu lebih banyak daripada cash game.
+
 ---
 
-## Panduan Terkait
+## Postingan Terkait
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/id/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "WPT Australia 2026: Sep 10–30, The Star Sydney. Two flagships: AUD $1,500 WPT Prime (Sep 17–22) and AUD $5,000 WPT Championship (Sep 24–30). On-site satellites from AUD $270, with Championship qualifiers at $290 and $550. The Championship winner's first-place prize includes a $15,000 WPT World Championship seat. Must be 18+, Star Club member, and smart-casual dress enforced.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-08-16",
+  updated: "2026-08-28",
   readTime: "14 min",
   emoji: "🦘",
   layout: "tournament-guide",
@@ -215,7 +215,7 @@ This section is what ==r:every competitor's guide skips== — and it's what trip
 
 ### NSW Law: Daily Cash Gaming Limit of AUD $5,000
 
-Under **NSW casino cash-handling reforms**, there is a **AUD $5,000 daily cash limit** for gaming play (this cap holds through Sep 2026 and is set to drop to AUD $1,000/day from Aug 2027). Play is **carded** — you play through your Star Club card — and all tournament entries (including satellites) must be purchased using gaming chips, not credit cards or cash at the table.
+Under **NSW casino cash-handling reforms**, there is a **AUD $5,000 daily cash limit** for gaming play (the cap is scheduled to drop to AUD $1,000/day from Aug 2027). Play is **carded** — you play through your Star Club card — and all tournament entries (including satellites) must be purchased using gaming chips, not credit cards or cash at the table.
 
 ### Wire Transfer to The Star Sydney — Before You Arrive
 

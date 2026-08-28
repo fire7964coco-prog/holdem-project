@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "WPT Australia 2026: 10–30 Sep, The Star Sydney. Dua flagship: AUD $1.500 WPT Prime (17–22 Sep) dan AUD $5.000 WPT Championship (24–30 Sep). Satelit on-site dari AUD $270, dengan qualifier Championship $290 dan $550. Hadiah juara pertama Championship sudah termasuk kursi $15.000 ke WPT World Championship. Wajib 18+, anggota Star Club, dan dress code smart-casual ditegakkan.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-08-16",
+  updated: "2026-08-28",
+  masterUpdated: "2026-08-28",
   readTime: "14 mnt",
   emoji: "🦘",
   layout: "tournament-guide",
@@ -37,7 +38,7 @@ Festival live pertama Anda? Mulai dengan [panduan turnamen](/id/blog/holdem-tour
 ---
 
 > **Jawaban Cepat**
-> WPT Australia 2026 berlangsung ==**10–30 Sep**== di The Star Sydney, Darling Harbour. Dua event championship: ==**AUD $1.500 WPT Prime**== (17–22 Sep) dan ==**AUD $5.000 WPT Australia Championship**== (24–30 Sep). Hadiah juara pertama Championship sudah termasuk ==g:kursi $15.000 ke WPT World Championship== — perhatikan: ==r:kursi itu dipotong dari prize pool, bukan bonus tambahan==. ==r:WPT Global TIDAK beroperasi di Australia — satelit hanya on-site.==
+> WPT Australia 2026 berlangsung ==**10–30 Sep**== di The Star Sydney, Darling Harbour. Dua event championship: ==**AUD $1.500 WPT Prime**== (17–22 Sep) dan ==**AUD $5.000 WPT Australia Championship**== (24–30 Sep). Hadiah juara pertama Championship sudah termasuk ==g:kursi $15.000 ke WPT World Championship== — perhatikan: ==r:kursi itu dipotong dari prize pool, bukan bonus tambahan==. ==r:WPT Global TIDAK beroperasi di Australia — satelit hanya on-site==.
 
 ---
 
@@ -61,7 +62,7 @@ Festival tahun ini kembali ke ==**The Star Sydney**== dan memperkenalkan **forma
 
 </div>
 
-**Kenapa 2026 lebih besar**: Format dual-championship berarti dua kesempatan terpisah untuk merebut WPT Champions Cup. Pemain internasional dengan bankroll setara $1.500 kini punya jalur realistis menuju trofi tanpa harus mengeluarkan $5.000.
+**Kenapa 2026 lebih besar**: Format dual-championship menghadirkan dua gelar championship yang di-livestream dalam satu festival — **WPT Prime Perpetual Trophy** di AUD $1.500 dan **Mike Sexton Champions Cup** di AUD $5.000. Pemain internasional dengan bankroll setara $1.500 kini punya jalur realistis menuju gelar WPT tanpa harus mengeluarkan $5.000.
 
 ---
 
@@ -78,12 +79,12 @@ Ini pertanyaan yang ditanyakan setiap pemula. Berikut penjelasan jujurnya:
 | Ukuran Field (est.) | 500–800 entri | 400–600 entri |
 | Struktur | Deep-stack, multi-flight | Deep-stack, 3 flight |
 | Meja Final | ==g:Livestream global== | ==g:Livestream global== |
-| WPT Champions Cup | ✅ Ya | ✅ Ya + Kursi WC |
+| Gelar yang diperebutkan | WPT Prime Perpetual Trophy | Mike Sexton Champions Cup + Kursi WC |
 | Cocok Untuk | Pemula, grinder mid-bankroll | Reguler turnamen berpengalaman |
 
 </div>
 
-**Rekomendasi**: Kalau ini event WPT pertama Anda, ==g:mulai dari Prime seharga AUD $1.500==. Anda akan merasakan atmosfer WPT penuh — meja final livestream, struktur deep, WPT Champions Cup — dengan sekitar sepertiga buy-in Championship. Banyak pemain mengikuti keduanya.
+**Rekomendasi**: Kalau ini event WPT pertama Anda, ==g:mulai dari Prime seharga AUD $1.500==. Anda akan merasakan atmosfer WPT penuh — meja final livestream, struktur deep, kesempatan merebut Prime Perpetual Trophy — dengan sekitar sepertiga buy-in Championship. Banyak pemain mengikuti keduanya.
 
 ---
 
@@ -117,7 +118,7 @@ Kalau Anda di luar Australia dan ingin pemanasan dengan satelit online sebelum t
 
 ---
 
-## Jadwal Lengkap WPT Australia 2026 — Semua Event Kunci dari AUD $460 sampai $10.000
+## Sorotan Jadwal WPT Australia 2026 — 12 Event Kunci dari AUD $460 sampai $10.000
 
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.25);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -138,7 +139,7 @@ Kalau Anda di luar Australia dan ingin pemanasan dengan satelit online sebelum t
 
 </div>
 
-> **Total 36 event.** Festival ini tidak mengiklankan prize pool bergaransi — jadwal resminya justru menggaransi **kursi** di satelit — jadi perlakukan angka total festival sebagai perkiraan. Berdasarkan jumlah peserta historis, AUD $10 juta+ masih wajar: Championship 2025 saja menghasilkan AUD $3.000.000.
+> **12 event di atas adalah sorotan festival — jadwal lengkapnya memuat total 36 event** (lihat [starpoker.com.au](https://www.starpoker.com.au/wpt-australia)). Festival ini tidak mengiklankan prize pool bergaransi — jadwal resminya justru menggaransi **kursi** di satelit — jadi perlakukan angka total festival sebagai perkiraan. Berdasarkan jumlah peserta historis, AUD $10 juta+ masih wajar: Championship 2025 saja menghasilkan AUD $3.000.000.
 
 ---
 
@@ -156,7 +157,7 @@ Kalau Anda di luar Australia dan ingin pemanasan dengan satelit online sebelum t
 
 Dengan buy-in 2026 diturunkan menjadi AUD $5.000 (dari $5.500 pada 2025) dan format dual-championship baru yang membawa lebih banyak pemain ke festival, field diperkirakan menjadi yang terbesar dalam sejarah event.
 
-**Kursi sang juara**: Hadiah peringkat pertama di WPT Australia Championship sudah termasuk ==g:kursi $15.000 ke WPT World Championship== Desember 2026. Baca teliti kalimat resminya — kursi itu ==r:bagian dari hadiah juara pertama dan dipotong dari prize pool==, bukan bonus yang dibayar terpisah di luar uang tunai. Juara Prime Championship menerima kursi Prime $1.500 dengan ketentuan yang sama.
+**Kursi sang juara**: Hadiah peringkat pertama di WPT Australia Championship sudah termasuk ==g:kursi $15.000 ke WPT World Championship== Desember 2026. Baca teliti kalimat resminya — kursi itu ==r:bagian dari hadiah juara pertama dan dipotong dari prize pool==, bukan bonus yang dibayar terpisah di luar uang tunai. Juara Prime Championship menerima kursi WPT World Championship Prime senilai $1.500 dengan ketentuan yang sama.
 
 ---
 
@@ -188,7 +189,7 @@ Anda tidak bisa bermain satu tangan pun tanpa menjadi **anggota Star Club**. Kea
 
 The Star Sydney menegakkan **dress code smart-casual**. Ditolak di pintu masuk berarti melewatkan jendela registrasi turnamen Anda.
 
-==r:Tidak diperbolehkan: singlet, sandal jepit, jins robek, pakaian pantai, atau pakaian olahraga apa pun.== Jins rapi, kemeja berkerah, dan sepatu sneaker diperbolehkan.
+==r:Tidak diperbolehkan: singlet, sandal jepit, jins robek, pakaian pantai, atau pakaian olahraga apa pun==. Jins rapi, kemeja berkerah, dan sepatu sneaker diperbolehkan.
 
 ### 3. Cara Menuju ke Sana
 
@@ -215,7 +216,7 @@ Bagian ini adalah yang ==r:dilewatkan oleh panduan setiap kompetitor== — dan i
 
 ### Hukum NSW: Batas Bermain Tunai Harian AUD $5.000
 
-Berdasarkan **NSW Casino Control Act**, ada **batas tunai harian AUD $5.000** untuk permainan gaming. Semua entri turnamen (termasuk satelit) harus dibeli menggunakan chip gaming — bukan kartu kredit atau tunai di meja.
+Berdasarkan **reformasi penanganan tunai kasino NSW**, ada **batas tunai harian AUD $5.000** untuk permainan gaming (batas ini dijadwalkan turun ke AUD $1.000/hari mulai Agu 2027). Permainan bersifat **carded** — Anda bermain lewat kartu Star Club Anda — dan semua entri turnamen (termasuk satelit) harus dibeli menggunakan chip gaming, bukan kartu kredit atau tunai di meja.
 
 ### Transfer Bank ke The Star Sydney — Sebelum Anda Tiba
 
@@ -282,7 +283,7 @@ Berikut biaya perjalanan WPT Australia lengkap yang sebenarnya, berdasarkan data
 
 ---
 
-:::readnext[Baca selanjutnya]
+:::readnext[Lanjut membaca]
 /id/blog/holdem-tournament | Panduan Turnamen Texas Hold'em | /images/holdem-tournament-hero.webp
 /id/blog/ept-barcelona-2026-guide | Panduan EPT Barcelona 2026 | /images/ept-barcelona-2026-guide-hero.webp
 :::
@@ -315,7 +316,7 @@ A. Bisa. Ruang poker The Star menjalankan cash game setiap hari ==g:pukul 10 pag
 
 ---
 
-## Panduan Terkait
+## Postingan Terkait
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/id/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
@@ -334,5 +335,5 @@ A. Bisa. Ruang poker The Star menjalankan cash game setiap hari ==g:pukul 10 pag
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Format mana yang cocok dengan gaya Anda?</div>
   </a>
 </div>
-`,
+`.trim(),
 };

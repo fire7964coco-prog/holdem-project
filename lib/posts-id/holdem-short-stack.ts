@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "Short stack (kira-kira di bawah 20–25 big blind) tak bisa main poker postflop normal, dan dari sekitar 15 big blind ke bawah ia beralih ke push/fold: masuk all-in first-in untuk menjaga fold equity Anda, dan jangan pernah open-limp atau min-raise-lalu-fold. Shove lebih lebar dari posisi akhir, jaga calling range lebih ketat daripada shoving range Anda, dan jangan blind down sampai habis 'menunggu tangan bagus' — fold equity adalah senjata Anda, dan di bawah sekitar 8 big blind ia memudar dengan cepat.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-08-13",
+  updated: "2026-08-28",
+  masterUpdated: "2026-08-13",
   keepImagesInBody: true,
   readTime: "13 mnt",
   emoji: "📉",
@@ -77,7 +78,7 @@ Jebakannya adalah fold equity ==meluruh saat stack Anda menyusut==. Di 12–15 b
 | 🟢 Hijau | 20+ | ~30bb+ | Persenjataan penuh, main poker normal |
 | 🟡 Kuning | 10–20 | ~15–30bb | Ketatkan, mulai cari peluang shove |
 | 🟠 Oranye | 6–10 | ~9–15bb | Push/fold; agresi first-in, curi blind |
-| 🔴 Merah | 1–5 | ~1,5–8bb | Shove-atau-fold tangan yang masuk akal apa pun |
+| ⚠ Merah | 1–5 | ~1,5–8bb | Shove-atau-fold tangan yang masuk akal apa pun |
 | ⚫ Mati | di bawah 1 | di bawah ~1,5bb | Shove dua kartu apa pun, spot playable berikutnya |
 
 </div>
@@ -108,7 +109,7 @@ Saat Anda ==shove first-in==, Anda menang dua cara: semua orang fold (fold equit
 - **Shoving first-in:** lebar, terutama di posisi akhir — Anda sebagian bermain demi fold.
 - **Call sebuah shove:** ketat — Anda butuh tangan yang mengalahkan *range* si penyhove, bukan sekadar tangan acak.
 
-"Ketat" berarti lebih ketat daripada shoving range Anda, bukan "hanya kalau saya yakin sedang unggul". Call itu soal harga: di big blind melawan shove 10bb Anda mempertaruhkan 9bb untuk memenangkan pot 20,5bb, jadi ambangnya ada di ==43,9%== ekuitas melawan range itu. Justru karena itu pair kecil dan ace lemah adalah *inti* calling range big blind, bukan leak: bahkan melawan AKo, yang ada di puncak shoving range siapa pun, 22 punya ==52,65%==. Leak-nya bukan jenis tangannya, melainkan menganggap "mungkin ini coin flip" tanpa memeriksa angkanya (lihat [kapan harus fold](/id/blog/holdem-when-to-fold)).
+"Ketat" berarti lebih ketat daripada shoving range Anda, bukan "hanya kalau saya yakin sedang unggul". Call itu soal harga: di big blind melawan shove 10bb Anda mempertaruhkan 9bb untuk memenangkan pot 20,5bb, jadi ambangnya ada di ==43,9%== equity melawan range itu. Justru karena itu pair kecil dan ace lemah adalah *inti* calling range big blind, bukan leak: bahkan melawan AKo, yang ada di puncak shoving range siapa pun, 22 punya ==52,65%==. Leak-nya bukan jenis tangannya, melainkan menganggap "mungkin ini coin flip" tanpa memeriksa angkanya (lihat [kapan harus fold](/id/blog/holdem-when-to-fold)).
 
 Satu kalimat untuk diingat: ==jadilah yang shove, bukan yang call.== Agresi first-in adalah tempat profit short stack hidup; hero-call all-in adalah tempat short stack mati.
 
@@ -120,8 +121,8 @@ Satu kalimat untuk diingat: ==jadilah yang shove, bukan yang call.== Agresi firs
 
 Pakai untuk membangun intuisi, bukan sebagai hukum alam:
 
-- **Ia mengasumsikan kondisi spesifik.** Chart Nash standar mengabaikan ante dan ICM; tambahkan ante dan shove Anda jadi lebih lebar, tambahkan [tekanan bubble/ICM](/id/blog/holdem-bubble) dan call Anda jadi jauh lebih ketat.
-- **Ia adalah model heads-up / hanya-blind.** Spot nyata punya banyak pemain tersisa untuk bertindak, read, dan lonjakan bayaran yang tak bisa dilihat sebuah chart.
+- **Chart itu mengasumsikan kondisi spesifik.** Chart Nash standar mengabaikan ante dan ICM; tambahkan ante dan shove Anda jadi lebih lebar, tambahkan [tekanan bubble/ICM](/id/blog/holdem-bubble) dan call Anda jadi jauh lebih ketat.
+- **Ini model heads-up / hanya-blind.** Spot nyata punya banyak pemain tersisa untuk bertindak, read, dan lonjakan bayaran yang tak bisa dilihat sebuah chart.
 - **Kesimpulan yang andal adalah bentuknya**, bukan tangan persisnya: shove lebih lebar di posisi akhir, call lebih ketat daripada Anda shove, dan jam lebih banyak saat stack Anda turun. Untuk angka sebenarnya di spot ICM atau bubble nyata, masukkan stack dan payout Anda ke [kalkulator ICM](/calculator) daripada memercayai range yang tercetak.
 
 *(Satu nuansa untuk yang penasaran: di 10–15 big blind, pemain kuat kadang mencampurkan min-raise kecil dengan tangan premium untuk memancing shove dari tangan yang terdominasi. Ia bisa menghasilkan lebih dari sekadar jamming murni — tapi itu tambahan tingkat lanjut. Push/fold adalah kerangka yang andal; kuasai dulu.)*
@@ -169,6 +170,14 @@ A. Secara luas, di bawah sekitar 20–25 big blind adalah "pendek," dan permaina
 
 A. Push/fold adalah strategi short stack di mana, saat Anda pertama masuk pot, satu-satunya pilihan Anda adalah masuk all-in atau fold — tanpa limping, tanpa raise kecil. Shoving menjaga fold equity Anda (lawan fold dan Anda memenangkan blind) dan menghindari diakali setelah flop dengan stack yang terlalu kecil untuk bermanuver.
 
+**Q. Apa arti "all-in or fold" di poker?**
+
+A. "All-in or fold" adalah ide yang sama dengan push/fold: saat Anda short stack dan pertama masuk pot, pilihan Anda hanya dua — masuk all-in atau fold, tanpa limping atau raise kecil. Itu juga nama format online cepat (All-in or Fold milik GGPoker) di mana setiap keputusan preflop benar-benar hanya shove atau fold. Bagaimanapun bentuknya, logika short stack tetap berlaku: jaga fold equity dengan shove, dan jangan pernah membuang chip di raise yang tidak bisa Anda pertahankan.
+
+**Q. Bagaimana merespons shove all-in?**
+
+A. Fold jauh lebih sering daripada Anda shove — range call Anda jauh lebih ketat daripada range shove Anda. Begitu Anda call sebuah all-in, fold equity Anda hilang, jadi tangan Anda harus benar-benar mengalahkan *range* si penyerang, bukan sekadar terlihat bisa dimainkan. Mari lihat angkanya: di big blind melawan shove 10bb Anda mempertaruhkan 9bb untuk memenangkan pot 20,5bb, jadi Anda butuh ==43,9%== equity — ambang yang sering dilewati pair kecil dan ace lemah (bahkan melawan AKo, 22 punya ==52,65%== equity). Call ketika equity Anda melewati ambang itu, bukan hanya saat Anda yakin sedang unggul.
+
 **Q. Haruskah Anda pernah limp dengan short stack?**
 
 A. Hampir tak pernah saat Anda pertama masuk. Open-limping menyerahkan fold equity dan membangun pot yang tak bisa Anda navigasi postflop. Short stack, permainan standarnya adalah raise-atau-fold, dan dengan 15 big blind atau kurang raise itu biasanya all-in. (Complete dari small blind di belakang limper lain dengan stack mungil adalah pengecualian langka.)
@@ -181,7 +190,7 @@ A. Sebagai default pemula, tidak — min-raise-lalu-fold adalah leak klasik. Seb
 
 A. M-ratio adalah stack Anda dibagi biaya satu orbit (small blind + big blind + ante) — berapa banyak putaran yang bisa Anda bertahan dengan fold. Zona Harrington adalah Hijau (20+), Kuning (10–20), Oranye (6–10), Merah (1–5), dan Mati (di bawah 1). Makin rendah M Anda, makin banyak spot shove-atau-fold yang harus Anda ambil. Tanpa ante, M kira-kira big blind Anda ÷ 1,5.
 
-**Q. Apa itu fold equity dan mengapa ia menyusut?**
+**Q. Apa itu fold equity dan kenapa bisa menyusut?**
 
 A. Fold equity adalah keuntungan yang Anda dapat saat lawan fold ke taruhan atau shove Anda. Saat Anda pendek dan masuk all-in, fold equity adalah senjata utama Anda — blind dan ante gratis yang Anda ambil. Ia menyusut saat stack Anda turun karena lawan mendapat harga lebih baik untuk call; di bawah sekitar 5 big blind mereka call begitu lebar sehingga all-in Anda nyaris tak membuat siapa pun fold.
 

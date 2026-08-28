@@ -8,9 +8,10 @@ export const POST: Post = {
   tldr: "Di cash game, chip adalah uang nyata dan blind tetap. Di turnamen, chip adalah ekuitas bertahan, blind naik, dan hadiah bergantung pada posisi finis Anda.",
   category: "tournament",
   date: "2026-06-11",
-  updated: "2026-08-11",
+  updated: "2026-08-28",
+  masterUpdated: "2026-08-26",
   hideSummaryImageSlot: true,
-  readTime: "16 mnt",
+  readTime: "18 mnt",
   emoji: "🏆",
   image: "/images/holdem-tournament-vs-cash-hero.webp",
   imageAlt: "Infografik berdampingan membandingkan cash game dan turnamen poker — nilai chip, struktur blind, dan kapan Anda bisa pergi",
@@ -33,7 +34,7 @@ Hampir semua pemain Hold'em baru akhirnya bertanya hal yang sama:
 
 Sekilas keduanya terlihat seperti permainan yang sama. Anda tetap mendapat dua kartu tertutup, lima kartu bersama, dan empat ronde taruhan dari preflop sampai river. Tapi secara strategi, keduanya hampir seperti dua dunia berbeda. Di cash game, chip Anda adalah uang. Di turnamen, chip Anda adalah nyawa turnamen Anda.
 
-Panduan ini membedah ==cash game vs turnamen poker== dengan cara yang benar-benar dibutuhkan pemula: apa itu cash game dan cara kerjanya, nilai chip, struktur blind, bagaimana strategi berubah, format mana yang lebih sulit, mana yang lebih menguntungkan, bankroll, ICM, dan mana yang sebaiknya Anda mulai duluan. Jika turnamen sendiri masih menjadi misteri, baca dulu [cara kerja turnamen poker — buy-in, level blind, dan alur Day-1](/id/blog/holdem-tournament) terlebih dahulu; artikel ini membandingkan kedua format, bukan mengulang panduan struktur itu.
+Panduan ini membedah ==cash game vs turnamen poker== dengan cara yang benar-benar dibutuhkan pemula: apa itu cash game dan cara kerjanya, nilai chip, struktur blind, bagaimana strategi berubah, format mana yang lebih sulit, mana yang lebih menguntungkan, bankroll, ICM, kapan meninggalkan meja, dan mana yang sebaiknya Anda mulai duluan. Jika turnamen sendiri masih menjadi misteri, baca dulu [cara kerja turnamen poker — buy-in, level blind, dan alur Day-1](/id/blog/holdem-tournament) terlebih dahulu; artikel ini membandingkan kedua format, bukan mengulang panduan struktur itu.
 
 ### Jawaban 15 detik
 
@@ -266,7 +267,9 @@ Jadi kapan Anda *sebaiknya* meninggalkan cash game? Aturannya bilang "kapan saja
 - **Pergi ketika permainan tidak lagi bagus.** Pemain terlemah berhenti, komposisi meja mengetat, atau kursi yang membuat meja menguntungkan sudah hilang.
 - **Pergi ketika *Anda* tidak lagi bagus.** Tilt, lelah, dan gangguan menghancurkan win rate lebih cepat daripada kartu buruk. Jika Anda memergoki diri call karena frustrasi, rapikan chip.
 - **Jangan pergi hanya karena mencapai angka tertentu.** Naik atau turun satu buy-in tidak mengatakan apa pun tentang apakah jam berikutnya akan menguntungkan. Berhenti saat menang di permainan bagus dan menggerus kekalahan di permainan buruk sama-sama kebocoran.
-- **Pergi tepat setelah pot besar itu boleh.** Tidak ada aturan yang memaksa Anda "memberi action" — meski soal etika, satu putaran pendingin singkat lebih mulus daripada hit-and-run instan.
+- **Pergi tepat setelah pot besar itu boleh.** Tidak ada aturan yang memaksa Anda "memberi action" — meski soal etika, memainkan beberapa tangan lagi sebelum mengemasi chip lebih mulus daripada hit-and-run instan.
+
+Dua aturan rumah yang berlaku hampir di mana-mana: Anda tidak boleh mengantongi chip dari meja selagi terus bermain ("ratholing"), dan jika Anda pergi lalu kembali ke permainan yang sama tak lama kemudian, Anda biasanya harus buy-in lagi minimal sebesar jumlah yang Anda bawa pergi.
 
 | Situasi pemain | Lebih cocok |
 |------|------|
@@ -379,9 +382,13 @@ A. Tidak. ICM berlaku di turnamen karena chip turnamen tidak setara uang tunai d
 
 A. Panduan umum adalah 20-40 buy-in untuk cash game dan 100+ buy-in untuk turnamen field besar, dengan format lebih kecil seperti sit-and-go di antaranya sekitar 40-60. Turnamen butuh bantalan lebih besar karena periode panjang tanpa cashing itu normal bahkan untuk pemain yang menang.
 
+**Q. Berapa big blind yang sebaiknya Anda bawa saat mulai di cash game vs turnamen?**
+
+A. Di cash game, masuklah dengan buy-in maksimum meja — di $1/$2 itu biasanya $200–$300, alias 100–150 big blind — karena stack dalam memberi hadiah pada skill postflop dan membuat Anda bisa memenangkan satu stack penuh saat unggul. Turnamen memilihkan kedalaman untuk Anda: biasanya mulai sekitar 100–300 big blind, tapi blind yang naik menyusutkannya jadi 20, lalu 10, lalu wilayah push/fold. Versi singkat: buy-in dalam untuk cash, dan di turnamen perhatikan jumlah big blind Anda menyusut, lalu sesuaikan permainan Anda.
+
 **Q. Berapa chip yang Anda butuhkan untuk cash game di rumah?**
 
-A. Satu set 300 chip standar dengan nyaman mencukupi sampai sekitar 6 pemain — di 7-8 orang jadinya 300 ÷ 8 = kurang dari 40 chip per orang, jadi set 500 lebih pas. Beri semua orang stack awal yang sama dalam 3-4 denominasi, dengan mayoritas chip di nilai terkecil agar pemain bisa bertaruh dan menukar dengan mudah. Jumlah persisnya tidak sepenting semua orang menyepakati nilai uang nyata setiap warna sebelum tangan pertama.
+A. Satu set 300 chip standar dengan nyaman mencukupi sampai sekitar 6 pemain — di 7-8 orang jadinya 300 ÷ 8 = kurang dari 40 chip per orang kalau semua dibagikan, dan di cash game memang tidak seharusnya begitu: tetapkan buy-in sebagai rentang min/max, pakai 3-4 denominasi dengan mayoritas chip di nilai terkecil, dan simpan sisanya di kotak untuk rebuy. Karena itulah set 500 chip lebih pas melayani 7-8 pemain. Jumlah persisnya tidak sepenting semua orang menyepakati nilai uang nyata setiap warna sebelum tangan pertama.
 
 **Q. Apakah pemain profesional main cash game atau turnamen?**
 
@@ -390,6 +397,10 @@ A. Keduanya — tapi banyak profesional berspesialisasi. Spesialis cash game men
 **Q. Apakah turnamen re-entry pada dasarnya sama seperti cash game?**
 
 A. Tidak. Re-entry memungkinkan Anda membeli masuk kembali ke turnamen setelah bust dalam periode tertentu, tapi chip tetap bukan uang tunai. Blind tetap naik, hadiah tetap bergantung pada posisi finis, dan ICM tetap penting nanti.
+
+**Q. Apakah kemenangan turnamen poker kena pajak?**
+
+A. Di kebanyakan negara, ya — kemenangan poker dihitung sebagai penghasilan kena pajak, dan cash besar di turnamen live sering dilaporkan (kadang langsung dipotong) di kasino; di AS misalnya, skor besar langsung menghasilkan dokumen pajak di tempat. Sebagian yurisdiksi memperlakukan kemenangan rekreasional sebagai bebas pajak. Aturannya sangat bervariasi per negara bahkan per negara bagian, jadi anggap ini informasi umum dan cek hukum pajak setempat — atau tanyakan profesional — sebelum cash besar.
 
 ---
 
