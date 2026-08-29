@@ -717,6 +717,40 @@ function SPRCalc() {
 // ─────────────────────────────────────────────
 // 6. Tournament M Value
 // ─────────────────────────────────────────────
+/* 🔴 밴드는 임의로 정한 게 아니다 — **우리 코퍼스가 이미 선언한 값**이다. 도구와 글이 갈리면
+      §13 사실오류가 된다(독자는 바로 아래 링크로 그 글에 간다). **바꾸려면 그 글부터 바꿔라.**
+        · `lib/posts.ts:1688`(holdem-blind-meaning 본문) — 「**100BB 이상이면 딥스택, 20BB 이하면 숏스택**」
+        · `lib/posts/holdem-bubble-strategy.ts:139-140` — 숏스택 20BB 이하 · 극단적 숏스택 10BB 이하
+        · `lib/posts/holdem-bubble-strategy.ts:216·229` — **15~20BB는 일반 레이즈가 기본**,
+          「이 표(선제 올인 레인지)를 15BB 위로 끌어 쓰면 안 됩니다 … K8o로 19BB를 통째로 태우고
+          버블 보이가 되는 경로가 정확히 이겁니다」
+        · `lib/posts/holdem-tournament-vs-cash-game.ts:230` — 「15~20BB까지 푸시폴드로 치면 **오히려 손해**」
+
+   🔴 **2026-08-29 교열 렌즈가 잡은 것 세 가지 — 되돌리지 마라.**
+      ① 숏스택 desc가 원래 「선제 올인 레인지를 넓힐 때」였다. 11~20 **전 구간**에 걸리는 문장이라
+         위 216·229·230이 명시적으로 금지한 플레이를 도구가 권하는 꼴이었다(D유형 유해 조언).
+         → 15BB를 기준으로 **이분**했다. 한 문장으로 뭉치지 마라.
+      ② `range` 라벨이 「11–20 / 21–40 / 41–100」이었는데 판정식은 `bbDepth <= max`다.
+         **10.7이 숏스택으로 판정되는데 라벨은 «11–20»**이라 산수가 어긋나 보였다(라이브 실측으로 확인).
+         → 라벨을 판정식과 같은 문법(`10–20`, 경계는 아래 밴드 소속)으로 통일했다.
+      ③ 40~100을 「딥스택」이라 불렀는데 **코퍼스는 딥스택을 100BB+로 못박는다**(1688행).
+         링크 대상 글과 정면 충돌이라 **「여유 스택」으로 개명**하고 딥스택을 100+에 돌려줬다.
+
+   🪶 밴드를 배열 하나로 두고 «현재 밴드»와 «스펙트럼 띠»를 **둘 다 여기서 파생**시킨다.
+      상수를 두 벌 두면 한쪽만 고쳐져 갈린다(08-04 `/tournaments` 사고와 같은 계열). */
+const BB_DEPTH_BANDS = [
+  { max: 10,       name: "푸시/폴드", range: "≤10",    color: "text-red-400",    bg: "bg-red-500/10 border-red-500/40",
+    desc: "올인 아니면 폴드입니다. 레이즈하고 물러설 칩이 없어서, 폴드 에퀴티가 마지막으로 남아 있는 구간이에요." },
+  { max: 20,       name: "숏스택",    range: "10–20",  color: "text-orange-400", bg: "bg-orange-500/10 border-orange-500/40",
+    desc: "15BB 아래에서는 선제 올인 레인지를 넓힙니다. 15BB 위는 아직 일반 레이즈(2~2.2배)가 기본이고, 올인은 리스틸 자리에만 남겨두세요." },
+  { max: 40,       name: "미들스택",  range: "20–40",  color: "text-yellow-400", bg: "bg-yellow-500/10 border-yellow-500/40",
+    desc: "3벳 팟에 들어가면 사실상 커밋됩니다. 프리플랍 선택이 팟 크기를 거의 결정해요." },
+  { max: 100,      name: "여유 스택", range: "40–100", color: "text-green-400",  bg: "bg-green-500/10 border-green-500/40",
+    desc: "포스트플랍 세 스트리트가 다 살아 있습니다. 포지션과 임플라이드 오즈의 값이 커집니다." },
+  { max: Infinity, name: "딥스택",    range: "100+",   color: "text-primary",    bg: "bg-primary/10 border-primary/40",
+    desc: "캐시게임 표준(100BB 전후) 이상입니다. 스택오프 기준이 올라가고 리버 한 번의 결정이 가장 비싸집니다." },
+] as const;
+
 function MValueCalc() {
   const [stack, setStack] = useState(15000);
   const [bb, setBb] = useState(400);
@@ -726,6 +760,13 @@ function MValueCalc() {
 
   const orbit = bb + sb + ante * players;
   const M = orbit > 0 ? Math.round(stack / orbit * 10) / 10 : 0;
+
+  /* 스택 깊이(BB)는 M과 **다른 축**이다 — M은 «블라인드 한 바퀴를 몇 번 버티나»(인원·앤티에 좌우)이고,
+     BB 깊이는 «한 번의 올인에 얼마가 걸리나»다. 푸시/폴드 판단은 BB 깊이가 먼저 온다.
+     실제로 두 축은 갈린다 — 이 컴포넌트 기본값(15,000칩 · BB 400 · SB 200 · 앤티 50 · 9인)에서
+     오빗 1,050 → **M 14.3(옐로우 존)**인데 스택 깊이는 **37.5BB(미들스택)**다. 검산 완료(§13). */
+  const bbDepth = bb > 0 ? Math.round((stack / bb) * 10) / 10 : 0;
+  const depth = bb > 0 ? BB_DEPTH_BANDS.find(b => bbDepth <= b.max)! : null;
 
   const zone = M <= 0 ? null
     : M < 1  ? { name:"💀 데드 존", color:"text-red-500", bg:"bg-red-900/30 border-red-500/40",
@@ -767,7 +808,21 @@ function MValueCalc() {
         </div>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-4">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {/* 🔴 이 카드가 이 탭의 «없던 한 칸»이다 — 입력(스택·BB)은 처음부터 다 받고 있었는데
+            스택을 BB로 환산한 값만 안 내놓고 있었다(2026-08-29 실측: 동종 도구는 같은 입력에서
+            BB 깊이와 M을 **함께** 내놓는다). M을 읽으려면 BB 깊이가 먼저 와야 순서가 맞다. */}
+        <div className={`rounded-2xl border p-5 ${depth?.bg || "bg-card border-border"}`}>
+          <p className="text-xs text-muted-foreground mb-1">스택 깊이</p>
+          <p className={`text-4xl sm:text-5xl font-black tabular-nums ${depth?.color || "text-foreground"}`}>
+            {depth ? bbDepth : "—"}<span className="text-lg sm:text-xl ml-1">BB</span>
+          </p>
+          {/* 🔴 BB=0이면 「15,000 ÷ 0 = 0」이라는 **거짓 산식**이 찍힌다(실측 확인).
+              나눗셈이 성립할 때만 식을 보여준다 — 도구가 틀린 산수를 노출하면 §13 위반이다. */}
+          <p className="text-xs font-mono text-muted-foreground mt-1">
+            {depth ? `${stack.toLocaleString()} ÷ ${bb.toLocaleString()} = ${bbDepth}` : "빅 블라인드를 입력하세요"}
+          </p>
+        </div>
         <div className="rounded-2xl bg-card border border-border p-5">
           <p className="text-xs text-muted-foreground mb-1">오빗 비용 (1바퀴 블라인드)</p>
           <p className="text-3xl font-black text-foreground">{orbit.toLocaleString()}<span className="text-base text-muted-foreground ml-1">원</span></p>
@@ -782,6 +837,26 @@ function MValueCalc() {
             {stack.toLocaleString()} ÷ {orbit.toLocaleString()} = {M}
           </p>
         </div>
+      </div>
+
+      {/* 스택 깊이 스펙트럼 — 밴드 정의는 BB_DEPTH_BANDS 하나에서만 온다(중복 상수 금지) */}
+      <div className="rounded-2xl bg-card border border-border p-4 sm:p-5">
+        <div className="flex items-center justify-between mb-2.5">
+          <p className="text-xs font-bold text-muted-foreground uppercase tracking-wide">스택 깊이 스펙트럼</p>
+          {depth && <p className={`text-sm font-black ${depth.color}`}>{depth.name}</p>}
+        </div>
+        <div className="grid grid-cols-5 gap-1.5">
+          {BB_DEPTH_BANDS.map(b => {
+            const on = depth?.name === b.name;
+            return (
+              <div key={b.name} className={`rounded-lg border px-1 py-2 text-center transition-all ${on ? b.bg : "bg-background border-border"}`}>
+                <p className={`text-[11px] sm:text-xs font-black leading-tight ${on ? b.color : "text-muted-foreground"}`}>{b.name}</p>
+                <p className="text-[10px] font-mono text-muted-foreground mt-0.5">{b.range}</p>
+              </div>
+            );
+          })}
+        </div>
+        {depth && <p className="text-sm text-muted-foreground mt-3">{depth.desc}</p>}
       </div>
 
       {zone && (
@@ -807,6 +882,22 @@ function MValueCalc() {
           </div>
         ))}
       </div>
+
+      {/* 🔴 여기에 BB «해설»을 더 쓰지 마라 — 「홀덤 bb 계산」은 `holdem-blind-meaning`이
+             **r3.1 · CTR 33.9%**로 이미 이기고 있다(settled-decisions §1). 도구는 계산만 하고
+             정의·구간 근거는 글이 갖는다. 해설을 도구로 끌어오면 08-29에 해소한 SPR 카니발
+             (115노출·클릭 0)을 BB 축에 새로 만드는 짓이다.
+          ⚠ 이 링크는 SSR되지 않는다 — 초기 탭이 "outs"라 MValueCalc는 정적 HTML에 없다.
+             크롤러가 보는 링크 주스는 하단 「계산이 이해되면 읽을 가이드」 카드가 담당한다.
+             **둘 중 하나만 넣으면 반쪽이다**(SPR 탭과 같은 구조). */}
+      <p className="text-xs text-muted-foreground">
+        {/* 🔴 앵커는 **실제 제목 계열**로 써라(lib/posts.ts:1554 「홀덤 블라인드 뜻과 BB 계산 — 내 스택은 몇 BB인가」).
+               「SB·BB 차이」는 2026-08-02에 **CTR 0.7%로 실패가 실증돼 교체된 옛 프레이밍**이다
+               (근거 = 그 파일 :1555 주석). 앵커 키워드는 **타깃 페이지에 귀속**되므로 이긴 글을 돕는다. */}
+        BB가 왜 스택의 기준 단위인지, 블라인드를 왜 내는지는{" "}
+        <a href="/blog/holdem-blind-meaning" className="text-primary font-semibold underline underline-offset-2">홀덤 블라인드 뜻과 BB 계산</a>
+        에서 다룹니다.
+      </p>
     </div>
   );
 }
@@ -1251,7 +1342,10 @@ const TABS = [
   { id:"hand",     icon:<Layers className="w-4 h-4" />,      label:"족보 판별",  sub:"카드 선택",    component:<HandEvaluatorCalc /> },
   { id:"starting", icon:<Calculator className="w-4 h-4" />,  label:"스타팅핸드", sub:"오픈 강도 분석", component:<StartingHandCalc /> },
   { id:"spr",      icon:<BarChart3 className="w-4 h-4" />,   label:"SPR",        sub:"스택/팟 비율", component:<SPRCalc /> },
-  { id:"m",        icon:<Trophy className="w-4 h-4" />,      label:"토너먼트 M", sub:"M값 계산기",   component:<MValueCalc /> },
+  /* sub는 «스택 깊이»까지 안내한다 — 탭이 실제로 두 값(BB 깊이·M)을 내놓기 때문이다.
+     🔴 라벨에 「BB」를 넣지 마라. 탭 라벨은 메타가 아니지만 페이지 주제 신호이고,
+        「홀덤 bb 계산」은 `holdem-blind-meaning`이 이미 이기고 있다(settled-decisions §1). */
+  { id:"m",        icon:<Trophy className="w-4 h-4" />,      label:"토너먼트 M", sub:"스택 깊이·M값", component:<MValueCalc /> },
   { id:"icm",      icon:<BarChart3 className="w-4 h-4" />,   label:"ICM",        sub:"상금 가치 계산", component:<ICMCalc /> },
   { id:"pushfold", icon:<Zap className="w-4 h-4" />,         label:"푸시/폴드",  sub:"내시 균형 차트", component:<PushFoldCalc /> },
 ] as const;
@@ -1480,7 +1574,14 @@ export default function CalculatorPage() {
               { icon:"🃏", title:"핸드 족보 판별기", body:"카드를 직접 선택해 족보를 확인합니다. 7장까지 입력하면 최적의 5장 조합을 자동으로 찾아 최강 족보를 보여줍니다." },
               { icon:"📊", title:"스타팅 핸드 강도", body:"홀카드 2장을 선택하면 169가지 핸드 중 어떤 등급인지, 포지션별 추천 액션은 무엇인지 즉시 확인할 수 있습니다." },
               { icon:"📐", title:"SPR (Stack-to-Pot Ratio)", body:"스택과 팟의 비율로 현재 상황에 어느 정도의 핸드 강도가 필요한지 판단합니다. SPR이 낮을수록 강한 핸드로 올인이 유리합니다." },
-              { icon:"🏆", title:"토너먼트 M값", body:"해링턴의 M값으로 토너먼트에서 내 스택 압박도를 측정합니다. 그린/옐로우/오렌지/레드/데드 존에 따라 전략이 완전히 달라집니다." },
+              // ★2026-08-29 — 탭이 스택 깊이도 내놓게 됐으므로 설명을 맞췄다. 도구 설명이 실제
+              // 출력과 갈리면 각 문장이 참이어도 문서끼리 모순이 된다(내부 정합성 규율).
+              // 🔴 여기에 구간 «해설»을 더 붙이지 마라 — 도구 페이지 해설 증식이 카니발을 키운다.
+              // 🔴 첫 문장에 승자 글의 **훅 문구**를 복제하지 마라 — 이 카드는 탭 밖이라 정적 HTML에 실린다.
+              //    원래 「내 스택이 몇 BB인지」였는데 그건 `holdem-blind-meaning`의 title 꼬리
+              //    「— 내 스택은 몇 BB인가」·seoTitle 「내 스택은 몇 BB일까」와 사실상 같은 문구다.
+              //    SPR 처방이 「제목·첫 문장에서만 훅 양보(나열은 유지)」였다 — 기능 서술로만 쓴다.
+              { icon:"🏆", title:"토너먼트 M값", body:"스택 깊이(BB 환산)와 해링턴의 M값을 함께 계산합니다. 푸시/폴드·숏스택·여유 스택 중 어느 구간인지, 그린/옐로우/오렌지/레드/데드 존 중 어디인지를 한 화면에서 확인하세요." },
               { icon:"📈", title:"ICM 계산기", body:"독립 칩 모델(ICM)로 토너먼트 칩을 실제 상금 가치로 환산합니다. 버블·파이널 테이블의 콜/폴드 결정과 딜 협상에 필수입니다." },
               { icon:"⚡", title:"푸시/폴드 내시 차트", body:"1~25bb 숏스택 헤즈업에서 어떤 핸드로 올인(푸시)하고 어떤 핸드로 콜해야 하는지 내시 균형으로 계산한 13×13 차트입니다. 토너먼트 후반 필수 도구입니다." },
             ].map(c => (
@@ -1642,6 +1743,12 @@ export default function CalculatorPage() {
               // ⚠ 「커밋 구간 4·8·15」로 쓰지 마라 — 커밋 구간은 **4 미만뿐**이고 4~8=유연·8~15=딥스택 시작이다
               //   (도착 글 표 holdem-spr.ts:104-109 · 위 SPRCalc 구간 칩과 동일 기준).
               { href:"/blog/holdem-spr", t:"홀덤 SPR 뜻과 계산법", d:"유효 스택 ÷ 팟 · 구간 기준 4·8·15" },
+              // ★2026-08-29 추가 — 「토너먼트 M」 탭이 스택 깊이(BB)를 내놓게 되면서 짝이 되는 글이다.
+              // 🔴 SPR 선례대로 **탭 안 링크 + 이 카드 둘 다** 넣는다 — 탭 안은 SSR 안 되고(초기 탭 outs),
+              //    이 카드는 항상 렌더된다. 하나만 넣으면 UX나 크롤 중 한쪽이 빈다.
+              // 🔴 이 카드는 링크를 **주는** 쪽이다. blind-meaning이 「홀덤 bb 계산」 r3.1·CTR 33.9%로
+              //    이기고 있으므로 도구가 그 자산을 돕는 방향이 맞다(가져오려 들면 SPR 사고 재현).
+              { href:"/blog/holdem-blind-meaning", t:"홀덤 블라인드 뜻과 BB 계산", d:"BB가 왜 스택의 기준 단위인지" },
             ].map(l => (
               <a key={l.href} href={l.href} className="luxe-card p-4 flex items-center justify-between gap-3 group">
                 <div>
