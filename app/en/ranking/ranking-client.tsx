@@ -47,8 +47,10 @@ export default function RankingEn() {
   return (
     <>
       <SEO
-        title="Best Online Poker Sites — How to Choose Safely [2026]"
-        description="Before you pick an online poker site, check the safety and legality criteria and scam warning signs. Plus a factual comparison of major poker sites by license, size, and features."
+        /* 🔴 2026-08-29 — page.tsx의 서버 metadata와 **같아야 한다**(seo.tsx가 런타임에 덮어쓴다).
+           서버가 title:{absolute:"… | HoldemMaster"}이므로 여기엔 **접미를 빼고** 적는다(seo.tsx가 붙인다). */
+        title="Best Online Poker Sites 2026 — Top 5 Tested & Ranked"
+        description="Our Top 5 online poker sites for 2026, tested end-to-end from signup to withdrawal. Licensing, security, traffic, and bonuses compared."
         keywords="best online poker sites, safe online poker, how to choose a poker site, online poker comparison, GGPoker, PokerStars, 888poker, IDNPoker, WPT Global, avoid poker scams"
         path="/en/ranking"
       />

@@ -147,11 +147,17 @@ export default function Rules() {
 
   return (
     <>
+      {/* 🔴 2026-08-29 — 이 두 값은 `page.tsx`의 서버 `metadata`와 **반드시 같아야 한다.**
+          `components/seo.tsx`의 useEffect가 마운트 시 document.title·description·og:*를 여기 값으로
+          **무조건 덮어쓴다.** 서버 메타만 경화하면 원시 HTML에만 반영되고 **렌더 후 DOM은 이 값**이 된다.
+          ⚠ 실제 상태였다: 서버는 §17을 지키는데 라이브 제목이 「…하는법 **총정리** [2026]」였다
+             (§11-7·§17 금지어). audit 게이트는 포스트 메타만 보므로 이 자리를 못 잡는다.
+          **page.tsx의 title/description을 고칠 때 이 두 줄도 같이 고쳐라.** 정본 = settled-decisions §6. */}
       <SEO
-        title="⚡ 포커 규칙 완벽 가이드 — 텍사스 홀덤·오마하·세븐카드 하는법 총정리 [2026]"
-        description="⚡포커 규칙⚡ 텍사스 홀덤, 오마하, 세븐 카드 스터드를 초보자도 이해할 수 있게 정리했습니다. 공통 규칙·베팅·핸드 순위까지 한 페이지에서 완성하세요."
+        title="포커 게임 종류별 규칙 — 텍사스 홀덤·오마하·세븐카드 스터드"
+        description="텍사스 홀덤, 오마하, 세븐카드 스터드 세 가지 포커 게임의 규칙을 한 곳에서 비교합니다. 각 게임의 기본부터 핵심 차이점까지 정리했습니다."
         keywords="포커 규칙, 텍사스 홀덤 규칙, 오마하 포커 규칙, 세븐 카드 스터드, 포커 하는법, 포커 초보, 포커 베팅 방법, 포커 핸드 순위"
-        path="/rules"
+        path="/rules"
       />
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-16">

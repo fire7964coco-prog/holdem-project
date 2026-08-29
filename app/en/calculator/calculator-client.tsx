@@ -1205,8 +1205,12 @@ export default function CalculatorPageEn() {
   return (
     <>
       <SEO
-        title="Poker Odds Calculator — Outs, Pot Odds, Hand Rank, SPR & ICM (Free)"
-        description="Free poker calculator for Texas Hold'em: outs & draw odds, pot odds, hand evaluator, SPR, tournament M value, ICM, and a Nash push/fold chart — 8 tools in one."
+        /* 🔴 2026-08-29 — page.tsx의 서버 metadata와 **같아야 한다**(seo.tsx가 런타임에 덮어쓴다).
+           ⚠ 접미 규칙 주의: 서버는 title:{absolute:"… | HoldemMaster"}이고, seo.tsx는 여기 값에
+              `| ${siteName}`을 **자기가 붙인다**. 그래서 여기엔 **접미를 빼고** 적어야 최종값이 서버와 같다.
+              (구 값은 "… (Free)"라 렌더 후 "… (Free) | HoldemMaster"로 서버와 갈렸다.) */
+        title="Poker Odds Calculator — Outs, Pot Odds, Hand Rank, SPR & ICM"
+        description="Free Texas Hold'em calculator: outs & draw odds, pot odds, hand evaluator, starting hand strength, SPR, tournament M value, ICM, and push/fold Nash charts — 8 tools in one."
         path="/en/calculator"
       />
 
