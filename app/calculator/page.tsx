@@ -63,6 +63,9 @@ const jsonLd = {
         "SPR(스택-팟 비율) 계산기",
         "토너먼트 M값 계산기",
         "ICM(독립 칩 모델) 계산기",
+        // ★2026-08-29 추가 — 여기가 7개인데 title·description·본문은 전부 「8종」이었다(자기모순).
+        //   `TABS`(calculator-client.tsx)는 8개다. 탭을 늘리면 이 배열도 같이 늘려라.
+        "푸시/폴드 내시 균형 차트",
       ],
       publisher: { "@type": "Organization", name: "홀덤마스터", url: SITE },
     },
