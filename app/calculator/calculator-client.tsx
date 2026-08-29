@@ -694,6 +694,22 @@ function SPRCalc() {
           </div>
         ))}
       </div>
+
+      {/* ★2026-08-29 신설 — 형제 탭(ICM·아웃츠·M값)은 전부 해설 글로 내보내는데 SPR만 링크가 0이었다.
+          `/blog/holdem-spr`이 이 페이지보다 3개월 늦게(08-16) 발행돼 링크 갱신에서 빠진 자리다.
+          🔴 여기에 SPR «해설»을 더 쓰면 안 된다 — 그게 「홀덤 spr」 카니발(115노출·클릭 0)을 키운 원인이다.
+          도구는 계산만 하고 정의·구간 근거는 글로 내보낸다.
+          ⚠ **이 링크는 SSR되지 않는다** — 초기 탭이 "outs"라 SPRCalc는 정적 HTML에 없다(산출물 grep 0건).
+            즉 여기는 «SPR 탭을 실제로 쓴 사람»을 위한 UX 경로이고, 크롤러가 보는 링크 주스는
+            아래 「계산이 이해되면 읽을 가이드」 카드가 담당한다(그쪽은 항상 렌더 — 산출물 링크 4건).
+            **둘 중 하나만 넣으면 반쪽이다.** 링크 개수만 세고 «됐다»고 판정하지 마라. */}
+      <p className="text-xs text-muted-foreground">
+        {/* ⚠ 앵커는 글이 실제로 답하는 것만 약속한다 — 산수로 «왜»를 대는 경계는 **4뿐**이고
+            (holdem-spr.ts:111) 8·15는 성격 규정만 있다. 「왜 4·8·15인지」는 3분의 1만 이행되는 과약속. */}
+        구간 경계가 왜 4인지, 프리플랍 레이즈가 SPR을 어떻게 바꾸는지는{" "}
+        <a href="/blog/holdem-spr" className="text-primary font-semibold underline underline-offset-2">홀덤 SPR 뜻과 계산법</a>
+        에서 예시로 다룹니다.
+      </p>
     </div>
   );
 }
@@ -1249,9 +1265,16 @@ export default function CalculatorPage() {
 
   return (
     <>
+      {/* 🔴 2026-08-29 — 이 문자열은 `page.tsx`의 서버 메타와 **반드시 같아야 한다**.
+          `components/seo.tsx`의 useEffect가 마운트 시 `document.title`·`meta[description]`·
+          `og:title`·`og:description`을 여기 값으로 **덮어쓴다**(seo.tsx:79-92). 즉 서버 메타만 고치면
+          원시 HTML에만 반영되고 렌더 후 DOM은 이 값이 된다 — 구글은 렌더링하므로 조치가 무력화된다.
+          실제로 구 문자열은 제목 자리에 「SPR」을 달고 있어서, 08-29 SPR 카니발 양보(page.tsx 주석 참조)를
+          그대로 되돌릴 뻔했다. ⚠ 07-09 최초 삽입 후 08-16 재조준 때도 방치됐다 — 세 번째 회차에서 잡혔다.
+          **page.tsx의 title/description을 고칠 때 이 두 줄도 같이 고쳐라.** */}
       <SEO
-        title="ICM 계산기·홀덤 확률 계산기 — 아웃츠·팟오즈·SPR·M값 무료"
-        description="칩 리더인데 왜 그 콜이 손해일까? ICM 계산기로 토너먼트 칩의 진짜 상금 가치를 즉시 확인하세요. 아웃츠·팟오즈·족보·SPR·M값·푸시폴드까지 홀덤 계산기 8종 무료."
+        title="ICM·팟오즈·아웃츠를 3초에 — 홀덤 계산기 8종 무료"
+        description="칩 리더인데 왜 그 콜이 손해일까? 내 칩의 진짜 상금 가치가 3초에 나옵니다. ICM·아웃츠·팟오즈·SPR·M값·푸시폴드까지 홀덤 계산기 8종 무료."
         path="/calculator"
       />
 
@@ -1615,6 +1638,10 @@ export default function CalculatorPage() {
               { href:"/blog/holdem-outs-calculation", t:"아웃츠 세는 법", d:"드로우별 아웃츠와 4-2 룰" },
               { href:"/blog/holdem-starting-hand-range", t:"스타팅 핸드 레인지", d:"포지션별 어떤 핸드로 플레이할지" },
               { href:"/blog/holdem-tournament-vs-cash-game", t:"토너먼트 vs 캐시게임", d:"M값·구조가 왜 다른지" },
+              // ★2026-08-29 추가 — 08-16 발행분이 이 카드 묶음에 편입되지 않아 SPR만 빠져 있었다.
+              // ⚠ 「커밋 구간 4·8·15」로 쓰지 마라 — 커밋 구간은 **4 미만뿐**이고 4~8=유연·8~15=딥스택 시작이다
+              //   (도착 글 표 holdem-spr.ts:104-109 · 위 SPRCalc 구간 칩과 동일 기준).
+              { href:"/blog/holdem-spr", t:"홀덤 SPR 뜻과 계산법", d:"유효 스택 ÷ 팟 · 구간 기준 4·8·15" },
             ].map(l => (
               <a key={l.href} href={l.href} className="luxe-card p-4 flex items-center justify-between gap-3 group">
                 <div>
