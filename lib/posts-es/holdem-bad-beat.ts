@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un bad beat es cuando metes las fichas siendo favorito clarísimo —normalmente 80% o más— y pierdes porque tu rival liga una carta afortunada para 'cazarte' (suck out). A diferencia de un cooler, ibas por delante todo el rato; la baraja simplemente te traicionó al final. Duele, pero los bad beats son en realidad señal de que juegas en una partida rentable.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-08-26",
-  masterUpdated: "2026-08-26",
+  updated: "2026-08-30",
+  masterUpdated: "2026-08-28",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "💔",
@@ -98,7 +98,7 @@ Todo bad beat tiene la misma forma: eres el favorito, el desfavorecido necesita 
 
 *Según el listón de la sección anterior, el sobrepar contra proyecto de color es el caso límite de la familia: con ~65%, es más varianza que un bad beat "de verdad" — pero es como lo llama la mesa de todos modos.*
 
-El más icónico es **ases rotos por un trío.** Metes pareja de ases all-in preflop contra pareja de sietes — eres favorito de en torno al 80%, un candado de 4 a 1 a tu favor. Pero quedan dos sietes más en la baraja, y si uno cae en la mesa, su trío gana a tu pareja. Cuatro de cada cinco veces te llevas el bote; la quinta, tienes una historia de bad beat que nadie quiere oír. La matemática nunca se equivocó — simplemente caíste en el lado malo de ella, que es exactamente por qué una sola mano no te dice [nada sobre si jugaste bien](/es/blog/holdem-cooler).
+El más icónico es **ases rotos por un trío.** Metes pareja de ases all-in preflop contra pareja de sietes — eres favorito de en torno al 80%, un candado de 4 a 1 a tu favor. Pero quedan dos sietes más en la baraja, y si uno cae en la mesa —y no aparece ningún as—, su trío gana a tu pareja. Cuatro de cada cinco veces te llevas el bote; la quinta, tienes una historia de bad beat que nadie quiere oír. La matemática nunca se equivocó — simplemente caíste en el lado malo de ella, que es exactamente por qué una sola mano no te dice [nada sobre si jugaste bien](/es/blog/holdem-cooler).
 
 ---
 
@@ -128,7 +128,9 @@ Una advertencia importante: **cada casino y sala online fija su propio cualifica
 
 ## El bad beat más famoso del póker
 
-Si quieres sentirte mejor con tus propios bad beats, recuerda que los peores ocurren en los escenarios más grandes. El más legendario sucedió en el **Main Event de las World Series of Poker 2008**, donde **Motoyuki Mabuchi** convirtió su pareja de ases en **póker — cuatro ases**, una mano batida por una sola combinación en todo el póker — y *aun así perdió*. Metió las fichas contra **Justin Phillips** (con K♦ J♦), y el **A♦** del river completó su póker de ases mientras, con esa misma carta, le entregaba a Phillips una **escalera real** — el 10‑J‑Q‑K‑A de diamantes. La carta que hizo el póker de ases fue la única carta que podía batirlo.
+Si quieres sentirte mejor con tus propios bad beats, recuerda que los peores ocurren en los escenarios más grandes. El más legendario sucedió en el **Main Event de las World Series of Poker 2008**, donde **Motoyuki Mabuchi** convirtió su pareja de ases en **póker — cuatro ases**, una mano batida por una sola combinación en todo el póker — y *aun así perdió*. El **A♦** del river completó su póker de ases mientras, con esa misma carta, le entregaba a **Justin Phillips** (con K♦ J♦) una **escalera real** — el 10‑J‑Q‑K‑A de diamantes. Solo entonces entró el dinero: Mabuchi pasó, Phillips apostó, Mabuchi se fue all-in y Phillips pagó al instante. La carta que hizo el póker de ases fue la única carta que podía batirlo.
+
+*Según el listón de arriba, esto técnicamente ni siquiera es un bad beat — el dinero entró después de la última carta, así que no hubo ningún suckout. Pero el póker lo recuerda como el bad beat más famoso jamás repartido, y el nombre se quedó.*
 
 Ese es el techo del dolor de un bad beat: no un favorito del 80% cayendo, sino *cuatro ases* — una mano que podrías jugar toda la vida sin perderla nunca — batida por una escalera de color, la única categoría de mano que supera al póker (cuatro iguales). Merece la pena guardártelo en la recámara la próxima vez que te rompan los ases: por muy mal que te tratara la baraja, alguien perdió una vez con póker de ases.
 
@@ -181,7 +183,7 @@ A. Un bad beat jackpot es un premio progresivo que algunas salas pagan cuando un
 
 **Q. ¿Cuál es el peor bad beat de la historia del póker?**
 
-A. El más famoso es del Main Event de las WSOP 2008: Motoyuki Mabuchi hizo póker de ases — una mano que solo una escalera de color puede batir — y aun así perdió. Metió las fichas contra Justin Phillips, y el A♦ del river completó su póker de ases y, con esa misma carta, le dio a Phillips una escalera real de diamantes. Hacer el mejor póker posible y toparse con una escalera de color — la única categoría de mano que lo supera — es más o menos lo peor que un bad beat puede llegar a ser.
+A. El más famoso es del Main Event de las WSOP 2008: Motoyuki Mabuchi hizo póker de ases — una mano que solo una escalera de color puede batir — y aun así perdió. Ligó un trío de ases en el flop, y el as que quedaba en la baraja completó su póker en el river y, con esa misma carta, le dio a Justin Phillips una escalera real de diamantes. Hacer el mejor póker posible y toparse con una escalera de color — la única categoría de mano que lo supera — es más o menos lo peor que un bad beat puede llegar a ser.
 
 **Q. ¿Los bad beats son más frecuentes online?**
 

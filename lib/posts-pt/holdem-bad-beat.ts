@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Um bad beat é quando você coloca suas fichas como favorito pesado — geralmente 80% ou mais — e perde porque o adversário pega uma carta de sorte pra dar um 'suckout' em você. Diferente de um cooler, você estava na frente o tempo todo; o baralho só te traiu no fim. Dói, mas bad beats são na verdade um sinal de que você está jogando num jogo lucrativo.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-08-26",
-  masterUpdated: "2026-08-26",
+  updated: "2026-08-30",
+  masterUpdated: "2026-08-28",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "💔",
@@ -98,7 +98,7 @@ Todo bad beat tem a mesma forma: você é o favorito, o azarão precisa de ajuda
 
 *Pela régua da seção anterior, o overpair vs flush draw é o caso-limite da família: com ~65%, é mais variância do que bad beat "de verdade" — mas é assim que a mesa o chama.*
 
-O mais icônico são os **ases quebrados por uma trinca.** Você coloca um par de ases all-in preflop contra um par de setes — você é favorito de mais ou menos 80%, uma trava de 4 para 1 a seu favor. Mas há mais dois setes no baralho, e se um bater no board, a trinca deles bate o seu par. Quatro em cada cinco vezes você abocanha o pote; na quinta, você tem uma história de bad beat que ninguém quer ouvir. A matemática nunca esteve errada — você só caiu no lado errado dela, que é exatamente por que uma única mão não te diz [nada sobre se você jogou bem](/pt/blog/holdem-cooler).
+O mais icônico são os **ases quebrados por uma trinca.** Você coloca um par de ases all-in preflop contra um par de setes — você é favorito de mais ou menos 80%, uma trava de 4 para 1 a seu favor. Mas há mais dois setes no baralho, e se um bater no board — e nenhum ás aparecer —, a trinca deles bate o seu par. Quatro em cada cinco vezes você abocanha o pote; na quinta, você tem uma história de bad beat que ninguém quer ouvir. A matemática nunca esteve errada — você só caiu no lado errado dela, que é exatamente por que uma única mão não te diz [nada sobre se você jogou bem](/pt/blog/holdem-cooler).
 
 ---
 
@@ -128,7 +128,9 @@ Uma ressalva importante: **cada clube, cassino ou site de poker define seu próp
 
 ## O bad beat mais famoso do poker
 
-Se você quer se sentir melhor com as suas próprias batidas, lembre que as piores acontecem nos maiores palcos. A mais lendária ocorreu no **Main Event da World Series of Poker de 2008**, onde **Motoyuki Mabuchi** transformou seu par de ases em **quadra — quadra de ases**, uma mão que só um straight flush bate — e *ainda assim perdeu*. Ele colocou tudo contra **Justin Phillips** (que tinha K♦ J♦), e o river **A♦** completou a quadra dele enquanto, na mesmíssima carta, entregava a Phillips um **royal flush** — o 10‑J‑Q‑K‑A de ouros. A única carta que completou a quadra de ases foi a única que podia batê-la.
+Se você quer se sentir melhor com as suas próprias batidas, lembre que as piores acontecem nos maiores palcos. A mais lendária ocorreu no **Main Event da World Series of Poker de 2008**, onde **Motoyuki Mabuchi** transformou seu par de ases em **quadra — quadra de ases**, uma mão que só um straight flush bate — e *ainda assim perdeu*. O river **A♦** completou a quadra dele enquanto, na mesmíssima carta, entregava a **Justin Phillips** (que tinha K♦ J♦) um **royal flush** — o 10‑J‑Q‑K‑A de ouros. Só então o dinheiro entrou: Mabuchi deu check, Phillips apostou, Mabuchi foi de all-in e Phillips pagou na hora. A única carta que completou a quadra de ases foi a única que podia batê-la.
+
+*Pela régua lá de cima, isso tecnicamente nem é um bad beat — o dinheiro entrou depois da última carta, então não houve suckout nenhum. Mas o poker guarda essa mão como o bad beat mais famoso já distribuído, e o nome pegou.*
 
 Esse é o teto da dor de bad beat: não um favorito de 80% caindo, mas *quatro ases* — uma mão que você pode jogar a vida inteira sem nunca perder — batida por um straight flush, a única categoria de mão que a supera. Vale guardar isso no bolso na próxima vez que seus ases forem quebrados: por pior que o baralho tenha te tratado, alguém já perdeu com quadra de ases.
 
