@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "「鱼（fish）」是德州扑克黑话，指那些又弱又输钱、被高手（「鲨鱼 / shark」）宰的牌手。鱼玩太多手牌、跟注太多、又舍不得弃牌——那句名言就警告你：要是你在自己的桌上认不出谁是鱼，那你就是鱼。这是这个游戏里最重要的一条读牌：要么找到鱼，要么你就成了鱼。",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-08-26",
+  updated: "2026-08-30",
   masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "10 分钟",
@@ -91,7 +91,7 @@ export const POST: Post = {
 
 ## 扑克动物园：fish vs shark vs whale vs nit vs donkey
 
-![一张简洁的扑克食物链示意图，把四种玩家类型做成扑克筹码图标——FISH、SHARK、WHALE、NIT——从最弱排到最强](/images/holdem-fish-food-chain.webp "一眼看懂扑克食物链：鱼喂饱鲨鱼，鲸鱼是最大的猎物，石头只是死死坐着不动")
+![绿色桌布上用大小不同的筹码表示四种玩家类型——FISH、SHARK、WHALE、NIT——筹码大小代表各类玩家带到牌桌的金额，而不是牌技强弱](/images/holdem-fish-food-chain.webp "一眼看懂扑克食物链：鱼喂饱鲨鱼，鲸鱼是最大的猎物，石头只是死死坐着不动")
 
 「鱼」是头号词，但扑克黑话有一整个玩家类型的动物志——而大多数词汇表只定义其中两三个。这里是把它们全摆出来的那张表，让你能准确叫出你正面对的是谁：
 
@@ -122,7 +122,7 @@ export const POST: Post = {
 
 ## 「认不出冤大头……」：那句名言，纠正版
 
-![一手弱到根本不能玩的牌被举在桌布上方，展示的正是标记出一条鱼的那种松跟和烂选牌](/images/holdem-starting-hands-weak-ace-trap.webp "真正要紧的自检：如果你正拿着这种牌去跟别人的加注，那这桌早就把你认出来了")
+![桌布上并排的两手起手牌——红框标出的弱牌 A♣ 4♦，旁边是金框的强牌 A♠ K♦](/images/holdem-starting-hands-weak-ace-trap.webp "真正要紧的自检：如果你正拿着左边那样的弱 A 去跟别人的加注，那这桌早就把你认出来了")
 
 你听过它的某个版本：*「要是你在头半个小时里认不出桌上的鱼，那你就是那条鱼。」* 这是扑克里被引用得最多的一句话——而几乎每个人都记得稍微有点偏。
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Korea's top autumn marathons (Chuncheon Oct 25, JTBC Seoul Nov 1, Garmin Run Nov 15) align with perfect running weather. Paradise City Casino near Incheon Airport runs year-round cash games — foreigners only, 10 min from the terminal. One trip covers both. For 2026, only JTBC registration is still open (until Sep 4).",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-08-28",
+  updated: "2026-08-30",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏃",
@@ -35,7 +35,7 @@ Korea is where both come together perfectly. ==**World-class autumn marathons. A
   <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-marathon-record.webp" alt="2026 Goyang Half Marathon official result card — 1:51:10 chip time, Male Half division" width="600" height="899" sizes="160px" style="width:160px;flex-shrink:0;border-radius:8px" />
   <div style="font-size:14px;line-height:1.7;color:hsl(var(--muted-foreground))">
     <strong style="display:block;margin-bottom:6px;color:hsl(var(--foreground))">Personal record — 2026 Goyang Half Marathon</strong>
-    Chip time: <strong>1:51:10</strong> · Male Half division · Bib 5448<br />
+    Chip time: <strong>1:51:10</strong> · Male Half division<br />
     Korea's race organization is surprisingly polished — official chip times, instant digital result cards, and real-time tracking. Foreign runners get the same experience as locals.
   </div>
 </div>

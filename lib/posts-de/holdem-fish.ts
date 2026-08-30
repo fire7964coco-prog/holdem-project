@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ein „Fish“ ist Poker-Slang für einen schwachen, verlierenden Spieler, an dem die stärkeren Spieler ('Sharks') ihr Geld verdienen. Fische spielen zu viele Hände, callen zu viel und können nicht folden – und der berühmte Spruch warnt: Wenn du den Fish an deinem Tisch nicht erkennst, bist du es. Es ist der wichtigste Read im ganzen Spiel: Finde den Fish, oder werde selbst einer.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-08-26",
+  updated: "2026-08-30",
   masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "10 Min.",
@@ -115,7 +115,7 @@ Drei Unterscheidungen, die Konkurrenten ständig verwischen und die es sich lohn
 > **Kurze Antwort**
 > Die Fassung, die alle kennen, stammt aus dem Film **Rounders** (1998) – und dort heißt es „Sucker“, nicht „Fish“. Die Idee selbst ist älter und hat keinen belegbaren einzelnen Urheber. Sie kursiert seit Jahrzehnten als Sprichwort unter Spielern, und die bekannteste Zuschreibung führt im Kreis: ==Amarillo Slim schrieb sie Warren Buffett zu – und Buffett schrieb sie den Pokerspielern zu.==
 
-![Eine schwache, unspielbare Pokerhand über dem Filz gehalten, die die loose Calls und die schlechte Handauswahl illustriert, die einen Fish auszeichnen](/images/holdem-starting-hands-weak-ace-trap.webp "Der Selbstcheck, auf den es ankommt: Wenn du Raises mit Händen wie dieser callst, hat der Tisch dich längst erkannt")
+![Zwei Starthände nebeneinander auf dem Filz – ein schwaches A♣ 4♦ rot umrandet, daneben ein Premium-A♠ K♦ in Gold](/images/holdem-starting-hands-weak-ace-trap.webp "Der Selbstcheck, auf den es ankommt: Wenn du Raises mit schwachen Assen wie dem links callst, hat der Tisch dich längst erkannt")
 
 Du hast irgendeine Version davon gehört: *„Wenn du in der ersten halben Stunde den Fish am Tisch nicht erkennst, bist du der Fish.“* Es ist der meistzitierte Spruch beim Poker – und fast jeder gibt ihn leicht falsch wieder.
 

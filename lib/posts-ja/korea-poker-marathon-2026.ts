@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "韓国と日本は時差0時間、サマータイムもないので、土曜に着いて日曜の朝に走れます。海外マラソンで前泊1泊で済むのは韓国くらいです。韓国の秋の主要マラソン(春川10/25、JTBCソウル11/1、ガーミンラン11/15)は、走るのに最高の気候と重なります。仁川空港すぐそばのパラダイスシティ・カジノは通年でキャッシュゲームを開催(外国人専用・ターミナルから10分)。一度の旅で両方を味わえます。2026年にまだエントリーできるのはJTBCだけです(9/4まで)。",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-08-28",
+  updated: "2026-08-30",
   masterUpdated: "2026-08-28",
   keepImagesInBody: true,
   readTime: "14分",
@@ -36,7 +36,7 @@ export const POST: Post = {
   <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-marathon-record.webp" alt="2026高陽ハーフマラソンの公式リザルトカード — チップタイム1:51:10、男子ハーフ部門" width="600" height="899" sizes="160px" style="width:160px;flex-shrink:0;border-radius:8px" />
   <div style="font-size:14px;line-height:1.7;color:hsl(var(--muted-foreground))">
     <strong style="display:block;margin-bottom:6px;color:hsl(var(--foreground))">自己記録 — 2026高陽ハーフマラソン</strong>
-    チップタイム: <strong>1:51:10</strong> · 男子ハーフ部門 · ゼッケン5448<br />
+    チップタイム: <strong>1:51:10</strong> · 男子ハーフ部門<br />
     韓国のレース運営は驚くほど洗練されています——公式チップタイム、その場で発行されるデジタルのリザルトカード、リアルタイムのトラッキング。外国人ランナーも地元選手とまったく同じ体験ができます。
   </div>
 </div>

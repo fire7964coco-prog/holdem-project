@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "这是一份大白话的德州扑克术语表，收的都是牌桌上真会碰到的词，按你怎么遇到它们来分组——下注动作、位置、牌型和牌面、玩家类型、钱，以及牌桌情境。先看下面那组「最容易搞混」的词（过牌 vs 跟注、set vs trips、cooler vs bad beat），再按分类随便翻。有深入指南的术语会直接给你链接。",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-08-26",
+  updated: "2026-08-30",
   masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "12 分钟",
@@ -70,7 +70,7 @@ export const POST: Post = {
 
 ---
 
-![一张暗色、贴合品牌的视觉地图，把这份术语表的六大分类列出来——下注动作、位置、牌型、玩家类型、钱、情境](/images/holdem-glossary-categories.webp "这份术语表分成的六组——按你所处的情境来翻，别只按字母顺序找")
+![深绿色桌布上的六格扑克术语视觉地图，每格配一个金色图标——ACTIONS、POSITIONS、HANDS、PLAYERS、MONEY、SLANG](/images/holdem-glossary-categories.webp "这份术语表分成的六组——按你所处的情境来翻，别只按字母顺序找")
 
 ## 下注动作
 

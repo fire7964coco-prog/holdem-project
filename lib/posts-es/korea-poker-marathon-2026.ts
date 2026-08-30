@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Los grandes maratones de otoño de Corea (Chuncheon 25 oct, JTBC Seúl 1 nov, Garmin Run 15 nov) coinciden con el clima ideal para correr. El casino Paradise City, junto al aeropuerto de Incheon, ofrece cash games todo el año — solo extranjeros, a 10 min de la terminal. Un viaje cubre ambas cosas. Para 2026, solo la inscripción del JTBC sigue abierta (hasta el 4 de sep).",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-08-28",
+  updated: "2026-08-30",
   masterUpdated: "2026-08-28",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -36,7 +36,7 @@ Corea es donde ambas encajan a la perfección. ==**Maratones de otoño de talla 
   <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-marathon-record.webp" alt="Tarjeta oficial de resultado del Medio Maratón de Goyang 2026 — chip time 1:51:10, categoría Medio Masculino" width="600" height="899" sizes="160px" style="width:160px;flex-shrink:0;border-radius:8px" />
   <div style="font-size:14px;line-height:1.7;color:hsl(var(--muted-foreground))">
     <strong style="display:block;margin-bottom:6px;color:hsl(var(--foreground))">Marca personal — Medio Maratón de Goyang 2026</strong>
-    Chip time: <strong>1:51:10</strong> · categoría Medio Masculino · dorsal 5448<br />
+    Chip time: <strong>1:51:10</strong> · categoría Medio Masculino<br />
     La organización de carreras en Corea es sorprendentemente pulida — tiempos oficiales por chip, tarjetas de resultado digitales al instante y seguimiento en tiempo real. Los corredores extranjeros viven la misma experiencia que los locales.
   </div>
 </div>

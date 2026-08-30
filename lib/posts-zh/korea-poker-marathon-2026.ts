@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "韩国最好的秋季马拉松（春川 10 月 25 日、JTBC 首尔 11 月 1 日、Garmin Run 11 月 15 日）正好赶上完美的跑步天气。仁川机场旁的 Paradise City Casino 全年开放现金局——只对外国人开放，离航站楼 10 分钟。一趟行程两样都能拿下。2026 年还开放报名的只剩 JTBC（截至 9 月 4 日）。",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-08-28",
+  updated: "2026-08-30",
   masterUpdated: "2026-08-28",
   keepImagesInBody: true,
   readTime: "14 分钟",
@@ -36,7 +36,7 @@ export const POST: Post = {
   <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-marathon-record.webp" alt="2026 高阳半程马拉松官方成绩卡——芯片计时 1:51:10，男子半程组" width="600" height="899" sizes="160px" style="width:160px;flex-shrink:0;border-radius:8px" />
   <div style="font-size:14px;line-height:1.7;color:hsl(var(--muted-foreground))">
     <strong style="display:block;margin-bottom:6px;color:hsl(var(--foreground))">个人成绩——2026 高阳半程马拉松</strong>
-    芯片计时：<strong>1:51:10</strong> · 男子半程组 · 号码布 5448<br />
+    芯片计时：<strong>1:51:10</strong> · 男子半程组<br />
     韩国的赛事组织意外地精细——官方芯片计时、即时电子成绩卡、实时追踪。外国跑者拿到的体验和本地人完全一样。
   </div>
 </div>

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "テキサスホールデムで実際に出てくるポーカー用語を、出会う場面ごとにまとめた用語集です——ベットのアクション、ポジション、役とボード、プレイヤーのタイプ、お金、テーブルの状況。まずは下の「混同しやすい用語」(チェックとコール、セットとトリップス、クーラーとバッドビートなど)から。あとはカテゴリー別にどうぞ。深掘りガイドがある用語には、そのままリンクを張っています。",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-08-26",
+  updated: "2026-08-30",
   masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "12分",
@@ -55,7 +55,7 @@ export const POST: Post = {
 
 ---
 
-![この用語集の6つのカテゴリーを示す図解 — ベットのアクション、ポジション、役、プレイヤーのタイプ、お金、状況](/images/holdem-glossary-categories.webp "この用語集を分けた6つのグループ — アルファベット順ではなく、自分が置かれた場面で引ける")
+![ダークグリーンのフェルトに並んだポーカー用語6タイルの図解。各タイルに金色のアイコン — ACTIONS・POSITIONS・HANDS・PLAYERS・MONEY・SLANG](/images/holdem-glossary-categories.webp "この用語集を分けた6つのグループ — アルファベット順ではなく、自分が置かれた場面で引ける")
 
 ## ベットのアクション
 

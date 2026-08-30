@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Este é um glossário direto dos termos de poker que realmente aparecem numa mesa de Texas Hold'em, agrupados pela forma como você vai encontrá-los — ações de aposta, posições, mãos e board, tipos de jogador, dinheiro e situações de mesa. Comece pelos termos 'mais confundidos' logo abaixo (check vs call, set vs trips, cooler vs bad beat) e depois navegue por categoria. Os termos com um guia mais completo linkam direto pra ele.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-08-26",
+  updated: "2026-08-30",
   masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "12 min",
@@ -55,7 +55,7 @@ Se você só for esclarecer uma dúzia de termos, que sejam estes — são os qu
 
 ---
 
-![Um mapa visual das seis categorias de termos deste glossário — Ações de Aposta, Posições, Mãos, Tipos de Jogador, Dinheiro e Situações](/images/holdem-glossary-categories.webp "Os seis grupos em que este glossário está organizado — navegue pela situação em que você está, não só por ordem alfabética")
+![Um mapa visual de seis blocos do vocabulário de poker sobre feltro verde-escuro, cada bloco com um ícone dourado — ACTIONS, POSITIONS, HANDS, PLAYERS, MONEY e SLANG](/images/holdem-glossary-categories.webp "Os seis grupos em que este glossário está organizado — navegue pela situação em que você está, não só por ordem alfabética")
 
 ## Ações de aposta
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "這是一份大白話的德州撲克術語表，收的都是牌桌上真會碰到的詞，按你怎麼遇到它們來分組——下注動作、位置、牌型與牌面、玩家類型、錢，以及牌桌局面。先看下面那組「最容易搞混」的詞（過牌 vs 跟注、暗三條 vs 明三條、Cooler vs Bad Beat），再按分類隨便翻。有深入指南的術語會直接給你連結。",
   category: "glossary",
   date: "2026-07-22",
-  updated: "2026-08-26",
+  updated: "2026-08-30",
   masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "12 分鐘",
@@ -55,7 +55,7 @@ export const POST: Post = {
 
 ---
 
-![一張德州撲克術語表的六大分類視覺地圖——下注動作、位置、牌型、玩家類型、錢、局面](/images/holdem-glossary-categories.webp "這份術語表分成的六組——按你所處的情境來翻，別只按字母順序找")
+![深綠色檯面上的六格撲克術語視覺地圖，每格配一個金色圖示——ACTIONS、POSITIONS、HANDS、PLAYERS、MONEY、SLANG](/images/holdem-glossary-categories.webp "這份術語表分成的六組——按你所處的情境來翻，別只按字母順序找")
 
 ## 下注動作
 

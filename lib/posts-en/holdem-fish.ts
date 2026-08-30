@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A 'fish' is poker slang for a weak, losing player the stronger players ('sharks') make their money from. Fish play too many hands, call too much, and can't fold — and the famous line warns that if you can't spot the fish at your table, you're it. It's the single most important read in the game: find the fish, or become one.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-08-26",
+  updated: "2026-08-30",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🐟",
@@ -72,7 +72,7 @@ No single sign is proof — even good players limp occasionally or chase a big d
 
 ## The Poker Zoo: Fish vs Shark vs Whale vs Nit vs Donkey
 
-![A simple visual of the poker food chain showing four player types as poker-chip icons — FISH, SHARK, WHALE, and NIT — from weakest to strongest](/images/holdem-fish-food-chain.webp "The poker food chain at a glance: the fish feeds the sharks, the whale is the big prize, and the nit just sits tight")
+![Four poker player types shown as chips of different sizes on green felt — FISH, SHARK, WHALE, and NIT — sized by how much money each type puts in play, the whale's chip by far the largest](/images/holdem-fish-food-chain.webp "The poker food chain at a glance: the fish feeds the sharks, the whale is the big prize, and the nit just sits tight")
 
 "Fish" is the headline, but poker slang has a whole bestiary of player types — and most glossaries only define two or three. Here's the one table that lays them all out, so you can name exactly who you're up against:
 
@@ -103,7 +103,7 @@ Three distinctions competitors constantly blur, worth getting right:
 
 ## "If You Can't Spot the Sucker…": The Famous Line, Corrected
 
-![A weak, unplayable poker hand held over the felt, illustrating the loose calls and bad hand selection that mark a fish](/images/holdem-starting-hands-weak-ace-trap.webp "The self-check that matters: if you're calling raises with hands like this, the table has already spotted you")
+![Two starting hands side by side on the felt — a weak ace-four offsuit outlined in red, next to a premium ace-king outlined in gold](/images/holdem-starting-hands-weak-ace-trap.webp "The self-check that matters: if you're calling raises with the hand on the left, the table has already spotted you")
 
 You've heard some version of it: *"If you can't spot the fish at the table in the first half hour, you are the fish."* It's the most quoted line in poker — and almost everyone gets it slightly wrong.
 

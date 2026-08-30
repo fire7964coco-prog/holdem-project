@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Das ist ein Poker-Lexikon in einfachem Deutsch mit den Begriffen, die in einem Texas-Hold'em-Spiel wirklich vorkommen, gruppiert danach, wie du ihnen begegnest – Setzaktionen, Positionen, Hände und Board, Spielertypen, Geld, Tischsituationen und die Turnier- und Online-Abkürzungen. Beginn mit den „am häufigsten verwechselten“ Begriffen unten (Check vs. Call, Set vs. Trips, Cooler vs. Bad Beat), dann stöber nach Kategorie. Begriffe mit einem tieferen Guide verlinken direkt darauf.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-08-26",
+  updated: "2026-08-30",
   masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "12 Min.",
@@ -56,7 +56,7 @@ Poker hat sein eigenes Vokabular, und es zu kennen bringt zwei Dinge: Es verhind
 
 ---
 
-![Eine visuelle Karte der Poker-Begriffskategorien in diesem Lexikon – Setzaktionen, Positionen, Hände, Spielertypen, Geld und Situationen](/images/holdem-glossary-categories.webp "Die Gruppen, in die dieses Lexikon geordnet ist – stöber nach der Situation, in der du bist, nicht bloß alphabetisch")
+![Eine sechsteilige Kachelkarte des Poker-Vokabulars auf dunkelgrünem Filz, jede Kachel mit goldenem Icon – ACTIONS, POSITIONS, HANDS, PLAYERS, MONEY und SLANG](/images/holdem-glossary-categories.webp "Die Gruppen, in die dieses Lexikon geordnet ist – stöber nach der Situation, in der du bist, nicht bloß alphabetisch")
 
 ## Was bedeuten die Setzaktionen: Check, Bet, Call, Raise und Fold?
 

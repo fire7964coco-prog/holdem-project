@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "\"Fish\" é a gíria do poker para um jogador fraco e perdedor, aquele com quem os jogadores mais fortes (\"sharks\") faturam. Fish jogam mãos demais, pagam demais e não conseguem dar fold — e a frase famosa avisa: se você não consegue identificar o fish na sua mesa, o fish é você. É a leitura mais importante do jogo: ache o fish, ou vire um.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-08-26",
+  updated: "2026-08-30",
   masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -73,7 +73,7 @@ Nenhum sinal isolado é prova — até bons jogadores dão limp de vez em quando
 
 ## Qual a diferença entre fish, shark, whale, nit e donkey?
 
-![Um visual simples da cadeia alimentar do poker mostrando quatro tipos de jogador como ícones de fichas de poker — FISH, SHARK, WHALE e NIT — do mais fraco ao mais forte](/images/holdem-fish-food-chain.webp "A cadeia alimentar do poker num relance: o fish alimenta os sharks, o whale é o grande prêmio, e o nit só fica sentado quieto")
+![Quatro tipos de jogador de poker como fichas de tamanhos diferentes sobre o feltro verde — FISH, SHARK, WHALE e NIT — o tamanho de cada ficha mostra quanto dinheiro cada tipo coloca em jogo, não o quão forte joga](/images/holdem-fish-food-chain.webp "A cadeia alimentar do poker num relance: o fish alimenta os sharks, o whale é o grande prêmio, e o nit só fica sentado quieto")
 
 "Fish" é a manchete, mas a gíria do poker tem todo um bestiário de tipos de jogador. Aqui está a tabela que coloca todos lado a lado, para você nomear exatamente contra quem está jogando:
 
@@ -104,7 +104,7 @@ Três distinções que todo mundo vive embaralhando, que vale a pena acertar:
 
 ## "Se você não acha o otário…": a frase famosa, corrigida
 
-![Uma mão de poker fraca e impossível de jogar segurada sobre o feltro, ilustrando os calls frouxos e a péssima seleção de mãos que marcam um fish](/images/holdem-starting-hands-weak-ace-trap.webp "O autoexame que importa: se você está pagando raises com mãos assim, a mesa já te identificou")
+![Duas mãos iniciais lado a lado sobre o feltro — um A♣ 4♦ fraco contornado em vermelho, ao lado de um A♠ K♦ premium em dourado](/images/holdem-starting-hands-weak-ace-trap.webp "O autoexame que importa: se você está pagando raises com ases fracos como o da esquerda, a mesa já te identificou")
 
 Você já ouviu alguma versão dela: *"Se você não conseguir achar o fish na mesa na primeira meia hora, o fish é você."* É a frase mais citada do poker — e quase todo mundo erra um pouquinho.
 

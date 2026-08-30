@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Koreas beste Herbstmarathons (Chuncheon 25. Okt, JTBC Seoul 1. Nov, Garmin Run 15. Nov) treffen auf perfektes Laufwetter – für 2026 ist allerdings nur noch der JTBC Seoul offen, Chuncheon und Garmin Run haben im Juli geschlossen. Das Paradise City Casino nahe dem Flughafen Incheon bietet Cash Games – nur für Ausländer, 10 Min. vom Terminal. Eine Reise deckt beides ab.",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-08-28",
+  updated: "2026-08-30",
   keepImagesInBody: true,
   readTime: "14 Min.",
   emoji: "🏃",
@@ -35,7 +35,7 @@ Korea ist der Ort, an dem beides perfekt zusammenkommt. ==**Weltklasse-Herbstmar
   <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-marathon-record.webp" alt="Offizielle Ergebniskarte des Goyang-Halbmarathons 2026 – Chip-Zeit 1:51:10, Kategorie Männer Halbmarathon" width="600" height="899" sizes="160px" style="width:160px;flex-shrink:0;border-radius:8px" />
   <div style="font-size:14px;line-height:1.7;color:hsl(var(--muted-foreground))">
     <strong style="display:block;margin-bottom:6px;color:hsl(var(--foreground))">Persönliche Bestzeit – Goyang-Halbmarathon 2026</strong>
-    Chip-Zeit: <strong>1:51:10</strong> · Kategorie Männer Halbmarathon · Startnummer 5448<br />
+    Chip-Zeit: <strong>1:51:10</strong> · Kategorie Männer Halbmarathon<br />
     Koreas Renn-Organisation ist erstaunlich professionell – offizielle Chip-Zeiten, sofortige digitale Ergebniskarten und Live-Tracking. Ausländische Läufer bekommen dieselbe Erfahrung wie Einheimische.
   </div>
 </div>

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "This is a plain-English glossary of the poker terms that actually come up in a Texas Hold'em game, grouped by how you'll meet them — betting actions, positions, hands and board, player types, money, and table situations. Start with the 'most confused' terms below (check vs call, set vs trips, cooler vs bad beat), then browse by category. Terms with a deeper guide link straight to it.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-08-26",
+  updated: "2026-08-30",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "📖",
@@ -54,7 +54,7 @@ If you only clear up a dozen terms, make it these — they're the ones that caus
 
 ---
 
-![A visual map of the six poker term categories in this glossary — Betting Actions, Positions, Hands, Player Types, Money, and Situations](/images/holdem-glossary-categories.webp "The six groups this glossary is organized into — browse by the situation you're in, not just alphabetically")
+![A six-tile map of poker vocabulary on dark green felt, each tile with a gold icon — Actions, Positions, Hands, Players, Money, and Slang](/images/holdem-glossary-categories.webp "The six groups this glossary is organized into — browse by the situation you're in, not just alphabetically")
 
 ## Betting Actions
 

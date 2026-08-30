@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Maraton musim gugur terbaik Korea (Chuncheon 25 Okt, JTBC Seoul 1 Nov, Garmin Run 15 Nov) berpadu dengan cuaca lari yang sempurna. Paradise City Casino dekat Bandara Incheon menggelar cash game sepanjang tahun — khusus warga asing, 10 menit dari terminal. Satu perjalanan mencakup keduanya. Untuk 2026, hanya registrasi JTBC yang masih buka (s.d. 4 Sep).",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-08-28",
+  updated: "2026-08-30",
   masterUpdated: "2026-08-28",
   keepImagesInBody: true,
   readTime: "14 mnt",
@@ -36,7 +36,7 @@ Korea adalah tempat keduanya bertemu dengan sempurna. ==**Maraton musim gugur ke
   <img loading="lazy" decoding="async" src="/images/korea-poker-marathon-2026-marathon-record.webp" alt="Kartu hasil resmi 2026 Goyang Half Marathon — waktu chip 1:51:10, divisi Half Putra" width="600" height="899" sizes="160px" style="width:160px;flex-shrink:0;border-radius:8px" />
   <div style="font-size:14px;line-height:1.7;color:hsl(var(--muted-foreground))">
     <strong style="display:block;margin-bottom:6px;color:hsl(var(--foreground))">Rekor pribadi — 2026 Goyang Half Marathon</strong>
-    Waktu chip: <strong>1:51:10</strong> · divisi Half Putra · Bib 5448<br />
+    Waktu chip: <strong>1:51:10</strong> · divisi Half Putra<br />
     Penyelenggaraan lomba di Korea sangat rapi — waktu chip resmi, kartu hasil digital instan, dan pelacakan real-time. Pelari asing mendapat pengalaman yang sama seperti warga lokal.
   </div>
 </div>

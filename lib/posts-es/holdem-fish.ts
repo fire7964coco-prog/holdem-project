@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Un 'fish' (pez) es la jerga del póker para el jugador débil y perdedor del que los jugadores fuertes (los 'tiburones') sacan su dinero. El pez juega demasiadas manos, iguala demasiado y no sabe foldear — y la famosa frase avisa: si no ves al pez en tu mesa, el pez eres tú. Es la lectura más importante del juego: encuentra al pez, o conviértete en uno.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-08-26",
+  updated: "2026-08-30",
   masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -73,7 +73,7 @@ Ninguna señal por sí sola es prueba — hasta los buenos jugadores limpean de 
 
 ## El zoo del póker: fish vs shark vs ballena vs nit vs donk
 
-![Un visual sencillo de la cadena alimenticia del póker mostrando cuatro tipos de jugador como iconos de ficha de póker — FISH, SHARK, WHALE y NIT — del más débil al más fuerte](/images/holdem-fish-food-chain.webp "La cadena alimenticia del póker de un vistazo: el pez alimenta a los tiburones, la ballena es el gran premio y el nit solo se queda quieto")
+![Cuatro tipos de jugador de póker como fichas de distinto tamaño sobre tapete verde — FISH, SHARK, WHALE y NIT — el tamaño de cada ficha marca cuánto dinero pone en juego cada tipo, no lo fuerte que juega](/images/holdem-fish-food-chain.webp "La cadena alimenticia del póker de un vistazo: el pez alimenta a los tiburones, la ballena es el gran premio y el nit solo se queda quieto")
 
 "Fish" es el titular, pero la jerga del póker tiene todo un bestiario de tipos de jugador — y la mayoría de glosarios solo definen dos o tres. Aquí tienes la única tabla que los reúne todos, para que sepas nombrar exactamente a quién tienes delante:
 
@@ -104,7 +104,7 @@ Tres distinciones que la competencia mezcla sin parar, y que conviene tener clar
 
 ## "Si no ves al primo…": la famosa frase, corregida
 
-![Una mano de póker débil e injugable sostenida sobre el tapete, ilustrando los calls sueltos y la mala selección de manos que marcan a un fish](/images/holdem-starting-hands-weak-ace-trap.webp "La autoevaluación que importa: si igualas subidas con manos como esta, la mesa ya te ha detectado")
+![Dos manos iniciales lado a lado sobre el tapete — un A♣ 4♦ débil resaltado en rojo, junto a un A♠ K♦ premium en dorado](/images/holdem-starting-hands-weak-ace-trap.webp "La autoevaluación que importa: si igualas subidas con ases débiles como el de la izquierda, la mesa ya te ha detectado")
 
 Habrás oído alguna versión: *"Si no ves al pez de la mesa en la primera media hora, el pez eres tú."* Es la frase más citada del póker — y casi todo el mundo la repite un poco mal.
 
