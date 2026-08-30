@@ -1,3 +1,100 @@
+## 2026-08-30 (3) — EN `tiebreak-rules`·`game-order` 경화 + 🔴 `gsc-page.mjs`가 거짓 0을 내던 것 정정
+
+사장님 지시로 두 EN 글을 «사전조사 → 경화»했다. 커밋 `14f5c630`(도구) · `c96af74d`(글).
+**사전조사에서 전제가 두 군데 바뀌었고, 그 과정에서 측정 도구의 결함이 드러났다.**
+
+### 1. 🔴 `gsc-page.mjs`가 «노출 0»을 거짓으로 보고하고 있었다
+
+GSC는 **`page`·`date` 외의 차원으로 묶는 순간 익명화 행을 통째로 뺀다.** 그런데 이 스크립트는
+**쿼리 행의 합**을 페이지 총계로 찍고 있었다. 같은 필터·같은 창에서:
+
+| 페이지 | `[page]`(진짜) | `[query]` 합 | 누락 |
+|---|---|---|---|
+| `blog/holdem-blind-meaning` | **740 / 57** | 274 / 31 | **63%** |
+| `en/blog/holdem-tiebreak-rules` | **66 / 0** | 0 / 0 | **100%** ← 「노출 0」이라 보고했었다 |
+| `en/blog/holdem-game-order` | 0 / 0 | 0 / 0 | 진짜 0 |
+| `/ranking` | 9587 / 48 | 9476 / 39 | 1% |
+
+🔴 **고볼륨에서는 누락이 1%라 지금까지 안 들켰다.** 저볼륨 글을 판정할 때만 터진다.
+⚠ **`[device]`도 `[query]`와 똑같이 274/31이었다** — 익명화는 쿼리 차원만의 문제가 아니다.
+→ **08-30 (2)에서 보고한 「모바일 194 : 데스크톱 74」는 «관측된 37% 안»의 분할이다.**
+   결론(모바일이 약점)은 GA4가 독립적으로 뒷받침하므로 유지되지만 수치엔 단서가 붙는다.
+✅ **덤으로 미결이 하나 풀렸다** — 「GA4 65 ↔ GSC 31 2배 차」는 Discover가 아니라 이 아티팩트였다
+(진짜 클릭 57 ≈ GA4 65). 스크립트에 페이지 총계·누락률·경고를 박았다.
+
+### 2. `game-order`의 문제는 제목이 아니라 «색인»이었다
+
+URL Inspection: **`Crawled - currently not indexed`**(마지막 크롤 07-29). 노출 0은 순위가 아니라
+**부재**다. `--prefix /en/blog/` 전수로 규모를 쟀더니 **EN 56편 중 색인 19편(34%)**뿐이다.
+
+| 상태 | 편수 |
+|---|---|
+| Submitted and indexed | 19 |
+| Crawled – currently not indexed | 21 |
+| Discovered – not indexed | 11 |
+| URL is unknown to Google | 3 |
+| **Duplicate without user-selected canonical** | **2** |
+
+🔴 **그 2편이 심각하다** — `/en/blog/holdem-pot-odds`(필라)·`/en/blog/holdem-reading-the-board`의
+**구글 canonical이 외부 도박 사이트 `747live.bet`**이다. 라이브 DOM 실측 결과 **우리 쪽은 정상**
+(자기참조 canonical · `index, follow` · hreflang 9) → 코드 결함이 아니라 **구글이 우리 글을
+그쪽 복제본으로 판정**한 것이다. 콘텐츠 작업으로 못 고치는 별건.
+
+🪶 색인 자체는 사장님 판정(08-25 「포스팅만 잘 작성하면 색인은 알아서 될 거야」)에 따라
+**별도 트랙을 만들지 않고 «잘 쓰는 것»으로 처방**했다.
+
+### 3. 키워드 실측 (라쿠 · US · English · 30크레딧)
+
+- **game-order 축 ~1,470/월 · SD 13~17** = 뱅크 기준 «매우 승산».
+  who bets first in texas holdem **390** · who goes first in poker 320 · who bets first in poker 210 ·
+  poker betting order 170 · poker order of play 140 · texas holdem order of play 110 ·
+  who acts first in poker 50(3개월 **+40%**) · who bets first after the flop 50 · who shows cards first 30
+- **tiebreak 축 ~510/월** — 작다. 미개척 자리 하나: **do suits matter in poker 170 · SD 10**
+  (4개 EN 글에 FAQ로 흩어져 있고 **H2로 소유한 글이 없었다**) · highest straight in poker 70 · SD 8
+- ⚠ 뱅크에 이 두 시드는 없다 → **SERP·라쿠 실측으로 대체**(posting.mdc 규약대로 명시)
+
+### 4. 이행
+
+**game-order** — seoTitle·desc·`tldr` 재작성(「who bets first」를 앞으로) · H2 개명 +
+**40~75단어 볼드 직답 신설**(원래 없었다) · FAQ 3문 신설 · 태그 교체.
+⚠ 제목 교체가 안전한 근거 = **노출 0이라 끊길 CTR 측정이 없다**(판단 대기 #5 조건 충족).
+
+**tiebreak** — 🔴 **미결 ⑯ 해소**(`Royal Flush|Always a tie` → 조건 명시. §13: 로열 구성 카드는
+각 한 장뿐이라 두 명이 동시에 가지려면 보드가 로열이어야 하고 그러면 전원이 보드를 플레이한다) ·
+🆕 **H2 「Do Suits Matter in Poker?」 신설** — 근거로 레포에 검증돼 있던 **WSOP Rule 73 축어를 EN에 처음 이식**
+(*"the odd chip goes to the first seat left of the button"* — 나눌 수 없는 칩조차 무늬가 아니라 **자리**로) ·
+**FAQ↔H2 축어중복 해소**(미결 ⑰은 4건으로 적었으나 실측 **5쌍**) · suits FAQ 2문 → 1문 통합 ·
+「highest straight in poker」 삽입 · 질문형 H2 71% → **75%**.
+
+### 5. 검증 — 게이트와 교열이 각각 내 결함을 하나씩 잡았다
+
+- `audit:hard --locale=en` 🔴 **0건**(56/56) · 두 글 다 §13 미검사 목록에 **없음**(실제 검증됨)
+- 🔴 **게이트 적중**: H5는 「한 줄에 카드 5장 + 족보명」을 핸드로 판정하는데 내가 쓴 보드 예시가
+  그 형태였다. **이 글의 기존 예시는 전부 홀카드까지 적어 7~9토큰이라 통과한다** = 게이트 결함이
+  아니라 **내 문장만 하우스 규약을 벗어난 것**이었다. 규약에 맞추니 쇼다운 시나리오가 하나 늘어
+  커버리지가 오히려 올라갔다.
+- 🔴 **교열 렌즈(자기 diff) 적중**: game-order의 새 H2 직답이 새 `tldr`과 거의 축어 중복이었다 —
+  **tiebreak에서 고치던 바로 그 결함을 옆 글에 만든 것**이다. 직답을 «왜 순서가 뒤집히는가»로
+  재작성해 해소(+ 모호 지시어·odd chip 재설명 2건 정리).
+- 메타 길이 EN 기준 통과(seoTitle 52·56 / desc 158·157) · `npm run build` ✓ 653페이지 ·
+  FAQPage 스키마 **11문**(8+3) 산출물 확인 · H2 rename 앵커 참조 0건 실측
+
+### 6. 부수 정정·신설
+
+- `scripts/gsc-index-audit.mjs`에 **`--prefix` 옵션 신설** — 로케일 하나만 재는 자리가 반복되는데
+  `--all`(609개)은 너무 무겁고 임시 스크립트는 §12 정리 대상만 늘린다
+- **`REVIEW-PROTOCOL.md` 정정** — 「`tldr`은 화면에 렌더되지 않는다(JSON-LD 전용)」는 낡았다.
+  `intl-blog-post-client.tsx:284`가 aside로 렌더하고 **`tldr`이 있으면 `desc`를 화면에서 뺀다**.
+  🔴 즉 **`tldr`은 모바일 첫 화면의 유일한 답 블록**이다(08-30 (2) KO 실증과 같은 자리)
+
+### 7. 안 한 것
+
+⚠ **교차모델 적대 검수(3층)는 미실행이다** — 이번 세션은 Agent 스폰 요청이 없었다.
+위 교열은 **같은 모델의 자기 diff 검토**이고, 「쓴 모델이 본 0건은 0건이 아니다」가 그대로 적용된다.
+다음 회차에 렌즈를 붙일 것.
+
+---
+
 ## 2026-08-30 (2) — `holdem-blind-meaning` 5회차: 원인 실측 → tldr 공식 + 도구 링크 3자리
 
 사장님 지시 2단: ① *«우선 원인분석이니 본문만으로 좁히지말고 전체적으로 다 체크한번 해바바»*

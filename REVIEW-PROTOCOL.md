@@ -196,7 +196,7 @@ GSC 노출 높은 글 → 전략 글(핸드예시 많아 오류 위험) → 토�
 | 🔴 **«구성 가능성» 검사** | 게이트는 베스트5를 «주어진 카드로» 검산할 뿐 **그 배치가 홀덤에서 가능한지**는 안 본다. de 4렌즈가 4건을 잡았다(서로 다른 무늬 플러시 2개 ×2 · `K-K-K-A-2`(둘째 킥커 2 → 보드가 KKK22 = 풀하우스) · 「vier Asse를 이기는 건 SF **와 Royal**」). 최소한 「서로 다른 무늬 플러시 2개」는 정규식으로도 잡힌다 | 낮음~중 |
 | **H2↔FAQ 축어 중복** | 정본 §7-6인데 기계가 안 본다. de Session 1·2에서 **11쌍**(tiebreak 4·kicker 2·flush 3·reading 2) | 낮음 |
 | **질문형 H2 비율** | `audit:hard`는 KO만 본다. de 필라가 **10%**였는데 아무도 몰랐다 | 낮음 |
-| **직답 블록 유무** | `hand-rankings`·`kicker`에 없었다. ★`tldr`은 **화면에 렌더되지 않는다**(JSON-LD 전용) — 있다고 착각하기 쉽다 | 낮음 |
+| **직답 블록 유무** | `hand-rankings`·`kicker`에 없었다. ⚠ **2026-08-30 정정 — 「`tldr`은 화면에 렌더되지 않는다(JSON-LD 전용)」는 낡았다.** `components/intl-blog-post-client.tsx:284`가 `tldr`을 「Quick Answer」 aside로 **화면에 렌더**하고, 게다가 `tldr`이 있으면 **`desc`를 화면에서 뺀다**(L257). KO 렌더러도 동형(`blog-post-client.tsx:369`). 라이브 DOM 실측으로 확인(en `holdem-tiebreak-rules`). 🔴 **그래서 `tldr`은 모바일 첫 화면의 «유일한 답 블록»이다** — 검색자의 질문에 답하지 않는 `tldr`은 그 자체가 결함이다(2026-08-30 KO `blind-meaning` 실증) | 낮음 |
 | **이미지 title 누락** | 없으면 `<figcaption>`이 안 생긴다. `reading-the-board` 3장이 그랬다 | 낮음 |
 
 ---
