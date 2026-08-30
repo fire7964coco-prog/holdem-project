@@ -8,13 +8,13 @@ export const POST: Post = {
   tldr: "Ties are broken in a fixed order: hand rank first, then the cards that make the hand, then kickers from highest to lowest. Same pair → higher first kicker wins; identical five cards → split pot. Suits never decide a tie.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-07-19",
+  updated: "2026-08-30",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "⚖️",
   image: "/images/holdem-tiebreak-hero.webp",
   imageAlt: "Poker showdown: A♠ K♦ vs A♥ 9♣ with board A♦ Q♠ 7♥ 3♣ 2♦ — same pair of aces, kicker decides the winner",
-  tags: ["poker tie breaker rules", "how are ties broken in poker", "who wins same pair poker", "two pair tie poker", "does the 5th card matter in poker", "poker kicker", "higher straight", "texas holdem ties"],
+  tags: ["poker tie breaker rules", "how are ties broken in poker", "who wins same pair poker", "two pair tie poker", "does the 5th card matter in poker", "do suits matter in poker", "highest straight in poker", "poker kicker", "texas holdem ties"],
   content: `
 You turn over a pair of aces. So does your opponent. The dealer counts the side cards for a second — then pushes the whole pot to *them*. ==r:Same pair. How did you lose?==
 
@@ -81,7 +81,7 @@ Notice B's top kicker is the **board's** queen, not the 9 they're holding. ==r:A
 **Each hand rank has its own comparison order — some go to kickers, others are settled entirely by the cards that make them.** The badge shows whether a kicker comes into play:
 
 :::tiebreak
-Royal Flush|Always a tie (split pot)|-No kicker
+Royal Flush|Two of them only happens when the board is the royal — everyone chops|-No kicker
 Straight Flush|Highest card only|-No kicker
 Four of a Kind|Quad rank → 5th card|+Kicker
 Full House|Trips rank → pair rank|-No kicker
@@ -132,6 +132,8 @@ The board pairing nines handed *both* players a better second pair — your four
 
 On a board of 4♦ 3♣ 2♠ K♦ Q♥, a player with A♠ 5♠ makes the wheel: 5-4-3-2-A. A player with 6♥ 5♥ makes 6-5-4-3-2. ==r:The ace plays *low* in a wheel==, so A-2-3-4-5 sits at the very bottom of the straight ladder — ==g:the six-high straight wins.== Two straights with the same top card are identical, and identical hands split.
 
+At the other end of the ladder, ==**the highest straight in poker is Broadway — A-K-Q-J-10**==. No straight beats it (though a flush or anything above it still does), and the wheel sits at the bottom, so every straight in the game ranks somewhere between those two by its top card alone.
+
 Two things the wheel does *not* do: the ace can't wrap around the middle (Q-K-A-2-3 is nothing), and it can't be high and low at once. Flushes follow the parallel rule — all five cards compared from the top, suits irrelevant — with the details over in [flush vs straight](/en/blog/holdem-flush-vs-straight).
 
 ---
@@ -143,6 +145,18 @@ Two things the wheel does *not* do: the ace can't wrap around the middle (Q-K-A-
 Board **A♥ K♣ Q♦ 4♣ 2♥**, and it's A♠ 8♠ against A♦ 7♦. Both have a pair of aces. First kicker: the board's K — tie. Second kicker: the board's Q — tie. Third kicker: ==g:8 beats 7.== The literal fifth card of the hand just decided everything above it.
 
 The same logic runs quads-on-board pots: everyone shares four cards, so the fifth is the entire showdown. And it runs high-card and flush ties, where every card down to the last one is compared. The fifth card only stops mattering when the board outranks it — which is the last piece of the puzzle.
+
+---
+
+## Do Suits Matter in Poker?
+
+**No — not for deciding who wins. Suits do exactly one job in Texas Hold'em: five of the same suit make a flush. Beyond that they carry no rank, so two hands that match rank for rank always split the pot, and no card ever outranks another because of its suit.**
+
+The question keeps coming up because suit order genuinely exists in poker — just not in this game. Stud and razz use it to decide who brings it in and who takes an indivisible chip. Hold'em uses it for neither.
+
+The cleanest proof is the one chip that *cannot* be divided. The 2026 WSOP tournament rules say ==g:*"In button games with 2 or more high or low hands, the odd chip goes to the first seat left of the button"*== (Rule 73). Even when a pot physically will not split evenly, the rule reaches for **the seat**, not the suit — and the suit-based method in the back half of that same rule is written for stud and razz only.
+
+One more thing worth knowing: in Hold'em two flushes are always the *same* suit anyway, because all five community cards are shared and a board can't hold three hearts and three spades at once. So "my spades beat your hearts" is not a rule you lost to — it's a hand that cannot be dealt.
 
 ---
 
@@ -171,15 +185,15 @@ Spotting these runouts before the river bet is a skill of its own — that's [re
 
 **Q. How are ties broken in poker?**
 
-A. In a fixed order: hand rank first, then the cards that make the hand (the higher pair, trips, or top card), then the kickers from highest to lowest. If all five cards match in rank, the pot is split — suits are never used.
+A. Three checks in order — hand rank, then the cards that make the hand, then kickers from the top down — and the first difference ends it. Just as important is what never enters the comparison: suits, who bet last, who sits closer to the button, and how many chips each player put in. If the five cards match rank for rank, the dealer chops the pot no matter what happened in the betting.
 
 **Q. Who wins if two players have the same pair?**
 
-A. The player whose best five has the higher kicker. One pair carries three kickers, compared from the top down — the first difference wins the pot. If all three match, it's a split.
+A. The higher kicker — but check which of your cards actually reach the best five first. On A-Q-7-3-2 with a pair of aces, a player holding A-9 plays A-A-Q-9-7: the board's queen jumps ahead of their nine, so the nine is only the *second* kicker. Against A-K the pot is already decided at the first slot, and that nine is never compared at all. Three kicker slots exist; most pots end at the first one.
 
 **Q. Who wins if both players have two pair?**
 
-A. Compare the higher pair first, then the lower pair, then the single kicker. Aces-and-threes beats kings-and-queens, because the top pair is checked before anything else.
+A. Higher pair first, then the lower pair, then the one kicker — so aces-and-threes beats kings-and-queens even though the second pair is far smaller. The case that catches people is a double-paired board like K-K-9-9-5: every player already holds the same two pair, so the hand collapses to a single kicker and the best hole card at the table takes it. Two pair carries exactly one kicker, never two.
 
 **Q. Who wins if two players have the same three of a kind?**
 
@@ -187,7 +201,7 @@ A. Three of a kind carries two kickers, compared highest first — so if both pl
 
 **Q. Does the 5th card matter in poker?**
 
-A. Yes. When the first four cards of both hands are identical, the fifth card decides the whole pot — a pair's third kicker, a flush's lowest card, the side card to quads on the board. It only stops mattering when the board's cards outrank your hole card.
+A. Yes — and it is the most common way a player loses a pot they were sure they had won. Three spots put the whole pot on the last card: a pair's third kicker, the lowest card of a flush, and the side card next to quads sitting on the board. It stops mattering only when the board's own cards outrank whatever you hold, at which point your hole cards drop out of the hand entirely and you are playing the board.
 
 **Q. Can you use an ace as a 1 in poker?**
 
@@ -195,7 +209,7 @@ A. Yes, but only in the A-2-3-4-5 straight (the "wheel"), where it plays as the 
 
 **Q. Can you have a higher straight than another player?**
 
-A. Yes — straights are ranked purely by their top card, so 6-5-4-3-2 beats the A-5 wheel, and Broadway (A-K-Q-J-10) beats them all. Equal top cards mean identical straights and a split pot.
+A. Yes, and in practice it happens when most of the straight is already on the board. Take a board of 5♦ 6♣ 7♠ 8♥ 2♦: a player with 9♣ 4♠ makes 9-8-7-6-5, while a player with 4♥ 3♦ makes 8-7-6-5-4 off the same four cards. Both of them "made a straight"; only the top card was ever counted, so the nine takes it. Equal top cards mean the same straight and a chop.
 
 **Q. Who wins if two players have the same straight?**
 
@@ -213,13 +227,9 @@ A. Compare the three-of-a-kind first — the higher trips win, so K-K-K-2-2 beat
 
 A. The higher straight flush wins, decided by its top card — a queen-high straight flush beats a nine-high one. A royal flush is simply the ace-high straight flush, so it beats every other straight flush. Identical top cards mean an identical hand and a split pot.
 
-**Q. Do suits matter in poker?**
-
-A. Only for making a flush — never for ranking hands or breaking ties. Suits let you build a flush (five cards of one suit), but no suit outranks another, so a spade flush doesn't beat a heart flush, and two otherwise-identical hands always split. Winners are decided by rank and kicker alone.
-
 **Q. Do suits ever break a tie in Texas Hold'em?**
 
-A. No. There is no suit ranking in Hold'em — if two best five-card hands match rank for rank, the pot is split regardless of suits.
+A. No — but there is one place suits are used at a Hold'em table, and it is not the pot. When a game starts, each player draws a card to decide where the dealer button goes, and if two draws tie on rank the suit order settles it. That picks a *seat*, never a hand. Everywhere else in the rulebook suit order belongs to stud and razz. If two best fives match rank for rank, the pot is split regardless of suits.
 
 **Q. What happens if both players have the exact same hand?**
 

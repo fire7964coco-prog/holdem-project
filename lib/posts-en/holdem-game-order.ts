@@ -3,18 +3,25 @@ import type { Post } from "../posts";
 export const POST: Post = {
   slug: "holdem-game-order",
   title: "How to Play Texas Hold'em: The Order of Play From Blinds to Showdown",
-  seoTitle: "Lost on When to Bet? — Texas Hold'em Order of Play Explained",
-  desc: "Freeze on 'whose turn is it?' at Hold'em? Here's the full order of play — preflop, flop, turn, river, showdown — with a real hand walked through step by step.",
-  tldr: "A hand of Texas Hold'em runs: post blinds → deal two hole cards → preflop → flop (3 cards) → turn (1 card) → river (1 card) → showdown, with four betting rounds in total.",
+  // ★2026-08-30 「who bets first」 축으로 재조준 (라쿠 US 실측 · SD 13~17 = 매우 승산):
+  //   who bets first in texas holdem 390 · who goes first in poker 320 · who bets first in poker 210 ·
+  //   poker betting order 170 · poker order of play 140 · texas holdem order of play 110 ·
+  //   who acts first in poker 50(3개월 +40%) · who bets first after the flop 50 · who shows cards first 30 = 합 ~1,470/월
+  //   실측: 이 축 66노출이 전부 `/en/blog` 목록으로 가고(r67~90) 이 글은 노출 0이었다.
+  //   구 seoTitle·desc·tldr 어디에도 「who bets/goes first」가 없었다 — 답은 본문에 있는데 검색자의 단어가 없던 것.
+  //   ⚠ 제목 교체가 안전한 이유: 이 URL은 GSC 노출 0이라 **끊길 CTR 측정이 없다**(판단 대기 #5 조건).
+  seoTitle: "Who Bets First in Texas Hold'em? — The Order of Play",
+  desc: "Whose turn is it — and who bets first? The full Texas Hold'em order of play: blinds, preflop, flop, turn, river, showdown, and who acts first on every street.",
+  tldr: "Preflop, the player to the left of the big blind bets first. On the flop, turn and river it is the first live player to the left of the button — usually the small blind. (Heads-up flips this.) The hand itself runs blinds → hole cards → preflop → flop → turn → river → showdown, with four betting rounds.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-08-25",
+  updated: "2026-08-30",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎬",
   image: "/images/blog-holdem-game-flow.webp",
   imageAlt: "Texas Hold'em order of play diagram — blinds, preflop, flop, turn, river, showdown all six stages",
-  tags: ["how to play texas holdem", "texas holdem rules", "poker order of play", "preflop flop turn river", "poker betting rounds", "who acts first in poker", "how a poker hand works", "poker showdown"],
+  tags: ["who bets first in texas holdem", "who goes first in poker", "poker betting order", "texas holdem order of play", "poker order of play", "who acts first in poker", "preflop flop turn river", "poker showdown"],
   content: `
 Everyone who sits down to their first game of Texas Hold'em asks the same thing: ==r:*"Wait — whose turn is it, and when do I put money in?"*== You know you get cards. What you don't know is when to bet, when more cards come out, and how the winner is actually decided.
 
@@ -143,9 +150,11 @@ Who has to show first, when you can muck, and the etiquette around slow-rolling 
 
 ---
 
-## Who Acts First on Each Street?
+## Who Bets First in Texas Hold'em?
 
-"Whose turn is it?" has a different answer before and after the flop — and that single shift is the engine behind position strategy.
+**Two seats own the word "first," and which one is on duty depends on whether the flop is out. Before the flop it is UTG — "under the gun," immediately left of the big blind — precisely because the blinds already have money in and get to act last. Once the flop lands that privilege is spent, so the action restarts at the first live player left of the button, and the button closes every street from there.**
+
+"Whose turn is it?" therefore has a different answer before and after the flop — and that single shift is the engine behind position strategy.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -341,6 +350,18 @@ Texas Hold'em takes thirty minutes to learn and a lifetime to master. But the ba
 **Q. What is the exact order of play in Texas Hold'em?**
 
 A. Post blinds → deal two hole cards → preflop betting → reveal the flop (3 cards) and bet → turn (1 card) and bet → river (final card) and bet → showdown (best five cards compared).
+
+**Q. Who goes first in poker?**
+
+A. It depends which "first" you mean, and that is exactly why the question trips people up. Three different moments claim the word in a single hand: first to *post* (the small blind), first to *act* preflop (UTG, immediately left of the big blind), and first to act once the flop is out (back to the small blind). So the answer flips mid-hand — UTG opens the preflop round, then the small blind opens every round after it.
+
+**Q. Who bets first after the flop?**
+
+A. The first live player to the left of the button — at a full table that is the small blind. If the small blind has already folded it passes to the big blind, then onward clockwise. The same seat leads the turn and the river too; only preflop starts somewhere else. Heads-up is the exception: there the button acts first preflop and last on every street after it.
+
+**Q. Who shows their cards first at showdown?**
+
+A. Whoever made the last aggressive action — the final bet or raise on the river — has to show first. If the river checked through with no bet at all, the first active player to the left of the button shows first and the rest follow clockwise. A player who knows they are beaten can muck instead of showing.
 
 **Q. What's the difference between preflop and the flop?**
 
