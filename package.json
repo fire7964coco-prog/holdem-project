@@ -56,7 +56,9 @@
     "check:cjk": "node scripts/check-cjk-linebreak.mjs",
     "check:cjk:selftest": "node scripts/check-cjk-linebreak.mjs --selftest",
     "check:seo-sync": "node scripts/check-seo-sync.mjs",
-    "check:seo-sync:selftest": "node scripts/check-seo-sync.mjs --selftest"
+    "check:seo-sync:selftest": "node scripts/check-seo-sync.mjs --selftest",
+    "check:images": "node scripts/check-images.mjs",
+    "check:images:selftest": "node scripts/check-images.mjs --selftest"
   },
   "dependencies": {
     "@radix-ui/react-tabs": "^1.1.4",
