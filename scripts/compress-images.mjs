@@ -10,8 +10,16 @@ const ROOT = join(process.cwd(), "public", "images");
 const IN_PLACE = process.argv.includes("--in-place");
 const OUT_DIR = IN_PLACE ? ROOT : join(process.cwd(), "public", "images", ".compressed");
 const MAX_WIDTH = 1200;
-/** 기본 65 — 블로그 인포그래픽은 70도 OK, 80KB 초과 시 --aggressive(60) */
-const WEBP_QUALITY = process.argv.includes("--aggressive") ? 60 : 65;
+/**
+ * 🔴 기본 88 — 용량 상한을 걸지 않는다(사장님 지시 2026-08-30).
+ * 축어: 「60KB를 강제하지마..상황에 맞게 해야지...이미지가 선명하게 보여야 유저들이
+ * 포스팅을 이해하는데 도움이 되지...조금 넘어도 괜찮아」
+ * 옛 기본값 65는 폐기. 이 값을 낮추면 q88로 올려둔 자산이 통째로 되돌아간다.
+ * 근거·측정법 = CLAUDE.md §9-2-A (데스크톱은 sizes=1200px라 축소 없이 받는다).
+ */
+const WEBP_QUALITY = Number(
+  (process.argv.find((a) => a.startsWith("--quality=")) || "").split("=")[1] || 88
+);
 const WEBP_EFFORT = 6;
 const EXT = new Set([".webp", ".png", ".jpg", ".jpeg"]);
 

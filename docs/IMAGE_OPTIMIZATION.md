@@ -19,10 +19,32 @@ Lighthouse Performance(특히 LCP)와 모바일 데이터 사용량에 직결됩
 |------|-----|
 | 포맷 | **WebP** (PNG/JPG 업로드 금지 — 스크립트가 WebP로 변환) |
 | 최대 가로 | **1200px** (본문 `width="1200"`과 동일) |
-| WebP quality | **65** (기본, `compress-images.mjs`) · 더 줄이려면 `--aggressive` → **60** |
+| WebP quality | 🔴 **88** (기본, `compress-images.mjs`) — 낮추려면 `--quality=NN`. **옛 «65 / `--aggressive` 60»은 폐기**(2026-08-30) |
 | effort | **6** |
-| 파일당 목표 | **≤ 60KB** (인포그래픽·복잡한 카드도 **≤ 80KB** 이내) |
+| 파일당 목표 | 🔴 **상한 없음** — 옛 «≤60KB»는 **폐기**. 아래 §품질 절 참조 |
 | 글당 합계 | **디스크 합계로 재지 말 것** — 아래 §전송량 기준 참조 |
+
+### 🔴 인코딩 품질 = q88 · 용량 상한 금지 (2026-08-30 사장님 지시)
+
+> 축어: *「60KB를 강제하지마..상황에 맞게 해야지...이미지가 선명하게 보여야 유저들이
+> 포스팅을 이해하는데 도움이 되지...조금 넘어도 괜찮아」*
+
+**같은 날 이 규칙을 두 번 어겼다.** ①60KB 상한이 `ept-barcelona`를 **q40까지** 강등시켰고,
+②상한을 뺀 뒤에도 **q65 고정이 남아** 49장이 7~9% 작아졌다(세대 손실).
+
+**판단은 디스크 파일이 아니라 «렌더 경로 끝단»에서 측정한다** — 측정법이 결론을 뒤집는다:
+
+| 경로 | q65 | q88 | 판정 |
+|---|---|---|---|
+| **모바일** (750px webp) | MAE 1.96 · 전송 19.0KB | MAE 1.87 · 전송 18.6KB | **차이 없음** — 축소가 아티팩트를 흡수 |
+| **데스크톱** (1200px AVIF) | 최대 국소오차 **40** · MAE 1.57 | 최대 국소오차 **24** · MAE 1.30 | 🔴 **q88이 낫다** · 전송량은 동일(53.3 vs 52.1KB) |
+
+**데스크톱이 갈리는 이유** = 히어로 `sizes`가 `(max-width:768px) 100vw, (max-width:1200px) 90vw, 1200px`라
+**축소 없이 원본 해상도를 그대로 받는다.** 그래서 원본 품질이 최종 화질에 직접 반영된다.
+반면 전송량은 AVIF로 재인코딩되므로 **원본 webp 용량과 무관**하다 →
+**디스크 1.5배는 전송 부담이 아니다.**
+
+🔴 **`compress:images`의 `WEBP_QUALITY`를 낮추지 마라** — 돌리는 순간 q88 자산이 통째로 되돌아간다.
 
 ### 글당 합계는 «실제 전송량»으로 잰다 (2026-08-07 기준 갱신)
 
@@ -63,7 +85,7 @@ curl -s -o /dev/null -w "%{size_download}\n" "https://www.holdemmaster.com/_next
 
 1200px로 리사이즈한 뒤에도 80KB를 넘으면:
 
-1. Squoosh에서 quality **65**로 한 번 더 저장하거나  
+1. Squoosh에서 quality **88** 이상으로 저장하거나  
 2. 불필요한 여백·그라데이션을 줄인 뒤 재보내기
 
 ## 자동 압축 (권장)
@@ -81,15 +103,15 @@ npm run compress:images:preview
 `scripts/compress-images.mjs`가 다음을 수행합니다.
 
 - 가로 1200px 초과 시 리사이즈  
-- WebP quality **65**로 재인코딩 (`--aggressive` 시 60)  
+- WebP quality **88**로 재인코딩 (낮추려면 `--quality=NN` — 🔴 낮추지 마라, §품질 절)  
 - `--apply` 시 `public/images/`에 덮어쓰기  
 
 > **팁:** `npm run dev` 실행 중에는 Windows에서 파일 잠금으로 실패할 수 있습니다. 실패 시 dev 서버를 잠시 끄고 다시 실행하세요.
 
 ## 수동 압축 (대안)
 
-- [Squoosh](https://squoosh.app) — WebP, quality 70, Resize width 1200  
-- Photoshop — Export As → WebP, Quality 70  
+- [Squoosh](https://squoosh.app) — WebP, **quality 88**, Resize width 1200  
+- Photoshop — Export As → WebP, **Quality 88**  
 
 ## 블로그 마크다운에서 사용
 
@@ -111,7 +133,7 @@ npm run compress:images:preview
 
 - [ ] `public/images/`에 WebP만 두었는가  
 - [ ] `npm run compress:images` 실행했는가  
-- [ ] 파일당 80KB 이하인가 (`Get-ChildItem public/images | Select Name, Length`)  
+- [ ] 🔴 **용량 상한 점검은 폐기** — 대신 **q88로 인코딩됐는지**와 **폭 1200px인지**를 본다  
 - [ ] alt·title 캡션을 넣었는가  
 
 ## 변경 이력
@@ -132,10 +154,10 @@ npm run compress:images:preview
 | 항목 | 기준 |
 |------|------|
 | 형식 | webp 전용 (png/jpg 절대 금지) |
-| 용량 | 파일당 ≤ 60KB (복잡한 이미지 ≤ 80KB) |
+| 용량 | 🔴 **상한 없음**(2026-08-30 폐기) — 옛 «≤60KB» 금지 |
 | **글당 합계** | **하드리밋 아님.** 목적은 속도이고 200KB는 대리 지표였다 — **조금 넘어도 된다.** 대신 **가독성을 해치지 않는 선에서** 압축하고, **디스크 합계가 아니라 실제 전송량**으로 잰다 (§9-2) |
 | 해상도 | 1200×675 — **폭 750px 미만 금지** (next/image 최적화를 우회한다, §9-2) |
-| quality | 65 (기본), 80KB 초과 시 60 |
+| quality | 🔴 **88** (2026-08-30 — 옛 «65 / 80KB 초과 시 60»은 폐기) |
 | alt | 구체적 상황 묘사 필수 (키워드 나열 금지) |
 | 히어로 | `priority={true}` 필수 |
 
@@ -193,8 +215,8 @@ npm run compress:images:preview
 ## 15. 이미지 최적화 실전 노하우
 
 ### 기본
-- `npm run compress:images` — public/images 전체를 quality 65로 압축 후 적용 (`--apply` 포함됨). 단, 이미 압축된 webp는 거의 안 줄어듦
-- 신규 PNG(예: 생성형 이미지) → webp 변환 + 1200×675 리사이즈 + quality 65
+- `npm run compress:images` — public/images 전체를 **quality 88**로 압축 후 적용 (`--apply` 포함됨). 단, 이미 압축된 webp는 거의 안 줄어듦
+- 신규 PNG(예: 생성형 이미지) → webp 변환 + 1200×675 리사이즈 + **quality 88**
 
 ### 개별 파일이 60KB를 못 넘기게 강제 압축할 때
 `sharp`로 직접 quality를 45~55까지 낮춰 재압축. **Windows 파일 락 주의**:
