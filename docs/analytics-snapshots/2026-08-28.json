@@ -1,0 +1,311 @@
+{
+  "rulesVersion": 1,
+  "lastConfirmedDay": "2026-08-28",
+  "skippedDays": [
+    "2026-08-29(참여율 2.4% < 기준선 55.1%의 절반 = 미처리)"
+  ],
+  "windows": {
+    "gaCur": {
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-28"
+    },
+    "gaPrv": {
+      "startDate": "2026-07-04",
+      "endDate": "2026-07-31"
+    },
+    "gscCur": [
+      "2026-07-29",
+      "2026-08-25"
+    ],
+    "gscPrv": [
+      "2026-07-01",
+      "2026-07-28"
+    ]
+  },
+  "organic": {
+    "cur": {
+      "raw": {
+        "sessions": 2466,
+        "rate": 0.6123276561232766
+      },
+      "sessions": 2327,
+      "rate": 0.6476149548775247,
+      "secPerSession": 111.89471422432317,
+      "pvPerSession": 1.9991405242801892,
+      "notSetDropped": 139
+    },
+    "prv": {
+      "raw": {
+        "sessions": 1204,
+        "rate": 0.6677740863787376
+      },
+      "sessions": 1154,
+      "rate": 0.6932409012131716,
+      "secPerSession": 124.57192374350086,
+      "pvPerSession": 2.0476603119584054,
+      "notSetDropped": 50
+    }
+  },
+  "bot": {
+    "rule": "sessions>=20 && PV/session<1.15 && sec/PV<3",
+    "suspects": [
+      {
+        "country": "Singapore",
+        "s": 532,
+        "pv": 533,
+        "sec": 375,
+        "pvPer": 1.0018796992481203,
+        "secPerPv": 0.7035647279549718
+      }
+    ],
+    "excluded": [
+      "Singapore"
+    ]
+  },
+  "locales": {
+    "ko": {
+      "pv": 5048,
+      "sec": 277623,
+      "botPv": 82
+    },
+    "en": {
+      "pv": 285,
+      "sec": 16770,
+      "botPv": 179
+    },
+    "zh": {
+      "pv": 90,
+      "sec": 4720,
+      "botPv": 59
+    },
+    "id": {
+      "pv": 32,
+      "sec": 1557,
+      "botPv": 37
+    },
+    "zh-hant": {
+      "pv": 42,
+      "sec": 2556,
+      "botPv": 38
+    },
+    "fr": {
+      "pv": 18,
+      "sec": 852,
+      "botPv": 11
+    },
+    "ja": {
+      "pv": 24,
+      "sec": 982,
+      "botPv": 1
+    },
+    "de": {
+      "pv": 18,
+      "sec": 666,
+      "botPv": 42
+    },
+    "pt": {
+      "pv": 2,
+      "sec": 295,
+      "botPv": 46
+    },
+    "tr": {
+      "pv": 4,
+      "sec": 376,
+      "botPv": 12
+    },
+    "vi": {
+      "pv": 1,
+      "sec": 104,
+      "botPv": 13
+    },
+    "es": {
+      "pv": 12,
+      "sec": 383,
+      "botPv": 2
+    },
+    "fil": {
+      "pv": 0,
+      "sec": 26,
+      "botPv": 8
+    },
+    "ar": {
+      "pv": 2,
+      "sec": 1,
+      "botPv": 0
+    },
+    "hi": {
+      "pv": 0,
+      "sec": 11,
+      "botPv": 1
+    },
+    "ms": {
+      "pv": 0,
+      "sec": 5,
+      "botPv": 1
+    },
+    "pl": {
+      "pv": 1,
+      "sec": 597,
+      "botPv": 1
+    },
+    "ru": {
+      "pv": 4,
+      "sec": 510,
+      "botPv": 0
+    }
+  },
+  "gsc": {
+    "ko": {
+      "imp": 26899,
+      "clk": 809,
+      "wpos": 271551,
+      "pages": 180
+    },
+    "koPrev": {
+      "imp": 12731,
+      "clk": 559,
+      "wpos": 174478,
+      "pages": 71
+    },
+    "nonKo": {
+      "imp": 2531,
+      "clk": 23,
+      "wpos": 100694,
+      "pages": 132
+    },
+    "nonKoPrev": {
+      "imp": 6290,
+      "clk": 4,
+      "wpos": 273703,
+      "pages": 49
+    },
+    "byLocale": {
+      "ko": {
+        "imp": 26899,
+        "clk": 809,
+        "wpos": 271551,
+        "pages": 180
+      },
+      "zh-hant": {
+        "imp": 104,
+        "clk": 7,
+        "wpos": 3544,
+        "pages": 8
+      },
+      "id": {
+        "imp": 125,
+        "clk": 8,
+        "wpos": 1075,
+        "pages": 6
+      },
+      "en": {
+        "imp": 1449,
+        "clk": 4,
+        "wpos": 58280,
+        "pages": 43
+      },
+      "es": {
+        "imp": 380,
+        "clk": 3,
+        "wpos": 19840,
+        "pages": 12
+      },
+      "de": {
+        "imp": 142,
+        "clk": 1,
+        "wpos": 6350,
+        "pages": 15
+      },
+      "ar": {
+        "imp": 4,
+        "clk": 0,
+        "wpos": 32,
+        "pages": 3
+      },
+      "fa": {
+        "imp": 1,
+        "clk": 0,
+        "wpos": 50,
+        "pages": 1
+      },
+      "fil": {
+        "imp": 12,
+        "clk": 0,
+        "wpos": 133,
+        "pages": 2
+      },
+      "fr": {
+        "imp": 35,
+        "clk": 0,
+        "wpos": 1162,
+        "pages": 2
+      },
+      "he": {
+        "imp": 7,
+        "clk": 0,
+        "wpos": 31,
+        "pages": 1
+      },
+      "it": {
+        "imp": 8,
+        "clk": 0,
+        "wpos": 78,
+        "pages": 1
+      },
+      "ja": {
+        "imp": 112,
+        "clk": 0,
+        "wpos": 5783,
+        "pages": 10
+      },
+      "ms": {
+        "imp": 5,
+        "clk": 0,
+        "wpos": 24,
+        "pages": 2
+      },
+      "pl": {
+        "imp": 13,
+        "clk": 0,
+        "wpos": 97,
+        "pages": 1
+      },
+      "pt": {
+        "imp": 69,
+        "clk": 0,
+        "wpos": 2503,
+        "pages": 10
+      },
+      "ro": {
+        "imp": 6,
+        "clk": 0,
+        "wpos": 48,
+        "pages": 1
+      },
+      "ru": {
+        "imp": 11,
+        "clk": 0,
+        "wpos": 258,
+        "pages": 2
+      },
+      "tr": {
+        "imp": 12,
+        "clk": 0,
+        "wpos": 311,
+        "pages": 3
+      },
+      "vi": {
+        "imp": 16,
+        "clk": 0,
+        "wpos": 728,
+        "pages": 3
+      },
+      "zh": {
+        "imp": 20,
+        "clk": 0,
+        "wpos": 367,
+        "pages": 6
+      }
+    }
+  }
+}
