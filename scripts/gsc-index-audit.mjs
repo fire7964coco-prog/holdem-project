@@ -56,7 +56,13 @@ let urls = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
 const isKoBlog = (u) => /holdemmaster\.com\/blog\//.test(u);
 const isTool = (u) => /holdemmaster\.com\/(calculator|quiz|win-rate-quiz|glossary|hand-chart|ranking|rules|strategy|tournaments|pub|holdem-practice|hands)(\/|$)/.test(u);
 
-if (has('--tools')) urls = urls.filter(isTool);
+// ★2026-08-30 --prefix 신설 — 로케일 하나만 재는 자리가 계속 나온다(25개 로케일).
+//   `--all`(609개·10~20분)은 로케일 한 곳을 확인하려고 돌리기엔 너무 무겁고,
+//   그때마다 임시 스크립트를 만들면 §12 정리 대상만 늘어난다.
+//   예: node scripts/gsc-index-audit.mjs --prefix /en/blog/
+const prefix = val('--prefix', '');
+if (prefix) urls = urls.filter((u) => u.replace('https://www.holdemmaster.com', '').startsWith(prefix));
+else if (has('--tools')) urls = urls.filter(isTool);
 else if (!has('--all')) urls = urls.filter(isKoBlog);
 
 const limit = Number(val('--limit', 0));

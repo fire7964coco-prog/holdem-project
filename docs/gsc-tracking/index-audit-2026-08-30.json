@@ -1,0 +1,517 @@
+{
+  "site": "sc-domain:holdemmaster.com",
+  "total": 56,
+  "byCoverage": {
+    "Submitted and indexed": 19,
+    "Discovered - currently not indexed": 11,
+    "URL is unknown to Google": 3,
+    "Crawled - currently not indexed": 21,
+    "Duplicate without user-selected canonical": 2
+  },
+  "rows": [
+    {
+      "url": "https://www.holdemmaster.com/en/blog/3bet-pot-bet-sizing",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastCrawl": "2026-08-25T04:17:20Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/en/blog/3bet-pot-bet-sizing",
+      "userCanonical": "https://www.holdemmaster.com/en/blog/3bet-pot-bet-sizing"
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/3bet-pot-cbet",
+      "verdict": "NEUTRAL",
+      "coverage": "Discovered - currently not indexed",
+      "lastCrawl": null,
+      "indexing": "INDEXING_STATE_UNSPECIFIED",
+      "googleCanonical": null,
+      "userCanonical": null
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/3bet-pot-low-board",
+      "verdict": "NEUTRAL",
+      "coverage": "Discovered - currently not indexed",
+      "lastCrawl": null,
+      "indexing": "INDEXING_STATE_UNSPECIFIED",
+      "googleCanonical": null,
+      "userCanonical": null
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/a-high-board-cbet",
+      "verdict": "NEUTRAL",
+      "coverage": "Discovered - currently not indexed",
+      "lastCrawl": null,
+      "indexing": "INDEXING_STATE_UNSPECIFIED",
+      "googleCanonical": null,
+      "userCanonical": null
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/ace-paired-board-strategy",
+      "verdict": "NEUTRAL",
+      "coverage": "URL is unknown to Google",
+      "lastCrawl": null,
+      "indexing": "INDEXING_STATE_UNSPECIFIED",
+      "googleCanonical": null,
+      "userCanonical": null
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/apt-incheon-2026-guide",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastCrawl": "2026-06-19T07:41:31Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/en/blog/apt-incheon-2026-guide",
+      "userCanonical": "https://www.holdemmaster.com/en/blog/apt-incheon-2026-guide"
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/blind-battle-cbet",
+      "verdict": "NEUTRAL",
+      "coverage": "Discovered - currently not indexed",
+      "lastCrawl": null,
+      "indexing": "INDEXING_STATE_UNSPECIFIED",
+      "googleCanonical": null,
+      "userCanonical": null
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/blind-battle-connected-board",
+      "verdict": "NEUTRAL",
+      "coverage": "Discovered - currently not indexed",
+      "lastCrawl": null,
+      "indexing": "INDEXING_STATE_UNSPECIFIED",
+      "googleCanonical": null,
+      "userCanonical": null
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/broadway-board-strategy",
+      "verdict": "NEUTRAL",
+      "coverage": "Discovered - currently not indexed",
+      "lastCrawl": null,
+      "indexing": "INDEXING_STATE_UNSPECIFIED",
+      "googleCanonical": null,
+      "userCanonical": null
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/donk-bet-strategy",
+      "verdict": "NEUTRAL",
+      "coverage": "Discovered - currently not indexed",
+      "lastCrawl": null,
+      "indexing": "INDEXING_STATE_UNSPECIFIED",
+      "googleCanonical": null,
+      "userCanonical": null
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/ept-barcelona-2026-guide",
+      "verdict": "NEUTRAL",
+      "coverage": "Crawled - currently not indexed",
+      "lastCrawl": "2026-07-27T18:58:18Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/en/blog/ept-barcelona-2026-guide",
+      "userCanonical": "https://www.holdemmaster.com/en/blog/ept-barcelona-2026-guide"
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/holdem-3bet",
+      "verdict": "NEUTRAL",
+      "coverage": "Crawled - currently not indexed",
+      "lastCrawl": "2026-08-20T10:10:55Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/en/blog/holdem-3bet",
+      "userCanonical": "https://www.holdemmaster.com/en/blog/holdem-3bet"
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/holdem-all-in-rules",
+      "verdict": "NEUTRAL",
+      "coverage": "Crawled - currently not indexed",
+      "lastCrawl": "2026-08-25T16:08:36Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/en/blog/holdem-all-in-rules",
+      "userCanonical": "https://www.holdemmaster.com/en/blog/holdem-all-in-rules"
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/holdem-bad-beat",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastCrawl": "2026-08-25T13:24:54Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/en/blog/holdem-bad-beat",
+      "userCanonical": "https://www.holdemmaster.com/en/blog/holdem-bad-beat"
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/holdem-betting-actions",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastCrawl": "2026-08-24T21:38:34Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/en/blog/holdem-betting-actions",
+      "userCanonical": "https://www.holdemmaster.com/en/blog/holdem-betting-actions"
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/holdem-blind-meaning",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastCrawl": "2026-07-23T02:25:02Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/en/blog/holdem-blind-meaning",
+      "userCanonical": "https://www.holdemmaster.com/en/blog/holdem-blind-meaning"
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/holdem-bubble",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastCrawl": "2026-07-29T01:13:54Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/en/blog/holdem-bubble",
+      "userCanonical": "https://www.holdemmaster.com/en/blog/holdem-bubble"
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/holdem-card-counting",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastCrawl": "2026-08-18T12:54:18Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/en/blog/holdem-card-counting",
+      "userCanonical": "https://www.holdemmaster.com/en/blog/holdem-card-counting"
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/holdem-continuation-bet",
+      "verdict": "NEUTRAL",
+      "coverage": "Crawled - currently not indexed",
+      "lastCrawl": "2026-08-25T15:29:27Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/en/blog/holdem-continuation-bet",
+      "userCanonical": "https://www.holdemmaster.com/en/blog/holdem-continuation-bet"
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/holdem-cooler",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastCrawl": "2026-07-05T06:29:31Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/en/blog/holdem-cooler",
+      "userCanonical": "https://www.holdemmaster.com/en/blog/holdem-cooler"
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/holdem-drawing-odds",
+      "verdict": "NEUTRAL",
+      "coverage": "Crawled - currently not indexed",
+      "lastCrawl": "2026-08-22T07:53:31Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/en/blog/holdem-drawing-odds",
+      "userCanonical": "https://www.holdemmaster.com/en/blog/holdem-drawing-odds"
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/holdem-equity",
+      "verdict": "NEUTRAL",
+      "coverage": "Crawled - currently not indexed",
+      "lastCrawl": "2026-08-25T17:10:40Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/en/blog/holdem-equity",
+      "userCanonical": "https://www.holdemmaster.com/en/blog/holdem-equity"
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/holdem-fish",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastCrawl": "2026-07-05T05:17:08Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/en/blog/holdem-fish",
+      "userCanonical": "https://www.holdemmaster.com/en/blog/holdem-fish"
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/holdem-flush-vs-straight",
+      "verdict": "NEUTRAL",
+      "coverage": "Crawled - currently not indexed",
+      "lastCrawl": "2026-08-25T16:39:46Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/en/blog/holdem-flush-vs-straight",
+      "userCanonical": "https://www.holdemmaster.com/en/blog/holdem-flush-vs-straight"
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/holdem-game-order",
+      "verdict": "NEUTRAL",
+      "coverage": "Crawled - currently not indexed",
+      "lastCrawl": "2026-07-29T17:58:29Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/en/blog/holdem-game-order",
+      "userCanonical": "https://www.holdemmaster.com/en/blog/holdem-game-order"
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/holdem-glossary",
+      "verdict": "NEUTRAL",
+      "coverage": "Crawled - currently not indexed",
+      "lastCrawl": "2026-08-24T21:38:19Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/en/blog/holdem-glossary",
+      "userCanonical": "https://www.holdemmaster.com/en/blog/holdem-glossary"
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/holdem-hand-rankings",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastCrawl": "2026-08-04T23:08:48Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/en/blog/holdem-hand-rankings",
+      "userCanonical": "https://www.holdemmaster.com/en/blog/holdem-hand-rankings"
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/holdem-icm",
+      "verdict": "NEUTRAL",
+      "coverage": "URL is unknown to Google",
+      "lastCrawl": null,
+      "indexing": "INDEXING_STATE_UNSPECIFIED",
+      "googleCanonical": null,
+      "userCanonical": null
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/holdem-implied-odds",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastCrawl": "2026-07-16T17:29:07Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/en/blog/holdem-implied-odds",
+      "userCanonical": "https://www.holdemmaster.com/en/blog/holdem-implied-odds"
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/holdem-kicker",
+      "verdict": "NEUTRAL",
+      "coverage": "Crawled - currently not indexed",
+      "lastCrawl": "2026-08-24T20:04:44Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/en/blog/holdem-kicker",
+      "userCanonical": "https://www.holdemmaster.com/en/blog/holdem-kicker"
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/holdem-limping",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastCrawl": "2026-08-19T05:26:01Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/en/blog/holdem-limping",
+      "userCanonical": "https://www.holdemmaster.com/en/blog/holdem-limping"
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/holdem-outs",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastCrawl": "2026-07-04T03:39:30Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/en/blog/holdem-outs",
+      "userCanonical": "https://www.holdemmaster.com/en/blog/holdem-outs"
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/holdem-position-play",
+      "verdict": "NEUTRAL",
+      "coverage": "Crawled - currently not indexed",
+      "lastCrawl": "2026-08-25T16:26:54Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/en/blog/holdem-position-play",
+      "userCanonical": "https://www.holdemmaster.com/en/blog/holdem-position-play"
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/holdem-positions",
+      "verdict": "NEUTRAL",
+      "coverage": "Crawled - currently not indexed",
+      "lastCrawl": "2026-08-19T05:28:40Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/en/blog/holdem-positions",
+      "userCanonical": "https://www.holdemmaster.com/en/blog/holdem-positions"
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/holdem-pot-odds",
+      "verdict": "NEUTRAL",
+      "coverage": "Duplicate without user-selected canonical",
+      "lastCrawl": "2026-08-22T07:51:53Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.747live.bet/",
+      "userCanonical": null
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/holdem-probability",
+      "verdict": "NEUTRAL",
+      "coverage": "Crawled - currently not indexed",
+      "lastCrawl": "2026-08-25T16:30:18Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/en/blog/holdem-probability",
+      "userCanonical": "https://www.holdemmaster.com/en/blog/holdem-probability"
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/holdem-rake",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastCrawl": "2026-08-21T06:44:42Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/en/blog/holdem-rake",
+      "userCanonical": "https://www.holdemmaster.com/en/blog/holdem-rake"
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/holdem-reading-the-board",
+      "verdict": "NEUTRAL",
+      "coverage": "Duplicate without user-selected canonical",
+      "lastCrawl": "2026-07-03T01:32:07Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.747live.bet/",
+      "userCanonical": null
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/holdem-short-stack",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastCrawl": "2026-07-09T09:02:16Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/en/blog/holdem-short-stack",
+      "userCanonical": "https://www.holdemmaster.com/en/blog/holdem-short-stack"
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/holdem-showdown-rules",
+      "verdict": "NEUTRAL",
+      "coverage": "Crawled - currently not indexed",
+      "lastCrawl": "2026-08-27T09:43:16Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/en/blog/holdem-showdown-rules",
+      "userCanonical": "https://www.holdemmaster.com/en/blog/holdem-showdown-rules"
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/holdem-split-pot-rules",
+      "verdict": "NEUTRAL",
+      "coverage": "Crawled - currently not indexed",
+      "lastCrawl": "2026-08-25T16:05:19Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/en/blog/holdem-split-pot-rules",
+      "userCanonical": "https://www.holdemmaster.com/en/blog/holdem-split-pot-rules"
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/holdem-starting-hands-chart",
+      "verdict": "NEUTRAL",
+      "coverage": "Crawled - currently not indexed",
+      "lastCrawl": "2026-08-20T09:41:33Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/en/blog/holdem-starting-hands-chart",
+      "userCanonical": "https://www.holdemmaster.com/en/blog/holdem-starting-hands-chart"
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/holdem-straddle",
+      "verdict": "NEUTRAL",
+      "coverage": "Crawled - currently not indexed",
+      "lastCrawl": "2026-08-27T01:45:04Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/en/blog/holdem-straddle",
+      "userCanonical": "https://www.holdemmaster.com/en/blog/holdem-straddle"
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/holdem-strategy",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastCrawl": "2026-08-02T10:33:04Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/en/blog/holdem-strategy",
+      "userCanonical": "https://www.holdemmaster.com/en/blog/holdem-strategy"
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/holdem-tiebreak-rules",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastCrawl": "2026-08-26T20:29:14Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/en/blog/holdem-tiebreak-rules",
+      "userCanonical": "https://www.holdemmaster.com/en/blog/holdem-tiebreak-rules"
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/holdem-tournament",
+      "verdict": "NEUTRAL",
+      "coverage": "Discovered - currently not indexed",
+      "lastCrawl": null,
+      "indexing": "INDEXING_STATE_UNSPECIFIED",
+      "googleCanonical": null,
+      "userCanonical": null
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/holdem-tournament-vs-cash-game",
+      "verdict": "NEUTRAL",
+      "coverage": "Crawled - currently not indexed",
+      "lastCrawl": "2026-06-20T15:52:58Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/en/blog/holdem-tournament-vs-cash-game",
+      "userCanonical": "https://www.holdemmaster.com/en/blog/holdem-tournament-vs-cash-game"
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/holdem-when-to-fold",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastCrawl": "2026-07-06T09:34:35Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/en/blog/holdem-when-to-fold",
+      "userCanonical": "https://www.holdemmaster.com/en/blog/holdem-when-to-fold"
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/k-high-board-cbet",
+      "verdict": "NEUTRAL",
+      "coverage": "Discovered - currently not indexed",
+      "lastCrawl": null,
+      "indexing": "INDEXING_STATE_UNSPECIFIED",
+      "googleCanonical": null,
+      "userCanonical": null
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/korea-poker-marathon-2026",
+      "verdict": "NEUTRAL",
+      "coverage": "Crawled - currently not indexed",
+      "lastCrawl": "2026-08-23T23:30:25Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/en/blog/korea-poker-marathon-2026",
+      "userCanonical": "https://www.holdemmaster.com/en/blog/korea-poker-marathon-2026"
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/low-board-check-raise",
+      "verdict": "NEUTRAL",
+      "coverage": "URL is unknown to Google",
+      "lastCrawl": null,
+      "indexing": "INDEXING_STATE_UNSPECIFIED",
+      "googleCanonical": null,
+      "userCanonical": null
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/monotone-board-strategy",
+      "verdict": "NEUTRAL",
+      "coverage": "Discovered - currently not indexed",
+      "lastCrawl": null,
+      "indexing": "INDEXING_STATE_UNSPECIFIED",
+      "googleCanonical": null,
+      "userCanonical": null
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/paired-board-strategy",
+      "verdict": "NEUTRAL",
+      "coverage": "Discovered - currently not indexed",
+      "lastCrawl": null,
+      "indexing": "INDEXING_STATE_UNSPECIFIED",
+      "googleCanonical": null,
+      "userCanonical": null
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/texas-holdem-rules-for-beginners",
+      "verdict": "NEUTRAL",
+      "coverage": "Crawled - currently not indexed",
+      "lastCrawl": "2026-07-24T13:13:53Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/en/blog/texas-holdem-rules-for-beginners",
+      "userCanonical": "https://www.holdemmaster.com/en/blog/texas-holdem-rules-for-beginners"
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/wpt-australia-2026-guide",
+      "verdict": "NEUTRAL",
+      "coverage": "Crawled - currently not indexed",
+      "lastCrawl": "2026-08-25T11:01:52Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/en/blog/wpt-australia-2026-guide",
+      "userCanonical": "https://www.holdemmaster.com/en/blog/wpt-australia-2026-guide"
+    },
+    {
+      "url": "https://www.holdemmaster.com/en/blog/wsop-2026-tournament-guide",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastCrawl": "2026-08-17T23:46:54Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/en/blog/wsop-2026-tournament-guide",
+      "userCanonical": "https://www.holdemmaster.com/en/blog/wsop-2026-tournament-guide"
+    }
+  ]
+}
