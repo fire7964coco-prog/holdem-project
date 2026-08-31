@@ -58,7 +58,9 @@
     "check:seo-sync": "node scripts/check-seo-sync.mjs",
     "check:seo-sync:selftest": "node scripts/check-seo-sync.mjs --selftest",
     "check:images": "node scripts/check-images.mjs",
-    "check:images:selftest": "node scripts/check-images.mjs --selftest"
+    "check:images:selftest": "node scripts/check-images.mjs --selftest",
+    "check:image-reuse": "node scripts/check-image-reuse.mjs",
+    "check:image-reuse:selftest": "node scripts/check-image-reuse.mjs --selftest"
   },
   "dependencies": {
     "@radix-ui/react-tabs": "^1.1.4",

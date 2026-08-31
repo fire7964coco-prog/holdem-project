@@ -149,7 +149,10 @@ srcset으로 줄여 보내고 첫 장 빼고 전부 lazy다.
 **크롭 또는 더 큰 원본으로 교체**다(§9-2 「폭」 절).
 
 **게이트** = `npm run check:images`(셀프테스트 5/5 · 폭≥750은 150KB·폭<750은 80KB 경보) ·
-감사 = `npm run wm:audit` 계열(`scripts/wm-audit.mjs`) · 보정 = `scripts/wm-fix.mjs`.
+**재사용** = `npm run check:image-reuse`(셀프테스트 11/11 · hero+본문만 센다 — 🔴 **썸네일·readnext는
+재사용이 아니다.** 섞어 세면 규모가 3배로 부풀려진다. 규율 정본 = `docs/settled-decisions.md` **§3-A**) ·
+감사 = `npm run wm:audit` 계열(`scripts/wm-audit.mjs`) · 보정 = `scripts/wm-fix.mjs` ·
+**최종 산출** = `scripts/render-gen-final.mjs`(q82 — `render-gen-batch`는 미리보기 전용 q72다).
 
 → 측정법·압축 순서·sharp 파일락 회피는 **`docs/IMAGE_OPTIMIZATION.md`** (§15 내용도 거기 합쳤다).
 
@@ -180,6 +183,8 @@ Phase 6 완료(로그인·피드·다국어·번역·이벤트·실시간 채팅
       "시나리오를 못 잡은 글"의 0건은 **검증이 아니라 미검사**다
 - [ ] (핸드 수정 시) §13 베스트 5장 검산 — 게이트가 못 잡았으면 손으로
 - [ ] (이미지 손댔으면) **`npm run check:images`** — 폭·용량 이상치 + 🔴 «폭<750 우회군»(모바일 직격)
+- [ ] (이미지 추가·교체했으면) **`npm run check:image-reuse`** — 🔴 0건. 새 이미지의 **카드는 창작 금지**
+      (기존 승계 또는 본문 축어만 — §3-A). 히어로를 바꿨으면 그 글을 가리키는 **썸네일도 같이** 갱신
 - [ ] `npm run build` 성공 (sitemap post 수 확인)
 - [ ] (FAQ 손댔으면) `npm run audit:hard -- --schema`
 - [ ] `git push` → Vercel 배포 확인
