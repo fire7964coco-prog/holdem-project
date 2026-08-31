@@ -407,6 +407,22 @@ export default POST;
 `NEW_POSTS` 배열 맨 앞에 추가
 
 ### STEP 3: 이미지 추가
+
+> 🔴🔴 **히어로를 `content`에 넣을지는 «렌더러»가 정한다 — KO와 다국어가 반대다** (2026-08-31 실증)
+>
+> | 라우트 | 렌더러가 `post.image`를 그리나 | 그래서 `content`에는 |
+> |---|---|---|
+> | **KO** `/blog/[slug]` | ❌ **안 그린다** | 🔴 **히어로 마크다운 이미지를 반드시 넣어라**(안 넣으면 히어로가 없다) |
+> | **다국어** `/{locale}/blog/[slug]` | ✅ **그린다**(`components/intl-blog-post-client.tsx`) | 🔴 **절대 넣지 마라 — 넣으면 히어로가 두 번 나온다** |
+>
+> **실측 피해: 39편이 히어로를 두 번 그리고 있다**(`holdem-game-order` **24개 로케일 전부** +
+> EN 보드전략 시리즈 14편 + `de/poker-turnier-muenchen`). 아래 STEP은 **KO 기준**이니
+> 다국어 글에 그대로 적용하지 마라 — 내가 그렇게 해서 `zh-hant/taiwan-poker-clubs-guide`를 중복시켰다.
+>
+> **판별 한 줄**: 산출물에서 `<img …[slug]-hero.webp…>` 태그가 **2개**면 중복이다.
+> 🪶 부수 효과: 다국어 글은 content에 히어로가 없으므로 **og:image가 «첫 본문 이미지»**가 된다
+> (`getBlogLcpInfo(post.content)` — KO·다국어 공통 로직). 본문 이미지가 없으면 `/opengraph.jpg`로 떨어진다.
+
 - 경로: `public/images/[slug]-hero.webp`
 - 규격: 1200×675, **webp quality 82**(옛 «q65·60KB 이하» 폐기). 🔴 경직된 상한은 없지만 **무제한도 아니다** — 손댔으면 `npm run check:images`. 근거 = CLAUDE.md §9-2-A
 - 본문 이미지: **실사 사진 = 기본**. 인포그래픽/다이어그램은 이해를 돕는 자리에 상황적 허용(가드레일: 텍스트 최소·커밋 전 스펠링 육안검수·온브랜드 다크골드·§13 정확성). 상세는 CLAUDE.md §9-1
