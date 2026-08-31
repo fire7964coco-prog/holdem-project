@@ -12,8 +12,8 @@ export const POST: Post = {
   readTime: "9분",
   emoji: "📣",
   keepImagesInBody: true,
-  image: "/images/holdem-raise-how-much-pub.webp",
-  imageAlt: "홀덤펍 그린 펠트 테이블 위 칩과 카드 — 합법 홀덤펍 소개를 안내하는 이미지",
+  image: "/images/pub-listing-requirements.webp",
+  imageAlt: "사업자등록·일반음식점 영업신고를 마친 업소는 등재하고 칩 환전·사행성 업소는 제외한다는 조건과, 보내야 할 매장 정보 네 가지를 정리한 안내",
   tags: [
     "홀덤펍 홍보",
     "홀덤펍 소개",
@@ -25,7 +25,7 @@ export const POST: Post = {
     "홀덤펍 등록",
   ],
   content: `
-![홀덤펍 그린 펠트 테이블 위 칩과 카드 — 합법 홀덤펍 소개를 안내하는 이미지](/images/holdem-raise-how-much-pub.webp "홀덤을 검색하는 실사용자에게 합법 홀덤펍을 소개합니다")
+![사업자등록·일반음식점 영업신고를 마친 업소는 등재하고 칩 환전·사행성 업소는 제외한다는 조건과, 보내야 할 매장 정보 네 가지를 정리한 안내](/images/pub-listing-requirements.webp "홀덤을 검색하는 실사용자에게 합법 홀덤펍을 무료로 소개합니다")
 
 전국에 홀덤펍은 정말 많아졌는데, 정작 손님이 어디로 갔는지 모르겠다는 사장님이 많습니다. 요즘 홀덤펍 시장이 전보다 힘들어진 건 사실이고, 전단지·현수막·오픈채팅 홍보는 예전만큼 효율이 안 난다는 이야기도 많이 들립니다.
 

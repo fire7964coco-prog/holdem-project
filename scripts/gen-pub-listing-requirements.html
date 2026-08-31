@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.hdr { position:absolute; top:34px; left:0; width:100%; text-align:center; }
+.hdr h1 { color:#F2EEE3; font-size:34px; font-weight:800; text-shadow:0 2px 12px rgba(0,0,0,.45); }
+.hdr h1 .gold { color:#C9A227; }
+.hdr .sub { color:#C9A227; font-size:14px; font-weight:700; margin-top:8px; }
+
+.cols { position:absolute; top:158px; left:80px; width:1040px; display:flex; gap:24px; }
+.col { flex:1; border-radius:16px; padding:24px 26px 24px; background:rgba(8,20,15,.7); border:1px solid rgba(57,255,122,.45); }
+.col.no { border-color:rgba(224,90,74,.48); }
+.col .k { color:#39FF6A; font-size:15px; font-weight:900; letter-spacing:.1em; text-align:center; }
+.col.no .k { color:#E05A4A; }
+.li { display:flex; align-items:flex-start; gap:11px; margin-top:18px; color:#F2EEE3; font-size:17px; font-weight:700; line-height:1.5; }
+.li .m { font-size:19px; font-weight:900; line-height:1.3; }
+.col .m { color:#39FF6A; }
+.col.no .m { color:#E05A4A; }
+
+.send { position:absolute; top:400px; left:80px; width:1040px; border-radius:16px; padding:22px 26px; background:rgba(201,162,39,.11); border:1px dashed rgba(201,162,39,.5); }
+.send .k { color:#C9A227; font-size:13px; font-weight:900; letter-spacing:.12em; text-align:center; }
+.send .items { display:flex; justify-content:center; gap:14px; margin-top:16px; }
+.chip { padding:12px 24px; border-radius:999px; background:rgba(255,255,255,.08); color:#F2EEE3; font-size:17px; font-weight:800; }
+
+.foot { position:absolute; left:0; bottom:52px; width:100%; text-align:center; color:#F2EEE3; font-size:18px; font-weight:700; opacity:.92; }
+.foot b { color:#C9A227; font-weight:900; }
+.wordmark { position:absolute; right:44px; bottom:22px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.03em; opacity:.9; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="hdr">
+    <h1>합법 홀덤펍을 <span class="gold">무료로 소개</span>합니다</h1>
+    <div class="sub">홀덤을 검색하는 실사용자가 모이는 곳에 매장을 올린다</div>
+  </div>
+
+  <div class="cols">
+    <div class="col">
+      <div class="k">등 재  대 상</div>
+      <div class="li"><span class="m">&#10003;</span><span>사업자등록을 마친 업소</span></div>
+      <div class="li"><span class="m">&#10003;</span><span>일반음식점 영업신고를 마친 업소</span></div>
+      <div class="li"><span class="m">&#10003;</span><span>합법적으로 운영 중인 매장</span></div>
+    </div>
+    <div class="col no">
+      <div class="k">제 외  대 상</div>
+      <div class="li"><span class="m">&#10005;</span><span>칩 환전을 하는 업소</span></div>
+      <div class="li"><span class="m">&#10005;</span><span>사행성으로 운영되는 업소</span></div>
+      <div class="li"><span class="m">&#10005;</span><span>위 서류 요건을 갖추지 못한 곳</span></div>
+    </div>
+  </div>
+
+  <div class="send">
+    <div class="k">이 메 일 로  보 내  주 실  매 장  정 보</div>
+    <div class="items">
+      <span class="chip">주소</span><span class="chip">영업시간</span><span class="chip">정기 대회</span><span class="chip">사진</span>
+    </div>
+  </div>
+
+  <div class="foot">보내 주시면 <b>검수 후 게재</b>합니다 &#8212; 등재 비용은 없습니다</div>
+  <div class="wordmark">&#9824; holdemmaster.com</div>
+</div>
+</body>
+</html>

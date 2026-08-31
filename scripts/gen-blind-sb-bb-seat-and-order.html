@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.hdr { position:absolute; top:32px; left:0; width:100%; text-align:center; }
+.hdr h1 { color:#F2EEE3; font-size:34px; font-weight:800; text-shadow:0 2px 12px rgba(0,0,0,.45); }
+.hdr h1 .gold { color:#C9A227; }
+.hdr .sub { color:#C9A227; font-size:14px; font-weight:700; margin-top:8px; }
+
+.seats { position:absolute; top:150px; left:0; width:100%; display:flex; justify-content:center; align-items:center; gap:18px; }
+.seat { width:186px; border-radius:16px; padding:20px 14px 18px; text-align:center; background:rgba(8,20,15,.7); border:1px solid rgba(201,162,39,.28); }
+.seat.sb { border-color:rgba(224,150,74,.55); }
+.seat.bb { border-color:rgba(57,255,122,.5); }
+.seat .chip { width:56px; height:56px; margin:0 auto 12px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:17px; font-weight:900; color:#0B1F17; background:radial-gradient(circle at 35% 30%,#F0D060,#C9A227); box-shadow:0 5px 14px rgba(0,0,0,.45); border:3px dashed rgba(11,31,23,.35); }
+.seat.sb .chip { background:radial-gradient(circle at 35% 30%,#F4B36B,#D9822B); }
+.seat.bb .chip { background:radial-gradient(circle at 35% 30%,#6BF39A,#25B45C); }
+.seat .nm { color:#F2EEE3; font-size:19px; font-weight:800; }
+.seat .pos { color:#F2EEE3; opacity:.68; font-size:12px; font-weight:700; margin-top:6px; }
+.seat .amt { color:#C9A227; font-size:22px; font-weight:900; margin-top:12px; }
+.seat.bb .amt { color:#39FF6A; }
+.seat .amtc { color:#F2EEE3; opacity:.6; font-size:11px; font-weight:700; margin-top:4px; }
+.arw { color:#C9A227; font-size:26px; font-weight:900; }
+
+.orders { position:absolute; top:400px; left:120px; width:960px; display:flex; gap:24px; }
+.ord { flex:1; border-radius:14px; padding:20px 22px; background:rgba(255,255,255,.05); }
+.ord .k { color:#C9A227; font-size:13px; font-weight:900; letter-spacing:.1em; }
+.ord .l { display:flex; justify-content:space-between; margin-top:13px; color:#F2EEE3; font-size:16px; font-weight:700; }
+.ord .l b { font-weight:900; }
+.good { color:#39FF6A; } .bad { color:#E05A4A; }
+
+.note { position:absolute; bottom:62px; left:0; width:100%; text-align:center; color:#F2EEE3; font-size:15px; font-weight:700; opacity:.85; }
+.note b { color:#C9A227; font-weight:800; }
+.wordmark { position:absolute; right:44px; bottom:20px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.03em; opacity:.9; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="hdr">
+    <h1>스몰블라인드와 빅블라인드는 <span class="gold">무엇이 다른가</span></h1>
+    <div class="sub">자리 &#183; 금액 &#183; 행동 순서 세 가지가 갈린다</div>
+  </div>
+
+  <div class="seats">
+    <div class="seat">
+      <div class="chip">D</div>
+      <div class="nm">딜러 버튼</div>
+      <div class="pos">기준 자리</div>
+      <div class="amt">&#8212;</div>
+      <div class="amtc">내는 돈 없음</div>
+    </div>
+    <div class="arw">&#8594;</div>
+    <div class="seat sb">
+      <div class="chip">SB</div>
+      <div class="nm">스몰블라인드</div>
+      <div class="pos">버튼 바로 왼쪽</div>
+      <div class="amt">2,000원</div>
+      <div class="amtc">BB의 절반</div>
+    </div>
+    <div class="arw">&#8594;</div>
+    <div class="seat bb">
+      <div class="chip">BB</div>
+      <div class="nm">빅블라인드</div>
+      <div class="pos">버튼 두 번째 왼쪽</div>
+      <div class="amt">4,000원</div>
+      <div class="amtc">기준 금액</div>
+    </div>
+  </div>
+
+  <div class="orders">
+    <div class="ord">
+      <div class="k">프 리 플 랍  순 서</div>
+      <div class="l"><span>스몰블라인드</span><b>끝에서 두 번째</b></div>
+      <div class="l"><span>빅블라인드</span><b class="good">가장 마지막 &#183; 유리</b></div>
+    </div>
+    <div class="ord">
+      <div class="k">포 스 트 플 랍  순 서</div>
+      <div class="l"><span>스몰블라인드</span><b class="bad">가장 먼저 &#183; 불리</b></div>
+      <div class="l"><span>빅블라인드</span><b>두 번째</b></div>
+    </div>
+  </div>
+
+  <div class="note">2/4 게임 기준 &#183; <b>3인 이상</b>일 때의 순서다 &#8212; 헤즈업은 SB가 버튼을 겸해 순서가 뒤집힌다</div>
+  <div class="wordmark">&#9824; holdemmaster.com</div>
+</div>
+</body>
+</html>

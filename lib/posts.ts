@@ -116,11 +116,11 @@ const LEGACY_POSTS: Post[] = [
  readTime: "18분",
  emoji: "🃏",
  keepImagesInBody: true,
- image: '/images/holdem-button-dealer-board.webp',
- imageAlt: '녹색 펠트 위 딜러 버튼과 커뮤니티 카드 — 홀덤과 7포커는 족보 이름은 같아도 승패 판정 방식이 다르다',
+ image: '/images/holdem-7poker-suit-vs-kicker.webp',
+ imageAlt: '같은 K 페어 두 손을 7포커와 홀덤에 각각 놓고, 7포커는 무늬 서열로 승자가 갈리지만 홀덤은 무늬가 모두 동등해 키커로 가리는 것을 나란히 비교한 그림',
  tags: ["7포커 홀덤 차이", "세븐포커 족보", "홀덤 7포커 족보 비교", "스다하클 홀덤", "마운틴 홀덤", "포커 족보 차이"],
  content: `
-![녹색 펠트 위 딜러 버튼과 커뮤니티 카드가 놓인 홀덤 테이블 — 홀덤과 7포커는 족보 이름은 같아도 승패 판정이 다르다](/images/holdem-button-dealer-board.webp "홀덤과 7포커는 족보 순서는 같지만 무늬 서열·키커·카드 배분에서 결정적으로 갈린다")
+![같은 K 페어 두 손을 7포커와 홀덤에 각각 놓고, 7포커는 무늬 서열로 승자가 갈리지만 홀덤은 무늬가 모두 동등해 키커로 가리는 것을 나란히 비교한 그림](/images/holdem-7poker-suit-vs-kicker.webp "족보 순서는 같다 — 갈리는 것은 같은 족보끼리 붙었을 때의 판정 방법이다")
 
 홀덤펍에서 이런 말 들어보셨나요?
 
@@ -234,7 +234,7 @@ WSOP를 비롯한 국제 홀덤 대회 모두 무늬 서열 없음을 표준으�
 
 ---
 
-![홀덤 키커 개념 — 원페어 비교 예시](/images/tiebreak-kicker-concept.webp "키커 — 같은 족보일 때 승패를 결정하는 나머지 카드. 7포커에서는 거의 쓰이지 않는 개념")
+![보드 A♦K♠6♥4♣2♦에서 양쪽 다 AA 원페어인데 둘째 키커 J와 9로 승패가 갈리는 쇼다운 비교](/images/holdem-kicker-aa-jack-vs-nine.webp "첫 키커 K는 같고, 둘째 키커에서 J가 9를 이긴다 — 7포커라면 무늬 한 번으로 끝났을 판정이다")
 
 ## 차이 2 — 그럼 홀덤은 무엇으로 승자를 가리나?
 
@@ -491,11 +491,11 @@ A. 홀덤이 실력이 더 많이 반영됩니다. 공용 카드로 인해 상�
  readTime: "14분",
  emoji: "🃏",
  keepImagesInBody: true,
- image: '/images/holdem-button-dealer-board.webp',
- imageAlt: '녹색 펠트 위 딜러 버튼과 커뮤니티 카드가 놓인 홀덤 쇼다운 — 어느 족보가 이기는지 갈리는 순간',
+ image: '/images/quads-beats-fullhouse-rank-order.webp',
+ imageAlt: '2 포카드와 A 풀하우스를 위아래로 놓고 3위와 4위 서열, 624가지 대 3,744가지 조합 수를 나란히 비교한 그림',
  tags: ["홀덤 족보 헷갈리는", "포카드 풀하우스 순서", "홀덤 족보 외우는 법", "에이스 스트레이트", "홀덤 족보 착각", "휠 스트레이트"],
  content: `
-![녹색 펠트 위 딜러 버튼과 커뮤니티 카드가 놓인 홀덤 쇼다운 장면 — 족보 착각 하나가 팟을 가른다](/images/holdem-button-dealer-board.webp "족보는 외우기보다 '왜 이 순서인지'를 알아야 실전에서 안 틀린다")
+![2 포카드와 A 풀하우스를 위아래로 놓고 3위와 4위 서열, 624가지 대 3,744가지 조합 수를 나란히 비교한 그림](/images/quads-beats-fullhouse-rank-order.webp "숫자는 같은 족보끼리 붙었을 때만 의미가 있다 — 드문 쪽이 먼저 이긴다")
 
 홀덤을 처음 배웠을 때 이런 상황을 만났어요.
 
@@ -1090,8 +1090,6 @@ A-K-Q-J-10 같은 무늬 — 홀덤에서 가장 강한 족보예요.
 
 **두 플레이어의 베스트 5장이 완전히 동일할 때만 발생합니다.** 한 장이라도 다르면 스플릿이 아니라 승부가 갈립니다. 가장 흔한 경우는 보드 5장이 그 자체로 강한 족보를 완성해 양쪽 홀카드가 모두 밀려나는 상황입니다.
 
-![홀덤 스플릿 팟 개념 — 베스트 5장이 동일할 때 팟 분배](/images/tiebreak-split-pot.webp "스플릿 팟: 두 플레이어의 베스트 5장이 완전히 같을 때")
-
 스플릿 팟은 두 플레이어의 베스트 5장이 완전히 동일할 때 발생해요.
 
 가장 흔한 스플릿 팟 상황:
@@ -1103,6 +1101,8 @@ A-K-Q-J-10 같은 무늬 — 홀덤에서 가장 강한 족보예요.
 | 보드 로열플러시 | 보드 5장 자체가 최강 족보라 모두 같은 패 사용 |
 
 ### 스플릿 팟에서 홀수 칩 처리
+
+![팟 101,000원을 5만원씩 나누고 남는 1칩이 버튼 왼쪽 첫 자리로 가는 규정을 단계로 보여주는 그림](/images/split-pot-odd-chip-button-left.webp "홀덤은 남는 칩을 무늬가 아니라 버튼과의 거리로 정한다 — WSOP 공식 룰 Rule 73")
 
 팟이 정확히 반으로 안 나뉠 때(예: 101,000원) 남는 1칩은 **딜러 버튼 왼쪽에서 가장 가까운 남은 플레이어**가 가져갑니다. 이건 관행이 아니라 공식 규정입니다 — WSOP 2026 공식 룰 Rule 73은 홀덤 같은 버튼 게임에서 *"홀수 칩은 버튼 왼쪽 첫 자리로 간다"*고 정하고 있습니다.
 
@@ -1348,7 +1348,7 @@ slug: "holdem-odds-calculator",
 
 ## 아웃츠(Outs)란? — 내가 필요한 카드의 수
 
-![아웃츠 카드를 강조한 포커 테이블](/images/poker-outs-cards-remaining.webp "아웃츠 — 내 핸드를 완성시켜 줄 카드들")
+![홀카드 9♥8♥와 플랍 K♥5♥2♦를 놓고 하트 13장에서 보이는 4장을 빼 아웃츠 9장을 세는 과정](/images/outs-flush-draw-9-count.webp "하트는 13장, 이미 보이는 하트가 4장 — 그래서 플러시 드로우의 아웃츠는 9장이다")
 
 **아웃츠(Outs)** 는 현재 내 패를 이기는 패로 만들어 줄 수 있는 **남은 카드의 수**를 말해요.
 
@@ -1420,7 +1420,7 @@ slug: "holdem-odds-calculator",
 
 ## 자주 쓰는 드로우 확률 한눈에 보기
 
-![플러시 드로우 완성 확률 시각화](/images/flush-draw-probability-visual.webp "플러시 드로우 확률 시각화 — 플랍에서 약 36%, 턴에서 약 18%")
+![플러시+거트샷·플러시·양방·거트샷 네 드로우의 완성 확률을 플랍 기준과 턴 기준 두 막대로 비교한 그래프](/images/draw-equity-comparison-bars.webp "같은 드로우라도 리버까지 보느냐 한 장만 남았느냐로 확률이 절반 가까이 갈린다")
 
 실전에서 가장 많이 마주치는 상황의 정확한 확률을 정리했어요.
 
@@ -1644,7 +1644,7 @@ A. 모바일에서는 **"Poker Cruncher"(iOS)**, **"PokerBoss"(Android)**를 추
 
 ## 스몰블라인드 vs 빅블라인드 — 뭐가 다른가요?
 
-![포커 테이블 위 딜러 버튼 옆에 스몰블라인드·빅블라인드 칩이 놓인 장면](/images/holdem-button-dealer-board.webp)
+![딜러 버튼 왼쪽 첫 자리가 스몰블라인드 2,000원, 둘째 자리가 빅블라인드 4,000원이고 프리플랍·포스트플랍 행동 순서가 반대인 것을 보여주는 그림](/images/blind-sb-bb-seat-and-order.webp "자리·금액·행동 순서 세 가지가 SB와 BB를 가른다 — 3인 이상 기준")
 
 블라인드는 두 종류예요. 바로 **스몰블라인드(SB)**와 **빅블라인드(BB)**예요.
 
@@ -1809,7 +1809,7 @@ BB 디펜스 레인지 (상대 BTN 2.5 BB 레이즈 기준):
 :::readnext[이어서 읽기]
 /calculator | 내 스택 몇 BB인지 계산하기 | /images/poker-probability-calculator-interface.webp
 /blog/holdem-outs-calculation | 홀덤 아웃츠 계산법 | /images/blog-outs-straight-draw-comparison.webp
-/blog/position-is-everything-in-holdem | 홀덤 포지션이 왜 중요한가요? | /images/rules-texas-holdem.webp
+/blog/position-is-everything-in-holdem | 홀덤 포지션이 왜 중요한가요? | /images/holdem-position-groups-order.webp
 :::
 
 ## 블라인드 관련 자주 묻는 질문
@@ -2323,8 +2323,8 @@ A. 안전하고 신뢰할 수 있는 플랫폼을 선택하는 것이 중요합�
  updated: "2026-08-09",
  readTime: "14분",
  emoji: "🎭",
- image: '/images/tournament-table-action.webp',
- imageAlt: '토너먼트 클록이 켜진 홀덤 테이블 위 칩 더미와 딜러 버튼, 그 앞에 놓인 A·K 홀카드',
+ image: '/images/semi-bluff-draw-equity-tiers.webp',
+ imageAlt: '퓨어 블러핑과 세미 블러핑의 위험도를 나누고, 플러시 드로우 35%·양방 스트레이트 31.5% 완성 확률을 막대로 비교한 그림',
  keepImagesInBody: true,
  tags: ["블러핑", "홀덤 전략", "심리전", "포커 기술"],
  content: `
@@ -2370,7 +2370,7 @@ A. 안전하고 신뢰할 수 있는 플랫폼을 선택하는 것이 중요합�
 
 **블러핑(Bluffing)** 은 현재 내 패가 약함에도 불구하고 강한 패처럼 베팅해 상대를 폴드시키는 전략입니다.
 
-![홀덤 블러핑 심리전 실전 장면](/images/tournament-table-action.webp "블러핑 — 약한 패를 강한 패처럼 보이게 만드는 포커의 핵심 심리전")
+![퓨어 블러핑과 세미 블러핑의 위험도를 나누고, 플러시 드로우 35%·양방 스트레이트 31.5% 완성 확률을 막대로 비교한 그림](/images/semi-bluff-draw-equity-tiers.webp "맞을 여지가 남은 패로 거는 세미 블러프가 위험이 낮다 — 팟 60% 블러프의 손익분기 폴드율은 37.5%")
 
 블러핑은 크게 두 가지로 분류됩니다.
 
@@ -2726,8 +2726,8 @@ A. 먼저 구분해야 합니다 — **콜은 "들켰다"는 신호가 아닙니
  updated: "2026-08-18",
  readTime: "9분",
  emoji: "🎯",
- image: '/images/rules-texas-holdem.webp',
- imageAlt: '초록 홀덤 테이블에 커뮤니티 카드가 부채꼴로 펼쳐지고 가운데 칩이 쌓인 앞에 잭 페어 홀카드가 놓인 장면',
+ image: '/images/holdem-position-groups-order.webp',
+ imageAlt: '얼리·미들·레이트·블라인드 네 포지션 그룹의 좌석과 행동 순서, 유리도를 별점으로 비교한 표',
  keepImagesInBody: true,
  tags: ["포지션", "홀덤 전략", "텍사스 홀덤", "포커 전술"],
  content: `
@@ -2752,7 +2752,7 @@ A. 먼저 구분해야 합니다 — **콜은 "들켰다"는 신호가 아닙니
 
 **포지션(Position)** 은 포커 테이블에서 내가 앉은 자리와, 그에 따라 결정하는 순서를 말합니다.
 
-![홀덤 테이블 포지션 다이어그램](/images/rules-texas-holdem.webp "텍사스 홀덤 포지션 — 어느 자리에 앉느냐가 승패를 결정한다")
+![얼리·미들·레이트·블라인드 네 포지션 그룹의 좌석과 행동 순서, 유리도를 별점으로 비교한 표](/images/holdem-position-groups-order.webp "늦게 행동할수록 정보를 더 보고 결정한다 — 블라인드는 플랍부터 가장 먼저 움직인다")
 
 포지션의 핵심 원칙: **늦게 행동할수록 유리합니다.** 마지막으로 행동하는 플레이어는 모든 상대의 행동(베팅·체크·폴드)을 보고 결정을 내릴 수 있기 때문입니다.
 
@@ -3516,7 +3516,7 @@ UTG보다 약간 넓게 플레이할 수 있습니다. 88, KQo, QJs 정도를 �
 ---
 
 :::readnext[이어서 읽기]
-/blog/position-is-everything-in-holdem | 홀덤 포지션이 왜 중요한가요? | /images/rules-texas-holdem.webp
+/blog/position-is-everything-in-holdem | 홀덤 포지션이 왜 중요한가요? | /images/holdem-position-groups-order.webp
 /blog/holdem-starting-hand-range | 홀덤 스타팅 핸드 어떻게 골라야 하나요? | /images/blog-starting-hand-grid.webp
 :::
 
@@ -3855,7 +3855,7 @@ UTG에서 BTN과 똑같이 플레이하면 장기적으로 반드시 손해. 포
 ---
 
 :::readnext[이어서 읽기]
-/blog/position-is-everything-in-holdem | 홀덤 포지션이 왜 중요한가요? | /images/rules-texas-holdem.webp
+/blog/position-is-everything-in-holdem | 홀덤 포지션이 왜 중요한가요? | /images/holdem-position-groups-order.webp
 /blog/holdem-odds-calculator | 홀덤 확률 어떻게 계산하나요? | /images/rule-of-4-and-2-flop-turn.webp
 :::
 
@@ -4041,7 +4041,7 @@ OESD의 절반 강도입니다. 거트샷은 팟 오즈가 매우 좋지 않으�
 
 아웃츠에 ==두 장을 다 볼 땐 4==, ==한 장만 남았을 땐 2==를 곱하면 완성 확률 퍼센트가 나옵니다. 9아웃 플러시 드로우면 36%와 18%입니다. 곱셈 한 번이라 테이블에서 3초면 끝나고, 아웃츠 9장까지는 실제값과 2%p 이내로 맞습니다.
 
-![Rule of 2 and 4 아웃츠 확률 계산법](/images/rule-of-4-and-2-flop-turn.webp "남은 카드가 두 장이면 아웃츠×4, 한 장이면 아웃츠×2로 승률을 어림한다")
+![9·12·15 아웃에서 ×4 어림값과 실제 확률의 오차를 나란히 놓고 (아웃츠−8) 보정을 보여주는 비교 카드 3장](/images/rule-2-4-accuracy-correction.webp "9아웃까지는 오차 1%p지만 15아웃에서는 6%p 가까이 부풀려진다 — 그때는 (아웃츠−8)만큼 뺀다")
 
 복잡한 수학이 필요할 것 같지만, 실제로는 초등학교 수준 곱셈 하나면 됩니다.
 
@@ -4112,7 +4112,7 @@ OESD의 절반 강도입니다. 거트샷은 팟 오즈가 매우 좋지 않으�
 
 아웃츠 계산은 **팟 오즈(Pot Odds)**와 결합할 때 진정한 위력을 발휘합니다. 참고로 팟 오즈 계산은 포지션과 함께 활용할 때 더 강력합니다 — [홀덤 포지션 전략 완벽 정리](/blog/position-is-everything-in-holdem)에서 포지션별 드로우 플레이 전략을 확인하세요.
 
-![팟 오즈와 아웃츠 조합 실전 예시](/images/pot-odds-chips-visual.webp "팟 오즈와 아웃츠 확률을 비교해 수익적인 콜을 결정하는 방법")
+![플러시 드로우 35% 대 팟오즈 25%는 콜, 거트샷 8.7% 대 팟오즈 30%는 폴드로 갈리는 두 실전 상황 비교](/images/pot-odds-call-fold-examples.webp "승률이 팟 오즈보다 크면 콜, 작으면 폴드 — 판단은 이 한 번의 비교로 끝난다")
 
 ### 팟 오즈 계산법
 
@@ -4206,7 +4206,7 @@ Rule of 4는 **턴·리버를 둘 다 볼 때만** 유효합니다. 턴에서 ×
 ---
 
 :::readnext[이어서 읽기]
-/blog/position-is-everything-in-holdem | 홀덤 포지션이 왜 중요한가요? | /images/rules-texas-holdem.webp
+/blog/position-is-everything-in-holdem | 홀덤 포지션이 왜 중요한가요? | /images/holdem-position-groups-order.webp
 /blog/holdem-odds-calculator | 홀덤 확률 어떻게 계산하나요? | /images/rule-of-4-and-2-flop-turn.webp
 :::
 
@@ -4408,7 +4408,7 @@ A. 오마하처럼 홀 카드가 4장인 게임은 드로우 조합이 달라서
 | 팟의 **133%** | 약 1.75 : 1 | 약 36% |
 | 팟의 **200%** | 1.5 : 1 | **40%** |
 
-직관과 반대라 헷갈리기 쉬운 대목입니다. 크게 걸면 상대가 콜하는 데 필요한 승률이 올라가고(200%면 40%), 그만큼 **내가 블러프를 더 자주 해도 상대가 콜로 이득을 볼 수 없게** 됩니다. 같은 계산이 [블러핑 전략](/blog/bluffing-strategy-when-and-how "thumb:/images/tournament-table-action.webp")의 벳 사이즈별 표와 정확히 일치해요.
+직관과 반대라 헷갈리기 쉬운 대목입니다. 크게 걸면 상대가 콜하는 데 필요한 승률이 올라가고(200%면 40%), 그만큼 **내가 블러프를 더 자주 해도 상대가 콜로 이득을 볼 수 없게** 됩니다. 같은 계산이 [블러핑 전략](/blog/bluffing-strategy-when-and-how "thumb:/images/semi-bluff-draw-equity-tiers.webp")의 벳 사이즈별 표와 정확히 일치해요.
 
 ---
 
@@ -4487,7 +4487,7 @@ A. 오마하처럼 홀 카드가 4장인 게임은 드로우 조합이 달라서
 
 :::readnext[이어서 읽기]
 /blog/holdem-value-bet-sizing | 홀덤 밸류벳 사이즈 | /images/holdem-value-bet-sizing-chart.webp
-/blog/bluffing-strategy-when-and-how | 홀덤 블러핑 언제 해야 하나요? | /images/tournament-table-action.webp
+/blog/bluffing-strategy-when-and-how | 홀덤 블러핑 언제 해야 하나요? | /images/semi-bluff-draw-equity-tiers.webp
 :::
 
 ## FAQ — 오버벳 자주 묻는 질문
@@ -4902,7 +4902,7 @@ AA로 들어갔는데 2-7이 투페어를 만들었어요.
 
 :::readnext[이어서 읽기]
 /blog/holdem-starting-hand-range | 홀덤 스타팅 핸드 어떻게 골라야 하나요? | /images/blog-starting-hand-grid.webp
-/blog/position-is-everything-in-holdem | 홀덤 포지션이 왜 중요한가요? | /images/rules-texas-holdem.webp
+/blog/position-is-everything-in-holdem | 홀덤 포지션이 왜 중요한가요? | /images/holdem-position-groups-order.webp
 :::
 
 ## FAQ — 자주 묻는 질문 7가지
@@ -5885,7 +5885,7 @@ A. 풀하우스(4위)가 플러시(5위)보다 높습니다. 그래서 플러시
 
 A. 순위 자체는 동일합니다(1~10위). 로열 플러시부터 하이카드까지 10단계 서열은 홀덤·세븐포커·오마하가 공통으로 씁니다.
 
-차이는 **만드는 방식과 승자를 가리는 방법**입니다. 7포커는 내 카드 7장 중 5장을 고르고, 한국식 7포커에서는 같은 족보끼리를 흔히 무늬 서열(스다하클)로 가립니다 — 다만 이건 **매장 하우스 룰**이고, WSOP 공식 스터드 규정에는 승패용 무늬 서열이 없어 **동일 족보면 팟을 나눕니다.** 홀덤은 홀카드 2장 + 공용 보드 5장 중 최강 5장을 고르고, **무늬 서열이 아예 없어** 키커로 가립니다. 이 차이를 모른 채 홀덤에 오면 판정에서 계속 틀리므로 → [세븐포커 족보로 홀덤 치면 지는 이유](/blog/holdem-vs-7poker-hand-rankings "thumb:/images/holdem-button-dealer-board.webp")에서 세 가지 차이를 정리했습니다.
+차이는 **만드는 방식과 승자를 가리는 방법**입니다. 7포커는 내 카드 7장 중 5장을 고르고, 한국식 7포커에서는 같은 족보끼리를 흔히 무늬 서열(스다하클)로 가립니다 — 다만 이건 **매장 하우스 룰**이고, WSOP 공식 스터드 규정에는 승패용 무늬 서열이 없어 **동일 족보면 팟을 나눕니다.** 홀덤은 홀카드 2장 + 공용 보드 5장 중 최강 5장을 고르고, **무늬 서열이 아예 없어** 키커로 가립니다. 이 차이를 모른 채 홀덤에 오면 판정에서 계속 틀리므로 → [세븐포커 족보로 홀덤 치면 지는 이유](/blog/holdem-vs-7poker-hand-rankings "thumb:/images/holdem-7poker-suit-vs-kicker.webp")에서 세 가지 차이를 정리했습니다.
 
 **Q. 홀덤에서 홀카드를 반드시 써야 하나요?**
 

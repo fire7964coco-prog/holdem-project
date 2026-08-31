@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.hdr { position:absolute; top:30px; left:0; width:100%; text-align:center; }
+.hdr h1 { color:#F2EEE3; font-size:33px; font-weight:800; text-shadow:0 2px 12px rgba(0,0,0,.45); }
+.hdr h1 .gold { color:#C9A227; }
+.hdr .sub { color:#C9A227; font-size:14px; font-weight:700; margin-top:7px; }
+
+.board { position:absolute; top:136px; left:0; width:100%; text-align:center; }
+.blabel { color:#C9A227; font-size:13px; font-weight:800; letter-spacing:.16em; margin-bottom:10px; }
+.cards { display:inline-flex; gap:11px; }
+.card { width:70px; height:98px; border-radius:9px; background:linear-gradient(175deg,#FDFBF4 0%,#F2EEE3 100%); box-shadow:0 5px 13px rgba(0,0,0,.42); position:relative; }
+.card.sm { width:58px; height:82px; }
+.card .r { position:absolute; top:5px; left:8px; font-size:21px; font-weight:900; line-height:1; }
+.card.sm .r { font-size:18px; top:4px; left:7px; }
+.card .s { position:absolute; bottom:6px; right:9px; font-size:27px; line-height:1; }
+.card.sm .s { font-size:22px; }
+.card.key { box-shadow:0 0 26px rgba(201,162,39,.6), 0 5px 13px rgba(0,0,0,.42); }
+.black { color:#1a1a1a; } .red { color:#c0392b; }
+
+.rows { position:absolute; top:296px; left:78px; width:1044px; }
+.pl { display:flex; align-items:center; padding:17px 22px; border-radius:14px; background:rgba(8,20,15,.66); border:1px solid rgba(201,162,39,.26); margin-bottom:14px; }
+.pl.win { border-color:rgba(57,255,122,.5); background:rgba(10,28,18,.75); }
+.pl .who { width:112px; color:#F2EEE3; font-size:16px; font-weight:800; }
+.pl .who span { display:block; color:#C9A227; font-size:12px; font-weight:700; margin-top:4px; letter-spacing:.06em; }
+.pl .best { flex:1; margin-left:20px; color:#F2EEE3; font-size:15px; font-weight:700; }
+.pl .best .kk { color:#C9A227; font-weight:900; }
+.pl .out { width:150px; text-align:right; font-size:19px; font-weight:900; }
+.out.w { color:#39FF6A; } .out.l { color:#E05A4A; }
+
+.foot { position:absolute; left:0; bottom:44px; width:100%; text-align:center; color:#F2EEE3; font-size:17px; font-weight:700; opacity:.92; }
+.foot b { color:#C9A227; font-weight:800; }
+.wordmark { position:absolute; right:44px; bottom:19px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.03em; opacity:.9; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="hdr">
+    <h1>둘 다 AA 원페어 &#8212; 승패는 <span class="gold">키커 한 장</span>이 가른다</h1>
+    <div class="sub">무늬로는 못 가리니 남은 카드를 높은 순서대로 비교한다</div>
+  </div>
+
+  <div class="board">
+    <div class="blabel">B O A R D</div>
+    <div class="cards">
+      <div class="card"><span class="r red">A</span><span class="s red">&#9830;</span></div>
+      <div class="card"><span class="r black">K</span><span class="s black">&#9824;</span></div>
+      <div class="card"><span class="r red">6</span><span class="s red">&#9829;</span></div>
+      <div class="card"><span class="r black">4</span><span class="s black">&#9827;</span></div>
+      <div class="card"><span class="r red">2</span><span class="s red">&#9830;</span></div>
+    </div>
+  </div>
+
+  <div class="rows">
+    <div class="pl win">
+      <div class="who">플레이어 A<span>홀카드</span></div>
+      <div class="cards">
+        <div class="card sm"><span class="r black">A</span><span class="s black">&#9824;</span></div>
+        <div class="card sm key"><span class="r red">J</span><span class="s red">&#9830;</span></div>
+      </div>
+      <div class="best">베스트 5장 &nbsp;A&#9824; A&#9830; K&#9824; <span class="kk">J&#9830;</span> 6&#9829;<br>원페어 AA &#183; 키커 K &#8211; <span class="kk">J</span> &#8211; 6</div>
+      <div class="out w">승</div>
+    </div>
+
+    <div class="pl">
+      <div class="who">플레이어 B<span>홀카드</span></div>
+      <div class="cards">
+        <div class="card sm"><span class="r red">A</span><span class="s red">&#9829;</span></div>
+        <div class="card sm key"><span class="r black">9</span><span class="s black">&#9827;</span></div>
+      </div>
+      <div class="best">베스트 5장 &nbsp;A&#9829; A&#9830; K&#9824; <span class="kk">9&#9827;</span> 6&#9829;<br>원페어 AA &#183; 키커 K &#8211; <span class="kk">9</span> &#8211; 6</div>
+      <div class="out l">패</div>
+    </div>
+  </div>
+
+  <div class="foot">첫 키커 K는 같다 &#8212; 둘째 키커에서 <b>J가 9를 이긴다</b></div>
+  <div class="wordmark">&#9824; holdemmaster.com</div>
+</div>
+</body>
+</html>

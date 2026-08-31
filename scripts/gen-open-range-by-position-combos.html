@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.hdr { position:absolute; top:30px; left:0; width:100%; text-align:center; }
+.hdr h1 { color:#F2EEE3; font-size:34px; font-weight:800; text-shadow:0 2px 12px rgba(0,0,0,.45); }
+.hdr h1 .gold { color:#C9A227; }
+.hdr .sub { color:#C9A227; font-size:14px; font-weight:700; margin-top:8px; }
+
+.rows { position:absolute; top:150px; left:88px; width:1024px; }
+.r { display:flex; align-items:center; height:82px; }
+.pos { width:150px; }
+.pos .p { color:#F2EEE3; font-size:21px; font-weight:900; }
+.pos .s { color:#F2EEE3; opacity:.62; font-size:12px; font-weight:700; margin-top:4px; }
+.track { flex:1; position:relative; height:30px; }
+.bar { height:30px; border-radius:7px; background:linear-gradient(90deg,#2E7D46,#39FF6A); box-shadow:0 0 16px rgba(57,255,122,.25); }
+.pct { position:absolute; top:50%; transform:translateY(-50%); margin-left:14px; color:#39FF6A; font-size:19px; font-weight:900; white-space:nowrap; }
+.combo { width:150px; text-align:right; color:#C9A227; font-size:16px; font-weight:800; }
+.hands { width:290px; text-align:right; color:#F2EEE3; opacity:.75; font-size:14px; font-weight:700; }
+
+.sep { display:flex; align-items:center; gap:14px; margin:6px 0 10px; }
+.sep .ln { flex:1; height:1px; background:rgba(201,162,39,.3); }
+.sep .tx { color:#C9A227; font-size:12px; font-weight:800; letter-spacing:.1em; }
+
+.btn {
+  display:flex; align-items:center; height:76px; padding:0 18px; border-radius:12px;
+  border:1px dashed rgba(201,162,39,.55); background:rgba(201,162,39,.09);
+}
+.btn .pos .p { color:#C9A227; }
+.btn .val { flex:1; text-align:center; color:#C9A227; font-size:22px; font-weight:900; }
+.btn .why { width:404px; text-align:right; color:#F2EEE3; opacity:.78; font-size:13px; font-weight:700; line-height:1.5; }
+
+.foot { position:absolute; left:0; bottom:44px; width:100%; text-align:center; color:#F2EEE3; font-size:15px; font-weight:700; opacity:.86; }
+.foot b { color:#C9A227; font-weight:800; }
+.wordmark { position:absolute; right:44px; bottom:19px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.03em; opacity:.9; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="hdr">
+    <h1>앉은 자리가 <span class="gold">여는 핸드의 폭</span>을 정한다</h1>
+    <div class="sub">뒤에 남은 사람이 적을수록 넓게 연다</div>
+  </div>
+
+  <div class="rows">
+    <div class="r">
+      <div class="pos"><div class="p">UTG</div><div class="s">얼리</div></div>
+      <div class="track"><div class="bar" style="width:9%"></div><span class="pct" style="left:9%">2.9%</span></div>
+      <div class="combo">38 콤보</div>
+      <div class="hands">QQ+, AKs, AKo, AQs</div>
+    </div>
+    <div class="r">
+      <div class="pos"><div class="p">MP</div><div class="s">미들</div></div>
+      <div class="track"><div class="bar" style="width:15%"></div><span class="pct" style="left:15%">4.8%</span></div>
+      <div class="combo">64 콤보</div>
+      <div class="hands">JJ+, AJs+, KQs, AQo+</div>
+    </div>
+    <div class="r">
+      <div class="pos"><div class="p">CO</div><div class="s">컷오프</div></div>
+      <div class="track"><div class="bar" style="width:24%"></div><span class="pct" style="left:24%">7.7%</span></div>
+      <div class="combo">102 콤보</div>
+      <div class="hands">88+, Axs, KJs+, QJs</div>
+    </div>
+
+    <div class="sep"><span class="ln"></span><span class="tx">여기부터는 기준이 다르다</span><span class="ln"></span></div>
+
+    <div class="btn">
+      <div class="pos"><div class="p">BTN</div><div class="s">버튼</div></div>
+      <div class="val">40 ~ 50%</div>
+      <div class="why">위 셋은 <b>예시 목록을 콤보로 직접 센 값</b>(전체 1,326)이고<br>버튼은 <b>통용 기준</b>이라 같은 축에 놓고 비교하면 안 된다</div>
+    </div>
+  </div>
+
+  <div class="foot">이 표는 <b>9인 풀링에서 아주 타이트하게 잡은 기준</b>이다 &#8212; 통용 GTO 오픈은 이보다 넓다(9인 UTG 약 10% &#183; 6맥스 15~17%)</div>
+  <div class="wordmark">&#9824; holdemmaster.com</div>
+</div>
+</body>
+</html>

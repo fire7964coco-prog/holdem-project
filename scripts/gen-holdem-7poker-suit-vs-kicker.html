@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.hdr { position:absolute; top:32px; left:0; width:100%; text-align:center; }
+.hdr h1 { color:#F2EEE3; font-size:34px; font-weight:800; text-shadow:0 2px 12px rgba(0,0,0,.45); }
+.hdr h1 .gold { color:#C9A227; }
+.hdr .sub { color:#C9A227; font-size:14px; font-weight:700; margin-top:8px; }
+
+.cols { position:absolute; top:150px; left:82px; width:1036px; display:flex; gap:26px; }
+.col { flex:1; border-radius:18px; padding:24px 26px 26px; background:rgba(8,20,15,.68); border:1px solid rgba(201,162,39,.30); }
+.col.holdem { border-color:rgba(57,255,122,.42); }
+.col .gname { text-align:center; color:#C9A227; font-size:20px; font-weight:900; letter-spacing:.05em; }
+.col.holdem .gname { color:#39FF6A; }
+.col .gsub { text-align:center; color:#F2EEE3; opacity:.7; font-size:13px; font-weight:700; margin-top:6px; }
+
+.seat { display:flex; align-items:center; gap:14px; margin-top:20px; }
+.seat .who { width:74px; color:#F2EEE3; font-size:15px; font-weight:800; }
+.cards { display:flex; gap:9px; }
+.card { width:62px; height:88px; border-radius:8px; background:linear-gradient(175deg,#FDFBF4 0%,#F2EEE3 100%); box-shadow:0 5px 12px rgba(0,0,0,.42); position:relative; }
+.card .r { position:absolute; top:5px; left:7px; font-size:20px; font-weight:900; line-height:1; }
+.card .s { position:absolute; bottom:6px; right:8px; font-size:26px; line-height:1; }
+.black { color:#1a1a1a; } .red { color:#c0392b; }
+.seat .res { flex:1; text-align:right; font-size:17px; font-weight:900; }
+.res.w { color:#39FF6A; } .res.l { color:#E05A4A; } .res.n { color:#F2EEE3; opacity:.75; font-size:14px; font-weight:700; }
+
+.note { margin-top:22px; padding:14px 16px; border-radius:11px; background:rgba(255,255,255,.05); text-align:center; color:#F2EEE3; font-size:15px; font-weight:700; line-height:1.55; }
+.note b { color:#C9A227; }
+.col.holdem .note b { color:#39FF6A; }
+
+.foot { position:absolute; left:0; bottom:44px; width:100%; text-align:center; color:#F2EEE3; font-size:17px; font-weight:700; opacity:.92; }
+.foot b { color:#C9A227; font-weight:800; }
+.wordmark { position:absolute; right:44px; bottom:19px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.03em; opacity:.9; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="hdr">
+    <h1>같은 K 페어인데 <span class="gold">판정이 갈린다</span></h1>
+    <div class="sub">족보 순서는 같다 &#8212; 갈리는 건 같은 족보끼리 붙었을 때다</div>
+  </div>
+
+  <div class="cols">
+    <div class="col">
+      <div class="gname">7포커</div>
+      <div class="gsub">무늬 서열로 바로 가린다</div>
+      <div class="seat">
+        <div class="who">A</div>
+        <div class="cards">
+          <div class="card"><span class="r black">K</span><span class="s black">&#9824;</span></div>
+          <div class="card"><span class="r red">K</span><span class="s red">&#9830;</span></div>
+        </div>
+        <div class="res w">승</div>
+      </div>
+      <div class="seat">
+        <div class="who">B</div>
+        <div class="cards">
+          <div class="card"><span class="r red">K</span><span class="s red">&#9829;</span></div>
+          <div class="card"><span class="r black">K</span><span class="s black">&#9827;</span></div>
+        </div>
+        <div class="res l">패</div>
+      </div>
+      <div class="note">스&#9824; &gt; 다&#9830; &gt; 하&#9829; &gt; 클&#9827;<br><b>K&#9824;이 K&#9829;보다 무늬가 높다</b></div>
+    </div>
+
+    <div class="col holdem">
+      <div class="gname">홀덤</div>
+      <div class="gsub">무늬 서열이 아예 없다</div>
+      <div class="seat">
+        <div class="who">A</div>
+        <div class="cards">
+          <div class="card"><span class="r black">K</span><span class="s black">&#9824;</span></div>
+          <div class="card"><span class="r red">K</span><span class="s red">&#9830;</span></div>
+        </div>
+        <div class="res n">동등</div>
+      </div>
+      <div class="seat">
+        <div class="who">B</div>
+        <div class="cards">
+          <div class="card"><span class="r red">K</span><span class="s red">&#9829;</span></div>
+          <div class="card"><span class="r black">K</span><span class="s black">&#9827;</span></div>
+        </div>
+        <div class="res n">동등</div>
+      </div>
+      <div class="note">&#9824; = &#9829; = &#9830; = &#9827; &#8212; 모두 같다<br><b>키커로 가리고, 키커까지 같으면 스플릿</b></div>
+    </div>
+  </div>
+
+  <div class="foot">7포커에서 통하던 <b>스다하클</b>은 홀덤 테이블에서 한 번도 쓰이지 않는다</div>
+  <div class="wordmark">&#9824; holdemmaster.com</div>
+</div>
+</body>
+</html>

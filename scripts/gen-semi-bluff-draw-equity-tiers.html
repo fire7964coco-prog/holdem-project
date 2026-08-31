@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.hdr { position:absolute; top:30px; left:0; width:100%; text-align:center; }
+.hdr h1 { color:#F2EEE3; font-size:34px; font-weight:800; text-shadow:0 2px 12px rgba(0,0,0,.45); }
+.hdr h1 .gold { color:#C9A227; }
+.hdr .sub { color:#C9A227; font-size:14px; font-weight:700; margin-top:8px; }
+
+.two { position:absolute; top:150px; left:82px; width:1036px; display:flex; gap:24px; }
+.t { flex:1; border-radius:16px; padding:22px 24px; background:rgba(8,20,15,.7); border:1px solid rgba(224,90,74,.45); }
+.t.semi { border-color:rgba(57,255,122,.5); }
+.t .nm { color:#E05A4A; font-size:22px; font-weight:900; }
+.t.semi .nm { color:#39FF6A; }
+.t .ds { color:#F2EEE3; opacity:.82; font-size:15px; font-weight:700; margin-top:11px; line-height:1.55; }
+.t .tags { display:flex; gap:10px; margin-top:16px; }
+.tg { padding:6px 12px; border-radius:999px; font-size:12px; font-weight:800; background:rgba(255,255,255,.08); color:#F2EEE3; }
+.tg.risk { background:rgba(224,90,74,.2); color:#E05A4A; }
+.tg.safe { background:rgba(57,255,122,.15); color:#39FF6A; }
+
+.bars { position:absolute; top:352px; left:82px; width:1036px; }
+.bl { color:#C9A227; font-size:13px; font-weight:900; letter-spacing:.12em; margin-bottom:14px; }
+.br { display:flex; align-items:center; height:56px; }
+.br .nm2 { width:300px; color:#F2EEE3; font-size:16px; font-weight:700; }
+.br .track { flex:1; }
+.br .bar { height:24px; border-radius:6px; background:linear-gradient(90deg,#2E7D46,#39FF6A); position:relative; }
+.br .bar .v { position:absolute; left:calc(100% + 12px); top:50%; transform:translateY(-50%); color:#39FF6A; font-size:18px; font-weight:900; }
+.br .st { width:190px; text-align:right; color:#C9A227; font-size:16px; font-weight:800; }
+
+.be { position:absolute; bottom:88px; left:82px; width:1036px; text-align:center; padding:15px; border-radius:13px; background:rgba(201,162,39,.12); border:1px dashed rgba(201,162,39,.5); }
+.be .v { color:#F2EEE3; font-size:17px; font-weight:700; }
+.be .v b { color:#C9A227; font-weight:900; }
+
+.wordmark { position:absolute; right:44px; bottom:22px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.03em; opacity:.9; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="hdr">
+    <h1>블러프는 <span class="gold">맞을 여지가 남아 있을 때</span> 건다</h1>
+    <div class="sub">퓨어와 세미는 위험도가 다르다</div>
+  </div>
+
+  <div class="two">
+    <div class="t">
+      <div class="nm">퓨어 블러핑</div>
+      <div class="ds">지금도 약하고 앞으로도 나아질 게 없는 패로 거는 블러프</div>
+      <div class="tags"><span class="tg risk">위험도 높음</span><span class="tg">중상급 이상</span></div>
+    </div>
+    <div class="t semi">
+      <div class="nm">세미 블러핑</div>
+      <div class="ds">지금은 약하지만 카드가 나오면 강해질 수 있는 패로 거는 블러프</div>
+      <div class="tags"><span class="tg safe">위험도 낮음</span><span class="tg">초급 이상</span></div>
+    </div>
+  </div>
+
+  <div class="bars">
+    <div class="bl">세 미  블 러 프 에  적 합 한  드 로 우 &nbsp;&#183;&nbsp; 플 랍 &#8594; 리 버  완 성  확 률</div>
+    <div class="br">
+      <div class="nm2">플러시 드로우 &#183; 아웃츠 9개</div>
+      <div class="track"><div class="bar" style="width:54%"><span class="v">35%</span></div></div>
+      <div class="st">&#9733;&#9733;&#9733;&#9733;&#9733; 최적</div>
+    </div>
+    <div class="br">
+      <div class="nm2">양방 스트레이트 드로우 &#183; 아웃츠 8개</div>
+      <div class="track"><div class="bar" style="width:48%"><span class="v">31.5%</span></div></div>
+      <div class="st">&#9733;&#9733;&#9733;&#9733;&#9734; 우수</div>
+    </div>
+  </div>
+
+  <div class="be">
+    <div class="v">팟 <b>60%</b>로 블러프하면 상대가 <b>37.5%</b>보다 자주 접어야 본전이다 &#8212; 통상 블러프 비중은 <b>20~30%</b></div>
+  </div>
+
+  <div class="wordmark">&#9824; holdemmaster.com</div>
+</div>
+</body>
+</html>

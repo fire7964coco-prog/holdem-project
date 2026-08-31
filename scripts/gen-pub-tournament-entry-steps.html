@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.hdr { position:absolute; top:32px; left:0; width:100%; text-align:center; }
+.hdr h1 { color:#F2EEE3; font-size:34px; font-weight:800; text-shadow:0 2px 12px rgba(0,0,0,.45); }
+.hdr h1 .gold { color:#C9A227; }
+.hdr .sub { color:#C9A227; font-size:14px; font-weight:700; margin-top:8px; }
+
+.steps { position:absolute; top:158px; left:70px; width:1060px; display:flex; align-items:stretch; gap:12px; }
+.s { flex:1; border-radius:16px; padding:22px 16px 20px; background:rgba(8,20,15,.7); border:1px solid rgba(201,162,39,.26); text-align:center; }
+.s .num { width:38px; height:38px; margin:0 auto 14px; border-radius:50%; background:rgba(201,162,39,.18); color:#C9A227; font-size:17px; font-weight:900; display:flex; align-items:center; justify-content:center; }
+.s .tt { color:#F2EEE3; font-size:17px; font-weight:800; line-height:1.4; }
+.s .dd { color:#F2EEE3; opacity:.68; font-size:13px; font-weight:700; margin-top:10px; line-height:1.5; }
+.ar { display:flex; align-items:center; color:#C9A227; font-size:24px; font-weight:900; }
+
+.kit { position:absolute; top:392px; left:70px; width:1060px; border-radius:14px; padding:20px 24px; background:rgba(255,255,255,.05); display:flex; align-items:center; gap:22px; }
+.kit .k { color:#C9A227; font-size:13px; font-weight:900; letter-spacing:.12em; white-space:nowrap; }
+.kit .items { display:flex; gap:12px; flex:1; }
+.it { padding:11px 20px; border-radius:999px; background:rgba(57,255,122,.13); color:#39FF6A; font-size:16px; font-weight:800; }
+.kit .age { color:#F2EEE3; opacity:.75; font-size:14px; font-weight:700; white-space:nowrap; }
+
+.ask { position:absolute; bottom:86px; left:70px; width:1060px; text-align:center; }
+.ask .k { color:#C9A227; font-size:12px; font-weight:900; letter-spacing:.12em; }
+.ask .q { color:#F2EEE3; font-size:16px; font-weight:700; margin-top:11px; line-height:1.7; }
+.ask .q b { color:#C9A227; font-weight:800; }
+
+.wordmark { position:absolute; right:44px; bottom:22px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.03em; opacity:.9; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="hdr">
+    <h1>홀덤펍 대회는 <span class="gold">예약 없이 현장에서</span> 된다</h1>
+    <div class="sub">오프라인 대회 중 진입장벽이 가장 낮은 무대</div>
+  </div>
+
+  <div class="steps">
+    <div class="s">
+      <div class="num">1</div>
+      <div class="tt">일정 &#183; 바이인 확인</div>
+      <div class="dd">매장 SNS &#183; 앱 &#183; 전화</div>
+    </div>
+    <div class="ar">&#8594;</div>
+    <div class="s">
+      <div class="num">2</div>
+      <div class="tt">신분증 확인<br>회원 등록</div>
+      <div class="dd">시작 시간 전 매장 방문</div>
+    </div>
+    <div class="ar">&#8594;</div>
+    <div class="s">
+      <div class="num">3</div>
+      <div class="tt">바이인 결제<br>좌석 번호 배정</div>
+      <div class="dd">현장 등록이 대부분</div>
+    </div>
+    <div class="ar">&#8594;</div>
+    <div class="s">
+      <div class="num">4</div>
+      <div class="tt">칩 받고 착석<br>첫 핸드</div>
+      <div class="dd">시작 시간에 맞춰</div>
+    </div>
+  </div>
+
+  <div class="kit">
+    <div class="k">준 비 물</div>
+    <div class="items">
+      <span class="it">신분증</span><span class="it">회원카드</span><span class="it">바이인</span>
+    </div>
+    <div class="age">오픈 대회는 실력 제한 없음 &#183; 만 19세 이상</div>
+  </div>
+
+  <div class="ask">
+    <div class="k">처 음 이 라 면  매 장 에  미 리  물 어 볼  것</div>
+    <div class="q"><b>토너먼트인가요, 시간제(캐시)인가요?</b> &#183; <b>바이인과 리엔트리 비용은?</b><br><b>블라인드는 몇 분마다 오르나요?</b> &#183; <b>초보자도 설명해 주나요?</b></div>
+  </div>
+
+  <div class="wordmark">&#9824; holdemmaster.com</div>
+</div>
+</body>
+</html>

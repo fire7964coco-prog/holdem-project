@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.hdr { position:absolute; top:34px; left:0; width:100%; text-align:center; }
+.hdr h1 { color:#F2EEE3; font-size:34px; font-weight:800; text-shadow:0 2px 12px rgba(0,0,0,.45); }
+.hdr h1 .gold { color:#C9A227; }
+.hdr .sub { color:#C9A227; font-size:14px; font-weight:700; margin-top:7px; }
+
+.cols { position:absolute; top:162px; left:82px; width:1036px; display:flex; gap:22px; }
+.col {
+  flex:1; padding:30px 22px 28px; border-radius:16px;
+  background:rgba(8,20,15,.66); border:1px solid rgba(201,162,39,.30);
+}
+.col.warn { border-color:rgba(224,90,74,.55); background:rgba(30,12,10,.5); }
+.col .out { text-align:center; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.12em; }
+.col .out b { color:#F2EEE3; font-size:30px; font-weight:900; display:block; margin-top:4px; letter-spacing:0; }
+
+.line { display:flex; justify-content:space-between; align-items:baseline; margin-top:22px; color:#F2EEE3; font-size:16px; font-weight:700; }
+.line span:last-child { font-size:21px; font-weight:900; }
+.line.est span:last-child { color:#F2EEE3; }
+.line.real span:last-child { color:#39FF6A; }
+.line.gap span:last-child { color:#E05A4A; }
+.rule { height:1px; background:rgba(201,162,39,.3); margin:14px 0; }
+
+.fix { margin-top:20px; text-align:center; padding:14px 8px; border-radius:10px; background:rgba(201,162,39,.14); border:1px dashed rgba(201,162,39,.5); }
+.fix .k { color:#C9A227; font-size:12px; font-weight:800; letter-spacing:.1em; }
+.fix .v { color:#F2EEE3; font-size:19px; font-weight:900; margin-top:5px; }
+.fix .v em { font-style:normal; color:#39FF6A; }
+.ok { margin-top:20px; text-align:center; color:#39FF6A; font-size:15px; font-weight:800; padding:14px 0; }
+
+.foot { position:absolute; left:0; bottom:46px; width:100%; text-align:center; color:#F2EEE3; font-size:17px; font-weight:700; opacity:.92; }
+.foot b { color:#C9A227; font-weight:800; }
+.wordmark { position:absolute; right:44px; bottom:20px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.03em; opacity:.9; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="hdr">
+    <h1>&#215;4는 아웃츠가 많아질수록 <span class="gold">부풀려진다</span></h1>
+    <div class="sub">Rule of 4의 오차와 (아웃츠 &#8722; 8) 보정법</div>
+  </div>
+
+  <div class="cols">
+    <div class="col">
+      <div class="out">플러시 드로우<b>9 아웃</b></div>
+      <div class="line est"><span>&#215;4 어림값</span><span>36%</span></div>
+      <div class="line real"><span>실제 확률</span><span>35.0%</span></div>
+      <div class="rule"></div>
+      <div class="line gap"><span>오차</span><span>1.0%p</span></div>
+      <div class="ok">보정 없이 그대로 써도 된다</div>
+    </div>
+
+    <div class="col warn">
+      <div class="out">플러시 + 거트샷<b>12 아웃</b></div>
+      <div class="line est"><span>&#215;4 어림값</span><span>48%</span></div>
+      <div class="line real"><span>실제 확률</span><span>45.0%</span></div>
+      <div class="rule"></div>
+      <div class="line gap"><span>오차</span><span>3.0%p</span></div>
+      <div class="fix">
+        <div class="k">보 정</div>
+        <div class="v">48 &#8722; 4 = <em>44%</em></div>
+      </div>
+    </div>
+
+    <div class="col warn">
+      <div class="out">슈퍼 드로우<b>15 아웃</b></div>
+      <div class="line est"><span>&#215;4 어림값</span><span>60%</span></div>
+      <div class="line real"><span>실제 확률</span><span>54.1%</span></div>
+      <div class="rule"></div>
+      <div class="line gap"><span>오차</span><span>5.9%p</span></div>
+      <div class="fix">
+        <div class="k">보 정</div>
+        <div class="v">60 &#8722; 7 = <em>53%</em></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">아웃츠가 <b>9장을 넘으면</b> &#215;4 결과에서 <b>(아웃츠 &#8722; 8)</b>만큼 빼라</div>
+  <div class="wordmark">&#9824; holdemmaster.com</div>
+</div>
+</body>
+</html>

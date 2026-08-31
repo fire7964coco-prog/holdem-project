@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.hdr { position:absolute; top:32px; left:0; width:100%; text-align:center; }
+.hdr h1 { color:#F2EEE3; font-size:34px; font-weight:800; text-shadow:0 2px 12px rgba(0,0,0,.45); }
+.hdr h1 .gold { color:#C9A227; }
+.hdr .sub { color:#C9A227; font-size:14px; font-weight:700; margin-top:8px; }
+
+.rows { position:absolute; top:158px; left:88px; width:1024px; }
+.r { display:flex; align-items:center; padding:18px 24px; border-radius:14px; margin-bottom:13px; background:rgba(8,20,15,.68); border:1px solid rgba(201,162,39,.24); }
+.r.best { border-color:rgba(57,255,122,.5); background:rgba(10,28,18,.78); }
+.r.worst { border-color:rgba(224,90,74,.42); }
+.g { width:210px; }
+.g .n { color:#F2EEE3; font-size:20px; font-weight:900; }
+.g .s { color:#C9A227; font-size:13px; font-weight:700; margin-top:5px; letter-spacing:.04em; }
+.seats { width:262px; display:flex; gap:8px; }
+.chip { padding:7px 13px; border-radius:999px; background:rgba(255,255,255,.09); color:#F2EEE3; font-size:14px; font-weight:800; }
+.r.best .chip { background:rgba(57,255,122,.16); color:#39FF6A; }
+.ord { flex:1; color:#F2EEE3; opacity:.82; font-size:15px; font-weight:700; }
+.stars { width:180px; text-align:right; font-size:20px; letter-spacing:.06em; color:#C9A227; }
+.r.best .stars { color:#39FF6A; }
+.r.worst .stars { color:#E05A4A; }
+
+.foot { position:absolute; left:0; bottom:46px; width:100%; text-align:center; color:#F2EEE3; font-size:17px; font-weight:700; opacity:.92; }
+.foot b { color:#C9A227; font-weight:800; }
+.wordmark { position:absolute; right:44px; bottom:20px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.03em; opacity:.9; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="hdr">
+    <h1>같은 카드라도 <span class="gold">앉은 자리</span>가 값을 바꾼다</h1>
+    <div class="sub">늦게 행동할수록 정보를 더 보고 결정한다</div>
+  </div>
+
+  <div class="rows">
+    <div class="r worst">
+      <div class="g"><div class="n">얼리 포지션</div><div class="s">EP</div></div>
+      <div class="seats"><span class="chip">UTG</span><span class="chip">UTG+1</span></div>
+      <div class="ord">가장 먼저 행동</div>
+      <div class="stars">&#9733;&#9733;&#9734;&#9734;&#9734;</div>
+    </div>
+    <div class="r">
+      <div class="g"><div class="n">미들 포지션</div><div class="s">MP</div></div>
+      <div class="seats"><span class="chip">MP1</span><span class="chip">MP2</span><span class="chip">HJ</span></div>
+      <div class="ord">중간</div>
+      <div class="stars">&#9733;&#9733;&#9733;&#9734;&#9734;</div>
+    </div>
+    <div class="r best">
+      <div class="g"><div class="n">레이트 포지션</div><div class="s">LP</div></div>
+      <div class="seats"><span class="chip">CO</span><span class="chip">BTN</span></div>
+      <div class="ord">늦게 행동 &#183; 정보가 가장 많다</div>
+      <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;~&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+    </div>
+    <div class="r worst">
+      <div class="g"><div class="n">블라인드</div><div class="s">SB &#183; BB</div></div>
+      <div class="seats"><span class="chip">SB</span><span class="chip">BB</span></div>
+      <div class="ord">프리플랍 마지막 &#183; 포스트플랍 첫째</div>
+      <div class="stars">&#9733;&#9734;&#9734;&#9734;&#9734;~&#9733;&#9733;&#9734;&#9734;&#9734;</div>
+    </div>
+  </div>
+
+  <div class="foot">블라인드는 프리플랍만 유리하다 &#8212; <b>플랍부터 매 스트리트 먼저 행동</b>하므로 전체로는 가장 불리하다</div>
+  <div class="wordmark">&#9824; holdemmaster.com</div>
+</div>
+</body>
+</html>

@@ -11,12 +11,12 @@ export const POST: Post = {
   updated: "2026-08-09",
   readTime: "13분",
   emoji: "💰",
-  image: '/images/holdem-pub-players-table.webp',
-  imageAlt: '홀덤펍 테이블에서 칩을 쌓아가는 플레이어들 — 뱅크롤 관리가 실력만큼 중요한 이유',
+  image: '/images/bankroll-buyin-rules-by-format.webp',
+  imageAlt: '바이인이 전체 자금의 5%를 넘지 않는다는 20배 법칙과, 캐시 20~50배·토너 100배 이상 기준 및 무브다운 경계를 정리한 표',
   keepImagesInBody: true,
   tags: ["홀덤 뱅크롤 관리", "포커 자금 관리", "20배 법칙", "홀덤 바이인 기준", "무브업 무브다운", "홀덤펍 레이크"],
   content: `
-![홀덤펍 테이블에서 칩을 관리하는 플레이어들 — 실력이 좋아도 자금이 먼저 바닥나면 장기전이 불가능하다](/images/holdem-pub-players-table.webp "실력과 자금, 둘 다 있어야 다운스윙을 버틸 수 있다")
+![바이인이 전체 자금의 5%를 넘지 않는다는 20배 법칙과, 캐시 20~50배·토너 100배 이상 기준 및 무브다운 경계를 정리한 표](/images/bankroll-buyin-rules-by-format.webp "참가비가 아니라 레이크·리바이를 포함한 평균 실지출을 바이인으로 놓아야 계산이 맞는다")
 
 :::lead
 홀덤펍에서 4만원짜리 야간 토너에 들어간 밤이 아직도 기억나요. 초반에 셋오버셋으로 일찍 탈락했는데, "오늘 컨디션 좋은데 운만 나빴다"는 생각에 곧바로 리바이를 했습니다. 그러고도 스택이 쪼그라들어 브레이크 때 애드온까지 질렀는데, 결국 또 떨어졌어요. 4만원이면 끝났을 밤이 **12만원**이 되어 있었습니다.
@@ -251,7 +251,7 @@ export const POST: Post = {
 
 :::readnext[이어서 읽기]
 /blog/holdem-probability | 홀덤 확률 완전 정복 | /images/holdem-probability/holdem-probability-hero.webp
-/blog/holdem-tournament-buy-in-cost | 홀덤 대회 바이인·참가비 | /images/tournament-table-action.webp
+/blog/holdem-tournament-buy-in-cost | 홀덤 대회 바이인·참가비 | /images/tournament-buyin-cost-tiers.webp
 :::
 
 ## FAQ — 자주 묻는 질문

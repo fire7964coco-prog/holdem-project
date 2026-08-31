@@ -232,7 +232,7 @@ WPT는 Main Tour, Prime, WPT500, Special Events처럼 카테고리가 나뉩니�
 
 :::readnext[이어서 읽기]
 /blog/holdem-tournament-how-to-enter | 홀덤 대회 참가 방법 | /images/wsop-satellite-tournament.webp
-/blog/holdem-tournament-buy-in-cost | 홀덤 대회 바이인·참가비 | /images/tournament-table-action.webp
+/blog/holdem-tournament-buy-in-cost | 홀덤 대회 바이인·참가비 | /images/tournament-buyin-cost-tiers.webp
 :::
 
 ## FAQ — 자주 묻는 질문

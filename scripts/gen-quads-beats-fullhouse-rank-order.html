@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.hdr { position:absolute; top:36px; left:0; width:100%; text-align:center; }
+.hdr h1 { color:#F2EEE3; font-size:35px; font-weight:800; text-shadow:0 2px 12px rgba(0,0,0,.45); }
+.hdr h1 .gold { color:#C9A227; }
+.hdr .sub { color:#C9A227; font-size:14px; font-weight:700; margin-top:8px; }
+
+.rows { position:absolute; top:172px; left:96px; width:1008px; }
+.hand { display:flex; align-items:center; padding:24px 28px; border-radius:16px; background:rgba(8,20,15,.66); border:1px solid rgba(201,162,39,.28); }
+.hand.win { border-color:rgba(57,255,122,.5); background:rgba(10,28,18,.75); }
+
+.rank { width:96px; text-align:center; }
+.rank .n { color:#C9A227; font-size:32px; font-weight:900; line-height:1; }
+.rank .u { color:#F2EEE3; opacity:.7; font-size:12px; font-weight:700; letter-spacing:.1em; margin-top:5px; }
+
+.tiles { display:flex; gap:10px; margin-left:14px; }
+.tile {
+  width:60px; height:80px; border-radius:9px;
+  background:linear-gradient(175deg,#FDFBF4 0%,#F2EEE3 100%);
+  box-shadow:0 5px 12px rgba(0,0,0,.42);
+  display:flex; align-items:center; justify-content:center;
+  color:#1a1a1a; font-size:36px; font-weight:900;
+}
+.tile.mute { background:linear-gradient(175deg,#DED9CB 0%,#CFC9BA 100%); color:#4a4a4a; }
+
+.meta { flex:1; margin-left:30px; }
+.meta .nm { color:#F2EEE3; font-size:24px; font-weight:800; }
+.meta .pr { color:#F2EEE3; opacity:.72; font-size:14px; font-weight:700; margin-top:6px; }
+
+.mark { width:112px; text-align:right; font-size:22px; font-weight:900; }
+.mark.w { color:#39FF6A; }
+.mark.l { color:#E05A4A; }
+
+.mid { display:flex; align-items:center; justify-content:center; gap:16px; padding:16px 0; }
+.mid .line { width:150px; height:1px; background:rgba(201,162,39,.35); }
+.mid .txt { color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.08em; }
+
+.foot { position:absolute; left:0; bottom:48px; width:100%; text-align:center; color:#F2EEE3; font-size:17px; font-weight:700; opacity:.92; }
+.foot b { color:#C9A227; font-weight:800; }
+.wordmark { position:absolute; right:44px; bottom:20px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.03em; opacity:.9; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="hdr">
+    <h1>2 포카드가 A 풀하우스를 <span class="gold">이깁니다</span></h1>
+    <div class="sub">족보 서열은 숫자와 완전히 무관하다 &#8212; 드문 쪽이 강하다</div>
+  </div>
+
+  <div class="rows">
+    <div class="hand win">
+      <div class="rank"><div class="n">3위</div><div class="u">포카드</div></div>
+      <div class="tiles">
+        <div class="tile">2</div><div class="tile">2</div><div class="tile">2</div><div class="tile">2</div><div class="tile mute">K</div>
+      </div>
+      <div class="meta">
+        <div class="nm">포카드</div>
+        <div class="pr">5장 기준 624가지 &#183; 약 0.02%</div>
+      </div>
+      <div class="mark w">승</div>
+    </div>
+
+    <div class="mid"><span class="line"></span><span class="txt">포카드가 6배 더 드물다 &#183; 3,744 &#247; 624 = 6.0</span><span class="line"></span></div>
+
+    <div class="hand">
+      <div class="rank"><div class="n">4위</div><div class="u">풀하우스</div></div>
+      <div class="tiles">
+        <div class="tile">A</div><div class="tile">A</div><div class="tile">A</div><div class="tile">K</div><div class="tile">K</div>
+      </div>
+      <div class="meta">
+        <div class="nm">풀하우스</div>
+        <div class="pr">5장 기준 3,744가지 &#183; 약 0.14%</div>
+      </div>
+      <div class="mark l">패</div>
+    </div>
+  </div>
+
+  <div class="foot">숫자는 <b>같은 족보끼리 붙었을 때만</b> 의미가 있다 &#8212; 족보 서열이 언제나 먼저다</div>
+  <div class="wordmark">&#9824; holdemmaster.com</div>
+</div>
+</body>
+</html>

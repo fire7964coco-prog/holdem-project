@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.hdr { position:absolute; top:30px; left:0; width:100%; text-align:center; }
+.hdr h1 { color:#F2EEE3; font-size:34px; font-weight:800; text-shadow:0 2px 12px rgba(0,0,0,.45); }
+.hdr h1 .gold { color:#C9A227; }
+.hdr .sub { color:#C9A227; font-size:14px; font-weight:700; margin-top:8px; }
+
+.rule { position:absolute; top:142px; left:0; width:100%; text-align:center; }
+.rule .box { display:inline-block; padding:14px 34px; border-radius:14px; background:rgba(201,162,39,.13); border:1px dashed rgba(201,162,39,.55); }
+.rule .box .t { color:#F2EEE3; font-size:21px; font-weight:800; }
+.rule .box .t b { color:#C9A227; font-weight:900; }
+.rule .box .c { color:#F2EEE3; opacity:.72; font-size:13px; font-weight:700; margin-top:7px; }
+
+.cols { position:absolute; top:262px; left:88px; width:1024px; display:flex; gap:26px; }
+.col { flex:1; border-radius:16px; padding:24px 26px; background:rgba(8,20,15,.7); border:1px solid rgba(201,162,39,.28); }
+.col .k { text-align:center; color:#C9A227; font-size:17px; font-weight:900; letter-spacing:.06em; }
+.col .v { text-align:center; color:#39FF6A; font-size:44px; font-weight:900; margin-top:10px; line-height:1; }
+.col .u { text-align:center; color:#F2EEE3; opacity:.72; font-size:13px; font-weight:700; margin-top:8px; }
+.line { height:1px; background:rgba(255,255,255,.12); margin:18px 0 14px; }
+.down { display:flex; justify-content:space-between; color:#F2EEE3; font-size:15px; font-weight:700; }
+.down b { color:#E05A4A; font-weight:900; }
+
+.kr { position:absolute; bottom:104px; left:88px; width:1024px; border-radius:14px; padding:18px 24px; background:rgba(255,255,255,.05); text-align:center; }
+.kr .k { color:#C9A227; font-size:12px; font-weight:900; letter-spacing:.12em; }
+.kr .v { color:#F2EEE3; font-size:17px; font-weight:700; margin-top:9px; }
+.kr .v b { color:#C9A227; font-weight:900; }
+
+.foot { position:absolute; left:0; bottom:48px; width:100%; text-align:center; color:#F2EEE3; font-size:15px; font-weight:700; opacity:.82; }
+.wordmark { position:absolute; right:44px; bottom:20px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.03em; opacity:.9; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="hdr">
+    <h1>실력보다 먼저 <span class="gold">자금이 바닥나면</span> 끝이다</h1>
+    <div class="sub">포맷마다 필요한 바이인 수가 다르다</div>
+  </div>
+
+  <div class="rule">
+    <div class="box">
+      <div class="t">한 게임의 바이인이 전체 자금의 <b>5%</b>를 넘지 않게</div>
+      <div class="c">5%의 역수가 20 &#8212; 그래서 «20배 법칙»이라고 부른다</div>
+    </div>
+  </div>
+
+  <div class="cols">
+    <div class="col">
+      <div class="k">캐 시 게 임</div>
+      <div class="v">20 ~ 50</div>
+      <div class="u">맥스 바이인 기준 배수</div>
+      <div class="line"></div>
+      <div class="down"><span>여기 아래면 한 단계 내려간다</span><b>15 ~ 20</b></div>
+    </div>
+    <div class="col">
+      <div class="k">토 너 먼 트</div>
+      <div class="v">100 +</div>
+      <div class="u">상위 10~15%만 상금 &#183; 큰 필드는 200~400</div>
+      <div class="line"></div>
+      <div class="down"><span>여기 아래면 한 단계 내려간다</span><b>50 ~ 60</b></div>
+    </div>
+  </div>
+
+  <div class="kr">
+    <div class="k">한 국 홀 덤 펍 이 라 면  두  가 지 를  더  얹 는 다</div>
+    <div class="v">레이크 <b>펍 캐시 팟의 10~15%</b> &#183; 리바이 &#8212; «2만원 토너»가 실지출 <b>6만~10만원</b>이 되는 밤이 흔하다</div>
+  </div>
+
+  <div class="foot">참가비가 아니라 <b style="color:#C9A227">평균 실지출</b>을 바이인으로 놓고 계산해야 숫자가 맞는다</div>
+  <div class="wordmark">&#9824; holdemmaster.com</div>
+</div>
+</body>
+</html>

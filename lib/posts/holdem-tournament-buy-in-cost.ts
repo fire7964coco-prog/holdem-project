@@ -12,8 +12,8 @@ export const POST: Post = {
   hideSummaryImageSlot: true,
   readTime: "16분",
   emoji: "💰",
-  image: "/images/tournament-table-action.webp",
-  imageAlt: "토너먼트 시계 옆에 쌓인 여러 색의 칩 스택과 딜러 버튼이 놓인 홀덤 테이블",
+  image: "/images/tournament-buyin-cost-tiers.webp",
+  imageAlt: "온라인 무료 0원부터 홀덤펍 1만~20만원, 국내 대형 메인 180만~250만원, WSOP 메인 1만 달러까지 4단계 참가비를 비교한 표",
   keepImagesInBody: true,
   tags: [
     "홀덤 대회 바이인",
@@ -36,7 +36,7 @@ export const POST: Post = {
 
 처음 대회 신청 절차 자체가 궁금하다면 [홀덤 대회 참가 방법](/blog/holdem-tournament-how-to-enter)을 먼저 읽고, 이 글로 돌아오면 비용 판단이 훨씬 쉬워집니다. 전체 일정은 [홀덤 대회 완벽 가이드](/tournaments)에서 확인할 수 있습니다.
 
-![홀덤 토너먼트 테이블 위 칩과 참가권 — 홀덤 대회 바이인·참가비 계산 가이드](/images/tournament-table-action.webp "홀덤 대회 바이인·참가비 — 초보 총비용 계산")
+![온라인 무료 0원부터 홀덤펍 1만~20만원, 국내 대형 메인 180만~250만원, WSOP 메인 1만 달러까지 4단계 참가비를 비교한 표](/images/tournament-buyin-cost-tiers.webp "리엔트리까지 쓰면 총비용이 표시 바이인의 3.6배가 되고, 새틀라이트를 거치면 본선 비용이 5분의 1로 준다")
 
 :::stripe
 0원 | 온라인 무료 대회

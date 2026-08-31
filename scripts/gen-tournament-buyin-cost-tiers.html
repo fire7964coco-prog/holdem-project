@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.hdr { position:absolute; top:30px; left:0; width:100%; text-align:center; }
+.hdr h1 { color:#F2EEE3; font-size:34px; font-weight:800; text-shadow:0 2px 12px rgba(0,0,0,.45); }
+.hdr h1 .gold { color:#C9A227; }
+.hdr .sub { color:#C9A227; font-size:14px; font-weight:700; margin-top:8px; }
+
+.steps { position:absolute; top:150px; left:76px; width:1048px; display:flex; gap:16px; }
+.st { flex:1; border-radius:16px; padding:22px 16px 20px; background:rgba(8,20,15,.7); border:1px solid rgba(201,162,39,.26); text-align:center; }
+.st.free { border-color:rgba(57,255,122,.5); }
+.st .lv { color:#C9A227; font-size:12px; font-weight:900; letter-spacing:.12em; }
+.st .nm { color:#F2EEE3; font-size:17px; font-weight:800; margin-top:10px; }
+.st .amt { color:#F2EEE3; font-size:26px; font-weight:900; margin-top:14px; line-height:1.25; }
+.st.free .amt { color:#39FF6A; }
+.st .u { color:#F2EEE3; opacity:.62; font-size:12px; font-weight:700; margin-top:8px; }
+
+.notes { position:absolute; top:392px; left:76px; width:1048px; display:flex; gap:20px; }
+.nt { flex:1; border-radius:14px; padding:15px 20px 14px; background:rgba(255,255,255,.05); display:flex; align-items:center; gap:18px; }
+.nt .big { color:#C9A227; font-size:30px; font-weight:900; line-height:1; white-space:nowrap; }
+.nt .tx { color:#F2EEE3; font-size:13.5px; font-weight:700; line-height:1.5; }
+
+.warn {
+  position:absolute; bottom:58px; left:76px; width:1048px; border-radius:14px; padding:15px 24px;
+  background:rgba(224,90,74,.13); border:1px solid rgba(224,90,74,.45); text-align:center;
+}
+.warn .k { color:#E05A4A; font-size:12px; font-weight:900; letter-spacing:.12em; }
+.warn .v { color:#F2EEE3; font-size:16px; font-weight:700; margin-top:8px; }
+.warn .v b { color:#E05A4A; font-weight:900; }
+
+.wordmark { position:absolute; right:44px; bottom:24px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.03em; opacity:.9; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="hdr">
+    <h1>대회 참가비는 <span class="gold">0원부터 천만 원대까지</span></h1>
+    <div class="sub">어디서 시작하느냐로 비용이 결정된다</div>
+  </div>
+
+  <div class="steps">
+    <div class="st free">
+      <div class="lv">S T E P  1</div>
+      <div class="nm">온라인 무료 대회</div>
+      <div class="amt">0원</div>
+      <div class="u">게임머니 &#183; 현금 리스크 없음</div>
+    </div>
+    <div class="st">
+      <div class="lv">S T E P  2</div>
+      <div class="nm">홀덤펍 소규모</div>
+      <div class="amt">1만~20만원</div>
+      <div class="u">현장 등록이 대부분</div>
+    </div>
+    <div class="st">
+      <div class="lv">S T E P  3</div>
+      <div class="nm">국내 대형 메인<br>APT &#183; APPT</div>
+      <div class="amt">약 180만<br>~250만원</div>
+      <div class="u">외국인 전용 카지노 구역</div>
+    </div>
+    <div class="st">
+      <div class="lv">S T E P  4</div>
+      <div class="nm">WSOP 메인</div>
+      <div class="amt">$10,000</div>
+      <div class="u">해외 대회</div>
+    </div>
+  </div>
+
+  <div class="notes">
+    <div class="nt">
+      <div class="big">3.6배</div>
+      <div class="tx">리엔트리까지 쓰면 실제 총비용이 표시 바이인의 <b>3.6배</b>가 된다 &#8212; 참가비만 보고 예산을 짜면 어긋난다</div>
+    </div>
+    <div class="nt">
+      <div class="big">1 / 5</div>
+      <div class="tx">새틀라이트를 거치면 본선 비용이 <b>5분의 1</b>로 줄어든다 &#8212; 초보가 큰 무대로 올라가는 정석 경로</div>
+    </div>
+  </div>
+
+  <div class="warn">
+    <div class="k">국 내  대 형  대 회  주 의</div>
+    <div class="v">외국인 전용 카지노 구역에서 열려 <b>한국 여권으로는 입장이 안 된다</b>(해외이주자 예외)</div>
+  </div>
+
+  <div class="wordmark">&#9824; holdemmaster.com</div>
+</div>
+</body>
+</html>

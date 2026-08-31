@@ -199,7 +199,7 @@ A♣4♦ 같은 핸드는 좋아 보이지만, 상대가 A-K, A-Q를 들고 있�
 
 :::readnext[이어서 읽기]
 /blog/holdem-blind-meaning | 홀덤 블라인드 뜻 | /images/holdem-blind-meaning-hero.webp
-/blog/position-is-everything-in-holdem | 홀덤 포지션이 왜 중요한가요? | /images/rules-texas-holdem.webp
+/blog/position-is-everything-in-holdem | 홀덤 포지션이 왜 중요한가요? | /images/holdem-position-groups-order.webp
 :::
 
 ## 7. FAQ — 스몰블라인드 자주 묻는 질문

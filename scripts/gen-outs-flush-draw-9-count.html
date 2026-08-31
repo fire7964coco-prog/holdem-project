@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.hdr { position:absolute; top:36px; left:0; width:100%; text-align:center; }
+.hdr h1 { color:#F2EEE3; font-size:34px; font-weight:800; text-shadow:0 2px 12px rgba(0,0,0,.45); }
+.hdr h1 .gold { color:#C9A227; }
+.hdr .sub { color:#C9A227; font-size:14px; font-weight:700; margin-top:7px; }
+
+.card { position:relative; width:88px; height:126px; background:linear-gradient(175deg,#FDFBF4 0%,#F2EEE3 100%); border-radius:9px; box-shadow:0 6px 14px rgba(0,0,0,.45),0 1px 3px rgba(0,0,0,.3); }
+.card .corner { position:absolute; top:6px; left:8px; font-size:23px; font-weight:800; line-height:1; text-align:center; }
+.card .corner .csuit { display:block; font-size:15px; line-height:1; margin-top:1px; }
+.card .big { position:absolute; top:50%; left:50%; transform:translate(-42%,-44%); font-size:54px; line-height:1; }
+.black { color:#1a1a1a; } .red { color:#c0392b; }
+
+.group { position:absolute; }
+.glabel { color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.14em; margin-bottom:11px; text-align:center; }
+.cards { display:flex; gap:12px; }
+
+.hole { left:92px; top:232px; }
+.board { left:404px; top:232px; }
+
+.calcbox {
+  position:absolute; right:82px; top:214px; width:300px; padding:28px 26px 26px;
+  background:rgba(8,20,15,.72); border:1px solid rgba(201,162,39,.42); border-radius:16px;
+  box-shadow:0 10px 30px rgba(0,0,0,.4);
+}
+.calcbox .t { color:#C9A227; font-size:14px; font-weight:800; letter-spacing:.12em; text-align:center; }
+.calcbox .row { display:flex; justify-content:space-between; align-items:baseline; margin-top:15px; color:#F2EEE3; font-size:17px; font-weight:700; }
+.calcbox .row span:last-child { font-size:20px; font-weight:800; }
+.calcbox .rule { height:1px; background:rgba(201,162,39,.35); margin:16px 0 4px; }
+.calcbox .out { text-align:center; margin-top:12px; }
+.calcbox .out .n { color:#39FF6A; font-size:56px; font-weight:900; line-height:1; text-shadow:0 0 26px rgba(57,255,122,.45); }
+.calcbox .out .u { color:#F2EEE3; font-size:16px; font-weight:800; margin-left:4px; }
+.calcbox .out .cap { color:#F2EEE3; opacity:.8; font-size:13px; font-weight:700; margin-top:7px; }
+
+.foot { position:absolute; left:0; bottom:52px; width:100%; text-align:center; color:#F2EEE3; font-size:17px; font-weight:700; opacity:.92; }
+.foot b { color:#C9A227; font-weight:800; }
+.wordmark { position:absolute; right:44px; bottom:22px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.03em; opacity:.9; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="hdr">
+    <h1>플러시 드로우의 아웃츠는 왜 <span class="gold">9장</span>인가</h1>
+    <div class="sub">보이는 하트를 전부 빼고 남은 수를 센다</div>
+  </div>
+
+  <div class="group hole">
+    <div class="glabel">내 홀카드</div>
+    <div class="cards">
+      <div class="card"><div class="corner red">9<span class="csuit">&#9829;</span></div><div class="big red">&#9829;</div></div>
+      <div class="card"><div class="corner red">8<span class="csuit">&#9829;</span></div><div class="big red">&#9829;</div></div>
+    </div>
+  </div>
+
+  <div class="group board">
+    <div class="glabel">플랍</div>
+    <div class="cards">
+      <div class="card"><div class="corner red">K<span class="csuit">&#9829;</span></div><div class="big red">&#9829;</div></div>
+      <div class="card"><div class="corner red">5<span class="csuit">&#9829;</span></div><div class="big red">&#9829;</div></div>
+      <div class="card"><div class="corner red">2<span class="csuit">&#9830;</span></div><div class="big red">&#9830;</div></div>
+    </div>
+  </div>
+
+  <div class="calcbox">
+    <div class="t">아웃츠 세는 법</div>
+    <div class="row"><span>하트 전체</span><span>13</span></div>
+    <div class="row"><span>이미 보이는 하트</span><span>&#8722; 4</span></div>
+    <div class="rule"></div>
+    <div class="out">
+      <div><span class="n">9</span><span class="u">아웃</span></div>
+      <div class="cap">이 9장 중 하나가 나오면 플러시 완성</div>
+    </div>
+  </div>
+
+  <div class="foot">보이는 하트 <b>9&#9829; 8&#9829; K&#9829; 5&#9829;</b> 네 장 &#8212; 13에서 빼면 남는 건 <b>9장</b></div>
+  <div class="wordmark">&#9824; holdemmaster.com</div>
+</div>
+</body>
+</html>

@@ -335,7 +335,7 @@ ITIN·W-8BEN·1040-NR 같은 절차가 얽히므로, 고액 입상이 예상된�
 ---
 
 :::readnext[이어서 읽기]
-/blog/holdem-tournament-buy-in-cost | 홀덤 대회 바이인·참가비 | /images/tournament-table-action.webp
+/blog/holdem-tournament-buy-in-cost | 홀덤 대회 바이인·참가비 | /images/tournament-buyin-cost-tiers.webp
 /blog/holdem-tournament-how-to-enter | 홀덤 대회 참가 방법 | /images/wsop-satellite-tournament.webp
 :::
 
