@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "APPT 코리아 2026 참가 완전 가이드 — 신청부터 착석까지",
   seoTitle: "APPT 코리아 2026 참가 방법 — PokerStars 위성부터 현장 체크인까지",
   desc: "APPT 코리아 2026(9월 3~14일, 파라다이스 시티)에 초보자가 참가하는 전 과정을 단계별로 정리했습니다. PokerStars 계정 생성 → Power Path 위성 → 현장 등록 → 체크인까지 순서대로 설명합니다.",
-  tldr: "APPT 코리아 2026은 2026년 9월 3~14일 인천 파라다이스 시티에서 열립니다. 메인이벤트는 9월 10~14일, 바이인 180만원(약 $1,260), 보장 상금 10억원(약 $700,000)입니다. 가장 싼 경로는 PokerStars Power Path로 $0.50 Spin & Go부터 단계를 올라가는 것이고, 온라인 위성 없이 간다면 9월 9일 현장 Mega Qualifier(35만원)가 현실적입니다. 다만 파라다이스 시티는 외국인 전용 카지노라 한국 국적자는 입장 자체가 안 됩니다 — 해외 영주권을 가진 재외국민은 예외입니다.",
+  tldr: "APPT 코리아 2026은 2026년 9월 3~14일 인천 파라다이스 시티에서 열립니다. 전체 68개 이벤트, 바이인은 5만원부터 1,000만원까지입니다. 메인이벤트는 9월 10~14일, 바이인 180만원(약 $1,260), 보장 상금 10억원(약 $700,000)입니다. 현장에서 메인이벤트로 가는 가장 싼 길은 35만원 Mega Qualifier가 아니라 그 한 시간 전에 열리는 5만원 FLIPS(9/9 14:00)이고, 5만~8만원짜리 하위 예선이 9월 5일부터 매일 열립니다. 다만 파라다이스 시티는 외국인 전용 카지노라 한국 국적자는 입장 자체가 안 됩니다 — 해외 영주권을 가진 재외국민은 예외입니다.",
   category: "토너먼트",
   date: "2026-06-16",
-  updated: "2026-07-28",
+  updated: "2026-08-31",
   readTime: "11분",
   emoji: "♠",
   layout: "tournament-guide",
@@ -16,6 +16,21 @@ export const POST: Post = {
   image: "/images/appt-korea-2026-guide-hero.webp",
   imageAlt: "APPT 코리아 2026 파라다이스 시티 카지노 — PokerStars APPT 토너먼트 현장",
   keepImagesInBody: true,
+  // Event 리치결과용. 형제 글 apt-incheon-2026-guide·apt-jeju-2026-fall-guide와 같은 규격이며
+  // 이 글에만 빠져 있어 2026-08-31에 신설했다. 가격은 전체 스케줄 공개 후 실측한 범위다
+  // (최저 #0 FLIPS ₩50,000 / 최고 #43 APPT Super High Roller ₩10,000,000).
+  event: {
+    name: "APPT 코리아 2026 (PokerStars APPT Korea 2026)",
+    startDate: "2026-09-03",
+    endDate: "2026-09-14",
+    locationName: "파라다이스 시티 (Paradise City)",
+    locationAddress: "인천광역시 영종구 영종해안남로321번길 186",
+    lowPriceKRW: 50000,
+    highPriceKRW: 10000000,
+    offerUrl: "https://www.pokerstarslive.com/appt/korea/schedule/",
+    organizerName: "PokerStars Live",
+    organizerUrl: "https://www.pokerstarslive.com/appt/",
+  },
   content: `
 APPT(Asia Pacific Poker Tour)가 2019년 4월 이후 처음으로 한국에 돌아옵니다. 2026년 9월, 인천 파라다이스 시티에서 열리는 APPT 코리아 2026 — 초보자도 어떻게 참가하는지 처음부터 끝까지 설명합니다.
 
@@ -23,7 +38,7 @@ APPT(Asia Pacific Poker Tour)가 2019년 4월 이후 처음으로 한국에 돌�
 
 ---
 
-> **바로 답** — APPT 코리아 2026은 9월 3~14일 인천 파라다이스 시티에서 열리고, 메인이벤트(9/10~14)는 바이인 180만원·보장 10억원입니다. 참가 경로는 ① PokerStars Power Path 온라인 위성($0.50부터) ② 9월 9일 현장 Mega Qualifier(35만원) ③ 현장 직접 바이인 세 가지입니다. **단, 파라다이스 시티는 외국인 전용 카지노라 한국 여권으로는 입장이 불가합니다.**
+> **바로 답** — APPT 코리아 2026은 9월 3~14일 인천 파라다이스 시티에서 열리고, **전체 68개 이벤트**에 바이인은 **5만원~1,000만원**입니다. 메인이벤트(9/10~14)는 바이인 180만원·보장 10억원입니다. 참가 경로는 ① PokerStars Power Path 온라인 위성($0.50부터) ② **현장 하위 예선 5만~8만원**(9/5부터 매일) ③ 9월 9일 Mega Qualifier(35만원·**시트 20석 보장**) ④ 현장 직접 바이인입니다. **단, 파라다이스 시티는 외국인 전용 카지노라 한국 여권으로는 입장이 불가합니다.**
 
 ## 한국 국적자도 참가할 수 있나요? — 읽기 전 반드시 확인
 
@@ -63,8 +78,10 @@ APPT는 PokerStars가 주관하는 아시아 태평양 최고 권위의 포커 �
 | 항목 | 내용 |
 |------|------|
 | **기간** | 2026년 9월 3일~14일 (12일) |
-| **장소** | 파라다이스 시티 카지노, 인천 중구 영종도 |
+| **장소** | 파라다이스 시티 카지노, 인천 영종구 |
 | **주관** | PokerStars Live |
+| **전체 이벤트 수** | **68개** (#0~#67) |
+| **바이인 범위** | **5만원 ~ 1,000만원** |
 | **메인이벤트** | APPT Main Event |
 | **메인이벤트 일정** | 9월 10일~14일 |
 | **메인이벤트 바이인** | 180만원 (~$1,260) |
@@ -75,21 +92,27 @@ APPT는 PokerStars가 주관하는 아시아 태평양 최고 권위의 포커 �
 
 </div>
 
-### 이벤트 전체 목록
+### 주요 이벤트 (전체 68개 중)
+
+PokerStars가 처음 공개한 것은 아래 하이라이트 8개였지만, **지금은 전체 스케줄이 열려 있습니다.** 12일간 **#0부터 #67까지 68개 이벤트**가 돌아가고, 바이인은 **5만원부터 1,000만원까지** 스물네 가지입니다.
 
 | 이벤트명 | 바이인 | 날짜 | GTD |
 |:---|:---:|:---:|:---:|
+| **FLIPS to Mega Qualifier** (1 in 7) | **5만원** | **9/9** | — |
+| **Step 1** → Mega Qualifier | **8만원** | **9/5~9/9 매일** | — |
 | Paradise City Kickoff | 60만원 | 9/3~4 | 7,500만원 |
 | Mystery Bounty | 90만원 | 9/4~6 | 1.5억원 |
 | Multi Flight Challenge | 50만원 | 9/6 | 5,000만원 |
 | APPT National | 120만원 | 9/7~10 | 2.5억원 |
 | Survivor Knockout | 75만원 | 9/9~10 | 1.25억원 |
-| **현장 Mega Qualifier** | **35만원** | **9/9** | **3,600만원** |
+| **현장 Mega Qualifier** (20석 GTD) | **35만원** | **9/9** | **3,600만원** |
 | **APPT Main Event** | **180만원** | **9/10~14** | **10억원** |
+| APPT Main Event Turbo | 150만원 | 9/14 | — |
 | APPT Mini Main Event | 85만원 | 9/13~14 | 1억원 |
 | APPT High Roller | 500만원 | 9/13~14 | 2.5억원 |
+| **APPT Super High Roller** | **1,000만원** | **9/10~11** | 미공개 |
 
-==g:초보자 현실 목표: Mini Main Event(85만원) 또는 현장 Mega Qualifier(35만원) → Main Event 시트==
+==g:초보자 현실 목표: 9월 9일 FLIPS(5만원) 또는 Step 1(8만원)으로 Mega Qualifier 티켓 → Mega Qualifier에서 Main Event 시트 20석 중 하나==
 
 ---
 
@@ -129,27 +152,31 @@ APT 인천은 8월 7~16일, APPT 코리아는 9월 3~14일입니다. 두 대회�
 
 ## 참가하는 방법은 몇 가지인가요? — 경로 3가지 비용 비교
 
-**방법 A: PokerStars Power Path 위성 (가장 저렴)**
+**방법 A: PokerStars Power Path 위성 (온라인 · 가장 저렴)**
 $0.50 Spin & Go(Step 1) → $1~$1.50(Step 2) → $11(Step 3) → Step 4 → Pass 획득 → 메인이벤트 바이인
 ※ Silver Pass($2,500)를 따면 메인이벤트($1,260 상당) 참가 후 크레딧이 남습니다.
 
-**방법 B: 현장 Mega Qualifier (중간 · 가장 현실적)**
-9월 9일 현장 등록 → 35만원 Mega Qualifier 참가 → 상위 입상 시 메인이벤트 시트 획득
+**방법 B: 현장 하위 예선 (5만~8만원 · 온라인 계정 불필요)**
+9월 5일부터 매일 열리는 **Step 1(8만원)**, 또는 9월 9일의 **FLIPS(5만원)**에서 Mega Qualifier 티켓을 딴 뒤 → Mega Qualifier → 메인이벤트 시트. **현금으로 현장에서 바로 시작할 수 있는 가장 싼 입구입니다.**
 
-**방법 C: 현장 직접 바이인 (가장 확실)**
-현장 등록 데스크 → 180만원 결제 → 즉시 착석
+**방법 C: 현장 Mega Qualifier 직행 (35만원 · 시트 20석 보장)**
+9월 9일 15:00 Mega Qualifier에 직접 등록 → 상위 20명이 메인이벤트 시트 획득
+
+**방법 D: 현장 직접 바이인 (가장 확실)**
+현장 등록 데스크 → 180만원 결제 → 즉시 착석 (9월 14일 Turbo는 150만원)
 
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.3);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | 방법 | 최소 비용 | 시트 보장 | 준비 시간 |
 |:---|:---:|:---|:---|
 | A. Power Path | $0.50~ (약 700원) | 미보장 (실력 필요) | 지금부터 시작 |
-| B. 현장 Mega Qualifier | 35만원 | 미보장 (실력 필요) | 현장 당일 |
-| C. 현장 직접 | 180만원 | 즉시 보장 | 현장 당일 |
+| **B. 현장 하위 예선** | **5만원** (FLIPS) / 8만원 (Step 1) | 미보장 — **한 계단 더 올라가야 함** | 현장 당일 |
+| C. 현장 Mega Qualifier | 35만원 | 미보장 — 단 **20석 보장**이라 확률이 가장 좋다 | 현장 당일 |
+| D. 현장 직접 | 180만원 (Turbo 150만원) | 즉시 보장 | 현장 당일 |
 
 </div>
 
-==g:Power Path는 $0.50에서 시작해 단계별로 올라가는 구조입니다. 매일 무료 티켓 1장을 받을 수 있습니다.==
+==g:B와 C는 같은 목적지로 가는 계단입니다. 5만원 FLIPS(9/9 14:00)를 통과하면 바로 한 시간 뒤 열리는 35만원 Mega Qualifier(15:00) 자리를 얻습니다.==
 
 ---
 
@@ -220,16 +247,46 @@ APPT Korea 전용 위성이 로비에 언제 열리는지는 **PokerStars가 공
 
 ---
 
-## STEP 3 — 35만원으로 메인이벤트 시트를 딸 수 있나요?
+## STEP 3 — 현장에서 메인이벤트 시트를 가장 싸게 따려면?
 
-온라인 위성 없이도 현장에서 직접 도전할 수 있는 경로가 있습니다. **9월 9일 현장에서 열리는 Mega Qualifier**가 그것입니다.
+**현장 최저 입구는 35만원이 아니라 5만원입니다.** 9월 9일 14:00에 열리는 FLIPS(5만원)를 통과하면 한 시간 뒤 15:00에 시작하는 Mega Qualifier(35만원) 자리를 받고, 거기서 상위 20명이 메인이벤트 시트를 가져갑니다. 8만원짜리 Step 1은 9월 5일부터 닷새 내내 매일 열립니다.
 
-- 바이인: **35만원 (~$245)**
-- GTD: 3,600만원 (25,200달러)
-- 날짜: 2026년 9월 9일 (메인이벤트 하루 전날)
-- 상위 입상자: 메인이벤트 시트(180만원 상당) 수령
+즉 현장 경로는 단일 대회가 아니라 **세 칸짜리 계단**입니다.
 
-→ 메인이벤트에 180만원을 쓰기 전에, 35만원으로 한 번 도전해볼 수 있는 가장 현실적인 경로입니다.
+:::steps
+5만~8만원 하위 예선 | FLIPS(1 in 7) 또는 Step 1을 통과해 Mega Qualifier 자리를 얻는다
+35만원 Mega Qualifier | 9월 9일 15:00 · 상위 20명이 메인이벤트 Flight A 시트를 받는다 (20석 GTD)
+180만원 메인이벤트 | 9월 10~14일 · 보장 상금 10억원
+:::
+
+### 현장 예선 전체 일정 (메인이벤트 진입용)
+
+<div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.3);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
+
+| 날짜 · 시각 | 이벤트 (공식 표기) | 바이인 | 보장 시트 |
+|:---|:---|:---:|:---:|
+| 9/5(토) 20:00 | Step 1 — Mega Qualifier to Flight A (WYS at 50K Chips) | 8만원 | — |
+| 9/6(일) 19:00 | Step 1 — 동일 | 8만원 | — |
+| 9/6(일) 21:00 | APPT Main Event Qualifier (WYS at 100K Chips) | 21만원 | — |
+| 9/7(월) 20:00 | Step 1 — 동일 | 8만원 | — |
+| 9/7(월) 21:00 | APPT Main Event Qualifier | 21만원 | — |
+| 9/8(화) 20:00 | Step 1 — 동일 | 8만원 | **3석** |
+| 9/8(화) 21:00 | APPT Main Event Qualifier | 21만원 | — |
+| 9/9(수) 12:00 | Step 1 — 동일 | 8만원 | **5석** |
+| **9/9(수) 14:00** | **FLIPS to Main Event MEGA Qualifier (1 in 7)** | **5만원** | — |
+| **9/9(수) 15:00** | **Mega Qualifier to Flight A** (WYS at 60K Chips) | **35만원** | **20석** |
+| 9/9(수) 21:00 | Main Event Qualifier to Flight A | 35만원 | 3석 |
+| 9/10(목) 21:00 | Main Event Qualifier to Flight B | 35만원 | 3석 |
+| 9/11(금) 21:00 | Main Event Qualifier to Flight C | 35만원 | 5석 |
+| 9/12(토) 16:00 | Main Event Qualifier to Flight D | 35만원 | 3석 |
+
+</div>
+
+==g:메인이벤트는 Flight A~D 네 번 열립니다. 9월 9일 예선을 놓쳐도 9월 12일까지 Flight별 예선(35만원)이 매일 이어집니다.==
+
+**FLIPS의 「1 in 7」은 참가자 일곱 명당 한 자리**라는 뜻입니다. 5만원을 내고 7분의 1 확률로 35만원짜리 자리를 얻는 구조라, 기대값으로만 보면 35만원 대회에 직접 들어가는 것과 크게 다르지 않습니다. 차이는 **한 번에 나가는 돈**입니다 — 예산이 정해져 있다면 5만원으로 여러 번 시도하는 쪽이 심리적으로도 실무적으로도 편합니다.
+
+한 가지 주의할 게 있습니다. Step 1과 Mega Qualifier의 상품은 **현금이 아니라 다음 단계 자리**입니다. 계단을 끝까지 올라가지 못하면 그 돈은 회수되지 않습니다. **180만원을 한 번에 쓰는 것과 5만원씩 여러 번 쓰는 것 중 어느 쪽이 싼지는 몇 번 시도하느냐에 달려 있습니다.**
 
 ---
 
@@ -338,7 +395,11 @@ A. 가능합니다. 두 대회 모두 인천 파라다이스 시티에서 열리
 
 **Q. PokerStars 계정 없이 현장에서만 참가할 수 있나요?**
 
-A. 가능합니다. 방법 B(현장 Mega Qualifier)와 방법 C(현장 직접 바이인) 모두 PokerStars 계정 없이 현금(KRW) 또는 카지노 칩으로 참가할 수 있습니다. 현장 등록 데스크 운영 시간은 공식 공개 정보가 없으므로, 여유 있게 도착하거나 현장 연락처(+82-10-4194-6121)로 미리 확인하세요.
+A. 가능합니다. 방법 B(현장 하위 예선 5만~8만원), 방법 C(Mega Qualifier 35만원), 방법 D(직접 바이인 180만원) 모두 PokerStars 계정 없이 현금(KRW) 또는 카지노 칩으로 참가할 수 있습니다. 온라인 계정이 필요한 것은 방법 A(Power Path)뿐입니다. 현장 등록 데스크 운영 시간은 공식 공개 정보가 없으므로, 여유 있게 도착하거나 현장 연락처(+82-10-4194-6121)로 미리 확인하세요.
+
+**Q. APPT 코리아에서 가장 싼 이벤트는 얼마인가요?**
+
+A. 5만원입니다. 9월 9일 14:00에 열리는 FLIPS to Main Event MEGA Qualifier(1 in 7)가 전체 68개 이벤트 중 최저 바이인이고, 그다음이 9월 5일부터 매일 열리는 8만원 Step 1입니다. 둘 다 상품은 현금이 아니라 35만원짜리 Mega Qualifier 자리입니다. 반대편 끝은 9월 10~11일 APPT Super High Roller로 바이인이 1,000만원입니다.
 
 **Q. Silver Pass로 메인이벤트에 어떻게 사용하나요?**
 
@@ -346,7 +407,7 @@ A. Silver Pass는 $2,500 상당의 PokerStars Live 이벤트 바이인 크레딧
 
 **Q. 현장 Mega Qualifier 레이트 등록은 언제까지 가능한가요?**
 
-A. APPT 코리아 현장 Mega Qualifier(₩350K, 9월 9일)는 당일 첫 번째 레이트 등록 마감 시간까지 참가 가능합니다. 정확한 시간은 공식 스케줄([pokerstarslive.com/appt/korea](https://www.pokerstarslive.com/appt/korea/))에서 확인하거나, 현장 데스크에 문의하세요.
+A. 공식 스케줄에 이벤트마다 등록 마감 시각이 표기됩니다. 9월 9일 15:00 Mega Qualifier에 늦었다면 같은 날 21:00 Flight A 예선(35만원)이 한 번 더 있고, 9월 10~12일에도 Flight B·C·D 예선이 매일 열립니다. 정확한 시각은 [공식 스케줄](https://www.pokerstarslive.com/appt/korea/schedule/)에서 확인하거나 현장 데스크에 문의하세요.
 
 **Q. 참가 문의처는 어디인가요?**
 
@@ -356,9 +417,11 @@ A. PokerStars Live 현장 문의: +82-10-4194-6121 / 이메일: manila@pokerstar
 
 ## 출처
 
-이 글의 일정·바이인·상금·Power Path 구조는 아래 1차 출처를 직접 확인해 작성했습니다 (확인일: 2026년 7월 28일).
+이 글의 일정·바이인·상금·Power Path 구조는 아래 1차 출처를 직접 확인해 작성했습니다 (확인일: **2026년 8월 31일**).
 
-- [PokerStars Live — APPT Korea 2026 공식 페이지](https://www.pokerstarslive.com/appt/korea/) — 대회 기간, 이벤트별 바이인·보장 상금, 메인이벤트 일정, 현장 연락처, 외국인 전용 카지노 및 만 19세 이상 입장 규정
+- [PokerStars Live — APPT Korea 2026 전체 스케줄](https://www.pokerstarslive.com/appt/korea/schedule/) — **68개 이벤트(#0~#67) 전수**, 이벤트별 바이인·시작 시각·보장 시트, 예선 계단 구조. ★7월 28일 확인 시점에는 이 페이지가 비어 있었고 랜딩의 하이라이트 8개만 공개돼 있었습니다 — 8월 31일에 전체가 열려 본문 표를 다시 썼습니다
+- [PokerStars Live — APPT Korea 2026 공식 페이지](https://www.pokerstarslive.com/appt/korea/) — 대회 기간, 주요 이벤트 보장 상금, 메인이벤트 일정, 현장 연락처, 외국인 전용 카지노 및 만 19세 이상 입장 규정
+- [파라다이스시티 공식 홈페이지](https://www.p-city.com/) — 주소 표기(인천광역시 **영종구** 영종해안남로321번길 186). ★공식 표기가 «영종구»라 본문의 «인천 중구» 표기를 여기에 맞췄습니다
 - [PokerStars — Power Path 공식 안내](https://www.pokerstars.com/poker/learn/news/power-path-the-new-way-to-play-the-biggest-pokerstars-events/) — Step 1~4 구조, 2024년 10월 14일 Step 4 개편, Bronze/Silver/Gold Pass 가치
 - [Somuchpoker — APPT Korea 2019 메인이벤트 결과](https://somuchpoker.com/news/appt-korea-sparrow-wins-the-main-event-soyza-crowned-super-high-roller-champion) — 2019년 대회 일정, 581 엔트리, 파이널 테이블 9명 국적·상금
 
