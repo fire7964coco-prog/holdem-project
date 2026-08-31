@@ -27,7 +27,6 @@ Este é o **guia da ordem do jogo**: blinds, pré-flop, flop, turn, river, showd
 
 Postar os blinds (apostas obrigatórias) → distribuir duas **cartas fechadas** para cada jogador → apostas do **pré-flop** → revelar as três cartas do **flop** → apostar → adicionar a carta do **turn** → apostar → revelar a última carta, o **river** → apostar → os jogadores que sobraram vão ao showdown → a melhor mão de cinco cartas leva o pote.
 
-![Ordem do jogo no Texas Hold'em — blinds, pré-flop, flop, turn, river, showdown](/images/blog-holdem-game-flow.webp "As seis etapas de uma mão de Texas Hold'em, dos blinds ao showdown")
 
 ---
 

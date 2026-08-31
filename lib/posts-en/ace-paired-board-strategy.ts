@@ -121,7 +121,6 @@ This is a paired board too. A♠ A♥ 6♦. And the small blind bets **80.1%**.
 
 The conditions are unchanged from the previous two spots — a 6bb pot, a 97bb effective stack, the small blind as the opener. One board ago, from that same seat, [it bet only 9.6%](/en/blog/blind-battle-connected-board "thumb:/images/gto-sb-connected-oop-en.webp"). This spot is the other end. Every number below comes from the [HoldemMaster GTO solver](/en/solver).
 
-![HoldemMaster GTO solver on an A-A-6 flop, the small blind's grid almost entirely orange for the bet](/images/gto-sb-paired-ace-oop-en.webp "A-A-6 blind vs blind · the small blind's flop strategy — orange is the 79.6% bet, the green stripes the 19.8% check")
 
 :::stripe
 Spot | SB opens 3bb → BB calls (blind vs blind)

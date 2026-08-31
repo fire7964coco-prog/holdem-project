@@ -27,7 +27,6 @@ Voici le **guide de l'ordre du jeu** : blindes, préflop, flop, turn, river, aba
 
 On pose les blindes (mises obligatoires) → on distribue deux **cartes fermées** à chaque joueur → tour d'enchères **préflop** → on dévoile les trois cartes du **flop** → enchères → on ajoute la carte du **turn** → enchères → on retourne la dernière carte, la **river** → enchères → les joueurs encore en lice vont à l'abattage → la meilleure main de cinq cartes l'emporte.
 
-![Ordre du jeu au Texas Hold'em — blindes, préflop, flop, turn, river et abattage](/images/blog-holdem-game-flow.webp "Les six étapes d'une main de Texas Hold'em, des blindes à l'abattage")
 
 ---
 

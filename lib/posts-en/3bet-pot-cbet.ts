@@ -113,7 +113,6 @@ Here it does the opposite: **the big blind bets its entire range** — all 63 co
 
 What changed is not the board. It is the preflop action: the big blind **three-bet** instead of calling, so the pot is 22.5bb instead of 5.5bb. That one difference flips the entire flop on its head. Every figure below comes from HoldemMaster's [free GTO solver](/en/solver).
 
-![HoldemMaster GTO solver — an A♦K♠2♥ three-bet pot where the big blind's entire range is colored for betting and check reads 0.0%](/images/gto-3bp-ace-king-oop-en.webp "A-K-2 three-bet pot · the big blind's flop strategy — check 0.0%, the whole range bets")
 
 :::stripe
 Spot | BB three-bets → BTN calls (heads-up)

@@ -27,7 +27,6 @@ Ini adalah **panduan urutan permainan**: blinds, preflop, flop, turn, river, sho
 
 Pasang blinds (taruhan wajib) → bagikan dua **kartu tertutup (hole cards)** ke setiap pemain → taruhan **preflop** → buka tiga kartu **flop** → bertaruh → tambahkan kartu **turn** → bertaruh → buka kartu terakhir, **river** → bertaruh → pemain yang tersisa masuk showdown → kombinasi lima kartu terbaik menang.
 
-![Urutan main Texas Hold'em — blinds, preflop, flop, turn, river, showdown](/images/blog-holdem-game-flow.webp "Enam tahap satu hand Texas Hold'em, dari blinds sampai showdown")
 
 ---
 

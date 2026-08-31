@@ -27,7 +27,6 @@ Ito ang **gabay sa order of play**: blinds, preflop, flop, turn, river, showdown
 
 Mag-post ng blinds (forced bets) → i-deal ang dalawang **hole cards** sa bawat player → **preflop** betting → ibunyag ang tatlong **flop** cards → bet → dagdagan ng **turn** card → bet → ibunyag ang huling **river** card → bet → ang natirang players ay magsho-showdown → panalo ang pinakamagandang five-card hand.
 
-![Order of play ng Texas Hold'em — blinds, preflop, flop, turn, river at showdown](/images/blog-holdem-game-flow.webp "Ang anim na stage ng isang Texas Hold'em hand, mula blinds hanggang showdown")
 
 ---
 

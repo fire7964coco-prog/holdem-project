@@ -27,7 +27,6 @@ export const POST: Post = {
 
 Blind (अनिवार्य दांव) लगाएँ → हर खिलाड़ी को 2 **hole कार्ड** बाँटें → **preflop** betting → 3 **flop** कार्ड खोलें → bet → **turn** कार्ड जोड़ें → bet → आख़िरी **river** कार्ड खोलें → bet → जो बचे हैं वे showdown पर कार्ड दिखाएँ → सबसे अच्छा 5-कार्ड हैंड जीतता है।
 
-![टेक्सस होल्डम खेल का क्रम — blind, preflop, flop, turn, river, showdown](/images/blog-holdem-game-flow.webp "टेक्सस होल्डम के एक हैंड के छह चरण, blind से showdown तक")
 
 ---
 

@@ -90,7 +90,6 @@ The solver does the opposite. **It bets 14.9bb — two-thirds of the pot — 97.
 
 Why a range that hit nothing fires the big size is what the numbers below are for. All of them come from HoldemMaster's [free GTO solver](/en/solver).
 
-![HoldemMaster GTO solver results for an 8-5-2 flop in a three-bet pot — the big blind's range almost entirely coloured for the large bet](/images/gto-3bp-low-oop-en.webp "8-5-2 in a three-bet pot · the big blind's flop strategy — Bet 14.9bb (66% pot) at 97.8%")
 
 :::stripe
 Spot | BB three-bets → BTN calls (heads-up)

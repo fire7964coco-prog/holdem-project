@@ -27,7 +27,15 @@ export function intlBlogMetadata(locale: SecondaryLocale, slug: string): Metadat
   if (!post) return { title: "Not found" };
 
   const lcp = getBlogLcpInfo(post.content);
-  const ogImage = lcp?.src ? `${SITE}${lcp.src}` : `${SITE}/opengraph.jpg`;
+  /**
+   * ★ og:image는 «지정된 히어로(post.image)»를 1순위로 쓴다 (2026-08-31).
+   * 다국어 렌더러는 post.image를 히어로로 그리므로 content에는 히어로가 없다
+   * (넣으면 두 번 나온다 — 39편이 그 상태였다 · posting.mdc STEP 3 대조표).
+   * 그래서 content 기준으로만 고르면 og가 «첫 본문 이미지»가 되어 히어로가 아닌 것이 공유 카드에 뜬다.
+   * 우선순위: post.image → content 첫 이미지 → 사이트 기본값.
+   */
+  const ogSrc = post.image || lcp?.src || null;
+  const ogImage = ogSrc ? `${SITE}${ogSrc}` : `${SITE}/opengraph.jpg`;
   const url = `${SITE}/${locale}/blog/${post.slug}`;
 
   return {
@@ -73,7 +81,15 @@ export function IntlBlogArticle({ locale, slug }: { locale: SecondaryLocale; slu
   if (!post) notFound();
 
   const lcp = getBlogLcpInfo(post.content);
-  const ogImage = lcp?.src ? `${SITE}${lcp.src}` : `${SITE}/opengraph.jpg`;
+  /**
+   * ★ og:image는 «지정된 히어로(post.image)»를 1순위로 쓴다 (2026-08-31).
+   * 다국어 렌더러는 post.image를 히어로로 그리므로 content에는 히어로가 없다
+   * (넣으면 두 번 나온다 — 39편이 그 상태였다 · posting.mdc STEP 3 대조표).
+   * 그래서 content 기준으로만 고르면 og가 «첫 본문 이미지»가 되어 히어로가 아닌 것이 공유 카드에 뜬다.
+   * 우선순위: post.image → content 첫 이미지 → 사이트 기본값.
+   */
+  const ogSrc = post.image || lcp?.src || null;
+  const ogImage = ogSrc ? `${SITE}${ogSrc}` : `${SITE}/opengraph.jpg`;
   const url = `${SITE}/${locale}/blog/${post.slug}`;
   const brand = CHROME[locale].brand;
 

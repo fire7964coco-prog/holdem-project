@@ -76,7 +76,6 @@ So how much do you bet? The instinct is to build the pot. The solver checks this
 
 A monotone flop is the texture that confuses people most, because made hands and air both behave differently than usual. Every figure below came from HoldemMaster's [free GTO solver](/en/solver).
 
-![HoldemMaster GTO solver results for Q-9-2 all spades — the big blind's range mostly green for check, with only a sliver of large bets](/images/gto-srp-monotone-oop-en.webp "Q♠9♠2♠ · the big blind's flop strategy — 88.8% check, and the large bet is only 3.2%")
 
 :::stripe
 Spot | BTN opens 2.5bb → BB calls (heads-up)

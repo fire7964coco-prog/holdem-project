@@ -115,7 +115,6 @@ Hold TT there and your equity is **76.0%**. The same TT is around 54–57% again
 
 **A board nobody hit is really a contest over whose high cards are better.** The [ace-high](/en/blog/a-high-board-cbet) and [king-high](/en/blog/k-high-board-cbet) flops were fights over who connected; this one is a fight between two ranges that mostly did not. Every figure below comes from HoldemMaster's [free GTO solver](/en/solver).
 
-![HoldemMaster GTO solver results for a 6-6-3 paired flop — the big blind's range almost entirely green for check, with quads and full house appearing in the category panel](/images/gto-srp-paired-oop-en.webp "6♣6♦3♥ · the big blind's flop strategy — 97.0% check, and the panel now lists quads and full house")
 
 :::stripe
 Spot | BTN opens 2.5bb → BB calls (heads-up)

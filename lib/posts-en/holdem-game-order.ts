@@ -33,7 +33,7 @@ This is the **order-of-play guide**: blinds, preflop, flop, turn, river, showdow
 
 Post the blinds (forced bets) → deal two **hole cards** to each player → **preflop** betting → reveal three **flop** cards → bet → add the **turn** card → bet → reveal the final **river** card → bet → surviving players show down → best five-card hand wins.
 
-![Texas Hold'em order of play — blinds, preflop, flop, turn, river, showdown](/images/blog-holdem-game-flow.webp "The six stages of a Texas Hold'em hand, from blinds to showdown")
+
 
 ---
 

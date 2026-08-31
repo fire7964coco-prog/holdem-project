@@ -113,7 +113,6 @@ This is not a three-bet pot. It is an ordinary hand: the small blind opens to 3b
 
 What changed? The pot is small at 6bb and the stacks are 97bb deep. What changed is **who acts first, and which range the board favors — both at once.** Every number below comes from the [HoldemMaster GTO solver](/en/solver).
 
-![HoldemMaster GTO solver on a K-T-6 rainbow flop, the small blind's grid mixed orange for the bet and green for the check](/images/gto-sb-king-mid-oop-en.webp "K-T-6 blind vs blind · the small blind's flop strategy — orange is the 67.4% bet, green the 32.6% check")
 
 :::stripe
 Spot | SB opens 3bb → BB calls (blind vs blind)

@@ -27,7 +27,6 @@ Das hier ist der **Leitfaden zum Spielablauf**: Blinds, Preflop, Flop, Turn, Riv
 
 Blinds setzen (Pflichteinsätze) → jeder Spieler erhält zwei **Hole Cards** → **Preflop**-Setzrunde → drei **Flop**-Karten werden aufgedeckt → setzen → die **Turn**-Karte kommt dazu → setzen → die letzte **River**-Karte wird aufgedeckt → setzen → die verbliebenen Spieler gehen in den Showdown → die beste Fünf-Karten-Hand gewinnt.
 
-![Texas Hold'em Reihenfolge – Blinds, Preflop, Flop, Turn, River, Showdown](/images/blog-holdem-game-flow.webp "Die sechs Phasen einer Texas-Hold'em-Hand, von den Blinds bis zum Showdown")
 
 ---
 

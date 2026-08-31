@@ -27,8 +27,6 @@ export const POST: Post = {
     "casino blitz garmisch",
   ],
   content: `
-![Übersichtskarte mit München in der Mitte und den fünf nächstgelegenen bayerischen Spielbanken samt Fahrzeit, Spieltag und Buy-in](/images/poker-turnier-muenchen-hero.webp)
-
 Die häufigste Frage, die ich von Spielern aus München höre, klingt harmlos: „Wo spiele ich hier eigentlich ein Turnier?“ Die Antwort ist es nicht. München ist die größte Stadt Bayerns – und hat keine Spielbank.
 
 Das ist kein Zufall und auch kein Versehen. Es steht so im Gesetz, und wenn du verstehst warum, verstehst du auch, warum ausgerechnet Orte wie Bad Wiessee und Bad Kötzting Pokertische haben und eine Millionenstadt nicht.

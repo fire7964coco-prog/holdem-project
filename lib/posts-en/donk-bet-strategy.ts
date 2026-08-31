@@ -83,7 +83,6 @@ A bet by the player who only called preflop is a **donk bet** — from donkey, w
 
 Every figure below came from HoldemMaster's [free GTO solver](/en/solver), read off the study-spot output on 2026-08-19.
 
-![HoldemMaster GTO solver results for 9-8-7 two-tone — the big blind's grid mixing green checks with orange and pink bets](/images/gto-srp-middle-connected-oop-en.webp "9♥8♥7♣ · the big blind's flop strategy — orange and pink start appearing among the green")
 
 :::stripe
 Spot | BTN opens 2.5bb → BB calls (heads-up)

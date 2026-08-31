@@ -111,7 +111,6 @@ So should the small blind simply always bet blind versus blind? This spot is the
 
 **The pot is the same 6bb, the effective stack the same 97bb, and the only bet size in the tree is still a third of the pot.** Both ranges are the same as the previous spot too. The only thing that changed is **three board cards**. And the small blind's bet collapses to **9.6%**. Every number below comes from the [HoldemMaster GTO solver](/en/solver).
 
-![HoldemMaster GTO solver on a 7-6-5 two-tone flop, the small blind's grid almost entirely green for the check](/images/gto-sb-connected-oop-en.webp "7-6-5 blind vs blind · the small blind's flop strategy — green is the 90.4% check, the thin orange stripes are the 9.6% bet")
 
 :::stripe
 Spot | SB opens 3bb → BB calls (blind vs blind)

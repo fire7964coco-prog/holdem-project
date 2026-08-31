@@ -130,7 +130,6 @@ It leads **3.2%** of the time.
 
 The reason is one hand. **Exactly one holding makes a straight on 6-5-2, and neither player has it.** Every figure below comes from HoldemMaster's [free GTO solver](/en/solver).
 
-![HoldemMaster GTO solver results for a 6-5-2 rainbow flop — the big blind's range almost entirely green for check, with a thin orange band of leads](/images/gto-srp-low-rainbow-oop-en.webp "6♠5♥2♦ · the big blind's flop strategy — green is the 96.8% check, the thin orange band is the 3.2% lead")
 
 :::stripe
 Spot | BTN opens 2.5bb → BB calls (heads-up)

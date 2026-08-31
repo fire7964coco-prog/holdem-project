@@ -27,7 +27,6 @@ To jest **przewodnik po kolejności gry**: blindy, preflop, flop, turn, river, s
 
 Wpłata blindów (przymusowe zakłady) → dwie **karty zakryte** dla każdego gracza → licytacja na **preflopie** → odkrycie trzech kart **flopa** → licytacja → dołożenie karty **turn** → licytacja → odkrycie ostatniej karty, **rivera** → licytacja → gracze, którzy zostali w grze, idą do showdownu → wygrywa najlepszy układ pięciu kart.
 
-![Kolejność gry w Texas Hold'em — blindy, preflop, flop, turn, river i showdown](/images/blog-holdem-game-flow.webp "Sześć etapów rozdania Texas Hold'em, od blindów do showdownu")
 
 ---
 

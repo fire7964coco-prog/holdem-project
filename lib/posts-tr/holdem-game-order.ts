@@ -27,7 +27,6 @@ export const POST: Post = {
 
 Blind koy (zorunlu bahis) → her oyuncuya 2 **kapalı kart** dağıt → **preflop** turu → 3 **flop** kartını aç → bahis → **turn** kartını ekle → bahis → son **river** kartını aç → bahis → kalan oyuncular showdown'da kartlarını gösterir → en iyi beş kartlık el kazanır.
 
-![Texas Hold'em el sırası — blind, preflop, flop, turn, river, showdown](/images/blog-holdem-game-flow.webp "Bir Texas Hold'em elinin altı aşaması, blind'dan showdown'a")
 
 ---
 

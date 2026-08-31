@@ -27,7 +27,6 @@ export const POST: Post = {
 
 Blind (বাধ্যতামূলক বাজি) দিন → প্রতি খেলোয়াড়কে 2টা **hole কার্ড** বিলি করুন → **preflop** betting → 3টা **flop** কার্ড খুলুন → bet → **turn** কার্ড যোগ করুন → bet → শেষ **river** কার্ড খুলুন → bet → যারা টিকে আছেন তারা showdown-এ কার্ড দেখান → সেরা 5-কার্ড হ্যান্ড জেতে।
 
-![টেক্সাস হোল্ডেম খেলার ক্রম — blind, preflop, flop, turn, river, showdown](/images/blog-holdem-game-flow.webp "টেক্সাস হোল্ডেমের এক হ্যান্ডের ছয়টি ধাপ, blind থেকে showdown পর্যন্ত")
 
 ---
 

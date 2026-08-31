@@ -75,7 +75,6 @@ The last two spots — [ace-high](/en/blog/a-high-board-cbet) and [king-high](/e
 
 "Lots of draws" and "you may bet first" are different claims. Every figure below came from HoldemMaster's [free GTO solver](/en/solver), read off the study-spot output on 2026-08-19.
 
-![HoldemMaster GTO solver results for Q-J-T two-tone — the big blind's range shown green for check, with the draw breakdown panel on the right](/images/gto-srp-broadway-oop-en.webp "Q♠J♦T♠ · the big blind's flop strategy — 99.9% check, with the draw panel worth reading")
 
 :::stripe
 Spot | BTN opens 2.5bb → BB calls (heads-up)

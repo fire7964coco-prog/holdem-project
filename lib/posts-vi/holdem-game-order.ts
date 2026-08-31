@@ -27,7 +27,6 @@ Ai lần đầu ngồi vào ván Texas Hold'em cũng hỏi đúng một câu: ==
 
 Đặt mù (cược bắt buộc) → chia hai **lá bài tẩy** cho mỗi người → vòng cược **preflop** → lật ba lá **flop** → cược → thêm lá **turn** → cược → lật lá **river** cuối cùng → cược → những người còn trụ lật bài → bộ 5 lá tốt nhất thắng.
 
-![Trình tự chơi Texas Hold'em — mù, preflop, flop, turn, river, lật bài](/images/blog-holdem-game-flow.webp "Sáu giai đoạn của một ván Texas Hold'em, từ mù đến lật bài")
 
 ---
 

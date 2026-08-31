@@ -95,7 +95,6 @@ The flop comes **A♥ 7♦ 2♣**, rainbow. You are in the big blind with A9 —
 
 Every figure below came from HoldemMaster's [free GTO solver](/en/solver), read off the study-spot output on 2026-08-19, and you can pull the same screen up with a single click.
 
-![HoldemMaster GTO solver results screen for A-7-2 rainbow — the big blind's range shown almost entirely green for check, with action frequencies and hand categories](/images/gto-srp-dry-ace-oop-en.webp "A♥7♦2♣ · the big blind's flop strategy — green is check, 98.2% of the range")
 
 :::stripe
 Spot | BTN opens 2.5bb → BB calls (heads-up)

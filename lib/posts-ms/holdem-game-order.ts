@@ -27,7 +27,6 @@ Ini adalah **panduan urutan permainan**: blinds, preflop, flop, turn, river, sho
 
 Letak blinds (pertaruhan wajib) → setiap pemain terima dua **kad pemula** → pertaruhan **preflop** → buka tiga kad **flop** → bertaruh → tambah kad **turn** → bertaruh → buka kad terakhir, **river** → bertaruh → pemain yang masih bertahan ke showdown → tangan lima kad terbaik menang.
 
-![Urutan permainan Texas Hold'em — blinds, preflop, flop, turn, river dan showdown](/images/blog-holdem-game-flow.webp "Enam peringkat satu tangan Texas Hold'em, dari blinds hingga showdown")
 
 ---
 

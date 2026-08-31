@@ -27,7 +27,6 @@ Esta es la **guía del orden de juego**: ciegas, preflop, flop, turn, river, sho
 
 Se ponen las ciegas (apuestas obligatorias) → se reparten dos **cartas propias** a cada jugador → apuestas de **preflop** → se destapan las tres cartas del **flop** → apuestas → se añade la carta del **turn** → apuestas → se destapa la última carta, el **river** → apuestas → los jugadores que quedan van al showdown → gana la mejor mano de cinco cartas.
 
-![Orden de juego del Texas Hold'em — ciegas, preflop, flop, turn, river y showdown](/images/blog-holdem-game-flow.webp "Las seis etapas de una mano de Texas Hold'em, de las ciegas al showdown")
 
 ---
 

@@ -144,7 +144,6 @@ This flop is Q♥ T♥ 7♠. Two hearts, and only the jack missing between the q
 
 "Bet big on wet boards" is advice everybody has heard. What nobody mentions is how extreme it gets. Every number below comes from HoldemMaster's [free GTO solver](/en/solver).
 
-![HoldemMaster GTO solver — a Q♥T♥7♠ three-bet pot where the big blind's range is almost entirely one color and the two-thirds size reads 98.4%](/images/gto-3bp-dynamic-oop-en.webp "Q-T-7 three-bet pot · the big blind's flop strategy — Bet 14.9bb, two thirds of the pot, at 98.4%")
 
 :::stripe
 Spot | BB three-bets → BTN calls (heads-up)

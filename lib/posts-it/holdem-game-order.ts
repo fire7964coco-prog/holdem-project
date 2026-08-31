@@ -27,7 +27,6 @@ Questa è la **guida all'ordine di gioco**: bui, preflop, flop, turn, river, sho
 
 Si mettono i bui (puntate obbligatorie) → si distribuiscono due **carte personali** a ogni giocatore → puntate del **preflop** → si scoprono le tre carte del **flop** → puntate → si aggiunge la carta del **turn** → puntate → si scopre l'ultima carta, il **river** → puntate → i giocatori rimasti vanno allo showdown → vince la migliore mano da cinque carte.
 
-![Ordine di gioco del Texas Hold'em — bui, preflop, flop, turn, river e showdown](/images/blog-holdem-game-flow.webp "Le sei fasi di una mano di Texas Hold'em, dai bui allo showdown")
 
 ---
 

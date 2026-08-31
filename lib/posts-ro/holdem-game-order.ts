@@ -27,7 +27,6 @@ Asta e **ghidul ordinii de joc**: blind-uri, preflop, flop, turn, river, showdow
 
 Se pun blind-urile (pariuri obligatorii) → se împart două **cărți din mână** fiecărui jucător → pariere pe **preflop** → se descoperă cele trei cărți de pe **flop** → pariere → se adaugă cartea de pe **turn** → pariere → se descoperă ultima carte, **river**-ul → pariere → jucătorii rămași merg la showdown → câștigă cea mai bună mână din cinci cărți.
 
-![Ordinea de joc la Texas Hold'em — blind-uri, preflop, flop, turn, river și showdown](/images/blog-holdem-game-flow.webp "Cele șase etape ale unei mâini de Texas Hold'em, de la blind-uri la showdown")
 
 ---
 

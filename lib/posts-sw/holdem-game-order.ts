@@ -27,7 +27,6 @@ Huu ni **mwongozo wa mpangilio wa mchezo**: blinds, preflop, flop, turn, river, 
 
 Weka blinds (madau ya lazima) → gawa karata mbili za **mkononi** kwa kila mchezaji → dau la **preflop** → fumbua karata tatu za **flop** → bet → ongeza karata ya **turn** → bet → fumbua karata ya mwisho, **river** → bet → wachezaji waliobaki wanaenda showdown → mkono bora wa karata tano unashinda.
 
-![Mpangilio wa mchezo wa Texas Hold'em — blinds, preflop, flop, turn, river na showdown](/images/blog-holdem-game-flow.webp "Hatua sita za mkono wa Texas Hold'em, kutoka blinds hadi showdown")
 
 ---
 

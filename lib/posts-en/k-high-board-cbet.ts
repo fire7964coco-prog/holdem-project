@@ -71,7 +71,6 @@ It is. **It checks harder.** The big blind checks ==99.8%== here, more completel
 
 Every figure below came from HoldemMaster's [free GTO solver](/en/solver), read off the study-spot output on 2026-08-19.
 
-![HoldemMaster GTO solver results for K-8-3 rainbow — the big blind's range shown almost entirely green for check, with hand categories on the right](/images/gto-srp-dry-king-oop-en.webp "K♠8♦3♣ · the big blind's flop strategy — green is check, 99.8% of the range")
 
 :::stripe
 Spot | BTN opens 2.5bb → BB calls (heads-up)
