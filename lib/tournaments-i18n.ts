@@ -49,6 +49,20 @@ export interface BoardStrings {
   filterOngoing: string;
   filterEnded: string;
 
+  /**
+   * 국가 필터 행의 «전체» 칩.
+   * ★ 상태 필터의 filterAll과 같은 글자를 쓰면 «전체» 칩이 두 줄에 나란히 서서
+   *   어느 것이 무엇인지 구분이 안 된다. 그래서 별도 문자열이다.
+   */
+  filterAllCountries: string;
+  /**
+   * 국가 필터 칩 라벨.
+   * ★ HOME_COUNTRY[locale]에 든 코드만 쓴다 — «이 독자가 실제로 갈 곳»(그 상수의 정의)이다.
+   *   보드에 오르는 29개국 전체를 6개 언어로 번역하지 않는다(지어낼 위험 대비 값어치가 없다).
+   *   대회가 0건인 코드는 화면에서 자동으로 빠지므로 여기 남아 있어도 무해하다.
+   */
+  homeCountryNames: Record<string, string>;
+
   colDates: string;
   colBuyin: string;
   colVenue: string;
@@ -104,6 +118,12 @@ const en: BoardStrings = {
   filterUpcoming: "Upcoming",
   filterOngoing: "Running now",
   filterEnded: "Finished",
+
+  filterAllCountries: "All countries",
+  homeCountryNames: {
+    US: "United States", GB: "United Kingdom", AU: "Australia",
+    CA: "Canada", IE: "Ireland",
+  },
 
   colDates: "Dates",
   colBuyin: "Buy-in",
@@ -202,6 +222,9 @@ const ja: BoardStrings = {
   filterUpcoming: "予定",
   filterOngoing: "開催中",
   filterEnded: "終了",
+
+  filterAllCountries: "すべての国",
+  homeCountryNames: { JP: "日本" },
 
   colDates: "日程",
   colBuyin: "バイイン",
@@ -313,6 +336,9 @@ const zh: BoardStrings = {
   filterOngoing: "进行中",
   filterEnded: "已结束",
 
+  filterAllCountries: "所有国家和地区",
+  homeCountryNames: { CN: "中国", PH: "菲律宾", KH: "柬埔寨" },
+
   colDates: "日期",
   colBuyin: "买入",
   colVenue: "场馆",
@@ -421,6 +447,10 @@ const zhHant: BoardStrings = {
   filterUpcoming: "即將開始",
   filterOngoing: "進行中",
   filterEnded: "已結束",
+
+  filterAllCountries: "所有國家與地區",
+  // ★ 「台」로 쓴다 — 2026-08-31 볼륨 실측에서 검색 표기가 전부 台灣이었다(臺灣 아님).
+  homeCountryNames: { TW: "台灣", HK: "香港", PH: "菲律賓" },
 
   colDates: "日期",
   colBuyin: "買入",
@@ -532,6 +562,11 @@ const es: BoardStrings = {
   filterOngoing: "En curso",
   filterEnded: "Finalizados",
 
+  filterAllCountries: "Todos los países",
+  homeCountryNames: {
+    MX: "México", ES: "España", AR: "Argentina", BR: "Brasil", UY: "Uruguay",
+  },
+
   colDates: "Fechas",
   colBuyin: "Buy-in",
   colVenue: "Sede",
@@ -633,6 +668,12 @@ const de: BoardStrings = {
   filterUpcoming: "Kommend",
   filterOngoing: "Läuft",
   filterEnded: "Beendet",
+
+  filterAllCountries: "Alle Länder",
+  // ★ CZ가 여기 있는 이유는 HOME_COUNTRY의 주석과 같다 — 독일 독자가 실제로 가는 곳이 체코다.
+  homeCountryNames: {
+    DE: "Deutschland", AT: "Österreich", CH: "Schweiz", CZ: "Tschechien",
+  },
 
   colDates: "Termin",
   colBuyin: "Buy-in",

@@ -29,6 +29,8 @@ import { SITE } from "@/lib/site";
  */
 
 type Filter = "all" | TournamentStatus;
+/** "all" 또는 ISO 국가코드(t.country). */
+type CountryFilter = string;
 
 export default function TournamentBoard({
   locale,
@@ -46,6 +48,14 @@ export default function TournamentBoard({
 }) {
   const s = BOARD_STRINGS[locale];
   const [filter, setFilter] = useState<Filter>("all");
+  /**
+   * ★ 기본값을 "all"에서 바꾸지 마라.
+   *   이 컴포넌트의 첫 렌더가 곧 산출물 HTML이라, 기본을 자국으로 잡으면
+   *   구글이 보는 본문이 121장 → 십수 장으로 줄어든다.
+   *   /zh-hant/tournaments는 GSC 기준선을 막 떠 둔 페이지다(핸드오프 「Step 0 기준선」).
+   *   필터는 «읽는 사람이 좁히는 장치»이지 색인 범위를 줄이는 장치가 아니다.
+   */
+  const [country, setCountry] = useState<CountryFilter>("all");
 
   if (!s) return null;
 
@@ -57,10 +67,13 @@ export default function TournamentBoard({
     return ha - hb;
   });
 
-  const visible =
+  const byStatus =
     filter === "all"
       ? ordered
       : ordered.filter((t) => computeStatus(t, todayISO) === filter);
+
+  const visible =
+    country === "all" ? byStatus : byStatus.filter((t) => t.country === country);
 
   const countries = new Set(TOURNAMENTS.map((t) => t.country)).size;
   const dot = todayISO.replace(/-/g, ".");
@@ -71,6 +84,21 @@ export default function TournamentBoard({
     { key: "upcoming", label: s.filterUpcoming },
     { key: "ended", label: s.filterEnded },
   ];
+
+  /**
+   * 국가 칩 — 이 로케일 독자의 자국(HOME_COUNTRY)만.
+   * 121건을 통째로 뿌리면 대만 독자가 오스트리아 대회를 스크롤하게 된다.
+   * 개수는 «현재 상태 필터를 적용한 뒤» 세므로 «진행중 × 台灣»처럼 조합해도 값이 맞는다.
+   * 대회가 한 건도 없는 코드(zh의 CN·KH, zh-hant의 HK 등)는 여기서 자동으로 빠진다.
+   */
+  const countryChips = home
+    .map((code) => ({
+      code,
+      label: s.homeCountryNames[code] ?? code,
+      total: TOURNAMENTS.filter((t) => t.country === code).length,
+      count: byStatus.filter((t) => t.country === code).length,
+    }))
+    .filter((c) => c.total > 0);
 
   return (
     <div className="max-w-5xl mx-auto px-4 py-10">
@@ -92,7 +120,7 @@ export default function TournamentBoard({
         </p>
       </header>
 
-      <div className="flex flex-wrap gap-2 mb-6">
+      <div className="flex flex-wrap gap-2 mb-2">
         {FILTERS.map((f) => (
           <button
             key={f.key}
@@ -108,6 +136,38 @@ export default function TournamentBoard({
           </button>
         ))}
       </div>
+
+      {/* 국가 줄은 상태 줄보다 한 급 작게 — 모바일에서 칩이 5줄까지 쌓여 첫 카드를 밀어낸다.
+          크기 차이 자체가 «다른 축의 필터»라는 신호이기도 하다. */}
+      {countryChips.length > 0 && (
+        <div className="flex flex-wrap gap-1.5 mb-6">
+          <button
+            onClick={() => setCountry("all")}
+            aria-pressed={country === "all"}
+            className={`px-3 py-1 rounded-full text-[11px] font-bold border transition-all ${
+              country === "all"
+                ? "bg-primary text-primary-foreground border-primary"
+                : "bg-card text-muted-foreground border-border hover:border-primary/50"
+            }`}
+          >
+            {s.filterAllCountries}
+          </button>
+          {countryChips.map((c) => (
+            <button
+              key={c.code}
+              onClick={() => setCountry(c.code)}
+              aria-pressed={country === c.code}
+              className={`px-3 py-1 rounded-full text-[11px] font-bold border transition-all ${
+                country === c.code
+                  ? "bg-primary text-primary-foreground border-primary"
+                  : "bg-card text-muted-foreground border-border hover:border-primary/50"
+              }`}
+            >
+              {c.label} {c.count}
+            </button>
+          ))}
+        </div>
+      )}
 
       {visible.length === 0 ? (
         <p className="text-muted-foreground text-sm py-12 text-center">{s.emptyState}</p>
