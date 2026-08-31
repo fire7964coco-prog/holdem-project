@@ -529,12 +529,23 @@ const RAW_TOURNAMENTS: Tournament[] = [
     highlight: true,
     sourceUrl: "https://wpl.winjoygame.com/holdem-masters-8",
     sourceTier: "A",
-    verifiedAt: "2026-08-06",
+    verifiedAt: "2026-08-31",
     organizer: { name: "WeLive", url: "https://wpl.winjoygame.com" },
     schemaDescription:
       "제8회 홀덤 마스터스. WPL 메인이벤트 DAY3 & FINAL 상금 18억원, NLH 딥스택 5개 각 4천만원. DAY1 플라이트 28회(8/21~10/2), FINAL 10/5. 초대권 전용 참가.",
   },
   {
+    /**
+     * ★ 바이인 범위는 2026-08-31에 «₩350K~₩5M»에서 넓혔다. **이전 값이 틀렸던 게 아니다** —
+     *   07-29엔 `/appt/korea/schedule/`이 빈 표로 렌더돼(스파인 §APPT 「내부 모순」 행)
+     *   랜딩의 Key Events 8개만 근거였고, 그 8개 안에서는 ₩350K~₩5M이 맞았다.
+     *   그 뒤 전체 스케줄이 공개됐다("The full schedule is now available").
+     * ★ 실측(Playwright DOM): 이벤트 **#0~#67 결번 0** · 12일 전부 렌더 · 페이지네이션 없음.
+     *   최소 = `#0 FLIPS to Main Event MEGA Qualifier - 1 in 7` **₩50,000**(9/9 · 1,000 스택),
+     *   최대 = `#43 APPT Super High Roller` **₩10,000,000**(9/10 Day1 · 9/11 Final · 250,000 스택).
+     * 🔴 «Key Events만 보고 범위를 좁히지 마라» — 본문 탭 파싱은 #0을 놓친다
+     *   (이벤트 번호가 0이고 Reg.Close 칸이 비어 있다). 심판은 `select#buy-in-filter`의 24종 열거다.
+     */
     id: "appt-korea",
     name: "APPT 코리아 2026",
     nameEn: "APPT Korea 2026",
@@ -545,15 +556,15 @@ const RAW_TOURNAMENTS: Tournament[] = [
     city: "Incheon",
     country: "KR",
     venue: "Paradise City",
-    buyin: "₩350K~₩5M",
+    buyin: "₩5만~₩1,000만",
     emoji: "♠️",
     color: "bg-teal-500/15 text-teal-400 border-teal-500/30",
-    note: "메인이벤트 9/10~14 — ₩180만 바이인 · ₩10억 GTD",
+    note: "메인이벤트 9/10~14 — ₩180만 바이인 · ₩10억 GTD · 전 68이벤트",
     highlight: true,
     blogLink: "/blog/appt-korea-2026-guide",
     sourceUrl: "https://www.pokerstarslive.com/appt/korea/",
     sourceTier: "A",
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-08-31",
     organizer: { name: "PokerStars LIVE", url: "https://www.pokerstarslive.com/appt/" },
     schemaDescription:
       "PokerStars APPT의 2026 한국 스톱. 파라다이스 시티 인천 개최, 메인이벤트 ₩10억 보장.",
@@ -575,7 +586,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     note: "14개 하이롤러 · 새틀라이트 없음(추천제) · $200K Invitational 9/12~14",
     sourceUrl: "https://tritonpokerseries.com/en-US/events/Triton_SHRS_Jeju_II_S5",
     sourceTier: "A",
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-08-31",
     organizer: { name: "Triton Poker Series", url: "https://tritonpokerseries.com" },
     schemaDescription:
       "Triton Super High Roller Series 제주 2차. 14개 하이롤러 토너먼트, 바이인 $15,000~$200,000.",
@@ -612,15 +623,26 @@ const RAW_TOURNAMENTS: Tournament[] = [
     buyin: "메인 ₩270만",
     emoji: "🌴",
     color: "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-    note: "136개 이벤트 · 메인이벤트 22억 GTD · APTC 시트 12석",
+    /**
+     * ★ 이벤트 수 136 → **135** (2026-08-31 라이브 실측). 07-29 판정이 틀렸던 게 아니라
+     *   **편성에서 하나가 빠졌다** — 발표 시점엔 136이 맞았다(poker.org
+     *   "136 trophy events over 13 days" + 우리 07-29 실측).
+     * ★ 실측 3중 확인: 번호 열거 `#1~#135` · **결번 0** · `#0` 없음(APPT엔 있었다) ·
+     *   활성 필터 0 · 마지막 행이 `#135 Hyper Turbo - High Roller`(그 뒤는 푸터).
+     * 🔴 **종목 분해는 여기 적지 않는다.** 내 재분류로는 NLH 91 / 기타 44가 나오지만
+     *   `#71 Atomic Pineapple` 같은 자리에서 APT 공식 분류를 재현하지 못한다
+     *   = «내 기준의 값»이라 발행 부적합. 글의 「90+46」을 고치려면 공식 분류 근거부터 찾아라.
+     * ⚠️ 개막(9/25) 전 또 바뀔 수 있다 — `docs/update-calendar.md`에 재확인 등재.
+     */
+    note: "135개 이벤트 · 메인이벤트 22억 GTD · APTC 시트 12석",
     highlight: true,
     blogLink: "/blog/apt-jeju-2026-fall-guide",
     sourceUrl: "https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/events",
     sourceTier: "A",
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-08-31",
     organizer: { name: "Asian Poker Tour", url: "https://www.theasianpokertour.com" },
     schemaDescription:
-      "APT의 2026 제주 가을 스톱. 136개 이벤트, 메인이벤트 22억원 보장.",
+      "APT의 2026 제주 가을 스톱. 135개 이벤트, 메인이벤트 22억원 보장.",
   },
   {
     id: "gop-incheon-2",
@@ -637,9 +659,18 @@ const RAW_TOURNAMENTS: Tournament[] = [
     emoji: "⚡",
     color: "bg-violet-500/15 text-violet-400 border-violet-500/30",
     note: "같은 기간 영종도에서 WPT Seoul도 동시 개최 (베뉴 다름)",
-    sourceUrl: "https://godsofpoker.com/series/incheon-2026-ii",
+    /**
+     * 🔴 sourceUrl을 `/series/incheon-2026-ii` → `/series`로 바꿨다(2026-08-31).
+     *   그 URL은 **`/news/gods-of-poker-incheon`으로 리다이렉트**되는데 그 기사(1/4 게시)에는
+     *   **날짜가 한 줄도 없다** → 독자가 우리 카드의 10/30~11/8을 확인할 수 없다
+     *   (스파인 §2-1 「링크 금지 = 독자가 우리 글과 다른 내용을 보게 됨」과 같은 계급).
+     *   `/series` 목록은 `OCT 30-NOV 8, 2026 / GOP INCHEON 2026 II / THELABYRINTHTRAIL`을
+     *   그대로 띄운다. 형제 `gop-jeju`가 이미 `/series`를 쓰고 있어 표기도 통일된다.
+     *   ⚠️ 공식 자체가 이 두 시리즈만 `/news/`로 링크한다(타이베이는 `/series/taipei-2026-ii`).
+     */
+    sourceUrl: "https://godsofpoker.com/series",
     sourceTier: "A",
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-08-31",
   },
   {
     id: "wpt-seoul",
@@ -661,7 +692,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     //    → INSPIRE 공식 보도자료를 정본으로 승격 (docs/tournament-spine.md §2-1)
     sourceUrl: "https://prtimes.jp/main/html/rd/p/000000091.000128436.html",
     sourceTier: "A",
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-08-31",
     organizer: { name: "World Poker Tour", url: "https://www.worldpokertour.com" },
     schemaDescription:
       "WPT가 INSPIRE 엔터테인먼트 리조트에서 처음 개최하는 대회. 46개 이벤트, 메인이벤트 ₩10억 보장.",
@@ -693,21 +724,30 @@ const RAW_TOURNAMENTS: Tournament[] = [
     name: "WSOP Paradise 2026",
     nameEn: "WSOP Paradise 2026",
     type: "international",
-    // ★ 정정: 12.01~12.18 → 12.03~12.17 (공식 대회 페이지 기준)
-    startDate: "2026-12-03",
+    /**
+     * ★ 시작일 이력: 12.01 → (07-29) 12.03 → **(08-31) 12.02**.
+     *   07-29 주석은 «12.03이 공식 대회 페이지 기준»이라 적었는데, 2026-08-31 실측에서
+     *   **같은 페이지가 두 층 모두 12/02**였다: 헤더 `Dec 02 2026 - Dec 17 2026` +
+     *   일정표 첫 행 `Dec 02 WED 11:00 AM — Event #1 Flight A`. `/schedule/` 목록도 동일.
+     *   🔴 되돌리지 마라 — 세 출처(대회 페이지 헤더·일정표 첫 행·스케줄 목록)가 12/02로 일치한다.
+     * ★ 바이인도 07-29의 «미발표»에서 갱신됐다(그때는 참이었다). 실측 = 이벤트 **#1~#20 결번 0**,
+     *   최소 `#1 $2,750 NLH WSOP Circuit Championship Mystery Bounty`,
+     *   최대 `#5 $250,000 NLH Super High Roller Invitational`.
+     */
+    startDate: "2026-12-02",
     endDate: "2026-12-17",
     location: "바하마 나소 (Baha Mar)",
     city: "Nassau",
     country: "BS",
     venue: "Baha Mar Resort",
-    buyin: "미발표",
+    buyin: "$2,750~$250,000",
     emoji: "🏝️",
     color: "bg-teal-500/15 text-teal-400 border-teal-500/30",
-    note: "Atlantis에서 Baha Mar로 이전 · 상세 일정 미발표",
+    note: "Atlantis에서 Baha Mar로 이전 · 전 20이벤트 공개",
     // ⚠️ wsop.com/paradise/ 랜딩은 아직 2025년 정보(Atlantis) 표시 → 대회 페이지로 링크
     sourceUrl: "https://www.wsop.com/tournaments/2026-wsop-paradise/",
     sourceTier: "A",
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-08-31",
   },
   {
     id: "ept-prague",
@@ -744,7 +784,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     color: "bg-violet-500/15 text-violet-400 border-violet-500/30",
     sourceUrl: "https://godsofpoker.com/series",
     sourceTier: "A",
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-08-31",
   },
   /* ── 🇯🇵 일본 JOPT — 한국에서 2~3시간, 아시아 최대급 필드 ────────── */
   {
@@ -764,7 +804,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     note: "JOPT 사상 첫 후쿠오카 개최 · 메인이벤트 ¥15,000,000 GTD",
     sourceUrl: "https://japanopenpoker.com/events/",
     sourceTier: "A",
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-08-31",
   },
   {
     id: "jopt-sapporo-2",
@@ -782,7 +822,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     color: "bg-rose-500/15 text-rose-400 border-rose-500/30",
     sourceUrl: "https://japanopenpoker.com/events/",
     sourceTier: "A",
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-08-31",
   },
   {
     id: "jopt-tokyo-3",
@@ -795,12 +835,14 @@ const RAW_TOURNAMENTS: Tournament[] = [
     city: "Tokyo",
     country: "JP",
     venue: "ベルサール高田馬場, 新宿区",
-    buyin: "다양",
+    // 「다양」 → 「미발표」 (2026-08-31). `events…/2026-tokyo-03`이 **404** = Players Guide 미공개다.
+    // 「다양」은 «여러 가격대가 공개돼 있다»로 읽혀 미공개 상태를 가린다(스파인 §3-2 판정법).
+    buyin: "미발표",
     emoji: "🇯🇵",
     color: "bg-rose-500/15 text-rose-400 border-rose-500/30",
     sourceUrl: "https://japanopenpoker.com/events/",
     sourceTier: "A",
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-08-31",
   },
   {
     id: "jopt-osaka-2",
@@ -813,12 +855,14 @@ const RAW_TOURNAMENTS: Tournament[] = [
     city: "Osaka",
     country: "JP",
     venue: "堂島リバーフォーラム",
-    buyin: "다양",
+    // 「다양」 → 「미발표」 (2026-08-31). `events…/2026-osaka-02` **404** — 스파인 §3-2가
+    // 이미 「이벤트별 바이인 ==미공개== (2026-07-30)」이라 적어 둔 것과 표기를 맞췄다.
+    buyin: "미발표",
     emoji: "🇯🇵",
     color: "bg-rose-500/15 text-rose-400 border-rose-500/30",
     sourceUrl: "https://japanopenpoker.com/events/",
     sourceTier: "A",
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-08-31",
   },
   {
     id: "jopt-tokyo-2027-1",
@@ -837,7 +881,53 @@ const RAW_TOURNAMENTS: Tournament[] = [
     note: "연말연시 개최 — 2027 시즌 개막전",
     sourceUrl: "https://japanopenpoker.com/events/",
     sourceTier: "A",
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-08-31",
+  },
+  /* ★ 아래 2건은 2026-08-31 스파인 재대조에서 편입했다.
+     `japanopenpoker.com/events/`의 **Upcoming Events**에 공식 게시돼 있는데
+     우리 보드에만 없었다(JOPT 5건은 날짜·바이인 결함 0 — 빠진 것은 이 둘뿐).
+     🔴 바이인은 둘 다 «미발표»다: 판정법은 스파인 §3-2 「JOPT는 정보를 두 곳에 낸다」 —
+     `events.japanopenpoker.com/<연>-<도시>-<번호>`가 200이면 공개, 404면 미공개.
+     실측 = `2027-osaka-01` **404** · `2027-fukuoka-01` **404**(대조군 `2026-sapporo-02`는 200). */
+  {
+    id: "jopt-osaka-2027-1",
+    name: "JOPT 2027 Osaka #01",
+    nameEn: "JOPT 2027 Osaka #01",
+    type: "international",
+    startDate: "2027-03-18",
+    endDate: "2027-03-22",
+    // ⚠️ 공식 Upcoming 표기가 도시명 「Osaka」뿐이다 — 회장명이 없다.
+    //    2025·2026 Osaka는 전부 堂島リバーフォーラム였지만 **추측으로 채우지 않는다**(스파인 §1).
+    location: "일본 오사카 (회장 공식 미기재)",
+    city: "Osaka",
+    country: "JP",
+    venue: "공식 미기재",
+    buyin: "미발표",
+    emoji: "🇯🇵",
+    color: "bg-rose-500/15 text-rose-400 border-rose-500/30",
+    note: "회장·이벤트별 바이인 모두 공식 미발표 — 확정되면 갱신",
+    sourceUrl: "https://japanopenpoker.com/events/",
+    sourceTier: "A",
+    verifiedAt: "2026-08-31",
+  },
+  {
+    id: "jopt-fukuoka-2027-1",
+    name: "JOPT 2027 Fukuoka #01",
+    nameEn: "JOPT 2027 Fukuoka #01",
+    type: "international",
+    startDate: "2027-05-27",
+    endDate: "2027-05-30",
+    location: "일본 후쿠오카 (UNITEDLAB)",
+    city: "Fukuoka",
+    country: "JP",
+    venue: "UNITEDLAB, Daimyo",
+    buyin: "미발표",
+    emoji: "🇯🇵",
+    color: "bg-rose-500/15 text-rose-400 border-rose-500/30",
+    note: "2026년 첫 후쿠오카 개최에 이은 2회차 — 같은 회장(UNITEDLAB)",
+    sourceUrl: "https://japanopenpoker.com/events/",
+    sourceTier: "A",
+    verifiedAt: "2026-08-31",
   },
 
   /* ── 🇵🇭 마닐라 (Okada) — PokerStars Live 아시아 거점 ────────── */
@@ -1442,7 +1532,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     note: "슈퍼 서킷 — 정규 서킷과 별도 브랜드",
     sourceUrl: "https://www.wsop.com/circuit/",
     sourceTier: "A",
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-08-31",
   },
   {
     id: "wsopc-mexico",
@@ -1461,7 +1551,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     note: "링 이벤트 12개 · 메인 $1,700 (Big Bola Casinos 주최)",
     sourceUrl: "https://www.wsop.com/circuit/",
     sourceTier: "A",
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-08-31",
   },
   {
     id: "wsopc-paris",
@@ -1479,7 +1569,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     color: "bg-blue-500/15 text-blue-400 border-blue-500/30",
     sourceUrl: "https://www.wsop.com/circuit/",
     sourceTier: "A",
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-08-31",
   },
   {
     id: "wsopc-liechtenstein",
@@ -1498,7 +1588,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     note: "연 2회 개최 중 2차",
     sourceUrl: "https://www.wsop.com/circuit/",
     sourceTier: "A",
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-08-31",
   },
   {
     id: "wsopc-malta",
@@ -1516,7 +1606,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     color: "bg-blue-500/15 text-blue-400 border-blue-500/30",
     sourceUrl: "https://www.wsop.com/circuit/",
     sourceTier: "A",
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-08-31",
   },
   {
     id: "wsopc-calgary",
@@ -1534,7 +1624,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     color: "bg-blue-500/15 text-blue-400 border-blue-500/30",
     sourceUrl: "https://www.wsop.com/circuit/",
     sourceTier: "A",
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-08-31",
   },
   {
     id: "wsopc-madrid",
@@ -1552,7 +1642,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     color: "bg-blue-500/15 text-blue-400 border-blue-500/30",
     sourceUrl: "https://www.wsop.com/circuit/",
     sourceTier: "A",
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-08-31",
   },
   {
     id: "wsopc-playground-nov",
@@ -1571,7 +1661,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     note: "3월·8월에 이은 연 3회차",
     sourceUrl: "https://www.wsop.com/circuit/",
     sourceTier: "A",
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-08-31",
   },
   {
     id: "wsopc-panama",
@@ -1589,7 +1679,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     color: "bg-blue-500/15 text-blue-400 border-blue-500/30",
     sourceUrl: "https://www.wsop.com/circuit/",
     sourceTier: "A",
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-08-31",
   },
   {
     id: "wsopc-middelkerke",
@@ -1607,7 +1697,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     color: "bg-blue-500/15 text-blue-400 border-blue-500/30",
     sourceUrl: "https://www.wsop.com/circuit/",
     sourceTier: "A",
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-08-31",
   },
   {
     id: "wsopc-sanremo",
@@ -1625,7 +1715,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     color: "bg-blue-500/15 text-blue-400 border-blue-500/30",
     sourceUrl: "https://www.wsop.com/circuit/",
     sourceTier: "A",
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-08-31",
   },
 
   /* ── 🇬🇧🇪🇸🇮🇪 partypoker Tour — UK 5 · 스페인 4 · 아일랜드 1 ────────── */
@@ -1985,7 +2075,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     note: "16개 트로피 이벤트 · 총 $1,000,000+ 보장 · 메인 $500K GTD",
     sourceUrl: "https://www.pokerstarslive.com/maryland-state-poker-championship/",
     sourceTier: "A",
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-08-31",
   },
   {
     id: "bpc-megastack",
@@ -2078,7 +2168,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     color: "bg-blue-500/15 text-blue-400 border-blue-500/30",
     sourceUrl: "https://www.wsop.com/schedule/",
     sourceTier: "A",
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-08-31",
   },
   {
     id: "wsopc-tulsa",
@@ -2096,7 +2186,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     color: "bg-blue-500/15 text-blue-400 border-blue-500/30",
     sourceUrl: "https://www.wsop.com/schedule/",
     sourceTier: "A",
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-08-31",
   },
   {
     id: "wsopc-virginia",
@@ -2114,7 +2204,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     color: "bg-blue-500/15 text-blue-400 border-blue-500/30",
     sourceUrl: "https://www.wsop.com/schedule/",
     sourceTier: "A",
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-08-31",
   },
   {
     id: "wsopc-austin",
@@ -2132,7 +2222,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     color: "bg-blue-500/15 text-blue-400 border-blue-500/30",
     sourceUrl: "https://www.wsop.com/schedule/",
     sourceTier: "A",
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-08-31",
   },
   {
     id: "wsopc-council-bluffs",
@@ -2150,7 +2240,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     color: "bg-blue-500/15 text-blue-400 border-blue-500/30",
     sourceUrl: "https://www.wsop.com/schedule/",
     sourceTier: "A",
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-08-31",
   },
   {
     id: "wsopc-thunder-valley",
@@ -2168,7 +2258,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     color: "bg-blue-500/15 text-blue-400 border-blue-500/30",
     sourceUrl: "https://www.wsop.com/schedule/",
     sourceTier: "A",
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-08-31",
   },
   {
     id: "wsopc-pompano",
@@ -2186,7 +2276,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     color: "bg-blue-500/15 text-blue-400 border-blue-500/30",
     sourceUrl: "https://www.wsop.com/schedule/",
     sourceTier: "A",
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-08-31",
   },
   {
     id: "wsopc-turning-stone",
@@ -2204,7 +2294,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     color: "bg-blue-500/15 text-blue-400 border-blue-500/30",
     sourceUrl: "https://www.wsop.com/schedule/",
     sourceTier: "A",
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-08-31",
   },
   {
     id: "wsopc-lake-tahoe",
@@ -2222,7 +2312,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     color: "bg-blue-500/15 text-blue-400 border-blue-500/30",
     sourceUrl: "https://www.wsop.com/schedule/",
     sourceTier: "A",
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-08-31",
   },
   {
     id: "wsopc-southern-indiana",
@@ -2240,7 +2330,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     color: "bg-blue-500/15 text-blue-400 border-blue-500/30",
     sourceUrl: "https://www.wsop.com/schedule/",
     sourceTier: "A",
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-08-31",
   },
   {
     id: "wsopc-choctaw",
@@ -2258,7 +2348,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     color: "bg-blue-500/15 text-blue-400 border-blue-500/30",
     sourceUrl: "https://www.wsop.com/schedule/",
     sourceTier: "A",
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-08-31",
   },
   {
     id: "wsopc-toledo",
@@ -2276,7 +2366,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     color: "bg-blue-500/15 text-blue-400 border-blue-500/30",
     sourceUrl: "https://www.wsop.com/schedule/",
     sourceTier: "A",
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-08-31",
   },
   {
     id: "wsopc-talking-stick",
@@ -2294,7 +2384,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     color: "bg-blue-500/15 text-blue-400 border-blue-500/30",
     sourceUrl: "https://www.wsop.com/schedule/",
     sourceTier: "A",
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-08-31",
   },
   {
     id: "wsopc-grand-victoria",
@@ -2312,7 +2402,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     color: "bg-blue-500/15 text-blue-400 border-blue-500/30",
     sourceUrl: "https://www.wsop.com/schedule/",
     sourceTier: "A",
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-08-31",
   },
   {
     id: "wsopc-new-orleans",
@@ -2330,7 +2420,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     color: "bg-blue-500/15 text-blue-400 border-blue-500/30",
     sourceUrl: "https://www.wsop.com/schedule/",
     sourceTier: "A",
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-08-31",
   },
   {
     id: "wsopc-cherokee-nov",
@@ -2348,7 +2438,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     color: "bg-blue-500/15 text-blue-400 border-blue-500/30",
     sourceUrl: "https://www.wsop.com/schedule/",
     sourceTier: "A",
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-08-31",
   },
 
   {
@@ -2372,7 +2462,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     //    Wynn 공식 포커 페이지에는 WPT 관련 내용이 전혀 없어 링크하면 독자를 오도한다.
     sourceUrl: null,
     sourceTier: null,
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-08-31",
   },
 
   /* ════════════════════════════════════════════════════════════
