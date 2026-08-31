@@ -3,11 +3,24 @@
 > 측정: **DataForSEO Labs · location=Taiwan · 12개월**. 대상 = lib/posts-zh-hant/ 전 편의 tags 유니크 324종.
 > 생성 = 자동(2026-08-27 세션, 사장님 지시 — “MCP 있는데 안 쓰고 추측하면 경화가 아니다”).
 > 🔴 CPC는 근거 금지 규칙대로 미기록. 볼륨은 타기팅 재조준 “후보 발굴”용이지 단독 채택 근거가 아니다 — 채택 전 자동완성 의도 확인 필수(자릿수 함정).
-> 🔴 **대만 중문 볼륨은 현재 도구 셋으로 측정 불가다 — 3중 실증(2026-08-27):**
-> ① 라쿠: 국가 레벨 location 부재(“Taiwan,Taiwan”=성 단위 → 전부 0 오측, requestId 1258325 폐기)
-> ② DFS google_ads: CJK 키워드 입력 자체를 거부(40501 Invalid Field)
-> ③ DFS Labs: Taiwan DB에 중문 미수록(德州撲克 단독 프로브도 items 0)
-> → **zh-hant 재조준은 볼륨이 아니라 자동완성(hl=zh-TW)·경쟁 SERP 실측이 도구다.** 아래 생존 행은 ASCII 토큰뿐이며 대부분 비포커 의도(CSI=미드 등) — 근거 금지.
+> 🔴🔴 **2026-08-31 정정 — 아래 「측정 불가」 판정은 오진이었다. 대만 중문 볼륨은 측정된다.**
+> 정본 = `docs/keyword-bank/zh-hant-tournament.md` §0 · `docs/rakko-playbook.md` §2-2(정정본).
+> **원인**: 40501의 거부 필드는 **CJK가 아니라 `language_code`**였다(대만은 location만 받는다).
+> 그리고 **Labs(발굴)와 google_ads/search_volume(볼륨)은 다른 엔드포인트**인데 한 덩어리로 일반화했다.
+> **대조군 재현**: `德州撲克教學` **480** · `德州撲克勝率計算器` **260** = 08-24 기록과 완전 일치.
+> → **정정된 도구**: 발굴=자동완성(`hl=zh-TW&gl=TW`) · 볼륨=DFS `search_volume`+`location_code:2158`+**`language_code` 생략** ·
+> SERP=DFS `serp/google/organic`+**`language_code:"zh-TW"`**(하이픈).
+> 🔴 **아래 「볼륨 0·측정불가 태그 317종」은 그러므로 재측정 대상이다** — 0으로 확정된 것이 아니다.
+>
+> <details><summary>원문(2026-08-27 · 폐기됨 — 되살리지 마라)</summary>
+>
+> ~~🔴 대만 중문 볼륨은 현재 도구 셋으로 측정 불가다 — 3중 실증(2026-08-27):~~
+> ~~① 라쿠: 국가 레벨 location 부재(“Taiwan,Taiwan”=성 단위 → 전부 0 오측, requestId 1258325 폐기)~~ ← **이 ①만 유효**
+> ~~② DFS google_ads: CJK 키워드 입력 자체를 거부(40501 Invalid Field)~~
+> ~~③ DFS Labs: Taiwan DB에 중문 미수록(德州撲克 단독 프로브도 items 0)~~ ← 발굴 계열 한정으로만 유효
+> </details>
+>
+> → 아래 생존 행은 ASCII 토큰뿐이며 대부분 비포커 의도(CSI=미드 등) — 근거 금지.
 > ⚠ **단일 영어 일반어 태그(cooler·fish·outs·limp·straddle·スクイーズ 등)의 볼륨은 비포커 의도가 지배한다** — 자릿수 함정. 채택·재조준 근거로 쓰지 말 것(기존 태그 유지는 무방).
 
 ## 살아 있는 태그 (7종 · 볼륨 내림차순)

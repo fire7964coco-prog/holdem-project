@@ -91,11 +91,27 @@ lowfruits 화면에서 바로 보인 것 둘 —
    진짜 원인 = `.mcp.json`이 `${DATAFORSEO_LOGIN}` **부모 환경변수 확장**인데 그 변수가 시스템에
    없었다 — MCP가 빈 자격증명으로 떠서 40100. **사용자 환경변수(User)로 등록 완료(2026-08-27)** →
    세션 재시작 후 MCP 정상. 그전엔 curl REST 직접(§6 기존 처방 그대로).
-2. **대만(zh-hant) 중문 볼륨은 현재 도구로 측정 불가 — 3중 실증**:
+2. ~~**대만(zh-hant) 중문 볼륨은 현재 도구로 측정 불가 — 3중 실증**~~
+   🔴 **2026-08-31 정정 — 셋 중 둘이 오진이었다. 대만 중문 볼륨은 측정된다.**
    ① 라쿠: 대만 **국가 레벨 location이 없다**(«Taiwan,Taiwan»=성 단위 → 전부 0 오측. 쓰지 마라)
-   ② DFS google_ads: **CJK 키워드 입력 자체를 거부**(40501 Invalid Field)
-   ③ DFS Labs: Taiwan DB에 중문 미수록(«德州撲克» 단독 프로브도 items 0)
-   → zh-hant 재조준 도구 = **자동완성(hl=zh-TW) + 경쟁 SERP 실측**. 볼륨 표를 요구하지 마라.
+      → ✅ **이것만 유효**
+   ② ~~DFS google_ads: CJK 키워드 입력 자체를 거부(40501 Invalid Field)~~
+      → ❌ **오진.** 거부된 필드는 CJK가 아니라 **`language_code`**다. **대만은 location만 받는다** —
+        `language_code`를 **빼면** CJK가 정상 처리된다(에러 메시지의 필드명을 안 읽고 «CJK 거부»로 단정했다)
+   ③ ~~DFS Labs: Taiwan DB에 중문 미수록~~
+      → 🟡 **절반만 맞다.** Labs(**발굴** 계열)는 중문 미수록이 맞지만
+        **`google_ads/search_volume`(볼륨 계열)은 CJK를 정상 반환**한다. 엔드포인트를 구분하지 않고
+        «DFS 전체»로 일반화한 것이 오류다.
+   **대조군 재현으로 증명**(2026-08-31): `德州撲克教學` **480** · `德州撲克勝率計算器` **260**
+   = 2026-08-24 `zh-gto-solver.md` 기록값과 완전 일치.
+   → 🔴 **정정된 분업**: **발굴 = 자동완성(`hl=zh-TW&gl=TW`)** (Labs 못 씀) /
+     **볼륨 = DFS `google_ads/search_volume` + `location_code:2158` + `language_code` 생략** /
+     **SERP = DFS `serp/google/organic` + `location_code:2158` + `language_code:"zh-TW"`**
+     (🔴 하이픈. `zh_TW`는 40501 · `live/advanced`는 **한 번에 한 태스크만**)
+   → 실측 정본 = `docs/keyword-bank/zh-hant-tournament.md`
+   🪶 **교훈**: 「측정 불가」 판정은 **에러 메시지의 필드명을 끝까지 읽고** 엔드포인트별로 갈라서 내려라.
+   한 엔드포인트의 거부를 벤더 전체로 일반화하면 **측정 가능한 시장을 3개월 닫는다**
+   ([[review-mechanize-not-repeat]] 「없다」 보고 전 탐지방법부터 의심).
 3. **zh 간체는 본토 구글 데이터가 없다** — Singapore 측정은 참고치(상대 비교 전용). 절대값 금지.
 4. **DFS REST에 CJK·비ASCII를 보낼 땐 페이로드를 `\uXXXX` 이스케이프(ASCII-only)로 만들어라** —
    PowerShell Invoke-RestMethod는 charset을 붙여도 서버가 Latin-1로 읽어 mojibake가 났다.

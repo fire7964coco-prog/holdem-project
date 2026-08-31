@@ -48,6 +48,8 @@ import { POST as wsop2026TournamentGuide } from "./wsop-2026-tournament-guide";
 import { POST as koreaPokerMarathon2026 } from "./korea-poker-marathon-2026";
 import { POST as wptAustralia2026Guide } from "./wpt-australia-2026-guide";
 import { POST as eptBarcelona2026Guide } from "./ept-barcelona-2026-guide";
+// ── 대만 로컬 (zh-hant 전용 · EN 마스터 없음, 2026-08-31) ──
+import { POST as taiwanPokerClubsGuide } from "./taiwan-poker-clubs-guide";
 
 /**
  * 중국어 번체(zh-hant · 대만/홍콩) 블로그 포스트.
@@ -114,6 +116,8 @@ export const ZH_HANT_POSTS: Post[] = [
   koreaPokerMarathon2026,
   wptAustralia2026Guide,
   eptBarcelona2026Guide,
+  // ── 대만 로케일 고유 글 (2026-08-31) ──
+  taiwanPokerClubsGuide,
 ];
 
 const ZH_HANT_SLUGS = new Set(ZH_HANT_POSTS.map((p) => p.slug));
