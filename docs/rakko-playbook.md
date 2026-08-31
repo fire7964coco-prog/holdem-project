@@ -96,8 +96,11 @@ lowfruits 화면에서 바로 보인 것 둘 —
    ① 라쿠: 대만 **국가 레벨 location이 없다**(«Taiwan,Taiwan»=성 단위 → 전부 0 오측. 쓰지 마라)
       → ✅ **이것만 유효**
    ② ~~DFS google_ads: CJK 키워드 입력 자체를 거부(40501 Invalid Field)~~
-      → ❌ **오진.** 거부된 필드는 CJK가 아니라 **`language_code`**다. **대만은 location만 받는다** —
-        `language_code`를 **빼면** CJK가 정상 처리된다(에러 메시지의 필드명을 안 읽고 «CJK 거부»로 단정했다)
+      → ❌ **오진.** 거부된 필드는 CJK가 아니라 **`language_code`**다
+        (에러 메시지의 필드명을 안 읽고 «CJK 거부»로 단정했다).
+        🔴 **엔드포인트마다 반대다** — `keywords_data/google_ads/search_volume`은 대만에서
+        `language_code`를 **거부**하므로 **빼야** 하고, `serp/google/organic`은 반대로
+        **`language_code:"zh-TW"`를 요구**한다(생략하면 40501). 어느 쪽도 CJK 자체는 문제가 아니다
    ③ ~~DFS Labs: Taiwan DB에 중문 미수록~~
       → 🟡 **절반만 맞다.** Labs(**발굴** 계열)는 중문 미수록이 맞지만
         **`google_ads/search_volume`(볼륨 계열)은 CJK를 정상 반환**한다. 엔드포인트를 구분하지 않고

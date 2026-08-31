@@ -161,10 +161,21 @@ xinfeng · taichung · shizheng · yunlin · chiayi · tainan · kaohsiung · yi
 
 **🔴 다음 세션이 바로 할 일**
 1. **적대검수 4렌즈**(대만 네이티브·SEO·사실·교열 diff) → 2차 교열 → 푸시
-2. 종료 이벤트 3편 처리(`apt-incheon` 8/16 · `ept-barcelona` 8/29 · `wsop-2026` 8/5) — 전 로케일 공통
-3. `id`·`pt` `/tournaments` 허브 부재 판정(§6 미해결)
-4. 8주 관측 시작 — `npm run gsc:page zh-hant/blog/taiwan-poker-clubs-guide`
-   🔴 **기준선 스냅샷을 아직 안 떴다**(Step 0 미완) — 색인 전에 떠 둘 것
+2. 🔴 **`ept-barcelona-2026-guide` 결과 아카이브 전환 — 8/29 종료로 이미 2일 경과(8로케일)**
+   🪶 **정정**: 이 자리에 처음 「종료 3편(apt-incheon·ept-barcelona·wsop-2026)」이라 적었으나
+   `docs/update-calendar.md` 실측 결과 **apt-incheon은 8/17 `82e18b0f`로, wsop-2026은 8/6에 이미 완료**다.
+   **미처리는 ept-barcelona 하나뿐이다.** 전환 시 EN·pt의 「★진행 중」 배너를 결과 노트로 교체 +
+   es·de·ja·zh·zh-hant·id에 Gold Pass 4요소 정정 소급(캘린더 8/29 절 참조)
+3. ⏰ **9/4(금) 23:59 — JTBC 마감으로 `korea-poker-marathon-2026` desc가 죽는다**(8로케일). 4일 남음
+4. `id`·`pt` `/tournaments` 허브 부재 판정(§6 미해결)
+5. 8주 관측 — `node scripts/gsc-page.mjs zh-hant/blog/taiwan-poker-clubs-guide --days 28`
+
+**🪶 Step 0 기준선 (2026-08-31 실측 · 8주 뒤 이 값과 비교하라)**
+`/zh-hant/tournaments` 28일(07-31~08-28) = **노출 67 · 클릭 7 · CTR 10.45% · r24.4** · 익명화 61%
+- 살아 있는 축: 「台灣德州撲克比賽2026」 **r8.2**(5노출 1클릭) · 「撲克賽事」 r29.5 · 「撲克錦標賽賽程」 r34
+- 🔴 죽어 있는 축: 「德州撲克比賽」 **r71.3** · 「德州撲克錦標賽」 **r83.3** · 「德州撲克 錦標賽」 r85
+- 🔴 **도시 쿼리(台中·高雄·台南·桃園·台北 德州撲克)는 노출 0** — 신규 글의 기준선은 **완전한 0**이다
+🪶 `npm run gsc:lang`은 **로컬 CSV 폴더**를 받는다(라이브 API 아님) — 라이브는 `scripts/gsc-page.mjs`
 
 **시장 순서 (1시장차 검증 후 확산)** — 🔴 **볼륨 순이 아니라 «데이터 보유 순»이다**
 
@@ -564,7 +575,7 @@ GSC도 같은 말: **노출 66 · 클릭 0 · CTR 0.00% · r19.3**(2페이지) �
 | 🆕 🔴 **배포 전 검증은 `npm run build`로 하라 — `build:vercel`만 돌리면 사이트맵이 안 갱신된다** | 2026-08-26 게이트 정리의 부수 발견. 프로덕션 체인(`build:vercel`)은 `prebuild`를 안 타므로 `generate:sitemap`이 빠진다. 🔴 **그렇다고 사이트맵을 프로덕션에 넣는 것은 «금지»로 판정했다** — 정적 라우트 `lastmod`가 git 커밋 날짜인데 **Vercel 얕은 클론에서는 git이 «실패»하는 게 아니라 «오늘»을 조용히 반환한다**(`git clone --depth 1` 재현 확인) → 매 배포마다 전 라우트 lastmod=오늘 = 2026-08-08에 고친 회귀 부활(구글이 lastmod를 통째로 무시). ✅ `check:intl-links`는 편입 완료(`jiti` devDeps 명시로 해소 · 471편·25언어 통과). `check:clusters`는 **스크립트 자체가 아직 없다**(백로그 P3·P4). 근거·처방 정본 = `docs/settled-decisions.md` §6 |
 | 🆕 **fr 랜딩 내부링크 보강** — fr 코퍼스가 규칙 6편뿐이라 표준 링크 세트(chart·pot-odds·equity·3bet·strategy·glossary) 불성립. 프리플랍 안내는 앱 Charts préflop 탭으로 임시 대체 중 | **fr 전략 코퍼스 확장 시 함께**(위 착수 후보 1번). 뱅크 §3·랜딩 헤더에 명기 |
 | ✅ **DFS 복구 완료(2026-08-27) — «인증 만료»는 오진이었다.** 자격증명은 유효(직접 REST 20000 Ok·유료 잔액 실재 — 사장님 지적이 맞았다). 진짜 원인 = `.mcp.json`의 `${VAR}` 확장이 참조하는 **환경변수가 시스템에 없었던 것** → 사용자 환경변수 등록 완료. ✅ **교차검증 예약 이행 완료(세션 5)** — id 15종·fr 10종 REST 재실측 전 항목 라쿠와 일치(각 뱅크 머리 갱신) | ⚠ 🔴 **DFS MCP는 CLI 재시작 후에도 40100 재현**(세션 7 실측 — env 등록이 MCP 프로세스에 안 닿는다). 자격증명은 유효 — **node `.mjs` REST 직접 경로만 쓸 것**(PowerShell Invoke-RestMethod는 .env.local 파싱이 깨져 40100 오진). 근본 해소는 `.mcp.json`에 값 직접 기입 또는 시스템 재부팅 후 재확인(처방 = `docs/rakko-playbook.md` 2026-08-27 절 · settled-decisions §6) |
-| 🆕 **전 언어 태그 전수 실측 완료(2026-08-27 · 사장님 지시 «MCP 안 쓰고 추측하면 경화가 아니다»)** — pt·de·ja·zh·zh-hant·es 태그 ~2.100종 라쿠 6배치(90크레딧)+DFS 실측 → `docs/keyword-bank/<locale>-tag-volumes.md` 6종 신설. **4개 필라 즉시 반영**: de «poker regeln» 90.500(+126%↑, 기존 축의 17배)·ja «ポーカー ルール» 60.500(84배)·pt «poker regras» 12.100·es «como jugar poker» 6.600 전부 무주공산이던 것을 title·seoTitle·태그로 편입(훅 유지·slug 불변). ⚠ zh-hant는 3중 측정불가 실증(플레이북 참조) — 재조준은 자동완성+SERP로 | **후속 = 클러스터 딥 소급 라운드**(태그는 표층 — 각 언어 rankings·rules 등 클러스터별 자동완성 발굴→실측→H2/FAQ 재조준, id 세션 4~5 방법론 재사용). id 트랙(세션 5~9) 종료 후 언어당 1~2회차로 착수 후보 등재 |
+| 🆕 **전 언어 태그 전수 실측 완료(2026-08-27 · 사장님 지시 «MCP 안 쓰고 추측하면 경화가 아니다»)** — pt·de·ja·zh·zh-hant·es 태그 ~2.100종 라쿠 6배치(90크레딧)+DFS 실측 → `docs/keyword-bank/<locale>-tag-volumes.md` 6종 신설. **4개 필라 즉시 반영**: de «poker regeln» 90.500(+126%↑, 기존 축의 17배)·ja «ポーカー ルール» 60.500(84배)·pt «poker regras» 12.100·es «como jugar poker» 6.600 전부 무주공산이던 것을 title·seoTitle·태그로 편입(훅 유지·slug 불변). 🔴 **2026-08-31 정정: zh-hant 「3중 측정불가」는 오진이었다** — 태그 317종 「볼륨 0」은 **오측이라 재측정 대상**이다. 볼륨은 DFS `search_volume`(`language_code` 생략)으로 측정된다. 정본 = `docs/keyword-bank/zh-hant-tournament.md` §0 | **후속 = 클러스터 딥 소급 라운드**(태그는 표층 — 각 언어 rankings·rules 등 클러스터별 자동완성 발굴→실측→H2/FAQ 재조준, id 세션 4~5 방법론 재사용). id 트랙(세션 5~9) 종료 후 언어당 1~2회차로 착수 후보 등재 |
 | ~~zh·ja 랜딩 JSX 개행 공백 소급~~ → ✅ **해소(2026-08-26)** | 랜딩 실측 **ja 75건 · zh 44건**(zh-hant 0 = 대조군)을 전부 잇고, **문구가 하나도 안 바뀌었음을 증명**했다(빌드 산출물 텍스트를 공백 정규화 후 before/after 완전 일치 · ja 75→1 · zh 44→0). 남은 ja 1건은 `毎週日曜 午後7時` — **저자가 한 줄 안에 넣은 의도적 공백**이라 결함이 아니다. **블로그 본문 전수도 닫혔다**: 본문은 백틱 마크다운 문자열이라 이 결함이 **구조적으로 불가능**하고, 그걸 감싸는 공용 TSX까지 전수 0. 🔴 재발 방지는 주석이 아니라 **게이트**로 고정 — `npm run check:cjk`(셀프테스트 12/12 · `prebuild`+`build:vercel` 둘 다 편입) |
 | ⚠ ja 뱅크의 「SD 24 = 유일한 低」는 거짓 근거 | 다음 ja 회차에 정정 (SD 엔드포인트 불일치 실증 후 남은 것) |
 | **GTO 13편 → 12개 언어 전파** | 블로커 = **M-033 판정 대기**(본문 용어 표기를 여섯 번째 언어별 항목으로 — §4-A-3 수정). 폐기 명제 목록은 확보됨(19행+ · 회귀 77/77). 번역 방식 = «번역 + 5필드»(스펙 §4-A-3) · 조건 넷은 아카이브 「다국어 방식이 바뀐다」 절 |

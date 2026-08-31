@@ -17,7 +17,7 @@
 | # | 08-27 기록 | 08-31 재실측 판정 |
 |---|---|---|
 | ① 라쿠 Taiwan = 죽은 소스 | 맞다 | ✅ **유효** — 그대로 유지 |
-| ② DFS google_ads가 **CJK 입력 자체를 거부**(40501) | ❌ **오진** | 거부된 필드는 CJK가 아니라 **`language_code`**다. 대만은 **location만** 받는다(`language_code`를 빼면 CJK가 정상 처리된다) |
+| ② DFS google_ads가 **CJK 입력 자체를 거부**(40501) | ❌ **오진** | 거부된 필드는 CJK가 아니라 **`language_code`**다. 🔴 **엔드포인트마다 반대다** — `search_volume`은 대만에서 `language_code`를 **거부**(빼야 한다), `serp/google/organic`은 **`zh-TW`를 요구**(생략하면 40501). CJK 자체는 어느 쪽도 문제가 아니다 |
 | ③ DFS Labs에 중문 미수록 | 부분적으로만 맞다 | Labs(**발굴** 계열)는 중문이 없다. 그러나 **`google_ads/search_volume`(볼륨 계열)은 CJK를 정상 반환**한다. 엔드포인트를 구분하지 않고 «DFS 전체»로 일반화한 것이 오류 |
 
 **대조군으로 증명**: 2026-08-24 `zh-gto-solver.md`가 기록한 값이 그대로 재현됐다 —
@@ -26,6 +26,7 @@
 > 🔴 **정정된 규율**
 > - **발굴** = 자동완성(`hl=zh-TW&gl=TW`) — DFS Labs는 대만 중문 미수록이라 여전히 못 쓴다
 > - **볼륨** = DFS `google_ads/search_volume` + `location_code: 2158` + 🔴 **`language_code` 생략**
+>   (이 엔드포인트만 대만에서 `language_code`를 거부한다 — SERP는 반대다)
 > - **SERP** = DFS `serp/google/organic` + `location_code: 2158` + 🔴 **`language_code: "zh-TW"`**(하이픈. `zh_TW`는 40501) · live/advanced는 **한 번에 한 태스크만**
 > - **CJK 페이로드는 `\uXXXX` ASCII 이스케이프 + `curl --data-binary @file`** (rakko-playbook §2-4 그대로 유효)
 > - 🪶 **띄어쓰기는 볼륨을 안 가른다** — `台中德州撲克` 720 = `台中 德州撲克` 720 · 高雄 480=480 · 台北 210=210
