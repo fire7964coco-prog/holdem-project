@@ -1126,6 +1126,43 @@ const RAW_TOURNAMENTS: Tournament[] = [
   },
   {
     /**
+     * ★ 2026-08-31 편입. 08-31 (5) 회차가 «베뉴·도시 미확정»을 이유로 보류했던 건인데,
+     *   **레포 관례상 그건 보류 사유가 아니다** — `aspt-korea`·`ajpc-incheon-1`·`ajpc-incheon-2`가
+     *   이미 `venue: "공식 미기재"`로 편입돼 있다([[absence-may-be-the-standard]]).
+     *   보류하면 대만 시즌에 **1/22~2/9 공백**이 남는다(앞 `gop-taipei-1` 1/18 종료 →
+     *   뒤 `ps-championship-3-taipei` 2/26 개막).
+     *
+     * ★ 날짜는 1차 확인됐다 — `ctpclub.app/en/festivals/tmt-19` 헤더
+     *   **`January 22, 2026 - February 9, 2026`**(Playwright 렌더 후 DOM).
+     * 🔴 **그 페이지의 Schedule 탭은 지금도 `"No events scheduled for this day."`다.**
+     *   이벤트·바이인·베뉴가 전부 공식 미기재 → **추측으로 채우지 않았다**(스파인 §1).
+     * 🔴 `archive.ctpclub.app`도 확인했으나 **TMT 17회까지의 우승자 기록만** 있고
+     *   19회 문서는 없다(사이트 자체가 © 2025 · 「第十九屆」 검색 0건). 이 경로는 닫혔다.
+     * ⚠️ `city`는 JSON-LD 필수 필드라 채웠지만 **1차 근거가 없는 값**이다 —
+     *   TMT 18·20·Championship이 전부 타이베이라는 전례에 따른 것이고,
+     *   2차(somuchpoker)는 오히려 **`* multiple venues *`**라고 적는다.
+     *   그래서 **카드에 보이는 `location`에는 도시를 단정하지 않았다.** 확인되면 정정할 것.
+     */
+    id: "tmt-19",
+    name: "Taiwan Millions Tournament TMT 19",
+    nameEn: "Taiwan Millions Tournament TMT 19",
+    type: "international",
+    startDate: "2026-01-22",
+    endDate: "2026-02-09",
+    location: "대만 (개최 지점 공식 미기재)",
+    city: "Taipei",
+    country: "TW",
+    venue: "공식 미기재",
+    buyin: "공식 미기재",
+    emoji: "🇹🇼",
+    color: "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+    note: "CTP 주최 TMT 19 — 일정·베뉴 외 상세는 공식 미기재",
+    sourceUrl: "https://ctpclub.app/en/festivals/tmt-19",
+    sourceTier: "A",
+    verifiedAt: "2026-08-31",
+  },
+  {
+    /**
      * `playersseries.com` 원문: `26 Feb – 10 Mar 2026` / `ASIA POKER ARENA, TAIPEI` /
      * `EVENTS 102` / `TOTAL PRIZE POOL NT$93.7M` / ME 우승 `Ki Young Kim NT$3,010,000`.
      * ★ 바이인 파싱 주의 — 이 사이트는 `Buy-in:` 라벨이 없고 «Levels N min» 다음 줄이 바이인이다.
@@ -1342,6 +1379,22 @@ const RAW_TOURNAMENTS: Tournament[] = [
     verifiedAt: "2026-08-31",
   },
   {
+    /**
+     * ★ 2026-08-31 갱신 — 「공식 미기재」였는데 **주최사 공식에 전부 공개돼 있었다.**
+     *   07-29엔 CTP 목록(`ctpclub.app/en/festivals`)만 근거였다. 주최사 공식은 **`hpc.poker`**이고
+     *   거기에 5일 전 일정·바이인·구조·베뉴가 다 있다 → sourceUrl을 주최사로 올렸다.
+     * ★ 실측(날짜 탭 **5개를 전부 클릭**해 수집 · 이벤트 29건):
+     *   최소 **NT$3,500**(BIG O·Fixed Limit Triple Draw·獵殺AJ·Bomb Pot·Hyper Turbo 등 다수) ·
+     *   최대 **NT$33,000**(`SPARROW CUP HIGH ROLLER`) · 메인이벤트 **NT$6,000,000 GTD**
+     *   (Day 1 진출률별로 NT$8,000/10% · NT$14,000/17.5% · NT$20,000/25% 세 갈래).
+     * 🔴 **오탐 3종을 배제했다** — ① `Rebuy NT$500`·`NT$800`은 «MAIN EVENT **FREEROLL**
+     *   SATELLITE»의 리바이라 바이인이 아니다(APPT `#53 Employees`의 `- / Re Entry`와 같은 계급)
+     *   ② `6`은 `NT$6M GTD` ③ `30`은 `MIN CASH NT$30K`의 파편.
+     * 🔴 **첫 탭만 보면 범위가 틀린다** — DOM에 첫날(9.30)만 있고 나머지 4일은 클릭해야 로드된다.
+     *   최대값 NT$33,000은 **둘째 탭(10.01)에서만** 나온다. 어제 WPG 교훈과 같은 자리.
+     * 🪶 6월 판(`Harbour Poker Cup 2026-1` 06.17~21)은 **여전히 편입 불가**다 —
+     *   `hpc.poker`가 «현재 판만» 띄우는 구조라 1차가 부존재하고, CTP 목록에만 남아 있다.
+     */
     id: "harbour-poker-cup-2",
     name: "Harbour Poker Cup II 2026",
     nameEn: "Harbour Poker Cup II 2026",
@@ -1352,12 +1405,13 @@ const RAW_TOURNAMENTS: Tournament[] = [
     city: "Taipei",
     country: "TW",
     venue: "CTP Asia Poker Arena",
-    buyin: "공식 미기재",
+    buyin: "NT$3,500~NT$33,000",
     emoji: "🇹🇼",
     color: "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-    sourceUrl: "https://ctpclub.app/en/festivals",
+    note: "메인이벤트 NT$6,000,000 GTD — Day 1 진출률 10%·17.5%·25% 세 갈래",
+    sourceUrl: "https://hpc.poker/",
     sourceTier: "A",
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-08-31",
   },
   {
     id: "tmt-championship",
