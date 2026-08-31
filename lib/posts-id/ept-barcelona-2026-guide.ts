@@ -4,11 +4,11 @@ export const POST: Post = {
   slug: "ept-barcelona-2026-guide",
   seoTitle: "Tak Sanggup Buy-In EPT Barcelona? Jalur $0,50 ke Main Event €5.300",
   title: "EPT Barcelona 2026 — Panduan Pemain Lengkap: Jadwal, Buy-In & Cara Kualifikasi",
-  desc: "EPT Barcelona 2026 — 16–29 Agu, Casino Barcelona. Power Path $0,50 ke Main €5.300. Jadwal, buy-in, hotel, dan tips pemula pertama.",
-  tldr: "EPT Barcelona 2026 berlangsung 16–29 Agu di Casino Barcelona. Buy-in Main Event: €5.300. Jalur online termurah: Power Path dari $0,50 → Gold Pass (Main Event €5.300 + side event €1.100 + hotel 8 malam + biaya €690). Anda butuh akun PokerStars Live dan paspor yang berlaku. Pesan hotel lebih awal — Agustus adalah musim puncak.",
+  desc: "Manuel Ferrari menang Main Event 2026 dan membawa €1.002.488 dari 1.823 entri. Meja final lengkap plus jalur Power Path $0,50 untuk EPT Barcelona 2027.",
+  tldr: "EPT Barcelona 2026 berlangsung 16–29 Agu di Casino Barcelona. Pemain Italia Manuel Ferrari memenangi Main Event €5.300 dan membawa pulang €1.002.488 dari prize pool €8.841.550 dengan 1.823 entri. Untuk 2027, jalur online termurah tetap Power Path dari $0,50 → Gold Pass (Main Event €5.300 + side event €1.100 + hotel 8 malam + biaya €690). Anda butuh akun PokerStars Live dan paspor yang berlaku, dan sebaiknya pesan hotel lebih awal — Agustus musim puncak.",
   category: "tournament",
   date: "2026-06-17",
-  updated: "2026-08-28",
+  updated: "2026-08-31",
   keepImagesInBody: true,
   readTime: "16 mnt",
   emoji: "🃏",
@@ -37,8 +37,32 @@ Baru di turnamen live? Baca sekilas [panduan turnamen](/id/blog/holdem-tournamen
 
 ---
 
+:::note[**★Edisi 2026 sudah selesai.** Main Event tuntas pada 29 Agustus — ==**pemain Italia Manuel Ferrari**== membawa pulang ==**€1.002.488**==. Kualifikasi online dan perencanaan perjalanan 2026 sudah ditutup. Semua di bawah ini menjadi catatan 2026 sekaligus panduan bagi yang membidik 2027.]:::
+
 > **Jawaban singkat**
-> EPT Barcelona 2026 berlangsung ==**16–29 Agu**== di Casino Barcelona. Main Event: ==**€5.300**==. Jalur termurah: Power Path dari $0,50 → ==g:Gold Pass (kursi Main Event €5.300 + side event €1.100 + hotel 8 malam + biaya €690)==. Anda butuh akun PokerStars Live dan paspor yang berlaku. ==r:Untuk 2027, pesan hotel lebih awal — Agustus adalah musim puncak.==
+> EPT Barcelona 2026 berlangsung ==**16–29 Agu**== di Casino Barcelona. ==**Manuel Ferrari**== memenangi Main Event ==**€5.300**== dan membawa ==**€1.002.488**== dari ==**1.823 entri**==. Untuk 2027, jalur termurah adalah Power Path dari $0,50 → ==g:Gold Pass (kursi Main Event €5.300 + side event €1.100 + hotel 8 malam + biaya €690)==. Anda butuh akun PokerStars Live dan paspor yang berlaku. ==r:Pesan hotel lebih awal — Agustus adalah musim puncak.==
+---
+
+## Siapa Juara EPT Barcelona 2026? Hasil Meja Final
+
+**Pemain Italia Manuel Ferrari memenangi Main Event €5.300 dan membawa pulang €1.002.488**, mengalahkan field ==**1.823 entri**== yang membentuk prize pool ==**€8.841.550**==. Ini gelar EPT pertamanya — sekaligus trofi PokerStars ketiga dalam 14 bulan, setelah Main Event PokerStars Open Málaga (2025) dan sebuah high roller di PokerStars Open Campione (Januari 2026).
+
+Tiga besar menyepakati **deal tiga arah** dan menyisakan hanya ==**€100.000**== plus trofi untuk diperebutkan. Itu sebabnya hadiah peringkat 1 sampai 3 berdekatan.
+
+| Peringkat | Pemain | Negara | Hadiah |
+|---|---|---|---:|
+| **1** | **Manuel Ferrari** | Italia | **€1.002.488*** |
+| 2 | Lukas van Eeden | Belanda | €927.420* |
+| 3 | Jose Criado | Spanyol | €910.642* |
+| 4 | Xiaosheng Zheng | Tiongkok | €471.250 |
+| 5 | Michael Dwyer | Irlandia | €362.500 |
+| 6 | Nicolas Chouity | Lebanon | €278.950 |
+| 7 | Gerard Carbo | Spanyol | €214.600 |
+| 8 | Edward Pak | Korea Selatan | €165.050 |
+
+*\* Termasuk deal tiga arah.* Dengan **1.823 entri**, ini adalah **field Main Event terbesar ketujuh dalam sejarah EPT** — patokan yang berguna kalau Anda memperkirakan 2027.
+
+:::note[**Catatan sumber.** Per 31 Agustus 2026, PokerStars belum memublikasikan hasil akhir di halaman resmi event — jadwalnya masih menampilkan semua turnamen sebagai belum dimainkan. Angka di atas berasal dari liputan langsung di lokasi dan sudah dicek silang antara dua media independen (lihat Sumber di akhir). Kami akan menggantinya dengan angka resmi begitu terbit.]:::
 
 ---
 
@@ -48,19 +72,19 @@ Baru di turnamen live? Baca sekilas [panduan turnamen](/id/blog/holdem-tournamen
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Statistik | 2026 (Dikonfirmasi) | 2025 (Aktual) |
+| Statistik | 2026 (Aktual) | 2025 (Aktual) |
 |:---:|---|---|
 | Tanggal | ==**16–29 Agu 2026**== | 18–31 Agu 2025 |
 | Venue | Casino Barcelona | Casino Barcelona |
 | Buy-in Main Event | ==**€5.300**== | €5.300 |
-| Entri 2025 | — | ==g:**2.045**== (terbesar ke-3 dalam sejarah EPT Barcelona) |
-| Prize pool 2025 | — | ==g:**€9.918.250**== |
-| Hadiah pertama 2025 | — | ==g:**€1.217.175**== (Thomas Eychenne, Prancis) |
+| Entri Main Event | ==g:**1.823**== | ==g:**2.045**== (terbesar ke-3 dalam sejarah EPT Barcelona) |
+| Prize pool Main Event | ==g:**€8.841.550**== | ==g:**€9.918.250**== |
+| Hadiah pertama | ==g:**€1.002.488**== (Manuel Ferrari, Italia) | ==g:**€1.217.175**== (Thomas Eychenne, Prancis) |
 | Rentang event | €825 – €100.000 | €825 – €100.000 |
 
 </div>
 
-Field 2025 sebanyak 2.045 pemain adalah ==**Main Event terbesar ketiga dalam sejarah EPT Barcelona**==. Harapkan angka yang serupa atau lebih besar di 2026 — Barcelona secara konsisten menarik field terbesar di kalender Eropa.
+**Field 2026 ternyata lebih kecil dari 2025 — 1.823 entri berbanding 2.045, sekitar 11% lebih sedikit.** Ini layak dicatat kalau Anda sedang menyusun anggaran 2027: Barcelona tetap perhentian terbesar di kalender Eropa (1.823 adalah field Main Event terbesar ketujuh dalam sejarah EPT), tetapi rekor kehadiran 2025 tidak terulang, dan prize pool ikut turun dari €9,92 juta ke €8,84 juta.
 
 ---
 
@@ -407,6 +431,14 @@ A. PokerStars akan menghubungi Anda setelah Anda memenangkan pass. Gold Pass bia
 **Q. Apakah Barcelona aman bagi pemain poker yang membawa uang tunai dalam jumlah besar?**
 
 A. Kawasan Port Olímpic Barcelona umumnya aman. ==r:Pencopetan lazim di area padat wisatawan — terutama Las Ramblas.== Gunakan sistem token chip casino untuk buy-in besar daripada membawa tunai, dan simpan kemenangan di brankas kamar hotel.
+
+---
+
+## Sumber
+
+- **Tanggal festival, venue, buy-in, dan jadwal event** — [PokerStars Live · EPT Barcelona](https://www.pokerstarslive.com/ept/barcelona/) (resmi; dicek 31 Agustus 2026)
+- **Meja final, entri, dan prize pool Main Event 2026** — liputan langsung di lokasi, dicek silang antara [PokerNews](https://www.pokernews.com/news/2026/08/manuel-ferrari-wins-2026-ept-barcelona-main-event-52260.htm) dan [Card Player](https://www.cardplayer.com/poker-news/1741396-manuel-ferrari-wins-ept-barcelona-main-event-for-1-2-million) (keduanya 29 Agustus 2026). Keduanya menyebut ukuran field dan urutan akhir yang sama; keterangan field terbesar ketujuh sepanjang sejarah EPT berasal dari Card Player.
+- ⚠️ PokerStars **belum** memublikasikan hasil resmi saat pembaruan ini ditulis — angkanya akan dicocokkan dengan angka resmi begitu terbit.
 
 ---
 

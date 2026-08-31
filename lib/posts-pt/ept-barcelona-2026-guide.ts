@@ -4,12 +4,12 @@ export const POST: Post = {
   slug: "ept-barcelona-2026-guide",
   seoTitle: "Sem grana? De $0,50 ao Main de €5.300 — EPT Barcelona",
   title: "EPT Barcelona 2026 — Guia Completo do Jogador: Programação, Buy-Ins e Como se Classificar",
-  desc: "EPT Barcelona 2026 — 16 a 29 de agosto, Casino Barcelona. Power Path de $0,50 até o Main de €5.300. Programação, buy-ins, hotéis e dicas de estreante aqui.",
-  tldr: "O EPT Barcelona 2026 acontece de 16 a 29 de agosto no Casino Barcelona. Buy-in do Main Event: €5.300. Caminho online mais barato: Power Path a partir de $0,50 → Gold Pass (Main de €5.300 + side event de €1.100 + 8 noites de hotel + €690 de despesas). Você precisa de uma conta PokerStars Live e um passaporte válido. Reserve o hotel cedo — agosto é alta temporada.",
+  desc: "Manuel Ferrari venceu o Main Event 2026 e levou €1.002.488 entre 1.823 inscrições. Mesa final completa e a rota Power Path de $0,50 para o EPT Barcelona 2027.",
+  tldr: "O EPT Barcelona 2026 aconteceu de 16 a 29 de agosto no Casino Barcelona. O italiano Manuel Ferrari venceu o Main Event de €5.300 e levou €1.002.488 de uma premiação de €8.841.550 com 1.823 inscrições. Para 2027, o caminho online mais barato continua sendo o Power Path a partir de $0,50 → Gold Pass (Main de €5.300 + side event de €1.100 + 8 noites de hotel + €690 de despesas). Você precisa de conta PokerStars Live e passaporte válido, e vale reservar hotel cedo — agosto é alta temporada.",
   category: "tournament",
   date: "2026-06-17",
-  updated: "2026-08-26",
-  masterUpdated: "2026-08-26",
+  updated: "2026-08-31",
+  masterUpdated: "2026-08-31",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🃏",
@@ -40,8 +40,32 @@ Novo em torneios ao vivo? Dá uma olhada [no guia de torneio](/pt/blog/holdem-to
 
 :::note[**★Em andamento (26 de agosto de 2026).** O EPT Main Event (€5.300) roda de 22 a 29 de agosto — a classificação online e o planejamento de viagem para 2026 já fecharam. O guia abaixo fica como referência da edição 2026 e para quem mira a de 2027.]:::
 
+:::note[**★A edição 2026 acabou.** O Main Event fechou em 29 de agosto — ==**o italiano Manuel Ferrari**== ficou com ==**€1.002.488**==. A classificação online e o planejamento de viagem de 2026 já encerraram. Tudo abaixo fica como registro de 2026 e como roteiro para quem mira 2027.]:::
+
 > **Resposta rápida**
-> O EPT Barcelona 2026 acontece ==**de 16 a 29 de agosto**== no Casino Barcelona. Main Event: ==**€5.300**==. Caminho mais barato: Power Path a partir de $0,50 → ==g:Gold Pass (vaga no Main de €5.300 + side event de €1.100 + 8 noites de hotel + €690 de despesas)==. Você precisa de uma conta PokerStars Live e um passaporte válido. ==r:Para 2027, reserve o hotel cedo — agosto é alta temporada.==
+> O EPT Barcelona 2026 aconteceu ==**de 16 a 29 de agosto**== no Casino Barcelona. ==**Manuel Ferrari**== venceu o Main Event de ==**€5.300**== e levou ==**€1.002.488**== entre ==**1.823 inscrições**==. Para 2027, o caminho mais barato é o Power Path a partir de $0,50 → ==g:Gold Pass (vaga no Main de €5.300 + side event de €1.100 + 8 noites de hotel + €690 de despesas)==. Você precisa de uma conta PokerStars Live e um passaporte válido. ==r:Reserve o hotel cedo — agosto é alta temporada.==
+---
+
+## Quem venceu o EPT Barcelona 2026? Resultados da mesa final
+
+**O italiano Manuel Ferrari venceu o Main Event de €5.300 e levou €1.002.488**, superando um field de ==**1.823 inscrições**== que formou uma premiação de ==**€8.841.550**==. Foi o primeiro título EPT dele — e o terceiro troféu PokerStars em 14 meses, depois do Main do PokerStars Open Málaga (2025) e de um high roller no PokerStars Open Campione (janeiro de 2026).
+
+Os três primeiros fecharam um **acordo a três** deixando apenas ==**€100.000**== e o troféu em jogo. É por isso que as premiações do 1º ao 3º ficam tão próximas.
+
+| Posição | Jogador | País | Premiação |
+|---|---|---|---:|
+| **1** | **Manuel Ferrari** | Itália | **€1.002.488*** |
+| 2 | Lukas van Eeden | Países Baixos | €927.420* |
+| 3 | Jose Criado | Espanha | €910.642* |
+| 4 | Xiaosheng Zheng | China | €471.250 |
+| 5 | Michael Dwyer | Irlanda | €362.500 |
+| 6 | Nicolas Chouity | Líbano | €278.950 |
+| 7 | Gerard Carbo | Espanha | €214.600 |
+| 8 | Edward Pak | Coreia do Sul | €165.050 |
+
+*\* Inclui o acordo a três.* Com **1.823 inscrições**, foi o **sétimo maior field de Main Event da história do EPT** — uma referência útil se você está calculando como será 2027.
+
+:::note[**Nota sobre as fontes.** Em 31 de agosto de 2026 a PokerStars ainda não havia publicado os resultados finais nas páginas oficiais do evento — a programação segue mostrando todos os torneios como não disputados. Os números acima vêm da cobertura ao vivo no local e estão cruzados entre dois veículos independentes (ver Fontes no fim). Vamos trocar pelos oficiais assim que saírem.]:::
 
 ---
 
@@ -51,19 +75,19 @@ O ==**European Poker Tour (EPT)**== é a principal série de poker ao vivo organ
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Estatística | 2026 (Confirmado) | 2025 (Real) |
+| Estatística | 2026 (Real) | 2025 (Real) |
 |:---:|---|---|
 | Datas | ==**16–29 de ago, 2026**== | 18–31 de ago, 2025 |
 | Local | Casino Barcelona | Casino Barcelona |
 | Buy-in do Main Event | ==**€5.300**== | €5.300 |
-| Inscrições 2025 | — | ==g:**2.045**== (3º maior da história do EPT Barcelona) |
-| Premiação 2025 | — | ==g:**€9.918.250**== |
-| 1º lugar 2025 | — | ==g:**€1.217.175**== (Thomas Eychenne, França) |
+| Inscrições no Main | ==g:**1.823**== | ==g:**2.045**== (3º maior da história do EPT Barcelona) |
+| Premiação do Main | ==g:**€8.841.550**== | ==g:**€9.918.250**== |
+| 1º lugar | ==g:**€1.002.488**== (Manuel Ferrari, Itália) | ==g:**€1.217.175**== (Thomas Eychenne, França) |
 | Faixa de eventos | €825 – €100.000 | €825 – €100.000 |
 
 </div>
 
-O field de 2.045 em 2025 foi o ==**terceiro maior Main Event da história do EPT Barcelona**==. Espere números parecidos ou maiores em 2026 — Barcelona sempre atrai os maiores fields do calendário europeu.
+**O field de 2026 veio menor que o de 2025 — 1.823 inscrições contra 2.045, cerca de 11% a menos.** Vale registrar se você está fazendo conta para 2027: Barcelona continua sendo a maior parada do calendário europeu (1.823 foi o sétimo maior field de Main Event da história do EPT), mas o público recorde de 2025 não se repetiu, e a premiação caiu junto, de €9,92M para €8,84M.
 
 ---
 
@@ -410,6 +434,14 @@ A. A PokerStars vai entrar em contato depois que você ganhar o pass. O Gold Pas
 **Q. Barcelona é segura pra jogadores de poker carregando grandes quantias em dinheiro?**
 
 A. A área do Port Olímpic em Barcelona é geralmente segura. ==r:Batedores de carteira são comuns em áreas muito turísticas — Las Ramblas especialmente.== Use o sistema de tokens do cassino pros buy-ins grandes em vez de carregar dinheiro, e guarde os ganhos no cofre do quarto de hotel.
+
+---
+
+## Fontes
+
+- **Datas do festival, sede, buy-ins e programação** — [PokerStars Live · EPT Barcelona](https://www.pokerstarslive.com/ept/barcelona/) (oficial; consultado em 31 de agosto de 2026)
+- **Mesa final, inscrições e premiação do Main Event 2026** — cobertura ao vivo no local, cruzada entre [PokerNews](https://www.pokernews.com/news/2026/08/manuel-ferrari-wins-2026-ept-barcelona-main-event-52260.htm) e [Card Player](https://www.cardplayer.com/poker-news/1741396-manuel-ferrari-wins-ept-barcelona-main-event-for-1-2-million) (ambos de 29 de agosto de 2026). Os dois trazem o mesmo tamanho de field e a mesma ordem de colocação; a informação do sétimo maior Main Event do EPT é do Card Player.
+- ⚠️ A PokerStars **não** havia publicado resultados oficiais no fechamento desta atualização — os números serão conferidos com os oficiais quando saírem.
 
 ---
 

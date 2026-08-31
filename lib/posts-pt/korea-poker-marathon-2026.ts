@@ -4,12 +4,12 @@ export const POST: Post = {
   slug: "korea-poker-marathon-2026",
   title: "Corra + Jogue na Coreia 2026 — Maratonas e Poker numa Viagem Só",
   seoTitle: "Maratona + poker na Coreia 2026 — Chuncheon e JTBC",
-  desc: "Em 2026 só a JTBC Seoul ainda aceita inscrição — as outras três já fecharam. Calendário, janelas de inscrição e poker no Paradise City na mesma viagem.",
-  tldr: "As melhores maratonas de outono da Coreia (Chuncheon 25 out, JTBC Seoul 1 nov, Garmin Run 15 nov) coincidem com o clima perfeito para correr. O Paradise City Casino, perto do Aeroporto de Incheon, tem cash games o ano todo — só para estrangeiros, a 10 min do terminal. Uma viagem cobre tudo. Para 2026, só a inscrição da JTBC ainda está aberta (até 4 de set).",
+  desc: "A inscrição de estrangeiros na JTBC Seoul (1 nov) fecha em 4 de setembro de 2026 — Chuncheon e Garmin já lotaram. Calendário, valores e poker no Paradise City.",
+  tldr: "As melhores maratonas de outono da Coreia (Chuncheon 25 out, JTBC Seoul 1 nov, Garmin Run 15 nov) coincidem com o clima perfeito para correr. O Paradise City Casino, perto do Aeroporto de Incheon, tem cash games o ano todo — só para estrangeiros, a 10 min do terminal. Uma viagem cobre tudo. Para 2026, a única inscrição de estrangeiros é a da JTBC, com prazo até 4 de set.",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-08-30",
-  masterUpdated: "2026-08-28",
+  updated: "2026-08-31",
+  masterUpdated: "2026-08-31",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏃",
@@ -43,7 +43,7 @@ A Coreia é onde os dois se encontram perfeitamente. ==**Maratonas de outono de 
 ---
 
 > **Resposta rápida**
-> Torneios de poker na Coreia: ==**APT Incheon 7–16 ago**==, ==**APT Jeju 25 set–7 out**== (ambos em cassinos só para estrangeiros). Maratonas na Coreia: ==**Chuncheon 25 out**==, ==**JTBC Seoul 1 nov**==, ==**Garmin Run 15 nov**==. O APT Jeju termina em 7 out → a Chuncheon começa em 25 out — ==g:18 dias de intervalo, uma viagem cobre os dois.== ==r:Inscrições de maratona 2026: só a JTBC ainda está aberta (até 4 de set) — Chuncheon e Garmin já esgotaram.==
+> Torneios de poker na Coreia: ==**APT Incheon 7–16 ago**==, ==**APT Jeju 25 set–7 out**== (ambos em cassinos só para estrangeiros). Maratonas na Coreia: ==**Chuncheon 25 out**==, ==**JTBC Seoul 1 nov**==, ==**Garmin Run 15 nov**==. O APT Jeju termina em 7 out → a Chuncheon começa em 25 out — ==g:18 dias de intervalo, uma viagem cobre os dois.== ==r:Inscrições de maratona 2026: só a JTBC, prazo 4 de set — Chuncheon e Garmin já esgotaram.==
 
 ---
 
@@ -68,7 +68,7 @@ O argumento não é complicado. É sobre timing e localização.
 | Maratona Internacional Dong-A de Seul | Mar 2026 | Full, 10K | Seul | [dongamarathon.com](https://www.dongamarathon.com) | Encerrada em 2026 |
 | ==**YTN Seoul Tour Marathon**== | ==**6 set**== | ==**11KM**==, Meia | Seoul Plaza | [run.ytn.co.kr](http://run.ytn.co.kr) | Fechada — lotou antes, em 26 jun |
 | ==g:**Maratona de Chuncheon**== | ==g:**25 out**== | ==g:Full, 10K== | ==g:Chuncheon== | ==g:[chuncheonmarathon.com](https://www.chuncheonmarathon.com)== | ==g:Insc. fechada (esgotou)== |
-| ==**JTBC Seoul Marathon**== | ==**1 nov**== | Full, 10K | Seul (Sangam) | [worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon) | ==g:Aberta== — cota de estrangeiros limitada, esgota cedo |
+| ==**JTBC Seoul Marathon**== | ==**1 nov**== | Full, 10K | Seul (Sangam) | [worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon) | ==r:Inscrição de estrangeiros até **4 set 2026**== — cota limitada, sorteio |
 | Garmin Run Coreia | 15 nov | Meia, 10K | Goyang | [runable.me](http://runable.me/product/18977?comp=18962) | Fechada (insc. foi 1–3 jul) |
 
 </div>
@@ -123,6 +123,8 @@ A ==**JTBC Seoul Marathon**== é a principal prova urbana da Coreia — 25.000�
 
 **Como se inscrever (estrangeiros):**
 Corredores estrangeiros que moram fora da Coreia se inscrevem exclusivamente pelo ==**[worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon)**==. ==r:As vagas são limitadas e esgotam cedo==, então confira a página oficial para a disponibilidade atual — ==r:**as inscrições fecham em 4 de setembro de 2026**==, e essa mesma data (23:59 KST) é também o prazo de cancelamento/reembolso. Portadores de passaporte coreano não são elegíveis por esse canal.
+
+Os valores nesse canal são ==**€104 nos 10K**== e ==**€129 na maratona completa de 42,2K**== (só para corredores de fora da Coreia). Como nos anos anteriores as duas distâncias esgotaram no primeiro dia, ==g:a distribuição virou sorteio==: inscrever-se cedo não garante mais a vaga, só coloca você no sorteio. O kit tem que ser retirado na EXPO antes da prova, e o nome da inscrição precisa bater com o passaporte. O percurso larga no ==**World Cup Park (Mapo-gu)**== e termina no ==**Parque Olímpico (Songpa-gu)**==.
 
 ==g:A cota de estrangeiros da JTBC é limitada — inscreva-se cedo antes de esgotar.==
 
@@ -508,7 +510,7 @@ A Coreia tem as melhores condições de corrida de outono do Leste Asiático, um
 
 A comunidade de gente que tem tanto um bankroll de poker quanto um diário de treino de maratona é real. O Suga do BTS não inventou a sobreposição — ele só a tornou visível.
 
-Datas para marcar: ==**Chuncheon 25 out**==, ==**JTBC Seoul 1 nov**==, Garmin Run 15 nov — e a única inscrição de 2026 ainda aberta é a da JTBC, até 4 de setembro. Paradise City aberto o ano todo.
+Datas para marcar: ==**Chuncheon 25 out**==, ==**JTBC Seoul 1 nov**==, Garmin Run 15 nov — e a única inscrição de 2026 é a da JTBC, com prazo até 4 de setembro. Paradise City aberto o ano todo.
 
 Para o panorama completo dos torneios de poker (APT Incheon, $2,7M GTD, 7 a 16 de agosto): [APT Incheon 2026 — resultados e campeão](/pt/blog/apt-incheon-2026-guide). Para as diferenças de estratégia entre torneio e cash game: [Torneio vs Cash Game](/pt/blog/holdem-tournament-vs-cash-game).
 

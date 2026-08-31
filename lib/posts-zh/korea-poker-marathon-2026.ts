@@ -4,12 +4,12 @@ export const POST: Post = {
   slug: "korea-poker-marathon-2026",
   title: "2026 韩国跑步 + 打牌 — 一趟行程搞定马拉松和扑克",
   seoTitle: "2026 韩国扑克 + 马拉松 — 春川、JTBC 首尔 + Paradise City 指南",
-  desc: "2026 年只剩 JTBC 首尔还在收报名——春川和 YTN 都已截止。完整赛程表、报名窗口，以及仁川机场旁 Paradise City 的扑克，一趟行程串起来。",
-  tldr: "韩国最好的秋季马拉松（春川 10 月 25 日、JTBC 首尔 11 月 1 日、Garmin Run 11 月 15 日）正好赶上完美的跑步天气。仁川机场旁的 Paradise City Casino 全年开放现金局——只对外国人开放，离航站楼 10 分钟。一趟行程两样都能拿下。2026 年还开放报名的只剩 JTBC（截至 9 月 4 日）。",
+  desc: "JTBC 首尔（11/1）外国人报名 2026 年 9 月 4 日截止——春川与 Garmin 已满。赛程表、报名费，以及仁川机场旁 Paradise City 的扑克，一趟串起来。",
+  tldr: "韩国最好的秋季马拉松（春川 10 月 25 日、JTBC 首尔 11 月 1 日、Garmin Run 11 月 15 日）正好赶上完美的跑步天气。仁川机场旁的 Paradise City Casino 全年开放现金局——只对外国人开放，离航站楼 10 分钟。一趟行程两样都能拿下。2026 年外国人报名只有 JTBC，截止 9 月 4 日。",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-08-30",
-  masterUpdated: "2026-08-28",
+  updated: "2026-08-31",
+  masterUpdated: "2026-08-31",
   keepImagesInBody: true,
   readTime: "14 分钟",
   emoji: "🏃",
@@ -44,7 +44,7 @@ export const POST: Post = {
 ---
 
 > **快速回答**
-> 韩国扑克赛事：==**APT Incheon 8 月 7–16 日**==、==**APT Jeju 9 月 25 日–10 月 7 日**==（都在只对外国人开放的赌场）。韩国马拉松：==**春川 10 月 25 日**==、==**JTBC 首尔 11 月 1 日**==、==**Garmin Run 11 月 15 日**==。APT Jeju 10 月 7 日结束 → 春川 10 月 25 日开跑——==g:中间隔 18 天，一趟行程两样都占。== ==r:2026 年马拉松报名只剩 JTBC 还开放（截至 9 月 4 日）——春川和 Garmin 都已满员。==
+> 韩国扑克赛事：==**APT Incheon 8 月 7–16 日**==、==**APT Jeju 9 月 25 日–10 月 7 日**==（都在只对外国人开放的赌场）。韩国马拉松：==**春川 10 月 25 日**==、==**JTBC 首尔 11 月 1 日**==、==**Garmin Run 11 月 15 日**==。APT Jeju 10 月 7 日结束 → 春川 10 月 25 日开跑——==g:中间隔 18 天，一趟行程两样都占。== ==r:2026 年马拉松报名只有 JTBC，截止 9 月 4 日——春川和 Garmin 都已满员。==
 
 ---
 
@@ -69,7 +69,7 @@ export const POST: Post = {
 | Dong-A 首尔国际马拉松 | 2026 年 3 月 | 全程、10K | 首尔 | [dongamarathon.com](https://www.dongamarathon.com) | 2026 已结束 |
 | ==**YTN 首尔 Tour Marathon**== | ==**9 月 6 日**== | ==**11KM**==、半程 | Seoul Plaza | [run.ytn.co.kr](http://run.ytn.co.kr) | 已截止——6 月 26 日提前额满 |
 | ==g:**春川马拉松**== | ==g:**10 月 25 日**== | ==g:全程、10K== | ==g:春川== | ==g:[chuncheonmarathon.com](https://www.chuncheonmarathon.com)== | ==g:报名截止（售罄）== |
-| ==**JTBC 首尔马拉松**== | ==**11 月 1 日**== | 全程、10K | 首尔（上岩） | [worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon) | ==g:开放中==——外国人名额有限，请趁早 |
+| ==**JTBC 首尔马拉松**== | ==**11 月 1 日**== | 全程、10K | 首尔（上岩） | [worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon) | ==r:外国人报名截至 **2026 年 9 月 4 日**==——名额有限，抽签分配 |
 | Garmin Run Korea | 11 月 15 日 | 半程、10K | 高阳 | [runable.me](http://runable.me/product/18977?comp=18962) | 已截止（报名为 7 月 1–3 日） |
 
 </div>
@@ -124,6 +124,8 @@ export const POST: Post = {
 
 **怎么报名（外国人）：**
 居住在韩国境外的外国跑者，只能通过 ==**[worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon)**== 报名。==r:名额有限且常常很早满员==，请以官方页面的最新状态为准——==r:**报名截止日就是 2026 年 9 月 4 日**==，同一天 23:59（KST）也是取消／退款的截止时间。持韩国护照者无法通过这个渠道报名。
+
+该渠道的报名费为 ==**10K €104**==、==**全程 42.2K €129**==（仅限海外跑者）。由于过去两个项目都在首日售罄，==g:名额已改为抽签分配==——早报名不再等于占到位子，只是进入抽签。参赛包必须在赛前的 EXPO 领取，报名姓名须与护照一致。路线从 ==**世界杯公园（麻浦区）**== 出发，终点在 ==**奥林匹克公园（松坡区）**==。
 
 ==g:JTBC 的外国人名额有限——请趁早报名，以免满员。==
 
@@ -344,7 +346,7 @@ export const POST: Post = {
 
 ==g:没人提的甜蜜点：== **APT Jeju 10 月 7 日结束——春川马拉松是 10 月 25 日。** 中间隔 18 天。打完锦标赛，留在韩国，再去跑比赛。一趟机票两样都占。而且如果你愿意留到 11 月 1 日，JTBC 首尔也就在那儿。
 
-最干净的一鱼两吃：APT Incheon（8 月 7–16 日）→ 在首尔休整 → 春川马拉松（10 月 25 日）或 JTBC（11 月 1 日）。或者：APT Jeju（9 月 25 日–10 月 7 日）→ 在韩国待 18 天 → 春川（10 月 25 日）。⚠ 2026 年还开放的马拉松报名只有 JTBC（截至 9 月 4 日）——春川这条线请当作 2027 年的模板来看。
+最干净的一鱼两吃：APT Incheon（8 月 7–16 日）→ 在首尔休整 → 春川马拉松（10 月 25 日）或 JTBC（11 月 1 日）。或者：APT Jeju（9 月 25 日–10 月 7 日）→ 在韩国待 18 天 → 春川（10 月 25 日）。⚠ 2026 年的马拉松外国人报名只有 JTBC，截止 9 月 4 日——春川这条线请当作 2027 年的模板来看。
 
 ---
 
@@ -509,7 +511,7 @@ A. 高阳综合运动场是韩国最大的演唱会体育场之一——BTS、BL
 
 那群手里既攥着扑克 bankroll、又记着一本马拉松训练日志的人，是真实存在的。BTS 的 Suga 没有发明这个重叠——他只是让它被看见了。
 
-值得记下的日期：==**春川 10 月 25 日**==、==**JTBC 首尔 11 月 1 日**==、Garmin Run 11 月 15 日——2026 年唯一还开放的报名是 JTBC，截至 9 月 4 日。Paradise City 全年开放。
+值得记下的日期：==**春川 10 月 25 日**==、==**JTBC 首尔 11 月 1 日**==、Garmin Run 11 月 15 日——2026 年唯一的报名管道是 JTBC，截止 9 月 4 日。Paradise City 全年开放。
 
 想看完整的扑克锦标赛情况（APT Incheon，$2.7M GTD，8 月 7–16 日）：[2026 APT Incheon 指南](/zh/blog/apt-incheon-2026-guide)。想了解锦标赛与现金局的策略差异：[锦标赛 vs 现金局](/zh/blog/holdem-tournament-vs-cash-game)。
 

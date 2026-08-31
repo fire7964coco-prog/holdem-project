@@ -4,12 +4,12 @@ export const POST: Post = {
   slug: "korea-poker-marathon-2026",
   title: "Korea Run + Play 2026 — Maraton & Poker dalam Satu Perjalanan",
   seoTitle: "Poker & Maraton Korea 2026 — Chuncheon, JTBC + Paradise City",
-  desc: "Untuk 2026 hanya JTBC Seoul yang masih buka sampai 4 Sep — Chuncheon, YTN, dan Garmin sudah tutup. Kalender lomba, registrasi, dan poker di Paradise City.",
-  tldr: "Maraton musim gugur terbaik Korea (Chuncheon 25 Okt, JTBC Seoul 1 Nov, Garmin Run 15 Nov) berpadu dengan cuaca lari yang sempurna. Paradise City Casino dekat Bandara Incheon menggelar cash game sepanjang tahun — khusus warga asing, 10 menit dari terminal. Satu perjalanan mencakup keduanya. Untuk 2026, hanya registrasi JTBC yang masih buka (s.d. 4 Sep).",
+  desc: "Pendaftaran asing JTBC Seoul (1 Nov) ditutup 4 September 2026 — Chuncheon dan Garmin sudah penuh. Kalender lomba, biaya, dan poker di Paradise City.",
+  tldr: "Maraton musim gugur terbaik Korea (Chuncheon 25 Okt, JTBC Seoul 1 Nov, Garmin Run 15 Nov) berpadu dengan cuaca lari yang sempurna. Paradise City Casino dekat Bandara Incheon menggelar cash game sepanjang tahun — khusus warga asing, 10 menit dari terminal. Satu perjalanan mencakup keduanya. Untuk 2026, satu-satunya registrasi asing adalah JTBC, batas 4 Sep.",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-08-30",
-  masterUpdated: "2026-08-28",
+  updated: "2026-08-31",
+  masterUpdated: "2026-08-31",
   keepImagesInBody: true,
   readTime: "14 mnt",
   emoji: "🏃",
@@ -44,7 +44,7 @@ Korea adalah tempat keduanya bertemu dengan sempurna. ==**Maraton musim gugur ke
 ---
 
 > **Jawaban singkat**
-> Turnamen poker Korea: ==**APT Incheon 7–16 Agu**== (selesai), ==**APT Jeju 25 Sep–7 Okt**== (keduanya di kasino khusus warga asing). Maraton Korea: ==**Chuncheon 25 Okt**==, ==**JTBC Seoul 1 Nov**==, ==**Garmin Run 15 Nov**==. APT Jeju berakhir 7 Okt → Chuncheon mulai 25 Okt — ==g:jeda 18 hari, satu perjalanan mencakup keduanya.== ==r:Registrasi maraton 2026: hanya JTBC yang masih buka (s.d. 4 Sep) — Chuncheon & Garmin sudah penuh.==
+> Turnamen poker Korea: ==**APT Incheon 7–16 Agu**== (selesai), ==**APT Jeju 25 Sep–7 Okt**== (keduanya di kasino khusus warga asing). Maraton Korea: ==**Chuncheon 25 Okt**==, ==**JTBC Seoul 1 Nov**==, ==**Garmin Run 15 Nov**==. APT Jeju berakhir 7 Okt → Chuncheon mulai 25 Okt — ==g:jeda 18 hari, satu perjalanan mencakup keduanya.== ==r:Registrasi maraton 2026: hanya JTBC, batas 4 Sep — Chuncheon & Garmin sudah penuh.==
 
 ---
 
@@ -69,7 +69,7 @@ Alasannya tidak rumit. Ini soal waktu dan lokasi.
 | Dong-A Seoul International Marathon | Mar 2026 | Full, 10K | Seoul | [dongamarathon.com](https://www.dongamarathon.com) | Selesai untuk 2026 |
 | ==**YTN Seoul Tour Marathon**== | ==**6 Sep**== | ==**11KM**==, Half | Seoul Plaza | [run.ytn.co.kr](http://run.ytn.co.kr) | Tutup — penuh lebih awal, 26 Jun |
 | ==g:**Chuncheon Marathon**== | ==g:**25 Okt**== | ==g:Full, 10K== | ==g:Chuncheon== | ==g:[chuncheonmarathon.com](https://www.chuncheonmarathon.com)== | ==g:Registrasi tutup (habis terjual)== |
-| ==**JTBC Seoul Marathon**== | ==**1 Nov**== | Full, 10K | Seoul (Sangam) | [worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon) | ==g:Buka== — kuota asing terbatas, daftar lebih awal |
+| ==**JTBC Seoul Marathon**== | ==**1 Nov**== | Full, 10K | Seoul (Sangam) | [worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon) | ==r:Pendaftaran asing sampai **4 Sep 2026**== — kuota terbatas, sistem undian |
 | Garmin Run Korea | 15 Nov | Half, 10K | Goyang | [runable.me](http://runable.me/product/18977?comp=18962) | Tutup (reg. 1–3 Jul) |
 
 </div>
@@ -124,6 +124,8 @@ Alasannya tidak rumit. Ini soal waktu dan lokasi.
 
 **Cara registrasi (warga asing):**
 Pelari asing yang tinggal di luar Korea mendaftar khusus melalui ==**[worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon)**==. ==r:Kuota terbatas dan cepat penuh==, jadi cek halaman resmi untuk ketersediaan terkini — ==r:**pendaftaran ditutup 4 September 2026**==, dan tanggal yang sama (23:59 KST) juga batas pembatalan/refund. Pemegang paspor Korea tidak memenuhi syarat melalui kanal ini.
+
+Biaya pendaftaran di kanal itu ==**€104 untuk 10K**== dan ==**€129 untuk maraton penuh 42,2K**== (khusus pelari luar negeri). Karena pada tahun-tahun sebelumnya kedua nomor habis di hari pertama, ==g:alokasinya berubah jadi undian==: mendaftar lebih awal tidak lagi menjamin slot, hanya memasukkan Anda ke undian. Race pack wajib diambil di EXPO sebelum hari lomba, dan nama pendaftaran harus sama dengan paspor. Rutenya start dari ==**World Cup Park (Mapo-gu)**== dan finis di ==**Olympic Park (Songpa-gu)**==.
 
 ==g:Kuota asing JTBC terbatas — daftar lebih awal sebelum penuh.==
 
@@ -344,7 +346,7 @@ Untuk gambaran turnamen lengkap (APT Incheon sudah berlangsung 7–16 Agustus de
 
 ==g:Momen manis yang tak dibicarakan siapa pun:== **APT Jeju berakhir 7 Oktober — Chuncheon Marathon adalah 25 Oktober.** Itu jeda 18 hari. Main turnamennya, tinggal di Korea, lari lombanya. Satu penerbangan mencakup keduanya. Dan jika Anda bersedia tinggal hingga 1 November, JTBC Seoul pun ada tepat di sana.
 
-Rangkaian ganda paling mulus: APT Incheon (7–16 Agu) → istirahat di Seoul → Chuncheon Marathon (25 Okt) atau JTBC (1 Nov). Atau: APT Jeju (25 Sep–7 Okt) → 18 hari di Korea → Chuncheon (25 Okt). ⚠ Untuk 2026, satu-satunya registrasi maraton yang masih buka adalah JTBC (s.d. 4 Sep) — jalur Chuncheon perlakukan sebagai templat 2027.
+Rangkaian ganda paling mulus: APT Incheon (7–16 Agu) → istirahat di Seoul → Chuncheon Marathon (25 Okt) atau JTBC (1 Nov). Atau: APT Jeju (25 Sep–7 Okt) → 18 hari di Korea → Chuncheon (25 Okt). ⚠ Untuk 2026, satu-satunya registrasi maraton adalah JTBC, batas 4 Sep — jalur Chuncheon perlakukan sebagai templat 2027.
 
 ---
 
@@ -509,7 +511,7 @@ Korea memiliki kondisi lari musim gugur terbaik di Asia Timur, kasino 10 menit d
 
 Komunitas orang-orang yang memegang baik bankroll poker maupun catatan latihan maraton itu nyata. Suga dari BTS tidak menciptakan irisan itu — ia hanya membuatnya terlihat.
 
-Tanggal untuk dicatat: ==**Chuncheon 25 Okt**==, ==**JTBC Seoul 1 Nov**==, Garmin Run 15 Nov — dan satu-satunya registrasi 2026 yang masih buka adalah JTBC, sampai 4 Sep. Paradise City buka sepanjang tahun.
+Tanggal untuk dicatat: ==**Chuncheon 25 Okt**==, ==**JTBC Seoul 1 Nov**==, Garmin Run 15 Nov — dan satu-satunya registrasi 2026 adalah JTBC, dengan batas 4 Sep. Paradise City buka sepanjang tahun.
 
 Untuk gambaran turnamen poker lengkap (APT Incheon, GTD $2,7 juta, 7–16 Agustus): [Panduan APT Incheon 2026](/id/blog/apt-incheon-2026-guide). Untuk perbedaan strategi turnamen vs cash game: [Turnamen vs Cash Game](/id/blog/holdem-tournament-vs-cash-game).
 

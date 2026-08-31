@@ -4,11 +4,11 @@ export const POST: Post = {
   slug: "korea-poker-marathon-2026",
   title: "Korea Run + Play 2026 — Marathons & Poker in One Trip",
   seoTitle: "Korea Poker & Marathon 2026 — Chuncheon, JTBC + Paradise City Guide",
-  desc: "JTBC Seoul is the only 2026 race still open — Chuncheon and YTN have closed. Race calendar, registration windows, and poker at Paradise City in one trip.",
-  tldr: "Korea's top autumn marathons (Chuncheon Oct 25, JTBC Seoul Nov 1, Garmin Run Nov 15) align with perfect running weather. Paradise City Casino near Incheon Airport runs year-round cash games — foreigners only, 10 min from the terminal. One trip covers both. For 2026, only JTBC registration is still open (until Sep 4).",
+  desc: "Foreign entry for JTBC Seoul (Nov 1) closes Sep 4, 2026 — Chuncheon and Garmin are full. Race calendar, entry fees, and poker at Paradise City in one trip.",
+  tldr: "Korea's top autumn marathons (Chuncheon Oct 25, JTBC Seoul Nov 1, Garmin Run Nov 15) align with perfect running weather. Paradise City Casino near Incheon Airport runs year-round cash games — foreigners only, 10 min from the terminal. One trip covers both. For 2026 the only foreign entry window is JTBC's — deadline Sep 4.",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-08-30",
+  updated: "2026-08-31",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏃",
@@ -43,7 +43,7 @@ Korea is where both come together perfectly. ==**World-class autumn marathons. A
 ---
 
 > **Quick answer**
-> Korea poker tournaments: ==**APT Incheon Aug 7–16**==, ==**APT Jeju Sep 25–Oct 7**== (both at foreigners-only casinos). Korea marathons: ==**Chuncheon Oct 25**==, ==**JTBC Seoul Nov 1**==, ==**Garmin Run Nov 15**==. APT Jeju ends Oct 7 → Chuncheon starts Oct 25 — ==g:18-day gap, one trip covers both.== ==r:2026 marathon registration: only JTBC is still open (until Sep 4) — Chuncheon and Garmin are full.==
+> Korea poker tournaments: ==**APT Incheon Aug 7–16**==, ==**APT Jeju Sep 25–Oct 7**== (both at foreigners-only casinos). Korea marathons: ==**Chuncheon Oct 25**==, ==**JTBC Seoul Nov 1**==, ==**Garmin Run Nov 15**==. APT Jeju ends Oct 7 → Chuncheon starts Oct 25 — ==g:18-day gap, one trip covers both.== ==r:2026 marathon entry: JTBC only, deadline Sep 4 — Chuncheon and Garmin are full.==
 
 ---
 
@@ -68,7 +68,7 @@ The case isn't complicated. It's about timing and location.
 | Dong-A Seoul International Marathon | Mar 2026 | Full, 10K | Seoul | [dongamarathon.com](https://www.dongamarathon.com) | Done for 2026 |
 | ==**YTN Seoul Tour Marathon**== | ==**Sep 6**== | ==**11KM**==, Half | Seoul Plaza | [run.ytn.co.kr](http://run.ytn.co.kr) | Closed — filled early on Jun 26 |
 | ==g:**Chuncheon Marathon**== | ==g:**Oct 25**== | ==g:Full, 10K== | ==g:Chuncheon== | ==g:[chuncheonmarathon.com](https://www.chuncheonmarathon.com)== | ==g:Reg. closed (sold out)== |
-| ==**JTBC Seoul Marathon**== | ==**Nov 1**== | Full, 10K | Seoul (Sangam) | [worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon) | ==g:Open== — foreign quota is limited, apply early |
+| ==**JTBC Seoul Marathon**== | ==**Nov 1**== | Full, 10K | Seoul (Sangam) | [worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon) | ==r:Foreign entry closes **Sep 4, 2026**== — limited quota, raffle allocation |
 | Garmin Run Korea | Nov 15 | Half, 10K | Goyang | [runable.me](http://runable.me/product/18977?comp=18962) | Closed (reg. was Jul 1–3) |
 
 </div>
@@ -123,6 +123,8 @@ The ==**JTBC Seoul Marathon**== is Korea's premier urban race — 25,000–50,00
 
 **How to register (foreigners):**
 Foreign runners residing outside Korea register exclusively through ==**[worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon)**==. ==r:Spots are limited and fill early==, so check the official page for current availability — ==r:**registration closes on September 4, 2026**==, and that same date (23:59 KST) is also the cancellation/refund cutoff. Korean passport holders are ineligible via this channel.
+
+Entry fees on that channel are ==**€104 for the 10K**== and ==**€129 for the full 42.2K**== (overseas runners only). Because both distances sold out on day one in past years, ==g:allocation moved to a raffle==, so registering early no longer guarantees a spot — it just gets you into the draw. Race packs must be collected at the EXPO before race day, and the name on your entry has to match your passport. The course starts at ==**World Cup Park (Mapo-gu)**== and finishes at ==**Olympic Park (Songpa-gu)**==.
 
 ==g:JTBC's foreign quota is limited — apply early before it fills.==
 
@@ -343,7 +345,7 @@ For the full tournament picture (APT Incheon ran August 7–16 with $2.7M GTD), 
 
 ==g:The sweet spot nobody talks about:== **APT Jeju ends October 7 — Chuncheon Marathon is October 25.** That's an 18-day gap. Play the tournament, stay in Korea, run the race. One flight covers both. And if you're willing to stay through November 1, JTBC Seoul is right there too.
 
-The cleanest double-dip: APT Incheon (Aug 7–16) → rest in Seoul → Chuncheon Marathon (Oct 25) or JTBC (Nov 1). Or: APT Jeju (Sep 25–Oct 7) → 18 days in Korea → Chuncheon (Oct 25). ⚠ For 2026, the only marathon registration still open is JTBC (until Sep 4) — treat the Chuncheon route as a 2027 template.
+The cleanest double-dip: APT Incheon (Aug 7–16) → rest in Seoul → Chuncheon Marathon (Oct 25) or JTBC (Nov 1). Or: APT Jeju (Sep 25–Oct 7) → 18 days in Korea → Chuncheon (Oct 25). ⚠ For 2026 the only marathon entry window is JTBC's, deadline Sep 4 — treat the Chuncheon route as a 2027 template.
 
 ---
 
@@ -508,7 +510,7 @@ Korea has the best autumn running conditions in East Asia, a casino 10 minutes f
 
 The community of people who hold both a poker bankroll and a marathon training log is real. BTS's Suga didn't invent the overlap — he just made it visible.
 
-Dates to bookmark: ==**Chuncheon Oct 25**==, ==**JTBC Seoul Nov 1**==, Garmin Run Nov 15 — and the only 2026 registration still open is JTBC, until Sep 4. Paradise City open year-round.
+Dates to bookmark: ==**Chuncheon Oct 25**==, ==**JTBC Seoul Nov 1**==, Garmin Run Nov 15 — and the only 2026 entry window is JTBC's, deadline Sep 4. Paradise City open year-round.
 
 For the full poker tournament picture (APT Incheon, $2.7M GTD, August 7–16): [APT Incheon 2026 Guide](/en/blog/apt-incheon-2026-guide). For tournament vs cash game strategy differences: [Tournament vs Cash Game](/en/blog/holdem-tournament-vs-cash-game).
 
