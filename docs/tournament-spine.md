@@ -463,19 +463,33 @@ STAGE 01 트라이얼(무료) → 02 새틀 → 03 파이널 → 04 라이브.
 
 정본 `theasianpokertour.com` / `ctpclub.app`(Playwright) / `wpg.poker` / `godsofpoker.com`
 
+🔴 **2026-08-31 전수 재대조.** `ctpclub.app/en/festivals`를 Playwright DOM으로 긁어 **2026 페스티벌
+19건**을 세고, 우리 보드(`lib/tournaments.ts`)와 한 줄씩 맞췄다. **결함 2건 + 누락 6건**이 나왔다.
+날짜·베뉴·바이인은 CTP 목록이 아니라 **각 주최사 자기 사이트**에서 다시 읽었다 —
+그 과정에서 **CTP 목록이 주최사와 어긋나는 자리(ZSOP)**가 드러났다.
+
 | 대회 | 기간 | 상태 | 핵심 |
 |---|---|---|---|
-| GOP Taipei (The Titan Assembly) | 01.08~01.18 | 종료 | 95이벤트 / `42 Million Series Guarantee` / ME 556엔트리 우승 **Chih Wei Fan** NT$4,323,180 |
+| GOP Taipei (The Titan Assembly) | 01.08~01.18 | 종료 | 95이벤트 / `42 Million Series Guarantee` / ME 556엔트리 우승 **Chih Wei Fan** NT$4,323,180 / 바이인 NT$2,500~330,000(라벨 128건 실측) · **보드 편입 `gop-taipei-1`** |
+| TMT 19 | 01.22~02.09 | 종료 | 🔴 **보드 미편입 — 베뉴 미확정이 사유.** CTP 자체 페이지(`/festivals/tmt-19`)는 **날짜만** 있고 Schedule·Results·Information이 전부 «No data». somuchpoker는 **`* multiple venues *`**(162이벤트·32,875엔트리·40개국·GTD 60M TWD·ME 8,066엔트리). 베뉴·도시를 지어내지 않으려 보류했다 — **해소 조건은 베뉴 1차 확인 하나뿐** |
+| **PS Championship III Taipei 2026** | 02.26~03.10 | 종료 | 102이벤트 / 상금풀 **NT$93.7M** / ME 우승 **Ki Young Kim** NT$3,010,000 / 바이인 NT$2,500~120,000 · **편입 `ps-championship-3-taipei`** |
+| **ZSOP The Horse Awakens** | **03.12~03.23** | 종료 | 🔴 **CTP 목록은 `Mar 03`이지만 주최사 헤더·스케줄 첫날이 `MAR 12`다 — 주최사 채택.** `NT$60,000,000 GTD` / 바이인 NT$1,900~150,000 · **편입 `zsop-horse-awakens`** |
+| **APL Taipei 2026**(Ace Poker League) | 04.03~04.12 | 종료 | `Total Prize: 50,000,000 TWD GTD` / 바이인 NT$2,000~100,000 / ★ **3/28 해외 Day-1(PMANG)** 별도 플라이트 · **편입 `apl-taipei`** |
 | **APT Taipei 2026** | 04.22~05.03 | 종료 | ★아래 |
-| **WPG Taiwan 2026** | 05.23~05.31 | 종료 | ★아래 |
-| **TMT 20** | **07.08~08.03** | **진행중** | ★아래 |
-| APC Taipei III | 08.05~08.10 | 예정 | 공식 목록 등재 |
-| PS Championship IV Taipei | 08.19~08.31 | 예정 | (2차) 104이벤트 / NTD 39,000,000+ |
-| ZSOP The Final Horse | **09.04~09.14** | 예정 | (somuchpoker 09.03은 오류) |
+| AJPC Samurai Circuit Taiwan | 05.11~05.18 | 종료 | 기보유 |
+| **APC Taipei II 2026** | 05.05~05.10 | 종료 | 31이벤트·661엔트리·GTD 11M TWD(2차) / 베뉴 `CTP Asia Poker Arena, Taipei City` · **편입 `apc-taipei-2`**(바이인은 공식 미기재) |
+| **WPG Taiwan 2026** | 05.23~05.31 | 종료 | ★아래 · **편입 `wpg-taiwan`** |
+| Harbour Poker Cup 2026-1 | 06.17~06.21 | 종료 | 🔴 **보드 미편입.** `hpc.poker`가 **현재 판(9.30~10.04)만** 띄우고 6월분 페이지가 없다 → 1차 부재. CTP 목록에만 남아 있다 |
+| **TMT 20** | **07.08~08.03** | 종료 | ★아래 |
+| ~~APC Taipei III~~ | ~~08.05~08.10~~ | ❌ **취소** | 🔴 **2026-08-31 보드에서 삭제.** CTP 공식 목록에서 사라졌고(그 목록은 종료 대회를 지우지 않는다 — TMT 20·WPG가 그대로 있다) somuchpoker가 축어로 `[CANCELLED] APC Taipei III 2026`(08.20 갱신) · `"has been officially cancelled … removed from the venue's active schedule"`. **되살리지 마라** |
+| PS Championship IV Taipei | 08.19~08.31 | **진행중** | (2차) 104이벤트 / NTD 39,000,000+ |
+| ZSOP The Final Horse | **09.03~09.14** | 예정 | 🔴 **정정(2026-08-31): 09.04 → 09.03.** 주최사 헤더 `3 - 15 SEPT, 2026` + 스케줄 첫 앵커 `SEP 3, 2026`. **옛 메모 「somuchpoker 09.03은 오류」가 거꾸로였다.** ⚠ 헤더는 15인데 스케줄 앵커는 SEP 3~14뿐이고 9/14가 `Main Event Final Day` → **엔트리 열거를 채택해 종료일 09.14 유지** |
 | GOP Taipei II (The Trial of Wisdom) | 09.18~09.27 | 예정 | |
+| Harbour Poker Cup II | 09.30~10.04 | 예정 | `hpc.poker` 라이브 확인 — ME `NT$6M GTD` / 베뉴 `Asia Poker Arena, TAIPEI` |
 | TMT Championship | **10.16~10.26** | 예정 | `GTD:NTD$30,000,000` (귀속 대상 미명시) |
 | **APT Championship Taipei** | **11.13~11.29** | 예정 | ★아래 |
 | APC Taipei IV | **12.02~12.13** | 예정 | (somuchpoker 12.09~20은 오류) |
+| OLA Poker Tour Taipei | 12.16~12.21 | 예정 | 기보유 (⚠ CTP 목록 라벨이 `Taipei 2025`인데 날짜는 2026 — 라벨 오기) |
 
 ### APT Taipei 2026 — 이벤트 수 논쟁 해소
 - 사전 발표 **172개**(새틀 포함) → 사후 공식 리캡 **`"161 trophy events and 4 satellites"` = 165개**

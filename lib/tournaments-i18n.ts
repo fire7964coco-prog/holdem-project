@@ -784,18 +784,22 @@ const COUNTRY_NAME: Partial<Record<BoardLocale, Record<string, string>>> = {
   ja: {
     "North Cyprus": "北キプロス", Korea: "韓国", Vietnam: "ベトナム",
     Australia: "オーストラリア", Canada: "カナダ", Montenegro: "モンテネグロ",
+    Taiwan: "台湾",
   },
   zh: {
     "North Cyprus": "北塞浦路斯", Korea: "韩国", Vietnam: "越南",
     Australia: "澳大利亚", Canada: "加拿大", Montenegro: "黑山",
+    Taiwan: "台湾",
   },
   "zh-hant": {
     "North Cyprus": "北賽普勒斯", Korea: "韓國", Vietnam: "越南",
     Australia: "澳洲", Canada: "加拿大", Montenegro: "蒙特內哥羅",
+    Taiwan: "台灣",
   },
   es: {
     // 스페인어에서 철자가 실제로 갈리는 것만. Vietnam·Australia·Montenegro는 그대로가 맞다
     "North Cyprus": "Chipre del Norte", Korea: "Corea", Canada: "Canadá",
+    Taiwan: "Taiwán",
   },
 };
 
@@ -1463,6 +1467,13 @@ const NOTE_EN: Record<string, string> = {
   "triton-jeju-1": "ONE Mar 5–15 + Super High Roller Series Mar 15 – Apr 1 · SHRS title sponsor Jupiter Exchange",
   "wsope": "Moved from King's Resort in Rozvadov to the Hilton in Prague · 15 bracelets",
   "apt-taipei": "Main #54 TWD 55,000 / TWD 70,000,000 GTD · the largest non-Championship festival in the tour's 20-year history (26,009 entries)",
+  /* 2026-08-31 대만 트랙 보강분 — 값은 각 주최사 페이지 원문(docs/tournament-spine.md §3-3) */
+  "gop-taipei-1": "95 events · NT$42,000,000 series guarantee — the opener of Taiwan's 2026 season",
+  "ps-championship-3-taipei": "102 events · NT$93,700,000 total prize pool · Main Event won by Ki Young Kim for NT$3,010,000",
+  "zsop-horse-awakens": "NT$60,000,000 series guarantee — the first ZSOP festival of 2026",
+  "apl-taipei": "NT$50,000,000 series guarantee · an overseas Day 1 ran separately on Mar 28",
+  "wpg-taiwan": "58 events · TWD 24,000,000 series guarantee — run by WPG Asia with CTP",
+  "zsop-final-horse": "NT$23,456,789 series guarantee · Main Event final day Sep 14",
   "ept-montecarlo": "Main Event €5,300 (May 4–10) · a €250,000 Super High Roller on the schedule",
   "triton-montenegro": "$200K Invitational prize pool $27.4M · Main Event won by Danny Tang for $3,522,000",
   "gop-incheon-1": "₩700M guaranteed on the Main Event — not the series total",
@@ -1640,6 +1651,14 @@ const NOTE_HANT: Record<string, string> = {
   "triton-jeju-1": "ONE 3月5〜15日＋Super High Roller Series 3月15日〜4月1日 · SHRS冠名贊助商為Jupiter Exchange",
   "wsope": "從羅茲瓦多夫的King's Resort遷至布拉格希爾頓 · 15條金手鍊",
   "apt-taipei": "主賽#54 TWD 55,000／TWD 70,000,000 GTD · 該巡迴賽20年來最大的非Championship系列賽（26,009人次）",
+  /* 2026-08-31 대만 트랙 보강분. zh-hant가 이 트랙의 목표 시장이라 6건 전부 채웠다.
+     표기는 「台」로 통일 — 검색 실측 표기가 전부 台灣이다(臺灣 아님). */
+  "gop-taipei-1": "95場賽事 · 系列賽保底 NT$42,000,000——2026台灣賽季揭幕戰",
+  "ps-championship-3-taipei": "102場賽事 · 總獎池 NT$93,700,000 · 主賽事冠軍 Ki Young Kim（NT$3,010,000）",
+  "zsop-horse-awakens": "系列賽保底 NT$60,000,000——2026年首場 ZSOP 賽事節",
+  "apl-taipei": "系列賽保底 NT$50,000,000 · 3月28日另有一場海外 Day 1",
+  "wpg-taiwan": "58場賽事 · 系列賽保底 TWD 24,000,000——由 WPG Asia 與 CTP 合辦",
+  "zsop-final-horse": "系列賽保底 NT$23,456,789 · 主賽事最終日為9月14日",
   "ept-montecarlo": "主賽事€5,300（5月4〜10日）· 編排了€250,000超級豪客賽",
   "triton-montenegro": "$200K Invitational獎池$27.4M · 主賽事由Danny Tang奪冠，獎金$3,522,000",
   "gop-incheon-1": "主賽事保底7億韓元（並非系列賽總額）",

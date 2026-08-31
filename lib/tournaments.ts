@@ -1004,7 +1004,170 @@ const RAW_TOURNAMENTS: Tournament[] = [
     verifiedAt: "2026-07-29",
   },
 
-  /* ── 🇹🇼 대만 CTP Asia Poker Arena — 연 10회 이상 돌아가는 아시아 허브 ────────── */
+  /* ── 🇹🇼 대만 CTP Asia Poker Arena — 연 10회 이상 돌아가는 아시아 허브 ──────────
+     2026-08-31 보강: `ctpclub.app/en/festivals`(주최 클럽의 공식 목록)를 Playwright DOM으로
+     긁어 2026년 페스티벌 19건을 전수 대조했다. 아래 6건이 우리 스파인에 없었다.
+     날짜·베뉴·바이인은 **CTP 목록이 아니라 각 주최사 자기 사이트**에서 다시 확인했다
+     (보드 히어로가 "每一場都是從主辦方官網上直接確認的"라고 약속하고 있다).
+     그 대조에서 **CTP 목록이 주최사와 어긋나는 자리가 나왔다** — ZSOP 항목 주석 참조. */
+  {
+    /**
+     * 2026 대만 개막 시리즈. 값은 `godsofpoker.com/series/taipei-2026` 원문에서 직접 읽었다:
+     * 헤더 `JAN 8-18, 2026` / `Asia Poker Arena` / `42 MILLION Series Guarantee` / `95 Total Events`.
+     * 바이인은 스케줄의 `Buy-in:` 라벨 128건을 파싱한 실측 범위다(새틀라이트 포함).
+     */
+    id: "gop-taipei-1",
+    name: "Gods of Poker Taipei 2026 — The Titan Assembly",
+    nameEn: "Gods of Poker Taipei 2026 — The Titan Assembly",
+    type: "international",
+    startDate: "2026-01-08",
+    endDate: "2026-01-18",
+    location: "대만 타이베이 (Asia Poker Arena)",
+    city: "Taipei",
+    country: "TW",
+    venue: "Asia Poker Arena",
+    buyin: "NT$2,500~NT$330,000",
+    emoji: "🇹🇼",
+    color: "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+    note: "95개 이벤트 · 시리즈 개런티 NT$42,000,000 — 2026 대만 시즌 개막전",
+    sourceUrl: "https://godsofpoker.com/series/taipei-2026",
+    sourceTier: "A",
+    verifiedAt: "2026-08-31",
+  },
+  {
+    /**
+     * `playersseries.com` 원문: `26 Feb – 10 Mar 2026` / `ASIA POKER ARENA, TAIPEI` /
+     * `EVENTS 102` / `TOTAL PRIZE POOL NT$93.7M` / ME 우승 `Ki Young Kim NT$3,010,000`.
+     * ★ 바이인 파싱 주의 — 이 사이트는 `Buy-in:` 라벨이 없고 «Levels N min» 다음 줄이 바이인이다.
+     *   그 뒤의 NT$는 우승 상금이라 라벨 없이 긁으면 섞인다. 구조 앵커로 뽑았고,
+     *   최솟값 «1»로 잡히던 건은 `NT$1.5M GTD`(개런티)의 오탐이라 제외했다.
+     * ★ 우승자 한글 표기는 어떤 출처에도 없다 — TMT 20 `Park Daeyoung` 선례대로 로마자 유지.
+     */
+    id: "ps-championship-3-taipei",
+    name: "PS Championship III Taipei 2026",
+    nameEn: "PS Championship III Taipei 2026",
+    type: "international",
+    startDate: "2026-02-26",
+    endDate: "2026-03-10",
+    location: "대만 타이베이 (Asia Poker Arena)",
+    city: "Taipei",
+    country: "TW",
+    venue: "Asia Poker Arena",
+    buyin: "NT$2,500~NT$120,000",
+    emoji: "🇹🇼",
+    color: "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+    note: "102개 이벤트 · 총 상금풀 NT$93,700,000 · 메인이벤트 우승 Ki Young Kim NT$3,010,000",
+    sourceUrl: "https://www.playersseries.com/series/psc3-taipei-2026",
+    sourceTier: "A",
+    verifiedAt: "2026-08-31",
+  },
+  {
+    /**
+     * 🔴 **CTP 목록과 주최사가 갈린 자리** — CTP는 `Mar 03 — Mar 23`이라고 적어 뒀지만
+     * 주최사 `zodiacseriesofpoker.com` 헤더는 `12 - 23 MAR, 2026`이고 스케줄 첫날도 MAR 12다.
+     * **주최사를 채택했다**(§12-B: 집계 요약이 아니라 원문).
+     * 원문: `NT$ 60,000,000 GTD` / `Asia Poker Arena, Taipei`.
+     * 바이인은 `Buy-in:` 라벨 103건 실측.
+     */
+    id: "zsop-horse-awakens",
+    name: "Zodiac Series of Poker: The Horse Awakens",
+    nameEn: "Zodiac Series of Poker: The Horse Awakens",
+    type: "international",
+    startDate: "2026-03-12",
+    endDate: "2026-03-23",
+    location: "대만 타이베이 (Asia Poker Arena)",
+    city: "Taipei",
+    country: "TW",
+    venue: "Asia Poker Arena",
+    buyin: "NT$1,900~NT$150,000",
+    emoji: "🇹🇼",
+    color: "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+    note: "시리즈 개런티 NT$60,000,000 — 2026 ZSOP 상반기 시리즈",
+    sourceUrl: "https://zodiacseriesofpoker.com/series/the-horse-awakens",
+    sourceTier: "A",
+    verifiedAt: "2026-08-31",
+  },
+  {
+    /**
+     * `acepokerleague.com/event/?series_id=27` 원문: `APL TAIPEI 2026` /
+     * `Total Prize: 50,000,000 TWD GTD` / `venue : Asia Poker Arena`.
+     * ★ 3/28에 `#49 Mini Main Event [Overseas Day-1 PMANG]` 해외 Day-1이 하나 먼저 열렸다.
+     *   그건 별도 플라이트라 시리즈 본편(4/3~4/12)을 시작일로 잡고 dateNote로 표기한다.
+     * ★ 바이인은 «NT$X(내역 - 수수료)» 꼴만 센 실측 100건이다.
+     *   괄호 없이 긁으면 `Prize: NT$1,700,000 GTD`가 바이인으로 섞인다(실제로 섞였다).
+     */
+    id: "apl-taipei",
+    name: "Ace Poker League: APL Taipei 2026",
+    nameEn: "Ace Poker League: APL Taipei 2026",
+    type: "international",
+    startDate: "2026-04-03",
+    endDate: "2026-04-12",
+    // 🔴 dateNote를 쓰지 마라 — `localizedDateRange`가 이 값을 **번역 없이 그대로** 붙인다.
+    //    한국어를 넣으면 6개 다국어 페이지 본문에 한국어가 그대로 나간다(실제로 나갔다).
+    //    `note`는 NOTES[locale] 사전을 타서 안전하므로 3/28 정보는 그쪽에 넣었다.
+    location: "대만 타이베이 (Asia Poker Arena)",
+    city: "Taipei",
+    country: "TW",
+    venue: "Asia Poker Arena",
+    buyin: "NT$2,000~NT$100,000",
+    emoji: "🇹🇼",
+    color: "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+    note: "시리즈 개런티 NT$50,000,000 · 3/28에 해외 Day-1(PMANG) 별도 플라이트",
+    sourceUrl: "https://acepokerleague.com/event/?series_id=27",
+    sourceTier: "A",
+    verifiedAt: "2026-08-31",
+  },
+  {
+    /**
+     * APC는 자체 공식 사이트가 없다. 그래서 개최 베뉴인 CTP의 공식 페스티벌 목록이 정본이고
+     * (`ctpclub.app/en/festivals`에 `Asia Poker Championship: Taipei II 2026 May 05 — May 10, 2026`),
+     * 베뉴 표기 `CTP Asia Poker Arena / Taiwan, Taipei City`는 CTP가 링크하는 somuchpoker에서 확인했다.
+     * ★ 바이인은 CTP 목록에 없다 → `공식 미기재`. 같은 시리즈 `apc-taipei-4`와 동일한 취급이다.
+     */
+    id: "apc-taipei-2",
+    name: "Asia Poker Championship Taipei II",
+    nameEn: "Asia Poker Championship Taipei II",
+    type: "international",
+    startDate: "2026-05-05",
+    endDate: "2026-05-10",
+    location: "대만 타이베이 (CTP Asia Poker Arena)",
+    city: "Taipei",
+    country: "TW",
+    venue: "CTP Asia Poker Arena",
+    buyin: "공식 미기재",
+    emoji: "🇹🇼",
+    color: "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+    sourceUrl: "https://ctpclub.app/en/festivals",
+    sourceTier: "A",
+    verifiedAt: "2026-08-31",
+  },
+  {
+    /**
+     * `wpg.poker/event/wpg-taiwan-2026/` 원문: `23 May to 31 May` / `Venue Asia Poker Arena` /
+     * `TWD 24 Million` / `58 TOTAL EVENTS`.
+     * 바이인은 May 23~31 **날짜 탭 9개를 전부 클릭**해 모은 실측 범위다(한 탭만 보면 3K~77K로 좁게 잡힌다).
+     * 프리롤 새틀(`Cap 200`)과 새틀 통과분(`Qualified`)은 바이인이 아니라 제외했다.
+     * ★ ME 1위 상금은 **공식 TWD 1,600,000 ↔ somuchpoker TWD 1,437,000으로 충돌**하고
+     *   딜 여부가 공식에 없다(docs/tournament-spine.md) → note에 쓰지 않는다.
+     */
+    id: "wpg-taiwan",
+    name: "World Poker Games: Taiwan 2026",
+    nameEn: "World Poker Games: Taiwan 2026",
+    type: "international",
+    startDate: "2026-05-23",
+    endDate: "2026-05-31",
+    location: "대만 타이베이 (Asia Poker Arena)",
+    city: "Taipei",
+    country: "TW",
+    venue: "Asia Poker Arena",
+    buyin: "TWD 2,100~TWD 77,000",
+    emoji: "🇹🇼",
+    color: "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
+    note: "58개 이벤트 · 시리즈 개런티 TWD 24,000,000 — 주최 WPG Asia × CTP",
+    sourceUrl: "https://wpg.poker/event/wpg-taiwan-2026/",
+    sourceTier: "A",
+    verifiedAt: "2026-08-31",
+  },
   {
     id: "tmt-20",
     name: "Taiwan Millions Tournament TMT 20",
@@ -1024,24 +1187,21 @@ const RAW_TOURNAMENTS: Tournament[] = [
     sourceTier: "A",
     verifiedAt: "2026-07-29",
   },
-  {
-    id: "apc-taipei-3",
-    name: "Asia Poker Championship Taipei III",
-    nameEn: "Asia Poker Championship Taipei III",
-    type: "international",
-    startDate: "2026-08-05",
-    endDate: "2026-08-10",
-    location: "대만 타이베이 (CTP Asia Poker Arena)",
-    city: "Taipei",
-    country: "TW",
-    venue: "CTP Asia Poker Arena",
-    buyin: "공식 미기재",
-    emoji: "🇹🇼",
-    color: "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-    sourceUrl: "https://ctpclub.app/en/festivals",
-    sourceTier: "A",
-    verifiedAt: "2026-07-29",
-  },
+  /**
+   * ❌ apc-taipei-3 (Asia Poker Championship Taipei III · 2026-08-05~08-10) — 2026-08-31 삭제.
+   *
+   * **취소된 대회다. 되살리지 마라.**
+   *  - 1차: `ctpclub.app/en/festivals`(주최 클럽 CTP)의 2026 목록에서 사라졌다.
+   *    같은 자리(5월)에 있는 것은 **APC Taipei II**(05.05~05.10)이고, III는 어느 구획에도 없다.
+   *    이 목록은 종료 대회를 지우지 않는다(TMT 20·WPG 5월분이 그대로 남아 있다)
+   *    → «지나가서 빠진 것»이 아니라 «편성에서 빠진 것»이다.
+   *  - 2차 축어: somuchpoker `[CANCELLED] APC Taipei III 2026`(2026.08.20 갱신) —
+   *    "has been officially cancelled. Organizers confirmed the series will not proceed
+   *     on these dates, and the event has been removed from the venue's active schedule."
+   *  - 선례: WSOP Super Circuit Cyprus 취소분(docs/tournament-spine.md) — «게시 금지».
+   *
+   * 이 항목은 카드뿐 아니라 **Event JSON-LD로도 나가고 있었다**(7로케일 + KO).
+   */
   {
     id: "ps-championship-4-taipei",
     name: "PS Championship IV Taipei 2026",
@@ -1062,22 +1222,34 @@ const RAW_TOURNAMENTS: Tournament[] = [
     verifiedAt: "2026-07-29",
   },
   {
+    /**
+     * 🔴 **2026-08-31 정정: 시작일 09-04 → 09-03.** 주최사 `zodiacseriesofpoker.com`을 직접 열었다.
+     *  - 헤더 `3 - 15 SEPT, 2026` · 스케줄 첫 날짜 앵커 `SEP 3, 2026`(그날 S1·Z1 등 이벤트 편성)
+     *  - CTP 목록도 `Sep 03`이다. 즉 **09-04를 쓰던 우리만 하루 늦었다.**
+     *  - 🔴 스파인의 「somuchpoker 09.03은 오류」 메모는 **반대로 우리 쪽이 틀린 것**이었다(같이 정정).
+     *
+     * ⚠ **1차 출처 자기모순**([[primary-source-self-contradiction]]): 헤더는 `3 - 15`인데
+     *   스케줄 날짜 앵커는 SEP 3~14 **12일뿐이고 SEP 15는 어디에도 없다**.
+     *   9/14가 `Z8 - Zodiac Horse Main Event Final Day`라 시리즈는 그날 끝난다.
+     *   → **엔트리 열거를 채택해 endDate는 09-14 유지.** 헤더 15는 주최사 표기 오차로 본다.
+     */
     id: "zsop-final-horse",
     name: "Zodiac Series of Poker: The Final Horse",
     nameEn: "Zodiac Series of Poker: The Final Horse",
     type: "international",
-    startDate: "2026-09-04",
+    startDate: "2026-09-03",
     endDate: "2026-09-14",
-    location: "대만 타이베이 (CTP Asia Poker Arena)",
+    location: "대만 타이베이 (Asia Poker Arena)",
     city: "Taipei",
     country: "TW",
-    venue: "CTP Asia Poker Arena",
-    buyin: "공식 미기재",
+    venue: "Asia Poker Arena",
+    buyin: "NT$2,000~NT$100,000",
     emoji: "🇹🇼",
     color: "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
-    sourceUrl: "https://ctpclub.app/en/festivals",
+    note: "시리즈 개런티 NT$23,456,789 · 메인이벤트 파이널데이 9/14",
+    sourceUrl: "https://zodiacseriesofpoker.com/series/the-final-horse",
     sourceTier: "A",
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-08-31",
   },
   {
     id: "harbour-poker-cup-2",
