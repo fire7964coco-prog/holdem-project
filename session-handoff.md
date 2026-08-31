@@ -29,16 +29,17 @@
 | 항목 | 실측값 |
 |---|---|
 | 보유 대회 | **12건 · 거의 전부 sourceTier A** (`lib/tournaments.ts`) |
-| 도시 분산 | 🔷 **전부 타이베이 한 곳** → 페이지 1장으로 나라 전체 커버 |
+| ~~도시 분산~~ | 🔴 **«전부 타이베이라 1장이면 끝»은 Step 2에서 폐기됐다** — 台中 720 > 高雄 480 > 台南·桃園 320 > **台北 210**. 아래 «Step 2 판정 ②» 참조. **이 줄을 근거로 쓰지 마라** |
 | 1차 출처 | 🔷 **12건 중 8건이 `ctpclub.app` 단일 URL** (호주 4개 베뉴 대비 조달비 1/4) |
-| 기존 실적 | `zh-hant/tournaments` r24.6에 **CTR 10.6%** — 번역본 132페이지 중 유일 클릭원 |
+| 기존 실적 | `zh-hant/tournaments` **CTR 10%대** — 번역본 132페이지 중 유일 클릭원. 🪶 창이 다르면 값도 다르다(08-28 스냅샷 r24.6·10.6% / 07-31~08-28 재측 **r24.4·10.45%**) — **모순이 아니다** |
 | 목표 쿼리 | 「台灣德州撲克比賽2026」 **r8.2** 기보유 |
 
 **🔴 착수 전 알고 있어야 할 위험 2개**
-1. `ctpclub.app`이 이미 준-애그리게이터 → **인컴번트 가능성.** 단 CTP는 **자기 아레나(Asia Poker Arena)
-   일정만** 안다 — **APT·AJPC(Red Space)가 빠져 있다.** 그 둘을 합치는 게 우리 슬롯이다.
-2. buyin **「공식 미기재」 5건** + zh-hant 허브가 **120건을 필터 없이 전부** 뿌린다
-   (대만 독자에게 오스트리아 CAPT가 나온다).
+1. `ctpclub.app`이 이미 준-애그리게이터 → **인컴번트 가능성.**
+   🪶 **Step 2에서 해소됨** — `ctpclub.app`은 **어느 쿼리 top10에도 없다**(CTP는 FB·IG로만 상위).
+   단 CTP는 자기 아레나(Asia Poker Arena) 일정만 알고 **APT·AJPC(Red Space)가 빠져 있다**는 구조는 유효.
+2. buyin **「공식 미기재」 5건**(미해결) + zh-hant 허브가 **120건을 필터 없이 전부** 뿌린다
+   → **후자는 착수 카드 #1로 승격했다**(아래).
 
 **🔴 5단계 워크플로우 — 중단 게이트 2개**
 
@@ -61,15 +62,36 @@
 > 🪶 그리고 **이미 CTR 관측이 걸린 다른 페이지**(`/ranking`·`/calculator` SPR)의 메타 동결은 별건이며
 > 여전히 유효하다 — 이번 해제는 **대만 신규 글에 대한 «대기 금지»**이지 전면 해제가 아니다.
 
-#### ▶ 🔴 대만 트랙 잔여 (1시장차 발행 후 미착수)
+#### ▶▶ 🔴🔴 **다음 세션 착수 카드 — 여기부터 읽어라**
 
-| # | 무엇 | 왜 지금 안 했나 · 언제 |
+> **먼저 5분**: ① `git status`(§세션 시작) ② `docs/country-tournament-playbook.md` 통독
+> ③ 포스트를 손대면 `.cursor/rules/posting.mdc` 필독(CLAUDE.md OVERRIDE)
+> ④ 손댈 글은 **WORKLOG를 slug로 grep**(상단만 보지 마라)
+>
+> **이번 트랙의 상태 한 줄**: 대만 1시장차 **발행·검수·배포까지 끝났다**(`taiwan-poker-clubs-guide`).
+> 시한 2건도 닫혔다. **막힌 것 없음 — 아래 5건 중 골라 착수하면 된다.**
+
+| # | 무엇 | 착수 난이도 · 첫 명령 |
 |---|---|---|
-| 1 | 🔴 **`/zh-hant/tournaments` 허브가 120건을 필터 없이 뿌린다** — 대만 독자에게 오스트리아 CAPT가 나온다 | Step 3에서 「동반 처리」라 적었으나 **블로그 글 경로를 택하면서 손대지 않았다.** 허브는 7로케일 공용이라 별건 회차가 맞다 |
-| 2 | 스파인에 없는 **대만 시리즈 4종** 편입 — `wpg.poker`(WPG Taiwan 2026) · `acepokerleague.com` · `playersseries.com` PSC3 · **WPT Prime Taiwan Championship** | `ctpclub.app/en/festivals` 외부링크에서 발견. 1차 출처 검증 후 `lib/tournaments.ts`에 |
-| 3 | `zh-hant-tag-volumes.md` **「볼륨 0 태그 317종」 재측정** | 「측정 불가」 오진의 부수 결과. DFS `search_volume`(`language_code` 생략)으로 다시 재라 |
-| 4 | **도시별 개별 글 분리 여부** (台中 720 · 高雄 480) | 🔴 **8주 관측 후 판정.** 지금 쪼개면 얇은 글이 되고 통합형이 이긴다는 실측(taiwanrounders #3)에 어긋난다 |
-| 5 | **GSC 색인 생성 요청** (URL 검사 → 색인 요청) | 🔴 **사장님만 할 수 있다**(GSC 콘솔 수동). 안 하면 8주 관측이 늦게 시작된다 |
+| **1** | 🔴 **`/zh-hant/tournaments` 허브가 120건을 필터 없이 뿌린다** — 대만 독자에게 오스트리아 CAPT가 나온다. **7로케일 공용**이라 국가 필터를 넣으면 전 로케일이 같이 좋아진다 | **중**(코드). Step 3에 「동반 처리」라 적어 놓고 블로그 글 경로를 택하며 **안 한 것**이다. 시작 = `components/tournament-board.tsx`(다국어)·`app/tournaments/tournaments-client.tsx`(KO) — 전자엔 이미 status 필터가 있다 |
+| **2** | **스파인에 없는 대만 시리즈 4종 편입** — `wpg.poker`(WPG Taiwan 2026) · `acepokerleague.com`(series 27·16) · `playersseries.com` PSC3 · **WPT Prime Taiwan Championship** | **하**. `ctpclub.app/en/festivals` 외부링크에서 발견. 1차 출처 Playwright 확인 → `lib/tournaments.ts` + `docs/tournament-spine.md` |
+| **3** | **`zh-hant-tag-volumes.md` 「볼륨 0 태그 317종」 재측정** | **하**(기계적). 「측정 불가」 오진의 부수분. 방법은 `docs/keyword-bank/zh-hant-tournament.md` §0에 그대로 있다 |
+| **4** | **도시별 개별 글 분리 여부** (台中 720 · 高雄 480 · 台南/桃園 320) | **중**. 🔴 **8주 대기는 사장님이 해제했다** — 기다리지 마라. 단 판단 근거는 유지: 통합형(taiwanrounders **#3**)이 분할형(holdemtw #6~9)을 이긴다는 실측이 있으니, **쪼개려면 그 실측을 뒤집을 근거를 먼저 대라** |
+| **5** | ⚠ **GSC 색인 생성 요청** | 🔴 **사장님만 가능**(콘솔 수동: URL 검사 → 색인 생성 요청). 안 하면 관측 시작이 늦다. 요청드릴 것 |
+
+**🪶 이 트랙 밖 후보** — `id`·`pt` `/tournaments` 허브 부재 판정(§6) · 2시장차 **일본**(JP 5건 · JOPT 4건 살아있음)
+
+**⏰ 다가오는 시한** (정본은 `docs/update-calendar.md` — 🔴 **핸드오프 요약을 믿지 말고 캘린더를 직접 열어라**.
+2026-08-31에 내가 요약을 옮겨 적다 「종료 3편」으로 틀렸다)
+
+| 날짜 | 무엇 |
+|---|---|
+| **9/초** | JOPT 삿포로 #02 **바이인 공개 확인**(후쿠오카 종료 후 나올 가능성) |
+| 9/5경 | `/hand-chart` 색인 해제 효과 재측정 |
+| 9/10경 | 족보 필라 앵커 정비 효과 확인 |
+| 9/12 | **de 43편 색인 재조회**(기준선 08-15에서 4주) |
+| 9/16경 | 레이아웃 참여율 판정(배포 8/19 + 28일) |
+| 🪶 선택 | 9/5 이후 marathon 표의 「마감까지」 → 「마감됨」. **안 바꿔도 거짓이 아니다**(시제 중립화 완료) |
 
 > ⛔ **Step 1·2가 중단 게이트다.** 파싱이 불안정하거나 갱신 주기를 못 정하면(§3-1),
 > 또는 인컴번트가 **#1로 굳어 있으면**(§5-5) **대만을 접고 일본(JP 5건)으로 넘어간다.**
@@ -161,7 +183,7 @@ xinfeng · taichung · shizheng · yunlin · chiayi · tainan · kaohsiung · yi
 `wpg.poker/event/wpg-taiwan-2026` · `acepokerleague.com`(series 27·16) ·
 `playersseries.com` PSC3 · `worldpokertour.com` **WPT Prime Taiwan Championship** — 검증·편입 후보(미착수).
 
-#### ▶ Step 4 결과 — 신규 발행 `taiwan-poker-clubs-guide` (2026-08-31 · 🔴 푸시 전)
+#### ▶ Step 4 결과 — 신규 발행 `taiwan-poker-clubs-guide` (2026-08-31 · ✅ 배포·라이브 검증 완료)
 
 **zh-hant 전용 글**(EN 마스터 없음). 경위 = WORKLOG 「2026-08-31 (3)」.
 
@@ -172,12 +194,14 @@ xinfeng · taichung · shizheng · yunlin · chiayi · tainan · kaohsiung · yi
 - 이미지 2장 신규(HTML+Playwright 렌더 · 1200×675 q82 · 40.2KB / 38.7KB · 번체 철자 육안검수 통과)
 - 역링크 2곳 · 합법성 서술 **0**
 
-**게이트**: `audit:hard --locale=zh-hant` **44/44 🔴 0건**(신규 0err 0warn) · `check:images` 🔴 0 ·
-`check:image-reuse` 🔴 0 · `build` 성공(intl **472**) · 디렉티브 누수 0 · FAQ Question **7개**
-⚠ **커버리지 정직 보고**: CLUSTERS 미등재라 **형제 대조 미시행**(고유 글이라 형제 없음) ·
-핸드 예시 0개라 **§13 대상 아님** · 🔴 **적대검수 4렌즈 미실행 = 「쓴 모델이 본 0건」이라 0건이 아니다**
-([[translation-model-roles-workflow]]). **푸시 전에 이것부터.**
+**게이트(최종)**: `audit:hard --locale=zh-hant` **44/44 🔴 0건** · `check:images` 🔴 0 ·
+`check:image-reuse` 🔴 0 · `build` 성공(intl **472**) · 디렉티브 누수 0 · FAQ Question **8개** ·
+**라이브 검증**(Playwright) = hreflang `zh-Hant`+`x-default` · 이미지 6/6 로드 · 정정항목 잔존 0
+⚠ **커버리지 정직 보고**: CLUSTERS 미등재라 **형제 대조는 끝까지 미시행**(로케일 고유 글이라 형제가 없다 —
+넣고 싶으면 `scripts/audit-hardening.mjs`의 CLUSTERS에 추가) · 핸드 예시 0개라 **§13 대상 아님**
 🪶 기본 모드(`--slug`만)의 F0 「슬러그 없음」은 **KO 코퍼스만 보는 탓의 오탐** — `--locale=zh-hant` 필수.
+🔴 **`check:images`는 «참조는 있는데 파일이 없는» 유형을 원리상 못 잡는다**(디스크만 본다) —
+실제로 readnext가 없는 이미지를 가리키고 있었고 **SEO 렌즈가 잡았다**. 게이트 0건 ≠ 결함 0건.
 
 #### ▶ 적대검수 4렌즈 결과 (2026-08-31 · `9800a1e0`) — **자체 게이트 0건에서 중대 지적이 나왔다**
 
@@ -204,16 +228,11 @@ xinfeng · taichung · shizheng · yunlin · chiayi · tainan · kaohsiung · yi
 🪶 **오탐 1건 판정**: `ATLANTIS POKER` 영문 상호는 에이전트에 넘긴 데이터 블록엔 없었지만
 **실제 SERP에 그들 IG 계정 표기로 존재** → 유지. 렌즈 출력도 원문으로 확인하라는 규율 그대로.
 
-**🔴 다음 세션이 바로 할 일**
-1. ~~적대검수 4렌즈~~ ✅ 완료(`9800a1e0`)
-2. 🔴 **`ept-barcelona-2026-guide` 결과 아카이브 전환 — 8/29 종료로 이미 2일 경과(8로케일)**
-   🪶 **정정**: 이 자리에 처음 「종료 3편(apt-incheon·ept-barcelona·wsop-2026)」이라 적었으나
-   `docs/update-calendar.md` 실측 결과 **apt-incheon은 8/17 `82e18b0f`로, wsop-2026은 8/6에 이미 완료**다.
-   **미처리는 ept-barcelona 하나뿐이다.** 전환 시 EN·pt의 「★진행 중」 배너를 결과 노트로 교체 +
-   es·de·ja·zh·zh-hant·id에 Gold Pass 4요소 정정 소급(캘린더 8/29 절 참조)
-3. ⏰ **9/4(금) 23:59 — JTBC 마감으로 `korea-poker-marathon-2026` desc가 죽는다**(8로케일). 4일 남음
-4. `id`·`pt` `/tournaments` 허브 부재 판정(§6 미해결)
-5. 8주 관측 — `node scripts/gsc-page.mjs zh-hant/blog/taiwan-poker-clubs-guide --days 28`
+**✅ 이 트랙에서 끝난 것** — ①적대검수 4렌즈 → 2차 교열(`9800a1e0`) ②시한 2건 종결(`e85cd47c`):
+`ept-barcelona` 결과 아카이브 전환(8로케일) · `korea-poker-marathon` **9/4 마감 절벽 제거**(8로케일 29곳
+시제 중립화 → **9/5에 거짓이 되는 문장 0**). 캘린더 두 항목 다 ✅로 닫았다.
+🪶 **정정 기록**: 여기 처음 「종료 3편」이라 적었으나 실측 결과 `apt-incheon`(8/17 `82e18b0f`)·
+`wsop-2026`(8/6)은 **이미 완료**였다. 미처리는 `ept-barcelona` 하나뿐이었고 그것도 끝났다.
 
 **🪶 Step 0 기준선 (2026-08-31 실측 · 8주 뒤 이 값과 비교하라)**
 `/zh-hant/tournaments` 28일(07-31~08-28) = **노출 67 · 클릭 7 · CTR 10.45% · r24.4** · 익명화 61%
