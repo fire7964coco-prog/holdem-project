@@ -26,24 +26,43 @@
 
 ---
 
-## 🔷 1. 최대 발견 — `德州撲克規則` **4,400** (무주공산)
+## 🔷 1. `德州撲克規則` **4,400** — ✅ **주인 판정·보강 완료 (2026-09-01)**
 
-08-27에 다른 언어들은 이 계급의 발견을 **필라 제목에 즉시 편입**했다:
-de `poker regeln` **90,500** · ja `ポーカー ルール` **60,500** · pt `poker regras` **12,100** ·
-es `como jugar poker` **6,600**. **zh-hant만 「측정 불가」라 이 기회를 놓쳤다.**
+> 🔴 **2026-09-01 정정: 「zh-hant만 놓쳤다」·「재조준 필요」는 절반이 오진이었다.**
+> **주인 글은 이미 있다** — `texas-holdem-rules-for-beginners`가 **발행 시점(07-22 `d5eb7bf3`)부터**
+> `title`·`seoTitle`에 완전형을 보유한다(「德州撲克規則怎麼玩？…」). 아래 «10편» 목록은 이 필라를
+> 빼고 센 것이었다. **제목에 새로 편입할 게 없다 — §17 훅도 이미 충족.**
 
-**의도 확인 완료**(자동완성 `hl=zh-TW&gl=TW`) — **순수 포커 의도다**:
-`德州撲克規則大小` · `德州撲克規則大小盲` · `德州撲克規則教學` · `德州撲克規則 英文` ·
-`德州撲克規則 發牌` · `德州撲克規則 人數` · `德州撲克規則 花色`
-→ 파생어 상당수가 **우리가 이미 다루는 주제**다(대소 비교·대소블라인드·발제·인원·무늬).
+**확정 판정 (재론 금지)**
+- **주인 = `texas-holdem-rules-for-beginners`.** 나머지 형제 글 **전부**(본문에서 어구를 쓰는 10편:
+  `all-in-rules`·`betting-actions`·`blind-meaning`·`game-order`·`glossary`·`hand-rankings`·
+  `position-play`·`positions`·`probability`·`showdown-rules` + readnext/카드로만 참조하는
+  `tournament`·`starting-hands-chart`·`taiwan-poker-clubs-guide`)은 **본문 앵커로만** 이 축을
+  만진다 — **title·seoTitle 편입 금지**(카니발).
+- 앵커 상태 실측(2026-09-01 · 세는 법 명시): 필라로 링크하는 형제 = **13편**
+  (**인라인 산문 링크 9** · 카드/readnext만 4). 이번 신설 = **`hand-rankings` 인라인**
+  (신설 전에는 이 글만 필라 링크 0이었다). 완전형 「德州撲克規則」 앵커는 인라인 9 중 8
+  (예외 `all-in-rules`만 「新手規則教學」 계열).
 
-🔴 **본문에서 이 어구를 쓰는 zh-hant 글이 10편인데 `title`·`seoTitle` 어디에도 완전형이 없다.**
-(`holdem-all-in-rules` · `betting-actions` · `blind-meaning` · `game-order` · `glossary` ·
-`hand-rankings` · `position-play` · `positions` · `probability` · `showdown-rules`)
+**진짜 병목 = 색인이다.** 2026-09-01 실측: 필라가 **`Discovered - currently not indexed` ·
+크롤 기록 없음 · GSC 28일 노출 0.** 색인 요청은 사장님이 «프로젝트 완료 후 일괄»로 보류 —
+관측만 한다(`node scripts/gsc-index-audit.mjs --prefix /zh-hant/blog/texas-holdem-rules-for-beginners`).
 
-⚠️ **착수 전 조건 둘** — ① 이 축의 **주인 글을 먼저 정한다**(10편이 나눠 가지면 카니발이다
-[[seo-tool-vs-blog-cannibalization]]) ② §17 「CTR 좋은 호기심형 제목을 정보형으로 단독 교체 금지」 —
-**훅은 살리고 키워드만 보강**한다.
+**SERP 실측 (2026-09-01 · DFS mobile · location 2158 · zh-TW)** — «텅 빈 무주공산»은 아니다:
+#1 pokerfans.jp(일본 사이트 번체판) · #2 taiwanrounders · #4 위키백과 · #8·#18 monsterstack(2석) ·
+#14 mrpoker.tw · top20에 간체 사이트 2(163.com·zhihu). **대형 포커 미디어 부재 = 이길 수 있는 구도.**
+
+**파생 볼륨 실측 (2026-09-01 · DFS `search_volume` live · location 2158 · 🔴 `language_code` 생략 — §0 규율)**:
+`德州撲克規則大小` **1,000** · `德州撲克玩法` 880 · `德州撲克怎麼玩` 720 · `德州撲克教學` 480 ·
+`德州撲克 位置` 480 · `德州撲克發牌順序` 90 · `德州撲克籌碼分配` 70 · `德州撲克規則大小盲` 40 ·
+`德州撲克規則教學`·`德州撲克新手教學`·`德州撲克 燒牌` 각 20 · `德州撲克 買入` 10.
+공백 파생 4종(`德州撲克規則 英文`·`德州撲克規則 發牌`·`德州撲克規則 人數`·`德州撲克規則 花色`)은
+null(자동완성엔 전부 생존 — FAQ 흡수 대상). 자동완성 추가 발견: `德州撲克規則 平手` ·
+`德州撲克 raise 規則` · `德州撲克 荷官 規則` · `德州撲克規則 觀念`.
+
+**2026-09-01 보강 내역**(경쟁 3사 정독 — taiwanrounders·monsterstack·mrpoker — 대비 구멍 4개):
+필라에 FAQ 4문 신설(**花色 서열 없음** · **平手 판정** · **加注 최소 증분** · **英文 대조+PDF**) +
+본문에 `規則大小`(1,000) 완전형 1회 편입 + `hand-rankings` 역링크.
 
 ---
 
