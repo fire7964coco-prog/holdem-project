@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "トーナメントは決まったバイインを払ってチップを受け取り、時間ごとにブラインドが上がって最後の1人が全チップを持つまで続く形式です。入賞するのは通常上位10〜15%。フリーズアウト・PKO・サテライト・ディープスタックなどの種類があり、直接バイイン・サテライト・オンライン事前登録で参加できます。",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-08-26",
+  updated: "2026-09-02",
   masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "14分",
@@ -42,6 +42,8 @@ export const POST: Post = {
 20〜40分 | ライブでのブラインドレベル1つあたりの時間
 $100+$9 | 典型的なバイインの内訳 — プライズプール + 手数料
 :::
+
+日本国内で実際にどの大会に出られるかは、[国内ポーカー大会の参加方法と費用](/ja/blog/japan-poker-tournaments-guide "thumb:/images/japan-poker-tournaments-guide-hero.webp")にJOPT・AJPC・NIPPON SERIESの3ツアー分をまとめています。
 
 ## ポーカートーナメントとは?(30秒で理解)
 

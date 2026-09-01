@@ -106,7 +106,13 @@
 
 ## 내부링크 (하드 규칙)
 - 전부 `/ja/blog/슬러그` 형식.
-- **ja 화이트리스트(존재하는 글만 링크, Wave 5 반영 41개 + wsop·jopt오사카 = **43개**)**: texas-holdem-rules-for-beginners · holdem-game-order · holdem-betting-actions · holdem-blind-meaning · holdem-all-in-rules · holdem-showdown-rules · holdem-hand-rankings · holdem-tournament-vs-cash-game · holdem-flush-vs-straight · holdem-kicker · holdem-tiebreak-rules · holdem-split-pot-rules · holdem-reading-the-board · holdem-probability · holdem-pot-odds · holdem-outs · holdem-drawing-odds · holdem-implied-odds · holdem-equity · holdem-strategy · holdem-positions · holdem-position-play · holdem-starting-hands-chart · holdem-limping · holdem-3bet · holdem-continuation-bet · holdem-when-to-fold · holdem-tournament · holdem-icm · holdem-bubble · holdem-short-stack · apt-incheon-2026-guide · korea-poker-marathon-2026 · wpt-australia-2026-guide · ept-barcelona-2026-guide · **wsop-2026-tournament-guide**(2026-07-29 신설) · **jopt-osaka-2026-guide**(2026-07-30 신설) · **holdem-glossary · holdem-straddle · holdem-rake · holdem-fish · holdem-cooler · holdem-bad-beat**.
+> 🔴 **2026-09-01 정정 — 아래 목록의 `jopt-osaka-2026-guide`는 «존재하지 않는 글»이다.**
+> 2026-07-30에 발행됐다가 **같은 날 밤 `9222ca0`으로 발행 취소**됐고(적대검수 2회 NO · 사실오류 6건),
+> `lib/posts-ja/jopt-osaka-2026-guide.ts`는 **파일 자체가 없다.** 여기 링크하면 404가 된다.
+> ✅ **대신 2026-09-01에 `japan-poker-tournaments-guide`(국내 3투어 허브 · ja 고유 글)를 신설**했다.
+> → 현재 화이트리스트는 **43개**(취소분 −1 · 신설분 +1).
+
+- **ja 화이트리스트(존재하는 글만 링크, Wave 5 반영 41개 + wsop·~~jopt오사카~~·**japan-poker-tournaments-guide** = **43개**)**: texas-holdem-rules-for-beginners · holdem-game-order · holdem-betting-actions · holdem-blind-meaning · holdem-all-in-rules · holdem-showdown-rules · holdem-hand-rankings · holdem-tournament-vs-cash-game · holdem-flush-vs-straight · holdem-kicker · holdem-tiebreak-rules · holdem-split-pot-rules · holdem-reading-the-board · holdem-probability · holdem-pot-odds · holdem-outs · holdem-drawing-odds · holdem-implied-odds · holdem-equity · holdem-strategy · holdem-positions · holdem-position-play · holdem-starting-hands-chart · holdem-limping · holdem-3bet · holdem-continuation-bet · holdem-when-to-fold · holdem-tournament · holdem-icm · holdem-bubble · holdem-short-stack · apt-incheon-2026-guide · korea-poker-marathon-2026 · wpt-australia-2026-guide · ept-barcelona-2026-guide · **wsop-2026-tournament-guide**(2026-07-29 신설) · 🔴 ~~jopt-osaka-2026-guide~~(**취소됨 — 링크 금지**) · **japan-poker-tournaments-guide**(2026-09-01 신설) · **holdem-glossary · holdem-straddle · holdem-rake · holdem-fish · holdem-cooler · holdem-bad-beat**.
 - ★Glossary 완료 시 **화이트리스트 = EN 41편 전량** → 이 웨이브에선 신규 6편만 정상 링크. **이전 웨이브에서 스트립했던 링크들은 별도 "최종 링크복원 패스"에서 일괄 복원**(전 필라 존재).
 
 

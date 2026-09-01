@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.hdr { position:absolute; top:40px; left:0; width:100%; text-align:center; }
+.hdr h1 { color:#F2EEE3; font-size:36px; font-weight:800; text-shadow:0 2px 12px rgba(0,0,0,.45); }
+.hdr h1 .gold { color:#C9A227; }
+.hdr .sub { color:#C9A227; font-size:14px; font-weight:700; margin-top:10px; letter-spacing:.04em; }
+
+.routes { position:absolute; top:158px; left:70px; width:1060px; display:flex; gap:20px; }
+.rt { flex:1; border-radius:18px; padding:24px 20px; background:rgba(8,20,15,.72); border:1px solid rgba(201,162,39,.26); text-align:center; }
+.rt .no { color:#C9A227; font-size:13px; font-weight:900; letter-spacing:.14em; }
+.rt .ic { font-size:38px; margin-top:14px; line-height:1; }
+.rt .nm { color:#F2EEE3; font-size:19px; font-weight:900; margin-top:14px; }
+.rt .ds { color:#F2EEE3; opacity:.66; font-size:13.5px; font-weight:700; margin-top:12px; line-height:1.65; }
+.rt .tag { display:inline-block; margin-top:16px; padding:6px 14px; border-radius:999px; font-size:12.5px; font-weight:900; }
+.rt .tag.g { background:rgba(57,255,106,.14); color:#39FF6A; }
+.rt .tag.y { background:rgba(201,162,39,.16); color:#C9A227; }
+
+.dest {
+  position:absolute; top:452px; left:70px; width:1060px; border-radius:16px; padding:18px 24px;
+  background:rgba(201,162,39,.10); border:1px solid rgba(201,162,39,.36);
+  display:flex; align-items:center; justify-content:center; gap:18px;
+}
+.dest .ar { color:#C9A227; font-size:26px; font-weight:900; }
+.dest .tx { color:#F2EEE3; font-size:20px; font-weight:900; }
+
+.note {
+  position:absolute; bottom:62px; left:70px; width:1060px; border-radius:14px; padding:14px 24px;
+  background:rgba(255,255,255,.05); text-align:center;
+}
+.note .v { color:#F2EEE3; font-size:14.5px; font-weight:700; }
+.note .v b { color:#C9A227; font-weight:900; }
+
+.wordmark { position:absolute; right:44px; bottom:24px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.03em; opacity:.9; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="hdr">
+    <h1>JOPTメインイベントに出る <span class="gold">3つの道</span></h1>
+    <div class="sub">どれか一つでよい &#183; 組み合わせる必要はない</div>
+  </div>
+
+  <div class="routes">
+    <div class="rt">
+      <div class="no">R O U T E &#160;1</div>
+      <div class="ic">&#127915;</div>
+      <div class="nm">サテライトのチケット</div>
+      <div class="ds">全国のポーカールームで<br>開催される予選で獲得</div>
+      <div class="tag g">一番安く済む</div>
+    </div>
+    <div class="rt">
+      <div class="no">R O U T E &#160;2</div>
+      <div class="ic">&#128181;</div>
+      <div class="nm">ダイレクトバイイン</div>
+      <div class="ds">当日その場で<br>参加費を払って着席</div>
+      <div class="tag y">一番はやい</div>
+    </div>
+    <div class="rt">
+      <div class="no">R O U T E &#160;3</div>
+      <div class="ic">&#128241;</div>
+      <div class="nm">オンライン Day 1</div>
+      <div class="ds">アプリ「ポーカーチェイス」で<br>Day 1をプレー</div>
+      <div class="tag y">移動しなくてよい</div>
+    </div>
+  </div>
+
+  <div class="dest">
+    <div class="ar">&#8595;</div>
+    <div class="tx">メインイベント Day 1 へ</div>
+    <div class="ar">&#8595;</div>
+  </div>
+
+  <div class="note">
+    <div class="v">サイドイベントは<b>事前登録が不要</b> &#183; 会場で施設利用料とドリンクチケット代を払えばその場で参加できる</div>
+  </div>
+
+  <div class="wordmark">&#9824; holdemmaster.com</div>
+</div>
+</body>
+</html>

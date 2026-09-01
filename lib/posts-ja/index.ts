@@ -42,6 +42,7 @@ import { POST as holdemRake } from "./holdem-rake";
 import { POST as holdemFish } from "./holdem-fish";
 import { POST as holdemCooler } from "./holdem-cooler";
 import { POST as holdemBadBeat } from "./holdem-bad-beat";
+import { POST as japanPokerTournamentsGuide } from "./japan-poker-tournaments-guide";
 
 /**
  * 일본어(ja) 블로그 포스트.
@@ -88,6 +89,8 @@ export const JA_POSTS: Post[] = [
   holdemBubble,
   holdemShortStack,
   // Live Events
+  // ★ ja 固有記事（EN マスターなし）— 国内3ツアーのハブ。2026-09-01 신설
+  japanPokerTournamentsGuide,
   wptAustralia2026Guide,
   aptIncheon2026Guide,
   eptBarcelona2026Guide,

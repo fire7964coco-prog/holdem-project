@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.hdr { position:absolute; top:44px; left:0; width:100%; text-align:center; }
+.hdr h1 { color:#F2EEE3; font-size:38px; font-weight:800; text-shadow:0 2px 12px rgba(0,0,0,.45); }
+.hdr h1 .gold { color:#C9A227; }
+.hdr .sub { color:#C9A227; font-size:15px; font-weight:700; margin-top:12px; letter-spacing:.04em; }
+
+.cards { position:absolute; top:172px; left:70px; width:1060px; display:flex; gap:22px; }
+.c { flex:1; border-radius:18px; padding:26px 22px 24px; background:rgba(8,20,15,.72); border:1px solid rgba(201,162,39,.28); }
+.c.free { border-color:rgba(57,255,106,.5); }
+.c .nm { color:#C9A227; font-size:21px; font-weight:900; letter-spacing:.02em; }
+.c.free .nm { color:#39FF6A; }
+.c .rows { margin-top:20px; }
+.c .r { display:flex; justify-content:space-between; align-items:baseline; padding:9px 0; border-top:1px solid rgba(242,238,227,.09); }
+.c .r:first-child { border-top:0; }
+.c .r .k { color:#F2EEE3; opacity:.6; font-size:13px; font-weight:700; }
+.c .r .v { color:#F2EEE3; font-size:15px; font-weight:800; text-align:right; }
+.c .big { margin-top:18px; text-align:center; }
+.c .big .n { color:#F2EEE3; font-size:30px; font-weight:900; line-height:1.15; }
+.c.free .big .n { color:#39FF6A; }
+.c .big .u { color:#F2EEE3; opacity:.55; font-size:12px; font-weight:700; margin-top:7px; }
+
+.foot {
+  position:absolute; bottom:66px; left:70px; width:1060px; border-radius:14px; padding:16px 24px;
+  background:rgba(255,255,255,.05); text-align:center;
+}
+.foot .t { color:#F2EEE3; font-size:16px; font-weight:700; }
+.foot .t b { color:#C9A227; font-weight:900; }
+
+.wordmark { position:absolute; right:44px; bottom:24px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.03em; opacity:.9; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="hdr">
+    <h1>国内ポーカー大会は <span class="gold">3つのツアー</span>で見る</h1>
+    <div class="sub">入口の作りがそれぞれ違う</div>
+  </div>
+
+  <div class="cards">
+    <div class="c">
+      <div class="nm">JOPT</div>
+      <div class="rows">
+        <div class="r"><span class="k">開催</span><span class="v">年8〜9レグ</span></div>
+        <div class="r"><span class="k">都市</span><span class="v">東京・大阪<br>札幌・福岡</span></div>
+        <div class="r"><span class="k">入口</span><span class="v">チケット＋現金</span></div>
+      </div>
+      <div class="big">
+        <div class="n">&#165;3,000〜<br>&#165;200,000</div>
+        <div class="u">2026 札幌 #02 のサイド</div>
+      </div>
+    </div>
+
+    <div class="c free">
+      <div class="nm">AJPC</div>
+      <div class="rows">
+        <div class="r"><span class="k">開催</span><span class="v">年1回・3日間</span></div>
+        <div class="r"><span class="k">都市</span><span class="v">東京<br>EBiS303</span></div>
+        <div class="r"><span class="k">入口</span><span class="v">オンライン予選</span></div>
+      </div>
+      <div class="big">
+        <div class="n">0円</div>
+        <div class="u">予選から決勝まで</div>
+      </div>
+    </div>
+
+    <div class="c">
+      <div class="nm">NIPPON SERIES</div>
+      <div class="rows">
+        <div class="r"><span class="k">開催</span><span class="v">年6〜7大会</span></div>
+        <div class="r"><span class="k">都市</span><span class="v">全国の<br>地方都市</span></div>
+        <div class="r"><span class="k">入口</span><span class="v">直接エントリー</span></div>
+      </div>
+      <div class="big">
+        <div class="n">&#165;5,000〜<br>&#165;20,000</div>
+        <div class="u">GO NAGASAKI 19イベント</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="t">住んでいる場所と、<b>現金を出すかチケットを取りに行くか</b>で選ぶ大会が決まる</div>
+  </div>
+
+  <div class="wordmark">&#9824; holdemmaster.com</div>
+</div>
+</body>
+</html>
