@@ -142,11 +142,17 @@ export default function Page({ params }: { params: { slug: string } }) {
   // 본문에서 Q/A 추출 (FAQ schema 자동 생성)
   const oldFaq = [...post.content.matchAll(/\*\*Q\.\s*([^*\n]+)\*\*\n\n?A\.\s*([^\n]+)/g)];
   const newFaq = [...post.content.matchAll(/^### Q\d+\.\s*(.+)\n\n([^\n]+)/gm)];
+  // ★ 2026-09-02 — 색상 하이라이트 접두(`==r:` `==g:` `==b:`)까지 벗긴다.
+  //   예전 `==(.+?)==`는 접두를 안 벗겨 **FAQPage JSON-LD 답변에 `g:`·`r:`가 그대로** 남았다
+  //   (KO 실측 6건 = holdem-masters-7th-guide 2 · pokerstars-appt-satellite-guide 3 · wsop-2026 1).
+  //   🔴 이 함수는 **JSON-LD 생성에만** 쓰인다 — 화면의 색상 하이라이트는 그대로다.
+  //   다국어 쪽 같은 결함(108편·25로케일)은 `lib/intl-blog-page.tsx`에서 동시에 고쳤다.
+  //   근거·판별법 = `docs/settled-decisions.md` §3.
   const stripMd = (s: string) =>
     s
       .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
       .replace(/\*\*(.+?)\*\*/g, "$1")
-      .replace(/==(.+?)==/g, "$1");
+      .replace(/==(?:[rgb]:)?(.+?)==/g, "$1");
   const faqItems = [...oldFaq, ...newFaq].map((m) => ({
     "@type": "Question",
     name: stripMd(m[1].trim()),

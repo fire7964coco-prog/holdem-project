@@ -139,8 +139,17 @@ export function IntlBlogArticle({ locale, slug }: { locale: SecondaryLocale; slu
   };
 
   const oldFaq = [...post.content.matchAll(/\*\*Q\.\s*([^*\n]+)\*\*\n\n?A\.\s*([^\n]+)/g)];
+  // ★ 2026-09-02 — 색상 하이라이트 접두(`==r:` `==g:` `==b:`)까지 벗긴다.
+  //   예전 `==(.+?)==`는 접두를 안 벗겨 **FAQPage JSON-LD 답변이 `r:できません。`처럼
+  //   쓰레기 문자로 시작**했다. 전수 스캔 결과 **108편·25로케일**이 이 상태였다
+  //   (최다 `wpt-australia-2026-guide` 8로케일×10건 · ja판은 답변 6개 중 6개 전부).
+  //   🔴 이 함수는 **JSON-LD 생성에만** 쓰인다(아래 faqItems 두 자리뿐) — 화면 렌더와 무관하므로
+  //   본문의 색상 하이라이트는 그대로 살아 있다. 근거·판별법 = `docs/settled-decisions.md` §3.
   const stripMd = (s: string) =>
-    s.replace(/\[([^\]]+)\]\([^)]+\)/g, "$1").replace(/\*\*(.+?)\*\*/g, "$1").replace(/==(.+?)==/g, "$1");
+    s
+      .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+      .replace(/\*\*(.+?)\*\*/g, "$1")
+      .replace(/==(?:[rgb]:)?(.+?)==/g, "$1");
   const faqItems = oldFaq.map((m) => ({
     "@type": "Question",
     name: stripMd(m[1].trim()),
