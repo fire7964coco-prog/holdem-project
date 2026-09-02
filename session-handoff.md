@@ -12,7 +12,7 @@
 
 ## ▶▶▶ 지금 할 일
 
-### 🟢 **[종결] GTO 솔버 13편 → es 전파(2번째 언어) 발행 완료** (2026-09-02 · 커밋 = 아래 «발행 커밋» · 라이브 확인 = 아래)
+### 🟢 **[종결] GTO 솔버 13편 → es 전파(2번째 언어) 발행 완료** (2026-09-02 · 발행 커밋 `ab98de30` · 라이브 확인 완료 13/13 — Playwright · 자기 히어로 1 · ranges 1 · 이미지 HTTP 200 전건 · 디렉티브/색상접두/«»/EN 라벨 누출 0 · hreflang ko/en/ja/es/x-default · `/es/solver` 시리즈 링크 13)
 
 > ✅ 7단계 전부 — 키워드 팩(`docs/keyword-bank/es-gto-series.md`) · es 캡처 26장 · 브리프(`docs/es-gto-series-translation-brief.md`) · Opus 3배치 번역 · 등록(`index.ts` + `/es/solver` SPOT_GROUPS) ·
 > 게이트 🔴 0(check:gto 103 · audit es 60/60 · intl-links 499 · 구조 13/13) · 렌즈 4종(네이티브 ×2 · 딜러/§13 · 교열/구조) → 반영 → **2차 교열 2배치** → 빌드 499 intl(+13) · 배포. 경위 = WORKLOG 「2026-09-02 (7)」.
