@@ -53,7 +53,7 @@ export const POST: Post = {
   tldr: "On Q♠J♦T♠ after a button open and a big blind call, the big blind checks 99.9% — even though 68.4% of its range holds a draw. The cause is nut advantage: straights 10.5% against 7.1%, sets 2.0% against 0.7%, overpairs 2.6% against 0%. Equity realization splits 77.9% against 119.4%, the widest gap of the three dry-to-wet flops so far.",
   category: "strategy",
   date: "2026-08-19",
-  updated: "2026-08-21",
+  updated: "2026-09-02",
   readTime: "10 min",
   emoji: "🎴",
   image: "/images/gto-srp-broadway-oop-en.webp",
@@ -195,7 +195,7 @@ Line the three flops up and the trend is clean.
 | K-8-3 (dry) | 80.7% | 116.7% | 36.0 points |
 | **Q-J-T (connected, two-tone)** | **77.9%** | **119.4%** | **41.5 points** |
 
-Three spots make it look like *busier board, wider gap*. **That rule breaks in the very next spot** — [9♥8♥7♣](/en/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-en.webp") is more connected than Q-J-T and its gap is **13.2 points, the narrowest of the seven single-raised pots**, with the big blind realizing 93.2%, the highest of those seven (across the series the 117.8% of the Q-T-7 three-bet pot is higher). What opens the gap is not busyness but **whose range the top of the board belongs to**: Q-J-T hands AK, QQ, JJ, AA and KK straight to the button, while on 9-8-7 those same cards miss the board. ⚠ Not that they are irrelevant there — 9-8-7 splits overpairs **1.3% against 6.4%**, a wider gap than Q-J-T's 0% against 2.6%. But that overpair edge is a fragile one on a connected board, which is why it does not lock down the top. Why acting last is worth what it is: [playing position](/en/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp").
+Three spots make it look like *busier board, wider gap*. **That rule breaks in the very next spot** — [9♥8♥7♣](/en/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-en.webp") is, like Q-J-T, three cards in a row on a two-tone board, and its gap is **13.2 points, the narrowest of the seven single-raised pots**, with the big blind realizing 93.2%, the highest of those seven (across the series the 117.8% of the Q-T-7 three-bet pot is higher). What opens the gap is not busyness but **whose range the top of the board belongs to**: Q-J-T hands AK, QQ, JJ, AA and KK straight to the button, while on 9-8-7 those same cards miss the board. ⚠ Not that they are irrelevant there — 9-8-7 splits overpairs **1.3% against 6.4%**, a wider gap than Q-J-T's 0% against 2.6%. But that overpair edge is a fragile one on a connected board, which is why it does not lock down the top. Why acting last is worth what it is: [playing position](/en/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp").
 
 ## How should the button bet a dynamic board like this?
 
@@ -233,7 +233,7 @@ A. Three: AK for A-K-Q-J-T, K9 for K-Q-J-T-9, and 98 for Q-J-T-9-8. None of the 
 
 **Q. Isn't a wet board the place to semi-bluff lead?**
 
-A. Only when your draws outnumber theirs. Here open-enders are 28.7% against 27.7% — effectively identical — while completed straights are 7.1% against 10.5% in the button's favor. A lead needs the top of the range on your side, not the average, and this flop is exactly the reverse. There is a board in the study set where the condition genuinely is met — the [middle connected 9-8-7](/en/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-en.webp"), where the big blind leads instead of checking.
+A. No — the count of draws alone does not decide it. Made-hand distribution, nut advantage and blockers have to be weighed together. Here open-enders are 28.7% against 27.7% — effectively identical — while completed straights are 7.1% against 10.5% in the button's favor. A lead needs the top of the range on your side, not the average, and this flop is exactly the reverse. There is a board in the study set where the condition genuinely is met — the [middle connected 9-8-7](/en/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-en.webp"), where the big blind leads instead of checking.
 
 **Q. What is the difference between range advantage and nut advantage?**
 

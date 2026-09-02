@@ -93,7 +93,7 @@ export const POST: Post = {
   tldr: "After a small-blind open and a big-blind call, the K♥T♦6♠ flop gets a bet 67.4% of the time and a check 32.6%. In the seven single-raised pots earlier in this series the out-of-position player bet only 0.1% to 23.7% — and two things changed, not one. Here the out-of-position player is the raiser rather than the caller, and the board favors that range. Together they push the out-of-position equity realization to 103.1%.",
   category: "strategy",
   date: "2026-08-21",
-  updated: "2026-08-21",
+  updated: "2026-09-02",
   readTime: "10 min",
   emoji: "⚔️",
   image: "/images/gto-sb-king-mid-oop-en.webp",
@@ -186,7 +186,7 @@ Blind versus blind, the two collapse into one. The small blind raised, and the s
 
 Equity puts a number on that edge. **SB 55.3% against BB 44.7%.** In ① through ⑦ the out-of-position player sat at 45.1%–48.5%, always short of half — the opposite direction.
 
-:::pull[A check is not something you do because you lack position. It is something you do because your range is weak on this board.]:::
+:::pull[Whether you bet first is decided not by position, but by how strong your range is on this particular board.]:::
 
 Lacking position is the same for the big blind in ①–⑦ and the small blind here. What splits them is **the relationship between range and board** — ⚠ and you cannot reduce that to "range" alone. On [the 7-6-5 board](/en/blog/blind-battle-connected-board) the range is *literally identical* and the check runs to 90.4%.
 
@@ -273,7 +273,7 @@ The big blind's 96.1% is the other face of the same story. **Position, and still
 
 - **Blind versus blind, do not default to "no position, so check."** If you opened from the small blind, the **preflop** range edge is yours, and the solver bets 67.4% on this board. **But you still read the board** — a king with a broadway kicker suits the opener, and on boards that fit the caller the check comes back even from this seat. The [7♦6♦5♣ connected board](/en/blog/blind-battle-connected-board) is exactly that: the same small blind bets only 9.6%.
 - **The size is a third of the pot.** With the big blind defending 525 combos, small and wide is right. ⚠ Do not turn that into "betting big is worse" — **this study spot only had the 33% size in the tree.** With no larger size solved, "what if I had bet big" is a question this calculation cannot answer. [The A-A-6 spot](/en/blog/ace-paired-board-strategy) later in the series does have 75% open alongside it.
-- **★At SPR 16.2, decide in advance what a raise means.** Betting 67.4% of your range means facing raises often, and with **sixteen pots** left behind you this is not a stack-off spot for top pair. That is the reverse of a three-bet pot at SPR 4.0, where "raise" meant "the stack is going in." Here calling and seeing a turn covers far more of your range, and outside nine set combos and **two pair (K-T, K-6, T-6)** there is little reason to commit — 🪶 note that **A-A is *below* two pair here** (an overpair pinned under the king; the class table reads set 1.7% · two pair 2.4% · overpair 1.1%). ⚠ The node after a raise is not in this solve, so this is judgment drawn from the SPR, not a solver number.
+- **★At SPR 16.2, decide in advance what a raise means.** Betting 67.4% of your range means facing raises often, and with **sixteen pots** left behind you this is not a stack-off spot for top pair. That is the reverse of a three-bet pot at SPR 4.0, where "raise" meant "the stack is going in." Here calling and seeing a turn covers far more of your range, and outside nine set combos and **two pair (K-T, K-6, T-6)** there is little reason to commit. 🪶 Note that **A-A is *below* two pair** — not because the king on the board "pins" it, but because an overpair is still one pair in the hand rankings, and one pair loses to two pair. The class table lists the categories in that order, set → two pair → overpair (the 1.7% · 2.4% · 1.1% beside them are range shares, not a strength ranking). ⚠ The node after a raise is not in this solve, so this is judgment drawn from the SPR, not a solver number.
 - **Defending the big blind, remember what three-betting K-K and T-T costs you.** The result is exactly the structure on this board: the big blind's only set is 6-6. The calling range thins out by that much.
 - **Do not read the 32.6% of checks as weakness.** Check-raising hands are mixed in. The general standards in [c-bet strategy](/en/blog/holdem-continuation-bet "thumb:/images/holdem-continuation-bet-hero.webp") are worth double-checking in this seat.
 

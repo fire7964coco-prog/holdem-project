@@ -57,7 +57,7 @@ export const POST: Post = {
   tldr: "On 9♥8♥7♣ after a button open and a big blind call, the big blind checks 76.2% and leads 23.7% — the first spot in this series where the lead is a real strategy rather than a rounding artifact. Range advantage has not flipped: equity is still 48.5% against 51.5%. What changed is the gap and where each side's strong hands sit.",
   category: "strategy",
   date: "2026-08-19",
-  updated: "2026-08-21",
+  updated: "2026-09-02",
   readTime: "9 min",
   emoji: "🎯",
   image: "/images/gto-srp-middle-connected-oop-en.webp",
@@ -216,7 +216,7 @@ Say you hold QQ. Right now you are close to the best hand. Of the 47 unseen card
 - **T, J, 6, 5 — 16 cards.** Any of them **completes a straight** for a single card in your opponent's hand. A jack makes the board J-9-8-7, and **anyone holding a ten already has J-T-9-8-7.**
 - **The remaining hearts that are not already counted — 7 cards.** The flush gets there.
 
-Together that is **23 of 47 cards, about 49%.** Roughly every other turn makes the hand harder to play. If counting those outs from the other side is the part you want to firm up, start with [drawing odds](/en/blog/holdem-drawing-odds).
+Together that is **23 of 47 cards, about 49%** (⚠ for a QQ with no heart in it — hold Q♥ and one of those seven hearts is in your own hand, so it is 22 of 47, about 47%). Roughly every other turn makes the hand harder to play. If counting those outs from the other side is the part you want to firm up, start with [drawing odds](/en/blog/holdem-drawing-odds).
 
 So an overpair here is a hand to **charge the draws with now and shut down when raised** — not one to build a huge pot with. The pot worth avoiding is the one that gets built after a bad turn, not the one you build on the flop.
 

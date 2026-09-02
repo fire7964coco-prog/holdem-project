@@ -89,10 +89,10 @@ export const POST: Post = {
   seoTitle: "Nobody Checks This Flop — What Poker SPR 4 Really Does",
   // 145자 (디코딩 기준 · EN 하드리밋 160)
   desc: "In this 3-bet pot the solver never checks — all 63 combos bet. Not because the range is strong, but because the caller has no pocket aces or kings left.",
-  tldr: "On A♦K♠2♥ in a 3-bet pot the big blind bets 100% of the time. Checking is 0.0% — not one combo out of 63. In the seven earlier spots its default was to check, between 76.2% and 99.9% of the time. What flipped is not the board but the preflop action: the big blind three-bet instead of calling, so it owns the top of this flop while the button four-bet its pocket aces and kings away. And with an SPR of 4.0 there is no later street to defer to.",
+  tldr: "On A♦K♠2♥ in a 3-bet pot the big blind bets 100% of the time. Checking is 0.0% — not one combo out of 63. In the seven earlier spots its default was to check, between 76.2% and 99.9% of the time. What flipped is mainly the preflop action: the big blind three-bet instead of calling, so it owns the top of this flop while the button four-bet its pocket aces and kings away. And with an SPR of 4.0 there is no later street to defer to.",
   category: "strategy",
   date: "2026-08-20",
-  updated: "2026-08-21",
+  updated: "2026-09-02",
   readTime: "12 min",
   emoji: "🔥",
   image: "/images/gto-3bp-ace-king-oop-en.webp",
@@ -111,7 +111,7 @@ In the seven spots before this one, the big blind's answer was almost always to 
 
 Here it does the opposite: **the big blind bets its entire range** — all 63 combos, every single time.
 
-What changed is not the board. It is the preflop action: the big blind **three-bet** instead of calling, so the pot is 22.5bb instead of 5.5bb. That one difference flips the entire flop on its head. Every figure below comes from HoldemMaster's [free GTO solver](/en/solver).
+What changed is mainly the preflop action: the big blind **three-bet** instead of calling, so the pot is 22.5bb instead of 5.5bb. (⚠ The board moved too — spot ① was A♥7♦2♣, this is A♦K♠2♥ — so this is not a controlled comparison with preflop as the only variable.) That difference flips the entire flop on its head. Every figure below comes from HoldemMaster's [free GTO solver](/en/solver).
 
 
 :::stripe
@@ -230,9 +230,9 @@ One caveat worth naming: those 130 combos are what a **theoretically correct def
 
 Facing 7.4bb into 22.5bb, denying a pure bluff any profit takes about ==22.5 ÷ (22.5 + 7.4) = 75.3%== of the range — the **minimum defense frequency**. But the button's hands that actually connected with A-K-2 add up to only ==20.8 + 11.5 + 6.9 + 2.3 = 41.5%==. 🪶 Note that the 2.3% of sets is **22** — it paired the deuce, not the ace or the king. Counting only the hands that paired an ace or a king gives **39.2%**.
 
-⚠ **In this spot, though, the premise behind MDF does not hold.** MDF is the frequency that makes a **pure bluff with zero equity** indifferent — and the big blind's betting range contains **0.0% no-made-hand, not one combo.** Against a bet with no bluffs in it there is nothing to make indifferent, and both theory and practice point toward folding **more**, not less. So do not read the 41.5% as "therefore continue with middle pocket pairs." That the small size prices those 60 combos in is separately true, but the reason for the size is the **shape of the range** from the previous section; this is a side effect.
+⚠ **In this spot, though, the premise behind MDF does not hold.** MDF is the frequency that makes a **pure bluff with zero equity** indifferent — and the big blind's betting range contains **0.0% no-made-hand, not one combo.** Against a bet with no pure bluffs in it there is no bluff to make indifferent, so the lean is toward folding **more**, not less. ⚠ Two qualifications keep that honest: ① "0% no-made-hand" is not "0% bluffs" — a weak underpair in the betting range can be doing the work of a bluff or a protection bet; ② the button's response node is not in this solve, so the actual optimal defense frequency cannot be confirmed here. So do not read the 41.5% as "therefore continue with middle pocket pairs." That the small size prices those 60 combos in is separately true, but the reason for the size is the **shape of the range** from the previous section; this is a side effect.
 
-:::note[⚠ MDF simplifies the bet to a pure bluff. It only means something when the opponent actually has bluffs — where the betting range is a pair or better all the way down, as it is here, it does not apply at all. In practice also weigh how well a hand holds up on later streets.]:::
+:::note[⚠ MDF simplifies the bet to a pure bluff. It only means something when the opponent actually has bluffs — where the betting range is a pair or better all the way down, as it is here, the pure-bluff assumption breaks and the figure is only a rough guide. In practice also weigh how well a hand holds up on later streets.]:::
 
 ## Why is the EQR 109.6% when the big blind is out of position?
 
@@ -254,9 +254,9 @@ The button's 78.7% is not separate evidence of that — it is the same fact seen
 
 - **Stop deciding whether to c-bet a three-bet pot — but only heads-up.** On an ace-high dry board where the three-bettor holds the top, the whole range bets, and the only question is the size. If a cold-caller comes along and three players see the flop, "bet everything" stops being true; drop the underpairs first for every extra player.
 - **Count your SPR before the flop comes.** A bigger pot means fewer bets left, not less money. **SPR 4 is the band where three big bets finish the stack** — there is no fourth. Count the bets you have left, then pick the size.
-- **★Betting the whole range is not the same as stacking off with the whole range.** 38.1% of what bets here is a pocket pair below the king. Even inside that group it splits: QQ beats more than half of the button's calling range and is a hand to check the turn with, while TT and 99 fold to a raise.
+- **★Betting the whole range is not the same as stacking off with the whole range.** 38.1% of what bets here is a pocket pair below the king. Even inside that group it splits: QQ beats more than half of the button's calling range and is a hand to check the turn with, while TT and 99 are the first to go when a raise comes.
 - **★Top pair splits by kicker.** Those 21 combos include **A5s and A4s** — hands three-bet as blockers, with the worst kicker there is. The range that calls off 89bb is narrow — **22 and A-K at its core**, with a strong top pair like A-Q attached depending on the opponent. **A-4 beats none of it.** The sets (AA, KK) beat all of it. **A-K sits in between**: it chops with the button's A-K and loses to 22, so "SPR 4, so it all goes in" holds unconditionally only for **AA and KK** — whether A-K belongs there depends on how wide the opponent calls.
-- **★If the flop gets raised, the hand is over right there.** At SPR 4 a raise commits the rest of the stack. It is not a call-and-see-the-turn spot: decide to jam or fold right there — sets go in, low underpairs and weak-kicker top pairs go out. Two pair (A-K) depends on how wide the raise is: against a raising range of sets and A-K it is never ahead.
+- **★If the flop gets raised, the hand is over right there.** At SPR 4 a raise commits the rest of the stack. It is not a call-and-see-the-turn spot: decide to jam or fold right there — sets go in, low underpairs and weak-kicker top pairs lean toward folding. ⚠ That is a policy drawn from the SPR and the hand classes, not a solver output: this example has no node for facing a raise, so the exact jam/call/fold boundaries cannot be confirmed. Two pair (A-K) depends on how wide the raise is: against a raising range of sets and A-K it is never ahead.
 - **Do not carry "check 0%" to every three-bet pot.** What changes it is the board more than the range: the same three-bet range on [8-5-2](/en/blog/3bet-pot-low-board) checks 2.0%, and on a board that runs against the three-bettor a check appears for real. **"An ace and a king together" is the condition behind this zero.** How to build the three-bet range in the first place is in [3-bet strategy](/en/blog/holdem-3bet).
 
 :::readnext[Keep reading]

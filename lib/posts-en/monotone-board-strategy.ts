@@ -51,10 +51,10 @@ export const POST: Post = {
   seoTitle: "The Nut Flush Checks 70% of the Time — Monotone Flop",
   // 154자 (디코딩 기준 · EN 하드리밋 160)
   desc: "On a monotone flop the big bet nearly disappears — 3.2%. Even the nut flush checks 69.9% on average. Here is why size collapses when three suits match.",
-  tldr: "On Q♠9♠2♠, where all three flop cards share a suit, the big blind checks 88.8%, bets small 8.0% and bets big just 3.2%. The large size almost vanishes because the nuts are fixed: a made flush gets called by small bets anyway, and anything without a flush only gets called by flushes. Even the nut flush checks 69.9% on average — and non-nut flushes check more, at 81.4%.",
+  tldr: "On Q♠9♠2♠, where all three flop cards share a suit, the big blind checks 88.8%, bets small 8.0% and bets big just 3.2%. The large size almost vanishes because the nuts are fixed: a made flush gets called by small bets anyway, and the bigger you bet without a flush, the more your callers narrow down to flushes. Even the nut flush checks 69.9% on average — and non-nut flushes check more, at 81.4%.",
   category: "strategy",
   date: "2026-08-20",
-  updated: "2026-08-21",
+  updated: "2026-09-02",
   readTime: "10 min",
   emoji: "♠️",
   image: "/images/gto-srp-monotone-oop-en.webp",
@@ -85,7 +85,7 @@ Result | Large bet 3.2% — the sizing collapses
 :::
 
 > **Quick answer**
-> Bet small or check, almost never big. On Q♠9♠2♠ the big blind checks **88.8%**, bets a third of the pot **8.0%**, and bets three-quarters just **3.2%**. The nuts are locked to one hand type, so a made flush is already getting called by a small bet, and anything without a flush only gets called by a flush. That squeezes the large size out of the strategy for both players.
+> Bet small or check, almost never big. On Q♠9♠2♠ the big blind checks **88.8%**, bets a third of the pot **8.0%**, and bets three-quarters just **3.2%**. The nuts are locked to one hand type, so a made flush is already getting called by a small bet, and the bigger you bet without a flush, the more your callers narrow to flushes. That squeezes the large size out of the strategy for both players.
 
 ## What is a monotone board in poker?
 
@@ -152,7 +152,7 @@ The reason for checking is not what you win now but what you win in total. Bet b
 
 The numbers say it plainly: **EQR 230%**, more than twice the pot share. The pot is 5.5bb and A♠J♠ has an expected value of ==12.36bb==. What is still to come is worth more than what is already there.
 
-Blockers show up in the same table. **A♠J♠ and A♠T♠ check over 80%, while A♠7♠ through A♠4♠ drop to 52–64% and bet far more.** Holding J♠ or T♠ blocks the **jack-high and ten-high flushes** — not the second-best flush, which is king-high, since the Q♠ is on the board. And those are precisely the hands that would have *called* your bet. Removing them from the deck thins the calling range, so the bet is worth less and the hand drifts to a check. Low kickers block none of them, leaving somebody to pay you off, so betting directly is the better way to get paid. (A♠3♠ jumping back to 79.7% is a reminder that this is a tendency, not a rule.)
+Blockers show up in the same table. **A♠J♠ and A♠T♠ check over 80%, while A♠7♠ through A♠4♠ drop to 52–64% and bet far more.** Holding J♠ or T♠ blocks the **non-nut flushes that carry those cards**. ⚠ There is no such thing as a "jack-high flush" on this board — the Q♠ is already on it, so every made flush is at least queen-high and the second-best flush is king-high. What the J♠ or T♠ takes away is the **kicker slot** of those flushes (K♠J♠, J♠T♠ and the like). And those are precisely the hands that would have *called* your bet. Removing them from the deck thins the calling range, so the bet is worth less and the hand drifts to a check. Low kickers block none of them, leaving somebody to pay you off, so betting directly is the better way to get paid. (A♠3♠ jumping back to 79.7% is a reminder that this is a tendency, not a rule.)
 
 ## Are non-nut flushes played differently?
 

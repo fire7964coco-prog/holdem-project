@@ -49,7 +49,7 @@ export const POST: Post = {
   tldr: "On K♠8♦3♣ after a button open and a big blind call, the big blind checks 99.8% of its range — an even purer range check than the 98.2% on an ace-high flop. Two things cause it: the big blind holds no overpair here, because AA three-bets preflop, and equity realization splits 80.7% against 116.7%.",
   category: "strategy",
   date: "2026-08-19",
-  updated: "2026-08-21",
+  updated: "2026-09-02",
   readTime: "9 min",
   emoji: "👑",
   image: "/images/gto-srp-dry-king-oop-en.webp",
@@ -211,7 +211,7 @@ To drill the spot instead of reading it, open the **GTO Trainer** in the sidebar
 
 **Q. Why doesn't the big blind ever bet on K-8-3?**
 
-A. Because every hand at the top of this board sits with the other player. The overpair (AA) and the best set (KK) are both missing from the calling range, while no made hand piles up at 35.4%. Leading with a range shaped like that builds a pot for someone else to win. The solver checks 99.8%.
+A. Because the strongest hands this board allows are missing from the calling range: the top set (KK) and the only overpair (AA) are both absent, while no made hand piles up at 35.4%. The big blind does hold sets of 88 and 33 and a little two pair, but not enough of it to carry a lead. Leading with a range shaped like that builds a pot for someone else to win. The solver checks 99.8%.
 
 **Q. Which is worse for the big blind, an ace-high flop or a king-high flop?**
 

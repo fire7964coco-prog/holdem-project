@@ -70,7 +70,7 @@ export const POST: Post = {
   tldr: "After a big blind three-bet and a button call, the flop 8♦5♣2♠ gets a two-thirds-pot bet 97.8% of the time. The odd part: of the big blind's 83 combos, exactly three paired this board — the A5s — and none of 88, 55 or 22 is in the range at all. The bet goes anyway because the range splits into 36 combos of overpairs and 40 combos of ace-high with nothing in between. A polarized shape bets big.",
   category: "strategy",
   date: "2026-08-21",
-  updated: "2026-08-21",
+  updated: "2026-09-02",
   readTime: "10 min",
   emoji: "🎲",
   image: "/images/gto-3bp-low-oop-en.webp",
@@ -211,7 +211,7 @@ The reason is where the sets live. **The button is the only player who can hold 
 
 - **Do not default to "I missed, so I check" on a low dry board.** In a three-bet pot your opponent missed too — **58.3%** of the button's range failed to make a pair here. ⚠ Do not convert that 58.3% into a folding share; the response node is not in this solve. The reason to bet is not "they fold" but **"my range is polarized, so the large size earns its keep."**
 - **But do not treat an overpair as the nuts when a raise comes back.** All nine set combos are on the other side, and the button also holds 24 combos of QQ through 99. **Your 99 and TT are overpairs that lose to overpairs.**
-- **Against someone who rarely folds, cut the ace-high portion.** The 97.8% figure rests on the fact that much of the opponent's range missed. ⚠ Again, "58.3% missed" is not "58.3% folds" — no fold frequency comes out of this solve, and the button's 36.1% of ace-high is the A-K, A-Q, A-J, A-T family with no weak aces in it. 🪶 Facing 14.9bb into 22.5bb the MDF is **60.2%**, but that is a **starting point, not a calling quota** — MDF treats the bet as a pure bluff with zero equity, and the range betting here contains 36 combos of overpairs, so the true optimal defense sits below it. Against a calling station, firing ace-high twice and three times turns the whole bluff portion into losses; narrow to the overpairs for value instead.
+- **Against someone who rarely folds, cut the ace-high portion.** The 97.8% figure rests on the fact that much of the opponent's range missed. ⚠ Again, "58.3% missed" is not "58.3% folds" — no fold frequency comes out of this solve, and the button's 36.1% of ace-high is the A-K, A-Q, A-J, A-T family with no weak aces in it. 🪶 Facing 14.9bb into 22.5bb the MDF is **60.2%**, but that is a **starting point, not a calling quota** — MDF treats the bet as a pure bluff with zero equity, whereas the range betting here contains 36 combos of overpairs, so that assumption does not hold. Whether the true optimal defense sits below it is a question this solve does not answer. Against a calling station, firing ace-high twice and three times turns the whole bluff portion into losses; narrow to the overpairs for value instead.
 - **From the button, small pocket pairs are worth more here than anywhere in this series.** 88, 55 and 22 make sets, and 77, 66, 44 and 33 are all ahead of ace-high. That is the exact opposite of [the A-K-2 spot](/en/blog/3bet-pot-cbet), where the underpairs were helpless. How the three-betting range is built decides this, and that is in [3-bet strategy](/en/blog/holdem-3bet "thumb:/images/holdem-3bet-hero.webp").
 - **Count the SPR before you bet.** At SPR 4, two-thirds-pot twice (14.9 → 34.5) plus a river shove of 39.6 empties 89bb precisely. The moment you bet the flop, whether you are going all the way is effectively already decided.
 

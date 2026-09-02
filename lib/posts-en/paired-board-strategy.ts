@@ -94,7 +94,7 @@ export const POST: Post = {
   tldr: "On the low paired flop 6♣6♦3♥ the big blind checks 97.0%. The odd part is that it holds more trips than the button: 26 six-x combos against 20. It checks anyway, because only 18.4% of its range has anything beyond the board's pair, and the other 81.6% is a high-card contest the button wins. What does gain value is any pocket pair above a six — TT is 76.0% equity here.",
   category: "strategy",
   date: "2026-08-20",
-  updated: "2026-08-21",
+  updated: "2026-09-02",
   readTime: "10 min",
   emoji: "👯",
   image: "/images/gto-srp-paired-oop-en.webp",
@@ -282,7 +282,7 @@ Facing a 1.8bb bet into 5.5bb, denying a pure bluff any profit means continuing 
 
 Add every ace-high (26.3%) and every king-high (16.5%) and you are still only at **61.2%**, short of 75.3%.
 
-⚠ **Do not read that as "so you must defend more" — it points the other way.** MDF treats the opponent's bet as a pure bluff with zero equity, but a flop bluff still has two streets to come, so it does have equity. And the out-of-position player realizes equity badly, so **the solver's actual solution overfolds relative to MDF on the flop.** Fold frequency only converges toward MDF from the turn onward.
+⚠ **Do not jump from that to "so you must defend more."** MDF treats the opponent's bet as a pure bluff with zero equity, but a flop bluff still has two streets to come, so it does have equity. And the out-of-position player realizes equity badly. ⚠ What this study spot cannot tell you is where the real optimum sits: it is solved **through the flop's first action only**, so the big blind's response to a bet is not in it, and whether the optimal defense lands above or below MDF **cannot be read from this material.**
 
 What this arithmetic is good for, then, is not "hit 75%" but **"do not fold on the strength of one high card."** Plenty of the ace-highs and king-highs are still calls here, and folding all of them to one small c-bet is exactly the habit that gets exploited.
 
@@ -295,7 +295,7 @@ What this arithmetic is good for, then, is not "hit 75%" but **"do not fold on t
 - **Do not undervalue middle pocket pairs on low paired boards.** 77 through TT are 68–76% equity here, the top of the calling range. But the floor is real: 44 and 55 still beat the range average, while 22 keeps only two-thirds of what its equity is worth, because it pairs below both board ranks.
 - **Flopping trips is not a reason to lead.** The sixes lead more than any other class here, and they still check nine times out of ten. Leading only folds out the hands you already beat; checking lets those hands put the money in themselves, and leaves you a check-raise or a call-down. ⚠ What this solve cannot tell you is *how much* more the check-raise line makes: the study spot solves **the flop's first action only**, so the button's c-bet frequency and any check-raise EV simply do not exist in it.
 - **Do not fold ace-high to one small bet.** 79.7% of the button’s range has nothing beyond the board’s pair either — ace-high 31.9%, king-high 15.1% and no made hand 32.7%.
-- **Your kicker decides the hand.** Only four combos beat trips outright — but that holds only when your kicker is an ace. The second kicker is fixed by the board's 3, so the single card beside your six is the whole hand: with 76s the button's A6, K6, Q6 and 86 all have you dominated. Trips with a weak kicker is a bluff-catcher, not a hand to build a pot with.
+- **Your kicker decides the hand.** Only three combos beat trips outright — the three 33 full houses. (Quads is off the table: once you hold a six yourself, 6♠6♥ cannot exist, so the four combos counted in the full-house section become three from your seat.) And even that holds only when your kicker is an ace. The second kicker is fixed by the board's 3, so the single card beside your six is the whole hand: with 76s the button's A6, K6, Q6 and 86 all have you dominated. Trips with a weak kicker is a bluff-catcher, not a hand to build a pot with.
 
 :::readnext[Keep reading]
 /en/blog/monotone-board-strategy | The Nut Flush That Checks Seven Times Out of Ten | /images/gto-srp-monotone-oop-en.webp

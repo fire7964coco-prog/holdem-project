@@ -107,7 +107,7 @@ export const POST: Post = {
   tldr: "On the low rainbow flop 6♠5♥2♦ the big blind checks 96.8% and leads just 3.2% — even though its 48.3% equity is the second highest of the seven spots where it defends. Only one hand makes a straight here, 4-3, and neither range holds it. Nobody has a top end, so nobody leads out of position. The action comes later: re-solve the same tree to see past the flop and the big blind check-raises a 1.8bb bet 14.9% of the time, almost all of it draws.",
   category: "strategy",
   date: "2026-08-20",
-  updated: "2026-08-21",
+  updated: "2026-09-02",
   readTime: "11 min",
   emoji: "🌊",
   image: "/images/gto-srp-low-rainbow-oop-en.webp",
@@ -196,7 +196,7 @@ And 4-3 is in neither range. **The solver's category panel has no "Straight" row
 
 ## How do the two ranges differ on 6-5-2?
 
-**The big blind wins the pairs and loses everything above them.** It holds more top pair, more second pair and more weak pairs than the button; trips and two pair are dead level; and its overpairs run at barely half the button's. Nearly three quarters of both ranges has no pair at all — which is what makes this an overcard fight rather than a value fight, and why the hand that wins it is usually still being drawn to.
+**The big blind wins the pairs and loses everything above them.** It holds more top pair, more second pair and more weak pairs than the button; sets and two pair are dead level; and its overpairs run at barely half the button's. Nearly three quarters of both ranges has no pair at all — which is what makes this an overcard fight rather than a value fight, and why the hand that wins it is usually still being drawn to.
 
 ![Range composition on a low rainbow board, the big blind ahead on pairs and the button ahead on overpairs](/images/gto-srp-low-rainbow-ranges-en.webp "6♠5♥2♦ · what the check-raise is actually made of")
 
@@ -217,7 +217,7 @@ Add top pair, second pair and weak pair and the big blind leads **17.3% to 12.0%
 
 Two rows explain the whole spot:
 
-- **Trips is 1.8% for both players.** Only 66, 55 and 22 make it, and each is exactly ==3 combos== because one of each rank sits on the board. Nine combos each. **The best hand on this flop is split down the middle.**
+- **The "Trips" row is 1.8% for both players.** 🪶 That is the app's label, quoted as the panel shows it — 6-5-2 carries no pair, so what the row actually holds is a **set** (trips means one card in your hand matching a pair on the board). Only 66, 55 and 22 make it, and each is exactly ==3 combos== because one of each rank sits on the board. Nine combos each. **The best hand on this flop is split down the middle.**
 - **Overpairs run 4.9% against 9.5%** — almost double. An overpair here is any pocket pair above a six, so 77 through AA. The big blind three-bets JJ and better before the flop, which leaves it **77 through TT, and nothing else.** The button keeps the whole top of that list.
 
 ## Why is the equity 48.3% but the EQR only 84.3%?
@@ -293,7 +293,7 @@ Read the second column downward and the pattern is impossible to miss. **Below t
 
 Those seven rows are the top of the sorted list, and they account for roughly 30 of the 69.7 combos that raise. The rest of the raise comes from the same range at lower frequencies — worth knowing before you conclude that *nothing* else ever raises here.
 
-And look at how little of it is value. Trips and two pair together are **2.2%** of the range — ==2.2% × 487 ≈ 11 combos== — out of the 69.7 that raise. Even counting the two hands that pair the board as well, **fewer than one raising combo in four is a made hand.** That is why the raise still works when it gets called: most of the range that put the money in can still improve.
+And look at how little of it is value. Sets and two pair together are **2.2%** of the range — ==2.2% × 487 ≈ 11 combos== — out of the 69.7 that raise. Even counting the two hands that pair the board as well, **fewer than one raising combo in four is a made hand.** That is why the raise still works when it gets called: most of the range that put the money in can still improve.
 
 And straight draws are what the solver chooses to spend that edge on.
 
@@ -304,13 +304,13 @@ And straight draws are what the solver chooses to spend that edge on.
 | Backdoor flush | **20.5%** | 18.5% |
 | No draw | 60.2% | **66.8%** |
 
-**Gutshots: 18.5% against 13.9%.** With trips split evenly at 1.8% and overpairs running 4.9% against 9.5%, the gutshot row is where the raising range comes from — the solver takes the group the big blind has more of and turns all of it into one action.
+**Gutshots: 18.5% against 13.9%.** With sets split evenly at 1.8% and overpairs running 4.9% against 9.5%, the gutshot row is where the raising range comes from — the solver takes the group the big blind has more of and turns all of it into one action.
 
 ## Is 6-5-2 a wet board or a dry one?
 
 **Dry at the top, wet in the middle.** A **wet board** is one that hands out draws — cards that connect for straights or flushes, so hands that are behind still have a way to win. A dry board gives out almost none. On 6-5-2 the distinction cuts both ways at once, which is why the label alone tells you nothing here.
 
-There is no flush draw, and — as covered above — no completed straight sits in either range. In that sense the board is bone dry: the ceiling is trips, and both players get there equally often.
+There is no flush draw, and — as covered above — no completed straight sits in either range. In that sense the board is bone dry: the ceiling is a set, and both players get there equally often.
 
 But **19.3% of the big blind's range holds a straight draw** (0.8% open-ended plus 18.5% gutshots), and another 20.5% picks up a backdoor flush. Only 60.2% has neither. So plenty of hands have a reason to keep going even with nothing made.
 
@@ -319,7 +319,7 @@ That combination — a low ceiling and a wide floor — is what produces the num
 ## What changes at the table?
 
 - **Stop leading low rainbow boards just because you "hit something."** Equity of 48.3% is not a reason. On 6-5-2 the entire range leads 3.2%, and the hands doing it are barely committed to it. The lead here is a single size, a third of the pot, so the button only needs **19.8%** to call — and its ace-highs and king-highs, **42.9%** of the range between them, clear that bar easily. You do not fold them out, and what does call has hands that beat you mixed in.
-- **Check-raise with your sets, all of them.** All nine combos of trips raise 100% of the time. Slow-playing a set here — when the button has just as many — throws away the one big pot you were going to win.
+- **Check-raise with your sets, all of them.** All nine set combos raise 100% of the time. Slow-playing a set here — when the button has just as many — throws away the one big pot you were going to win.
 - **Pick your bluffs by draw, not by high card.** The raising range is built from gutshots. An ace-high with no draw — A-J, A-9 — belongs in the calling range, the 65.6%, not the raise. (A-K never reaches this spot: the big blind's defending range tops out at A-J.)
 - **Do not over-fold to a small bet.** Against 1.8bb into 5.5bb the solver keeps **80.5%** of its range, above the 75.3% break-even figure. Folding your king-high and weak pairs to one small bet is the single most exploitable habit on a board like this.
 
@@ -346,7 +346,7 @@ A. When your range has hands that gain from a bigger pot and enough draws to bal
 
 **Q. Why doesn't the big blind bet first on a low board?**
 
-A. Because equity is not what earns the right to bet first — a top end is, and this board has none. Trips is split 1.8% to 1.8%, and the one holding that would beat it, 4-3, sits outside both ranges. With no hand that beats the opponent's best, there is nothing to build a pot with, so the big blind leads just 3.2%.
+A. Because equity is not what earns the right to bet first — a top end is, and this board has none. Sets are split 1.8% to 1.8%, and the one holding that would beat them, 4-3, sits outside both ranges. With no hand that beats the opponent's best, there is nothing to build a pot with, so the big blind leads just 3.2%.
 
 **Q. Why is the strategy so different from 9-8-7 with almost the same equity?**
 
@@ -354,7 +354,7 @@ A. Because the top of a range decides who bets first, not its average. On 9-8-7 
 
 **Q. Which hands should you check-raise on 6-5-2?**
 
-A. All nine combos of trips (66, 55, 22), both combos of 65 suited, and then straight draws: 98s for the gutshot to the seven, 87s for the open-ender, and J4s, Q4s, 54s and 64s for the gutshot to the three. Not one of them was picked for a high card — the raise is built on draws, top to bottom.
+A. All nine set combos (66, 55, 22), both combos of 65 suited, and then straight draws: 98s for the gutshot to the seven, 87s for the open-ender, and J4s, Q4s, 54s and 64s for the gutshot to the three. Not one of them was picked for a high card — the raise is built on draws, top to bottom.
 
 **Q. Is a check-raise allowed, and is it rude?**
 

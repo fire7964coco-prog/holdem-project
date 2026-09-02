@@ -75,7 +75,7 @@ export const POST: Post = {
   tldr: "On A♥7♦2♣ after a button open and a big blind call, the big blind checks 98.2% of its range — top pair, two pair and sets included. Equity is nearly even at 45.1% against 54.9%; what splits the two seats is equity realization, 84.0% out of position against 113.1% in position.",
   category: "strategy",
   date: "2026-08-19",
-  updated: "2026-08-19",
+  updated: "2026-09-02",
   readTime: "9 min",
   emoji: "🅰️",
   image: "/images/gto-srp-dry-ace-oop-en.webp",
@@ -100,11 +100,11 @@ Every figure below came from HoldemMaster's [free GTO solver](/en/solver), read 
 Spot | BTN opens 2.5bb → BB calls (heads-up)
 Flop | A♥ 7♦ 2♣ (rainbow)
 Pot · stack | Pot 5.5bb · effective stack 97.5bb
-Result | BB checks 98.2% — the whole range checks
+Result | BB checks 98.2% — effectively the whole range checks
 :::
 
 > **Quick answer**
-> Check, and plan to keep going. When a range takes one action with everything — strong hands included — that is a **range check**, and it is what the big blind does here. Checking is not giving up on the pot: it keeps the button's bluffs in, and top pair is still a hand you continue with when the c-bet lands.
+> Check, and plan to keep going. When a range takes one action with practically everything — strong hands included (the bets across both sizes add up to just 1.9%) — that is a **range check**, and it is what the big blind does here. Checking is not giving up on the pot: it keeps the button's bluffs in, and top pair is still a hand you continue with when the c-bet lands.
 
 ## What conditions produced these numbers?
 
