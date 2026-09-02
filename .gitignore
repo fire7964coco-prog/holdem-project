@@ -33,3 +33,7 @@ ds-bundle/
 .design-sync/.cache/
 .design-sync/learnings/
 .design-sync/node_modules
+
+# 검수용 임시 원문 추출 폴더 — 남의 PDF 원본이 들어가므로 절대 커밋하지 않는다
+.wpt-check/
+.solver-captures*/
