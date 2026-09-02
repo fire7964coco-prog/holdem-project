@@ -1,3 +1,38 @@
+## 2026-09-02 (3) — GTO 솔버 **EN 11편 소급 반영 + 2차 교열** (커밋 `824b73d2`)
+
+KO 13편 정정(`6cbfa480`)을 EN에 소급한 회차. 조사 산출물 `docs/en-solver-13-retrofit-plan.md`의
+🔴 18건을 원문 문맥에 맞춰 재저작해 27개 문장을 고쳤고, 그 수정이 만든 새 모순을 2렌즈 병렬
+교열(교열 · 딜러/수학)로 11건 더 닫았다. ⑫ connected-board · ⑬ ace-paired는 🔴 0건이라 안 열었다.
+
+### 반영 요약 (상세는 커밋 메시지)
+- **§13 급 4건**: ⑤ 존재 불가 「jack-high flush」 · ⑥ 「four combos beat trips」→33 3콤보 ·
+  ⑦ 언페어 652 산문 trips→set **8곳**(계획서 7곳 + `:199` 1곳 추가 발견) · ⑪ 「overpair pinned under the king」
+- **자기모순 4건**(② FAQ↔본문 · ⑨↔⑩ AK · ⑪ pull↔다음 단락 · ⑧ 「board가 아니라」)
+- **MDF 단정 4편 + 노드 부재 단정 1건 + 단위·근거 5건** · 🟡 1건(⑤ tldr·Quick answer 완화)
+
+### 🔴 이 회차가 실증한 것 — «반영은 절반, 교열이 나머지 절반»이 EN에서도 재현됐다
+- **딜러/수학 렌즈가 내 1차 반영문을 산수로 뒤집었다**: ⑨ EQR 문단에 «Most of that is the
+  denominator shrinking»이라 썼는데, 분해하면 8.2pt 상승 중 분모 효과는 **~1.7pt**, 초과 EV 증가가
+  **~6.5pt**다(초과 EV 1.49bb→2.34bb 고정/변동 두 방향 분해 모두 초과 EV가 주인). «Part of that»으로 정정.
+  🪶 **KO 「나누는 분모가 작아진 영향이 큽니다」(`3bet-pot-bet-sizing.ts:306`)도 같은 주종 오류**다 → KO 소급 후보.
+- **교열 렌즈가 «캐비어트 옆 단정»을 4곳 잡았다**: ⑧ tldr 「not the board but the preflop action」(본문만
+  고치고 tldr을 놓침) · ⑧ `:::note` 「does not apply at all」(직전 문장 ①과 충돌) · ⑤ Quick answer
+  「only gets called by a flush」(tldr만 완화) · ⑧ :257 「TT and 99 fold to a raise」(:259를 완화하고 두 불릿 위를 놓침).
+  **같은 주장이 tldr·Quick answer·본문·note·FAQ 다섯 자리에 흩어져 있다** — 본문 한 곳을 고치면 나머지 넷을 grep해야 한다.
+- **⑥ paired 콤보 수는 KO 문안보다 한 발 더 갔다**: KO는 「33 3 + 66 1 = 네 콤보 · A일 때만 참 · 다만 A6면 3콤보」인데,
+  트립스를 든 사람은 **누구나** 6을 한 장 들고 있으므로 4는 어느 트립스 홀더에게도 성립하지 않는다. EN은
+  «Only three combos … quads is off the table once you hold a six»로 썼다 → KO 소급 후보.
+
+### 반영 안 한 교열 지적 2건(판단)
+- bet-sizing `:225`·`:324` «8.2 trips, 16.4 overpairs» — 패널 등급명을 수치와 함께 인용하는 자리이고 `:291`에 각주가 있어 유지.
+- paired `:285`↔`:296` 유사 캐비어트 2회 — 3회 미만이라 유지.
+
+### 게이트·산출
+- `audit:hard --locale=en` 🔴 0 · 🟠 3(`holdem-3bet`↔`holdem-continuation-bet` 형제 표 키 불일치 — 기존·무관 · 핸드오프 미결에 이미 등재된 ja 건과 같은 유형)
+- 커버리지: 솔버 11편 전부 「시나리오 못 잡음」= 기계 미검사 → 족보·산수는 딜러 렌즈 + 손 검산(위)으로 대체
+- 빌드 통과 · EN `updated` 11편 2026-09-02 · sitemap lastmod 11건
+- 도구: `scratchpad/apply-edits.mjs`(JSON 치환표 → 정확 1회 매칭 검증 후 기록 · 백틱 차단) — 임시, 레포 밖
+
 ## 2026-09-02 (2) — GTO 솔버 13편 **GPT 검수 반영 + 2차 교열** (커밋 `6cbfa480`)
 
 사장님이 GPT에 넘긴 「GTO_솔버_스팟_13편_통합_검수보고서」(28건)를 받아 처리한 회차.
