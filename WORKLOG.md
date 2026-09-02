@@ -1,3 +1,27 @@
+## 2026-09-02 (7) — GTO 솔버 13편 **es 전파(2번째 언어) 발행** — «번역 + 5필드» · 사장님 «아주아주 큰 시장언어이니 서치 많이하고 고품질로, 배포까지»
+
+사장님 지시 «es 진행하자 … 마지막 배포까지 부탁해». ja 회차(09-02 (5))의 브리프 템플릿을 es로 갈아 끼우되 **ja 교훈 둘(앱 UI 축어 사전 입력 · 문장 단위 정정)을 처음부터 박았다.** 재저작 아님 — 수치·논거·구조·링크 개수 EN 1:1.
+
+### 산출
+- **키워드 팩** `docs/keyword-bank/es-gto-series.md` — 라쿠 `search-volume-history` ES+MX 107종(30크레딧) + DFS Labs 시드 15종×2지역 + DFS SERP 10쿼리×2지역(PAA) + 구글 자동완성 49시드. **잡을 축은 `spr poker`(ES 70·SD 0·자사 0편) 하나뿐**, 개념어는 전부 10, 스페인어 서술형 표기(board seco·guerra de ciegas·ventaja de rango…)는 라쿠·DFS 양쪽 null → **검색 표면은 영어 술어, 본문은 앱·코퍼스 표기, 훅은 숫자.** 함정: `poker set` 390/210은 칩 세트 상품(광고경쟁 100) · `tercia` MX 40은 족보 정의(hand-rankings 소유).
+- **앱 es 캡처 26장** `public/images/gto-*-es.webp`(1,289KB) — `capture-solver-spots.mjs`·`make-solver-range-charts.mjs`에 es 사전 신설(라이브 `?lang=es` Playwright 실측 10개 문자열). 🔴 `convert-solver-captures.mjs`에 **`--lang=` 필터 신설**(ja 회차의 «키만 주면 ko·en까지 재변환» 사고 차단).
+- **번역 브리프** `docs/es-gto-series-translation-brief.md` — §1-B 앱 UI 축어 사전(내비·셀렉터·칩·등급·드로우·13스팟 이름) · §4 폐기 명제 es 앵커 · §4-B 통일 표기 · §6 es 교훈. Opus 3배치(4·4·5) 병렬, 배치당 17~32분.
+- **13편** `lib/posts-es/<slug>.ts` + `index.ts` 등록 + `/es/solver` `SPOT_GROUPS` slug 13개. 빌드 **499 intl posts(+13)** · hreflang ko/en/ja/es/x-default 상호 · 히어로 1회 · FAQ 스키마 정상 · `r:`/`g:` 누출 0.
+
+### 검수 — 게이트 + 렌즈 4종 병렬 → 반영 → 2차 교열 2배치
+- 게이트: `check:gto --locale=es` ✅ 103 🔴 0 · `audit:hard --locale=es` 60/60 🔴 0(🟠 3은 기존 형제표) · `check:intl-links` 499 통과 · `check:images` ✅ · `check:image-reuse` 🔴 0 · 자체 구조 게이트 13/13(H2·링크 대상·FAQ·디렉티브·이미지·하이라이트·표 행 EN 동일 · 백틱 2 · desc 137~158 · 폐기 앵커 0 · `-en.webp` 0).
+- 딜러/§13(Fable): **🔴 0** — 수치 13/13 · 고지문 EN n = es n 전편 · 폐기 명제 의미 단위 0 · 언페어 보드 trips 오용 0 · 유해 조언 0.
+- 네이티브 ×2(Opus): **의미 왜곡 18건**이 진짜 수확 — `rank`→`rango` 오역 11곳(range와 충돌) · «no dejes de leer»(뜻 반전) · «trampear»(=cheat) · «resiste la c-bet»(방어로 읽힘) · «pasarse de largo» · «hacer pareja con» · «tirada» · «dejar clavado» · «contrafeita»(비단어) · H2 직답 문장 파손(⑨) 등 + 반도어 3(clicar·Pulsa·partidas caseras) + T→10 미변환 5.
+- 교열/구조(Fable): 문장 단위 누락 0·추가 3(전부 정확) · **배치 분열 표** — check 동사 · sobrepar/overpair · A-high/A alta · 조건표 고정문 3종(Medido/Verificado/Comprobado · se retira/foldea · heads-up/mano a mano) · «»/"" · liderar/apostar primero · sizing/tamaño · suited/del mismo palo → 통일 스크립트 1회(앱 축어·코퍼스 다수파 기준: Comprobado · foldea · mano a mano · "" · 10♠ · A-high · sobrepar 산문/Overpair 표 · poker 무악센트).
+- 2차 교열 2배치: **13곳 추가 검출·정정** — 정규화가 만든 «de el A-high» 3곳 · 관사(la K-high) 2곳 · 조각문(«Si tienes TT ahí y…») · «ni siquiera» 중복 · pasar/hace check 혼용 3곳 · «resubieron» 잔존 등.
+- ⑤ H2: 브리프의 고정 H2를 EN에 없는 자리에 강제해 «조건» H2 아래 «정의» 직답이 오던 것을 EN대로 «¿Qué es un board monotone en poker?»로 복원.
+
+### EN 동반 정정 2건(RP-08 · es 렌즈 발원)
+- ⑥ `paired-board-strategy` «anywhere in these thirteen spots» → «in this series» · ⑫ `blind-battle-connected-board` «of all thirteen» → «of the whole series»(EN `updated` 09-02로 갱신 · es ⑫ masterUpdated 동기).
+
+### 🔴 교훈(브리프 §6)
+UI 축어 사전을 줘도 «어휘 사전»(조건표 고정문·따옴표·check 동사·rank≠range)이 없으면 배치는 갈린다 → 다음 로케일 브리프 §4-B에 명시. 네이티브 렌즈 2종은 줄이지 마라(기계·수학·교열이 못 보는 관용구 오용을 18건 잡았다). 정규화 스크립트 뒤 2차 교열은 필수(13곳).
+
 ## 2026-09-02 (6) — 우편함 3건 일괄 이행(M-075 · M-076 · M-077) → M-078 회신
 
 사장님 «우편함 확인» → «진행해». 검수장 발신 3통을 한 회차에 닫았다. 회신 정본 = `docs/reply-to-review-2026-09-02-m078.md`(claims 17행 검증 통과).

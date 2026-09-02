@@ -91,7 +91,7 @@ export const POST: Post = {
   tldr: "After a small-blind open and a big-blind call, the 7♦6♦5♣ flop gets a bet just 9.6% of the time and a check 90.4%. Pot, stack, SPR, bet size and both ranges are identical to the previous spot — only the three board cards changed, and the bet collapsed from 67.4% to 9.6%. The range edge won preflop was an edge in **high cards**, and a low connected board erases it outright. Equity flips to 49.6% against 50.4% and the out-of-position realization drops to 85.3%.",
   category: "strategy",
   date: "2026-08-21",
-  updated: "2026-08-21",
+  updated: "2026-09-02",
   readTime: "10 min",
   emoji: "🪜",
   image: "/images/gto-sb-connected-oop-en.webp",
@@ -245,7 +245,7 @@ The pot is 6bb, so the small blind's share is ==6 × 49.6% = 2.976bb== while the
 
 **Equity is nearly even at 49.6 to 50.4, yet realization splits wide at 85.3% against 114.4%.** That gap is what position is worth. In the previous spot the range edge more than covered it and the small blind realized 103.1%; here there is no edge left to cover it with.
 
-Rank the out-of-position EQR of **six selected spots** from low to high and this one sits among the callers. (The true bottom of all thirteen is ③ at 77.9%, ② at 80.7% and ⑥ at 83.7%, all caller seats; the table below is an excerpt with that tail cut off.)
+Rank the out-of-position EQR of **six selected spots** from low to high and this one sits among the callers. (The true bottom of the whole series is ③ at 77.9%, ② at 80.7% and ⑥ at 83.7%, all caller seats; the table below is an excerpt with that tail cut off.)
 
 | Spot | Who is out of position | OOP equity | OOP EQR |
 |---|---|---|---|

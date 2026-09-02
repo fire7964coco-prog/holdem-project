@@ -64,6 +64,10 @@ const L10N = {
         back: '← 一覧へ', spots: '学習スポット', view: '⚡ 結果をすぐ見る',
         noDraw: 'ドローなし', combos: 'コンボ', hands: 'ハンド', draws: 'ドロー',
         all: 'すべて', summary: 'サマリー', barWidth: 'バーの幅' },   // 2026-09-02 라이브 ?lang=ja 화면에서 직접 읽음
+  es: { url: 'https://solver.holdemmaster.com/?lang=es',
+        back: '← Lista', spots: 'Spots de estudio', view: '⚡ Ver resultados',
+        noDraw: 'Sin proyecto', combos: 'combos', hands: 'Manos', draws: 'Proyectos',
+        all: 'Todo', summary: 'Resumen', barWidth: 'Ancho de barra' },   // 2026-09-02 라이브 ?lang=es 화면에서 직접 읽음(Playwright innerText)
 };
 const T = L10N[LANG];
 if (!T) { console.error('지원하지 않는 로케일:', LANG, '· 아는 것:', Object.keys(L10N).join(', ')); process.exit(1); }

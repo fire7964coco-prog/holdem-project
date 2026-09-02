@@ -31,6 +31,13 @@ const SRC = process.env.SOLVER_CAPTURE_OUT || join(root, ".solver-captures");
 const DST = join(root, "public", "images");
 const only = process.argv.slice(2).filter((a) => !a.startsWith("--"));
 const DRY = process.argv.includes("--dry");
+/**
+ * 🔴 `--lang=<loc>` — 그 로케일 접미의 캡처만 변환한다 (2026-09-02 신설).
+ *    ja 회차에서 스팟 키만 주고 돌렸더니 같은 키의 ko·en PNG까지 재변환돼 기존 webp 10장이 바뀌었다
+ *    (git checkout으로 되돌림). 로케일 전파 때는 반드시 `--lang=`을 붙여라. `--lang=ko`는 접미 없는 원본만.
+ */
+const langArg = process.argv.find((a) => a.startsWith("--lang="));
+const LANG = langArg ? langArg.split("=")[1] : null;
 
 const WIDTH = 1200;
 const QUALITY = 76;      // 글자 가독성 우선. 80KB를 넘으면 아래 STEP_DOWN으로 한 단계씩 내린다
@@ -42,7 +49,13 @@ mkdirSync(DST, { recursive: true });
 
 const files = readdirSync(SRC)
   .filter((f) => /-(oop|ranges)(-[a-z]{2})?\.png$/.test(f))   // -en 등 로케일 접미 허용
-  .filter((f) => !only.length || only.some((k) => f.startsWith(k + "-")));
+  .filter((f) => !only.length || only.some((k) => f.startsWith(k + "-")))
+  .filter((f) => {
+    if (!LANG) return true;
+    const m = /-(oop|ranges)(?:-([a-z]{2}))?\.png$/.exec(f);
+    const suf = m?.[2] || "ko";
+    return suf === LANG;
+  });
 
 if (!files.length) process.exit(console.error("변환할 파일 없음. 스팟 키를 확인하라.") || 1);
 

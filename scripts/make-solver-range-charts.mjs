@@ -32,6 +32,8 @@ const CHART_L10N = {
         equity: 'Equity', eqr: 'Equity realization' },
   ja: { title: 'レンジ構成', source: 'HoldemMaster GTOソルバーの計算値 · レーキ未考慮',
         equity: 'エクイティ', eqr: 'エクイティ実現率' },
+  es: { title: 'Composición del rango', source: 'Calculado con el solver GTO de HoldemMaster · rake no modelado',
+        equity: 'Equity', eqr: 'Realización de equity' },
 };
 const C = CHART_L10N[LANG];
 if (!C) { console.error('지원하지 않는 로케일:', LANG, '· 아는 것:', Object.keys(CHART_L10N).join(', ')); process.exit(1); }

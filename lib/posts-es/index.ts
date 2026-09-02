@@ -41,6 +41,20 @@ import { POST as holdemFish } from "./holdem-fish";
 import { POST as holdemCooler } from "./holdem-cooler";
 import { POST as holdemBadBeat } from "./holdem-bad-beat";
 import { POST as holdemCardCounting } from "./holdem-card-counting";
+// GTO 솔버 시리즈 13편 (2026-09-02 · 번역+5필드 · 순서 = lib/gto-series.ts)
+import { POST as aHighBoardCbet } from "./a-high-board-cbet";
+import { POST as kHighBoardCbet } from "./k-high-board-cbet";
+import { POST as broadwayBoardStrategy } from "./broadway-board-strategy";
+import { POST as donkBetStrategy } from "./donk-bet-strategy";
+import { POST as monotoneBoardStrategy } from "./monotone-board-strategy";
+import { POST as pairedBoardStrategy } from "./paired-board-strategy";
+import { POST as lowBoardCheckRaise } from "./low-board-check-raise";
+import { POST as threeBetPotCbet } from "./3bet-pot-cbet";
+import { POST as threeBetPotBetSizing } from "./3bet-pot-bet-sizing";
+import { POST as threeBetPotLowBoard } from "./3bet-pot-low-board";
+import { POST as blindBattleCbet } from "./blind-battle-cbet";
+import { POST as blindBattleConnectedBoard } from "./blind-battle-connected-board";
+import { POST as acePairedBoardStrategy } from "./ace-paired-board-strategy";
 // ⛔ 2026-07-27 발행 중단 — es-US 합법성 클러스터 13편은 index에서 등록 해제함.
 //    사유: 사이트 컨셉을 "합법/불법 판정"에서 "하는 방법·룰·대회·전략"으로 전환.
 //    파일은 lib/posts-es/ 에 그대로 보존 — 향후 포스팅의 H2 하나에 넣을 재료로 재사용.
@@ -110,6 +124,20 @@ export const ES_POSTS: Post[] = [
   holdemBadBeat,
   // 기타 (독립)
   holdemCardCounting,
+  // GTO 솔버 시리즈 13편 (2026-09-02 · 번역+5필드 · 순서 = lib/gto-series.ts)
+  aHighBoardCbet,
+  kHighBoardCbet,
+  broadwayBoardStrategy,
+  donkBetStrategy,
+  monotoneBoardStrategy,
+  pairedBoardStrategy,
+  lowBoardCheckRaise,
+  threeBetPotCbet,
+  threeBetPotBetSizing,
+  threeBetPotLowBoard,
+  blindBattleCbet,
+  blindBattleConnectedBoard,
+  acePairedBoardStrategy,
   // es-US 로컬 허브 (미국 히스패닉 대상 유니크 글 — 다른 언어에 대응본 없음)
   comoEntrarAlWsop,
   pokerCasinoPrimeraVez,

@@ -306,7 +306,7 @@ What this arithmetic is good for, then, is not "hit 75%" but **"do not fold on t
 
 Open the [free GTO solver](/en/solver), then go to **Study Spots → Paired Board → [⚡ View results]**.
 
-What to look for is **the single 6♠6♥ row** in the per-hand table — the only quads this board allows, and at **359.7%** the highest equity realization anywhere in these thirteen spots (second is 6♥6♣ on the [low rainbow flop](/en/blog/low-board-check-raise "thumb:/images/gto-srp-low-rainbow-oop-en.webp") at **318.9%**). Compare it with the three 33 rows just below and you can see how few combos the very top of a paired board actually contains.
+What to look for is **the single 6♠6♥ row** in the per-hand table — the only quads this board allows, and at **359.7%** the highest equity realization anywhere in this series (second is 6♥6♣ on the [low rainbow flop](/en/blog/low-board-check-raise "thumb:/images/gto-srp-low-rainbow-oop-en.webp") at **318.9%**). Compare it with the three 33 rows just below and you can see how few combos the very top of a paired board actually contains.
 
 Then open the **GTO Trainer** in the sidebar: it deals you a hand using the actual range weights and grades your action in big blinds lost. Free, nothing to install, no account.
 
