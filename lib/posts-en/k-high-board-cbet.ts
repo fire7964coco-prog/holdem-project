@@ -96,7 +96,7 @@ The button opens to 2.5bb, the big blind calls, everyone else folds — two play
 | Rake | Not modeled |
 | Checked | 2026-08-19, study spot output |
 
-The pot is ==2.5 open + 2.5 call + 0.5 dead small blind == 5.5bb==, and the effective stack is 100bb minus the 2.5bb open.
+The pot is ==2.5 open + 2.5 call + 0.5 dead small blind = 5.5bb==, and the effective stack is 100bb minus the 2.5bb open.
 
 ## How often does the big blind check on K-8-3?
 

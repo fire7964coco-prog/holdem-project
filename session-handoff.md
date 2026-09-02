@@ -12,22 +12,17 @@
 
 ## ▶▶▶ 지금 할 일
 
-### 🔴🔴 **[진행 중] GTO 솔버 13편 → ja 전파 (첫 언어)** — 사장님 지시 2026-09-02 «지금 이 세션에서 진행하자»
+### 🟢 **[종결] GTO 솔버 13편 → ja 전파(첫 언어) 발행 완료** (2026-09-02 · 준비 `29f8363f` + 본 발행 커밋)
 
-> 🔴 **회차 계획 — 세션이 끊기면 여기서 이어라**([[round-plan-must-be-written-down]]). 방식 = 스펙 §4-A-3 «번역 + 5필드» + 여섯째 «본문 용어 표기».
+> ✅ 7단계 전부 완료 — 키워드 팩 · ja 캡처 26장 · 13편 번역+5필드(Opus 3배치) · 등록 · 게이트 🔴 0(check:gto 103 일치 · audit ja 57/57 · intl-links) ·
+> 렌즈 4종(네이티브 ×2 · 딜러/§13 · 교열/구조) → 반영 → 2차 교열 → 빌드·배포. 경위 = WORKLOG 「2026-09-02 (5)」. 재현 규격 = `docs/ja-gto-series-translation-brief.md`.
 >
-> | # | 단계 | 산출 | 상태 |
-> |---|---|---|---|
-> | 1 | ja 키워드 팩(라쿠 suggest+question · 13편 축 + 카니발 grep) | `docs/keyword-bank/ja-gto-series.md` | ⏳ |
-> | 2 | ja 앱 캡처 26장(`capture-solver-spots --lang=ja` → `make-solver-range-charts` → `convert`) — 🔴 스크립트 `L10N`·`CHART_L10N`에 ja 항목이 **없다**(라이브 `?lang=ja` 문자열로 채워야 「조용히 0건」을 피한다) | `public/images/gto-*-ja.webp` | ⏳ |
-> | 3 | 13편 번역+5필드 — **소스는 EN**(다국어 렌더 규약: content에 히어로 없음 · `-en` 이미지 · `/en/` 링크) + KO는 수치·고지 문장 대조용. Opus 서브에이전트 배치(4·4·5) | `lib/posts-ja/<13 slug>.ts` | ⏳ |
-> | 4 | 등록: `lib/posts-ja/index.ts` JA_POSTS + `app/ja/solver/solver-client.tsx` SPOT_GROUPS에 `slug` 13개(EN 랜딩은 있고 ja는 없다) | — | ⏳ |
-> | 5 | 게이트: `check:gto --locale=ja` · `audit:hard --locale=ja` · `check:intl-links` · 폐기 명제 앵커 grep(`홀덤검수/reports/폐기명제목록-2026-08-23.md` ja 앵커) · `npm run build` | 🔴 0 | ⏳ |
-> | 6 | 렌즈 3종 병렬(ja 네이티브 적대 · 딜러/§13 · 교열) → 반영 → **2차 교열** | — | ⏳ |
-> | 7 | 배포 → 라이브 표본 → WORKLOG · 핸드오프 · 뱅크에 다음 로케일 인계분 | — | ⏳ |
+> 🔴 **다음 로케일(es·de·pt·zh·zh-hant …)을 열 때 반드시** — ① 브리프 §1에 **앱 UI 축어 사전**(`data-<loc>.json` + `L10N.<loc>`)을 입력으로 준다(ja는 안 줘서 배치 간 ~270곳 분열 → 사후 정규화)
+> ② `convert-solver-captures.mjs`는 **키를 인자로**(무인자면 ko·en webp까지 재변환) ③ 정정은 문장 단위 원문 대조(파일 단위 치환이 게이트 🔴 4를 만들었다)
+> ④ 순서는 사장님 판단 — 앱·랜딩이 있는 로케일(es·pt·de·zh·zh-hant·fr)이 캡처 가능.
 >
-> 🔴 **표기 정본**: 셋=セット · 트립스=トリップス · 상위개념=スリーカード(ja glossary L47·L136 — 재량 아님) · 「GTO」 라틴+「ポーカー」 앵커 · 본문 「ソルバー」 정본이되 제목·H2 금지(검색 축 40).
-> 🔴 **EN 이미지 `-en.webp`를 ja 글에 그대로 쓰지 마라** — UI 캡처는 언어별 제작(스펙 §4-A-2). 캡처가 안 되면 그 편은 발행 보류.
+> 🔷 **EN-먼저 판정 후보(ja 렌즈 발원)**: ⑩⑪⑫⑬에 「## FAQ」 H2가 없다(EN·ja 동형 — 구조 1:1이라 ja 단독 삽입 안 함) · ⑧ 「underpairs are blocked by the ace and the king」(포커 「블로커」 오개념 — ja는 「上を取られています」로 회피).
+> ✅ EN 정정 2건은 이번에 같이 닫았다: ② `== … == 5.5bb==` 이중 마커(라이브 렌더 파손) · ⑥ 「시리즈의 다른 플랍은 전부 셋」(⑬ AA6 예외) + ⑥ 61.2% 산술 명시.
 
 ### 🟢 **[종결] GTO 솔버 시리즈 — KO 13편(`6cbfa480`) + EN 11편 소급(`824b73d2`) 둘 다 끝났다** (2026-09-02)
 

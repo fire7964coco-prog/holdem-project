@@ -144,7 +144,7 @@ The button opens to 2.5bb, the big blind calls, and everyone else folds — two 
 
 **A set is a pocket pair that matches one board card; trips is one card in your hand matching a pair on the board.** They are the same ranking — three of a kind, filed together in the [hand rankings](/en/blog/holdem-hand-rankings) — but they play completely differently.
 
-Every other flop in this series produced sets: on A-7-2 the big blind needed 77 or 22 in hand. Here the board brings its own pair, so **any single six makes trips**, and only 66 in the pocket makes quads.
+Every other single-raised flop in this series produced sets (the one other paired board, A♠A♥6♦, comes later in the blind-battle group): on A-7-2 the big blind needed 77 or 22 in hand. Here the board brings its own pair, so **any single six makes trips**, and only 66 in the pocket makes quads.
 
 | Your hand on 6♣6♦3♥ | You have |
 |---|---|
@@ -280,7 +280,7 @@ The big blind leads only 3.0% of the time, so you will rarely run into this at t
 
 Facing a 1.8bb bet into 5.5bb, denying a pure bluff any profit means continuing roughly ==5.5 ÷ (5.5 + 1.8) = 75.3%== of the time. That estimate is called **minimum defense frequency (MDF)**.
 
-Add every ace-high (26.3%) and every king-high (16.5%) and you are still only at **61.2%**, short of 75.3%.
+Add every ace-high (26.3%) and every king-high (16.5%) to that 18.4% and you are still only at **61.2%**, short of 75.3%.
 
 ⚠ **Do not jump from that to "so you must defend more."** MDF treats the opponent's bet as a pure bluff with zero equity, but a flop bluff still has two streets to come, so it does have equity. And the out-of-position player realizes equity badly. ⚠ What this study spot cannot tell you is where the real optimum sits: it is solved **through the flop's first action only**, so the big blind's response to a bet is not in it, and whether the optimal defense lands above or below MDF **cannot be read from this material.**
 
