@@ -404,6 +404,14 @@ Triton 제주 II 이벤트 수를 WebFetch가 한 번은 "16개", 다른 번은 
 🔷 **#15가 「PARADISE CITY × NIPPON SERIES」**로 상품에 **HYATT REGENCY 仁川 파라다이스시티 2박**이 걸려 있다
 (스폰서에 `paradisecasino.co.kr` 실재) = **한국 대회 글과의 자연스러운 연결 고리**.
 
+🔴 **2026-09-02 정정 — 2026 시즌 실적은 6대회가 아니라 7대회다.**
+홈페이지 RESULTS 섹션은 **최신 6개만** 보여준다. 정본은 **`nippon-series.jp/results.html`(대회 아카이브)**이고,
+거기엔 **`GO KAGOSHIMA`(2026.03.26–03.29 · ライカ南国ホール · 우승 KO TANAKA)**가 더 있다.
+→ 2026 시즌 = KAGOSHIMA·TOKYO·TOYAMA·NAGANO·NARA·FUKUOKA·HACHIOJI **7대회 종료**,
+GO NAGASAKI(09.04–06)가 **8번째**. 🔴 **부분 목록을 전체로 읽지 마라.**
+🔷 그리고 **이 시리즈에도 GRAND FINAL이 있다** — 「NIPPON SERIES GRAND FINAL OSAKA 2025-26」
+2025.12.26–2026.01.04 · 難波御堂筋ホール · 우승 JIN TANIMURA. (연말연시 개최 = JOPT와 같은 리듬)
+
 🔴 **이 투어는 «캘린더»로 다루지 마라** — 미래 일정이 **1건뿐**이고 그다음 개최지는 미공개다.
 그리고 **1차 출처가 자기모순**이다: 히어로가 `GO HACHIOJI`를 「UPCOMING」이라 띄우는데 RESULTS엔
 「FINISHED」로 있다(08-30 종료 = FINISHED가 맞다). **심판은 히어로가 아니라 SERIES/RESULTS 구획.**
