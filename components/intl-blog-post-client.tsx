@@ -246,7 +246,7 @@ export default function IntlBlogPostClient({
                 )}
               </div>
 
-              {/* H1 ?? ?? ? ??? LCP ?? (??? LCP?? ??) */}
+              {/* H1 제목 먼저 → 텍스트 LCP 확보 (이미지 LCP보다 빠름) · 🔴 2026-06-25 PowerShell 사고로 이 주석과 💡 라벨이 «??»로 깨져 09-02까지 25로케일에 노출됐다 — CLAUDE.md §16 */}
               <h1 className="text-3xl md:text-4xl font-extrabold text-foreground leading-tight mb-3">
                 {post.title}
               </h1>
@@ -288,7 +288,7 @@ export default function IntlBlogPostClient({
               >
                 <div className="flex items-start gap-3">
                   <span className="flex-shrink-0 mt-0.5 inline-flex items-center gap-1 text-[11px] font-bold uppercase tracking-widest text-primary" aria-hidden="true">
-                    ?? {t.quickAnswer}
+                    💡 {t.quickAnswer}
                   </span>
                 </div>
                 <p className="mt-2 text-base md:text-lg text-foreground leading-relaxed font-medium">

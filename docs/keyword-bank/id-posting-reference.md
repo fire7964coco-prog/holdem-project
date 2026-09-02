@@ -102,8 +102,7 @@ kicker·tiebreak·split-pot·reading 4편은 id 검색축이 없다 — 이 4편
   단위 증가는 inkremen 통일 · tangan은 «판» 뜻으론 금지(hand로).
 - **GEO 직답 H3 어형 선례**(세션 4): «Ringkasan Alur …» · «Siapa Jalan Duluan …» ·
   «Siapa Bertindak Duluan …» — 명사구+질문 혼합형이 id 실검색 형태소와 정합(영어 질문형 직역 금지).
-- **표기 분열 미결 3종**(코퍼스 판정 대기 — 신규 글은 권고안으로): 액션=check · 확인=cek ·
-  판=hand · 보드=board · 본문 산문은 As(키워드 «ace kicker»는 영어 유지).
+- ~~**표기 분열 미결 3종**(코퍼스 판정 대기)~~ → ✅ **2026-09-02 솔버 세션이 문장 수로 실측해 닫았다**(아래 🆕 §5-A): 액션=check(146 vs cek 78 — cek는 «확인» 뜻) · 판=hand · 보드=**board 380 vs papan 7**(«meja 4편 우세»는 파일 수 착시) · 본문 산문은 As(키워드 «ace kicker»는 영어 유지).
 - **메타 규격**: readTime 단위 = `mnt`(코퍼스 전편 — min/menit 아님. outs «11 min»이 마지막
   이탈이었고 세션 6에서 해소) · readnext 라벨 = `Lanjut membaca`(33편 표준 — Lanjut baca 6·
   Terus baca는 세션 6에서 소멸) · 관련글 H2 = **`Postingan Terkait`**(⚠ 2026-08-27 정정 —
@@ -127,6 +126,38 @@ kicker·tiebreak·split-pot·reading 4편은 id 검색축이 없다 — 이 4편
   · 직역 지뢰 추가분: membeli+수혜자(→memberi) · «dengan good»(→saat unggul) · mengkreditkan
     (금융 뜻 — 귀속은 menyebut) · pejudi jalanan(→penjudi keliling) · menikahi(핸드에 «결혼» ✗)
     · gantung diri(자살 직설 — 관용구로 쓰지 마라) · «akan pernah»(will ever 직역)
+
+
+### 🆕 5-A. 2026-09-02 솔버 세션 판정 — 코퍼스 실측 수치 + 원어민 3인 지뢰 (출처: 솔버 `handoff-to-main-site/전달_id_용어실측_솔버작업_2026-09-02.md` · 근거 전문 = 솔버 `참고자료/인도네시아어화_리서치_2026-09-02.md`)
+
+**A. 코퍼스 실측(`lib/posts-id/` 43편 · 2026-09-02 grep · 문장 수) — 신규 글은 이 표가 정본**
+
+| 개념 | 채택 근거(회) | 판정 |
+|---|---|---|
+| range | **range 215** · rentang 8 · kisaran 0 | range 확정(kisaran은 NTPoker 앱스토어 문구뿐) |
+| equity | **equity 324** · ekuitas 9 | equity 확정 |
+| board | **board 380** · papan 7 · meja(=테이블 자리) | board 확정 |
+| check(액션) | **check 146** · cek 78(대부분 «확인해 보라» 뜻) | 액션 check · 확인 cek — 분열이 아니라 뜻이 다르다 |
+| call / fold / raise / all-in | 672 · 756 · 573 · 247 · menaikkan 8 · lipat 0 | 영어 확정 |
+| EV | **EV 45** · nilai harapan 1 | EV 확정(정의문도 «Expected value — rata-rata hasil …») |
+| bet size | sizing 26 · ukuran taruhan 13 · «bet size» 0 | 산문 = ukuran taruhan/sizing · 표·라벨 = Bet size |
+| solver / trainer | solver 26 · pemecah 0 / trainer 0 · pelatih 2(=코치) | solver · **Trainer**(도구명) · 행위는 latihan/berlatih · Pelatih는 코치 |
+| 승률 | peluang 144 · probabilitas 47 | «peluang menang» 우선 |
+| 커뮤니티 카드 / 홀카드 | board 우선 · kartu bersama 49 · kartu komunitas 23 / hole card 24 · kartu tertutup(브리프) | 설명어로만 kartu bersama |
+| postflop / 포지션 | «postflop»(하이픈 없음) · pasca-flop 0 / «in position / out of position» + OOP/IP 병용 | |
+| 문체 | **Anda 3,340 / kamu 0** | Anda체 재확인 |
+
+**B. 원어민 3인(레귤러·PUEBI 교정자·초심자 UX)이 잡은 지뢰 — 새 글에서 재생산 금지**
+- 🔴 뜻이 바뀌는 것: **Daftar**(=가입 버튼 — 목록은 «Daftar spot»·뒤로는 «Kembali») · **chip bulat**(=둥근 칩 — 정수는 «bilangan bulat») · **peringkat** 단독(=내 순위 — 리더보드는 «papan peringkat») · **konfigurasi**(=저장 설정 — 매치업은 영어 **matchup**) · **Pohon**(tree 직역 ✗ → tree) · **Keluar**(=화면 나가기 — 로그아웃은 **Logout**) · **tinggi tumpukan**(=칩 스택 높이 — 차트 채움은 «tinggi isian»).
+- 🟡 문법·PUEBI: 접두 **antar-** 붙여쓰기(antarsumber) · «bukan … maupun» ✗ → «tidak ada … maupun / baik … maupun» · 멈춤 버튼 **Hentikan**(Berhenti는 자동사) · 한 단어 의문문 **-kah**(«Amankah?») · «di Safari **di** iPhone»(전치사) · 명령형 **Ganti ke**(Beralih ke ✗) · «bersyarat pada» 통계 직역 ✗ → «dihitung hanya dari hand yang memang Anda open» · 형용사 **Ternormalisasi**(Normalisasi는 명사).
+- 🟢 어투: guna→untuk · tak→tidak · cuma→hanya · «urusan solver»→«ditangani oleh solver» · «siap pakai» 관용구 유지(«siap lihat sekali klik» ✗) · 표·타일엔 **Rerata** · «menelusuri»·«lanjut ke turn dan river»(«mengklik sampai» ✗) · «memasang nama» ✗ → «menampilkan nama» · 오류 문구는 다음 행동까지(«coba muat ulang halaman»).
+- 유지(기각 근거): Quads·Line·combo(영어 관용) · OS 라벨 **«Tambah ke Layar Utama»**(iOS 인니어 실제 메뉴명 — Tambahkan ✗).
+
+**C. 숫자·날짜·단위(앱 실측 — 글도 동일)**: 1.326 · 2,5 · **35,4%(% 앞 공백 없음** — fr «35 %»와 다르다) · 날짜 **DD/MM/YYYY** · GB/MB 그대로. 코드·수식 예시(«2.5x»·«K8s:0.75»)를 인용할 땐 «tulis desimal dengan titik, bukan koma» 병기.
+
+**D. 출처 상태(2026-09-02 실측)**: 🔴 **ggpoker.com/id 블로그·basics 다수 404**(`/id/blog/learning-by-reviewing-your-hands/` · `/id/poker-basics/how-to-play-poker/` · `/id/blog/beginner-strategy/a-beginners-guide-to-poker-bet-sizing/` · `/id/poker-games/smart-betting/`) — 브리프의 GGPoker 출처는 새 글에 걸기 전 curl 재확인. 살아 있는 인니 포커 앱 코퍼스 = apps.apple.com/id NTPoker(«Pelatih Poker GTO» — 본문은 GTO solver·kisaran·equity·latihan·umpan balik instan·Anda) · softonic-id «Poker Solver - GTO for Holdem». 족보 영어 표기 확인 = herry.portfoliobox · medium(hanaizumi) · p2k.stekom.ac.id «Daftar tangan dalam poker».
+
+⚠ 솔버가 본체 결함으로 넘긴 2건은 핸드오프 미결로: ① `app/community/community-client.tsx` id LABELS가 **kamu체**(블로그·브리프·앱은 Anda) ② `/id/solver` 랜딩 404(솔버 앱 id 소개 문단은 번역 완료 — `outbound.ts` 한 줄로 켜짐).
 
 ## 6. 검증된 사실 자산 — §13·룰 번호 (경화에서 확정된 정본, 새 글에서 그대로 재사용)
 
