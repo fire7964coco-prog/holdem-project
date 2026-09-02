@@ -60,6 +60,10 @@ const L10N = {
         back: '← Back', spots: 'Study Spots', view: '⚡ View results',
         noDraw: 'No Draw', combos: 'combos', hands: 'Hands', draws: 'Draws',
         all: 'All', summary: 'Summary', barWidth: 'Bar Width' },
+  ja: { url: 'https://solver.holdemmaster.com/?lang=ja',
+        back: '← 一覧へ', spots: '学習スポット', view: '⚡ 結果をすぐ見る',
+        noDraw: 'ドローなし', combos: 'コンボ', hands: 'ハンド', draws: 'ドロー',
+        all: 'すべて', summary: 'サマリー', barWidth: 'バーの幅' },   // 2026-09-02 라이브 ?lang=ja 화면에서 직접 읽음
 };
 const T = L10N[LANG];
 if (!T) { console.error('지원하지 않는 로케일:', LANG, '· 아는 것:', Object.keys(L10N).join(', ')); process.exit(1); }
