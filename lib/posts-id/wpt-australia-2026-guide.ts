@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "WPT Australia 2026 — Panduan Pemain Lengkap: Jadwal, Satelit & Biaya Nyata",
   seoTitle: "Pertama Kali di WPT Australia? Semua yang Perlu Anda Tahu 2026",
   desc: "WPT Australia 2026 — 10–30 Sep, The Star Sydney. AUD $1.500 Prime + AUD $5.000 Championship. Satelit dari AUD $270. Biaya perjalanan nyata.",
-  tldr: "WPT Australia 2026: 10–30 Sep, The Star Sydney. Dua flagship: AUD $1.500 WPT Prime (17–22 Sep) dan AUD $5.000 WPT Championship (24–30 Sep). Satelit on-site dari AUD $270, dengan qualifier Championship $290 dan $550. Hadiah juara pertama Championship sudah termasuk kursi $15.000 ke WPT World Championship. Wajib 18+, anggota Star Club, dan dress code smart-casual ditegakkan.",
+  tldr: "WPT Australia 2026: 10–30 Sep, The Star Sydney. Dua flagship: AUD $1.500 WPT Prime (17–22 Sep) dan AUD $5.000 WPT Championship (24–30 Sep). Satelit on-site dari AUD $270, dengan qualifier Championship $290 dan $550. Hadiah juara pertama Championship sudah termasuk tiket ke WPT World Championship. Wajib 18+, anggota Star Club, dan dress code smart-casual ditegakkan.",
   category: "tournament",
   date: "2026-06-18",
   updated: "2026-08-28",
@@ -38,7 +38,7 @@ Festival live pertama Anda? Mulai dengan [panduan turnamen](/id/blog/holdem-tour
 ---
 
 > **Jawaban Cepat**
-> WPT Australia 2026 berlangsung ==**10–30 Sep**== di The Star Sydney, Darling Harbour. Dua event championship: ==**AUD $1.500 WPT Prime**== (17–22 Sep) dan ==**AUD $5.000 WPT Australia Championship**== (24–30 Sep). Hadiah juara pertama Championship sudah termasuk ==g:kursi $15.000 ke WPT World Championship== — perhatikan: ==r:kursi itu dipotong dari prize pool, bukan bonus tambahan==. ==r:WPT Global TIDAK beroperasi di Australia — satelit hanya on-site==.
+> WPT Australia 2026 berlangsung ==**10–30 Sep**== di The Star Sydney, Darling Harbour. Dua event championship: ==**AUD $1.500 WPT Prime**== (17–22 Sep) dan ==**AUD $5.000 WPT Australia Championship**== (24–30 Sep). Hadiah juara pertama Championship sudah termasuk ==g:tiket ke WPT World Championship== — ==r:cek ketentuan resmi final soal nilainya dan apakah dipotong dari prize pool==. ==r:WPT Global mencantumkan Australia sebagai wilayah yang dikecualikan==, jadi tidak bisa dipakai selama Anda di Australia — jalur kualifikasi yang resmi diumumkan untuk festival ini adalah satelit langsung di The Star.
 
 ---
 
@@ -56,13 +56,13 @@ Festival tahun ini kembali ke ==**The Star Sydney**== dan memperkenalkan **forma
 | Championship 2 | ==**WPT Australia AUD $5.000**== | AUD $5.500 |
 | Prize Pool 2025 | — | ==g:AUD $3.000.000== (600 entri) |
 | Juara 2025 | — | Alan Pham (AUD $558.211) |
-| Event | ==**36 event**==, est. AUD $10 juta+ | ~20 event |
+| Event | ==**36 event**==, est. AUD $10 juta+ | 32 event bernomor + satelit |
 | Livestream | Kedua final global | Hanya main event |
-| Kursi WC | ==g:$15.000, dipotong dari prize pool== | +$10.400 |
+| Kursi WC | ==g:Tiket ke WPT World Championship== (nilai dan pemotongannya sesuai ketentuan resmi) | +US $10.400 |
 
 </div>
 
-**Kenapa 2026 lebih besar**: Format dual-championship menghadirkan dua gelar championship yang di-livestream dalam satu festival — **WPT Prime Perpetual Trophy** di AUD $1.500 dan **Mike Sexton Champions Cup** di AUD $5.000. Pemain internasional dengan bankroll setara $1.500 kini punya jalur realistis menuju gelar WPT tanpa harus mengeluarkan $5.000.
+**Kenapa 2026 lebih besar**: Format dual-championship menghadirkan dua gelar championship yang di-livestream dalam satu festival — **trofi WPT Prime** di AUD $1.500 dan **Mike Sexton Champions Cup** di AUD $5.000. Pemain internasional dengan bankroll setara $1.500 kini punya jalur realistis menuju gelar WPT tanpa harus mengeluarkan $5.000.
 
 ---
 
@@ -79,12 +79,12 @@ Ini pertanyaan yang ditanyakan setiap pemula. Berikut penjelasan jujurnya:
 | Ukuran Field (est.) | 500–800 entri | 400–600 entri |
 | Struktur | Deep-stack, multi-flight | Deep-stack, 3 flight |
 | Meja Final | ==g:Livestream global== | ==g:Livestream global== |
-| Gelar yang diperebutkan | WPT Prime Perpetual Trophy | Mike Sexton Champions Cup + Kursi WC |
+| Gelar yang diperebutkan | trofi WPT Prime | Mike Sexton Champions Cup + Kursi WC |
 | Cocok Untuk | Pemula, grinder mid-bankroll | Reguler turnamen berpengalaman |
 
 </div>
 
-**Rekomendasi**: Kalau ini event WPT pertama Anda, ==g:mulai dari Prime seharga AUD $1.500==. Anda akan merasakan atmosfer WPT penuh — meja final livestream, struktur deep, kesempatan merebut Prime Perpetual Trophy — dengan sekitar sepertiga buy-in Championship. Banyak pemain mengikuti keduanya.
+**Rekomendasi**: Kalau ini event WPT pertama Anda, ==g:mulai dari Prime seharga AUD $1.500==. Anda akan merasakan atmosfer WPT penuh — meja final livestream, struktur deep, kesempatan merebut trofi WPT Prime — dengan sekitar sepertiga buy-in Championship. Banyak pemain mengikuti keduanya.
 
 ---
 
@@ -102,7 +102,7 @@ Ini pertanyaan yang ditanyakan setiap pemula. Berikut penjelasan jujurnya:
 
 | Jalur | Format | Buy-In | Menang |
 |:---:|---|---|---|
-| **Championship Direct Qualifier** | pra-festival, mulai ==**24 Juli**== | ==g:$290 atau $550== | Kursi Championship |
+| **Championship Direct Qualifier** | ==**$550: 24 Jul – 25 Sep** · **$290: 30 Jul – 9 Sep**== | ==g:$290 atau $550== | Kursi Championship |
 | **Championship Direct Qualifier** | selama festival, ==**sampai 25 Sep**== | $550 | Kursi Championship |
 | **Prime Championship** | Satelit 1-dari-6 | ==g:$290== | Kursi Prime |
 | **Australian Poker Cup** | Satelit 1-dari-5 | $270 | Kursi Poker Cup |
@@ -158,7 +158,7 @@ Kalau Anda di luar Australia dan ingin pemanasan dengan satelit online sebelum t
 
 Dengan buy-in 2026 diturunkan menjadi AUD $5.000 (dari $5.500 pada 2025) dan format dual-championship baru yang membawa lebih banyak pemain ke festival, field diperkirakan menjadi yang terbesar dalam sejarah event.
 
-**Kursi sang juara**: Hadiah peringkat pertama di WPT Australia Championship sudah termasuk ==g:kursi $15.000 ke WPT World Championship== Desember 2026. Baca teliti kalimat resminya — kursi itu ==r:bagian dari hadiah juara pertama dan dipotong dari prize pool==, bukan bonus yang dibayar terpisah di luar uang tunai. Juara Prime Championship menerima kursi WPT World Championship Prime senilai $1.500 dengan ketentuan yang sama.
+**Kursi sang juara**: Hadiah peringkat pertama di WPT Australia Championship sudah termasuk ==g:tiket ke WPT World Championship==. Jadwal resmi The Star hanya menulis "CHAMPIONSHIP = ticket to WPT World Championship" — ==r:tidak menyebut nilai uang tiket itu, dan tidak menyebut apakah dipotong dari prize pool==. Sebagai acuan, WPT mencantumkan buy-in World Championship sebesar ==**US $10.400**==. Juara Prime Championship menerima tiket ke WPT Prime Championship akhir musim, juga tanpa nilai yang dipublikasikan. ==r:Baca Tournament Conditions final sebelum menganggap hadiah utama itu seluruhnya tunai.==
 
 ---
 
@@ -173,6 +173,8 @@ Dengan buy-in 2026 diturunkan menjadi AUD $5.000 (dari $5.500 pada 2025) dan for
 ### 1. Anda Wajib Bergabung dengan The Star Club (Gratis, Tapi Wajib)
 
 Anda tidak bisa bermain satu tangan pun tanpa menjadi **anggota Star Club**. Keanggotaan gratis, tapi memerlukan verifikasi identitas secara langsung.
+
+🔴 **Anda juga butuh akun WPT.com yang terverifikasi.** Kedua halaman event championship WPT menyatakan: "All players are required to have a verified WPT.com account to play World Poker Tour Events." Star Club saja tidak cukup — buat akun WPT.com sebelum berangkat, karena ini satu-satunya syarat yang bisa Anda selesaikan dari rumah.
 
 <div style="background:rgba(59,130,246,0.06);border:1px solid rgba(59,130,246,0.25);border-radius:14px;padding:16px 24px;margin:24px 0">
 
@@ -217,7 +219,11 @@ Bagian ini adalah yang ==r:dilewatkan oleh panduan setiap kompetitor== — dan i
 
 ### Hukum NSW: Batas Bermain Tunai Harian AUD $5.000
 
-Berdasarkan **reformasi penanganan tunai kasino NSW**, ada **batas tunai harian AUD $5.000** untuk permainan gaming (batas ini dijadwalkan turun ke AUD $1.000/hari mulai Agu 2027). Permainan bersifat **carded** — Anda bermain lewat kartu Star Club Anda — dan semua entri turnamen (termasuk satelit) harus dibeli menggunakan chip gaming, bukan kartu kredit atau tunai di meja.
+Berdasarkan **reformasi penanganan tunai kasino NSW**, ada **batas tunai harian AUD $5.000** untuk permainan gaming (penurunan ke AUD $1.000/hari ditunda sampai ==**19 Agustus 2027**==, dan penundaan itu bisa dicabut di tengah jalan). 
+
+⚠️ **Ini bukan aturan bea cukai.** Angka AUD $5.000 adalah batas uang tunai yang boleh Anda masukkan ke permainan per hari di The Star. Terpisah dari itu, aturan perbatasan Australia mewajibkan Anda ==r:melaporkan AUD $10.000 atau lebih== (atau setaranya dalam mata uang asing) saat masuk maupun keluar. ==g:Tidak ada batas maksimum jumlah yang boleh dibawa== — yang wajib adalah melaporkannya.
+
+Permainan bersifat **carded** — Anda bermain lewat kartu Star Club Anda — dan semua entri turnamen (termasuk satelit) harus dibeli menggunakan chip gaming, bukan kartu kredit atau tunai di meja.
 
 ### Transfer Bank ke The Star Sydney — Sebelum Anda Tiba
 
@@ -256,7 +262,7 @@ Sebagian besar pengunjung internasional membutuhkan **ETA (Electronic Travel Aut
 |---|---|---|---|---|
 | **Inggris + 35 negara UE/Eropa** (Jerman, Prancis, Italia, Spanyol, dll.) | ==g:eVisitor (subclass 651)== | [immi.homeaffairs.gov.au](https://immi.homeaffairs.gov.au) | ==g:**GRATIS**== | Biasanya instan-1 hari |
 | **AS, Kanada, Jepang, Korea, Singapura, Hong Kong** | ETA (subclass 601) | [Aplikasi Australian ETA](https://eta.homeaffairs.gov.au) (hanya mobile) | AUD $20 | Biasanya instan |
-| Sebagian besar negara lain | Visitor Visa (subclass 600) | [immi.homeaffairs.gov.au](https://immi.homeaffairs.gov.au) | AUD $200 | Beberapa hari-minggu |
+| Sebagian besar negara lain | Visitor Visa (subclass 600) | [immi.homeaffairs.gov.au](https://immi.homeaffairs.gov.au) | mulai AUD $250 | Beberapa hari-minggu |
 
 
 
@@ -309,7 +315,7 @@ A. ==g:Untuk pemain rekreasional, kemenangan poker umumnya tidak dikenai pajak d
 
 **Q. Kapan registrasi turnamen dibuka setiap hari?**
 
-A. Berpatokanlah pada jam mulai yang diumumkan — halaman resmi event Championship menyebut pendaftaran dibuka ==g:1 jam sebelum jam mulai==. Untuk starting flight Championship yang ramai, tetap sediakan 90 menit: hambatan sebenarnya adalah antrean pendaftaran, dan antrean Star Club kalau Anda belum jadi anggota. Kalaupun terlambat, ==g:re-entry tanpa batas masih terbuka sampai awal level 10== di Day 1A, 1B, dan 1C — jadi datang telat masih bisa diselamatkan.
+A. Berpatokanlah pada jam mulai yang diumumkan — halaman resmi event Championship menyebut pendaftaran dibuka ==g:1 jam sebelum jam mulai==. Untuk starting flight Championship yang ramai, tetap sediakan 90 menit: hambatan sebenarnya adalah antrean pendaftaran, dan antrean Star Club kalau Anda belum jadi anggota. Kalaupun terlambat, ==g:re-entry masih terbuka sampai awal level 10== di Day 1A, 1B, dan 1C. ==r:Sumber resmi berbeda soal jumlahnya==: jadwal The Star menulis "Unlimited Re-Entry", sedangkan halaman WPT menulis "once per flight" — pastikan di meja registrasi — jadi datang telat masih bisa diselamatkan.
 
 **Q. Bisakah saya bermain cash game di The Star Sydney kalau saya bust lebih awal?**
 

@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "WPT Australia 2026 完整参赛指南：赛程、卫星赛与真实花费",
   seoTitle: "第一次打 WPT Australia？2026 参赛你要知道的一切",
   desc: "WPT Australia 2026 于 9 月 10–30 日在 The Star Sydney 举行，AUD $1,500 Prime 与 AUD $5,000 Championship 两大旗舰赛，现场卫星赛 AUD $270 起。资格、付款与真实行程花费都在这里。",
-  tldr: "WPT Australia 2026：9 月 10–30 日，The Star Sydney。两个旗舰赛：AUD $1,500 WPT Prime（9 月 17–22 日）和 AUD $5,000 WPT Championship（9 月 24–30 日）。现场卫星赛 AUD $270 起，主赛资格赛为 $290 与 $550。冠军的头名奖金里包含一个 $15,000 的 WPT World Championship 席位。必须年满 18 岁、成为 Star Club 会员，并遵守 smart-casual 着装要求。",
+  tldr: "WPT Australia 2026：9 月 10–30 日，The Star Sydney。两个旗舰赛：AUD $1,500 WPT Prime（9 月 17–22 日）和 AUD $5,000 WPT Championship（9 月 24–30 日）。现场卫星赛 AUD $270 起，主赛资格赛为 $290 与 $550。冠军的头名奖金里包含一个 WPT World Championship 的门票。必须年满 18 岁、成为 Star Club 会员，并遵守 smart-casual 着装要求。",
   category: "tournament",
   date: "2026-06-18",
   updated: "2026-08-28",
@@ -38,7 +38,7 @@ WPT Australia 2026 重回 The Star Sydney，规模是 WPT 历史上最大的一�
 ---
 
 > **快速回答**
-> WPT Australia 2026 于 ==**9 月 10–30 日**== 在 The Star Sydney（达令港）举行。两场冠军赛：==**AUD $1,500 WPT Prime**==（9 月 17–22 日）和 ==**AUD $5,000 WPT Australia Championship**==（9 月 24–30 日）。冠军赛冠军的头名奖金里包含 ==g:一个 $15,000 的 WPT World Championship 席位==——注意：==r:这笔席位是从奖池里扣除的，并非额外加发==。==r:WPT Global 不在澳大利亚运营——只能打现场卫星赛。==
+> WPT Australia 2026 于 ==**9 月 10–30 日**== 在 The Star Sydney（达令港）举行。两场冠军赛：==**AUD $1,500 WPT Prime**==（9 月 17–22 日）和 ==**AUD $5,000 WPT Australia Championship**==（9 月 24–30 日）。冠军赛冠军的头名奖金里包含 ==g:一张 WPT World Championship 的门票==——注意：==r:这笔席位是从奖池里扣除的，并非额外加发==。==r:WPT Global 不在澳大利亚运营——只能打现场卫星赛。==
 
 ---
 
@@ -56,13 +56,13 @@ WPT Australia 2026 重回 The Star Sydney，规模是 WPT 历史上最大的一�
 | 冠军赛 2 | ==**WPT Australia AUD $5,000**== | AUD $5,500 |
 | 2025 奖池 | —— | ==g:AUD $3,000,000==（600 人次） |
 | 2025 冠军 | —— | Alan Pham（AUD $558,211） |
-| 赛事数 | ==**36 场赛事**==，预计 AUD $10M+ | 约 20 场赛事 |
+| 赛事数 | ==**36 场赛事**==，预计 AUD $10M+ | 32 场编号赛事＋卫星赛 |
 | 直播 | 两场决赛全球直播 | 仅主赛事 |
-| WC 席位 | ==g:$15,000 席位，从奖池扣除== | +$10,400 |
+| WC 席位 | ==g:WPT 世界锦标赛门票==（价值与扣除方式以官方条件为准） | +US $10,400 |
 
 </div>
 
-**为什么 2026 更大**：双冠军赛制把两个可全球直播的冠军头衔放进同一届赛事——AUD $1,500 的 WPT Prime Perpetual Trophy 和 AUD $5,000 的 Mike Sexton Champions Cup。有 $1,500 级别资金的国际牌手，现在不用押上 $5,000，也有了现实的夺得 WPT 头衔的路径。
+**为什么 2026 更大**：双冠军赛制把两个可全球直播的冠军头衔放进同一届赛事——AUD $1,500 的 WPT Prime 奖杯 和 AUD $5,000 的 Mike Sexton Champions Cup。有 $1,500 级别资金的国际牌手，现在不用押上 $5,000，也有了现实的夺得 WPT 头衔的路径。
 
 ---
 
@@ -79,12 +79,12 @@ WPT Australia 2026 重回 The Star Sydney，规模是 WPT 历史上最大的一�
 | 预计规模 | 500–800 人次 | 400–600 人次 |
 | 结构 | 深筹码、多单日赛 | 深筹码、3 个单日赛 |
 | 决赛桌 | ==g:全球直播== | ==g:全球直播== |
-| 争夺的奖杯 | WPT Prime Perpetual Trophy | Mike Sexton Champions Cup + WC 席位 |
+| 争夺的奖杯 | WPT Prime 奖杯 | Mike Sexton Champions Cup + WC 席位 |
 | 适合谁 | 新人、中等资金的常客 | 有经验的锦标赛常客 |
 
 </div>
 
-**建议**：如果这是你第一场 WPT 赛事，==g:从 AUD $1,500 的 Prime 开始==。你能体验完整的 WPT 氛围——直播决赛桌、深结构、争夺 Prime Perpetual Trophy 的机会——花费大约只有冠军赛买入的三分之一。很多牌手两场都报。
+**建议**：如果这是你第一场 WPT 赛事，==g:从 AUD $1,500 的 Prime 开始==。你能体验完整的 WPT 氛围——直播决赛桌、深结构、争夺 WPT Prime 奖杯 的机会——花费大约只有冠军赛买入的三分之一。很多牌手两场都报。
 
 ---
 
@@ -102,7 +102,7 @@ WPT Australia 2026 重回 The Star Sydney，规模是 WPT 历史上最大的一�
 
 | 路径 | 形式 | 买入 | 赢得 |
 |:---:|---|---|---|
-| **主赛直接资格赛** | 赛前阶段，==**7 月 24 日**==起 | ==g:$290 或 $550== | Championship 席位 |
+| **主赛直接资格赛** | ==**$550：7 月 24 日–9 月 25 日** · **$290：7 月 30 日–9 月 9 日**== | ==g:$290 或 $550== | Championship 席位 |
 | **主赛直接资格赛** | 赛事期间，==**至 9 月 25 日**== | $550 | Championship 席位 |
 | **Prime Championship** | 1/6 卫星赛 | ==g:$290== | Prime 席位 |
 | **Australian Poker Cup** | 1/5 卫星赛 | $270 | Poker Cup 席位 |
@@ -158,7 +158,7 @@ WPT Australia 2026 重回 The Star Sydney，规模是 WPT 历史上最大的一�
 
 2026 年买入降到 AUD $5,000（从 2025 年的 $5,500 下调），加上新的双冠军赛制把更多牌手带进赛事，参赛规模预计将是赛事史上最大。
 
-**冠军的席位**：WPT Australia Championship 头名奖金里包含 ==g:2026 年 12 月 WPT World Championship 的 $15,000 席位==。官方措辞要读仔细——这个席位是==r:头名奖金的一部分，会从总奖池里扣除==，而不是在现金之外另加的奖励。Prime Championship 的冠军同样条件下获得 $1,500 的 Prime 席位。
+**冠军的席位**：WPT Australia Championship 头名奖金里包含 ==g:一张 WPT World Championship 的门票==。The Star 公布的赛程只写「CHAMPIONSHIP = ticket to WPT World Championship」——==r:既没有公布门票的金额，也没有说它是否从奖池扣除==。作参考：WPT 把世界锦标赛的买入列为 ==**US $10,400**==。Prime Championship 的冠军获得赛季末 WPT Prime Championship 的门票，同样没有公布金额。==r:在把标题上的奖金当成全额现金之前，先看最终的赛事条件。==
 
 ---
 
@@ -173,6 +173,8 @@ WPT Australia 2026 重回 The Star Sydney，规模是 WPT 历史上最大的一�
 ### 1. 你必须加入 The Star Club（免费，但必须）
 
 不成为 **Star Club 会员**，你连一手牌都打不了。会员免费，但需要本人到场核验身份。
+
+🔴 **你还需要一个已验证的 WPT.com 账号。** WPT 两场冠军赛的官方页面都写着「All players are required to have a verified WPT.com account to play World Poker Tour Events」。只有 Star Club 是不够的——==g:这是唯一能在家里办完的要求==，出发前就把它办好。
 
 <div style="background:rgba(59,130,246,0.06);border:1px solid rgba(59,130,246,0.25);border-radius:14px;padding:16px 24px;margin:24px 0">
 
@@ -217,7 +219,11 @@ The Star Sydney 位于 **80 Pyrmont Street, Pyrmont NSW 2009**——就在达令
 
 ### NSW 法律：每日现金博彩上限 AUD $5,000
 
-根据 **NSW 现金处理改革（cash-handling reforms）**，博彩游戏有 **AUD $5,000 每日现金上限**（该上限计划从 2027 年 8 月起降到 AUD $1,000/日）。入场以**记名方式（carded）**进行——你通过 Star Club 会员卡记名游戏——所有锦标赛报名（包括卫星赛）都必须用博彩筹码支付，不能在牌桌用信用卡或现金。
+根据 **NSW 现金处理改革（cash-handling reforms）**，博彩游戏有 **AUD $5,000 每日现金上限**（降至 AUD $1,000/日的时间已推迟到 ==**2027 年 8 月 19 日**==，且该推迟可能在此期间被撤回）。
+
+⚠️ **这不是入境规定。** AUD $5,000 是你在 The Star 每天可投入游戏的现金上限。另外一回事是：澳洲边境规定要求，携带 ==r:AUD $10,000 或以上==（或等值外币）进出境时==r:必须申报==。==g:可携带的金额本身没有上限==——要求的是申报。
+
+入场以**记名方式（carded）**进行——你通过 Star Club 会员卡记名游戏——所有锦标赛报名（包括卫星赛）都必须用博彩筹码支付，不能在牌桌用信用卡或现金。
 
 ### 电汇到 The Star Sydney——在你抵达之前
 
@@ -255,7 +261,7 @@ The Star Sydney 位于 **80 Pyrmont Street, Pyrmont NSW 2009**——就在达令
 |---|---|---|---|---|
 | **英国 + 35 个欧盟/欧洲国家**（德国、法国、意大利、西班牙等） | ==g:eVisitor (subclass 651)== | [immi.homeaffairs.gov.au](https://immi.homeaffairs.gov.au) | ==g:**免费**== | 通常即时至 1 天 |
 | **美国、加拿大、日本、韩国、新加坡、香港** | ETA (subclass 601) | [Australian ETA app](https://eta.homeaffairs.gov.au)（仅手机） | AUD $20 | 通常即时 |
-| 大多数其他国家 | Visitor Visa (subclass 600) | [immi.homeaffairs.gov.au](https://immi.homeaffairs.gov.au) | AUD $200 | 数天至数周 |
+| 大多数其他国家 | Visitor Visa (subclass 600) | [immi.homeaffairs.gov.au](https://immi.homeaffairs.gov.au) | AUD $250 起 | 数天至数周 |
 
 
 
@@ -308,7 +314,7 @@ A. ==g:对于休闲牌手，扑克奖金在澳大利亚一般不征税==——AT
 
 **Q. 打 WPT Australia 的 Day 1，该提前多久到场？**
 
-A. 按公布的开赛时间来安排：官方冠军赛事页面写明报名==g:在开赛前 1 小时开放==。人多的冠军赛起始单日赛，仍然留 90 分钟比较稳——真正的瓶颈是报名排队，以及你还没入会时的 Star Club 排队。万一来不及，==g:无限次 re-entry 开放到 Day 1A、1B、1C 的第 10 级开始==，所以迟到还有救。
+A. 按公布的开赛时间来安排：官方冠军赛事页面写明报名==g:在开赛前 1 小时开放==。人多的冠军赛起始单日赛，仍然留 90 分钟比较稳——真正的瓶颈是报名排队，以及你还没入会时的 Star Club 排队。万一来不及，==g:re-entry 开放到 Day 1A、1B、1C 的第 10 级开始==，所以迟到还有救。==r:不过次数在官方之间对不上==——The Star 的 2026 赛程写「Unlimited Re-Entry」，WPT 官方页面写「once per flight」。要算第二发的话，先到登记台确认。
 
 **Q. 如果我早早出局，能在 The Star Sydney 打现金局吗？**
 
