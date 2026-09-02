@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "WPT Australia 2026 – Der komplette Spieler-Guide: Schedule, Satellites & echte Kosten",
   seoTitle: "WPT Australia 2026: Poker-Guide für dein erstes Mal",
   desc: "WPT Australia 2026 – 10.–30. Sep, The Star Sydney. AUD $1.500 Prime + AUD $5.000 Championship. Satellites ab AUD $270. Echte Reisekosten, die andere weglassen.",
-  tldr: "WPT Australia 2026: 10.–30. Sep, The Star Sydney. Zwei Flaggschiffe: AUD $1.500 WPT Prime (17.–22. Sep) und AUD $5.000 WPT Championship (24.–30. Sep). On-Site-Satellites ab AUD $270, Championship-Qualifier ab $290. Im Preisgeld für Platz 1 steckt ein Ticket zur WPT World Championship. Mindestalter 18, Star-Club-Mitgliedschaft mit verifiziertem WPT.com-Konto und Smart-Casual-Dresscode sind Pflicht.",
+  tldr: "WPT Australia 2026: 10.–30. Sep, The Star Sydney. Zwei Flaggschiffe: AUD $1.500 WPT Prime (17.–22. Sep) und AUD $5.000 WPT Championship (24.–30. Sep). On-Site-Satellites ab AUD $270, Championship-Qualifier ab $290. Im Preisgeld für Platz 1 der Championship steckt ein WPT-World-Championship-Seat im Wert von $15.000, der aus dem Preispool abgezogen wird. Mindestalter 18, Star-Club-Mitgliedschaft mit verifiziertem WPT.com-Konto und Smart-Casual-Dresscode sind Pflicht.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-08-28",
+  updated: "2026-09-02",
   readTime: "14 Min.",
   emoji: "🦘",
   layout: "tournament-guide",
@@ -37,7 +37,7 @@ Erstes Live-Festival? Fang mit [dem Turnier-Guide](/de/blog/holdem-tournament "t
 ---
 
 > **Kurze Antwort**
-> Die WPT Australia 2026 läuft ==**vom 10.–30. Sep**== im The Star Sydney, Darling Harbour. Zwei Championship-Events: ==**AUD $1.500 WPT Prime**== (17.–22. Sep) und ==**AUD $5.000 WPT Australia Championship**== (24.–30. Sep). Im Preisgeld für Platz 1 der Championship steckt ein ==g:Ticket zur WPT World Championship== – ==r:prüfe in den finalen Turnierbedingungen, wie es bewertet wird und ob es aus dem Preispool kommt==. ==r:WPT Global führt Australien als ausgeschlossenes Gebiet==, du kannst es also von Australien aus nicht nutzen – offiziell veröffentlicht ist für dieses Festival der Weg über die Live-Satellites im The Star.
+> Die WPT Australia 2026 läuft ==**vom 10.–30. Sep**== im The Star Sydney, Darling Harbour. Zwei Championship-Events: ==**AUD $1.500 WPT Prime**== (17.–22. Sep) und ==**AUD $5.000 WPT Australia Championship**== (24.–30. Sep). Im Preisgeld für Platz 1 der Championship steckt ein ==g:WPT-World-Championship-Seat im Wert von $15.000== – beachte dabei: Er wird ==r:aus dem Gesamt-Preispool abgezogen und nicht obendrauf gezahlt== (so steht es auf der offiziellen Eventseite). ==r:WPT Global führt Australien als ausgeschlossenes Gebiet==, du kannst es also von Australien aus nicht nutzen – offiziell veröffentlicht ist für dieses Festival der Weg über die Live-Satellites im The Star.
 
 ---
 
@@ -57,7 +57,7 @@ Das diesjährige Festival kehrt ins ==**The Star Sydney**== zurück und führt e
 | Sieger 2025 | – | Alan Pham (AUD $558.211) |
 | Events | ==**36 Events**== (AUD $10M+ geschätzt, nicht garantiert) | 32 nummerierte Events + Satellites |
 | Livestream | Beide Finals weltweit | Nur Main Event |
-| WC-Seat | ==g:Ticket zur WPT World Championship== (Wert und Verrechnung laut offiziellen Bedingungen) | +US $10.400 |
+| WC-Seat | ==g:$15.000-Seat (Bewertung des Veranstalters), wird aus dem Preispool abgezogen== | +US $10.400 |
 
 </div>
 
@@ -157,7 +157,7 @@ Wenn du außerhalb Australiens bist und dich vor dem Abflug mit Online-Satellite
 
 Mit dem auf AUD $5.000 gesenkten 2026er-Buy-in (runter von $5.500 in 2025) und einem neuen Dual-Championship-Format, das mehr Spieler ins Festival bringt, werden die Felder voraussichtlich die größten der Event-Geschichte.
 
-**Der Seat des Siegers**: Im Preisgeld für Platz 1 der WPT Australia Championship steckt ein ==g:Ticket zur WPT World Championship==. Der veröffentlichte Zeitplan des The Star vermerkt dazu nur „CHAMPIONSHIP = ticket to WPT World Championship" – ==r:ein Geldwert des Tickets wird nicht genannt, und auch nicht, ob es aus dem Preispool kommt==. Zur Einordnung: WPT gibt das Buy-in der World Championship mit ==**US $10.400**== an. Der Sieger des Prime Championship erhält ein Ticket zur WPT Prime Championship am Saisonende – ebenfalls ohne veröffentlichten Wert. ==r:Lies die finalen Turnierbedingungen, bevor du davon ausgehst, dass das Headline-Preisgeld komplett Cash ist.==
+**Der Seat des Siegers**: Im Preisgeld für Platz 1 der WPT Australia Championship steckt ein ==g:WPT-World-Championship-Seat im Wert von $15.000== – so bewertet ihn der Veranstalter auf der offiziellen Championship-Eventseite (eine Währung nennt die Seite nicht; die Festivalwährung ist AUD, und WPT gibt das Buy-in der World Championship mit ==**US $10.400**== an). Lies die offizielle Formulierung genau: Der Seat ist ==r:Teil des Preises für Platz 1 und wird aus dem Gesamt-Preispool abgezogen== – er kommt nicht als Bonus obendrauf. Der veröffentlichte Zeitplan des The Star vermerkt dazu nur „CHAMPIONSHIP = ticket to WPT World Championship"; Wert und Abzug stehen auf der Eventseite, nicht im Zeitplan-Aushang. Der Sieger des Prime Championship erhält zu denselben Bedingungen einen WPT-World-Championship-Prime-Seat im Wert von $1.500. ==r:Lies die finalen Turnierbedingungen, bevor du davon ausgehst, dass das Headline-Preisgeld komplett Cash ist.==
 
 ---
 
@@ -305,7 +305,7 @@ A. Du kannst dich vorab online unter thestarclub.com.au/sign-up registrieren, um
 
 **Q. Was ist der günstigste Weg in die WPT Australia Championship?**
 
-A. Der ==g:AUD $290 Championship Direct Qualifier== ist der günstigste Weg – ein einzelner Satellite, der direkt um einen $5.000-Championship-Seat spielt, ohne Step-Leiter. Die $290-Variante läuft im Vor-Festival-Schedule (ab 24. Juli); sobald das Festival läuft, kosten die Championship-Qualifier $550. Die komplette Satellite-Liste steht auf [starpoker.com.au](https://www.starpoker.com.au/wpt-australia).
+A. Der ==g:AUD $290 Championship Direct Qualifier== ist der günstigste Weg – ein einzelner Satellite, der direkt um einen $5.000-Championship-Seat spielt, ohne Step-Leiter. Die $290-Variante läuft im Vor-Festival-Schedule (ab 30. Juli); sobald das Festival läuft, kosten die Championship-Qualifier $550. Die komplette Satellite-Liste steht auf [starpoker.com.au](https://www.starpoker.com.au/wpt-australia).
 
 **Q. Werden Poker-Gewinne in Australien besteuert?**
 

@@ -378,7 +378,7 @@ Verglichen mit der EPT Barcelona (~€5.300 Main) oder WPT Australia (~AUD $5.00
 
 **Q. Ist das Paradise City Casino wirklich vom Flughafen Incheon aus zu Fuß erreichbar?**
 
-A. Sehr nah. Paradise City betreibt einen kostenlosen Shuttle vom Terminal 1 (Gate 3C) alle 20 Minuten – die Fahrt dauert etwa 10 Minuten. Terminal 2 hat seinen eigenen Shuttle alle 60 Minuten ab Gate 4A. Das Resort ist ein flughafennaher integrierter Komplex, speziell für internationale Ankünfte konzipiert.
+A. Zu Fuß nicht – aber sehr nah. Paradise City betreibt einen kostenlosen Shuttle vom Terminal 1 (Gate 3C) alle 20 Minuten – die Fahrt dauert etwa 10 Minuten. Terminal 2 hat seinen eigenen Shuttle alle 60 Minuten ab Gate 4A. Das Resort ist ein flughafennaher integrierter Komplex, speziell für internationale Ankünfte konzipiert.
 
 **Q. Kann ich das APT Incheon Main Event spielen, wenn ich noch nie ein Live-Turnier gespielt habe?**
 

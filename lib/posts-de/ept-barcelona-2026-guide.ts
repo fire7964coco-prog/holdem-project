@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Die EPT Barcelona 2026 lief vom 16.–29. Aug. im Casino Barcelona. Der Italiener Manuel Ferrari gewann das €5.300-Main-Event und kassierte €1.002.488 aus einem Preispool von €8.841.550 bei 1.823 Entries. Für 2027 bleibt der günstigste Online-Weg der Power Path ab $0,50 → Gold Pass (€5.300 ME + €1.100 Side Event + 8 Nächte Hotel + €690 Spesen). Du brauchst ein PokerStars-Live-Konto und einen gültigen Ausweis, und Hotels solltest du früh buchen – der August ist Hochsaison.",
   category: "tournament",
   date: "2026-06-17",
-  updated: "2026-08-31",
+  updated: "2026-09-02",
   keepImagesInBody: true,
   readTime: "16 Min.",
   emoji: "🃏",
@@ -80,7 +80,7 @@ Die ==**European Poker Tour (EPT)**== ist die Flaggschiff-Live-Pokerserie von Po
 | Main-Event-Entries | ==g:**1.823**== | ==g:**2.045**== (drittgrößtes in der EPT-Barcelona-Geschichte) |
 | Main-Event-Preispool | ==g:**€8.841.550**== | ==g:**€9.918.250**== |
 | Erster Preis | ==g:**€1.002.488**== (Manuel Ferrari, Italien) | ==g:**€1.217.175**== (Thomas Eychenne, Frankreich) |
-| Buy-in-Spanne | €825 – €100.000 | €825 – €100.000 |
+| Buy-in-Spanne | €330 – €100.000 | €330 – €100.000 |
 
 </div>
 
@@ -88,7 +88,7 @@ Die ==**European Poker Tour (EPT)**== ist die Flaggschiff-Live-Pokerserie von Po
 
 ---
 
-## EPT Barcelona 2026 – kompletter Zeitplan & Buy-ins – von €825 bis €100.000
+## EPT Barcelona 2026 – kompletter Zeitplan & Buy-ins – von €330 bis €100.000
 
 Das Festival fährt zwei parallele Serien: das **PokerStars Open** (zugängliche Einstiegspunkte) und die **EPT** (Premium-Events). Beide teilen sich das Casino Barcelona.
 
@@ -122,8 +122,8 @@ PokerStars hat den Power Path gezielt so designt, dass er ==Profis davon abhält
 
 | Stufe | Format | Buy-in | Direkt einkaufbar? |
 |:---|:---:|:---:|:---|
-| Step 1 | $0,50 Spin & Go (oder $1 On Demand SNG) | **$0,50** | ✅ Ja (oder gratis Daily-Ticket) |
-| Step 2 | $1,50 MTT | **$1,50** | ✅ Ja |
+| Step 1 | $0,50 Spin & Go | **$0,50** | ✅ Ja (oder gratis Daily-Ticket) |
+| Step 2 | $1 Sit & Go oder $1,50 MTT | **$1–$1,50** | ✅ Ja |
 | Step 3 | $11 MTT | **$11** | ✅ Ja |
 | Step 4 | $55 MTT | – | ==r:❌ Du musst ein Step-3-Ticket gewinnen== |
 
@@ -131,22 +131,23 @@ PokerStars hat den Power Path gezielt so designt, dass er ==Profis davon abhält
 
 ![PokerStars Power Path Leiter zur EPT Barcelona 2026 – Stufen bei $0,50, $1,50, $11 und $55 hinauf zum Gold Pass mit einem €5.300-Main-Event-Platz plus Hotel](/images/ept-barcelona-2026-guide-powerpath.webp "Die Power-Path-Leiter: vom $0,50-Step hinauf zum Gold Pass, der das €5.300-Main-Event und das Hotel abdeckt")
 
-Gewinnst du Step 4, erhältst du einen von drei Power Passes:
+Gewinnst du Step 4, erhältst du einen von vier Power Passes:
 
 | Pass | Wert | Was enthalten ist |
 |:---|:---:|:---|
+| Spade Pass | ~$109 | Guthaben für Online-Turniere auf Einstiegsniveau |
 | Bronze Pass | ~$530 | Online-Turnier-Guthaben |
-| Silver Pass | ~$2.300 | Mid-Tier-Live-Event-Einträge |
+| Silver Pass | ~$2.500 | Mid-Tier-Live-Event-Einträge |
 | ==**Gold Pass**== | ==g:**~$10.300** (USD)== | ==g:€5.300 ME + €1.100 Side Event + 8 Nächte Hotel + €690 Spesen== |
 
 ==g:Der **Gold Pass** ist der, den du willst.== PokerStars zielt darauf ab, dass mindestens 25% des Main-Event-Felds Satellite-Qualifikanten sind – die Plätze sind also echt.
 
 ### So findest du den Power Path im PokerStars-Client
 
-1. Öffne PokerStars → klick auf den Tab **Events**
+1. Öffne PokerStars → klick auf den Tab **Power Path**
 2. Such nach „Power Path“ oder „EPT Barcelona“
 3. Wähl deine Startstufe
-4. Du siehst außerdem ==g:täglich gutgeschriebene gratis Step-1-Tickets==, wenn du irgendein Echtgeld-Spiel spielst
+4. Du siehst außerdem ==g:täglich gutgeschriebene gratis Step-1-Tickets==, wenn du Poker um Echtgeld spielst – wirf trotzdem einen Blick in die Power-Path-Bedingungen, denn Aktionen ersetzen das tägliche Ticket gelegentlich
 
 ---
 
@@ -317,7 +318,7 @@ Das Casino Barcelona ist entspannter als Monte Carlo – aber es gibt echte Rege
 
 ## Wie kommst du vom Flughafen El Prat zum Casino Barcelona?
 
-Barcelona El Prat (BCN) ist etwa ==12 km vom Casino entfernt== – je nach Verkehr rund 25–40 Minuten.
+Barcelona El Prat (BCN) ist etwa ==12 km vom Stadtzentrum entfernt== – je nach Verkehr rund 25–40 Minuten.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -342,11 +343,11 @@ Barcelona El Prat (BCN) ist etwa ==12 km vom Casino entfernt== – je nach Verke
 
 ## Wie läuft Day 1 des EPT Main Events ab?
 
-Day 1 ist auf mehrere Start-Flights aufgeteilt (Day 1A, 1B, 1C, manchmal 1D). Du wählst einen. Die meisten Spieler wählen ==Day 1B oder 1C== – das sind typischerweise größere Felder, was einschüchternd klingt, aber auch mehr Recreational-Spieler bedeutet.
+2026 war Day 1 auf zwei Start-Flights aufgeteilt – ==Day 1A (22. Aug.) und Day 1B (23. Aug.)==. Du wählst einen. Der spätere Flight hat typischerweise das größere Feld, was einschüchternd klingt, aber auch mehr Recreational-Spieler bedeutet.
 
 ### Was du mitbringen musst
 
-- ==**Reisepass oder Personalausweis**== (==r:kein Pass, kein Spiel== – das ist nicht verhandelbar)
+- ==**Reisepass oder Personalausweis**== (==r:kein gültiger Ausweis, kein Spiel== – das ist nicht verhandelbar)
 - Dein ==**PokerStars-Live-Konto**== verifiziert und aktiv
 - **Source-of-Funds-Formular** ausgefüllt, falls du bar zahlst
 - Eine leichte Jacke (==r:die Casino-Klimaanlage ist im August aggressiv==)
@@ -361,7 +362,7 @@ Day 1 ist auf mehrere Start-Flights aufgeteilt (Day 1A, 1B, 1C, manchmal 1D). Du
 
 | Zeit | Was passiert |
 |---|---|
-| ~11:00 | Registrierung öffnet (==r:sei mindestens 30 Min. früher da==) |
+| ~11:00 | Registrierung öffnet (==r:komm genau zur Öffnung – bei 30–45 Min. Schlange ist «30 Min. vor Spielbeginn» schon zu spät==) |
 | ~12:00 | Cards in the air – Day 1 beginnt |
 | Abends | Spielende für Day 1 – üblicherweise 8 Level; die genaue Uhrzeit hängt von der Struktur ab |
 | Day 2+ | ==g:Nur Spieler, die Chips eingetütet haben, machen weiter== |

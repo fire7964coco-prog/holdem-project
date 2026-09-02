@@ -135,11 +135,11 @@ The reason is one hand. **Exactly one holding makes a straight on 6-5-2, and nei
 Spot | BTN opens 2.5bb → BB calls (heads-up)
 Flop | 6♠ 5♥ 2♦ (low, rainbow)
 Pot · stack | Pot 5.5bb · effective stack 97.5bb (SPR about 17.7)
-Result | BB checks 96.8% — high equity, no top end
+Result | BB checks 96.8% — high equity, no top-end edge
 :::
 
 > **Quick answer**
-> Check, then take your shot on the raise. Equity is not what buys you the right to bet first — a top end is, and this board has none. Once the button bets, the big blind gets to be the aggressor: it check-raises with every set it holds and fills the rest of that raise with straight draws — the group it holds more of than the button, and the one it actually spends here.
+> Check, then take your shot on the raise. Equity is not what buys you the right to bet first — a top-end edge is, and this board gives neither side one. Once the button bets, the big blind gets to be the aggressor: it check-raises with every set it holds and fills the rest of that raise with straight draws — the group it holds more of than the button, and the one it actually spends here.
 
 ## What conditions produced these numbers?
 
@@ -234,7 +234,7 @@ In a 5.5bb pot, 48.3% equity is worth ==5.5 × 48.3% = 2.66bb==. The big blind a
 
 The number to compare it against is the [ace-high flop](/en/blog/a-high-board-cbet), where the big blind had **45.1%** equity and realized **84.0%**. Three points more equity here, and it keeps virtually the same fraction of it. Meanwhile the big blind realized **93.2%** on 9-8-7 — because on that flop it held straights, so it could bet even out of position.
 
-**Position is worth more than three points of equity when your range has no top end.** That is the whole gap.
+**Position is worth more than three points of equity when your range has no top-end edge.** That is the whole gap.
 
 ## When should you check-raise on this flop?
 
@@ -318,7 +318,7 @@ That combination — a low ceiling and a wide floor — is what produces the num
 
 ## What changes at the table?
 
-- **Stop leading low rainbow boards just because you "hit something."** Equity of 48.3% is not a reason. On 6-5-2 the entire range leads 3.2%, and the hands doing it are barely committed to it. The lead here is a single size, a third of the pot, so the button only needs **19.8%** to call — and its ace-highs and king-highs, **42.9%** of the range between them, clear that bar easily. You do not fold them out, and what does call has hands that beat you mixed in.
+- **Stop leading low rainbow boards just because you "hit something."** Equity of 48.3% is not a reason. On 6-5-2 the entire range leads 3.2%, and the hands doing it are barely committed to it. The lead here is a single size, a third of the pot, so the button only needs **19.8%** to call — and its ace-highs and king-highs, **42.9%** of the range between them, come in above that bar. You do not fold them out, and what does call has hands that beat you mixed in.
 - **Check-raise with your sets, all of them.** All nine set combos raise 100% of the time. Slow-playing a set here — when the button has just as many — throws away the one big pot you were going to win.
 - **Pick your bluffs by draw, not by high card.** The raising range is built from gutshots. An ace-high with no draw — A-J, A-9 — belongs in the calling range, the 65.6%, not the raise. (A-K never reaches this spot: the big blind's defending range tops out at A-J.)
 - **Do not over-fold to a small bet.** Against 1.8bb into 5.5bb the solver keeps **80.5%** of its range, above the 75.3% break-even figure. Folding your king-high and weak pairs to one small bet is the single most exploitable habit on a board like this.
@@ -346,7 +346,7 @@ A. When your range has hands that gain from a bigger pot and enough draws to bal
 
 **Q. Why doesn't the big blind bet first on a low board?**
 
-A. Because equity is not what earns the right to bet first — a top end is, and this board has none. Sets are split 1.8% to 1.8%, and the one holding that would beat them, 4-3, sits outside both ranges. With no hand that beats the opponent's best, there is nothing to build a pot with, so the big blind leads just 3.2%.
+A. Because equity is not what earns the right to bet first — a top-end edge is, and this board gives neither side one. Sets are split 1.8% to 1.8%, and the one holding that would beat them, 4-3, sits outside both ranges. With no hand that beats the opponent's best, there is nothing to build a pot with, so the big blind leads just 3.2%.
 
 **Q. Why is the strategy so different from 9-8-7 with almost the same equity?**
 

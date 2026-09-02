@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "WPT Australia 2026 — Panduan Pemain Lengkap: Jadwal, Satelit & Biaya Nyata",
   seoTitle: "Pertama Kali di WPT Australia? Semua yang Perlu Anda Tahu 2026",
   desc: "WPT Australia 2026 — 10–30 Sep, The Star Sydney. AUD $1.500 Prime + AUD $5.000 Championship. Satelit dari AUD $270. Biaya perjalanan nyata.",
-  tldr: "WPT Australia 2026: 10–30 Sep, The Star Sydney. Dua flagship: AUD $1.500 WPT Prime (17–22 Sep) dan AUD $5.000 WPT Championship (24–30 Sep). Satelit on-site dari AUD $270, dengan qualifier Championship $290 dan $550. Hadiah juara pertama Championship sudah termasuk tiket ke WPT World Championship. Wajib 18+, anggota Star Club, dan dress code smart-casual ditegakkan.",
+  tldr: "WPT Australia 2026: 10–30 Sep, The Star Sydney. Dua flagship: AUD $1.500 WPT Prime (17–22 Sep) dan AUD $5.000 WPT Championship (24–30 Sep). Satelit on-site dari AUD $270, dengan qualifier Championship $290 dan $550. Hadiah juara pertama Championship sudah termasuk kursi WPT World Championship senilai $15.000 yang dipotong dari prize pool. Wajib 18+, anggota Star Club, dan dress code smart-casual ditegakkan.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-08-28",
-  masterUpdated: "2026-08-28",
+  updated: "2026-09-02",
+  masterUpdated: "2026-09-02",
   readTime: "14 mnt",
   emoji: "🦘",
   layout: "tournament-guide",
@@ -38,7 +38,7 @@ Festival live pertama Anda? Mulai dengan [panduan turnamen](/id/blog/holdem-tour
 ---
 
 > **Jawaban Cepat**
-> WPT Australia 2026 berlangsung ==**10–30 Sep**== di The Star Sydney, Darling Harbour. Dua event championship: ==**AUD $1.500 WPT Prime**== (17–22 Sep) dan ==**AUD $5.000 WPT Australia Championship**== (24–30 Sep). Hadiah juara pertama Championship sudah termasuk ==g:tiket ke WPT World Championship== — ==r:cek ketentuan resmi final soal nilainya dan apakah dipotong dari prize pool==. ==r:WPT Global mencantumkan Australia sebagai wilayah yang dikecualikan==, jadi tidak bisa dipakai selama Anda di Australia — jalur kualifikasi yang resmi diumumkan untuk festival ini adalah satelit langsung di The Star.
+> WPT Australia 2026 berlangsung ==**10–30 Sep**== di The Star Sydney, Darling Harbour. Dua event championship: ==**AUD $1.500 WPT Prime**== (17–22 Sep) dan ==**AUD $5.000 WPT Australia Championship**== (24–30 Sep). Hadiah juara pertama Championship sudah termasuk ==g:kursi WPT World Championship senilai $15.000== — perhatikan, kursi itu ==r:dipotong dari total prize pool, bukan bonus tambahan di luar hadiah uang== (tertulis di halaman resmi event). ==r:WPT Global mencantumkan Australia sebagai wilayah yang dikecualikan==, jadi tidak bisa dipakai selama Anda di Australia — jalur kualifikasi yang resmi diumumkan untuk festival ini adalah satelit langsung di The Star.
 
 ---
 
@@ -58,7 +58,7 @@ Festival tahun ini kembali ke ==**The Star Sydney**== dan memperkenalkan **forma
 | Juara 2025 | — | Alan Pham (AUD $558.211) |
 | Event | ==**36 event**==, est. AUD $10 juta+ | 32 event bernomor + satelit |
 | Livestream | Kedua final global | Hanya main event |
-| Kursi WC | ==g:Tiket ke WPT World Championship== (nilai dan pemotongannya sesuai ketentuan resmi) | +US $10.400 |
+| Kursi WC | ==g:Kursi senilai $15.000 (valuasi penyelenggara), dipotong dari prize pool== | +US $10.400 |
 
 </div>
 
@@ -158,7 +158,7 @@ Kalau Anda di luar Australia dan ingin pemanasan dengan satelit online sebelum t
 
 Dengan buy-in 2026 diturunkan menjadi AUD $5.000 (dari $5.500 pada 2025) dan format dual-championship baru yang membawa lebih banyak pemain ke festival, field diperkirakan menjadi yang terbesar dalam sejarah event.
 
-**Kursi sang juara**: Hadiah peringkat pertama di WPT Australia Championship sudah termasuk ==g:tiket ke WPT World Championship==. Jadwal resmi The Star hanya menulis "CHAMPIONSHIP = ticket to WPT World Championship" — ==r:tidak menyebut nilai uang tiket itu, dan tidak menyebut apakah dipotong dari prize pool==. Sebagai acuan, WPT mencantumkan buy-in World Championship sebesar ==**US $10.400**==. Juara Prime Championship menerima tiket ke WPT Prime Championship akhir musim, juga tanpa nilai yang dipublikasikan. ==r:Baca Tournament Conditions final sebelum menganggap hadiah utama itu seluruhnya tunai.==
+**Kursi sang juara**: Hadiah peringkat pertama di WPT Australia Championship sudah termasuk ==g:kursi WPT World Championship senilai $15.000== — itu valuasi penyelenggara, tertulis di halaman resmi event Championship (halaman itu tidak menyebut mata uangnya; mata uang festival ini AUD, dan WPT mencantumkan buy-in World Championship sebesar ==**US $10.400**==). Baca kalimat resminya baik-baik: kursi itu ==r:bagian dari hadiah juara pertama dan dipotong dari total prize pool==, bukan bonus tambahan di luar uang tunai. Brosur jadwal The Star hanya menulis "CHAMPIONSHIP = ticket to WPT World Championship"; nilai dan pemotongannya ada di halaman event, bukan di brosur. Juara Prime Championship menerima kursi Prime WPT World Championship senilai $1.500 dengan ketentuan yang sama. ==r:Baca Tournament Conditions final sebelum menganggap hadiah utama itu seluruhnya tunai.==
 
 ---
 
@@ -307,7 +307,7 @@ A. Anda bisa pra-registrasi online di thestarclub.com.au/sign-up untuk menghemat
 
 **Q. Apa cara termurah untuk masuk ke WPT Australia Championship?**
 
-A. ==g:Championship Direct Qualifier AUD $290== adalah jalur termurah — satu satelit yang langsung memperebutkan kursi Championship $5.000, tanpa tangga step. Versi $290 ada di jadwal pra-festival (mulai 24 Juli); begitu festival berjalan, qualifier Championship menjadi $550. Daftar satelit lengkap: [starpoker.com.au](https://www.starpoker.com.au/wpt-australia).
+A. ==g:Championship Direct Qualifier AUD $290== adalah jalur termurah — satu satelit yang langsung memperebutkan kursi Championship $5.000, tanpa tangga step. Versi $290 ada di jadwal pra-festival (mulai 30 Juli); begitu festival berjalan, qualifier Championship menjadi $550. Daftar satelit lengkap: [starpoker.com.au](https://www.starpoker.com.au/wpt-australia).
 
 **Q. Apakah kemenangan poker dikenai pajak di Australia?**
 

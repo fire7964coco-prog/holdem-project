@@ -141,7 +141,7 @@ A Natural8 é a parceira online oficial do APT e roda a campanha de satellites =
 
 :::note[**★Situação em 9 de agosto de 2026 — a classificação online acabou.** O Mega de $35 e os classificatórios OnLive Day 1 encerraram em 2 de agosto, e a última via, o **Step de $20 → Mega de $200**, fechou na **sexta-feira, 7 de agosto** — o dia de abertura do festival (o Main Event em si começou em 9 de agosto). As 52 + 22 = 74 vagas da tabela são o total já distribuído. As rotas ficam documentadas porque a mesma estrutura volta na próxima parada do APT.]:::
 
-**O caminho de steps que continua aberto:**
+**Como era o caminho de steps — a mesma estrutura volta na próxima etapa da APT:**
 
 <div style="background:rgba(0,0,0,0.25);border:1px solid rgba(255,255,255,0.10);border-radius:10px;padding:14px 20px;margin:16px 0;font-size:13px;line-height:1.8">
 Step de $20 → ganhe o ticket pro Mega Satellite de $200 → ganhe a vaga no Main Event (valor ~$1.703) · o último dia foi 7 de agosto
@@ -376,7 +376,7 @@ Comparado ao EPT Barcelona (Main ~€5.300) ou ao WPT Australia (Main ~AUD $5.00
 
 **Q. O Paradise City Casino é mesmo caminhável a partir do Aeroporto de Incheon?**
 
-A. Bem pertinho. O Paradise City roda um shuttle grátis a partir do Terminal 1 (Portão 3C) a cada 20 minutos — a viagem leva cerca de 10 minutos. O Terminal 2 tem o seu próprio shuttle a cada 60 minutos a partir do Portão 4A. O resort é um complexo integrado adjacente ao aeroporto, projetado especificamente pra chegadas internacionais.
+A. A pé, não — mas é bem pertinho. O Paradise City roda um shuttle grátis a partir do Terminal 1 (Portão 3C) a cada 20 minutos — a viagem leva cerca de 10 minutos. O Terminal 2 tem o seu próprio shuttle a cada 60 minutos a partir do Portão 4A. O resort é um complexo integrado adjacente ao aeroporto, projetado especificamente pra chegadas internacionais.
 
 **Q. Posso jogar o Main Event do APT Incheon se nunca joguei um torneio ao vivo?**
 

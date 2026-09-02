@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "EPT Barcelona 2026 berlangsung 16–29 Agu di Casino Barcelona. Pemain Italia Manuel Ferrari memenangi Main Event €5.300 dan membawa pulang €1.002.488 dari prize pool €8.841.550 dengan 1.823 entri. Untuk 2027, jalur online termurah tetap Power Path dari $0,50 → Gold Pass (Main Event €5.300 + side event €1.100 + hotel 8 malam + biaya €690). Anda butuh akun PokerStars Live dan paspor yang berlaku, dan sebaiknya pesan hotel lebih awal — Agustus musim puncak.",
   category: "tournament",
   date: "2026-06-17",
-  updated: "2026-08-31",
+  updated: "2026-09-02",
   keepImagesInBody: true,
   readTime: "16 mnt",
   emoji: "🃏",
@@ -80,7 +80,7 @@ Tiga besar menyepakati **deal tiga arah** dan menyisakan hanya ==**€100.000**=
 | Entri Main Event | ==g:**1.823**== | ==g:**2.045**== (terbesar ke-3 dalam sejarah EPT Barcelona) |
 | Prize pool Main Event | ==g:**€8.841.550**== | ==g:**€9.918.250**== |
 | Hadiah pertama | ==g:**€1.002.488**== (Manuel Ferrari, Italia) | ==g:**€1.217.175**== (Thomas Eychenne, Prancis) |
-| Rentang event | €825 – €100.000 | €825 – €100.000 |
+| Rentang event | €330 – €100.000 | €330 – €100.000 |
 
 </div>
 
@@ -88,7 +88,7 @@ Tiga besar menyepakati **deal tiga arah** dan menyisakan hanya ==**€100.000**=
 
 ---
 
-## Jadwal & Buy-In Lengkap EPT Barcelona 2026 — Dari €825 hingga €100.000
+## Jadwal & Buy-In Lengkap EPT Barcelona 2026 — Dari €330 hingga €100.000
 
 Festival ini menjalankan dua seri paralel: **PokerStars Open** (titik masuk terjangkau) dan **EPT** (event premium). Keduanya berbagi Casino Barcelona.
 
@@ -122,8 +122,8 @@ PokerStars merancang Power Path secara khusus untuk ==mencegah pro membeli langs
 
 | Langkah | Format | Buy-In | Bisa Buy-In Langsung? |
 |:---|:---:|:---:|:---|
-| Step 1 | Spin & Go $0,50 (atau SNG On Demand $1) | **$0,50** | ✅ Ya (atau tiket harian gratis) |
-| Step 2 | MTT $1,50 | **$1,50** | ✅ Ya |
+| Step 1 | Spin & Go $0,50 | **$0,50** | ✅ Ya (atau tiket harian gratis) |
+| Step 2 | Sit & Go $1 atau MTT $1,50 | **$1–$1,50** | ✅ Ya |
 | Step 3 | MTT $11 | **$11** | ✅ Ya |
 | Step 4 | MTT $55 | — | ==r:❌ Harus menang tiket Step 3== |
 
@@ -131,22 +131,23 @@ PokerStars merancang Power Path secara khusus untuk ==mencegah pro membeli langs
 
 ![Tangga PokerStars Power Path menuju EPT Barcelona 2026 — langkah-langkah $0,50, $1,50, $11 dan $55 menanjak ke Gold Pass dengan kursi Main Event €5.300 plus hotel](/images/ept-barcelona-2026-guide-powerpath.webp "Tangga Power Path: dari langkah $0,50 hingga Gold Pass yang mencakup Main Event €5.300 dan hotel")
 
-Menangkan Step 4 dan Anda menerima salah satu dari tiga Power Pass:
+Menangkan Step 4 dan Anda menerima salah satu dari empat Power Pass:
 
 | Pass | Nilai | Yang Termasuk |
 |:---|:---:|:---|
+| Spade Pass | ~$109 | Kredit turnamen online tingkat pemula |
 | Bronze Pass | ~$530 | Kredit turnamen online |
-| Silver Pass | ~$2.300 | Entri event live tingkat menengah |
+| Silver Pass | ~$2.500 | Entri event live tingkat menengah |
 | ==**Gold Pass**== | ==g:**~$10.300** (USD)== | ==g:Main Event €5.300 + side event €1.100 + hotel 8 malam + biaya €690== |
 
 ==g:**Gold Pass** adalah yang Anda inginkan.== PokerStars menargetkan setidaknya 25% field Main Event berasal dari kualifikasi satelit — jadi kursinya nyata.
 
 ### Cara Menemukan Power Path di Klien PokerStars
 
-1. Buka PokerStars → klik tab **Events**
+1. Buka PokerStars → klik tab **Power Path**
 2. Cari "Power Path" atau "EPT Barcelona"
 3. Pilih langkah awal Anda
-4. Anda juga akan melihat ==g:tiket Step 1 gratis dikreditkan setiap hari== jika Anda memainkan permainan uang nyata apa pun
+4. Anda juga akan melihat ==g:tiket Step 1 gratis dikreditkan setiap hari== saat Anda bermain poker uang asli — cek ketentuan Power Path, karena sesekali ada promo yang menggantikan tiket harian itu
 
 ---
 
@@ -202,7 +203,7 @@ Tidak mau grind empat langkah? PokerStars juga menjalankan **satelit langsung** 
 
 | Item | Perkiraan Biaya |
 |:---|:---:|
-| Buy-in Power Path untuk mencapai Step 4 | **$11–$55** |
+| Buy-in Power Path untuk mencapai Step 4 | **$0,50–$11** (Step 4 tidak bisa dibeli langsung) |
 | Gold Pass mencakup: entri Main Event + side event + hotel 8 malam + biaya €690 | ==g:✅ Termasuk (nilai ~$10.300 USD)== |
 | Penerbangan (tidak selalu termasuk) | €150–€400 |
 | Makan & hari tambahan | €400–€600 |
@@ -317,7 +318,7 @@ Casino Barcelona lebih santai daripada Monte Carlo — tapi ada aturan nyata:
 
 ## Cara Menuju Casino Barcelona Dari Bandara Barcelona El Prat
 
-Barcelona El Prat (BCN) berjarak sekitar ==12km dari casino== — kira-kira 25–40 menit tergantung lalu lintas.
+Barcelona El Prat (BCN) berjarak sekitar ==12km dari pusat kota== — kira-kira 25–40 menit tergantung lalu lintas.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -342,11 +343,11 @@ Barcelona El Prat (BCN) berjarak sekitar ==12km dari casino== — kira-kira 25�
 
 ## Day 1 EPT Main Event — Yang Perlu Diketahui Pemula Pertama
 
-Day 1 terbagi menjadi beberapa flight awal (Day 1A, 1B, 1C, kadang 1D). Anda memilih salah satu. Kebanyakan pemain memilih ==Day 1B atau 1C== — biasanya field-nya lebih besar, yang terdengar mengintimidasi tapi juga berarti lebih banyak pemain rekreasi.
+Pada 2026 Day 1 terbagi menjadi dua flight awal — ==Day 1A (22 Agu) dan Day 1B (23 Agu)==. Anda memilih salah satu. Flight yang lebih belakangan biasanya field-nya lebih besar, yang terdengar mengintimidasi tapi juga berarti lebih banyak pemain rekreasi.
 
 ### Apa yang Harus Dibawa
 
-- ==**Paspor atau kartu identitas nasional**== (==r:tanpa paspor, tanpa main== — ini tidak bisa ditawar)
+- ==**Paspor atau kartu identitas nasional**== (==r:tanpa identitas yang sah, tanpa main== — ini tidak bisa ditawar)
 - Akun ==**PokerStars Live**== Anda yang sudah diverifikasi dan aktif
 - Formulir **Source of Funds** yang sudah dilengkapi jika membayar dengan tunai
 - Jaket tipis (==r:AC casino agresif di bulan Agustus==)
@@ -361,7 +362,7 @@ Day 1 terbagi menjadi beberapa flight awal (Day 1A, 1B, 1C, kadang 1D). Anda mem
 
 | Waktu | Yang Terjadi |
 |---|---|
-| ~11:00 | Registrasi dibuka (==r:datang minimal 30 menit lebih awal==) |
+| ~11:00 | Registrasi dibuka (==r:datang saat dibuka — dengan antrean 30–45 menit, «30 menit sebelum kartu dibagikan» sudah terlambat==) |
 | ~12:00 | Kartu dibagikan — Day 1 dimulai |
 | Malam | Akhir permainan Day 1 — biasanya 8 level; jam persisnya tergantung struktur |
 | Day 2+ | ==g:Hanya pemain yang mengantongi chip yang lanjut== |
@@ -370,7 +371,7 @@ Day 1 terbagi menjadi beberapa flight awal (Day 1A, 1B, 1C, kadang 1D). Anda mem
 
 ### Kesalahan Umum Pemula Pertama
 
-**1. Datang tepat waktu mulai.** ==r:Antrean registrasi bisa 30–45 menit.== Datang setidaknya 30 menit sebelum kartu dibagikan.
+**1. Datang tepat waktu mulai.** ==r:Antrean registrasi bisa 30–45 menit.== Datanglah begitu registrasi dibuka, bukan 30 menit sebelum kartu dibagikan — dengan antrean 30–45 menit, saat itu sudah telat.
 
 **2. Tidak tahu struktur blind.** Unduh jadwal dari halaman resmi PokerStars Live sebelum Anda tiba. Ketahui kapan istirahat pertama, berapa lama level, dan seperti apa blind di stack awal Anda.
 
@@ -422,7 +423,7 @@ A. Anda perlu akun ==**PokerStars Live**== (terpisah dari akun permainan online 
 
 **Q. Apa itu formulir Source of Funds dan apakah benar-benar wajib?**
 
-A. Ya. Berdasarkan regulasi casino Spanyol, setiap transaksi tunai di atas ambang tertentu mengharuskan Anda mendeklarasikan asal dana. Anda bisa melengkapi formulir online lewat akun PokerStars Live Anda di muka — ==g:butuh sekitar 10 menit==. Pembayaran dengan kartu atau token yang dibeli sebelumnya mungkin tidak memerlukannya.
+A. Ya. Berdasarkan regulasi casino Spanyol, setiap transaksi tunai mengharuskan Anda mendeklarasikan asal dana — tidak ada ambang batas yang membuat Anda bebas dari kewajiban ini. Anda bisa melengkapi formulir online lewat akun PokerStars Live Anda di muka — ==g:butuh sekitar 10 menit==. Pembayaran dengan kartu atau token yang dibeli sebelumnya mungkin tidak memerlukannya.
 
 **Q. Apa yang terjadi jika saya memenangkan Gold Pass Power Path — apakah hotel otomatis dipesan?**
 

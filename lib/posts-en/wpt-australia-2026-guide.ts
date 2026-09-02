@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "WPT Australia 2026 — Complete Player Guide: Schedule, Satellites & Real Costs",
   seoTitle: "First Time at WPT Australia? Everything You Need to Play in 2026",
   desc: "WPT Australia 2026 — Sep 10–30, The Star Sydney. AUD $1,500 Prime + AUD $5,000 Championship. Satellites from AUD $270. Real trip costs rivals don't publish.",
-  tldr: "WPT Australia 2026: Sep 10–30, The Star Sydney. Two flagships: AUD $1,500 WPT Prime (Sep 17–22) and AUD $5,000 WPT Championship (Sep 24–30). On-site satellites from AUD $270, with Championship qualifiers at $290 and $550. The Championship winner's first-place prize includes a seat to the WPT World Championship. Must be 18+, a Star Club member with a verified WPT.com account, and smart-casual dress enforced.",
+  tldr: "WPT Australia 2026: Sep 10–30, The Star Sydney. Two flagships: AUD $1,500 WPT Prime (Sep 17–22) and AUD $5,000 WPT Championship (Sep 24–30). On-site satellites from AUD $270, with Championship qualifiers at $290 and $550. The Championship winner's first-place prize includes a WPT World Championship seat valued at $15,000 and deducted from the prize pool. Must be 18+, a Star Club member with a verified WPT.com account, and smart-casual dress enforced.",
   category: "tournament",
   date: "2026-06-18",
   updated: "2026-09-02",
@@ -37,7 +37,7 @@ First live festival? Start with [the tournament guide](/en/blog/holdem-tournamen
 ---
 
 > **Quick Answer**
-> WPT Australia 2026 is ==**Sep 10–30**== at The Star Sydney, Darling Harbour. Two championship events: ==**AUD $1,500 WPT Prime**== (Sep 17–22) and ==**AUD $5,000 WPT Australia Championship**== (Sep 24–30). The Championship winner's first-place prize includes a ==g:seat to the WPT World Championship== — ==r:check the final tournament conditions for how that seat is valued and whether it is paid out of the prize pool==. ==r:WPT Global lists Australia as an excluded territory, so you cannot use it while in Australia== — the qualifying route officially published for this festival is the live satellites at The Star.
+> WPT Australia 2026 is ==**Sep 10–30**== at The Star Sydney, Darling Harbour. Two championship events: ==**AUD $1,500 WPT Prime**== (Sep 17–22) and ==**AUD $5,000 WPT Australia Championship**== (Sep 24–30). The Championship winner's first-place prize includes a ==g:WPT World Championship seat valued at $15,000== — note it is ==r:deducted from the overall prize pool, not paid on top== (stated on the official event page). ==r:WPT Global lists Australia as an excluded territory, so you cannot use it while in Australia== — the qualifying route officially published for this festival is the live satellites at The Star.
 
 ---
 
@@ -57,7 +57,7 @@ This year's festival returns to ==**The Star Sydney**== and introduces a **dual-
 | 2025 Winner | — | Alan Pham (AUD $558,211) |
 | Events | ==**36 events**== (AUD $10M+ estimated, not guaranteed) | 32 numbered events + satellites |
 | Livestream | Both finals globally | Main event only |
-| WC Seat | ==g:Ticket to the WPT World Championship== (value and prize-pool treatment per the official conditions) | +US $10,400 |
+| WC Seat | ==g:$15,000 seat (organizer's valuation), deducted from prize pool== | +US $10,400 |
 
 </div>
 
@@ -157,7 +157,7 @@ If you're outside Australia and want to warm up with online satellites before fl
 
 With the 2026 buy-in reduced to AUD $5,000 (down from $5,500 in 2025) and a new dual-championship format bringing more players into the festival, fields are expected to be the largest in event history.
 
-**The winner's seat**: First place in the WPT Australia Championship includes a ==g:ticket to the WPT World Championship==. The Star's published schedule marks this only as "CHAMPIONSHIP = ticket to WPT World Championship" — ==r:it does not publish a cash value for the ticket, or say whether it comes out of the prize pool==. For reference, WPT lists the World Championship buy-in at ==**US $10,400**==. The Prime Championship winner receives a ticket to the season-ending WPT Prime Championship, again with no published value. ==r:Read the final Tournament Conditions before you assume the headline prize is all cash.==
+**The winner's seat**: First place in the WPT Australia Championship includes a ==g:WPT World Championship seat valued at $15,000== — the organizer's valuation, stated on the official Championship event page (the page gives no currency; AUD is the festival's currency, and WPT lists the World Championship buy-in at ==**US $10,400**==). Read the official wording carefully — the seat is ==r:part of the first-place prize and is deducted from the overall prize pool==, not an extra bonus paid on top of the cash. The Star's schedule brochure lists it only as "CHAMPIONSHIP = ticket to WPT World Championship"; the value and the deduction are on the event page, not in the brochure. The Prime Championship winner receives a WPT World Championship Prime seat valued at $1,500 on the same terms. ==r:Read the final Tournament Conditions before you assume the headline prize is all cash.==
 
 ---
 

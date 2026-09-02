@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "EPT Barcelona 2026 ran Aug 16–29 at Casino Barcelona. Italy's Manuel Ferrari won the €5,300 Main Event for €1,002,488, beating 1,823 entries for a share of the €8,841,550 prize pool. For 2027: the cheapest online route is the Power Path from $0.50 → Gold Pass (€5,300 ME seat + €1,100 side event + 8-night hotel + €690 expenses). You need a PokerStars Live account and a valid passport, and hotels sell out early — August is peak season in Barcelona.",
   category: "tournament",
   date: "2026-06-17",
-  updated: "2026-08-31",
+  updated: "2026-09-02",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🃏",
@@ -81,7 +81,7 @@ The ==**European Poker Tour (EPT)**== is the flagship live poker series run by P
 | Main Event entries | ==g:**1,823**== | ==g:**2,045**== (3rd largest in EPT Barcelona history) |
 | Main Event prize pool | ==g:**€8,841,550**== | ==g:**€9,918,250**== |
 | First prize | ==g:**€1,002,488**== (Manuel Ferrari, Italy) | ==g:**€1,217,175**== (Thomas Eychenne, France) |
-| Events range | €825 – €100,000 | €825 – €100,000 |
+| Events range | €330 – €100,000 | €330 – €100,000 |
 
 </div>
 
@@ -89,7 +89,7 @@ The ==**European Poker Tour (EPT)**== is the flagship live poker series run by P
 
 ---
 
-## EPT Barcelona 2026 Full Schedule & Buy-Ins — From €825 to €100,000
+## EPT Barcelona 2026 Full Schedule & Buy-Ins — From €330 to €100,000
 
 The festival runs two parallel series: the **PokerStars Open** (accessible entry points) and the **EPT** (premium events). Both share Casino Barcelona.
 
@@ -123,8 +123,8 @@ PokerStars designed Power Path specifically to ==stop pros from buying directly 
 
 | Step | Format | Buy-In | Can Buy In Directly? |
 |:---|:---:|:---:|:---|
-| Step 1 | $0.50 Spin & Go (or $1 On Demand SNG) | **$0.50** | ✅ Yes (or free daily ticket) |
-| Step 2 | $1.50 MTT | **$1.50** | ✅ Yes |
+| Step 1 | $0.50 Spin & Go | **$0.50** | ✅ Yes (or free daily ticket) |
+| Step 2 | $1 Sit & Go or $1.50 MTT | **$1–$1.50** | ✅ Yes |
 | Step 3 | $11 MTT | **$11** | ✅ Yes |
 | Step 4 | $55 MTT | — | ==r:❌ Must win a Step 3 ticket== |
 
@@ -132,22 +132,23 @@ PokerStars designed Power Path specifically to ==stop pros from buying directly 
 
 ![PokerStars Power Path ladder to EPT Barcelona 2026 — steps at $0.50, $1.50, $11 and $55 climbing to the Gold Pass with a €5,300 Main Event seat plus hotel](/images/ept-barcelona-2026-guide-powerpath.webp "The Power Path ladder: from a $0.50 step up to the Gold Pass covering the €5,300 Main Event and hotel")
 
-Win Step 4 and you receive one of three Power Passes:
+Win Step 4 and you receive one of four Power Passes:
 
 | Pass | Value | What's Included |
 |:---|:---:|:---|
+| Spade Pass | ~$109 | Entry-level online tournament credits |
 | Bronze Pass | ~$530 | Online tournament credits |
-| Silver Pass | ~$2,300 | Mid-tier live event entries |
+| Silver Pass | ~$2,500 | Mid-tier live event entries |
 | ==**Gold Pass**== | ==g:**~$10,300** (USD)== | ==g:€5,300 ME + €1,100 side event + 8 nights hotel + €690 expenses== |
 
 ==g:The **Gold Pass** is the one you want.== PokerStars aims for at least 25% of the Main Event field to be satellite qualifiers — so the seats are real.
 
 ### How to Find Power Path in the PokerStars Client
 
-1. Open PokerStars → click **Events** tab
+1. Open PokerStars → click the **Power Path** tab
 2. Search for "Power Path" or "EPT Barcelona"
 3. Select your starting step
-4. You'll also see ==g:free Step 1 tickets credited daily== if you play any real-money game
+4. You'll also see ==g:free Step 1 tickets credited daily== when you play poker (real money) — check the Power Path terms, since promotions occasionally replace the daily ticket
 
 ---
 
@@ -203,7 +204,7 @@ Don't want to grind four steps? PokerStars also runs **direct satellites** for E
 
 | Item | Estimated Cost |
 |:---|:---:|
-| Power Path buy-ins to reach Step 4 | **$11–$55** |
+| Power Path buy-ins to reach Step 4 | **$0.50–$11** (Step 4 cannot be bought directly) |
 | Gold Pass covers: ME entry + side event + 8 nights + €690 expenses | ==g:✅ Included (~$10,300 value)== |
 | Flights (not always included) | €150–€400 |
 | Food & extra days | €400–€600 |
@@ -318,7 +319,7 @@ Casino Barcelona is more relaxed than Monte Carlo — but there are real rules:
 
 ## How to Get to Casino Barcelona From Barcelona El Prat Airport
 
-Barcelona El Prat (BCN) is about ==12km from the casino== — roughly 25–40 minutes depending on traffic.
+Barcelona El Prat (BCN) is about ==12km from the city center== — roughly 25–40 minutes depending on traffic.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -343,11 +344,11 @@ Barcelona El Prat (BCN) is about ==12km from the casino== — roughly 25–40 mi
 
 ## Day 1 of the EPT Main Event — What First-Timers Need to Know
 
-Day 1 is split across multiple starting flights (Day 1A, 1B, 1C, sometimes 1D). You pick one. Most players choose ==Day 1B or 1C== — they're typically larger fields, which sounds intimidating but also means more recreational players.
+In 2026 Day 1 was split across two starting flights — ==Day 1A (Aug 22) and Day 1B (Aug 23)==. You pick one. The later flight is typically the larger field, which sounds intimidating but also means more recreational players.
 
 ### What to Bring
 
-- ==**Passport or national ID**== (==r:no passport, no play== — this is non-negotiable)
+- ==**Passport or national ID**== (==r:no valid ID, no play== — this is non-negotiable)
 - Your ==**PokerStars Live account**== verified and active
 - **Source of Funds form** completed if paying with cash
 - A light jacket (==r:the casino AC is aggressive in August==)
@@ -362,7 +363,7 @@ Day 1 is split across multiple starting flights (Day 1A, 1B, 1C, sometimes 1D). 
 
 | Time | What Happens |
 |---|---|
-| ~11:00 | Registration opens (==r:be there 30 min early minimum==) |
+| ~11:00 | Registration opens (==r:be there when it opens — with a 30–45 min queue, "30 min before cards" is already too late==) |
 | ~12:00 | Cards in the air — Day 1 begins |
 | Evening | End of play for Day 1 — usually 8 levels; the exact time depends on the structure |
 | Day 2+ | ==g:Only players who bagged chips continue== |
@@ -371,7 +372,7 @@ Day 1 is split across multiple starting flights (Day 1A, 1B, 1C, sometimes 1D). 
 
 ### Common First-Timer Mistakes
 
-**1. Arriving at start time.** ==r:Registration queues can be 30–45 minutes long.== Arrive at least 30 minutes before cards in the air.
+**1. Arriving at start time.** ==r:Registration queues can be 30–45 minutes long.== Arrive when registration opens, not 30 minutes before cards in the air — with a 30–45 minute queue, that is already too late.
 
 **2. Not knowing the blind structure.** Download the schedule from the official PokerStars Live page before you arrive. Know when the first break is, how long levels are, and what the blinds look like at your starting stack.
 
@@ -423,7 +424,7 @@ A. You need a ==**PokerStars Live**== account (separate from your online play ac
 
 **Q. What is the Source of Funds form and is it really required?**
 
-A. Yes. Under Spanish casino regulations, any cash transaction over a certain threshold requires you to declare the origin of the funds. You can complete the form online through your PokerStars Live account in advance — ==g:it takes about 10 minutes==. Card or pre-purchased token payments may not require it.
+A. Yes. Under Spanish casino regulations, any cash transaction requires you to declare the origin of the funds — there is no threshold below which you are exempt. You can complete the form online through your PokerStars Live account in advance — ==g:it takes about 10 minutes==. Card or pre-purchased token payments may not require it.
 
 **Q. What happens if I win a Power Path Gold Pass — is the hotel automatically booked?**
 

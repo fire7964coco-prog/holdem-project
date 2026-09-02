@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "WPT Australia 2026 — Guía completa del jugador: calendario, satélites y coste real",
   seoTitle: "¿Primera vez en el WPT Australia? Todo para jugar en 2026",
   desc: "WPT Australia 2026 — 10–30 sep, The Star Sydney. AUD $1,500 Prime + AUD $5,000 Championship. Satélites desde AUD $270. Coste real del viaje que otros callan.",
-  tldr: "WPT Australia 2026: 10–30 sep, The Star Sydney. Dos eventos estrella: AUD $1,500 WPT Prime (17–22 sep) y AUD $5,000 WPT Championship (24–30 sep). Satélites presenciales desde AUD $270, con clasificatorios al Championship por $290 y $550. El premio de primer puesto del Championship incluye una entrada al WPT World Championship. Obligatorio ser mayor de 18 años, socio del Star Club y respetar el código de vestimenta smart-casual.",
+  tldr: "WPT Australia 2026: 10–30 sep, The Star Sydney. Dos eventos estrella: AUD $1,500 WPT Prime (17–22 sep) y AUD $5,000 WPT Championship (24–30 sep). Satélites presenciales desde AUD $270, con clasificatorios al Championship por $290 y $550. El premio de primer puesto del Championship incluye un asiento al WPT World Championship valorado en $15,000 y descontado del bote. Obligatorio ser mayor de 18 años, socio del Star Club y respetar el código de vestimenta smart-casual.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-08-28",
-  masterUpdated: "2026-08-28",
+  updated: "2026-09-02",
+  masterUpdated: "2026-09-02",
   readTime: "14 min",
   emoji: "🦘",
   layout: "tournament-guide",
@@ -38,7 +38,7 @@ Esta guía cubre todo lo que la competencia se salta.
 ---
 
 > **Respuesta rápida**
-> El WPT Australia 2026 se celebra del ==**10 al 30 de sep**== en The Star Sydney, Darling Harbour. Dos eventos de campeonato: ==**AUD $1,500 WPT Prime**== (17–22 sep) y ==**AUD $5,000 WPT Australia Championship**== (24–30 sep). El premio de primer puesto del Championship incluye un ==g:entrada al WPT World Championship== — ==r:consulta en las condiciones finales cómo se valora y si sale del bote==. ==r:WPT Global incluye a Australia entre los territorios excluidos==, así que no puedes usarlo mientras estés allí — la vía de clasificación publicada oficialmente para este festival son los satélites presenciales en The Star.
+> El WPT Australia 2026 se celebra del ==**10 al 30 de sep**== en The Star Sydney, Darling Harbour. Dos eventos de campeonato: ==**AUD $1,500 WPT Prime**== (17–22 sep) y ==**AUD $5,000 WPT Australia Championship**== (24–30 sep). El premio de primer puesto del Championship incluye un ==g:asiento al WPT World Championship valorado en $15,000== — ojo: se ==r:descuenta del bote total, no se paga aparte== (así lo indica la página oficial del evento). ==r:WPT Global incluye a Australia entre los territorios excluidos==, así que no puedes usarlo mientras estés allí — la vía de clasificación publicada oficialmente para este festival son los satélites presenciales en The Star.
 
 ---
 
@@ -58,7 +58,7 @@ El festival de este año regresa a ==**The Star Sydney**== e introduce un **form
 | Campeón 2025 | — | Alan Pham (AUD $558,211) |
 | Eventos | ==**36 eventos**== (AUD $10M+ estimado, no garantizado) | 32 eventos numerados + satélites |
 | Retransmisión | Ambas finales, en global | Solo el evento principal |
-| Asiento WC | ==g:Entrada al WPT World Championship== (valor y descuento según las condiciones oficiales) | +US $10,400 |
+| Asiento WC | ==g:Asiento de $15,000 (valoración del organizador), descontado del bote== | +US $10,400 |
 
 </div>
 
@@ -158,7 +158,7 @@ Si estás fuera de Australia y quieres calentar con satélites online antes de v
 
 Con el buy-in de 2026 rebajado a AUD $5,000 (desde los $5,500 de 2025) y un nuevo formato de doble campeonato que atrae a más jugadores al festival, se espera que los fields sean los más grandes de la historia del evento.
 
-**El asiento del campeón**: el premio de primer puesto del WPT Australia Championship incluye una ==g:entrada al WPT World Championship==. El calendario publicado por The Star solo lo marca como «CHAMPIONSHIP = ticket to WPT World Championship» — ==r:no publica un valor en dinero de esa entrada ni dice si sale del bote==. Como referencia, WPT fija el buy-in del World Championship en ==**US $10,400**==. El campeón del Prime Championship recibe una entrada al WPT Prime Championship de fin de temporada, también sin valor publicado. ==r:Lee las condiciones finales del torneo antes de dar por hecho que el premio del titular es todo en efectivo.==
+**El asiento del campeón**: el premio de primer puesto del WPT Australia Championship incluye un ==g:asiento al WPT World Championship valorado en $15,000== — es la valoración del organizador y aparece en la página oficial del evento Championship (la página no indica la moneda; la del festival es el AUD, y WPT fija el buy-in del World Championship en ==**US $10,400**==). Lee el texto oficial con calma: el asiento ==r:forma parte del premio de primer puesto y se descuenta del bote total==, no es un extra que se pague aparte del efectivo. El folleto de calendario de The Star solo lo recoge como «CHAMPIONSHIP = ticket to WPT World Championship»; el valor y el descuento están en la página del evento, no en el folleto. El campeón del Prime Championship recibe un asiento Prime del WPT World Championship valorado en $1,500, en las mismas condiciones. ==r:Lee las condiciones finales del torneo antes de dar por hecho que el premio del titular es todo en efectivo.==
 
 ---
 
@@ -306,7 +306,7 @@ A. Puedes registrarte previamente online en thestarclub.com.au/sign-up para ahor
 
 **Q. ¿Cuál es la forma más barata de entrar en el WPT Australia Championship?**
 
-A. El ==g:clasificatorio directo al Championship de AUD $290== es la vía más barata: un solo satélite que juega directamente por un asiento de $5,000, sin escalera de pasos. La versión de $290 está en el calendario previo al festival (desde el 24 de julio); una vez arranca el festival, los clasificatorios al Championship cuestan $550. Lista completa de satélites: [starpoker.com.au](https://www.starpoker.com.au/wpt-australia).
+A. El ==g:clasificatorio directo al Championship de AUD $290== es la vía más barata: un solo satélite que juega directamente por un asiento de $5,000, sin escalera de pasos. La versión de $290 está en el calendario previo al festival (desde el 30 de julio); una vez arranca el festival, los clasificatorios al Championship cuestan $550. Lista completa de satélites: [starpoker.com.au](https://www.starpoker.com.au/wpt-australia).
 
 **Q. ¿Se tributan las ganancias de póker en Australia?**
 
