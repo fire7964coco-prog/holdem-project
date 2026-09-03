@@ -152,6 +152,15 @@ export default function Page({ params }: { params: { slug: string } }) {
     s
       .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
       .replace(/\*\*(.+?)\*\*/g, "$1")
+      // ★ 2026-09-03 — 홑별표 이탤릭(*강조*)도 벗긴다.
+      //   위 ** 규칙은 쌍별표만 먹어서 FAQPage 답변에 별표가 그대로 노출됐다
+      //   (예: de holdem-pot-odds 「durch den gesamten Pot *nach* deinem Call」).
+      //   🔴 실측 범위 = 301곳 · 192파일 · 거의 전 로케일.
+      //   핸드오프의 「glossary 6편 8곳」은 부분 스캔값이라 틀렸다 —
+      //   전수는 lib/posts* 의 FAQ 쌍 5,232개를 훑어야 나온다.
+      //   여닫이 별표 안쪽에 공백을 금지해(\S) 「5 * 3 * 2」류 곱셈이 뭉개지지 않게 했다.
+      //   현 코퍼스 301곳에서 느슨한 식과 결과가 동일했고(차이 0), 엄격한 쪽을 골랐다.
+      .replace(/\*(\S|\S[^*\n]*?\S)\*/g, "$1")
       .replace(/==(?:[rgb]:)?(.+?)==/g, "$1");
   const faqItems = [...oldFaq, ...newFaq].map((m) => ({
     "@type": "Question",
