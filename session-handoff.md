@@ -12,13 +12,19 @@
 
 ## ▶▶▶ 지금 할 일
 
+### 🟢 **[종결] GTO 솔버 13편 → zh-hant(번체·대만) 전파(4번째 언어) 발행 완료** (2026-09-03 · 발행 커밋 `fed20ed2` · 라이브 확인 13/13 — Playwright · 200 · 자기 히어로 1 · ranges 1 · 이미지 HTTP 200 전건 · 디렉티브/색상접두/EN 라벨/간체/T 카드 누출 0 · hreflang ko/en/ja/es/zh-Hans/zh-Hant/x-default · `/zh-hant/solver` 시리즈 링크 13+)
+
+> ✅ 9단계 전부(아래 표) — 경위 = WORKLOG 「2026-09-03 (2)」 · 규격·교훈 = `docs/zh-hant-gto-series-translation-brief.md` §6-B(교훈 7)·§7(고정문 사전검수 기록) · 키워드 팩 = `docs/keyword-bank/zh-hant-gto-series.md`.
+> 🔴 **다음 로케일(pt·de·fr)을 열 때** — zh-hant 브리프 §6-B를 먼저 읽어라. 특히 ① **고정문 네이티브 사전검수를 브리프 작성과 같은 턴에**(조건표 «값» 하나가 6편 사실오류가 될 뻔했다 — «행 라벨»만 고정) ② §4-B에 **CTA 고정문·지표표 첫 칸·stripe 병기 규칙·seoTitle 브랜드어·조건 문단 정형구·dead SB**까지 넣어라(이번 분열 16조가 전부 «안 준 자리») ③ 공간 은유는 브리프로 안 막힌다 — 게이트 warn을 로케일별로 만들어라 ④ Opus 한도에 대비해 정정은 «정확 n회 검증 치환표»로.
+> 🔷 **다음 회차 = 사장님 판단**(남은 로케일 pt·de·fr — 앱·랜딩 보유 · id/ms는 랜딩 404). 우편함에 본체 앞 미이행 1건(**M-082 대회 허브 GPT 교차검수 종합 — `lib/tournaments.ts` 데이터 정정 9 + 추가 13 + KO 정적 사실오류 8 + 독자 피해형 1**) + 솔버 정보 전달 2건(M-079 id · M-080 ms — `id-posting-reference.md` §5 / 새 `ms-posting-reference.md` §5에 붙여넣기용)이 🔴 미확인으로 와 있다 — 회신·대기 절 참조.
+
 ### 🟢 **[종결] GTO 솔버 13편 → zh(간체) 전파(3번째 언어) 발행 완료** (2026-09-03 · 발행 커밋 `ae3e4ead` · 라이브 확인 완료 13/13 — Playwright · 200 · 자기 히어로 1 · ranges 1 · 이미지 HTTP 200 전건 · 디렉티브/색상접두/EN 라벨/번체 누출 0 · hreflang ko/en/ja/es/zh-Hans/x-default · `/zh/solver` 시리즈 링크 13)
 
 > ✅ 7단계 전부 — 키워드 팩(`docs/keyword-bank/zh-gto-series.md`) · zh 캡처 26장 · 브리프(`docs/zh-gto-series-translation-brief.md`) · Opus 3배치 번역 · 등록(`index.ts` + `/zh/solver` SPOT_GROUPS) ·
 > 게이트 🔴 0(구조 13/13 · check:gto 103 · audit zh 56/56 · intl-links 512) · 렌즈 4종(네이티브 ×2 · 딜러/§13 · 교열/구조) → 통일 스크립트 + Opus 정정 2배치(85건) → **2차 교열 2배치(20곳)** · 빌드 512 intl(+13) · 배포. 경위 = WORKLOG 「2026-09-03」.
 > 🪶 게이트 상설화: `npm run check:gto:structure -- --locale=<loc>`(EN 1:1 계수 + 폐기 앵커 + 표기 규칙 · 로케일별 RULES는 zh만 등재 — 다음 로케일은 RULES에 한 블록 추가).
 > 🔴 **다음 로케일(pt·de·zh-hant·fr)을 열 때** — zh 브리프 §6 교훈 7개를 먼저 읽어라. 특히 ① **고정문은 브리프에 박기 전 네이티브 1회 검수**(zh는 «pre-solve»를 「预算」으로 적어 5곳 전파) ② §4-B는 «단어 사전»이 아니라 **«자리 사전»**(표 헤더·행 라벨·카드 라벨·경로 동사·병기 위치)으로 — zh는 어휘 사전을 줬는데도 배치 경계에서 8조가 갈렸다 ③ readnext 카드 라벨 = 대상 편 title 축어 ④ 네이티브 렌즈 2종·2차 교열은 줄이지 마라(의미 왜곡 2 · 圈内 오용 12 · 2차 20곳은 전부 그쪽만 잡았다).
-> 🔴 **다음 회차 = zh-hant(번체) 전파**(사장님 2026-09-03 세션 마감 시 «다음 세션에서 보자 zh-hant» — 순서 확정). 착수 = zh 브리프를 템플릿으로 ① 앱 `?lang=zh-hant` 축어 Playwright 실측 → §1-B ② `docs/keyword-bank/zh-hant-*.md`·`translation-terms-zh-hant.md`·`market-profile/zh-hant.md`·`zh-gto-solver.md` §1-③④(TW 볼륨은 DFS만) 정독 ③ 라쿠 대신 **DFS `search_volume`(language_code 생략)**으로 TW·HK 볼륨 ④ `capture --lang=zh-hant` → 캡처 26장 ⑤ 브리프 §4-B «자리 사전» + 고정문 네이티브 검수 ⑥ Opus 3배치 → 렌즈 4종 → 정정 → 2차 교열 ⑦ `check:gto:structure --locale=zh-hant`(RULES 블록 추가).
+> ~~🔴 다음 회차 = zh-hant(번체) 전파~~ → ✅ **2026-09-03 완료(`fed20ed2` · 위 절)**. 아래 착수 절차는 이행됐다 — 기록용. 착수 = zh 브리프를 템플릿으로 ① 앱 `?lang=zh-hant` 축어 Playwright 실측 → §1-B ② `docs/keyword-bank/zh-hant-*.md`·`translation-terms-zh-hant.md`·`market-profile/zh-hant.md`·`zh-gto-solver.md` §1-③④(TW 볼륨은 DFS만) 정독 ③ 라쿠 대신 **DFS `search_volume`(language_code 생략)**으로 TW·HK 볼륨 ④ `capture --lang=zh-hant` → 캡처 26장 ⑤ 브리프 §4-B «자리 사전» + 고정문 네이티브 검수 ⑥ Opus 3배치 → 렌즈 4종 → 정정 → 2차 교열 ⑦ `check:gto:structure --locale=zh-hant`(RULES 블록 추가).
 > 📋 **zh-hant 회차 계획(2026-09-03 착수 · 단계별 상태는 여기서 갱신한다)**
 >
 > | # | 단계 | 산출물 | 담당 | 상태 |
@@ -31,7 +37,8 @@
 > | 5 | 번역 Opus 3배치 병렬(A ①~④ · B ⑤~⑧ · C ⑨~⑬) — 번역 + 5필드 + 용어 표기 | `lib/posts-zh-hant/<13 slug>.ts` | Opus ×3 | ✅ 13편(배치당 29~39분) · 각 배치 자기 게이트 🔴 0 |
 > | 6 | 등록 — `posts-zh-hant/index.ts` + `app/zh-hant/solver` SPOT_GROUPS 시리즈 링크 13 | — | Fable | ✅ index 13 import + 배열 · 랜딩 slug 13 |
 > | 7 | 게이트 🔴 0 — 구조 13/13 · check:gto 103 · audit zh-hant 57/57 🔴 0(🟠 2 기존 형제표 · 드리프트 14는 기존 글) · intl-links 525 · image-reuse 🔴 0 · cjk 0 · seo-sync 0 · hreflang 0 · **빌드 525 intl(+13)** · 산출물 FAQ Q=소스·누출 0·lang zh-Hant | — | Fable | ✅ 오탐 튜닝 3(划 · broadway 경로 · 領打) |
-> | 8 | 렌즈 4종 병렬 — 네이티브 TW ×2(의미·관용구 / 통일·누락) · 딜러/§13(수치 «자리» 전수) · 교열/구조(EN 1:1·다섯 자리 grep) → 통일 스크립트 + Opus 정정 배치 → **2차 교열 2배치** | 지적 목록 · 정정 커밋 | Agent ×4 → Opus ×2 → Agent ×2 | 🔧 렌즈 4종 완료(딜러 🔴 0 · 네이티브 A 🔴 2(③ mix→組合 오역 · ⑦ 「多出四倍」=5배) 🟠 ~45 · 네이티브 B 분열 16조 · 교열 🟠 33) → 통일 스크립트 62건 반영(게이트 재통과) → **정정 2배치 실행 중** → 2차 교열 대기 |
+> | 8 | 렌즈 4종 병렬 — 네이티브 TW ×2(의미·관용구 / 통일·누락) · 딜러/§13(수치 «자리» 전수) · 교열/구조(EN 1:1·다섯 자리 grep) → 통일 스크립트 + Opus 정정 배치 → **2차 교열 2배치** | 지적 목록 · 정정 커밋 | Agent ×4 → Opus ×2 → Agent ×2 | ✅ 렌즈 4종(딜러 🔴 0 · 네이티브 A 🔴 2(③ mix→組合 · ⑦ 「多出四倍」=5배) · 네이티브 B 분열 16조 · 교열 🟠 33) → 통일 62 + 정정 88(🔴 Opus 한도로 배치 중단 → Fable 치환표) + ① 7 → **2차 교열 35**(병기 중복 6 · 上限→頂端 · 3.5배 산수 · 4/5 · 乾淨 calque 3 · 底氣) |
+> | 9 | 빌드 · 커밋·푸시 · 라이브 Playwright 13/13 · 마감 3단 | — | Fable | ✅ 빌드 525 intl · `fed20ed2` · 라이브 13/13(위 절) · WORKLOG (2) · 브리프 §6-B · RULES 등재 |
 >
 > 🔷 **EN-먼저 판정 후보(zh-hant 렌즈 발원 · 신규 · 미반영)**: ⑨ «32 combos of A-K and A-J sit in the ace-high row»(표는 AK 16 + AJs 4 = 20 · A 高牌 행 전체 28 — 🔴급) · ⑧ «7.4 + 12.3 + 20.4 = 40.1bb»(개별 항이 0.1~0.2 어긋남) · ⑩ 캡션 «overpairs nearly double»(43.4 vs 16.7 = 2.6배) · ⑪ 콤보 362.1(538×67.4%=362.6 · 패널값 인용 미표시) · ⑬ desc «a 3% bet» vs 본문 3.0% · ⑨ 조건표 «Bet sizes offered» 라벨만 다름 · ⑦ «category panel»(앱에 없는 패널명) · ⑪ «seven single-raised pots» 하위 그룹 하드코딩 · ④ 등급표 «Third pair or lower»(앱 라벨 Weak pair) · ②③ 같은 ⑨ 스팟을 42.7/117.8로 각각 인용 · ⑫⑬ 소수점 없는 % 범위(133%–138% · about 44%)는 check:gto 밖. **간체 zh 후보**: zh 브리프 §4-B 「fold equity = 弃牌率」 오역 의심(fold rate ≠ fold equity) — zh 13편 실물 확인 후 판정.
 > | 9 | 빌드(intl 512→525) · 커밋·푸시 · 라이브 Playwright 13/13(200 · 히어로 1 · ranges 1 · 이미지 200 · 누출 0 · hreflang zh-Hant · 시리즈 링크 13) · 마감 3단(WORKLOG · 핸드오프 · 브리프 §6 교훈 · RULES 등재) | — | Fable | ⬜ |
