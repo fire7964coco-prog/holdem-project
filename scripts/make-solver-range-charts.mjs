@@ -36,6 +36,8 @@ const CHART_L10N = {
         equity: 'Equity', eqr: 'Realización de equity' },
   zh: { title: '范围构成', source: 'HoldemMaster GTO 求解器计算值 · 未计入抽水',
         equity: '胜率 (EQ)', eqr: '权益实现率 (EQR)' },
+  'zh-hant': { title: '範圍構成', source: 'HoldemMaster GTO 解算器計算值 · 未計入抽水',
+        equity: '勝率 (EQ)', eqr: '勝率實現 (EQR)' },   // 2026-09-03 · 앱 번체 축어(解算器 · 勝率實現) — 간체 求解器/权益实现과 다르다
 };
 const C = CHART_L10N[LANG];
 if (!C) { console.error('지원하지 않는 로케일:', LANG, '· 아는 것:', Object.keys(CHART_L10N).join(', ')); process.exit(1); }

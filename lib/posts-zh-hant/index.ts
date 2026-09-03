@@ -50,6 +50,20 @@ import { POST as wptAustralia2026Guide } from "./wpt-australia-2026-guide";
 import { POST as eptBarcelona2026Guide } from "./ept-barcelona-2026-guide";
 // ── 대만 로컬 (zh-hant 전용 · EN 마스터 없음, 2026-08-31) ──
 import { POST as taiwanPokerClubsGuide } from "./taiwan-poker-clubs-guide";
+// GTO 솔버 시리즈 13편 (2026-09-03 · 번역+5필드 · 순서 = lib/gto-series.ts)
+import { POST as aHighBoardCbet } from "./a-high-board-cbet";
+import { POST as kHighBoardCbet } from "./k-high-board-cbet";
+import { POST as broadwayBoardStrategy } from "./broadway-board-strategy";
+import { POST as donkBetStrategy } from "./donk-bet-strategy";
+import { POST as monotoneBoardStrategy } from "./monotone-board-strategy";
+import { POST as pairedBoardStrategy } from "./paired-board-strategy";
+import { POST as lowBoardCheckRaise } from "./low-board-check-raise";
+import { POST as threeBetPotCbet } from "./3bet-pot-cbet";
+import { POST as threeBetPotBetSizing } from "./3bet-pot-bet-sizing";
+import { POST as threeBetPotLowBoard } from "./3bet-pot-low-board";
+import { POST as blindBattleCbet } from "./blind-battle-cbet";
+import { POST as blindBattleConnectedBoard } from "./blind-battle-connected-board";
+import { POST as acePairedBoardStrategy } from "./ace-paired-board-strategy";
 
 /**
  * 중국어 번체(zh-hant · 대만/홍콩) 블로그 포스트.
@@ -118,6 +132,20 @@ export const ZH_HANT_POSTS: Post[] = [
   eptBarcelona2026Guide,
   // ── 대만 로케일 고유 글 (2026-08-31) ──
   taiwanPokerClubsGuide,
+  // ── GTO 솔버 시리즈 13편 (2026-09-03 · 번역+5필드 · 순서 = lib/gto-series.ts) ──
+  aHighBoardCbet,
+  kHighBoardCbet,
+  broadwayBoardStrategy,
+  donkBetStrategy,
+  monotoneBoardStrategy,
+  pairedBoardStrategy,
+  lowBoardCheckRaise,
+  threeBetPotCbet,
+  threeBetPotBetSizing,
+  threeBetPotLowBoard,
+  blindBattleCbet,
+  blindBattleConnectedBoard,
+  acePairedBoardStrategy,
 ];
 
 const ZH_HANT_SLUGS = new Set(ZH_HANT_POSTS.map((p) => p.slug));

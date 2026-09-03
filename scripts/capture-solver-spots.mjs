@@ -72,6 +72,10 @@ const L10N = {
         back: '← 列表', spots: '教学案例', view: '⚡ 直接看结果',
         noDraw: '无听牌', combos: '组合', hands: '手牌', draws: '听牌',
         all: '全部', summary: '汇总', barWidth: '柱宽' },   // 2026-09-03 라이브 ?lang=zh 화면에서 직접 읽음(Playwright innerText)
+  'zh-hant': { url: 'https://solver.holdemmaster.com/?lang=zh-hant',
+        back: '← 列表', spots: '教學案例', view: '⚡ 直接看結果',
+        noDraw: '無聽牌', combos: '組合', hands: '手牌', draws: '聽牌',
+        all: '全部', summary: '彙總', barWidth: '長條寬' },   // 2026-09-03 라이브 ?lang=zh-hant 화면에서 직접 읽음(Playwright innerText · 간체와 다른 자리: 彙總·長條寬·無聽牌)
 };
 const T = L10N[LANG];
 if (!T) { console.error('지원하지 않는 로케일:', LANG, '· 아는 것:', Object.keys(L10N).join(', ')); process.exit(1); }

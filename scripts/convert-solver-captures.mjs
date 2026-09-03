@@ -48,11 +48,11 @@ if (!existsSync(SRC)) process.exit(console.error("캡처 폴더 없음:", SRC, "
 mkdirSync(DST, { recursive: true });
 
 const files = readdirSync(SRC)
-  .filter((f) => /-(oop|ranges)(-[a-z]{2})?\.png$/.test(f))   // -en 등 로케일 접미 허용
+  .filter((f) => /-(oop|ranges)(-[a-z]{2}(?:-[a-z]{4})?)?\.png$/.test(f))   // -en · -zh-hant 등 로케일 접미 허용(2026-09-03 하이픈 접미 추가)
   .filter((f) => !only.length || only.some((k) => f.startsWith(k + "-")))
   .filter((f) => {
     if (!LANG) return true;
-    const m = /-(oop|ranges)(?:-([a-z]{2}))?\.png$/.exec(f);
+    const m = /-(oop|ranges)(?:-([a-z]{2}(?:-[a-z]{4})?))?\.png$/.exec(f);
     const suf = m?.[2] || "ko";
     return suf === LANG;
   });
