@@ -1,3 +1,14 @@
+## 2026-09-03 (3) — **M-082 이행** — 대회 허브 GPT 교차검수 3회차 종합(검수장 발신) · 커밋 `9cb725bc` · 회신 M-083
+
+사장님 «M-082 이행하자». 검수장 보고 3편(1·2·3회차 · 오탐 0 ×3)을 전부 읽고 **전건 본체 Playwright 재현**(Triton·WPT 스케줄·Merit·Okada·APL·NHN·HPC·Luzern) 후 반영. 🔴 발견: Triton 공식은 ONE을 «COMING SOON»으로 두고 SHRS만 「Nov 15~30」 → Merit 값 채택 · WPT 스케줄 페이지는 200이지만 상세는 Cloudflare 403(sourceUrl은 스케줄로) · casinos.at 대회 페이지는 봇 403 · partypoker는 Playwright로도 본문 0.
+
+- **데이터 정정 9**(`lib/tournaments.ts`): BPC €200~€1,100 · CAPT 제펠트 메인 €500+50(Unicorn €1,000+100은 별개) · 브레겐츠 10-13 · 파나마 Sortis · APTC USD 5,000,000 GTD 정본(TWD 환산 가변) · EPT 프라하 Open ME €1,100·€825~€10,300 · Triton 11-05~15 / 11-15~30 · Megastack 25 11-27 ₱45,000. 무조치 #1 유지. i18n 5로케일 note 동기.
+- **데이터 추가 13**: 🇰🇷 hpt-5(9/11~13 스위스 그랜드 호텔 · 총상금 16억 · 새틀 참가권 전용 · **내국인 가능** · highlight) · apl-seoul-winter-circuit-1(10/23~25 ₩4억 GTD) · WPT 7(bestbet·Prime Lodge·Prime Cyprus·Bay 101·Venetian Fall·Prime Cambodia·Cambodia) · 마닐라 4. 130 → **143행** · KR 2026 = 19행.
+- **KO 정적 서술**(`tournaments-client.tsx` · 미러 없음): 피망 → 네오위즈·«피망 쇼다운» · 한게임 NHN · APT = Asian Poker Tour·2026 5스톱 · Circuit 골드 링 · WSOP 기간 #108 통일 · $9,404만 = 2024 상금풀 라벨 · 새틀 GGPoker/WSOP.com 구분 · **KPT(스파인 0·공식 0) → HPT** 전면 교체 · WPT 바이인 실측 범위 · 세금 기타소득금액 300만·외납공제 한도 · «13개+» → `KR_2026` 데이터 계산 · **독자 피해형**: 제주·인천 카드 «외국인 전용 카지노 · 내국인 참가 불가» + 안내문 자격 명시(APT 인천 신분증 규정 축어) + **서울 카드 신설**(HPT·APL) · «완전히 합법» 등 합법성 판정 문구 삭제(posting.mdc).
+- verifiedAt 09-03: 정정 9 + 추가 13 + JOPT 6 + HPC + PCSO 40. 미갱신: partypoker 4 · PCSM 챔피언십(날짜 미노출) · Fukuoka #01(종료).
+- 스파인 말미 「2026-09-03 — M-082 이행 기록」 · 회신 `docs/reply-to-review-2026-09-03-m083.md` · 요청 3(회귀 기준선 · CAPT 3행 URL · partypoker 표면).
+- 🪶 도구 함정: **스파인 추기를 bash heredoc 없이 node -e 문자열로 넣다가 백틱·`$`가 셸에 먹혀 본문이 비었다**(메모리 [[backticks-break-shell-strings]] 그대로 재발) → Write로 임시 .md 만들고 node로 splice. CRLF 파일(tournaments.ts·client)은 Edit 도구가 어긋나 «정확 n회 검증 치환표(CRLF 인식)»로.
+
 ## 2026-09-03 (2) — GTO 솔버 13편 **zh-hant(번체·대만) 전파(4번째 언어) 발행** — «번역 + 5필드» · 발행 커밋 `fed20ed2`
 
 사장님 지시 «zh-hant 작업하자 … 진행해 고품질포스팅이 기본이야». 회차 계획 9단계를 핸드오프에 먼저 박고(메모리 규율) 순서대로 완주. 모델 분배 = 판단·리서치·게이트·통일/정정 스크립트·마감 = Fable / 번역 3배치·네이티브 렌즈 2종·사전검수 = Opus / 딜러·교열·2차 교열 = Fable(Agent). 🔴 **Opus 세션 한도(17:40 리셋)가 정정 배치 2개를 끊어** 문장 정정 88건은 «정확 n회 검증 치환표»로 Fable이 직접 반영했다.

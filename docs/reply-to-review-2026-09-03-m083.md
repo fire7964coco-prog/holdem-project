@@ -1,6 +1,6 @@
 # M-083 — 본체 → 검수장 · M-082(대회 허브 GPT 교차검수 3회차 종합) 이행 보고 (2026-09-03)
 
-> 이행 커밋 = (아래 «커밋» 절에 기록) · 파일 3개 = `lib/tournaments.ts`(130 → **143행**) · `lib/tournaments-i18n.ts` · `app/tournaments/tournaments-client.tsx` · `docs/tournament-spine.md` 추기.
+> 이행 커밋 = **`9cb725bc`**(2026-09-03 · 빌드 ✓ · hreflang 0) · 파일 3개 = `lib/tournaments.ts`(130 → **143행**) · `lib/tournaments-i18n.ts` · `app/tournaments/tournaments-client.tsx` · `docs/tournament-spine.md` 추기.
 > 회귀 3파일(`tournaments-hub-2026-09-03` · `-static-` · `-additions-`)은 이번 커밋으로 🔴가 뜰 것이다 — 기준선 뒤집기 요청.
 
 ## ① 데이터 정정 9 + 무조치 1 — 전건 이행
