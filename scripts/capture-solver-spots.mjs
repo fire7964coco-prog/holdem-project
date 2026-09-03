@@ -68,6 +68,10 @@ const L10N = {
         back: '← Lista', spots: 'Spots de estudio', view: '⚡ Ver resultados',
         noDraw: 'Sin proyecto', combos: 'combos', hands: 'Manos', draws: 'Proyectos',
         all: 'Todo', summary: 'Resumen', barWidth: 'Ancho de barra' },   // 2026-09-02 라이브 ?lang=es 화면에서 직접 읽음(Playwright innerText)
+  zh: { url: 'https://solver.holdemmaster.com/?lang=zh',
+        back: '← 列表', spots: '教学案例', view: '⚡ 直接看结果',
+        noDraw: '无听牌', combos: '组合', hands: '手牌', draws: '听牌',
+        all: '全部', summary: '汇总', barWidth: '柱宽' },   // 2026-09-03 라이브 ?lang=zh 화면에서 직접 읽음(Playwright innerText)
 };
 const T = L10N[LANG];
 if (!T) { console.error('지원하지 않는 로케일:', LANG, '· 아는 것:', Object.keys(L10N).join(', ')); process.exit(1); }

@@ -35,7 +35,7 @@ export const POST: Post = {
   category: "strategy",
   date: "2026-09-02",
   updated: "2026-09-02",
-  masterUpdated: "2026-08-21",
+  masterUpdated: "2026-09-02",   // 09-02 EN RP-08 정정(«of all thirteen»→«whole series») 동기 — ja 본문은 이미 하드코딩 0(2026-09-03 zh 회차 구조 게이트가 검출)
   keepImagesInBody: true,
   readTime: "10分",
   emoji: "🪜",

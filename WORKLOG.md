@@ -1,3 +1,35 @@
+## 2026-09-03 — GTO 솔버 13편 **zh(간체) 전파(3번째 언어) 발행** — «번역 + 5필드» · 사장님 «분석 포스팅이니 재저작 말고 꼼꼼한 번역 위주로 · 모델 분배해서 효율적으로»
+
+사장님 지시 «zh 진행 … 재저작 필요 없을 듯, 번역 위주로 … fable 5.1이니 적절히 모델 분배». 규격은 이미 스펙 §4-A-2/§4-A-3(«13편은 솔버 해설이라 언어마다 재저작 불필요» · 08-19/21 사장님 판정)이라 ja·es와 같은 «번역 + 5필드». 모델 분배 = 판단·리서치·게이트·딜러/§13·교열/구조 렌즈 = Fable / 번역 3배치·네이티브 렌즈 2종·정정 2배치·2차 교열 2배치 = Opus(병렬).
+
+### 산출
+- **키워드 팩** `docs/keyword-bank/zh-gto-series.md` — 라쿠 SG+MY 98종(30크레딧) + DFS SERP 12쿼리(SG·zh-CN·live는 태스크 1개씩만) + 자동완성 46시드. **es와 동형**: 중국어 서술형은 전부 null(`德州扑克 范围` 10만 예외), 영어 술어 `c-bet` 20·`spr poker` 20만 두 자리. 자동완성은 산다(范围优势·超对·暗三条·过牌加注·check raise·donk意思·spr) → 검색 표면 「德州扑克 + 영어 술어」, 본문은 앱·코퍼스 표기, 훅은 숫자. 함정: SG 간체 SERP에 번체 사이트가 그대로 뜬다 · `单色牌面`은 족보 의도 오염 · Labs `keyword_suggestions`는 SG+zh-CN 빈 배열.
+- **앱 zh 캡처 26장** `public/images/gto-*-zh.webp`(1,237KB) — `capture-solver-spots.mjs`·`make-solver-range-charts.mjs`에 zh 사전 신설(라이브 `?lang=zh` Playwright 실측). `convert --lang=zh`.
+- **브리프** `docs/zh-gto-series-translation-brief.md` — §1-B 앱 UI 축어 사전(내비·셀렉터·칩·등급 14종·드로우 6종·13스팟 이름·그룹 조건문) · §4 폐기 앵커 · §4-B 어휘 사전+조건표 고정문+따옴표(es §6-1 교훈 선반영) · §6 zh 교훈 7개.
+- **13편** `lib/posts-zh/<slug>.ts` + `index.ts` 등록 + `/zh/solver` `SPOT_GROUPS` slug 13개. 빌드 **512 intl posts(+13)** · hreflang ko/en/ja/es/zh-Hans/x-default · 자기 히어로 1회 · FAQ 스키마 Q=소스 · `r:`/`g:` 누출 0 · 번체 혼입 0.
+- 게이트 신설 `scripts/check-gto-structure.mjs`(`--locale=`) — EN 1:1 계수(H2·링크 대상·FAQ·디렉티브·이미지·하이라이트·표 행·readnext) + 폐기 앵커 + 표기 규칙(카드 10·따옴표·核对·readTime·태그·masterUpdated). 회차 중 오탐 2건(「暗三条罕见」=EN 축어 · 「完全没打中」=다른 명제 · 번체 집합의 「率」)을 튜닝.
+
+### 검수 — 게이트 + 렌즈 4종 병렬 → 정정 2배치 → 2차 교열 2배치
+- 게이트: 구조 13/13 · `check:gto --locale=zh` ✅103 🔴0 · `audit:hard --locale=zh` 56/56 🔴0(🟠2 기존 형제표) · `check:intl-links` 512 · `check:images` ✅ · `check:image-reuse` 🔴0 · `check:seo-sync` · `check:cjk`.
+- 딜러/§13(Fable): **🔴 0 · 🟠 2**(readnext 카드 「唯一该领打」 새 주장 · ⑩ H2 「都没打中」) — 수치 «자리»(주어·플레이어·방향·표 볼드·산문화 역산) 13편 전수 EN 1:1 · 고지문 n=n(①5 ②5 ③6 ④7 ⑤8 ⑥13 ⑦8 ⑧9 ⑨9 ⑩7 ⑪5 ⑫7 ⑬9) · set/trips 지시 대상 ⑥⑬ §13 직접 검산 ✓.
+- 네이티브 A(Opus · 의미·관용구): **의미 왜곡 2**(「那一半」 프레임 창작 · 「每隔一张转牌」=every other 오역) + 표현 47 + 圈内 오용 12(成手·动作芯片·三条大街·位置=spot·出路=outs·怪物·掷硬币·穿过·隔了 5 个大小) + 배치 분열 12. 총평 «중국어 잘하는 사람이 영문 따라 쓴 글» → 공간 은유 직역(sit/live/ahead/floor)이 주범.
+- 네이티브 B(Opus · 통일·누락): 실질 누락 0 · 증역 2(복독) · 표기 분열 8조(牌局/局面 · 三条 행 5변형 · MDF · 13x13 · 앵커 · 첫 등장 병기 배치 C 전무).
+- 교열/구조(Fable): 🔴1(readnext 唯一) · 🟠13 · 배치 분열 표 17항(절단면 = 정확히 A/B/C 경계).
+- 정정: 기계 통일 스크립트 1회(牌局→局面 21곳 앱 축어 제외 · EV (bb) · MDF · 侧边栏 · 进入 · 앵커 3종 · 三条 행 라벨 · readnext=title 4곳 · 成牌 · 按钮 · 三条街 · `****` · 표 헤더 8곳 · `**` 뒤 공백 12곳) + Opus 정정 2배치(①~⑦ 51건 · ⑧~⑬ 34건 · 미반영 3건은 이미 충족/오탐).
+- 2차 교열 2배치: **20곳 추가**(①~⑦ 5: EQR 이중 병기·坐在 잔존·掷硬币 잔존·BB 이중 병기 / ⑧~⑬ 15: set·bluff·BTN·EQR 병기 누락·坐在 6곳·「长什么样」 잔구·「翻译成」 오역).
+
+### 브리프 오역 사고
+브리프 §3-5 고정문 «pre-solves»를 「预算」(=예산)으로 적었고 배치 A·B가 축어로 따랐다(5곳). 배치 C만 「只算到」로 고쳐 씀 → 13편 통일 + 브리프 정정. **고정문은 브리프에 박기 전 네이티브 1회 검수**(브리프 §6-1).
+
+### EN 역발견(zh 렌즈 발원 · EN-먼저 판정 후보 · zh 단독 수정 안 함 — 핸드오프)
+⑨ 산문 «8.2 trips»(언페어 보드 → set) · ③ Quick answer «betting first folds out the hands you beat and gets called by the hands you don't»(RP-09 골격, ①은 정정됐는데 ③ 잔존) · ⑧ FAQ «a board that favors the caller» · ⑫ FAQ «three times as many overpairs» vs 본문 «three and a half times»(42/12) · ④ 등급표 «Third pair or lower» / «Underpair» 두 행 값 동일(6.5/6.4 — 앱 라벨은 弱对/低对) · ④ 「死平은 两对뿐」인데 暗三条 1.9/1.9도 동률 · ⑦ 표 라벨 «Equity realization»만 (EQR) 없음 · ⑩~⑬ `## FAQ` H2 부재(EN 동형 · ja 회차 기지).
+
+### 덤
+- 상설화한 구조 게이트를 ja에 돌렸더니 **ja ⑫ masterUpdated 2026-08-21 ≠ EN 09-02** 드리프트 검출(es 회차의 EN RP-08 정정이 ja에 미동기). ja 본문은 이미 하드코딩 0이라 날짜만 동기했다.
+
+### 도구 함정(신규)
+DFS live SERP는 배열로 보내면 2번째부터 «You can set only one task at a time» → 순차 · Bash heredoc이 JS 템플릿 안 `\`를 `\`로 접는다(정규식 스크립트는 Edit 도구로) · python 출력에 한자가 있으면 `PYTHONIOENCODING=utf-8` 없이는 cp949 크래시로 **루프가 중간에 끊긴다**(파일 일부만 처리됨 — 실제로 났다).
+
 ## 2026-09-02 (7) — GTO 솔버 13편 **es 전파(2번째 언어) 발행** — «번역 + 5필드» · 사장님 «아주아주 큰 시장언어이니 서치 많이하고 고품질로, 배포까지»
 
 사장님 지시 «es 진행하자 … 마지막 배포까지 부탁해». ja 회차(09-02 (5))의 브리프 템플릿을 es로 갈아 끼우되 **ja 교훈 둘(앱 UI 축어 사전 입력 · 문장 단위 정정)을 처음부터 박았다.** 재저작 아님 — 수치·논거·구조·링크 개수 EN 1:1.
