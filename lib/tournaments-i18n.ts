@@ -913,6 +913,8 @@ export function localizedName(t: Tournament, locale: BoardLocale): string {
    ★ 사전에 없는 값은 원문 그대로 통과시킨다. 지어내지 않는다.
    ──────────────────────────────────────────────────────────── */
 const FIELD_EN: Record<string, string> = {
+  "스위스 그랜드 호텔 컨벤션센터": "Swiss Grand Hotel Convention Center, Seoul",
+  "(온라인 새틀 7/10~9/10)": "(online satellites Jul 10 – Sep 10)",
   "새틀라이트 티켓 전용": "Satellite ticket only",
   /* 한자·가나 회장명은 영어 페이지에서 읽히지 않는다.
      지어내지 않고 각 회장의 공식 라틴 표기를 쓴다
@@ -956,6 +958,8 @@ const FIELD_EN: Record<string, string> = {
 /* ja 필드 사전. 통화는 원문 통화를 유지하되 표기만 일본식으로 옮긴다
    ("₩150만"은 일본 독자가 읽는 형태가 아니다 → "150万ウォン") */
 const FIELD_JA: Record<string, string> = {
+  "스위스 그랜드 호텔 컨벤션센터": "スイスグランドホテル コンベンションセンター（ソウル）",
+  "(온라인 새틀 7/10~9/10)": "（オンラインサテライト 7/10〜9/10）",
   "새틀라이트 티켓 전용": "サテライトチケット限定",
   "€400~": "€400〜",
   "€1,100~": "€1,100〜",
@@ -1023,6 +1027,8 @@ const VENUE_JA: Record<string, string> = {
 
 /* zh 필드 사전 (간체). 통화는 원문 통화 유지, 표기만 현지식 */
 const FIELD_ZH: Record<string, string> = {
+  "스위스 그랜드 호텔 컨벤션센터": "首尔瑞士大酒店会议中心",
+  "(온라인 새틀 7/10~9/10)": "（线上卫星赛 7/10〜9/10）",
   "새틀라이트 티켓 전용": "仅限卫星赛门票",
   "€400~": "€400起",
   "€1,100~": "€1,100起",
@@ -1114,6 +1120,8 @@ const SCHEMA_DESC_ZH: Record<string, string> = {
 
 /* zh-hant 필드 사전 (번체) */
 const FIELD_HANT: Record<string, string> = {
+  "스위스 그랜드 호텔 컨벤션센터": "首爾瑞士大飯店會議中心",
+  "(온라인 새틀 7/10~9/10)": "（線上衛星賽 7/10〜9/10）",
   "새틀라이트 티켓 전용": "僅限衛星賽門票",
   "€400~": "€400起",
   "€1,100~": "€1,100起",
@@ -1212,6 +1220,8 @@ const PAREN_HANT: Record<string, string> = {
    ★ 스페인어는 천단위 구분이 점(.)이고 소수점이 쉼표(,)다 — 영어와 반대.
      "€5,300"을 그대로 두면 스페인어 독자에겐 "5.3유로"로 읽힌다. */
 const FIELD_ES: Record<string, string> = {
+  "스위스 그랜드 호텔 컨벤션센터": "Swiss Grand Hotel Convention Center, Seúl",
+  "(온라인 새틀 7/10~9/10)": "(satélites online 10 jul – 10 sep)",
   "새틀라이트 티켓 전용": "Solo con ticket de satélite",
   /* ★ 스페인어 숫자 표기는 영어와 정반대다 — 천 단위가 마침표, 소수점이 쉼표.
      그래서 `€1,650`을 그대로 두면 스페인어 독자에겐 "1유로 65센트"로 읽힌다.
@@ -1356,6 +1366,8 @@ const SCHEMA_DESC_ES: Record<string, string> = {
    근거: docs/translation-terms-de.md §3(표기) · §7-5(숫자 실측)
    ──────────────────────────────────────────────────────────── */
 const FIELD_DE: Record<string, string> = {
+  "스위스 그랜드 호텔 컨벤션센터": "Swiss Grand Hotel Convention Center, Seoul",
+  "(온라인 새틀 7/10~9/10)": "(Online-Satellites 10.7.–10.9.)",
   "새틀라이트 티켓 전용": "Nur mit Satellite-Ticket",
   "€825~€100,000": "€825–€100.000",
   "€1,650~€250,000": "€1.650–€250.000",
