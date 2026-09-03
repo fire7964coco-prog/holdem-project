@@ -2,8 +2,12 @@
 
 > 대상 = **말레이어(ms, Bahasa Melayu — 말레이시아)**. 말레이시아 포커 글로시(onlinecasino-my.com/senarai-terma-definisi-poker · texasholdemseal-my.com · toponlinecasinomy · livecasino-my) 기준. **id(인니어)와 가깝지만 어휘·숫자표기·말투가 다르다** — id 파일을 그대로 베끼지 말 것.
 
+> 🔴 **정본은 이 파일이 아니다 — `docs/keyword-bank/ms-posting-reference.md`다**(2026-09-03 신설).
+> 이 브리프는 번역 착수 전 웹리서치 결과이고, 정본에는 **본체 코퍼스 9편 실측 + 원어민 검수 3인**이 얹혀 있다.
+> 어긋나면 정본이 이긴다. 아래 «필요시 awak 혼용 가능»도 실측 근거가 없다(awak 0 · kamu 0).
+
 ## ⚠️ id와의 핵심 차이 (먼저 숙지)
-- **kartu → `kad`** (말레이는 kad, 인니는 kartu). money → **`wang`**(인니 uang). round → **`pusingan`**(인니 ronde/babak). you → **`anda`**(인니 kamu).
+- **kartu → `kad`** (말레이는 kad, 인니는 kartu). money → **`wang`**(인니 uang). round → **`pusingan`**(인니 ronde/babak). you → **`anda`** (🔴 2026-09-03 정정 — 인니어는 kamu가 아니라 **Anda**다. 본체 id 코퍼스 Anda 3,340 / kamu 0. 진짜 차이는 «단어»가 아니라 «대소문자 자리»: ms는 문중 소문자 anda, 문두·제목만 Anda).
 - **숫자 표기 = 영어식**(말레이시아 관습): 천단위 **콤마(,)**, 소수점 **마침표(.)** → `1,326`, `198,000`, `0.003%`, `2.5 BB`, `2.7:1`. **id식 마침표/쉼표 반전 금지.** §13 숫자값·구분자 **영어 마스터 그대로 유지**(변환 불필요 = 리스크 낮음).
 
 ## 용어 (현지 관습 — 영어 차용 우세 + 말레이어 등가)

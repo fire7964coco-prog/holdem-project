@@ -157,6 +157,17 @@ kicker·tiebreak·split-pot·reading 4편은 id 검색축이 없다 — 이 4편
 
 **D. 출처 상태(2026-09-02 실측)**: 🔴 **ggpoker.com/id 블로그·basics 다수 404**(`/id/blog/learning-by-reviewing-your-hands/` · `/id/poker-basics/how-to-play-poker/` · `/id/blog/beginner-strategy/a-beginners-guide-to-poker-bet-sizing/` · `/id/poker-games/smart-betting/`) — 브리프의 GGPoker 출처는 새 글에 걸기 전 curl 재확인. 살아 있는 인니 포커 앱 코퍼스 = apps.apple.com/id NTPoker(«Pelatih Poker GTO» — 본문은 GTO solver·kisaran·equity·latihan·umpan balik instan·Anda) · softonic-id «Poker Solver - GTO for Holdem». 족보 영어 표기 확인 = herry.portfoliobox · medium(hanaizumi) · p2k.stekom.ac.id «Daftar tangan dalam poker».
 
+🔴 **E. 2026-09-03 본체 재계수 — «0»으로 적힌 두 낱말은 «그 뜻으로 0»이지 «부재»가 아니다**
+(우편함 프로토콜 §3 «수치는 직접 센다»로 전건 재계수. **판정 방향은 위 표가 전부 맞았고**, 아래는 근거가 더 강해지거나 오독 위험이 생긴 자리다.)
+
+- **`pemecah` = 0**(solver 뜻) → 실계수 **27건**인데 **전부 «pemecah seri»(타이브레이커)**다.
+  solver 뜻은 실제로 0이니 판정은 유지 — 오히려 **더 강한 기각 근거**다: pemecah는 이미 «동점 처리»로 점유돼 있어
+  solver에 쓰면 기존 43편과 충돌한다. 근거를 «안 쓴다»가 아니라 **«다른 뜻으로 이미 쓰인다»**로 적어라.
+- **`kisaran` = 0**(레인지 뜻) → 실계수 **2건**이고 「Kisaran Anggaran」·「Kisaran pot rake」다.
+  둘 다 **일반어 «범위»**라 정상이다. 🔴 **kisaran을 금지어로 읽지 마라** — 레인지 뜻으로만 금지다.
+- 나머지 계수는 대소문자·낱말경계 처리 차이로 ±2 안에서 갈렸다(range 214/215 · equity 322/324 · board 378/380 · solver 25/26).
+  **방향에 영향 없음.** 다음 재계수 때 방법을 함께 적어라(ms 정본 `ms-posting-reference.md` §1이 그 형식이다).
+
 ⚠ 솔버가 본체 결함으로 넘긴 2건은 핸드오프 미결로: ① `app/community/community-client.tsx` id LABELS가 **kamu체**(블로그·브리프·앱은 Anda) ② `/id/solver` 랜딩 404(솔버 앱 id 소개 문단은 번역 완료 — `outbound.ts` 한 줄로 켜짐).
 
 ## 6. 검증된 사실 자산 — §13·룰 번호 (경화에서 확정된 정본, 새 글에서 그대로 재사용)
