@@ -7,6 +7,7 @@
 - **KO 정적 서술**(`tournaments-client.tsx` · 미러 없음): 피망 → 네오위즈·«피망 쇼다운» · 한게임 NHN · APT = Asian Poker Tour·2026 5스톱 · Circuit 골드 링 · WSOP 기간 #108 통일 · $9,404만 = 2024 상금풀 라벨 · 새틀 GGPoker/WSOP.com 구분 · **KPT(스파인 0·공식 0) → HPT** 전면 교체 · WPT 바이인 실측 범위 · 세금 기타소득금액 300만·외납공제 한도 · «13개+» → `KR_2026` 데이터 계산 · **독자 피해형**: 제주·인천 카드 «외국인 전용 카지노 · 내국인 참가 불가» + 안내문 자격 명시(APT 인천 신분증 규정 축어) + **서울 카드 신설**(HPT·APL) · «완전히 합법» 등 합법성 판정 문구 삭제(posting.mdc).
 - verifiedAt 09-03: 정정 9 + 추가 13 + JOPT 6 + HPC + PCSO 40. 미갱신: partypoker 4 · PCSM 챔피언십(날짜 미노출) · Fukuoka #01(종료).
 - 스파인 말미 「2026-09-03 — M-082 이행 기록」 · 회신 `docs/reply-to-review-2026-09-03-m083.md` · 요청 3(회귀 기준선 · CAPT 3행 URL · partypoker 표면).
+- 🔴 배포 후 라이브 확인이 잡은 것: en·zh-hant 보드에 HPT 행의 `venue`(스위스 그랜드 호텔 컨벤션센터)·`dateNote`(온라인 새틀)가 **한국어 그대로** 나갔다 — 값 사전(FIELD_*)에 없는 문자열은 원문 통과 규칙. 6로케일 12항 추가(`6a35cd19`). **새 행을 넣을 때 buyin·venue·dateNote 셋은 사전에 같이 넣어라**(en 라이브 grep으로 확인).
 - 🪶 도구 함정: **스파인 추기를 bash heredoc 없이 node -e 문자열로 넣다가 백틱·`$`가 셸에 먹혀 본문이 비었다**(메모리 [[backticks-break-shell-strings]] 그대로 재발) → Write로 임시 .md 만들고 node로 splice. CRLF 파일(tournaments.ts·client)은 Edit 도구가 어긋나 «정확 n회 검증 치환표(CRLF 인식)»로.
 
 ## 2026-09-03 (2) — GTO 솔버 13편 **zh-hant(번체·대만) 전파(4번째 언어) 발행** — «번역 + 5필드» · 발행 커밋 `fed20ed2`
