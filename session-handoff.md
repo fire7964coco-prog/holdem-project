@@ -12,7 +12,7 @@
 
 ## ▶▶▶ 지금 할 일
 
-### 🟢 **[종결] GTO 솔버 13편 → zh(간체) 전파(3번째 언어) 발행 완료** (2026-09-03 · 발행 커밋 `__COMMIT__` · 라이브 확인 __LIVE__)
+### 🟢 **[종결] GTO 솔버 13편 → zh(간체) 전파(3번째 언어) 발행 완료** (2026-09-03 · 발행 커밋 `ae3e4ead` · 라이브 확인 완료 13/13 — Playwright · 200 · 자기 히어로 1 · ranges 1 · 이미지 HTTP 200 전건 · 디렉티브/색상접두/EN 라벨/번체 누출 0 · hreflang ko/en/ja/es/zh-Hans/x-default · `/zh/solver` 시리즈 링크 13)
 
 > ✅ 7단계 전부 — 키워드 팩(`docs/keyword-bank/zh-gto-series.md`) · zh 캡처 26장 · 브리프(`docs/zh-gto-series-translation-brief.md`) · Opus 3배치 번역 · 등록(`index.ts` + `/zh/solver` SPOT_GROUPS) ·
 > 게이트 🔴 0(구조 13/13 · check:gto 103 · audit zh 56/56 · intl-links 512) · 렌즈 4종(네이티브 ×2 · 딜러/§13 · 교열/구조) → 통일 스크립트 + Opus 정정 2배치(85건) → **2차 교열 2배치(20곳)** · 빌드 512 intl(+13) · 배포. 경위 = WORKLOG 「2026-09-03」.
