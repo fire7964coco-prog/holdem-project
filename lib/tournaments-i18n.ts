@@ -913,6 +913,7 @@ export function localizedName(t: Tournament, locale: BoardLocale): string {
    ★ 사전에 없는 값은 원문 그대로 통과시킨다. 지어내지 않는다.
    ──────────────────────────────────────────────────────────── */
 const FIELD_EN: Record<string, string> = {
+  "새틀라이트 티켓 전용": "Satellite ticket only",
   /* 한자·가나 회장명은 영어 페이지에서 읽히지 않는다.
      지어내지 않고 각 회장의 공식 라틴 표기를 쓴다
      (dojimariver.com / bellesalle.co.jp `bs_takadanobaba` / sapporofactory.jp). */
@@ -955,6 +956,7 @@ const FIELD_EN: Record<string, string> = {
 /* ja 필드 사전. 통화는 원문 통화를 유지하되 표기만 일본식으로 옮긴다
    ("₩150만"은 일본 독자가 읽는 형태가 아니다 → "150万ウォン") */
 const FIELD_JA: Record<string, string> = {
+  "새틀라이트 티켓 전용": "サテライトチケット限定",
   "€400~": "€400〜",
   "€1,100~": "€1,100〜",
   "₩350K~₩5M": "35万〜500万ウォン",
@@ -1021,6 +1023,7 @@ const VENUE_JA: Record<string, string> = {
 
 /* zh 필드 사전 (간체). 통화는 원문 통화 유지, 표기만 현지식 */
 const FIELD_ZH: Record<string, string> = {
+  "새틀라이트 티켓 전용": "仅限卫星赛门票",
   "€400~": "€400起",
   "€1,100~": "€1,100起",
   "₩350K~₩5M": "35万〜500万韩元",
@@ -1111,6 +1114,7 @@ const SCHEMA_DESC_ZH: Record<string, string> = {
 
 /* zh-hant 필드 사전 (번체) */
 const FIELD_HANT: Record<string, string> = {
+  "새틀라이트 티켓 전용": "僅限衛星賽門票",
   "€400~": "€400起",
   "€1,100~": "€1,100起",
   "₩350K~₩5M": "35萬〜500萬韓元",
@@ -1208,6 +1212,7 @@ const PAREN_HANT: Record<string, string> = {
    ★ 스페인어는 천단위 구분이 점(.)이고 소수점이 쉼표(,)다 — 영어와 반대.
      "€5,300"을 그대로 두면 스페인어 독자에겐 "5.3유로"로 읽힌다. */
 const FIELD_ES: Record<string, string> = {
+  "새틀라이트 티켓 전용": "Solo con ticket de satélite",
   /* ★ 스페인어 숫자 표기는 영어와 정반대다 — 천 단위가 마침표, 소수점이 쉼표.
      그래서 `€1,650`을 그대로 두면 스페인어 독자에겐 "1유로 65센트"로 읽힌다.
      ★ 그리고 멕시코에서 `$`는 페소다. USD는 반드시 `US$`로 적는다
@@ -1215,6 +1220,8 @@ const FIELD_ES: Record<string, string> = {
   "€825~€100,000": "€825–€100.000",
   "€1,650~€250,000": "€1.650–€250.000",
   "€1,650~€5,300": "€1.650–€5.300",
+  "€825~€10,300": "€825–€10.300",
+  "€200~€1,100": "€200–€1.100",
   "€150~€1,000": "€150–€1.000",
   "$2,000~$150,000": "US$2.000–US$150.000",
   "$25,000~$200,000": "US$25.000–US$200.000",
@@ -1349,9 +1356,12 @@ const SCHEMA_DESC_ES: Record<string, string> = {
    근거: docs/translation-terms-de.md §3(표기) · §7-5(숫자 실측)
    ──────────────────────────────────────────────────────────── */
 const FIELD_DE: Record<string, string> = {
+  "새틀라이트 티켓 전용": "Nur mit Satellite-Ticket",
   "€825~€100,000": "€825–€100.000",
   "€1,650~€250,000": "€1.650–€250.000",
   "€1,650~€5,300": "€1.650–€5.300",
+  "€825~€10,300": "€825–€10.300",
+  "€200~€1,100": "€200–€1.100",
   "€150~€1,000": "€150–€1.000",
   "$2,000~$150,000": "$2.000–$150.000",
   "$25,000~$200,000": "$25.000–$200.000",
@@ -1474,6 +1484,21 @@ const MONTH_ES = ["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","n
      (15억 → ₩1.5bn / 15億ウォン / 15亿韩元 / 1.500 millones de KRW).
    ──────────────────────────────────────────────────────────── */
 const NOTE_EN: Record<string, string> = {
+  // 2026-09-03 M-082 ② 추가 13건
+  "hpt-5": "₩1.6B total prize · online satellites on Hangame Royal Hold'em → live Main Event (Day 1 Sep 11–12 · Day 2 Sep 13) · open to Korean nationals",
+  "apl-seoul-winter-circuit-1": "Circuit I ₩400,000,000 GTD · APL Winter Series ₩2,300,000,000 GTD total · Seoul returns after two years",
+  "wpt-bestbet-scramble": "Main Event $5,000 / $1,000,000 GTD",
+  "wpt-prime-lodge": "Main Event $1,100 / $1,000,000 GTD",
+  "wpt-prime-cyprus": "Main Event $1,100 / $1,000,000 GTD",
+  "wpt-bay-101": "Main Event $5,300 · Shooting Star bounty format",
+  "wpt-venetian-fall": "Main Event $5,000 / $2,000,000 GTD",
+  "wpt-prime-cambodia-2027": "Main Event $1,100 / $500,000 GTD · opening stop of WPT Season 25",
+  "wpt-cambodia-2027": "Main Event $3,500 / $1,000,000 GTD",
+  "manila-megastack-warmup": "₱5,300 Megastack Direct Qualifier on Nov 26 · ₱450K GTD (10 seats)",
+  "manila-december-special": "Subject to regulatory approval · details TBA",
+  "manila-super-series-25": "Main Event ₱18,500 / ₱10M GTD · series ₱22M+ GTD",
+  "manila-megastack-26": "Main Event ₱45,000 / ₱20M GTD · series ₱52M+ GTD",
+  "manila-megastack-25": "Main Event ₱45,000 / ₱20M GTD · series ₱37.6M+ GTD",
   "kpc-jeju": "KPC x LPT Series and the King Poker Series running together",
   "aspt-korea": "90+ tournaments · Main Event Day 1A buy-in ₩1,500,000",
   "apt-jeju-classic": "Largest international series ever held in Korea — 1,718 entries, past the previous 1,693",
@@ -1503,9 +1528,9 @@ const NOTE_EN: Record<string, string> = {
   "apt-jeju-fall": "136 events · Main Event ₩2.2bn GTD · 12 APTC seats",
   "gop-incheon-2": "WPT Seoul runs on Yeongjong Island at the same time, at a different venue",
   "wpt-seoul": "46 events · Main Nov 5–9 (₩1.75M, ₩1bn GTD) · a new 70-table poker room",
-  "apt-championship": "210 trophy events · Main #14 TWD 311.9K / TWD 165,000,000 GTD (from Nov 23) · Nov 12 is industry-only; general entry opens Nov 13",
+  "apt-championship": "210 trophy events · Main #14 TWD 311.9K / USD 5,000,000 GTD (≈TWD 155M, page conversion) (from Nov 23) · Nov 12 is industry-only; general entry opens Nov 13",
   "wsop-paradise": "Moved from Atlantis to Baha Mar · detailed schedule not published yet",
-  "ept-prague": "Dual festival — PokerStars Open ME €1,650 (Dec 2–7) → EPT ME €5,300 (Dec 7–13)",
+  "ept-prague": "Dual festival — PokerStars Open ME €1,100 (Dec 2–7) → EPT ME €5,300 (Dec 7–13) · Cup €825 · HR €10,300",
   "jopt-fukuoka-1": "JOPT's first ever Fukuoka stop · Main Event ¥15,000,000 GTD",
   "jopt-tokyo-2027-1": "Runs over new year — the 2027 season opener",
   "ajpc-2026": "Free from the online qualifiers through to the final — winner gets a 2027 WSOP Main Event seat",
@@ -1536,7 +1561,7 @@ const NOTE_EN: Record<string, string> = {
   "cap-5-santarosa": "Main Event USD 500",
   "cap-8-rosario": "Season finale",
   "maryland-state": "16 trophy events · over $1,000,000 guaranteed · Main $500K GTD",
-  "bpc-megastack": "Main Event €400 / €300,000 GTD",
+  "bpc-megastack": "Main Event €400 / €300,000 GTD · Mini ME €200 · High Roller €1,100",
   "ps-open-aix": "Main Event €1,100 / €1,000,000 GTD",
   "wpt-world-championship": "2026 dates not announced — the venue's own poker page (Wynn) does not mention WPT either",
 };
@@ -1564,9 +1589,9 @@ const NOTE_JA: Record<string, string> = {
   "apt-jeju-fall": "136イベント · メインイベント22億ウォンGTD · APTCシート12席",
   "gop-incheon-2": "同時期に永宗島でWPT Seoulも開催（会場は別）",
   "wpt-seoul": "46イベント · メイン11/5〜9（175万ウォン、10億ウォンGTD）· 70卓の新設ポーカールーム",
-  "apt-championship": "トロフィーイベント210種 · メイン#14 TWD 311.9K／TWD 165,000,000 GTD（11/23〜）· 11/12は業界関係者専用で、一般参加は11/13から",
+  "apt-championship": "トロフィーイベント210種 · メイン#14 TWD 311.9K／USD 5,000,000 GTD（約TWD 155M・ページ換算）（11/23〜）· 11/12は業界関係者専用で、一般参加は11/13から",
   "wsop-paradise": "AtlantisからBaha Marへ移転 · 詳細日程は未発表",
-  "ept-prague": "デュアルフェスティバル — PokerStars Open ME €1,650（12/2〜7）→ EPT ME €5,300（12/7〜13）",
+  "ept-prague": "デュアルフェスティバル — PokerStars Open ME €1,100（12/2〜7）→ EPT ME €5,300（12/7〜13）· Cup €825 · HR €10,300",
   "jopt-fukuoka-1": "JOPT史上初の福岡開催 · メインイベント¥15,000,000 GTD",
   "jopt-tokyo-2027-1": "年末年始の開催 — 2027シーズンの開幕戦",
   "ajpc-2026": "オンライン予選から決勝まで参加費無料 · 優勝者に2027年WSOPメインの出場権",
@@ -1597,7 +1622,7 @@ const NOTE_JA: Record<string, string> = {
   "cap-5-santarosa": "メインイベントUSD 500",
   "cap-8-rosario": "シーズン最終戦",
   "maryland-state": "トロフィーイベント16種 · 総額$1,000,000超保証 · メイン$500K GTD",
-  "bpc-megastack": "メインイベント€400／€300,000 GTD",
+  "bpc-megastack": "メインイベント€400／€300,000 GTD · Mini ME €200 · High Roller €1,100",
   "ps-open-aix": "メインイベント€1,100／€1,000,000 GTD",
   "wpt-world-championship": "2026年の日程は未発表 — 会場（Wynn）の公式ポーカーページにもWPTの記載がない",
 };
@@ -1625,9 +1650,9 @@ const NOTE_ZH: Record<string, string> = {
   "apt-jeju-fall": "136场赛事 · 主赛事22亿韩元GTD · 12个APTC席位",
   "gop-incheon-2": "同期在永宗岛还有WPT Seoul（场馆不同）",
   "wpt-seoul": "46场赛事 · 主赛11月5〜9日（175万韩元，10亿韩元GTD）· 新建70桌扑克室",
-  "apt-championship": "210场奖杯赛事 · 主赛#14 TWD 311.9K／TWD 165,000,000 GTD（11月23日起）· 11月12日仅限业内人士，普通玩家自11月13日起",
+  "apt-championship": "210场奖杯赛事 · 主赛#14 TWD 311.9K／USD 5,000,000 GTD（约TWD 155M·页面换算）（11月23日起）· 11月12日仅限业内人士，普通玩家自11月13日起",
   "wsop-paradise": "从Atlantis迁至Baha Mar · 详细日程尚未公布",
-  "ept-prague": "双赛事节——PokerStars Open主赛€1,650（12月2〜7日）→ EPT主赛€5,300（12月7〜13日）",
+  "ept-prague": "双赛事节——PokerStars Open主赛€1,100（12月2〜7日）→ EPT主赛€5,300（12月7〜13日）· Cup €825 · HR €10,300",
   "jopt-fukuoka-1": "JOPT史上首次在福冈举办 · 主赛事¥15,000,000 GTD",
   "jopt-tokyo-2027-1": "跨年举办——2027赛季揭幕战",
   "appt-manila": "总保底超₱132M · 主赛事8月6〜10日（₱80,000／₱60M GTD）",
@@ -1656,7 +1681,7 @@ const NOTE_ZH: Record<string, string> = {
   "cap-5-santarosa": "主赛事USD 500",
   "cap-8-rosario": "赛季收官战",
   "maryland-state": "16场奖杯赛事 · 总保底超$1,000,000 · 主赛$500K GTD",
-  "bpc-megastack": "主赛事€400／€300,000 GTD",
+  "bpc-megastack": "主赛事€400／€300,000 GTD · Mini ME €200 · High Roller €1,100",
   "ps-open-aix": "主赛事€1,100／€1,000,000 GTD",
   "wpt-world-championship": "2026年日程未公布——场馆（Wynn）官方扑克页面也没有提到WPT",
 };
@@ -1692,9 +1717,9 @@ const NOTE_HANT: Record<string, string> = {
   "apt-jeju-fall": "136場賽事 · 主賽事22億韓元GTD · 12個APTC席位",
   "gop-incheon-2": "同期在永宗島還有WPT Seoul（場館不同）",
   "wpt-seoul": "46場賽事 · 主賽11月5〜9日（175萬韓元，10億韓元GTD）· 新建70桌撲克室",
-  "apt-championship": "210場獎盃賽事 · 主賽#14 TWD 311.9K／TWD 165,000,000 GTD（11月23日起）· 11月12日僅限業內人士，一般玩家自11月13日起",
+  "apt-championship": "210場獎盃賽事 · 主賽#14 TWD 311.9K／USD 5,000,000 GTD（約TWD 155M·頁面換算）（11月23日起）· 11月12日僅限業內人士，一般玩家自11月13日起",
   "wsop-paradise": "從Atlantis遷至Baha Mar · 詳細賽程尚未公布",
-  "ept-prague": "雙賽事節——PokerStars Open主賽€1,650（12月2〜7日）→ EPT主賽€5,300（12月7〜13日）",
+  "ept-prague": "雙賽事節——PokerStars Open主賽€1,100（12月2〜7日）→ EPT主賽€5,300（12月7〜13日）· Cup €825 · HR €10,300",
   "jopt-fukuoka-1": "JOPT史上首次在福岡舉辦 · 主賽事¥15,000,000 GTD",
   "jopt-tokyo-2027-1": "跨年舉辦——2027賽季揭幕戰",
   "appt-manila": "總保底超過₱132M · 主賽事8月6〜10日（₱80,000／₱60M GTD）",
@@ -1723,7 +1748,7 @@ const NOTE_HANT: Record<string, string> = {
   "cap-5-santarosa": "主賽事USD 500",
   "cap-8-rosario": "賽季最終戰",
   "maryland-state": "16場獎盃賽事 · 總保底超過$1,000,000 · 主賽$500K GTD",
-  "bpc-megastack": "主賽事€400／€300,000 GTD",
+  "bpc-megastack": "主賽事€400／€300,000 GTD · Mini ME €200 · High Roller €1,100",
   "ps-open-aix": "主賽事€1,100／€1,000,000 GTD",
   "wpt-world-championship": "2026年賽程未公布——場館（Wynn）官方撲克頁面也沒有提到WPT",
 };
@@ -1753,9 +1778,9 @@ const NOTE_ES: Record<string, string> = {
   "apt-jeju-fall": "136 eventos · Main Event 2.200 millones de KRW GTD · 12 asientos para el APTC",
   "gop-incheon-2": "El WPT Seoul se juega a la vez en la isla de Yeongjong, en otra sede",
   "wpt-seoul": "46 eventos · Main del 5 al 9 de nov (1,75 M KRW, 1.000 millones GTD) · sala de poker nueva de 70 mesas",
-  "apt-championship": "210 eventos con trofeo · Main #14 TWD 311,9 mil / TWD 165.000.000 GTD (desde el 23 de nov) · el 12 de nov es solo para la industria; el público entra desde el 13",
+  "apt-championship": "210 eventos con trofeo · Main #14 TWD 311,9 mil / USD 5.000.000 GTD (≈TWD 155M, conversión de la página) (desde el 23 de nov) · el 12 de nov es solo para la industria; el público entra desde el 13",
   "wsop-paradise": "Se muda del Atlantis al Baha Mar · programa detallado aún sin publicar",
-  "ept-prague": "Festival doble: ME del PokerStars Open €1.650 (2–7 dic) → ME del EPT €5.300 (7–13 dic)",
+  "ept-prague": "Festival doble: ME del PokerStars Open €1.100 (2–7 dic) → ME del EPT €5.300 (7–13 dic) · Cup €825 · HR €10.300",
   "jopt-fukuoka-1": "Primera parada del JOPT en Fukuoka · Main Event ¥15.000.000 GTD",
   "jopt-tokyo-2027-1": "Se juega entre año nuevo: arranca la temporada 2027",
   "appt-manila": "Más de ₱132 millones garantizados · Main Event del 6 al 10 de ago (₱80.000 / ₱60 millones GTD)",
@@ -1784,7 +1809,7 @@ const NOTE_ES: Record<string, string> = {
   "cap-5-santarosa": "Main Event USD 500",
   "cap-8-rosario": "Cierre de la temporada",
   "maryland-state": "16 eventos con trofeo · más de US$1.000.000 garantizados · Main US$500 mil GTD",
-  "bpc-megastack": "Main Event €400 / €300.000 GTD",
+  "bpc-megastack": "Main Event €400 / €300.000 GTD · Mini ME €200 · High Roller €1.100",
   "ps-open-aix": "Main Event €1.100 / €1.000.000 GTD",
   "wpt-world-championship": "Fechas de 2026 sin anunciar: la propia página de poker del Wynn tampoco menciona el WPT",
 };

@@ -534,6 +534,64 @@ const RAW_TOURNAMENTS: Tournament[] = [
     schemaDescription:
       "제8회 홀덤 마스터스. WPL 메인이벤트 DAY3 & FINAL 상금 18억원, NLH 딥스택 5개 각 4천만원. DAY1 플라이트 28회(8/21~10/2), FINAL 10/5. 초대권 전용 참가.",
   },
+
+  /* ── 🇰🇷 내국인 참가 가능 축 (2026-09-03 M-082 ② · 검수장 A13 + A1) ──────────
+     허브의 한국 카드는 전부 외국인 전용 카지노 베뉴(신화월드 LES A · 파라다이스시티)라 일반 한국 국적자는 참가할 수 없다.
+     아래 두 행은 카지노가 아닌 호텔 컨벤션·시내 베뉴라 «내국인 가능» 축이다. 값은 주최 공식에서 직접 읽었다(본체 Playwright 09-03). */
+  {
+    /**
+     * NHN 공식 뉴스룸 「NHN ‘한게임 로얄홀덤’, 빗썸과 5번째 HPT 개최…총 상금 16억 원 규모」(2026-07-10) 원문:
+     *   「대망의 오프라인 토너먼트는 9월 11일(금)부터 13일(일)까지 스위스 그랜드 호텔 컨벤션 센터에서 펼쳐진다.」
+     *   「온라인 예선 대회인 새틀라이트 토너먼트는 7월 10일(금)부터 9월 10일(목)까지 … ‘한게임 로얄홀덤’에서 진행된다.」
+     *   「총 상금은 16억 원으로 확대되었으며, 빗썸 계좌를 통해 원화(KRW)로 지급될 예정이다.」 · 주최 빗썸 · 운영 SOOP.
+     * 한게임 이벤트 페이지 「2026.07.10 ~ 09.13 · 총상금 16억원 · 09.11(금) ~ 09.13(일) · 스위스 그랜드 호텔 컨벤션센터」 일치.
+     * 🔴 참가 경로는 현금 바이인이 아니라 온라인 새틀라이트 참가권(2장으로 DAY1 출전)뿐 — buyin 은 그 사실을 적는다.
+     */
+    id: "hpt-5",
+    name: "제5회 HPT (Hangame Poker Tour)",
+    nameEn: "5th HPT (Hangame Poker Tour)",
+    type: "domestic",
+    startDate: "2026-09-11",
+    endDate: "2026-09-13",
+    dateNote: "(온라인 새틀 7/10~9/10)",
+    location: "서울 (스위스 그랜드 호텔 컨벤션센터)",
+    city: "Seoul",
+    country: "KR",
+    venue: "스위스 그랜드 호텔 컨벤션센터",
+    buyin: "새틀라이트 티켓 전용",
+    emoji: "🇰🇷",
+    color: "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+    note: "총상금 16억 원 · 한게임 로얄홀덤 온라인 새틀 → 오프라인 메인(DAY1 9/11·12 · DAY2 9/13) · 내국인 참가 가능",
+    highlight: true,
+    sourceUrl: "https://inside.nhn.com/news/956",
+    sourceTier: "A",
+    verifiedAt: "2026-09-03",
+  },
+  {
+    /**
+     * Ace Poker League 공식 「APL SEOUL Returns! Korea Schedule Officially Confirmed」(2026-08-06) 「After two years, APL SEOUL is
+     * finally coming back to Seoul!!」「Total Guarantee: ₩2,300,000,000 GTD」 + 「APL WINTER SERIES 2026 — WINTER PRELIMS CIRCUIT I」(08-28)
+     * 「October 23 – 25, 2026 | 400,000,000 GTD」. 베뉴·바이인은 공식 미기재(「The full event schedule will be announced very soon」).
+     * ⚠ 서울 베뉴가 카지노가 아니면 내국인 참가 가능 후보 — 공식 발표 후 갱신.
+     */
+    id: "apl-seoul-winter-circuit-1",
+    name: "APL 서울 Winter Prelims · Circuit I",
+    nameEn: "APL Seoul Winter Prelims · Circuit I",
+    type: "domestic",
+    startDate: "2026-10-23",
+    endDate: "2026-10-25",
+    location: "서울 (베뉴 공식 미발표)",
+    city: "Seoul",
+    country: "KR",
+    venue: "공식 미기재",
+    buyin: "공식 미기재",
+    emoji: "🇰🇷",
+    color: "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+    note: "Circuit I ₩400,000,000 GTD · APL Winter Series 총 ₩2,300,000,000 GTD · 2년 만의 서울 복귀",
+    sourceUrl: "https://acepokerleague.com/apl-winter-series-2026-winter-prelims-circuit-i/",
+    sourceTier: "A",
+    verifiedAt: "2026-09-03",
+  },
   {
     /**
      * ★ 바이인 범위는 2026-08-31에 «₩350K~₩5M»에서 넓혔다. **이전 값이 틀렸던 게 아니다** —
@@ -714,10 +772,12 @@ const RAW_TOURNAMENTS: Tournament[] = [
     buyin: "TWD 3,300~1,500,000",
     emoji: "👑",
     color: "bg-yellow-500/15 text-yellow-400 border-yellow-500/30",
-    note: "210개 트로피 이벤트 · 메인 #14 TWD 311.9K / TWD 165,000,000 GTD (11/23~) · 11/12는 업계 관계자 전용, 일반 참가자는 11/13부터",
+    // 🔴 2026-09-03 M-082(검수장 1회차 #61): 시리즈 페이지 원문 「USD 5,000,000 GTD」×10 · TWD 표기는 「155M」×5 · «165» 0건.
+    //    07-29의 TWD 165M은 그날의 환산액이었다 — **USD 개런티가 정본이고 TWD 환산은 변한다.** TWD 숫자를 박으면 또 낡는다.
+    note: "210개 트로피 이벤트 · 메인 #14 TWD 311.9K / USD 5,000,000 GTD(약 TWD 155M · 페이지 환산) (11/23~) · 11/12는 업계 관계자 전용, 일반 참가자는 11/13부터",
     sourceUrl: "https://www.theasianpokertour.com/series/apt-championship-taipei-2026",
     sourceTier: "A",
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-09-03",
   },
   {
     id: "wsop-paradise",
@@ -760,13 +820,15 @@ const RAW_TOURNAMENTS: Tournament[] = [
     city: "Prague",
     country: "CZ",
     venue: "Hilton Hotel Prague",
-    buyin: "€1,650~€5,300",
+    buyin: "€825~€10,300",
     emoji: "🇨🇿",
     color: "bg-red-500/15 text-red-400 border-red-500/30",
-    note: "듀얼 페스티벌 — PokerStars Open ME €1,650 (12/2~7) → EPT ME €5,300 (12/7~13)",
+    // 🔴 2026-09-03 M-082(검수장 1회차 #73): 원문 「PokerStars Open Main Event: December 2-7 - €1,100」「PokerStars Cup: December 5-6 - €825」
+    //    「EPT Main Event: December 7-13 - €5,300」「EPT High Roller: December 11-13 - €10,300」. 바르셀로나(€1,650)를 복사한 값이었다.
+    note: "듀얼 페스티벌 — PokerStars Open ME €1,100 (12/2~7) → EPT ME €5,300 (12/7~13) · Cup €825 · HR €10,300",
     sourceUrl: "https://www.pokerstarslive.com/ept/prague/",
     sourceTier: "A",
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-09-03",
   },
   {
     id: "gop-jeju",
@@ -824,7 +886,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     blogLink: "/blog/japan-poker-tournaments-guide",
     sourceUrl: "https://japanopenpoker.com/events/",
     sourceTier: "A",
-    verifiedAt: "2026-08-31",
+    verifiedAt: "2026-09-03",
   },
   {
     id: "jopt-tokyo-3",
@@ -845,7 +907,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     blogLink: "/blog/japan-poker-tournaments-guide",
     sourceUrl: "https://japanopenpoker.com/events/",
     sourceTier: "A",
-    verifiedAt: "2026-08-31",
+    verifiedAt: "2026-09-03",
   },
   {
     id: "jopt-osaka-2",
@@ -866,7 +928,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     blogLink: "/blog/japan-poker-tournaments-guide",
     sourceUrl: "https://japanopenpoker.com/events/",
     sourceTier: "A",
-    verifiedAt: "2026-08-31",
+    verifiedAt: "2026-09-03",
   },
   {
     id: "jopt-tokyo-2027-1",
@@ -886,7 +948,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     blogLink: "/blog/japan-poker-tournaments-guide",
     sourceUrl: "https://japanopenpoker.com/events/",
     sourceTier: "A",
-    verifiedAt: "2026-08-31",
+    verifiedAt: "2026-09-03",
   },
   /* ★ 아래 2건은 2026-08-31 스파인 재대조에서 편입했다.
      `japanopenpoker.com/events/`의 **Upcoming Events**에 공식 게시돼 있는데
@@ -914,7 +976,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     blogLink: "/blog/japan-poker-tournaments-guide",
     sourceUrl: "https://japanopenpoker.com/events/",
     sourceTier: "A",
-    verifiedAt: "2026-08-31",
+    verifiedAt: "2026-09-03",
   },
   {
     id: "jopt-fukuoka-2027-1",
@@ -934,7 +996,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     blogLink: "/blog/japan-poker-tournaments-guide",
     sourceUrl: "https://japanopenpoker.com/events/",
     sourceTier: "A",
-    verifiedAt: "2026-08-31",
+    verifiedAt: "2026-09-03",
   },
   /* ★ 아래 2건은 2026-09-01 «일본 2시장차» 회차에서 편입했다.
      일본은 투어가 여럿이라 JOPT 하나로는 국내 축을 못 덮는다(뱅크 §6-C).
@@ -1053,8 +1115,30 @@ const RAW_TOURNAMENTS: Tournament[] = [
     name: "Manila Megastack 25",
     nameEn: "Manila Megastack 25",
     type: "international",
-    startDate: "2026-11-28",
+    startDate: "2026-11-27",
     endDate: "2026-12-07",
+    location: "필리핀 마닐라 (Okada Manila)",
+    city: "Parañaque",
+    country: "PH",
+    venue: "Okada Manila",
+    // 🔴 2026-09-03 M-082(3회차 #70 + 본체 Playwright): 「Manila Megastack 25 · ₱37.6M+ GTD · November 27-December 7, 2026 · ₱45,000 Main Event · ₱20M GTD」
+    buyin: "₱45,000",
+    emoji: "🇵🇭",
+    color: "bg-sky-500/15 text-sky-400 border-sky-500/30",
+    note: "메인 ₱45,000 / ₱20M GTD · 시리즈 ₱37.6M+ GTD",
+    sourceUrl: "https://www.pokerstarslivemanila.com/tournaments/",
+    sourceTier: "A",
+    verifiedAt: "2026-09-03",
+  },
+
+  /* ── 🇵🇭 PokerStars Live Manila 후속 4건 (2026-09-03 M-082 ② A7·A8·A11·A12 · pokerstarslivemanila.com/tournaments/ 축어) ── */
+  {
+    id: "manila-megastack-warmup",
+    name: "Manila Megastack Warm-up",
+    nameEn: "Manila Megastack Warm-up",
+    type: "international",
+    startDate: "2026-11-23",
+    endDate: "2026-11-26",
     location: "필리핀 마닐라 (Okada Manila)",
     city: "Parañaque",
     country: "PH",
@@ -1062,9 +1146,68 @@ const RAW_TOURNAMENTS: Tournament[] = [
     buyin: "공식 미기재",
     emoji: "🇵🇭",
     color: "bg-sky-500/15 text-sky-400 border-sky-500/30",
-    sourceUrl: "https://www.pokerstarslive.com/appt/",
+    note: "11/26 ₱5,300 Megastack 직접 예선 · ₱450K GTD(10석)",
+    sourceUrl: "https://www.pokerstarslivemanila.com/tournaments/",
     sourceTier: "A",
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-09-03",
+  },
+  {
+    id: "manila-december-special",
+    name: "Manila December Special",
+    nameEn: "Manila December Special",
+    type: "international",
+    startDate: "2026-12-08",
+    endDate: "2026-12-21",
+    location: "필리핀 마닐라 (Okada Manila)",
+    city: "Parañaque",
+    country: "PH",
+    venue: "Okada Manila",
+    buyin: "공식 미기재",
+    emoji: "🇵🇭",
+    color: "bg-sky-500/15 text-sky-400 border-sky-500/30",
+    // 공식 페이지에 이름·기간만 게시(「subject to regulatory approval」).
+    note: "규제 승인 조건 · 상세 미공개",
+    sourceUrl: "https://www.pokerstarslivemanila.com/tournaments/",
+    sourceTier: "A",
+    verifiedAt: "2026-09-03",
+  },
+  {
+    id: "manila-super-series-25",
+    name: "Manila Super Series 25",
+    nameEn: "Manila Super Series 25",
+    type: "international",
+    startDate: "2027-01-22",
+    endDate: "2027-01-30",
+    location: "필리핀 마닐라 (Okada Manila)",
+    city: "Parañaque",
+    country: "PH",
+    venue: "Okada Manila",
+    buyin: "₱18,500",
+    emoji: "🇵🇭",
+    color: "bg-sky-500/15 text-sky-400 border-sky-500/30",
+    note: "메인 ₱18,500 / ₱10M GTD · 시리즈 ₱22M+ GTD",
+    sourceUrl: "https://www.pokerstarslivemanila.com/tournaments/",
+    sourceTier: "A",
+    verifiedAt: "2026-09-03",
+  },
+  {
+    id: "manila-megastack-26",
+    name: "Manila Megastack 26",
+    nameEn: "Manila Megastack 26",
+    type: "international",
+    startDate: "2027-02-22",
+    endDate: "2027-03-07",
+    location: "필리핀 마닐라 (Okada Manila)",
+    city: "Parañaque",
+    country: "PH",
+    venue: "Okada Manila",
+    buyin: "₱45,000",
+    emoji: "🇵🇭",
+    color: "bg-sky-500/15 text-sky-400 border-sky-500/30",
+    note: "메인 ₱45,000 / ₱20M GTD · 시리즈 ₱52M+ GTD",
+    sourceUrl: "https://www.pokerstarslivemanila.com/tournaments/",
+    sourceTier: "A",
+    verifiedAt: "2026-09-03",
   },
 
   /* ── 🇻🇳 베트남 — 가성비 원정지 ────────── */
@@ -1117,7 +1260,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     name: "Triton ONE 북키프로스 2026",
     nameEn: "Triton ONE North Cyprus 2026",
     type: "international",
-    startDate: "2026-11-04",
+    startDate: "2026-11-05",
     endDate: "2026-11-15",
     location: "북키프로스 키레니아 (Merit Royal Diamond)",
     city: "Kyrenia",
@@ -1126,10 +1269,11 @@ const RAW_TOURNAMENTS: Tournament[] = [
     buyin: "공식 미기재",
     emoji: "💎",
     color: "bg-purple-500/15 text-purple-400 border-purple-500/30",
-    // ⚠️ Triton 공식 이벤트 페이지가 "Coming Soon" 상태라 상세 미공개. 날짜는 2차 출처 확인분
-    sourceUrl: "https://tritonpokerseries.com/en-US/events",
-    sourceTier: "B",
-    verifiedAt: "2026-07-29",
+    // 🔴 2026-09-03 M-082(검수장 1회차 §2 + 본체 Playwright): Triton 공식 events 페이지는 ONE이 «COMING SOON»(날짜 미표시).
+    //    베뉴·공동주최 Merit 공식 「NOVEMBER 5, 2026 TO NOVEMBER 15, 2026 · TRITON ONE」을 채택(07-29의 11-04는 어느 공식 표면에도 없다).
+    sourceUrl: "https://meritpoker.com/tournaments/",
+    sourceTier: "A",
+    verifiedAt: "2026-09-03",
   },
   {
     id: "triton-shrs-cyprus",
@@ -1137,7 +1281,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     nameEn: "Triton SHR North Cyprus 2026",
     type: "international",
     startDate: "2026-11-15",
-    endDate: "2026-11-28",
+    endDate: "2026-11-30",
     location: "북키프로스 키레니아 (Merit Royal Diamond)",
     city: "Kyrenia",
     country: "CY",
@@ -1146,10 +1290,11 @@ const RAW_TOURNAMENTS: Tournament[] = [
     emoji: "💎",
     color: "bg-purple-500/15 text-purple-400 border-purple-500/30",
     note: "Triton ONE 종료 직후 연속 개최 — 시즌 최종 스톱",
-    // ⚠️ 공식 이벤트 페이지 "Coming Soon". 바이인 범위는 2차 출처 확인분
+    // 🔴 2026-09-03 M-082: Triton 공식 events 페이지(Playwright) 「Nov 15, 2026 TO Nov 30, 2026 · N.CYPRUS S5 · SUPER HIGH ROLLER SERIES」
+    //    = Merit 공식 「NOVEMBER 15, 2026 TO NOVEMBER 30, 2026」과 일치 → 종료일 28→30. 바이인 범위는 여전히 2차 출처(공식 미표시).
     sourceUrl: "https://tritonpokerseries.com/en-US/events",
-    sourceTier: "B",
-    verifiedAt: "2026-07-29",
+    sourceTier: "A",
+    verifiedAt: "2026-09-03",
   },
 
   /* ── 🇹🇼 대만 CTP Asia Poker Arena — 연 10회 이상 돌아가는 아시아 허브 ──────────
@@ -1469,7 +1614,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     note: "메인이벤트 NT$6,000,000 GTD — Day 1 진출률 10%·17.5%·25% 세 갈래",
     sourceUrl: "https://hpc.poker/",
     sourceTier: "A",
-    verifiedAt: "2026-08-31",
+    verifiedAt: "2026-09-03",
   },
   {
     id: "tmt-championship",
@@ -1782,16 +1927,16 @@ const RAW_TOURNAMENTS: Tournament[] = [
     type: "international",
     startDate: "2026-11-05",
     endDate: "2026-11-15",
-    location: "파나마 파나마시티",
+    location: "파나마 파나마시티 (Sortis)",
     city: "Panama City",
     country: "PA",
-    venue: "공식 미기재",
+    venue: "Sortis Hotel, Spa & Casino",
     buyin: "공식 미기재",
     emoji: "🔵",
     color: "bg-blue-500/15 text-blue-400 border-blue-500/30",
-    sourceUrl: "https://www.wsop.com/circuit/",
+    sourceUrl: "https://www.wsop.com/schedule/",
     sourceTier: "A",
-    verifiedAt: "2026-08-31",
+    verifiedAt: "2026-09-03",
   },
   {
     id: "wsopc-middelkerke",
@@ -2200,13 +2345,14 @@ const RAW_TOURNAMENTS: Tournament[] = [
     city: "Namur",
     country: "BE",
     venue: "Circus Casino Resort Namur",
-    buyin: "€400~",
+    buyin: "€200~€1,100",
     emoji: "♠️",
     color: "bg-teal-500/15 text-teal-400 border-teal-500/30",
-    note: "메인이벤트 €400 / €300,000 GTD",
+    // 2026-09-03 M-082: 원문 5행(Mini ME €200 · Mystery Bounty €300 · ME €400 · Tag Team €300 · HR €1,100)에서 범위로.
+    note: "메인이벤트 €400 / €300,000 GTD · Mini ME €200 · High Roller €1,100",
     sourceUrl: "https://www.pokerstarslive.com/sponsored/belgianpokerchallenge/",
     sourceTier: "A",
-    verifiedAt: "2026-07-29",
+    verifiedAt: "2026-09-03",
   },
   {
     id: "ps-open-aix",
@@ -2553,6 +2699,145 @@ const RAW_TOURNAMENTS: Tournament[] = [
     verifiedAt: "2026-08-31",
   },
 
+  /* ── 🌎 WPT 2026-27 시즌 나머지 스톱 (2026-09-03 M-082 ② A2~A6·A9·A10) ──────────
+     worldpokertour.com/event/schedule 는 09-03에 curl·Playwright 모두 200(스파인 §2-1의 «403 링크 금지»는 낡았다).
+     단 이벤트 «상세» 페이지는 여전히 Cloudflare 403 → sourceUrl 은 전부 스케줄 페이지(독자가 같은 값을 본다).
+     값은 스케줄 페이지 DOM 축어(날짜·바이인·베뉴) + 검수장 재현(pt 미러 상세 · 개런티). */
+  {
+    id: "wpt-bestbet-scramble",
+    name: "WPT bestbet Scramble 챔피언십",
+    nameEn: "WPT bestbet Scramble Championship",
+    type: "international",
+    startDate: "2026-09-04",
+    endDate: "2026-09-09",
+    location: "미국 잭슨빌 (bestbet Jacksonville)",
+    city: "Jacksonville",
+    country: "US",
+    venue: "bestbet Jacksonville",
+    buyin: "$5,000",
+    emoji: "🌎",
+    color: "bg-blue-500/15 text-blue-400 border-blue-500/30",
+    note: "메인 $5,000 / $1,000,000 GTD",
+    sourceUrl: "https://www.worldpokertour.com/event/schedule",
+    sourceTier: "A",
+    verifiedAt: "2026-09-03",
+  },
+  {
+    id: "wpt-prime-lodge",
+    name: "WPT Prime Lodge 챔피언십",
+    nameEn: "WPT Prime Lodge Championship",
+    type: "international",
+    startDate: "2026-10-08",
+    endDate: "2026-10-12",
+    location: "미국 라운드록 (Lodge Card Club Austin)",
+    city: "Round Rock",
+    country: "US",
+    venue: "Lodge Card Club Austin",
+    buyin: "$1,100",
+    emoji: "🌎",
+    color: "bg-blue-500/15 text-blue-400 border-blue-500/30",
+    // 날짜는 검수장이 pt 미러 상세(「Data Outubro 8-12」)에서 재현. EN 상세는 Cloudflare 403.
+    note: "메인 $1,100 / $1,000,000 GTD",
+    sourceUrl: "https://www.worldpokertour.com/event/schedule",
+    sourceTier: "A",
+    verifiedAt: "2026-09-03",
+  },
+  {
+    id: "wpt-prime-cyprus",
+    name: "WPT Prime 키프로스 챔피언십",
+    nameEn: "WPT Prime Cyprus Championship",
+    type: "international",
+    startDate: "2026-10-15",
+    endDate: "2026-10-19",
+    location: "북키프로스 차탈쾨이 (Chamada Prestige)",
+    city: "Çatalköy",
+    country: "CY",
+    venue: "Chamada Prestige Hotel & Spa",
+    buyin: "$1,100",
+    emoji: "🇨🇾",
+    color: "bg-blue-500/15 text-blue-400 border-blue-500/30",
+    note: "메인 $1,100 / $1,000,000 GTD",
+    sourceUrl: "https://www.worldpokertour.com/event/schedule",
+    sourceTier: "A",
+    verifiedAt: "2026-09-03",
+  },
+  {
+    id: "wpt-bay-101",
+    name: "WPT Bay 101 Shooting Star 챔피언십",
+    nameEn: "WPT Bay 101 Shooting Star Championship",
+    type: "international",
+    startDate: "2026-10-23",
+    endDate: "2026-10-27",
+    location: "미국 새너제이 (Bay 101 Casino)",
+    city: "San Jose",
+    country: "US",
+    venue: "Bay 101 Casino",
+    buyin: "$5,300",
+    emoji: "🌎",
+    color: "bg-blue-500/15 text-blue-400 border-blue-500/30",
+    note: "메인 $5,300 · 바운티(Shooting Star) 형식",
+    sourceUrl: "https://www.worldpokertour.com/event/schedule",
+    sourceTier: "A",
+    verifiedAt: "2026-09-03",
+  },
+  {
+    id: "wpt-venetian-fall",
+    name: "WPT 베네시안 라스베이거스 Fall 챔피언십",
+    nameEn: "WPT Venetian Las Vegas Fall Championship",
+    type: "international",
+    startDate: "2026-11-05",
+    endDate: "2026-11-10",
+    location: "미국 라스베이거스 (The Venetian)",
+    city: "Las Vegas",
+    country: "US",
+    venue: "The Venetian Resort",
+    buyin: "$5,000",
+    emoji: "🌎",
+    color: "bg-blue-500/15 text-blue-400 border-blue-500/30",
+    note: "메인 $5,000 / $2,000,000 GTD",
+    sourceUrl: "https://www.worldpokertour.com/event/schedule",
+    sourceTier: "A",
+    verifiedAt: "2026-09-03",
+  },
+  {
+    id: "wpt-prime-cambodia-2027",
+    name: "WPT Prime 캄보디아 챔피언십 2027",
+    nameEn: "WPT Prime Cambodia Championship 2027",
+    type: "international",
+    startDate: "2027-01-22",
+    endDate: "2027-01-26",
+    location: "캄보디아 프놈펜 (NagaWorld)",
+    city: "Phnom Penh",
+    country: "KH",
+    venue: "NagaWorld Integrated Resort",
+    buyin: "$1,100",
+    emoji: "🇰🇭",
+    color: "bg-blue-500/15 text-blue-400 border-blue-500/30",
+    note: "메인 $1,100 / $500,000 GTD · WPT 시즌 25 개막 스톱",
+    sourceUrl: "https://www.worldpokertour.com/event/schedule",
+    sourceTier: "A",
+    verifiedAt: "2026-09-03",
+  },
+  {
+    id: "wpt-cambodia-2027",
+    name: "WPT 캄보디아 챔피언십 2027",
+    nameEn: "WPT Cambodia Championship 2027",
+    type: "international",
+    startDate: "2027-01-27",
+    endDate: "2027-02-01",
+    location: "캄보디아 프놈펜 (NagaWorld)",
+    city: "Phnom Penh",
+    country: "KH",
+    venue: "NagaWorld Integrated Resort",
+    buyin: "$3,500",
+    emoji: "🇰🇭",
+    color: "bg-blue-500/15 text-blue-400 border-blue-500/30",
+    note: "메인 $3,500 / $1,000,000 GTD",
+    sourceUrl: "https://www.worldpokertour.com/event/schedule",
+    sourceTier: "A",
+    verifiedAt: "2026-09-03",
+  },
+
   {
     id: "wpt-world-championship",
     name: "WPT 월드 챔피언십",
@@ -2729,21 +3014,24 @@ const RAW_TOURNAMENTS: Tournament[] = [
     city: "Seefeld",
     country: "AT",
     venue: "Casino Seefeld",
-    buyin: "€1,100",
+    buyin: "€550",
     emoji: "🇦🇹",
     color: "bg-rose-500/15 text-rose-400 border-rose-500/30",
     // ⚠ 2차 출처가 "1.–11. Oktober"라 적었으나 공식은 7.-11.10.이다(나흘 차이).
-    note: "메인 €1,000+100",
-    sourceUrl: "https://www.casinos.at/spiel/poker/capt",
+    // 🔴 2026-09-03 M-082(검수장 1회차 #38): 제펠트 페이지 원문 구조 «MAIN EVENT › EVENT 4 › € 500 + 50 › 09th·10th october ›
+    //    FINAL DAY 11TH OCTOBER» ↔ «NLH UNICORN SEEFELD › EVENT 2 › € 1,000 + 100 › 07th/08th october». 우리 «메인 €1,000+100»은
+    //    이벤트 제목이 빠진 변환본에서 귀속을 잘못 잡은 것. 🪶 casinos.at는 봇에 403(Cloudflare) — 검수장은 r.jina.ai로 열었다.
+    note: "메인 €500+50 · NLH Unicorn Seefeld €1,000+100 (10/7~8)",
+    sourceUrl: "https://www.casinos.at/en/casinos/seefeld/games/poker/capt-seefeld",
     sourceTier: "A",
-    verifiedAt: "2026-08-10",
+    verifiedAt: "2026-09-03",
   },
   {
     id: "capt-bregenz-oct",
     name: "CAPT 브레겐츠 (10월)",
     nameEn: "CAPT Bregenz (October)",
     type: "international",
-    startDate: "2026-10-15",
+    startDate: "2026-10-13",
     endDate: "2026-10-25",
     location: "오스트리아 브레겐츠 (Casino Bregenz)",
     city: "Bregenz",
@@ -2752,13 +3040,13 @@ const RAW_TOURNAMENTS: Tournament[] = [
     buyin: "€1,100",
     emoji: "🇦🇹",
     color: "bg-rose-500/15 text-rose-400 border-rose-500/30",
-    // ⚠ 공식 «자체» 모순: 개요는 15.-25.10., 상세는 13.-25.10.이라 적는다.
-    //    같은 상세가 "elf Tage(11일)"라 쓰는데 15→25가 정확히 11일이라 개요를 채택했다.
-    //    13일은 새틀라이트 주간 포함으로 보인다. 단정 서술 금지.
+    // ⚠ 08-10에는 개요(15.-25.10.)와 상세(13.-25.10.)가 갈려 개요를 택했었다.
+    // 🔴 2026-09-03 M-082(검수장 1회차 #42): 브레겐츠 대회 페이지 원문 「Vom 13. bis zum 25. Oktober 2026 wird das Casino Bregenz
+    //    erneut zum Hotspot der Pokerszene.」 — 대회 페이지가 13일을 쓴다 → 13일 채택. Main Event €1,100 · Bodensee Trophy €30,000 일치.
     note: "메인 €1,100 · Bodensee Hold'em Trophy €30,000 GTD",
-    sourceUrl: "https://www.casinos.at/spiel/poker/capt",
+    sourceUrl: "https://www.casinos.at/casinos/bregenz/spiel/poker/capt-bregenz",
     sourceTier: "A",
-    verifiedAt: "2026-08-10",
+    verifiedAt: "2026-09-03",
   },
   {
     id: "capt-innsbruck-nov",

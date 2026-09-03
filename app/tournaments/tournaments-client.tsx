@@ -13,6 +13,8 @@ import {
   buildEventSchemas,
   STATUS_LABEL,
 } from "@/lib/tournaments";
+/** 2026 한국 개최 행 수 — 손으로 적지 않는다(«13개+»가 목록 11개·일정표 17행과 셋 다 달랐다 · M-082). */
+const KR_2026 = TOURNAMENTS.filter((t) => t.country === "KR" && (t.startDate ?? "").startsWith("2026")).length;
 /**
  * 히어로 문장·메타를 만드는 단일 소스. layout.tsx의 generateMetadata도 같은 함수를 쓴다.
  * ★todayISO는 반드시 서버에서 내려온 prop을 넘긴다 — 여기서 new Date()를 부르면
@@ -22,33 +24,36 @@ import { buildHeroLine, buildMetaTitle, buildMetaDescription } from "@/lib/tourn
 
 const DOMESTIC = [
   {
-    id: "kpt",
-    name: "KPT (Korea Poker Tour)",
-    badge: "국내 최대 규모",
+    // 🔴 2026-09-03 M-082(검수장 2회차 §3): 「KPT (Korea Poker Tour)」는 스파인 0건·공식 페이지 0 — 정체를 확인할 수 없는 브랜드였다.
+    //    NHN 공식 뉴스룸(inside.nhn.com/news/956 · 2026-07-10)이 실재하는 HPT로 교체. 값은 그 원문 축어(lib/tournaments.ts `hpt-5`와 동일 출처).
+    id: "hpt",
+    name: "HPT (Hangame Poker Tour)",
+    badge: "내국인 참가 가능",
     badgeColor: "bg-primary/20 text-primary border-primary/40",
     emoji: "🏆",
-    desc: "대한민국 최대 규모의 공식 텍사스 홀덤 대회 시리즈. 온라인 예선을 통해 누구나 메인이벤트에 도전할 수 있습니다. 프로·아마추어 구분 없이 참가 가능한 오픈 대회로, 국내 홀덤 대회 중 가장 높은 권위를 자랑합니다.",
+    desc: "NHN 「한게임 로얄홀덤」이 여는 국내 오프라인 홀덤 투어. 온라인 새틀라이트 토너먼트에서 참가권을 따 오프라인 메인이벤트에 나가는 구조로, 제5회(2026)는 9월 11~13일 스위스 그랜드 호텔 컨벤션센터에서 열리고 총상금 16억 원이 빗썸 계좌를 통해 원화로 지급됩니다. 카지노가 아닌 호텔 컨벤션 베뉴라 일반 한국 국적자도 참가할 수 있는 국내 대회입니다.",
     details: [
-      { label: "개최 시기", value: "연 2~4회 (시즌제)" },
-      { label: "바이인", value: "위성부터 메인까지 다양" },
+      { label: "개최 시기", value: "제5회 2026-09-11~13 (새틀 7/10~9/10)" },
+      { label: "바이인", value: "온라인 새틀라이트 참가권 2장 (현금 바이인 없음)" },
       { label: "형식", value: "No-Limit Texas Hold'em" },
-      { label: "특징", value: "온라인 예선 → 오프라인 결선" },
+      { label: "특징", value: "온라인 새틀 → 오프라인 결선 · 총상금 16억 원" },
     ],
-    tip: "위성 토너먼트(Satellite) 우승 시 메인이벤트 시트를 저렴하게 확보할 수 있습니다. 소액 바이인으로 큰 대회에 도전하는 가장 효율적인 방법입니다.",
-    link: null,
+    tip: "새틀라이트는 7/10~9/10 매일 4회(17:30·19:30·21:30·23:30) 「한게임 로얄홀덤」에서 열리고 별도 신청 없이 참여할 수 있습니다. 토너먼트당 오프라인 참가권 29장 — 상위 20명 1장, TOP9은 1장 추가.",
+    link: "https://inside.nhn.com/news/956",
   },
   {
     id: "pmang",
-    name: "피망 포커 챔피언십",
-    badge: "NHN 공식 운영",
+    // 2026-09-03 M-082(검수장 2회차 §1-1·§3): 운영사는 ㈜네오위즈(pmang 운영정책 축어) · 공식 명칭은 «피망 쇼다운»(공지 6273 「피망 쇼다운입니다 … 오프라인 대회 진출권을 획득할 수 있는 온라인 새틀라이트」).
+    name: "피망 쇼다운",
+    badge: "네오위즈 공식 운영",
     badgeColor: "bg-blue-500/15 text-blue-400 border-blue-500/30",
     emoji: "🃏",
-    desc: "NHN이 운영하는 피망 포커에서 개최하는 공식 온라인 홀덤 대회. 별도 장비 없이 PC·모바일에서 참가 가능하며, 게임머니 기반으로 운영되어 법적으로 문제없이 즐길 수 있는 합법적 홀덤 대회입니다.",
+    desc: "네오위즈가 운영하는 피망 포커의 공식 온라인 홀덤 대회. 별도 장비 없이 PC·모바일에서 참가할 수 있고, 게임머니(비환금) 기반으로 운영됩니다. 오프라인 대회 진출권을 거는 온라인 새틀라이트가 함께 열립니다.",
     details: [
       { label: "플랫폼", value: "피망 포커 (PC·모바일)" },
       { label: "바이인", value: "게임머니 기반 (무료 가능)" },
       { label: "형식", value: "No-Limit Texas Hold'em" },
-      { label: "특징", value: "실명 인증 합법 대회" },
+      { label: "특징", value: "실명 인증 · 게임머니(비환금) 기반" },
     ],
     tip: "피망 포커는 게임머니 기반이라 실제 현금 리스크 없이 홀덤 대회 경험을 쌓기 좋습니다. 초보자의 첫 대회 경험으로 강력 추천합니다.",
     link: "https://poker.pmang.com",
@@ -59,7 +64,7 @@ const DOMESTIC = [
     badge: "NHN 운영",
     badgeColor: "bg-yellow-500/15 text-yellow-400 border-yellow-500/30",
     emoji: "🎴",
-    desc: "카카오게임즈가 운영하는 한게임 플랫폼의 홀덤 대회. 국내 최장수 온라인 포커 서비스로 풍부한 사용자 기반을 보유합니다. 텍사스 홀덤 외 다양한 포커 형식의 대회도 운영됩니다.",
+    desc: "NHN(엔에이치엔㈜)이 운영하는 한게임 플랫폼의 홀덤 대회. 국내 최장수 온라인 포커 서비스로 풍부한 사용자 기반을 보유합니다. 텍사스 홀덤 외 다양한 포커 형식의 대회도 운영됩니다.",
     details: [
       { label: "플랫폼", value: "한게임 포커 (PC·모바일)" },
       { label: "바이인", value: "하트(게임머니) 기반" },
@@ -92,7 +97,7 @@ const INTERNATIONAL = [
     id: "wsop",
     name: "WSOP (World Series of Poker)",
     location: "라스베이거스, 미국",
-    season: "매년 5월 말 ~ 7월 초 (약 6주)",
+    season: "매년 5월 말 ~ 7월 중순 (2026: 5/26~7/15 브레이슬릿 100개 · 메인 파이널 8/3~5)",
     prize: "메인이벤트 바이인 $10,000",
     emoji: "🌎",
     badge: "세계 최고 권위",
@@ -101,8 +106,8 @@ const INTERNATIONAL = [
     highlights: [
       "2025 시리즈 총 참가 246,960명·상금 $4.82억 — 역대 최고 기록",
       "2026 메인이벤트 7/2 시작, 파이널 테이블은 8/3~5 ESPN 생중계",
-      "WSOP.com·GGPoker 온라인 예선으로 위성 진출 가능",
-      "WSOP Circuit 지역 대회로 브레이슬릿 도전 가능",
+      "온라인 예선은 국제 선수 GGPoker · 미국 내 선수 WSOP.com (공식 구분)",
+      "WSOP Circuit 지역 대회에서는 브레이슬릿이 아니라 골드 링을 겁니다",
     ],
     link: "https://www.wsop.com",
     blogLink: "/blog/wsop-2026-tournament-guide",
@@ -113,7 +118,7 @@ const INTERNATIONAL = [
     name: "WPT (World Poker Tour)",
     location: "전 세계 순회 (미국·유럽·아시아)",
     season: "연중 상시 (시즌별 운영)",
-    prize: "이벤트별 $3,500~$25,000",
+    prize: "WPT Prime $1,100 · 메인 투어 $3,500~$5,300 (지역 통화 예: WPT Seoul ₩1,750,000)",
     emoji: "🌍",
     badge: "세계 순회 투어",
     badgeColor: "bg-blue-500/15 text-blue-400 border-blue-500/30",
@@ -124,7 +129,7 @@ const INTERNATIONAL = [
       "ClubWPT 온라인 예선으로 진출 가능",
       "WPT Korea 개최 이력 (국내 개최 경험)",
     ],
-    link: "https://www.wpt.com",
+    link: "https://www.worldpokertour.com/event/schedule",
   },
   {
     id: "ept",
@@ -146,18 +151,20 @@ const INTERNATIONAL = [
   },
   {
     id: "apt",
-    name: "APT (Asia Pacific Poker Tour)",
-    location: "마닐라, 마카오, 서울, 호치민 등",
+    // 2026-09-03 M-082(검수장 2회차 §1-3·4): «Asia Pacific Poker Tour»는 PokerStars의 APPT다. APT 공식 명칭 = Asian Poker Tour ·
+    //    2026 일정 원문 「five exciting stops in three amazing Asian destinations」= 제주 클래식 · 타이베이 · 인천 · 제주 · 타이베이 챔피언십.
+    name: "APT (Asian Poker Tour)",
+    location: "제주·타이베이·인천 (2026 시즌 5스톱)",
     season: "연 4~6회",
-    prize: "메인이벤트 바이인 $1,100~$3,300",
+    prize: "한국 스톱 메인 ₩230만~₩270만 · 챔피언십 타이베이 메인 USD 10,000",
     emoji: "🗺️",
     badge: "아시아 최대 투어",
     badgeColor: "bg-orange-500/15 text-orange-400 border-orange-500/30",
-    desc: "아시아·태평양 지역을 대표하는 홀덤 대회 투어. 한국 선수들의 참가율이 가장 높으며, 서울에서 별도 시리즈가 개최된 바 있습니다. 첫 해외 홀덤 대회 도전에 가장 적합한 투어입니다.",
+    desc: "2026년에 20주년을 맞는 아시아 대표 홀덤 대회 투어. 2026 시즌은 제주·타이베이·인천 5스톱으로 짜여 한국 선수 참가율이 가장 높고, 첫 해외(또는 국내 카지노) 홀덤 대회 도전에 가장 적합한 투어입니다. 한국 스톱은 외국인 전용 카지노 베뉴라 참가 자격을 먼저 확인하세요.",
     highlights: [
       "바이인이 WSOP보다 낮아 첫 해외 홀덤 대회에 최적",
-      "한국 개최 이력 다수 (APT Seoul 등)",
-      "마닐라 솔레어 리조트 상설 개최",
+      "2026 한국 스톱 3개 — 제주 클래식(1~2월)·인천(8월)·제주(9~10월)",
+      "시즌 피날레 APT Championship 타이베이 — 메인 USD 10,000 / USD 5,000,000 GTD",
       "온라인 예선으로 비용 절감 진출 가능",
     ],
     link: "https://www.theasianpokertour.com",
@@ -239,7 +246,7 @@ const KOREA_HUB_2026 = [
   {
     city: "제주",
     flag: "🌊",
-    venue: "신화월드 리조트",
+    venue: "신화월드 리조트 (외국인 전용 카지노 · 내국인 참가 불가)",
     color: "bg-blue-500/15 text-blue-400 border-blue-500/30",
     events: [
       { name: "KPC x LPT Series", date: "1.03~1.18" },
@@ -252,15 +259,25 @@ const KOREA_HUB_2026 = [
   {
     city: "인천",
     flag: "🏙️",
-    venue: "파라다이스 시티 리조트",
+    venue: "파라다이스 시티 리조트 (외국인 전용 카지노 · 내국인 참가 불가)",
     color: "bg-orange-500/15 text-orange-400 border-orange-500/30",
+    // 2026-09-03 M-082: ASPT Korea(#89)는 일정표가 «베뉴 공식 미기재»인데 이 카드가 파라다이스시티로 못 박고 있었다 → 분리.
     events: [
-      { name: "ASPT Korea", date: "1.23~2.01" },
       { name: "AJPC 사무라이 서킷", date: "4.10~4.19" },
       { name: "GOP 인천 (Prophecy)", date: "5.15~5.24" },
       { name: "APT 인천", date: "8.07~8.16", hot: true },
       { name: "APPT 코리아", date: "9.03~9.14", hot: true },
       { name: "GOP 인천 II (Labyrinth)", date: "10.30~11.08" },
+    ],
+  },
+  {
+    city: "서울",
+    flag: "🏆",
+    venue: "호텔 컨벤션 · 시내 베뉴 (내국인 참가 가능)",
+    color: "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+    events: [
+      { name: "제5회 HPT (스위스 그랜드 호텔)", date: "9.11~9.13", hot: true },
+      { name: "APL 서울 Winter Prelims · Circuit I", date: "10.23~10.25" },
     ],
   },
 ];
@@ -280,9 +297,9 @@ const BUYIN_LEVELS = [
     range: "₩1만 ~ ₩30만",
     color: "bg-blue-500/15 text-blue-400 border-blue-500/30",
     emoji: "🍺",
-    examples: "홀덤펍 리그(HPL), KPT 위성",
+    examples: "홀덤펍 리그(HPL), HPT 새틀라이트",
     target: "오프라인 실전을 처음 경험하는 단계",
-    tip: "홀덤펍 리그는 무료~소액, KPT 위성으로 메인 시트 도전",
+    tip: "홀덤펍 리그는 무료~소액, HPT 새틀라이트로 오프라인 메인 참가권 도전",
   },
   {
     level: "중급",
@@ -328,8 +345,8 @@ const BEGINNER_GUIDE = [
   },
   {
     step: "03",
-    title: "KPT 위성 토너먼트 도전",
-    desc: "KPT 메인이벤트 바이인이 부담된다면 위성(Satellite) 토너먼트를 이용하세요. 소액 바이인으로 메인이벤트 티켓을 따는 것이 홀덤 대회 참가 비용 절감의 핵심입니다.",
+    title: "HPT 새틀라이트 토너먼트 도전",
+    desc: "HPT는 현금 바이인이 없고 「한게임 로얄홀덤」 온라인 새틀라이트에서 딴 참가권 2장으로 오프라인 메인이벤트에 나갑니다. 새틀라이트로 시트를 따는 습관이 해외 대회 참가 비용 절감의 핵심이기도 합니다.",
     icon: "🛰️",
   },
   {
@@ -497,15 +514,15 @@ function ScheduleSection({
 const FAQS = [
   {
     q: "홀덤 대회는 합법인가요?",
-    a: "국내 합법 플랫폼(피망 포커, 한게임)의 게임머니 기반 홀덤 대회는 완전히 합법입니다. KPT 등 오프라인 홀덤 대회는 민간 기업이 주최하는 게임 스포츠 행사로 운영됩니다. 해외 홀덤 대회(WSOP 등)는 해당 국가의 카지노 규정에 따라 합법적으로 운영됩니다.",
+    a: "국내 게임사(네오위즈 피망, NHN 한게임)의 대회는 게임머니(비환금) 기반으로 운영되고, HPT처럼 온라인 새틀라이트로 참가권을 따 오프라인 결선을 치르는 대회도 있습니다. 한국의 카지노 베뉴 대회(APT 인천·제주 등)는 외국인·재외국민 대상이라 일반 한국 국적자는 참가할 수 없고, 해외 대회는 개최국 카지노 규정에 따라 운영됩니다. 참가 자격과 신분증 규정은 대회마다 공식 페이지에서 먼저 확인하세요.",
   },
   {
     q: "초보자도 홀덤 대회에 참가할 수 있나요?",
-    a: "네. 피망 포커·한게임 홀덤 대회는 레벨 제한 없이 참가 가능하며, 홀덤펍 리그도 초보자를 환영합니다. KPT 위성 토너먼트도 소액으로 도전할 수 있습니다. 홀덤 대회 참가 자체가 실력 향상에 큰 도움이 됩니다.",
+    a: "네. 피망 포커·한게임 홀덤 대회는 레벨 제한 없이 참가 가능하며, 홀덤펍 리그도 초보자를 환영합니다. HPT 온라인 새틀라이트는 별도 신청 없이 「한게임 로얄홀덤」 이용자 누구나 참여할 수 있습니다. 홀덤 대회 참가 자체가 실력 향상에 큰 도움이 됩니다.",
   },
   {
     q: "WSOP 홀덤 대회에 한국인도 참가할 수 있나요?",
-    a: "물론입니다. WSOP는 국적 제한이 없으며 매년 수십 명의 한국 선수들이 참가합니다. $10,000 바이인이 부담된다면 WSOP.com에서 $1~$100 수준의 온라인 새틀라이트로 홀덤 대회 시트를 딸 수 있습니다.",
+    a: "물론입니다. WSOP는 국적 제한이 없으며 매년 수십 명의 한국 선수들이 참가합니다. $10,000 바이인이 부담된다면 온라인 새틀라이트로 시트를 딸 수 있는데, WSOP 공식 안내는 국제 선수는 GGPoker, 미국 내 선수는 WSOP.com으로 경로를 구분합니다.",
   },
   {
     q: "홀덤 대회와 캐시게임의 차이점은 무엇인가요?",
@@ -517,11 +534,11 @@ const FAQS = [
   },
   {
     q: "APT와 WSOP 중 첫 해외 홀덤 대회로 어느 쪽이 좋을까요?",
-    a: "첫 해외 홀덤 대회 도전이라면 APT를 추천합니다. 바이인이 낮고 아시아 선수 비율이 높아 언어·문화 장벽이 낮습니다. 마닐라·서울 개최가 많아 이동 거리도 WSOP(라스베이거스)보다 유리합니다.",
+    a: "첫 해외 홀덤 대회 도전이라면 APT를 추천합니다. 바이인이 낮고 아시아 선수 비율이 높아 언어·문화 장벽이 낮습니다. 2026 시즌은 제주·인천·타이베이 개최라 이동 거리도 WSOP(라스베이거스)보다 훨씬 유리합니다.",
   },
   {
     q: "해외 홀덤 대회 상금에 한국 세금이 붙나요?",
-    a: "WSOP, EPT 등 해외에서 받은 포커 대회 상금은 원칙적으로 한국 소득세 신고 대상입니다. 기타소득으로 분류되어 필요경비 공제 후 20%(지방세 포함 22%) 세율이 적용됩니다. 연간 상금이 300만원 초과 시 반드시 종합소득세 신고를 해야 합니다. 해외 대회 개최국에서 먼저 원천징수된 경우 외국납부세액공제로 이중과세를 피할 수 있습니다. 고액 상금 수령 시 세무사 상담을 강력히 권장합니다.",
+    a: "WSOP, EPT 등 해외에서 받은 포커 대회 상금은 원칙적으로 한국 소득세 신고 대상입니다. 기타소득으로 분류되어 필요경비 공제 후 20%(지방세 포함 22%) 세율이 적용됩니다. 필요경비를 뺀 기타소득금액이 연 300만원을 넘으면 종합소득세 신고 대상입니다. 해외 대회 개최국에서 먼저 원천징수된 경우 외국납부세액공제를 받을 수 있는데, 공제한도 안에서만 공제되고 초과분은 이월됩니다. 고액 상금 수령 시 세무사 상담을 강력히 권장합니다.",
   },
 ];
 
@@ -546,14 +563,14 @@ export default function Tournaments({
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "홀덤 대회 완벽 가이드 — 국내·해외 포커 토너먼트 총정리 2026",
-    "description": "KPT·피망포커·한게임 등 국내 홀덤 대회와 WSOP·WPT·EPT·APT 해외 포커 토너먼트를 한눈에 정리. 대회 구조, 전략, 참가 방법과 초보 로드맵 포함.",
+    "description": "HPT·피망 쇼다운·한게임 등 국내 홀덤 대회와 WSOP·WPT·EPT·APT 해외 포커 토너먼트를 한눈에 정리. 대회 구조, 전략, 참가 방법과 초보 로드맵 포함.",
     "author": { "@type": "Organization", "name": "홀덤마스터", "url": "https://www.holdemmaster.com" },
     "publisher": { "@type": "Organization", "name": "홀덤마스터", "url": "https://www.holdemmaster.com", "logo": { "@type": "ImageObject", "url": "https://www.holdemmaster.com/favicon.svg" } },
     "datePublished": "2026-03-26",
-    "dateModified": "2026-07-02",
+    "dateModified": "2026-09-03",
     "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.holdemmaster.com/tournaments" },
     "image": "https://www.holdemmaster.com/images/tournament-hall-wsop.webp",
-    "keywords": "홀덤 대회, 포커 토너먼트, KPT, WSOP, 홀덤 대회 참가방법, 피망 포커 대회, 한게임 포커 대회",
+    "keywords": "홀덤 대회, 포커 토너먼트, HPT 한게임 포커 투어, WSOP, 홀덤 대회 참가방법, 피망 쇼다운, 한게임 포커 대회",
     "inLanguage": "ko-KR",
   };
 
@@ -586,7 +603,7 @@ export default function Tournaments({
              "WSOP 파이널 8/3~5"(이미 지난 일정)로 바뀌어 있었다. curl로는 안 잡힌다. */
         title={buildMetaTitle(todayISO)}
         description={buildMetaDescription(todayISO)}
-        keywords="홀덤 대회, 홀덤대회, 포커 토너먼트, KPT 코리아포커투어, 피망 포커 대회, 한게임 포커 대회, WSOP 참가방법, WPT, EPT, APT 아시아, 홀덤펍 리그, 포커 대회 일정 2026, 홀덤 토너먼트 전략, 포커 대회 참가 방법"
+        keywords="홀덤 대회, 홀덤대회, 포커 토너먼트, HPT 한게임 포커 투어, 피망 쇼다운, 한게임 포커 대회, WSOP 참가방법, WPT, EPT, APT 아시아, 홀덤펍 리그, 포커 대회 일정 2026, 홀덤 토너먼트 전략, 포커 대회 참가 방법"
         path="/tournaments"
         /* ★2026-08-13: `schema={combinedSchema}` prop을 뺐다. `components/seo.tsx`는 `schema`를
              구조분해에서 받지도 않아 **아무 일도 하지 않는 인자**였고, 실제 출력은 바로 위
@@ -610,7 +627,7 @@ export default function Tournaments({
             홀덤 대회 완벽 가이드
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            국내 피망포커·한게임·KPT·홀덤펍 리그부터<br className="hidden md:block" />
+            국내 HPT·피망 쇼다운·한게임·홀덤펍 리그부터<br className="hidden md:block" />
             세계 최대 <strong className="text-foreground">WSOP·WPT·EPT·APT</strong>까지.<br />
             홀덤 대회의 모든 것을 한눈에 정리했습니다.
             {/* ★손으로 적지 말 것 — lib/tournaments-digest.ts가 대회 데이터에서 만든다.
@@ -622,10 +639,10 @@ export default function Tournaments({
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-10 max-w-2xl mx-auto">
             {[
-              { icon: MapPin, label: "한국 개최 대회 (2026)", value: "13개+" },
+              { icon: MapPin, label: "한국 개최 대회 (2026)", value: `${KR_2026}개` },
               { icon: Globe, label: "2026 전체 일정", value: "20개+" },
               { icon: Users, label: "WSOP 참가자", value: "24만명+" },
-              { icon: DollarSign, label: "WSOP 최고 상금", value: "$9,404만" },
+              { icon: DollarSign, label: "WSOP 메인 역대 최대 상금풀 (2024)", value: "$9,404만" },
             ].map(({ icon: Icon, label, value }) => (
               <div key={label} className="bg-card border border-border rounded-xl p-4 text-center">
                 <Icon className="w-5 h-5 text-primary mx-auto mb-1.5" />
@@ -652,9 +669,10 @@ export default function Tournaments({
             <span className="text-xs font-bold px-2 py-0.5 rounded-full border bg-primary/20 text-primary border-primary/40">아시아 최대 개최국</span>
           </div>
           <p className="text-muted-foreground text-sm mb-6 leading-relaxed">
-            2026년 한국(제주·인천)에서만 <strong className="text-foreground">13개 이상</strong>의 세계급 홀덤 대회가 열립니다.
-            제주 신화월드와 인천 파라다이스 시티는 아시아 최대 포커 허브로 자리잡았습니다.
-            굳이 해외에 나가지 않아도 WSOP·EPT 수준의 국제 대회를 국내에서 직접 경험할 수 있습니다.
+            2026년 한국(제주·인천·서울)에서 <strong className="text-foreground">{KR_2026}개</strong>의 홀덤 대회가 일정표에 올라 있습니다.
+            제주 신화월드와 인천 파라다이스 시티는 아시아 최대 포커 허브로 자리잡았지만, <strong className="text-foreground">두 곳은 외국인 전용 카지노</strong>라
+            APT·Triton·GOP 같은 카지노 대회는 외국인·재외국민(재외국민은 한국 여권 + 영주권 등 증빙)만 등록할 수 있습니다.
+            일반 한국 국적자가 실제로 나갈 수 있는 국내 대회는 서울의 <strong className="text-foreground">HPT</strong>(호텔 컨벤션 베뉴)와 APL 서울 같은 비카지노 대회입니다.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-6">
@@ -688,7 +706,7 @@ export default function Tournaments({
           <div className="bg-primary/8 border border-primary/25 rounded-xl p-5">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
               <div className="text-center">
-                <div className="text-2xl font-serif font-bold text-primary mb-1">13개+</div>
+                <div className="text-2xl font-serif font-bold text-primary mb-1">{KR_2026}개</div>
                 <div className="text-xs text-muted-foreground">2026 한국 홀덤 대회</div>
               </div>
               <div className="text-center">
@@ -736,7 +754,7 @@ export default function Tournaments({
               홀덤 대회의 가장 큰 특징은 <strong className="text-foreground">블라인드가 시간에 따라 올라간다</strong>는 점입니다. 처음에는 낮은 블라인드로 여유 있게 시작하지만, 레벨이 올라갈수록 팟 규모가 커지고 스택 압박이 심해집니다. 이 구조 덕분에 캐시게임보다 훨씬 다이나믹한 전략 변화가 요구됩니다.
             </p>
             <p>
-              국내 홀덤 대회는 KPT(코리아 포커 투어)를 중심으로 피망 포커, 한게임, 홀덤펍 리그 등 다양한 형태로 운영되고 있습니다. 해외에서는 WSOP, WPT, EPT, APT 등 세계 4대 투어가 수만 명의 선수들을 모으는 거대 이벤트로 자리잡고 있습니다. 포커가 합법적인 스포츠로 인정받는 세계적 추세에 맞춰 한국에서도 홀덤 대회에 대한 관심이 빠르게 높아지고 있습니다.
+              국내 홀덤 대회는 HPT(한게임 포커 투어)·APL 같은 오프라인 대회와 피망 쇼다운·한게임의 온라인 대회, 홀덤펍 리그 등 다양한 형태로 운영되고 있습니다. 해외에서는 WSOP, WPT, EPT, APT 등 세계 4대 투어가 수만 명의 선수들을 모으는 거대 이벤트로 자리잡고 있습니다. 포커가 합법적인 스포츠로 인정받는 세계적 추세에 맞춰 한국에서도 홀덤 대회에 대한 관심이 빠르게 높아지고 있습니다.
             </p>
           </div>
         </motion.section>

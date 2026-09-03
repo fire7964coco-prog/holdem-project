@@ -745,3 +745,20 @@ STAGE 01 트라이얼(무료) → 02 새틀 → 03 파이널 → 04 라이브.
 5. **미발표는 `공식 미기재`로 두고 페이지에 노출하지 않는다.** "예상" 값을 올리면 그게 검수 때마다 흔들리는 원인이 된다
 6. ★ **다음 조사 라운드 프롬프트에 반드시 넣을 것**: *"글·페이지에 박혀 있는 공식 이미지(포스터·스케줄표·상금표)를 반드시 판독할 것. DOM 검색만으로 '공식 미기재'로 판정하지 말 것."*
 7. ★ **WebFetch가 주는 개수 요약을 믿지 말 것.** 나열을 직접 세어라
+
+---
+
+## 2026-09-03 — M-082 이행 기록 (검수장 GPT 교차검수 3회차 종합 · `lib/tournaments.ts` 130 → 143행)
+
+**정정 9(전건 공식 축어 · 검수장 재현 + 본체 Playwright)**: #21 BPC `€200~€1,100`(Mini ME €200 · HR €1,100 · 9/17 개막) · #38 CAPT 제펠트 **메인 €500+50**(€1,000+100은 별개 «NLH Unicorn Seefeld» 10/7~8 — 제목 빠진 변환본이 만든 귀속 오류) · #42 CAPT 브레겐츠 **10-13**(대회 페이지 「Vom 13. bis zum 25. Oktober 2026」 — 08-10에 개요 15일을 택했던 판정 뒤집음) · #56 WSOPC 파나마 **Sortis Hotel, Spa & Casino** · #61 APTC **USD 5,000,000 GTD가 정본**(TWD 환산은 165M→155M으로 이미 바뀌었다 — TWD 숫자를 박으면 낡는다) · #73 EPT 프라하 **Open ME €1,100 · €825~€10,300**(€1,650은 바르셀로나 복사) · #55/#64 Triton 북키프로스 **11-05~15 / 11-15~30**(Merit 공식 · Triton 공식 Playwright 09-03: ONE은 «COMING SOON», SHRS만 「Nov 15, 2026 TO Nov 30, 2026」) · #70 Megastack 25 **11-27**(+ 메인 ₱45,000 / ₱20M GTD). 무조치 #1 홀덤 마스터스 8(상단 요약은 7회 잔재 — 위 «되돌리지 마라» 블록 그대로).
+
+**추가 13(§1 재현 + 본체 Playwright)**: 🇰🇷 **hpt-5**(제5회 HPT 9/11~13 스위스 그랜드 호텔 컨벤션센터 · 총상금 16억 · 새틀 참가권 전용 · **내국인 가능** — NHN 뉴스룸 956) · **apl-seoul-winter-circuit-1**(10/23~25 · ₩400,000,000 GTD · 베뉴 미발표) · WPT 7(bestbet 9/4~9 $5,000 · Prime Lodge 10/8~12 $1,100 · Prime Cyprus 10/15~19 $1,100 · Bay 101 10/23~27 $5,300 · Venetian Fall 11/5~10 $5,000 · Prime Cambodia 2027-01-22~26 $1,100 · Cambodia 2027-01-27~02-01 $3,500) · Manila 4(Warm-up 11/23~26 · December Special 12/8~21 · Super Series 25 2027-01-22~30 ₱18,500 · Megastack 26 2027-02-22~03-07 ₱45,000).
+
+**정본 URL 정책 갱신(§2 보정)**:
+- `worldpokertour.com/event/schedule` — **09-03 curl·Playwright 모두 200**(§2-1 «403 링크 금지»는 스케줄 페이지엔 더 이상 맞지 않는다). 단 **이벤트 상세 페이지는 여전히 Cloudflare 403** → WPT 행의 sourceUrl은 전부 스케줄 페이지. 스케줄 페이지 DOM은 «날짜·바이인이 이름 앞에» 오는 구조라 파싱 때 한 칸 밀려 읽기 쉽다(A2 bestbet이 «SEP 17-22 $1,500»로 보이는데 그건 Prime Australia 값).
+- `casinos.at` 대회 페이지(`/en/casinos/seefeld/games/poker/capt-seefeld` · `/casinos/bregenz/spiel/poker/capt-bregenz`)는 **봇에 403**(Playwright · curl) — 검수장은 `r.jina.ai`로 열었다. 독자 브라우저 접근은 미확인. 제펠트·브레겐츠 2행만 대회 페이지로 옮겼고 그라츠·인스브루크·바덴은 URL을 확인하지 못해 투어 총괄 페이지 유지(지어내지 않는다).
+- `meritpoker.com/tournaments/` 200 · `tritonpokerseries.com/en-US/events` Playwright 200(JS 렌더 · curl 불가) · `pokerstarslivemanila.com/tournaments/` 200 · `acepokerleague.com` 200 · `inside.nhn.com/news/956` 200 · `hpc.poker` 200(「2026 9.30 (WED)」) · `grandcasinoluzern.ch` 200(「30 September to 4 October 2026」 · PCSM 챔피언십 위크 날짜는 미노출) · `partypoker.com` **JS 셸 — Playwright로도 본문 0**(4행 verifiedAt 미갱신).
+
+**APT 정식 명칭 = Asian Poker Tour**(«Asia Pacific Poker Tour»는 PokerStars APPT) · 2026 시즌 = 제주 클래식 · 타이베이 · 인천 · 제주 · 타이베이 챔피언십 5스톱(공식 「five exciting stops in three amazing Asian destinations」). **APT 인천 신분증 규정 축어**(참가 자격의 근거): 「Accepted forms of identification — Foreigner citizens: Valid foreign passport / Expatriate Koreans: Korean passport (PM/PR), Green card OR certificate of emigration」 → 한국 카지노 베뉴 대회는 일반 한국 국적자 참가 불가. 허브 KO 페이지가 이 사실을 0회 다뤘다(자기 글 `apt-incheon-2026-guide`는 9회) — 09-03에 허브 안내문·카드에 표시.
+
+**KO 허브 정적 서술 정정(`app/tournaments/tournaments-client.tsx` · 미러 없음)**: 피망 운영사 **네오위즈** · 공식 명칭 **피망 쇼다운** · 한게임 **NHN** · APT 명칭·개최지 · WSOP Circuit **골드 링** · WSOP 2026 기간 5/26~7/15 + 메인 FT 8/3~5(#108과 통일) · «$9,404만» = **2024 메인 역대 최대 상금풀**(우승은 $1,000만) · 한국 독자 새틀 = **GGPoker**(WSOP.com은 미국 내) · **KPT 카드 → HPT**(KPT는 스파인 0건·공식 0) · WPT «$3,500~$25,000» 삭제(스케줄 실측 $1,100~$5,300 · ₩1,750,000) · 세금 «기타소득금액 300만원» · 외납공제 한도 · «13개+» → 데이터 계산(`KR_2026`) · 합법성 단정 삭제.
