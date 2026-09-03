@@ -13,9 +13,18 @@
  * 🔴 판정 못 하는 자리는 「미판정」으로 반드시 출력한다 — 0건이 «검증»으로 오독되지 않게.
  *
  * 사용:
- *   node scripts/check-image-reuse.mjs              # KO 코퍼스 검사
- *   node scripts/check-image-reuse.mjs --selftest   # 게이트 자체 검증
- *   node scripts/check-image-reuse.mjs --strict     # 🔴가 있으면 exit 1
+ *   node scripts/check-image-reuse.mjs                 # KO 코퍼스 검사(기본 — 동작 불변)
+ *   node scripts/check-image-reuse.mjs --locale=ja     # 특정 로케일
+ *   node scripts/check-image-reuse.mjs --all           # KO + 24개 로케일 전수 + 요약표
+ *   node scripts/check-image-reuse.mjs --selftest      # 게이트 자체 검증
+ *   node scripts/check-image-reuse.mjs --strict        # 🔴가 있으면 exit 1
+ *
+ * ★ 로케일 인자 추가 (2026-09-03)
+ *   slug는 전 언어 동일하지만(CLAUDE.md §7) **본문 구성은 로케일마다 재저작**이라
+ *   이미지 공유 양상이 KO와 다르다. 그래서 KO 결과를 옮겨 적으면 안 되고 로케일마다 다시 센다.
+ *   🔴 **클러스터 지도가 있는 로케일은 9개뿐이다**(ko·en·ja·es·pt·de·zh·zh-hant·id).
+ *   나머지 16개는 clusterOf가 항상 null이라 «같은 필라 안 공유»를 **원리상 판정할 수 없다**
+ *   → 그 로케일의 본문 공유는 전부 🟠 + 「미판정」으로 계수된다. 0건을 검증으로 읽지 마라.
  */
 import { dirname, join, basename } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -141,6 +150,31 @@ export function analyze(posts, clusterOf) {
 }
 
 /* ────────────────────────────────────────────────────────────────
+ * 로케일 해석 — 순수 함수라 셀프테스트가 검증한다
+ * ──────────────────────────────────────────────────────────────── */
+export const LOCALES = [
+  "ar", "bn", "de", "en", "es", "fa", "fil", "fr", "he", "hi", "id", "it", "ja",
+  "ms", "pl", "pt", "ro", "ru", "sw", "th", "tr", "uk", "vi", "zh", "zh-hant",
+];
+// 클러스터 지도가 실제로 있는 로케일만. 없는 곳은 «판정 불가»이지 «결함 없음»이 아니다.
+export const CLUSTERED = ["ko", "en", "ja", "es", "pt", "de", "zh", "zh-hant", "id"];
+
+export function resolveLocale(loc) {
+  const key = String(loc || "ko").toLowerCase();
+  const UP = key.toUpperCase().replace(/-/g, "_");
+  if (key === "ko") {
+    return { locale: "ko", module: "../lib/posts.ts", postsExport: "POSTS", clustersExport: "KO_CLUSTERS" };
+  }
+  if (!LOCALES.includes(key)) return null;
+  return {
+    locale: key,
+    module: `../lib/posts-${key}/index.ts`,
+    postsExport: `${UP}_POSTS`,
+    clustersExport: CLUSTERED.includes(key) ? `${UP}_CLUSTERS` : null,
+  };
+}
+
+/* ────────────────────────────────────────────────────────────────
  * 셀프테스트 — 규칙보다 먼저다
  * ──────────────────────────────────────────────────────────────── */
 function selftest() {
@@ -232,6 +266,13 @@ function selftest() {
   const hb = analyze([{ slug: "s1", image: "/images/hb.webp", content: "![a](/images/hb.webp)" }], clusterOf);
   t("같은 글의 hero=body는 1편", hb.findings.length === 0);
 
+  // 12~16. 로케일 해석 (2026-09-03 추가)
+  t("ko는 lib/posts.ts + POSTS", resolveLocale("ko")?.postsExport === "POSTS" && resolveLocale().postsExport === "POSTS");
+  t("ja는 JA_POSTS + JA_CLUSTERS", resolveLocale("ja")?.postsExport === "JA_POSTS" && resolveLocale("ja")?.clustersExport === "JA_CLUSTERS");
+  t("zh-hant 하이픈은 밑줄로", resolveLocale("zh-hant")?.postsExport === "ZH_HANT_POSTS" && resolveLocale("zh-hant")?.clustersExport === "ZH_HANT_CLUSTERS");
+  t("클러스터 지도 없는 로케일은 clustersExport=null", resolveLocale("ms")?.clustersExport === null && resolveLocale("fr")?.clustersExport === null);
+  t("없는 로케일은 null", resolveLocale("xx") === null);
+
   const pass = cases.filter((c) => c.ok).length;
   for (const c of cases) console.log(`${c.ok ? "  ✓" : "  ✗"} ${c.name}`);
   console.log(`\n셀프테스트 ${pass}/${cases.length}`);
@@ -245,28 +286,95 @@ if (process.argv.includes("--selftest")) selftest();
 
 const { createJiti } = await import("jiti");
 const jiti = createJiti(join(root, "scripts", "check-image-reuse.mjs"));
-const { POSTS } = jiti("../lib/posts.ts");
-const { KO_CLUSTERS, clusterForSlug } = jiti("../lib/pillar-clusters.ts");
 
-const clusterOf = (slug) => {
-  const c = clusterForSlug(slug, KO_CLUSTERS);
-  return c ? c.pillarLabel : null;
-};
+const argLocale = (process.argv.find((a) => a.startsWith("--locale=")) || "").split("=")[1];
+const runAll = process.argv.includes("--all");
+const targets = runAll ? ["ko", ...LOCALES] : [argLocale || "ko"];
 
-const { findings, totalImages, unjudged } = analyze(POSTS, clusterOf);
-const red = findings.filter((f) => f.level === "RED");
-const orange = findings.filter((f) => f.level === "ORANGE");
+function loadCorpus(loc) {
+  const spec = resolveLocale(loc);
+  if (!spec) return { error: `알 수 없는 로케일: ${loc}` };
+  let posts;
+  try {
+    posts = jiti(spec.module)[spec.postsExport];
+  } catch (e) {
+    return { error: `로드 실패(${spec.module}): ${e.message}` };
+  }
+  if (!Array.isArray(posts)) return { error: `${spec.postsExport} 가 배열이 아니다` };
 
-console.log(`\n🖼  본문 이미지 재사용 검사 — KO 포스트 ${POSTS.length}편 · 참조 이미지 ${totalImages}장\n`);
-for (const f of findings) {
-  console.log(`${f.level === "RED" ? "🔴" : "🟠"} ${f.img}  (${f.n}편)`);
-  console.log(`    ${f.reason}`);
-  for (const s of f.slugs) console.log(`      · ${s.slug}  [${s.kinds}]  ${s.cluster}`);
-  console.log("");
+  let clusterOf = () => null;
+  if (spec.clustersExport) {
+    const pc = jiti("../lib/pillar-clusters.ts");
+    const map = pc[spec.clustersExport];
+    const fn = pc.clusterForSlug;
+    if (Array.isArray(map) && typeof fn === "function") {
+      clusterOf = (slug) => {
+        const c = fn(slug, map);
+        return c ? c.pillarLabel : null;
+      };
+    }
+  }
+  return { spec, posts, clusterOf, hasClusters: !!spec.clustersExport };
 }
-console.log("─".repeat(60));
-console.log(`🔴 ${red.length}건 · 🟠 ${orange.length}건`);
-console.log(`커버리지: 지적 대상 글 중 클러스터 미등재 = ${unjudged}건 (「미판정」 — 0건이 검증이 아니다)`);
-console.log(`예외 등재: ${ALLOW.length}건`);
 
-if (process.argv.includes("--strict") && red.length) process.exit(1);
+const summary = [];
+let exitRed = 0;
+
+for (const loc of targets) {
+  const c = loadCorpus(loc);
+  if (c.error) {
+    console.log(`\n⚠ ${loc}: ${c.error}`);
+    continue;
+  }
+  const { findings, totalImages, unjudged } = analyze(c.posts, c.clusterOf);
+  const red = findings.filter((f) => f.level === "RED");
+  const orange = findings.filter((f) => f.level === "ORANGE");
+  exitRed += red.length;
+  summary.push({
+    loc,
+    posts: c.posts.length,
+    images: totalImages,
+    red: red.length,
+    orange: orange.length,
+    unjudged,
+    hasClusters: c.hasClusters,
+  });
+
+  const head = loc === "ko" ? "KO 포스트" : `${loc} 포스트`;
+  console.log(`\n🖼  본문 이미지 재사용 검사 — ${head} ${c.posts.length}편 · 참조 이미지 ${totalImages}장`);
+  if (!c.hasClusters) {
+    console.log(`   🔴 이 로케일은 클러스터 지도가 없다 — «같은 필라 안 공유»를 판정할 수 없다(전부 🟠 + 미판정).`);
+  }
+  console.log("");
+  for (const f of findings) {
+    console.log(`${f.level === "RED" ? "🔴" : "🟠"} ${f.img}  (${f.n}편)`);
+    console.log(`    ${f.reason}`);
+    for (const sl of f.slugs) console.log(`      · ${sl.slug}  [${sl.kinds}]  ${sl.cluster}`);
+    console.log("");
+  }
+  console.log("─".repeat(60));
+  console.log(`🔴 ${red.length}건 · 🟠 ${orange.length}건`);
+  console.log(`커버리지: 지적 대상 글 중 클러스터 미등재 = ${unjudged}건 (「미판정」 — 0건이 검증이 아니다)`);
+  console.log(`예외 등재: ${ALLOW.length}건`);
+}
+
+if (summary.length > 1) {
+  console.log(`\n${"═".repeat(72)}`);
+  console.log("전 로케일 요약 — 🔴는 즉시 조치, 🟠는 «교차 클러스터» 판정 대기");
+  console.log(`${"═".repeat(72)}`);
+  console.log("로케일    글수  이미지   🔴   🟠  미판정  클러스터지도");
+  for (const r of summary) {
+    console.log(
+      `${r.loc.padEnd(9)}${String(r.posts).padStart(4)}${String(r.images).padStart(8)}` +
+        `${String(r.red).padStart(5)}${String(r.orange).padStart(5)}${String(r.unjudged).padStart(8)}   ` +
+        (r.hasClusters ? "있음" : "🔴 없음(판정 불가)")
+    );
+  }
+  const totRed = summary.reduce((a, b) => a + b.red, 0);
+  const totOr = summary.reduce((a, b) => a + b.orange, 0);
+  const noMap = summary.filter((r) => !r.hasClusters).length;
+  console.log(`\n합계 🔴 ${totRed}건 · 🟠 ${totOr}건 · 클러스터 지도 없는 로케일 ${noMap}개`);
+  console.log("🔴 지도 없는 로케일의 «🔴 0건»은 «히어로 중복이 없다»는 뜻일 뿐이다 — 필라 판정은 미검사다.");
+}
+
+if (process.argv.includes("--strict") && exitRed) process.exit(1);

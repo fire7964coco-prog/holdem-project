@@ -61,6 +61,7 @@
     "check:images": "node scripts/check-images.mjs",
     "check:images:selftest": "node scripts/check-images.mjs --selftest",
     "check:image-reuse": "node scripts/check-image-reuse.mjs",
+    "check:image-reuse:all": "node scripts/check-image-reuse.mjs --all",
     "check:image-reuse:selftest": "node scripts/check-image-reuse.mjs --selftest"
   },
   "dependencies": {
