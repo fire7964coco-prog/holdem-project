@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Estar in position significa agir por último — você vê a decisão de cada adversário antes de gastar uma ficha. Estudos de solver e de banco de dados sugerem que jogadores out of position capturam só cerca de 60–85% da sua equity — o que deixa você acima de 100% quando está in position. É por isso que o UTG abre ~13% das mãos e o button ~43% — e por que posição reescreve cada c-bet, bluff e decisão de controle de pote no pós-flop.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-08-26",
+  updated: "2026-09-04",
   masterUpdated: "2026-08-18",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -289,7 +289,7 @@ A. Quando você entra no pote, na maioria das vezes sim — o padrão moderno do
 2. **Ranges deslizam com a posição.** O UTG abre ~13%, o button ==g:~43%== — e cada cadeira no meio ganha um degrau na escada. ==r:Jogar mãos de button do UTG sangra fichas.==
 3. **O button é a melhor cadeira; os blinds são as piores.** O BB perde mais fichas brutas (aposta forçada); o SB é a pior cadeira para de fato jogar (primeiro a agir em toda street). Proteja o seu button e faça 3-bet-ou-fold do seu small blind.
 4. **OOP não é caso perdido — é disciplina.** Check-raise como equalizador, aumente o tamanho ao apostar, controle potes com mãos médias e folde rivers mais do que parece natural.
-5. **Aumente ou folde no under the gun.** Abrir com limp no UTG combina a pior cadeira com a linha mais fraca.
+5. **Aumente ou folde no under the gun.** Abrir com limp no UTG combina a pior cadeira pré-flop com a linha mais fraca.
 6. **O 6-max comprime o mapa.** O UTG de 6-max joga como o lojack de full ring (~17%) — recalibre ao trocar de formato.
 
 Para cada nome de cadeira e o mapa completo da mesa, veja o [guia de nomes de posição e mapa da mesa](/pt/blog/holdem-positions). Para quais mãos exatas preenchem cada range, use a [tabela de starting hands por posição](/pt/blog/holdem-starting-hands-chart). E para entender por que as cadeiras "com desconto" custam mais caro, o [guia de small blind e big blind](/pt/blog/holdem-blind-meaning) cobre a matemática das apostas forçadas em detalhe.

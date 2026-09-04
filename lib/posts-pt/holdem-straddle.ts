@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "O que é straddle no poker? Regras, tipos e se você deveria",
   seoTitle: "A aposta que dobra os blinds — o que é straddle no poker?",
   desc: "O straddle é uma aposta voluntária que dobra os blinds antes das cartas. Veja as regras, cada tipo de straddle, quem age primeiro e se straddar dá lucro.",
-  tldr: "O straddle é uma aposta de blind opcional — normalmente o dobro do big blind — postada antes de as cartas serem distribuídas. Ela compra pro straddler a última ação e a opção de aumentar no pré-flop, dobrando os blinds do jogo. Em quase todo caso é uma jogada -EV, permitida só em cash games conforme as regras da casa.",
+  tldr: "O straddle é uma aposta de blind opcional — normalmente o dobro do big blind — postada antes de as cartas serem distribuídas. Ela compra pro straddler a última ação e a opção de aumentar no pré-flop, dobrando os blinds do jogo. Em quase todo caso é uma jogada -EV, e na prática só existe em cash games, conforme as regras da casa.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-08-26",
+  updated: "2026-09-04",
   masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -159,7 +159,7 @@ A. O jogador logo à esquerda do straddler age primeiro, porque um straddle vivo
 
 **Q. Quem pode dar straddle no poker?**
 
-A. Depende do tipo. No straddle padrão, só o jogador under the gun — a cadeira logo à esquerda do big blind — pode postá-lo. O Mississippi straddle, onde a casa permite, deixa qualquer posição dar straddle, mais comumente o button ou o cutoff. Nos dois casos você só pode dar straddle *antes* de as cartas serem distribuídas, e quais cadeiras podem fazê-lo é pura regra da casa — algumas salas só permitem UTG, outras qualquer assento, e muitos jogos online e torneios o proíbem por completo.
+A. Depende do tipo. No straddle padrão, só o jogador under the gun — a cadeira logo à esquerda do big blind — pode postá-lo. O Mississippi straddle, onde a casa permite, deixa qualquer posição dar straddle, mais comumente o button ou o cutoff. Nos dois casos você só pode dar straddle *antes* de olhar suas cartas (na maioria das salas, antes mesmo de elas serem distribuídas), e quais cadeiras podem fazê-lo é pura regra da casa — algumas salas só permitem UTG, outras qualquer assento, e muitos jogos online e torneios o proíbem por completo.
 
 **Q. Um straddle é considerado um aumento?**
 

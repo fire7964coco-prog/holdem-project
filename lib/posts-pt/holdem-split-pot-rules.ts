@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Sim — mãos de poker podem empatar. O pote é dividido (um chop) quando dois ou mais jogadores mostram a mesma melhor mão de cinco cartas no showdown. O naipe nunca desempata, e qualquer ficha ímpar que sobra vai para o primeiro empatado à esquerda do botão do dealer.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-08-26",
+  updated: "2026-09-04",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🃏",
@@ -65,7 +65,7 @@ Dois jogadores fazem exatamente a mesma mão de cinco cartas — mesmos valores,
 Os dois fazem o full house KKK-QQ com a mesa mais um rei. ==r:Os naipes desses reis não importam.==
 
 ### 2. A mesa joga
-As cinco cartas comunitárias já são a mão mais forte para todos que restam — é o pote 8-8-8-A-K da minha história. É o chop mais comum de todos, então ganha uma seção só para ele mais abaixo.
+As cinco cartas comunitárias já são a mão mais forte para todos que restam — é o pote 8-8-8-A-K da minha história. É um dos chops mais comuns, então ganha uma seção só para ele mais abaixo.
 
 ### 3. A mesma sequência
 Duas sequências com a mesma carta mais alta empatam, independentemente do naipe. Num board 7♣ 6♦ 5♥ K♠ 2♣, tanto o 9♠ 8♠ do A quanto o 9♥ 8♦ do B fazem 9-8-7-6-5 — mesma altura, então **divide**.
@@ -88,7 +88,7 @@ Sim — e nem precisa de duas mãos monstruosas. Quando as cinco cartas comunit�
 
 > **A verificação:** *a sua* melhor mão de cinco — usando pelo menos uma carta fechada — bate as cinco da própria mesa? Se sim, você joga sua mão. Se não, a mesa joga e você provavelmente vai chopar. O método completo para varrer uma mesa desse jeito está em [como ler a mesa e achar suas melhores 5](/pt/blog/holdem-reading-the-board).
 
-:::tip[Se a mesa joga e alguém aposta no river, **o erro é dar fold no automático**. Quando nada consegue bater a mesa o empate é certo, e pagar ainda traz de volta metade de tudo que já estava no pote — dar fold entrega essa metade de graça. Quando a mesa pode ser batida, calcule a frequência: contra uma aposta do tamanho do pote você precisa que o adversário também esteja apenas jogando a mesa em cerca de 2 de cada 3 vezes; contra meio pote, metade das vezes. É uma barra alta: contra uma aposta do tamanho do pote, foldar só é certo quando ele tem mão de verdade mais de **uma vez em três** — e numa mesa que joga sozinha, esse é o caso normal.]:::
+:::tip[Se a mesa joga e alguém aposta no river, **o erro é dar fold no automático**. Quando nada consegue bater a mesa o empate é certo, e pagar ainda traz de volta metade de tudo que já estava no pote — dar fold entrega essa metade de graça. Quando a mesa pode ser batida, calcule a frequência: contra uma aposta do tamanho do pote você precisa que o adversário também esteja apenas jogando a mesa em cerca de 2 de cada 3 vezes; contra meio pote, metade das vezes. É uma barra alta: contra uma aposta do tamanho do pote, foldar só é certo quando ele tem mão de verdade mais de **uma vez em três** — e isso só se aplica ao caso em que a mesa ainda pode ser batida.]:::
 
 ---
 

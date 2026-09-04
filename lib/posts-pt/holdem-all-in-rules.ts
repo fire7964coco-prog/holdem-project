@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ir de all-in é apostar todas as fichas que você tem. Você só pode ganhar de cada adversário o valor que igualou (o pote principal). O que os stacks maiores apostam além disso vira um pote paralelo (side pot) que você não pode ganhar. Um all-in menor que um aumento completo NÃO reabre a aposta para quem já agiu.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-08-25",
+  updated: "2026-09-04",
   masterUpdated: "2026-07-25",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -46,7 +46,7 @@ A base é a regra de **table stakes**: você só pode apostar as fichas que esta
 | Table stakes | Você só aposta o que tinha no início da mão |
 | Double up | Ganhar um all-in e dobrar o stack |
 | Pote principal (main pot) | O pote que todos — inclusive quem está de all-in — podem ganhar |
-| Pote paralelo (side pot) | Fichas que só os stacks maiores podem ganhar; quem está de all-in fica de fora |
+| Pote paralelo (side pot) | Fichas que só os stacks maiores podem ganhar; quem está de all-in por um valor menor fica de fora |
 
 </div>
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Equity é sua fatia do pote — a fatia que cabe à sua mão em média quando todas as cartas são distribuídas, com os empates contando proporcionalmente. Você paga quando sua equity supera as pot odds, mas posição e apostas fazem você raramente ficar com toda a sua equity — e a fold equity deixa você ganhar potes mesmo quando sua mão está atrás.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-08-26",
+  updated: "2026-09-04",
   masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "12 min",
@@ -84,7 +84,7 @@ Duas coisas confundem as pessoas aqui. Um par contra duas overcards (QQ vs AK) =
 
 **Pague quando sua equity for maior que suas pot odds — essa única comparação decide quase todo call no poker.** As [pot odds](/pt/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") te dizem a equity que você *precisa* para empatar; a equity te diz o que você *tem*. Se você tem mais do que precisa, pagar dá lucro.
 
-Encarando uma aposta de meio pote, suas pot odds exigem ==25%== para pagar. Um projeto de flush com as *duas* cartas por vir tem ~35% de equity — 35 supera 25, então é um call lucrativo ==quando você vê as duas cartas== (all-in, ou sem mais apostas). Se ainda vem aposta no turn, o call só compra uma carta — use o número de uma carta (19,6%), que sozinho *não* fecha o preço. Essa é a comparação inteira, sem chute nenhum.
+Encarando uma aposta de meio pote, suas pot odds exigem ==25%== para pagar. Um projeto de flush com as *duas* cartas por vir tem ~35% de equity — 35 supera 25, então é um call lucrativo ==quando você vê as duas cartas== (all-in, ou sem mais apostas). Se ainda vem aposta no turn, o call só compra uma carta — use o número de uma carta, do flop para o turn (9 ÷ 47 = 19,1%), que sozinho *não* fecha o preço. Essa é a comparação inteira, sem chute nenhum.
 
 Mas aqui está o detalhe que quase todo guia pula: **"sua equity é igual à sua fatia do pote" só é verdade quando não há mais apostas.** No momento em que mais dinheiro pode entrar em streets seguintes, 35% brutos não se traduzem automaticamente em 35% do pote final — você pode ser expulso do seu projeto, ou pagar quando acerta o segundo melhor. Essa diferença é exatamente onde entram as [implied odds](/pt/blog/holdem-implied-odds "thumb:/images/holdem-implied-odds-hero.webp") (dinheiro que você vai ganhar depois) e a realização de equity (abaixo). Equity é onde a matemática *começa*, não onde ela termina.
 
@@ -111,7 +111,7 @@ EV = (0,40 × $100) + (0,60 × [0,35 × $150 − 0,65 × $50])
 EV = $40 + (0,60 × [$52,50 − $32,50]) = $40 + $12 = ==g:+$52==
 :::
 
-Apostar aquele projeto de flush vale ==+$52== versus dar check-fold — e a maior parte desse valor vem das vezes em que eles foldam, não das vezes em que você acerta. (Com um projeto desse tamanho, check-call também seria lucrativo — a comparação com check-fold mostra o *teto* do que a agressão acrescenta, não a única alternativa.) Isso é fold equity: a razão de a agressão vencer a passividade, e por que um projeto vale muito mais como aposta do que como call.
+Apostar aquele projeto de flush vale ==+$52== versus dar check-fold — e a maior parte desse valor vem das vezes em que eles foldam, não das vezes em que você acerta. (Com um projeto desse tamanho, check-call também pode ser lucrativo — seja por implied odds, com um adversário que paga quando você acerta, seja porque ele dá check no turn e te deixa ver a carta de graça; a comparação com check-fold mostra o *teto* do que a agressão acrescenta, não a única alternativa.) Isso é fold equity: a razão de a agressão vencer a passividade, e por que um projeto vale muito mais como aposta do que como call.
 
 ---
 

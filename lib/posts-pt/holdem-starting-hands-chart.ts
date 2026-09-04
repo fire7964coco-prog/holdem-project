@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Dos 169 tipos de mãos iniciais, só uma pequena fatia do topo — cerca de 15–20% das mãos que você recebe — dá lucro pra um iniciante. Pares grandes (AA–TT) e AK aumentam de qualquer assento; quanto mais tarde você age, mais amplo você abre — de ~13% no under the gun a ~43% no button (ainda mais amplo no 6-max). Comece com uma tabela simplificada e adicione as tabelas GTO de pré-flop quando o aumentar-ou-foldar já for automático.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-08-26",
+  updated: "2026-09-04",
   masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -204,7 +204,7 @@ As piores mãos iniciais do poker não são tralha aleatória como 7-2 — ningu
 
 O ==r:erro mais caro que iniciantes cometem é pagar aumentos com ases fracos== como o A♣ 4♦ da introdução. Quando você finalmente acerta seu par de ases, muitas vezes você é o segundo melhor contra A♠ K♦ ou A♥ Q♦ — e perde um pote grande convencido de que tem top pair. E você tem. Eles também, com um kicker melhor.
 
-(E a pior mão de verdade no poker? 7-2 offsuit — mais sobre isso, e a famosa "regra do 7-2", no FAQ abaixo.)
+(E a mais famosa das piores mãos do poker? 7-2 offsuit — mais sobre isso, e a "regra do 7-2", no FAQ abaixo.)
 
 ---
 
@@ -259,7 +259,7 @@ A. Pocket ases (AA) é a melhor mão inicial do poker. No pré-flop, os ases ven
 
 **Q. Quais são as boas mãos iniciais do poker?**
 
-A. As boas mãos iniciais do poker são pares premium (AA–TT), ases grandes (AK, AQ) e broadways suited fortes (KQs, AJs) — mais ou menos os 15–20% do topo de todas as mãos. Mãos especulativas como pares pequenos e suited connectors só são boas de posição tardia.
+A. As boas mãos iniciais do poker são pares premium (AA–TT), ases grandes (AK, AQ) e broadways suited fortes (KQs, AJs) — o núcleo dos ~15–20% de mãos que você joga numa sessão (essas mãos sozinhas são só cerca de 5% do total). Mãos especulativas como pares pequenos e suited connectors só são boas de posição tardia.
 
 **Q. Quantas mãos iniciais existem no poker?**
 
@@ -267,7 +267,7 @@ A. Existem 169 tipos distintos de mãos iniciais (13 pares, 78 suited, 78 offsui
 
 **Q. O que é a regra do 7-2 no poker?**
 
-A. A regra do 7-2 é um jogo paralelo da mesa, não uma regra oficial do poker: se um jogador ganha um pote com 7-2 offsuit — a pior mão — todos os outros jogadores pagam a ele uma pequena recompensa. Existe só pra dar tempero a jogos caseiros e de pub, premiando um blefe absurdo.
+A. A regra do 7-2 é um jogo paralelo da mesa, não uma regra oficial do poker: se um jogador ganha um pote com 7-2 offsuit — tida como a pior mão — todos os outros jogadores pagam a ele uma pequena recompensa. Existe só pra dar tempero a jogos caseiros e de pub, premiando um blefe absurdo.
 
 **Q. Qual é a pior mão inicial do poker?**
 

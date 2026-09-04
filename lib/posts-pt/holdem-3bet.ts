@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Um 3-bet é o primeiro re-raise antes do flop — chamado de 3-bet porque o big blind é a primeira aposta, o open-raise a segunda, e o seu re-raise a terceira. Dê 3-bet por valor com um núcleo apertado (QQ+, AK) mais alguns blefes de bloqueio suited como A5s, dimensione em torno de 3x o open in position e 4x out of position, e mantenha sua frequência geral de 3-bet perto de 6–10%. Quando você é quem enfrenta um 3-bet, 4-bete suas mãos premium, pague as mãos que jogam bem, e folde o resto — foldando mais que o \"balanceado\" contra jogadores de stakes baixos que nunca blefam.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-08-26",
+  updated: "2026-09-04",
   masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -96,7 +96,7 @@ Você vai ver essas duas palavras por todo canto na estratégia de 3-bet. Elas d
 | | Linear (merged) | Polarizado |
 |:---|:---|:---|
 | **Formato** | Um bloco sólido das suas melhores mãos | Halteres: o valor mais forte **+** blefes, nada no meio |
-| **Exemplo** | QQ+, AK, AQs, JJ, TT, KQs | AA-KK + blefes tipo A5s; flate o meio QQ/AQ/TT |
+| **Exemplo** | QQ+, AK, AQs, JJ, TT, KQs | QQ+ e AK + blefes tipo A5s; flate o meio JJ/AQ/TT |
 | **Use quando** | O open é **aberto e fraco** (posição tardia), ou você está **in position** | O open é **forte/apertado** (posição inicial), ou você está **nos blinds** |
 
 </div>
@@ -170,13 +170,13 @@ Bons blefes de squeeze são as mesmas mãos de bloqueio suited (A5s e companhia)
 
 ![Um jogador de poker encarando um re-raise pré-flop com uma mão apoiada nas fichas, pesando se paga, dá 4-bet, ou folda a um 3-bet](/images/holdem-3bet-facing.webp "A metade do 3-bet que ninguém ensina: quando alguém te dá re-raise, a maior parte do seu range deveria simplesmente foldar — especialmente contra jogadores que nunca blefam")
 
-Aqui está a metade do 3-bet que quase todo artigo pula: **você vai estar do lado que recebe muito mais vezes do que você mesmo dá 3-bet.** Quando você dá open e leva re-raise, você tem três respostas:
+Aqui está a metade do 3-bet que quase todo artigo pula: **você vai estar do lado que recebe o 3-bet mais ou menos tantas vezes quanto do lado que dá.** Quando você dá open e leva re-raise, você tem três respostas:
 
 - **4-bet** — por valor com suas premium (QQ+, AK), mais o blefe de bloqueio ocasional (uma mão tipo A5s). Um 4-bet diz "eu não vou a lugar nenhum".
 - **Pagar** — com mãos que flopam bem e têm a equity ou posição para continuar: pares para set-mine, broadways suited, e mãos fortes que não querem inflar o pote numa guerra de 4-bet.
 - **Foldar** — todo o resto. A maior parte do seu range de open deveria simplesmente entregar a um 3-bet; isso é normal, não fraqueza.
 
-Quanto você deve continuar? A referência teórica é a **Frequência Mínima de Defesa (MDF)** — a fatia do seu range que você precisa continuar para que o 3-bettor não possa lucrar blefando com duas cartas quaisquer. É ==pote ÷ (pote + aposta)== — onde *pote* é o que está no meio antes do 3-bet e *aposta* é o tamanho do 3-bet — o que, contra sizes típicos de 3-bet, dá em torno de **um terço do seu range** no vácuo (um 3-bet de 3x: 4,5bb de pote ÷ (4,5bb + 9bb) ≈ 33%). Esse é o piso do spot isolado — o stat de HUD «fold to 3-bet» agrega todos os sizes e posições, e é por isso que um jogador balanceado vive mais perto dos ~55% da tabela abaixo. Mas aqui está o exploit que ganha dinheiro em mesas reais:
+Quanto você deve continuar? A referência teórica é a **Frequência Mínima de Defesa (MDF)** — a fatia do seu range que você precisa continuar para que o 3-bettor não possa lucrar blefando com duas cartas quaisquer. É ==pote ÷ (pote + aposta)== — onde *pote* é o que está no meio antes do 3-bet e *aposta* é o tamanho do 3-bet — o que, contra sizes típicos de 3-bet, dá em torno de **um terço do seu range** no vácuo (um 3-bet de 3x: 4,5bb de pote ÷ (4,5bb + 9bb) ≈ 33%). Continuar um terço quer dizer foldar no máximo uns 67% nesse spot isolado — e como o stat de HUD «fold to 3-bet» agrega todos os sizes e posições, um jogador balanceado fica perto dos ~55% de fold da tabela abaixo, dentro desse teto. Mas aqui está o exploit que ganha dinheiro em mesas reais:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -214,7 +214,7 @@ Agora inverta: se eu tivesse dado 3-bet numa mão **light** tipo A5s ali e o cut
 | **Só dar 3-bet por valor** | Você fica de cara aberta; bons jogadores foldam tudo menos coolers | Adicione blefes de bloqueio suited (A5s) |
 | **Nunca blefar de 3-bet** | Deixa dinheiro na mesa vs steals abertos; seus flats ficam fracos demais | Balanceie valor com alguns 3-bets light |
 | **3-bet merged vs um nit** | Seu "valor" está dominado pelo range só-premium dele | Vá polarizado ou simplesmente folde vs um nit de verdade |
-| **Blefar de 3-bet com lixo (Q7o)** | Sem blockers, sem equity — você tem que foldar a todo 4-bet | Escolha só mãos de blocker/jogabilidade |
+| **Blefar de 3-bet com lixo (Q7o)** | Blockers fracos e pouca equity de reserva — você tem que foldar a todo 4-bet | Escolha só mãos de blocker/jogabilidade |
 | **Flatar demais nos blinds** | Realização de equity ruim OOP; um range fraco e capado | Prefira um 3-bet-ou-fold polarizado |
 
 </div>
@@ -276,7 +276,7 @@ A. Você tem três opções: dar 4-bet nas suas premium (QQ+, AK) mais o blefe d
 
 **Q. Qual é uma boa porcentagem de fold-to-3-bet?**
 
-A. Em torno de 55% é uma referência razoável e mais ou menos balanceada — o número fica acima do piso de MDF de um spot isolado porque o stat agrega todos os sizes e posições. Você continua com o topo do seu range e deixa o resto ir. Foldar muito mais que isso te deixa explorável por 3-bets light; foldar muito menos significa que você está pagando ou dando 4-bet aberto demais. Ajuste ao adversário: folde mais contra jogadores que nunca blefam de 3-bet.
+A. Em torno de 55% é uma referência razoável e mais ou menos balanceada — você continua com o topo do seu range e deixa o resto ir. (A MDF pura, contra os sizes típicos de 3-bet, só exige defender cerca de um terço — um teto de ~67% de fold. O stat de HUD fica abaixo disso porque agrega todos os sizes e posições.) Foldar muito mais que isso te deixa explorável por 3-bets light; foldar muito menos significa que você está pagando ou dando 4-bet aberto demais. Ajuste ao adversário: folde mais contra jogadores que nunca blefam de 3-bet.
 
 **Q. Você deve dar 3-bet ou 4-bet all-in com um stack curto num torneio?**
 

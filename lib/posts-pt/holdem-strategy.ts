@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Toda decisão vencedora no Texas Hold'em se resume a cinco perguntas que se repetem: onde estou sentado (posição), essa mão vale a pena jogar, eu aumento ou foldo (nunca dou limp), continuo apostando no flop, e quando eu largo a mão? Um jogador tight-aggressive que responde bem a essas cinco folda ~80% das mãos no pré-flop, joga com agressividade quando entra, e ganha de quase todo jogo casual — sem lista de dicas decorada.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-08-26",
+  updated: "2026-09-04",
   masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -150,7 +150,7 @@ Se você reduzir a estratégia ao que de fato faz iniciantes perderem dinheiro, 
 | O vazamento | Por que sangra fichas | A correção |
 |:---|:---|:---|
 | **Jogar mãos demais** | Mãos iniciais fracas flopam mãos feitas fracas que te custam pós-flop | Folde ~80% no pré-flop (Decisão 2) |
-| **Pagar demais** | Um call só ganha se você já está na frente — nunca faz ninguém foldar | Aumente ou folde; pare de "pagar para ver" (Decisão 3) |
+| **Pagar demais** | Um call não tem fold equity: ninguém folda, então você precisa acertar ou chegar ao showdown na frente | Aumente ou folde; pare de "pagar para ver" (Decisão 3) |
 | **Ser passivo demais** | Vencedores apostam e aumentam por valor; passividade ganha potes minúsculos e perde os grandes | Tome a linha agressiva quando você tem a mão |
 | **Ignorar a posição** | Jogar lixo fora de posição significa adivinhar em toda street | Jogue mais apertado cedo, mais solto tarde (Decisão 1) |
 | **Perseguir projetos sem odds** | Calls de "esperança" que o pote não justifica | Confira as pot odds antes de todo call de projeto (Decisão 5) |
@@ -225,7 +225,7 @@ A. Dê 3-bet (re-aumentar quem aumentou no pré-flop) por valor com suas mãos m
 
 **Q. Quando você deve aumentar vs. pagar?**
 
-A. Prefira aumentar a pagar sempre que tiver uma mão que vale a pena continuar. Aumentar ganha potes de duas formas (fold equity mais a melhor mão) e toma a iniciativa; pagar só ganha se você já está na frente e deixa outros entrarem barato. Pague quando sua mão é forte o suficiente para continuar mas não para construir um pote grande, quando está fazendo set-mining com um par pequeno, ou quando quer manter os blefes de um jogador mais fraco na mão.
+A. Prefira aumentar a pagar sempre que tiver uma mão que vale a pena continuar. Aumentar ganha potes de duas formas (fold equity mais a melhor mão) e toma a iniciativa; pagar não tem fold equity — não faz ninguém foldar agora — e deixa outros entrarem barato. Pague quando sua mão é forte o suficiente para continuar mas não para construir um pote grande, quando está fazendo set-mining com um par pequeno, ou quando quer manter os blefes de um jogador mais fraco na mão.
 
 **Q. Quantas mãos você deve jogar no Texas Hold'em?**
 

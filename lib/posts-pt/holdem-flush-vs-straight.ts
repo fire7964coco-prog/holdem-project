@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Um flush (cinco cartas do mesmo naipe — cerca de 0,197% das mãos de cinco cartas) sempre ganha de uma sequência (cinco em sequência, cerca de 0,392%) no Texas Hold'em — porque o flush é mais raro: ao longo das sete cartas até o river, 3,03% contra 4,62% da sequência.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-08-26",
+  updated: "2026-09-04",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "⚡",
@@ -155,7 +155,7 @@ A dama supera o valete, então A ganha. Se as melhores cinco cartas dos dois jog
 
 ![9♥ 8♥ 7♥ 6♥ 5♥ — um straight flush de copas, a mão #2 do poker](/images/holdem-flush-vs-straight-sf.webp "Straight flush — cinco copas em sequência, batido só por um royal flush")
 
-Um **straight flush** é cinco cartas *consecutivas* de *um só naipe* — tipo 9♥ 8♥ 7♥ 6♥ 5♥. É a **mão #2 do poker**, batida só por um royal flush (que é simplesmente o straight flush de Ás alto, A-K-Q-J-10 do mesmo naipe). Com apenas **36 combinações (cerca de 0,00139%)**, é mais rara que tudo, exceto o próprio royal.
+Um **straight flush** é cinco cartas *consecutivas* de *um só naipe* — tipo 9♥ 8♥ 7♥ 6♥ 5♥. É a **mão #2 do poker**, batida só por um royal flush (que é simplesmente o straight flush de Ás alto, A-K-Q-J-10 do mesmo naipe). Com apenas **36 combinações entre as 2.598.960 mãos de cinco cartas (cerca de 0,00139%; até o river no Hold'em, cerca de 0,028%)**, é mais rara que tudo, exceto o próprio royal.
 
 O detalhe: ==as *mesmas cinco cartas* têm que ser do mesmo naipe **e** em sequência==. Veja a diferença no board **8♥ 7♥ 6♥ Q♠ 3♦**:
 

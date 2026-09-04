@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Um out é qualquer carta que sobrou no baralho e melhora sua mão para uma provável vencedora. Conte-os e converta: multiplique os outs por 4 no flop ou por 2 no turn para a % aproximada de acertar. Um projeto de flush são 9 outs ≈ 36% até o river.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-08-26",
+  updated: "2026-09-04",
   masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "11 min",
@@ -149,7 +149,7 @@ Digamos que você tenha ==b:J♠ 10♠== num flop ==9♠ 8♣ 2♠==. Você tem 
 - Outs de sequência que não são espadas: Q♥ Q♦ Q♣, 7♥ 7♦ 7♣ = **6**
 - Total: **15 outs**, não 17
 
-Mesma lógica num **flush + gutshot**: 9 outs de flush + 4 cartas de gutshot, mas uma dessas quatro é do seu naipe → 9 + 3 = **12**. Sempre que dois projetos compartilham uma carta, subtraia a sobreposição. Essa é a forma mais comum de contar demais, e é por isso que as linhas de projetos combinados na tabela parecem "uma a menos" que a soma.
+Mesma lógica num **flush + gutshot**: 9 outs de flush + 4 cartas de gutshot, mas uma dessas quatro é do seu naipe → 9 + 3 = **12**. Sempre que dois projetos compartilham cartas, subtraia a sobreposição — uma carta no flush + gutshot, duas no flush + projeto aberto. Essa é a forma mais comum de contar demais, e é por isso que as linhas de projetos combinados na tabela ficam abaixo da soma simples.
 
 ---
 

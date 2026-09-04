@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Para calcular pot odds, divida o valor que você precisa pagar pelo pote total depois do seu call. Pagar $50 num pote de $150 = 50 ÷ 200 = 25% — então você precisa de pelo menos 25% de equity para o call ser lucrativo.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-08-26",
+  updated: "2026-09-04",
   masterUpdated: "2026-08-09",
   keepImagesInBody: true,
   readTime: "12 min",
@@ -53,7 +53,7 @@ Esqueça as razões por um instante — a forma mais rápida de usar é a **porc
 Some o pote final | Pote atual + a aposta + o seu call. Exemplo: pote de $100 + aposta de $50 + seu call de $50 = $200
 Divida seu call por esse pote final | $50 ÷ $200 = 0,25
 Essa é a sua equity necessária | Você precisa ganhar pelo menos 25% das vezes para pagar com lucro
-Compare com a sua equity real | Flush draw ≈ 35% de fechar → 35% supera 25% → ==g:pague==
+Compare com a sua equity real | Flush draw ≈ 35% de fechar com duas cartas por vir → 35% supera 25% → ==g:pague==
 :::
 
 É isso. **Equity necessária = seu call ÷ o pote final.** Se a sua chance real de ganhar for maior que esse número, pagar dá lucro no longo prazo — mesmo quando você vai perder a mão mais vezes do que ganhar.
@@ -123,7 +123,7 @@ Agora conecte o preço à sua mão. [Conte os seus **outs**](/pt/blog/holdem-out
 
 </div>
 
-Leia contra a tabela por tamanho de aposta acima. Enfrentando uma ==aposta de meio pote (precisa de 25%)==: com duas cartas por vir, um flush draw (35%) é um call claro — mas numa *única* carta, esse mesmo projeto é só 19,1%, o que **não** atinge o preço sozinho. Essa diferença é exatamente onde as implied odds entram.
+Leia contra a tabela por tamanho de aposta acima. Enfrentando uma ==aposta de meio pote (precisa de 25%)==: com duas cartas por vir, um flush draw (35%) é um call claro — mas numa *única* carta a partir do flop, esse mesmo projeto é só 19,1%, o que **não** atinge o preço sozinho. Essa diferença é exatamente onde as implied odds entram.
 
 ---
 
@@ -197,7 +197,7 @@ A. Sim. A fórmula da equity necessária usa o pote *final*, que inclui o seu pr
 
 **Q. O que é uma boa razão de pot odds?**
 
-A. Quanto maior, melhor — você adoraria estar "recebendo 5 para 1" (precisando de só 16,7%). Mas "boa" é relativo à sua mão: receber 2 para 1 (precisando de 33%) é ótimo com um flush draw e péssimo com um gutshot. Sempre compare o preço com a sua equity.
+A. Quanto maior, melhor — você adoraria estar "recebendo 5 para 1" (precisando de só 16,7%). Mas "boa" é relativo à sua mão: receber 2 para 1 (precisando de 33%) é aceitável com um flush draw só quando você já vai ver as duas cartas (all-in ou sem mais apostas, 35%); não fecha se o call compra uma carta só (19,1% do flop, 19,6% do turn); e é péssimo com um gutshot. Sempre compare o preço com a sua equity.
 
 **Q. Como converter pot odds de razão para porcentagem?**
 

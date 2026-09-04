@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Você flopa um set com um par na mão 11,8% das vezes (7,5 para 1 contra), flopa um flush com duas cartas do mesmo naipe apenas 0,84%, e completa um flush draw flopado até o river 35% das vezes. Cada número abaixo vem do baralho, não de chute.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-08-26",
+  updated: "2026-09-04",
   masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "12 min",
@@ -84,7 +84,7 @@ Set mining é a jogada de [implied odds](/pt/blog/holdem-implied-odds "thumb:/im
 Dois números relacionados que as pessoas perguntam:
 
 - **Acertar um set até o river** (do preflop, vendo todas as cinco cartas da mesa) é ==**19,2%**== — 1 − C(48,5)/C(50,5). Maior que o número do flop porque você recebe mais duas cartas, mas você não pode contar em chegar ao river barato, e é por isso que o número do flop rege o set mining.
-- **Set sobre set** — você flopa um set e perde pra um maior — não tem um número fixo único porque depende de quantos adversários têm pares, mas com dois jogadores segurando pares dá perto de ~1%. É o clássico cooler: a matemática esteve do seu lado o caminho todo.
+- **Set sobre set** — dois jogadores com pares de bolso flopam set na mesma mão, e o menor perde para o maior — não tem um número fixo único porque depende de quantos adversários têm pares, mas com dois jogadores segurando pares, *os dois* floparem set dá perto de ~1%. É o clássico cooler: a matemática esteve do seu lado o caminho todo.
 
 ---
 

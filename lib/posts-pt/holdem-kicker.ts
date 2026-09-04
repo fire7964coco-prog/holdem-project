@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "O kicker é a carta lateral mais alta que não faz parte da sua mão feita — ele desempata quando dois jogadores têm o mesmo valor. Um par usa 3 kickers, dois pares 1, a trinca 2; sequências, flushes e full houses não têm nenhum. É por isso que AK ganha de AQ quando a mesa pareia um ás.",
   category: "hand-rankings",
   date: "2026-07-08",
-  updated: "2026-08-26",
+  updated: "2026-09-04",
   masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Dois jogadores virando A-K e A-Q no showdown com um ás na mesa — o kicker rei decidindo quem leva o pote",
   tags: ["kicker poker", "o que e kicker no poker", "regras do kicker", "flush tem kicker", "jogar a mesa", "as dominado", "carta kicker", "quadra tem kicker"],
   content: `
-A mão que finalmente me ensinou o que é um kicker me custou um buy-in inteiro. Eu tinha ==b:A♠ 9♣==, a mesa pareou meu ás e eu fui de all-in achando que top pair era ouro. Ele virou ==b:A♥ K♦== — o mesmo par de ases, mas o rei dele superava meu nove, e o pote deslizou para o lado dele. Eu não tinha perdido para uma *mão* melhor; tinha perdido para uma ==carta lateral melhor.== Essa carta lateral é o kicker, e ele decide mais potes do que qualquer iniciante imagina.
+A mão que finalmente me ensinou o que é um kicker me custou um buy-in inteiro. Eu tinha ==b:A♠ 9♣==, a mesa pareou meu ás e eu fui de all-in achando que top pair era ouro. Ele virou ==b:A♥ K♦== — o mesmo par de ases, mas a carta que sobrava pra ele, um rei, venceu a disputa, e o pote deslizou para o lado dele. Eu não tinha perdido para uma *mão* melhor; tinha perdido para uma ==carta lateral melhor.== Essa carta lateral é o kicker, e ele decide mais potes do que qualquer iniciante imagina.
 
 ==O kicker é o desempate embutido no próprio poker — quando dois jogadores têm o mesmo valor, ganha a carta restante mais alta.== A maioria dos guias te dá uma definição de uma linha e um exemplo de AK contra AQ. Este aqui te dá o quadro completo: exatamente quais mãos têm kicker (e quantos), a única exceção que todo mundo erra e por que "jogar a mesa" significa que seu kicker de repente não importa mais nada.
 
@@ -107,7 +107,7 @@ Mesmo par, então compare os kickers de cima para baixo: seu ==g:K ganha da Q de
 
 ## Jogar a mesa: quando seu kicker não conta
 
-**Se as cinco cartas comunitárias já formam a melhor mão possível e suas cartas de mão não podem melhorá-la, você está "jogando a mesa" — e não existe kicker nenhum.** Todos que continuam na mão usam as mesmas cinco cartas, então o pote é dividido.
+**Se as cinco cartas comunitárias já são a sua melhor mão — nenhuma carta da sua mão entra nas cinco —, você está "jogando a mesa", e a sua carta lateral deixa de decidir qualquer coisa.** Se ninguém consegue melhorar o board, todos que continuam na mão usam as mesmas cinco cartas, então o pote é dividido.
 
 O board é ==b:10♠ J♦ Q♣ K♥ A♠== — uma sequência feita de dez a ás (Broadway), em naipes variados, então nenhum flush é possível.
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Um bad beat é quando você coloca suas fichas como favorito pesado — geralmente 80% ou mais — e perde porque o adversário pega uma carta de sorte pra dar um 'suckout' em você. Diferente de um cooler, você estava na frente o tempo todo; o baralho só te traiu no fim. Dói, mas bad beats são na verdade um sinal de que você está jogando num jogo lucrativo.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-08-30",
+  updated: "2026-09-04",
   masterUpdated: "2026-08-28",
   keepImagesInBody: true,
   readTime: "11 min",
@@ -140,7 +140,7 @@ Esse é o teto da dor de bad beat: não um favorito de 80% caindo, mas *quatro a
 
 Agora a verdade que transforma bad beats de combustível de tilt numa fonte silenciosa de confiança. **Todo bad beat que você leva é prova de que você está jogando num jogo vencível.**
 
-Pense no que um bad beat exige: um adversário que colocou o dinheiro *atrás*, como azarão matemático, e deu sorte. Isso é um jogador tomando **decisões perdedoras** — exatamente o adversário que você quer. Se ninguém na sua mesa nunca te desse um suckout, significaria que todos estavam foldando suas mãos fracas corretamente, e não haveria dinheiro pra ganhar. Como diz uma máxima de coaching conhecida, um suckout de um jogador fraco é um *presente*: é o preço da entrada por levar as fichas dele nas outras quatro vezes.
+Pense no que um bad beat exige: um adversário que colocou o dinheiro *atrás*, como azarão matemático, e deu sorte. Na maioria das vezes, isso é um jogador tomando **decisões perdedoras** — exatamente o adversário que você quer. Se ninguém na sua mesa nunca te desse um suckout, significaria que todos estavam foldando suas mãos fracas corretamente, e não haveria dinheiro pra ganhar. Como diz uma máxima de coaching conhecida, um suckout de um jogador fraco é um *presente*: é o preço da entrada por levar as fichas dele nas outras quatro vezes.
 
 Numa amostra grande o suficiente, as batidas que você leva e as batidas que você *entrega* mais ou menos se anulam. O que sobra — a única coisa que realmente impulsiona os seus resultados de longo prazo — é a qualidade das suas decisões. **Colocar o dinheiro bem e perder ainda é uma vitória** em todos os sentidos que importam ao longo do tempo. As fichas vão voltar; a vantagem é permanente, a variância é temporária.
 

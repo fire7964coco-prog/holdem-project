@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A ordem das mãos do poker, da melhor à pior: Royal Flush, Straight Flush, Quadra, Full House, Flush, Sequência, Trinca, Dois Pares, Par e Carta Alta. Essa escada vale para o Texas Hold'em e quase todas as variantes.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-08-26",
+  updated: "2026-09-04",
 
   masterUpdated: "2026-08-12",
   keepImagesInBody: true,
@@ -332,7 +332,7 @@ A. Sim. A trinca é a #7 e os dois pares a #8, então a trinca ganha. Dois pares
 
 **Q. Quais são as piores mãos do poker?**
 
-A. Como categoria, a pior mão é a carta alta — nenhuma combinação. Já entre as mãos iniciais, a pior do Texas Hold'em é o famoso 7-2 offsuit: as duas cartas mais baixas que não conectam em sequência nem em naipe. Ases de kicker fraco (A2–A9 offsuit) também perdem mais potes do que parecem — veja quais mãos jogar na [tabela de mãos iniciais](/pt/blog/holdem-starting-hands-chart).
+A. Como categoria, a pior mão é a carta alta — nenhuma combinação. Já entre as mãos iniciais, a mais famosa das piores do Texas Hold'em é o 7-2 offsuit: as duas cartas mais baixas que não conectam em sequência nem em naipe (medido por equity contra uma mão aleatória, 3-2 offsuit é ainda pior; o 7-2 é o pior entre as mãos que nem sequência conseguem formar). Ases de kicker fraco (A2–A9 offsuit) também perdem mais potes do que parecem — veja quais mãos jogar na [tabela de mãos iniciais](/pt/blog/holdem-starting-hands-chart).
 
 **Q. Quais são as melhores mãos iniciais do poker?**
 

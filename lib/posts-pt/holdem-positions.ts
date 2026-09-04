@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Posições no poker são nomes de assento medidos a partir do dealer button — UTG, lojack, hijack, cutoff, button e os blinds — e elas andam um assento no sentido horário toda mão. No pré-flop, o UTG age primeiro e o big blind por último; no pós-flop, o small blind age primeiro e o button por último. Os números de assento físicos nunca mudam; as posições sim.",
   category: "strategy",
   date: "2026-06-13",
-  updated: "2026-08-26",
+  updated: "2026-09-04",
   masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "12 min",
@@ -27,7 +27,7 @@ export const POST: Post = {
   content: `
 No meu primeiro cash game ao vivo, eu estava sentado no que mais tarde aprenderia ser o UTG. Olhei para baixo e vi J♥ J♠ e aumentei. O hijack pagou. O cutoff pagou. O button pagou. O big blind deu 3-bet. Eu não fazia ideia do que fazer — paguei e sangrei fichas ao longo de três streets.
 
-Duas voltas depois eu estava no button com o mesmo J♥ J♠. Aumentei. Todo mundo foldou. Ganhei $14 sem nunca ver um flop.
+Três mãos depois eu estava no button com o mesmo J♥ J♠. Aumentei. Todo mundo foldou. Ganhei $14 sem nunca ver um flop.
 
 Mesma mão. Resultado completamente diferente. A única coisa que mudou foi o meu assento — e naquela noite percebi que eu nem sabia como os assentos se *chamavam*, muito menos o que significavam. Se você ainda está aprendendo como uma mão inteira flui do deal ao showdown, comece pelo [guia de regras do Texas Hold'em](/pt/blog/texas-holdem-rules-for-beginners); este artigo é o mapa de assentos que aquele guia assume que você já conhece.
 
@@ -170,7 +170,7 @@ Uma pergunta vizinha que merece uma linha: no **showdown**, o padrão é que o �
 
 ## Posições no poker por número de jogadores: heads-up a 10-handed (6-max vs full ring)
 
-Os nomes das posições não mudam com o tamanho da mesa — ==os nomes desaparecem a partir da early position== conforme os jogadores são removidos. O button, os blinds, o cutoff e o hijack sobrevivem por mais tempo; os assentos UTG só existem quando a mesa está cheia. Aqui está o mapa de 2 a 10 jogadores, listado na ordem de ação do pré-flop:
+Os nomes das posições não mudam com o tamanho da mesa — ==os nomes desaparecem a partir da early position== conforme os jogadores são removidos. O button, os blinds, o cutoff e o hijack sobrevivem por mais tempo; os assentos UTG+1 e UTG+2 só existem quando a mesa está cheia. Aqui está o mapa de 2 a 10 jogadores, listado na ordem de ação do pré-flop:
 
 | Jogadores | Ordem de ação no pré-flop (primeiro → último) |
 |:---:|:---|
