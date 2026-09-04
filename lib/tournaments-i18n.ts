@@ -1516,7 +1516,8 @@ const MONTH_ES = ["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","n
 const NOTE_EN: Record<string, string> = {
   // 2026-09-03 M-082 ② 추가 13건
   "hpt-5": "₩1.6B total prize · online satellites on Hangame Royal Hold'em → live Main Event (Day 1 Sep 11–12 · Day 2 Sep 13) · open to Korean nationals",
-  "apl-seoul-winter-circuit-1": "Circuit I ₩400,000,000 GTD · APL Winter Series ₩2,300,000,000 GTD total · Seoul returns after two years",
+  // 2026-09-04 M-086 ⑤: ko note가 「2년 만의 서울 복귀」를 되찾고 SEAT·주최를 얻었다 → EN도 같은 내용으로 맞춘다.
+  "apl-seoul-winter-circuit-1": "Circuit I ₩400,000,000 GTD · APL Winter Series ₩2,300,000,000 GTD total · Seoul returns after two years · seat (ticket) entry only — qualifying routes TBA · organised by the Korea Holdem Sports Association",
   "wpt-bestbet-scramble": "Main Event $5,000 / $1,000,000 GTD",
   "wpt-prime-lodge": "Main Event $1,100 / $1,000,000 GTD",
   "wpt-prime-cyprus": "Main Event $1,100 / $1,000,000 GTD",

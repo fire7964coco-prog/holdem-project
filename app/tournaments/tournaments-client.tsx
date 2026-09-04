@@ -262,8 +262,14 @@ const KOREA_HUB_2026 = [
     venue: "파라다이스 시티 리조트 (외국인 전용 카지노 · 내국인 참가 불가)",
     color: "bg-orange-500/15 text-orange-400 border-orange-500/30",
     // 2026-09-03 M-082: ASPT Korea(#89)는 일정표가 «베뉴 공식 미기재»인데 이 카드가 파라다이스시티로 못 박고 있었다 → 분리.
+    // 🔴 2026-09-04 M-087: 같은 결함이 형제 행에 남아 있었다 — `ajpc-incheon-1`(4.10~4.19)의 venue도
+    //    🪶 이 주석에 그 행의 표시명을 축어로 적지 않는다 — 검수장 회귀 앵커가 그 문자열의 출현 수를 세어
+    //       «0 = 이행»으로 읽기 때문이다(M-067 교훈).
+    //    «공식 미기재»인데 이 카드가 파라다이스 시티로 못 박고 있었다. 베뉴를 모르면 「내국인 참가 불가」 배지도 근거가 없다
+    //    (자격은 베뉴에서 나온다) → ASPT와 동일 처리로 분리. `ajpc-incheon-2`(8.21~8.30 · «미정 (공식 미기재)»)는 원래부터 없다.
+    //    🔴 되돌리지 마라: 베뉴 라벨의 「외국인 전용 카지노 · 내국인 참가 불가」는 Paradise City 4행에는 맞다(APPT Korea 공식
+    //    「24/7 foreigner-exclusive casino」). 문제는 배지가 아니라 «베뉴가 다른 행이 같은 배지 밑에 있는 것»이었다.
     events: [
-      { name: "AJPC 사무라이 서킷", date: "4.10~4.19" },
       { name: "GOP 인천 (Prophecy)", date: "5.15~5.24" },
       { name: "APT 인천", date: "8.07~8.16", hot: true },
       { name: "APPT 코리아", date: "9.03~9.14", hot: true },
@@ -674,6 +680,17 @@ export default function Tournaments({
             APT·Triton·GOP 같은 카지노 대회는 외국인·재외국민(재외국민은 한국 여권 + 영주권 등 증빙)만 등록할 수 있습니다.
             일반 한국 국적자가 실제로 나갈 수 있는 국내 대회는 서울의 <strong className="text-foreground">HPT</strong>(호텔 컨벤션 베뉴)와 APL 서울 같은 비카지노 대회입니다.
           </p>
+
+          {/* 🔴 2026-09-04 M-087 ③ 라벨 정직화 — 이 카드는 «전수»가 아니다(도시별 대표 대회만).
+              카드를 19개로 늘리지 않기로 확정했으므로(손으로 적는 목록을 늘리면 드리프트가 그 경로로 돌아온다),
+              대신 «전수가 아님»을 드러내는 낱말과 «전체는 일정표»라는 안내를 한 자리에 둔다.
+              🪶 M-087은 「하단 일정표」라 적었으나 실제 렌더 순서는 일정표가 이 절 «위»다 — 문안은 실물대로 「위」로 적는다. */}
+          <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1 mb-3">
+            <h3 className="text-sm font-bold text-foreground">도시별 주요 대회</h3>
+            <span className="text-xs text-muted-foreground">
+              도시별 주요 대회만 추린 목록입니다 — 2026년 한국 대회 {KR_2026}개 전체는 위 <strong className="text-foreground/80">2026 홀덤 대회 일정표</strong>에서 볼 수 있습니다.
+            </span>
+          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-6">
             {KOREA_HUB_2026.map((hub) => (

@@ -569,10 +569,16 @@ const RAW_TOURNAMENTS: Tournament[] = [
   },
   {
     /**
-     * Ace Poker League 공식 「APL SEOUL Returns! Korea Schedule Officially Confirmed」(2026-08-06) 「After two years, APL SEOUL is
+     * Ace Poker League 공식 「APL SEOUL Returns! Korea Schedule Officially Confirmed」
+     * (https://acepokerleague.com/apl-seoul-returns-korea-schedule-officially-confirmed/ · ko판 `/ko/…` 동문)
+     * 「After two years, APL SEOUL is
      * finally coming back to Seoul!!」「Total Guarantee: ₩2,300,000,000 GTD」 + 「APL WINTER SERIES 2026 — WINTER PRELIMS CIRCUIT I」(08-28)
      * 「October 23 – 25, 2026 | 400,000,000 GTD」. 베뉴·바이인은 공식 미기재(「The full event schedule will be announced very soon」).
      * ⚠ 서울 베뉴가 카지노가 아니면 내국인 참가 가능 후보 — 공식 발표 후 갱신.
+     * 🔴 2026-09-04 M-086 ⑤ — 「2년 만의 서울 복귀」를 note에 되살렸다. M-084에서 뺀 이유(「걸린 sourceUrl이 그 문장을
+     *   싣지 않고 레포에 근거가 없다」)는 정당했으나, 그 문장을 싣는 공식 URL이 위에 확보됐다. 본체가 직접 재확인:
+     *   curl 200·60,944 bytes에서 「After two years, APL SEOUL is finally coming back to Seoul!!」 축어 검출(2026-09-04).
+     *   🪶 검수장 쪽 프록시로는 어제 본문이 안 잡혀 nav만 나왔다 — 「프록시가 본문을 삼키면 경로를 바꿔 재시도한다」.
      */
     id: "apl-seoul-winter-circuit-1",
     name: "APL 서울 Winter Prelims · Circuit I",
@@ -587,7 +593,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     buyin: "참가권(SEAT) 전용",
     emoji: "🇰🇷",
     color: "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-    note: "Circuit I ₩400,000,000 GTD · APL Winter Series 총 ₩2,300,000,000 GTD · 전 이벤트 참가권(SEAT) 방식 — 획득처 추후 공지 · 주최 사단법인 대한홀덤경기협회",
+    note: "Circuit I ₩400,000,000 GTD · APL Winter Series 총 ₩2,300,000,000 GTD · 2년 만의 서울 복귀 · 전 이벤트 참가권(SEAT) 방식 — 획득처 추후 공지 · 주최 사단법인 대한홀덤경기협회",
     sourceUrl: "https://acepokerleague.com/apl-winter-series-2026-winter-prelims-circuit-i/",
     sourceTier: "A",
     verifiedAt: "2026-09-04",
@@ -1122,6 +1128,11 @@ const RAW_TOURNAMENTS: Tournament[] = [
     country: "PH",
     venue: "Okada Manila",
     // 🔴 2026-09-03 M-082(3회차 #70 + 본체 Playwright): 「Manila Megastack 25 · ₱37.6M+ GTD · November 27-December 7, 2026 · ₱45,000 Main Event · ₱20M GTD」
+    // 🔴 2026-09-04 M-086 ④ — 공식 «표면»이 둘로 갈린다. 허브 `pokerstarslive.com/appt/`는 「Manila Megastack 25 November 28-December 7」,
+    //    룸 전용 `pokerstarslivemanila.com`은 **11/27**이다. 판정 = 룸 전용이 정본 · 11/27 유지. 근거 셋:
+    //    ① 허브는 후속 3행(December Special·Super Series 25·Megastack 26)을 아예 안 싣는다(커버리지가 낡음)
+    //    ② 룸 전용만 바이인·GTD를 싣는다 ③ Warm-up의 「Direct Qualifier … on Nov 26」 다음날이 11/27이다(28이면 하루 빈다).
+    //    🔴 허브를 보고 「11/28이 맞다」로 되돌리지 마라 — 이 갈림 때문에 실제로 그 오판이 한 번 났다(GPT 4회차).
     buyin: "₱45,000",
     emoji: "🇵🇭",
     color: "bg-sky-500/15 text-sky-400 border-sky-500/30",
@@ -3067,10 +3078,15 @@ const RAW_TOURNAMENTS: Tournament[] = [
     buyin: "€1,100",
     emoji: "🇦🇹",
     color: "bg-rose-500/15 text-rose-400 border-rose-500/30",
+    // 🔴 2026-09-04 M-086 §1(검수장 r.jina.ai 원문 인계 — 본체는 curl·Playwright·jina 전 경로가 403/422였다):
+    //    「## November 2. - 8, 2026」 · 「the NLH Main Event will take place with a buy-in of **€1,000 + €100**」
+    //    · MAIN EVENT EVENT 11 시작일 11/5(인스브루크)·11/6(제펠트)·11/7 · FINAL 11/8 — 날짜·바이인 전건 일치. sourceUrl을 도시 페이지로 승격.
+    //    🪶 같은 페이지에 「CAPT MILLION — EVENT 17-18 · 500+50 · 07.-08.11.2026 DAY 1A」가 있다. 바덴 본무대(11/19~30)와
+    //    모순이 아니라 «전국 스타팅데이»다 → 🔴 `capt-million-baden`의 시작일을 이것으로 넓히지 마라.
     note: "메인 €1,000+100 — 인스브루크 사상 첫 €1,100 메인이벤트",
-    sourceUrl: "https://www.casinos.at/spiel/poker/capt",
+    sourceUrl: "https://www.casinos.at/en/casinos/innsbruck/games/poker/capt-innsbruck",
     sourceTier: "A",
-    verifiedAt: "2026-08-10",
+    verifiedAt: "2026-09-04",
   },
   {
     id: "capt-million-baden",
@@ -3087,11 +3103,15 @@ const RAW_TOURNAMENTS: Tournament[] = [
     buyin: "€550",
     emoji: "🇦🇹",
     color: "bg-rose-500/15 text-rose-400 border-rose-500/30",
+    // 🔴 2026-09-04 M-086 §1(검수장 r.jina.ai 원문 인계): 「### 2026, November 19 - 30」 · 「Guaranteed prize pool: €1,000,000」
+    //    · 「Buy-in: €500 + €50」 · 「Official kickoff on November 19 with the CAPT Million Mega Satellite」 — 전건 일치. sourceUrl 도시 페이지로 승격.
+    //    🔴 「Starting in September 2026: Satellites and opening days throughout Austria」를 보고 시작일을 9월로 넓히지 마라 —
+    //    전국 새틀라이트·스타팅데이이지 바덴 본무대가 아니다(인스브루크 11/7~8 DAY 1A가 그 실물).
     note: "CAPT 시즌 피날레 · 메인 €500+50 / €1,000,000 GTD",
     highlight: true,
-    sourceUrl: "https://www.casinos.at/spiel/poker/capt",
+    sourceUrl: "https://www.casinos.at/en/casinos/baden/games/poker/capt-million",
     sourceTier: "A",
-    verifiedAt: "2026-08-10",
+    verifiedAt: "2026-09-04",
   },
 
   // ── 스위스 — Grand Casino Luzern (PCSM) ──
