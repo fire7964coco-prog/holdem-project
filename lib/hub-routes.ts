@@ -81,6 +81,10 @@ const LOCALE_HUB_ROUTES: Record<string, readonly string[]> = {
   //      ⚠ **fr은 pt보다도 가진 것이 적다** — `app/fr/`에 있는 것은 blog·solver·page.tsx뿐이라
   //      **`/fr/tournaments`도 없다.** 없는 라우트를 넣지 마라.
   fr: ["/fr/blog", "/fr/solver"],
+  // id — ★2026-09-05 `/id/solver` 신설과 함께 추가(10번째 솔버 랜딩).
+  //      ⚠ **fr과 같은 모양이다** — `app/id/`에 있는 것은 blog·solver·page.tsx뿐이라
+  //      **`/id/tournaments`도 없다.** 없는 라우트를 넣지 마라.
+  id: ["/id/blog", "/id/solver"],
 };
 
 /**

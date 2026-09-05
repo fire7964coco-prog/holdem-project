@@ -55,7 +55,7 @@ export const metadata: Metadata = {
   description: DESCRIPTION,
   alternates: {
     canonical: `${SITE}/fr/solver`,
-    // 🔴 **아홉 랜딩이 «같은 문자열 세트»를 선언해야** `check:hreflang`의 세트 일치를 통과한다.
+    // 🔴 **열 랜딩이 «같은 문자열 세트»를 선언해야**(2026-09-05 `/id/solver` 신설로 9→10) `check:hreflang`의 세트 일치를 통과한다.
     //    fr을 열면서 기존 여덟 파일에도 `fr-FR`을 같이 넣었다 — 한쪽만 고치면 구글은 세트
     //    전체를 무시하고 게이트는 빌드를 세운다.
     //    표기는 기존 세트의 «지역 포함» 형식(ko-KR·en-US·…)에 맞춰 fr-FR로 통일했다.
@@ -69,6 +69,8 @@ export const metadata: Metadata = {
       "zh-Hans": `${SITE}/zh/solver`,
       "zh-Hant": `${SITE}/zh-hant/solver`,
       "fr-FR": `${SITE}/fr/solver`,
+      // ★2026-09-05 — `/id/solver` 신설(10번째). 🔴 열 파일이 «같은 세트»를 선언해야 한다.
+      "id-ID": `${SITE}/id/solver`,
     },
   },
   // twitter:*를 안 주면 루트 레이아웃의 한국어가 그대로 나간다(check:meta-lang 게이트)

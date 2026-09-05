@@ -137,7 +137,8 @@ const SPEC: [string, string][] = [
   // ⚠ 이 열거는 앱 셀렉터(8개: ko,en,ja,es,pt,de,zh,zh-hant)와 1:1이 아니다 — 산문에서
   //    간체·번체를 「chino」 하나로 묶었다(숫자를 주장하지 않으므로 허용 · M-046 §3 판정).
   // ★2026-08-24 갱신 — 앱이 fr을 배포해 셀렉터가 9개가 됐다(francés 추가).
-  ["Idioma", "Español (también en coreano, inglés, japonés, portugués, alemán, francés y chino)"],
+  // ★2026-09-05 갱신 — 앱이 id·ms를 배포해 셀렉터가 11개가 됐다(라이브 실측 · ③ 마감 회차).
+  ["Idioma", "Español (también en coreano, inglés, japonés, portugués, alemán, francés, chino, indonesio y malayo)"],
   ["Motor", "WASM Postflop de código abierto (AGPL-3.0) · fuente modificada publicada"],
 ];
 

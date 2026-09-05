@@ -147,7 +147,8 @@ const SPEC: [string, string][] = [
   ["Onde o cálculo roda", "No seu aparelho, não em um servidor nosso"],
   ["Compatibilidade", "Navegadores modernos — Windows, macOS, Linux e celular"],
   // ★2026-08-24 갱신 — 앱이 fr을 배포해 셀렉터가 9개가 됐다(francês 추가).
-  ["Idioma", "Português (também em coreano, inglês, japonês, espanhol, alemão, francês e chinês)"],
+  // ★2026-09-05 갱신 — 앱이 id·ms를 배포해 셀렉터가 11개가 됐다(라이브 실측 · ③ 마감 회차).
+  ["Idioma", "Português (também em coreano, inglês, japonês, espanhol, alemão, francês, chinês, indonésio e malaio)"],
   ["Motor", "WASM Postflop de código aberto (AGPL-3.0) · fonte modificada publicada"],
 ];
 

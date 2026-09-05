@@ -144,6 +144,24 @@ const COPY = {
     desc: "Calcule tes ranges poker postflop avec un solver GTO dans ton navigateur — sans téléchargement, sans inscription, gratuit",
     cta: "Ouvrir le solver →",
   },
+  /**
+   * ★2026-09-05 — `/id/solver` 신설과 함께 추가(10번째). 표기는 앱 id 축어
+   *   («Strategi GTO, langsung di browser Anda.» · «Tidak ada — berjalan di browser Anda»)와
+   *   랜딩 훅(«gratis · tanpa instal · tanpa akun»)에서 왔다. title «Solver GTO» = 앱 title의
+   *   «Solver & Trainer GTO Gratis»에서 딴 라벨. cta는 랜딩 본문 CTA 축어(«Buka solver →»).
+   * 🔴 **`GTO`도 `solver`도 단독으로 두지 않는다** — 브리프 §2-1 실측에서 `gto solver`·
+   *   `solver poker`·`poker solver`가 전부 볼륨 10이라 **검색축이 아니라 «정체성 표기»**다.
+   *   조준축은 `gto poker` 50이고, 그것을 덮는 문자열이 «solver GTO poker»다.
+   * 🔴 무료어는 **gratis**(말레이어 `percuma` 금지) · 브라우저는 **browser**(`pelayar` 금지) ·
+   *   2인칭은 **Anda**(코퍼스 3,340:0 — 뱅크 `id-posting-reference.md` §5-A).
+   */
+  id: {
+    href: "/id/solver",
+    badge: "♠ Alat gratis",
+    title: "Solver GTO",
+    desc: "Hitung range poker postflop Anda dengan solver GTO di browser — tanpa instal, tanpa akun, gratis",
+    cta: "Buka solver →",
+  },
 } as const;
 
 export type SolverPromoLocale = keyof typeof COPY;

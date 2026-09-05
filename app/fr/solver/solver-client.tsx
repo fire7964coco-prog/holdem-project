@@ -100,7 +100,8 @@ const SPEC: [string, string][] = [
   ["Où se fait le calcul", "Sur ton propre appareil — tes calculs ne passent pas par nos serveurs"],
   ["Compatibilité", "Navigateurs modernes — Windows, macOS, Linux, mobile"],
   // 🟢 이 열거는 앱 셀렉터(9개)와 1:1이다 — fr 배포로 9언어가 됐다(2026-08-24 실측).
-  ["Langues", "Français (plus anglais, coréen, japonais, espagnol, portugais, allemand, chinois simplifié et traditionnel)"],
+  // ★2026-09-05 갱신 — 앱이 id·ms를 배포해 셀렉터가 11개가 됐다(라이브 실측 · ③ 마감 회차).
+  ["Langues", "Français (plus anglais, coréen, japonais, espagnol, portugais, allemand, chinois (simplifié et traditionnel), indonésien et malais)"],
   ["Moteur", "WASM Postflop open source (AGPL-3.0) · code modifié publié"],
 ];
 

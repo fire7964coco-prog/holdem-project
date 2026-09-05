@@ -1,3 +1,103 @@
+## 2026-09-05 (4) — **`/id/solver` ③ 마감 완료 · 10번째 다국어 솔버 랜딩 발행** (Opus)
+
+② 저작(Fable)이 남긴 «자료 없음» 4자리를 라이브 실측으로 닫고, 등록·hreflang·게이트·렌즈 4종·2차 교열·빌드까지.
+
+### 1. «자료 없음» 4자리 — 09-04 축어 문서가 «초기 화면»만 긁었던 것이 원인
+
+라이브 `?lang=id`를 Playwright로 열어 「Cara pakai」·「Spot belajar」 **패널을 클릭해** 안쪽을 긁었다.
+09-04 실측은 이 두 패널을 안 열어서 그 안의 라벨이 통째로 비어 있었다(그래서 저작 회차가 «작업 문안»으로 뒀다).
+
+- 결과화면 5구역 = `Bilah aksi di atas` · `Grid 13×13 (kiri)` · `Kotak ringkasan (kanan atas)` · `Kategori hand (kanan tengah)` · `Tabel (kanan bawah)`
+- 붙여넣기 자리 라벨 = `OOP (BB caller)` · `IP (BTN opener)` — 🔴 앱이 **opener를 영어로 둔다**
+- 그룹 라벨 3개 + 조건 문자열 3개 · 트레이너 복습 버튼 `Tinjau ulang`
+- 🆕 **덤이 지시보다 컸다** — 목록에 없던 **스팟 «이름» 7개도 앱과 갈려 있었다**
+  (`Board satu warna` ↔ 앱 `Board monotone (satu suit)` 등). fr 랜딩이 앱 fr 라벨을 축어로 쓰는 것을
+  확인하고 같은 규율로 맞췄다. 라벨 교체 **총 14자리**.
+- 원문 등재 = `docs/solver-app-verbatim-id-2026-09-04.md` **§2~§5 신설**(스팟 13 전수 + 폐기명제 판정 포함).
+
+### 2. 등록 5곳 + hreflang 10파일
+
+`hub-routes`(id = blog·solver 둘뿐 — `/id/tournaments`는 없다) · `hub-i18n` **ID 블록 신설**(`LABELS.id` 9키 축어 복사 —
+🟢 그 9키에는 2인칭이 하나도 없어 «id LABELS kamu체» 미결과 겹치지 않는다) · `side-rail`(+ `HUB_HEADING.id = "Panduan"` —
+BOARD_STRINGS에 id가 없어 en으로 떨어질 자리를 우리 id 코퍼스 42편의 표준어로 막았다) · `solver-promo` · `generate-sitemap`.
+hreflang은 기존 9파일에 `id-ID`를 **동시 추가** → 10파일 동일 세트 10키.
+
+### 3. 게이트 · 빌드
+
+빌드 **708쪽** · sitemap 70 blog + 525 intl + 69 static + 25 locale homes. 🔴 0건 —
+hreflang · canonical · intl-links · meta · cjk · seo-sync · directives · meta-lang · faq-schema 523/523 · `audit:hard --schema`.
+산출물 확인: `/id/solver` = **index, follow** · 자기 canonical · `lang="id"` · JSON-LD 3노드(WebApplication feat 10 · FAQPage Q23 · Breadcrumb) ·
+셸·사이드바 인니어 전건(영어 폴백 0 = **pt 함정 회피 실증**) · `/id` 홈 솔버 프로모 렌더 확인.
+
+### 4. 적대검수 4렌즈 → 정정 37 + 언어 소급 17 → 2차 교열 → 정정 18
+
+| 렌즈 | 성과 |
+|---|---|
+| 네이티브 인니어 A(의미·관용구) | 19지적 · 말레이어 오염 0 · `Anda` 90:0 커버리지 동봉 |
+| 네이티브 인니어 B(통일·누락) | 25지적 + 용어 **27축 전수 카운트** |
+| 딜러/§13 | **재계산 25건 중 23 일치** · 불일치 1 · 표시모순 1 |
+| 교열·구조 | fr↔id 구조 전건 1:1 · hreflang 10×10 · 링크 8/8 · **내가 놓친 소급 1건 적발** |
+| 2차 교열 | **정정이 만든 결함 5 + 놓친 잔존 2** |
+
+🔴 **세 렌즈가 독립적으로 같은 자리를 잡았다 — 내 편집이 만든 결함이다.** READ_SCREEN 표를 앱 축어로
+갈면서 **바로 위에서 그 다섯을 세는 산문 문단을 안 갈았다**(5개 중 3개가 표와 다른 이름). 그 문단의
+`ubin`은 앱에도 페이지에도 없는 고아 단어였고, **같은 파일 주석이 「«Ubin»·«Matriks»는 앱 id의 말이
+아니다」라고 자기가 못 박아 둔 자리**였다. → 교훈은 아래 §7.
+
+### 5. 🔴 딜러 렌즈가 본체 판정을 뒤집었다 — ⑨ «0,8% 체크»
+
+본체는 처음에 「형제 전수가 같은 문안이라 id 단독 수정 금지」로 닫았다. **틀렸다.**
+1차 출처로 다시 뜨니 **en·es·ja는 이미 그 절을 철회**했고 fr·de·zh·zh-hant·pt만 들고 있었다.
+근거는 `app/es/solver/solver-client.tsx:262` 주석에 남아 있던 §4-B 원값 —
+**벳 «합계» 99,1(큰 사이즈 98,4 + 작은 사이즈 0,7) · 체크 0,8.** 즉 98,4와 0,8은 짝이 아니라
+나란히 놓으면 독자가 뺄셈을 해 0,8%p가 사라진다. → id는 **EN 정본에 정렬**(절 삭제).
+🔴 **fr·de·zh·zh-hant·pt 5로케일 소급은 핸드오프 미결로 넘겼다.**
+
+### 6. 🆕 언어 열거 소급 — 교열 렌즈 발원 · 9 → 11
+
+id 랜딩은 「앱 셀렉터 11개」를 선언하는데 형제 7개 랜딩은 「9개」를 열거하고 Bahasa Indonesia가 없었다
+= 같은 사이트가 같은 앱을 두고 9와 11을 동시에 말하는 상태. **fr 회차(08-24)가 정확히 이 소급을 한
+선례가 파일에 박혀 있었고 ③이 그걸 안 밟았다.**
+→ 라이브로 확정: `?lang=id` → `<html lang="id">` · **`?lang=ms` → `<html lang="ms">`**
+(ms title 「…GTO **Percuma**…」 · UI `pelayar`·`Komuniti`·`Cara guna`). 브리프 §2의 `solver/src/i18n.ts:18` 실측과 일치.
+ja·es·pt·de·zh·zh-hant·fr 7파일에 각 언어로 인도네시아어·말레이어를 덧붙였다.
+
+### 7. 🚩 규율 후보 (정본 승격 대상)
+
+① 🔴 **«라벨을 축어로 가는» 편집은 그 라벨을 «인용하는 산문»을 같은 커밋에서 함께 grep하라.**
+   표만 갈면 표와 본문이 갈리고, 그 결함은 **자기 파일 주석이 이미 금지해 둔 단어**로 남는다(이번 실증).
+② 🔴 **«형제 전수가 같다»는 판정은 grep 한 줄로 닫지 마라.** 이번에 en의 한 줄만 보고 「전수 동일」이라
+   결론냈는데, 실제로는 en·es·ja가 철회한 뒤였고 **철회 근거는 es 파일의 «주석»에만 남아 있었다.**
+   → 형제 대조는 «본문 문자열»뿐 아니라 **그 자리의 주석까지** 떠라.
+③ 🪶 **1차 렌즈끼리 갈리면 «페이지 내부 일관성»이 «앱 축어»를 이긴다 — 단 그 자리가 «라벨»이 아닐 때만.**
+   READ_SCREEN 2열의 `mengenai`↔`terhubung`이 그 사례다(앱은 `terhubung dengan`을 쓰지만,
+   `terhubung`은 이 페이지에서 «보드 텍스처» 전용어라 충돌한다 → 원문 `mengenai` 유지).
+
+### 8. 산출
+
+- 신규 = `app/id/solver/{page.tsx,faq.ts,solver-client.tsx}`
+- 등록 = `lib/hub-routes.ts` · `lib/hub-i18n.ts` · `components/side-rail.tsx` · `components/solver-promo.tsx` · `scripts/generate-sitemap.mjs`
+- hreflang·언어열거·주석 = 형제 랜딩 9개
+- 문서 = 축어 §2~§5 · `docs/reply-to-solver-2026-09-05.md`(M-093)
+
+## 2026-09-05 (3) — **`/id/solver` ② 저작 완료** (Fable · 신규 3파일 · 미커밋 · 빌드·게이트 미실행)
+
+브리프(`docs/id-solver-landing-brief.md`) 하나 + 구조 정본 `app/fr/solver/` + EN 링크 구조만 읽고 썼다.
+플레이북·폐기명제목록·검수장 폴더는 열지 않았다(브리프 §9 지시). 실측·빌드·게이트·배포는 ③ 몫이라 안 돌렸다.
+
+- **산출**: `app/id/solver/page.tsx`(TITLE·DESC 브리프 §4 확정안 그대로 · `title.absolute` · hreflang 9+`id-ID` ·
+  `og:locale id_ID` · JSON-LD WebApplication featureList 10 + FAQPage + Breadcrumb) · `faq.ts`(**23문항** — EN 골격 +
+  관련검색 6개 흡수: free·calculator·app·chart·practice·정의 · `poker gratis` 방어 문항) · `solver-client.tsx`(fr 1:1 골격).
+- **경량판 준수**: B층(롱테일·FAQ 창작·키워드 뱅크) 0. A층만 — 조준축 `gto poker` · `solver`는 항상 GTO/poker와 결합 ·
+  Anda · gratis/browser · 영어 용어 유지 · 소수 쉼표. grep 자체 점검: kamu/percuma/pelayar 0 · 본문 소수점 «.» 0 · 본문 백틱 0.
+- **링크**: EN 구조를 id 블로그로 치환(hand-chart→starting-hands-chart · calculator→pot-odds · quiz→equity) —
+  8슬러그 전건 `lib/posts-id/` 실존 확인. `holdem-range-meaning` 미링크(id에 없음). 도구 라우트 0.
+- **폐기 명제 방어**(브리프 §7-10): 스팟 노트에서 특정 보드 «관찰 지시»를 전부 뺐다. 수치는 형제 랜딩 9종 공유 §4-B
+  정정본만. RP-06 예시 0,08bb · RP-03 «레인지 모양» · 트레이너 «relatif terhadap pot».
+- 🔴 **자료 없음 4자리**(앱 id 축어 문서가 골격만 긁어 비어 있었다) — 파일 주석에 표시, 핸드오프 ③ 절에 목록:
+  스팟 그룹 라벨·조건 / READ_SCREEN 구역 이름 / STARTER_RANGES 자리 라벨 / «Tinjau ulang» 버튼 라벨.
+- 핸드오프: 결재 표 ①행 ✅ · ②행 ▶ · id/solver 절 헤더·표·«③이 알아야 할 것» 갱신.
+
 ## 2026-09-05 (2) — **회차 배치 문답 → 브리프 방어 신설 + 핸드오프 결재 표 + §5-A-4 승격** (Opus · 소스 변경 0)
 
 사장님 질문 셋에서 나왔다: *「역이식 이거 한다고 했었나?」* · *「규칙 md를 안 읽으면 이상하게 쓰지 않나?」* ·

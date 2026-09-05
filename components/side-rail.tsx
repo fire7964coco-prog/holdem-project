@@ -211,6 +211,18 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
     { href: "/fr/blog",   icon: "📚", label: "Blog" },
     { href: "/fr/solver", icon: "🧠", label: "Solver GTO" },
   ],
+  /**
+   * ★2026-09-05 — `/id/solver` 신설과 함께 추가(10번째). 라벨은 검증된 값에서:
+   *   "Blog" = CHROME.id.blogLabel(lib/intl.ts) · "Solver GTO"는 솔버 본체를 `?lang=id`로
+   *   열어 읽은 title 축어(«HoldemMaster GTO Trainer — **Solver & Trainer GTO** Gratis…»)에서
+   *   딴 것이다. ⚠ **`/id/tournaments`는 없다** — 다른 로케일 항목을 복사하지 마라.
+   *   🔴 라벨은 «검색 축»이 아니라 «메뉴 이름»이다 — solver 계열이 검색축이 아니라는 판정
+   *   (브리프 §2-1)과 층이 다르다.
+   */
+  id: [
+    { href: "/id/blog",   icon: "📚", label: "Blog" },
+    { href: "/id/solver", icon: "🧠", label: "Solver GTO" },
+  ],
 };
 
 /**
@@ -223,7 +235,10 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
 // zh-hant도 동일: BOARD_STRINGS["zh-hant"] guideLink "詳細指南" → "指南"(2026-08-24).
 // fr — BOARD_STRINGS에 fr이 없다(fr에 tournaments 페이지 자체가 없음). "Guides"는 프랑스어에서도
 //      같은 철자·같은 뜻의 표준어라 en 값을 그대로 쓴다(2026-08-24).
-const HUB_HEADING: Record<string, string> = { en: "Guides", ja: "ガイド", es: "Guías", de: "Guides", zh: "指南", "zh-hant": "指南", fr: "Guides" };
+// id — BOARD_STRINGS에 id가 없다(id에 tournaments 페이지 자체가 없음). fr처럼 en으로 떨어뜨리면
+//      인도네시아어 화면에 영어가 섞인다 → 우리 id 코퍼스 42편이 쓰는 표준어 "Panduan"을 쓴다
+//      (title 2편 포함 다수 실측 · 2026-09-05). 새로 번역한 것이 아니라 코퍼스에서 딴 값이다.
+const HUB_HEADING: Record<string, string> = { en: "Guides", ja: "ガイド", es: "Guías", de: "Guides", zh: "指南", "zh-hant": "指南", fr: "Guides", id: "Panduan" };
 
 /**
  * 그 로케일의 허브 메뉴 — **좌측 레일과 모바일 상단 탭이 같은 목록을 쓴다.**
