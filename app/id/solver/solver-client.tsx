@@ -77,7 +77,8 @@ const SOLVER_URL = "https://solver.holdemmaster.com/?lang=id";
  *
  * 🔴 **「오프라인으로 GTO 계산 가능」이라고 쓰지 마라** — 오프라인은 스팟 열람·트레이너뿐이고,
  *   커스텀 계산은 엔진을 한 번 내려받은 뒤에만 돈다(아홉 랜딩 공통 경고).
- * 🔴 언어 열거는 앱 셀렉터 **11개**(`solver/src/i18n.ts:18`)와 1:1이다.
+ * 🔴 언어 열거는 앱 **12개 언어**(`solver/src/i18n.ts:18` `Locale` 축어)와 1:1이다 — 2026-09-06에 hi를 더했다(라이브 12/12 고유 문안 확인).
+ *   🪶 «셀렉터»라는 말은 이제 틀리다 — 2026-08-27에 제거됐고 앱은 본진 언어에 페깅된다(`?lang=`만 받는다).
  * 🪶 **학습 스팟에 블로그 링크가 하나도 없다 — 정상이다.** GTO 시리즈 13편은 ko·en·ja·es·zh·zh-hant뿐(id 0편).
  * ❌ RTA·봇 축 금지 · 합법성 축 금지 · 본문 백틱 금지.
  */
@@ -91,7 +92,7 @@ const SPEC: [string, string][] = [
   ["Tempat perhitungan", "Di perangkat Anda sendiri — perhitungan Anda tidak lewat server kami"],
   ["Kompatibilitas", "Browser modern — Windows, macOS, Linux, ponsel"],
   // 🟢 이 열거는 앱 셀렉터(11개)와 1:1이다 — 브리프 실측 `solver/src/i18n.ts:18`.
-  ["Bahasa", "Bahasa Indonesia (plus Inggris, Korea, Jepang, Spanyol, Portugis, Jerman, Mandarin aksara sederhana dan tradisional, Prancis, dan Melayu)"],
+  ["Bahasa", "Bahasa Indonesia (plus Inggris, Korea, Jepang, Spanyol, Portugis, Jerman, Mandarin aksara sederhana dan tradisional, Prancis, Melayu, dan Hindi)"],
   ["Mesin", "WASM Postflop open source (AGPL-3.0) · kode hasil modifikasi dipublikasikan"],
 ];
 

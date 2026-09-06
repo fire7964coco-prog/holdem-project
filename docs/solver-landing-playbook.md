@@ -4,8 +4,17 @@
 > 여기로 옮겼다(원문 = `docs/handoff-archive/2026-08-24-session-handoff.md`).
 > **새 랜딩을 열거나 기존 랜딩을 손댈 때 이 파일을 먼저 통독한다.**
 >
-> 상태(2026-08-24): 랜딩 **ko en ja es pt de zh 7개** · 앱은 8개 언어(`ko en ja es pt de zh zh-hant`).
-> 남은 것 = **zh-hant 하나** — 그 착수 인계분은 `session-handoff.md` START HERE에 있다.
+> ~~상태(2026-08-24): 랜딩 **ko en ja es pt de zh 7개** · 앱은 8개 언어.~~
+>
+> 🔴 **상태(2026-09-06 갱신 · 라이브 실측)**: 랜딩 **10개**(`ko en ja es pt de zh zh-hant fr id`) ·
+> 앱은 **12개 언어**(`ko en ja es pt de zh zh-hant fr id ms hi`).
+> **정본은 `solver/src/i18n.ts:18`의 `Locale` 타입 축어**이고, 라이브 `?lang=` 12/12가 고유 문안임을 확인했다(2026-09-06).
+> 랜딩이 없는 언어 = **ms · hi** — 앱만 있고 랜딩은 아직 없다(M-100은 «새 hi 랜딩 신설은 이번 요청에 포함하지 않는다»고 명시했다).
+>
+> 🔴 **«언어 셀렉터»라는 말을 쓰지 마라 — 2026-08-27에 제거됐다.** 앱은 본진(holdemmaster.com) 언어에
+> **페깅**되고 `?lang=`만 받는다(`solver/src/i18n.ts` KEY 주석 · 라이브 `select` 0개·언어 버튼 0개 실측).
+> 그래서 랜딩 SPEC의 언어 행은 «전환 가능»이 아니라 **«다른 언어판이 있다»**로만 쓴다
+> (ja 랜딩의 「…に切替可」를 2026-09-06에 이 형태로 정렬했다).
 
 ---
 

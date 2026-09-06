@@ -82,6 +82,9 @@ const SOLVER_URL = "https://solver.holdemmaster.com/?lang=es";
  *
  * 🔴 사실 출처 — 전부 2026-08-22에 `?lang=es`로 열어 DOM에서 직접 읽었다(축어):
  *   · 언어 셀렉터 **8개** `ko,en,ja,es,pt,de,zh,zh-hant`
+ *   🔴 2026-09-06 갱신 — 앱은 **12개 언어**다(`solver/src/i18n.ts:18` `Locale` 축어 = ko en ja es pt de zh zh-hant fr id ms hi ·
+ *     라이브 12/12 고유 문안 확인). **«언어 셀렉터»는 2026-08-27에 제거됐다** — 앱은 본진 언어에 페깅되고 `?lang=`만 받는다
+ *     (`i18n.ts` KEY 주석). 그러니 랜딩 SPEC은 «전환 가능»이 아니라 «다른 언어판이 있다»로만 쓴다.
  *   · 사이드바 «① Rango OOP ② Rango IP ③ Board ④ Bet sizes ⑤ Calcular»
  *   · 네비 «Spots de estudio ⚡ Al instante» «Entrenador GTO EV» «Tablas preflop Rangos» «Equity % victoria»
  *   · 히어로 «Estrategia GTO, directo en tu navegador.» / «Nada que instalar, nada que pagar.»
@@ -138,7 +141,7 @@ const SPEC: [string, string][] = [
   //    간체·번체를 「chino」 하나로 묶었다(숫자를 주장하지 않으므로 허용 · M-046 §3 판정).
   // ★2026-08-24 갱신 — 앱이 fr을 배포해 셀렉터가 9개가 됐다(francés 추가).
   // ★2026-09-05 갱신 — 앱이 id·ms를 배포해 셀렉터가 11개가 됐다(라이브 실측 · ③ 마감 회차).
-  ["Idioma", "Español (también en coreano, inglés, japonés, portugués, alemán, francés, chino, indonesio y malayo)"],
+  ["Idioma", "Español (también en coreano, inglés, japonés, portugués, alemán, francés, chino, indonesio, malayo e hindi)"],
   ["Motor", "WASM Postflop de código abierto (AGPL-3.0) · fuente modificada publicada"],
 ];
 

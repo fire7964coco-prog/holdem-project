@@ -50,6 +50,9 @@ const SOLVER_URL = "https://solver.holdemmaster.com/?lang=fr";
  * 🔴 사실 출처 — 전부 2026-08-24에 `?lang=fr`로 열어 DOM에서 직접 읽었다
  *   (골격·13스팟 축어 = `docs/solver-app-verbatim-fr-2026-08-24.md`):
  *   · 언어 셀렉터 **9개**(fr 배포로 8→9 — 기존 8개 랜딩의 언어 열거 소급 사유) ·
+ *   🔴 2026-09-06 갱신 — 앱은 **12개 언어**다(`solver/src/i18n.ts:18` `Locale` 축어 = ko en ja es pt de zh zh-hant fr id ms hi ·
+ *     라이브 12/12 고유 문안 확인). **«언어 셀렉터»는 2026-08-27에 제거됐다** — 앱은 본진 언어에 페깅되고 `?lang=`만 받는다
+ *     (`i18n.ts` KEY 주석). 그러니 랜딩 SPEC은 «전환 가능»이 아니라 «다른 언어판이 있다»로만 쓴다.
  *     히어로 «La stratégie GTO, directement dans ton navigateur.» / «Rien à installer, rien à payer.»
  *   · 특징 4칸 «Gratuit / Toutes les fonctions, sans limite d'usage» · «Étude hors ligne» ·
  *     «Calcul rapide / Multithread» · **«Trainer GTO / notés sur la perte d'EV par rapport au
@@ -101,7 +104,7 @@ const SPEC: [string, string][] = [
   ["Compatibilité", "Navigateurs modernes — Windows, macOS, Linux, mobile"],
   // 🟢 이 열거는 앱 셀렉터(9개)와 1:1이다 — fr 배포로 9언어가 됐다(2026-08-24 실측).
   // ★2026-09-05 갱신 — 앱이 id·ms를 배포해 셀렉터가 11개가 됐다(라이브 실측 · ③ 마감 회차).
-  ["Langues", "Français (plus anglais, coréen, japonais, espagnol, portugais, allemand, chinois (simplifié et traditionnel), indonésien et malais)"],
+  ["Langues", "Français (plus anglais, coréen, japonais, espagnol, portugais, allemand, chinois (simplifié et traditionnel), indonésien, malais et hindi)"],
   ["Moteur", "WASM Postflop open source (AGPL-3.0) · code modifié publié"],
 ];
 

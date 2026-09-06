@@ -93,6 +93,9 @@ const SOLVER_URL = "https://solver.holdemmaster.com/?lang=pt";
  *
  * 🔴 사실 출처 — 전부 2026-08-23에 `?lang=pt`로 열어 DOM에서 직접 읽었다(축어):
  *   · 언어 셀렉터 **8개** `ko,en,ja,es,pt,de,zh,zh-hant`
+ *   🔴 2026-09-06 갱신 — 앱은 **12개 언어**다(`solver/src/i18n.ts:18` `Locale` 축어 = ko en ja es pt de zh zh-hant fr id ms hi ·
+ *     라이브 12/12 고유 문안 확인). **«언어 셀렉터»는 2026-08-27에 제거됐다** — 앱은 본진 언어에 페깅되고 `?lang=`만 받는다
+ *     (`i18n.ts` KEY 주석). 그러니 랜딩 SPEC은 «전환 가능»이 아니라 «다른 언어판이 있다»로만 쓴다.
  *   · 히어로 «Estratégia GTO, direto no seu navegador.» / «Nada para instalar, nada para pagar.»
  *   · 특징 4블록 «Grátis / Todos os recursos, sem limite de uso» · «Estudo offline» ·
  *     «Cálculo rápido / Multithread — velocidade de solver de desktop» ·
@@ -148,7 +151,7 @@ const SPEC: [string, string][] = [
   ["Compatibilidade", "Navegadores modernos — Windows, macOS, Linux e celular"],
   // ★2026-08-24 갱신 — 앱이 fr을 배포해 셀렉터가 9개가 됐다(francês 추가).
   // ★2026-09-05 갱신 — 앱이 id·ms를 배포해 셀렉터가 11개가 됐다(라이브 실측 · ③ 마감 회차).
-  ["Idioma", "Português (também em coreano, inglês, japonês, espanhol, alemão, francês, chinês, indonésio e malaio)"],
+  ["Idioma", "Português (também em coreano, inglês, japonês, espanhol, alemão, francês, chinês, indonésio, malaio e hindi)"],
   ["Motor", "WASM Postflop de código aberto (AGPL-3.0) · fonte modificada publicada"],
 ];
 
