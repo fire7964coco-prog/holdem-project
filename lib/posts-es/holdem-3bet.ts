@@ -244,7 +244,7 @@ A. Un 3-bet es la primera resubida (sobre una subida de apertura); un 4-bet es l
 
 **Q. ¿Con qué manos deberías hacer un 4-bet y cuánto?**
 
-A. Haz un 4-bet con un rango polarizado: premium por valor (normalmente AA–KK, más AK) y unos pocos faroles con bloqueadores como A5s, que bloquean los ases y reyes de tu rival. Dale al 4-bet un tamaño de unas 2.2–2.5x el 3-bet en posición y un poco mayor fuera de posición — más pequeño de lo que espera la mayoría de los principiantes, porque el bote ya es grande. Como frecuencia, los jugadores sólidos solo meten 4-bet un pequeño porcentaje de manos; amplía tus 4-bets de valor contra rivales que 3-betean demasiado a menudo.
+A. Haz un 4-bet con un rango polarizado: premium por valor (normalmente AA–KK, más AK) y unos pocos faroles con bloqueadores como A5s, que bloquean los ases y el as-rey de tu rival. Dale al 4-bet un tamaño de unas 2.2–2.5x el 3-bet en posición y un poco mayor fuera de posición — más pequeño de lo que espera la mayoría de los principiantes, porque el bote ya es grande. Como frecuencia, los jugadores sólidos solo meten 4-bet un pequeño porcentaje de manos; amplía tus 4-bets de valor contra rivales que 3-betean demasiado a menudo.
 
 **Q. ¿Cuándo deberías hacer un 5-bet en el póker?**
 
