@@ -64,7 +64,9 @@
     "check:images:selftest": "node scripts/check-images.mjs --selftest",
     "check:image-reuse": "node scripts/check-image-reuse.mjs",
     "check:image-reuse:all": "node scripts/check-image-reuse.mjs --all",
-    "check:image-reuse:selftest": "node scripts/check-image-reuse.mjs --selftest"
+    "check:image-reuse:selftest": "node scripts/check-image-reuse.mjs --selftest",
+    "check:mirror-pair": "node scripts/check-mirror-pair.mjs",
+    "check:mirror-pair:selftest": "node scripts/check-mirror-pair.mjs --selftest"
   },
   "dependencies": {
     "@radix-ui/react-tabs": "^1.1.4",
