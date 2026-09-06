@@ -1517,7 +1517,7 @@ const NOTE_EN: Record<string, string> = {
   // 2026-09-03 M-082 ② 추가 13건
   "hpt-5": "₩1.6B total prize · online satellites on Hangame Royal Hold'em → live Main Event (Day 1 Sep 11–12 · Day 2 Sep 13) · open to Korean nationals",
   // 2026-09-04 M-086 ⑤: ko note가 「2년 만의 서울 복귀」를 되찾고 SEAT·주최를 얻었다 → EN도 같은 내용으로 맞춘다.
-  "apl-seoul-winter-circuit-1": "Circuit I ₩400,000,000 GTD · APL Winter Series ₩2,300,000,000 GTD total · Seoul returns after two years · seat (ticket) entry only — qualifying routes TBA · organised by the Korea Holdem Sports Association",
+  "apl-seoul-winter-circuit-1": "Circuit I ₩400,000,000 GTD · APL Winter Series ₩2,300,000,000 GTD total · Seoul returns after two years · every event is seat (ticket) entry, no cash buy-in — where to get them TBA · organised by the Korea Holdem Sports Association",
   "wpt-bestbet-scramble": "Main Event $5,000 / $1,000,000 GTD",
   "wpt-prime-lodge": "Main Event $1,100 / $1,000,000 GTD",
   "wpt-prime-cyprus": "Main Event $1,100 / $1,000,000 GTD",
@@ -1658,7 +1658,7 @@ const NOTE_JA: Record<string, string> = {
   "wpt-world-championship": "2026年の日程は未発表 — 会場（Wynn）の公式ポーカーページにもWPTの記載がない",
   // ── 2026-09-06 M-091 ⑤: 4로케일 공통 미등재 14건(EN 축어 기준 · 수치 불변) ──
   "hpt-5": "賞金総額16億ウォン · Hangame Royal Hold'emのオンラインサテライト → ライブのメインイベント（Day 1: 9/11〜12、Day 2: 9/13）· 韓国籍のプレイヤーも参加可能",
-  "apl-seoul-winter-circuit-1": "Circuit I 4億ウォンGTD · APL Winter Series総額23億ウォンGTD · 2年ぶりのソウル開催 · 現金バイインなし — 参加権（シート）のみでエントリー · 入手方法は後日発表 · Korea Holdem Sports Association主催",
+  "apl-seoul-winter-circuit-1": "Circuit I 4億ウォンGTD · APL Winter Series総額23億ウォンGTD · 2年ぶりのソウル開催 · 全イベントが参加権（シート）制で現金バイインなし — 入手先は後日発表 · Korea Holdem Sports Association主催",
   "wpt-bestbet-scramble": "メインイベント$5,000／$1,000,000 GTD",
   "wpt-prime-lodge": "メインイベント$1,100／$1,000,000 GTD",
   "wpt-prime-cyprus": "メインイベント$1,100／$1,000,000 GTD",
@@ -1732,7 +1732,7 @@ const NOTE_ZH: Record<string, string> = {
   "wpt-world-championship": "2026年日程未公布——场馆（Wynn）官方扑克页面也没有提到WPT",
   // ── 2026-09-06 M-091 ⑤: 4로케일 공통 미등재 14건(EN 축어 기준 · 수치 불변) ──
   "hpt-5": "总奖金16亿韩元 · Hangame Royal Hold'em线上卫星赛 → 线下主赛事（Day 1 9月11〜12日 · Day 2 9月13日）· 韩国籍玩家亦可参加",
-  "apl-seoul-winter-circuit-1": "Circuit I 4亿韩元GTD · APL Winter Series总额23亿韩元GTD · 时隔两年重返首尔 · 不设现金买入，仅凭席位（参赛券）入场——获取途径待公布 · 由Korea Holdem Sports Association主办",
+  "apl-seoul-winter-circuit-1": "Circuit I 4亿韩元GTD · APL Winter Series总额23亿韩元GTD · 时隔两年重返首尔 · 所有赛事均不设现金买入，仅凭席位（参赛券）入场——获取途径待公布 · 由Korea Holdem Sports Association主办",
   "wpt-bestbet-scramble": "主赛事$5,000／$1,000,000 GTD",
   "wpt-prime-lodge": "主赛事$1,100／$1,000,000 GTD",
   "wpt-prime-cyprus": "主赛事$1,100／$1,000,000 GTD",
@@ -1814,7 +1814,7 @@ const NOTE_HANT: Record<string, string> = {
   "wpt-world-championship": "2026年賽程未公布——場館（Wynn）官方撲克頁面也沒有提到WPT",
   // ── 2026-09-06 M-091 ⑤: 4로케일 공통 미등재 14건(EN 축어 기준 · 수치 불변) ──
   "hpt-5": "總獎金16億韓元 · Hangame Royal Hold'em線上衛星賽 → 實體主賽事（Day 1 9月11〜12日 · Day 2 9月13日）· 韓國籍玩家亦可參加",
-  "apl-seoul-winter-circuit-1": "Circuit I 4億韓元GTD · APL Winter Series總額23億韓元GTD · 時隔兩年重返首爾 · 不設現金買入，僅憑席位（參賽券）入場——取得途徑待公布 · 由Korea Holdem Sports Association主辦",
+  "apl-seoul-winter-circuit-1": "Circuit I 4億韓元GTD · APL Winter Series總額23億韓元GTD · 時隔兩年重返首爾 · 所有賽事均不設現金買入，僅憑席位（參賽券）入場——取得途徑待公布 · 由Korea Holdem Sports Association主辦",
   "wpt-bestbet-scramble": "主賽事$5,000／$1,000,000 GTD",
   "wpt-prime-lodge": "主賽事$1,100／$1,000,000 GTD",
   "wpt-prime-cyprus": "主賽事$1,100／$1,000,000 GTD",
@@ -1890,7 +1890,7 @@ const NOTE_ES: Record<string, string> = {
   "wpt-world-championship": "Fechas de 2026 sin anunciar: la propia página de poker del Wynn tampoco menciona el WPT",
   // ── 2026-09-06 M-091 ⑤: 4로케일 공통 미등재 14건(EN 축어 기준 · 수치 불변) ──
   "hpt-5": "1.600 millones de KRW en premios · satélites online en Hangame Royal Hold'em → Main Event en vivo (Día 1: 11–12 sep · Día 2: 13 sep) · abierto también a ciudadanos coreanos",
-  "apl-seoul-winter-circuit-1": "Circuit I 400 millones de KRW GTD · APL Winter Series 2.300 millones GTD en total · Seúl vuelve después de dos años · solo con ticket de asiento (sin buy-in en efectivo): vías de clasificación por anunciar · organiza la Korea Holdem Sports Association",
+  "apl-seoul-winter-circuit-1": "Circuit I 400 millones de KRW GTD · APL Winter Series 2.300 millones GTD en total · Seúl vuelve después de dos años · en todos los eventos se entra solo con ticket de asiento (sin buy-in en efectivo): dónde conseguirlos, por anunciar · organiza la Korea Holdem Sports Association",
   "wpt-bestbet-scramble": "Main Event US$5.000 / US$1.000.000 GTD",
   "wpt-prime-lodge": "Main Event US$1.100 / US$1.000.000 GTD",
   "wpt-prime-cyprus": "Main Event US$1.100 / US$1.000.000 GTD",

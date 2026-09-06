@@ -135,7 +135,7 @@ const SPEC: [string, string][] = [
   //    «Chinesisch» 하나로 묶었다(숫자를 주장하지 않으므로 허용 · M-046 §3 판정).
   // ★2026-08-24 갱신 — 앱이 fr을 배포해 셀렉터가 9개가 됐다(Französisch 추가).
   // ★2026-09-05 갱신 — 앱이 id·ms를 배포해 셀렉터가 11개가 됐다(라이브 실측 · ③ 마감 회차).
-  ["Sprache", "Deutsch (auch Koreanisch, Englisch, Japanisch, Spanisch, Portugiesisch, Französisch, Chinesisch, Indonesisch, Malaiisch und Hindi)"],
+  ["Sprache", "Deutsch (auch Koreanisch, Englisch, Japanisch, Spanisch, Portugiesisch, Französisch, Chinesisch (Kurz- und Langzeichen), Indonesisch, Malaiisch und Hindi)"],
   ["Engine", "Open-Source WASM Postflop (AGPL-3.0) · geänderter Quellcode veröffentlicht"],
 ];
 
