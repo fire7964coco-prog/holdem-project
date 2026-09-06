@@ -320,7 +320,8 @@ D유형(전략적 유해 조언)·F유형(사실 오류)에 시간을 쓴다) **
 | **키워드를 조사한다 (전 언어)** | `docs/rakko-playbook.md` ← **본체.** 도구 3종 분업(**발굴·SD=DataForSEO / 볼륨·시계열=라쿠 / lowfruits=SERP 약점**) · 🔴 **`language`는 볼륨을 안 나눈다** · 🔴 **CPC는 벤더 간 30배라 근거 금지** |
 | 키워드·발행 우선순위 | `docs/keyword-bank/00-SYNTHESIS-roadmap.md` · `docs/en-blog-pillar-cluster-map.md` |
 | **«이거 해도 되나?» — 확정 결정·상시 규율 확인** | `docs/settled-decisions.md` ← **재론 금지 목록.** 되살리기 전 필독 |
-| **검수장·솔버 세션과 주고받기(우편함·라이브 확인)** | `docs/mailbox-protocol.md` |
+| **검수장·솔버 세션과 주고받기(우편함·라이브 확인)** | `docs/mailbox-protocol.md` ← 🔴 **발신함이 갈리는 중**(§2-A·§2-C · 전환 신호 전까지는 `MAILBOX.md` 하나) |
+| **검수 창을 여러 개 띄운다 (로케일 전담 병렬)** | `docs/audit-lanes.md` ← **본체.** 레인 배정·겹침 금지·머지 절차·창 띄우는 법 |
 | **다국어 솔버 랜딩(`/{locale}/solver`) 신설·유지보수** | `docs/solver-landing-playbook.md` |
 | **나라별 홀덤대회 트랙 (별도 관리 · 짬날 때 집중)** | `docs/country-tournament-playbook.md` ← **본체.** 전략·실측·규율·자산지도. 🔴 데이터 공급 미확정이면 착수 금지 |
 | **시한이 박힌 갱신 항목** | `docs/update-calendar.md` ← 시한은 핸드오프가 아니라 여기 |
