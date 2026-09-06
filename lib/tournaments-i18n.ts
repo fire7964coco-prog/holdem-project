@@ -1656,6 +1656,21 @@ const NOTE_JA: Record<string, string> = {
   "bpc-megastack": "メインイベント€400／€300,000 GTD · Mini ME €200 · High Roller €1,100",
   "ps-open-aix": "メインイベント€1,100／€1,000,000 GTD",
   "wpt-world-championship": "2026年の日程は未発表 — 会場（Wynn）の公式ポーカーページにもWPTの記載がない",
+  // ── 2026-09-06 M-091 ⑤: 4로케일 공통 미등재 14건(EN 축어 기준 · 수치 불변) ──
+  "hpt-5": "賞金総額16億ウォン · Hangame Royal Hold'emのオンラインサテライト → ライブのメインイベント（Day 1: 9/11〜12、Day 2: 9/13）· 韓国籍のプレイヤーも参加可能",
+  "apl-seoul-winter-circuit-1": "Circuit I 4億ウォンGTD · APL Winter Series総額23億ウォンGTD · 2年ぶりのソウル開催 · 現金バイインなし — 参加権（シート）のみでエントリー · 入手方法は後日発表 · Korea Holdem Sports Association主催",
+  "wpt-bestbet-scramble": "メインイベント$5,000／$1,000,000 GTD",
+  "wpt-prime-lodge": "メインイベント$1,100／$1,000,000 GTD",
+  "wpt-prime-cyprus": "メインイベント$1,100／$1,000,000 GTD",
+  "wpt-bay-101": "メインイベント$5,300 · Shooting Star（バウンティ）形式",
+  "wpt-venetian-fall": "メインイベント$5,000／$2,000,000 GTD",
+  "wpt-prime-cambodia-2027": "メインイベント$1,100／$500,000 GTD · WPTシーズン25の開幕戦",
+  "wpt-cambodia-2027": "メインイベント$3,500／$1,000,000 GTD",
+  "manila-megastack-warmup": "Megastack直接予選 ₱5,300（11/26）· ₱450K GTD（10席）",
+  "manila-december-special": "開催は当局の認可次第 · 詳細は未発表",
+  "manila-super-series-25": "メインイベント₱18,500／₱10M GTD · シリーズ保証₱22M以上",
+  "manila-megastack-26": "メインイベント₱45,000／₱20M GTD · シリーズ保証₱52M以上",
+  "manila-megastack-25": "メインイベント₱45,000／₱20M GTD · シリーズ保証₱37.6M以上",
 };
 
 const NOTE_ZH: Record<string, string> = {
@@ -1715,6 +1730,21 @@ const NOTE_ZH: Record<string, string> = {
   "bpc-megastack": "主赛事€400／€300,000 GTD · Mini ME €200 · High Roller €1,100",
   "ps-open-aix": "主赛事€1,100／€1,000,000 GTD",
   "wpt-world-championship": "2026年日程未公布——场馆（Wynn）官方扑克页面也没有提到WPT",
+  // ── 2026-09-06 M-091 ⑤: 4로케일 공통 미등재 14건(EN 축어 기준 · 수치 불변) ──
+  "hpt-5": "总奖金16亿韩元 · Hangame Royal Hold'em线上卫星赛 → 线下主赛事（Day 1 9月11〜12日 · Day 2 9月13日）· 韩国籍玩家亦可参加",
+  "apl-seoul-winter-circuit-1": "Circuit I 4亿韩元GTD · APL Winter Series总额23亿韩元GTD · 时隔两年重返首尔 · 不设现金买入，仅凭席位（参赛券）入场——获取途径待公布 · 由Korea Holdem Sports Association主办",
+  "wpt-bestbet-scramble": "主赛事$5,000／$1,000,000 GTD",
+  "wpt-prime-lodge": "主赛事$1,100／$1,000,000 GTD",
+  "wpt-prime-cyprus": "主赛事$1,100／$1,000,000 GTD",
+  "wpt-bay-101": "主赛事$5,300 · Shooting Star赏金赛制",
+  "wpt-venetian-fall": "主赛事$5,000／$2,000,000 GTD",
+  "wpt-prime-cambodia-2027": "主赛事$1,100／$500,000 GTD · WPT第25赛季揭幕战",
+  "wpt-cambodia-2027": "主赛事$3,500／$1,000,000 GTD",
+  "manila-megastack-warmup": "11月26日举行₱5,300 Megastack直通赛 · ₱450K GTD（10个席位）",
+  "manila-december-special": "有待监管部门批准 · 详情待定",
+  "manila-super-series-25": "主赛事₱18,500／₱10M GTD · 系列赛保底超₱22M",
+  "manila-megastack-26": "主赛事₱45,000／₱20M GTD · 系列赛保底超₱52M",
+  "manila-megastack-25": "主赛事₱45,000／₱20M GTD · 系列赛保底超₱37.6M",
 };
 
 const NOTE_HANT: Record<string, string> = {
@@ -1782,6 +1812,21 @@ const NOTE_HANT: Record<string, string> = {
   "bpc-megastack": "主賽事€400／€300,000 GTD · Mini ME €200 · High Roller €1,100",
   "ps-open-aix": "主賽事€1,100／€1,000,000 GTD",
   "wpt-world-championship": "2026年賽程未公布——場館（Wynn）官方撲克頁面也沒有提到WPT",
+  // ── 2026-09-06 M-091 ⑤: 4로케일 공통 미등재 14건(EN 축어 기준 · 수치 불변) ──
+  "hpt-5": "總獎金16億韓元 · Hangame Royal Hold'em線上衛星賽 → 實體主賽事（Day 1 9月11〜12日 · Day 2 9月13日）· 韓國籍玩家亦可參加",
+  "apl-seoul-winter-circuit-1": "Circuit I 4億韓元GTD · APL Winter Series總額23億韓元GTD · 時隔兩年重返首爾 · 不設現金買入，僅憑席位（參賽券）入場——取得途徑待公布 · 由Korea Holdem Sports Association主辦",
+  "wpt-bestbet-scramble": "主賽事$5,000／$1,000,000 GTD",
+  "wpt-prime-lodge": "主賽事$1,100／$1,000,000 GTD",
+  "wpt-prime-cyprus": "主賽事$1,100／$1,000,000 GTD",
+  "wpt-bay-101": "主賽事$5,300 · Shooting Star賞金賽制",
+  "wpt-venetian-fall": "主賽事$5,000／$2,000,000 GTD",
+  "wpt-prime-cambodia-2027": "主賽事$1,100／$500,000 GTD · WPT第25賽季揭幕戰",
+  "wpt-cambodia-2027": "主賽事$3,500／$1,000,000 GTD",
+  "manila-megastack-warmup": "11月26日舉行₱5,300 Megastack直通賽 · ₱450K GTD（10個席位）",
+  "manila-december-special": "有待主管機關核准 · 詳情待定",
+  "manila-super-series-25": "主賽事₱18,500／₱10M GTD · 系列賽保底超過₱22M",
+  "manila-megastack-26": "主賽事₱45,000／₱20M GTD · 系列賽保底超過₱52M",
+  "manila-megastack-25": "主賽事₱45,000／₱20M GTD · 系列賽保底超過₱37.6M",
 };
 
 /* ★ es는 숫자 표기가 영어와 정반대이고(천 단위 마침표), 멕시코에서 `$`는 페소다.
@@ -1843,6 +1888,21 @@ const NOTE_ES: Record<string, string> = {
   "bpc-megastack": "Main Event €400 / €300.000 GTD · Mini ME €200 · High Roller €1.100",
   "ps-open-aix": "Main Event €1.100 / €1.000.000 GTD",
   "wpt-world-championship": "Fechas de 2026 sin anunciar: la propia página de poker del Wynn tampoco menciona el WPT",
+  // ── 2026-09-06 M-091 ⑤: 4로케일 공통 미등재 14건(EN 축어 기준 · 수치 불변) ──
+  "hpt-5": "1.600 millones de KRW en premios · satélites online en Hangame Royal Hold'em → Main Event en vivo (Día 1: 11–12 sep · Día 2: 13 sep) · abierto también a ciudadanos coreanos",
+  "apl-seoul-winter-circuit-1": "Circuit I 400 millones de KRW GTD · APL Winter Series 2.300 millones GTD en total · Seúl vuelve después de dos años · solo con ticket de asiento (sin buy-in en efectivo): vías de clasificación por anunciar · organiza la Korea Holdem Sports Association",
+  "wpt-bestbet-scramble": "Main Event US$5.000 / US$1.000.000 GTD",
+  "wpt-prime-lodge": "Main Event US$1.100 / US$1.000.000 GTD",
+  "wpt-prime-cyprus": "Main Event US$1.100 / US$1.000.000 GTD",
+  "wpt-bay-101": "Main Event US$5.300 · formato bounty Shooting Star",
+  "wpt-venetian-fall": "Main Event US$5.000 / US$2.000.000 GTD",
+  "wpt-prime-cambodia-2027": "Main Event US$1.100 / US$500.000 GTD · primera parada de la temporada 25 del WPT",
+  "wpt-cambodia-2027": "Main Event US$3.500 / US$1.000.000 GTD",
+  "manila-megastack-warmup": "Megastack Direct Qualifier de ₱5.300 el 26 de nov · ₱450.000 GTD (10 asientos)",
+  "manila-december-special": "Pendiente de la aprobación de las autoridades · detalles por anunciar",
+  "manila-super-series-25": "Main Event ₱18.500 / ₱10 millones GTD · serie: más de ₱22 millones garantizados",
+  "manila-megastack-26": "Main Event ₱45.000 / ₱20 millones GTD · serie: más de ₱52 millones garantizados",
+  "manila-megastack-25": "Main Event ₱45.000 / ₱20 millones GTD · serie: más de ₱37,6 millones garantizados",
 };
 
 /**

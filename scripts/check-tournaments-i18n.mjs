@@ -48,6 +48,24 @@ export function findLeaks(rows, localize, locales = BOARD_LOCALES, fields = REND
   return { leaks, scanned };
 }
 
+/**
+ * 🟠 note 사전 «공통 공백» — 데이터 행에 note가 있고 EN 사전엔 등재됐는데, 번역 사전 «전부»에 없는 행.
+ *   왜 🟠인가(2026-09-06 · M-091 ⑥): 로케일 «일부»만 없는 건 의도된 지역 큐레이션이다(대만 클러스터는 zh-hant만 ·
+ *   일본은 ja만). 🔴로 하면 그 큐레이션까지 걸린다. «전부» 없는 것만 사고다 — 09-04에 14건이 그렇게 새고 있었고
+ *   (`hpt-5` 「내국인 참가 가능」 · `apl-seoul-winter-circuit-1` 「참가권 전용」 = 자격·방식이라 독자 피해형) 사람이 찾았다.
+ *   note(t, loc) 는 undefined = 미등재. exit 코드엔 안 걸린다(경보만).
+ */
+export const NOTE_LOCALES = ["ja", "zh", "zh-hant", "es"];
+export function findNoteGaps(rows, note, locales = NOTE_LOCALES) {
+  const gaps = [];
+  for (const t of rows) {
+    if (typeof t.note !== "string" || !t.note) continue;
+    if (note(t, "en") === undefined) continue;
+    if (locales.every((loc) => note(t, loc) === undefined)) gaps.push(t.id);
+  }
+  return gaps;
+}
+
 function selftest() {
   const cases = [];
   const t = (name, ok) => cases.push({ name, ok: !!ok });
@@ -71,6 +89,23 @@ function selftest() {
 
   const f = findLeaks([{ id: "x", buyin: "메인 ₩250만" }], (v) => v, ["en"]);
   t("사전이 통째로 비면 전건 잡는다", f.leaks.length === 1);
+
+  // ── findNoteGaps ──
+  const notes = {
+    all: { en: "e", ja: "j", zh: "z", "zh-hant": "h", es: "s" },
+    none: { en: "e" },
+    partial: { en: "e", "zh-hant": "h" },
+    noEn: { ja: "j" },
+  };
+  const noteFn = (t, loc) => notes[t.id]?.[loc];
+  const rows = [
+    { id: "all", note: "k" }, { id: "none", note: "k" }, { id: "partial", note: "k" },
+    { id: "noEn", note: "k" }, { id: "blank", note: "" }, { id: "missing" },
+  ];
+  const g = findNoteGaps(rows, noteFn);
+  t("EN 있고 4로케일 «전부» 없는 행만 잡는다", g.length === 1 && g[0] === "none");
+  t("일부 로케일만 없는 행(지역 큐레이션)은 안 잡는다", !g.includes("partial"));
+  t("EN도 없는 행·note 없는 행은 대상이 아니다", !g.includes("noEn") && !g.includes("blank") && !g.includes("missing"));
 
   const pass = cases.filter((c) => c.ok).length;
   for (const c of cases) console.log(`${c.ok ? "  ✓" : "  ✗"} ${c.name}`);
@@ -117,6 +152,14 @@ console.log("─".repeat(60));
 console.log(`🔴 ${leaks.length + noteLeak}건 (값 필드 ${leaks.length} · note ${noteLeak})`);
 console.log(`검사 대상 필드: ${RENDERED_FIELDS.join(" · ")} — 늘리려면 components/tournament-board.tsx 를 먼저 봐라`);
 console.log(`note 미등재 ${noteHidden}건은 «배지 미표시»라 누출이 아니다(한국어 폴백 금지가 설계)`);
+
+const gaps = findNoteGaps(TOURNAMENTS, i18n.localizedNote);
+if (gaps.length) {
+  console.log(`🟠 note 공통 공백 ${gaps.length}건 — EN엔 있는데 ${NOTE_LOCALES.join("·")} «전부» 미등재(일부만 없는 건 지역 큐레이션이라 안 센다):`);
+  for (const id of gaps) console.log(`   🟠 ${id}`);
+} else {
+  console.log(`🟠 note 공통 공백 0건 (EN 등재 + ${NOTE_LOCALES.join("·")} 전부 미등재인 행 없음 · de 사전은 통째로 비어 대상 밖)`);
+}
 console.log(`⚠ 이 게이트는 «한글이 남는가»만 본다 — 번역이 «맞는가»는 미검사다`);
 
   process.exit(leaks.length + noteLeak ? 1 : 0);

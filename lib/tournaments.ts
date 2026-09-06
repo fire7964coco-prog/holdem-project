@@ -3014,10 +3014,17 @@ const RAW_TOURNAMENTS: Tournament[] = [
     buyin: "€36~€550",
     emoji: "🇦🇹",
     color: "bg-rose-500/15 text-rose-400 border-rose-500/30",
+    // 🔴 2026-09-06 M-091 ④ 이행: 그라츠 «개별» 페이지(`/en/casinos/graz/games/poker/capt-graz`)는 아직 2025판이다
+    //    (제목 「CAPT Graz 2025」 · 「September 16 to 21, 2025」 — 검수장 09-04 + 본체 09-06 r.jina.ai 재실측). 승격하면 출처가
+    //    본문(2026-09-22~27)을 반증한다 → 🔴 개별 페이지로 바꾸지 마라. 대신 총괄 en 페이지가 「CAPT GRAZ 22.-27.9.2026」을
+    //    축어로 싣는다(독일어 `/spiel/poker/capt`와 같은 페이지의 en판 · 값 변경 0). `poker-calendar?casino=…` 쿼리는 서버에
+    //    안 먹혀 「No results」만 나오므로 출처로 못 쓴다.
+    // ⚠ note의 «메인 €500+50 · 10개 이벤트 · €30+6»은 08-10(`0b24362c`) 등재값이고, 총괄 페이지·2025 개별 페이지 어디에도
+    //    2026 상세가 없다(총괄: 「All details … will be published as soon as possible」). 개별 페이지가 2026판으로 바뀌면 대조하라.
     note: "메인 €500+50 · 10개 이벤트 (최저 €30+6 새틀라이트)",
-    sourceUrl: "https://www.casinos.at/spiel/poker/capt",
+    sourceUrl: "https://www.casinos.at/en/games/poker/capt",
     sourceTier: "A",
-    verifiedAt: "2026-08-10",
+    verifiedAt: "2026-09-06",
   },
   {
     id: "capt-seefeld-oct",
@@ -3037,10 +3044,13 @@ const RAW_TOURNAMENTS: Tournament[] = [
     // 🔴 2026-09-03 M-082(검수장 1회차 #38): 제펠트 페이지 원문 구조 «MAIN EVENT › EVENT 4 › € 500 + 50 › 09th·10th october ›
     //    FINAL DAY 11TH OCTOBER» ↔ «NLH UNICORN SEEFELD › EVENT 2 › € 1,000 + 100 › 07th/08th october». 우리 «메인 €1,000+100»은
     //    이벤트 제목이 빠진 변환본에서 귀속을 잘못 잡은 것. 🪶 casinos.at는 봇에 403(Cloudflare) — 검수장은 r.jina.ai로 열었다.
+    // 🟢 2026-09-06 M-091 ④는 이 행도 총괄 페이지로 바꾸라 했으나 **기각** — 제펠트 개별 en 페이지는 이미 2026판이다
+    //    (「07TH - 11TH OCTOBER 2026」 · 「07th october 2026」 · 「08th october 2026」 본체 재실측). 총괄로 내리면 note의
+    //    €500+50 · Unicorn €1,000+100 근거를 잃는다(총괄엔 날짜뿐). 총괄 en 「CAPT SEEFELD 7.-11.10.2026」도 일치 → 날짜 재확인만.
     note: "메인 €500+50 · NLH Unicorn Seefeld €1,000+100 (10/7~8)",
     sourceUrl: "https://www.casinos.at/en/casinos/seefeld/games/poker/capt-seefeld",
     sourceTier: "A",
-    verifiedAt: "2026-09-03",
+    verifiedAt: "2026-09-06",
   },
   {
     id: "capt-bregenz-oct",
@@ -3059,10 +3069,13 @@ const RAW_TOURNAMENTS: Tournament[] = [
     // ⚠ 08-10에는 개요(15.-25.10.)와 상세(13.-25.10.)가 갈려 개요를 택했었다.
     // 🔴 2026-09-03 M-082(검수장 1회차 #42): 브레겐츠 대회 페이지 원문 「Vom 13. bis zum 25. Oktober 2026 wird das Casino Bregenz
     //    erneut zum Hotspot der Pokerszene.」 — 대회 페이지가 13일을 쓴다 → 13일 채택. Main Event €1,100 · Bodensee Trophy €30,000 일치.
+    // 🟢 2026-09-06 M-091 ④(총괄 페이지로 교체)는 **부분 수용** — 총괄로 내리면 note 근거(€1,100 · Trophy €30,000)를 잃는다.
+    //    대신 인스브루크·바덴과 같은 꼴의 **개별 en 페이지**로 승격: 「From October 13 to 25, 2026」 · 「€ 1,100 Main Event」 ·
+    //    「Lake Constance Hold'em Trophy with a € 30,000 guarantee」(본체 재실측 · Lake Constance = Bodensee). 값 변경 0.
     note: "메인 €1,100 · Bodensee Hold'em Trophy €30,000 GTD",
-    sourceUrl: "https://www.casinos.at/casinos/bregenz/spiel/poker/capt-bregenz",
+    sourceUrl: "https://www.casinos.at/en/casinos/bregenz/games/poker/capt-bregenz",
     sourceTier: "A",
-    verifiedAt: "2026-09-03",
+    verifiedAt: "2026-09-06",
   },
   {
     id: "capt-innsbruck-nov",

@@ -350,6 +350,13 @@
 - **할 일**: 결과 아카이브 전환
 - ★ 번역본이 없다 → 로케일 보드에서 링크가 안 뜨는 상태. **번역할지 판단**
 
+### 🆕 9/22 (화) 이전 — CAPT 그라츠 개별 페이지 2026판 갱신 대조 (등록 2026-09-06 · M-097 §4)
+- **대상**: `lib/tournaments.ts` `capt-graz` 행의 `note`(「메인 €500+50 · 10개 이벤트 (최저 €30+6 새틀라이트)」)와 `buyin`(「€36~€550」)
+- **왜**: 이 값은 08-10 등재분인데 **2026 상세를 축어로 지지하는 페이지가 지금 없다** — 총괄(`/en/games/poker/capt`)은 날짜만,
+  개별(`/en/casinos/graz/games/poker/capt-graz`)은 **2025판**(「CAPT Graz 2025」 · 「September 16 to 21, 2025」). 값은 그대로 뒀다(«값 변경 0» 회차).
+- **할 일**: 개별 페이지가 2026판으로 바뀌었는지 r.jina.ai로 열어 note·buyin 대조 → 맞으면 `sourceUrl`을 개별 페이지로 승격, 다르면 정정.
+  🔴 curl·Playwright는 403(Cloudflare) — `https://r.jina.ai/<url>`로만 열린다
+
 ### 9/30 (수) — WPT 오스트레일리아 종료
 - **대상**: `wpt-australia-2026-guide` — **8개 언어** (en·ja·zh·zh-hant·es·de·pt·id, ko판 없음 / 2026-08-06 실측)
 - **할 일**: 결과 아카이브 전환
