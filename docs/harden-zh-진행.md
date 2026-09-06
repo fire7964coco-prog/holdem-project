@@ -97,6 +97,10 @@
    WSOP는 `wsop-rules-primary-source-asset` 자산이 있는데 TDA는 없다. 있으면 all-in 「重新打开下注」에
    번호를 달 수 있다(회차 1에서 근거 부족으로 되돌림 — §3).
 5. 참고: **`快速答案` 잔존 3편 · `tldr` 마크다운 2편**은 §2 미결 참조(회차 1 대상 밖이라 손대지 않았다).
+6. 🔴 **머지 후 `npm run build`로 `public/sitemap.xml`을 갱신해 함께 push할 것.**
+   이 레포는 sitemap을 커밋해 쓴다(Vercel `buildCommand`가 npm 훅을 건너뛰므로 — 메모리
+   `vercel-buildcommand-skips-npm-hooks`). 회차 1은 6편의 `updated`를 **2026-09-06**으로 올렸으므로
+   sitemap `lastmod` 6줄이 바뀐다. 레인은 프로토콜 §5-⑧ 커밋 목록에 sitemap이 없어 되돌려 두었다.
 
 ## 6. 자산 축적 체크 (회차 마감마다)
 
