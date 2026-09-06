@@ -262,8 +262,10 @@ const SPOT_GROUPS = [
       //    모양이다」(`lib/posts/3bet-pot-cbet.ts` 반박 문단). 앱 문구로 되돌리지 마라.
       { board: "A♦K♠2♥", name: "A-High-Board, Vorteil für den 3-Bettor", note: "Der bestmögliche Flop für die 3-Bet-Range, die voll mit AK, AA und KK ist. Dass eine kleine Bet die ganze Range unter Druck setzt, liegt an der Form dieser Range – nicht am niedrigen SPR" },
       // 🟢 앱 de 축어가 이미 정정본이다(98,4 · 0,8).
+      // 🔴 2026-09-06 EN 정렬 — 노트 꼬리의 «0,8 %만 체크한다» 절을 뗐다(구형 문자열은 주석에도 인용하지 않는다 — 회귀 앵커 계수 보호). 98,4는 «큰 사이즈» 몫이고 벳 합계는 99.1(작은 사이즈 0.7 포함)이라
+      //    98,4와 0,8을 나란히 두면 독자가 뺄셈으로 0,8%p를 잃는다. en 문안이 정본.
       //    🔴 100−99.1로 «빼서» 구하면 0.9가 나온다 — 개별 반올림값의 합은 100이 아니다(§4-B 주의).
-      { board: "Q♥T♥7♠", name: "Dynamisches Two-Tone-Board", note: "Ein 3-Bet-Pot auf einem Board, das auch dem Caller liegt – und trotzdem bremst der 3-Bettor nicht: 98,4% der Range feuert mit derselben Zwei-Drittel-Size, und nur 0,8% checkt" },
+      { board: "Q♥T♥7♠", name: "Dynamisches Two-Tone-Board", note: "Ein 3-Bet-Pot auf einem Board, das auch dem Caller liegt – und trotzdem bremst der 3-Bettor nicht: 98,4% der Range feuert mit derselben Zwei-Drittel-Size" },
       // 🟢 앱 de ⑩은 «weitgehend verfehlt» 완화형이라 결함은 아니나(RP-17은 «통째로»형이 결함),
       //    랜딩은 다른 다섯 랜딩과 같은 **수치 정본**으로 간다 — KO ⑩ 표 실측 **탑 페어 0%**
       //    (8이 들어간 핸드가 3벳 레인지에 없다) + 거트샷 4.8% · 백도어 16.9%.

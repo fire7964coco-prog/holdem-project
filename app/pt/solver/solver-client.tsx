@@ -286,8 +286,10 @@ const SPOT_GROUPS = [
       { board: "A♦K♠2♥", name: "Board A-high, vantagem do 3-bettor", note: "O melhor flop possível para o range de 3-bet — carregado de AK, AA e KK. O que faz uma aposta pequena apertar o range inteiro é o formato desse range, não o SPR baixo" },
       // 🟢 앱 pt 축어가 이미 정정본이다(es·ja는 앱이 «empieza a frenar»여서 우리가 고쳤다).
       //    §4-B ⑨: 벳 합계 99.1%(큰 사이즈 98.4 + 작은 사이즈 0.7), 체크 **0.8%**.
+      // 🔴 2026-09-06 EN 정렬 — 노트 꼬리의 «0,8 %만 체크한다» 절을 뗐다(구형 문자열은 주석에도 인용하지 않는다 — 회귀 앵커 계수 보호). 98,4는 «큰 사이즈» 몫이라 0,8과 나란히 두면
+      //    독자가 뺄셈으로 0,8%p를 잃는다. en 문안이 정본.
       //    🔴 100−99.1로 «빼서» 구하면 0.9가 나온다 — 개별 반올림값의 합은 100이 아니다.
-      { board: "Q♥T♥7♠", name: "Board dinâmico two-tone", note: "Um pote de 3-bet num board que também agrada ao caller — e mesmo assim o 3-bettor não freia: 98,4% do range aposta com o mesmo tamanho de dois terços, e só 0,8% dá check" },
+      { board: "Q♥T♥7♠", name: "Board dinâmico two-tone", note: "Um pote de 3-bet num board que também agrada ao caller — e mesmo assim o 3-bettor não freia: 98,4% do range aposta com o mesmo tamanho de dois terços" },
       // 🔴 M-042 RP-17 정정(2026-08-24) — **pt 는 목록에 없던 자리다**(RP-03 과 같은 이유로
       //    랜딩이 목록보다 늦게 생겼다). 종전 「em nada」는 en 의 절대 서술과 같은 형태였다.
       //    반례: **거트샷 4.8% · 백도어 플러시 16.9%(14콤보)**.

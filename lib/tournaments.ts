@@ -3011,18 +3011,26 @@ const RAW_TOURNAMENTS: Tournament[] = [
     city: "Graz",
     country: "AT",
     venue: "Casino Graz",
-    buyin: "€36~€550",
+    buyin: "€60~€550",
     emoji: "🇦🇹",
     color: "bg-rose-500/15 text-rose-400 border-rose-500/30",
-    // 🔴 2026-09-06 M-091 ④ 이행: 그라츠 «개별» 페이지(`/en/casinos/graz/games/poker/capt-graz`)는 아직 2025판이다
-    //    (제목 「CAPT Graz 2025」 · 「September 16 to 21, 2025」 — 검수장 09-04 + 본체 09-06 r.jina.ai 재실측). 승격하면 출처가
-    //    본문(2026-09-22~27)을 반증한다 → 🔴 개별 페이지로 바꾸지 마라. 대신 총괄 en 페이지가 「CAPT GRAZ 22.-27.9.2026」을
-    //    축어로 싣는다(독일어 `/spiel/poker/capt`와 같은 페이지의 en판 · 값 변경 0). `poker-calendar?casino=…` 쿼리는 서버에
-    //    안 먹혀 「No results」만 나오므로 출처로 못 쓴다.
-    // ⚠ note의 «메인 €500+50 · 10개 이벤트 · €30+6»은 08-10(`0b24362c`) 등재값이고, 총괄 페이지·2025 개별 페이지 어디에도
-    //    2026 상세가 없다(총괄: 「All details … will be published as soon as possible」). 개별 페이지가 2026판으로 바뀌면 대조하라.
-    note: "메인 €500+50 · 10개 이벤트 (최저 €30+6 새틀라이트)",
-    sourceUrl: "https://www.casinos.at/en/games/poker/capt",
+    // 🔴 2026-09-06 M-101 이행(값 정정): 개별 페이지는 «둘»이고 언어마다 신선도가 다르다 — en 개별(`/en/casinos/graz/games/poker/capt-graz`)은
+    //    2025판(「September 16 to 21, 2025」)이지만 **de 개별(`/casinos/graz/spiel/poker/capt-graz`)은 2026판**(「22. - 27. SEPTEMBER 2026」)이고
+    //    프로그램 PDF를 링크한다(de 페이지 축어 「## CAPT Graz Turnierplan」 · 「PDF | 211 KB」 → `/fileadmin/00_Casinos/11_Casinos/03_Graz/05_Poker/CAPT_Turnierplan-2026-09.pdf` · Published 2026-05-19).
+    //    검수장(M-101)·본체(09-06 r.jina.ai) 독립 재실측 일치.
+    //    Turnierplan 축어: 9/15·9/22 Satellite/Mega Satellite «50 + 10» · 9/23 CAPT Opening «130 + 20 · € 15.000 garantiert» ·
+    //    9/24 Classic Bounty «200 + 30» · 9/25~26 Main Event 1A/1B/1C «500 + 50»(best stack forward · min cash € 1.000) ·
+    //    9/26 Slide Challenge(바이인 없음 · 프로모) · 9/27 Main Event Day 2(closed) · 9/27 Pokermania XL «200 + 30»(Casino Velden 개최 · 그라츠는 Starttag만).
+    //    구조 PDF 교차 확증: Mega-Satellite 「€ 50 + 10」 · Main-Event-1A 「€ 500 + 50」 · Slide Challenge 상품권 액면 €550(=500+50)·€230(=200+30)은 각 합계와 일치 ·
+    //    €60은 «Beginner Turnier Graz» 티켓 액면(Turnierplan 10행에 대응 행 없음 · 50+10과 액수만 같다 — 새틀라이트 확증으로 읽지 마라).
+    // 🔴 08-10 등재값(하한 36 · «30 + 6» 새틀 — 구형 문자열은 회귀 앵커 계수 보호를 위해 주석에도 축어로 안 적는다)은 2026 프로그램에 없다 —
+    //    «30 + 6» 행이 없고, 수수료 자리의 「30」은 전부 «200 + 30»이다(M-101 WRONG 2). 최저 = 50+10 = €60.
+    // 🔴 이벤트 «개수»는 적지 않는다 — 프로그램 행 10에 플라이트(1A/1B/1C)·프로모(Slide)·Day 2가 섞여 «참가 가능한 이벤트 수»로 읽히면
+    //    계층 혼동이 난다(레그→이벤트→플라이트). 「8개」 권고도 플라이트를 이벤트로 센 값이라 채택하지 않았다.
+    // ⏰ en 개별이 2026판으로 갱신되면 sourceUrl을 en 경로로 옮겨도 된다(형제 행과 언어 통일 · 값 변경 0) — 09-22 개막 전 확인.
+    //    규율: 출처 교체는 «언어»가 아니라 «그 페이지가 우리 값을 축어로 지지하는가»로 판정한다(M-101 ⑥).
+    note: "메인 €500+50 (Day 1A~1C · best stack forward) · CAPT Opening €15,000 GTD · 최저 €50+10 새틀라이트",
+    sourceUrl: "https://www.casinos.at/casinos/graz/spiel/poker/capt-graz",
     sourceTier: "A",
     verifiedAt: "2026-09-06",
   },

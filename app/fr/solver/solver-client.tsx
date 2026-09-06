@@ -223,10 +223,13 @@ const SPOT_GROUPS = [
       //    레인지의 모양이다.
       { board: "A♦K♠2♥", name: "Board A-high, avantage du 3-betteur", note: "Le meilleur flop possible pour le 3-betteur, dont la range est remplie d'AK, d'AA et de KK. Si les petites mises mettent la pression sur toute la range adverse, c'est la forme de cette range qui le permet — pas le SPR bas" },
       // 🟢 앱 fr 축어가 이미 정정본(98,4 · 0,8 · aux deux tiers).
+      // 🔴 2026-09-06 EN 정렬 — 노트 꼬리의 «0,8 %가 체크한다» 절을 뗐다(구형 문자열은 주석에도 인용하지 않는다 — 회귀 앵커 계수 보호). 98,4는 «큰 사이즈» 몫이고 벳 합계는 99,1(작은 사이즈 0,7 포함)이라
+      //    98,4와 0,8을 나란히 두면 독자가 뺄셈으로 0,8%p를 잃는다. en 문안(«98.4% of the range fires the same two-thirds size»)이 정본.
       //    🔴 100−99,1로 «빼서» 구하면 0,9가 나온다 — 개별 반올림값의 합은 100이 아니다(§4-B).
       // 🪶 산수 렌즈(2026-08-25): 초판의 «, toujours au même sizing»은 레인지 전체 주장으로 읽혀
-      //    §4-B의 작은벳 0,7 %와 모순 — 삭제(형제 랜딩과 동형이 됐다).
-      { board: "Q♥T♥7♠", name: "Board dynamique bicolore", note: "Un pot 3-bet sur un board qui convient aussi au caller — et pourtant le 3-betteur ne ralentit pas : 98,4 % de la range mise aux deux tiers du pot, au même sizing. Seuls 0,8 % checkent" },
+      //    §4-B의 작은벳 0,7 %와 모순 — «toujours»를 뗐다. 🔴 2026-09-06 정정: «, au même sizing»은 지금도 남아 있다
+      //    (98,4 %에 걸리는 절이라 유지 · en «the same two-thirds size»와 동형). 「삭제·동형」이라 적은 건 부정확했다.
+      { board: "Q♥T♥7♠", name: "Board dynamique bicolore", note: "Un pot 3-bet sur un board qui convient aussi au caller — et pourtant le 3-betteur ne ralentit pas : 98,4 % de la range mise aux deux tiers du pot, au même sizing" },
       // 🟢 앱 fr ⑩은 «presque» 완화형이라 축어 유지(RP-17 비발화 — en·de·ja 계열).
       { board: "8♦5♣2♠", name: "Board bas et sec", note: "Un board qui rate presque toute la range du 3-betteur — et pourtant les overpairs et les mains hauteur As maintiennent la pression. Equity contre fold equity" },
     ],

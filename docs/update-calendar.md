@@ -350,11 +350,12 @@
 - **할 일**: 결과 아카이브 전환
 - ★ 번역본이 없다 → 로케일 보드에서 링크가 안 뜨는 상태. **번역할지 판단**
 
-### 🆕 9/22 (화) 이전 — CAPT 그라츠 개별 페이지 2026판 갱신 대조 (등록 2026-09-06 · M-097 §4)
-- **대상**: `lib/tournaments.ts` `capt-graz` 행의 `note`(「메인 €500+50 · 10개 이벤트 (최저 €30+6 새틀라이트)」)와 `buyin`(「€36~€550」)
-- **왜**: 이 값은 08-10 등재분인데 **2026 상세를 축어로 지지하는 페이지가 지금 없다** — 총괄(`/en/games/poker/capt`)은 날짜만,
-  개별(`/en/casinos/graz/games/poker/capt-graz`)은 **2025판**(「CAPT Graz 2025」 · 「September 16 to 21, 2025」). 값은 그대로 뒀다(«값 변경 0» 회차).
-- **할 일**: 개별 페이지가 2026판으로 바뀌었는지 r.jina.ai로 열어 note·buyin 대조 → 맞으면 `sourceUrl`을 개별 페이지로 승격, 다르면 정정.
+### ✅ 9/22 (화) 이전 — CAPT 그라츠 개별 페이지 2026판 갱신 대조 → **종결 (2026-09-06 · M-101 이행)**
+- **결과**: 개별 페이지는 «둘»이었다 — en 개별은 2025판 그대로지만 **de 개별(`/casinos/graz/spiel/poker/capt-graz`)은 2026판**이고 `CAPT_Turnierplan-2026-09.pdf`를 링크한다(검수장·본체 독립 재실측 일치).
+  값 정정 = `buyin` €36→**€60**~€550 · note 「최저 €30+6」→**€50+10** · 「10개 이벤트」 삭제(플라이트·프로모·Day 2 혼입 = 계층 혼동) · note에 「(Day 1A~1C · best stack forward)」·「CAPT Opening €15,000 GTD」 **추가** · `sourceUrl` → de 개별. 축어 근거 = `lib/tournaments.ts` `capt-graz` 주석.
+
+### 🪶 9/22 (화) 이전 — CAPT 그라츠 `sourceUrl` en 경로 승격 확인 (선택 · 값 변경 0)
+- en 개별(`/en/casinos/graz/games/poker/capt-graz`)이 2026판으로 갱신됐으면 `sourceUrl`을 en 경로로 통일(형제 4행과 언어 통일). 안 됐으면 de 그대로 둔다 — 값은 이미 정정본이다.
   🔴 curl·Playwright는 403(Cloudflare) — `https://r.jina.ai/<url>`로만 열린다
 
 ### 9/30 (수) — WPT 오스트레일리아 종료
