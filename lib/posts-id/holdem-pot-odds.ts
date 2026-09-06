@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Untuk menghitung pot odds, bagi jumlah yang harus Anda call dengan total pot setelah call Anda. Call $50 ke pot $150 = 50 ÷ 200 = 25% — jadi Anda butuh minimal 25% equity agar call ini profit.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-08-27",
-  masterUpdated: "2026-08-09",
+  updated: "2026-09-06",
+  masterUpdated: "2026-09-06",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "🧮",
@@ -53,7 +53,7 @@ Lupakan rasio sejenak — bentuk tercepat yang bisa dipakai adalah **persentase*
 Jumlahkan pot akhir | Pot saat ini + taruhan + call Anda. Contoh: pot $100 + taruhan $50 + call $50 Anda = $200
 Bagi call Anda dengan pot akhir itu | $50 ÷ $200 = 0,25
 Itulah equity yang Anda butuhkan | Anda perlu menang setidaknya 25% dari waktu agar call ini profit
-Bandingkan dengan equity Anda yang sebenarnya | Flush draw ≈ 35% untuk jadi → 35% mengalahkan 25% → ==g:call==
+Bandingkan dengan equity Anda yang sebenarnya | Flush draw ≈ 35% untuk jadi dengan dua kartu tersisa dan tanpa taruhan lagi → 35% mengalahkan 25% → ==g:call==
 :::
 
 Itu saja. **Equity yang dibutuhkan = call Anda ÷ pot akhir.** Jika peluang menang Anda yang sebenarnya lebih besar dari angka itu, call menghasilkan uang dalam jangka panjang — bahkan saat Anda lebih sering kalah di tangan itu daripada menang.
@@ -103,7 +103,7 @@ Inilah jalan pintas yang tinggal di kepala Anda di meja. Equity yang Anda butuhk
 
 </div>
 
-Perhatikan batas atasnya: bahkan **overbet 2× pot yang masif hanya meminta 40% equity**. Anda hampir tak pernah harus menjadi favorit untuk call secara profit — kesalahan baca umum yang membuat orang fold call yang benar. Makin besar taruhan, makin banyak equity yang Anda butuhkan, tapi kenaikannya lebih lambat dari yang dikira banyak pemain.
+Bahkan **overbet 2× pot yang masif hanya meminta 40% equity**. Anda hampir tak pernah harus menjadi favorit untuk call secara profit — kesalahan baca umum yang membuat orang fold call yang benar. Makin besar taruhan, makin banyak equity yang Anda butuhkan, tapi kenaikannya lebih lambat dari yang dikira banyak pemain.
 
 ---
 
@@ -201,7 +201,7 @@ A. Pot adalah semua chip yang sudah ada di tengah plus taruhan apa pun di street
 
 **Q. Berapa rasio pot odds yang bagus?**
 
-A. Makin tinggi makin bagus — Anda pasti ingin "mendapat 5:1" (butuh hanya 16,7%). Tapi "bagus" itu relatif terhadap tangan Anda: mendapat 2:1 (butuh 33%) hebat dengan flush draw dan buruk dengan gutshot. Selalu bandingkan harga dengan equity Anda.
+A. Makin tinggi makin bagus — Anda pasti ingin "mendapat 5:1" (butuh hanya 16,7%). Tapi "bagus" itu relatif terhadap tangan Anda: mendapat 2:1 (butuh 33%) baru cukup dengan flush draw kalau Anda memang akan melihat kedua kartu (all-in, atau tak ada taruhan lagi — 35%); harga itu tidak terpenuhi kalau call Anda hanya membeli satu kartu (19,1% dari flop, 19,6% dari turn); dan buruk dengan gutshot. Selalu bandingkan harga dengan equity Anda.
 
 **Q. Bagaimana mengubah pot odds dari rasio ke persentase?**
 
@@ -213,7 +213,7 @@ A. Pot odds hanya menghitung chip yang ada di pot saat ini. Implied odds menamba
 
 **Q. Berapa pot odds yang diberikan taruhan sebesar pot?**
 
-A. Taruhan sebesar pot memberi Anda 2:1, jadi Anda butuh 33% equity untuk call. Taruhan setengah pot memberi 3:1 (butuh 25%); overbet 2× pot memberi 1,5:1 (butuh 40%). Taruhan lebih besar menuntut lebih banyak equity, tapi bahkan overbet raksasa hanya meminta 40%.
+A. Taruhan sebesar pot memberi Anda 2:1, jadi Anda butuh 33% equity untuk call. Taruhan setengah pot memberi 3:1 (butuh 25%); overbet 2× pot memberi 1,5:1 (butuh 40%). Taruhan lebih besar menuntut lebih banyak equity, tapi kenaikannya kecil: overbet 2× pot meminta 40%, overbet 3× sekitar 43%, overbet 5× sekitar 45% — dan tak ada taruhan, sebesar apa pun, yang pernah meminta lebih dari 50%.
 
 **Q. Berapa banyak dari pot yang sebaiknya Anda pertaruhkan?**
 

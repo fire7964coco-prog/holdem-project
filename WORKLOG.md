@@ -1,3 +1,17 @@
+## 2026-09-06 (2) — **④ EN 역이식 + 7로케일 전파 — `pot-odds`·`split-pot`·`3bet` × 8로케일 24파일** (Fable · 회신 M-099)
+
+사장님 *「3,4번 하면 됨??」*을 ④ 결재로 받고 착수. 검수장 M-092 §7 등급표(🔴 D유형 2 · 자기모순 1 · 절차 누락 1 · 🟠 2 · 🟡 4) + M-090 ⑤(3bet #79 · split-pot #39) 전건 이행.
+**전파 방향이 반대인 회차** — 정답 문안은 pt·de·id·zh에 있었고 EN이 뒤처져 있었다. 창작 0 원칙으로 이식.
+
+- **EN 3편**: 회귀 `en3-gpt-2026-09-04.md` ①절 앵커 16개 → 0(이행) · ②절 «오탐 방어» 앵커 10개 전건 유지(⛔ GPT #5·#6·#7·#12 등 미반영). 🪶 L105 「Notice the ceiling:」 리드인만 뺐다 — FAQ가 50% 상한을 말하게 되자 본문 «ceiling»이 40%를 최대치로 읽히는 **새 자기모순**(두 렌즈 독립 지적).
+- **렌즈 3종(딜러·수학·교열) + 2차 교열**: 🔴 **이식이 만든 표 모순**(「Use it when」에 SB를 절대 조건으로 넣자 EP 타이트 오픈 vs SB에서 polarized 셀과 충돌 → 상대 표현으로) · 🔴 **검수장 권고 문안 「~55%는 그 안에 든다」를 수학 렌즈가 반증**(E=30%면 손익분기 폴드 41,2% · f=55%에서 A5s 블러프 EV +1,06bb — 검수장이 M-090에서 스스로 «느슨하다»고 적은 자리) → 「practical baseline rather than a guarantee」 · 「$39 against 7.5bb」 단위 혼용 · A5s vs QQ+/AK 완전열거 30,15% 확인.
+- **7로케일 전파**(Opus 서브 7 병렬 · 브리프+EN 패치 동봉) → 게이트 8로케일 🔴 0(🟠는 기준선과 동수). 덤: de 「Kurze Antwort」·es 「buen rango por posición」 로케일 단독 문장이 새 SB/BB 규율과 어긋나 함께 정정.
+- **7로케일 2차 교열**(3그룹): ja·id 0 · zh·zh-hant 9 반영(🔴 「share」→「那一半」 사실 드리프트) · de·es·pt 23 반영 — 🔴 **de split-pot 팁에 «보드가 깨질 수 있을 때» 분기절이 없었다**(M-092 §3(4) 「de 결함 없음」은 꼬리만 본 판정) · 🔴 es·pt 「live-action」→「현장(en vivo/ao vivo)」 오역 · 🔴 **pt 3bet L179 본문에 M-090 ⑤가 기각한 HUD 집계 인과절 잔존**(FAQ만 고쳐졌던 것) · pt 「virá-la」 비문.
+- **`masterUpdated` 판정**: pot-odds·split-pot는 구 EN `updated`와 전 로케일 일치 + 오늘 diff 전건 이식 → **09-06 승격**(pt split-pot는 필드 없음). **3bet는 승격 안 함**(6로케일 08-26 < EN 08-27 나머지 미이식 · M-089 §4 판정 유지 · id만 08-27→09-06). 🪶 서브 2(pt·id)가 브리프 밖에서 임의 승격한 것을 이 기준으로 되돌림.
+- 회귀 앵커 통지(회신 §2): 한정어 추가형 3(EN `then 35% > 25%` · es `eso es lo habitual` · ja `それがむしろ普通です`) + de «정본 보유» 앵커 `am River der Normalfall` 뒤집힘(새 앵커 「noch geschlagen werden kann」).
+- 🟠 **미결로 넘긴 것**: EN 동형 30건(M-089 §4 · bad-beat #12 ~65% · 103조 · SF 라벨 등)은 **이번 등급표 밖이라 미착수** · `lib/posts-pt/holdem-strategy.ts:183` 용어표 「3-bets dos blinds = polarized」 pt 단독 모순 · pt 3bet 「67%」↔「66,6%」는 이번에 통일함 · EN split-pot FAQ 「A split pot at showdown is automatic」이 새 테이블링 의무와 미묘한 긴장(EN 먼저).
+- 빌드 `npm run build` 통과 — 708쪽 · 70 blog + 525 intl · 24쪽 FAQPage 비영 · 신규 문장 렌더 확인. 게이트 8로케일 🔴 0 · 백틱 24파일 전건 2.
+
 ## 2026-09-06 (1) — **③ 우편함 M-090·M-091 마무리 — CAPT 3행 재실측 · NOTE 14×4 등재 · i18n 게이트 🟠 신설** (Fable · 회신 M-097)
 
 사장님 *「3,4번 하면 됨??」* → ③ 착수(④ EN 역이식은 그 말씀을 결재로 받고 다음 회차). «요청 0 · 확인만»이던 건인데 M-091 ④·⑤·⑥의 **본체 몫이 셋** 남아 있었다.

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Yes — poker hands can tie. A pot is split (a chop) when two or more players show down the identical best five-card hand. Suits never break the tie, and any leftover odd chip goes to the first tied player left of the dealer button.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-08-11",
+  updated: "2026-09-06",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🃏",
@@ -84,11 +84,13 @@ Pairs and two pairs are usually decided by kickers — but if the kickers match 
 
 Yes — and it doesn't even take two monster hands. When the five community cards already form the best possible five for everyone still in, ==**the board plays**== and every remaining player shares the pot, whether that's two players or five.
 
-That's my 8-8-8-A-K hand: my J-10 and his 5-2 both played the board's trip eights with ace-king kickers — identical fives, automatic chop. The extreme case is a board like A♠ K♠ Q♠ J♠ 10♠ (a royal flush): no hole cards can improve it, so ==g:everyone left chops==.
+That's my 8-8-8-A-K hand: my J-10 and his 5-2 both played the board's trip eights with ace-king kickers — identical fives, a chop once both hands were tabled. The extreme case is a board like A♠ K♠ Q♠ J♠ 10♠ (a royal flush): no hole cards can improve it, so ==g:everyone left chops==.
 
 > **The check:** does *your* best five — using at least one hole card — beat the board's own five? If yes, you play your hand. If not, the board plays and you're likely chopping. The full method for scanning a board this way is in [how to read the board and find your best 5](/en/blog/holdem-reading-the-board).
 
-:::tip[If the board plays and someone bets the river, **folding on autopilot is the mistake**. When nothing can beat the board the chop is certain, and calling still brings back half of everything that was already in the pot — folding hands that half away for free. When the board *can* be beaten, run the frequency: against a pot-size bet you need your opponent to be playing the board too about 2 times in 3; against a half-pot bet, about half the time. That is a high bar: against a pot-size bet, folding is only right once they have a real hand more than **one time in three** — and on a board that plays, that is the normal case.]:::
+**And the part that matters most at the table: your hand only wins if you turn it face up.** A mucked hand is dead even when it would have chopped — when you're playing the board you must still show your hole cards face up, or you forfeit your share of the pot (WSOP live-action Rule 172; the WSOP tournament rules repeat it in Rule 75). Who shows first and how the sequence runs is covered in the [showdown rules](/en/blog/holdem-showdown-rules).
+
+:::tip[If the board plays and someone bets the river, **folding on autopilot is the mistake**. When nothing can beat the board the chop is certain, and calling still brings back half of everything that was already in the pot — folding hands that half away for free. When the board *can* be beaten, run the frequency: against a pot-size bet you need your opponent to be playing the board too about 2 times in 3; against a half-pot bet, about half the time. That is a high bar: against a pot-size bet, folding is right as soon as they have a real hand more than **one time in three** — and on a river where the board can still be beaten, that is the normal case.]:::
 
 ---
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Para calcular pot odds, divida o valor que você precisa pagar pelo pote total depois do seu call. Pagar $50 num pote de $150 = 50 ÷ 200 = 25% — então você precisa de pelo menos 25% de equity para o call ser lucrativo.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-04",
-  masterUpdated: "2026-08-09",
+  updated: "2026-09-06",
+  masterUpdated: "2026-09-06",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🧮",
@@ -53,7 +53,7 @@ Esqueça as razões por um instante — a forma mais rápida de usar é a **porc
 Some o pote final | Pote atual + a aposta + o seu call. Exemplo: pote de $100 + aposta de $50 + seu call de $50 = $200
 Divida seu call por esse pote final | $50 ÷ $200 = 0,25
 Essa é a sua equity necessária | Você precisa ganhar pelo menos 25% das vezes para pagar com lucro
-Compare com a sua equity real | Flush draw ≈ 35% de fechar com duas cartas por vir → 35% supera 25% → ==g:pague==
+Compare com a sua equity real | Flush draw ≈ 35% de fechar com duas cartas por vir e sem mais apostas → 35% supera 25% → ==g:pague==
 :::
 
 É isso. **Equity necessária = seu call ÷ o pote final.** Se a sua chance real de ganhar for maior que esse número, pagar dá lucro no longo prazo — mesmo quando você vai perder a mão mais vezes do que ganhar.
@@ -103,7 +103,7 @@ Aqui está o atalho que vive na sua cabeça na mesa. A sua equity necessária de
 
 </div>
 
-Repare no teto: até um enorme **overbet de 2× o pote pede só 40% de equity**. Você quase nunca precisa ser favorito para pagar com lucro — uma leitura errada comum que faz as pessoas desistirem de calls corretos. Quanto maior a aposta, mais equity você precisa, mas ela sobe mais devagar do que a maioria dos jogadores imagina.
+Até um enorme **overbet de 2× o pote pede só 40% de equity**. Você quase nunca precisa ser favorito para pagar com lucro — uma leitura errada comum que faz as pessoas desistirem de calls corretos. Quanto maior a aposta, mais equity você precisa, mas ela sobe mais devagar do que a maioria dos jogadores imagina.
 
 ---
 
@@ -123,7 +123,7 @@ Agora conecte o preço à sua mão. [Conte os seus **outs**](/pt/blog/holdem-out
 
 </div>
 
-Leia contra a tabela por tamanho de aposta acima. Enfrentando uma ==aposta de meio pote (precisa de 25%)==: com duas cartas por vir, um flush draw (35%) é um call claro — mas numa *única* carta a partir do flop, esse mesmo projeto é só 19,1%, o que **não** atinge o preço sozinho. Essa diferença é exatamente onde as implied odds entram.
+Leia contra a tabela por tamanho de aposta acima. Enfrentando uma ==aposta de meio pote (precisa de 25%)==: com duas cartas por vir, um flush draw (35%) é um call claro — mas numa *única* carta a partir do flop (9 ÷ 47), esse mesmo projeto é só 19,1%, o que **não** atinge o preço sozinho. Essa diferença é exatamente onde as implied odds entram.
 
 ---
 
@@ -213,7 +213,7 @@ A. As pot odds só contam as fichas que estão no pote agora. As implied odds so
 
 **Q. Que pot odds uma aposta do tamanho do pote oferece?**
 
-A. Uma aposta do tamanho do pote te dá 2 para 1, então você precisa de 33% de equity para pagar. Uma aposta de meio pote dá 3 para 1 (25% necessário); um overbet de 2× o pote dá 1,5 para 1 (40% necessário). Apostas maiores exigem mais equity, mas até um overbet enorme pede só 40%.
+A. Uma aposta do tamanho do pote te dá 2 para 1, então você precisa de 33% de equity para pagar. Uma aposta de meio pote dá 3 para 1 (25% necessário); um overbet de 2× o pote dá 1,5 para 1 (40% necessário). Apostas maiores exigem mais equity, mas o aumento é pequeno: um overbet de 2× o pote pede 40%, um overbet de 3× cerca de 43%, um de 5× cerca de 45% — e nenhuma aposta, por maior que seja, jamais pede mais de 50%.
 
 **Q. O que é a regra do 2 e 4?**
 

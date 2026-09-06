@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Sí — en el póker se puede empatar. El bote se divide (un \"split\" o \"chop\") cuando dos o más jugadores muestran las mismas mejores cinco cartas en el showdown. El palo nunca rompe el empate, y la ficha impar que sobra va al primer jugador empatado a la izquierda del botón.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-08-11",
-  masterUpdated: "2026-08-11",
+  updated: "2026-09-06",
+  masterUpdated: "2026-09-06",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🃏",
@@ -85,11 +85,13 @@ Las parejas y las dobles parejas suelen decidirse por el kicker, pero si los kic
 
 Sí — y ni siquiera hacen falta dos manos monstruo. Cuando las cinco cartas comunitarias ya forman las mejores cinco posibles para todos los que siguen, ==**la mesa juega**== y cada jugador restante comparte el bote, sean dos jugadores o cinco.
 
-Es mi mano 8-8-8-A-K: mi J-10 y su 5-2 jugaban los dos el trío de ochos de la mesa con kicker de As-Rey —cinco idénticas, split automático—. El caso extremo es una mesa como A♠ K♠ Q♠ J♠ 10♠ (una escalera real): ninguna carta puede mejorarla, así que ==g:todos los que quedan parten==.
+Es mi mano 8-8-8-A-K: mi J-10 y su 5-2 jugaban los dos el trío de ochos de la mesa con kicker de As-Rey —cinco idénticas, un split en cuanto las dos manos se pusieron boca arriba—. El caso extremo es una mesa como A♠ K♠ Q♠ J♠ 10♠ (una escalera real): ninguna carta puede mejorarla, así que ==g:todos los que quedan parten==.
 
 > **La comprobación:** ¿*tus* mejores cinco —usando al menos una carta tuya— superan las cinco de la mesa? Si sí, juegas tu mano. Si no, la mesa juega y lo más probable es que partas. El método completo para escanear una mesa así lo tienes en [cómo leer la mesa y encontrar tus mejores cinco](/es/blog/holdem-reading-the-board).
 
-:::tip[Si la mesa juega y alguien apuesta en el river, **el error es foldear en automático**. Cuando nada puede superar la mesa el empate está asegurado, y pagar te devuelve la mitad de todo lo que ya había en el bote — foldear regala esa mitad gratis. Cuando la mesa sí se puede superar, calcula la frecuencia: ante una apuesta del tamaño del bote necesitas que tu rival también esté jugando la mesa unas 2 de cada 3 veces; ante medio bote, la mitad de las veces. Es un listón alto: ante una apuesta del tamaño del bote, foldear solo es correcto cuando tiene mano de verdad más de **una de cada tres veces** — y en una mesa que se juega sola, eso es lo habitual.]:::
+**Y lo que más importa en la mesa: tu mano solo gana si la enseñas boca arriba.** Una mano tirada al muck está muerta aunque hubiera partido — cuando juegas la mesa sigues teniendo que mostrar tus cartas boca arriba, o pierdes tu parte del bote (regla 172 del reglamento de cash —"Live Action"— de la WSOP; las reglas de torneo de la WSOP lo repiten en la regla 75). Quién muestra primero y cómo va la secuencia lo tienes en las [reglas del showdown](/es/blog/holdem-showdown-rules).
+
+:::tip[Si la mesa juega y alguien apuesta en el river, **el error es foldear en automático**. Cuando nada puede superar la mesa el empate está asegurado, y pagar te devuelve la mitad de todo lo que ya había en el bote — foldear regala esa mitad gratis. Cuando la mesa sí se puede superar, calcula la frecuencia: ante una apuesta del tamaño del bote necesitas que tu rival también esté jugando la mesa unas 2 de cada 3 veces; ante medio bote, la mitad de las veces. Es un listón alto: ante una apuesta del tamaño del bote, foldear es correcto **en cuanto** tiene mano de verdad más de **una de cada tres veces** — y en un river en el que la mesa todavía se puede superar, eso es lo habitual.]:::
 
 ---
 

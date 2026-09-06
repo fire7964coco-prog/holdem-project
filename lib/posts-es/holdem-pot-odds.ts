@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Para calcular las pot odds, divide lo que tienes que igualar entre el bote total después de tu call. Igualar $50 en un bote de $150 = 50 ÷ 200 = 25% — necesitas al menos un 25% de equity para que el call sea rentable.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-08-09",
-  masterUpdated: "2026-08-09",
+  updated: "2026-09-06",
+  masterUpdated: "2026-09-06",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🧮",
@@ -53,7 +53,7 @@ Olvídate de los ratios por un momento — la forma más rápida y útil es un *
 Suma el bote final | Bote actual + la apuesta + tu call. Ejemplo: bote de $100 + apuesta de $50 + tu call de $50 = $200
 Divide tu call entre ese bote final | $50 ÷ $200 = 0.25
 Esa es tu equity necesaria | Necesitas ganar al menos el 25% de las veces para pagar de forma rentable
-Compárala con tu equity real | Proyecto de color ≈ 35% de ligar → 35% supera al 25% → ==g:paga==
+Compárala con tu equity real | Proyecto de color ≈ 35% de ligar con dos cartas por venir y sin más apuestas → 35% supera al 25% → ==g:paga==
 :::
 
 Eso es todo. **Equity necesaria = tu call ÷ el bote final.** Si tu probabilidad real de ganar es mayor que ese número, pagar gana dinero a la larga — incluso cuando pierdas la mano más veces de las que la ganas.
@@ -103,7 +103,7 @@ Aquí tienes el atajo que vive en tu cabeza en la mesa. Tu equity necesaria depe
 
 </div>
 
-Fíjate en el techo: incluso un enorme **overbet de 2× el bote solo pide un 40% de equity**. Casi nunca necesitas ser favorito para pagar de forma rentable — un error de lectura común que hace que la gente tire calls correctos. Cuanto mayor es la apuesta, más equity necesitas, pero sube más despacio de lo que la mayoría cree.
+Incluso un enorme **overbet de 2× el bote solo pide un 40% de equity**. Casi nunca necesitas ser favorito para pagar de forma rentable — un error de lectura común que hace que la gente tire calls correctos. Cuanto mayor es la apuesta, más equity necesitas, pero sube más despacio de lo que la mayoría cree.
 
 ---
 
@@ -123,7 +123,7 @@ Ahora conecta el precio con tu mano. [Cuenta tus **outs**](/es/blog/holdem-outs 
 
 </div>
 
-Léelo frente a la tabla de tamaños de apuesta de arriba. Frente a una ==apuesta de medio bote (necesitas 25%)==: con dos cartas por venir, un proyecto de color (35%) es un call claro — pero con una *sola* carta, ese mismo proyecto es solo el 19.1%, que **no** cumple el precio por sí solo. Ese hueco es exactamente donde entran las odds implícitas.
+Léelo frente a la tabla de tamaños de apuesta de arriba. Frente a una ==apuesta de medio bote (necesitas 25%)==: con dos cartas por venir, un proyecto de color (35%) es un call claro — pero con una *sola* carta desde el flop (9 ÷ 47), ese mismo proyecto es solo el 19.1%, que **no** cumple el precio por sí solo. Ese hueco es exactamente donde entran las odds implícitas.
 
 ---
 
@@ -205,7 +205,7 @@ A. Los pot odds (o probabilidades del bote) son el precio que te ofrecen por seg
 
 **Q. ¿Qué es un buen ratio de pot odds?**
 
-A. Cuanto más alto, mejor — te encantaría estar "recibiendo 5 a 1" (necesitando solo un 16.7%). Pero lo "bueno" es relativo a tu mano: recibir 2 a 1 (necesitar un 33%) es genial con un proyecto de color y terrible con un gutshot. Compara siempre el precio con tu equity.
+A. Cuanto más alto, mejor — te encantaría estar "recibiendo 5 a 1" (necesitando solo un 16.7%). Pero lo "bueno" es relativo a tu mano: recibir 2 a 1 (necesitar un 33%) funciona con un proyecto de color solo cuando ya vas a ver las dos cartas (all-in, o sin más apuestas por venir — 35%); no cubre el precio si con el call solo ves una carta (19.1% desde el flop, 19.6% desde el turn); y es terrible con un gutshot. Compara siempre el precio con tu equity.
 
 **Q. ¿Cómo se convierten las pot odds de ratio a porcentaje?**
 
@@ -217,7 +217,7 @@ A. Las pot odds solo cuentan las fichas que hay en el bote ahora mismo. Las odds
 
 **Q. ¿Qué pot odds da una apuesta del tamaño del bote?**
 
-A. Una apuesta del tamaño del bote te da 2 a 1, así que necesitas un 33% de equity para pagar. Una apuesta de medio bote da 3 a 1 (25% necesario); un overbet de 2× el bote da 1.5 a 1 (40% necesario). Las apuestas mayores exigen más equity, pero incluso un overbet enorme solo pide un 40%.
+A. Una apuesta del tamaño del bote te da 2 a 1, así que necesitas un 33% de equity para pagar. Una apuesta de medio bote da 3 a 1 (25% necesario); un overbet de 2× el bote da 1.5 a 1 (40% necesario). Las apuestas mayores exigen más equity, pero el aumento es pequeño: un overbet de 2× el bote pide un 40%, uno de 3× alrededor del 43%, uno de 5× alrededor del 45% — y ninguna apuesta, por enorme que sea, llega a pedir más del 50%.
 
 **Q. ¿Qué es la regla del 2 y 4?**
 
@@ -233,7 +233,7 @@ A. El sizing de la apuesta es la otra cara de las pot odds — tu apuesta fija e
 
 **Q. ¿Tu equity debería ser mayor o menor que tus pot odds?**
 
-A. Mayor. Tus pot odds te dan la equity que *necesitas* para pagar (call ÷ bote final); tu equity es cuántas veces vas a ganar de verdad. Pagas cuando tu equity es *mayor* que ese número necesario y foldeas cuando es menor. Si una apuesta de medio bote necesita un 25% y tu proyecto de color tiene un 35%, entonces 35% > 25% → un call rentable.
+A. Mayor. Tus pot odds te dan la equity que *necesitas* para pagar (call ÷ bote final); tu equity es cuántas veces vas a ganar de verdad. Pagas cuando tu equity es *mayor* que ese número necesario y foldeas cuando es menor. Si una apuesta de medio bote necesita un 25% y tu proyecto de color tiene un 35% (con dos cartas por venir — verás el turn y el river sin más apuestas), entonces 35% > 25% → un call rentable.
 
 **Q. ¿Qué es el MDF (frecuencia mínima de defensa) en el póker?**
 

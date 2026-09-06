@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Sim — mãos de poker podem empatar. O pote é dividido (um chop) quando dois ou mais jogadores mostram a mesma melhor mão de cinco cartas no showdown. O naipe nunca desempata, e qualquer ficha ímpar que sobra vai para o primeiro empatado à esquerda do botão do dealer.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-04",
+  updated: "2026-09-06",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🃏",
@@ -84,11 +84,13 @@ Pares e dois pares geralmente são decididos por kickers — mas se os kickers t
 
 Sim — e nem precisa de duas mãos monstruosas. Quando as cinco cartas comunitárias já formam as melhores cinco possíveis para todos que restam, ==**a mesa joga**== e todos os jogadores restantes dividem o pote, sejam dois ou cinco.
 
-É a minha mão 8-8-8-A-K: meu J-10 e o 5-2 dele jogaram a trinca de oitos da mesa com kickers ás-rei — cinco cartas idênticas, chop automático. O caso extremo é um board como A♠ K♠ Q♠ J♠ 10♠ (um royal flush): nenhuma carta fechada pode melhorá-lo, então ==g:todos que restam chopam==.
+É a minha mão 8-8-8-A-K: meu J-10 e o 5-2 dele jogaram a trinca de oitos da mesa com kickers ás-rei — cinco cartas idênticas, um chop assim que as duas mãos foram mostradas. O caso extremo é um board como A♠ K♠ Q♠ J♠ 10♠ (um royal flush): nenhuma carta fechada pode melhorá-lo, então ==g:todos que restam chopam==.
 
 > **A verificação:** *a sua* melhor mão de cinco — usando pelo menos uma carta fechada — bate as cinco da própria mesa? Se sim, você joga sua mão. Se não, a mesa joga e você provavelmente vai chopar. O método completo para varrer uma mesa desse jeito está em [como ler a mesa e achar suas melhores 5](/pt/blog/holdem-reading-the-board).
 
-:::tip[Se a mesa joga e alguém aposta no river, **o erro é dar fold no automático**. Quando nada consegue bater a mesa o empate é certo, e pagar ainda traz de volta metade de tudo que já estava no pote — dar fold entrega essa metade de graça. Quando a mesa pode ser batida, calcule a frequência: contra uma aposta do tamanho do pote você precisa que o adversário também esteja apenas jogando a mesa em cerca de 2 de cada 3 vezes; contra meio pote, metade das vezes. É uma barra alta: contra uma aposta do tamanho do pote, foldar só é certo quando ele tem mão de verdade mais de **uma vez em três** — e isso só se aplica ao caso em que a mesa ainda pode ser batida.]:::
+**E a parte que mais importa na mesa: sua mão só ganha se você virar as cartas para cima.** Uma mão que foi para o muck está morta mesmo que fosse dividir o pote — jogando a mesa, você ainda precisa mostrar suas cartas fechadas viradas para cima, ou perde sua parte do pote (regra 172 da WSOP para o jogo de cash — "Live Action"; as regras de torneio da WSOP repetem isso na regra 75). Quem mostra primeiro e como a sequência corre está nas [regras de showdown](/pt/blog/holdem-showdown-rules).
+
+:::tip[Se a mesa joga e alguém aposta no river, **o erro é dar fold no automático**. Quando nada consegue bater a mesa o empate é certo, e pagar ainda traz de volta metade de tudo que já estava no pote — dar fold entrega essa metade de graça. Quando a mesa pode ser batida, calcule a frequência: contra uma aposta do tamanho do pote você precisa que o adversário também esteja apenas jogando a mesa em cerca de 2 de cada 3 vezes; contra meio pote, metade das vezes. É uma barra alta: contra uma aposta do tamanho do pote, basta que ele tenha mão de verdade mais de **uma vez em três** para o fold ficar certo — e num river em que a mesa ainda pode ser batida, isso é o normal.]:::
 
 ---
 

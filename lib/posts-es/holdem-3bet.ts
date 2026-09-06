@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Un 3-bet es la primera resubida antes del flop — se llama 3-bet porque la ciega grande es la primera apuesta, la subida de apertura la segunda y tu resubida la tercera. Haz un 3-bet de valor con un núcleo cerrado (QQ+, AK) más unos pocos faroles con bloqueadores del mismo palo como A5s, dale un tamaño de unas 3x la apertura en posición y 4x fuera de posición, y mantén tu frecuencia global de 3-bet cerca del 6–10%. Cuando eres tú quien se enfrenta a un 3-bet, resube con un 4-bet tus manos premium, iguala las que se juegan bien y foldea el resto — foldeando más de lo 'balanceado' contra jugadores de stakes bajos que nunca farolean.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-08-26",
+  updated: "2026-09-06",
   masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -96,8 +96,8 @@ Verás estas dos palabras por todas partes en la estrategia del 3-bet. Describen
 | | Lineal (merged) | Polarizado |
 |:---|:---|:---|
 | **Forma** | Un solo bloque sólido de tus mejores manos | Barra de pesas: valor más fuerte **+** faroles, nada en medio |
-| **Ejemplo** | QQ+, AK, AQs, JJ, TT, KQs | AA-KK + faroles tipo A5s; haz flat con el medio QQ/AQ/TT |
-| **Úsalo cuando** | La apertura es **amplia y débil** (posición tardía), o estás **en posición** | La apertura es **fuerte/cerrada** (posición temprana), o estás **en las ciegas** |
+| **Ejemplo** | QQ+, AK, AQs, JJ, TT, KQs | QQ+ y AK + faroles tipo A5s; haz flat con el medio JJ/AQ/TT |
+| **Úsalo cuando** | La apertura es **amplia y débil** (posición tardía), o estás **en posición**. Contra la misma apertura, la ciega pequeña tira más a lineal que la grande, porque raramente hace flat | La apertura es **fuerte/cerrada** (posición temprana), o estás en la **ciega grande** (donde haces flat con el medio más barato) |
 
 </div>
 
@@ -138,7 +138,7 @@ Enfrentando una apertura tienes tres opciones, no dos. Este es el mapa que casi 
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Tu mano | En posición (p. ej. botón vs un robo) | Fuera de posición (p. ej. en las ciegas) |
+| Tu mano | En posición (p. ej. botón vs un robo) | Fuera de posición (ciega pequeña — la ciega grande hace flat más amplio, ver abajo) |
 |:---|:---|:---|
 | **Premium** (QQ+, AK) | 3-bet por valor | 3-bet por valor |
 | **Fuertes** (JJ-TT, AQ, KQs) | 3-bet vs aperturas amplias; flat vs cerradas | Casi siempre 3-bet o fold — hacer flat OOP es débil |
@@ -148,7 +148,7 @@ Enfrentando una apertura tienes tres opciones, no dos. Este es el mapa que casi 
 
 </div>
 
-La gran conclusión: **hacer flat es legítimo en posición** — los solvers modernos mantienen un rango de flat sano en el botón porque actúas último en cada calle del postflop y detrás de ti solo quedan las dos ciegas, así que el riesgo de squeeze es bajo y ves flops de forma rentable. Fuera de posición es más débil, pero con una distinción importante: desde la **ciega pequeña**, prefiere un *3-bet o fold* polarizado, ya que igualar amplio OOP realiza mal tu equity y construye un rango débil y con techo. La **ciega grande** es la excepción — como cierras la acción y ya te dan precio, ahí defiendes *igualando* mucho más amplio, sobre todo contra robos de posición tardía. La posición, otra vez, lo cambia todo — la misma lección del [manual de posición](/es/blog/holdem-position-play).
+La gran conclusión: **hacer flat es legítimo en posición** — los solvers modernos mantienen un rango de flat sano en el botón porque actúas último en cada calle del postflop y detrás de ti solo quedan las dos ciegas, así que el riesgo de squeeze es bajo y ves flops de forma rentable. Fuera de posición es más débil, pero con una distinción importante: desde la **ciega pequeña**, inclínate por el *3-bet o fold* con un rango más **lineal**: igualar amplio OOP realiza mal tu equity y construye un rango débil y con techo, así que subes la parte alta de tu rango y dejas ir el resto. La **ciega grande** es la excepción — como cierras la acción y ya te dan precio, ahí defiendes *igualando* mucho más amplio, sobre todo contra robos de posición tardía. Eso deja tus 3-bets desde la ciega grande comparativamente **polarizados**: las manos fuertes y los faroles, con el medio igualado. La posición, otra vez, lo cambia todo — la misma lección del [manual de posición](/es/blog/holdem-position-play).
 
 ---
 
@@ -170,19 +170,19 @@ Los buenos faroles de squeeze son las mismas manos con bloqueadores del mismo pa
 
 ![Un jugador de póker aguantando la mirada a una resubida en el preflop con la mano apoyada sobre sus fichas, sopesando si igualar, meter 4-bet o foldear a un 3-bet](/images/holdem-3bet-facing.webp "La mitad del 3-bet que nadie enseña: cuando alguien te resube, la mayoría de tu rango simplemente debería foldear — sobre todo contra jugadores que nunca farolean")
 
-Aquí tienes la mitad del 3-bet que casi todos los artículos se saltan: **estarás en el lado receptor mucho más a menudo de lo que 3-beteas tú.** Cuando abres y te resuben, tienes tres respuestas:
+Aquí tienes la mitad del 3-bet que casi todos los artículos se saltan: **estarás en el lado receptor más o menos tan a menudo como 3-beteas tú.** Cuando abres y te resuben, tienes tres respuestas:
 
 - **4-bet** — por valor con tus premium (QQ+, AK), más el farol ocasional con bloqueadores (una mano tipo A5s). Un 4-bet dice "no me voy a ninguna parte".
 - **Igualar** — con manos que ligan bien y tienen la equity o la posición para continuar: parejas servidas buscando trío, broadways del mismo palo y manos fuertes que no quieren inflar el bote hacia una guerra de 4-bets.
 - **Fold** — todo lo demás. La mayor parte de tu rango de apertura simplemente debería rendirse a un 3-bet; eso es normal, no debilidad.
 
-¿Cuánto deberías continuar? La base teórica es la **Frecuencia Mínima de Defensa (MDF)** — la parte de tu rango que debes continuar para que el que 3-betea no pueda ganar dinero faroleando con dos cartas cualquiera. Es ==bote ÷ (bote + apuesta)== — donde *bote* es lo que hay en el medio antes del 3-bet y *apuesta* es el tamaño del 3-bet —, que contra tamaños típicos de 3-bet aterriza en torno a **un tercio de tu rango** en el vacío (con un 3-bet de 3x: 4.5bb de bote ÷ (4.5bb + 9bb) ≈ 33%). Pero aquí tienes el exploit que gana dinero en las mesas reales:
+¿Cuánto deberías continuar? La base teórica es la **Frecuencia Mínima de Defensa (MDF)** — la parte de tu rango que debes continuar para que el que 3-betea no pueda ganar dinero faroleando con dos cartas cualquiera. Es ==bote ÷ (bote + apuesta)== — donde *bote* es lo que hay en el medio antes del 3-bet y *apuesta* es lo que el que 3-betea está **añadiendo** (desde una ciega, es la subida menos las fichas que ya tenía puestas) —, que contra tamaños típicos de 3-bet aterriza en torno a **un tercio de tu rango** en el vacío (con un 3-bet de 3x desde el botón: 4.5bb de bote ÷ (4.5bb + 9bb) ≈ 33%). Pero aquí tienes el exploit que gana dinero en las mesas reales:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Stat de fold-to-3-bet del villano | Qué te dice | Tu ajuste |
 |:---:|:---|:---|
-| **~35% (raramente foldea)** | Una calling station — sus 3-bets y calls van cargados de valor | 3-betéalo **solo por valor**, deja de farolear y apuesta por valor sin descanso |
+| **~35% (raramente foldea)** | Una calling station — paga con casi cualquier cosa, así que un farol no tiene fold equity | 3-betéalo **solo por valor**, deja de farolear y apuesta por valor sin descanso |
 | **~55% (balanceado)** | Un regular que piensa | Juega cerca del GTO — mezcla valor y faroles con bloqueadores |
 | **~70%+ (foldea demasiado)** | Un nit explotable | 3-betéalo **light mucho más a menudo** — te regala el bote |
 
@@ -214,8 +214,8 @@ Ahora dale la vuelta: si hubiera hecho un 3-bet con una mano **light** como A5s 
 | **3-betear solo valor y nada más** | Te vuelves boca arriba; los buenos jugadores foldean todo menos coolers | Añade faroles con bloqueadores del mismo palo (A5s) |
 | **No 3-betear de farol nunca** | Dejas dinero sobre la mesa vs robos amplios; tus flats quedan demasiado débiles | Balancea el valor con unos pocos 3-bets light |
 | **3-betear merged vs un nit** | Tu "valor" está dominado por su rango solo-premium | Ve polarizado o simplemente foldea vs un nit de verdad |
-| **Farolear 3-bet con basura (Q7o)** | Sin bloqueadores, sin equity — debes foldear a todo 4-bet | Elige solo manos con bloqueadores/jugabilidad |
-| **Hacer demasiado flat en las ciegas** | Mala realización de equity OOP; un rango débil y con techo | Prefiere un 3-bet-o-fold polarizado |
+| **Farolear 3-bet con basura (Q7o)** | Bloqueadores flojos y poca equity de respaldo — debes foldear a todo 4-bet | Elige solo manos con bloqueadores/jugabilidad |
+| **Hacer demasiado flat desde la ciega pequeña** | Mala realización de equity OOP; un rango débil y con techo | 3-bet-o-fold desde la ciega pequeña; guarda los flats amplios para la ciega grande |
 
 </div>
 
@@ -256,7 +256,7 @@ A. Divide tus 3-bets en valor y faroles. El núcleo de valor es QQ+ y AK, ampli�
 
 **Q. ¿Cuándo deberías hacer 3-bet en vez de solo igualar (flat)?**
 
-A. Haz 3-bet cuando tengas una premium, cuando el que abre sea amplio y débil, o cuando estés fuera de posición y quieras evitar un mal flat. Hacer flat está bien en posición con manos especulativas (parejas bajas, conectores del mismo palo) donde puedes ver flops baratos con el botón. Fuera de posición, prefiere el 3-bet o el fold antes que igualar.
+A. Haz 3-bet cuando tengas una premium, cuando el que abre sea amplio y débil, o cuando estés fuera de posición y quieras evitar un mal flat. Hacer flat está bien en posición con manos especulativas (parejas bajas, conectores del mismo palo) donde puedes ver flops baratos con el botón. Fuera de posición, prefiere el 3-bet o el fold antes que igualar — con la ciega grande como excepción, donde cierras la acción a buen precio y defiendes igualando mucho más amplio.
 
 **Q. ¿Qué es un 3-bet light?**
 
@@ -264,7 +264,7 @@ A. Un 3-bet light (o 3-bet de farol) es resubir con una mano que no esperas que 
 
 **Q. ¿Cuál es la diferencia entre un rango de 3-bet lineal y uno polarizado?**
 
-A. Un rango lineal (merged) es un solo bloque sólido de tus mejores manos — se usa contra aperturas amplias y débiles o cuando estás en posición. Un rango polarizado son tus manos más fuertes más faroles, con las manos medias eliminadas e igualadas en su lugar — se usa contra aperturas cerradas o desde las ciegas, donde las manos medias se ven reventadas por los 4-bets.
+A. Un rango lineal (merged) es un solo bloque sólido de tus mejores manos — se usa contra aperturas amplias y débiles o cuando estás en posición. Un rango polarizado son tus manos más fuertes más faroles, con las manos medias eliminadas e igualadas en su lugar — se usa contra aperturas cerradas y desde la ciega grande, donde el precio que ya te dan te deja igualar con el medio en lugar de que los 4-bets te saquen de la mano. La ciega pequeña, sin un call barato disponible, tira más a lineal.
 
 **Q. ¿Cuánto deberías subir en un 3-bet?**
 
@@ -272,7 +272,7 @@ A. Unas 3x la apertura en posición y 4–4.5x fuera de posición. Así que cont
 
 **Q. ¿Cuál es un buen rango de 3-bet por posición?**
 
-A. Tu rango se abre a medida que avanzas en la mesa. Contra una apertura de posición temprana, ciérralo hacia el núcleo — QQ+, AK y unos pocos faroles con bloqueadores como A5s. Contra una apertura de posición tardía (Cutoff o botón), que es mucho más amplia, añade JJ, TT, AQs y KQs por valor y más faroles del mismo palo. Desde las ciegas prefiere un 3-bet-o-fold polarizado, y desde el botón puedes ir más lineal porque juegas en posición.
+A. Tu rango se abre a medida que avanzas en la mesa. Contra una apertura de posición temprana, ciérralo hacia el núcleo — QQ+, AK y unos pocos faroles con bloqueadores como A5s. Contra una apertura de posición tardía (Cutoff o botón), que es mucho más amplia, añade JJ, TT, AQs y KQs por valor y más faroles del mismo palo. Desde la ciega pequeña juega un 3-bet-o-fold con un rango más lineal; desde la ciega grande, con el precio que ya tienes, haces flat con el medio y tu 3-bet queda más polarizado; y desde el botón puedes ir más lineal porque juegas en posición.
 
 **Q. ¿Cuál es un buen porcentaje de 3-bet?**
 
@@ -288,7 +288,7 @@ A. Tienes tres opciones: meter 4-bet con tus premium (QQ+, AK) más el farol oca
 
 **Q. ¿Cuál es un buen porcentaje de fold-to-3-bet?**
 
-A. En torno al 55% es una base razonable y más o menos balanceada — continúas con la parte alta de tu rango y dejas ir el resto. Foldear mucho más que eso te vuelve explotable por los 3-bets light; foldear mucho menos significa que estás igualando o metiendo 4-bet demasiado amplio. Ajústate al rival: foldea más contra jugadores que nunca farolean con un 3-bet.
+A. En torno al 55% es una base razonable y más o menos balanceada — continúas con la parte alta de tu rango y dejas ir el resto. Eso es más amplio que lo que dicta la MDF pura, que contra un 3-bet grande te haría defender solo alrededor de un tercio — es decir, no foldear más de un 66.6% aproximadamente. Trata ese número como un techo, no como un objetivo. La MDF asume que los faroles tienen cero equity, pero un farol de 3-bet real como A5s tiene más o menos un 30% de equity contra tu rango de continuación, lo que empuja la frecuencia de fold de equilibrio muy por debajo de ese techo teórico. Así que el 55% es una base práctica, no una garantía: un 3-bet light con equity de verdad todavía puede ser rentable contra esa frecuencia. Foldear mucho más que eso te vuelve explotable por los 3-bets light; foldear mucho menos significa que estás igualando o metiendo 4-bet demasiado amplio. Ajústate al rival: foldea más contra jugadores que nunca farolean con un 3-bet.
 
 **Q. ¿Deberías hacer 3-bet o 4-bet all-in con un stack corto en un torneo?**
 
@@ -301,7 +301,7 @@ A. A medida que los stacks se acortan — más o menos 10–25 ciegas grandes �
 1. **Un 3-bet es la primera resubida preflop** — tercera apuesta de la secuencia, porque la ciega cuenta como apuesta uno.
 2. **Construye dos rangos:** un núcleo de valor (QQ+, AK) con el que quieres que te paguen, y faroles con bloqueadores del mismo palo (A5s y compañía) elegidos por sus bloqueadores y su jugabilidad.
 3. **Dale un tamaño de ~3x en posición, ~4x fuera** — y nunca pequeño fuera de posición.
-4. **Ajusta la forma a la situación:** lineal vs aperturas amplias/débiles, polarizado vs aperturas cerradas y desde las ciegas.
+4. **Ajusta la forma a la situación:** lineal vs aperturas amplias/débiles (y desde la ciega pequeña), polarizado vs aperturas cerradas y desde la ciega grande.
 5. **Enfrentando un 3-bet, la mayoría de las manos foldean** — 4-bet con las premium, iguala las jugables y foldea más de lo "balanceado" contra rivales que nunca farolean.
 
 Domina el 3-bet y dejas de ser el jugador que solo iguala con ases y gana un bote minúsculo. Combínalo con un [rango de manos iniciales](/es/blog/holdem-starting-hands-chart) disciplinado, una consciencia afilada de la [posición](/es/blog/holdem-position-play) y el [marco de estrategia](/es/blog/holdem-strategy) completo, y tu juego preflop se adelanta en silencio al del resto.

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Um 3-bet é o primeiro re-raise antes do flop — chamado de 3-bet porque o big blind é a primeira aposta, o open-raise a segunda, e o seu re-raise a terceira. Dê 3-bet por valor com um núcleo apertado (QQ+, AK) mais alguns blefes de bloqueio suited como A5s, dimensione em torno de 3x o open in position e 4x out of position, e mantenha sua frequência geral de 3-bet perto de 6–10%. Quando você é quem enfrenta um 3-bet, 4-bete suas mãos premium, pague as mãos que jogam bem, e folde o resto — foldando mais que o \"balanceado\" contra jogadores de stakes baixos que nunca blefam.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-04",
+  updated: "2026-09-06",
   masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -97,7 +97,7 @@ Você vai ver essas duas palavras por todo canto na estratégia de 3-bet. Elas d
 |:---|:---|:---|
 | **Formato** | Um bloco sólido das suas melhores mãos | Halteres: o valor mais forte **+** blefes, nada no meio |
 | **Exemplo** | QQ+, AK, AQs, JJ, TT, KQs | QQ+ e AK + blefes tipo A5s; flate o meio JJ/AQ/TT |
-| **Use quando** | O open é **aberto e fraco** (posição tardia), ou você está **in position** | O open é **forte/apertado** (posição inicial), ou você está **nos blinds** |
+| **Use quando** | O open é **aberto e fraco** (posição tardia), ou você está **in position**. Contra o mesmo open, o small blind pende mais para o linear do que o big blind, porque o SB raramente flata | O open é **forte/apertado** (posição inicial), ou você está no **big blind** (onde você flata o meio com desconto) |
 
 </div>
 
@@ -138,7 +138,7 @@ Enfrentando um open, você tem três escolhas, não duas. Este é o mapa que a m
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Sua mão | In position (ex.: button vs um steal) | Out of position (ex.: nos blinds) |
+| Sua mão | In position (ex.: button vs um steal) | Out of position (small blind — o big blind flata mais aberto, veja abaixo) |
 |:---|:---|:---|
 | **Premium** (QQ+, AK) | 3-bet por valor | 3-bet por valor |
 | **Fortes** (JJ-TT, AQ, KQs) | 3-bet vs opens abertos; flate vs apertados | Majoritariamente 3-bet ou fold — flatar OOP é fraco |
@@ -148,7 +148,7 @@ Enfrentando um open, você tem três escolhas, não duas. Este é o mapa que a m
 
 </div>
 
-A grande lição: **flatar é legítimo in position** — solvers modernos mantêm um range saudável de flat no button porque você age por último em todas as streets do pós-flop e só as duas blinds ficam atrás de você, então o risco de squeeze é baixo e você vê flops lucrativamente. Out of position é mais fraco, mas com uma divisão importante: do **small blind**, prefira um *3-bet ou fold* polarizado, já que pagar aberto OOP realiza sua equity mal e constrói um range fraco e capado. O **big blind** é a exceção — porque você fecha a ação e já está recebendo um preço, você defende *pagando* muito mais aberto ali, especialmente contra steals de posição tardia. A posição, de novo, muda tudo — a mesma lição do [manual de posição](/pt/blog/holdem-position-play).
+A grande lição: **flatar é legítimo in position** — solvers modernos mantêm um range saudável de flat no button porque você age por último em todas as streets do pós-flop e só as duas blinds ficam atrás de você, então o risco de squeeze é baixo e você vê flops lucrativamente. Out of position é mais fraco, mas com uma divisão importante: do **small blind**, incline para *3-bet ou fold* com um range mais **linear** — pagar aberto OOP realiza sua equity mal e constrói um range fraco e capado, então você aumenta o topo do seu range e deixa o resto ir. O **big blind** é a exceção — porque você fecha a ação e já está recebendo um preço, você defende *pagando* muito mais aberto ali, especialmente contra steals de posição tardia. Isso deixa seus 3-bets do big blind comparativamente **polarizados**: as mãos fortes e os blefes, com o meio flatado. A posição, de novo, muda tudo — a mesma lição do [manual de posição](/pt/blog/holdem-position-play).
 
 ---
 
@@ -176,13 +176,13 @@ Aqui está a metade do 3-bet que quase todo artigo pula: **você vai estar do la
 - **Pagar** — com mãos que flopam bem e têm a equity ou posição para continuar: pares para set-mine, broadways suited, e mãos fortes que não querem inflar o pote numa guerra de 4-bet.
 - **Foldar** — todo o resto. A maior parte do seu range de open deveria simplesmente entregar a um 3-bet; isso é normal, não fraqueza.
 
-Quanto você deve continuar? A referência teórica é a **Frequência Mínima de Defesa (MDF)** — a fatia do seu range que você precisa continuar para que o 3-bettor não possa lucrar blefando com duas cartas quaisquer. É ==pote ÷ (pote + aposta)== — onde *pote* é o que está no meio antes do 3-bet e *aposta* é o tamanho do 3-bet — o que, contra sizes típicos de 3-bet, dá em torno de **um terço do seu range** no vácuo (um 3-bet de 3x: 4,5bb de pote ÷ (4,5bb + 9bb) ≈ 33%). Continuar um terço quer dizer foldar no máximo uns 67% nesse spot isolado — e como o stat de HUD «fold to 3-bet» agrega todos os sizes e posições, um jogador balanceado fica perto dos ~55% de fold da tabela abaixo, dentro desse teto. Mas aqui está o exploit que ganha dinheiro em mesas reais:
+Quanto você deve continuar? A referência teórica é a **Frequência Mínima de Defesa (MDF)** — a fatia do seu range que você precisa continuar para que o 3-bettor não possa lucrar blefando com duas cartas quaisquer. É ==pote ÷ (pote + aposta)== — onde *pote* é o que está no meio antes do 3-bet e *aposta* é o que o 3-bettor está **acrescentando** (de um blind, é o aumento menos as fichas que ele já postou) — o que, contra sizes típicos de 3-bet, dá em torno de **um terço do seu range** no vácuo (um 3-bet de 3x do button: 4,5bb de pote ÷ (4,5bb + 9bb) ≈ 33%). Continuar um terço quer dizer foldar no máximo uns 66,6% nesse spot isolado — um teto, não um alvo; os ~55% de fold da tabela abaixo ficam abaixo dele porque os blefes reais têm equity (veja o FAQ). Mas aqui está o exploit que ganha dinheiro em mesas reais:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Stat de fold-to-3-bet do vilão | O que te diz | Seu ajuste |
 |:---:|:---|:---|
-| **~35% (raramente folda)** | Um calling station — os raises dele são só valor, e ele paga com quase tudo | 3-bete ele **só por valor**, pare de blefar, e value-bete sem dó |
+| **~35% (raramente folda)** | Um calling station — ele paga com quase tudo, então um blefe não tem fold equity | 3-bete ele **só por valor**, pare de blefar, e value-bete sem dó |
 | **~55% (balanceado)** | Um regular que pensa | Jogue perto do GTO — misture valor e blefes de bloqueio |
 | **~70%+ (folda demais)** | Um nit explorável | 3-bete ele **light muito mais vezes** — ele te entrega o pote |
 
@@ -215,7 +215,7 @@ Agora inverta: se eu tivesse dado 3-bet numa mão **light** tipo A5s ali e o cut
 | **Nunca blefar de 3-bet** | Deixa dinheiro na mesa vs steals abertos; seus flats ficam fracos demais | Balanceie valor com alguns 3-bets light |
 | **3-bet merged vs um nit** | Seu "valor" está dominado pelo range só-premium dele | Vá polarizado ou simplesmente folde vs um nit de verdade |
 | **Blefar de 3-bet com lixo (Q7o)** | Blockers fracos e pouca equity de reserva — você tem que foldar a todo 4-bet | Escolha só mãos de blocker/jogabilidade |
-| **Flatar demais nos blinds** | Realização de equity ruim OOP; um range fraco e capado | Prefira um 3-bet-ou-fold polarizado |
+| **Flatar demais do small blind** | Realização de equity ruim OOP; um range fraco e capado | 3-bet-ou-fold do SB; guarde os flats abertos para o big blind |
 
 </div>
 
@@ -248,7 +248,7 @@ A. Divida seus 3-bets em valor e blefes. O núcleo de valor é QQ+ e AK, estende
 
 **Q. Quando você deve dar 3-bet vs. só pagar (flatar)?**
 
-A. Dê 3-bet quando você tem uma premium, quando o opener é aberto e fraco, ou quando você está out of position e quer evitar um flat ruim. Flatar é bom in position com mãos especulativas (pares baixos, conectores suited) onde você consegue ver flops baratos com o button. Out of position, prefira dar 3-bet ou foldar em vez de pagar.
+A. Dê 3-bet quando você tem uma premium, quando o opener é aberto e fraco, ou quando você está out of position e quer evitar um flat ruim. Flatar é bom in position com mãos especulativas (pares baixos, conectores suited) onde você consegue ver flops baratos com o button. Out of position, prefira dar 3-bet ou foldar em vez de pagar — com o big blind como exceção, onde você fecha a ação recebendo um preço e defende pagando muito mais aberto.
 
 **Q. O que é um 3-bet light?**
 
@@ -256,7 +256,7 @@ A. Um 3-bet light (ou blefe de 3-bet) é dar re-raise com uma mão que você nã
 
 **Q. Qual a diferença entre um range de 3-bet linear e um polarizado?**
 
-A. Um range linear (merged) é um bloco sólido das suas melhores mãos — usado contra opens abertos e fracos ou quando in position. Um range polarizado são suas mãos mais fortes mais blefes, com as mãos médias removidas e flatadas no lugar — usado contra opens apertados ou dos blinds, onde as mãos médias são explodidas por 4-bets.
+A. Um range linear (merged) é um bloco sólido das suas melhores mãos — usado contra opens abertos e fracos ou quando in position. Um range polarizado são suas mãos mais fortes mais blefes, com as mãos médias removidas e flatadas no lugar — usado contra opens apertados e quando você está no big blind, onde o preço que você já está recebendo deixa você pagar com o meio em vez de ser explodido dele por 4-bets. O small blind, sem call barato disponível, puxa mais para o linear.
 
 **Q. De quanto você deve dar um 3-bet?**
 
@@ -276,7 +276,7 @@ A. Você tem três opções: dar 4-bet nas suas premium (QQ+, AK) mais o blefe d
 
 **Q. Qual é uma boa porcentagem de fold-to-3-bet?**
 
-A. Em torno de 55% é uma referência razoável e mais ou menos balanceada — você continua com o topo do seu range e deixa o resto ir. (A MDF pura, contra os sizes típicos de 3-bet, só exige defender cerca de um terço — um teto de ~67% de fold. O stat de HUD fica abaixo disso porque agrega todos os sizes e posições.) Foldar muito mais que isso te deixa explorável por 3-bets light; foldar muito menos significa que você está pagando ou dando 4-bet aberto demais. Ajuste ao adversário: folde mais contra jogadores que nunca blefam de 3-bet.
+A. Em torno de 55% é uma referência razoável e mais ou menos balanceada — você continua com o topo do seu range e deixa o resto ir. Isso é mais aberto que a MDF pura, que contra um 3-bet grande mandaria você defender só cerca de um terço — ou seja, foldar no máximo uns 66,6%. Trate esse número como um teto, não como um alvo. A MDF assume que os blefes têm equity zero, mas um blefe de 3-bet de verdade como A5s carrega uns 30% de equity contra o seu range de continuação, o que empurra a frequência de fold de equilíbrio bem abaixo desse teto calculado no vácuo. Então 55% é uma referência prática, não uma garantia: um 3-bet light com equity de verdade ainda pode dar lucro contra ela. Foldar muito mais que isso te deixa explorável por 3-bets light; foldar muito menos significa que você está pagando ou dando 4-bet aberto demais. Ajuste ao adversário: folde mais contra jogadores que nunca blefam de 3-bet.
 
 **Q. Você deve dar 3-bet ou 4-bet all-in com um stack curto num torneio?**
 
@@ -289,7 +289,7 @@ A. Conforme os stacks ficam curtos — em torno de 10–25 big blinds — muitas
 1. **Um 3-bet é o primeiro re-raise pré-flop** — terceira aposta na sequência, porque o blind conta como aposta um.
 2. **Construa dois ranges:** um núcleo de valor (QQ+, AK) que você quer que paguem, e blefes de bloqueio suited (A5s e companhia) escolhidos por blockers e jogabilidade.
 3. **Dimensione ~3x in position, ~4x out** — e nunca pequeno out of position.
-4. **Case o formato ao spot:** linear vs opens abertos/fracos, polarizado vs opens apertados e dos blinds.
+4. **Case o formato ao spot:** linear vs opens abertos/fracos (e quando você está no small blind), polarizado vs opens apertados e quando você está no big blind.
 5. **Enfrentando um 3-bet, a maioria das mãos folda** — 4-bete as premium, pague as jogáveis, e folde mais que o "balanceado" contra adversários que nunca blefam.
 
 Acerte o 3-bet e você deixa de ser o jogador que só paga com ases e ganha um pote minúsculo. Combine com um [range disciplinado de mãos iniciais](/pt/blog/holdem-starting-hands-chart), consciência afiada de [posição](/pt/blog/holdem-position-play), e o [framework completo de estratégia](/pt/blog/holdem-strategy), e seu jogo pré-flop silenciosamente sai na frente do campo.

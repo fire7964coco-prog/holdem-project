@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Eine 3-Bet ist der erste Re-Raise vor dem Flop – sie heißt 3-Bet, weil der Big Blind die erste Bet ist, der Open-Raise die zweite und dein Re-Raise die dritte. 3-bette auf Value einen engen Kern (QQ+, AK) plus ein paar suited Blocker-Bluffs wie A5s, size sie in Position auf etwa das 3-fache des Opens und out of Position auf das 4-fache, und halte deine gesamte 3-Bet-Frequenz bei 6–10%. Wenn du selbst gegen eine 3-Bet sitzt, 4-bette deine Premiums, calle die Hände, die gut spielen, und folde den Rest – gegen Low-Stakes-Spieler, die nie bluffen, häufiger als „ausgeglichen“.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-08-18",
+  updated: "2026-09-06",
   masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "16 Min.",
@@ -96,7 +96,7 @@ Hier die Blocker-Logik in einem Satz: **Ein Ass zu halten macht es mathematisch 
 ## Wann spielst du eine lineare, wann eine polarisierte 3-Bet-Range?
 
 > **Kurze Antwort**
-> **Linear** gegen weite, schwache Opens und wenn du in Position bist – dort liegen auch Mittelhände wie AQ und TT wirklich vorne. **Polarisiert** gegen enge Opens aus früher Position und aus den Blinds, weil dieselben Mittelhände dann dominiert sind. Die Faustregel dahinter: Je eher du von deiner Hand weggeblasen wirst, desto polarisierter spielst du.
+> **Linear** gegen weite, schwache Opens und wenn du in Position bist – dort liegen auch Mittelhände wie AQ und TT wirklich vorne. **Polarisiert** gegen enge Opens aus früher Position und aus dem Big Blind, weil dieselben Mittelhände dann dominiert sind. Die Faustregel dahinter: Je eher du von deiner Hand weggeblasen wirst, desto polarisierter spielst du.
 
 Diese beiden Wörter siehst du überall in der 3-Bet-Strategie. Sie beschreiben die *Form* deiner Range, und die richtige zu wählen ist das, was denkende Spieler von Hand-Chart-Robotern trennt.
 
@@ -105,8 +105,8 @@ Diese beiden Wörter siehst du überall in der 3-Bet-Strategie. Sie beschreiben 
 | | Linear (merged) | Polarisiert |
 |:---|:---|:---|
 | **Form** | Ein solider Block deiner besten Hände | Hantel: stärkste Value **+** Bluffs, nichts in der Mitte |
-| **Beispiel** | QQ+, AK, AQs, JJ, TT, KQs | AA-KK + A5s-artige Bluffs; flatte die QQ/AQ/TT-Mitte |
-| **Nutze sie, wenn** | Der Open **weit und schwach** ist (späte Position), oder du **in Position** bist | Der Open **stark/eng** ist (frühe Position), oder du **in den Blinds** bist |
+| **Beispiel** | QQ+, AK, AQs, JJ, TT, KQs | QQ+ und AK + A5s-artige Bluffs; flatte die JJ/AQ/TT-Mitte |
+| **Nutze sie, wenn** | Der Open **weit und schwach** ist (späte Position), oder du **in Position** bist. Gegen denselben Open tendiert der Small Blind stärker zu linear als der Big Blind, weil er kaum flattet | Der Open **stark/eng** ist (frühe Position), oder du im **Big Blind** sitzt (wo du die Mitte zum günstigen Preis flattest) |
 
 </div>
 
@@ -153,7 +153,7 @@ Gegen einen Open hast du drei Optionen, nicht zwei. Das ist die Landkarte, die d
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Deine Hand | In Position (z. B. Button vs. Steal) | Out of Position (z. B. in den Blinds) |
+| Deine Hand | In Position (z. B. Button vs. Steal) | Out of Position (Small Blind – der Big Blind verteidigt breiter per Call, siehe unten) |
 |:---|:---|:---|
 | **Premiums** (QQ+, AK) | 3-Bet auf Value | 3-Bet auf Value |
 | **Stark** (JJ-TT, AQ, KQs) | 3-Bet vs. weite Opens; flat vs. eng | Meist 3-Bet oder Fold – Flatten OOP ist schwach |
@@ -163,7 +163,7 @@ Gegen einen Open hast du drei Optionen, nicht zwei. Das ist die Landkarte, die d
 
 </div>
 
-Die große Erkenntnis: **Flatten ist in Position legitim** – moderne Solver behalten am Button eine gesunde Flat-Range, weil du postflop auf jeder Street als Letzter handelst und hinter dir nur die beiden Blinds sitzen, sodass das Squeeze-Risiko klein bleibt und du Flops profitabel siehst. Out of Position ist es schwächer, aber mit einem wichtigen Split: Aus dem **Small Blind** bevorzuge eine polarisierte *3-Bet-oder-Fold*, da weites Callen OOP deine Equity schlecht realisiert und eine schwache, cappbare Range baut. Der **Big Blind** ist die Ausnahme – weil du die Action schließt und ohnehin einen Preis bekommst, verteidigst du dort durch *Callen* weit weiter, besonders gegen Steals aus später Position. Position, wieder einmal, ändert alles – dieselbe Lektion wie im [Positions-Playbook](/de/blog/holdem-position-play).
+Die große Erkenntnis: **Flatten ist in Position legitim** – moderne Solver behalten am Button eine gesunde Flat-Range, weil du postflop auf jeder Street als Letzter handelst und hinter dir nur die beiden Blinds sitzen, sodass das Squeeze-Risiko klein bleibt und du Flops profitabel siehst. Out of Position ist es schwächer, aber mit einem wichtigen Split: Aus dem **Small Blind** tendierst du zu *3-Bet-oder-Fold* mit einer eher **linearen** Range – weites Callen OOP realisiert deine Equity schlecht und baut eine schwache, cappbare Range, also raist du die Spitze deiner Range und lässt den Rest gehen. Der **Big Blind** ist die Ausnahme – weil du die Action schließt und ohnehin einen Preis bekommst, verteidigst du dort durch *Callen* weit weiter, besonders gegen Steals aus später Position. Damit bleiben deine Big-Blind-3-Bets vergleichsweise **polarisiert**: die starken Hände und die Bluffs, mit geflatteter Mitte. Position, wieder einmal, ändert alles – dieselbe Lektion wie im [Positions-Playbook](/de/blog/holdem-position-play).
 
 ---
 
@@ -188,19 +188,19 @@ Gute Squeeze-Bluffs sind dieselben suited Blocker-Hände (A5s und Freunde), die 
 > **Kurze Antwort**
 > Meistens mit einem Fold – und das ist korrekt, nicht schwach. Du 4-bettest auf Value mit QQ+ und AK plus dem gelegentlichen Blocker-Bluff, du callst mit Händen, die gut floppen und die Position dafür haben, und der Rest deiner Open-Range gibt auf. Wie viel du verteidigen musst, sagt dir die Minimum Defense Frequency – im Vakuum rund ein Drittel.
 
-Hier die Hälfte des 3-Bettings, die fast jeder Artikel überspringt: **Du wirst weit öfter am empfangenden Ende sein, als du selbst 3-bettest.** Wenn du eröffnest und re-geraist wirst, hast du drei Antworten:
+Hier die Hälfte des 3-Bettings, die fast jeder Artikel überspringt: **Du wirst ungefähr genauso oft am empfangenden Ende sein, wie du selbst 3-bettest.** Wenn du eröffnest und re-geraist wirst, hast du drei Antworten:
 
 - **4-Bet** – auf Value mit deinen Premiums (QQ+, AK), plus dem gelegentlichen Blocker-Bluff (eine A5s-artige Hand). Eine 4-Bet sagt „Ich gehe nirgendwo hin.“
 - **Call** – mit Händen, die gut floppen und die Equity oder Position zum Weiterspielen haben: Pocket Pairs zum Set-Minen, suited Broadways und starke Hände, die den Pot nicht in einen 4-Bet-Krieg aufblähen wollen.
 - **Fold** – alles andere. Der Großteil deiner Open-Range sollte einfach gegen eine 3-Bet aufgeben; das ist normal, keine Schwäche.
 
-Wie viel solltest du weiterspielen? Die theoretische Basislinie ist die **Minimum Defense Frequency (MDF)** – der Anteil deiner Range, den du weiterspielen musst, damit der 3-Better nicht profitieren kann, indem er mit beliebigen zwei Karten blufft. Sie ist ==Pot ÷ (Pot + Bet)== – wobei *Pot* ist, was vor der 3-Bet in der Mitte liegt, und *Bet* die Größe der 3-Bet ist – was gegen typische 3-Bet-Sizes im Vakuum bei etwa **einem Drittel deiner Range** landet (eine 3x-3-Bet: 4,5bb Pot ÷ (4,5bb + 9bb) ≈ 33%). Aber hier der Exploit, der an echten Tischen Geld gewinnt:
+Wie viel solltest du weiterspielen? Die theoretische Basislinie ist die **Minimum Defense Frequency (MDF)** – der Anteil deiner Range, den du weiterspielen musst, damit der 3-Better nicht profitieren kann, indem er mit beliebigen zwei Karten blufft. Sie ist ==Pot ÷ (Pot + Bet)== – wobei *Pot* ist, was vor der 3-Bet in der Mitte liegt, und *Bet* das ist, was der 3-Better **zusätzlich in den Pot legt** (aus einem Blind heraus also der Raise abzüglich der bereits gesetzten Chips) – was gegen typische 3-Bet-Sizes im Vakuum bei etwa **einem Drittel deiner Range** landet (eine 3x-3-Bet vom Button: 4,5bb Pot ÷ (4,5bb + 9bb) ≈ 33%). Aber hier der Exploit, der an echten Tischen Geld gewinnt:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Villains Fold-to-3-Bet-Stat | Was sie dir sagt | Deine Anpassung |
 |:---:|:---|:---|
-| **~35% (foldet selten)** | Eine Calling Station – ihre 3-Bets und Calls sind value-lastig | 3-bette sie **nur auf Value**, hör auf zu bluffen und value-bette gnadenlos |
+| **~35% (foldet selten)** | Eine Calling Station – sie callt mit fast allem, ein Bluff hat also keine Fold-Equity | 3-bette sie **nur auf Value**, hör auf zu bluffen und value-bette gnadenlos |
 | **~55% (ausgeglichen)** | Ein denkender Regular | Spiele nahe an GTO – mische Value und Blocker-Bluffs |
 | **~70%+ (foldet zu viel)** | Ein exploitbarer Nit | 3-bette sie **viel öfter light** – sie schenken dir den Pot |
 
@@ -235,8 +235,8 @@ Jetzt dreh es um: Hätte ich dort eine **light** Hand wie A5s 3-gebettet und der
 | **Immer nur Value 3-betten** | Du wirst face-up; gute Spieler folden alles außer Coolern | Füge suited Blocker-Bluffs (A5s) hinzu |
 | **Nie 3-Bet-Bluffen** | Lässt Geld liegen vs. weite Steals; deine Flats werden zu schwach | Balanciere Value mit ein paar Light-3-Bets |
 | **Merged 3-betten vs. einen Nit** | Deine „Value“ ist von ihrer premium-only Range dominiert | Geh polarisiert oder folde einfach vs. einen echten Nit |
-| **Müll 3-Bet-bluffen (Q7o)** | Keine Blocker, keine Equity – du musst gegen jede 4-Bet folden | Wähle nur Blocker-/Playability-Hände |
-| **Zu viel Flatten in den Blinds** | Schlechte Equity-Realisierung OOP; eine schwache, cappbare Range | Im Small Blind eine polarisierte 3-Bet-oder-Fold; der Big Blind ist die Ausnahme und verteidigt per Call breiter |
+| **Müll 3-Bet-bluffen (Q7o)** | Schwache Blocker und wenig Backup-Equity – du musst gegen jede 4-Bet folden | Wähle nur Blocker-/Playability-Hände |
+| **Zu viel Flatten aus dem Small Blind** | Schlechte Equity-Realisierung OOP; eine schwache, cappbare Range | 3-Bet-oder-Fold aus dem Small Blind; die weiten Flats hebst du dir für den Big Blind auf |
 
 </div>
 
@@ -285,7 +285,7 @@ A. Eine Light-3-Bet (oder 3-Bet-Bluff) ist das Re-Raisen mit einer Hand, von der
 
 **Q. Was ist der Unterschied zwischen einer linearen und einer polarisierten 3-Bet-Range?**
 
-A. Eine lineare (merged) Range ist ein solider Block deiner besten Hände – genutzt gegen weite, schwache Opens oder wenn du in Position bist. Eine polarisierte Range sind deine stärksten Hände plus Bluffs, mit entfernten und stattdessen geflatteten Mittelhänden – genutzt gegen enge Opens oder aus den Blinds, wo Mittelhände von 4-Bets weggeblasen werden.
+A. Eine lineare (merged) Range ist ein solider Block deiner besten Hände – genutzt gegen weite, schwache Opens oder wenn du in Position bist. Eine polarisierte Range sind deine stärksten Hände plus Bluffs, mit entfernten und stattdessen geflatteten Mittelhänden – genutzt gegen enge Opens und aus dem Big Blind, wo du dank des Preises, den du ohnehin bekommst, die Mitte einfach callen kannst, statt sie von 4-Bets wegblasen zu lassen. Im Small Blind, wo dir dieser günstige Call fehlt, tendierst du stärker zu linear.
 
 **Q. Wie groß sollte eine 3-Bet gegen einen 3bb-Open sein?**
 
@@ -305,7 +305,7 @@ A. Du hast drei Optionen: 4-bette deine Premiums (QQ+, AK) plus den gelegentlich
 
 **Q. Was ist eine gute Fold-to-3-Bet-Prozentzahl?**
 
-A. Etwa 55% ist eine vernünftige, grob ausgeglichene Basislinie – du spielst mit dem oberen Teil deiner Range weiter und lässt den Rest gehen. Deutlich mehr zu folden macht dich für Light-3-Bets exploitbar; weit weniger bedeutet, dass du zu weit callst oder 4-bettest. Passe dich dem Gegner an: Folde mehr gegen Spieler, die nie 3-Bet-bluffen.
+A. Etwa 55% ist eine vernünftige, grob ausgeglichene Basislinie – du spielst mit dem oberen Teil deiner Range weiter und lässt den Rest gehen. Das ist weiter als die reine MDF-Mathematik, die dich gegen eine große 3-Bet nur etwa ein Drittel verteidigen ließe – anders gesagt: höchstens rund 66,6% folden. Behandle diese Zahl als Obergrenze, nicht als Ziel. MDF unterstellt, dass die Bluffs null Equity haben; ein echter 3-Bet-Bluff wie A5s hat aber rund 30% Equity gegen deine Weiterspiel-Range, was die Break-even-Fold-Frequenz deutlich unter diese Vakuum-Obergrenze drückt. 55% sind deshalb eine praktische Basislinie und keine Garantie: Eine Light-3-Bet mit echter Equity kann auch dagegen Profit machen. Deutlich mehr zu folden macht dich für Light-3-Bets exploitbar; weit weniger bedeutet, dass du zu weit callst oder 4-bettest. Passe dich dem Gegner an: Folde mehr gegen Spieler, die nie 3-Bet-bluffen.
 
 **Q. Solltest du mit einem Short Stack im Turnier 3-betten oder 4-bet-All-in gehen?**
 
@@ -318,7 +318,7 @@ A. Wenn die Stacks short werden – etwa 10–25 Big Blinds – spielen viele H�
 1. **Eine 3-Bet ist der erste Preflop-Re-Raise** – dritte Bet in der Sequenz, weil der Blind als Bet eins zählt.
 2. **Baue zwei Ranges:** einen Value-Kern (QQ+, AK), den du gecallt haben willst, und suited Blocker-Bluffs (A5s und Freunde), gewählt wegen Blockern und Playability.
 3. **Size sie ~3x in Position, ~4x out** – und out of Position nie klein.
-4. **Passe die Form zur Situation an:** linear vs. weite/schwache Opens, polarisiert vs. enge Opens und aus den Blinds.
+4. **Passe die Form zur Situation an:** linear vs. weite/schwache Opens (und aus dem Small Blind), polarisiert vs. enge Opens und aus dem Big Blind.
 5. **Gegen eine 3-Bet folden die meisten Hände** – 4-bette Premiums, calle die spielbaren und folde mehr als „ausgeglichen“ gegen Gegner, die nie bluffen.
 
 Bring das 3-Betting richtig hin und du hörst auf, der Spieler zu sein, der mit Assen einfach nur callt und einen winzigen Pot gewinnt. Paare es mit einer disziplinierten [Starthand-Range](/de/blog/holdem-starting-hands-chart), scharfem [Positions](/de/blog/holdem-position-play)-Bewusstsein und dem vollen [Strategie-Rahmen](/de/blog/holdem-strategy), und dein Preflop-Spiel zieht still am Feld vorbei.

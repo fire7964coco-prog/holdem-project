@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ja – Pokerhände können unentschieden sein. Ein Pot wird geteilt (ein Chop), wenn zwei oder mehr Spieler im Showdown die identische beste Fünf-Karten-Hand zeigen. Die Farbe entscheidet nie, und ein übrig gebliebener Odd Chip geht an den ersten am Chop beteiligten Spieler links vom Dealer-Button.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-08-10",
-  masterUpdated: "2026-08-11",
+  updated: "2026-09-06",
+  masterUpdated: "2026-09-06",
   keepImagesInBody: true,
   readTime: "12 Min.",
   emoji: "🃏",
@@ -85,13 +85,13 @@ Paare und Zwei Paare werden meist über Kicker entschieden – aber wenn auch di
 
 Ja – und dafür braucht es nicht einmal zwei Monsterhände. Wenn die fünf Gemeinschaftskarten bereits die bestmöglichen Fünf für alle noch Verbliebenen bilden, ==**spielt das Board**== und jeder verbliebene Spieler teilt sich den Pot, egal ob das zwei Spieler sind oder fünf.
 
-Das ist meine 8-8-8-A-K-Hand: meine J-10 und seine 5-2 spielten beide den Drilling Achten des Boards mit Ass-König-Kicker – identische Fünf, automatischer Chop. Der Extremfall ist ein Board wie A♠ K♠ Q♠ J♠ 10♠ (ein Royal Flush): keine Hole Cards können es verbessern, also ==g:choppen alle Verbliebenen==.
-
-🔴 **Und das Wichtigste am Tisch: Deine Hand gewinnt nur, wenn du sie aufdeckst.** Eine gemuckte Hand ist tot, auch wenn sie den Pot geteilt hätte. Wer zuerst zeigen muss und wie der Ablauf genau läuft, steht in den [Showdown-Regeln](/de/blog/holdem-showdown-rules).
+Das ist meine 8-8-8-A-K-Hand: meine J-10 und seine 5-2 spielten beide den Drilling Achten des Boards mit Ass-König-Kicker – identische Fünf, ein Chop, sobald beide Hände aufgedeckt waren. Der Extremfall ist ein Board wie A♠ K♠ Q♠ J♠ 10♠ (ein Royal Flush): keine Hole Cards können es verbessern, also ==g:choppen alle Verbliebenen==.
 
 > **Der Check:** Schlägt *deine* beste Fünf – mit mindestens einer Hole Card – die eigenen Fünf des Boards? Wenn ja, spielst du deine Hand. Wenn nicht, spielt das Board und du choppst wahrscheinlich. Die vollständige Methode, ein Board so zu scannen, steht in [wie du das Board liest und deine besten 5 findest](/de/blog/holdem-reading-the-board).
 
-:::tip[Wenn das Board spielt und jemand am River bettet: **automatisch zu folden ist hier falsch.** Die Chips im Pot gehören dir nicht mehr – ein Call, der sicher zum Chop führt, holt dir trotzdem die halbe Pot-Größe zurück. Rechne stattdessen mit der Frequenz: Bei einer Pot-Size-Bet lohnt der Call, wenn dein Gegner in etwa 2 von 3 Fällen ebenfalls nur das Board spielt, bei einer halben Pot-Bet reicht rund die Hälfte. Das ist eine hohe Hürde: Hat dein Gegner bei einer Pot-Size-Bet öfter als in **einem Drittel** der Fälle eine echte Hand, ist Folden richtig – und genau das ist am River der Normalfall.]:::
+**Und das Wichtigste am Tisch: Deine Hand gewinnt nur, wenn du sie aufdeckst.** Eine gemuckte Hand ist tot, auch wenn sie den Pot geteilt hätte – auch wenn du nur das Board spielst, musst du deine Hole Cards offen hinlegen, sonst verlierst du deinen Anteil am Pot (WSOP-Cashgame-Regeln, Rule 172; die WSOP-Turnierregeln wiederholen es in Rule 75). Wer zuerst zeigen muss und wie der Ablauf genau läuft, steht in den [Showdown-Regeln](/de/blog/holdem-showdown-rules).
+
+:::tip[Wenn das Board spielt und jemand am River bettet: **automatisch zu folden ist hier falsch.** Die Chips im Pot gehören dir nicht mehr – ein Call, der sicher zum Chop führt, holt dir trotzdem die halbe Pot-Größe zurück. Kann das Board dagegen geschlagen werden, rechne mit der Frequenz: Bei einer Pot-Size-Bet lohnt der Call, wenn dein Gegner in etwa 2 von 3 Fällen ebenfalls nur das Board spielt, bei einer halben Pot-Bet reicht rund die Hälfte. Das ist eine hohe Hürde: Hat dein Gegner bei einer Pot-Size-Bet öfter als in **einem Drittel** der Fälle eine echte Hand, ist Folden richtig – und auf einem River, auf dem das Board noch geschlagen werden kann, ist genau das der Normalfall.]:::
 
 ---
 

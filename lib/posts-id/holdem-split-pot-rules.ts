@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ya — tangan poker bisa seri. Pot dibagi (split pot) ketika dua pemain atau lebih menunjukkan lima kartu terbaik yang identik saat showdown. Jenis kartu tak pernah memecah seri, dan sisa odd chip diberikan kepada pemain seri pertama di kiri tombol dealer.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-08-27",
-  masterUpdated: "2026-08-11",
+  updated: "2026-09-06",
+  masterUpdated: "2026-09-06",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "🃏",
@@ -85,11 +85,13 @@ Pair dan two pair biasanya ditentukan oleh kicker — tapi jika kicker juga sama
 
 Ya — dan bahkan tak butuh dua tangan monster. Ketika lima kartu komunitas sudah membentuk lima kartu terbaik yang mungkin bagi semua yang masih bertahan, ==**board yang main**== dan setiap pemain tersisa berbagi pot, entah itu dua pemain atau lima.
 
-Itulah tangan 8-8-8-A-K saya: J-10 saya dan 5-2 lawan sama-sama main trips 8 milik board dengan kicker A-K — lima kartu identik, chop otomatis. Kasus ekstremnya adalah board seperti A♠ K♠ Q♠ J♠ 10♠ (royal flush): tak ada kartu tertutup yang bisa memperbaikinya, jadi ==g:semua yang tersisa chop==.
+Itulah tangan 8-8-8-A-K saya: J-10 saya dan 5-2 lawan sama-sama main trips 8 milik board dengan kicker A-K — lima kartu identik, chop begitu kedua tangan dibuka di meja. Kasus ekstremnya adalah board seperti A♠ K♠ Q♠ J♠ 10♠ (royal flush): tak ada kartu tertutup yang bisa memperbaikinya, jadi ==g:semua yang tersisa chop==.
 
 > **Ceknya:** apakah lima kartu terbaik *Anda* — memakai setidaknya satu kartu tertutup — mengalahkan lima kartu board itu sendiri? Jika ya, Anda main tangan Anda. Jika tidak, board yang main dan Anda kemungkinan akan chop. Metode lengkap untuk memindai board dengan cara ini ada di [cara membaca board dan menemukan 5 kartu terbaik](/id/blog/holdem-reading-the-board).
 
-:::tip[Jika board yang main dan seseorang bet di river, **fold secara refleks justru kesalahannya**. Kalau tidak ada tangan yang bisa mengalahkan board, seri sudah pasti, dan call tetap mengembalikan setengah dari semua chip yang sudah ada di pot — fold berarti menyerahkan setengah itu cuma-cuma. Kalau board masih bisa dikalahkan, hitung frekuensinya: melawan bet sebesar pot, Anda butuh lawan juga sekadar memainkan board sekitar 2 dari 3 kali; melawan setengah pot, sekitar separuh waktu. Itu ambang yang tinggi: melawan bet sebesar pot, fold baru benar kalau dia punya tangan sungguhan lebih dari **satu dari tiga kali** — dan di board yang bermain sendiri, itulah keadaan normalnya.]:::
+**Dan bagian yang paling penting di meja: tangan Anda baru menang kalau Anda membukanya menghadap ke atas.** Tangan yang di-muck itu mati bahkan ketika ia seharusnya chop — saat Anda memainkan board pun Anda tetap harus menunjukkan kartu tertutup Anda menghadap ke atas, atau Anda kehilangan bagian Anda dari pot (WSOP Rule 172 untuk live action; aturan turnamen WSOP mengulanginya di Rule 75). Siapa yang menunjukkan lebih dulu dan bagaimana urutannya berjalan dibahas di [aturan showdown](/id/blog/holdem-showdown-rules).
+
+:::tip[Jika board yang main dan seseorang bet di river, **fold secara refleks justru kesalahannya**. Kalau tidak ada tangan yang bisa mengalahkan board, seri sudah pasti, dan call tetap mengembalikan setengah dari semua chip yang sudah ada di pot — fold berarti menyerahkan setengah itu cuma-cuma. Kalau board masih bisa dikalahkan, hitung frekuensinya: melawan bet sebesar pot, Anda butuh lawan juga sekadar memainkan board sekitar 2 dari 3 kali; melawan setengah pot, sekitar separuh waktu. Itu ambang yang tinggi: melawan bet sebesar pot, fold sudah benar begitu dia punya tangan sungguhan lebih dari **satu dari tiga kali** — dan di river yang board-nya masih bisa dikalahkan, itulah keadaan normalnya.]:::
 
 ---
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Um die Pot Odds zu berechnen, teilst du den Betrag, den du callen musst, durch den gesamten Pot nach deinem Call. Ein $50-Call in einen $150-Pot = 50 ÷ 200 = 25% – du brauchst also mindestens 25% Equity, damit der Call profitabel ist.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-08-13",
-  masterUpdated: "2026-08-09",
+  updated: "2026-09-06",
+  masterUpdated: "2026-09-06",
   keepImagesInBody: true,
   readTime: "12 Min.",
   emoji: "🧮",
@@ -53,7 +53,7 @@ Vergiss die Verhältnisse für einen Moment – die schnellste brauchbare Form i
 Zähle den finalen Pot zusammen | Aktueller Pot + die Bet + dein Call. Beispiel: $100 Pot + $50 Bet + dein $50 Call = $200
 Teile deinen Call durch diesen finalen Pot | $50 ÷ $200 = 0,25
 Das ist deine benötigte Equity | Du musst mindestens 25% der Fälle gewinnen, um profitabel zu callen
-Vergleiche sie mit deiner tatsächlichen Equity | Flushdraw ≈ 35% zum Treffen → 35% schlägt 25% → ==g:call==
+Vergleiche sie mit deiner tatsächlichen Equity | Flushdraw ≈ 35% zum Treffen, wenn zwei Karten kommen und nicht mehr gebettet wird → 35% schlägt 25% → ==g:call==
 :::
 
 Das war's. **Benötigte Equity = dein Call ÷ der finale Pot.** Wenn deine echte Gewinnchance größer ist als diese Zahl, macht der Call auf lange Sicht Geld – selbst wenn du die Hand öfter verlierst als gewinnst.
@@ -103,7 +103,7 @@ Gegen eine **Half-Pot-Bet** brauchst du 25%, gegen eine **Pot-Size-Bet** 33%, ge
 
 </div>
 
-Beachte die Obergrenze: selbst ein massiver **2×-Pot-Overbet verlangt nur 40% Equity**. Du musst fast nie Favorit sein, um profitabel zu callen – ein verbreiteter Trugschluss, der Leute korrekte Calls folden lässt. Je größer die Bet, desto mehr Equity brauchst du, aber es steigt langsamer, als die meisten Spieler denken.
+Selbst ein massiver **2×-Pot-Overbet verlangt nur 40% Equity**. Du musst fast nie Favorit sein, um profitabel zu callen – ein verbreiteter Trugschluss, der Leute korrekte Calls folden lässt. Je größer die Bet, desto mehr Equity brauchst du, aber es steigt langsamer, als die meisten Spieler denken.
 
 ---
 
@@ -125,7 +125,7 @@ Jetzt verbinde den Preis mit deiner Hand. [Zähle deine **Outs**](/de/blog/holde
 
 </div>
 
-Lies sie gegen die Bet-Size-Tabelle oben. Für Spots, die nicht in der Tabelle stehen – krumme Bet-Sizes, mehrere Gegner –, rechnet der [Poker-Rechner](/calculator) Pot Odds und benötigte Equity direkt aus. Gegen eine ==Half-Pot-Bet (25% nötig)==: mit zwei kommenden Karten ist ein Flushdraw (35%) ein klarer Call – aber auf einer *einzelnen* Karte ist derselbe Draw vom Flop aus nur 19,1%, was den Preis für sich genommen **nicht** trifft. Genau diese Lücke ist der Ort, an dem Implied Odds ins Spiel kommen.
+Lies sie gegen die Bet-Size-Tabelle oben. Für Spots, die nicht in der Tabelle stehen – krumme Bet-Sizes, mehrere Gegner –, rechnet der [Poker-Rechner](/calculator) Pot Odds und benötigte Equity direkt aus. Gegen eine ==Half-Pot-Bet (25% nötig)==: mit zwei kommenden Karten ist ein Flushdraw (35%) ein klarer Call – aber auf einer *einzelnen* Karte ist derselbe Draw vom Flop aus (9 ÷ 47) nur 19,1%, was den Preis für sich genommen **nicht** trifft. Genau diese Lücke ist der Ort, an dem Implied Odds ins Spiel kommen.
 
 ---
 
@@ -203,7 +203,7 @@ A. Ja. Die Formel für die benötigte Equity nutzt den *finalen* Pot, der deinen
 
 **Q. Was ist ein gutes Pot-Odds-Verhältnis?**
 
-A. Je höher, desto besser – du würdest gern „5:1 bekommen“ (nur 16,7% nötig). Aber „gut“ ist relativ zu deiner Hand: 2:1 zu bekommen (33% nötig) ist super mit einem Flushdraw und schrecklich mit einem Gutshot. Vergleiche den Preis immer mit deiner Equity.
+A. Je höher, desto besser – du würdest gern „5:1 bekommen“ (nur 16,7% nötig). Aber „gut“ ist relativ zu deiner Hand: 2:1 zu bekommen (33% nötig) funktioniert mit einem Flushdraw nur, wenn du ohnehin beide Karten siehst (all-in oder ohne weitere Bets – 35%); siehst du für den Call dagegen nur eine einzige Karte, reicht der Preis nicht (19,1% vom Flop aus, 19,6% vom Turn aus); und mit einem Gutshot ist er schrecklich. Vergleiche den Preis immer mit deiner Equity.
 
 **Q. Wie rechnet man Pot Odds von einem Verhältnis in einen Prozentwert um?**
 

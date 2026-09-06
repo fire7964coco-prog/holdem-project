@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "3-bet adalah re-raise pertama sebelum flop — disebut 3-bet karena big blind adalah taruhan pertama, open-raise yang kedua, dan re-raise Anda yang ketiga. Value-3-bet inti yang ketat (QQ+, AK) plus beberapa bluff blocker suited seperti A5s, ukur sekitar 3x dari open in position dan 4x out of position, dan jaga frekuensi 3-bet keseluruhan Anda dekat 6–10%. Saat Andalah yang menghadapi 3-bet, 4-bet tangan premium Anda, call tangan yang bermain baik, dan fold sisanya — fold lebih banyak daripada 'balanced' melawan pemain stake rendah yang tak pernah bluff.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-08-27",
-  masterUpdated: "2026-08-27",
+  updated: "2026-09-06",
+  masterUpdated: "2026-09-06",
   keepImagesInBody: true,
   readTime: "16 mnt",
   emoji: "♦️",
@@ -96,8 +96,8 @@ Anda akan melihat dua kata ini di mana-mana dalam strategi 3-bet. Mereka menggam
 | | Linear (merged) | Polarized |
 |:---|:---|:---|
 | **Bentuk** | Satu blok solid dari tangan terbaik Anda | Barbel: value terkuat **+** bluff, tak ada di tengah |
-| **Contoh** | QQ+, AK, AQs, JJ, TT, KQs | AA-KK + bluff tipe A5s; flat bagian tengah QQ/AQ/TT |
-| **Pakai saat** | Open-nya **lebar dan lemah** (posisi akhir), atau Anda **in position** | Open-nya **kuat/ketat** (posisi awal), atau Anda **di blinds** |
+| **Contoh** | QQ+, AK, AQs, JJ, TT, KQs | QQ+ dan AK + bluff tipe A5s; flat bagian tengah JJ/AQ/TT |
+| **Pakai saat** | Open-nya **lebar dan lemah** (posisi akhir), atau Anda **in position**. Melawan open yang sama, small blind condong lebih linear daripada big blind, karena ia jarang flat | Open-nya **kuat/ketat** (posisi awal), atau Anda di **big blind** (di mana Anda flat bagian tengah dengan harga diskon) |
 
 </div>
 
@@ -138,7 +138,7 @@ Menghadapi sebuah open, Anda punya tiga pilihan, bukan dua. Inilah peta yang tak
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Tangan Anda | In position (mis. button vs steal) | Out of position (mis. di blinds) |
+| Tangan Anda | In position (mis. button vs steal) | Out of position (small blind — big blind flat lebih lebar, lihat di bawah) |
 |:---|:---|:---|
 | **Premium** (QQ+, AK) | 3-bet untuk value | 3-bet untuk value |
 | **Kuat** (JJ-TT, AQ, KQs) | 3-bet vs open lebar; flat vs ketat | Kebanyakan 3-bet atau fold — flatting OOP itu lemah |
@@ -148,7 +148,7 @@ Menghadapi sebuah open, Anda punya tiga pilihan, bukan dua. Inilah peta yang tak
 
 </div>
 
-Poin besarnya: **flatting itu sah in position** — solver modern menjaga range flatting yang sehat di button karena Anda bertindak terakhir di setiap street postflop dan hanya dua blind yang tersisa di belakang Anda, sehingga risiko squeeze kecil dan Anda bisa melihat flop secara profit. Out of position ia lebih lemah, tapi dengan satu pembagian penting: dari **small blind**, lebih memilih *3-bet atau fold* yang polarized, karena meng-call lebar OOP merealisasikan equity Anda dengan buruk dan membangun range lemah yang mudah di-cap. **Big blind** adalah pengecualian — karena Anda menutup aksi dan sudah mendapat harga, Anda bertahan dengan *call* jauh lebih lebar di sana, terutama melawan steal posisi-akhir. Posisi, sekali lagi, mengubah segalanya — pelajaran yang sama seperti [playbook posisi](/id/blog/holdem-position-play).
+Poin besarnya: **flatting itu sah in position** — solver modern menjaga range flatting yang sehat di button karena Anda bertindak terakhir di setiap street postflop dan hanya dua blind yang tersisa di belakang Anda, sehingga risiko squeeze kecil dan Anda bisa melihat flop secara profit. Out of position ia lebih lemah, tapi dengan satu pembagian penting: dari **small blind**, condonglah ke *3-bet atau fold* dengan range yang lebih **linear** — meng-call lebar OOP merealisasikan equity Anda dengan buruk dan membangun range lemah yang mudah di-cap, jadi Anda raise bagian atas range Anda dan lepaskan sisanya. **Big blind** adalah pengecualian — karena Anda menutup aksi dan sudah mendapat harga, Anda bertahan dengan *call* jauh lebih lebar di sana, terutama melawan steal posisi-akhir. Itu membuat 3-bet big blind Anda relatif **polarized**: tangan kuat plus bluff, dengan bagian tengah di-flat. Posisi, sekali lagi, mengubah segalanya — pelajaran yang sama seperti [playbook posisi](/id/blog/holdem-position-play).
 
 ---
 
@@ -170,19 +170,19 @@ Bluff squeeze yang bagus adalah tangan blocker suited yang sama (A5s dan kawan-k
 
 ![Seorang pemain poker menatap re-raise preflop dengan tangan bertumpu di chip-nya, menimbang apakah call, 4-bet, atau fold ke sebuah 3-bet](/images/holdem-3bet-facing.webp "Separuh dari 3-betting yang tak diajarkan siapa pun: saat seseorang me-re-raise Anda, sebagian besar range Anda cukup fold — terutama melawan pemain yang tak pernah bluff")
 
-Inilah separuh dari 3-betting yang hampir setiap artikel lewati: **Anda akan berada di pihak penerima jauh lebih sering daripada Anda 3-bet sendiri.** Saat Anda membuka dan di-re-raise, Anda punya tiga respons:
+Inilah separuh dari 3-betting yang hampir setiap artikel lewati: **Anda akan berada di pihak penerima kira-kira sama seringnya dengan Anda 3-bet sendiri.** Saat Anda membuka dan di-re-raise, Anda punya tiga respons:
 
 - **4-bet** — untuk value dengan premium Anda (QQ+, AK), plus bluff blocker sesekali (tangan tipe A5s). Sebuah 4-bet berkata "Saya tak akan ke mana-mana."
 - **Call** — dengan tangan yang mem-flop baik dan punya equity atau posisi untuk lanjut: pocket pair yang ingin set-mine, suited broadway, dan tangan kuat yang tak ingin menggembungkan pot menjadi perang 4-bet.
 - **Fold** — selain itu. Sebagian besar range open Anda harus cukup menyerah ke sebuah 3-bet; itu normal, bukan kelemahan.
 
-Seberapa banyak Anda harus lanjut? Baseline teoretisnya adalah **Minimum Defense Frequency (MDF)** — porsi range Anda yang harus Anda lanjutkan agar si 3-bettor tak bisa profit dengan bluff dua kartu apa pun. Ia adalah ==pot ÷ (pot + bet)== — di mana *pot* adalah yang ada di tengah sebelum 3-bet dan *bet* adalah ukuran 3-bet — yang melawan ukuran 3-bet tipikal mendarat di sekitar **sepertiga dari range Anda** dalam vakum (3-bet 3x: pot 4,5bb ÷ (4,5bb + 9bb) ≈ 33%). Tapi inilah eksploitasi yang memenangkan uang di meja nyata:
+Seberapa banyak Anda harus lanjut? Baseline teoretisnya adalah **Minimum Defense Frequency (MDF)** — porsi range Anda yang harus Anda lanjutkan agar si 3-bettor tak bisa profit dengan bluff dua kartu apa pun. Ia adalah ==pot ÷ (pot + bet)== — di mana *pot* adalah yang ada di tengah sebelum 3-bet dan *bet* adalah yang **ditambahkan** si 3-bettor (dari blind, itu berarti besar raise dikurangi chip yang sudah dipasang) — yang melawan ukuran 3-bet tipikal mendarat di sekitar **sepertiga dari range Anda** dalam vakum (3-bet 3x dari button: pot 4,5bb ÷ (4,5bb + 9bb) ≈ 33%). Tapi inilah eksploitasi yang memenangkan uang di meja nyata:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Stat fold-to-3-bet villain | Apa artinya | Penyesuaian Anda |
 |:---:|:---|:---|
-| **~35% (jarang fold)** | Calling station — 3-bet dan call mereka value-heavy | 3-bet mereka **hanya untuk value**, berhenti bluff, dan value-bet tanpa henti |
+| **~35% (jarang fold)** | Calling station — mereka call dengan hampir apa saja, jadi bluff tak punya fold equity | 3-bet mereka **hanya untuk value**, berhenti bluff, dan value-bet tanpa henti |
 | **~55% (balanced)** | Regular yang berpikir | Main dekat GTO — campur value dan bluff blocker |
 | **~70%+ (terlalu banyak fold)** | Nit yang bisa dieksploitasi | 3-bet mereka **ringan jauh lebih sering** — mereka menyerahkan pot pada Anda |
 
@@ -214,8 +214,8 @@ Sekarang balik: seandainya saya meng-3-bet tangan **ringan** seperti A5s di sana
 | **Hanya pernah 3-betting value** | Anda menjadi face-up; pemain bagus fold segalanya kecuali cooler | Tambahkan bluff blocker suited (A5s) |
 | **Tak pernah bluff-3-bet sama sekali** | Meninggalkan uang di meja vs steal lebar; flat Anda jadi terlalu lemah | Seimbangkan value dengan beberapa light 3-bet |
 | **3-betting merged vs nit** | "Value" Anda terdominasi oleh range mereka yang hanya premium | Jadikan polarized atau cukup fold vs nit sejati |
-| **Bluff-3-bet sampah (Q7o)** | Tak ada blocker, tak ada equity — Anda harus fold ke tiap 4-bet | Pilih hanya tangan blocker/playability |
-| **Flatting terlalu banyak di blinds** | Realisasi equity buruk OOP; range lemah yang mudah di-cap | Lebih memilih 3-bet-atau-fold yang polarized |
+| **Bluff-3-bet sampah (Q7o)** | Blocker-nya lemah dan equity cadangannya tipis — Anda harus fold ke tiap 4-bet | Pilih hanya tangan blocker/playability |
+| **Flatting terlalu banyak dari small blind** | Realisasi equity buruk OOP; range lemah yang mudah di-cap | 3-bet-atau-fold dari SB; simpan flat yang lebar untuk big blind |
 
 </div>
 
@@ -256,7 +256,7 @@ A. Bagi 3-bet Anda menjadi value dan bluff. Inti value adalah QQ+ dan AK, meluas
 
 **Q. Kapan Anda harus 3-bet vs. cukup call (flat)?**
 
-A. 3-bet saat Anda punya premium, saat opener lebar dan lemah, atau saat Anda out of position dan ingin menghindari flat yang buruk. Flatting baik-baik saja in position dengan tangan spekulatif (pair kecil, suited connector) di mana Anda bisa melihat flop murah dengan button. Out of position, lebih memilih 3-bet atau fold daripada call.
+A. 3-bet saat Anda punya premium, saat opener lebar dan lemah, atau saat Anda out of position dan ingin menghindari flat yang buruk. Flatting baik-baik saja in position dengan tangan spekulatif (pair kecil, suited connector) di mana Anda bisa melihat flop murah dengan button. Out of position, lebih memilih 3-bet atau fold daripada call — dengan big blind sebagai pengecualian, di mana Anda menutup aksi dengan harga yang bagus dan bertahan dengan call jauh lebih lebar.
 
 **Q. Apa itu light 3-bet?**
 
@@ -264,7 +264,7 @@ A. Light 3-bet (atau 3-bet bluff) adalah re-raising dengan tangan yang tak Anda 
 
 **Q. Apa beda antara range 3-bet linear dan polarized?**
 
-A. Range linear (merged) adalah satu blok solid dari tangan terbaik Anda — dipakai melawan open lebar dan lemah atau saat in position. Range polarized adalah tangan terkuat Anda plus bluff, dengan tangan medium dihapus dan di-flat saja — dipakai melawan open ketat atau dari blinds, di mana tangan medium dipaksa fold oleh 4-bet.
+A. Range linear (merged) adalah satu blok solid dari tangan terbaik Anda — dipakai melawan open lebar dan lemah atau saat in position. Range polarized adalah tangan terkuat Anda plus bluff, dengan tangan medium dihapus dan di-flat saja — dipakai melawan open ketat, dan dari big blind, di mana harga yang sudah Anda dapat membiarkan Anda meng-call bagian tengah alih-alih dipaksa fold oleh 4-bet. Small blind, yang tak punya call murah, condong lebih linear.
 
 **Q. Seberapa besar Anda harus 3-bet?**
 
@@ -284,7 +284,7 @@ A. Anda punya tiga pilihan: 4-bet premium Anda (QQ+, AK) plus bluff blocker sese
 
 **Q. Berapa persentase fold-to-3-bet yang bagus?**
 
-A. Sekitar 55% adalah baseline yang wajar dan kira-kira balanced — Anda lanjut dengan bagian atas range Anda dan biarkan sisanya pergi. (Itu lebih lebar daripada MDF matematika murni, yang melawan 3-bet besar hanya menyuruh Anda bertahan sekitar sepertiga range; karena range 3-bet yang seimbang memuat bluff, Anda fold sedikit lebih jarang daripada angka vakum itu.) Fold jauh lebih dari 55% membuat Anda bisa dieksploitasi oleh light 3-bet; fold jauh lebih sedikit berarti Anda call atau 4-bet terlalu lebar. Sesuaikan ke lawan: fold lebih banyak melawan pemain yang tak pernah bluff-3-bet.
+A. Sekitar 55% adalah baseline yang wajar dan kira-kira balanced — Anda lanjut dengan bagian atas range Anda dan biarkan sisanya pergi. Itu lebih lebar daripada MDF matematika murni, yang melawan 3-bet besar hanya menyuruh Anda bertahan sekitar sepertiga range — dengan kata lain, fold tak lebih dari sekitar 66,6%. Perlakukan angka itu sebagai batas atas, bukan target. MDF mengasumsikan bluff-nya punya equity nol, padahal bluff 3-bet sungguhan seperti A5s membawa kira-kira 30% equity melawan range lanjutan Anda, yang mendorong frekuensi fold titik impas jauh di bawah batas vakum itu. Jadi 55% adalah baseline praktis, bukan jaminan: light 3-bet dengan equity nyata tetap bisa profit melawannya. Fold jauh lebih dari 55% membuat Anda bisa dieksploitasi oleh light 3-bet; fold jauh lebih sedikit berarti Anda call atau 4-bet terlalu lebar. Sesuaikan ke lawan: fold lebih banyak melawan pemain yang tak pernah bluff-3-bet.
 
 **Q. Haruskah Anda 3-bet atau 4-bet all-in dengan stack pendek di turnamen?**
 
@@ -297,7 +297,7 @@ A. Saat stack makin pendek — kira-kira 10–25 big blind — banyak tangan ber
 1. **3-bet adalah re-raise pre-flop pertama** — taruhan ketiga dalam urutan, karena blind dihitung sebagai taruhan satu.
 2. **Bangun dua range:** inti value (QQ+, AK) yang Anda ingin di-call, dan bluff blocker suited (A5s dan kawan-kawan) yang dipilih karena blocker dan playability.
 3. **Ukur ~3x in position, ~4x out** — dan jangan pernah kecil out of position.
-4. **Cocokkan bentuk dengan spot:** linear vs open lebar/lemah, polarized vs open ketat dan dari blinds.
+4. **Cocokkan bentuk dengan spot:** linear vs open lebar/lemah (dan dari small blind), polarized vs open ketat dan dari big blind.
 5. **Menghadapi 3-bet, sebagian besar tangan fold** — 4-bet premium, call yang bisa dimainkan, dan fold lebih banyak daripada "balanced" melawan lawan yang tak pernah bluff.
 
 Kuasai 3-betting dengan benar dan Anda berhenti menjadi pemain yang hanya call dengan aces dan menang pot mungil. Padukan dengan [range starting-hand](/id/blog/holdem-starting-hands-chart) yang disiplin, kesadaran [posisi](/id/blog/holdem-position-play) yang tajam, dan [kerangka strategi](/id/blog/holdem-strategy) lengkap, dan permainan preflop Anda diam-diam bergerak melampaui field.
