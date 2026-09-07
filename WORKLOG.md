@@ -1,3 +1,20 @@
+## 2026-09-07 (1) — **헤드 회차 — 🇨🇳 zh 회차 1(규칙 6편) 머지·배포 + 헤드 요청 6건 이행** (Fable · 헤드)
+
+레인 🇨🇳이 회차 1을 커밋(`da382f90`·`e5874772`)하고 멈췄다. 헤드 몫(프로토콜 §6) 실행.
+
+- **머지** `29aa0480`(no-ff) — 6편 + 브리프 `docs/harden-brief/zh-규칙.md` + `keyword-bank/zh-rules.md` + `local-voice/zh.md` 신설(892+/72−). 레인 성과: 직답 58개 신설(6편 전부 직답 0이었다 — 경화 작업량의 8할) · 드리프트 게이트 4편 중 **실물 2편**(2편은 내용 기반영·masterUpdated만 미갱신 = §3-③ 함정의 반대 방향) · 렌즈 4종 32/27 · 2차 교열이 1차 반영이 만든 새 결함 5건 전건 검출 · 딜러 렌즈가 showdown FAQ 死牌 서술이 **TDA 14조와 정반대**(zh 고유 커밋 `12c960a0` 유래)임을 검출.
+- **헤드 요청 이행**(`a069430a`):
+  ① 게이트 오탐 — `check-mirror-pair`가 위키 URL의 percent-encoding(%E6%89%91)을 89%로 읽었다 → 토큰 추출 전 URL 마스킹. game-order 갈림 4→0 · 셀프테스트 16/16.
+  ② 🔴 **EN-먼저 채택 — betting-actions 「Mistake 2 — The string raise」**: EN L132·FAQ L229가 「"call" 뒤 추가는 string bet이 아니다(90.d)」라고 쓰면서 소제목만 string raise = 자기모순(레인 판정 정확). EN 소제목 → 「"I call... actually, raise!"」 + 본문 1문장(90.d 구속력 · string bet과 구분) → **ar·de·es·fil·fr·id·ms·pt·tr·vi·zh-hant 11로케일 전파**(zh는 레인 선정정). 룰 표기는 로케일 관례(regla/règle/regra/Kural/第 N 條) 유지.
+  ③ **EN-먼저 기각 — beginners 「second-best one-pair hands」**: 관용구(톱페어 약한 키커)라 EN 정확. 오역은 **zh·zh-hant**(「较小的一对」= 작은 페어) → 둘 정정. ja·es·de·pt·fr는 관용구 보존 확인.
+  ④ 편차 등재 — 09-06 행이 이미 「zh 질문형 70% 적용 / zh-hant 명사형」을 담고 있다(추가 없음).
+  ⑤ TDA 사본 — 레포·검수 폴더 어디에도 없다(`facts/sources`는 WSOP만). 메모리상 버지니아 규제기관 PDF가 대체 사본 경로. **미결로 승계**(all-in 「重新打开下注」 조항 번호는 그때까지 달지 않는다).
+  ⑥ **tldr 마크다운 8파일**(en·ja·zh·zh-hant × ace-paired·blind-battle-connected): intl 렌더러가 `{post.tldr}`를 파서 없이 출력 → `**` 제거. ko는 해당 없음.
+  ⑦ zh 비정본 라벨 `快速答案` 3편 → `快速回答`.
+  ⑧ 빌드 70+525 · sitemap lastmod 갱신 커밋 · 게이트 zh/zh-hant/en 🔴 0 · push.
+- 🔴 **헤드 미결 신설**: ⓐ `blind-meaning` 최상단 직답 ≈ tldr 중복(원본 구조 · 전 로케일 판정 필요) ⓑ FAQ 103조 정의 요소 둘(«스택 복귀» + «시각적 기만») — EN·7로케일 「multiple motions」만(검수 발췌 L43) ⓒ 거울쌍 갈림 28편은 레인이 클러스터마다 판정.
+- 🪶 사장님이 레인 창에 「머지해」를 쳤다 — 레인은 `git merge main`만 했고(허용) main은 안 건드렸다. 머지는 헤드 창.
+
 ## 2026-09-06 (8) — **경화 워크플로우 정본 신설 — 레인이 «본체 방식 그대로» 돌게** (Fable · 헤드 회차)
 
 사장님 정정: *「너가 하는게 아니라 경화폴더 만들었으니 거기서 진행할거야 그 워크플로우 짜라고 … 너가 작업한방식 그대로 시키자고 … 너는 헤드고」*. 회차 7이 남긴 1순위(HARDEN.md가 §14-A 포인터 한 줄) 종결.

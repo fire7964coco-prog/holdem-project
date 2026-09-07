@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "rules",
   date: "2026-06-14",
   updated: "2026-07-24",
-  masterUpdated: "2026-07-11",
+  masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "🃏",
@@ -180,9 +180,9 @@ Juego una partida semanal en vivo de apuestas bajas, y los mismos errores de acc
 
 Primero en hablar en el flop, nadie ha apostado, y un jugador novato suelta fichas **en silencio**, "para pagar". No hay nada que pagar: según la ==regla 90.a de la WSOP== se apuesta por declaración *o* empujando fichas — acaba de apostar sin querer. Si hubiera *dicho* "pago", la ==regla 90.b.1== lo habría convertido en un check. Cuando la calle está sin abrir, pasa y mira la carta gratis.
 
-### Error 2 — El string raise
+### Error 2 — "Pago... ¡no, espera, subo!"
 
-"Pago... ¡no, espera, subo!" No. En el póker en vivo tu acción queda fijada en el momento en que la anuncias. He visto a crupieres dictaminar esto como un call a mitad de frase más veces de las que puedo contar. Anuncia "subo" *primero* y luego mueve las fichas.
+"Pago... ¡no, espera, subo!" No. En el póker en vivo tu acción queda fijada en el momento en que la anuncias: según la ==regla 90.d==, la declaración verbal en tu turno es vinculante. (Y no es un string bet; eso es el empuje en varios movimientos que explico en las FAQ. El resultado es el mismo: manda la primera palabra.) He visto a crupieres dictaminar esto como un call a mitad de frase más veces de las que puedo contar. Anuncia "subo" *primero* y luego mueve las fichas.
 
 ### Error 3 — La ciega grande que tira un flop gratis
 

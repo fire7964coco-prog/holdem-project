@@ -162,7 +162,12 @@ git commit -F commit-msg.txt   # "harden(<locale>): <클러스터> N편 — 회�
 거울쌍: 갈림 i건(내 쪽 j 수정 · 상대 쪽 k 등재)
 게이트: audit 🔴 0 · cjk 0 · seo-sync 0 · meta 0 · drift ✅ N/N
 헤드 요청: <공용 파일 승격·이미지·EN-먼저>
+▶ 다음 지시(사장님이 칠 것): 헤드 창에 「zh 회차 K 끝났어, 머지해」 → 이 창 `/clear` → 모델 **Opus**로 「HARDEN.md 읽고 회차 K+1 시작해」
 ```
+🔴 **멈추는 자리마다 마지막 줄은 반드시 «▶ 다음 지시»다** — 사장님이 무엇을 치고 어떤 모델로 열지 매번 알려 드린다. 구간 경계(§2)도 같다:
+- A 끝: 「▶ 다음 지시: `/model` → **Fable 5.1** → 「B 시작해」」
+- B 끝: 「▶ 다음 지시: `/model` → **Opus** → 「C 시작해」」
+- C 끝(회차 끝): 위 보고 양식의 마지막 줄
 
 ---
 
@@ -190,7 +195,7 @@ git commit -F commit-msg.txt   # "harden(<locale>): <클러스터> N편 — 회�
 | 6 | 용어 | holdem-glossary · holdem-bad-beat · holdem-cooler · holdem-fish · holdem-rake · holdem-straddle | 6 |
 
 🔴 **대상 밖**(현행 기준으로 났다 — 2026-09-06 표본 실측: 질문형 H2 88~90% · 직답 · readnext 전부 있음): GTO 솔버 13편(09-03) · `wsop-2026-tournament-guide`(07-29) · zh-hant `taiwan-poker-clubs-guide`(08-31). 손대지 마라.
-🔴 두 레인은 **같은 회차 번호 = 같은 클러스터**로 간다. 거울쌍 대조(§5-⑥)가 같은 클러스터를 전제한다. 한쪽이 앞서면 갈림을 진행 파일에 적어 두고, 뒤쪽이 받는다.
+🔴 zh·zh-hant 두 레인은 **같은 회차 번호 = 같은 클러스터**로 간다. 거울쌍 대조(§5-⑥)가 같은 클러스터를 전제한다. 한쪽이 앞서면 갈림을 진행 파일에 적어 두고, 뒤쪽이 받는다. 🇯🇵 ja 레인(§7-E)은 같은 클러스터 표를 쓰되 거울쌍이 없어 **독립 속도**로 간다.
 
 ### 7-B. 🇨🇳 zh (간체) — 독자 = 신마(싱가포르·말레이) 화교 (본토는 구글 미사용)
 
@@ -223,6 +228,21 @@ git commit -F commit-msg.txt   # "harden(<locale>): <클러스터> N편 — 회�
 - 슬러그 42편 완전 일치 → **언어 불변 항목**(카드 토큰 · % · 화폐+숫자 · bb · 날짜 · 룰 번호)이 갈리면 **하나는 틀렸다.** 🔴 **간체↔번체 기계 변환 금지**(용어가 다르다 — 求解器/解算器 · 弃牌/蓋牌).
 - 게이트 `npm run check:mirror-pair -- --locale-pair=zh,zh-hant [--slug=<slug>]`: 첫 실행 결과는 **전건 원문 판정**(게이트 튜닝 규율 — 오탐이면 헤드에 «게이트 수정» 요청).
 - 실례: 2026-09-06 둘 다 A5s 블로커를 「AA 和 KK」로 잘못 적고 있었다(본체 `1c0dc8dc`) — **둘이 똑같이 틀린 건 교차검증이 아니다.** 판정은 EN 원문.
+
+### 7-E. 🇯🇵 ja (일본어) — 독자 = 일본 (2026-09-07 레인 신설 · 사장님 결재)
+
+| 항목 | 정본·도구 |
+|---|---|
+| 왜 | **07-20 경화 = 8개 언어 중 최고령.** 사장님 08-26 판정 「ja는 중요한 언어 … 색인 신경쓰지 말고 작업」. 핸드오프 «ja 43편 라쿠 경화» 대기 항목을 이 레인이 흡수한다 |
+| 자산 | `docs/local-voice/ja-jp.md`(§0 읽는 순서 · **§3 경험담은 현지화하지 않는다**) · `docs/translation-terms-ja.md`(**§H2 검색형 로컬라이즈** = 글당 워크플로우 정본 · 문체·표기 · 용어 Wave 2~4) · `docs/keyword-bank/ja-tag-volumes.md` · `ja-tournament.md` · `ja-gto-*.md` |
+| 🔴 없는 것 | 클러스터별 키워드 뱅크 — 회차마다 `keyword-bank/ja-<클러스터>.md` 신설 |
+| 키워드 발굴·볼륨 | **ラッコ가 네이티브다**(Japan 고정): `suggest-keywords`(볼륨·SEO難易度) + `question-search`(질문문) + `headline`(경쟁 상위 見出し = 정답지) · 약 7.5크레딧/허브. DFS는 `location_code:2392`·`language_code:"ja"` |
+| H2 형태 | 🔴 **`[카타카나 용어]+[接尾辞]` 검색형**(一覧·早見表·強い順·成立条件·〜とは·やり方·覚え方·どっちが強い·確率·順番). EN 질문형 직역 금지. §14-A 「질문형 70%」 **미적용**, «직답 블록»만 적용 — 정본 `translation-terms-ja.md` §H2(07-20 확립 · `holdem-hand-rankings`가 레퍼런스) |
+| 직답 라벨 | **`> **先に結論**`** 하나로 통일(2026-09-07 실측 16개 · 다른 라벨 鉄則/メモ류는 직답이 아니라 노트) |
+| 톤 | 두괄식 · 「」강조 · 낚시 금지(일본은 사기 의심) · 번호 리스트·早見表. 경험담은 **EN 그대로 번역**(현지화 금지) |
+| 거울쌍 | **없음** — §5-⑥·§7-D 생략. `check:mirror-pair` 미적용 |
+| 드리프트(09-07 실측) | 14편: 3bet · betting-actions · card-counting · continuation-bet · fish · game-order · glossary · kicker 외 6. 🔴 08-27 세션 3/9 `f8d9b2bd`가 15편을 먼저 소급 — 그 diff가 경계 |
+| 대상 밖 | GTO 13편(09-02) · `wsop-2026-tournament-guide` · `japan-poker-tournaments-guide`(ja 고유 · 09-02) |
 
 ---
 

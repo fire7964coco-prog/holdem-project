@@ -98,7 +98,7 @@ export const POST: Post = {
   seoTitle: "Trips on an Ace-Paired Board: Why It Bets 80% — GTO",
   // 158자 (EN 하드리밋 160)
   desc: "One paired flop gets a 3% bet and another gets 80.1%. On A-A-6 the ace belongs to the raiser — and the trips that beat you are missing from the caller's range.",
-  tldr: "After a small-blind open and a big-blind call, the A♠A♥6♦ flop gets a bet 80.1% of the time (79.6% at a third of the pot, 0.5% at three quarters, check 19.8%). That is the reverse of the 3.0% seen on the 6♣6♦3♥ paired board — and what split them is not that the board paired, but **whose card** paired. Hands making trips with an ace run 88 combos to 66, and 16 of those combos, A-K and A-Q, are absent from the calling range entirely.",
+  tldr: "After a small-blind open and a big-blind call, the A♠A♥6♦ flop gets a bet 80.1% of the time (79.6% at a third of the pot, 0.5% at three quarters, check 19.8%). That is the reverse of the 3.0% seen on the 6♣6♦3♥ paired board — and what split them is not that the board paired, but whose card paired. Hands making trips with an ace run 88 combos to 66, and 16 of those combos, A-K and A-Q, are absent from the calling range entirely.",
   category: "strategy",
   date: "2026-08-21",
   updated: "2026-08-21",

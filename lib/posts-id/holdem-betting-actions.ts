@@ -180,9 +180,9 @@ Saya main di game live taruhan kecil tiap minggu, dan kesalahan aksi yang sama b
 
 Seorang pemain baru bertindak pertama di flop, belum ada yang bertaruh, tapi dia mendorong chip **tanpa bersuara** — maksudnya "untuk call". Tidak ada yang perlu di-call: menurut ==WSOP Rule 90.a==, bet dilakukan lewat ucapan *atau* dengan mendorong chip — dia baru saja bertaruh tanpa sengaja. Kalau dia *mengucapkan* "call", ==Rule 90.b.1== menjadikannya check. Kalau street belum dibuka, check saja dan lihat kartunya gratis.
 
-### Kesalahan 2 — String raise
+### Kesalahan 2 — "Saya call... eh, raise!"
 
-"Saya call... eh, raise!" Tidak bisa. Di poker live, aksi Anda terkunci begitu Anda mengucapkannya. Sudah tak terhitung berapa kali saya melihat dealer memutuskan ini sebagai flat call di tengah kalimat. Ucapkan "raise" *dulu*, baru gerakkan chip.
+"Saya call... eh, raise!" Tidak bisa. Di poker live, aksi Anda terkunci begitu Anda mengucapkannya — menurut ==Rule 90.d==, deklarasi lisan pada giliran Anda bersifat mengikat. (Ini bukan string bet; string bet adalah mendorong chip dalam beberapa gerakan seperti di FAQ. Hasilnya sama saja: kata pertama yang berlaku.) Sudah tak terhitung berapa kali saya melihat dealer memutuskan ini sebagai flat call di tengah kalimat. Ucapkan "raise" *dulu*, baru gerakkan chip.
 
 ### Kesalahan 3 — Big blind membuang flop gratis
 

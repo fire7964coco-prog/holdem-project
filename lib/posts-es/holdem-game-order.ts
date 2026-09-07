@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Una mano de Texas Hold'em sigue este orden: se ponen las ciegas → se reparten dos cartas propias → preflop → flop (3 cartas) → turn (1 carta) → river (1 carta) → showdown, con cuatro rondas de apuestas en total. En el preflop habla primero el jugador a la izquierda de la ciega grande; a partir del flop, el primero a la izquierda del botón. Al final gana la mejor mano de cinco cartas entre tus dos cartas propias y las cinco comunitarias.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-07-24",
-  masterUpdated: "2026-07-19",
+  updated: "2026-09-07",
+  masterUpdated: "2026-08-30",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎬",
@@ -145,7 +145,9 @@ Quién tiene que enseñar primero, cuándo puedes tirar sin enseñar y la etique
 
 ## ¿Quién habla primero en cada calle?
 
-"¿A quién le toca?" tiene una respuesta distinta antes y después del flop — y ese único cambio es el motor de toda la estrategia de posición.
+**Dos asientos se disputan la palabra "primero", y cuál está de turno depende de si el flop ya salió. Antes del flop es UTG — "under the gun", justo a la izquierda de la ciega grande — precisamente porque las ciegas ya tienen dinero puesto y hablan las últimas. En cuanto cae el flop ese privilegio se gasta: la acción arranca de nuevo en el primer jugador vivo a la izquierda del botón, y el botón cierra cada calle a partir de ahí.**
+
+"¿A quién le toca?" tiene, por tanto, una respuesta distinta antes y después del flop — y ese único cambio es el motor de toda la estrategia de posición.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -306,7 +308,7 @@ Cuanto más cerca estés del botón, mejor — hablar el último te deja ver lo 
 
 ### 3. Perseguir proyectos a ciegas
 
-Un proyecto de color o de escalera no significa pagar en automático. Tienes que sopesar las **pot odds** — el precio de pagar frente al tamaño del bote. Si el bote es de 100,000 y tienes que pagar 50,000, tu proyecto necesita completarse al menos un 33% de las veces para que compense.
+Un proyecto de color o de escalera no significa pagar en automático. Tienes que sopesar las **pot odds** — el precio de pagar frente al tamaño del bote. Si el bote — con la apuesta de tu rival ya dentro — es de 100,000 y tienes que pagar 50,000, tu proyecto necesita completarse al menos alrededor de un 33% de las veces para que compense.
 
 ### 4. Tirarte un farol en el river con una mano floja de la nada
 
