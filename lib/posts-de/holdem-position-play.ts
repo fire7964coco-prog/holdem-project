@@ -129,7 +129,7 @@ Die Unterscheidung zählt: der **Big Blind verliert die meisten reinen Chips pro
 
 UTG gut zu spielen dreht sich vor allem um Zurückhaltung:
 
-- **Öffne grob die besten ~13% der Hände** – der Kern sind starke Paare (88+), AK/AQ und die besten suited Broadways (AJs, KQs), abgerundet durch mittlere Paare und die besten suited Asse. Für das exakte Hand-für-Hand-Raster nutze den [Starthände-Chart](/de/blog/holdem-starting-hands-chart).
+- **Öffne grob die besten ~13% der Hände** – der Kern sind starke Paare (TT+), AK/AQ und die besten suited Broadways (AJs, KQs), abgerundet durch mittlere Paare und die besten suited Asse. Für das exakte Hand-für-Hand-Raster nutze den [Starthände-Chart](/de/blog/holdem-starting-hands-chart).
 - **Folde das hübsche, aber dominierte Zeug.** KJo und QJo sehen spielbar aus und bluten leise Chips aus UTG – wenn sie treffen, trifft hinter dir oft jemand größer.
 - **Rechne damit, die Hand OOP zu spielen.** Wer auch immer dein UTG-Open callt, hat wahrscheinlich für drei Streets Position auf dich, also muss deine Range stark genug sein, um diese Steuer auszuhalten.
 
