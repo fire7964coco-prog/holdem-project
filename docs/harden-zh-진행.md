@@ -91,6 +91,12 @@
 - `apt-incheon` 「개막 당일 수관」은 EN 「before the festival」을 **일부러 안 따른** 편차.
 - 2·4법칙 링크 앵커는 도착 글 표기 「二四法则」로 통일돼 있다.
 - GTO 13편·wsop-2026은 대상 밖.
+- 🆕🔴 **헤드 통지(2026-09-08) — `holdem-starting-hands-chart`의 `/zh/hand-chart` 링크가 라이브 404다.**
+  라우트는 `app/hand-chart`(한국어)와 `app/en/hand-chart` **둘뿐**이다(실측: /hand-chart 200 · /en/hand-chart 200 · **/zh/hand-chart 404**).
+  형제 실태 = de·id·ja는 `/hand-chart`(한국어 도구로 떨어짐) · es는 `/en/hand-chart` · **zh-hant·pt는 아예 뺐다**(회차 4 판정 · `docs/locale-intentional-diffs.md` 2026-09-08 행).
+  🔴 **헤드가 손대지 않았다** — 프로토콜 §6-0(레인 소유 파일). **회차 5 마감 때 zh 레인이 판정해 처리하라.**
+  선택지 = ⓐ 링크 제거(zh-hant·pt 선례) ⓑ `/hand-chart`로 강등(de·id·ja 선례 · 한국어 화면) ⓒ `app/zh/hand-chart` 신설(헤드 몫 · 별건 회차).
+  🪶 **이건 «갈림»이 아니라 결함이다** — 404는 어느 선례로 가든 지금보다 낫다. 다만 어느 쪽인지는 zh 레인 판정.
 
 ### 회차 1이 확정한 것
 - 🔴 **`tldr`에 마크다운을 넣지 마라.** `components/intl-blog-post-client.tsx`가 `{post.tldr}`를 **파서 없이**
