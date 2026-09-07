@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Di Texas Hold'em, setiap pemain menerima 2 hole cards, ada 5 kartu bersama di tengah meja, dan tangan poker 5 kartu terbaik menang setelah empat ronde taruhan.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-08-27",
-  masterUpdated: "2026-08-14",
+  updated: "2026-09-07",
+  masterUpdated: "2026-09-07",
   keepImagesInBody: true,
   readTime: "14 menit",
   emoji: "♠️",
@@ -315,7 +315,9 @@ Saat Anda memegang drawing hand (misalnya empat kartu menuju Flush), hitung **ou
 
 </div>
 
-Kalau persentase peluang menang Anda **lebih tinggi** dari persentase yang dituntut pot odds, call itu menguntungkan. Kalau lebih rendah, fold.
+⚠ Aturan ×4 hanya berlaku kalau Anda tidak perlu membayar taruhan lain sampai river — praktis, hampir hanya saat all-in. Kalau Anda call taruhan di flop dan harus memutuskan lagi di turn, hitung **satu** kartu: 9 outs berarti 9 ÷ 47 = **~19%**.
+
+Kalau persentase peluang menang Anda **lebih tinggi** dari persentase yang dituntut pot odds, call itu menguntungkan — pakai angka yang sesuai dengan harga Anda: untuk satu kali call di flop, itu angka satu kartu (9 ÷ 47 = **~19%**), bukan angka ×4. Kalau lebih rendah, fold.
 
 ==r:Ini konsep matematika paling penting untuk pemula. Kuasai, dan Anda otomatis terhindar dari separuh kesalahan mahal yang dibuat pemain baru.==
 
