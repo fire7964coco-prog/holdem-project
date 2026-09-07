@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "En el Texas Hold'em cada jugador recibe 2 cartas propias y comparte 5 cartas comunitarias en la mesa. Se apuesta en cuatro rondas — preflop, flop, turn y river — y gana quien forma la mejor mano de póker de 5 cartas, o el último que quede si todos los demás se retiran. Puedes usar tus dos cartas, una sola o ninguna: lo que forme la mano más fuerte.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-08-27",
-  masterUpdated: "2026-08-14",
+  updated: "2026-09-07",
+  masterUpdated: "2026-09-07",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
@@ -313,7 +313,9 @@ Cuando llevas un proyecto (p. ej. cuatro cartas para color), cuenta tus **outs**
 
 </div>
 
-Si tu porcentaje de ganar es **mayor** que el porcentaje que exigen las pot odds, igualar es rentable. Si es menor, retírate.
+⚠ La regla del ×4 solo vale si no vas a pagar ninguna otra apuesta antes del river — en la práctica, casi solo cuando estás all-in. Si pagas una apuesta en el flop y tienes que decidir otra vez en el turn, cuenta **una** carta: 9 outs son entonces 9 ÷ 47 = **~19%**.
+
+Si tu porcentaje de ganar es **mayor** que el porcentaje que exigen las pot odds, igualar es rentable — usa el número que corresponde a tu precio: para un solo call en el flop es la cifra de una carta (9 ÷ 47 = **~19%**), no la del ×4. Si es menor, retírate.
 
 ==r:Este es el concepto matemático más importante para un principiante. Domínalo y evitarás automáticamente la mitad de los errores caros que cometen los jugadores nuevos.==
 

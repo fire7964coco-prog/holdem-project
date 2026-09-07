@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Texas Hold'em gives each player 2 hole cards, uses 5 community cards, and the best 5-card poker hand wins after four betting rounds.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-08-14",
+  updated: "2026-09-07",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
@@ -311,7 +311,9 @@ When you have a drawing hand (e.g. four cards to a flush), count your **outs** �
 
 </div>
 
-If your percentage chance of winning is **higher** than the percentage the pot odds require, the call is profitable. If it is lower, fold.
+⚠ The ×4 rule only holds if you will not have to pay another bet before the river — in practice, almost only when you are all-in. If you call a bet on the flop and must decide again on the turn, count **one** card: 9 outs are then 9 ÷ 47 = **~19%**.
+
+If your percentage chance of winning is **higher** than the percentage the pot odds require, the call is profitable — use the number that matches your price: for a single call on the flop that is the one-card figure (9 ÷ 47 = **~19%**), not the ×4 number. If it is lower, fold.
 
 ==r:This is the single most important math concept for beginners. Master it and you will automatically avoid half of the expensive mistakes new players make.==
 
