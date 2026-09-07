@@ -62,7 +62,10 @@ const NORM = {
 /** content 필드만 꺼낸다(메타의 날짜·slug는 비교 대상이 아니다). 본문에 백틱은 금지(§12-A)라 첫 백틱 쌍이 곧 본문이다 */
 function contentOf(src) {
   const m = src.match(/content:\s*`([^`]*)`/);
-  return m ? m[1] : src;
+  const c = m ? m[1] : src;
+  // 🔴 URL은 토큰 추출 전에 지운다 — 위키 링크의 percent-encoding(%E5%BE%B7…)이 «5%·7%·89%»로 잡혔다
+  // (zh 회차 1 헤드 요청 1 · zh는 德州扑克, zh-hant는 德州撲克를 인코딩해 바이트가 달라 정상인데 갈림으로 떴다)
+  return c.replace(/https?:\/\/[^\s)\]>"'`]+/g, ' ');
 }
 
 function tokens(src) {

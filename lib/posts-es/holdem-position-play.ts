@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Estar en posición significa que hablas último — ves la decisión de cada rival antes de gastar una ficha. Los estudios de solver y de bases de datos sugieren que fuera de posición solo capturas alrededor del 60–85% de tu equity — lo que en posición te deja por encima del 100%. Por eso UTG abre ~13% de las manos y el botón ~43% — y por eso la posición reescribe cada c-bet, cada farol y cada decisión de control del bote en el postflop.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-08-18",
-  masterUpdated: "2026-08-18",
+  updated: "2026-09-07",
+  masterUpdated: "2026-08-27",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎯",
@@ -255,7 +255,7 @@ A. Fuera de posición (OOP) significa que tienes que actuar antes que tu rival e
 
 **Q. ¿Quién habla primero, la ciega pequeña o la ciega grande?**
 
-A. Depende de la calle. En el *preflop*, la ciega pequeña habla antes que la ciega grande, y la ciega grande habla la última — «cierra» la acción. En el *postflop* (flop, turn y river), la ciega pequeña es la primera en actuar y la ciega grande justo después, así que una vez que salen las cartas la ciega pequeña siempre habla antes que la ciega grande. El botón siempre habla último en el postflop, que es justo por lo que es el asiento más rentable.
+A. Depende de la calle. En el *preflop*, la ciega pequeña habla antes que la ciega grande, y la ciega grande habla la última — «cierra» la acción. En el *postflop* (flop, turn y river), la ciega pequeña es la primera en actuar y la ciega grande justo después, así que una vez que salen las cartas la ciega pequeña habla antes que la ciega grande (la única excepción es el heads-up, donde el botón pone la ciega pequeña y aun así habla último en el postflop, de modo que la ciega grande va primero). El botón siempre habla último en el postflop, que es justo por lo que es el asiento más rentable.
 
 **Q. ¿Qué es jugar en posición (IP) y fuera de posición (OOP)?**
 
@@ -279,7 +279,7 @@ A. Dos respuestas, según la pregunta. La ciega pequeña es el peor asiento estr
 
 **Q. ¿Es la ciega pequeña una posición temprana?**
 
-A. No — la ciega pequeña es una ciega, no un asiento de «posición temprana». Los jugadores de posición temprana (UTG y los asientos de al lado) abren cerrado porque toda la mesa actúa detrás de ellos, pero aun así hablan *después* de las ciegas en el preflop. La ciega pequeña es en realidad el peor asiento para jugar: pone media ciega y luego actúa primero en cada calle del postflop. No la trates como posición temprana — el estándar moderno desde la ciega pequeña es 3-bet o fold.
+A. No — la ciega pequeña es una ciega, no un asiento de «posición temprana». Los jugadores de posición temprana (UTG y los asientos de al lado) abren cerrado porque toda la mesa actúa detrás de ellos — y en el postflop al menos hablan *después* de las ciegas. La ciega pequeña es en realidad el peor asiento para jugar: pone media ciega y luego actúa primero en cada calle del postflop. No la trates como posición temprana — el estándar moderno desde la ciega pequeña es 3-bet o fold.
 
 **Q. ¿Cómo se juega fuera de posición (OOP)?**
 

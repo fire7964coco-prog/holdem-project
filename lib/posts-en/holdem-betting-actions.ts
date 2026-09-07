@@ -179,9 +179,9 @@ I play a weekly low-stakes live game, and the same action errors repeat like clo
 
 First to act on the flop, nobody has bet, and a newer player pushes chips in **silently**, "to call." There's nothing to call: under ==WSOP Rule 90.a== a bet is made by declaration *or* by pushing out chips — he just bet without meaning to. Had he *said* "call," ==Rule 90.b.1== would have made it a check instead. When the street is unopened, check and see the card for free.
 
-### Mistake 2 — The string raise
+### Mistake 2 — "I call... actually, raise!"
 
-"I call... actually, raise!" Nope. In live poker your action locks the moment you announce it. I've watched dealers rule this a flat call mid-sentence more times than I can count. Announce "raise" *first*, then move chips.
+"I call... actually, raise!" Nope. In live poker your action locks the moment you announce it — under ==Rule 90.d== a verbal declaration in turn is binding. (That is not a string bet, by the way; a string bet is the multiple-motion push covered in the FAQ. Same result though: the first word rules.) I've watched dealers rule this a flat call mid-sentence more times than I can count. Announce "raise" *first*, then move chips.
 
 ### Mistake 3 — The big blind folding a free flop
 

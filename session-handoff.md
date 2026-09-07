@@ -66,6 +66,13 @@
 > **헤드가 매 회차 하는 것**(프로토콜 §6): `git merge harden-zh` → `harden-zh-hant` → 빌드 → push → 라이브 `page.content()` → 진행 파일 «헤드 요청» 처리 → WORKLOG·검수장 통보(해시).
 > 🔴 **레인 첫 마디**: 「`HARDEN.md` 읽고 회차 시작해」. 레인이 `git merge main`을 먼저 해야 정본·게이트가 들어간다(헤드가 09-06에 두 레인에 main을 머지해 뒀다).
 >
+> **진행 상태(2026-09-07 15:15 헤드)**: 🇨🇳 회차 1 ✅(`29aa0480`·`a069430a`) → 회차 2 족보 진행 중(🔴 머지 시 reading-the-board·split-pot 라벨 `快速回答`·beginners 弱A·all-in 스탬프 충돌 가능 — 헤드가 해결) · 🇹🇼 **회차 1 ✅ 머지 `d9f2f3c8` · 후속 `3f6684c1`** → 회차 2 족보 진행 중 · 🇯🇵 레인 신설(`07bf9b35` · §7-E) 회차 1 규칙 **B 구간(Fable)** 진행. 🔴 **레인 6편 회차 1 직답은 «각 H2 직후 라벨 블록»이 정본**(§7-C 판정) — 🇹🇼 회차 1 6편은 회차 7 소급. 헤드 회차 경위 = WORKLOG 「2026-09-07 (1)·(2)」.
+> **헤드 이행 09-07**: MA-117 전건(`3e523fd7`) · MA-118 요청 1(`ee120dfe`) · MB-001·MB-002 발신(우편함 **`MB-` 전환 완료** — `mailbox/out-본체.md`).
+> 🔴 **다음 헤드 회차 1순위 = MA-118 요청 2**: es `como-entrar-al-wsop`·`wsop-2026-tournament-guide` WRONG 15·RISKY 10·STALE 2(원장 `홀덤검수/ledger/es/` 근거란) + **LISR 138조 웹 실측**(«territorio nacional» · 6% 연방/주). 그다음 = 헤드 미결 ⓐ~ⓓ.
+> 🪶 **레인 창 띄우는 명령**(탭 제목 고정 — Claude Code가 «claude»로 덮어쓰지 못하게): `wt.exe -w new new-tab --suppressApplicationTitle --title "🇯🇵 harden-ja (일본어 경화)" -d "C:\Users\하봄\Downloads\Holdem-ja" claude`. 🇨🇳·🇹🇼는 현재 회차가 끝나 `/clear` 할 때 같은 형식으로 다시 띄운다(사장님 지시 09-07).
+> 🔴 **헤드 미결**: ⓐ `blind-meaning` 직답≈tldr 중복(전 로케일 구조 판정) ⓑ FAQ 103조 정의 요소 둘 — EN·7로케일 EN-먼저(검수 발췌 L43) ⓒ TDA 원문 사본 없음(버지니아 PDF 경로 = 메모리 tda-rules-primary-source-path) ⓓ 사장님 문의 「경화 폴더 하나 더?」 → **ja 레인 권고**(07-20 최고령 · 자산 완비 · 사장님 08-26 「ja 중요」 판정) — 결재 대기.
+> 🔴 **모델 전환은 사장님 손**: 레인은 구간 경계(A→B→C)에서 멈추고 `/model` 전환을 요청한다(프로토콜 §2 · `7c9196d6`). 첫 회차는 옛 판이라 Opus로 끝까지 갔다.
+>
 > ## 🔴 2순위 — 사장님 재가 대기 1건
 > **en 56편 원장 레인을 열지**(본부 M-113 ⑦). `DECISIONS.md` §2 「EN 소급 전수 검수는 안 한다」(08-21) ↔
 > 최근 회차가 EN을 **마스터로** 다룬 것(M-092·M-099 · A5s 발굴)이 갈린다. 「지금은 EN이 마스터다」로 정리되면 **오히려 1순위**가 된다.

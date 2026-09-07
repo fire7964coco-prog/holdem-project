@@ -88,7 +88,7 @@ export const POST: Post = {
   seoTitle: "Board Texture Turns a 67% C-Bet Into 9.6% — GTO Solver",
   // 157자 (EN 하드리밋 160)
   desc: "Nothing changed but three cards. On 7-6-5 the small blind that bet 67.4% one board earlier now bets 9.6% — the clearest read on board texture in poker.",
-  tldr: "After a small-blind open and a big-blind call, the 7♦6♦5♣ flop gets a bet just 9.6% of the time and a check 90.4%. Pot, stack, SPR, bet size and both ranges are identical to the previous spot — only the three board cards changed, and the bet collapsed from 67.4% to 9.6%. The range edge won preflop was an edge in **high cards**, and a low connected board erases it outright. Equity flips to 49.6% against 50.4% and the out-of-position realization drops to 85.3%.",
+  tldr: "After a small-blind open and a big-blind call, the 7♦6♦5♣ flop gets a bet just 9.6% of the time and a check 90.4%. Pot, stack, SPR, bet size and both ranges are identical to the previous spot — only the three board cards changed, and the bet collapsed from 67.4% to 9.6%. The range edge won preflop was an edge in high cards, and a low connected board erases it outright. Equity flips to 49.6% against 50.4% and the out-of-position realization drops to 85.3%.",
   category: "strategy",
   date: "2026-08-21",
   updated: "2026-09-02",

@@ -183,9 +183,9 @@ Ich spiele ein wöchentliches Low-Stakes-Live-Game, und dieselben Action-Fehler 
 
 Am Flop ist er als Erster dran, niemand hat gesetzt, und ein neuer Spieler schiebt **wortlos** Chips rein, „um zu callen“. Da ist nichts zu callen: Einsätze erfolgen nach ==WSOP Rule 90.a== durch Ansage *oder* durch Herausschieben von Chips – er hat also gerade gesetzt, ohne es zu wollen. Hätte er „Call“ *angesagt*, wäre daraus nach ==Rule 90.b.1== schlicht ein Check geworden. Wenn die Street noch nicht eröffnet ist: checken und die Karte gratis sehen.
 
-### Fehler 2 – Der String Raise
+### Fehler 2 – „Ich calle… nein, Raise!“
 
-„Ich calle... nein, warte, Raise!“ Nö. Im Live-Poker ist deine Aktion in dem Moment bindend, in dem du sie ansagst. Ich habe öfter, als ich zählen kann, gesehen, wie Dealer das mitten im Satz als Flat Call gewertet haben. Sag *zuerst* „Raise“, beweg dann die Chips.
+„Ich calle... nein, warte, Raise!“ Nö. Im Live-Poker ist deine Aktion in dem Moment bindend, in dem du sie ansagst – nach ==Rule 90.d== ist eine Ansage in der eigenen Reihe verbindlich. (Ein String Raise ist das übrigens nicht; der ist das Nachschieben in mehreren Bewegungen aus der FAQ. Ergebnis ist dasselbe: Das erste Wort zählt.) Ich habe öfter, als ich zählen kann, gesehen, wie Dealer das mitten im Satz als Flat Call gewertet haben. Sag *zuerst* „Raise“, beweg dann die Chips.
 
 ### Fehler 3 – Der Big Blind foldet einen Gratis-Flop
 
