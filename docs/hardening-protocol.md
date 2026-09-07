@@ -68,6 +68,8 @@
 | **B 재저작** | Fable | 브리프 **하나만** | 편집된 포스트 N편 |
 | **C 마감** | Opus (렌즈는 Opus 서브 `model` 명시) | 편집본 · `git diff` | 게이트 0 · 렌즈 판정 · 커밋 · 진행 파일 · 보고 |
 
+🔴 **사장님이 치는 것은 한 줄뿐이다 — 「`HARDEN.md` 읽고 회차 N 시작해」**(그리고 구간 경계의 `/model`). `git merge main`을 비롯한 **git 명령은 전부 레인(이 창의 Claude)이 친다.** 사장님께 git 명령을 부탁하지 마라(2026-09-07 사장님 지시 「HARDEN.md 이것만 할게, 헷갈려」).
+
 🔴 **B 구간에 도구 왕복을 넣지 마라** — 실측이 더 필요하면 A로 돌아가 브리프를 고친다. B가 브리프 밖의 사실을 «기억으로» 쓰는 순간 §12-B 위반이다.
 
 🔴 **모델 전환은 레인이 못 한다 — `/model`은 사장님이 터미널에 치는 명령이다.** 그래서 구간 경계마다 레인은 **멈추고 한 줄로 요청**한다:
@@ -127,6 +129,8 @@ git diff <그 날짜 직전 커밋> HEAD -- lib/posts-en/<slug>.ts
 
 ## 5. C 마감 (Opus)
 
+⓪ **`git merge main` 한 번 더** — 회차 중에 헤드가 main을 바꿨을 수 있다(2026-09-07 실사고: 🇹🇼 회차 2가 A에서 merge main을 했는데 그 뒤 헤드가 같은 족보 4편을 EN-먼저로 고쳐 머지 때 **충돌 6hunk**). 충돌이 나면 **레인이 푼다**(자기 로케일 파일이라 판정 가능 · 헤드 정정분은 살리고 문안은 레인 판) — 헤드에게 넘기지 않는다. 그 다음 게이트.
+
 ① **게이트 전건** — 🔴 0건까지. 출력 맨 아래 **커버리지**를 읽는다(«시나리오 못 잡은 글»의 0건은 미검사다).
 ```bash
 npm run audit:hard -- --locale=<locale>
@@ -173,7 +177,8 @@ git commit -F commit-msg.txt   # "harden(<locale>): <클러스터> N편 — 회�
 
 ## 6. 헤드(본체 main)가 하는 것 — 레인은 읽기만
 
-1. `git merge harden-zh` → `git merge harden-zh-hant`(conflict가 나면 레인이 공용 파일을 건드린 것 — §1로 되돌린다).
+0. 🔴 **레인이 진행 중인 클러스터의 로케일 파일은 손대지 않는다.** EN-먼저 정정이 그 클러스터에 걸리면 EN + 다른 로케일만 먼저 고치고, 그 레인 로케일은 **진행 파일 §5에 «헤드가 EN을 고쳤다 — C 구간 merge main 때 받아라»로 넘긴다.** 불가피하게 손댔으면 그 레인 `HARDEN.md`(비추적) 말미에 통지를 붙인다.
+1. `git merge harden-zh` → `git merge harden-zh-hant` → `git merge harden-ja`(conflict가 공용 파일이면 레인이 §1을 어긴 것 — 되돌린다 · 로케일 파일이면 §6-0을 헤드가 어긴 것 — 헤드가 푼다).
 2. `npm run build`(N blog posts 확인) → `git push` → 배포 도착 폴링 → **라이브 확인은 `page.content()`**(innerText는 접힌 FAQ를 못 본다 · 앵커는 원문 표기).
 3. 진행 파일 «헤드 요청» 절 처리: `locale-intentional-diffs.md` 등재 · EN-먼저 묶음을 EN에 먼저 정정 후 전 로케일 전파 · 이미지 교체 · 게이트 수정.
 4. `WORKLOG.md`·`session-handoff.md` 기록. 검수장 lane-zh에 **머지 커밋 해시**를 우편함으로 통보(검수는 해시 기준 판정).
