@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Lo que más frena a la gente para entrar a una sala de póker no son las reglas del juego: es no saber el trámite. Dónde te anotas, dónde compras las fichas, qué se dice y cuándo. Son unos veinte minutos de trámite que nadie explica, y luego el juego es el mismo que ya conoces. Aquí va el recorrido completo, incluida la parte que más nos preocupa a los que hablamos español: en la mesa solo necesitas siete palabras en inglés, y están en el reglamento.",
   category: "rules",
   date: "2026-07-27",
-  updated: "2026-07-27",
+  updated: "2026-09-07",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🎴",
@@ -122,7 +122,7 @@ complete | completar
 
 Siete palabras. El mismo reglamento las describe como *declaraciones simples, inequívocas, las de siempre*, y añade algo importante: **los términos regionales también valen**, pero usar lenguaje no estándar es **a tu propio riesgo**, porque pueden entenderte otra cosa.
 
-:::note[Y un dato que conviene conocer si vas al WSOP: su reglamento tiene una **regla de solo inglés en la mesa mientras las cartas están en juego**. No es para excluir a nadie: es para que ningún jugador pueda pasarle información a otro en un idioma que el resto no entiende. En la práctica, con esas siete palabras ya cumples. Fuera de la mano y fuera de la mesa hablas lo que quieras.]:::
+:::note[Y un dato que conviene conocer si vas al WSOP: su reglamento tiene una **regla de solo inglés en la mesa mientras las cartas están en juego**. No es para excluir a nadie: es para que ningún jugador pueda pasarle información a otro en un idioma que el resto no entiende. En la práctica, con esas siete palabras ya cumples. Entre una mano y otra, y fuera de la mesa, hablas lo que quieras; mientras haya una mano en curso, la regla aplica a toda la mesa, aunque tú ya te hayas retirado de esa mano.]:::
 
 ## Cómo se apuesta: la voz y las fichas
 
@@ -134,14 +134,14 @@ En la práctica: **habla antes de tocar tus fichas.** Si dices "raise" y luego e
 
 Se llama *string bet*, y es el más común de todos.
 
-El reglamento lo define como **intentar una apuesta o subida en varios movimientos**. Es decir: empujas unas fichas, y luego regresas por más. El dealer lo va a cantar y **solo va a valer el primer montón** — aunque tu intención fuera subir mucho más.
+El reglamento lo define como **intentar una apuesta o subida en varios movimientos que incluyen un regreso a tu propia pila, sin haber declarado antes con la voz lo que vas a hacer** — o usar un gesto engañoso para provocar que alguien actúe fuera de turno. Es decir: empujas unas fichas, y luego regresas a tu pila por más, sin haber dicho "subo". El dealer lo va a cantar y **solo va a valer el primer montón** — aunque tu intención fuera subir mucho más.
 
 Cómo evitarlo, y es fácil:
 
 :::steps
 Dilo con la voz primero | "Raise to sixty". Listo. Después mueve las fichas con toda la calma del mundo.
 O muévelas en un solo movimiento | Con las dos manos si hace falta, pero un solo empuje hacia el bote.
-Nunca regreses por más fichas | Ese regreso por más fichas es exactamente lo que define el string bet.
+Nunca regreses por más fichas | Ese regreso por más fichas, sin haber cantado antes la subida, es exactamente lo que define el string bet.
 :::
 
 ## El showdown
@@ -210,7 +210,7 @@ A. En el mostrador de la sala, o desde el celular con una aplicación de lista d
 
 **Q. ¿Qué es un string bet?**
 
-A. Intentar una apuesta o subida en varios movimientos: empujas fichas y luego regresas por más. El dealer lo canta y solo cuenta el primer montón. Se evita declarando con la voz antes de tocar las fichas, o moviéndolas en un solo movimiento.
+A. Intentar una apuesta o subida en varios movimientos que incluyen un regreso a tu propia pila, sin haberla declarado antes con la voz: empujas fichas y luego vuelves a tu pila por más. El dealer lo canta y solo cuenta el primer montón. Se evita declarando con la voz antes de tocar las fichas, o moviéndolas en un solo movimiento.
 
 **Q. ¿Cuánto se le da de propina al dealer?**
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un 3-bet es la primera resubida antes del flop — se llama 3-bet porque la ciega grande es la primera apuesta, la subida de apertura la segunda y tu resubida la tercera. Haz un 3-bet de valor con un núcleo cerrado (QQ+, AK) más unos pocos faroles con bloqueadores del mismo palo como A5s, dale un tamaño de unas 3x la apertura en posición y 4x fuera de posición, y mantén tu frecuencia global de 3-bet cerca del 6–10%. Cuando eres tú quien se enfrenta a un 3-bet, resube con un 4-bet tus manos premium, iguala las que se juegan bien y foldea el resto — foldeando más de lo 'balanceado' contra jugadores de stakes bajos que nunca farolean.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-06",
-  masterUpdated: "2026-08-26",
+  updated: "2026-09-07",
+  masterUpdated: "2026-09-06",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "♦️",
@@ -244,7 +244,7 @@ A. Un 3-bet es la primera resubida (sobre una subida de apertura); un 4-bet es l
 
 **Q. ¿Con qué manos deberías hacer un 4-bet y cuánto?**
 
-A. Haz un 4-bet con un rango polarizado: premium por valor (normalmente AA–KK, más AK) y unos pocos faroles con bloqueadores como A5s, que bloquean los ases y el as-rey de tu rival. Dale al 4-bet un tamaño de unas 2.2–2.5x el 3-bet en posición y un poco mayor fuera de posición — más pequeño de lo que espera la mayoría de los principiantes, porque el bote ya es grande. Como frecuencia, los jugadores sólidos solo meten 4-bet un pequeño porcentaje de manos; amplía tus 4-bets de valor contra rivales que 3-betean demasiado a menudo.
+A. Haz un 4-bet con un rango polarizado: premium por valor (QQ+ y AK — contra rivales que casi nunca hacen 3-bet, cierra el núcleo a AA–KK) y unos pocos faroles con bloqueadores como A5s, que bloquean los ases y el as-rey de tu rival. Dale al 4-bet un tamaño de unas 2.2–2.5x el 3-bet en posición y un poco mayor fuera de posición — más pequeño de lo que espera la mayoría de los principiantes, porque el bote ya es grande. Como frecuencia, los jugadores sólidos solo meten 4-bet un pequeño porcentaje de manos; amplía tus 4-bets de valor contra rivales que 3-betean demasiado a menudo.
 
 **Q. ¿Cuándo deberías hacer un 5-bet en el póker?**
 
