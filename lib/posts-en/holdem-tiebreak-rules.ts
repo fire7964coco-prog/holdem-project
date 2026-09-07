@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ties are broken in a fixed order: hand rank first, then the cards that make the hand, then kickers from highest to lowest. Same pair → higher first kicker wins; identical five cards → split pot. Suits never decide a tie.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-08-30",
+  updated: "2026-09-07",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "⚖️",
@@ -193,7 +193,7 @@ A. The higher kicker — but check which of your cards actually reach the best f
 
 **Q. Who wins if both players have two pair?**
 
-A. Higher pair first, then the lower pair, then the one kicker — so aces-and-threes beats kings-and-queens even though the second pair is far smaller. The case that catches people is a double-paired board like K-K-9-9-5: every player already holds the same two pair, so the hand collapses to a single kicker and the best hole card at the table takes it. Two pair carries exactly one kicker, never two.
+A. Higher pair first, then the lower pair, then the one kicker — so aces-and-threes beats kings-and-queens even though the second pair is far smaller. The case that catches people is a double-paired board like K-K-9-9-5: unless someone holds a king, a nine, or a pocket pair above nines, every player has the same two pair, so the hand collapses to a single kicker and the best hole card at the table takes it — and if nobody's hole card beats the board's five, everyone plays the board and the pot is chopped. Two pair carries exactly one kicker, never two.
 
 **Q. Who wins if two players have the same three of a kind?**
 
@@ -229,7 +229,7 @@ A. The higher straight flush wins, decided by its top card — a queen-high stra
 
 **Q. Do suits ever break a tie in Texas Hold'em?**
 
-A. No — but there is one place suits are used at a Hold'em table, and it is not the pot. When a game starts, each player draws a card to decide where the dealer button goes, and if two draws tie on rank the suit order settles it. That picks a *seat*, never a hand. Everywhere else in the rulebook suit order belongs to stud and razz. If two best fives match rank for rank, the pot is split regardless of suits.
+A. No — but there is one place suits are used at a Hold'em table, and it is not the pot. In cash games, and under most card-room house rules, each player draws a card to decide where the dealer button starts, and if two draws tie on rank the suit order settles it. (WSOP tournaments skip the draw: ==Rule 85== starts the button at the first stack to the dealer's right and redraws only with three, two and one tables left — no suit involved.) Either way that picks a *seat*, never a hand. The only suit order in the tournament rulebook belongs to stud and razz. If two best fives match rank for rank, the pot is split regardless of suits.
 
 **Q. What happens if both players have the exact same hand?**
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "La respuesta corta son 100 veces la ciega grande — unos 200 dólares para una mesa de 1/2, o entre 2,000 y 5,000 pesos para las mesas chicas de México. Pero ese número es el buy-in, no tu presupuesto: si llegas con una sola entrada y pierdes dos manos grandes, se acabó la noche antes de empezar. La cuenta completa lleva tres partes, y casi nadie las separa.",
   category: "rules",
   date: "2026-07-27",
-  updated: "2026-07-27",
+  updated: "2026-09-07",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "💵",
@@ -84,7 +84,7 @@ Y no llevas más encima | Lo que no traes no lo puedes perder. Deja la tarjeta e
 
 Ese último punto suena exagerado hasta la primera vez que lo agradeces. Y el cajero del casino está puesto justo ahí por una razón.
 
-:::note[Si tres entradas se te hacen demasiado para una noche, la respuesta no es llevar menos: es **bajar de mesa**. Tres entradas de una mesa de 10/20 pesos son bastante menos que una sola de $1/$2. Jugar cómodo en una mesa chica siempre es mejor que jugar apretado en una grande.]:::
+:::note[Si tres entradas se te hacen demasiado para una noche, la respuesta no es llevar menos: es **bajar de mesa**. Tres entradas de una mesa de 10/20 pesos (unos $6,000 MXN) son bastante menos que tres de $1/$2 ($600 dólares). Jugar cómodo en una mesa chica siempre es mejor que jugar apretado en una grande.]:::
 
 ## El fondo de juego: solo si vas a repetir
 

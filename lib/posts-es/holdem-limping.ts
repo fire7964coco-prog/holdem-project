@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Limpear es entrar en un bote preflop solo igualando la ciega grande en lugar de subir o foldear. El open-limp (ser el primero en entrar) casi siempre es un error — no puedes ganar el bote preflop, cedes la iniciativa y los buenos jugadores te castigan. Pero limpear no siempre está mal: completar la ciega pequeña, hacer over-limp con manos especulativas detrás de otros limpers, y algunos casos en vivo y con stack corto son excepciones legítimas.",
   category: "strategy",
   date: "2026-07-05",
-  updated: "2026-08-26",
-  masterUpdated: "2026-08-26",
+  updated: "2026-09-07",
+  masterUpdated: "2026-08-27",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🚶",
@@ -179,7 +179,7 @@ A. Un over-limp es limpear detrás de otro limper: alguien ya ha entrado igualan
 
 **Q. ¿Cómo se llama a un jugador que limpea mucho?**
 
-A. Normalmente "fish" o "pez" — el término general para un jugador débil y perdedor — o, más concretamente, una "calling station" (paga demasiado) o un "donk" (juega mal). El open-limp habitual es una de las señales más claras de un jugador inexperto, y por eso mismo los jugadores más fuertes van a por los limpers con subidas de aislamiento. Si prefieres no llevar esa etiqueta, ve por defecto a subir o foldear.
+A. Normalmente "fish" o "pez" — el término general para un jugador débil y perdedor — o un "donk" (juega mal). (A ese mismo jugador muchas veces le cuelgan también la etiqueta de "calling station", pero ese término habla de pagar demasiadas *apuestas postflop* — no de cómo entra en los botes.) El open-limp habitual es una de las señales más claras de un jugador inexperto, y por eso mismo los jugadores más fuertes van a por los limpers con subidas de aislamiento. Si prefieres no llevar esa etiqueta, ve por defecto a subir o foldear.
 
 ---
 

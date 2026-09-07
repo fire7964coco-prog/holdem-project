@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "La propina al dealer no está en ningún reglamento: es costumbre, y cambia según dónde juegues. En Estados Unidos lo normal en mesas bajas es un dólar por bote ganado, y se da solo cuando ganas. En torneos el asunto es otro, porque una parte de tu inscripción ya va al personal. Y hay momentos en que no hace falta dar nada — eso tampoco lo explica nadie.",
   category: "rules",
   date: "2026-07-27",
-  updated: "2026-07-27",
+  updated: "2026-09-07",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "🪙",
@@ -66,7 +66,7 @@ No por mano jugada — **por bote que ganas.** Si juegas tres horas y ganas ocho
 | Grande, de los que se recuerdan | \$2 a \$5 |
 | Un bote enorme o un premio de la casa | Más, a tu criterio |
 
-Lo importante de esa tabla: **la mayoría de las filas dicen un dólar.** No hay que hacer cuentas ni calcular porcentajes en la mesa. Separas una ficha de un dólar cuando el bote llega, y ya.
+Lo importante de esa tabla: **las dos primeras filas —los botes de todos los días— dicen un dólar.** No hay que hacer cuentas ni calcular porcentajes en la mesa. Separas una ficha de un dólar cuando el bote llega, y ya.
 
 :::note[Si la mesa es más grande —\$2/\$5 o de ahí para arriba— la costumbre sube un poco, normalmente a uno o dos dólares, y en botes buenos algo más. Pero no sube en proporción al bote: en las mesas altas la propina crece mucho menos que el dinero que se mueve, y eso ya lo da por hecho todo el mundo.]:::
 

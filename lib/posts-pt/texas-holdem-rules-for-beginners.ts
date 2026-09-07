@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "No Texas Hold'em cada jogador recebe 2 cartas fechadas, usa 5 cartas comunitárias, e a melhor mão de 5 cartas ganha depois de quatro rodadas de apostas.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-08-27",
-  masterUpdated: "2026-08-14",
+  updated: "2026-09-07",
+  masterUpdated: "2026-09-07",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
@@ -313,7 +313,9 @@ Quando você tem um draw (por exemplo, quatro cartas para um flush), conte seus 
 
 </div>
 
-Se a sua chance percentual de ganhar for **maior** do que o percentual que as pot odds exigem, o pagamento é lucrativo. Se for menor, folde.
+⚠ A regra do ×4 só vale se você não tiver de pagar mais nenhuma aposta até o river — na prática, quase só quando está all-in. Se você paga uma aposta no flop e precisa decidir de novo no turn, conte **uma** carta: 9 outs viram 9 ÷ 47 = **~19%**.
+
+Se a sua chance percentual de ganhar for **maior** do que o percentual que as pot odds exigem, o pagamento é lucrativo — use o número que corresponde ao seu preço: para um único call no flop, é o valor de uma carta (9 ÷ 47 = **~19%**), não o do ×4. Se for menor, folde.
 
 ==r:Este é o conceito de matemática mais importante para iniciantes. Domine-o e você evita automaticamente metade dos erros caros que os jogadores novos cometem.==
 

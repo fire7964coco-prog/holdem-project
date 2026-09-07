@@ -66,7 +66,17 @@
 > **헤드가 매 회차 하는 것**(프로토콜 §6): `git merge harden-zh` → `harden-zh-hant` → 빌드 → push → 라이브 `page.content()` → 진행 파일 «헤드 요청» 처리 → WORKLOG·검수장 통보(해시).
 > 🔴 **레인 첫 마디**: 「`HARDEN.md` 읽고 회차 시작해」. 레인이 `git merge main`을 먼저 해야 정본·게이트가 들어간다(헤드가 09-06에 두 레인에 main을 머지해 뒀다).
 >
-> **진행 상태(2026-09-07 헤드)**: 🇨🇳 **회차 1 ✅ 머지 `29aa0480` · 배포 `a069430a`** — 다음 = 회차 2(족보 6). 🇹🇼 회차 1 진행 중(미커밋). 헤드 이행 경위 = WORKLOG 「2026-09-07 (1)」.
+> **진행 상태(2026-09-07 15:15 헤드)**: 🇨🇳 회차 1 ✅ · **회차 2 ✅ 머지 `28669901` · 후속 `1a0f79b6`**(충돌 0) → 회차 3 확률 진행 · 🔴 **레인 EN-먼저 11건 대기열**(WORKLOG (4)) · 🇹🇼 **회차 1 ✅ 머지 `d9f2f3c8` · 후속 `3f6684c1`** → 회차 2 족보 진행 중(A 구간 중간 커밋 `44bbe5a5` 브리프+뱅크 — 회차 완료 전엔 머지하지 마라) · 🇯🇵 레인 신설(`07bf9b35` · §7-E) 회차 1 규칙 **B 구간(Fable)** 진행. 🔴 **레인 6편 회차 1 직답은 «각 H2 직후 라벨 블록»이 정본**(§7-C 판정) — 🇹🇼 회차 1 6편은 회차 7 소급. 헤드 회차 경위 = WORKLOG 「2026-09-07 (1)·(2)」.
+> **헤드 이행 09-07**: MA-117 전건(`3e523fd7`) · MA-118 요청 1(`ee120dfe`) · MB-001·MB-002 발신(우편함 **`MB-` 전환 완료** — `mailbox/out-본체.md`).
+> 🔴 **다음 헤드 세션 — 첫 마디 「핸드오프 읽고 대기해」. 대기열 3건(순서 제안 = 1→2→3 · 사장님 미결재)**:
+> | # | 무엇 | 근거 위치 | 규모 |
+> |---|---|---|---|
+> | 1 | **zh 레인 EN-먼저 11건** — EN 족보 6편 결함(③ split-pot TDA Rule 20 첫 단계 «최소 단위로 쪼갠다» 누락 · ④ hand-rankings 로열 배지 «Always a tie» ↔ tiebreak 08-30 크로스문서 불일치 · ⑤ kicker 打公牌 무조건 단정 · ⑥ split-pot 팟오즈 헤즈업 전제 · ⑦ reading 「announce」 D유형(TDA 12 cards speak) · ⑧ 7选5 표 헤더 · ⑨ 별칭 Broadway flush/steel wheel · ⑩ kicker FAQ 보드 3장 · ⑪ 「WSOP Rule 172」 검증 불가). ①②는 `3e523fd7`로 종결. **전건 1차 출처 재판정 → EN 정정 → 전 로케일 전파.** 먼저 하는 이유: 레인들이 옛 EN을 옮겨 간다(회차 2 실증) | `Holdem-zh/docs/harden-zh-진행.md` §5-2-B · TDA 2022 shortform = `https://pokercalendar.asia/wp-content/uploads/2022/12/2022-Poker-TDA-shortform-rules.pdf`(pdftotext 성공) · WSOP 2026 PDF는 129조까지 | 중 |
+> | 2 | **검수장 MA-118 요청 2** — es `como-entrar-al-wsop`·`wsop-2026-tournament-guide` WRONG 15·RISKY 10·STALE 2 + **LISR 138조 웹 실측**(«territorio nacional» · 6% 연방/주) | `홀덤검수/ledger/es/` 근거란 · `reports/검수-레인재검증-id파일럿-es회차1-2026-09-07.md` | 중~대 |
+> | 3 | 헤드 판정 2건 — zh `打公共牌`(21)/`打公牌`(16)/`打牌面`(4) 표기 통일(정본 §8-2는 둘 다 수록 · 23건+ 치환) · `二四法则`/`2 和 4 法则`/`4-2 法则` 3파전(회차 3 확률 클러스터와 맞물림) | `harden-zh-진행.md` §2 「회차 2가 남긴 미결」 | 소 |
+> 그다음 = 헤드 미결 ⓐ `blind-meaning` 직답≈tldr 중복 ⓑ 7로케일 betting-actions FAQ 103조 두 요소 ⓒ TDA 사본 자산화(위 URL) ⓓ `\$` 이스케이프 잔존(라이브 재현 0 — 조건 확인 전 손대지 마라).
+> 🔴 **레인 머지 대기 확인법**: `for l in zh zh-hant ja; do git log --oneline main..harden-$l | wc -l; done` — 0이 아니면 그 레인 회차가 끝난 것. 머지 → 빌드 → push → 라이브 `page.content()` → 진행 파일 §5 «헤드 요청» 처리 → MB 통지(현재 MB-004까지). 🇯🇵 첫 머지는 beginners·all-in에서 헤드 스탬프와 겹칠 수 있다 — 헤드가 해결.
+> 🪶 **레인 창 띄우는 명령**(탭 제목 고정 — Claude Code가 «claude»로 덮어쓰지 못하게): `wt.exe -w new new-tab --suppressApplicationTitle --title "🇯🇵 harden-ja (일본어 경화)" -d "C:\Users\하봄\Downloads\Holdem-ja" claude`. 🇨🇳·🇹🇼는 현재 회차가 끝나 `/clear` 할 때 같은 형식으로 다시 띄운다(사장님 지시 09-07).
 > 🔴 **헤드 미결**: ⓐ `blind-meaning` 직답≈tldr 중복(전 로케일 구조 판정) ⓑ FAQ 103조 정의 요소 둘 — EN·7로케일 EN-먼저(검수 발췌 L43) ⓒ TDA 원문 사본 없음(버지니아 PDF 경로 = 메모리 tda-rules-primary-source-path) ⓓ 사장님 문의 「경화 폴더 하나 더?」 → **ja 레인 권고**(07-20 최고령 · 자산 완비 · 사장님 08-26 「ja 중요」 판정) — 결재 대기.
 > 🔴 **모델 전환은 사장님 손**: 레인은 구간 경계(A→B→C)에서 멈추고 `/model` 전환을 요청한다(프로토콜 §2 · `7c9196d6`). 첫 회차는 옛 판이라 Opus로 끝까지 갔다.
 >

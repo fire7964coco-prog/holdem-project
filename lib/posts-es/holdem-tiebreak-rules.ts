@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Los empates se rompen en un orden fijo: primero el tipo de mano, luego las cartas que la forman y por último los kickers de mayor a menor. Misma pareja → gana el primer kicker más alto; cinco cartas idénticas → bote dividido. Los palos nunca deciden un empate.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-08-09",
-  masterUpdated: "2026-07-19",
+  updated: "2026-09-07",
+  masterUpdated: "2026-09-07",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "⚖️",
@@ -82,7 +82,7 @@ Fíjate en que el kicker más alto de B es la reina de la **mesa**, no el 9 que 
 **Cada tipo de mano tiene su propio orden de comparación — algunas llegan a los kickers, otras se resuelven por completo con las cartas que las forman.** La insignia indica si el kicker entra en juego:
 
 :::tiebreak
-Escalera Real|Siempre empate (bote dividido)|-Sin kicker
+Escalera Real|Dos a la vez solo ocurren si la escalera real está en la mesa — se reparte entre todos|-Sin kicker
 Escalera de Color|Solo la carta más alta|-Sin kicker
 Póker|Valor del póker → 5.ª carta|+Con kicker
 Full|Valor del trío → de la pareja|-Sin kicker
@@ -135,6 +135,8 @@ En una mesa de 4♦ 3♣ 2♠ K♦ Q♥, un jugador con A♠ 5♠ hace la rueda:
 
 Dos cosas que la rueda *no* hace: el as no puede dar la vuelta por el medio (Q-K-A-2-3 no es nada) y no puede ser alto y bajo a la vez. Los colores siguen la regla paralela — las cinco cartas comparadas desde arriba, palos irrelevantes — con los detalles en [color vs escalera](/es/blog/holdem-flush-vs-straight).
 
+En el otro extremo de la escalera, ==**la escalera más alta del póker es Broadway — A-K-Q-J-10**==. Ninguna escalera la supera (aunque un color o cualquier mano superior sí), y la rueda ocupa el fondo, así que toda escalera del juego se sitúa entre esas dos únicamente por su carta más alta.
+
 ---
 
 ## ¿Importa la 5.ª carta en el póker?
@@ -144,6 +146,18 @@ Dos cosas que la rueda *no* hace: el as no puede dar la vuelta por el medio (Q-K
 Mesa **A♥ K♣ Q♦ 4♣ 2♥**, y es A♠ 8♠ contra A♦ 7♦. Ambos tienen pareja de ases. Primer kicker: la K de la mesa — empate. Segundo kicker: la Q de la mesa — empate. Tercer kicker: ==g:el 8 gana al 7.== La quinta carta literal de la mano acaba de decidir todo lo de arriba.
 
 La misma lógica gobierna los botes con póker en la mesa: todos comparten cuatro cartas, así que la quinta es todo el showdown. Y gobierna los empates de carta alta y de color, donde se compara cada carta hasta la última. La quinta carta solo deja de importar cuando la mesa la supera — que es la última pieza del rompecabezas.
+
+---
+
+## ¿Importan los palos en el póker?
+
+**No — no para decidir quién gana. Los palos hacen exactamente un trabajo en Texas Hold'em: cinco del mismo palo forman un color. Más allá de eso no tienen jerarquía, así que dos manos que coinciden valor por valor siempre dividen el bote, y ninguna carta supera a otra por su palo.**
+
+La pregunta vuelve una y otra vez porque el orden de palos sí existe en el póker — solo que no en este juego. El stud y el razz lo usan para decidir quién pone el bring-in y quién se lleva una ficha indivisible. El Hold'em no lo usa para ninguna de las dos cosas.
+
+La prueba más limpia es la única ficha que *no* se puede dividir. El reglamento de torneos de la WSOP 2026 dice ==g:*"In button games with 2 or more high or low hands, the odd chip goes to the first seat left of the button"*== (regla 73): la ficha sobrante va al primer asiento a la izquierda del botón. Incluso cuando un bote físicamente no se reparte en partes iguales, la regla acude **al asiento**, no al palo — y el método por palos de la segunda mitad de esa misma regla está escrito solo para stud y razz.
+
+Un detalle más que conviene saber: en Hold'em dos colores son siempre del *mismo* palo, porque las cinco cartas comunitarias se comparten y una mesa no puede tener tres corazones y tres picas a la vez. Así que "mis picas ganan a tus corazones" no es una regla con la que perdiste — es una combinación que no se puede dar en la mesa.
 
 ---
 
@@ -172,15 +186,15 @@ Detectar estos desarrollos antes de la apuesta del river es una habilidad en sí
 
 **Q. ¿Cómo se rompen los empates en el póker?**
 
-A. En un orden fijo: primero el tipo de mano, luego las cartas que la forman (la pareja más alta, el trío o la carta más alta) y por último los kickers de mayor a menor. Si las cinco cartas coinciden en valor, el bote se divide — los palos nunca se usan.
+A. Tres comprobaciones en orden — tipo de mano, luego las cartas que la forman y por último los kickers de mayor a menor — y la primera diferencia lo decide. Igual de importante es lo que nunca entra en la comparación: los palos, quién apostó último, quién está más cerca del botón y cuántas fichas puso cada uno. Si las cinco cartas coinciden valor por valor, el dealer divide el bote sin importar lo que pasó en las apuestas.
 
 **Q. ¿Quién gana si dos jugadores tienen la misma pareja?**
 
-A. El jugador cuyas mejores cinco tengan el kicker más alto. Una pareja lleva tres kickers, comparados de arriba hacia abajo — la primera diferencia se lleva el bote. Si los tres coinciden, es un empate y se divide.
+A. El kicker más alto — pero comprueba primero cuáles de tus cartas llegan de verdad a las mejores cinco. En A-Q-7-3-2 con pareja de ases, un jugador con A-9 juega A-A-Q-9-7: la reina de la mesa se cuela por delante de su nueve, así que el nueve es solo el *segundo* kicker. Contra A-K el bote ya está decidido en la primera casilla, y ese nueve nunca llega a compararse. Hay tres casillas de kicker; la mayoría de los botes se acaban en la primera.
 
 **Q. ¿Quién gana si ambos jugadores tienen doble pareja?**
 
-A. Se compara primero la pareja alta, luego la baja y por último el único kicker. Ases y treses gana a reyes y reinas, porque la pareja alta se comprueba antes que cualquier otra cosa.
+A. Primero la pareja alta, luego la baja y por último el único kicker — así que ases y treses gana a reyes y reinas aunque la segunda pareja sea mucho más pequeña. El caso que atrapa a la gente es una mesa con doble pareja, como K-K-9-9-5: salvo que alguien lleve una K, un 9 o una pareja de mano por encima del 9, todos tienen la misma doble pareja, así que la mano se reduce a un solo kicker y se la lleva la mejor carta privada de todos los jugadores — y si ninguna carta privada supera el 5 de la mesa, todos juegan la mesa y el bote se divide. La doble pareja lleva exactamente un kicker, nunca dos.
 
 **Q. ¿Quién gana si dos jugadores tienen el mismo trío?**
 
@@ -188,7 +202,7 @@ A. El trío lleva dos kickers, comparados de mayor a menor — así que si ambos
 
 **Q. ¿Importa la 5.ª carta en el póker?**
 
-A. Sí. Cuando las primeras cuatro cartas de ambas manos son idénticas, la quinta carta decide todo el bote — el tercer kicker de una pareja, la carta más baja de un color, la carta lateral del póker en la mesa. Solo deja de importar cuando las cartas de la mesa superan tu carta de mano.
+A. Sí — y es la forma más común de perder un bote que dabas por ganado. Tres situaciones ponen todo el bote en la última carta: el tercer kicker de una pareja, la carta más baja de un color y la carta lateral junto a un póker que está en la mesa. Solo deja de importar cuando las propias cartas de la mesa superan lo que tienes en la mano; en ese momento tus cartas de mano salen por completo de la jugada y estás jugando la mesa.
 
 **Q. ¿Se puede usar el as como un 1 en el póker?**
 
@@ -196,7 +210,7 @@ A. Sí, pero solo en la escalera A-2-3-4-5 (la "rueda"), donde juega como la car
 
 **Q. ¿Puedes tener una escalera más alta que otro jugador?**
 
-A. Sí — las escaleras se ordenan únicamente por su carta más alta, así que 6-5-4-3-2 gana a la rueda A-5, y Broadway (A-K-Q-J-10) les gana a todas. Cartas más altas iguales significan escaleras idénticas y bote dividido.
+A. Sí, y en la práctica ocurre cuando la mayor parte de la escalera ya está en la mesa. Toma una mesa de 5♦ 6♣ 7♠ 8♥ 2♦: un jugador con 9♣ 4♠ hace 9-8-7-6-5, mientras que un jugador con 4♥ 3♦ hace 8-7-6-5-4 con las mismas cuatro cartas. Los dos "hicieron escalera"; solo se contó la carta más alta, así que se la lleva el nueve. Cartas más altas iguales significan la misma escalera y bote dividido.
 
 **Q. ¿Quién gana si dos jugadores tienen la misma escalera?**
 
@@ -214,13 +228,9 @@ A. Se compara primero el trío — el trío más alto gana, así que K-K-K-2-2 g
 
 A. Gana la escalera de color más alta, decidida por su carta más alta — una escalera de color con reina alta gana a una con nueve alto. Una escalera real es sencillamente la escalera de color con As alto, así que gana a cualquier otra escalera de color. Cartas más altas idénticas significan una mano idéntica y bote dividido.
 
-**Q. ¿Importan los palos en el póker?**
-
-A. Solo para formar un color — nunca para ordenar manos ni romper empates. Los palos te permiten formar un color (cinco cartas del mismo palo), pero ningún palo gana a otro, así que un color de picas no gana a un color de corazones, y dos manos por lo demás idénticas siempre se dividen. Los ganadores se deciden solo por valor y kicker.
-
 **Q. ¿Los palos rompen alguna vez un empate en Texas Hold'em?**
 
-A. No. En Hold'em no hay jerarquía de palos — si dos mejores manos de cinco cartas coinciden carta por carta, el bote se divide sin importar los palos.
+A. No — pero hay un sitio en una mesa de Hold'em donde sí se usan los palos, y no es el bote. En las mesas de cash, y en la mayoría de las reglas de la casa, cada jugador saca una carta para decidir dónde arranca el botón, y si dos cartas empatan en valor, el orden de palos lo resuelve. (Los torneos de la WSOP se saltan el sorteo: la ==regla 85== coloca el botón en el primer stack a la derecha del dealer y solo vuelve a sortear cuando quedan tres, dos y una mesa — sin palos de por medio.) En cualquier caso eso elige un *asiento*, nunca una mano. El único orden de palos del reglamento de torneos pertenece al stud y al razz. Si dos mejores manos de cinco coinciden valor por valor, el bote se divide sin importar los palos.
 
 **Q. ¿Qué pasa si ambos jugadores tienen exactamente la misma mano?**
 
