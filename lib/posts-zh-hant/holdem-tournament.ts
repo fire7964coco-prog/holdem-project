@@ -15,9 +15,9 @@ export const POST: Post = {
   emoji: "🏆",
   image: "/images/holdem-tournament-hero.webp",
   imageAlt: "熱鬧的現場德州撲克錦標賽會場，升盲計時器顯示 12,000/24,000，玩家正在爭一手底池",
-  tags: ["德州撲克錦標賽", "錦標賽規則", "盲注結構", "賽制類型", "freezeout", "PKO", "衛星賽", "台灣撲克協會"],
+  tags: ["德州撲克錦標賽", "德州撲克比賽", "錦標賽規則", "盲注結構", "賽制類型", "freezeout", "PKO", "衛星賽", "台灣撲克協會"],
   content: `
-我第一次走進現場德州撲克錦標賽，帶著 $200、對德州撲克一知半解，還完全搞不懂「盲注級別」或「泡泡圈」是什麼。
+我第一次走進現場德州撲克錦標賽，帶著 $200、對德州撲克一知半解，還完全搞不懂「盲注級別」或「泡泡時間」是什麼。
 
 四小時後我出局了。但我已經清楚知道每個術語是什麼意思、我為什麼輸、什麼時候該再回來。
 
@@ -35,6 +35,9 @@ $100+$9 | 典型買入怎麼拆——獎池 + 手續費
 
 ## 什麼是德州撲克錦標賽？（30 秒答案）
 
+> **快速解答**
+> 分辨錦標賽和現金桌，只要問一件事：桌上的籌碼能不能隨時換回現金？能的是現金桌；不能、只能打到出局或打完再依名次領獎金的，就是錦標賽。這一個差別決定了後面所有的規則和策略。
+
 德州撲克錦標賽是一種比賽：所有人付同樣的報名費（**買入**）、拿同樣多的起始籌碼，一路打到一個人贏走場上全部籌碼。
 
 **一句話總結：** 在現金桌，你的籌碼就是真錢、隨時能離場。在 freezeout 錦標賽，你的最大損失正好就是那筆買入——有重入和增購就會超過——但你在爭的是一個大得多的獎池的一份。
@@ -44,6 +47,9 @@ $100+$9 | 典型買入怎麼拆——獎池 + 手續費
 ---
 
 ## 錦標賽結構——買入、費用、起始籌碼
+
+> **快速解答**
+> 「$100+$9」裡的 $9 不進獎池——它是場地的服務費，獎池只由每個人的 $100 累積。所以人數一公布，你可以自己驗算獎池，也能看出這場賽事的服務費比例合不合理；新手最常誤以為報名費會全數進獎池。
 
 報名時，你付一筆買入。這筆錢分兩路：
 
@@ -64,6 +70,9 @@ $100+$9 | 典型買入怎麼拆——獎池 + 手續費
 
 ## 盲注結構——升盲、底注與計時器
 
+> **快速解答**
+> 盲注結構決定的是「這場要打幾小時」和「你多快會變短碼」：級別越短、升得越急，深籌碼的優勢就越小。所以結構表要在報名前看，而不是坐下之後——同樣的買入，20 分鐘升一級和 40 分鐘升一級是兩種不同的比賽。
+
 這是多數新手指南跳過、卻是錦標賽最重要的機制概念。
 
 **盲注一開始很小，照計時器上升——現場賽通常每 20–40 分鐘升一級。**
@@ -79,11 +88,14 @@ $100+$9 | 典型買入怎麼拆——獎池 + 手續費
 
 ==g:粗略原則：低於 20 個大盲，你就進入「全下或蓋牌」的邊界；到 15 就成了你的主要模式。低於 10 個大盲，你幾乎任何能打的牌——尤其在後位或小盲位——都得在盲注吃掉你之前推全下。==
 
-**什麼是底注（ante）？** 過了前幾級，多數錦標賽會加「底注」——每手牌在盲注之外額外收的一筆強制注。現代多數現場賽用單一「大盲底注」，金額等於一個大盲，由大盲位玩家代替全桌付（所以上表底注欄和大盲一樣）。它把底池做大、加快節奏。底注一進場，你的籌碼縮得更快。
+**什麼是底注（ante）？** 過了前幾級，多數錦標賽會加「底注」——每手牌在盲注之外額外收的一筆強制注。現代多數現場賽用單一「大盲底注」（台灣的協會賽程上常寫成「大盲前注」），金額等於一個大盲，由大盲位玩家代替全桌付（所以上表底注欄和大盲一樣）。它把底池做大、加快節奏。底注一進場，你的籌碼縮得更快。
 
 ---
 
 ## 每場錦標賽都會經歷的 4 個階段
+
+> **快速解答**
+> 階段不是看時鐘、而是看平均籌碼有幾個大盲：兩百個大盲是前期，三十到六十個是中期，泡泡時間和決賽桌則看剩下的人數。同一場比賽在不同桌感覺可能不同，但你自己的籌碼落在哪一段，才決定你該用哪套打法。
 
 ### 階段 1——前期級別（100–200 BB 深）
 你有空間打牌。投機牌、摸暗三條、多看翻牌——都合理。多數新手在這裡打得太緊。盲注很便宜；先熟悉牌桌。
@@ -91,8 +103,8 @@ $100+$9 | 典型買入怎麼拆——獎池 + 手續費
 ### 階段 2——中期（30–60 BB）
 底注這時通常已進場。籌碼壓力開始。短籌碼玩家開始推全下。大部分人是在這個階段被淘汰的。
 
-### 階段 3——泡泡圈（Bubble）
-最緊張的階段。再淘汰一個人，剩下所有人就**進錢圈**（ITM = In The Money，拿到獎金）。[短籌碼](/zh-hant/blog/holdem-short-stack)會僵住，大籌碼會霸凌。這裡聰明地打，能在不贏任何一個底池的情況下加到真實的權益——[泡泡圈值得一篇專屬指南](/zh-hant/blog/holdem-bubble)。
+### 階段 3——泡泡時間（Bubble）
+最緊張的階段。再淘汰一個人，剩下所有人就**進錢圈**（ITM = In The Money，拿到獎金）。[短籌碼](/zh-hant/blog/holdem-short-stack)會僵住，大籌碼會霸凌。這裡聰明地打，能在不贏任何一個底池的情況下加到真實的權益——[泡泡時間值得一篇專屬指南](/zh-hant/blog/holdem-bubble)。
 
 ### 階段 4——決賽桌（Final Table）
 通常剩 6–9 人。每淘汰一個人，賠付就大幅跳升。這裡由 **[ICM（獨立籌碼模型）](/zh-hant/blog/holdem-icm)**主導決策——籌碼 EV 和真實獎金 EV 明顯背離。
@@ -100,6 +112,9 @@ $100+$9 | 典型買入怎麼拆——獎池 + 手續費
 ---
 
 ## 錦標賽類型——freezeout、PKO、衛星賽、deepstack 與更多
+
+> **快速解答**
+> 第一次報名，先在兩種裡選：想要成本固定就選 freezeout；台灣協會的賽程上還常見一種「限時錦標賽」，打到時間結束、依籌碼比例分獎金，下面有專節。賞金賽、衛星賽、重買賽等你打過幾場再碰，它們各自需要不同的打法。
 
 | 賽制 | 怎麼運作 | 適合誰 |
 |:---|:---|:---|
@@ -111,6 +126,7 @@ $100+$9 | 典型買入怎麼拆——獎池 + 手續費
 | **衛星賽（Satellite）** | 獎品是更大賽事的入場資格，不是現金 | 預算有限、瞄準大賽的玩家 |
 | **MTT（多桌錦標賽）** | 跨多桌的大場——玩家出局就併桌 | 任何人——最常見的賽制 |
 | **SNG（Sit & Go）** | 人坐滿就開打（沒有固定開賽時間）——通常 6–9 人 | 想快速打一場、不用配合時間 |
+| **限時錦標賽** | 打到計時歸零為止，依剩餘籌碼比例分獎金 | 台灣協會的日常賽事 |
 
 **給新手：** 從 **freezeout MTT** 開始——成本已知、規則簡單、沒有重買決策要煩。
 
@@ -130,9 +146,16 @@ deepstack 讓你的起始籌碼相對盲注明顯高於同系列的標準賽事�
 
 **重買和加購（rebuy / add-on）呢？** 重買賽讓你在設定的前期時段內再買籌碼——很多賽事只要你的碼量不高於起始籌碼就行，不必先出局；加購則是那個時段結束時通常提供的一次性選購籌碼。之後，比賽就照 freezeout 進行。
 
+### 台灣特有的「限時錦標賽」是什麼？
+
+限時錦標賽是台灣協會賽程上非常常見的一種賽制：比賽有明確的結束時間——各協會從 90 分鐘到 3 小時都有——中間照樣升盲。計時歸零時牌局立刻停止，主辦方統計每個還在場的人手上的籌碼，**依籌碼比例分配總獎金池**：例如總獎池 10 萬、你握有全場 10% 的籌碼，就分走 1 萬。它沒有「最後一人」，所以一般錦標賽後期的泡泡時間與 ICM 壓力在這裡幾乎不存在；服務費在報名時一次收，桌上不逐底池抽水。數學上它更接近一場盲注會上漲、時間到就結算的常規桌。實際時長、報名費與起始籌碼各協會不同，報名前先看賽程表。
+
 ---
 
 ## 什麼是衛星賽（Satellite）？
+
+> **快速解答**
+> 衛星賽贏到的不是錢，是一張特定賽事的入場券——所以報名前先確認兩件事：那場比賽你到底去不去得了，以及席位能不能轉讓或折現（要看主辦方的規定）。打法也跟一般錦標賽相反：席位一穩就停止冒險。
 
 衛星賽是一種較小的錦標賽，獎品不是現金——而是**一張入場券**，進入一個更大、更貴的錦標賽。
 
@@ -145,11 +168,14 @@ deepstack 讓你的起始籌碼相對盲注明顯高於同系列的標準賽事�
 
 **接力衛星賽**能壓得更低。$5 超級衛星 → $55 資格賽 → $215 賽事 → $1,050 的線上主賽事。很多大賽玩家，都是用直接買入的零頭、透過一連串衛星賽晉級進去的。
 
-==g:衛星賽策略和一般錦標賽不同——一旦你的籌碼足以保證拿到席位，就停止冒險。連好牌都蓋掉，避免在泡泡圈出局。==
+==g:衛星賽策略和一般錦標賽不同——一旦你的籌碼足以保證拿到席位，就停止冒險。連好牌都蓋掉，避免在泡泡時間出局。==
 
 ---
 
 ## 怎麼報名參加錦標賽——3 種方式（含台灣撲克協會）
+
+> **快速解答**
+> 在台灣，三種方式裡你最常用的是 A：走進立案的撲克協會，出示證件、現場付報名費、拿座位卡。B 的線上預先報名多半用在國際系列賽，C 的衛星賽則是用小額買入去換大賽席位——先把 A 走熟，再談後兩種。
 
 ### 方式 A：現場直接買入（最簡單）
 1. 找到撲克室報名櫃台（大型賽事則是賽事櫃台）
@@ -173,6 +199,9 @@ deepstack 讓你的起始籌碼相對盲注明顯高於同系列的標準賽事�
 
 ## 錦標賽策略——分階段打法
 
+> **快速解答**
+> 分階段打法的意思不是「越後面越要打得好」，而是同一套技術在不同籌碼深度下權重不同：深的時候翻牌後功力最值錢，三十個大盲以下偷盲和防守變成主角，二十以下幾乎只剩全下或蓋牌的數學。認清自己在哪一段，比記招式重要。
+
 一篇講不完完整的錦標賽策略——那是各專篇的工作——但這裡是每個獲勝計畫都掛在上面的分階段骨架：
 
 **前期級別（100BB+）：** 打緊、注意位置，用能打爆大對子的牌便宜看翻牌。一套有紀律的[起手牌表](/zh-hant/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp")能擋掉多數新手災難。第一個小時別把籌碼詐唬光——第 1 級沒人會蓋牌。
@@ -181,11 +210,14 @@ deepstack 讓你的起始籌碼相對盲注明顯高於同系列的標準賽事�
 
 **短籌碼（20BB 以下）：** 全下或蓋牌接管一切——這裡的數學基本已解，用猜的會賠真錢。
 
-**泡泡圈與決賽桌：** 生存數學蓋過籌碼數學。賠付壓力改變了你能打哪些牌——由上面階段那節連到的泡泡圈與 ICM 概念決定。
+**泡泡時間與決賽桌：** 生存數學蓋過籌碼數學。賠付壓力改變了你能打哪些牌——由上面階段那節連到的泡泡時間與 ICM 概念決定。
 
 ---
 
 ## Day 1 一小時一小時會發生什麼
+
+> **快速解答**
+> 第一次來最常出錯的不是打法，而是時間：報名通常在開賽前一個多小時開放、排隊可能很長，而晚報名關閉後就不能再進場。所以照下面的時間軸，抓開賽前至少半小時到場當底線，並先問清楚晚報名幾點截止。
 
 這是別的指南不會告訴你的。以一場中午 12 點開賽的 $300 現場 freezeout 為例，一個實際的 Day 1 時間軸：
 
@@ -214,7 +246,7 @@ deepstack 讓你的起始籌碼相對盲注明顯高於同系列的標準賽事�
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
 <div style="color:hsl(var(--primary));font-weight:700">18:00–21:00</div>
-<div style="color:hsl(var(--foreground))">泡泡圈逼近。開始手手制。壓力達到頂點。再一個出局，大家就都有獎金。</div>
+<div style="color:hsl(var(--foreground))">泡泡時間逼近。開始手手制。壓力達到頂點。再一個出局，大家就都有獎金。</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0">
 <div style="color:#22c55e;font-weight:700">21:00–23:00</div>
@@ -226,6 +258,9 @@ deepstack 讓你的起始籌碼相對盲注明顯高於同系列的標準賽事�
 ---
 
 ## 賠付結構——誰能拿多少
+
+> **快速解答**
+> 「前 10–15% 進錢圈」講的是人數，不是錢：最小獎金通常只有買入的一倍半到兩倍，而冠軍一個人就拿走獎池的一到三成，人數越多冠軍的比例越低。所以打進錢圈只是回本，真正的獎金集中在最後一桌。
 
 **典型結構：** 前 10–15% 的人拿到獎金。
 
@@ -248,13 +283,16 @@ deepstack 讓你的起始籌碼相對盲注明顯高於同系列的標準賽事�
 
 ## 錦標賽術語——Day 1 會聽到的
 
+> **快速解答**
+> 十三個詞裡，Day 1 真正會反覆聽到的是三個：「晚報名」（幾點截止決定你能不能再進場）、「錢圈」（進去才有獎金）、「手手制」（泡泡時間各桌同步打一手）。其他的等你需要時再回來查表就好。
+
 這 13 個術語涵蓋你在牌桌會聽到的大部分。完整 A 到 Z，看[德州撲克術語大全](/zh-hant/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp")。
 
 | 術語 | 意思 |
 |------|--------------|
 | **錢圈（ITM）** | In The Money——你已進入有獎金的位置 |
-| **泡泡圈（Bubble）** | 進錢圈前的那一刻——再一個出局大家就都有獎金 |
-| **手手制（Hand-for-hand）** | 泡泡圈時各桌一次只打一手，防止拖時間 |
+| **泡泡時間（Bubble）** | 進錢圈前的那一刻——再一個出局大家就都有獎金 |
+| **手手制（Hand-for-hand）** | 泡泡時間各桌一次只打一手，防止拖時間 |
 | **結構表（Structure sheet）** | 列出盲注級別、底注與賠付的官方文件 |
 | **籌碼領先（Chip leader）** | 籌碼最多的玩家 |
 | **短籌碼（Short stack）** | 相對盲注籌碼很少的玩家 |
@@ -270,6 +308,9 @@ deepstack 讓你的起始籌碼相對盲注明顯高於同系列的標準賽事�
 
 ## 第一次參賽檢查清單
 
+> **快速解答**
+> 清單上真正會讓人報不了名的只有兩樣：證件和時間。沒帶身分證或護照，任何協會都不會讓你入座；晚報名截止後才到場，就只能看別人打。錢多帶兩成、外套、會員卡都是舒適度的問題，這兩樣才是門票。
+
 <div style="background:rgba(255,248,210,0.06);border:1px solid rgba(255,240,180,0.25);border-radius:12px;padding:20px 24px;margin:20px 0">
 <div style="font-size:13px;font-weight:700;color:hsl(var(--primary));margin-bottom:14px">出門前</div>
 <div style="display:grid;gap:8px;font-size:13px">
@@ -277,7 +318,7 @@ deepstack 讓你的起始籌碼相對盲注明顯高於同系列的標準賽事�
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span><strong>買入 + 多帶 20%</strong> 的現金——有些場地不收卡</span></div>
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span><strong>會員卡</strong>（若協會或場地需要）</span></div>
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span><strong>報名確認信</strong>（若你線上先報名了）</span></div>
-<div style="display:flex;align-items:center;gap:10px;padding:7px 0"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span>舒適的衣服——比賽會打 6–12 小時。帶件外套（牌房很冷）。</span></div>
+<div style="display:flex;align-items:center;gap:10px;padding:7px 0"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span>舒適的衣服——比賽會打 6–12 小時。帶件外套（撲克室很冷）。</span></div>
 </div>
 
 <div style="font-size:13px;font-weight:700;color:hsl(var(--primary));margin:16px 0 10px">到場後</div>
@@ -285,7 +326,7 @@ deepstack 讓你的起始籌碼相對盲注明顯高於同系列的標準賽事�
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span>開賽前 30–45 分鐘到。報名可能排很長。</span></div>
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span>打第一手前先數起始籌碼。少了立刻告訴荷官。</span></div>
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span>要一張結構表——知道底注何時進場、晚餐何時休息。</span></div>
-<div style="display:flex;align-items:center;gap:10px;padding:7px 0"><span style="width:18px;height:18px;border-radius:4px;background:rgba(255,150,0,0.12);border:1.5px solid rgba(255,150,0,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#ff9600">!</span><span><strong>牌局進行中不要在桌上滑手機</strong>——多數牌房會處罰。</span></div>
+<div style="display:flex;align-items:center;gap:10px;padding:7px 0"><span style="width:18px;height:18px;border-radius:4px;background:rgba(255,150,0,0.12);border:1.5px solid rgba(255,150,0,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#ff9600">!</span><span><strong>牌局進行中不要在桌上滑手機</strong>——多數撲克室會處罰。</span></div>
 </div>
 </div>
 
@@ -300,7 +341,7 @@ deepstack 讓你的起始籌碼相對盲注明顯高於同系列的標準賽事�
 
 **Q. 德州撲克錦標賽在台灣合法嗎？**
 
-A. 一般而言，在政府立案的撲克協會（撲克室）以錦標賽形式進行，較常被視為合法的競技活動；部分法院判決也曾把德州撲克視為偏重技術的競技，但實務見解並不一致，仍有依個案認定為賭博的情形。涉及現金對賭更有明確的法律風險。新手最好從立案協會的合法錦標賽入門，實際請以最新法規為準。
+A. 一般而言，在政府立案的撲克協會（撲克室）以錦標賽形式進行，較常被視為合法的競技活動；部分法院判決也曾把德州撲克視為偏重技術的競技（例如 2020 年高等法院曾把「德州撲克限時錦標賽」認定為合法競技運動賽事），但實務見解並不一致，仍有依個案認定為賭博的情形。涉及現金對賭更有明確的法律風險。新手最好從立案協會的合法錦標賽入門，實際請以最新法規為準。
 
 **Q. 台灣哪裡可以打德州撲克錦標賽？**
 
@@ -338,6 +379,14 @@ A. 不行。跟現金桌不同，比賽籌碼沒有現金價值、不能中途�
 
 A. 兩者都有——但長期是實力決定誰贏。單一一場錦標賽波動巨大：你可以打得完美，卻在 AA 被超車時出局，這就是為什麼連頂尖職業也會很久沒有大獎。但在幾百場之間，好的玩家進決賽桌的頻率遠高於機率——德州撲克是包在短期運氣裡的實力遊戲，而錦標賽裝進去的運氣，比現金桌更多。
 
+**Q. 台灣的「限時錦標賽」跟一般錦標賽差在哪？**
+
+A. 差在「怎麼結束」：一般錦標賽打到一個人拿走全部籌碼，限時錦標賽打到時間歸零，然後依每個人剩下的籌碼比例分獎金。因為沒有最後一人，也就沒有名次階梯，一般錦標賽後期的泡泡時間、ICM 壓力在限時賽裡幾乎不存在，打法更接近升盲的常規桌。時長、報名費和起始籌碼各協會不同，報名前先看賽程表。
+
+**Q. 大盲前注和大盲底注是同一個嗎？**
+
+A. 是同一個東西，只是叫法不同。台灣的協會賽程表常寫成「大盲前注」，盲注級別會標成像「100/200/200」——第三個 200 就是它，由大盲位一個人替全桌付。它讓底池一開始就變大、進行變快，也是開池範圍要放寬的原因之一。
+
 ---
 
 ## 相關文章
@@ -361,7 +410,7 @@ A. 兩者都有——但長期是實力決定誰贏。單一一場錦標賽波�
   <a href="/zh-hant/blog/holdem-glossary" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">術語</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">德州撲克術語大全</div>
-    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">泡泡圈、ICM、衛星賽是什麼</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">泡泡時間、ICM、衛星賽是什麼</div>
   </a>
 </div>
 `.trim(),

@@ -38,12 +38,10 @@ WPT 澳洲 2026 重回雪梨 The Star，這是 WPT 史上規模最大的一屆�
 
 ---
 
-> **快速解答**
-> WPT 澳洲 2026 是 ==**9 月 10–30 日**==，地點在雪梨達令港的 The Star。兩場冠軍賽：==**AUD $1,500 WPT Prime**==（9/17–22）與 ==**AUD $5,000 WPT 澳洲冠軍賽**==（9/24–30）。冠軍賽冠軍的頭獎獎金中含 ==g:一個價值 $15,000 的 WPT 世界冠軍賽席位==——請注意：==r:它是從總獎池中扣除，並非在現金之外額外加發==（官方賽事頁面上載明）。==r:WPT Global 在澳洲不提供服務——只能靠現場衛星賽。==
-
----
-
 ## WPT 澳洲 2026 三十秒重點——今年有什麼不同
+
+> **快速解答**
+> 今年最大的變化是冠軍賽從一場變兩場：AUD $1,500 的 Prime 和 AUD $5,000 的澳洲冠軍賽各自有獎盃和直播決賽桌，36 場賽事估 AUD $10M 以上。對第一次來的人，這代表你不必打 $5,000 那場，也能打到一場「冠軍賽」。
 
 今年的賽事重回 ==**雪梨 The Star**==，並首次採用 **雙冠軍賽制**——這是 WPT 澳洲站史上第一次。（2024 年辦在黃金海岸 The Star Gold Coast；移師雪梨是從 2025 年那屆開始的。）
 
@@ -69,6 +67,9 @@ WPT 澳洲 2026 重回雪梨 The Star，這是 WPT 史上規模最大的一屆�
 
 ## WPT Prime 與 WPT 澳洲冠軍賽——你該報哪一場
 
+> **快速解答**
+> 選哪一場的判準不只是錢：Prime 是多天入場、人數多、休閒玩家比例高，適合第一次來或中等資金的人；冠軍賽只有三個 Day 1、人數較少、對手是錦標賽老手，爭的是 Mike Sexton 獎盃和世界冠軍賽席位。兩場日期不重疊，資金夠的話可以都打。
+
 這是每個第一次來的人都會問的問題。老實說給你聽：
 
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.25);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
@@ -90,6 +91,9 @@ WPT 澳洲 2026 重回雪梨 The Star，這是 WPT 史上規模最大的一屆�
 ---
 
 ## 沒有全額買入，怎麼取得 WPT 澳洲 2026 資格
+
+> **快速解答**
+> 通往冠軍賽的路只有一種形狀：單場直接資格賽，沒有階梯。兩檔價格裡便宜的 $290 那檔到 9 月 9 日就關門，之後只剩 $550（打到 9/25）；其他賽事的衛星賽則每天開、打到 9/28。等到「衛星賽季」才開始找，已經錯過最便宜的路。
 
 ### ⚠️ 關鍵事實：WPT Global 在澳洲不能用
 
@@ -122,6 +126,9 @@ WPT 澳洲 2026 重回雪梨 The Star，這是 WPT 史上規模最大的一屆�
 
 ## 賽程亮點 — 12 場重點賽事（從 AUD $460 到 $10,000）
 
+> **快速解答**
+> 十二場裡最便宜的是 9/19 的 Bonzai Bounty，AUD $460、固定 $150 賞金籌碼；第二便宜是 $500 的女子錦標賽。想在雪梨打一場正式的 WPT 賽事又不想動用四位數，這兩場加上 $680 的 Sydney Finale 就是你的選項。
+
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.25);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | 賽事 | 日期 | 買入（AUD） | 形式 |
@@ -147,6 +154,9 @@ WPT 澳洲 2026 重回雪梨 The Star，這是 WPT 史上規模最大的一屆�
 
 ## 歷屆冠軍與 2026 展望
 
+> **快速解答**
+> 這張表的重點是買入降、獎池沒垮：2023 和 2024 都是 AUD $8,000，2025 降到 $5,500 人次卻回到 600、獎池 AUD $3M；2026 再降到 $5,000。另外要看清楚：頭獎裡那個 $15,000 的世界冠軍賽席位是從獎池扣的，不是加碼。
+
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.25);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | 年份 | 冠軍 | 買入 | 人次 | 獎池 | 冠軍獎金 |
@@ -170,6 +180,9 @@ WPT 澳洲 2026 重回雪梨 The Star，這是 WPT 史上規模最大的一屆�
 ---
 
 ## 雪梨 The Star 入場規定——第一次來的人最常搞錯的地方
+
+> **快速解答**
+> 三道門檻的順序是：先辦 Star Club（免費但要本人帶護照正本到場）、再確認 WPT.com 帳號已驗證、最後才是 smart-casual 服裝。前兩項辦不好打不了牌，第三項被擋在門口則會直接吃掉你的報名時段——背心、夾腳拖、運動服都算。
 
 ### 1. 你必須加入 Star Club（免費，但強制）
 
@@ -216,6 +229,9 @@ WPT 澳洲 2026 重回雪梨 The Star，這是 WPT 史上規模最大的一屆�
 
 ## 國際牌手怎麼繳 WPT 澳洲的買入
 
+> **快速解答**
+> 買入不能在牌桌上刷卡或付現——所有報名都要用 Star 帳戶裡的遊戲籌碼，而且每天投入遊戲的現金有 AUD $5,000 的上限。所以買入超過這個數字的人，最省事的做法是出發前一週從自己名下的銀行帳戶電匯到 The Star，備註填會員編號加姓氏。
+
 這一段是 ==r:每一份對手攻略都跳過的==——也正是最常卡住國際牌手的地方。
 
 ### NSW 法律：每日現金遊戲上限 AUD $5,000
@@ -254,6 +270,9 @@ WPT 澳洲 2026 重回雪梨 The Star，這是 WPT 史上規模最大的一屆�
 
 ## 澳洲簽證——出發前你要準備什麼
 
+> **快速解答**
+> 訂機票之前先辦簽證，不是反過來：eVisitor 和 ETA 多半當場核發，但官方仍建議提前一週申請，而 Visitor Visa 600 要等數天到數週。下表依護照分三種路徑；你的護照走哪一條、要付多少錢，出發前到 homeaffairs.gov.au 再確認一次。
+
 多數國際旅客需要 **ETA（電子旅行許可）** 或一般觀光簽證其中之一。
 
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.25);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
@@ -271,6 +290,9 @@ WPT 澳洲 2026 重回雪梨 The Star，這是 WPT 史上規模最大的一屆�
 ---
 
 ## WPT 澳洲 2026 預算拆解——一趟真實花費
+
+> **快速解答**
+> 兩種真實花費差了一倍：精省版靠 $290 衛星賽加平價飯店，整趟約 AUD $2,890；標準版打 $1,500 的 Prime、住三星，約 AUD $6,100。差距主要在買入和住宿，機票和吃的部分兩邊其實差不多。
 
 以下是一趟完整 WPT 澳洲行的實際花費，依 2025 年數據估算：
 
@@ -340,7 +362,7 @@ A. 可以。The Star Poker 撲克室每日開放現金桌 ==g:上午 10 點至�
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">深入賽程後籌碼變短的 push-fold 決策</div>
   </a>
   <a href="/zh-hant/blog/holdem-icm" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">泡泡圈</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">泡泡時間</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ICM 獨立籌碼模型</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">錢圈與決賽桌的獎金 EV 決策</div>
   </a>

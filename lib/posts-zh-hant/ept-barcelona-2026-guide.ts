@@ -40,11 +40,12 @@ export const POST: Post = {
 
 :::note[**★2026 年賽季已結束。** 主賽事在 8 月 29 日落幕——==**義大利的 Manuel Ferrari**== 奪冠，獨得 ==**€1,002,488**== 。線上資格賽與 2026 年的行程安排都已關閉。以下內容是 2026 年的紀錄，也是挑戰 2027 年的攻略。]:::
 
-> **快速解答**
-> EPT 巴塞隆納 2026 已於 ==**8/16–8/29**== 在巴塞隆納賭場落幕。==**Manuel Ferrari**== 拿下 ==**€5,300**== 主賽事，從 ==**1,823 人次**== 中贏得 ==**€1,002,488**== 。挑戰 2027 的話，最便宜的路線是 Power Path 從 $0.50 起 → ==g:Gold Pass（€5,300 主賽事席位 + €1,100 附加賽事 + 8 晚住宿 + €690 費用）== 。你需要一個 PokerStars Live 帳號和一本有效護照。==r:住宿要早訂——八月是旺季。==
 ---
 
 ## EPT 巴塞隆納 2026 誰奪冠？決賽桌完整結果
+
+> **快速解答**
+> 看這張表要先看那三個星號：前三名在剩 €100,000 和獎盃時談了分成，所以 1 到 3 名的獎金差距只有幾萬歐元，而第 4 名一下子掉到一半以下。冠軍的 €1,002,488 是協議後的數字，不是原始獎金結構。
 
 **義大利的 Manuel Ferrari 拿下 €5,300 主賽事，獨得 €1,002,488。** 本屆共 ==**1,823 人次**== ，獎池 ==**€8,841,550**== 。這是他的第一座 EPT 冠軍——也是 14 個月內的第三座 PokerStars 獎盃，先前他贏過 PokerStars Open 馬拉加主賽（2025）與 PokerStars Open 坎皮奧內高額賽（2026 年 1 月）。
 
@@ -69,6 +70,9 @@ export const POST: Post = {
 
 ## EPT 巴塞隆納 2026 是什麼？30 秒看懂關鍵數字
 
+> **快速解答**
+> 兩年並排的意義在「趨勢」：主賽人次從 2025 年的 2,045 降到 1,823，獎池跟著從 €9.9M 降到 €8.8M，但買入、場館、賽事範圍完全沒動。也就是說，2027 年你面對的很可能還是同一套結構——只是人數會浮動。
+
 ==**歐洲撲克巡迴賽（European Poker Tour, EPT）**== 是 PokerStars 主辦的旗艦現場撲克系列賽。巴塞隆納站是它最老、規模最大的一站——是每個歐洲牌手的夢想清單上都有的一站。
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
@@ -91,6 +95,9 @@ export const POST: Post = {
 
 ## EPT 巴塞隆納 2026 完整賽程與買入——從 €330 到 €100,000
 
+> **快速解答**
+> 「EPT 巴塞隆納」不只是那場 €5,300 的主賽事——同一個節裡從 €330 起就有正式賽事，€825 的 PokerStars Cup 和 €1,650 的 Open 主賽才是多數第一次來的人真正打的場。先挑一場買得起的，主賽事留到你有席位或有資金的那一年。
+
 整個賽事節同時跑兩條系列：**PokerStars Open**（門檻較低的入場點）和 **EPT**（頂級賽事）。兩者共用巴塞隆納賭場。
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
@@ -112,6 +119,9 @@ export const POST: Post = {
 ---
 
 ## EPT 巴塞隆納 2026 線上晉級路線——PokerStars Power Path 從 $0.50 起
+
+> **快速解答**
+> 這條階梯的規則只有一條要記：前三階可以直接買，第 4 階不能——你必須贏到第 3 階的票券才進得去。所以「花 $11 直接跳到最後一關」是不存在的；真正決定你要磨多久的，是第 3 階 $11 MTT 那一關的通過率。
 
 這是牌桌上大多數人抵達巴塞隆納的方式——==r:不是匯 €5,300 給 PokerStars== ，而是靠一段四階衛星賽階梯一路往上爬。
 
@@ -154,6 +164,9 @@ PokerStars 設計 Power Path 的用意，就是 ==要擋住職業牌手直接買
 
 ## EPT 巴塞隆納 直接衛星賽——已經準備好就跳過階梯
 
+> **快速解答**
+> 直接衛星賽適合兩種人：已經有資金、不想磨四關的人，以及贏率為正、願意用 €109 換「每 50 人送 1 席」機率的人。休閒玩家反而不適合——同樣的錢丟進 Power Path，能換到的嘗試次數多得多。
+
 不想一階一階磨四關？PokerStars 整個夏天也會為 EPT 巴塞隆納開 **直接衛星賽（Direct Satellites）** 。
 
 - 買入從 **€1 / $1** 到 **€550 以上**
@@ -166,6 +179,9 @@ PokerStars 設計 Power Path 的用意，就是 ==要擋住職業牌手直接買
 ---
 
 ## EPT 巴塞隆納 2026 全程花費——實際預算拆解
+
+> **快速解答**
+> 三個方案的自付總額差了二十倍：走 Gold Pass 大約 €550–€1,000，打 PokerStars Cup 約 €2,000–€3,000，直接買主賽事則要 €7,800–€11,600。差距主要不是買入，而是住宿——八月的巴塞隆納十晚中價位就要 €1,000–€1,800。
 
 ==r:有件事競品不會告訴你：買入只是花費的一部分。== 我們來拆解一趟 EPT 巴塞隆納實際會花多少錢。
 
@@ -218,6 +234,9 @@ PokerStars 設計 Power Path 的用意，就是 ==要擋住職業牌手直接買
 
 ## PokerStars Live 帳號設定與資金來源聲明
 
+> **快速解答**
+> 這兩件事會在哪裡卡住你：PokerStars Live 帳號沒驗證，報名櫃檯多花 20–30 分鐘；資金來源聲明沒填又想用現金付，櫃檯現場填要 45 分鐘。兩件都能在家十分鐘辦完，而且都跟你平常打線上用的 PokerStars 帳號不是同一個。
+
 ==r:有兩件行政作業最會讓新手措手不及。== 兩件都要在 **你落地巴塞隆納之前** 就辦好。
 
 ### 1. 建立 PokerStars Live 帳號（必辦）
@@ -247,6 +266,9 @@ PokerStars 設計 Power Path 的用意，就是 ==要擋住職業牌手直接買
 ---
 
 ## 巴塞隆納賭場規定——服裝、入場要求與地點
+
+> **快速解答**
+> 入場只有三件事：滿 18 歲、政府核發的護照或身分證、免入場費。真正會被擋在門口的是服裝——短褲和運動服在賽事區一律不行，就算看起來體面也一樣，而賭場離海灘只有五分鐘，很多人就是穿著海灘裝直接走過來被擋。
 
 ### 地點
 
@@ -287,6 +309,9 @@ Marina, 19-21, Port Olímpic
 
 ## EPT 巴塞隆納 2026 住宿——巴塞隆納賭場附近飯店
 
+> **快速解答**
+> 八月的巴塞隆納，訂房的順序要反過來：先鎖住宿、再打席位。賭場旁的房價會漲到淡季的三倍，等你贏到席位再訂，隔壁那幾家多半已經滿了。步行三分鐘的 Hotel SB Icaria 是多數 EPT 牌手的折衷點，一晚 €150–€280。
+
 ==r:八月是巴塞隆納的旅遊旺季。要早訂。== 靠近賭場的房價相比淡季大約會漲到三倍。
 
 ![白天的巴塞隆納奧林匹克港——遊艇停靠在棕櫚樹夾道的濱海步道旁，海灘與賭場附近的海濱飯店盡收眼底](/images/ept-barcelona-2026-guide-portolimpic.webp "白天的奧林匹克港——就在巴塞隆納賭場門外的碼頭與海灘")
@@ -319,6 +344,9 @@ Marina, 19-21, Port Olímpic
 
 ## 從巴塞隆納 El Prat 機場前往巴塞隆納賭場
 
+> **快速解答**
+> 帶行李就搭計程車：€30–€40、半小時到門口。想省錢的話 Aerobus 只要 €6–7，但到加泰隆尼亞廣場後還得轉一段；地鐵 L9 Sud 轉 L4 最便宜卻要將近一小時。長途飛行後，這 €30 是整趟旅程裡最值得花的錢之一。
+
 巴塞隆納 El Prat 機場（BCN）距離市中心約 ==12 公里== ——視交通約 25–40 分鐘。
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
@@ -343,6 +371,9 @@ Marina, 19-21, Port Olímpic
 ---
 
 ## EPT 主賽事 Day 1——新手必須知道的事
+
+> **快速解答**
+> 「Day 1」不是一天，而是好幾個起始日——2026 年是 1A 和 1B，你只選一個打。選後面那一場的人通常較多，也代表休閒玩家較多。報到一開放就去排，因為隊伍要三四十分鐘；收工時記得跟工作人員拿袋子，籌碼要登記簽名才算數。
 
 2026 年的 Day 1 拆成兩個起始日——==Day 1A（8/22）與 Day 1B（8/23）== 。你選一個。比較後面的那一場通常人數較多，聽起來嚇人，但也代表有更多休閒玩家。
 
@@ -383,6 +414,9 @@ Marina, 19-21, Port Olímpic
 ---
 
 ## EPT 巴塞隆納 2026 打包清單
+
+> **快速解答**
+> 這份清單裡，忘了會讓你打不了牌的只有第一組：護照、驗證好的 PokerStars Live 帳號、資金來源聲明。衣服、外套、耳機忘了都能在巴塞隆納買到，那三樣不行。所以先勾證件那一欄，再管其他的。
 
 出發去機場前，把這份印出來逐項打勾：
 
@@ -463,8 +497,8 @@ A. 巴塞隆納的奧林匹克港區普遍安全。==r:但在遊客密集的區�
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">籌碼變薄時，push-fold 怎麼打</div>
   </a>
   <a href="/zh-hant/blog/holdem-bubble" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">泡泡圈</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">泡泡圈與錢圈（ITM）</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">泡泡時間</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">泡泡時間與錢圈（ITM）</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">撐進錢圈前最關鍵的一段</div>
   </a>
 </div>
