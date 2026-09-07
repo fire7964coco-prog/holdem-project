@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "德州扑克中每位玩家发 2 张底牌，配合 5 张公共牌，经过四轮下注后，能组成最大 5 张牌型的玩家获胜。",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-07",
+  updated: "2026-09-08",
   masterUpdated: "2026-09-07",
   keepImagesInBody: true,
   readTime: "14 分钟",
@@ -500,7 +500,7 @@ A. 这要看你在哪、怎么玩。在新加坡、马来西亚等地，持牌�
 
 第一步，==把流程学会==：盲注、两张底牌、五张公共牌、四轮下注、最大五张牌型获胜。==g:然后再学位置、起手牌和基本的底池决策。==
 
-下一步，复习[德州扑克牌型大小排名](/zh/blog/holdem-hand-rankings)，用[起手牌表](/hand-chart)练习，想弄明白某次跟注为什么划算（或不划算）时，就打开[扑克概率计算器](/calculator)。
+下一步，复习[德州扑克牌型大小排名](/zh/blog/holdem-hand-rankings)，用[起手牌表](/en/hand-chart)练习，想弄明白某次跟注为什么划算（或不划算）时，就打开[扑克概率计算器](/calculator)。
 
 ---
 

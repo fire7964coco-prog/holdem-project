@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "该玩哪些起手牌，只看两件事：牌力和位置。169种起手牌里真正对新手有利可图的只有最顶端一小块——你拿到的手牌里约15–20%（其余80%以上翻前弃掉）。大对子（AA–TT）和AK在任何位置都能加注；越靠后行动，你能开的范围越宽——从枪口位约13%到按钮位约43%（6人桌还会更宽）。开牌就用加注、别平跟（limp）；先把简化图练到「加注或弃牌」变成本能，再补上GTO翻前图。",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-09-07",
+  updated: "2026-09-08",
   masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "10 分钟",
@@ -115,7 +115,7 @@ export const POST: Post = {
 
 :::rangechart:::
 
-想要一个每个座位都有扩展范围的独立工具？用[德州扑克起手牌表工具](/zh/hand-chart)。想要每个座位名称（UTG、HJ、CO、BTN、SB、BB）的拆解，看[德州扑克位置指南](/zh/blog/holdem-positions "thumb:/images/holdem-positions-hero.webp")。
+想要一个每个座位都有扩展范围的独立工具？用[德州扑克起手牌表工具](/en/hand-chart)。想要每个座位名称（UTG、HJ、CO、BTN、SB、BB）的拆解，看[德州扑克位置指南](/zh/blog/holdem-positions "thumb:/images/holdem-positions-hero.webp")。
 
 ### 前面位置（UTG）：最紧的范围
 

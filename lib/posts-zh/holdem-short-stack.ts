@@ -4,22 +4,22 @@ export const POST: Post = {
   slug: "holdem-short-stack",
   title: "德州扑克短码怎么打——按筹码深度的 push/fold 全攻略",
   seoTitle: "德扑短码怎么打（push/fold 推或弃）",
-  desc: "锦标赛里被打成短码，还在 min-raise 慢慢流血？按筹码深度学 push/fold——15、10、5 个大盲各该什么时候推，M值五个分区怎么划，为什么后位推得更宽、跟注却要更紧，还有泡沫圈上那个反直觉的 ICM 一起讲清楚。",
+  desc: "锦标赛里被打成短码，还在 min-raise 慢慢流血？按筹码深度学 push/fold——15、10、5 个大盲各该什么时候推，M值五个分区怎么划，为什么后位推得更宽、跟注却要更紧，还有钱圈上那个反直觉的 ICM 一起讲清楚。",
   tldr: "短码（大约 20–25 个大盲以下）没法打正常的翻后扑克，而从大约 15 个大盲往下就要切到 push/fold：first-in 就直接 all in 来保住你的 fold equity，永远别开池平跟、也别 min-raise 之后又弃牌。后位推得更宽，跟注范围要比推注范围更紧，别为了「等一手好牌」把筹码盲到见底——fold equity 才是你的武器，一旦跌破约 8 个大盲，它就急速消退。",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-08-13",
+  updated: "2026-09-08",
   masterUpdated: "2026-08-13",
   keepImagesInBody: true,
   readTime: "13 分钟",
   emoji: "📉",
   image: "/images/holdem-short-stack-hero.webp",
   imageAlt: "绿色桌布上，一小摞锦标赛筹码紧挨着一大摞，背后是锦标赛计时钟——短码牌手不得不 all in 或弃牌的那一刻",
-  tags: ["短码策略", "短码怎么打", "push fold 策略", "push fold 图表", "M值 德州扑克", "短码 德州扑克", "德州扑克 all in 策略", "fold equity"],
+  tags: ["短码策略", "短码怎么打", "push fold 策略", "push fold 图表", "M值 德州扑克", "德州扑克 短码", "锦标赛 20bb 策略", "fold equity"],
   content: `
 我从「还活着」到「出局」最快的一次，是那晚我拿着一个 12 个大盲的码量一直 min-raise，每次被再加注就弃牌，每一圈漏掉一个半盲注，直到我短得吓不住任何人。等我终于推的时候，我只剩 4 个大盲，还被两个人跟了。==我不是运气差——我是把短码当深码来打了。== 一旦你的码量变小，整个游戏就变了，懂新规则的人会主宰这张桌子。
 
-==短码只有一个任务：first-in 就先 all in，保住你的 fold equity，在盲注替你决定之前挑对时机。== 这就是 push/fold 扑克，也是锦标赛里最好学的优势——一套你码量一掉下来就能立刻套用的干净规则。这篇是锦标赛数学三部曲的实战章：[ICM](/zh/blog/holdem-icm "thumb:/images/holdem-icm-hero.webp") 是理论，[泡沫圈](/zh/blog/holdem-bubble "thumb:/images/holdem-bubble-hero.webp") 是那个局面，而短码打法就是你在 [锦标赛](/zh/blog/holdem-tournament "thumb:/images/holdem-tournament-hero.webp") 里真正做出的动作。
+==短码只有一个任务：first-in 就先 all in，保住你的 fold equity，在盲注替你决定之前挑对时机。== 这就是 push/fold 扑克，也是锦标赛里最好学的优势——一套你码量一掉下来就能立刻套用的干净规则。这篇是锦标赛数学三部曲的实战章：[ICM](/zh/blog/holdem-icm "thumb:/images/holdem-icm-hero.webp") 是理论，[钱圈](/zh/blog/holdem-bubble "thumb:/images/holdem-bubble-hero.webp") 是那个局面，而短码打法就是你在 [锦标赛](/zh/blog/holdem-tournament "thumb:/images/holdem-tournament-hero.webp") 里真正做出的动作。
 
 ---
 
@@ -35,7 +35,8 @@ first-in 就推 | 保住你的 fold equity
 
 ## 德州扑克里什么是短码？（多少个大盲算短码）
 
-**短码就是任何小到没法打正常翻后扑克的码量——大致在约 20–25 个大盲以下，而从大约 15 个大盲往下 push/fold 就接管了。** 这些不是硬性的分界线，而是你的选择开始崩塌的区间。有 60 个大盲时，你可以加注、跟注、漂浮、在翻后把人打花。只剩 12 个时，这些大都消失了——你基本上是在翻前就决定要 all in 还是弃牌。
+> **快速回答**
+> 短码就是小到没法打正常翻后扑克的码量——大致在 20–25 个大盲以下，从大约 15 个大盲往下 push/fold 就接管了。这不是硬分界线，而是你的选择开始崩塌的区间：60 个大盲能加注、跟注、翻后周旋；只剩 12 个时，基本上翻前就得决定 all in 还是弃牌。
 
 下面是按筹码深度的实战地图（无 ante、满桌的近似值——有 ante 会把每一档都往下压一点）：
 
@@ -57,7 +58,10 @@ first-in 就推 | 保住你的 fold equity
 
 ## 为什么短码打 push/fold：讲清 fold equity
 
-**first-in 就 all in 之所以管用，是因为它把对手逼进一个孤注一掷的抉择，让他们弃掉那些面对一个小加注本会乐意打的牌——而那些弃牌就白白帮你赢下了盲注和 ante。** 这就是 ==fold equity==：每次所有人都弃牌时你赚到的利润，牌都还没亮。
+> **快速回答**
+> first-in 就 all in 管用，是因为它把对手逼进一个孤注一掷的抉择——那些面对小加注本会乐意打的牌，现在只能弃，你不亮牌就收下盲注和 ante。这就是 fold equity。它会随码量缩水而衰减，8–10 个大盲以下开始消退，所以要在它还在的时候动手，而不是等它消失。
+
+不亮牌就把底池收进来的那部分价值，就叫 ==fold equity（弃牌胜率）==。短码手里最贵的资产就是它。
 
 想想你短码时一个 min-raise 会做什么：它投进了筹码，招来一次你跟不起的再加注，还让对手廉价地兑现他们的胜率。一次 ==推（shove）== 做的正相反。它说的是「拿你的锦标赛命来跟，不然就弃」，而大多数牌都会弃。当你足够频繁地不战而收下盲注和 ante 时，==就算被跟又输的那几次，你也依然盈利==，因为那些白拿的底池早就把它们赚回来了。
 
@@ -69,7 +73,10 @@ first-in 就推 | 保住你的 fold equity
 
 ## M值（Harrington 分区）：绿、黄、橙、红、死
 
-**M值衡量的是你靠弃牌还能撑几圈——你的码量除以一整圈盲注和 ante 的成本——它把你的码量分进五个区。** 由 Dan Harrington 推广，==M = 你的码量 ÷（小盲 + 大盲 + 每圈所有 ante）==。它回答的是「我在这儿啥也不干能坐多久？」——而它越小，你就越必须行动。
+> **快速回答**
+> M值衡量的是你靠弃牌还能撑几圈——码量除以一整圈盲注加 ante 的成本——Harrington 把它分成绿、黄、橙、红、死五个区。它回答的是「我在这儿什么都不干还能坐多久」：M 越小，越必须行动。没有 ante 时，M 约等于你的大盲数除以 1.5。
+
+M值由 Dan Harrington 推广：==M = 你的码量 ÷（小盲 + 大盲 + 每圈所有 ante）==。五个分区如下：
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -89,7 +96,10 @@ first-in 就推 | 保住你的 fold equity
 
 ## 什么时候 all in：按筹码深度和位置的 first-in 推
 
-**当你是第一个进池的人、又是短码时，你的抉择就是推或弃——而推得多宽，取决于你的码量，同样也取决于你的位置。** 你的位置越靠后，身后还剩下能醒来一手大牌的人就越少——所以全员弃牌的概率越高，让这一推有利可图的 ==fold equity== 也越大。这才是 ==你的推注范围会朝按钮位剧烈变宽== 的原因。
+> **快速回答**
+> 第一个进池又是短码时，抉择只有推或弃——推得多宽，取决于码量，同样取决于位置。位置决定身后还有几个人能醒来一手大牌：人越少，全员弃牌的概率越高，这一推的 fold equity 越大。前位 12–15bb 只推强牌，按钮位和小盲位最宽，约 6bb 以下位置就不重要了。
+
+身后要行动的人每少一个，白拿盲注的概率就高一截——==推注范围朝按钮位大幅变宽==，就是这么来的。按位置拆开：
 
 - **前位，12–15bb：**最紧。整桌人都在你身后，所以推一个强而基本线性的范围，其余全弃。
 - **关煞位和按钮位，10–15bb：**宽得多。只剩两三个人要行动，你推是为了偷盲注和 ante，很多在枪口位轻松弃掉的牌你都可以推。
@@ -102,7 +112,10 @@ first-in 就推 | 保住你的 fold equity
 
 ## 推 vs 跟一个推：两个不同的范围
 
-**你 first-in 的推注范围，和你跟别人 all in 的范围，不是一回事——而且跟注范围要紧得多。** 这是大多数新手漏掉的区分，也害掉了不少锦标赛。
+> **快速回答**
+> first-in 的推注范围和跟别人 all in 的范围不是一回事——跟注范围要紧得多。推有两种赢法（对方弃，或摊牌扛住），跟只有一种（摊牌赢），fold equity 没了。不过「紧」有个下限：大盲位面对 10bb 全下，对着那个范围有 43.9% 的胜率就该跟。
+
+这是大多数新手漏掉的区分，也害掉了不少锦标赛。
 
 当你 ==first-in 推== 时，你有两种赢法：所有人都弃（fold equity），或者你被跟、你的牌扛住。当你 ==跟== 一个推时，你只有一种赢法——你的牌得够好才行，因为没有 fold equity 可收了。所以：
 
@@ -117,26 +130,32 @@ first-in 就推 | 保住你的 fold equity
 
 ## 怎么用 push/fold 图表（以及它的局限）
 
-**push/fold 图表告诉你在给定筹码深度下哪些牌该推或该跟，依据的是 Nash 均衡——但它是基线，不是圣经，会随 ante、桌子大小和 ICM 而变。** 一张图表通常分两半：一张**推者（pusher）**图（first-in 该推什么）和一张**跟者（caller）**图（该拿什么跟一个推），正对应上面那个推 vs 跟的划分。
+> **快速回答**
+> push/fold 图表告诉你在给定筹码深度下哪些牌该推、哪些该跟，依据是 Nash 均衡——但它是基线不是圣经，会随 ante、桌子人数和 ICM 变动。可靠的是它给出的方向感，不是某一张具体的牌；真到 ICM 局面，把码量和奖金结构丢进计算器，别信印出来的表。
+
+一张图表通常分两半：一张**推者（pusher）**图（first-in 该推什么）和一张**跟者（caller）**图（该拿什么跟一个推），正对应上面那个推 vs 跟的划分。
 
 用它们来建立直觉，别当成自然法则：
 
-- **它们假设特定条件。**标准 Nash 图忽略 ante 和 ICM；加上 ante 你的推变宽，加上 [泡沫圈/ICM 压力](/zh/blog/holdem-bubble) 你的跟变得紧得多。
+- **它们假设特定条件。**标准 Nash 图忽略 ante 和 ICM；加上 ante 你的推变宽，加上 [钱圈/ICM 压力](/zh/blog/holdem-bubble) 你的跟变得紧得多。
 - **它们是一个单挑 / 只算盲注的模型。**真实局面里还有多个人要行动、有读牌、有一张图看不到的名次奖金跳档。
-- **可靠的要点是「形状」**，而不是具体那张牌：后位推更宽，跟得比推更紧，码量越掉就推得越多。真要一个真实 ICM 或泡沫局面下的确切数字，就把你的码量和奖金结构塞进 [ICM 计算器](/calculator)，别去信一张印出来的范围表。
+- **可靠的要点是「形状」**，而不是具体那张牌：后位推更宽，跟得比推更紧，码量越掉就推得越多。真要一个真实 ICM 或钱圈局面下的确切数字，就把你的码量和奖金结构塞进 [ICM 计算器](/calculator)，别去信一张印出来的范围表。
 
 *（给好奇的你一个细节：在 10–15 个大盲时，强手有时会用超强牌混入一个小 min-raise，来诱使被压制的牌推进来。它可能比纯推赚得更多——但那是个进阶附加项。push/fold 才是可靠的框架；先把它练精。）*
 
 ---
 
-## 泡沫圈上的短码：ICM 反直觉
+## 钱圈上的短码：ICM 反直觉
 
-**这里有反直觉的一点：在泡沫圈上，一个明确的短码往往比中等码有更低的 bubble factor——所以你可以赌得更多，但只能靠推，不能靠跟。** 所有人都以为短码压力最大。按数学不是这样：你本来就很可能出局，而翻倍对你帮助巨大，所以你的风险溢价比那些被困住的中等码更低（[泡沫圈指南](/zh/blog/holdem-bubble) 拆解了为什么中等码才是真正的囚徒）。
+> **快速回答**
+> 反直觉的一点：在钱圈上，一个明确的短码往往比中等码有更低的泡沫系数——所以你可以赌得更多，但只能靠推，不能靠跟。你本来就很可能出局，翻倍帮助巨大，风险溢价反而比被困住的中等码低。继续 first-in 推去偷中等码；有人比你更短，就等一等。
+
+所有人都以为短码压力最大，数学上并非如此——真正被困住的是中等码，[钱圈指南](/zh/blog/holdem-bubble) 里有完整的拆解。
 
 这在实战里意味着：
 
 - **继续 first-in 推**，去偷那些为了求生什么都弃的中等码——他们是完美的目标。
-- **如果别人比你更短，你可以等。**如果钱线泡沫上有两个人筹码比你少，你可以弃掉边缘位置，让他们先出局，白白往上爬名次——但前提是你真的有筹码可以等，而不是你自己就是最短的那个。
+- **如果别人比你更短，你可以等。**如果钱圈上有两个人筹码比你少，你可以弃掉边缘位置，让他们先出局，白白往上爬名次——但前提是你真的有筹码可以等，而不是你自己就是最短的那个。
 - **别把 ICM 当成什么都弃的借口。**为了「溜进最低钱圈」而盲到没有 fold equity，是拿整个锦标赛去换它最小的那份奖金。尊重奖金跳档，然后回到积累筹码上来。
 
 「我的 bubble factor 到底低多少」背后真正的数学在 [ICM 指南](/zh/blog/holdem-icm) 里——真到关键时刻，就把你的确切局面跑一遍 [计算器](/calculator)。
@@ -144,6 +163,9 @@ first-in 就推 | 保住你的 fold equity
 ---
 
 ## 毁掉你锦标赛的 5 个短码错误
+
+> **快速回答**
+> 五个错误的根子是同一个：把短码当深码打。开池平跟、min-raise 之后又弃、凭感觉跟 all in、盲到见底、无视位置——每一条都在交出你唯一的武器 fold equity。下面逐条讲它们各自怎么漏筹码。
 
 1. **开池平跟（open-limp）。**它交出了你的 fold equity，还把一个你翻后没法打的底池吹大。短码要加注或弃牌——而且那个加注通常就是一次推。
 2. **拿垃圾牌 min-raise 之后又弃牌。**加注四分之一的码量再向一个推弃牌，是两头不讨好。如果一手牌不够好到能 all in，它就不够好到能加注。
@@ -156,7 +178,7 @@ first-in 就推 | 保住你的 fold equity
 ---
 
 :::readnext[继续阅读]
-/zh/blog/holdem-bubble | 泡沫圈该怎么打 | /images/holdem-bubble-hero.webp
+/zh/blog/holdem-bubble | 钱圈该怎么打 | /images/holdem-bubble-hero.webp
 /zh/blog/holdem-icm | ICM 详解——为什么筹码不等于钱 | /images/holdem-icm-hero.webp
 :::
 
@@ -206,11 +228,14 @@ A. 是的。在现金局你随时可以补码或加买到满码，而且通常�
 
 ## 要记住的 3 件事
 
+> **快速回答**
+> 推得宽、跟得紧、动手早——短码的全部纪律就这三个词。第一个进池就推，把弃牌胜率攥在手里；跟注范围比推注范围紧一档，但该跟的价格还是要跟；等到全下吓不住人再动手，就晚了。
+
 1. **first-in 就推，保住你的 fold equity。**永远别开池平跟，也别 min-raise 之后又弃牌。那些白拿的盲注和 ante 是短码大部分的利润。
 2. **跟得比推更紧。**两个不同的范围——first-in 的推很宽（对方弃你也赢）；跟很紧（你只在摊牌时赢）。
 3. **在你的 fold equity 死掉之前行动。**别为了等一手牌把筹码盲到见底。后位放宽你的推、前位收紧，趁你的 all in 还吓得住人时把筹码推进去。
 
-短码打法是锦标赛数学变成肌肉记忆的地方——把它和 [ICM](/zh/blog/holdem-icm) 及 [泡沫圈策略](/zh/blog/holdem-bubble) 配在一起，你就不只知道该*怎么*推，还知道它*什么时候*最要紧。
+短码打法是锦标赛数学变成肌肉记忆的地方——把它和 [ICM](/zh/blog/holdem-icm) 及 [钱圈策略](/zh/blog/holdem-bubble) 配在一起，你就不只知道该*怎么*推，还知道它*什么时候*最要紧。
 
 ---
 
@@ -219,7 +244,7 @@ A. 是的。在现金局你随时可以补码或加买到满码，而且通常�
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
   <a href="/zh/blog/holdem-bubble" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">锦标赛</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">泡沫圈该怎么打</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">钱圈该怎么打</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">你的短码推在哪里最要紧</div>
   </a>
   <a href="/zh/blog/holdem-icm" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
