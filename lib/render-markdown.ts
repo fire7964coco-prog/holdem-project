@@ -183,6 +183,16 @@ export function renderMarkdown(content: string, locale?: string): string {
     .replace(/==g:(.+?)==/g, '<mark class="brush-hl brush-hl-green">$1</mark>')
     .replace(/==b:(.+?)==/g, '<mark class="brush-hl brush-hl-blue">$1</mark>')
     .replace(/==(.+?)==/g, '<mark class="brush-hl">$1</mark>')
+    // 🔴🔴 2026-09-08 — 이 치환은 **볼드보다 먼저** 와야 한다.
+    //    아래 볼드가 먼저 돌면 이 정규식이 도달할 때 **快速解答** 는 이미 <strong> 이라
+    //    **원리상 매치될 수 없다.** 그 결과 요약 콜아웃이 전 사이트에서 죽어 있었다
+    //    (빌드 산출물 전수 summary-callout 0개 · 라이브도 0 · 318파일 1,199블록).
+    //    같은 파일 FAQ 정규식에는 «MUST run before bold» 주석이 있는데 여기엔 빠져 있었다.
+    //    🪶 본문 안쪽의 ** 와 == 는 체인 뒷부분이 계속 처리하므로 여기서 먼저 잡아도 안 깨진다.
+    .replace(/^> \*\*(.+?)\*\*\n((?:^> .+\n?)+)/gm, (_, title, body) => {
+      const lines = body.replace(/^> /gm, '').trim();
+      return `<div class="summary-callout my-6 p-5 bg-primary/10 border border-primary/30 rounded-xl"><p class="font-bold text-primary mb-2">✦ ${title}</p><p class="text-sm text-foreground/90 leading-relaxed">${lines}</p></div>`;
+    })
     .replace(/\*\*(.+?)\*\*/g, '<strong class="font-semibold text-foreground">$1</strong>')
     .replace(/\*(.+?)\*/g, '<em class="italic text-foreground/90">$1</em>')
     .replace(/!\[([^\]]*)\]\(([^)]+?)\s+"([^"]+)"\)/g, (_, alt, src, cap) => {
@@ -412,10 +422,6 @@ export function renderMarkdown(content: string, locale?: string): string {
     })
 
     .replace(/^(<tr.*<\/tr>\n?)+/gm, (m) => `<div class="overflow-x-auto my-6"><table class="w-full border border-border rounded-lg overflow-hidden">${m}</table></div>`)
-    .replace(/^> \*\*(.+?)\*\*\n((?:^> .+\n?)+)/gm, (_, title, body) => {
-      const lines = body.replace(/^> /gm, '').trim();
-      return `<div class="summary-callout my-6 p-5 bg-primary/10 border border-primary/30 rounded-xl"><p class="font-bold text-primary mb-2">✦ ${title}</p><p class="text-sm text-foreground/90 leading-relaxed">${lines}</p></div>`;
-    })
     .replace(
       /^:::rangechart:::$/gm,
       () => {
