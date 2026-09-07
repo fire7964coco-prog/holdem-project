@@ -176,9 +176,9 @@ Je joue une partie live à petites limites toutes les semaines, et les mêmes er
 
 Premier à parler au flop, personne n'a misé, et un joueur débutant pousse des jetons **en silence**, « pour suivre ». Il n'y a rien à suivre : selon la ==règle 90.a de la WSOP==, on mise par déclaration *ou* en poussant des jetons — il vient de miser sans le vouloir. S'il avait *dit* « je suis », la ==règle 90.b.1== en aurait fait un check. Quand la street n'est pas ouverte, checke et vois la carte gratuitement.
 
-### Erreur 2 — Le string raise
+### Erreur 2 — « Je suis… non attends, je relance ! »
 
-« Je suis… non attends, je relance ! » Non. En live, ton action est verrouillée dès que tu l'annonces. J'ai vu des donneurs trancher ça en simple call en plein milieu de la phrase plus de fois que je ne peux compter. Annonce « relance » *d'abord*, puis bouge tes jetons.
+« Je suis… non attends, je relance ! » Non. En live, ton action est verrouillée dès que tu l'annonces : selon la ==règle 90.d==, une annonce verbale à ton tour est contraignante. (Ce n'est d'ailleurs pas un string bet ; le string bet, c'est la mise en plusieurs mouvements décrite dans la FAQ. Même résultat : le premier mot fait foi.) J'ai vu des donneurs trancher ça en simple call en plein milieu de la phrase plus de fois que je ne peux compter. Annonce « relance » *d'abord*, puis bouge tes jetons.
 
 ### Erreur 3 — La grosse blinde qui jette un flop gratuit
 

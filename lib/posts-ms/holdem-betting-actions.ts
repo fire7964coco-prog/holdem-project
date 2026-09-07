@@ -180,9 +180,9 @@ Saya bermain permainan live taruhan rendah setiap minggu, dan kesilapan aksi yan
 
 Pertama bertindak di flop, tiada sesiapa bertaruh, dan pemain baharu menolak cip masuk **tanpa bersuara**, "untuk call". Tiada apa yang hendak di-call: menurut ==WSOP Rule 90.a==, pertaruhan dibuat melalui pengumuman *atau* dengan menolak cip — dia baru sahaja bertaruh tanpa sengaja. Kalau dia *menyebut* "call", ==Rule 90.b.1== menjadikannya cek. Apabila pusingan belum dibuka, cek dan lihat kad secara percuma.
 
-### Kesilapan 2 — String raise
+### Kesilapan 2 — "Saya call... eh, raise!"
 
-"Saya call... eh, raise!" Tidak boleh. Dalam poker live aksi anda terkunci sebaik sahaja anda mengumumkannya. Saya sudah tak terkira berapa kali melihat pengedar mengira ini sebagai call di tengah ayat. Umumkan "raise" *dahulu*, barulah gerakkan cip.
+"Saya call... eh, raise!" Tidak boleh. Dalam poker live aksi anda terkunci sebaik sahaja anda mengumumkannya — mengikut ==Rule 90.d==, pengumuman lisan pada giliran anda adalah mengikat. (Ini bukan string bet; string bet ialah menolak cip dalam beberapa pergerakan seperti dalam FAQ. Hasilnya sama: perkataan pertama yang terpakai.) Saya sudah tak terkira berapa kali melihat pengedar mengira ini sebagai call di tengah ayat. Umumkan "raise" *dahulu*, barulah gerakkan cip.
 
 ### Kesilapan 3 — Big blind membuang flop percuma
 

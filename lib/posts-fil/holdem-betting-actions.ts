@@ -176,9 +176,9 @@ May weekly low-stakes na live game ako, at ang parehong action errors ay paulit-
 
 Unang aaksyon sa flop, walang nag-bet, at may bagong manlalaro na **tahimik** na nagtulak ng chips, "para mag-call". Walang ita-call: sa ilalim ng ==WSOP Rule 90.a==, ang bet ay ginagawa sa pamamagitan ng pagsasabi *o* pagtulak ng chips — nag-bet siya nang hindi sinasadya. Kung *sinabi* niyang "call", gagawin iyong check ng ==Rule 90.b.1==. Kapag hindi pa bukas ang street, mag-check ka at tingnan ang card nang libre.
 
-### Mistake 2 — Ang string raise
+### Mistake 2 — "Call ako... teka, raise!"
 
-"Call ako... teka, raise!" Hindi pwede. Sa live poker, nakakandado ang action mo sa sandaling ma-anunsyo mo. Nasaksihan ko nang ni-rule ng dealers ito bilang flat call sa gitna ng pangungusap nang mas madalas kaysa mabilang ko. I-anunsyo ang "raise" *muna*, tapos igalaw ang chips.
+"Call ako... teka, raise!" Hindi pwede. Sa live poker, nakakandado ang action mo sa sandaling ma-anunsyo mo — sa ilalim ng ==Rule 90.d==, binding ang verbal na deklarasyon sa turn mo. (Hindi ito string bet; ang string bet ay ang pagtulak ng chips sa maraming galaw na nasa FAQ. Pareho lang ang resulta: ang unang salita ang masusunod.) Nasaksihan ko nang ni-rule ng dealers ito bilang flat call sa gitna ng pangungusap nang mas madalas kaysa mabilang ko. I-anunsyo ang "raise" *muna*, tapos igalaw ang chips.
 
 ### Mistake 3 — Big blind na nag-fold ng libreng flop
 

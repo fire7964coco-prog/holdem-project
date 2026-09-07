@@ -180,9 +180,9 @@ Tôi chơi một bàn live cược thấp hàng tuần, và những lỗi hành 
 
 Ngồi đầu lượt ở flop, chưa ai cược, thế mà một người chơi mới **lẳng lặng** đẩy chip vào, "để theo". Chẳng có gì để theo cả: theo ==WSOP Rule 90.a==, cược được thực hiện bằng lời hô *hoặc* bằng việc đẩy chip ra — anh ta vừa cược mà không hề định thế. Nếu anh ta *hô* "theo", ==Rule 90.b.1== sẽ tính đó là check. Khi vòng cược chưa được mở, cứ check và xem lá bài miễn phí.
 
-### Lỗi 2 — String raise
+### Lỗi 2 — "Tôi theo... à khoan, tố!"
 
-"Tôi theo... à khoan, tố!" Không được. Ở poker live, hành động của bạn bị khóa ngay khoảnh khắc bạn hô ra. Tôi đã chứng kiến dealer xử tình huống này thành một lệnh theo ngay giữa câu nhiều hơn số lần tôi đếm được. Hô "raise" *trước*, rồi mới đẩy chip.
+"Tôi theo... à khoan, tố!" Không được. Ở poker live, hành động của bạn bị khóa ngay khoảnh khắc bạn hô ra — theo ==Rule 90.d==, tuyên bố miệng đến lượt bạn có tính ràng buộc. (Đây không phải string bet; string bet là kiểu đẩy chip nhiều nhịp nói trong FAQ. Kết quả thì như nhau: lời đầu tiên có hiệu lực.) Tôi đã chứng kiến dealer xử tình huống này thành một lệnh theo ngay giữa câu nhiều hơn số lần tôi đếm được. Hô "raise" *trước*, rồi mới đẩy chip.
 
 ### Lỗi 3 — Mù lớn vứt đi một flop miễn phí
 

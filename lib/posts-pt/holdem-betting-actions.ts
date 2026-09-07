@@ -181,9 +181,9 @@ Jogo um home game ao vivo de apostas baixas toda semana, e os mesmos erros de a�
 
 Primeiro a agir no flop, ninguém apostou, e um jogador novato empurra fichas **em silêncio**, "para pagar". Não há nada para pagar: pela ==regra 90.a da WSOP== aposta-se por declaração *ou* empurrando fichas — ele acabou de apostar sem querer. Se tivesse *dito* "pago", a ==regra 90.b.1== teria transformado isso num check. Quando a street está sem aposta, dê check e veja a carta de graça.
 
-### Erro 2 — O string raise
+### Erro 2 — "Eu pago... aliás, aumento!"
 
-"Eu pago... aliás, aumento!" Não. No poker ao vivo, sua ação trava no momento em que você anuncia. Já vi dealer decretar call no meio da frase mais vezes do que eu gostaria. Anuncie "raise" *primeiro*, depois mova as fichas.
+"Eu pago... aliás, aumento!" Não. No poker ao vivo, sua ação trava no momento em que você anuncia: pela ==regra 90.d==, a declaração verbal na sua vez é vinculante. (E isso não é string bet; string bet é o empurrão em vários movimentos que explico no FAQ. O resultado é o mesmo: vale a primeira palavra.) Já vi dealer decretar call no meio da frase mais vezes do que eu gostaria. Anuncie "raise" *primeiro*, depois mova as fichas.
 
 ### Erro 3 — O big blind foldando um flop grátis
 

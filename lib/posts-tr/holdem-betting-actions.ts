@@ -180,9 +180,9 @@ Haftalık düşük bahisli canlı bir oyun oynuyorum ve aynı hareket hataları 
 
 Flop'ta ilk oynayan sensin, kimse bahis koymamış ve yeni bir oyuncu **sessizce** çip itiyor, "call yapayım" diye. Görülecek bir şey yok: ==WSOP 90.a kuralına== göre bahis, sözle *ya da* çip iterek yapılır — istemeden bahis koymuş oldu. "Call" *deseydi*, ==90.b.1 kuralı== bunu check sayardı. Street açılmadıysa check yap ve kartı bedavaya gör.
 
-### Hata 2 — String raise
+### Hata 2 — "Call... yok, dur, raise!"
 
-"Call... yok, dur, raise!" Olmaz. Canlı pokerde hareketin, ilan ettiğin an kilitlenir. Krupiyelerin bunu cümlenin ortasında düz call saydığını, sayamayacağım kadar çok kez gördüm. Önce "raise" de, *sonra* çipleri hareket ettir.
+"Call... yok, dur, raise!" Olmaz. Canlı pokerde hareketin, ilan ettiğin an kilitlenir — ==Kural 90.d== gereği sıran geldiğinde yaptığın sözlü beyan bağlayıcıdır. (Bu bir string bet değil; string bet, SSS'de anlattığım çipleri birkaç hamlede sürme durumu. Sonuç aynı: ilk söz geçerli.) Krupiyelerin bunu cümlenin ortasında düz call saydığını, sayamayacağım kadar çok kez gördüm. Önce "raise" de, *sonra* çipleri hareket ettir.
 
 ### Hata 3 — Big blind'in bedava flop'u atması
 
