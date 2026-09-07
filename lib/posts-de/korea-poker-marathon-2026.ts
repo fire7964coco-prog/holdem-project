@@ -102,7 +102,7 @@ Der Fall ist nicht kompliziert. Es geht um Timing und Lage.
 
 ==r:Die Plätze waren 2026 in unter 3 Minuten ausverkauft. Für 2027 gilt: Halte Passnummer und Zahlungsmittel bereit, bevor das Fenster öffnet – das Fenster 2026 ist im Juli geschlossen worden.==
 
-**Anreise von Seoul:** ITX-Cheongchun-Schnellzug vom Bahnhof Yongsan → Chuncheon, ~80–90 Min., ~₩8.800. Oder mit der U-Bahn 경의중앙선 bis Cheongnyangni, dann die Chuncheon-Linie (~100 Min. insgesamt, günstiger). Erschwinglich, landschaftlich schön, kein Auto nötig.
+**Anreise von Seoul:** ITX-Cheongchun-Schnellzug vom Bahnhof Yongsan → Chuncheon, ~80–90 Min., ~₩8.800. Oder mit der Gyeongui-Jungang-Linie (경의중앙선) bis Cheongnyangni, dann die Chuncheon-Linie (~100 Min. insgesamt, günstiger). Erschwinglich, landschaftlich schön, kein Auto nötig.
 
 **Die Route Chuncheon → Paradise City:** Nach dem Rennen Schnellzug zurück nach Seoul (~80 Min.) → AREX vom Bahnhof Seoul oder Hongdae → Paradise-City-Shuttle ab T1. Gesamt: ~3 Stunden. Am Sonntagabend nach dem Rennen problemlos machbar.
 

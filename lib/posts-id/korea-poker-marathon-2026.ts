@@ -103,7 +103,7 @@ Alasannya tidak rumit. Ini soal waktu dan lokasi.
 
 ==r:Pada 2026 slot terjual habis dalam kurang dari 3 menit. Untuk 2027: siapkan nomor paspor dan metode pembayaran sebelum jendela dibuka — jendela 2026 sudah ditutup pada Juli.==
 
-**Cara menuju ke sana dari Seoul:** Kereta ekspres ITX-Cheongchun dari Stasiun Yongsan → Chuncheon, ~80–90 menit, ~₩8.800. Atau subway 경의중앙선 ke Cheongnyangni, lalu jalur Chuncheon (~100 menit total, lebih murah). Terjangkau, indah, tanpa perlu mobil.
+**Cara menuju ke sana dari Seoul:** Kereta ekspres ITX-Cheongchun dari Stasiun Yongsan → Chuncheon, ~80–90 menit, ~₩8.800. Atau jalur Gyeongui-Jungang (경의중앙선) ke Cheongnyangni, lalu jalur Chuncheon (~100 menit total, lebih murah). Terjangkau, indah, tanpa perlu mobil.
 
 **Rute Chuncheon → Paradise City:** Setelah lomba, kereta ekspres kembali ke Seoul (~80 menit) → AREX dari Stasiun Seoul atau Hongdae → antar-jemput Paradise City dari T1. Total: ~3 jam. Sepenuhnya bisa dilakukan pada Minggu malam pasca-lomba.
 
