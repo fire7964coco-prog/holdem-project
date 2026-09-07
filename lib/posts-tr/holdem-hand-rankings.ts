@@ -31,7 +31,7 @@ Buradan başla. İşte Texas Hold'em'de her eli river'a kadar yapma olasılığ�
 | # | El | Diğer adı | Nedir | Olasılık (river'a kadar) |
 |------|------|------|------|------|
 | **1** | Royal Flush | "Royal" | Aynı türden A-K-Q-J-10 | %0,0032 |
-| **2** | Straight Flush | "Steel wheel" (yalnız A-5) | Aynı türden 5 ardışık | %0,0279 |
+| **2** | Straight Flush | "Steel wheel" (yalnızca A-5) | Aynı türden 5 ardışık | %0,0279 |
 | **3** | Four of a Kind (Kare) | "Quads" | Aynı değerden dört kart | %0,168 |
 | **4** | Full House | "Full" | Üçlü + çift | %2,60 |
 | **5** | Flush | — | Aynı türden 5 kart | %3,03 |

@@ -114,7 +114,7 @@ O board é ==b:10♠ J♦ Q♣ K♥ A♠== — uma sequência feita de dez a ás
 - Você tem ==b:2♣ 3♦==. Suas melhores cinco são a sequência da mesa; o 2 e o 3 não somam nada.
 - Seu adversário tem ==b:4♥ 5♦==. Mesma história — a sequência da mesa também é a melhor cinco dele.
 
-Nenhum de vocês consegue passar do ás, então os dois "jogam a mesa" e ==g:dividem o pote== — mas só se virarem as cartas para cima; quem joga no muck não leva nada, nem aqui (Regra 19 da TDA). Uma sequência não tem kicker, então essas cartas de mão são peso morto. Quando você ouve "a mesa joga", é isto — e é o único ponto em que uma carta de mão de aparência forte não vale absolutamente nada. (Mais sobre identificar esses runouts em [ler a mesa](/pt/blog/holdem-reading-the-board).)
+Nenhum de vocês consegue passar do ás, então os dois "jogam a mesa" e ==g:dividem o pote== — mas só se virarem as cartas para cima; quem dá muck não leva nada, nem aqui (regra 19 da TDA). Uma sequência não tem kicker, então essas cartas de mão são peso morto. Quando você ouve "a mesa joga", é isto — e é o único ponto em que uma carta de mão de aparência forte não vale absolutamente nada. (Mais sobre identificar esses runouts em [ler a mesa](/pt/blog/holdem-reading-the-board).)
 
 ---
 

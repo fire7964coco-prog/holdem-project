@@ -33,7 +33,7 @@ De la mejor a la peor, las diez manos del Texas Hold'em son: Escalera Real, Esca
 
 | # | Mano | También llamada | Qué es | Probabilidad (al river) |
 |:---|:---|:---|:---|:---:|
-| **1** | Escalera Real | "Real" (la escalera de color al as) | A-K-Q-J-10, un solo palo | 0.0032% |
+| **1** | Escalera Real | "Royal" (la escalera de color al as) | A-K-Q-J-10, un solo palo | 0.0032% |
 | **2** | Escalera de Color | solo A-5: "steel wheel" | 5 en secuencia, un solo palo | 0.0279% |
 | **3** | Póker | "Cuádruple" (quads) | Cuatro cartas del mismo valor | 0.168% |
 | **4** | Full | "Full house" | Trío + pareja | 2.60% |
@@ -183,7 +183,7 @@ Cuando dos jugadores tienen el mismo tipo de mano, el ganador se decide comparan
 La insignia de la derecha indica si el **kicker se usa para decidir la mano**.
 
 :::tiebreak
-Escalera Real|Solo empata cuando la propia mesa es la escalera real — todos reparten|-Sin kicker
+Escalera Real|Solo empata si la escalera real está entera en la mesa — se reparte entre todos|-Sin kicker
 Escalera de Color|Solo la carta más alta|-Sin kicker
 Póker|Valor del póker → 5.ª carta|+Con kicker
 Full|Valor del trío → de la pareja|-Sin kicker

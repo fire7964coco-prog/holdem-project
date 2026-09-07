@@ -198,7 +198,7 @@ Das ist der Teil, der echte Pots entscheidet – und den die meisten Tabellen ü
 Das Badge rechts zeigt, ob der **Kicker zur Entscheidung der Hand verwendet wird**.
 
 :::tiebreak
-Royal Flush|Zwei Royals = immer Split (nur wenn er auf dem Board liegt)|-Kein Kicker
+Royal Flush|Split nur, wenn der Royal komplett auf dem Board liegt — dann teilen alle|-Kein Kicker
 Straight Flush|Nur die höchste Karte|-Kein Kicker
 Vierling|Wert des Vierlings → 5. Karte|+Kicker zählt
 Full House|Wert des Drillings → des Paars|-Kein Kicker

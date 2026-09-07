@@ -114,7 +114,7 @@ Mejanya ==b:10♠ J♦ Q♣ K♥ A♠== — sebuah straight ten-sampai-ace jadi 
 - Anda pegang ==b:2♣ 3♦==. Lima terbaik Anda adalah straight meja; si 2 dan 3 tak menambah apa pun.
 - Lawan pegang ==b:4♥ 5♦==. Sama saja — straight meja juga lima terbaik mereka.
 
-Tak satu pun dari kalian bisa lebih tinggi dari ace, jadi kalian berdua "playing the board" dan ==g:membagi pot== — tapi hanya jika kalian membuka kartu tertutup; kalau di-muck, Anda tak dapat apa-apa, bahkan di sini (Aturan TDA 19). Straight tak punya kicker, jadi kartu tertutup itu cuma beban mati. Saat Anda dengar "the board plays", inilah maksudnya — dan ini satu-satunya tempat kartu tertutup yang tampak kuat bernilai persis nol. (Selengkapnya soal mengenali runout seperti ini di [membaca meja](/id/blog/holdem-reading-the-board).)
+Tak satu pun dari kalian bisa lebih tinggi dari ace, jadi kalian berdua "playing the board" dan ==g:membagi pot== — tapi hanya jika kalian membuka kartu tertutup; kalau di-muck, Anda tak dapat apa-apa, bahkan di sini (TDA Rule 19). Straight tak punya kicker, jadi kartu tertutup itu cuma beban mati. Saat Anda dengar "the board plays", inilah maksudnya — dan ini satu-satunya tempat kartu tertutup yang tampak kuat bernilai persis nol. (Selengkapnya soal mengenali runout seperti ini di [membaca meja](/id/blog/holdem-reading-the-board).)
 
 ---
 
@@ -174,7 +174,7 @@ A. Ya. Three of a kind memakai dua kicker, jadi saat dua pemain membentuk trips 
 
 **Q. Apakah two pair punya kicker?**
 
-A. Ya — two pair memakai satu kicker. Kalau Anda pegang K♥ Q♦ dan lawan pegang J♠ Q♥ di meja Q♣ 7♠ 7♦ 4♥ 2♣, kalian sama-sama punya two pair Q dan 7, tapi kicker king Anda mengalahkan jack mereka. Kicker baru ikut main saat kedua pemain pegang two pair yang identik.
+A. Ya — two pair memakai satu kicker. Kalau Anda pegang K♥ Q♦ dan lawan pegang J♠ Q♥ di meja Q♣ 7♠ 7♦ 4♥ 2♣, kalian sama-sama punya two pair Q dan 7, tapi kicker king Anda mengalahkan jack mereka (Q-Q-7-7-K vs Q-Q-7-7-J). Kicker baru ikut main saat kedua pemain pegang two pair yang identik.
 
 **Q. Apakah kicker harus dari kartu tertutup Anda?**
 

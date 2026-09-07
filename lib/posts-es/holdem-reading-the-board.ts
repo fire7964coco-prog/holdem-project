@@ -262,7 +262,7 @@ A. Sí. Si la propia mesa es la mejor mano de 5 cartas y las cartas de ningún j
 
 **Q. ¿Se puede tener un color y una pareja a la vez?**
 
-A. Puedes formar ambos con tus 7 cartas, pero una mano de póker son exactamente 5 cartas — así que juegas solo la más fuerte. Como el color supera a la pareja, el color es tu mano y la pareja se ignora. La misma regla aplica a una escalera más una pareja: la escalera es tu mano. No necesitas cantar nada — en el showdown las cartas hablan y el dealer lee la mano —, pero sigues teniendo que enseñar las dos cartas boca arriba, y si la lectura es errónea, dilo.
+A. Puedes formar ambos con tus 7 cartas, pero una mano de póker son exactamente 5 cartas — así que juegas solo la más fuerte. Como el color supera a la pareja, el color es tu mano y la pareja se ignora. La misma regla aplica a una escalera más una pareja: la escalera es tu mano. No necesitas cantar nada — en el showdown las cartas hablan y el dealer lee la mano.
 
 **Q. ¿Se puede usar un As en una escalera?**
 

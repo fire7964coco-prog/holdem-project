@@ -253,7 +253,7 @@ A. Yes. If the board itself is the best 5-card hand and no player's hole cards i
 
 **Q. Can you have a flush and a pair at the same time?**
 
-A. You can make both from your 7 cards, but a poker hand is exactly 5 cards — so you play only the stronger one. Since a flush outranks a pair, the flush is your hand and the pair is ignored. The same rule applies to a straight plus a pair: the straight is your hand. You don't need to announce anything — cards speak at showdown, and the dealer reads the hand — but you must still table both hole cards face up, and you should speak up if the read is wrong.
+A. You can make both from your 7 cards, but a poker hand is exactly 5 cards — so you play only the stronger one. Since a flush outranks a pair, the flush is your hand and the pair is ignored. The same rule applies to a straight plus a pair: the straight is your hand. You don't need to announce anything — cards speak at showdown, and the dealer reads the hand.
 
 **Q. Can you use an ace in a straight?**
 

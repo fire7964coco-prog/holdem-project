@@ -102,7 +102,7 @@ For how side pots are built and paid when players are all-in, see [all-in rules 
 
 If a player misreads their hand and says "I have a pair," but they actually have a straight — the straight wins. The dealer reads the cards and awards the pot to the best hand shown.
 
-This works both ways. If you think you lost and muck without showing, but your hand would have been the winner — ==r:the pot is gone==. Your hand is dead only once the dealer has pushed it into the muck and it is no longer clearly identifiable — cards laid face-down are ==TDA Rule 14== not automatically dead. Never rely on that, though. Always let the dealer read your hand before mucking if you're not 100% sure you lost.
+This works both ways. If you think you lost and muck without showing, but your hand would have been the winner — ==r:the pot is gone==. Your hand is dead only once the dealer has pushed it into the muck and it is no longer clearly identifiable — cards laid face-down are not automatically dead (==TDA Rule 14==). Never rely on that, though. Always let the dealer read your hand before mucking if you're not 100% sure you lost.
 
 Real situation: you hold J♥ 10♥ on a board of Q♥ 9♥ 8♥ 2♣ 5♦. You have a queen-high straight flush (Q-J-10-9-8 of hearts). Opponent shows K♣ Q♦ (one pair of queens). You win by a mile. Don't muck just because you see their queen.
 

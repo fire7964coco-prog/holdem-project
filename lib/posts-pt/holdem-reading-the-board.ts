@@ -172,7 +172,7 @@ Repare na última linha: ==mesmo sem nada, o par da mesa faz parte da sua mão==
 Você pode TER os dois — mas nunca pode JOGAR os dois. ==Uma mão de poker são exatamente 5 cartas, então combinações que se sobrepõem não se somam; você simplesmente joga a mais forte.==
 
 - Você tem A♠ K♠ num board Q♠ 7♠ 2♠ K♦ 3♣. Você fez um par de reis E cinco espadas. Sua mão é o ==nut flush, A♠ K♠ Q♠ 7♠ 2♠== — o par de reis simplesmente nunca entra na conta.
-- Você tem 8♥ 8♦ num board 7♣ 6♦ 5♠ 4♥ K♦. Par de oitos E 8-7-6-5-4. Sua mão é a ==sequência de oito alto== — não "um par com uma sequência". No showdown você não precisa anunciar: as cartas falam, e o dealer lê a mão (Regra 12 da TDA). O que você precisa fazer é virar as duas cartas para cima — as cartas só falam por uma mão mostrada corretamente (Regra 13-A) — e, se o dealer ler errado, diga antes de o pote ser empurrado.
+- Você tem 8♥ 8♦ num board 7♣ 6♦ 5♠ 4♥ K♦. Par de oitos E 8-7-6-5-4. Sua mão é a ==sequência de oito alto== — não "um par com uma sequência". No showdown você não precisa anunciar: as cartas falam, e o dealer lê a mão (regra 12 da TDA). O que você precisa fazer é virar as duas cartas para cima — as cartas só falam por uma mão mostrada corretamente (regra 13-A) — e, se o dealer ler errado, diga antes de o pote ser empurrado.
 
 A mesma lógica responde "dá para ter três pares?" — você pode ter três valores pareados entre 7 cartas, mas só os dois melhores cabem nas 5 cartas (explicado no [guia de ranking de mãos](/pt/blog/holdem-hand-rankings)).
 
@@ -250,7 +250,7 @@ A. Pode. Se a própria mesa é a melhor mão de 5 cartas e as cartas na mão de 
 
 **Q. Dá para ter flush e par ao mesmo tempo?**
 
-A. Você pode fazer os dois com suas 7 cartas, mas uma mão de poker são exatamente 5 cartas — então você joga só a mais forte. Como o flush ganha do par, o flush é sua mão e o par é ignorado. A mesma regra vale para uma sequência mais um par: a sequência é a sua mão. Não precisa anunciar nada — no showdown as cartas falam, e o dealer lê a mão —, mas você ainda precisa mostrar as duas cartas viradas para cima, e se a leitura estiver errada, diga.
+A. Você pode fazer os dois com suas 7 cartas, mas uma mão de poker são exatamente 5 cartas — então você joga só a mais forte. Como o flush ganha do par, o flush é sua mão e o par é ignorado. A mesma regra vale para uma sequência mais um par: a sequência é a sua mão. Não precisa anunciar nada — no showdown as cartas falam, e o dealer lê a mão.
 
 **Q. Dá para usar um ás numa sequência?**
 

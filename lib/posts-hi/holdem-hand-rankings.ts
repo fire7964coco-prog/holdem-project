@@ -174,7 +174,7 @@ showdown पर सबसे ऊँचा कार्ड जीतता है
 दाईं ओर का बैज दिखाता है कि **हैंड तय करने में kicker इस्तेमाल होता है या नहीं**।
 
 :::tiebreak
-Royal Flush|टाई सिर्फ़ तब जब royal flush पूरा बोर्ड पर हो — सब बाँटते हैं|-कोई kicker नहीं
+Royal Flush|टाई सिर्फ़ तब जब पूरा royal flush बोर्ड पर हो — सब पॉट बाँटते हैं|-कोई kicker नहीं
 Straight Flush|केवल सबसे ऊँचा कार्ड|-कोई kicker नहीं
 Four of a Kind|quad का मान → 5वाँ कार्ड|+kicker लागू
 Full House|trio का मान → pair का|-कोई kicker नहीं

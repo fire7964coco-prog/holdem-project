@@ -250,7 +250,7 @@ A. Ja. Wenn das Board selbst die beste 5-Karten-Hand ist und die Hole Cards kein
 
 **Q. Zählt mein Paar mit, wenn ich schon einen Flush habe?**
 
-A. Du kannst beide aus deinen 7 Karten machen, aber eine Pokerhand besteht aus genau 5 Karten – also spielst du nur die stärkere. Da ein Flush ein Paar überbietet, ist der Flush deine Hand und das Paar wird ignoriert. Dieselbe Regel gilt für eine Straße plus ein Paar: die Straße ist deine Hand. Ansagen musst du nichts – im Showdown sprechen die Karten, und der Dealer liest die Hand –, aber beide Hole Cards musst du trotzdem offen hinlegen, und wenn die Hand falsch gelesen wird, sag es.
+A. Du kannst beide aus deinen 7 Karten machen, aber eine Pokerhand besteht aus genau 5 Karten – also spielst du nur die stärkere. Da ein Flush ein Paar überbietet, ist der Flush deine Hand und das Paar wird ignoriert. Dieselbe Regel gilt für eine Straße plus ein Paar: die Straße ist deine Hand. Ansagen musst du nichts – im Showdown sprechen die Karten, und der Dealer liest die Hand.
 
 **Q. Kann man ein Ass in einer Straße nutzen?**
 
