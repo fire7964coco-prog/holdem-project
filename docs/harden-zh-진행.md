@@ -91,6 +91,12 @@
 - `apt-incheon` 「개막 당일 수관」은 EN 「before the festival」을 **일부러 안 따른** 편차.
 - 2·4법칙 링크 앵커는 도착 글 표기 「二四法则」로 통일돼 있다.
 - GTO 13편·wsop-2026은 대상 밖.
+- 🆕🟠 **헤드 통지(2026-09-08 · ja 회차 4 머지에서 파생) — GTO 역링크 2자리가 조건을 충족했는데 안 열렸다.**
+  `locale-intentional-diffs.md` 08-27 두 행의 해소 조건은 「그 언어에 해당 GTO 편이 발행되면 재저작해 넣는다」인데,
+  **zh는 GTO 4편을 전부 보유**(`a-high-board-cbet`·`3bet-pot-bet-sizing`·`3bet-pot-cbet`·`low-board-check-raise`)하면서 링크는 **1자리뿐**이다.
+  실측(2026-09-08 헤드): `continuation-bet` ✅(2자리) · **`position-play` ❌**(⑤ `low-board-check-raise`) · **`3bet` ❌**(③ `3bet-pot-cbet`).
+  🪶 형제 비교 = en 3/3 · ja 3/3(회차 4가 열었다) · zh-hant 3/3(회차 4가 열었다) · **zh 1/3** · es 0/3(레인 없음 → 헤드 미결).
+  🔴 **회차 4(전략)가 이미 지나간 클러스터다** — 회차 5 마감 때나 트랙 종결 회차(7)에서 소급하라. 헤드는 손대지 않았다(§6-0).
 - 🆕🔴 **헤드 통지(2026-09-08) — `holdem-starting-hands-chart`의 `/zh/hand-chart` 링크가 라이브 404다.**
   라우트는 `app/hand-chart`(한국어)와 `app/en/hand-chart` **둘뿐**이다(실측: /hand-chart 200 · /en/hand-chart 200 · **/zh/hand-chart 404**).
   형제 실태 = de·id·ja는 `/hand-chart`(한국어 도구로 떨어짐) · es는 `/en/hand-chart` · **zh-hant·pt는 아예 뺐다**(회차 4 판정 · `docs/locale-intentional-diffs.md` 2026-09-08 행).
