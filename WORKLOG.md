@@ -1,3 +1,18 @@
+## 2026-09-07 (5) — **헤드 회차 — 대기열 1번 «zh 레인 EN-먼저 11건» 판정·EN 정정·13로케일 전파 + 🇯🇵 ja 회차 1 머지·배포 + `check:hangul` 게이트 신설** (Fable · 헤드)
+
+사장님 「1번부터 진행해」 → 중간에 「ja 회차 1 끝났어, 머지해」. 커밋 `f0515d4e`(EN-먼저 1차) · `83c70e96`(ja 머지) · `106c8eed`(sitemap·배포) · `1f34f3e5`(게이트) · `a253153e`(렌즈 3종 반영 2~4차 + KO 사본) · 라이브 확인 2회(19:05 앵커 21/21 ✅ 구형 0 · 2차(`a253153e` 배포 후) 신규 14/14 ✅ · 구형 잔존 0/4).
+
+- **판정(1차 출처 = TDA 2022 shortform 축어 + 검수장 WSOP 발췌 A 75조·B 172조)**: 채택 8(③④⑤⑥⑦⑧⑨⑩) · **기각 1 — ⑪ 「WSOP live-action Rule 172」는 캐시 룰북(Live Action Rules) L854에 실재**(레인은 토너먼트 PDF만 열어 «129조까지»라 판정 불가라 적었다 — 발췌 §0이 예고한 «조 번호가 룰북마다 다르다» 사고 유형). ①②는 `3e523fd7`로 기종결.
+- **EN 4편 + 12로케일 전파**(hand-rankings 13로케일 · 나머지 3편 8로케일 · 앵커 97자리 전건 1회 일치 스크립트 치환). ⑨ «Broadway flush»는 en·de·ja·zh 4로케일만 썼고 **ar·hi·id·ms·pt·tr·vi는 원래 «Royal»**이었다(EN을 로케일 관례에 맞춘 셈). ⑧ pt 표 헤더는 원래 옳았다. ⑤ pt·zh는 이미 조건형. ⑩ id는 이미 5장 보드.
+- **렌즈 3종(Opus) — 딜러/TDA 11항목 · 교열(diff) 11건 · 네이티브 12로케일 15건 → 채택 반영 2~4차(55+18+25자리)**:
+  · 딜러: ③ `$` 제거(토너먼트 칩은 무가치) + «최소 단위가 5일 때» 전제 + 「아무것도 주기 전」→「마지막 칩을 주기 전」 · 오드칩 괄호 **«딜러 기준»→«버튼 기준»**(Rule 20 A 축어 · 8로케일) · ⑤ 보드플레이 예시 끝에 **테이블링 의무(TDA 19)** · ⑦ **Rule 13-A 짝**(카드 공개해야 cards speak · 오독이면 말하라) · ⑩ **무늬 박기**(무늬 미지정이면 `Q♠7♠4♠+K♠Q♠` 플러시 반례 성립 → K♥Q♦ vs J♠Q♥ · Q♣7♠7♦4♥2♣ · ♥3♠2♦2♣2 검산) · reading FAQ 「WSOP Rule 75」→「WSOP **tournament** Rule 75」. 기각(경미): 표 셀 중복 · TDA 연도 표기(집 관례 「TDA Rule N」 유지) · 172조 «forfeit» 강도.
+  · 네이티브: 🔴 **id는 조항명을 영어로 두는 로케일**(`TDA Rule 16`×4 등 7건 · 내 전제 «Aturan TDA 20»이 틀렸다) → 되돌림 · es 로열 행 「todos reparten」= «모두가 딜한다»로 읽힘 → 「se reparte entre todos」 · es 별칭 「Real」→「Royal」 · pt 「Regra」→「regra」 소문자(파일 10:4) · pt split-pot `masterUpdated` 필드 신설 · pt 「joga no muck」→「dá muck」(19:1) · **de 로열 행 기존 문장 자기모순**(「immer … nur wenn」 · 원본 유래) 정정 · ja 「は…が」 이중 주어 · hi/ar/tr 한 줄씩.
+  · 교열: EN tip 「heads-up」 한 문장 2회(② 편집 유래) · «절반» 문장 헤즈업 한정(8로케일) · 족보 FAQ에 쇼다운 절차 3중 반복 → FAQ는 한 문장으로(8로케일) · 🔴 **KO 사본 3자리 — `posts.ts` 로열 행 「항상 무승부」 · 요약표 「딜러 왼쪽」↔본문 「버튼 왼쪽」 · 최소 면액 단계 부재**(§13 언어 불변 · KO 최대 트래픽) · 렌즈 밖 `holdem-showdown-rules` EN L105 「are ==TDA Rule 14== not automatically dead」 문장 파손(id/ms/vi/fil/sw는 정상). 기각: 「Rule 13-A 근거 없음」(2022 shortform L28 실재 · 14조는 «Live Cards at Showdown»으로 별개 조항) · 「21」 3중 반복(문체).
+- **🇯🇵 ja 회차 1 머지 `83c70e96`(충돌 0 · 규칙 6편 · 렌즈 4종 54/46 · 2차 교열 11/11)** → 빌드 70+525 → push `106c8eed` → 라이브 2/2 ✅(50パーセント · マナー違反 H2). 헤드 요청 8건: ① ✅ **`npm run check:hangul` 신설**(`scripts/check-hangul-leak.mjs` · content+메타만 · 주석 제외 · 괄호/굵게 병기 허용 · 셀프테스트 7/7) — **첫 실행 🔴 3건이 전부 실누출**(korea-poker-marathon en·de·id 「subway 경의중앙선」 미번역) → 정정 후 25로케일 538파일 0 · ②③④ EN-먼저(all-in TDA 조항 번호 · betting-actions 50% 룰 FAQ · beginners 매너 H2) **헤드 대기열** · ⑤ ✅ `rakko-playbook.md` §1-A 「시드 언어 앵커」 승격 · ⑥ **판정 = 반각 `%`** · ⑦ ✅ **`docs/sources/tda-2022-shortform-rules.txt` + README**(2019 Longform↔2022 Shortform 번호 대조 — 12·16·18·43 등 대조 자리 전부 동일 · 사이트 「TDA Rule N」 인용 분포 16×50·19×14·18×13·14×12·12×8·20×7) · ⑧ ✅ sitemap.
+- 🔴 **세 레인 `HARDEN.md`(비추적)에 통지**: 다음 구간 전 `git merge main` 필수 — 족보 4편이 main에서 바뀌었다(🇹🇼는 회차 2 족보 A 구간 중 · 🇯🇵는 회차 2가 족보). `check:hangul`을 C 구간 게이트에 추가.
+- 🪶 **Opus 서브 2종이 한도(429 · 7pm 리셋)로 중단** → 리셋 후 재실행. 딜러 렌즈는 1회에 완료.
+- **미결 신설**: ⓔ kicker de/ja/zh-hant `masterUpdated`(07-18/19) — EN 08-26 델타 미이식 여부 별도 대조 ⓕ zh-hant hand-rankings 별칭 열 Straight Flush 「—」(steel wheel 정보 zh-hant만 없음) ⓖ TDA 인용에 연도를 붙일지(2024 v1.0 미취득 · 딜러 렌즈 권고).
+
 ## 2026-09-07 (4) — **헤드 회차 — 🇨🇳 zh 회차 2(족보 6편) 머지·배포 + tiebreak EN-먼저 2건 zh 동시 이식** (Fable · 헤드)
 
 사장님 「zh 2회차 끝남」. 레인 커밋 `dd5fd538`·`ceb4e80c`(회차 2 · 렌즈 5종 51/37 · 2차 교열 6/5 · EN-먼저 11).
