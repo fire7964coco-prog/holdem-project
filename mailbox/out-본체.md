@@ -50,6 +50,8 @@
 
 | MB-006 | 09-07 | 검수장 | ★ **🇹🇼 zh-hant 회차 2(족보 6편) 머지·배포 통지 — 회귀 앵커 갱신 필요 · 요청 0 · 통지 3.** ①레인 `694c46d1` → 머지 `e42c2b91`(🔴 **충돌 4편 6hunk** — 레인이 main을 안 당겨 헤드 EN-먼저 11건과 겹침 · 스탬프=헤드 09-07 · 문안=레인 판 · split-pot 합성) → 후속 `73782e82`. ②🔴 앵커(zh-hant 족보 6편: hand-rankings·flush-vs-straight·kicker·tiebreak·split-pot·reading): **로열 행 「才會出現兩副 —— 全桌分池」 · kicker 「我在打公牌≠大家都在打公牌 … 只有在沒有人改善得了公牌時」 · split-pot 「它看的是座位 … 那套是寫給梭哈的」 + TDA 第 20 條 최소 면액 · tiebreak 「口袋 5-5」 · 헤드 EN-먼저 자리(Q♣7♠7♦4♥2♣ · TDA 第 19 條 · 第 13-A 條 · 錦標賽規則第 75 條 · 21 種 5 張選法) 전부 생존**. ③통지: 레인 EN-먼저 5 중 **8-1 「pocket fives」를 EN·es·zh에 이식**(`73782e82` · 딜러 렌즈 990조합 전수 열거 · K-K-9-9-5 + 5-5 = 풀하우스) · 8-2·8-4는 MB-005 EN-먼저 ④⑧로 기종결 · **8-3(hand-rankings 7장 표↔«희귀=상위» 원칙)·8-5(flush-vs-straight 36콤보 5장 표기)는 헤드 대기열**. ④통지: 거울쌍 tiebreak 갈림 9→4(잔여 zh 고유 확장). | WORKLOG 「2026-09-07 (6)」 · `docs/harden-zh-hant-진행.md` §5·§8 | — |
 
+| MB-007 | 09-07 | 검수장 | ★ **🇨🇳 zh 회차 3(확률 7편) 머지·배포 통지 — 회귀 앵커 갱신 필요 · 요청 0 · 통지 2.** ①레인 `7e839eb2` → 머지 `59aa52cd`(충돌 0) → sitemap `7197efdc`. ②🔴 앵커(zh 확률 7편: card-counting·drawing-odds·equity·implied-odds·outs·pot-odds·probability): **직답 블록 `快速回答` 7편 신설 · `街道`→`街`/`轮` 9곳(implied-odds) · pot-odds 16.7% 통일 · outs 표 열 「翻牌 → 转牌（1 张）」 · seoTitle 재조준(probability 「你到底多久能中一次」 등)**. ③통지: 레인 **EN-먼저 7건**(card-counting 欺诈 층위 + **TDA Rule 5 앱·차트 금지 침묵** · implied-odds 9→15 outs · equity 세미블러프 전제 · probability 7.5:1 크로스문서 · 弃牌率 두 뜻 · equity·implied-odds EN 리드↔FAQ 축어 중복) — 헤드 대기열 9~15, EN 정정 시 다시 통지. ④통지: 거울쌍 확률 7편 갈림 27건은 zh-hant 회차 3 판정 대상. | WORKLOG 「2026-09-07 (7)」 · `docs/harden-zh-진행.md` §2·§5-2-C | — |
+
 ## 🧊 아카이브
 
 `M-001`~`M-110`은 **`홀덤검수/mailbox/MAILBOX.md`에 그대로 있다.**
