@@ -15,7 +15,7 @@ export const POST: Post = {
   tldr: "Preflop, the player to the left of the big blind bets first. On the flop, turn and river it is the first live player to the left of the button — usually the small blind. (Heads-up flips this.) The hand itself runs blinds → hole cards → preflop → flop → turn → river → showdown, with four betting rounds.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-08-30",
+  updated: "2026-09-07",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎬",
@@ -353,7 +353,7 @@ A. Post blinds → deal two hole cards → preflop betting → reveal the flop (
 
 **Q. Who goes first in poker?**
 
-A. It depends which "first" you mean, and that is exactly why the question trips people up. Three different moments claim the word in a single hand: first to *post* (the small blind), first to *act* preflop (UTG, immediately left of the big blind), and first to act once the flop is out (back to the small blind). So the answer flips mid-hand — UTG opens the preflop round, then the small blind opens every round after it.
+A. It depends which "first" you mean, and that is exactly why the question trips people up. Three different moments claim the word in a single hand: first to *post* (the small blind), first to *act* preflop (UTG, immediately left of the big blind), and first to act once the flop is out (back to the small blind). So the answer flips mid-hand — UTG opens the preflop round, then the small blind opens every round after it. (Heads-up is the lone exception — see the next question.)
 
 **Q. Who bets first after the flop?**
 

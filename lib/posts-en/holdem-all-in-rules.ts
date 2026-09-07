@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Going all-in means betting every chip you have. You can only win what you matched from each opponent (the main pot). Extra bets from bigger stacks form a side pot you cannot win. An all-in for less than a full raise does NOT reopen the betting for players who already acted.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-07-25",
+  updated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "♠",
