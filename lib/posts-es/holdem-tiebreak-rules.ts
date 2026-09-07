@@ -194,7 +194,7 @@ A. El kicker más alto — pero comprueba primero cuáles de tus cartas llegan d
 
 **Q. ¿Quién gana si ambos jugadores tienen doble pareja?**
 
-A. Primero la pareja alta, luego la baja y por último el único kicker — así que ases y treses gana a reyes y reinas aunque la segunda pareja sea mucho más pequeña. El caso que atrapa a la gente es una mesa con doble pareja, como K-K-9-9-5: salvo que alguien lleve una K, un 9 o una pareja de mano por encima del 9, todos tienen la misma doble pareja, así que la mano se reduce a un solo kicker y se la lleva la mejor carta privada de todos los jugadores — y si ninguna carta privada supera el 5 de la mesa, todos juegan la mesa y el bote se divide. La doble pareja lleva exactamente un kicker, nunca dos.
+A. Primero la pareja alta, luego la baja y por último el único kicker — así que ases y treses gana a reyes y reinas aunque la segunda pareja sea mucho más pequeña. El caso que atrapa a la gente es una mesa con doble pareja, como K-K-9-9-5: salvo que alguien lleve una K, un 9, una pareja de cincos de mano o una pareja de mano por encima del 9, todos tienen la misma doble pareja, así que la mano se reduce a un solo kicker y se la lleva la mejor carta privada de todos los jugadores — y si ninguna carta privada supera el 5 de la mesa, todos juegan la mesa y el bote se divide. La doble pareja lleva exactamente un kicker, nunca dos.
 
 **Q. ¿Quién gana si dos jugadores tienen el mismo trío?**
 
