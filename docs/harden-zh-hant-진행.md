@@ -7,8 +7,8 @@
 
 | 회차 | 클러스터 | 편수 | 상태 | 커밋 | 렌즈 지적/반영 | 날짜 |
 |---|---|---:|---|---|---|---|
-| 1 | 규칙 | 6 | ✅ 완료 | (헤드 머지 대기) | 1차 렌즈 4종 지적 41 / 2차 렌즈 2종 지적 33 · 총 반영 51 · 기각 8 · 이월 15 | 2026-09-07 |
-| 2 | 족보 | 6 | ⏳ 다음 | | | |
+| 1 | 규칙 | 6 | ✅ 완료 | `3c7a4e7a` (머지 `7a7adb2e`) | 1차 렌즈 4종 지적 41 / 2차 렌즈 2종 지적 33 · 총 반영 51 · 기각 8 · 이월 15 | 2026-09-07 |
+| 2 | 족보 | 6 | 🔵 **A 구간 완료**(브리프 대기 → B) | | | 2026-09-07 |
 | 3 | 확률 | 7 | | | | |
 | 4 | 전략 | 8 | | | | |
 | 5 | 토너먼트 | 9 | | | | |
@@ -38,9 +38,13 @@
 - ✅ **해소** — `docs/local-voice/zh-tw.md` 신설(2026-09-06 · 판정 4건 등재).
 - 🟠 **08-27 잔여 드리프트 8편 중 회차 1분 3편(betting-actions·game-order·showdown-rules)은 실측 결과 «이미 반영»이었다.**
   남은 5편(card-counting·kicker·marathon·beginners는 해소 / continuation-bet)은 해당 회차에서 **같은 방식으로 문자열 대조**할 것.
-- 🟠 **`德州撲克怎麼玩`(720) 태그가 `holdem-game-order`와 `texas-holdem-rules-for-beginners`에 공유돼 있다.**
-  회차 1의 카니발 판정 표에서 **빠뜨린 겹침**이다(SEO 렌즈가 잡았다). 주인 판정에 SERP 실측이 필요해
-  이번 회차에서 손대지 않았다 → **회차 2에서 `德州撲克大小`(2,900)와 함께 판정.**
+- ✅ **해소(2026-09-07 회차 2 A 구간 · SERP 실측)** — `德州撲克怎麼玩`(720) 겹침 판정.
+  **주인 = `texas-holdem-rules-for-beginners`**(SERP #1 taiwanrounders 牌型 페이지 · #2 pokerfans
+  「玩法與規則」 · #3 위키 「牌局進行流程」 = **규칙 전반·절차 의도**. 필라가 title 완전형 보유).
+  → `holdem-game-order`가 **양보**한다(자기 축 = `德州撲克順序` 110 · `德州撲克發牌順序` 90 — SERP 4/5가 行動 순서).
+  🔴 **짝 판정**: `德州撲克大小`(2,900)은 **SERP 12/12가 牌型 대소** → 주인 = `holdem-hand-rankings`,
+  `texas-holdem-rules-for-beginners`가 **양보**한다. 근거·전문 = `docs/keyword-bank/zh-hant-hand-rankings-cluster.md` §2.
+  → 실행 = 회차 2 B 구간의 **태그 2줄**(브리프 §6). **본문·제목은 건드리지 않는다.**
 - 🟠 **`holdem-glossary`에 이번 회차가 고친 어휘가 그대로 남아 있다**(2차 네이티브 렌즈 보고 · 회차 6 소관):
   `牌房` 3건(L82·L200·L267) · `面值` 2건(L187·L203). `holdem-betting-actions`는 「現代撲克室完全合法」로
   고쳤는데 glossary는 「現代牌房合法」이라 **같은 문장의 두 판본이 사이트에 공존한다.** 회차 6에서 통일.
@@ -143,11 +147,21 @@
    라벨 블록이 **0개**다. 회차 1은 «상단 `> **快速解答**` 1개 + 핵심 H2 3~4자리»로 잡았다
    (근거·판정 = `docs/local-voice/zh-tw.md` §1-B). 이 형태를 정본으로 승격할지 판정 부탁드립니다.
 
+7. 🟠 **EN-먼저(경미) × 2 — EN `updated`가 본문 변경을 따라가지 못한 편이 또 있다**(회차 2 A 구간 실측).
+   회차 1 §5-2와 **같은 유형**이다. 이 필드가 낡으면 드리프트 게이트가 **모든 로케일을 영구히 ✅로 통과**시킨다.
+   | EN 파일 | 현행 `updated` | 실제 마지막 본문 변경 | 요청값 |
+   |---|---|---|---|
+   | `lib/posts-en/holdem-hand-rankings.ts` | 2026-08-12 | `a4588d9e`(08-26 · board-puzzle alt `K-K-K-A-4`→`K-K-K-A-2`) | **2026-08-26** |
+   | `lib/posts-en/holdem-reading-the-board.ts` | 2026-08-11 | `12d21fdd`(08-12 · 四張黑桃 문장·playing the board·순자 보드 경고) + `a798689b`(08-27 · `K-K-K-9-7` 「both hole cards play」) | **2026-08-27** |
+   🪶 **두 편 모두 zh-hant는 내용이 이미 반영돼 있다**(문자열 대조 완료 — 브리프 §3-A·§5-B).
+   EN을 올리면 zh-hant가 드리프트로 뜰 텐데, 그때 `masterUpdated`만 같은 날짜로 올리면 된다(내용 작업 없음).
+
 ## 6. 자산 축적 체크 (회차 마감마다)
 
 | 회차 | ① 키워드뱅크 | ② 편차 판정 요청 | ③ voice/판정 정본 |
 |---|---|---|---|
 | 1 | ✅ `docs/keyword-bank/zh-hant-rules-cluster.md` 신설(볼륨 13종·자동완성 10시드·함정 5·경쟁 5사 H2 골격) | ✅ §5-4(게임오더 FAQ 미이식) | ✅ `docs/local-voice/zh-tw.md` 신설 · 브리프 `docs/harden-brief/zh-hant-규칙.md` |
+| 2 | ✅ `docs/keyword-bank/zh-hant-hand-rankings-cluster.md` 신설(볼륨 20종 실측·null 19종·SERP 판정 5건·경쟁 4사 H2 골격) | (B·C 구간에서) | ✅ `local-voice/zh-tw.md` **§1-D-2 신설**(자동완성↔SERP 역전) + §1-E `疊牌` 1행 · 브리프 `docs/harden-brief/zh-hant-족보.md` |
 
 ## 7. 회차 1 렌즈 — 무엇이 값을 냈나 (회차 2가 프롬프트를 짤 때 볼 것)
 
