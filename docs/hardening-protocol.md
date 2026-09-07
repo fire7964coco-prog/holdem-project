@@ -52,7 +52,7 @@
 | **쓰는 파일** | `lib/posts-<locale>/` · `docs/harden-<locale>-진행.md` · `docs/keyword-bank/<locale>-*.md` · `docs/local-voice/<locale>*.md` · `docs/translation-terms-<locale>.md` · 회차 브리프 `docs/harden-brief/<locale>-<클러스터>.md` |
 | **안 쓰는 파일** | 다른 로케일 포스트 · `public/images/`(18언어 공용 — 교체는 헤드) · `WORKLOG.md` · `session-handoff.md` · `CLAUDE.md` · `docs/settled-decisions.md` · `docs/locale-intentional-diffs.md` · `mailbox/` · `scripts/`(게이트 수정은 헤드) |
 | **공용 파일에 넣을 것이 생기면** | 진행 파일 «헤드 요청» 절에 적는다. 헤드가 머지 때 승격한다 |
-| **git** | 🔴 `git push` 금지 · `main` 체크아웃 금지 · 머지는 헤드. 회차 시작은 `git merge main`(헤드가 넣은 정본·게이트를 받는다) |
+| **git** | 🔴 `git push` 금지 · `main` 체크아웃 금지 · 머지는 헤드. 회차 시작은 `git merge main`(헤드가 넣은 정본·게이트를 받는다). 🆕 **2026-09-08부터 헤드가 매 회차 끝에 `npm run lane:sync -- --apply`로 밀어 준다**(§6-6) — 그래도 회차 첫 명령은 여전히 `git merge main`이다(헤드 회차와 레인 회차 사이가 벌어질 수 있다). 🆕 **`pre-commit` 훅이 «자기 자리(`lib/posts-<locale>/`)를 안 받은 채로 커밋»을 막는다**(`npm run hooks:install` 1회 · 셀프테스트 `hooks:selftest` 5/5 · 탈출구 `HARDEN_SKIP_SYNC=1`은 회차 보고 «미결»에 적을 것) |
 | **빌드·배포** | `npm run build`는 돌려도 된다(확인용). 배포는 헤드 |
 | **세션** | 🔴 `/clear` 1회 = 회차 1개. 하나만 하고 **보고하고 멈춘다** |
 
@@ -178,11 +178,20 @@ git commit -F commit-msg.txt   # "harden(<locale>): <클러스터> N편 — 회�
 ## 6. 헤드(본체 main)가 하는 것 — 레인은 읽기만
 
 0. 🔴 **레인이 진행 중인 클러스터의 로케일 파일은 손대지 않는다.** EN-먼저 정정이 그 클러스터에 걸리면 EN + 다른 로케일만 먼저 고치고, 그 레인 로케일은 **진행 파일 §5에 «헤드가 EN을 고쳤다 — C 구간 merge main 때 받아라»로 넘긴다.** 불가피하게 손댔으면 그 레인 `HARDEN.md`(비추적) 말미에 통지를 붙인다.
-1. `git merge harden-zh` → `git merge harden-zh-hant` → `git merge harden-ja`(conflict가 공용 파일이면 레인이 §1을 어긴 것 — 되돌린다 · 로케일 파일이면 §6-0을 헤드가 어긴 것 — 헤드가 푼다).
+1. `git merge harden-zh` → `git merge harden-zh-hant` → `git merge harden-ja`(conflict가 공용 파일이면 레인이 §1을 어긴 것 — 되돌린다 · 로케일 파일이면 §6-0을 헤드가 어긴 것 — 헤드가 푼다). 🪶 머지 전에 `npm run lane:status`로 «지금 충돌할 수 있는가»를 먼저 본다(0.5초).
 2. `npm run build`(N blog posts 확인) → `git push` → 배포 도착 폴링 → **라이브 확인은 `page.content()`**(innerText는 접힌 FAQ를 못 본다 · 앵커는 원문 표기).
 3. 진행 파일 «헤드 요청» 절 처리: `locale-intentional-diffs.md` 등재 · EN-먼저 묶음을 EN에 먼저 정정 후 전 로케일 전파 · 이미지 교체 · 게이트 수정.
 4. `WORKLOG.md`·`session-handoff.md` 기록. 검수장 lane-zh에 **머지 커밋 해시**를 우편함으로 통보(검수는 해시 기준 판정).
 5. 트랙 종결(6/6) 시: 검수장 원장 편입 요청 + GPT 교차검수 팩(`docs/mailbox-protocol.md` §5).
+6. 🔴🔴 **회차를 닫는 마지막 명령 = `npm run lane:sync -- --apply`.** (2026-09-08 신설 · 사장님 지시 「충돌 좀 안 나게 해라」)
+   **레인이 «기억해서 당기는» 규율을 헤드가 «매 회차 끝에 미는» 규율로 바꿨다.** 09-07 하루에 세 레인이 전부
+   `git merge main`을 건너뛰어 헤드가 6hunk·1hunk를 손으로 풀었다 — 규율은 세 번 적혀 있었고 세 번 다 안 지켜졌다.
+   - `npm run lane:status` = 읽기 전용 판정. `npm run lane:sync` = `--apply`(= 각 레인 워크트리에서 `git merge main`).
+   - 판정 셋: **🟢 SAFE**(그냥 민다) · **🟠 OWNED**(헤드가 그 레인 자기 자리를 건드렸다 → 밀되 §6-0대로 `HARDEN.md`에 통지) ·
+     **🔴 BLOCKED**(들어올 파일이 레인 워크트리에서 «수정 중»이라 git이 병합을 거부한다 → 레인이 커밋·stash한 뒤 헤드가 다시 돌린다).
+   - 🔴 **레인 워크트리가 «더러워도» 대개 밀린다** — 겹치는 파일이 없으면 git은 병합을 받아 준다. 회차 중간이라고 건너뛰지 마라.
+   - 셀프테스트 `npm run lane:sync:selftest`(경로 귀속 18/18 — `zh` 가 `zh-hant` 를 삼키지 않는지가 핵심).
+   - 🪶 **이 게이트가 원리상 못 보는 것**: 파일 교집합만 본다. 교집합이 있어도 hunk가 안 겹치면 병합되고, 0이면 충돌도 0이다.
 
 ---
 

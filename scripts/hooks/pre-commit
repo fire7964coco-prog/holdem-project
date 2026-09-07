@@ -1,0 +1,47 @@
+#!/bin/sh
+# 경화 레인 «merge main 안 하고 회차 커밋» 차단 훅
+#
+# 왜 — 2026-09-07 하루에 세 레인이 전부 `git merge main` 을 건너뛰어 헤드가 충돌을 손으로 풀었다
+# (zh-hant 4편 6hunk · ja kicker 1hunk). 정본 = docs/hardening-protocol.md §2 · §5-⓪ · §6.
+#
+# 무엇을 막나 — 커밋하려는 브랜치가 `harden-<locale>` 인데, main 에 **그 레인 자기 자리
+# (`lib/posts-<locale>/`)를 건드린 커밋**이 아직 안 들어와 있으면 막는다.
+# 🔴 다른 로케일만 앞서 있으면 **안 막는다** — 그건 충돌하지 않는다(오탐을 만들지 않는다).
+#
+# 빠져나가는 법(정말 중간 저장이라면): HARDEN_SKIP_SYNC=1 git commit ...
+# 🔴 빠져나갔으면 회차 보고 «미결»에 그 사실을 적어라.
+#
+# 자가 검증: npm run hooks:selftest  (아래 세 환경변수로 과거 사고를 재현한다)
+#   HARDEN_HOOK_BRANCH   브랜치 이름(로케일 판정용)
+#   HARDEN_HOOK_LANE_REF 레인 쪽 ref (기본 = 브랜치)
+#   HARDEN_HOOK_BASE     기준 ref (기본 = main)
+
+[ -n "$HARDEN_SKIP_SYNC" ] && exit 0
+
+branch=${HARDEN_HOOK_BRANCH:-$(git rev-parse --abbrev-ref HEAD 2>/dev/null || echo '')}
+case "$branch" in
+  harden-*) ;;
+  *) exit 0 ;;
+esac
+
+base_ref=${HARDEN_HOOK_BASE:-main}
+lane_ref=${HARDEN_HOOK_LANE_REF:-$branch}
+
+git rev-parse --verify "$base_ref" >/dev/null 2>&1 || exit 0
+
+loc=${branch#harden-}
+owned=$(git diff --name-only "$lane_ref...$base_ref" -- "lib/posts-$loc/" 2>/dev/null || true)
+
+[ -z "$owned" ] && exit 0
+
+echo "🔴 커밋 차단 — 이 레인($branch)의 자기 자리를 헤드가 $base_ref 에서 고쳤는데 아직 안 받았다."
+echo ""
+echo "   못 받은 파일:"
+echo "$owned" | sed 's/^/      · /'
+echo ""
+echo "   → 먼저:  git merge main"
+echo "      (로컬 변경 때문에 거부되면  git stash && git merge main && git stash pop )"
+echo ""
+echo "   정본 = docs/hardening-protocol.md §5-⓪ · §6-0"
+echo "   정말 중간 저장이면:  HARDEN_SKIP_SYNC=1 git commit ...  (회차 보고 «미결»에 적을 것)"
+exit 1

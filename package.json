@@ -68,7 +68,12 @@
     "check:mirror-pair": "node scripts/check-mirror-pair.mjs",
     "check:mirror-pair:selftest": "node scripts/check-mirror-pair.mjs --selftest",
     "check:hangul": "node scripts/check-hangul-leak.mjs",
-    "check:hangul:selftest": "node scripts/check-hangul-leak.mjs --selftest"
+    "check:hangul:selftest": "node scripts/check-hangul-leak.mjs --selftest",
+    "lane:status": "node scripts/lane-sync.mjs",
+    "lane:sync": "node scripts/lane-sync.mjs --apply",
+    "lane:sync:selftest": "node scripts/lane-sync.mjs --selftest",
+    "hooks:install": "node scripts/install-hooks.mjs",
+    "hooks:selftest": "node scripts/hook-selftest.mjs"
   },
   "dependencies": {
     "@radix-ui/react-tabs": "^1.1.4",
