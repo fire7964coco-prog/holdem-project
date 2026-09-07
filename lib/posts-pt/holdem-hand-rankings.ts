@@ -8,9 +8,9 @@ export const POST: Post = {
   tldr: "A ordem das mãos do poker, da melhor à pior: Royal Flush, Straight Flush, Quadra, Full House, Flush, Sequência, Trinca, Dois Pares, Par e Carta Alta. Essa escada vale para o Texas Hold'em e quase todas as variantes.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-09-04",
+  updated: "2026-09-07",
 
-  masterUpdated: "2026-08-12",
+  masterUpdated: "2026-09-07",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🃏",
@@ -33,7 +33,7 @@ Comece por aqui. Esta é a tabela com o ranking inteiro, da mão mais forte à m
 | # | Mão | Também chamada de | O que é | Probabilidade (até o river) |
 |------|------|------|------|------|
 | **1** | Royal Flush | "Royal" | A-K-Q-J-10 do mesmo naipe | 0,0032% |
-| **2** | Straight Flush | "Steel wheel" (A-5) | 5 em sequência, mesmo naipe | 0,0279% |
+| **2** | Straight Flush | "Steel wheel" (só A-5) | 5 em sequência, mesmo naipe | 0,0279% |
 | **3** | Quadra | "Four of a kind" | Quatro cartas do mesmo valor | 0,168% |
 | **4** | Full House | "Full" | Trinca + par | 2,60% |
 | **5** | Flush | — | 5 cartas do mesmo naipe | 3,03% |
@@ -178,7 +178,7 @@ Esta é a parte que decide potes de verdade — e que a maioria das tabelas pula
 A etiqueta à direita indica se o **kicker é usado para decidir a mão**.
 
 :::tiebreak
-Royal Flush|Sempre empate (pote dividido)|-Sem kicker
+Royal Flush|Só empata quando a própria mesa é o royal flush — todos dividem|-Sem kicker
 Straight Flush|Só a carta mais alta|-Sem kicker
 Quadra|Valor da quadra → 5ª carta|+Com kicker
 Full House|Valor da trinca → do par|-Sem kicker

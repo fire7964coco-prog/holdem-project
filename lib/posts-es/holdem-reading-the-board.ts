@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "En Texas Hold'em siempre juegas la mejor mano de 5 cartas entre 7 (2 cartas propias + 5 cartas comunitarias) — usando las dos, una, o ninguna (jugar con la mesa). Repasa las 7 cartas en un orden fijo: color → escalera → parejas → carta alta.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-08-11",
-  masterUpdated: "2026-08-11",
+  updated: "2026-09-07",
+  masterUpdated: "2026-09-07",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🃏",
@@ -48,11 +48,13 @@ La primera vez que un dealer leyó mi mano mejor que yo, estaba sentado a la mes
 
 En Texas Hold'em recibes 2 cartas propias, y la mesa acaba mostrando 5 cartas comunitarias. De esas 7, ==juegas exactamente 5 — las 5 más fuertes disponibles==. Solo hay tres formas de que ocurra:
 
-| Cuántas cartas propias usas | Cómo se ve | Frecuencia |
+| Cuántas cartas propias usas | Cómo se ve | De las 21 combinaciones posibles de 5 cartas |
 |------|------|------|
 | **Las dos** | Tus dos cartas conectan con tres cartas de la mesa | 10 de las 21 formas |
 | **Una** | Una carta empareja o completa algo; la otra se queda fuera | 10 de las 21 formas |
 | **Ninguna ("jugar con la mesa")** | Las 5 cartas comunitarias ya son tus mejores 5 | 1 de las 21 formas |
+
+Son recuentos de las 21 combinaciones posibles de 5 cartas entre 7, no la frecuencia con la que se da cada caso en la mesa.
 
 Tres ejemplos rápidos, resueltos por completo:
 
@@ -170,7 +172,7 @@ Fíjate en la última fila: ==incluso sin nada, la pareja de la mesa forma parte
 Puedes TENER los dos — nunca puedes JUGAR los dos. ==Una mano de póker son exactamente 5 cartas, así que las combinaciones que se solapan no se acumulan; simplemente juegas la más fuerte.==
 
 - Tienes A♠ K♠ en Q♠ 7♠ 2♠ K♦ 3♣. Has formado pareja de reyes Y cinco picas. Tu mano es el ==color máximo (nut flush), A♠ K♠ Q♠ 7♠ 2♠== — la pareja de reyes simplemente no cuenta.
-- Tienes 8♥ 8♦ en 7♣ 6♦ 5♠ 4♥ K♦. Pareja de ochos Y 8-7-6-5-4. Tu mano es la ==escalera al 8== — canta eso, no "una pareja con una escalera".
+- Tienes 8♥ 8♦ en 7♣ 6♦ 5♠ 4♥ K♦. Pareja de ochos Y 8-7-6-5-4. Tu mano es la ==escalera al 8== — no "una pareja con una escalera". En el showdown no hace falta cantarla: las cartas hablan y el dealer lee la mano (regla 12 de la TDA). Lo que sí tienes que hacer es poner las dos cartas boca arriba — las cartas solo hablan por una mano bien enseñada (regla 13-A) — y si el dealer la lee mal, dilo antes de que empuje el bote.
 
 La misma lógica responde a "¿se pueden tener tres parejas?" — puedes tener tres valores emparejados en tus 7 cartas, pero solo las dos mejores caben en 5 cartas (cubierto en la [guía de jerarquía de manos](/es/blog/holdem-hand-rankings)).
 
@@ -252,7 +254,7 @@ A. Las cartas comunitarias son las 5 cartas que se reparten boca arriba en el ce
 
 **Q. ¿Qué significa "jugar con la mesa" en Texas Hold'em?**
 
-A. Significa que las 5 cartas comunitarias ya son tu mejor mano posible de 5 cartas — ninguna carta propia las mejora. Como la mesa es compartida, todos los jugadores pueden reclamar esa misma mano, así que jugar con la mesa suele acabar en bote dividido, salvo que las cartas propias de un rival mejoren la mesa. Hay una formalidad que aun así cuesta botes: aunque juegues con la mesa **tienes que enseñar tus dos cartas** para llevarte tu parte (==regla 75 de la WSOP==, regla 19 de la TDA) — si las tiras al muck sin mostrarlas, no te llevas nada.
+A. Significa que las 5 cartas comunitarias ya son tu mejor mano posible de 5 cartas — ninguna carta propia las mejora. Como la mesa es compartida, todos los jugadores pueden reclamar esa misma mano, así que jugar con la mesa suele acabar en bote dividido, salvo que las cartas propias de un rival mejoren la mesa. Hay una formalidad que aun así cuesta botes: aunque juegues con la mesa **tienes que enseñar tus dos cartas** para llevarte tu parte (==regla 75 del reglamento de torneos de la WSOP==, regla 19 de la TDA) — si las tiras al muck sin mostrarlas, no te llevas nada.
 
 **Q. ¿Puede la mesa ser la mejor mano para todos?**
 
@@ -260,7 +262,7 @@ A. Sí. Si la propia mesa es la mejor mano de 5 cartas y las cartas de ningún j
 
 **Q. ¿Se puede tener un color y una pareja a la vez?**
 
-A. Puedes formar ambos con tus 7 cartas, pero una mano de póker son exactamente 5 cartas — así que juegas solo la más fuerte. Como el color supera a la pareja, el color es tu mano y la pareja se ignora. La misma regla aplica a una escalera más una pareja: canta la escalera.
+A. Puedes formar ambos con tus 7 cartas, pero una mano de póker son exactamente 5 cartas — así que juegas solo la más fuerte. Como el color supera a la pareja, el color es tu mano y la pareja se ignora. La misma regla aplica a una escalera más una pareja: la escalera es tu mano. No necesitas cantar nada — en el showdown las cartas hablan y el dealer lee la mano —, pero sigues teniendo que enseñar las dos cartas boca arriba, y si la lectura es errónea, dilo.
 
 **Q. ¿Se puede usar un As en una escalera?**
 

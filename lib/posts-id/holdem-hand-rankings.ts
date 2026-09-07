@@ -8,9 +8,9 @@ export const POST: Post = {
   tldr: "Urutan kartu poker dari tertinggi sampai terendah: Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, Pair, dan High Card. As adalah kartu tertinggi; simbol (sekop, hati) tidak punya peringkat.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-08-27",
+  updated: "2026-09-07",
 
-  masterUpdated: "2026-08-12",
+  masterUpdated: "2026-09-07",
   image: "/images/holdem-hand-rankings-hero.webp",
   imageAlt: "Royal Flush — 10 J Q K A sekop di meja poker dengan tumpukan chip dan tombol dealer",
   keepImagesInBody: true,
@@ -33,7 +33,7 @@ Mulai dari sini. Inilah urutan kartu poker lengkap — susunan (kombinasi) dari 
 | # | Tangan | Disebut juga | Apa itu | Peluang (hingga river) |
 |------|------|------|------|------|
 | **1** | Royal Flush | "Royal" | A-K-Q-J-10 satu jenis | 0,0032% |
-| **2** | Straight Flush | "Steel wheel" (A-5) | 5 berurutan, satu jenis | 0,0279% |
+| **2** | Straight Flush | "Steel wheel" (hanya A-5) | 5 berurutan, satu jenis | 0,0279% |
 | **3** | Four of a Kind | "Quads" | Empat kartu bernilai sama | 0,168% |
 | **4** | Full House | "Full" | Three of a kind + pair | 2,60% |
 | **5** | Flush | — | 5 kartu satu jenis | 3,03% |
@@ -176,7 +176,7 @@ Inilah bagian yang menentukan pot sungguhan — dan yang sering dilewati banyak 
 Lencana di sebelah kanan menunjukkan apakah **kicker dipakai untuk menentukan tangan**.
 
 :::tiebreak
-Royal Flush|Selalu seri (pot dibagi)|-Tanpa kicker
+Royal Flush|Seri hanya jika board itu sendiri royal flush — semua berbagi pot|-Tanpa kicker
 Straight Flush|Hanya kartu tertinggi|-Tanpa kicker
 Four of a Kind|Nilai quad → kartu ke-5|+Pakai kicker
 Full House|Nilai trio → pasangan|-Tanpa kicker

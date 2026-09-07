@@ -8,9 +8,9 @@ export const POST: Post = {
   tldr: "Poker el sıralaması en güçlüden en zayıfa şöyledir: Royal Flush, Straight Flush, Four of a Kind (Kare), Full House, Flush, Straight (Kent), Three of a Kind (Üçlü), Two Pair (İki Çift), Pair (Çift) ve High Card (Yüksek Kart).",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-08-12",
+  updated: "2026-09-07",
 
-  masterUpdated: "2026-08-12",
+  masterUpdated: "2026-09-07",
   keepImagesInBody: true,
   readTime: "14 dk",
   emoji: "🃏",
@@ -31,7 +31,7 @@ Buradan başla. İşte Texas Hold'em'de her eli river'a kadar yapma olasılığ�
 | # | El | Diğer adı | Nedir | Olasılık (river'a kadar) |
 |------|------|------|------|------|
 | **1** | Royal Flush | "Royal" | Aynı türden A-K-Q-J-10 | %0,0032 |
-| **2** | Straight Flush | "Steel wheel" (A-5) | Aynı türden 5 ardışık | %0,0279 |
+| **2** | Straight Flush | "Steel wheel" (yalnız A-5) | Aynı türden 5 ardışık | %0,0279 |
 | **3** | Four of a Kind (Kare) | "Quads" | Aynı değerden dört kart | %0,168 |
 | **4** | Full House | "Full" | Üçlü + çift | %2,60 |
 | **5** | Flush | — | Aynı türden 5 kart | %3,03 |
@@ -174,7 +174,7 @@ Gerçek potları belirleyen kısım budur — ve çoğu tablonun atladığı kı
 Sağdaki rozet, **kicker'ın eli belirlemekte kullanılıp kullanılmadığını** gösterir.
 
 :::tiebreak
-Royal Flush|Her zaman beraberlik (pot bölünür)|-Kicker yok
+Royal Flush|Beraberlik yalnızca royal flush'ın tamamı masadayken olur — herkes bölüşür|-Kicker yok
 Straight Flush|Yalnızca en yüksek kart|-Kicker yok
 Kare|Karenin değeri → 5. kart|+Kicker geçerli
 Full House|Üçlünün değeri → çiftin|-Kicker yok

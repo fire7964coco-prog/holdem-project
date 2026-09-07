@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Yes — poker hands can tie. A pot is split (a chop) when two or more players show down the identical best five-card hand. Suits never break the tie, and any leftover odd chip goes to the first tied player left of the dealer button.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-06",
+  updated: "2026-09-07",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🃏",
@@ -90,7 +90,7 @@ That's my 8-8-8-A-K hand: my J-10 and his 5-2 both played the board's trip eight
 
 **And the part that matters most at the table: your hand only wins if you turn it face up.** A mucked hand is dead even when it would have chopped — when you're playing the board you must still show your hole cards face up, or you forfeit your share of the pot (WSOP live-action Rule 172; the WSOP tournament rules repeat it in Rule 75). Who shows first and how the sequence runs is covered in the [showdown rules](/en/blog/holdem-showdown-rules).
 
-:::tip[If the board plays and someone bets the river, **folding on autopilot is the mistake**. When nothing can beat the board the chop is certain, and calling still brings back half of everything that was already in the pot — folding hands that half away for free. When the board *can* be beaten, run the frequency: against a pot-size bet you need your opponent to be playing the board too about 2 times in 3; against a half-pot bet, about half the time. That is a high bar: against a pot-size bet, folding is right as soon as they have a real hand more than **one time in three** — and on a river where the board can still be beaten, that is the normal case.]:::
+:::tip[If the board plays and someone bets the river, **folding on autopilot is the mistake**. When nothing can beat the board the chop is certain, and calling still brings back half of everything that was already in the pot — folding hands that half away for free. When the board *can* be beaten, run the frequency: heads-up, against a pot-size bet you need your opponent to be playing the board too about 2 times in 3; against a half-pot bet, about half the time (the numbers assume heads-up — with more players still in, your share of a chop shrinks and the bar rises). That is a high bar: against a pot-size bet, folding is right as soon as they have a real hand more than **one time in three** — and on a river where the board can still be beaten, that is the normal case.]:::
 
 ---
 
@@ -113,9 +113,9 @@ Board 9♠ 8♦ 7♣ 6♥ 5♠ — a made straight. You hold A♠ K♦; your opp
 
 ## Who Gets the Extra Chip? The Odd Chip Rule
 
-Sometimes a pot won't divide evenly — a 101-chip pot between two players is 50 each with one chip left over, and there are no half-chips. The standard rule:
+Sometimes a pot won't divide evenly — a 101-chip pot between two players is 50 each with one chip left over, and there are no half-chips. Before that last chip is pushed to anyone, the dealer breaks it down into the smallest denomination in play (TDA Rule 20): if 5s are the smallest chips on the table, a lone 25 becomes five 5s, which divide again, and only the chip that still won't divide is the "odd chip." Then the standard rule:
 
-> ==The leftover odd chip goes to the first tied player **left of the dealer button**== (the earliest winning seat clockwise from the dealer).
+> ==The leftover odd chip goes to the first tied player **left of the dealer button**== (the earliest winning seat clockwise from the button).
 
 In a three-way split with two odd chips, the two earliest seats clockwise each get one. ==r:House rules can vary== — a few card rooms award the odd chip by high card or suit instead — so if real money rides on it, ask the floor. ==g:Online, the software assigns it automatically by position.==
 
@@ -160,7 +160,7 @@ A. A pot is split when two or more players have the identical best five-card han
 
 **Q. How is the pot split in poker?**
 
-A. The dealer divides the chips equally among the tied players. If the pot can't divide evenly, the leftover odd chip goes to the first tied player left of the dealer button. Suits never affect the split, and when a player is all-in each main and side pot is divided separately.
+A. The dealer divides the chips equally among the tied players. If the pot can't divide evenly, the leftover is first broken into the smallest denomination in play, and the last odd chip goes to the first tied player left of the dealer button. Suits never affect the split, and when a player is all-in each main and side pot is divided separately.
 
 **Q. Do you split the pot if both players have the same hand?**
 

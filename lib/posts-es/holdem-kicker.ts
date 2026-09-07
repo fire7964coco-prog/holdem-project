@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "El kicker es la carta lateral más alta que no forma parte de tu mano hecha — rompe el empate cuando dos jugadores comparten el mismo valor. La pareja usa 3 kickers, la doble pareja 1, el trío 2; escaleras, colores y fulls no tienen ninguno. Es la razón por la que AK gana a AQ cuando la mesa empareja un as.",
   category: "hand-rankings",
   date: "2026-07-08",
-  updated: "2026-07-24",
-  masterUpdated: "2026-08-26",
+  updated: "2026-09-07",
+  masterUpdated: "2026-09-07",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -107,14 +107,14 @@ Misma pareja, así que compara kickers de arriba abajo: tu ==g:K gana a su Q.== 
 
 ## Jugar la mesa: cuando tu kicker no cuenta
 
-**Si las cinco cartas comunitarias ya forman la mejor mano posible y tus cartas no pueden mejorarla, estás "jugando la mesa" — y no hay ningún kicker.** Todos los que siguen en la mano usan las cinco cartas idénticas, así que el bote se divide.
+**Si las cinco cartas comunitarias ya forman la mejor mano posible y tus cartas no pueden mejorarla, estás "jugando la mesa" — y no hay ningún kicker.** Todos los que tampoco pueden mejorarla usan las cinco cartas idénticas — y si nadie puede, el bote se divide.
 
 La mesa es ==b:10♠ J♦ Q♣ K♥ A♠== — una escalera del diez al as (Broadway), en palos mezclados, así que no hay color posible.
 
 - Tú tienes ==b:2♣ 3♦==. Tu mejor mano es la escalera de la mesa; el 2 y el 3 no añaden nada.
 - Tu rival tiene ==b:4♥ 5♦==. La misma historia — la escalera de la mesa también es su mejor mano.
 
-Ninguno de los dos puede subir por encima de un as, así que ambos "jugáis la mesa" y ==g:se divide el bote.== Una escalera no tiene kicker, así que esas cartas propias son peso muerto. Cuando oigas "la mesa juega", esto es — y es el único lugar donde una carta propia de aspecto fuerte vale exactamente nada. (Más sobre detectar estas mesas en [cómo leer la mesa](/es/blog/holdem-reading-the-board).)
+Ninguno de los dos puede subir por encima de un as, así que ambos "jugáis la mesa" y ==g:se divide el bote== — pero solo si enseñáis las cartas boca arriba; si las tiráis al muck, no os lleváis nada, ni siquiera aquí (regla 19 de la TDA). Una escalera no tiene kicker, así que esas cartas propias son peso muerto. Cuando oigas "la mesa juega", esto es — y es el único lugar donde una carta propia de aspecto fuerte vale exactamente nada. (Más sobre detectar estas mesas en [cómo leer la mesa](/es/blog/holdem-reading-the-board).)
 
 ---
 
@@ -174,7 +174,7 @@ A. Sí. El trío usa dos kickers, así que cuando dos jugadores hacen el mismo t
 
 **Q. ¿La doble pareja tiene kicker?**
 
-A. Sí — la doble pareja usa un kicker. Si tienes K-Q y tu rival tiene J-Q en una mesa Q-7-7, ambos tenéis reinas y sietes, pero tu rey de kicker supera a su jota. El kicker solo entra en juego cuando ambos jugadores tienen la doble pareja idéntica.
+A. Sí — la doble pareja usa un kicker. Si tienes K♥ Q♦ y tu rival tiene J♠ Q♥ en una mesa Q♣ 7♠ 7♦ 4♥ 2♣, ambos tenéis reinas y sietes, pero tu rey de kicker supera a su jota (Q-Q-7-7-K contra Q-Q-7-7-J). El kicker solo entra en juego cuando ambos jugadores tienen la doble pareja idéntica.
 
 **Q. ¿El kicker tiene que estar en tu mano?**
 
@@ -194,7 +194,7 @@ A. Un kicker de as significa que tu carta lateral más alta es un as — el kick
 
 **Q. ¿Qué significa "jugar la mesa"?**
 
-A. Jugar la mesa significa que las cinco cartas comunitarias son tu mejor mano y tus cartas propias no pueden mejorarla. Como todos usan las mismas cinco cartas, el bote se divide. No hay kicker porque la mesa ya forma una mano completa de cinco cartas.
+A. Jugar la mesa significa que las cinco cartas comunitarias son tu mejor mano y tus cartas propias no pueden mejorarla. Si nadie puede mejorar la mesa, todos usan las mismas cinco cartas y el bote se divide. No hay kicker porque la mesa ya forma una mano completa de cinco cartas.
 
 **Q. ¿Importan los kickers en el Texas Hold'em?**
 

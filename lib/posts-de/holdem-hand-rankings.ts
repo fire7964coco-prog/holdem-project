@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Die Reihenfolge der Pokerhände von der besten zur schlechtesten lautet: Royal Flush, Straight Flush, Vierling, Full House, Flush, Straße, Drilling, Zwei Paare, Paar und High Card.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-08-17",
-  masterUpdated: "2026-08-12",
+  updated: "2026-09-07",
+  masterUpdated: "2026-09-07",
   keepImagesInBody: true,
   readTime: "14 Min.",
   emoji: "🃏",
@@ -46,8 +46,8 @@ Fang hier an. Diese **Wertetabelle** zeigt alle zehn **Poker-Kombinationen** in 
 
 | # | Hand | Auch genannt | Was es ist | Wahrscheinlichkeit (bis River) |
 |:---|:---|:---|:---|:---:|
-| **1** | Royal Flush | „Broadway-Flush“ | A-K-Q-J-10 in einer Farbe | 0,0032% |
-| **2** | Straight Flush | „Steel Wheel“ (A-5) | 5 in Folge, eine Farbe | 0,0279% |
+| **1** | Royal Flush | „Royal“ (der Ass-hohe Straight Flush) | A-K-Q-J-10 in einer Farbe | 0,0032% |
+| **2** | Straight Flush | nur A-5: „Steel Wheel“ | 5 in Folge, eine Farbe | 0,0279% |
 | **3** | Vierling | „Quads“ / „Poker“ | Vier Karten gleichen Werts | 0,168% |
 | **4** | Full House | „Boat“ / „Full Boat“ | Drilling + Paar | 2,60% |
 | **5** | Flush | – | Beliebige 5 einer Farbe | 3,03% |

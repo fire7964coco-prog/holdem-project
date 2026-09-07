@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In Texas Hold'em you always play the best 5-card hand from 7 (2 hole cards + 5 community cards) — using both hole cards, one, or none at all (playing the board). Scan all 7 cards in a fixed order: flush → straight → paired ranks → high card.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-08-11",
+  updated: "2026-09-07",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🃏",
@@ -47,11 +47,13 @@ The first time a dealer read my hand better than I did, I was tabling what I tho
 
 In Texas Hold'em you are dealt 2 hole cards, and the board eventually shows 5 community cards. Out of those 7, ==you play exactly 5 — the strongest 5 available==. There are only three ways it can go:
 
-| How many hole cards you use | What it looks like | How common |
+| How many hole cards you use | What it looks like | Of the 21 possible 5-card picks |
 |------|------|------|
 | **Both** | Your two cards connect with three board cards | 10 of the 21 ways |
 | **One** | One card pairs or completes something; the other sits out | 10 of the 21 ways |
 | **None ("playing the board")** | The 5 community cards are already your best 5 | 1 of the 21 ways |
+
+Those are counts of the 21 possible five-card picks from 7 cards (7 choose 5), not how often each case comes up at the table.
 
 Three quick examples, fully worked out:
 
@@ -169,7 +171,7 @@ Notice the last row: ==even with nothing, the board's pair is part of your hand=
 You can HOLD both — you can never PLAY both. ==A poker hand is exactly 5 cards, so overlapping combinations don't stack; you simply play the stronger one.==
 
 - You hold A♠ K♠ on Q♠ 7♠ 2♠ K♦ 3♣. You've made a pair of kings AND five spades. Your hand is the ==nut flush, A♠ K♠ Q♠ 7♠ 2♠== — the pair of kings simply never comes up.
-- You hold 8♥ 8♦ on 7♣ 6♦ 5♠ 4♥ K♦. Pair of eights AND 8-7-6-5-4. Your hand is the ==eight-high straight== — announce that, not "a pair with a straight."
+- You hold 8♥ 8♦ on 7♣ 6♦ 5♠ 4♥ K♦. Pair of eights AND 8-7-6-5-4. Your hand is the ==eight-high straight== — not "a pair with a straight." At showdown you don't have to call it: cards speak, and the dealer reads the hand (TDA Rule 12). What you do have to do is turn both cards face up — cards only speak for a properly tabled hand (Rule 13-A) — and if the dealer misreads it, say so before the pot is pushed.
 
 Same logic answers "can you have three pairs?" — you might hold three paired ranks across 7 cards, but only the best two fit into 5 cards (covered in the [hand rankings guide](/en/blog/holdem-hand-rankings)).
 
@@ -243,7 +245,7 @@ A. No. You make the best five-card hand from any combination of your two hole ca
 
 **Q. What does "playing the board" mean in Texas Hold'em?**
 
-A. It means the 5 community cards are already your best possible 5-card hand — neither hole card improves on them. Since the board is shared, every player can claim that same hand, so playing the board usually leads to a split pot unless an opponent's hole cards improve on the board. One formality still costs people pots: even when you play the board you **must table both hole cards** to claim a share (==WSOP Rule 75==, TDA Rule 19) — push them into the muck unseen and you get nothing.
+A. It means the 5 community cards are already your best possible 5-card hand — neither hole card improves on them. Since the board is shared, every player can claim that same hand, so playing the board usually leads to a split pot unless an opponent's hole cards improve on the board. One formality still costs people pots: even when you play the board you **must table both hole cards** to claim a share (==WSOP tournament Rule 75==, TDA Rule 19) — push them into the muck unseen and you get nothing.
 
 **Q. Can the board be the best hand for everyone?**
 
@@ -251,7 +253,7 @@ A. Yes. If the board itself is the best 5-card hand and no player's hole cards i
 
 **Q. Can you have a flush and a pair at the same time?**
 
-A. You can make both from your 7 cards, but a poker hand is exactly 5 cards — so you play only the stronger one. Since a flush outranks a pair, the flush is your hand and the pair is ignored. The same rule applies to a straight plus a pair: announce the straight.
+A. You can make both from your 7 cards, but a poker hand is exactly 5 cards — so you play only the stronger one. Since a flush outranks a pair, the flush is your hand and the pair is ignored. The same rule applies to a straight plus a pair: the straight is your hand. You don't need to announce anything — cards speak at showdown, and the dealer reads the hand — but you must still table both hole cards face up, and you should speak up if the read is wrong.
 
 **Q. Can you use an ace in a straight?**
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "O kicker é a carta lateral mais alta que não faz parte da sua mão feita — ele desempata quando dois jogadores têm o mesmo valor. Um par usa 3 kickers, dois pares 1, a trinca 2; sequências, flushes e full houses não têm nenhum. É por isso que AK ganha de AQ quando a mesa pareia um ás.",
   category: "hand-rankings",
   date: "2026-07-08",
-  updated: "2026-09-04",
-  masterUpdated: "2026-08-26",
+  updated: "2026-09-07",
+  masterUpdated: "2026-09-07",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -114,7 +114,7 @@ O board é ==b:10♠ J♦ Q♣ K♥ A♠== — uma sequência feita de dez a ás
 - Você tem ==b:2♣ 3♦==. Suas melhores cinco são a sequência da mesa; o 2 e o 3 não somam nada.
 - Seu adversário tem ==b:4♥ 5♦==. Mesma história — a sequência da mesa também é a melhor cinco dele.
 
-Nenhum de vocês consegue passar do ás, então os dois "jogam a mesa" e ==g:dividem o pote.== Uma sequência não tem kicker, então essas cartas de mão são peso morto. Quando você ouve "a mesa joga", é isto — e é o único ponto em que uma carta de mão de aparência forte não vale absolutamente nada. (Mais sobre identificar esses runouts em [ler a mesa](/pt/blog/holdem-reading-the-board).)
+Nenhum de vocês consegue passar do ás, então os dois "jogam a mesa" e ==g:dividem o pote== — mas só se virarem as cartas para cima; quem joga no muck não leva nada, nem aqui (Regra 19 da TDA). Uma sequência não tem kicker, então essas cartas de mão são peso morto. Quando você ouve "a mesa joga", é isto — e é o único ponto em que uma carta de mão de aparência forte não vale absolutamente nada. (Mais sobre identificar esses runouts em [ler a mesa](/pt/blog/holdem-reading-the-board).)
 
 ---
 
@@ -174,7 +174,7 @@ A. Sim. A trinca usa dois kickers, então quando dois jogadores fazem a mesma tr
 
 **Q. Dois pares têm kicker?**
 
-A. Sim — dois pares usam um kicker. Se você tem K-Q e seu adversário tem J-Q num board Q-7-7, os dois fazem damas e setes, mas seu kicker rei ganha do valete dele. O kicker só entra em jogo quando ambos têm exatamente os mesmos dois pares.
+A. Sim — dois pares usam um kicker. Se você tem K♥ Q♦ e seu adversário tem J♠ Q♥ num board Q♣ 7♠ 7♦ 4♥ 2♣, os dois fazem damas e setes, mas seu kicker rei ganha do valete dele (Q-Q-7-7-K contra Q-Q-7-7-J). O kicker só entra em jogo quando ambos têm exatamente os mesmos dois pares.
 
 **Q. O kicker precisa estar na sua mão?**
 

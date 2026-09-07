@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ja – Pokerhände können unentschieden sein. Ein Pot wird geteilt (ein Chop), wenn zwei oder mehr Spieler im Showdown die identische beste Fünf-Karten-Hand zeigen. Die Farbe entscheidet nie, und ein übrig gebliebener Odd Chip geht an den ersten am Chop beteiligten Spieler links vom Dealer-Button.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-06",
-  masterUpdated: "2026-09-06",
+  updated: "2026-09-07",
+  masterUpdated: "2026-09-07",
   keepImagesInBody: true,
   readTime: "12 Min.",
   emoji: "🃏",
@@ -91,7 +91,7 @@ Das ist meine 8-8-8-A-K-Hand: meine J-10 und seine 5-2 spielten beide den Drilli
 
 **Und das Wichtigste am Tisch: Deine Hand gewinnt nur, wenn du sie aufdeckst.** Eine gemuckte Hand ist tot, auch wenn sie den Pot geteilt hätte – auch wenn du nur das Board spielst, musst du deine Hole Cards offen hinlegen, sonst verlierst du deinen Anteil am Pot (WSOP-Cashgame-Regeln, Rule 172; die WSOP-Turnierregeln wiederholen es in Rule 75). Wer zuerst zeigen muss und wie der Ablauf genau läuft, steht in den [Showdown-Regeln](/de/blog/holdem-showdown-rules).
 
-:::tip[Wenn das Board spielt und jemand am River bettet: **automatisch zu folden ist hier falsch.** Die Chips im Pot gehören dir nicht mehr – ein Call, der sicher zum Chop führt, holt dir trotzdem die halbe Pot-Größe zurück. Kann das Board dagegen geschlagen werden, rechne mit der Frequenz: Bei einer Pot-Size-Bet lohnt der Call, wenn dein Gegner in etwa 2 von 3 Fällen ebenfalls nur das Board spielt, bei einer halben Pot-Bet reicht rund die Hälfte. Das ist eine hohe Hürde: Hat dein Gegner bei einer Pot-Size-Bet öfter als in **einem Drittel** der Fälle eine echte Hand, ist Folden richtig – und auf einem River, auf dem das Board noch geschlagen werden kann, ist genau das der Normalfall.]:::
+:::tip[Wenn das Board spielt und jemand am River bettet: **automatisch zu folden ist hier falsch.** Die Chips im Pot gehören dir nicht mehr – ein Call, der sicher zum Chop führt, holt dir trotzdem die halbe Pot-Größe zurück. Kann das Board dagegen geschlagen werden, rechne mit der Frequenz: Heads-up lohnt der Call bei einer Pot-Size-Bet, wenn dein Gegner in etwa 2 von 3 Fällen ebenfalls nur das Board spielt, bei einer halben Pot-Bet reicht rund die Hälfte (sind noch drei oder mehr Spieler dabei, schrumpft dein Anteil am Chop und die Hürde steigt). Das ist eine hohe Hürde: Hat dein Gegner bei einer Pot-Size-Bet öfter als in **einem Drittel** der Fälle eine echte Hand, ist Folden richtig – und auf einem River, auf dem das Board noch geschlagen werden kann, ist genau das der Normalfall.]:::
 
 ---
 
@@ -114,9 +114,9 @@ Board 9♠ 8♦ 7♣ 6♥ 5♠ – eine fertige Straße. Du hältst A♠ K♦; d
 
 ## Wer bekommt den zusätzlichen Chip? Die Odd-Chip-Regel
 
-Manchmal lässt sich ein Pot nicht gleichmäßig teilen – ein Pot aus 101 Chips zwischen zwei Spielern sind 50 pro Person mit einem Chip Rest, und halbe Chips gibt es nicht. Die Standardregel:
+Manchmal lässt sich ein Pot nicht gleichmäßig teilen – ein Pot aus 101 Chips zwischen zwei Spielern sind 50 pro Person mit einem Chip Rest, und halbe Chips gibt es nicht. Bevor dieser letzte Chip jemandem zugeschoben wird, wechselt ihn der Dealer in die kleinste im Spiel befindliche Chip-Einheit (TDA-Regel 20): Sind 5er die kleinsten Chips am Tisch, wird ein einzelner 25er zu fünf 5ern, die erneut geteilt werden – nur der Chip, der sich dann immer noch nicht teilen lässt, ist der „Odd Chip“. Dann gilt die Standardregel:
 
-> ==Der übrig gebliebene Odd Chip geht an den ersten am Chop beteiligten Spieler **links vom Dealer-Button**== (der früheste gewinnende Sitz im Uhrzeigersinn vom Dealer aus).
+> ==Der übrig gebliebene Odd Chip geht an den ersten am Chop beteiligten Spieler **links vom Dealer-Button**== (der früheste gewinnende Sitz im Uhrzeigersinn vom Button aus).
 
 Bei einem Three-Way-Chop mit zwei Odd Chips bekommen die zwei frühesten Sitze im Uhrzeigersinn je einen. ==r:Hausregeln können abweichen== – einige Card Rooms vergeben den Odd Chip stattdessen über die höchste Karte oder die Farbe – wenn also echtes Geld auf dem Spiel steht, frag den Floor. ==g:Online weist die Software ihn automatisch nach Position zu.==
 
@@ -165,7 +165,7 @@ A. Nur, wenn die vollständigen besten Fünf unentschieden sind – dasselbe Paa
 
 **Q. Wie teilt der Dealer den Pot konkret auf?**
 
-A. Er stapelt die Chips und gibt jedem am Chop beteiligten Spieler denselben Anteil. Geht die Teilung nicht glatt auf, wandert der übrige Odd Chip an den ersten am Chop beteiligten Sitz links vom Button. Die Farbe spielt dabei keine Rolle, und wenn jemand All-in ist, wird jeder Pot – Haupt- wie Nebenpot – für sich abgerechnet.
+A. Er stapelt die Chips und gibt jedem am Chop beteiligten Spieler denselben Anteil. Geht die Teilung nicht glatt auf, wird der Rest zuerst in die kleinste im Spiel befindliche Chip-Einheit gewechselt, und der letzte Odd Chip wandert an den ersten am Chop beteiligten Sitz links vom Button. Die Farbe spielt dabei keine Rolle, und wenn jemand All-in ist, wird jeder Pot – Haupt- wie Nebenpot – für sich abgerechnet.
 
 **Q. Wird bei Full House, Straße oder Zwei Paaren geteilt?**
 

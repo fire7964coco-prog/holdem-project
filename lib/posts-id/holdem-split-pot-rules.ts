@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ya — tangan poker bisa seri. Pot dibagi (split pot) ketika dua pemain atau lebih menunjukkan lima kartu terbaik yang identik saat showdown. Jenis kartu tak pernah memecah seri, dan sisa odd chip diberikan kepada pemain seri pertama di kiri tombol dealer.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-06",
-  masterUpdated: "2026-09-06",
+  updated: "2026-09-07",
+  masterUpdated: "2026-09-07",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "🃏",
@@ -91,7 +91,7 @@ Itulah tangan 8-8-8-A-K saya: J-10 saya dan 5-2 lawan sama-sama main trips 8 mil
 
 **Dan bagian yang paling penting di meja: tangan Anda baru menang kalau Anda membukanya menghadap ke atas.** Tangan yang di-muck itu mati bahkan ketika ia seharusnya chop — saat Anda memainkan board pun Anda tetap harus menunjukkan kartu tertutup Anda menghadap ke atas, atau Anda kehilangan bagian Anda dari pot (WSOP Rule 172 untuk live action; aturan turnamen WSOP mengulanginya di Rule 75). Siapa yang menunjukkan lebih dulu dan bagaimana urutannya berjalan dibahas di [aturan showdown](/id/blog/holdem-showdown-rules).
 
-:::tip[Jika board yang main dan seseorang bet di river, **fold secara refleks justru kesalahannya**. Kalau tidak ada tangan yang bisa mengalahkan board, seri sudah pasti, dan call tetap mengembalikan setengah dari semua chip yang sudah ada di pot — fold berarti menyerahkan setengah itu cuma-cuma. Kalau board masih bisa dikalahkan, hitung frekuensinya: melawan bet sebesar pot, Anda butuh lawan juga sekadar memainkan board sekitar 2 dari 3 kali; melawan setengah pot, sekitar separuh waktu. Itu ambang yang tinggi: melawan bet sebesar pot, fold sudah benar begitu dia punya tangan sungguhan lebih dari **satu dari tiga kali** — dan di river yang board-nya masih bisa dikalahkan, itulah keadaan normalnya.]:::
+:::tip[Jika board yang main dan seseorang bet di river, **fold secara refleks justru kesalahannya**. Kalau tidak ada tangan yang bisa mengalahkan board, seri sudah pasti, dan call tetap mengembalikan setengah dari semua chip yang sudah ada di pot — fold berarti menyerahkan setengah itu cuma-cuma. Kalau board masih bisa dikalahkan, hitung frekuensinya: heads-up, melawan bet sebesar pot, Anda butuh lawan juga sekadar memainkan board sekitar 2 dari 3 kali; melawan setengah pot, sekitar separuh waktu (dengan tiga pemain atau lebih yang masih bertahan, bagian Anda dari pot seri mengecil sehingga ambangnya naik). Itu ambang yang tinggi: melawan bet sebesar pot, fold sudah benar begitu dia punya tangan sungguhan lebih dari **satu dari tiga kali** — dan di river yang board-nya masih bisa dikalahkan, itulah keadaan normalnya.]:::
 
 ---
 
@@ -114,9 +114,9 @@ Board 9♠ 8♦ 7♣ 6♥ 5♠ — sebuah straight jadi. Anda pegang A♠ K♦; 
 
 ## Siapa yang Dapat Chip Ekstra? Aturan Odd Chip
 
-Kadang sebuah pot tak bisa dibagi rata — pot 101 chip antara dua pemain adalah 50 masing-masing dengan satu chip tersisa, dan tak ada setengah-chip. Aturan standarnya:
+Kadang sebuah pot tak bisa dibagi rata — pot 101 chip antara dua pemain adalah 50 masing-masing dengan satu chip tersisa, dan tak ada setengah-chip. Sebelum chip terakhir itu diberikan ke siapa pun, dealer memecahnya ke denominasi chip terkecil yang dipakai (Aturan TDA 20): kalau chip 5 adalah yang terkecil di meja, satu chip 25 menjadi lima chip 5 yang dibagi lagi, dan hanya chip yang tetap tak bisa dibagi yang menjadi "odd chip". Setelah itu, aturan standarnya:
 
-> ==Sisa odd chip diberikan kepada pemain seri pertama **di kiri tombol dealer**== (kursi menang paling awal searah jarum jam dari dealer).
+> ==Sisa odd chip diberikan kepada pemain seri pertama **di kiri tombol dealer**== (kursi menang paling awal searah jarum jam dari tombol).
 
 Dalam split tiga arah dengan dua odd chip, dua kursi paling awal searah jarum jam masing-masing dapat satu. ==r:Aturan rumah bisa berbeda== — beberapa card room memberikan odd chip berdasarkan kartu tinggi atau jenis — jadi jika uang sungguhan dipertaruhkan, tanyakan ke floor. ==g:Online, software menugaskannya otomatis berdasarkan posisi.==
 

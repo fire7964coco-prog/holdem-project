@@ -8,9 +8,9 @@ export const POST: Post = {
   tldr: "Thứ hạng các tay bài poker từ mạnh nhất đến yếu nhất là: Thùng Phá Sảnh Hoàng Gia, Thùng Phá Sảnh, Tứ Quý, Cù Lũ, Thùng, Sảnh, Sám Cô, Hai Đôi, Một Đôi, và Mậu Thầu.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-08-12",
+  updated: "2026-09-07",
 
-  masterUpdated: "2026-08-12",
+  masterUpdated: "2026-09-07",
   keepImagesInBody: true,
   readTime: "14 phút",
   emoji: "🃏",
@@ -31,7 +31,7 @@ Bắt đầu từ đây. Đây là toàn bộ thứ hạng, từ mạnh nhất �
 | # | Tay bài | Còn gọi là | Là gì | Xác suất (đến river) |
 |------|------|------|------|------|
 | **1** | Thùng Phá Sảnh Hoàng Gia | "Royal Flush" | A-K-Q-J-10 cùng chất | 0,0032% |
-| **2** | Thùng Phá Sảnh | "Steel wheel" (A-5) | 5 lá liên tiếp, cùng chất | 0,0279% |
+| **2** | Thùng Phá Sảnh | "Steel wheel" (chỉ A-5) | 5 lá liên tiếp, cùng chất | 0,0279% |
 | **3** | Tứ Quý | "Four of a kind" | Bốn lá cùng giá trị | 0,168% |
 | **4** | Cù Lũ | "Full house" | Sám Cô + một đôi | 2,60% |
 | **5** | Thùng | "Flush" | 5 lá cùng chất | 3,03% |
@@ -174,7 +174,7 @@ Khi lật bài, lá cao nhất thắng, rồi đến lá tiếp theo, và cứ t
 Huy hiệu bên phải cho biết **kicker có được dùng để định đoạt tay bài hay không**.
 
 :::tiebreak
-Thùng Phá Sảnh Hoàng Gia|Luôn hòa (chia pot)|-Không kicker
+Thùng Phá Sảnh Hoàng Gia|Chỉ hòa khi chính bàn là thùng phá sảnh hoàng gia — mọi người chia pot|-Không kicker
 Thùng Phá Sảnh|Chỉ lá cao nhất|-Không kicker
 Tứ Quý|Giá trị tứ quý → lá thứ 5|+Dùng kicker
 Cù Lũ|Giá trị sám → đôi|-Không kicker

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Di Texas Hold'em Anda selalu memainkan tangan 5-kartu terbaik dari 7 (2 kartu tertutup + 5 kartu komunitas) — memakai kedua kartu tertutup, satu, atau tak satu pun (main dengan board). Pindai ketujuh kartu dengan urutan tetap: flush → straight → nilai berpasangan → kartu tinggi.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-08-27",
-  masterUpdated: "2026-08-11",
+  updated: "2026-09-07",
+  masterUpdated: "2026-09-07",
   keepImagesInBody: true,
   readTime: "11 mnt",
   emoji: "🃏",
@@ -48,11 +48,13 @@ Pertama kali seorang dealer membaca tangan saya lebih baik daripada saya sendiri
 
 Di Texas Hold'em Anda dibagikan 2 kartu tertutup, dan board akhirnya menampilkan 5 kartu komunitas. Dari ketujuh kartu itu, ==Anda memainkan tepat 5 — 5 terkuat yang tersedia==. Hanya ada tiga kemungkinan:
 
-| Berapa kartu tertutup yang Anda pakai | Bentuknya | Seberapa umum |
+| Berapa kartu tertutup yang Anda pakai | Bentuknya | Dari 21 kombinasi 5 kartu yang mungkin |
 |------|------|------|
 | **Keduanya** | Dua kartu Anda nyambung dengan tiga kartu board | 10 dari 21 cara |
 | **Satu** | Satu kartu berpasangan atau melengkapi sesuatu; yang lain tak terpakai | 10 dari 21 cara |
 | **Tak satu pun ("main dengan board")** | 5 kartu komunitas sudah jadi 5 terbaik Anda | 1 dari 21 cara |
+
+Itu hitungan dari 21 kombinasi 5 kartu yang mungkin dari 7 kartu, bukan seberapa sering tiap kasus terjadi di meja.
 
 Tiga contoh cepat, dihitung tuntas:
 
@@ -170,7 +172,7 @@ Perhatikan baris terakhir: ==bahkan tanpa apa-apa, pasangan di board jadi bagian
 Anda bisa MEMEGANG keduanya — Anda tak pernah bisa MEMAINKAN keduanya. ==Sebuah tangan poker adalah tepat 5 kartu, jadi kombinasi yang tumpang tindih tidak menumpuk; Anda cukup memainkan yang lebih kuat.==
 
 - Anda memegang A♠ K♠ di Q♠ 7♠ 2♠ K♦ 3♣. Anda membentuk sepasang K DAN lima sekop. Tangan Anda adalah ==nut flush, A♠ K♠ Q♠ 7♠ 2♠== — sepasang K itu tak pernah muncul.
-- Anda memegang 8♥ 8♦ di 7♣ 6♦ 5♠ 4♥ K♦. Sepasang 8 DAN 8-7-6-5-4. Tangan Anda adalah ==straight eight high== — sebutkan itu, bukan "sepasang dengan straight."
+- Anda memegang 8♥ 8♦ di 7♣ 6♦ 5♠ 4♥ K♦. Sepasang 8 DAN 8-7-6-5-4. Tangan Anda adalah ==straight eight high== — bukan "sepasang dengan straight." Saat showdown Anda tak perlu menyebutnya: kartu yang berbicara, dan dealer yang membaca tangan (Aturan TDA 12). Yang harus Anda lakukan adalah membuka kedua kartu — kartu hanya berbicara untuk tangan yang dibuka dengan benar (Aturan 13-A) — dan kalau dealer salah membacanya, katakan sebelum pot didorong.
 
 Logika yang sama menjawab "bisakah punya three pair?" — Anda mungkin memegang tiga nilai berpasangan di antara 7 kartu, tapi hanya dua terbaik yang muat dalam 5 kartu (dibahas di [panduan peringkat tangan](/id/blog/holdem-hand-rankings)).
 
@@ -244,7 +246,7 @@ A. Tidak. Anda membentuk tangan lima-kartu terbaik dari kombinasi mana pun antar
 
 **Q. Apa arti "main dengan board" di Texas Hold'em?**
 
-A. Artinya 5 kartu komunitas sudah jadi tangan 5-kartu terbaik Anda — tak ada kartu tertutup yang memperbaikinya. Karena board itu bersama, setiap pemain bisa mengklaim tangan yang sama, jadi main dengan board biasanya berujung pada split pot kecuali kartu tertutup lawan memperbaiki board. Satu formalitas tetap memakan pot: sekalipun Anda main dengan board, Anda **wajib membuka kedua kartu tertutup** untuk mendapat bagian (==WSOP Rule 75==, TDA Rule 19) — kalau didorong ke muck tanpa dibuka, Anda tidak dapat apa-apa.
+A. Artinya 5 kartu komunitas sudah jadi tangan 5-kartu terbaik Anda — tak ada kartu tertutup yang memperbaikinya. Karena board itu bersama, setiap pemain bisa mengklaim tangan yang sama, jadi main dengan board biasanya berujung pada split pot kecuali kartu tertutup lawan memperbaiki board. Satu formalitas tetap memakan pot: sekalipun Anda main dengan board, Anda **wajib membuka kedua kartu tertutup** untuk mendapat bagian (==Aturan Turnamen WSOP 75==, TDA Rule 19) — kalau didorong ke muck tanpa dibuka, Anda tidak dapat apa-apa.
 
 **Q. Bisakah board jadi tangan terbaik untuk semua orang?**
 
@@ -252,7 +254,7 @@ A. Ya. Jika board itu sendiri adalah tangan 5-kartu terbaik dan tak ada kartu te
 
 **Q. Bisakah Anda punya flush dan pair sekaligus?**
 
-A. Anda bisa membentuk keduanya dari 7 kartu Anda, tapi tangan poker adalah tepat 5 kartu — jadi Anda hanya memainkan yang lebih kuat. Karena flush lebih tinggi dari pair, flush-lah tangan Anda dan pair diabaikan. Aturan yang sama berlaku untuk straight plus pair: sebutkan straight-nya.
+A. Anda bisa membentuk keduanya dari 7 kartu Anda, tapi tangan poker adalah tepat 5 kartu — jadi Anda hanya memainkan yang lebih kuat. Karena flush lebih tinggi dari pair, flush-lah tangan Anda dan pair diabaikan. Aturan yang sama berlaku untuk straight plus pair: straight-lah tangan Anda. Anda tak perlu mengumumkan apa pun — saat showdown kartu yang berbicara, dan dealer yang membaca tangan — tapi Anda tetap wajib membuka kedua kartu tertutup, dan kalau pembacaannya salah, katakan.
 
 **Q. Bisakah As dipakai dalam straight?**
 

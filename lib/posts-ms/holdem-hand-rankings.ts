@@ -8,9 +8,9 @@ export const POST: Post = {
   tldr: "Susunan tangan poker daripada terkuat ke terlemah ialah: Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, Pair, dan High Card.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-08-12",
+  updated: "2026-09-07",
 
-  masterUpdated: "2026-08-12",
+  masterUpdated: "2026-09-07",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🃏",
@@ -31,7 +31,7 @@ Mulakan di sini. Inilah keseluruhan susunan, daripada paling kuat ke paling lema
 | # | Tangan | Dikenali juga | Apa dia | Kebarangkalian (menjelang river) |
 |------|------|------|------|------|
 | **1** | Royal Flush | "Royal" | A-K-Q-J-10 sejenis | 0.0032% |
-| **2** | Straight Flush | "Steel wheel" (A-5) | 5 berturutan, sejenis | 0.0279% |
+| **2** | Straight Flush | "Steel wheel" (A-5 sahaja) | 5 berturutan, sejenis | 0.0279% |
 | **3** | Four of a Kind | "Quads" | Empat kad nilai sama | 0.168% |
 | **4** | Full House | "Full" | Three of a kind + pair | 2.60% |
 | **5** | Flush | — | 5 kad sejenis | 3.03% |
@@ -174,7 +174,7 @@ Inilah bahagian yang menentukan pot sebenar — dan yang sering dilangkau banyak
 Lencana di sebelah kanan menunjukkan sama ada **kicker digunakan untuk menentukan tangan**.
 
 :::tiebreak
-Royal Flush|Sentiasa seri (pot dibahagi)|-Tiada kicker
+Royal Flush|Seri hanya jika board itu sendiri royal flush — semua berkongsi pot|-Tiada kicker
 Straight Flush|Hanya kad tertinggi|-Tiada kicker
 Four of a Kind|Nilai quad → kad ke-5|+Guna kicker
 Full House|Nilai trio → pasangan|-Tiada kicker

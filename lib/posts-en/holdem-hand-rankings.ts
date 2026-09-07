@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Poker hand rankings from best to worst are: Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, One Pair, and High Card.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-08-12",
+  updated: "2026-09-07",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🃏",
@@ -32,8 +32,8 @@ From best to worst, the ten Texas Hold'em hands rank: Royal Flush, Straight Flus
 
 | # | Hand | Also called | What it is | Odds (by river) |
 |:---|:---|:---|:---|:---:|
-| **1** | Royal Flush | "Broadway flush" | A-K-Q-J-10, one suit | 0.0032% |
-| **2** | Straight Flush | "Steel wheel" (A-5) | 5 in sequence, one suit | 0.0279% |
+| **1** | Royal Flush | "Royal" (the ace-high straight flush) | A-K-Q-J-10, one suit | 0.0032% |
+| **2** | Straight Flush | A-5 only: "steel wheel" | 5 in sequence, one suit | 0.0279% |
 | **3** | Four of a Kind | "Quads" | Four cards of one rank | 0.168% |
 | **4** | Full House | "Boat" / "Full boat" | Three of a kind + a pair | 2.60% |
 | **5** | Flush | — | Any 5 of one suit | 3.03% |
@@ -182,7 +182,7 @@ When two players hold the same hand type, the winner is decided by comparing the
 The badge on the right shows whether a **kicker is used to decide the hand**.
 
 :::tiebreak
-Royal Flush|Always a tie (split pot)|-No kicker
+Royal Flush|Tie only when the board itself is the royal — everyone chops|-No kicker
 Straight Flush|Highest card only|-No kicker
 Four of a Kind|Quad rank → 5th card|+Kicker
 Full House|Trips rank → pair rank|-No kicker

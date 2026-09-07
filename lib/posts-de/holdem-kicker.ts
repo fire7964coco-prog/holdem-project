@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ein Kicker ist die höchste Beikarte, die nicht zu deiner eigentlichen Hand gehört – er bricht den Gleichstand, wenn zwei Spieler denselben Rang teilen. Ein Paar nutzt 3 Kicker, Zwei Paare 1, Drilling 2; Straße, Flush und Full House haben keinen. Deshalb schlägt AK das AQ, wenn das Board ein Ass pairt.",
   category: "hand-rankings",
   date: "2026-07-08",
-  updated: "2026-08-13",
+  updated: "2026-09-07",
   masterUpdated: "2026-07-18",
   keepImagesInBody: true,
   readTime: "10 Min.",
@@ -110,14 +110,14 @@ Dasselbe Paar, also vergleiche die Kicker von oben nach unten: dein ==g:K schlä
 
 ## Wann spielt dein Kicker gar nicht mit? Das Board spielen
 
-**Wenn die fünf Gemeinschaftskarten bereits die bestmögliche Hand bilden und deine Hole Cards sie nicht verbessern können, „spielst du das Board“ – und es gibt überhaupt keinen Kicker.** Alle, die noch in der Hand sind, nutzen die identischen fünf Karten, also wird der Pot geteilt.
+**Wenn die fünf Gemeinschaftskarten bereits die bestmögliche Hand bilden und deine Hole Cards sie nicht verbessern können, „spielst du das Board“ – und es gibt überhaupt keinen Kicker.** Alle, die es ebenfalls nicht verbessern können, nutzen die identischen fünf Karten – und wenn das niemand kann, wird der Pot geteilt.
 
 Das Board ist ==b:10♠ J♦ Q♣ K♥ A♠== – eine fertige Zehn-bis-Ass-Straße (Broadway), in gemischten Farben, sodass kein Flush möglich ist.
 
 - Du hältst ==b:2♣ 3♦==. Deine besten fünf sind die Board-Straße; die 2 und die 3 bringen nichts.
 - Dein Gegner hält ==b:4♥ 5♦==. Dieselbe Geschichte – die Board-Straße ist auch seine besten fünf.
 
-Keiner von euch kann höher als bis zum Ass gehen, also „spielt ihr beide das Board“ und ==g:teilt den Pot.== Eine Straße hat keinen Kicker, also sind diese Hole Cards totes Gewicht. Wenn du hörst „das Board spielt“, ist genau das gemeint – und es ist der eine Fall, in dem eine stark aussehende Hole Card exakt nichts wert ist. (Mehr zum Erkennen solcher Runouts in [das Board lesen](/de/blog/holdem-reading-the-board).)
+Keiner von euch kann höher als bis zum Ass gehen, also „spielt ihr beide das Board“ und ==g:teilt den Pot== – aber nur, wenn ihr eure Hole Cards aufdeckt; wer sie muckt, bekommt nichts, auch hier nicht (TDA-Regel 19). Eine Straße hat keinen Kicker, also sind diese Hole Cards totes Gewicht. Wenn du hörst „das Board spielt“, ist genau das gemeint – und es ist der eine Fall, in dem eine stark aussehende Hole Card exakt nichts wert ist. (Mehr zum Erkennen solcher Runouts in [das Board lesen](/de/blog/holdem-reading-the-board).)
 
 ---
 
@@ -177,7 +177,7 @@ A. Ja – ein Drilling nutzt zwei Kicker. Machen zwei Spieler denselben Drilling
 
 **Q. Haben Zwei Paare einen Kicker?**
 
-A. Ja, genau einen. Hältst du K-Q und dein Gegner J-Q auf einem Board mit Q-7-7, habt ihr beide Damen und Siebenen – dein König-Kicker schlägt seinen Buben. Der Kicker kommt aber erst ins Spiel, wenn beide Spieler dieselben zwei Paare halten.
+A. Ja, genau einen. Hältst du K♥ Q♦ und dein Gegner J♠ Q♥ auf einem Board mit Q♣ 7♠ 7♦ 4♥ 2♣, habt ihr beide Damen und Siebenen – dein König-Kicker schlägt seinen Buben (Q-Q-7-7-K gegen Q-Q-7-7-J). Der Kicker kommt aber erst ins Spiel, wenn beide Spieler dieselben zwei Paare halten.
 
 **Q. Muss der Kicker auf deiner eigenen Hand liegen?**
 
@@ -197,7 +197,7 @@ A. Ein hoher – ein Ass oder König als Kicker ist stark, während ein niedrige
 
 **Q. Was bedeutet „das Board spielen“?**
 
-A. Das Board spielen bedeutet, dass die fünf Gemeinschaftskarten deine beste Hand sind und deine Hole Cards sie nicht verbessern können. Da alle dieselben fünf Karten nutzen, wird der Pot geteilt. Es gibt keinen Kicker, weil das Board bereits eine vollständige Fünf-Karten-Hand bildet.
+A. Das Board spielen bedeutet, dass die fünf Gemeinschaftskarten deine beste Hand sind und deine Hole Cards sie nicht verbessern können. Kann niemand das Board verbessern, nutzen alle dieselben fünf Karten und der Pot wird geteilt. Es gibt keinen Kicker, weil das Board bereits eine vollständige Fünf-Karten-Hand bildet.
 
 **Q. Zählen Kicker im Texas Hold'em?**
 

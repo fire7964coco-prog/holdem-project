@@ -8,9 +8,9 @@ export const POST: Post = {
   tldr: "सबसे मज़बूत से सबसे कमज़ोर तक पोकर हैंड रैंकिंग है: Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, Pair, और High Card।",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-08-12",
+  updated: "2026-09-07",
 
-  masterUpdated: "2026-08-12",
+  masterUpdated: "2026-09-07",
   keepImagesInBody: true,
   readTime: "14 मिनट",
   emoji: "🃏",
@@ -31,7 +31,7 @@ export const POST: Post = {
 | # | हैंड | और नाम | क्या है | संभावना (river तक) |
 |------|------|------|------|------|
 | **1** | Royal Flush | "रॉयल" | एक ही सूट में A-K-Q-J-10 | 0.0032% |
-| **2** | Straight Flush | "Steel wheel" (A-5) | एक ही सूट में 5 क्रमागत | 0.0279% |
+| **2** | Straight Flush | "Steel wheel" (केवल A-5) | एक ही सूट में 5 क्रमागत | 0.0279% |
 | **3** | Four of a Kind | "Quads" | एक ही मान के चार कार्ड | 0.168% |
 | **4** | Full House | "Full" | Three of a kind + pair | 2.60% |
 | **5** | Flush | — | एक ही सूट के 5 कार्ड | 3.03% |
@@ -174,7 +174,7 @@ showdown पर सबसे ऊँचा कार्ड जीतता है
 दाईं ओर का बैज दिखाता है कि **हैंड तय करने में kicker इस्तेमाल होता है या नहीं**।
 
 :::tiebreak
-Royal Flush|हमेशा टाई (पॉट बँटता है)|-कोई kicker नहीं
+Royal Flush|टाई सिर्फ़ तब जब royal flush पूरा बोर्ड पर हो — सब बाँटते हैं|-कोई kicker नहीं
 Straight Flush|केवल सबसे ऊँचा कार्ड|-कोई kicker नहीं
 Four of a Kind|quad का मान → 5वाँ कार्ड|+kicker लागू
 Full House|trio का मान → pair का|-कोई kicker नहीं

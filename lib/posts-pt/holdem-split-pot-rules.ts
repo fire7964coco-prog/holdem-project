@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Sim — mãos de poker podem empatar. O pote é dividido (um chop) quando dois ou mais jogadores mostram a mesma melhor mão de cinco cartas no showdown. O naipe nunca desempata, e qualquer ficha ímpar que sobra vai para o primeiro empatado à esquerda do botão do dealer.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-06",
+  updated: "2026-09-07",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🃏",
@@ -90,7 +90,7 @@ Sim — e nem precisa de duas mãos monstruosas. Quando as cinco cartas comunit�
 
 **E a parte que mais importa na mesa: sua mão só ganha se você virar as cartas para cima.** Uma mão que foi para o muck está morta mesmo que fosse dividir o pote — jogando a mesa, você ainda precisa mostrar suas cartas fechadas viradas para cima, ou perde sua parte do pote (regra 172 da WSOP para o jogo de cash — "Live Action"; as regras de torneio da WSOP repetem isso na regra 75). Quem mostra primeiro e como a sequência corre está nas [regras de showdown](/pt/blog/holdem-showdown-rules).
 
-:::tip[Se a mesa joga e alguém aposta no river, **o erro é dar fold no automático**. Quando nada consegue bater a mesa o empate é certo, e pagar ainda traz de volta metade de tudo que já estava no pote — dar fold entrega essa metade de graça. Quando a mesa pode ser batida, calcule a frequência: contra uma aposta do tamanho do pote você precisa que o adversário também esteja apenas jogando a mesa em cerca de 2 de cada 3 vezes; contra meio pote, metade das vezes. É uma barra alta: contra uma aposta do tamanho do pote, basta que ele tenha mão de verdade mais de **uma vez em três** para o fold ficar certo — e num river em que a mesa ainda pode ser batida, isso é o normal.]:::
+:::tip[Se a mesa joga e alguém aposta no river, **o erro é dar fold no automático**. Quando nada consegue bater a mesa o empate é certo, e pagar ainda traz de volta metade de tudo que já estava no pote — dar fold entrega essa metade de graça. Quando a mesa pode ser batida, calcule a frequência: em heads-up, contra uma aposta do tamanho do pote você precisa que o adversário também esteja apenas jogando a mesa em cerca de 2 de cada 3 vezes; contra meio pote, metade das vezes (com três ou mais jogadores na mão, sua parte do empate encolhe e a barra sobe). É uma barra alta: contra uma aposta do tamanho do pote, basta que ele tenha mão de verdade mais de **uma vez em três** para o fold ficar certo — e num river em que a mesa ainda pode ser batida, isso é o normal.]:::
 
 ---
 
@@ -113,9 +113,9 @@ Board 9♠ 8♦ 7♣ 6♥ 5♠ — uma sequência formada. Você tem A♠ K♦; 
 
 ## Quem fica com a ficha extra? A regra da ficha ímpar
 
-Às vezes um pote não divide por igual — um pote de 101 fichas entre dois jogadores dá 50 para cada com uma ficha sobrando, e não existe meia ficha. A regra padrão:
+Às vezes um pote não divide por igual — um pote de 101 fichas entre dois jogadores dá 50 para cada com uma ficha sobrando, e não existe meia ficha. Antes de entregar essa última ficha a alguém, o dealer a troca pela menor denominação em jogo (Regra 20 da TDA): se as de 5 são as menores fichas da mesa, uma única ficha de 25 vira cinco fichas de 5, que são divididas de novo, e só a ficha que ainda assim não divide é a "ficha ímpar". Depois, a regra padrão:
 
-> ==A ficha ímpar que sobra vai para o primeiro empatado **à esquerda do botão do dealer**== (o assento vencedor mais próximo no sentido horário a partir do dealer).
+> ==A ficha ímpar que sobra vai para o primeiro empatado **à esquerda do botão do dealer**== (o assento vencedor mais próximo no sentido horário a partir do botão).
 
 Numa divisão de três vias com duas fichas ímpares, os dois assentos mais próximos no sentido horário ficam com uma cada. ==r:As regras da casa podem variar== — algumas salas distribuem a ficha ímpar por carta alta ou naipe — então, se tem dinheiro de verdade em jogo, chame o floor. ==g:Online, o software atribui automaticamente pela posição.==
 

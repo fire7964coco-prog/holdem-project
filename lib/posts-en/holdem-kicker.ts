@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A kicker is the highest side card that isn't part of your main hand — it breaks ties when two players share the same rank. One pair uses 3 kickers, two pair 1, trips 2; straights, flushes, and full houses have none. It's why AK beats AQ when the board pairs an ace.",
   category: "hand-rankings",
   date: "2026-07-08",
-  updated: "2026-08-26",
+  updated: "2026-09-07",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -106,14 +106,14 @@ Same pair, so compare kickers top-down: your ==g:K beats their Q.== You win, A-A
 
 ## Playing the Board: When Your Kicker Doesn't Play
 
-**If the five community cards already make the best possible hand and your hole cards can't improve on it, you're "playing the board" — and there is no kicker at all.** Everyone still in the hand uses the identical five cards, so the pot is split.
+**If the five community cards already make the best possible hand and your hole cards can't improve on it, you're "playing the board" — and there is no kicker at all.** Everyone who can't improve on it uses the identical five cards — and if nobody can, the pot is split.
 
 The board is ==b:10♠ J♦ Q♣ K♥ A♠== — a made ten-to-ace straight (Broadway), in mixed suits so no flush is possible.
 
 - You hold ==b:2♣ 3♦==. Your best five is the board straight; the 2 and 3 add nothing.
 - Your opponent holds ==b:4♥ 5♦==. Same story — the board straight is their best five too.
 
-Neither of you can go higher than an ace, so you both "play the board" and ==g:chop the pot.== A straight has no kicker, so those hole cards are dead weight. When you hear "the board plays," this is it — and it's the one spot where a strong-looking hole card is worth exactly nothing. (More on spotting these runouts in [reading the board](/en/blog/holdem-reading-the-board).)
+Neither of you can go higher than an ace, so you both "play the board" and ==g:chop the pot== — but only if you turn your hole cards face up; muck them and you get nothing, even here (TDA Rule 19). A straight has no kicker, so those hole cards are dead weight. When you hear "the board plays," this is it — and it's the one spot where a strong-looking hole card is worth exactly nothing. (More on spotting these runouts in [reading the board](/en/blog/holdem-reading-the-board).)
 
 ---
 
@@ -173,7 +173,7 @@ A. Yes. Three of a kind uses two kickers, so when two players make the same trip
 
 **Q. Do two pairs have a kicker?**
 
-A. Yes — two pair uses one kicker. If you hold K-Q and your opponent holds J-Q on a Q-7-7 board, you both have queens and sevens, but your king kicker beats their jack. The kicker only comes into play when both players hold the identical two pair.
+A. Yes — two pair uses one kicker. If you hold K♥ Q♦ and your opponent holds J♠ Q♥ on a Q♣ 7♠ 7♦ 4♥ 2♣ board, you both have queens and sevens, but your king kicker beats their jack (Q-Q-7-7-K over Q-Q-7-7-J). The kicker only comes into play when both players hold the identical two pair.
 
 **Q. Does the kicker have to be in your hand?**
 

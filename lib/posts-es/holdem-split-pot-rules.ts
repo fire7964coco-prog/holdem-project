@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Sí — en el póker se puede empatar. El bote se divide (un \"split\" o \"chop\") cuando dos o más jugadores muestran las mismas mejores cinco cartas en el showdown. El palo nunca rompe el empate, y la ficha impar que sobra va al primer jugador empatado a la izquierda del botón.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-06",
-  masterUpdated: "2026-09-06",
+  updated: "2026-09-07",
+  masterUpdated: "2026-09-07",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🃏",
@@ -91,7 +91,7 @@ Es mi mano 8-8-8-A-K: mi J-10 y su 5-2 jugaban los dos el trío de ochos de la m
 
 **Y lo que más importa en la mesa: tu mano solo gana si la enseñas boca arriba.** Una mano tirada al muck está muerta aunque hubiera partido — cuando juegas la mesa sigues teniendo que mostrar tus cartas boca arriba, o pierdes tu parte del bote (regla 172 del reglamento de cash —"Live Action"— de la WSOP; las reglas de torneo de la WSOP lo repiten en la regla 75). Quién muestra primero y cómo va la secuencia lo tienes en las [reglas del showdown](/es/blog/holdem-showdown-rules).
 
-:::tip[Si la mesa juega y alguien apuesta en el river, **el error es foldear en automático**. Cuando nada puede superar la mesa el empate está asegurado, y pagar te devuelve la mitad de todo lo que ya había en el bote — foldear regala esa mitad gratis. Cuando la mesa sí se puede superar, calcula la frecuencia: ante una apuesta del tamaño del bote necesitas que tu rival también esté jugando la mesa unas 2 de cada 3 veces; ante medio bote, la mitad de las veces. Es un listón alto: ante una apuesta del tamaño del bote, foldear es correcto **en cuanto** tiene mano de verdad más de **una de cada tres veces** — y en un river en el que la mesa todavía se puede superar, eso es lo habitual.]:::
+:::tip[Si la mesa juega y alguien apuesta en el river, **el error es foldear en automático**. Cuando nada puede superar la mesa el empate está asegurado, y pagar te devuelve la mitad de todo lo que ya había en el bote — foldear regala esa mitad gratis. Cuando la mesa sí se puede superar, calcula la frecuencia: heads-up, ante una apuesta del tamaño del bote necesitas que tu rival también esté jugando la mesa unas 2 de cada 3 veces; ante medio bote, la mitad de las veces (con tres o más jugadores en el bote tu parte del empate se reduce y el listón sube). Es un listón alto: ante una apuesta del tamaño del bote, foldear es correcto **en cuanto** tiene mano de verdad más de **una de cada tres veces** — y en un river en el que la mesa todavía se puede superar, eso es lo habitual.]:::
 
 ---
 
@@ -114,9 +114,9 @@ Mesa 9♠ 8♦ 7♣ 6♥ 5♠ — una escalera servida. Tú tienes A♠ K♦; tu
 
 ## ¿Quién se lleva la ficha de más? La regla de la ficha impar
 
-A veces un bote no se divide de forma exacta —un bote de 101 fichas entre dos jugadores son 50 para cada uno con una ficha sobrante, y no hay medias fichas—. La regla estándar:
+A veces un bote no se divide de forma exacta —un bote de 101 fichas entre dos jugadores son 50 para cada uno con una ficha sobrante, y no hay medias fichas—. Antes de entregar esa última ficha a nadie, el dealer la cambia a la denominación más pequeña en juego (regla 20 de la TDA): si las de 5 son las fichas más pequeñas de la mesa, una sola ficha de 25 se convierte en cinco de 5, que se vuelven a repartir, y solo la ficha que sigue sin poder dividirse es la "ficha impar". Después, la regla estándar:
 
-> ==La ficha impar sobrante va al primer jugador empatado **a la izquierda del botón**== (el asiento ganador que está antes en el sentido de las agujas del reloj desde el dealer).
+> ==La ficha impar sobrante va al primer jugador empatado **a la izquierda del botón**== (el asiento ganador que está antes en el sentido de las agujas del reloj desde el botón).
 
 En un split a tres bandas con dos fichas impares, los dos asientos que van antes en el sentido de las agujas del reloj reciben una cada uno. ==r:Las reglas de la casa pueden variar== — algunas salas asignan la ficha impar por carta alta o por palo — así que si hay dinero real en juego, pregunta al floor. ==g:Online, el software la asigna de forma automática por posición.==
 
@@ -165,7 +165,7 @@ A. El bote se divide cuando dos o más jugadores tienen las mismas mejores cinco
 
 **Q. ¿Cómo se divide el bote en el póker?**
 
-A. El dealer reparte las fichas por igual entre los jugadores empatados. Si el bote no se puede dividir de forma exacta, la ficha impar sobrante va al primer jugador empatado a la izquierda del botón. El palo nunca afecta al reparto, y cuando un jugador está all-in cada bote —principal y lateral— se divide por separado.
+A. El dealer reparte las fichas por igual entre los jugadores empatados. Si el bote no se puede dividir de forma exacta, el sobrante se cambia primero a la denominación más pequeña en juego, y la última ficha impar va al primer jugador empatado a la izquierda del botón. El palo nunca afecta al reparto, y cuando un jugador está all-in cada bote —principal y lateral— se divide por separado.
 
 **Q. ¿Se divide el bote si ambos jugadores tienen la misma mano?**
 

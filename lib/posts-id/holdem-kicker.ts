@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Kicker adalah kartu samping tertinggi yang bukan bagian dari tangan utama Anda — ia memecah seri saat dua pemain punya nilai tangan yang sama. One pair pakai 3 kicker, two pair 1, trips 2; straight, flush, dan full house tidak punya. Inilah kenapa AK menang atas AQ saat meja memasangkan sebuah ace.",
   category: "hand-rankings",
   date: "2026-07-08",
-  updated: "2026-08-27",
-  masterUpdated: "2026-08-26",
+  updated: "2026-09-07",
+  masterUpdated: "2026-09-07",
   keepImagesInBody: true,
   readTime: "10 mnt",
   emoji: "🃏",
@@ -107,14 +107,14 @@ Pair yang sama, jadi bandingkan kicker dari atas: ==g:K Anda menang atas Q merek
 
 ## Playing the Board: Saat Kicker Anda Tidak Ikut Main
 
-**Kalau lima kartu komunitas sudah membentuk tangan terbaik yang mungkin dan kartu tertutup Anda tak bisa memperbaikinya, Anda sedang "playing the board" (main dengan board) — dan sama sekali tak ada kicker.** Semua yang masih ada di tangan memakai lima kartu identik, jadi pot dibagi.
+**Kalau lima kartu komunitas sudah membentuk tangan terbaik yang mungkin dan kartu tertutup Anda tak bisa memperbaikinya, Anda sedang "playing the board" (main dengan board) — dan sama sekali tak ada kicker.** Semua yang juga tak bisa memperbaikinya memakai lima kartu identik — dan kalau tak seorang pun bisa, pot dibagi.
 
 Mejanya ==b:10♠ J♦ Q♣ K♥ A♠== — sebuah straight ten-sampai-ace jadi (Broadway), dalam jenis campuran sehingga flush tidak mungkin.
 
 - Anda pegang ==b:2♣ 3♦==. Lima terbaik Anda adalah straight meja; si 2 dan 3 tak menambah apa pun.
 - Lawan pegang ==b:4♥ 5♦==. Sama saja — straight meja juga lima terbaik mereka.
 
-Tak satu pun dari kalian bisa lebih tinggi dari ace, jadi kalian berdua "playing the board" dan ==g:membagi pot.== Straight tak punya kicker, jadi kartu tertutup itu cuma beban mati. Saat Anda dengar "the board plays", inilah maksudnya — dan ini satu-satunya tempat kartu tertutup yang tampak kuat bernilai persis nol. (Selengkapnya soal mengenali runout seperti ini di [membaca meja](/id/blog/holdem-reading-the-board).)
+Tak satu pun dari kalian bisa lebih tinggi dari ace, jadi kalian berdua "playing the board" dan ==g:membagi pot== — tapi hanya jika kalian membuka kartu tertutup; kalau di-muck, Anda tak dapat apa-apa, bahkan di sini (Aturan TDA 19). Straight tak punya kicker, jadi kartu tertutup itu cuma beban mati. Saat Anda dengar "the board plays", inilah maksudnya — dan ini satu-satunya tempat kartu tertutup yang tampak kuat bernilai persis nol. (Selengkapnya soal mengenali runout seperti ini di [membaca meja](/id/blog/holdem-reading-the-board).)
 
 ---
 
@@ -174,7 +174,7 @@ A. Ya. Three of a kind memakai dua kicker, jadi saat dua pemain membentuk trips 
 
 **Q. Apakah two pair punya kicker?**
 
-A. Ya — two pair memakai satu kicker. Kalau Anda pegang K-Q dan lawan pegang J-Q di meja Q-7-7-4-2, kalian sama-sama punya two pair Q dan 7, tapi kicker king Anda mengalahkan jack mereka. Kicker baru ikut main saat kedua pemain pegang two pair yang identik.
+A. Ya — two pair memakai satu kicker. Kalau Anda pegang K♥ Q♦ dan lawan pegang J♠ Q♥ di meja Q♣ 7♠ 7♦ 4♥ 2♣, kalian sama-sama punya two pair Q dan 7, tapi kicker king Anda mengalahkan jack mereka. Kicker baru ikut main saat kedua pemain pegang two pair yang identik.
 
 **Q. Apakah kicker harus dari kartu tertutup Anda?**
 
@@ -194,7 +194,7 @@ A. Ace kicker berarti kartu samping tertinggi Anda adalah ace — kicker terkuat
 
 **Q. Apa arti "playing the board"?**
 
-A. Playing the board berarti lima kartu komunitas adalah tangan terbaik Anda dan kartu tertutup Anda tak bisa memperbaikinya. Karena semua orang memakai lima kartu yang sama, pot dibagi. Tak ada kicker karena meja sudah membentuk tangan lima-kartu yang lengkap.
+A. Playing the board berarti lima kartu komunitas adalah tangan terbaik Anda dan kartu tertutup Anda tak bisa memperbaikinya. Kalau tak seorang pun bisa memperbaiki board, semua orang memakai lima kartu yang sama dan pot dibagi. Tak ada kicker karena meja sudah membentuk tangan lima-kartu yang lengkap.
 
 **Q. Apakah kicker penting di Texas Hold'em?**
 
