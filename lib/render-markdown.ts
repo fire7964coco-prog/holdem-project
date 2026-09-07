@@ -10,7 +10,7 @@
  *
  * 2026-08-02 blog-post-client.tsx(93~590행)에서 **한 글자도 바꾸지 않고** 옮겨왔다.
  */
-import { slugify } from "./blog-headings";
+import { createHeadingSlugger } from "./blog-headings";
 import { RANGE_CHART_SEATS, rangeChartCopy } from "./range-chart";
 
 /**
@@ -33,6 +33,12 @@ const editorialNote = (text: string) =>
  *      넘기므로 locale 자리에 0, 1 이 들어간다. 반드시 `.map((c) => renderMarkdown(c, locale))`.
  */
 export function renderMarkdown(content: string, locale?: string): string {
+  /**
+   * 🔴 헤딩 id 발급기 — **문서 하나당 하나**. 아래 H2·H3 치환이 문서 순서로 소비한다.
+   * 목차(extractHeadings)도 같은 발급기를 같은 순서로 돌리므로 목차 링크와 id 가 일치한다.
+   */
+  const headingId = createHeadingSlugger();
+
   /**
    * 첫 번째 이미지(LCP 후보)는 eager + fetchpriority="high"로 우선 로드,
    * 그 이후 이미지는 모두 loading="lazy" 처리.
@@ -146,9 +152,13 @@ export function renderMarkdown(content: string, locale?: string): string {
       `<div style="width:26px;height:26px;border-radius:50%;background:rgba(196,154,24,0.15);border:1px solid rgba(196,154,24,0.4);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:#b8820a;flex-shrink:0;margin-top:2px">${num}</div>` +
       `<div><div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));margin-bottom:4px">${title.replace(/:$/, '')}</div>` +
       `<div style="font-size:13px;color:hsl(var(--muted-foreground));line-height:1.65">${desc}</div></div></div>`)
-    .replace(/^### (.+)$/gm, (_, text) =>
-      `<h3 id="${slugify(text)}" style="font-size:15px;font-weight:800;margin:20px 0 10px;padding:10px 16px;background:rgba(212,175,55,0.07);border-left:3px solid rgba(212,175,55,0.6);border-radius:0 8px 8px 0;color:hsl(var(--foreground));word-break:keep-all;overflow-wrap:break-word;line-height:1.45;letter-spacing:-0.01em">${text}</h3>`)
-    .replace(/^## (.+)$/gm, (_, text) => `<h2 id="${slugify(text)}" class="blog-h2 text-xl sm:text-2xl font-extrabold text-foreground mt-8 sm:mt-10 mb-3 pb-2 border-b-2 border-primary/30">${text}</h2>`)
+    // 🔴 H2·H3 를 **한 패스**로 돈다(2026-09-08 · 헤딩 id 수리). 두 패스로 나누면
+    //    «H3 전부 → H2 전부» 순서가 되어 발급기의 중복 접미 번호가 문서 순서와 어긋나고,
+    //    목차 링크가 실제 id 를 못 맞춘다. 🪶 두 정규식은 서로를 잡지 못하므로
+    //    (##+공백 은 ### 줄에 안 걸린다 — 세 번째 글자가 공백이 아니다) 합쳐도 결과는 같다.
+    .replace(/^(#{2,3}) (.+)$/gm, (_, hashes, text) => hashes.length === 3
+      ? `<h3 id="${headingId(text)}" style="font-size:15px;font-weight:800;margin:20px 0 10px;padding:10px 16px;background:rgba(212,175,55,0.07);border-left:3px solid rgba(212,175,55,0.6);border-radius:0 8px 8px 0;color:hsl(var(--foreground));word-break:keep-all;overflow-wrap:break-word;line-height:1.45;letter-spacing:-0.01em">${text}</h3>`
+      : `<h2 id="${headingId(text)}" class="blog-h2 text-xl sm:text-2xl font-extrabold text-foreground mt-8 sm:mt-10 mb-3 pb-2 border-b-2 border-primary/30">${text}</h2>`)
     .replace(/^# (.+)$/gm, '<h1 class="text-3xl font-extrabold text-foreground mt-6 mb-5">$1</h1>')
     // FAQ cards — MUST run before **bold** processing (bold would consume the ** markers first)
     .replace(
