@@ -66,7 +66,7 @@
 > **헤드가 매 회차 하는 것**(프로토콜 §6): `git merge harden-zh` → `harden-zh-hant` → 빌드 → push → 라이브 `page.content()` → 진행 파일 «헤드 요청» 처리 → WORKLOG·검수장 통보(해시).
 > 🔴 **레인 첫 마디**: 「`HARDEN.md` 읽고 회차 시작해」. 레인이 `git merge main`을 먼저 해야 정본·게이트가 들어간다(헤드가 09-06에 두 레인에 main을 머지해 뒀다).
 >
-> **진행 상태(2026-09-07 저녁 헤드 · 회차 (5))**: 🇨🇳 회차 1·2 ✅(머지 `29aa0480`·`28669901`) → 회차 3 확률 진행 · 🇹🇼 회차 1 ✅(머지 `d9f2f3c8`) → 회차 2 족보 **A 구간 중간 커밋 `44bbe5a5`**(회차 완료 전엔 머지하지 마라) · 🇯🇵 **회차 1 ✅ 머지 `83c70e96` · 배포 `106c8eed`**(충돌 0) → 회차 2 족보. 🔴 **세 레인 모두 다음 구간 전 `git merge main` 필수** — 헤드가 족보 4편(hand-rankings·kicker·split-pot·reading-the-board)을 EN-먼저 11건으로 **전 로케일 정정**했다(`f0515d4e`·`a253153e`). 각 레인 `HARDEN.md`(비추적) 말미에 통지를 붙여 뒀다. 🔴 **레인 6편 회차 1 직답은 «각 H2 직후 라벨 블록»이 정본**(§7-C) — 🇹🇼 회차 1 6편은 회차 7 소급. 헤드 회차 경위 = WORKLOG 「2026-09-07 (1)~(5)」.
+> **진행 상태(2026-09-07 저녁 헤드 · 회차 (5))**: 🇨🇳 회차 1·2 ✅(머지 `29aa0480`·`28669901`) → 회차 3 확률 진행 · 🇹🇼 회차 1·2 ✅(머지 `d9f2f3c8`·**`e42c2b91`** · 회차 2는 레인이 main을 안 당겨 **충돌 4편 6hunk를 헤드가 풀었다** — WORKLOG (6)) → 회차 3 확률 · 🇯🇵 **회차 1 ✅ 머지 `83c70e96` · 배포 `106c8eed`**(충돌 0) → 회차 2 족보. 🔴 **세 레인 모두 다음 구간 전 `git merge main` 필수** — 헤드가 족보 4편(hand-rankings·kicker·split-pot·reading-the-board)을 EN-먼저 11건으로 **전 로케일 정정**했다(`f0515d4e`·`a253153e`). 각 레인 `HARDEN.md`(비추적) 말미에 통지를 붙여 뒀다. 🔴 **레인 6편 회차 1 직답은 «각 H2 직후 라벨 블록»이 정본**(§7-C) — 🇹🇼 회차 1 6편은 회차 7 소급. 헤드 회차 경위 = WORKLOG 「2026-09-07 (1)~(5)」.
 > **헤드 이행 09-07**: MA-117 전건(`3e523fd7`) · MA-118 요청 1(`ee120dfe`) · MB-001·MB-002 발신(우편함 **`MB-` 전환 완료** — `mailbox/out-본체.md`) · **회차 (5)**: 대기열 1번 종결(`f0515d4e`·`a253153e`) · ja 회차 1 머지(`83c70e96`) · `check:hangul` 게이트(`1f34f3e5`) · TDA 2022 사본 `docs/sources/` · MB-005 발신.
 > 🔴 **다음 헤드 세션 — 첫 마디 「핸드오프 읽고 대기해」. 대기열 3건(순서 제안 = 1→2→3 · 사장님 미결재)**:
 > | # | 무엇 | 근거 위치 | 규모 |
@@ -77,6 +77,8 @@
 > | 4 | 🆕 **EN-먼저 ①(ja §5-2) — `holdem-all-in-rules` «베팅 재개» TDA 조항 번호** · zh 회차 1이 «사본 없음»으로 되돌린 건. 이제 `docs/sources/tda-2022-shortform-rules.txt` L114 **Rule 47 «Re-Opening the Bet»** 축어가 있다 → EN에 번호를 «단다»로 기울되 EN 문안 + 24로케일 전파라 별도 회차 | `docs/harden-ja-진행.md` §5-2 · `docs/harden-zh-진행.md` §3 | 중 |
 > | 5 | 🆕 **EN-먼저 ②(ja §5-3) — EN `holdem-betting-actions`에 «50% 룰» FAQ 없음**(ja는 TDA 43-A 축어로 신설 · 질문 수요 16). EN 키워드 실측(PAA·lowfruits) 후 판단 | `docs/keyword-bank/ja-rules.md` | 소 |
 > | 6 | 🆕 **EN-먼저 ③(ja §5-4) — EN `texas-holdem-rules-for-beginners`에 매너/불문율 H2 없음**(ja는 `ポーカー マナー` 140/SD22 실측 · TDA Rule 70 축어 8항목). EN 실측 후 판단 | 같은 파일 | 소 |
+> | 7 | 🆕 **EN-먼저(zh-hant §5-8-3) — EN `holdem-hand-rankings` «희귀할수록 상위» 원칙 바로 아래 표가 7장 기준이라 高牌 17.4% < 兩對 23.5%로 원칙을 반증** · 처방 = «순서는 5장 기준으로 정해졌다» 각주 1줄(메모리 poker-probability-5card-vs-7card) · 13로케일 | `docs/harden-zh-hant-진행.md` §5-8-3 | 소~중 |
+> | 8 | 🆕 **EN-먼저(zh-hant §5-8-5) — EN `holdem-flush-vs-straight` L158 「36 combinations (~0.00139%)»에 5장 기준 표기 없음**(자매편 hand-rankings는 7장 0.0279% · 20배 병존) · 8로케일 | 같은 파일 §5-8-5 | 소 |
 > 그다음 = 헤드 미결 ⓐ `blind-meaning` 직답≈tldr 중복 ⓑ 7로케일 betting-actions FAQ 103조 두 요소 ~~ⓒ TDA 사본 자산화~~ ✅ 종결(`docs/sources/`) ⓓ `\$` 이스케이프 잔존(라이브 재현 0 — 조건 확인 전 손대지 마라).
 > 🔴 **레인 머지 대기 확인법**: `for l in zh zh-hant ja; do git log --oneline main..harden-$l | wc -l; done` — 0이 아니면 그 레인 회차가 끝난 것. 머지 → 빌드 → push → 라이브 `page.content()` → 진행 파일 §5 «헤드 요청» 처리 → MB 통지(현재 MB-004까지). 🇯🇵 첫 머지는 beginners·all-in에서 헤드 스탬프와 겹칠 수 있다 — 헤드가 해결.
 > 🪶 **레인 창 띄우는 명령**(탭 제목 고정 — Claude Code가 «claude»로 덮어쓰지 못하게): `wt.exe -w new new-tab --suppressApplicationTitle --title "🇯🇵 harden-ja (일본어 경화)" -d "C:\Users\하봄\Downloads\Holdem-ja" claude`. 🇨🇳·🇹🇼는 현재 회차가 끝나 `/clear` 할 때 같은 형식으로 다시 띄운다(사장님 지시 09-07).
