@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "APT仁川2026メインイベントは香港のStephen Pangが優勝し、賞金KRW 411,180,000(約$293,700・3人ICMディール)と24Kゴールドのライオントロフィーを獲得しました。エントリーは過去最多の1,393、プライズプールはKRW 3,008,880,000。そしてファイナルテーブル9名のうち5名が日本勢です——Tempei Kotani(4位・KRW 155,650,000)、Kazuki Koyama(5位)、Shinichiro Kano(6位)、Takeru Endo(8位)、Ryo Fujita(9位)。上位3名には11月のAPTチャンピオンシップ(台北)メインイベントのシート(約$10,000相当)も贈られました。会場は仁川空港第1ターミナルから無料シャトルで10分、日本のパスポートならK-ETAもビザも不要です。",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-09-02",
+  updated: "2026-09-08",
   masterUpdated: "2026-08-28",
   keepImagesInBody: true,
   readTime: "16分",

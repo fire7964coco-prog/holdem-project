@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "トーナメントは決まったバイインを払ってチップを受け取り、時間ごとにブラインドが上がって最後の1人が全チップを持つまで続く形式です。インマネ(ITM=賞金圏)に入るのは通常上位10〜15%。フリーズアウト・PKO・サテライト・ディープスタックなどの種類があり、直接バイイン・サテライト・オンライン事前登録で参加できます。",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-09-02",
+  updated: "2026-09-08",
   masterUpdated: "2026-08-26",
   keepImagesInBody: true,
   readTime: "14分",
