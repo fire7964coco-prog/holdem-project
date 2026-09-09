@@ -8,14 +8,14 @@ export const POST: Post = {
   tldr: "短码（大约 20–25 个大盲以下）没法打正常的翻后扑克，而从大约 15 个大盲往下就要切到 push/fold：first-in 就直接 all in 来保住你的 fold equity，永远别开池平跟、也别 min-raise 之后又弃牌。后位推得更宽，跟注范围要比推注范围更紧，别为了「等一手好牌」把筹码盲到见底——fold equity 才是你的武器，一旦跌破约 8 个大盲，它就急速消退。",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-09-08",
+  updated: "2026-09-09",
   masterUpdated: "2026-08-13",
   keepImagesInBody: true,
   readTime: "13 分钟",
   emoji: "📉",
   image: "/images/holdem-short-stack-hero.webp",
   imageAlt: "绿色桌布上，一小摞锦标赛筹码紧挨着一大摞，背后是锦标赛计时钟——短码牌手不得不 all in 或弃牌的那一刻",
-  tags: ["短码策略", "短码怎么打", "push fold 策略", "push fold 图表", "M值 德州扑克", "德州扑克 短码", "锦标赛 20bb 策略", "fold equity"],
+  tags: ["德州短码", "德州扑克短码怎么打", "push fold 策略", "push fold 图表", "M值 德州扑克", "德州扑克短码", "锦标赛 20bb 策略", "fold equity"],
   content: `
 我从「还活着」到「出局」最快的一次，是那晚我拿着一个 12 个大盲的码量一直 min-raise，每次被再加注就弃牌，每一圈漏掉一个半盲注，直到我短得吓不住任何人。等我终于推的时候，我只剩 4 个大盲，还被两个人跟了。==我不是运气差——我是把短码当深码来打了。== 一旦你的码量变小，整个游戏就变了，懂新规则的人会主宰这张桌子。
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "WPT Australia 2026：9 月 10–30 日，The Star Sydney。两个旗舰赛：AUD $1,500 WPT Prime（9 月 17–22 日）和 AUD $5,000 WPT Championship（9 月 24–30 日）。现场卫星赛 AUD $270 起，主赛资格赛为 $290 与 $550。冠军赛冠军的头名奖金里包含一个价值 $15,000、并从奖池中扣除的 WPT World Championship 席位。必须年满 18 岁、成为 Star Club 会员，并遵守 smart-casual 着装要求。",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-09-08",
+  updated: "2026-09-09",
   masterUpdated: "2026-09-02",
   readTime: "14 分钟",
   emoji: "🦘",
@@ -111,12 +111,12 @@ WPT Australia 2026 重回 The Star Sydney，规模是 WPT 历史上最大的一�
 
 | 路径 | 形式 | 买入 | 赢得 |
 |:---:|---|---|---|
-| **主赛直接资格赛** | ==**$550：7 月 24 日–9 月 25 日** · **$290：7 月 30 日–9 月 9 日**== | ==g:$290 或 $550== | Championship 席位 |
+| **主赛直接资格赛** | 赛前，自 ==**7 月 24 日**== 起 | ==g:$290 或 $550== | Championship 席位 |
 | **主赛直接资格赛** | 赛事期间，==**至 9 月 25 日**== | $550 | Championship 席位 |
-| **Prime Championship** | 1/6 卫星赛 | ==g:$290== | Prime 席位 |
-| **Australian Poker Cup** | 1/5 卫星赛 | $270 | Poker Cup 席位 |
-| **Mini-Championship** | 1/8 卫星赛 | $290 | Mini-Championship 席位 |
-| **赛事期间其他卫星赛** | 每日开赛，==**至 9 月 28 日**== | $270–1,050 | 对应赛事席位 |
+| **Prime Championship** | 六选一卫星赛 | ==g:$290== | Prime 席位 |
+| **Australian Poker Cup** | 五选一卫星赛 | $270 | Poker Cup 席位 |
+| **Mini-Championship** | 八选一卫星赛 | $290 | Mini-Championship 席位 |
+| **$10K 高额赛直接资格赛** | 9 月 22 日，==g:十选一== | $1,050 | $10K 高额赛席位 |
 
 </div>
 

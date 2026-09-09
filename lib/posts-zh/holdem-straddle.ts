@@ -72,7 +72,7 @@ straddle 不是通常意义上的加注——它是一个重置价格的盲注�
 ## straddle 的种类（UTG、Mississippi、Button 和 Sleeper）
 
 > **快速回答**
-> UTG straddle 只买到翻前最后一句话；Mississippi 可从任何座位抓，从按钮位抓（就是 Button straddle）时连翻后也最后行动；Sleeper 要等行动弃到它才激活，位置从来买不到；Re-straddle 是再翻一倍。都看房规。
+> UTG straddle 只买到翻前最后一句话；Mississippi 可从任何座位抓，从按钮位抓（就是 Button straddle）时连翻后也最后行动；Sleeper 要等行动弃到它才激活，位置从来买不到；Re-straddle 是再翻一倍。
 
 ![一个 straddle 盲注放在庄家按钮旁边，展示的是买下这手牌最后位置的 button 或 mississippi straddle](/images/holdem-straddle-button.webp "一次 button（mississippi）straddle 从按钮位抓——唯一一种连翻后也买下最后行动的 straddle")
 
@@ -219,7 +219,7 @@ A. 对大多数玩家来说，不赚——这是个 -EV 的打法。你盲投了
 ## 要记住的 3 件事
 
 1. **straddle 是一个可选的第三盲注，通常是大盲的 2 倍**，在发牌前补出——它把赌注翻倍，买下翻前最后行动。
-2. **决定位置的是座位，不是 straddle 的名字。** UTG straddle 只在翻前最后。翻后也能最后行动的，只有==从按钮位下的== straddle——因为翻牌之后的顺序永远跟着按钮位走。一切都取决于房规。
+2. **决定位置的是座位，不是 straddle 的名字。** UTG straddle 只在翻前最后。翻后也能最后行动的，只有==从按钮位下的== straddle——因为翻牌之后的顺序永远跟着按钮位走。
 3. **对几乎所有人它都是 -EV。** 盲投、无位置吹大底池、喂饱抽水，这些盖过了乐趣。为了桌面形象或娱乐去抓 straddle 可以，别为了利润去抓。
 
 现在你懂了这个额外的盲注，那就把它扭曲掉的那些基本功补紧：[盲注到底干什么](/zh/blog/holdem-blind-meaning)、[为什么位置能赢钱](/zh/blog/holdem-position-play)，以及一旦 straddle 重置了价格之后 [下注动作和加注怎么运作](/zh/blog/holdem-betting-actions)。
