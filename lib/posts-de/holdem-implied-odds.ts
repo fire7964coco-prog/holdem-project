@@ -184,7 +184,7 @@ A. Nein. Nach dem River kommt keine Karte mehr und keine Setzrunde mehr – es g
 
 **Q. Wie viel muss ich mit einem Flushdraw am Turn zusätzlich gewinnen?**
 
-A. Bei einem $50-Call in einen $150-Pot: 50 ÷ 0,196 = $255, minus die $200, die schon im Spiel sind, macht rund **$55**. So viel musst du am River im Schnitt zusätzlich holen, damit der Call aufgeht. Kann dein Gegner das nicht mehr bezahlen, ist es ein Fold.
+A. Bei einem $50-Call in einen $150-Pot am Turn, mit einem Flushdraw, der am River zu 19,6% ankommt (9 ÷ 46): 50 ÷ 0,196 = $255, minus die $200, die schon im Spiel sind, macht rund **$55**. So viel musst du am River im Schnitt zusätzlich holen, damit der Call aufgeht. Kann dein Gegner das nicht mehr bezahlen, ist es ein Fold.
 
 **Q. Was ist der Unterschied zwischen Pot Odds und Implied Odds?**
 

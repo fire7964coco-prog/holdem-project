@@ -15,7 +15,7 @@ export const POST: Post = {
   //   번역본에 전파하지 않는다(EN 파일 주석 + docs/locale-intentional-diffs.md) — 검토 완료 표시.
   //   ⚠ EN에는 08-20 커밋(851d8dc7)의 GTO ⑨ 역링크 1문단도 있으나 EN updated가 08-19에 머물러
   //   스테일 게이트 밖이다 — 같은 사유로 전파 제외(locale-intentional-diffs에 함께 등재).
-  masterUpdated: "2026-09-09",
+  masterUpdated: "2026-08-19",
   keepImagesInBody: true,
   readTime: "15 min",
   emoji: "🔥",

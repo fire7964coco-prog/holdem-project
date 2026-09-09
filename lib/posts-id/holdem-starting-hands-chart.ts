@@ -15,7 +15,7 @@ export const POST: Post = {
   //   suited FAQ 정밀화(2pt·AKs 67/AKo 65)는 08-27에 이식 완료. 남은 유일한 델타 = UTG 확장 목록의
   //   AJo 삭제(EN은 «AQo»만) — 사장님 판단 대기 #1(UTG 13% 구성)과 같은 갈래라 임의 소급 금지.
   //   #1 판정 후 함께 반영하고 그때 masterUpdated를 올릴 것.
-  masterUpdated: "2026-09-09",
+  masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "10 mnt",
   emoji: "🂡",

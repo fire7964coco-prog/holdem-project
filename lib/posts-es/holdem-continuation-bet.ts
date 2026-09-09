@@ -99,7 +99,7 @@ No hay un único porcentaje "correcto" de c-bet — quien te dé un solo número
 |:---|:---:|:---|
 | **En posición, mano a mano, board seco** | **70–100%** (pequeño) | El clásico "range bet" — apuesta casi todo, mínimo |
 | **En posición, mano a mano, board húmedo** | **~50–60%** | Más polarizado — valor y proyectos apuestan, el aire pasa |
-| **Fuera de posición, mano a mano (bote de subida simple, tú eras el agresor)** | **~30–45%** | Pasa mucho más para proteger tu rango de check. Como *3-beteador* fuera de posición se invierte — más del 97% en los dos boards que resolvimos, mira el [juego posicional](/es/blog/holdem-position-play) |
+| **Fuera de posición, mano a mano (bote de subida simple, tú eras el agresor)** | **~30–45%** | Pasa mucho más para proteger tu rango de check. Como *3-bettor* fuera de posición se invierte — más del 97% en los dos boards que resolvimos, mira el [juego posicional](/es/blog/holdem-position-play) |
 | **Multiway (2 rivales)** | **~50% o menos** | Alguien seguramente ligó — aprieta |
 | **Multiway (3+ rivales)** | **Solo manos fuertes y buenos proyectos** | El fold equity básicamente desapareció |
 
@@ -129,7 +129,7 @@ En **torneos**, inclínate un pelín más pequeño: el tamaño pequeño sigue si
 
 ![Un jugador de póker actuando primero fuera de posición, los dedos sobre el tapete junto a sus fichas con un rival esperando en la penumbra detrás](/images/holdem-cbet-oop.webp "Fuera de posición actúas primero sin información, así que pasas mucho más y cbeteas un rango más cerrado y fuerte")
 
-Cbetear es mucho más difícil **fuera de posición** en un bote de subida simple — cuando tienes que actuar primero en cada calle sin ninguna lectura de lo que hará tu rival (como 3-beteador la ventaja de rango cambia esto, mira el [juego posicional](/es/blog/holdem-position-play)). Dos ajustes:
+Cbetear es mucho más difícil **fuera de posición** en un bote de subida simple — cuando tienes que actuar primero en cada calle sin ninguna lectura de lo que hará tu rival (como 3-bettor la ventaja de rango cambia esto, mira el [juego posicional](/es/blog/holdem-position-play)). Dos ajustes:
 
 1. **Cbetea menos a menudo.** Sin posición no puedes controlar el bote igual de bien ni realizar tu equity, así que pasas mucho más — incluso manos que serían apuestas automáticas en posición. En algunos boards un solver cbetea fuera de posición en un bote de subida simple solo una cuarta parte de las veces.
 2. **Construye un rango de check de verdad.** Si solo apuestas cuando eres fuerte y pasas cuando eres débil, un rival atento te lee como un libro abierto y ataca cada check. Así que pasas *algunas* manos fuertes a propósito, lo que mantiene tus checks peligrosos y todo tu juego más difícil de enfrentar. Por esto exactamente la [posición](/es/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp") es una ventaja tan estructural — las c-bets simplemente funcionan mejor cuando actúas último.
