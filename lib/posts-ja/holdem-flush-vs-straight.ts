@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "テキサスホールデムではフラッシュ(同じスート5枚・5枚配りで約0.197%)がストレート(連続する5枚・約0.392%)に必ず勝ちます。フラッシュのほうがレアだからです——リバーまでの7枚で見ると3.03%対4.62%(ストレート)。",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-07",
+  updated: "2026-09-09",
   masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "11分",
@@ -23,7 +23,7 @@ export const POST: Post = {
 
 ---
 
-### まず結論から
+### 強さの順位と確率、ひと目で
 
 :::stripe
 フラッシュ > ストレート | 標準のテキサスホールデムでは例外なし

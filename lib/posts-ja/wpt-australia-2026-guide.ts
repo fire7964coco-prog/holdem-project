@@ -366,7 +366,7 @@ WPT オーストラリアへのフル参加が実際にいくらかかるのか�
 /ja/blog/ept-barcelona-2026-guide | EPTバルセロナ 2026 ガイド | /images/ept-barcelona-2026-guide-hero.webp
 :::
 
-## FAQ — WPT オーストラリア 2026
+## よくある質問 — WPT オーストラリア 2026
 
 **Q. WPT Global オンラインでWPT オーストラリア 2026の予選を突破できますか?**
 
