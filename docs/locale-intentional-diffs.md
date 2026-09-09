@@ -73,3 +73,4 @@
 | 2026-09-09 | `holdem-all-in-rules` 실수 4 일화 「머크 순간 칩 소실」 (ja · pt) | **EN·de·es·id에는 일화가 있고 ja·pt는 요약판** — Rule 109 «식별 가능 시 회수» 단서를 옮길 자리 없음 | ✅ 결함 아님 — 일화 없는 판은 잘못된 주장도 없다. 헤드 판정 09-09 (10) |
 | 2026-09-09 | `holdem-starting-hands-chart` UTG 폴드 목록 「77, 88」 행 (pt) | **pt는 「66 e menores」** — EN 77/88 «13% 범위 가장자리» 정정을 옮길 행이 없음 | ✅ 결함 아님 — pt 행은 EN L115 「77–99까지 넓어진다」와 모순되지 않는다. 헤드 판정 09-09 (10) |
 | 2026-09-09 | `holdem-icm` FAQ 「흔한 ICM 실수 3」 · `holdem-bubble` 위성 「온라인 시계는 무료」 (de) | **de에 해당 FAQ·문장이 없다** | ✅ 결함 아님 — de 08-11 재저작 때 FAQ 세트가 갈림. 헤드 판정 09-09 (10) |
+| 2026-09-09 | `holdem-hand-rankings` EN H2 2개 「How Do You Memorize Poker Hands Fast?」·「Are Poker Hand Rankings the Same in Every Game?」 (zh-hant) | **zh-hant에 이 H2 2개가 없다** | ✅ 의도적 — 2026-07 번역 시점부터 없던 구조 · DFS `牌型記憶` 계열 4종 볼륨 null · H2 ② 내용(短牌·奧馬哈 «剛好用兩張»·「90%」)은 본문에 흡수됨(zh-hant 회차 7 §5-38 · 헤드 등재 09-09 (11)) |

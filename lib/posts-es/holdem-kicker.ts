@@ -65,7 +65,7 @@ Digamos que tienes A-K y tu rival A-Q, y la mesa empareja un as. Ambos tienen "p
 
 </div>
 
-La lógica es aritmética pura: **cartas de la combinación + kickers siempre suman cinco.** La pareja usa 2 cartas, así que 3 kickers llenan el resto. Una escalera, un color o un full ya usan las cinco, así que no queda nada con lo que desempatar — dos escaleras o dos fulls se resuelven por los valores que hay *dentro* de ellos, no por una carta lateral.
+La lógica es aritmética pura: **cartas de la combinación + kickers siempre suman cinco.** La pareja usa 2 cartas, así que 3 kickers llenan el resto. Una escalera, un color, un full o una escalera de color ya usan las cinco, así que no queda nada con lo que desempatar — dos escaleras o dos fulls se resuelven por los valores que hay *dentro* de ellos, no por una carta lateral.
 
 ==*El color es el asterisco:== técnicamente un color no tiene "kicker". Cuando chocan dos colores, comparas las cinco cartas de mayor a menor (un color con as gana a uno con rey). Mucha gente llama "kicker" a la carta más alta de forma laxa, pero en rigor es una comparación de cinco cartas por carta alta. El orden completo de desempate para cada mano está en [cómo se rompen los empates en el póker](/es/blog/holdem-tiebreak-rules "thumb:/images/holdem-tiebreak-hero.webp").
 

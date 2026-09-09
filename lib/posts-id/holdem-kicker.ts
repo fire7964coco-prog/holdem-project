@@ -65,7 +65,7 @@ Misalnya Anda pegang A-K dan lawan pegang A-Q, lalu meja memasangkan sebuah ace.
 
 </div>
 
-Logikanya murni aritmetika: **kartu kombinasi + kicker selalu berjumlah lima.** One pair pakai 2 kartu, jadi 3 kicker mengisi sisanya. Straight, flush, atau full house sudah memakai kelimanya, jadi tak ada yang tersisa untuk jadi kicker — dua straight atau dua full house diputuskan oleh nilai *di dalamnya*, bukan oleh kartu samping.
+Logikanya murni aritmetika: **kartu kombinasi + kicker selalu berjumlah lima.** One pair pakai 2 kartu, jadi 3 kicker mengisi sisanya. Straight, flush, full house, atau straight flush sudah memakai kelimanya, jadi tak ada yang tersisa untuk jadi kicker — dua straight atau dua full house diputuskan oleh nilai *di dalamnya*, bukan oleh kartu samping.
 
 ==*Tanda bintang di tabel adalah untuk flush:== secara teknis flush tidak punya "kicker". Saat dua flush bentrok, Anda membandingkan kelima kartu dari tertinggi ke terendah (flush ber-ace tinggi menang atas flush ber-king tinggi). Orang secara longgar menyebut kartu teratas "kicker", tapi ketatnya itu perbandingan high-card lima-kartu. Urutan pemecah seri lengkap untuk tiap tangan ada di [bagaimana seri dipecah di poker](/id/blog/holdem-tiebreak-rules "thumb:/images/holdem-tiebreak-hero.webp").
 

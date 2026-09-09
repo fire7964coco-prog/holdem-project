@@ -64,7 +64,7 @@ Say you hold A-K and your opponent holds A-Q, and the board pairs an ace. You bo
 
 </div>
 
-The logic is pure arithmetic: **combination cards + kickers always equal five.** One pair uses 2 cards, so 3 kickers fill the rest. A straight, flush, or full house already uses all five, so there's nothing left to kick with — two straights or two full houses are settled by the ranks *inside* them, not by a side card.
+The logic is pure arithmetic: **combination cards + kickers always equal five.** One pair uses 2 cards, so 3 kickers fill the rest. A straight, flush, full house, or straight flush already uses all five, so there's nothing left to kick with — two straights or two full houses are settled by the ranks *inside* them, not by a side card.
 
 ==*Flushes are the asterisk:== technically a flush has no "kicker." When two flushes clash, you compare all five cards highest-to-lowest (an ace-high flush beats a king-high flush). People loosely call the top card a "kicker," but strictly it's a five-card high-card comparison. Full tie-break order for every hand lives in [how ties are broken in poker](/en/blog/holdem-tiebreak-rules "thumb:/images/holdem-tiebreak-hero.webp").
 

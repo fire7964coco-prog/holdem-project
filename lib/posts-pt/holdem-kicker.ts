@@ -65,7 +65,7 @@ Digamos que você tenha A-K e seu adversário tenha A-Q, e a mesa pareie um ás.
 
 </div>
 
-A lógica é pura aritmética: **cartas da combinação + kickers sempre somam cinco.** Um par usa 2 cartas, então 3 kickers preenchem o resto. Uma sequência, flush ou full house já usa as cinco, então não sobra nada para desempatar — duas sequências ou dois full houses se resolvem pelos valores *dentro* deles, não por uma carta lateral.
+A lógica é pura aritmética: **cartas da combinação + kickers sempre somam cinco.** Um par usa 2 cartas, então 3 kickers preenchem o resto. Uma sequência, flush, full house ou straight flush já usa as cinco, então não sobra nada para desempatar — duas sequências ou dois full houses se resolvem pelos valores *dentro* deles, não por uma carta lateral.
 
 ==*Os flushes são a exceção com asterisco:== tecnicamente, um flush não tem "kicker". Quando dois flushes se enfrentam, você compara as cinco cartas da mais alta à mais baixa (um flush com ás ganha de um flush com rei). As pessoas chamam informalmente a carta mais alta de "kicker", mas, a rigor, é uma comparação de cinco cartas altas. A ordem completa de desempate de cada mão está em [como os empates são desfeitos no poker](/pt/blog/holdem-tiebreak-rules "thumb:/images/holdem-tiebreak-hero.webp").
 

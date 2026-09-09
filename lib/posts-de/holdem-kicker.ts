@@ -68,7 +68,7 @@ Angenommen, du hältst A-K und dein Gegner hält A-Q, und das Board pairt ein As
 
 </div>
 
-Die Logik ist reine Rechnerei: **Kombinationskarten + Kicker ergeben immer fünf.** Ein Paar nutzt 2 Karten, also füllen 3 Kicker den Rest. Eine Straße, ein Flush oder ein Full House nutzt bereits alle fünf, also bleibt nichts zum Kicken übrig – zwei Straßen oder zwei Full Houses werden über die Ränge *in ihnen* entschieden, nicht über eine Beikarte.
+Die Logik ist reine Rechnerei: **Kombinationskarten + Kicker ergeben immer fünf.** Ein Paar nutzt 2 Karten, also füllen 3 Kicker den Rest. Eine Straße, ein Flush, ein Full House oder ein Straight Flush nutzt bereits alle fünf, also bleibt nichts zum Kicken übrig – zwei Straßen oder zwei Full Houses werden über die Ränge *in ihnen* entschieden, nicht über eine Beikarte.
 
 ==*Flushes sind das Sternchen:== streng genommen hat ein Flush keinen „Kicker“. Wenn zwei Flushes aufeinandertreffen, vergleichst du alle fünf Karten von hoch nach niedrig (ein Ass-hoher Flush schlägt einen König-hohen Flush). Umgangssprachlich nennen die Leute die oberste Karte einen „Kicker“, aber genau genommen ist es ein Fünf-Karten-High-Card-Vergleich. Die vollständige Tiebreaker-Reihenfolge für jede Hand findest du in [wie Gleichstände beim Poker gebrochen werden](/de/blog/holdem-tiebreak-rules "thumb:/images/holdem-tiebreak-hero.webp").
 
