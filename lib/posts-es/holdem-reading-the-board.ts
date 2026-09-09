@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "En Texas Hold'em siempre juegas la mejor mano de 5 cartas entre 7 (2 cartas propias + 5 cartas comunitarias) — usando las dos, una, o ninguna (jugar con la mesa). Repasa las 7 cartas en un orden fijo: color → escalera → parejas → carta alta.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-09-07",
-  masterUpdated: "2026-09-07",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🃏",
@@ -139,7 +139,7 @@ Un color necesita 5 cartas de un mismo palo entre tus 7. La mesa te dice al inst
 | 0–2 | No hay color posible para nadie |
 | 3 | Quien tenga 2 de ese palo tiene color |
 | 4 | Quien tenga solo 1 de ese palo tiene color |
-| 5 | La propia mesa es color — solo lo mejora una carta de ese palo más alta que la más baja de la mesa |
+| 5 | La propia mesa es color — lo mejora una carta de ese palo más alta que la más baja de la mesa, y en una mesa conectada cualquier carta de ese palo que complete una escalera de color — incluso una más baja — gana a todo color |
 
 ![NO ES COLOR — tener A♠ con solo 3 picas en la mesa no forma color en Texas Hold'em](/images/holdem-reading-flush-draw-mistake.webp)
 
@@ -274,11 +274,11 @@ A. No. Secuencias como K-A-2-3-4 o Q-K-A-2-3 no son escaleras en Texas Hold'em �
 
 **Q. ¿Cómo sabes si un color es posible en la mesa?**
 
-A. Cuenta los palos en la mesa. Con 0–2 de un palo, no hay color para nadie. Con 3, un jugador necesita dos de ese palo en la mano; con 4, solo uno; con los 5, la propia mesa es color y solo lo mejora una carta de ese palo más alta que la más baja de la mesa.
+A. Cuenta los palos en la mesa. Con 0–2 de un palo, no hay color para nadie. Con 3, un jugador necesita dos de ese palo en la mano; con 4, solo uno; con los 5, la propia mesa es color: lo mejora una carta de ese palo más alta que la más baja de la mesa — y en una mesa conectada, cualquier carta de ese palo que complete una escalera de color, incluso una más baja, gana a todo color.
 
 **Q. Si hay un color en la mesa, ¿quién gana?**
 
-A. Cuando las cinco cartas comunitarias forman un color, todos los jugadores que queden lo comparten. Solo lo mejora una carta de ese palo más alta que la más baja de la mesa, así que gana quien tenga la más alta de esas cartas. Si nadie tiene una, todos juegan con la mesa y el bote se reparte. (Con solo tres o cuatro cartas del mismo palo en la mesa, únicamente tienen color los jugadores que tengan las cartas de ese palo que faltan.)
+A. Cuando las cinco cartas comunitarias forman un color, todos los jugadores que queden lo comparten. Lo mejora una carta de ese palo más alta que la más baja de la mesa, así que normalmente gana quien tenga la más alta de esas cartas. Si nadie tiene una, todos juegan con la mesa y el bote se reparte. Hay una excepción que rompe la regla: en una mesa conectada, cualquier carta de ese palo que complete una escalera de color vence a todo color — incluso una más baja que la más baja de la mesa. En K♠ 6♠ 5♠ 4♠ 3♠, tanto el 2♠ (escalera de color al 6) como el 7♠ (al 7) ganan al A♠. (Con solo tres o cuatro cartas del mismo palo en la mesa, únicamente tienen color los jugadores que tengan las cartas de ese palo que faltan.)
 
 **Q. Si hay una escalera en la mesa, ¿quién gana?**
 

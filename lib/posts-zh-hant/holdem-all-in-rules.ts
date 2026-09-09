@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "全下（All-in）就是把你面前的每一顆籌碼都押進去。你只能贏到「你跟每位對手對到的那部分」——也就是主池。比你多的籌碼會另外形成一個邊池，那個池你碰不到。而且不足額的全下（不夠一個完整加注）不會重開下注權，已經行動過的玩家只能跟注或蓋牌。",
   category: "rules",
   date: "2026-07-22",
-  updated: "2026-09-06",
-  masterUpdated: "2026-08-12",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "10 分鐘",
   emoji: "♠️",
@@ -51,7 +51,7 @@ export const POST: Post = {
 | 桌上籌碼（Table stakes） | 你只能押這手牌開始時桌上的籌碼 |
 | 翻倍（Double up） | 贏下一次全下、籌碼翻一倍 |
 | 主池（Main pot） | 所有人——包括全下的人——都能贏的池 |
-| 邊池／旁池（Side pot） | 只有籌碼比較多的人能贏；全下的人被排除在外 |
+| 邊池／旁池（Side pot） | 只有籌碼比較多的人能贏；以較少籌碼全下的人被排除在外 |
 
 </div>
 

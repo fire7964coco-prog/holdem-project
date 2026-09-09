@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Texas Hold'em has 5 betting actions: check (pass for free), bet (open the round), call (match a bet), raise (increase it — the minimum raise equals the previous bet or raise), and fold. You can only check when there is no live bet in front of you — preflop that means only the big blind.",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-08-12",
+  updated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "🃏",
@@ -129,7 +129,7 @@ The key insight: the min-raise matches the ==increment== of the last bet or rais
 
 Two live-poker rules that come with raising:
 
-1. **Announce "raise" before moving chips.** Say "call" and then push out more? Your declaration was already binding (==Rule 90.d==) — the extra doesn't count. A real ==string bet== is something else: chips pushed in across multiple motions **without** announcing "raise" first (==Rule 103==).
+1. **Announce "raise" before moving chips.** Say "call" and then push out more? Your declaration was already binding (==Rule 90.d==) — the extra doesn't count. A real ==string bet== is something else: a bet or raise made in multiple motions that include a return to your stack **without** announcing "raise" first — or a deceptive gesture meant to induce action out of turn (==Rule 103==).
 2. **One motion.** If you don't announce, your chips must go in as a single forward motion.
 
 How *much* you should raise (2.5x opens, 3x 3-bets, sizing by board texture) is strategy, not rules — that lives in the [Texas Hold'em strategy pillar](/en/blog/holdem-strategy).
@@ -181,7 +181,7 @@ First to act on the flop, nobody has bet, and a newer player pushes chips in **s
 
 ### Mistake 2 — "I call... actually, raise!"
 
-"I call... actually, raise!" Nope. In live poker your action locks the moment you announce it — under ==Rule 90.d== a verbal declaration in turn is binding. (That is not a string bet, by the way; a string bet is the multiple-motion push covered in the FAQ. Same result though: the first word rules.) I've watched dealers rule this a flat call mid-sentence more times than I can count. Announce "raise" *first*, then move chips.
+"I call... actually, raise!" Nope. In live poker your action locks the moment you announce it — under ==Rule 90.d== a verbal declaration in turn is binding. (That is not a string bet, by the way; a string bet is the multiple-motion push with a return to your stack covered in the FAQ. Same result though: the first word rules.) I've watched dealers rule this a flat call mid-sentence more times than I can count. Announce "raise" *first*, then move chips.
 
 ### Mistake 3 — The big blind folding a free flop
 
@@ -226,7 +226,7 @@ A. It depends on the all-in's size. If the all-in is a full legal raise, action 
 
 **Q. What is a string bet in poker?**
 
-A. Putting chips in across multiple motions without announcing "raise" first (==Rule 103==). Dealers rule string bets as a call of the original amount. Saying "call" and then adding is not a string bet but a binding declaration (==Rule 90.d==) — same effect. Announce your action verbally or move all chips in one motion.
+A. Trying to bet or raise in multiple motions — going back to your stack in between — without announcing "raise" first (==Rule 103==). Dealers rule string bets as a call of the original amount. The same rule also bans a deceptive gesture meant to induce action out of turn before your own action is complete. Saying "call" and then adding is not a string bet but a binding declaration (==Rule 90.d==) — same effect. Announce your action verbally or move all chips in one motion.
 
 **Q. What does it mean to limp in poker?**
 

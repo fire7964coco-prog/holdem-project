@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Going all-in means betting every chip you have. You can only win what you matched from each opponent (the main pot). Extra bets from bigger stacks form a side pot you cannot win. An all-in for less than a full raise does NOT reopen the betting for players who already acted.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-08-12",
+  updated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "♠",
@@ -44,7 +44,7 @@ The foundation is the **table stakes rule**: you can only bet the chips you had 
 | Table stakes | You can only bet what you had at hand start |
 | Double up | Win an all-in and double your stack |
 | Main pot | The pot everyone — including the all-in player — can win |
-| Side pot | Chips only bigger stacks can win; the all-in player is excluded |
+| Side pot | Chips only bigger stacks can win; the player who went all-in for less is excluded |
 
 </div>
 
@@ -248,7 +248,7 @@ A. Running it twice (dealing the remaining community cards twice and splitting t
 
 **Q. What is the "table stakes" rule exactly?**
 
-A. Table stakes means you can only wager chips that were in front of you when the hand started. You cannot add more money once a hand is in progress. This protects both players — you can never be forced to risk more than your stack, and opponents cannot suddenly bet more than you can cover.
+A. Table stakes means you can only wager chips that were in front of you when the hand started. You cannot add more money once a hand is in progress. This protects both players — you can never be forced to risk more than your stack, and whatever an opponent bets beyond your stack cannot cost you anything: it goes into a side pot or comes back as an uncalled bet.
 
 **Q. If two players go all-in for different amounts, who shows first?**
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Blinds adalah taruhan wajib yang dipasang sebelum kartu dibagikan. Small Blind duduk di kiri tombol dealer dan Big Blind di kirinya lagi; Big Blind — biasanya dua kali lipat Small Blind — adalah satuan taruhan di meja.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-08-27",
-  masterUpdated: "2026-07-19",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "9 menit",
   emoji: "💰",
@@ -131,7 +131,7 @@ Ketika hanya tersisa dua pemain (atau di match heads-up), aturan biasanya ==r:te
 
 ## Apa yang Terjadi Kalau Anda Melewatkan Blind? (Dead Blinds)
 
-Kalau Anda duduk di cash game live, biasanya Anda tidak bisa langsung main gratis: Anda **memasang satu Big Blind** untuk langsung dibagikan kartu, atau menunggu blind sampai ke kursi Anda. Kalau Anda meninggalkan meja dan ==**melewatkan blind Anda**==, di kebanyakan cardroom Anda memasangnya saat kembali untuk ikut lagi — Big Blind yang terlewat berlaku sebagai taruhan hidup, dan Small Blind yang terlewat menjadi chip ==**mati**== yang langsung masuk ke pot. Meja online mengurus semua ini secara otomatis.
+Kalau Anda duduk di cash game live, biasanya Anda tidak bisa langsung main gratis: di kebanyakan cardroom Anda **memasang satu Big Blind** untuk langsung dibagikan kartu, atau menunggu blind sampai ke kursi Anda — tetapi ada cardroom yang tidak mewajibkan pemain baru di game no-limit atau pot-limit memasang blind (WSOP Live Action Rules 104.a), jadi tanyakan ke dealer sebelum duduk. Kalau Anda meninggalkan meja dan ==**melewatkan blind Anda**==, di kebanyakan cardroom Anda memasangnya saat kembali untuk ikut lagi — Big Blind yang terlewat berlaku sebagai taruhan hidup, dan Small Blind yang terlewat menjadi chip ==**mati**== yang langsung masuk ke pot. Meja online mengurus semua ini secara otomatis.
 
 ---
 

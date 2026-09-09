@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "No como en el blackjack — la baraja se rebaraja cada mano y se ven muy pocas cartas, así que rastrear cartas altas y bajas no te da ninguna ventaja. Pero el póker tiene su propio conteo legal: contar outs, usar bloqueadores y rastrear cartas muertas para leer lo que tu rival no puede tener.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-08-14",
+  updated: "2026-09-09",
   masterUpdated: "2026-08-14",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -102,7 +102,7 @@ Cada carta que ves elimina posibilidades. Si uno de tus outs de escalera ya est�
 
 **No — contar outs, calcular odds y usar bloqueadores es 100% legal en el póker, porque no es más que matemática mental.** Ninguna regla en ningún sitio prohíbe pensar. Es la definición de destreza.
 
-Aquí está la parte que la gente confunde: contar cartas tampoco es ilegal en el *blackjack* — no es un delito, solo aritmética mental. Pero un casino es un negocio privado y puede vetar o rechazar a un sospechoso de contar, porque un contador le cuesta dinero *a la casa*. El póker le da la vuelta por completo: juegas contra ==otros jugadores==, y la casa solo se lleva el rake gane quien gane. Nadie tiene motivo alguno para impedir que cuentes tus outs — así que todo el problema de "que te echen" simplemente no existe aquí.
+Aquí está la parte que la gente confunde: contar cartas tampoco es ilegal en el *blackjack* — no es un delito, solo aritmética mental. Pero, en la mayoría de las jurisdicciones, un casino es un negocio privado que puede vetar o rechazar a un sospechoso de contar, porque un contador le cuesta dinero *a la casa*. El póker le da la vuelta por completo: juegas contra ==otros jugadores==, y la casa solo se lleva el rake gane quien gane. Nadie tiene motivo alguno para impedir que cuentes tus outs — así que todo el problema de "que te echen" simplemente no existe aquí.
 
 :::note
 La línea que nunca hay que cruzar es la trampa física o de información — cartas marcadas, colusión, compartir info de las cartas tapadas o software de solver en tiempo real online. Eso no es "contar", es fraude. Hacer cuentas de cabeza siempre es juego limpio.
