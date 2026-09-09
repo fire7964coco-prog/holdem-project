@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Straddle adalah taruhan blind opsional — biasanya dua kali big blind — yang dipasang sebelum kartu dibagi. Ia membeli aksi terakhir bagi si straddler dan opsi untuk raise preflop, menggandakan taruhan. Dalam hampir semua kasus ini adalah play -EV, hanya diizinkan di cash game sesuai aturan rumah.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-08-28",
-  masterUpdated: "2026-08-26",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "10 mnt",
   emoji: "💰",
@@ -123,8 +123,8 @@ Bahkan di cash game pun ia opsional dan tergantung aturan rumah: beberapa ruanga
 Jawaban jujurnya, dan yang disepakati para solver: **untuk hampir semua orang, tidak.** Analisis GTO Wizard mengatakannya blak-blakan — dari sudut pandang nilai harapan, straddle adalah play yang merugi. Tiga alasan:
 
 :::card
-🎯 | Anda mengeluarkan uang secara buta | Uang masuk sebelum Anda melihat kartu, jadi Anda memainkan pot yang menggembung tanpa informasi — kerugian yang sama yang membuat blind menjadi kursi terburuk di meja
-📉 | Ia mengecilkan keunggulan posisi Anda | Menggandakan blind menggelembungkan pot awal dan menyisakan lebih banyak pemain yang masih harus beraksi saat Anda berada di kursi steal terbaik. Berlawanan dengan intuisi, solver merespons dengan membuka **lebih sedikit** tangan di pot yang di-straddle — sekitar 15–20% lebih sedikit di button — bukan lebih banyak
+🎯 | Anda mengeluarkan uang secara buta | Uang masuk sebelum Anda melihat kartu, jadi Anda memainkan pot yang menggembung tanpa informasi — kerugian yang sama yang membuat blind menjadi kursi terburuk di meja. Ia juga memangkas kedalaman efektif Anda jadi separuh: di $1/$2 sebuah stack $200 setara 100 big blind, tapi dengan straddle $4 aktif, stack yang sama bermain seperti 50
+📉 | Ia mengecilkan keunggulan posisi Anda | Menggandakan blind menggelembungkan pot awal dan menyisakan lebih banyak pemain yang masih harus beraksi saat Anda berada di kursi steal terbaik. Berlawanan dengan intuisi, solver merespons dengan membuka **lebih sedikit** tangan di pot yang di-straddle — sekitar 15–20% lebih sedikit di button, menurut [simulasi pot straddle GTO Wizard](https://blog.gtowizard.com/preflop-strategy-in-straddled-pots/) — bukan lebih banyak
 💸 | Ia menggembungkan rake | Pot lebih besar berarti lebih banyak [rake](/id/blog/holdem-rake) yang dikeruk darinya, pajak tersembunyi pada setiap tangan yang di-straddle di cash game ber-rake
 :::
 

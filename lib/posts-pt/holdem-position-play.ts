@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Estar in position significa agir por último — você vê a decisão de cada adversário antes de gastar uma ficha. Estudos de solver e de banco de dados sugerem que jogadores out of position capturam só cerca de 60–85% da sua equity — o que deixa você acima de 100% quando está in position. É por isso que o UTG abre ~13% das mãos e o button ~43% — e por que posição reescreve cada c-bet, bluff e decisão de controle de pote no pós-flop.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-09-04",
-  masterUpdated: "2026-08-18",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎯",
@@ -177,7 +177,7 @@ Cada cadeira ganha o seu próprio range de abertura porque **o número de jogado
 | Hijack | ~20% | Começam as oportunidades de roubo |
 | **Cutoff** | **~27%** | Só o button atrás — cadeira nobre de roubo |
 | **Button** | ==g:**~43%**== | Última ação pós-flop garantida — abertura mais larga |
-| Small blind | ~40% (aumenta ou folda) | Largo quando folda até você, mas nunca só paga |
+| Small blind | ~40% (aumenta ou folda) | Largo quando folda até você — aumente em vez de completar contra a maioria dos big blinds; diante de um aumento, 3-bet ou fold — não pague |
 | Big blind | Defende largo vs roubos | Ação de fechamento + pot odds, não aberturas |
 
 ![Mesa de poker de 9 jogadores mostrando ranges de abertura alargando do UTG (~13%, vermelho apertado) ao Button (~43%, verde largo)](/images/holdem-position-play-opening-range.webp "Range de abertura por posição — o UTG abre ~13%, o button ~43%")
@@ -211,10 +211,10 @@ Massivamente. A continuation bet é fundamentalmente uma jogada de informação,
 | Situação | Frequência típica de c-bet no solver (flop) |
 |---|---|
 | **IP (BTN/CO vs defesa de blind)** | **~65–75%** dos boards |
-| OOP (potes de 3-bet dos blinds) | ~40–50% dos boards |
-| Aumentador OOP vs pagador IP | ~30–45% — o mais seletivo |
+| OOP como 3-bettor (potes de 3-bet dos blinds) | Altíssima — nas nossas rodadas de solver o big blind c-beta mais de 97% das vezes nos dois boards, Q♥T♥7♠ e 8♦5♣2♠ |
+| Aumentador OOP vs pagador IP (pote de um aumento) | ~30–45% — o mais seletivo |
 
-In position, você pode dar c-bet num range largo — incluindo ar e backdoor draws — porque o seu adversário precisa responder sem saber a sua próxima jogada, e quando pagam você ainda age por último no turn. Out of position, a mesma aposta é mais arriscada: um check-raise encerra o seu bluff, e um call te deixa adivinhando primeiro em toda street restante. É por isso que dar c-bet 100% cegamente "porque você aumentou no pré-flop" queima dinheiro OOP.
+In position, você pode dar c-bet num range largo — incluindo ar e backdoor draws — porque o seu adversário precisa responder sem saber a sua próxima jogada, e quando pagam você ainda age por último no turn. Out of position, a mesma aposta é mais arriscada: um check-raise encerra o seu bluff, e um call te deixa adivinhando primeiro em toda street restante. É por isso que dar c-bet 100% cegamente "porque você aumentou no pré-flop" queima dinheiro OOP num pote de um aumento só — a linha de quase 100% ali em cima é do 3-bettor, e é a vantagem de range dele que autoriza isso.
 
 O framework completo de sizing e textura de board está no [guia de continuation bet](/pt/blog/holdem-continuation-bet).
 
@@ -222,7 +222,7 @@ O framework completo de sizing e textura de board está no [guia de continuation
 
 ## Estratégia de small blind: por que 3-bet ou fold?
 
-O small blind parece barato — meio blind já dentro — e sai caro: você é o primeiro a agir em toda street pós-flop contra todo mundo. A estratégia moderna convergiu para uma correção seca: ==**do SB, 3-bet ou fold — quase nunca só pagar.**==
+O small blind parece barato — meio blind já dentro — e sai caro: você é o primeiro a agir em toda street pós-flop contra todo mundo. A estratégia moderna convergiu para uma correção seca: ==**do SB, diante de um aumento, 3-bet ou fold — quase nunca só pagar.**==
 
 Só pagar do SB te coloca num range limitado e transparente, OOP, com o big blind ainda atrás de você e com preço para dar squeeze. Em vez disso:
 
@@ -275,11 +275,11 @@ A. Do UTG num jogo full ring, abra mais ou menos as ~13% melhores mãos — pare
 
 **Q. Como a posição afeta a frequência de c-bet?**
 
-A. In position (button ou cutoff), solvers dão c-bet em cerca de 65–75% dos flops — você age por último em toda street seguinte, então apostar largo, incluindo ar, é seguro. Out of position isso cai para cerca de 30–50%, porque um check-raise pode encerrar o seu bluff e um call te deixa adivinhando primeiro no turn e no river. Dar c-bet na mesma frequência OOP e IP é um dos vazamentos mais comuns e mais caros.
+A. In position (button ou cutoff), solvers dão c-bet em cerca de 65–75% dos flops — você age por último em toda street seguinte, então apostar largo, incluindo ar, é seguro. Out of position, num pote de um aumento só, isso cai para cerca de 30–45%, porque um check-raise pode encerrar o seu bluff e um call te deixa adivinhando primeiro no turn e no river (como 3-bettor fora de posição a história é outra — a vantagem de range deixa você dar c-bet em quase todo flop). Dar c-bet na mesma frequência OOP e IP é um dos vazamentos mais comuns e mais caros.
 
 **Q. Você deveria sempre dar 3-bet do small blind?**
 
-A. Quando você entra no pote, na maioria das vezes sim — o padrão moderno do SB é 3-bet ou fold, não só pagar. Só pagar cria um range limitado e out of position que o big blind pode dar squeeze. Dê 3-bet nas suas mãos fortes mais blocker bluffs como A5s/A4s, aumente o tamanho para cerca de 4× a abertura (vs 3× em posição) e folde o resto.
+A. Quando você entra num pote já aumentado, na maioria das vezes sim — o padrão moderno do SB é 3-bet ou fold, não só pagar. Só pagar cria um range limitado e out of position que o big blind pode dar squeeze. Dê 3-bet nas suas mãos fortes mais blocker bluffs como A5s/A4s, aumente o tamanho para cerca de 4× a abertura (vs 3× em posição) e folde o resto.
 
 ---
 

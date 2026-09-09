@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "EPT Barcelona 2026 berlangsung 16–29 Agu di Casino Barcelona. Pemain Italia Manuel Ferrari memenangi Main Event €5.300 dan membawa pulang €1.002.488 dari prize pool €8.841.550 dengan 1.823 entri. Untuk 2027, jalur online termurah tetap Power Path dari $0,50 → Gold Pass (Main Event €5.300 + side event €1.100 + hotel 8 malam + biaya €690). Anda butuh akun PokerStars Live dan paspor yang berlaku, dan sebaiknya pesan hotel lebih awal — Agustus musim puncak.",
   category: "tournament",
   date: "2026-06-17",
-  updated: "2026-09-02",
+  updated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "16 mnt",
   emoji: "🃏",
@@ -62,7 +62,7 @@ Tiga besar menyepakati **deal tiga arah** dan menyisakan hanya ==**€100.000**=
 
 *\* Termasuk deal tiga arah.* Dengan **1.823 entri**, ini adalah **field Main Event terbesar ketujuh dalam sejarah EPT** — patokan yang berguna kalau Anda memperkirakan 2027.
 
-:::note[**Catatan sumber.** Per 31 Agustus 2026, PokerStars belum memublikasikan hasil akhir di halaman resmi event — jadwalnya masih menampilkan semua turnamen sebagai belum dimainkan. Angka di atas berasal dari liputan langsung di lokasi dan sudah dicek silang antara dua media independen (lihat Sumber di akhir). Kami akan menggantinya dengan angka resmi begitu terbit.]:::
+:::note[**Catatan sumber.** Nama juara, hadiah pertama, dan jumlah entri di atas sudah dicocokkan dengan halaman hasil lengkap resmi PokerStars pada 9 September 2026 dan cocok (lihat Sumber di akhir).]:::
 
 ---
 
@@ -233,7 +233,7 @@ Setiap pemain EPT harus punya akun PokerStars Live — ==r:tanpa itu, Anda tidak
 
 ### 2. Deklarasi Source of Funds (Transaksi Tunai)
 
-Inilah satu hal yang hampir tidak ada orang memperingatkan Anda. Setiap kali Anda membayar turnamen dengan **tunai** di Casino Barcelona, ==r:regulasi Spanyol mewajibkan Anda mendeklarasikan sumber uang itu==.
+Inilah satu hal yang hampir tidak ada orang memperingatkan Anda. Kalau Anda membayar turnamen dengan **tunai** di Casino Barcelona, ==r:Anda bisa diwajibkan mendeklarasikan sumber uang itu== — halaman event EPT menyebut "setiap transaksi tunai", sementara formulir deklarasi milik casino sendiri berlaku untuk transaksi tunai senilai 10.000 (€10.000) atau lebih.
 
 **Cara melengkapinya di awal:**
 1. Masuk ke akun **PokerStars Live** Anda di [pokerstarslive.com](https://www.pokerstarslive.com/ept/barcelona/)
@@ -326,7 +326,7 @@ Barcelona El Prat (BCN) berjarak sekitar ==12km dari pusat kota== — kira-kira 
 |:---|:---:|:---:|:---|
 | ==g:**Taksi / Uber**== | 25–35 mnt | €30–€40 | ==g:Paling mudah dengan bagasi== |
 | **Aerobus (A1)** | 35 mnt | ~€6–7 | Ke Plaça Catalunya, lalu taksi atau metro ke casino |
-| **Metro (L9 Sud)** | 45–55 mnt | ~€5–6 | L9 Sud → transit ke L4 → Ciutadella/Vila Olímpica (jalan kaki 10 menit ke casino) |
+| **Metro (L9 Sud)** | 45–55 mnt | ~€5–6 | L9 Sud → ganti jalur di dalam kota untuk mencapai L4 → Ciutadella/Vila Olímpica (jalan kaki 10 menit ke casino; cek stasiun transitnya di perencana rute TMB) |
 | **PokerStars Travel** | Bervariasi | Biaya kecil | Transfer yang diatur sebelumnya, pesan via PokerStars Live |
 
 </div>
@@ -364,7 +364,7 @@ Pada 2026 Day 1 terbagi menjadi dua flight awal — ==Day 1A (22 Agu) dan Day 1B
 |---|---|
 | ~11:00 | Registrasi dibuka (==r:datang saat dibuka — dengan antrean 30–45 menit, «30 menit sebelum kartu dibagikan» sudah terlambat==) |
 | ~12:00 | Kartu dibagikan — Day 1 dimulai |
-| Malam | Akhir permainan Day 1 — biasanya 8 level; jam persisnya tergantung struktur |
+| Malam | Akhir permainan Day 1 — jumlah level dan jam persisnya tergantung struktur |
 | Day 2+ | ==g:Hanya pemain yang mengantongi chip yang lanjut== |
 
 </div>
@@ -423,7 +423,7 @@ A. Anda perlu akun ==**PokerStars Live**== (terpisah dari akun permainan online 
 
 **Q. Apa itu formulir Source of Funds dan apakah benar-benar wajib?**
 
-A. Ya. Berdasarkan regulasi casino Spanyol, setiap transaksi tunai mengharuskan Anda mendeklarasikan asal dana — tidak ada ambang batas yang membuat Anda bebas dari kewajiban ini. Anda bisa melengkapi formulir online lewat akun PokerStars Live Anda di muka — ==g:butuh sekitar 10 menit==. Pembayaran dengan kartu atau token yang dibeli sebelumnya mungkin tidak memerlukannya.
+A. Kalau Anda membayar tunai, siapkan saja. Halaman event EPT menyebut "setiap transaksi tunai" mewajibkan deklarasi asal dana, sementara formulir deklarasi milik casino berlaku untuk transaksi tunai senilai 10.000 (€10.000) atau lebih — jadi pastikan ambang batas dan berkasnya ke casino lebih dulu. Anda bisa melengkapi formulir online lewat akun PokerStars Live Anda di muka — ==g:butuh sekitar 10 menit==. Pembayaran dengan kartu atau token yang dibeli sebelumnya mungkin tidak memerlukannya.
 
 **Q. Apa yang terjadi jika saya memenangkan Gold Pass Power Path — apakah hotel otomatis dipesan?**
 
@@ -439,7 +439,7 @@ A. Kawasan Port Olímpic Barcelona umumnya aman. ==r:Pencopetan lazim di area pa
 
 - **Tanggal festival, venue, buy-in, dan jadwal event** — [PokerStars Live · EPT Barcelona](https://www.pokerstarslive.com/ept/barcelona/) (resmi; dicek 31 Agustus 2026)
 - **Meja final, entri, dan prize pool Main Event 2026** — liputan langsung di lokasi, dicek silang antara [PokerNews](https://www.pokernews.com/news/2026/08/manuel-ferrari-wins-2026-ept-barcelona-main-event-52260.htm) dan [Card Player](https://www.cardplayer.com/poker-news/1741396-manuel-ferrari-wins-ept-barcelona-main-event-for-1-2-million) (keduanya 29 Agustus 2026). Keduanya menyebut ukuran field dan urutan akhir yang sama; keterangan field terbesar ketujuh sepanjang sejarah EPT berasal dari Card Player.
-- ⚠️ PokerStars **belum** memublikasikan hasil resmi saat pembaruan ini ditulis — angkanya akan dicocokkan dengan angka resmi begitu terbit.
+- **Hasil resmi** — [PokerStars · hasil lengkap EPT Barcelona 2026](https://www.pokerstars.com/poker/learn/news/ept-barcelona-2026-full-results/) (dicek 9 September 2026 — juara, hadiah, dan jumlah entri sudah dicocokkan)
 
 ---
 

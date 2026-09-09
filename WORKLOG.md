@@ -1,3 +1,35 @@
+## 2026-09-09 (10) — **대기열 39 EN-먼저 회차 종결 — EN 23편 원문 판정·정정 + 6로케일 전파(de·es·pt·id·ja) · zh·zh-hant는 레인 회차 7 소급으로 이관** (Fable 헤드 · 렌즈·전파 Opus 서브 7 · 커밋 `125c83f5`)
+
+사장님 「1 진행해」(핸드오프 첫 일 표 1번). 규율 = «로케일에서 고치지 마라 → EN 원문 판정 → EN 정정 → 로케일». 검수장 지적을 그대로 받아쓰지 않고 전건 원문·계산·1차 출처로 판정했다.
+
+**EN 원문 판정(23편 · 정정 62 + 렌즈 정정 19)** — 출처: MA-126 ① A~N(14) · MA-127 ③ O~W(9) + I 확장 · MA-125 ④ · zh-hant §5-27(7) · zh §5-23(3) · 대기열 33(9) · 대기열 36(2). 전건 채택. 주요 판정:
+| 자리 | 판정·근거 |
+|---|---|
+| probability E 쿼드 A | 전수 계산 **1 in 7,735** · 경로 배분 홀1+보드3 **57.1%** / AA+2 28.6% / 보드4 14.3% → FAQ에 최빈 경로 추가 |
+| probability F 「most flops miss everyone」 | 2인 동시 미스는 ~41%라 거짓 → 「any single opponent has missed ~2/3」 |
+| drawing-odds B·I | 「둘 다 셋 플랍」 1.02%로 정의 정합 · 1.3%는 54s~JTs 한정(AK 0.33%) · SF 4플랍은 QJs 3 · KQs 2 · A2s 1 |
+| equity G·K·U | 「ceiling」→「starting point」(포지션 시 >100% 실현과 모순 해소) · 체크리스트 콜/벳 분기 · 올인 「with cards still to come」 |
+| card-counting C·W | 홀덤에서 아웃은 보드에 못 있다(있으면 완성) → dead card = **보드 밖 노출**(pt 정본 이식) · 「kicked out 문제 없음」 완화 |
+| implied D·R | heads-up 0 · 멀티웨이 사이드팟 · 숏스택은 「거의 없음」 |
+| bad-beat 27-1·27-2·27-3·§5-23 | 플랍 셋 한정 · **마부치: 턴 A♥9♣Q♦10♦에서 필립스 K♦J♦ = A-K-Q-J-10 브로드웨이 선행**(🔴 검수장 27-2의 K-Q-J-10-9는 보드 A♥ 누락 — 내 1차 문안도 같은 오류를 냈고 렌즈 2종이 독립 검출) · PokerNews 축어(WebFetch)는 리버 액션만 기술 → 「Only then」 삭제 · ~65%→**~63%(1.7:1)**(순수 9아웃 상한 63.4% · 검산 62.2~63.4) · 표 라벨 · 첫 링크 = glossary |
+| straddle 27-6·27-7 | GTO Wizard 「Preflop Strategy in Straddled Pots」 축어 «the BTN … opens 15–20% less frequently» 확인 → 링크 · 100bb→50bb 유효 스택 삽입 |
+| position-play 33-① | c-bet 표 2행 40–50%는 **팟 종류 혼동** → 「3벳팟의 3베터 97%+」(자사 솔버 99.1%/98.1% 총 벳 · 98.4/97.8은 2/3 사이즈 점유율이라 «97% 이상»으로) · FAQ 30–50%→표와 맞춘 30–45% |
+| SB 33-② | position-play = «facing a raise 3-bet or fold» / limping = «unraised pot complete» 국면 분리 |
+| when-to-fold 33-⑥ | 34%는 리버까지 2장 값이라 1콜 가격과 비교 불가(1장 15.6%) → 임플라이드 오즈 근거로 재작성(딜러 렌즈) |
+| 3bet 33-⑧ | 4벳 $55(3.06x)→**$48(2.7x · CO는 OOP라 IP 2.2–2.5x보다 «touch larger»)** |
+| chart 33-⑦ | 6.5%→**6.40%**(135,597/2,118,760) · 77/88은 UTG 13% 범위 가장자리 |
+| bubble 36 | P = 콜 제외 기존 팟(52.9%/42.9% 예시와 정합) · 6인 FT 2.0+는 미들스택 |
+| split-pot N | 무늬 명시 = **히어로 이미지와 동일 J♠10♥ vs 5♣2♦ · 8♠8♥8♦A♣K♠**(렌즈가 이미지를 열어 잡음) |
+| showdown Q · all-in ④ · tiebreak T/#45 · kicker O | TDA 16 «all betting action complete» · Rule 109 식별 가능 시 회수 · 5번째 카드 열거에 투페어 키커 + A♠3♠ vs A♦2♦ 촙 · 키커 없는 이유 = 홀카드가 베스트5 밖 |
+| 대기열 33 ⑨ tldr↔직답 축어중복 | **실측(스크립트) 최장 공통 ≤9단어** → 결함 아님 · 역할 분리 불필요(기록만) |
+
+**렌즈**: 딜러/수학 + 교열 diff(Opus 병렬) → 지적 6+15 → 채택 4+9 · 기각(저우선 문체 4) → **2차 교열** 1 회귀(FAQ 30–50%) + 셀 1 + 문안 2 반영. 「쓴 모델이 본 0건은 0건이 아니다」 실증 — 브로드웨이 오류는 내가 만들었고 렌즈가 잡았다.
+
+**전파**: de 27 · es 28 · pt 28 · id 28 · ja 19(동결 9편 제외: kicker·c-bet는 EN 변경 있음 → 회차 8 · 나머지 7편 EN 변경 없음) — Part 1(오늘 23편) + Part 2(어제 EN 정정 `af6ca275` icm·bubble·tournament·apt·ept + `e47a3f2f` hand-rankings·all-in tldr·pot-odds·beginners). 전파 도중 EN이 렌즈로 바뀌어 **델타 11건을 후속 지시**(es는 라이브 EN을 스스로 재대조). «없음»(로케일에 해당 주장 없음) = ja/pt probability 쿼드A·플랍미스 FAQ · ja all-in 일화 · pt chart 77/88 행 · de icm 실수 FAQ·bubble 온라인 시계 · de/pt hand-rankings 5장 기준(이미 정본). **masterUpdated 드리프트 트래커는 보류 유지**(id·pt·ja c-bet 08-19 · id chart 08-11 · de beginners 07-12 · de showdown 07-12 미수정).
+🔴 **zh·zh-hant는 손대지 않았다**(§6-0 · 두 레인이 회차 7 전 코퍼스 소급 중 · zh 16편/zh-hant 22편이 레인 브랜치에서 변경) → HARDEN.md 통지 + 진행 파일 §5로 «회차 7 소급에 포함하라» · 못 받으면 머지 후 헤드 전파.
+
+**게이트**: audit:hard en 56 · de 43 · es 60 · pt 42 · id 42 · ja 57 **🔴 0**(🟠은 기존 C2) · cjk 0 · meta 0 · seo-sync 0 · 빌드 708/708 ✓ · 푸시 `125c83f5`. 우편함 MB-022 발신(검수장 델타 재판정 · MA-125~127 EN-먼저 종결 회신).
+
 ## 2026-09-09 (8) — **🇯🇵 ja 회차 7(횡단 표기·구조 소급 16편+) 머지 + 헤드 요청 14건 판정 · 🇹🇼 zh-hant 회차 6(용어 6편) 머지 + 헤드 요청 26~31 판정 — 세 레인 42/42 완주** (Fable · 헤드 · 커밋 `e47a3f2f`)
 
 사장님 「zh-hant 회차 6 끝났어, 머지해」 → 이어서 「ja 회차 7 끝났어, 머지해」. 두 머지를 한 빌드·배포로 닫았다.

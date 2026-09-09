@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Rake adalah potongan kecil yang diambil cardroom dari setiap pot untuk menyelenggarakan permainan — biasanya 2,5–10% hingga cap beberapa dolar. Sebagian besar room tidak mengambil apa pun jika semua fold sebelum flop ('no flop, no drop'). Ia paling memukul pemain stake rendah dan short-handed, dan rakeback mengembalikan sebagian kepada regular.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-08-28",
-  masterUpdated: "2026-08-26",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "11 mnt",
   emoji: "🏦",
@@ -76,7 +76,7 @@ Inilah bagian yang mengubah cara saya memandang permainan. Persentasenya terdeng
 
 **Sebuah live game $1/$2.** Dengan rake 10% cap $5 dan kira-kira 30 tangan dibagikan per jam, sebagian besar pot yang diperebutkan mengenai atau mendekati cap. Satu meja sibuk saja bisa membayar **$100+ per jam** ke dalam drop di antara semua pemain. Uang itu keluar langsung dari kemenangan kolektif — itulah alasan sebuah meja penuh pemain yang kurang lebih setara perlahan menguras chip ke house.
 
-**"Jebakan rake" stake rendah.** Inilah intinya yang harus didengar setiap pemula. Karena cap nyaris tak ikut turun saat Anda turun stake, makin *rendah* Anda bermain, makin *besar* gigitan yang diambil rake secara proporsional. Contoh terhitung di NL50 online (ilustratif, dan berayun tergantung berapa banyak tangan Anda mainkan):
+**"Jebakan rake" stake rendah.** Inilah intinya yang harus didengar setiap pemula. Karena cap nyaris tak ikut turun saat Anda turun stake, makin *rendah* Anda bermain, makin *besar* gigitan yang diambil rake secara proporsional. Contoh terhitung di NL50 online (ilustratif — angka persisnya bergerak mengikuti berapa banyak pot yang Anda perebutkan dan bagaimana room menerapkan cap-nya, bukan berapa banyak tangan yang Anda mainkan):
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -162,7 +162,7 @@ A. Rakeback mengembalikan persentase dari rake yang Anda bayar secara pribadi �
 
 **Q. Bagaimana cara membayar rake lebih sedikit di poker?**
 
-A. Anda tak bisa lolos sepenuhnya dari rake di permainan ber-rake, tapi Anda bisa mengecilkannya: ambil deal rakeback terbaik yang bisa Anda dapat, dan pilih room dengan cap yang ramah pemain. Naik stake juga mengecilkan rake, karena cap tetap menjadi porsi yang lebih kecil dari tiap pot — tapi ambil langkah itu hanya jika bankroll Anda menanggung ayunannya *dan* Anda masih unggul atas lapangan yang lebih keras; kalau tidak, para pemain akan mengambil jauh lebih banyak daripada yang pernah diambil rake. Tiga kebiasaan lain juga membantu: mainkan pot yang lebih sedikit tapi lebih besar ketimbang banjir pot kecil yang kena cap, hindari meja yang sangat short-handed (Anda memainkan jauh lebih banyak tangan per jam dan memasang blind jauh lebih sering, jadi Anda ada di lebih banyak pot ber-rake), dan pertimbangkan game time-charge stake tinggi. Dari sisi biaya murni, home game tanpa rake adalah poker termurah yang ada — tak ada yang disaring dari pot.
+A. Anda tak bisa lolos sepenuhnya dari rake di permainan ber-rake, tapi Anda bisa mengecilkannya: ambil deal rakeback terbaik yang bisa Anda dapat, dan pilih room dengan cap yang ramah pemain. Naik stake juga mengecilkan rake, karena cap tetap menjadi porsi yang lebih kecil dari tiap pot — tapi ambil langkah itu hanya jika bankroll Anda menanggung ayunannya *dan* Anda masih unggul atas lapangan yang lebih keras; kalau tidak, para pemain akan mengambil jauh lebih banyak daripada yang pernah diambil rake. Memainkan pot yang lebih sedikit tapi lebih besar ketimbang banjir pot kecil juga menurunkannya: cap hanya mulai bekerja di pot besar, sementara pot kecil membayar persentase penuh. Begitu juga menghindari meja yang sangat short-handed — di sana Anda memainkan jauh lebih banyak tangan per jam dan memasang blind jauh lebih sering, jadi Anda ada di lebih banyak pot ber-rake — dan memilih game time-charge stake tinggi. Dari sisi biaya murni, home game tanpa rake adalah poker termurah yang ada — tak ada yang disaring dari pot.
 
 **Q. Apakah mengambil rake itu ilegal?**
 

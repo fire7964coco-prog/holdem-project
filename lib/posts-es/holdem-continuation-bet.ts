@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Una apuesta de continuación (c-bet) es una apuesta en el flop del jugador que subió antes del flop. La regla moderna no es 'cbetear cada flop' — es apostar los flops que favorecen tu rango (boards altos y secos como K-7-2) pequeño y a menudo, y pasar los que favorecen a tu rival (boards bajos y conectados como 7-6-5). Apuesta pequeño — un tercio del bote — en boards secos, grande — dos tercios o más — en los húmedos, cbetea menos fuera de posición y mucho menos multiway.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-07-24",
-  masterUpdated: "2026-08-19",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "15 min",
   emoji: "🔥",
@@ -121,7 +121,7 @@ Ponle números reales. Digamos que el bote es de ==$30== en el flop:
 - Una c-bet de **un tercio del bote** es ==$10== — tu apuesta de rango en board seco.
 - Una c-bet de **dos tercios del bote** es ==$20== — tu tamaño de board húmedo para cobrarles a los proyectos.
 
-En **torneos**, inclínate un pelín más pequeño — a menudo **medio bote o menos** — porque tu stack es precioso y no puedes recargar. Elijas lo que elijas, ata el tamaño al board, no a la costumbre.
+En **torneos**, inclínate un pelín más pequeño: el tamaño pequeño sigue siendo un tercio, pero el grande es más a menudo **medio bote** que dos tercios, porque tu stack es precioso y no puedes recargar. Elijas lo que elijas, ata el tamaño al board, no a la costumbre.
 
 ---
 
@@ -226,7 +226,7 @@ A. Depende de la posición, el board y el número de rivales, así que trátalo 
 
 **Q. ¿Cuánto deberías cbetear?**
 
-A. Ajusta el tamaño al board. En boards secos y estáticos apuesta pequeño — alrededor de un tercio del bote — porque el rango de tu rival es débil y no necesitas cobrarles a los proyectos. En boards húmedos y dinámicos apuesta grande — dos tercios del bote o más — para cobrarles a los colores y proyectos de escalera y construir el bote con tus manos fuertes. En torneos, inclínate más pequeño, a menudo medio bote o menos.
+A. Ajusta el tamaño al board. En boards secos y estáticos apuesta pequeño — alrededor de un tercio del bote — porque el rango de tu rival es débil y no necesitas cobrarles a los proyectos. En boards húmedos y dinámicos apuesta grande — dos tercios del bote o más — para cobrarles a los colores y proyectos de escalera y construir el bote con tus manos fuertes. En torneos el tamaño grande se encoge — medio bote más a menudo que dos tercios — mientras que el pequeño sigue siendo un tercio.
 
 **Q. ¿Deberías cbetear fuera de posición?**
 
@@ -254,7 +254,7 @@ A. Una apuesta de valor es una apuesta hecha con una mano fuerte esperando que t
 
 **Q. ¿De qué tamaño debe ser una c-bet? (cuánto apostar en una cbet)**
 
-A. El tamaño lo marca la textura del board, con dos marchas que cubren casi todo. En boards secos y estáticos apuesta pequeño — alrededor de un tercio del bote: si el bote es de $30, cbeteas $10. En boards húmedos y dinámicos apuesta grande — dos tercios del bote o más ($20 sobre ese bote de $30) — para cobrarles a los colores y proyectos de escalera y construir el bote con tus manos fuertes. En torneos, inclínate más pequeño, a menudo medio bote o menos, porque no puedes recargar el stack.
+A. El tamaño lo marca la textura del board, con dos marchas que cubren casi todo. En boards secos y estáticos apuesta pequeño — alrededor de un tercio del bote: si el bote es de $30, cbeteas $10. En boards húmedos y dinámicos apuesta grande — dos tercios del bote o más ($20 sobre ese bote de $30) — para cobrarles a los colores y proyectos de escalera y construir el bote con tus manos fuertes. En torneos el tamaño grande se encoge — medio bote más a menudo que dos tercios — mientras que el pequeño sigue siendo un tercio, porque no puedes recargar el stack.
 
 **Q. ¿Cuál es un buen porcentaje de c-bet?**
 

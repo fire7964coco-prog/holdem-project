@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Reglas del all-in en Texas Hold'em: side pots, resubidas y showdown",
   seoTitle: "¿All-in y no sabes qué ganas? — Reglas del all-in y side pots",
   desc: "Vas all-in y el dealer separa las fichas en dos montones. Reglas del all-in en Texas Hold'em: table stakes, bote principal, side pots, resubidas y showdown.",
-  tldr: "Ir all-in es apostar todas las fichas que tienes delante. Solo puedes ganar de cada rival lo que hayas igualado (el bote principal); las fichas extra de los stacks más grandes forman un side pot que no puedes tocar. Un all-in menor que una subida completa NO reabre la apuesta para quienes ya actuaron.",
+  tldr: "Ir all-in es apostar todas las fichas que tienes delante. Solo puedes ganar de cada rival lo que hayas igualado (el bote principal); las fichas extra de los stacks más grandes forman un side pot que solo pueden ganar los jugadores que las cubrieron. Un all-in menor que una subida completa NO reabre la apuesta para quienes ya actuaron.",
   category: "rules",
   date: "2026-06-15",
   updated: "2026-09-09",
@@ -219,7 +219,7 @@ Table stakes. Lo que hay en la mesa es todo lo que puedes apostar. Si estás all
 
 ### Error 4: tirar tu mano demasiado pronto
 
-Estás all-in por el bote principal. Otros dos jugadores se pelean por el side pot. Una vez vi a un stack corto tirar sus cartas en cuanto el showdown del side pot se le puso en contra — olvidando que él ni siquiera estaba en ese bote, y que el principal seguía siendo suyo por ganar. Esas fichas se esfumaron en el instante en que las cartas tocaron el muck. No tires tus cartas — tu mano sigue viva para el bote principal. ==Espera siempre a que el dealer resuelva todos los botes antes de tocar tus cartas.==
+Estás all-in por el bote principal. Otros dos jugadores se pelean por el side pot. Una vez vi a un stack corto tirar sus cartas en cuanto el showdown del side pot se le puso en contra — olvidando que él ni siquiera estaba en ese bote, y que el principal seguía siendo suyo por ganar. En cuanto el dealer las barrió al muck dejaron de ser identificables — mano muerta, y el bote principal se fue para el otro lado. (Si la mano todavía se puede identificar con claridad, el floor puede decidir recuperarla, pero nunca cuentes con ello.) No tires tus cartas — tu mano sigue viva para el bote principal. ==Espera siempre a que el dealer resuelva todos los botes antes de tocar tus cartas.==
 
 ### Error 5: ir all-in por frustración
 

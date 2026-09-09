@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Saat showdown, pemain terakhir yang bet atau raise buka kartu duluan. Kalau river di-cek habis, pemain aktif pertama di kiri tombol dealer yang buka duluan. Anda boleh muck tanpa menunjukkan kartu kalau kalah, tapi pemain yang meng-call bet river boleh minta melihat hand si pembuat bet.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-08-27",
-  masterUpdated: "2026-08-25",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "10 menit",
   emoji: "🃏",
@@ -172,7 +172,7 @@ A. Ya — kalau Anda pemain terakhir yang bet atau raise di river, Anda wajib bu
 
 **Q. Boleh muck saat showdown tanpa menunjukkan kartu?**
 
-A. Boleh, tapi hanya kalau Anda jelas-jelas kalah. Begitu hand pemenang dibuka, pemain yang kalah boleh muck menghadap ke bawah. Pengecualiannya kalau hand Anda di-call — pemain yang sudah membayar untuk itu boleh minta melihatnya — dan kalau ada yang all-in di turnamen, tidak seorang pun boleh muck sama sekali. Kalau masih ada keraguan siapa yang menang, jangan pernah muck sebelum dealer membaca kedua hand.
+A. Boleh, tapi hanya kalau Anda jelas-jelas kalah. Begitu hand pemenang dibuka, pemain yang kalah boleh muck menghadap ke bawah. Pengecualiannya kalau hand Anda di-call — pemain yang sudah membayar untuk itu boleh minta melihatnya — dan di turnamen, begitu seorang pemain all-in dan seluruh aksi taruhan selesai, setiap hand di pot utama maupun side pot wajib dibuka — tidak seorang pun boleh muck (TDA Rule 16). Kalau masih ada keraguan siapa yang menang, jangan pernah muck sebelum dealer membaca kedua hand.
 
 **Q. Apa itu slow roll dalam poker dan kenapa buruk?**
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Até o river você faz um par 43,8% das vezes, dois pares 23,5%, um flush 3,0% e um full house 2,6% — enquanto um royal flush aparece só uma vez a cada 31.000 mãos.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-04",
-  masterUpdated: "2026-08-11",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🎲",
@@ -127,7 +127,7 @@ Você tem um projeto no flop. Com que frequência você o completa? Tudo se resu
 
 </div>
 
-O caso clássico: você flopa um **projeto de flush** (nove outs). Você chega lá ==35% das vezes até o river== — melhor que uma em três. Um **projeto de sequência aberta** (oito outs) acerta 31,5%. Repare nas duas colunas: quando o turn é um brick, suas odds numa *única* carta praticamente caem pela metade, e é exatamente por isso que os projetos ficam mais caros de perseguir street após street.
+O caso clássico: você flopa um **projeto de flush** (nove outs). Você chega lá ==35% das vezes até o river== — melhor que uma em três. Um **projeto de sequência aberta** (oito outs) acerta 31,5%. Repare nas duas colunas: quando o turn é um brick você passa a ter uma carta por vir em vez de duas, então suas odds praticamente caem pela metade — os 35% do projeto de flush viram 19,6% —, e é exatamente por isso que os projetos ficam mais caros de perseguir street após street.
 
 ---
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "El EPT Barcelona 2026 se jugó del 16 al 29 de agosto en Casino Barcelona. El italiano Manuel Ferrari ganó el Main Event de €5,300 y se llevó €1,002,488 de un bote de €8,841,550 con 1,823 entradas. Para 2027, la vía online más barata sigue siendo el Power Path desde $0.50 → Gold Pass (Main de €5,300 + side event de €1,100 + 8 noches de hotel + €690 de gastos). Necesitas cuenta de PokerStars Live y pasaporte en regla, y conviene reservar hotel pronto — agosto es plena temporada alta.",
   category: "tournament",
   date: "2026-06-17",
-  updated: "2026-09-02",
-  masterUpdated: "2026-09-02",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🃏",
@@ -63,7 +63,7 @@ Los tres primeros cerraron un **acuerdo a tres bandas** dejando solo ==**€100,
 
 *\* Incluye el acuerdo a tres bandas.* Con **1,823 entradas**, fue el **séptimo Main Event más grande de la historia del EPT** — una referencia útil si estás calculando cómo será 2027.
 
-:::note[**Nota sobre las fuentes.** A 31 de agosto de 2026, PokerStars todavía no había publicado los resultados finales en sus páginas oficiales: el calendario sigue mostrando todos los eventos como no disputados. Las cifras de arriba vienen de la cobertura en directo desde la sala y están contrastadas entre dos medios independientes (ver Fuentes al final). Las sustituiremos por las oficiales en cuanto se publiquen.]:::
+:::note[**Nota sobre las fuentes.** El ganador, el primer premio y el número de entradas de arriba se contrastaron el 9 de septiembre de 2026 con la página oficial de resultados completos de PokerStars y coinciden (ver Fuentes al final).]:::
 
 ---
 
@@ -234,7 +234,7 @@ Todo jugador del EPT debe tener una cuenta de PokerStars Live — ==r:sin ella, 
 
 ### 2. Declaración de Origen de Fondos (transacciones en efectivo)
 
-Este es el trámite del que casi nadie te avisa. Cada vez que pagues un torneo con **efectivo** en el Casino Barcelona, ==r:la normativa española te obliga a declarar el origen de ese dinero==.
+Este es el trámite del que casi nadie te avisa. Si pagas un torneo con **efectivo** en el Casino Barcelona, ==r:te pueden exigir que declares el origen de ese dinero== — la página del evento del EPT habla de "cualquier transacción en efectivo", mientras que el propio formulario de declaración del casino se aplica a transacciones en efectivo de 10.000 (€10.000) o más.
 
 **Cómo completarla por adelantado:**
 1. Inicia sesión en tu cuenta de **PokerStars Live** en [pokerstarslive.com](https://www.pokerstarslive.com/ept/barcelona/)
@@ -327,7 +327,7 @@ El aeropuerto de Barcelona El Prat (BCN) está a unos ==12 km del centro de la c
 |:---|:---:|:---:|:---|
 | ==g:**Taxi / Uber**== | 25–35 min | €30–€40 | ==g:Lo más cómodo con maletas== |
 | **Aerobús (A1)** | 35 min | ~€6–7 | Hasta Plaça Catalunya, luego taxi o metro al casino |
-| **Metro (L9 Sud)** | 45–55 min | ~€5–6 | L9 Sud → transbordo a L4 → Ciutadella/Vila Olímpica (10 min a pie al casino) |
+| **Metro (L9 Sud)** | 45–55 min | ~€5–6 | L9 Sud → cambio de línea ya en la ciudad para llegar a la L4 → Ciutadella/Vila Olímpica (10 min a pie al casino; consulta la estación de transbordo en el planificador de rutas de TMB) |
 | **PokerStars Travel** | Variable | Pequeña tarifa | Traslado concertado, se reserva por PokerStars Live |
 
 </div>
@@ -365,7 +365,7 @@ En 2026 el Día 1 se repartió en dos flights de salida — ==Día 1A (22 ago) y
 |---|---|
 | ~11:00 | Abre el registro (==r:llega a la apertura — con colas de 30–45 min, «30 min antes de las cartas» ya es tarde==) |
 | ~12:00 | Cartas al aire — arranca el Día 1 |
-| Por la noche | Fin del juego del Día 1 — normalmente 8 niveles; la hora exacta depende de la estructura |
+| Por la noche | Fin del juego del Día 1 — el número de niveles y la hora exacta dependen de la estructura |
 | Día 2+ | ==g:Solo continúan los jugadores que embolsaron fichas== |
 
 </div>
@@ -424,7 +424,7 @@ A. Necesitas una cuenta de ==**PokerStars Live**== (independiente de tu cuenta d
 
 **Q. ¿Qué es el formulario de Origen de Fondos y es realmente obligatorio?**
 
-A. Sí. Bajo la normativa española de casinos, cualquier transacción en efectivo te obliga a declarar el origen de los fondos — no hay un umbral por debajo del cual quedes exento. Puedes completar el formulario online a través de tu cuenta de PokerStars Live por adelantado — ==g:lleva unos 10 minutos==. Los pagos con tarjeta o con tokens comprados por adelantado pueden no requerirlo.
+A. Si pagas en efectivo, cuenta con ello. La página del evento del EPT dice que "cualquier transacción en efectivo" exige declarar el origen de los fondos, mientras que el formulario de declaración del casino se aplica a transacciones en efectivo de 10.000 (€10.000) o más, así que confirma el umbral y el papeleo con el casino por adelantado. Puedes completar el formulario online a través de tu cuenta de PokerStars Live por adelantado — ==g:lleva unos 10 minutos==. Los pagos con tarjeta o con tokens comprados por adelantado pueden no requerirlo.
 
 **Q. Si gano un Gold Pass del Power Path, ¿el hotel se reserva automáticamente?**
 
@@ -440,7 +440,7 @@ A. La zona del Port Olímpic de Barcelona es, en general, segura. ==r:Los carter
 
 - **Fechas, sede, buy-ins y calendario de eventos** — [PokerStars Live · EPT Barcelona](https://www.pokerstarslive.com/ept/barcelona/) (oficial; consultado el 31 de agosto de 2026)
 - **Mesa final, entradas y bote del Main Event 2026** — cobertura en directo desde la sala, contrastada entre [PokerNews](https://www.pokernews.com/news/2026/08/manuel-ferrari-wins-2026-ept-barcelona-main-event-52260.htm) y [Card Player](https://www.cardplayer.com/poker-news/1741396-manuel-ferrari-wins-ept-barcelona-main-event-for-1-2-million) (ambos del 29 de agosto de 2026). Coinciden en el tamaño del field y en el orden de la mesa final; lo del séptimo mayor Main Event del EPT lo aporta Card Player.
-- ⚠️ PokerStars **no** había publicado resultados oficiales al cierre de esta actualización; las cifras se contrastarán con las oficiales cuando aparezcan.
+- **Resultados oficiales** — [PokerStars · resultados completos del EPT Barcelona 2026](https://www.pokerstars.com/poker/learn/news/ept-barcelona-2026-full-results/) (consultado el 9 de septiembre de 2026 — ganador, premio y número de entradas contrastados)
 
 ---
 

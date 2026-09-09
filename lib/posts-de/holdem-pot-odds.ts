@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Um die Pot Odds zu berechnen, teilst du den Betrag, den du callen musst, durch den gesamten Pot nach deinem Call. Ein $50-Call in einen $150-Pot = 50 ÷ 200 = 25% – du brauchst also mindestens 25% Equity, damit der Call profitabel ist.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-06",
-  masterUpdated: "2026-09-06",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "12 Min.",
   emoji: "🧮",
@@ -170,7 +170,7 @@ Vollständige Herleitungen für jeden Draw und jede fertige Hand findest du in d
 Fast alle teuren Fehler sind Varianten desselben Musters: **die Rechnung kippt in eine Richtung, ohne dass du es merkst.** Vergisst du deinen eigenen Call im Nenner, wirkt der Preis **zu teuer** und du foldest richtige Calls. Zählst du dagegen Outs mit, die gar nicht gewinnen, oder wendest die ×4 auf eine Street an, die du gar nicht kaufst, **überschätzt du deine Equity**. Ich habe jeden einzelnen davon gemacht, bevor ich sie mir abgewöhnt habe. Achte auf sie:
 
 :::card
-🧮 | Den Call zu vergessen | Benötigte Equity ist Call ÷ *finaler* Pot – zähle deine eigenen Chips mit, sonst überschätzt du jeden Preis
+🧮 | Den Call zu vergessen | Benötigte Equity ist Call ÷ *finaler* Pot – zähle deine eigenen Chips mit, sonst überschätzt du die nötige Equity und foldest Calls, die du machen solltest
 🃏 | Dirty Outs mitzählen | Ein Flush-Out, das auch das Board paart, kann jemandem ein Full House machen. Rechne „schmutzige“ Outs raus, bevor du der Zahl traust
 🚀 | Die Faustregel falsch anwenden | ×4 gilt nur, wenn du beide Karten gratis siehst (all-in). Gegen eine Turn-Bet ist es ×2 – mit ×4 redest du dich in verlierende Calls hinein
 💸 | Implied & Reverse Implied Odds ignorieren | Tiefe Stacks belohnen Draw-Hände; ein Non-Nut-Draw, der in eine bessere Hand trifft, ist eine Falle, kein Zahltag
@@ -182,7 +182,7 @@ Fast alle teuren Fehler sind Varianten desselben Musters: **die Rechnung kippt i
 
 Ich halte ==b:A♥ K♥== auf einem ==Q♥ 7♥ 2♣== Flop – der Nut-Flushdraw, 9 Outs. Der Pot ist $100, Villain bettet $50. Meine Pot Odds: ich bekomme 3:1, also brauche ich **25%**. Mit zwei kommenden Karten liege ich bei ~35%, und selbst wenn ich nur die nächste Karte zähle (19,1%), sind meine Implied Odds riesig – kommt ein Herz, nehme ich einer Top-Pair-Hand den Stack ab. ==g:Easy Call.==
 
-Der Turn ist die 3♠ – ein Brick. Der Pot ist $200 und Villain jammt $200 – eine Pot-Size-Bet, also bekomme ich jetzt nur noch 2:1 und brauche **33%**. Aber mit **einer verbleibenden Karte ist mein Flush nur 19,6%**. Der direkte Preis sagt Fold; meine Implied Odds sind jetzt null, weil Villain all-in ist und mir nichts mehr zahlen kann. ==r:Korrekter Fold== – und genau der Spot, an dem „Hoffnung“ mich früher einen Stack gekostet hat.
+Der Turn ist die 3♠ – ein Brick. Der Pot ist $200 und Villain jammt $200 – eine Pot-Size-Bet, also bekomme ich jetzt nur noch 2:1 und brauche **33%**. Aber mit **einer verbleibenden Karte ist mein Flush nur 19,6%** (ich zähle allein die 9 Herzen – gegen ein Pot-Size-Jam verliert ein gepaartes Ass oder König meist trotzdem, die Overcards sind also keine sauberen Outs). Der direkte Preis sagt Fold; meine Implied Odds sind jetzt null, weil Villain all-in ist und mir nichts mehr zahlen kann. ==r:Korrekter Fold== – und genau der Spot, an dem „Hoffnung“ mich früher einen Stack gekostet hat.
 
 ---
 

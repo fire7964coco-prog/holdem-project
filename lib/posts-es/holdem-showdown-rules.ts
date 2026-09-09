@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "En el showdown, el último jugador que apostó o subió enseña primero. Si en el river todos pasaron, enseña primero el primer jugador activo a la izquierda del botón. Puedes tirar tus cartas sin enseñarlas si has perdido, pero los rivales pueden pedir ver una mano que fue pagada.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-08-09",
-  masterUpdated: "2026-08-25",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -180,7 +180,7 @@ A. Sí — si fuiste el último en apostar o subir en el river, debes enseñar p
 
 **Q. ¿Puedes tirar tus cartas en el showdown sin enseñarlas?**
 
-A. Sí, pero solo si has perdido claramente. Una vez enseñada la mano ganadora, los jugadores que pierden pueden tirar sus cartas boca abajo. La excepción es que tu mano haya sido pagada — los rivales pueden pedir verla. Si hay cualquier duda sobre quién ganó, no tires nunca antes de que el dealer lea las dos manos.
+A. Sí, pero solo si has perdido claramente. Una vez enseñada la mano ganadora, los jugadores que pierden pueden tirar sus cartas boca abajo. La excepción es que tu mano haya sido pagada — quien pagó puede pedir verla — y que sea un torneo: en cuanto un jugador está all-in y se ha completado toda la acción de apuestas, hay que enseñar todas las manos del bote principal y de los side pots, así que nadie puede tirar (regla 16 de la TDA). Si hay cualquier duda sobre quién ganó, no tires nunca antes de que el dealer lea las dos manos.
 
 **Q. ¿Qué es el slow roll en el póker y por qué está mal visto?**
 

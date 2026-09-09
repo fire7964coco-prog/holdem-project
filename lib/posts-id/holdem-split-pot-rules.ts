@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ya — tangan poker bisa seri. Pot dibagi (split pot) ketika dua pemain atau lebih menunjukkan lima kartu terbaik yang identik saat showdown. Jenis kartu tak pernah memecah seri, dan sisa odd chip diberikan kepada pemain seri pertama di kiri tombol dealer.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-07",
-  masterUpdated: "2026-09-07",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "🃏",
@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Split pot poker — board 8♠ 8♥ 8♦ A♣ K♠ dengan J♠ 10♥ vs 5♣ 2♦, chip dibagi oleh garis emas karena tak ada tangan yang mengalahkan board",
   tags: ["split pot poker", "bisakah seri di poker", "chopped pot", "kapan pot dibagi", "aturan odd chip poker", "board plays", "chop texas holdem"],
   content: `
-Di masa awal main poker, saya memimpin di setiap street — raise preflop, bet di flop dan turn, dibayar di river. Saya buka J-10. Lawan membalik **5-2**. "Saya menang, kan?" Dealer diam saja dan menunjuk board: ==**8-8-8-A-K**==. ==r:Tak satu pun kartu tertutup kami mengalahkan trips 8 dengan kicker A-K==, jadi dealer diam-diam memotong pot jadi dua.
+Di masa awal main poker, saya memimpin di setiap street — raise preflop, bet di flop dan turn, dibayar di river. Saya buka J♠ 10♥. Lawan membalik **5♣ 2♦**. "Saya menang, kan?" Dealer diam saja dan menunjuk board: ==**8♠ 8♥ 8♦ A♣ K♠**==. ==r:Tak satu pun kartu tertutup kami mengalahkan trips 8 dengan kicker A-K==, jadi dealer diam-diam memotong pot jadi dua.
 
 Mendapat separuh pot yang Anda yakin sudah menang itu terasa mengejutkan. Tapi ==g:split pot mengikuti aturan yang jelas== — dan itu menjawab pertanyaan yang paling sering ditanyakan pemain baru: **bisakah seri di poker?** Bisa. Inilah setiap cara hal itu terjadi.
 
@@ -85,7 +85,7 @@ Pair dan two pair biasanya ditentukan oleh kicker — tapi jika kicker juga sama
 
 Ya — dan bahkan tak butuh dua tangan monster. Ketika lima kartu komunitas sudah membentuk lima kartu terbaik yang mungkin bagi semua yang masih bertahan, ==**board yang main**== dan setiap pemain tersisa berbagi pot, entah itu dua pemain atau lima.
 
-Itulah tangan 8-8-8-A-K saya: J-10 saya dan 5-2 lawan sama-sama main trips 8 milik board dengan kicker A-K — lima kartu identik, chop begitu kedua tangan dibuka di meja. Kasus ekstremnya adalah board seperti A♠ K♠ Q♠ J♠ 10♠ (royal flush): tak ada kartu tertutup yang bisa memperbaikinya, jadi ==g:semua yang tersisa chop==.
+Itulah tangan 8-8-8-A-K saya: J♠ 10♥ saya dan 5♣ 2♦ lawan sama-sama main trips 8 milik board dengan kicker A-K — lima kartu identik, chop begitu kedua tangan dibuka di meja. Kasus ekstremnya adalah board seperti A♠ K♠ Q♠ J♠ 10♠ (royal flush): tak ada kartu tertutup yang bisa memperbaikinya, jadi ==g:semua yang tersisa chop==.
 
 > **Ceknya:** apakah lima kartu terbaik *Anda* — memakai setidaknya satu kartu tertutup — mengalahkan lima kartu board itu sendiri? Jika ya, Anda main tangan Anda. Jika tidak, board yang main dan Anda kemungkinan akan chop. Metode lengkap untuk memindai board dengan cara ini ada di [cara membaca board dan menemukan 5 kartu terbaik](/id/blog/holdem-reading-the-board).
 
@@ -144,7 +144,7 @@ A dan B seri dengan pasangan As dan kicker identik, jadi mereka ==g:membagi main
 
 ## Apakah Pot Pernah Dibagi Separuh High, Separuh Low?
 
-Tidak di Texas Hold'em. Anda mungkin pernah dengar "split-pot games" seperti Omaha Hi-Lo atau Stud Hi-Lo, di mana **setiap** pot dirancang untuk dibagi antara tangan high terbaik dan tangan low terbaik yang memenuhi syarat (eight-or-better). Itu keluarga permainan yang berbeda. ==Hold'em standar hanya high== — pot dibagi *hanya* ketika lima kartu terbaik benar-benar seri.
+Tidak di Texas Hold'em. Anda mungkin pernah dengar "split-pot games" seperti Omaha Hi-Lo atau Stud Hi-Lo, di mana pot dirancang untuk dibagi antara tangan high terbaik dan tangan low terbaik yang memenuhi syarat (eight-or-better) — dan tangan high menyapu seluruh pot kalau tak ada low yang memenuhi syarat. Itu keluarga permainan yang berbeda. ==Hold'em standar hanya high== — pot dibagi *hanya* ketika lima kartu terbaik benar-benar seri.
 
 ---
 

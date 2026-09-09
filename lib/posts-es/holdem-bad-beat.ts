@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un bad beat es cuando metes las fichas siendo favorito clarísimo —normalmente 80% o más— y pierdes porque tu rival liga una carta afortunada para 'cazarte' (suck out). A diferencia de un cooler, ibas por delante todo el rato; la baraja simplemente te traicionó al final. Duele, pero los bad beats son en realidad señal de que juegas en una partida rentable.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-08-30",
-  masterUpdated: "2026-08-28",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "💔",
@@ -19,7 +19,7 @@ export const POST: Post = {
   content: `
 El que todavía me escuece: tenía pareja de ases, metí todas las fichas contra un rival que pagó con pareja de cincos y vi caer uno de los dos cincos que quedaban en el river. Lo había hecho todo bien. Mi dinero entró siendo mejor que 4 a 1 favorito, y aun así perdí todo el stack ante ==una de las dos cartas del mazo que podían batirme==. Eso es un bad beat, y si juegas al póker el tiempo suficiente, te pasará miles de veces.
 
-Un **bad beat** (una mala derrota, un golpe brutal de mala suerte) es cuando vas all-in siendo favorito estadístico claro —normalmente 80% o más antes del river— y pierdes igual, porque tu rival caza una carta improbable para ==g:cazarte (suck out)==. La palabra clave es *favorito* — ibas ganando cuando entró el dinero, y solo una carta improbable dio la vuelta al resultado. Aquí tienes exactamente qué cuenta como bad beat, en qué se diferencia de un [cooler](/es/blog/holdem-cooler "thumb:/images/holdem-cooler-hero.webp"), cuánto paga un "bad beat jackpot" y la verdad contraintuitiva que todo jugador ganador acaba aprendiendo: los bad beats son *buenos* para ti. Es una de las palabras que más se usan a la ligera en todo el [glosario de póker](/es/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp").
+Un **bad beat** (una mala derrota, un golpe brutal de mala suerte) es cuando vas all-in siendo favorito estadístico claro —normalmente 80% o más antes del river— y pierdes igual, porque tu rival caza una carta improbable para ==g:cazarte (suck out)==. La palabra clave es *favorito* — ibas ganando cuando entró el dinero, y solo una carta improbable dio la vuelta al resultado. Es una de las palabras que más se usan a la ligera en todo el [glosario de póker](/es/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp"), así que aquí tienes exactamente qué cuenta como bad beat, en qué se diferencia de un [cooler](/es/blog/holdem-cooler "thumb:/images/holdem-cooler-hero.webp"), cuánto paga un "bad beat jackpot" y la verdad contraintuitiva que todo jugador ganador acaba aprendiendo: los bad beats son *buenos* para ti.
 
 ---
 
@@ -60,7 +60,7 @@ La gente usa "bad beat" y "cooler" como sinónimos, pero son opuestos — y sabe
 
 </div>
 
-Una prueba rápida: **si tu rival necesitaba *mejorar* para ganar, es un bad beat.** Si ya iba por delante cuando entró el dinero y tú simplemente no podías tirar tu monstruo, eso es un [cooler](/es/blog/holdem-cooler) — sin suckout, sin bad beat. Y ojo con la trampa: **trío contra trío no es un bad beat.** Cuando tu trío de damas pierde ante un trío de reyes, nadie tuvo suerte en el river — el trío mayor iba por delante todo el tiempo. Eso es un cooler disfrazado de bad beat.
+Una prueba rápida: **si tu rival necesitaba *mejorar* para ganar, es un bad beat.** Si ya iba por delante cuando entró el dinero y tú simplemente no podías tirar tu monstruo, eso es un [cooler](/es/blog/holdem-cooler) — sin suckout, sin bad beat. Y ojo con la trampa: **trío contra trío, cuando los dos se ligan en el flop, no es un bad beat.** Cuando tu trío de damas pierde ante un trío de reyes ligado en ese mismo flop, nadie tuvo suerte en el river — el trío mayor iba por delante todo el tiempo. (Si los reyes solo encuentran su trío en el turn o en el river, la prueba dice suckout — eso *sí* es un bad beat.) Eso es un cooler disfrazado de bad beat.
 
 ---
 
@@ -90,13 +90,13 @@ Todo bad beat tiene la misma forma: eres el favorito, el desfavorecido necesita 
 |:---|:---|:---:|:---|
 | **Ases rotos por un trío** | AA vs una pareja menor (p. ej. 7‑7) | ~80% (4:1) | Su pareja liga trío en el flop, el turn o el river |
 | **Ases vs una mano cualquiera** | AA all-in preflop | ~85% | Dos cartas cualesquiera te adelantan |
-| **Sobrepar vs proyecto de color (caso límite)** | Sobrepar en el flop | ~65% (2:1) | Su proyecto de color de 9 outs se completa en el river |
+| **Sobrepar vs proyecto de color (caso límite)** | Sobrepar en el flop | ~63% (1.7:1) | Su proyecto de color de 9 outs se completa en el river |
 | **Runner-runner** | Una mano hecha por delante en el flop | ~90%+ | Dos cartas perfectas (turn *y* river) completan un proyecto |
 | **El one-outer** | Una mano casi blindada | ~96% | La única carta que queda en la baraja te gana |
 
 </div>
 
-*Según el listón de la sección anterior, el sobrepar contra proyecto de color es el caso límite de la familia: con ~65%, es más varianza que un bad beat "de verdad" — pero es como lo llama la mesa de todos modos.*
+*Según el listón de la sección anterior, el sobrepar contra proyecto de color es el caso límite de la familia: con ~63%, es más varianza que un bad beat "de verdad" — pero es como lo llama la mesa de todos modos.*
 
 El más icónico es **ases rotos por un trío.** Metes pareja de ases all-in preflop contra pareja de sietes — eres favorito de en torno al 80%, un candado de 4 a 1 a tu favor. Pero quedan dos sietes más en la baraja, y si uno cae en la mesa —y no aparece ningún as—, su trío gana a tu pareja. Cuatro de cada cinco veces te llevas el bote; la quinta, tienes una historia de bad beat que nadie quiere oír. La matemática nunca se equivocó — simplemente caíste en el lado malo de ella, que es exactamente por qué una sola mano no te dice [nada sobre si jugaste bien](/es/blog/holdem-cooler).
 
@@ -118,7 +118,7 @@ Las reglas **varían según la sala**, pero la estructura común tiene esta pint
 |:---|:---:|
 | **Perdedor (la mano del bad beat)** | ~50% |
 | **Ganador de la mano** | ~25% |
-| **Resto de la mesa** | ~25% (repartido a partes iguales) |
+| **Resto de los que recibieron cartas en esa mano** | ~25% (repartido a partes iguales) |
 
 </div>
 
@@ -128,9 +128,9 @@ Una advertencia importante: **cada casino y sala online fija su propio cualifica
 
 ## El bad beat más famoso del póker
 
-Si quieres sentirte mejor con tus propios bad beats, recuerda que los peores ocurren en los escenarios más grandes. El más legendario sucedió en el **Main Event de las World Series of Poker 2008**, donde **Motoyuki Mabuchi** convirtió su pareja de ases en **póker — cuatro ases**, una mano batida por una sola combinación en todo el póker — y *aun así perdió*. El **A♦** del river completó su póker de ases mientras, con esa misma carta, le entregaba a **Justin Phillips** (con K♦ J♦) una **escalera real** — el 10‑J‑Q‑K‑A de diamantes. Solo entonces entró el dinero: Mabuchi pasó, Phillips apostó, Mabuchi se fue all-in y Phillips pagó al instante. La carta que hizo el póker de ases fue la única carta que podía batirlo.
+Si quieres sentirte mejor con tus propios bad beats, recuerda que los peores ocurren en los escenarios más grandes. El más legendario sucedió en el **Main Event de las World Series of Poker 2008**, donde **Motoyuki Mabuchi** convirtió su pareja de ases en **póker — cuatro ases**, una mano batida por una sola combinación en todo el póker — y *aun así perdió*. Sobre una mesa de A♥ 9♣ Q♦ 10♦, **Justin Phillips** (con K♦ J♦) ya había ligado en el turn una **escalera al as** — la Broadway, A-K-Q-J-10 —, por delante del trío de ases de Mabuchi. El **A♦** del river completó el póker de Mabuchi mientras, con esa misma carta, convertía la escalera de Phillips en una **escalera real** — el 10‑J‑Q‑K‑A de diamantes. La acción del river, tal como la narró PokerNews: Mabuchi pasó, Phillips apostó, Mabuchi cantó "gamble!" y se fue all-in, y Phillips pagó al instante. La carta que hizo el póker de ases fue la única carta que podía batirlo.
 
-*Según el listón de arriba, esto técnicamente ni siquiera es un bad beat — el dinero entró después de la última carta, así que no hubo ningún suckout. Pero el póker lo recuerda como el bad beat más famoso jamás repartido, y el nombre se quedó.*
+*Según el listón de arriba, esto técnicamente ni siquiera es un bad beat — Phillips ya iba por delante en el turn, y las fichas que vimos entrar entraron después de la última carta, así que nadie cazó a nadie. Pero el póker lo recuerda como el bad beat más famoso jamás repartido, y el nombre se quedó.*
 
 Ese es el techo del dolor de un bad beat: no un favorito del 80% cayendo, sino *cuatro ases* — una mano que podrías jugar toda la vida sin perderla nunca — batida por una escalera de color, la única categoría de mano que supera al póker (cuatro iguales). Merece la pena guardártelo en la recámara la próxima vez que te rompan los ases: por muy mal que te tratara la baraja, alguien perdió una vez con póker de ases.
 
@@ -171,7 +171,7 @@ A. Un bad beat es cuando pierdes una mano de la que eras favorito estadístico c
 
 **Q. ¿Cuál es la diferencia entre un bad beat y un cooler?**
 
-A. En un bad beat eras el favorito cuando entró el dinero y te cazaron una carta — hubo un suckout. En un cooler ibas por detrás todo el rato con una mano demasiado fuerte para tirar, y no hubo suckout. Prueba rápida: si tu rival tuvo que *mejorar* para ganar, es un bad beat; si ya iba por delante, es un cooler. Trío contra trío, por ejemplo, es un cooler, no un bad beat.
+A. En un bad beat eras el favorito cuando entró el dinero y te cazaron una carta — hubo un suckout. En un cooler ibas por detrás todo el rato con una mano demasiado fuerte para tirar, y no hubo suckout. Prueba rápida: si tu rival tuvo que *mejorar* para ganar, es un bad beat; si ya iba por delante, es un cooler. Trío contra trío con los dos tríos ligados en el flop, por ejemplo, es un cooler, no un bad beat — si el trío mayor llegó en el turn o en el river, hubo suckout.
 
 **Q. ¿Perder un coin flip es un bad beat?**
 
@@ -183,7 +183,7 @@ A. Un bad beat jackpot es un premio progresivo que algunas salas pagan cuando un
 
 **Q. ¿Cuál es el peor bad beat de la historia del póker?**
 
-A. El más famoso es del Main Event de las WSOP 2008: Motoyuki Mabuchi hizo póker de ases — una mano que solo una escalera de color puede batir — y aun así perdió. Ligó un trío de ases en el flop, y el as que quedaba en la baraja completó su póker en el river y, con esa misma carta, le dio a Justin Phillips una escalera real de diamantes. Hacer el mejor póker posible y toparse con una escalera de color — la única categoría de mano que lo supera — es más o menos lo peor que un bad beat puede llegar a ser.
+A. El más famoso es del Main Event de las WSOP 2008: Motoyuki Mabuchi hizo póker de ases — una mano que solo una escalera de color puede batir — y aun así perdió. Ligó un trío de ases en el flop, Justin Phillips hizo una escalera al as en el turn, y luego el as que quedaba en la baraja completó su póker en el river y, con esa misma carta, convirtió la escalera de Phillips en una escalera real de diamantes. Hacer el mejor póker posible y toparse con una escalera de color — la única categoría de mano que lo supera — es más o menos lo peor que un bad beat puede llegar a ser.
 
 **Q. ¿Los bad beats son más frecuentes online?**
 

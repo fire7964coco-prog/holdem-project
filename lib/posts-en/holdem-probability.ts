@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "By the river you'll make one pair 43.8% of the time, two pair 23.5%, a flush 3.0%, and a full house 2.6% — while a royal flush shows up just once in about 31,000 hands.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-08-11",
+  updated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🎲",
@@ -126,7 +126,7 @@ You have a draw on the flop. How often do you complete it? It all comes down to 
 
 </div>
 
-The classic spot: you flop a **flush draw** (nine outs). You'll get there ==35% of the time by the river== — better than one in three. An **open-ended straight draw** (eight outs) hits 31.5%. Note the two columns: once the turn bricks, your odds on a *single* card roughly halve, which is exactly why draws get more expensive to chase street by street.
+The classic spot: you flop a **flush draw** (nine outs). You'll get there ==35% of the time by the river== — better than one in three. An **open-ended straight draw** (eight outs) hits 31.5%. Note the two columns: once the turn bricks you have one card to come instead of two, so your odds roughly halve — 35% becomes 19.6% for the flush draw — which is exactly why draws get more expensive to chase street by street.
 
 ---
 
@@ -219,7 +219,7 @@ A. Roughly 1 in 72,193 as a five-card hand, or about 1 in 3,590 by the river in 
 
 **Q. What are the odds of four of a kind (or quad aces)?**
 
-A. Four of a kind comes together about 1 in 595 times by the river in Hold'em (0.168%), or 1 in 4,165 as a dealt five-card hand. Any *specific* quads such as quad aces are much longer odds — you need to either hold that pocket pair and catch both remaining cards or have all four land on the board.
+A. Four of a kind comes together about 1 in 595 times by the river in Hold'em (0.168%), or 1 in 4,165 as a dealt five-card hand. Any *specific* quads such as quad aces are much longer odds — roughly 1 in 7,700 by the river. The most common route (about 57% of the time) is one ace in your hand and the other three on the board; holding the pocket pair and catching both remaining aces is rarer, and all four landing on the board rarer still.
 
 **Q. How rare is a flush, a straight, or a full house?**
 
@@ -263,7 +263,7 @@ A. Less often than you'd think before the river. Even pocket aces — the best s
 
 **Q. How often do you hit the flop in poker?**
 
-A. With two unpaired hole cards you'll pair at least one of them on the flop about 32% of the time — so you completely miss roughly two flops out of three. That's why position and aggression matter so much: most flops miss everyone, and the player willing to bet often takes the pot down.
+A. With two unpaired hole cards you'll pair at least one of them on the flop about 32% of the time — so you completely miss roughly two flops out of three. That's why position and aggression matter so much: any single opponent has missed the flop about two times in three, and the player willing to bet often takes the pot down.
 
 **Q. What are the odds of having the nuts?**
 

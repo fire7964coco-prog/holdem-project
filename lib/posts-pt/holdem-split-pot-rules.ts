@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Sim — mãos de poker podem empatar. O pote é dividido (um chop) quando dois ou mais jogadores mostram a mesma melhor mão de cinco cartas no showdown. O naipe nunca desempata, e qualquer ficha ímpar que sobra vai para o primeiro empatado à esquerda do botão do dealer.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-07",
-  masterUpdated: "2026-09-07",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🃏",
@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Pote dividido no poker — board 8♠ 8♥ 8♦ A♣ K♠ com J♠ 10♥ vs 5♣ 2♦, fichas separadas por uma linha dourada porque nenhuma mão bate o board",
   tags: ["pote dividido poker", "empate no poker", "da empate no poker", "chop no poker", "quando o pote e dividido", "regra da ficha impar poker", "a mesa joga", "chop texas holdem"],
   content: `
-No começo da minha vida no poker, eu liderei todas as streets — aumentei no pré-flop, apostei no flop e no turn, fui pago no river. Virei J-10. Meu adversário mostrou **5-2**. "Eu ganhei, né?" O dealer não disse nada e apontou para o board: ==**8-8-8-A-K**==. ==r:Nenhuma das nossas cartas fechadas batia a trinca de oitos com kicker ás-rei==, então o dealer dividiu o pote em duas partes iguais, calado.
+No começo da minha vida no poker, eu liderei todas as streets — aumentei no pré-flop, apostei no flop e no turn, fui pago no river. Virei J♠ 10♥. Meu adversário mostrou **5♣ 2♦**. "Eu ganhei, né?" O dealer não disse nada e apontou para o board: ==**8♠ 8♥ 8♦ A♣ K♠**==. ==r:Nenhuma das nossas cartas fechadas batia a trinca de oitos com kicker ás-rei==, então o dealer dividiu o pote em duas partes iguais, calado.
 
 Levar metade de um pote que você tinha certeza de ter ganhado é chocante. Mas ==g:potes divididos seguem regras claras== — e elas respondem à pergunta que os iniciantes mais fazem: **dá empate no poker?** Dá. Aqui está cada forma de isso acontecer.
 
@@ -85,7 +85,7 @@ Pares e dois pares geralmente são decididos por kickers — mas se os kickers t
 
 Sim — e nem precisa de duas mãos monstruosas. Quando as cinco cartas comunitárias já formam as melhores cinco possíveis para todos que restam, ==**a mesa joga**== e todos os jogadores restantes dividem o pote, sejam dois ou cinco.
 
-É a minha mão 8-8-8-A-K: meu J-10 e o 5-2 dele jogaram a trinca de oitos da mesa com kickers ás-rei — cinco cartas idênticas, um chop assim que as duas mãos foram mostradas. O caso extremo é um board como A♠ K♠ Q♠ J♠ 10♠ (um royal flush): nenhuma carta fechada pode melhorá-lo, então ==g:todos que restam chopam==.
+É a minha mão 8-8-8-A-K: meu J♠ 10♥ e o 5♣ 2♦ dele jogaram a trinca de oitos da mesa com kickers ás-rei — cinco cartas idênticas, um chop assim que as duas mãos foram mostradas. O caso extremo é um board como A♠ K♠ Q♠ J♠ 10♠ (um royal flush): nenhuma carta fechada pode melhorá-lo, então ==g:todos que restam chopam==.
 
 > **A verificação:** *a sua* melhor mão de cinco — usando pelo menos uma carta fechada — bate as cinco da própria mesa? Se sim, você joga sua mão. Se não, a mesa joga e você provavelmente vai chopar. O método completo para varrer uma mesa desse jeito está em [como ler a mesa e achar suas melhores 5](/pt/blog/holdem-reading-the-board).
 
@@ -144,7 +144,7 @@ A e B empatam com ases e kickers idênticos, então eles ==g:dividem o pote prin
 
 ## O pote alguma vez é dividido metade alto, metade baixo?
 
-No Texas Hold'em, não. Você talvez tenha ouvido falar de "jogos de pote dividido" como Omaha Hi-Lo ou Stud Hi-Lo, onde **todo** pote é feito para dividir entre a melhor mão alta e a melhor mão baixa qualificada (oito-ou-melhor). Essa é outra família de jogos. ==O Hold'em padrão é só-alto== — o pote divide *apenas* quando as melhores mãos de cinco cartas realmente empatam.
+No Texas Hold'em, não. Você talvez tenha ouvido falar de "jogos de pote dividido" como Omaha Hi-Lo ou Stud Hi-Lo, onde o pote é feito para dividir entre a melhor mão alta e a melhor mão baixa qualificada (oito-ou-melhor) — e a mão alta leva tudo quando nenhuma baixa se qualifica. Essa é outra família de jogos. ==O Hold'em padrão é só-alto== — o pote divide *apenas* quando as melhores mãos de cinco cartas realmente empatam.
 
 ---
 

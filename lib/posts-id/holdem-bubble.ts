@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Bubble adalah spot tepat sebelum uang, di mana satu eliminasi lagi membayar semua orang lainnya. Karena bust berarti tidak menang apa-apa, bertahan lebih berharga daripada chip yang bisa Anda dapatkan — jadi calling range mengetat keras sementara shove tetap lebar. Big stack menyerang, medium stack paling terjebak (bukan short stack), dan di bubble satelit Anda fold semuanya, bahkan aces, begitu kursi Anda terkunci.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-08-28",
-  masterUpdated: "2026-08-26",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "13 mnt",
   emoji: "🫧",
@@ -113,7 +113,7 @@ Mantra short stack: fold equity adalah segalanya. Shove duluan, dan pilih spot A
 
 **"Bubble factor" mengukur seberapa banyak lebih besar biaya kalah dengan stack Anda dibanding menang pot yang sama membantu — dan ini langsung dikonversi menjadi equity tambahan yang Anda butuhkan untuk call.** Bubble factor 1,0 berarti chip dan uang bergerak bersama (di awal turnamen). Bubble factor 1,5 berarti ==bust menyakiti 1,5× lebih dari yang menang bantu==, jadi Anda butuh edge yang jauh lebih besar untuk memasukkan chip Anda.
 
-Inilah bagian yang berguna: equity yang Anda butuhkan untuk break even pada sebuah call adalah ==c · BF ÷ (P + c · BF)==, dengan **c** biaya call Anda dan **P** pot yang akan Anda menangkan. Kalau Anda mempertaruhkan persis sebesar yang bisa Anda menangkan, rumus itu menyusut jadi bentuk yang biasa dikutip — ==BF ÷ (1 + BF)== — dan itulah yang dipakai tabel di bawah.
+Inilah bagian yang berguna: equity yang Anda butuhkan untuk break even pada sebuah call adalah ==c · BF ÷ (P + c · BF)==, dengan **c** biaya call Anda dan **P** pot yang akan Anda menangkan — semua yang sudah ada di tengah, tanpa menghitung call Anda sendiri. Kalau Anda mempertaruhkan persis sebesar yang bisa Anda menangkan, rumus itu menyusut jadi bentuk yang biasa dikutip — ==BF ÷ (1 + BF)== — dan itulah yang dipakai tabel di bawah.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -129,7 +129,7 @@ Inilah bagian yang berguna: equity yang Anda butuhkan untuk break even pada sebu
 
 Baca kolom terakhir itu sebagai batas atas, bukan sebagai spot Anda: pot bubble sungguhan berisi dead money, dan dead money justru menekan syaratnya **turun**. Kalau small blind jam 10bb dan Anda call 9bb ke pot yang sudah berisi 12bb, pada bubble factor 1,5 Anda butuh ==52,9%==, bukan 60% — dan tanpa tekanan ICM sama sekali itu cuma pot odds, ==42,9%==.
 
-Separuh lainnya: bubble factor mengikuti **siapa yang duduk di seberang Anda**, bukan fasenya. Empat orang dengan tiga dibayar, stack menengah melawan chip leader membawa bubble factor mendekati ==3,0==, sedangkan stack menengah yang sama melawan pemain terpendek nyaris tak lewat ==1,1==; stack setara ada di sekitar ==1,9==, dan bubble final table enam orang berjalan dari ==2,0== ke atas. Perlakukan 1,5–1,7 sebagai lantai sebuah bubble serius, bukan puncaknya — dan memang turun kembali begitu Anda masuk uang. Masukkan stack dan pembayaran Anda sendiri ke [kalkulator ICM](/calculator) untuk melihat angka sebenarnya untuk sebuah spot.
+Separuh lainnya: bubble factor mengikuti **siapa yang duduk di seberang Anda**, bukan fasenya. Empat orang dengan tiga dibayar, stack menengah melawan chip leader membawa bubble factor mendekati ==3,0==, sedangkan stack menengah yang sama melawan pemain terpendek nyaris tak lewat ==1,1==; stack setara ada di sekitar ==1,9==, dan di bubble final table enam orang stack menengahnya berjalan dari ==2,0== ke atas (chip leader, seperti biasa, duduk jauh lebih rendah). Perlakukan 1,5–1,7 sebagai lantai sebuah bubble serius, bukan puncaknya — dan memang turun kembali begitu Anda masuk uang. Masukkan stack dan pembayaran Anda sendiri ke [kalkulator ICM](/calculator) untuk melihat angka sebenarnya untuk sebuah spot.
 
 ---
 
@@ -138,7 +138,7 @@ Separuh lainnya: bubble factor mengikuti **siapa yang duduk di seberang Anda**, 
 **Ketika uang sudah dekat, turnamen beralih ke "hand-for-hand" — setiap meja memainkan persis satu tangan pada waktu yang sama, lalu menunggu — khusus untuk menghentikan pemain melakukan stall ke dalam uang.** Tanpa itu, pemain di meja lambat bisa fold tangan demi tangan sementara meja lebih cepat membakar bubble. Hand-for-hand meratakan medan:
 
 - **Cara kerjanya:** tournament director menjeda jam, dan sejak itu setiap tangan memotong ==2 menit== tetap dari level, tak peduli berapa lama tangan itu sebenarnya berlangsung (WSOP Rule 126.a dan 126.c; TDA RP-8) — jadi blind tetap naik sepanjang bubble, hanya saja per tangan, bukan per menit nyata. Semua meja membagikan satu tangan, dan tidak ada meja yang memulai tangan berikutnya sampai setiap meja selesai. Jika dua pemain bust pada hand-for-hand yang sama di **meja yang sama**, yang chip-nya lebih sedikit di awal tangan mendapat finis lebih rendah (bubble); kalau mereka bust di **meja berbeda**, keduanya dianggap seri dan membagi dua hadiah untuk posisi tersebut.
-- **Stalling:** memakai seluruh time bank pada setiap keputusan untuk melihat lebih sedikit tangan (dan fold sampai masuk uang). Justru itu yang membuatnya berhasil: tank tidak memakan jam sama sekali — tangan itu tetap memotong 2 menitnya, mau Anda fold seketika atau menghabiskan seluruh time bank. Big stack tidak punya alasan untuk stall — mereka ingin lebih banyak tangan untuk menyerang. Short dan medium stack kadang stall untuk bertahan, ==tapi stalling berlebihan bisa mengundang clock call atau penalti== — tank sewajarnya, tanpa sengaja membakar time bank Anda.
+- **Stalling:** memakai seluruh time bank pada setiap keputusan dengan harapan melihat lebih sedikit tangan sebelum masuk uang. Selama hand-for-hand harapan itu keliru: stalling tidak mengurangi jumlah tangan yang harus dimainkan meja Anda — setiap meja menjalankan jumlah tangan yang sama dan tiap tangan memotong 2 menit dari jam (WSOP Rule 126.a, 126.c), mau Anda fold seketika atau menghabiskan seluruh time bank. Big stack tidak punya alasan untuk stall — mereka ingin lebih banyak tangan untuk menyerang. Short dan medium stack tetap saja stall karena kebiasaan, ==tapi stalling berlebihan bisa mengundang clock call atau penalti== — tank sewajarnya, tanpa sengaja membakar time bank Anda.
 - **Eksploitasi:** karena semua orang lain melambat, big stack yang terus memberi tekanan selama hand-for-hand mengumpulkan blind dan ante hampir tanpa perlawanan.
 
 ---
@@ -148,7 +148,7 @@ Separuh lainnya: bubble factor mengikuti **siapa yang duduk di seberang Anda**, 
 **Di satelit, setiap kursi membayar sama — jadi begitu stack Anda aman di dalam bubble, Anda fold semuanya, termasuk pocket aces.** Ini adalah spot paling kontra-intuitif di poker, dan itu benar. Jika memenangkan sebuah flip memberi Anda ==kursi yang sama yang sudah Anda kunci== sementara kalah mengeliminasi Anda, tidak ada imbalan dan risikonya sangat besar:
 
 - **Begitu kursi Anda secara matematis aman** (Anda cukup jauh di dalam bubble sehingga tak bisa terkejar), fold setiap tangan — ya, bahkan AA dan KK — dan biarkan short stack bertarung sendiri. Hitung ulang matematika itu setiap kali blind naik: "zona aman" menyusut begitu ante mulai berlaku.
-- **Jangan mengandalkan stalling di live.** Online, memakai seluruh clock Anda gratis; di live, sengaja membakar time bank demi naik tangga hadiah secara eksplisit bisa kena penalti menurut aturan WSOP — fold dengan tempo normal dan biarkan short stack bertarung.
+- **Jangan mengandalkan stalling di live.** Online, memakai seluruh clock Anda tidak membawa penalti; di live, sengaja membakar time bank demi naik tangga hadiah secara eksplisit bisa kena penalti menurut aturan WSOP — fold dengan tempo normal dan biarkan short stack bertarung.
 - **Satu pengecualian:** call hanya jika Anda meng-cover short stack yang bersangkutan dan eliminasi mereka mengunci bubble *untuk Anda* — dan hanya selama kursi Anda tetap terjamin meski Anda kalah di pot itu.
 
 Jika Anda mengambil satu hal dari bagian ini: satelit bukan turnamen normal. Chip di atas ambang keamanan tidak berharga, jadi mainkan sesuai itu.

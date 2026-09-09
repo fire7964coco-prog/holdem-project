@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Limpar é entrar num pote no pré-flop só pagando o big blind em vez de aumentar ou foldar. Open-limpar (ser o primeiro a entrar) é quase sempre um erro — você não consegue ganhar o pote no pré-flop, abre mão da iniciativa, e bons jogadores te punem. Mas limpar nem sempre é errado: completar o small blind, over-limpar mãos especulativas atrás de outros limpers, e alguns spots ao vivo e de stack curto são exceções legítimas.",
   category: "strategy",
   date: "2026-07-05",
-  updated: "2026-08-26",
-  masterUpdated: "2026-08-26",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🚶",
@@ -93,10 +93,10 @@ Tem um segundo benefício, mais silencioso: aumentar **nega equity** aos blinds.
 
 | Spot | Por que limpar é ok aqui |
 |:---|:---|
-| **Completar o small blind** | Você já pagou metade da aposta e só o big blind age atrás — o desconto quebra a regra aumentar-ou-foldar (em mesa difícil, o padrão do SB ainda é aumentar ou foldar). |
+| **Completar o small blind (pote sem aumento)** | Ninguém aumentou, você já pagou metade da aposta e só o big blind age atrás — o desconto quebra a regra aumentar-ou-foldar. Diante de um aumento a pergunta é outra: 3-bet ou fold. |
 | **Over-limpar mãos especulativas** | Atrás de outros limpers com pares pequenos ou suited connectors, você recebe ótimas odds para flopar um monstro num pote multiway. |
 | **Ao vivo muito passivo, stakes baixas** | Se os adversários só aumentam com monstros e nunca punem limpers, você vê flops baratos com mãos especulativas e realiza equity. |
-| **Posição tardia com stack curto** | Solvers modernos desenvolvem ranges de open-limp no button em stacks curtos, onde um aumento ganha pouco e limpar corta o seu custo. |
+| **Posição tardia com stack curto (torneios)** | Em stacks curtos de torneio — bem abaixo dos 100bb de um cash game padrão — solvers modernos desenvolvem ranges de open-limp no button, onde um aumento ganha pouco e limpar corta o seu custo. |
 
 </div>
 
@@ -151,7 +151,7 @@ A. Open-limpar abre mão de muita coisa: você não consegue ganhar o pote no pr
 
 **Q. Limpar é uma boa estratégia alguma hora?**
 
-A. Sim, em spots específicos. Completar do small blind, over-limpar mãos especulativas como pares pequenos e suited connectors atrás de outros limpers, jogos ao vivo de stakes baixas muito passivos, e algumas situações de button com stack raso são todos legítimos. O que é quase sempre errado é open-limpar — ser o primeiro jogador a entrar e escolher só pagar em vez de aumentar.
+A. Sim, em spots específicos. Completar do small blind, over-limpar mãos especulativas como pares pequenos e suited connectors atrás de outros limpers, jogos ao vivo de stakes baixas muito passivos, e algumas situações de button com stack curto de torneio são todos legítimos. O que é quase sempre errado é open-limpar — ser o primeiro jogador a entrar e escolher só pagar em vez de aumentar.
 
 **Q. Qual a diferença entre open-limpar e over-limpar?**
 
@@ -163,11 +163,11 @@ A. Um limp-reraise é quando você limpa, um adversário aumenta atrás de você
 
 **Q. Você deveria alguma vez open-limpar no pré-flop?**
 
-A. Quase nunca num cash game normal. Se uma mão é boa o suficiente para jogar, geralmente é boa o suficiente para aumentar; se não é, folde. As raras exceções são jogos ao vivo extremamente passivos onde você não vai ser punido, e alguns spots de posição tardia com stack curto identificados por solvers. Como padrão, aumente ou folde e pule o open-limp.
+A. Quase nunca num cash game normal. Se uma mão é boa o suficiente para jogar, geralmente é boa o suficiente para aumentar; se não é, folde. As raras exceções são jogos ao vivo extremamente passivos onde você não vai ser punido, e alguns spots de torneio em posição tardia com stack curto identificados por solvers. Como padrão, aumente ou folde e pule o open-limp.
 
 **Q. Tudo bem limpar no small blind?**
 
-A. Em mesa passiva, sim — completar o small blind é um dos limps mais defensáveis (em jogo difícil, o padrão moderno do SB segue sendo aumentar ou foldar). Você já pagou metade da aposta, só o big blind pode agir atrás de você, e você está recebendo um preço, então a lógica usual de aumentar-ou-foldar não se aplica do mesmo jeito. Se você completa, aumenta ou folda depende da sua mão e das tendências do big blind, mas limpar aqui está longe de ser o erro que open-limpar em outras posições é.
+A. Em mesa passiva, sim — num pote sem aumento, completar o small blind é um dos limps mais defensáveis (em jogo difícil, o padrão moderno do SB segue sendo aumentar ou foldar). Você já pagou metade da aposta, só o big blind pode agir atrás de você, e você está recebendo um preço, então a lógica usual de aumentar-ou-foldar não se aplica do mesmo jeito. Se você completa, aumenta ou folda depende da sua mão e das tendências do big blind, mas limpar aqui está longe de ser o erro que open-limpar em outras posições é. (Diante de um aumento, o small blind deve dar 3-bet ou foldar, não pagar.)
 
 **Q. Qual a diferença entre um limper e uma calling station?**
 
@@ -178,7 +178,7 @@ A. Um limper entra em potes não aumentados só pagando o big blind antes do flo
 ## As 3 coisas para lembrar
 
 1. **Limpar é pagar o big blind em vez de aumentar** — e open-limpar, ser o primeiro a entrar, é quase sempre um erro: você não consegue ganhar o pote no pré-flop, abre mão da iniciativa, e se marca como um alvo fácil.
-2. **Mas não é *sempre* errado.** Completar o small blind, over-limpar mãos especulativas atrás de outros limpers, e spots ao vivo passivos ou de stack raso são exceções legítimas. O dogmático "nunca limpe" é um exagero.
+2. **Mas não é *sempre* errado.** Completar o small blind, over-limpar mãos especulativas atrás de outros limpers, e spots ao vivo passivos ou de torneio com stack curto são exceções legítimas. O dogmático "nunca limpe" é um exagero.
 3. **Padrão é aumentar-ou-foldar.** Reserve o limp para aqueles spots específicos, e você vai parar de dar a jogadores fortes chances de graça de te isolar e explorar.
 
 Consertar o seu limp é um dos upgrades mais rápidos do poker — não custa nada aprender e imediatamente te impede de vazar fichas como o alvo mais fácil da mesa. Combine "aumentar ou foldar" com um [range de mãos iniciais](/pt/blog/holdem-starting-hands-chart) sólido e consciência real de [posição](/pt/blog/holdem-position-play), e você saiu, discretamente, do grupo que todo mundo está tentando bater.

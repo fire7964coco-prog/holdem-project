@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Texas Hold'em All-in-Regeln: Side Pots, Re-Raises & Showdown",
   seoTitle: "All-in gegangen und verwirrt? – All-in-Regeln & Side Pots",
   desc: "Alle Chips reingeschoben und unsicher, was du gewinnen kannst? Texas Hold'em All-in-Regeln: Table Stakes, Side Pots, Re-Raise-Recht und Showdown-Reihenfolge.",
-  tldr: "All-in gehen heißt, jeden Chip zu setzen, den du hast. Du kannst von jedem Gegner nur so viel gewinnen, wie du selbst gematcht hast (den Main Pot). Zusätzliche Einsätze größerer Stacks bilden einen Side Pot, den du nicht gewinnen kannst. Ein All-in unterhalb einer vollen Erhöhung öffnet die Setzrunde für Spieler, die bereits gehandelt haben, NICHT neu.",
+  tldr: "All-in gehen heißt, jeden Chip zu setzen, den du hast. Du kannst von jedem Gegner nur so viel gewinnen, wie du selbst gematcht hast (den Main Pot). Zusätzliche Einsätze größerer Stacks bilden einen Side Pot, den nur die Spieler gewinnen können, die diese Einsätze gedeckt haben. Ein All-in unterhalb einer vollen Erhöhung öffnet die Setzrunde für Spieler, die bereits gehandelt haben, NICHT neu.",
   category: "rules",
   date: "2026-06-15",
   updated: "2026-09-09",
@@ -217,7 +217,7 @@ Ein Teil-All-in gibt Spielern, die in dieser Runde **bereits gehandelt haben**, 
 Table Stakes. Was auf dem Tisch liegt, ist alles, was du setzen kannst. Bist du für €80 All-in und der Pot beträgt €400, kannst du von jedem Caller trotzdem nur €80 gewinnen.
 
 ### Fehler 4: Die Hand zu schnell mucken
-Du bist für den Main Pot All-in. Zwei andere Spieler kämpfen um den Side Pot. Ich habe einmal gesehen, wie ein Shortstack seine Karten wegwarf, sobald der Showdown um den Side Pot gegen ihn lief – er hatte vergessen, dass er in diesem Pot gar nicht drin war und seine Hand für den Main Pot noch live war. Die Chips waren in dem Moment weg, in dem die Karten im Muck landeten. Muck nicht – deine Hand ist für den Main Pot noch live. ==Warte immer, bis der Dealer jeden Pot aufgelöst hat, bevor du deine Karten anfasst.==
+Du bist für den Main Pot All-in. Zwei andere Spieler kämpfen um den Side Pot. Ich habe einmal gesehen, wie ein Shortstack seine Karten wegwarf, sobald der Showdown um den Side Pot gegen ihn lief – er hatte vergessen, dass er in diesem Pot gar nicht drin war und seine Hand für den Main Pot noch live war. Sobald der Dealer sie in den Muck gezogen hatte, waren sie nicht mehr identifizierbar – tot, und der Main Pot ging an den anderen. (Eine Hand, die sich noch eindeutig identifizieren lässt, kann nach Ermessen des Floors zurückgeholt werden – verlass dich aber nie darauf.) Muck nicht – deine Hand ist für den Main Pot noch live. ==Warte immer, bis der Dealer jeden Pot aufgelöst hat, bevor du deine Karten anfasst.==
 
 ### Fehler 5: Aus Frust All-in gehen
 Das All-in ist der mächtigste Zug am Tisch. Es zwingt Gegner in Alles-oder-nichts-Entscheidungen. Diese Macht verpufft, wenn du wahllos alles reinschiebst. Setz es im richtigen Moment ein – als Shortstack-Druckmittel, mit Value-Händen, die gecallt werden sollen, oder als Bluff mit echter Fold Equity.

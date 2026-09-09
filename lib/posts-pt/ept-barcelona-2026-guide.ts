@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "O EPT Barcelona 2026 aconteceu de 16 a 29 de agosto no Casino Barcelona. O italiano Manuel Ferrari venceu o Main Event de €5.300 e levou €1.002.488 de uma premiação de €8.841.550 com 1.823 inscrições. Para 2027, o caminho online mais barato continua sendo o Power Path a partir de $0,50 → Gold Pass (Main de €5.300 + side event de €1.100 + 8 noites de hotel + €690 de despesas). Você precisa de conta PokerStars Live e passaporte válido, e vale reservar hotel cedo — agosto é alta temporada.",
   category: "tournament",
   date: "2026-06-17",
-  updated: "2026-09-02",
-  masterUpdated: "2026-09-02",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🃏",
@@ -63,7 +63,7 @@ Os três primeiros fecharam um **acordo a três** deixando apenas ==**€100.000
 
 *\* Inclui o acordo a três.* Com **1.823 inscrições**, foi o **sétimo maior field de Main Event da história do EPT** — uma referência útil se você está calculando como será 2027.
 
-:::note[**Nota sobre as fontes.** Em 31 de agosto de 2026 a PokerStars ainda não havia publicado os resultados finais nas páginas oficiais do evento — a programação segue mostrando todos os torneios como não disputados. Os números acima vêm da cobertura ao vivo no local e estão cruzados entre dois veículos independentes (ver Fontes no fim). Vamos trocar pelos oficiais assim que saírem.]:::
+:::note[**Nota sobre as fontes.** O campeão, o primeiro prêmio e o número de inscrições acima foram conferidos com a página oficial de resultados completos da PokerStars em 9 de setembro de 2026 e batem (ver Fontes no fim).]:::
 
 ---
 
@@ -234,7 +234,7 @@ Todo jogador do EPT precisa de uma conta PokerStars Live — ==r:sem ela, você 
 
 ### 2. Declaração de Origem dos Fundos (Transações em Dinheiro)
 
-Essa é a que quase ninguém te avisa. Toda vez que você paga um torneio com **dinheiro** no Casino Barcelona, ==r:a regulamentação espanhola exige que você declare a origem desse dinheiro==.
+Essa é a que quase ninguém te avisa. Se você paga um torneio com **dinheiro** no Casino Barcelona, ==r:pode ser obrigado a declarar a origem desse dinheiro== — a página do evento do EPT fala em "qualquer transação em dinheiro", enquanto o próprio formulário de declaração do cassino vale para transações em dinheiro de 10.000 (€10.000) ou mais.
 
 **Como preencher com antecedência:**
 1. Faça login na sua conta **PokerStars Live** em [pokerstarslive.com](https://www.pokerstarslive.com/ept/barcelona/)
@@ -327,7 +327,7 @@ Barcelona El Prat (BCN) fica a cerca de ==12km do centro da cidade== — mais ou
 |:---|:---:|:---:|:---|
 | ==g:**Táxi / Uber**== | 25–35 min | €30–€40 | ==g:Mais fácil com bagagem== |
 | **Aerobus (A1)** | 35 min | ~€6–7 | Até a Plaça Catalunya, depois táxi ou metrô até o cassino |
-| **Metrô (L9 Sud)** | 45–55 min | ~€5–6 | L9 Sud → baldeação pra L4 → Ciutadella/Vila Olímpica (10 min a pé até o cassino) |
+| **Metrô (L9 Sud)** | 45–55 min | ~€5–6 | L9 Sud → troque de linha já na cidade para chegar à L4 → Ciutadella/Vila Olímpica (10 min a pé até o cassino; confira a estação de baldeação no planejador de rotas da TMB) |
 | **PokerStars Travel** | Variável | Taxa pequena | Transfer pré-agendado, reserve pela PokerStars Live |
 
 </div>
@@ -365,7 +365,7 @@ Em 2026 o Day 1 foi dividido em dois flights de largada — ==Day 1A (22 de ago)
 |---|---|
 | ~11:00 | Abre o registro (==r:chegue na abertura — com fila de 30–45 min, «30 min antes das cartas» já é tarde==) |
 | ~12:00 | Cartas na mesa — começa o Day 1 |
-| Noite | Fim do dia pro Day 1 — normalmente 8 níveis; o horário exato varia com a estrutura |
+| Noite | Fim do dia pro Day 1 — a quantidade de níveis e o horário exato dependem da estrutura |
 | Day 2+ | ==g:Só continuam os jogadores que ensacaram fichas== |
 
 </div>
@@ -424,7 +424,7 @@ A. Você precisa de uma conta ==**PokerStars Live**== (separada da sua conta de 
 
 **Q. O que é o formulário Source of Funds e ele é mesmo obrigatório?**
 
-A. Sim. Pela regulamentação de cassinos espanhola, qualquer transação em dinheiro exige que você declare a origem dos fundos — não existe um valor mínimo abaixo do qual você fique isento. Você pode preencher o formulário online pela sua conta PokerStars Live com antecedência — ==g:leva cerca de 10 minutos==. Pagamentos por cartão ou token pré-comprado podem não exigir.
+A. Se for pagar em dinheiro, conte com isso. A página do evento do EPT diz que "qualquer transação em dinheiro" exige a declaração de origem dos fundos, enquanto o formulário de declaração do cassino vale para transações em dinheiro de 10.000 (€10.000) ou mais — então confirme o limite e a papelada com o cassino antes. Você pode preencher o formulário online pela sua conta PokerStars Live com antecedência — ==g:leva cerca de 10 minutos==. Pagamentos por cartão ou token pré-comprado podem não exigir.
 
 **Q. O que acontece se eu ganhar um Gold Pass do Power Path — o hotel já é reservado automaticamente?**
 
@@ -440,7 +440,7 @@ A. A área do Port Olímpic em Barcelona é geralmente segura. ==r:Batedores de 
 
 - **Datas do festival, sede, buy-ins e programação** — [PokerStars Live · EPT Barcelona](https://www.pokerstarslive.com/ept/barcelona/) (oficial; consultado em 31 de agosto de 2026)
 - **Mesa final, inscrições e premiação do Main Event 2026** — cobertura ao vivo no local, cruzada entre [PokerNews](https://www.pokernews.com/news/2026/08/manuel-ferrari-wins-2026-ept-barcelona-main-event-52260.htm) e [Card Player](https://www.cardplayer.com/poker-news/1741396-manuel-ferrari-wins-ept-barcelona-main-event-for-1-2-million) (ambos de 29 de agosto de 2026). Os dois trazem o mesmo tamanho de field e a mesma ordem de colocação; a informação do sétimo maior Main Event do EPT é do Card Player.
-- ⚠️ A PokerStars **não** havia publicado resultados oficiais no fechamento desta atualização — os números serão conferidos com os oficiais quando saírem.
+- **Resultados oficiais** — [PokerStars · resultados completos do EPT Barcelona 2026](https://www.pokerstars.com/poker/learn/news/ept-barcelona-2026-full-results/) (consultado em 9 de setembro de 2026 — campeão, prêmio e número de inscrições conferidos)
 
 ---
 

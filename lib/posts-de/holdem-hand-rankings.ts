@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Die Reihenfolge der Pokerhände von der besten zur schlechtesten lautet: Royal Flush, Straight Flush, Vierling, Full House, Flush, Straße, Drilling, Zwei Paare, Paar und High Card.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-09-07",
-  masterUpdated: "2026-09-07",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "14 Min.",
   emoji: "🃏",
@@ -293,7 +293,7 @@ Wenn die Time Bank läuft, gehe diesen Scan jedes Mal in dieser Reihenfolge durc
 
 **3. Zuletzt die Paare** – ist das Board gepaart? ==r:Wenn ja, sind Full Houses und Vierlinge im Spiel, und dein Flush oder deine Straße kann in Gefahr sein.==
 
-Trainierte Spieler lesen das Board in genau dieser Reihenfolge – zuerst die Gefahr (Flush/Straße auf dem Board), dann ob das Board gepaart ist (was alles bedroht). Mach es zur Gewohnheit und du hörst auf, am River leichtfertig zu callen.
+Trainierte Spieler lesen das Board in genau dieser Reihenfolge – Flush, dann Straße, dann Paare: zuerst die Gefahr (Flush/Straße auf dem Board), dann ob das Board gepaart ist (was alles bedroht). Mach es zur Gewohnheit und du hörst auf, am River leichtfertig zu callen.
 
 ---
 
@@ -427,7 +427,7 @@ A. Ja. Das Ass spielt hoch und niedrig, also ist A-2-3-4-5 (das „Wheel“) ein
 2. **Die Falle:** Ein Flush (#5) schlägt eine Straße (#6) – und jedes gepaarte Board kann ein Full House verstecken, das beide schlägt.
 3. **Die Realität:** Die meisten Pots werden mit Paar oder High Card gewonnen, also ist dein Kicker mehr wert, als du denkst.
 
-Lerne die Reihenfolge an einem Nachmittag, übe die verwirrenden Duelle und führe an jedem Board den Scan „Farben → Straßen → Paare“ durch. Tu das, und du schiebst nie wieder den Pot auf die falsche Seite.
+Lerne die Reihenfolge an einem Nachmittag, übe die verwirrenden Duelle und führe an jedem Board den Scan „Flush → Straße → Paare“ durch. Tu das, und du schiebst nie wieder den Pot auf die falsche Seite.
 
 Wenn du die Rangfolge kennst, ist der nächste natürliche Schritt zu wissen, mit welchen Händen du überhaupt einsteigst – nutze den [Texas-Hold'em-Starthände-Chart nach Position](/de/blog/holdem-starting-hands-chart), um genau zu sehen, welche Hole Cards du von jeder Position spielst.
 

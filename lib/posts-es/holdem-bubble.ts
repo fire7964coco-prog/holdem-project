@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "La burbuja es el punto justo antes de premios, donde una eliminación más deja cobrar a todos los demás. Como bustear significa no ganar nada, sobrevivir vale más que las fichas que ganarías: los rangos de call se cierran a lo bestia mientras los shoves siguen amplios. Los stacks grandes atacan, los stacks medios son los más atrapados (no los cortos), y en una burbuja de satélite foldeas todo, incluso ases, una vez que tu asiento está asegurado.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-08-26",
-  masterUpdated: "2026-08-26",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🫧",
@@ -113,7 +113,7 @@ El mantra del stack corto: la fold equity lo es todo. Haz shove primero y elige 
 
 **El "bubble factor" mide cuánto más te cuesta perder tu stack de lo que te ayuda ganar el mismo bote — y se traduce directamente en la equity extra que necesitas para pagar.** Un bubble factor de 1.0 significa que fichas y dinero se mueven juntos (al inicio de un torneo). Un bubble factor de 1.5 significa que ==bustear duele 1.5× más de lo que ayuda ganar==, así que necesitas una ventaja mucho mayor para meter tus fichas.
 
-Aquí va la parte útil: la equity que necesitas para quedar break-even en un call es ==c · BF ÷ (P + c · BF)==, donde **c** es lo que te cuesta pagar y **P** el bote que te llevarías. Cuando arriesgas exactamente lo que puedes ganar, eso se reduce a la forma que sueles ver citada — ==BF ÷ (1 + BF)== — que es la que usa la tabla de abajo.
+Aquí va la parte útil: la equity que necesitas para quedar break-even en un call es ==c · BF ÷ (P + c · BF)==, donde **c** es lo que te cuesta pagar y **P** el bote que te llevarías — todo lo que ya hay en el centro, sin contar tu propio call. Cuando arriesgas exactamente lo que puedes ganar, eso se reduce a la forma que sueles ver citada — ==BF ÷ (1 + BF)== — que es la que usa la tabla de abajo.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -129,7 +129,7 @@ Aquí va la parte útil: la equity que necesitas para quedar break-even en un ca
 
 Lee esa última columna como un techo, no como tu spot: los botes reales de burbuja llevan dinero muerto, y el dinero muerto empuja el requisito **hacia abajo**. Si la ciega pequeña va de jam por 10bb y tú pagas 9bb a un bote que ya tiene 12bb, con un bubble factor de 1.5 necesitas ==52.9%==, no 60% — y sin ninguna presión ICM son simples pot odds, ==42.9%==.
 
-La otra mitad es que el bubble factor depende de **quién tienes enfrente**, no de la fase. A cuatro jugadores con tres premiados, un stack medio frente al chip leader carga un bubble factor cercano a ==3.0==, mientras que ese mismo stack medio frente al jugador más corto apenas pasa de ==1.1==; con stacks iguales ronda ==1.9==, y una burbuja de mesa final a seis va de ==2.0== para arriba. Trata 1.5–1.7 como un suelo de una burbuja seria, no como un pico — y sí, bajan una vez que estás en premios. Mete tus propios stacks y premios en la [calculadora de ICM](/en/calculator) para ver tu número real en un spot.
+La otra mitad es que el bubble factor depende de **quién tienes enfrente**, no de la fase. A cuatro jugadores con tres premiados, un stack medio frente al chip leader carga un bubble factor cercano a ==3.0==, mientras que ese mismo stack medio frente al jugador más corto apenas pasa de ==1.1==; con stacks iguales ronda ==1.9==, y en una burbuja de mesa final a seis los stacks medios van de ==2.0== para arriba (el chip leader, como siempre, se queda muy por debajo). Trata 1.5–1.7 como un suelo de una burbuja seria, no como un pico — y sí, bajan una vez que estás en premios. Mete tus propios stacks y premios en la [calculadora de ICM](/en/calculator) para ver tu número real en un spot.
 
 ---
 
@@ -138,7 +138,7 @@ La otra mitad es que el bubble factor depende de **quién tienes enfrente**, no 
 **Cuando el dinero está cerca, los torneos pasan a "hand-for-hand" — todas las mesas juegan exactamente una mano a la vez y luego esperan — precisamente para impedir que los jugadores hagan stalling hasta colarse en premios.** Sin ello, los jugadores de mesas lentas podrían foldear mano tras mano mientras las mesas más rápidas queman la burbuja. El hand-for-hand nivela el terreno:
 
 - **Cómo funciona:** el director del torneo pausa el reloj, y a partir de ahí cada mano descuenta ==2 minutos== fijos del nivel, dure lo que dure (regla 126.a y 126.c de las WSOP; RP-8 de la TDA) — así que las ciegas siguen subiendo durante la burbuja, solo que por mano y no por minuto real. Todas las mesas reparten una mano, y ninguna empieza la siguiente hasta que todas han terminado. Si dos jugadores bustean en la misma mano de hand-for-hand en la misma mesa, el que tenía menos fichas al inicio de la mano se lleva el puesto más bajo (el de la burbuja); si bustean en mesas distintas, quedan clasificados como empate y reparten los dos premios implicados.
-- **Stalling:** consumir todo el banco de tiempo en cada decisión para ver menos manos (y foldear hasta premios). Funciona justo porque tanquear no cuesta reloj: la mano descuenta sus 2 minutos igual, foldees al instante o quemes entero el banco de tiempo. Los stacks grandes no tienen razón para hacer stalling — quieren más manos para atacar. Los stacks cortos y medios a veces hacen stalling para sobrevivir, ==pero un stalling excesivo puede ganarte que te pidan el reloj (clock call) o una penalización== — tanquea con cabeza, sin quemar el banco de tiempo a propósito.
+- **Stalling:** consumir todo el banco de tiempo en cada decisión con la esperanza de ver menos manos antes de premios. Durante el hand-for-hand esa esperanza no se sostiene: no reduce el número de manos que tu mesa tiene que jugar — todas las mesas juegan las mismas manos y cada mano descuenta 2 minutos del reloj (reglas 126.a y 126.c de las WSOP), foldees al instante o quemes entero el banco de tiempo. Los stacks grandes no tienen razón para hacer stalling — quieren más manos para atacar. Los stacks cortos y medios lo siguen haciendo por costumbre, ==pero un stalling excesivo puede ganarte que te pidan el reloj (clock call) o una penalización== — tanquea con cabeza, sin quemar el banco de tiempo a propósito.
 - **Explótalo:** como todos los demás bajan el ritmo, un stack grande que sigue aplicando presión durante el hand-for-hand acumula ciegas y antes casi sin oposición.
 
 ---
@@ -148,7 +148,7 @@ La otra mitad es que el bubble factor depende de **quién tienes enfrente**, no 
 **En un satélite, cada asiento paga lo mismo — así que en el momento en que tu stack está a salvo dentro de la burbuja, foldeas todo, incluidos ases servidos.** Este es el spot más contraintuitivo del póker, y es correcto. Si ganar un flip te da el ==mismo asiento que ya tienes asegurado== mientras que perderlo te elimina, no hay recompensa y sí un riesgo enorme:
 
 - **Una vez que tu asiento está matemáticamente a salvo** (estás lo bastante dentro de la burbuja como para que no te alcancen), foldea cada mano — sí, incluso AA y KK — y deja que los stacks más cortos se peleen. Rehaz esa cuenta cada vez que suban las ciegas: la "zona segura" encoge cuando entran los antes.
-- **No cuentes con el stalling en vivo.** Online, usar todo tu reloj es gratis; en vivo, quemar bancos de tiempo a propósito para escalar premios es explícitamente sancionable bajo las reglas de las WSOP — foldea a velocidad normal.
+- **No cuentes con el stalling en vivo.** Online, usar todo tu reloj no conlleva penalización; en vivo, quemar bancos de tiempo a propósito para escalar premios es explícitamente sancionable bajo las reglas de las WSOP — foldea a velocidad normal.
 - **La única excepción:** paga solo si cubres al stack corto en cuestión y su eliminación asegura la burbuja *para ti* — y solo mientras tu asiento siga garantizado aunque pierdas el bote.
 
 Si te llevas una sola cosa de esta sección: un satélite no es un torneo normal. Las fichas por encima del umbral de seguridad no valen nada, así que juega en consecuencia.

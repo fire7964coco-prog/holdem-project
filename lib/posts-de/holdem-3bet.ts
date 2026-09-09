@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Eine 3-Bet ist der erste Re-Raise vor dem Flop – sie heißt 3-Bet, weil der Big Blind die erste Bet ist, der Open-Raise die zweite und dein Re-Raise die dritte. 3-bette auf Value einen engen Kern (QQ+, AK) plus ein paar suited Blocker-Bluffs wie A5s, size sie in Position auf etwa das 3-fache des Opens und out of Position auf das 4-fache, und halte deine gesamte 3-Bet-Frequenz bei 6–10%. Wenn du selbst gegen eine 3-Bet sitzt, 4-bette deine Premiums, calle die Hände, die gut spielen, und folde den Rest – gegen Low-Stakes-Spieler, die nie bluffen, häufiger als „ausgeglichen“.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-06",
-  masterUpdated: "2026-08-26",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "16 Min.",
   emoji: "♦️",
@@ -218,7 +218,7 @@ Genug Theorie – hier eine komplette Hand mit den Zahlen, damit du den ganzen A
 - **Flop:** ==Q♦ 8♣ 4♥.== Ich flope **Top Pair, Top Kicker** – mein A♠Q♠ macht ein Paar Damen mit dem bestmöglichen Kicker (dem Ass). Beste fünf Karten: Q♠ Q♦ A♠ 8♣ 4♥ = ein Paar (Damen) mit dem Ass-Kicker. Gegen seine Range aus schwächeren Damen, Achten und Floats liege ich weit vorne.
 - **Der Punkt:** Weil ich preflop 3-gebettet habe, ist der Pot bereits groß und ich habe die Betting-Führung, also bette ich erneut auf Value und werde von schwächeren Damen und Draws bezahlt. Hätte ich preflop nur *geflattet*, hätten vielleicht drei andere Spieler diesen Flop gesehen, meine Hand wäre weit schwerer zu spielen und der Pot wäre ein Bruchteil der Größe. Die 3-Bet ist es, die Top Pair in einen Stack verwandelt hat.
 
-Jetzt dreh es um: Hätte ich dort eine **light** Hand wie A5s 3-gebettet und der Cutoff hätte auf €55 **4-gebettet**, würde ich einfach folden – der Blocker-Bluff hat seinen Job getan, indem er mir einen billigen, sauberen Laydown gab. Das ist die Disziplin, die Light-3-Betting profitabel statt spewy macht.
+Jetzt dreh es um: Hätte ich dort eine **light** Hand wie A5s 3-gebettet und der Cutoff hätte auf €48 **4-gebettet** (rund 2,7x – eine Spur über den 2,2–2,5x in Position, weil der Cutoff postflop zuerst handelt), würde ich einfach folden – der Blocker-Bluff hat seinen Job getan, indem er mir einen billigen, sauberen Laydown gab. Das ist die Disziplin, die Light-3-Betting profitabel statt spewy macht.
 
 ---
 

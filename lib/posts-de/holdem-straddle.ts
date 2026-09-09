@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ein Straddle ist ein optionaler Blind-Einsatz – meist das Doppelte des Big Blinds – der gesetzt wird, bevor die Karten ausgeteilt werden. Er kauft dem Straddler die letzte Action preflop und die Option zu raisen, und verdoppelt so den Einsatz. In fast jedem Fall ist es ein -EV-Spielzug, erlaubt nur im Cashgame nach Hausregeln.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-08-26",
-  masterUpdated: "2026-08-26",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "💰",
@@ -135,8 +135,8 @@ Selbst im Cashgame ist es optional und hausregelabhängig: Manche Rooms erlauben
 Die Solver sind sich hier ungewöhnlich einig, und die Analyse von GTO Wizard sagt es unverblümt. Drei Gründe:
 
 :::card
-🎯 | Du committest blind | Geld geht rein, bevor du deine Karten siehst, also spielst du einen aufgeblähten Pot ohne jede Information – genau der Nachteil, der die Blinds zu den schlechtesten Plätzen am Tisch macht
-📉 | Er schrumpft deinen positionellen Vorteil | Den Blind zu verdoppeln bläht den Startpot auf und drückt zugleich alle Stacks – in Big Blinds gerechnet – zusammen. Wider Erwarten reagieren Solver, indem sie in gestraddelten Pots **weniger** Hände öffnen – rund 15–20% weniger am Button – nicht mehr
+🎯 | Du committest blind | Geld geht rein, bevor du deine Karten siehst, also spielst du einen aufgeblähten Pot ohne jede Information – genau der Nachteil, der die Blinds zu den schlechtesten Plätzen am Tisch macht. Er halbiert außerdem deine effektive Stacktiefe: Bei €1/€2 sind €200 genau 100 Big Blinds, mit einem €4-Straddle spielt derselbe Stack wie 50
+📉 | Er schrumpft deinen positionellen Vorteil | Den Blind zu verdoppeln bläht den Startpot auf und drückt zugleich alle Stacks – in Big Blinds gerechnet – zusammen. Wider Erwarten reagieren Solver, indem sie in gestraddelten Pots **weniger** Hände öffnen – rund 15–20% weniger am Button, laut [GTO Wizards Sims zu gestraddelten Pots](https://blog.gtowizard.com/preflop-strategy-in-straddled-pots/) – nicht mehr
 💸 | Er bläht den Rake auf | Größere Pots bedeuten mehr [Rake](/de/blog/holdem-rake), der aus ihnen abgeschöpft wird, eine versteckte Steuer auf jede gestraddelte Hand in einem gerakten Cashgame
 :::
 

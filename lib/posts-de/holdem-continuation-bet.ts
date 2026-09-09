@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Eine Continuation Bet (C-Bet) ist ein Einsatz am Flop vom Spieler, der preflop geraist hat. Die moderne Regel ist nicht 'jeden Flop c-betten' – sondern die Flops zu setzen, die deine Range favorisieren (hohe, trockene Boards wie K-7-2) klein und oft, und die zu checken, die deinen Gegner favorisieren (niedrige, verbundene Boards wie 7-6-5). Setze klein – etwa ein Drittel Pot – auf trockenen Boards, groß – zwei Drittel oder mehr – auf wet Boards, c-bette weniger out of Position und deutlich weniger multiway.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-08-18",
-  masterUpdated: "2026-08-11",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "15 Min.",
   emoji: "🔥",
@@ -127,7 +127,7 @@ Setz echte Zahlen dahinter. Sagen wir, der Pot ist ==$30== am Flop:
 - Eine **Ein-Drittel-Pot**-C-Bet sind ==$10== – deine Range-Bet für trockene Boards.
 - Eine **Zwei-Drittel-Pot**-C-Bet sind ==$20== – deine Größe für wet Boards, um die Draws abzukassieren.
 
-In **Turnieren** tendiere eine Spur kleiner – oft **halber Pot oder weniger** – weil dein Stack kostbar ist und du nicht nachladen kannst. Was auch immer du wählst, binde die Größe ans Board, nicht an Gewohnheit.
+In **Turnieren** tendiere eine Spur kleiner: Die kleine Size bleibt ein Drittel, die große ist aber häufiger **halber Pot** als zwei Drittel – weil dein Stack kostbar ist und du nicht nachladen kannst. Was auch immer du wählst, binde die Größe ans Board, nicht an Gewohnheit.
 
 ---
 
@@ -235,7 +235,7 @@ A. Es hängt von Position, Board und Anzahl der Gegner ab, also behandle diese a
 
 **Q. Wie viel solltest du c-betten?**
 
-A. Sizing nach dem Board. Auf trockenen, statischen Boards bette klein – etwa ein Drittel des Pots – weil die Range deines Gegners schwach ist und du keine Draws abkassieren musst. Auf wet, dynamischen Boards bette groß – zwei Drittel Pot oder mehr – um Flushes und Straight Draws abzukassieren und den Pot mit deinen starken Händen aufzubauen. In Turnieren tendiere kleiner, oft halber Pot oder weniger.
+A. Sizing nach dem Board. Auf trockenen, statischen Boards bette klein – etwa ein Drittel des Pots – weil die Range deines Gegners schwach ist und du keine Draws abkassieren musst. Auf wet, dynamischen Boards bette groß – zwei Drittel Pot oder mehr – um Flushes und Straight Draws abzukassieren und den Pot mit deinen starken Händen aufzubauen. In Turnieren schrumpft die große Size – häufiger halber Pot als zwei Drittel –, während die kleine ein Drittel bleibt.
 
 **Q. Solltest du out of Position c-betten?**
 

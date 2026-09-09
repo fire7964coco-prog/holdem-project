@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Das Main Event der APT Incheon 2026 gewann Stephen Pang aus Hongkong – KRW 411.180.000 (~$293.700) nach einem Dreier-ICM-Deal plus die 24K-Gold-Löwentrophäe. Das Feld setzte mit 1.393 Entries einen neuen Rekord, der Preispool lag bei KRW 3.008.880.000. Zweiter wurde Shoumin Zhang (China, KRW 366.500.000 / ~$261.785), Dritter Yifu He (USA). Die Top 3 erhielten zusätzlich Seats für das Main Event der APT Championship 2026 in Taipeh (~$10.000 pro Seat). Nur für ausländische Staatsbürger (koreanische Bürger ohne Wohnsitz im Ausland dürfen nicht rein). Seoul ist ~1 Stunde entfernt – beim nächsten Stopp sind Pokerreise und Korea-Reise wieder dieselbe Reise.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-08-28",
-  masterUpdated: "2026-08-28",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "16 Min.",
   emoji: "🇰🇷",
@@ -37,7 +37,7 @@ Die Pokerreise und die Korea-Reise sind dieselbe Reise. ==g:Paradise City ist 10
 ---
 
 > **Kurze Antwort**
-> Die APT Incheon 2026 lief ==**7.–16. Aug**== im Paradise City Casino, Incheon. Das Resort liegt ==g:10 Min mit dem kostenlosen Shuttle vom Terminal 1 des Flughafens Incheon== – fährt alle 20 Min, gratis. Main-Event-Buy-in: ==**KRW 2.500.000 (~$1.703)**==, $1M garantiert. Natural8s Online-Qualifikationen vergaben insgesamt ==g:**74 Seats**==. ==r:Das $35-Mega und OnLive endeten am 2. August, die letzte Route ($20 Step → $200 Mega) am 7. August==. ==g:**Die Online-Qualifikation endete mit dem Eröffnungstag der Serie.**== Das Casino ist ==r:nur für ausländische Staatsbürger== – koreanische Bürger ohne Wohnsitz im Ausland dürfen nicht rein.
+> Die APT Incheon 2026 lief ==**7.–16. Aug**== im Paradise City Casino, Incheon. Das Resort liegt ==g:10 Min mit dem kostenlosen Shuttle vom Terminal 1 des Flughafens Incheon== – fährt alle 20 Min, gratis. Main-Event-Buy-in: ==**KRW 2.500.000 (~$1.703)**==, $1M garantiert. Natural8s Online-Qualifikationen garantierten insgesamt ==g:**74 Seats**==. ==r:Das $35-Mega und OnLive endeten am 2. August, die letzte Route ($20 Step → $200 Mega) am 7. August==. ==g:**Die Online-Qualifikation endete mit dem Eröffnungstag der Serie.**== Das Casino ist ==r:nur für ausländische Staatsbürger== – koreanische Bürger ohne Wohnsitz im Ausland dürfen nicht rein.
 
 ---
 
@@ -141,7 +141,7 @@ Natural8 ist APTs offizieller Online-Partner und betreibt die ==**Journey to APT
 
 </div>
 
-:::note[**★Stand 9. August 2026 – die Online-Qualifikation ist beendet.** Das $35-Mega und die OnLive-Day-1-Qualifikationen liefen am 2. August aus, die letzte Route **$20 Step → $200 Mega** am **Freitag, dem 7. August** – am Eröffnungstag der Serie selbst. Die 52 + 22 = 74 Seats in der Tabelle sind die bereits vergebene Gesamtzahl. Die Wege stehen hier, weil beim nächsten APT-Stopp dieselbe Struktur zurückkommt.]:::
+:::note[**★Stand 9. August 2026 – die Online-Qualifikation ist beendet.** Das $35-Mega und die OnLive-Day-1-Qualifikationen liefen am 2. August aus, die letzte Route **$20 Step → $200 Mega** am **Freitag, dem 7. August** – am Eröffnungstag der Serie selbst. Die 52 + 22 = 74 Seats in der Tabelle sind die garantierten Gesamtzahlen dieser Routen. Die Wege stehen hier, weil beim nächsten APT-Stopp dieselbe Struktur zurückkommt.]:::
 
 **So sah der Step-Weg aus – dieselbe Struktur kommt beim nächsten APT-Stopp zurück:**
 
@@ -239,12 +239,12 @@ Du kannst die ganze Reise über im Casino-Hotel bleiben – deine Sessions spiel
 | ==g:**Kostenloser Shuttle → T1 → AREX Express**== | ==g:Seoul Station== | ==g:~53 Min== | ==g:~₩11.000 (~$8)== |
 | Kostenloser Shuttle → T1 → AREX All-Stop | Hongdae (Hongik Univ.) | ~70 Min | ~₩4.750 (~$3,50) |
 | Airport Bus 6001 | Myeongdong / City Hall | ~60 Min | ~₩17.000 (~$13) |
-| Airport Bus 6015 | Gangnam / Yangjae | ~70 Min | ~₩17.000 (~$13) |
+| Airport Bus 6015 | Myeongdong / Chungjeongno / Gongdeok / Mapo | je nach Verkehr | ~₩17.000 (~$13) |
 | Taxi direkt | Hongdae / Myeongdong | ~50–60 Min | ~$35–50 |
 
 </div>
 
-==g:Zwei AREX-Optionen ab T1==: der **Express** (nonstop zur Seoul Station in 43 Min, ₩11.000 – dann umsteigen in Linie 2 oder 4) oder der **All-Stop** (direkt zur Station Hongdae/Hongik University ohne Umstieg, ~60 Min, ₩4.750). All-Stop-Züge fahren alle 6–10 Minuten, von 5 Uhr bis Mitternacht. Airport-Busse fahren direkt nach Myeongdong und Gangnam, falls du das lieber magst.
+==g:Zwei AREX-Optionen ab T1==: der **Express** (nonstop zur Seoul Station in 43 Min, ₩11.000 – dann umsteigen in Linie 1 oder 4; für Linie 2 nimm stattdessen den All-Stop bis Hongik University) oder der **All-Stop** (direkt zur Station Hongdae/Hongik University ohne Umstieg, ~60 Min, ₩4.750). All-Stop-Züge fahren alle 6–10 Minuten, von 5 Uhr bis Mitternacht. Airport-Busse fahren direkt nach Myeongdong, falls du das lieber magst.
 
 So füllst du 1–3 freie Tage:
 

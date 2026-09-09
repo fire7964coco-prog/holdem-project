@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "No showdown, o último jogador que apostou ou aumentou mostra primeiro. Se todos deram check no river, o primeiro jogador ativo à esquerda do botão abre o jogo. Quem perdeu pode dar muck sem mostrar, mas quem pagou a aposta do river pode pedir para ver a mão de quem apostou.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-08-25",
-  masterUpdated: "2026-08-25",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -173,7 +173,7 @@ A. Sim — se você foi o último a apostar ou aumentar no river, você mostra p
 
 **Q. Dá para dar muck no showdown sem mostrar?**
 
-A. Sim, mas só se você claramente perdeu. Depois que a mão vencedora é mostrada, os perdedores podem dar muck com as cartas viradas para baixo. A exceção é quando a sua mão foi paga — quem pagou por ela pode pedir para vê-la — e, se alguém estava all-in num torneio, ninguém pode dar muck. Nunca dê muck antes de o dealer ler as duas mãos se houver qualquer dúvida sobre quem ganhou.
+A. Sim, mas só se você claramente perdeu. Depois que a mão vencedora é mostrada, os perdedores podem dar muck com as cartas viradas para baixo. A exceção é quando a sua mão foi paga — quem pagou por ela pode pedir para vê-la — e, num torneio, assim que um jogador está all-in e toda a ação de apostas terminou, todas as mãos do pote principal e dos side pots precisam ser mostradas — ninguém pode dar muck (regra 16 da TDA). Nunca dê muck antes de o dealer ler as duas mãos se houver qualquer dúvida sobre quem ganhou.
 
 **Q. O que é slow roll no poker e por que é tão malvisto?**
 

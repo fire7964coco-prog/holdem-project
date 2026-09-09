@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Die EPT Barcelona 2026 lief vom 16.–29. Aug. im Casino Barcelona. Der Italiener Manuel Ferrari gewann das €5.300-Main-Event und kassierte €1.002.488 aus einem Preispool von €8.841.550 bei 1.823 Entries. Für 2027 bleibt der günstigste Online-Weg der Power Path ab $0,50 → Gold Pass (€5.300 ME + €1.100 Side Event + 8 Nächte Hotel + €690 Spesen). Du brauchst ein PokerStars-Live-Konto und einen gültigen Ausweis, und Hotels solltest du früh buchen – der August ist Hochsaison.",
   category: "tournament",
   date: "2026-06-17",
-  updated: "2026-09-02",
+  updated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "16 Min.",
   emoji: "🃏",
@@ -62,7 +62,7 @@ Die Top 3 schlossen einen **Dreier-Deal** und ließen nur noch ==**€100.000**=
 
 *\* Inklusive Dreier-Deal.* Mit **1.823 Entries** war das das **siebtgrößte Main-Event-Feld der EPT-Geschichte** – ein brauchbarer Anhaltspunkt, wenn du 2027 kalkulierst.
 
-:::note[**Hinweis zu den Quellen.** Stand 31. August 2026 hatte PokerStars auf den offiziellen Event-Seiten noch keine Endergebnisse veröffentlicht – im Zeitplan stehen alle Events weiterhin als nicht gespielt. Die Zahlen oben stammen aus der Live-Berichterstattung vor Ort und sind zwischen zwei unabhängigen Medien gegengeprüft (siehe Quellen am Ende). Sobald die offiziellen Zahlen vorliegen, tauschen wir sie aus.]:::
+:::note[**Hinweis zu den Quellen.** Sieger, Siegprämie und Teilnehmerzahl oben wurden am 9. September 2026 gegen die offizielle Gesamtergebnis-Seite von PokerStars geprüft und stimmen überein (siehe Quellen am Ende).]:::
 
 ---
 
@@ -233,7 +233,7 @@ Jeder EPT-Spieler muss ein PokerStars-Live-Konto haben – ==r:ohne kannst du di
 
 ### 2. Source-of-Funds-Erklärung (Bar-Transaktionen)
 
-Das ist die eine, vor der dich fast niemand warnt. Jedes Mal, wenn du ein Turnier mit **Bargeld** im Casino Barcelona bezahlst, ==r:verlangen die spanischen Vorschriften, dass du die Herkunft dieses Geldes deklarierst==.
+Das ist die eine, vor der dich fast niemand warnt. Wenn du ein Turnier mit **Bargeld** im Casino Barcelona bezahlst, ==r:kann von dir verlangt werden, die Herkunft dieses Geldes zu deklarieren== – die EPT-Event-Seite spricht von „jeder Bar-Transaktion“, während das eigene Erklärungsformular des Casinos für Bar-Transaktionen ab 10.000 (€10.000) gilt.
 
 **So erledigst du es im Voraus:**
 1. Log dich bei [pokerstarslive.com](https://www.pokerstarslive.com/ept/barcelona/) in dein **PokerStars-Live**-Konto ein
@@ -326,7 +326,7 @@ Barcelona El Prat (BCN) ist etwa ==12 km vom Stadtzentrum entfernt== – je nach
 |:---|:---:|:---:|:---|
 | ==g:**Taxi / Uber**== | 25–35 Min. | €30–€40 | ==g:Am einfachsten mit Gepäck== |
 | **Aerobus (A1)** | 35 Min. | ~€6–7 | Bis Plaça Catalunya, dann Taxi oder Metro zum Casino |
-| **Metro (L9 Sud)** | 45–55 Min. | ~€5–6 | L9 Sud → umsteigen auf L4 → Ciutadella/Vila Olímpica (10 Min. zu Fuß zum Casino) |
+| **Metro (L9 Sud)** | 45–55 Min. | ~€5–6 | L9 Sud → in der Stadt die Linie wechseln, um auf die L4 zu kommen → Ciutadella/Vila Olímpica (10 Min. zu Fuß zum Casino; die Umsteigestation im TMB-Routenplaner prüfen) |
 | **PokerStars Travel** | Variabel | Kleine Gebühr | Vorab arrangierter Transfer, über PokerStars Live buchen |
 
 </div>
@@ -364,7 +364,7 @@ Barcelona El Prat (BCN) ist etwa ==12 km vom Stadtzentrum entfernt== – je nach
 |---|---|
 | ~11:00 | Registrierung öffnet (==r:komm genau zur Öffnung – bei 30–45 Min. Schlange ist «30 Min. vor Spielbeginn» schon zu spät==) |
 | ~12:00 | Cards in the air – Day 1 beginnt |
-| Abends | Spielende für Day 1 – üblicherweise 8 Level; die genaue Uhrzeit hängt von der Struktur ab |
+| Abends | Spielende für Day 1 – wie viele Level gespielt werden und wann genau Schluss ist, hängt von der Struktur ab |
 | Day 2+ | ==g:Nur Spieler, die Chips eingetütet haben, machen weiter== |
 
 </div>
@@ -423,7 +423,7 @@ A. Du brauchst ein ==**PokerStars-Live**==-Konto (getrennt von deinem Online-Spi
 
 **Q. Was ist das Source-of-Funds-Formular und ist es wirklich erforderlich?**
 
-A. Ja. Unter den spanischen Casino-Vorschriften erfordert **jede** Bar-Transaktion, dass du die Herkunft der Gelder deklarierst – eine Betragsgrenze, unter der du das nicht musst, gibt es nicht. Du kannst das Formular vorab online über dein PokerStars-Live-Konto ausfüllen – ==g:es dauert etwa 10 Minuten==. Zahlungen per Karte oder vorab gekauften Token erfordern es womöglich nicht.
+A. Wenn du bar bezahlst, rechne damit. Die EPT-Event-Seite sagt, „jede Bar-Transaktion“ verlange eine Erklärung zur Herkunft der Gelder, während das Erklärungsformular des Casinos für Bar-Transaktionen ab 10.000 (€10.000) gilt – kläre Grenze und Papiere also vorab mit dem Casino. Du kannst das Formular vorab online über dein PokerStars-Live-Konto ausfüllen – ==g:es dauert etwa 10 Minuten==. Zahlungen per Karte oder vorab gekauften Token erfordern es womöglich nicht.
 
 **Q. Was passiert, wenn ich einen Power Path Gold Pass gewinne – wird das Hotel automatisch gebucht?**
 
@@ -439,7 +439,7 @@ A. Das Port-Olímpic-Viertel in Barcelona ist generell sicher. ==r:Taschendiebst
 
 - **Festivaltermine, Venue, Buy-ins und Zeitplan** — [PokerStars Live · EPT Barcelona](https://www.pokerstarslive.com/ept/barcelona/) (offiziell; abgerufen am 31. August 2026)
 - **Finaltisch, Entries und Preispool des Main Events 2026** — Live-Berichterstattung vor Ort, gegengeprüft zwischen [PokerNews](https://www.pokernews.com/news/2026/08/manuel-ferrari-wins-2026-ept-barcelona-main-event-52260.htm) und [Card Player](https://www.cardplayer.com/poker-news/1741396-manuel-ferrari-wins-ept-barcelona-main-event-for-1-2-million) (beide vom 29. August 2026). Beide nennen dieselbe Feldgröße und dieselbe Reihenfolge; die Angabe zum siebtgrößten Main Event der EPT-Geschichte stammt von Card Player.
-- ⚠️ PokerStars hatte zum Redaktionsschluss **keine** offiziellen Ergebnisse veröffentlicht – die Zahlen werden mit den offiziellen abgeglichen, sobald diese erscheinen.
+- **Offizielle Ergebnisse** — [PokerStars · EPT Barcelona 2026 Gesamtergebnisse](https://www.pokerstars.com/poker/learn/news/ept-barcelona-2026-full-results/) (abgerufen am 9. September 2026 – Sieger, Preisgeld und Teilnehmerzahl abgeglichen)
 
 ---
 

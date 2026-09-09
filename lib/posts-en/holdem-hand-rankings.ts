@@ -26,7 +26,7 @@ I've spent more nights than I can count watching that exact "I thought I won" fa
 
 ## What Are the Poker Hand Rankings, Best to Worst?
 
-From best to worst, the ten Texas Hold'em hands rank: Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, One Pair, and High Card. The core rule is simple — the rarer a hand is to make, the higher it ranks. Below is the entire hierarchy with the long-run odds of holding each by the river.
+From best to worst, the ten Texas Hold'em hands rank: Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, One Pair, and High Card. The core rule is simple — the rarer a hand is to make from five cards, the higher it ranks. (The order was fixed by five-card odds; over seven cards a couple of frequencies cross — by the river a lone high card is actually rarer than two pair — but the ranking doesn't change.) Below is the entire hierarchy with the long-run odds of holding each by the river.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "odds",
   date: "2026-07-04",
   updated: "2026-09-09",
-  masterUpdated: "2026-08-11",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🎲",
@@ -84,7 +84,7 @@ El set mining es la jugada de [odds implícitas](/es/blog/holdem-implied-odds "t
 Dos números relacionados que la gente pregunta:
 
 - **Ligar un set para el river** (desde el preflop, viendo las cinco cartas de la mesa) es un ==**19.2%**== — 1 − C(48,5)/C(50,5). Más alto que la cifra del flop porque tienes dos cartas más, pero no puedes contar con llegar al river barato, y por eso el número del flop manda en el set mining.
-- **Set contra set** — ligas un set y pierdes contra uno mayor — no tiene una cifra única fija porque depende de cuántos rivales tengan parejas, pero con dos jugadores que ambos tienen pareja ronda el ~1%. Es el cooler clásico: la matemática estuvo de tu lado todo el camino.
+- **Set contra set** — dos jugadores con parejas servidas ligan set en la misma mano y el menor pierde contra el mayor — no tiene una cifra única fija porque depende de cuántos rivales tengan parejas, pero con dos jugadores que ambos tienen pareja, que *los dos* liguen set ronda el ~1%. Es el cooler clásico: la matemática estuvo de tu lado todo el camino.
 
 ---
 
@@ -120,7 +120,7 @@ Un color por **puerta trasera** (backdoor, runner-runner) — ligas solo *una* c
 
 ![Una escalera al ocho tendida en secuencia sobre el tapete verde, la mano terminada a la que persigue un proyecto abierto](/images/holdem-reading-straight-example.webp "Un proyecto de escalera abierto se llena por cualquiera de los dos extremos — ocho outs, 31.5% de completarlo al river")
 
-Las conectoras como 8♠7♠ tienen su propio ciclo de vida. **Ligarás una escalera hecha en el flop solo el 1.3%** de las veces (76 a 1) — más raro de lo que asume la mayoría. Mucho más a menudo ligas un **proyecto**:
+Las conectoras como 8♠7♠ tienen su propio ciclo de vida. **Ligarás una escalera hecha en el flop solo el 1.3%** de las veces (76 a 1) — más raro de lo que asume la mayoría. Esa cifra vale de 54s a JTs, las conectoras que pueden cerrar la escalera por los dos extremos; las manos del borde de la baraja tienen menos secuencias posibles, hasta el 0.33% del A-K. Mucho más a menudo ligas un **proyecto**:
 
 - **Proyecto de escalera abierto (de dos puntas):** ~10% de los flops con conectoras. Ocho outs, se completa el **31.5%** al river — 1 − C(39,2)/C(47,2) — o un 17% con una sola carta.
 - **Proyecto interior (gutshot):** cuatro outs, se completa el **16.5%** al river, 8.5% con una carta. La mitad de la equity de un abierto, y por eso las mismas conectoras se juegan tan distinto según el flop.
@@ -146,7 +146,7 @@ Estos son los números detrás de las mejores (y peores) noches de tu vida en el
 
 Una distinción sutil que las webs top suelen chapucear: un **set** es una pareja servida más una carta que la empareja en la mesa (11.8%), mientras que **trips** es una carta suelta sin emparejar que la mesa empareja dos veces (1.35%). El mismo trío sobre el papel, odds y jugabilidad muy distintas — un set está disfrazado, los trips son evidentes. Que nadie te diga que son la misma forma.
 
-El número de la escalera de color es para enmarcar: con conectoras del mismo palo hay exactamente **cuatro** flops que la hacen (una secuencia en tu palo), así que 4 ÷ 19,600 ≈ 1 de cada 4,900. Por eso las escaleras de color ligadas en el flop son historias que la gente cuenta durante una década.
+El número de la escalera de color es para enmarcar: con conectoras del mismo palo de 54s a JTs hay exactamente **cuatro** flops que la hacen (una secuencia de tres cartas en tu palo por cada escalera en la que la mano puede entrar; en los bordes hay menos — QJs tres, KQs dos, A2s una), así que 4 ÷ 19,600 ≈ 1 de cada 4,900. Por eso las escaleras de color ligadas en el flop son historias que la gente cuenta durante una década.
 
 La cifra del full cuenta todas las formas en que el flop te sirve un full con una pareja servida — incluidos los flops que vienen como trío de otro valor sobre tu pareja — y por eso se lee 0.98% en lugar del ~0.73% más estrecho que algunas tablas citan solo para "set más una pareja en la mesa".
 

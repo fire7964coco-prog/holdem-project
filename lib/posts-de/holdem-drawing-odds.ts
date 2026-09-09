@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Mit einem Pocket Pair floppst du in 11,8% der Fälle ein Set (7,5:1 dagegen), mit zwei suited Karten nur 0,84% einen Flush, und einen gefloppten Flushdraw komplettierst du bis zum River in 35% der Fälle. Jede Zahl unten stammt aus dem Deck, nicht aus dem Bauch.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-08-13",
-  masterUpdated: "2026-08-11",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "12 Min.",
   emoji: "🎲",
@@ -86,7 +86,7 @@ Set Mining ist der pureste [Implied Odds](/de/blog/holdem-implied-odds "thumb:/i
 Zwei verwandte Zahlen, nach denen Leute fragen:
 
 - **Ein Set bis zum River zu treffen** (vom Preflop aus, mit allen fünf Boardkarten) liegt bei ==**19,2%**== – 1 − C(48,5)/C(50,5). Höher als die Flop-Zahl, weil du zwei weitere Karten bekommst, aber du kannst dich nicht darauf verlassen, den River billig zu erreichen, weshalb die Flop-Zahl das Set-Mining bestimmt.
-- **Set over Set** – du floppst ein Set und verlierst gegen ein größeres – hat keine einzelne feste Zahl, weil es davon abhängt, wie viele Gegner Paare halten, aber mit zwei Spielern, die beide Paare halten, landet es bei ~1%. Es ist der klassische Cooler: die Mathematik war die ganze Zeit auf deiner Seite.
+- **Set over Set** – zwei Spieler mit Pocket Pairs floppen in derselben Hand ein Set, und das kleinere verliert gegen das größere – hat keine einzelne feste Zahl, weil es davon abhängt, wie viele Gegner Paare halten, aber mit zwei Spielern, die beide Paare halten, landet es bei ~1%, dass *beide* ein Set floppen. Es ist der klassische Cooler: die Mathematik war die ganze Zeit auf deiner Seite.
 
 ---
 
@@ -122,7 +122,7 @@ Ein **Backdoor** (Runner-Runner) Flush – du floppst nur *eine* zusätzliche Ka
 
 ![Eine Acht-hohe Straße der Reihe nach auf grünem Filz ausgelegt, die fertige Hand, die ein Open-Ended Draw jagt](/images/holdem-reading-straight-example.webp "Ein Open-Ended Straight Draw füllt von beiden Enden – acht Outs, 31,5% bis zum River zu komplettieren")
 
-Connectors wie 8♠7♠ haben ihren eigenen Lebenszyklus. Du **floppst nur in 1,3%** der Fälle eine fertige Straße (76:1) – seltener, als die meisten Spieler annehmen. Weit häufiger floppst du einen **Draw**:
+Connectors wie 8♠7♠ haben ihren eigenen Lebenszyklus. Du **floppst nur in 1,3%** der Fälle eine fertige Straße (76:1) – seltener, als die meisten Spieler annehmen. Dieser Wert gilt für 54s bis JTs, also die Connectors, die eine Straße von beiden Enden füllen können; Hände am Rand des Decks haben weniger Sequenzen, bis hinunter zu 0,33% für A-K. Weit häufiger floppst du einen **Draw**:
 
 - **Open-Ended Straight Draw (OESD):** ~10% der Flops mit Connectors. Acht Outs, komplettiert **31,5%** bis zum River – 1 − C(39,2)/C(47,2) – oder 17% auf jede einzelne Karte.
 - **Gutshot (Inside) Straight Draw:** vier Outs, komplettiert **16,5%** bis zum River, 8,5% auf eine Karte. Die halbe Equity eines Open-Enders, weshalb sich dieselben Connectors je nach Flop so unterschiedlich spielen.
@@ -148,7 +148,7 @@ Das sind die Zahlen hinter den besten (und schlimmsten) Nächten deines Poker-Le
 
 Eine entscheidende Unterscheidung, die die Top-Seiten regelmäßig vermasseln: ein **Set** ist ein Pocket Pair plus eine passende Boardkarte (11,8%), während **Trips** eine *ungepaarte* Hole Card ist, die das Board zweimal paart (1,35%). Auf dem Papier derselbe Drilling, wild unterschiedliche Odds und Spielbarkeit – ein Set ist getarnt, Trips sind offensichtlich. Lass dir von niemandem einreden, sie wären dasselbe.
 
-Die Straight-Flush-Zahl ist die, die man sich einrahmen sollte: mit Suited Connectors gibt es genau **vier** Flops, die ihn machen (eine Sequenz in deiner Farbe), also 4 ÷ 19.600 ≈ 1 von 4.900. Deshalb sind gefloppte Straight Flushes Geschichten, die Leute ein Jahrzehnt lang erzählen.
+Die Straight-Flush-Zahl ist die, die man sich einrahmen sollte: mit Suited Connectors von 54s bis JTs gibt es genau **vier** Flops, die ihn machen (für jede Straße, in der die Hand stecken kann, eine Dreier-Sequenz in deiner Farbe; die Ränder haben weniger – QJs drei, KQs zwei, A2s eine), also 4 ÷ 19.600 ≈ 1 von 4.900. Deshalb sind gefloppte Straight Flushes Geschichten, die Leute ein Jahrzehnt lang erzählen.
 
 Die Full-House-Zahl zählt jeden Weg, wie der Flop dir mit einem Pocket Pair ein Boat beschert – einschließlich der Flops, die als Drilling eines anderen Rangs auf deinem Paar kommen – weshalb dort 0,98% steht statt der engeren ~0,73%, die manche Tabellen nur für „Set plus ein Board-Paar“ angeben.
 

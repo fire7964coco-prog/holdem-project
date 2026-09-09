@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Equity is your share of the pot — the slice your hand is owed on average once all the cards are dealt, with split pots counted pro rata. You call when your equity beats the pot odds, but position and betting mean you rarely keep your full equity — and fold equity lets you win pots even when your hand is behind.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-08-12",
+  updated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🥧",
@@ -120,7 +120,7 @@ Betting that flush draw is worth ==+$52== versus check-folding it — and most o
 
 ==b:Realized equity = raw equity × realization%==
 
-A hand with 40% raw equity that only realizes 75% of it is really worth ==0.75 × 40% = 30%==. That's why you can be "ahead of your opponent's range" and still lose money — you never get to cash in the full slice.
+A hand with 40% raw equity that only realizes 75% of it is really worth ==0.75 × 40% = 30%==. That's why you can be "ahead of your opponent's range" and still lose money — out of position you rarely get to cash in the full slice.
 
 What moves your realization up or down:
 
@@ -130,7 +130,7 @@ What moves your realization up or down:
 📚 | Stack depth & skill | Deeper stacks and tougher opponents make marginal equity harder to realize
 :::
 
-This is the single most important idea most beginner guides leave out, and it's why the [same hand plays completely differently by position](/en/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp"). Raw equity is the ceiling; realization is what you take home.
+This is the single most important idea most beginner guides leave out, and it's why the [same hand plays completely differently by position](/en/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp"). Raw equity is the starting point — what you'd bank if the chips went in right now; realization is what you actually take home, and position decides whether that's more or less.
 
 ---
 
@@ -140,7 +140,7 @@ This is the single most important idea most beginner guides leave out, and it's 
 
 This is why preflop all-in equities matter so much: AA all-in against KK banks its full ==82%== — no realization tax, no fold equity, just the raw number playing out. It's also why a "coin flip" (22 vs AK at ~52/48) is a genuine near-tossup all-in, even though the same two hands played postflop would diverge wildly based on the board and who has position.
 
-All-in is the one spot in poker where the pie is sliced exactly as the math says — which is both its appeal and its danger.
+All-in is the one spot in poker where, with cards still to come, the pie is sliced exactly as the math says — which is both its appeal and its danger.
 
 ---
 
@@ -167,7 +167,7 @@ The practical takeaway: hands that want a multiway pot are the ones that make th
 Estimate raw equity | Outs × 4 or × 2 for draws; recall the matchup preflop
 Discount for realization | Out of position or hard to play? Shave it down — 40% raw might be 30% real
 Add fold equity | If you're betting, how often does villain fold? That's extra equity your hand alone doesn't have
-Compare to the price | Realized equity + fold equity vs your pot odds → call, bet, or fold
+Compare to the price | Calling? Realized equity vs your pot odds. Betting? How often villain folds vs the break-even fold rate, bet ÷ (pot + bet) → call, bet, or fold
 :::
 
 The night I mentioned at the top, I was making step one and stopping — counting my raw equity and ignoring that out of position, against a good player, I'd never realize it. Once I started discounting for position and thinking about *their* folds instead of just my cards, the leaks closed. Equity isn't a number you look up; it's a lens you run every decision through.
@@ -211,7 +211,7 @@ A. Equity realization is how much of your raw equity you actually collect. Reali
 
 **Q. What is all-in equity?**
 
-A. All-in equity is simply your raw equity — your share of the pot, splits counted pro rata — when no more betting can happen. Because there are no future decisions, you realize 100% of it, so raw equity becomes the exact share of the pot you collect over time. It's the one spot where "equity equals pot share" is literally true.
+A. All-in equity is simply your raw equity — your share of the pot, splits counted pro rata — when no more betting can happen. Because there are no future decisions, you realize 100% of it, so raw equity becomes the exact share of the pot you collect over time. It's the one spot where, with cards still to come, "equity equals pot share" is literally true.
 
 **Q. Why does my equity drop in multiway pots?**
 
@@ -230,7 +230,7 @@ A. Equity is your share of *this* pot if the hand is played out (a percentage); 
 ## The 3 Things to Remember
 
 1. **Equity is your share of the pot** — equity% × pot size. Call when it beats your pot odds. That comparison is the backbone of every decision.
-2. **You rarely keep all of it.** Realized equity = raw × realization%, and position is the biggest factor. Raw equity is the ceiling, not the payout.
+2. **You rarely keep all of it.** Realized equity = raw × realization%, and position is the biggest factor. Raw equity is the starting point, not the payout.
 3. **Aggression manufactures equity.** Fold equity lets a bet win pots your hand would lose — but it collapses multiway, where you need everyone to fold.
 
 Master this and the rest of poker math clicks into place. From here, turn equity into correct calls with the [pot odds guide](/en/blog/holdem-pot-odds), or see how deep stacks change the picture with [implied odds](/en/blog/holdem-implied-odds).
