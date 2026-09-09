@@ -316,7 +316,7 @@ USDTで払う場合は通常の受付ではなく専用窓口に行く必要が�
 /ja/blog/apt-incheon-2026-guide | APT仁川 — 日本から一番近い大型シリーズ | /images/apt-incheon-2026-guide-hero.webp
 :::
 
-## FAQ — よくある質問
+## よくある質問
 
 **Q. 日本で最大のポーカー大会は?**
 
