@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "在德州扑克里，同花（五张同花色的牌——约占五张发牌的 0.197%）永远大于顺子（五张连续的牌，约 0.392%）——因为同花更稀有：算到河牌的七张牌上，是 3.03% 对顺子的 4.62%。",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-07",
+  updated: "2026-09-09",
   masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "11 分钟",
@@ -229,7 +229,7 @@ Q 压过 J，所以 A 赢。如果两名玩家的最佳五张牌点数完全一�
 ---
 
 :::readnext[继续阅读]
-/zh/blog/holdem-tiebreak-rules | 踢脚牌与平局规则 | /images/holdem-tiebreak-hero.webp
+/zh/blog/holdem-tiebreak-rules | 德州扑克平局怎么判 | /images/holdem-tiebreak-hero.webp
 /zh/blog/holdem-split-pot-rules | 什么时候平分底池？ | /images/holdem-split-pot-hero.webp
 :::
 

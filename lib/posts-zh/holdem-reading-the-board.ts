@@ -311,7 +311,7 @@ export const POST: Post = {
 ---
 
 :::readnext[继续阅读]
-/zh/blog/holdem-tiebreak-rules | 踢脚牌与平局判定规则 | /images/holdem-tiebreak-hero.webp
+/zh/blog/holdem-tiebreak-rules | 德州扑克平局怎么判 | /images/holdem-tiebreak-hero.webp
 /zh/blog/holdem-split-pot-rules | 底池什么时候平分？ | /images/holdem-split-pot-hero.webp
 :::
 

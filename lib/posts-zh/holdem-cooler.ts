@@ -162,7 +162,7 @@ cooler 有一整个能认出来的家族。在每一种里，*两*手牌都强�
 
 :::readnext[继续阅读]
 /zh/blog/holdem-fish | 什么是扑克里的 fish（鱼）？ | /images/holdem-fish-hero.webp
-/zh/blog/holdem-tiebreak-rules | 摊牌时哪手牌赢？ | /images/holdem-tiebreak-hero.webp
+/zh/blog/holdem-tiebreak-rules | 德州扑克平局怎么判 | /images/holdem-tiebreak-hero.webp
 :::
 
 ## FAQ
