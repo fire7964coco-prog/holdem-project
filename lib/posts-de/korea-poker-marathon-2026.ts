@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "Koreas beste Herbstmarathons (Chuncheon 25. Okt, JTBC Seoul 1. Nov, Garmin Run 15. Nov) treffen auf perfektes Laufwetter – für 2026 ist allerdings nur noch der JTBC Seoul offen, Chuncheon und Garmin Run haben im Juli geschlossen. Das Paradise City Casino nahe dem Flughafen Incheon bietet Cash Games – nur für Ausländer, 10 Min. vom Terminal. Eine Reise deckt beides ab.",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-08-31",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "14 Min.",
   emoji: "🏃",
@@ -448,6 +449,8 @@ Das war's. Das ist die Erfahrung, die millionenfach in koreanischen sozialen Med
 | Rohes Ei | ₩500 | ~$0,40 |
 | Kimchi-Päckchen | ₩1.500 | ~$1,10 |
 | Picknickmatte (Leihe) | ₩3.000–5.000 | ~$2,20–3,70 |
+
+*Die USD-Angaben in diesem Guide sind grobe Umrechnungen, die zu unterschiedlichen Zeitpunkten entstanden sind – das APT-Buy-in oben rechnet mit ~₩1.500/$, diese Tabelle mit ~₩1.350/$. Prüf vor dem Budgetieren den aktuellen Kurs.*
 
 Die Maschine selbst ist ==g:kostenlos nutzbar – du zahlst nur für die Ramen==. Die Anleitung hängt auf Koreanisch und Englisch aus. Die meisten Parks bieten außerdem Zonen für Essenslieferung, falls du stattdessen Fried Chicken willst.
 

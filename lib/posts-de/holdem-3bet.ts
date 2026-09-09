@@ -320,6 +320,7 @@ A. Wenn die Stacks short werden – etwa 10–25 Big Blinds – spielen viele H�
 3. **Size sie ~3x in Position, ~4x out** – und out of Position nie klein.
 4. **Passe die Form zur Situation an:** linear vs. weite/schwache Opens (und aus dem Small Blind), polarisiert vs. enge Opens und aus dem Big Blind.
 5. **Gegen eine 3-Bet folden die meisten Hände** – 4-bette Premiums, calle die spielbaren und folde mehr als „ausgeglichen“ gegen Gegner, die nie bluffen.
+6. **Dann kommt der Flop.** Ein 3-Bet-Pot spielt sich völlig anders als ein Single-Raised Pot – mit den Zahlen dieses Artikels (3bb-Open, 9bb-3-Bet, 100bb tief) ist der Pot rund 2,6× größer (19,5bb gegenüber den 7,5bb, die ein Heads-up-Flat aufbauen würde; eine größere 3-Bet out of Position schiebt ihn Richtung 3,5×) und die Stack-to-Pot-Ratio fällt auf etwa 4,7. Der 3-Better bettet am Flop trotzdem oft seine gesamte Range – wegen der Form dieser Range, nicht weil der Stack flach wäre.
 
 Bring das 3-Betting richtig hin und du hörst auf, der Spieler zu sein, der mit Assen einfach nur callt und einen winzigen Pot gewinnt. Paare es mit einer disziplinierten [Starthand-Range](/de/blog/holdem-starting-hands-chart), scharfem [Positions](/de/blog/holdem-position-play)-Bewusstsein und dem vollen [Strategie-Rahmen](/de/blog/holdem-strategy), und dein Preflop-Spiel zieht still am Feld vorbei.
 

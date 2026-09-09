@@ -343,7 +343,7 @@ Berikut yang bisa dilakukan dengan 1–3 hari luang:
 | Transportasi Seoul (kartu T-money) | $5–$10/hari |
 | Buy-in APT Main Event | ==**~$1.703**== |
 | Side event hemat (Mini Main, Ultra Stack) | ==g:**$270–$610**== |
-| **Estimasi total trip poker 7 hari** | ==**$2.500–$5.000 + buy-in poker**== |
+| **Estimasi total trip poker 7 hari** | ==**~$800 (penerbangan Asia, hotel kelas menengah di Seoul) hingga ~$4.200 (penerbangan jarak jauh, hotel Paradise City) + buy-in poker**== |
 
 </div>
 

@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "O que é kicker no poker — regras, contagem e o ás dominado",
   seoTitle: "O que é kicker no poker? A carta lateral que leva o pote",
   desc: "O kicker é a carta lateral que desempata no poker — quais mãos têm um e quantos, por que A9 perde para AK e a exceção da quadra que quase todo guia erra.",
-  tldr: "O kicker é a carta lateral mais alta que não faz parte da sua mão feita — ele desempata quando dois jogadores têm o mesmo valor. Um par usa 3 kickers, dois pares 1, a trinca 2; sequências, flushes e full houses não têm nenhum. É por isso que AK ganha de AQ quando a mesa pareia um ás.",
+  tldr: "O kicker é a carta lateral mais alta que não faz parte da sua mão feita — ele desempata quando dois jogadores têm o mesmo valor. Um par usa 3 kickers, dois pares 1, a trinca 2; sequências, flushes, full houses e straight flushes não têm nenhum. É por isso que AK ganha de AQ quando a mesa pareia um ás.",
   category: "hand-rankings",
   date: "2026-07-08",
   updated: "2026-09-09",
@@ -30,7 +30,7 @@ Onde o kicker se encaixa no quadro maior do [ranking de mãos de poker](/pt/blog
 :::stripe
 3 | Kickers em uma mão de um par
 1 | Kicker em dois pares (e na quadra)
-0 | Kickers em uma sequência, flush ou full house
+0 | Kickers em uma sequência, flush, full house ou straight flush
 :::
 
 ---
@@ -205,7 +205,7 @@ A. Muito. Como todo mundo divide as cartas comunitárias, os jogadores frequente
 ## As 3 coisas para lembrar
 
 1. **Kicker = carta lateral, só desempate.** Ele resolve empates entre valores iguais e nunca ganha de uma mão de valor mais alto.
-2. **Combinação + kickers = cinco.** Um par tem 3 kickers, a trinca 2, dois pares e a quadra 1; sequências, flushes e full houses não têm nenhum.
+2. **Combinação + kickers = cinco.** Um par tem 3 kickers, a trinca 2, dois pares e a quadra 1; sequências, flushes, full houses e straight flushes não têm nenhum.
 3. **Kickers decidem dinheiro de verdade.** A dominação (A9 vs AK) e jogar a mesa se resumem ao kicker — escolha mãos com cartas laterais fortes e saiba quando a sua está morta.
 
 Acerte o kicker e uma categoria inteira de mãos "como foi que eu perdi essa?" deixa de ser mistério. Daqui, veja a ordem completa do [ranking de mãos de poker](/pt/blog/holdem-hand-rankings), ou as [regras completas de desempate](/pt/blog/holdem-tiebreak-rules) para cada tipo de mão.

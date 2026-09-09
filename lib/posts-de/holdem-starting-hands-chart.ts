@@ -109,7 +109,7 @@ Hier ist das Poker-Starthände-Chart für einen Standard-9-Max-Tisch:
 
 Die Regel: ==je später du agierst, desto mehr Hände kannst du profitabel öffnen==. Weil der Button postflop immer als Letzter agiert, ist er die wertvollste Position im Poker.
 
-Erkunde das komplette farbcodierte Grid – jede einzelne der 169 Hände nach Position:
+Sieh, wie sich die Opening-Range Position für Position weitet – UTG, MP, CO und BTN nebeneinander (das vollständige 13×13-Grid mit allen 169 Händen steckt im unten verlinkten Starthände-Chart-Tool):
 
 :::rangechart:::
 

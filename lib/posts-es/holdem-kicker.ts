@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Qué es el kicker en el póker — reglas, cuántos hay y el as dominado",
   seoTitle: "Kicker en póker: qué es y por qué pierdes el bote",
   desc: "El kicker rompe empates en el póker: qué manos lo tienen y cuántos, por qué A9 pierde contra AK y la excepción del póker que casi nadie explica bien.",
-  tldr: "El kicker es la carta lateral más alta que no forma parte de tu mano hecha — rompe el empate cuando dos jugadores comparten el mismo valor. La pareja usa 3 kickers, la doble pareja 1, el trío 2; escaleras, colores y fulls no tienen ninguno. Es la razón por la que AK gana a AQ cuando la mesa empareja un as.",
+  tldr: "El kicker es la carta lateral más alta que no forma parte de tu mano hecha — rompe el empate cuando dos jugadores comparten el mismo valor. La pareja usa 3 kickers, la doble pareja 1, el trío 2; escaleras, colores, fulls y escaleras de color no tienen ninguno. Es la razón por la que AK gana a AQ cuando la mesa empareja un as.",
   category: "hand-rankings",
   date: "2026-07-08",
   updated: "2026-09-09",
@@ -30,7 +30,7 @@ Dónde encaja el kicker en el panorama general de la [jerarquía de manos de pó
 :::stripe
 3 | Kickers en una mano de pareja
 1 | Kicker en doble pareja (y en el póker)
-0 | Kickers en una escalera, color o full
+0 | Kickers en una escalera, color, full o escalera de color
 :::
 
 ---
@@ -217,7 +217,7 @@ A. Es la trampa de jugar un as flojo (A-x, como A-9 o A-5) y perder el bote por 
 ## Las 3 cosas que debes recordar
 
 1. **Kicker = carta lateral, solo desempate.** Resuelve empates entre valores iguales y nunca gana a una mano de valor superior.
-2. **Combinación + kickers = cinco.** La pareja tiene 3 kickers, el trío 2, la doble pareja y el póker 1; escaleras, colores y fulls no tienen ninguno.
+2. **Combinación + kickers = cinco.** La pareja tiene 3 kickers, el trío 2, la doble pareja y el póker 1; escaleras, colores, fulls y escaleras de color no tienen ninguno.
 3. **Los kickers deciden dinero real.** La dominación (A9 contra AK) y jugar la mesa se reducen ambas al kicker — elige manos con cartas laterales fuertes y sabe cuándo la tuya está muerta.
 
 Acierta con el kicker y toda una categoría de manos de "¿cómo perdí eso?" deja de ser un misterio. Desde aquí, mira el orden completo de la [jerarquía de manos de póker](/es/blog/holdem-hand-rankings), o las [reglas de desempate](/es/blog/holdem-tiebreak-rules) completas para cada tipo de mano.

@@ -99,7 +99,7 @@ No hay un único porcentaje "correcto" de c-bet — quien te dé un solo número
 |:---|:---:|:---|
 | **En posición, mano a mano, board seco** | **70–100%** (pequeño) | El clásico "range bet" — apuesta casi todo, mínimo |
 | **En posición, mano a mano, board húmedo** | **~50–60%** | Más polarizado — valor y proyectos apuestan, el aire pasa |
-| **Fuera de posición, mano a mano** | **~40–50%** | Pasa mucho más para proteger tu rango de check |
+| **Fuera de posición, mano a mano (bote de subida simple, tú eras el agresor)** | **~40–50%** | Pasa mucho más para proteger tu rango de check. Como *3-beteador* fuera de posición se invierte — cerca del 100%, mira el [juego posicional](/es/blog/holdem-position-play) |
 | **Multiway (2 rivales)** | **~50% o menos** | Alguien seguramente ligó — aprieta |
 | **Multiway (3+ rivales)** | **Solo manos fuertes y buenos proyectos** | El fold equity básicamente desapareció |
 
@@ -222,7 +222,7 @@ A. No — este es el error de c-bet más común. Apuesta los flops que favorecen
 
 **Q. ¿Con qué frecuencia deberías cbetear?**
 
-A. Depende de la posición, el board y el número de rivales, así que trátalo como rangos, no reglas: aproximadamente 70–100% (a un tamaño pequeño) en posición mano a mano en un board seco, alrededor de 40–50% fuera de posición, y 50% o menos multiway. Una tasa global sana de c-bet en el flop es cerca del 55–70% — más del 85% significa que estás en piloto automático.
+A. Depende de la posición, el board y el número de rivales, así que trátalo como rangos, no reglas: aproximadamente 70–100% (a un tamaño pequeño) en posición mano a mano en un board seco, alrededor de 40–50% fuera de posición como agresor en un bote de subida simple (mucho más alto cuando eres tú quien 3-betea), y 50% o menos multiway. Una tasa global sana de c-bet en el flop es cerca del 55–70% — más del 85% significa que estás en piloto automático.
 
 **Q. ¿Cuánto deberías cbetear?**
 

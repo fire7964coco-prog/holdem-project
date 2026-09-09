@@ -145,7 +145,7 @@ La otra mitad es que el bubble factor depende de **quién tienes enfrente**, no 
 
 ## La burbuja de satélite: cuándo foldear ases
 
-**En un satélite, cada asiento paga lo mismo — así que en el momento en que tu stack está a salvo dentro de la burbuja, foldeas todo, incluidos ases servidos.** Este es el spot más contraintuitivo del póker, y es correcto. Si ganar un flip te da el ==mismo asiento que ya tienes asegurado== mientras que perderlo te elimina, no hay recompensa y sí un riesgo enorme:
+**En un satélite que reparte varios asientos idénticos, cada asiento paga lo mismo — así que en el momento en que tu stack está a salvo dentro de la burbuja, foldeas todo, incluidos ases servidos.** (La excepción es el satélite winner-take-all que reparte un solo asiento: ese se juega por el primer puesto, en chip EV.) Este es el spot más contraintuitivo del póker, y es correcto. Si ganar un flip te da el ==mismo asiento que ya tienes asegurado== mientras que perderlo te elimina, no hay recompensa y sí un riesgo enorme:
 
 - **Una vez que tu asiento está matemáticamente a salvo** (estás lo bastante dentro de la burbuja como para que no te alcancen), foldea cada mano — sí, incluso AA y KK — y deja que los stacks más cortos se peleen. Rehaz esa cuenta cada vez que suban las ciegas: la "zona segura" encoge cuando entran los antes.
 - **No cuentes con el stalling en vivo.** Online, usar todo tu reloj no conlleva penalización; en vivo, quemar bancos de tiempo a propósito para escalar premios es explícitamente sancionable bajo las reglas de las WSOP — foldea a velocidad normal.
@@ -208,7 +208,7 @@ A. Cerca de la burbuja de premios, todas las mesas juegan exactamente una mano a
 
 **Q. ¿Por qué foldearías ases en una burbuja de satélite?**
 
-A. Porque en un satélite cada asiento paga lo mismo, así que una vez que tu stack está a salvo dentro de la burbuja, ganar una mano no te da nada extra (ya tienes tu asiento) mientras que perderla te elimina. Con todo el riesgo y ninguna recompensa, foldear incluso ases servidos es matemáticamente correcto.
+A. Porque en un satélite de varios asientos cada asiento paga lo mismo, así que una vez que tu stack está a salvo dentro de la burbuja, ganar una mano no te da nada extra (ya tienes tu asiento) mientras que perderla te elimina. Con todo el riesgo y ninguna recompensa, foldear incluso ases servidos es matemáticamente correcto.
 
 ---
 

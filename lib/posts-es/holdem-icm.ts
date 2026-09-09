@@ -115,7 +115,7 @@ El jugador que más lo sufre es el **stack medio en la burbuja** — lo bastante
 
 ---
 
-![Un stack medio de torneo foldeando ante el all-in de un stack grande en la burbuja de premios, con fichas y una escalera de pagos a la vista — el momento en que la presión del ICM convierte un call normal en un fold](/images/holdem-icm-pressure.webp "Presión del ICM: el stack medio foldea porque bustear le cuesta la equity de premio que hay por encima del pago que ya tiene bloqueado")
+![Un stack medio de torneo foldeando ante el all-in de un stack grande en la burbuja de premios, con fichas y una escalera de pagos a la vista — el momento en que la presión del ICM convierte un call normal en un fold](/images/holdem-icm-pressure.webp "Presión del ICM: el stack medio foldea porque bustear en la burbuja le cuesta el mínimo entero y todos los premios por encima")
 
 ## Bubble factor y risk premium: cómo el ICM cambia tus all-ins y tus calls
 
@@ -156,7 +156,7 @@ El stack corto obtiene ==$97 más== con un acuerdo por ICM que con un chip chop,
 
 - **La [burbuja de premios](/es/blog/holdem-bubble "thumb:/images/holdem-bubble-hero.webp")** — el salto más grande de todos es de $0 a cobrar, así que los risk premiums alcanzan su pico.
 - **La burbuja de la mesa final y cada salto de premio en la mesa final** — cada peldaño de la escalera es dinero real.
-- **Satélites** — el caso extremo: cada plaza clasificatoria vale lo mismo, así que en cuanto tienes fichas suficientes para ganar una plaza, las fichas extra no valen casi *nada* y foldeas casi todo.
+- **Satélites** — el caso extremo: en un satélite de varios asientos cada plaza clasificatoria vale lo mismo, así que en cuanto tienes fichas suficientes para ganar una plaza, las fichas extra no valen casi *nada* y foldeas casi todo (un satélite winner-take-all se juega por el primer puesto, en chip EV).
 
 Apóyate en el chip EV como aproximación suficientemente buena cuando:
 
@@ -197,7 +197,7 @@ A. Asigna a cada jugador una probabilidad de terminar en cada puesto pagado seg�
 
 **Q. ¿Cuál es la diferencia entre el ICM y el chip EV?**
 
-A. El chip EV mide una decisión en fichas ganadas o perdidas; el ICM la mide en dinero real. Coinciden al principio de un torneo y divergen cerca de los premios, donde bustear te cuesta la equity de premio que hay por encima del pago que ya tienes bloqueado. Un all-in de coin flip que está bien en chip EV puede ser un fold claro bajo ICM.
+A. El chip EV mide una decisión en fichas ganadas o perdidas; el ICM la mide en dinero real. Coinciden al principio de un torneo y divergen cerca de los premios, donde bustear te cuesta equity de premio real — en la burbuja, toda tu opción de cobrar; una vez dentro, todo lo que hay por encima del pago que ya tienes bloqueado. Un all-in de coin flip que está bien en chip EV puede ser un fold claro bajo ICM.
 
 **Q. ¿Qué es un acuerdo por ICM, y en qué se diferencia de un chip chop?**
 
@@ -213,7 +213,7 @@ A. Nunca lo apagas del todo, pero su efecto es lo bastante pequeño como para us
 
 **Q. ¿Cuáles son los errores de ICM más comunes?**
 
-A. Tres grandes. Primero, *sobre*aplicar el ICM — foldear hasta quedarte corto "para escalar" cuando los saltos de premio aún están lejos, en vez de acumular fichas. Segundo, pagar demasiado ancho como stack medio cerca de la burbuja, justo donde tu risk premium es más alto y bustear te cuesta la equity que hay por encima del pago que ya tienes bloqueado. Tercero, aceptar un chip chop cuando vas corto (o un acuerdo por ICM cuando eres el líder) sin pasar los números primero. El ICM es una herramienta de fase final: usarlo demasiado pronto, o ignorarlo en la mesa final, filtra dinero en ambos casos.
+A. Tres grandes. Primero, *sobre*aplicar el ICM — foldear hasta quedarte corto "para escalar" cuando los saltos de premio aún están lejos, en vez de acumular fichas. Segundo, pagar demasiado ancho como stack medio cerca de la burbuja, justo donde tu risk premium es más alto — todavía no tienes nada bloqueado, así que bustear ahí te cuesta toda tu equity, el mínimo incluido. Tercero, aceptar un chip chop cuando vas corto (o un acuerdo por ICM cuando eres el líder) sin pasar los números primero. El ICM es una herramienta de fase final: usarlo demasiado pronto, o ignorarlo en la mesa final, filtra dinero en ambos casos.
 
 **Q. ¿Qué significa ITM (in the money / en premios)?**
 

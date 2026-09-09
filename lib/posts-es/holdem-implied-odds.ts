@@ -30,7 +30,7 @@ Las odds crudas detrás de cada proyecto salen de la [tabla de odds y probabilid
 :::stripe
 call ÷ % de ligar − (bote + call) | La fórmula de las odds implícitas
 7.5 a 1 | Odds reales de ligar un set en el flop
-0 | Tus odds implícitas cuando el rival está all-in
+0 | Tus odds implícitas mano a mano una vez que el rival está all-in
 :::
 
 ---
@@ -223,7 +223,7 @@ A. Las odds implícitas van todas del dinero que queda por ganar, y los stacks p
 ## Las 3 cosas que debes recordar
 
 1. **La fórmula:** extra necesario = (call ÷ % de ligar) − (bote actual + call). Si de forma realista puedes ganar más que eso después, el call es bueno incluso cuando las pot odds dicen fold.
-2. **El chequeo de realidad:** las odds implícitas son una estimación que vive de stacks profundos y un rival que paga. Contra un all-in son cero, y contra un stack corto queda muy poco — vuelve a las pot odds.
+2. **El chequeo de realidad:** las odds implícitas son una estimación que vive de stacks profundos y un rival que paga. Contra un all-in son cero mano a mano (en multiway, solo un tercer jugador que aún tenga fichas puede pagarte), y contra un stack corto queda muy poco — vuelve a las pot odds.
 3. **El espejo oscuro:** las reverse implied odds castigan los proyectos que no son al nut. Un proyecto al nut vale mucho más que el mismo proyecto a una mano segunda mejor.
 
 Domina esto y dejarás de quemar fichas en calls esperanzados mientras aún haces los rentables que nadie más se atreve a hacer. Desde aquí, fija los números crudos con la [tabla de odds y probabilidades del póker](/es/blog/holdem-probability), o mira exactamente con qué frecuencia liga cada proyecto en [drawing odds](/es/blog/holdem-drawing-odds).

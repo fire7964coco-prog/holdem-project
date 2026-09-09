@@ -15,7 +15,7 @@ export const POST: Post = {
   //   번역본에 전파하지 않는다(EN 파일 주석 + docs/locale-intentional-diffs.md) — 검토 완료 표시.
   //   ⚠ EN에는 08-20 커밋(851d8dc7)의 GTO ⑨ 역링크 1문단도 있으나 EN updated가 08-19에 머물러
   //   스테일 게이트 밖이다 — 같은 사유로 전파 제외(locale-intentional-diffs에 함께 등재).
-  masterUpdated: "2026-08-19",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "15 min",
   emoji: "🔥",
@@ -105,7 +105,7 @@ Não existe uma única porcentagem "correta" de c-bet — quem te dá um número
 |:---|:---:|:---|
 | **Em posição, heads-up, dry board** | **70–100%** (pequeno) | Clássica "range bet" — aposte quase tudo, minúsculo |
 | **Em posição, heads-up, wet board** | **~50–60%** | Mais polarizado — valor e draws apostam, nada dá check |
-| **Fora de posição, heads-up** | **~40–50%** | Dê check bem mais para proteger o seu checking range |
+| **Fora de posição, heads-up (pote de um aumento só, você foi o raiser)** | **~40–50%** | Dê check bem mais para proteger o seu checking range. Como *3-bettor* fora de posição, inverte — perto de 100%, veja o [guia de posições](/pt/blog/holdem-position-play) |
 | **Multiway (2 adversários)** | **~50% ou menos** | Alguém provavelmente conectou — aperte |
 | **Multiway (3+ adversários)** | **Só mãos fortes e bons draws** | O fold equity basicamente sumiu |
 
@@ -229,7 +229,7 @@ A. Não — este é o erro de c-bet mais comum. Aposte nos flops que favorecem o
 
 **Q. Com que frequência você deve dar c-bet?**
 
-A. Depende da posição, do board e do número de adversários, então trate isso como faixas, não regras: cerca de 70–100% (num tamanho pequeno) em posição heads-up num dry board, em torno de 40–50% fora de posição, e 50% ou menos multiway. Uma taxa geral saudável de c-bet no flop é cerca de 55–70% — acima de 85% significa que você está no piloto automático.
+A. Depende da posição, do board e do número de adversários, então trate isso como faixas, não regras: cerca de 70–100% (num tamanho pequeno) em posição heads-up num dry board, em torno de 40–50% fora de posição como raiser num pote de um aumento só (bem mais alto quando você é o 3-bettor), e 50% ou menos multiway. Uma taxa geral saudável de c-bet no flop é cerca de 55–70% — acima de 85% significa que você está no piloto automático.
 
 **Q. Quanto você deve apostar na c-bet?**
 

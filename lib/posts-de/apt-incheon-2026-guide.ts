@@ -341,7 +341,7 @@ So füllst du 1–3 freie Tage:
 | Seoul-Nahverkehr (T-money-Karte) | $5–$10/Tag |
 | APT-Main-Event-Buy-in | ==**~$1.703**== |
 | Günstige Side Events (Mini Main, Ultra Stack) | ==g:**$270–$610**== |
-| **Geschätzte Gesamtkosten 7-Tage-Pokerreise** | ==**$2.500–$5.000 + Poker-Buy-ins**== |
+| **Geschätzte Gesamtkosten 7-Tage-Pokerreise** | ==**~$800 (Flug innerhalb Asiens, Mittelklassehotel in Seoul) bis ~$4.200 (Langstreckenflug, Hotel Paradise City) + Poker-Buy-ins**== |
 
 </div>
 

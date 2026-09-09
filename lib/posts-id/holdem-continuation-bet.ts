@@ -15,7 +15,7 @@ export const POST: Post = {
   //   번역본에 전파하지 않는다(EN 파일 주석 + docs/locale-intentional-diffs.md) — 검토 완료 표시.
   //   ⚠ EN에는 08-20 커밋(851d8dc7)의 GTO ⑨ 역링크 1문단도 있으나 EN updated가 08-19에 머물러
   //   스테일 게이트 밖이다 — 같은 사유로 전파 제외(locale-intentional-diffs에 함께 등재).
-  masterUpdated: "2026-08-19",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "15 mnt",
   emoji: "🔥",
@@ -105,7 +105,7 @@ Tak ada satu persentase c-bet yang "benar" — siapa pun yang memberi Anda satu 
 |:---|:---:|:---|
 | **In position, heads-up, board kering** | **70–100%** (kecil) | "Range bet" klasik — taruh nyaris semuanya, mungil |
 | **In position, heads-up, board basah** | **~50–60%** | Lebih terpolarisasi — value dan draw bertaruh, tangan kosong check |
-| **Out of position, heads-up** | **~40–50%** | Check jauh lebih banyak untuk melindungi checking range |
+| **Out of position, heads-up (pot single-raised, Anda yang raise)** | **~40–50%** | Check jauh lebih banyak untuk melindungi checking range. Sebagai *3-bettor* out of position keadaannya berbalik — mendekati 100%, lihat [panduan posisi](/id/blog/holdem-position-play) |
 | **Multiway (2 lawan)** | **~50% atau kurang** | Ada yang mungkin nyambung — perketat |
 | **Multiway (3+ lawan)** | **Hanya tangan kuat & draw bagus** | Fold equity praktis lenyap |
 
@@ -228,7 +228,7 @@ A. Tidak — ini kesalahan c-bet paling umum. Taruh flop yang menguntungkan rang
 
 **Q. Seberapa sering Anda harus c-bet?**
 
-A. Tergantung posisi, board, dan jumlah lawan, jadi perlakukan ini sebagai rentang, bukan aturan: kira-kira 70–100% (dengan sizing kecil) in position heads-up di board kering, sekitar 40–50% out of position, dan 50% atau kurang di multiway. Tingkat c-bet flop keseluruhan yang sehat sekitar 55–70% — di atas 85% berarti Anda main autopilot.
+A. Tergantung posisi, board, dan jumlah lawan, jadi perlakukan ini sebagai rentang, bukan aturan: kira-kira 70–100% (dengan sizing kecil) in position heads-up di board kering, sekitar 40–50% out of position sebagai raiser di pot single-raised (jauh lebih tinggi saat Anda yang 3-bet), dan 50% atau kurang di multiway. Tingkat c-bet flop keseluruhan yang sehat sekitar 55–70% — di atas 85% berarti Anda main autopilot.
 
 **Q. Berapa besar Anda harus c-bet?**
 

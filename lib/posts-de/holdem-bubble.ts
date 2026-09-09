@@ -170,9 +170,9 @@ Ohne diese Regel könnten Spieler an langsamen Tischen Hand um Hand folden, wäh
 ## Was macht die Satellite-Bubble so besonders?
 
 > **Kurze Antwort**
-> Bei einem Satellite zahlt jeder Platz gleich – also foldest du in dem Moment, in dem dein Stack sicher innerhalb der Bubble ist, alles, inklusive Pocket Aces.
+> Bei einem Satellite, der mehrere identische Plätze vergibt, zahlt jeder Platz gleich – also foldest du in dem Moment, in dem dein Stack sicher innerhalb der Bubble ist, alles, inklusive Pocket Aces.
 
-Dieser Fold ist der kontraintuitivste Spot im Poker – und er ist korrekt. Wenn dir das Gewinnen eines Flips ==denselben Platz gibt, den du bereits gesichert hast==, während das Verlieren dich eliminiert, gibt es keine Belohnung und ein enormes Risiko:
+(Ein Winner-take-all-Satellite, der nur einen einzigen Platz vergibt, ist die Ausnahme: Er wird nach Chip EV auf Platz eins gespielt.) Dieser Fold ist der kontraintuitivste Spot im Poker – und er ist korrekt. Wenn dir das Gewinnen eines Flips ==denselben Platz gibt, den du bereits gesichert hast==, während das Verlieren dich eliminiert, gibt es keine Belohnung und ein enormes Risiko:
 
 - **Sobald dein Platz mathematisch sicher ist** (du bist weit genug innerhalb der Bubble, dass du nicht mehr eingeholt werden kannst), folde jede Hand – ja, sogar AA und KK – und lass die kürzeren Stacks es ausfechten. Rechne diese Schwelle bei jedem Blind-Anstieg neu: Die „sichere Zone“ schrumpft, sobald die Antes greifen.
 - **Spiel bewusst langsam, aber bleib innerhalb der Regeln.** An einer Satellite-Bubble schaut der Floor am schärfsten auf Stalling und geht oft früh in Hand for Hand. Exzessives Tanken bringt einen Clock-Call – läuft die Zeit ab, wird deine Hand für tot erklärt – und wiederholtes Stallen zieht Penalties nach sich, von der Verwarnung über ausgesetzte Hände bis zu mehreren ausgesetzten Runden. An der Sicherheitsschwelle kostet dich das genau den Sitzplatz, den du schützen wolltest.
@@ -226,7 +226,7 @@ A. Nahe der Money Bubble spielen alle Tische exakt eine Hand gleichzeitig und wa
 
 **Q. Warum würdest du Asse an einer Satellite-Bubble folden?**
 
-A. Weil bei einem Satellite jeder Platz gleich zahlt, also gibt dir das Gewinnen einer Hand, sobald dein Stack sicher innerhalb der Bubble ist, nichts extra (du hast deinen Platz bereits), während das Verlieren dich eliminiert. Mit allem Risiko und keiner Belohnung ist selbst Pocket Aces zu folden mathematisch korrekt.
+A. Weil bei einem Mehrplatz-Satellite jeder Platz gleich zahlt, also gibt dir das Gewinnen einer Hand, sobald dein Stack sicher innerhalb der Bubble ist, nichts extra (du hast deinen Platz bereits), während das Verlieren dich eliminiert. Mit allem Risiko und keiner Belohnung ist selbst Pocket Aces zu folden mathematisch korrekt.
 
 ---
 

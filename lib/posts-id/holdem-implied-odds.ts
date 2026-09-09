@@ -30,7 +30,7 @@ Peluang mentah di balik setiap draw datang dari [bagan peluang dan probabilitas 
 :::stripe
 call ÷ hit% − (pot + call) | Rumus implied odds
 7,5:1 | Peluang sesungguhnya mem-flop set
-0 | Implied odds Anda saat villain all-in
+0 | Implied odds Anda di heads-up saat villain all-in
 :::
 
 ---
@@ -223,7 +223,7 @@ A. Implied odds semuanya tentang uang yang tersisa untuk dimenangkan, dan stack 
 ## 3 Hal yang Harus Diingat
 
 1. **Rumusnya:** ekstra dibutuhkan = (call ÷ hit%) − (pot saat ini + call). Jika Anda realistis bisa menang lebih dari itu nanti, call-nya bagus bahkan saat pot odds bilang fold.
-2. **Cek kenyataannya:** implied odds adalah perkiraan yang hidup di atas stack dalam dan lawan yang membayar. Melawan all-in ia nol, dan melawan stack pendek yang tersisa sangat sedikit — kembali ke pot odds.
+2. **Cek kenyataannya:** implied odds adalah perkiraan yang hidup di atas stack dalam dan lawan yang membayar. Melawan all-in ia nol di heads-up (di pot multiway, hanya pemain ketiga yang masih punya chip yang bisa membayar Anda), dan melawan stack pendek yang tersisa sangat sedikit — kembali ke pot odds.
 3. **Cermin gelapnya:** reverse implied odds menghukum draw non-nut. Sebuah draw ke nuts bernilai jauh lebih besar daripada draw yang sama ke terbaik kedua.
 
 Kuasai ini dan Anda berhenti membakar chip pada call penuh harapan sambil tetap membuat call menguntungkan yang tak berani dilakukan orang lain. Dari sini, kunci angka mentahnya dengan [bagan peluang dan probabilitas poker](/id/blog/holdem-probability), atau lihat persis seberapa sering tiap draw mendarat di [drawing odds](/id/blog/holdem-drawing-odds).

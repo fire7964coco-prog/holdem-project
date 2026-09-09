@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Apa Itu Kicker di Poker — Aturan, Cara Menghitung & Ace yang Terdominasi",
   seoTitle: "Apa Itu Kicker di Poker? Kartu Samping yang Memenangkan Pot",
   desc: "Kicker adalah kartu samping yang memecah seri di poker: tangan mana yang punya kicker, kenapa A9 kalah dari AK, dan pengecualian quads yang sering keliru.",
-  tldr: "Kicker adalah kartu samping tertinggi yang bukan bagian dari tangan utama Anda — ia memecah seri saat dua pemain punya nilai tangan yang sama. One pair pakai 3 kicker, two pair 1, trips 2; straight, flush, dan full house tidak punya. Inilah kenapa AK menang atas AQ saat meja memasangkan sebuah ace.",
+  tldr: "Kicker adalah kartu samping tertinggi yang bukan bagian dari tangan utama Anda — ia memecah seri saat dua pemain punya nilai tangan yang sama. One pair pakai 3 kicker, two pair 1, trips 2; straight, flush, full house, dan straight flush tidak punya. Inilah kenapa AK menang atas AQ saat meja memasangkan sebuah ace.",
   category: "hand-rankings",
   date: "2026-07-08",
   updated: "2026-09-09",
@@ -30,7 +30,7 @@ Di mana kicker cocok dalam gambaran besar [urutan kartu poker](/id/blog/holdem-h
 :::stripe
 3 | Kicker dalam tangan one-pair
 1 | Kicker dalam two pair (dan quads)
-0 | Kicker dalam straight, flush, atau full house
+0 | Kicker dalam straight, flush, full house, atau straight flush
 :::
 
 ---
@@ -205,7 +205,7 @@ A. Sangat. Karena semua orang berbagi kartu komunitas, pemain sering membentuk p
 ## 3 Hal yang Harus Diingat
 
 1. **Kicker = kartu samping, hanya pemecah seri.** Ia menentukan seri antara nilai tangan yang setara dan tak pernah mengalahkan tangan bernilai lebih tinggi.
-2. **Kombinasi + kicker = lima.** One pair punya 3 kicker, trips 2, two pair dan quads 1; straight, flush, dan full house tak punya.
+2. **Kombinasi + kicker = lima.** One pair punya 3 kicker, trips 2, two pair dan quads 1; straight, flush, full house, dan straight flush tak punya.
 3. **Kicker menentukan uang sungguhan.** Dominasi (A9 vs AK) dan playing the board sama-sama berujung pada kicker — pilih tangan dengan kartu samping kuat dan tahu kapan milik Anda sudah mati.
 
 Pahami kicker dengan benar dan seluruh kategori tangan "kok saya bisa kalah?" berhenti jadi misteri. Dari sini, lihat urutan [peringkat tangan poker](/id/blog/holdem-hand-rankings) lengkap, atau [aturan pemecah seri](/id/blog/holdem-tiebreak-rules) lengkap untuk tiap jenis tangan.

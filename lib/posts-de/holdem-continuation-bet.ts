@@ -105,7 +105,7 @@ Es gibt keinen einzelnen „korrekten“ C-Bet-Prozentsatz – wer dir eine Zahl
 |:---|:---:|:---|
 | **In Position, heads-up, trockenes Board** | **70–100%** (klein) | Klassische „Range-Bet“ – bette fast alles, winzig |
 | **In Position, heads-up, wet Board** | **~50–60%** | Polarisierter – Value und Draws betten, Air checkt |
-| **Out of Position, heads-up** | **~40–50%** | Checke weit öfter, um deine Checking-Range zu schützen |
+| **Out of Position, heads-up (Single-Raised Pot, du warst der Raiser)** | **~40–50%** | Checke weit öfter, um deine Checking-Range zu schützen. Als OOP-*3-Better* dreht es sich um – nahe 100%, siehe das [Positions-Playbook](/de/blog/holdem-position-play) |
 | **Multiway (2 Gegner)** | **~50% oder weniger** | Wahrscheinlich hat jemand getroffen – zieh zusammen |
 | **Multiway (3+ Gegner)** | **Nur starke Hände & gute Draws** | Fold Equity ist im Grunde weg |
 
@@ -231,7 +231,7 @@ A. Nein – das ist der häufigste C-Bet-Fehler. Bette die Flops, die deine Rang
 
 **Q. Wie oft solltest du c-betten?**
 
-A. Es hängt von Position, Board und Anzahl der Gegner ab, also behandle diese als Bereiche, nicht als Regeln: grob 70–100% (in kleiner Größe) in Position heads-up auf einem trockenen Board, etwa 40–50% out of Position und 50% oder weniger multiway. Eine gesunde Gesamt-C-Bet-Rate am Flop liegt bei etwa 55–70% – über 85% bedeutet, dass du auf Autopilot fährst.
+A. Es hängt von Position, Board und Anzahl der Gegner ab, also behandle diese als Bereiche, nicht als Regeln: grob 70–100% (in kleiner Größe) in Position heads-up auf einem trockenen Board, etwa 40–50% out of Position als Raiser in einem Single-Raised Pot (deutlich höher, wenn du der 3-Better bist) und 50% oder weniger multiway. Eine gesunde Gesamt-C-Bet-Rate am Flop liegt bei etwa 55–70% – über 85% bedeutet, dass du auf Autopilot fährst.
 
 **Q. Wie viel solltest du c-betten?**
 

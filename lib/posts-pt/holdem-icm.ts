@@ -115,7 +115,7 @@ O jogador que sente isso mais é o **stack médio na bolha** — grande o bastan
 
 ---
 
-![Um stack médio de torneio foldando ao shove de um stack grande na bolha do dinheiro, fichas e uma escada de payout à vista — o momento em que a pressão de ICM transforma um call normal num fold](/images/holdem-icm-pressure.webp "Pressão de ICM: o stack médio folda porque bustar custa a equity de premiação acima do pagamento já garantido")
+![Um stack médio de torneio foldando ao shove de um stack grande na bolha do dinheiro, fichas e uma escada de payout à vista — o momento em que a pressão de ICM transforma um call normal num fold](/images/holdem-icm-pressure.webp "Pressão de ICM: o stack médio folda porque bustar na bolha custa o mínimo garantido inteiro e todo prêmio acima dele")
 
 ## Bubble factor & risk premium: como o ICM muda seus shoves e calls
 
@@ -156,7 +156,7 @@ O short stack recebe ==$97 a mais== de um ICM deal do que de um chip chop, porqu
 
 - **A [bolha do dinheiro](/pt/blog/holdem-bubble "thumb:/images/holdem-bubble-hero.webp")** — em termos relativos, nenhum pulo é maior que o de $0 para um prêmio (cada degrau seguinte é dinheiro real, mas nenhum muda "sair sem nada" para "sair pago"), então os risk premiums batem no teto.
 - **A bolha da final table e cada pay jump na final table** — cada degrau da escada é dinheiro real.
-- **Satellites** — o caso extremo: cada vaga classificatória vale o mesmo, então quando você tem fichas suficientes para ganhar uma vaga, fichas extras valem quase *nada* e você folda quase tudo.
+- **Satellites** — o caso extremo: num satélite de várias vagas idênticas, cada vaga classificatória vale o mesmo, então quando você tem fichas suficientes para ganhar uma vaga, fichas extras valem quase *nada* e você folda quase tudo (um satélite winner-take-all se joga pelo primeiro lugar, em chip EV).
 
 Apoie-se no chip EV como aproximação suficiente quando:
 
@@ -197,7 +197,7 @@ A. Ele atribui a cada jogador uma probabilidade de terminar em cada posição pa
 
 **Q. Qual a diferença entre ICM e chip EV?**
 
-A. O chip EV mede uma decisão em fichas ganhas ou perdidas; o ICM mede em dinheiro real. Eles concordam cedo num torneio e divergem perto do dinheiro, onde bustar custa a equity de premiação acima do pagamento que você já garantiu. Um all-in cara-ou-coroa que está ok em chip EV pode ser um fold claro sob ICM.
+A. O chip EV mede uma decisão em fichas ganhas ou perdidas; o ICM mede em dinheiro real. Eles concordam cedo num torneio e divergem perto do dinheiro, onde bustar custa equity de premiação de verdade — na bolha, toda a sua chance de entrar no dinheiro; depois de entrar, tudo acima do pagamento que você já garantiu. Um all-in cara-ou-coroa que está ok em chip EV pode ser um fold claro sob ICM.
 
 **Q. O que é um ICM deal, e como ele difere de um chip chop?**
 

@@ -303,6 +303,7 @@ A. A medida que los stacks se acortan — más o menos 10–25 ciegas grandes �
 3. **Dale un tamaño de ~3x en posición, ~4x fuera** — y nunca pequeño fuera de posición.
 4. **Ajusta la forma a la situación:** lineal vs aperturas amplias/débiles (y desde la ciega pequeña), polarizado vs aperturas cerradas y desde la ciega grande.
 5. **Enfrentando un 3-bet, la mayoría de las manos foldean** — 4-bet con las premium, iguala las jugables y foldea más de lo "balanceado" contra rivales que nunca farolean.
+6. **Y entonces llega el flop.** Un bote de 3-bet no se juega en nada como uno de subida simple — con los números de este artículo (apertura de 3bb, 3-bet de 9bb, 100bb de profundidad) el bote es unas 2.6× más grande (19.5bb frente a los 7.5bb que construiría un flat mano a mano; un 3-bet más grande fuera de posición lo empuja hacia 3.5×) y el SPR baja hasta cerca de 4.7. Aun así, quien hizo el 3-bet a menudo [apuesta todo su rango en el flop](/es/blog/3bet-pot-cbet) — por la forma de ese rango, no porque el stack sea corto.
 
 Domina el 3-bet y dejas de ser el jugador que solo iguala con ases y gana un bote minúsculo. Combínalo con un [rango de manos iniciales](/es/blog/holdem-starting-hands-chart) disciplinado, una consciencia afilada de la [posición](/es/blog/holdem-position-play) y el [marco de estrategia](/es/blog/holdem-strategy) completo, y tu juego preflop se adelanta en silencio al del resto.
 

@@ -105,7 +105,7 @@ Aquí tienes la tabla de manos iniciales de póker para una mesa estándar de 9-
 
 La regla: ==cuanto más tarde actúas, más manos puedes abrir de forma rentable==. Como el botón siempre actúa último postflop, es el asiento más valioso del póker.
 
-Explora la cuadrícula completa con código de colores — cada una de las 169 manos por posición:
+Mira cómo se ensancha el rango de apertura asiento a asiento — UTG, MP, CO y BTN uno al lado del otro (la cuadrícula completa de 13×13 con las 169 manos está en la herramienta de tabla de manos enlazada más abajo):
 
 :::rangechart:::
 

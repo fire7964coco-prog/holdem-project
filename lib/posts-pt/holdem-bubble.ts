@@ -145,7 +145,7 @@ A outra metade é que o bubble factor acompanha **quem está do outro lado**, n�
 
 ## A bolha de satélite: quando foldar ases
 
-**Num satélite, toda vaga paga o mesmo — então, no momento em que sua vaga está matematicamente garantida, você folda tudo, incluindo par de ases.** Este é o spot mais contraintuitivo do poker, e está correto. Se ganhar um cara ou coroa te dá a ==mesma vaga que você já garantiu== enquanto perdê-lo te elimina, não há recompensa e há risco enorme:
+**Num satélite que dá várias vagas idênticas, toda vaga paga o mesmo — então, no momento em que sua vaga está matematicamente garantida, você folda tudo, incluindo par de ases.** (O satélite winner-take-all, que dá uma vaga só, é a exceção: ele se joga pelo primeiro lugar, em chip EV.) Este é o spot mais contraintuitivo do poker, e está correto. Se ganhar um cara ou coroa te dá a ==mesma vaga que você já garantiu== enquanto perdê-lo te elimina, não há recompensa e há risco enorme:
 
 - **Assim que sua vaga está matematicamente segura** (ninguém mais consegue te alcançar), folde toda mão — sim, até AA e KK — e deixe os stacks mais curtos brigarem. E reavalie a conta a cada subida de blinds: a "zona segura" encolhe conforme os antes entram.
 - **Não conte com o stall ao vivo.** Online, usar o relógio inteiro não gera penalidade; ao vivo, esgotar o time bank de propósito para subir de posição é passível de penalidade pelas regras (a WSOP cita isso textualmente) — folde em ritmo normal e deixe os curtos brigarem.
@@ -196,7 +196,7 @@ A. Perto da bolha do dinheiro, todas as mesas jogam exatamente uma mão simultan
 
 **Q. Por que você foldaria ases numa bolha de satélite?**
 
-A. Porque num satélite toda vaga paga o mesmo, então, assim que seu stack está seguramente dentro da bolha, ganhar uma mão não te dá nada a mais (você já tem sua vaga) enquanto perdê-la te elimina. Com todo o risco e nenhuma recompensa, foldar até par de ases é matematicamente correto.
+A. Porque num satélite de várias vagas toda vaga paga o mesmo, então, assim que seu stack está seguramente dentro da bolha, ganhar uma mão não te dá nada a mais (você já tem sua vaga) enquanto perdê-la te elimina. Com todo o risco e nenhuma recompensa, foldar até par de ases é matematicamente correto.
 
 ---
 

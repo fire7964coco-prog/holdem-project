@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Was ist ein Kicker beim Poker – Regeln, Zählen & das dominierte Ass",
   seoTitle: "Was ist ein Kicker beim Poker? Die Karte, die Pots gewinnt",
   desc: "Der Kicker ist die Beikarte, die beim Poker Gleichstände bricht – welche Hände einen haben und wie viele, warum A9 gegen AK verliert und die Vierling-Ausnahme.",
-  tldr: "Ein Kicker ist die höchste Beikarte, die nicht zu deiner eigentlichen Hand gehört – er bricht den Gleichstand, wenn zwei Spieler denselben Rang teilen. Ein Paar nutzt 3 Kicker, Zwei Paare 1, Drilling 2; Straße, Flush und Full House haben keinen. Deshalb schlägt AK das AQ, wenn das Board ein Ass pairt.",
+  tldr: "Ein Kicker ist die höchste Beikarte, die nicht zu deiner eigentlichen Hand gehört – er bricht den Gleichstand, wenn zwei Spieler denselben Rang teilen. Ein Paar nutzt 3 Kicker, Zwei Paare 1, Drilling 2; Straße, Flush, Full House und Straight Flush haben keinen. Deshalb schlägt AK das AQ, wenn das Board ein Ass pairt.",
   category: "hand-rankings",
   date: "2026-07-08",
   updated: "2026-09-09",
@@ -30,7 +30,7 @@ Wo ein Kicker ins größere Bild der [Pokerhände-Reihenfolge](/de/blog/holdem-h
 :::stripe
 3 | Kicker in einer Hand mit einem Paar
 1 | Kicker bei Zwei Paaren (und Vierling)
-0 | Kicker bei einer Straße, einem Flush oder Full House
+0 | Kicker bei einer Straße, einem Flush, Full House oder Straight Flush
 :::
 
 > **Kurze Antwort**
@@ -208,7 +208,7 @@ A. Eine Menge. Weil alle die Gemeinschaftskarten teilen, machen Spieler häufig 
 ## Die 3 Dinge zum Merken
 
 1. **Kicker = Beikarte, nur Tiebreaker.** Er entscheidet Gleichstände zwischen gleichen Rängen und schlägt nie eine höherrangige Hand.
-2. **Kombination + Kicker = fünf.** Ein Paar hat 3 Kicker, Drilling 2, Zwei Paare und Vierling 1; Straße, Flush und Full House haben keinen.
+2. **Kombination + Kicker = fünf.** Ein Paar hat 3 Kicker, Drilling 2, Zwei Paare und Vierling 1; Straße, Flush, Full House und Straight Flush haben keinen.
 3. **Kicker entscheiden echtes Geld.** Dominanz (A9 vs AK) und das Board spielen laufen beide auf den Kicker hinaus – wähle Hände mit starken Beikarten und wisse, wann deine tot ist.
 
 Hast du den Kicker richtig verstanden, hört eine ganze Kategorie von „Wie habe ich das verloren?“-Händen auf, ein Rätsel zu sein. Von hier aus schau dir die komplette [Pokerhände-Reihenfolge](/de/blog/holdem-hand-rankings) an oder die vollständigen [Tiebreaker-Regeln](/de/blog/holdem-tiebreak-rules) für jeden Handtyp.

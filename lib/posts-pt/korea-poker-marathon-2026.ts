@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "As melhores maratonas de outono da Coreia (Chuncheon 25 out, JTBC Seoul 1 nov, Garmin Run 15 nov) coincidem com o clima perfeito para correr. O Paradise City Casino, perto do Aeroporto de Incheon, tem cash games o ano todo — só para estrangeiros, a 10 min do terminal. Uma viagem cobre tudo. Para 2026, a única inscrição de estrangeiros é a da JTBC, com prazo até 4 de set.",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-08-31",
-  masterUpdated: "2026-08-31",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏃",
@@ -448,6 +448,8 @@ Você entra no GS25, CU ou 7-Eleven dentro do parque. Compra um miojo (Shin Ramy
 | Ovo cru | ₩500 | ~$0,40 |
 | Pacote de kimchi | ₩1.500 | ~$1,10 |
 | Aluguel de esteira de piquenique | ₩3.000–5.000 | ~$2,20–3,70 |
+
+*Os valores em USD deste guia são conversões aproximadas escritas em momentos diferentes — o buy-in do APT acima usa ~₩1.500/$, esta tabela ~₩1.350/$. Confira a cotação atual antes de fechar o orçamento.*
 
 A máquina em si é ==g:grátis de usar — você só paga pelo ramen==. As instruções estão afixadas em coreano e inglês. A maioria dos parques também tem zonas de entrega de comida se você quiser frango frito em vez disso.
 

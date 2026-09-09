@@ -15,7 +15,7 @@ export const POST: Post = {
   //   suited FAQ 정밀화(2pt·AKs 67/AKo 65)는 08-27에 이식 완료. 남은 유일한 델타 = UTG 확장 목록의
   //   AJo 삭제(EN은 «AQo»만) — 사장님 판단 대기 #1(UTG 13% 구성)과 같은 갈래라 임의 소급 금지.
   //   #1 판정 후 함께 반영하고 그때 masterUpdated를 올릴 것.
-  masterUpdated: "2026-08-11",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "10 mnt",
   emoji: "🂡",
@@ -109,7 +109,7 @@ Inilah chart starting hands poker untuk meja 9-max standar:
 
 Aturannya: ==makin belakang Anda beraksi, makin banyak tangan yang bisa Anda open secara profit==. Karena button selalu beraksi terakhir postflop, ia adalah kursi paling berharga di poker.
 
-Jelajahi grid berkode-warna lengkap — setiap satu dari 169 tangan per posisi:
+Lihat bagaimana opening range melebar kursi demi kursi — UTG, MP, CO, dan BTN berdampingan (grid 13×13 lengkap berisi semua 169 tangan ada di alat chart tangan yang ditautkan di bawah):
 
 :::rangechart:::
 

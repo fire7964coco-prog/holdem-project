@@ -339,7 +339,7 @@ Aqui está o que fazer com 1–3 dias livres:
 | Transporte em Seul (cartão T-money) | $5–$10/dia |
 | Buy-in do APT Main Event | ==**~$1.703**== |
 | Side events baratos (Micro Main, Ultra Stack, Mini Main) | ==g:**$270–$610**== |
-| **Total estimado de uma viagem de poker de 7 dias** | ==**$2.500–$5.000 + buy-ins de poker**== |
+| **Total estimado de uma viagem de poker de 7 dias** | ==**~$800 (voo asiático, hotel intermediário em Seul) a ~$4.200 (voo de longa distância, hotel Paradise City) + buy-ins de poker**== |
 
 </div>
 

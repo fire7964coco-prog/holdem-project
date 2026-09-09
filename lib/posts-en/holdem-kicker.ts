@@ -29,7 +29,7 @@ Where a kicker fits in the bigger picture of [poker hand rankings](/en/blog/hold
 :::stripe
 3 | Kickers in a one-pair hand
 1 | Kicker in two pair (and quads)
-0 | Kickers in a straight, flush, or full house
+0 | Kickers in a straight, flush, full house, or straight flush
 :::
 
 ---

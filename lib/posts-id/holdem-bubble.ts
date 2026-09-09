@@ -145,7 +145,7 @@ Separuh lainnya: bubble factor mengikuti **siapa yang duduk di seberang Anda**, 
 
 ## Bubble Satelit: Kapan Harus Fold Aces
 
-**Di satelit, setiap kursi membayar sama — jadi begitu stack Anda aman di dalam bubble, Anda fold semuanya, termasuk pocket aces.** Ini adalah spot paling kontra-intuitif di poker, dan itu benar. Jika memenangkan sebuah flip memberi Anda ==kursi yang sama yang sudah Anda kunci== sementara kalah mengeliminasi Anda, tidak ada imbalan dan risikonya sangat besar:
+**Di satelit yang memberikan beberapa kursi identik, setiap kursi membayar sama — jadi begitu stack Anda aman di dalam bubble, Anda fold semuanya, termasuk pocket aces.** (Satelit winner-take-all yang hanya memberikan satu kursi adalah pengecualiannya: yang itu dimainkan untuk juara pertama dengan chip EV.) Ini adalah spot paling kontra-intuitif di poker, dan itu benar. Jika memenangkan sebuah flip memberi Anda ==kursi yang sama yang sudah Anda kunci== sementara kalah mengeliminasi Anda, tidak ada imbalan dan risikonya sangat besar:
 
 - **Begitu kursi Anda secara matematis aman** (Anda cukup jauh di dalam bubble sehingga tak bisa terkejar), fold setiap tangan — ya, bahkan AA dan KK — dan biarkan short stack bertarung sendiri. Hitung ulang matematika itu setiap kali blind naik: "zona aman" menyusut begitu ante mulai berlaku.
 - **Jangan mengandalkan stalling di live.** Online, memakai seluruh clock Anda tidak membawa penalti; di live, sengaja membakar time bank demi naik tangga hadiah secara eksplisit bisa kena penalti menurut aturan WSOP — fold dengan tempo normal dan biarkan short stack bertarung.
@@ -204,7 +204,7 @@ A. Di dekat money bubble, semua meja memainkan persis satu tangan secara bersama
 
 **Q. Kenapa Anda fold aces di bubble satelit?**
 
-A. Karena di satelit setiap kursi membayar sama, jadi begitu stack Anda aman di dalam bubble, memenangkan sebuah tangan tidak memberi Anda apa-apa tambahan (Anda sudah punya kursi) sementara kalah mengeliminasi Anda. Dengan semua risiko dan tanpa imbalan, fold bahkan pocket aces secara matematis benar.
+A. Karena di satelit multi-kursi setiap kursi membayar sama, jadi begitu stack Anda aman di dalam bubble, memenangkan sebuah tangan tidak memberi Anda apa-apa tambahan (Anda sudah punya kursi) sementara kalah mengeliminasi Anda. Dengan semua risiko dan tanpa imbalan, fold bahkan pocket aces secara matematis benar.
 
 ---
 
