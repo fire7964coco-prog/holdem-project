@@ -235,7 +235,7 @@
 | ante | `底注` |
 | starting stack | `起始籌碼` |
 | structure sheet | `結構表` |
-| bubble / ITM | `泡泡圈／錢圈（ITM）` |
+| bubble / ITM | `泡泡時間／錢圈（ITM）` — 🔴 2026-09-09 회차 5 정정. `泡泡圈`·`泡沫期`·`泡泡期`는 **폐기**(근거 = `local-voice/zh-tw.md` §1-D-5) |
 | final table | `決賽桌` |
 | short stack / push-fold | `短籌碼／全下(push-fold)` |
 | late reg/rebuy/add-on | `晚報名／重買／加購` |
