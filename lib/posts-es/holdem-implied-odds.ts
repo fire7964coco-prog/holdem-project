@@ -110,7 +110,7 @@ El mismo call de $50, decisiones opuestas — y las cartas nunca cambiaron. Lo q
 
 </div>
 
-Dos fuerzas fijan el número. **Frecuencia:** un gutshot liga la mitad de veces que un proyecto de color, así que necesita que el pago sea más o menos el doble de grande para quedar en tablas. **Disfraz:** un set escondido cobra mucho más que un color obvio de cuatro cartas, porque tu rival no puede ponerte en él — que es la razón por la que los sets toleran su baja probabilidad de ligar. El [proyecto de color al nut vale mucho más que uno bajo](/es/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") por el mismo motivo: cobra *y* no pierde cuando liga.
+Dos fuerzas fijan el número. **Frecuencia:** un gutshot liga la mitad de veces que un proyecto de color, así que necesita que el pago sea más o menos el doble de grande para quedar en tablas. **Disfraz:** un set escondido cobra mucho más que un color obvio con tres cartas del palo a la vista, porque tu rival no puede ponerte en él — que es la razón por la que los sets toleran su baja probabilidad de ligar. El [proyecto de color al nut vale mucho más que uno bajo](/es/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") por el mismo motivo: cobra *y* no pierde cuando liga.
 
 ---
 
@@ -184,7 +184,7 @@ A. Las odds implícitas son las fichas extra que esperas ganar en las calles sig
 
 **Q. ¿Cómo se calculan las odds implícitas?**
 
-A. Usa: extra necesario = (tu call ÷ tu probabilidad de ligar) − (el bote actual + tu call). Pagar $50 con un proyecto de color que liga el 19.6% de las veces significa 50 ÷ 0.196 = $255, menos los $200 ya en juego (el bote de $150 más tu call de $50) = unos $55. Si de forma realista puedes ganar $55 más cuando ligues, el call es rentable. Ten en cuenta que siempre es una estimación, ya que las apuestas futuras no están garantizadas.
+A. Usa: extra necesario = (tu call ÷ tu probabilidad de ligar) − (el bote actual + tu call). Pagar $50 en el turn con un proyecto de color que liga el 19.6% de las veces en el river (9 ÷ 46) significa 50 ÷ 0.196 = $255, menos los $200 ya en juego (el bote de $150 más tu call de $50) = unos $55. Si de forma realista puedes ganar $55 más cuando ligues, el call es rentable. Ten en cuenta que siempre es una estimación, ya que las apuestas futuras no están garantizadas.
 
 **Q. ¿Cuál es la diferencia entre pot odds y odds implícitas?**
 

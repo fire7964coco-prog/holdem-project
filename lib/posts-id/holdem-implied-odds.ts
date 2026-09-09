@@ -110,7 +110,7 @@ Call $50 yang sama, keputusan berlawanan — dan kartunya tak pernah berubah. Ya
 
 </div>
 
-Dua kekuatan menentukan angkanya. **Frekuensi:** gutshot jadi setengah sesering flush draw, jadi ia butuh payoff yang kira-kira dua kali lebih besar agar impas. **Penyamaran:** set yang tersembunyi dibayar jauh lebih banyak daripada flush yang keempat kartunya terlihat jelas, karena lawan tak bisa menebak Anda memegangnya — itulah kenapa set mentoleransi hit rate rendahnya. [Nut flush draw bernilai jauh lebih besar daripada baby flush draw](/id/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") karena alasan yang sama: draw itu dibayar *dan* tak kalah saat jadi.
+Dua kekuatan menentukan angkanya. **Frekuensi:** gutshot jadi setengah sesering flush draw, jadi ia butuh payoff yang kira-kira dua kali lebih besar agar impas. **Penyamaran:** set yang tersembunyi dibayar jauh lebih banyak daripada flush yang tiga kartu satu jenisnya terlihat jelas di board, karena lawan tak bisa menebak Anda memegangnya — itulah kenapa set mentoleransi hit rate rendahnya. [Nut flush draw bernilai jauh lebih besar daripada baby flush draw](/id/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") karena alasan yang sama: draw itu dibayar *dan* tak kalah saat jadi.
 
 ---
 
@@ -184,7 +184,7 @@ A. Implied odds adalah chip tambahan yang Anda harapkan menang di street berikut
 
 **Q. Bagaimana cara menghitung implied odds?**
 
-A. Pakai: ekstra dibutuhkan = (call Anda ÷ peluang jadi Anda) − (pot saat ini + call Anda). Meng-call $50 dengan flush draw yang jadi 19,6% dari waktu berarti 50 ÷ 0,196 = $255, dikurangi $200 yang sudah bermain (pot $150 plus call $50 Anda) = sekitar $55. Jika Anda realistis bisa menang $55 lebih saat Anda jadi, call-nya menguntungkan. Perhatikan bahwa ini selalu perkiraan, karena taruhan masa depan tak terjamin.
+A. Pakai: ekstra dibutuhkan = (call Anda ÷ peluang jadi Anda) − (pot saat ini + call Anda). Meng-call $50 di turn dengan flush draw yang jadi 19,6% dari waktu di river (9 ÷ 46) berarti 50 ÷ 0,196 = $255, dikurangi $200 yang sudah bermain (pot $150 plus call $50 Anda) = sekitar $55. Jika Anda realistis bisa menang $55 lebih saat Anda jadi, call-nya menguntungkan. Perhatikan bahwa ini selalu perkiraan, karena taruhan masa depan tak terjamin.
 
 **Q. Apa perbedaan antara pot odds dan implied odds?**
 

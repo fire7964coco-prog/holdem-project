@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Cada decisión ganadora en Texas Hold'em se reduce a cinco preguntas repetibles: dónde estoy sentado (posición), ¿vale la pena jugar esta mano?, ¿subo o foldeo? (nunca limpeo), ¿sigo apostando en el flop?, y ¿cuándo suelto la mano? Un jugador tight-aggressive que responde bien esas cinco foldea ~80% de sus manos preflop, las juega con agresividad cuando entra, y le gana a casi cualquier partida casual — sin necesidad de memorizar listas de tips.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-08-11",
-  masterUpdated: "2026-08-11",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
@@ -150,7 +150,7 @@ Si reduces la estrategia a lo que de verdad hace perder dinero a los novatos, es
 | La fuga | Por qué sangra fichas | El arreglo |
 |:---|:---|:---|
 | **Jugar demasiadas manos** | Las manos iniciales débiles ligan manos hechas débiles que te cuestan postflop | Foldea ~80% preflop (Decisión 2) |
-| **Igualar demasiado** | Un call solo gana si ya vas por delante — nunca foldea a nadie | Sube o foldea; deja de «pagar por ver» (Decisión 3) |
+| **Igualar demasiado** | Un call no tiene fold equity: no foldea a nadie, así que tiene que ligar o llegar al showdown por delante | Sube o foldea; deja de «pagar por ver» (Decisión 3) |
 | **Ser demasiado pasivo** | Los ganadores apuestan y suben por valor; la pasividad gana botes diminutos y pierde los grandes | Toma la línea agresiva cuando la tengas |
 | **Ignorar la posición** | Jugar basura fuera de posición es adivinar en cada calle | Juega más tight temprano, más loose tarde (Decisión 1) |
 | **Perseguir proyectos sin odds** | Calls de «esperanza» que el bote no justifica | Revisa las pot odds antes de cada call con proyecto (Decisión 5) |
@@ -210,7 +210,7 @@ A. Haz 3-bet (resubir a quien subió preflop) por valor con tus manos más fuert
 
 **Q. ¿Cuándo deberías subir frente a igualar?**
 
-A. Prefiere subir a igualar siempre que tengas una mano con la que valga la pena continuar. Subir gana botes de dos formas (fold equity más la mejor mano) y toma la iniciativa; igualar solo puede ganar si ya vas por delante y deja entrar a otros barato. Iguala cuando tu mano es lo bastante fuerte para continuar pero no para agrandar un bote grande, cuando estás buscando trío con un par pequeño, o cuando quieres mantener dentro los faroles de un jugador más débil.
+A. Prefiere subir a igualar siempre que tengas una mano con la que valga la pena continuar. Subir gana botes de dos formas (fold equity más la mejor mano) y toma la iniciativa; igualar no tiene fold equity — nadie foldea ahora — y deja entrar a otros barato. Iguala cuando tu mano es lo bastante fuerte para continuar pero no para agrandar un bote grande, cuando estás buscando trío con un par pequeño, o cuando quieres mantener dentro los faroles de un jugador más débil.
 
 **Q. ¿Cuántas manos deberías jugar en Texas Hold'em?**
 

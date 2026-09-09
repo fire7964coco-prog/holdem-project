@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Las posiciones del póker son nombres de asiento que se miden desde el botón del repartidor — UTG, lojack, hijack, cutoff, botón y las ciegas — y se mueven un asiento en el sentido de las agujas del reloj cada mano. En el preflop, UTG actúa primero y la ciega grande última; en el postflop, la ciega pequeña actúa primero y el botón último. Los números de asiento físicos nunca se mueven; las posiciones sí.",
   category: "strategy",
   date: "2026-06-13",
-  updated: "2026-08-11",
-  masterUpdated: "2026-08-11",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🎯",
@@ -170,7 +170,7 @@ Una pregunta vecina que merece una línea: en el **showdown**, por defecto muest
 
 ## Posiciones del póker según el número de jugadores: del mano a mano al 10 jugadores (6-max vs. mesa completa)
 
-Los nombres de las posiciones no cambian con el tamaño de la mesa — ==se van quitando primero de la posición temprana== conforme se eliminan jugadores. El botón, las ciegas, el cutoff y el hijack son los que más sobreviven; los asientos UTG existen solo cuando la mesa está llena. Aquí tienes el mapa de 2 a 10 jugadores, listado por orden de acción en el preflop:
+Los nombres de las posiciones no cambian con el tamaño de la mesa — ==se van quitando primero de la posición temprana== conforme se eliminan jugadores. El botón, las ciegas, el cutoff y el hijack son los que más sobreviven; los asientos UTG+1 y UTG+2 existen solo cuando la mesa está llena. Aquí tienes el mapa de 2 a 10 jugadores, listado por orden de acción en el preflop:
 
 | Jugadores | Orden de acción en preflop (primero → último) |
 |:---:|:---|

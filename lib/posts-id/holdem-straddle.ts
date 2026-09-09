@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Apa Itu Straddle di Poker? Aturan, Jenis, dan Perlukah Anda",
   seoTitle: "Taruhan yang Menggandakan Taruhan — Apa Itu Straddle Poker?",
   desc: "Straddle adalah blind sukarela yang menggandakan taruhan sebelum kartu dibagi. Aturannya, setiap jenis, siapa beraksi lebih dulu, dan apakah straddle profit.",
-  tldr: "Straddle adalah taruhan blind opsional — biasanya dua kali big blind — yang dipasang sebelum kartu dibagi. Ia membeli aksi terakhir bagi si straddler dan opsi untuk raise preflop, menggandakan taruhan. Dalam hampir semua kasus ini adalah play -EV, hanya diizinkan di cash game sesuai aturan rumah.",
+  tldr: "Straddle adalah taruhan blind opsional — biasanya dua kali big blind — yang dipasang sebelum kartu dibagi. Ia membeli aksi terakhir bagi si straddler dan opsi untuk raise preflop, menggandakan taruhan. Dalam hampir semua kasus ini adalah play -EV, dan dalam praktiknya hanya ada di cash game sesuai aturan rumah.",
   category: "glossary",
   date: "2026-07-04",
   updated: "2026-09-09",

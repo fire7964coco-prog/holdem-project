@@ -309,7 +309,7 @@ A. Cuando entras a un bote ya subido, casi siempre sí — el estándar moderno 
 2. **Los rangos se deslizan con la posición.** UTG abre ~13%, el botón ==g:~43%== — y cada asiento intermedio sube un peldaño en la escalera. ==r:Jugar manos de botón desde UTG sangra fichas.==
 3. **El botón es el mejor asiento; las ciegas son las peores.** La BB pierde más fichas brutas (apuesta obligada); la SB es el peor asiento para jugar de verdad (primero en actuar en cada calle). Protege tu botón, y haz 3-bet-o-fold con tu ciega pequeña.
 4. **OOP no es una causa perdida — es disciplina.** El check-raise como igualador, sube el tamaño al apostar, controla botes con manos medias y foldea rivers más de lo que parece natural.
-5. **Subir o foldear under the gun.** Hacer open-limp desde UTG combina el peor asiento con la línea más débil.
+5. **Subir o foldear under the gun.** Hacer open-limp desde UTG combina el peor asiento del preflop con la línea más débil.
 6. **El 6-max comprime el mapa.** UTG en 6-max se juega como el lojack de full ring (~17%) — recalibra cuando cambies de formato.
 
 Para el nombre de cada asiento y el mapa completo de la mesa, mira la [guía de nombres de asientos y posiciones](/es/blog/holdem-positions). Para saber qué manos exactas rellenan cada rango, usa la [tabla de manos iniciales por posición](/es/blog/holdem-starting-hands-chart). Y para entender por qué los asientos «con descuento» son los que más te cuestan, la [guía de la ciega pequeña y la ciega grande](/es/blog/holdem-blind-meaning) cubre la matemática de las apuestas obligadas al detalle.

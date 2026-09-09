@@ -178,7 +178,7 @@ Itulah momen semua angka membuahkan hasil — tapi **pakai angka untuk street ya
 Dua tangan paling langka adalah yang dibanggakan pemain bertahun-tahun — dengan alasan bagus.
 
 - **Royal flush:** sebagai tangan lima-kartu yang dibagikan, ==1 dari 649.740==. Bermain Hold'em hingga river, peluangnya naik menjadi sekitar 1 dari 30.940 karena Anda memilih lima terbaik dari tujuh kartu. Bagaimanapun, kebanyakan pemain menunggu *bertahun-tahun* di antaranya.
-- **Straight flush:** sekitar 1 dari 72.193 sebagai tangan lima-kartu. Bagi kebanyakan pemain, ini tetap penampakan sekali setahun.
+- **Straight flush:** sekitar 1 dari 72.193 sebagai tangan lima-kartu, atau sekitar 1 dari 3.590 hingga river di Hold'em. Bagi kebanyakan pemain, ini tetap penampakan sekali setahun.
 
 Kenapa begitu langka? Royal flush persis **satu rangkaian kartu spesifik dalam satu jenis spesifik** — empat cara membuatnya di seluruh deck versus 1.302.540 cara membuat high card biasa. Kelangkaan adalah seluruh alasan ia duduk di puncak peringkat.
 

@@ -262,7 +262,7 @@ A. Pocket aces (AA) adalah starting hand terbaik di poker. Preflop, ace menang k
 
 **Q. Apa saja starting hand yang bagus di poker?**
 
-A. Starting hand yang bagus di poker adalah pair premium (AA–TT), ace besar (AK, AQ), dan suited broadway kuat (KQs, AJs) — kira-kira top 15–20% dari semua tangan. Tangan speculative seperti pair kecil dan suited connector hanya bagus dari posisi belakang.
+A. Starting hand yang bagus di poker adalah pair premium (AA–TT), ace besar (AK, AQ), dan suited broadway kuat (KQs, AJs) — inti dari ~15–20% tangan yang Anda mainkan sepanjang satu sesi (kelompok premium ini sendiri hanya sekitar 5% dari semua starting hand). Tangan speculative seperti pair kecil dan suited connector hanya bagus dari posisi belakang.
 
 **Q. Ada berapa starting hand di poker?**
 

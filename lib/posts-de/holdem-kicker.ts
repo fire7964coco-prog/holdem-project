@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Zwei Spieler decken beim Showdown A-K und A-Q auf, ein Ass liegt auf dem Board – der König als Kicker entscheidet, wer den Pot gewinnt",
   tags: ["kicker poker", "poker kicker", "was ist ein kicker beim poker", "kicker regeln", "beikarte poker", "hat ein flush einen kicker", "dominiertes ass", "kicker karte", "hat ein vierling einen kicker"],
   content: `
-Die Hand, die mir endlich beigebracht hat, was ein Kicker ist, hat mich ein volles Buy-in gekostet. Ich hielt ==b:A♠ 9♣==, das Board pairte mein Ass, und ich bin all-in gegangen, weil ich dachte, Top Pair sei Gold wert. Er drehte ==b:A♥ K♦== um – dasselbe Paar Asse, aber sein König schlug meine Neun, und der Pot rutschte auf seine Seite. Ich hatte nicht gegen eine bessere *Hand* verloren, sondern gegen eine bessere ==Beikarte.== Diese Beikarte ist der Kicker, und er entscheidet mehr Pots, als jeder Anfänger ahnt.
+Die Hand, die mir endlich beigebracht hat, was ein Kicker ist, hat mich ein volles Buy-in gekostet. Ich hielt ==b:A♠ 9♣==, das Board pairte mein Ass, und ich bin all-in gegangen, weil ich dachte, Top Pair sei Gold wert. Er drehte ==b:A♥ K♦== um – dasselbe Paar Asse, aber die Karte, die ihm übrig blieb – ein König –, gab den Ausschlag, und der Pot rutschte auf seine Seite. Ich hatte nicht gegen eine bessere *Hand* verloren, sondern gegen eine bessere ==Beikarte.== Diese Beikarte ist der Kicker, und er entscheidet mehr Pots, als jeder Anfänger ahnt.
 
 ==Ein Kicker ist der Tiebreaker, der im Poker selbst eingebaut ist – wenn zwei Spieler denselben Rang halten, gewinnt die höchste übrige Karte.== Die meisten Leitfäden geben dir eine Ein-Zeilen-Definition und ein AK-gegen-AQ-Beispiel. Dieser hier gibt dir das ganze Bild: genau welche Hände einen Kicker haben (und wie viele), die eine Ausnahme, die alle falsch machen, und warum „das Board spielen“ bedeutet, dass dein Kicker plötzlich überhaupt keine Rolle mehr spielt.
 
@@ -110,7 +110,7 @@ Dasselbe Paar, also vergleiche die Kicker von oben nach unten: dein ==g:K schlä
 
 ## Wann spielt dein Kicker gar nicht mit? Das Board spielen
 
-**Wenn die fünf Gemeinschaftskarten bereits die bestmögliche Hand bilden und deine Hole Cards sie nicht verbessern können, „spielst du das Board“ – und es gibt überhaupt keinen Kicker.** Alle, die es ebenfalls nicht verbessern können, nutzen die identischen fünf Karten – und wenn das niemand kann, wird der Pot geteilt.
+**Wenn die fünf Gemeinschaftskarten bereits deine beste Hand sind und deine Hole Cards sie nicht verbessern können, „spielst du das Board“ – und deine Beikarten entscheiden nichts mehr.** Alle, die es ebenfalls nicht verbessern können, nutzen die identischen fünf Karten – und wenn das niemand kann, wird der Pot geteilt.
 
 Das Board ist ==b:10♠ J♦ Q♣ K♥ A♠== – eine fertige Zehn-bis-Ass-Straße (Broadway), in gemischten Farben, sodass kein Flush möglich ist.
 

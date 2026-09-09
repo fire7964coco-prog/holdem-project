@@ -178,7 +178,7 @@ Ese es el momento en que todos los números dan sus frutos — pero **usa el nú
 Las dos manos más raras son de las que los jugadores presumen durante años — con razón.
 
 - **Escalera real:** como mano servida de cinco cartas, ==1 entre 649,740==. Jugando Hold'em hasta el river, mejora a alrededor de 1 entre 30,940 porque eliges tus mejores cinco de siete cartas. En cualquier caso, la mayoría de los jugadores pasan *años* entre una y otra.
-- **Escalera de color:** alrededor de 1 entre 72,193 como mano de cinco cartas. Aun así, para casi todos, un avistamiento de una vez al año.
+- **Escalera de color:** alrededor de 1 entre 72,193 como mano de cinco cartas (cerca de 1 entre 3,590 para el river en Hold'em). Aun así, para casi todos, un avistamiento de una vez al año.
 
 ¿Por qué tan raras? Una escalera real es exactamente **una secuencia concreta de cartas en un palo concreto** — cuatro formas de hacerla en toda la baraja frente a 1,302,540 formas de hacer una simple carta alta. La rareza es toda la razón por la que se sienta en lo más alto de la jerarquía.
 

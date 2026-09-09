@@ -110,7 +110,7 @@ Derselbe $50-Call, gegensätzliche Entscheidungen – und die Karten haben sich 
 
 </div>
 
-Zwei Kräfte bestimmen die Zahl. **Häufigkeit:** Ein Gutshot trifft halb so oft wie ein Flushdraw, er braucht also einen etwa doppelt so großen Payoff, um break-even zu sein. **Tarnung:** Ein verstecktes Set wird weit mehr ausgezahlt als ein offensichtlicher Four-Flush, weil dein Gegner dich nicht darauf setzen kann – deshalb tolerieren Sets ihre niedrige Trefferquote. Der [Nut-Flushdraw ist aus demselben Grund weit mehr wert als ein kleiner](/de/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp"): Er wird ausgezahlt *und* er verliert nicht, wenn er trifft.
+Zwei Kräfte bestimmen die Zahl. **Häufigkeit:** Ein Gutshot trifft halb so oft wie ein Flushdraw, er braucht also einen etwa doppelt so großen Payoff, um break-even zu sein. **Tarnung:** Ein verstecktes Set wird weit mehr ausgezahlt als ein offensichtlicher Flush auf einem Board mit drei Karten derselben Farbe, weil dein Gegner dich nicht darauf setzen kann – deshalb tolerieren Sets ihre niedrige Trefferquote. Der [Nut-Flushdraw ist aus demselben Grund weit mehr wert als ein kleiner](/de/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp"): Er wird ausgezahlt *und* er verliert nicht, wenn er trifft.
 
 ---
 
