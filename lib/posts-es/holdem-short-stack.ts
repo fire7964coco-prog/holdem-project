@@ -78,7 +78,7 @@ La trampa es que la fold equity ==decae a medida que tu stack encoge==. Con 12�
 | 🟢 Verde | 20+ | ~30bb+ | Arsenal completo, juega póker normal |
 | 🟡 Amarilla | 10–20 | ~15–30bb | Cierra el rango, empieza a buscar shoves |
 | 🟠 Naranja | 6–10 | ~9–15bb | Push/fold; agresión siendo primero, roba ciegas |
-| 🔴 Roja | 1–5 | ~1.5–8bb | Shove o foldear cualquier mano razonable |
+| ⚠ Roja | 1–5 | ~1.5–8bb | Shove o foldear cualquier mano razonable |
 | ⚫ Muerta | menos de 1 | menos de ~1.5bb | Shove con dos cartas cualesquiera, en el próximo spot jugable |
 
 </div>

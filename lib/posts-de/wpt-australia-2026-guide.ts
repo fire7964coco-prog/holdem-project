@@ -259,7 +259,7 @@ Die meisten internationalen Besucher brauchen entweder eine **ETA (Electronic Tr
 | Reisepass | Visum-Typ | Wie beantragen | Kosten | Bearbeitung |
 |---|---|---|---|---|
 | **UK + 35 EU/europäische Länder** (Deutschland, Frankreich, Italien, Spanien usw.) | ==g:eVisitor (subclass 651)== | [immi.homeaffairs.gov.au](https://immi.homeaffairs.gov.au) | ==g:**GRATIS**== | meist sofort–1 Tag |
-| **USA, Kanada, Japan, Korea, Singapur, Hongkong** | ETA (subclass 601) | [Australian ETA App](https://eta.homeaffairs.gov.au) (nur mobil) | AUD $20 | meist sofort |
+| **USA, Kanada, Japan, Korea, Taiwan, Singapur, Hongkong, Malaysia, Brunei** | ETA (subclass 601) | [Australian ETA App](https://eta.homeaffairs.gov.au) (nur mobil) | AUD $20 | meist sofort |
 | Die meisten anderen Länder | Visitor Visa (subclass 600) | [immi.homeaffairs.gov.au](https://immi.homeaffairs.gov.au) | ab AUD $250 | Tage–Wochen |
 
 

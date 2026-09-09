@@ -280,7 +280,7 @@ WPT 澳洲 2026 重回雪梨 The Star，這是 WPT 史上規模最大的一屆�
 | 護照 | 簽證類型 | 如何申請 | 費用 | 處理時間 |
 |---|---|---|---|---|
 | **英國＋35 個歐洲國家**（德、法、義、西等） | ==g:eVisitor（subclass 651）== | [immi.homeaffairs.gov.au](https://immi.homeaffairs.gov.au) | ==g:**免費**== | 通常即時–1 天 |
-| **美、加、日、韓、新加坡、香港** | ETA（subclass 601） | [澳洲 ETA App](https://eta.homeaffairs.gov.au)（僅限手機） | AUD $20 | 通常即時 |
+| **美、加、日、韓、台灣、新加坡、香港、馬來西亞、汶萊** | ETA（subclass 601） | [澳洲 ETA App](https://eta.homeaffairs.gov.au)（僅限手機） | AUD $20 | 通常即時 |
 | 其他多數國家 | Visitor Visa（subclass 600） | [immi.homeaffairs.gov.au](https://immi.homeaffairs.gov.au) | AUD $250 起 | 數天–數週 |
 
 </div>

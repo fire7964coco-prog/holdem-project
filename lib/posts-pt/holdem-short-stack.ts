@@ -78,7 +78,7 @@ O detalhe é que a fold equity ==decai conforme seu stack encolhe==. Com 12–15
 | 🟢 Verde | 20+ | ~30bb+ | Arsenal completo, jogue poker normal |
 | 🟡 Amarelo | 10–20 | ~15–30bb | Feche o jogo, comece a procurar shoves |
 | 🟠 Laranja | 6–10 | ~9–15bb | Push/fold; agressão first-in, roube blinds |
-| 🔴 Vermelho | 1–5 | ~1,5–8bb | Shove-ou-folda qualquer mão razoável |
+| ⚠ Vermelho | 1–5 | ~1,5–8bb | Shove-ou-folda qualquer mão razoável |
 | ⚫ Morto | abaixo de 1 | abaixo de ~1,5bb | Dê shove com quaisquer duas cartas, no próximo spot jogável |
 
 </div>

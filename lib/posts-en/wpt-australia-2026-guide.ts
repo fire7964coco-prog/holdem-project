@@ -257,7 +257,7 @@ Most international visitors need either an **ETA (Electronic Travel Authority)**
 | Passport | Visa Type | How to Apply | Cost | Processing |
 |---|---|---|---|---|
 | **UK + 35 EU/European countries** (Germany, France, Italy, Spain, etc.) | ==g:eVisitor (subclass 651)== | [immi.homeaffairs.gov.au](https://immi.homeaffairs.gov.au) | ==g:**FREE**== | Usually instant-1 day |
-| **USA, Canada, Japan, Korea, Singapore, Hong Kong** | ETA (subclass 601) | [Australian ETA app](https://eta.homeaffairs.gov.au) (mobile only) | AUD $20 | Usually instant |
+| **USA, Canada, Japan, Korea, Taiwan, Singapore, Hong Kong, Malaysia, Brunei** | ETA (subclass 601) | [Australian ETA app](https://eta.homeaffairs.gov.au) (mobile only) | AUD $20 | Usually instant |
 | Most other countries | Visitor Visa (subclass 600) | [immi.homeaffairs.gov.au](https://immi.homeaffairs.gov.au) | From AUD $250 | Days-weeks |
 
 

@@ -260,7 +260,7 @@ La mayoría de los visitantes internacionales necesitan o bien una **ETA (Autori
 | Pasaporte | Tipo de visado | Cómo solicitarlo | Coste | Tramitación |
 |---|---|---|---|---|
 | **Reino Unido + 35 países de la UE/Europa** (Alemania, Francia, Italia, España, etc.) | ==g:eVisitor (subclase 651)== | [immi.homeaffairs.gov.au](https://immi.homeaffairs.gov.au) | ==g:**GRATIS**== | Normalmente al instante–1 día |
-| **EE. UU., Canadá, Japón, Corea, Singapur, Hong Kong** | ETA (subclase 601) | [App ETA de Australia](https://eta.homeaffairs.gov.au) (solo móvil) | AUD $20 | Normalmente al instante |
+| **EE. UU., Canadá, Japón, Corea, Taiwán, Singapur, Hong Kong, Malasia, Brunéi** | ETA (subclase 601) | [App ETA de Australia](https://eta.homeaffairs.gov.au) (solo móvil) | AUD $20 | Normalmente al instante |
 | La mayoría de los demás países | Visado de visitante (subclase 600) | [immi.homeaffairs.gov.au](https://immi.homeaffairs.gov.au) | desde AUD $250 | Días–semanas |
 
 

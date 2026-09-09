@@ -261,7 +261,7 @@ Sebagian besar pengunjung internasional membutuhkan **ETA (Electronic Travel Aut
 | Paspor | Jenis Visa | Cara Apply | Biaya | Proses |
 |---|---|---|---|---|
 | **Inggris + 35 negara UE/Eropa** (Jerman, Prancis, Italia, Spanyol, dll.) | ==g:eVisitor (subclass 651)== | [immi.homeaffairs.gov.au](https://immi.homeaffairs.gov.au) | ==g:**GRATIS**== | Biasanya instan-1 hari |
-| **AS, Kanada, Jepang, Korea, Singapura, Hong Kong** | ETA (subclass 601) | [Aplikasi Australian ETA](https://eta.homeaffairs.gov.au) (hanya mobile) | AUD $20 | Biasanya instan |
+| **AS, Kanada, Jepang, Korea, Taiwan, Singapura, Hong Kong, Malaysia, Brunei** | ETA (subclass 601) | [Aplikasi Australian ETA](https://eta.homeaffairs.gov.au) (hanya mobile) | AUD $20 | Biasanya instan |
 | Sebagian besar negara lain | Visitor Visa (subclass 600) | [immi.homeaffairs.gov.au](https://immi.homeaffairs.gov.au) | mulai AUD $250 | Beberapa hari-minggu |
 
 

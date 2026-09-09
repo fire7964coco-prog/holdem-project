@@ -284,7 +284,7 @@ The Star Sydney 位于 **80 Pyrmont Street, Pyrmont NSW 2009**——就在达令
 | 护照 | 签证类型 | 如何申请 | 费用 | 处理时间 |
 |---|---|---|---|---|
 | **英国 + 35 个欧盟/欧洲国家**（德国、法国、意大利、西班牙等） | ==g:eVisitor (subclass 651)== | [immi.homeaffairs.gov.au](https://immi.homeaffairs.gov.au) | ==g:**免费**== | 通常即时至 1 天 |
-| **美国、加拿大、日本、韩国、新加坡、香港** | ETA (subclass 601) | [Australian ETA app](https://eta.homeaffairs.gov.au)（仅手机） | AUD $20 | 通常即时 |
+| **美国、加拿大、日本、韩国、台湾、新加坡、香港、马来西亚、文莱** | ETA (subclass 601) | [Australian ETA app](https://eta.homeaffairs.gov.au)（仅手机） | AUD $20 | 通常即时 |
 | 大多数其他国家 | Visitor Visa (subclass 600) | [immi.homeaffairs.gov.au](https://immi.homeaffairs.gov.au) | AUD $250 起 | 数天至数周 |
 
 

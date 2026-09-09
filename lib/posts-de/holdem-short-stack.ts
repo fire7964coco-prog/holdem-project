@@ -86,7 +86,7 @@ Der Name stammt von Paul Magriel, bekannt gemacht hat die Kennzahl Dan Harringto
 | 🟢 Grün | 20+ | ~30bb+ | Volles Arsenal, spiel normales Poker |
 | 🟡 Gelb | 10–20 | ~15–30bb | Zieh dich zusammen, halte nach Shoves Ausschau |
 | 🟠 Orange | 6–10 | ~9–15bb | Push/Fold; first-in Aggression, stiehl Blinds |
-| 🔴 Rot | 1–5 | ~1,5–8bb | Shove-or-Fold jede vernünftige Hand |
+| ⚠ Rot | 1–5 | ~1,5–8bb | Shove-or-Fold jede vernünftige Hand |
 | ⚫ Tot | unter 1 | unter ~1,5bb | Shove any two cards, nächster spielbarer Spot |
 
 </div>
