@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Every winning Texas Hold'em decision reduces to five repeatable questions: where am I sitting (position), is this hand worth playing, do I raise or fold (never limp), do I keep betting on the flop, and when do I let go? A tight-aggressive player who answers those five well folds ~80% of hands preflop, plays them aggressively when they do, and beats almost every casual game — no memorized tip list required.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-08-11",
+  updated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
@@ -149,7 +149,7 @@ If you strip strategy down to what actually loses money for new players, it's th
 | The leak | Why it bleeds chips | The fix |
 |:---|:---|:---|
 | **Playing too many hands** | Weak starting hands flop weak made hands that cost you postflop | Fold ~80% preflop (Decision 2) |
-| **Calling too much** | A call can only win if you're already ahead — it never folds anyone out | Raise or fold; stop "calling to see" (Decision 3) |
+| **Calling too much** | A call has no fold equity — it never folds anyone out, so it has to hit or reach showdown ahead | Raise or fold; stop "calling to see" (Decision 3) |
 | **Being too passive** | Winners bet and raise for value; passivity wins tiny pots and loses big ones | Take the aggressive line when you have it |
 | **Ignoring position** | Playing junk out of position means guessing every street | Play tighter early, looser late (Decision 1) |
 | **Chasing draws without odds** | "Hope" calls that the pot doesn't justify | Check pot odds before every draw call (Decision 5) |
@@ -209,7 +209,7 @@ A. 3-bet (re-raise a preflop raiser) for value with your strongest hands — big
 
 **Q. When should you raise vs. call?**
 
-A. Prefer raising to calling whenever you have a hand worth continuing with. Raising wins pots two ways (fold equity plus the best hand) and seizes initiative; calling can only win if you're already ahead and lets others in cheaply. Call when your hand is strong enough to continue but not to build a big pot, when you're set-mining a small pair, or when you want to keep a weaker player's bluffs in.
+A. Prefer raising to calling whenever you have a hand worth continuing with. Raising wins pots two ways (fold equity plus the best hand) and seizes initiative; calling has no fold equity — nobody folds now — and lets others in cheaply. Call when your hand is strong enough to continue but not to build a big pot, when you're set-mining a small pair, or when you want to keep a weaker player's bluffs in.
 
 **Q. How many hands should you play in Texas Hold'em?**
 

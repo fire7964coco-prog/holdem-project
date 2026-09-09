@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Poker positions are seat names measured from the dealer button — UTG, lojack, hijack, cutoff, button, and the blinds — and they move one seat clockwise every hand. Preflop, UTG acts first and the big blind last; postflop, the small blind acts first and the button last. Physical seat numbers never move; positions do.",
   category: "strategy",
   date: "2026-06-13",
-  updated: "2026-08-11",
+  updated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🎯",
@@ -169,7 +169,7 @@ One neighbor question worth a line: at **showdown**, the default is that the las
 
 ## Poker Positions by Player Count: Heads-Up to 10-Handed (6-Max vs Full Ring)
 
-The position names don't change with table size — ==they peel off from early position first== as players are removed. The button, blinds, cutoff, and hijack survive the longest; the UTG seats exist only when the table is full. Here's the map from 2 players to 10, listed in preflop acting order:
+The position names don't change with table size — ==they peel off from early position first== as players are removed. The button, blinds, cutoff, and hijack survive the longest; the UTG+1 and UTG+2 seats exist only when the table is full. Here's the map from 2 players to 10, listed in preflop acting order:
 
 | Players | Preflop acting order (first → last) |
 |:---:|:---|

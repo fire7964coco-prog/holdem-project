@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A flush (five cards of one suit — ~0.197% of five-card deals) always beats a straight (five in sequence, ~0.392%) in Texas Hold'em — because a flush is rarer: across all seven cards to the river, 3.03% versus 4.62% for the straight.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-08-12",
+  updated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "⚡",
@@ -155,7 +155,7 @@ Queen tops jack, so A wins. If both players' best five cards are identical in ra
 
 ![9♥ 8♥ 7♥ 6♥ 5♥ — a straight flush in hearts, the #2 hand in poker](/images/holdem-flush-vs-straight-sf.webp "Straight flush — five hearts in sequence, beaten only by a royal flush")
 
-A **straight flush** is five *consecutive* cards of *one suit* — like 9♥ 8♥ 7♥ 6♥ 5♥. It's the **#2 hand in poker**, beaten only by a royal flush (which is simply the ace-high straight flush, A-K-Q-J-10 suited). At just **36 combinations (~0.00139%)**, it's rarer than everything except the royal itself.
+A **straight flush** is five *consecutive* cards of *one suit* — like 9♥ 8♥ 7♥ 6♥ 5♥. It's the **#2 hand in poker**, beaten only by a royal flush (which is simply the ace-high straight flush, A-K-Q-J-10 suited). At just **36 combinations (~0.00139% of five-card hands; about 0.028% by the river in Hold'em)**, it's rarer than everything except the royal itself.
 
 The catch: ==the *same five cards* must be both suited and in sequence==. Watch the difference on the board **8♥ 7♥ 6♥ Q♠ 3♦**:
 

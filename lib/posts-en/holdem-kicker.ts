@@ -16,7 +16,7 @@ export const POST: Post = {
   imageAlt: "Two players turning over A-K and A-Q at showdown with an ace on the board — the king kicker deciding who wins the pot",
   tags: ["poker kicker", "what is a kicker in poker", "kicker rules", "does a flush have a kicker", "playing the board", "dominated ace", "kicker card", "does four of a kind have a kicker"],
   content: `
-The hand that finally taught me what a kicker is cost me a full buy-in. I had ==b:A♠ 9♣==, the board paired my ace, and I shoved thinking top pair was gold. He flipped ==b:A♥ K♦== — same pair of aces, but his king outranked my nine, and the pot slid his way. I hadn't lost to a better *hand*; I'd lost to a better ==side card.== That side card is the kicker, and it decides more pots than any beginner realizes.
+The hand that finally taught me what a kicker is cost me a full buy-in. I had ==b:A♠ 9♣==, the board paired my ace, and I shoved thinking top pair was gold. He flipped ==b:A♥ K♦== — same pair of aces, but the card left over for him — a king — settled it, and the pot slid his way. I hadn't lost to a better *hand*; I'd lost to a better ==side card.== That side card is the kicker, and it decides more pots than any beginner realizes.
 
 ==A kicker is the tiebreaker built into poker itself — when two players hold the same rank, the highest leftover card wins.== Most guides give you a one-line definition and an AK-vs-AQ example. This one gives you the full picture: exactly which hands have a kicker (and how many), the one exception everyone gets wrong, and why "playing the board" means your kicker suddenly doesn't matter at all.
 
@@ -106,7 +106,7 @@ Same pair, so compare kickers top-down: your ==g:K beats their Q.== You win, A-A
 
 ## Playing the Board: When Your Kicker Doesn't Play
 
-**If the five community cards already make the best possible hand and your hole cards can't improve on it, you're "playing the board" — and there is no kicker at all.** Everyone who can't improve on it uses the identical five cards — and if nobody can, the pot is split.
+**If the five community cards are already your best hand and your hole cards can't improve on it, you're "playing the board" — and your side cards stop deciding anything.** Everyone who can't improve on it uses the identical five cards — and if nobody can, the pot is split.
 
 The board is ==b:10♠ J♦ Q♣ K♥ A♠== — a made ten-to-ace straight (Broadway), in mixed suits so no flush is possible.
 
