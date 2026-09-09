@@ -80,7 +80,7 @@ El blackjack premia recordar lo que ya salió; el póker premia leer lo que ves 
 
 ### Contar tus outs
 
-Un ==out== es cualquier carta no vista que convierte tu mano en una probable ganadora. Un proyecto de color tiene ==9 outs== (13 de un palo menos las 4 que ves) — las dos cartas de ese palo que hay en la mesa ya están restadas dentro de esos 9, así que no las taches otra vez como "cartas muertas". Convierte los outs en una probabilidad aproximada de ligar con la ==regla del 2 y 4==: multiplica por 4 con dos cartas por venir, por 2 con una.
+Un ==out== es cualquier carta no vista que convierte tu mano en una probable ganadora. Un proyecto de color tiene ==9 outs== (13 de un palo menos las 4 que ves) — las cartas de ese palo que hay en la mesa ya están restadas dentro de esos 9, así que no las taches otra vez como "cartas muertas". Convierte los outs en una probabilidad aproximada de ligar con la ==regla del 2 y 4==: multiplica por 4 con dos cartas por venir, por 2 con una.
 
 Un proyecto de color de 9 outs liga para el river alrededor del ==g:35%== de las veces (9 × 4 = 36% como estimación rápida — la cifra real es 35.0%). Esa cifra cuenta ambas cartas restantes, así que solo decide el call cuando de verdad ves las dos: estás all-in en el flop y no queda nada más que apostar. Si hay una apuesta en el flop que tendrás que volver a pagar en el turn, cuenta solo la siguiente carta: ==9 ÷ 47 = 19.1%==. El método completo — outs sucias, proyectos combinados, porcentajes exactos — está en la [guía para contar outs](/es/blog/holdem-outs), y las odds detrás de cada proyecto viven en la [tabla de probabilidades](/es/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
@@ -125,7 +125,7 @@ El Hold'em solo expone las cinco cartas comunitarias compartidas, así que esto 
 :::steps
 Cuenta tus outs en cada proyecto | En cuanto tengas un proyecto, cuenta las cartas que lo completan y multiplica — ×4 solo cuando vienen las dos cartas (estás all-in, o el river sale gratis), y si no ×2 solo por la siguiente carta. Iguala cuando esa probabilidad supera el precio
 Pregúntate qué bloquea tu mano | Antes de farolear, comprueba si llevas una carta que vuelve imposible o menos probable su mano más fuerte para pagar
-Ajusta por las cartas muertas | Resta cualquier out que hayas visto expuesto fuera de la mesa — una carta que se enseñó por error, una mano mostrada, un fold que alcanzaste a ver. Visto por accidente, no buscado — intentar ver a propósito las cartas de otro jugador es una falta de etiqueta en cualquier sala. Las cartas que ves son cartas que tu rival no puede tener
+Ajusta por las cartas muertas | Resta cualquier out que hayas visto expuesto fuera de la mesa — una carta que se enseñó por error, una mano mostrada, un fold que alcanzaste a ver. Las cartas que ves son cartas que tu rival no puede tener — pero solo vistas por accidente: intentar ver a propósito las cartas de otro jugador va contra las reglas y es sancionable en cualquier sala
 :::
 
 Hazlo unas cuantas sesiones y se vuelve automático — estarás "contando cartas" en cada mano, solo que a la manera del póker. El siguiente paso es convertir esos conteos en calls y folds con las [pot odds](/es/blog/holdem-pot-odds), la matemática que te dice si tus outs valen el precio.

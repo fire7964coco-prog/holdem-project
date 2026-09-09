@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ein Flush (fünf Karten einer Farbe – ~0,197% aller Fünf-Karten-Deals) schlägt im Texas Hold'em immer eine Straße (fünf in Folge, ~0,392%) – weil ein Flush seltener ist: über alle sieben Karten bis zum River 3,03% gegenüber 4,62% für die Straße.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-08-10",
+  updated: "2026-09-09",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "11 Min.",
@@ -160,7 +160,7 @@ Die Dame übertrumpft den Buben, also gewinnt A. Sind die besten fünf Karten be
 
 ![9♥ 8♥ 7♥ 6♥ 5♥ – ein Straight Flush in Herz, die #2-Hand im Poker](/images/holdem-flush-vs-straight-sf.webp "Straight Flush – fünf Herz in Folge, nur von einem Royal Flush geschlagen")
 
-Ein **Straight Flush** ist fünf *aufeinanderfolgende* Karten *einer Farbe* – wie 9♥ 8♥ 7♥ 6♥ 5♥. Es ist die **#2-Hand im Poker**, nur von einem Royal Flush geschlagen (der einfach der Ace-High-Straight-Flush ist, A-K-Q-J-10 suited). Mit gerade mal **36 Kombinationen** – das sind **0,00139% auf Fünf-Karten-Basis**, in Hold'em mit sieben Karten rund **0,028%** – ist er seltener als alles außer dem Royal selbst.
+Ein **Straight Flush** ist fünf *aufeinanderfolgende* Karten *einer Farbe* – wie 9♥ 8♥ 7♥ 6♥ 5♥. Es ist die **#2-Hand im Poker**, nur von einem Royal Flush geschlagen (der einfach der Ace-High-Straight-Flush ist, A-K-Q-J-10 suited). Mit gerade mal **36 Kombinationen** – das sind 0,00139% auf Fünf-Karten-Basis, in Hold'em mit sieben Karten rund 0,028% – ist er seltener als alles außer dem Royal selbst.
 
 Der Haken: ==die *gleichen fünf Karten* müssen sowohl suited als auch in Folge sein==. Achte auf den Unterschied auf dem Board **8♥ 7♥ 6♥ Q♠ 3♦**:
 

@@ -110,7 +110,7 @@ Call $50 yang sama, keputusan berlawanan — dan kartunya tak pernah berubah. Ya
 
 </div>
 
-Dua kekuatan menentukan angkanya. **Frekuensi:** gutshot jadi setengah sesering flush draw, jadi ia butuh payoff yang kira-kira dua kali lebih besar agar impas. **Penyamaran:** set yang tersembunyi dibayar jauh lebih banyak daripada flush yang tiga kartu satu jenisnya terlihat jelas di board, karena lawan tak bisa menebak Anda memegangnya — itulah kenapa set mentoleransi hit rate rendahnya. [Nut flush draw bernilai jauh lebih besar daripada baby flush draw](/id/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") karena alasan yang sama: draw itu dibayar *dan* tak kalah saat jadi.
+Dua kekuatan menentukan angkanya. **Frekuensi:** gutshot jadi setengah sesering flush draw, jadi ia butuh payoff yang kira-kira dua kali lebih besar agar impas. **Penyamaran:** set yang tersembunyi dibayar jauh lebih banyak daripada flush yang kentara di board monotone, karena lawan tak bisa menebak Anda memegangnya — itulah kenapa set mentoleransi hit rate rendahnya. [Nut flush draw bernilai jauh lebih besar daripada baby flush draw](/id/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") karena alasan yang sama: draw itu dibayar *dan* tak kalah saat jadi.
 
 ---
 
@@ -223,7 +223,7 @@ A. Implied odds semuanya tentang uang yang tersisa untuk dimenangkan, dan stack 
 ## 3 Hal yang Harus Diingat
 
 1. **Rumusnya:** ekstra dibutuhkan = (call ÷ hit%) − (pot saat ini + call). Jika Anda realistis bisa menang lebih dari itu nanti, call-nya bagus bahkan saat pot odds bilang fold.
-2. **Cek kenyataannya:** implied odds adalah perkiraan yang hidup di atas stack dalam dan lawan yang membayar. Melawan all-in ia nol di heads-up (di pot multiway, hanya pemain ketiga yang masih punya chip yang bisa membayar Anda), dan melawan stack pendek yang tersisa sangat sedikit — kembali ke pot odds.
+2. **Cek kenyataannya:** implied odds adalah perkiraan yang hidup di atas stack dalam dan lawan yang membayar. Melawan all-in ia nol di heads-up, dan melawan stack pendek yang tersisa sangat sedikit — kembali ke pot odds.
 3. **Cermin gelapnya:** reverse implied odds menghukum draw non-nut. Sebuah draw ke nuts bernilai jauh lebih besar daripada draw yang sama ke terbaik kedua.
 
 Kuasai ini dan Anda berhenti membakar chip pada call penuh harapan sambil tetap membuat call menguntungkan yang tak berani dilakukan orang lain. Dari sini, kunci angka mentahnya dengan [bagan peluang dan probabilitas poker](/id/blog/holdem-probability), atau lihat persis seberapa sering tiap draw mendarat di [drawing odds](/id/blog/holdem-drawing-odds).

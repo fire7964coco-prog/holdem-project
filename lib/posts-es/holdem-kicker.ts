@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Dos jugadores mostrando A-K y A-Q en el showdown con un as en la mesa — el kicker del rey decide quién se lleva el bote",
   tags: ["kicker poker", "kicker en poker que es", "reglas del kicker", "el color tiene kicker", "jugar la mesa", "as dominado", "carta de desempate", "perder por kicker"],
   content: `
-La mano que por fin me enseñó qué es un kicker me costó un buy-in entero. Tenía ==b:A♠ 9♣==, la mesa emparejó mi as y me fui all-in convencido de que la pareja máxima era oro. Él dio la vuelta a ==b:A♥ K♦== — la misma pareja de ases, pero la carta que le sobraba, un rey, decidió la mano, y el bote se deslizó hacia su lado. No había perdido contra una *mano* mejor; había perdido contra una ==carta lateral== mejor. Esa carta lateral es el kicker, y decide más botes de los que ningún principiante imagina.
+La mano que por fin me enseñó qué es un kicker me costó un buy-in entero. Tenía ==b:A♠ 9♣==, la mesa emparejó mi as y me fui all-in convencido de que la pareja máxima era oro. Él dio la vuelta a ==b:A♥ K♦== — la misma pareja de ases, pero su rey me superó en el kicker, y el bote se deslizó hacia su lado. No había perdido contra una *mano* mejor; había perdido contra una ==carta lateral== mejor. Esa carta lateral es el kicker, y decide más botes de los que ningún principiante imagina.
 
 ==El kicker es el desempate integrado en el propio póker — cuando dos jugadores tienen el mismo valor, gana la carta sobrante más alta.== Casi todas las guías te dan una definición de una línea y el ejemplo de AK contra AQ. Esta te da el cuadro completo: exactamente qué manos tienen kicker (y cuántos), la única excepción que todos confunden y por qué "jugar la mesa" significa que de repente tu kicker no importa nada.
 
@@ -107,7 +107,7 @@ Misma pareja, así que compara kickers de arriba abajo: tu ==g:K gana a su Q.== 
 
 ## Jugar la mesa: cuando tu kicker no cuenta
 
-**Si las cinco cartas comunitarias ya son tu mejor mano y tus cartas no pueden mejorarla, estás "jugando la mesa" — y tus cartas laterales dejan de decidir nada.** Todos los que tampoco pueden mejorarla usan las cinco cartas idénticas — y si nadie puede, el bote se divide.
+**Si tus cartas no pueden mejorar lo que ya forman las cinco cartas comunitarias, estás "jugando la mesa" — y tus cartas laterales dejan de decidir nada.** Todos los que tampoco pueden mejorarla usan las cinco cartas idénticas — y si nadie puede, el bote se divide.
 
 La mesa es ==b:10♠ J♦ Q♣ K♥ A♠== — una escalera del diez al as (Broadway), en palos mezclados, así que no hay color posible.
 

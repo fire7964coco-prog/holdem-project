@@ -170,7 +170,7 @@ Una pregunta vecina que merece una línea: en el **showdown**, por defecto muest
 
 ## Posiciones del póker según el número de jugadores: del mano a mano al 10 jugadores (6-max vs. mesa completa)
 
-Los nombres de las posiciones no cambian con el tamaño de la mesa — ==se van quitando primero de la posición temprana== conforme se eliminan jugadores. El botón, las ciegas, el cutoff y el hijack son los que más sobreviven; los asientos UTG+1 y UTG+2 existen solo cuando la mesa está llena. Aquí tienes el mapa de 2 a 10 jugadores, listado por orden de acción en el preflop:
+Los nombres de las posiciones no cambian con el tamaño de la mesa — ==se van quitando primero de la posición temprana== conforme se eliminan jugadores. El botón, las ciegas, el cutoff y el hijack son los que más sobreviven; los asientos UTG+1 y superiores existen solo en mesas full ring. Aquí tienes el mapa de 2 a 10 jugadores, listado por orden de acción en el preflop:
 
 | Jugadores | Orden de acción en preflop (primero → último) |
 |:---:|:---|

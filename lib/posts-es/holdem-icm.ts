@@ -99,7 +99,7 @@ Ahí lo tienes en números: el líder tiene ==la mitad de las fichas pero solo e
 
 **El chip EV mide una decisión en fichas ganadas o perdidas; el ICM (o "$EV") la mide en premio real. Coinciden pronto y se separan con fuerza al final.** Al principio de un torneo, con saltos de premio minúsculos y lejanos, una ficha es básicamente una ficha — juegas [chip EV](/es/blog/holdem-equity "thumb:/images/holdem-equity-hero.webp"), acumulando sin parar. Cerca de los premios y en la mesa final, el ICM toma el mando.
 
-El choque clásico es *pagar* un all-in marginal. En chip EV, un coin flip por un bote grande puede estar bien o incluso ser bueno — ganas tantas fichas como pierdes. En ICM puede ser un ==fold== claro, porque bustear te cuesta tu equity en todos los premios por encima del que ya tienes bloqueado (el mínimo garantizado sigue siendo tuyo), mientras que las fichas que ganarías valen menos que su valor nominal.
+El choque clásico es *pagar* un all-in marginal. En chip EV, un coin flip por un bote grande puede estar bien o incluso ser bueno — ganas tantas fichas como pierdes. En ICM puede ser un ==fold== claro, porque bustear te cuesta tu equity en todos los premios por encima del que ya tienes bloqueado (el mínimo garantizado sigue siendo tuyo) — y en la burbuja, donde todavía no hay nada bloqueado, toda tu equity de premio —, mientras que las fichas que ganarías valen menos que su valor nominal.
 
 Ahí es donde yo tenía aquellas jotas al revés. El impuesto se cobra en el *call*, y el reverso de eso es lo que hace jugable una burbuja: como los rangos de pagar de todos se cierran, tu fold equity vale **más** que en fichas. Ir de all-in siendo el primero es el arma del stack medio en la burbuja, no su fuga — me topé con el único jugador que podía pagar más amplio, y eso es varianza, no un error de estrategia. ==El chip EV pregunta "¿esto hará crecer mi stack?" El ICM pregunta "¿esto hará crecer mi bankroll?"== — y solo el segundo paga.
 
@@ -197,7 +197,7 @@ A. Asigna a cada jugador una probabilidad de terminar en cada puesto pagado seg�
 
 **Q. ¿Cuál es la diferencia entre el ICM y el chip EV?**
 
-A. El chip EV mide una decisión en fichas ganadas o perdidas; el ICM la mide en dinero real. Coinciden al principio de un torneo y divergen cerca de los premios, donde bustear te cuesta equity de premio real — en la burbuja, toda tu opción de cobrar; una vez dentro, todo lo que hay por encima del pago que ya tienes bloqueado. Un all-in de coin flip que está bien en chip EV puede ser un fold claro bajo ICM.
+A. El chip EV mide una decisión en fichas ganadas o perdidas; el ICM la mide en dinero real. Coinciden al principio de un torneo y divergen cerca de los premios. En la burbuja, bustear te cuesta toda tu opción de cobrar; una vez en premios, te cuesta todo lo que hay por encima del pago que ya tienes bloqueado. Un all-in de coin flip que está bien en chip EV puede ser un fold claro bajo ICM.
 
 **Q. ¿Qué es un acuerdo por ICM, y en qué se diferencia de un chip chop?**
 

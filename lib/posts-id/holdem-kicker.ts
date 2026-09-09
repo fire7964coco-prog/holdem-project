@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Dua pemain membalik A-K dan A-Q saat showdown dengan sebuah ace di meja — kicker king yang menentukan siapa pemenang pot",
   tags: ["kicker poker", "apa itu kicker di poker", "aturan kicker", "apakah flush punya kicker", "playing the board", "dominated ace", "kartu kicker", "apakah four of a kind punya kicker"],
   content: `
-Tangan yang akhirnya mengajari saya apa itu kicker membuat saya kehilangan satu buy-in penuh. Saya pegang ==b:A♠ 9♣==, meja memasangkan ace saya, dan saya shove yakin top pair sudah emas. Lawan membalik ==b:A♥ K♦== — sepasang ace yang sama, tapi kartu sisa miliknya, sebuah king, yang menentukan hasilnya, dan pot pun meluncur ke sisinya. Saya tidak kalah dari *tangan* yang lebih baik; saya kalah dari ==kartu samping== yang lebih baik. Kartu samping itulah kicker, dan ia menentukan lebih banyak pot daripada yang disadari pemula.
+Tangan yang akhirnya mengajari saya apa itu kicker membuat saya kehilangan satu buy-in penuh. Saya pegang ==b:A♠ 9♣==, meja memasangkan ace saya, dan saya shove yakin top pair sudah emas. Lawan membalik ==b:A♥ K♦== — sepasang ace yang sama, tapi king-nya mengalahkan kicker saya, dan pot pun meluncur ke sisinya. Saya tidak kalah dari *tangan* yang lebih baik; saya kalah dari ==kartu samping== yang lebih baik. Kartu samping itulah kicker, dan ia menentukan lebih banyak pot daripada yang disadari pemula.
 
 ==Kicker adalah pemecah seri yang sudah tertanam di poker itu sendiri — saat dua pemain punya nilai tangan yang sama, kartu sisa tertinggi yang menang.== Kebanyakan panduan hanya memberi definisi satu baris dan contoh AK-vs-AQ. Yang ini memberi Anda gambaran utuh: persisnya tangan mana yang punya kicker (dan berapa banyak), satu pengecualian yang salah dipahami semua orang, dan kenapa "playing the board" berarti kicker Anda tiba-tiba tidak berarti sama sekali.
 
@@ -107,7 +107,7 @@ Pair yang sama, jadi bandingkan kicker dari atas: ==g:K Anda menang atas Q merek
 
 ## Playing the Board: Saat Kicker Anda Tidak Ikut Main
 
-**Kalau lima kartu komunitas sudah menjadi tangan terbaik Anda dan kartu tertutup Anda tak bisa memperbaikinya, Anda sedang "playing the board" (main dengan board) — dan kartu samping Anda berhenti menentukan apa pun.** Semua yang juga tak bisa memperbaikinya memakai lima kartu identik — dan kalau tak seorang pun bisa, pot dibagi.
+**Kalau kartu tertutup Anda tak bisa memperbaiki apa yang sudah dibentuk lima kartu komunitas, Anda sedang "playing the board" (main dengan board) — dan kartu samping Anda berhenti menentukan apa pun.** Semua yang juga tak bisa memperbaikinya memakai lima kartu identik — dan kalau tak seorang pun bisa, pot dibagi.
 
 Mejanya ==b:10♠ J♦ Q♣ K♥ A♠== — sebuah straight ten-sampai-ace jadi (Broadway), dalam jenis campuran sehingga flush tidak mungkin.
 

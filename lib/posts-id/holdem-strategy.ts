@@ -210,7 +210,7 @@ A. 3-bet (re-raise seorang preflop raiser) untuk value dengan tangan terkuat And
 
 **Q. Kapan Anda harus raise vs. call?**
 
-A. Lebih baik raise daripada call kapan pun Anda punya tangan yang layak dilanjutkan. Raise menang dengan dua cara (fold equity plus tangan terbaik) dan merebut inisiatif; call tak punya fold equity — tak ada yang fold sekarang — dan membiarkan orang lain masuk murah. Call saat tangan Anda cukup kuat untuk lanjut tapi tak cukup untuk membangun pot besar, saat Anda set-mining small pair, atau saat Anda ingin menahan bluff pemain yang lebih lemah.
+A. Lebih baik raise daripada call kapan pun Anda punya tangan yang layak dilanjutkan. Raise menang dengan dua cara (fold equity plus tangan terbaik) dan merebut inisiatif; call tak punya fold equity — tak ada yang fold menghadapi call — dan membiarkan orang lain masuk murah. Call saat tangan Anda cukup kuat untuk lanjut tapi tak cukup untuk membangun pot besar, saat Anda set-mining small pair, atau saat Anda ingin menahan bluff pemain yang lebih lemah.
 
 **Q. Berapa banyak tangan yang harus Anda mainkan di Texas Hold'em?**
 

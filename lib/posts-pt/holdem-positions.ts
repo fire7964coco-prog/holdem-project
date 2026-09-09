@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Posições no poker são nomes de assento medidos a partir do dealer button — UTG, lojack, hijack, cutoff, button e os blinds — e elas andam um assento no sentido horário toda mão. No pré-flop, o UTG age primeiro e o big blind por último; no pós-flop, o small blind age primeiro e o button por último. Os números de assento físicos nunca mudam; as posições sim.",
   category: "strategy",
   date: "2026-06-13",
-  updated: "2026-09-04",
+  updated: "2026-09-09",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "12 min",
@@ -170,7 +170,7 @@ Uma pergunta vizinha que merece uma linha: no **showdown**, o padrão é que o �
 
 ## Posições no poker por número de jogadores: heads-up a 10-handed (6-max vs full ring)
 
-Os nomes das posições não mudam com o tamanho da mesa — ==os nomes desaparecem a partir da early position== conforme os jogadores são removidos. O button, os blinds, o cutoff e o hijack sobrevivem por mais tempo; os assentos UTG+1 e UTG+2 só existem quando a mesa está cheia. Aqui está o mapa de 2 a 10 jogadores, listado na ordem de ação do pré-flop:
+Os nomes das posições não mudam com o tamanho da mesa — ==os nomes desaparecem a partir da early position== conforme os jogadores são removidos. O button, os blinds, o cutoff e o hijack sobrevivem por mais tempo; os assentos UTG+1 e superiores só existem em mesas full ring. Aqui está o mapa de 2 a 10 jogadores, listado na ordem de ação do pré-flop:
 
 | Jogadores | Ordem de ação no pré-flop (primeiro → último) |
 |:---:|:---|

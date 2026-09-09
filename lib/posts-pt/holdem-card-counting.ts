@@ -80,7 +80,7 @@ O blackjack recompensa a memória do que já saiu; o poker recompensa ler o que 
 
 ### Contar os seus outs
 
-Um ==out== é qualquer carta não vista que melhora a sua mão para uma provável vencedora. Um flush draw tem ==9 outs== (13 de um naipe menos as 4 que você enxerga) — as duas cartas do naipe que estão no board já estão descontadas nesse 9, então não as risque uma segunda vez como "cartas mortas". Converta outs numa chance aproximada de ganhar com a ==regra do 2 e 4==: multiplique por 4 com duas cartas por vir, por 2 com uma.
+Um ==out== é qualquer carta não vista que melhora a sua mão para uma provável vencedora. Um flush draw tem ==9 outs== (13 de um naipe menos as 4 que você enxerga) — as cartas do naipe que estão no board já estão descontadas nesse 9, então não as risque uma segunda vez como "cartas mortas". Converta outs numa chance aproximada de ganhar com a ==regra do 2 e 4==: multiplique por 4 com duas cartas por vir, por 2 com uma.
 
 Um flush draw de 9 outs fecha até o river cerca de ==g:35%== das vezes (9 × 4 = 36% como estimativa rápida — o valor real é 35,0%). Esse número conta as duas cartas restantes, então ele só decide o call quando você realmente vê as duas: você está all-in no flop sem mais nada para apostar. Se há uma aposta no flop que você terá de pagar de novo no turn, conte só a próxima carta: ==9 ÷ 47 = 19,1%==. O método completo — outs sujos, combo draws, porcentagens exatas — está no [guia de como contar outs](/pt/blog/holdem-outs), e as odds por trás de todo projeto estão na [tabela de probabilidade](/pt/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
@@ -125,7 +125,7 @@ O Hold'em só expõe as cinco cartas comunitárias compartilhadas, então isso f
 :::steps
 Conte os seus outs em todo projeto | No momento em que você tem um projeto, conte as cartas que o completam e multiplique — ×4 só quando as duas cartas vêm de graça (você está all-in no flop), caso contrário ×2 só pela próxima carta. Pague quando essa chance vencer o preço
 Pergunte o que a sua mão bloqueia | Antes de blefar, veja se você tem uma carta que torna a mão de call mais forte dele impossível ou menos provável
-Ajuste para as cartas mortas | Subtraia qualquer out que você viu exposto fora do board — uma carta que apareceu por engano, uma mão mostrada, um fold que você enxergou. Enxergado por acaso, não procurado — tentar deliberadamente ver as cartas de outro jogador é uma violação de etiqueta em qualquer card room. Cartas que você enxerga são cartas que o seu adversário não pode ter
+Ajuste para as cartas mortas | Subtraia qualquer out que você viu exposto fora do board — uma carta que apareceu por engano, uma mão mostrada, um fold que você enxergou. Cartas que você enxerga são cartas que o seu adversário não pode ter — mas só enxergadas por acaso: tentar deliberadamente ver as cartas de outro jogador é contra as regras e passível de penalidade em qualquer card room
 :::
 
 Faça isso por algumas sessões e vira automático — você vai estar "contando cartas" em toda mão, só que à maneira do poker. O próximo passo é transformar essas contagens em calls e folds com [pot odds](/pt/blog/holdem-pot-odds), a matemática que te diz se os seus outs valem o preço.

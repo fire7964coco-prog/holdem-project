@@ -449,7 +449,7 @@ Você entra no GS25, CU ou 7-Eleven dentro do parque. Compra um miojo (Shin Ramy
 | Pacote de kimchi | ₩1.500 | ~$1,10 |
 | Aluguel de esteira de piquenique | ₩3.000–5.000 | ~$2,20–3,70 |
 
-*Os valores em USD deste guia são conversões aproximadas escritas em momentos diferentes — o buy-in do APT acima usa ~₩1.500/$, esta tabela ~₩1.350/$. Confira a cotação atual antes de fechar o orçamento.*
+:::note[Os valores em USD deste guia são conversões aproximadas escritas em momentos diferentes — o buy-in do Main Event do APT Jeju acima usa ~₩1.500/$, esta tabela ~₩1.350/$. Confira a cotação atual antes de fechar o orçamento.]:::
 
 A máquina em si é ==g:grátis de usar — você só paga pelo ramen==. As instruções estão afixadas em coreano e inglês. A maioria dos parques também tem zonas de entrega de comida se você quiser frango frito em vez disso.
 

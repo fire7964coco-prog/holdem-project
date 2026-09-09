@@ -105,7 +105,7 @@ Não existe uma única porcentagem "correta" de c-bet — quem te dá um número
 |:---|:---:|:---|
 | **Em posição, heads-up, dry board** | **70–100%** (pequeno) | Clássica "range bet" — aposte quase tudo, minúsculo |
 | **Em posição, heads-up, wet board** | **~50–60%** | Mais polarizado — valor e draws apostam, nada dá check |
-| **Fora de posição, heads-up (pote de um aumento só, você foi o raiser)** | **~40–50%** | Dê check bem mais para proteger o seu checking range. Como *3-bettor* fora de posição, inverte — perto de 100%, veja o [guia de posições](/pt/blog/holdem-position-play) |
+| **Fora de posição, heads-up (pote de um aumento só, você foi o raiser)** | **~30–45%** | Dê check bem mais para proteger o seu checking range. Como *3-bettor* fora de posição, inverte — acima de 97% nos dois boards que resolvemos, veja o [guia de posições](/pt/blog/holdem-position-play) |
 | **Multiway (2 adversários)** | **~50% ou menos** | Alguém provavelmente conectou — aperte |
 | **Multiway (3+ adversários)** | **Só mãos fortes e bons draws** | O fold equity basicamente sumiu |
 
@@ -135,9 +135,9 @@ Em **torneios**, aperte um pouco os tamanhos: o pequeno continua sendo um terço
 
 ![Um jogador de poker agindo primeiro fora de posição, dedos no feltro ao lado das fichas com um adversário esperando nas sombras atrás](/images/holdem-cbet-oop.webp "Fora de posição você age primeiro sem informação, então dá check bem mais e dá c-bet com um range mais apertado e forte")
 
-Dar c-bet é bem mais difícil **fora de posição** — quando você tem que agir primeiro em toda street sem saber o que o adversário vai fazer. Dois ajustes:
+Dar c-bet é bem mais difícil **fora de posição** num pote de um aumento só — quando você tem que agir primeiro em toda street sem saber o que o adversário vai fazer (como 3-bettor a vantagem de range muda isso, veja o [guia de posições](/pt/blog/holdem-position-play)). Dois ajustes:
 
-1. **Dê c-bet com menos frequência.** Sem posição, você não consegue controlar tão bem o pote nem realizar a sua equity, então dá check bem mais — até mãos que seriam apostas automáticas em posição. Em alguns bons boards, um solver dá c-bet fora de posição só um quarto das vezes.
+1. **Dê c-bet com menos frequência.** Sem posição, você não consegue controlar tão bem o pote nem realizar a sua equity, então dá check bem mais — até mãos que seriam apostas automáticas em posição. Em alguns boards, um solver dá c-bet fora de posição num pote de um aumento só em apenas um quarto das vezes.
 2. **Construa um checking range de verdade.** Se você só aposta quando está forte e dá check quando está fraco, um adversário observador te lê como um livro aberto e ataca todo check. Então você deliberadamente dá check em *algumas* mãos fortes também, o que mantém os seus checks perigosos e o seu jogo inteiro mais difícil de enfrentar. É exatamente por isso que a [posição](/pt/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp") é uma vantagem estrutural tão grande — as c-bets simplesmente funcionam melhor quando você age por último.
 
 ---
@@ -229,7 +229,7 @@ A. Não — este é o erro de c-bet mais comum. Aposte nos flops que favorecem o
 
 **Q. Com que frequência você deve dar c-bet?**
 
-A. Depende da posição, do board e do número de adversários, então trate isso como faixas, não regras: cerca de 70–100% (num tamanho pequeno) em posição heads-up num dry board, em torno de 40–50% fora de posição como raiser num pote de um aumento só (bem mais alto quando você é o 3-bettor), e 50% ou menos multiway. Uma taxa geral saudável de c-bet no flop é cerca de 55–70% — acima de 85% significa que você está no piloto automático.
+A. Depende da posição, do board e do número de adversários, então trate isso como faixas, não regras: cerca de 70–100% (num tamanho pequeno) em posição heads-up num dry board, em torno de 30–45% fora de posição como raiser num pote de um aumento só (mais alto quando você é o 3-bettor), e 50% ou menos multiway. Uma taxa geral saudável de c-bet no flop é cerca de 55–70% — acima de 85% significa que você está no piloto automático.
 
 **Q. Quanto você deve apostar na c-bet?**
 
@@ -237,7 +237,7 @@ A. Ajuste o tamanho ao board. Em boards dry e estáticos, aposte pequeno — cer
 
 **Q. Você deve dar c-bet fora de posição?**
 
-A. Com menos frequência do que em posição. Agindo primeiro em toda street sem informação, você não consegue realizar o seu equity tão bem, então dá check bem mais — até algumas mãos que você apostaria automaticamente em posição — e deliberadamente mantém algumas mãos fortes no seu checking range para que os seus checks não sejam automaticamente fracos. A posição faz as c-bets funcionarem melhor, ponto final.
+A. Com menos frequência do que em posição quando você foi o raiser pré-flop num pote de um aumento só. Agindo primeiro em toda street sem informação, você não consegue realizar o seu equity tão bem, então dá check bem mais — até algumas mãos que você apostaria automaticamente em posição — e deliberadamente mantém algumas mãos fortes no seu checking range para que os seus checks não sejam automaticamente fracos. A posição faz as c-bets funcionarem melhor, ponto final.
 
 **Q. Você deve dar c-bet num pote multiway?**
 

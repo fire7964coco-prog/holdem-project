@@ -109,7 +109,7 @@ Hier ist das Poker-Starthände-Chart für einen Standard-9-Max-Tisch:
 
 Die Regel: ==je später du agierst, desto mehr Hände kannst du profitabel öffnen==. Weil der Button postflop immer als Letzter agiert, ist er die wertvollste Position im Poker.
 
-Sieh, wie sich die Opening-Range Position für Position weitet – UTG, MP, CO und BTN nebeneinander (das vollständige 13×13-Grid mit allen 169 Händen steckt im unten verlinkten Starthände-Chart-Tool):
+Sieh, wie sich die Opening-Range Position für Position weitet – UTG, MP, CO und BTN (das vollständige 13×13-Grid mit allen 169 Händen steckt im unten verlinkten Starthände-Chart-Tool):
 
 :::rangechart:::
 
@@ -262,7 +262,7 @@ A. Pocket Aces (AA) ist die beste Starthand im Poker. Preflop gewinnen Asse rund
 
 **Q. Was sind gute Starthände im Poker?**
 
-A. Gute Starthände im Poker sind Premium-Paare (AA–TT), große Asse (AK, AQ) und starke Suited Broadways (KQs, AJs). Das sind zusammen 70 der 1.326 möglichen Kombinationen, also gut 5% – auf die 15–20%, die du über eine Session tatsächlich spielst, kommst du erst mit Position und spekulativen Händen. Spekulative Hände wie kleine Paare und Suited Connectors sind nur aus später Position gut.
+A. Gute Starthände im Poker sind Premium-Paare (AA–TT), große Asse (AK, AQ) und starke Suited Broadways (KQs, AJs). Das sind zusammen 70 der 1.326 möglichen Kombinationen, also gut 5% – auf die 15–20% der ausgeteilten Hände, die ein solider Anfänger spielt, kommst du erst mit Position und spekulativen Händen. Spekulative Hände wie kleine Paare und Suited Connectors sind nur aus später Position gut.
 
 **Q. Wie viele Starthände gibt es im Poker?**
 

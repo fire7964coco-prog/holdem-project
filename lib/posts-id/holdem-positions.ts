@@ -170,7 +170,7 @@ Satu pertanyaan tetangga yang layak sebaris: pada **showdown**, defaultnya adala
 
 ## Posisi Poker Berdasarkan Jumlah Pemain: Heads-Up hingga 10 Pemain (6-Max vs Full Ring)
 
-Nama posisi tak berubah menurut ukuran meja — ==nama-nama itu dipangkas mulai dari posisi awal== seiring pemain dikurangi. Button, blind, cutoff, dan hijack bertahan paling lama; kursi UTG+1 dan UTG+2 hanya ada ketika meja penuh. Berikut petanya dari 2 pemain hingga 10, disusun dalam urutan aksi preflop:
+Nama posisi tak berubah menurut ukuran meja — ==nama-nama itu dipangkas mulai dari posisi awal== seiring pemain dikurangi. Button, blind, cutoff, dan hijack bertahan paling lama; kursi UTG+1 dan seterusnya hanya ada di meja full ring. Berikut petanya dari 2 pemain hingga 10, disusun dalam urutan aksi preflop:
 
 | Pemain | Urutan aksi preflop (pertama → terakhir) |
 |:---:|:---|

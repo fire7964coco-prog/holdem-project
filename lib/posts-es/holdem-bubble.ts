@@ -63,7 +63,7 @@ No necesitas hacer las cuentas en vivo — para eso está nuestra [calculadora d
 
 - ==**Burbuja de premios**== — el salto de nada a un min-cash. La prima por sobrevivir es alta, pero el min-cash es pequeño, así que aún quieres *acumular* para los premios de arriba. Aplica presión, no te limites a esconderte.
 - ==**Burbuja de mesa final**== — a un puesto de la mesa final. La presión del ICM aquí suele ser la ==más extrema de todo el torneo== porque ya están en juego los premios más grandes. Los stacks cortos tienen mucho que ganar con una deep run; un stack grande a 9 jugadores es probablemente el mejor asiento de todo el evento.
-- ==**Burbuja de satélite**== — la rara del grupo. Cada asiento clasificatorio paga ==exactamente lo mismo==. Una vez que tu stack es lo bastante grande como para estar a salvo, las fichas de más no valen *nada* — así que la jugada correcta pasa a ser casi lo contrario que en una burbuja normal (más sobre la regla de "foldear ases" abajo).
+- ==**Burbuja de satélite**== — la rara del grupo. En un satélite de varios asientos, cada asiento clasificatorio paga ==exactamente lo mismo==. Una vez que tu stack es lo bastante grande como para estar a salvo, las fichas de más no valen *nada* — así que la jugada correcta pasa a ser casi lo contrario que en una burbuja normal (más sobre la regla de "foldear ases" abajo).
 
 Ten presente esta distinción, porque el consejo stack a stack que viene a continuación cambia según en qué burbuja estés.
 
@@ -145,7 +145,7 @@ La otra mitad es que el bubble factor depende de **quién tienes enfrente**, no 
 
 ## La burbuja de satélite: cuándo foldear ases
 
-**En un satélite que reparte varios asientos idénticos, cada asiento paga lo mismo — así que en el momento en que tu stack está a salvo dentro de la burbuja, foldeas todo, incluidos ases servidos.** (La excepción es el satélite winner-take-all que reparte un solo asiento: ese se juega por el primer puesto, en chip EV.) Este es el spot más contraintuitivo del póker, y es correcto. Si ganar un flip te da el ==mismo asiento que ya tienes asegurado== mientras que perderlo te elimina, no hay recompensa y sí un riesgo enorme:
+**En un satélite que reparte varios asientos idénticos, cada asiento paga lo mismo — así que en el momento en que tu stack está a salvo dentro de la burbuja, foldeas todo, incluidos ases servidos.** Este es el spot más contraintuitivo del póker, y es correcto. (El satélite winner-take-all que reparte un solo asiento es distinto: ese se juega por el primer puesto, en chip EV.) Si ganar un flip te da el ==mismo asiento que ya tienes asegurado== mientras que perderlo te elimina, no hay recompensa y sí un riesgo enorme:
 
 - **Una vez que tu asiento está matemáticamente a salvo** (estás lo bastante dentro de la burbuja como para que no te alcancen), foldea cada mano — sí, incluso AA y KK — y deja que los stacks más cortos se peleen. Rehaz esa cuenta cada vez que suban las ciegas: la "zona segura" encoge cuando entran los antes.
 - **No cuentes con el stalling en vivo.** Online, usar todo tu reloj no conlleva penalización; en vivo, quemar bancos de tiempo a propósito para escalar premios es explícitamente sancionable bajo las reglas de las WSOP — foldea a velocidad normal.

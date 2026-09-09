@@ -66,7 +66,7 @@ Dua pemain membentuk tangan lima-kartu yang persis sama — nilai yang sama, bah
 Keduanya membentuk full house KKK-QQ dari board plus satu king. ==r:Jenis dari king itu tidak penting.==
 
 ### 2. Board yang main
-Lima kartu komunitas sudah menjadi tangan terkuat bagi semua yang tersisa — itulah pot 8-8-8-A-K dari cerita saya. Ini salah satu split yang paling umum, jadi ada bagian tersendiri di bawah.
+Lima kartu komunitas sudah menjadi tangan terkuat bagi semua yang tersisa — itulah pot 8-8-8-A-K dari cerita saya. Ini cukup umum sehingga mendapat bagian tersendiri di bawah.
 
 ### 3. Straight yang sama
 Dua straight dengan kartu tertinggi sama akan seri, tak peduli jenisnya. Di board 7♣ 6♦ 5♥ K♠ 2♣, baik A dengan 9♠ 8♠ maupun B dengan 9♥ 8♦ membentuk 9-8-7-6-5 — sama tingginya, jadi **dibagi**.

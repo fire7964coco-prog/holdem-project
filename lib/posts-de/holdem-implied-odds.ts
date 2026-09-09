@@ -110,7 +110,7 @@ Derselbe $50-Call, gegensätzliche Entscheidungen – und die Karten haben sich 
 
 </div>
 
-Zwei Kräfte bestimmen die Zahl. **Häufigkeit:** Ein Gutshot trifft halb so oft wie ein Flushdraw, er braucht also einen etwa doppelt so großen Payoff, um break-even zu sein. **Tarnung:** Ein verstecktes Set wird weit mehr ausgezahlt als ein offensichtlicher Flush auf einem Board mit drei Karten derselben Farbe, weil dein Gegner dich nicht darauf setzen kann – deshalb tolerieren Sets ihre niedrige Trefferquote. Der [Nut-Flushdraw ist aus demselben Grund weit mehr wert als ein kleiner](/de/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp"): Er wird ausgezahlt *und* er verliert nicht, wenn er trifft.
+Zwei Kräfte bestimmen die Zahl. **Häufigkeit:** Ein Gutshot trifft halb so oft wie ein Flushdraw, er braucht also einen etwa doppelt so großen Payoff, um break-even zu sein. **Tarnung:** Ein verstecktes Set wird weit mehr ausgezahlt als ein offensichtlicher Flush auf einem Monotone-Board, weil dein Gegner dich nicht darauf setzen kann – deshalb tolerieren Sets ihre niedrige Trefferquote. Der [Nut-Flushdraw ist aus demselben Grund weit mehr wert als ein kleiner](/de/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp"): Er wird ausgezahlt *und* er verliert nicht, wenn er trifft.
 
 ---
 
@@ -219,7 +219,7 @@ A. Bei Implied Odds geht es nur um das Geld, das noch zu gewinnen ist, und tiefe
 ## Die 3 Dinge, die du dir merken solltest
 
 1. **Die Formel:** extra nötig = (Call ÷ Trefferquote) − (aktueller Pot + Call). Wenn du realistisch mehr als das später gewinnen kannst, ist der Call gut, selbst wenn die Pot Odds Fold sagen.
-2. **Der Realitätscheck:** Implied Odds sind eine Schätzung, die von tiefen Stacks und einem zahlenden Gegner lebt. Gegen ein All-in sind sie heads-up null (multiway kann dich nur ein dritter Spieler bezahlen, der noch Chips hat), und gegen einen kurzen Stack bleibt kaum etwas übrig – greif zurück auf die Pot Odds.
+2. **Der Realitätscheck:** Implied Odds sind eine Schätzung, die von tiefen Stacks und einem zahlenden Gegner lebt. Gegen ein All-in sind sie heads-up null, und gegen einen kurzen Stack bleibt kaum etwas übrig – greif zurück auf die Pot Odds.
 3. **Der dunkle Spiegel:** Reverse Implied Odds bestrafen Non-Nut-Draws. Ein Draw zu den Nuts ist weit mehr wert als derselbe Draw zur zweitbesten Hand.
 
 Mach das richtig, und du hörst auf, Chips für hoffnungsvolle Calls zu verbrennen, während du weiterhin die profitablen machst, die sich sonst niemand traut. Von hier aus sicher dir die rohen Zahlen mit der [Poker-Odds- und Wahrscheinlichkeitstabelle](/de/blog/holdem-probability), oder sieh genau, wie oft jeder Draw ankommt, in den [Drawing Odds](/de/blog/holdem-drawing-odds).

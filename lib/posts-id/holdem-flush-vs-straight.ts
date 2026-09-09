@@ -156,7 +156,7 @@ Queen mengalahkan jack, jadi A menang. Kalau lima kartu terbaik kedua pemain ide
 
 ![9♥ 8♥ 7♥ 6♥ 5♥ — straight flush dalam hati, tangan #2 di poker](/images/holdem-flush-vs-straight-sf.webp "Straight flush — lima hati berurutan, hanya bisa dikalahkan royal flush")
 
-Sebuah **straight flush** adalah lima kartu *berurutan* dari *satu jenis* — seperti 9♥ 8♥ 7♥ 6♥ 5♥. Ini adalah **tangan #2 di poker**, hanya bisa dikalahkan oleh royal flush (yang sebenarnya hanyalah straight flush ber-As, A-K-Q-J-10 satu jenis). Dengan hanya **36 kombinasi dari 2.598.960 tangan lima-kartu (~0,00139%; sampai river di Hold'em, sekitar 0,028%)**, straight flush lebih langka dari segalanya kecuali royal itu sendiri.
+Sebuah **straight flush** adalah lima kartu *berurutan* dari *satu jenis* — seperti 9♥ 8♥ 7♥ 6♥ 5♥. Ini adalah **tangan #2 di poker**, hanya bisa dikalahkan oleh royal flush (yang sebenarnya hanyalah straight flush ber-As, A-K-Q-J-10 satu jenis). Dengan hanya **36 kombinasi** dari 2.598.960 tangan lima-kartu (~0,00139%; sampai river di Hold'em, sekitar 0,028%), straight flush lebih langka dari segalanya kecuali royal itu sendiri.
 
 Jebakannya: ==*lima kartu yang sama* harus sekaligus satu jenis dan berurutan==. Perhatikan bedanya di meja **8♥ 7♥ 6♥ Q♠ 3♦**:
 

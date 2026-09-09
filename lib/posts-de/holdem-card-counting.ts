@@ -80,7 +80,7 @@ Blackjack belohnt das Gedächtnis für das, was schon weg ist; Poker belohnt das
 
 ### Deine Outs zählen
 
-Ein ==Out== ist jede unsichtbare Karte, die deine Hand zu einem wahrscheinlichen Gewinner verbessert. Ein Flushdraw hat ==9 Outs== (13 einer Farbe minus die 4, die du sehen kannst) – die beiden Karten dieser Farbe auf dem Board sind in diesen 9 bereits abgezogen, streich sie also nicht ein zweites Mal als „tote Karten“ weg. Rechne Outs mit der ==Regel der 4 und 2== in eine grobe Gewinnchance um: multipliziere mit 4 bei zwei kommenden Karten, mit 2 bei einer.
+Ein ==Out== ist jede unsichtbare Karte, die deine Hand zu einem wahrscheinlichen Gewinner verbessert. Ein Flushdraw hat ==9 Outs== (13 einer Farbe minus die 4, die du sehen kannst) – die Karten dieser Farbe auf dem Board sind in diesen 9 bereits abgezogen, streich sie also nicht ein zweites Mal als „tote Karten“ weg. Rechne Outs mit der ==Regel der 4 und 2== in eine grobe Gewinnchance um: multipliziere mit 4 bei zwei kommenden Karten, mit 2 bei einer.
 
 Ein Flushdraw mit 9 Outs trifft bis zum River etwa ==g:35%== der Zeit (9 × 4 = 36% als schnelle Schätzung – der wahre Wert ist 35,0%). Diese Zahl rechnet beide verbleibenden Karten – sie entscheidet den Call also nur, wenn du beide wirklich siehst: du bist am Flop all-in und hast nichts mehr zu setzen. Liegt eine Bet vor dir, die du am Turn erneut bezahlen musst, rechne nur die nächste Karte: ==9 ÷ 47 = 19,1%==. Die vollständige Methode – dirty Outs, Combo-Draws, exakte Prozentwerte – steht im [Guide zum Outs-Zählen](/de/blog/holdem-outs), und die Odds hinter jedem Draw findest du in der [Wahrscheinlichkeitstabelle](/de/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
@@ -125,7 +125,7 @@ Hold'em legt nur die fünf gemeinsamen Community Cards offen, also ist das hier 
 :::steps
 Zähle deine Outs bei jedem Draw | Sobald du einen Draw hast, zähle die Karten, die ihn vervollständigen, und multipliziere – ×4 nur, wenn beide Karten kommen (du bist all-in, oder der River kostet nichts mehr), sonst ×2 nur für die nächste Karte. Calle, wenn diese Chance den Preis schlägt
 Frage, was deine Hand blockt | Bevor du bluffst, prüfe, ob du eine Karte hältst, die ihre stärkste Calling-Hand unmöglich oder unwahrscheinlicher macht
-Passe an tote Karten an | Ziehe jedes Out ab, das du abseits vom Board gesehen hast – eine aufgeblitzte Karte, eine gezeigte Hand, ein Fold, den du zufällig gesehen hast. Zufällig gesehen, nicht gesucht – gezielt zu versuchen, die Karten eines anderen Spielers zu sehen, ist in jedem Cardroom ein Etikette-Verstoß. Karten, die du sehen kannst, sind Karten, die dein Gegner nicht haben kann
+Passe an tote Karten an | Ziehe jedes Out ab, das du abseits vom Board gesehen hast – eine aufgeblitzte Karte, eine gezeigte Hand, ein Fold, den du zufällig gesehen hast. Karten, die du sehen kannst, sind Karten, die dein Gegner nicht haben kann – aber nur zufällig erhascht: gezielt zu versuchen, die Karten eines anderen Spielers zu sehen, verstößt gegen die Regeln und ist in jedem Cardroom strafbewehrt
 :::
 
 Mach das ein paar Sessions lang und es wird automatisch – du wirst jede Hand „Karten zählen“, nur auf die Poker-Art. Der nächste Schritt ist, diese Zählungen mit [Pot Odds](/de/blog/holdem-pot-odds) in Calls und Folds zu verwandeln, der Mathematik, die dir sagt, ob deine Outs den Preis wert sind.

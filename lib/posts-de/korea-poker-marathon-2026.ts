@@ -450,7 +450,7 @@ Das war's. Das ist die Erfahrung, die millionenfach in koreanischen sozialen Med
 | Kimchi-Päckchen | ₩1.500 | ~$1,10 |
 | Picknickmatte (Leihe) | ₩3.000–5.000 | ~$2,20–3,70 |
 
-*Die USD-Angaben in diesem Guide sind grobe Umrechnungen, die zu unterschiedlichen Zeitpunkten entstanden sind – das APT-Buy-in oben rechnet mit ~₩1.500/$, diese Tabelle mit ~₩1.350/$. Prüf vor dem Budgetieren den aktuellen Kurs.*
+:::note[Die USD-Angaben in diesem Guide sind grobe Umrechnungen, die zu unterschiedlichen Zeitpunkten entstanden sind – das Buy-in des APT Jeju Main Events oben rechnet mit ~₩1.500/$, diese Tabelle mit ~₩1.350/$. Prüf vor dem Budgetieren den aktuellen Kurs.]:::
 
 Die Maschine selbst ist ==g:kostenlos nutzbar – du zahlst nur für die Ramen==. Die Anleitung hängt auf Koreanisch und Englisch aus. Die meisten Parks bieten außerdem Zonen für Essenslieferung, falls du stattdessen Fried Chicken willst.
 

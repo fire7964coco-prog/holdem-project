@@ -210,7 +210,7 @@ A. Haz 3-bet (resubir a quien subió preflop) por valor con tus manos más fuert
 
 **Q. ¿Cuándo deberías subir frente a igualar?**
 
-A. Prefiere subir a igualar siempre que tengas una mano con la que valga la pena continuar. Subir gana botes de dos formas (fold equity más la mejor mano) y toma la iniciativa; igualar no tiene fold equity — nadie foldea ahora — y deja entrar a otros barato. Iguala cuando tu mano es lo bastante fuerte para continuar pero no para agrandar un bote grande, cuando estás buscando trío con un par pequeño, o cuando quieres mantener dentro los faroles de un jugador más débil.
+A. Prefiere subir a igualar siempre que tengas una mano con la que valga la pena continuar. Subir gana botes de dos formas (fold equity más la mejor mano) y toma la iniciativa; igualar no tiene fold equity — nadie foldea ante un call — y deja entrar a otros barato. Iguala cuando tu mano es lo bastante fuerte para continuar pero no para agrandar un bote grande, cuando estás buscando trío con un par pequeño, o cuando quieres mantener dentro los faroles de un jugador más débil.
 
 **Q. ¿Cuántas manos deberías jugar en Texas Hold'em?**
 

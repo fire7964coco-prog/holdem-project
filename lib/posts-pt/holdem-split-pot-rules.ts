@@ -66,7 +66,7 @@ Dois jogadores fazem exatamente a mesma mão de cinco cartas — mesmos valores,
 Os dois fazem o full house KKK-QQ com a mesa mais um rei. ==r:Os naipes desses reis não importam.==
 
 ### 2. A mesa joga
-As cinco cartas comunitárias já são a mão mais forte para todos que restam — é o pote 8-8-8-A-K da minha história. É um dos chops mais comuns, então ganha uma seção só para ele mais abaixo.
+As cinco cartas comunitárias já são a mão mais forte para todos que restam — é o pote 8-8-8-A-K da minha história. É comum o bastante para ganhar uma seção só para ele mais abaixo.
 
 ### 3. A mesma sequência
 Duas sequências com a mesma carta mais alta empatam, independentemente do naipe. Num board 7♣ 6♦ 5♥ K♠ 2♣, tanto o 9♠ 8♠ do A quanto o 9♥ 8♦ do B fazem 9-8-7-6-5 — mesma altura, então **divide**.

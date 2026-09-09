@@ -156,7 +156,7 @@ La reina supera a la jota, así que gana A. Si las mejores cinco cartas de ambos
 
 ![9♥ 8♥ 7♥ 6♥ 5♥ — una escalera de color en corazones, la mano #2 del póker](/images/holdem-flush-vs-straight-sf.webp "Escalera de color — cinco corazones en secuencia, solo la bate una escalera real")
 
-Una **escalera de color** son cinco cartas *consecutivas* de *un mismo palo* — como 9♥ 8♥ 7♥ 6♥ 5♥. Es la **mano #2 del póker**, solo la bate una escalera real (que no es más que la escalera de color con As, A-K-Q-J-10 del mismo palo). Con apenas **36 combinaciones (~0.00139% de las manos de cinco cartas; alrededor del 0.028% para el river en Hold'em)**, es más rara que todo salvo la propia escalera real.
+Una **escalera de color** son cinco cartas *consecutivas* de *un mismo palo* — como 9♥ 8♥ 7♥ 6♥ 5♥. Es la **mano #2 del póker**, solo la bate una escalera real (que no es más que la escalera de color con As, A-K-Q-J-10 del mismo palo). Con apenas **36 combinaciones** (~0.00139% de las manos de cinco cartas; alrededor del 0.028% para el river en Hold'em), es más rara que todo salvo la propia escalera real.
 
 El detalle: ==las *mismas cinco cartas* tienen que ser del mismo palo y estar en secuencia a la vez==. Fíjate en la diferencia sobre la mesa **8♥ 7♥ 6♥ Q♠ 3♦**:
 

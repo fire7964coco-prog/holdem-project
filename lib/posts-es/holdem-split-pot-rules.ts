@@ -66,7 +66,7 @@ Dos jugadores hacen exactamente la misma mano de cinco cartas —mismos valores�
 Ambos hacen el full KKK-QQ con la mesa más un rey. ==r:El palo de esos reyes da igual.==
 
 ### 2. La mesa juega
-Las cinco cartas comunitarias ya son la mano más fuerte para todos los que quedan: es el bote 8-8-8-A-K de mi historia. Es uno de los splits más comunes, así que tiene su propia sección más abajo.
+Las cinco cartas comunitarias ya son la mano más fuerte para todos los que quedan: es el bote 8-8-8-A-K de mi historia. Es lo bastante común como para tener su propia sección más abajo.
 
 ### 3. La misma escalera
 Dos escaleras con la misma carta alta empatan, sin importar el palo. En una mesa de 7♣ 6♦ 5♥ K♠ 2♣, tanto el 9♠ 8♠ de A como el 9♥ 8♦ de B hacen 9-8-7-6-5 —la misma altura—, así que **split**.

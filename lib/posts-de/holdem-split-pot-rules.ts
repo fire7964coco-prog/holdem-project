@@ -66,7 +66,7 @@ Zwei Spieler machen exakt dieselbe Fünf-Karten-Hand – dieselben Ränge, selbs
 Beide machen das Full House KKK-QQ aus dem Board plus einem König. ==r:Die Farben dieser Könige spielen keine Rolle.==
 
 ### 2. Das Board spielt
-Die fünf Gemeinschaftskarten sind bereits die stärkste Hand für alle Verbliebenen – das ist der 8-8-8-A-K-Pot aus meiner Geschichte. Es ist einer der häufigsten Splits, deshalb bekommt er unten einen eigenen Abschnitt.
+Die fünf Gemeinschaftskarten sind bereits die stärkste Hand für alle Verbliebenen – das ist der 8-8-8-A-K-Pot aus meiner Geschichte. Er kommt oft genug vor, um unten einen eigenen Abschnitt zu bekommen.
 
 ### 3. Dieselbe Straße
 Zwei Straßen mit derselben höchsten Karte sind unentschieden, unabhängig von der Farbe. Auf einem Board aus 7♣ 6♦ 5♥ K♠ 2♣ machen sowohl A mit 9♠ 8♠ als auch B mit 9♥ 8♦ die 9-8-7-6-5 – dieselbe Höhe, also **Split**.

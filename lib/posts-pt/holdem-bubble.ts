@@ -63,7 +63,7 @@ Você não precisa fazer a conta na hora — é para isso que serve a nossa [cal
 
 - ==**Bolha do dinheiro**== — o salto de nada para um min-cash. O prêmio por sobreviver é alto, mas o min-cash é pequeno, então você ainda quer *acumular* pelos prêmios de topo. Aplique pressão, não só se esconda.
 - ==**Bolha de final table**== — a uma vaga da final table. A pressão de ICM aqui costuma ser a ==mais extrema de todo o torneio== porque os maiores prêmios agora estão em jogo. Short stacks têm mais a ganhar com uma corrida profunda; um big stack nessa bolha é, provavelmente, a melhor cadeira do evento inteiro.
-- ==**Bolha de satélite**== — a exceção. Toda vaga classificatória paga ==exatamente o mesmo==. Assim que seu stack fica grande o bastante para estar seguro, fichas extras não valem *nada* — então a jogada correta se torna quase o oposto de uma bolha normal (mais sobre a regra de "foldar ases" abaixo).
+- ==**Bolha de satélite**== — a exceção. Num satélite de várias vagas, toda vaga classificatória paga ==exatamente o mesmo==. Assim que seu stack fica grande o bastante para estar seguro, fichas extras não valem *nada* — então a jogada correta se torna quase o oposto de uma bolha normal (mais sobre a regra de "foldar ases" abaixo).
 
 Guarde essa distinção, porque o conselho stack por stack que vem a seguir muda dependendo de qual bolha você está.
 
@@ -145,7 +145,7 @@ A outra metade é que o bubble factor acompanha **quem está do outro lado**, n�
 
 ## A bolha de satélite: quando foldar ases
 
-**Num satélite que dá várias vagas idênticas, toda vaga paga o mesmo — então, no momento em que sua vaga está matematicamente garantida, você folda tudo, incluindo par de ases.** (O satélite winner-take-all, que dá uma vaga só, é a exceção: ele se joga pelo primeiro lugar, em chip EV.) Este é o spot mais contraintuitivo do poker, e está correto. Se ganhar um cara ou coroa te dá a ==mesma vaga que você já garantiu== enquanto perdê-lo te elimina, não há recompensa e há risco enorme:
+**Num satélite que dá várias vagas idênticas, toda vaga paga o mesmo — então, no momento em que sua vaga está matematicamente garantida, você folda tudo, incluindo par de ases.** Este é o spot mais contraintuitivo do poker, e está correto. (O satélite winner-take-all, que dá uma vaga só, é diferente: ele se joga pelo primeiro lugar, em chip EV.) Se ganhar um cara ou coroa te dá a ==mesma vaga que você já garantiu== enquanto perdê-lo te elimina, não há recompensa e há risco enorme:
 
 - **Assim que sua vaga está matematicamente segura** (ninguém mais consegue te alcançar), folde toda mão — sim, até AA e KK — e deixe os stacks mais curtos brigarem. E reavalie a conta a cada subida de blinds: a "zona segura" encolhe conforme os antes entram.
 - **Não conte com o stall ao vivo.** Online, usar o relógio inteiro não gera penalidade; ao vivo, esgotar o time bank de propósito para subir de posição é passível de penalidade pelas regras (a WSOP cita isso textualmente) — folde em ritmo normal e deixe os curtos brigarem.

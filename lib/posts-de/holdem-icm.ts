@@ -111,7 +111,7 @@ Da steht es in Zahlen: der Leader hat ==die Hälfte der Chips, aber nur 38,4% de
 
 Früh in einem Turnier, mit winzigen Pay Jumps weit weg, ist ein Chip im Grunde ein Chip – du spielst [Chip EV](/de/blog/holdem-equity "thumb:/images/holdem-equity-hero.webp") und akkumulierst unerbittlich. Nahe am Geld und am Final Table übernimmt ICM.
 
-Der klassische Konflikt ist ein marginaler All-in-*Call*. Im Chip EV kann ein Coinflip um einen großen Pot in Ordnung oder sogar gut sein – du gewinnst so viele Chips, wie du verlierst. Im ICM kann es ein klarer ==Fold== sein, weil Busten dich deine Equity an jedem Preis oberhalb des bereits gesicherten kostet (die garantierte Mindestauszahlung selbst bleibt dir), während die Chips, die du gewinnen würdest, weniger als den Nennwert wert sind.
+Der klassische Konflikt ist ein marginaler All-in-*Call*. Im Chip EV kann ein Coinflip um einen großen Pot in Ordnung oder sogar gut sein – du gewinnst so viele Chips, wie du verlierst. Im ICM kann es ein klarer ==Fold== sein, weil Busten dich deine Equity an jedem Preis oberhalb des bereits gesicherten kostet (die garantierte Mindestauszahlung selbst bleibt dir) – und an der Bubble, wo noch nichts gesichert ist, deine gesamte Preis-Equity –, während die Chips, die du gewinnen würdest, weniger als den Nennwert wert sind.
 
 Genau hier hatte ich diese Jacks verkehrt herum verstanden. Die Steuer wird auf den *Call* erhoben, und die Kehrseite davon macht eine Bubble überhaupt erst spielbar: Weil die Calling-Ranges aller enger werden, ist deine Fold Equity **mehr** wert als in Chips. First-in zu shoven ist die Waffe des Mittelstacks auf der Bubble, nicht sein Leak – ich bin in den einen Spieler gelaufen, der am weitesten callen konnte, und das ist Varianz, kein Strategiefehler. ==Chip EV fragt „wird das meinen Stack aufbauen?“ ICM fragt „wird das meine Bankroll aufbauen?“== – und nur die zweite zahlt aus.
 
@@ -224,7 +224,7 @@ A. Es ordnet jedem Spieler eine Wahrscheinlichkeit zu, auf jeder bezahlten Posit
 
 **Q. Was ist der Unterschied zwischen ICM und Chip EV?**
 
-A. Chip EV misst eine Entscheidung in gewonnenen oder verlorenen Chips; ICM misst sie in echtem Geld. Sie stimmen früh in einem Turnier überein und divergieren nahe am Geld, wo Busten echte Preis-Equity kostet – an der Bubble deine gesamte Chance aufs Geld, und sobald du drin bist, alles oberhalb der bereits gesicherten Auszahlung. Ein Coinflip-All-in, das im Chip EV in Ordnung ist, kann unter ICM ein klarer Fold sein.
+A. Chip EV misst eine Entscheidung in gewonnenen oder verlorenen Chips; ICM misst sie in echtem Geld. Sie stimmen früh in einem Turnier überein und divergieren nahe am Geld. An der Bubble kostet Busten deine gesamte Chance aufs Geld; sobald du im Geld bist, kostet es alles oberhalb der bereits gesicherten Auszahlung. Ein Coinflip-All-in, das im Chip EV in Ordnung ist, kann unter ICM ein klarer Fold sein.
 
 **Q. Was ist ein ICM Deal, und wie unterscheidet er sich von einem Chip Chop?**
 

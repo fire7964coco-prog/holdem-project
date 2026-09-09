@@ -450,7 +450,7 @@ Itu saja. Itulah pengalaman yang telah diposting di media sosial Korea jutaan ka
 | Paket kimchi | ₩1.500 | ~$1,10 |
 | Sewa tikar piknik | ₩3.000–5.000 | ~$2,20–3,70 |
 
-*Angka USD di panduan ini adalah konversi kasar yang ditulis pada waktu berbeda — buy-in APT di atas memakai ~₩1.500/$, tabel ini ~₩1.350/$. Cek kurs terkini sebelum menyusun anggaran.*
+:::note[Angka USD di panduan ini adalah konversi kasar yang ditulis pada waktu berbeda — buy-in Main Event APT Jeju di atas memakai ~₩1.500/$, tabel ini ~₩1.350/$. Cek kurs terkini sebelum menyusun anggaran.]:::
 
 Mesinnya sendiri ==g:gratis digunakan — Anda hanya membayar ramennya==. Petunjuk ditempel dalam bahasa Korea dan Inggris. Sebagian besar taman juga menawarkan zona pesan-antar makanan jika Anda ingin ayam goreng sebagai gantinya.
 

@@ -72,7 +72,7 @@ Diese drei Bubbles zu verwechseln ist einer der teuersten Fehler im Turnierpoker
 
 - ==**Money Bubble**== – der Sprung von nichts zu einem Min-Cash. Die Überlebensprämie ist hoch, aber der Min-Cash ist klein, also willst du trotzdem für die Top-Preise *akkumulieren*. Übe Druck aus, versteck dich nicht nur.
 - ==**Final-Table-Bubble**== – ein Platz vom Final Table entfernt. Der ICM-Druck ist hier meist am ==extremsten im gesamten Turnier==, weil jetzt die größten Preise im Spiel sind. Short Stacks haben am meisten von einem Deep Run zu gewinnen; ein Big Stack kurz vor dem Final Table ist wohl der beste Platz im ganzen Event.
-- ==**Satellite-Bubble**== – der Sonderfall. Jeder qualifizierende Platz zahlt ==exakt gleich==. Sobald dein Stack groß genug ist, um sicher zu sein, sind zusätzliche Chips *nichts* wert – also wird der korrekte Zug fast das Gegenteil einer normalen Bubble (mehr zur „Asse folden“-Regel unten).
+- ==**Satellite-Bubble**== – der Sonderfall. Bei einem Satellite mit mehreren Plätzen zahlt jeder qualifizierende Platz ==exakt gleich==. Sobald dein Stack groß genug ist, um sicher zu sein, sind zusätzliche Chips *nichts* wert – also wird der korrekte Zug fast das Gegenteil einer normalen Bubble (mehr zur „Asse folden“-Regel unten).
 
 Behalte diese Unterscheidung im Kopf, denn der Rat Stack für Stack, der jetzt folgt, verschiebt sich je nachdem, an welcher Bubble du bist.
 
@@ -172,7 +172,7 @@ Ohne diese Regel könnten Spieler an langsamen Tischen Hand um Hand folden, wäh
 > **Kurze Antwort**
 > Bei einem Satellite, der mehrere identische Plätze vergibt, zahlt jeder Platz gleich – also foldest du in dem Moment, in dem dein Stack sicher innerhalb der Bubble ist, alles, inklusive Pocket Aces.
 
-(Ein Winner-take-all-Satellite, der nur einen einzigen Platz vergibt, ist die Ausnahme: Er wird nach Chip EV auf Platz eins gespielt.) Dieser Fold ist der kontraintuitivste Spot im Poker – und er ist korrekt. Wenn dir das Gewinnen eines Flips ==denselben Platz gibt, den du bereits gesichert hast==, während das Verlieren dich eliminiert, gibt es keine Belohnung und ein enormes Risiko:
+Dieser Fold ist der kontraintuitivste Spot im Poker – und er ist korrekt. (Ein Winner-take-all-Satellite, der nur einen einzigen Platz vergibt, ist anders: Er wird nach Chip EV auf Platz eins gespielt.) Wenn dir das Gewinnen eines Flips ==denselben Platz gibt, den du bereits gesichert hast==, während das Verlieren dich eliminiert, gibt es keine Belohnung und ein enormes Risiko:
 
 - **Sobald dein Platz mathematisch sicher ist** (du bist weit genug innerhalb der Bubble, dass du nicht mehr eingeholt werden kannst), folde jede Hand – ja, sogar AA und KK – und lass die kürzeren Stacks es ausfechten. Rechne diese Schwelle bei jedem Blind-Anstieg neu: Die „sichere Zone“ schrumpft, sobald die Antes greifen.
 - **Spiel bewusst langsam, aber bleib innerhalb der Regeln.** An einer Satellite-Bubble schaut der Floor am schärfsten auf Stalling und geht oft früh in Hand for Hand. Exzessives Tanken bringt einen Clock-Call – läuft die Zeit ab, wird deine Hand für tot erklärt – und wiederholtes Stallen zieht Penalties nach sich, von der Verwarnung über ausgesetzte Hände bis zu mehreren ausgesetzten Runden. An der Sicherheitsschwelle kostet dich das genau den Sitzplatz, den du schützen wolltest.

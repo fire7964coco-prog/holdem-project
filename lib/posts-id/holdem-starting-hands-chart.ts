@@ -109,7 +109,7 @@ Inilah chart starting hands poker untuk meja 9-max standar:
 
 Aturannya: ==makin belakang Anda beraksi, makin banyak tangan yang bisa Anda open secara profit==. Karena button selalu beraksi terakhir postflop, ia adalah kursi paling berharga di poker.
 
-Lihat bagaimana opening range melebar kursi demi kursi — UTG, MP, CO, dan BTN berdampingan (grid 13×13 lengkap berisi semua 169 tangan ada di alat chart tangan yang ditautkan di bawah):
+Lihat bagaimana opening range melebar kursi demi kursi — UTG, MP, CO, dan BTN (grid 13×13 lengkap berisi semua 169 tangan ada di alat chart tangan yang ditautkan di bawah):
 
 :::rangechart:::
 
@@ -262,7 +262,7 @@ A. Pocket aces (AA) adalah starting hand terbaik di poker. Preflop, ace menang k
 
 **Q. Apa saja starting hand yang bagus di poker?**
 
-A. Starting hand yang bagus di poker adalah pair premium (AA–TT), ace besar (AK, AQ), dan suited broadway kuat (KQs, AJs) — inti dari ~15–20% tangan yang Anda mainkan sepanjang satu sesi (kelompok premium ini sendiri hanya sekitar 5% dari semua starting hand). Tangan speculative seperti pair kecil dan suited connector hanya bagus dari posisi belakang.
+A. Starting hand yang bagus di poker adalah pair premium (AA–TT), ace besar (AK, AQ), dan suited broadway kuat (KQs, AJs) — inti dari ~15–20% kartu yang dibagi yang dimainkan pemula solid (kelompok premium ini sendiri hanya sekitar 5% dari semua starting hand). Tangan speculative seperti pair kecil dan suited connector hanya bagus dari posisi belakang.
 
 **Q. Ada berapa starting hand di poker?**
 

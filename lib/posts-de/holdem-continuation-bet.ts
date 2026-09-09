@@ -105,7 +105,7 @@ Es gibt keinen einzelnen „korrekten“ C-Bet-Prozentsatz – wer dir eine Zahl
 |:---|:---:|:---|
 | **In Position, heads-up, trockenes Board** | **70–100%** (klein) | Klassische „Range-Bet“ – bette fast alles, winzig |
 | **In Position, heads-up, wet Board** | **~50–60%** | Polarisierter – Value und Draws betten, Air checkt |
-| **Out of Position, heads-up (Single-Raised Pot, du warst der Raiser)** | **~40–50%** | Checke weit öfter, um deine Checking-Range zu schützen. Als OOP-*3-Better* dreht es sich um – nahe 100%, siehe das [Positions-Playbook](/de/blog/holdem-position-play) |
+| **Out of Position, heads-up (Single-Raised Pot, du warst der Raiser)** | **~30–45%** | Checke weit öfter, um deine Checking-Range zu schützen. Als OOP-*3-Better* dreht es sich um – über 97% auf den beiden Boards, die wir gelöst haben, siehe das [Positions-Playbook](/de/blog/holdem-position-play) |
 | **Multiway (2 Gegner)** | **~50% oder weniger** | Wahrscheinlich hat jemand getroffen – zieh zusammen |
 | **Multiway (3+ Gegner)** | **Nur starke Hände & gute Draws** | Fold Equity ist im Grunde weg |
 
@@ -135,9 +135,9 @@ In **Turnieren** tendiere eine Spur kleiner: Die kleine Size bleibt ein Drittel,
 
 ![Ein Pokerspieler, der als Erster out of Position handelt, die Finger auf dem Filz neben seinen Chips, während ein Gegner im Schatten hinter ihm wartet](/images/holdem-cbet-oop.webp "Out of Position handelst du als Erster ohne Information, also checkst du weit öfter und c-bettest eine engere, stärkere Range")
 
-C-betten ist **out of Position** viel schwieriger – wenn du auf jeder Street als Erster handeln musst, ohne zu wissen, was dein Gegner tun wird. Zwei Anpassungen:
+C-betten ist **out of Position** in einem Single-Raised Pot viel schwieriger – wenn du auf jeder Street als Erster handeln musst, ohne zu wissen, was dein Gegner tun wird (als 3-Better dreht der Range-Vorteil das um, siehe das [Positions-Playbook](/de/blog/holdem-position-play)). Zwei Anpassungen:
 
-1. **C-bette seltener.** Ohne Position kannst du den Pot nicht so gut kontrollieren oder deine Equity realisieren, also checkst du weit öfter – sogar Hände, die in Position automatische Bets wären. Auf manchen guten Boards c-bettet ein Solver out of Position nur ein Viertel der Zeit.
+1. **C-bette seltener.** Ohne Position kannst du den Pot nicht so gut kontrollieren oder deine Equity realisieren, also checkst du weit öfter – sogar Hände, die in Position automatische Bets wären. Auf manchen Boards c-bettet ein Solver out of Position in einem Single-Raised Pot nur ein Viertel der Zeit.
 2. **Bau eine echte Checking-Range auf.** Wenn du nur bettest, wenn du stark bist, und checkst, wenn du schwach bist, liest dich ein aufmerksamer Gegner wie ein Buch und attackiert jeden Check. Also checkst du bewusst auch *einige* starke Hände, was deine Checks gefährlich hält und dein ganzes Spiel schwerer zu spielen macht. Genau deshalb ist [Position](/de/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp") ein so struktureller Vorteil – C-Bets funktionieren einfach besser, wenn du als Letzter handelst.
 
 ---
@@ -231,7 +231,7 @@ A. Nein – das ist der häufigste C-Bet-Fehler. Bette die Flops, die deine Rang
 
 **Q. Wie oft solltest du c-betten?**
 
-A. Es hängt von Position, Board und Anzahl der Gegner ab, also behandle diese als Bereiche, nicht als Regeln: grob 70–100% (in kleiner Größe) in Position heads-up auf einem trockenen Board, etwa 40–50% out of Position als Raiser in einem Single-Raised Pot (deutlich höher, wenn du der 3-Better bist) und 50% oder weniger multiway. Eine gesunde Gesamt-C-Bet-Rate am Flop liegt bei etwa 55–70% – über 85% bedeutet, dass du auf Autopilot fährst.
+A. Es hängt von Position, Board und Anzahl der Gegner ab, also behandle diese als Bereiche, nicht als Regeln: grob 70–100% (in kleiner Größe) in Position heads-up auf einem trockenen Board, etwa 30–45% out of Position als Raiser in einem Single-Raised Pot (höher als 3-Better) und 50% oder weniger multiway. Eine gesunde Gesamt-C-Bet-Rate am Flop liegt bei etwa 55–70% – über 85% bedeutet, dass du auf Autopilot fährst.
 
 **Q. Wie viel solltest du c-betten?**
 
@@ -239,7 +239,7 @@ A. Sizing nach dem Board. Auf trockenen, statischen Boards bette klein – etwa 
 
 **Q. Solltest du out of Position c-betten?**
 
-A. Seltener als in Position. Wenn du auf jeder Street als Erster ohne Information handelst, kannst du deine Equity nicht so gut realisieren, also checkst du weit öfter – sogar einige Hände, die du in Position auto-betten würdest – und du hältst bewusst einige starke Hände in deiner Checking-Range, damit deine Checks nicht automatisch schwach sind. Position lässt C-Bets besser funktionieren, Punkt.
+A. Seltener als in Position, wenn du der Preflop-Raiser in einem Single-Raised Pot warst. Wenn du auf jeder Street als Erster ohne Information handelst, kannst du deine Equity nicht so gut realisieren, also checkst du weit öfter – sogar einige Hände, die du in Position auto-betten würdest – und du hältst bewusst einige starke Hände in deiner Checking-Range, damit deine Checks nicht automatisch schwach sind. Position lässt C-Bets besser funktionieren, Punkt.
 
 **Q. Solltest du in einem Multiway-Pot c-betten?**
 

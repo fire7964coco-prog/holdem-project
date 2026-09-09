@@ -63,7 +63,7 @@ Anda tidak perlu menjalankan matematika secara langsung — itulah gunanya [kalk
 
 - ==**Money bubble**== — lonjakan dari tidak apa-apa ke min-cash. Premi bertahan tinggi, tapi min-cash kecil, jadi Anda tetap ingin *mengakumulasi* untuk hadiah teratas. Berikan tekanan, jangan hanya bersembunyi.
 - ==**Final-table bubble**== — satu tempat dari final table. Tekanan ICM di sini biasanya ==paling ekstrem di seluruh turnamen== karena hadiah terbesar kini dipertaruhkan. Short stack punya paling banyak untuk didapat dari deep run; big stack 9-handed bisa dibilang kursi terbaik di seluruh event.
-- ==**Bubble satelit**== — yang berbeda dari yang lain. Setiap kursi kualifikasi membayar ==persis sama==. Begitu stack Anda cukup besar untuk aman, chip tambahan tidak berharga *apa pun* — jadi permainan yang benar menjadi hampir kebalikan dari bubble normal (lebih lanjut soal aturan "fold aces" di bawah).
+- ==**Bubble satelit**== — yang berbeda dari yang lain. Di satelit multi-kursi, setiap kursi kualifikasi membayar ==persis sama==. Begitu stack Anda cukup besar untuk aman, chip tambahan tidak berharga *apa pun* — jadi permainan yang benar menjadi hampir kebalikan dari bubble normal (lebih lanjut soal aturan "fold aces" di bawah).
 
 Ingat perbedaan ini, karena saran stack demi stack yang menyusul bergeser tergantung bubble mana yang sedang Anda hadapi.
 
@@ -145,7 +145,7 @@ Separuh lainnya: bubble factor mengikuti **siapa yang duduk di seberang Anda**, 
 
 ## Bubble Satelit: Kapan Harus Fold Aces
 
-**Di satelit yang memberikan beberapa kursi identik, setiap kursi membayar sama — jadi begitu stack Anda aman di dalam bubble, Anda fold semuanya, termasuk pocket aces.** (Satelit winner-take-all yang hanya memberikan satu kursi adalah pengecualiannya: yang itu dimainkan untuk juara pertama dengan chip EV.) Ini adalah spot paling kontra-intuitif di poker, dan itu benar. Jika memenangkan sebuah flip memberi Anda ==kursi yang sama yang sudah Anda kunci== sementara kalah mengeliminasi Anda, tidak ada imbalan dan risikonya sangat besar:
+**Di satelit yang memberikan beberapa kursi identik, setiap kursi membayar sama — jadi begitu stack Anda aman di dalam bubble, Anda fold semuanya, termasuk pocket aces.** Ini adalah spot paling kontra-intuitif di poker, dan itu benar. (Satelit winner-take-all yang hanya memberikan satu kursi itu berbeda: yang itu dimainkan untuk juara pertama dengan chip EV.) Jika memenangkan sebuah flip memberi Anda ==kursi yang sama yang sudah Anda kunci== sementara kalah mengeliminasi Anda, tidak ada imbalan dan risikonya sangat besar:
 
 - **Begitu kursi Anda secara matematis aman** (Anda cukup jauh di dalam bubble sehingga tak bisa terkejar), fold setiap tangan — ya, bahkan AA dan KK — dan biarkan short stack bertarung sendiri. Hitung ulang matematika itu setiap kali blind naik: "zona aman" menyusut begitu ante mulai berlaku.
 - **Jangan mengandalkan stalling di live.** Online, memakai seluruh clock Anda tidak membawa penalti; di live, sengaja membakar time bank demi naik tangga hadiah secara eksplisit bisa kena penalti menurut aturan WSOP — fold dengan tempo normal dan biarkan short stack bertarung.

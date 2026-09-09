@@ -99,7 +99,7 @@ Lá está em números: o leader tem ==metade das fichas mas só 38,4% do dinheir
 
 **O chip EV mede uma decisão em fichas ganhas ou perdidas; o ICM (ou "$EV") mede em premiação real. Eles concordam cedo e se separam feio no fim.** Cedo num torneio, com pay jumps pequenos e distantes, uma ficha é basicamente uma ficha — você joga [chip EV](/pt/blog/holdem-equity "thumb:/images/holdem-equity-hero.webp"), acumulando sem parar. Perto do dinheiro e na final table, o ICM assume.
 
-O confronto clássico é *pagar* um all-in marginal. No chip EV, um cara ou coroa por um pote grande pode ser ok ou até bom — você ganha tantas fichas quanto perde. No ICM pode ser um ==fold== claro, porque bustar te custa a sua equity em todo prêmio acima daquele que você já garantiu (o mínimo garantido em si continua seu), enquanto as fichas que você ganharia valem menos que o valor de face.
+O confronto clássico é *pagar* um all-in marginal. No chip EV, um cara ou coroa por um pote grande pode ser ok ou até bom — você ganha tantas fichas quanto perde. No ICM pode ser um ==fold== claro, porque bustar te custa a sua equity em todo prêmio acima daquele que você já garantiu (o mínimo garantido em si continua seu) — e na bolha, onde nada está garantido ainda, toda a sua equity de premiação —, enquanto as fichas que você ganharia valem menos que o valor de face.
 
 É aqui que eu entendia aqueles valetes ao contrário. O imposto é cobrado no *call*, e o outro lado disso é justamente o que torna uma bolha jogável: como o range de pagar de todo mundo aperta, sua fold equity vale **mais** do que vale em fichas. Dar shove sendo o primeiro é a arma do stack médio na bolha, não o leak dele — eu esbarrei no único jogador que podia pagar mais aberto, e isso é variância, não erro de estratégia. ==O chip EV pergunta "isso vai construir meu stack?" O ICM pergunta "isso vai construir meu bankroll?"== — e só o segundo paga de verdade.
 
@@ -197,7 +197,7 @@ A. Ele atribui a cada jogador uma probabilidade de terminar em cada posição pa
 
 **Q. Qual a diferença entre ICM e chip EV?**
 
-A. O chip EV mede uma decisão em fichas ganhas ou perdidas; o ICM mede em dinheiro real. Eles concordam cedo num torneio e divergem perto do dinheiro, onde bustar custa equity de premiação de verdade — na bolha, toda a sua chance de entrar no dinheiro; depois de entrar, tudo acima do pagamento que você já garantiu. Um all-in cara-ou-coroa que está ok em chip EV pode ser um fold claro sob ICM.
+A. O chip EV mede uma decisão em fichas ganhas ou perdidas; o ICM mede em dinheiro real. Eles concordam cedo num torneio e divergem perto do dinheiro. Na bolha, bustar custa toda a sua chance de entrar no dinheiro; depois de entrar no dinheiro, custa tudo acima do pagamento que você já garantiu. Um all-in cara-ou-coroa que está ok em chip EV pode ser um fold claro sob ICM.
 
 **Q. O que é um ICM deal, e como ele difere de um chip chop?**
 

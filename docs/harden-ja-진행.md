@@ -158,6 +158,8 @@
 
 ### 3-A. 이전부터
 
+- 🔴 **헤드 통지(2026-09-09 (12) · 회차 9 진행 중 헤드가 main에서 ja 파일을 만졌다)** — 대기열 43·M-089 EN-먼저 정정을 7로케일 전파하며 ja **20편**을 헤드 커밋으로 갱신: continuation-bet · implied-odds · card-counting · bubble · icm · korea-poker-marathon · apt-incheon · starting-hands-chart · kicker(스트라이프·tldr·요약 4족보 = **§2-H 「규칙 4/요약 3」 확정을 헤드가 뒤집었다** — 근거 §5-F 5 GEO 이의 채택) · flush-vs-straight · positions · probability · split-pot-rules · position-play · straddle · strategy 등. 레인은 `git merge main` 후 회차 9를 이어가라. c-bet OOP SRP는 **30–45%**(position-play 솔버 근거)로 통일됐다 — 40–50%로 되돌리지 마라.
+
 - `holdem-3bet` A5s 블로커 대상 = **AA·AK**(KK 아님) · A5s 4-bet 블러프 비율 ja는 **30%**.
 - `holdem-3bet`·`holdem-pot-odds`·`holdem-split-pot-rules`는 **2026-09-06 EN 역이식(`4522532a`)** 반영본.
 - `apt-incheon` 「開幕当日/開幕日」은 EN 「before the festival」을 **일부러 안 따른** 편차 — 되돌리지 마라.
