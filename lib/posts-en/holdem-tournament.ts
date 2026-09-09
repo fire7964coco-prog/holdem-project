@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In a poker tournament you pay a fixed buy-in for chips, blinds increase on a timer until one player holds all chips. Top 10–15% of players cash. Formats include freezeout, PKO, satellite, and deepstack — enter via direct buy-in, satellite, or online pre-registration.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-08-26",
+  updated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏆",
@@ -67,7 +67,7 @@ In exchange, you receive a **starting stack** — commonly 10,000 to 50,000 tour
 
 **Your starting stack has no cash value.** A 10,000-chip stack doesn't equal $10,000 — it's just your tournament life. All that matters is whether you have more chips than the other players when the money spots arrive.
 
-Every tournament publishes its structure in a **structure sheet**: starting stack, blind levels, level duration, ante schedule, and payouts. Ask for it at registration — it's the single most useful document in the room.
+Every tournament publishes its structure in a **structure sheet**: starting stack, blind levels, level duration, ante schedule, and the payout schedule. Ask for it at registration — it's the single most useful document in the room.
 
 ---
 
@@ -158,7 +158,7 @@ Instead of spending $10,000, you compete in a $500 tournament against 19 other p
 
 **Chained satellites** go even lower. A $5 super-satellite → $55 qualifier → $215 event → a $1,050 online Main Event. Many players at major events entered through a satellite chain for a fraction of the direct buy-in.
 
-==g:Satellite strategy is different from regular tournament play — once you have enough chips to guarantee a seat, stop taking risks. Fold even good hands to avoid busting on the bubble.==
+==g:Satellite strategy is different from regular tournament play — in a satellite that awards several identical seats, once you have enough chips to guarantee a seat, stop taking risks — fold even good hands to avoid busting on the bubble. A winner-take-all satellite that awards a single seat is the exception: it is played for first place on chip EV.==
 
 ---
 
@@ -261,7 +261,7 @@ This is what no other guide tells you. Here's a realistic Day 1 timeline for a l
 - Min-cash: about 1.83x the buy-in
 - 1st place: $662,200 (~14% of the prize pool)
 
-The payout structure is always announced before the tournament starts. Ask for the **structure sheet** at registration — it lists blind levels, antes, starting stack, and payout schedule.
+The payout schedule can be checked before the tournament starts, but the final number of places paid and the exact amounts are often confirmed only after registration, rebuys and add-ons close. Ask for the **structure sheet** at registration — it lists blind levels, antes, starting stack, and payout schedule.
 
 ---
 
@@ -274,7 +274,7 @@ These 13 terms cover most of what you'll hear at the table. For the full A-to-Z,
 | **ITM** | In The Money — you've reached a paying position |
 | **Bubble** | The stage just before ITM — one elimination from everyone cashing |
 | **Hand-for-hand** | All tables play one hand at a time during the bubble to prevent stalling |
-| **Structure sheet** | The official document listing blind levels, antes, and payouts |
+| **Structure sheet** | The official document listing blind levels, antes, and the payout schedule |
 | **Chip leader** | The player with the most chips |
 | **Short stack** | A player with very few chips relative to the blinds |
 | **Shove / JAM** | Go all-in (push your entire stack into the middle) |
@@ -348,7 +348,7 @@ A. Yes, during the late registration window — usually the first few blind leve
 
 **Q. Can you leave a poker tournament early and keep your chips?**
 
-A. No. Unlike a cash game, tournament chips have no cash value and can't be cashed out mid-event. If you walk away, your chips stay in play and keep paying blinds and antes until they're gone. You only receive money if you finish in a paid (ITM) position.
+A. No. Unlike a cash game, tournament chips have no cash value and can't be cashed out mid-event. If you walk away, your chips stay in play and keep paying blinds and antes until they're gone. Regular prize money is paid only if you finish in a paid (ITM) position; in knockout and PKO formats you can also collect bounties separately.
 
 **Q. Are poker tournaments more luck or skill?**
 
