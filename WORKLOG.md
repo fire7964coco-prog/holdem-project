@@ -1,3 +1,33 @@
+## 2026-09-09 (4) — **우편함 미판독 7행(MA-121~127) 이행 회차 — 덩어리 1·2·3 종결 · 4(EN-먼저 23종)는 대기열 39** (Fable · 헤드 · 커밋 `77953269`)
+
+사장님 「완료되면 이어서 우편함 회차 진행해」. 09-07·09-08 검수장 발신 7행(요청 19 · 판단 4)을 처음 판독·이행했다. 순서는 핸드오프 09-09 (3) 계획 그대로.
+
+**덩어리 1 — 보드 플러시 「보드 최저보다 높은 같은 무늬만 개선」(승자 뒤집힘 · MA-121 ①ⓐ · MA-122 ①ⓐ · MA-126 ① L 세 레인 독립 수렴)**
+- EN 3곳(표 L141 · FAQ L268 · L272) + es 3 · id 3 · zh 4(直答 L165 포함) · zh-hant 3 · ja 2 · pt 2(ja·pt는 「보드 플러시 승자」 FAQ 자체가 없어 2곳) · de는 `fc404ca8` 정정본 그대로(masterUpdated만 이동). **KO에는 이 글이 없다**(posts.ts·index 0).
+- 정본 de 문안 이식: «더 높은 같은 무늬가 개선 + 연결 보드에선 더 낮은 같은 무늬가 스트플» · 반례 K♠6♠5♠4♠3♠ + 2♠ > A♠ 를 FAQ(ja·pt는 유일 FAQ)에 축어. §13 손검산: 2♠ → 6♠5♠4♠3♠2♠(6하이 SF) · A♠ → A♠K♠6♠5♠4♠(A하이 플러시) → SF 승 ✅.
+
+**덩어리 2 — 규칙 클러스터(MA-125 ①②③⑤ · MA-127 ⑤ · MA-126 ②)**
+- 🔴 **「상대가 커버 못할 금액을 못 낸다」는 zh 단독이 아니라 EN 동형이었다**(EN all-in-rules L251 「opponents cannot suddenly bet more than you can cover」). → EN-먼저: 정본 = de L252(「스택 초과분은 사이드팟이나 언콜드 벳으로」) → en·es·pt·id·ja·zh 6로케일(zh-hant·de는 주장 없음/이미 정정).
+- 사이드팟 용어행 «올인 플레이어 제외» → «더 적은 금액으로 올인한 플레이어 제외»(pt `e3f5a3a2` 정본) → en·de·es·id·ja·zh·zh-hant 7.
+- 103조 두 요소(스택 복귀 다중 동작 + 사전 선언 없음 / 시각적 기만 · WSOP 103 축어 = 발췌 §A L107) → en·de·es·id·ja·zh·zh-hant 본문+FAQ 14자리(pt는 이미 보유 · masterUpdated만). zh-hant FAQ L253은 추가로 「先說「跟」再補一個加注」를 string bet 정의에서 빼고 90.d 구속 선언으로(거울 zh L259 축어).
+- zh 「判成平跟」→「判成跟注」(L214 · 平跟=limp 오용).
+- card-counting 「in most jurisdictions」 한정어 복원 es·de·ja·zh 4 · es 「Ligar」 5곳에 「en el flop」(drawing-odds 4 · probability 1 · 수치 불변).
+
+**덩어리 3 — ja 로케일 정정(MA-127 ②④) + 신규 착석 판단(MA-125 ⑥ · 판단 요청 ⓐ)**
+- ja 6편 7자리: betting-actions 50% 룰 기준 «직전 풀베트/레이즈의 **증분**»(TDA 43-A) · beginners ×4 조건 + 「フリーズアウトなら」 · equity 직답 실현율 상시 작용 · pot-odds 직답 방향 분리(콜 누락은 과도한 폴드) · showdown 직답 「判別できなくなった時点」 · blind-meaning 신규 착석 2자리.
+- 🔴 **신규 착석 「二択/通常 BB」 판정 = 「룸마다 다르니 확인하라」 + WSOP Live Action Rules 104.a 인용**(「New players entering in No-Limit or Pot-Limit games will not be required to post」 · 발췌 §F L172) → ja 2 · zh L158 · zh-hant L140. 🔴 **2차 교열이 EN 동형을 잡았다**(EN `holdem-blind-meaning` L133 「you either post a big blind … or wait」) → **EN-먼저로 넓혀 en·de·es·id·pt까지 8로케일**.
+- 일본 가이드 3(검수장 공식 실열람분 그대로): 사이드 이벤트 예외(札幌#02 #47 NLH Bullet = 参加チケット1枚+¥5,000) · AJPC FAQ ↔ 본문 「予選通過者・前回大会入賞者など」 정합 · 「契約上 비공개」 → 비공개는 委託料 · **🔴 「東京#01 Total $590,668.86」은 2차 교열이 «레포 축어 기록 0»으로 잡아 수치를 뺐다** — 「ガイドが出ているレグのプライズ総額はガイドに記載」만 남김(검수장이 축어+URL을 주면 복원).
+- 🔴 **미채택 2(1차 출처 없음)**: 딜러 렌즈 「스택 복귀 무관 다중 동작도 스트링」(TDA 56조는 정의 없이 「Dealers will call string bets」뿐) · 「기만 동작은 플로어가 행위 위반 처리」(내가 넣었다가 2차 교열이 103조 축어에 없다고 잡아 8로케일에서 처분 문구를 뺌 — «자기 액션 완료 전 기만 동작도 금지»까지만).
+
+**게이트**: `audit:hard --slug --locale` 대상 8로케일 × 해당 슬러그 **전건 🔴 0**(덩어리 1 8/8 · 덩어리 2 27/27 · 덩어리 3 9/9) · `check:hangul`·`cjk`·`faq-schema` 0 · 백틱 짝 전건 2 · `npm run build` exit 0.
+**렌즈(Opus 서브 · §5-A-3)**: 딜러·수학 🔴0🟠3🪶5 · 네이티브 7언어 🔴0🟠7🪶10 · ja/zh 네이티브+딜러 🔴2🟠8🪶7 · 2차 교열 2종 🔴1🟠14🪶15 — 전건 원문 판정 후 반영(미채택 2 · 근거 없음). 값어치가 난 자리 = 딜러 「7♠(7하이 SF)도 A♠를 이긴다 — 예외를 «더 낮은 카드»로 좁히면 오도」 · 2차 교열 「$590,668.86 무출처」·「EN blind-meaning 동형」·「103 처분 문구 무근거」 — 셋 다 내가 쓴 문장이었다(«쓴 모델이 본 0건은 0건이 아니다»).
+**라이브**: **24/24 ✅**(`page.content()` → `<script>` 제거 후 DOM · 8로케일 21페이지 + EN·de·pt blind-meaning · 새 문안 바늘 전건 · 구형 6종(順番外·ます、·判成平跟·只有比牌面最小·cannot suddenly bet·the all-in player is excluded·conduct violation·590,668) 0 · `**` 0 · 배포 도착 2폴 ≈ 1분).
+
+🔴 **사본 계수(메모리 «완료 전에 사본을 세라»)**: `holdem-all-in-rules`·`betting-actions`·`reading-the-board`는 **25로케일**에 사본이 있다(ar bn de en es fa fil fr he hi id it ja ms pl pt ro ru sw th tr uk vi zh zh-hant). 이번 정정은 선례 `4522532a`(M-099)와 같은 **8로케일 범위** — 나머지 **17로케일은 미정정**이고 `check:drift`(24로케일)에 «masterUpdated < EN 09-09»로 잡힌다(기존 132건에 합류). 정책 판정은 핸드오프 대기열 40.
+
+**보류·이관**: 덩어리 4(EN-먼저 A~N 14 + O~W 9 + I 확장 · MA-126 ①④ · MA-127 ③) = **대기열 39**(33·36과 한 판) · 판단 ⓑ equity 「ceiling」은 39 G와 함께 · ⓒ de KPM = 결재 대기 11 · ⓓ 접수 · MA-125 ④(all-in 「gone the instant」 ↔ showdown TDA 14 클러스터 정합) = 39에 합류 · MA-127 ⑦ⓕ ja 직답 자기모순 5(opus 신설) = 39에 합류 · MA-121 ③(zh-hant blinds FAQ 유무 판정)·④(zh-hant 진행파일 회차 1 상태) · MA-122 ②(hand-rankings FAQ 12문 id·pt 미소급 = 의도 판정) = 대기열 41.
+회신 = **MB-017**(7행 일괄). 회차 마감 = `lane:sync --apply`.
+
 ## 2026-09-09 (3) — **🇯🇵 ja 회차 6(용어 6편) 머지·배포 + 헤드 요청 12건 판정 — ja 42/42 클러스터 완주** (Fable · 헤드)
 
 사장님 「ja 회차 6 끝났어, 머지해」. **ja 레인이 6/6 회차를 끝냈다**(zh·zh-hant는 회차 6 진행 중 — zh-hant는 A 구간 커밋 1개 대기).

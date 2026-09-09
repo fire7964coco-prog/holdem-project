@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In Texas Hold'em you always play the best 5-card hand from 7 (2 hole cards + 5 community cards) — using both hole cards, one, or none at all (playing the board). Scan all 7 cards in a fixed order: flush → straight → paired ranks → high card.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-09-07",
+  updated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🃏",
@@ -138,7 +138,7 @@ A flush needs 5 cards of one suit among your 7. The board tells you instantly wh
 | 0–2 | No flush possible for anyone |
 | 3 | Anyone holding 2 of that suit has a flush |
 | 4 | Anyone holding just 1 of that suit has a flush |
-| 5 | The board itself is a flush — a card of that suit higher than the board's lowest one improves it |
+| 5 | The board itself is a flush — a card of that suit higher than the board's lowest one improves it, and on a connected board any card of that suit that completes a straight flush — even a lower one — beats every flush |
 
 ![NOT A FLUSH — holding A♠ with only 3 spades on the board does not make a flush in Texas Hold'em](/images/holdem-reading-flush-draw-mistake.webp)
 
@@ -265,11 +265,11 @@ A. No. Sequences like K-A-2-3-4 or Q-K-A-2-3 are not straights in Texas Hold'em 
 
 **Q. How do you know if a flush is possible on the board?**
 
-A. Count suits on the board. With 0–2 of one suit, no flush exists for anyone. With 3, a player needs two of that suit in hand; with 4, just one; with all 5, the board itself is a flush and only a card of that suit higher than the board's lowest one improves it.
+A. Count suits on the board. With 0–2 of one suit, no flush exists for anyone. With 3, a player needs two of that suit in hand; with 4, just one; with all 5, the board itself is a flush: a card of that suit higher than the board's lowest one improves it — and on a connected board, any card of that suit that completes a straight flush, even a lower one, beats every flush.
 
 **Q. If there is a flush on the board, who wins?**
 
-A. When the five community cards make a flush, every remaining player shares it. Only a card of that suit higher than the board's lowest one improves it, so the winner is whoever holds the highest such card. If no one does, everyone plays the board and the pot is split. (With only three or four suited cards on the board, only players holding the missing suited cards actually have a flush.)
+A. When the five community cards make a flush, every remaining player shares it. A card of that suit higher than the board's lowest one improves it, so the winner is normally whoever holds the highest such card. If no one does, everyone plays the board and the pot is split. One exception breaks the rule: on a connected board, any card of that suit that completes a straight flush beats every flush — even a card lower than the board's lowest. On K♠ 6♠ 5♠ 4♠ 3♠ both the 2♠ (six-high straight flush) and the 7♠ (seven-high) beat the A♠. (With only three or four suited cards on the board, only players holding the missing suited cards actually have a flush.)
 
 **Q. If there is a straight on the board, who wins?**
 

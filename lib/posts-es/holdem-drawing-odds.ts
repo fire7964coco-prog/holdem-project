@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Probabilidad de proyecto en el póker — cuánto ligas en el flop y hasta el river",
   seoTitle: "¿Qué probabilidad tienes de ligar el proyecto? — Póker",
   desc: "La probabilidad real de ligar un set, un color, un póker y cada proyecto en Hold'em, con las combinaciones exactas y la matemática del set mining.",
-  tldr: "Ligas un set con una pareja servida el 11.8% de las veces (7.5 a 1 en contra), ligas un color con dos cartas del mismo palo apenas un 0.84%, y completas un proyecto de color del flop al river el 35% de las veces. Cada número de abajo sale de la baraja, no se adivina.",
+  tldr: "Ligas un set en el flop con una pareja servida el 11.8% de las veces (7.5 a 1 en contra), ligas un color en el flop con dos cartas del mismo palo apenas un 0.84%, y completas un proyecto de color del flop al river el 35% de las veces. Cada número de abajo sale de la baraja, no se adivina.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-08-11",
+  updated: "2026-09-09",
   masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "13 min",
@@ -26,10 +26,10 @@ Eso es en realidad la probabilidad de proyecto: no es suerte, sino la ==matemát
 ### Los números que hay que grabar a fuego
 
 :::stripe
-11.8% | Ligar un set con una pareja servida
-0.84% | Ligar un color hecho con dos cartas del mismo palo
+11.8% | Ligar un set en el flop con una pareja servida
+0.84% | Ligar un color hecho en el flop con dos cartas del mismo palo
 35% | Completar un proyecto de color del flop al river
-407 a 1 | Ligar un póker con una pareja servida
+407 a 1 | Ligar un póker en el flop con una pareja servida
 :::
 
 ---
@@ -58,7 +58,7 @@ Lee una fila de izquierda a derecha y ves el ciclo de vida completo de una mano.
 
 ![Infografía de un botón de dealer dorado y dos cartas boca abajo sobre un flop K♦ 7♣ 2♠ — el momento en que se decide un call de set mining](/images/holdem-button-dealer-board.webp "El flop decide un call de set mining: liga tu proyecto de dos outs el 11.8% de las veces, o pasa y espera la siguiente pareja")
 
-**Ligas un set (o mejor) con una pareja servida el 11.8% de las veces — más o menos 1 de cada 8.5, o 7.5 a 1 en contra.** Este es el número de proyecto más importante del juego, porque es toda la base del *set mining*: pagar una subida con una pareja pequeña solo para ligar trío en el flop.
+**Ligas un set (o mejor) en el flop con una pareja servida el 11.8% de las veces — más o menos 1 de cada 8.5, o 7.5 a 1 en contra.** Este es el número de proyecto más importante del juego, porque es toda la base del *set mining*: pagar una subida con una pareja pequeña solo para ligar trío en el flop.
 
 ¿De dónde sale el 11.8%? Con una pareja servida quedan dos cartas en la baraja que te emparejan. El flop son tres cartas sacadas de las 50 que no ves. La forma limpia de contarlo es al revés — la probabilidad de que **falles** las tres:
 
@@ -120,7 +120,7 @@ Un color por **puerta trasera** (backdoor, runner-runner) — ligas solo *una* c
 
 ![Una escalera al ocho tendida en secuencia sobre el tapete verde, la mano terminada a la que persigue un proyecto abierto](/images/holdem-reading-straight-example.webp "Un proyecto de escalera abierto se llena por cualquiera de los dos extremos — ocho outs, 31.5% de completarlo al river")
 
-Las conectoras como 8♠7♠ tienen su propio ciclo de vida. **Ligarás una escalera hecha solo el 1.3%** de las veces (76 a 1) — más raro de lo que asume la mayoría. Mucho más a menudo ligas un **proyecto**:
+Las conectoras como 8♠7♠ tienen su propio ciclo de vida. **Ligarás una escalera hecha en el flop solo el 1.3%** de las veces (76 a 1) — más raro de lo que asume la mayoría. Mucho más a menudo ligas un **proyecto**:
 
 - **Proyecto de escalera abierto (de dos puntas):** ~10% de los flops con conectoras. Ocho outs, se completa el **31.5%** al river — 1 − C(39,2)/C(47,2) — o un 17% con una sola carta.
 - **Proyecto interior (gutshot):** cuatro outs, se completa el **16.5%** al river, 8.5% con una carta. La mitad de la equity de un abierto, y por eso las mismas conectoras se juegan tan distinto según el flop.
@@ -180,7 +180,7 @@ La que sorprende a la gente: si **tú** tienes ases en una mesa de 10 jugadores,
 
 **Q. ¿Qué probabilidad hay de ligar un set?**
 
-A. Alrededor del 11.8%, o 1 de cada 8.5, cuando tienes una pareja servida — se suele citar como "7.5 a 1 en contra". Sale de 1 − C(48,3)/C(50,3): de los 19,600 flops posibles, 17,296 fallan tu pareja. Ese número es toda la base para saber si hacer set mining con una pareja pequeña es rentable.
+A. Alrededor del 11.8% en el flop, o 1 de cada 8.5, cuando tienes una pareja servida — se suele citar como "7.5 a 1 en contra". Sale de 1 − C(48,3)/C(50,3): de los 19,600 flops posibles, 17,296 fallan tu pareja. Ese número es toda la base para saber si hacer set mining con una pareja pequeña es rentable.
 
 **Q. ¿Por qué se dice 7.5 a 1 pero también 1 de cada 8?**
 
@@ -188,7 +188,7 @@ A. Son las mismas odds dichas de dos formas. "7.5 a 1 en contra" cuenta fallos f
 
 **Q. ¿Cuál es la diferencia entre un set y trips?**
 
-A. Un set es una pareja servida más una carta que la empareja en la mesa — lo ligas el 11.8% de las veces y está bien disimulado. Trips es una carta suelta sin emparejar que la mesa empareja (dos cartas iguales en la mesa) — solo el 1.35% en el flop, y mucho más evidente para los rivales. El mismo valor de trío, odds y valor muy distintos.
+A. Un set es una pareja servida más una carta que la empareja en la mesa — lo ligas el 11.8% en el flop y está bien disimulado. Trips es una carta suelta sin emparejar que la mesa empareja (dos cartas iguales en la mesa) — solo el 1.35% en el flop, y mucho más evidente para los rivales. El mismo valor de trío, odds y valor muy distintos.
 
 **Q. ¿Qué es un proyecto de color?**
 

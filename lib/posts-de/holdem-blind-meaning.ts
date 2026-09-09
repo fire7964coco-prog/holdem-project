@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Blinds sind Zwangseinsätze, die vor dem Austeilen der Karten gesetzt werden. Der Small Blind sitzt direkt links vom Dealer-Button, der Big Blind links daneben; der Big Blind – meist das Doppelte des Small Blinds – ist die Setzeinheit des Tischs.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-08-14",
-  masterUpdated: "2026-07-19",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "9 Min.",
   emoji: "💰",
@@ -133,7 +133,7 @@ Sind nur noch zwei Spieler übrig – beim **Poker zu zweit** also von der erste
 
 ## Was passiert, wenn du deine Blinds verpasst? (Dead Blinds)
 
-Setzt du dich an ein Live-Cash-Game, spielst du in der Regel nicht gratis mit: Entweder du **postest einen Big Blind**, um sofort Karten zu bekommen, oder du wartest, bis der Blind deinen Sitz erreicht. Stehst du zwischendurch auf und ==**verpasst deine Blinds**==, setzt du sie in den meisten Kartenräumen bei der Rückkehr nach: Der verpasste Big Blind zählt als lebender Einsatz (live), der verpasste Small Blind wandert als ==**toter**== Chip direkt in den Pot. Online-Tische regeln das alles automatisch.
+Setzt du dich an ein Live-Cash-Game, spielst du in der Regel nicht gratis mit: In den meisten Räumen **postest du einen Big Blind**, um sofort Karten zu bekommen, oder du wartest, bis der Blind deinen Sitz erreicht – manche Räume verlangen von neuen Spielern in No-Limit- und Pot-Limit-Games aber gar kein Posten (WSOP Live Action Rules 104.a), also frag den Dealer, bevor du dich setzt. Stehst du zwischendurch auf und ==**verpasst deine Blinds**==, setzt du sie in den meisten Kartenräumen bei der Rückkehr nach: Der verpasste Big Blind zählt als lebender Einsatz (live), der verpasste Small Blind wandert als ==**toter**== Chip direkt in den Pot. Online-Tische regeln das alles automatisch.
 
 ---
 

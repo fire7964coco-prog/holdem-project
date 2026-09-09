@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "No Texas Hold'em você sempre joga a melhor mão de 5 cartas entre 7 (2 cartas na mão + 5 comunitárias) — usando as duas cartas, uma só, ou nenhuma (jogar a mesa). Varra as 7 cartas numa ordem fixa: flush → sequência → valores pareados → carta alta.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-09-07",
-  masterUpdated: "2026-09-07",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🃏",
@@ -139,7 +139,7 @@ Um flush precisa de 5 cartas de um mesmo naipe entre suas 7. A mesa te diz na ho
 | 0–2 | Nenhum flush possível para ninguém |
 | 3 | Quem tiver 2 desse naipe tem flush |
 | 4 | Quem tiver só 1 desse naipe tem flush |
-| 5 | A própria mesa é um flush — só melhora com uma carta desse naipe mais alta que a mais baixa da mesa |
+| 5 | A própria mesa é um flush — melhora com uma carta desse naipe mais alta que a mais baixa da mesa, e numa mesa conectada qualquer carta desse naipe que complete um straight flush — até uma mais baixa — vence todo flush |
 
 ![NÃO É FLUSH — ter A♠ com só 3 espadas na mesa não forma flush no Texas Hold'em](/images/holdem-reading-flush-draw-mistake.webp)
 
@@ -262,7 +262,7 @@ A. Não. Sequências como K-A-2-3-4 ou Q-K-A-2-3 não são sequências no Texas 
 
 **Q. Como saber se um flush é possível na mesa?**
 
-A. Conte os naipes na mesa. Com 0–2 de um naipe, nenhum flush existe para ninguém. Com 3, o jogador precisa de dois desse naipe na mão; com 4, só um; com todos os 5, a própria mesa é um flush e só melhora com uma carta desse naipe mais alta que a mais baixa da mesa.
+A. Conte os naipes na mesa. Com 0–2 de um naipe, nenhum flush existe para ninguém. Com 3, o jogador precisa de dois desse naipe na mão; com 4, só um; com todos os 5, a própria mesa é um flush: melhora com uma carta desse naipe mais alta que a mais baixa da mesa — e numa mesa conectada, qualquer carta desse naipe que complete um straight flush vence todo flush, mesmo uma mais baixa que a mais baixa da mesa (em K♠ 6♠ 5♠ 4♠ 3♠, tanto o 2♠ (straight flush até o 6) quanto o 7♠ (até o 7) vencem o A♠).
 
 **Q. Um par na mesa conta como parte da sua mão?**
 

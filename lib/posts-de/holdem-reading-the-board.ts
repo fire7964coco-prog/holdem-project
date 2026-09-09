@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Im Texas Hold'em spielst du immer die beste 5-Karten-Hand aus 7 (2 Hole Cards + 5 Gemeinschaftskarten) – mit beiden Hole Cards, einer oder gar keiner („playing the board“). Scanne alle 7 Karten in fester Reihenfolge: Flush → Straße → gepaarte Ränge → High Card.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-09-07",
-  masterUpdated: "2026-09-07",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "🃏",
@@ -139,7 +139,7 @@ Ein Flush braucht 5 Karten einer Farbe unter deinen 7. Das Board sagt dir sofort
 | 0–2 | Kein Flush für irgendjemanden möglich |
 | 3 | Wer 2 dieser Farbe hält, hat einen Flush |
 | 4 | Wer nur 1 dieser Farbe hält, hat einen Flush |
-| 5 | Das Board selbst ist ein Flush – eine höhere Karte dieser Farbe verbessert ihn, und auf einem zusammenhängenden Board kann sogar eine niedrigere einen Straight Flush ergeben |
+| 5 | Das Board selbst ist ein Flush – eine höhere Karte dieser Farbe verbessert ihn, und auf einem zusammenhängenden Board schlägt jede Karte dieser Farbe, die einen Straight Flush vervollständigt – sogar eine niedrigere –, jeden Flush |
 
 ![KEIN FLUSH – A♠ zu halten mit nur 3 Pik auf dem Board macht im Texas Hold'em keinen Flush](/images/holdem-reading-flush-draw-mistake.webp "Drei Pik auf dem Board plus ein Pik in der Hand sind vier – ein Flush braucht fünf")
 
@@ -262,11 +262,11 @@ A. Nein. Folgen wie K-A-2-3-4 oder Q-K-A-2-3 sind im Texas Hold'em keine Straße
 
 **Q. Wie weißt du, ob ein Flush auf dem Board möglich ist?**
 
-A. Zähl die Farben auf dem Board. Mit 0–2 einer Farbe existiert für niemanden ein Flush. Mit 3 braucht ein Spieler zwei dieser Farbe in der Hand; mit 4 nur eine; mit allen 5 ist das Board selbst ein Flush, den eine höhere Karte derselben Farbe verbessert – und auf einem zusammenhängenden Board kann auch eine niedrigere einen Straight Flush vervollständigen.
+A. Zähl die Farben auf dem Board. Mit 0–2 einer Farbe existiert für niemanden ein Flush. Mit 3 braucht ein Spieler zwei dieser Farbe in der Hand; mit 4 nur eine; mit allen 5 ist das Board selbst ein Flush, den eine höhere Karte derselben Farbe verbessert – und auf einem zusammenhängenden Board schlägt jede Karte dieser Farbe, die einen Straight Flush vervollständigt – sogar eine niedrigere –, jeden Flush.
 
 **Q. Liegt ein Flush auf dem Board – wer gewinnt dann?**
 
-A. Bilden die fünf Gemeinschaftskarten selbst einen Flush, teilen ihn zunächst alle. Verbessern kann ihn eine höhere Karte derselben Farbe – wer die höchste hält, nimmt den Pot. Hat sie niemand, spielen alle das Board und es wird geteilt. Ein Sonderfall bricht die Regel: Liegt das Board zusammenhängend, vervollständigt auch eine niedrigere Karte derselben Farbe einen Straight Flush und schlägt damit jeden Flush – auf K♠ 6♠ 5♠ 4♠ 3♠ gewinnt die 2♠ vor dem A♠.
+A. Bilden die fünf Gemeinschaftskarten selbst einen Flush, teilen ihn zunächst alle. Verbessern kann ihn eine höhere Karte derselben Farbe – wer die höchste hält, nimmt in der Regel den Pot. Hat sie niemand, spielen alle das Board und es wird geteilt. Ein Sonderfall bricht die Regel: Liegt das Board zusammenhängend, schlägt jede Karte derselben Farbe, die einen Straight Flush vervollständigt, jeden Flush – auch eine niedrigere als die niedrigste auf dem Board. Auf K♠ 6♠ 5♠ 4♠ 3♠ gewinnen sowohl die 2♠ (Straight Flush bis zur 6) als auch die 7♠ (bis zur 7) vor dem A♠.
 
 **Q. Liegt eine Straße auf dem Board – wer gewinnt dann?**
 

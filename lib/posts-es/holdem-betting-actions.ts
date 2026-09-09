@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "En Texas Hold'em hay 5 acciones de apuesta: pasar (check, gratis), apostar (abrir la ronda), igualar (call, pagar la apuesta), subir (raise — la subida mínima iguala la apuesta o subida anterior) y retirarse (fold). Solo puedes pasar cuando no tienes una apuesta viva por delante — preflop, eso solo pasa siendo la ciega grande.",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-07-24",
-  masterUpdated: "2026-08-12",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "🃏",
@@ -130,7 +130,7 @@ La clave: el min-raise iguala el ==incremento== de la última apuesta o subida, 
 
 Dos reglas del póker en vivo que vienen con la subida:
 
-1. **Anuncia "subo" antes de mover las fichas.** ¿Dices "pago" y luego empujas más fichas? Tu declaración ya era vinculante (==regla 90.d==) — el extra no cuenta. El ==string bet== de verdad es otra cosa: meter fichas en varios movimientos **sin** anunciar antes "subo" (==regla 103==).
+1. **Anuncia "subo" antes de mover las fichas.** ¿Dices "pago" y luego empujas más fichas? Tu declaración ya era vinculante (==regla 90.d==) — el extra no cuenta. El ==string bet== de verdad es otra cosa: apostar o subir en varios movimientos (volviendo a tu stack por el camino) **sin** anunciar antes "subo" — o usar un gesto engañoso para provocar acción fuera de turno (==regla 103==).
 2. **Un solo movimiento.** Si no anuncias, tus fichas deben entrar en un único movimiento hacia delante.
 
 *Cuánto* deberías subir (aperturas de 2.5x, 3-bets de 3x, tamaños según la textura de la mesa) es estrategia, no reglas — eso vive en el [pilar de estrategia de Texas Hold'em](/es/blog/holdem-strategy).
@@ -227,7 +227,7 @@ A. Depende del tamaño del all-in. Si el all-in es una subida legal completa, la
 
 **Q. ¿Qué es un string bet en el póker?**
 
-A. Meter fichas en varios movimientos sin haber anunciado "subo" primero (==regla 103==). Los crupieres dictaminan el string bet como un call de la cantidad original. Decir "pago" y luego añadir no es un string bet sino una declaración vinculante (==regla 90.d==) — mismo efecto. Anuncia tu acción en voz alta o mueve todas las fichas en un solo movimiento.
+A. Intentar apostar o subir en varios movimientos — volviendo a tu stack por el camino — sin haber anunciado "subo" primero (==regla 103==). Los crupieres dictaminan el string bet como un call de la cantidad original. La misma regla también prohíbe un gesto engañoso para provocar acción fuera de turno antes de que tu propia acción termine. Decir "pago" y luego añadir no es un string bet sino una declaración vinculante (==regla 90.d==) — mismo efecto. Anuncia tu acción en voz alta o mueve todas las fichas en un solo movimiento.
 
 **Q. ¿Qué significa limpear en el póker?**
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ir de all-in é apostar todas as fichas que você tem. Você só pode ganhar de cada adversário o valor que igualou (o pote principal). O que os stacks maiores apostam além disso vira um pote paralelo (side pot) que você não pode ganhar. Um all-in menor que um aumento completo NÃO reabre a aposta para quem já agiu.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-04",
-  masterUpdated: "2026-08-12",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "♠",
@@ -248,7 +248,7 @@ A. O run it twice (distribuir as cartas comunitárias restantes duas vezes e div
 
 **Q. O que é exatamente a regra de "table stakes"?**
 
-A. Table stakes significa que você só pode apostar as fichas que estavam na sua frente quando a mão começou. Não dá para adicionar dinheiro com a mão em andamento. Isso protege os dois lados — você nunca é forçado a arriscar mais que o seu stack, e o adversário não pode de repente apostar mais do que você consegue cobrir.
+A. Table stakes significa que você só pode apostar as fichas que estavam na sua frente quando a mão começou. Não dá para adicionar dinheiro com a mão em andamento. Isso protege os dois lados — você nunca é forçado a arriscar mais que o seu stack, e o que o adversário apostar além do seu stack não te custa nada: vai para um pote paralelo ou volta como aposta não paga.
 
 **Q. Se dois jogadores vão de all-in por valores diferentes, quem mostra primeiro?**
 

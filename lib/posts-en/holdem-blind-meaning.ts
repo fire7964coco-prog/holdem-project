@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Blinds are forced bets posted before cards are dealt. The small blind sits left of the dealer button and the big blind to their left; the big blind — usually double the small blind — is the table's betting unit.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-07-19",
+  updated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "💰",
@@ -130,7 +130,7 @@ When only two players are left (or in a heads-up match), the usual rule ==r:flip
 
 ## What Happens If You Miss Your Blind? (Dead Blinds)
 
-Sit down at a live cash game and you usually can't play for free: you either **post a big blind** to be dealt in right away, or wait for the blind to reach your seat. If you step away and ==**miss your blinds**==, in most card rooms you post them on return to rejoin — the missed big blind plays as a live bet, and the missed small blind is a ==**dead**== chip pulled straight into the pot. Online tables handle all of this automatically.
+Sit down at a live cash game and you usually can't play for free: most rooms have you either **post a big blind** to be dealt in right away or wait for the blind to reach your seat — though some rooms don't require new players in no-limit or pot-limit games to post at all (WSOP Live Action Rules 104.a), so ask the dealer before you sit. If you step away and ==**miss your blinds**==, in most card rooms you post them on return to rejoin — the missed big blind plays as a live bet, and the missed small blind is a ==**dead**== chip pulled straight into the pot. Online tables handle all of this automatically.
 
 ---
 

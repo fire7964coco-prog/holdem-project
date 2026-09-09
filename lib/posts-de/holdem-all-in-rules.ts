@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "All-in gehen heißt, jeden Chip zu setzen, den du hast. Du kannst von jedem Gegner nur so viel gewinnen, wie du selbst gematcht hast (den Main Pot). Zusätzliche Einsätze größerer Stacks bilden einen Side Pot, den du nicht gewinnen kannst. Ein All-in unterhalb einer vollen Erhöhung öffnet die Setzrunde für Spieler, die bereits gehandelt haben, NICHT neu.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-08-11",
-  masterUpdated: "2026-08-12",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "♠",
@@ -45,7 +45,7 @@ Die Grundlage ist die **Table-Stakes-Regel**: Du darfst nur die Chips setzen, di
 | Table Stakes | Du kannst nur setzen, was zu Handbeginn vor dir lag |
 | Double up | Ein All-in gewinnen und den Stack verdoppeln |
 | Main Pot (Hauptpot) | Der Pot, den jeder gewinnen kann – auch der All-in-Spieler |
-| Side Pot (Nebenpot) | Chips, die nur die größeren Stacks gewinnen können; der All-in-Spieler ist ausgeschlossen |
+| Side Pot (Nebenpot) | Chips, die nur die größeren Stacks gewinnen können; der Spieler, der für weniger All-in gegangen ist, ist ausgeschlossen |
 
 </div>
 

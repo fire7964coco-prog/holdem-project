@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Nicht so wie im Blackjack – das Deck wird jede Hand neu gemischt und zu wenige Karten liegen offen, also bringt dir das Tracken hoher und niedriger Karten keinen Edge. Aber Poker hat sein eigenes legales Zählen: Outs zählen, Blocker nutzen und tote Karten tracken, um zu lesen, was dein Gegner nicht haben kann.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-08-14",
+  updated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "🧮",
@@ -101,7 +101,7 @@ Jede Karte, die du sehen kannst, entfernt Möglichkeiten. Wenn eines deiner Stra
 
 **Nein – Outs zählen, Odds berechnen und Blocker nutzen ist im Poker 100% legal, weil es nichts als Kopfrechnen ist.** Keine Regel irgendwo verbietet das Denken. Es ist die Definition von Können.
 
-Hier ist der Teil, den die Leute verwechseln: Kartenzählen ist auch im *Blackjack* nicht illegal – es ist kein Verbrechen, nur Kopfrechnen. Aber ein Casino ist ein privates Geschäft und kann einen vermuteten Zähler aussperren oder abweisen, weil ein Zähler *das Haus* Geld kostet. Poker dreht das komplett um: du spielst gegen ==andere Spieler==, und das Haus nimmt nur den Rake, egal wer gewinnt. Niemand hat einen Grund, dich vom Zählen deiner Outs abzuhalten – also existiert das ganze „Rausgeschmissen-werden“-Problem hier einfach nicht.
+Hier ist der Teil, den die Leute verwechseln: Kartenzählen ist auch im *Blackjack* nicht illegal – es ist kein Verbrechen, nur Kopfrechnen. Aber in den meisten Rechtsordnungen ist ein Casino ein privates Unternehmen, das einen vermuteten Zähler aussperren oder abweisen kann, weil ein Zähler *das Haus* Geld kostet. Poker dreht das komplett um: du spielst gegen ==andere Spieler==, und das Haus nimmt nur den Rake, egal wer gewinnt. Niemand hat einen Grund, dich vom Zählen deiner Outs abzuhalten – also existiert das ganze „Rausgeschmissen-werden“-Problem hier einfach nicht.
 
 :::note
 Die Linie, die du nie überschreiten darfst, ist physisches oder informationelles Betrügen – markierte Karten, Kollusion, das Teilen von Hole-Card-Infos oder Echtzeit-Solver-Software online. Das ist kein „Zählen“, das ist Betrug. Im Kopf zu rechnen ist immer fair.

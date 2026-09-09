@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Di Texas Hold'em Anda selalu memainkan tangan 5-kartu terbaik dari 7 (2 kartu tertutup + 5 kartu komunitas) — memakai kedua kartu tertutup, satu, atau tak satu pun (main dengan board). Pindai ketujuh kartu dengan urutan tetap: flush → straight → nilai berpasangan → kartu tinggi.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-09-07",
-  masterUpdated: "2026-09-07",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "11 mnt",
   emoji: "🃏",
@@ -139,7 +139,7 @@ Flush butuh 5 kartu satu jenis di antara 7 kartu Anda. Board langsung memberi ta
 | 0–2 | Tak ada flush yang mungkin bagi siapa pun |
 | 3 | Siapa pun yang memegang 2 kartu jenis itu punya flush |
 | 4 | Siapa pun yang memegang cuma 1 kartu jenis itu punya flush |
-| 5 | Board itu sendiri sebuah flush — hanya kartu jenis itu yang lebih tinggi dari kartu terendah di board yang memperbaikinya |
+| 5 | Board itu sendiri sebuah flush — kartu jenis itu yang lebih tinggi dari kartu terendah di board memperbaikinya, dan di board yang berurutan, kartu jenis itu mana pun yang melengkapi straight flush — bahkan yang lebih rendah — mengalahkan semua flush |
 
 ![BUKAN FLUSH — memegang A♠ dengan hanya 3 sekop di board tidak membentuk flush di Texas Hold'em](/images/holdem-reading-flush-draw-mistake.webp "Empat kartu sejenis bukan flush — hitung sampai lima")
 
@@ -266,11 +266,11 @@ A. Tidak. Rangkaian seperti K-A-2-3-4 atau Q-K-A-2-3 bukan straight di Texas Hol
 
 **Q. Bagaimana tahu flush mungkin di board?**
 
-A. Hitung jenis di board. Dengan 0–2 kartu satu jenis, tak ada flush bagi siapa pun. Dengan 3, pemain butuh dua kartu jenis itu di tangan; dengan 4, cukup satu; dengan kelimanya, board itu sendiri adalah flush dan hanya kartu jenis itu yang lebih tinggi dari kartu terendah di board yang memperbaikinya.
+A. Hitung jenis di board. Dengan 0–2 kartu satu jenis, tak ada flush bagi siapa pun. Dengan 3, pemain butuh dua kartu jenis itu di tangan; dengan 4, cukup satu; dengan kelimanya, board itu sendiri adalah flush: kartu jenis itu yang lebih tinggi dari kartu terendah di board memperbaikinya — dan di board yang berurutan, kartu jenis itu mana pun yang melengkapi straight flush, bahkan yang lebih rendah, mengalahkan semua flush.
 
 **Q. Jika ada flush di board, siapa yang menang?**
 
-A. Ketika lima kartu komunitas membentuk flush, semua pemain tersisa memilikinya bersama. Hanya kartu jenis itu yang lebih tinggi dari kartu terendah board yang memperbaikinya, jadi pemenangnya adalah siapa pun yang memegang kartu tertinggi seperti itu. Jika tak ada, semua orang main dengan board dan pot dibagi. (Dengan hanya tiga atau empat kartu sejenis di board, hanya pemain yang memegang kartu jenis itu yang benar-benar punya flush.)
+A. Ketika lima kartu komunitas membentuk flush, semua pemain tersisa memilikinya bersama. Kartu jenis itu yang lebih tinggi dari kartu terendah board memperbaikinya, jadi pemenangnya biasanya siapa pun yang memegang kartu tertinggi seperti itu. Jika tak ada, semua orang main dengan board dan pot dibagi. Ada satu pengecualian yang mematahkan aturan ini: di board yang berurutan, kartu jenis itu mana pun yang melengkapi straight flush mengalahkan semua flush — bahkan kartu yang lebih rendah dari kartu terendah board. Di K♠ 6♠ 5♠ 4♠ 3♠, baik 2♠ (straight flush tertinggi 6) maupun 7♠ (tertinggi 7) menang atas A♠. (Dengan hanya tiga atau empat kartu sejenis di board, hanya pemain yang memegang kartu jenis itu yang benar-benar punya flush.)
 
 **Q. Jika ada straight di board, siapa yang menang?**
 
