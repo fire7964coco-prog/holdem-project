@@ -398,7 +398,7 @@ ICMは **Independent Chip Model（独立チップモデル）** の略。スタ�
 /ja/blog/holdem-probability | ポーカー確率・オッズ早見表 | /images/holdem-probability-hero.webp
 :::
 
-## FAQ
+## よくある質問
 
 **Q. トーナメントはキャッシュゲームより難しいですか？**
 
