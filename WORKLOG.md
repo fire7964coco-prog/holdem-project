@@ -1,3 +1,23 @@
+## 2026-09-09 (12) — **부재중 자율 회차(Fable 헤드 + Opus 서브 14): 대기열 43 ⓐ~ⓖ EN-먼저 판정·정정 → 7로케일 전파 · M-089 §4 EN 동형 30건 대조(잔존 14 정정) → 7로케일 · 렌즈 4종 + 2차 교열 · 대기열 45 이미지 2장 재렌더 · 대기열 41 ③④ 종결 · 결재 항목 판정안** (커밋 `42dda1d1` · `e1b2ff25` · `ccf9563c` · `a0e8a215` · `52181008` · `8cfd0b07` · `48d0b607` · `71664a39` · 배포 push 완료)
+
+사장님 「지금부터 부재중이야 … fable로 할수있는게 어디까지야?」 → 「진행해」. 분담 = §5-A-3: 판정·EN 문안 = Fable 본체 / 전파·대조·렌즈·교열 = Opus 서브(`model: opus`) / 게이트·빌드·배포 = 본체 명령. 결재 항목(2·3·40 이행)은 손대지 않았다.
+
+**① 대기열 43 EN 원문 판정 → `42dda1d1`(EN 9편)**: ⓐ c-bet 표 OOP 행 «single-raised pot, you were the raiser» 한정 + FAQ ⓑ implied-odds stripe·요약 3 «heads-up» 한정(FAQ L206은 이미 한정) ⓒ card-counting 「보드 수딧 카드는 9에 이미 차감 — 이중 차감 금지」 + 「엿보기는 반칙」 ⓓ zh-hant §5-34: 34-1(icm 본문 «Ignore it»)·34-3(P 정의)·34-4(BF 2.0 칩리더 단서)는 **`af6ca275`에서 이미 정정 → 변경 0** · 34-5 WSOP 126.b는 §3 「되돌리지 마라」로 **기각** · 34-2 bubble·icm 위성 «복수 시트» 한정 + 승자독식 예외 · 34-6 KPM 환율 각주(₩1,500 vs ₩1,350 — 본문 내부 산술로 판정, 외부 환율 주장 없음) · 34-7 apt 7일 합계 **$2,500–5,000 → ~$800–$4,200**(구성 합 재계산: 200+420+140+35 / 1,400+2,450+280+70) · 34-8 icm 「잠긴 명차」 버블 오적용 3자리(이미지 title·FAQ ×2) ⓔ §5-40 사본: ① strategy 「1 in 8.5」 EN 정상 · de 「1 zu 8,5」→「1 von 8,5」 ② tournament 승자독식 예외 7로케일 전부 보유 확인 ③ chart 「169 by position」 EN 거짓 서술(4행 막대차트) 정정 ⓕ de/es/pt/id `holdem-3bet` 체크리스트 6번 **신설**(3bet-pot-cbet 없는 de·pt·id는 링크 없이) ⓖ kicker 4족보 통일 = **ja §2-H 「규칙 4/요약 3」 확정을 헤드가 뒤집었다**(GEO 이의 채택 · tldr·stripe·요약 8로케일 · FAQ는 이미 4족보).
+
+**② 대기열 45 → `e1b2ff25`**: `holdem-hand-rankings-board-puzzle.webp` AI 실사판 보드 6장(A♦ 잉여) → HTML+Playwright 재렌더(`scripts/gen-…html` 신설 · K♠K♦K♥A♠2♠ + 뒷면 2장 · 58→18KB) · `holdem-cooler-vs-badbeat.webp` 「Cooler or Bad Beat?」 + 배너 「Money in on the flop: a cooler · Money in preflop: a bad beat for the aces」 · 두 장 Read 육안(철자·중복 0) · check:images ✅ · image-reuse 🔴 0. 🪶 첫 렌더에서 내가 「what beats the full house on the board?」라고 썼다 — 보드 KKK-A-2는 **트립스**지 풀하우스가 아니다(§13 자기검산으로 잡아 「do they make a full house?」로 정정). 대기열 41 ③ zh-hant blind-meaning 행동순서 FAQ 부재 = 의도적(H2 표가 답) → `locale-intentional-diffs` 등재 · ④ 「헤드 머지 대기」 낡은 문구는 이미 0 · ② id·pt hand-rankings FAQ 12 vs EN 20 = **결손 판정 → 대기열 46**(번역 소급 · 현지 키워드 확인 후).
+
+**③ 7로케일 전파 1차 → `ccf9563c`**(Opus 서브 4 · 67파일). «없음»(만들지 않음): de·pt icm 「흔한 ICM 실수」 FAQ 부재 · zh-hant kicker 표 행 부재.
+
+**④ M-089 §4 EN 동형 30건 → Opus 대조 서브**: 29건 중 **이미 정정 14**(4522532a·77953269·125c83f5·f0515d4e) · **잔존 15** → 14 채택 · 1 기각(#25 positions 「Two orbits later」 = 경험담 시간 서술). → `a0e8a215`(EN 10편) → 7로케일 `52181008`(pt는 e3f5a3a2로 13/14 이미 · masterUpdated 승격 근거 = 08-11 이후 EN 커밋이 8d2aba44(스타일)·da8e73c2(08-18 8로케일 동시)뿐).
+
+**⑤ 렌즈 4종(Opus · EN diff 16편)**: 교열 9+8 · 딜러 5 · 수학 1❌/16✅ · SEO 15 → **채택 26 · 조정 2 · 기각 2** → `8cfd0b07`. 🔴 **세 렌즈가 독립으로 같은 자리를 잡았다**: c-bet OOP SRP «40–50%» ↔ position-play «30–45%»(솔버 근거) → **30–45%로 통일**(표·FAQ·OOP 절·「only a quarter」·FAQ 「c-bet OOP?」 전부 «single-raised pot» 한정 · 3벳터 «over 97% on the two boards we solved»). 교열만 잡은 것: icm L101 「잠긴 명차」 **4번째 사본**(내가 3곳만 고쳤다) · kicker L109가 FAQ L196과 축어중복(내 편집 유래) · «three-suited board»=레인보 오독 → «monotone». SEO만 잡은 것: bubble 괄호가 「This is the most counterintuitive…」의 대명사를 가로챔 · KPM 각주 «APT buy-in above»가 240줄 위 APT **Jeju**를 가리킴 → `:::note` + 명시 · apt 셀 130자 → «~$800–$4,200» + 표 밑 1줄. 기각: split-pot L85 「best possible five」(촙 조건이라 정확) · kicker 「K vs 9」 복원 제안(보드 Q 기전 — 원장 #27과 딜러 렌즈가 반대). → 7로케일 3차 전파 `48d0b607`(서브 2 · 91파일 · es c-bet L261 로케일 단독 «40–50%»도 정정).
+
+**⑥ 게이트·배포**: audit:hard en 56/56 🔴 0 · 7로케일 전부 🔴 0(🟠는 전건 선존 C2 행 키 불일치) · drift es/ja/zh/zh-hant 0(de 5·pt/id 3은 대기열 밖 선존 fish·game-order·glossary…) · 빌드 70+525 · 708페이지 exit 0 · push `71664a39`. 2차 교열(로케일 diff · Opus 2) 결과는 아래 ⑦.
+
+**⑧ 결재 대기 판정안**(핸드오프 「사장님 판단 대기」에 박음): 40 = 사안별 2등급(§13급만 25로케일 · drift 게이트 8/17 분리) · 12 = 열지 않음(1차 출처 없음 · 합법성 경계) · 13-ⓐ 유형 등재 · 13-ⓑ 의도적 편차 등재(상한 300자) · 15 = 63% 유지 + 라벨 «nine outs plus live side cards».
+
+🪶 교훈: ① **렌즈는 «내가 고친 자리의 나머지 사본»을 잡는다** — 3곳 고치고 4번째를 남기는 유형이 icm·kicker·bubble에서 세 번 나왔다. 고치기 전 `grep -c`로 같은 명제의 사본을 세라(메모리 «완료 전에 사본을 세라»의 파일 안 버전). ② 인포그래픽 문구도 §13이다 — 「full house on the board」를 내가 썼다. ③ Fable 본체가 서브 14개를 부리며 회차 하나를 끝냈다(§5-A-3 실증) — 본체 턴은 판정·문안·커밋에만 썼다.
+
 ## 2026-09-09 (11) — **zh 회차 7(트랙 종결) 머지 + 대기열 39 zh 19편 헤드 전파 + EN-먼저 판정 9건 7로케일 → zh-hant 회차 7 · ja 회차 8 머지 + 헤드 소급(zh-hant 5편 · ja 3편) — 세 레인 트랙 마감** (Fable 헤드 · 전파·렌즈·2차 교열 = Opus 서브 10 · 커밋 `c22533ad` · `8b82e75a` · `7e901476` · `b292a603`)
 
 사장님 「zh 회차 7 끝났어, 머지해」 → 「ja 회차 8 끝났어, zh-hant 회차 7 끝났어 … 순서가 바뀐거야?」(아니다 — 프로토콜 §6-1 zh→zh-hant→ja 순서 그대로).
