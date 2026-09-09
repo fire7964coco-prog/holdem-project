@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Texas Hold'em kennt 5 Setz-Aktionen: Check (kostenlos schieben), Bet (die Runde eröffnen), Call (einen Einsatz mitgehen), Raise (erhöhen – der Mindest-Raise entspricht dem vorherigen Bet oder Raise) und Fold. Checken darfst du nur, solange vor dir kein offener Einsatz steht – preflop also nur als Big Blind.",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-08-11",
-  masterUpdated: "2026-07-11",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "9 Min.",
   emoji: "🃏",
@@ -133,7 +133,7 @@ Der entscheidende Punkt: Der Min-Raise richtet sich nach dem ==Inkrement== der l
 
 Zwei Live-Poker-Regeln, die zum Raisen dazugehören:
 
-1. **Sag „Raise“, bevor du Chips bewegst.** Erst „Call“ sagen und dann mehr nachschieben? Deine Ansage war in dem Moment schon bindend (==Rule 90.d==) – das Extra zählt nicht. Der echte ==String Bet== ist etwas anderes: Chips in mehreren Bewegungen nachschieben, **ohne** vorher „Raise“ anzusagen (==Rule 103==).
+1. **Sag „Raise“, bevor du Chips bewegst.** Erst „Call“ sagen und dann mehr nachschieben? Deine Ansage war in dem Moment schon bindend (==Rule 90.d==) – das Extra zählt nicht. Der echte ==String Bet== ist etwas anderes: ein Bet oder Raise in mehreren Bewegungen, bei denen du zwischendurch auf deinen eigenen Stack zurückgreifst, **ohne** vorher „Raise“ anzusagen – oder eine täuschende Geste, die Action außer der Reihe provozieren soll (==Rule 103==).
 2. **Eine Bewegung.** Wenn du nichts ansagst, müssen deine Chips in einer einzigen Vorwärtsbewegung in den Pot.
 
 Wie *viel* du raisen solltest (2,5x-Opens, 3x bei 3-Bets, Sizing nach Board-Textur), ist Strategie, keine Regelkunde – das gehört in die [Strategie-Säule zum Texas Hold'em](/de/blog/holdem-strategy).
@@ -234,7 +234,7 @@ A. Das hängt von der Größe des All-ins ab. Ist das All-in ein voller, legaler
 
 **Q. Was ist ein String Bet beim Poker?**
 
-A. Chips in mehreren Bewegungen nachzuschieben, ohne vorher „Raise“ anzusagen (==Rule 103==). Dealer werten String Bets als Call des ursprünglichen Betrags. Sagst du dagegen erst „Call“ und legst dann nach, ist das kein String Bet, sondern eine bindende Ansage (==Rule 90.d==) – der Effekt ist derselbe. Sag deine Aktion laut an oder beweg alle Chips in einer Bewegung.
+A. Der Versuch, in mehreren Bewegungen zu setzen oder zu erhöhen – zwischendurch zurück zum eigenen Stack –, ohne vorher „Raise“ anzusagen (==Rule 103==). Dealer werten String Bets als Call des ursprünglichen Betrags. Dieselbe Regel verbietet auch eine täuschende Geste, die Action außer der Reihe provozieren soll, bevor die eigene Aktion abgeschlossen ist. Sagst du dagegen erst „Call“ und legst dann nach, ist das kein String Bet, sondern eine bindende Ansage (==Rule 90.d==) – der Effekt ist derselbe. Sag deine Aktion laut an oder beweg alle Chips in einer Bewegung.
 
 **Q. Was bedeutet Limpen beim Poker?**
 

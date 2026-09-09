@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "O Texas Hold'em tem 5 ações de aposta: check (passar de graça), apostar (abrir a rodada), pagar/call (igualar uma aposta), aumentar/raise (o aumento mínimo é igual à aposta ou ao raise anterior) e foldar. Você só pode dar check quando não há aposta viva à sua frente — no pré-flop, isso só acontece sendo o big blind.",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-09-04",
-  masterUpdated: "2026-08-12",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "🃏",
@@ -228,7 +228,7 @@ A. Depende do tamanho do all-in. Se o all-in for um raise completo e legal, a a�
 
 **Q. O que é string bet no poker?**
 
-A. É tentar apostar ou aumentar em vários movimentos — voltando ao seu stack no meio, sem ter anunciado "raise" — ou usar um gesto enganoso para provocar ação fora de vez (==regra 103==). O dealer decreta o string bet como um call do valor original. Dizer "call" e depois acrescentar não é string bet, mas uma declaração vinculante (==regra 90.d==) — mesmo efeito. Anuncie sua ação em voz alta ou mova todas as fichas em um único movimento.
+A. É tentar apostar ou aumentar em vários movimentos — voltando ao seu stack no meio, sem ter anunciado "raise" (==regra 103==). O dealer decreta o string bet como um call do valor original. A mesma regra também proíbe um gesto enganoso para provocar ação fora de vez antes de a sua própria ação terminar. Dizer "call" e depois acrescentar não é string bet, mas uma declaração vinculante (==regra 90.d==) — mesmo efeito. Anuncie sua ação em voz alta ou mova todas as fichas em um único movimento.
 
 **Q. O que significa dar limp no poker?**
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Blinds são apostas obrigatórias pagas antes de as cartas serem distribuídas. O small blind fica à esquerda do botão do dealer e o big blind à esquerda dele; o big blind — normalmente o dobro do small blind — é a unidade de aposta da mesa.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-08-25",
-  masterUpdated: "2026-07-19",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "💰",
@@ -131,7 +131,7 @@ Quando sobram só dois jogadores (ou em um duelo heads-up), a regra de sempre ==
 
 ## O que acontece se você perder seu blind? (Blinds mortos)
 
-Ao sentar em um cash game ao vivo, normalmente você não joga de graça: ou **paga um big blind** para receber cartas na hora, ou espera o blind chegar ao seu assento. Se você se ausentar e ==**perder seus blinds**==, na maioria das salas você os paga na volta para reentrar no jogo — o big blind perdido vale como aposta viva, e o small blind perdido é uma ficha ==**morta**== que vai direto para o pote. Nas mesas online, tudo isso é automático.
+Ao sentar em um cash game ao vivo, normalmente você não joga de graça: na maioria das salas, ou **paga um big blind** para receber cartas na hora, ou espera o blind chegar ao seu assento — mas algumas salas não exigem que jogadores novos em no-limit ou pot-limit paguem blind (WSOP Live Action Rules 104.a), então pergunte ao dealer antes de sentar. Se você se ausentar e ==**perder seus blinds**==, na maioria das salas você os paga na volta para reentrar no jogo — o big blind perdido vale como aposta viva, e o small blind perdido é uma ficha ==**morta**== que vai direto para o pote. Nas mesas online, tudo isso é automático.
 
 ---
 
