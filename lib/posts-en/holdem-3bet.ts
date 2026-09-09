@@ -298,7 +298,7 @@ A. As stacks get short — roughly 10–25 big blinds — many hands play best a
 3. **Size it ~3x in position, ~4x out** — and never small out of position.
 4. **Match shape to spot:** linear vs wide/weak opens (and from the small blind), polarized vs tight opens and from the big blind.
 5. **Facing a 3-bet, most hands fold** — 4-bet premiums, call the playable ones, and fold more than "balanced" against opponents who never bluff.
-6. **Then the flop arrives.** A 3-bet pot plays nothing like a single-raised one — the pot is roughly 2.6× bigger (19.5bb vs the 7.5bb a heads-up flat would build — more dead money pushes it toward 4×) and the SPR drops to about 4.7, which is why the three-bettor often bets its [entire range on the flop](/en/blog/3bet-pot-cbet).
+6. **Then the flop arrives.** A 3-bet pot plays nothing like a single-raised one — on this article's numbers (3bb open, 9bb 3-bet, 100bb deep) the pot is roughly 2.6× bigger (19.5bb vs the 7.5bb a heads-up flat would build; a larger out-of-position 3-bet pushes it toward 3.5×) and the SPR drops to about 4.7. The three-bettor still often bets its [entire range on the flop](/en/blog/3bet-pot-cbet) — because of the shape of its range, not because the stack is shallow.
 
 Get 3-betting right and you stop being the player who just calls with aces and wins a tiny pot. Pair it with a disciplined [starting-hand range](/en/blog/holdem-starting-hands-chart), sharp [position](/en/blog/holdem-position-play) awareness, and the full [strategy framework](/en/blog/holdem-strategy), and your preflop game quietly moves ahead of the field.
 

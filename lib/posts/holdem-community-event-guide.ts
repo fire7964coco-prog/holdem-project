@@ -12,7 +12,6 @@ export const POST: Post = {
   keepImagesInBody: true,
   category: "커뮤니티",
   readTime: "5분",
-  emoji: "🏆",
   tags: ["홀덤 커뮤니티", "홀덤 커뮤니티 추천", "홀덤 이벤트", "홀덤마스터 이벤트", "포커 커뮤니티"],
   image: "/images/holdem-community-event-guide-hero.webp",
   imageAlt: "한국 홀덤펍 테이블에서 스마트폰을 보며 커뮤니티에 참여 중인 플레이어들",

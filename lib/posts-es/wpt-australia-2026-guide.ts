@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "WPT Australia 2026: 10–30 sep, The Star Sydney. Dos eventos estrella: AUD $1,500 WPT Prime (17–22 sep) y AUD $5,000 WPT Championship (24–30 sep). Satélites presenciales desde AUD $270, con clasificatorios al Championship por $290 y $550. El premio de primer puesto del Championship incluye un asiento al WPT World Championship valorado en $15,000 y descontado del bote. Obligatorio ser mayor de 18 años, socio del Star Club y respetar el código de vestimenta smart-casual.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-09-02",
-  masterUpdated: "2026-09-02",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   readTime: "14 min",
   emoji: "🦘",
   layout: "tournament-guide",
@@ -103,7 +103,6 @@ Es la pregunta que hace todo debutante. Aquí va el desglose honesto:
 | Vía | Formato | Buy-in | Ganas |
 |:---:|---|---|---|
 | **Clasificatorio directo al Championship** | ==**$550: 24 jul – 25 sep** · **$290: 30 jul – 9 sep**== | ==g:$290 o $550== | Asiento al Championship |
-| **Clasificatorio directo al Championship** | durante el festival, ==**hasta el 25 sep**== | $550 | Asiento al Championship |
 | **Prime Championship** | Satélite 1 de cada 6 | ==g:$290== | Asiento al Prime |
 | **Australian Poker Cup** | Satélite 1 de cada 5 | $270 | Asiento al Poker Cup |
 | **Mini-Championship** | Satélite 1 de cada 8 | $290 | Asiento al Mini-Championship |

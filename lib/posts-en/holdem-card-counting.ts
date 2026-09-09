@@ -124,7 +124,7 @@ Hold'em only exposes the five shared community cards, so this is limited to the 
 :::steps
 Count your outs on every draw | The moment you have a draw, count the cards that complete it and multiply — ×4 only when both cards are coming (you're all-in, or the river is free), otherwise ×2 for the next card alone. Call when that chance beats the price
 Ask what your hand blocks | Before you bluff, check whether you hold a card that makes their strongest calling hand impossible or less likely
-Adjust for what's on the board | Subtract any out that's already showing. Cards you can see are cards your opponent can't have
+Adjust for dead cards | Subtract any out you've seen exposed off the board — a flashed card, a shown hand, a fold you glimpsed. Cards you can see are cards your opponent can't have
 :::
 
 Do this for a few sessions and it becomes automatic — you'll be "counting cards" every hand, just the poker way. The next step is turning those counts into calls and folds with [pot odds](/en/blog/holdem-pot-odds), the math that tells you whether your outs are worth the price.
@@ -148,7 +148,7 @@ A. No. Counting outs, calculating odds, and using blockers is 100% legal — it'
 
 **Q. Does card counting work in Texas Hold'em?**
 
-A. Blackjack-style deck counting does not — the deck resets each hand and too few cards are exposed. But the poker forms of counting absolutely work in Hold'em: counting your outs, spotting blockers, and adjusting for cards on the board are essential skills.
+A. Blackjack-style deck counting does not — the deck resets each hand and too few cards are exposed. But the poker forms of counting absolutely work in Hold'em: counting your outs, spotting blockers, and adjusting for the dead cards you've seen are essential skills.
 
 **Q. Why does card counting work in blackjack but not poker?**
 
@@ -176,7 +176,7 @@ A. It's poker's version of it. You're not tracking the whole deck like a blackja
 
 1. **Blackjack counting is dead in poker.** The deck reshuffles every hand, too few cards show, and you play opponents, not the house — so tracking high and low cards earns you nothing.
 2. **Poker counting is outs, blockers, and dead cards.** All mental math, all legal, and all far more valuable than a running count would be.
-3. **It's a skill, not a secret.** Nobody bars you for it. Count your outs, ask what you block, and subtract what's on the board — every hand.
+3. **It's a skill, not a secret.** Nobody bars you for it. Count your outs, ask what you block, and subtract the dead cards you've seen — every hand.
 
 Start with the number that decides most hands: your outs. See the full method in the [guide to counting outs](/en/blog/holdem-outs), then turn those counts into profitable calls with [pot odds](/en/blog/holdem-pot-odds).
 

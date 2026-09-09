@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "WPT Australia 2026: 10–30 Sep, The Star Sydney. Dua flagship: AUD $1.500 WPT Prime (17–22 Sep) dan AUD $5.000 WPT Championship (24–30 Sep). Satelit on-site dari AUD $270, dengan qualifier Championship $290 dan $550. Hadiah juara pertama Championship sudah termasuk kursi WPT World Championship senilai $15.000 yang dipotong dari prize pool. Wajib 18+, anggota Star Club, dan dress code smart-casual ditegakkan.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-09-02",
-  masterUpdated: "2026-09-02",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   readTime: "14 mnt",
   emoji: "🦘",
   layout: "tournament-guide",
@@ -103,7 +103,6 @@ Ini pertanyaan yang ditanyakan setiap pemula. Berikut penjelasan jujurnya:
 | Jalur | Format | Buy-In | Menang |
 |:---:|---|---|---|
 | **Championship Direct Qualifier** | ==**$550: 24 Jul – 25 Sep** · **$290: 30 Jul – 9 Sep**== | ==g:$290 atau $550== | Kursi Championship |
-| **Championship Direct Qualifier** | selama festival, ==**sampai 25 Sep**== | $550 | Kursi Championship |
 | **Prime Championship** | Satelit 1-dari-6 | ==g:$290== | Kursi Prime |
 | **Australian Poker Cup** | Satelit 1-dari-5 | $270 | Kursi Poker Cup |
 | **Mini-Championship** | Satelit 1-dari-8 | $290 | Kursi Mini-Championship |

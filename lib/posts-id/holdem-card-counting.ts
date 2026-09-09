@@ -125,7 +125,7 @@ Hold'em hanya menampilkan lima community card bersama, jadi ini terbatas pada bo
 :::steps
 Hitung outs Anda di setiap draw | Begitu Anda punya draw, hitung kartu yang melengkapinya dan kalikan — ×4 hanya kalau kedua kartu memang akan datang (Anda all-in, atau turn dan river sama-sama gratis), selain itu ×2 hanya untuk kartu berikutnya. Call saat peluang itu mengalahkan harganya
 Tanyakan apa yang tangan Anda blokir | Sebelum Anda bluff, cek apakah Anda pegang kartu yang membuat tangan call terkuat mereka mustahil atau lebih kecil kemungkinannya
-Sesuaikan dengan apa yang ada di board | Kurangi out mana pun yang sudah terlihat. Kartu yang bisa Anda lihat adalah kartu yang tak mungkin dipegang lawan
+Sesuaikan dengan dead card | Kurangi out mana pun yang sudah Anda lihat terbuka di luar board — kartu yang tak sengaja terlihat, tangan yang ditunjukkan, fold yang kebetulan Anda lihat. Kartu yang bisa Anda lihat adalah kartu yang tak mungkin dipegang lawan
 :::
 
 Lakukan ini beberapa sesi dan ia menjadi otomatis — Anda akan "menghitung kartu" setiap tangan, hanya saja dengan cara poker. Langkah berikutnya adalah mengubah penghitungan itu menjadi call dan fold dengan [pot odds](/id/blog/holdem-pot-odds), matematika yang memberitahu apakah outs Anda sepadan dengan harganya.
@@ -149,7 +149,7 @@ A. Tidak. Menghitung outs, menghitung peluang, dan memakai blocker 100% legal �
 
 **Q. Apakah card counting bekerja di Texas Hold'em?**
 
-A. Penghitungan dek ala blackjack tidak — dek reset setiap tangan dan terlalu sedikit kartu terlihat. Tapi bentuk penghitungan poker pasti bekerja di Hold'em: menghitung outs Anda, mengenali blocker, dan menyesuaikan dengan kartu di board adalah keterampilan esensial.
+A. Penghitungan dek ala blackjack tidak — dek reset setiap tangan dan terlalu sedikit kartu terlihat. Tapi bentuk penghitungan poker pasti bekerja di Hold'em: menghitung outs Anda, mengenali blocker, dan menyesuaikan dengan dead card yang sudah Anda lihat adalah keterampilan esensial.
 
 **Q. Kenapa card counting bekerja di blackjack tapi tidak di poker?**
 
@@ -177,7 +177,7 @@ A. Itu versi poker-nya. Anda tak melacak seluruh dek seperti penghitung blackjac
 
 1. **Card counting blackjack mati di poker.** Dek diacak ulang setiap tangan, terlalu sedikit kartu terlihat, dan Anda main lawan pemain, bukan bandar — jadi melacak kartu tinggi dan rendah tak menghasilkan apa-apa.
 2. **Penghitungan poker adalah outs, blocker, dan dead card.** Semua matematika mental, semua legal, dan semua jauh lebih berharga daripada running count.
-3. **Ini keterampilan, bukan rahasia.** Tak ada yang melarang Anda karenanya. Hitung outs Anda, tanyakan apa yang Anda blokir, dan kurangi apa yang ada di board — setiap tangan.
+3. **Ini keterampilan, bukan rahasia.** Tak ada yang melarang Anda karenanya. Hitung outs Anda, tanyakan apa yang Anda blokir, dan kurangi dead card yang sudah Anda lihat — setiap tangan.
 
 Mulailah dengan angka yang menentukan sebagian besar tangan: outs Anda. Lihat metode lengkapnya di [panduan menghitung outs](/id/blog/holdem-outs), lalu ubah penghitungan itu menjadi call yang profit dengan [pot odds](/id/blog/holdem-pot-odds).
 

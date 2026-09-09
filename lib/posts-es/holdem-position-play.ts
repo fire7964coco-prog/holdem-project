@@ -177,7 +177,7 @@ Cada asiento tiene su propio rango de apertura porque **el número de jugadores 
 | Hijack | ~20% | Empiezan las oportunidades de robo |
 | **Cutoff** | **~27%** | Solo el botón detrás — asiento de robo por excelencia |
 | **Botón** | ==g:**~43%**== | Última acción garantizada en el postflop — la apertura más amplia |
-| Ciega pequeña | ~40% (subir o foldear) | Amplio cuando llega foldeado — sube en vez de completar contra la mayoría de ciegas grandes; frente a una subida, 3-bet o fold — no iguales |
+| Ciega pequeña | ~40% (subir o foldear) | Amplio cuando llega foldeado — sube por defecto, aunque completar es un [limp](/es/blog/holdem-limping) defendible en un bote sin subir; frente a una subida, 3-bet o fold — no iguales |
 | Ciega grande | Defiende amplio vs robos | Cierra la acción + pot odds, no aperturas |
 
 ![Mesa de póker de 9 jugadores mostrando cómo los rangos de apertura se abren desde UTG (~13%, rojo cerrado) hasta el botón (~43%, verde amplio)](/images/holdem-position-play-opening-range.webp "Rango de apertura por posición — UTG abre ~13%, el botón ~43%")
@@ -295,7 +295,7 @@ A. Desde UTG en full ring, abre más o menos el ~13% superior de las manos — p
 
 **Q. ¿Cómo afecta la posición a la frecuencia de c-bet?**
 
-A. En posición (botón o cutoff), los solvers hacen c-bet más o menos en el 65–75% de los flops — actúas último en cada calle posterior, así que apostar amplio incluido aire es seguro. Fuera de posición en un bote de una sola subida eso baja a más o menos el 30–45%, porque un check-raise puede terminar tu farol y un call te deja adivinando primero en el turn y el river (como quien mete el 3-bet fuera de posición la historia es otra — la ventaja de rango te deja cbetear casi todos los flops). Cbetear la misma frecuencia OOP que IP es una de las fugas más comunes y costosas.
+A. En posición (botón o cutoff), los solvers hacen c-bet más o menos en el 65–75% de los flops — actúas último en cada calle posterior, así que apostar amplio incluido aire es seguro. Fuera de posición en un bote de una sola subida eso baja a más o menos el 30–45%, porque un check-raise puede terminar tu farol y un call te deja adivinando primero en el turn y el river (como quien mete el 3-bet fuera de posición la historia es otra — la ventaja de rango te deja cbetear casi todos los flops en las mesas que analizamos). Cbetear la misma frecuencia OOP que IP es una de las fugas más comunes y costosas.
 
 **Q. ¿Hay que hacer siempre 3-bet desde la ciega pequeña?**
 

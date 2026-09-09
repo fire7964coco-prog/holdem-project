@@ -183,7 +183,7 @@ Jeder Sitz bekommt seine eigene Open-Range, weil **die Anzahl der noch handelnde
 | Hijack | ~20% | Steal-Gelegenheiten beginnen |
 | **Cutoff** | **~27%** | Nur der Button dahinter – prima Steal-Sitz |
 | **Button** | ==g:**~43%**== | Garantierte letzte Aktion postflop – weitester Open |
-| Small Blind | ~40% (raise-or-fold) | Weit, wenn zu dir gefoldet wird – gegen die meisten Big Blinds lieber raisen als completen; gegen einen Raise: 3-betten oder folden, nicht flat-callen |
+| Small Blind | ~40% (raise-or-fold) | Weit, wenn zu dir gefoldet wird – standardmäßig raisen, wobei Completen im ungeraisten Pot ein vertretbarer [Limp](/de/blog/holdem-limping) ist; gegen einen Raise: 3-betten oder folden, nicht flat-callen |
 | Big Blind | Verteidigt weit gegen Steals | Schließende Aktion + Pot Odds, keine Opens |
 
 ![9-handed Pokertisch, der zeigt, wie sich Open-Ranges von UTG (~13%, eng rot) bis zum Button (~43%, weit grün) verbreitern](/images/holdem-position-play-opening-range.webp "Open-Range nach Position – UTG öffnet ~13%, der Button ~43%")
@@ -281,7 +281,7 @@ A. Aus UTG in einem Full-Ring-Spiel öffnest du grob die besten ~13% der Hände 
 
 **Q. Wie beeinflusst Position die C-Bet-Frequenz?**
 
-A. In Position (Button oder Cutoff) c-betten Solver rund 65–75% der Flops – du handelst auf jeder späteren Street zuletzt, sodass weites Betten inklusive Air sicher ist. Out of Position im Single-Raised Pot fällt das auf etwa 30–45%, weil ein Check-Raise deinen Bluff beenden kann und ein Call dich am Turn und River zuerst rätseln lässt. OOP dieselbe Frequenz wie IP zu c-betten ist eines der häufigsten und teuersten Lecks. (Als 3-Better out of Position sieht es anders aus – dort erlaubt dir der Range-Vorteil, fast jeden Flop zu c-betten.)
+A. In Position (Button oder Cutoff) c-betten Solver rund 65–75% der Flops – du handelst auf jeder späteren Street zuletzt, sodass weites Betten inklusive Air sicher ist. Out of Position im Single-Raised Pot fällt das auf etwa 30–45%, weil ein Check-Raise deinen Bluff beenden kann und ein Call dich am Turn und River zuerst rätseln lässt. OOP dieselbe Frequenz wie IP zu c-betten ist eines der häufigsten und teuersten Lecks. (Als 3-Better out of Position sieht es anders aus – dort erlaubt dir der Range-Vorteil, auf den von uns gerechneten Boards fast jeden Flop zu c-betten.)
 
 **Q. Sollte man aus dem Small Blind immer 3-betten?**
 

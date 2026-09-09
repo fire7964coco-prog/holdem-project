@@ -177,7 +177,7 @@ Cada cadeira ganha o seu próprio range de abertura porque **o número de jogado
 | Hijack | ~20% | Começam as oportunidades de roubo |
 | **Cutoff** | **~27%** | Só o button atrás — cadeira nobre de roubo |
 | **Button** | ==g:**~43%**== | Última ação pós-flop garantida — abertura mais larga |
-| Small blind | ~40% (aumenta ou folda) | Largo quando folda até você — aumente em vez de completar contra a maioria dos big blinds; diante de um aumento, 3-bet ou fold — não pague |
+| Small blind | ~40% (aumenta ou folda) | Largo quando folda até você — aumente por padrão, embora completar seja um [limp](/pt/blog/holdem-limping) defensável em pote não aumentado; diante de um aumento, 3-bet ou fold — não pague |
 | Big blind | Defende largo vs roubos | Ação de fechamento + pot odds, não aberturas |
 
 ![Mesa de poker de 9 jogadores mostrando ranges de abertura alargando do UTG (~13%, vermelho apertado) ao Button (~43%, verde largo)](/images/holdem-position-play-opening-range.webp "Range de abertura por posição — o UTG abre ~13%, o button ~43%")
@@ -275,7 +275,7 @@ A. Do UTG num jogo full ring, abra mais ou menos as ~13% melhores mãos — pare
 
 **Q. Como a posição afeta a frequência de c-bet?**
 
-A. In position (button ou cutoff), solvers dão c-bet em cerca de 65–75% dos flops — você age por último em toda street seguinte, então apostar largo, incluindo ar, é seguro. Out of position, num pote de um aumento só, isso cai para cerca de 30–45%, porque um check-raise pode encerrar o seu bluff e um call te deixa adivinhando primeiro no turn e no river (como 3-bettor fora de posição a história é outra — a vantagem de range deixa você dar c-bet em quase todo flop). Dar c-bet na mesma frequência OOP e IP é um dos vazamentos mais comuns e mais caros.
+A. In position (button ou cutoff), solvers dão c-bet em cerca de 65–75% dos flops — você age por último em toda street seguinte, então apostar largo, incluindo ar, é seguro. Out of position, num pote de um aumento só, isso cai para cerca de 30–45%, porque um check-raise pode encerrar o seu bluff e um call te deixa adivinhando primeiro no turn e no river (como 3-bettor fora de posição a história é outra — a vantagem de range deixa você dar c-bet em quase todo flop nos boards que rodamos). Dar c-bet na mesma frequência OOP e IP é um dos vazamentos mais comuns e mais caros.
 
 **Q. Você deveria sempre dar 3-bet do small blind?**
 

@@ -125,7 +125,7 @@ O Hold'em só expõe as cinco cartas comunitárias compartilhadas, então isso f
 :::steps
 Conte os seus outs em todo projeto | No momento em que você tem um projeto, conte as cartas que o completam e multiplique — ×4 só quando as duas cartas vêm de graça (você está all-in no flop), caso contrário ×2 só pela próxima carta. Pague quando essa chance vencer o preço
 Pergunte o que a sua mão bloqueia | Antes de blefar, veja se você tem uma carta que torna a mão de call mais forte dele impossível ou menos provável
-Ajuste para o que está no board | Subtraia qualquer out que já esteja aparecendo. Cartas que você enxerga são cartas que o seu adversário não pode ter
+Ajuste para as cartas mortas | Subtraia qualquer out que você viu exposto fora do board — uma carta que apareceu por engano, uma mão mostrada, um fold que você enxergou. Cartas que você enxerga são cartas que o seu adversário não pode ter
 :::
 
 Faça isso por algumas sessões e vira automático — você vai estar "contando cartas" em toda mão, só que à maneira do poker. O próximo passo é transformar essas contagens em calls e folds com [pot odds](/pt/blog/holdem-pot-odds), a matemática que te diz se os seus outs valem o preço.
@@ -149,7 +149,7 @@ A. Não. Contar outs, calcular odds e usar blockers é 100% legal — é só mat
 
 **Q. A contagem de cartas funciona no Texas Hold'em?**
 
-A. A contagem de baralho estilo blackjack não — o baralho reinicia a cada mão e poucas cartas ficam expostas. Mas as formas de contagem do poker absolutamente funcionam no Hold'em: contar os seus outs, identificar blockers e ajustar para as cartas no board são habilidades essenciais.
+A. A contagem de baralho estilo blackjack não — o baralho reinicia a cada mão e poucas cartas ficam expostas. Mas as formas de contagem do poker absolutamente funcionam no Hold'em: contar os seus outs, identificar blockers e ajustar para as cartas mortas que você viu são habilidades essenciais.
 
 **Q. Por que a contagem de cartas funciona no blackjack mas não no poker?**
 
@@ -177,7 +177,7 @@ A. É a versão do poker disso. Você não está rastreando o baralho inteiro co
 
 1. **A contagem de blackjack está morta no poker.** O baralho é reembaralhado toda mão, poucas cartas aparecem, e você joga contra adversários, não contra a casa — então rastrear cartas altas e baixas não te rende nada.
 2. **A contagem do poker são outs, blockers e cartas mortas.** Tudo matemática de cabeça, tudo legal, e tudo muito mais valioso do que um running count seria.
-3. **É uma habilidade, não um segredo.** Ninguém te barra por isso. Conte os seus outs, pergunte o que você bloqueia e subtraia o que está no board — em toda mão.
+3. **É uma habilidade, não um segredo.** Ninguém te barra por isso. Conte os seus outs, pergunte o que você bloqueia e subtraia as cartas mortas que você viu — em toda mão.
 
 Comece pelo número que decide a maioria das mãos: os seus outs. Veja o método completo no [guia de como contar outs](/pt/blog/holdem-outs), depois transforme essas contagens em calls lucrativos com [pot odds](/pt/blog/holdem-pot-odds).
 

@@ -125,7 +125,7 @@ El Hold'em solo expone las cinco cartas comunitarias compartidas, así que esto 
 :::steps
 Cuenta tus outs en cada proyecto | En cuanto tengas un proyecto, cuenta las cartas que lo completan y multiplica — ×4 solo cuando vienen las dos cartas (estás all-in, o el river sale gratis), y si no ×2 solo por la siguiente carta. Iguala cuando esa probabilidad supera el precio
 Pregúntate qué bloquea tu mano | Antes de farolear, comprueba si llevas una carta que vuelve imposible o menos probable su mano más fuerte para pagar
-Ajusta según lo que hay en la mesa | Resta cualquier out que ya esté a la vista. Las cartas que ves son cartas que tu rival no puede tener
+Ajusta por las cartas muertas | Resta cualquier out que hayas visto expuesto fuera de la mesa — una carta que se enseñó por error, una mano mostrada, un fold que alcanzaste a ver. Las cartas que ves son cartas que tu rival no puede tener
 :::
 
 Hazlo unas cuantas sesiones y se vuelve automático — estarás "contando cartas" en cada mano, solo que a la manera del póker. El siguiente paso es convertir esos conteos en calls y folds con las [pot odds](/es/blog/holdem-pot-odds), la matemática que te dice si tus outs valen el precio.
@@ -149,7 +149,7 @@ A. No. Contar outs, calcular odds y usar bloqueadores es 100% legal — es solo 
 
 **Q. ¿Funciona el conteo de cartas en el Texas Hold'em?**
 
-A. El conteo de baraja estilo blackjack no — la baraja se reinicia cada mano y se ven muy pocas cartas. Pero las formas de conteo del póker sí funcionan en Hold'em: contar tus outs, detectar bloqueadores y ajustar según las cartas de la mesa son habilidades esenciales.
+A. El conteo de baraja estilo blackjack no — la baraja se reinicia cada mano y se ven muy pocas cartas. Pero las formas de conteo del póker sí funcionan en Hold'em: contar tus outs, detectar bloqueadores y ajustar por las cartas muertas que hayas visto son habilidades esenciales.
 
 **Q. ¿Por qué funciona el conteo de cartas en el blackjack pero no en el póker?**
 
@@ -177,7 +177,7 @@ A. Es la versión del póker. No rastreas la baraja entera como un contador de b
 
 1. **El conteo del blackjack está muerto en el póker.** La baraja se rebaraja cada mano, se ven muy pocas cartas y juegas contra rivales, no contra la casa — así que rastrear cartas altas y bajas no te aporta nada.
 2. **El conteo del póker son outs, bloqueadores y cartas muertas.** Todo matemática mental, todo legal, y todo mucho más valioso de lo que sería un conteo corrido.
-3. **Es una habilidad, no un secreto.** Nadie te veta por ello. Cuenta tus outs, pregúntate qué bloqueas y resta lo que hay en la mesa — en cada mano.
+3. **Es una habilidad, no un secreto.** Nadie te veta por ello. Cuenta tus outs, pregúntate qué bloqueas y resta las cartas muertas que hayas visto — en cada mano.
 
 Empieza por el número que decide la mayoría de las manos: tus outs. Ve el método completo en la [guía para contar outs](/es/blog/holdem-outs), y luego convierte esos conteos en calls rentables con las [pot odds](/es/blog/holdem-pot-odds).
 

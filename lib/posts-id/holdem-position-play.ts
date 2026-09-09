@@ -177,7 +177,7 @@ Setiap kursi mendapat opening range-nya sendiri karena **jumlah pemain yang masi
 | Hijack | ~20% | Peluang steal dimulai |
 | **Cutoff** | **~27%** | Hanya button di belakang — kursi steal utama |
 | **Button** | ==g:**~43%**== | Aksi terakhir dijamin di postflop — open terlebar |
-| Small blind | ~40% (raise-atau-fold) | Lebar saat di-fold ke Anda — raise, bukan sekadar melengkapi blind, melawan sebagian besar big blind; menghadapi raise, 3-bet atau fold — jangan flat-call |
+| Small blind | ~40% (raise-atau-fold) | Lebar saat di-fold ke Anda — raise sebagai default, meski melengkapi blind adalah [limp](/id/blog/holdem-limping) yang bisa dibenarkan di pot yang tak di-raise; menghadapi raise, 3-bet atau fold — jangan flat-call |
 | Big blind | Bertahan lebar vs steal | Menutup aksi + pot odds, bukan open |
 
 ![Meja poker 9 pemain menunjukkan opening range yang melebar dari UTG (~13%, merah ketat) ke Button (~43%, hijau lebar)](/images/holdem-position-play-opening-range.webp "Opening range menurut posisi — UTG membuka ~13%, button ~43%")
@@ -283,7 +283,7 @@ A. Dari UTG di game full ring, buka kira-kira top ~13% tangan — pair kuat, AK/
 
 **Q. Bagaimana posisi memengaruhi frekuensi c-bet?**
 
-A. In position (button atau cutoff), solver c-bet kira-kira 65–75% flop — Anda beraksi terakhir di setiap street berikutnya, jadi bet lebar, termasuk dengan tangan kosong, tetap aman. Out of position di pot single-raised itu turun ke kira-kira 30–45%, karena check-raise bisa mengakhiri bluff Anda dan sebuah call membuat Anda menebak lebih dulu di turn dan river (sebagai pihak yang 3-bet dari out of position ceritanya lain — keunggulan range membuat Anda bisa c-bet nyaris setiap flop). C-bet dengan frekuensi sama OOP seperti IP adalah salah satu kebocoran paling umum dan mahal.
+A. In position (button atau cutoff), solver c-bet kira-kira 65–75% flop — Anda beraksi terakhir di setiap street berikutnya, jadi bet lebar, termasuk dengan tangan kosong, tetap aman. Out of position di pot single-raised itu turun ke kira-kira 30–45%, karena check-raise bisa mengakhiri bluff Anda dan sebuah call membuat Anda menebak lebih dulu di turn dan river (sebagai pihak yang 3-bet dari out of position ceritanya lain — keunggulan range membuat Anda bisa c-bet nyaris setiap flop di board yang kami uji). C-bet dengan frekuensi sama OOP seperti IP adalah salah satu kebocoran paling umum dan mahal.
 
 **Q. Apakah Anda harus selalu 3-bet dari small blind?**
 

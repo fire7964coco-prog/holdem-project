@@ -124,7 +124,7 @@ Hold'em legt nur die fünf gemeinsamen Community Cards offen, also ist das hier 
 :::steps
 Zähle deine Outs bei jedem Draw | Sobald du einen Draw hast, zähle die Karten, die ihn vervollständigen, und multipliziere – ×4 nur, wenn beide Karten kommen (du bist all-in, oder der River kostet nichts mehr), sonst ×2 nur für die nächste Karte. Calle, wenn diese Chance den Preis schlägt
 Frage, was deine Hand blockt | Bevor du bluffst, prüfe, ob du eine Karte hältst, die ihre stärkste Calling-Hand unmöglich oder unwahrscheinlicher macht
-Passe an das an, was auf dem Board liegt | Ziehe jedes Out ab, das bereits offen liegt. Karten, die du sehen kannst, sind Karten, die dein Gegner nicht haben kann
+Passe an tote Karten an | Ziehe jedes Out ab, das du abseits vom Board gesehen hast – eine aufgeblitzte Karte, eine gezeigte Hand, ein Fold, den du zufällig gesehen hast. Karten, die du sehen kannst, sind Karten, die dein Gegner nicht haben kann
 :::
 
 Mach das ein paar Sessions lang und es wird automatisch – du wirst jede Hand „Karten zählen“, nur auf die Poker-Art. Der nächste Schritt ist, diese Zählungen mit [Pot Odds](/de/blog/holdem-pot-odds) in Calls und Folds zu verwandeln, der Mathematik, die dir sagt, ob deine Outs den Preis wert sind.
@@ -148,7 +148,7 @@ A. Nein. Outs zählen, Odds berechnen und Blocker nutzen ist 100% legal – es i
 
 **Q. Funktioniert Kartenzählen bei Texas Hold'em?**
 
-A. Deck-Zählen im Blackjack-Stil nicht – das Deck wird jede Hand neu gesetzt und zu wenige Karten liegen offen. Aber die Poker-Formen des Zählens funktionieren absolut im Hold'em: deine Outs zählen, Blocker erkennen und für Karten auf dem Board anpassen sind essenzielle Fähigkeiten.
+A. Deck-Zählen im Blackjack-Stil nicht – das Deck wird jede Hand neu gesetzt und zu wenige Karten liegen offen. Aber die Poker-Formen des Zählens funktionieren absolut im Hold'em: deine Outs zählen, Blocker erkennen und für tote Karten, die du gesehen hast, anpassen sind essenzielle Fähigkeiten.
 
 **Q. Warum funktioniert Kartenzählen im Blackjack, aber nicht im Poker?**
 
@@ -176,7 +176,7 @@ A. Es ist Pokers Version davon. Du trackst nicht das ganze Deck wie ein Blackjac
 
 1. **Blackjack-Zählen ist im Poker tot.** Das Deck wird jede Hand neu gemischt, zu wenige Karten liegen offen, und du spielst gegen Gegner, nicht gegen das Haus – also bringt dir das Tracken hoher und niedriger Karten nichts.
 2. **Poker-Zählen ist Outs, Blocker und tote Karten.** Alles Kopfrechnen, alles legal und alles weit wertvoller als ein Running Count je wäre.
-3. **Es ist eine Fähigkeit, kein Geheimnis.** Niemand sperrt dich dafür aus. Zähle deine Outs, frage, was du blockst, und ziehe ab, was auf dem Board liegt – jede Hand.
+3. **Es ist eine Fähigkeit, kein Geheimnis.** Niemand sperrt dich dafür aus. Zähle deine Outs, frage, was du blockst, und ziehe die toten Karten ab, die du gesehen hast – jede Hand.
 
 Beginne mit der Zahl, die die meisten Hände entscheidet: deine Outs. Sieh dir die vollständige Methode im [Guide zum Outs-Zählen](/de/blog/holdem-outs) an, und verwandle diese Zählungen dann mit [Pot Odds](/de/blog/holdem-pot-odds) in profitable Calls.
 

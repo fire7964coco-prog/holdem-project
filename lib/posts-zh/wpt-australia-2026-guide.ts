@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "tournament",
   date: "2026-06-18",
   updated: "2026-09-09",
-  masterUpdated: "2026-09-02",
+  masterUpdated: "2026-09-09",
   readTime: "14 分钟",
   emoji: "🦘",
   layout: "tournament-guide",
@@ -112,7 +112,6 @@ WPT Australia 2026 重回 The Star Sydney，规模是 WPT 历史上最大的一�
 | 路径 | 形式 | 买入 | 赢得 |
 |:---:|---|---|---|
 | **主赛直接资格赛** | ==**$550：7 月 24 日–9 月 25 日** · **$290：7 月 30 日–9 月 9 日**== | ==g:$290 或 $550== | Championship 席位 |
-| **主赛直接资格赛** | 赛事期间，==**至 9 月 25 日**== | $550 | Championship 席位 |
 | **Prime Championship** | 六选一卫星赛 | ==g:$290== | Prime 席位 |
 | **Australian Poker Cup** | 五选一卫星赛 | $270 | Poker Cup 席位 |
 | **Mini-Championship** | 八选一卫星赛 | $290 | Mini-Championship 席位 |
@@ -275,7 +274,7 @@ The Star Sydney 位于 **80 Pyrmont Street, Pyrmont NSW 2009**——就在达令
 ## 澳大利亚签证——出发前你需要什么
 
 > **快速回答**
-> 英国和 35 个欧洲国家用免费的 eVisitor（651）；美国、加拿大、日本、韩国、新加坡、香港用 ETA（601），AUD $20，手机 app 申请，通常即时；其他大多数国家办 Visitor Visa（600），AUD $250 起、要数天到数周。订机票前先申请，至少提前一周。
+> 英国和 35 个欧洲国家用免费的 eVisitor（651）；美国、加拿大、日本、韩国、台湾、新加坡、香港、马来西亚、文莱用 ETA（601），AUD $20，手机 app 申请，通常即时；其他大多数国家办 Visitor Visa（600），AUD $250 起、要数天到数周。订机票前先申请，至少提前一周。
 
 大多数国际访客需要 **ETA（电子旅行许可）** 或标准旅游签证之一。
 

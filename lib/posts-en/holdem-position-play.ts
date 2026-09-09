@@ -176,7 +176,7 @@ Every seat gets its own opening range because **the number of players still to a
 | Hijack | ~20% | Steal opportunities begin |
 | **Cutoff** | **~27%** | Only the button behind — prime steal seat |
 | **Button** | ==g:**~43%**== | Guaranteed last action postflop — widest open |
-| Small blind | ~40% (raise-or-fold) | Wide when folded to — raise rather than complete against most big blinds; facing a raise, 3-bet or fold — don't flat-call |
+| Small blind | ~40% (raise-or-fold) | Wide when folded to — raise by default, though completing is a defensible [limp](/en/blog/holdem-limping) in an unraised pot; facing a raise, 3-bet or fold — don't flat-call |
 | Big blind | Defends wide vs steals | Closing action + pot odds, not opens |
 
 ![9-handed poker table showing opening ranges widening from UTG (~13%, tight red) to the Button (~43%, wide green)](/images/holdem-position-play-opening-range.webp "Opening range by position — UTG opens ~13%, the button ~43%")
@@ -282,7 +282,7 @@ A. From UTG in a full ring game, open roughly the top ~13% of hands — strong p
 
 **Q. How does position affect c-bet frequency?**
 
-A. In position (button or cutoff), solvers c-bet roughly 65–75% of flops — you act last on every later street, so wide betting including air is safe. Out of position in a single-raised pot that drops to roughly 30–45%, because a check-raise can end your bluff and a call leaves you guessing first on the turn and river (as the 3-bettor out of position it's a different story — the range advantage lets you c-bet almost every flop). C-betting the same frequency OOP as IP is one of the most common and costly leaks.
+A. In position (button or cutoff), solvers c-bet roughly 65–75% of flops — you act last on every later street, so wide betting including air is safe. Out of position in a single-raised pot that drops to roughly 30–45%, because a check-raise can end your bluff and a call leaves you guessing first on the turn and river (as the 3-bettor out of position it's a different story — the range advantage lets you c-bet almost every flop on the boards we ran). C-betting the same frequency OOP as IP is one of the most common and costly leaks.
 
 **Q. Should you always 3-bet from the small blind?**
 
