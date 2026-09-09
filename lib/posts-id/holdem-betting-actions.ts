@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Texas Hold'em punya 5 aksi taruhan: check (lewat gratis), bet (membuka ronde), call (menyamai taruhan), raise (menaikkannya — raise minimum sama dengan bet atau raise sebelumnya), dan fold. Anda hanya boleh check kalau tidak ada taruhan aktif di depan Anda — di preflop itu cuma terjadi kalau Anda big blind.",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-08-27",
-  masterUpdated: "2026-08-12",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "9 menit",
   emoji: "🃏",
@@ -130,7 +130,7 @@ Kuncinya: min-raise mengikuti ==inkremen== dari bet atau raise terakhir, bukan b
 
 Dua aturan poker live yang menyertai raise:
 
-1. **Ucapkan "raise" sebelum menggerakkan chip.** Bilang "call" lalu mendorong chip lebih banyak? Ucapan Anda sudah mengikat sejak saat itu (==Rule 90.d==) — kelebihannya tidak dihitung. ==String bet== yang sebenarnya lain lagi: mendorong chip dalam beberapa gerakan **tanpa** mengucapkan "raise" lebih dulu (==Rule 103==).
+1. **Ucapkan "raise" sebelum menggerakkan chip.** Bilang "call" lalu mendorong chip lebih banyak? Ucapan Anda sudah mengikat sejak saat itu (==Rule 90.d==) — kelebihannya tidak dihitung. ==String bet== yang sebenarnya lain lagi: bet atau raise dalam beberapa gerakan (tangan Anda sempat kembali ke stack di tengah jalan) **tanpa** mengucapkan "raise" lebih dulu — atau gerakan tipuan untuk memancing aksi di luar giliran (==Rule 103==).
 2. **Satu gerakan.** Kalau Anda tidak mengucapkannya, chip Anda harus masuk dalam satu gerakan maju.
 
 *Seberapa besar* Anda sebaiknya raise (open 2,5x, 3-bet 3x, ukuran sesuai tekstur board) adalah strategi, bukan aturan — itu ada di [panduan strategi lengkap Texas Hold'em](/id/blog/holdem-strategy).
@@ -227,7 +227,7 @@ A. Tergantung ukuran all-in-nya. Kalau all-in itu merupakan raise penuh yang sah
 
 **Q. Apa itu string bet di poker?**
 
-A. Memasukkan chip dalam beberapa gerakan tanpa mengucapkan "raise" lebih dulu (==Rule 103==). Dealer memutuskan string bet sebagai call sebesar jumlah awal. Bilang "call" lalu menambahkan chip bukan string bet, melainkan deklarasi yang mengikat (==Rule 90.d==) — hasil akhirnya sama: tetap dihitung call. Ucapkan aksi Anda dengan jelas atau gerakkan semua chip dalam satu gerakan.
+A. Mencoba bet atau raise dalam beberapa gerakan — kembali ke stack Anda di tengah jalan — tanpa mengucapkan "raise" lebih dulu (==Rule 103==). Dealer memutuskan string bet sebagai call sebesar jumlah awal. Aturan yang sama juga melarang gerakan tipuan untuk memancing aksi di luar giliran sebelum aksi Anda sendiri selesai. Bilang "call" lalu menambahkan chip bukan string bet, melainkan deklarasi yang mengikat (==Rule 90.d==) — hasil akhirnya sama: tetap dihitung call. Ucapkan aksi Anda dengan jelas atau gerakkan semua chip dalam satu gerakan.
 
 **Q. Apa arti limp di poker?**
 

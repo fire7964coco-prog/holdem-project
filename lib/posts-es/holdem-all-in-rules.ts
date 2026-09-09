@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ir all-in es apostar todas las fichas que tienes delante. Solo puedes ganar de cada rival lo que hayas igualado (el bote principal); las fichas extra de los stacks más grandes forman un side pot que no puedes tocar. Un all-in menor que una subida completa NO reabre la apuesta para quienes ya actuaron.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-08-10",
-  masterUpdated: "2026-08-12",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "♠",
@@ -45,7 +45,7 @@ La base es la regla de **table stakes**: solo puedes apostar las fichas que ten�
 | Table stakes | Solo puedes apostar lo que tenías al empezar la mano |
 | Doblarte (double up) | Ganar un all-in y duplicar tu stack |
 | Bote principal (main pot) | El bote que todos — incluido el jugador all-in — pueden ganar |
-| Side pot (bote lateral) | Fichas que solo pueden ganar los stacks grandes; el jugador all-in queda fuera |
+| Side pot (bote lateral) | Fichas que solo pueden ganar los stacks grandes; el jugador que fue all-in por menos queda fuera |
 
 </div>
 
@@ -252,7 +252,7 @@ A. Repartir dos veces las cartas comunitarias restantes y dividir el bote (run i
 
 **Q. ¿En qué consiste exactamente la regla de "table stakes"?**
 
-A. Table stakes significa que solo puedes apostar las fichas que tenías delante al empezar la mano. No puedes añadir dinero con la mano en juego. Protege a ambos lados: a ti nunca te pueden obligar a arriesgar más que tu stack, y el rival no puede apostar de golpe más de lo que puedes cubrir.
+A. Table stakes significa que solo puedes apostar las fichas que tenías delante al empezar la mano. No puedes añadir dinero con la mano en juego. Protege a ambos lados: a ti nunca te pueden obligar a arriesgar más que tu stack, y lo que el rival apueste por encima de tu stack no te cuesta nada — va a un bote lateral o vuelve como apuesta no igualada.
 
 **Q. Si dos jugadores van all-in por cantidades distintas, ¿quién enseña primero?**
 

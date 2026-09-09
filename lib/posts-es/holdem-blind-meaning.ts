@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Las ciegas son apuestas obligatorias que se ponen antes de repartir las cartas. La ciega pequeña se sienta a la izquierda del botón y la ciega grande a su izquierda; la ciega grande — normalmente el doble de la pequeña — es la unidad de apuesta de la mesa.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-08-14",
-  masterUpdated: "2026-07-19",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "💰",
@@ -131,7 +131,7 @@ Cuando solo quedan dos jugadores (o en un duelo heads-up), la regla habitual ==r
 
 ## ¿Qué pasa si te saltas tu ciega? (Ciegas muertas)
 
-Al sentarte en una mesa de cash en vivo normalmente no juegas gratis: o **pones una ciega grande** para que te repartan de inmediato, o esperas a que la ciega llegue a tu asiento. Si te ausentas y ==**te saltas tus ciegas**==, en la mayoría de salas las pones al volver para reengancharte — la ciega grande pendiente juega como apuesta viva, y la ciega pequeña pendiente es una ficha ==**muerta**== que va directa al bote. En las mesas online todo esto se gestiona solo.
+Al sentarte en una mesa de cash en vivo normalmente no juegas gratis: en la mayoría de salas, o **pones una ciega grande** para que te repartan de inmediato, o esperas a que la ciega llegue a tu asiento — aunque algunas salas no exigen ciega a los jugadores nuevos en no-limit ni pot-limit (WSOP Live Action Rules 104.a), así que pregúntale al crupier antes de sentarte. Si te ausentas y ==**te saltas tus ciegas**==, en la mayoría de salas las pones al volver para reengancharte — la ciega grande pendiente juega como apuesta viva, y la ciega pequeña pendiente es una ficha ==**muerta**== que va directa al bote. En las mesas online todo esto se gestiona solo.
 
 ---
 

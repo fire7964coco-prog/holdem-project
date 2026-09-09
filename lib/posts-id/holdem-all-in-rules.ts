@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "All-in artinya mempertaruhkan seluruh chip yang Anda punya. Anda hanya bisa memenangkan jumlah yang Anda samakan dari tiap lawan (pot utama). Taruhan ekstra dari stack yang lebih besar membentuk side pot yang tidak bisa Anda menangkan. All-in yang kurang dari satu raise penuh TIDAK membuka kembali taruhan bagi pemain yang sudah beraksi.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-08-27",
-  masterUpdated: "2026-08-12",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "10 menit",
   emoji: "♠",
@@ -45,7 +45,7 @@ Dasarnya adalah aturan **table stakes**: Anda hanya boleh mempertaruhkan chip ya
 | Table stakes | Anda hanya boleh mempertaruhkan chip yang ada saat hand dimulai |
 | Double up | Menang all-in dan menggandakan stack Anda |
 | Pot utama (main pot) | Pot yang bisa dimenangkan semua pemain — termasuk pemain yang all-in |
-| Side pot (pot sampingan) | Chip yang hanya bisa dimenangkan stack lebih besar; pemain all-in tidak berhak |
+| Side pot (pot sampingan) | Chip yang hanya bisa dimenangkan stack lebih besar; pemain yang all-in dengan jumlah lebih kecil tidak berhak |
 
 </div>
 
@@ -254,7 +254,7 @@ A. Run it twice (membagikan sisa kartu bersama dua kali dan membagi pot) diperbo
 
 **Q. Apa sebenarnya aturan "table stakes" itu?**
 
-A. Table stakes artinya Anda hanya boleh mempertaruhkan chip yang ada di depan Anda saat hand dimulai. Anda tidak boleh menambah uang selagi hand berjalan. Aturan ini melindungi kedua pihak — Anda tidak pernah bisa dipaksa mempertaruhkan lebih dari stack Anda, dan lawan tidak bisa tiba-tiba bertaruh lebih besar dari yang bisa Anda tutup.
+A. Table stakes artinya Anda hanya boleh mempertaruhkan chip yang ada di depan Anda saat hand dimulai. Anda tidak boleh menambah uang selagi hand berjalan. Aturan ini melindungi kedua pihak — Anda tidak pernah bisa dipaksa mempertaruhkan lebih dari stack Anda, dan apa pun yang dipertaruhkan lawan di atas stack Anda tidak merugikan Anda: chip itu masuk side pot atau dikembalikan sebagai taruhan yang tidak di-call.
 
 **Q. Kalau dua pemain all-in dengan jumlah berbeda, siapa yang membuka kartu duluan?**
 
