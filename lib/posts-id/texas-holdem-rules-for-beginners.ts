@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Di Texas Hold'em, setiap pemain menerima 2 hole cards, ada 5 kartu bersama di tengah meja, dan tangan poker 5 kartu terbaik menang setelah empat ronde taruhan.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-07",
-  masterUpdated: "2026-09-07",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "14 menit",
   emoji: "♠️",
@@ -310,7 +310,7 @@ Saat Anda memegang drawing hand (misalnya empat kartu menuju Flush), hitung **ou
 
 | Situasi | Rumus | Contoh (9 outs Flush) |
 |-----------|---------|------------------------|
-| Di **flop** (2 kartu lagi akan keluar) | Outs × 4 | 9 × 4 = **peluang ~36%** |
+| Di **flop**, melihat kedua kartu sisa tanpa taruhan lagi (misalnya all-in) | Outs × 4 | 9 × 4 = **peluang ~36%** |
 | Di **turn** (1 kartu lagi akan keluar) | Outs × 2 | 9 × 2 = **peluang ~18%** |
 
 </div>

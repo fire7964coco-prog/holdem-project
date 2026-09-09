@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Yes — poker hands can tie. A pot is split (a chop) when two or more players show down the identical best five-card hand. Suits never break the tie, and any leftover odd chip goes to the first tied player left of the dealer button.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-07",
+  updated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🃏",
@@ -16,7 +16,7 @@ export const POST: Post = {
   imageAlt: "Poker split pot — board 8♠ 8♥ 8♦ A♣ K♠ with J♠ 10♥ vs 5♣ 2♦, chips divided by a gold line since neither hand beats the board",
   tags: ["split pot poker", "can you tie in poker", "chopped pot", "when is a pot split", "odd chip rule poker", "board plays", "texas holdem chop"],
   content: `
-Early in my poker days I led every street — raised preflop, bet the flop and turn, got called on the river. I flipped over J-10. My opponent turned over **5-2**. "I win, right?" The dealer said nothing and pointed at the board: ==**8-8-8-A-K**==. ==r:Neither of our hole cards beat trip eights with an ace-king kicker==, so the dealer quietly cut the pot in half.
+Early in my poker days I led every street — raised preflop, bet the flop and turn, got called on the river. I flipped over J♠ 10♥. My opponent turned over **5♣ 2♦**. "I win, right?" The dealer said nothing and pointed at the board: ==**8♠ 8♥ 8♦ A♣ K♠**==. ==r:Neither of our hole cards beat trip eights with an ace-king kicker==, so the dealer quietly cut the pot in half.
 
 Getting half a pot you were sure you'd won is jarring. But ==g:split pots follow clear rules== — and they answer the question new players ask most: **can you tie in poker?** Yes. Here is every way it happens.
 
@@ -84,7 +84,7 @@ Pairs and two pairs are usually decided by kickers — but if the kickers match 
 
 Yes — and it doesn't even take two monster hands. When the five community cards already form the best possible five for everyone still in, ==**the board plays**== and every remaining player shares the pot, whether that's two players or five.
 
-That's my 8-8-8-A-K hand: my J-10 and his 5-2 both played the board's trip eights with ace-king kickers — identical fives, a chop once both hands were tabled. The extreme case is a board like A♠ K♠ Q♠ J♠ 10♠ (a royal flush): no hole cards can improve it, so ==g:everyone left chops==.
+That's my 8-8-8-A-K hand: my J♠ 10♥ and his 5♣ 2♦ both played the board's trip eights with ace-king kickers — identical fives, a chop once both hands were tabled. The extreme case is a board like A♠ K♠ Q♠ J♠ 10♠ (a royal flush): no hole cards can improve it, so ==g:everyone left chops==.
 
 > **The check:** does *your* best five — using at least one hole card — beat the board's own five? If yes, you play your hand. If not, the board plays and you're likely chopping. The full method for scanning a board this way is in [how to read the board and find your best 5](/en/blog/holdem-reading-the-board).
 
@@ -143,7 +143,7 @@ A and B tie with aces and identical kickers, so they ==g:split the main pot==; t
 
 ## Is the Pot Ever Split Half High, Half Low?
 
-Not in Texas Hold'em. You may have heard of "split-pot games" like Omaha Hi-Lo or Stud Hi-Lo, where **every** pot is designed to split between the best high hand and the best qualifying low hand (eight-or-better). That's a different game family. ==Standard Hold'em is high-only== — the pot splits *only* when best five-card hands genuinely tie.
+Not in Texas Hold'em. You may have heard of "split-pot games" like Omaha Hi-Lo or Stud Hi-Lo, where the pot is designed to split between the best high hand and the best qualifying low hand (eight-or-better) — and the high hand scoops when no low qualifies. That's a different game family. ==Standard Hold'em is high-only== — the pot splits *only* when best five-card hands genuinely tie.
 
 ---
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ties are broken in a fixed order: hand rank first, then the cards that make the hand, then kickers from highest to lowest. Same pair → higher first kicker wins; identical five cards → split pot. Suits never decide a tie.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-07",
+  updated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "⚖️",
@@ -201,7 +201,7 @@ A. Three of a kind carries two kickers, compared highest first — so if both pl
 
 **Q. Does the 5th card matter in poker?**
 
-A. Yes — and it is the most common way a player loses a pot they were sure they had won. Three spots put the whole pot on the last card: a pair's third kicker, the lowest card of a flush, and the side card next to quads sitting on the board. It stops mattering only when the board's own cards outrank whatever you hold, at which point your hole cards drop out of the hand entirely and you are playing the board.
+A. Yes — and it is the most common way a player loses a pot they were sure they had won. The classic spots that put the whole pot on the last card: a pair's third kicker, two pair's lone kicker, the lowest card of a flush, and the side card next to quads sitting on the board. It stops mattering only when the board's own cards outrank the side card you hold — sometimes because the whole board plays and your hole cards drop out entirely, sometimes because one hole card plays and the other never counts: A♠ 3♠ against A♦ 2♦ on A♥ K♣ Q♦ J♠ 9♥ is a chop, both playing A-A-K-Q-J.
 
 **Q. Can you use an ace as a 1 in poker?**
 

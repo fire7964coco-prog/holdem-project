@@ -8,7 +8,9 @@ export const POST: Post = {
   tldr: "Uma continuation bet (c-bet) é uma aposta no flop feita por quem deu raise no pré-flop. A regra moderna não é 'c-bet em todo flop' — é apostar pequeno e com frequência nos flops que favorecem o seu range (boards altos e dry como K-7-2) e dar check nos que favorecem o adversário (boards baixos e conectados como 7-6-5). Aposte pequeno — cerca de um terço do pote — em dry boards, grande — dois terços ou mais — nos wet, dê c-bet menos fora de posição e bem menos multiway.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-08-26",
+  updated: "2026-09-09",
+  // 2026-09-09: EN 09-09 정정(토너먼트 c-bet 사이즈 «각 구간 안에서» 축소) 본문 전파 완료.
+  //   🔴 masterUpdated는 08-19에 그대로 둔다 — 아래 미결 항목의 드리프트 추적기다(올리면 게이트가 눈이 먼다).
   // masterUpdated 08-19 = EN의 08-19 변경(a-high-board-cbet 역링크 1문단)은 EN·KO 전용 자산이라
   //   번역본에 전파하지 않는다(EN 파일 주석 + docs/locale-intentional-diffs.md) — 검토 완료 표시.
   //   ⚠ EN에는 08-20 커밋(851d8dc7)의 GTO ⑨ 역링크 1문단도 있으나 EN updated가 08-19에 머물러
@@ -125,7 +127,7 @@ Vamos aos números reais. Digamos que o pote seja de ==$30== no flop:
 - Uma c-bet de **um terço do pote** é ==$10== — a sua range bet de dry board.
 - Uma c-bet de **dois terços do pote** é ==$20== — o seu tamanho de wet board, para cobrar dos draws.
 
-Em **torneios**, use tamanhos um pouco menores — muitas vezes **meio pote ou menos** — porque o seu stack é precioso e você não pode recarregar. Seja qual for a escolha, amarre o tamanho ao board, não ao hábito.
+Em **torneios**, aperte um pouco os tamanhos: o pequeno continua sendo um terço, mas o grande vira **meio pote** com mais frequência do que dois terços, porque o seu stack é precioso e você não pode recarregar. Seja qual for a escolha, amarre o tamanho ao board, não ao hábito.
 
 ---
 
@@ -231,7 +233,7 @@ A. Depende da posição, do board e do número de adversários, então trate iss
 
 **Q. Quanto você deve apostar na c-bet?**
 
-A. Ajuste o tamanho ao board. Em boards dry e estáticos, aposte pequeno — cerca de um terço do pote — porque o range do seu adversário é fraco e você não precisa cobrar dos draws. Em boards wet e dinâmicos, aposte grande — dois terços do pote ou mais — para cobrar dos flushes e projetos de sequência e construir o pote com as suas mãos fortes. Em torneios, use tamanhos menores, muitas vezes meio pote ou menos.
+A. Ajuste o tamanho ao board. Em boards dry e estáticos, aposte pequeno — cerca de um terço do pote — porque o range do seu adversário é fraco e você não precisa cobrar dos draws. Em boards wet e dinâmicos, aposte grande — dois terços do pote ou mais — para cobrar dos flushes e projetos de sequência e construir o pote com as suas mãos fortes. Em torneios o tamanho grande encolhe — meio pote com mais frequência do que dois terços —, enquanto o pequeno continua sendo um terço.
 
 **Q. Você deve dar c-bet fora de posição?**
 

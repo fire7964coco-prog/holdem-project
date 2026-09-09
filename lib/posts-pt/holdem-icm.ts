@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "O ICM (Independent Chip Model) converte seu stack de fichas de torneio no seu valor real em premiação, usando os payouts e os stacks de todo mundo. Como você só ganha um primeiro prêmio, dobrar suas fichas nunca dobra seu dinheiro — então o stack do chip leader vale menos do que sua fatia de fichas, e os short stacks valem mais. Essa diferença é o motivo de você foldar na bolha mãos que seriam calls fáceis num cash game.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-08-28",
-  masterUpdated: "2026-08-13",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🏆",
@@ -47,7 +47,7 @@ A virada mental chave: num cash game uma ficha é um dólar, ponto final. Num to
 
 ## Por que suas fichas não valem o valor de face em dinheiro
 
-**Porque a premiação é "pesada no topo" e travada abaixo de você.** Digamos que três prêmios pagam $50 / $30 / $20. No momento em que você entra no dinheiro, você está garantido a pelo menos $20 — então as fichas que protegem esses $20 são preciosas, enquanto as fichas indo atrás do primeiro lugar perseguem um prêmio que você só pode ganhar uma vez.
+**Porque a premiação é repartida entre várias colocações e travada abaixo de você — dobrar suas fichas não dobra a sua equity de premiação.** Digamos que três prêmios pagam $50 / $30 / $20. No momento em que você entra no dinheiro, você está garantido a pelo menos $20 — então as fichas que protegem esses $20 são preciosas, enquanto as fichas indo atrás do primeiro lugar perseguem um prêmio que você só pode ganhar uma vez.
 
 Isso faz a curva de fichas-para-dinheiro ==entortar==: as primeiras fichas (sobrevivência) valem muito, as últimas fichas (indo pela vitória) valem menos. Um jogador com metade das fichas não é dono de metade da premiação — ele é dono de bem menos, porque não pode terminar melhor que primeiro mas *pode* ainda bustar.
 
@@ -99,7 +99,7 @@ Lá está em números: o leader tem ==metade das fichas mas só 38,4% do dinheir
 
 **O chip EV mede uma decisão em fichas ganhas ou perdidas; o ICM (ou "$EV") mede em premiação real. Eles concordam cedo e se separam feio no fim.** Cedo num torneio, com pay jumps pequenos e distantes, uma ficha é basicamente uma ficha — você joga [chip EV](/pt/blog/holdem-equity "thumb:/images/holdem-equity-hero.webp"), acumulando sem parar. Perto do dinheiro e na final table, o ICM assume.
 
-O confronto clássico é *pagar* um all-in marginal. No chip EV, um cara ou coroa por um pote grande pode ser ok ou até bom — você ganha tantas fichas quanto perde. No ICM pode ser um ==fold== claro, porque bustar te custa premiação travada que você não recupera, enquanto as fichas que você ganharia valem menos que o valor de face.
+O confronto clássico é *pagar* um all-in marginal. No chip EV, um cara ou coroa por um pote grande pode ser ok ou até bom — você ganha tantas fichas quanto perde. No ICM pode ser um ==fold== claro, porque bustar te custa a sua equity em todo prêmio acima daquele que você já garantiu (o mínimo garantido em si continua seu), enquanto as fichas que você ganharia valem menos que o valor de face.
 
 É aqui que eu entendia aqueles valetes ao contrário. O imposto é cobrado no *call*, e o outro lado disso é justamente o que torna uma bolha jogável: como o range de pagar de todo mundo aperta, sua fold equity vale **mais** do que vale em fichas. Dar shove sendo o primeiro é a arma do stack médio na bolha, não o leak dele — eu esbarrei no único jogador que podia pagar mais aberto, e isso é variância, não erro de estratégia. ==O chip EV pergunta "isso vai construir meu stack?" O ICM pergunta "isso vai construir meu bankroll?"== — e só o segundo paga de verdade.
 
@@ -115,7 +115,7 @@ O jogador que sente isso mais é o **stack médio na bolha** — grande o bastan
 
 ---
 
-![Um stack médio de torneio foldando ao shove de um stack grande na bolha do dinheiro, fichas e uma escada de payout à vista — o momento em que a pressão de ICM transforma um call normal num fold](/images/holdem-icm-pressure.webp "Pressão de ICM: o stack médio folda porque bustar custa premiação travada que as fichas não podem comprar de volta")
+![Um stack médio de torneio foldando ao shove de um stack grande na bolha do dinheiro, fichas e uma escada de payout à vista — o momento em que a pressão de ICM transforma um call normal num fold](/images/holdem-icm-pressure.webp "Pressão de ICM: o stack médio folda porque bustar custa a equity de premiação acima do pagamento já garantido")
 
 ## Bubble factor & risk premium: como o ICM muda seus shoves e calls
 
@@ -158,11 +158,11 @@ O short stack recebe ==$97 a mais== de um ICM deal do que de um chip chop, porqu
 - **A bolha da final table e cada pay jump na final table** — cada degrau da escada é dinheiro real.
 - **Satellites** — o caso extremo: cada vaga classificatória vale o mesmo, então quando você tem fichas suficientes para ganhar uma vaga, fichas extras valem quase *nada* e você folda quase tudo.
 
-Ignore-o (jogue chip EV) quando:
+Apoie-se no chip EV como aproximação suficiente quando:
 
 - **Fases inicial e média**, onde o próximo pay jump é uma abstração distante e acumular fichas é o que ganha torneios.
 - **Jogo deep-stacked com blinds pequenos**, onde você tem espaço para superar os adversários no jogo em vez de meter tudo.
-- **Heads-up pelo título**, onde só restam dois prêmios e o ICM para de mudar sua estratégia — na prática é chip EV de novo.
+- **Heads-up pelo título**, onde só restam dois prêmios, então o dinheiro ainda em jogo pode ser avaliado por chip EV.
 
 Um leak comum é aplicar ICM demais: foldar até virar um short stack "para subir na escada" em vez de acumular quando a pressão ainda não está realmente ali. O ICM é uma ferramenta de fim de jogo, não uma desculpa para jogar com medo o torneio inteiro.
 
@@ -197,7 +197,7 @@ A. Ele atribui a cada jogador uma probabilidade de terminar em cada posição pa
 
 **Q. Qual a diferença entre ICM e chip EV?**
 
-A. O chip EV mede uma decisão em fichas ganhas ou perdidas; o ICM mede em dinheiro real. Eles concordam cedo num torneio e divergem perto do dinheiro, onde bustar custa equity de premiação travada. Um all-in cara-ou-coroa que está ok em chip EV pode ser um fold claro sob ICM.
+A. O chip EV mede uma decisão em fichas ganhas ou perdidas; o ICM mede em dinheiro real. Eles concordam cedo num torneio e divergem perto do dinheiro, onde bustar custa a equity de premiação acima do pagamento que você já garantiu. Um all-in cara-ou-coroa que está ok em chip EV pode ser um fold claro sob ICM.
 
 **Q. O que é um ICM deal, e como ele difere de um chip chop?**
 
@@ -209,7 +209,7 @@ A. Não. Num cash game cada ficha já vale seu valor de face em dólares e você
 
 **Q. Quando eu deveria ignorar o ICM?**
 
-A. Fases inicial e média, jogo deep-stacked com blinds pequenos, e heads-up pelo título — todos os spots onde os pay jumps estão longe ou só restam dois prêmios. Nesses casos você joga chip EV e foca em acumular fichas.
+A. Você nunca o desliga por completo, mas o efeito é pequeno o bastante para usar o chip EV como aproximação nas fases inicial e média e no jogo deep-stacked com blinds pequenos — spots onde os pay jumps estão longe. No heads-up pelo título só restam dois prêmios, então a diferença entre primeiro e segundo pode ser avaliada por chip EV. Mesmo aí, confira a estrutura de pagamentos e a distribuição de stacks.
 
 **Q. Quem inventou o ICM?**
 

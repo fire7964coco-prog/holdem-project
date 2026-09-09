@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "El ICM (Independent Chip Model, Modelo de Fichas Independiente) convierte tu stack de fichas de torneo en su valor real en premios, usando los pagos y los stacks de todos. Como solo se gana un primer premio, doblar tus fichas nunca dobla tu dinero — así que el stack del líder vale menos que su porcentaje de fichas, y los stacks cortos valen más. Ese desfase es la razón por la que foldeas en la burbuja manos que serían calls fáciles en un cash game.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-09-07",
-  masterUpdated: "2026-08-28",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🏆",
@@ -47,7 +47,7 @@ El cambio mental clave: en un cash game una ficha es un dólar, punto. En un tor
 
 ## Por qué tus fichas no valen su valor nominal en dinero
 
-**Porque el dinero de los premios está "cargado arriba" y queda bloqueado por debajo de ti.** Digamos que tres premios pagan $50 / $30 / $20. En el momento en que entras en premios, tienes garantizados al menos $20 — así que las fichas que protegen esos $20 son valiosísimas, mientras que las fichas que van a por el primer puesto persiguen un premio que solo puedes ganar una vez.
+**Porque el dinero de los premios está repartido entre varios puestos y queda bloqueado por debajo de ti — doblar tus fichas no dobla tu equity de premio.** Digamos que tres premios pagan $50 / $30 / $20. En el momento en que entras en premios, tienes garantizados al menos $20 — así que las fichas que protegen esos $20 son valiosísimas, mientras que las fichas que van a por el primer puesto persiguen un premio que solo puedes ganar una vez.
 
 Eso hace que la curva fichas-dinero ==se doble==: las primeras fichas (supervivencia) valen mucho, las últimas fichas (ir a por la victoria) valen menos. Un jugador con la mitad de las fichas no posee la mitad de la bolsa de premios — posee bastante menos, porque no puede terminar mejor que primero pero *sí* puede bustear.
 
@@ -99,7 +99,7 @@ Ahí lo tienes en números: el líder tiene ==la mitad de las fichas pero solo e
 
 **El chip EV mide una decisión en fichas ganadas o perdidas; el ICM (o "$EV") la mide en premio real. Coinciden pronto y se separan con fuerza al final.** Al principio de un torneo, con saltos de premio minúsculos y lejanos, una ficha es básicamente una ficha — juegas [chip EV](/es/blog/holdem-equity "thumb:/images/holdem-equity-hero.webp"), acumulando sin parar. Cerca de los premios y en la mesa final, el ICM toma el mando.
 
-El choque clásico es *pagar* un all-in marginal. En chip EV, un coin flip por un bote grande puede estar bien o incluso ser bueno — ganas tantas fichas como pierdes. En ICM puede ser un ==fold== claro, porque bustear te cuesta premio bloqueado que no puedes recuperar, mientras que las fichas que ganarías valen menos que su valor nominal.
+El choque clásico es *pagar* un all-in marginal. En chip EV, un coin flip por un bote grande puede estar bien o incluso ser bueno — ganas tantas fichas como pierdes. En ICM puede ser un ==fold== claro, porque bustear te cuesta tu equity en todos los premios por encima del que ya tienes bloqueado (el mínimo garantizado sigue siendo tuyo), mientras que las fichas que ganarías valen menos que su valor nominal.
 
 Ahí es donde yo tenía aquellas jotas al revés. El impuesto se cobra en el *call*, y el reverso de eso es lo que hace jugable una burbuja: como los rangos de pagar de todos se cierran, tu fold equity vale **más** que en fichas. Ir de all-in siendo el primero es el arma del stack medio en la burbuja, no su fuga — me topé con el único jugador que podía pagar más amplio, y eso es varianza, no un error de estrategia. ==El chip EV pregunta "¿esto hará crecer mi stack?" El ICM pregunta "¿esto hará crecer mi bankroll?"== — y solo el segundo paga.
 
@@ -115,7 +115,7 @@ El jugador que más lo sufre es el **stack medio en la burbuja** — lo bastante
 
 ---
 
-![Un stack medio de torneo foldeando ante el all-in de un stack grande en la burbuja de premios, con fichas y una escalera de pagos a la vista — el momento en que la presión del ICM convierte un call normal en un fold](/images/holdem-icm-pressure.webp "Presión del ICM: el stack medio foldea porque bustear le cuesta premio bloqueado que las fichas no pueden recomprar")
+![Un stack medio de torneo foldeando ante el all-in de un stack grande en la burbuja de premios, con fichas y una escalera de pagos a la vista — el momento en que la presión del ICM convierte un call normal en un fold](/images/holdem-icm-pressure.webp "Presión del ICM: el stack medio foldea porque bustear le cuesta la equity de premio que hay por encima del pago que ya tiene bloqueado")
 
 ## Bubble factor y risk premium: cómo el ICM cambia tus all-ins y tus calls
 
@@ -158,11 +158,11 @@ El stack corto obtiene ==$97 más== con un acuerdo por ICM que con un chip chop,
 - **La burbuja de la mesa final y cada salto de premio en la mesa final** — cada peldaño de la escalera es dinero real.
 - **Satélites** — el caso extremo: cada plaza clasificatoria vale lo mismo, así que en cuanto tienes fichas suficientes para ganar una plaza, las fichas extra no valen casi *nada* y foldeas casi todo.
 
-Ignóralo (juega chip EV) cuando:
+Apóyate en el chip EV como aproximación suficientemente buena cuando:
 
 - **Fases tempranas y medias**, donde el siguiente salto de premio es una abstracción lejana y acumular fichas es lo que gana torneos.
 - **Juego deep stack con ciegas pequeñas**, donde tienes margen para superar a tus rivales en juego en lugar de meterlo todo.
-- **Mano a mano por el título**, donde solo quedan dos premios y el ICM deja de cambiar tu estrategia — vuelve a ser chip EV, en la práctica.
+- **Mano a mano por el título**, donde solo quedan dos premios, así que el dinero que sigue en juego se puede juzgar en chip EV.
 
 Un leak común es sobreaplicar el ICM: foldear hasta quedarte en stack corto "para escalar" en vez de acumular cuando la presión aún no está de verdad ahí. El ICM es una herramienta de fase final, no una excusa para jugar con miedo todo el torneo.
 
@@ -197,7 +197,7 @@ A. Asigna a cada jugador una probabilidad de terminar en cada puesto pagado seg�
 
 **Q. ¿Cuál es la diferencia entre el ICM y el chip EV?**
 
-A. El chip EV mide una decisión en fichas ganadas o perdidas; el ICM la mide en dinero real. Coinciden al principio de un torneo y divergen cerca de los premios, donde bustear te cuesta equity de premio bloqueado. Un all-in de coin flip que está bien en chip EV puede ser un fold claro bajo ICM.
+A. El chip EV mide una decisión en fichas ganadas o perdidas; el ICM la mide en dinero real. Coinciden al principio de un torneo y divergen cerca de los premios, donde bustear te cuesta la equity de premio que hay por encima del pago que ya tienes bloqueado. Un all-in de coin flip que está bien en chip EV puede ser un fold claro bajo ICM.
 
 **Q. ¿Qué es un acuerdo por ICM, y en qué se diferencia de un chip chop?**
 
@@ -209,11 +209,11 @@ A. No. En un cash game cada ficha ya equivale a su valor nominal en dólares y p
 
 **Q. ¿Cuándo debería ignorar el ICM?**
 
-A. En fases tempranas y medias, en juego deep stack con ciegas pequeñas, y mano a mano por el título — todos spots donde los saltos de premio quedan lejos o solo quedan dos premios. En esos casos juegas chip EV y te centras en acumular fichas.
+A. Nunca lo apagas del todo, pero su efecto es lo bastante pequeño como para usar el chip EV como aproximación en las fases tempranas y medias y en el juego deep stack con ciegas pequeñas — spots donde los saltos de premio quedan lejos. En el mano a mano por el título solo quedan dos premios, así que la diferencia entre el primero y el segundo se puede juzgar en chip EV. Aun así, revisa la estructura de pagos y el reparto de stacks.
 
 **Q. ¿Cuáles son los errores de ICM más comunes?**
 
-A. Tres grandes. Primero, *sobre*aplicar el ICM — foldear hasta quedarte corto "para escalar" cuando los saltos de premio aún están lejos, en vez de acumular fichas. Segundo, pagar demasiado ancho como stack medio cerca de la burbuja, justo donde tu risk premium es más alto y bustear te cuesta premio bloqueado. Tercero, aceptar un chip chop cuando vas corto (o un acuerdo por ICM cuando eres el líder) sin pasar los números primero. El ICM es una herramienta de fase final: usarlo demasiado pronto, o ignorarlo en la mesa final, filtra dinero en ambos casos.
+A. Tres grandes. Primero, *sobre*aplicar el ICM — foldear hasta quedarte corto "para escalar" cuando los saltos de premio aún están lejos, en vez de acumular fichas. Segundo, pagar demasiado ancho como stack medio cerca de la burbuja, justo donde tu risk premium es más alto y bustear te cuesta la equity que hay por encima del pago que ya tienes bloqueado. Tercero, aceptar un chip chop cuando vas corto (o un acuerdo por ICM cuando eres el líder) sin pasar los números primero. El ICM es una herramienta de fase final: usarlo demasiado pronto, o ignorarlo en la mesa final, filtra dinero en ambos casos.
 
 **Q. ¿Qué significa ITM (in the money / en premios)?**
 

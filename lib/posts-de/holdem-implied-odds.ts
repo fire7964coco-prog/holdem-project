@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Implied Odds sind die zusätzlichen Chips, die du auf späteren Streets zu gewinnen erwartest, wenn dein Draw ankommt. Sie erlauben dir, einen Draw profitabel zu callen, den die Pot Odds allein zum Fold verurteilen – aber nur, wenn die Stacks tief sind und dein Gegner dich wirklich auszahlt.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-08-26",
-  masterUpdated: "2026-08-26",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "💰",
@@ -54,7 +54,7 @@ Pot Odds | Implied Odds
 Nur die Chips, die jetzt im Pot sind | Der Pot jetzt + Chips, die du auf späteren Streets gewinnst
 Eine Tatsache, die du exakt berechnen kannst | Eine Schätzung auf Basis von Stacks und Gegner
 Sagt dir, ob der Call sich heute selbst bezahlt | Sagt dir, ob der Call sich über die ganze Hand auszahlt
-Funktioniert sogar gegen ein All-in | Wert null gegen ein All-in (keine Bets mehr)
+Funktioniert sogar gegen ein All-in | Wert null gegen ein All-in (heads-up – keine Bets mehr)
 :::
 
 Die praktische Regel: **Fang mit den Pot Odds an.** Wenn deine Equity den Preis bereits schlägt, calle – keine Geschichte nötig. Wenn dein Draw den Preis *knapp verfehlt*, dann werden Implied Odds zum Tiebreaker. Und wenn dein Draw den Preis um Längen verfehlt, können Implied Odds ihn meist auch nicht retten.
@@ -155,12 +155,12 @@ Die Lektion: Ein Draw zu den ==g:Nuts== ist weit mehr wert als derselbe Draw zu 
 
 ## Wann solltest du dich NICHT auf Implied Odds verlassen?
 
-**In dem Moment, in dem dein Gegner all-in ist, sind deine Implied Odds exakt null – es gibt kein Geld mehr zu gewinnen, also bist du zurück bei reinen Pot Odds.** Das ist das am meisten missbrauchte Konzept im Poker: „Ich hatte doch Implied Odds“ ist die Ausrede, zu der Spieler nach einem Call greifen, der nie gerechtfertigt war.
+**Heads-up sind deine Implied Odds in dem Moment exakt null, in dem dein Gegner all-in ist – von ihm ist kein Geld mehr zu gewinnen, also bist du zurück bei reinen Pot Odds.** (Multiway kann ein dritter Spieler mit Chips einen Side Pot am Leben halten – aber der All-in-Spieler kann dir nie wieder einen Cent zahlen.) Das ist das am meisten missbrauchte Konzept im Poker: „Ich hatte doch Implied Odds“ ist die Ausrede, zu der Spieler nach einem Call greifen, der nie gerechtfertigt war.
 
 Achte auf diese Lecks:
 
 :::card
-🚫 | Villain ist all-in | Keine zukünftigen Streets heißt kein zukünftiges Geld. Implied Odds = 0. Nutze nur Pot Odds
+🚫 | Villain ist all-in | Keine zukünftigen Streets heißt kein zukünftiges Geld von ihm. Heads-up: Implied Odds = 0 – nutze nur Pot Odds
 📉 | Kurze Stacks dahinter | Wenn nur ein halber Pot zu gewinnen bleibt, ist „ich werde am River ausgezahlt“ eine Fantasie
 🙅 | Ein „Nicht-Zahler“-Gegner | Ein Nit, der nur die Nuts bettet, zahlt deinen Flush nicht aus. Deine Implied Odds leben und sterben mit seiner Bereitschaft zu callen
 🃏 | Ein gefährliches Board | Wenn die Karte, die deinen Draw komplettiert, auch die Action einfriert (vier zum Flush, gepaartes Board), zahlt dich niemand
@@ -200,7 +200,7 @@ A. Selten. Ein Gutshot trifft am Turn mit der River-Karte nur in 8,7% der Fälle
 
 **Q. Gelten Implied Odds, wenn dein Gegner all-in ist?**
 
-A. Nein. Wenn dein Gegner all-in ist, gibt es keine weiteren Setzrunden, also gibt es kein zusätzliches Geld zu gewinnen – deine Implied Odds sind null. In diesem Spot musst du dich allein auf die Pot Odds verlassen. Implied Odds gegen ein All-in anzunehmen, ist ein häufiger und teurer Fehler.
+A. Nein – heads-up gibt es, wenn dein Gegner all-in ist, keine weiteren Setzrunden, also auch kein zusätzliches Geld, das von ihm zu gewinnen wäre: Deine Implied Odds sind null. (Multiway kann ein dritter Spieler mit Chips einen Side Pot am Leben halten; der All-in-Spieler selbst kann dir aber nie mehr zahlen.) In diesem Spot musst du dich allein auf die Pot Odds verlassen. Implied Odds gegen ein All-in anzunehmen, ist ein häufiger und teurer Fehler.
 
 **Q. Wie funktionieren Implied Odds beim Set Mining?**
 
@@ -219,7 +219,7 @@ A. Bei Implied Odds geht es nur um das Geld, das noch zu gewinnen ist, und tiefe
 ## Die 3 Dinge, die du dir merken solltest
 
 1. **Die Formel:** extra nötig = (Call ÷ Trefferquote) − (aktueller Pot + Call). Wenn du realistisch mehr als das später gewinnen kannst, ist der Call gut, selbst wenn die Pot Odds Fold sagen.
-2. **Der Realitätscheck:** Implied Odds sind eine Schätzung, die von tiefen Stacks und einem zahlenden Gegner lebt. Gegen ein All-in oder einen kurzen Stack sind sie null – greif zurück auf die Pot Odds.
+2. **Der Realitätscheck:** Implied Odds sind eine Schätzung, die von tiefen Stacks und einem zahlenden Gegner lebt. Gegen ein All-in sind sie null, und gegen einen kurzen Stack bleibt kaum etwas übrig – greif zurück auf die Pot Odds.
 3. **Der dunkle Spiegel:** Reverse Implied Odds bestrafen Non-Nut-Draws. Ein Draw zu den Nuts ist weit mehr wert als derselbe Draw zur zweitbesten Hand.
 
 Mach das richtig, und du hörst auf, Chips für hoffnungsvolle Calls zu verbrennen, während du weiterhin die profitablen machst, die sich sonst niemand traut. Von hier aus sicher dir die rohen Zahlen mit der [Poker-Odds- und Wahrscheinlichkeitstabelle](/de/blog/holdem-probability), oder sieh genau, wie oft jeder Draw ankommt, in den [Drawing Odds](/de/blog/holdem-drawing-odds).

@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Aturan All-In Texas Hold'em: Side Pot, Re-Raise & Showdown",
   seoTitle: "All-In tapi Bingung Menang Apa? — Aturan All-In & Side Pot",
   desc: "Dorong semua chip tapi tak yakin bisa menang apa? Aturan all-in Texas Hold'em: table stakes, side pot, hak re-raise, dan urutan showdown.",
-  tldr: "All-in artinya mempertaruhkan seluruh chip yang Anda punya. Anda hanya bisa memenangkan jumlah yang Anda samakan dari tiap lawan (pot utama). Taruhan ekstra dari stack yang lebih besar membentuk side pot yang tidak bisa Anda menangkan. All-in yang kurang dari satu raise penuh TIDAK membuka kembali taruhan bagi pemain yang sudah beraksi.",
+  tldr: "All-in artinya mempertaruhkan seluruh chip yang Anda punya. Anda hanya bisa memenangkan jumlah yang Anda samakan dari tiap lawan (pot utama). Taruhan ekstra dari stack yang lebih besar membentuk side pot yang hanya bisa dimenangkan pemain yang menyamai taruhan itu. All-in yang kurang dari satu raise penuh TIDAK membuka kembali taruhan bagi pemain yang sudah beraksi.",
   category: "rules",
   date: "2026-06-15",
   updated: "2026-09-09",
@@ -221,7 +221,7 @@ Table stakes. Yang ada di meja adalah semua yang bisa Anda pertaruhkan. Kalau An
 
 ### Kesalahan 4: Membuang kartu (muck) terlalu cepat
 
-Anda all-in untuk pot utama. Dua pemain lain bertarung memperebutkan side pot. Di sebuah cash game, saya pernah melihat seorang short stack melempar kartunya begitu showdown side pot berbalik melawannya — lupa bahwa dia bahkan tidak ikut di pot itu, dan pot utama masih bisa ia menangkan. Chip itu lenyap begitu kartunya menyentuh muck. Jangan muck — kartu Anda masih hidup untuk pot utama. ==Selalu tunggu dealer menyelesaikan setiap pot sebelum menyentuh kartu Anda.==
+Anda all-in untuk pot utama. Dua pemain lain bertarung memperebutkan side pot. Di sebuah cash game, saya pernah melihat seorang short stack melempar kartunya begitu showdown side pot berbalik melawannya — lupa bahwa dia bahkan tidak ikut di pot itu, dan pot utama masih bisa ia menangkan. Begitu dealer menyapunya ke dalam muck, kartu itu tak lagi bisa diidentifikasi — mati, dan pot utama jatuh ke pemain lain. (Kartu yang masih bisa dikenali dengan jelas kadang boleh diambil kembali atas kebijakan floor, tapi jangan pernah mengandalkan itu.) Jangan muck — kartu Anda masih hidup untuk pot utama. ==Selalu tunggu dealer menyelesaikan setiap pot sebelum menyentuh kartu Anda.==
 
 ### Kesalahan 5: All-in karena frustrasi
 

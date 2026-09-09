@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Seri dipecahkan dalam urutan tetap: jenis tangan dulu, lalu kartu pembentuk tangan, lalu kicker dari tertinggi ke terendah. Pair sama → kicker pertama tertinggi menang; lima kartu identik → pot dibagi. Jenis kartu tak pernah menentukan seri.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-08-27",
-  masterUpdated: "2026-07-19",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "⚖️",
@@ -188,7 +188,7 @@ A. Dua kartu tertinggi berikutnya — dua kicker-nya — yang memecah seri, diba
 
 **Q. Apakah kartu kelima penting di poker?**
 
-A. Ya. Saat empat kartu pertama kedua tangan identik, kartu kelima menentukan seluruh pot — kicker ketiga sebuah pair, kartu terendah sebuah flush, kartu samping quads di meja. Baru berhenti penting saat kartu meja mengungguli nilai kartu tertutup Anda.
+A. Ya. Saat empat kartu pertama kedua tangan identik, kartu kelima menentukan seluruh pot — kicker ketiga sebuah pair, kicker tunggal sebuah two pair, kartu terendah sebuah flush, dan kartu samping di sebelah quads yang duduk di meja. Ia baru berhenti penting saat kartu meja sendiri mengungguli kartu samping yang Anda pegang — kadang karena seluruh board yang bermain dan kartu tertutup Anda gugur sepenuhnya, kadang karena satu kartu tertutup ikut bermain sementara yang lain tak pernah terhitung: A♠ 3♠ melawan A♦ 2♦ di A♥ K♣ Q♦ J♠ 9♥ adalah chop, keduanya memainkan A-A-K-Q-J.
 
 **Q. Bisakah As dipakai sebagai angka 1 di poker?**
 

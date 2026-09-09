@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Of the 169 starting hand types, only a small top slice — about 15–20% of the hands you're dealt — is profitable for a beginner. Big pairs (AA–TT) and AK raise from any seat; the later you act, the wider you open — from ~13% under the gun to ~43% on the button (wider again in 6-max). Start with a simplified chart, add GTO preflop charts once raise-or-fold is automatic.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-08-26",
+  updated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🂡",
@@ -118,10 +118,10 @@ The core of the UTG range (a full ~13% range widens to mid pairs like 77–99, m
 - Premium suited: **AKs, AQs, AJs, KQs**
 - Premium offsuit: **AKo** (and sometimes AQo)
 
-Hands that look strong but should fold from UTG:
+Hands that look strong but are folds or marginal from UTG:
 
 - **KJo, QJo, KTo** — too many dominated scenarios against the players who call a UTG open
-- **77, 88** — fine from the button, marginal from UTG
+- **77, 88** — fine from the button; from UTG they sit at the outer edge of the full ~13% range above, so they're the first pairs to drop when the table is tough
 - **Weak suited aces (A2s–A7s)** — save these for late position
 
 ### Late position (cutoff and button): the widest range
@@ -194,7 +194,7 @@ The worst starting hands in poker aren't random junk like 7-2 — nobody needs a
 | ==r:Weak aces (A2o–A8o)== | Makes second-best pair vs. better aces | "I have an ace, it must be good" |
 | Low offsuit connectors (76o, 65o) | Rarely hits cleanly, hard to play when it does | "It could make a straight" |
 | King-rag offsuit (K3o, K4o) | Dominated by every better king | "A king is a big card" |
-| Any two suited cards | Makes a flush by the river only ~6.5% of the time (flops one ~0.8%) | "But they're the same suit" |
+| Any two suited cards | Makes a flush by the river only ~6.4% of the time (flops one ~0.8%) | "But they're the same suit" |
 
 ![Weak ace trap in Texas Hold'em — A♣ 4♦ outlined in red as a losing hand, dominated by A♠ K♦ in gold](/images/holdem-starting-hands-weak-ace-trap.webp "Weak aces look strong but stay dominated — fold them preflop")
 
@@ -275,7 +275,7 @@ A. Not at first. GTO preflop charts use mixed frequencies designed to be unexplo
 
 **Q. Does being suited really matter?**
 
-A. Suited adds about 2 percentage points of equity over the same offsuit hand (AKs is 67% against a random hand; AKo, 65%) — meaningful, but not a reason to play a bad hand. Two suited cards make a flush by the river only ~6.5% of the time (and a flopped flush draw completes about 35% of the time by the river). Suited trash is still trash.
+A. Suited adds about 2 percentage points of equity over the same offsuit hand (AKs is 67% against a random hand; AKo, 65%) — meaningful, but not a reason to play a bad hand. Two suited cards make a flush by the river only ~6.4% of the time (and a flopped flush draw completes about 35% of the time by the river). Suited trash is still trash.
 
 **Q. Should I always fold small pocket pairs like 22 or 33?**
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "At showdown, the last player to bet or raise shows first. If the river was checked through, the first active player left of the button shows first. You can muck without showing if you lose, but whoever called the river bet can ask to see the bettor's hand.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-08-25",
+  updated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -171,7 +171,7 @@ A. Yes — if you were the last bettor or raiser on the river, you must show fir
 
 **Q. Can you muck at showdown without showing?**
 
-A. Yes, but only if you clearly lost. Once the winner's hand is shown, losing players can muck face-down. The exception is if your hand was called — the caller who paid for it may ask to see it, and if anyone was all-in in a tournament, nobody may muck at all. Never muck before the dealer reads both hands if there's any uncertainty about who won.
+A. Yes, but only if you clearly lost. Once the winner's hand is shown, losing players can muck face-down. The exception is if your hand was called — the caller who paid for it may ask to see it, and in a tournament, once a player is all-in and all betting action is complete, every hand in the main and side pots must be tabled — nobody may muck (TDA Rule 16). Never muck before the dealer reads both hands if there's any uncertainty about who won.
 
 **Q. What is slow rolling in poker and why is it bad?**
 

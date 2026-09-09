@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "3-bet adalah re-raise pertama sebelum flop — disebut 3-bet karena big blind adalah taruhan pertama, open-raise yang kedua, dan re-raise Anda yang ketiga. Value-3-bet inti yang ketat (QQ+, AK) plus beberapa bluff blocker suited seperti A5s, ukur sekitar 3x dari open in position dan 4x out of position, dan jaga frekuensi 3-bet keseluruhan Anda dekat 6–10%. Saat Andalah yang menghadapi 3-bet, 4-bet tangan premium Anda, call tangan yang bermain baik, dan fold sisanya — fold lebih banyak daripada 'balanced' melawan pemain stake rendah yang tak pernah bluff.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-06",
-  masterUpdated: "2026-09-06",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "16 mnt",
   emoji: "♦️",
@@ -200,7 +200,7 @@ Cukup teori — inilah tangan penuh dengan angka-angkanya, agar Anda bisa meliha
 - **Flop:** ==Q♦ 8♣ 4♥.== Saya mem-flop **top pair, top kicker** — A♠Q♠ saya membuat pair of queens dengan kicker terbaik yang mungkin (ace). Lima kartu terbaik: Q♠ Q♦ A♠ 8♣ 4♥ = one pair (queens) dengan kicker ace. Melawan range-nya berupa queens yang lebih lemah, eights, dan float, saya jauh unggul.
 - **Poinnya:** karena saya 3-bet preflop, pot-nya sudah besar dan saya punya pimpinan taruhan, jadi saya bet lagi untuk value dan dibayar oleh queens yang lebih lemah dan draw. Seandainya saya hanya *flat* preflop, tiga pemain lain mungkin melihat flop itu, tangan saya akan jauh lebih sulit dimainkan, dan pot-nya akan sepersekian ukurannya. 3-bet itulah yang mengubah top pair menjadi sebuah stack.
 
-Sekarang balik: seandainya saya meng-3-bet tangan **ringan** seperti A5s di sana dan cutoff **4-bet** ke $55, saya cukup fold — bluff blocker itu menjalankan tugasnya dengan memberi saya laydown murah dan bersih. Itulah disiplin yang membuat light 3-betting profit alih-alih spewy.
+Sekarang balik: seandainya saya meng-3-bet tangan **ringan** seperti A5s di sana dan cutoff **4-bet** ke $48 (sekitar 2,7x — sedikit di atas 2,2–2,5x versi in position, karena cutoff beraksi lebih dulu di postflop), saya cukup fold — bluff blocker itu menjalankan tugasnya dengan memberi saya laydown murah dan bersih. Itulah disiplin yang membuat light 3-betting profit alih-alih spewy.
 
 ---
 

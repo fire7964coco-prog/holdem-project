@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Beim Texas Hold'em bekommt jeder Spieler 2 Hole Cards, dazu kommen 5 Gemeinschaftskarten – nach vier Setzrunden gewinnt die beste Fünf-Karten-Hand.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-08-27",
+  updated: "2026-09-09",
   // 🔴 masterUpdated는 07-12 그대로 둔다 – 이 글은 「판 전체 재동기화」 보류분(드리프트 잔존)이다.
   //    남은 항목이 있는 채로 올리면 드리프트 추적이 거짓말을 한다(session-handoff §착수 전 7).
   masterUpdated: "2026-07-12",
@@ -345,7 +345,7 @@ Wenn du eine Draw-Hand hast (z. B. vier Karten zum Flush), zähle deine **Outs**
 
 | Situation | Formel | Beispiel (9 Flush-Outs) |
 |-----------|---------|------------------------|
-| Am **Flop** (2 Karten kommen noch) | Outs × 4 | 9 × 4 = **~36% Chance** |
+| Am **Flop**, wenn du beide restlichen Karten ohne weitere Bet siehst (z. B. All-in) | Outs × 4 | 9 × 4 = **~36% Chance** |
 | Am **Turn** (1 Karte kommt noch) | Outs × 2 | 9 × 2 = **~18% Chance** |
 
 </div>

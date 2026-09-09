@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "El equity es tu parte del bote: la parte que le corresponde a tu mano en promedio cuando se reparten todas las cartas, contando los empates en su parte proporcional. Igualas cuando tu equity supera a tus pot odds, pero la posición y las apuestas hacen que casi nunca te quedes con todo tu equity — y el fold equity te deja ganar botes incluso cuando tu mano va por detrás.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-08-12",
-  masterUpdated: "2026-08-12",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🥧",
@@ -121,7 +121,7 @@ Apostar ese proyecto de color vale ==+$52== frente a hacer check-fold — y la m
 
 ==b:Equity realizada = equity bruta × %realización==
 
-Una mano con un 40% de equity bruta que solo realiza el 75% vale en realidad ==0.75 × 40% = 30%==. Por eso puedes ir "por delante del rango de tu rival" y aun así perder dinero — nunca llegas a cobrar el trozo entero.
+Una mano con un 40% de equity bruta que solo realiza el 75% vale en realidad ==0.75 × 40% = 30%==. Por eso puedes ir "por delante del rango de tu rival" y aun así perder dinero — fuera de posición rara vez llegas a cobrar el trozo entero.
 
 Lo que sube o baja tu realización:
 
@@ -131,7 +131,7 @@ Lo que sube o baja tu realización:
 📚 | Profundidad de stack y nivel | Stacks más profundos y rivales más duros hacen más difícil realizar el equity marginal
 :::
 
-Esta es la idea más importante que la mayoría de guías para principiantes deja fuera, y es la razón por la que la [misma mano se juega completamente distinta según la posición](/es/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp"). El equity bruto es el techo; la realización es lo que te llevas a casa.
+Esta es la idea más importante que la mayoría de guías para principiantes deja fuera, y es la razón por la que la [misma mano se juega completamente distinta según la posición](/es/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp"). El equity bruto es el punto de partida — lo que embolsarías si las fichas entraran ahora mismo; la realización es lo que de verdad te llevas a casa, y la posición decide si es más o menos.
 
 ---
 
@@ -141,7 +141,7 @@ Esta es la idea más importante que la mayoría de guías para principiantes dej
 
 Por eso los equities de all-in preflop importan tanto: AA all-in contra KK cobra su ==82%== íntegro — sin impuesto de realización, sin fold equity, solo el número bruto desplegándose. También es la razón por la que un "coin flip" (22 vs AK a ~52/48) es un all-in genuinamente al filo, aunque esas mismas dos manos jugadas postflop divergirían muchísimo según la mesa y quién tenga posición.
 
-El all-in es el único punto del póker donde la tarta se corta exactamente como dice la matemática — que es a la vez su atractivo y su peligro.
+El all-in es el único punto del póker donde, con cartas por venir, la tarta se corta exactamente como dice la matemática — que es a la vez su atractivo y su peligro.
 
 ---
 
@@ -168,7 +168,7 @@ La conclusión práctica: las manos que quieren un bote multiway son las que lig
 Estima el equity bruto | Outs × 4 o × 2 con proyectos; recuerda el enfrentamiento preflop
 Descuenta por realización | ¿Fuera de posición o difícil de jugar? Recórtalo — un 40% bruto puede ser un 30% real
 Suma el fold equity | Si vas a apostar, ¿con qué frecuencia se retira el villano? Ese es equity extra que tu mano sola no tiene
-Compara con el precio | Equity realizada + fold equity vs tus pot odds → iguala, apuesta o retírate
+Compara con el precio | ¿Igualas? Equity realizada vs tus pot odds. ¿Apuestas? Cuántas veces foldea el rival vs el porcentaje de folds de break-even, apuesta ÷ (bote + apuesta) → iguala, apuesta o retírate
 :::
 
 La noche que mencioné al principio, me quedaba en el paso uno y paraba — contaba mi equity bruta e ignoraba que fuera de posición, contra un buen jugador, nunca lo realizaría. En cuanto empecé a descontar por posición y a pensar en *sus* folds en vez de solo en mis cartas, se cerraron las fugas. El equity no es un número que consultas; es una lente por la que pasas cada decisión.
@@ -220,7 +220,7 @@ A. La realización de equity es cuánto de tu equity bruta cobras de verdad. Equ
 
 **Q. ¿Qué es el equity all-in?**
 
-A. El equity all-in es simplemente tu equity bruta — tu parte del bote, con los empates en su parte proporcional — cuando ya no puede haber más apuestas. Como no hay decisiones futuras, realizas el 100%, así que el equity bruto se convierte en la parte exacta del bote que cobras a largo plazo. Es el único punto donde "equity equivale a parte del bote" es literalmente cierto.
+A. El equity all-in es simplemente tu equity bruta — tu parte del bote, con los empates en su parte proporcional — cuando ya no puede haber más apuestas. Como no hay decisiones futuras, realizas el 100%, así que el equity bruto se convierte en la parte exacta del bote que cobras a largo plazo. Es el único punto donde, con cartas por venir, "equity equivale a parte del bote" es literalmente cierto.
 
 **Q. ¿Por qué baja mi equity en botes multiway?**
 
@@ -239,7 +239,7 @@ A. El equity es tu parte de *este* bote si la mano se juega hasta el final (un p
 ## Las 3 cosas que debes recordar
 
 1. **El equity es tu parte del bote** — %equity × tamaño del bote. Iguala cuando supera a tus pot odds. Esa comparación es la columna vertebral de cada decisión.
-2. **Rara vez te quedas con todo.** Equity realizada = bruta × %realización, y la posición es el mayor factor. El equity bruto es el techo, no el pago.
+2. **Rara vez te quedas con todo.** Equity realizada = bruta × %realización, y la posición es el mayor factor. El equity bruto es el punto de partida, no el pago.
 3. **La agresión fabrica equity.** El fold equity permite que una apuesta gane botes que tu mano perdería — pero se derrumba en multiway, donde necesitas que todos se retiren.
 
 Domina esto y el resto de la matemática del póker encaja en su sitio. A partir de aquí, convierte el equity en calls correctos con la [guía de pot odds](/es/blog/holdem-pot-odds), o mira cómo cambian el cuadro los stacks profundos con las [odds implícitas](/es/blog/holdem-implied-odds).

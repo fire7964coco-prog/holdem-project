@@ -8,11 +8,13 @@ export const POST: Post = {
   tldr: "Dari 169 tipe starting hand, hanya irisan atas kecil — sekitar 15–20% kartu yang Anda terima — yang profit untuk pemula. Pair besar (AA–TT) dan AK raise dari kursi mana pun; makin belakang Anda beraksi, makin lebar Anda open — dari ~13% di under the gun hingga ~43% di button (lebih lebar lagi di 6-max). Mulai dengan chart sederhana, tambahkan chart preflop GTO setelah raise-or-fold jadi otomatis.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-08-27",
+  updated: "2026-09-09",
+  // 2026-09-09: EN 09-09 정정(77/88 UTG 위치 · suited ~6,5→6,4% · 목록 머리말) 본문 전파 완료.
+  //   🔴 masterUpdated는 08-11에 그대로 둔다 — 아래 미결 항목의 드리프트 추적기다(올리면 게이트가 눈이 먼다).
   // masterUpdated 08-11 유지 — EN 08-26 변경 중 PDF 앵커 정정(9-max 전용 + 6-max 한 줄)과
   //   suited FAQ 정밀화(2pt·AKs 67/AKo 65)는 08-27에 이식 완료. 남은 유일한 델타 = UTG 확장 목록의
   //   AJo 삭제(EN은 «AQo»만) — 사장님 판단 대기 #1(UTG 13% 구성)과 같은 갈래라 임의 소급 금지.
-  //   #1 판정 후 함께 반영하고 그때 masterUpdated를 08-26으로 올릴 것.
+  //   #1 판정 후 함께 반영하고 그때 masterUpdated를 올릴 것.
   masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "10 mnt",
@@ -123,10 +125,10 @@ Inti dari range UTG (range penuh ~13% melebar ke pair menengah seperti 77–99, 
 - Premium suited: **AKs, AQs, AJs, KQs**
 - Premium offsuit: **AKo** (dan kadang AQo)
 
-Tangan yang terlihat kuat tapi harus fold dari UTG:
+Tangan yang terlihat kuat tapi jadi fold atau marginal dari UTG:
 
 - **KJo, QJo, KTo** — terlalu banyak skenario terdominasi melawan pemain yang call open UTG
-- **77, 88** — bagus dari button, marginal dari UTG
+- **77, 88** — bagus dari button; dari UTG keduanya duduk di tepi terluar range ~13% penuh di atas, jadi merekalah pair pertama yang dilepas saat mejanya keras
 - **Suited ace lemah (A2s–A7s)** — simpan ini untuk posisi belakang
 
 ### Posisi belakang (cutoff dan button): range paling lebar
@@ -199,7 +201,7 @@ Starting hand terburuk di poker bukan sampah acak seperti 7-2 — tak ada yang b
 | ==r:Ace lemah (A2o–A8o)== | Membuat pair terbaik kedua vs. ace yang lebih baik | "Saya punya ace, pasti bagus" |
 | Connector offsuit rendah (76o, 65o) | Jarang nyambung bersih, sulit dimainkan saat nyambung | "Bisa membuat straight" |
 | King-rag offsuit (K3o, K4o) | Terdominasi oleh setiap king yang lebih baik | "King itu kartu besar" |
-| Dua kartu suited apa pun | Membuat flush di river hanya ~6,5% dari waktu (flop satu ~0,8%) | "Tapi kartunya satu suit, kan" |
+| Dua kartu suited apa pun | Membuat flush di river hanya ~6,4% dari waktu (flop satu ~0,8%) | "Tapi kartunya satu suit, kan" |
 
 ![Jebakan ace lemah di Texas Hold'em — A♣ 4♦ dilingkari merah sebagai tangan yang merugi, terdominasi oleh A♠ K♦ berwarna emas](/images/holdem-starting-hands-weak-ace-trap.webp "Ace lemah terlihat kuat tapi tetap terdominasi — fold preflop")
 
@@ -280,7 +282,7 @@ A. Tidak di awal. Chart preflop GTO memakai frekuensi campuran yang dirancang ag
 
 **Q. Apakah suited benar-benar penting?**
 
-A. Suited menambah sekitar 2 poin persentase equity atas tangan offsuit yang sama (AKs 67% melawan satu tangan acak; AKo 65%) — berarti, tapi bukan alasan memainkan tangan buruk. Dua kartu suited membuat flush di river hanya ~6,5% dari waktu (dan flush draw yang di-flop selesai sekitar 35% dari waktu di river). Trash suited tetap trash.
+A. Suited menambah sekitar 2 poin persentase equity atas tangan offsuit yang sama (AKs 67% melawan satu tangan acak; AKo 65%) — berarti, tapi bukan alasan memainkan tangan buruk. Dua kartu suited membuat flush di river hanya ~6,4% dari waktu (dan flush draw yang di-flop selesai sekitar 35% dari waktu di river). Trash suited tetap trash.
 
 **Q. Haruskah saya selalu fold pocket pair kecil seperti 22 atau 33?**
 

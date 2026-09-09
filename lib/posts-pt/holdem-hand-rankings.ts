@@ -8,9 +8,9 @@ export const POST: Post = {
   tldr: "A ordem das mãos do poker, da melhor à pior: Royal Flush, Straight Flush, Quadra, Full House, Flush, Sequência, Trinca, Dois Pares, Par e Carta Alta. Essa escada vale para o Texas Hold'em e quase todas as variantes.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-09-07",
+  updated: "2026-09-09",
 
-  masterUpdated: "2026-09-07",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🃏",
@@ -354,7 +354,7 @@ A. No Brasil se usa uma mistura: royal flush, straight flush, flush e full house
 2. **A armadilha:** o flush (#5) ganha da sequência (#6) — e qualquer mesa pareada pode esconder um full house que ganha dos dois.
 3. **A realidade:** a maioria dos potes é ganha com par ou carta alta, então seu kicker vale mais do que você imagina.
 
-Aprenda a ordem em uma tarde, treine os duelos confusos e repasse "naipes → sequências → pares" em cada mesa. Faça isso e nunca mais empurre o pote para o lado errado.
+Aprenda a ordem em uma tarde, treine os duelos confusos e repasse "flush → sequência → pares" em cada mesa. Faça isso e nunca mais empurre o pote para o lado errado.
 
 Depois de saber o ranking, o próximo passo natural é saber com quais mãos começar — use a [tabela de mãos iniciais do Texas Hold'em por posição](/pt/blog/holdem-starting-hands-chart) para ver exatamente quais cartas jogar de cada assento.
 

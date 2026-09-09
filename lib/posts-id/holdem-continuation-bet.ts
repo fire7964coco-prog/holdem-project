@@ -8,7 +8,9 @@ export const POST: Post = {
   tldr: "Continuation bet (c-bet) adalah taruhan di flop oleh pemain yang raise preflop. Aturan modern bukan 'c-bet tiap flop' — melainkan taruh kecil dan sering di flop yang menguntungkan range Anda (board tinggi dan kering seperti K-7-2) dan check yang menguntungkan lawan (board rendah dan nyambung seperti 7-6-5). Beri sizing kecil — sekitar sepertiga pot — di board kering, besar — dua pertiga pot atau lebih — di board basah, c-bet lebih jarang saat out of position, dan jauh lebih jarang di pot multiway.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-08-27",
+  updated: "2026-09-09",
+  // 2026-09-09: EN 09-09 정정(토너먼트 c-bet 사이즈 «각 구간 안에서» 축소) 본문 전파 완료.
+  //   🔴 masterUpdated는 08-19에 그대로 둔다 — 아래 미결 항목의 드리프트 추적기다(올리면 게이트가 눈이 먼다).
   // masterUpdated 08-19 = EN의 08-19 변경(a-high-board-cbet 역링크 1문단)은 EN·KO 전용 자산이라
   //   번역본에 전파하지 않는다(EN 파일 주석 + docs/locale-intentional-diffs.md) — 검토 완료 표시.
   //   ⚠ EN에는 08-20 커밋(851d8dc7)의 GTO ⑨ 역링크 1문단도 있으나 EN updated가 08-19에 머물러
@@ -125,7 +127,7 @@ Beri angka nyata. Misalkan pot-nya ==$30== di flop:
 - C-bet **sepertiga pot** adalah ==$10== — range bet board kering Anda.
 - C-bet **dua pertiga pot** adalah ==$20== — sizing board basah Anda untuk membebani draw.
 
-Di **turnamen**, condong sedikit lebih kecil — sering **setengah pot atau kurang** — karena stack Anda berharga dan tak bisa reload. Apa pun yang Anda pilih, ikat ukurannya pada board, bukan pada kebiasaan.
+Di **turnamen**, condong sedikit lebih kecil: ukuran kecilnya tetap sepertiga, tapi ukuran besarnya lebih sering **setengah pot** ketimbang dua pertiga, karena stack Anda berharga dan tak bisa reload. Apa pun yang Anda pilih, ikat ukurannya pada board, bukan pada kebiasaan.
 
 ---
 
@@ -230,7 +232,7 @@ A. Tergantung posisi, board, dan jumlah lawan, jadi perlakukan ini sebagai renta
 
 **Q. Berapa besar Anda harus c-bet?**
 
-A. Ukur sesuai board. Di board kering dan statis taruh kecil — sekitar sepertiga pot — karena range lawan lemah dan Anda tak perlu membebani draw. Di board basah dan dinamis taruh besar — dua pertiga pot atau lebih — untuk membebani flush dan straight draw serta membangun pot dengan tangan kuat Anda. Di turnamen, condong lebih kecil, sering setengah pot atau kurang.
+A. Ukur sesuai board. Di board kering dan statis taruh kecil — sekitar sepertiga pot — karena range lawan lemah dan Anda tak perlu membebani draw. Di board basah dan dinamis taruh besar — dua pertiga pot atau lebih — untuk membebani flush dan straight draw serta membangun pot dengan tangan kuat Anda. Di turnamen ukuran besarnya mengecil — lebih sering setengah pot ketimbang dua pertiga — sementara ukuran kecilnya tetap sepertiga.
 
 **Q. Haruskah Anda c-bet out of position?**
 

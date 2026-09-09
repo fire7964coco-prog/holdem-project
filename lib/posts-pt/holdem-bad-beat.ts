@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Um bad beat é quando você coloca suas fichas como favorito pesado — geralmente 80% ou mais — e perde porque o adversário pega uma carta de sorte pra dar um 'suckout' em você. Diferente de um cooler, você estava na frente o tempo todo; o baralho só te traiu no fim. Dói, mas bad beats são na verdade um sinal de que você está jogando num jogo lucrativo.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-04",
-  masterUpdated: "2026-08-28",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "💔",
@@ -19,7 +19,7 @@ export const POST: Post = {
   content: `
 Essa ainda dói: eu tinha um par de ases, coloquei tudo all-in contra um jogador que pagou com um par de cincos, e vi um dos dois últimos cincos bater no river. Eu tinha feito tudo certo. Meu dinheiro entrou como favorito de mais de 4 para 1, e mesmo assim perdi o stack inteiro pra ==uma das duas cartas do baralho que podiam me bater==. Isso é um bad beat, e se você jogar poker por tempo suficiente, vai acontecer com você milhares de vezes.
 
-Um **bad beat** é quando você coloca suas fichas como favorito estatístico pesado e perde mesmo assim, porque o adversário pega uma carta de sorte pra dar um ==g:suckout== em você. A palavra-chave é *favorito* — você estava vencendo quando o dinheiro entrou, e só uma carta improvável virou o resultado. Abaixo está exatamente o que conta como bad beat, como ele difere de um [cooler](/pt/blog/holdem-cooler "thumb:/images/holdem-cooler-hero.webp"), quanto paga um "bad beat jackpot", e a verdade contraintuitiva que todo jogador vencedor acaba aprendendo: bad beats são *bons* pra você. Usar o termo direito — em vez de chamar toda derrota de roubo — é metade do caminho pra dominar o resto do [glossário de poker](/pt/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp").
+Um **bad beat** é quando você coloca suas fichas como favorito estatístico pesado e perde mesmo assim, porque o adversário pega uma carta de sorte pra dar um ==g:suckout== em você. A palavra-chave é *favorito* — você estava vencendo quando o dinheiro entrou, e só uma carta improvável virou o resultado. É uma das palavras mais mal usadas de todo o [glossário de poker](/pt/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp"), então abaixo está exatamente o que conta como bad beat, como ele difere de um [cooler](/pt/blog/holdem-cooler "thumb:/images/holdem-cooler-hero.webp"), quanto paga um "bad beat jackpot", e a verdade contraintuitiva que todo jogador vencedor acaba aprendendo: bad beats são *bons* pra você.
 
 ---
 
@@ -60,7 +60,7 @@ As pessoas usam "bad beat" e "cooler" como sinônimos, mas eles são opostos —
 
 </div>
 
-Um teste rápido: **se o seu adversário precisou *melhorar* pra ganhar, é um bad beat.** Se ele já estava na frente quando o dinheiro entrou e você simplesmente não conseguiu foldar seu monstro, isso é um [cooler](/pt/blog/holdem-cooler) — sem suckout, sem bad beat. E repare na armadilha: **trinca sobre trinca não é bad beat.** Quando a sua trinca de damas perde pra uma trinca de reis, ninguém deu sorte no river — a trinca maior estava na frente o tempo inteiro. Isso é um cooler vestido de bad beat.
+Um teste rápido: **se o seu adversário precisou *melhorar* pra ganhar, é um bad beat.** Se ele já estava na frente quando o dinheiro entrou e você simplesmente não conseguiu foldar seu monstro, isso é um [cooler](/pt/blog/holdem-cooler) — sem suckout, sem bad beat. E repare na armadilha: **trinca flopada sobre trinca flopada não é bad beat.** Quando a sua trinca de damas perde pra uma trinca de reis feita no mesmo flop, ninguém deu sorte no river — a trinca maior estava na frente o tempo inteiro. (Se os reis só acertaram a trinca no turn ou no river, o teste aponta suckout — aí *é* bad beat.) Isso é um cooler vestido de bad beat.
 
 ---
 
@@ -90,13 +90,13 @@ Todo bad beat tem a mesma forma: você é o favorito, o azarão precisa de ajuda
 |:---|:---|:---:|:---|
 | **Ases quebrados por uma trinca** | AA vs um par menor (ex. 7‑7) | ~80% (4:1) | O par deles acerta uma trinca no flop, no turn ou no river |
 | **Ases vs uma mão aleatória** | AA all-in preflop | ~85% | Quaisquer duas cartas te atropelam |
-| **Overpair vs um flush draw (caso-limite)** | Overpair no flop | ~65% (2:1) | O flush draw de 9 outs deles fecha no river |
+| **Overpair vs um flush draw (caso-limite)** | Overpair no flop | ~63% (1,7:1) | O flush draw de 9 outs deles fecha no river |
 | **Runner-runner** | Uma mão feita na frente no flop | ~90%+ | Duas cartas perfeitas (turn *e* river) completam um projeto |
 | **O one-outer** | Uma mão quase travada | ~96% | A única carta restante no baralho te bate |
 
 </div>
 
-*Pela régua da seção anterior, o overpair vs flush draw é o caso-limite da família: com ~65%, é mais variância do que bad beat "de verdade" — mas é assim que a mesa o chama.*
+*Pela régua da seção anterior, o overpair vs flush draw é o caso-limite da família: com ~63%, é mais variância do que bad beat "de verdade" — mas é assim que a mesa o chama.*
 
 O mais icônico são os **ases quebrados por uma trinca.** Você coloca um par de ases all-in preflop contra um par de setes — você é favorito de mais ou menos 80%, uma trava de 4 para 1 a seu favor. Mas há mais dois setes no baralho, e se um bater no board — e nenhum ás aparecer —, a trinca deles bate o seu par. Quatro em cada cinco vezes você abocanha o pote; na quinta, você tem uma história de bad beat que ninguém quer ouvir. A matemática nunca esteve errada — você só caiu no lado errado dela, que é exatamente por que uma única mão não te diz [nada sobre se você jogou bem](/pt/blog/holdem-cooler).
 
@@ -128,9 +128,9 @@ Uma ressalva importante: **cada clube, cassino ou site de poker define seu próp
 
 ## O bad beat mais famoso do poker
 
-Se você quer se sentir melhor com as suas próprias batidas, lembre que as piores acontecem nos maiores palcos. A mais lendária ocorreu no **Main Event da World Series of Poker de 2008**, onde **Motoyuki Mabuchi** transformou seu par de ases em **quadra — quadra de ases**, uma mão que só um straight flush bate — e *ainda assim perdeu*. O river **A♦** completou a quadra dele enquanto, na mesmíssima carta, entregava a **Justin Phillips** (que tinha K♦ J♦) um **royal flush** — o 10‑J‑Q‑K‑A de ouros. Só então o dinheiro entrou: Mabuchi deu check, Phillips apostou, Mabuchi foi de all-in e Phillips pagou na hora. A única carta que completou a quadra de ases foi a única que podia batê-la.
+Se você quer se sentir melhor com as suas próprias batidas, lembre que as piores acontecem nos maiores palcos. A mais lendária ocorreu no **Main Event da World Series of Poker de 2008**, onde **Motoyuki Mabuchi** transformou seu par de ases em **quadra — quadra de ases**, uma mão que só um straight flush bate — e *ainda assim perdeu*. Num board de A♥ 9♣ Q♦ 10♦, **Justin Phillips** (que tinha K♦ J♦) já tinha feito no turn uma sequência de ás — a Broadway, A-K-Q-J-10 —, na frente da trinca de ases de Mabuchi. O river **A♦** completou a quadra de Mabuchi enquanto, na mesmíssima carta, transformava a sequência de Phillips num **royal flush** — o 10‑J‑Q‑K‑A de ouros. A ação no river, como a PokerNews reportou: Mabuchi deu check, Phillips apostou, Mabuchi anunciou "gamble!" e foi de all-in, e Phillips pagou na hora. A única carta que completou a quadra de ases foi a única que podia batê-la.
 
-*Pela régua lá de cima, isso tecnicamente nem é um bad beat — o dinheiro entrou depois da última carta, então não houve suckout nenhum. Mas o poker guarda essa mão como o bad beat mais famoso já distribuído, e o nome pegou.*
+*Pela régua lá de cima, isso tecnicamente nem é um bad beat — Phillips já estava na frente no turn, e as fichas que vimos entrar entraram depois da última carta, então ninguém deu suckout. Mas o poker guarda essa mão como o bad beat mais famoso já distribuído, e o nome pegou.*
 
 Esse é o teto da dor de bad beat: não um favorito de 80% caindo, mas *quatro ases* — uma mão que você pode jogar a vida inteira sem nunca perder — batida por um straight flush, a única categoria de mão que a supera. Vale guardar isso no bolso na próxima vez que seus ases forem quebrados: por pior que o baralho tenha te tratado, alguém já perdeu com quadra de ases.
 
@@ -171,7 +171,7 @@ A. Um bad beat é quando você perde uma mão que era favorito estatístico fort
 
 **Q. Qual a diferença entre um bad beat e um cooler?**
 
-A. Num bad beat você era o favorito quando o dinheiro entrou e foi outdrawn — houve um suckout. Num cooler você estava atrás o caminho todo com uma mão forte demais pra foldar, e nenhum suckout aconteceu. Teste rápido: se o seu adversário teve que *melhorar* pra ganhar, é um bad beat; se ele já estava na frente, é um cooler. Trinca sobre trinca, por exemplo, é um cooler, não um bad beat.
+A. Num bad beat você era o favorito quando o dinheiro entrou e foi outdrawn — houve um suckout. Num cooler você estava atrás o caminho todo com uma mão forte demais pra foldar, e nenhum suckout aconteceu. Teste rápido: se o seu adversário teve que *melhorar* pra ganhar, é um bad beat; se ele já estava na frente, é um cooler. Trinca sobre trinca com as duas flopadas, por exemplo, é um cooler, não um bad beat — se a trinca maior chegou no turn ou no river, foi suckout.
 
 **Q. Perder um coinflip é um bad beat?**
 
@@ -183,7 +183,7 @@ A. Um bad beat jackpot é um prêmio progressivo que algumas salas pagam quando 
 
 **Q. Qual é o pior bad beat da história do poker?**
 
-A. O mais famoso é do Main Event da WSOP de 2008: Motoyuki Mabuchi fez quadra de ases — uma mão que só um straight flush bate — e mesmo assim perdeu. Ele flopou uma trinca de ases, então o ás restante no river completou a quadra dele e, na mesma carta, deu a Justin Phillips um royal flush de ouros. Fazer a melhor quadra possível e esbarrar num straight flush — a única categoria de mão que a supera — é mais ou menos o pior que um bad beat consegue ser.
+A. O mais famoso é do Main Event da WSOP de 2008: Motoyuki Mabuchi fez quadra de ases — uma mão que só um straight flush bate — e mesmo assim perdeu. Ele flopou uma trinca de ases, Justin Phillips fez uma sequência de ás no turn, e então o ás restante no river completou a quadra de Mabuchi e, na mesma carta, transformou a sequência de Phillips num royal flush de ouros. Fazer a melhor quadra possível e esbarrar num straight flush — a única categoria de mão que a supera — é mais ou menos o pior que um bad beat consegue ser.
 
 **Q. Os bad beats são mais comuns online?**
 

@@ -8,9 +8,9 @@ export const POST: Post = {
   tldr: "Urutan kartu poker dari tertinggi sampai terendah: Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, Pair, dan High Card. As adalah kartu tertinggi; simbol (sekop, hati) tidak punya peringkat.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-09-07",
+  updated: "2026-09-09",
 
-  masterUpdated: "2026-09-07",
+  masterUpdated: "2026-09-09",
   image: "/images/holdem-hand-rankings-hero.webp",
   imageAlt: "Royal Flush — 10 J Q K A sekop di meja poker dengan tumpukan chip dan tombol dealer",
   keepImagesInBody: true,
@@ -352,7 +352,7 @@ A. Tidak ada. Simbol — di artikel ini disebut jenis kartu — tidak punya urut
 2. **Jebakannya:** flush (#5) menang atas straight (#6) — dan meja berpasangan mana pun bisa menyembunyikan full house yang menang atas keduanya.
 3. **Kenyataannya:** sebagian besar pot dimenangkan dengan pair atau high card, jadi kicker Anda lebih berharga dari yang Anda kira.
 
-Pelajari urutannya dalam satu sore, latih duel-duel membingungkan, dan jalankan pindaian "jenis → straight → pasangan" di tiap meja. Lakukan itu dan Anda tak akan pernah lagi mendorong pot ke sisi yang salah.
+Pelajari urutannya dalam satu sore, latih duel-duel membingungkan, dan jalankan pindaian "flush → straight → pasangan" di tiap meja. Lakukan itu dan Anda tak akan pernah lagi mendorong pot ke sisi yang salah.
 
 Setelah tahu peringkatnya, langkah alami berikutnya adalah tahu tangan mana yang layak dimainkan — pakai [tabel starting hands Texas Hold'em berdasarkan posisi](/id/blog/holdem-starting-hands-chart) untuk melihat persis kartu awal mana yang dimainkan dari tiap kursi.
 

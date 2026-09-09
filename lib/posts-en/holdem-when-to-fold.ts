@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Folding is the most underrated skill in poker — a fold's worst outcome is zero, while a losing call bleeds chips every time. A solid player folds around 75–85% of hands before the flop, releases missed hands and weak draws that don't meet their pot odds after it, and — hardest of all — lays down strong-but-beaten hands when a passive opponent's line screams value. Most players don't call too much because they can't read hands; they call because the chips already in the pot feel like theirs. They aren't.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-08-26",
+  updated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🛡️",
@@ -109,12 +109,12 @@ Folding trash is easy. Folding a *good* hand — top pair, an overpair, even a s
 | **Top pair, weak kicker** | Facing big turn + river bets | You beat bluffs and worse pairs — but their value range has you out-kicked |
 | **Overpair (JJ/QQ)** | A passive player raises a coordinated board | Passive players raise the nuts, not air — you're drawing thin |
 | **Top pair top kicker** | Board runs out four to a flush or straight | Your one pair can't beat the flush/straight they're repping |
-| **A set** | Big raise on a monotone or four-straight board — **on the river** | Set-over-set is a cooler; a completed flush isn't. On the *flop* the same set is still ~34% against a made flush, so that's a call |
+| **A set** | Big raise on a monotone or four-straight board — **on the river** | Set-over-set is a cooler; a completed flush isn't. On the *flop* the same set still fills up ~34% of the time by the river against a made flush, and wins a stack when it does — call |
 | **Second pair** | Calling three streets "to keep them honest" | You're paying off value three times to catch one bluff |
 
 </div>
 
-The set row is the one that needs its street named, because folding it too early costs more than folding it too late. Hold 9♠9♣ on a 9♥5♥2♥ flop against a made A♥K♥ flush — the worst case you can be up against — and the set still wins ==34%== of the time: it fills up on the seven obvious outs (the case nine, three fives, three deuces) *and* whenever the turn and river pair each other. On the flop that's a call. Only once the draw is home does the row above apply.
+The set row is the one that needs its street named, because folding it too early costs more than folding it too late. Hold 9♠9♣ on a 9♥5♥2♥ flop against a made A♥K♥ flush — the worst case you can be up against — and the set still wins ==34%== of the time: it fills up on the seven obvious outs (the case nine, three fives, three deuces) *and* whenever the turn and river pair each other. On the flop that's a call — not because 34% beats any single bet's price, but because when the board pairs you win everything a flush will pay, and folding sets on the flop costs far more over time than the bets you save. Only once the draw is home does the row above apply.
 
 The mirror image matters too, because **folding can be a leak of its own.** A *good* laydown releases a beaten hand to a line that makes sense. A *bad* laydown folds the best hand to a scare card out of fear — and if you do it often, thinking opponents will bluff you relentlessly. The goal isn't to fold more or fold less; it's to fold *when the evidence is there.*
 

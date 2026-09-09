@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Não do jeito que você faz no blackjack — o baralho é reembaralhado toda mão e poucas cartas ficam expostas, então rastrear cartas altas e baixas não te dá vantagem nenhuma. Mas o poker tem a sua própria contagem legal: contar outs, usar blockers e rastrear cartas mortas para ler o que o seu adversário não pode ter.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-04",
-  masterUpdated: "2026-08-14",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🧮",
@@ -102,7 +102,7 @@ Toda carta que você enxerga remove possibilidades. Você já usou isso ao conta
 
 **Não — contar outs, calcular odds e usar blockers é 100% legal no poker, porque não passa de matemática de cabeça.** Nenhuma regra em lugar nenhum proíbe pensar. É a definição de habilidade.
 
-Aqui está a parte que as pessoas confundem: contar cartas também não é ilegal no *blackjack* — não é crime, só aritmética mental. Mas, na maioria das jurisdições, um cassino é um negócio privado e pode barrar ou recusar um suspeito de contar, porque um contador custa dinheiro à *casa*. O poker inverte isso por completo: você está jogando contra ==outros jogadores==, e a casa só leva o rake não importa quem ganhe. Ninguém tem qualquer motivo para te impedir de contar os seus outs — então todo o problema de "ser expulso" simplesmente não existe aqui.
+Aqui está a parte que as pessoas confundem: contar cartas também não é ilegal no *blackjack* — não é crime, só aritmética mental. Mas, na maioria das jurisdições, um cassino é um negócio privado e pode barrar ou recusar um suspeito de contar, porque um contador custa dinheiro à *casa*. O poker inverte isso por completo: você está jogando contra ==outros jogadores==, e a casa só leva o rake não importa quem ganhe. Ninguém tem qualquer motivo para te impedir de contar os seus outs — o problema de "ser expulso" que persegue o blackjack não nasce da contagem aqui. (Uma sala de poker mantém o direito de recusar qualquer pessoa por outros motivos; fazer conta com o seu próprio projeto não é um deles.)
 
 :::note
 A linha que você nunca deve cruzar é a trapaça física ou informacional — cartas marcadas, conluio, compartilhar info das hole cards ou software de solver em tempo real online. Isso não é "contagem", é fraude. Fazer contas de cabeça sempre vale.

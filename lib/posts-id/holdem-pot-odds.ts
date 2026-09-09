@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Untuk menghitung pot odds, bagi jumlah yang harus Anda call dengan total pot setelah call Anda. Call $50 ke pot $150 = 50 ÷ 200 = 25% — jadi Anda butuh minimal 25% equity agar call ini profit.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-06",
-  masterUpdated: "2026-09-06",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "🧮",
@@ -164,7 +164,7 @@ Penurunan lengkap untuk setiap draw dan tangan jadi ada di [bagan probabilitas](
 Saya membuat setiap kesalahan ini sebelum kesalahan-kesalahan itu membuat saya bangkrut. Waspadai:
 
 :::card
-🧮 | Lupa menyertakan call | Equity yang dibutuhkan adalah call ÷ pot *akhir* — hitung chip Anda sendiri yang masuk, atau Anda akan menilai setiap harga terlalu tinggi
+🧮 | Lupa menyertakan call | Equity yang dibutuhkan adalah call ÷ pot *akhir* — hitung chip Anda sendiri yang masuk, atau Anda akan melebih-lebihkan equity yang Anda butuhkan dan mem-fold call yang seharusnya Anda ambil
 🃏 | Menghitung outs yang tercemar | Sebuah flush out yang juga membuat meja berpasangan bisa memberi seseorang full house. Kurangi outs "kotor" sebelum memercayai angkanya
 🚀 | Salah pakai Rule of 4 | ×4 hanya berlaku saat Anda akan melihat kedua kartu gratis (all-in). Menghadapi taruhan turn, itu ×2 — pakai ×4 membujuk Anda ke call yang merugi
 💸 | Mengabaikan implied & reverse implied odds | Stack dalam menguntungkan tangan draw; draw non-nut yang jadi melawan tangan lebih besar adalah jebakan, bukan hari gajian

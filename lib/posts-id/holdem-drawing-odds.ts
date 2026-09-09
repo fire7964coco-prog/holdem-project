@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Anda flop set dengan pocket pair 11,8% dari waktu (7,5:1 melawan), flop flush dengan dua kartu suited hanya 0,84%, dan menyelesaikan flush draw yang di-flop hingga river 35% dari waktu. Setiap angka di bawah diturunkan dari deck, bukan ditebak.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-08-27",
-  masterUpdated: "2026-08-11",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "🎲",
@@ -84,7 +84,7 @@ Set mining adalah play [implied odds](/id/blog/holdem-implied-odds "thumb:/image
 Dua angka terkait yang sering ditanyakan:
 
 - **Kena set hingga river** (dari preflop, melihat kelima kartu board) adalah ==**19,2%**== — 1 − C(48,5)/C(50,5). Lebih tinggi dari angka flop karena Anda mendapat dua kartu lagi, tapi Anda tak bisa mengandalkan mencapai river dengan murah, itulah mengapa angka flop yang menentukan set mining.
-- **Set over set** — Anda flop set dan kalah dari yang lebih besar — tak punya satu angka tetap karena tergantung berapa banyak lawan pegang pair, tapi dengan dua pemain sama-sama pegang pair angkanya mendarat dekat ~1%. Inilah cooler klasik: matematika ada di pihak Anda sepanjang jalan.
+- **Set over set** — dua pemain dengan pocket pair sama-sama flop set di tangan yang sama, dan yang lebih kecil kalah — tak punya satu angka tetap karena tergantung berapa banyak lawan pegang pair, tapi dengan dua pemain sama-sama pegang pair, peluang *keduanya* flop set mendarat dekat ~1%. Inilah cooler klasik: matematika ada di pihak Anda sepanjang jalan.
 
 ---
 
@@ -120,7 +120,7 @@ Sebuah flush **backdoor** (runner-runner) — Anda flop hanya *satu* kartu ekstr
 
 ![Sebuah straight eight-high tersusun berurutan di atas felt hijau, tangan jadi yang dikejar sebuah open-ended draw](/images/holdem-reading-straight-example.webp "Sebuah open-ended straight draw terisi dari ujung mana pun — delapan outs, 31,5% untuk selesai hingga river")
 
-Connector seperti 8♠7♠ punya siklus hidupnya sendiri. Anda akan **flop straight jadi hanya 1,3%** dari waktu (76:1) — lebih langka dari dugaan kebanyakan pemain. Jauh lebih sering Anda flop sebuah **draw**:
+Connector seperti 8♠7♠ punya siklus hidupnya sendiri. Anda akan **flop straight jadi hanya 1,3%** dari waktu (76:1) — lebih langka dari dugaan kebanyakan pemain. Angka itu berlaku untuk 54s sampai JTs, connector yang bisa mengisi straight dari kedua ujung; tangan di pinggir dek punya lebih sedikit rangkaian, turun sampai 0,33% untuk A-K. Jauh lebih sering Anda flop sebuah **draw**:
 
 - **Open-ended straight draw (OESD):** ~10% dari flop dengan connectors. Delapan outs, selesai **31,5%** hingga river — 1 − C(39,2)/C(47,2) — atau 17% pada satu kartu mana pun.
 - **Gutshot (inside) straight draw:** empat outs, selesai **16,5%** hingga river, 8,5% pada satu kartu. Setengah equity dari open-ender, itulah mengapa connectors yang sama bermain sangat berbeda tergantung flop.
