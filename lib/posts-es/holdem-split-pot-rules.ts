@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Sí — en el póker se puede empatar. El bote se divide (un \"split\" o \"chop\") cuando dos o más jugadores muestran las mismas mejores cinco cartas en el showdown. El palo nunca rompe el empate, y la ficha impar que sobra va al primer jugador empatado a la izquierda del botón.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-07",
-  masterUpdated: "2026-09-07",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🃏",
@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Bote dividido en el póker — mesa 8♠ 8♥ 8♦ A♣ K♠ con J♠ 10♥ contra 5♣ 2♦, las fichas partidas por una línea dorada porque ninguna mano supera a la mesa",
   tags: ["bote dividido poker", "se puede empatar en poker", "split poker", "cuando se divide el bote", "regla ficha impar poker", "la mesa juega", "empate texas holdem"],
   content: `
-En mis primeros días de póker lideré cada calle: subí en preflop, aposté en flop y turn, me pagaron en el river. Di la vuelta a mi J-10. Mi rival mostró **5-2**. "Gano yo, ¿no?" El dealer no dijo nada y señaló la mesa: ==**8-8-8-A-K**==. ==r:Ninguna de nuestras cartas superaba el trío de ochos con kicker de As-Rey==, así que el dealer partió el bote en dos sin decir palabra.
+En mis primeros días de póker lideré cada calle: subí en preflop, aposté en flop y turn, me pagaron en el river. Di la vuelta a mi J♠ 10♥. Mi rival mostró **5♣ 2♦**. "Gano yo, ¿no?" El dealer no dijo nada y señaló la mesa: ==**8♠ 8♥ 8♦ A♣ K♠**==. ==r:Ninguna de nuestras cartas superaba el trío de ochos con kicker de As-Rey==, así que el dealer partió el bote en dos sin decir palabra.
 
 Recibir la mitad de un bote que dabas por ganado desconcierta. Pero ==g:los botes divididos siguen reglas claras== — y responden a la pregunta que más hacen los que empiezan: **¿se puede empatar en el póker?** Sí. Aquí tienes todas las formas en que ocurre.
 
@@ -85,7 +85,7 @@ Las parejas y las dobles parejas suelen decidirse por el kicker, pero si los kic
 
 Sí — y ni siquiera hacen falta dos manos monstruo. Cuando las cinco cartas comunitarias ya forman las mejores cinco posibles para todos los que siguen, ==**la mesa juega**== y cada jugador restante comparte el bote, sean dos jugadores o cinco.
 
-Es mi mano 8-8-8-A-K: mi J-10 y su 5-2 jugaban los dos el trío de ochos de la mesa con kicker de As-Rey —cinco idénticas, un split en cuanto las dos manos se pusieron boca arriba—. El caso extremo es una mesa como A♠ K♠ Q♠ J♠ 10♠ (una escalera real): ninguna carta puede mejorarla, así que ==g:todos los que quedan parten==.
+Es mi mano 8-8-8-A-K: mi J♠ 10♥ y su 5♣ 2♦ jugaban los dos el trío de ochos de la mesa con kicker de As-Rey —cinco idénticas, un split en cuanto las dos manos se pusieron boca arriba—. El caso extremo es una mesa como A♠ K♠ Q♠ J♠ 10♠ (una escalera real): ninguna carta puede mejorarla, así que ==g:todos los que quedan parten==.
 
 > **La comprobación:** ¿*tus* mejores cinco —usando al menos una carta tuya— superan las cinco de la mesa? Si sí, juegas tu mano. Si no, la mesa juega y lo más probable es que partas. El método completo para escanear una mesa así lo tienes en [cómo leer la mesa y encontrar tus mejores cinco](/es/blog/holdem-reading-the-board).
 
@@ -144,7 +144,7 @@ A y B empatan con ases y kickers idénticos, así que ==g:se dividen el bote pri
 
 ## ¿Alguna vez se divide el bote mitad alto, mitad bajo?
 
-En el Texas Hold'em no. Puede que hayas oído hablar de "juegos de bote dividido" como el Omaha Hi-Lo o el Stud Hi-Lo, donde **cada** bote está diseñado para repartirse entre la mejor mano alta y la mejor mano baja que califica (ocho o mejor). Esa es otra familia de juegos. ==El Hold'em estándar es solo-alto== — el bote se divide *únicamente* cuando las mejores cinco cartas empatan de verdad.
+En el Texas Hold'em no. Puede que hayas oído hablar de "juegos de bote dividido" como el Omaha Hi-Lo o el Stud Hi-Lo, donde el bote está diseñado para repartirse entre la mejor mano alta y la mejor mano baja que califica (ocho o mejor) — y la mano alta se lo lleva entero cuando ninguna baja califica. Esa es otra familia de juegos. ==El Hold'em estándar es solo-alto== — el bote se divide *únicamente* cuando las mejores cinco cartas empatan de verdad.
 
 ---
 

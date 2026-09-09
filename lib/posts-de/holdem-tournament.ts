@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In einem Pokerturnier zahlst du ein festes Buy-in für Chips, die Blinds steigen auf einem Timer, bis ein Spieler alle Chips hält. Die Top 10–15% des Feldes kommen in die Payouts. Formate sind Freezeout, PKO, Satellite und Deepstack – der Einstieg läuft über direktes Buy-in, Satellite oder Online-Vorregistrierung.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-08-26",
+  updated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "14 Min.",
   emoji: "🏆",
@@ -74,7 +74,7 @@ Im Gegenzug erhältst du einen **Startstack** – üblicherweise 10.000 bis 50.0
 
 **Dein Startstack hat keinen Bargeldwert.** Ein Stack von 10.000 Chips entspricht nicht €10.000 – es ist nur dein Turnierleben. Wichtig ist einzig, ob du mehr Chips hast als die anderen Spieler, wenn die Geldränge erreicht werden.
 
-Jedes Turnier veröffentlicht seine Struktur in einem **Structure Sheet**: Startstack, Blind-Levels, Level-Dauer, Ante-Schedule und Payouts. Frag am Registrierungstresen danach – es ist das nützlichste Dokument im Raum.
+Jedes Turnier veröffentlicht seine Struktur in einem **Structure Sheet**: Startstack, Blind-Levels, Level-Dauer, Ante-Schedule und den Payout-Schedule. Frag am Registrierungstresen danach – es ist das nützlichste Dokument im Raum.
 
 ---
 
@@ -371,7 +371,7 @@ Das erzählt dir kein anderer Guide. Hier ist eine realistische Tag-1-Timeline f
 - Min-Cash: rund 1,83× das Buy-in
 - 1. Platz: $662.200 (~14% des Prize Pools)
 
-Die Payout-Struktur wird immer vor dem Turnierstart bekanntgegeben. Frag am Registrierungstresen nach dem **Structure Sheet** – es listet Blind-Levels, Antes, Startstack und Payout-Schedule.
+Den Payout-Schedule kannst du vor dem Turnierstart einsehen, aber die endgültige Zahl der bezahlten Plätze und die genauen Beträge stehen oft erst fest, wenn Registrierung, Rebuys und Add-ons geschlossen sind. Frag am Registrierungstresen nach dem **Structure Sheet** – es listet Blind-Levels, Antes, Startstack und Payout-Schedule.
 
 ---
 
@@ -384,7 +384,7 @@ Diese 13 Begriffe decken das meiste ab, was du am Tisch hörst. Für das vollst�
 | **ITM** | In The Money – du hast eine bezahlte Position erreicht |
 | **Bubble** | Die Phase direkt vor ITM – eine Eliminierung, bis alle cashen |
 | **Hand-for-Hand** | Alle Tische spielen während der Bubble eine Hand nach der anderen, um Verzögern zu verhindern |
-| **Structure Sheet** | Das offizielle Dokument, das Blind-Levels, Antes und Payouts auflistet |
+| **Structure Sheet** | Das offizielle Dokument, das Blind-Levels, Antes und den Payout-Schedule auflistet |
 | **Chipleader** | Der Spieler mit den meisten Chips |
 | **Short Stack** | Ein Spieler mit sehr wenigen Chips im Verhältnis zu den Blinds |
 | **Shove / JAM** | All-in gehen (deinen ganzen Stack in die Mitte schieben) |
@@ -454,7 +454,7 @@ A. Ja, während des Late-Registration-Fensters – meist die ersten paar Blind-L
 
 **Q. Kann man ein Pokerturnier früh verlassen und seine Chips behalten?**
 
-A. Nein. Anders als in einem Cash Game haben Turnierchips keinen Bargeldwert und können nicht mitten im Event ausgezahlt werden. Wenn du weggehst, bleiben deine Chips im Spiel und zahlen weiter Blinds und Antes, bis sie weg sind. Du bekommst nur dann Geld, wenn du in einer bezahlten (ITM-) Position landest.
+A. Nein. Anders als in einem Cash Game haben Turnierchips keinen Bargeldwert und können nicht mitten im Event ausgezahlt werden. Wenn du weggehst, bleiben deine Chips im Spiel und zahlen weiter Blinds und Antes, bis sie weg sind. Reguläres Preisgeld gibt es nur, wenn du in einer bezahlten (ITM-) Position landest; in Knockout- und PKO-Formaten kommen Bounties separat dazu.
 
 ---
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A kicker is the highest side card that isn't part of your main hand — it breaks ties when two players share the same rank. One pair uses 3 kickers, two pair 1, trips 2; straights, flushes, and full houses have none. It's why AK beats AQ when the board pairs an ace.",
   category: "hand-rankings",
   date: "2026-07-08",
-  updated: "2026-09-07",
+  updated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -193,7 +193,7 @@ A. An ace kicker means your highest side card is an ace — the strongest kicker
 
 **Q. What does "playing the board" mean?**
 
-A. Playing the board means the five community cards are your best hand and your hole cards can't improve on it. If nobody can improve on the board, everyone uses the same five cards and the pot is split. There's no kicker because the board already forms a complete five-card hand.
+A. Playing the board means the five community cards are your best hand and your hole cards can't improve on it. If nobody can improve on the board, everyone uses the same five cards and the pot is split. There's no kicker because none of your hole cards makes the five you play — every card in the hand is shared.
 
 **Q. Do kickers matter in Texas Hold'em?**
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ties werden in fester Reihenfolge entschieden: zuerst der Handrang, dann die Karten, die die Hand bilden, dann die Kicker von hoch nach niedrig. Gleiches Paar → der höhere erste Kicker gewinnt; identische fünf Karten → geteilter Pot. Farben entscheiden einen Tie niemals.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-08-13",
-  masterUpdated: "2026-07-19",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "12 Min.",
   emoji: "⚖️",
@@ -210,7 +210,7 @@ A. Selten – genau dafür gibt es Kicker. Ein echter Gleichstand entsteht nur, 
 
 **Q. Wann entscheidet die fünfte Karte den ganzen Pot?**
 
-A. Immer dann, wenn die ersten vier Karten beider Hände übereinstimmen – der dritte Kicker eines Paars, die niedrigste Karte eines Flushes, die Beikarte zum Vierling auf dem Board. Sie hört erst auf zu zählen, wenn die Karten des Boards deine Hole Card überragen.
+A. Immer dann, wenn die ersten vier Karten beider Hände übereinstimmen – der dritte Kicker eines Paars, der einzige Kicker bei Zwei Paaren, die niedrigste Karte eines Flushes, die Beikarte zum Vierling auf dem Board. Sie hört erst auf zu zählen, wenn die Karten des Boards deine Beikarte überragen – mal weil das ganze Board spielt und deine Hole Cards komplett rausfallen, mal weil nur eine Hole Card spielt und die zweite nie zählt: A♠ 3♠ gegen A♦ 2♦ auf A♥ K♣ Q♦ J♠ 9♥ ist ein Chop, beide spielen A-A-K-Q-J.
 
 **Q. Kann man beim Poker ein Ass als 1 verwenden?**
 

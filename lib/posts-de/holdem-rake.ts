@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Der Rake ist der kleine Anteil, den der Cardroom aus jedem Pot nimmt, um das Spiel auszurichten – meist 2,5–10% bis zu einem Cap – in deutschen Spielbanken €10 bis €20. Die meisten Räume nehmen nichts, wenn vor dem Flop alle folden („no flop, no drop“). Er trifft Low-Stakes- und Short-handed-Spieler am härtesten, und Rakeback gibt Stammspielern einen Teil zurück.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-08-26",
-  masterUpdated: "2026-08-26",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "🏦",
@@ -86,7 +86,7 @@ Hier kommt der Teil, der geändert hat, wie ich über das Spiel denke. Der Betra
 
 **Ein Live-Spiel in einer deutschen Spielbank.** Hier gibt es keine feste Prozentzahl, sondern eine Staffel. Die Spielbank Berlin nimmt in der untersten Blind-Stufe aus einem Pot von €60 bis €99 genau **€4**, ab €100 sind es **€6**, und ab €150 greift das Cap von **€10**. Bei rund 30 ausgeteilten Händen pro Stunde, von denen etwa 20 überhaupt gerakt werden, sind das ==20 × €4 bis 20 × €6 = **€80 bis €120 pro Stunde**== an einem einzigen Tisch, über alle Spieler zusammen. Dieses Geld kommt direkt aus den gemeinsamen Gewinnen – es ist der Grund, warum ein Tisch voller etwa gleich starker Spieler langsam Chips ans Haus verliert.
 
-**Die Low-Stakes-„Rake-Falle“.** Das ist die Pointe, die jeder Anfänger hören sollte. Weil das Cap kaum sinkt, wenn du in den Stakes runtergehst, nimmt der Rake proportional einen *größeren* Bissen, je *niedriger* du spielst. Ein durchgerechnetes Beispiel bei Online-NL50 (illustrativ, und es schwankt damit, wie viele Hände du spielst):
+**Die Low-Stakes-„Rake-Falle“.** Das ist die Pointe, die jeder Anfänger hören sollte. Weil das Cap kaum sinkt, wenn du in den Stakes runtergehst, nimmt der Rake proportional einen *größeren* Bissen, je *niedriger* du spielst. Ein durchgerechnetes Beispiel bei Online-NL50 (illustrativ – der genaue Wert bewegt sich damit, an wie vielen Pots du beteiligt bist und wie der Raum sein Cap anwendet, nicht damit, wie viele Hände du loggst):
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -181,7 +181,7 @@ A. Es trennt den Preispool von der Gebühr des Hauses. Bei einem $100 + $9-Turni
 
 **Q. Wie zahlst du weniger Rake?**
 
-A. Ganz entkommen kannst du ihm in einem gerakten Spiel nicht, kleiner machen schon. Sichere dir den besten Rakeback-Deal, den du bekommst, und wähle Räume mit spielerfreundlichen Caps. Höhere Stakes senken den Rake ebenfalls, weil ein festes Cap dort ein kleinerer Anteil jedes Pots ist – diesen Schritt aber erst, wenn deine Bankroll die Schwankungen trägt *und* du gegen das härtere Feld noch einen Vorsprung hast, sonst nehmen dir die Gegner weit mehr ab als der Rake je könnte. Spiel lieber wenige große Pots als eine Flut kleiner gecappter, spiel online nicht ohne Grund sehr short-handed (derselbe Rake pro Pot verteilt sich dort auf weniger Spieler, dein Anteil pro Hand steigt also) und bevorzuge bei hohen Stakes Time-Charge-Games. **Live gilt das oft nicht** – viele Räume senken dort das Cap, und ein kurzes Spiel ist meist das weichste im Raum. Rechne Rake immer gegen Spielqualität, nie isoliert – all das drückt deinen effektiven Rake. Am billigsten ist rein von den Kosten her die private Pokerrunde: Da wird gar nichts aus dem Pot genommen.
+A. Ganz entkommen kannst du ihm in einem gerakten Spiel nicht, kleiner machen schon. Sichere dir den besten Rakeback-Deal, den du bekommst, und wähle Räume mit spielerfreundlichen Caps. Höhere Stakes senken den Rake ebenfalls, weil ein festes Cap dort ein kleinerer Anteil jedes Pots ist – diesen Schritt aber erst, wenn deine Bankroll die Schwankungen trägt *und* du gegen das härtere Feld noch einen Vorsprung hast, sonst nehmen dir die Gegner weit mehr ab als der Rake je könnte. Auch wenige, größere Pots statt einer Flut kleiner drücken ihn: Das Cap greift nur bei großen Pots, während kleine den vollen Prozentsatz zahlen. Genauso hilft es, online nicht ohne Grund sehr short-handed zu spielen (derselbe Rake pro Pot verteilt sich dort auf weniger Spieler, dein Anteil pro Hand steigt also) und bei hohen Stakes Time-Charge-Games zu bevorzugen. **Live gilt das oft nicht** – viele Räume senken dort das Cap, und ein kurzes Spiel ist meist das weichste im Raum. Rechne Rake immer gegen Spielqualität, nie isoliert – all das drückt deinen effektiven Rake. Am billigsten ist rein von den Kosten her die private Pokerrunde: Da wird gar nichts aus dem Pot genommen.
 
 **Q. Wie wirkt sich der Rake auf deine Winrate aus?**
 

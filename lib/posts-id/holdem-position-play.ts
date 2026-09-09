@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Berada in position berarti Anda beraksi terakhir — Anda melihat setiap keputusan lawan sebelum mengeluarkan satu chip pun. Studi solver dan database menunjukkan pemain out of position hanya menangkap sekitar 60–85% dari equity mereka — yang berarti in position Anda berada di atas 100%. Itulah kenapa UTG membuka ~13% tangan dan button ~43% — dan kenapa posisi menulis ulang setiap keputusan c-bet, bluff, dan pot control di postflop.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-08-27",
-  masterUpdated: "2026-08-27",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "16 mnt",
   emoji: "🎯",
@@ -177,7 +177,7 @@ Setiap kursi mendapat opening range-nya sendiri karena **jumlah pemain yang masi
 | Hijack | ~20% | Peluang steal dimulai |
 | **Cutoff** | **~27%** | Hanya button di belakang — kursi steal utama |
 | **Button** | ==g:**~43%**== | Aksi terakhir dijamin di postflop — open terlebar |
-| Small blind | ~40% (raise-atau-fold) | Lebar saat di-fold ke Anda, tapi jangan pernah flat |
+| Small blind | ~40% (raise-atau-fold) | Lebar saat di-fold ke Anda — raise, bukan sekadar melengkapi blind, melawan sebagian besar big blind; menghadapi raise, 3-bet atau fold — jangan flat-call |
 | Big blind | Bertahan lebar vs steal | Menutup aksi + pot odds, bukan open |
 
 ![Meja poker 9 pemain menunjukkan opening range yang melebar dari UTG (~13%, merah ketat) ke Button (~43%, hijau lebar)](/images/holdem-position-play-opening-range.webp "Opening range menurut posisi — UTG membuka ~13%, button ~43%")
@@ -211,10 +211,10 @@ Sangat besar. Continuation bet pada dasarnya adalah permainan informasi, dan inf
 | Situasi | Frekuensi c-bet solver umum (flop) |
 |---|---|
 | **IP (BTN/CO vs pertahanan blind)** | **~65–75%** board |
-| OOP (pot 3-bet dari blind) | ~40–50% board |
-| Raiser OOP vs caller IP | ~30–45% — paling selektif |
+| OOP sebagai pihak yang 3-bet (pot 3-bet dari blind) | Sangat tinggi — di run solver kami big blind c-bet lebih dari 97% dari waktu, baik di Q♥T♥7♠ maupun di 8♦5♣2♠ |
+| Raiser OOP vs caller IP (pot single-raised) | ~30–45% — paling selektif |
 
-In position, Anda bisa c-bet range lebar — termasuk tangan kosong dan backdoor draw — karena lawan Anda harus merespons tanpa tahu gerakan Anda berikutnya, dan saat di-call Anda tetap beraksi terakhir di turn. Out of position, bet yang sama lebih berisiko: sebuah check-raise mengakhiri bluff Anda, dan sebuah call membuat Anda menebak lebih dulu di setiap street tersisa. Itulah kenapa c-bet buta 100% "karena Anda raise preflop" membakar uang OOP.
+In position, Anda bisa c-bet range lebar — termasuk tangan kosong dan backdoor draw — karena lawan Anda harus merespons tanpa tahu gerakan Anda berikutnya, dan saat di-call Anda tetap beraksi terakhir di turn. Out of position, bet yang sama lebih berisiko: sebuah check-raise mengakhiri bluff Anda, dan sebuah call membuat Anda menebak lebih dulu di setiap street tersisa. Itulah kenapa c-bet buta 100% "karena Anda raise preflop" membakar uang saat OOP di pot single-raised — baris nyaris-100% di atas itu milik pihak yang 3-bet, yang keunggulan range-nya memang mengizinkannya.
 
 Kerangka sizing dan tekstur board lengkap ada di [panduan continuation bet](/id/blog/holdem-continuation-bet).
 
@@ -222,7 +222,7 @@ Kerangka sizing dan tekstur board lengkap ada di [panduan continuation bet](/id/
 
 ## Strategi Small Blind: Kenapa 3-Bet atau Fold?
 
-Small blind terlihat murah — setengah blind sudah masuk — dan mahal dimainkan: Anda pertama beraksi di setiap street postflop melawan semua orang. Strategi modern telah menyatu pada solusi blak-blakan: ==**dari SB, 3-bet atau fold — nyaris tak pernah flat-call.**==
+Small blind terlihat murah — setengah blind sudah masuk — dan mahal dimainkan: Anda pertama beraksi di setiap street postflop melawan semua orang. Strategi modern telah menyatu pada solusi blak-blakan: ==**dari SB, saat menghadapi raise, 3-bet atau fold — nyaris tak pernah flat-call.**==
 
 Flat-call dari SB menempatkan Anda dalam range terbatas dan transparan, OOP, dengan big blind masih di belakang Anda dan diberi harga untuk squeeze. Sebagai gantinya:
 
@@ -283,11 +283,11 @@ A. Dari UTG di game full ring, buka kira-kira top ~13% tangan — pair kuat, AK/
 
 **Q. Bagaimana posisi memengaruhi frekuensi c-bet?**
 
-A. In position (button atau cutoff), solver c-bet kira-kira 65–75% flop — Anda beraksi terakhir di setiap street berikutnya, jadi bet lebar, termasuk dengan tangan kosong, tetap aman. Out of position itu turun ke kira-kira 30–50%, karena check-raise bisa mengakhiri bluff Anda dan sebuah call membuat Anda menebak lebih dulu di turn dan river. C-bet dengan frekuensi sama OOP seperti IP adalah salah satu kebocoran paling umum dan mahal.
+A. In position (button atau cutoff), solver c-bet kira-kira 65–75% flop — Anda beraksi terakhir di setiap street berikutnya, jadi bet lebar, termasuk dengan tangan kosong, tetap aman. Out of position di pot single-raised itu turun ke kira-kira 30–45%, karena check-raise bisa mengakhiri bluff Anda dan sebuah call membuat Anda menebak lebih dulu di turn dan river (sebagai pihak yang 3-bet dari out of position ceritanya lain — keunggulan range membuat Anda bisa c-bet nyaris setiap flop). C-bet dengan frekuensi sama OOP seperti IP adalah salah satu kebocoran paling umum dan mahal.
 
 **Q. Apakah Anda harus selalu 3-bet dari small blind?**
 
-A. Ketika Anda masuk pot, sebagian besar ya — default modern dari SB adalah 3-bet atau fold, bukan flat-call. Flat-call menciptakan range terbatas dan out of position yang bisa di-squeeze big blind. 3-bet tangan kuat Anda plus blocker bluff seperti A5s/A4s, perbesar sizing ke sekitar 4× open (vs 3× in position), dan fold sisanya.
+A. Ketika Anda masuk ke pot yang sudah di-raise, sebagian besar ya — default modern dari SB adalah 3-bet atau fold, bukan flat-call. Flat-call menciptakan range terbatas dan out of position yang bisa di-squeeze big blind. 3-bet tangan kuat Anda plus blocker bluff seperti A5s/A4s, perbesar sizing ke sekitar 4× open (vs 3× in position), dan fold sisanya.
 
 ---
 

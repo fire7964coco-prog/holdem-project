@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "En el Texas Hold'em cada jugador recibe 2 cartas propias y comparte 5 cartas comunitarias en la mesa. Se apuesta en cuatro rondas — preflop, flop, turn y river — y gana quien forma la mejor mano de póker de 5 cartas, o el último que quede si todos los demás se retiran. Puedes usar tus dos cartas, una sola o ninguna: lo que forme la mano más fuerte.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-07",
-  masterUpdated: "2026-09-07",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
@@ -308,7 +308,7 @@ Cuando llevas un proyecto (p. ej. cuatro cartas para color), cuenta tus **outs**
 
 | Situación | Fórmula | Ejemplo (9 outs de color) |
 |-----------|---------|------------------------|
-| En el **flop** (quedan 2 cartas) | Outs × 4 | 9 × 4 = **~36% de probabilidad** |
+| En el **flop**, si vas a ver las dos cartas restantes sin más apuestas (p. ej. all-in) | Outs × 4 | 9 × 4 = **~36% de probabilidad** |
 | En el **turn** (queda 1 carta) | Outs × 2 | 9 × 2 = **~18% de probabilidad** |
 
 </div>

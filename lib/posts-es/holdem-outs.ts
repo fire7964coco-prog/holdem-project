@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un out es cualquier carta que queda en la baraja y convierte tu mano en una probable ganadora. Cuéntalos y conviértelos: multiplica los outs por 4 en el flop o por 2 en el turn para tu % aproximado de ligar. Un proyecto de color son 9 outs ≈ 36% para el river.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-08-12",
-  masterUpdated: "2026-08-12",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🎯",
@@ -149,7 +149,7 @@ Digamos que tienes ==b:J♠ 10♠== en un flop ==9♠ 8♣ 2♠==. Tienes dos pr
 - Outs de escalera que no son picas: Q♥ Q♦ Q♣, 7♥ 7♦ 7♣ = **6**
 - Total: **15 outs**, no 17
 
-La misma lógica en un **color + gutshot**: 9 outs de color + 4 cartas de gutshot, pero una de esas cuatro es de tu palo → 9 + 3 = **12**. Siempre que dos proyectos comparten una carta, resta el solapamiento. Esta es la forma más común de sobrecontar, y por eso las filas de combinados en la tabla parecen "una menos" que la suma.
+La misma lógica en un **color + gutshot**: 9 outs de color + 4 cartas de gutshot, pero una de esas cuatro es de tu palo → 9 + 3 = **12**. Siempre que dos proyectos comparten cartas, resta el solapamiento — una carta en color + gutshot, dos en color + escalera abierta. Esta es la forma más común de sobrecontar, y por eso las filas de combinados en la tabla quedan por debajo de la suma simple.
 
 ---
 
@@ -162,7 +162,7 @@ Esta es la sección que la mayoría de las guías se salta, y es la que de verda
 Tres situaciones para entrenar el ojo:
 
 :::card
-♠ | El color que no es máximo | Con 8♠7♠ en K♠9♠2♣, tienes 9 "outs" de picas — pero si sale una pica y un rival tiene una pica mayor, haces color y aun así pierdes. Descuenta tus outs cuando no vas al color máximo
+♠ | El color que no es máximo | Con 8♠7♠ en K♠9♠2♣, tienes 9 "outs" de picas — pero si sale una pica y un rival iba al mismo color con una pica mayor, haces color y aun así pierdes. Descuenta tus outs cuando no vas al color máximo
 🂮 | La mesa emparejada | Un proyecto de color en una mesa como J♥8♥8♣ parece 9 outs limpios, pero la mesa ya está emparejada — un full ya hecho puede estar esperando, así que algunos de tus colores nacen muertos
 🃁 | Sobrecartas contra fuerza | Dos sobrecartas (A-K en Q-8-3) cuentan como 6 outs sobre el papel, pero si un raise grande grita trío o doble pareja, emparejar tu as a menudo no vale — cuenta 3, quizá 4, no 6
 :::

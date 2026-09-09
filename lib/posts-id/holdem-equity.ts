@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Equity adalah bagian Anda dari pot — porsi yang rata-rata jatuh ke tangan Anda saat semua kartu dibagikan, dengan pot seri dihitung proporsional. Anda call saat equity mengalahkan pot odds, tapi posisi dan taruhan membuat Anda jarang menyimpan seluruh equity — dan fold equity membuat Anda bisa memenangkan pot bahkan saat tangan Anda tertinggal.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-08-27",
-  masterUpdated: "2026-08-12",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "🥧",
@@ -121,7 +121,7 @@ Bertaruh flush draw itu bernilai ==+$52== dibanding check-fold — dan sebagian 
 
 ==b:Equity terealisasi = equity mentah × % realisasi==
 
-Tangan dengan 40% equity mentah yang hanya merealisasi 75%-nya sebenarnya bernilai ==0,75 × 40% = 30%==. Itulah kenapa Anda bisa "unggul atas range lawan" namun tetap kehilangan uang — Anda tak pernah sempat mencairkan potongan penuh.
+Tangan dengan 40% equity mentah yang hanya merealisasi 75%-nya sebenarnya bernilai ==0,75 × 40% = 30%==. Itulah kenapa Anda bisa "unggul atas range lawan" namun tetap kehilangan uang — saat out of position Anda jarang sempat mencairkan potongan penuh.
 
 Yang menggerakkan realisasi Anda naik atau turun:
 
@@ -131,7 +131,7 @@ Yang menggerakkan realisasi Anda naik atau turun:
 📚 | Kedalaman stack & skill | Stack lebih dalam dan lawan lebih tangguh membuat equity marjinal lebih sulit direalisasi
 :::
 
-Ini adalah ide terpenting yang sebagian besar panduan pemula tinggalkan, dan inilah kenapa [tangan yang sama bermain sangat berbeda menurut posisi](/id/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp"). Equity mentah adalah plafonnya; realisasi adalah yang Anda bawa pulang.
+Ini adalah ide terpenting yang sebagian besar panduan pemula tinggalkan, dan inilah kenapa [tangan yang sama bermain sangat berbeda menurut posisi](/id/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp"). Equity mentah adalah titik awalnya — yang akan Anda kantongi kalau chip masuk sekarang juga; realisasi adalah yang benar-benar Anda bawa pulang, dan posisilah yang menentukan apakah itu lebih besar atau lebih kecil.
 
 ---
 
@@ -141,7 +141,7 @@ Ini adalah ide terpenting yang sebagian besar panduan pemula tinggalkan, dan ini
 
 Inilah kenapa equity all-in preflop begitu penting: AA all-in melawan KK menyimpan penuh ==82%==-nya — tanpa pajak realisasi, tanpa fold equity, hanya angka mentah yang terjadi. Ini juga kenapa "coin flip" (22 vs AK di ~52/48) adalah adu untung-untungan yang benar-benar dekat saat all-in, meski dua tangan sama yang dimainkan postflop akan menyimpang liar tergantung board dan siapa yang punya posisi.
 
-All-in adalah satu-satunya titik di poker saat kue dipotong persis seperti kata matematika — yang menjadi daya tariknya sekaligus bahayanya.
+All-in adalah satu-satunya titik di poker di mana, dengan kartu yang masih akan datang, kue dipotong persis seperti kata matematika — yang menjadi daya tariknya sekaligus bahayanya.
 
 ---
 
@@ -168,7 +168,7 @@ Kesimpulan praktisnya: tangan yang menginginkan pot multiway adalah yang membuat
 Perkirakan equity mentah | Outs × 4 atau × 2 untuk draw; ingat matchup saat preflop
 Kurangi untuk realisasi | Out of position atau sulit dimainkan? Pangkas — 40% mentah bisa jadi 30% nyata
 Tambahkan fold equity | Jika Anda bertaruh, seberapa sering villain fold? Itu equity tambahan yang tak dimiliki tangan Anda sendiri
-Bandingkan dengan harga | Realized equity + fold equity vs pot odds Anda → call, bet, atau fold
+Bandingkan dengan harga | Call? Realized equity vs pot odds Anda. Bet? Seberapa sering villain fold vs frekuensi fold titik impas, bet ÷ (pot + bet) → call, bet, atau fold
 :::
 
 Malam yang saya sebut di awal, saya melakukan langkah satu lalu berhenti — menghitung equity mentah saya dan mengabaikan bahwa out of position, melawan pemain bagus, saya tak akan pernah merealisasikannya. Begitu saya mulai mengurangi untuk posisi dan memikirkan fold *mereka* alih-alih hanya kartu saya, kebocorannya tertutup. Equity bukan angka yang Anda cari; ia adalah lensa yang Anda jalankan pada setiap keputusan.
@@ -212,7 +212,7 @@ A. Realisasi equity adalah seberapa banyak equity mentah Anda yang benar-benar A
 
 **Q. Apa itu equity all-in?**
 
-A. Equity all-in hanyalah equity mentah Anda — bagian Anda dari pot, dengan pot seri dihitung proporsional — saat tak ada taruhan lagi yang bisa terjadi. Karena tak ada keputusan masa depan, Anda merealisasi 100%-nya, jadi equity mentah menjadi bagian pot persis yang Anda kumpulkan seiring waktu. Inilah satu titik di mana "equity sama dengan bagian pot" benar-benar berlaku secara harfiah.
+A. Equity all-in hanyalah equity mentah Anda — bagian Anda dari pot, dengan pot seri dihitung proporsional — saat tak ada taruhan lagi yang bisa terjadi. Karena tak ada keputusan masa depan, Anda merealisasi 100%-nya, jadi equity mentah menjadi bagian pot persis yang Anda kumpulkan seiring waktu. Inilah satu titik di mana, dengan kartu yang masih akan datang, "equity sama dengan bagian pot" benar-benar berlaku secara harfiah.
 
 **Q. Kenapa equity saya turun di pot multiway?**
 
@@ -231,7 +231,7 @@ A. Equity adalah bagian Anda dari pot *ini* jika tangan dimainkan sampai selesai
 ## 3 Hal yang Harus Diingat
 
 1. **Equity adalah bagian Anda dari pot** — equity% × ukuran pot. Call saat ia mengalahkan pot odds Anda. Perbandingan itu adalah tulang punggung setiap keputusan.
-2. **Anda jarang menyimpan semuanya.** Realized equity = raw × realization%, dan posisi adalah faktor terbesar. Equity mentah adalah plafonnya, bukan bayarannya.
+2. **Anda jarang menyimpan semuanya.** Realized equity = raw × realization%, dan posisi adalah faktor terbesar. Equity mentah adalah titik awalnya, bukan bayarannya.
 3. **Agresi memproduksi equity.** Fold equity membuat sebuah taruhan memenangkan pot yang tangan Anda akan kalah — tapi ia runtuh di multiway, di mana Anda butuh semua orang fold.
 
 Kuasai ini dan sisa matematika poker jatuh pada tempatnya. Dari sini, ubah equity menjadi call yang benar dengan [panduan pot odds](/id/blog/holdem-pot-odds), atau lihat bagaimana stack dalam mengubah gambaran dengan [implied odds](/id/blog/holdem-implied-odds).

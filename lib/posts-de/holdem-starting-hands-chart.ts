@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Von den 169 Starthand-Typen ist nur eine kleine Spitzengruppe – etwa 15–20% der Hände, die du bekommst – für einen Anfänger profitabel. Große Paare (AA–TT) und AK raist du aus jeder Position; je später du agierst, desto weiter öffnest du – von ~13% unter der Gun bis ~43% am Button (im 6-Max nochmals weiter). Starte mit einem vereinfachten Chart, füge GTO-Preflop-Charts hinzu, sobald Raise-or-Fold automatisch sitzt.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-08-26",
-  masterUpdated: "2026-08-11",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "🂡",
@@ -125,10 +125,10 @@ Der Kern der UTG-Range (eine volle ~13%-Range weitet sich zu Mid Pairs wie 77–
 - Premium suited: **AKs, AQs, AJs, KQs**
 - Premium offsuit: **AKo** (und manchmal AQo)
 
-Hände, die stark aussehen, aber von UTG gefoldet werden sollten:
+Hände, die stark aussehen, von UTG aber Folds oder Grenzfälle sind:
 
 - **KJo, QJo, KTo** – zu viele dominierte Szenarien gegen die Spieler, die einen UTG-Open callen
-- **77, 88** – vom Button okay, von UTG marginal
+- **77, 88** – vom Button okay; von UTG sitzen sie am äußeren Rand der vollen ~13%-Range von oben und fliegen deshalb als erste Paare raus, wenn der Tisch hart ist
 - **Schwache Suited Aces (A2s–A7s)** – heb dir die für späte Position auf
 
 ### Späte Position (Cutoff und Button): die weiteste Range
@@ -201,7 +201,7 @@ Die schlechtesten Starthände im Poker sind nicht zufälliger Müll wie 7-2 – 
 | ==r:Schwache Asse (A2o–A8o)== | Macht zweitbestes Paar gegen bessere Asse | „Ich habe ein Ass, das muss gut sein“ |
 | Niedrige Offsuit-Connectors (76o, 65o) | Trifft selten sauber, schwer zu spielen, wenn doch | „Es könnte eine Straße machen“ |
 | King-Rag Offsuit (K3o, K4o) | Von jedem besseren König dominiert | „Ein König ist eine große Karte“ |
-| Zwei beliebige suited Karten | Macht bis zum River nur ~6,5% der Zeit einen Flush (floppt einen ~0,8%) | „Aber sie sind dieselbe Farbe“ |
+| Zwei beliebige suited Karten | Macht bis zum River nur ~6,4% der Zeit einen Flush (floppt einen ~0,8%) | „Aber sie sind dieselbe Farbe“ |
 
 ![Schwache-Ass-Falle im Texas Hold'em – A♣ 4♦ rot umrandet als verlierende Hand, dominiert von A♠ K♦ in Gold](/images/holdem-starting-hands-weak-ace-trap.webp "Schwache Asse sehen stark aus, bleiben aber dominiert – folde sie preflop")
 
@@ -282,7 +282,7 @@ A. Nicht am Anfang. GTO-Preflop-Charts nutzen gemischte Frequenzen, die gegen st
 
 **Q. Macht suited zu sein wirklich einen Unterschied?**
 
-A. Suited fügt gegenüber derselben Offsuit-Hand etwa 2 Prozentpunkte Equity hinzu (AKs hat 67% gegen eine zufällige Hand; AKo 65%) – bedeutsam, aber kein Grund, eine schlechte Hand zu spielen. Zwei suited Karten machen bis zum River nur ~6,5% der Zeit einen Flush (und ein geflopter Flushdraw komplettiert bis zum River etwa 35% der Zeit). Suited Trash ist immer noch Trash.
+A. Suited fügt gegenüber derselben Offsuit-Hand etwa 2 Prozentpunkte Equity hinzu (AKs hat 67% gegen eine zufällige Hand; AKo 65%) – bedeutsam, aber kein Grund, eine schlechte Hand zu spielen. Zwei suited Karten machen bis zum River nur ~6,4% der Zeit einen Flush (und ein geflopter Flushdraw komplettiert bis zum River etwa 35% der Zeit). Suited Trash ist immer noch Trash.
 
 **Q. Sollte ich kleine Pocket Pairs wie 22 oder 33 immer folden?**
 

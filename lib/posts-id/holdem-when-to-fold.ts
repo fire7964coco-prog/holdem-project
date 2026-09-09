@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Fold adalah skill paling diremehkan di poker — hasil terburuk sebuah fold adalah nol, sementara call yang kalah menguras chip setiap kali. Pemain solid fold sekitar 75–85% tangan sebelum flop, melepas tangan yang meleset dan draw lemah yang tak memenuhi pot odds mereka setelahnya, dan — yang paling sulit — melepas tangan kuat-tapi-kalah saat line lawan pasif jelas menunjukkan value. Kebanyakan pemain tidak call terlalu banyak karena tak bisa membaca tangan; mereka call karena chip yang sudah ada di pot terasa milik mereka. Padahal bukan.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-08-27",
-  masterUpdated: "2026-08-26",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "16 mnt",
   emoji: "🛡️",
@@ -110,12 +110,12 @@ Fold sampah itu mudah. Fold tangan yang *bagus* — top pair, overpair, bahkan s
 | **Top pair, kicker lemah** | Menghadapi taruhan besar turn + river | Anda mengalahkan bluff dan pair lebih buruk — tapi range value mereka mengungguli kicker Anda |
 | **Overpair (JJ/QQ)** | Pemain pasif me-raise board terkoordinasi | Pemain pasif me-raise nuts, bukan tangan kosong — out Anda tinggal sedikit |
 | **Top pair top kicker** | Board berkembang jadi four to a flush atau straight | Satu pair Anda tak bisa mengalahkan flush/straight yang mereka wakili |
-| **Sebuah set** | Raise besar di board monotone atau four-straight — **di river** | Set-over-set adalah cooler; flush yang sudah jadi bukan. Di *flop* set yang sama masih ~34% melawan flush jadi, jadi di sana itu call |
+| **Sebuah set** | Raise besar di board monotone atau four-straight — **di river** | Set-over-set adalah cooler; flush yang sudah jadi bukan. Di *flop* set yang sama masih jadi full house ~34% dari waktu hingga river melawan flush jadi, dan saat jadi ia memenangkan satu stack — call |
 | **Second pair** | Call tiga street "untuk menjaga mereka jujur" | Anda membayar value tiga kali untuk menangkap satu bluff |
 
 </div>
 
-Khusus baris set, street-nya memang harus disebut, karena melepasnya terlalu awal lebih mahal daripada melepasnya terlalu lambat. Pegang 9♠9♣ di flop 9♥5♥2♥ melawan flush jadi A♥K♥ — kasus terburuk yang bisa Anda hadapi — dan set itu masih menang ==34%== dari waktu: ia jadi full house pada tujuh out yang kelihatan (sisa satu sembilan, tiga lima, tiga dua) *dan* setiap kali turn dan river berpasangan satu sama lain. Di flop itu call. Baru setelah drawnya sampai, baris di atas berlaku.
+Khusus baris set, street-nya memang harus disebut, karena melepasnya terlalu awal lebih mahal daripada melepasnya terlalu lambat. Pegang 9♠9♣ di flop 9♥5♥2♥ melawan flush jadi A♥K♥ — kasus terburuk yang bisa Anda hadapi — dan set itu masih menang ==34%== dari waktu: ia jadi full house pada tujuh out yang kelihatan (sisa satu sembilan, tiga lima, tiga dua) *dan* setiap kali turn dan river berpasangan satu sama lain. Di flop itu call — bukan karena 34% mengalahkan harga sebuah taruhan tunggal, melainkan karena saat board berpasangan Anda memenangkan seluruh yang akan dibayar sebuah flush, dan mem-fold set di flop jauh lebih mahal dalam jangka panjang ketimbang taruhan yang Anda hemat. Baru setelah drawnya sampai, baris di atas berlaku.
 
 Cermin baliknya juga penting, karena **fold bisa jadi kebocoran tersendiri.** Laydown *bagus* melepas tangan kalah ke line yang masuk akal. Laydown *buruk* fold tangan terbaik ke scare card karena takut — dan jika Anda sering melakukannya, lawan yang berpikir akan bluff Anda tanpa henti. Tujuannya bukan fold lebih banyak atau lebih sedikit; melainkan fold *saat buktinya ada.*
 

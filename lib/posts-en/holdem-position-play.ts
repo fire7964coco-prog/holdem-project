@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Being in position means you act last — you see every opponent's decision before spending a chip. Solver and database studies suggest out-of-position players capture only about 60–85% of their equity — which puts you above 100% when you're in position. That's why UTG opens ~13% of hands and the button ~43% — and why position rewrites every c-bet, bluff, and pot-control decision postflop.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-08-27",
+  updated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎯",
@@ -176,7 +176,7 @@ Every seat gets its own opening range because **the number of players still to a
 | Hijack | ~20% | Steal opportunities begin |
 | **Cutoff** | **~27%** | Only the button behind — prime steal seat |
 | **Button** | ==g:**~43%**== | Guaranteed last action postflop — widest open |
-| Small blind | ~40% (raise-or-fold) | Wide when folded to, but never flat |
+| Small blind | ~40% (raise-or-fold) | Wide when folded to — raise rather than complete against most big blinds; facing a raise, 3-bet or fold — don't flat-call |
 | Big blind | Defends wide vs steals | Closing action + pot odds, not opens |
 
 ![9-handed poker table showing opening ranges widening from UTG (~13%, tight red) to the Button (~43%, wide green)](/images/holdem-position-play-opening-range.webp "Opening range by position — UTG opens ~13%, the button ~43%")
@@ -210,10 +210,10 @@ Massively. The continuation bet is fundamentally an information play, and inform
 | Situation | Typical solver c-bet frequency (flop) |
 |---|---|
 | **IP (BTN/CO vs blind defense)** | **~65–75%** of boards |
-| OOP (3-bet pots from the blinds) | ~40–50% of boards |
-| OOP raiser vs IP caller | ~30–45% — most selective |
+| OOP as the 3-bettor (3-bet pots from the blinds) | Very high — in our solver runs the big blind c-bets over 97% of the time on both Q♥T♥7♠ and 8♦5♣2♠ |
+| OOP raiser vs IP caller (single-raised pot) | ~30–45% — most selective |
 
-In position, you can c-bet a wide range — including air and backdoor draws — because your opponent must respond without knowing your next move, and when called you still act last on the turn. Out of position, the same bet is riskier: a check-raise ends your bluff, and a call leaves you guessing first on every remaining street. That's why blindly c-betting 100% "because you raised preflop" burns money OOP.
+In position, you can c-bet a wide range — including air and backdoor draws — because your opponent must respond without knowing your next move, and when called you still act last on the turn. Out of position, the same bet is riskier: a check-raise ends your bluff, and a call leaves you guessing first on every remaining street. That's why blindly c-betting 100% "because you raised preflop" burns money OOP in a single-raised pot — the near-100% row above belongs to the 3-bettor, whose range advantage licenses it.
 
 The full sizing and board-texture framework is in the [continuation bet guide](/en/blog/holdem-continuation-bet).
 
@@ -221,7 +221,7 @@ The full sizing and board-texture framework is in the [continuation bet guide](/
 
 ## Small Blind Strategy: Why 3-Bet or Fold?
 
-The small blind looks cheap — half a blind already in — and plays expensive: you're first to act on every postflop street against everyone. Modern strategy has converged on a blunt fix: ==**from the SB, 3-bet or fold — almost never flat-call.**==
+The small blind looks cheap — half a blind already in — and plays expensive: you're first to act on every postflop street against everyone. Modern strategy has converged on a blunt fix: ==**from the SB, facing a raise, 3-bet or fold — almost never flat-call.**==
 
 Flat-calling from the SB puts you in a capped, transparent range, OOP, with the big blind still behind you and priced in to squeeze. Instead:
 
@@ -282,11 +282,11 @@ A. From UTG in a full ring game, open roughly the top ~13% of hands — strong p
 
 **Q. How does position affect c-bet frequency?**
 
-A. In position (button or cutoff), solvers c-bet roughly 65–75% of flops — you act last on every later street, so wide betting including air is safe. Out of position that drops to roughly 30–50%, because a check-raise can end your bluff and a call leaves you guessing first on the turn and river. C-betting the same frequency OOP as IP is one of the most common and costly leaks.
+A. In position (button or cutoff), solvers c-bet roughly 65–75% of flops — you act last on every later street, so wide betting including air is safe. Out of position in a single-raised pot that drops to roughly 30–45%, because a check-raise can end your bluff and a call leaves you guessing first on the turn and river (as the 3-bettor out of position it's a different story — the range advantage lets you c-bet almost every flop). C-betting the same frequency OOP as IP is one of the most common and costly leaks.
 
 **Q. Should you always 3-bet from the small blind?**
 
-A. When you enter the pot, mostly yes — the modern default from the SB is 3-bet or fold, not flat-call. Flat-calling creates a capped, out-of-position range that the big blind can squeeze. 3-bet your strong hands plus blocker bluffs like A5s/A4s, size up to about 4× the open (vs 3× in position), and fold the rest.
+A. When you enter a raised pot, mostly yes — the modern default from the SB is 3-bet or fold, not flat-call. Flat-calling creates a capped, out-of-position range that the big blind can squeeze. 3-bet your strong hands plus blocker bluffs like A5s/A4s, size up to about 4× the open (vs 3× in position), and fold the rest.
 
 ---
 

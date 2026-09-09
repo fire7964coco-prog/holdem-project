@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Estar en posición significa que hablas último — ves la decisión de cada rival antes de gastar una ficha. Los estudios de solver y de bases de datos sugieren que fuera de posición solo capturas alrededor del 60–85% de tu equity — lo que en posición te deja por encima del 100%. Por eso UTG abre ~13% de las manos y el botón ~43% — y por eso la posición reescribe cada c-bet, cada farol y cada decisión de control del bote en el postflop.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-09-07",
-  masterUpdated: "2026-08-27",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎯",
@@ -177,7 +177,7 @@ Cada asiento tiene su propio rango de apertura porque **el número de jugadores 
 | Hijack | ~20% | Empiezan las oportunidades de robo |
 | **Cutoff** | **~27%** | Solo el botón detrás — asiento de robo por excelencia |
 | **Botón** | ==g:**~43%**== | Última acción garantizada en el postflop — la apertura más amplia |
-| Ciega pequeña | ~40% (subir o foldear) | Amplio cuando llega foldeado, pero nunca iguales |
+| Ciega pequeña | ~40% (subir o foldear) | Amplio cuando llega foldeado — sube en vez de completar contra la mayoría de ciegas grandes; frente a una subida, 3-bet o fold — no iguales |
 | Ciega grande | Defiende amplio vs robos | Cierra la acción + pot odds, no aperturas |
 
 ![Mesa de póker de 9 jugadores mostrando cómo los rangos de apertura se abren desde UTG (~13%, rojo cerrado) hasta el botón (~43%, verde amplio)](/images/holdem-position-play-opening-range.webp "Rango de apertura por posición — UTG abre ~13%, el botón ~43%")
@@ -211,10 +211,10 @@ Muchísimo. La apuesta de continuación es en el fondo una jugada de informació
 | Situación | Frecuencia típica de c-bet del solver (flop) |
 |---|---|
 | **IP (BTN/CO vs defensa de ciega)** | **~65–75%** de las mesas |
-| OOP (botes de 3-bet desde las ciegas) | ~40–50% de las mesas |
-| Quien subió OOP vs quien iguala IP | ~30–45% — el más selectivo |
+| OOP como quien mete el 3-bet (botes de 3-bet desde las ciegas) | Altísima — en nuestras corridas de solver la ciega grande cbetea más del 97% de las veces tanto en Q♥T♥7♠ como en 8♦5♣2♠ |
+| Quien subió OOP vs quien iguala IP (bote de una sola subida) | ~30–45% — el más selectivo |
 
-En posición, puedes cbetear un rango amplio — incluido aire y proyectos backdoor — porque tu rival tiene que responder sin saber tu siguiente movimiento, y cuando iguala tú sigues actuando último en el turn. Fuera de posición, la misma apuesta es más arriesgada: un check-raise termina tu farol, y un call te deja adivinando primero en cada calle que queda. Por eso cbetear a ciegas el 100% «porque subiste en el preflop» quema dinero OOP.
+En posición, puedes cbetear un rango amplio — incluido aire y proyectos backdoor — porque tu rival tiene que responder sin saber tu siguiente movimiento, y cuando iguala tú sigues actuando último en el turn. Fuera de posición, la misma apuesta es más arriesgada: un check-raise termina tu farol, y un call te deja adivinando primero en cada calle que queda. Por eso cbetear a ciegas el 100% «porque subiste en el preflop» quema dinero OOP en un bote de una sola subida — la fila de casi el 100% de arriba es la de quien mete el 3-bet, a quien su ventaja de rango se lo permite.
 
 El marco completo de sizing y textura de mesa está en la [guía de la apuesta de continuación](/es/blog/holdem-continuation-bet).
 
@@ -222,7 +222,7 @@ El marco completo de sizing y textura de mesa está en la [guía de la apuesta d
 
 ## Estrategia de la ciega pequeña: ¿por qué 3-bet o fold?
 
-La ciega pequeña parece barata — media ciega ya puesta — y sale cara: eres el primero en actuar en cada calle del postflop contra todos. La estrategia moderna ha convergido en un remedio contundente: ==**desde la SB, 3-bet o fold — casi nunca iguales.**==
+La ciega pequeña parece barata — media ciega ya puesta — y sale cara: eres el primero en actuar en cada calle del postflop contra todos. La estrategia moderna ha convergido en un remedio contundente: ==**desde la SB, frente a una subida, 3-bet o fold — casi nunca iguales.**==
 
 Igualar desde la SB te mete en un rango encasillado y transparente, OOP, con la ciega grande todavía detrás y con precio para hacer squeeze. En su lugar:
 
@@ -295,11 +295,11 @@ A. Desde UTG en full ring, abre más o menos el ~13% superior de las manos — p
 
 **Q. ¿Cómo afecta la posición a la frecuencia de c-bet?**
 
-A. En posición (botón o cutoff), los solvers hacen c-bet más o menos en el 65–75% de los flops — actúas último en cada calle posterior, así que apostar amplio incluido aire es seguro. Fuera de posición eso baja a más o menos el 30–50%, porque un check-raise puede terminar tu farol y un call te deja adivinando primero en el turn y el river. Cbetear la misma frecuencia OOP que IP es una de las fugas más comunes y costosas.
+A. En posición (botón o cutoff), los solvers hacen c-bet más o menos en el 65–75% de los flops — actúas último en cada calle posterior, así que apostar amplio incluido aire es seguro. Fuera de posición en un bote de una sola subida eso baja a más o menos el 30–45%, porque un check-raise puede terminar tu farol y un call te deja adivinando primero en el turn y el river (como quien mete el 3-bet fuera de posición la historia es otra — la ventaja de rango te deja cbetear casi todos los flops). Cbetear la misma frecuencia OOP que IP es una de las fugas más comunes y costosas.
 
 **Q. ¿Hay que hacer siempre 3-bet desde la ciega pequeña?**
 
-A. Cuando entras al bote, casi siempre sí — el estándar moderno desde la SB es 3-bet o fold, no igualar. Igualar crea un rango encasillado y fuera de posición que la ciega grande puede atacar con un squeeze. Haz 3-bet con tus manos fuertes más faroles con bloqueadores como A5s/A4s, sube el tamaño a unas 4× la apertura (frente a 3× en posición), y foldea el resto.
+A. Cuando entras a un bote ya subido, casi siempre sí — el estándar moderno desde la SB es 3-bet o fold, no igualar. Igualar crea un rango encasillado y fuera de posición que la ciega grande puede atacar con un squeeze. Haz 3-bet con tus manos fuertes más faroles con bloqueadores como A5s/A4s, sube el tamaño a unas 4× la apertura (frente a 3× en posición), y foldea el resto.
 
 ---
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Sebuah out adalah kartu mana pun yang tersisa di deck yang mengubah tangan Anda menjadi kemungkinan pemenang. Hitung, lalu konversi: kalikan outs dengan 4 di flop atau dengan 2 di turn untuk mendapat persen kasar Anda. Flush draw punya 9 outs ≈ 36% hingga river.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-08-27",
-  masterUpdated: "2026-08-12",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "11 mnt",
   emoji: "🎯",
@@ -149,7 +149,7 @@ Katakanlah Anda memegang ==b:J♠ 10♠== di flop ==9♠ 8♣ 2♠==. Anda punya
 - Straight outs yang bukan sekop: Q♥ Q♦ Q♣, 7♥ 7♦ 7♣ = **6**
 - Total: **15 outs**, bukan 17
 
-Logika sama pada **flush + gutshot**: 9 flush outs + 4 kartu gutshot, tapi satu dari empat itu adalah jenis Anda → 9 + 3 = **12**. Setiap kali dua draw berbagi kartu, kurangi tumpang tindihnya. Inilah cara pemain paling sering menghitung berlebih, dan itu sebabnya baris combo di chart terlihat "kurang satu" dari jumlahnya.
+Logika sama pada **flush + gutshot**: 9 flush outs + 4 kartu gutshot, tapi satu dari empat itu adalah jenis Anda → 9 + 3 = **12**. Setiap kali dua draw berbagi kartu, kurangi tumpang tindihnya — satu kartu pada flush + gutshot, dua pada flush + open-ender. Inilah cara pemain paling sering menghitung berlebih, dan itu sebabnya baris combo di chart selalu jatuh di bawah hasil penjumlahan sederhana.
 
 ---
 
@@ -162,7 +162,7 @@ Inilah bagian yang dilewati kebanyakan panduan, dan justru inilah yang benar-ben
 Tiga situasi untuk melatih mata Anda:
 
 :::card
-♠ | Flush bukan-nut | Memegang 8♠7♠ di K♠9♠2♣, Anda punya 9 "outs" sekop — tapi jika sekop datang dan lawan memegang sekop lebih besar, Anda membuat flush tapi tetap kalah. Kurangi hitungan outs Anda saat Anda tidak drawing ke nut flush
+♠ | Flush bukan-nut | Memegang 8♠7♠ di K♠9♠2♣, Anda punya 9 "outs" sekop — tapi jika sekop datang dan lawan ternyata mengejar flush yang sama dengan sekop lebih tinggi, Anda membuat flush tapi tetap kalah. Kurangi hitungan outs Anda saat Anda tidak drawing ke nut flush
 🂮 | Meja berpasangan | Flush draw di meja seperti J♥8♥8♣ terlihat seperti 9 outs bersih, tapi meja sudah berpasangan — full house jadi mungkin menunggu, jadi sebagian flush Anda mati sejak awal
 🃁 | Overcard melawan kekuatan | Dua overcard (A-K di Q-8-3) terhitung 6 outs di atas kertas, tapi jika raise besar meneriakkan set atau two pair, memasangkan ace Anda sering tidak cukup baik — hitung 3, mungkin 4, bukan 6
 :::

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "An out is any card left in the deck that improves your hand to a likely winner. Count them, then convert: multiply outs by 4 on the flop or by 2 on the turn to get your rough % to hit. A flush draw is 9 outs ≈ 36% by the river.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-08-12",
+  updated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🎯",
@@ -148,7 +148,7 @@ Say you hold ==b:J♠ T♠== on a ==9♠ 8♣ 2♠== flop. You have two draws st
 - Straight outs that aren't spades: Q♥ Q♦ Q♣, 7♥ 7♦ 7♣ = **6**
 - Total: **15 outs**, not 17
 
-Same logic on a **flush + gutshot**: 9 flush outs + 4 gutshot cards, but one of those four is your suit → 9 + 3 = **12**. Whenever two draws share a card, subtract the overlap. This is the single most common way players overcount, and it's why the combo rows in the chart look "one short" of the sum.
+Same logic on a **flush + gutshot**: 9 flush outs + 4 gutshot cards, but one of those four is your suit → 9 + 3 = **12**. Whenever two draws share cards, subtract the overlap — one card in a flush + gutshot, two in a flush + open-ender. This is the single most common way players overcount, and it's why the combo rows in the chart come in below the simple sum.
 
 ---
 
@@ -161,7 +161,7 @@ This is the section most guides skip, and it's the one that actually saves money
 Three situations to train your eye for:
 
 :::card
-♠ | The non-nut flush | Holding 8♠7♠ on K♠9♠2♣, you have 9 spade "outs" — but if a spade comes and an opponent holds a bigger spade, you make a flush and still lose. Discount your outs when you're not drawing to the nut flush
+♠ | The non-nut flush | Holding 8♠7♠ on K♠9♠2♣, you have 9 spade "outs" — but if a spade comes and an opponent was drawing to the same flush with a higher spade, you make a flush and still lose. Discount your outs when you're not drawing to the nut flush
 🂮 | The paired board | A flush draw on a board like J♥8♥8♣ looks like 9 clean outs, but the board is already paired — a made full house may be waiting, so some of your flushes are dead on arrival
 🃁 | Overcards into strength | Two overcards (A-K on Q-8-3) count as 6 outs on paper, but if a big raise screams a set or two pair, pairing your ace often isn't good — count 3, maybe 4, not 6
 :::

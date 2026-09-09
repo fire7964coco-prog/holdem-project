@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "You flop a set with a pocket pair 11.8% of the time (7.5-to-1 against), flop a flush with two suited cards just 0.84%, and complete a flopped flush draw by the river 35% of the time. Every number below is derived from the deck, not guessed.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-08-11",
+  updated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🎲",
@@ -83,7 +83,7 @@ Set mining is the purest [implied odds](/en/blog/holdem-implied-odds "thumb:/ima
 Two related numbers people ask about:
 
 - **Hitting a set by the river** (from preflop, seeing all five board cards) is ==**19.2%**== — 1 − C(48,5)/C(50,5). Higher than the flop figure because you get two more cards, but you can't count on reaching the river cheaply, which is why the flop number rules set-mining.
-- **Set over set** — you flop a set and lose to a bigger one — has no single fixed figure because it depends on how many opponents hold pairs, but with two players both holding pairs it lands near ~1%. It's the classic cooler: the math was on your side the whole way.
+- **Set over set** — two players with pocket pairs flop a set on the same hand, and the smaller one loses to the bigger — has no single fixed figure because it depends on how many opponents hold pairs, but with two players both holding pairs, *both* flopping a set lands near ~1%. It's the classic cooler: the math was on your side the whole way.
 
 ---
 
@@ -119,7 +119,7 @@ A **backdoor** (runner-runner) flush — you flop just *one* extra card of your 
 
 ![An eight-high straight laid out in sequence on green felt, the finished hand an open-ended draw is chasing](/images/holdem-reading-straight-example.webp "An open-ended straight draw fills from either end — eight outs, 31.5% to complete by the river")
 
-Connectors like 8♠7♠ have their own lifecycle. You'll **flop a made straight only 1.3%** of the time (76-to-1) — rarer than most players assume. Far more often you flop a **draw**:
+Connectors like 8♠7♠ have their own lifecycle. You'll **flop a made straight only 1.3%** of the time (76-to-1) — rarer than most players assume. That figure holds for 54s through JTs, the connectors that can fill a straight from either end; hands at the edge of the deck have fewer runs, down to 0.33% for A-K. Far more often you flop a **draw**:
 
 - **Open-ended straight draw (OESD):** ~10% of flops with connectors. Eight outs, completes **31.5%** by the river — 1 − C(39,2)/C(47,2) — or 17% on any single card.
 - **Gutshot (inside) straight draw:** four outs, completes **16.5%** by the river, 8.5% on one card. Half the equity of an open-ender, which is why the same connectors play so differently depending on the flop.
@@ -145,7 +145,7 @@ These are the numbers behind the best (and worst) nights of your poker life. Eac
 
 One crucial distinction the top pages routinely botch: a **set** is a pocket pair plus one matching board card (11.8%), while **trips** is one *unpaired* hole card that the board pairs twice (1.35%). Same three-of-a-kind on paper, wildly different odds and playability — a set is disguised, trips are obvious. Don't let anyone tell you they're the same shape.
 
-The straight flush number is the one to frame: with suited connectors there are exactly **four** flops that make it (one run in your suit), so 4 ÷ 19,600 ≈ 1 in 4,900. That's why flopped straight flushes are stories people tell for a decade.
+The straight flush number is the one to frame: with suited connectors from 54s up to JTs there are exactly **four** flops that make it (one three-card run in your suit for each straight the hand can sit in; the edges have fewer — QJs three, KQs two, A2s one), so 4 ÷ 19,600 ≈ 1 in 4,900. That's why flopped straight flushes are stories people tell for a decade.
 
 The full house figure counts every way the flop hands you a boat with a pocket pair — including the flops that come as trips of another rank on top of your pair — which is why it reads 0.98% rather than the narrower ~0.73% some tables quote for "set plus a board pair" only.
 

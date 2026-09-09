@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Main Event APT Incheon 2026 dimenangkan Stephen Pang dari Hong Kong, yang membawa pulang KRW 411.180.000 (~$293.700) setelah deal ICM tiga pemain, plus trofi Singa emas 24K. Field mencetak rekor 1.393 entri dengan total prize pool KRW 3.008.880.000. Runner-up Shoumin Zhang (Tiongkok, KRW 366.500.000 / ~$261.785), posisi ketiga Yifu He (AS). Tiga besar juga mendapat kursi Main Event APT Championship 2026 di Taipei (~$10.000 per kursi). Hanya untuk warga negara asing (warga negara Korea tanpa izin tinggal tetap di luar negeri tidak boleh masuk). Seoul berjarak ~1 jam — untuk stop berikutnya, trip poker dan trip Korea tetap trip yang sama.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-08-28",
-  masterUpdated: "2026-08-28",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "16 mnt",
   emoji: "🇰🇷",
@@ -37,7 +37,7 @@ Trip poker dan trip Korea adalah trip yang sama. ==g:Paradise City hanya 10 meni
 ---
 
 > **Jawaban singkat**
-> APT Incheon 2026 sudah berlangsung ==**7–16 Agustus**== di Paradise City Casino, Incheon. Resor ini ==g:10 menit dengan shuttle gratis dari Terminal 1 Bandara Incheon== — berangkat setiap 20 menit, tanpa biaya. Buy-in Main Event: ==**KRW 2.500.000 (~$1.703)**==, bergaransi $1 juta. Kualifikasi online Natural8 total membagikan ==g:**74 kursi**==. ==r:Mega $35 dan OnLive tutup pada 2 Agustus, dan jalur terakhir (Step $20 → Mega $200) tutup 7 Agustus, hari pembukaan festival==. ==g:**Kualifikasi online sudah selesai sebelum Main Event dimulai 9 Agustus.**== Kasino ==r:hanya untuk warga negara asing== — warga negara Korea tanpa izin tinggal tetap di luar negeri tidak boleh masuk.
+> APT Incheon 2026 sudah berlangsung ==**7–16 Agustus**== di Paradise City Casino, Incheon. Resor ini ==g:10 menit dengan shuttle gratis dari Terminal 1 Bandara Incheon== — berangkat setiap 20 menit, tanpa biaya. Buy-in Main Event: ==**KRW 2.500.000 (~$1.703)**==, bergaransi $1 juta. Kualifikasi online Natural8 menjamin total ==g:**74 kursi**==. ==r:Mega $35 dan OnLive tutup pada 2 Agustus, dan jalur terakhir (Step $20 → Mega $200) tutup 7 Agustus, hari pembukaan festival==. ==g:**Kualifikasi online sudah selesai sebelum Main Event dimulai 9 Agustus.**== Kasino ==r:hanya untuk warga negara asing== — warga negara Korea tanpa izin tinggal tetap di luar negeri tidak boleh masuk.
 
 ---
 
@@ -139,7 +139,7 @@ Natural8 adalah partner online resmi APT dan menjalankan kampanye satelit ==**Jo
 
 </div>
 
-:::note[**★Status per 9 Agustus 2026 — kualifikasi online sudah selesai.** Mega $35 dan kualifikasi OnLive Day 1 tutup pada 2 Agustus, dan jalur terakhir, **Step $20 → Mega $200**, tutup pada **Jumat, 7 Agustus** — hari pembukaan seri. Angka 52 + 22 = 74 kursi di tabel itu total yang sudah dibagikan. Rutenya tetap dicatat karena struktur yang sama kembali di stop APT berikutnya.]:::
+:::note[**★Status per 9 Agustus 2026 — kualifikasi online sudah selesai.** Mega $35 dan kualifikasi OnLive Day 1 tutup pada 2 Agustus, dan jalur terakhir, **Step $20 → Mega $200**, tutup pada **Jumat, 7 Agustus** — hari pembukaan seri. Angka 52 + 22 = 74 kursi di tabel itu adalah total terjamin untuk jalur-jalur tersebut. Rutenya tetap dicatat karena struktur yang sama kembali di stop APT berikutnya.]:::
 
 **Jalur berjenjang, seperti saat itu berjalan:**
 
@@ -237,12 +237,12 @@ Anda bisa menginap di hotel kasino sepanjang trip — mainkan sesi Anda, tidur, 
 | ==g:**Shuttle gratis → T1 → AREX Express**== | ==g:Seoul Station== | ==g:~53 mnt== | ==g:~₩11.000 (~$8)== |
 | Shuttle gratis → T1 → AREX All-Stop | Hongdae (Hongik Univ.) | ~70 mnt | ~₩4.750 (~$3,50) |
 | Bus Bandara 6001 | Myeongdong / City Hall | ~60 mnt | ~₩17.000 (~$13) |
-| Bus Bandara 6015 | Gangnam / Yangjae | ~70 mnt | ~₩17.000 (~$13) |
+| Bus Bandara 6015 | Myeongdong / Chungjeongno / Gongdeok / Mapo | tergantung lalu lintas | ~₩17.000 (~$13) |
 | Taksi langsung | Hongdae / Myeongdong | ~50–60 mnt | ~$35–50 |
 
 </div>
 
-==g:Dua opsi AREX dari T1==: **Express** (non-stop ke Seoul Station dalam 43 mnt, ₩11.000 — lalu transfer ke Line 2 atau 4) atau **All-Stop** (langsung ke Stasiun Hongdae/Hongik University tanpa transfer, ~60 mnt, ₩4.750). Kereta All-Stop berjalan setiap 6–10 menit, jam 5 pagi sampai tengah malam. Bus bandara berjalan langsung ke Myeongdong dan Gangnam jika Anda lebih suka itu.
+==g:Dua opsi AREX dari T1==: **Express** (non-stop ke Seoul Station dalam 43 mnt, ₩11.000 — lalu transfer ke Line 1 atau 4; untuk Line 2, naik All-Stop ke Hongik University saja) atau **All-Stop** (langsung ke Stasiun Hongdae/Hongik University tanpa transfer, ~60 mnt, ₩4.750). Kereta All-Stop berjalan setiap 6–10 menit, jam 5 pagi sampai tengah malam. Bus bandara berjalan langsung ke Myeongdong jika Anda lebih suka itu.
 
 Berikut yang bisa dilakukan dengan 1–3 hari luang:
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A straddle is an optional blind bet — usually twice the big blind — posted before the cards are dealt. It buys the straddler the last action and the option to raise preflop, doubling the stakes. In almost every case it's a -EV play, allowed only in cash games under house rules.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-08-26",
+  updated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "💰",
@@ -122,8 +122,8 @@ Even in cash games it's optional and house-rules dependent: some rooms allow onl
 The honest answer, and the one the solvers agree on: **for almost everyone, no.** GTO Wizard's analysis puts it bluntly — from an expected-value standpoint, straddling is a losing play. Three reasons:
 
 :::card
-🎯 | You commit blind | Money goes in before you see your cards, so you're playing a bloated pot with no information — the same disadvantage that makes the blinds the worst seats at the table
-📉 | It shrinks your positional edge | Doubling the blind bloats the starting pot and leaves more players still to act when you're in your best stealing seats. Counterintuitively, solvers respond by opening **fewer** hands in straddled pots — around 15–20% fewer on the button — not more
+🎯 | You commit blind | Money goes in before you see your cards, so you're playing a bloated pot with no information — the same disadvantage that makes the blinds the worst seats at the table. It also halves your effective depth: at $1/$2 a $200 stack is 100 big blinds, but with a $4 straddle on, the same stack plays like 50
+📉 | It shrinks your positional edge | Doubling the blind bloats the starting pot and leaves more players still to act when you're in your best stealing seats. Counterintuitively, solvers respond by opening **fewer** hands in straddled pots — around 15–20% fewer on the button, per [GTO Wizard's straddled-pot sims](https://blog.gtowizard.com/preflop-strategy-in-straddled-pots/) — not more
 💸 | It bloats the rake | Bigger pots mean more [rake](/en/blog/holdem-rake) skimmed out of them, a hidden tax on every straddled hand in a raked cash game
 :::
 

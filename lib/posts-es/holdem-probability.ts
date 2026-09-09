@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "odds",
   date: "2026-07-03",
   updated: "2026-09-09",
-  masterUpdated: "2026-08-11",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🎲",
@@ -127,7 +127,7 @@ Tienes un proyecto en el flop. ¿Con qué frecuencia lo completas? Todo se reduc
 
 </div>
 
-El caso clásico: ligas un **proyecto de color** (nueve outs). Lo completarás ==el 35% de las veces para el river== — mejor que una de cada tres. Un **proyecto de escalera abierto** (ocho outs) liga el 31.5%. Fíjate en las dos columnas: en cuanto el turn no ayuda, tus odds con una *sola* carta se reducen más o menos a la mitad, y por eso perseguir proyectos sale más caro calle a calle.
+El caso clásico: ligas un **proyecto de color** (nueve outs). Lo completarás ==el 35% de las veces para el river== — mejor que una de cada tres. Un **proyecto de escalera abierto** (ocho outs) liga el 31.5%. Fíjate en las dos columnas: en cuanto el turn no ayuda te queda una carta en lugar de dos, así que tus odds se reducen más o menos a la mitad — el 35% pasa a ser 19.6% en el proyecto de color —, y por eso perseguir proyectos sale más caro calle a calle.
 
 ---
 
@@ -220,7 +220,7 @@ A. Más o menos 1 entre 72,193 como mano de cinco cartas, o alrededor de 1 entre
 
 **Q. ¿Cuál es la probabilidad de tener póker (four of a kind)?**
 
-A. El póker (cuatro iguales) se liga alrededor de 1 entre 595 veces para el river en Hold'em (0.168%), o 1 entre 4,165 como mano servida de cinco cartas. Un póker *concreto*, como póker de ases, es mucho más improbable — o tienes esa pareja servida y caen las dos cartas restantes, o los cuatro palos aparecen en la mesa.
+A. El póker (cuatro iguales) se liga alrededor de 1 entre 595 veces para el river en Hold'em (0.168%), o 1 entre 4,165 como mano servida de cinco cartas. Un póker *concreto*, como póker de ases, es mucho más improbable — aproximadamente 1 entre 7,700 para el river. La vía más común (alrededor del 57% de las veces) es un as en tu mano y los otros tres en la mesa; tener la pareja servida y que caigan los dos ases restantes es más raro, y que los cuatro aparezcan en la mesa, más raro todavía.
 
 **Q. ¿Qué probabilidad hay de ligar un color, una escalera o un full?**
 
@@ -276,7 +276,7 @@ A. Menos de lo que crees antes del river. Incluso la pareja de ases — la mejor
 
 **Q. ¿Con qué frecuencia ligas en el flop?**
 
-A. Con dos cartas propias sin emparejar, ligarás al menos una de ellas en el flop alrededor del 32% de las veces — así que fallas por completo unos dos flops de cada tres. Por eso importan tanto la posición y la agresividad: la mayoría de los flops no ligan a nadie, y quien está dispuesto a apostar se lleva el bote a menudo.
+A. Con dos cartas propias sin emparejar, ligarás al menos una de ellas en el flop alrededor del 32% de las veces — así que fallas por completo unos dos flops de cada tres. Por eso importan tanto la posición y la agresividad: cualquier rival concreto ha fallado el flop unas dos veces de cada tres, y quien está dispuesto a apostar se lleva el bote a menudo.
 
 **Q. ¿Qué probabilidad hay de tener los nuts?**
 

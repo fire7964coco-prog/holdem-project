@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ein Out ist jede Karte im Deck, die deine Hand zu einem wahrscheinlichen Gewinner verbessert. Zähle sie, dann rechne um: multipliziere die Outs am Flop mit 4 oder am Turn mit 2 für deinen groben Prozentwert. Ein Flushdraw sind 9 Outs ≈ 36% bis zum River.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-08-13",
-  masterUpdated: "2026-08-12",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "🎯",
@@ -157,7 +157,7 @@ Sagen wir, du hältst ==b:J♠ 10♠== auf einem ==9♠ 8♣ 2♠== Flop. Du has
 - Straßen-Outs, die kein Pik sind: Q♥ Q♦ Q♣, 7♥ 7♦ 7♣ = **6**
 - Gesamt: **15 Outs**, nicht 17
 
-Dieselbe Logik bei einem **Flush + Gutshot**: 9 Flush-Outs + 4 Gutshot-Karten, aber eine dieser vier ist deine Farbe → 9 + 3 = **12**. Wann immer zwei Draws sich eine Karte teilen, ziehe die Überschneidung ab. Das ist die mit Abstand häufigste Art, wie Spieler überzählen, und der Grund, warum die Combo-Zeilen in der Tabelle „eins zu wenig“ gegenüber der Summe aussehen.
+Dieselbe Logik bei einem **Flush + Gutshot**: 9 Flush-Outs + 4 Gutshot-Karten, aber eine dieser vier ist deine Farbe → 9 + 3 = **12**. Wann immer zwei Draws sich Karten teilen, ziehe die Überschneidung ab – beim Flush + Gutshot eine Karte, beim Flush + OESD zwei. Das ist die mit Abstand häufigste Art, wie Spieler überzählen, und der Grund, warum die Combo-Zeilen in der Tabelle unter der simplen Summe liegen.
 
 ---
 
@@ -172,7 +172,7 @@ Das ist der Abschnitt, den die meisten Guides überspringen, und der, der tatsä
 Drei Situationen, für die du dein Auge trainierst:
 
 :::card
-♠ | Der Nicht-Nut-Flush | Hältst du 8♠7♠ auf K♠9♠2♣, hast du 9 Pik-„Outs“ – aber wenn ein Pik kommt und ein Gegner ein höheres Pik hält, machst du einen Flush und verlierst trotzdem. Rabattiere deine Outs, wenn du nicht auf den Nut-Flush drawst
+♠ | Der Nicht-Nut-Flush | Hältst du 8♠7♠ auf K♠9♠2♣, hast du 9 Pik-„Outs“ – aber wenn ein Pik kommt und ein Gegner mit einem höheren Pik auf denselben Flush gedrawt hat, machst du einen Flush und verlierst trotzdem. Rabattiere deine Outs, wenn du nicht auf den Nut-Flush drawst
 🂮 | Das gepaarte Board | Ein Flushdraw auf einem Board wie J♥8♥8♣ sieht aus wie 9 saubere Outs, aber das Board ist schon gepaart – ein fertiges Full House könnte lauern, also kommen manche deiner Flushes an und sind trotzdem wertlos
 🃁 | Overcards gegen Stärke | Zwei Overcards (A-K auf Q-8-3) zählen auf dem Papier als 6 Outs, aber wenn ein großer Raise nach einem Set oder Zwei Paaren schreit, ist dein Ass zu paaren oft nicht gut – zähle 3, vielleicht 4, nicht 6
 :::

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Implied odds are the extra chips you expect to win on later streets when your draw hits. They let you profitably call a draw that pot odds alone say to fold — but only if stacks are deep and your opponent will actually pay you off.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-08-26",
+  updated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "💰",
@@ -53,7 +53,7 @@ Pot odds | Implied odds
 Only the chips in the pot now | The pot now + chips you'll win on later streets
 A fact you can calculate exactly | An estimate based on stacks and opponent
 Tells you if the call pays for itself today | Tells you if the call pays off across the whole hand
-Works even against an all-in | Worth zero against an all-in (no more betting)
+Works even against an all-in | Worth zero against an all-in (heads-up — no more betting)
 :::
 
 The practical rule: **start with pot odds.** If your equity already beats the price, call — no story needed. If your draw *just misses* the price, that's when implied odds become the tie-breaker. And if your draw misses the price by a mile, implied odds usually can't save it either.
@@ -154,12 +154,12 @@ The lesson: a draw to the ==g:nuts== is worth far more than the same draw to a s
 
 ## When NOT to Rely on Implied Odds (Common Mistakes)
 
-**The moment your opponent is all-in, your implied odds are exactly zero — there is no more money to win, so you're back to pure pot odds.** This is the single most abused concept in poker: "I had implied odds" is the excuse players reach for after a call that was never justified.
+**Heads-up, the moment your opponent is all-in your implied odds are exactly zero — there is no more money to win from them, so you're back to pure pot odds.** (Multiway, a third player still holding chips can keep a side pot alive — but the all-in player can never pay you another cent.) This is the single most abused concept in poker: "I had implied odds" is the excuse players reach for after a call that was never justified.
 
 Watch for these leaks:
 
 :::card
-🚫 | Villain is all-in | No future streets means no future money. Implied odds = 0. Use pot odds only
+🚫 | Villain is all-in | No future streets means no future money from them. Heads-up, implied odds = 0 — use pot odds only
 📉 | Short stacks behind | If there's only half a pot left to win, "I'll get paid on the river" is a fantasy
 🙅 | A "no-pay" opponent | A nit who only bets the nuts won't pay off your flush. Your implied odds live and die on their willingness to call
 🃏 | A scary board | If the card that completes your draw also freezes the action (four to a flush, paired board), nobody pays you
@@ -203,7 +203,7 @@ A. It depends on your draw. Flush and open-ended straight draws need roughly 8�
 
 **Q. Do implied odds apply when your opponent is all-in?**
 
-A. No. When your opponent is all-in there are no more betting rounds, so there's no additional money to win — your implied odds are zero. In that spot you must rely on pot odds alone. Assuming implied odds against an all-in is a common and costly mistake.
+A. No — heads-up, when your opponent is all-in there are no more betting rounds, so there's no additional money to win from them — your implied odds are zero. (Multiway, a third player still holding chips can keep a side pot alive; the all-in player himself can never pay you more.) In that spot you must rely on pot odds alone. Assuming implied odds against an all-in is a common and costly mistake.
 
 **Q. How do implied odds work in set mining?**
 
@@ -222,7 +222,7 @@ A. Implied odds are all about the money left to win, and deep stacks mean more o
 ## The 3 Things to Remember
 
 1. **The formula:** extra needed = (call ÷ hit%) − (current pot + call). If you can realistically win more than that later, the call is good even when pot odds say fold.
-2. **The reality check:** implied odds are an estimate that lives on deep stacks and a paying opponent. Against an all-in or a short stack, they're zero — fall back on pot odds.
+2. **The reality check:** implied odds are an estimate that lives on deep stacks and a paying opponent. Against an all-in they're zero, and against a short stack there's very little left — fall back on pot odds.
 3. **The dark mirror:** reverse implied odds punish non-nut draws. A draw to the nuts is worth far more than the same draw to second best.
 
 Get this right and you stop torching chips on hopeful calls while still making the profitable ones nobody else dares to. From here, lock in the raw numbers with the [poker odds and probability chart](/en/blog/holdem-probability), or see exactly how often each draw lands in [drawing odds](/en/blog/holdem-drawing-odds).

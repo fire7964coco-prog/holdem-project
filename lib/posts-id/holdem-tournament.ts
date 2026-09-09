@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Di turnamen poker Anda membayar buy-in tetap untuk mendapat chip, blind naik mengikuti timer sampai satu pemain memegang semua chip. 10–15% pemain teratas ITM. Formatnya meliputi freezeout, PKO, satellite, dan deepstack — masuk lewat buy-in langsung, satellite, atau pra-registrasi online.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-08-28",
-  masterUpdated: "2026-08-26",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "14 mnt",
   emoji: "🏆",
@@ -70,7 +70,7 @@ Sebagai gantinya, Anda menerima **starting stack** — umumnya 10.000 sampai 50.
 
 **Starting stack Anda tidak punya nilai uang tunai.** Stack 10.000 chip tidak sama dengan $10.000 — itu hanya nyawa turnamen Anda. Yang penting hanyalah apakah Anda punya lebih banyak chip daripada pemain lain saat spot uang tiba.
 
-Setiap turnamen mempublikasikan strukturnya dalam **structure sheet**: starting stack, blind level, durasi level, jadwal ante, dan payout. Mintalah saat registrasi — itu dokumen paling berguna di ruangan.
+Setiap turnamen mempublikasikan strukturnya dalam **structure sheet**: starting stack, blind level, durasi level, jadwal ante, dan jadwal payout. Mintalah saat registrasi — itu dokumen paling berguna di ruangan.
 
 ---
 
@@ -161,7 +161,7 @@ Alih-alih mengeluarkan $10.000, Anda berkompetisi di turnamen $500 melawan 19 pe
 
 **Satellite berantai** turun lebih rendah lagi. Super-satellite $5 → qualifier $55 → event $215 → Main Event online $1.050. Banyak pemain di event besar masuk lewat rantai satellite dengan sebagian kecil dari buy-in langsung.
 
-==g:Strategi satellite berbeda dari permainan turnamen biasa — begitu Anda punya cukup chip untuk menjamin sebuah kursi, berhentilah mengambil risiko. Fold bahkan tangan bagus untuk menghindari bust di bubble.==
+==g:Strategi satellite berbeda dari permainan turnamen biasa — di satellite yang memberikan beberapa kursi identik, begitu Anda punya cukup chip untuk menjamin sebuah kursi, berhentilah mengambil risiko: fold bahkan tangan bagus untuk menghindari bust di bubble. Satellite winner-take-all yang hanya memberikan satu kursi adalah pengecualiannya — yang itu dimainkan untuk juara pertama dengan chip EV.==
 
 ---
 
@@ -264,7 +264,7 @@ Ini yang tidak diberitahukan panduan lain. Inilah timeline Day 1 realistis untuk
 - Min-cash: kira-kira 1,83x buy-in
 - Juara 1: $662.200 (~14% dari prize pool)
 
-Payout structure selalu diumumkan sebelum turnamen mulai. Mintalah **structure sheet** saat registrasi — itu memuat blind level, ante, starting stack, dan jadwal payout.
+Jadwal payout bisa dicek sebelum turnamen mulai, tapi jumlah akhir posisi yang dibayar dan angka persisnya sering baru dipastikan setelah registrasi, rebuy, dan add-on ditutup. Mintalah **structure sheet** saat registrasi — itu memuat blind level, ante, starting stack, dan jadwal payout.
 
 ---
 
@@ -277,7 +277,7 @@ Payout structure selalu diumumkan sebelum turnamen mulai. Mintalah **structure s
 | **ITM** | In The Money — Anda telah mencapai posisi yang dibayar |
 | **Bubble** | Tahap tepat sebelum ITM — satu eliminasi lagi sampai semua orang cash |
 | **Hand-for-hand** | Semua meja bermain satu tangan dalam satu waktu selama bubble untuk mencegah stalling |
-| **Structure sheet** | Dokumen resmi yang memuat blind level, ante, dan payout |
+| **Structure sheet** | Dokumen resmi yang memuat blind level, ante, dan jadwal payout |
 | **Chip leader** | Pemain dengan chip terbanyak |
 | **Short stack** | Pemain dengan chip sangat sedikit relatif terhadap blind |
 | **Shove / JAM** | All-in (dorong seluruh stack Anda ke tengah) |
@@ -359,7 +359,7 @@ A. Bisa, selama jendela late registration — biasanya beberapa blind level pert
 
 **Q. Bisakah Anda meninggalkan turnamen poker lebih awal dan menyimpan chip Anda?**
 
-A. Tidak. Berbeda dari cash game, chip turnamen tidak punya nilai uang tunai dan tidak bisa dicairkan di tengah event. Jika Anda pergi, chip Anda tetap dalam permainan dan terus membayar blind dan ante sampai habis. Anda hanya menerima uang jika finis di posisi yang dibayar (ITM).
+A. Tidak. Berbeda dari cash game, chip turnamen tidak punya nilai uang tunai dan tidak bisa dicairkan di tengah event. Jika Anda pergi, chip Anda tetap dalam permainan dan terus membayar blind dan ante sampai habis. Uang hadiah reguler hanya dibayarkan jika Anda finis di posisi yang dibayar (ITM); di format knockout dan PKO Anda juga bisa mengumpulkan bounty secara terpisah.
 
 **Q. Turnamen poker lebih banyak keberuntungan atau skill?**
 

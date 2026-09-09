@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Hingga river Anda akan membuat one pair 43,8% dari waktu, two pair 23,5%, flush 3,0%, dan full house 2,6% — sementara royal flush hanya muncul sekali dalam sekitar 31.000 tangan.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-08-27",
-  masterUpdated: "2026-08-11",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "13 mnt",
   emoji: "🎲",
@@ -127,7 +127,7 @@ Anda punya draw di flop. Seberapa sering Anda menyempurnakannya? Semuanya bermua
 
 </div>
 
-Situasi klasik: Anda nge-flop **flush draw** (sembilan outs). Anda akan sampai di sana ==35% dari waktu hingga river== — lebih baik dari satu banding tiga. Sebuah **open-ended straight draw** (delapan outs) hit 31,5%. Perhatikan dua kolomnya: begitu turn keluar kartu mati, odds Anda pada *satu* kartu kira-kira separuh, itulah persis kenapa draw jadi lebih mahal dikejar street demi street.
+Situasi klasik: Anda nge-flop **flush draw** (sembilan outs). Anda akan sampai di sana ==35% dari waktu hingga river== — lebih baik dari satu banding tiga. Sebuah **open-ended straight draw** (delapan outs) hit 31,5%. Perhatikan dua kolomnya: begitu turn keluar kartu mati, Anda tinggal punya satu kartu tersisa alih-alih dua, jadi odds Anda kira-kira separuh — 35% menjadi 19,6% untuk flush draw — itulah persis kenapa draw jadi lebih mahal dikejar street demi street.
 
 ---
 
@@ -220,7 +220,7 @@ A. Kira-kira 1 dari 72.193 sebagai tangan lima-kartu, atau sekitar 1 dari 3.590 
 
 **Q. Berapa odds four of a kind (atau quad aces)?**
 
-A. Four of a kind terbentuk sekitar 1 dari 595 tangan hingga river di Hold'em (0,168%), atau 1 dari 4.165 sebagai tangan lima-kartu yang langsung dibagikan. Quads *spesifik* seperti quad aces jauh lebih langka — Anda harus memegang pocket pair itu dan menangkap dua kartu sisanya, atau keempatnya mendarat di board.
+A. Four of a kind terbentuk sekitar 1 dari 595 tangan hingga river di Hold'em (0,168%), atau 1 dari 4.165 sebagai tangan lima-kartu yang langsung dibagikan. Quads *spesifik* seperti quad aces jauh lebih langka — kira-kira 1 dari 7.700 hingga river. Jalur yang paling umum (sekitar 57% dari kasusnya) adalah satu ace di tangan Anda dan tiga sisanya di board; memegang pocket pair-nya lalu menangkap dua ace sisanya lebih langka lagi, dan keempatnya mendarat di board paling langka.
 
 **Q. Seberapa langka flush, straight, atau full house?**
 
@@ -264,7 +264,7 @@ A. Lebih jarang dari dugaan Anda sebelum river. Bahkan pocket aces — tangan aw
 
 **Q. Seberapa sering Anda hit flop di poker?**
 
-A. Dengan dua hole card tak berpasangan Anda akan memasangkan setidaknya salah satunya di flop sekitar 32% dari waktu — jadi Anda benar-benar meleset kira-kira dua dari tiga flop. Itulah kenapa posisi dan agresi begitu penting: kebanyakan flop meleset untuk semua orang, dan pemain yang berani bertaruh sering mengambil pot.
+A. Dengan dua hole card tak berpasangan Anda akan memasangkan setidaknya salah satunya di flop sekitar 32% dari waktu — jadi Anda benar-benar meleset kira-kira dua dari tiga flop. Itulah kenapa posisi dan agresi begitu penting: satu lawan mana pun sudah meleset dari flop kira-kira dua kali dari tiga, dan pemain yang berani bertaruh sering mengambil pot.
 
 **Q. Berapa odds memegang nuts?**
 

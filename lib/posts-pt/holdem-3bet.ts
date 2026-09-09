@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Um 3-bet é o primeiro re-raise antes do flop — chamado de 3-bet porque o big blind é a primeira aposta, o open-raise a segunda, e o seu re-raise a terceira. Dê 3-bet por valor com um núcleo apertado (QQ+, AK) mais alguns blefes de bloqueio suited como A5s, dimensione em torno de 3x o open in position e 4x out of position, e mantenha sua frequência geral de 3-bet perto de 6–10%. Quando você é quem enfrenta um 3-bet, 4-bete suas mãos premium, pague as mãos que jogam bem, e folde o resto — foldando mais que o \"balanceado\" contra jogadores de stakes baixos que nunca blefam.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-06",
-  masterUpdated: "2026-08-26",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "♦️",
@@ -200,7 +200,7 @@ Chega de teoria — aqui está uma mão completa com os números, para você ver
 - **Flop:** ==Q♦ 8♣ 4♥.== Eu flopo **top pair, top kicker** — meu A♠Q♠ faz um par de damas com o melhor kicker possível (o ás). Melhores cinco cartas: Q♠ Q♦ A♠ 8♣ 4♥ = um par (damas) com o kicker de ás. Contra o range dele de damas piores, oitos e floats, estou muito à frente.
 - **O ponto:** porque dei 3-bet pré-flop, o pote já está grande e eu tenho a liderança da aposta, então aposto de novo por valor e sou pago por damas piores e projetos. Se eu tivesse só *flatado* pré-flop, três outros jogadores poderiam ter visto aquele flop, minha mão seria muito mais difícil de jogar, e o pote seria uma fração do tamanho. O 3-bet é o que transformou top pair num stack.
 
-Agora inverta: se eu tivesse dado 3-bet numa mão **light** tipo A5s ali e o cutoff tivesse dado **4-bet** para $55, eu simplesmente foldaria — o blefe de bloqueio cumpriu seu papel me dando um fold barato e limpo. Essa é a disciplina que torna o 3-bet light lucrativo em vez de esbanjador.
+Agora inverta: se eu tivesse dado 3-bet numa mão **light** tipo A5s ali e o cutoff tivesse dado **4-bet** para $48 (cerca de 2,7x — um pouco acima dos 2,2–2,5x de quem está em posição, porque o cutoff age primeiro no pós-flop), eu simplesmente foldaria — o blefe de bloqueio cumpriu seu papel me dando um fold barato e limpo. Essa é a disciplina que torna o 3-bet light lucrativo em vez de esbanjador.
 
 ---
 

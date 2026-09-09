@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Los empates se rompen en un orden fijo: primero el tipo de mano, luego las cartas que la forman y por último los kickers de mayor a menor. Misma pareja → gana el primer kicker más alto; cinco cartas idénticas → bote dividido. Los palos nunca deciden un empate.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-07",
-  masterUpdated: "2026-09-07",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "⚖️",
@@ -202,7 +202,7 @@ A. El trío lleva dos kickers, comparados de mayor a menor — así que si ambos
 
 **Q. ¿Importa la 5.ª carta en el póker?**
 
-A. Sí — y es la forma más común de perder un bote que dabas por ganado. Tres situaciones ponen todo el bote en la última carta: el tercer kicker de una pareja, la carta más baja de un color y la carta lateral junto a un póker que está en la mesa. Solo deja de importar cuando las propias cartas de la mesa superan lo que tienes en la mano; en ese momento tus cartas de mano salen por completo de la jugada y estás jugando la mesa.
+A. Sí — y es la forma más común de perder un bote que dabas por ganado. Las situaciones clásicas que ponen todo el bote en la última carta: el tercer kicker de una pareja, el kicker único de una doble pareja, la carta más baja de un color y la carta lateral junto a un póker que está en la mesa. Solo deja de importar cuando las propias cartas de la mesa superan la carta lateral que llevas — a veces porque juega la mesa entera y tus cartas de mano salen del todo, a veces porque una carta de mano juega y la otra no cuenta nunca: A♠ 3♠ contra A♦ 2♦ en A♥ K♣ Q♦ J♠ 9♥ es un split, jugando ambos A-A-K-Q-J.
 
 **Q. ¿Se puede usar el as como un 1 en el póker?**
 

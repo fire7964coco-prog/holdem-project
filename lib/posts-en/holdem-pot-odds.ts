@@ -175,7 +175,7 @@ I made every one of these before they made me broke. Watch for them:
 
 I'm holding ==b:A♥ K♥== on a ==Q♥ 7♥ 2♣== flop — the nut flush draw, 9 outs. Pot is $100, villain bets $50. My pot odds: I'm getting 3-to-1, so I need **25%**. With two cards to come I'm at ~35%, and even counting just the next card (19.1%) my implied odds are huge — if a heart lands I stack a top-pair hand. ==g:Easy call.==
 
-Turn is the 3♠ — a brick. The pot is $200 and villain jams $200 — a pot-sized bet, so now I'm only getting 2-to-1 and need **33%**. But with **one card left my flush is just 19.6%**. The direct price says fold; my implied odds are now zero because villain is all-in and can't pay me more. ==r:Correct fold== — and the exact spot where "hope" used to cost me a stack.
+Turn is the 3♠ — a brick. The pot is $200 and villain jams $200 — a pot-sized bet, so now I'm only getting 2-to-1 and need **33%**. But with **one card left my flush is just 19.6%** (I count only the 9 hearts — against a pot-sized jam, pairing my ace or king often still loses, so the overcards aren't clean outs). The direct price says fold; my implied odds are now zero because villain is all-in and can't pay me more. ==r:Correct fold== — and the exact spot where "hope" used to cost me a stack.
 
 ---
 

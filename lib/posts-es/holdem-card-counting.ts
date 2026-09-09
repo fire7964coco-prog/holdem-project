@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "odds",
   date: "2026-07-08",
   updated: "2026-09-09",
-  masterUpdated: "2026-08-14",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🧮",
@@ -94,7 +94,7 @@ Los bloqueadores también funcionan parcialmente. En una mesa ==b:Q-J-9==, la es
 
 ### Eliminación de cartas y cartas muertas
 
-Cada carta que ves elimina posibilidades. Si uno de tus outs de escalera ya está sobre la mesa, ese out está ==muerto== — tienes menos de los que creías. Leer la mesa así es un ajuste constante y silencioso que los buenos jugadores hacen en cada calle. Es contar, solo que no del tipo que necesita un total corrido.
+Cada carta que ves elimina posibilidades. En el Hold'em un out no puede estar sobre la mesa — si lo estuviera, tu mano ya estaría hecha — así que las ==cartas muertas== que hay que rastrear son las que se ven *fuera* de la mesa: una carta que se enseña por error en un reparto mal hecho, una mano que se muestra antes de irse al muck, el fold de un vecino que alcanzaste a ver. Cada una que has visto es un out que ya no tienes. Ajustar por ellas es una costumbre constante y silenciosa que los buenos jugadores mantienen en cada calle. Es contar, solo que no del tipo que necesita un total corrido.
 
 ---
 
@@ -102,7 +102,7 @@ Cada carta que ves elimina posibilidades. Si uno de tus outs de escalera ya est�
 
 **No — contar outs, calcular odds y usar bloqueadores es 100% legal en el póker, porque no es más que matemática mental.** Ninguna regla en ningún sitio prohíbe pensar. Es la definición de destreza.
 
-Aquí está la parte que la gente confunde: contar cartas tampoco es ilegal en el *blackjack* — no es un delito, solo aritmética mental. Pero, en la mayoría de las jurisdicciones, un casino es un negocio privado que puede vetar o rechazar a un sospechoso de contar, porque un contador le cuesta dinero *a la casa*. El póker le da la vuelta por completo: juegas contra ==otros jugadores==, y la casa solo se lleva el rake gane quien gane. Nadie tiene motivo alguno para impedir que cuentes tus outs — así que todo el problema de "que te echen" simplemente no existe aquí.
+Aquí está la parte que la gente confunde: contar cartas tampoco es ilegal en el *blackjack* — no es un delito, solo aritmética mental. Pero, en la mayoría de las jurisdicciones, un casino es un negocio privado que puede vetar o rechazar a un sospechoso de contar, porque un contador le cuesta dinero *a la casa*. El póker le da la vuelta por completo: juegas contra ==otros jugadores==, y la casa solo se lleva el rake gane quien gane. Nadie tiene motivo alguno para impedir que cuentes tus outs — el problema de "que te echen" que persigue al blackjack no nace aquí de contar. (Una sala conserva el derecho de rechazar a cualquiera por otros motivos; hacer cuentas sobre tu propio proyecto no es uno de ellos.)
 
 :::note
 La línea que nunca hay que cruzar es la trampa física o de información — cartas marcadas, colusión, compartir info de las cartas tapadas o software de solver en tiempo real online. Eso no es "contar", es fraude. Hacer cuentas de cabeza siempre es juego limpio.
@@ -157,7 +157,7 @@ A. El blackjack es tú contra un repartidor de reglas fijas usando un zapato a l
 
 **Q. ¿Cuál es el equivalente del conteo de cartas en el póker?**
 
-A. Contar outs (cartas que mejoran tu mano), usar bloqueadores (cartas que llevas y que reducen las combinaciones del rival) y rastrear cartas muertas (outs ya visibles en la mesa). Juntos te dejan leer qué es probable que salga y qué no puede tener tu rival.
+A. Contar outs (cartas que mejoran tu mano), usar bloqueadores (cartas que llevas y que reducen las combinaciones del rival) y rastrear cartas muertas (outs que ya has visto salir del juego — una carta enseñada por error, una mano mostrada al foldear). Juntos te dejan leer qué es probable que salga y qué no puede tener tu rival.
 
 **Q. ¿Se pueden contar cartas en Seven Card Stud?**
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "En un torneo de póker pagas un buy-in fijo por fichas; las ciegas suben con el reloj hasta que un jugador tiene todas las fichas. El 10-15% de arriba cobra. Formatos: freezeout, PKO, satélite y deepstack — entras por buy-in directo, satélite o preinscripción online.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-08-26",
-  masterUpdated: "2026-08-26",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏆",
@@ -68,7 +68,7 @@ A cambio, recibes un **stack inicial** — habitualmente de 10,000 a 50,000 fich
 
 **Tu stack inicial no tiene valor en dinero.** Un stack de 10,000 fichas no equivale a $10,000 — es simplemente tu vida en el torneo. Lo único que importa es si tienes más fichas que los demás jugadores cuando llegan los puestos de premio.
 
-Todo torneo publica su estructura en una **hoja de estructura**: stack inicial, niveles de ciegas, duración de nivel, calendario de antes y premios. Pídela en el registro — es el documento más útil que hay en la sala.
+Todo torneo publica su estructura en una **hoja de estructura**: stack inicial, niveles de ciegas, duración de nivel, calendario de antes y el calendario de premios. Pídela en el registro — es el documento más útil que hay en la sala.
 
 ---
 
@@ -159,7 +159,7 @@ En lugar de gastar $10,000, compites en un torneo de $500 contra otros 19 jugado
 
 **Los satélites encadenados** bajan aún más. Un súper-satélite de $5 → clasificatorio de $55 → evento de $215 → un Main Event online de $1,050. Muchos jugadores en grandes eventos entraron a través de una cadena de satélites por una fracción del buy-in directo.
 
-==g:La estrategia de satélite es distinta a la de un torneo normal — una vez tienes fichas suficientes para asegurar el asiento, deja de arriesgar. Foldea incluso buenas manos para no bustear en la burbuja.==
+==g:La estrategia de satélite es distinta a la de un torneo normal — en un satélite que reparte varios asientos idénticos, una vez tienes fichas suficientes para asegurar el asiento, deja de arriesgar: foldea incluso buenas manos para no bustear en la burbuja. La excepción es el satélite winner-take-all que reparte un solo asiento: ese se juega por el primer puesto, en chip EV.==
 
 ---
 
@@ -262,7 +262,7 @@ Esto es lo que ninguna otra guía te cuenta. Aquí tienes una cronología realis
 - Min-cash: aproximadamente 1.83x el buy-in
 - 1.er puesto: $662,200 (~14% de la bolsa de premios)
 
-La estructura de premios siempre se anuncia antes de que empiece el torneo. Pide la **hoja de estructura** en el registro — lista los niveles de ciegas, los antes, el stack inicial y el calendario de premios.
+El calendario de premios se puede consultar antes de que empiece el torneo, pero el número final de puestos pagados y las cantidades exactas a menudo solo se confirman cuando cierran el registro, los recompras y los add-ons. Pide la **hoja de estructura** en el registro — lista los niveles de ciegas, los antes, el stack inicial y el calendario de premios.
 
 ---
 
@@ -275,7 +275,7 @@ Estos 13 términos cubren casi todo lo que oirás en la mesa. Para la A a la Z c
 | **ITM** | In The Money — has llegado a un puesto que cobra |
 | **Burbuja** | La fase justo antes del ITM — a una eliminación de que todos cobren |
 | **Mano por mano (hand-for-hand)** | Todas las mesas juegan una mano a la vez durante la burbuja para evitar el juego lento |
-| **Hoja de estructura** | El documento oficial que lista niveles de ciegas, antes y premios |
+| **Hoja de estructura** | El documento oficial que lista niveles de ciegas, antes y el calendario de premios |
 | **Chip leader** | El jugador con más fichas |
 | **Short stack** | Un jugador con muy pocas fichas en relación con las ciegas |
 | **Shove / JAM** | Ir all-in (empujar todo tu stack al centro) |
@@ -349,7 +349,7 @@ A. Sí, durante la ventana de registro tardío — normalmente los primeros nive
 
 **Q. ¿Puedes irte pronto de un torneo de póker y quedarte con tus fichas?**
 
-A. No. A diferencia de un cash game, las fichas de torneo no tienen valor en dinero y no se pueden cambiar por efectivo a mitad de evento. Si te levantas, tus fichas se quedan en juego y siguen pagando ciegas y antes hasta que desaparecen. Solo cobras si terminas en un puesto de premio (ITM).
+A. No. A diferencia de un cash game, las fichas de torneo no tienen valor en dinero y no se pueden cambiar por efectivo a mitad de evento. Si te levantas, tus fichas se quedan en juego y siguen pagando ciegas y antes hasta que desaparecen. El dinero de premios normal solo se cobra si terminas en un puesto pagado (ITM); en los formatos knockout y PKO además puedes cobrar bounties aparte.
 
 **Q. ¿Cómo ganan dinero los torneos de póker?**
 

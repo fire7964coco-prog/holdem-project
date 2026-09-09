@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "In Position zu sein bedeutet, dass du zuletzt handelst – du siehst jede Entscheidung deiner Gegner, bevor du einen Chip ausgibst. Solver- und Datenbank-Studien legen nahe, dass Out-of-Position-Spieler nur etwa 60–85% ihrer Equity mitnehmen – in Position liegst du dann zwangsläufig über 100%. Deshalb öffnet UTG ~13% der Hände und der Button ~43% – und deshalb schreibt Position postflop jede C-Bet, jeden Bluff und jede Pot-Control-Entscheidung neu.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-08-18",
-  masterUpdated: "2026-08-18",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "16 Min.",
   emoji: "🎯",
@@ -183,7 +183,7 @@ Jeder Sitz bekommt seine eigene Open-Range, weil **die Anzahl der noch handelnde
 | Hijack | ~20% | Steal-Gelegenheiten beginnen |
 | **Cutoff** | **~27%** | Nur der Button dahinter – prima Steal-Sitz |
 | **Button** | ==g:**~43%**== | Garantierte letzte Aktion postflop – weitester Open |
-| Small Blind | ~40% (raise-or-fold) | Weit, wenn zu dir gefoldet wird, aber nie flach |
+| Small Blind | ~40% (raise-or-fold) | Weit, wenn zu dir gefoldet wird – gegen die meisten Big Blinds lieber raisen als completen; gegen einen Raise: 3-betten oder folden, nicht flat-callen |
 | Big Blind | Verteidigt weit gegen Steals | Schließende Aktion + Pot Odds, keine Opens |
 
 ![9-handed Pokertisch, der zeigt, wie sich Open-Ranges von UTG (~13%, eng rot) bis zum Button (~43%, weit grün) verbreitern](/images/holdem-position-play-opening-range.webp "Open-Range nach Position – UTG öffnet ~13%, der Button ~43%")
@@ -217,10 +217,10 @@ Sehr stark – und der Grund ist Information. Die Continuation Bet ist im Grunde
 | Situation | Typische Solver-C-Bet-Frequenz (Flop) |
 |---|---|
 | **IP (BTN/CO vs Blind-Defense)** | **~65–75%** der Boards |
-| OOP (3-Bet-Pots aus den Blinds) | ~40–50% der Boards |
-| OOP-Raiser vs IP-Caller | ~30–45% – am selektivsten |
+| OOP als 3-Better (3-Bet-Pots aus den Blinds) | Sehr hoch – in unseren Solver-Läufen c-bettet der Big Blind auf Q♥T♥7♠ wie auf 8♦5♣2♠ in über 97% der Fälle |
+| OOP-Raiser vs IP-Caller (Single-Raised Pot) | ~30–45% – am selektivsten |
 
-In Position kannst du eine weite Range c-betten – inklusive Air und Backdoor-Draws – weil dein Gegner reagieren muss, ohne deinen nächsten Zug zu kennen, und wenn gecallt wird, handelst du am Turn immer noch zuletzt. Out of Position ist dieselbe Bet riskanter: ein Check-Raise beendet deinen Bluff, und ein Call lässt dich auf jeder verbleibenden Street zuerst rätseln. Deshalb verbrennt blindes 100%-C-Betten „weil du preflop geraist hast“ OOP Geld.
+In Position kannst du eine weite Range c-betten – inklusive Air und Backdoor-Draws – weil dein Gegner reagieren muss, ohne deinen nächsten Zug zu kennen, und wenn gecallt wird, handelst du am Turn immer noch zuletzt. Out of Position ist dieselbe Bet riskanter: ein Check-Raise beendet deinen Bluff, und ein Call lässt dich auf jeder verbleibenden Street zuerst rätseln. Deshalb verbrennt blindes 100%-C-Betten „weil du preflop geraist hast“ OOP im Single-Raised Pot Geld – die Zeile mit fast 100% oben gehört dem 3-Better, dem sein Range-Vorteil das erlaubt.
 
 Das komplette Framework zu Sizing und Board-Textur steht im [Continuation-Bet-Leitfaden](/de/blog/holdem-continuation-bet).
 
@@ -228,7 +228,7 @@ Das komplette Framework zu Sizing und Board-Textur steht im [Continuation-Bet-Le
 
 ## Small-Blind-Strategie: warum 3-Bet oder Fold?
 
-Der Small Blind sieht billig aus – ein halber Blind ist schon drin – und spielt sich teuer: du bist auf jeder Postflop-Street als Erster gegen alle dran. Die moderne Strategie hat sich auf eine schroffe Lösung geeinigt: ==**aus dem SB: 3-Bet oder Fold – fast nie flat-callen.**==
+Der Small Blind sieht billig aus – ein halber Blind ist schon drin – und spielt sich teuer: du bist auf jeder Postflop-Street als Erster gegen alle dran. Die moderne Strategie hat sich auf eine schroffe Lösung geeinigt: ==**aus dem SB gegen einen Raise: 3-Bet oder Fold – fast nie flat-callen.**==
 
 Aus dem SB zu flat-callen bringt dich in eine gecappte, durchschaubare Range, OOP, mit dem Big Blind noch hinter dir und den Odds, um zu squeezen. Stattdessen:
 
@@ -281,11 +281,11 @@ A. Aus UTG in einem Full-Ring-Spiel öffnest du grob die besten ~13% der Hände 
 
 **Q. Wie beeinflusst Position die C-Bet-Frequenz?**
 
-A. In Position (Button oder Cutoff) c-betten Solver rund 65–75% der Flops – du handelst auf jeder späteren Street zuletzt, sodass weites Betten inklusive Air sicher ist. Out of Position fällt das auf etwa 30–50%, weil ein Check-Raise deinen Bluff beenden kann und ein Call dich am Turn und River zuerst rätseln lässt. OOP dieselbe Frequenz wie IP zu c-betten ist eines der häufigsten und teuersten Lecks.
+A. In Position (Button oder Cutoff) c-betten Solver rund 65–75% der Flops – du handelst auf jeder späteren Street zuletzt, sodass weites Betten inklusive Air sicher ist. Out of Position im Single-Raised Pot fällt das auf etwa 30–45%, weil ein Check-Raise deinen Bluff beenden kann und ein Call dich am Turn und River zuerst rätseln lässt. OOP dieselbe Frequenz wie IP zu c-betten ist eines der häufigsten und teuersten Lecks. (Als 3-Better out of Position sieht es anders aus – dort erlaubt dir der Range-Vorteil, fast jeden Flop zu c-betten.)
 
 **Q. Sollte man aus dem Small Blind immer 3-betten?**
 
-A. Wenn du in den Pot einsteigst, meistens ja – der moderne Standard aus dem SB ist 3-Bet oder Fold, kein Flat-Call. Flat-Callen erzeugt eine gecappte, out-of-Position-Range, die der Big Blind squeezen kann. 3-bette deine starken Hände plus Blocker-Bluffs wie A5s/A4s, size hoch auf etwa 4× den Open (vs. 3× in Position) und folde den Rest.
+A. Wenn du in einen geraisten Pot einsteigst, meistens ja – der moderne Standard aus dem SB ist 3-Bet oder Fold, kein Flat-Call. Flat-Callen erzeugt eine gecappte, out-of-Position-Range, die der Big Blind squeezen kann. 3-bette deine starken Hände plus Blocker-Bluffs wie A5s/A4s, size hoch auf etwa 4× den Open (vs. 3× in Position) und folde den Rest.
 
 ---
 

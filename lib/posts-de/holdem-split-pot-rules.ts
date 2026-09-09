@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ja – Pokerhände können unentschieden sein. Ein Pot wird geteilt (ein Chop), wenn zwei oder mehr Spieler im Showdown die identische beste Fünf-Karten-Hand zeigen. Die Farbe entscheidet nie, und ein übrig gebliebener Odd Chip geht an den ersten am Chop beteiligten Spieler links vom Dealer-Button.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-07",
-  masterUpdated: "2026-09-07",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "12 Min.",
   emoji: "🃏",
@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Split Pot beim Poker – Board 8♠ 8♥ 8♦ A♣ K♠ mit J♠ 10♥ gegen 5♣ 2♦, die Chips durch eine goldene Linie geteilt, weil keine Hand das Board schlägt",
   tags: ["split pot poker", "kann man beim poker unentschieden", "geteilter pot", "wann wird der pot geteilt", "odd chip regel poker", "board spielt", "texas holdem chop"],
   content: `
-In meiner Anfangszeit am Pokertisch hatte ich die Hand über alle Streets geführt – preflop geraist, am Flop und Turn gebettet, am River gecallt. Ich drehte J-10 um. Mein Gegner drehte **5-2** um. „Ich gewinne, oder?“ Der Dealer sagte nichts und zeigte auf das Board: ==**8-8-8-A-K**==. ==r:Keine unserer Hole Cards schlug den Drilling Achten mit Ass-König-Kicker==, also teilte der Dealer den Pot kommentarlos in zwei Hälften.
+In meiner Anfangszeit am Pokertisch hatte ich die Hand über alle Streets geführt – preflop geraist, am Flop und Turn gebettet, am River gecallt. Ich drehte J♠ 10♥ um. Mein Gegner drehte **5♣ 2♦** um. „Ich gewinne, oder?“ Der Dealer sagte nichts und zeigte auf das Board: ==**8♠ 8♥ 8♦ A♣ K♠**==. ==r:Keine unserer Hole Cards schlug den Drilling Achten mit Ass-König-Kicker==, also teilte der Dealer den Pot kommentarlos in zwei Hälften.
 
 Die Hälfte eines Pots zu bekommen, von dem du sicher warst, ihn gewonnen zu haben, ist ein Schock. Aber ==g:Split Pots folgen klaren Regeln== – und sie beantworten die Frage, die Anfänger am häufigsten stellen: **Kann man beim Poker unentschieden spielen?** Ja. Hier stehen alle Fälle, in denen es passiert.
 
@@ -85,7 +85,7 @@ Paare und Zwei Paare werden meist über Kicker entschieden – aber wenn auch di
 
 Ja – und dafür braucht es nicht einmal zwei Monsterhände. Wenn die fünf Gemeinschaftskarten bereits die bestmöglichen Fünf für alle noch Verbliebenen bilden, ==**spielt das Board**== und jeder verbliebene Spieler teilt sich den Pot, egal ob das zwei Spieler sind oder fünf.
 
-Das ist meine 8-8-8-A-K-Hand: meine J-10 und seine 5-2 spielten beide den Drilling Achten des Boards mit Ass-König-Kicker – identische Fünf, ein Chop, sobald beide Hände aufgedeckt waren. Der Extremfall ist ein Board wie A♠ K♠ Q♠ J♠ 10♠ (ein Royal Flush): keine Hole Cards können es verbessern, also ==g:choppen alle Verbliebenen==.
+Das ist meine 8-8-8-A-K-Hand: meine J♠ 10♥ und seine 5♣ 2♦ spielten beide den Drilling Achten des Boards mit Ass-König-Kicker – identische Fünf, ein Chop, sobald beide Hände aufgedeckt waren. Der Extremfall ist ein Board wie A♠ K♠ Q♠ J♠ 10♠ (ein Royal Flush): keine Hole Cards können es verbessern, also ==g:choppen alle Verbliebenen==.
 
 > **Der Check:** Schlägt *deine* beste Fünf – mit mindestens einer Hole Card – die eigenen Fünf des Boards? Wenn ja, spielst du deine Hand. Wenn nicht, spielt das Board und du choppst wahrscheinlich. Die vollständige Methode, ein Board so zu scannen, steht in [wie du das Board liest und deine besten 5 findest](/de/blog/holdem-reading-the-board).
 
@@ -144,7 +144,7 @@ A und B sind mit Assen und identischen Kickern unentschieden, also ==g:teilen si
 
 ## Wird der Pot je zur Hälfte High, zur Hälfte Low geteilt?
 
-Nicht beim Texas Hold'em. Du hast vielleicht von „Split-Pot-Spielen“ wie Omaha Hi-Lo oder Stud Hi-Lo gehört, bei denen **jeder** Pot dafür ausgelegt ist, zwischen der besten High-Hand und der besten qualifizierenden Low-Hand (Eight-or-Better) geteilt zu werden. Das ist eine andere Spielfamilie. ==Standard-Hold'em ist High-only== – der Pot wird *nur* geteilt, wenn die besten Fünf-Karten-Hände wirklich unentschieden sind.
+Nicht beim Texas Hold'em. Du hast vielleicht von „Split-Pot-Spielen“ wie Omaha Hi-Lo oder Stud Hi-Lo gehört, bei denen der Pot dafür ausgelegt ist, zwischen der besten High-Hand und der besten qualifizierenden Low-Hand (Eight-or-Better) geteilt zu werden – qualifiziert sich keine Low-Hand, kassiert die High-Hand den ganzen Pot. Das ist eine andere Spielfamilie. ==Standard-Hold'em ist High-only== – der Pot wird *nur* geteilt, wenn die besten Fünf-Karten-Hände wirklich unentschieden sind.
 
 ---
 

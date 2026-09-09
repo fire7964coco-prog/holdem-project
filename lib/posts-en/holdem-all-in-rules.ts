@@ -216,7 +216,7 @@ A partial all-in gives players who have **already acted** this round no second c
 Table stakes. What's on the table is all you can bet. If you're all-in for $80 and the pot is $400, you can only win $80 from each caller.
 
 ### Mistake 4: Mucking your hand too quickly
-You're all-in for the main pot. Two other players battle it out for the side pot. I once watched a short stack toss his cards the moment the side-pot showdown went against him — forgetting he wasn't even in that pot, and the main pot was still his to win. Those chips were gone the instant the cards hit the muck. Don't muck — your hand is still live for the main pot. ==Always wait for the dealer to resolve every pot before touching your cards.==
+You're all-in for the main pot. Two other players battle it out for the side pot. I once watched a short stack toss his cards the moment the side-pot showdown went against him — forgetting he wasn't even in that pot, and the main pot was still his to win. Once the dealer had swept them into the muck they were unidentifiable — dead, and the main pot went the other way. (A hand that can still be clearly identified may be retrieved at the floor's discretion, but never count on it.) Don't muck — your hand is still live for the main pot. ==Always wait for the dealer to resolve every pot before touching your cards.==
 
 ### Mistake 5: Going all-in out of frustration
 The all-in is the most powerful move at the table. It forces opponents into all-or-nothing decisions. That power disappears when you shove randomly. Use it at the right moment — short stack pressure, value hands you want called, bluffs with real fold equity.

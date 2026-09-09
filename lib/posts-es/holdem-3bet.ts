@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un 3-bet es la primera resubida antes del flop — se llama 3-bet porque la ciega grande es la primera apuesta, la subida de apertura la segunda y tu resubida la tercera. Haz un 3-bet de valor con un núcleo cerrado (QQ+, AK) más unos pocos faroles con bloqueadores del mismo palo como A5s, dale un tamaño de unas 3x la apertura en posición y 4x fuera de posición, y mantén tu frecuencia global de 3-bet cerca del 6–10%. Cuando eres tú quien se enfrenta a un 3-bet, resube con un 4-bet tus manos premium, iguala las que se juegan bien y foldea el resto — foldeando más de lo 'balanceado' contra jugadores de stakes bajos que nunca farolean.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-07",
-  masterUpdated: "2026-09-06",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "♦️",
@@ -200,7 +200,7 @@ Suficiente teoría — aquí tienes una mano completa con los números, para que
 - **Flop:** ==Q♦ 8♣ 4♥.== Ligo **par máximo con el mejor kicker** — mi A♠Q♠ forma pareja de damas con el mejor kicker posible (el as). Mejores cinco cartas: Q♠ Q♦ A♠ 8♣ 4♥ = pareja (de damas) con el kicker as. Contra su rango de damas peores, ochos y floats, voy muy por delante.
 - **La clave:** como hice 3-bet en el preflop, el bote ya es grande y tengo el mando de las apuestas, así que vuelvo a apostar por valor y me pagan damas peores y proyectos. Si me hubiera limitado a hacer *flat* en el preflop, otros tres jugadores podrían haber visto ese flop, mi mano sería mucho más difícil de jugar y el bote sería una fracción del tamaño. El 3-bet es lo que convirtió el par máximo en un stack.
 
-Ahora dale la vuelta: si hubiera hecho un 3-bet con una mano **light** como A5s ahí y el cutoff hubiera metido **4-bet** a $55, simplemente foldearía — el farol con bloqueadores hizo su trabajo dándome una retirada barata y limpia. Esa es la disciplina que hace que el 3-bet light sea rentable en vez de descontrolado.
+Ahora dale la vuelta: si hubiera hecho un 3-bet con una mano **light** como A5s ahí y el cutoff hubiera metido **4-bet** a $48 (unas 2.7x — un pelín por encima de las 2.2–2.5x de posición, porque el cutoff actúa primero en el postflop), simplemente foldearía — el farol con bloqueadores hizo su trabajo dándome una retirada barata y limpia. Esa es la disciplina que hace que el 3-bet light sea rentable en vez de descontrolado.
 
 ---
 

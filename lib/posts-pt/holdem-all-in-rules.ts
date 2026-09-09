@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Regras de all-in no Texas Hold'em: side pots, re-raise e showdown",
   seoTitle: "Foi de all-in e travou? — Regras de all-in e side pot",
   desc: "Shovou todas as fichas e não sabe o que pode ganhar? Regras de all-in no Texas Hold'em: table stakes, pote paralelo (side pot), re-raise e ordem do showdown.",
-  tldr: "Ir de all-in é apostar todas as fichas que você tem. Você só pode ganhar de cada adversário o valor que igualou (o pote principal). O que os stacks maiores apostam além disso vira um pote paralelo (side pot) que você não pode ganhar. Um all-in menor que um aumento completo NÃO reabre a aposta para quem já agiu.",
+  tldr: "Ir de all-in é apostar todas as fichas que você tem. Você só pode ganhar de cada adversário o valor que igualou (o pote principal). O que os stacks maiores apostam além disso vira um pote paralelo (side pot) que só os jogadores que cobriram esse valor podem ganhar. Um all-in menor que um aumento completo NÃO reabre a aposta para quem já agiu.",
   category: "rules",
   date: "2026-06-15",
   updated: "2026-09-09",

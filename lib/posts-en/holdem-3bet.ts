@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A 3-bet is the first re-raise before the flop — called a 3-bet because the big blind is the first bet, the open-raise the second, and your re-raise the third. Value-3-bet a tight core (QQ+, AK) plus a few suited blocker bluffs like A5s, size it around 3x the open in position and 4x out of position, and keep your overall 3-bet frequency near 6–10%. When you're the one facing a 3-bet, 4-bet your premiums, call the hands that play well, and fold the rest — folding more than 'balanced' against low-stakes players who never bluff.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-06",
+  updated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "♦️",
@@ -199,7 +199,7 @@ Enough theory — here's a full hand with the numbers, so you can see the whole 
 - **Flop:** ==Q♦ 8♣ 4♥.== I flop **top pair, top kicker** — my A♠Q♠ makes a pair of queens with the best possible kicker (the ace). Best five cards: Q♠ Q♦ A♠ 8♣ 4♥ = one pair (queens) with the ace kicker. Against his range of worse queens, eights, and floats, I'm way ahead.
 - **The point:** because I 3-bet preflop, the pot is already big and I have the betting lead, so I bet again for value and get paid by worse queens and draws. Had I just *flatted* preflop, three other players might have seen that flop, my hand would be far harder to play, and the pot would be a fraction of the size. The 3-bet is what turned top pair into a stack.
 
-Now flip it: if I'd 3-bet a **light** hand like A5s there and the cutoff had **4-bet** to $55, I'd simply fold — the blocker bluff did its job by giving me a cheap, clean laydown. That's the discipline that makes light 3-betting profitable instead of spewy.
+Now flip it: if I'd 3-bet a **light** hand like A5s there and the cutoff had **4-bet** to $48 (about 2.7x — a touch over the in-position 2.2–2.5x, because the cutoff acts first postflop), I'd simply fold — the blocker bluff did its job by giving me a cheap, clean laydown. That's the discipline that makes light 3-betting profitable instead of spewy.
 
 ---
 
