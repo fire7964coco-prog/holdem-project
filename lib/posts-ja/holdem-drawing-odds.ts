@@ -194,7 +194,7 @@ export const POST: Post = {
 /ja/blog/holdem-pot-odds | ポットオッズの計算方法 | /images/holdem-pot-odds-hero.webp
 :::
 
-## FAQ
+## よくある質問
 
 **Q. セットをフロップで引く確率は?**
 

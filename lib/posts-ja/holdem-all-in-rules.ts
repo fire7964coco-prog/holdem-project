@@ -246,7 +246,7 @@ export const POST: Post = {
 /ja/blog/holdem-showdown-rules | ショーダウンのルール解説 | /images/holdem-showdown-rules-hero.webp
 :::
 
-## FAQ
+## よくある質問
 
 **Q. ビッグブラインドより少ないチップでオールインできますか？**
 
