@@ -102,7 +102,7 @@ There is no single "correct" c-bet percentage — anyone who gives you one numbe
 |:---|:---:|:---|
 | **In position, heads-up, dry board** | **70–100%** (small) | Classic "range bet" — bet nearly everything, tiny |
 | **In position, heads-up, wet board** | **~50–60%** | More polarized — value and draws bet, air checks |
-| **Out of position, heads-up** | **~40–50%** | Check far more to protect your checking range |
+| **Out of position, heads-up (single-raised pot, you were the raiser)** | **~40–50%** | Check far more to protect your checking range. As the OOP *3-bettor* it flips — near 100%, see the [position guide](/en/blog/holdem-position-play) |
 | **Multiway (2 opponents)** | **~50% or less** | Someone likely connected — tighten up |
 | **Multiway (3+ opponents)** | **Strong hands & good draws only** | Fold equity is basically gone |
 
@@ -227,7 +227,7 @@ A. No — this is the most common c-bet mistake. Bet the flops that favor your r
 
 **Q. How often should you c-bet?**
 
-A. It depends on position, board, and number of opponents, so treat these as ranges, not rules: roughly 70–100% (at a small size) in position heads-up on a dry board, around 40–50% out of position, and 50% or less multiway. A healthy overall flop c-bet rate is about 55–70% — over 85% means you're auto-piloting.
+A. It depends on position, board, and number of opponents, so treat these as ranges, not rules: roughly 70–100% (at a small size) in position heads-up on a dry board, around 40–50% out of position as the raiser in a single-raised pot (far higher when you are the 3-bettor), and 50% or less multiway. A healthy overall flop c-bet rate is about 55–70% — over 85% means you're auto-piloting.
 
 **Q. How much should you c-bet?**
 

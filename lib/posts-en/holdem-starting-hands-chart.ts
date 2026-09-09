@@ -102,7 +102,7 @@ Here is the poker starting hands chart for a standard 9-max table:
 
 The rule: ==the later you act, the more hands you can open profitably==. Because the button always acts last postflop, it's the most valuable seat in poker.
 
-Explore the full color-coded grid — every one of the 169 hands by position:
+See how the opening range widens seat by seat — UTG, MP, CO, and BTN side by side (the full 13×13 grid of all 169 hands is in the hand chart tool linked below):
 
 :::rangechart:::
 

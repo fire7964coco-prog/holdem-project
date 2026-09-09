@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Korea's top autumn marathons (Chuncheon Oct 25, JTBC Seoul Nov 1, Garmin Run Nov 15) align with perfect running weather. Paradise City Casino near Incheon Airport runs year-round cash games — foreigners only, 10 min from the terminal. One trip covers both. For 2026 the only foreign entry window is JTBC's — deadline Sep 4.",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-08-31",
+  updated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏃",
@@ -448,6 +448,8 @@ That's it. That's the experience that's been posted on Korean social media milli
 | Raw egg | ₩500 | ~$0.40 |
 | Kimchi pack | ₩1,500 | ~$1.10 |
 | Picnic mat rental | ₩3,000–5,000 | ~$2.20–3.70 |
+
+*USD figures in this guide are rough conversions written at different times — the APT buy-in above uses ~₩1,500/$, this table ~₩1,350/$. Check the current rate before you budget.*
 
 The machine itself is ==g:free to use — you only pay for the ramen==. Instructions are posted in Korean and English. Most parks also offer food delivery zones if you want fried chicken instead.
 

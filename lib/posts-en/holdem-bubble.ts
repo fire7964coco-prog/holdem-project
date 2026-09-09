@@ -144,7 +144,7 @@ The other half is that bubble factor tracks **who is across from you**, not the 
 
 ## The Satellite Bubble: When to Fold Aces
 
-**On a satellite, every seat pays the same — so the moment your stack is safely inside the bubble, you fold everything, including pocket aces.** This is the most counterintuitive spot in poker, and it's correct. If winning a flip gives you the ==same seat you've already locked== while losing it eliminates you, there is no reward and enormous risk:
+**On a satellite that awards several identical seats, every seat pays the same — so the moment your stack is safely inside the bubble, you fold everything, including pocket aces.** (A winner-take-all satellite that awards a single seat is the exception: it is played for first place on chip EV.) This is the most counterintuitive spot in poker, and it's correct. If winning a flip gives you the ==same seat you've already locked== while losing it eliminates you, there is no reward and enormous risk:
 
 - **Once your seat is mathematically safe** (you're far enough inside the bubble that you can't be caught), fold every hand — yes, even AA and KK — and let the shorter stacks fight it out. Re-check that math every time the blinds go up: the "safe zone" shrinks as antes kick in.
 - **Don't count on stalling live.** Online, using your full clock carries no penalty; live, deliberately burning time banks to ladder up is explicitly penalty-eligible under WSOP rules — fold at normal speed and let the short stacks fight.
@@ -203,7 +203,7 @@ A. Near the money bubble, all tables play exactly one hand simultaneously and th
 
 **Q. Why would you fold aces on a satellite bubble?**
 
-A. Because on a satellite every seat pays the same, so once your stack is safely inside the bubble, winning a hand gives you nothing extra (you already have your seat) while losing it eliminates you. With all risk and no reward, folding even pocket aces is mathematically correct.
+A. Because on a multi-seat satellite every seat pays the same, so once your stack is safely inside the bubble, winning a hand gives you nothing extra (you already have your seat) while losing it eliminates you. With all risk and no reward, folding even pocket aces is mathematically correct.
 
 ---
 

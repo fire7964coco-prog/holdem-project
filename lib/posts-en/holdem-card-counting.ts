@@ -79,7 +79,7 @@ Blackjack rewards memory of what's already gone; poker rewards reading what you 
 
 ### Counting your outs
 
-An ==out== is any unseen card that improves your hand into a likely winner. A flush draw has ==9 outs== (13 of a suit minus the 4 you can see). Convert outs to a rough win chance with the ==Rule of 4 and 2==: multiply by 4 with two cards to come, by 2 with one.
+An ==out== is any unseen card that improves your hand into a likely winner. A flush draw has ==9 outs== (13 of a suit minus the 4 you can see) — the two suited cards on the board are already subtracted in that 9, so don't cross them off a second time as "dead cards". Convert outs to a rough win chance with the ==Rule of 4 and 2==: multiply by 4 with two cards to come, by 2 with one.
 
 A 9-out flush draw hits by the river about ==g:35%== of the time (9 × 4 = 36% as a quick estimate — the true figure is 35.0%). That figure counts both remaining cards, so it settles the call only when you'll actually see both — you're all-in on the flop with nothing left to bet. Facing a flop bet you'll have to pay again on the turn, count only the next card: ==9 ÷ 47 = 19.1%==. The full method — dirty outs, combo draws, exact percentages — is in the [guide to counting outs](/en/blog/holdem-outs), and the odds behind every draw live in the [probability chart](/en/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
@@ -124,7 +124,7 @@ Hold'em only exposes the five shared community cards, so this is limited to the 
 :::steps
 Count your outs on every draw | The moment you have a draw, count the cards that complete it and multiply — ×4 only when both cards are coming (you're all-in, or the river is free), otherwise ×2 for the next card alone. Call when that chance beats the price
 Ask what your hand blocks | Before you bluff, check whether you hold a card that makes their strongest calling hand impossible or less likely
-Adjust for dead cards | Subtract any out you've seen exposed off the board — a flashed card, a shown hand, a fold you glimpsed. Cards you can see are cards your opponent can't have
+Adjust for dead cards | Subtract any out you've seen exposed off the board — a flashed card, a shown hand, a fold you glimpsed. Glimpsed by accident, not sought — deliberately trying to see another player's cards is an etiquette violation at any card room. Cards you can see are cards your opponent can't have
 :::
 
 Do this for a few sessions and it becomes automatic — you'll be "counting cards" every hand, just the poker way. The next step is turning those counts into calls and folds with [pot odds](/en/blog/holdem-pot-odds), the math that tells you whether your outs are worth the price.

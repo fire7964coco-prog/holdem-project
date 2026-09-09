@@ -338,7 +338,7 @@ Here's what to do with 1–3 free days:
 | Seoul transit (T-money card) | $5–$10/day |
 | APT Main Event buy-in | ==**~$1,703**== |
 | Budget side events (Mini Main, Ultra Stack) | ==g:**$270–$610**== |
-| **Estimated 7-day poker trip total** | ==**$2,500–$5,000 + poker buy-ins**== |
+| **Estimated 7-day poker trip total** | ==**~$800 (Asian flight, Seoul mid-range hotel) to ~$4,200 (long-haul flight, Paradise City hotel) + poker buy-ins**== |
 
 </div>
 

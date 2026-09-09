@@ -29,7 +29,7 @@ The raw odds behind every draw come from the [poker odds and probability chart](
 :::stripe
 call ÷ hit% − (pot + call) | The implied odds formula
 7.5-to-1 | True odds of flopping a set
-0 | Your implied odds when villain is all-in
+0 | Your implied odds heads-up once villain is all-in
 :::
 
 ---
@@ -222,7 +222,7 @@ A. Implied odds are all about the money left to win, and deep stacks mean more o
 ## The 3 Things to Remember
 
 1. **The formula:** extra needed = (call ÷ hit%) − (current pot + call). If you can realistically win more than that later, the call is good even when pot odds say fold.
-2. **The reality check:** implied odds are an estimate that lives on deep stacks and a paying opponent. Against an all-in they're zero, and against a short stack there's very little left — fall back on pot odds.
+2. **The reality check:** implied odds are an estimate that lives on deep stacks and a paying opponent. Against an all-in they're zero heads-up (multiway, only a third player still holding chips can pay you), and against a short stack there's very little left — fall back on pot odds.
 3. **The dark mirror:** reverse implied odds punish non-nut draws. A draw to the nuts is worth far more than the same draw to second best.
 
 Get this right and you stop torching chips on hopeful calls while still making the profitable ones nobody else dares to. From here, lock in the raw numbers with the [poker odds and probability chart](/en/blog/holdem-probability), or see exactly how often each draw lands in [drawing odds](/en/blog/holdem-drawing-odds).
