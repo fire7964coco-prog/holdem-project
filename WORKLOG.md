@@ -14,6 +14,10 @@
 
 **⑥ 게이트·배포**: audit:hard en 56/56 🔴 0 · 7로케일 전부 🔴 0(🟠는 전건 선존 C2 행 키 불일치) · drift es/ja/zh/zh-hant 0(de 5·pt/id 3은 대기열 밖 선존 fish·game-order·glossary…) · 빌드 70+525 · 708페이지 exit 0 · push `71664a39`. 2차 교열(로케일 diff · Opus 2) 결과는 아래 ⑦.
 
+**⑦ 2차 교열(Opus 2 · 로케일 diff 111파일 · CJK 쪽은 API 오류로 1회 재시작)** → 채택 10 · 참고 1 → `2c9012c7`(push). 🔴 핵심 = **`masterUpdated` 동결 자리 3곳을 전파 서브가 올렸다**(pt·id c-bet 08-19 · id chart 08-11 — 파일 주석 «올리면 게이트가 눈이 먼다»를 서브가 못 봤다 · 스테일 검사기에서 실제로 사라짐 → 복원). 나머지: es 「3-beteador」 신조어 → 「3-bettor」 · de implied FAQ 9÷46 · ja/zh-hant bubble 직답 «複数シート/多席位» · kicker 본문 4족보 잔여 3곳 · c-bet 직답 국면 3로케일 · positions 「UTG+1 以後」 오독(LJ/HJ까지) → 「UTG+1・UTG+2 番号付き」 · EN icm L101 문법. 라이브 = 아래 ⑨.
+
+**⑨ 라이브 확인(Playwright · 배포 도착 폴링)**: 1차 push `71664a39` → en c-bet 30–45%·97% · en kicker 4족보·일화 · en bubble multi-seat · en apt $800–$4,200 · ja kicker 스트라이프 · zh-hant c-bet 30–45% · de 3bet 19,5 전부 ✓ + 이미지 2장 200(18.8KB·23.8KB) · 2차 push `2c9012c7` → ja bubble 複数シート · es 3-bettor · en icm 문법 · zh-hant kicker 4족보 ✓. 임시 스크립트 삭제.
+
 **⑧ 결재 대기 판정안**(핸드오프 「사장님 판단 대기」에 박음): 40 = 사안별 2등급(§13급만 25로케일 · drift 게이트 8/17 분리) · 12 = 열지 않음(1차 출처 없음 · 합법성 경계) · 13-ⓐ 유형 등재 · 13-ⓑ 의도적 편차 등재(상한 300자) · 15 = 63% 유지 + 라벨 «nine outs plus live side cards».
 
 🪶 교훈: ① **렌즈는 «내가 고친 자리의 나머지 사본»을 잡는다** — 3곳 고치고 4번째를 남기는 유형이 icm·kicker·bubble에서 세 번 나왔다. 고치기 전 `grep -c`로 같은 명제의 사본을 세라(메모리 «완료 전에 사본을 세라»의 파일 안 버전). ② 인포그래픽 문구도 §13이다 — 「full house on the board」를 내가 썼다. ③ Fable 본체가 서브 14개를 부리며 회차 하나를 끝냈다(§5-A-3 실증) — 본체 턴은 판정·문안·커밋에만 썼다.
