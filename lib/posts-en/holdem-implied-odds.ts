@@ -109,7 +109,7 @@ Same $50 call, opposite decisions — and the cards never changed. What changed 
 
 </div>
 
-Two forces set the number. **Frequency:** a gutshot hits half as often as a flush draw, so it needs the payoff to be roughly twice as big to break even. **Disguise:** a hidden set gets paid far more than an obvious flush on a three-suited board, because your opponent can't put you on it — which is why sets tolerate their low hit rate. The [nut flush draw is worth far more than a baby one](/en/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") for the same reason: it gets paid *and* it doesn't lose when it hits.
+Two forces set the number. **Frequency:** a gutshot hits half as often as a flush draw, so it needs the payoff to be roughly twice as big to break even. **Disguise:** a hidden set gets paid far more than an obvious flush on a monotone board, because your opponent can't put you on it — which is why sets tolerate their low hit rate. The [nut flush draw is worth far more than a baby one](/en/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") for the same reason: it gets paid *and* it doesn't lose when it hits.
 
 ---
 
@@ -222,7 +222,7 @@ A. Implied odds are all about the money left to win, and deep stacks mean more o
 ## The 3 Things to Remember
 
 1. **The formula:** extra needed = (call ÷ hit%) − (current pot + call). If you can realistically win more than that later, the call is good even when pot odds say fold.
-2. **The reality check:** implied odds are an estimate that lives on deep stacks and a paying opponent. Against an all-in they're zero heads-up (multiway, only a third player still holding chips can pay you), and against a short stack there's very little left — fall back on pot odds.
+2. **The reality check:** implied odds are an estimate that lives on deep stacks and a paying opponent. Against an all-in they're zero heads-up, and against a short stack there's very little left — fall back on pot odds.
 3. **The dark mirror:** reverse implied odds punish non-nut draws. A draw to the nuts is worth far more than the same draw to second best.
 
 Get this right and you stop torching chips on hopeful calls while still making the profitable ones nobody else dares to. From here, lock in the raw numbers with the [poker odds and probability chart](/en/blog/holdem-probability), or see exactly how often each draw lands in [drawing odds](/en/blog/holdem-drawing-odds).

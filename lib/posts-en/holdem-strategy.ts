@@ -209,7 +209,7 @@ A. 3-bet (re-raise a preflop raiser) for value with your strongest hands — big
 
 **Q. When should you raise vs. call?**
 
-A. Prefer raising to calling whenever you have a hand worth continuing with. Raising wins pots two ways (fold equity plus the best hand) and seizes initiative; calling has no fold equity — nobody folds now — and lets others in cheaply. Call when your hand is strong enough to continue but not to build a big pot, when you're set-mining a small pair, or when you want to keep a weaker player's bluffs in.
+A. Prefer raising to calling whenever you have a hand worth continuing with. Raising wins pots two ways (fold equity plus the best hand) and seizes initiative; calling has no fold equity — nobody folds to a call — and lets others in cheaply. Call when your hand is strong enough to continue but not to build a big pot, when you're set-mining a small pair, or when you want to keep a weaker player's bluffs in.
 
 **Q. How many hands should you play in Texas Hold'em?**
 

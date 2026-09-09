@@ -98,7 +98,7 @@ There it is in numbers: the leader has ==half the chips but only 38.4% of the mo
 
 **Chip EV measures a decision in chips won or lost; ICM (or "$EV") measures it in real prize money. They agree early and split hard late.** Early in a tournament, with tiny pay jumps far away, a chip is basically a chip — you play [chip EV](/en/blog/holdem-equity "thumb:/images/holdem-equity-hero.webp"), accumulating relentlessly. Near the money and the final table, ICM takes over.
 
-The classic clash is a marginal all-in *call*. In chip EV, a coin flip for a big pot can be fine or even good — you gain as many chips as you lose. In ICM it can be a clear ==fold==, because busting costs you your equity in every prize above the one you have already locked in (the guaranteed minimum itself stays yours), while the chips you'd win are worth less than face value.
+The classic clash is a marginal all-in *call*. In chip EV, a coin flip for a big pot can be fine or even good — you gain as many chips as you lose. In ICM it can be a clear ==fold==, because busting costs you your equity in every prize above the one you have already locked in (the guaranteed minimum itself stays yours) — and on the bubble, where nothing is locked in yet, your entire prize equity — while the chips you'd win are worth less than face value.
 
 That is where I had those jacks backwards. The tax is charged on the *call*, and the mirror of that is what makes a bubble playable: because everyone's calling range tightens, your fold equity is worth **more** than it is in chips. First-in shoving is the middle stack's weapon on a bubble, not its leak — I ran into the one player who could call widest, which is variance, not a strategy error. ==Chip EV asks "will this build my stack?" ICM asks "will this build my bankroll?"== — and only the second one pays out.
 
@@ -196,7 +196,7 @@ A. It assigns each player a probability of finishing in each paying position bas
 
 **Q. What's the difference between ICM and chip EV?**
 
-A. Chip EV measures a decision in chips won or lost; ICM measures it in real money. They agree early in a tournament and diverge near the money, where busting costs real prize equity — on the bubble, your whole shot at cashing; once you're in, everything above the payout you've already locked in. A coin-flip all-in that's fine in chip EV can be a clear fold under ICM.
+A. Chip EV measures a decision in chips won or lost; ICM measures it in real money. They agree early in a tournament and diverge near the money. On the bubble, busting costs your whole shot at cashing; once you're in the money, it costs everything above the payout you've already locked in. A coin-flip all-in that's fine in chip EV can be a clear fold under ICM.
 
 **Q. What is an ICM deal, and how is it different from a chip chop?**
 

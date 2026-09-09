@@ -65,7 +65,7 @@ Two players make the exact same five-card hand — same ranks, even if their hol
 Both make the full house KKK-QQ from the board plus a king. ==r:The suits of those kings don't matter.==
 
 ### 2. The board plays
-The five community cards are already the strongest hand for everyone left — that's the 8-8-8-A-K pot from my story. It's one of the most common splits, so it gets its own section below.
+The five community cards are already the strongest hand for everyone left — that's the 8-8-8-A-K pot from my story. It's common enough to get its own section below.
 
 ### 3. The same straight
 Two straights with the same top card tie, regardless of suit. On a board of 7♣ 6♦ 5♥ K♠ 2♣, both A's 9♠ 8♠ and B's 9♥ 8♦ make 9-8-7-6-5 — same height, so **split**.

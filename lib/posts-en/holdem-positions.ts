@@ -169,7 +169,7 @@ One neighbor question worth a line: at **showdown**, the default is that the las
 
 ## Poker Positions by Player Count: Heads-Up to 10-Handed (6-Max vs Full Ring)
 
-The position names don't change with table size — ==they peel off from early position first== as players are removed. The button, blinds, cutoff, and hijack survive the longest; the UTG+1 and UTG+2 seats exist only when the table is full. Here's the map from 2 players to 10, listed in preflop acting order:
+The position names don't change with table size — ==they peel off from early position first== as players are removed. The button, blinds, cutoff, and hijack survive the longest; the UTG+1 and higher seats exist only at full-ring tables. Here's the map from 2 players to 10, listed in preflop acting order:
 
 | Players | Preflop acting order (first → last) |
 |:---:|:---|

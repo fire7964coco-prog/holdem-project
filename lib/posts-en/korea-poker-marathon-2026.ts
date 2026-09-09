@@ -449,7 +449,7 @@ That's it. That's the experience that's been posted on Korean social media milli
 | Kimchi pack | ₩1,500 | ~$1.10 |
 | Picnic mat rental | ₩3,000–5,000 | ~$2.20–3.70 |
 
-*USD figures in this guide are rough conversions written at different times — the APT buy-in above uses ~₩1,500/$, this table ~₩1,350/$. Check the current rate before you budget.*
+:::note[USD figures in this guide are rough conversions written at different times — the APT Jeju Main Event buy-in above uses ~₩1,500/$, this table ~₩1,350/$. Check the current rate before you budget.]:::
 
 The machine itself is ==g:free to use — you only pay for the ramen==. Instructions are posted in Korean and English. Most parks also offer food delivery zones if you want fried chicken instead.
 

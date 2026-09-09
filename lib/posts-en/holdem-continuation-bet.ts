@@ -102,7 +102,7 @@ There is no single "correct" c-bet percentage — anyone who gives you one numbe
 |:---|:---:|:---|
 | **In position, heads-up, dry board** | **70–100%** (small) | Classic "range bet" — bet nearly everything, tiny |
 | **In position, heads-up, wet board** | **~50–60%** | More polarized — value and draws bet, air checks |
-| **Out of position, heads-up (single-raised pot, you were the raiser)** | **~40–50%** | Check far more to protect your checking range. As the OOP *3-bettor* it flips — near 100%, see the [position guide](/en/blog/holdem-position-play) |
+| **Out of position, heads-up (single-raised pot, you were the raiser)** | **~30–45%** | Check far more to protect your checking range. As the OOP *3-bettor* it flips — over 97% on the two boards we solved, see the [position guide](/en/blog/holdem-position-play) |
 | **Multiway (2 opponents)** | **~50% or less** | Someone likely connected — tighten up |
 | **Multiway (3+ opponents)** | **Strong hands & good draws only** | Fold equity is basically gone |
 
@@ -134,9 +134,9 @@ Want to see how far the "big on wet boards" gear actually goes? A solver handed 
 
 ![A poker player acting first out of position, fingers on the felt beside their chips with an opponent waiting in the shadows behind](/images/holdem-cbet-oop.webp "Out of position you act first with no information, so you check far more and c-bet a tighter, stronger range")
 
-C-betting is much harder **out of position** — when you have to act first every street with no read on what your opponent will do. Two adjustments:
+C-betting is much harder **out of position** in a single-raised pot — when you have to act first every street with no read on what your opponent will do (as the 3-bettor the range advantage changes this, see the [position guide](/en/blog/holdem-position-play)). Two adjustments:
 
-1. **C-bet less often.** Without position you can't control the pot as well or realize your equity, so you check far more — even hands that would be automatic bets in position. On some good boards a solver c-bets out of position only a quarter of the time.
+1. **C-bet less often.** Without position you can't control the pot as well or realize your equity, so you check far more — even hands that would be automatic bets in position. On some boards a solver c-bets out of position in a single-raised pot only a quarter of the time.
 2. **Build a real checking range.** If you only ever bet when you're strong and check when you're weak, an observant opponent reads you like a book and attacks every check. So you deliberately check *some* strong hands too, which keeps your checks dangerous and your whole game harder to play against. This is exactly why [position](/en/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp") is such a structural edge — c-bets simply work better when you act last.
 
 ---
@@ -227,7 +227,7 @@ A. No — this is the most common c-bet mistake. Bet the flops that favor your r
 
 **Q. How often should you c-bet?**
 
-A. It depends on position, board, and number of opponents, so treat these as ranges, not rules: roughly 70–100% (at a small size) in position heads-up on a dry board, around 40–50% out of position as the raiser in a single-raised pot (far higher when you are the 3-bettor), and 50% or less multiway. A healthy overall flop c-bet rate is about 55–70% — over 85% means you're auto-piloting.
+A. It depends on position, board, and number of opponents, so treat these as ranges, not rules: roughly 70–100% (at a small size) in position heads-up on a dry board, around 30–45% out of position as the raiser in a single-raised pot (higher as the 3-bettor), and 50% or less multiway. A healthy overall flop c-bet rate is about 55–70% — over 85% means you're auto-piloting.
 
 **Q. How much should you c-bet?**
 
@@ -235,7 +235,7 @@ A. Size to the board. On dry, static boards bet small — about one-third of the
 
 **Q. Should you c-bet out of position?**
 
-A. Less often than in position. Acting first every street with no information, you can't realize your equity as well, so you check far more — even some hands you'd auto-bet in position — and you deliberately keep some strong hands in your checking range so your checks aren't automatically weak. Position makes c-bets work better, full stop.
+A. Less often than in position when you were the preflop raiser in a single-raised pot. Acting first every street with no information, you can't realize your equity as well, so you check far more — even some hands you'd auto-bet in position — and you deliberately keep some strong hands in your checking range so your checks aren't automatically weak. Position makes c-bets work better, full stop.
 
 **Q. Should you c-bet in a multiway pot?**
 
