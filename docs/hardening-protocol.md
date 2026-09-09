@@ -83,6 +83,7 @@
 
 ① `git merge main` → `docs/harden-<locale>-진행.md` 통독 — **«미결»·«되돌리지 마라»·«헤드 요청 답변»을 먼저**.
 ② **이번 회차 클러스터** = 진행 파일 회차 표의 다음 행. 🔴 임의 편수 금지 — 클러스터는 07-23 경화 커밋 경계(§7 부록 표)다.
+③-0 🔴 **브리프의 «전제»도 실측하라**(2026-09-09 ja 회차 7): 진행 파일의 «결함 기록»을 근거로 인용하기 전에 **해소 여부를 확인**한다 — 회차 7 브리프가 「앵커 id는 slugify가 CJK를 지워 비어 있다」를 근거로 「영향 0」이라 적었는데 그 결함은 하루 전에 수리돼 있었다(3렌즈 독립 수렴). 진행 파일에 결함을 적을 때는 **해소되면 같은 줄에 해소 커밋을 붙여라**.
 ③ 🔴 **드리프트는 날짜 필드가 아니라 diff 실물로 잰다**(id 세션 4 실증: `masterUpdated`가 «동기»라 적혀 있는데 EN 내용이 안 와 있었다). 편마다:
 
 ```bash
@@ -251,7 +252,7 @@ git commit -F commit-msg.txt   # "harden(<locale>): <클러스터> N편 — 회�
 | 항목 | 정본·도구 |
 |---|---|
 | 왜 | **07-20 경화 = 8개 언어 중 최고령.** 사장님 08-26 판정 「ja는 중요한 언어 … 색인 신경쓰지 말고 작업」. 핸드오프 «ja 43편 라쿠 경화» 대기 항목을 이 레인이 흡수한다 |
-| 자산 | `docs/local-voice/ja-jp.md`(§0 읽는 순서 · **§3 경험담은 현지화하지 않는다**) · `docs/translation-terms-ja.md`(**§H2 검색형 로컬라이즈** = 글당 워크플로우 정본 · 문체·표기 · 용어 Wave 2~4) · `docs/keyword-bank/ja-tag-volumes.md` · `ja-tournament.md` · `ja-gto-*.md` |
+| 자산 | `docs/local-voice/ja-jp.md`(§0 읽는 순서 · **§3 경험담은 현지화하지 않는다**) · `docs/translation-terms-ja.md`(**§H2 검색형 로컬라이즈** = 글당 워크플로우 정본 · 문체·표기 · 용어 Wave 2~4) · `docs/keyword-bank/ja-tag-volumes.md` · `ja-tournament.md` · `ja-gto-*.md` · 🆕 **`ja-notation.md`(«표기 축» 뱅크 · 로케일 공통 자산 — 다른 레인도 §0 함정을 먼저 읽을 것)** |
 | 🔴 없는 것 | 클러스터별 키워드 뱅크 — 회차마다 `keyword-bank/ja-<클러스터>.md` 신설 |
 | 키워드 발굴·볼륨 | **ラッコ가 네이티브다**(Japan 고정): `suggest-keywords`(볼륨·SEO難易度) + `question-search`(질문문) + `headline`(경쟁 상위 見出し = 정답지) · 약 7.5크레딧/허브. DFS는 `location_code:2392`·`language_code:"ja"` |
 | H2 형태 | 🔴 **`[카타카나 용어]+[接尾辞]` 검색형**(一覧·早見表·強い順·成立条件·〜とは·やり方·覚え方·どっちが強い·確率·順番). EN 질문형 직역 금지. §14-A 「질문형 70%」 **미적용**, «직답 블록»만 적용 — 정본 `translation-terms-ja.md` §H2(07-20 확립 · `holdem-hand-rankings`가 레퍼런스) |

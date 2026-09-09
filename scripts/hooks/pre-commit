@@ -17,6 +17,8 @@
 #   HARDEN_HOOK_BASE     기준 ref (기본 = main)
 
 [ -n "$HARDEN_SKIP_SYNC" ] && exit 0
+# 머지 커밋(MERGE_HEAD 존재)은 «main을 받는» 행위 자체라 검사 대상이 아니다 — 커밋↔머지 순환 방지(2026-09-09 ja 회차 7 §5-E 3)
+[ -f "$(git rev-parse --git-path MERGE_HEAD 2>/dev/null)" ] && exit 0
 
 branch=${HARDEN_HOOK_BRANCH:-$(git rev-parse --abbrev-ref HEAD 2>/dev/null || echo '')}
 case "$branch" in

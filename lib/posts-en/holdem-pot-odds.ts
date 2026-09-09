@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "To calculate pot odds, divide the amount you must call by the total pot after your call. Calling $50 into a $150 pot = 50 ÷ 200 = 25% — so you need at least 25% equity to make the call profitable.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-06",
+  updated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🧮",
@@ -163,7 +163,7 @@ Full derivations for every draw and made hand live in the [probability chart](/e
 I made every one of these before they made me broke. Watch for them:
 
 :::card
-🧮 | Forgetting to include the call | Required equity is call ÷ *final* pot — count your own chips going in, or you'll overrate every price
+🧮 | Forgetting to include the call | Required equity is call ÷ *final* pot — count your own chips going in, or you'll overstate the equity you need and fold calls you should make
 🃏 | Counting tainted outs | A flush out that also pairs the board can make someone a full house. Discount "dirty" outs before you trust the number
 🚀 | Misusing the Rule of 4 | ×4 only applies when you'll see both cards for free (all-in). Facing a turn bet, it's ×2 — using ×4 talks you into losing calls
 💸 | Ignoring implied & reverse implied odds | Deep stacks reward drawing hands; a non-nut draw that hits into a bigger hand is a trap, not a payday

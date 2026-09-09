@@ -262,7 +262,7 @@ A. Não. Sequências como K-A-2-3-4 ou Q-K-A-2-3 não são sequências no Texas 
 
 **Q. Como saber se um flush é possível na mesa?**
 
-A. Conte os naipes na mesa. Com 0–2 de um naipe, nenhum flush existe para ninguém. Com 3, o jogador precisa de dois desse naipe na mão; com 4, só um; com todos os 5, a própria mesa é um flush: melhora com uma carta desse naipe mais alta que a mais baixa da mesa — e numa mesa conectada, qualquer carta desse naipe que complete um straight flush vence todo flush, mesmo uma mais baixa que a mais baixa da mesa (em K♠ 6♠ 5♠ 4♠ 3♠, tanto o 2♠ (straight flush até o 6) quanto o 7♠ (até o 7) vencem o A♠).
+A. Conte os naipes na mesa. Com 0–2 de um naipe, nenhum flush existe para ninguém. Com 3, o jogador precisa de dois desse naipe na mão; com 4, só um; com todos os 5, a própria mesa é um flush: melhora com uma carta desse naipe mais alta que a mais baixa da mesa — e numa mesa conectada, qualquer carta desse naipe que complete um straight flush vence todo flush, mesmo uma mais baixa que a mais baixa da mesa (em K♠ 6♠ 5♠ 4♠ 3♠, tanto o 2♠ (straight flush até o 6) quanto o 7♠ (straight flush até o 7) vencem o A♠).
 
 **Q. Um par na mesa conta como parte da sua mão?**
 

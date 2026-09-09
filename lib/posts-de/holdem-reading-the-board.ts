@@ -266,7 +266,7 @@ A. Zähl die Farben auf dem Board. Mit 0–2 einer Farbe existiert für niemande
 
 **Q. Liegt ein Flush auf dem Board – wer gewinnt dann?**
 
-A. Bilden die fünf Gemeinschaftskarten selbst einen Flush, teilen ihn zunächst alle. Verbessern kann ihn eine höhere Karte derselben Farbe – wer die höchste hält, nimmt in der Regel den Pot. Hat sie niemand, spielen alle das Board und es wird geteilt. Ein Sonderfall bricht die Regel: Liegt das Board zusammenhängend, schlägt jede Karte derselben Farbe, die einen Straight Flush vervollständigt, jeden Flush – auch eine niedrigere als die niedrigste auf dem Board. Auf K♠ 6♠ 5♠ 4♠ 3♠ gewinnen sowohl die 2♠ (Straight Flush bis zur 6) als auch die 7♠ (bis zur 7) vor dem A♠.
+A. Bilden die fünf Gemeinschaftskarten selbst einen Flush, teilen ihn zunächst alle. Verbessern kann ihn eine höhere Karte derselben Farbe – wer die höchste hält, nimmt in der Regel den Pot. Hat sie niemand, spielen alle das Board und es wird geteilt. Ein Sonderfall bricht die Regel: Liegt das Board zusammenhängend, schlägt jede Karte derselben Farbe, die einen Straight Flush vervollständigt, jeden Flush – auch eine niedrigere als die niedrigste auf dem Board. Auf K♠ 6♠ 5♠ 4♠ 3♠ gewinnen sowohl die 2♠ (Straight Flush bis zur 6) als auch die 7♠ (Straight Flush bis zur 7) vor dem A♠.
 
 **Q. Liegt eine Straße auf dem Board – wer gewinnt dann?**
 

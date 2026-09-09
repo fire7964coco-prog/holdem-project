@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Poker hand rankings from best to worst are: Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, One Pair, and High Card.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-09-07",
+  updated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🃏",
@@ -270,7 +270,7 @@ Under a time bank, run this scan in order every time the board is complete:
 
 **3. Pairs last** — is the board paired? ==r:If yes, full houses and quads are on the table, and your flush or straight may be in danger.==
 
-I still run this exact scan — suits, then straights, then pairs — on every single board, no matter how many hours I've been sitting there. Danger first (flush/straight on the board), then whether the board is paired (which threatens everything). Build the habit and you'll stop making rushed river calls.
+I still run this exact scan — flush, then straight, then pairs — on every single board, no matter how many hours I've been sitting there. Danger first (flush/straight on the board), then whether the board is paired (which threatens everything). Build the habit and you'll stop making rushed river calls.
 
 ---
 
@@ -398,7 +398,7 @@ A. Yes. The Ace plays both high and low, so A-2-3-4-5 (the "wheel") is a legal s
 2. **The trap:** a flush (#5) beats a straight (#6) — and any paired board can hide a full house that beats both.
 3. **The reality:** most pots are won with one pair or high card, so your kicker is worth more than you think.
 
-Learn the order in an afternoon, drill the confusing pairs, and run the suits → straights → pairs scan on every board. Do that and you'll never again push the pot the wrong way.
+Learn the order in an afternoon, drill the confusing pairs, and run the flush → straight → pairs scan on every board. Do that and you'll never again push the pot the wrong way.
 
 Once you know the rankings, the natural next step is knowing which hands to start with — use the [Texas Hold'em starting hands chart by position](/en/blog/holdem-starting-hands-chart) to see exactly which hole cards to play from each seat.
 

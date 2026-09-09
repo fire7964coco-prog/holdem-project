@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Texas Hold'em gives each player 2 hole cards, uses 5 community cards, and the best 5-card poker hand wins after four betting rounds.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-07",
+  updated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
@@ -306,7 +306,7 @@ When you have a drawing hand (e.g. four cards to a flush), count your **outs** �
 
 | Situation | Formula | Example (9 flush outs) |
 |-----------|---------|------------------------|
-| On the **flop** (2 cards to come) | Outs × 4 | 9 × 4 = **~36% chance** |
+| On the **flop**, seeing both remaining cards with no further bet (e.g. all-in) | Outs × 4 | 9 × 4 = **~36% chance** |
 | On the **turn** (1 card to come) | Outs × 2 | 9 × 2 = **~18% chance** |
 
 </div>
