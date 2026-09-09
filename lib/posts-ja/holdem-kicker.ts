@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "キッカーとは、役そのものには含まれないけれど同じランク同士の引き分けを決める一番高いサイドカードのこと。ワンペアはキッカー3枚、ツーペアは1枚、スリーカードは2枚を使い、ストレート、フラッシュ、フルハウスにはキッカーがありません。ボードがエースでペアになったとき、AKがAQに勝つのはこのためです。",
   category: "hand-rankings",
   date: "2026-07-08",
-  updated: "2026-09-07",
+  updated: "2026-09-09",
   masterUpdated: "2026-09-07",
   keepImagesInBody: true,
   readTime: "10分",
