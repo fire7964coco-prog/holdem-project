@@ -8,20 +8,20 @@ export const POST: Post = {
   tldr: "WPT Australia 2026：9 月 10–30 日，The Star Sydney。两个旗舰赛：AUD $1,500 WPT Prime（9 月 17–22 日）和 AUD $5,000 WPT Championship（9 月 24–30 日）。现场卫星赛 AUD $270 起，主赛资格赛为 $290 与 $550。冠军赛冠军的头名奖金里包含一个价值 $15,000、并从奖池中扣除的 WPT World Championship 席位。必须年满 18 岁、成为 Star Club 会员，并遵守 smart-casual 着装要求。",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-09-02",
+  updated: "2026-09-08",
   masterUpdated: "2026-09-02",
   readTime: "14 分钟",
   emoji: "🦘",
   layout: "tournament-guide",
   tags: [
     "WPT Australia 2026",
+    "WPT 澳洲 2026",
     "WPT Australia 2026 赛程",
     "WPT Australia 2026 怎么打入",
     "WPT Australia buy-in",
     "The Star Sydney 扑克",
     "WPT Prime Australia 2026",
     "WPT Australia 卫星赛",
-    "国际牌手 WPT Australia",
   ],
   image: "/images/wpt-australia-2026-guide-hero.webp",
   imageAlt: "WPT Australia 2026 扑克锦标赛，地点 The Star Sydney——达令港边的扑克室，WPT 冠军赛决赛桌",
@@ -43,6 +43,9 @@ WPT Australia 2026 重回 The Star Sydney，规模是 WPT 历史上最大的一�
 ---
 
 ## WPT Australia 2026 一分钟速览——有什么新变化、为什么重要
+
+> **快速回答**
+> 2026 年 WPT 澳洲站重回 The Star Sydney，9 月 10–30 日、36 场赛事，并首次引入双冠军赛制——AUD $1,500 的 WPT Prime 和 AUD $5,000 的 WPT Australia Championship，两场决赛桌都全球直播。2025 年冠军赛 600 人次、奖池 AUD $3,000,000；今年买入下调到 $5,000，规模预计更大。
 
 今年的赛事重回 ==**The Star Sydney**==，并首次引入 **双冠军赛制**——这在 WPT 任何一个澳洲分站都是头一回。（2024 年的赛事在 The Star Gold Coast 举办；迁往悉尼从 2025 年那届开始。）
 
@@ -68,6 +71,9 @@ WPT Australia 2026 重回 The Star Sydney，规模是 WPT 历史上最大的一�
 
 ## WPT Prime vs WPT Australia Championship——你该报哪一场？
 
+> **快速回答**
+> 第一次打 WPT，从 AUD $1,500 的 Prime（9 月 17–22 日）开始：完整的 WPT 氛围、直播决赛桌、深结构，花费只有冠军赛的三分之一。有经验的锦标赛常客再报 AUD $5,000 的 Championship（9 月 24–30 日），争的是 Mike Sexton Champions Cup 和世界锦标赛席位。很多牌手两场都报。
+
 这是每个新人都会问的问题。下面是实话实说的对比：
 
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.25);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
@@ -89,6 +95,9 @@ WPT Australia 2026 重回 The Star Sydney，规模是 WPT 历史上最大的一�
 ---
 
 ## 不用付全额买入，怎么打入 WPT Australia 2026
+
+> **快速回答**
+> WPT Global 在澳大利亚用不了，所以卫星赛全在 The Star Sydney 现场：主赛直接资格赛 $290（7 月 30 日–9 月 9 日）或 $550（到 9 月 25 日），Prime 席位走六选一卫星赛（$290，每 6 人送 1 席），其余卫星赛每日开赛到 9 月 28 日。没有阶梯式卫星赛——交一次钱，直接打席位。
 
 ### ⚠️ 关键事实：WPT Global 在澳大利亚用不了
 
@@ -121,6 +130,9 @@ WPT Australia 2026 重回 The Star Sydney，规模是 WPT 历史上最大的一�
 
 ## WPT Australia 2026 赛程亮点——12 场重点赛事，从 AUD $460 到 $10,000
 
+> **快速回答**
+> 买入从 AUD $460 到 $10,000，主轴是这 6 场：9 月 10–14 日 Australian Poker Cup（$1,150）开场，17–22 日 WPT Prime（$1,500），23–24 日 $10K High Roller，24–30 日 WPT Australia Championship（$5,000），29–30 日 PLO Championship（$5,000），30 日 Sydney Finale（$680）收官。完整 12 场见下表，全系列共 36 场。
+
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.25);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | 赛事 | 日期 | 买入（AUD） | 形式 |
@@ -146,6 +158,9 @@ WPT Australia 2026 重回 The Star Sydney，规模是 WPT 历史上最大的一�
 
 ## 历届冠军与 2026 展望
 
+> **快速回答**
+> 近三年冠军：2023 Richard Lee（AUD $854,890）、2024 James Obst（$585,359）、2025 Alan Pham（$558,211，600 人次，奖池 $3,000,000）。2026 买入降到 AUD $5,000，规模预计是赛事史上最大。注意：冠军奖金里那个 $15,000 的世界锦标赛席位是从总奖池里扣除的，不是额外加发。
+
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.25);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | 年份 | 冠军 | 买入 | 人次 | 奖池 | 冠军奖金 |
@@ -169,6 +184,9 @@ WPT Australia 2026 重回 The Star Sydney，规模是 WPT 历史上最大的一�
 ---
 
 ## The Star Sydney 入场要求——新人最常搞错的地方
+
+> **快速回答**
+> 三件事最常搞错：一、必须加入免费的 Star Club（本人到场、护照原件）并有已验证的 WPT.com 账号，后者能在家办好；二、smart-casual 着装严格执行，背心、拖鞋、破洞牛仔裤、运动服都进不去；三、地址是 80 Pyrmont Street，机场坐火车转轻轨约 40 分钟、AUD $20–25。最低年龄 18 岁。
 
 ### 1. 你必须加入 The Star Club（免费，但必须）
 
@@ -215,6 +233,9 @@ The Star Sydney 位于 **80 Pyrmont Street, Pyrmont NSW 2009**——就在达令
 
 ## 国际牌手怎么支付 WPT Australia 的费用
 
+> **快速回答**
+> NSW 法律规定博彩每日现金上限 AUD $5,000，所有锦标赛报名都得用博彩筹码支付。超过 $5,000 的买入，最简单的办法是出发前一周做一笔银行电汇——先加入 Star Club，附言填会员号加姓氏，账号只认官网公布的那份 Funds Management Sheet；Wise、Revolut 和第三方账户一律拒收。
+
 这一节是 ==r:每一份对手的指南都跳过的==——也是最容易把国际牌手绊住的地方。
 
 ### NSW 法律：每日现金博彩上限 AUD $5,000
@@ -253,6 +274,9 @@ The Star Sydney 位于 **80 Pyrmont Street, Pyrmont NSW 2009**——就在达令
 
 ## 澳大利亚签证——出发前你需要什么
 
+> **快速回答**
+> 英国和 35 个欧洲国家用免费的 eVisitor（651）；美国、加拿大、日本、韩国、新加坡、香港用 ETA（601），AUD $20，手机 app 申请，通常即时；其他大多数国家办 Visitor Visa（600），AUD $250 起、要数天到数周。订机票前先申请，至少提前一周。
+
 大多数国际访客需要 **ETA（电子旅行许可）** 或标准旅游签证之一。
 
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.25);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
@@ -273,7 +297,10 @@ The Star Sydney 位于 **80 Pyrmont Street, Pyrmont NSW 2009**——就在达令
 
 ## WPT Australia 2026 预算拆解——真实行程花费
 
-以下是打一趟完整 WPT Australia 实际要花多少，基于 2025 年数据：
+> **快速回答**
+> 以 2025 年数据估算：省钱方案用 AUD $290 的资格赛赢席位、住 10 晚经济酒店，总计约 AUD $2,890；标准方案打 $1,500 的 Prime，约 AUD $6,100；两场都打、住 The Star Grand 的完整体验约 AUD $14,200。往返东亚和东南亚的机票通常 AUD $700–1,500。
+
+三档方案拆开如下：
 
 <div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.25);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
