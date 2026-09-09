@@ -34,7 +34,7 @@
 | タイムチャージ | 590 | +56% | holdem-rake |
 | ポーカー 勝ち方 | 590 | -3% | holdem-strategy |
 | WSOP メインイベント | 590 | +852% | wsop-2026-tournament-guide |
-| クーラー とは | 480 | +104% | holdem-cooler |
+| クーラー とは | 480 | +104% | holdem-cooler | 🔴 **오염 — 에어컨 의도**(포커 앵커형 30 · 질문 DB 0 · 2026-09-09 회차 6 실측) |
 | ポーカー ブラインド とは | 390 | — | holdem-blind-meaning |
 | ポーカー 役 強い順 | 390 | -13% | holdem-hand-rankings |
 | ICM とは | 390 | +30% | holdem-icm |
@@ -50,7 +50,7 @@
 | リングゲーム とは | 260 | — | holdem-tournament-vs-cash-game |
 | WSOP 参加費 | 260 | +23% | wsop-2026-tournament-guide |
 | WSOP 賞金 | 260 | +46% | wsop-2026-tournament-guide |
-| バッドビート | 210 | +0% | holdem-bad-beat |
+| バッドビート | 210 | +0% | holdem-bad-beat | 🟠 **혼합 — 소설·보컬로이드 곡·마작 섞임**(포커 앵커형 70 · 2026-09-09 실측) |
 | バッドビートジャックポット | 210 | +17% | holdem-bad-beat |
 | ポーカー アクション | 210 | +316% | holdem-betting-actions |
 | セットオーバーセット | 210 | -20% | holdem-cooler |
