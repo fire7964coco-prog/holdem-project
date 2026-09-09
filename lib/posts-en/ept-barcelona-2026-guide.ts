@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "EPT Barcelona 2026 ran Aug 16–29 at Casino Barcelona. Italy's Manuel Ferrari won the €5,300 Main Event for €1,002,488, beating 1,823 entries for a share of the €8,841,550 prize pool. For 2027: the cheapest online route is the Power Path from $0.50 → Gold Pass (€5,300 ME seat + €1,100 side event + 8-night hotel + €690 expenses). You need a PokerStars Live account and a valid passport, and hotels sell out early — August is peak season in Barcelona.",
   category: "tournament",
   date: "2026-06-17",
-  updated: "2026-09-02",
+  updated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🃏",
@@ -63,7 +63,7 @@ The top three struck a **three-way deal** with only ==**€100,000**== and the t
 
 *\* Includes the three-way deal.* At **1,823 entries**, this was the **seventh-largest Main Event field in EPT history** — a useful benchmark if you're sizing up what 2027 will look like.
 
-:::note[**Sourcing note.** As of August 31, 2026 PokerStars had not yet published final results on its official event pages — the schedule still shows every event as unplayed. The figures above come from on-site live reporting and are cross-checked between two independent outlets (see Sources at the end). We'll swap in the official numbers once they're posted.]:::
+:::note[**Sourcing note.** The winner, first prize and entry count above were cross-checked against PokerStars' official full-results page on September 9, 2026 and match (see Sources at the end).]:::
 
 ---
 
@@ -234,7 +234,7 @@ Every EPT player must have a PokerStars Live account — ==r:without it, you can
 
 ### 2. Source of Funds Declaration (Cash Transactions)
 
-This is the one almost nobody warns you about. Any time you pay for a tournament with **cash** at Casino Barcelona, ==r:Spanish regulations require you to declare the source of that money==.
+This is the one almost nobody warns you about. If you pay for a tournament with **cash** at Casino Barcelona, ==r:you can be required to declare the source of that money== — the EPT event page says "any cash transaction", while the casino's own declaration form applies to cash transactions of 10.000 (€10,000) or more.
 
 **How to complete it in advance:**
 1. Log into your **PokerStars Live** account at [pokerstarslive.com](https://www.pokerstarslive.com/ept/barcelona/)
@@ -327,7 +327,7 @@ Barcelona El Prat (BCN) is about ==12km from the city center== — roughly 25–
 |:---|:---:|:---:|:---|
 | ==g:**Taxi / Uber**== | 25–35 min | €30–€40 | ==g:Easiest with luggage== |
 | **Aerobus (A1)** | 35 min | ~€6–7 | To Plaça Catalunya, then taxi or metro to casino |
-| **Metro (L9 Sud)** | 45–55 min | ~€5–6 | L9 Sud → transfer to L4 → Ciutadella/Vila Olímpica (10-min walk to casino) |
+| **Metro (L9 Sud)** | 45–55 min | ~€5–6 | L9 Sud → change lines in the city to reach L4 → Ciutadella/Vila Olímpica (10-min walk to casino; check the transfer station on TMB's route planner) |
 | **PokerStars Travel** | Variable | Small fee | Pre-arranged transfer, book via PokerStars Live |
 
 </div>
@@ -365,7 +365,7 @@ In 2026 Day 1 was split across two starting flights — ==Day 1A (Aug 22) and Da
 |---|---|
 | ~11:00 | Registration opens (==r:be there when it opens — with a 30–45 min queue, "30 min before cards" is already too late==) |
 | ~12:00 | Cards in the air — Day 1 begins |
-| Evening | End of play for Day 1 — usually 8 levels; the exact time depends on the structure |
+| Evening | End of play for Day 1 — the number of levels and the exact time depend on the structure |
 | Day 2+ | ==g:Only players who bagged chips continue== |
 
 </div>
@@ -424,7 +424,7 @@ A. You need a ==**PokerStars Live**== account (separate from your online play ac
 
 **Q. What is the Source of Funds form and is it really required?**
 
-A. Yes. Under Spanish casino regulations, any cash transaction requires you to declare the origin of the funds — there is no threshold below which you are exempt. You can complete the form online through your PokerStars Live account in advance — ==g:it takes about 10 minutes==. Card or pre-purchased token payments may not require it.
+A. If you pay in cash, plan on it. The EPT event page says "any cash transaction" requires a declaration of the origin of funds, while the casino's declaration form applies to cash transactions of 10.000 (€10,000) or more, so confirm the threshold and paperwork with the casino in advance. You can complete the form online through your PokerStars Live account in advance — ==g:it takes about 10 minutes==. Card or pre-purchased token payments may not require it.
 
 **Q. What happens if I win a Power Path Gold Pass — is the hotel automatically booked?**
 
@@ -440,7 +440,7 @@ A. Barcelona's Port Olímpic area is generally safe. ==r:Pickpocketing is common
 
 - **Festival dates, venue, buy-ins and the event schedule** — [PokerStars Live · EPT Barcelona](https://www.pokerstarslive.com/ept/barcelona/) (official; checked August 31, 2026)
 - **2026 Main Event final table, entries and prize pool** — on-site live reporting, cross-checked between [PokerNews](https://www.pokernews.com/news/2026/08/manuel-ferrari-wins-2026-ept-barcelona-main-event-52260.htm) and [Card Player](https://www.cardplayer.com/poker-news/1741396-manuel-ferrari-wins-ept-barcelona-main-event-for-1-2-million) (both August 29, 2026). Both report the same field size and the same finishing order; Card Player states this was the seventh-largest Main Event field in EPT history.
-- ⚠️ PokerStars had **not** published official results at the time of writing — the figures above will be reconciled against the official numbers when they appear.
+- **Official results** — [PokerStars · EPT Barcelona 2026 full results](https://www.pokerstars.com/poker/learn/news/ept-barcelona-2026-full-results/) (checked September 9, 2026 — winner, prize and entry count reconciled)
 
 ---
 
