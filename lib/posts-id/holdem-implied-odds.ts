@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Implied odds adalah chip tambahan yang Anda harapkan menang di street berikutnya saat draw Anda jadi. Ia membuat Anda bisa call sebuah draw yang menurut pot odds saja harus di-fold — tapi hanya jika stack dalam dan lawan benar-benar akan membayar Anda.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-08-27",
-  masterUpdated: "2026-08-26",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "11 mnt",
   emoji: "💰",
@@ -54,7 +54,7 @@ Pot odds | Implied odds
 Hanya chip yang ada di pot sekarang | Pot sekarang + chip yang Anda menangkan di street berikutnya
 Fakta yang bisa dihitung persis | Perkiraan berdasarkan stack dan lawan
 Memberi tahu apakah call membayar dirinya sendiri hari ini | Memberi tahu apakah call terbayar sepanjang seluruh tangan
-Berlaku bahkan melawan all-in | Bernilai nol melawan all-in (tak ada taruhan lagi)
+Berlaku bahkan melawan all-in | Bernilai nol melawan all-in (heads-up — tak ada taruhan lagi)
 :::
 
 Aturan praktisnya: **mulai dari pot odds.** Jika equity Anda sudah mengalahkan harganya, call — tak perlu cerita. Jika draw Anda *nyaris meleset* dari harganya, di situlah implied odds menjadi faktor penentu. Dan jika draw Anda meleset jauh dari harganya, implied odds biasanya juga tak bisa menyelamatkannya.
@@ -155,12 +155,12 @@ Pelajarannya: sebuah draw ke ==g:nuts== bernilai jauh lebih besar daripada draw 
 
 ## Kapan JANGAN Mengandalkan Implied Odds (Kesalahan Umum)
 
-**Begitu lawan Anda all-in, implied odds Anda tepat nol — tak ada lagi uang untuk dimenangkan, jadi Anda kembali ke pot odds murni.** Ini konsep yang paling disalahgunakan di poker: "saya punya implied odds" adalah alasan yang diraih pemain setelah sebuah call yang tak pernah dibenarkan.
+**Dalam pot heads-up, begitu lawan Anda all-in implied odds Anda tepat nol — tak ada lagi uang yang bisa dimenangkan darinya, jadi Anda kembali ke pot odds murni.** (Di pot multiway, pemain ketiga yang masih punya chip bisa menjaga side pot tetap hidup — tapi si pemain all-in tak akan pernah membayar Anda sesen pun lagi.) Ini konsep yang paling disalahgunakan di poker: "saya punya implied odds" adalah alasan yang diraih pemain setelah sebuah call yang tak pernah dibenarkan.
 
 Waspadai kebocoran ini:
 
 :::card
-🚫 | Villain all-in | Tak ada street berikutnya berarti tak ada uang berikutnya. Implied odds = 0. Pakai pot odds saja
+🚫 | Villain all-in | Tak ada street berikutnya berarti tak ada uang berikutnya dari dia. Heads-up, implied odds = 0 — pakai pot odds saja
 📉 | Stack pendek di belakang | Jika hanya ada setengah pot tersisa untuk dimenangkan, "saya akan dibayar di river" adalah fantasi
 🙅 | Lawan yang "tak membayar" | Nit yang hanya bertaruh dengan nuts tak akan membayar flush Anda. Implied odds Anda hidup dan mati pada kesediaannya call
 🃏 | Board menakutkan | Jika kartu yang menyelesaikan draw Anda juga membekukan aksi (empat ke flush, board berpasangan), tak ada yang membayar Anda
@@ -204,7 +204,7 @@ A. Tergantung draw Anda. Flush dan open-ended straight draw butuh kira-kira 8–
 
 **Q. Apakah implied odds berlaku saat lawan Anda all-in?**
 
-A. Tidak. Saat lawan Anda all-in tak ada lagi ronde taruhan, jadi tak ada uang tambahan untuk dimenangkan — implied odds Anda nol. Di spot itu Anda harus mengandalkan pot odds saja. Berasumsi punya implied odds melawan all-in adalah kesalahan yang umum dan mahal.
+A. Tidak — dalam pot heads-up, saat lawan Anda all-in tak ada lagi ronde taruhan, jadi tak ada uang tambahan untuk dimenangkan darinya — implied odds Anda nol. (Di pot multiway, pemain ketiga yang masih punya chip bisa menjaga side pot tetap hidup; si pemain all-in sendiri tak akan pernah membayar Anda lebih.) Di spot itu Anda harus mengandalkan pot odds saja. Berasumsi punya implied odds melawan all-in adalah kesalahan yang umum dan mahal.
 
 **Q. Bagaimana implied odds bekerja dalam set mining?**
 
@@ -223,7 +223,7 @@ A. Implied odds semuanya tentang uang yang tersisa untuk dimenangkan, dan stack 
 ## 3 Hal yang Harus Diingat
 
 1. **Rumusnya:** ekstra dibutuhkan = (call ÷ hit%) − (pot saat ini + call). Jika Anda realistis bisa menang lebih dari itu nanti, call-nya bagus bahkan saat pot odds bilang fold.
-2. **Cek kenyataannya:** implied odds adalah perkiraan yang hidup di atas stack dalam dan lawan yang membayar. Melawan all-in atau stack pendek, ia nol — kembali ke pot odds.
+2. **Cek kenyataannya:** implied odds adalah perkiraan yang hidup di atas stack dalam dan lawan yang membayar. Melawan all-in ia nol, dan melawan stack pendek yang tersisa sangat sedikit — kembali ke pot odds.
 3. **Cermin gelapnya:** reverse implied odds menghukum draw non-nut. Sebuah draw ke nuts bernilai jauh lebih besar daripada draw yang sama ke terbaik kedua.
 
 Kuasai ini dan Anda berhenti membakar chip pada call penuh harapan sambil tetap membuat call menguntungkan yang tak berani dilakukan orang lain. Dari sini, kunci angka mentahnya dengan [bagan peluang dan probabilitas poker](/id/blog/holdem-probability), atau lihat persis seberapa sering tiap draw mendarat di [drawing odds](/id/blog/holdem-drawing-odds).

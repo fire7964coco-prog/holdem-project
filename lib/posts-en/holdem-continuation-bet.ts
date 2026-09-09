@@ -10,7 +10,7 @@ export const POST: Post = {
   date: "2026-07-06",
   // 2026-08-19: range advantage 절에 `a-high-board-cbet` 역링크 한 문단 추가(EN·KO 전용 자산이라
   //   7개 번역본에는 전파하지 않는다 — 의도적 차이. `docs/locale-intentional-diffs.md`에 기록).
-  updated: "2026-08-19",
+  updated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "15 min",
   emoji: "🔥",
@@ -124,7 +124,7 @@ Put real numbers on it. Say the pot is ==$30== on the flop:
 - A **one-third-pot** c-bet is ==$10== — your dry-board range bet.
 - A **two-thirds-pot** c-bet is ==$20== — your wet-board, charge-the-draws size.
 
-In **tournaments**, lean a touch smaller — often **half pot or less** — because your stack is precious and you can't reload. Whatever you choose, tie the size to the board, not to habit.
+In **tournaments**, lean a touch smaller: the small size stays a third, but the big size is more often **half pot** than two-thirds, because your stack is precious and you can't reload. Whatever you choose, tie the size to the board, not to habit.
 
 Want to see how far the "big on wet boards" gear actually goes? A solver handed two sizes on Q♥T♥7♠ in a three-bet pot puts [98.4% of its range into the two-thirds bet](/en/blog/3bet-pot-bet-sizing "thumb:/images/gto-3bp-dynamic-oop-en.webp") — and the reason is a price you can calculate, not a feel.
 
@@ -231,7 +231,7 @@ A. It depends on position, board, and number of opponents, so treat these as ran
 
 **Q. How much should you c-bet?**
 
-A. Size to the board. On dry, static boards bet small — about one-third of the pot — because your opponent's range is weak and you don't need to charge draws. On wet, dynamic boards bet big — two-thirds pot or more — to charge flushes and straight draws and build the pot with your strong hands. In tournaments, lean smaller, often half pot or less.
+A. Size to the board. On dry, static boards bet small — about one-third of the pot — because your opponent's range is weak and you don't need to charge draws. On wet, dynamic boards bet big — two-thirds pot or more — to charge flushes and straight draws and build the pot with your strong hands. In tournaments the big size shrinks — half pot more often than two-thirds — while the small size stays a third.
 
 **Q. Should you c-bet out of position?**
 

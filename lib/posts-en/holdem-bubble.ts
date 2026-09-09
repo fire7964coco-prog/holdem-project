@@ -112,7 +112,7 @@ The short stack's mantra: fold equity is everything. Shove first, and pick your 
 
 **"Bubble factor" measures how much more losing your stack costs you than winning the same pot helps — and it converts directly into the extra equity you need to make a call.** A bubble factor of 1.0 means chips and money move together (early in a tournament). A bubble factor of 1.5 means ==busting hurts 1.5× as much as winning helps==, so you need a much bigger edge to get your chips in.
 
-Here's the useful part: the equity you need to break even on a call is ==c · BF ÷ (P + c · BF)==, where **c** is what the call costs you and **P** is the pot you'd win. When you're risking exactly what you stand to win, that collapses to the form you'll usually see quoted — ==BF ÷ (1 + BF)== — which is what the table below uses.
+Here's the useful part: the equity you need to break even on a call is ==c · BF ÷ (P + c · BF)==, where **c** is what the call costs you and **P** is the pot you'd win — everything already in the middle, not counting your own call. When you're risking exactly what you stand to win, that collapses to the form you'll usually see quoted — ==BF ÷ (1 + BF)== — which is what the table below uses.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -128,7 +128,7 @@ Here's the useful part: the equity you need to break even on a call is ==c · BF
 
 Read that last column as a ceiling, not as your spot: real bubble pots hold dead money, and dead money pushes the requirement **down**. If the small blind jams 10bb and you call 9bb into a pot already holding 12bb, a bubble factor of 1.5 needs ==52.9%==, not 60% — and with no ICM pressure at all it's just pot odds, ==42.9%==.
 
-The other half is that bubble factor tracks **who is across from you**, not the stage. Four-handed with three paid, a middle stack facing the chip leader carries a bubble factor near ==3.0==, while that same middle stack facing the shortest player is barely over ==1.1==; equal stacks sit near ==1.9==, and a six-handed final-table bubble runs ==2.0== and up. Treat 1.5–1.7 as a floor for a serious bubble, not a peak — then drop back once you're in the money. Plug your own stacks and payouts into the [ICM calculator](/en/calculator) for the number that actually applies.
+The other half is that bubble factor tracks **who is across from you**, not the stage. Four-handed with three paid, a middle stack facing the chip leader carries a bubble factor near ==3.0==, while that same middle stack facing the shortest player is barely over ==1.1==; equal stacks sit near ==1.9==, and at a six-handed final-table bubble the middle stacks run ==2.0== and up (the chip leader, as always, sits far lower). Treat 1.5–1.7 as a floor for a serious bubble, not a peak — then drop back once you're in the money. Plug your own stacks and payouts into the [ICM calculator](/en/calculator) for the number that actually applies.
 
 ---
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Dos 169 tipos de mãos iniciais, só uma pequena fatia do topo — cerca de 15–20% das mãos que você recebe — dá lucro pra um iniciante. Pares grandes (AA–TT) e AK aumentam de qualquer assento; quanto mais tarde você age, mais amplo você abre — de ~13% no under the gun a ~43% no button (ainda mais amplo no 6-max). Comece com uma tabela simplificada e adicione as tabelas GTO de pré-flop quando o aumentar-ou-foldar já for automático.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-09-04",
-  masterUpdated: "2026-08-26",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🂡",
@@ -122,7 +122,7 @@ O núcleo do range do UTG (um range completo de ~13% se abre pra pares médios c
 - Suited premium: **AKs, AQs, AJs, KQs**
 - Offsuit premium: **AKo** (e às vezes AQo)
 
-Mãos que parecem fortes mas deveriam ser foldadas do UTG:
+Mãos que parecem fortes mas são folds ou marginais desde o UTG:
 
 - **KJo, QJo, KTo** — dominadas em cenários demais contra quem paga uma abertura de UTG
 - **66 e menores** — ótimos do button pra set-mine, caros demais do UTG
@@ -198,7 +198,7 @@ As piores mãos iniciais do poker não são tralha aleatória como 7-2 — ningu
 | ==r:Ases fracos (A2o–A8o)== | Faz o segundo melhor par vs. ases melhores | "Eu tenho um ás, deve ser boa" |
 | Connectors offsuit baixos (76o, 65o) | Raramente conecta limpo, e é difícil de jogar quando conecta | "Pode fazer uma sequência" |
 | Rei-carta baixa offsuit (K3o, K4o) | Dominada por todo rei melhor | "Um rei é uma carta grande" |
-| Duas cartas quaisquer do mesmo naipe | Faz flush até o river só ~6,5% das vezes (flopa um em ~0,8%) | "Mas são do mesmo naipe" |
+| Duas cartas quaisquer do mesmo naipe | Faz flush até o river só ~6,4% das vezes (flopa um em ~0,8%) | "Mas são do mesmo naipe" |
 
 ![Armadilha do ás fraco no Texas Hold'em — A♣ 4♦ contornado em vermelho como mão perdedora, dominada por A♠ K♦ em dourado](/images/holdem-starting-hands-weak-ace-trap.webp "Ases fracos parecem fortes mas continuam dominados — folde no pré-flop")
 
@@ -279,7 +279,7 @@ A. Não de cara. As tabelas GTO de pré-flop usam frequências mistas feitas pra
 
 **Q. Ser suited faz diferença de verdade?**
 
-A. Ser suited adiciona cerca de 2 pontos percentuais de equity sobre a mesma mão offsuit — relevante, mas não é motivo pra jogar uma mão ruim. Duas cartas do mesmo naipe fazem flush até o river só ~6,5% das vezes (e um flush draw flopado fecha cerca de 35% das vezes até o river). Lixo suited continua lixo.
+A. Ser suited adiciona cerca de 2 pontos percentuais de equity sobre a mesma mão offsuit — relevante, mas não é motivo pra jogar uma mão ruim. Duas cartas do mesmo naipe fazem flush até o river só ~6,4% das vezes (e um flush draw flopado fecha cerca de 35% das vezes até o river). Lixo suited continua lixo.
 
 **Q. Devo sempre foldar pares pequenos como 22 ou 33?**
 

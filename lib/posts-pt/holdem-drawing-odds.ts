@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Você flopa um set com um par na mão 11,8% das vezes (7,5 para 1 contra), flopa um flush com duas cartas do mesmo naipe apenas 0,84%, e completa um flush draw flopado até o river 35% das vezes. Cada número abaixo vem do baralho, não de chute.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-09-04",
-  masterUpdated: "2026-08-11",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🎲",
@@ -120,7 +120,7 @@ Um flush **backdoor** (runner-runner) — você flopa só *uma* carta extra do s
 
 ![Uma sequência de oito alto disposta em ordem no feltro verde, a mão pronta que um open-ended draw está perseguindo](/images/holdem-reading-straight-example.webp "Um open-ended straight draw completa por qualquer das pontas — oito outs, 31,5% pra completar até o river")
 
-Conectores como 8♠7♠ têm o próprio ciclo de vida. Você vai **flopar uma sequência feita só 1,3%** das vezes (76 para 1) — mais raro do que a maioria dos jogadores imagina. Bem mais frequente é flopar um **projeto**:
+Conectores como 8♠7♠ têm o próprio ciclo de vida. Você vai **flopar uma sequência feita só 1,3%** das vezes (76 para 1) — mais raro do que a maioria dos jogadores imagina. Esse número vale de 54s até JTs, os conectores que fecham sequência pelas duas pontas; mãos na borda do baralho entram em menos sequências, caindo até 0,33% no A-K. Bem mais frequente é flopar um **projeto**:
 
 - **Open-ended straight draw (OESD):** ~10% dos flops com conectores. Oito outs, completa **31,5%** até o river — 1 − C(39,2)/C(47,2) — ou 17% em qualquer carta única.
 - **Gutshot (projeto de sequência por dentro):** quatro outs, completa **16,5%** até o river, 8,5% numa carta. Metade da equity de um open-ended, e é por isso que os mesmos conectores jogam tão diferente dependendo do flop.
@@ -146,7 +146,7 @@ Esses são os números por trás das melhores (e piores) noites da sua vida no p
 
 Uma distinção crucial que as páginas do topo erram sempre: um **set** é um par na mão mais uma carta da mesa que combina (11,8%), enquanto **trinca** é uma carta *despareada* da mão que a mesa pareia duas vezes (1,35%). A mesma trinca no papel, odds e jogabilidade completamente diferentes — um set é disfarçado, a trinca é óbvia. Não deixe ninguém te dizer que são a mesma coisa.
 
-O número do straight flush é o de emoldurar: com conectores do mesmo naipe existem exatamente **quatro** flops que o fazem (uma sequência no seu naipe), então 4 ÷ 19.600 ≈ 1 em 4.900. É por isso que straight flushes flopados são histórias que as pessoas contam por uma década.
+O número do straight flush é o de emoldurar: com conectores do mesmo naipe de 54s até JTs existem exatamente **quatro** flops que o fazem (uma trinca de cartas em sequência no seu naipe para cada sequência em que a mão cabe; as bordas têm menos — QJs tem três, KQs dois, A2s um), então 4 ÷ 19.600 ≈ 1 em 4.900. É por isso que straight flushes flopados são histórias que as pessoas contam por uma década.
 
 O número do full house conta cada jeito de o flop te dar um boat com um par na mão — incluindo os flops que vêm como trinca de outro valor por cima do seu par — e é por isso que dá 0,98% em vez dos ~0,73% mais estreitos que algumas tabelas citam pra "set mais um par na mesa" só.
 

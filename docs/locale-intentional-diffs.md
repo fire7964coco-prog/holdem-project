@@ -69,3 +69,7 @@
 | 2026-09-09 | `holdem-rake` H2 수 (zh-hant) | **zh-hant는 EN보다 H2가 1개 많다** — `## 台灣現場：地下場 5% 不封頂與時間抽水真實案例`(EN 9 : zh-hant 10) | ✅ 의도적 — 대만 현지화로 «일부러» 더한 절(zh-hant 회차 6 §5-28 ①). 구조 게이트에서 결손으로 세지 마라 |
 | 2026-09-09 | `holdem-glossary` FAQ 「1bb」 정의 (zh-hant) | **zh-hant에만 「1bb」 정의 FAQ가 있다** — EN·zh 모두 없음 | ✅ 의도적 — 대만 롱테일 흡수(zh-hant 회차 6 §4-F·§5-28 ②). `check:mirror-pair`가 매 회차 갈림으로 잡아도 통일 대상 아님 |
 | 2026-09-09 | `holdem-glossary` H2 어형 (zh-hant) | **H2 6개에 「術語」를 편입**해 EN H2와 어형이 갈린다 | ✅ 의도적 — 경쟁 3사(taiwanrounders·pokertaiwan·monsterstack) H2 실측에 맞춤(zh-hant 회차 6 §5-28 ③) |
+| 2026-09-09 | `holdem-probability` FAQ 「쿼드 에이스 확률」·「플랍 적중 32%」 (ja · pt) | **EN에만 있고 ja·pt FAQ 세트에 없다** — 대기열 39 E·F 정정(1 in 7,700 · 57% 경로 · 「any single opponent」)을 옮길 자리가 없음 | ✅ 결함 아님 — 로케일 FAQ 세트가 EN과 다르게 구성됨(ja 회차 3 · pt 08-25 재저작). 새로 만들지 않는다 · 헤드 판정 09-09 (10) |
+| 2026-09-09 | `holdem-all-in-rules` 실수 4 일화 「머크 순간 칩 소실」 (ja · pt) | **EN·de·es·id에는 일화가 있고 ja·pt는 요약판** — Rule 109 «식별 가능 시 회수» 단서를 옮길 자리 없음 | ✅ 결함 아님 — 일화 없는 판은 잘못된 주장도 없다. 헤드 판정 09-09 (10) |
+| 2026-09-09 | `holdem-starting-hands-chart` UTG 폴드 목록 「77, 88」 행 (pt) | **pt는 「66 e menores」** — EN 77/88 «13% 범위 가장자리» 정정을 옮길 행이 없음 | ✅ 결함 아님 — pt 행은 EN L115 「77–99까지 넓어진다」와 모순되지 않는다. 헤드 판정 09-09 (10) |
+| 2026-09-09 | `holdem-icm` FAQ 「흔한 ICM 실수 3」 · `holdem-bubble` 위성 「온라인 시계는 무료」 (de) | **de에 해당 FAQ·문장이 없다** | ✅ 결함 아님 — de 08-11 재저작 때 FAQ 세트가 갈림. 헤드 판정 09-09 (10) |

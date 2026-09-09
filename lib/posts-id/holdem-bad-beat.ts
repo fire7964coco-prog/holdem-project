@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Bad beat adalah saat uang Anda masuk sebagai favorit berat — biasanya 80% atau lebih — dan Anda kalah karena lawan menangkap kartu beruntung untuk 'suck out' pada Anda. Berbeda dengan cooler, Anda unggul sepanjang tangan; hanya di akhir kartu berkhianat. Perih, tapi bad beat sebenarnya tanda Anda bermain di permainan yang menguntungkan.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-08-28",
-  masterUpdated: "2026-08-28",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "11 mnt",
   emoji: "💔",
@@ -19,7 +19,7 @@ export const POST: Post = {
   content: `
 Yang masih perih sampai sekarang: saya pegang pocket aces, all-in melawan pemain yang call dengan pocket fives, dan menyaksikan salah satu dari dua five terakhir menghantam river. Saya sudah melakukan semuanya dengan benar. Uang saya masuk sebagai favorit lebih dari 4:1, dan saya tetap kehilangan seluruh stack ke ==salah satu dari dua kartu di dek yang bisa mengalahkan saya==. Itulah bad beat, dan jika Anda cukup lama bermain poker, itu akan terjadi pada Anda ribuan kali.
 
-Sebuah **bad beat** adalah saat chip Anda masuk sebagai favorit statistik berat dan Anda tetap kalah, karena lawan menangkap kartu beruntung untuk ==g:suck out== pada Anda. Kata kuncinya adalah *favorit* — Anda unggul saat uang masuk, dan hanya sebuah kartu yang tak terduga yang membalikkan hasilnya. Berikut ini persisnya apa yang dihitung sebagai bad beat, bedanya dengan [cooler](/id/blog/holdem-cooler "thumb:/images/holdem-cooler-hero.webp"), berapa bayaran "bad beat jackpot," dan kebenaran kontraintuitif yang akhirnya dipelajari setiap pemain pemenang: bad beat itu *bagus* untuk Anda. Ini salah satu kata yang paling sering dipakai serampangan di seluruh [istilah poker](/id/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp"), jadi inilah yang benar-benar memenuhi syarat.
+Sebuah **bad beat** adalah saat chip Anda masuk sebagai favorit statistik berat dan Anda tetap kalah, karena lawan menangkap kartu beruntung untuk ==g:suck out== pada Anda. Kata kuncinya adalah *favorit* — Anda unggul saat uang masuk, dan hanya sebuah kartu yang tak terduga yang membalikkan hasilnya. Ini salah satu kata yang paling sering dipakai serampangan di seluruh [istilah poker](/id/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp"), jadi berikut persisnya apa yang dihitung sebagai bad beat, bedanya dengan [cooler](/id/blog/holdem-cooler "thumb:/images/holdem-cooler-hero.webp"), berapa bayaran "bad beat jackpot," dan kebenaran kontraintuitif yang akhirnya dipelajari setiap pemain pemenang: bad beat itu *bagus* untuk Anda.
 
 ---
 
@@ -60,7 +60,7 @@ Orang memakai "bad beat" dan "cooler" secara bergantian, padahal keduanya berlaw
 
 </div>
 
-Uji cepat: **jika lawan Anda perlu *improve* untuk menang, itu bad beat.** Jika mereka sudah unggul saat uang masuk dan Anda sekadar tak bisa fold monster Anda, itu [cooler](/id/blog/holdem-cooler) — tanpa suckout, tanpa bad beat. Dan perhatikan jebakannya: **set over set bukan bad beat.** Saat set of queens Anda kalah ke set of kings, tak ada yang beruntung di river — set yang lebih besar unggul sepanjang jalan. Itu cooler yang berpakaian bad beat.
+Uji cepat: **jika lawan Anda perlu *improve* untuk menang, itu bad beat.** Jika mereka sudah unggul saat uang masuk dan Anda sekadar tak bisa fold monster Anda, itu [cooler](/id/blog/holdem-cooler) — tanpa suckout, tanpa bad beat. Dan perhatikan jebakannya: **set over set yang sama-sama di-flop bukan bad beat.** Saat set of queens Anda kalah ke set of kings yang jadi di flop yang sama, tak ada yang beruntung di river — set yang lebih besar unggul sepanjang jalan. (Kalau kings itu baru menemukan set-nya di turn atau river, uji tadi menyebutnya suckout — yang itu *memang* bad beat.) Itu cooler yang berpakaian bad beat.
 
 ---
 
@@ -90,13 +90,13 @@ Setiap bad beat punya bentuk yang sama: Anda favorit, underdog butuh bantuan, da
 |:---|:---|:---:|:---|
 | **Aces dihancurkan set** | AA vs pair lebih rendah (mis. 7‑7) | ~80% (4:1) | Pair mereka kena set di flop, turn, atau river |
 | **Aces vs tangan acak** | AA all-in preflop | ~85% | Dua kartu apa pun mengejar Anda |
-| **Overpair vs flush draw (kasus batas)** | Overpair di flop | ~65% (2:1) | Flush draw 9-out mereka lengkap di river |
+| **Overpair vs flush draw (kasus batas)** | Overpair di flop | ~63% (1,7:1) | Flush draw 9-out mereka lengkap di river |
 | **Runner-runner** | Made hand unggul di flop | ~90%+ | Dua kartu sempurna (turn *dan* river) melengkapi draw |
 | **One-outer** | Tangan hampir terkunci | ~96% | Satu-satunya kartu tersisa di dek mengalahkan Anda |
 
 </div>
 
-*Menurut ambang di bagian sebelumnya, overpair vs flush draw adalah kasus batas dalam daftar ini: pada ~65%, kasus itu lebih tepat disebut variance ketimbang bad beat "sejati" — tapi begitulah meja tetap menyebutnya.*
+*Menurut ambang di bagian sebelumnya, overpair vs flush draw adalah kasus batas dalam daftar ini: pada ~63%, kasus itu lebih tepat disebut variance ketimbang bad beat "sejati" — tapi begitulah meja tetap menyebutnya.*
 
 Yang paling ikonik adalah **aces dihancurkan set.** Anda dapat pocket aces all-in preflop melawan pocket sevens — Anda kira-kira favorit 80%, kunci 4:1 di pihak Anda. Tapi ada dua seven lagi di dek, dan jika salah satunya kena board — dan tak ada ace ikut datang — three-of-a-kind mereka mengalahkan pair Anda. Empat dari lima kali Anda menyapu pot; kali kelima, Anda punya cerita bad beat yang tak ingin didengar siapa pun. Matematikanya tak pernah salah — Anda sekadar mendarat di sisi yang salah darinya, dan justru itulah kenapa satu tangan tidak memberi tahu Anda [apa pun tentang apakah Anda bermain baik](/id/blog/holdem-cooler).
 
@@ -118,7 +118,7 @@ Aturannya **bervariasi per ruangan**, tapi struktur umumnya terlihat seperti ini
 |:---|:---:|
 | **Yang kalah (tangan bad-beat)** | ~50% |
 | **Pemenang tangan** | ~25% |
-| **Lainnya di meja** | ~25% (dibagi rata) |
+| **Pemain lain yang ikut dibagi kartu di tangan itu** | ~25% (dibagi rata) |
 
 </div>
 
@@ -128,9 +128,9 @@ Satu catatan penting: **setiap kasino dan situs poker menetapkan kualifikasi dan
 
 ## Bad Beat Paling Terkenal di Poker
 
-Jika Anda ingin merasa lebih baik soal bad beat Anda sendiri, ingatlah bahwa yang terburuk terjadi di panggung terbesar. Yang paling legendaris terjadi di **2008 World Series of Poker Main Event**, di mana **Motoyuki Mabuchi** mengubah pocket aces-nya menjadi **four of a kind — quad aces**, sebuah tangan yang hanya bisa dikalahkan oleh straight flush — dan *tetap kalah*. River **A♦** melengkapi quads-nya sementara, di kartu yang sama persis, memberi **Justin Phillips** (memegang K♦ J♦) sebuah **royal flush** — 10‑J‑Q‑K‑A diamond. Baru setelah kartu itu jatuh uangnya masuk: Mabuchi check, Phillips bertaruh, Mabuchi mendorong seluruh stack-nya, dan Phillips call seketika. Satu kartu yang membuat four aces adalah satu kartu yang bisa mengalahkannya.
+Jika Anda ingin merasa lebih baik soal bad beat Anda sendiri, ingatlah bahwa yang terburuk terjadi di panggung terbesar. Yang paling legendaris terjadi di **2008 World Series of Poker Main Event**, di mana **Motoyuki Mabuchi** mengubah pocket aces-nya menjadi **four of a kind — quad aces**, sebuah tangan yang hanya bisa dikalahkan oleh straight flush — dan *tetap kalah*. Di board A♥ 9♣ Q♦ 10♦, **Justin Phillips** (memegang K♦ J♦) sudah membuat straight ace-high — Broadway, A-K-Q-J-10 — di turn, unggul atas set aces milik Mabuchi. River **A♦** melengkapi quads Mabuchi sementara, di kartu yang sama persis, mengubah straight Phillips menjadi **royal flush** — 10‑J‑Q‑K‑A diamond. Aksi di river, seperti dilaporkan PokerNews: Mabuchi check, Phillips bertaruh, Mabuchi berseru "gamble!" dan mendorong seluruh stack-nya, dan Phillips call seketika. Satu kartu yang membuat four aces adalah satu kartu yang bisa mengalahkannya.
 
-*Menurut ambang di atas, secara teknis ini bahkan bukan bad beat — uangnya baru masuk setelah kartu terakhir jatuh, jadi tak ada suckout yang menyusul. Tapi poker mengenangnya sebagai bad beat paling terkenal yang pernah ada, dan nama itulah yang melekat.*
+*Menurut ambang di atas, secara teknis ini bahkan bukan bad beat — Phillips sudah unggul sejak turn, dan chip yang kita lihat masuk baru masuk setelah kartu terakhir jatuh, jadi tak ada yang men-suckout siapa pun. Tapi poker mengenangnya sebagai bad beat paling terkenal yang pernah ada, dan nama itulah yang melekat.*
 
 Itulah puncak rasa sakit bad beat: bukan favorit 80% yang tumbang, tapi *four aces* — tangan yang bisa Anda mainkan seumur hidup tanpa pernah kalah — dikalahkan oleh straight flush, satu-satunya kategori tangan yang mengungguli four of a kind. Layak disimpan di saku Anda lain kali aces Anda dihancurkan: seburuk apa pun dek memperlakukan Anda, seseorang pernah kalah dengan quad aces.
 
@@ -171,7 +171,7 @@ A. Bad beat adalah saat Anda kalah di sebuah tangan yang seharusnya Anda menangk
 
 **Q. Apa perbedaan antara bad beat dan cooler?**
 
-A. Dalam bad beat Anda favorit saat uang masuk dan di-outdraw — sebuah suckout terjadi. Dalam cooler Anda tertinggal sepanjang jalan dengan tangan terlalu kuat untuk fold, dan tak ada suckout. Uji cepat: jika lawan Anda harus *improve* untuk menang, itu bad beat; jika mereka sudah unggul, itu cooler. Set over set, misalnya, adalah cooler, bukan bad beat.
+A. Dalam bad beat Anda favorit saat uang masuk dan di-outdraw — sebuah suckout terjadi. Dalam cooler Anda tertinggal sepanjang jalan dengan tangan terlalu kuat untuk fold, dan tak ada suckout. Uji cepat: jika lawan Anda harus *improve* untuk menang, itu bad beat; jika mereka sudah unggul, itu cooler. Set over set yang kedua set-nya sama-sama di-flop, misalnya, adalah cooler, bukan bad beat — kalau set yang lebih besar baru datang di turn atau river, itu suckout.
 
 **Q. Apakah kalah coinflip itu bad beat?**
 
@@ -183,7 +183,7 @@ A. Bad beat jackpot adalah hadiah progresif yang dibayar sebagian cardroom saat 
 
 **Q. Apa bad beat terburuk dalam sejarah poker?**
 
-A. Yang paling terkenal berasal dari 2008 WSOP Main Event: Motoyuki Mabuchi membuat quad aces — tangan yang hanya bisa dikalahkan straight flush — dan tetap kalah. Ia flop set aces, lalu case ace di river melengkapi four of a kind-nya dan, di kartu yang sama, memberi Justin Phillips royal flush diamond. Membuat four of a kind terbaik yang mungkin dan bertemu straight flush — satu-satunya kategori tangan yang mengunggulinya — kira-kira seburuk yang bisa dicapai sebuah bad beat.
+A. Yang paling terkenal berasal dari 2008 WSOP Main Event: Motoyuki Mabuchi membuat quad aces — tangan yang hanya bisa dikalahkan straight flush — dan tetap kalah. Ia flop set aces, Justin Phillips membuat straight ace-high di turn, lalu case ace di river melengkapi four of a kind Mabuchi dan, di kartu yang sama, mengubah straight Phillips menjadi royal flush diamond. Membuat four of a kind terbaik yang mungkin dan bertemu straight flush — satu-satunya kategori tangan yang mengunggulinya — kira-kira seburuk yang bisa dicapai sebuah bad beat.
 
 **Q. Apakah bad beat lebih sering terjadi online?**
 

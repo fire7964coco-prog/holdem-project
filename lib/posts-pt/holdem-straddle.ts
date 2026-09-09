@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "O straddle é uma aposta de blind opcional — normalmente o dobro do big blind — postada antes de as cartas serem distribuídas. Ela compra pro straddler a última ação e a opção de aumentar no pré-flop, dobrando os blinds do jogo. Em quase todo caso é uma jogada -EV, e na prática só existe em cash games, conforme as regras da casa.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-09-04",
-  masterUpdated: "2026-08-26",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "💰",
@@ -123,8 +123,8 @@ Mesmo em cash games ele é opcional e depende das regras da casa: algumas salas 
 A resposta honesta, e a que os solvers concordam: **pra quase todo mundo, não.** A análise do GTO Wizard coloca sem rodeios — do ponto de vista de valor esperado, straddar é uma jogada perdedora. Três motivos:
 
 :::card
-🎯 | Você compromete às cegas | O dinheiro entra antes de você ver suas cartas, então você está jogando um pote inchado sem informação — a mesma desvantagem que faz dos blinds as piores cadeiras da mesa
-📉 | Encolhe sua vantagem posicional | Dobrar o blind incha o pote inicial e deixa mais jogadores ainda pra agir quando você está nas suas melhores cadeiras de roubo. Contra a intuição, os solvers respondem abrindo **menos** mãos em potes com straddle — cerca de 15–20% menos no button — não mais
+🎯 | Você compromete às cegas | O dinheiro entra antes de você ver suas cartas, então você está jogando um pote inchado sem informação — a mesma desvantagem que faz dos blinds as piores cadeiras da mesa. E ainda corta pela metade a sua profundidade efetiva: num $1/$2, um stack de $200 são 100 big blinds, mas com um straddle de $4 na mesa o mesmo stack joga como 50
+📉 | Encolhe sua vantagem posicional | Dobrar o blind incha o pote inicial e deixa mais jogadores ainda pra agir quando você está nas suas melhores cadeiras de roubo. Contra a intuição, os solvers respondem abrindo **menos** mãos em potes com straddle — cerca de 15–20% menos no button, segundo as [simulações de potes com straddle do GTO Wizard](https://blog.gtowizard.com/preflop-strategy-in-straddled-pots/) — não mais
 💸 | Incha o rake | Potes maiores significam mais [rake](/pt/blog/holdem-rake) tirado deles, um imposto escondido em cada mão com straddle num cash game com rake
 :::
 

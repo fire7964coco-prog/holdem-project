@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "No Texas Hold'em cada jogador recebe 2 cartas fechadas, usa 5 cartas comunitárias, e a melhor mão de 5 cartas ganha depois de quatro rodadas de apostas.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-07",
-  masterUpdated: "2026-09-07",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
@@ -308,7 +308,7 @@ Quando você tem um draw (por exemplo, quatro cartas para um flush), conte seus 
 
 | Situação | Fórmula | Exemplo (9 outs de flush) |
 |-----------|---------|------------------------|
-| No **flop** (2 cartas por vir) | Outs × 4 | 9 × 4 = **~36% de chance** |
+| No **flop**, vendo as duas cartas restantes sem mais nenhuma aposta (ex.: all-in) | Outs × 4 | 9 × 4 = **~36% de chance** |
 | No **turn** (1 carta por vir) | Outs × 2 | 9 × 2 = **~18% de chance** |
 
 </div>

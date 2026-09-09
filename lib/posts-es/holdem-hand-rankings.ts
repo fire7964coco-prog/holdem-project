@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "La jerarquía de manos de póker, de la mejor a la peor, es: Escalera Real, Escalera de Color, Póker, Full, Color, Escalera, Trío, Doble Pareja, Pareja y Carta Alta. La regla básica: cuanto más rara es una mano de ligar, más alto está — por eso el color gana a la escalera y el full gana al color. Cuando dos jugadores tienen el mismo tipo de mano, decide el kicker; si las cinco cartas coinciden, el bote se divide.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-09-07",
-  masterUpdated: "2026-09-07",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🃏",
@@ -27,7 +27,7 @@ He visto esa cara de "creía que ganaba" al otro lado de la mesa más noches de 
 
 ## ¿Cuál es la jerarquía de manos de póker, de la mejor a la peor?
 
-De la mejor a la peor, las diez manos del Texas Hold'em son: Escalera Real, Escalera de Color, Póker, Full, Color, Escalera, Trío, Doble Pareja, Pareja y Carta Alta. La regla básica es simple: cuanto más rara es una mano de ligar, más alto está. Abajo tienes toda la jerarquía, con la probabilidad a largo plazo de ligar cada mano para el river.
+De la mejor a la peor, las diez manos del Texas Hold'em son: Escalera Real, Escalera de Color, Póker, Full, Color, Escalera, Trío, Doble Pareja, Pareja y Carta Alta. La regla básica es simple: cuanto más rara es una mano de ligar con cinco cartas, más alto está. (El orden se fijó con las probabilidades a cinco cartas; con siete cartas un par de frecuencias se cruzan — para el river, una carta alta a secas es en realidad más rara que la doble pareja — pero la jerarquía no cambia.) Abajo tienes toda la jerarquía, con la probabilidad a largo plazo de ligar cada mano para el river.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -269,7 +269,7 @@ Con el reloj en contra, repasa este escaneo en orden cada vez que la mesa esté 
 
 **3. Por último las parejas** — ¿está emparejada la mesa? ==r:Si sí, hay fulls y pókers en juego, y tu color o escalera puede estar en peligro.==
 
-Yo sigo repasando este mismo escaneo — palos, luego escaleras, luego parejas — en cada mesa, por muchas horas que lleve sentado. Primero el peligro (color/escalera en la mesa), luego si la mesa está emparejada (lo que amenaza todo). Crea el hábito y dejarás de pagar a la ligera en el river.
+Yo sigo repasando este mismo escaneo — color, luego escalera, luego parejas — en cada mesa, por muchas horas que lleve sentado. Primero el peligro (color/escalera en la mesa), luego si la mesa está emparejada (lo que amenaza todo). Crea el hábito y dejarás de pagar a la ligera en el river.
 
 ---
 
@@ -413,7 +413,7 @@ A. La jugada que más vale es la escalera real (A-K-Q-J-10 del mismo palo): es l
 2. **La trampa:** el color (#5) gana a la escalera (#6) — y cualquier mesa emparejada puede esconder un full que gana a ambos.
 3. **La realidad:** la mayoría de los botes se ganan con pareja o carta alta, así que tu kicker vale más de lo que crees.
 
-Aprende el orden en una tarde, practica los duelos confusos y repasa el escaneo "palos → escaleras → parejas" en cada mesa. Hazlo y nunca volverás a empujar el bote hacia el lado equivocado.
+Aprende el orden en una tarde, practica los duelos confusos y repasa el escaneo "color → escalera → parejas" en cada mesa. Hazlo y nunca volverás a empujar el bote hacia el lado equivocado.
 
 Una vez que dominas la jerarquía, el siguiente paso natural es saber con qué manos entrar — mira la [tabla de manos iniciales de Texas Hold'em por posición](/es/blog/holdem-starting-hands-chart) para ver exactamente qué cartas jugar desde cada asiento.
 

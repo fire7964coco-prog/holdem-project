@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Num torneio de poker você paga um buy-in fixo por fichas, e os blinds sobem num relógio até uma pessoa ficar com todas as fichas. Os 10–15% melhores do field entram no dinheiro. Os formatos incluem freezeout, PKO, satellite e deepstack — você entra por buy-in direto, satellite ou pré-registro online.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-08-28",
-  masterUpdated: "2026-08-26",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏆",
@@ -159,7 +159,7 @@ Em vez de gastar $10.000, você disputa um torneio de $500 contra outros 19 joga
 
 **Satellites encadeados** vão ainda mais baixo. Um super-satellite de $5 → qualifier de $55 → evento de $215 → um Main Event online de $1.050. Muitos jogadores em grandes eventos entraram por uma corrente de satellites por uma fração do buy-in direto.
 
-==g:A estratégia de satellite é diferente do jogo de torneio normal — assim que você tem fichas suficientes pra garantir uma vaga, pare de correr riscos. Folde até mãos boas pra não quebrar na bolha.==
+==g:A estratégia de satellite é diferente do jogo de torneio normal — num satélite que dá várias vagas idênticas, assim que você tem fichas suficientes pra garantir a sua, pare de correr riscos: folde até mãos boas pra não quebrar na bolha. O satélite winner-take-all, que dá uma vaga só, é a exceção: ele se joga pelo primeiro lugar, em chip EV.==
 
 ---
 
@@ -264,7 +264,7 @@ Isto é o que nenhum outro guia te conta. Aqui está uma linha do tempo realista
 - Min-cash: aproximadamente 1,83x o buy-in
 - 1º lugar: $662.200 (~14% do prize pool)
 
-A estrutura de payout é sempre anunciada antes de o torneio começar. Peça a **structure sheet** no registro — ela lista os níveis de blind, os antes e o stack inicial (a tabela de payout costuma sair num pay chart separado, publicado pela sala).
+A tabela de payout pode ser consultada antes de o torneio começar, mas o número final de colocações pagas e os valores exatos muitas vezes só saem depois que o registro, os rebuys e os add-ons fecham. Peça a **structure sheet** no registro — ela lista os níveis de blind, os antes e o stack inicial (a tabela de payout costuma sair num pay chart separado, publicado pela sala).
 
 ---
 
@@ -351,7 +351,7 @@ A. Sim, durante a janela de late registration — normalmente os primeiros níve
 
 **Q. Dá pra sair cedo de um torneio de poker e ficar com as fichas?**
 
-A. Não. Diferente de um cash game, as fichas de torneio não têm valor em dinheiro e não podem ser trocadas no meio do evento. Se você for embora, suas fichas continuam em jogo e seguem pagando blinds e antes até acabarem. Você só recebe dinheiro se terminar numa posição paga (ITM).
+A. Não. Diferente de um cash game, as fichas de torneio não têm valor em dinheiro e não podem ser trocadas no meio do evento. Se você for embora, suas fichas continuam em jogo e seguem pagando blinds e antes até acabarem. A premiação normal só é paga se você terminar numa posição paga (ITM); em formatos knockout e PKO você também embolsa os bounties à parte.
 
 ---
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "A bolha é o momento logo antes do dinheiro, onde mais uma eliminação paga todo mundo. Como quebrar significa não ganhar nada, sobreviver vale mais que as fichas que você ganharia — então os ranges de call apertam muito enquanto os shoves continuam largos. Big stacks atacam, médios são os mais presos (não os short stacks), e numa bolha de satélite você folda tudo, até ases, assim que sua vaga está garantida.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-08-28",
-  masterUpdated: "2026-08-26",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🫧",
@@ -113,7 +113,7 @@ O mantra do short stack: fold equity é tudo. Dê shove primeiro, e escolha seu 
 
 **O "bubble factor" mede quanto perder seu stack te custa a mais do que ganhar o mesmo pote te ajuda — e se converte direto na equity extra (o risk premium) que você precisa para pagar.** Um bubble factor de 1,0 significa que fichas e dinheiro andam juntos (no começo de um torneio). Um bubble factor de 1,5 significa que ==quebrar dói 1,5× mais do que ganhar ajuda==, então você precisa de uma vantagem muito maior para colocar suas fichas no meio.
 
-Aqui está a parte útil: a equity que você precisa para empatar num call é ==c · BF ÷ (P + c · BF)==, onde **c** é o que o call te custa e **P** é o pote que você levaria. Quando você arrisca exatamente o que pode ganhar, isso encolhe para a forma que se costuma citar — ==BF ÷ (1 + BF)== — que é a usada na tabela abaixo.
+Aqui está a parte útil: a equity que você precisa para empatar num call é ==c · BF ÷ (P + c · BF)==, onde **c** é o que o call te custa e **P** é o pote que você levaria — tudo o que já está no meio, sem contar o seu próprio call. Quando você arrisca exatamente o que pode ganhar, isso encolhe para a forma que se costuma citar — ==BF ÷ (1 + BF)== — que é a usada na tabela abaixo.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -129,7 +129,7 @@ Aqui está a parte útil: a equity que você precisa para empatar num call é ==
 
 Leia aquela última coluna como um teto, não como o seu spot: potes reais de bolha carregam dinheiro morto, e dinheiro morto empurra a exigência **para baixo**. Se o small blind dá jam de 10bb e você paga 9bb num pote que já tem 12bb, com bubble factor de 1,5 você precisa de ==52,9%==, não de 60% — e sem nenhuma pressão de ICM são simples pot odds, ==42,9%==.
 
-A outra metade é que o bubble factor acompanha **quem está do outro lado**, não a fase. Em quatro jogadores com três pagos, um stack médio contra o chip leader carrega um bubble factor perto de ==3,0==, enquanto esse mesmo stack médio contra o jogador mais curto mal passa de ==1,1==; stacks iguais ficam perto de ==1,9==, e uma bolha de final table com seis roda de ==2,0== para cima. Trate 1,5–1,7 como o piso de uma bolha séria, não como o pico — e sim, caem de volta assim que você está no dinheiro. Coloque seus próprios stacks e premiações na [calculadora de ICM](/en/calculator) para ver seu número real num spot.
+A outra metade é que o bubble factor acompanha **quem está do outro lado**, não a fase. Em quatro jogadores com três pagos, um stack médio contra o chip leader carrega um bubble factor perto de ==3,0==, enquanto esse mesmo stack médio contra o jogador mais curto mal passa de ==1,1==; stacks iguais ficam perto de ==1,9==, e numa bolha de final table com seis os stacks médios rodam de ==2,0== para cima (o chip leader, como sempre, fica bem abaixo disso). Trate 1,5–1,7 como o piso de uma bolha séria, não como o pico — e sim, caem de volta assim que você está no dinheiro. Coloque seus próprios stacks e premiações na [calculadora de ICM](/en/calculator) para ver seu número real num spot.
 
 ---
 
@@ -148,7 +148,7 @@ A outra metade é que o bubble factor acompanha **quem está do outro lado**, n�
 **Num satélite, toda vaga paga o mesmo — então, no momento em que sua vaga está matematicamente garantida, você folda tudo, incluindo par de ases.** Este é o spot mais contraintuitivo do poker, e está correto. Se ganhar um cara ou coroa te dá a ==mesma vaga que você já garantiu== enquanto perdê-lo te elimina, não há recompensa e há risco enorme:
 
 - **Assim que sua vaga está matematicamente segura** (ninguém mais consegue te alcançar), folde toda mão — sim, até AA e KK — e deixe os stacks mais curtos brigarem. E reavalie a conta a cada subida de blinds: a "zona segura" encolhe conforme os antes entram.
-- **Não conte com o stall ao vivo.** Online, usar o relógio inteiro é de graça; ao vivo, esgotar o time bank de propósito para subir de posição é passível de penalidade pelas regras (a WSOP cita isso textualmente) — folde em ritmo normal e deixe os curtos brigarem.
+- **Não conte com o stall ao vivo.** Online, usar o relógio inteiro não gera penalidade; ao vivo, esgotar o time bank de propósito para subir de posição é passível de penalidade pelas regras (a WSOP cita isso textualmente) — folde em ritmo normal e deixe os curtos brigarem.
 - **A única exceção:** pague só se você cobrir o short stack em questão e a eliminação dele estourar a bolha *a seu favor* — e desde que a sua vaga fique garantida mesmo que você perca o pote.
 
 Se você tirar uma coisa desta seção: um satélite não é um torneio normal. Fichas acima do limiar de segurança não valem nada, então jogue como se fosse assim.

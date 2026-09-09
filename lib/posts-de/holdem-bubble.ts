@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Die Bubble ist der Moment kurz vor dem Geld, wo eine weitere Elimination allen anderen auszahlt. Weil ein Bust nichts bringt, ist Überleben mehr wert als die Chips, die du gewinnen würdest – Calling Ranges ziehen sich hart zusammen, während Shoves weit bleiben. Big Stacks attackieren, Medium Stacks sitzen am meisten in der Falle (nicht die Short Stacks), und an einer Satellite-Bubble foldest du alles, sogar Asse, sobald dein Platz gesichert ist.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-08-26",
-  masterUpdated: "2026-08-26",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "13 Min.",
   emoji: "🫧",
@@ -134,7 +134,7 @@ Das Mantra des Short Stacks: Fold Equity ist alles. Shove zuerst und wähl deine
 
 Ein Bubble Factor von 1,0 bedeutet, Chips und Geld bewegen sich zusammen (früh im Turnier). Ein Bubble Factor von 1,5 bedeutet, dass ==Busten 1,5× so weh tut, wie Gewinnen hilft==, also brauchst du einen viel größeren Edge, um deine Chips reinzukriegen.
 
-Hier der nützliche Teil: Die Equity, die du für einen Break-even-Call brauchst, ist ==c · BF ÷ (P + c · BF)==, wobei **c** der Call kostet und **P** der Pot ist, den du gewinnen würdest. Wenn du genau das riskierst, was du gewinnen kannst, fällt das auf die üblich zitierte Form zusammen – ==BF ÷ (1 + BF)== – und genau die benutzt die Tabelle unten.
+Hier der nützliche Teil: Die Equity, die du für einen Break-even-Call brauchst, ist ==c · BF ÷ (P + c · BF)==, wobei **c** der Call kostet und **P** der Pot ist, den du gewinnen würdest – alles, was bereits in der Mitte liegt, ohne deinen eigenen Call mitzuzählen. Wenn du genau das riskierst, was du gewinnen kannst, fällt das auf die üblich zitierte Form zusammen – ==BF ÷ (1 + BF)== – und genau die benutzt die Tabelle unten.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -150,7 +150,7 @@ Hier der nützliche Teil: Die Equity, die du für einen Break-even-Call brauchst
 
 Lies die letzte Spalte als Obergrenze, nicht als deinen Spot: In echten Bubble-Pots liegt Dead Money, und Dead Money drückt die Anforderung **nach unten**. Jamt der Small Blind über 10bb und du callst 9bb in einen Pot, in dem schon 12bb liegen, brauchst du bei einem Bubble Factor von 1,5 ==52,9%== statt 60% – und ganz ohne ICM-Druck sind es schlicht Pot Odds, ==42,9%==.
 
-Die andere Hälfte: Der Bubble Factor richtet sich danach, **wer dir gegenübersitzt**, nicht nach der Phase. Zu viert mit drei bezahlten Plätzen trägt ein Mittelstack gegen den Chipleader einen Bubble Factor nahe ==3,0==, während derselbe Mittelstack gegen den kürzesten Spieler kaum über ==1,1== liegt; gleiche Stacks liegen bei etwa ==1,9==, und eine Final-Table-Bubble zu sechst läuft ab ==2,0== aufwärts. Behandle 1,5–1,7 als Untergrenze einer ernsten Bubble, nicht als Höhepunkt – und sie fallen zurück, sobald du im Geld bist. Gib deine eigenen Stacks und Payouts in den [ICM-Rechner](/calculator) ein, um deine echte Zahl für einen Spot zu sehen.
+Die andere Hälfte: Der Bubble Factor richtet sich danach, **wer dir gegenübersitzt**, nicht nach der Phase. Zu viert mit drei bezahlten Plätzen trägt ein Mittelstack gegen den Chipleader einen Bubble Factor nahe ==3,0==, während derselbe Mittelstack gegen den kürzesten Spieler kaum über ==1,1== liegt; gleiche Stacks liegen bei etwa ==1,9==, und an einer Final-Table-Bubble zu sechst laufen die Mittelstacks ab ==2,0== aufwärts (der Chipleader liegt wie immer deutlich darunter). Behandle 1,5–1,7 als Untergrenze einer ernsten Bubble, nicht als Höhepunkt – und sie fallen zurück, sobald du im Geld bist. Gib deine eigenen Stacks und Payouts in den [ICM-Rechner](/calculator) ein, um deine echte Zahl für einen Spot zu sehen.
 
 ---
 
@@ -162,7 +162,7 @@ Die andere Hälfte: Der Bubble Factor richtet sich danach, **wer dir gegenübers
 Ohne diese Regel könnten Spieler an langsamen Tischen Hand um Hand folden, während schnellere Tische durch die Bubble brennen. Hand for Hand gleicht das Feld an:
 
 - **Wie es funktioniert:** Der Turnierdirektor kündigt Hand for Hand an – die Turnieruhr wird dabei angehalten, und stattdessen laufen pro gespielter Hand feste ==2 Minuten== vom Level ab, egal wie lange die Hand tatsächlich dauert (WSOP-Regel 126.a und 126.c; TDA RP-8). Die Blinds steigen also auch während der Bubble weiter – nur eben pro Hand statt pro Echtzeitminute. Alle Tische teilen eine Hand aus, und kein Tisch startet die nächste, bis jeder Tisch fertig ist. Busten zwei Spieler in derselben Hand-for-Hand-Runde am **selben Tisch**, nimmt derjenige mit weniger Chips zu Beginn der Hand die niedrigere (Bubble-)Platzierung; busten sie an **verschiedenen Tischen**, werden sie als gleichrangig gewertet und teilen sich die beiden betroffenen Auszahlungen.
-- **Stalling:** die volle Time Bank bei jeder Entscheidung nehmen, um weniger Hände zu sehen (und sich ins Geld zu folden). Es funktioniert genau deshalb, weil Tanken auf der Uhr nichts kostet – die Hand zieht ihre 2 Minuten ab, ob du sofort foldest oder die ganze Time Bank verbrennst. Big Stacks haben keinen Grund zu stallen – sie wollen mehr Hände zum Attackieren. Short und Medium Stacks stallen manchmal, um zu überleben, ==aber exzessives Stalling kann einen Clock-Call oder eine Penalty einbringen== – tanke in Maßen, ohne die Time Bank absichtlich zu verbrennen.
+- **Stalling:** die volle Time Bank bei jeder Entscheidung nehmen, in der Hoffnung, vor dem Geld weniger Hände sehen zu müssen. Während Hand for Hand ist diese Hoffnung falsch: Es senkt die Zahl der Hände an deinem Tisch nicht – jeder Tisch spielt gleich viele Hände, und jede Hand zieht ihre 2 Minuten von der Uhr ab (WSOP-Regel 126.a, 126.c), ob du sofort foldest oder die ganze Time Bank verbrennst. Big Stacks haben keinen Grund zu stallen – sie wollen mehr Hände zum Attackieren. Short und Medium Stacks stallen trotzdem aus Gewohnheit, ==aber exzessives Stalling kann einen Clock-Call oder eine Penalty einbringen== – tanke in Maßen, ohne die Time Bank absichtlich zu verbrennen.
 - **Nutze es aus:** Weil alle anderen langsamer werden, sammelt ein Big Stack, der während Hand for Hand weiter Druck macht, Blinds und Antes fast unangefochten ein.
 
 ---

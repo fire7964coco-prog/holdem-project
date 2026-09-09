@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un straddle es una apuesta ciega voluntaria — normalmente el doble de la ciega grande (2× BB) — que un jugador pone antes de repartir las cartas, casi siempre desde UTG; en España se le llama 'matar la ciega'. Le compra al que lo pone la última acción y la opción de subir en preflop, doblando la apuesta de la mano. Para casi todo el mundo es una jugada -EV, y solo se permite en cash games según las reglas de la casa (casi nunca en torneos).",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-08-26",
-  masterUpdated: "2026-08-26",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "💰",
@@ -123,8 +123,8 @@ Incluso en cash games es opcional y depende de las reglas de la casa: algunas sa
 La respuesta honesta, y la que comparten los solvers: **para casi todo el mundo, no.** El análisis de GTO Wizard lo dice sin rodeos — desde el punto de vista del valor esperado, el straddle es una jugada perdedora. Tres razones:
 
 :::card
-🎯 | Te comprometes a ciegas | El dinero entra antes de ver tus cartas, así que juegas un bote inflado sin información — la misma desventaja que hace de las ciegas los peores asientos de la mesa
-📉 | Reduce tu ventaja posicional | Doblar la ciega infla el bote inicial y deja a más jugadores por actuar cuando estás en tus mejores asientos para robar. Curiosamente, los solvers responden abriendo **menos** manos en botes con straddle — alrededor de un 15–20% menos en el botón — no más
+🎯 | Te comprometes a ciegas | El dinero entra antes de ver tus cartas, así que juegas un bote inflado sin información — la misma desventaja que hace de las ciegas los peores asientos de la mesa. Además te parte por la mitad la profundidad efectiva: en $1/$2 un stack de $200 son 100 ciegas grandes, pero con un straddle de $4 puesto ese mismo stack juega como 50
+📉 | Reduce tu ventaja posicional | Doblar la ciega infla el bote inicial y deja a más jugadores por actuar cuando estás en tus mejores asientos para robar. Curiosamente, los solvers responden abriendo **menos** manos en botes con straddle — alrededor de un 15–20% menos en el botón, según las [simulaciones de botes con straddle de GTO Wizard](https://blog.gtowizard.com/preflop-strategy-in-straddled-pots/) — no más
 💸 | Infla el rake | Botes más grandes significan más [rake](/es/blog/holdem-rake) que se llevan de ellos, un impuesto oculto sobre cada mano con straddle en un cash game con rake
 :::
 

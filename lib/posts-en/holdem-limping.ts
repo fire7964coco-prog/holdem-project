@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Limping is entering a pot preflop by just calling the big blind instead of raising or folding. Open-limping (being first in) is almost always a mistake — you can't win the pot preflop, you give up initiative, and good players punish you. But limping isn't always wrong: completing the small blind, over-limping speculative hands behind other limpers, and some live and short-stack spots are legitimate exceptions.",
   category: "strategy",
   date: "2026-07-05",
-  updated: "2026-08-27",
+  updated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🚶",
@@ -92,10 +92,10 @@ Here's where the dogma goes too far. Limping is *not* always wrong — the hones
 
 | Spot | Why limping is fine here |
 |:---|:---|
-| **Completing the small blind** | Your money's half-in and only the big blind acts behind you — the raise-or-fold rule breaks down at a discount. |
+| **Completing the small blind (unraised pot)** | Nobody has raised, your money's half-in and only the big blind acts behind you — the raise-or-fold rule breaks down at a discount. Facing a raise it's a different question: 3-bet or fold. |
 | **Over-limping speculative hands** | Behind other limpers with small pairs or suited connectors, you get great odds to flop a monster in a multiway pot. |
 | **Very passive live low-stakes** | If opponents only raise monsters and never punish limpers, you can see cheap flops with speculative hands and realize equity. |
-| **Shallow-stacked late position** | Modern solvers develop button open-limping ranges at short stacks, where a raise gains little and limping cuts your cost. |
+| **Short-stacked late position (tournaments)** | At short tournament stacks — well under the 100bb of a standard cash game — modern solvers develop button open-limping ranges, where a raise gains little and limping cuts your cost. |
 
 </div>
 
@@ -150,7 +150,7 @@ A. Open-limping gives up a lot: you can't win the pot preflop the way a raise ca
 
 **Q. Is limping ever a good strategy?**
 
-A. Yes, in specific spots. Completing from the small blind, over-limping speculative hands like small pairs and suited connectors behind other limpers, very passive live low-stakes games, and some shallow-stacked button situations are all legitimate. What's almost always wrong is open-limping — being the first player in and choosing to just call instead of raising.
+A. Yes, in specific spots. Completing from the small blind, over-limping speculative hands like small pairs and suited connectors behind other limpers, very passive live low-stakes games, and some short-stacked tournament button situations are all legitimate. What's almost always wrong is open-limping — being the first player in and choosing to just call instead of raising.
 
 **Q. What is the difference between open-limping and over-limping?**
 
@@ -162,11 +162,11 @@ A. A limp-reraise is when you limp, an opponent raises behind you, and you then 
 
 **Q. Should you ever open-limp preflop?**
 
-A. Almost never in a normal cash game. If a hand is good enough to play, it's usually good enough to raise; if it isn't, fold. The rare exceptions are extremely passive live games where you won't be punished, and some shallow-stacked late-position spots identified by solvers. As a default, raise or fold and skip the open-limp.
+A. Almost never in a normal cash game. If a hand is good enough to play, it's usually good enough to raise; if it isn't, fold. The rare exceptions are extremely passive live games where you won't be punished, and some short-stacked late-position tournament spots identified by solvers. As a default, raise or fold and skip the open-limp.
 
 **Q. Is it okay to limp in the small blind?**
 
-A. Often, yes — completing the small blind is one of the most defensible limps. Your money is already half in, only the big blind can act behind you, and you're getting a price, so the usual raise-or-fold logic doesn't apply the same way. Whether you complete, raise, or fold depends on your hand and the big blind's tendencies, but limping here is far from the mistake that open-limping in other positions is.
+A. Often, yes — in an unraised pot, completing the small blind is one of the most defensible limps. Your money is already half in, only the big blind can act behind you, and you're getting a price, so the usual raise-or-fold logic doesn't apply the same way. Whether you complete, raise, or fold depends on your hand and the big blind's tendencies, but limping here is far from the mistake that open-limping in other positions is. (Facing a raise, the small blind should 3-bet or fold rather than flat-call.)
 
 **Q. What is the difference between a limper and a calling station?**
 
@@ -181,7 +181,7 @@ A. Usually a "fish" — the general term for a weak, losing player — or a "don
 ## The 3 Things to Remember
 
 1. **Limping is calling the big blind instead of raising** — and open-limping, being first in, is almost always a mistake: you can't win the pot preflop, you give up initiative, and you mark yourself as an easy target.
-2. **But it's not *always* wrong.** Completing the small blind, over-limping speculative hands behind other limpers, and passive live or shallow-stacked spots are legitimate exceptions. The dogmatic "never limp" is an overstatement.
+2. **But it's not *always* wrong.** Completing the small blind, over-limping speculative hands behind other limpers, and passive live or short-stacked tournament spots are legitimate exceptions. The dogmatic "never limp" is an overstatement.
 3. **Default to raise-or-fold.** Reserve limping for those specific spots, and you'll stop handing strong players free chances to isolate and exploit you.
 
 Fixing your limping is one of the fastest upgrades in poker — it costs nothing to learn and immediately stops you leaking chips as the table's easiest mark. Pair "raise or fold" with a solid [starting-hand range](/en/blog/holdem-starting-hands-chart) and real [position](/en/blog/holdem-position-play) awareness, and you've quietly graduated out of the group everyone else is trying to beat.

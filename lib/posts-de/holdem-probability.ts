@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Bis zum River endest du mit einem Paar in 43,8% der Fälle, mit zwei Paaren in 23,5%, mit einem Flush in 3,0% und mit einem Full House in 2,6% – während ein Royal Flush nur etwa einmal in 31.000 Händen auftaucht.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-08-13",
-  masterUpdated: "2026-08-11",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "13 Min.",
   emoji: "🎲",
@@ -217,7 +217,7 @@ Mit einem Pocket Pair floppst du Quads **1 zu 408** – rechnest du ein, dass du
 
 **Q. Wie hoch ist die Wahrscheinlichkeit für einen Vierling?**
 
-A. 1 zu 4.165 (0,0240%) als ausgeteilte Fünf-Karten-Hand und 1 zu 595 (0,168%) bis zum River im Hold'em. Der übliche Weg dorthin führt über ein Pocket Pair – und selbst dann steht es 1 zu 408, die Quads direkt zu floppen.
+A. 1 zu 4.165 (0,0240%) als ausgeteilte Fünf-Karten-Hand und 1 zu 595 (0,168%) bis zum River im Hold'em. Ein *bestimmter* Vierling wie Vierling Asse ist weit unwahrscheinlicher – rund 1 zu 7.700 bis zum River. Der häufigste Weg dorthin (etwa 57% der Fälle) ist ein Ass in deiner Hand und die anderen drei auf dem Board; mit dem Pocket Pair beide restlichen Asse zu fangen ist seltener, alle vier auf dem Board noch seltener – mit einem Pocket Pair steht es allein fürs direkte Floppen der Quads 1 zu 408.
 
 **Q. Wie hoch ist die Wahrscheinlichkeit für ein Full House?**
 

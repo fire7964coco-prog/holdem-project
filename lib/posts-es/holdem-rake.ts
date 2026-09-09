@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "El rake es la pequeña tajada que la sala se lleva de cada bote por montar la partida — normalmente entre 2.5 y 10% hasta un tope de unos pocos dólares. La mayoría de salas no cobra nada si todos foldean antes del flop ('no flop, no drop'). Golpea más fuerte a los límites bajos y a las mesas cortas, y el rakeback devuelve una parte a los regulares.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-08-26",
-  masterUpdated: "2026-08-26",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🏦",
@@ -76,7 +76,7 @@ Aquí viene la parte que cambió mi forma de ver el juego. El porcentaje suena m
 
 **Una partida en vivo $1/$2.** Con un rake del 10% topado en $5 y unas 30 manos repartidas por hora, la mayoría de botes disputados llegan o rozan el tope. Una sola mesa concurrida puede pagar **$100+ por hora** a la ranura entre todos los jugadores. Ese dinero sale directo de las ganancias colectivas — es la razón por la que una mesa llena de jugadores más o menos parejos sangra fichas poco a poco hacia la casa.
 
-**La "trampa del rake" en límites bajos.** Esta es la moraleja que todo principiante debería oír. Como el tope apenas baja conforme bajas de límites, cuanto *más bajo* juegas, *mayor* es la tajada que el rake se lleva en proporción. Un ejemplo trabajado en NL50 online (ilustrativo, y varía según cuántas manos juegues):
+**La "trampa del rake" en límites bajos.** Esta es la moraleja que todo principiante debería oír. Como el tope apenas baja conforme bajas de límites, cuanto *más bajo* juegas, *mayor* es la tajada que el rake se lleva en proporción. Un ejemplo trabajado en NL50 online (ilustrativo — la cifra exacta se mueve según cuántos botes disputes y cómo aplique la sala su tope, no según cuántas manos registres):
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -174,7 +174,7 @@ A. Varía según la sala, los límites y el formato, así que siempre conviene m
 
 **Q. ¿Cómo puedes pagar menos rake en póker?**
 
-A. No puedes escapar del rake por completo en una partida rakeada, pero sí reducirlo. Consigue el mejor acuerdo de rakeback que puedas y elige salas con topes amables para el jugador. Subir de límites también rebaja el rake, porque un tope fijo es una parte menor de cada bote — pero da ese paso solo cuando tu bankroll aguante las rachas *y* sigas teniendo ventaja sobre un campo más duro; si no, los rivales te quitarán mucho más de lo que te quitaba el rake. Jugar menos botes pero más grandes en lugar de una avalancha de botes pequeños topados, evitar las mesas muy cortas — donde juegas muchas más manos por hora y pagas ciegas mucho más a menudo, así que entras en muchos más botes rakeados — y preferir las partidas de límites altos con rake por tiempo también rebajan tu rake efectivo. En puro coste, una partida casera sin rake es el póker más barato que existe: no se recorta nada del bote.
+A. No puedes escapar del rake por completo en una partida rakeada, pero sí reducirlo. Consigue el mejor acuerdo de rakeback que puedas y elige salas con topes amables para el jugador. Subir de límites también rebaja el rake, porque un tope fijo es una parte menor de cada bote — pero da ese paso solo cuando tu bankroll aguante las rachas *y* sigas teniendo ventaja sobre un campo más duro; si no, los rivales te quitarán mucho más de lo que te quitaba el rake. Jugar menos botes pero más grandes en lugar de una avalancha de botes pequeños también lo rebaja: el tope solo entra en los botes grandes, mientras que los pequeños pagan el porcentaje entero. Lo mismo con evitar las mesas muy cortas — donde juegas muchas más manos por hora y pagas ciegas mucho más a menudo, así que entras en muchos más botes rakeados — y con preferir las partidas de límites altos con rake por tiempo. En puro coste, una partida casera sin rake es el póker más barato que existe: no se recorta nada del bote.
 
 **Q. ¿Es ilegal cobrar rake?**
 

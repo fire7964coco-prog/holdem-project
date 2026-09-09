@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "O desempate segue uma ordem fixa: primeiro o tipo de mão, depois as cartas que formam a mão, depois os kickers do mais alto ao mais baixo. Mesmo par → ganha o primeiro kicker mais alto; cinco cartas idênticas → pote dividido. Os naipes nunca desempatam.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-08-26",
-  masterUpdated: "2026-07-19",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "⚖️",
@@ -184,7 +184,7 @@ A. Compare primeiro o par mais alto, depois o par mais baixo, depois o único ki
 
 **Q. A 5ª carta importa no poker?**
 
-A. Sim. Quando as primeiras quatro cartas das duas mãos são idênticas, a quinta carta decide o pote inteiro — o terceiro kicker de um par, a carta mais baixa de um flush, a carta lateral de uma quadra na mesa. Ela só deixa de importar quando as cartas da mesa superam sua carta da mão.
+A. Sim. Quando as primeiras quatro cartas das duas mãos são idênticas, a quinta carta decide o pote inteiro — o terceiro kicker de um par, o kicker único de dois pares, a carta mais baixa de um flush, a carta lateral de uma quadra na mesa. Ela só deixa de importar quando as cartas da mesa superam a carta lateral que você tem — às vezes porque a mesa inteira joga e suas cartas fechadas saem de cena, às vezes porque só uma carta fechada joga e a outra nunca conta: A♠ 3♠ contra A♦ 2♦ em A♥ K♣ Q♦ J♠ 9♥ é chop, os dois jogando A-A-K-Q-J.
 
 **Q. Dá para usar o ás como 1 no poker?**
 

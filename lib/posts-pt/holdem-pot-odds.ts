@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Para calcular pot odds, divida o valor que você precisa pagar pelo pote total depois do seu call. Pagar $50 num pote de $150 = 50 ÷ 200 = 25% — então você precisa de pelo menos 25% de equity para o call ser lucrativo.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-06",
-  masterUpdated: "2026-09-06",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🧮",
@@ -164,7 +164,7 @@ As derivações completas de cada projeto e mão feita estão na [tabela de prob
 Cometi cada um deles antes que me quebrassem. Fique de olho:
 
 :::card
-🧮 | Esquecer de incluir o call | A equity necessária é call ÷ pote *final* — conte as suas próprias fichas entrando, ou você vai superestimar todo preço
+🧮 | Esquecer de incluir o call | A equity necessária é call ÷ pote *final* — conte as suas próprias fichas entrando, ou você vai superestimar a equity de que precisa e foldar calls que deveria pagar
 🃏 | Contar outs contaminados | Um out de flush que também pareia a mesa pode dar a alguém um full house. Desconte os outs "sujos" antes de confiar no número
 🚀 | Usar mal a regra do 4 | ×4 só se aplica quando você vai ver as duas cartas de graça (all-in). Enfrentando uma aposta no turn, é ×2 — usar ×4 te convence a pagar calls perdedores
 💸 | Ignorar implied e reverse implied odds | Stacks profundos recompensam mãos de projeto; um projeto que não é para os nuts e fecha contra uma mão maior é uma armadilha, não um call
@@ -176,7 +176,7 @@ Cometi cada um deles antes que me quebrassem. Fique de olho:
 
 Estou com ==b:A♥ K♥== num flop ==Q♥ 7♥ 2♣== — o nut flush draw, 9 outs. O pote é $100, o vilão aposta $50. Minhas pot odds: estou recebendo 3 para 1, então preciso de **25%**. Com duas cartas por vir estou em ~35%, e mesmo contando só a próxima carta (19,1%) minhas implied odds são enormes — se cair uma copas, muitas vezes uma mão de top pair me paga pesado. ==g:Call fácil.==
 
-O turn é o 3♠ — um brick. O pote é $200 e o vilão dá all-in de $200 — uma aposta do tamanho do pote, então agora estou recebendo só 2 para 1 e preciso de **33%**. Mas com **uma carta restante meu flush é só 19,6%**. O preço direto diz fold; minhas implied odds agora são zero porque o vilão está all-in e não pode me pagar mais nada. ==r:Fold correto== — e o spot exato onde a "esperança" costumava me custar um stack.
+O turn é o 3♠ — um brick. O pote é $200 e o vilão dá all-in de $200 — uma aposta do tamanho do pote, então agora estou recebendo só 2 para 1 e preciso de **33%**. Mas com **uma carta restante meu flush é só 19,6%** (conto apenas as 9 copas — contra um all-in do tamanho do pote, parear o meu ás ou o meu rei muitas vezes ainda perde, então as overcards não são outs limpos). O preço direto diz fold; minhas implied odds agora são zero porque o vilão está all-in e não pode me pagar mais nada. ==r:Fold correto== — e o spot exato onde a "esperança" costumava me custar um stack.
 
 ---
 

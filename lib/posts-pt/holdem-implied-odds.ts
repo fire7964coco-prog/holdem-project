@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Odds implícitas são as fichas extras que você espera ganhar nas próximas streets quando o seu projeto acerta. Elas deixam você pagar com lucro um projeto que só as pot odds mandariam foldar — mas só se os stacks forem profundos e o adversário realmente for pagar você.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-04",
-  masterUpdated: "2026-08-26",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "💰",
@@ -54,7 +54,7 @@ Pot odds | Odds implícitas
 Só as fichas no pote agora | O pote agora + fichas que você vai ganhar nas próximas streets
 Um fato que você calcula com exatidão | Uma estimativa baseada nos stacks e no adversário
 Diz se o call se paga hoje | Diz se o call compensa ao longo da mão inteira
-Funciona até contra um all-in | Vale zero contra um all-in (não há mais apostas)
+Funciona até contra um all-in | Vale zero contra um all-in (no heads-up — não há mais apostas)
 :::
 
 A regra prática: **comece pelas pot odds.** Se a sua equity já bate o preço, pague — sem precisar de história nenhuma. Se o seu projeto *fica só um pouco abaixo* do preço, é aí que as odds implícitas viram o critério de desempate. E se o seu projeto fica longe demais do preço, as odds implícitas normalmente também não conseguem salvá-lo.
@@ -155,12 +155,12 @@ A lição: um projeto para os ==g:nuts== vale muito mais que o mesmo projeto par
 
 ## Quando NÃO confiar nas odds implícitas (erros comuns)
 
-**No momento em que seu adversário está all-in, suas odds implícitas são exatamente zero — não há mais dinheiro para ganhar, então você volta às pot odds puras.** Esse é o conceito mais mal usado do poker: "eu tinha odds implícitas" é a desculpa que os jogadores usam depois de um call que nunca se justificou.
+**No heads-up, no momento em que seu adversário está all-in suas odds implícitas são exatamente zero — não há mais dinheiro para ganhar dele, então você volta às pot odds puras.** (Em pote multiway, um terceiro jogador que ainda tem fichas pode manter um side pot vivo — mas o jogador all-in nunca mais te paga um centavo.) Esse é o conceito mais mal usado do poker: "eu tinha odds implícitas" é a desculpa que os jogadores usam depois de um call que nunca se justificou.
 
 Fique atento a estes leaks:
 
 :::card
-🚫 | Vilão está all-in | Sem próximas streets não há dinheiro futuro. Odds implícitas = 0. Use só as pot odds
+🚫 | Vilão está all-in | Sem próximas streets não há dinheiro futuro vindo dele. No heads-up, odds implícitas = 0 — use só as pot odds
 📉 | Stacks curtos atrás | Se só sobra meio pote para ganhar, "vou receber no river" é fantasia
 🙅 | Um adversário "que não paga" | Um nit que só aposta os nuts não vai pagar seu flush. Suas odds implícitas vivem e morrem na disposição dele de pagar
 🃏 | Uma mesa assustadora | Se a carta que completa seu projeto também congela a ação (quatro cartas do mesmo naipe na mesa, mesa pareada), ninguém te paga
@@ -200,7 +200,7 @@ A. Depende do seu projeto. Flush draws e sequências abertas dos dois lados prec
 
 **Q. As odds implícitas valem quando o adversário está all-in?**
 
-A. Não. Quando o adversário está all-in não há mais rodadas de aposta, então não há dinheiro adicional para ganhar — suas odds implícitas são zero. Nesse spot você precisa confiar só nas pot odds. Assumir odds implícitas contra um all-in é um erro comum e caro.
+A. Não — no heads-up, quando o adversário está all-in não há mais rodadas de aposta, então não há dinheiro adicional para ganhar dele — suas odds implícitas são zero. (Em pote multiway, um terceiro jogador que ainda tem fichas pode manter um side pot vivo; o próprio all-in nunca mais te paga nada.) Nesse spot você precisa confiar só nas pot odds. Assumir odds implícitas contra um all-in é um erro comum e caro.
 
 **Q. Como as odds implícitas funcionam no set mining?**
 

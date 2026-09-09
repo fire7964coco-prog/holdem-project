@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "De los 169 tipos de mano inicial, solo una pequeña franja superior — cerca del 15–20% de las manos que te reparten — es rentable para un principiante. Los pares grandes (AA–TT) y AK suben desde cualquier asiento; cuanto más tarde actúas, más abres tu rango — desde ~13% en UTG hasta ~43% en el botón (más amplio aún en 6-max). Empieza con una tabla simplificada y añade las tablas preflop GTO cuando el subir-o-foldear ya te salga automático.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-08-26",
-  masterUpdated: "2026-08-11",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🂡",
@@ -121,10 +121,10 @@ El núcleo del rango de UTG (un rango completo de ~13% se ensancha con parejas m
 - Premium del mismo palo: **AKs, AQs, AJs, KQs**
 - Premium de distinto palo: **AKo** (y a veces AQo)
 
-Manos que parecen fuertes pero deberían foldearse desde UTG:
+Manos que parecen fuertes pero desde UTG son fold o marginales:
 
 - **KJo, QJo, KTo** — demasiados escenarios dominados frente a los jugadores que igualan una apertura de UTG
-- **77, 88** — bien desde el botón, marginales desde UTG
+- **77, 88** — bien desde el botón; desde UTG quedan en el borde exterior del rango completo de ~13% de arriba, así que son las primeras parejas que caen cuando la mesa es dura
 - **Ases débiles del mismo palo (A2s–A7s)** — guárdalos para posición tardía
 
 ### Posición tardía (cutoff y botón): el rango más amplio
@@ -197,7 +197,7 @@ Las peores manos iniciales del póker no son morralla al azar como 7-2 — nadie
 | ==r:Ases débiles (A2o–A8o)== | Hacen pareja de segundas frente a ases mejores | "Tengo un as, tiene que ser buena" |
 | Conectores bajos de distinto palo (76o, 65o) | Rara vez ligan limpio, difíciles de jugar cuando lo hacen | "Podría hacer una escalera" |
 | Rey-basura de distinto palo (K3o, K4o) | Dominados por cualquier rey mejor | "Un rey es una carta grande" |
-| Dos cartas cualesquiera del mismo palo | Hacen color en el river solo ~6.5% de las veces (lo ligan en el flop ~0.8%) | "Pero son del mismo palo" |
+| Dos cartas cualesquiera del mismo palo | Hacen color en el river solo ~6.4% de las veces (lo ligan en el flop ~0.8%) | "Pero son del mismo palo" |
 
 ![Trampa del as débil en Texas Hold'em — A♣ 4♦ resaltado en rojo como mano perdedora, dominada por A♠ K♦ en dorado](/images/holdem-starting-hands-weak-ace-trap.webp "Los ases débiles parecen fuertes pero siguen dominados — foldéalos en preflop")
 
@@ -278,7 +278,7 @@ A. No al principio. Las tablas preflop GTO usan frecuencias mixtas diseñadas pa
 
 **Q. ¿Importa de verdad ser del mismo palo?**
 
-A. Ser del mismo palo añade en torno a 2 puntos porcentuales de equity sobre la misma mano de distinto palo (AKs tiene 67% contra una mano aleatoria; AKo, 65%) — significativo, pero no una razón para jugar una mano mala. Dos cartas del mismo palo hacen color en el river solo ~6.5% de las veces (y un proyecto de color ligado en el flop se completa cerca del 35% de las veces para el river). La basura del mismo palo sigue siendo basura.
+A. Ser del mismo palo añade en torno a 2 puntos porcentuales de equity sobre la misma mano de distinto palo (AKs tiene 67% contra una mano aleatoria; AKo, 65%) — significativo, pero no una razón para jugar una mano mala. Dos cartas del mismo palo hacen color en el river solo ~6.4% de las veces (y un proyecto de color ligado en el flop se completa cerca del 35% de las veces para el river). La basura del mismo palo sigue siendo basura.
 
 **Q. ¿Debería foldear siempre los pares servidos bajos como 22 o 33?**
 

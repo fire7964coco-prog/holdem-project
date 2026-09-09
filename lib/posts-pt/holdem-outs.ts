@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Um out é qualquer carta que sobrou no baralho e melhora sua mão para uma provável vencedora. Conte-os e converta: multiplique os outs por 4 no flop ou por 2 no turn para a % aproximada de acertar. Um projeto de flush são 9 outs ≈ 36% até o river.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-04",
-  masterUpdated: "2026-08-12",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🎯",
@@ -162,7 +162,7 @@ Esta é a seção que a maioria dos guias pula, e é a que de fato economiza din
 Três situações para treinar seu olho:
 
 :::card
-♠ | O flush que não é nut | Com 8♠7♠ em K♠9♠2♣, você tem 9 "outs" de espadas — mas se vier uma espada e um adversário tiver uma espada maior, você faz flush e ainda perde. Desconte seus outs quando você não está com projeto do nut flush
+♠ | O flush que não é nut | Com 8♠7♠ em K♠9♠2♣, você tem 9 "outs" de espadas — mas se vier uma espada e um adversário estiver no mesmo projeto de flush com uma espada mais alta, você faz flush e ainda perde. Desconte seus outs quando você não está com projeto do nut flush
 🂮 | O board pareado | Um projeto de flush num board tipo J♥8♥8♣ parece 9 outs limpos, mas o board já está pareado — um full house feito pode estar esperando, então algumas das suas cartas de flush já nascem mortas
 🃁 | Overcards contra força | Duas overcards (A-K em Q-8-3) contam como 6 outs no papel, mas se um aumento grande grita trinca ou dois pares, parear seu ás muitas vezes não é bom — conte 3, talvez 4, não 6
 :::

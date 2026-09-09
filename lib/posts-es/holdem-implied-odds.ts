@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Las odds implícitas son las fichas extra que esperas ganar en las calles siguientes cuando ligas tu proyecto. Te permiten pagar de forma rentable un proyecto que las pot odds por sí solas dirían foldear — pero solo si los stacks son profundos y tu rival de verdad va a pagarte.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-08-26",
-  masterUpdated: "2026-08-26",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "💰",
@@ -54,7 +54,7 @@ Pot odds | Odds implícitas
 Solo las fichas del bote ahora | El bote de ahora + las fichas que ganarás en calles siguientes
 Un hecho que puedes calcular con exactitud | Una estimación basada en los stacks y el rival
 Te dicen si el call se paga a sí mismo hoy | Te dicen si el call sale rentable en toda la mano
-Sirven incluso contra un all-in | Valen cero contra un all-in (no hay más apuestas)
+Sirven incluso contra un all-in | Valen cero contra un all-in (en mano a mano — no hay más apuestas)
 :::
 
 La regla práctica: **empieza por las pot odds.** Si tu equity ya supera el precio, paga — sin necesidad de cuentos. Si tu proyecto *se queda justo corto* del precio, ahí es cuando las odds implícitas se vuelven el desempate. Y si tu proyecto falla el precio por mucho, las odds implícitas normalmente tampoco pueden salvarlo.
@@ -155,12 +155,12 @@ La lección: un proyecto al ==g:nut== vale mucho más que el mismo proyecto a un
 
 ## Cuándo NO fiarse de las odds implícitas (errores comunes)
 
-**En el momento en que tu rival está all-in, tus odds implícitas son exactamente cero — no hay más dinero por ganar, así que vuelves a las pot odds puras.** Este es el concepto más abusado del póker: "tenía odds implícitas" es la excusa a la que recurren los jugadores tras un call que nunca estuvo justificado.
+**En mano a mano, en el momento en que tu rival está all-in tus odds implícitas son exactamente cero — ya no hay más dinero suyo por ganar, así que vuelves a las pot odds puras.** (En un bote multiway, un tercer jugador con fichas todavía puede mantener vivo un side pot — pero el que está all-in no te va a pagar ni un céntimo más.) Este es el concepto más abusado del póker: "tenía odds implícitas" es la excusa a la que recurren los jugadores tras un call que nunca estuvo justificado.
 
 Vigila estas fugas:
 
 :::card
-🚫 | El rival está all-in | Sin calles futuras no hay dinero futuro. Odds implícitas = 0. Usa solo pot odds
+🚫 | El rival está all-in | Sin calles futuras no hay dinero futuro suyo. En mano a mano, odds implícitas = 0 — usa solo pot odds
 📉 | Stacks cortos detrás | Si solo queda medio bote por ganar, "me pagarán en el river" es una fantasía
 🙅 | Un rival que no paga | Un nit que solo apuesta el nut no pagará tu color. Tus odds implícitas viven y mueren según su disposición a pagar
 🃏 | Una mesa peligrosa | Si la carta que completa tu proyecto también congela la acción (cuatro a color, mesa emparejada), nadie te paga
@@ -204,7 +204,7 @@ A. Depende de tu proyecto. Los proyectos de color y de escalera abierta necesita
 
 **Q. ¿Se aplican las odds implícitas cuando tu rival está all-in?**
 
-A. No. Cuando tu rival está all-in no hay más rondas de apuestas, así que no hay dinero adicional por ganar — tus odds implícitas son cero. En ese spot debes fiarte solo de las pot odds. Asumir odds implícitas contra un all-in es un error común y costoso.
+A. No — en mano a mano, cuando tu rival está all-in no hay más rondas de apuestas, así que no hay dinero adicional que ganarle a él: tus odds implícitas son cero. (En multiway, un tercer jugador con fichas todavía puede mantener vivo un side pot; el que está all-in nunca podrá pagarte más.) En ese spot debes fiarte solo de las pot odds. Asumir odds implícitas contra un all-in es un error común y costoso.
 
 **Q. ¿Cómo funcionan las odds implícitas en el set mining?**
 
@@ -223,7 +223,7 @@ A. Las odds implícitas van todas del dinero que queda por ganar, y los stacks p
 ## Las 3 cosas que debes recordar
 
 1. **La fórmula:** extra necesario = (call ÷ % de ligar) − (bote actual + call). Si de forma realista puedes ganar más que eso después, el call es bueno incluso cuando las pot odds dicen fold.
-2. **El chequeo de realidad:** las odds implícitas son una estimación que vive de stacks profundos y un rival que paga. Contra un all-in o un stack corto, son cero — vuelve a las pot odds.
+2. **El chequeo de realidad:** las odds implícitas son una estimación que vive de stacks profundos y un rival que paga. Contra un all-in son cero, y contra un stack corto queda muy poco — vuelve a las pot odds.
 3. **El espejo oscuro:** las reverse implied odds castigan los proyectos que no son al nut. Un proyecto al nut vale mucho más que el mismo proyecto a una mano segunda mejor.
 
 Domina esto y dejarás de quemar fichas en calls esperanzados mientras aún haces los rentables que nadie más se atreve a hacer. Desde aquí, fija los números crudos con la [tabla de odds y probabilidades del póker](/es/blog/holdem-probability), o mira exactamente con qué frecuencia liga cada proyecto en [drawing odds](/es/blog/holdem-drawing-odds).

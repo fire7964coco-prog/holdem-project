@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "O Main Event do APT Incheon 2026 foi vencido por Stephen Pang, de Hong Kong, que levou KRW 411.180.000 (~$293.700) após um acordo ICM a três, além do troféu do Leão em ouro 24K. O field marcou recorde com 1.393 entradas e premiação total de KRW 3.008.880.000. O vice foi Shoumin Zhang (China, KRW 366.500.000 / ~$261.785) e o terceiro Yifu He (EUA). O top 3 também ganhou vagas para o Main Event do APT Championship 2026 em Taipé (~$10.000 cada). Só estrangeiros (cidadãos coreanos sem residência no exterior não podem entrar). Seul fica a ~1 hora — na próxima parada, a viagem de poker e a viagem pela Coreia continuam sendo a mesma viagem.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-08-28",
-  masterUpdated: "2026-08-28",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🇰🇷",
@@ -37,7 +37,7 @@ A viagem de poker e a viagem pela Coreia são a mesma viagem. ==g:O Paradise Cit
 ---
 
 > **Resposta rápida**
-> **Campeão: Stephen Pang (Hong Kong) — KRW 411.180.000 (~$293.700), num field recorde de 1.393 entradas.** O APT Incheon 2026 rolou de ==**7 a 16 de ago**== no Paradise City Casino, em Incheon. O resort fica a ==g:10 min de shuttle grátis do Terminal 1 do Aeroporto de Incheon== — sai a cada 20 min, sem custo. Buy-in do Main Event: ==**KRW 2.500.000 (~$1.703)**==, $1M garantido. Os classificatórios online da Natural8 distribuíram ==g:**74 vagas no total**==. ==r:O Mega de $35 e o OnLive encerraram em 2 de agosto, e a última via (Step de $20 → Mega de $200) em 7 de agosto, o dia de abertura do festival==. ==g:**A classificação online já tinha acabado antes de o Main Event começar em 9 de agosto.**== O cassino é ==r:só para estrangeiros== — cidadãos coreanos sem residência no exterior não podem entrar.
+> **Campeão: Stephen Pang (Hong Kong) — KRW 411.180.000 (~$293.700), num field recorde de 1.393 entradas.** O APT Incheon 2026 rolou de ==**7 a 16 de ago**== no Paradise City Casino, em Incheon. O resort fica a ==g:10 min de shuttle grátis do Terminal 1 do Aeroporto de Incheon== — sai a cada 20 min, sem custo. Buy-in do Main Event: ==**KRW 2.500.000 (~$1.703)**==, $1M garantido. Os classificatórios online da Natural8 garantiram ==g:**74 vagas no total**==. ==r:O Mega de $35 e o OnLive encerraram em 2 de agosto, e a última via (Step de $20 → Mega de $200) em 7 de agosto, o dia de abertura do festival==. ==g:**A classificação online já tinha acabado antes de o Main Event começar em 9 de agosto.**== O cassino é ==r:só para estrangeiros== — cidadãos coreanos sem residência no exterior não podem entrar.
 
 ---
 
@@ -139,7 +139,7 @@ A Natural8 é a parceira online oficial do APT e roda a campanha de satellites =
 
 </div>
 
-:::note[**★Situação em 9 de agosto de 2026 — a classificação online acabou.** O Mega de $35 e os classificatórios OnLive Day 1 encerraram em 2 de agosto, e a última via, o **Step de $20 → Mega de $200**, fechou na **sexta-feira, 7 de agosto** — o dia de abertura do festival (o Main Event em si começou em 9 de agosto). As 52 + 22 = 74 vagas da tabela são o total já distribuído. As rotas ficam documentadas porque a mesma estrutura volta na próxima parada do APT.]:::
+:::note[**★Situação em 9 de agosto de 2026 — a classificação online acabou.** O Mega de $35 e os classificatórios OnLive Day 1 encerraram em 2 de agosto, e a última via, o **Step de $20 → Mega de $200**, fechou na **sexta-feira, 7 de agosto** — o dia de abertura do festival (o Main Event em si começou em 9 de agosto). As 52 + 22 = 74 vagas da tabela são o total garantido dessas rotas. As rotas ficam documentadas porque a mesma estrutura volta na próxima parada do APT.]:::
 
 **Como era o caminho de steps — a mesma estrutura volta na próxima etapa da APT:**
 
@@ -237,12 +237,12 @@ Você pode ficar no hotel do cassino a viagem toda — jogue suas sessões, durm
 | ==g:**Shuttle grátis → T1 → AREX Express**== | ==g:Estação de Seul== | ==g:~53 min== | ==g:~₩11.000 (~$8)== |
 | Shuttle grátis → T1 → AREX All-Stop | Hongdae (Univ. Hongik) | ~70 min | ~₩4.750 (~$3,50) |
 | Ônibus do Aeroporto 6001 | Myeongdong / City Hall | ~60 min | ~₩17.000 (~$13) |
-| Ônibus do Aeroporto 6015 | Gangnam / Yangjae | ~70 min | ~₩17.000 (~$13) |
+| Ônibus do Aeroporto 6015 | Myeongdong / Chungjeongno / Gongdeok / Mapo | varia com o trânsito | ~₩17.000 (~$13) |
 | Táxi direto | Hongdae / Myeongdong | ~50–60 min | ~$35–50 |
 
 </div>
 
-==g:Duas opções de AREX a partir do T1==: o **Express** (sem paradas até a Estação de Seul em 43 min, ₩11.000 — depois baldeie pra Linha 2 ou 4) ou o **All-Stop** (direto até a Estação Hongdae/Universidade Hongik sem baldeação, ~60 min, ₩4.750). Os trens All-Stop saem a cada 6–10 minutos, das 5h à meia-noite. Os ônibus do aeroporto vão direto pra Myeongdong e Gangnam, se você preferir.
+==g:Duas opções de AREX a partir do T1==: o **Express** (sem paradas até a Estação de Seul em 43 min, ₩11.000 — depois baldeie pra Linha 1 ou 4; pra Linha 2, pegue o All-Stop até a Universidade Hongik) ou o **All-Stop** (direto até a Estação Hongdae/Universidade Hongik sem baldeação, ~60 min, ₩4.750). Os trens All-Stop saem a cada 6–10 minutos, das 5h à meia-noite. Os ônibus do aeroporto vão direto pra Myeongdong, se você preferir.
 
 Aqui está o que fazer com 1–3 dias livres:
 
