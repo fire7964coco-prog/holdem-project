@@ -1,3 +1,43 @@
+## 2026-09-09 (8) — **🇯🇵 ja 회차 7(횡단 표기·구조 소급 16편+) 머지 + 헤드 요청 14건 판정 · 🇹🇼 zh-hant 회차 6(용어 6편) 머지 + 헤드 요청 26~31 판정 — 세 레인 42/42 완주** (Fable · 헤드 · 커밋 `e47a3f2f`)
+
+사장님 「zh-hant 회차 6 끝났어, 머지해」 → 이어서 「ja 회차 7 끝났어, 머지해」. 두 머지를 한 빌드·배포로 닫았다.
+
+**머지**: 🇹🇼 레인 `c48b4074`(A)·`aca525dc`(B+C)·`3a93502a`(마감검증)·`c3f6d269` → **ff `a59510ff`** · 🇯🇵 레인 `fbed58e0`(A·B)·`f24c5cdc`(C)·`7e2c90d8` → **ff `92ec21e1`** · 둘 다 충돌 0(레인이 lane:sync로 main을 먼저 받아 둠) · 공용 파일 0. 헤드 판정 **`e47a3f2f`** · sitemap lastmod · 편수 불변 70 + 525 · 빌드 exit 0 ×2.
+
+**헤드 실측**: `audit:hard --locale=zh-hant` **57/57 🔴 0 · 🟠 2**(C2) · `--locale=ja` **57/57 🔴 0 · 🟠 2** · `check:drift` ja 🔴 0 · zh-hant 🔴 5(= 오늘 GPT 회차가 고친 EN 5편 — 대기열 39 예상 신호) · `check:mirror-pair` 31 → **32**(+1 = glossary 「1bb」 · 레인 §4-F 「정상」 판정 · intentional-diffs 등재) · hangul·cjk·faq·intl-links 0 · 「ます、」 0.
+**라이브**: zh-hant **6/6 ✅**(`page.content()` → `<script>` 제거 후 DOM · 200 · 직답 `快速解答` 42/42 소스 일치 · 간체 전용자·구 표기·`**`·`==` 0) · ja **26/26 ✅**(ja 21편 200 · 직답 `先に結論` 소스 일치 · 「順番外」·「スート → ストレート → ペア」·`#pot-odds`·「ます、」·`**`·`==` 0 + EN 5편 새 문안 바늘 전건·구형 0).
+
+### 🇹🇼 zh-hant 회차 6 헤드 요청 판정 (§5-26~31)
+| # | 판정 |
+|---|---|
+| 26 이미지 `holdem-cooler-vs-badbeat.webp` 배너 「Set of Kings beats Aces — a cooler」 | **대기열 42(이미지 정밀화 · 낮은 우선)** — 이미지를 직접 열어 봤다(AA vs KK · 보드 K♠7♦2♣8♥3♠ · §13 KK 승 ✓). 배너는 «翻牌에서 셋 vs 오버페어 올인 = 교과서 쿨러»로도 읽혀 **평면적 오류로 확정하지 않는다**. 레인 지적(프리플랍 올인이면 爆冷門)도 참이라 **모호함**이 결함 — 재렌더 시 「cooler on the flop / bad beat if all-in preflop」로 정밀화. 캡션은 정확해 손대지 않음 |
+| 27 EN-먼저 7(bad-beat set-over-set 전칭 · Mabuchi 카드 순서 · 「~65%」는 성사율 · rake bb/100 · small capped · straddle 15–20% 앵커 · zh 유효스택 서술) | **대기열 39 합류** — 27-3 「~65%」는 zh 회차 6 §5-23 ①·판단 대기 8과 **같은 건**(세 레인 수렴) |
+| 28 intentional-diffs 3건(rake H2 +1 · glossary 「1bb」 · glossary H2 「術語」) | ✅ **등재**(`docs/locale-intentional-diffs.md` 2026-09-09 행 3) |
+| 29 태그 쌍 `德州撲克牌型機率`↔`牌型機率` | 대기열 32(헤드 판정 6건)에 이미 있음 — 그대로 |
+| 30 표기 사본(爆冷·跟注站·尼特 계열) | 로케일별 자기 정본이라 «전 로케일 상속» 안 함 — zh 거울쌍만 §4-F에서 정상 판정됨. 조치 없음 |
+| 31 `抽水` 단독 태그 제외 | ✅ **지지**(대만 SERP 10/10 양수기 · `德州撲克抽水` 보유) |
+
+### 🇯🇵 ja 회차 7 헤드 요청 판정 (§5-E 1~14)
+| # | 판정 | 어디 |
+|---|---|---|
+| 1 「표기 판정은 도구 하나·조회 하나로 끝내지 마라」 | ✅ `rakko-playbook` §9 **함정 17** | `e47a3f2f` |
+| 2 「브리프의 전제도 실측하라」 | ✅ 프로토콜 §3 ③-0 신설(결함 기록엔 해소 커밋을 같은 줄에) | `e47a3f2f` |
+| 3 pre-commit 훅 커밋↔머지 순환 | ✅ **머지 커밋(MERGE_HEAD) 예외** 추가 · 셀프테스트 5/5 유지 | `e47a3f2f` |
+| 4 all-in tldr 사이드팟 «획득 불가» 반쪽 정정 | ✅ **EN-먼저 이행** — EN L8 「a side pot that only the players who covered them can win」 + ja tldr. 6로케일은 39 | `e47a3f2f` |
+| 5 hand-rankings 스캔 순서 「suits」 ↔ reading-the-board 「flush」 | ✅ **EN 2자리 + ja 5자리를 flush로 통일**(EN 자체가 갈려 있었다). 6로케일은 39 | `e47a3f2f` |
+| 6 EN pot-odds 「overrate every price」 방향 | ✅ EN 「overstate the equity you need and fold calls you should make」(ja 기이행) | `e47a3f2f` |
+| 7 「7♠（7ハイ）」 오독 | ✅ **8로케일 전부** 「7하이 **스트레이트 플러시**」 명시(오늘 헤드가 쓴 문장이라 즉시) | `e47a3f2f` |
+| 8 ×4 표 행 라벨 조건 없음 · 직답 174자 | ✅ EN 행 「seeing both remaining cards with no further bet」 + ja 행 · ja 직답 축약 | `e47a3f2f` |
+| 9 `## FAQ —` 잔여 3편 · 거울쌍 갈림 | **판정 = 「よくある質問 —」**(ept 선례 · ja 라벨) → 회차 8이 tvc·wpt 닫음 · japan-guide는 대상 밖이라 헤드가 다음 회차에 | 진행 파일 |
+| 10 japan-guide 사이드이벤트 자기모순(L109↔L123·L327) | ✅ L109를 「施設利用料・ドリンク代 + 各イベントの参加費(¥3,000〜¥200,000)」로 — 「티켓 예외」 헤지 삭제(축 오류 인정) | `e47a3f2f` |
+| 11 probability 죽은 앵커 `#pot-odds` | ✅ `/ja/blog/holdem-pot-odds` 글 링크로 | `e47a3f2f` |
+| 12 `ja-notation.md` 로케일 공통 자산 등재 | ✅ 프로토콜 7-E 자산 행에 추가 | `e47a3f2f` |
+| 13 レート 축 착수 | 회차 8 대상(실측 완료 170:10) — 레인 몫 | 진행 파일 |
+| 14 sitemap | ✅ 빌드 | `e47a3f2f` |
+
+🔴 **EN 마스터가 움직인 편(대기열 39 전파 대상 추가)**: `holdem-hand-rankings`(flush 스캔 순서 2자리) · `holdem-all-in-rules`(tldr 사이드팟) · `holdem-pot-odds`(L166 방향) · `texas-holdem-rules-for-beginners`(×4 행 라벨) · `holdem-reading-the-board`(7♠ 명시 — 8로케일 완료). MA-123 요청 1 통지 = MB-021.
+회신 = **MB-020**(zh-hant) · **MB-021**(ja). 회차 마감 = `lane:sync --apply`.
+
 ## 2026-09-09 (6) — **GPT 교차검수 팩 A·B·C(ja 회차 5 토너먼트 9편) 전건 원문 재판정 · 이행 — 59건 중 채택 57(부분 포함) · 기각 1 · 결재 대기 1 · EN 동형 14는 EN도 정정** (Fable · 헤드 · 커밋 `af6ca275`)
 
 사장님 「gpt 검수보고서 완료됨」. C 팩(대회 · 44KB · 17:04 도착)으로 3팩이 갖춰져 «전건 원문 재판정» 회차를 열었다. ja 토너먼트 9편 **동결 해제**.
