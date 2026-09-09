@@ -724,7 +724,7 @@ export const ZH_HANT_CLUSTERS: PillarCluster[] = [
     nodes: [
       { slug: "holdem-tournament-vs-cash-game", label: "錦標賽 vs 現金桌" },
       { slug: "holdem-icm", label: "ICM 基礎" },
-      { slug: "holdem-bubble", label: "泡泡期" },
+      { slug: "holdem-bubble", label: "泡泡時間" },
       { slug: "holdem-short-stack", label: "短碼" },
       { slug: "apt-incheon-2026-guide", label: "APT Incheon 2026", group: "Live Events" },
       { slug: "korea-poker-marathon-2026", label: "Korea Marathon 2026", group: "Live Events" },

@@ -185,7 +185,7 @@ A. 不會。德州撲克裡花色不分大小，所以五張點數相同的牌�
 
 **Q. 玩家可以自己講好 Chop 嗎？（合意分池）**
 
-A. 可以，但要看場合。在攤牌時的分池是自動的——牌一樣，荷官就分。而玩家之間主動「講好 Chop」通常出現在**錦標賽**的泡泡圈或決賽桌上，也就是剩下的玩家**談分**獎金池，多半依籌碼量或 ICM 分。這種談分需要**全員同意**才成立，現場也常要樓面（floor）確認。牌局進行中的一手牌，是不能私下講好分掉的。
+A. 可以，但要看場合。在攤牌時的分池是自動的——牌一樣，荷官就分。而玩家之間主動「講好 Chop」通常出現在**錦標賽**的泡泡時間或決賽桌上，也就是剩下的玩家**談分**獎金池，多半依籌碼量或 ICM 分。這種談分需要**全員同意**才成立，現場也常要樓面（floor）確認。牌局進行中的一手牌，是不能私下講好分掉的。
 
 **Q. 超過兩個人可以一起分池嗎？**
 
@@ -235,7 +235,7 @@ A. 不是——同一個字，兩回事。攤牌時的分池是自動的：牌�
   <a href="/zh-hant/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">錦標賽</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">錦標賽完整指南</div>
-    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">泡泡圈與決賽桌的談分（Chop）怎麼談</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">泡泡時間與決賽桌的談分（Chop）怎麼談</div>
   </a>
 </div>
 `.trim(),
