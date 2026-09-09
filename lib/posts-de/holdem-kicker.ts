@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Was ist ein Kicker beim Poker – Regeln, Zählen & das dominierte Ass",
   seoTitle: "Was ist ein Kicker beim Poker? Die Karte, die Pots gewinnt",
   desc: "Der Kicker ist die Beikarte, die beim Poker Gleichstände bricht – welche Hände einen haben und wie viele, warum A9 gegen AK verliert und die Vierling-Ausnahme.",
-  tldr: "Ein Kicker ist die höchste Beikarte, die nicht zu deiner eigentlichen Hand gehört – er bricht den Gleichstand, wenn zwei Spieler denselben Rang teilen. Ein Paar nutzt 3 Kicker, Zwei Paare 1, Drilling 2; Straße, Flush und Full House haben keinen. Deshalb schlägt AK das AQ, wenn das Board ein Ass pairt.",
+  tldr: "Ein Kicker ist die höchste Beikarte, die nicht zu deiner eigentlichen Hand gehört – er bricht den Gleichstand, wenn zwei Spieler denselben Rang teilen. Ein Paar nutzt 3 Kicker, Zwei Paare 1, Drilling 2; Straße, Flush, Full House und Straight Flush haben keinen. Deshalb schlägt AK das AQ, wenn das Board ein Ass pairt.",
   category: "hand-rankings",
   date: "2026-07-08",
   updated: "2026-09-09",
@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Zwei Spieler decken beim Showdown A-K und A-Q auf, ein Ass liegt auf dem Board – der König als Kicker entscheidet, wer den Pot gewinnt",
   tags: ["kicker poker", "poker kicker", "was ist ein kicker beim poker", "kicker regeln", "beikarte poker", "hat ein flush einen kicker", "dominiertes ass", "kicker karte", "hat ein vierling einen kicker"],
   content: `
-Die Hand, die mir endlich beigebracht hat, was ein Kicker ist, hat mich ein volles Buy-in gekostet. Ich hielt ==b:A♠ 9♣==, das Board pairte mein Ass, und ich bin all-in gegangen, weil ich dachte, Top Pair sei Gold wert. Er drehte ==b:A♥ K♦== um – dasselbe Paar Asse, aber sein König schlug meine Neun, und der Pot rutschte auf seine Seite. Ich hatte nicht gegen eine bessere *Hand* verloren, sondern gegen eine bessere ==Beikarte.== Diese Beikarte ist der Kicker, und er entscheidet mehr Pots, als jeder Anfänger ahnt.
+Die Hand, die mir endlich beigebracht hat, was ein Kicker ist, hat mich ein volles Buy-in gekostet. Ich hielt ==b:A♠ 9♣==, das Board pairte mein Ass, und ich bin all-in gegangen, weil ich dachte, Top Pair sei Gold wert. Er drehte ==b:A♥ K♦== um – dasselbe Paar Asse, aber sein König war der bessere Kicker, und der Pot rutschte auf seine Seite. Ich hatte nicht gegen eine bessere *Hand* verloren, sondern gegen eine bessere ==Beikarte.== Diese Beikarte ist der Kicker, und er entscheidet mehr Pots, als jeder Anfänger ahnt.
 
 ==Ein Kicker ist der Tiebreaker, der im Poker selbst eingebaut ist – wenn zwei Spieler denselben Rang halten, gewinnt die höchste übrige Karte.== Die meisten Leitfäden geben dir eine Ein-Zeilen-Definition und ein AK-gegen-AQ-Beispiel. Dieser hier gibt dir das ganze Bild: genau welche Hände einen Kicker haben (und wie viele), die eine Ausnahme, die alle falsch machen, und warum „das Board spielen“ bedeutet, dass dein Kicker plötzlich überhaupt keine Rolle mehr spielt.
 
@@ -30,7 +30,7 @@ Wo ein Kicker ins größere Bild der [Pokerhände-Reihenfolge](/de/blog/holdem-h
 :::stripe
 3 | Kicker in einer Hand mit einem Paar
 1 | Kicker bei Zwei Paaren (und Vierling)
-0 | Kicker bei einer Straße, einem Flush oder Full House
+0 | Kicker bei einer Straße, einem Flush, Full House oder Straight Flush
 :::
 
 > **Kurze Antwort**
@@ -110,7 +110,7 @@ Dasselbe Paar, also vergleiche die Kicker von oben nach unten: dein ==g:K schlä
 
 ## Wann spielt dein Kicker gar nicht mit? Das Board spielen
 
-**Wenn die fünf Gemeinschaftskarten bereits die bestmögliche Hand bilden und deine Hole Cards sie nicht verbessern können, „spielst du das Board“ – und es gibt überhaupt keinen Kicker.** Alle, die es ebenfalls nicht verbessern können, nutzen die identischen fünf Karten – und wenn das niemand kann, wird der Pot geteilt.
+**Wenn deine Hole Cards das, was die fünf Gemeinschaftskarten bereits ergeben, nicht verbessern können, „spielst du das Board“ – und deine Beikarten entscheiden nichts mehr.** Alle, die es ebenfalls nicht verbessern können, nutzen die identischen fünf Karten – und wenn das niemand kann, wird der Pot geteilt.
 
 Das Board ist ==b:10♠ J♦ Q♣ K♥ A♠== – eine fertige Zehn-bis-Ass-Straße (Broadway), in gemischten Farben, sodass kein Flush möglich ist.
 
@@ -208,7 +208,7 @@ A. Eine Menge. Weil alle die Gemeinschaftskarten teilen, machen Spieler häufig 
 ## Die 3 Dinge zum Merken
 
 1. **Kicker = Beikarte, nur Tiebreaker.** Er entscheidet Gleichstände zwischen gleichen Rängen und schlägt nie eine höherrangige Hand.
-2. **Kombination + Kicker = fünf.** Ein Paar hat 3 Kicker, Drilling 2, Zwei Paare und Vierling 1; Straße, Flush und Full House haben keinen.
+2. **Kombination + Kicker = fünf.** Ein Paar hat 3 Kicker, Drilling 2, Zwei Paare und Vierling 1; Straße, Flush, Full House und Straight Flush haben keinen.
 3. **Kicker entscheiden echtes Geld.** Dominanz (A9 vs AK) und das Board spielen laufen beide auf den Kicker hinaus – wähle Hände mit starken Beikarten und wisse, wann deine tot ist.
 
 Hast du den Kicker richtig verstanden, hört eine ganze Kategorie von „Wie habe ich das verloren?“-Händen auf, ein Rätsel zu sein. Von hier aus schau dir die komplette [Pokerhände-Reihenfolge](/de/blog/holdem-hand-rankings) an oder die vollständigen [Tiebreaker-Regeln](/de/blog/holdem-tiebreak-rules) für jeden Handtyp.

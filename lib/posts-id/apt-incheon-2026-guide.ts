@@ -343,9 +343,11 @@ Berikut yang bisa dilakukan dengan 1–3 hari luang:
 | Transportasi Seoul (kartu T-money) | $5–$10/hari |
 | Buy-in APT Main Event | ==**~$1.703**== |
 | Side event hemat (Mini Main, Ultra Stack) | ==g:**$270–$610**== |
-| **Estimasi total trip poker 7 hari** | ==**$2.500–$5.000 + buy-in poker**== |
+| **Estimasi total trip poker 7 hari** | ==**~$800–$4.200 + buy-in poker**== |
 
 </div>
+
+*Batas bawah = penerbangan Asia + hotel kelas menengah di Seoul; batas atas = penerbangan jarak jauh + hotel Paradise City (7 malam, dari baris-baris di atas).*
 
 Dibanding EPT Barcelona (Main ~€5.300) atau WPT Australia (Main ~AUD $5.000), ==g:APT Incheon memberi Anda turnamen GTD $1 juta dengan buy-in di bawah $2.000== — dan salah satu kota terbaik di Asia sebagai latarnya.
 

@@ -105,7 +105,7 @@ Aquí tienes la tabla de manos iniciales de póker para una mesa estándar de 9-
 
 La regla: ==cuanto más tarde actúas, más manos puedes abrir de forma rentable==. Como el botón siempre actúa último postflop, es el asiento más valioso del póker.
 
-Explora la cuadrícula completa con código de colores — cada una de las 169 manos por posición:
+Mira cómo se ensancha el rango de apertura asiento a asiento — UTG, MP, CO y BTN (la cuadrícula completa de 13×13 con las 169 manos está en la herramienta de tabla de manos enlazada más abajo):
 
 :::rangechart:::
 
@@ -258,7 +258,7 @@ A. La pareja de ases (AA) es la mejor mano inicial del póker. En preflop, los a
 
 **Q. ¿Cuáles son buenas manos iniciales en el póker?**
 
-A. Las buenas manos iniciales del póker son los pares premium (AA–TT), los ases grandes (AK, AQ) y los broadways fuertes del mismo palo (KQs, AJs) — más o menos el 15–20% superior de todas las manos. Las manos especulativas como los pares bajos y los conectores del mismo palo solo son buenas desde posición tardía.
+A. Las buenas manos iniciales del póker son los pares premium (AA–TT), los ases grandes (AK, AQ) y los broadways fuertes del mismo palo (KQs, AJs) — el núcleo del ~15–20% de las manos repartidas que juega un principiante sólido (estos grupos premium por sí solos son solo cerca del 5% de todas las manos iniciales). Las manos especulativas como los pares bajos y los conectores del mismo palo solo son buenas desde posición tardía.
 
 **Q. ¿Cuántas manos iniciales hay en el póker?**
 

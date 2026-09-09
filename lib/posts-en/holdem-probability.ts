@@ -177,7 +177,7 @@ That's the moment all the numbers pay off — but **match the number to the stre
 The two rarest hands are the ones players brag about for years — with good reason.
 
 - **Royal flush:** as a dealt five-card hand, ==1 in 649,740==. Playing Hold'em to the river, it improves to about 1 in 30,940 because you're choosing your best five from seven cards. Either way, most players go *years* between them.
-- **Straight flush:** about 1 in 72,193 as a five-card hand. Still a once-a-year sighting for most.
+- **Straight flush:** about 1 in 72,193 as a five-card hand (about 1 in 3,590 by the river in Hold'em). Still a once-a-year sighting for most.
 
 Why so rare? A royal flush is exactly **one specific run of cards in one specific suit** — four ways to make it in the entire deck versus 1,302,540 ways to make a plain high card. Rarity is the whole reason it sits at the top of the rankings.
 

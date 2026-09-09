@@ -106,7 +106,7 @@ Aqui está a tabela de mãos iniciais do poker pra uma mesa 9-max padrão — o 
 
 A regra: ==quanto mais tarde você age, mais mãos você pode abrir com lucro==. Como o button sempre age por último no pós-flop, é o assento mais valioso do poker.
 
-Compare o tamanho de cada range de abertura lado a lado, do UTG ao button:
+Compare o tamanho de cada range de abertura, do UTG ao button:
 
 :::rangechart:::
 
@@ -259,7 +259,7 @@ A. Pocket ases (AA) é a melhor mão inicial do poker. No pré-flop, os ases ven
 
 **Q. Quais são as boas mãos iniciais do poker?**
 
-A. As boas mãos iniciais do poker são pares premium (AA–TT), ases grandes (AK, AQ) e broadways suited fortes (KQs, AJs) — o núcleo dos ~15–20% de mãos que você joga numa sessão (essas mãos sozinhas são só cerca de 5% do total). Mãos especulativas como pares pequenos e suited connectors só são boas de posição tardia.
+A. As boas mãos iniciais do poker são pares premium (AA–TT), ases grandes (AK, AQ) e broadways suited fortes (KQs, AJs) — o núcleo dos ~15–20% das mãos recebidas que um iniciante sólido joga (essas mãos sozinhas são só cerca de 5% de todas as mãos iniciais). Mãos especulativas como pares pequenos e suited connectors só são boas de posição tardia.
 
 **Q. Quantas mãos iniciais existem no poker?**
 

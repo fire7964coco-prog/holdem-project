@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "What Is a Kicker in Poker — Rules, Counting & the Dominated Ace",
   seoTitle: "What Is a Kicker in Poker? The Side Card That Wins Pots",
   desc: "A kicker is the side card that breaks ties in poker — which hands have one and how many, why A9 loses to AK, and the quads exception most guides get wrong.",
-  tldr: "A kicker is the highest side card that isn't part of your main hand — it breaks ties when two players share the same rank. One pair uses 3 kickers, two pair 1, trips 2; straights, flushes, and full houses have none. It's why AK beats AQ when the board pairs an ace.",
+  tldr: "A kicker is the highest side card that isn't part of your main hand — it breaks ties when two players share the same rank. One pair uses 3 kickers, two pair 1, trips 2; straights, flushes, full houses, and straight flushes have none. It's why AK beats AQ when the board pairs an ace.",
   category: "hand-rankings",
   date: "2026-07-08",
   updated: "2026-09-09",
@@ -16,7 +16,7 @@ export const POST: Post = {
   imageAlt: "Two players turning over A-K and A-Q at showdown with an ace on the board — the king kicker deciding who wins the pot",
   tags: ["poker kicker", "what is a kicker in poker", "kicker rules", "does a flush have a kicker", "playing the board", "dominated ace", "kicker card", "does four of a kind have a kicker"],
   content: `
-The hand that finally taught me what a kicker is cost me a full buy-in. I had ==b:A♠ 9♣==, the board paired my ace, and I shoved thinking top pair was gold. He flipped ==b:A♥ K♦== — same pair of aces, but his king outranked my nine, and the pot slid his way. I hadn't lost to a better *hand*; I'd lost to a better ==side card.== That side card is the kicker, and it decides more pots than any beginner realizes.
+The hand that finally taught me what a kicker is cost me a full buy-in. I had ==b:A♠ 9♣==, the board paired my ace, and I shoved thinking top pair was gold. He flipped ==b:A♥ K♦== — same pair of aces, but his king outkicked me, and the pot slid his way. I hadn't lost to a better *hand*; I'd lost to a better ==side card.== That side card is the kicker, and it decides more pots than any beginner realizes.
 
 ==A kicker is the tiebreaker built into poker itself — when two players hold the same rank, the highest leftover card wins.== Most guides give you a one-line definition and an AK-vs-AQ example. This one gives you the full picture: exactly which hands have a kicker (and how many), the one exception everyone gets wrong, and why "playing the board" means your kicker suddenly doesn't matter at all.
 
@@ -29,7 +29,7 @@ Where a kicker fits in the bigger picture of [poker hand rankings](/en/blog/hold
 :::stripe
 3 | Kickers in a one-pair hand
 1 | Kicker in two pair (and quads)
-0 | Kickers in a straight, flush, or full house
+0 | Kickers in a straight, flush, full house, or straight flush
 :::
 
 ---
@@ -106,7 +106,7 @@ Same pair, so compare kickers top-down: your ==g:K beats their Q.== You win, A-A
 
 ## Playing the Board: When Your Kicker Doesn't Play
 
-**If the five community cards already make the best possible hand and your hole cards can't improve on it, you're "playing the board" — and there is no kicker at all.** Everyone who can't improve on it uses the identical five cards — and if nobody can, the pot is split.
+**If your hole cards can't improve on what the five community cards already make, you're "playing the board" — and your side cards stop deciding anything.** Everyone who can't improve on it uses the identical five cards — and if nobody can, the pot is split.
 
 The board is ==b:10♠ J♦ Q♣ K♥ A♠== — a made ten-to-ace straight (Broadway), in mixed suits so no flush is possible.
 
@@ -204,7 +204,7 @@ A. A lot. Because everyone shares the community cards, players frequently make t
 ## The 3 Things to Remember
 
 1. **Kicker = side card, tiebreaker only.** It settles ties between equal ranks and never beats a higher-ranked hand.
-2. **Combination + kickers = five.** One pair has 3 kickers, trips 2, two pair and quads 1; straights, flushes, and full houses have none.
+2. **Combination + kickers = five.** One pair has 3 kickers, trips 2, two pair and quads 1; straights, flushes, full houses, and straight flushes have none.
 3. **Kickers decide real money.** Domination (A9 vs AK) and playing the board both come down to the kicker — pick hands with strong side cards and know when yours is dead.
 
 Get the kicker right and a whole category of "how did I lose that?" hands stops being a mystery. From here, see the full [poker hand rankings](/en/blog/holdem-hand-rankings) order, or the complete [tie-breaking rules](/en/blog/holdem-tiebreak-rules) for every hand type.

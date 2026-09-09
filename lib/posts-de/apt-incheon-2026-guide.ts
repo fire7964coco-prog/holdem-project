@@ -341,9 +341,11 @@ So füllst du 1–3 freie Tage:
 | Seoul-Nahverkehr (T-money-Karte) | $5–$10/Tag |
 | APT-Main-Event-Buy-in | ==**~$1.703**== |
 | Günstige Side Events (Mini Main, Ultra Stack) | ==g:**$270–$610**== |
-| **Geschätzte Gesamtkosten 7-Tage-Pokerreise** | ==**$2.500–$5.000 + Poker-Buy-ins**== |
+| **Geschätzte Gesamtkosten 7-Tage-Pokerreise** | ==**~$800–$4.200 + Poker-Buy-ins**== |
 
 </div>
+
+*Untergrenze = Flug innerhalb Asiens + Mittelklassehotel in Seoul; Obergrenze = Langstreckenflug + Hotel Paradise City (7 Nächte, aus den Zeilen oben).*
 
 Verglichen mit der EPT Barcelona (~€5.300 Main) oder WPT Australia (~AUD $5.000 Main) gibt dir ==g:die APT Incheon ein $1M-GTD-Turnier zum Buy-in unter $2.000== – und eine der besten Städte Asiens als Kulisse.
 

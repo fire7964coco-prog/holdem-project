@@ -65,7 +65,7 @@ Two players make the exact same five-card hand — same ranks, even if their hol
 Both make the full house KKK-QQ from the board plus a king. ==r:The suits of those kings don't matter.==
 
 ### 2. The board plays
-The five community cards are already the strongest hand for everyone left — that's the 8-8-8-A-K pot from my story. It's the single most common split, so it gets its own section below.
+The five community cards are already the strongest hand for everyone left — that's the 8-8-8-A-K pot from my story. It's common enough to get its own section below.
 
 ### 3. The same straight
 Two straights with the same top card tie, regardless of suit. On a board of 7♣ 6♦ 5♥ K♠ 2♣, both A's 9♠ 8♠ and B's 9♥ 8♦ make 9-8-7-6-5 — same height, so **split**.
@@ -90,7 +90,7 @@ That's my 8-8-8-A-K hand: my J♠ 10♥ and his 5♣ 2♦ both played the board'
 
 **And the part that matters most at the table: your hand only wins if you turn it face up.** A mucked hand is dead even when it would have chopped — when you're playing the board you must still show your hole cards face up, or you forfeit your share of the pot (WSOP live-action Rule 172; the WSOP tournament rules repeat it in Rule 75). Who shows first and how the sequence runs is covered in the [showdown rules](/en/blog/holdem-showdown-rules).
 
-:::tip[If the board plays and someone bets the river, **folding on autopilot is the mistake**. When nothing can beat the board the chop is certain, and calling still brings back your share of everything that was already in the pot (half of it heads-up) — folding hands that share away for free. When the board *can* be beaten, run the frequency: heads-up, against a pot-size bet you need your opponent to be playing the board too about 2 times in 3; against a half-pot bet, about half the time (with more players still in, your share of a chop shrinks and the bar rises). That is a high bar: against a pot-size bet, folding is right as soon as they have a real hand more than **one time in three** — and on a river where the board can still be beaten, that is the normal case.]:::
+:::tip[If the board plays and someone bets the river, **folding on autopilot is the mistake**. When nothing can beat the board the chop is certain, and calling still brings back your share of everything that was already in the pot (half of it heads-up) — folding hands that share away for free. When the board *can* be beaten, run the frequency: heads-up, against a pot-size bet you need your opponent to be playing the board too about 2 times in 3; against a half-pot bet, about half the time (with more players still in, your share of a chop shrinks and the bar rises). That is a high bar for a call — and a low one for a fold: against a pot-size bet, folding is right as soon as they have a real hand more than **one time in three**, and on a river where the board can still be beaten, that is the normal case.]:::
 
 ---
 

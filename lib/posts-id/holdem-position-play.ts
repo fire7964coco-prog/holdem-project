@@ -297,7 +297,7 @@ A. Ketika Anda masuk ke pot yang sudah di-raise, sebagian besar ya — default m
 2. **Range bergeser bersama posisi.** UTG membuka ~13%, button ==g:~43%== — dan setiap kursi di antaranya mendapat satu anak tangga. ==r:Memainkan tangan button dari UTG menguras chip.==
 3. **Button adalah kursi terbaik; blind adalah yang terburuk.** BB kehilangan chip mentah terbanyak (taruhan paksa); SB adalah kursi terburuk untuk benar-benar dimainkan (pertama beraksi setiap street). Lindungi button Anda, dan 3-bet-atau-fold small blind Anda.
 4. **OOP bukan tanpa harapan — ia soal disiplin.** Check-raise sebagai penyeimbang Anda, perbesar sizing saat bet, kendalikan pot dengan tangan sedang, dan fold river lebih sering daripada yang terasa alami.
-5. **Raise atau fold under the gun.** Open-limp UTG menggabungkan kursi terburuk dengan lini terlemah.
+5. **Raise atau fold under the gun.** Open-limp UTG menggabungkan kursi preflop terburuk dengan lini terlemah.
 6. **6-max memadatkan peta.** UTG 6-max bermain seperti lojack full-ring (~17%) — kalibrasi ulang saat Anda berpindah format.
 
 Untuk setiap nama kursi dan peta meja lengkap, lihat [panduan nama kursi dan posisi poker](/id/blog/holdem-positions). Untuk tangan pasti mana yang mengisi tiap range, gunakan [starting hands chart menurut posisi](/id/blog/holdem-starting-hands-chart). Dan untuk kenapa kursi "berdiskon" merugikan Anda paling banyak, [panduan small blind dan big blind](/id/blog/holdem-blind-meaning) membahas matematika taruhan paksa secara detail.

@@ -296,7 +296,7 @@ A. When you enter a raised pot, mostly yes — the modern default from the SB is
 2. **Ranges slide with position.** UTG opens ~13%, the button ==g:~43%== — and every seat between gets a step on the ladder. ==r:Playing button hands from UTG bleeds chips.==
 3. **The button is the best seat; the blinds are the worst.** The BB loses the most raw chips (forced bet); the SB is the worst seat to actually play (first to act every street). Protect your button, and 3-bet-or-fold your small blind.
 4. **OOP isn't hopeless — it's disciplined.** Check-raise as your equalizer, size up when betting, control pots with medium hands, and fold rivers more than feels natural.
-5. **Raise or fold under the gun.** Open-limping UTG combines the worst seat with the weakest line.
+5. **Raise or fold under the gun.** Open-limping UTG combines the worst preflop seat with the weakest line.
 6. **6-max compresses the map.** 6-max UTG plays like full-ring lojack (~17%) — recalibrate when you switch formats.
 
 For every seat name and the full table map, see the [poker seat names and positions guide](/en/blog/holdem-positions). For which exact hands fill each range, use the [starting hands chart by position](/en/blog/holdem-starting-hands-chart). And for why the "discounted" seats cost you the most, the [small blind and big blind guide](/en/blog/holdem-blind-meaning) covers the forced-bet math in detail.

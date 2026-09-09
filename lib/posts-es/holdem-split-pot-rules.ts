@@ -66,7 +66,7 @@ Dos jugadores hacen exactamente la misma mano de cinco cartas —mismos valores�
 Ambos hacen el full KKK-QQ con la mesa más un rey. ==r:El palo de esos reyes da igual.==
 
 ### 2. La mesa juega
-Las cinco cartas comunitarias ya son la mano más fuerte para todos los que quedan: es el bote 8-8-8-A-K de mi historia. Es el split más común de todos, así que tiene su propia sección más abajo.
+Las cinco cartas comunitarias ya son la mano más fuerte para todos los que quedan: es el bote 8-8-8-A-K de mi historia. Es lo bastante común como para tener su propia sección más abajo.
 
 ### 3. La misma escalera
 Dos escaleras con la misma carta alta empatan, sin importar el palo. En una mesa de 7♣ 6♦ 5♥ K♠ 2♣, tanto el 9♠ 8♠ de A como el 9♥ 8♦ de B hacen 9-8-7-6-5 —la misma altura—, así que **split**.
@@ -91,7 +91,7 @@ Es mi mano 8-8-8-A-K: mi J♠ 10♥ y su 5♣ 2♦ jugaban los dos el trío de o
 
 **Y lo que más importa en la mesa: tu mano solo gana si la enseñas boca arriba.** Una mano tirada al muck está muerta aunque hubiera partido — cuando juegas la mesa sigues teniendo que mostrar tus cartas boca arriba, o pierdes tu parte del bote (regla 172 del reglamento de cash —"Live Action"— de la WSOP; las reglas de torneo de la WSOP lo repiten en la regla 75). Quién muestra primero y cómo va la secuencia lo tienes en las [reglas del showdown](/es/blog/holdem-showdown-rules).
 
-:::tip[Si la mesa juega y alguien apuesta en el river, **el error es foldear en automático**. Cuando nada puede superar la mesa el empate está asegurado, y pagar te devuelve tu parte de todo lo que ya había en el bote (la mitad en heads-up) — foldear regala esa parte gratis. Cuando la mesa sí se puede superar, calcula la frecuencia: heads-up, ante una apuesta del tamaño del bote necesitas que tu rival también esté jugando la mesa unas 2 de cada 3 veces; ante medio bote, la mitad de las veces (con tres o más jugadores en el bote tu parte del empate se reduce y el listón sube). Es un listón alto: ante una apuesta del tamaño del bote, foldear es correcto **en cuanto** tiene mano de verdad más de **una de cada tres veces** — y en un river en el que la mesa todavía se puede superar, eso es lo habitual.]:::
+:::tip[Si la mesa juega y alguien apuesta en el river, **el error es foldear en automático**. Cuando nada puede superar la mesa el empate está asegurado, y pagar te devuelve tu parte de todo lo que ya había en el bote (la mitad en heads-up) — foldear regala esa parte gratis. Cuando la mesa sí se puede superar, calcula la frecuencia: heads-up, ante una apuesta del tamaño del bote necesitas que tu rival también esté jugando la mesa unas 2 de cada 3 veces; ante medio bote, la mitad de las veces (con tres o más jugadores en el bote tu parte del empate se reduce y el listón sube). Es un listón alto para pagar — y bajo para foldear: ante una apuesta del tamaño del bote, foldear es correcto **en cuanto** tiene mano de verdad más de **una de cada tres veces**, y en un river en el que la mesa todavía se puede superar, eso es lo habitual.]:::
 
 ---
 

@@ -102,7 +102,7 @@ Here is the poker starting hands chart for a standard 9-max table:
 
 The rule: ==the later you act, the more hands you can open profitably==. Because the button always acts last postflop, it's the most valuable seat in poker.
 
-Explore the full color-coded grid — every one of the 169 hands by position:
+See how the opening range widens seat by seat — UTG, MP, CO, and BTN (the full 13×13 grid of all 169 hands is in the hand chart tool linked below):
 
 :::rangechart:::
 
@@ -255,7 +255,7 @@ A. Pocket aces (AA) is the best starting hand in poker. Preflop, aces win roughl
 
 **Q. What are good starting hands in poker?**
 
-A. Good starting hands in poker are premium pairs (AA–TT), big aces (AK, AQ), and strong suited broadways (KQs, AJs) — roughly the top 15–20% of all hands. Speculative hands like small pairs and suited connectors are only good from late position.
+A. Good starting hands in poker are premium pairs (AA–TT), big aces (AK, AQ), and strong suited broadways (KQs, AJs) — the core of the ~15–20% of dealt hands a solid beginner plays (these premium groups alone are only about 5% of all starting hands). Speculative hands like small pairs and suited connectors are only good from late position.
 
 **Q. How many starting hands are there in poker?**
 

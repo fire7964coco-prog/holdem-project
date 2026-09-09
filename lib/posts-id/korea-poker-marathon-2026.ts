@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Maraton musim gugur terbaik Korea (Chuncheon 25 Okt, JTBC Seoul 1 Nov, Garmin Run 15 Nov) berpadu dengan cuaca lari yang sempurna. Paradise City Casino dekat Bandara Incheon menggelar cash game sepanjang tahun — khusus warga asing, 10 menit dari terminal. Satu perjalanan mencakup keduanya. Untuk 2026, satu-satunya registrasi asing adalah JTBC, batas 4 Sep.",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-08-31",
-  masterUpdated: "2026-08-31",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "14 mnt",
   emoji: "🏃",
@@ -449,6 +449,8 @@ Itu saja. Itulah pengalaman yang telah diposting di media sosial Korea jutaan ka
 | Telur mentah | ₩500 | ~$0,40 |
 | Paket kimchi | ₩1.500 | ~$1,10 |
 | Sewa tikar piknik | ₩3.000–5.000 | ~$2,20–3,70 |
+
+:::note[Angka USD di panduan ini adalah konversi kasar yang ditulis pada waktu berbeda — buy-in Main Event APT Jeju di atas memakai ~₩1.500/$, tabel ini ~₩1.350/$. Cek kurs terkini sebelum menyusun anggaran.]:::
 
 Mesinnya sendiri ==g:gratis digunakan — Anda hanya membayar ramennya==. Petunjuk ditempel dalam bahasa Korea dan Inggris. Sebagian besar taman juga menawarkan zona pesan-antar makanan jika Anda ingin ayam goreng sebagai gantinya.
 

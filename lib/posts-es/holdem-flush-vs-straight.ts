@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "En el Texas Hold'em, un color (cinco cartas del mismo palo) siempre gana a una escalera (cinco cartas en secuencia), sin excepciones. La razón es pura frecuencia: hay unas 5,108 formas de ligar un color frente a 10,200 de armar una escalera, así que el color es casi el doble de raro entre las manos de cinco cartas; sobre las siete cartas hasta el river son 3.03% frente a 4.62%. Al color solo le ganan el full, el póker, la escalera de color, la escalera real y un color más alto.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-08-12",
-  masterUpdated: "2026-08-12",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "⚡",
@@ -156,7 +156,7 @@ La reina supera a la jota, así que gana A. Si las mejores cinco cartas de ambos
 
 ![9♥ 8♥ 7♥ 6♥ 5♥ — una escalera de color en corazones, la mano #2 del póker](/images/holdem-flush-vs-straight-sf.webp "Escalera de color — cinco corazones en secuencia, solo la bate una escalera real")
 
-Una **escalera de color** son cinco cartas *consecutivas* de *un mismo palo* — como 9♥ 8♥ 7♥ 6♥ 5♥. Es la **mano #2 del póker**, solo la bate una escalera real (que no es más que la escalera de color con As, A-K-Q-J-10 del mismo palo). Con apenas **36 combinaciones (~0.00139%)**, es más rara que todo salvo la propia escalera real.
+Una **escalera de color** son cinco cartas *consecutivas* de *un mismo palo* — como 9♥ 8♥ 7♥ 6♥ 5♥. Es la **mano #2 del póker**, solo la bate una escalera real (que no es más que la escalera de color con As, A-K-Q-J-10 del mismo palo). Con apenas **36 combinaciones** (~0.00139% de las manos de cinco cartas; alrededor del 0.028% para el river en Hold'em), es más rara que todo salvo la propia escalera real.
 
 El detalle: ==las *mismas cinco cartas* tienen que ser del mismo palo y estar en secuencia a la vez==. Fíjate en la diferencia sobre la mesa **8♥ 7♥ 6♥ Q♠ 3♦**:
 

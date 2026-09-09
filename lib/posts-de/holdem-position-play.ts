@@ -295,7 +295,7 @@ A. Wenn du in einen geraisten Pot einsteigst, meistens ja – der moderne Standa
 2. **Ranges gleiten mit der Position.** UTG öffnet ~13%, der Button ==g:~43%== – und jeder Sitz dazwischen bekommt eine Stufe auf der Leiter. ==r:Button-Hände aus UTG zu spielen blutet Chips.==
 3. **Der Button ist der beste Sitz; die Blinds sind die schlechtesten.** Der BB verliert die meisten reinen Chips (Pflichteinsatz); der SB ist der schlechteste Sitz, um tatsächlich zu spielen (auf jeder Street zuerst dran). Beschütze deinen Button und 3-bet-or-folde deinen Small Blind.
 4. **OOP ist nicht hoffnungslos – es ist diszipliniert.** Check-Raise als Equalizer, Sizing hoch beim Betten, Pots mit mittleren Händen kontrollieren und River öfter folden, als sich natürlich anfühlt.
-5. **Raisen oder folden under the Gun.** Open-Limpen aus UTG kombiniert den schlechtesten Sitz mit der schwächsten Linie.
+5. **Raisen oder folden under the Gun.** Open-Limpen aus UTG kombiniert den schlechtesten Preflop-Sitz mit der schwächsten Linie.
 6. **6-Max staucht die Karte.** 6-Max-UTG spielt wie Full-Ring-Lojack (~17%) – kalibriere neu, wenn du die Formate wechselst.
 
 Für jeden Sitznamen und die komplette Tischkarte siehe den [Leitfaden zu Poker-Sitznamen und Positionen](/de/blog/holdem-positions). Für welche exakten Hände jede Range füllen, nutze den [Starthände-Chart nach Position](/de/blog/holdem-starting-hands-chart). Und dafür, warum die „rabattierten“ Sitze dich am meisten kosten, deckt der [Small-Blind- und Big-Blind-Leitfaden](/de/blog/holdem-blind-meaning) die Pflichteinsatz-Mathematik im Detail ab.

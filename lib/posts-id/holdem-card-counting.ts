@@ -80,7 +80,7 @@ Blackjack memberi imbalan pada ingatan atas apa yang sudah pergi; poker memberi 
 
 ### Menghitung outs Anda
 
-Sebuah ==out== adalah kartu tak terlihat mana pun yang meningkatkan tangan Anda menjadi kemungkinan pemenang. Sebuah flush draw punya ==9 outs== (13 kartu satu jenis dikurangi 4 yang bisa Anda lihat). Ubah outs menjadi peluang menang kasar dengan ==Rule of 4 and 2==: kalikan dengan 4 saat masih dua kartu tersisa, dengan 2 saat satu.
+Sebuah ==out== adalah kartu tak terlihat mana pun yang meningkatkan tangan Anda menjadi kemungkinan pemenang. Sebuah flush draw punya ==9 outs== (13 kartu satu jenis dikurangi 4 yang bisa Anda lihat) — kartu sejenis yang ada di board sudah dikurangkan di dalam angka 9 itu, jadi jangan mencoretnya sekali lagi sebagai "dead card". Ubah outs menjadi peluang menang kasar dengan ==Rule of 4 and 2==: kalikan dengan 4 saat masih dua kartu tersisa, dengan 2 saat satu.
 
 Sebuah flush draw 9 outs jadi pada river sekitar ==g:35%== dari waktu (9 × 4 = 36% sebagai perkiraan cepat — angka sebenarnya 35,0%). Angka itu menghitung kedua kartu tersisa, jadi ia baru menentukan sebuah call kalau Anda memang melihat keduanya: Anda all-in di flop tanpa taruhan lagi. Kalau ada taruhan di flop yang harus Anda bayar lagi di turn, hitung hanya kartu berikutnya: ==9 ÷ 47 = 19,1%==. Metode lengkapnya — outs kotor, combo draw, persentase persis — ada di [panduan menghitung outs](/id/blog/holdem-outs), dan peluang di balik setiap draw ada di [bagan probabilitas](/id/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
@@ -125,7 +125,7 @@ Hold'em hanya menampilkan lima community card bersama, jadi ini terbatas pada bo
 :::steps
 Hitung outs Anda di setiap draw | Begitu Anda punya draw, hitung kartu yang melengkapinya dan kalikan — ×4 hanya kalau kedua kartu memang akan datang (Anda all-in, atau turn dan river sama-sama gratis), selain itu ×2 hanya untuk kartu berikutnya. Call saat peluang itu mengalahkan harganya
 Tanyakan apa yang tangan Anda blokir | Sebelum Anda bluff, cek apakah Anda pegang kartu yang membuat tangan call terkuat mereka mustahil atau lebih kecil kemungkinannya
-Sesuaikan dengan dead card | Kurangi out mana pun yang sudah Anda lihat terbuka di luar board — kartu yang tak sengaja terlihat, tangan yang ditunjukkan, fold yang kebetulan Anda lihat. Kartu yang bisa Anda lihat adalah kartu yang tak mungkin dipegang lawan
+Sesuaikan dengan dead card | Kurangi out mana pun yang sudah Anda lihat terbuka di luar board — kartu yang tak sengaja terlihat, tangan yang ditunjukkan, fold yang kebetulan Anda lihat. Kartu yang bisa Anda lihat adalah kartu yang tak mungkin dipegang lawan — tapi hanya kalau terlihat karena kebetulan: sengaja berusaha melihat kartu pemain lain melanggar aturan dan bisa kena penalti di card room mana pun
 :::
 
 Lakukan ini beberapa sesi dan ia menjadi otomatis — Anda akan "menghitung kartu" setiap tangan, hanya saja dengan cara poker. Langkah berikutnya adalah mengubah penghitungan itu menjadi call dan fold dengan [pot odds](/id/blog/holdem-pot-odds), matematika yang memberitahu apakah outs Anda sepadan dengan harganya.

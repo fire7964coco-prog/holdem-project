@@ -30,7 +30,7 @@ Die rohen Odds hinter jedem Draw kommen aus der [Poker-Odds- und Wahrscheinlichk
 :::stripe
 Call ÷ Trefferquote − (Pot + Call) | Die Implied-Odds-Formel
 7,5:1 | Echte Odds, ein Set zu floppen
-0 | Deine Implied Odds, wenn Villain all-in ist
+0 | Deine Implied Odds heads-up, sobald Villain all-in ist
 :::
 
 ---
@@ -110,7 +110,7 @@ Derselbe $50-Call, gegensätzliche Entscheidungen – und die Karten haben sich 
 
 </div>
 
-Zwei Kräfte bestimmen die Zahl. **Häufigkeit:** Ein Gutshot trifft halb so oft wie ein Flushdraw, er braucht also einen etwa doppelt so großen Payoff, um break-even zu sein. **Tarnung:** Ein verstecktes Set wird weit mehr ausgezahlt als ein offensichtlicher Four-Flush, weil dein Gegner dich nicht darauf setzen kann – deshalb tolerieren Sets ihre niedrige Trefferquote. Der [Nut-Flushdraw ist aus demselben Grund weit mehr wert als ein kleiner](/de/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp"): Er wird ausgezahlt *und* er verliert nicht, wenn er trifft.
+Zwei Kräfte bestimmen die Zahl. **Häufigkeit:** Ein Gutshot trifft halb so oft wie ein Flushdraw, er braucht also einen etwa doppelt so großen Payoff, um break-even zu sein. **Tarnung:** Ein verstecktes Set wird weit mehr ausgezahlt als ein offensichtlicher Flush auf einem Monotone-Board, weil dein Gegner dich nicht darauf setzen kann – deshalb tolerieren Sets ihre niedrige Trefferquote. Der [Nut-Flushdraw ist aus demselben Grund weit mehr wert als ein kleiner](/de/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp"): Er wird ausgezahlt *und* er verliert nicht, wenn er trifft.
 
 ---
 
@@ -184,7 +184,7 @@ A. Nein. Nach dem River kommt keine Karte mehr und keine Setzrunde mehr – es g
 
 **Q. Wie viel muss ich mit einem Flushdraw am Turn zusätzlich gewinnen?**
 
-A. Bei einem $50-Call in einen $150-Pot: 50 ÷ 0,196 = $255, minus die $200, die schon im Spiel sind, macht rund **$55**. So viel musst du am River im Schnitt zusätzlich holen, damit der Call aufgeht. Kann dein Gegner das nicht mehr bezahlen, ist es ein Fold.
+A. Bei einem $50-Call in einen $150-Pot am Turn, mit einem Flushdraw, der am River zu 19,6% ankommt (9 ÷ 46): 50 ÷ 0,196 = $255, minus die $200, die schon im Spiel sind, macht rund **$55**. So viel musst du am River im Schnitt zusätzlich holen, damit der Call aufgeht. Kann dein Gegner das nicht mehr bezahlen, ist es ein Fold.
 
 **Q. Was ist der Unterschied zwischen Pot Odds und Implied Odds?**
 
@@ -219,7 +219,7 @@ A. Bei Implied Odds geht es nur um das Geld, das noch zu gewinnen ist, und tiefe
 ## Die 3 Dinge, die du dir merken solltest
 
 1. **Die Formel:** extra nötig = (Call ÷ Trefferquote) − (aktueller Pot + Call). Wenn du realistisch mehr als das später gewinnen kannst, ist der Call gut, selbst wenn die Pot Odds Fold sagen.
-2. **Der Realitätscheck:** Implied Odds sind eine Schätzung, die von tiefen Stacks und einem zahlenden Gegner lebt. Gegen ein All-in sind sie null, und gegen einen kurzen Stack bleibt kaum etwas übrig – greif zurück auf die Pot Odds.
+2. **Der Realitätscheck:** Implied Odds sind eine Schätzung, die von tiefen Stacks und einem zahlenden Gegner lebt. Gegen ein All-in sind sie heads-up null, und gegen einen kurzen Stack bleibt kaum etwas übrig – greif zurück auf die Pot Odds.
 3. **Der dunkle Spiegel:** Reverse Implied Odds bestrafen Non-Nut-Draws. Ein Draw zu den Nuts ist weit mehr wert als derselbe Draw zur zweitbesten Hand.
 
 Mach das richtig, und du hörst auf, Chips für hoffnungsvolle Calls zu verbrennen, während du weiterhin die profitablen machst, die sich sonst niemand traut. Von hier aus sicher dir die rohen Zahlen mit der [Poker-Odds- und Wahrscheinlichkeitstabelle](/de/blog/holdem-probability), oder sieh genau, wie oft jeder Draw ankommt, in den [Drawing Odds](/de/blog/holdem-drawing-odds).

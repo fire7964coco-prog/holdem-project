@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "¿Qué es un straddle en póker? Reglas, tipos y si deberías ponerlo",
   seoTitle: "La apuesta que dobla la mesa — ¿qué es un straddle?",
   desc: "El straddle es una ciega voluntaria que dobla la apuesta antes de repartir. Reglas, tipos de straddle, quién actúa primero y si straddlear es rentable.",
-  tldr: "Un straddle es una apuesta ciega voluntaria — normalmente el doble de la ciega grande (2× BB) — que un jugador pone antes de repartir las cartas, casi siempre desde UTG; en España se le llama 'matar la ciega'. Le compra al que lo pone la última acción y la opción de subir en preflop, doblando la apuesta de la mano. Para casi todo el mundo es una jugada -EV, y solo se permite en cash games según las reglas de la casa (casi nunca en torneos).",
+  tldr: "Un straddle es una apuesta ciega voluntaria — normalmente el doble de la ciega grande (2× BB) — que un jugador pone antes de repartir las cartas, casi siempre desde UTG; en España se le llama 'matar la ciega'. Le compra al que lo pone la última acción y la opción de subir en preflop, doblando la apuesta de la mano. Para casi todo el mundo es una jugada -EV, y casi siempre queda restringido a los cash games según las reglas de la casa (prácticamente nunca en torneos).",
   category: "glossary",
   date: "2026-07-04",
   updated: "2026-09-09",

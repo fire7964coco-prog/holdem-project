@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Jede gewinnende Texas-Hold'em-Entscheidung reduziert sich auf fünf wiederholbare Fragen: Wo sitze ich (Position), ist diese Hand spielenswert, raise oder fold ich (nie limpen), bette ich auf dem Flop weiter, und wann lasse ich los? Ein Tight-Aggressive-Spieler, der diese fünf gut beantwortet, foldet ~80% der Hände preflop, spielt sie aggressiv, wenn er sie spielt, und schlägt fast jedes Freizeitspiel – ohne auswendig gelernte Tippliste.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-08-11",
-  masterUpdated: "2026-08-11",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "14 Min.",
   emoji: "♠️",
@@ -28,7 +28,7 @@ Was mich schließlich zu einem gewinnenden Spieler machte, war keine längere Li
 :::stripe
 5 | Entscheidungen, die sich jede einzelne Hand wiederholen
 ~80% | Hände, die ein Tight-Aggressive-Spieler preflop foldet
-11,8% | Chance, dass ein Pocket Pair ein Set floppt (≈1 zu 8,5)
+11,8% | Chance, dass ein Pocket Pair ein Set floppt (≈1 von 8,5)
 0% | Chance, dass ein Limp den Pot vor dem Flop gewinnt
 :::
 
@@ -158,7 +158,7 @@ Beide lassen sich am Tisch in wenigen Sekunden anwenden – hier ist, was jede v
 
 **Pot Odds** sagen dir, ob ein Call profitabel ist: vergleiche den Preis des Calls mit der Größe des Pots, dann mit deiner Chance zu treffen. Wenn der Pot dir 4:1 legt und dein Draw etwa 1 zu 5 trifft, ist Callen grob Break-even; besser als das, ist es Profit. Das ist der Motor hinter jedem „jage ich diesen Draw?“-Spot – und der [Pot-Odds-Guide](/de/blog/holdem-pot-odds) verwandelt ihn in einen 10-Sekunden-Tabellenblick.
 
-**Set-Mining-Odds** erklären, warum kleine Pairs spekulativ sind. Calle einen Raise mit Pocket Fives in der Hoffnung, ein Set zu floppen – Three of a Kind – und du verbindest dich nur etwa **11,8% der Zeit, rund 1 zu 8,5.** Wenn es klappt, ist es wunderschön: Flop ==5♣ K♠ 2♦== mit ==5♠5♦== und du hast ein verstecktes Set, das ein Overpair stackt. Aber weil du ~88% der Flops verfehlst, ist Set-Mining nur profitabel, wenn die effektiven Stacks tief genug sind, um dich beim Treffen auszuzahlen – eine grobe Richtschnur ist **mindestens ~15–20× die Größe des Calls.** Flache Stacks? Dann wird dieser spekulative Call zum Leck. Die vollständige [Odds- und Wahrscheinlichkeitstabelle](/de/blog/holdem-probability) hat jede Zahl, die du je brauchen wirst.
+**Set-Mining-Odds** erklären, warum kleine Pairs spekulativ sind. Calle einen Raise mit Pocket Fives in der Hoffnung, ein Set zu floppen – Three of a Kind – und du verbindest dich nur etwa **11,8% der Zeit, rund 1 von 8,5.** Wenn es klappt, ist es wunderschön: Flop ==5♣ K♠ 2♦== mit ==5♠5♦== und du hast ein verstecktes Set, das ein Overpair stackt. Aber weil du ~88% der Flops verfehlst, ist Set-Mining nur profitabel, wenn die effektiven Stacks tief genug sind, um dich beim Treffen auszuzahlen – eine grobe Richtschnur ist **mindestens ~15–20× die Größe des Calls.** Flache Stacks? Dann wird dieser spekulative Call zum Leck. Die vollständige [Odds- und Wahrscheinlichkeitstabelle](/de/blog/holdem-probability) hat jede Zahl, die du je brauchen wirst.
 
 ---
 

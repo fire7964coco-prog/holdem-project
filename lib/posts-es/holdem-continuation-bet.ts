@@ -99,7 +99,7 @@ No hay un único porcentaje "correcto" de c-bet — quien te dé un solo número
 |:---|:---:|:---|
 | **En posición, mano a mano, board seco** | **70–100%** (pequeño) | El clásico "range bet" — apuesta casi todo, mínimo |
 | **En posición, mano a mano, board húmedo** | **~50–60%** | Más polarizado — valor y proyectos apuestan, el aire pasa |
-| **Fuera de posición, mano a mano** | **~40–50%** | Pasa mucho más para proteger tu rango de check |
+| **Fuera de posición, mano a mano (bote de subida simple, tú eras el agresor)** | **~30–45%** | Pasa mucho más para proteger tu rango de check. Como *3-bettor* fuera de posición se invierte — más del 97% en los dos boards que resolvimos, mira el [juego posicional](/es/blog/holdem-position-play) |
 | **Multiway (2 rivales)** | **~50% o menos** | Alguien seguramente ligó — aprieta |
 | **Multiway (3+ rivales)** | **Solo manos fuertes y buenos proyectos** | El fold equity básicamente desapareció |
 
@@ -129,9 +129,9 @@ En **torneos**, inclínate un pelín más pequeño: el tamaño pequeño sigue si
 
 ![Un jugador de póker actuando primero fuera de posición, los dedos sobre el tapete junto a sus fichas con un rival esperando en la penumbra detrás](/images/holdem-cbet-oop.webp "Fuera de posición actúas primero sin información, así que pasas mucho más y cbeteas un rango más cerrado y fuerte")
 
-Cbetear es mucho más difícil **fuera de posición** — cuando tienes que actuar primero en cada calle sin ninguna lectura de lo que hará tu rival. Dos ajustes:
+Cbetear es mucho más difícil **fuera de posición** en un bote de subida simple — cuando tienes que actuar primero en cada calle sin ninguna lectura de lo que hará tu rival (como 3-bettor la ventaja de rango cambia esto, mira el [juego posicional](/es/blog/holdem-position-play)). Dos ajustes:
 
-1. **Cbetea menos a menudo.** Sin posición no puedes controlar el bote igual de bien ni realizar tu equity, así que pasas mucho más — incluso manos que serían apuestas automáticas en posición. En algunos boards buenos un solver cbetea fuera de posición solo una cuarta parte de las veces.
+1. **Cbetea menos a menudo.** Sin posición no puedes controlar el bote igual de bien ni realizar tu equity, así que pasas mucho más — incluso manos que serían apuestas automáticas en posición. En algunos boards un solver cbetea fuera de posición en un bote de subida simple solo una cuarta parte de las veces.
 2. **Construye un rango de check de verdad.** Si solo apuestas cuando eres fuerte y pasas cuando eres débil, un rival atento te lee como un libro abierto y ataca cada check. Así que pasas *algunas* manos fuertes a propósito, lo que mantiene tus checks peligrosos y todo tu juego más difícil de enfrentar. Por esto exactamente la [posición](/es/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp") es una ventaja tan estructural — las c-bets simplemente funcionan mejor cuando actúas último.
 
 ---
@@ -222,7 +222,7 @@ A. No — este es el error de c-bet más común. Apuesta los flops que favorecen
 
 **Q. ¿Con qué frecuencia deberías cbetear?**
 
-A. Depende de la posición, el board y el número de rivales, así que trátalo como rangos, no reglas: aproximadamente 70–100% (a un tamaño pequeño) en posición mano a mano en un board seco, alrededor de 40–50% fuera de posición, y 50% o menos multiway. Una tasa global sana de c-bet en el flop es cerca del 55–70% — más del 85% significa que estás en piloto automático.
+A. Depende de la posición, el board y el número de rivales, así que trátalo como rangos, no reglas: aproximadamente 70–100% (a un tamaño pequeño) en posición mano a mano en un board seco, alrededor de 30–45% fuera de posición como agresor en un bote de subida simple (más alto cuando eres tú quien 3-betea), y 50% o menos multiway. Una tasa global sana de c-bet en el flop es cerca del 55–70% — más del 85% significa que estás en piloto automático.
 
 **Q. ¿Cuánto deberías cbetear?**
 
@@ -230,7 +230,7 @@ A. Ajusta el tamaño al board. En boards secos y estáticos apuesta pequeño —
 
 **Q. ¿Deberías cbetear fuera de posición?**
 
-A. Menos a menudo que en posición. Actuando primero en cada calle sin información, no puedes realizar tu equity igual de bien, así que pasas mucho más — incluso algunas manos que apostarías automáticamente en posición — y a propósito mantienes algunas manos fuertes en tu rango de check para que tus checks no sean automáticamente débiles. La posición hace que las c-bets funcionen mejor, sin discusión.
+A. Menos a menudo que en posición cuando eras el agresor preflop en un bote de subida simple. Actuando primero en cada calle sin información, no puedes realizar tu equity igual de bien, así que pasas mucho más — incluso algunas manos que apostarías automáticamente en posición — y a propósito mantienes algunas manos fuertes en tu rango de check para que tus checks no sean automáticamente débiles. La posición hace que las c-bets funcionen mejor, sin discusión.
 
 **Q. ¿Deberías cbetear en un bote multiway?**
 
@@ -258,7 +258,7 @@ A. El tamaño lo marca la textura del board, con dos marchas que cubren casi tod
 
 **Q. ¿Cuál es un buen porcentaje de c-bet?**
 
-A. Una banda sana y equilibrada de c-bet en el flop está cerca del 55–70% agregando todos los boards. Pero no hay un solo número correcto: en posición mano a mano sobre un board seco cbeteas el 70–100% (a un tamaño pequeño), fuera de posición bajas al 40–50%, y multiway apuestas el 50% o menos. Más del ~85% delata piloto automático que los buenos jugadores castigan; por debajo del ~40% eres demasiado honesto. Trátalo como un chequeo de salud, no como un objetivo.
+A. Una banda sana y equilibrada de c-bet en el flop está cerca del 55–70% agregando todos los boards. Pero no hay un solo número correcto: en posición mano a mano sobre un board seco cbeteas el 70–100% (a un tamaño pequeño), fuera de posición bajas al 30–45%, y multiway apuestas el 50% o menos. Más del ~85% delata piloto automático que los buenos jugadores castigan; por debajo del ~40% eres demasiado honesto. Trátalo como un chequeo de salud, no como un objetivo.
 
 **Q. ¿Cuándo NO hacer c-bet?**
 

@@ -105,7 +105,7 @@ Tak ada satu persentase c-bet yang "benar" — siapa pun yang memberi Anda satu 
 |:---|:---:|:---|
 | **In position, heads-up, board kering** | **70–100%** (kecil) | "Range bet" klasik — taruh nyaris semuanya, mungil |
 | **In position, heads-up, board basah** | **~50–60%** | Lebih terpolarisasi — value dan draw bertaruh, tangan kosong check |
-| **Out of position, heads-up** | **~40–50%** | Check jauh lebih banyak untuk melindungi checking range |
+| **Out of position, heads-up (pot single-raised, Anda yang raise)** | **~30–45%** | Check jauh lebih banyak untuk melindungi checking range. Sebagai *3-bettor* out of position keadaannya berbalik — di atas 97% pada dua board yang kami solve, lihat [panduan posisi](/id/blog/holdem-position-play) |
 | **Multiway (2 lawan)** | **~50% atau kurang** | Ada yang mungkin nyambung — perketat |
 | **Multiway (3+ lawan)** | **Hanya tangan kuat & draw bagus** | Fold equity praktis lenyap |
 
@@ -135,9 +135,9 @@ Di **turnamen**, condong sedikit lebih kecil: ukuran kecilnya tetap sepertiga, t
 
 ![Seorang pemain poker beraksi lebih dulu saat out of position, jari di felt di samping chip-nya dengan lawan menunggu dalam bayang di belakang](/images/holdem-cbet-oop.webp "Out of position Anda beraksi lebih dulu tanpa informasi, jadi Anda check jauh lebih banyak dan c-bet range yang lebih ketat dan lebih kuat")
 
-C-betting jauh lebih sulit **out of position** — saat Anda harus beraksi lebih dulu di setiap street tanpa bacaan atas apa yang akan dilakukan lawan. Dua penyesuaian:
+C-betting jauh lebih sulit **out of position** di pot single-raised — saat Anda harus beraksi lebih dulu di setiap street tanpa bacaan atas apa yang akan dilakukan lawan (sebagai 3-bettor keunggulan range mengubah ini, lihat [panduan posisi](/id/blog/holdem-position-play)). Dua penyesuaian:
 
-1. **C-bet lebih jarang.** Tanpa posisi Anda tak bisa mengontrol pot sebaik itu atau merealisasikan equity Anda, jadi Anda check jauh lebih banyak — bahkan tangan yang akan otomatis di-bet in position. Di beberapa board bagus, solver c-bet out of position hanya seperempat waktu.
+1. **C-bet lebih jarang.** Tanpa posisi Anda tak bisa mengontrol pot sebaik itu atau merealisasikan equity Anda, jadi Anda check jauh lebih banyak — bahkan tangan yang akan otomatis di-bet in position. Di beberapa board, solver c-bet out of position di pot single-raised hanya seperempat waktu.
 2. **Bangun checking range yang nyata.** Kalau Anda hanya bertaruh saat kuat dan check saat lemah, lawan yang jeli membaca Anda seperti buku dan menyerang setiap check. Jadi Anda sengaja meng-check *sebagian* tangan kuat juga, yang menjaga check Anda tetap berbahaya dan seluruh permainan Anda lebih sulit dilawan. Inilah tepat kenapa [posisi](/id/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp") merupakan keunggulan struktural — c-bet cukup bekerja lebih baik saat Anda beraksi terakhir.
 
 ---
@@ -228,7 +228,7 @@ A. Tidak — ini kesalahan c-bet paling umum. Taruh flop yang menguntungkan rang
 
 **Q. Seberapa sering Anda harus c-bet?**
 
-A. Tergantung posisi, board, dan jumlah lawan, jadi perlakukan ini sebagai rentang, bukan aturan: kira-kira 70–100% (dengan sizing kecil) in position heads-up di board kering, sekitar 40–50% out of position, dan 50% atau kurang di multiway. Tingkat c-bet flop keseluruhan yang sehat sekitar 55–70% — di atas 85% berarti Anda main autopilot.
+A. Tergantung posisi, board, dan jumlah lawan, jadi perlakukan ini sebagai rentang, bukan aturan: kira-kira 70–100% (dengan sizing kecil) in position heads-up di board kering, sekitar 30–45% out of position sebagai raiser di pot single-raised (lebih tinggi saat Anda yang 3-bet), dan 50% atau kurang di multiway. Tingkat c-bet flop keseluruhan yang sehat sekitar 55–70% — di atas 85% berarti Anda main autopilot.
 
 **Q. Berapa besar Anda harus c-bet?**
 
@@ -236,7 +236,7 @@ A. Ukur sesuai board. Di board kering dan statis taruh kecil — sekitar seperti
 
 **Q. Haruskah Anda c-bet out of position?**
 
-A. Lebih jarang daripada in position. Beraksi lebih dulu di setiap street tanpa informasi, Anda tak bisa merealisasikan equity sebaik itu, jadi Anda check jauh lebih banyak — bahkan sebagian tangan yang akan Anda auto-bet in position — dan Anda sengaja menyimpan sebagian tangan kuat dalam checking range Anda supaya check Anda tak otomatis lemah. Posisi membuat c-bet bekerja lebih baik, titik.
+A. Lebih jarang daripada in position saat Anda adalah raiser preflop di pot single-raised. Beraksi lebih dulu di setiap street tanpa informasi, Anda tak bisa merealisasikan equity sebaik itu, jadi Anda check jauh lebih banyak — bahkan sebagian tangan yang akan Anda auto-bet in position — dan Anda sengaja menyimpan sebagian tangan kuat dalam checking range Anda supaya check Anda tak otomatis lemah. Posisi membuat c-bet bekerja lebih baik, titik.
 
 **Q. Haruskah Anda c-bet di pot multiway?**
 

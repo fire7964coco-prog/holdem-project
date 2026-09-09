@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Qué es el kicker en el póker — reglas, cuántos hay y el as dominado",
   seoTitle: "Kicker en póker: qué es y por qué pierdes el bote",
   desc: "El kicker rompe empates en el póker: qué manos lo tienen y cuántos, por qué A9 pierde contra AK y la excepción del póker que casi nadie explica bien.",
-  tldr: "El kicker es la carta lateral más alta que no forma parte de tu mano hecha — rompe el empate cuando dos jugadores comparten el mismo valor. La pareja usa 3 kickers, la doble pareja 1, el trío 2; escaleras, colores y fulls no tienen ninguno. Es la razón por la que AK gana a AQ cuando la mesa empareja un as.",
+  tldr: "El kicker es la carta lateral más alta que no forma parte de tu mano hecha — rompe el empate cuando dos jugadores comparten el mismo valor. La pareja usa 3 kickers, la doble pareja 1, el trío 2; escaleras, colores, fulls y escaleras de color no tienen ninguno. Es la razón por la que AK gana a AQ cuando la mesa empareja un as.",
   category: "hand-rankings",
   date: "2026-07-08",
   updated: "2026-09-09",
@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Dos jugadores mostrando A-K y A-Q en el showdown con un as en la mesa — el kicker del rey decide quién se lleva el bote",
   tags: ["kicker poker", "kicker en poker que es", "reglas del kicker", "el color tiene kicker", "jugar la mesa", "as dominado", "carta de desempate", "perder por kicker"],
   content: `
-La mano que por fin me enseñó qué es un kicker me costó un buy-in entero. Tenía ==b:A♠ 9♣==, la mesa emparejó mi as y me fui all-in convencido de que la pareja máxima era oro. Él dio la vuelta a ==b:A♥ K♦== — la misma pareja de ases, pero su rey superaba a mi nueve, y el bote se deslizó hacia su lado. No había perdido contra una *mano* mejor; había perdido contra una ==carta lateral== mejor. Esa carta lateral es el kicker, y decide más botes de los que ningún principiante imagina.
+La mano que por fin me enseñó qué es un kicker me costó un buy-in entero. Tenía ==b:A♠ 9♣==, la mesa emparejó mi as y me fui all-in convencido de que la pareja máxima era oro. Él dio la vuelta a ==b:A♥ K♦== — la misma pareja de ases, pero su rey me superó en el kicker, y el bote se deslizó hacia su lado. No había perdido contra una *mano* mejor; había perdido contra una ==carta lateral== mejor. Esa carta lateral es el kicker, y decide más botes de los que ningún principiante imagina.
 
 ==El kicker es el desempate integrado en el propio póker — cuando dos jugadores tienen el mismo valor, gana la carta sobrante más alta.== Casi todas las guías te dan una definición de una línea y el ejemplo de AK contra AQ. Esta te da el cuadro completo: exactamente qué manos tienen kicker (y cuántos), la única excepción que todos confunden y por qué "jugar la mesa" significa que de repente tu kicker no importa nada.
 
@@ -30,7 +30,7 @@ Dónde encaja el kicker en el panorama general de la [jerarquía de manos de pó
 :::stripe
 3 | Kickers en una mano de pareja
 1 | Kicker en doble pareja (y en el póker)
-0 | Kickers en una escalera, color o full
+0 | Kickers en una escalera, color, full o escalera de color
 :::
 
 ---
@@ -107,7 +107,7 @@ Misma pareja, así que compara kickers de arriba abajo: tu ==g:K gana a su Q.== 
 
 ## Jugar la mesa: cuando tu kicker no cuenta
 
-**Si las cinco cartas comunitarias ya forman la mejor mano posible y tus cartas no pueden mejorarla, estás "jugando la mesa" — y no hay ningún kicker.** Todos los que tampoco pueden mejorarla usan las cinco cartas idénticas — y si nadie puede, el bote se divide.
+**Si tus cartas no pueden mejorar lo que ya forman las cinco cartas comunitarias, estás "jugando la mesa" — y tus cartas laterales dejan de decidir nada.** Todos los que tampoco pueden mejorarla usan las cinco cartas idénticas — y si nadie puede, el bote se divide.
 
 La mesa es ==b:10♠ J♦ Q♣ K♥ A♠== — una escalera del diez al as (Broadway), en palos mezclados, así que no hay color posible.
 
@@ -217,7 +217,7 @@ A. Es la trampa de jugar un as flojo (A-x, como A-9 o A-5) y perder el bote por 
 ## Las 3 cosas que debes recordar
 
 1. **Kicker = carta lateral, solo desempate.** Resuelve empates entre valores iguales y nunca gana a una mano de valor superior.
-2. **Combinación + kickers = cinco.** La pareja tiene 3 kickers, el trío 2, la doble pareja y el póker 1; escaleras, colores y fulls no tienen ninguno.
+2. **Combinación + kickers = cinco.** La pareja tiene 3 kickers, el trío 2, la doble pareja y el póker 1; escaleras, colores, fulls y escaleras de color no tienen ninguno.
 3. **Los kickers deciden dinero real.** La dominación (A9 contra AK) y jugar la mesa se reducen ambas al kicker — elige manos con cartas laterales fuertes y sabe cuándo la tuya está muerta.
 
 Acierta con el kicker y toda una categoría de manos de "¿cómo perdí eso?" deja de ser un misterio. Desde aquí, mira el orden completo de la [jerarquía de manos de póker](/es/blog/holdem-hand-rankings), o las [reglas de desempate](/es/blog/holdem-tiebreak-rules) completas para cada tipo de mano.

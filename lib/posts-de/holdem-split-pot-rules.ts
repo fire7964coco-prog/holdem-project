@@ -66,7 +66,7 @@ Zwei Spieler machen exakt dieselbe Fünf-Karten-Hand – dieselben Ränge, selbs
 Beide machen das Full House KKK-QQ aus dem Board plus einem König. ==r:Die Farben dieser Könige spielen keine Rolle.==
 
 ### 2. Das Board spielt
-Die fünf Gemeinschaftskarten sind bereits die stärkste Hand für alle Verbliebenen – das ist der 8-8-8-A-K-Pot aus meiner Geschichte. Es ist der mit Abstand häufigste Split, deshalb bekommt er unten einen eigenen Abschnitt.
+Die fünf Gemeinschaftskarten sind bereits die stärkste Hand für alle Verbliebenen – das ist der 8-8-8-A-K-Pot aus meiner Geschichte. Er kommt oft genug vor, um unten einen eigenen Abschnitt zu bekommen.
 
 ### 3. Dieselbe Straße
 Zwei Straßen mit derselben höchsten Karte sind unentschieden, unabhängig von der Farbe. Auf einem Board aus 7♣ 6♦ 5♥ K♠ 2♣ machen sowohl A mit 9♠ 8♠ als auch B mit 9♥ 8♦ die 9-8-7-6-5 – dieselbe Höhe, also **Split**.
@@ -91,7 +91,7 @@ Das ist meine 8-8-8-A-K-Hand: meine J♠ 10♥ und seine 5♣ 2♦ spielten beid
 
 **Und das Wichtigste am Tisch: Deine Hand gewinnt nur, wenn du sie aufdeckst.** Eine gemuckte Hand ist tot, auch wenn sie den Pot geteilt hätte – auch wenn du nur das Board spielst, musst du deine Hole Cards offen hinlegen, sonst verlierst du deinen Anteil am Pot (WSOP-Cashgame-Regeln, Rule 172; die WSOP-Turnierregeln wiederholen es in Rule 75). Wer zuerst zeigen muss und wie der Ablauf genau läuft, steht in den [Showdown-Regeln](/de/blog/holdem-showdown-rules).
 
-:::tip[Wenn das Board spielt und jemand am River bettet: **automatisch zu folden ist hier falsch.** Die Chips im Pot gehören dir nicht mehr – ein Call, der sicher zum Chop führt, holt dir trotzdem deinen Anteil am bisherigen Pot zurück (heads-up die Hälfte). Kann das Board dagegen geschlagen werden, rechne mit der Frequenz: Heads-up lohnt der Call bei einer Pot-Size-Bet, wenn dein Gegner in etwa 2 von 3 Fällen ebenfalls nur das Board spielt, bei einer halben Pot-Bet reicht rund die Hälfte (sind noch drei oder mehr Spieler dabei, schrumpft dein Anteil am Chop und die Hürde steigt). Das ist eine hohe Hürde: Hat dein Gegner bei einer Pot-Size-Bet öfter als in **einem Drittel** der Fälle eine echte Hand, ist Folden richtig – und auf einem River, auf dem das Board noch geschlagen werden kann, ist genau das der Normalfall.]:::
+:::tip[Wenn das Board spielt und jemand am River bettet: **automatisch zu folden ist hier falsch.** Die Chips im Pot gehören dir nicht mehr – ein Call, der sicher zum Chop führt, holt dir trotzdem deinen Anteil am bisherigen Pot zurück (heads-up die Hälfte). Kann das Board dagegen geschlagen werden, rechne mit der Frequenz: Heads-up lohnt der Call bei einer Pot-Size-Bet, wenn dein Gegner in etwa 2 von 3 Fällen ebenfalls nur das Board spielt, bei einer halben Pot-Bet reicht rund die Hälfte (sind noch drei oder mehr Spieler dabei, schrumpft dein Anteil am Chop und die Hürde steigt). Das ist eine hohe Hürde für einen Call – und eine niedrige fürs Folden: Hat dein Gegner bei einer Pot-Size-Bet öfter als in **einem Drittel** der Fälle eine echte Hand, ist Folden richtig, und auf einem River, auf dem das Board noch geschlagen werden kann, ist genau das der Normalfall.]:::
 
 ---
 

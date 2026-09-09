@@ -66,7 +66,7 @@ Dois jogadores fazem exatamente a mesma mão de cinco cartas — mesmos valores,
 Os dois fazem o full house KKK-QQ com a mesa mais um rei. ==r:Os naipes desses reis não importam.==
 
 ### 2. A mesa joga
-As cinco cartas comunitárias já são a mão mais forte para todos que restam — é o pote 8-8-8-A-K da minha história. É um dos chops mais comuns, então ganha uma seção só para ele mais abaixo.
+As cinco cartas comunitárias já são a mão mais forte para todos que restam — é o pote 8-8-8-A-K da minha história. É comum o bastante para ganhar uma seção só para ele mais abaixo.
 
 ### 3. A mesma sequência
 Duas sequências com a mesma carta mais alta empatam, independentemente do naipe. Num board 7♣ 6♦ 5♥ K♠ 2♣, tanto o 9♠ 8♠ do A quanto o 9♥ 8♦ do B fazem 9-8-7-6-5 — mesma altura, então **divide**.
@@ -91,7 +91,7 @@ Sim — e nem precisa de duas mãos monstruosas. Quando as cinco cartas comunit�
 
 **E a parte que mais importa na mesa: sua mão só ganha se você virar as cartas para cima.** Uma mão que foi para o muck está morta mesmo que fosse dividir o pote — jogando a mesa, você ainda precisa mostrar suas cartas fechadas viradas para cima, ou perde sua parte do pote (regra 172 da WSOP para o jogo de cash — "Live Action"; as regras de torneio da WSOP repetem isso na regra 75). Quem mostra primeiro e como a sequência corre está nas [regras de showdown](/pt/blog/holdem-showdown-rules).
 
-:::tip[Se a mesa joga e alguém aposta no river, **o erro é dar fold no automático**. Quando nada consegue bater a mesa o empate é certo, e pagar ainda traz de volta a sua parte de tudo que já estava no pote (metade em heads-up) — dar fold entrega essa parte de graça. Quando a mesa pode ser batida, calcule a frequência: em heads-up, contra uma aposta do tamanho do pote você precisa que o adversário também esteja apenas jogando a mesa em cerca de 2 de cada 3 vezes; contra meio pote, metade das vezes (com três ou mais jogadores na mão, sua parte do empate encolhe e a barra sobe). É uma barra alta: contra uma aposta do tamanho do pote, basta que ele tenha mão de verdade mais de **uma vez em três** para o fold ficar certo — e num river em que a mesa ainda pode ser batida, isso é o normal.]:::
+:::tip[Se a mesa joga e alguém aposta no river, **o erro é dar fold no automático**. Quando nada consegue bater a mesa o empate é certo, e pagar ainda traz de volta a sua parte de tudo que já estava no pote (metade em heads-up) — dar fold entrega essa parte de graça. Quando a mesa pode ser batida, calcule a frequência: em heads-up, contra uma aposta do tamanho do pote você precisa que o adversário também esteja apenas jogando a mesa em cerca de 2 de cada 3 vezes; contra meio pote, metade das vezes (com três ou mais jogadores na mão, sua parte do empate encolhe e a barra sobe). É uma barra alta para o call — e baixa para o fold: contra uma aposta do tamanho do pote, basta que ele tenha mão de verdade mais de **uma vez em três** para o fold ficar certo, e num river em que a mesa ainda pode ser batida, isso é o normal.]:::
 
 ---
 

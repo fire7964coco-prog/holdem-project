@@ -339,9 +339,11 @@ Esto es lo que puedes hacer con 1–3 días libres:
 | Transporte en Seúl (tarjeta T-money) | $5–$10/día |
 | Entrada Main Event del APT | ==**~$1,703**== |
 | Side events económicos (Mini Main, Ultra Stack) | ==g:**$270–$610**== |
-| **Total estimado de un viaje de póker de 7 días** | ==**$2,500–$5,000 + entradas de póker**== |
+| **Total estimado de un viaje de póker de 7 días** | ==**~$800–$4,200 + entradas de póker**== |
 
 </div>
+
+*Extremo bajo = vuelo dentro de Asia + hotel de gama media en Seúl; extremo alto = vuelo de largo radio + hotel Paradise City (7 noches, de las filas de arriba).*
 
 Comparado con el EPT Barcelona (~€5,300 el Main) o el WPT Australia (~AUD $5,000 el Main), ==g:el APT Incheon te da un torneo con $1M GTD por menos de $2,000 de entrada== — y una de las mejores ciudades de Asia como telón de fondo.
 

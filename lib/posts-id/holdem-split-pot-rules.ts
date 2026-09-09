@@ -66,7 +66,7 @@ Dua pemain membentuk tangan lima-kartu yang persis sama — nilai yang sama, bah
 Keduanya membentuk full house KKK-QQ dari board plus satu king. ==r:Jenis dari king itu tidak penting.==
 
 ### 2. Board yang main
-Lima kartu komunitas sudah menjadi tangan terkuat bagi semua yang tersisa — itulah pot 8-8-8-A-K dari cerita saya. Ini split yang paling umum, jadi ada bagian tersendiri di bawah.
+Lima kartu komunitas sudah menjadi tangan terkuat bagi semua yang tersisa — itulah pot 8-8-8-A-K dari cerita saya. Ini cukup umum sehingga mendapat bagian tersendiri di bawah.
 
 ### 3. Straight yang sama
 Dua straight dengan kartu tertinggi sama akan seri, tak peduli jenisnya. Di board 7♣ 6♦ 5♥ K♠ 2♣, baik A dengan 9♠ 8♠ maupun B dengan 9♥ 8♦ membentuk 9-8-7-6-5 — sama tingginya, jadi **dibagi**.
@@ -91,7 +91,7 @@ Itulah tangan 8-8-8-A-K saya: J♠ 10♥ saya dan 5♣ 2♦ lawan sama-sama main
 
 **Dan bagian yang paling penting di meja: tangan Anda baru menang kalau Anda membukanya menghadap ke atas.** Tangan yang di-muck itu mati bahkan ketika ia seharusnya chop — saat Anda memainkan board pun Anda tetap harus menunjukkan kartu tertutup Anda menghadap ke atas, atau Anda kehilangan bagian Anda dari pot (WSOP Rule 172 untuk live action; aturan turnamen WSOP mengulanginya di Rule 75). Siapa yang menunjukkan lebih dulu dan bagaimana urutannya berjalan dibahas di [aturan showdown](/id/blog/holdem-showdown-rules).
 
-:::tip[Jika board yang main dan seseorang bet di river, **fold secara refleks justru kesalahannya**. Kalau tidak ada tangan yang bisa mengalahkan board, seri sudah pasti, dan call tetap mengembalikan bagian Anda dari semua chip yang sudah ada di pot (setengahnya saat heads-up) — fold berarti menyerahkan bagian itu cuma-cuma. Kalau board masih bisa dikalahkan, hitung frekuensinya: heads-up, melawan bet sebesar pot, Anda butuh lawan juga sekadar memainkan board sekitar 2 dari 3 kali; melawan setengah pot, sekitar separuh waktu (dengan tiga pemain atau lebih yang masih bertahan, bagian Anda dari pot seri mengecil sehingga ambangnya naik). Itu ambang yang tinggi: melawan bet sebesar pot, fold sudah benar begitu dia punya tangan sungguhan lebih dari **satu dari tiga kali** — dan di river yang board-nya masih bisa dikalahkan, itulah keadaan normalnya.]:::
+:::tip[Jika board yang main dan seseorang bet di river, **fold secara refleks justru kesalahannya**. Kalau tidak ada tangan yang bisa mengalahkan board, seri sudah pasti, dan call tetap mengembalikan bagian Anda dari semua chip yang sudah ada di pot (setengahnya saat heads-up) — fold berarti menyerahkan bagian itu cuma-cuma. Kalau board masih bisa dikalahkan, hitung frekuensinya: heads-up, melawan bet sebesar pot, Anda butuh lawan juga sekadar memainkan board sekitar 2 dari 3 kali; melawan setengah pot, sekitar separuh waktu (dengan tiga pemain atau lebih yang masih bertahan, bagian Anda dari pot seri mengecil sehingga ambangnya naik). Itu ambang yang tinggi untuk call — dan rendah untuk fold: melawan bet sebesar pot, fold sudah benar begitu dia punya tangan sungguhan lebih dari **satu dari tiga kali**, dan di river yang board-nya masih bisa dikalahkan, itulah keadaan normalnya.]:::
 
 ---
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Los grandes maratones de otoño de Corea (Chuncheon 25 oct, JTBC Seúl 1 nov, Garmin Run 15 nov) coinciden con el clima ideal para correr. El casino Paradise City, junto al aeropuerto de Incheon, ofrece cash games todo el año — solo extranjeros, a 10 min de la terminal. Un viaje cubre ambas cosas. Para 2026, la única inscripción de extranjeros es la del JTBC, con fecha límite el 4 de sep.",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-08-31",
-  masterUpdated: "2026-08-31",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏃",
@@ -449,6 +449,8 @@ Ya está. Esa es la experiencia que se ha publicado millones de veces en las red
 | Huevo crudo | ₩500 | ~$0.40 |
 | Pack de kimchi | ₩1,500 | ~$1.10 |
 | Alquiler de manta de pícnic | ₩3,000–5,000 | ~$2.20–3.70 |
+
+:::note[Las cifras en dólares de esta guía son conversiones aproximadas escritas en momentos distintos — la entrada del Main Event del APT Jeju de más arriba usa ~₩1,500/$ y esta tabla ~₩1,350/$. Consulta el cambio actual antes de hacer tu presupuesto.]:::
 
 La máquina en sí es ==g:gratis de usar — solo pagas el ramen==. Las instrucciones están puestas en coreano e inglés. La mayoría de parques también tienen zonas de reparto de comida a domicilio, por si prefieres pollo frito en su lugar.
 

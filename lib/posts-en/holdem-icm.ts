@@ -98,7 +98,7 @@ There it is in numbers: the leader has ==half the chips but only 38.4% of the mo
 
 **Chip EV measures a decision in chips won or lost; ICM (or "$EV") measures it in real prize money. They agree early and split hard late.** Early in a tournament, with tiny pay jumps far away, a chip is basically a chip — you play [chip EV](/en/blog/holdem-equity "thumb:/images/holdem-equity-hero.webp"), accumulating relentlessly. Near the money and the final table, ICM takes over.
 
-The classic clash is a marginal all-in *call*. In chip EV, a coin flip for a big pot can be fine or even good — you gain as many chips as you lose. In ICM it can be a clear ==fold==, because busting costs you your equity in every prize above the one you have already locked in (the guaranteed minimum itself stays yours), while the chips you'd win are worth less than face value.
+The classic clash is a marginal all-in *call*. In chip EV, a coin flip for a big pot can be fine or even good — you gain as many chips as you lose. In ICM it can be a clear ==fold==, because busting costs you your equity in every prize above the one you have already locked in (the guaranteed minimum itself stays yours; on the bubble, where nothing is locked in yet, it costs everything), while the chips you'd win are worth less than face value.
 
 That is where I had those jacks backwards. The tax is charged on the *call*, and the mirror of that is what makes a bubble playable: because everyone's calling range tightens, your fold equity is worth **more** than it is in chips. First-in shoving is the middle stack's weapon on a bubble, not its leak — I ran into the one player who could call widest, which is variance, not a strategy error. ==Chip EV asks "will this build my stack?" ICM asks "will this build my bankroll?"== — and only the second one pays out.
 
@@ -114,7 +114,7 @@ The player who feels this most is the **medium stack on the bubble** — big eno
 
 ---
 
-![A medium tournament stack folding to a big stack's shove on the money bubble, chips and a payout ladder in view — the moment ICM pressure turns a normal call into a fold](/images/holdem-icm-pressure.webp "ICM pressure: the medium stack folds because busting costs the prize equity above the payout already locked in")
+![A medium tournament stack folding to a big stack's shove on the money bubble, chips and a payout ladder in view — the moment ICM pressure turns a normal call into a fold](/images/holdem-icm-pressure.webp "ICM pressure: the medium stack folds because busting on the bubble costs the entire min-cash and every prize above it")
 
 ## Bubble Factor & Risk Premium: How ICM Changes Your Shoves and Calls
 
@@ -155,7 +155,7 @@ The short stack gets ==$97 more== from an ICM deal than a chip chop, because ICM
 
 - **The [money bubble](/en/blog/holdem-bubble "thumb:/images/holdem-bubble-hero.webp")** — the biggest jump of all is from $0 to a cash, so risk premiums peak.
 - **The final-table bubble and every pay jump on the final table** — each ladder step is real money.
-- **Satellites** — the extreme case: every qualifying seat is worth the same, so once you have enough chips to win a seat, extra chips are worth almost *nothing* and you fold nearly everything.
+- **Satellites** — the extreme case: in a multi-seat satellite every qualifying seat is worth the same, so once you have enough chips to win a seat, extra chips are worth almost *nothing* and you fold nearly everything (a winner-take-all satellite is played for first on chip EV).
 
 Lean on chip EV as a good-enough approximation when:
 
@@ -196,7 +196,7 @@ A. It assigns each player a probability of finishing in each paying position bas
 
 **Q. What's the difference between ICM and chip EV?**
 
-A. Chip EV measures a decision in chips won or lost; ICM measures it in real money. They agree early in a tournament and diverge near the money, where busting costs the prize equity above the payout you've already locked in. A coin-flip all-in that's fine in chip EV can be a clear fold under ICM.
+A. Chip EV measures a decision in chips won or lost; ICM measures it in real money. They agree early in a tournament and diverge near the money. On the bubble, busting costs your whole shot at cashing; once you're in the money, it costs everything above the payout you've already locked in. A coin-flip all-in that's fine in chip EV can be a clear fold under ICM.
 
 **Q. What is an ICM deal, and how is it different from a chip chop?**
 
@@ -212,7 +212,7 @@ A. You never switch it off entirely, but its effect is small enough to use chip 
 
 **Q. What are the most common ICM mistakes?**
 
-A. Three big ones. First, *over*-applying ICM — folding your way down "to ladder up" when the pay jumps are still far away, instead of accumulating chips. Second, calling too wide as a medium stack near the bubble, exactly where your risk premium is highest and busting costs the equity above the payout already locked in. Third, agreeing to a chip chop when you're the short stack (or an ICM deal when you're the leader) without running the numbers first. ICM is a late-game tool: using it too early, or ignoring it at the final table, both leak money.
+A. Three big ones. First, *over*-applying ICM — folding your way down "to ladder up" when the pay jumps are still far away, instead of accumulating chips. Second, calling too wide as a medium stack near the bubble, exactly where your risk premium is highest — nothing is locked in yet, so busting there costs your entire equity, min-cash included. Third, agreeing to a chip chop when you're the short stack (or an ICM deal when you're the leader) without running the numbers first. ICM is a late-game tool: using it too early, or ignoring it at the final table, both leak money.
 
 **Q. Who invented ICM?**
 

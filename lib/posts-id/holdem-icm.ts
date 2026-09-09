@@ -99,7 +99,7 @@ Itu dia dalam angka: leader punya ==separuh chip tapi hanya 38,4% dari uang==, s
 
 **Chip EV mengukur keputusan dalam chip yang dimenangkan atau hilang; ICM (atau "$EV") mengukurnya dalam uang hadiah nyata. Keduanya sepakat di awal dan berpisah tajam di akhir.** Di awal turnamen, dengan pay jump kecil yang masih jauh, satu chip pada dasarnya adalah satu chip — Anda main [chip EV](/id/blog/holdem-equity "thumb:/images/holdem-equity-hero.webp"), mengumpulkan tanpa henti. Menjelang uang dan final table, ICM mengambil alih.
 
-Benturan klasiknya adalah *meng-call* all-in marginal. Dalam chip EV, coin flip untuk pot besar bisa oke atau bahkan bagus — Anda memperoleh sebanyak chip yang Anda pertaruhkan. Dalam ICM itu bisa jadi ==fold== jelas, karena bust merenggut equity Anda atas setiap hadiah di atas yang sudah Anda kunci (jumlah minimum terjaminnya sendiri tetap milik Anda), sementara chip yang akan Anda menangkan bernilai lebih kecil dari nominalnya.
+Benturan klasiknya adalah *meng-call* all-in marginal. Dalam chip EV, coin flip untuk pot besar bisa oke atau bahkan bagus — Anda memperoleh sebanyak chip yang Anda pertaruhkan. Dalam ICM itu bisa jadi ==fold== jelas, karena bust merenggut equity Anda atas setiap hadiah di atas yang sudah Anda kunci (jumlah minimum terjaminnya sendiri tetap milik Anda) — dan di bubble, ketika belum ada apa pun yang terkunci, seluruh equity hadiah Anda —, sementara chip yang akan Anda menangkan bernilai lebih kecil dari nominalnya.
 
 Di situlah saya salah membaca jacks itu. Pajaknya ditagih pada *call*, dan sisi sebaliknya justru yang membuat bubble bisa dimainkan: karena calling range semua orang mengetat, fold equity Anda bernilai **lebih** daripada dalam chip. Shove first-in adalah senjata stack menengah di bubble, bukan kebocorannya — saya kebetulan bertemu satu pemain yang bisa call paling lebar, dan itu varians, bukan kesalahan strategi. ==Chip EV bertanya "apakah ini akan membangun stack saya?" ICM bertanya "apakah ini akan membangun bankroll saya?"== — dan hanya yang kedua yang membayar.
 
@@ -115,7 +115,7 @@ Pemain yang paling merasakan ini adalah **medium stack di bubble** — cukup bes
 
 ---
 
-![Medium stack turnamen fold ke shove big stack di money bubble, chip dan tangga payout terlihat — momen tekanan ICM mengubah call normal menjadi fold](/images/holdem-icm-pressure.webp "Tekanan ICM: medium stack fold karena bust merenggut equity hadiah di atas payout yang sudah terkunci")
+![Medium stack turnamen fold ke shove big stack di money bubble, chip dan tangga payout terlihat — momen tekanan ICM mengubah call normal menjadi fold](/images/holdem-icm-pressure.webp "Tekanan ICM: medium stack fold karena bust di bubble merenggut seluruh min-cash dan setiap hadiah di atasnya")
 
 ## Bubble Factor & Risk Premium: Bagaimana ICM Mengubah Shove dan Call Anda
 
@@ -156,7 +156,7 @@ Short stack mendapat ==$97 lebih banyak== dari ICM deal daripada chip chop, kare
 
 - **[Money bubble](/id/blog/holdem-bubble "thumb:/images/holdem-bubble-hero.webp")** — lompatan terbesar dari semua adalah dari $0 ke uang, jadi risk premium memuncak.
 - **Bubble final table dan setiap pay jump di final table** — tiap anak tangga adalah uang nyata.
-- **Satelit** — kasus ekstrem: tiap kursi kualifikasi bernilai sama, jadi begitu Anda punya cukup chip untuk memenangkan kursi, chip ekstra bernilai hampir *nol* dan Anda fold hampir semuanya.
+- **Satelit** — kasus ekstrem: di satelit multi-kursi tiap kursi kualifikasi bernilai sama, jadi begitu Anda punya cukup chip untuk memenangkan kursi, chip ekstra bernilai hampir *nol* dan Anda fold hampir semuanya (satelit winner-take-all dimainkan untuk juara pertama dengan chip EV).
 
 Sandarkan diri pada chip EV sebagai aproksimasi yang cukup baik saat:
 
@@ -197,7 +197,7 @@ A. ICM memberi setiap pemain probabilitas finis di tiap posisi berbayar berdasar
 
 **Q. Apa beda ICM dan chip EV?**
 
-A. Chip EV mengukur keputusan dalam chip yang dimenangkan atau hilang; ICM mengukurnya dalam uang nyata. Keduanya sepakat di awal turnamen dan menyimpang menjelang uang, tempat bust merenggut equity hadiah di atas payout yang sudah Anda kunci. All-in coin-flip yang oke dalam chip EV bisa jadi fold jelas di bawah ICM.
+A. Chip EV mengukur keputusan dalam chip yang dimenangkan atau hilang; ICM mengukurnya dalam uang nyata. Keduanya sepakat di awal turnamen dan menyimpang menjelang uang. Di bubble, bust merenggut seluruh peluang Anda untuk masuk uang; setelah masuk uang, ia merenggut semua yang di atas payout yang sudah Anda kunci. All-in coin-flip yang oke dalam chip EV bisa jadi fold jelas di bawah ICM.
 
 **Q. Apa itu ICM deal, dan apa bedanya dari chip chop?**
 
@@ -213,7 +213,7 @@ A. Anda tak pernah benar-benar mematikannya, tapi efeknya cukup kecil untuk mema
 
 **Q. Apa kesalahan ICM yang paling umum?**
 
-A. Tiga yang terbesar. Pertama, menerapkan ICM secara berlebihan — fold terus demi "naik tangga hadiah" padahal pay jump masih jauh, alih-alih mengakumulasi chip. Kedua, call terlalu lebar sebagai medium stack di dekat bubble, persis di tempat risk premium Anda tertinggi dan bust merenggut equity di atas payout yang sudah terkunci. Ketiga, menyetujui chip chop saat Anda short stack (atau ICM deal saat Anda chip leader) tanpa menghitung angkanya dulu. ICM adalah alat late-game: memakainya terlalu dini, atau mengabaikannya di final table, dua-duanya membocorkan uang.
+A. Tiga yang terbesar. Pertama, menerapkan ICM secara berlebihan — fold terus demi "naik tangga hadiah" padahal pay jump masih jauh, alih-alih mengakumulasi chip. Kedua, call terlalu lebar sebagai medium stack di dekat bubble, persis di tempat risk premium Anda tertinggi — belum ada apa pun yang terkunci di sana, jadi bust merenggut seluruh equity Anda, min-cash sekalipun. Ketiga, menyetujui chip chop saat Anda short stack (atau ICM deal saat Anda chip leader) tanpa menghitung angkanya dulu. ICM adalah alat late-game: memakainya terlalu dini, atau mengabaikannya di final table, dua-duanya membocorkan uang.
 
 **Q. Siapa yang menemukan ICM?**
 

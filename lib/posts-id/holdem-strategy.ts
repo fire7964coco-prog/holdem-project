@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Setiap keputusan Texas Hold'em yang menang menyusut menjadi lima pertanyaan berulang: di mana saya duduk (position), apakah tangan ini layak dimainkan, apakah saya raise atau fold (jangan pernah limp), apakah saya terus bertaruh di flop, dan kapan saya melepasnya? Pemain tight-aggressive yang menjawab lima ini dengan baik akan fold ~80% tangan preflop, memainkannya secara agresif saat main, dan mengalahkan hampir setiap permainan santai — tanpa perlu daftar tips hafalan.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-08-27",
-  masterUpdated: "2026-08-11",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "14 mnt",
   emoji: "♠️",
@@ -150,7 +150,7 @@ Jika Anda mengupas strategi hingga apa yang benar-benar merugikan pemain baru, i
 | Kebocoran | Kenapa ia menguras chip | Perbaikan |
 |:---|:---|:---|
 | **Memainkan terlalu banyak tangan** | Starting hand lemah menjadi made hand lemah di flop, lalu merugikan Anda di postflop | Fold ~80% preflop (Keputusan 2) |
-| **Terlalu banyak call** | Sebuah call hanya bisa menang jika Anda sudah unggul — ia tak pernah membuat siapa pun fold | Raise atau fold; berhenti "call untuk melihat" (Keputusan 3) |
+| **Terlalu banyak call** | Sebuah call tak punya fold equity — ia tak pernah membuat siapa pun fold, jadi ia harus jadi atau sampai showdown dalam keadaan unggul | Raise atau fold; berhenti "call untuk melihat" (Keputusan 3) |
 | **Terlalu pasif** | Pemenang bet dan raise untuk value; pasivitas menang pot kecil dan kalah pot besar | Ambil line agresif saat Anda memang punya tangannya |
 | **Mengabaikan position** | Memainkan sampah di luar position berarti menebak setiap street | Main lebih ketat di awal, lebih longgar di belakang (Keputusan 1) |
 | **Mengejar draw tanpa odds** | Call "harapan" yang tak dibenarkan pot | Cek pot odds sebelum setiap call draw (Keputusan 5) |
@@ -210,7 +210,7 @@ A. 3-bet (re-raise seorang preflop raiser) untuk value dengan tangan terkuat And
 
 **Q. Kapan Anda harus raise vs. call?**
 
-A. Lebih baik raise daripada call kapan pun Anda punya tangan yang layak dilanjutkan. Raise menang dengan dua cara (fold equity plus tangan terbaik) dan merebut inisiatif; call hanya bisa menang jika Anda sudah unggul dan membiarkan orang lain masuk murah. Call saat tangan Anda cukup kuat untuk lanjut tapi tak cukup untuk membangun pot besar, saat Anda set-mining small pair, atau saat Anda ingin menahan bluff pemain yang lebih lemah.
+A. Lebih baik raise daripada call kapan pun Anda punya tangan yang layak dilanjutkan. Raise menang dengan dua cara (fold equity plus tangan terbaik) dan merebut inisiatif; call tak punya fold equity — tak ada yang fold menghadapi call — dan membiarkan orang lain masuk murah. Call saat tangan Anda cukup kuat untuk lanjut tapi tak cukup untuk membangun pot besar, saat Anda set-mining small pair, atau saat Anda ingin menahan bluff pemain yang lebih lemah.
 
 **Q. Berapa banyak tangan yang harus Anda mainkan di Texas Hold'em?**
 
