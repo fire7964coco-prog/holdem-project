@@ -270,7 +270,7 @@ A. Hitung jenis di board. Dengan 0–2 kartu satu jenis, tak ada flush bagi siap
 
 **Q. Jika ada flush di board, siapa yang menang?**
 
-A. Ketika lima kartu komunitas membentuk flush, semua pemain tersisa memilikinya bersama. Kartu jenis itu yang lebih tinggi dari kartu terendah board memperbaikinya, jadi pemenangnya biasanya siapa pun yang memegang kartu tertinggi seperti itu. Jika tak ada, semua orang main dengan board dan pot dibagi. Ada satu pengecualian yang mematahkan aturan ini: di board yang berurutan, kartu jenis itu mana pun yang melengkapi straight flush mengalahkan semua flush — bahkan kartu yang lebih rendah dari kartu terendah board. Di K♠ 6♠ 5♠ 4♠ 3♠, baik 2♠ (straight flush tertinggi 6) maupun 7♠ (tertinggi 7) menang atas A♠. (Dengan hanya tiga atau empat kartu sejenis di board, hanya pemain yang memegang kartu jenis itu yang benar-benar punya flush.)
+A. Ketika lima kartu komunitas membentuk flush, semua pemain tersisa memilikinya bersama. Kartu jenis itu yang lebih tinggi dari kartu terendah board memperbaikinya, jadi pemenangnya biasanya siapa pun yang memegang kartu tertinggi seperti itu. Jika tak ada, semua orang main dengan board dan pot dibagi. Ada satu pengecualian yang mematahkan aturan ini: di board yang berurutan, kartu jenis itu mana pun yang melengkapi straight flush mengalahkan semua flush — bahkan kartu yang lebih rendah dari kartu terendah board. Di K♠ 6♠ 5♠ 4♠ 3♠, baik 2♠ (straight flush tertinggi 6) maupun 7♠ (straight flush tertinggi 7) menang atas A♠. (Dengan hanya tiga atau empat kartu sejenis di board, hanya pemain yang memegang kartu jenis itu yang benar-benar punya flush.)
 
 **Q. Jika ada straight di board, siapa yang menang?**
 

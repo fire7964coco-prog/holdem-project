@@ -185,7 +185,7 @@ export const POST: Post = {
 /ja/blog/holdem-all-in-rules | オールインのルールとサイドポット | /images/holdem-all-in-rules-hero.webp
 :::
 
-## FAQ
+## よくある質問
 
 **Q. ポーカーのショーダウンで先にカードを見せるのは誰ですか？**
 

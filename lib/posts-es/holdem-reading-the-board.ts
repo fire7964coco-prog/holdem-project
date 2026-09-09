@@ -278,7 +278,7 @@ A. Cuenta los palos en la mesa. Con 0–2 de un palo, no hay color para nadie. C
 
 **Q. Si hay un color en la mesa, ¿quién gana?**
 
-A. Cuando las cinco cartas comunitarias forman un color, todos los jugadores que queden lo comparten. Lo mejora una carta de ese palo más alta que la más baja de la mesa, así que normalmente gana quien tenga la más alta de esas cartas. Si nadie tiene una, todos juegan con la mesa y el bote se reparte. Hay una excepción que rompe la regla: en una mesa conectada, cualquier carta de ese palo que complete una escalera de color vence a todo color — incluso una más baja que la más baja de la mesa. En K♠ 6♠ 5♠ 4♠ 3♠, tanto el 2♠ (escalera de color al 6) como el 7♠ (al 7) ganan al A♠. (Con solo tres o cuatro cartas del mismo palo en la mesa, únicamente tienen color los jugadores que tengan las cartas de ese palo que faltan.)
+A. Cuando las cinco cartas comunitarias forman un color, todos los jugadores que queden lo comparten. Lo mejora una carta de ese palo más alta que la más baja de la mesa, así que normalmente gana quien tenga la más alta de esas cartas. Si nadie tiene una, todos juegan con la mesa y el bote se reparte. Hay una excepción que rompe la regla: en una mesa conectada, cualquier carta de ese palo que complete una escalera de color vence a todo color — incluso una más baja que la más baja de la mesa. En K♠ 6♠ 5♠ 4♠ 3♠, tanto el 2♠ (escalera de color al 6) como el 7♠ (escalera de color al 7) ganan al A♠. (Con solo tres o cuatro cartas del mismo palo en la mesa, únicamente tienen color los jugadores que tengan las cartas de ese palo que faltan.)
 
 **Q. Si hay una escalera en la mesa, ¿quién gana?**
 

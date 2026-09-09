@@ -269,7 +269,7 @@ A. Count suits on the board. With 0–2 of one suit, no flush exists for anyone.
 
 **Q. If there is a flush on the board, who wins?**
 
-A. When the five community cards make a flush, every remaining player shares it. A card of that suit higher than the board's lowest one improves it, so the winner is normally whoever holds the highest such card. If no one does, everyone plays the board and the pot is split. One exception breaks the rule: on a connected board, any card of that suit that completes a straight flush beats every flush — even a card lower than the board's lowest. On K♠ 6♠ 5♠ 4♠ 3♠ both the 2♠ (six-high straight flush) and the 7♠ (seven-high) beat the A♠. (With only three or four suited cards on the board, only players holding the missing suited cards actually have a flush.)
+A. When the five community cards make a flush, every remaining player shares it. A card of that suit higher than the board's lowest one improves it, so the winner is normally whoever holds the highest such card. If no one does, everyone plays the board and the pot is split. One exception breaks the rule: on a connected board, any card of that suit that completes a straight flush beats every flush — even a card lower than the board's lowest. On K♠ 6♠ 5♠ 4♠ 3♠ both the 2♠ (six-high straight flush) and the 7♠ (seven-high straight flush) beat the A♠. (With only three or four suited cards on the board, only players holding the missing suited cards actually have a flush.)
 
 **Q. If there is a straight on the board, who wins?**
 

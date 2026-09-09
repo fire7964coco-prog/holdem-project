@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "ポケットペアでセットをフロップで引くのは11.8%(7.5対1の不利)、スーテッド2枚でフラッシュがフロップに落ちるのはわずか0.84%、フロップで完成したフラッシュドローがリバーまでに当たるのは35%。以下の数字はすべて推測ではなく、52枚のデッキから導いたものです。",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-09-08",
+  updated: "2026-09-09",
   masterUpdated: "2026-08-11",
   keepImagesInBody: true,
   readTime: "12分",
@@ -194,7 +194,7 @@ export const POST: Post = {
 /ja/blog/holdem-pot-odds | ポットオッズの計算方法 | /images/holdem-pot-odds-hero.webp
 :::
 
-## FAQ
+## よくある質問
 
 **Q. セットをフロップで引く確率は?**
 
