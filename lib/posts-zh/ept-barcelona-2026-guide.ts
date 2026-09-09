@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "EPT Barcelona 2026 已于 8 月 16–29 日在 Casino Barcelona 结束。意大利的 Manuel Ferrari 拿下 €5,300 主赛事，从 1,823 人次、€8,841,550 奖池中赢得 €1,002,488。想冲 2027 的话，最便宜的线上路线仍是 Power Path 从 $0.50 起步 → Gold Pass（€5,300 主赛席位 + €1,100 副赛 + 8 晚酒店 + €690 花销）。你需要一个 PokerStars Live 账号和一本有效护照，酒店要早订——8 月是旺季。",
   category: "tournament",
   date: "2026-06-17",
-  updated: "2026-09-08",
-  masterUpdated: "2026-09-02",
+  updated: "2026-09-09",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "16 分钟",
   emoji: "🃏",
@@ -66,7 +66,7 @@ export const POST: Post = {
 
 *\* 含三方分成。* **1,823 人次** 是 **EPT 史上第七大的主赛事规模**，可作为估算 2027 年的参考。
 
-:::note[**关于来源。** 截至 2026 年 8 月 31 日，PokerStars 尚未在官方赛事页面公布最终结果（赛程表仍显示所有赛事未进行）。以上数字来自现场直播报道，并已在两家独立媒体之间交叉核对（见文末来源）。官方数字公布后我们会替换。]:::
+:::note[**关于来源。** 以上冠军、冠军奖金和参赛人数已于 2026 年 9 月 9 日与 PokerStars 官方完整成绩页面逐项核对，数字一致（见文末来源）。]:::
 
 ---
 
@@ -237,7 +237,7 @@ PokerStars 专门设计了 Power Path，就是要 ==挡住职业牌手直接买�
 ## PokerStars Live 账号设置与资金来源声明
 
 > **快速回答**
-> 两项行政手续要在落地之前办好：一是 PokerStars Live 账号——没有它报不了任何一场比赛，下载 app、按指引验证身份（要护照照片）；二是资金来源声明——只要用现金付买入，西班牙法规就要求申报来源，在账号的合规区域填表，通常当天处理。在家办 10 分钟，到登记台现场办要 45 分钟。
+> 两项行政手续要在落地之前办好：一是 PokerStars Live 账号——没有它报不了任何一场比赛，下载 app、按指引验证身份（要护照照片）；二是资金来源声明——用现金付买入就可能被要求申报来源（EPT 页面写「任何现金交易」，赌场表格写 €10,000 及以上），在账号的合规区域填表，通常当天处理。在家办 10 分钟，到登记台现场办要 45 分钟。
 
 ==r:有两项行政手续会让第一次参赛的人措手不及。== 两件都要在 **你落地巴塞罗那之前** 办好。
 
@@ -255,7 +255,7 @@ PokerStars 专门设计了 Power Path，就是要 ==挡住职业牌手直接买�
 
 ### 2. 资金来源声明（现金交易）
 
-这一项几乎没人提醒你。任何时候你在 Casino Barcelona 用 **现金** 支付锦标赛买入，==r:西班牙法规都要求你声明这笔钱的来源==。
+这一项几乎没人提醒你。如果你在 Casino Barcelona 用 **现金** 支付锦标赛买入，==r:你可能被要求声明这笔钱的来源==——EPT 赛事页面写的是「任何现金交易」，而赌场自己的声明表格适用于 10.000（€10,000）及以上的现金交易。
 
 **如何提前完成：**
 1. 在 [pokerstarslive.com](https://www.pokerstarslive.com/ept/barcelona/) 登录你的 **PokerStars Live** 账号
@@ -357,7 +357,7 @@ Casino Barcelona 比蒙特卡洛宽松——但确实有硬性规定：
 |:---|:---:|:---:|:---|
 | ==g:**出租车 / Uber**== | 25–35 分钟 | €30–€40 | ==g:带行李最省事== |
 | **Aerobus（A1）** | 35 分钟 | ~€6–7 | 到加泰罗尼亚广场（Plaça Catalunya），再打车或坐地铁去赌场 |
-| **地铁（L9 Sud）** | 45–55 分钟 | ~€5–6 | L9 Sud → 转 L4 → Ciutadella/Vila Olímpica（步行 10 分钟到赌场） |
+| **地铁（L9 Sud）** | 45–55 分钟 | ~€5–6 | L9 Sud → 在市区换线接入 L4 → Ciutadella/Vila Olímpica（步行 10 分钟到赌场；换乘站请在 TMB 行程规划器上确认） |
 | **PokerStars Travel** | 不定 | 少量费用 | 预先安排的接送，通过 PokerStars Live 预订 |
 
 </div>
@@ -460,7 +460,7 @@ A. 你需要一个 ==**PokerStars Live**== 账号（与你的线上牌局账号�
 
 **Q. 资金来源（Source of Funds）表格是什么，真的必须填吗？**
 
-A. 是的。根据西班牙赌场法规，任何一笔现金交易都要求你声明资金来源——并不存在一个「低于这个数额就免申报」的门槛。你可以提前通过 PokerStars Live 账号在线填好这份表格——==g:大约花 10 分钟==。用银行卡或预购代币支付则可能不需要。
+A. 如果你用现金支付，就按需要办来准备。EPT 赛事页面写的是「任何现金交易」都要声明资金来源，而赌场的声明表格适用于 10.000（€10,000）及以上的现金交易——所以门槛和手续请提前向赌场确认。你可以提前通过 PokerStars Live 账号在线填好这份表格——==g:大约花 10 分钟==。用银行卡或预购代币支付则可能不需要。
 
 **Q. 如果我赢了 Power Path 的 Gold Pass，酒店是自动订好的吗？**
 
@@ -476,7 +476,7 @@ A. 巴塞罗那的奥林匹克港区域总体安全。==r:游客密集的地方�
 
 - **赛期、场地、买入与赛程** — [PokerStars Live · EPT Barcelona](https://www.pokerstarslive.com/ept/barcelona/)（官方，2026 年 8 月 31 日查阅）
 - **2026 主赛事决赛桌、人次与奖池** — 现场直播报道，已在 [PokerNews](https://www.pokernews.com/news/2026/08/manuel-ferrari-wins-2026-ept-barcelona-main-event-52260.htm) 与 [Card Player](https://www.cardplayer.com/poker-news/1741396-manuel-ferrari-wins-ept-barcelona-main-event-for-1-2-million)（均为 2026 年 8 月 29 日）之间交叉核对，两者的人次与名次完全一致。「EPT 史上第七大」出自 Card Player。
-- ⚠️ 撰稿时 PokerStars **尚未** 公布官方结果，官方数字公布后将进行核对。
+- **官方结果** — [PokerStars · EPT Barcelona 2026 完整成绩](https://www.pokerstars.com/poker/learn/news/ept-barcelona-2026-full-results/)（2026 年 9 月 9 日查阅——冠军、奖金与参赛人次已逐项核对一致）
 
 ---
 
