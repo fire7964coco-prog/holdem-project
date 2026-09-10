@@ -77,7 +77,9 @@
     "check:answer-echo": "node scripts/check-answer-echo.mjs",
     "check:answer-echo:selftest": "node scripts/check-answer-echo.mjs --selftest",
     "check:structure": "node scripts/check-structure-parity.mjs",
-    "check:structure:selftest": "node scripts/check-structure-parity.mjs --selftest"
+    "check:structure:selftest": "node scripts/check-structure-parity.mjs --selftest",
+    "check:hygiene": "node scripts/check-locale-hygiene.mjs",
+    "check:hygiene:selftest": "node scripts/check-locale-hygiene.mjs --selftest"
   },
   "dependencies": {
     "@radix-ui/react-tabs": "^1.1.4",
