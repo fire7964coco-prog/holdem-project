@@ -160,15 +160,27 @@ const ALLOW = [
       '레이크 글에서 합법성은 곁다리다. de는 2026-08-12에 같은 취지로 닫혔고(그 자리를 자체 문항 ' +
       '「Warum nimmt der Cardroom überhaupt Rake?」로 채웠다), pt도 2026-09-10에 같은 판정으로 닫는다.',
   },
-  {
+    {
     slug: 'holdem-probability',
-    locales: ['ja', 'pt'],
+    locales: ['ja', 'pt', 'zh', 'zh-hant', 'de', 'id', 'es', 'ar'],
     kinds: ['faq'],
     reason:
-      '🔴 2026-09-09 헤드 판정(10)으로 «이미 닫힌» 자리다 — EN FAQ 「쿼드 에이스 확률」·「플랍 적중 32%」는 ' +
-      'ja·pt FAQ 세트에 «일부러» 없다(ja 회차 3 · pt 08-25 재저작으로 세트가 EN과 다르게 구성됨). ' +
-      '🔴🔴 2026-09-10 파리티 충전 회차가 pt에 「플랍 적중 32%」를 넣었다가 되돌렸다. ' +
-      '판정을 뒤집으려면 새 근거를 들고 헤드 판정을 다시 받아라 — 게이트 출력은 근거가 아니다.',
+      '🔴 EN FAQ 「쿼드 에이스 확률(1 in 7,700)」은 «전 핵심 로케일이 미보유»다 — 실측: zh 無 · zh-hant 無 · ja 無 · pt 無. ' +
+      '한 로케일의 변덕이 아니라 일관된 정본이므로 만들지 않는다(2026-09-09 헤드 판정 10을 2026-09-10에 전 로케일로 확장). ' +
+      '🪶 수치 자체는 참이다(C(48,3)/C(52,7) = 1/7,735 ≈ 1 in 7,700 · 「57% 경로」 = 12/21 = 57.1%) — ' +
+      '되살릴 때 재계산하지 말고 이 값을 쓰되, 되살리려면 헤드 판정을 다시 받아라. ' +
+      '🔴 「플랍 적중 32%」는 이 항목에 «해당하지 않는다» — 2026-09-10 헤드 판정으로 ' +
+      'zh-hant에는 넣었다(거울쌍 zh가 이미 보유 = 09-09와 다른 축) · ja·pt는 09-09대로 닫힌 채다.',
+  },
+  {
+    slug: 'holdem-game-order',
+    locales: ['zh-hant'],
+    kinds: ['faq'],
+    reason:
+      '🔴 2026-09-07 헤드 승인으로 «이미 닫힌» 자리다 — EN FAQ 「Who shows their cards first at showdown?」를 ' +
+      'zh-hant에 «일부러» 넣지 않는다. 같은 회차에서 「攤牌」(DFS 170) 태그를 game-order → holdem-showdown-rules로 ' +
+      '이관했고, showdown-rules가 H2 「攤牌時誰要先亮牌？」로 이 축의 주인이다. 태그를 넘기며 FAQ를 새로 만들면 자기모순. ' +
+      '정본 = docs/locale-intentional-diffs.md(2026-09-07 행).',
   },
 ];
 const allowHit = (loc, slug, kind) =>
