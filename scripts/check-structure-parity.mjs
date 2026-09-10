@@ -101,6 +101,33 @@ const ALLOW = [
       'es = 멕시코 ESTA·영사관 신분증(matrícula consular)·스페인어로 플레이·최저가 경로 / EN = 우승자·시청·상금·미국 온라인 예선. ' +
       '개수를 맞추려고 EN 문항을 옮겨 오면 스페인어권 독자에게 쓸모없는 FAQ가 된다.',
   },
+  {
+    slug: 'holdem-tournament',
+    locales: ['zh-hant'],
+    kinds: ['li'],
+    reason:
+      '2026-09-10 전건 원문 판정: zh-hant는 「報名 3가지 방식」의 B·C를 «일부러 산문으로 압축»했고 ' +
+      '대신 대만 전용 블록(立案的撲克協會 · 台北·台中·高雄)을 더했다. 내용은 다 있고 «형식»만 다르다 ' +
+      '(zh 13 li ↔ zh-hant 6 li + 산문 2문단 + 대만 블록). 🔴 불릿으로 되돌리려고 대만 블록을 밀어내지 마라.',
+  },
+  {
+    slug: 'apt-incheon-2026-guide',
+    locales: ['ja'],
+    kinds: ['li'],
+    reason:
+      '2026-09-10 전건 원문 판정: H2 개수는 EN과 같은데(15) 첫 절이 «일본 독자용으로 통째 교체»됐다 — ' +
+      'EN 「Why Korea in 2026? (The Non-Poker Case)」(불릿 5) ↔ ja 「日本から行くのに必要なものは? — パスポートだけ」. ' +
+      '결손이 아니라 시장 재저작이다. posting.mdc 「다국어 = 번역이 아니라 현지 재구성」.',
+  },
+  {
+    slug: 'korea-poker-marathon-2026',
+    locales: ['ja'],
+    kinds: ['li'],
+    reason:
+      '2026-09-10 실측: li 합계 EN 52 ↔ ja 51로 한 절에서 1개 차이뿐이다(8 ↔ 7). ' +
+      '이 글은 로케일마다 창구·세금·비자가 다른 재저작 글이라 불릿 하나의 병합은 결손으로 보지 않는다. ' +
+      '🔴 다른 종류(faq·h2·link)는 면제가 아니다 — li만이다.',
+  },
 ];
 const allowHit = (loc, slug, kind) =>
   ALLOW.find((a) => a.slug === slug && a.locales.includes(loc) && a.kinds.includes(kind));
