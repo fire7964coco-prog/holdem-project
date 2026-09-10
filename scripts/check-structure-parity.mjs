@@ -53,7 +53,10 @@ const contentOf = (src) => { const m = src.match(/content:\s*`([^`]*)`/); return
 /** 구조 요소를 센다 */
 export function measure(content) {
   const links = new Set();
-  for (const m of content.matchAll(/\]\((?:https?:\/\/(?:www\.)?holdemmaster\.com)?\/(?:[a-z-]{2,7}\/)?blog\/([a-z0-9-]+)\)/g)) links.add(m[1]);
+  // 🔴 썸네일 링크(제목 인자가 붙은 링크)도 내부링크다 — 허용하지 않으면
+  //    ① 로케일이 «가지고 있는데 없다»고 잡히고 ② EN 자신의 썸네일 링크가 기준선에서 통째로 빠진다.
+  //    2026-09-10 실측: zh-hant hand-rankings tiebreak 링크가 오탐 · EN kicker·probability는 미검사였다.
+  for (const m of content.matchAll(/\]\((?:https?:\/\/(?:www\.)?holdemmaster\.com)?\/(?:[a-z-]{2,7}\/)?blog\/([a-z0-9-]+)(?:\s+"[^"]*")?\)/g)) links.add(m[1]);
   const count = (re) => (content.match(re) ?? []).length;
   return {
     link: links,
@@ -93,6 +96,14 @@ function selftest() {
   cases.push(['절대 URL 내부링크도 센다', abs.link.has('holdem-outs')]);
   const ext = measure('[l](https://example.com/blog/holdem-outs)');
   cases.push(['외부 도메인은 내부링크가 아니다', !ext.link.has('holdem-outs')]);
+  const thumb = measure('[l](/zh-hant/blog/holdem-tiebreak-rules "thumb:/images/holdem-tiebreak-hero.webp")');
+  cases.push(['🔴 썸네일 링크도 내부링크로 센다', thumb.link.has('holdem-tiebreak-rules')]);
+  const thumbEn = measure('[l](/en/blog/holdem-kicker "thumb:/images/holdem-kicker-hero.webp")');
+  cases.push(['🔴 EN 기준선에도 썸네일 링크가 들어간다', thumbEn.link.has('holdem-kicker')]);
+  const titled = measure('[l](/blog/holdem-outs "그냥 제목")');
+  cases.push(['thumb가 아닌 제목이 붙어도 센다', titled.link.has('holdem-outs')]);
+  const imgOnly = measure('![i](/images/holdem-outs.webp)');
+  cases.push(['이미지 경로는 내부링크가 아니다', !imgOnly.link.has('holdem-outs')]);
   let pass = 0;
   for (const [name, ok] of cases) { if (ok) pass++; console.log(`${ok ? '✅' : '❌'} ${name}`); }
   console.log(`selftest ${pass}/${cases.length}`);
