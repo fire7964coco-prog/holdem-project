@@ -192,9 +192,9 @@
 - **玩家類型**: 魚(Fish)·鯊魚(Shark)·鯨魚(Whale)·跟注機器/跟注站(Calling Station)·常客(Reg)·磨石/穩定盈利型(Grinder)·岩石/石頭(Nit)·驢子(Donkey)·瘋子/狂人(Maniac)·LAG/TAG(라틴, 鬆凶/緊凶)·肥羊/目標(Mark).
 - **牌型·보드**: 暗三條(Set)·明三條(Trips)·堅果/最大牌(Nuts)·踢腳牌(Kicker)·葫蘆(Full House)·四條/鐵支(Quads)·卡順/買中洞(Gutshot)·兩頭順/活端順(Open-ended)·後門/送尾(Backdoor)·送尾(Runner-runner)·輪子(Wheel)·百老匯(Broadway)·超牌/高張(Overcard)·同花連張(Suited connectors)·口袋對(Pocket pair)·超對(Overpair)·頂對(Top pair)·成牌(Made hand)·聽牌(Draw).
 - **베팅**: 過牌(Check)·下注(Bet)·跟注(Call)·加注(Raise)·蓋牌(Fold)·全下(All-in)·跛入(Limp)·開池加注(Open)·3-bet/4-bet(라틴)·持續下注(C-bet)·領打(Donk bet)·價值下注(Value bet)·詐唬/半詐唬(Bluff/Semi-bluff)·過牌加注(Check-raise)·最小加注(Min-raise)·全下(Jam/Shove)·秒跟(Snap call)·英雄跟注/抓詐(Hero call).
-- **상황·스탯·에티켓**: 攤牌(Showdown)·蓋牌(Muck)·分池/平分底池(Chop)·搓牌/slow roll(라틴, 故意慢秀)·上頭/傾斜(Tilt)·破綻(Tell)·期望值EV·入池率/自願入池率(VPIP)·翻前加注率(PFR)·激進係數(AF, TW 추가)·GTO(라틴, 納許均衡)·範圍(Range)·冷牌組(Cold deck)·分兩次發(Run it twice)·單挑(Heads-up)·搶先加注(RFI)·潑池(Splash the pot).
+- **상황·스탯·에티켓**: 攤牌(Showdown)·蓋牌(Muck)·分池/平分底池(Chop)·搓牌/slow roll(라틴, 故意慢秀)·上頭/傾斜(Tilt)·破綻(Tell)·期望值EV·入池率/自願入池率(VPIP)·翻前加注率(PFR)·激進係數(AF, TW 추가)·GTO(라틴, 納許均衡)·範圍(Range)·冤家牌(Cold deck)·分兩次發(Run it twice)·單挑(Heads-up)·搶先加注(RFI)·潑池(Splash the pot).
 - **돈·게임**: 盲注(Blinds)·底注(Ante)·底池(Pot)·邊池(Side pot)·籌碼量(Stack)·資金/本金(Bankroll)·買入(Buy-in)·抽水(Rake)·抽水返還(Rakeback)·盲抓/抓頭(Straddle)·現金桌(Cash game)·無限注NLH/限注Limit·PLO·錦標賽(Tournament)·無重買/freezeout·保證獎池GTD·手手制(Hand-for-hand)·賞金/擊殺(Bounty)·SNG/MTT/ICM(라틴, 獨立籌碼模型).
-- **혼동쌍(EN 8쌍)**: 過牌 vs 跟注·盲注 vs 底注·暗三條 vs 明三條·冷牌組(Cooler) vs 爆冷門(Bad Beat) 🔴 회차 6 확정 · 冷牌(Cold deck)은 또 다른 말·價值下注 vs 詐唬·底池賠率 vs 隱含賠率·VPIP vs PFR·3-bet 계산(盲注=1st bet).
+- **혼동쌍(EN 8쌍)**: 過牌 vs 跟注·盲注 vs 底注·暗三條 vs 明三條·冤家牌(Cooler) vs 爆冷門(Bad Beat) 🔴 회차 6 확정 · 冷牌(Cold deck)은 또 다른 말·價值下注 vs 詐唬·底池賠率 vs 隱含賠率·VPIP vs PFR·3-bet 계산(盲注=1st bet).
 
 **★대만 특화 winnable(EN에 없음 — 신규 추가 후보):**
 - **水上/水下**: 局抽(session rake) 모델에서 이겨서 플러스=水上(승리분 10% 抽水), 져서 마이너스=水下(무抽水). taiwanrounders FAQ 포착 → FAQ/용어에 편입.
