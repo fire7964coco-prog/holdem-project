@@ -75,7 +75,9 @@
     "hooks:install": "node scripts/install-hooks.mjs",
     "hooks:selftest": "node scripts/hook-selftest.mjs",
     "check:answer-echo": "node scripts/check-answer-echo.mjs",
-    "check:answer-echo:selftest": "node scripts/check-answer-echo.mjs --selftest"
+    "check:answer-echo:selftest": "node scripts/check-answer-echo.mjs --selftest",
+    "check:structure": "node scripts/check-structure-parity.mjs",
+    "check:structure:selftest": "node scripts/check-structure-parity.mjs --selftest"
   },
   "dependencies": {
     "@radix-ui/react-tabs": "^1.1.4",
