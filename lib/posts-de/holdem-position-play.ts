@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In Position zu sein bedeutet, dass du zuletzt handelst – du siehst jede Entscheidung deiner Gegner, bevor du einen Chip ausgibst. Solver- und Datenbank-Studien legen nahe, dass Out-of-Position-Spieler nur etwa 60–85% ihrer Equity mitnehmen – in Position liegst du dann zwangsläufig über 100%. Deshalb öffnet UTG ~13% der Hände und der Button ~43% – und deshalb schreibt Position postflop jede C-Bet, jeden Bluff und jede Pot-Control-Entscheidung neu.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-09-09",
+  updated: "2026-09-10",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "16 Min.",
