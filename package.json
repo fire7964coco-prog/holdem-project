@@ -79,7 +79,9 @@
     "check:structure": "node scripts/check-structure-parity.mjs",
     "check:structure:selftest": "node scripts/check-structure-parity.mjs --selftest",
     "check:hygiene": "node scripts/check-locale-hygiene.mjs",
-    "check:hygiene:selftest": "node scripts/check-locale-hygiene.mjs --selftest"
+    "check:hygiene:selftest": "node scripts/check-locale-hygiene.mjs --selftest",
+    "check:handoff": "node scripts/check-handoff-size.mjs",
+    "check:handoff:selftest": "node scripts/check-handoff-size.mjs --selftest"
   },
   "dependencies": {
     "@radix-ui/react-tabs": "^1.1.4",
