@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "korea-poker-marathon-2026",
   title: "Corre y juega en Corea 2026 — maratones y póker en un solo viaje",
   seoTitle: "Póker y maratón Corea 2026 — Chuncheon, JTBC y Paradise City",
-  desc: "La inscripción de extranjeros al JTBC Seúl (1 nov) cierra el 4 de septiembre — Chuncheon y Garmin están llenas. Calendario, precios y póker en Paradise City.",
+  desc: "El plazo de extranjeros al JTBC Seúl (1 nov) depende del canal — Chuncheon y Garmin ya están llenas. Calendario, precios y póker en Paradise City.",
   tldr: "Los grandes maratones de otoño de Corea (Chuncheon 25 oct, JTBC Seúl 1 nov, Garmin Run 15 nov) coinciden con el clima ideal para correr. El casino Paradise City, junto al aeropuerto de Incheon, ofrece cash games todo el año — solo extranjeros, a 10 min de la terminal. Un viaje cubre ambas cosas. Para 2026, la única inscripción de extranjeros es la del JTBC, con fecha límite el 4 de sep.",
   category: "tournament",
   date: "2026-06-19",
@@ -123,7 +123,7 @@ El ==**JTBC Seoul Marathon**== es la carrera urbana estrella de Corea — de 25,
 - Pasaporte obligatorio en la recogida (sin recogida por terceros)
 
 **Cómo inscribirse (extranjeros):**
-Los corredores extranjeros residentes fuera de Corea se inscriben exclusivamente a través de ==**[worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon)**==. ==r:Las plazas son limitadas y se agotan pronto==, así que consulta la página oficial para ver la disponibilidad actual — ==r:**la inscripción cierra el 4 de septiembre de 2026**==, y esa misma fecha (23:59 KST) es también el límite de cancelación/reembolso. Los titulares de pasaporte coreano no pueden inscribirse por esta vía.
+Los corredores extranjeros residentes fuera de Corea se inscriben exclusivamente a través de ==**[worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon)**==. ==r:Las plazas son limitadas y se agotan pronto==, así que consulta la página oficial para ver la disponibilidad actual — ==r:**el plazo depende del canal que uses**==. La ventana japonesa de RUNNET llegó hasta el 4 de septiembre de 2026 y ya cerró; worldsmarathons.com es un canal aparte y puede seguir mostrando plazas, así que confírmalo ahí antes de contar con una. En cualquiera de los dos, el cierre de cancelación/reembolso cae el mismo día que cierra ese canal (23:59 KST) y es también el límite de cancelación/reembolso. Los titulares de pasaporte coreano no pueden inscribirse por esta vía.
 
 Los precios en ese canal son ==**€104 el 10K**== y ==**€129 el maratón completo de 42,2K**== (solo corredores del extranjero). Como en años anteriores ambas distancias se agotaron el primer día, ==g:la asignación pasó a sorteo==: inscribirse pronto ya no garantiza plaza, solo te mete en el sorteo. El dorsal se recoge en la EXPO antes de la carrera y el nombre de la inscripción debe coincidir con el pasaporte. El recorrido sale del ==**World Cup Park (Mapo-gu)**== y termina en el ==**Parque Olímpico (Songpa-gu)**==.
 
@@ -513,7 +513,7 @@ Corea tiene las mejores condiciones para correr en otoño de todo el este de Asi
 
 La comunidad de gente que mantiene a la vez un bankroll de póker y un cuaderno de entrenamiento de maratón es real. Suga de BTS no inventó ese solapamiento — solo lo hizo visible.
 
-Fechas para guardar: ==**Chuncheon 25 oct**==, ==**JTBC Seúl 1 nov**==, Garmin Run 15 nov — y la única inscripción de 2026 es la del JTBC, con fecha límite el 4 de septiembre. Paradise City abierto todo el año.
+Fechas para guardar: ==**Chuncheon 25 oct**==, ==**JTBC Seúl 1 nov**==, Garmin Run 15 nov — y en 2026 el JTBC fue la única inscripción abierta a extranjeros — el plazo depende del canal, así que confírmalo en la página oficial. Paradise City abierto todo el año.
 
 Para el panorama completo del torneo de póker (APT Incheon, $2.7M GTD, del 7 al 16 de agosto): [Guía del APT Incheon 2026](/es/blog/apt-incheon-2026-guide). Para las diferencias de estrategia entre torneo y cash game: [Torneos vs cash games](/es/blog/holdem-tournament-vs-cash-game).
 

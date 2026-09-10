@@ -4,7 +4,7 @@ export const POST: Post = {
   slug: "korea-poker-marathon-2026",
   title: "Korea Run + Play 2026 — Maraton & Poker dalam Satu Perjalanan",
   seoTitle: "Poker & Maraton Korea 2026 — Chuncheon, JTBC + Paradise City",
-  desc: "Pendaftaran asing JTBC Seoul (1 Nov) ditutup 4 September 2026 — Chuncheon dan Garmin sudah penuh. Kalender lomba, biaya, dan poker di Paradise City.",
+  desc: "Batas pendaftaran asing JTBC Seoul (1 Nov) beda per kanal — Chuncheon dan Garmin sudah penuh. Kalender lomba, biaya, dan poker di Paradise City.",
   tldr: "Maraton musim gugur terbaik Korea (Chuncheon 25 Okt, JTBC Seoul 1 Nov, Garmin Run 15 Nov) berpadu dengan cuaca lari yang sempurna. Paradise City Casino dekat Bandara Incheon menggelar cash game sepanjang tahun — khusus warga asing, 10 menit dari terminal. Satu perjalanan mencakup keduanya. Untuk 2026, satu-satunya registrasi asing adalah JTBC, batas 4 Sep.",
   category: "tournament",
   date: "2026-06-19",
@@ -123,7 +123,7 @@ Alasannya tidak rumit. Ini soal waktu dan lokasi.
 - Paspor diperlukan saat pengambilan (tidak boleh diwakilkan)
 
 **Cara registrasi (warga asing):**
-Pelari asing yang tinggal di luar Korea mendaftar khusus melalui ==**[worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon)**==. ==r:Kuota terbatas dan cepat penuh==, jadi cek halaman resmi untuk ketersediaan terkini — ==r:**pendaftaran ditutup 4 September 2026**==, dan tanggal yang sama (23:59 KST) juga batas pembatalan/refund. Pemegang paspor Korea tidak memenuhi syarat melalui kanal ini.
+Pelari asing yang tinggal di luar Korea mendaftar khusus melalui ==**[worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon)**==. ==r:Kuota terbatas dan cepat penuh==, jadi cek halaman resmi untuk ketersediaan terkini — ==r:**batas waktunya tergantung kanal yang Anda pakai**==. Jendela RUNNET (Jepang) berjalan sampai 4 September 2026 dan sudah tutup; worldsmarathons.com kanal terpisah dan bisa jadi masih menampilkan kuota, jadi pastikan di sana sebelum Anda mengandalkannya. Di kanal mana pun, batas pembatalan/refund jatuh pada hari kanal itu tutup, pukul 23:59 KST. Pemegang paspor Korea tidak memenuhi syarat melalui kanal ini.
 
 Biaya pendaftaran di kanal itu ==**€104 untuk 10K**== dan ==**€129 untuk maraton penuh 42,2K**== (khusus pelari luar negeri). Karena pada tahun-tahun sebelumnya kedua nomor habis di hari pertama, ==g:alokasinya berubah jadi undian==: mendaftar lebih awal tidak lagi menjamin slot, hanya memasukkan Anda ke undian. Race pack wajib diambil di EXPO sebelum hari lomba, dan nama pendaftaran harus sama dengan paspor. Rutenya start dari ==**World Cup Park (Mapo-gu)**== dan finis di ==**Olympic Park (Songpa-gu)**==.
 
