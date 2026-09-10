@@ -1,0 +1,2069 @@
+                   2026 World Series of Poker® Official Live Action Rules
+                           Paris Las Vegas Hotel, Las Vegas, Nevada
+
+SECTION I ­ GENERAL HOUSE RULES
+
+      As used herein, (a) "Host Properties"" means Paris Las Vegas Properties, LLC "Casino" means the facilities at the Paris Las Vegas Hotel and
+      Casino, located at 3655 S. Las Vegas Blvd, Las Vegas, Nevada 89109. (b) "WSOP" or "WSOP Live Action Cash Games" means the 2026 World
+      Series of Poker® event taking place at the Casino from May 26, 2026, through July 15, 2026 (dates subject to change), (c) the words "player" and
+      "participant" are used interchangeably and (d) "WSOP Live Action Cash Games" means any individual WSOP Live Action Cash Game. A current
+      list of WSOP Events is available at www.WSOP.com/2026 and is subject to change.
+
+      1. Entry into the World Series of Poker (herein "Live-Action" refers to designated poker events at the (Paris Las Vegas Hotel and Casino from
+             May 27th, 2026, through July 16th, 2026, in the Paris Las Vegas Convention Center is limited to persons 21 years of age and older, with proof
+             of age, that Paris Las Vegas Hotel and Casino acting in its sole and absolute discretion, deems appropriate.
+
+      2. Individuals who are excluded from casino facilities, either through a government program or by their own request, are not eligible.
+
+      3. Participants must show their current, valid and unexpired picture identification (current passport, driver's license or state or military
+             identification card) acceptable to Paris Las Vegas Hotel and Casino when registering for a game at a Live-Action podium. If a participant is not
+             a U.S. citizen, a valid and unexpired current passport, foreign government issued Driver's License (must have a photograph, the date of birth
+             and a valid expiration date), Consular ID or Matricula Consular Card (Mexico only) or alien registration card is required. Participants, known
+             by staff, to already have shown identification may be allowed to play without having card present at time of play.
+
+      4. Participants are required to obtain a Caesars Rewards Card prior to playing in any game located in Live-Action. Caesars Rewards Cards are
+             available without payment of any kind at the Caesars Rewards Desk next to registration in the Convention Center or in the casino area of the
+             Casino or the casino of any of Paris Las Vegas Hotel and Casino affiliates. Participants, known by staff, to have already presented a Caesars
+             Rewards Card may be allowed to play without having card present at time of play.
+
+      5. Players in live action will earn Rewards Credits with their Caesars Rewards card. Reward Credits are earned at a minimum rate of 100
+             Reward Credits per hour for all qualifying live cash game play when using a Caesars Rewards Card. Members must use their own Caesars
+             Rewards Card to earn, accumulate, and redeem credits. Comp Dollars may be redeemed at a 1:1 rate at participating Caesars Entertainment
+             restaurant locations across the United States, as well as at select non-gaming outlets within Caesars Entertainment properties, subject to
+             individual property rules. Reward Credits will expire if no new Reward Credits are earned within a six-month period. To avoid expiration,
+             members must earn at least one Reward Credit every six months. Members are responsible for ensuring the proper use of their Caesars
+             Rewards Card at all times.
+
+      6. Caesars Entertainment reserves the right to accommodate participants based on special needs.
+
+      7. Floor decisions are final. In the event that there is a dispute with a ruling made by someone other than the Live-Action Shift Lead Manager on
+             Duty, a participant can opt to request a decision from the Lead Manager. Once the Lead Manager has made a ruling, this ruling is final.
+
+      8. Participants must protect their own hands at all times.
+
+      9. Management reserves the right to make decisions that are fair and equitable. In exceptional circumstances, management may award a pot or
+             decision to a player who is clearly entitled to it based on the spirit of the rule, rather than its literal interpretation
+
+      10. Discourteous behavior, disrespect towards staff or fellow players, and the use of abusive language will not be tolerated and may result in
+             removal from the poker room.
+
+      11. A minimum buy-in is ten times the minimum bet in limit games unless otherwise specified. Minimum buy-ins are posted on the table placard for
+             all other games.
+
+      12. Participants are not permitted to transfer tables without House consent.
+
+      13. The House has the right in its sole discretion to enforce a dress code. This rule shall include, but is not limited to, any Participant whose
+             personal hygiene has become disruptive to the other Participants seated at their table. The determination as to whether an individual's
+             personal hygiene is disruptive to other Participants shall be determined by the WSOP Tournament Staff which may, in its discretion,
+
+                                                                 -1-
+                                  Caesars Entertainment WSOP Live-Action Rules 2026
+      implement sanctions upon any such Participant who refuses to remedy the situation in a manner satisfactory to Paris Las Vegas Hotel and
+      Casino
+
+14. A participant may only request to see another participant's hand if collusion is suspected, and then only in the presence of a floor-person.
+
+15. The winning hand must show all cards prior to the pot being pushed, unless that hand is the only live hand remaining. Cards speak for
+      themselves. Dealers will assist in reading hands and assigning the correct value to any tabled hand.
+
+16. A verbal statement of fold, check, call, raise or a specific size bet is binding on an active participant.
+
+17. Action out of turn will be binding if the action to that participant has not changed. A check, call or fold is not considered action changing. If a
+      participant acts out of turn and the action changes, the person who acted out of turn may change their action by calling, raising or folding and
+      may have their chips returned. Participants may not intentionally act out of turn to influence play before them.
+
+18. Conditional statements of future action are strongly discouraged and may be binding i.e. "If-then" statements such as "if you bet, then I will
+      raise."
+
+19. Players must keep their cards on the table and in clear view at all times. Games that are an exception to this rule are Open-Face Chinese and
+      Chinese Poker.
+
+20. Each hand must be played by one player only--no assistance or collaboration is permitted.
+
+21. Real-Time Assistance is strictly prohibited. Players may not use any electronic device, software, or communication method to receive
+      coaching, advice, analysis, solver output, or other strategic assistance about any live hand in play. This includes external devices, phone calls,
+      text messages, smart watches, ear pieces, or any live streaming of hole cards to any third party. Evidence of possession, use, or transmission
+      of strategic assistance during play may result in immediate removal from the table, forfeiture of chips, denial of winnings, and a permanent ban
+      pending investigation. The floor may confiscate devices for the duration of an investigation per applicable law.
+
+22. A live straddle bet is allowed in all blind games. The player posting the straddle will have last action in the opening round of betting and retains
+      the option to raise. Unless otherwise specified, the straddle amount is twice the big blind. A straddle may be posted from either Under the Gun
+      (UTG) or the Button, with the Button straddle taking precedence. Action will always start to the immediate left of the straddle. Button straddles
+      are not permitted in limit games. The minimum raise following a live straddle is twice the straddle amount. Unless explicitly stated on the game
+      placard, straddles are optional and not mandatory, regardless of table consensus. New players may not be compelled to straddle upon joining
+      a game.
+
+      Straddle Limits by Game:
+      · In 1-2-5 games: One live straddle is permitted, capped at $10.
+      · In 5-5-10 and above: One additional straddle is permitted. (e.g. The first straddle is $20, with a re-straddle, from any position, allowed up
+
+             to a maximum of $40.)
+
+23. A boxed card is a card discovered face up in the deck. It will be treated as a meaningless scrap of paper. A boxed card will be replaced by the
+      next card below it in the deck, except when the next card has already been dealt facedown to another participant and mixed in with other
+      down-cards. In that case, the card that was face up in the deck will be replaced after all other cards are dealt for that round. If 2 or more
+      boxed cards appear as any of the cards needed to play the hand, the hand in progress will be void and all monies returned to the participants
+      involved.
+
+             a. In Open-Face Chinese Poker, the presence of a boxed card is treated differently. During the initial dealing of the participants' five
+                    cards, the presence of a boxed card will result in a misdeal. After the participants have set the initial five cards, a participant will be
+                    forced to play any subsequent boxed card that appears in the deck. If two or more boxed cards appear before the participants have
+                    set the second draw, the hand will be misdealt. After the second draw has been set, participants will be forced to play any boxed
+                    cards that appear in the deck. If a misdeal occurs in Open-Face Chinese Poker, a participant who was supposed to be in
+                    Fantasyland for the misdealt hand will remain in Fantasyland for the re-deal.
+
+24. Foreign cards in a deck void a hand.
+
+25. Foreign cards are not allowed in view in the Poker Room.
+
+26. All cell phones and other voice-enabled and "ringing" devices are allowed as long as it does not impede the progress of the game. Participants
+      not involved in a hand (cards in muck) shall be permitted to text/email at the table but shall not be permitted to text/email any other participant
+      at the table. If Caesars Entertainment, acting in its sole and absolute discretion, believes a participant is communicating with another
+      participant at the table, both parties will be immediately removed from the Poker Room.
+
+27. Participants are allowed to use approved electronic devices, iPods, MP3 and other music participants or noise reduction headsets during Live
+      Action play if their use does interfere with play. Approved electronic devices cannot be used to collude, cheat, or communicate with another
+      participant during a hand. No electronic devices will be placed on the poker table in a manner that obstructs view or impedes gameplay.
+
+                                                             -2-
+                              Caesars Entertainment WSOP Live-Action Rules 2026
+      28. Live streaming is not permitted without prior house consent.
+
+      29. Only English may be spoken at the table while cards are in play. This also applies to those who are watching a game and communicating with
+             a participant in the game. Speaking a foreign language while any hand is in progress is not allowed, regardless of whether a participant has
+             cards or not.
+
+      30. The use of tobacco products is strictly prohibited in the Ballroom. This includes, but is not limited to, cigarettes, e-cigarettes, vaping devices,
+             and chewing tobacco.
+
+      31. House Rake is 10%, up to $6 maximum unless the game is time raked with the rate indicated on the placard. In time raked games, the
+             participants may opt to play a "time-pot", "time-flop" or "bomb pot" where the entirety of the rake for the half hour is taken from the pot on the
+             hand that is dealt immediately after the time collection announcement made every thirty minutes.
+
+                           · "time-pot" In a game that requires a time collection, a pot designated such that the winner of the pot agrees to pay for the time
+                                 collection of all players at the table. A player may choose to opt out of the time pot and pay only for themselves.
+
+                           · "time-flop" An agreement by all players to pay time. The door card, meaning first card seen off the flop represents the seat
+                                 number that pays. So, for example, if the flop comes KJ7 the 7 was first to appear, then seat 7 pays time for everyone that half
+                                 hour. A player may choose to opt out of the time flop and pay only for themselves.
+
+                           · "bomb pot" An agreement by all players to ante the same amount, then the hole cards are dealt, and the flop put out. Play
+                                 proceeds "normally" from that point, with every player having seen the flop with totally random hands. The time collection will
+                                 be collected from the bomb pot. A player may choose to opt out of the bomb pot and pay only for themselves. (See below.)
+                                        o If players agree to a "bomb pot" but cannot agree on the amount to ante, then the following ruling will be made.
+                                                                                 o $1-$2-$5 limit type games- each player will ante $20
+                                                                                 o $5-$5 and above limit type games- each player will ante $25
+                                        o If a player(s) does not want to participate in a "bomb pot" and elects to pay their own time, they may do so, but they
+                                               will not be dealt in during the "bomb pot" hand. The button does not advance in a "bomb pot" hand so the player(s)
+                                               electing not to participate in the "bomb pot" will not be losing any positional equity.
+
+      32. Nevada Gaming Regulations allow the use of Shills and Proposition Participants. Shills and Proposition Participants shall be identified by
+             management upon request.
+
+SECTION II ­ PARTICIPANT CONDUCT AND LIVE GAME INTEGRITY
+
+The following is a list of violations that may result in removal from and probable permanent barring from the poker room.
+
+      33. Verbally or physically threatening any patron or employee.
+
+      34. Using profanity or obscene language. The occasional outburst may be tolerated, but participants should be given a warning by the dealer
+             regarding profanity. Obscene expletives or lewdness will not be tolerated.
+
+      35. Collusion with another participant or any other form of cheating is completely unacceptable and can be grounds for immediate and permanent
+             expulsion from the room. Collusion includes any coordinated or cooperative action between players intended to give one or more players an
+             advantage, including but not limited to chip dumping, soft-playing, signaling, or sharing hole-card information.
+
+      36. Creating a disturbance by arguing, shouting, or making excessive noise.
+
+      37. Throwing, tearing, bending, or crumpling cards.
+
+      38. Destroying or defacing property.
+
+      39. Using an illegal substance or being too intoxicated.
+
+      40. Carrying a weapon.
+
+      41. Deliberately acting out of turn.
+
+      42. Deliberately splashing chips into the pot.
+
+      43. Agreeing to check a hand down when another participant is all-in.
+
+      44. Reading a hand for another participant at the showdown before it has been placed face up on the table.
+
+      45. Telling anyone to turn a hand face-up at the showdown.
+
+      46. Revealing the contents of a live hand in a multi-handed pot before the betting is complete.
+
+                                                                 -3-
+                                  Caesars Entertainment WSOP Live-Action Rules 2026
+      47. Revealing the contents of a folded hand before the betting is complete. Do not divulge the contents of a hand during a deal even to someone
+             not in the pot so you do not create any possibility of the information being transmitted to an active participant.
+
+      48. Needlessly stalling the action of a game.
+
+      49. Deliberately discarding hands away from the muck. Cards should be released in a low line of flight, at a moderate rate of speed; not at the
+             dealer's hands or chip-rack.
+
+      50. Stacking chips in a manner that interferes with dealing or viewing cards. Participants are entitled to a reasonable estimation of an opponent's
+             chip count; thus chips should be kept in countable stacks. Clean stacks in multiples of 20 are recommended as a standard. Participants must
+             keep their higher denomination chips visible and identifiable at all times.
+
+      51. Making statements or taking action that could unfairly influence the course of play, whether or not the offender is involved in the pot.
+
+SECTION III ­ HOUSE POLICIES
+
+      52. Management reserves the right to make decisions in the spirit of fairness, even if a strict interpretation of the rules may indicate a different
+             ruling. A participant who commits an infraction should not profit from it and, conversely, a participant who has done nothing wrong should not
+             be placed at a disadvantage.
+
+      53. The proper time to draw attention to an error or irregularity is when it occurs or is first noticed. Any delay may affect the ruling.
+
+      54. If an incorrect rule interpretation or decision by an employee is made in good faith, the establishment has no liability.
+
+      55. A request for a ruling must be made prior to the start of the next hand or before the game either ends or changes to another table. Otherwise,
+             the result of the prior hand will stand. The first riffle of the shuffle marks the start for a deal. On tables with shuffle machines the start of a new
+             deal is once the button has been pushed on the shuffle machine. However, in the event that a possible house error occurred, a supervisor will
+             make all necessary efforts to correct the outcome of the hand in question, even is the mistake is brought to light after the next hand has
+             begun.
+
+      56. If a pot has been incorrectly awarded and mingled with chips that were not in the pot, and the time limit for a ruling request given in the
+             previous rule has not expired, management may determine how much was in the pot by reconstructing the betting, and then transfer that
+             amount to the proper participant.
+
+      57. To keep the action moving, it is possible that a game may be asked to continue even though a decision is delayed for a short period. The
+             delay could be needed to check with surveillance, or get the Shift Lead Supervisor to give the ruling. In such circumstances, a pot or portion
+             thereof may be taken off of the table by the house while the decision is pending.
+
+      58. The same action from two different participants may have a different meaning, depending on the participant who commits that action, so it is
+             possible that the intent of an offender will be taken into consideration to make the fairest ruling possible. A participant's past record of behavior
+             may be used to determine participant intent and consequently the outcome of the hand
+
+SECTION IV ­ PROCEDURES
+
+These are the standard procedures that are used and generally accepted in card rooms around the U.S. They are subject to Nevada State Gaming
+Regulations as well as company policies, local customs, participant preferences and security and surveillance considerations.
+
+      59. Cash does not play and is not permitted to remain on the table as any part of a participant's stakes. However, cash that is in transit or waiting
+             to get picked up by a chip runner will be in play as long as it was announced by the dealer before the start of the hand.
+
+      60. Only chips belonging to Paris Las Vegas Hotel and Casino will be valid stakes at tables.
+
+      61. Chips may be removed for security purposes when leaving the table. The establishment is not responsible for any shortage or removal of
+             chips left on the table during a participant's absence, even though we will try to protect everyone as best we can. All removed funds must be
+             fully restored when returning to the game.
+
+      62. If you return to the same game within one hour of cashing out, your buy-in must be equal to the amount removed when leaving that game.
+
+      63. If you transfer tables and go to the same game, you must bring your full stack with you. If a game has a maximum buy-in, voluntary table
+             transfers will not be allowed to a new game within the first hour if you exceed the maximum buy in for the game. When voluntarily switching
+             games you need to meet the minimum buy-in for that game.
+
+      64. All games are table stakes unless otherwise posted. Only the chips in front of a participant at the start of a deal may play for that hand.
+             Awareness of the amount in play for each opponent is an important part of poker. Players must always keep their higher denomination chips
+             visible and identifiable.
+
+                                                                 -4-
+                                  Caesars Entertainment WSOP Live-Action Rules 2026
+65. Playing from a chip rack is not permitted. If a participant places chips in a rack in preparation to leave the game, they must still maintain a
+      playable, effective stack of chips on the table--outside of the rack. Chip racks may be removed from the table at any time if they obstruct
+      visibility or interfere with gameplay. Management reserves the right to let a player with special needs play out of a rack.
+
+66. Only one person may play a hand.
+
+67. No one is allowed to play another participant's chips.
+
+68. Playing over is allowed with floor supervisor's permission. The participant will be allowed to play until his or her blind upon the initial participant
+      returning to the game. Note: If in a time collection game, time will be collected from both the play over and the participant being played over.
+
+69. Pushing bets, "saving" or "potting out" is not allowed. This means that participants are not allowed to retract any bets that have been
+      committed to the pot.
+
+70. Pushing an ante or posting for another person is not allowed.
+
+71. Participants will not be allowed to agree to split pots in any game. Chopping the big and small blind by taking them back when all other
+      participants have folded is allowed in button games.
+
+72. Insurance propositions are not allowed.
+
+73. The game's betting limit will not be changed if two or more participants object. A game's betting limit cannot be changed if there are
+      participants on the waiting list for that game unless there are multiple games of that same type and limit. The supervisor may suggest that the
+      objector(s) move to a similar sized game, if seating is available. Raising the limit is always subject to management approval and a change in
+      rake or collection. If a game's betting limit has been changed without management approval, any necessary rulings will be made considering
+      the original betting limit.
+
+74. To begin a new table of a similar game type when there are multiple games of the same type, the betting limits must be twice the size of the
+      existing game below it and no more than half of the size of the game above it. To begin a new mixed game table of the same betting limit, the
+      game mix must have more than a 50% difference in game variety
+
+                    · New participants and/or existing participants that have missed a blind may post or make up their blinds. The position to the left
+                           of the big blind will have to sit out if there are more than 6 players being dealt in. A participant that has missed their blind, may
+                           wait until the position to the left of the big blind and straddle. In this circumstance the participants will play 7 handed for that
+                           hand.
+
+75. Participants must keep their cards in full view. This means above table-level and not past the edge of the table. The cards should not be
+      covered by a participant's hands or hidden behind chips in a manner to conceal them creating confusion or false action. A hand may be ruled
+      dead if a participant's cards are hidden from view and significant action has occurred before that participant brings attention to their hand.
+
+76. Any participant is entitled to a clear view of an opponent's chips. Higher denomination chips must be easily visible to all participants at the
+      table. If a participant requests an accurate chip count for another participant, the dealer is responsible for counting out the chips if the
+      participant does not want to count out their own chips. If a participant's chips are not visible to all participants at the table and a discrepancy
+      arises, a Floor Supervisor's decision may be influenced concerning the bet size.
+
+77. A participant's chips may be picked up if they miss a blind and receive two (2) absent buttons or one hour. A participant should receive a
+      missed blind button the first time they miss a blind. An absent button will be given by the next dealer to any empty seat with a missed blind
+      button. Absences may be extended if the supervisor is notified in advance and the situation warrants. Excessive absences may also cause a
+      participant's chips to be picked up from the table.
+
+78. Second-man-walking rule; If one participant is away from the table, a second participant wanting to leave must return in time for his or her next
+      blinds or wait until one of the other absent participants return. If this participant has been warned of this rule and still chooses to leave the
+      table, the participant may be picked up from the game after missing a blind.
+
+79. A new setup may be requested every two hours, unless a deck is defective or damaged and needs to be replaced.
+
+80. Looking through the discards or deck stub is not allowed.
+
+81. Rabbit hunting is not allowed. After a deal ends, dealers are not to show what card would have been dealt next.
+
+82. Participants are expected to remain attentive to the game and avoid delaying play. Activities that interfere with gameplay--such as reading,
+      using cell phones, headphones, or other personal electronic devices--are discouraged. Participants may be asked to remove such items from
+      the table or leave the game if their use disrupts the flow of play.
+
+83. At Your Seat: A participant must be at his or her seat by the time all participants have been dealt complete initial hands to have a live hand.
+      Participants must be at their seats to call the clock. "At your seat" is defined as being within reach or touch of your chair.
+
+84. Action Pending: participants must remain at their seat if they still have action pending on a live hand. If a participant abandons their seat
+      before they have acted on their hand, the hand will be ruled dead.
+
+                                                             -5-
+                              Caesars Entertainment WSOP Live-Action Rules 2026
+      85. Calling-for-clock procedures: Once a reasonable amount of time, which is no less than two minutes, has passed and a clock is called, a
+             participant will be given one (1) minute to act. If action has not been taken by the time the minute has expired, there will be a ten (10) second
+             countdown. If a participant has not acted on his hand by the time the countdown is over, the hand will be dead. Live Action Supervisors
+             reserve the right to speed up the amount of time allotted for a clock if it appears that a participant is deliberately stalling. Anyone that was dealt
+             into the hand may call for a clock.
+
+      86. In non-tournament games, you may have a guest sit behind you if no one in the game objects. It is improper for a guest to look at any hand in
+             action, and may result in the removal of the guest. No participant may have more than one guest observing the game and this guest cannot
+             be seated directly at the table. Guests sweating your action may not be entitled to free beverage service.
+
+SECTION V ­ SEATING
+
+      87. Participants must sign up at the Live Action podium to play in a live action game. Participants may also join our online waitlist via
+             bravopokerlive.com. Any participant signing up online will have one hour to check in at the live action podium. Participants will be removed
+             from all lists if they have not checked in with a live action board operator one hour after joining the online waitlist. Phone-ins are not allowed. It
+             is the participant's responsibility to be in the area to hear their name called. If the participant may not be in the room when this announcement
+             is happening, they should notify the floor.
+
+      88. Permission from the floor supervisor or a live action board operator is required before taking a seat in a game.
+
+      89. Participants holding Diamond or Seven Star tier-level Total Rewards Cards will be given priority on the list with Seven Stars taking
+             precedence.
+
+      90. When there is more than one game of the same stakes, and a must-move is not being used, the house will control the seating of new
+             participants to best preserve the viability of existing games. A new participant will be sent to the game most in need of an additional
+             participant. A transfer to a similar game is not allowed if the game being left will then have fewer participants than the game being entered.
+
+      91. A lock-up in a new game will be picked up after ten minutes if someone is waiting to play.
+
+      92. A participant may not hold a seat in more than one game.
+
+      93. Only participants who are active and approved by the supervisor to play in a game may sit at the table.
+
+      94. The house reserves the right to require that any two participants not play in the same game.
+
+      95. When a button game begins, the dealer will high-card to determine the button position. The button will be awarded to the highest card by rank
+             and suit, with the Ace of Spades being the highest.
+
+      96. In a new game, the participant who arrives at the table the earliest gets first choice of remaining seats. If two participants want the same seat
+             and arrive at the same time, the higher participant on the list has preference. A participant playing a pot in another game may have a
+             designated seat locked up until that hand is finished. Management may reserve a certain seat for a participant for a good reason, such as to
+             assist reading the board for a person with a vision issue.
+
+      97. To avoid a seating dispute, a supervisor may decide to start the game with one extra participant over the normal number participating. If so, a
+             seat will be removed as soon as someone quits the game.
+
+      98. A participant who is already in the game has precedence over a new participant for any seat when it becomes available. For participants
+             already in the game, the one who asks the earliest has preference for a seat change. No change will occur once the current hand completes,
+             and the next hand begins.
+
+      99. In all button games, a participant voluntarily locking up a seat in another game must move immediately, except that the participant is entitled to
+             play the button if a blind has already been taken. In a stud game, a participant changing tables may play only the present hand if someone is
+             waiting for the seat being vacated, or one more hand when no one is waiting.
+
+      100. When a game breaks, each participant may draw a card to determine the seating order for a similar game. The floor supervisor draws a card
+             for an absent participant as long as the absent participant does not have a missed blind button. If the card entitles the absent participant
+             without a missed blind button to an immediate seat, the participant has until due for the big blind in a button game to take the seat or two
+             hands in a stud game and will be put first up on the list if not back in time. Participants with missed blind buttons will go to the bottom of the list
+             for that particular game. In some instances, the Floor Supervisor will add a chair to an existing game in order to accommodate all participants
+             from the broken games, i.e., making a 8 handed table 9 handed until a participant opts to leave the game. If a participant has a Diamond or
+             Seven Star tier-level Total Rewards Card, this participant will still have to draw for available seating and will not have precedence on the list
+             over participants from a broken game.
+
+Must Moves:
+
+      101. To protect existing games, a forced "MUST MOVE" may be invoked when an additional game of the same type and limit is started. The must-
+             move list is maintained in the same order as the original waiting list. If a participant refuses to move into the main game, he/she will be forced
+             to quit and cannot play in the must-move game or get on the list for one hour. If a third table is started, the first two games are then
+             considered main games, and the newest table becomes the must-move game. If the third table later breaks, the other 2 tables will remain
+
+                                                                 -6-
+                                  Caesars Entertainment WSOP Live-Action Rules 2026
+             "Main Games" There will be a guaranteed minimum in all must move the main game(s) 8 handed main games will have a 7 player guarantee,
+             and 7 handed main games will have a 6 player guarantee.
+
+      102. If a new game starts and you're on the list, you must play in said new game (or must-move game) to retain your place on the list, if by your
+             playing there would be four or more participants at a nine-handed table or three or more participants at a six-handed table.
+
+      103. In all button games, a participant going from a must-move game to the main game must move immediately from any position other than the
+             small-blind or the button. That participant then moves to the main game with the option of waiting to assume any position in the main game,
+             other than best-position, without posting. In all stud games, a participant may play only one more hand before moving. In Flop games, the
+             player does not have the option to let the button pass by.
+
+                           · $50 - $100 Omaha 8/O ­ A "Daisy Chain" will be used. A must move will be invoked when an additional game is started. The
+                                 must-move list is maintained in the same order as the original waiting list. If a participant refuses to move into the main game,
+                                 he/she will be forced to quit and cannot play in the must-move game or get on the list for one hour. If a third table is started the
+                                 newest table becomes the must-move game into the second game. i.e. The first game started will always be the main game.
+                                 The second game started will always be the "Must Move" game into the first. If a 3rd game is started, the 3rd game will be the
+                                 "Must Move" into the second game. The same will apply if a 4th, 5th, 6th, etc. game starts. Participants must move immediately
+                                 if it's their turn, unless they are a blind or the button. If they are a blind, they may play their blind/s and the button and then
+                                 move. Participants moving into a main game will not be required to post, and they may opt to come in after the button.
+                                 Participants moving from a must move to the main game may not assume the small blind or button position.
+
+`
+                           · $10 - $20 & $20 - $40 Omaha 8/O ­ A "Must Move" will be invoked when an additional game is started. The must-move list is
+                                 maintained in the same order as the original waiting list. If a participant refuses to move into the main game, he/she will be
+                                 forced to quit and cannot play in the must-move game or get on the list for one hour. If a third table is started, the first two
+                                 games are then considered main games, and the newest table becomes the must-move game. If the third table later breaks,
+                                 the other 2 tables will remain "Main Games". Participants must move immediately if it's their turn, unless they are a blind or the
+                                 button. If they are a blind, they may play their blind/s and the button and then move. Participants moving into a main game will
+                                 not be required to post, and they may opt to come in after the button. Participants moving from a must move to the main game
+                                 may not assume the small blind or button position.
+
+                           · $50 - $100 7 Card Stud & Stud 8/O ­ A "Daisy Chain" will be used. A must move will be invoked when an additional game is
+                                 started. The must-move list is maintained in the same order as the original waiting list. If a participant refuses to move into the
+                                 main game, he/she will be forced to quit and cannot play in the must-move game or get on the list for one hour. If a third table
+                                 is started the newest table becomes the must-move game into the second game. i.e. The first game started will always be the
+                                 main game. The second game started will always be the "Must Move" game into the first. If a 3rd game is started, the 3rd game
+                                 will be the "Must Move" into the second game. The same will apply if a 4th, 5th, 6th, etc. game starts.
+
+                           · MIXED GAMES ­ A "Must Move" may be invoked when an additional game of the same type and limit is started. The Mix of
+                                 games must be at least 50% of the main games to qualify as a "Must Move" game. Example: The first $20 - $40 MIX game is
+                                 playing Hold'em, Razz, Stud 8/O, Badugi, Super Stud, and Super Stud 8/O. If a second $20 - $40 MIX game starts, and is
+                                 playing Hold'em, Razz, Stud 8/O, Badacey, Baduci, and Omaha High Only, it would be started as a "Must Move" as there are
+                                 50% of the same games being played in the first $20 - $40 MIX game. However, if the second $20 - $40 MIX starts and is
+                                 playing Badugi, Badaci, Razzdugi, and Razzduci, Stud High/Low Regular, and Super Stud it will be a "Main Game" as the
+                                 games being played are not 50% of the same games being played in the first $20 - $40 Mix. The same applies to any
+                                 additional games that are started. If a third table is started, the first two games are then considered main games, and the
+                                 newest table becomes the must-move game. If the third table later breaks, the other 2 tables will remain "Main Games".
+                                 Participants must move immediately if it's their turn, unless they are a blind or the button. If they are a blind, they may play their
+                                 blind/s and the button and then move. Participants moving into a main game will not be required to post, and they may opt to
+                                 come in after the button except in triple draw. If the participant being moved is playing an ante game but has a missed blind
+                                 button from a flop game round, that participant will carry over their missed blind button going into the main game. Participants
+                                 moving from a must move to the main game may not assume the small blind or button position.
+
+SECTION VI ­ GENERAL POKER RULES
+
+                                  THE BUY-IN
+
+104. When a participant enters a new game they must make at least a full buy-in and they must get their first buy-in at the live action cage before
+      entering a game. At limit poker, a full buy-in is ten (10) times the small bet for the game being played unless designated otherwise. Example:
+      For 4 - 8 Limit, the minimum bet is $4, a full buy-in is $40.
+             a. New participants entering Limit games will be required to post the big blind to receive a hand. New players entering in No-Limit or
+                    Pot-Limit games will not be required to post. In Stud games, the ante is considered adequate for posting purposes.
+
+105. Short buys are not allowed.
+
+106. A participant coming from a broken game or must-move game to a game of the same limit will continue to play the same amount of money. If it
+      is less than the minimum buy-in for that game the participant will be allowed to play, with an option to re-buy more chips.
+
+                                                             -7-
+                              Caesars Entertainment WSOP Live-Action Rules 2026
+107. A participant voluntarily switching games of the same type must take their entire stack regardless of the maximum buy-in for that game. If a
+      game has a maximum buy-in, voluntary table transfers will not be allowed to a new game within the first hour if you exceed the maximum buy
+      in for the game. When voluntarily switching games you need to meet the minimum buy-in for that game.
+
+                                                                                       MISDEALS
+
+108. The following circumstances cause a misdeal, provided attention is called to the error before substantial action (see Rule 107) has occurred.
+              The first or second card of the hand has been dealt face up or exposed through dealer error.
+              Two or more cards have been exposed by the dealer.
+              Two or more boxed cards are found among the cards needed for the completion of the hand.
+              Two or more extra cards have been dealt in the starting hands of a game.
+              An incorrect number of cards have been dealt to a participant, except the top card may be dealt if it goes to the participant in proper
+                    sequence.
+              Any card has been dealt out of the proper sequence, except an exposed card may be replaced by the burn card.
+              The button was out of position.
+              The first card was dealt to the wrong position.
+              A participant has been dealt out who is entitled to a hand. This participant must be present at the table or have posted a blind or ante.
+
+109. Once there is substantial action, a misdeal cannot be called. The deal will be played, and no money will be returned to any participant whose
+      hand is fouled. In button games, substantial action is considered: three folds, three checks, or any two actions consisting of a
+      check/bet/call/fold except for two folds or two checks. In stud games, action is considered to occur when two participants after the forced bet
+      have acted on their hands. In Open-Face Chinese Poker and it variations, substantial action occurs after participants have set their second
+      draw.
+
+                                                                                    DEAD HANDS
+
+110. Your hand is declared dead if:
+              You fold or announce that you are folding when facing a bet or a raise.
+              You throw your hand away in a forward motion causing another participant to act behind you even if not facing a bet. Discarding
+                    non-tabled cards face down does not automatically kill them; a participant may still table the cards if they remain 100% identifiable.
+              Cards are killed by the dealer when pushed into the muck.
+              In stud, when facing a bet, you pick your up-cards off the table, turn your up-cards facedown, or mix your up-cards and down-cards
+                    together.
+              The hand does not contain the proper number of cards for that particular game, except at stud a hand missing the final card may be
+                    ruled live, and at lowball and draw high a hand with too few cards before the draw is live.
+              You act on a hand with a joker as a hole-card in a game not using a joker. A participant who acts on a hand without looking at a card
+                    assumes the liability of finding an improper card.
+              You have the clock on you when facing a bet or raise and exceed the specified time limit.
+              Due to the unique game play in Open-Face Chinese, dead hands for that game type are described in the rules governing that game.
+
+111. Cards thrown into the muck may be ruled dead. However, a hand that is clearly identifiable may be retrieved and ruled live at management's
+      discretion if doing so is in the best interest of the game. An extra effort will be made to rule a hand retrievable if it was folded as a result of
+      dealer error or incorrect information given to/by a participant.
+
+112. Cards thrown into another participant's hand are dead, whether they are face-up or facedown. A participant throwing hole cards into the hole-
+      cards of a blind may cause a re-deal. The offending participant will receive a hand, but it will be dealt dead.
+
+                                                                            POKER IRREGULARITIES
+
+113. In button games, if it is discovered that the button was placed incorrectly on the previous hand, the button and blinds will be corrected for the
+      new hand in a manner that gives every participant one chance for each position on the round if possible.
+
+114. You must protect your own hand at all times. Your cards may be protected with your hands, a chip, or other object placed on top of them.
+      If you fail to protect your hand, you will have no redress if it becomes fouled, or the dealer accidentally kills it.
+
+115. If a card with a different color back appears during a hand, all action is void and all chips in the pot are returned to the respective bettors.
+      If a card with a different color back is discovered in the stub but will not appear in any hand or on the board and substantial action has taken
+      place, all action stands.
+
+116. If two cards of the same rank and suit are found, all action is void, and all chips in the pot are returned to the participants who wagered them.
+
+117. A participant who knows the deck is defective has an obligation to point this out. If such a participant instead tries to win a pot by taking
+      aggressive action, the participant may lose the right to a refund, and the chips may be required to stay in the pot for the next deal.
+
+118. If there is extra money in the pot on a deal because of forfeited money from the previous deal, or some similar reason, only a participant dealt
+      in on the previous deal is entitled to a hand.
+
+                                                             -8-
+                              Caesars Entertainment WSOP Live-Action Rules 2026
+119. A joker that appears in a game where it is not used is treated as a scrap of paper. Discovery of a joker does not cause a misdeal. If the joker is
+      discovered before a participant acts on his or her hand, it is replaced. If the participant does not call attention to the joker before acting, then
+      the participant has a dead hand.
+
+120. If you play a hand without looking at all of your cards, you assume the liability of having an irregular card or an improper joker.
+
+121. One or more cards missing from the deck does not invalidate the results of a hand.
+
+122. Before the first round of betting, if a dealer deals one additional card, it is returned to the deck and used as the burn card.
+
+123. Procedure for an exposed card varies depending on the poker game. A card that is flashed by a dealer is treated as an exposed card. A card
+      that is flashed by a participant will play. To obtain a ruling on whether a card was exposed and should be replaced, a participant should
+      announce that the card was flashed or exposed before looking at it. A down card dealt off the table is an exposed card. A floor supervisor,
+      based on circumstances, may determine whether a participant must take or is entitled to a replacement card.
+
+124. If a card is exposed due to dealer error, a participant does not have an option to take or reject the card. The situation will be governed by the
+      rules for the particular game being played.
+
+125. If you drop any cards out of your hand onto the floor, you may not receive replacements and, at the discretion of the floor supervisor your hand
+      may be ruled dead.
+
+126. If the dealer fails to burn a card or burns more than one card, the error should be corrected if discovered before betting action has started for
+      that round. Once action has been taken on a board card, the card must stand. Whether the error is able to be corrected or not, subsequent
+      cards dealt should be those that would have come if no error had occurred. For example, if two cards were burned, one of the cards should be
+      put back on the deck and used for the burn card on the next round. On the last round, if there was no betting because a participant was all-in,
+      the error should be corrected if discovered before the pot has been awarded.
+
+127. If the dealer prematurely deals any cards before the betting is complete, those cards will not play, even if a participant who has not acted
+      decides to fold.
+
+                                                                             BETTING AND RAISING
+
+128. Check-raise is permitted in all games, except in certain forms of lowball.
+
+129. In no-limit and pot-limit games, an unlimited number of raises are allowed.
+
+130. In limit poker, for a pot involving three or more participants who are not all-in, these limits on raises apply:
+              A game with two or more betting rounds allows a maximum of one bet and four raises in each betting round.
+                    A straddle does not count as a bet for the purpose of determining the maximum number of possible pre-fop bets.
+              In a seven-card game, i.e. Stud; a completion following the bring-in is not a raise; four raises remain following a completion.
+
+131. Unlimited raises are allowed in limit-play when the betting round begins heads-up. If the round begins with more than two participants and
+      becomes heads-up during the middle of the round the raise maximum still applies.
+
+132. A wager that is not all-in must at least be equal to the Big Blind if the participant is not facing a bet. If facing a bet, a participant's wager that is
+      not all-in must at least be equal to the bet or to the raise that the participant is currently facing.
+
+133. In limit play, an all-in wager of less than half a bet does not reopen the betting for any participant who has already acted and is in the pot for all
+      previous bets. A participant who has not yet acted or had the betting reopened to him by another participant's action, facing an all-in wager of
+      less than half a bet, may fold, call, or complete the wager. An all-in wager of a half a bet or more is treated as a full bet, and a participant may
+      fold, call, or make a full raise. An example of a full raise on a $20 betting round is raising a $15 all-in bet to $35. Multiple all-in wagers, each of
+      an amount too small to individually qualify as a raise, still act as a raise and reopen the betting if the resulting wager size to a participant
+      qualifies as a raise.
+
+134. The smallest chip that may be wagered in a game is the smallest chip used to make the big blind. i.e. Wagers must be made in $5 increments
+      in $5-$10 NL since two $5 chips are used to make the big blind.
+
+135. A verbal statement denotes your action and is binding. If in turn you verbally declare a fold, check, bet, call, or raise, you are forced to take that
+      action. Tapping the table with your fingers or hand will be considered a check.
+
+136. Deliberately acting out of turn will not be tolerated. Action out of turn will be binding if the action to that participant has not changed. A check,
+      call or fold is not considered action changing. If a participant acts out of turn and the action changes, the person who acted out of turn may
+      change their action by calling, raising or folding and if folding may have their chips returned. Participants may not intentionally act out of turn to
+      influence play before them.
+
+137. To retain the right to act, a participant must stop the action by calling "time" or an equivalent word. Failure to stop the action before substantial
+      action of two or more participants has acted behind you may cause you to lose the right to act. You cannot forfeit your right to act if any
+      participant in front of you has not acted, only if you fail to act when it legally becomes your turn. Therefore, if you wait for someone whose turn
+      comes before you, and two or more participants act behind you, this still does not hinder your right to act.
+
+                                                             -9-
+                              Caesars Entertainment WSOP Live-Action Rules 2026
+138. In limit poker, if you make a forward motion with chips and thus cause another participant to act, you may be forced to complete your action or
+      forfeit your hand, and the chips already committed to the pot. If no one acts behind you, you may be forced to these same conditions at the
+      discretion of the Floor Supervisor.
+
+139. A participant who bets or calls by releasing chips into the pot is bound by that action and must make the amount of the wager correct. This
+      applies at the showdown when putting chips into the pot causes the opponent to show the winning hand before the full amount needed to call
+      has been put into the pot. Under certain circumstances such as a lack of proper information, gross misinformation, or if you are unaware that
+      the pot has been raised, you may possibly be allowed to withdraw that money and reconsider your action, provided that no one else has acted
+      after you.
+
+140. String raises are not allowed. To protect your right to raise, you should either declare your intention verbally or place the proper amount of
+      chips into the pot. Putting a full bet plus a half-bet or more into the pot is considered to be the same as announcing a raise, and the raise must
+      be completed. This does not apply in the use of a single chip of greater value and may not apply to multiple chips of the same denomination.
+
+141. If you put a single chip in the pot that is larger than the bet, but do not announce a raise, you are assumed to have only called. Example: In a
+      $4 - $8 game, when a participant bets $8 and the next participant puts a $25 chip in the pot without saying anything, that participant has called
+      the $8 bet. Prior Bet Chip Not Pulled: If a player with prior-bet chips not yet pulled in faces a raise and bets silently, the best is ruled as
+      follows:
+
+             · If prior-bet chips don't cover the call:
+                           1. If prior chips are not disturbed:
+                           2. Merely dropping a new over-sized chip onto the prior chip(s) is a call
+                           3. Dropping multiple new chips is a call only if all NEW chips are needed to call.
+
+                           4. If all prior chips are pulled bank: an over-sized chip is a call; multiple chips constitute a multi-chip bet.
+                           5. If some but not all prior chips are pulled back, adding any new chip(s) is a multi-chip bet.
+
+             · If all prior-bet chips cover the call:
+                    1. Adding any new chip(s) is a multi-chip bet.
+                    2. If all prior chips are pulled back, an over-sized chip is a bet of full chip value.
+
+             · In any situation above, the gesture of combining new and prior-bet chips and pushing or tossing them forward is a multi-chip bet.
+             · Example scenario: The blinds are $25-$50, the BB posts two (2) $25 chips. The button raises to $600 total ($550 more to the BB
+             · Prior chips are not disturbed and do not cover the call
+
+                    1. Merely dropping an over-sized chip is a call (drop $1,000 chip onto the two (2) $25 chips)
+                    2. Adding multiple new chips is a call if all new chips are needed to call.
+
+                                          i. Drop two (2) $500 chips onto the two (2) $25 chips.
+                                         ii. Drop a $100 and $500 chip onto the two (2) $25 chips.
+             · Adding multiple new chips is a multi-chip bet if one of the NEW is not needed for the call (drop a $1,000 and $500 chip onto the two
+                    (2) $25 chips is a total bet of $1550) A silent multi-chip bet is a raise if it hits the 50% raise threshold.
+             · If the prior chips do not cover the call and are disturbed:
+                           1. Removing all prior chips and adding an over-sized chip is a call (pull back the two (2) $25 chips and add a $1,000 chip)
+                           2. Removing all prior chips and adding new multiple chips (pull back both $25 chips, and add two more chips) (When facing a
+                           bet, unless raise is declared first, a multiple-chip bet is a call if every chip is needed to make the call; i.e. removal of just one of
+                           the smallest chips leaves less than the call amount)
+                           3. Partial removal of prior chips (pull back one (1) $25 chips, leave the other $25 chip out) adding any new chip(s)
+
+142. All wagers and calls of an improperly low amount must be brought up to proper size if the error is discovered before the betting round has
+      been completed. This includes actions such as betting a lower amount than the minimum bring-in, other than going all-in and betting the lower
+      limit on an upper limit betting round. If a wager is supposed to be made in a rounded off amount, and is not, it must be corrected. It shall be
+      changed to the proper amount nearest in size. No one who has acted may change a call to a raise because the wager size has been changed.
+
+                                                                                  THE SHOWDOWN
+
+143. To win any part of a pot, a participant must show all of his cards face up on the table unless that participant has the only remaining live hand.
+
+144. Cards speak; a properly tabled hand determines its own value. While the dealer will assist in reading hands, participants are ultimately
+      responsible for retaining their cards until the winner is officially declared and the pot has been awarded. Verbal declarations regarding the
+      contents of a hand are not binding. However, intentionally miscalling a hand in an effort to mislead another participant into discarding a
+      winning hand is considered unethical and may result in forfeiture of the pot.
+
+145. Any participant, dealer, or floor supervisor who sees an incorrect amount of chips put into the pot, or an error about to be made in awarding a
+      pot, has an ethical obligation to point out the error.
+
+146. All losing hands will be killed by the dealer before a pot is awarded.
+
+147. Unless a hand has been exposed, a participant may only request to see another participant's hand if collusion is suspected and then so only in
+      the presence of a floor person.
+
+                                                            - 10 -
+                              Caesars Entertainment WSOP Live-Action Rules 2026
+      148. Show one, show all. Participants are entitled to receive equal access to information about the contents of another participant's hand. After a
+             deal, if cards are shown to another participant, every participant at the table has a right to see those cards. During a deal, cards that were
+             shown to an active participant who might have a further wagering decision on that betting round must immediately be shown to all the other
+             participants. If the participant who saw the cards is not involved in the deal, or cannot use the information in wagering, the information should
+             be withheld until the betting is over, so it does not affect the normal outcome of the deal. Cards shown to a person who has no more wagering
+             decisions on that betting round but might use the information on a later betting round, should be shown to the other participants at the
+             conclusion of that betting round. If a participant shows only some of his/her hole cards, he/she may be required to show all hole cards upon
+             request.
+
+      149. If everyone checks on the final betting round, the participant in earliest position is required to show his/her hand first. If there is wagering on
+             the final betting round, the last participant to take aggressive action by a bet or raise is the first to show the hand. To speed up the game, the
+             last participant to act or a participant holding a probable winner is encouraged to show the hand without delay. If there is a side pot,
+             participants involved in the side pot should show their hands before anyone who is all-in for only the main pot. In a No Limit poker game if
+             betting has ended on a round prior to the river, the participant who pushed all-in is responsible for turning his/her hand over first.
+
+                                                                                                  TIES
+
+      150. The ranking of suits from highest to lowest is spades, hearts, diamonds, clubs. Suits never break a tie for winning a pot. Suits are only used to
+             break a tie between cards of the same rank in high-card/odd-chip situations.
+
+      151. Dealing a card to each participant is used to determine who moves to another table or who gets the button in a new game. If the cards are
+             dealt, the order is clockwise starting with the first participant on the dealer's left, the button position is irrelevant. Drawing a card is used to
+             determine a participant's seating order coming from a broken game.
+
+      152. An odd chip will be broken down to the smallest unit used to make blinds in the game being dealt. i.e. Since dollar chips are used to make the
+             small blind in $2-$5 NL, an odd chip will be broken down to dollar units in the event of a tie.
+
+      153. If two or more hands tie, an odd chip will be awarded as follows:
+                     In a button game, the first hand clockwise from the button gets the odd chip.
+                     In a stud game, the odd chip will be given to the highest card by suit in all games. When making this determination, only the five
+                           cards that make the participant's hand are considered.
+                     In high-low split games, the high hand receives the odd chip in a split between the high and the low hands. The odd chip between
+                           tied high hands is awarded as in a high type of that poker game, and the odd chip between tied low hands is awarded as in a low
+                           type of that poker game. If two participants have identical hands, the pot will be split as evenly as possible.
+                     In low-low split games, the odd chip will be awarded by position starting clockwise from the button.
+                     All side pots and the main pot will be split as separate pots, not mixed together. The side pots are split in reverse order of formation
+                           with the last side pot formed being split first.
+                     In Mixed Games, to simplify who receives the odd chip, our procedure is as follows:
+                                               o All button games, odd chip will go to the worst position
+                                               o Stud High/Low, odd chip will go to the high hand
+                                               o Razzdugi/Duci, odd chip will go to the razz hand
+
+                                                                                   BUTTON AND BLIND USE
+
+In button games, a non-playing dealer normally does the actual dealing. A round disk called the button is used to indicate which participant has the
+dealer position. The participant with the button is last to receive cards on the initial deal and has the right of last action after the first betting round. The
+button moves clockwise after a deal ends to rotate the advantage of last action. One or more blind bets are usually used to stimulate action and initiate
+play. Blinds are posted before the participants look at their cards. Blinds are part of a participant's bet unless a certain structure or situation specifies
+otherwise. A blind other than the big blind may be treated as dead, not part of the poster's bet. With two blinds, the small blind is posted by the first
+participant clockwise from the button, and the big blind is posted by the participant two positions clockwise from the button. With more than two blinds,
+the smallest blind is normally left of the button, not on it. Action is initiated on the first betting round by the first participant to the left of the blinds when 2
+blinds are used. Action is initiated on the first betting round by the first participant that is in the UTG (under the gun) position. On all subsequent betting
+rounds, the action begins with the first active participant to the left of the button.
+
+                                                                                 RULES FOR USING BLINDS
+
+      154. The minimum bring-in, allowable raise sizes, and blind amounts are specified by the poker game. If a participant does not have enough to
+             post the big blind the participant will post their remaining chips and will receive full value on those chips. A side pot will then be started for the
+             remaining participants in the hand. Any participant acting after the "all in blind" will have 3 options; fold, call the proper amount of the big blind,
+             or raise at least double the size of the proper amount of the big blind. Participants acting after an "all in blind" do not have the option of calling
+             the "all in blind" amount.
+
+      155. Each round every participant must get an opportunity for the button, and meet the total amount of the blind obligations unless all-in. The
+             following method of button and blind placement has been designated to do this:
+
+                                                                - 11 -
+                                  Caesars Entertainment WSOP Live-Action Rules 2026
+                     Dead button ­ The big blind is posted by the participant due for it, and the small blind and button are positioned accordingly, even if
+                           this means the small blind or the button is placed in front of an empty seat, giving the same participant the privilege of last action on
+                           consecutive hands.
+
+      156. A participant posting a blind in the game's regular structure has the option of raising the pot at the first turn to act. Although chips posted by
+             the big blind are considered a bet, the option to raise remains if someone is all-in with a bet of less than the minimum raise.
+
+      157. In heads-up play with two blinds, the small blind is on the button.
+
+      158. A new participant may be dealt in between the big blind and the button, if the new participant opts to "buy the button". Buying the button
+             means posting a big blind and a dead small blind. On the next hand the participant will get to play their button. A new participant may also
+             post just the big blind in this same position instead of buying the button and on the next hand the button will pass the new participant and be
+             placed with the participant who just posted the small blind.
+
+      159. When you post the big blind, it serves as your opening bet. When it is your next turn to act, you have the option to raise.
+
+      160. A participant who misses any or all blinds can resume play by either posting all the blinds missed or waiting for the big blind. If you choose to
+             post the total amount of the blinds, only the big blind is live. The remainder is taken by the dealer to the center of the pot and is not part of your
+             bet. When it is your turn to act, you have the option to raise. A participant who has missed a blind also has the option of returning to the game
+             as the under-the-gun live straddle.
+
+      161. If a participant who owes a blind, as a result of a missed blind, is dealt in without posting, the hand is dead if the participant looks at it before
+             putting up the required chips and has not yet acted. If the participant acts on the hand and plays it, putting chips into the pot before the error is
+             discovered, the hand is live, and the participant is required to post on the next deal.
+
+      162. Any participant who drew for the button is considered active in the game and is required to make up any missed blinds.
+
+      163. In all multiple blind games, a participant may change seats and move past no more than two active participants without posting the amount of
+             the big blind to receive a hand. If a participant moves more than two active participants, the participant must post the amount of the big blind
+             or wait the appropriate number of hands to come in for free. The exception to this rule is draw games/mixed games where a participant must
+             wait to receive until he/she is in the same relative position prior to moving seats.
+
+      164. A participant who "deals off" by playing the button and then immediately getting up to change seats can allow the blinds to pass the new seat
+             one time and re-enter the game behind the button without having to post a blind.
+
+      165. A live straddle bet is allowed in all blind games. The player posting the straddle will have last action in the opening round of betting and retains
+             the option to raise. Unless otherwise specified, the straddle amount is twice the big blind. A straddle may be posted from either Under the Gun
+             (UTG) or the Button, with the Button straddle taking precedence. Action will always start to the immediate left of the straddle. Button straddles
+             are not permitted in limit games. The minimum raise following a live straddle is double the straddle amount.. Unless explicitly stated on the
+             game placard, straddles are optional and not mandatory, regardless of table consensus. New players may not be compelled to straddle upon
+             joining a game.
+
+             Straddle Limits by Game:
+             · In 1-2-5 games: One live straddle is permitted, capped at $10.
+             · In 5-5-10 and above: One additional straddle is permitted. (e.g. The first straddle is $20, with a re-straddle, from any position, allowed up
+
+                    to a maximum of $40.)
+
+      166. In the event that a participant misses a mandatory straddle, it will be treated similar to a missed blind and the participant will be required to
+             post the straddle to receive a hand. This money will be placed in the pot as dead money and will not be considered as part of the participant's
+             pre-flop bet.
+
+SECTION VII - TEXAS HOLD'EM
+
+In Texas Hold'Em, each participant receives two down cards as their personal hand, or hole cards, after which there is a round of betting. After action is
+complete, the dealer burns a card and three board cards, the "flop", are then placed simultaneously and another round of betting occurs. Another card is
+burnt and the next card, the "turn", is placed out on the board followed by a betting round. Another card is burnt and the final card, "the river", is placed
+out on the board followed by the final betting round. The board cards are community cards, and a participant may use any five-card combination from
+among the board and personal cards to make the best possible five-card poker hand. A participant may use all of the board cards and no personal cards
+to form a hand playing the board. A dealer button is used. The usual structure is to use two blinds, but it is possible to play the game with one blind,
+multiple blinds, an ante, or combination of blinds plus an ante.
+
+                                                                            TEXAS HOLD'EM IRREGULARITIES
+
+      167. If the flop contains too many cards, it must be re-dealt. To re-deal the flop, the four cards will be scrambled by the dealer and a floor
+             supervisor will randomly select one card to be used as the next burn card and the remaining three cards will become the flop. If more than four
+             cards are exposed, the flop and the stub will be reshuffled, and the flop will then be re-dealt.
+
+                                                                - 12 -
+                                  Caesars Entertainment WSOP Live-Action Rules 2026
+      168. If before dealing the flop, the dealer failed to burn a card, or burned two cards, the error should be rectified if no board cards were exposed.
+             The deck must be reshuffled if any board cards were exposed.
+
+      169. After the flop if the dealer fails to burn a card or burns more than one card, the error should be corrected if discovered before betting action
+             has started for that round. Once action has been taken on a board card, the card must stand. Whether the error is able to be corrected or not,
+             every effort should be made so that subsequent cards would be those that would have come if no error had occurred. For example, if two
+             cards were burned, one of the cards should be put back on the deck and used for the burn card on the next round. If there was no betting on a
+             round because a participant was all-in, the error should be corrected if discovered before the pot has been awarded.
+
+      170. Card(s) may not be used if the dealer burns and turns before the betting round is complete. This still applies if the subsequent participants
+             elect to fold. Nobody has an option of accepting or rejecting the card. The betting is then completed, and the error rectified in the prescribed
+             manner for that situation.
+
+      171. If the dealer prematurely deals a card before betting is complete for that round the below will apply:
+                    · A premature flop: Leave the flop burn card as the burn. Return the premature board cards to the deck stub and reshuffle the entire
+                           stub. The flop is re-dealt from the reshuffled stub without another burn card.
+                    · A premature turn card: Leave the turn burn card as the burn for that round. Return the premature turn card to the deck stub and
+                           reshuffle the entire stub. The turn is re-dealt from the reshuffled stub without another burn card.
+                    · A premature river card: Leave the river burn card as the burn for that round. Return the premature river card to the deck stub and
+                           reshuffle the entire stub. The river is re-dealt from the reshuffled stub without another burn card.
+
+      172. If you are playing the board, you must still show your hole cards face up. Otherwise, you may relinquish any claim to the pot.
+
+                                                                                   NO LIMIT AND POT-LIMIT
+
+A no-limit or pot-limit betting structure for a game gives it a different character from limit poker, requiring a separate set of rules in many situations. All
+the rules for limit games apply to no-limit and pot-limit games, except as noted in this section. No-limit means that the amount of a wager is limited only
+by the table stakes rule, so any part or all of a participant's chips may be wagered. The rules of no-limit play also apply to pot-limit play, except that a bet
+may not exceed the pot size. In pot-limit, the maximum amount a participant can raise is the amount that would be in the pot after that participant called.
+Therefore, if a pot is $100, and someone makes a $50 bet, the next participant can announce "Pot", call that $50 bet and raise the pot $200, for a total
+wager of $250.
+
+                                                                                         NO-LIMIT RULES
+
+      173. The number of raises in any betting round is unlimited.
+
+      174. All bets must be at least equal to the minimum bring-in, unless the participant is going all-in. A straddle bet sets a new minimum bring-in and
+             gives the straddling participant last action. The minimum bet remains the amount of the original big blind on all betting rounds.
+
+      175. All raises must be equal to or greater than the size of the previous bet or raise on that betting round, except for an all-in wager. A participant
+             who has already acted and is not facing a full-size wager may not subsequently raise an all-in bet that is less than the minimum bet which is
+             the amount of the minimum bring-in, or less than the full size of the last bet or raise. The half-the-size rule for reopening the betting is for limit
+             poker only.
+
+      176. "Completing the bet" is a limit poker wager type only, this is not allowed in no-limit poker. For example, if a participant bets $100 and the next
+             participant goes all-in for $140, a participant wishing to raise must make the total bet at least $240 unless going all-in.
+
+      177. Multiple all-in wagers, each of an amount too small to qualify as a raise, still act as a raise and reopen the betting if the resulting wager size to
+             a participant qualifies as a raise. Example: Participant A bets $100 and Participant B raises $100 more, making the total bet $200. If
+             Participant C goes all in for less than $300 total, not a full $100 raise, and Participant A calls, then Participant B has no option to raise again,
+             because he wasn't fully raised. Participant A could have raised, because Participant B raised.
+
+      178. A participant who says "raise" is allowed to continue putting chips into the pot with more than one move, provided an amount has been
+             verbally declared in advance. A participant may declare a raise, call the amount bet to them and then put the raise in with a single motion or
+             simply put the chips into the pot in a single motion, to avoid making a string-bet. It is the dealer's responsibility to call all string bets even
+             during heads-up play. A participant may also call a string bet if the dealer fails to do so.
+
+      179. A wager is not binding until the chips are released to the felt, unless the participant has made a verbal statement of action. However, a forward
+             motion with chips in hand may result in a participant being forced to leave the minimum amount allowable to call the bet, at the Floor
+             Supervisor's discretion, especially if the forward motion elicits an action from another participant involved in the hand.
+
+      180. If there is a discrepancy between a participant's verbal declaration and the amount put into the pot, the bet will be corrected to match the
+             participant's verbal declaration.
+
+      181. If a call is short due to a counting error, the amount must be corrected, even if the hand is beaten or mucked.
+
+                                                                - 13 -
+                                  Caesars Entertainment WSOP Live-Action Rules 2026
+182. If a participant is not facing a bet, a bet of a single chip without comment is the full amount of the chip. However, a participant, acting with a
+      single over-sized chip while facing a bet, is only calling the previous bet unless that participant makes a verbal declaration to raise the pot.
+      This includes acting on the forced bet of the big blind.
+
+183. If a participant attempts to bet or raise less than the legal minimum while still having chips behind, the wager must be increased to the
+      minimum allowable amount. This rule does not apply to a participant who unintentionally places an overcall amount--unless the excess is
+      equal to or greater than half a bet, in which case the participant is required to complete the minimum raise. In such instances, the bet must be
+      brought up to the precise minimum raise amount only. Any additional amount would be considered a string bet.
+
+184. All wagers may be required to be the same denomination of chip or larger used for the minimum bring-in, even if smaller chips are used in the
+      blind structure or rake. If this is done, the smaller chips play for face value only when going all-in.
+
+185. Calling-for-clock procedures: Once a reasonable amount of time, which is no less than two minutes, has passed and a clock is called, a
+      participant will be given one (1) minute to act. If action has not been taken by the time the minute has expired, there will be a ten (10) second
+      countdown. If a participant has not acted on his hand by the time the countdown is over, the hand will be dead. Live Action Supervisors
+      reserve the right to speed up the amount of time allotted for a clock if it appears that a participant is deliberately stalling. Anyone that was dealt
+      into the hand may call for a clock.
+
+186. Since all a participant's chips may be put at risk on a hand, the house has the right to set a minimum and maximum amount for the buy-in to
+      help control the effective size of a game. A range of 20 to 40 times the big blind as a minimum and 40 to 100 times the big blind as a
+      maximum is the normal rule of thumb. Variations from the norm will depend on local custom, participant input or competitive market
+      considerations. Participants may not add to their stack or re-buy unless they are under the maximum and if doing so may only add enough
+      chips to reach the maximum buy-in for that game.
+
+187. The card room does not condone "insurance" or any other "proposition" wagers. Management will decline to make decisions in such matters,
+      and the pot will be awarded to the best hand. Participants are asked to refrain from instigating proposition wagers in any form. Running it twice
+      may be permitted and is covered in a separate section of the rules below.
+
+                                                                                 POT-LIMIT RULES
+
+188. If a wager is made that exceeds the pot size, the surplus will be given back to the bettor as soon as possible, and the amount will be reduced
+      to the maximum allowable. However, if the action is complete (bet made and accepted by all remaining participants) the bet will stand.
+
+189. The dealer or any participant in the game can and should call attention to a wager that appears to exceed the pot size; this also applies to
+      heads-up pots. The oversize wager may be corrected at any point until all participants have acted on it. The pot will stand "as accepted
+      action" once betting action has been completed on any given round pre-flop, flop, turn, or river.
+
+190. In pot-limit play, it is advisable in many structures to round off the pot size upward to produce a faster pace of play. This is done by treating
+      any odd amount as the next larger size. For example, if the pot size was being kept track of with $25 units, then a pot size of $85 would be
+      treated as a pot size of $100.
+
+191. In Live Action pot-limit games, the blinds are rounded up for the purpose of the opening bet. In such a structure, a participant can open for a
+      maximum of four times the size of the big blind. For example, if the blinds are $5 and $10, a participant may open with a raise to $40. The
+      range of options is to either open with a call of $10 or raise in increments of five dollars to any amount from $20 to $40. Subsequent
+      participants also treat the $5 as if it were $10 in computing the pot size, until the big blind is through acting on the first betting round. This rule
+      of treating the small blind as if it were the size of the big blind is especially desirable in a structure where the small blind uses a lower-
+      denomination chip than the big blind, as in using blinds of $10 and $25, two $5 chips and a $25 chip.
+
+192. In pot-limit, if a chip larger than the pot size is put into the pot without comment and initiates action on a betting round, it is a bet of the pot
+      size. If there has already been a bet on that betting round, it is only a call. If a participant announces "raise" without an amount and puts out a
+      chip larger than a pot-sized raise, the raise will be a full pot-sized raise.
+
+             · $1-$2-$5 (3 Blind PLO/Big O): The blinds are rounded up for the purpose of the opening bet. When computing pot size, the small
+                    ($1) and big blind ($2) will be considered as a combined total of $10. i.e. The first action pot raise could be a total of $10, $15, $20,
+                    or pot ($25). If a participant has made up his small blind (being dead in the middle), that small blind will be counted as if it were the
+                    same size as the big blind when calculating the pot size.
+
+             · A participant who misses all 3 blinds can resume play by either posting all the blinds missed or waiting for the big blind. If a
+                    participant chooses to post the total amount of the blinds, only the amount of the straddle is live. I.e... In a $1 - $2 -$5, the $5 is live,
+                    and the $3 is dead in the middle. The remainder is taken by the dealer to the center of the pot and is not part of their bet. When it is
+                    the participants turn to act, they will have the option to raise.
+
+             · A participant who misses the small blind can resume play by posting the small blind (dead) and the straddle amount (live) or wait for
+                    the big blind. The small blind is taken by the dealer to the center of the pot and is not part of their bet. When it is the participants turn
+                    to act, they will have the option to raise.
+
+                                                            - 14 -
+                              Caesars Entertainment WSOP Live-Action Rules 2026
+                                                                            HOLD-EM VARIATION: PINEAPPLE
+
+All the rules of Hold'em apply to Pineapple except that each participant receives three down cards as his/her personal hand. Each participant must
+discard one of the three down cards after the first round of betting is complete and before the flop is exposed.
+
+                                                                      HOLD-EM VARIATION: CRAZY PINEAPPLE
+
+All the rules of Hold'em apply to Crazy Pineapple except that each participant receives three down cards as his/her personal hand. Each participant
+must discard one of the three down cards after the second round of betting is complete and before the turn card is exposed.
+
+                                                                                    SECTION VIII ­ OMAHA
+
+In Omaha, each participant is dealt four down cards (hole cards) that make up their personal hand. A round of betting follows the deal. Once the initial
+betting round is complete, the dealer burns one card and deals three community cards face up--this is known as the flop. Another round of betting takes
+place. The dealer then burns another card and deals one additional community card--the turn--followed by a third betting round. A final burn card is
+followed by the last community card, the river, and then the final round of betting occurs. The five community cards (the board) are shared by all players.
+to form the best possible five-card poker hand. Each participant must use exactly two of their four hole cards and three of the five community cards. A
+dealer button is used to indicate the position of the dealer. The standard betting structure includes two blinds (small and big), though the game may also
+be played with one blind, multiple blinds, an ante, or a combination of blinds and antes.
+
+                                                                             OMAHA HIGH-LOW (OMAHA 8/O)
+
+Omaha can be played as a high-low split pot game with a Limit, No Limit, or Pot Limit structure. The participant must use any combination of two hole
+cards and three board cards for the high hand and either a different or the same combination of two hole cards and three board cards for the low hand.
+
+                    a. All the rules of Omaha apply to Omaha high-low split. This game is played with a split-pot format. Half of the pot is awarded to the
+                    participant or participants with the highest 5-card poker hand. The other half of the pot is awarded to the participant or participants
+                    holding the lowest 5-card poker hand.
+
+                    b. A qualifier of 8-or-better for the low hand is used. This means to win the low half of the pot, a participant's hand at the showdown
+                    must have five cards of different ranks that are eight or lower in rank. An ace can be played as either high or low. Straights and flushes
+                    do not count against a low hand, so the best possible low hand is 5-4-3-2-A, also known as a wheel.
+
+                    c. The best high poker hand wins the entire pot if there is no qualifying hand for low.
+
+                                                                                OMAHA HIGH LOW REGULAR
+
+All the rules of Omaha High Low 8/O apply, except that there is no qualifier for low.
+
+                                           OMAHA HIGH-LOW VARIATION - 5 CARD - "THE BIG O" (8 Participant maximum)
+
+All the rules of Omaha High-Low apply to Omaha "The Big O" with the following change: all participants are dealt 5 cards in their initial starting hand.
+
+                                       OMAHA HIGH-LOW VARIATION ­ 5+ CARD - "THE BIG EASY" (8 Participant maximum)
+
+All the rules of Omaha High-Low apply to Omaha "The Big Easy" with the following change: all participants are dealt at least 5 cards in their initial
+starting hand. More starting cards are allowed based on the number of participants dealt into the hand; however, all participants must begin the hand
+with the same number of starting cards.
+
+                                            "DOUBLE BOARD OMAHA" OMAHA HIGH-VARIATION (8 Participant maximum)
+
+In Double Board Omaha, each participant is dealt four down cards (hole cards) to form their personal hand, followed by an initial round of betting. Once
+the action is complete, the dealer burns one card and deals three community cards face up--this is the first flop. Immediately below it, a second set of
+three community cards--the second flop--is dealt without a burn card. A second round of betting then takes place. The dealer burns another card and
+deals the first turn card to the first board. Directly beneath it, the second turn card is dealt to the second board--again, with no additional burn card.
+Another round of betting follows. The process is repeated for the river: the dealer burns one card and deals the first river to the first board, followed by
+the second river placed directly beneath it, with no additional burn. A final round of betting then occurs. All board cards are community cards. Each
+participant must use exactly two of their four hole cards and exactly three cards from one of the two boards to make the best possible five-card poker
+hand. Players may not combine cards from both boards in a single hand. A dealer button is used to determine position. The typical betting structure
+involves two blinds (small and big), though variations may include one blind, multiple blinds, an ante, or a combination of blinds and an ante. This game
+may also be played as a bomb pot variation. Unless otherwise specified, all standard Omaha High rules apply.
+
+                                                                - 15 -
+                                  Caesars Entertainment WSOP Live-Action Rules 2026
+                                                     5 CARD DOUBLE BOARD BOMB POT PLO (8 Participant maximum)
+
+All the rules of double board Omaha apply with the following changes: all players are dealt 5 cards in their initial starting hand and two boards will be
+used. No blinds are utilized; instead, all players will have to post an ante, and no action will occur pre-flop. Action starts left of the button after the flop.
+The pot will be split between the best hand on the top board and the best hand on the bottom board. This game is played with an ante and no action pre-
+flop.
+
+             a. With no action pre-flop, no burn card will be used for the flop. The last card of the deck will be used to complete the river when there are 8
+players to start the hand.
+
+             b. In case of a premature river with 2 cards left in the stub, the last card in the deck, the premature card,the burns and the muck will be
+             reshuffled.
+
+c. If a player fails to play the worst position (first position to the left of the button), the button will pass and go to the next player that posted on the
+previous hand.
+
+                                                                       ULTIMATE BIG O (8 Participant maximum)
+
+This game follows all standard Big O rules, with the following modifications: Double Board Format: Two boards are dealt. The best high hand on either
+board is awarded half the pot. The best qualifying low hand (if any) on either board receives the other half. If no qualifying low hand is made, the best
+high hand wins the entire pot. This game may also be played as a bomb pot variant.
+
+      · There will be a burn card before the flop. There will be no burn before the final card if it completes the board.
+      · In case of a premature river with 2 cards left in the stub, the last card in the deck, the premature card, the burns, and the muck will be
+
+             reshuffled.
+
+      · If played with an ante and a player fails to play the worst position (first position to the left of the button), the button will go to the next player
+             that posted on the previous hand.
+
+                                                                              SICK-O (8 Participant maximum)
+
+All the rules of Omaha High-Low apply to Sick-o with the following changes: the low portion has a 9 qualifier and is played as a 2-7 hand.
+When playing low, Aces are high, straights and flushes count against you.
+
+                                                                           Courchevel (8 Participant maximum)
+
+Courchevel is 5 Card PLO variation. After the initial deal the first card of the flop will directly be open. After action is completed pre-flop, the
+dealer will burn a card and deal two more community cards to complete the flop. Action proceeds normally after the flop. No burn will be
+utilize between the initial deal and the first community card.
+
+                                                                         DERAILMENT (8 Participant maximum)
+
+All the rules of double board bomb pot apply with the following changes: three boards will be used until the river. The lowest card by suit on
+the river will have that entire board taken out of play. The pot will be chopped between the best hand on the two boards remaining.
+
+                                                      "DRAWMAHA" OMAHA HIGH-VARIATION (7 Participant maximum)
+
+This is played as a "Split Game". Half of the hand will go to the winner of an Omaha High hand, and half of the hand will go to the winner of the best 5
+card hand from their hole cards. Different variations of this game consist of High, 2-7, Ace-5, Badugi, Badugi High and 49. (49), value of 49 or closet to
+win half the pot. Face cards (K,Q,J) have zero value. Aces has a value of 1 and all other cards have face value. The best hand for 49 is 10,10,10,10,9.
+
+Drawmaha is played as a split-pot game: half of the pot is awarded to the winner of a traditional Omaha High hand, and the other half goes to the player
+with the best five-card hand made exclusively from their hole cards. A dealer button is used to determine position. The standard structure features two
+blinds (small and big), though the game can also be played with one blind, multiple blinds, an ante, or a combination of blinds and antes. Each
+participant begins with five down cards (hole cards), followed by an initial round of betting. Once the betting is complete, the dealer places three
+community cards face up--known as the flop--and a second round of betting occurs. After the flop betting is complete, each player chooses how many
+
+                                                                - 16 -
+                                  Caesars Entertainment WSOP Live-Action Rules 2026
+cards (if any) they wish to draw. Participants may draw 1 to 3 cards, or they may stand pat (keep all five original cards). At this point, once a card is
+declared for drawing, it cannot be changed. The dealer then burns one card and places the turn card on the board. After this, players receive their
+selected number of draw cards, followed by a betting round. The dealer then places the final community card--the river--on the board, and one last
+round of betting takes place. All board cards are community cards used only for the Omaha High portion of the hand. For the second half of the pot,
+players use only their five hole cards to make their best high hand. In the event of an odd chip after the pot is split, the odd chip is awarded by position,
+starting clockwise from the button.
+
+              · All the rules of Omaha High apply for the Omaha portion, and all rules of single draw rules apply to the draw portion.
+
+              · Drawmaha can be played as a Limit, No Limit, or Pot Limit structure.
+
+                                                                                             KILL POTS
+
+To kill a pot means to post an extra blind that increases the betting limit. A full kill is double the amount of the big blind and doubles the betting limits. A
+half kill is one-and-a-half times the big blind and increases the betting limits by that amount. A kill may be optional in a game and is often used at lowball
+when a participant wants to be dealt in right away instead of waiting to take the big blind. A kill may be required in a game for any time a specified event
+takes place. In high-low split games using a required kill, a participant who scoops a pot bigger than a set size (5 times the upper limit of the game) must
+kill the next pot. In other games using a required kill, a participant who wins two consecutive pots must kill the next pot. In this type of kill game, a button
+called a "kill button" indicates which participant has won the previous pot, a `leg up', and the winner keeps this button until the next hand is completed. If
+the participant who has the kill button wins a second consecutive pot and it qualifies monetarily, that participant must kill the next pot.
+
+      193. The kill button is neutral, belonging to no participant, if:
+                     It is the first hand of a new game.
+                     The winner of the previous pot has quit the game.
+                     The previous pot was split and neither participant had the kill button.
+
+      194. In all games, the kill will act in turn. Once the kill has acted, action then continues in sequence to the left of the kill. If there is a kill in a stud
+             game, there will be no bring in and action starts left of the kill.
+
+      195. There is no pot-size requirement for the first pot or "leg" of a kill. For the second "leg" to qualify for a kill, you must win at least one full bet for
+             whatever limit you are playing; it cannot be any part of the blind structure, unless otherwise agreed. For this purpose, the kill blind is not
+             considered part of the blind structure.
+
+      196. If a participant with one "leg up" splits the next pot, that participant still has a "leg up" for the next hand. If the participant who split the pot was
+             the kill in the previous hand, then that participant must also kill the next hand.
+
+      197. A person who leaves the table with a "leg up" toward a kill still has a "leg up" along with the current "leg up" upon returning to the game.
+
+      198. A participant who is required to post a kill must do so even if wishing to quit or be dealt out. A participant who fails to post a required kill blind
+             will not be allowed to participate in any game until the kill money is posted. In the same fashion, if a participant has earned a "leg up" and
+             decides to leave the table; this participant can only return to the action by claiming the "leg up" on the next hand.
+
+      199. When a participant "scoops" both the high and the low pot in a split-pot game with a kill provision, the next hand will be killed only if the pot is
+             at least five times the size of the upper limit of the game.
+
+      200. If a participant is unaware that the pot has been killed and put in a lesser amount, and it has been announced as a kill pot with the kill button
+             face up, the participant must correct the amount or forfeit the chips already in the pot. If the kill has not been properly announced, the
+             participant may withdraw the chips and reconsider his/her action. It is the dealer's responsibility to announce a kill and place the kill button
+             appropriately.
+
+      201. If for some reason, the participant who is responsible for posting a kill misses his/her opportunity to post on that hand, the participant will be
+             obligated to post the kill at the first opportunity where that participant is not on the button or in one of the blinds. If the participant was a blind
+             when responsible for the missed kill, this participant can wait until the next round of blinds to post the kill in the same position. If a kill is
+             already active on that particular hand, the participant will then have to kill at the first opportunity after the button passes.
+
+      202. Only one kill is allowed per deal.
+
+      203. A straddle will not be allowed in a kill pot.
+
+      204. Chops are not allowed if the kill is in one of the blinds.
+
+      205. A new participant has the option of sitting down into a kill pot or waiting for the next appropriate opportunity to begin play.
+
+      206. A participant who is posting or a new participant entering the game can buy the button to enter the game as long as the kill is not on one of the
+             blind positions.
+
+                                                                - 17 -
+                                  Caesars Entertainment WSOP Live-Action Rules 2026
+      207. Broken game status is allowed only for participants of the same limit and game type. For this purpose, a game with a required kill is
+             considered a different type of game than an otherwise similar game without a required kill.
+
+                                                                                       RUNNING IT TWICE
+
+      208. Running it twice is an agreement with participants involved in the immediate hand to run a second complete board, a second turn and river
+             card, or a second river card.
+
+      209. Participants may opt to run it three times instead of twice in which case a second board and third board will be dealt. The dealer will deal a
+             complete board based off the agreement before dealing the next board. i.e. If participants agree to run the turn and river "three times", the
+             dealer will put out one flop which will be used by all three boards. The dealer will then put out a turn and river for the first board following the
+             same dealing pattern as other flop games. At this point, the dealer will put out a turn and river in the same fashion to create a second board.
+             Then the dealer will put out a third turn and river in the same fashion to create the third board.
+
+      210. Participants are allowed to run it twice or three times in all time raked flop games and $5-$10 No-Limit Hold'Em games, if suggested by a
+             participant and agreed to by all participants remaining in the pot. In the instance that participants have agreed to deal the community cards
+             more than once and a dispute arises, the Floor Supervisor will make a ruling concerning only the first set of community cards if no clear ruling
+             exists for the hand when all sets of community cards are considered.
+
+      211. At least 1 participant must be all in. There cannot be any action pending before an agreement to run it twice is allowed.
+
+      212. The participants cannot make an agreement to stop betting or "check it down" on the first board before running it twice.
+
+      213. The first board will be run to completion as normally dictated by the rules of the game being played. The second board will be dealt below the
+             first board. If necessary, a third board will be dealt below the second. In 5 Card PLO variation games with 8 players dealt in, only 2 burn cards
+             will be used to run it twice preflop. The dealer will burn one card only for each board.
+
+      214. Players may choose to run side pots twice. If there are three participants involved in the hand and if the short stack participant (Main Pot)
+             loses the hand, the run twice will apply for both pots.
+
+      215. If there is only one card left on the dealer's stub going into the river of the second board, that card will be used.
+
+      216. If there is only one card left in the stub and this card combined with the burn cards can complete all boards necessary to fulfill the participants'
+             agreement, the dealer will shuffle in the burn cards and will use the last card in the stub. If participants have agreed to run multiple boards and
+             there are not enough cards after combining the burn cards and stub, the dealer will shuffle all the cards remaining in the stub, the burn cards,
+             and the cards in the muck to complete all boards. At the time of agreement, management reserves the right to use all cards without burning to
+             complete the hand.
+
+      217. All other standard flop game rules apply to the second board and third board. The extra chip in a split pot is awarded to the main board.
+
+                                                                                 SECTION IX ­ 7 CARD STUD
+
+In seven-card stud, each participant is initially dealt two down cards, followed by one up card to begin the hand. After all participants have received their
+three cards, the first round of betting takes place. Three additional up cards are then dealt, followed by a final down card, with a betting round occurring
+after each new card is dealt. This results in a total of five betting rounds before the hand proceeds to the showdown. The best five-card hand wins the
+pot. In fixed-limit games, the smaller bet is used for the first two betting rounds (third and fourth streets), while the larger bet is used for the last three
+rounds (fifth, sixth, and seventh streets). If an open pair appears on fourth street, any participant may choose to place either the smaller or larger bet.
+Deliberately altering the order of your up cards in a stud game is considered improper, as it misleads other participants and creates an unfair advantage.
+A participant found intentionally changing the order of their up cards may be deemed to have a dead hand.
+
+                                                                                         SEVEN-CARD STUD
+
+      218. If your first- or second-hole card is accidentally turned up by the dealer, then your third card will be dealt down. If the dealer exposes all three
+             initial cards of any participant, the hand will be misdealt.
+
+      219. The first round of betting starts with a forced bet, the bring-in, by the lowest card by rank and suit. On subsequent betting rounds, the high
+             hand on board initiates the action, a tie is broken by position, with the participant who received cards first acting first.
+
+      220. The participant with the forced bet has the option of opening for a full bet.
+
+      221. If the participant with the low card is all-in for the ante, the person to that participant's left acts first. If the participant with the low card has only
+             enough chips for a portion of the bring-in, the wager is made. All other participants must enter for at least the bring-in amount in the structure.
+
+      222. When the wrong person is designated as low and bets, if the next participant has not yet acted, the action will be corrected to the real low
+             card, who now must bet. The incorrect low card takes back the wager. If the next hand has acted after the incorrect low card wager, the wager
+             stands, action continues from there, and the real low card has no obligations.
+
+                                                                - 18 -
+                                  Caesars Entertainment WSOP Live-Action Rules 2026
+      223. Increasing the amount wagered by the opening forced bet up to a full bet does not count as a raise, but merely as a completion of the bet. For
+             example: In $15-$30 stud, the low card opens for $5. If the next participant increases the bet to $15, completing the bet, four raises are then
+             allowed.
+
+      224. In all fixed-limit games, when an open pair is showing on Fourth Street, the second up card, any participant has the option of betting either the
+             lower or the upper limit. For example: In a $5-$10 game, if you have a pair showing and are the high hand, you may bet either $5 or $10. If
+             you bet $5, any participant then has the option to call $5, raise $5, or raise $10. If a $10 raise is made, then all other raises must be in
+             increments of $10. If the participant high with the open pair on fourth street checks, then subsequent participants have the same options that
+             were given to the participant who was high.
+
+      225. If you are not present at the table when it is your turn to act on your hand, you forfeit your ante and your forced bet, if any. If you have not
+             returned to the table in time to act, the hand will be killed when the betting reaches your seat.
+
+      226. If a hand is folded when there is no wager, that seat will continue to receive cards until the hand is killed because of a bet, so the fold does not
+             affect who gets the cards to come.
+
+      227. If you pick up your up cards without calling when facing a wager; this is a fold, and your hand is dead. This act has no significance at the
+             showdown because betting is over; the hand is live until discarded.
+
+      228. A card dealt off the table is treated as an exposed card.
+
+      229. The dealer announces the low card bring-in by rank and suit. On subsequent rounds, the dealer announces the high hand, all raises, and all
+             pairs. Dealers do not announce possible straights or flushes.
+
+      230. If the dealer burns two cards for one round or fails to burn a card, the cards will be corrected, if possible, to their proper positions. If this should
+             happen on a final down card, and either a card intermingles with a participant's other hole cards or a participant looks at the card, the
+             participant must accept that card.
+
+      231. A premature card in stud: Leave the burn card as is for that round and the premature card is immediately returned to the stub and reshuffled
+             and that street is re-dealt from the newly shuffled stub without another burn.
+
+      232. Before dealing 7th street, the dealer will count the number of participants remaining and add two to that number. This is the number of cards
+             needed in the stub to finish dealing the hand. The dealer will then count the stub, taking care not to expose any cards to the participants. If
+             there are enough cards, the dealer will complete the hand. If there are not enough cards, the dealer will determine if adding the three burn
+             cards will allow for a sufficient number of cards. If the answer is yes, then the dealer will scramble the stub and the three burn cards together
+             and finish the hand. If the answer is no and there are more than two cards in the stub, the dealer will burn and deal a community card. If the
+             answer is no and there are two or less cards in the stub, the dealer will scramble the stub and the burn cards together, burn a card, and deal a
+             community card.
+
+      233. An all-in participant should receive hole cards dealt facedown, but if the final hole card to such a participant is dealt face up, the card must be
+             kept, and the other participants receive their normal card.
+
+      234. If the dealer turns the last card face up to any participant, the hand that began action on 6th street will again start the action on 7th street. The
+             following rules apply to the dealing of cards:
+                     If there are more than two participants and any participant other than the first participant receives an exposed down card, all
+                           remaining participants receive their last card facedown. A participant whose last card is face up has the option of declaring, in
+                           advance of any action, either all-in for the existing pot or to continue for all subsequent action at his/her discretion. If there are more
+                           than two participants and the first participant's card is exposed, all remaining participants receive their cards up and the betting
+                           round proceeds as normal.
+                     If there are only two participants remaining and the first participant's final down card is dealt face up, the second participant's final
+                           down card will also be dealt face up, and the betting proceeds as normal. In the event the first participant's final card is dealt face
+                           down and the opponent's final card is dealt face up, the participant with the face up final card has the option of declaring, in advance
+                           of any action, either all-in for the existing pot or in for all subsequent action at his/her discretion.
+
+      235. A hand with more than seven cards is dead. A hand with less than six cards at the showdown is dead.
+
+      236. A participant who calls a bet even though beaten by an opponent's up cards is not entitled to a refund. The caller receives information not
+             available for free.
+
+                                                                             SEVEN-CARD STUD LOW (RAZZ)
+
+The lowest-ranking hand wins the pot. Aces are low only, and two aces are the lowest pair. The format is like seven-card stud high, except that the high
+card, with the king of spades being the highest card by rank and suit, is required to make the forced bet on the first round. The low hand acts first on all
+subsequent rounds. Straights and flushes have no ranking, so the best possible hand is 5-4-3-2-A, known as a wheel. An open pair does not affect the
+betting limit.
+
+                                                                - 19 -
+                                  Caesars Entertainment WSOP Live-Action Rules 2026
+      237. All rules for seven-card stud apply to Razz with the exception the paired fourth street bet. If a door card is paired on Fourth Street, there is no
+             option to choose the higher bet.
+
+      238. The lowest hand wins the pot. Aces are low, and straights and flushes have no effect on the low value of a hand. The best possible hand is 5-
+             4-3-2-A, except in Kansas City Razz where 7-5-4-3-2 is the best hand; a straight or flush in Kansas City Razz is a high hand.
+
+      239. The highest card by suit starts the action with a forced bet. The low hand acts first on all subsequent rounds. If the low hand is tied, the first
+             participant clockwise from the dealer starts the action.
+
+      240. Fixed-limit games use the lower limit on third and fourth streets and the upper limit on subsequent streets. An open pair does not affect the
+             limit.
+
+                                                                             SEVEN-CARD STUD/8 (STUD 8/O)
+
+Seven-card stud/8 is a stud game which is played both high and low. A qualifier of 8-or-better for low applies, unless a specific posting to the contrary is
+displayed. This means to win the low half of the pot, a participant's hand at the showdown must have five cards of different ranks that are an eight or
+lower in rank. An ace is the highest card and the lowest card. If there is no qualifying hand for low, the best high hand wins the whole pot. A participant
+may use any five cards to make the best high hand, and the same or any other grouping of five cards to make the best low hand.
+
+      241. All rules for seven-card stud apply to Seven-Card Stud/8 with the exception the paired fourth street bet. If a door card is paired on Fourth
+             Street, there is no option to choose the higher bet.
+
+      242. A participant may use any five cards to make the best high hand and any five cards, whether the same as the high hand or not, to make the
+             best low hand.
+
+      243. An ace is the highest card and the lowest card.
+
+      244. The low card by suit initiates the action on the first round, with an ace counting as a high card for this purpose. On subsequent rounds, the
+             high hand initiates the action. If the high hand is tied, the first participant in the tie clockwise from the dealer acts first. If the high hand is all-in,
+             action proceeds clockwise as if that person had checked.
+
+      245. Straights and flushes do not affect the value of a low hand.
+
+      246. Fixed-limit games use the lower limit on third and fourth streets and the upper limit on fifth, sixth and seventh streets.
+
+      247. Splitting pots is determined only by the cards, and not by agreement among participants.
+
+      248. When there is an odd chip in a pot, the chip goes to the high hand. If two participants split any portion of the pot by tying for either the high or
+             the low, that portion of the pot shall be split as evenly as possible, and the participant with the highest card by suit receives the odd chip.
+             When making this determination, only the five cards used by the participant at showdown are considered.
+
+                                                                       SEVEN CARD STUD HIGH LOW REGULAR
+
+      249. All rules of Seven Card Stud/8 apply except there is no qualifier for low, the high card has the bring in and the low card initiates the action on
+             each street.
+
+                                                                               SUPER STUD/SUPER STUD 8/O
+
+In Super Stud, each participant first receives four down cards followed by one up card to start the hand. After each participant receives their five cards,
+there is the first round of betting. Then two cards are discarded by each participant. There are then three more up cards and a final down card, with a
+betting round after each, for a total of five betting rounds on a deal played to the showdown. The best five-card poker hand wins the pot. In all fixed-limit
+games, the smaller bet is wagered for the first two betting rounds, third and fourth street, and the larger bet is wagered for the last three betting rounds,
+on the fifth, sixth, and seventh street. If there is an open pair on the fourth card, any participant has the option of making the smaller or larger bet (Super
+Stud High Only). Deliberately changing the order of your up cards in a stud game is improper because it unfairly misleads the other participants. Super
+Stud is played with as many as seven participants. If there is an extra chip it will be paid out as follows: If two participants have identical low
+hands/identical high hands, the hand with the highest card by suit in their five (5) card playing hand will receive the extra chip.
+
+      250. All rules for Seven Card Stud or Seven Card Stud 8/O apply (unless stated otherwise) once the participants discard 2 cards after the first
+             betting round. However, unlike Seven Card Stud 8/O,in Super Stud 8/O the initial forced bet is made by the high card.
+
+      251. Failure to discard after the first betting round and prior to the first card on 4th street being delivered will result in a dead hand.
+
+      252. If a player fails to discard after the first betting round and prior to the first card on fourth street being delivered, that players hand will be
+             declared dead.
+
+                                                                - 20 -
+                                  Caesars Entertainment WSOP Live-Action Rules 2026
+      253. Before dealing 6th street, the dealer will count the number of participants remaining and add two to that number. This is the number of cards
+             needed in the stub to finish dealing the hand. The dealer will then count the stub, taking care not to expose any cards to the participant. If
+             there are enough cards, the dealer will complete the hand. If there are not enough cards, the dealer will reshuffle the stub, burns and muck
+             cards together. Before the burn for 7th street if the remaining cards in the stub along with the 3 burn cards can complete the hand, this will be
+             done. The dealer will never use a community card in Super Stud since the muck is used in the re-shuffle.
+
+                                                                             MEXICAN POKER/MEXICAN STUD
+Mexican Poker is similar to 5-card stud and is played with a standard 52-card deck that has been reduced to 41 cards. The 8's, 9's and 10's are
+removed, and one Joker is added to make 41 cards. To receive a hand, each participant posts an ante before the dealer begins dealing the hand. The
+cards are dealt clockwise, beginning to the left of the dealer button. The dealer button rotates clockwise after each hand is complete. Each participant
+receives a total of 5 cards, of which 1 and only one card must be face down during all betting rounds. After the first two cards are dealt (first card is dealt
+down and the second one up), a betting round begins. The participant with the high card clockwise of the dealer button is obligated to post a "bring-in"
+bet, of either the smaller or larger betting limit, to start the action. After the betting round is complete, each participant remaining in the hand must decide
+whether or not to expose his/her down card. These decisions must be complete prior to the deal of the third card and follow the same order-of-action as
+the betting. Each participant then receives his/her next card, which may be delivered up or down depending on whether previously dealt down cards
+have been opened. If a participant already has a down card, the dealer then deals the participant's next card up. If a participant has no down card, the
+dealer will deal the next card facedown. When the third card has been delivered, betting then occurs. The fourth and fifth cards are dealt and played
+according to the same format described above. At showdown, the participant with the highest-ranking hand wins the pot.
+
+      254. The Joker is "wild". If a participant has a joker as a down card, the joker can assume any value needed to make that participant's best possible
+             five-card poker hand. In the instance that the Joker is an up card, it can assume the value of an Ace, or any card needed, by the participant
+             holding the Joker, to complete a Flush or Straight.
+
+      255. The participant with the high card clockwise of the dealer button is obligated to post a "bring-in" bet, of either the smaller or larger betting limit,
+             to start the action. (When the Joker is dealt face up, it will be considered an Ace for purposes of the opening bet.)
+
+      256. On all subsequent betting rounds, the action begins with the highest-ranking poker hand. Hands of equal value are considered tied, regardless
+             of whether one includes the Joker. In the event of a tie, the hand closest to the dealer in a clockwise direction will act first.
+
+      257. If any down card is exposed by the dealer, that participant will receive his next card down and will be permitted to declare "all-in" for that hand
+             or remain active in the remaining betting rounds. If the Joker is inadvertently exposed, it will play as if it had been dealt face down, for
+             determining its "wild" value", and the participant will have the option of declaring "all-in".
+
+      258. Before dealing 5th street, the dealer will count the number of participants remaining and add two to that number. This is the number of cards
+             needed in the stub to finish dealing the hand. The dealer will then count the stub, taking care not to expose any cards to the participants. If
+             there are enough cards, the dealer will complete the hand. If there are not enough cards, the dealer will determine if adding the two burn
+             cards will allow for a sufficient number of cards. If the answer is yes, then the dealer will scramble the stub and the two burn cards together
+             and finish the hand.
+
+      259. Because the 8's, 9's, and 10's are removed from the deck, the 7's and J's become consecutive, so that 5-6-7-J-Q is a straight.
+
+      260. A flush beats a full house (with fewer cards of each suit, they are harder to get). The standard ranking of all other poker hands is the same.
+             A five-of-a-kind is the highest hand in Mexican Poker/Mexican Stud.
+
+      261. If cards on the initial deal are dealt out of sequence, a misdeal will be declared. Substantial action, however, will indicate acceptance, in which
+             case there will be no misdeal. The hand missed will be fouled. Because cards on 3rd, 4th or 5th streets are dealt either face up or face down,
+             any cards dealt out of sequence on those streets will be moved face up to their correct position. The deal of the affected street will be
+             completed if necessary. No betting will be permitted on the affected street. Any following street will then be dealt, and betting will resume. Any
+             bets made by participants who receive out of sequence cards, which had not yet been returned to their correct position will be denied and
+             returned to the participant.
+
+      262. If a participant exposes a card, at any point other than at prescribed times, it is not considered an exposed card and will be required to play it
+             as a down card.
+
+      263. A card will be burned after the completion of betting each round and before the first participant remaining in the hand has his/her next card
+             delivered.
+
+      264. After the last round of betting, any remaining participants will go to showdown to determine the winner of the pot.
+
+      265. The previous mentioned rules concerning the Joker still apply at showdown. The participant with the highest poker hand at showdown will win
+             the pot.
+
+                                                                - 21 -
+                                  Caesars Entertainment WSOP Live-Action Rules 2026
+SECTION X LOWBALL
+
+Lowball is draw poker with the lowest hand winning the pot. Each participant is dealt five cards facedown, after which there is a betting round.
+Participants are required to open with a bet or fold. The participants who remain in the pot after the first betting round now have an option to improve
+their hand by replacing cards in their hands with new ones. This is the draw. The game is normally played with one or more blinds, sometimes with an
+ante added. Some betting structures allow the big blind to be called; other structures require the minimum open to be double the big blind. In limit poker,
+the usual structure has the limit double after the draw. The most popular forms of lowball are ace-to-five lowball, also known as California lowball, and
+deuce-to-seven lowball, also known as Kansas City lowball. Ace-to-five lowball gets its name because the best hand at that form is 5-4-3-2-A. Deuce-to-
+seven lowball gets its name because the best hand is 7-5-4-3-2, not suited. There are two variations of these games, Single Draw and Triple Draw.
+Single is as described above, and Triple draw is a variation that allows participants to draw three times. In Triple draw, the participants will have a betting
+round with the first five cards, after the first draw, after the second draw, and again after the third draw. Triple draw is played generally as a limit poker
+structure. Single draw is generally played Pot Limit or No Limit. Limit, Pot Limit and No Limit rules apply. In the event of a re-shuffle, meaning the dealer
+has gotten down to the last card of the deck while participants still need cards, the discards from the previous rounds and any mucked cards and the
+burn cards will be shuffled together to complete the remaining draws. The last card of the deck can be used to complete all draws. Card from the current
+discard round will be put in place of the burn cards that have been used for the reshuffle. This means that the dealer will not use the discards from the
+round in progress. If the dealer can complete the final draw for the last participant by using the last card in the stub, the dealer will use this card but only
+if the last card will complete all draws for the hand. If during the draw, one (1) card is exposed the dealer will complete the draw round and then give the
+top card to replace the exposed card. The expose card will be used as the burn. If during the draw two or more cards are exposed, the dealer will
+complete the draw round and then replace the exposed cards with the cards from the top of the deck. One (1) of the exposed cards will serve as the
+next burn card.
+
+                                                                                              LOWBALL
+
+      266. The following circumstances cause a misdeal, provided attention is called to the error before substantial action occurs have acted on their
+             hands:
+
+                     The first or second card of the hand has been dealt face up or exposed through dealer error.
+                     Two or more cards have been exposed by the dealer.
+                     Two or more extra cards have been dealt in the starting hands of a game.
+                     An incorrect number of cards have been dealt to a participant, except the button may receive one more card to complete a starting
+
+                           hand.
+                     The button was out of position.
+                     The first card was dealt to the wrong position.
+                     Cards have been dealt out of the proper sequence.
+                     Cards have been dealt to an empty seat or a participant not entitled to a hand.
+                     A participant has been dealt out who is entitled to a hand. This participant must be present at the table or have posted a blind or
+
+                           ante.
+
+      267. In limit play, a bet and four raises are allowed in multi-handed pots.
+
+      268. As a new participant, you have three options:
+                     Wait for the big blind.
+                     Post the big blind, except in single blind game.
+                     Kill the pot for double the amount of the big blind.
+                     A new participant may not receive a hand if it forces an existing player to sit out and the new player must wait till their big blind to
+                           enter the game.
+
+      269. In a single-blind game, a participant who has less than half a blind may receive a hand. However, the next participant is obligated to take the
+             blind. If the all-in participant wins the pot or buys in again, that participant will then be obligated to post a big blind, kill or sit out until due for the
+             big blind.
+             (see #269)
+
+      270. In single-blind games, half a blind or more constitutes a full blind.
+
+      271. In single-blind games, if you fail to take the blind, you can only wait for blind or kill.
+
+      272. In multiple-blind games, if for any reason the big blind passes your seat; you may either wait for the big blind or kill the pot to receive a hand.
+             This does not apply if you have taken all your blinds and changed seats. In this situation, you may be dealt in as soon as your position relative
+             to the blinds entitles you to a hand. The button may go by you once without penalty.
+
+      273. All exposed cards during the deal or any subsequent drawing round will be replaced. WSOP dealer procedure is to push and pull a
+             participant's draw cards. If the participant elects to have the draw cards pitched by the dealer it will be so at the participant's risk and any
+             exposed card in that circumstance will be kept by the receiving participant.
+
+      274. A participant may draw up to five consecutive cards.
+
+                                                                - 22 -
+                                  Caesars Entertainment WSOP Live-Action Rules 2026
+      275. A valid playing hand consists of exactly five cards. Having more or fewer than five cards after the draw results in a fouled hand. Before the
+             draw, if a participant has fewer than five cards, they may receive the missing cards--provided no action has been taken by the first participant
+             to act, unless that action occurs before the deal is completed. The dealer position may still receive a missing fifth card prior to the next draw,
+             even if action has occurred. Once action has been taken, all participants are entitled, on the next draw, to receive the number of cards
+             necessary to complete a five-card hand.
+
+      276. You may change the number of cards you wish to draw, provided:
+                     No card has been dealt off the deck in response to your request, including the burn card.
+                     No participant has acted, in either the betting or indicating the number of cards to be drawn, based on the number of cards you have
+                           requested.
+
+      277. If you are asked how many cards you drew by another active participant, the participant and dealer must respond until there has been action
+             after the draw. Once there is any action, you are no longer obliged to respond, and the dealer cannot respond. If dealer mucks a player's
+             draw cards, they will be replaced at the end of the draw round.
+
+      278. Rapping the table in turn constitutes either a pass or the declaration of a pat hand that does not want to draw any cards, depending on the
+             situation.
+
+      279. Cards speak; a tabled hand assigns itself a value. However, you are not allowed to claim a better hand than you hold. If a participant calls an
+             "8", that participant must produce at least an "8" low or better to win. But if a participant erroneously calls the second card incorrectly, such as
+             "8-6" when holding an 8-7, no penalty applies. If you miscall your hand and cause another participant to foul his or her hand, your hand may
+             be ruled dead. If both hands remain intact, the best hand wins. If a miscalled hand occurs multi-handed causing a foul, the miscalled hand is
+             dead, and the best remaining hand wins the pot. For your own protection, always hold your hand until you see your opponent's cards.
+
+      280. Any participant spreading a hand with a pair in it must announce "pair" or risk losing the pot if it causes any other participant to foul a hand. If
+             two or more hands remain intact, the best hand wins the pot.
+
+                                                                                    ACE-TO-FIVE LOWBALL
+
+In ace-to-five lowball, the best hand is any 5-4-3-2-A. Straights and flushes do not count against your hand.
+
+      281. When a joker is in play, it functions as the lowest-ranking card not already present in the hand. Jokers are not used unless their inclusion is
+             specifically posted.
+
+      282. Check-raise is permitted.
+
+      283. In limit ace-to-five lowball, before the draw, all exposed cards will be replaced after the deal has been completed. This first exposed card is
+             used as the burn card.
+
+      284. Ace to Five Lowball is played with as many as six participants.
+
+                                                                                DEUCE-TO-SEVEN LOWBALL
+
+      285. In deuce-to-seven lowball, sometimes known as Kansas City lowball, in most respects, the worst conventional poker hand wins. Straights and
+             flushes count against you. The ace is used only as a high card. Therefore, the best hand is 7-5-4-3-2, not all the same suit. The hand
+             5-4-3-2-A is not considered to be a straight, but an ace-5 high, so it beats other ace-high hands and pairs, but loses to king-high. A pair of
+             aces is the highest pair, so it loses to any other pair. The rules for deuce-to-seven lowball are the same as those for ace-to-five lowball.
+
+      286. The best hand is 7-5-4-3-2 of at least two different suits. Straights and flushes count against you, and aces are considered high only.
+
+      287. All exposed cards during the deal or any subsequent drawing round will be replaced. WSOP dealer procedure is to push and pull a
+             participant's draw cards. If the participant elects to have his/her draw cards pitched by the dealer it will be so at the participant's risk and any
+             exposed card in that circumstance will be kept by the participant.
+
+      288. Deuce-to-Seven Lowball is played with as many as six participants.
+
+                                                                           NO-LIMIT AND POT-LIMIT LOWBALL
+
+      289. All the rules for no-limit and pot-limit poker apply to no-limit and pot-limit lowball.
+
+      290. All exposed cards during the deal or any subsequent drawing round will be replaced. WSOP dealer procedure is to push and pull a
+             participant's draw cards. If the participant elects to have his/her draw cards pitched by the dealer it will be so at the participant's risk and any
+             exposed card in that circumstance will be kept by the participant.
+
+      291. After the draw, a participant may check any hand without penalty.
+
+                                                                - 23 -
+                                  Caesars Entertainment WSOP Live-Action Rules 2026
+      292. Check-raise is allowed.
+
+                                                                                               ARCHIE
+
+Archie is a split game where the high hand of a pair of 9's or better wins half the pot, and the low hand of 8 or better wins the other half. Each participant
+is dealt five cards facedown, after which there is a betting round. Participants are required to open with a bet or fold. The participants who remain in the
+pot after the first betting round now have an option to improve their hand by replacing cards in their hands with new ones. This is the draw. The game is
+normally played with one or more blinds, sometimes with an ante added. Some betting structures allow the big blind to be called; other structures require
+the minimum open to be double the big blind. In limit poker, the usual structure has the limit double after the draw. The participants will have a betting
+round with the first five cards, after the first draw, after the second draw, and again after the third draw. Archie is played generally as a limit poker structure.
+In the event of a re-shuffle, meaning the dealer has gotten down to the last card of the deck while participants still need cards, the discards from the
+previous rounds and any mucked cards will be shuffled together to complete the remaining draws. This means that the dealer will not use the discards
+from the round in progress. If the dealer can complete the final draw for the last participant by using the last card in the stub, the dealer will use this card
+but only if the last card will complete all draws for the hand.
+
+      293. If there is no qualifying high hand (9's or better), the best 8/O low hand wins the entire pot.
+      294. If there is no qualifying low hand (8 low or better), the qualifying high hand wins the entire pot.
+      295. If there is neither a qualifying high hand nor qualifying low hand, the pot will be split by all participants remaining in the hand.
+      296. All other rules for draw games apply.
+
+                                                                                                   ARI
+
+All the rules of Archie apply to Ari with the following changes: a community card will be put down at the end of the initial deal. This community card will
+only be usable for the high hand. 6's or better will be the qualifier for the high hand. The low hand won't be using the community card.
+
+SECTION XI - BADUGI
+
+             Badugi is a form of lowball draw. A button and blind structure will be used in this game. Each participant is dealt four cards face down, then
+acting in turn clockwise of the blinds. The participants who remain in the pot after the first betting round now have an option to improve their hand by
+replacing cards in their hands with new ones. When played limit stakes, this game will usually be played with three draws. There will be a betting round
+after each draw. A participant is entitled to draw up to four cards on each round as they choose to make the best four-card Badugi. This game can also
+be player in a high variation. The best hand being As, Ah, Ad, Ac. Straights and flushes have no value.
+
+      297. A Badugi consists of four cards of different suits and ranks. For example, the best hand consists of A-2-3-4 club, diamond, heart, spade in any
+             sequence.
+
+      298. A hand can still be a winner if at the show down none of the remaining participants have a Badugi, in this case the best three, two, or even one
+             card Badugi will be awarded the pot. Ad-2c-3h-6h vs. Ac-3d-4h-5h, the winning hand would be Ad-2c-3h-6h because that hand consists of the
+             three lowest, unsuited cards, Ad-2c-3h.
+
+      299. The rules governing misdeals for lowball and other button games will be used for Badugi.
+
+      300. A participant may receive four consecutive cards off the deck.
+
+      301. As a new participant you must wait for the big blind or post a full big blind. If an existing participant has missed a blind, they must wait for the
+             big blind to come around before they can receive a hand.
+
+      302. All exposed cards during the deal or any subsequent drawing round will be replaced. WSOP dealer procedure is to push and pull a
+             participant's draw cards. If the participant elects to have his/her draw cards pitched by the dealer it will be so at the participant's risk and any
+             exposed card in that circumstance will be kept by the participant.
+
+      303. Check raise is allowed, on any round after any draw.
+
+      304. If you are asked how many cards you drew by another active participant, the participant and dealer must respond until there has been action
+             after the draw. Once there is any action, you are no longer obligated to respond, and the dealer cannot respond.
+
+      305. You may change the number of cards you wish to draw, provided:
+                     No card has been dealt off the deck in response to your request, including the burn card.
+                     No participant has acted, in either the betting or indicating the number of cards to be drawn, based on the number of cards you have
+                           requested.
+
+             .
+
+      306. Badugi can be played with as many as eight participants.
+
+                                                                - 24 -
+                                  Caesars Entertainment WSOP Live-Action Rules 2026
+                                                                                            BADUCI
+
+Baduci is a form of Badugi and Deuce-to-Seven lowball draw. Baduci is a split pot game where half of the pot will be awarded to the best Deuce to
+Seven hand and the other half will be awarded to the best Badugi hand excluding the Ace since the Ace is considered as a high card in Baduci. A
+button and blind structure will be used in this game. Each participant is dealt five cards face down, then acting in turn clockwise of the blinds. The
+participants who remain in the pot after the first betting round now have an option to improve their hand by replacing cards in their hands with new
+ones. When played limit stakes, this game will usually be played with three draws. There will be a betting round after each draw. A participant is
+entitled to draw up to five cards on each round as they choose to make the best five card Baduci.
+
+307. The best hand would be 2, 3, 4, and 5 of different suits with a 7 of any suit. Aces are considered high in this game.
+
+308. The rules governing misdeals for lowball and other button games will be used for Baduci.
+
+309. A participant may receive five consecutive cards off the deck.
+
+310. As a new participant you must wait for the big blind or post a full big blind. If a participant has missed a blind, they must wait for the big blind to
+      come around before they can receive a hand.
+
+311. All exposed cards during the deal or any subsequent drawing round will be replaced. WSOP dealer procedure is to push and pull a
+      participant's draw cards. If the participant elects to have his/her draw cards pitched by the dealer it will be so at the participant's risk and any
+      exposed card in that circumstance will be kept by the participant.
+
+312. Check raise is allowed.
+
+313. If you are asked how many cards you drew by another active participant, the participant and dealer must respond until there has been action
+      after the draw. Once there is any action, you are no longer obligated to respond, and the dealer cannot respond.
+
+314. You may change the number of cards you wish to draw, provided:
+              No card has been dealt off the deck in response to your request, including the burn card.
+              No participant has acted, in either the betting or indicating the number of cards to be drawn, based on the number of cards you have
+                    requested.
+
+315. Baduci can be played with as many as six participants.
+
+                                                                                    BADACI (Badacey)
+
+Badaci is a form of Badugi and Ace-to-Five lowball draw. Badaci is a split pot game where half of the pot will be awarded to the best Ace-to-Five
+hand and the other half will be awarded to the best Badugi hand. A button and blind structure will be used in this game. Each participant is dealt
+five cards face down, then acting in turn clockwise of the blinds. The participants who remain in the pot after the first betting round now have an
+option to improve their hand by replacing cards in their hands with new ones. When played limit stakes, this game will usually be played with three
+draws. There will be a betting round after each draw. A participant is entitled to draw up to five cards on each round as they choose to make the
+best five card Badaci.
+
+316. The best hand would be A, 2, 3, 4 of different suits with a 5 of any suit.
+
+317. Most commonly the pot will be split between the best Badugi hand and the best Ace to Five hand.
+
+318. The rules governing misdeals for lowball and other button games will be used for Badaci.
+
+319. A participant may receive five consecutive cards off the deck.
+
+320. As a new participant you must wait for the big blind or post a full big blind. If a participant has missed a blind, they must wait for the big blind to
+      come around before they can receive a hand.
+
+321. All exposed cards during the deal or any subsequent drawing round will be replaced. WSOP dealer procedure is to push and pull a
+      participant's draw cards. If the participant elects to have his/her draw cards pitched by the dealer it will be so at the participant's risk and any
+      exposed card in that circumstance will be kept by the participant.
+
+322. Check raise is allowed.
+
+323. If you are asked how many cards you drew by another active participant, the participant and dealer must respond until there has been action
+      after the draw. Once there is any action, you are no longer obligated to respond, and the dealer cannot respond.
+
+                                                            - 25 -
+                              Caesars Entertainment WSOP Live-Action Rules 2026
+      324. You may change the number of cards you wish to draw, provided:
+                     No card has been dealt off the deck in response to your request, including the burn card.
+                     No participant has acted, in either the betting or indicating the number of cards to be drawn, based on the number of cards you have
+                           requested.
+
+      325. Badaci can be played with as many as six participants.
+
+                                                                                                 RAZZDUGI
+
+Razzdugi is dealt like seven card razz. It is a split pot game where half of the pot will be awarded to the best Razz hand and the other half will be
+awarded to the best Badugi hand. In Razzdugi, each participant first receives two down cards followed by one up card to start the hand. After each
+participant receives their three cards, there is a first round of betting. There are then three more up cards and then a final down card, with a betting
+round after each, for a total of five betting rounds on a deal played to the showdown. The smaller bet is wagered for the first two betting rounds (third and
+fourth street), and the larger bet is wagered for the last three betting rounds, (fifth, sixth, and seventh street). Deliberately changing the order of your up
+cards is improper because it unfairly misleads the other participants.
+
+      326. The best hand would be A, 2, 3, 4 of different suits with a 5 of any suit.
+
+      327. Most commonly the pot will be split between the best Badugi hand and the best Razz hand.
+
+      328. The rules governing misdeals for stud type games will be used for Razzdugi.
+
+      329. Check raise is allowed.
+
+      330. Razzdugi can be played with as many as eight participants.
+
+      331. If there is an odd chip left after the split, it will be awarded to the best Razz hand since there is no true five-card hand.
+
+                                                                                       RAZZDUCI (Razzdeucey)
+
+      Razzduci is dealt like seven card razz. It is a split pot game where half of the pot will be awarded to the best Badugi hand and the other half will be
+      awarded to the best Deuce to Seven hand. In Razzduci, each participant first receives two down cards followed by one up card to start the hand.
+      After each participant receives their three cards, there is a first round of betting. There are then three more up cards and then a final down card,
+      with a betting round after each, for a total of five betting rounds on a deal played to the showdown. The smaller bet is wagered for the first two
+      betting rounds (third and fourth street), and the larger bet is wagered for the last three betting rounds, (fifth, sixth, and seventh street). Deliberately
+      changing the order of your up cards is improper because it unfairly misleads the other participants.
+
+      332. The best hand would be A, 2, 3, 4, 5 of different suits with a 7 of any suit. Straights and flushes count against you for the deuce to seven
+             portion of the hand.
+
+      333. Most commonly the pot will be split between the best Deuce to Seven hand and the best Razz hand.
+
+      334. The rules governing misdeals for stud type games will be used for Razzduci.
+
+      335. Check raise is allowed.
+
+      336. Razzduci can be played with as many as eight participants
+
+      SECTION XII ­ CHINESE POKER
+
+      337. Chinese Poker is usually played with 4 participants.
+
+      338. The Dealer deals 52 cards into four stacks of 13 cards each.
+
+      339. When the participants have completed the hand they are playing, they will toss all cards to the center of the table.
+
+      340. The Dealer will muck those cards, move the button and distribute the next hand of cards accordingly:
+
+                            The first stack is pushed to the participant directly following the Dealer button, small blind, then clockwise around the table.
+                            The big blind participant receives the second stack,
+                            The participant following him gets the third stack,
+                            The participant with the Dealer button gets the fourth stack.
+
+      341. Chinese Poker can be played with:
+
+                            2 participants:
+
+                                                                - 26 -
+                                  Caesars Entertainment WSOP Live-Action Rules 2026
+                           Two hands each: The first participant receives the first and third stack. The other participant receives the second and fourth
+                           stack.
+                     3 participants:
+                           The player on the button has the option to play the fourth stack or it will be mucked.
+                     5 participants:
+                           Participant in the Dealer Button position does not receive a hand.
+
+342. While the participants are playing the hand, the Dealer washes, shuffles, cuts and deals the cards for the next hand. Participants will table their
+      hands and pay each other accordingly.
+
+343. The Dealer will not get involved in the play or paying out of this game.
+
+344. If a participant receives 14 cards, and another only receives 12, a supervisor will spread the 14 cards face down on the table and the supervisor
+      will select one randomly and play will continue. There is no misdeal.
+
+                                                      CHINESE POKER VARIATION: CHINESE DRAW POKER
+
+345. Chinese Draw Poker follows all standard rules of Chinese Poker, with the following exceptions: cards are dealt in increments, and each
+      participant must post an ante and/or blinds to receive a hand. After each incremental card distribution, a betting round takes place. The final
+      betting round occurs once all remaining participants have received all thirteen cards and have set their hands. If the hand proceeds to a
+      showdown, the pot is awarded based on the standard Chinese Poker scoring system. A common distribution format is 5 cards, 3 cards, and 5
+      cards, resulting in three betting rounds.
+
+                                                  CHINESE POKER VARIATION: OPEN-FACE CHINESE POKER
+
+346. Paying Out:
+
+      After each participant has completed a thirteen-card hand, the participants will compare sub-hands to determine the winner based off a pre-
+      determined payout table. Comparisons will begin with the participant on the button and that hand will be compared to each of the opponent's
+      hands moving in a clockwise direction. As the hands are compared and scored, the participant on the button will exchange payouts with the
+      other three participants. At this point, the next participant, in a clockwise direction, will compare hands with the two remaining participants (the
+      participant on the button has already completed the scoring for this hand). Again, once these hands are compared and scored, this participant
+      will exchange payouts. Then the second participant from the button will compare hands with the cut-off position and the final payout will be
+      exchanged.
+
+             · As a participant nears the end of a buy-in, a situation may arise when the participant either wins or loses more points than this
+                    participant has remaining. If this occurs, the participant may only lose a total number of points equal to the number of points that
+                    this participant began the hand with. In addition, if a participant loses points in the first comparison, the participant can only receive
+                    a payoff no larger than the number of points that the participant has to begin the next comparison. No single comparison pay-off will
+                    ever be larger than the number of points that the participant began the hand with. If a participant wins points, these points will not
+                    receive action in subsequent comparisons for the hand in progress. However, the participant will carry all starting points to the next
+                    comparison.
+
+             · If a participant runs out of chips/does not have enough left for a point to play the next hand (including Fantasyland), they can either
+                    buy more chips or leave that game. If they chose to leave the table, they will not be allowed to buy back into that game type for a
+                    minimum of 2 hours. "That Game" refers to the game the participant is/was playing in, not that game type/limit.
+
+             · Participants found to be playing "Out of Pocket" will be asked to leave for a period of no less than 24 hours, and up to the duration of
+                    the 2026 World Series of Poker.
+
+             · Participants may only lose a total number of points equal to the number of points that this participant began the hand with. In
+                    addition, if a participant loses points in the first comparison, the participant can only receive a payoff no larger than the number of
+                    points that the participant must begin the next comparison. No single comparison pay-off will ever be larger than the number of
+                    points that the participant began the hand with. If a participant wins points, these points will not receive action in subsequent
+                    comparisons for the hand in progress. However, the participant will carry all starting points to the next comparison
+
+347. Dealing: To begin, all participants will receive five cards dealt in the same fashion as any draw game, starting from the left of the button. The
+      participants will then put each card in a sub-hand deemed the front, middle, or back. Each participant then shows the setting of his/her
+      starting five cards, beginning with the participant to the left of the button. After the initial hands are set, each participant gets one card at a
+      time from the dealer and continues placing the cards in their sub-hands until each participant has a complete thirteen card Chinese poker
+      hand with three cards in the front, five in the middle, and five in the back.
+
+348. Scoring: Participants compare each of their three sub-hands (front, middle, and back) to each of the other participants. One point is awarded
+      to the participant who wins each comparison. If a participant wins all three against another participant, he is awarded three extra points for the
+      scoop.
+
+                                                            - 27 -
+                              Caesars Entertainment WSOP Live-Action Rules 2026
+349. Fouled hand: A hand is considered fouled if the front is a higher-ranking poker hand than the middle or the middle is higher ranking than the
+      back. A fouled hand is considered scooped against a non-fouled hand.
+
+             · If a participant has the incorrect number of cards set at any point during the hand, this participant's hand will be ruled fouled, and the
+                    participant will be responsible for any payouts and royalties incurred during the hand. This means that if a participant has more than
+                    or less than the exact number of cards that should be set at that stage of the hand the hand is fouled.
+
+350. Bonuses or royalties only count in non-fouled hands. However, bonuses don't get cancelled out if beaten by an opponent's higher bonus as
+      in regular Chinese poker. An example of a bonus structure is as follows:
+
+                                ROYALTIES
+
+                                TOP HAND
+
+                66                                    1 point
+
+                77                                    2 points
+
+                88                                    3 points
+
+                99                                    4 points
+
+                TT                                    5 points
+
+                JJ                                    6 points
+
+                QQ                                    7 points
+
+                KK                                    8 points
+
+                AA                                    9 points
+
+                222                                   10 points
+
+                333                                   11 points
+
+                444                                   12 points
+
+                555                                   13 points
+
+                666                                   14 points
+
+                777                                   15 points
+
+                888                                   16 points
+
+                999                                   17 points
+
+                TTT                                   18 points
+
+                JJJ                                   19 points
+
+                QQQ                                   20 points
+
+                KKK                                   21 points
+
+                AAA                                   22 points
+
+       MIDDLE HAND                                BOTTOM HAND
+
+Trips                2 points              Straight              2 points
+
+Straight             4 points              Flush                 4 points
+
+Flush                8 points             Full House             6 points
+
+Full House           12 points             Quads                 10 points
+
+Quads                20 points  Straight Flush                   15 points
+
+Straight Flush       30 points  Royal Flush                      25 points
+
+Royal Flush          50 points  Straight Flushssss 15 pointsssssssss
+
+351. Calling the clock: Any participant may call the clock after 30 seconds have lapsed. The slow participant will be given 30 seconds to act. If
+      no action is taken at that time, the card is placed in the front-most sub-hand that doesn't cause a guaranteed foul.
+
+                                                            - 28 -
+                              Caesars Entertainment WSOP Live-Action Rules 2026
+352. If a participant scores beyond a certain royalty threshold, that participant is said to have gone into "Fantasyland".
+
+             a. The dealer will distribute the cards as follows:
+                           1. Each participant receives one card at a time starting to the left of the button. After each participant receives five cards,
+                                 the dealer then deals a book of eight to the participant that is in Fantasyland.
+                           2. If there is more than one participant in Fantasyland, each participant will receive five cards and then the dealer will then
+                                 deal a book of eight cards to the first participant to the left of the button that is in Fantasyland.
+
+             b. The participant that is in Fantasyland can bring his/her cards past the rail to set the hand for protection purposes. This participant
+                    cannot leave the table with the cards to set his/her hand.
+
+             c. If a participant enters Fantasyland the button will advance to the next position. The Fantasyland hand in progress is not an
+                    extension of the previous hand.
+                           1. Any participant entering Fantasyland may not add stakes to the game. Participants may only add stakes in between
+                                 hands and if not playing in Fantasyland on the subsequent hand.
+
+             d. If a participant is in Fantasyland and receives the improper number of cards from the dealer, the participant is responsible for
+                    bringing it to the attention of the dealer before substantial action has occurred. Failure to do so may result in the participant's hand
+                    being fouled. The dealer should call the floor supervisor any time a player is determined to have the wrong number of cards when in
+                    Fantasyland
+                           1. If an error is identified before substantial action has taken place, the dealer will call the floor supervisor to determine the
+                                 most fair and appropriate way to resolve the situation while maintaining the integrity of the game.
+                           2. If the player that is in Fantasyland has too few cards and no other player has started the initial draw, then the additional
+                                 cards will be given immediately. Once another player has started the first draw then the additional cards will be given
+                                 once all draws have been completed.
+
+             e. A participant will remain in Fantasyland for the next hand by scoring any of the following and not fouling:
+                           1. Quads or better in the back row.
+                           2. Full House or better in the middle.
+                           3. Trips in the front.
+
+                                             CHINESE POKER VARIATION: TURBO OPEN-FACE CHINESE POKER
+
+353. Turbo Open Face Chinese begins in the same manner as normal open face, with each player dealt 5 cards. After that, each player is dealt 4
+      cards at a time. There are only 3 rounds of dealing: 5+4+4. All cards are set, and scoring is the same as regular Open-Face.
+
+                                                                                TAIWANESE POKER
+354. Participants are dealt 7 cards. The participants will set their hands with 1 card on top (high card), 2 cards in the middle (hold'em hand) and 4
+
+      cards in the back (Omaha hand).
+355. Participants will then table their cards, and then a community board is put out.
+356. The best overall hand wins.
+357. Payouts are as follows:
+
+                     2 Pair       "TOP"  "MIDDLE"     "BOTTOM"
+Trips (3 of a kind)          HIGH CARD   HOLD'EM    OMAHA HIGH
+
+                 Straight             1        -             -
+                      Flush           2                      -
+                                      2          1           -
+            Full House                2          1           -
+                    Quads             3          1
+                                      4          2              1
+      Straight Flush                  5          3
+           Royal Flush                6          4              2
+                                                 5
+                                                                3
+
+                                                                4
+
+                              - 29 -
+Caesars Entertainment WSOP Live-Action Rules 2026
+                                                CHINESE POKER VARIATION: PINEAPPLE OPEN-FACE CHINESE POKER
+
+      358. Dealing: To begin, all participants will receive five cards dealt in the same fashion as any draw game, starting from the left of the button. The
+             participants will then put each card in a sub-hand deemed the front, middle, or back. Each participant shows the setting of his/her starting five
+             cards, beginning with the participant to the left of the button. Unlike regular Open-Face Chinese Poker, after the initial hands are set, each
+             participant gets three cards at a time from the dealer and then the participant must choose two of the three cards to place in his/her sub-hand.
+             This process is repeated until each participant has a complete thirteen card Chinese poker hand with three cards in the front, five in the
+             middle, and five in the back.
+                    · If a participant had reached Fantasyland in the previous hand, this participant would receive 14 cards in the dealing fashion
+                           described above for Fantasyland but will receive a book of 9 cards instead of 8 cards and will need to discard one of these cards,
+                           facedown, before the other participants begin the draw.
+
+      359. All previously mentioned rules of Open-Face Chinese Poker apply after each participant has a complete thirteen card hand.
+
+                                            CHINESE POKER VARIATION: PINEAPPLE OPEN-FACE CHINESE (2-7 MIDDLE)
+
+      360. The middle row is changed to lowball.
+                    · 10-high is the 'best' hand that doesn't foul; in other words, any J, Q, K, A, pair or better is a foul. 65432, 76543 or any straights or
+                           flushes are also fouls.
+
+                    · Examples of good middle rows:
+                              i.e. T9732 / 96543 / 85432 / 76432
+
+                    · The middle row must fall into the lowball range, and the back row must beat the front for the hand to be non-fouled.
+
+                           An example of a good hand: AA3-87436-TT99K
+
+                           Examples of a fouled hand: AA3-8743J-TT99K or AA3-87436-TT9QK
+
+                    · Middle row royalties are as such:
+
+                           10 high is 0 points, 9 high is 1 point, 8 high is 2 points, 7 high is 4 points, perfect lowball is 8 points.
+
+                    · To qualify for Fantasyland a player must have a pair of Kings or better on the top hand or a perfect lowball in the middle hand. To
+                           remain in Fantasyland a player must have Three of a Kind or better on the top hand, a perfect lowball in the middle hand or Four of
+                           a Kind or better on the bottom hand.
+
+                    · This may also be played with a progressive variation.
+
+                    · This may also be played with a Super Fantasy variation. Super Fantasy is when you have a hand that qualifies you for Fantasyland
+                           where the top hand (KK or better) and middle hand (perfect lowball) both qualify for Fantasyland. In this case the player will receive
+                           15 total cards instead of 14 for their initial Fantasyland hand. This rule only applies to the initial hand that goes to Fantasyland. If
+                           you remain in Fantasyland, you will always receive 14 total cards and will not receive the 15th card.
+
+      361. All previously mentioned rules of Pineapple Open-Face Chinese Poker other than the scoring of the middle hand described above.
+
+      362. When a player initially goes to Fantasyland the number of cards they will receive varies based on the strength of the top hand. Note that when
+             playing the 2-7 variation a player needs KK or better to go to Fantasyland and does not go to Fantasyland with a QQ on the top hand.
+                     QQ = 14 cards, KK = 15 cards, AA = 16 cards, 222+ = 17 cards
+
+                                                                                               SHORT DECK
+
+Short Deck is played using a rotating Dealer Button, which moves clockwise after each hand to determine the Dealer and blind positions. In this variant,
+the deck consists of thirty-six (36) cards, with all Deuces, Treys, Fours, and Fives removed. Aces remain both the highest and lowest cards in rank, so a
+hand such as 9-8-7-6-A qualifies as a straight. Each player posts an ante equal to half the size of the button ante--for example, in a $200/$400 No-Limit
+Hold'em game, all players post $200 while the button posts $400. Action begins to the left of the button. In Hold'em variants, each player is dealt two
+face-down cards; in Pot-Limit Omaha (PLO), four cards are dealt. The first betting round follows. The Dealer then burns a card and reveals three
+community cards (the flop), followed by a second betting round. After burning another card, the Dealer reveals a fourth community card (the turn),
+prompting the third betting round. One final card is burned, and a fifth community card (the river) is revealed, followed by the final betting round. A
+showdown occurs among all remaining players, and the Dealer awards the pot to the best high hand.
+
+Short Deck Rules
+      363. The object of Short Deck is to make a better five-card poker hand, using any combination of hole cards and community cards, than your
+             opponents to win the pot.
+
+      364. A maximum of nine (9) players may be dealt in for Hold'em variants.
+
+                                                                - 30 -
+                                  Caesars Entertainment WSOP Live-Action Rules 2026
+365. A maximum of six (6) players may be dealt in for PLO variants.
+366. The deck consists of thirty-six (36) cards. The Deuces, Treys, Fours, and Fives are removed. An Ace is still both the highest and lowest card
+
+      in rank. Therefore, the holding of 9-8-7-6-A is a Straight.
+367. On the pre-flop round, a player may either fold or enter the pot with a wager equal to exactly three times the big blind. No raising, limping, or
+
+      straddling is permitted during pre-flop action.
+368. After the flop, the remaining three betting rounds are the same as they are always played, either Pot Limit, or No Limit.
+369. The rank of hands is as follows:
+
+                                                                 Royal Flush (best hand)
+                                                                        Straight Flush
+                                                                        Four of a Kind
+                                                                             Flush
+                                                                          Full House
+                                                                            Straight
+                                                                       Three of a Kind
+                                                                           Two Pair
+                                                                           One Pair
+                                                                          High Card
+
+                                                            - 31 -
+                              Caesars Entertainment WSOP Live-Action Rules 2026
+
