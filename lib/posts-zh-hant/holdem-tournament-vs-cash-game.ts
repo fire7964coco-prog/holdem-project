@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "現金桌的籌碼就是真金白銀、盲注固定；錦標賽的籌碼是生存權益，盲注會升、獎金看你打到第幾名。籌碼不等於現金，這一句話就是整篇的分水嶺。",
   category: "tournament",
   date: "2026-07-23",
-  updated: "2026-08-26",
+  updated: "2026-09-10",
   masterUpdated: "2026-08-26",
   hideSummaryImageSlot: true,
   readTime: "16 分鐘",

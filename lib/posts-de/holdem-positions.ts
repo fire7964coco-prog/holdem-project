@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Poker-Positionen sind Sitznamen, gemessen vom Dealer-Button – UTG, Lojack, Hijack, Cutoff, Button und die Blinds – und sie wandern jede Hand einen Sitz im Uhrzeigersinn. Preflop handelt UTG zuerst und der Big Blind zuletzt; postflop handelt der Small Blind zuerst und der Button zuletzt. Physische Sitznummern bewegen sich nie; Positionen schon.",
   category: "strategy",
   date: "2026-06-13",
-  updated: "2026-08-24",
+  updated: "2026-09-10",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "12 Min.",

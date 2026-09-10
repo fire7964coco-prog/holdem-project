@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "德州撲克永遠是從 7 張（2 張底牌 + 5 張公牌）裡湊出最強的 5 張——可以用兩張底牌、一張，或一張都不用（打公牌）。用固定順序掃全部 7 張：同花 → 順子 → 成對 → 高牌。",
   category: "hand-rankings",
   date: "2026-07-23",
-  updated: "2026-09-09",
+  updated: "2026-09-10",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "11 分鐘",

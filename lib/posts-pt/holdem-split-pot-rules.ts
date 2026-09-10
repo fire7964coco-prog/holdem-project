@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Sim — mãos de poker podem empatar. O pote é dividido (um chop) quando dois ou mais jogadores mostram a mesma melhor mão de cinco cartas no showdown. O naipe nunca desempata, e qualquer ficha ímpar que sobra vai para o primeiro empatado à esquerda do botão do dealer.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-09",
+  updated: "2026-09-10",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "12 min",

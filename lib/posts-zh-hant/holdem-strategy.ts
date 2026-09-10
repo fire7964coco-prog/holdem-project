@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "每一個獲勝的德州撲克決策，都可以簡化成 5 個重複的問題：我坐在哪裡（位置）、這手牌值不值得打、我要加注還是蓋牌（絕不跛入）、翻牌要不要繼續下注、什麼時候該放手？把這 5 個答對，你就是緊兇（TAG）玩家：翻牌前蓋掉約 80% 的牌、該打時就打得很兇，幾乎能贏下每一個休閒牌局——不用背任何技巧清單。",
   category: "strategy",
   date: "2026-07-22",
-  updated: "2026-09-09",
+  updated: "2026-09-10",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "14 分鐘",

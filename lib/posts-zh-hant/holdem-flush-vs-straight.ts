@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "同花（五張同花色，約佔五張發牌的 0.197%）在德州撲克裡永遠比順子（五張連號，約 0.392%）大——因為同花更罕見：算到河牌的七張牌上，是 3.03% 對順子的 4.62%。",
   category: "hand-rankings",
   date: "2026-07-23",
-  updated: "2026-09-09",
+  updated: "2026-09-10",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "11 分鐘",

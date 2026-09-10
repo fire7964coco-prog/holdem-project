@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "踢脚牌 kicker 就是你手里不属于主牌型的那张最大单张——当两名玩家牌型相同时，它来决定胜负。一对用 3 张踢脚，两对 1 张，三条 2 张；顺子、同花、葫芦、同花顺都没有踢脚。这也是公共牌成对出 A 时，AK 能赢 AQ 的原因。",
   category: "hand-rankings",
   date: "2026-07-08",
-  updated: "2026-09-09",
+  updated: "2026-09-10",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "10 分钟",

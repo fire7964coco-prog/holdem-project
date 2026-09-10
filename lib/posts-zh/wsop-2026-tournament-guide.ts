@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "第 57 届 WSOP 已经全部打完：主赛事决赛桌在 8 月 5 日收官，冠军是 22 岁的美国选手 Lucas Jumalon，奖金 $10,000,000。中国籍选手在主赛事的最高名次是第 28 名 Tianle Wang（$265,000），第 36 名 Junjie Tang（$215,000）也排进了前 40。金手链方面中国籍选手拿下 4 条，其中 Dong Chen 是第二条，也是中国第三位拿到多条金手链的人。主赛事 9,208 人次、奖池 $87,568,080。中国护照不在美国免签名单里，要办 B1/B2 签证，而且十年签还得再办 EVUS（$30.75）。",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-08-15",
+  updated: "2026-09-10",
   masterUpdated: "2026-08-15",
   keepImagesInBody: true,
   readTime: "12 分钟",

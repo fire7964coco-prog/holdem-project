@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A ordem das mãos do poker, da melhor à pior: Royal Flush, Straight Flush, Quadra, Full House, Flush, Sequência, Trinca, Dois Pares, Par e Carta Alta. Essa escada vale para o Texas Hold'em e quase todas as variantes.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-09-09",
+  updated: "2026-09-10",
 
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "爆冷門（Bad Beat）是你把籌碼推進去時原本大幅領先——通常有 80% 以上勝率——卻因為對手抽中一張幸運牌「反殺」你而輸掉。跟冤家牌不同的是，你一路都領先，只是最後被牌堆背叛。它很痛，但爆冷門其實是你正在一個能贏的牌局裡的證明。",
   category: "glossary",
   date: "2026-07-23",
-  updated: "2026-09-09",
+  updated: "2026-09-10",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "11 分鐘",

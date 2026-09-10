@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ein Straddle ist ein optionaler Blind-Einsatz – meist das Doppelte des Big Blinds – der gesetzt wird, bevor die Karten ausgeteilt werden. Er kauft dem Straddler die letzte Action preflop und die Option zu raisen, und verdoppelt so den Einsatz. In nahezu jedem Fall ist es ein -EV-Spielzug und fast immer auf Cashgames nach Hausregeln beschränkt.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-09-09",
+  updated: "2026-09-10",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "10 Min.",

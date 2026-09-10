@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "ICM（獨立籌碼模型）用剩下的獎金結構和每個人的籌碼量，把你的錦標賽籌碼換算成真實的獎金價值。因為第一名只有一個，翻倍籌碼從不等於翻倍獎金——所以籌碼領先者的籌碼，價值低於他的籌碼佔比；短碼則高於他的佔比。這道缺口，就是為什麼你在泡泡時間會蓋掉那些在現金桌輕鬆跟的手牌。",
   category: "tournament",
   date: "2026-07-23",
-  updated: "2026-09-09",
+  updated: "2026-09-10",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "13 分鐘",

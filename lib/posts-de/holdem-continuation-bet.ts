@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Eine Continuation Bet (C-Bet) ist ein Einsatz am Flop vom Spieler, der preflop geraist hat. Die moderne Regel ist nicht 'jeden Flop c-betten' – sondern die Flops zu setzen, die deine Range favorisieren (hohe, trockene Boards wie K-7-2) klein und oft, und die zu checken, die deinen Gegner favorisieren (niedrige, verbundene Boards wie 7-6-5). Setze klein – etwa ein Drittel Pot – auf trockenen Boards, groß – zwei Drittel oder mehr – auf wet Boards, c-bette weniger out of Position und deutlich weniger multiway.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-09",
+  updated: "2026-09-10",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "15 Min.",

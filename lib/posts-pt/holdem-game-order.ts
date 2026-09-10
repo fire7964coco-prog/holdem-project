@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Uma mão de Texas Hold'em segue esta ordem: postar os blinds → receber duas cartas fechadas → pré-flop → flop (3 cartas) → turn (1 carta) → river (1 carta) → showdown, com quatro rodadas de apostas no total.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-08-25",
+  updated: "2026-09-10",
   masterUpdated: "2026-09-07",
   keepImagesInBody: true,
   readTime: "16 min",

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Satu hand Texas Hold'em berjalan begini: pasang blinds → bagikan dua kartu tertutup → preflop → flop (3 kartu) → turn (1 kartu) → river (1 kartu) → showdown, dengan total empat ronde taruhan.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-08-27",
+  updated: "2026-09-10",
   masterUpdated: "2026-09-07",
   keepImagesInBody: true,
   readTime: "16 menit",

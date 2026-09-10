@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Im Cash Game sind Chips echtes Geld und die Blinds bleiben fest. Im Turnier sind Chips Überlebens-Equity, die Blinds steigen und Auszahlungen hängen von deiner Platzierung ab.",
   category: "tournament",
   date: "2026-06-11",
-  updated: "2026-08-26",
+  updated: "2026-09-10",
   hideSummaryImageSlot: true,
   readTime: "16 Min.",
   emoji: "🏆",

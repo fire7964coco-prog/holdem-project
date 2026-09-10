@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "會，德州撲克是可以平手的。當兩位以上玩家攤牌時最佳五張完全相同，底池就會平分（俗稱 Chop、分池）。花色永遠不破平手，分不平時多出來的那顆奇數籌碼，歸荷官按鈕左邊第一位平手玩家。",
   category: "hand-rankings",
   date: "2026-07-22",
-  updated: "2026-09-09",
+  updated: "2026-09-10",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "12 分鐘",

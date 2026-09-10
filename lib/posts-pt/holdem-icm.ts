@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "O ICM (Independent Chip Model) converte seu stack de fichas de torneio no seu valor real em premiação, usando os payouts e os stacks de todo mundo. Como você só ganha um primeiro prêmio, dobrar suas fichas nunca dobra seu dinheiro — então o stack do chip leader vale menos do que sua fatia de fichas, e os short stacks valem mais. Essa diferença é o motivo de você foldar na bolha mãos que seriam calls fáceis num cash game.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-09-09",
+  updated: "2026-09-10",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "13 min",

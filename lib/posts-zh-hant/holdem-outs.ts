@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "補牌就是牌堆裡還能把你這手變成大牌的牌。先數清楚，再換算：翻牌圈補牌 × 4、轉牌圈 × 2，就是你成牌的大概機率。同花聽牌是 9 張補牌，到河牌約 35%。",
   category: "odds",
   date: "2026-07-23",
-  updated: "2026-09-09",
+  updated: "2026-09-10",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "11 分鐘",

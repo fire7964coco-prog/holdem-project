@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "3-bet 就是翻前的第一次再加注——之所以叫 3-bet，是因為大盲是第一個下注、開牌加注是第二個、你的再加注是第三個。價值 3bet 一個緊實的核心（QQ+、AK）再加幾張帶阻擋牌的同花詐唬如 A5s，有利位置加到開牌的約 3 倍、不利位置約 4 倍，整體 3bet 頻率抓在 6～10%。換你面對 3bet 時：頂級牌 4bet、打得好的牌跟注、其餘蓋掉——碰上從不詐唬的低額對手，就蓋得比「平衡」還要多。",
   category: "strategy",
   date: "2026-07-23",
-  updated: "2026-09-09",
+  updated: "2026-09-10",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "16 分鐘",

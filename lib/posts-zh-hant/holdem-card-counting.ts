@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "不是 21 點那種算法——牌每一手都重新洗，露出的牌又太少，記高低牌給不了你任何優勢。但撲克有自己合法的算牌：算補牌（Outs）、用阻擋牌（Blocker）、追蹤已出現的死牌，去讀出對手不可能有的牌。",
   category: "glossary",
   date: "2026-07-23",
-  updated: "2026-09-09",
+  updated: "2026-09-10",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "10 分鐘",

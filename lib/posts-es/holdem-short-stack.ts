@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Un short stack (más o menos por debajo de 20–25 ciegas grandes) no puede jugar póker postflop normal, y desde unas 15 ciegas grandes hacia abajo cambia al push/fold: vas all-in siendo el primero en entrar para conservar tu fold equity, y nunca haces open-limp ni min-raise para luego foldear. Vas de shove más amplio desde posición tardía, mantienes tu rango de igualar más cerrado que tu rango de shove, y no te dejas fundir hasta nada 'esperando una mano': tu fold equity es el arma, y por debajo de unas 8 ciegas grandes se apaga a toda velocidad.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-08-13",
+  updated: "2026-09-09",
   masterUpdated: "2026-08-13",
   keepImagesInBody: true,
   readTime: "13 min",

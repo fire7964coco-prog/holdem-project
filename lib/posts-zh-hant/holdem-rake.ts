@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "抽水（Rake）是撲克室為了主辦牌局，從每個底池抽走的小額分成——通常 2.5～10%，抽到幾塊錢的上限（cap）為止。多數場子在翻牌前全蓋就不抽（「沒翻牌不抽水」）。它對低注、短手牌手傷害最大，而返水（Rakeback）會把其中一部分退還給常客。",
   category: "glossary",
   date: "2026-07-23",
-  updated: "2026-09-09",
+  updated: "2026-09-10",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "11 分鐘",

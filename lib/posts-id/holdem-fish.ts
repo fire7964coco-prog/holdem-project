@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Fish adalah slang poker untuk pemain lemah yang kalah, sumber uang yang dikeruk pemain kuat (shark). Fish memainkan terlalu banyak tangan, terlalu banyak call, dan tak bisa fold — dan kalimat terkenal itu memperingatkan: kalau Anda tak bisa mengenali fish di meja Anda, Anda-lah fish-nya. Ini read paling penting dalam permainan: temukan fish, atau jadilah fish.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-08-28",
+  updated: "2026-09-10",
   masterUpdated: "2026-08-30",
   keepImagesInBody: true,
   readTime: "10 mnt",

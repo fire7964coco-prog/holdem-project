@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "ICM (Independent Chip Model) rechnet deinen Turnier-Chipstack in seinen echten Preisgeldwert um, anhand der Payouts und aller Stacks. Weil du nur ein einziges erstes Preisgeld gewinnst, verdoppelt das Verdoppeln deiner Chips nie dein Geld – deshalb ist der Stack des Chipleaders weniger wert als sein Chipanteil, und Short Stacks sind mehr wert. Diese Lücke ist der Grund, warum du an der Bubble Hände foldest, die im Cash Game leichte Calls wären.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-09-09",
+  updated: "2026-09-10",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "13 Min.",

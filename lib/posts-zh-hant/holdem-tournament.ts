@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "德州撲克錦標賽裡，你付一筆固定買入換籌碼，盲注照計時器上升，直到一個人贏走全部籌碼。通常前 10–15% 的人進錢圈。賽制有 freezeout、PKO、衛星賽、deepstack——報名方式有直接買入、衛星賽晉級、或線上預先報名。台灣則多在立案的撲克協會打合法錦標賽。",
   category: "tournament",
   date: "2026-07-22",
-  updated: "2026-09-09",
+  updated: "2026-09-10",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "14 分鐘",

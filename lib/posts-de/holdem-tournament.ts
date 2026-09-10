@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In einem Pokerturnier zahlst du ein festes Buy-in für Chips, die Blinds steigen auf einem Timer, bis ein Spieler alle Chips hält. Die Top 10–15% des Feldes kommen in die Payouts. Formate sind Freezeout, PKO, Satellite und Deepstack – der Einstieg läuft über direktes Buy-in, Satellite oder Online-Vorregistrierung.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-09-09",
+  updated: "2026-09-10",
   keepImagesInBody: true,
   readTime: "14 Min.",
   emoji: "🏆",

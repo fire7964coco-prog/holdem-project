@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Uma continuation bet (c-bet) é uma aposta no flop feita por quem deu raise no pré-flop. A regra moderna não é 'c-bet em todo flop' — é apostar pequeno e com frequência nos flops que favorecem o seu range (boards altos e dry como K-7-2) e dar check nos que favorecem o adversário (boards baixos e conectados como 7-6-5). Aposte pequeno — cerca de um terço do pote — em dry boards, grande — dois terços ou mais — nos wet, dê c-bet menos fora de posição e bem menos multiway.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-09",
+  updated: "2026-09-10",
   // 2026-09-09: EN 09-09 정정(토너먼트 c-bet 사이즈 «각 구간 안에서» 축소) 본문 전파 완료.
   //   🔴 masterUpdated는 08-19에 그대로 둔다 — 아래 미결 항목의 드리프트 추적기다(올리면 게이트가 눈이 먼다).
   // masterUpdated 08-19 = EN의 08-19 변경(a-high-board-cbet 역링크 1문단)은 EN·KO 전용 자산이라

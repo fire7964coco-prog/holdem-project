@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "169 種起手牌裡，真正對新手划算的只有最頂端一小塊——你拿到的牌裡約 15–20%。大對子（AA–TT）和 AK 在任何位置都加注；越靠後行動，能開池的範圍越寬——從槍口位約 13% 到按鈕位約 43%（6人桌還更寬）。先用簡化圖，等到「加注或蓋牌」變成本能，再補上 GTO 翻前圖。",
   category: "strategy",
   date: "2026-07-22",
-  updated: "2026-09-09",
+  updated: "2026-09-10",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "10 分鐘",

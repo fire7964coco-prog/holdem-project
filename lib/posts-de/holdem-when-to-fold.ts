@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Folden ist die am meisten unterschätzte Fähigkeit im Poker – das schlechteste Ergebnis eines Folds ist null, während ein verlorener Call jedes Mal Chips verblutet. Ein solider Spieler foldet rund 75–85% seiner Hände vor dem Flop, legt nach dem Flop verfehlte Hände und schwache Draws ab, die seine Pot Odds nicht erfüllen, und – am schwersten von allem – gibt starke, aber geschlagene Hände auf, wenn die Linie eines passiven Gegners nach Value schreit. Die meisten Spieler callen nicht zu viel, weil sie Hände nicht lesen können; sie callen, weil sich die Chips im Pot bereits wie ihre eigenen anfühlen. Sind sie aber nicht.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-09",
+  updated: "2026-09-10",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "16 Min.",

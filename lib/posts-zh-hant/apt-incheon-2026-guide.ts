@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "APT 仁川 2026 主賽事由香港的 Stephen Pang 奪冠，在三人 ICM 協議後贏得 KRW 411,180,000（約 $293,700）與 24K 金獅獎盃。1,393 人次參賽創歷史紀錄，總獎池 KRW 3,008,880,000。亞軍為中國的 Shoumin Zhang（KRW 366,500,000，約 $261,785），第三名是美國的 Yifu He。前三名還各獲 11 月台北 APT 錦標賽主賽事席次（約 $10,000）——冠軍將帶著金獅獎盃來台北衛冕。僅限外國人參加（無海外永久居留權的韓國公民不得進入）。首爾距離約 1 小時，下一站的撲克之旅和韓國之旅依然是同一趟旅程。",
   category: "tournament",
   date: "2026-07-23",
-  updated: "2026-09-09",
+  updated: "2026-09-10",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "16 分鐘",

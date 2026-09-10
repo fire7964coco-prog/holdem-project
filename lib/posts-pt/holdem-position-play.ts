@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Estar in position significa agir por último — você vê a decisão de cada adversário antes de gastar uma ficha. Estudos de solver e de banco de dados sugerem que jogadores out of position capturam só cerca de 60–85% da sua equity — o que deixa você acima de 100% quando está in position. É por isso que o UTG abre ~13% das mãos e o button ~43% — e por que posição reescreve cada c-bet, bluff e decisão de controle de pote no pós-flop.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-09-09",
+  updated: "2026-09-10",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "16 min",

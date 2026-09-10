@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "持續下注（c-bet）就是翻前加注方在翻牌圈的下注。現代打法不是「每次翻牌都打」，而是——對你範圍有利的牌面（像 K-7-2 這種高張乾燥面）打小又打得勤，對對手有利的牌面（像 7-6-5 這種低連牌面）就過牌。乾燥面打小（約 ⅓ 底池），濕潤面打大（⅔ 或更多），不利位置少打，多人底池更要少打。",
   category: "strategy",
   date: "2026-07-23",
-  updated: "2026-09-09",
+  updated: "2026-09-10",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "15 分鐘",

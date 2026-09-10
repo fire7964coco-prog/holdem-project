@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "翻牌前，大盲左邊第一位（槍口位 UTG）先下注；翻牌、轉牌、河牌則由按鈕位左邊第一位還在牌局裡的玩家先動——滿桌上通常是小盲，單挑時則是大盲。整手牌的流程是：下盲注 → 發兩張底牌 → 翻牌前 → 翻牌（3 張）→ 轉牌（1 張）→ 河牌（1 張）→ 攤牌，共四個下注圈。",
   category: "rules",
   date: "2026-07-23",
-  updated: "2026-09-09",
+  updated: "2026-09-10",
   masterUpdated: "2026-09-07",
   keepImagesInBody: true,
   readTime: "16 分鐘",

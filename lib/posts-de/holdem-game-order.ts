@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Eine Texas-Hold'em-Hand läuft so ab: Blinds setzen → zwei Hole Cards erhalten → Preflop → Flop (3 Karten) → Turn (1 Karte) → River (1 Karte) → Showdown – mit insgesamt vier Setzrunden.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-08-13",
+  updated: "2026-09-10",
   masterUpdated: "2026-09-07",
   keepImagesInBody: true,
   readTime: "16 Min.",

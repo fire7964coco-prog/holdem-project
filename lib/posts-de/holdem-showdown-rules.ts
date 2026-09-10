@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Beim Showdown zeigt zuerst, wer als Letzter gesetzt oder erhöht hat. Wurde der River durchgecheckt, zeigt der erste aktive Spieler links vom Button zuerst. Verlierst du, darfst du verdeckt mucken – aber wer die River-Bet gecallt hat, darf die Hand des Bettors sehen.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-08-10",
+  updated: "2026-09-10",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "10 Min.",

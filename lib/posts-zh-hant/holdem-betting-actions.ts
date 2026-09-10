@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "德州撲克只有 5 個下注動作：過牌（免費讓行動）、下注（開這一輪的第一注）、跟注（跟上目前的下注）、加注（加大——最小加注等於前一個下注或加注的量）、蓋牌。只有當你面前沒有未跟的下注時，你才能過牌——翻牌前只有大盲位可以。",
   category: "rules",
   date: "2026-07-22",
-  updated: "2026-09-09",
+  updated: "2026-09-10",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "9 分鐘",

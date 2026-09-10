@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "盲注（Blind）是發牌前的強制下注。小盲注（SB）坐在莊家鈕左邊，大盲注（BB）再往左一位；大盲通常是小盲的兩倍，也是整桌的下注單位（1 BB）。",
   category: "rules",
   date: "2026-07-22",
-  updated: "2026-09-09",
+  updated: "2026-09-10",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "9 分鐘",

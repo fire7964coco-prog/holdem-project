@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "El Main Event de la 57.ª WSOP se resolvió el 5 de agosto: ganó Lucas Jumalon, estadounidense de 22 años, por US$10.000.000. El mejor clasificado de habla hispana fue Antonio Galiana (España) en el puesto 12.º, con US$510.000 — no hubo hispanohablantes en la mesa final. La serie dejó 251.899 entradas —récord histórico— y US$469.975.059 repartidos en 35.157 puestos pagados, con tres brazaletes hispanohablantes: Ciro González (México, US$449.067), Adrian Mateos (España, US$4.334.411) y Juan Rodriguez (Perú, US$673.011). Ojo con el papeleo: México no está en el Visa Waiver Program, así que con pasaporte mexicano hace falta visa y el ESTA no aplica.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-08-15",
+  updated: "2026-09-10",
   masterUpdated: "2026-08-15",
   keepImagesInBody: true,
   readTime: "12 min",

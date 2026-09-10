@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "平手一律照固定順序比：先比牌型，再比組成牌型的牌，最後從最大到最小逐張比踢腳牌。同對子→第一張踢腳大的贏；五張完全一樣→平分底池。花色永遠不破平手。",
   category: "hand-rankings",
   date: "2026-07-22",
-  updated: "2026-09-09",
+  updated: "2026-09-10",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "12 分鐘",

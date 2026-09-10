@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Urutan kartu poker dari tertinggi sampai terendah: Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, Pair, dan High Card. As adalah kartu tertinggi; simbol (sekop, hati) tidak punya peringkat.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-09-09",
+  updated: "2026-09-10",
 
   masterUpdated: "2026-09-09",
   image: "/images/holdem-hand-rankings-hero.webp",

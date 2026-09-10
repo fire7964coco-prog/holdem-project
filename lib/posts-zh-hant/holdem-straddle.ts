@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "盲抓（Straddle）是發牌前自願下的一注盲注——通常是大盲的兩倍。它替盲抓者買到翻前最後行動、以及加注的權利，把整場的底池加倍。但幾乎所有情況下它都是 -EV，而現金桌之外幾乎不允許盲抓。",
   category: "glossary",
   date: "2026-07-23",
-  updated: "2026-09-09",
+  updated: "2026-09-10",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "10 分鐘",

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "德州扑克的位置是以庄家按钮为基准来命名的座位 —— UTG（枪口位）、lojack、劫持位、CO（关煞位）、按钮位，还有两个盲位 —— 每手牌它们都顺时针移动一个座位。翻前 UTG 最先行动、大盲最后行动；翻牌后小盲最先行动、按钮位最后行动。物理座位编号永远不动，位置才会动。",
   category: "strategy",
   date: "2026-06-13",
-  updated: "2026-09-09",
+  updated: "2026-09-10",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "12 分钟",

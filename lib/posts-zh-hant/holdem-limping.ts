@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "跛入（limp）就是翻前不加注、只平跟大盲入池。開池平跟（第一個進池）幾乎都是虧錢的錯——你贏不到翻前底池、放棄主動權、還會被高手加注隔離懲罰。但跛入不是一律錯：小盲補齊、後位跟在別的跛入者後面用投機牌跟跛入、被動現場局與短碼位置，都是正當的例外。",
   category: "strategy",
   date: "2026-07-23",
-  updated: "2026-09-09",
+  updated: "2026-09-10",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "11 分鐘",

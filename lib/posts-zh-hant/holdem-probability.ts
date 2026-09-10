@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "打到河牌時，你有 43.8% 會做成一對、23.5% 兩對、3.0% 同花、2.6% 葫蘆——而皇家同花順大約每 3 萬手才出現一次。",
   category: "odds",
   date: "2026-07-22",
-  updated: "2026-09-09",
+  updated: "2026-09-10",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "13 分鐘",

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "في الكاش جيم، الرقائق تساوي مالًا حقيقيًا والبلايندز غالبًا ثابتة. في البطولة، الرقائق تعني بقاءك في الحدث، والبلايندز ترتفع، والربح يعتمد على مركزك النهائي.",
   category: "tournament",
   date: "2026-06-11",
-  updated: "2026-08-10",
+  updated: "2026-09-10",
   hideSummaryImageSlot: true,
   readTime: "16 دقيقة",
   emoji: "🏆",

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "德州撲克牌型大小由大到小依序為：皇家同花順、同花順、四條、葫蘆、同花、順子、三條、兩對、一對、高牌。",
   category: "hand-rankings",
   date: "2026-07-22",
-  updated: "2026-09-09",
+  updated: "2026-09-10",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "14 分鐘",

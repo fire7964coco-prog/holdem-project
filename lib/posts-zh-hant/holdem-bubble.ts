@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "泡泡時間是進錢圈前的那一刻——再淘汰一個人，剩下的全部進獎金。因為出局就是零，活下來比你能贏到的籌碼更值錢，所以跟注範圍要收得很緊、施壓（全下）範圍卻要放很寬。大碼施壓、中碼最被綁死（不是短碼），而在衛星賽的泡泡時間，一旦座位鎖定，連 AA 都要蓋。",
   category: "tournament",
   date: "2026-07-23",
-  updated: "2026-09-09",
+  updated: "2026-09-10",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "13 分鐘",

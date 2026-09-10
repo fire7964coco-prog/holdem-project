@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "德州撲克位置是「從莊家按鈕位往左算」的座位名稱——UTG（槍口位）、劫機位、切入位、關煞位、莊家鈕、小盲、大盲——每打完一手就順時針往左移一個座位。翻牌前 UTG 最先動、大盲最後動；翻牌後小盲最先動、莊家鈕最後動。實體座位號永遠不動，位置卻每一手都在換。",
   category: "strategy",
   date: "2026-07-23",
-  updated: "2026-09-09",
+  updated: "2026-09-10",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "12 分鐘",

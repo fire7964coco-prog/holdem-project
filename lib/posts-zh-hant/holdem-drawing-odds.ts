@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "拿口袋對，翻牌摸中暗三條的機率是 11.8%（7.5 比 1 對你不利）；兩張同花只有 0.84% 翻牌就成同花；翻牌成的同花聽牌，到河牌前 35% 會成。下面每個數字都是從一副牌算出來的，不是憑感覺。",
   category: "odds",
   date: "2026-07-23",
-  updated: "2026-09-09",
+  updated: "2026-09-10",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "12 分鐘",

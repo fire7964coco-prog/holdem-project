@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "攤牌時，河牌圈最後一個下注或加注的人先亮牌。如果河牌大家都過牌，就從按鈕左邊第一位還在牌局裡的玩家開始亮。你如果輸了，可以直接蓋牌（Muck）不亮；但你的下注被跟到時，對手有權要求看那手牌。",
   category: "rules",
   date: "2026-07-22",
-  updated: "2026-09-09",
+  updated: "2026-09-10",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "10 分鐘",

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "有利位置代表你最後行動——在投入任何一枚籌碼前，先看到每個對手的決定。解算器與資料庫研究顯示，不利位置玩家只能實現約 60–85% 的勝率——反過來說，有利位置必然超過 100%。這就是為什麼槍口位只開約 13% 的牌、按鈕位開約 43%——也是為什麼位置改寫了翻牌後每一個 c-bet、詐唬與底池控制的決定。",
   category: "strategy",
   date: "2026-07-22",
-  updated: "2026-09-09",
+  updated: "2026-09-10",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "16 分鐘",

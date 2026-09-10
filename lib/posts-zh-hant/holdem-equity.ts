@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "勝率(Equity)就是你在底池裡的份額——攤牌到底時平均歸你這手牌的那一塊底池，平分的鍋按比例計入。當你的勝率打過底池賠率就跟；但位置和下注會讓你很少能拿回全部勝率——而棄牌權益，能讓你在牌落後時照樣把底池贏走。",
   category: "odds",
   date: "2026-07-23",
-  updated: "2026-09-09",
+  updated: "2026-09-10",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "12 分鐘",

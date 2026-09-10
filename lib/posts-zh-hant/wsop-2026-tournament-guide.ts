@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "第 57 屆 WSOP 已在 8 月 5 日全部收官，主賽事冠軍是 22 歲的美國選手 Lucas Jumalon，獎金 $10,000,000。台灣、香港、澳門籍都沒有進前 50，華人最高是中國籍的第 28 名 Tianle Wang（$265,000）。主賽事 9,208 人次、獎池 $87,568,080。台港澳讀者最該先確認的是護照——台灣從 2012 年 11 月起就在美國免簽計畫（VWP）名單內，辦 ESTA（$40.27）就能去；香港與澳門不在那份 42 國名單上，需要另外申請簽證。",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-08-15",
+  updated: "2026-09-10",
   masterUpdated: "2026-08-15",
   keepImagesInBody: true,
   readTime: "12 分鐘",

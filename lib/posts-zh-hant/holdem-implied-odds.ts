@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "隱含賠率就是你聽牌成牌後，預期在之後的街上多贏到的額外籌碼。它讓你能划算地跟一個光看底池賠率會說蓋的聽牌——但前提是籌碼夠深、而且對手真的會付你錢。",
   category: "odds",
   date: "2026-07-23",
-  updated: "2026-09-09",
+  updated: "2026-09-10",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "12 分鐘",

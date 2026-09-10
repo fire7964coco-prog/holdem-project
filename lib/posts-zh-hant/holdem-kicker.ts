@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "踢腳牌（Kicker，亦稱旁牌）是你最強五張裡、不屬於成牌本身的那張最大牌——當兩位玩家湊成同一種牌型時，用它來決定誰贏。一對用 3 張踢腳、兩對 1 張、三條 2 張；順子、同花、葫蘆、同花順則完全沒有踢腳。這就是為什麼公牌成 A 時，AK 會贏 AQ。",
   category: "hand-rankings",
   date: "2026-07-22",
-  updated: "2026-09-09",
+  updated: "2026-09-10",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "10 分鐘",

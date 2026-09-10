@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ein Short Stack (grob unter 20–25 Big Blinds) kann kein normales Postflop-Poker mehr spielen, und ab rund 15 Big Blinds abwärts wechselt er zu Push/Fold: geh first-in all-in, um deine Fold Equity zu behalten, und open-limpe oder min-raise-fold fast nie, wenn du first-in bist. Shove von Late Position weiter, halte deine Calling-Range enger als deine Shoving-Range, und blinde nicht auf null herunter, während du „auf eine Hand wartest“ – deine Fold Equity ist die Waffe, und unter etwa 8 Big Blinds schwindet sie rapide.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-08-13",
+  updated: "2026-09-10",
   keepImagesInBody: true,
   readTime: "13 Min.",
   emoji: "📉",

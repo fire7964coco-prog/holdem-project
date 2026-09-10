@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "德州撲克每位玩家發 2 張底牌，搭配 5 張公牌，經過翻牌前、翻牌、轉牌、河牌四輪下注後，能組成最強 5 張牌型的人贏得底池。",
   category: "rules",
   date: "2026-07-22",
-  updated: "2026-09-09",
+  updated: "2026-09-10",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "14 分鐘",
