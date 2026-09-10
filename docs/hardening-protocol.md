@@ -58,6 +58,32 @@
 
 ---
 
+## 1-B. 🗺 창 구성 — 어느 폴더가 무엇이고 누가 소유하나
+
+> 2026-09-10에 `session-handoff.md`에서 승격했다(핸드오프는 «다음 할 일 + 미결»만 담는다 · CLAUDE.md §12 마감 3단 ②).
+
+| 창 | 폴더 | 무엇 | 소유 |
+|---|---|---|---|
+| 본체 main | `Holdem_Project` | 발행·수정·**머지·빌드·배포** | 본체 |
+| 🇨🇳 | `Holdem-zh` | zh 경화 | 본체 |
+| 🇹🇼 | `Holdem-zh-hant` | zh-hant 경화 | 본체 |
+| 🇯🇵 | `Holdem-ja` | ja 경화(`harden-ja`) | 본체 |
+| 본부 | `홀덤검수` | 검수 설계·규율·머지 | **검수장** |
+| 레인 | `홀덤검수-es`·`-zh`·`-id` | **원장**(판정) | 검수장 |
+| 솔버 | `클로드-프로그램만들기` | 앱 | 솔버 |
+
+🔴 **`Holdem-*` = 경화(글 고침) · `홀덤검수-*` = 원장(판정).** 이름이 비슷하니 헷갈리지 마라.
+🔴 **경화 레인은 `git push` 금지 · 배포 금지.** 머지·배포는 본체 main이 한다(= 승인).
+🔴 **모델 전환은 사장님 손** — 레인은 구간 경계(A→B→C)에서 멈추고 `/model` 전환을 요청한다(§2).
+🔴 **머지 대기 확인**: `for l in zh zh-hant ja; do git log --oneline main..harden-$l | wc -l; done`
+🪶 **레인 창 띄우기**: `wt.exe -w new new-tab --suppressApplicationTitle --title "🇯🇵 harden-ja (일본어 경화)" -d "C:\Users\하봄\Downloads\Holdem-ja" claude`
+
+**회차 표**(두 레인 공통) = 1 규칙 6 → 2 족보 6 → 3 확률 7 → 4 전략 8 → 5 토너먼트 9 → 6 용어 6 = **42편**.
+대상 밖 = GTO 13 · wsop · taiwan-clubs.
+🔴 **진행 상태의 정본은 각 `docs/harden-<locale>-진행.md`다 — 다른 곳에 복사하지 마라.**
+
+---
+
 ## 2. 회차의 모양 — 세션 하나 · 구간 3개
 
 `docs/settled-decisions.md` §5-A-4가 정한 대로 **도구를 왕복하는 구간은 Opus, 사람이 읽는 문장을 쓰는 구간은 Fable**이다. 한 세션 안에서 `/model`로 가른다(Fable 잔량이 없으면 전 구간 Opus — §5-A-2).

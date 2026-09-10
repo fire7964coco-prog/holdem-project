@@ -333,6 +333,7 @@ D유형(전략적 유해 조언)·F유형(사실 오류)에 시간을 쓴다) **
 | **다국어 솔버 랜딩(`/{locale}/solver`) 신설·유지보수** | `docs/solver-landing-playbook.md` |
 | **나라별 홀덤대회 트랙 (별도 관리 · 짬날 때 집중)** | `docs/country-tournament-playbook.md` ← **본체.** 전략·실측·규율·자산지도. 🔴 데이터 공급 미확정이면 착수 금지 |
 | **시한이 박힌 갱신 항목** | `docs/update-calendar.md` ← 시한은 핸드오프가 아니라 여기 |
+| **`updated` 스탬프가 낡았나 (전 로케일)** | `docs/stamp-drift-audit-2026-09-10.md` ← 커밋 55개 전건 판정표. 🔴 **정책 정본은 `settled-decisions` §1-C** — 이 문서는 «적용 부채»만 담는다 |
 | 지난 핸드오프 원문(경위 추적) | `docs/handoff-archive/` ← 통독 금지, grep으로 찾을 때만 |
 | 커뮤니티 손댈 때 | `docs/community-status.md` · `supabase/schema.sql` |
 | 성능·빌드·GSC 루틴 | `.cursor/rules/tech.mdc` |
