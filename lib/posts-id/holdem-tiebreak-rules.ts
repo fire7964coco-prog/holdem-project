@@ -234,6 +234,10 @@ A. Tidak. Tak ada peringkat jenis di Hold'em — jika dua tangan lima-kartu terb
 
 A. Pot dibagi rata — sebuah "chop". Bagaimana chip dibagi secara fisik, siapa yang dapat chip ganjil, dan bagaimana side pot diselesaikan dibahas di [aturan split pot](/id/blog/holdem-split-pot-rules).
 
+**Q. Apakah seri (split pot) mungkin terjadi di poker?**
+
+A. Mungkin, tetapi tidak sering. Seri sejati hanya terjadi ketika lima kartu terbaik dua pemain atau lebih ==cocok persis nilai per nilai== — paling sering ketika board sendiri adalah tangan terbaik ("bermain dengan board"), atau ketika straight maupun flush yang dipakai bersama tak bisa diperbaiki oleh kartu tertutup siapa pun. Saat itu pot dibagi rata. Kicker justru ada untuk memutus sebagian besar calon seri sebelum berubah jadi split.
+
 ---
 
 ## Poin-poin penting

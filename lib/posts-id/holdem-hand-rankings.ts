@@ -296,6 +296,18 @@ Intinya: pelajari urutan standar sekali dan ia berlaku di hampir semua permainan
 
 ## Pertanyaan yang sering diajukan
 
+**Q. Apa itu flush di poker?**
+
+A. Flush adalah lima kartu dengan jenis yang sama — misalnya A♦ J♦ 8♦ 6♦ 2♦ — tanpa peduli urutannya. Flush menempati peringkat ==#5==, di atas straight dan di bawah full house. Ketika dua pemain sama-sama punya flush, kartu tertinggi yang menang; jenis kartu tak pernah memecah seri.
+
+**Q. Apa itu full house di poker?**
+
+A. Full house (dijuluki "boat") adalah three of a kind plus satu pasangan, misalnya Q-Q-Q-5-5. Peringkatnya ==#4==, mengalahkan flush dan straight. Di antara dua full house, ==three of a kind yang lebih tinggi menentukan lebih dulu== — jadi QQQ-55 menang atas JJJ-99, sebesar apa pun pasangannya.
+
+**Q. Apa itu straight di poker?**
+
+A. Straight adalah lima kartu dengan nilai berurutan tapi jenisnya campur, seperti 7-6-5-4-3. Peringkatnya ==#6==. As boleh main tinggi (10-J-Q-K-A, "Broadway") atau rendah (A-2-3-4-5, "the wheel"), tapi straight tak bisa menyambung memutari sudut — Q-K-A-2-3 bukan straight.
+
 **Q. Apakah flush menang atas straight di poker?**
 
 A. Ya. Flush adalah #5 dan straight #6, jadi flush selalu menang — lihat [kenapa flush mengalahkan straight](/id/blog/holdem-flush-vs-straight). Alasannya: lima kartu satu jenis lebih sulit dibentuk daripada lima berurutan.
@@ -303,6 +315,22 @@ A. Ya. Flush adalah #5 dan straight #6, jadi flush selalu menang — lihat [kena
 **Q. Apakah full house menang atas flush?**
 
 A. Ya. Full house (#4) menang atas flush (#5) dan straight. Full house hanya kalah dari four of a kind, straight flush, dan royal flush.
+
+**Q. Apa yang mengalahkan straight di poker?**
+
+A. Flush, full house, four of a kind, straight flush, dan royal flush semuanya mengalahkan straight — begitu juga straight yang lebih tinggi. Straight (#6) tetap menang atas three of a kind, two pair, pair, dan high card.
+
+**Q. Apa yang mengalahkan flush di poker?**
+
+A. Full house, four of a kind, straight flush, atau royal flush mengalahkan flush. Melawan flush lain, kartu teratas yang lebih tinggi yang menang. Flush (#5) tetap menang atas straight dan semua yang di bawahnya.
+
+**Q. Apa yang mengalahkan full house di poker?**
+
+A. Hanya tiga tangan yang mengalahkan full house: four of a kind, straight flush, dan royal flush. Full house yang lebih tinggi juga menang — dan ==three of a kind dibandingkan lebih dulu sebelum pasangannya==, jadi KKK-22 menang atas QQQ-AA.
+
+**Q. Apa yang mengalahkan straight flush di poker?**
+
+A. Hanya straight flush yang lebih tinggi atau royal flush (yang sebenarnya cuma straight flush ber-As tertinggi). Straight flush (#2) mengalahkan four of a kind dan semua tangan di bawahnya.
 
 **Q. Apa itu kicker?**
 
@@ -327,6 +355,18 @@ A. Royal Flush (A-K-Q-J-10 satu jenis). Tak bisa dikalahkan — satu-satunya "se
 **Q. Apakah three of a kind lebih baik dari two pair?**
 
 A. Ya. Three of a kind adalah #7 dan two pair #8, jadi three of a kind menang. Two pair hanya menang atas pair dan high card.
+
+**Q. Apakah straight flush mengalahkan four of a kind?**
+
+A. Ya. Straight flush (#2) mengalahkan four of a kind (#3) — lima kartu berurutan dengan jenis sama berada di atas quads. Satu-satunya yang lebih tinggi dari straight flush adalah royal flush, yang sebenarnya hanya versi ber-As tertinggi dari straight flush itu sendiri.
+
+**Q. Apa tangan terendah (terburuk) di poker?**
+
+A. Tangan terburuk adalah ==7-5-4-3-2 dengan jenis campur== ("seven-high"). Itu adalah high card terendah yang bukan pair, bukan straight, dan bukan flush — tangan klasik "Anda tidak punya apa-apa".
+
+**Q. Bisakah punya tiga pasangan di poker?**
+
+A. Tidak. Tangan poker selalu lima kartu, jadi paling banyak hanya memuat dua pasangan. Jika kartu tertutup Anda dan board memberi tiga pasangan di antara tujuh kartu, ==hanya dua pasangan terbaik yang dihitung== — satu kartu dari pasangan ketiga masih bisa mengisi slot kicker kalau itu sisa kartu tertinggi Anda, tapi tak pernah menjadi tangan "three pair".
 
 **Q. Apakah ada "super royal flush" di poker?**
 
