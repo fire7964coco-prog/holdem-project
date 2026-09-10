@@ -90,13 +90,16 @@ const ALLOW = [
   {
     slug: 'wsop-2026-tournament-guide',
     locales: ['ja', 'zh', 'zh-hant', 'es'],
-    kinds: ['h2', 'li', 'row', 'h3'],
+    kinds: ['h2', 'li', 'row', 'h3', 'faq'],
     reason:
       '2026-09-10 전건 원문 판정: 이 글은 로케일마다 «자기 시장으로 재저작»한 글이다 ' +
       '(EN 13 H2 · ja/zh/zh-hant 12 · es 16). ja=일본 브레이슬릿·ESTA·일시소득 / zh=중국 선수·EVUS / ' +
       'zh-hant=台港澳 여권별 문턱 / es=멕시코·스페인·페루 + Matrícula Consular. ' +
       '핵심 사실은 전 로케일이 보유한다 — 우승자 Jumalon · ESPN · 엔트리 9,208·251,899(es는 스페인어 포맷 9.208·251.899). ' +
-      '🔴 개수를 EN에 맞추려고 절을 쪼개거나 합치지 마라. 정본 = docs/locale-intentional-diffs.md',
+      '🔴 개수를 EN에 맞추려고 절을 쪼개거나 합치지 마라. 정본 = docs/locale-intentional-diffs.md. ' +
+      '🆕 2026-09-10 faq 추가: es FAQ 6문은 EN 7문과 «한 문항도 겹치지 않는다» — ' +
+      'es = 멕시코 ESTA·영사관 신분증(matrícula consular)·스페인어로 플레이·최저가 경로 / EN = 우승자·시청·상금·미국 온라인 예선. ' +
+      '개수를 맞추려고 EN 문항을 옮겨 오면 스페인어권 독자에게 쓸모없는 FAQ가 된다.',
   },
 ];
 const allowHit = (loc, slug, kind) =>
@@ -139,7 +142,8 @@ function selftest() {
   cases.push(['이미지 경로는 내부링크가 아니다', !imgOnly.link.has('holdem-outs')]);
   cases.push(['예외 등재는 «로케일+슬러그+종류»가 다 맞을 때만 걸린다', !!allowHit('ja', 'wsop-2026-tournament-guide', 'h2')]);
   cases.push(['등재 안 된 로케일은 예외가 아니다', !allowHit('de', 'wsop-2026-tournament-guide', 'h2')]);
-  cases.push(['등재 안 된 종류는 예외가 아니다', !allowHit('ja', 'wsop-2026-tournament-guide', 'faq')]);
+  cases.push(['등재 안 된 종류는 예외가 아니다', !allowHit('ja', 'wsop-2026-tournament-guide', 'img')]);
+  cases.push(['등재된 종류는 예외다(faq)', !!allowHit('es', 'wsop-2026-tournament-guide', 'faq')]);
   cases.push(['모든 예외 행에 사유가 있다', ALLOW.every((a) => typeof a.reason === 'string' && a.reason.length > 30)]);
   cases.push(['FAQ가 한 절에 모여 있으면 1', measure('## FAQ\n**Q. a**\n**Q. b**').faqSections === 1]);
   cases.push(['🔴 FAQ가 다른 절에도 박히면 2', measure('## 기억법\n**Q. a**\n## FAQ\n**Q. b**').faqSections === 2]);

@@ -400,6 +400,8 @@ Antes de contar las ganancias, cuenta lo que no es tuyo.
 
 **Argentina, Colombia, Perú y Chile.** ==r:No tenemos un dato verificado y no lo vamos a inventar.== Consulta con un contador de tu país antes de viajar.
 
+Y ojo con una confusión frecuente antes de reservar vuelo: un torneo y una mesa de cash no se juegan igual ni cuestan igual — las diferencias están en [torneo vs cash game](/es/blog/holdem-tournament-vs-cash-game "thumb:/images/tournament-table-action.webp").
+
 ---
 
 :::readnext[Sigue leyendo]
