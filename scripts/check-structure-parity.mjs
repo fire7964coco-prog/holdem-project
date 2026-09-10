@@ -144,6 +144,9 @@ function selftest() {
   cases.push(['FAQ가 한 절에 모여 있으면 1', measure('## FAQ\n**Q. a**\n**Q. b**').faqSections === 1]);
   cases.push(['🔴 FAQ가 다른 절에도 박히면 2', measure('## 기억법\n**Q. a**\n## FAQ\n**Q. b**').faqSections === 2]);
   cases.push(['FAQ가 없으면 0', measure('## A\n본문').faqSections === 0]);
+  const owned2 = new Set(['holdem-3bet']);
+  cases.push(['보유한 글로의 링크 결손은 남는다', ['holdem-3bet'].filter((x) => owned2.has(x)).length === 1]);
+  cases.push(['🔴 보유하지 않은 글로의 링크는 결손이 아니다', ['holdem-icm'].filter((x) => owned2.has(x)).length === 0]);
   let pass = 0;
   for (const [name, ok] of cases) { if (ok) pass++; console.log(`${ok ? '✅' : '❌'} ${name}`); }
   console.log(`selftest ${pass}/${cases.length}`);
@@ -171,11 +174,17 @@ function main() {
 
   let allowed = 0;
   const stray = [];
+  let unbuildable = 0;
+  const unbuildableLoc = new Map();
   const coreLines = [], tailByLoc = new Map();
   for (const loc of locales) {
     const isCore = CORE_LOCALES.includes(loc);
     if (!isCore && !has('tail') && !onlyLoc) { /* 계수는 하되 목록은 접는다 */ }
     const dir = path.join(LIB, `posts-${loc}`);
+    // 🔴 «그 로케일에 실제로 있는 글» 집합 — 없는 글로는 링크를 걸 수 없다(걸면 404가 색인에 남는다).
+    //    2026-09-10 실측: ar은 8편뿐이라 링크 결손 32건 중 31건이 «대상 글이 없어서» 구조적으로 불가능했다.
+    //    그걸 결손으로 세면 게이트가 «고칠 수 없는 일»을 매 회차 지적한다.
+    const owned = new Set(fs.readdirSync(dir).filter((x) => x.endsWith('.ts') && x !== 'index.ts').map((x) => x.replace(/.ts$/, '')));
     for (const f of fs.readdirSync(dir).sort()) {
       if (!f.endsWith('.ts') || f === 'index.ts') continue;
       const slug = f.replace(/\.ts$/, '');
@@ -186,6 +195,12 @@ function main() {
       if (!c) continue;
       checked++;
       let d = deficit(en, measure(c));
+      if (Array.isArray(d.link)) {
+        const impossible = d.link.filter((t) => !owned.has(t));
+        if (impossible.length) { unbuildable += impossible.length; unbuildableLoc.set(loc, (unbuildableLoc.get(loc) ?? 0) + impossible.length); }
+        const real = d.link.filter((t) => owned.has(t));
+        if (real.length) d.link = real; else delete d.link;
+      }
       const onlyKind = opt('only');
       if (onlyKind) d = Object.fromEntries(Object.entries(d).filter(([k]) => k === onlyKind));
       // 예외 등재분은 «지적»에서 뺀다(대신 마지막에 건수를 노출한다 — 조용히 사라지면 안 된다)
@@ -203,6 +218,7 @@ function main() {
   console.log(`구조 계수 대조 · EN 마스터 ${enMap.size}편 · 대조 ${checked}편 · 🔴 핵심 결손 ${core}편 · 🟠 꼬리 결손 ${tail}편`);
   console.log(`   핵심 = ${CORE_LOCALES.join(' ')} · 세는 것 = link(대상 slug 집합) h2 h3 row li img faq`);
   console.log(`   예외 등재로 제외 ${allowed}건 — 사유는 scripts/check-structure-parity.mjs의 ALLOW와 docs/locale-intentional-diffs.md`);
+  if (unbuildable) console.log(`   🪶 «대상 글이 그 로케일에 없어서» 걸 수 없는 링크 ${unbuildable}건 제외 — ${[...unbuildableLoc].sort((a,b)=>b[1]-a[1]).map(([l,n])=>`${l} ${n}`).join(' · ')}`);
   if (stray.length) { console.log('\n🔴 FAQ 문항이 FAQ 절 밖에 있다(이식 사고):'); stray.forEach((l) => console.log(l)); }
   if (coreLines.length) { console.log('\n🔴 EN에 있고 로케일에 없는 구조:'); coreLines.forEach((l) => console.log(l)); }
   if (tail) {
