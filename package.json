@@ -73,7 +73,15 @@
     "lane:sync": "node scripts/lane-sync.mjs --apply",
     "lane:sync:selftest": "node scripts/lane-sync.mjs --selftest",
     "hooks:install": "node scripts/install-hooks.mjs",
-    "hooks:selftest": "node scripts/hook-selftest.mjs"
+    "hooks:selftest": "node scripts/hook-selftest.mjs",
+    "check:answer-echo": "node scripts/check-answer-echo.mjs",
+    "check:answer-echo:selftest": "node scripts/check-answer-echo.mjs --selftest",
+    "check:structure": "node scripts/check-structure-parity.mjs",
+    "check:structure:selftest": "node scripts/check-structure-parity.mjs --selftest",
+    "check:hygiene": "node scripts/check-locale-hygiene.mjs",
+    "check:hygiene:selftest": "node scripts/check-locale-hygiene.mjs --selftest",
+    "check:handoff": "node scripts/check-handoff-size.mjs",
+    "check:handoff:selftest": "node scripts/check-handoff-size.mjs --selftest"
   },
   "dependencies": {
     "@radix-ui/react-tabs": "^1.1.4",
