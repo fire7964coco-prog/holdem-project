@@ -73,7 +73,9 @@
     "lane:sync": "node scripts/lane-sync.mjs --apply",
     "lane:sync:selftest": "node scripts/lane-sync.mjs --selftest",
     "hooks:install": "node scripts/install-hooks.mjs",
-    "hooks:selftest": "node scripts/hook-selftest.mjs"
+    "hooks:selftest": "node scripts/hook-selftest.mjs",
+    "check:answer-echo": "node scripts/check-answer-echo.mjs",
+    "check:answer-echo:selftest": "node scripts/check-answer-echo.mjs --selftest"
   },
   "dependencies": {
     "@radix-ui/react-tabs": "^1.1.4",
