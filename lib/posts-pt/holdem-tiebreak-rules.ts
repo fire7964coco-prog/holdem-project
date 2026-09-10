@@ -155,7 +155,7 @@ A pergunta volta sempre porque a ordem de naipes existe mesmo no poker — só q
 
 A prova mais limpa é justamente a ficha que *não* dá para dividir. O regulamento de torneios da WSOP 2026 diz ==g:*"In button games with 2 or more high or low hands, the odd chip goes to the first seat left of the button"*== (regra 73): a ficha que sobra vai para o primeiro assento à esquerda do botão. Mesmo quando um pote fisicamente não se divide por igual, a regra recorre ao **assento**, não ao naipe — e o método por naipes da segunda metade dessa mesma regra foi escrito só para stud e razz.
 
-Mais uma coisa que vale saber: no Hold'em dois flushes são sempre do *mesmo* naipe, porque as cinco cartas comunitárias são compartilhadas e um board não pode ter três copas e três espadas ao mesmo tempo. Então "minhas espadas ganham das suas copas" não é uma regra que te derrotou — é uma mão que não pode ser distribuída.
+Mais uma coisa que vale saber: no Hold'em dois flushes são sempre do *mesmo* naipe, porque as cinco cartas comunitárias são compartilhadas e um board não pode ter três copas e três espadas ao mesmo tempo. Então "minhas espadas ganham das suas copas" não é uma regra que te derrotou — é uma mão que nunca vai sair na mesa.
 
 ---
 
@@ -196,7 +196,7 @@ A. Compare primeiro o par mais alto, depois o par mais baixo, depois o único ki
 
 **Q. Quem ganha se dois jogadores têm a mesma trinca?**
 
-A. A trinca carrega dois kickers, comparados do mais alto para o mais baixo — então, com a mesma trinca, ganha quem tiver a carta lateral mais alta. Com trinca de noves, 9-9-9-A-K ganha de 9-9-9-A-Q porque o segundo kicker (o rei) supera a dama. Trinca igual e os dois kickers iguais é pote dividido. (Um set feito de par na mão quase nunca empata, já que só um jogador pode ter aquele par exato.)
+A. A trinca carrega dois kickers, comparados do mais alto para o mais baixo — então, com a mesma trinca, ganha quem tiver a carta lateral mais alta. Com trinca de noves, 9-9-9-A-K ganha de 9-9-9-A-Q porque o segundo kicker (o rei) supera a dama. Se a trinca e os dois kickers forem iguais, o pote é dividido. (Um set feito de par na mão quase nunca empata, já que só um jogador pode ter aquele par exato.)
 
 **Q. A 5ª carta importa no poker?**
 
@@ -212,11 +212,11 @@ A. Sim — as sequências são ranqueadas puramente pela carta mais alta, então
 
 **Q. Quem ganha se dois jogadores têm a mesma sequência?**
 
-A. Ganha a sequência de carta de topo mais alta — Q-J-10-9-8 ganha de J-10-9-8-7, porque a sequência é ranqueada só pela carta mais alta e não tem kicker. Se as duas têm a mesma carta de topo, são idênticas e o pote é dividido. Isso acontece com mais frequência quando a sequência está quase toda no board e os dois jogadores completam a mesma ponta.
+A. Ganha a sequência de carta de topo mais alta — Q-J-10-9-8 ganha de J-10-9-8-7, porque a sequência é ranqueada só pela carta mais alta e não tem kicker. Isso acontece com mais frequência quando a sequência está quase toda no board e os dois jogadores completam a mesma ponta.
 
 **Q. Quem ganha se os dois jogadores têm flush?**
 
-A. Compare os flushes carta a carta, de cima para baixo: um flush de ás ganha de um flush de rei e, se as cartas de topo forem iguais, você passa para a seguinte, e assim pelas cinco. Os naipes nunca desempatam, então, se os cinco valores forem idênticos, o pote é dividido. (No Hold'em dois flushes são sempre do mesmo naipe, já que os jogadores compartilham o board.)
+A. Compare os flushes carta a carta, de cima para baixo: um flush de ás ganha de um flush de rei e, se as cartas de topo forem iguais, você passa para a seguinte, e assim pelas cinco. Os naipes nunca desempatam, então, se os cinco valores forem idênticos, o pote é dividido.
 
 **Q. Quem ganha se dois jogadores têm o mesmo full house?**
 

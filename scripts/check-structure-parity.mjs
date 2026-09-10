@@ -66,8 +66,41 @@ export function measure(content) {
     li: count(/^\s*(?:[-*]\s+|\d+\.\s+)/gm),
     img: count(/!\[[^\]]*\]\([^)]*\)/g),
     faq: count(/\*\*Q\./g),
+    // 🔴 «FAQ 문항이 몇 개의 H2 절에 흩어져 있나» — 정상은 1이다.
+    //    2026-09-10 실사고: 이식 스크립트가 Q/A 한 문항을 엉뚱한 H2 한가운데에 넣었는데
+    //    faq를 파일 전역으로만 세는 바람에 «개수 달성»으로 통과했다(렌더는 깨진 채로).
+    faqSections: (() => {
+      const secs = new Set();
+      let cur = '(머리말)';
+      for (const ln of content.split('\n')) {
+        if (/^##\s+/.test(ln)) cur = ln.trim();
+        else if (/\*\*Q\./.test(ln)) secs.add(cur);
+      }
+      return secs.size;
+    })(),
   };
 }
+
+/* ────────────────────────────────────────────────────────────────
+ * 예외 등재 — 🔴 사유 없는 행 금지. 정본은 `docs/locale-intentional-diffs.md`이고
+ * 여기엔 «그 판정 때문에 게이트가 매 회차 또 집는 자리»만 옮겨 적는다.
+ * 등재하지 않으면 규율(「의도적 편차는 등재해 닫아라」)이 실제로는 닫히지 않는다.
+ * ──────────────────────────────────────────────────────────────── */
+const ALLOW = [
+  {
+    slug: 'wsop-2026-tournament-guide',
+    locales: ['ja', 'zh', 'zh-hant', 'es'],
+    kinds: ['h2', 'li', 'row', 'h3'],
+    reason:
+      '2026-09-10 전건 원문 판정: 이 글은 로케일마다 «자기 시장으로 재저작»한 글이다 ' +
+      '(EN 13 H2 · ja/zh/zh-hant 12 · es 16). ja=일본 브레이슬릿·ESTA·일시소득 / zh=중국 선수·EVUS / ' +
+      'zh-hant=台港澳 여권별 문턱 / es=멕시코·스페인·페루 + Matrícula Consular. ' +
+      '핵심 사실은 전 로케일이 보유한다 — 우승자 Jumalon · ESPN · 엔트리 9,208·251,899(es는 스페인어 포맷 9.208·251.899). ' +
+      '🔴 개수를 EN에 맞추려고 절을 쪼개거나 합치지 마라. 정본 = docs/locale-intentional-diffs.md',
+  },
+];
+const allowHit = (loc, slug, kind) =>
+  ALLOW.find((a) => a.slug === slug && a.locales.includes(loc) && a.kinds.includes(kind));
 
 const NUMERIC = ['h2', 'h3', 'row', 'li', 'img', 'faq'];
 
@@ -104,6 +137,13 @@ function selftest() {
   cases.push(['thumb가 아닌 제목이 붙어도 센다', titled.link.has('holdem-outs')]);
   const imgOnly = measure('![i](/images/holdem-outs.webp)');
   cases.push(['이미지 경로는 내부링크가 아니다', !imgOnly.link.has('holdem-outs')]);
+  cases.push(['예외 등재는 «로케일+슬러그+종류»가 다 맞을 때만 걸린다', !!allowHit('ja', 'wsop-2026-tournament-guide', 'h2')]);
+  cases.push(['등재 안 된 로케일은 예외가 아니다', !allowHit('de', 'wsop-2026-tournament-guide', 'h2')]);
+  cases.push(['등재 안 된 종류는 예외가 아니다', !allowHit('ja', 'wsop-2026-tournament-guide', 'faq')]);
+  cases.push(['모든 예외 행에 사유가 있다', ALLOW.every((a) => typeof a.reason === 'string' && a.reason.length > 30)]);
+  cases.push(['FAQ가 한 절에 모여 있으면 1', measure('## FAQ\n**Q. a**\n**Q. b**').faqSections === 1]);
+  cases.push(['🔴 FAQ가 다른 절에도 박히면 2', measure('## 기억법\n**Q. a**\n## FAQ\n**Q. b**').faqSections === 2]);
+  cases.push(['FAQ가 없으면 0', measure('## A\n본문').faqSections === 0]);
   let pass = 0;
   for (const [name, ok] of cases) { if (ok) pass++; console.log(`${ok ? '✅' : '❌'} ${name}`); }
   console.log(`selftest ${pass}/${cases.length}`);
@@ -128,6 +168,9 @@ function main() {
     .filter((l) => !onlyLoc || l === onlyLoc);
 
   let core = 0, tail = 0, checked = 0;
+
+  let allowed = 0;
+  const stray = [];
   const coreLines = [], tailByLoc = new Map();
   for (const loc of locales) {
     const isCore = CORE_LOCALES.includes(loc);
@@ -145,6 +188,9 @@ function main() {
       let d = deficit(en, measure(c));
       const onlyKind = opt('only');
       if (onlyKind) d = Object.fromEntries(Object.entries(d).filter(([k]) => k === onlyKind));
+      // 예외 등재분은 «지적»에서 뺀다(대신 마지막에 건수를 노출한다 — 조용히 사라지면 안 된다)
+      for (const k of Object.keys(d)) if (allowHit(loc, slug, k)) { delete d[k]; allowed++; }
+      if (measure(c).faqSections > 1) stray.push(`  🔴 ${loc}/${slug} — FAQ 문항이 FAQ 절 밖에도 있다(이식 사고 유형)`);
       const keys = Object.keys(d);
       if (!keys.length) continue;
       const parts = keys.map((k) => (k === 'link' ? `link ${d.link.length}개(${d.link.slice(0, 3).join(',')}${d.link.length > 3 ? '…' : ''})` : `${k} −${d[k]}`));
@@ -156,6 +202,8 @@ function main() {
 
   console.log(`구조 계수 대조 · EN 마스터 ${enMap.size}편 · 대조 ${checked}편 · 🔴 핵심 결손 ${core}편 · 🟠 꼬리 결손 ${tail}편`);
   console.log(`   핵심 = ${CORE_LOCALES.join(' ')} · 세는 것 = link(대상 slug 집합) h2 h3 row li img faq`);
+  console.log(`   예외 등재로 제외 ${allowed}건 — 사유는 scripts/check-structure-parity.mjs의 ALLOW와 docs/locale-intentional-diffs.md`);
+  if (stray.length) { console.log('\n🔴 FAQ 문항이 FAQ 절 밖에 있다(이식 사고):'); stray.forEach((l) => console.log(l)); }
   if (coreLines.length) { console.log('\n🔴 EN에 있고 로케일에 없는 구조:'); coreLines.forEach((l) => console.log(l)); }
   if (tail) {
     console.log('\n🟠 꼬리 17로케일:');

@@ -135,11 +135,14 @@ Las cartas en sí, y lo que haces con ellas. ¿Nuevo con el flujo de las calles?
 | **Set** | Trío usando un **par servido** + una carta de la mesa (muy disimulado). |
 | **Trips** | Trío usando **una carta de mano** + una pareja en la mesa (peor control del kicker). |
 | **Doble pareja** | Dos parejas distintas. |
+| **Full (full house)** | Jerga para **full house** — un trío más una pareja (la mano "se llena"). |
+| **Póker (cuádruple, quads)** | Jerga para **cuatro cartas del mismo valor**. |
 | **Mano hecha (made hand)** | Una mano ya completa, en contraposición a un proyecto. |
 | **Proyecto (draw)** | Una mano que necesita mejorar — p. ej. un **proyecto de color** (4 a color) o proyecto de escalera. |
 | **Gutshot** | Un proyecto de escalera interior que necesita un valor del medio (4 [outs](/es/blog/holdem-outs)). |
 | **Proyecto abierto (open-ender)** | Un proyecto de escalera de dos puntas, que se completa por cualquier extremo (8 outs). |
 | **Backdoor (puerta trasera)** | Un proyecto que necesita **dos** cartas seguidas (turn *y* river). |
+| **Runner-runner** | Ligar la mano con **las dos** cartas, turn y river — un proyecto por puerta trasera que entra (p. ej. "color runner-runner"). |
 | **Sobrecarta (overcard)** | Una carta más alta que la mesa. |
 | **Conectores del mismo palo** | Dos cartas consecutivas del mismo palo (p. ej. 8♥9♥). |
 | **Broadway** | La escalera 10-J-Q-K-A, la escalera más alta. |

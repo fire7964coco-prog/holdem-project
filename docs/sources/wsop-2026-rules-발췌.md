@@ -58,6 +58,24 @@
 
 · 같은 사실의 캐시게임판 = **§B 172조**(문안이 더 강하다 — «relinquish any claim»).
 
+### 73조 — 오드칩 배정 (L956–960) 🆕 2026-09-10 등재
+
+> **73. Awarding Odd Chips:** Odd chips will be broken into the smallest denominations in play.
+> **In button games with 2 or more high or low hands, the odd chip goes to the first seat left of the button.**
+> In stud high, razz, and if there are 2 or more high or low hands in stud/8; the odd chip goes to the high card
+> by suit in the best 5-card hand displayed for showdown. In H/L split games, the odd chip in the total pot goes
+> to the high side. If identical hands win both high and low (ex: 2 wheels in Omaha/8) the pot will be split as
+> evenly as possible.
+
+🔴 **이 조항이 「홀덤에서 무늬는 승패를 안 가른다」의 역증명이다** — 팟이 물리적으로 안 나뉘는 그 한 칩에서조차
+규칙은 **«자리»**(button 왼쪽 첫 좌석)를 집지 «무늬»를 집지 않는다. **무늬 방식은 같은 조 후반부에 있고
+stud high · razz · stud/8 전용**이다. 이 절을 인용하는 글에서 앞뒤를 섞지 마라.
+
+· 등재 경위: 2026-09-10에 de·id·pt `holdem-tiebreak-rules`가 이 축어를 인용했는데 **정본 사본에 없어서**
+  §13 렌즈가 1차 출처를 재취득해(A 룰북 511,357 B · pdftotext -layout 2,197줄 — §C 기록과 일치) 글자 단위로 대조했다.
+  **인용은 참이었고 조 번호도 정확했다.** 구멍은 «추적성»이었다 → 다음 회차가 같은 재취득을 반복하지 않도록 여기 박는다.
+· 같은 사실의 캐시게임판 = **§B 153조**(「first hand clockwise from the button」 — 시계방향 = 왼쪽이라 동치).
+
 ### 56조 — 플로어 재량 (L743)
 
 > **56. Floor People:** WSOP Personnel are to consider the best interest of the game and fairness as the top priority
