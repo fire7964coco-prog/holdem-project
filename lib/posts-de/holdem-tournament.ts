@@ -440,6 +440,10 @@ A. In einem regulären Bounty- (Knockout-) Turnier trägt jeder Spieler ein fest
 
 A. In einem Rebuy-Turnier kannst du während einer festgelegten Periode Chips nachkaufen – in vielen Events immer dann, wenn dein Stack auf oder unter dem Startstack liegt, ohne vorher busten zu müssen – meist in den ersten paar Blind-Levels. Ein Add-on ist ein einmaliger optionaler Chip-Kauf, der typischerweise allen am Ende der Rebuy-Periode angeboten wird, unabhängig von der Stack-Größe. Sobald dieses Fenster schließt, spielt sich das Event als Freezeout aus. Die genauen Regeln variieren je nach Veranstaltungsort, also prüf das Structure Sheet.
 
+**Q. Womit verdienen Pokerturniere Geld?**
+
+A. Der Veranstalter nimmt zusätzlich zu jedem Buy-in eine Gebühr – das „+$9“ bei einem Entry von „$100+$9“. Diese Gebühr (bei großen Live-Events meist rund 8–10%, bei kleinen Dailies mehr) ist der Umsatz des Hauses; die „$100“ gehen vollständig in den Preispool, um den die Spieler spielen. Ein Turnierraum verdient also an der Menge der Entries und deren Gebühren, nicht am Preisgeld selbst – das wird nur unter den Spielern umverteilt.
+
 **Q. Was brauche ich, um zu Hause ein Pokerturnier zu veranstalten?**
 
 A. Für einen **Pokerabend** in der eigenen Runde brauchst du drei Dinge: genug Chips, damit alle denselben Startstack bekommen, eine Blind-Struktur mit festen Levels und eine Uhr, die sie hochzählt. Die Level-Dauer ist dabei der einzige Hebel, mit dem du die Länge des Abends steuerst – kürzere Levels, früheres Ende. Wie viele Chips ein Set für eure Rundengröße haben sollte, steht in [Turnier vs. Cash Game](/de/blog/holdem-tournament-vs-cash-game). Ob privates Spiel um Geld bei dir zulässig ist, regelt das jeweilige Landesrecht.
@@ -455,6 +459,10 @@ A. Ja, während des Late-Registration-Fensters – meist die ersten paar Blind-L
 **Q. Kann man ein Pokerturnier früh verlassen und seine Chips behalten?**
 
 A. Nein. Anders als in einem Cash Game haben Turnierchips keinen Bargeldwert und können nicht mitten im Event ausgezahlt werden. Wenn du weggehst, bleiben deine Chips im Spiel und zahlen weiter Blinds und Antes, bis sie weg sind. Reguläres Preisgeld gibt es nur, wenn du in einer bezahlten (ITM-) Position landest; in Knockout- und PKO-Formaten kommen Bounties separat dazu.
+
+**Q. Sind Pokerturniere mehr Glück oder mehr Können?**
+
+A. Beides – aber auf lange Sicht entscheidet das Können. Ein einzelnes Turnier trägt riesige Varianz: Du kannst fehlerfrei spielen und trotzdem busten, wenn deine Asse geknackt werden, weshalb selbst Elite-Profis lange Strecken ohne großen Cash haben. Über Hunderte Events hinweg erreichen die besseren Spieler jedoch weit häufiger Final Tables, als der Zufall es zulässt. Poker ist ein Können-Spiel, eingewickelt in kurzfristiges Glück – und in Turnieren steckt schlicht mehr davon als in Cash Games.
 
 ---
 

@@ -182,6 +182,10 @@ Você raramente sabe o desconto exato, e tudo bem. O movimento é direcional: qu
 
 A. Outs são as cartas que restam no baralho e melhoram sua mão para uma provável vencedora. Um projeto de flush tem 9 outs (as 9 cartas não vistas do seu naipe); um projeto aberto de sequência tem 8. Você as conta para descobrir sua chance de acertar e se um call é lucrativo.
 
+**Q. O que significa ter 9 outs no poker?**
+
+A. Significa que nove cartas ainda no baralho completam a sua mão — na maioria das vezes um projeto de flush (as 13 cartas de um naipe menos as 4 que você já vê). Nove outs dão cerca de 35% de chance de acertar até o river a partir do flop — um número de duas cartas, que pressupõe que não vem mais aposta — ou 19,1% na carta única do turn. A regra vale para qualquer contagem: mais outs significam mais chance de acertar, e multiplicar seus outs por 4 no flop (ou por 2 no turn) dá a porcentagem na hora.
+
 **Q. Como se conta outs no poker?**
 
 A. Nomeie a mão que você está caçando, conte quantas cartas a completam (13 de cada naipe, 4 de cada valor), subtraia as que você já consegue ver na sua mão e na mesa, depois risque qualquer out "sujo" que ainda perderia. Um projeto de flush são 13 − 4 = 9.

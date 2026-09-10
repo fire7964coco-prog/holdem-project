@@ -226,6 +226,10 @@ A. Se você flopa um projeto de flush (nove outs), você o completa cerca de 35%
 
 A. Cerca de 11,8%, ou mais ou menos 1 em 8,5, quando você segura um par na mão. Aquele número de "7,5 para 1 contra" é a base para decidir se fazer set mining com um par pequeno é lucrativo.
 
+**Q. Quais são as odds de flopar um royal flush?**
+
+A. Praticamente nulas. Mesmo quando você já tem duas das cinco cartas em naipe — digamos A♥ K♥ — o flop traz exatamente Q♥ J♥ 10♥ só cerca de 1 vez em 19.600 flops. Partindo de uma mão inicial aleatória é muito mais raro ainda, e é por isso que quase todo royal flush que sai é completado no turn ou no river, não no flop.
+
 **Q. Quais são as odds de receber um par de ases na mão?**
 
 A. 1 em 221 (0,45%) para os ases especificamente. Qualquer par na mão, porém, aparece bem mais vezes — cerca de 1 em 17 mãos (5,9%).
@@ -242,6 +246,10 @@ A. 0,168% até o river — 1 em 595 mãos. Com um par na mão, você flopa a qua
 
 A. 4,62% até o river — cerca de 1 em 22 mãos. Com conectores você flopa uma sequência *feita* só 1,3% das vezes, mas flopa um projeto aberto perto de 10% — e esse projeto completa 31,5% até o river. Em cinco cartas distribuídas, a sequência sai 0,392%.
 
+**Q. Qual é a probabilidade de um full house no poker?**
+
+A. 2,60% até o river — cerca de 1 em 39 mãos. Em cinco cartas distribuídas, 0,144% (1 em 694). Repare na ordem: o full house é mais raro que o flush (3,03%), que por sua vez é mais raro que a sequência (4,62%) — exatamente a ordem em que o ranking coloca as três.
+
 **Q. O que é a regra do 2 e 4 no poker?**
 
 A. Um atalho para as odds de projeto: multiplique seus outs por 4 no flop (duas cartas por vir) ou por 2 no turn (uma carta por vir) para estimar sua chance em porcentagem de acertar. É preciso dentro de um ponto ou dois até uns nove outs. Use o ×4 só quando for ver as duas cartas sem mais aposta.
@@ -253,6 +261,18 @@ A. Divida a quantia que você precisa pagar pelo pote total depois do seu call. 
 **Q. Quais são as odds de set over set?**
 
 A. Não há um número fixo único — depende de quantos adversários seguram pares na mão — mas é raro. Você já flopa uma trinca só 11,8% das vezes, então dois jogadores flopando trincas na mesma mesa é o clássico "cooler" que custa stacks.
+
+**Q. Qual é a mão vencedora mais comum no poker?**
+
+A. Um par, seguido de dois pares. Como todo mundo divide as mesmas cinco cartas comunitárias, a maioria dos potes de Texas Hold'em é decidida por um único par e seu kicker — flushes, sequências e full houses ganham bem menos do que os iniciantes imaginam. A frequência completa de cada resultado está na tabela lá em cima.
+
+**Q. Com que frequência a melhor mão ganha no poker?**
+
+A. Menos do que você imagina, se contar antes do river. Até um par de ases — a melhor mão inicial — ganha só cerca de 85% das vezes em heads-up, e bem menos contra uma mesa cheia. No river, as melhores cinco cartas ganham por definição; as viradas acontecem antes, quando uma mão feita é ultrapassada por um projeto vivo.
+
+**Q. Quais são as odds de ter os nuts?**
+
+A. Não existe número único — os nuts (a melhor mão possível naquela mesa) mudam a cada mesa nova. Numa mesa seca e sem pares, os nuts podem ser o top set; numa mesa conectada, podem ser uma sequência ou um flush. A habilidade não é decorar uma porcentagem, é ler qual mão *é* os nuts e avaliar a chance de um adversário tê-la.
 
 ---
 

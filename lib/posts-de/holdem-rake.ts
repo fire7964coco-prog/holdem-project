@@ -155,6 +155,14 @@ Die Lektion: Beurteile den Rake nie allein am Prozentsatz. Was zählt, ist der P
 
 ## FAQ
 
+**Q. Was ist der Rake beim Poker?**
+
+A. Der Rake ist die Gebühr, die ein Cardroom aus einem Cashgame dafür nimmt, dass er das Spiel ausrichtet – normalerweise ein kleiner Prozentsatz jedes Pots (2,5–10%) bis zu einem gedeckelten Maximum. Weil das Haus selbst nicht mitspielt, ist der Rake seine Haupteinnahmequelle. Turniere verlangen stattdessen eine gleichwertige Gebühr, die im Buy-in steckt.
+
+**Q. Wie wird der Rake berechnet?**
+
+A. In den meisten Cashgames ist es ein Prozentsatz des Pots, der entnommen wird, bevor der Gewinner ausgezahlt wird, bis zu einem Cap von wenigen Euro. Prozentsatz und Cap unterscheiden sich je nach Raum und Stakes, und das Cap sinkt oft, wenn weniger Spieler ausgeteilt bekommen. Bei höheren Stakes nehmen Räume stattdessen manchmal eine feste Time Charge pro Spieler.
+
 **Q. Warum nimmt der Cardroom überhaupt Rake?**
 
 A. Weil er sonst nichts verdienen würde. Anders als beim Blackjack oder am Automaten spielt das Haus beim Poker nicht mit und hat keinen mathematischen Vorteil, aus dem es Gewinn zieht – es stellt nur Dealer, Tisch, Chips, Security und Raum. Der Rake ist die Bezahlung dafür. Genau deshalb ist er auch unabhängig davon, wie gut oder schlecht du spielst: Er fällt auf den Pot an, nicht auf dein Ergebnis.
@@ -186,6 +194,10 @@ A. Ganz entkommen kannst du ihm in einem gerakten Spiel nicht, kleiner machen sc
 **Q. Wie wirkt sich der Rake auf deine Winrate aus?**
 
 A. Erheblich – am stärksten bei Low Stakes, wo das Cap nicht mit den Stakes runterskaliert. Short-handed kommt ein zweiter Effekt dazu, der nichts mit dem Cap zu tun hat: Derselbe Rake pro Pot verteilt sich auf weniger Spieler, und du zahlst die Blinds pro 100 Hände deutlich häufiger – dein Anteil je Hand steigt also. (Pro *Stunde* zahlst du zusätzlich mehr, weil mehr Hände laufen – das ist aber eine andere Frage als bb/100.) Der Rake kann so einen kleinen Gewinner in einen Verlierer verwandeln: Derselbe +8 bb/100-Spieler kann leicht negativ enden, nur weil er in einen Raum mit höherem Rake-Cap wechselt. Miss deine Winrate immer nach Rake.
+
+**Q. Ist der Rake online oder live höher?**
+
+A. Live ist der Prozentsatz höher und das Cap größer, dafür spielst du pro Stunde weit weniger Hände. Online ist der Prozentsatz niedriger und das Cap kleiner, aber Multitabling heißt, dass du ihn auf sehr viel mehr Händen zahlst – ein Volumen-Grinder kann online also pro Stunde mehr Rake zahlen. Beurteile den Rake nach Satz mal Häufigkeit, nie nach dem Satz allein.
 
 **Q. Woran erkennst du, ob ein Raum einen fairen Rake hat?**
 

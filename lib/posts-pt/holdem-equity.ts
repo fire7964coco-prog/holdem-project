@@ -198,6 +198,10 @@ A. Equity é sua fatia do pote (o que você tem); pot odds são a equity que voc
 
 A. Não é nem bom nem ruim por si só — 50% é um coin flip. Se é um call depende do preço: contra uma aposta de meio pote você só precisa de 25%, então 50% é um pagamento fácil; mas arriscar seu stack inteiro num 50/50 sem nenhum edge é aposta, não vantagem. Equity só faz sentido ao lado das pot odds.
 
+**Q. O que significa ter 20% de equity?**
+
+A. Significa que um quinto do pote pertence à sua mão no longo prazo — num pote de $100, sua fatia vale mais ou menos $20. Se 20% é um call depende do preço: contra uma aposta de um quarto do pote você precisa de uns 17%, então 20% serve; contra uma aposta de meio pote (25% exigidos) é fold. Qualquer número de equity só significa alguma coisa ao lado das pot odds.
+
 **Q. De quanta fold equity eu preciso para blefar com lucro?**
 
 A. Para um blefe puro, você precisa que seu adversário folde ao menos aposta ÷ (pote + aposta) das vezes. Apostar $50 em $100 dá 50 ÷ 150 = 33%. Se você também tem um projeto (um semi-blefe), precisa que eles foldem menos ainda, porque você ainda pode ganhar quando pago. É por isso que semi-blefar projetos é tão lucrativo.
@@ -213,6 +217,14 @@ A. Equity no all-in é simplesmente sua equity bruta — sua fatia do pote, com 
 **Q. Por que minha equity cai em potes multiway?**
 
 A. Porque o mesmo pote de 100% agora é dividido entre mais mãos — um par de ases a ~85% heads-up cai para ~64% contra três jogadores e ~56% contra quatro. Multiway também corta sua fold equity (todo mundo tem que foldar, não só um jogador) e sua realização (mais jogadores significam mais formas de tomar outdraw), então tanto sua fatia bruta quanto o que você fica dela encolhem.
+
+**Q. O que é EV (valor esperado) no poker?**
+
+A. Valor esperado é o quanto uma decisão ganha ou perde em média no longo prazo. Uma jogada que fica acima de zero na média é +EV (lucrativa); abaixo de zero é −EV (perdedora); zero é empate. Poker vencedor é simplesmente escolher as ações +EV e foldar as −EV — toda aposta, todo call e todo fold tem um EV, mesmo quando você não consegue ver o número exato.
+
+**Q. Qual a diferença entre equity e EV?**
+
+A. Equity é sua fatia *deste* pote se a mão for até o fim (uma porcentagem); EV é se *agir* sobre essa equity realmente dá dinheiro (um valor, em fichas). Dá para ter equity alta e ainda assim fazer um call −EV se o preço estiver errado, ou equity baixa e um blefe +EV se o adversário foldar com frequência suficiente. A equity diz onde você está; o EV diz se a decisão dá lucro.
 
 ---
 

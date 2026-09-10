@@ -186,6 +186,10 @@ Die Zahl, die Leute überrascht: wenn **du** an einem voll besetzten Tisch (zehn
 
 A. Mit zwei ungepaarten Karten in rund **32%** der Flops – also etwa jede dritte Hand. In zwei Dritteln der Fälle trifft dich der Flop gar nicht, und genau deshalb gewinnt Poker nicht der, der die meisten Hände trifft, sondern der, der die verfehlten billig wegwirft.
 
+**Q. Wie hoch ist die Chance, ein Set zu floppen?**
+
+A. Etwa 11,8%, oder 1 von 8,5, wenn du ein Pocket Pair hältst – meist zitiert als „7,5:1 dagegen“. Sie kommt aus 1 − C(48,3)/C(50,3): von den 19.600 möglichen Flops verfehlen 17.296 dein Paar. Diese Zahl ist die gesamte Grundlage dafür, ob sich Set-Mining mit einem kleinen Paar lohnt.
+
 **Q. Warum sagt man 7,5:1, aber auch 1 von 8?**
 
 A. Das sind dieselben Odds, auf zwei Arten ausgedrückt. „7,5:1 dagegen“ zählt Verfehlen gegen Treffen (7,5 Verfehlen pro Treffer), was auf 1 Treffer pro 8,5 Versuche hinausläuft – also etwa 1 von 8,5, oder 11,8%. „Odds dagegen“ und „1 von N“ beschreiben immer dieselbe Wahrscheinlichkeit; addiere sie nicht.
@@ -194,6 +198,10 @@ A. Das sind dieselben Odds, auf zwei Arten ausgedrückt. „7,5:1 dagegen“ zä
 
 A. Ein Set ist ein Pocket Pair plus eine passende Karte auf dem Board – du floppst es in 11,8% der Fälle und es ist gut versteckt. Trips sind eine ungepaarte Hole Card, die das Board paart (zwei passende Boardkarten) – nur 1,35% am Flop, und für Gegner weit offensichtlicher. Derselbe Drilling im Rang, sehr unterschiedliche Odds und Wert.
 
+**Q. Was ist ein Flushdraw?**
+
+A. Ein Flushdraw heißt: Du hältst vier Karten zu einem Flush und brauchst noch eine weitere derselben Farbe – zum Beispiel A♥ K♥ auf einem 9♥ 5♥ 2♠ Flop, wo jede der neun übrigen Herz-Karten ihn komplettiert. Ein gefloppter Flushdraw hat neun Outs und kommt bis zum River in etwa 35% der Fälle an, auf eine einzelne Karte rund 19%.
+
 **Q. Wie hoch ist die Chance, einen Flush zu floppen?**
 
 A. Nur 0,84% (etwa 118:1) mit zwei suited Karten – das ist C(11,3)/C(50,3). Verwechsle es nicht mit dem Floppen eines Flush*draws*, was 10,9% ist, oder dem *Komplettieren* dieses Draws bis zum River, was 35% ist. Zwei suited Karten floppen einen Draw dreizehnmal häufiger als einen fertigen Flush.
@@ -201,6 +209,14 @@ A. Nur 0,84% (etwa 118:1) mit zwei suited Karten – das ist C(11,3)/C(50,3). Ve
 **Q. Wenn ich einen Flushdraw floppe, wie hoch ist die Chance, dass ich ihn komplettiere?**
 
 A. Etwa 35% bis zum River mit neun Outs (1 − C(38,2)/C(47,2)) – ein wenig besser als einer von drei. Auf eine einzelne Karte sind es rund 19%: 9/47 Flop-zu-Turn, 9/46 Turn-zu-River. Nutze die Ein-Karten-Zahl, wann immer noch Setzrunden kommen.
+
+**Q. Wie unterscheidet sich die Chance auf einen Flush mit vier Karten zur Farbe von der mit drei?**
+
+A. Mit vier Karten zur Farbe nach dem Flop – einem echten Flushdraw mit neun Outs – komplettierst du ihn bis zum River in etwa 35% der Fälle. Mit nur drei Karten zur Farbe brauchst du Turn *und* River in deiner Farbe (ein Backdoor- oder Runner-Runner-Flush), und das kommt nur in rund 4,2% der Fälle an. Deshalb ist vier zur Farbe ein Draw, den man spielt, und drei kaum mehr als ein Tiebreaker.
+
+**Q. Was ist ein Straight Draw, und wie stehen die Odds, ihn zu treffen?**
+
+A. Ein Straight Draw sind vier Karten zu einer Straße. Ein Open-Ended Straight Draw (etwa 8-7 auf einem 9-6-2 Board, wo eine 5 oder eine 10 fehlt) hat acht Outs und komplettiert bis zum River in etwa 31,5% der Fälle. Ein Gutshot (Inside) Draw hat nur vier Outs – ein einziger Rang füllt die Lücke – und trifft daher in rund 16,5% der Fälle, also etwa halb so oft.
 
 **Q. Wie hoch ist die Chance, Quads zu floppen?**
 

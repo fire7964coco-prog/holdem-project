@@ -298,6 +298,18 @@ A conclusão: aprenda a ordem padrão uma vez e ela serve em quase todos os jogo
 
 ## Perguntas frequentes
 
+**Q. O que é um flush no poker?**
+
+A. Flush é qualquer conjunto de cinco cartas do mesmo naipe — por exemplo A♦ J♦ 8♦ 6♦ 2♦ — sem precisar de ordem nenhuma. É a mão #5, acima da sequência e abaixo do full house. Quando dois jogadores fecham flush, ganha o de carta mais alta; o naipe nunca desempata.
+
+**Q. O que é um full house no poker?**
+
+A. Full house (o "barco") é uma trinca mais um par, como Q-Q-Q-5-5. É a mão #4 e ganha do flush e da sequência. Entre dois full houses, a trinca mais alta decide primeiro — então Q-Q-Q-5-5 ganha de J-J-J-9-9 por maior que seja o par.
+
+**Q. O que é uma sequência no poker?**
+
+A. Sequência é um conjunto de cinco cartas em valores consecutivos com naipes misturados, como 7-6-5-4-3. É a mão #6. O ás joga alto (10-J-Q-K-A, a "Broadway") ou baixo (A-2-3-4-5, a "wheel"), mas a sequência não dá a volta pela esquina — Q-K-A-2-3 não é sequência.
+
 **Q. O flush ganha da sequência no poker?**
 
 A. Sim. O flush é a #5 e a sequência a #6, então o flush sempre ganha — veja [por que o flush ganha da sequência](/pt/blog/holdem-flush-vs-straight). Ele fica acima porque cinco cartas do mesmo naipe são mais difíceis de fechar do que cinco em sequência.
@@ -305,6 +317,26 @@ A. Sim. O flush é a #5 e a sequência a #6, então o flush sempre ganha — vej
 **Q. O full house ganha do flush?**
 
 A. Sim. O full house (#4) ganha do flush (#5) e da sequência. Só perde para a quadra, o straight flush e o royal flush.
+
+**Q. O que ganha de uma sequência no poker?**
+
+A. Flush, full house, quadra, straight flush e royal flush ganham todos de uma sequência — e uma sequência mais alta também. A sequência (#6) continua ganhando de trinca, dois pares, par e carta alta.
+
+**Q. O que ganha de um flush no poker?**
+
+A. Full house, quadra, straight flush e royal flush ganham do flush. Contra outro flush, ganha quem tiver a carta de topo mais alta. O flush (#5) continua ganhando da sequência e de tudo que vem abaixo dela.
+
+**Q. O que ganha de um full house no poker?**
+
+A. Só três mãos ganham de um full house: quadra, straight flush e royal flush. Um full house mais alto também ganha — e a trinca é comparada antes do par, então K-K-K-2-2 ganha de Q-Q-Q-A-A.
+
+**Q. O que ganha de um royal flush no poker?**
+
+A. Nada. O royal flush (A-K-Q-J-10 do mesmo naipe) é a melhor mão possível do poker. Não tem como ser batido — o único "empate" é um royal flush que está inteiro na mesa e pertence a todos, o que divide o pote.
+
+**Q. O que ganha de um straight flush no poker?**
+
+A. Só um straight flush mais alto ou o royal flush (que é simplesmente o straight flush de ás). O straight flush (#2) ganha da quadra e de todas as mãos abaixo dela.
 
 **Q. O que é um kicker?**
 
@@ -330,9 +362,21 @@ A. O Royal Flush (A-K-Q-J-10 do mesmo naipe). Não pode ser batido — o único 
 
 A. Sim. A trinca é a #7 e os dois pares a #8, então a trinca ganha. Dois pares só ganham do par e da carta alta.
 
+**Q. O straight flush ganha da quadra?**
+
+A. Sim. O straight flush (#2) ganha da quadra (#3) — cinco cartas em sequência do mesmo naipe superam quatro cartas iguais. A única coisa acima do straight flush é o royal flush, que é só a versão dele com o ás no topo.
+
 **Q. Quais são as piores mãos do poker?**
 
 A. Como categoria, a pior mão é a carta alta — nenhuma combinação. Já entre as mãos iniciais, a mais famosa das piores do Texas Hold'em é o 7-2 offsuit: as duas cartas mais baixas que não conectam em sequência nem em naipe (medido por equity contra uma mão aleatória, 3-2 offsuit é ainda pior; o 7-2 é o pior entre as mãos que nem sequência conseguem formar). Ases de kicker fraco (A2–A9 offsuit) também perdem mais potes do que parecem — veja quais mãos jogar na [tabela de mãos iniciais](/pt/blog/holdem-starting-hands-chart).
+
+**Q. Dá para ter três pares no poker?**
+
+A. Não. Uma mão de poker é sempre de cinco cartas, então cabe no máximo dois pares. Se as suas cartas e a mesa formarem três pares entre as sete, só os dois pares mais altos entram na mão — uma carta do terceiro par ainda pode ocupar a vaga de kicker se for a sua maior sobra, mas "três pares" nunca vira uma mão.
+
+**Q. Dá para usar o ás como 1 no poker?**
+
+A. Sim. O ás joga alto e baixo, então A-2-3-4-5 (a "wheel") é uma sequência legítima — a mais baixa que existe. O que não dá é dar a volta pela esquina: K-A-2-3-4 não é sequência.
 
 **Q. Quais são as melhores mãos iniciais do poker?**
 

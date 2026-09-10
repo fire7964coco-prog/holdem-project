@@ -178,6 +178,10 @@ Ich habe mehr Chips an eingebildete Implied Odds verloren als an alle Bad Beats 
 
 ## FAQ
 
+**Q. Was sind Implied Odds im Poker?**
+
+A. Implied Odds sind die zusätzlichen Chips, die du auf späteren Streets zu gewinnen erwartest, wenn dein Draw ankommt – dazugerechnet zu den Chips, die schon im Pot liegen. Sie erlauben dir, manche Draws profitabel zu callen, die die Pot Odds allein als Fold ausweisen – solange die Stacks tief genug sind, um dich beim Treffer auszuzahlen.
+
 **Q. Gelten Implied Odds auch am River?**
 
 A. Nein. Nach dem River kommt keine Karte mehr und keine Setzrunde mehr – es gibt nichts, was „später“ noch dazukäme. Deine Entscheidung hängt dort allein am Preis und daran, wie oft du gegen seine Range die beste Hand hast. Implied Odds sind ein Preflop-, Flop- und Turn-Konzept – überall dort, wo noch eine Setzrunde folgt.
@@ -190,9 +194,17 @@ A. Bei einem $50-Call in einen $150-Pot am Turn, mit einem Flushdraw, der am Riv
 
 A. Pot Odds zählen nur das Geld, das gerade jetzt im Pot liegt, und lassen sich exakt berechnen. Implied Odds addieren das Geld, das du auf späteren Streets zu gewinnen erwartest, was eine Schätzung ist. Pot Odds sagen dir, ob ein Call sich heute selbst bezahlt; Implied Odds sagen dir, ob er sich über die ganze Hand auszahlt.
 
+**Q. Wann solltest du mit Implied Odds rechnen?**
+
+A. Fang mit den Pot Odds an. Schlägt deine Equity den sofortigen Preis bereits, callst du einfach – Implied Odds brauchst du dafür nicht. Greif erst dann zu ihnen, wenn dein Draw diesen Preis *knapp* verfehlt und die Stacks dahinter tief genug sind, dass ein Treffer dir deutlich mehr einbringt – idealerweise mit einem starken, versteckten oder Nut-Draw gegen einen Gegner, der auch wirklich zahlt. Verfehlt der Draw den Preis meilenweit, oder ist dein Gegner all-in oder short gestackt, retten Implied Odds den Call nicht mehr.
+
 **Q. Was sind Reverse Implied Odds?**
 
 A. Reverse Implied Odds sind die Chips, die du verlierst, wenn du deinen Draw komplettierst, er aber nur die zweitbeste Hand ist – etwa einen kleinen Flush gegen einen höheren zu machen, oder das untere Ende einer Straße gegen ein größeres. Sie machen Non-Nut-Draws weniger wert, als ihre Outs vermuten lassen, du brauchst also einen besseren sofortigen Preis, um zu callen.
+
+**Q. Was sind gute Implied Odds – wie viel brauchst du?**
+
+A. Das hängt vom Draw ab. Flushdraws und beidseitig offene Straßendraws brauchen grob das 8- bis 10-Fache deines Calls an Stacks dahinter; Set Mining etwa das 15- bis 20-Fache (die „5%-Regel“). Je schwerer der Draw zu treffen ist, desto tiefer müssen die Stacks sein, damit der Call sich rechtfertigen lässt.
 
 **Q. Machen Implied Odds einen Gutshot spielbar?**
 

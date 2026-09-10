@@ -342,6 +342,18 @@ Texas Hold'em lernst du in dreißig Minuten – und meisterst es ein Leben lang.
 
 A. Blinds setzen → zwei Hole Cards erhalten → Preflop-Setzrunde → Flop aufdecken (3 Karten) und setzen → Turn (1 Karte) und setzen → River (letzte Karte) und setzen → Showdown (die besten fünf Karten werden verglichen).
 
+**Q. Wer ist im Poker als Erster dran?**
+
+A. Es kommt darauf an, welches „zuerst“ du meinst – und genau daran scheitert die Frage. Drei verschiedene Momente beanspruchen das Wort in einer einzigen Hand: zuerst *setzen* (der Small Blind), zuerst *handeln* preflop (UTG, direkt links vom Big Blind) und zuerst handeln, sobald der Flop liegt (wieder der Small Blind). Die Antwort kippt also mitten in der Hand: UTG eröffnet die Preflop-Runde, danach eröffnet der Small Blind jede weitere Runde. (Heads-up ist die einzige Ausnahme – siehe die nächste Frage.)
+
+**Q. Wer setzt nach dem Flop zuerst?**
+
+A. Der erste noch aktive Spieler links vom Button – am vollen Tisch ist das der Small Blind. Hat der Small Blind schon gefoldet, geht es an den Big Blind und von dort im Uhrzeigersinn weiter. Dieselbe Position eröffnet auch Turn und River; nur preflop startet es woanders. Heads-up ist die Ausnahme: Dort handelt der Button preflop zuerst und auf jeder Street danach zuletzt.
+
+**Q. Wer zeigt im Showdown seine Karten zuerst?**
+
+A. Wer die letzte aggressive Aktion gemacht hat – die letzte Bet oder den letzten Raise am River –, muss zuerst zeigen. Wurde der River komplett durchgecheckt, zeigt der erste aktive Spieler links vom Button zuerst, der Rest folgt im Uhrzeigersinn. Wer weiß, dass er geschlagen ist, darf stattdessen mucken.
+
 **Q. Was ist der Unterschied zwischen Preflop und Flop?**
 
 A. Preflop ist die Phase, bevor Gemeinschaftskarten liegen – du entscheidest allein anhand deiner zwei Hole Cards. Der Flop ist die Phase nach dem Aufdecken der ersten drei Gemeinschaftskarten, in der du sowohl deine aktuelle Hand als auch dein Draw-Potenzial liest.

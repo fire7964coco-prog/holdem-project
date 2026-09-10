@@ -182,6 +182,14 @@ An dem Abend, den ich oben erwähnte, machte ich Schritt eins und hörte auf –
 
 ## FAQ
 
+**Q. Was ist Equity im Poker?**
+
+A. Die Equity ist dein Anteil am Pot – der Teil, der deiner Hand im Schnitt zusteht, wenn die Hand zum Showdown geht, geteilte Pots anteilig gerechnet. Liegen $100 im Pot und stehen dir davon 60% zu, ist deine Equity $60 wert. Sie ist die Kernzahl, die du gegen den Preis eines Calls hältst, um zu entscheiden, ob du weitermachst.
+
+**Q. Was ist EV (Erwartungswert) im Poker?**
+
+A. Der Erwartungswert ist der Betrag, den eine Entscheidung auf lange Sicht im Schnitt gewinnt oder verliert. Ein Spielzug, der im Schnitt mehr als null einbringt, ist +EV (profitabel); weniger als null ist −EV (verlierend); null ist Break-even. Gewinnendes Poker heißt schlicht: +EV-Aktionen wählen und −EV-Aktionen folden – jede Bet, jeder Call und jeder Fold hat einen EV, auch wenn du die exakte Zahl nicht sehen kannst.
+
 **Q. Was ist der Unterschied zwischen Equity und EV?**
 
 A. Die Equity ist dein Anteil an *diesem* Pot, wenn die Hand ausgespielt wird. Der EV (Erwartungswert) ist, was eine *Entscheidung* im Schnitt einbringt – er rechnet die Fold Equity, die Bet-Größen und alles ein, was auf späteren Streets noch passiert. Eine Bet kann positiven EV haben, obwohl deine Equity unter 50% liegt.
@@ -209,6 +217,10 @@ A. Die Equity Realization ist, wie viel deiner rohen Equity du tatsächlich eins
 **Q. Was ist All-in-Equity?**
 
 A. Die All-in-Equity ist schlicht deine rohe Equity – dein Anteil am Pot, Splits anteilig –, wenn kein weiteres Setzen mehr passieren kann. Weil es keine zukünftigen Entscheidungen gibt, realisierst du 100% davon, sodass die rohe Equity zum exakten Anteil am Pot wird, den du über die Zeit einsammelst. Es ist der eine Spot, wo „Equity ist gleich Pot-Anteil“ – solange noch Karten kommen – wörtlich wahr ist.
+
+**Q. Warum sinkt meine Equity in Multiway-Pots?**
+
+A. Weil derselbe Pot jetzt auf mehr Hände aufgeteilt wird – Pocket-Asse mit rund 85% im Heads-up fallen gegen drei Spieler auf etwa 64% und gegen vier auf etwa 56%. Multiway schrumpft zusätzlich deine Fold Equity (alle müssen folden, nicht nur einer) und deine Realization (mehr Spieler heißt mehr Wege, überholt zu werden) – dein roher Anteil und das, was du davon behältst, geben also beide nach.
 
 **Q. Was bedeutet 20% Equity?**
 

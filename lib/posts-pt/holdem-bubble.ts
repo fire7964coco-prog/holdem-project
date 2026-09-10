@@ -182,6 +182,10 @@ A. O bubble boy é o jogador que quebra na última posição não paga — a uma
 
 A. Uma stone bubble (ou bolha dura) é quando uma única eliminação coloca todos os jogadores restantes no dinheiro ao mesmo tempo. Uma soft bubble é mais frouxa — um trecho de algumas eliminações perto do dinheiro em vez de uma vaga exata. A stone bubble cria a pressão mais extrema porque uma eliminação paga todo mundo que sobrou.
 
+**Q. O que significa "pagar a bolha" ou estourar a bolha?**
+
+A. "A bolha" é a última colocação antes do dinheiro, então quem quebra ali — o bubble boy — não leva nada enquanto todo mundo que continua está garantido; é isso que as pessoas querem dizer com pagar a bolha. "Estourar a bolha" é essa eliminação final: no instante em que ela acontece, todos os jogadores restantes estão no dinheiro e a pressão intensa de sobrevivência afrouxa. Alguns eventos dão ao bubble boy um consolo pequeno, mas tradicionalmente a bolha paga zero.
+
 **Q. Você deve foldar na bolha?**
 
 A. Você deve foldar *calls* muito mais que o normal, mas não tudo — e deve continuar dando shove e roubando. Sobreviver vale mais que fichas perto do pay jump, então pagar e quebrar é o erro caro. Aperte muito seu range de call enquanto mantém sua agressão de primeiro a entrar larga.
@@ -189,6 +193,10 @@ A. Você deve foldar *calls* muito mais que o normal, mas não tudo — e deve c
 **Q. Os short stacks sentem a maior pressão na bolha?**
 
 A. Não — esse é o equívoco comum. Pelo bubble factor, o stack médio é o mais restrito: equity de prêmio suficiente a perder, não curto o bastante para justificar apostar. Short stacks na verdade têm um bubble factor mais baixo porque quebrar já é provável e dobrar ajuda muito, então eles podem apostar com mais liberdade (dando shove, não pagando).
+
+**Q. O que é o bubble factor no poker?**
+
+A. O bubble factor mede quanto perder um pote te custa a mais do que ganhar o mesmo pote te ajuda, em termos de dinheiro real (ICM). Um bubble factor de 1,0 significa que fichas equivalem a dinheiro; 1,5 significa que quebrar dói 1,5× mais do que ganhar ajuda. Ele se converte direto na equity de que você precisa para pagar: c · BF ÷ (P + c · BF), para um call de c num pote de P. Arriscando exatamente o que dá para ganhar, isso vira BF ÷ (1 + BF) — 60% com um bubble factor de 1,5 — mas potes reais carregam dinheiro morto, então um jam típico de 10bb que você paga por 9bb num pote de 12bb pede uns 53%. De qualquer jeito é acima dos 50% que um coin flip de chip-EV oferece, e é por isso que os flips viram folds na bolha.
 
 **Q. O que é o jogo hand-for-hand?**
 

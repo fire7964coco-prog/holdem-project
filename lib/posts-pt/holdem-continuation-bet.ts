@@ -255,6 +255,10 @@ A. Não dê c-bet quando o board esmagou o range do seu adversário (boards baix
 
 A. Às vezes sim, às vezes não — esse é o ponto. Muitas c-bets são semi-bluffs ou bluffs puros com mãos que erraram, apostando porque o seu adversário provavelmente também errou. Outras são apostas de valor com mãos fortes. Uma estratégia equilibrada de c-bet mistura as duas nos mesmos boards, para que os adversários não consigam dizer se a sua aposta no flop significa força ou nada.
 
+**Q. O que é uma value bet no poker?**
+
+A. Value bet é uma aposta feita com uma mão forte torcendo para ser *paga* por uma pior — o oposto do blefe, que torce para fazer uma mão melhor foldar. A maior parte das suas c-bets em boards que te acertaram é value bet: você aposta top pair ou um set para cobrar dos pares piores e dos projetos. A habilidade está no sizing, para que as mãos mais fracas ainda paguem — aposte um valor que o adversário consiga se convencer a pagar.
+
 **Q. Qual é uma boa porcentagem de c-bet num HUD de poker?**
 
 A. Em torno de 55–70% para a c-bet no flop é uma faixa saudável e equilibrada. Acima de cerca de 85% sinaliza alguém que dá c-bet demais e pode ser explorado com float e raise; abaixo de cerca de 40% sinaliza um jogador que só aposta quando está forte, então você pode dar fold com confiança contra as c-bets dele e disparar quando ele dá check. Trate isso como um check de saúde, não como um alvo.

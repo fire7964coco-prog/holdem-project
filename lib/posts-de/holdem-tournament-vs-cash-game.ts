@@ -399,6 +399,10 @@ A. Nein. ICM gilt für Turniere, weil Turnierchips nicht direkt Geld sind und Au
 
 A. Eine gängige Regel sind 20-40 Buy-ins für Cash Games und 100+ Buy-ins für große Turniere, wobei kleinere Formate wie Sit & Gos mit grob 40-60 dazwischen liegen. Turniere brauchen den größeren Puffer, weil lange Strecken ohne Cash selbst für gewinnende Spieler normal sind.
 
+**Q. Mit wie vielen Big Blinds startest du im Cash Game und mit wie vielen im Turnier?**
+
+A. Im Cash Game kaufst du dich zum Tischmaximum ein – bei $1/$2 sind das meist $200–$300, also 100–150 Big Blinds –, weil tiefe Stacks Postflop-Können belohnen und dich einen ganzen Stack gewinnen lassen, wenn du vorne liegst. Ein Turnier wählt die Tiefe dagegen für dich: Du startest typischerweise mit rund 100–300 Big Blinds, aber die steigenden Blinds drücken das auf 20, dann 10, dann ins Push/Fold-Territorium. Kurzfassung: im Cash Game tief einkaufen, im Turnier den Big-Blind-Zähler im Auge behalten und mit ihm mitgehen.
+
 **Q. Wie viele Chips brauche ich für ein Cash Game zu Hause?**
 
 A. Ein Standard-Set mit 300 Chips deckt bequem bis etwa 6 Spieler ab – bei acht Spielern wären es 300 ÷ 8 = keine 40 Chips pro Person (bei sieben immerhin noch rund 43), wenn du alles austeilen würdest, und in einem Cash Game solltest du das nicht: Setz das Buy-in als Min/Max-Spanne an, nutze 3-4 Nennwerte mit den meisten Chips in den kleinsten Werten und lass den Rest für Rebuys im Koffer. Genau deshalb bedient ein 500er-Set 7-8 Spieler besser. Die genaue Anzahl zählt weniger als die Einigung aller, was jede Farbe vor der ersten Hand in echtem Geld wert ist.
@@ -410,6 +414,10 @@ A. Beides – aber viele Profis spezialisieren sich. Cash-Game-Spezialisten sch�
 **Q. Ist ein Re-entry-Turnier im Grunde ein Cash Game?**
 
 A. Nein. Re-entry erlaubt dir, nach dem Busten innerhalb einer bestimmten Phase erneut ins Turnier einzukaufen, aber die Chips sind trotzdem kein Bargeld. Blinds steigen weiter, Preisgeld hängt weiter von der Platzierung ab, und ICM zählt später weiter.
+
+**Q. Muss man Gewinne aus Pokerturnieren versteuern?**
+
+A. In den meisten Ländern ja – Pokergewinne zählen als steuerpflichtiges Einkommen, und große Live-Turniercashes werden oft direkt im Casino gemeldet und teils auch einbehalten; in den USA etwa löst ein großer Score den Papierkram noch vor Ort aus. Einige wenige Jurisdiktionen behandeln die Gewinne von Freizeitspielern als steuerfrei. Die Regeln unterscheiden sich stark von Land zu Land und sogar von Bundesstaat zu Bundesstaat – nimm das hier also als allgemeine Information und prüfe vor einem großen Cash dein lokales Steuerrecht oder frag jemanden vom Fach.
 
 ---
 

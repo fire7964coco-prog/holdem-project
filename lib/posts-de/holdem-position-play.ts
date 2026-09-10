@@ -259,6 +259,10 @@ Für die Mechanik der Blinds selbst – warum es sie gibt und wie die Pflichtein
 
 A. Out of Position (OOP) bedeutet, dass du auf den Postflop-Streets – Flop, Turn und River – vor deinem Gegner handeln musst. Du setzt Chips ein, ohne zu wissen, was er tun wird, kannst keine Free Cards nehmen und tust dich schwer, die Potgröße zu kontrollieren. Die Blinds sind OOP gegen jeden anderen Sitz (zwischen den beiden handelt der Small Blind zuerst – also hat der Big Blind tatsächlich Position auf den Small Blind); der Button ist gegen niemanden je OOP.
 
+**Q. Wer handelt zuerst – der Small Blind oder der Big Blind?**
+
+A. Das hängt von der Street ab. *Preflop* handelt der Small Blind vor dem Big Blind, und der Big Blind handelt zuletzt – er „schließt“ die Action. *Postflop* (Flop, Turn und River) ist der Small Blind als Erster dran und der Big Blind direkt danach; sobald Gemeinschaftskarten liegen, handelt der Small Blind also vor dem Big Blind. Die eine Ausnahme ist Heads-up: Dort postet der Button den Small Blind und handelt postflop trotzdem zuletzt, also beginnt der Big Blind. Der Button ist postflop immer der Letzte – genau deshalb ist er der profitabelste Sitz.
+
 **Q. Warum zählt Position im Poker so sehr?**
 
 A. Weil zuletzt zu handeln dieselben Karten in mehr Geld verwandelt. Solver- und Datenbank-Studien legen nahe, dass Out-of-Position-Spieler nur etwa 60–85% ihrer theoretischen Equity mitnehmen; in Position liegst du dann zwangsläufig über 100% – der In-Position-Spieler sieht jede Gegner-Entscheidung, bevor er seine eigene trifft, sodass er mit identischen Holdings zu besseren Momenten Value-bettet, blufft und foldet.
@@ -270,6 +274,10 @@ A. Der Button. Es ist der einzige Sitz, der garantiert auf jeder Postflop-Street
 **Q. Was ist die schwächste Position im Poker?**
 
 A. Zwei Antworten, je nach Frage. Der Small Blind ist der strukturell schlechteste Sitz, um eine Hand zu spielen – als Erster dran auf jeder Postflop-Street. Der Big Blind verliert die meisten reinen Chips pro 100 Hände, einfach weil er jede Runde einen vollen Pflicht-Blind postet; selbst perfektes Spiel reduziert diesen Verlust nur. Unter den Nicht-Blind-Sitzen ist UTG am schwächsten: zuerst preflop, engste Range, meist OOP nach dem Flop.
+
+**Q. Ist der Small Blind eine frühe Position?**
+
+A. Nein – der Small Blind ist ein Blind, kein „Early-Position“-Sitz. Spieler in früher Position (UTG und die Sitze daneben) öffnen tight, weil der ganze Tisch hinter ihnen handelt – und postflop handeln sie immerhin *nach* den Blinds. Der Small Blind ist in Wahrheit der schlechteste Sitz überhaupt: Er postet einen halben Blind und ist danach auf jeder Postflop-Street als Erster dran. Behandle ihn nicht wie Early Position – der moderne Standard aus dem Small Blind ist 3-Bet oder Fold.
 
 **Q. Ist es besser, aus UTG zu limpen oder zu raisen?**
 

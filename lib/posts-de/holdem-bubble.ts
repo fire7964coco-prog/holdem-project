@@ -212,6 +212,10 @@ A. Der Bubble Boy ist der Spieler, der auf der letzten unbezahlten Position bust
 
 A. Eine Stone Bubble (oder Hard Bubble) ist, wenn eine einzige Elimination jeden verbliebenen Spieler gleichzeitig ins Geld bringt. Eine Soft Bubble ist loser – eine Strecke von ein paar Eliminationen nahe dem Geld statt eines exakten Platzes. Die Stone Bubble erzeugt den extremsten Druck, weil ein Bust allen Verbliebenen auszahlt.
 
+**Q. Was heißt „die Bubble bezahlen“ oder die Bubble platzen lassen?**
+
+A. „Die Bubble“ ist der letzte Platz vor dem Geld: Wer dort bustet – der Bubble Boy –, gewinnt nichts, während alle Verbliebenen bezahlt werden; genau das meint man mit die Bubble bezahlen. „Die Bubble platzen lassen“ ist diese letzte Elimination: In dem Moment sind alle Verbliebenen im Geld, und der harte Überlebensdruck lässt nach. Manche Events geben dem Bubble Boy einen kleinen Trostpreis, traditionell zahlt die Bubble aber null.
+
 **Q. Solltest du an der Bubble folden?**
 
 A. Du solltest *Calls* viel öfter folden als üblich, aber nicht alles – und du solltest weiter shoven und stehlen. Überleben ist nahe des Pay Jumps mehr wert als Chips, also ist off callen und busten der teure Fehler. Zieh deine Calling Range hart zusammen und halte deine First-in-Aggression weit.
@@ -219,6 +223,10 @@ A. Du solltest *Calls* viel öfter folden als üblich, aber nicht alles – und 
 **Q. Fühlen Short Stacks den meisten Bubble-Druck?**
 
 A. Nein – das ist der verbreitete Irrtum. Nach dem Bubble Factor ist der Medium Stack am eingeschränktesten: genug Prize Equity zum Verlieren, nicht kurz genug, um das Risiko zu rechtfertigen. Short Stacks haben tatsächlich einen niedrigeren Bubble Factor, weil Busten ohnehin wahrscheinlich ist und ein Double-up viel hilft, also können sie mehr Risiko nehmen (durch Shoven, nicht Callen).
+
+**Q. Was ist der Bubble Factor im Poker?**
+
+A. Der Bubble Factor misst, um wie viel mehr dich das Verlieren eines Pots kostet, als dir das Gewinnen desselben Pots bringt – gerechnet in echtem Geld (ICM). Ein Bubble Factor von 1,0 heißt: Chips sind gleich Geld; 1,5 heißt: Busten tut 1,5× so weh, wie Gewinnen hilft. In die nötige Call-Equity umgerechnet sind das c · BF ÷ (P + c · BF), für einen Call von c in einen Pot von P. Riskierst du genau das, was du gewinnen kannst, bleibt BF ÷ (1 + BF) übrig – bei einem Bubble Factor von 1,5 also 60%. Echte Pots enthalten aber totes Geld: Für einen 10bb-Jam, den du mit 9bb in einen 12bb-Pot callst, brauchst du rund 53%. So oder so liegt es über den 50%, die dir ein Chip-EV-Coinflip gibt – und deshalb werden Flips an der Bubble zu Folds.
 
 **Q. Was ist Hand-for-Hand-Spiel?**
 

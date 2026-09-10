@@ -333,6 +333,10 @@ A. Num torneio de bounty (knockout) normal, cada jogador carrega um bounty fixo 
 
 A. Num torneio de rebuy você pode comprar fichas de novo durante um período definido — em muitos eventos, sempre que seu stack estiver no valor inicial ou abaixo, sem precisar quebrar — normalmente nos primeiros níveis de blind. Um add-on é uma compra opcional única de fichas, geralmente oferecida a todo mundo no fim do período de rebuy, independentemente do tamanho do stack. Assim que essa janela fecha, o evento segue como um freezeout. As regras exatas variam por local, então confira a structure sheet.
 
+**Q. Como os torneios de poker ganham dinheiro?**
+
+A. A casa cobra uma taxa por cima de cada buy-in — a parte "+$9" de uma entrada de "$100+$9". Essa taxa (normalmente uns 8–10% em grandes eventos ao vivo, e mais em dailies pequenos) é a receita da casa; a parte de "$100" vai inteira para o prize pool que os jogadores disputam. Ou seja, uma sala de torneios lucra com o volume de entradas e suas taxas, não com o dinheiro da premiação, que é apenas reciclado entre os jogadores.
+
 **Q. É legal organizar um torneio de poker em casa?**
 
 A. Depende da sua jurisdição. Não existe regra de bolso que resolva isso — a linha está na legislação local, e guias que te entregam um teste de uma frase estão chutando por você. As leis variam muito por país e por estado, então confira as regulamentações locais antes de organizar.
@@ -352,6 +356,10 @@ A. Sim, durante a janela de late registration — normalmente os primeiros níve
 **Q. Dá pra sair cedo de um torneio de poker e ficar com as fichas?**
 
 A. Não. Diferente de um cash game, as fichas de torneio não têm valor em dinheiro e não podem ser trocadas no meio do evento. Se você for embora, suas fichas continuam em jogo e seguem pagando blinds e antes até acabarem. A premiação normal só é paga se você terminar numa posição paga (ITM); em formatos knockout e PKO você também embolsa os bounties à parte.
+
+**Q. Torneio de poker é mais sorte ou mais habilidade?**
+
+A. Os dois — mas a habilidade decide quem vence no longo prazo. Um torneio isolado carrega uma variância enorme: dá para jogar de forma impecável e quebrar mesmo assim quando seus ases são quebrados, e é por isso que até profissionais de elite passam longos períodos sem um resultado grande. Ao longo de centenas de eventos, porém, os melhores jogadores chegam a final tables muito mais do que o acaso permitiria. Poker é um jogo de habilidade embrulhado em sorte de curto prazo — e os torneios simplesmente concentram mais dessa sorte do que os cash games.
 
 ---
 

@@ -215,6 +215,10 @@ Mit einem Pocket Pair floppst du Quads **1 zu 408** – rechnest du ein, dass du
 
 ## FAQ
 
+**Q. Wie stehen die Odds für einen Royal Flush im Texas Hold'em?**
+
+A. Etwa 1 zu 30.940 bis zum River, wenn du eine Hold'em-Hand ausspielst (deine besten fünf aus sieben Karten). Als direkt ausgeteilte Fünf-Karten-Hand sind es 1 zu 649.740. So oder so vergehen für die meisten Spieler Jahre, ohne dass sie einen sehen.
+
 **Q. Wie hoch ist die Wahrscheinlichkeit für einen Vierling?**
 
 A. 1 zu 4.165 (0,0240%) als ausgeteilte Fünf-Karten-Hand und 1 zu 595 (0,168%) bis zum River im Hold'em. Ein *bestimmter* Vierling wie Vierling Asse ist weit unwahrscheinlicher – rund 1 zu 7.700 bis zum River. Der häufigste Weg dorthin (etwa 57% der Fälle) ist ein Ass in deiner Hand und die anderen drei auf dem Board; mit dem Pocket Pair beide restlichen Asse zu fangen ist seltener, alle vier auf dem Board noch seltener – mit einem Pocket Pair steht es allein fürs direkte Floppen der Quads 1 zu 408.
@@ -235,6 +239,10 @@ A. Wenn du einen Flushdraw floppst (neun Outs), komplettierst du ihn etwa 35% de
 
 A. Etwa 11,8%, oder grob 1 zu 8,5, wenn du ein Pocket Pair hältst. Diese Zahl „7,5:1 dagegen“ ist die Grundlage, um zu entscheiden, ob das Set-Mining eines kleinen Paars profitabel ist.
 
+**Q. Wie hoch ist die Chance, einen Royal Flush zu floppen?**
+
+A. Verschwindend gering. Selbst wenn du zwei seiner fünf Karten schon suited hältst – sagen wir A♥ K♥ –, bringt der Flop genau Q♥ J♥ 10♥ nur etwa einmal in 19.600 Flops. Aus einer zufälligen Starthand ist es noch weit seltener. Deshalb wird fast jeder Royal Flush, der überhaupt entsteht, am Turn oder River komplettiert und nicht am Flop.
+
 **Q. Wie stehen die Odds, Pocket-Asse ausgeteilt zu bekommen?**
 
 A. 1 zu 221 (0,45%) speziell für Asse. Irgendein Pocket Pair kommt allerdings weit häufiger vor – etwa 1 zu 17 Hände (5,9%).
@@ -250,6 +258,22 @@ A. Teile den Betrag, den du callen musst, durch den gesamten Pot nach deinem Cal
 **Q. Wie stehen die Odds für Set over Set?**
 
 A. Es gibt keine einzelne feste Zahl – es hängt davon ab, wie viele Gegner Pocket Paire halten – aber es ist selten. Du floppst ein Set von vornherein nur 11,8% der Fälle, also ist es der klassische „Cooler“, der Stacks kostet, wenn zwei Spieler auf demselben Board beide Sets floppen.
+
+**Q. Welche Hand gewinnt im Poker am häufigsten?**
+
+A. Ein Paar, danach zwei Paare. Weil sich alle Spieler die fünf Gemeinschaftskarten teilen, entscheiden sich die meisten Texas-Hold'em-Pots über ein einzelnes Paar und seinen Kicker – Flushes, Straights und Full Houses gewinnen weit seltener, als Anfänger erwarten. Die vollständigen Häufigkeiten stehen in der Tabelle weiter oben.
+
+**Q. Wie oft gewinnt am Ende wirklich die beste Hand?**
+
+A. Seltener, als du vor dem River denkst. Selbst Pocket-Asse – die beste Starthand – gewinnen im Heads-up nur etwa 85% der Fälle, gegen einen vollen Tisch deutlich weniger. Am River gewinnen die besten fünf Karten per Definition; die Überraschungen passieren früher, wenn eine fertige Hand von einem lebenden Draw eingeholt wird.
+
+**Q. Wie oft trifft man den Flop überhaupt?**
+
+A. Mit zwei ungepaarten Hole Cards paarst du am Flop etwa 32% der Fälle mindestens eine davon – rund zwei von drei Flops verfehlst du also komplett. Genau deshalb zählen Position und Aggression so viel: Auch jeder einzelne Gegner hat den Flop etwa zwei von drei Malen verfehlt, und wer bereit ist zu setzen, nimmt den Pot oft sofort mit.
+
+**Q. Wie stehen die Odds, die Nuts zu halten?**
+
+A. Es gibt keine einzelne Zahl – die Nuts (die bestmögliche Hand auf einem gegebenen Board) ändern sich mit jedem Board. Auf einem trockenen, ungepaarten Board sind die Nuts vielleicht Top Set, auf einem koordinierten Board ein Straight oder ein Flush. Das Können liegt nicht darin, eine Odds-Zahl auswendig zu wissen, sondern zu lesen, welche Hand die Nuts *ist* – und einzuschätzen, wie wahrscheinlich ein Gegner sie hält.
 
 ---
 

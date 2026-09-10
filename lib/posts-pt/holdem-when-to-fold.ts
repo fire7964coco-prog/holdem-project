@@ -199,6 +199,10 @@ Repare que os dois polos estão aqui: folde *mais* contra os jogadores value-hea
 
 A. Folde sempre que pagar ou aumentar perde dinheiro no longo prazo: quando sua mão é fraca demais no pré-flop, quando você erra o flop e enfrenta agressão numa mesa que encaixa no range do adversário, quando um projeto não bate suas pot odds e quando uma linha value-heavy vence a mão que você tem. O pior resultado de um fold é zero, então foldar um spot perdedor sempre vence pagá-lo.
 
+**Q. Você perde dinheiro quando folda no poker?**
+
+A. Você perde só as fichas que já colocou no pote — foldar não custa nada além disso. Qualquer aposta que você fez antes já se foi no instante em que a fez (ela pertence ao pote), e foldar apenas impede que você coloque *mais uma* ficha. Então um fold não é "perder" do mesmo jeito que perder um call-down: dali em diante o pior resultado dele é zero, o que sempre ganha de um call que você vai perder. Você não pode ganhar o pote foldando, mas economiza cada ficha que teria pagado para perder.
+
 **Q. Com que frequência você deve foldar no pré-flop?**
 
 A. Um bom jogador tight-aggressive folda cerca de 75–85% das mãos antes do flop — mais perto de 75–80% em jogos 6-max e 80–85% em full-ring. Jogar menos mãos, mais fortes, é a maior correção individual para a maioria dos jogadores perdedores. Se você está entrando em bem mais de um quinto das mãos, quase certamente está jogando demais.

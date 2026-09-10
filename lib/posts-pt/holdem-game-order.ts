@@ -342,6 +342,18 @@ Texas Hold'em se aprende em trinta minutos e se domina numa vida inteira. Mas o 
 
 A. Postar os blinds → distribuir duas cartas fechadas → apostas do pré-flop → revelar o flop (3 cartas) e apostar → turn (1 carta) e apostar → river (última carta) e apostar → showdown (comparam-se as melhores cinco cartas).
 
+**Q. Quem age primeiro no poker?**
+
+A. Depende de qual "primeiro" você quer dizer, e é exatamente por isso que a pergunta confunde. Três momentos diferentes disputam a palavra numa mesma mão: o primeiro a *postar* (o small blind), o primeiro a *agir* no pré-flop (o UTG, logo à esquerda do big blind) e o primeiro a agir depois que o flop abre (de volta ao small blind). Ou seja, a resposta muda no meio da mão — o UTG abre a rodada pré-flop, e o small blind abre todas as rodadas seguintes. (O heads-up é a única exceção — veja a pergunta seguinte.)
+
+**Q. Quem aposta primeiro depois do flop?**
+
+A. O primeiro jogador ainda na mão à esquerda do botão — numa mesa cheia, o small blind. Se o small blind já foldou, passa para o big blind e segue em sentido horário. A mesma cadeira também abre o turn e o river; só o pré-flop começa em outro lugar. O heads-up é a exceção: ali o button age primeiro no pré-flop e por último em todas as streets seguintes.
+
+**Q. Quem mostra as cartas primeiro no showdown?**
+
+A. Quem fez a última ação agressiva — a última aposta ou aumento no river — tem de mostrar primeiro. Se o river passou em check sem nenhuma aposta, mostra primeiro o jogador ativo mais à esquerda do botão, e os demais seguem em sentido horário. Quem sabe que está batido pode dar muck em vez de mostrar.
+
 **Q. Qual é a diferença entre pré-flop e flop?**
 
 A. O pré-flop é antes de qualquer carta comunitária sair — você decide só com suas duas cartas fechadas. O flop é depois de reveladas três cartas comunitárias, quando você lê tanto a mão que já tem quanto o potencial de draw.

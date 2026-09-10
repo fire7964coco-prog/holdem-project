@@ -128,6 +128,48 @@ const ALLOW = [
       '이 글은 로케일마다 창구·세금·비자가 다른 재저작 글이라 불릿 하나의 병합은 결손으로 보지 않는다. ' +
       '🔴 다른 종류(faq·h2·link)는 면제가 아니다 — li만이다.',
   },
+  {
+    slug: 'holdem-probability',
+    locales: ['de'],
+    kinds: ['li'],
+    reason:
+      '2026-09-10 전건 원문 판정: EN 「How Rare Is a Royal Flush?」의 불릿 2개를 de는 «산문 + 인포그래픽 + note 블록»으로 썼다. ' +
+      'H2 개수는 같고(둘 다 11) 수치도 같다 — 1 zu 649.740(5장) · 1 zu 30.940(리버까지) · 4가지 조합 대 1.302.540. ' +
+      '🔴 불릿으로 되돌리려고 note 블록(로열 두 개가 «다른» 무늬면 스플릿이 아니라는 통념 반박)을 밀어내지 마라.',
+  },
+  {
+    slug: 'holdem-hand-rankings',
+    locales: ['zh-hant'],
+    kinds: ['h2', 'row'],
+    reason:
+      '🔴 2026-09-09 헤드 판정(11)으로 «이미 닫힌» 자리다 — EN H2 2개(「How Do You Memorize Poker Hands Fast?」· ' +
+      '「Are Poker Hand Rankings the Same in Every Game?」)는 zh-hant에 «일부러» 없다. ' +
+      '근거 ① 2026-07 번역 시점부터 없던 구조 ② DFS 「牌型記憶」 계열 4종 볼륨 null ' +
+      '③ 둘째 H2 내용은 이미 본문에 흡수돼 있다(短牌→同花贏葫蘆 L259 · 奧馬哈 剛好用兩張 FAQ · 「90%」 L234). ' +
+      'row −11은 그 두 절에 딸린 표 2개다(5행 + 6행) — 같은 뿌리. ' +
+      '🔴🔴 **2026-09-10에 이 판정을 모르고 두 절을 다시 넣었다가 되돌렸다.** ' +
+      '게이트 출력을 보고 움직이기 전에 docs/locale-intentional-diffs.md를 먼저 grep해라 — ' +
+      '게이트는 그 파일을 읽지 않는다(그래서 이 ALLOW가 있다).',
+  },
+  {
+    slug: 'holdem-rake',
+    locales: ['de', 'pt'],
+    kinds: ['faq'],
+    reason:
+      'EN FAQ 「Is taking a rake illegal?」를 «일부러» 만들지 않는다 — 합법성은 «주제일 때만» 다룬다는 상시 규율. ' +
+      '레이크 글에서 합법성은 곁다리다. de는 2026-08-12에 같은 취지로 닫혔고(그 자리를 자체 문항 ' +
+      '「Warum nimmt der Cardroom überhaupt Rake?」로 채웠다), pt도 2026-09-10에 같은 판정으로 닫는다.',
+  },
+  {
+    slug: 'holdem-probability',
+    locales: ['ja', 'pt'],
+    kinds: ['faq'],
+    reason:
+      '🔴 2026-09-09 헤드 판정(10)으로 «이미 닫힌» 자리다 — EN FAQ 「쿼드 에이스 확률」·「플랍 적중 32%」는 ' +
+      'ja·pt FAQ 세트에 «일부러» 없다(ja 회차 3 · pt 08-25 재저작으로 세트가 EN과 다르게 구성됨). ' +
+      '🔴🔴 2026-09-10 파리티 충전 회차가 pt에 「플랍 적중 32%」를 넣었다가 되돌렸다. ' +
+      '판정을 뒤집으려면 새 근거를 들고 헤드 판정을 다시 받아라 — 게이트 출력은 근거가 아니다.',
+  },
 ];
 const allowHit = (loc, slug, kind) =>
   ALLOW.find((a) => a.slug === slug && a.locales.includes(loc) && a.kinds.includes(kind));
