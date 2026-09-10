@@ -11,7 +11,7 @@ export const POST: Post = {
   updated: "2026-09-09",
   // 🔴 masterUpdated는 07-12 그대로 둔다 – 이 글은 「판 전체 재동기화」 보류분(드리프트 잔존)이다.
   //    남은 항목이 있는 채로 올리면 드리프트 추적이 거짓말을 한다(session-handoff §착수 전 7).
-  masterUpdated: "2026-07-12",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "14 Min.",
   emoji: "♠️",

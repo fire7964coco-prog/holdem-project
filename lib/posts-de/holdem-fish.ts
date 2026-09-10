@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ein „Fish“ ist Poker-Slang für einen schwachen, verlierenden Spieler, an dem die stärkeren Spieler ('Sharks') ihr Geld verdienen. Fische spielen zu viele Hände, callen zu viel und können nicht folden – und der berühmte Spruch warnt: Wenn du den Fish an deinem Tisch nicht erkennst, bist du es. Es ist der wichtigste Read im ganzen Spiel: Finde den Fish, oder werde selbst einer.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-08-30",
-  masterUpdated: "2026-08-26",
+  updated: "2026-09-10",
+  masterUpdated: "2026-08-30",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "🐟",
@@ -81,7 +81,7 @@ Kein einzelnes Zeichen ist ein Beweis – selbst gute Spieler limpen gelegentlic
 > **Kurze Antwort**
 > Der **Fish** verliert, weil er zu viel und zu passiv spielt. Der **Shark** gewinnt an ihm. Ein **Whale** ist ein Fish mit tiefen Taschen an hohen Stakes. Ein **Donkey** ist ein Fish mit besonders unlogischen Plays – das Wort ist die härtere Beleidigung. Und ein **Nit** ist der Gegenpol: extrem tight, ausbeutbar, aber ==kein Fish==, weil er kaum Chips verschenkt.
 
-![Eine einfache Darstellung der Poker-Nahrungskette mit vier Spielertypen als Poker-Chip-Icons – FISH, SHARK, WHALE und NIT – die vier Rollen an einem Tisch](/images/holdem-fish-food-chain.webp "Die Poker-Nahrungskette auf einen Blick: Der Fish füttert die Sharks, der Whale ist der große Preis, und der Nit sitzt einfach nur fest")
+![Vier Pokerspielertypen als unterschiedlich große Chips auf grünem Filz – FISH, SHARK, WHALE und NIT – die Chipgröße zeigt, wie viel Geld jeder Typ ins Spiel bringt, der Chip des Whale ist mit Abstand der größte](/images/holdem-fish-food-chain.webp "Die Poker-Nahrungskette auf einen Blick: Der Fish füttert die Sharks, der Whale ist der große Preis, und der Nit sitzt einfach nur fest")
 
 „Fish“ ist die Schlagzeile, aber der Poker-Slang hat ein ganzes Bestiarium an Spielertypen – und die meisten Lexika definieren nur zwei oder drei davon. Hier ist die eine Tabelle, die sie alle auflegt, damit du genau benennen kannst, gegen wen du antrittst:
 
