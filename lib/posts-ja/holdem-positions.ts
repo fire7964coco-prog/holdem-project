@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "ポーカーのポジションは、ディーラーボタンを基準に決まる席の名前です。UTG・ロージャック・ハイジャック・カットオフ・ボタン・そしてブラインド(SB・BB)があり、ハンドごとに時計回りに1席ずつ移ります。プリフロップはUTGが最初に動き、BBが最後。ポストフロップはSBが最初でBTNが最後です。物理的な席番号は動きませんが、ポジションはハンドごとに動きます。",
   category: "strategy",
   date: "2026-06-13",
-  updated: "2026-09-09",
+  updated: "2026-09-10",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "12分",

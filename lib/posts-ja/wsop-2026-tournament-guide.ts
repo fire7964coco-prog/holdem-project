@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "2026年の第57回WSOPは8月5日のメインイベント決着で全日程を終え、優勝は22歳のアメリカ人Lucas Jumalon(賞金$10,000,000)。日本人最高位は23位のKyosuke Nagami($325,000)で、9,208人のフィールドの上位0.25%に入りました。日本勢はブレスレットをNaoya Kiharaが2本、Koji FujimotoとDaisuke Ogitaが各1本、あわせて4本獲得。うち3本がミックスゲームの選手権でした。参加者数でも222人で全体5位・アジア1位。メインイベントは9,208エントリー・賞金総額$87,568,080です。この記事の後半は、次にラスベガスへ行くときのための準備としてまとめています。",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-08-15",
+  updated: "2026-09-10",
   masterUpdated: "2026-08-15",
   keepImagesInBody: true,
   readTime: "12分",

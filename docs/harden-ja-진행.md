@@ -757,6 +757,11 @@
 
 ### 5-G. 회차 9가 올리는 것 (2026-09-10)
 
+> ✅✅ **헤드 처리 완료 (2026-09-10 머지 `c7ac015d` · 헤드 회차)** — 항목별 판정은 아래 각 번호 끝의 「✅ 헤드」 줄.
+> 🔴 **1·3·9는 «재현되지 않았다»** — 레인이 잰 시점(A 구간 09-09 22:59)과 헤드가 고친 시점 사이에 이미 닫혔다.
+> **레인 잘못이 아니다**: 레인은 C 구간 `git merge main`(`c7ac015d` 19:45)을 하고도 그 사실을 다시 재지 않았다.
+> 🪶 **교훈 = «머지로 받은 뒤에는 헤드 요청을 다시 재라».** 브리프의 실측치는 A 구간의 것이고, C 구간 머지가 그 전제를 바꾼다.
+
 🔴 **게이트 결함 — 최우선**
 
 1. 🔴🔴 **`check:structure`의 link 축이 «썸네일 붙은 내부링크»를 통째로 못 본다.**
@@ -766,15 +771,36 @@
    → EN과 로케일의 thumb 부착 **위치가 다르면 가짜 결손**이 난다. 실제로 ja `holdem-position-play`가 그렇게 잡혔는데
    **ja에도 그 링크는 있다**(L223 `[チェックレイズ](/ja/blog/low-board-check-raise "thumb:…")` · `locale-intentional-diffs.md` L62도 「zh-hant·ja는 2026-09-08부터 해제」로 이미 정정돼 있다).
    🔴 **`docs/en-first-queue.md` §0-C의 「link 44편」은 이 수정 뒤에 재판정해야 한다.**
+   ✅ **헤드**: 게이트는 **이미 고쳐져 있었다** — `a362692e`(09-10 **14:29**) 「check:structure 링크 정규식 수리」가 `(?:\s+"[^"]*")?`를 넣었다.
+   레인 A 구간(09-09 23:11)보다 **뒤**라 브리프가 못 봤다. **재판정은 헤드가 했다: link 핵심 44편 → 🟢 0편 · li 7편 → 🟢 0편**
+   (꼬리 he·hi·ms·tr·vi 각 1건은 소수 언어 몫). `docs/en-first-queue.md` §0-C의 C축을 **「종결」로 정정**했다 — 대표 자리로 적혀 있던
+   `3bet-pot-cbet`·`low-board-check-raise`·es `wsop-2026`는 **전부 링크를 가지고 있었다.**
 
 2. 🔴 **`git log --since="<날짜>"`가 같은 날 커밋을 조용히 빠뜨린다** — approxidate가 **비어 있는 시·분을 «지금 시각»으로 채운다.**
    회차 9 A 구간이 22:59에 재서 **같은 날 21:15의 EN 커밋을 통째로 놓쳤고**, 그대로 믿었으면 「드리프트 0」으로 닫혔을 것이다.
    `"<날짜> 00:00"`으로 다시 재자 `holdem-all-in-rules` 미반영 1건이 드러났다(`check:drift`는 ✅ — masterUpdated=EN updated=09-09이라 날짜 게이트로는 원리상 안 잡힌다).
    → **`docs/hardening-protocol.md` §3-③(드리프트는 git log로 잰다)에 «시각을 박아라»를 추가**해 달라. §3-F 규율의 구멍이다.
+   ✅ **헤드**: 이행했다 — `docs/hardening-protocol.md` §3-③의 명령 블록을 `--since="<masterUpdated> 00:00"`으로 고치고,
+   그 아래에 **approxidate가 빈 시·분을 «지금 시각»으로 채운다**는 함정과 **`check:drift`가 이 유형을 원리상 못 잡는 이유**(masterUpdated = EN updated = 같은 날 → 날짜 게이트는 ✅)를 박았다.
+   🪶 이 항목이 회차 9의 **가장 값나가는 산출**이다 — 「드리프트 0」이 거짓일 수 있는 경로를 처음 드러냈다.
 
 3. 🔴 **`locale-intentional-diffs.md`에 ja FAQ 세트 6편을 등재해 닫아 달라** — `check:structure`가 faq −N으로 잡는다.
    `bubble` −1 · `kicker` −1(ja는 EN에 없는 「キッカー勝ち/負け」를 **추가로** 갖는다) · `probability` −5 · `reading-the-board` −3 · `split-pot-rules` −5 · `tiebreak-rules` −5.
    전건 원문 대조 결과 **ja가 자체 세트로 재구성**된 것이고, 이미 같은 유형의 헤드 판정 선례가 있다(L72 · 09-09 「새로 만들지 않는다」).
+   ✅ **헤드 — 🔴 등재하지 않았다. 등재했으면 «없는 편차»를 정본에 박을 뻔했다.** 헤드 전건 재측정(머지 후 실물 `**Q.` 계수):
+
+   | slug | EN | ja | 판정 |
+   |---|---|---|---|
+   | `holdem-bubble` | 9 | **9** | ✅ 동수 — 결손 없음 |
+   | `holdem-kicker` | 13 | **13** | ✅ 동수 |
+   | `holdem-reading-the-board` | 11 | **11** | ✅ 동수 |
+   | `holdem-split-pot-rules` | 13 | **13** | ✅ 동수 |
+   | `holdem-tiebreak-rules` | 14 | **15** | 🪶 **ja가 하나 더 많다**(결손의 반대) |
+   | `holdem-probability` | 15 | 10 | 🔴 유일한 실제 갈림 — **이미 닫혀 있다**(게이트 `ALLOW` + `locale-intentional-diffs.md` L108 · 09-09 판정) |
+
+   **왜 갈렸나**: 레인이 잰 시점(A 구간 `e3aab621`·머지 `44e13577`)엔 −1·−1·−3·−5·−5로 **레인 보고가 정확했다.**
+   그 뒤 헤드의 `e69c5d45`「ja·id FAQ 파리티 31문항」이 **전부 채웠고**, 레인이 C 구간 `git merge main`(`c7ac015d` 19:45)으로 그것을 받았다.
+   🔴 **`check:structure --locale=ja --only=faq` = 핵심 0 · 꼬리 0**(예외 등재 1 = probability). **다음 회차가 이 표를 근거로 다시 열지 마라.**
 
 🔴 **EN-먼저**
 
@@ -786,16 +812,36 @@
 7. 🟠 **`holdem-strategy` 「コールに対して降りる人はいません」**은 멀티웨이에서 거짓(콜드콜이 뒤 사람을 죽인다 = 스퀴즈의 전제 · EN 198 동문 · 09-09 `8cfd0b07`이 만든 문장).
 8. 🪶 `holdem-bad-beat` 「A-K対Q-Qのような50/50」 — 실제 43.2/56.8(EN 74·177 동문 · 은어로는 통용 · 결론 불변).
 
+✅ **헤드 — 4~8 전건 등재 완료**: `docs/en-first-queue.md` **§2-B「ja 경화 회차 9가 올린 EN-먼저 5건」**(J#1~J#5)로 옮겼다.
+🔴 **EN을 아직 고치지는 않았다** — EN 정정은 8로케일 전파가 따라오므로 **EN-먼저 회차를 따로 연다**(§2-A ar 11건과 같은 판에서).
+🪶 J#1(`flush-vs-straight` 「場面2」)은 **편차 등재 대상이 아니다** — 의도가 아니라 EN 오류다. §3-J 8의 「되돌리지 마라」는 유효하다(지금은 블록이 옳고 제목이 부정확한 상태로 둔다).
+
 🔴 **헤드 자리 — `lane:sync`(`6f59fff2`)로 들어온 15편에 대한 렌즈 지적**
 
 9. 회차 9의 렌즈 4종에 준 diff가 **A 커밋 기준**이라 헤드의 09-09 (12) 회차 정정 15편이 섞였다. 그 15편에 대한 지적은 **레인이 판정하지 않았다**(범위 밖).
    목록: `apt-incheon`(7泊 vs 7日間 · 각주 중복) · `bubble`(🔴 **「複数シート」 한정어가 tldr·L70 직답·L182·L242 4자리 누락** — 같은 절 불릿만 한정돼 있어 D유형) · `card-counting` · `continuation-bet`(표 「解いた」 표현 · IP 값 표↔본문 긴장) · `icm`(L114 괄호가 버블에 오적용) · `implied-odds`(L209 조사 で→に 퇴행) · `kicker`(L20 도입부가 반전을 스포일 · L123 「サイドカード」로 키워드 소실) · `position-play` · `positions`(「full-ring」→「満席」 오역) · `probability` · `starting-hands-chart`(L307 계수식 붕괴) · `straddle`(tldr에서 «하우스룰 의존» 축 소실) · `strategy` · `korea-poker-marathon`(note 배치·「上の」 지시 대상이 254줄 위).
    🔴 **`updated` 미갱신 13편**도 그 회차 몫이다(회차 9가 손댄 `flush-vs-straight`만 09-10으로 올렸다).
+   ✅ **헤드 — 스탬프는 «13편»이 아니라 «ja 6편»이었고, 6편 전건 정정했다.** 전수 대조(전 ja 57편 · `updated` ↔ 그 파일 최종 커밋일):
+
+   | 정정 | 사유(09-10 커밋 실물) |
+   |---|---|
+   | `holdem-bubble` · `holdem-kicker` · `holdem-tiebreak-rules` 09-09 → **09-10** | `e69c5d45` FAQ 파리티 = **문항 신설**(bubble +1 · kicker +1 · tiebreak +6) |
+   | `holdem-continuation-bet` · `holdem-positions` 09-09 → **09-10** | `2c9012c7` 2차 교열 = **문장 재서술**(cbet에 「싱글레이즈팟·프리플랍 레이저」 한정어 신설) |
+   | `wsop-2026-tournament-guide` **08-15 → 09-10** | `4327b2ce` 내부링크 문장 신설. 🔴 **28일 벌어져 있었다** — 목록에 없던 자리다 |
+
+   🪶 **레인이 든 14편 중 8편은 결함이 아니었다** — `updated`=09-09이고 최종 커밋도 09-09라 §1-C에 맞는다
+   (`apt-incheon`·`card-counting`·`icm`·`implied-odds`·`position-play`·`probability`·`starting-hands-chart`·`straddle`·`strategy`·`korea-poker-marathon`).
+   🔴 **반대로 «기계적 변경은 올리지 않는다»도 적용했다** — `ace-paired-board-strategy`·`blind-battle-connected-board`(tldr 별표 제거)·`paired-board-strategy`(태그 1개 삭제)는
+   **09-07 커밋이 있어도 스탬프를 올리지 않았다.** 정본 = `settled-decisions` §1-C 「내용을 안 바꿨으면 `updated`도 올리지 마라」.
+   🔵 **렌즈 지적 14편 자체(내용)는 아직 안 봤다** — 헤드 소유 자리이고 범위가 커서 **별도 회차**로 넘긴다(핸드오프 등재).
 
 🪶 **그밖**
 
 10. 🪶 **`npm run check:handoff`가 🔴 대청소를 요구한다** — 헤드 소유 파일이라 레인은 손대지 않았다.
+    ✅ **헤드**: 레인이 잰 뒤에 **이미 대청소했다**(`975afe36` 09-10 「🟠 30KB → ✅ 29KB」). 이번 회차 마감에서 다시 잰다.
 11. 🪶 **빌드 산출물** — 15편 `updated`가 2026-09-10이라 `lastmod`가 바뀐다. 레인이 `public/sitemap.xml`을 되돌려 뒀으니 머지 후 헤드가 빌드해 함께 push(회차 7 §5-E 14 · 회차 8 §5-F 7과 같다).
+    ✅ **헤드**: 빌드해 push했다(`bd02b0ae`). **정확히 ja 15편의 `lastmod`가 09-09 → 09-10**으로 바뀌었고 그 15편은 회차 9가 손댄 목록과 일치했다(전건 대조).
+    🪶 위 9의 스탬프 정정 6편은 **그 뒤**라 두 번째 빌드에 실린다.
 
 ## 6. 자산 축적 체크 (회차 마감마다)
 

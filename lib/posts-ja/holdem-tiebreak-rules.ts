@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "引き分けは決まった順番で処理します。まず役の強さ、次に役を構成するカードの数字、そしてキッカーを上から1枚ずつ。同じペアなら最初のキッカーが高いほうが勝ち、5枚すべて同じならチョップ(スプリット)。スートで引き分けが決まることは絶対にありません。",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-09",
+  updated: "2026-09-10",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "12分",

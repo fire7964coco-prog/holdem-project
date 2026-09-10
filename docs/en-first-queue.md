@@ -19,7 +19,7 @@
 |---|---|---|
 | **A. h2·row 결손** | 🔴 핵심 7편 | 🔴 **de `holdem-tiebreak-rules`에 「Do Suits Matter in Poker?」 절이 통째로 없다**(ja·zh는 보유 · **§13 인접** = 무늬 서열) · id·pt도 −1 · zh-hant `hand-rankings` h2 −3 + row −11 · es `glossary` row −3 |
 | **B. faq 결손** | 60편 | de `drawing-odds` 11문 중 **3문 부재**(flush draw 정의 · four vs three · straight draw) · de·pt가 여러 편에서 8~10문 ↔ EN 11문 · **id·pt `hand-rankings` 12 ↔ EN 20**(구 대기열 46 = 이 집합의 일부) |
-| **C. link·li 결손** | link 44편 · li 7편 | `3bet-pot-cbet`(de·id·ja) · `low-board-check-raise`(de·es·id) · es `wsop-2026` → `hand-rankings` · **wsop-2026 li −13이 ja·zh·zh-hant 공통** |
+| **C. link·li 결손** | 🟢 **핵심 0편 — 종결(2026-09-10 재판정)** | 🔴 **「link 44편 · li 7편」은 게이트 아티팩트였다.** `check:structure`의 링크 정규식이 이 레포 관행인 **썸네일 링크**(`](/ja/blog/slug "thumb:/images/….webp")`)를 통째로 못 봤다 — 닫는 괄호를 바로 요구해서다. `a362692e`(09-10 14:29)가 정규식을 고쳤고, **그 뒤 재측정 = link 핵심 0 · li 핵심 0**(꼬리 he·hi·ms·tr·vi 각 1건은 소수 언어 몫). 🪶 규모 실측(게이트가 보던 것/thumb라 안 보이던 것): en 324/155 · ja 342/156 · zh 339/157 · es 372/227. **다시 열지 마라 — 대표 자리로 적혀 있던 `3bet-pot-cbet`·`low-board-check-raise`·es `wsop-2026`는 전부 링크를 «가지고 있었다».** 근거 = ja 회차 9 §5-G 1 |
 
 착수법: `npm run check:structure -- --only=h2|row|faq|link|li` · `--locale=<loc>` · `--slug=<slug>`
 🔴 의도적 편차는 `docs/locale-intentional-diffs.md`에 **등재해 닫아라** — 안 닫으면 게이트가 매 회차 또 집는다.
@@ -121,6 +121,24 @@
 - **A#4A** `holdem-blind-meaning` 「roughly 27% equity breaks even on the call」 — **문장이 명시적으로 팟오즈를 말한다.** 1.5 ÷ 5.5 = **27.27%**로 정확하고, «에퀴티 실현률·레이크»는 다른 층의 보강이지 오류가 아니다. GPT가 «팟오즈 손익분기»를 «실제 콜 수익성»으로 읽었다.
 - **A#4B** `texas-holdem-rules-for-beginners` 「if it is lower, fold」 — 즉시 팟오즈 primer의 결론이고 임플라이드는 전용 글(`holdem-implied-odds`)이 따로 있다. 초보 허브에서 임플라이드를 끌어오면 primer가 무너진다. 🪶 다만 «임플라이드 링크 한 줄»은 값이 있을 수 있다(별건).
 - **A#8** `holdem-betting-actions` 「if a hand isn't strong enough to raise, folding usually beats calling」 — **«usually»가 이미 경향 표현**이고 GPT 자신이 확신도 «아마»로 냈다. 블러프캐치 반례는 이 문장을 거짓으로 만들지 않는다.
+
+---
+
+### 2-B. 🆕 ja 경화 회차 9(2026-09-10)가 올린 EN-먼저 5건
+
+> 출처 = `docs/harden-ja-진행.md` §5-G 4~8. **레인이 ja 단독으로 고치지 않고 올렸다**(프로토콜 §0 「EN에도 같은 결함이 있으면 로케일에서 고치지 않는다」).
+> 🔴 **EN을 고치면 로케일 전파가 따라온다** — 아래 «동문 로케일»이 그 범위다.
+
+| # | EN 자리 | 무엇이 틀렸나 | 근거 | 급 |
+|---|---|---|---|---|
+| **J#1** | `holdem-flush-vs-straight` H3 「Spot 2 — Drawing to both a straight and a flush」 | **제목이 본문과 어긋난다** — 본문 장면은 «스트레이트 **완성** + 플러시만 드로»다. 🔴 ja는 블록 ②만 정확하게 고쳐 두었으므로 **지금 ja는 블록이 옳고 제목이 부정확**하다(진행 파일 §3-J 8 「되돌리지 마라」) | 본문 대조 · EN 상속 오류 | 🔴 |
+| **J#2** | `holdem-all-in-rules` ミス4 경험담 | **국면(캐시/토너먼트) 미명시** — 같은 글의 「토너먼트에서는 전원 핸드 원칙 오픈」과 충돌한다 | EN L219 동문 · 딜러 렌즈 | 🟠 |
+| **J#3** | `holdem-continuation-bet` 「97%超」 | **사이즈가 빠졌다** — 근거 둘 다 **66% 팟 단일 사이즈**이고 33% 팟은 0.3~0.7%다. 임의 사이즈로 97% 벳하면 큰 누수(**D유형**) | EN L105 동문 | 🟠 |
+| **J#4** | `holdem-strategy` 「コールに対して降りる人はいません」 | **멀티웨이에서 거짓** — 콜드콜이 뒤 사람을 죽인다(그게 스퀴즈의 전제다). 🪶 2026-09-09 `8cfd0b07`이 만든 문장 | EN 198 동문 | 🟠 |
+| **J#5** | `holdem-bad-beat` 「A-K対Q-Qのような50/50」 | 실제는 **43.2/56.8**이다. 🪶 은어로는 통용되고 결론은 안 바뀐다 | EN 74·177 동문 | 🪶 |
+
+🔴 **J#2~J#5는 「EN 동문」이 확인된 자리다** — ja만 고치면 다음 회차가 드리프트로 다시 집는다.
+🪶 J#1은 **`docs/locale-intentional-diffs.md` 등재 대상이 아니다** — 의도가 아니라 EN 오류이므로 EN을 고쳐 닫는다.
 
 ---
 

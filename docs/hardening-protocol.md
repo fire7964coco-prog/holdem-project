@@ -88,9 +88,17 @@
 
 ```bash
 # 그 편의 masterUpdated 이후 EN이 무엇을 고쳤나 — 실물
-git log --format="%h %ad %s" --date=short --since=<masterUpdated> -- lib/posts-en/<slug>.ts
+# 🔴 시각을 반드시 박아라 ("00:00") — 아래 함정 참조
+git log --format="%h %ad %s" --date=short --since="<masterUpdated> 00:00" -- lib/posts-en/<slug>.ts
 git diff <그 날짜 직전 커밋> HEAD -- lib/posts-en/<slug>.ts
 ```
+
+🔴🔴 **`--since=<날짜>`는 같은 날 커밋을 «조용히» 빠뜨린다 — 시각을 박아라**(2026-09-10 ja 회차 9 실증).
+git의 approxidate는 **비어 있는 시·분을 «명령을 친 지금 시각»으로 채운다.** 회차 9 A 구간이 **22:59**에 재는 바람에
+`--since=2026-09-09`가 **같은 날 21:15의 EN 커밋을 통째로 놓쳤고**, 그대로 믿었으면 「드리프트 0」으로 닫혔을 것이다.
+`"<날짜> 00:00"`으로 다시 재자 `holdem-all-in-rules` 미반영 1건이 드러났다.
+🔴 **`check:drift`는 이 유형을 원리상 못 잡는다** — `masterUpdated` = EN `updated` = 같은 날이라 **날짜 게이트는 ✅**다.
+🪶 이것이 ③의 «날짜 필드가 아니라 diff 실물로 잰다»가 무너지는 자리다 — **재는 도구 자체가 날짜를 흐린다.**
    diff의 **의미 단위마다** 셋 중 하나로 분류해 브리프에 적는다:
    **미반영**(가져온다) · **이미 반영**(08-27 세션 2/9가 15편을 먼저 소급했다 — 문자열로 실측) · **의도적 편차**(`locale-intentional-diffs.md`에 있는 것만. 없으면 «아직 판정 안 함»이다).
 ④ **키워드 실측**(§5 전제 — *«mcp있는데 안쓰고 추측해서 작성하면 그건 경화작업이 아니지»*): 도구·명령은 §7 부록. 산출 = `docs/keyword-bank/<locale>-<클러스터>.md`(뱅크가 이미 있으면 그 파일에 절 추가). 편마다 **winnable 후보 · 자릿수 함정 · 태그 카니발 후보**를 적는다.
