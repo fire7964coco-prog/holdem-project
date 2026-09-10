@@ -147,6 +147,18 @@ A mesma lógica vale em potes de quadra-na-mesa: todos compartilham quatro carta
 
 ---
 
+## Os naipes decidem quem ganha no poker?
+
+**Não — não para decidir quem ganha. No Texas Hold'em os naipes têm exatamente uma função: cinco cartas do mesmo naipe formam um flush. Fora isso não têm hierarquia, então duas mãos que coincidem valor a valor sempre dividem o pote, e nenhuma carta supera outra por causa do naipe.**
+
+A pergunta volta sempre porque a ordem de naipes existe mesmo no poker — só que não neste jogo. O stud e o razz a usam para decidir quem paga o bring-in e quem fica com a ficha indivisível. O Hold'em não a usa para nenhuma das duas coisas.
+
+A prova mais limpa é justamente a ficha que *não* dá para dividir. O regulamento de torneios da WSOP 2026 diz ==g:*"In button games with 2 or more high or low hands, the odd chip goes to the first seat left of the button"*== (regra 73): a ficha que sobra vai para o primeiro assento à esquerda do botão. Mesmo quando um pote fisicamente não se divide por igual, a regra recorre ao **assento**, não ao naipe — e o método por naipes da segunda metade dessa mesma regra foi escrito só para stud e razz.
+
+Mais uma coisa que vale saber: no Hold'em dois flushes são sempre do *mesmo* naipe, porque as cinco cartas comunitárias são compartilhadas e um board não pode ter três copas e três espadas ao mesmo tempo. Então "minhas espadas ganham das suas copas" não é uma regra que te derrotou — é uma mão que não pode ser distribuída.
+
+---
+
 ## Quando seu kicker não joga — e o pote é dividido
 
 ![Infográfico: o board A-K-Q-J-10 é a melhor mão de cinco para todos, então uma mão 9-7 não consegue batê-lo e o pote é dividido](/images/holdem-tiebreak-best5.webp "Melhores cinco de sete: quando o board já é a melhor mão, suas cartas da mão saem dela")
@@ -182,6 +194,10 @@ A. O jogador cujas melhores cinco têm o kicker mais alto. Um par carrega três 
 
 A. Compare primeiro o par mais alto, depois o par mais baixo, depois o único kicker. Ases-e-três ganha de reis-e-damas, porque o par de topo é conferido antes de qualquer outra coisa.
 
+**Q. Quem ganha se dois jogadores têm a mesma trinca?**
+
+A. A trinca carrega dois kickers, comparados do mais alto para o mais baixo — então, com a mesma trinca, ganha quem tiver a carta lateral mais alta. Com trinca de noves, 9-9-9-A-K ganha de 9-9-9-A-Q porque o segundo kicker (o rei) supera a dama. Trinca igual e os dois kickers iguais é pote dividido. (Um set feito de par na mão quase nunca empata, já que só um jogador pode ter aquele par exato.)
+
 **Q. A 5ª carta importa no poker?**
 
 A. Sim. Quando as primeiras quatro cartas das duas mãos são idênticas, a quinta carta decide o pote inteiro — o terceiro kicker de um par, o kicker único de dois pares, a carta mais baixa de um flush, a carta lateral de uma quadra na mesa. Ela só deixa de importar quando as cartas da mesa superam a carta lateral que você tem — às vezes porque a mesa inteira joga e suas cartas fechadas saem de cena, às vezes porque só uma carta fechada joga e a outra nunca conta: A♠ 3♠ contra A♦ 2♦ em A♥ K♣ Q♦ J♠ 9♥ é chop, os dois jogando A-A-K-Q-J.
@@ -194,6 +210,22 @@ A. Sim, mas só na sequência A-2-3-4-5 (a "wheel"), onde ele joga como carta ma
 
 A. Sim — as sequências são ranqueadas puramente pela carta mais alta, então 6-5-4-3-2 ganha da wheel A-5, e a Broadway (A-K-Q-J-10) ganha de todas. Cartas de topo iguais significam sequências idênticas e pote dividido.
 
+**Q. Quem ganha se dois jogadores têm a mesma sequência?**
+
+A. Ganha a sequência de carta de topo mais alta — Q-J-10-9-8 ganha de J-10-9-8-7, porque a sequência é ranqueada só pela carta mais alta e não tem kicker. Se as duas têm a mesma carta de topo, são idênticas e o pote é dividido. Isso acontece com mais frequência quando a sequência está quase toda no board e os dois jogadores completam a mesma ponta.
+
+**Q. Quem ganha se os dois jogadores têm flush?**
+
+A. Compare os flushes carta a carta, de cima para baixo: um flush de ás ganha de um flush de rei e, se as cartas de topo forem iguais, você passa para a seguinte, e assim pelas cinco. Os naipes nunca desempatam, então, se os cinco valores forem idênticos, o pote é dividido. (No Hold'em dois flushes são sempre do mesmo naipe, já que os jogadores compartilham o board.)
+
+**Q. Quem ganha se dois jogadores têm o mesmo full house?**
+
+A. Compare primeiro a trinca — a trinca mais alta ganha, então K-K-K-2-2 ganha de Q-Q-Q-A-A, mesmo com os ases parecendo maiores. Só se as trincas forem idênticas é que se compara o par. O full house não tem kicker, então trinca e par iguais significam pote dividido.
+
+**Q. O que acontece se os dois jogadores têm straight flush?**
+
+A. Ganha o straight flush mais alto, decidido pela carta de topo — um straight flush de dama ganha de um de nove. O royal flush é simplesmente o straight flush de ás, então ganha de todos os outros. Cartas de topo idênticas significam mão idêntica e pote dividido.
+
 **Q. Os naipes desempatam alguma vez no Texas Hold'em?**
 
 A. Não. Não há valor de naipe no Hold'em — se duas melhores mãos de cinco cartas coincidem valor a valor, o pote é dividido, não importam os naipes.
@@ -201,6 +233,10 @@ A. Não. Não há valor de naipe no Hold'em — se duas melhores mãos de cinco 
 **Q. O que acontece se os dois jogadores têm exatamente a mesma mão?**
 
 A. O pote é dividido igualmente — um "chop". Como as fichas são repartidas fisicamente, quem fica com a ficha ímpar e como os potes paralelos são resolvidos está coberto nas [regras de pote dividido](/pt/blog/holdem-split-pot-rules).
+
+**Q. Empate (pote dividido) é possível no poker?**
+
+A. É, mas não é comum. O empate de verdade só acontece quando as melhores cinco cartas de dois ou mais jogadores coincidem exatamente em valor — na maioria das vezes quando o próprio board é a melhor mão, ou quando há uma sequência ou um flush compartilhado que as cartas na mão de ninguém conseguem melhorar. Aí o pote é dividido por igual. Os kickers existem justamente para desfazer a maioria dos empates antes que eles virem divisão.
 
 ---
 
