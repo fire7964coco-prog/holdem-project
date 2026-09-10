@@ -51,7 +51,7 @@ export const POST: Post = {
 > **快速解答**
 > 聽牌時，翻牌圈把補牌乘以 4、轉牌圈乘以 2；翻牌前，把那幾組一再出現的對抗背下來。你在牌桌上幾乎永遠不會精算勝率——你用估的，而這兩個捷徑就涵蓋了九成的局面。
 
-**聽牌（四二法則、二四法則）：** 數好你的**補牌數(Outs)**，然後相乘。同花聽牌是 9 張補牌 → 翻牌圈 ==9 × 4 = 36%==（真實值 35%）。這裡給你快速對照：
+**聽牌（四二法則、二四法則）：** 數好你的**[補牌數(Outs)](/zh-hant/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp")**，然後相乘。同花聽牌是 9 張補牌 → 翻牌圈 ==9 × 4 = 36%==（真實值 35%）。每一種聽牌的精確數字見[聽牌賠率](/zh-hant/blog/holdem-drawing-odds)；這裡給你快速對照：
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

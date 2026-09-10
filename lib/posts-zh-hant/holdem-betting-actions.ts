@@ -88,7 +88,7 @@ export const POST: Post = {
 
 如果在你過牌之後有人下注，你就面臨一個全新的決定：蓋牌、跟注或加注。先過牌，等對手下注了再加注，這一招叫 ==過牌加注（Check-raise）==——在德州撲克裡完全合法，是一件標準的武器，不是什麼陰招。
 
-想看每條街逐一「誰先動」的完整圖像，見[德州撲克位置怎麼打](/zh-hant/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp")。
+想看每條街逐一「誰先動」的完整圖像，見[德州撲克行動順序詳解](/zh-hant/blog/holdem-game-order "thumb:/images/blog-holdem-game-flow.webp")；至於座位順序怎麼改變你該做哪個動作，則在[德州撲克位置怎麼打](/zh-hant/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp")裡。
 
 ---
 
@@ -120,7 +120,7 @@ export const POST: Post = {
 
 是的——任何輪到你的時候都能蓋牌，甚至在還沒下任何注之前，而且這個蓋牌是生效的。但它並非全無代價：在錦標賽裡，面前根本沒有下注卻蓋牌，依 ==WSOP 第 84 條== 算是「非標準蓋牌」，可能會被警告。另外還要注意這個陷阱：==免費就能過牌，你卻蓋牌，等於平白扔掉一手牌==。沒人下注，就直接過牌。
 
-現場禮儀有一條規矩：不要 ==r:搶著在還沒輪到你時蓋牌==。等行動走到你面前——提早蓋牌會洩漏資訊給還在思考的玩家，多數撲克室會警告甚至處罰這種行為。至於「什麼時候該蓋牌」本身就是一門功夫，那屬於策略——見[德州撲克策略](/zh-hant/blog/holdem-strategy)。
+現場禮儀有一條規矩：不要 ==r:搶著在還沒輪到你時蓋牌==。等行動走到你面前——提早蓋牌會洩漏資訊給還在思考的玩家，多數撲克室會警告甚至處罰這種行為。至於「[什麼時候該蓋牌](/zh-hant/blog/holdem-when-to-fold)」本身就是一門功夫，那屬於進階策略的範圍。
 
 ---
 
@@ -193,7 +193,7 @@ export const POST: Post = {
 
 - 每個決定的骨架：[德州撲克策略](/zh-hant/blog/holdem-strategy)
 - 先判斷你手牌的原始強度：[德州撲克牌型大小排名](/zh-hant/blog/holdem-hand-rankings)
-- 為什麼你的座位改變一切：[德州撲克位置怎麼打](/zh-hant/blog/holdem-position-play)
+- 為什麼你的座位改變一切：[德州撲克位置詳解](/zh-hant/blog/holdem-positions)
 
 在那之前，有一條能替新手省下真金白銀的口訣：==g:如果一手牌強不到值得加注，蓋牌通常比跟注更好。==
 
@@ -273,7 +273,7 @@ A. 沒有事先喊「加注」，卻分好幾個動作下注或加注，中途�
 
 **Q. 跛入（Limp）是什麼意思？**
 
-A. 跛入就是翻牌前不加注、只跟大盲入池。它合法，但通常是偏弱的打法——什麼時候跛入才勉強說得過去，屬於策略，見[德州撲克策略](/zh-hant/blog/holdem-strategy)。
+A. 跛入就是翻牌前不加注、只跟大盲入池。它合法，但通常是偏弱的打法——[少數場合跛入沒問題](/zh-hant/blog/holdem-limping)，但那是例外而不是常態。
 
 ---
 

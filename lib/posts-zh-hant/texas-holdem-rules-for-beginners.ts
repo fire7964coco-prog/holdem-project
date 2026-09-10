@@ -73,7 +73,7 @@ export const POST: Post = {
 
 </div>
 
-==r:你**並不是一定**要用到兩張底牌。== 你可以用兩張、一張，如果公牌本身就是最強牌型，甚至可以一張都不用——這項本事叫做「讀牌面」（reading the board）。
+==r:你**並不是一定**要用到兩張底牌。== 你可以用兩張、一張，如果公牌本身就是最強牌型，甚至可以一張都不用——這項本事叫做[讀牌面](/zh-hant/blog/holdem-reading-the-board)（reading the board）。
 
 舉幾個例子：
 
@@ -83,7 +83,7 @@ export const POST: Post = {
 | 8♠ 8♦ | K♣ 8♥ 4♠ 4♦ J♣ | 葫蘆：三條 8 帶一對 4 |
 | 2♣ 3♦ | A♠ K♠ Q♠ J♠ 10♠ | 公牌本身就是皇家同花順 |
 
-如果你對牌型大小還不熟，上桌前先打開這篇[德州撲克牌型大小排名](/zh-hant/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp")。搞懂「同花和順子誰大」，比硬背高階策略重要得多。
+如果你對牌型大小還不熟，上桌前先打開這篇[德州撲克牌型大小排名](/zh-hant/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp")。搞懂[同花和順子誰大](/zh-hant/blog/holdem-flush-vs-straight)，比硬背高階策略重要得多。
 
 ---
 
@@ -212,7 +212,7 @@ export const POST: Post = {
 
 ==r:不要一上來就玩讓人緊張的注額。== 緊張的新手學不快，只會蓋牌太多、情緒化跟注，或者為了規則吵起來。
 
-注意，**錦標賽**的買入和現金局完全不同：你付一筆固定報名費，拿到一疊不能兌現的固定籌碼，一路打到有人贏走全部籌碼為止。
+注意，[**錦標賽**和現金局](/zh-hant/blog/holdem-tournament-vs-cash-game)的買入完全不同：你付一筆固定報名費，拿到一疊不能兌現的固定籌碼，一路打到有人贏走全部籌碼為止。
 
 線上練習就用免費桌，練到不用思考就能講清行動順序，再慢慢往上打。
 
@@ -279,7 +279,7 @@ export const POST: Post = {
 | 莊家左邊 | SB（小盲位） | 翻牌前第 8 個，翻牌後第 1 個 | 最差的座位——翻牌後每條街都最先行動 |
 | 莊家左邊第二位 | BB（大盲位） | 翻牌前最後（第 9 個），翻牌後第 2 個 | 翻牌前有加注選擇權；翻牌後處於不利位置 |
 
-==g:所以座位的價值不是平均分布的。== 從槍口位到按鈕位，同一手牌能打的方式一路變多——這也是為什麼同樣的起手牌在不同座位要用不同的標準去打。
+==g:所以座位的價值不是平均分布的。== [從槍口位到按鈕位](/zh-hant/blog/holdem-positions)，同一手牌能打的方式一路變多——這也是為什麼同樣的起手牌在不同座位要用不同的標準去打。
 
 ---
 
@@ -315,7 +315,7 @@ export const POST: Post = {
 | 🟦 **可玩牌——看位置** | 88, 77, ATs, AJo, KJs, QJs, JTs | 優先在後位玩（CO、BTN） |
 | ⬜ **預設蓋牌** | 新手階段的其餘所有牌 | 尤其在前位 |
 
-**好記的口訣：**先只玩 TT 以上的對子，加上 AK 和 AQ。這大約是最強的前 5% 起手牌。隨著經驗增加再慢慢放寬。
+**好記的口訣：**先只玩 TT 以上的對子，加上 AK 和 AQ。這大約是最強的前 5% 起手牌。隨著經驗增加，再照[按位置整理的完整起手牌表](/zh-hant/blog/holdem-starting-hands-chart)慢慢放寬。
 
 </div>
 
@@ -392,7 +392,7 @@ export const POST: Post = {
 | 9 | 一對 | 43.8%——攤牌時出現最多的牌型 |
 | 10 | 高牌 | 17.4%——攤牌時最弱的牌型；通常只有大家都沒中時才贏 |
 
-如果兩名玩家牌型相同，就比各自牌型裡最關鍵的高牌——這就是[踢腳牌](/zh-hant/blog/holdem-kicker)與平手判定。如果雙方最強的五張牌完全一樣，就[平分底池](/zh-hant/blog/holdem-split-pot-rules)（Chop）。完整的比法，看這篇[德州撲克牌型大小排名](/zh-hant/blog/holdem-hand-rankings)。
+如果兩名玩家牌型相同，就比各自牌型裡最關鍵的高牌——這就是[踢腳牌](/zh-hant/blog/holdem-kicker)與[平手判定規則](/zh-hant/blog/holdem-tiebreak-rules)。如果雙方最強的五張牌完全一樣，就[平分底池](/zh-hant/blog/holdem-split-pot-rules)（Chop）。完整的比法，看這篇[德州撲克牌型大小排名](/zh-hant/blog/holdem-hand-rankings)。
 
 ---
 

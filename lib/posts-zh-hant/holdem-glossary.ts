@@ -76,7 +76,7 @@ export const POST: Post = {
 | **跟注（Call）** | 跟上目前的下注，留在這手牌裡。 |
 | **加注（Raise）** | 把目前的下注加大，逼別人跟更多或蓋牌。 |
 | **蓋牌（Fold）** | 放棄你的牌，也放棄對底池的一切主張。 |
-| **全下（All-in）** | 押上你全部的籌碼；你只能贏你有蓋到的那部分底池（見邊池 Side Pot）。 |
+| **全下（All-in）** | 押上你全部的籌碼；你只能贏你有蓋到的那部分底池（見[邊池](/zh-hant/blog/holdem-all-in-rules) Side Pot）。 |
 | **跛入（Limp）** | 翻牌前只跟大盲、不加注就入池——通常是弱、被動的打法。 |
 | **開池加注（Open）** | 第一個用加注入池的玩家。 |
 | **3-bet** | 開池之後的再加注（把盲注算成第一次下注，這是第三次）。 |
@@ -140,7 +140,7 @@ export const POST: Post = {
 | **公牌（Community cards）** | 五張大家共用、翻開的牌。 |
 | **翻牌／轉牌／河牌（Flop / Turn / River）** | 前三張共用牌／第四張／第五也是最後一張。 |
 | **堅果（The Nuts）** | 目前牌面下最強的可能牌型（後面的牌會改變它）。 |
-| **踢腳牌（Kicker）** | 用來分辨相同牌型大小的旁牌（見[踢腳與平手規則](/zh-hant/blog/holdem-hand-rankings)）。 |
+| **踢腳牌（Kicker）** | 用來分辨相同牌型大小的旁牌（見[踢腳與平手規則](/zh-hant/blog/holdem-tiebreak-rules)）。 |
 | **口袋對（Pocket pair）** | 兩張同點數的底牌。 |
 | **超對（Overpair）** | 比牌面上每一張都大的口袋對。 |
 | **頂對（Top pair）** | 用底牌配上牌面最大那張成對。 |
@@ -151,7 +151,7 @@ export const POST: Post = {
 | **四條／鐵支（Quads）** | 四張同點數的俗稱。 |
 | **成牌（Made hand）** | 現在就已經成型的牌，相對於聽牌。 |
 | **聽牌（Draw）** | 還需要改善的牌——例如 **同花聽牌**（差一張成同花）或順子聽牌。 |
-| **卡順（Gutshot）** | 內順聽牌，只差中間一張（4 張補牌）。 |
+| **卡順（Gutshot）** | 內順聽牌，只差中間一張（4 張[補牌](/zh-hant/blog/holdem-outs)）。 |
 | **兩頭順（Open-ender）** | 兩端都能成的順子聽牌（8 張補牌）。 |
 | **後門（Backdoor）** | 需要 **兩張**接連的牌（轉牌 *和* 河牌）才能成。 |
 | **送尾（Runner-runner）** | 靠轉牌 *和* 河牌 **兩張**都中而成的牌——後門聽牌真的成了（例如「送尾同花」）。 |
@@ -202,13 +202,13 @@ export const POST: Post = {
 > **快速解答**
 > 同一個詞在現金桌和錦標賽常常不是同一件事：現金桌的籌碼就是錢、隨時能走，錦標賽的籌碼只是計分、買入才是錢；盲注在現金桌固定，在錦標賽會一路升級。底注、手手制、ICM 這些詞，幾乎都只在錦標賽出現。
 
-籌碼、級別，和兩種賽制。最大的分岔是**現金桌 vs 錦標賽**：現金桌用真實面額籌碼、隨時進出；錦標賽固定買入、盲注上升，打到你出局或贏。
+籌碼、級別，和兩種賽制。最大的分岔是[**現金桌 vs 錦標賽**](/zh-hant/blog/holdem-tournament-vs-cash-game "thumb:/images/tournament-table-action.webp")：現金桌用真實面額籌碼、隨時進出；錦標賽固定買入、盲注上升，打到你出局或贏。
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | 術語 | 意思 |
 |:---|:---|
-| **盲注（Blinds）** | 開場的 SB/BB 強制注——也是級別的名稱（$1/$2）。 |
+| **盲注（Blinds）** | 開場的 SB/BB 強制注——也是級別的名稱（$1/$2）；[盲注詳解](/zh-hant/blog/holdem-blind-meaning)。 |
 | **底注（Ante）** | 傳統上是每個人都交、用來墊底池的小額強制注，和盲注分開——現今多數錦標賽改用大盲底注，由一個座位替全桌交。 |
 | **底池（Pot）** | 大家在爭的全部籌碼。 |
 | **邊池（Side pot）** | 有人全下、其他人繼續下注時另外分出來的池。 |
@@ -246,9 +246,9 @@ export const POST: Post = {
 
 | 術語 | 意思 |
 |:---|:---|
-| **攤牌（Showdown）** | 最後一注結束後亮牌決定贏家。 |
+| **攤牌（Showdown）** | 最後一注結束後亮牌決定贏家（[攤牌規則](/zh-hant/blog/holdem-showdown-rules)）。 |
 | **蓋牌／丟牌（Muck）** | 把牌面朝下丟掉。 |
-| **分池／平分底池（Chop / Split pot）** | 平手時把底池分掉。 |
+| **分池／平分底池（Chop / Split pot）** | 平手時把底池分掉（[分池規則](/zh-hant/blog/holdem-split-pot-rules)）。 |
 | **搓牌（Slow roll）** | 故意拖著不亮贏牌來挑釁——嚴重失禮。 |
 | **上頭／傾斜（Tilt）** | 情緒失控導致的爛打，通常在輸牌之後。 |
 | **破綻（Tell）** | 洩漏手牌資訊的身體或行為線索。 |
@@ -282,7 +282,7 @@ export const POST: Post = {
 
 **Q. 新手最該先懂哪些德州撲克術語？**
 
-A. 最基本的是下注動作（過牌、下注、跟注、加注、蓋牌、全下）、四階段（翻牌前、翻牌、轉牌、河牌）、[位置](/zh-hant/blog/holdem-positions)（按鈕、小盲、大盲、槍口位），再記住「1bb」＝一個大盲，是全桌用來衡量籌碼量和下注大小的標準單位，還有幾個牌型詞（堅果、踢腳牌、暗三條、頂對）。把上面那組「最容易搞混」的先搞懂——尤其是過牌 vs 跟注、暗三條 vs 明三條——你就幾乎聽得懂整桌的對話了。
+A. 最基本的是下注動作（過牌、下注、跟注、加注、蓋牌、全下）、[四階段（翻牌前、翻牌、轉牌、河牌）](/zh-hant/blog/holdem-game-order)、[位置](/zh-hant/blog/holdem-positions)（按鈕、小盲、大盲、槍口位），再記住「1bb」＝一個大盲，是全桌用來衡量籌碼量和下注大小的標準單位，還有幾個牌型詞（堅果、踢腳牌、暗三條、頂對）。把上面那組「最容易搞混」的先搞懂——尤其是過牌 vs 跟注、暗三條 vs 明三條——你就幾乎聽得懂整桌的對話了。
 
 **Q. 德州撲克裡的「水上／水下」是什麼意思？**
 
@@ -318,7 +318,7 @@ A. VPIP（自願入池率）是玩家翻牌前選擇玩牌的比例——衡量�
 
 這份術語表是地圖；真正的學習在它連到的那些指南裡。幾個好的起點：
 
-- **最基礎：** [德州撲克規則怎麼玩](/zh-hant/blog/texas-holdem-rules-for-beginners)。
+- **最基礎：** [德州撲克規則怎麼玩](/zh-hant/blog/texas-holdem-rules-for-beginners) 和 [下注動作順序](/zh-hant/blog/holdem-betting-actions)。
 - **牌型：** [什麼牌贏什麼牌](/zh-hant/blog/holdem-hand-rankings)。
 - **數學：** [底池賠率](/zh-hant/blog/holdem-pot-odds) 和 [機率與勝率](/zh-hant/blog/holdem-probability)。
 - **策略：** [起手牌表](/zh-hant/blog/holdem-starting-hands-chart) 和 [位置策略](/zh-hant/blog/holdem-position-play)。
