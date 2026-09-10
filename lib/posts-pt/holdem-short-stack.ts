@@ -170,6 +170,14 @@ A. Grosso modo, abaixo de uns 20–25 big blinds é "curto", e o jogo de push/fo
 
 A. Push/fold é a estratégia de short stack em que, quando você é o primeiro a entrar no pote, suas únicas opções são ir de all-in ou foldar — sem limp, sem aumentos pequenos. Dar shove mantém sua fold equity (os adversários foldam e você ganha os blinds) e evita ser superado depois do flop com um stack pequeno demais para manobrar.
 
+**Q. O que significa "all-in ou fold" no poker?**
+
+A. "All-in ou fold" é a mesma ideia do push/fold: quando você está curto e é o primeiro a entrar no pote, suas duas únicas opções são ir de all-in ou foldar — sem limp e sem aumentos pequenos. É também o nome de um formato online rápido (o All-in or Fold da GGPoker), em que toda decisão pré-flop é literalmente shove ou fold. De qualquer forma a lógica de short stack continua valendo: preserve sua fold equity dando shove e nunca sangre fichas num aumento que você não consegue defender.
+
+**Q. Como você responde a um shove de all-in?**
+
+A. Folde muito mais do que você daria shove — seu range de call é bem mais apertado que seu range de shove. Depois que você paga um all-in, sua fold equity acabou, então sua mão precisa realmente ganhar do *range* do shover, não só parecer jogável. Coloque um número nisso: no big blind contra um jam de 10bb você arrisca 9bb para ganhar um pote de 20,5bb, então precisa de ==43,9%== de equity — uma barra que pares pequenos e ases fracos costumam superar (22 roda ==52,65%== até contra AKo). Pague quando sua equity bater essa barra, não só quando você tiver certeza de estar à frente.
+
 **Q. Você deveria alguma vez dar limp com um short stack?**
 
 A. Quase nunca quando você é o primeiro a entrar. O open-limp entrega a fold equity e constrói um pote que você não consegue navegar pós-flop. Curto, a jogada padrão é aumentar-ou-foldar, e com 15 big blinds ou menos esse aumento normalmente é um all-in. (Completar do small blind atrás de outros limpers com um stack minúsculo é uma exceção rara.)

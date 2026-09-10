@@ -159,9 +159,17 @@ No Texas Hold'em, não. Você talvez tenha ouvido falar de "jogos de pote dividi
 
 A. O pote é dividido quando dois ou mais jogadores têm a mesma melhor mão de cinco cartas no showdown; as fichas são repartidas por igual entre eles.
 
+**Q. Como o pote é dividido na prática?**
+
+A. O dealer reparte as fichas por igual entre os empatados. Se o pote não dividir certinho, a sobra é primeiro quebrada na menor denominação em jogo, e a última ficha ímpar vai para o primeiro empatado à esquerda do botão do dealer. O naipe nunca afeta a divisão e, quando alguém está all-in, o pote principal e cada pote paralelo são divididos separadamente.
+
 **Q. O pote é dividido se os dois jogadores têm a mesma mão?**
 
 A. Só se as melhores cinco completas empatarem — mesmo par com os mesmos kickers, ou a mesma sequência, flush ou full house. Se qualquer kicker diferir, o kicker mais alto leva o pote inteiro em vez de dividir.
+
+**Q. O pote divide num full house, numa sequência ou em dois pares?**
+
+A. Só quando as duas mãos são completamente idênticas. Dois full houses dividem apenas quando a trinca *e* o par coincidem — normalmente numa mesa com dois pares em que os dois jogadores montam a mesma combinação, exatamente como na situação 1 acima. Duas sequências dividem só com a mesma carta mais alta, e dois "dois pares" dividem só quando os dois pares e o kicker coincidem. Em qualquer outro caso a mão mais alta leva o pote inteiro.
 
 **Q. O que significa "pote chopado" no poker?**
 
@@ -182,6 +190,18 @@ A. Sim. Se três ou mais jogadores têm a mesma melhor mão de cinco cartas, o p
 **Q. Como os potes divididos são tratados quando alguém está all-in?**
 
 A. O pote se quebra em um pote principal e potes paralelos; cada um é entregue ou chopado separadamente, com base na melhor mão entre os jogadores elegíveis para aquele pote específico.
+
+**Q. Como se calcula um pote paralelo?**
+
+A. Cada jogador só pode ganhar de um adversário o mesmo tanto que ele próprio colocou. Se o A está all-in por 100 e o B e o C apostam 300 cada, o pote principal é 100 × 3 = 300 (os três elegíveis) e o pote paralelo é 200 × 2 = 400 (só B e C). Depois cada pote vai para a melhor mão entre os jogadores elegíveis para ele.
+
+**Q. Quem é elegível para um pote paralelo?**
+
+A. Só os jogadores que colocaram fichas naquele pote paralelo específico — os que continuaram apostando depois de outro jogador ter ido all-in. Um jogador all-in é elegível apenas para o pote principal (mais qualquer pote paralelo anterior para o qual tenha contribuído), nunca para um pote paralelo montado com fichas que ele não conseguiu cobrir. Cada pote vai para a melhor mão entre os seus próprios elegíveis.
+
+**Q. Dá para ganhar o pote principal e um pote paralelo na mesma mão?**
+
+A. Dá. Um jogador de stack mais fundo com a melhor mão pode levar o pote principal e todos os potes paralelos para os quais é elegível — leva tudo. Já um short stack all-in só pode ganhar o pote principal (e qualquer pote paralelo anterior para o qual tenha contribuído); ele nunca recolhe fichas que não cobriu, por mais forte que seja a mão.
 
 **Q. Um chop de torneio é a mesma coisa que um pote dividido?**
 

@@ -242,6 +242,14 @@ A. Porque o nome conta as apostas na sequência, não os aumentos. O big blind �
 
 A. Um 3-bet é o primeiro re-raise (sobre um open-raise); um 4-bet é o próximo re-raise, feito sobre um 3-bet. Então a escada de apostas vai: open-raise (2ª aposta) → 3-bet (3ª aposta) → 4-bet (4ª aposta) → 5-bet (geralmente all-in). Um 4-bet representa um range muito forte e polarizado.
 
+**Q. Com que mãos você deve dar 4-bet, e de quanto?**
+
+A. Dê 4-bet com um range polarizado: premium por valor (QQ+ e AK — contra adversários que raramente dão 3-bet, aperte o núcleo para AA–KK) mais alguns blefes de bloqueio tipo A5s, que bloqueiam os ases e o ás-rei do adversário. Dimensione o 4-bet em torno de 2,2–2,5x o 3-bet in position e um pouco maior out of position — menor do que a maioria dos iniciantes espera, porque o pote já está grande. Em frequência, jogadores sólidos dão 4-bet em poucos por cento das mãos; abra seus 4-bets de valor contra quem dá 3-bet demais.
+
+**Q. Quando você deve dar 5-bet no poker?**
+
+A. Um 5-bet é o re-raise sobre um 4-bet e, com uns 100 big blinds, é quase sempre all-in. Dê 5-bet por valor com o topo absoluto do seu range (AA, KK e muitas vezes AK) e, contra jogadores agressivos que dão 4-bet light, acrescente o blefe ocasional com bloqueador de ás. Contra a maioria dos adversários de stakes baixos um 5-bet grita "ases ou reis", então, se um jogador passivo dá 5-bet, folde tudo menos suas premium absolutas.
+
 **Q. Que mãos você deve dar 3-bet?**
 
 A. Divida seus 3-bets em valor e blefes. O núcleo de valor é QQ+ e AK, estendendo para JJ, TT, AQs e KQs contra opens mais abertos. Para blefes, use mãos suited com blockers e jogabilidade — A5s até A2s e conectores suited como 76s e 65s — não lixo offsuit aleatório.

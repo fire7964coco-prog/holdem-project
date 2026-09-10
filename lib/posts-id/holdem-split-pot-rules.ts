@@ -159,6 +159,10 @@ Tidak di Texas Hold'em. Anda mungkin pernah dengar "split-pot games" seperti Oma
 
 A. Sebuah pot dibagi ketika dua pemain atau lebih punya lima kartu terbaik yang identik saat showdown; chip dibagi rata di antara mereka.
 
+**Q. Bagaimana cara pot dibagi di poker?**
+
+A. Dealer membagi chip rata di antara para pemain yang seri. Jika pot tak bisa dibagi rata, sisanya lebih dulu dipecah ke ==denominasi terkecil yang dipakai di meja==, dan chip ganjil terakhir jatuh ke pemain seri pertama di sebelah kiri tombol dealer. Jenis kartu tak pernah memengaruhi pembagian, dan ketika ada pemain all-in, main pot dan setiap side pot dibagi secara terpisah.
+
 **Q. Apakah pot dibagi jika kedua pemain punya tangan yang sama?**
 
 A. Hanya jika seluruh lima kartu terbaik seri — pasangan sama dengan kicker sama, atau straight, flush, atau full house yang sama. Jika ada kicker yang berbeda, kicker lebih tinggi memenangkan seluruh pot alih-alih membaginya.

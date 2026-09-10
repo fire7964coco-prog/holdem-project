@@ -87,6 +87,8 @@ Dos ideas relacionadas hacen todo el trabajo aquí:
 
 La parte sutil: puedes tener una sin la otra. En A‑8‑3 tienes muchos más top pairs (ventaja de rango) pero casi nadie tiene un set, así que **apuestas a menudo pero pequeño**. En un board donde tienes muchos más sets y sobrepares, **apuestas grande**. Ten claras estas dos palancas y el tamaño de la c-bet deja de ser una adivinanza.
 
+Y la ventaja de rango no es toda la historia — súmale la posición encima y el efecto se vuelve extremo. En A-7-2 arcoíris un solver hace que quien pagó pase el ==98,2%== de su rango, top pair incluido, aunque la equity esté prácticamente igualada. El desglose completo está en [top pair, y aun así pasa](/es/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-en.webp").
+
 ---
 
 ## ¿Con qué frecuencia deberías cbetear? (Frecuencia)
@@ -120,6 +122,8 @@ Ponle números reales. Digamos que el bote es de ==$30== en el flop:
 
 - Una c-bet de **un tercio del bote** es ==$10== — tu apuesta de rango en board seco.
 - Una c-bet de **dos tercios del bote** es ==$20== — tu tamaño de board húmedo para cobrarles a los proyectos.
+
+¿Quieres ver hasta dónde llega de verdad esa marcha de "grande en boards húmedos"? A un solver con dos tamaños disponibles en Q♥T♥7♠ en un bote de 3-bet le sale [el 98,4% del rango en la apuesta de dos tercios](/es/blog/3bet-pot-bet-sizing "thumb:/images/gto-3bp-dynamic-oop-en.webp") — y el motivo es un precio que se calcula, no una sensación.
 
 En **torneos**, inclínate un pelín más pequeño: el tamaño pequeño sigue siendo un tercio, pero el grande es más a menudo **medio bote** que dos tercios, porque tu stack es precioso y no puedes recargar. Elijas lo que elijas, ata el tamaño al board, no a la costumbre.
 

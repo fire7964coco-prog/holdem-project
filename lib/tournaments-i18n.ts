@@ -1119,7 +1119,7 @@ const SCHEMA_DESC_ZH: Record<string, string> = {
   "triton-jeju-2":
     "Triton超高额系列赛本年度第二次落地济州。14场高额赛事，买入$15,000至$200,000。",
   "apt-jeju-fall":
-    "APT的2026年济州秋季站。136场赛事，主赛事保证22亿韩元。",
+    "APT的2026年济州秋季站。135场赛事，主赛事保证22亿韩元。",
   "wpt-seoul":
     "WPT首次在INSPIRE娱乐度假村举办的赛事。46场比赛，主赛事保证10亿韩元。",
   "appt-manila":
@@ -1215,7 +1215,7 @@ const SCHEMA_DESC_HANT: Record<string, string> = {
   "triton-jeju-2":
     "Triton超高額系列賽本年度第二次落地濟州。14場高額賽事，買入$15,000至$200,000。",
   "apt-jeju-fall":
-    "APT的2026年濟州秋季站。136場賽事，主賽事保證22億韓元。",
+    "APT的2026年濟州秋季站。135場賽事，主賽事保證22億韓元。",
   "wpt-seoul":
     "WPT首次在INSPIRE娛樂度假村舉辦的賽事。46場比賽，主賽事保證10億韓元。",
   "appt-manila":
@@ -1362,7 +1362,7 @@ const SCHEMA_DESC_ES: Record<string, string> = {
   "triton-jeju-2":
     "Segunda Triton Super High Roller Series del año en Jeju: 14 torneos high roller con buy-ins de US$15.000 a US$200.000.",
   "apt-jeju-fall":
-    "Parada de otoño de 2026 del Asian Poker Tour en Jeju: 136 eventos con 2.200 millones de KRW garantizados en el Main Event.",
+    "Parada de otoño de 2026 del Asian Poker Tour en Jeju: 135 eventos con 2.200 millones de KRW garantizados en el Main Event.",
   "wpt-seoul":
     "Primer evento del World Poker Tour en el INSPIRE Entertainment Resort: 46 eventos con 1.000 millones de KRW garantizados en el Main Event.",
   "appt-manila":
@@ -1485,7 +1485,7 @@ const SCHEMA_DESC_DE: Record<string, string> = {
   "triton-jeju-2":
     "Zweite Triton Super High Roller Series des Jahres auf Jeju: 14 High-Roller-Turniere mit Buy-ins von $15.000 bis $200.000.",
   "apt-jeju-fall":
-    "Herbst-Stop 2026 des Asian Poker Tour auf Jeju: 136 Events mit 2,2 Mrd. KRW Garantie im Main Event.",
+    "Herbst-Stop 2026 des Asian Poker Tour auf Jeju: 135 Events mit 2,2 Mrd. KRW Garantie im Main Event.",
   "wpt-seoul":
     "Erstes Event des World Poker Tour im INSPIRE Entertainment Resort: 46 Events mit 1 Mrd. KRW Garantie im Main Event.",
   "appt-manila":
@@ -1556,7 +1556,7 @@ const NOTE_EN: Record<string, string> = {
   "holdem-masters-8": "₩2bn GTD, the largest yet · Main Event ₩1.8bn plus five NLH deepstacks",
   "appt-korea": "Main Event Sep 10–14 — ₩1.8M buy-in · ₩1bn GTD",
   "triton-jeju-2": "14 high rollers · no satellites, referral only · $200K Invitational Sep 12–14",
-  "apt-jeju-fall": "136 events · Main Event ₩2.2bn GTD · 12 APTC seats",
+  "apt-jeju-fall": "135 events · Main Event ₩2.2bn GTD · 12 APTC seats",
   "gop-incheon-2": "WPT Seoul runs on Yeongjong Island at the same time, at a different venue",
   "wpt-seoul": "46 events · Main Nov 5–9 (₩1.75M, ₩1bn GTD) · a new 70-table poker room",
   "apt-championship": "210 trophy events · Main #14 TWD 311.9K / USD 5,000,000 GTD (≈TWD 155M, page conversion) (from Nov 23) · Nov 12 is industry-only; general entry opens Nov 13",
@@ -1617,7 +1617,7 @@ const NOTE_JA: Record<string, string> = {
   "holdem-masters-8": "総額20億ウォンGTDでシリーズ史上最大 · メインイベント18億ウォン＋NLHディープスタック5種",
   "appt-korea": "メインイベント9/10〜14 — バイイン180万ウォン · 10億ウォンGTD",
   "triton-jeju-2": "ハイローラー14種 · サテライトなし（推薦制）· $200K Invitationalは9/12〜14",
-  "apt-jeju-fall": "136イベント · メインイベント22億ウォンGTD · APTCシート12席",
+  "apt-jeju-fall": "135イベント · メインイベント22億ウォンGTD · APTCシート12席",
   "gop-incheon-2": "同時期に永宗島でWPT Seoulも開催（会場は別）",
   "wpt-seoul": "46イベント · メイン11/5〜9（175万ウォン、10億ウォンGTD）· 70卓の新設ポーカールーム",
   "apt-championship": "トロフィーイベント210種 · メイン#14 TWD 311.9K／USD 5,000,000 GTD（約TWD 155M・ページ換算）（11/23〜）· 11/12は業界関係者専用で、一般参加は11/13から",
@@ -1693,7 +1693,7 @@ const NOTE_ZH: Record<string, string> = {
   "holdem-masters-8": "总奖金20亿韩元GTD，创系列赛新高 · 主赛事18亿韩元＋5场NLH深筹",
   "appt-korea": "主赛事9月10〜14日——买入180万韩元 · 10亿韩元GTD",
   "triton-jeju-2": "14场豪客赛 · 无卫星赛（推荐制）· $200K Invitational为9月12〜14日",
-  "apt-jeju-fall": "136场赛事 · 主赛事22亿韩元GTD · 12个APTC席位",
+  "apt-jeju-fall": "135场赛事 · 主赛事22亿韩元GTD · 12个APTC席位",
   "gop-incheon-2": "同期在永宗岛还有WPT Seoul（场馆不同）",
   "wpt-seoul": "46场赛事 · 主赛11月5〜9日（175万韩元，10亿韩元GTD）· 新建70桌扑克室",
   "apt-championship": "210场奖杯赛事 · 主赛#14 TWD 311.9K／USD 5,000,000 GTD（约TWD 155M·页面换算）（11月23日起）· 11月12日仅限业内人士，普通玩家自11月13日起",
@@ -1775,7 +1775,7 @@ const NOTE_HANT: Record<string, string> = {
   "holdem-masters-8": "總獎金20億韓元GTD，創系列賽新高 · 主賽事18億韓元＋5場NLH深籌",
   "appt-korea": "主賽事9月10〜14日——買入180萬韓元 · 10億韓元GTD",
   "triton-jeju-2": "14場豪客賽 · 無衛星賽（推薦制）· $200K Invitational為9月12〜14日",
-  "apt-jeju-fall": "136場賽事 · 主賽事22億韓元GTD · 12個APTC席位",
+  "apt-jeju-fall": "135場賽事 · 主賽事22億韓元GTD · 12個APTC席位",
   "gop-incheon-2": "同期在永宗島還有WPT Seoul（場館不同）",
   "wpt-seoul": "46場賽事 · 主賽11月5〜9日（175萬韓元，10億韓元GTD）· 新建70桌撲克室",
   "apt-championship": "210場獎盃賽事 · 主賽#14 TWD 311.9K／USD 5,000,000 GTD（約TWD 155M·頁面換算）（11月23日起）· 11月12日僅限業內人士，一般玩家自11月13日起",
@@ -1851,7 +1851,7 @@ const NOTE_ES: Record<string, string> = {
   "holdem-masters-8": "2.000 millones de KRW GTD, el más grande hasta ahora · Main Event 1.800 millones más cinco deepstacks de NLH",
   "appt-korea": "Main Event del 10 al 14 de sep: buy-in de 1,8 M KRW · 1.000 millones GTD",
   "triton-jeju-2": "14 high rollers · sin satélites, solo por recomendación · $200K Invitational del 12 al 14 de sep",
-  "apt-jeju-fall": "136 eventos · Main Event 2.200 millones de KRW GTD · 12 asientos para el APTC",
+  "apt-jeju-fall": "135 eventos · Main Event 2.200 millones de KRW GTD · 12 asientos para el APTC",
   "gop-incheon-2": "El WPT Seoul se juega a la vez en la isla de Yeongjong, en otra sede",
   "wpt-seoul": "46 eventos · Main del 5 al 9 de nov (1,75 M KRW, 1.000 millones GTD) · sala de poker nueva de 70 mesas",
   "apt-championship": "210 eventos con trofeo · Main #14 TWD 311,9 mil / USD 5.000.000 GTD (≈TWD 155M, conversión de la página) (desde el 23 de nov) · el 12 de nov es solo para la industria; el público entra desde el 13",
@@ -1990,7 +1990,7 @@ const SCHEMA_DESC_EN: Record<string, string> = {
   "triton-jeju-2":
     "The second Triton Super High Roller Series of the year on Jeju — 14 high roller tournaments with buy-ins from $15,000 to $200,000.",
   "apt-jeju-fall":
-    "The Asian Poker Tour's autumn 2026 Jeju stop: 136 events with ₩2.2bn guaranteed on the Main Event.",
+    "The Asian Poker Tour's autumn 2026 Jeju stop: 135 events with ₩2.2bn guaranteed on the Main Event.",
   "wpt-seoul":
     "The World Poker Tour's first event at the INSPIRE Entertainment Resort — 46 events with ₩1bn guaranteed on the Main Event.",
   "appt-manila":
@@ -2015,7 +2015,7 @@ const SCHEMA_DESC_JA: Record<string, string> = {
   "triton-jeju-2":
     "Triton Super High Roller Seriesの済州2回目。ハイローラー14トーナメント、バイインは$15,000〜$200,000。",
   "apt-jeju-fall":
-    "APTの2026年秋の済州ストップ。136イベント、メインイベントは22億ウォン保証。",
+    "APTの2026年秋の済州ストップ。135イベント、メインイベントは22億ウォン保証。",
   "wpt-seoul":
     "WPTがINSPIREエンターテインメントリゾートで初開催する大会。46イベント、メインイベントは10億ウォン保証。",
   "appt-manila":

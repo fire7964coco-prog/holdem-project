@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "rules",
   date: "2026-06-10",
   updated: "2026-08-27",
-  masterUpdated: "2026-08-25",
+  masterUpdated: "2026-09-07",
   keepImagesInBody: true,
   readTime: "16 menit",
   emoji: "🎬",
@@ -341,6 +341,18 @@ Texas Hold'em butuh tiga puluh menit untuk dipelajari dan seumur hidup untuk dik
 **Q. Bagaimana urutan main yang persis di Texas Hold'em?**
 
 A. Pasang blinds → bagikan dua kartu tertutup → taruhan preflop → buka flop (3 kartu) lalu bertaruh → turn (1 kartu) lalu bertaruh → river (kartu terakhir) lalu bertaruh → showdown (lima kartu terbaik dibandingkan).
+
+**Q. Siapa yang duluan di poker?**
+
+A. Tergantung "duluan" yang mana Anda maksud, dan justru itulah yang membuat pertanyaan ini membingungkan. Dalam satu hand ada tiga momen yang sama-sama mengklaim kata itu: yang pertama *memasang* (small blind), yang pertama *bertindak* di preflop (UTG, tepat di kiri big blind), dan yang pertama bertindak setelah flop terbuka (kembali ke small blind). Jadi jawabannya berbalik di tengah hand — UTG membuka ronde preflop, lalu small blind membuka setiap ronde sesudahnya. (Heads-up satu-satunya pengecualian — lihat pertanyaan berikutnya.)
+
+**Q. Siapa yang bertaruh duluan setelah flop?**
+
+A. Pemain aktif pertama di kiri button — di meja penuh itu adalah small blind. Jika small blind sudah fold, giliran pindah ke big blind, lalu terus searah jarum jam. Kursi yang sama juga memimpin turn dan river; hanya preflop yang dimulai dari tempat lain. Heads-up adalah pengecualiannya: di sana button bertindak duluan di preflop, tapi terakhir di setiap street sesudahnya.
+
+**Q. Siapa yang membuka kartu duluan saat showdown?**
+
+A. Siapa pun yang melakukan aksi agresif terakhir — bet atau raise terakhir di river — wajib membuka duluan. Jika di river semua orang cek tanpa ada taruhan sama sekali, pemain aktif pertama di kiri button yang membuka duluan, lalu diikuti yang lain searah jarum jam. Pemain yang tahu dirinya sudah kalah boleh **muck** alih-alih memperlihatkan kartunya.
 
 **Q. Apa bedanya preflop dan flop?**
 

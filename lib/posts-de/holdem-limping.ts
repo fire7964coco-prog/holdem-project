@@ -182,6 +182,10 @@ A. Oft ja – in einem ungeraisten Pot ist der Complete aus dem Small Blind eine
 
 A. Ein Limper steigt in ungeraiste Pots ein, indem er vor dem Flop nur den Big Blind callt – es geht darum, wie er in Pots *einsteigt*. Eine Calling Station callt nach dem Flop zu viele Bets, auf Turn und River – es geht darum, wie sie *weitermacht*. Derselbe loose-passive Spieler macht oft beides, aber die Begriffe beschreiben unterschiedliche Angewohnheiten und sollten nicht austauschbar verwendet werden.
 
+**Q. Wie nennt man einen Spieler, der viel limpt?**
+
+A. Meist „Fish“ – der allgemeine Begriff für einen schwachen, verlierenden Spieler – oder „Donk“ (spielt schlecht). („Calling Station“ wird demselben Spieler oft angehängt, aber der Begriff meint zu viele Calls *postflop* – nicht, wie jemand in Pots einsteigt.) Gewohnheitsmäßiges Open-Limpen ist eines der klarsten Tells eines unerfahrenen Spielers, und genau deshalb nehmen stärkere Spieler Limper mit Isolation-Raises ins Visier. Wenn du das Etikett lieber nicht tragen willst, mach Raise-or-Fold zu deinem Standard.
+
 ---
 
 ## Die 3 Dinge zum Merken

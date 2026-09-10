@@ -205,7 +205,7 @@ export const POST: Post = {
 
 翻牌時的堅果，到河牌可能已經只是第三名——所以你手上那副順子安不安全，答案在牌面上，不在你的底牌上。
 
-高手會多跑一次掃描：不是問「我有什麼？」，而是問 ==**「在這個牌面上，任何人能拿到的最強牌是什麼？」**==。那手牌就叫堅果牌（the nuts）。
+高手會多跑一次掃描：不是問「我有什麼？」，而是問 ==**「在這個牌面上，任何人能拿到的最強牌是什麼？」**==。那手牌就叫堅果牌（the nuts，這類牌桌黑話見[術語表](/zh-hant/blog/holdem-glossary)）。
 
 牌面：Q♣ 9♥ 6♣ 5♦ 2♠
 
@@ -340,7 +340,7 @@ A. 算——公牌屬於每個玩家的牌。就算你的底牌完全沒中，�
 2. **按順序掃** — 同花 → 順子 → 成對 → 高牌。你會漏掉的那幾手，正是這套掃描存在的理由。
 3. **替所有人讀一次** — 牌面是共用的，所以同一套掃描能揭曉堅果牌、危險，以及你這手到底是天花板還是地板。
 
-如果你連遊戲流程本身都還在學，先從[德州撲克牌型大小排名](/zh-hant/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp")把成牌階梯記牢，再用[平手判定規則](/zh-hant/blog/holdem-tiebreak-rules)搞懂牌很接近時到底誰贏。
+如果你連遊戲流程本身都還在學，先從[德州撲克新手入門規則](/zh-hant/blog/texas-holdem-rules-for-beginners)開始，再用[德州撲克牌型大小排名](/zh-hant/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp")把成牌階梯記牢，然後用[平手判定規則](/zh-hant/blog/holdem-tiebreak-rules)搞懂牌很接近時到底誰贏。
 
 ---
 

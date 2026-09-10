@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "韩国最好的秋季马拉松（春川 10 月 25 日、JTBC 首尔 11 月 1 日、Garmin Run 11 月 15 日）正好赶上完美的跑步天气。仁川机场旁的 Paradise City Casino 全年开放现金局——只对外国人开放，离航站楼 10 分钟。一趟行程两样都能拿下。2026 年的外国人报名已全部结束；2027 年的春川窗口约在 7 月。",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-10",
+  masterUpdated: "2026-09-10",
   keepImagesInBody: true,
   readTime: "14 分钟",
   emoji: "🏃",
@@ -44,7 +44,7 @@ export const POST: Post = {
 ---
 
 > **快速回答**
-> 韩国扑克赛事：==**APT Incheon 8 月 7–16 日**==、==**APT Jeju 9 月 25 日–10 月 7 日**==（都在只对外国人开放的赌场）。韩国马拉松：==**春川 10 月 25 日**==、==**JTBC 首尔 11 月 1 日**==、==**Garmin Run 11 月 15 日**==。APT Jeju 10 月 7 日结束 → 春川 10 月 25 日开跑——==g:中间隔 18 天，一趟行程两样都占。== ==r:2026 年的外国人报名已全部结束（JTBC 9 月 4 日截止，春川、Garmin 更早）——下面的日期请当 2027 年的模板读。==
+> 韩国扑克赛事：==**APT Incheon 8 月 7–16 日**==、==**APT Jeju 9 月 25 日–10 月 7 日**==（都在只对外国人开放的赌场）。韩国马拉松：==**春川 10 月 25 日**==、==**JTBC 首尔 11 月 1 日**==、==**Garmin Run 11 月 15 日**==。APT Jeju 10 月 7 日结束 → 春川 10 月 25 日开跑——==g:中间隔 18 天，一趟行程两样都占。== ==r:2026 年春川和 Garmin 的外国人报名已经结束，JTBC 则要看渠道（日本 RUNNET 渠道 9 月 4 日关闭，worldsmarathons.com 请以官方页面现况为准）——下面的日期请当 2027 年的模板读。==
 
 ---
 
@@ -66,7 +66,7 @@ export const POST: Post = {
 ## 韩国 2026 马拉松赛程表——外国跑者
 
 > **快速回答**
-> 2026 年秋季的四场：YTN 首尔 Tour Marathon 9 月 6 日、春川马拉松 10 月 25 日（全程、10K）、JTBC 首尔马拉松 11 月 1 日（全程、10K）、Garmin Run Korea 11 月 15 日（半程、10K）。==r:外国人报名窗口 2026 年已全部关闭==——YTN 6 月 26 日额满、春川售罄、Garmin 报名期已过、JTBC 9 月 4 日截止。下面的日期请当 2027 年的模板来读：目标窗口是 10 月或 11 月。
+> 2026 年秋季的四场：YTN 首尔 Tour Marathon 9 月 6 日、春川马拉松 10 月 25 日（全程、10K）、JTBC 首尔马拉松 11 月 1 日（全程、10K）、Garmin Run Korea 11 月 15 日（半程、10K）。==r:外国人报名窗口 2026 年已全部关闭==——YTN 6 月 26 日额满、春川售罄、Garmin 报名期已过、JTBC 按渠道而定（日本 RUNNET 渠道 9 月 4 日关闭）。下面的日期请当 2027 年的模板来读：目标窗口是 10 月或 11 月。
 
 <div style="overflow-x:auto;margin:20px 0">
 
@@ -75,7 +75,7 @@ export const POST: Post = {
 | Dong-A 首尔国际马拉松 | 2026 年 3 月 | 全程、10K | 首尔 | [dongamarathon.com](https://www.dongamarathon.com) | 2026 已结束 |
 | ==**YTN 首尔 Tour Marathon**== | ==**9 月 6 日**== | ==**11KM**==、半程 | Seoul Plaza | [run.ytn.co.kr](http://run.ytn.co.kr) | 已截止——6 月 26 日提前额满 |
 | ==g:**春川马拉松**== | ==g:**10 月 25 日**== | ==g:全程、10K== | ==g:春川== | ==g:[chuncheonmarathon.com](https://www.chuncheonmarathon.com)== | ==g:报名截止（售罄）== |
-| ==**JTBC 首尔马拉松**== | ==**11 月 1 日**== | 全程、10K | 首尔（上岩） | [worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon) | ==r:外国人报名截至 **2026 年 9 月 4 日**==——名额有限，抽签分配 |
+| ==**JTBC 首尔马拉松**== | ==**11 月 1 日**== | 全程、10K | 首尔（上岩） | [worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon) | ==r:外国人报名截止日按渠道而定==（日本 RUNNET 渠道已于 2026 年 9 月 4 日关闭）——名额有限，抽签分配 |
 | Garmin Run Korea | 11 月 15 日 | 半程、10K | 高阳 | [runable.me](http://runable.me/product/18977?comp=18962) | 已截止（报名为 7 月 1–3 日） |
 
 </div>
@@ -121,7 +121,7 @@ export const POST: Post = {
 ## 2026 JTBC 首尔马拉松 — 11 月 1 日
 
 > **快速回答**
-> JTBC 首尔马拉松是韩国头号城市赛事，11 月 1 日 8:00 从上岩世界杯体育场出发，穿过光化门和东大门，全程终点奥林匹克公园，关门 5 小时。海外跑者的唯一报名渠道是 worldsmarathons.com，10K €104、全程 €129，名额抽签分配，2026 年截止日为 9 月 4 日。参赛包 10 月 29–31 日在江南 SETEC 凭护照领取。
+> JTBC 首尔马拉松是韩国头号城市赛事，11 月 1 日 8:00 从上岩世界杯体育场出发，穿过光化门和东大门，全程终点奥林匹克公园，关门 5 小时。海外跑者的唯一报名渠道是 worldsmarathons.com，10K €104、全程 €129，名额抽签分配，2026 年的截止日按渠道而定（日本 RUNNET 渠道 9 月 4 日关闭）。参赛包 10 月 29–31 日在江南 SETEC 凭护照领取。
 
 ==**JTBC 首尔马拉松**== 是韩国头号城市赛事——25,000–50,000 名跑者，八成是二三十岁的人，穿过首尔市中心的地标。如果说春川是风景乡野，JTBC 就是橱窗展示。
 
@@ -135,7 +135,7 @@ export const POST: Post = {
 - 领包时需出示护照（不能代领）
 
 **怎么报名（外国人）：**
-居住在韩国境外的外国跑者，只能通过 ==**[worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon)**== 报名。==r:名额有限且常常很早满员==，请以官方页面的最新状态为准——==r:**报名截止日就是 2026 年 9 月 4 日**==，同一天 23:59（KST）也是取消／退款的截止时间。持韩国护照者无法通过这个渠道报名。
+居住在韩国境外的外国跑者，只能通过 ==**[worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon)**== 报名。==r:名额有限且常常很早满员==，请以官方页面的最新状态为准——==r:**截止日按你走的渠道而定**==：日本 RUNNET 渠道到 2026 年 9 月 4 日为止、已经关闭，而 worldsmarathons.com 是另一个渠道，可能仍显示有名额，所以请在那里确认后再做打算。无论走哪个渠道，取消／退款的截止时间都落在该渠道关闭当天的 23:59（KST）。持韩国护照者无法通过这个渠道报名。
 
 该渠道的报名费为 ==**10K €104**==、==**全程 42.2K €129**==（仅限海外跑者）。由于过去两个项目都在首日售罄，==g:名额已改为抽签分配==——早报名不再等于占到位子，只是进入抽签。参赛包必须在赛前的 EXPO 领取，报名姓名须与护照一致。路线从 ==**世界杯公园（麻浦区）**== 出发，终点在 ==**奥林匹克公园（松坡区）**==。
 
@@ -187,7 +187,7 @@ export const POST: Post = {
 ## 韩国扑克赛事：2026 年 9–12 月
 
 > **快速回答**
-> 三场扑克节正好落在秋季窗口：APT Jeju 9 月 25 日–10 月 7 日（济州 LES A Casino，136 项赛事、$3.5M+ 保底），GOP Incheon 10 月 30 日–11 月 8 日（Paradise City；JTBC 马拉松那天正好是它的第 3 天），AJPC Samurai Circuit 12 月 4–13 日（Paradise City）。APT Jeju 结束后隔 18 天，就是春川马拉松。
+> 三场扑克节正好落在秋季窗口：APT Jeju 9 月 25 日–10 月 7 日（济州 LES A Casino，135 项赛事、$3.5M+ 保底），GOP Incheon 10 月 30 日–11 月 8 日（Paradise City；JTBC 马拉松那天正好是它的第 3 天），AJPC Samurai Circuit 12 月 4–13 日（Paradise City）。APT Jeju 结束后隔 18 天，就是春川马拉松。
 
 赛程有意思的地方就在这里。三场扑克节在韩国场馆举办，正好落在和马拉松同一个秋季窗口——而且其中一场直接和 JTBC 首尔撞上。
 
@@ -206,7 +206,7 @@ export const POST: Post = {
       <td style="padding:10px 14px;font-weight:700;white-space:nowrap">9 月 25 日 – 10 月 7 日</td>
       <td style="padding:10px 14px"><strong>APT Jeju 2026</strong></td>
       <td style="padding:10px 14px">LES A Casino, Jeju</td>
-      <td style="padding:10px 14px;color:hsl(var(--muted-foreground))">$3.5M+ 总保底 · 136 项赛事 · 春川马拉松前 18 天结束</td>
+      <td style="padding:10px 14px;color:hsl(var(--muted-foreground))">$3.5M+ 总保底 · 135 项赛事 · 春川马拉松前 18 天结束</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.07);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:10px 14px;font-weight:700;white-space:nowrap">10 月 30 日 – 11 月 8 日</td>
@@ -228,8 +228,8 @@ export const POST: Post = {
 
 ==**济州岛**== 是韩国最受欢迎的本土度假胜地——火山海岸、亚热带气候、多数国籍免签（⚠️ ==r:中国内地护照的济州免签只在济州岛内有效，不能从济州飞首尔或仁川==——见 [APT 仁川指南](/zh/blog/apt-incheon-2026-guide) 的签证一节）。赛事在济州新华世界（Jeju Shinhwa World）内的 ==**LES A Casino**== 举办。
 
-- **保底：** ==g:136 项奖杯赛事总保底 $3.5M+==（主赛事：买入 ==**KRW 270 万**== ≈ $1,800，==g:KRW 22 亿保底==）
-- **完整赛程：** 已公布——13 天内 136 项赛事 · [theasianpokertour.com](https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/info)
+- **保底：** ==g:135 项奖杯赛事总保底 $3.5M+==（主赛事：买入 ==**KRW 270 万**== ≈ $1,800，==g:KRW 22 亿保底==）
+- **完整赛程：** 已公布——13 天内 135 项赛事 · [theasianpokertour.com](https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/info)
 - 仅限外国人 · 19+ · 持有效护照（海外韩国人：韩国护照 + 绿卡或移民证明）
 
 ==g:APT Jeju 10 月 7 日结束——春川马拉松是 10 月 25 日。中间隔 18 天。== 从济州飞首尔，休整、逛逛，然后开跑。
@@ -326,7 +326,7 @@ export const POST: Post = {
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">9 月 25 日–10 月 7 日</td>
       <td style="padding:9px 12px">🃏 <strong>APT Jeju 2026</strong></td>
       <td style="padding:9px 12px">LES A Casino, Jeju</td>
-      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">$3.5M+ GTD · 136 项赛事 · 距春川 18 天</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">$3.5M+ GTD · 135 项赛事 · 距春川 18 天</td>
     </tr>
     <tr style="background:rgba(34,197,94,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">10 月 25 日（周日）</td>

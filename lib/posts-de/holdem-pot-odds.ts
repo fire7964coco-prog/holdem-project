@@ -201,6 +201,10 @@ A. Teile den Betrag, den du callen musst, durch den gesamten Pot *nach* deinem C
 
 A. Ja. Die Formel für die benötigte Equity nutzt den *finalen* Pot, der deinen eigenen Call enthält. Ein $50-Call in einen $150-Pot bedeutet einen $200-Pot am Ende, also 50 ÷ 200 = 25%. Den eigenen Call wegzulassen ist der häufigste Anfängerfehler.
 
+**Q. Wie berechnet man die Potgröße beim Poker?**
+
+A. Der Pot sind alle Chips, die schon in der Mitte liegen, plus alle Einsätze der laufenden Street. Bevor du Pot Odds rechnest, addierst du den Startpot und die Bet deines Gegners – und rechnest deinen eigenen Call in den *finalen* Pot hinein. Beispiel: ein $100-Pot, eine $50-Bet und dein $50-Call ergeben einen finalen Pot von $200.
+
 **Q. Was ist ein gutes Pot-Odds-Verhältnis?**
 
 A. Je höher, desto besser – du würdest gern „5:1 bekommen“ (nur 16,7% nötig). Aber „gut“ ist relativ zu deiner Hand: 2:1 zu bekommen (33% nötig) funktioniert mit einem Flushdraw nur, wenn du ohnehin beide Karten siehst (all-in oder ohne weitere Bets – 35%); siehst du für den Call dagegen nur eine einzige Karte, reicht der Preis nicht (19,1% vom Flop aus, 19,6% vom Turn aus); und mit einem Gutshot ist er schrecklich. Vergleiche den Preis immer mit deiner Equity.
@@ -216,6 +220,22 @@ A. Pot Odds zählen nur die Chips, die jetzt im Pot liegen. Implied Odds addiere
 **Q. Welche Pot Odds gibt eine Pot-Size-Bet?**
 
 A. Eine Pot-Size-Bet legt dir 2:1 auf, du brauchst also 33% Equity zum Callen. Eine Half-Pot-Bet legt 3:1 auf (25% nötig); ein 2×-Pot-Overbet legt 1,5:1 auf (40% nötig). Größere Bets verlangen mehr Equity, aber die Kurve flacht schnell ab: Ein 3×-Pot-Overbet verlangt 42,9%, ein 5×-Pot-Overbet 45,5% – über 50% kommt sie nie.
+
+**Q. Wie viel vom Pot solltest du setzen?**
+
+A. Bet Sizing ist die Kehrseite der Pot Odds – deine Bet legt den Preis fest, den dein Gegner bekommt. Eine Half-Pot-Bet gibt ihm 3:1 (er braucht 25%), eine Pot-Size-Bet 2:1 (33% nötig), ein Overbet verlangt noch mehr. Auf drawlastigen Boards setzt du größer, um Draws den profitablen Call zu nehmen; kleiner setzt du, wenn eine schwächere Hand für Value mitgehen soll. Übliche Größen reichen je nach Board und Ziel von ⅓ Pot bis zum vollen Pot.
+
+**Q. Was ist die Regel der 2 und 4?**
+
+A. Eine Abkürzung, die Outs in Equity verwandelt: Outs × 4 am Flop (zwei Karten kommen noch) oder × 2 am Turn (nur noch eine Karte). Neun Flush-Outs sind also grob 36% am Flop und 18% am Turn. Nutze ×4 nur, wenn du beide Karten ohne weitere Bets siehst.
+
+**Q. Wie viel Equity brauche ich, um eine Bet zu callen?**
+
+A. Genau deine Pot Odds als Prozentwert: Call ÷ finaler Pot. Gegen eine Half-Pot-Bet brauchst du 25%, gegen eine Pot-Size-Bet 33%. Zähle deine Outs, rechne sie mit der Regel der 2 und 4 um und calle, wenn deine Equity über der Schwelle liegt.
+
+**Q. Sollte meine Equity höher oder niedriger sein als meine Pot Odds?**
+
+A. Höher. Die Pot Odds geben die Equity an, die du zum Callen *brauchst* (Call ÷ finaler Pot); deine Equity ist, wie oft du tatsächlich gewinnst. Du callst, wenn deine Equity *über* dieser Schwelle liegt, und foldest, wenn sie darunter liegt. Verlangt eine Half-Pot-Bet 25% und hat dein Flushdraw 35% (mit zwei kommenden Karten – du siehst Turn und River ohne weitere Bets), dann ist 35% > 25% und der Call profitabel.
 
 **Q. Gelten Pot Odds auch, wenn noch Spieler hinter mir sitzen?**
 

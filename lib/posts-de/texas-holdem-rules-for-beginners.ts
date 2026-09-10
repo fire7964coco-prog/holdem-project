@@ -11,7 +11,7 @@ export const POST: Post = {
   updated: "2026-09-09",
   // 🔴 masterUpdated는 07-12 그대로 둔다 – 이 글은 「판 전체 재동기화」 보류분(드리프트 잔존)이다.
   //    남은 항목이 있는 채로 올리면 드리프트 추적이 거짓말을 한다(session-handoff §착수 전 7).
-  masterUpdated: "2026-07-12",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "14 Min.",
   emoji: "♠️",
@@ -433,6 +433,10 @@ Hände spielen sich leichter, wenn du später an der Reihe bist. Bist du als Ers
 
 A. Blinds setzen, jedem Spieler zwei Hole Cards geben, Preflop-Setzrunde spielen, dann Flop, Turn und River aufdecken – mit einer Setzrunde nach jeder Street – und beim Showdown die besten Fünf-Karten-Hände vergleichen. Insgesamt: vier Setzrunden, fünf Gemeinschaftskarten, ein Gewinner – oder ein geteilter Pot, wenn die besten fünf Karten exakt gleich sind.
 
+**Q. Wer fängt beim Texas Hold'em an?**
+
+A. Preflop handelt der Spieler links vom Big Blind zuerst. Nach dem Flop ist der erste aktive Spieler links vom Dealer-Button an der Reihe, und der Button handelt in der Regel zuletzt.
+
 **Q. Mit wie vielen Karten spielt man Texas Hold'em?**
 
 A. **52 Karten** – ein französisches Blatt ohne Joker. Ausgeteilt wird nie das ganze Deck: Selbst am vollen Zehnertisch bleiben 24 Karten im Stub liegen (die Rechnung steht oben bei den Grundregeln). Mehr als ein Deck brauchst du also nie, egal wie viele mitspielen.
@@ -444,6 +448,14 @@ A. Jeder Spieler bekommt genau **2 verdeckte Karten** – die Hole Cards. Mehr b
 **Q. Wie viele Karten werden beim Poker aufgedeckt?**
 
 A. Insgesamt **5**, und zwar in drei Schritten: 3 auf einmal (der Flop), dann 1 (der Turn), dann 1 (der River). Vor jedem dieser drei Schritte legt der Dealer zusätzlich eine Burn Card verdeckt beiseite – die wird nicht aufgedeckt und zählt für niemanden.
+
+**Q. Mit wie vielen Chips startet man beim Texas Hold'em?**
+
+A. Für eine Heimrunde mit Anfängern gibst du jedem Spieler Chips im Gegenwert von rund 200 und spielst mit Blinds von 1/2. Ein einfacher Stack sind 20 Chips zu 1, 16 Chips zu 5 und 4 Chips zu 25.
+
+**Q. Mit wie viel Geld startet man beim Texas Hold'em?**
+
+A. Zum Lernen nimmst du Spielchips. Für eine ganz kleine Heimrunde um echtes Geld nimm ein Buy-in, dessen Verlust allen am Tisch leichtfällt – etwa €2 bis €5 bei Blinds von €0,01/€0,02.
 
 **Q. Gibt es eine niedrige Straße (A-2-3-4-5) im Texas Hold'em?**
 

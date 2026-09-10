@@ -38,7 +38,7 @@ export const POST: Post = {
 > **快速解答**
 > 順序不看誰牌大、也不看座位號，只看河牌圈最後那個動作：有人下注或加注，就由最後下注或加注的人先亮；全桌過牌，就從按鈕左邊第一位還在牌局裡的人開始順時針亮。下面這張表是全部三種情況。
 
-答案取決於最後一輪下注是怎麼結束的（想先把一手牌從發牌到攤牌的完整順序搞懂，看[德州撲克規則與行動順序](/zh-hant/blog/texas-holdem-rules-for-beginners "thumb:/images/rules-texas-holdem.webp")）。
+答案取決於最後一輪下注是怎麼結束的（想先把一手牌從發牌到攤牌的完整順序搞懂，看[牌局流程與行動順序](/zh-hant/blog/holdem-game-order "thumb:/images/blog-holdem-game-flow.webp")，或從[德州撲克規則新手入門](/zh-hant/blog/texas-holdem-rules-for-beginners)讀起）。
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

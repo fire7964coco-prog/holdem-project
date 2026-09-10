@@ -214,6 +214,10 @@ Beachte, dass beide Pole hier sind: folde *mehr* gegen die value-lastigen Spiele
 
 A. Folde immer dann, wenn Callen oder Raisen auf lange Sicht Geld verliert: wenn deine Hand preflop zu schwach ist, wenn du den Flop verfehlst und auf einem Board, das zur Range deines Gegners passt, Aggression gegenüberstehst, wenn ein Draw seine Pot Odds nicht erfüllt und wenn eine value-lastige Linie die Hand schlägt, die du hältst. Das schlechteste Ergebnis eines Folds ist null, also schlägt das Folden eines verlorenen Spots immer das Callen.
 
+**Q. Verlierst du Geld, wenn du im Poker foldest?**
+
+A. Du verlierst nur die Chips, die du ohnehin schon in den Pot gelegt hast – das Folden selbst kostet dich nichts mehr. Alles, was du vorher gesetzt hast, ist in dem Moment weg, in dem du es setzt (es gehört dem Pot), und der Fold hält dich lediglich davon ab, *noch einen* Chip nachzulegen. Ein Fold ist also kein „Verlieren“ wie ein durchgecallter Verlust: Ab diesem Punkt ist sein schlechtestes Ergebnis null, und das schlägt jeden Call, den du verlieren wirst. Den Pot gewinnst du durchs Folden nicht, aber du sparst jeden Chip, den du fürs Verlieren bezahlt hättest.
+
 **Q. Wie oft sollte man preflop folden?**
 
 A. Ein solider Tight-Aggressive-Spieler foldet ungefähr 75–85% seiner Hände vor dem Flop – eher 75–80% in 6-max-Spielen und 80–85% in Full-Ring. Weniger, stärkere Hände zu spielen, ist der größte einzelne Fix für die meisten verlierenden Spieler. Wenn du weit mehr als ein Fünftel deiner Hände einsteigst, spielst du fast sicher zu viele.

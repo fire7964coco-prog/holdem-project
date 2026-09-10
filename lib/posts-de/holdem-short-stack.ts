@@ -190,6 +190,14 @@ A. Grob ist alles unter etwa 20–25 Big Blinds „short“, und Push/Fold-Play 
 
 A. Push/Fold ist Short-Stack-Strategie, bei der du, wenn du first-in im Pot bist, nur die Optionen hast, all-in zu gehen oder zu folden – kein Limpen, keine kleinen Raises. Shoven behält deine Fold Equity (Gegner folden und du gewinnst die Blinds) und vermeidet, mit einem zu kleinen Stack nach dem Flop überspielt zu werden.
 
+**Q. Was heißt „All-in oder Fold“ im Poker?**
+
+A. „All-in oder Fold“ ist dieselbe Idee wie Push/Fold: Bist du als Short Stack first-in im Pot, hast du nur zwei Optionen – all-in gehen oder folden, kein Limpen, keine kleinen Raises. Es ist außerdem der Name eines schnellen Online-Formats (GGPokers All-in or Fold), in dem jede Preflop-Entscheidung buchstäblich Shove oder Fold ist. So oder so gilt die Short-Stack-Logik: Behalte deine Fold Equity durch den Shove und blute nie Chips auf einem Raise weg, den du danach nicht verteidigen kannst.
+
+**Q. Wie reagierst du auf einen All-in-Shove?**
+
+A. Folde weit häufiger, als du selbst shoven würdest – deine Calling Range ist viel enger als deine Shoving Range. Sobald du ein All-in callst, ist deine Fold Equity weg; deine Hand muss also wirklich die *Range* des Shovers schlagen und nicht nur spielbar aussehen. Häng eine Zahl dran: Im Big Blind gegen einen 10bb-Jam riskierst du 9bb, um einen 20,5bb-Pot zu gewinnen – du brauchst also ==43,9%== Equity. Diese Hürde nehmen kleine Paare und schwache Asse oft (22 liegt selbst gegen AKo bei ==52,65%==). Calle, wenn deine Equity über der Hürde liegt, nicht erst, wenn du sicher vorne bist.
+
 **Q. Sollte man mit einem Short Stack jemals limpen?**
 
 A. Fast nie, wenn du first-in bist. Open-Limpen gibt Fold Equity auf und baut einen Pot auf, den du postflop nicht navigieren kannst. Als Short Stack ist der Standard Raise-or-Fold, und mit 15 Big Blinds oder weniger ist dieser Raise meist ein All-in. (Vom Small Blind hinter anderen Limpern mit einem winzigen Stack zu completen, ist eine seltene Ausnahme.)

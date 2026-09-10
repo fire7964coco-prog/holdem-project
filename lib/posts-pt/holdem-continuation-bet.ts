@@ -15,7 +15,7 @@ export const POST: Post = {
   //   번역본에 전파하지 않는다(EN 파일 주석 + docs/locale-intentional-diffs.md) — 검토 완료 표시.
   //   ⚠ EN에는 08-20 커밋(851d8dc7)의 GTO ⑨ 역링크 1문단도 있으나 EN updated가 08-19에 머물러
   //   스테일 게이트 밖이다 — 같은 사유로 전파 제외(locale-intentional-diffs에 함께 등재).
-  masterUpdated: "2026-08-19",
+  masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "15 min",
   emoji: "🔥",
@@ -254,6 +254,10 @@ A. Não dê c-bet quando o board esmagou o range do seu adversário (boards baix
 **Q. Uma c-bet é um bluff?**
 
 A. Às vezes sim, às vezes não — esse é o ponto. Muitas c-bets são semi-bluffs ou bluffs puros com mãos que erraram, apostando porque o seu adversário provavelmente também errou. Outras são apostas de valor com mãos fortes. Uma estratégia equilibrada de c-bet mistura as duas nos mesmos boards, para que os adversários não consigam dizer se a sua aposta no flop significa força ou nada.
+
+**Q. O que é uma value bet no poker?**
+
+A. Value bet é uma aposta feita com uma mão forte torcendo para ser *paga* por uma pior — o oposto do blefe, que torce para fazer uma mão melhor foldar. A maior parte das suas c-bets em boards que te acertaram é value bet: você aposta top pair ou um set para cobrar dos pares piores e dos projetos. A habilidade está no sizing, para que as mãos mais fracas ainda paguem — aposte um valor que o adversário consiga se convencer a pagar.
 
 **Q. Qual é uma boa porcentagem de c-bet num HUD de poker?**
 

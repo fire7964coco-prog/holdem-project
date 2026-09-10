@@ -149,6 +149,18 @@ Dieselbe Logik läuft bei Pots mit Vierling auf dem Board: Alle teilen sich vier
 
 ---
 
+## Entscheidet die Farbe beim Poker?
+
+**Nein – nicht darüber, wer gewinnt. Farben haben beim Texas Hold'em genau eine Aufgabe: Fünf Karten derselben Farbe ergeben einen Flush. Darüber hinaus haben sie keinen Rang, also teilen zwei Hände, die Rang für Rang übereinstimmen, immer den Pot – und keine Karte schlägt eine andere wegen ihrer Farbe.**
+
+Die Frage kommt immer wieder, weil es eine Farbreihenfolge im Poker tatsächlich gibt – nur nicht in diesem Spiel. Stud und Razz nutzen sie, um zu bestimmen, wer den Bring-in zahlt und wer einen unteilbaren Chip bekommt. Hold'em nutzt sie für keines von beidem.
+
+Der sauberste Beweis ist genau der Chip, der sich *nicht* teilen lässt. Das WSOP-Turnierregelwerk 2026 sagt ==g:*"In button games with 2 or more high or low hands, the odd chip goes to the first seat left of the button"*== (Regel 73): Der überzählige Chip geht an den ersten Sitz links vom Button. Selbst wenn sich ein Pot physisch nicht gleichmäßig aufteilen lässt, richtet sich die Regel nach **dem Sitz**, nicht nach der Farbe – und die farbbasierte Methode in der zweiten Hälfte derselben Regel ist ausschließlich für Stud und Razz geschrieben.
+
+Noch etwas, das man wissen sollte: Beim Hold'em haben zwei Flushes ohnehin immer *dieselbe* Farbe, denn alle Spieler teilen sich dieselben fünf Gemeinschaftskarten, und ein Board kann nicht gleichzeitig drei Herz und drei Pik zeigen. „Pik schlägt Herz" ist also keine Regel, an der du gescheitert bist – es ist eine Hand, die gar nicht ausgeteilt werden kann.
+
+---
+
 ## Wenn dein Kicker nicht spielt – und der Pot geteilt wird
 
 ![Infografik: Das Board A-K-Q-J-10 ist die beste Fünf für alle, also kann eine 9-7-Hand es nicht schlagen und der Pot wird geteilt](/images/holdem-tiebreak-best5.webp "Beste Fünf aus sieben: Wenn das Board bereits die beste Hand ist, fallen deine Hole Cards heraus")
@@ -194,7 +206,7 @@ A. Die Straße mit der höheren obersten Karte – Q-J-10-9-8 schlägt J-10-9-8-
 
 **Q. Wer gewinnt, wenn beide einen Flush haben?**
 
-A. Verglichen wird Karte für Karte von oben: Ein Ass-hoher Flush schlägt einen König-hohen, und bei gleicher oberster Karte geht es zur nächsten – durch alle fünf. Die Farbe bricht nie den Gleichstand, bei identischen Rängen wird geteilt. Im Hold'em haben zwei Flushes ohnehin immer dieselbe Farbe, weil sich alle das Board teilen.
+A. Verglichen wird Karte für Karte von oben: Ein Ass-hoher Flush schlägt einen König-hohen, und bei gleicher oberster Karte geht es zur nächsten – durch alle fünf. Die Farbe bricht nie den Gleichstand, bei identischen Rängen wird geteilt.
 
 **Q. Full House gegen Full House – wer gewinnt?**
 

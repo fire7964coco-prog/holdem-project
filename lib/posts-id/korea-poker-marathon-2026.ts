@@ -4,12 +4,12 @@ export const POST: Post = {
   slug: "korea-poker-marathon-2026",
   title: "Korea Run + Play 2026 — Maraton & Poker dalam Satu Perjalanan",
   seoTitle: "Poker & Maraton Korea 2026 — Chuncheon, JTBC + Paradise City",
-  desc: "Pendaftaran asing JTBC Seoul (1 Nov) ditutup 4 September 2026 — Chuncheon dan Garmin sudah penuh. Kalender lomba, biaya, dan poker di Paradise City.",
+  desc: "Batas pendaftaran asing JTBC Seoul (1 Nov) beda per kanal — Chuncheon dan Garmin sudah penuh. Kalender lomba, biaya, dan poker di Paradise City.",
   tldr: "Maraton musim gugur terbaik Korea (Chuncheon 25 Okt, JTBC Seoul 1 Nov, Garmin Run 15 Nov) berpadu dengan cuaca lari yang sempurna. Paradise City Casino dekat Bandara Incheon menggelar cash game sepanjang tahun — khusus warga asing, 10 menit dari terminal. Satu perjalanan mencakup keduanya. Untuk 2026, satu-satunya registrasi asing adalah JTBC, batas 4 Sep.",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-10",
+  masterUpdated: "2026-09-10",
   keepImagesInBody: true,
   readTime: "14 mnt",
   emoji: "🏃",
@@ -123,7 +123,7 @@ Alasannya tidak rumit. Ini soal waktu dan lokasi.
 - Paspor diperlukan saat pengambilan (tidak boleh diwakilkan)
 
 **Cara registrasi (warga asing):**
-Pelari asing yang tinggal di luar Korea mendaftar khusus melalui ==**[worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon)**==. ==r:Kuota terbatas dan cepat penuh==, jadi cek halaman resmi untuk ketersediaan terkini — ==r:**pendaftaran ditutup 4 September 2026**==, dan tanggal yang sama (23:59 KST) juga batas pembatalan/refund. Pemegang paspor Korea tidak memenuhi syarat melalui kanal ini.
+Pelari asing yang tinggal di luar Korea mendaftar khusus melalui ==**[worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon)**==. ==r:Kuota terbatas dan cepat penuh==, jadi cek halaman resmi untuk ketersediaan terkini — ==r:**batas waktunya tergantung kanal yang Anda pakai**==. Jendela RUNNET (Jepang) berjalan sampai 4 September 2026 dan sudah tutup; worldsmarathons.com kanal terpisah dan bisa jadi masih menampilkan kuota, jadi pastikan di sana sebelum Anda mengandalkannya. Di kanal mana pun, batas pembatalan/refund jatuh pada hari kanal itu tutup, pukul 23:59 KST. Pemegang paspor Korea tidak memenuhi syarat melalui kanal ini.
 
 Biaya pendaftaran di kanal itu ==**€104 untuk 10K**== dan ==**€129 untuk maraton penuh 42,2K**== (khusus pelari luar negeri). Karena pada tahun-tahun sebelumnya kedua nomor habis di hari pertama, ==g:alokasinya berubah jadi undian==: mendaftar lebih awal tidak lagi menjamin slot, hanya memasukkan Anda ke undian. Race pack wajib diambil di EXPO sebelum hari lomba, dan nama pendaftaran harus sama dengan paspor. Rutenya start dari ==**World Cup Park (Mapo-gu)**== dan finis di ==**Olympic Park (Songpa-gu)**==.
 
@@ -185,7 +185,7 @@ Di sinilah kalendernya jadi menarik. Tiga festival poker berlangsung di venue-ve
       <td style="padding:10px 14px;font-weight:700;white-space:nowrap">25 Sep – 7 Okt</td>
       <td style="padding:10px 14px"><strong>APT Jeju 2026</strong></td>
       <td style="padding:10px 14px">LES A Casino, Jeju</td>
-      <td style="padding:10px 14px;color:hsl(var(--muted-foreground))">Total GTD $3,5 juta+ · 136 event · berakhir 18 hari sebelum Chuncheon Marathon</td>
+      <td style="padding:10px 14px;color:hsl(var(--muted-foreground))">Total GTD $3,5 juta+ · 135 event · berakhir 18 hari sebelum Chuncheon Marathon</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.07);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:10px 14px;font-weight:700;white-space:nowrap">30 Okt – 8 Nov</td>
@@ -207,8 +207,8 @@ Di sinilah kalendernya jadi menarik. Tiga festival poker berlangsung di venue-ve
 
 ==**Pulau Jeju**== adalah destinasi resor domestik paling populer di Korea — garis pantai vulkanik, iklim subtropis, tanpa visa untuk sebagian besar kewarganegaraan. Turnamen ini berlangsung di ==**LES A Casino**== di dalam Jeju Shinhwa World.
 
-- **Garansi:** ==g:Total GTD $3,5 juta+ di 136 event trofi== (Main Event: buy-in ==**KRW 2,7 juta**== ≈ $1.800, ==g:KRW 2,2 miliar GTD==)
-- **Jadwal lengkap:** Sudah dirilis — 136 event selama 13 hari · [theasianpokertour.com](https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/info)
+- **Garansi:** ==g:Total GTD $3,5 juta+ di 135 event trofi== (Main Event: buy-in ==**KRW 2,7 juta**== ≈ $1.800, ==g:KRW 2,2 miliar GTD==)
+- **Jadwal lengkap:** Sudah dirilis — 135 event selama 13 hari · [theasianpokertour.com](https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/info)
 - Khusus warga asing · 19+ · paspor yang berlaku (warga Korea perantauan: paspor Korea + green card atau surat keterangan emigrasi)
 
 ==g:APT Jeju berakhir 7 Okt — Chuncheon Marathon adalah 25 Okt. Ada jeda 18 hari di antara keduanya.== Terbang Jeju → Seoul, istirahat dan berkeliling, lalu berlomba.
@@ -302,7 +302,7 @@ Untuk gambaran turnamen lengkap (APT Incheon sudah berlangsung 7–16 Agustus de
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">25 Sep–7 Okt</td>
       <td style="padding:9px 12px">🃏 <strong>APT Jeju 2026</strong></td>
       <td style="padding:9px 12px">LES A Casino, Jeju</td>
-      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">GTD $3,5 juta+ · 136 event · 18 hari ke Chuncheon</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">GTD $3,5 juta+ · 135 event · 18 hari ke Chuncheon</td>
     </tr>
     <tr style="background:rgba(34,197,94,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">25 Okt (Min)</td>

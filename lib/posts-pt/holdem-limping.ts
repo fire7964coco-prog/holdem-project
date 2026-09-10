@@ -173,6 +173,10 @@ A. Em mesa passiva, sim — num pote sem aumento, completar o small blind é um 
 
 A. Um limper entra em potes não aumentados só pagando o big blind antes do flop — é sobre como ele *entra* nos potes. Uma calling station paga apostas demais depois do flop, no turn e no river — é sobre como ele *continua*. O mesmo jogador loose-passivo muitas vezes faz os dois, mas os termos descrevem hábitos diferentes e não deveriam ser usados como sinônimos.
 
+**Q. Como se chama um jogador que limpa demais?**
+
+A. Normalmente de "fish" — o termo geral para um jogador fraco e perdedor — ou de "donk" (joga mal). ("Calling station" costuma cair no mesmo jogador, mas esse termo é sobre pagar apostas demais no *pós-flop*, não sobre como ele entra nos potes.) O open-limp habitual é um dos tells mais claros de jogador inexperiente, e é exatamente por isso que os jogadores mais fortes atacam limpers com aumentos de isolamento. Se você prefere não carregar o rótulo, use aumentar-ou-foldar como padrão.
+
 ---
 
 ## As 3 coisas para lembrar

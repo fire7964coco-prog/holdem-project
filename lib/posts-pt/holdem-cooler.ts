@@ -182,6 +182,10 @@ A. Não. Coolers comumente vão all-in, especialmente em torneios, mas o all-in 
 
 A. Confirme que foi genuinamente inevitável, e então solte — não há lição para estudar. Fique muito atento ao tilt, já que o custo real costuma ser as mãos que você joga mal depois tentando recuperar. Apoie-se num bankroll construído para absorver a variância, e se afaste por alguns minutos se ele te abalou.
 
+**Q. O que é um cooler num cassino? É a mesma coisa que no poker?**
+
+A. Não exatamente — a palavra tem um sentido mais antigo no mundo do jogo. No folclore de cassino, um "cooler" é uma pessoa, ou uma presença azarada, que se acredita capaz de esfriar uma mesa quente — algo dramatizado no filme *The Cooler*, de 2003, em que um cassino emprega um homem azarado para acabar com as sequências de vitória dos jogadores. Historicamente também significava um "cold deck", um baralho pré-arranjado trocado às escondidas para viciar uma mão. No poker moderno, porém, cooler quase sempre quer dizer aquele choque inevitável de premium contra premium — azar, não praga nem trapaça.
+
 ---
 
 ## As 3 coisas para lembrar

@@ -157,6 +157,10 @@ Was Straddeln *nicht* tut, ist ein „loses Image erzeugen“, das sich auszahlt
 
 ## FAQ
 
+**Q. Was ist ein Straddle im Poker?**
+
+A. Ein Straddle ist ein freiwilliger Blind-Einsatz, üblicherweise das Doppelte des Big Blinds, gesetzt schon bevor die Karten ausgeteilt sind – meist vom Spieler auf UTG. Er verdoppelt die Einsätze für diese Hand und gibt dem Straddler die Option zu raisen sowie die letzte Action vor dem Flop, genau wie ein dritter Blind.
+
 **Q. Warum straddeln Spieler überhaupt?**
 
 A. Meist aus drei Gründen, und nur einer davon hat mit Strategie zu tun. Am häufigsten geht es um **Action**: Der Straddle verdoppelt den Einsatz und macht ein zähes Spiel für eine Hand lebendig. Zweitens um das **letzte Wort vor dem Flop**, das der Straddler sich kauft. Und drittens um Gruppendynamik – wenn am Tisch reihum gestraddelt wird, macht kaum jemand nicht mit. Der Preis dafür ist real: Du legst Geld hin, bevor du eine einzige Karte gesehen hast.
@@ -165,9 +169,21 @@ A. Meist aus drei Gründen, und nur einer davon hat mit Strategie zu tun. Am hä
 
 A. Ja. Sobald ein Live-Straddle steht, ist er der aktuelle Einsatz – wer die Hand spielen will, muss den vollen Straddle-Betrag callen, nicht den Big Blind. In einem €1/€2-Spiel mit €4-Straddle kostet dich der Einstieg also €4. Du kannst stattdessen jederzeit folden oder ganz normal raisen, aber der Preis für „einfach mal mitgehen“ hat sich verdoppelt. Genau das bestraft loses Callen an gestraddelten Tischen so still.
 
+**Q. Wie hoch ist ein Straddle im Poker?**
+
+A. Der Standard-Straddle ist 2× der Big Blind – €4 in einem €1/€2-Spiel. Manche No-Limit-Räume erlauben größere oder sogar ungedeckelte (All-in-) Straddles, und wo Re-Straddles zulässig sind, muss jeder mindestens doppelt so hoch sein wie der vorherige (€4, €8, €16 und so weiter).
+
+**Q. Wer handelt nach einem Straddle zuerst?**
+
+A. Der Spieler direkt links vom Straddler, denn ein Live-Straddle wirkt wie ein neuer Big Blind. Die Action läuft von dort um den Tisch, Small Blind und Big Blind handeln der Reihe nach, und der Straddler handelt vor dem Flop zuletzt – mit der Option zu checken oder zu raisen, wenn vor ihm niemand geraist hat.
+
 **Q. Ändert ein Straddle auch die Reihenfolge nach dem Flop?**
 
 A. Nein. Ein Straddle verschiebt nur die Reihenfolge vor dem Flop. Sobald der Flop liegt, richtet sie sich wieder allein nach dem Button: Es beginnt der erste aktive Spieler links vom Button, und der Button handelt zuletzt. Die einzige Ausnahme ist deshalb gar keine echte – wenn der Straddle vom Button selbst kommt, hat dieser Spieler die letzte Action ohnehin, weil er der Button ist.
+
+**Q. Wer darf straddeln – kann das jeder?**
+
+A. Das hängt von der Art ab. Einen Standard-Straddle darf nur UTG setzen, also der Platz direkt links vom Big Blind. Ein Mississippi-Straddle lässt dort, wo das Haus ihn erlaubt, jeden Spieler von jeder Position straddeln, meist vom Button oder Cutoff. Möglich ist es in beiden Fällen nur, *bevor* die Karten ausgeteilt sind (oder bevor du sie ansiehst), und ob ein Platz überhaupt straddeln darf, ist vollständig Hausregelsache – manche Räume erlauben nur UTG, manche jeden Platz, und viele Onlinespiele und Turniere verbieten es ganz.
 
 **Q. Gilt ein Straddle als Raise?**
 
@@ -185,9 +201,17 @@ A. Ein Sleeper-Straddle ist ein Blind, der von einem Nicht-UTG-Platz gesetzt wir
 
 A. Selten, und wenn, dann stark eingeschränkt. Die meisten Onlineräume bieten gar keinen Straddle an; wo es ihn gibt, ist er meist auf einen einfachen UTG-Schalter reduziert, den du vor der Hand aktivierst. Mississippi- und Button-Straddles sind online praktisch nicht zu finden, weil sie am Livetisch vom Dealer verwaltet werden. Wenn dir das Konzept online begegnet, lies vorher die Regelseite des Anbieters – die Umsetzung unterscheidet sich stärker als live.
 
+**Q. Sind Straddles in Turnieren erlaubt?**
+
+A. So gut wie nie. Turniere beruhen auf einer festen Blind-Struktur, die an allen Tischen identisch sein muss – ein freiwilliger Zusatz-Blind würde das Format sprengen. Straddeln ist im Grunde eine reine Cashgame-Option, und selbst dort hängt es an den Hausregeln des jeweiligen Cardrooms.
+
 **Q. Aus welcher Position schadet ein Straddle am wenigsten?**
 
 A. Vom **Button**, sofern der Room es erlaubt. Das ist der einzige Straddle, bei dem du für dein Geld tatsächlich etwas bekommst, das strategisch zählt: das letzte Wort vor *und* nach dem Flop. Am teuersten ist der klassische UTG-Straddle – du zahlst doppelt, handelst genau eine Setzrunde lang zuletzt und sitzt danach drei Streets lang out of position in einem aufgeblähten Pot. Zwischen diesen beiden Enden liegt alles andere.
+
+**Q. Lohnt sich Straddeln – solltest du straddeln?**
+
+A. Für die meisten Spieler nein – es ist ein -EV-Move. Du legst Geld blind hin, du verkleinerst deinen positionellen Vorteil (Solver öffnen in gestraddelten Pots *weniger* Hände, nicht mehr) und du blähst den Rake auf. Vertretbar ist es nur an loose-passiven Tischen, in Spielen, in denen ohnehin alle straddeln, oder rein zum Spaß – nie als Weg, Geld zu verdienen.
 
 ---
 

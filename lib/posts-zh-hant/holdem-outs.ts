@@ -19,7 +19,7 @@ export const POST: Post = {
   content: `
 我打牌的第一年，一直「靠聽牌在打」，卻從來沒真的數過補牌。同花聽牌跟中洞順子在我眼裡感覺差不多——反正都是「還可能來的牌」——所以兩種我都下一樣的注，然後納悶自己怎麼一直輸。真正救我的不是什麼策略課，而是一個五分鐘就能養成的習慣：==停一下，把真正能救我的牌，一張一張數出來。==
 
-這個習慣就叫數**補牌（Outs）**——它是德州撲克裡每一個賠率決策底下的那塊地基。在你問「這手跟注划不划算？」之前，你得先答出「有幾張牌能幫我贏下這一手？」這篇講的就是「數」的那一半；至於數字背後的機率，[德州撲克機率與勝率表](/zh-hant/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp")是那張參考表，而[底池賠率](/zh-hant/blog/holdem-pot-odds)則是你數出來之後拿它去做的事。
+這個習慣就叫數**補牌（Outs）**——[德州撲克裡「算牌」的真正答案](/zh-hant/blog/holdem-card-counting "thumb:/images/holdem-card-counting-hero.webp")——它是德州撲克裡每一個賠率決策底下的那塊地基。在你問「這手跟注划不划算？」之前，你得先答出「有幾張牌能幫我贏下這一手？」這篇講的就是「數」的那一半；至於數字背後的機率，[德州撲克機率與勝率表](/zh-hant/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp")是那張參考表，而[底池賠率](/zh-hant/blog/holdem-pot-odds)則是你數出來之後拿它去做的事。
 
 ---
 
@@ -186,7 +186,7 @@ export const POST: Post = {
 🃁 | 高張撞上強牌 | 兩張高張（A-K 面對 Q-8-3）帳面上算 6 張補牌，但如果一個大加注在尖叫著暗三條或兩對，那你配對 A 往往還是不夠好——算 3 張、頂多 4 張，別算 6
 :::
 
-你很少能算出精確的折扣，這沒關係。這一手是「方向性」的：當牌面或下注在告訴你某張補牌可能贏不了，換算之前就先把補牌數往*下*砍。一個在成對牌面上還照 9 張補牌去跟滿池的人，等於用全價買了一個其實只值六張的聽牌。看懂哪些補牌是乾淨的，是一種讀牌面的功夫——你可以搭配[德州撲克牌型大小排名](/zh-hant/blog/holdem-hand-rankings)先搞懂你的聽牌成牌後到底贏什麼、輸什麼，也可以用[起手牌表](/zh-hant/blog/holdem-starting-hands-chart)確保你一開始就進池得漂亮。
+你很少能算出精確的折扣，這沒關係。這一手是「方向性」的：當牌面或下注在告訴你某張補牌可能贏不了，換算之前就先把補牌數往*下*砍。一個在成對牌面上還照 9 張補牌去跟滿池的人，等於用全價買了一個其實只值六張的聽牌。看懂哪些補牌是乾淨的，是一種[讀公牌](/zh-hant/blog/holdem-reading-the-board)的功夫——你可以搭配[德州撲克牌型大小排名](/zh-hant/blog/holdem-hand-rankings)先搞懂你的聽牌成牌後到底贏什麼、輸什麼，也可以用[起手牌表](/zh-hant/blog/holdem-starting-hands-chart)確保你一開始就進池得漂亮。
 
 ---
 

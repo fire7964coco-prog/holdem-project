@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Korea's top autumn marathons (Chuncheon Oct 25, JTBC Seoul Nov 1, Garmin Run Nov 15) align with perfect running weather. Paradise City Casino near Incheon Airport runs year-round cash games — foreigners only, 10 min from the terminal. One trip covers both. For 2026 the only foreign entry window is JTBC's — deadline Sep 4.",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-09-09",
+  updated: "2026-09-10",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏃",
@@ -122,7 +122,7 @@ The ==**JTBC Seoul Marathon**== is Korea's premier urban race — 25,000–50,00
 - Passport required at pickup (no proxy collection)
 
 **How to register (foreigners):**
-Foreign runners residing outside Korea register exclusively through ==**[worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon)**==. ==r:Spots are limited and fill early==, so check the official page for current availability — ==r:**registration closes on September 4, 2026**==, and that same date (23:59 KST) is also the cancellation/refund cutoff. Korean passport holders are ineligible via this channel.
+Foreign runners residing outside Korea register exclusively through ==**[worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon)**==. ==r:Spots are limited and fill early==, so check the official page for current availability — ==r:**the deadline depends on which channel you use**==. The Japanese RUNNET window ran to September 4, 2026 and has closed; worldsmarathons.com is a separate channel and may still show places, so confirm there before you count on a spot. On either channel the cancellation/refund cutoff falls on the same day that channel closes, at 23:59 KST. Korean passport holders are ineligible via this channel.
 
 Entry fees on that channel are ==**€104 for the 10K**== and ==**€129 for the full 42.2K**== (overseas runners only). Because both distances sold out on day one in past years, ==g:allocation moved to a raffle==, so registering early no longer guarantees a spot — it just gets you into the draw. Race packs must be collected at the EXPO before race day, and the name on your entry has to match your passport. The course starts at ==**World Cup Park (Mapo-gu)**== and finishes at ==**Olympic Park (Songpa-gu)**==.
 
@@ -184,7 +184,7 @@ This is where the calendar gets interesting. Three poker festivals run at Korean
       <td style="padding:10px 14px;font-weight:700;white-space:nowrap">Sep 25 – Oct 7</td>
       <td style="padding:10px 14px"><strong>APT Jeju 2026</strong></td>
       <td style="padding:10px 14px">LES A Casino, Jeju</td>
-      <td style="padding:10px 14px;color:hsl(var(--muted-foreground))">$3.5M+ total GTD · 136 events · ends 18 days before Chuncheon Marathon</td>
+      <td style="padding:10px 14px;color:hsl(var(--muted-foreground))">$3.5M+ total GTD · 135 events · ends 18 days before Chuncheon Marathon</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.07);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:10px 14px;font-weight:700;white-space:nowrap">Oct 30 – Nov 8</td>
@@ -206,8 +206,8 @@ This is where the calendar gets interesting. Three poker festivals run at Korean
 
 ==**Jeju Island**== is Korea's most popular domestic resort destination — volcanic coastline, sub-tropical climate, no visa required for most nationalities. The tournament runs at ==**LES A Casino**== inside Jeju Shinhwa World.
 
-- **Guarantee:** ==g:$3.5M+ total GTD across 136 trophy events== (Main Event: ==**KRW 2.7M**== buy-in ≈ $1,800, ==g:KRW 2.2B GTD==)
-- **Full schedule:** Released — 136 events over 13 days · [theasianpokertour.com](https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/info)
+- **Guarantee:** ==g:$3.5M+ total GTD across 135 trophy events== (Main Event: ==**KRW 2.7M**== buy-in ≈ $1,800, ==g:KRW 2.2B GTD==)
+- **Full schedule:** Released — 135 events over 13 days · [theasianpokertour.com](https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/info)
 - Foreigners only · 19+ · valid passport (overseas Koreans: Korean passport + green card or emigration certificate)
 
 ==g:APT Jeju ends Oct 7 — Chuncheon Marathon is Oct 25. 18 days between them.== Fly Jeju → Seoul, rest and explore, then race.
@@ -301,7 +301,7 @@ For the full tournament picture (APT Incheon ran August 7–16 with $2.7M GTD), 
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">Sep 25–Oct 7</td>
       <td style="padding:9px 12px">🃏 <strong>APT Jeju 2026</strong></td>
       <td style="padding:9px 12px">LES A Casino, Jeju</td>
-      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">$3.5M+ GTD · 136 events · 18 days to Chuncheon</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">$3.5M+ GTD · 135 events · 18 days to Chuncheon</td>
     </tr>
     <tr style="background:rgba(34,197,94,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">Oct 25 (Sun)</td>

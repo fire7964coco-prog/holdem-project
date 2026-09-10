@@ -240,6 +240,10 @@ Você faz flush no river, a mesa mostra duas damas, e você nunca faz a pergunta
 
 A. Varra as 7 cartas (2 na mão + 5 na mesa) numa ordem fixa: flush primeiro (qualquer naipe 5+ vezes), depois sequência (5 valores seguidos), depois valores pareados (pares, trincas, full houses, quadras). Fique com a coisa mais forte que achar e complete até exatamente 5 cartas com suas cartas mais altas restantes. Você pode usar as duas cartas da mão, uma, ou nenhuma.
 
+**Q. É preciso usar as duas cartas da mão no Texas Hold'em?**
+
+A. Não. Você forma a melhor mão de cinco cartas com qualquer combinação das suas duas cartas e das cinco comunitárias — as duas, só uma, ou nenhuma. Usar nenhuma é o que se chama de "jogar a mesa". (O Omaha é o oposto: lá você precisa usar exatamente duas das suas quatro cartas.)
+
 **Q. O que significa "jogar a mesa" no Texas Hold'em?**
 
 A. Significa que as 5 cartas comunitárias já são sua melhor mão possível de 5 cartas — nenhuma carta da mão melhora nada. Como a mesa é compartilhada, todo jogador pode reivindicar essa mesma mão, então jogar a mesa geralmente leva a um split pot, a não ser que as cartas na mão de um adversário melhorem a mesa. Uma formalidade ainda custa potes: mesmo jogando a mesa, você **precisa mostrar as duas cartas** para ter direito à sua parte (==regra 75 das regras de torneio da WSOP==, regra 19 da TDA) — empurrou para o muck sem mostrar, não leva nada.
@@ -263,6 +267,14 @@ A. Não. Sequências como K-A-2-3-4 ou Q-K-A-2-3 não são sequências no Texas 
 **Q. Como saber se um flush é possível na mesa?**
 
 A. Conte os naipes na mesa. Com 0–2 de um naipe, nenhum flush existe para ninguém. Com 3, o jogador precisa de dois desse naipe na mão; com 4, só um; com todos os 5, a própria mesa é um flush: melhora com uma carta desse naipe mais alta que a mais baixa da mesa — e numa mesa conectada, qualquer carta desse naipe que complete um straight flush vence todo flush, mesmo uma mais baixa que a mais baixa da mesa (em K♠ 6♠ 5♠ 4♠ 3♠, tanto o 2♠ (straight flush até o 6) quanto o 7♠ (straight flush até o 7) vencem o A♠).
+
+**Q. Se há um flush na mesa, quem ganha?**
+
+A. Quando as cinco cartas comunitárias formam um flush, todos os jogadores restantes o compartilham. Uma carta desse naipe mais alta que a mais baixa da mesa melhora a mão, então normalmente ganha quem tiver a maior carta desse tipo. Se ninguém tiver, todo mundo joga a mesa e o pote é dividido. Uma exceção quebra a regra: numa mesa conectada, qualquer carta do naipe que complete um straight flush ganha de todo flush — até uma mais baixa que a menor carta da mesa. (Com só três ou quatro cartas do naipe na mesa, só quem tem na mão as cartas do naipe que faltam é que de fato tem flush.)
+
+**Q. Se há uma sequência na mesa, quem ganha?**
+
+A. Quando as cinco cartas comunitárias já formam uma sequência, todo mundo tem pelo menos essa sequência — então ganha quem a esticar para uma sequência mais alta com uma carta da mão. Numa mesa 5-6-7-8-9, um jogador com um 10 faz 6-7-8-9-10 e ganha da mesa. Fique atento no instante em que três cartas do mesmo naipe estiverem ali: um adversário com duas cartas desse naipe bate todas essas sequências com um flush. Se ninguém consegue ir mais alto, o pote é dividido.
 
 **Q. Um par na mesa conta como parte da sua mão?**
 

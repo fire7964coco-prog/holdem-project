@@ -90,7 +90,7 @@ export const POST: Post = {
 | 翻牌前順序 | 倒數第二個行動 | **最後**行動（「選擇權」） |
 | 翻牌後順序 | **第一個**行動（劣勢） | 第二個行動 |
 
-> **提醒：** 翻牌前，行動從大盲左邊的玩家開始，大盲最後行動——他能先看到其他所有人的決定。從翻牌開始，順序重置、盲注們反而變成很早行動。逐街的完整先後順序，在[德州撲克規則](/zh-hant/blog/texas-holdem-rules-for-beginners)裡有完整拆解，鈕位周圍每個座位的名稱則在[位置策略](/zh-hant/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp")裡講清楚。
+> **提醒：** 翻牌前，行動從大盲左邊的玩家開始，大盲最後行動——他能先看到其他所有人的決定。從翻牌開始，順序重置、盲注們反而變成很早行動。逐街的完整先後順序，在[德州撲克的行動順序](/zh-hant/blog/holdem-game-order)裡有完整拆解，鈕位周圍每個座位的名稱則在[撲克位置詳解](/zh-hant/blog/holdem-positions)裡講清楚。
 
 ---
 
@@ -116,7 +116,7 @@ export const POST: Post = {
 
 </div>
 
-- **現金局：** 盲注 ==g:**固定不變**==。坐進 $1/$2 的局，直到你離桌都是 $1/$2。（想更深入比較，看[錦標賽怎麼玩](/zh-hant/blog/holdem-tournament "thumb:/images/holdem-tournament-hero.webp")。）
+- **現金局：** 盲注 ==g:**固定不變**==。坐進 $1/$2 的局，直到你離桌都是 $1/$2。（想更深入比較兩種形式，看[錦標賽 vs 現金局](/zh-hant/blog/holdem-tournament-vs-cash-game)。）
 - **錦標賽：** 盲注 ==r:按計時器 **往上升**==（例如 25/50 → 50/100 → 100/200），所以打到越晚，壓力越大。盲注級別、計時、結構表都在[錦標賽怎麼玩](/zh-hant/blog/holdem-tournament)裡講。
 
 ---
@@ -128,7 +128,7 @@ export const POST: Post = {
 
 多數錦標賽從前段或中段開始，會加進 **底注（Ante）**——一筆每手牌額外收、疊在盲注之上的小額強制注，用來把底池墊大、獎勵積極打法。現代常見的版本是 **大盲底注（Big Blind Ante）**：不用每個人各丟籌碼進去，而是 ==由大盲一個人代替全桌下一份底注——通常等於一個大盲==，這樣牌局又快又乾淨。底注什麼時候、怎麼開始生效，是[錦標賽盲注結構](/zh-hant/blog/holdem-tournament)的一部分。
 
-還有一個你會在現金局看到的強制注遠親：**盲抓（Straddle）**——一個 *自願* 的額外盲注（通常是 2× 大盲），由大盲左邊的座位下，暫時把這一手的注碼拉高。它有自己的一套規則、種類與行動順序，完整說明在[德州撲克術語大全](/zh-hant/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp")裡查得到。
+還有一個你會在現金局看到的強制注遠親：**盲抓（Straddle）**——一個 *自願* 的額外盲注（通常是 2× 大盲），由大盲左邊的座位下，暫時把這一手的注碼拉高。它有自己的一套規則、種類與行動順序，完整拆解在[盲抓是什麼、該不該下](/zh-hant/blog/holdem-straddle "thumb:/images/holdem-straddle-hero.webp")裡查得到；這類牌桌用語如果你還很陌生，[德州撲克術語大全](/zh-hant/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp")一次收齊。
 
 ---
 

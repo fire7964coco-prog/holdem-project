@@ -211,6 +211,10 @@ A. Não. Num cash game cada ficha já vale seu valor de face em dólares e você
 
 A. Você nunca o desliga por completo, mas o efeito é pequeno o bastante para usar o chip EV como aproximação nas fases inicial e média e no jogo deep-stacked com blinds pequenos — spots onde os pay jumps estão longe. No heads-up pelo título só restam dois prêmios, então a diferença entre primeiro e segundo pode ser avaliada por chip EV. Mesmo aí, confira a estrutura de pagamentos e a distribuição de stacks.
 
+**Q. Quais são os erros de ICM mais comuns?**
+
+A. Três grandes. O primeiro é *superaplicar* o ICM — foldar até o fundo "para subir na escada de premiação" quando os pay jumps ainda estão longe, em vez de acumular fichas. O segundo é pagar aberto demais como stack médio perto da bolha, exatamente onde o seu risk premium é mais alto — nada está garantido ainda, então quebrar ali custa toda a sua equity, min-cash incluído. O terceiro é aceitar um chip chop sendo o short stack (ou um ICM deal sendo o líder) sem rodar os números antes. O ICM é ferramenta de fase final: usá-lo cedo demais e ignorá-lo na final table vazam dinheiro dos dois jeitos.
+
 **Q. Quem inventou o ICM?**
 
 A. A matemática das probabilidades de colocação costuma ser creditada a David Harville (a partir de pesquisa de corrida de cavalos dos anos 1970), que Mason Malmuth aplicou a torneios de poker — daí o modelo "Malmuth–Harville". Ele virou a forma padrão de avaliar stacks de torneio e dividir deals de final table.

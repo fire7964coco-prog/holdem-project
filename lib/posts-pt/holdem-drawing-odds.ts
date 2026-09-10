@@ -190,6 +190,10 @@ A. São as mesmas odds ditas de dois jeitos. "7,5 para 1 contra" conta erros con
 
 A. Um set é um par na mão mais uma carta que combina na mesa — você flopa 11,8% das vezes e fica bem escondido. Trinca é uma carta despareada da mão que a mesa pareia (duas cartas iguais na mesa) — só 1,35% no flop, e bem mais óbvia pros adversários. Mesmo valor de trinca, odds e valor bem diferentes.
 
+**Q. O que é um flush draw?**
+
+A. Flush draw é quando você tem quatro cartas rumo a um flush e precisa de mais uma daquele naipe — por exemplo A♥ K♥ num flop 9♥ 5♥ 2♠, onde qualquer um dos nove copas restantes completa. Um flush draw flopado tem nove outs e chega lá cerca de 35% das vezes até o river, ou mais ou menos 19% numa carta única.
+
 **Q. Quais são as odds de flopar um flush?**
 
 A. Apenas 0,84% (cerca de 118 para 1) com duas cartas do mesmo naipe — isso é C(11,3)/C(50,3). Não confunda com flopar um flush *draw*, que é 10,9%, ou *completar* esse projeto até o river, que é 35%. Duas cartas do mesmo naipe flopam um projeto treze vezes mais do que um flush feito.
@@ -197,6 +201,14 @@ A. Apenas 0,84% (cerca de 118 para 1) com duas cartas do mesmo naipe — isso é
 **Q. Se eu flopar um flush draw, quais são as odds de completar?**
 
 A. Cerca de 35% até o river com nove outs (1 − C(38,2)/C(47,2)) — um pouco melhor que um em três. Numa carta única é mais ou menos 19%: 9/47 flop-pro-turn, 9/46 turn-pro-river. Use o número de uma carta sempre que ainda houver aposta por vir.
+
+**Q. Quais são as odds de fechar um flush com quatro cartas do naipe contra três?**
+
+A. Com quatro pro flush depois do flop — um flush draw de verdade, nove outs — você completa cerca de 35% das vezes até o river. Com só três pro flush você precisa que *turn e river* venham no seu naipe (um flush de backdoor, ou runner-runner), o que entra em apenas ~4,2%. É por isso que quatro pro flush é um projeto que vale jogar e três é quase só um critério de desempate.
+
+**Q. O que é um projeto de sequência e quais são as odds de acertar?**
+
+A. Projeto de sequência é ter quatro cartas rumo a uma sequência. Um open-ended straight draw (como 8-7 numa mesa 9-6-2, precisando de um 5 ou um 10) tem oito outs e completa cerca de 31,5% das vezes até o river. Um gutshot (projeto por dentro) tem só quatro outs — um único valor tapa o buraco — então acerta uns 16,5%, mais ou menos metade das vezes.
 
 **Q. Quais são as odds de flopar quadra?**
 

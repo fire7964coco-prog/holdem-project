@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ini glosarium bahasa sederhana untuk istilah poker yang benar-benar muncul di permainan Texas Hold'em, dikelompokkan berdasarkan cara Anda menemuinya — aksi taruhan, posisi, tangan dan board, tipe pemain, uang, dan situasi meja. Mulai dari istilah yang paling sering tertukar di bawah (check vs call, set vs trips, cooler vs bad beat), lalu jelajahi per kategori. Istilah dengan panduan mendalam langsung tertaut ke sana.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-08-28",
-  masterUpdated: "2026-08-26",
+  updated: "2026-09-10",
+  masterUpdated: "2026-08-30",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "📖",
@@ -55,7 +55,7 @@ Kalau Anda hanya sempat memperjelas selusin istilah, jadikan yang ini — inilah
 
 ---
 
-![Peta visual enam kategori istilah poker dalam glosarium ini — ACTIONS, POSITIONS, HANDS, PLAYERS, MONEY, dan SLANG](/images/holdem-glossary-categories.webp "Enam ranah yang dicakup glosarium ini — di halaman ini slang digabung ke bagian Tipe Pemain, dan ada satu bagian tambahan untuk situasi, statistik, dan etika")
+![Peta enam kotak kosakata poker di atas felt hijau tua, tiap kotak dengan ikon emas — ACTIONS, POSITIONS, HANDS, PLAYERS, MONEY, dan SLANG](/images/holdem-glossary-categories.webp "Enam ranah yang dicakup glosarium ini — di halaman ini slang digabung ke bagian Tipe Pemain, dan ada satu bagian tambahan untuk situasi, statistik, dan etika")
 
 ## Aksi Taruhan
 

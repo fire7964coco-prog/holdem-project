@@ -253,6 +253,10 @@ Para a mecânica dos próprios blinds — por que existem e como as apostas for�
 
 A. Out of position (OOP) significa que você precisa agir antes do seu adversário nas streets pós-flop — flop, turn e river. Você compromete fichas sem saber o que ele vai fazer, não consegue pegar cartas grátis e sofre para controlar o tamanho do pote. Os blinds ficam OOP contra toda outra cadeira (entre os dois, o small blind age primeiro — então o big blind na verdade tem posição sobre o small blind); o button nunca fica OOP contra ninguém.
 
+**Q. Quem age primeiro — o small blind ou o big blind?**
+
+A. Depende da street. No *pré-flop*, o small blind age antes do big blind, e o big blind age por último — ele "fecha" a ação. No *pós-flop* (flop, turn e river), o small blind é o primeiro a agir e o big blind vem logo depois, ou seja, com as cartas abertas o small blind age antes do big blind (a única exceção é o heads-up, onde o button posta o small blind e mesmo assim age por último no pós-flop, então quem começa é o big blind). O button sempre age por último no pós-flop, e é exatamente por isso que é a cadeira mais lucrativa.
+
 **Q. Por que posição importa tanto no poker?**
 
 A. Porque agir por último converte as mesmas cartas em mais dinheiro. Estudos de solver e de banco de dados sugerem que jogadores out of position capturam só cerca de 60–85% da sua equity teórica; in position você fica então necessariamente acima de 100% — o jogador in position vê cada decisão do adversário antes de tomar a sua, então aposta valor, blefa e folda em momentos melhores com as mesmíssimas cartas.
@@ -264,6 +268,10 @@ A. O button. É a única cadeira garantida a agir por último em toda street pó
 **Q. Qual a posição mais fraca no poker?**
 
 A. Duas respostas, dependendo da pergunta. O small blind é a cadeira estruturalmente pior para se jogar uma mão — primeiro a agir em toda street pós-flop. O big blind perde mais fichas brutas por 100 mãos, simplesmente porque posta um blind forçado inteiro em toda órbita; mesmo o jogo perfeito só reduz essa perda. Entre as cadeiras que não são blind, o UTG é a mais fraca: primeiro no pré-flop, range mais apertado, geralmente OOP depois do flop.
+
+**Q. O small blind é uma posição inicial?**
+
+A. Não — o small blind é um blind, não uma cadeira de "posição inicial". Os jogadores de posição inicial (UTG e as cadeiras ao lado dele) abrem apertado porque a mesa inteira age atrás — e no pós-flop eles pelo menos agem *depois* dos blinds. O small blind é na verdade a pior cadeira para se jogar uma mão: posta metade de um blind e depois age primeiro em toda street pós-flop. Não trate como posição inicial — o padrão moderno do small blind é dar 3-bet ou foldar.
 
 **Q. É melhor limpar ou aumentar do UTG?**
 

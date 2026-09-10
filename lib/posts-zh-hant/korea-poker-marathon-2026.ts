@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "韓國撲克馬拉松 2026 全攻略——賽事、馬拉松與仁川賭場一趟玩透",
   seoTitle: "韓國撲克馬拉松 2026——賽事×馬拉松行程指南",
   desc: "2026 年的外國人報名管道都已關閉，這是 2027 年的準備指南。賽程表、報名費，加上仁川機場十分鐘就到的 Paradise City，一趟全串起來。",
-  tldr: "韓國秋季頂級馬拉松（春川 10/25、JTBC 首爾 11/1、Garmin Run 11/15）正好落在最舒服的跑步天氣。仁川機場旁的 Paradise City 賭場全年開放現金桌——僅限外國人、離航廈十分鐘。撲克錦標賽（APT 仁川 8/7–16、APT 濟州 9/25–10/7）也在同一個秋季窗口——一趟行程兩邊都吃得到。2026 年的外國人報名管道都已關閉（最後一個是 JTBC，9/4 截止），這份指南是 2027 年的模板。",
+  tldr: "韓國秋季頂級馬拉松（春川 10/25、JTBC 首爾 11/1、Garmin Run 11/15）正好落在最舒服的跑步天氣。仁川機場旁的 Paradise City 賭場全年開放現金桌——僅限外國人、離航廈十分鐘。撲克錦標賽（APT 仁川 8/7–16、APT 濟州 9/25–10/7）也在同一個秋季窗口——一趟行程兩邊都吃得到。2026 年春川和 Garmin 的外國人報名已經結束，JTBC 則要看管道（日本 RUNNET 管道 9/4 關閉），這份指南也是 2027 年的模板。",
   category: "tournament",
   date: "2026-07-23",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-10",
+  masterUpdated: "2026-09-10",
   keepImagesInBody: true,
   readTime: "14 分鐘",
   emoji: "🏃",
@@ -70,7 +70,7 @@ export const POST: Post = {
 | 東亞首爾國際馬拉松 | 2026 年 3 月 | 全馬、10K | 首爾 | [dongamarathon.com](https://www.dongamarathon.com) | 2026 已結束 |
 | ==**YTN 首爾旅遊馬拉松**== | ==**9/6**== | ==**11KM**==、半馬 | 首爾廣場 | [run.ytn.co.kr](http://run.ytn.co.kr) | 已截止——6/26 提前額滿 |
 | ==g:**春川馬拉松**== | ==g:**10/25**== | ==g:全馬、10K== | ==g:春川== | ==g:[chuncheonmarathon.com](https://www.chuncheonmarathon.com)== | ==g:報名已截止（額滿）== |
-| ==**JTBC 首爾馬拉松**== | ==**11/1**== | 全馬、10K | 首爾（上岩） | [worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon) | 已截止（外國人報名 9/4 結束）——名額有限，抽籤分配 |
+| ==**JTBC 首爾馬拉松**== | ==**11/1**== | 全馬、10K | 首爾（上岩） | [worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon) | 外國人報名截止日依管道而定（日本 RUNNET 管道已於 2026 年 9/4 關閉）——名額有限，抽籤分配 |
 | Garmin Run 韓國 | 11/15 | 半馬、10K | 高陽 | [runable.me](http://runable.me/product/18977?comp=18962) | 已截止（報名期為 7/1–3） |
 
 </div>
@@ -130,11 +130,11 @@ export const POST: Post = {
 - 領取時須出示護照（不可代領）
 
 **如何報名（外國人）：**
-居住在韓國以外的外國跑者，一律透過 ==**[worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon)**== 報名。==r:名額有限、很快就滿==——==r:**2026 年的報名已於 9 月 4 日截止**==，同一天 23:59（KST）也是取消／退費的截止時間；2027 年的開放時間請上官方頁面確認。持韓國護照者不適用此管道。
+居住在韓國以外的外國跑者，一律透過 ==**[worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon)**== 報名。==r:名額有限、很快就滿==——==r:**截止日依你走的管道而定**==：日本 RUNNET 管道到 2026 年 9 月 4 日為止、已經關閉，而 worldsmarathons.com 是另一個管道，可能仍顯示有名額，所以請先到那裡確認再做打算。不論走哪個管道，取消／退費的截止時間都落在該管道關閉當天的 23:59（KST）；2027 年的開放時間請上官方頁面確認。持韓國護照者不適用此管道。
 
 這個管道的報名費是 ==**10K €104**== 、==**全馬 42.2K €129**== （限海外跑者）。由於過去兩個項目都在開放首日就額滿，==g:名額已改為抽籤分配== ——早報名不等於卡到位子，只是進入抽籤。物資包必須在賽前的 EXPO 領取，報名姓名要與護照一致。路線從 ==**世界盃公園（麻浦區）**== 起跑，終點在 ==**奧林匹克公園（松坡區）**== 。
 
-==g:JTBC 的外國人名額有限——2026 年已於 9/4 截止，2027 年開放時要趁早。==
+==g:JTBC 的外國人名額有限，而且截止日依報名管道而定——先在官方頁面確認目前狀態，2027 年開放時要趁早。==
 
 **賽後 → 玩牌：** 全馬終點在 ==奧林匹克公園==（松坡，5/8 號線）。從那裡搭地鐵到首爾站或弘大，再轉 AREX 各站停 → 在第一航廈轉 Paradise City 接駁車。從衝線算起要抓 ==**1.5–2 小時**==，還沒算洗澡換衣。多數跑者在 12 點到 13 點之間完賽——傍晚安排一場現金桌很實際，中午則不行。
 
@@ -201,7 +201,7 @@ export const POST: Post = {
       <td style="padding:10px 14px;font-weight:700;white-space:nowrap">9/25 – 10/7</td>
       <td style="padding:10px 14px"><strong>APT 濟州 2026</strong></td>
       <td style="padding:10px 14px">LES A Casino，濟州</td>
-      <td style="padding:10px 14px;color:hsl(var(--muted-foreground))">總保證獎池 $3.5M+ · 136 場賽事 · 距春川馬拉松 18 天</td>
+      <td style="padding:10px 14px;color:hsl(var(--muted-foreground))">總保證獎池 $3.5M+ · 135 場賽事 · 距春川馬拉松 18 天</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.07);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:10px 14px;font-weight:700;white-space:nowrap">10/30 – 11/8</td>
@@ -223,8 +223,8 @@ export const POST: Post = {
 
 ==**濟州島**== 是韓國最熱門的國內度假勝地——火山海岸線、亞熱帶氣候，多數國籍免簽。賽事辦在濟州神話世界（Jeju Shinhwa World）裡的 ==**LES A Casino**==。
 
-- **保證獎池：** ==g:136 場獎盃賽事、總保證獎池 $3.5M+==（主賽事：買入 ==**KRW 270 萬**== ≈ $1,800，==g:KRW 22 億保證==）
-- **完整賽程：** 已公布——13 天內 136 場賽事 · [theasianpokertour.com](https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/info)
+- **保證獎池：** ==g:135 場獎盃賽事、總保證獎池 $3.5M+==（主賽事：買入 ==**KRW 270 萬**== ≈ $1,800，==g:KRW 22 億保證==）
+- **完整賽程：** 已公布——13 天內 135 場賽事 · [theasianpokertour.com](https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/info)
 - 僅限外國人 · 19 歲以上 · 持有效護照（海外韓國人：韓國護照＋綠卡或移民證明）
 
 ==g:APT 濟州 10/7 結束——春川馬拉松是 10/25。中間隔 18 天。== 從濟州飛首爾，休息、逛逛，然後開跑。
@@ -321,7 +321,7 @@ export const POST: Post = {
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">9/25–10/7</td>
       <td style="padding:9px 12px">🃏 <strong>APT 濟州 2026</strong></td>
       <td style="padding:9px 12px">LES A Casino，濟州</td>
-      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">$3.5M+ GTD · 136 場賽事 · 距春川 18 天</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">$3.5M+ GTD · 135 場賽事 · 距春川 18 天</td>
     </tr>
     <tr style="background:rgba(34,197,94,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">10/25（日）</td>
@@ -365,7 +365,7 @@ export const POST: Post = {
 
 ==g:沒人在講的甜蜜點：== **APT 濟州 10 月 7 日結束——春川馬拉松是 10 月 25 日。** 中間隔 18 天。打完錦標賽，留在韓國，跑那場馬拉松。一張機票兩件事全包。如果你願意待到 11 月 1 日，JTBC 首爾也就在那裡。
 
-最乾淨的一趟雙吃：APT 仁川（8/7–16）→ 在首爾休養 → 春川馬拉松（10/25）或 JTBC（11/1）。或者：APT 濟州（9/25–10/7）→ 在韓國待 18 天 → 春川（10/25）。⚠ 2026 年的馬拉松外國人報名都已關閉（最後一個是 JTBC，9/4 截止）——這兩條路線請當作 2027 年的模板。
+最乾淨的一趟雙吃：APT 仁川（8/7–16）→ 在首爾休養 → 春川馬拉松（10/25）或 JTBC（11/1）。或者：APT 濟州（9/25–10/7）→ 在韓國待 18 天 → 春川（10/25）。⚠ 2026 年春川和 Garmin 的外國人報名已經結束，JTBC 要看管道（日本 RUNNET 管道 9/4 關閉，worldsmarathons.com 請以官方頁面現況為準）——這兩條路線也請當作 2027 年的模板。
 
 ---
 
@@ -548,7 +548,7 @@ A. 帶好護照（無海外永久居留權的韓國公民不得進入）、年�
 
 同時握著一份撲克資金和一本馬拉松訓練日誌的人，是真實存在的社群。BTS 的 Suga 沒有發明這個重疊——他只是讓它被看見。
 
-要記下的日期：==**春川 10/25**==、==**JTBC 首爾 11/1**==、Garmin Run 11/15——2026 年的報名管道都已關閉（最後一個是 JTBC，9/4 截止）。Paradise City 全年開放。
+要記下的日期：==**春川 10/25**==、==**JTBC 首爾 11/1**==、Garmin Run 11/15——2026 年只剩 JTBC 對外國人開放過，而它的截止日依管道而定（日本 RUNNET 管道 9/4 關閉），請以官方頁面的現況為準。Paradise City 全年開放。
 
 想看完整的撲克錦標賽全貌（APT 仁川，保證獎池 $2.7M，8 月 7–16 日）與賽事運作，先讀[德州撲克錦標賽入門指南](/zh-hant/blog/holdem-tournament)。想搞懂錦標賽與現金桌的策略差異：[錦標賽 vs 現金桌](/zh-hant/blog/holdem-tournament-vs-cash-game)。
 

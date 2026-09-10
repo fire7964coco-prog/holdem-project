@@ -30,7 +30,7 @@ export const POST: Post = {
 > **快速解答**
 > 由大到小是：皇家同花順、同花順、四條、葫蘆、同花、順子、三條、兩對、一對、高牌。排序的邏輯只有一條——越難湊成的牌型越大。下面這張表另外給你到河牌的真實機率，用來對照哪些牌型是真的稀有。
 
-這個順序不是誰規定的，而是機率排出來的。核心規則很單純 —— **從五張牌來看，越難湊成的牌型排得越大**。下面是完整的位階，附上每種牌打到河牌時實際會拿到的機率。
+這個順序不是誰規定的，而是機率排出來的。核心規則很單純 —— **從五張牌來看，越難湊成的牌型排得越大**。下面是完整的位階，附上每種牌打到河牌時實際會拿到的機率。換算成賠率、還有四二法則怎麼用，見[德州撲克機率與賠率一覽](/zh-hant/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp")。
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -179,7 +179,7 @@ A是最大的牌，也是唯一會「破例」的牌：它可以當大（A-K-Q-J
 ## 踢腳牌與平手怎麼比？（分池規則）
 
 > **快速解答**
-> 多數人在這裡出錯，不是因為不會比，而是把「手上剩的那張」當成踢腳。踢腳只有真的進到最強五張裡才算數——公牌上比你底牌大的牌一多，你那張就被擠出五張以外。
+> 多數人在這裡出錯，不是因為不會比，而是把「手上剩的那張」當成踢腳。踢腳只有真的進到最強五張裡才算數——公牌上比你底牌大的牌一多，你那張就被擠出五張以外。想把平手與[平分底池的完整規則](/zh-hant/blog/holdem-split-pot-rules)一次看全，另有專篇。
 
 ![撲克攤牌 —— 比較兩位玩家最強的五張牌](/images/holdem-kicker-showdown-neutral.webp "攤牌時，最強的五張牌拿走底池")
 
@@ -359,9 +359,29 @@ A. 皇家同花順（同一花色的 A-K-Q-J-10）。它無法被打敗 —— �
 
 A. 最爛的牌是花色不同的 7-5-4-3-2（七高）。它是不成對、不成順、不成花的最小高牌 —— 經典的「你什麼都沒有」。
 
+**Q. 什麼牌贏皇家同花順？**
+
+A. 沒有。皇家同花順（同一花色的 A-K-Q-J-10）是撲克裡最大的牌，沒有牌打得贏它。唯一的「平手」是皇家同花順整組攤在公牌上、大家共用，這時平分底池。
+
+**Q. 什麼牌贏同花順？**
+
+A. 只有更大的同花順，或皇家同花順（也就是 A 高的同花順）。同花順（#2）贏四條以及以下所有牌型。
+
+**Q. 三條比兩對大嗎？**
+
+A. 大。三條是 #7、兩對是 #8，所以三條贏。兩對能贏的只有一對和高牌。
+
+**Q. 同花順和四條哪個大？**
+
+A. 同花順大。同花順（#2）贏四條（#3）—— 五張同花色又相連，比四張同點數更難湊成。
+
 **Q. 可以有三對嗎？**
 
 A. 不行。一手撲克牌永遠是五張，所以最多只能有兩對。七張牌裡就算湊出三對，也只取最大的兩對，第三對只能貢獻一張當踢腳牌，不存在「三對」這種牌型。
+
+**Q. A 可以當 1 用嗎？**
+
+A. 可以。A 既能當大也能當小，所以 A-2-3-4-5（「輪子」）是合法的順子 —— 而且是最小的一副。不過不能繞角：K-A-2-3-4 不是順子。
 
 ---
 
@@ -372,5 +392,44 @@ A. 不行。一手撲克牌永遠是五張，所以最多只能有兩對。七�
 3. **現實：** 大多數底池是靠一對或高牌贏的，所以你的踢腳牌比你想的更值錢。
 
 一個下午把順序背起來，把容易混的幾組多練幾次，然後每一副公牌都跑一次「同花 → 順子 → 對子」的掃描。做到這些，你就再也不會把底池推錯邊了。
+
+知道牌型之後，自然的下一步是搞清楚該用哪些牌起手 —— 用[按位置排的德州撲克起手牌表](/zh-hant/blog/holdem-starting-hands-chart)看清每個座位到底該玩哪些底牌。
+
+---
+
+## 相關文章
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
+  <a href="/zh-hant/blog/holdem-flush-vs-straight" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">牌型對決</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">同花跟順子哪個大？</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">比牌機率、逐張比大小與 3 種常見誤判</div>
+  </a>
+  <a href="/zh-hant/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">比牌規則</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">牌型一樣誰贏？</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">平手與踢腳牌的完整比法</div>
+  </a>
+  <a href="/zh-hant/blog/holdem-split-pot-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">分池</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">什麼時候會平分底池？</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Chop、奇數籌碼給誰、邊池怎麼分</div>
+  </a>
+  <a href="/zh-hant/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">新手指南</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">德州撲克規則怎麼玩？</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">玩法、籌碼、牌型與下注一次搞懂</div>
+  </a>
+  <a href="/zh-hant/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">起手牌</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">德州撲克起手牌表</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">最強起手牌、位置範圍與6人桌打法</div>
+  </a>
+  <a href="/zh-hant/blog/holdem-reading-the-board" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">讀牌</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">德州撲克牌面怎麼讀？</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">7 選 5、堅果牌反推與危險牌面</div>
+  </a>
+</div>
 `.trim(),
 };

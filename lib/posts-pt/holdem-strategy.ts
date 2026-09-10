@@ -231,6 +231,10 @@ A. Prefira aumentar a pagar sempre que tiver uma mão que vale a pena continuar.
 
 A. Bem menos do que parece natural. Um jogador tight-aggressive vencedor folda cerca de 80% das mãos antes do flop, jogando mais apertado em posição inicial e mais solto no botão. Se você está entrando em potes com mais de uma em cada cinco mãos, quase certamente está jogando demais — apertar é a forma mais rápida de melhorar.
 
+**Q. Poker é um jogo de habilidade ou de sorte?**
+
+A. Os dois — mas a habilidade vence com o tempo. Uma mão isolada carrega um componente enorme de sorte, e é por isso que um iniciante consegue stackar um profissional numa sessão. Ao longo de milhares de mãos, porém, a vantagem de quem decide melhor domina e a variância se dilui — exatamente por isso os mesmos jogadores continuam cravando. Poker é um jogo de habilidade jogado com um baralho de sorte.
+
 **Q. O que é estratégia GTO no poker?**
 
 A. GTO (Game Theory Optimal) é o jogo teoricamente perfeito que um solver calcula — ninguém consegue explorá-lo, mas ele vive de frequências mistas difíceis de executar. Para o iniciante, a ordem certa é dominar o framework tight-aggressive desta página primeiro e tratar GTO como ferramenta de estudo depois: os [spots já calculados do solver](/pt/solver) deixam você conferir a resposta sem instalar nada.
@@ -242,6 +246,10 @@ A. Tight-aggressive descreve jogar um range estreito de mãos fortes (tight) mas
 **Q. Com que frequência você deve dar continuation bet (c-bet)?**
 
 A. Não há um número único — depende da posição, do board e de quantos adversários você enfrenta. Em posição contra um jogador num board seco você dá c-bet com mais frequência; fora de posição ou contra dois ou mais adversários, bem menos — as faixas concretas estão no [guia de c-bet](/pt/blog/holdem-continuation-bet). Aposte mais em boards que erram o range do adversário, menos em boards molhados que conectam com ele, e faça sizing pequeno (25–35% do pote) quando aposta largo, maior (65%+) quando polarizado.
+
+**Q. Como você melhora no poker?**
+
+A. Estude longe da mesa e aperte o jogo nela. Os ganhos mais rápidos para a maioria dos jogadores: foldar mais mãos no pré-flop (a regra dos ~80%), aumentar ou foldar em vez de limpar, e revisar depois as suas maiores mãos perdidas para achar o vazamento. Acrescente um conceito de cada vez — posição, depois pot odds, depois c-bet — em vez de tudo de uma vez. Volume mais revisão honesta ganha de qualquer "dica" isolada.
 
 ---
 

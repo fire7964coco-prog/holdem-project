@@ -195,6 +195,10 @@ A. Divida o valor que você precisa pagar pelo pote total *depois* do seu call. 
 
 A. Sim. A fórmula da equity necessária usa o pote *final*, que inclui o seu próprio call. Pagar $50 num pote de $150 significa um pote final de $200, então 50 ÷ 200 = 25%. Deixar o seu call de fora é o erro de iniciante mais comum.
 
+**Q. Como se calcula o tamanho do pote no poker?**
+
+A. O pote é cada ficha que já está no meio mais qualquer aposta feita na street atual. Antes de calcular as pot odds, some o pote inicial e a aposta do adversário — e depois inclua o seu próprio call no pote *final*. Exemplo: um pote de $100, uma aposta de $50 e o seu call de $50 formam um pote final de $200.
+
 **Q. O que é uma boa razão de pot odds?**
 
 A. Quanto maior, melhor — você adoraria estar "recebendo 5 para 1" (precisando de só 16,7%). Mas "boa" é relativo à sua mão: receber 2 para 1 (precisando de 33%) é aceitável com um flush draw só quando você já vai ver as duas cartas (all-in ou sem mais apostas, 35%); não fecha se o call compra uma carta só (19,1% do flop, 19,6% do turn); e é péssimo com um gutshot. Sempre compare o preço com a sua equity.
@@ -214,6 +218,10 @@ A. As pot odds só contam as fichas que estão no pote agora. As implied odds so
 **Q. Que pot odds uma aposta do tamanho do pote oferece?**
 
 A. Uma aposta do tamanho do pote te dá 2 para 1, então você precisa de 33% de equity para pagar. Uma aposta de meio pote dá 3 para 1 (25% necessário); um overbet de 2× o pote dá 1,5 para 1 (40% necessário). Apostas maiores exigem mais equity, mas o aumento é pequeno: um overbet de 2× o pote pede 40%, um overbet de 3× cerca de 43%, um de 5× cerca de 45% — e nenhuma aposta, por maior que seja, jamais pede mais de 50%.
+
+**Q. Quanto do pote você deve apostar?**
+
+A. O sizing da aposta é o outro lado das pot odds — a sua aposta define o preço que o adversário recebe. Uma aposta de meio pote dá a ele 3 para 1 (ele precisa de 25%), uma aposta do tamanho do pote dá 2 para 1 (ele precisa de 33%), e um overbet exige mais ainda. Aposte maior em mesas cheias de projeto para negar aos draws um call lucrativo; diminua o size quando quiser que uma mão mais fraca pague por valor. Os sizings comuns vão de ⅓ do pote até o pote inteiro, dependendo da mesa e do seu objetivo.
 
 **Q. O que é a regra do 2 e 4?**
 

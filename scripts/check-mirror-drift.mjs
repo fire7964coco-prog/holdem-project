@@ -41,11 +41,13 @@ const EN_DIR = path.join(LIB, 'posts-en');
 const field = (src, name) => (src.match(new RegExp(`^\\s*${name}:\\s*["']([^"']+)["']`, 'm')) ?? [])[1] ?? null;
 
 /**
- * 핵심 로케일 — EN-먼저 정정이 실제로 전파되는 범위(en 포함 8로케일에서 마스터 en을 뺀 7).
+ * 핵심 로케일 — EN-먼저 정정이 실제로 전파되는 범위(마스터 en + 미러 8 = 실질 9에서 en을 뺀 8).
+ * 🔴 2026-09-10 사장님 결재 40 — 「id까지 · en도 넣어라」. en은 «미러»가 아니라 «출발점»이라
+ *    이 목록에 넣으면 EN을 EN과 대조하게 되므로 넣지 않는다. ar이 이번에 핵심으로 올라왔다.
  * 🔴 이 목록을 늘리려면 «전파 회차가 실제로 그 로케일을 만지는가»를 먼저 확인하라.
  *    목록만 늘리면 게이트가 다시 상시 빨간불이 되고, 그때부터 아무도 안 본다.
  */
-export const CORE_LOCALES = ['de', 'es', 'id', 'ja', 'pt', 'zh', 'zh-hant'];
+export const CORE_LOCALES = ['ar', 'de', 'es', 'id', 'ja', 'pt', 'zh', 'zh-hant'];
 const isCore = (loc) => CORE_LOCALES.includes(loc);
 
 /** EN 마스터의 slug → updated 맵 */

@@ -238,6 +238,10 @@ A. Nein. Im Cash Game entspricht jeder Chip bereits seinem Nennwert in Dollar, u
 
 A. Ganz abschalten kannst du es nie, aber sein Effekt ist in frühen und mittleren Phasen sowie im Deepstacked-Spiel mit kleinen Blinds klein genug, um Chip EV als Näherung zu nehmen – Spots, wo Pay Jumps weit weg sind. Heads-up um den Titel bleiben nur zwei Preise übrig, also lässt sich die Lücke zwischen Platz eins und zwei nach Chip EV beurteilen. Auch dann gilt: Wirf einen Blick auf Auszahlungsstruktur und Stackverteilung.
 
+**Q. Was sind die häufigsten ICM-Fehler?**
+
+A. Drei große. Erstens ICM *über*anzuwenden – sich nach unten zu folden, um „hochzuladdern“, obwohl die Pay Jumps noch weit weg sind, statt Chips zu sammeln. Zweitens als Medium Stack nahe der Bubble zu weit zu callen, also genau dort, wo deine Risikoprämie am höchsten ist: Gesichert ist noch nichts, Busten kostet dich dort deine gesamte Equity, den Min-Cash eingeschlossen. Drittens einem Chip Chop zuzustimmen, wenn du der Short Stack bist (oder einem ICM Deal, wenn du der Chipleader bist), ohne vorher die Zahlen zu rechnen. ICM ist ein Werkzeug für die späte Phase: Es zu früh anzuwenden kostet Geld – es am Final Table zu ignorieren genauso.
+
 **Q. Wer hat ICM erfunden?**
 
 A. Die Finish-Wahrscheinlichkeits-Mathematik wird meist David Harville (aus der Pferderennforschung der 1970er) zugeschrieben, die Mason Malmuth auf Pokerturniere anwandte – daher das „Malmuth–Harville“-Modell. Es wurde die Standardmethode, um Turnierstacks zu bewerten und Final-Table-Deals aufzuteilen.

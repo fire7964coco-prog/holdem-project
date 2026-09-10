@@ -192,7 +192,7 @@ Estos porcentajes describen *tamaños de rango* — qué manos concretas los rel
 
 La mayoría de las guías se quedan en «evita jugar OOP». Vale — pero estás en las ciegas dos veces por órbita, y a veces tu apertura de UTG la iguala el botón. Aquí tienes cómo perder lo mínimo, y de vez en cuando darle la vuelta a la tortilla:
 
-**1. El check-raise es tu igualador.** Es el arma que tiene OOP y que IP no tiene: como esperan apostar cuando les pasan, ==g:un check-raise vuelve su piloto automático posicional en su contra.== Construye el rango con honestidad — manos fuertes (tríos, doble pareja) más proyectos con equity real (escaleras abiertas, proyectos de color) — para que nunca sea todo farol ni todo valor.
+**1. [El check-raise](/es/blog/low-board-check-raise) es tu igualador.** Es el arma que tiene OOP y que IP no tiene: como esperan apostar cuando les pasan, ==g:un check-raise vuelve su piloto automático posicional en su contra.== Construye el rango con honestidad — manos fuertes (tríos, doble pareja) más proyectos con equity real (escaleras abiertas, proyectos de color) — para que nunca sea todo farol ni todo valor.
 
 **2. Apuesta más grande cuando apuestes.** Las apuestas OOP tienen que cerrar manos antes. Un sizing mayor (piensa en dos tercios o tres cuartos del bote en vez de un tercio) niega las cartas gratis y las igualadas especulativas baratas que la posición le dejaría tomar a tu rival. Jugar al small-ball OOP solo alarga la mano — y cada calle extra favorece al que actúa último.
 
