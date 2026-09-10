@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Los grandes maratones de otoño de Corea (Chuncheon 25 oct, JTBC Seúl 1 nov, Garmin Run 15 nov) coinciden con el clima ideal para correr. El casino Paradise City, junto al aeropuerto de Incheon, ofrece cash games todo el año — solo extranjeros, a 10 min de la terminal. Un viaje cubre ambas cosas. Para 2026, la única inscripción de extranjeros es la del JTBC, con fecha límite el 4 de sep.",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-10",
+  masterUpdated: "2026-09-10",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏃",
@@ -185,7 +185,7 @@ Aquí es donde el calendario se pone interesante. Tres festivales de póker se c
       <td style="padding:10px 14px;font-weight:700;white-space:nowrap">25 sep – 7 oct</td>
       <td style="padding:10px 14px"><strong>APT Jeju 2026</strong></td>
       <td style="padding:10px 14px">LES A Casino, Jeju</td>
-      <td style="padding:10px 14px;color:hsl(var(--muted-foreground))">$3.5M+ garantizado total (GTD) · 136 eventos · termina 18 días antes del Maratón de Chuncheon</td>
+      <td style="padding:10px 14px;color:hsl(var(--muted-foreground))">$3.5M+ garantizado total (GTD) · 135 eventos · termina 18 días antes del Maratón de Chuncheon</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.07);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:10px 14px;font-weight:700;white-space:nowrap">30 oct – 8 nov</td>
@@ -207,8 +207,8 @@ Aquí es donde el calendario se pone interesante. Tres festivales de póker se c
 
 ==**La isla de Jeju**== es el destino de resort nacional más popular de Corea — costa volcánica, clima subtropical, sin visado para la mayoría de nacionalidades. El torneo se disputa en el ==**LES A Casino**== dentro de Jeju Shinhwa World.
 
-- **Garantizado:** ==g:$3.5M+ garantizado total (GTD) repartido en 136 eventos con trofeo== (Main Event: buy-in de ==**KRW 2,7M**== ≈ $1.800, ==g:KRW 2.200M GTD==)
-- **Calendario completo:** publicado — 136 eventos en 13 días · [theasianpokertour.com](https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/info)
+- **Garantizado:** ==g:$3.5M+ garantizado total (GTD) repartido en 135 eventos con trofeo== (Main Event: buy-in de ==**KRW 2,7M**== ≈ $1.800, ==g:KRW 2.200M GTD==)
+- **Calendario completo:** publicado — 135 eventos en 13 días · [theasianpokertour.com](https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/info)
 - Solo extranjeros · +19 · pasaporte válido (coreanos residentes en el extranjero: pasaporte coreano + green card o certificado de emigración)
 
 ==g:El APT Jeju acaba el 7 oct — el Maratón de Chuncheon es el 25 oct. 18 días entre ambos.== Vuela de Jeju a Seúl, descansa y explora, y luego corre.
@@ -302,7 +302,7 @@ Para el panorama completo de torneos (el APT Incheon se disputó del 7 al 16 de 
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">25 sep–7 oct</td>
       <td style="padding:9px 12px">🃏 <strong>APT Jeju 2026</strong></td>
       <td style="padding:9px 12px">LES A Casino, Jeju</td>
-      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">$3.5M+ GTD · 136 eventos · 18 días hasta Chuncheon</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">$3.5M+ GTD · 135 eventos · 18 días hasta Chuncheon</td>
     </tr>
     <tr style="background:rgba(34,197,94,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">25 oct (dom)</td>

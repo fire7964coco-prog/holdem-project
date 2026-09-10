@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "韩国最好的秋季马拉松（春川 10 月 25 日、JTBC 首尔 11 月 1 日、Garmin Run 11 月 15 日）正好赶上完美的跑步天气。仁川机场旁的 Paradise City Casino 全年开放现金局——只对外国人开放，离航站楼 10 分钟。一趟行程两样都能拿下。2026 年的外国人报名已全部结束；2027 年的春川窗口约在 7 月。",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-10",
+  masterUpdated: "2026-09-10",
   keepImagesInBody: true,
   readTime: "14 分钟",
   emoji: "🏃",
@@ -187,7 +187,7 @@ export const POST: Post = {
 ## 韩国扑克赛事：2026 年 9–12 月
 
 > **快速回答**
-> 三场扑克节正好落在秋季窗口：APT Jeju 9 月 25 日–10 月 7 日（济州 LES A Casino，136 项赛事、$3.5M+ 保底），GOP Incheon 10 月 30 日–11 月 8 日（Paradise City；JTBC 马拉松那天正好是它的第 3 天），AJPC Samurai Circuit 12 月 4–13 日（Paradise City）。APT Jeju 结束后隔 18 天，就是春川马拉松。
+> 三场扑克节正好落在秋季窗口：APT Jeju 9 月 25 日–10 月 7 日（济州 LES A Casino，135 项赛事、$3.5M+ 保底），GOP Incheon 10 月 30 日–11 月 8 日（Paradise City；JTBC 马拉松那天正好是它的第 3 天），AJPC Samurai Circuit 12 月 4–13 日（Paradise City）。APT Jeju 结束后隔 18 天，就是春川马拉松。
 
 赛程有意思的地方就在这里。三场扑克节在韩国场馆举办，正好落在和马拉松同一个秋季窗口——而且其中一场直接和 JTBC 首尔撞上。
 
@@ -206,7 +206,7 @@ export const POST: Post = {
       <td style="padding:10px 14px;font-weight:700;white-space:nowrap">9 月 25 日 – 10 月 7 日</td>
       <td style="padding:10px 14px"><strong>APT Jeju 2026</strong></td>
       <td style="padding:10px 14px">LES A Casino, Jeju</td>
-      <td style="padding:10px 14px;color:hsl(var(--muted-foreground))">$3.5M+ 总保底 · 136 项赛事 · 春川马拉松前 18 天结束</td>
+      <td style="padding:10px 14px;color:hsl(var(--muted-foreground))">$3.5M+ 总保底 · 135 项赛事 · 春川马拉松前 18 天结束</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.07);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:10px 14px;font-weight:700;white-space:nowrap">10 月 30 日 – 11 月 8 日</td>
@@ -228,8 +228,8 @@ export const POST: Post = {
 
 ==**济州岛**== 是韩国最受欢迎的本土度假胜地——火山海岸、亚热带气候、多数国籍免签（⚠️ ==r:中国内地护照的济州免签只在济州岛内有效，不能从济州飞首尔或仁川==——见 [APT 仁川指南](/zh/blog/apt-incheon-2026-guide) 的签证一节）。赛事在济州新华世界（Jeju Shinhwa World）内的 ==**LES A Casino**== 举办。
 
-- **保底：** ==g:136 项奖杯赛事总保底 $3.5M+==（主赛事：买入 ==**KRW 270 万**== ≈ $1,800，==g:KRW 22 亿保底==）
-- **完整赛程：** 已公布——13 天内 136 项赛事 · [theasianpokertour.com](https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/info)
+- **保底：** ==g:135 项奖杯赛事总保底 $3.5M+==（主赛事：买入 ==**KRW 270 万**== ≈ $1,800，==g:KRW 22 亿保底==）
+- **完整赛程：** 已公布——13 天内 135 项赛事 · [theasianpokertour.com](https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/info)
 - 仅限外国人 · 19+ · 持有效护照（海外韩国人：韩国护照 + 绿卡或移民证明）
 
 ==g:APT Jeju 10 月 7 日结束——春川马拉松是 10 月 25 日。中间隔 18 天。== 从济州飞首尔，休整、逛逛，然后开跑。
@@ -326,7 +326,7 @@ export const POST: Post = {
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">9 月 25 日–10 月 7 日</td>
       <td style="padding:9px 12px">🃏 <strong>APT Jeju 2026</strong></td>
       <td style="padding:9px 12px">LES A Casino, Jeju</td>
-      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">$3.5M+ GTD · 136 项赛事 · 距春川 18 天</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">$3.5M+ GTD · 135 项赛事 · 距春川 18 天</td>
     </tr>
     <tr style="background:rgba(34,197,94,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">10 月 25 日（周日）</td>

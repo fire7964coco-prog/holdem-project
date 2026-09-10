@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "韓国と日本は時差0時間、サマータイムもないので、土曜に着いて日曜の朝に走れます。海外マラソンで前泊1泊で済むのは韓国くらいです。韓国の秋の主要マラソン(春川10/25、JTBCソウル11/1、ガーミンラン11/15)は、走るのに最高の気候と重なります。仁川空港すぐそばのパラダイスシティ・カジノは通年でキャッシュゲームを開催(外国人専用・ターミナルから10分)。一度の旅で両方を味わえます。2026年に外国人がエントリーできるのはJTBCのみです(RUNNET受付は9/4で終了・worldsmarathons枠は同サイトで受付状況を要確認)。",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-10",
+  masterUpdated: "2026-09-10",
   keepImagesInBody: true,
   readTime: "14分",
   emoji: "🏃",
@@ -238,7 +238,7 @@ export const POST: Post = {
       <td style="padding:10px 14px;font-weight:700;white-space:nowrap">9/25 – 10/7</td>
       <td style="padding:10px 14px"><strong>APT済州 2026</strong></td>
       <td style="padding:10px 14px">LES A カジノ、済州</td>
-      <td style="padding:10px 14px;color:hsl(var(--muted-foreground))">$3.5M+ 総GTD · 136イベント · 春川マラソンの18日前に終了</td>
+      <td style="padding:10px 14px;color:hsl(var(--muted-foreground))">$3.5M+ 総GTD · 135イベント · 春川マラソンの18日前に終了</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.07);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:10px 14px;font-weight:700;white-space:nowrap">10/30 – 11/8</td>
@@ -260,8 +260,8 @@ export const POST: Post = {
 
 ==**済州島**==は韓国で最も人気の国内リゾート——火山性の海岸線、亜熱帯の気候、多くの国籍でビザ不要。トーナメントは済州神話ワールド(Jeju Shinhwa World)内の==**LES A カジノ**==で開催されます。
 
-- **保証(ギャランティ):** ==g:136のトロフィーイベントで総額$3.5M+ GTD==(メインイベント: バイイン ==**KRW 270万**== ≒ $1,800、==g:KRW 22億 GTD==)
-- **フルスケジュール:** 公開済み — 13日間で136イベント · [theasianpokertour.com](https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/info)
+- **保証(ギャランティ):** ==g:135のトロフィーイベントで総額$3.5M+ GTD==(メインイベント: バイイン ==**KRW 270万**== ≒ $1,800、==g:KRW 22億 GTD==)
+- **フルスケジュール:** 公開済み — 13日間で135イベント · [theasianpokertour.com](https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/info)
 - 外国人専用 · 19歳以上 · ==g:日本のパスポート(実物)でOK==
 
 ==g:APT済州は10/7に終了 — 春川マラソンは10/25。その間は18日間。== 済州 → ソウルと移動し、休んで観光してから、レースへ。
@@ -357,7 +357,7 @@ export const POST: Post = {
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">9/25–10/7</td>
       <td style="padding:9px 12px">🃏 <strong>APT済州 2026</strong></td>
       <td style="padding:9px 12px">LES A カジノ、済州</td>
-      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">$3.5M+ GTD · 136イベント · 春川まで18日</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">$3.5M+ GTD · 135イベント · 春川まで18日</td>
     </tr>
     <tr style="background:rgba(34,197,94,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">10/25(日)</td>

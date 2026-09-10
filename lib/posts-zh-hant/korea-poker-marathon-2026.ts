@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "韓國秋季頂級馬拉松（春川 10/25、JTBC 首爾 11/1、Garmin Run 11/15）正好落在最舒服的跑步天氣。仁川機場旁的 Paradise City 賭場全年開放現金桌——僅限外國人、離航廈十分鐘。撲克錦標賽（APT 仁川 8/7–16、APT 濟州 9/25–10/7）也在同一個秋季窗口——一趟行程兩邊都吃得到。2026 年春川和 Garmin 的外國人報名已經結束，JTBC 則要看管道（日本 RUNNET 管道 9/4 關閉），這份指南也是 2027 年的模板。",
   category: "tournament",
   date: "2026-07-23",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-10",
+  masterUpdated: "2026-09-10",
   keepImagesInBody: true,
   readTime: "14 分鐘",
   emoji: "🏃",
@@ -201,7 +201,7 @@ export const POST: Post = {
       <td style="padding:10px 14px;font-weight:700;white-space:nowrap">9/25 – 10/7</td>
       <td style="padding:10px 14px"><strong>APT 濟州 2026</strong></td>
       <td style="padding:10px 14px">LES A Casino，濟州</td>
-      <td style="padding:10px 14px;color:hsl(var(--muted-foreground))">總保證獎池 $3.5M+ · 136 場賽事 · 距春川馬拉松 18 天</td>
+      <td style="padding:10px 14px;color:hsl(var(--muted-foreground))">總保證獎池 $3.5M+ · 135 場賽事 · 距春川馬拉松 18 天</td>
     </tr>
     <tr style="background:rgba(212,175,55,0.07);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:10px 14px;font-weight:700;white-space:nowrap">10/30 – 11/8</td>
@@ -223,8 +223,8 @@ export const POST: Post = {
 
 ==**濟州島**== 是韓國最熱門的國內度假勝地——火山海岸線、亞熱帶氣候，多數國籍免簽。賽事辦在濟州神話世界（Jeju Shinhwa World）裡的 ==**LES A Casino**==。
 
-- **保證獎池：** ==g:136 場獎盃賽事、總保證獎池 $3.5M+==（主賽事：買入 ==**KRW 270 萬**== ≈ $1,800，==g:KRW 22 億保證==）
-- **完整賽程：** 已公布——13 天內 136 場賽事 · [theasianpokertour.com](https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/info)
+- **保證獎池：** ==g:135 場獎盃賽事、總保證獎池 $3.5M+==（主賽事：買入 ==**KRW 270 萬**== ≈ $1,800，==g:KRW 22 億保證==）
+- **完整賽程：** 已公布——13 天內 135 場賽事 · [theasianpokertour.com](https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/info)
 - 僅限外國人 · 19 歲以上 · 持有效護照（海外韓國人：韓國護照＋綠卡或移民證明）
 
 ==g:APT 濟州 10/7 結束——春川馬拉松是 10/25。中間隔 18 天。== 從濟州飛首爾，休息、逛逛，然後開跑。
@@ -321,7 +321,7 @@ export const POST: Post = {
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">9/25–10/7</td>
       <td style="padding:9px 12px">🃏 <strong>APT 濟州 2026</strong></td>
       <td style="padding:9px 12px">LES A Casino，濟州</td>
-      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">$3.5M+ GTD · 136 場賽事 · 距春川 18 天</td>
+      <td style="padding:9px 12px;color:hsl(var(--muted-foreground))">$3.5M+ GTD · 135 場賽事 · 距春川 18 天</td>
     </tr>
     <tr style="background:rgba(34,197,94,0.08);border-bottom:1px solid rgba(255,255,255,0.06)">
       <td style="padding:9px 12px;font-weight:700;white-space:nowrap">10/25（日）</td>
