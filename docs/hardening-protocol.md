@@ -67,7 +67,7 @@
 | 본체 main | `Holdem_Project` | 발행·수정·**머지·빌드·배포** | 본체 |
 | 🇨🇳 | `Holdem-zh` | zh 경화 | 본체 |
 | 🇹🇼 | `Holdem-zh-hant` | zh-hant 경화 | 본체 |
-| 🇯🇵 | `Holdem-ja` | ja 경화(`harden-ja`) | 본체 |
+| 🇯🇵 | `Holdem-ja` | ja 경화(`harden-ja`) — 🔴 **소급 회차 종료(회차 14 · 2026-09-11 사장님 결재 · `settled-decisions` §1-D)**. 이제 `lane:sync` 수신만. ja 잔여는 🧰 queue Q6 | 본체 |
 | 🧰 | `Holdem-queue` | **헤드 잔여 작업 레인**(`harden-queue` · 2026-09-11 신설) — EN-먼저 대기열 · 결재 실행 · 헤드 판정 묶음 · 게이트 신설을 **회차 단위**로. 부록 = **§7-F** | 본체 |
 | 본부 | `홀덤검수` | 검수 설계·규율·머지 | **검수장** |
 | 레인 | `홀덤검수-es`·`-zh`·`-id` | **원장**(판정) | 검수장 |
