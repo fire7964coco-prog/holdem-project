@@ -1,3 +1,13 @@
+## 2026-09-11 (12) — **`screen-review` 스킬 신설(클로드가 화면을 직접 찍어 보고 고친다) + `docs/DESIGN.md` + lazyowen 가이드 31편 카탈로그** (배포 무관)
+
+사장님 지시: 쇼츠 `49Yc4rS6sIU` + `lazyowen.com/go/claude-design-top-5-skill`에서 쓸만한 것 스킬화 · «클로드가 화면 보고 고치기»에 관심 · 가이드 섹션 전체를 파일로.
+- **핵심 판정**: 화면 보기는 외부 도구(agent-browser) 없이 **레포 Playwright 1.60 + sharp**로 된다(Read가 PNG를 본다). 라이브 `holdem-3bet-strategy`를 1440/390으로 찍어 구도·글자 판독 실증(390 = 20,868px · seg 25장).
+- **자산**: `.claude/skills/screen-review/`(SKILL.md · `scripts/shoot.mjs` = full/overview/seg/crop/report.json/sheet/`--compare` · `references/toolkit.md`) — 원본은 `홀덤관련스킬방/skills/screen-review`. `docs/DESIGN.md` = 토큰 역할·골드 2종·금지(값의 정본은 globals.css). `.gitignore`에 `/tmp/`.
+- **카탈로그**: `홀덤관련스킬방/외부도구-카탈로그-lazyowen.md`(109KB · 31편 · §1 판정표 = 채택 3 · 후보 ~10 · 기각 사유). 기각 축 = 모델 분담 §5-A-3 · 원문 축어 §12-B · 핸드오프 정본과의 충돌.
+- 함정: Git Bash가 인자 `/`를 `C:/Program Files/Git/`로 바꾼다(홈 = `home`) · 고정 바는 full-page 첫 뷰포트에 한 번 그려짐 · `deploy.py`는 비대화 셸에서 EOFError.
+
+---
+
 ## 2026-09-11 (11) — **🧰 `Holdem-queue` 레인 신설 — 헤드 잔여 작업(EN-먼저·결재 실행·판정 묶음·게이트)을 회차 단위 별도 창으로** (사장님 지시 · 배포 무관 docs·scripts)
 
 사장님 지시 축어 「남은할일들을 언어마다 경화폴더 만들어서 작업했던거처럼 폴더하나 만들어서 할수있으면 좋겠어..여기서 작업하니까 컨텍스트가 길어지고 맥락이 자꾸 끊기네」. 우편함 확인 선행(본체 미처리 0 · MB-033~039 검수장 회신 대기만).
