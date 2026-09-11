@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Di Texas Hold'em, setiap pemain menerima 2 hole cards, ada 5 kartu bersama di tengah meja, dan tangan poker 5 kartu terbaik menang setelah empat ronde taruhan.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "14 menit",
   emoji: "♠️",
@@ -203,7 +203,7 @@ Ketika orang bilang "Texas Hold'em", hampir selalu maksudnya **No-Limit Hold'em 
 
 | Format | Berapa yang boleh ditaruhkan? | Di mana Anda menemukannya |
 |--------|-----------------------|---------------------|
-| **No-Limit (NLHE)** | Berapa pun sampai seluruh chip Anda ("all-in") | Permainan default — home game, mayoritas kasino, WSOP |
+| **No-Limit (NLHE)** | Dari big blind sampai seluruh chip Anda ("all-in") | Permainan default — home game, mayoritas kasino, WSOP |
 | **Fixed-Limit** | Hanya kelipatan tetap (small bet tetap, lalu dobel di turn/river) | Meja kasino lama; naik-turun chip lebih kecil |
 | **Pot-Limit** | Maksimal sebesar pot saat itu | Jarang untuk Hold'em; standar untuk Omaha (PLO) |
 
@@ -444,7 +444,7 @@ A. Satu dek 52 kartu untuk seluruh meja, dan setiap pemain hanya memegang 2 kart
 
 **Q. Apa arti no-limit di Texas Hold'em?**
 
-A. No-Limit berarti Anda bisa bertaruh berapa pun sampai seluruh chip Anda di ronde taruhan mana pun — itulah gerakan "all-in". Ini format default dan paling populer, termasuk di Main Event WSOP. Limit Hold'em membatasi tiap taruhan ke ukuran tetap, dan Pot-Limit membatasi taruhan Anda ke ukuran pot saat itu.
+A. No-Limit berarti taruhan Anda di ronde taruhan mana pun bisa dari sebesar big blind sampai seluruh chip Anda — batas atasnya adalah gerakan "all-in". Ini format default dan paling populer, termasuk di Main Event WSOP. Limit Hold'em membatasi tiap taruhan ke ukuran tetap, dan Pot-Limit membatasi taruhan Anda ke ukuran pot saat itu.
 
 **Q. Berapa lama satu tangan Texas Hold'em berlangsung?**
 

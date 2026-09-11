@@ -251,13 +251,13 @@ Ini semua aksi yang tersedia di meja — bagian yang paling sering bikin pemula 
 
 | Aksi | Apa fungsinya | Kapan tersedia |
 |------|------|------|
-| Fold | Menyerah, membuang kartu Anda | Kapan saja |
+| Fold | Menyerah, membuang kartu Anda | Street mana pun — saat giliran Anda |
 | Cek (check) | Melewatkan giliran tanpa bertaruh | Hanya saat tidak ada taruhan ke arah Anda |
 | Call | Menyamai taruhan yang berjalan | Saat ada taruhan ke arah Anda |
 | Bet | Memasang taruhan pertama di satu ronde | Saat belum ada yang bertaruh |
 | Raise | Menaikkan di atas taruhan yang berjalan | Saat ada taruhan ke arah Anda |
 | Re-raise (3-bet) | Raise di atas sebuah raise | Saat ada raise ke arah Anda |
-| All-in | Mendorong semua chip Anda ke tengah | Kapan saja |
+| All-in | Mendorong semua chip Anda ke tengah | Street mana pun — saat giliran Anda, sebagai bet atau raise |
 
 </div>
 

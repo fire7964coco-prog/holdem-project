@@ -41,7 +41,7 @@ La regla depende de cómo terminó la última ronda de apuestas (para la secuenc
 |--------------------|-----------------|
 | Alguien apostó o subió en el river | ==El último jugador que apostó o subió== enseña primero |
 | Todos pasaron en el river | El primer jugador activo a la izquierda del botón enseña primero |
-| All-in en una calle anterior (sin apuestas en el river) | Torneo: todas las manos boca arriba antes o durante el reparto (regla 16 de la TDA). Cash: el que fue all-in da la vuelta primero — si hay side pot, los del side pot enseñan primero (regla 149 de las Live Action Rules) |
+| All-in en una calle anterior (sin apuestas en el river) | Torneo: todas las manos se muestran sin demora en cuanto termina toda la acción de apuestas (regla 16 de la TDA). Cash: el que fue all-in da la vuelta primero — si hay side pot, los del side pot enseñan primero (regla 149 de las Live Action Rules) |
 
 </div>
 
@@ -83,7 +83,7 @@ En **torneo**, cuando un jugador va all-in y ya no hay más apuestas posibles, l
 
 | Escenario de all-in | Regla del showdown |
 |----------------|---------------|
-| Un jugador va all-in en una calle anterior, los demás pagan, no hay más apuestas posibles | Torneo: todas las manos boca arriba antes o durante el reparto. Cash: el jugador all-in da la vuelta primero — si hay side pot, los del side pot enseñan primero (regla 149 de las Live Action Rules) |
+| Un jugador va all-in en una calle anterior, los demás pagan, no hay más apuestas posibles | Torneo: todas las manos se muestran sin demora en cuanto termina toda la acción de apuestas. Cash: el jugador all-in da la vuelta primero — si hay side pot, los del side pot enseñan primero (regla 149 de las Live Action Rules) |
 | Una apuesta all-in en el river es pagada | El que fue all-in enseña primero como último agresor — y en torneo ==r:aquí no puede tirar nadie==: por la regla 16 de la TDA el que paga también tiene que enseñar |
 | Varios all-ins que crean varios side pots | Cada bote se resuelve por separado; se enseñan todas las manos implicadas |
 
@@ -147,7 +147,7 @@ Estás casi seguro de que has perdido. Deslizas tus cartas boca abajo hacia el m
 
 ### Error 3: exigir ver todas las manos pagadas
 
-En la mayoría de los casinos puedes pedirle al dealer que exponga una mano tirada al muck — pero solo una mano que fue pagada y llegó al showdown. Las manos foldeadas están muertas y no se pueden recuperar jamás. Esta regla existe para proteger contra el chip dumping (regalar fichas a un cómplice) y la colusión, no para satisfacer la curiosidad, y abusar de ella se considera de mala educación. Úsala con cuentagotas.
+En la mayoría de los casinos puedes pedirle al dealer que exponga una mano tirada al muck — pero solo una mano que fue pagada y llegó al showdown. Una mano foldeada está muerta en cuanto entra en el muck, y solo una mano que siga siendo claramente identificable puede recuperarse (regla 109 del reglamento de torneos de las WSOP). Esta regla existe para proteger contra el chip dumping (regalar fichas a un cómplice) y la colusión, no para satisfacer la curiosidad, y abusar de ella se considera de mala educación. Úsala con cuentagotas.
 
 ### Error 4: no saber que puedes enseñar antes de tu turno
 
@@ -188,7 +188,7 @@ A. El slow roll es retrasar a propósito enseñar una mano ganadora que ya sabes
 
 **Q. En una situación de all-in, ¿quién enseña primero?**
 
-A. En torneo, cuando un jugador va all-in y no son posibles más apuestas, todas las manos implicadas en ese bote se ponen boca arriba antes o durante el reparto de las cartas comunitarias restantes (regla 16 de la TDA). Si hay side pot, se adjudica primero y el bote principal después — pero las cartas del all-in ya están boca arriba mucho antes. En cash, las WSOP Live Action Rules hacen que el que fue all-in dé la vuelta primero, y los del side pot enseñan antes que quien solo está all-in por el bote principal (regla 149).
+A. En torneo, cuando un jugador va all-in y no son posibles más apuestas, todas las manos implicadas en ese bote se muestran sin demora en cuanto termina toda la acción de apuestas — antes de repartir las cartas comunitarias restantes (regla 16 de la TDA). Si hay side pot, se adjudica primero y el bote principal después — pero las cartas del all-in ya están boca arriba mucho antes. En cash, las WSOP Live Action Rules hacen que el que fue all-in dé la vuelta primero, y los del side pot enseñan antes que quien solo está all-in por el bote principal (regla 149).
 
 **Q. ¿Qué significa "cards speak" en el póker?**
 

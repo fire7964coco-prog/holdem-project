@@ -177,7 +177,7 @@ Cada asiento tiene su propio rango de apertura porque **el número de jugadores 
 | Hijack | ~20% | Empiezan las oportunidades de robo |
 | **Cutoff** | **~27%** | Solo el botón detrás — asiento de robo por excelencia |
 | **Botón** | ==g:**~43%**== | Última acción garantizada en el postflop — la apertura más amplia |
-| Ciega pequeña | ~40% (subir o foldear) | Amplio cuando llega foldeado — sube por defecto, aunque completar es un [limp](/es/blog/holdem-limping) defendible en un bote sin subir; frente a una subida, 3-bet o fold — no iguales |
+| Ciega pequeña | ~40% cuando llega foldeado (frente a una subida: 3-bet o fold) | Amplio cuando llega foldeado — sube por defecto, aunque completar es un [limp](/es/blog/holdem-limping) defendible en un bote sin subir; frente a una subida, 3-bet o fold — no iguales |
 | Ciega grande | Defiende amplio vs robos | Cierra la acción + pot odds, no aperturas |
 
 ![Mesa de póker de 9 jugadores mostrando cómo los rangos de apertura se abren desde UTG (~13%, rojo cerrado) hasta el botón (~43%, verde amplio)](/images/holdem-position-play-opening-range.webp "Rango de apertura por posición — UTG abre ~13%, el botón ~43%")

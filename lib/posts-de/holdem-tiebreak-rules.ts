@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ties werden in fester Reihenfolge entschieden: zuerst der Handrang, dann die Karten, die die Hand bilden, dann die Kicker von hoch nach niedrig. Gleiches Paar → der höhere erste Kicker gewinnt; identische fünf Karten → geteilter Pot. Farben entscheiden einen Tie niemals.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-10",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "12 Min.",
   emoji: "⚖️",
@@ -234,7 +234,7 @@ A. Das Wheel, A-2-3-4-5, weil das Ass darin als Eins spielt. Straßen werden rei
 
 **Q. Entscheiden Farben beim Texas Hold'em jemals einen Tie?**
 
-A. Nein. Es gibt beim Hold'em keine Farbwertung – stimmen zwei beste Fünf-Karten-Hände Rang für Rang überein, wird der Pot unabhängig von den Farben geteilt.
+A. Nein – aber es gibt am Hold'em-Tisch eine Stelle, an der Farben eine Rolle spielen, und das ist nicht der Pot. In Cashgames und nach den Hausregeln der meisten Cardrooms zieht jeder Spieler eine Karte, um zu bestimmen, wo der Dealer-Button startet, und haben zwei Karten denselben Rang, entscheidet die Farbreihenfolge. (WSOP-Turniere überspringen dieses Ziehen: ==WSOP-Turnierregel 85== setzt den Button beim ersten Stack rechts vom Dealer an und lost erst bei noch drei, zwei und einem verbleibenden Tisch neu – ganz ohne Farben.) So oder so bestimmt das einen *Platz*, nie eine Hand. Die einzige Farbreihenfolge im Turnier-Regelwerk gehört zu Stud und Razz. Stimmen zwei beste Fünf-Karten-Hände Rang für Rang überein, wird der Pot unabhängig von den Farben geteilt.
 
 **Q. Was passiert, wenn beide Spieler exakt dieselbe Hand haben?**
 

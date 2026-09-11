@@ -177,7 +177,7 @@ Cada cadeira ganha o seu próprio range de abertura porque **o número de jogado
 | Hijack | ~20% | Começam as oportunidades de roubo |
 | **Cutoff** | **~27%** | Só o button atrás — cadeira nobre de roubo |
 | **Button** | ==g:**~43%**== | Última ação pós-flop garantida — abertura mais larga |
-| Small blind | ~40% (aumenta ou folda) | Largo quando folda até você — aumente por padrão, embora completar seja um [limp](/pt/blog/holdem-limping) defensável em pote não aumentado; diante de um aumento, 3-bet ou fold — não pague |
+| Small blind | ~40% quando folda até você (diante de um aumento: 3-bet ou fold) | Largo quando folda até você — aumente por padrão, embora completar seja um [limp](/pt/blog/holdem-limping) defensável em pote não aumentado; diante de um aumento, 3-bet ou fold — não pague |
 | Big blind | Defende largo vs roubos | Ação de fechamento + pot odds, não aberturas |
 
 ![Mesa de poker de 9 jogadores mostrando ranges de abertura alargando do UTG (~13%, vermelho apertado) ao Button (~43%, verde largo)](/images/holdem-position-play-opening-range.webp "Range de abertura por posição — o UTG abre ~13%, o button ~43%")

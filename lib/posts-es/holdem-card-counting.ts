@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "No como en el blackjack — la baraja se rebaraja cada mano y se ven muy pocas cartas, así que rastrear cartas altas y bajas no te da ninguna ventaja. Pero el póker tiene su propio conteo legal: contar outs, usar bloqueadores y rastrear cartas muertas para leer lo que tu rival no puede tener.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🧮",
@@ -94,7 +94,7 @@ Los bloqueadores también funcionan parcialmente. En una mesa ==b:Q-J-9==, la es
 
 ### Eliminación de cartas y cartas muertas
 
-Cada carta que ves elimina posibilidades. En el Hold'em un out no puede estar sobre la mesa — si lo estuviera, tu mano ya estaría hecha — así que las ==cartas muertas== que hay que rastrear son las que se ven *fuera* de la mesa: una carta que se enseña por error en un reparto mal hecho, una mano que se muestra antes de irse al muck, el fold de un vecino que alcanzaste a ver. Cada una que has visto es un out que ya no tienes. Ajustar por ellas es una costumbre constante y silenciosa que los buenos jugadores mantienen en cada calle. Es contar, solo que no del tipo que necesita un total corrido.
+Cada carta que ves elimina posibilidades. En el Hold'em un out no puede estar sobre la mesa — si lo estuviera, tu mano ya estaría hecha — así que las ==cartas muertas== que hay que rastrear son las que se ven *fuera* de la mesa: una carta que se enseña por error, una mano que se muestra antes de irse al muck, el fold de un vecino que alcanzaste a ver. Cada una que has visto es un out que ya no tienes. Ajustar por ellas es una costumbre constante y silenciosa que los buenos jugadores mantienen en cada calle. Es contar, solo que no del tipo que necesita un total corrido.
 
 ---
 
@@ -114,7 +114,7 @@ La línea que nunca hay que cruzar es la trampa física o de información — ca
 
 **En Seven Card Stud, buena parte de las cartas de cada jugador se reparten boca arriba — así que de verdad puedes contar la baraja a la vieja usanza.** Si necesitas una carta concreta para completar tu mano, puedes mirar alrededor de la mesa y contar literalmente cuántas de tus outs ya están a la vista en las cartas descubiertas de los rivales. Cada una que detectas es una out muerta.
 
-El Hold'em solo expone las cinco cartas comunitarias compartidas, así que esto se limita a la mesa. Pero el Stud — y sus parientes, el Razz y el Stud Hi-Lo, que reparten las mismas cartas boca arriba — premia justo el tipo de rastreo de cartas en el que los contadores de blackjack son buenos. Es lo más cerca que el póker llega a la versión de película.
+En el Hold'em las únicas cartas que se reparten boca arriba son las cinco cartas comunitarias compartidas — cualquier otra cosa que veas es un accidente (una carta enseñada por error, una mano mostrada al foldear), así que hay poco que rastrear. Pero el Stud — y sus parientes, el Razz y el Stud Hi-Lo, que reparten las mismas cartas boca arriba — premia justo el tipo de rastreo de cartas en el que los contadores de blackjack son buenos. Es lo más cerca que el póker llega a la versión de película.
 
 ---
 
@@ -125,7 +125,7 @@ El Hold'em solo expone las cinco cartas comunitarias compartidas, así que esto 
 :::steps
 Cuenta tus outs en cada proyecto | En cuanto tengas un proyecto, cuenta las cartas que lo completan y multiplica — ×4 solo cuando vienen las dos cartas (estás all-in, o el river sale gratis), y si no ×2 solo por la siguiente carta. Iguala cuando esa probabilidad supera el precio
 Pregúntate qué bloquea tu mano | Antes de farolear, comprueba si llevas una carta que vuelve imposible o menos probable su mano más fuerte para pagar
-Ajusta por las cartas muertas | Resta cualquier out que hayas visto expuesto fuera de la mesa — una carta que se enseñó por error, una mano mostrada, un fold que alcanzaste a ver. Las cartas que ves son cartas que tu rival no puede tener — pero solo vistas por accidente: intentar ver a propósito las cartas de otro jugador va contra las reglas y es sancionable en cualquier sala
+Ajusta por las cartas muertas | Resta cualquier out que hayas visto expuesto fuera de la mesa — una carta que se enseñó por error, una mano mostrada, un fold que alcanzaste a ver. Las cartas que ves son cartas que tu rival no puede tener — pero solo vistas por accidente: intentar ver a propósito las cartas de otro jugador no forma parte de este método — solo cuenta la exposición accidental
 :::
 
 Hazlo unas cuantas sesiones y se vuelve automático — estarás "contando cartas" en cada mano, solo que a la manera del póker. El siguiente paso es convertir esos conteos en calls y folds con las [pot odds](/es/blog/holdem-pot-odds), la matemática que te dice si tus outs valen el precio.

@@ -92,7 +92,7 @@ const SPEC: [string, string][] = [
   ["Tempat perhitungan", "Di perangkat Anda sendiri — perhitungan Anda tidak lewat server kami"],
   ["Kompatibilitas", "Browser modern — Windows, macOS, Linux, ponsel"],
   // 🟢 이 열거는 앱 셀렉터(11개)와 1:1이다 — 브리프 실측 `solver/src/i18n.ts:18`.
-  ["Bahasa", "Bahasa Indonesia (plus Inggris, Korea, Jepang, Spanyol, Portugis, Jerman, Mandarin aksara sederhana dan tradisional, Prancis, Melayu, dan Hindi)"],
+  // 🔴 2026-09-11 — 이 자리에 있던 «지원 언어 열거» 행을 삭제했다(사장님 결정 2026-09-09 · 솔버 S-013 · docs/solver-landing-playbook.md). 재신설 금지 — 언어 대응은 FAQ 한 문항으로만.
   ["Mesin", "WASM Postflop open source (AGPL-3.0) · kode hasil modifikasi dipublikasikan"],
 ];
 

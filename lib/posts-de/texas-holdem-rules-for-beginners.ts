@@ -8,10 +8,10 @@ export const POST: Post = {
   tldr: "Beim Texas Hold'em bekommt jeder Spieler 2 Hole Cards, dazu kommen 5 Gemeinschaftskarten – nach vier Setzrunden gewinnt die beste Fünf-Karten-Hand.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-10",
+  updated: "2026-09-11",
   // 🔴 masterUpdated는 07-12 그대로 둔다 – 이 글은 「판 전체 재동기화」 보류분(드리프트 잔존)이다.
   //    남은 항목이 있는 채로 올리면 드리프트 추적이 거짓말을 한다(session-handoff §착수 전 7).
-  masterUpdated: "2026-09-09",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "14 Min.",
   emoji: "♠️",
@@ -238,7 +238,7 @@ Wenn Leute „Texas Hold'em“ sagen, meinen sie fast immer **No-Limit Hold'em (
 
 | Format | Wie viel darfst du setzen? | Wo du es antriffst |
 |--------|-----------------------|---------------------|
-| **No-Limit (NLHE)** | Jeden Betrag bis zu all deinen Chips („All-in“) | Standard – Heimrunden, die meisten Casinos, WSOP |
+| **No-Limit (NLHE)** | Jeden Betrag ab dem Big Blind bis zu all deinen Chips („All-in“) | Standard – Heimrunden, die meisten Casinos, WSOP |
 | **Fixed-Limit** | Nur feste Schritte (eine kleine Bet, auf Turn/River eine doppelte) | Ältere Casinotische; weniger große Swings |
 | **Pot-Limit** | Bis zur aktuellen Potgröße | Selten beim Hold'em; Standard bei Omaha (PLO) |
 
@@ -479,7 +479,7 @@ A. Ja – **Poker zu zweit** heißt Heads-up und ist die schnellste Variante üb
 
 **Q. Was bedeutet No-Limit beim Texas Hold'em?**
 
-A. No-Limit heißt, du kannst in jeder Setzrunde jeden Betrag bis zu all deinen Chips setzen – das ist das „All-in“. Es ist das Standard- und beliebteste Format, inklusive WSOP Main Event. Limit Hold'em begrenzt jede Bet auf eine feste Größe, Pot-Limit begrenzt deine Bet auf die aktuelle Potgröße.
+A. No-Limit heißt, du kannst in jeder Setzrunde jeden Betrag ab dem Big Blind bis zu all deinen Chips setzen – das obere Ende ist das „All-in“. Es ist das Standard- und beliebteste Format, inklusive WSOP Main Event. Limit Hold'em begrenzt jede Bet auf eine feste Größe, Pot-Limit begrenzt deine Bet auf die aktuelle Potgröße.
 
 **Q. Wie lange dauert eine Hand Texas Hold'em?**
 

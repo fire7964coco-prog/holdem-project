@@ -235,7 +235,7 @@ A. Limpear (limp) es entrar al bote en el preflop solo igualando la ciega grande
 
 **Q. ¿Cuál es la diferencia entre igualar (call) y pasar (check)?**
 
-A. Pasar (check) es gratis y solo se puede cuando nadie ha apostado todavía en esa ronda — dices "sigo dentro" sin poner una sola ficha. Igualar (call) cuesta fichas: pagas exactamente la apuesta que alguien ya ha hecho para seguir en la mano. En una palabra: pasas cuando no hay nada que pagar, igualas cuando ya hay una apuesta sobre la mesa.
+A. Pasar (check) es gratis y solo se puede cuando no tienes ninguna apuesta que igualar en esa ronda — dices "sigo dentro" sin poner una sola ficha. Igualar (call) cuesta fichas: pagas exactamente la apuesta que alguien ya ha hecho para seguir en la mano. En una palabra: pasas cuando no hay nada que pagar, igualas cuando ya hay una apuesta sobre la mesa.
 
 **Q. ¿Qué significa foldear?**
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Not the way you do in blackjack — the deck reshuffles every hand and too few cards are exposed, so tracking high and low cards gives you no edge. But poker has its own legal counting: counting outs, using blockers, and tracking dead cards to read what your opponent can't have.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-09",
+  updated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🧮",
@@ -93,7 +93,7 @@ Blockers also work partially. On a ==b:Q-J-9== board, the nut straight is K-10. 
 
 ### Card removal & dead cards
 
-Every card you can see removes possibilities. In Hold'em an out can't be sitting on the board — if it were, your hand would already be made — so the ==dead cards== to track are the ones exposed *off* the board: a card flashed in a misdeal, a hand shown before it hit the muck, a neighbor's fold you happened to see. Each one you've seen is an out you no longer have. Adjusting for them is a constant, quiet habit good players keep on every street. It's counting, just not the kind that needs a running total.
+Every card you can see removes possibilities. In Hold'em an out can't be sitting on the board — if it were, your hand would already be made — so the ==dead cards== to track are the ones exposed *off* the board: a card flashed by mistake, a hand shown before it hit the muck, a neighbor's fold you happened to see. Each one you've seen is an out you no longer have. Adjusting for them is a constant, quiet habit good players keep on every street. It's counting, just not the kind that needs a running total.
 
 ---
 
@@ -113,7 +113,7 @@ The line to never cross is physical or informational cheating — marked cards, 
 
 **In Seven Card Stud, a big chunk of every player's cards are dealt face up — so you genuinely can count the deck the old-fashioned way.** If you need a specific card to complete your hand, you can look around the table and literally count how many of your outs are already showing in opponents' up-cards. Every one you spot is a dead out.
 
-Hold'em only exposes the five shared community cards, so this is limited to the board. But Stud — and its relatives Razz and Stud Hi-Lo, which deal the same face-up cards — rewards exactly the kind of card-tracking that blackjack counters are good at. It's the closest poker gets to the movie version.
+In Hold'em the only cards dealt face-up are the five shared community cards — anything else you see is an accident (a flashed card, a hand shown on the fold), so there is little to track. But Stud — and its relatives Razz and Stud Hi-Lo, which deal the same face-up cards — rewards exactly the kind of card-tracking that blackjack counters are good at. It's the closest poker gets to the movie version.
 
 ---
 
@@ -124,7 +124,7 @@ Hold'em only exposes the five shared community cards, so this is limited to the 
 :::steps
 Count your outs on every draw | The moment you have a draw, count the cards that complete it and multiply — ×4 only when both cards are coming (you're all-in, or the river is free), otherwise ×2 for the next card alone. Call when that chance beats the price
 Ask what your hand blocks | Before you bluff, check whether you hold a card that makes their strongest calling hand impossible or less likely
-Adjust for dead cards | Subtract any out you've seen exposed off the board — a flashed card, a shown hand, a fold you glimpsed. Cards you can see are cards your opponent can't have — but glimpsed by accident only: deliberately trying to see another player's cards is against the rules and penalty-eligible in any card room
+Adjust for dead cards | Subtract any out you've seen exposed off the board — a flashed card, a shown hand, a fold you glimpsed. Cards you can see are cards your opponent can't have — but glimpsed by accident only: deliberately trying to see another player's cards is not part of this method — accidental exposure only
 :::
 
 Do this for a few sessions and it becomes automatic — you'll be "counting cards" every hand, just the poker way. The next step is turning those counts into calls and folds with [pot odds](/en/blog/holdem-pot-odds), the math that tells you whether your outs are worth the price.

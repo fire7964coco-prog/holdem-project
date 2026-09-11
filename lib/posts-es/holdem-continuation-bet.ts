@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Apuesta de continuación (c-bet): cuándo disparar en el flop, cuánto y cuándo pasar",
   seoTitle: "Por qué 'cbetear cada flop' te sangra fichas — estrategia de c-bet",
   desc: "Qué es una apuesta de continuación (c-bet), en qué flops cbetear y en cuáles pasar, el tamaño exacto — pequeño en board seco, grande en húmedo.",
-  tldr: "Una apuesta de continuación (c-bet) es una apuesta en el flop del jugador que subió antes del flop. La regla moderna no es 'cbetear cada flop' — es apostar los flops que favorecen tu rango (boards altos y secos como K-7-2) pequeño y a menudo, y pasar los que favorecen a tu rival (boards bajos y conectados como 7-6-5). Apuesta pequeño — un tercio del bote — en boards secos, grande — dos tercios o más — en los húmedos, cbetea menos fuera de posición y mucho menos multiway.",
+  tldr: "Una apuesta de continuación (c-bet) es una apuesta en el flop del jugador que subió antes del flop. La regla moderna no es 'cbetear cada flop' — es apostar los flops que favorecen tu rango (boards altos y secos como K-7-2) pequeño y a menudo, y pasar los que favorecen a tu rival (boards bajos y conectados como 7-6-5). Apuesta pequeño — un tercio del bote — en boards secos, grande — dos tercios o más — en los húmedos, cbetea menos fuera de posición cuando eras el agresor de un bote de subida simple (como 3-bettor fuera de posición se invierte: casi siempre), y mucho menos multiway.",
   category: "strategy",
   date: "2026-07-06",
   updated: "2026-09-11",
@@ -279,7 +279,7 @@ A. Alrededor del 55–70% para c-bet en el flop es una banda sana y equilibrada.
 1. **Una c-bet es una apuesta en el flop del agresor del preflop** — y funciona porque las manos fallan el flop cerca de dos tercios de las veces.
 2. **El board decide.** Apuesta los boards altos y secos que favorecen a tu rango; pasa los boards bajos y conectados que favorecen al de tu rival.
 3. **La ventaja de rango marca la frecuencia; la ventaja de nuts marca el tamaño.** Apuesta a menudo en los boards que dominas; apuesta grande solo cuando tienes más de las nuts.
-4. **Pequeño (⅓) en seco, grande (⅔+) en húmedo.** Cbetea menos fuera de posición, y mucho menos multiway.
+4. **Pequeño (⅓) en seco, grande (⅔+) en húmedo.** Cbetea menos fuera de posición cuando eras el agresor de un bote de subida simple (como 3-bettor fuera de posición se invierte: casi siempre), y mucho menos multiway.
 5. **Pasar es un arma.** Los mejores jugadores pasan a menudo y a propósito — la c-bet es un bisturí, no un martillo.
 
 Domina esto y dejarás de quemar botes en boards que nunca fueron tuyos para apostar. Combina un cbeteo afilado con un buen [juego de 3-bet](/es/blog/holdem-3bet), verdadera conciencia de la [posición](/es/blog/holdem-position-play) y el [marco de estrategia](/es/blog/holdem-strategy) completo, y tu juego de flop dejará atrás en silencio a la multitud del "apuesta cada flop".

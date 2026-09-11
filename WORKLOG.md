@@ -1,3 +1,16 @@
+## 2026-09-11 (9) — **우편함 회차 — 미처리 4건(S-013 · MA-130 · MA-131 · MA-136) 전건 이행: 솔버 랜딩 8행 삭제 · EN-먼저 9편 + 7로케일 전파(78파일) · ja MA-136 2건 · 교열 렌즈 7건** (커밋 `522b57f8` · 빌드 · 배포 · 라이브 확인)
+
+사장님 「우편함 확인 후 밀린 거 있나 봐봐」 → 「진행해」. `mailbox-check` 미처리 7건 중 수신 4건(가장 오래된 S-013 09-09부터) — WORKLOG·핸드오프·발신함 어디에도 언급 없음 = 전부 미착수 확인 후 실물 대조.
+- **S-013(솔버)**: 8곳 «지원 언어 열거» 행 삭제(행 필터 방식 · 첫 정규식은 CRLF에 안 맞아 실패 → 줄 단위로 재시도) + 재신설 금지 주석 + `solver-landing-playbook` 규칙 교체. 회신 MB-036.
+- **MA-130·131(검수장)**: es 재청구 4건 중 3건이 **EN 동형 → EN-먼저**(game-order 「Anytime」·showdown 「before/during runout」 3자리·「never retrieved」) — 1차 출처 축어로 정정(TDA 2024 §16 「tabled without delay once … all betting action … is complete」 · WSOP T §84 non-standard folds · §109 identifiable hand retrieved · §96 minimum legal amount). blind-meaning 「sin excepción」은 실물 없음. id blind-meaning → **X-1 등재**(`en-first-queue` §2-E). NL 최소 벳(X-2) · 버튼 드로우 FAQ(de·id·pt — Q는 있었고 A만 짧았다) · KPM 「9/4 단일 마감」(en 7자리 + 6로케일 · ja는 이미 창구 구분) · c-bet OOP 한정 · kicker FAQ · card-counting 3 · position-play SB · bubble Tournament ×2 전부 EN+7로케일. 회신 MB-037.
+- **MA-136(검수장)**: ja short-stack 3자리 + ept L407. 🪶 레인 실측 정정 — `af6ca275`는 한정어를 블록에 넣었고 회차 11이 압축; 무한정 잔존 자리는 본문 L122 → 축어 복원. 회신 MB-038.
+- **실행 = Opus 서브 7(로케일별 병렬 · exact-match 1회 단언 · 스탬프 규율) + 교열 렌즈 1(전체 diff 263KB)**. 렌즈 8건: HIGH 2(zh showdown 「在那之前」 **의미 역전** · EN bubble L139 Tournament 누락) · MEDIUM 3(zh bubble 스톨링 문장 자기모순(기존) · KPM desc 「still open」 ↔ 본문 「may still show places」 → 6로케일 「may still」 + pt 표 셀 되돌림 · zh-hant c-bet 「唯一」 탈락) · LOW 3(ja 「。 」 공백 · zh-hant 굵게 · EN tiebreak 「Rule 85」 한정어 = **보류**(EN updated 올리면 4로케일 가짜 드리프트)). 7건 반영.
+- **게이트**: audit:hard en 56/56·de 43/43·es 60/60·id 42/42·ja 57/57·pt 42/42·zh 56/56·zh-hant 57/57 전부 🔴 0(🟠은 기존 C2) · check:drift 🔴 6 = ar(제외) · answer-echo echo 0 · 백틱 = HEAD 동일 · **check:meta 🔴 1(EN KPM desc 174자)** → 157자 → 렌즈 반영 후 168 → 159(de 161→147 · pt 163→159 · 꼬리 축약) · 빌드 exit 0 · 70+525 · sitemap lastmod 32 · loc 0.
+- **마감 `lane:sync`**: zh·zh-hant ✅ `a60ae683` · **ja 🔴 BLOCKED** — 레인 워크트리에 회차 12 진행 중(브리프 미커밋 + 7편) · 겹침 `texas-holdem-rules-for-beginners.ts` 1개(다른 hunk) → HARDEN.md에 «커밋 뒤 merge main» 지시 · 헤드는 레인 커밋 통지 후 재실행. 🪶 §6-0을 헤드가 어긴 셈이다(레인 진행 중 파일 1개를 만졌다) — 착수 전 `lane:status`가 아니라 **레인 워크트리 `git status`**를 봐야 진행 중 회차가 보인다(`lane:status`는 «behind»만 본다).
+- 🪶 교훈: ① desc를 고칠 땐 **길이를 같은 스크립트에서 단언**하라(2회 재빌드) ② 서브 7개가 같은 스크래치패드를 써 pt 워커 스크립트가 덮어써졌다(무해 · write 전 exit 구조) — 병렬 서브에는 **전용 하위 폴더**를 지정하라 ③ bash 헤레독 안에 긴 JS를 넣지 마라(파싱 실패 → 아무것도 안 돈다) — 스크립트는 파일로.
+
+---
+
 ## 2026-09-11 (8) — **ja 회차 11 머지·배포(레인 `9fbe7b6e` → ff `0b7ea301` · sitemap `d2056bcb`) — 직답 «자기완결성» 축 16자리/13편 + 헤드 §5-I 11건 처리(EN-먼저 J#9·J#10 고침 · J#8 미결)** (빌드 · 배포)
 
 사장님 지시 「ja 회차 11 끝났어, 머지해」. 프로토콜 §6 순서 그대로.
@@ -11,6 +24,7 @@
 - **§5-I 5·6 = 미착수**(핸드오프 미결): `check:answer-echo` «포인터» 검사(3단 판정 결손/의존/브리지 · 레인 스캐너 구멍 2 = 절당 첫 블록 `break`·「表のとおり」형) · «선언 개수 ↔ 열거 개수» 검사. 첫 주사 42히트 중 29 오탐 → **셀프테스트 먼저**(게이트 튜닝 루프).
 - **게이트(헤드 편집 후)**: `audit:hard --locale=ja` 57/57 🔴 0 · 🟠 2(기존) · en·de·es·id·pt·zh·zh-hant × bubble·strategy 14회 전부 🔴 0·🟠 0 · `check:drift` 🔴 핵심 5 = ar(불변 · 사장님 지시 제외) · `check:answer-echo` echo 0 · 🟠 47(ko 2 · zh 22편 · zh-hant 7편 · **ja 0**) · 빌드 exit 0 · 708p.
 - 통지: 검수장 **MB-034** · 세 레인 HARDEN.md §6-0(헤드가 ja 5파일 · zh 2 · zh-hant 2 만짐 — 레인 회차 없음 · 다음 `lane:sync`로 받는다). 마지막 `lane:sync -- --apply`.
+- **추가(사장님 문의 → MB-035)**: 검수장 HANDOFF ⚠ 「회귀 🔴 2(id all-in-rules · pt strategy) = 본체 미커밋 97파일이라 판정 안 함」의 뜻 = 검수장 `assert-claims.mjs --regression`(앵커 1,248)이 (7) 회차 진행 중 트리를 읽어 보류한 것. 커밋된 main(`74b30071`)으로 재실행 → **🔴 2 = id·zh all-in-rules**(둘 다 `c4d2b3f3`의 의도 정정: §47A 플레이어별 · §14 머크+토너/캐시 분기 — MB-033 ①이 예고한 자리) · **pt strategy ✅**(09-09 `48d0b607` 형태로 통과). 결함 0 → 검수장에 재앵커 요청(MB-035).
 
 ---
 

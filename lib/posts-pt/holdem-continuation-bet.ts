@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Continuation bet (c-bet): quando disparar no flop, quanto apostar e quando dar check",
   seoTitle: "C-bet em todo flop sangra fichas — quando e quanto apostar",
   desc: "O que é uma c-bet, em quais flops apostar e em quais dar check, o sizing certo — pequeno em dry, grande em wet — e com que frequência disparar.",
-  tldr: "Uma continuation bet (c-bet) é uma aposta no flop feita por quem deu raise no pré-flop. A regra moderna não é 'c-bet em todo flop' — é apostar pequeno e com frequência nos flops que favorecem o seu range (boards altos e dry como K-7-2) e dar check nos que favorecem o adversário (boards baixos e conectados como 7-6-5). Aposte pequeno — cerca de um terço do pote — em dry boards, grande — dois terços ou mais — nos wet, dê c-bet menos fora de posição e bem menos multiway.",
+  tldr: "Uma continuation bet (c-bet) é uma aposta no flop feita por quem deu raise no pré-flop. A regra moderna não é 'c-bet em todo flop' — é apostar pequeno e com frequência nos flops que favorecem o seu range (boards altos e dry como K-7-2) e dar check nos que favorecem o adversário (boards baixos e conectados como 7-6-5). Aposte pequeno — cerca de um terço do pote — em dry boards, grande — dois terços ou mais — nos wet, dê c-bet menos fora de posição quando você foi o único raiser (como 3-bettor fora de posição, inverte para quase sempre) e bem menos multiway.",
   category: "strategy",
   date: "2026-07-06",
   updated: "2026-09-11",
@@ -270,7 +270,7 @@ A. Em torno de 55–70% para a c-bet no flop é uma faixa saudável e equilibrad
 1. **Uma c-bet é uma aposta no flop de quem deu raise no pré-flop** — e funciona porque as mãos erram o flop cerca de dois terços das vezes.
 2. **O board decide.** Aposte em boards altos e dry que favorecem o seu range; dê check em boards baixos e conectados que favorecem o do seu adversário.
 3. **O range advantage define a frequência; o nut advantage define o tamanho.** Aposte com frequência em boards que você domina; aposte grande só quando tiver mais das nuts.
-4. **Pequeno (⅓) no dry, grande (⅔+) no wet.** Dê c-bet menos fora de posição e bem menos multiway.
+4. **Pequeno (⅓) no dry, grande (⅔+) no wet.** Dê c-bet menos fora de posição quando você foi o único raiser (como 3-bettor fora de posição, inverte para quase sempre) e bem menos multiway.
 5. **O check é uma arma.** Os melhores jogadores dão check com frequência e de propósito — a c-bet é um bisturi, não um martelo.
 
 Acerte isso e você para de torrar potes em boards que nunca foram seus para apostar. Junte uma c-bet afiada com um bom [jogo de 3-bet](/pt/blog/holdem-3bet), consciência real de [posição](/pt/blog/holdem-position-play) e o [framework completo de estratégia](/pt/blog/holdem-strategy), e o seu jogo de flop deixa silenciosamente a turma do "aposta em todo flop" para trás.

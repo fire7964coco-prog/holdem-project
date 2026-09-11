@@ -151,7 +151,7 @@ const SPEC: [string, string][] = [
   ["Compatibilidade", "Navegadores modernos — Windows, macOS, Linux e celular"],
   // ★2026-08-24 갱신 — 앱이 fr을 배포해 셀렉터가 9개가 됐다(francês 추가).
   // ★2026-09-05 갱신 — 앱이 id·ms를 배포해 셀렉터가 11개가 됐다(라이브 실측 · ③ 마감 회차).
-  ["Idioma", "Português (também em coreano, inglês, japonês, espanhol, alemão, francês, chinês (simplificado e tradicional), indonésio, malaio e hindi)"],
+  // 🔴 2026-09-11 — 이 자리에 있던 «지원 언어 열거» 행을 삭제했다(사장님 결정 2026-09-09 · 솔버 S-013 · docs/solver-landing-playbook.md). 재신설 금지 — 언어 대응은 FAQ 한 문항으로만.
   ["Motor", "WASM Postflop de código aberto (AGPL-3.0) · fonte modificada publicada"],
 ];
 

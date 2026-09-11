@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Kicker adalah kartu samping tertinggi yang bukan bagian dari tangan utama Anda — ia memecah seri saat dua pemain punya nilai tangan yang sama. One pair pakai 3 kicker, two pair 1, trips 2; straight, flush, full house, dan straight flush tidak punya. Inilah kenapa AK menang atas AQ saat meja memasangkan sebuah ace.",
   category: "hand-rankings",
   date: "2026-07-08",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "10 mnt",
   emoji: "🃏",
@@ -194,7 +194,7 @@ A. Ace kicker berarti kartu samping tertinggi Anda adalah ace — kicker terkuat
 
 **Q. Apa arti "playing the board"?**
 
-A. Playing the board berarti lima kartu komunitas adalah tangan terbaik Anda dan kartu tertutup Anda tak bisa memperbaikinya. Kalau tak seorang pun bisa memperbaiki board, semua orang memakai lima kartu yang sama dan pot dibagi. Tak ada kicker karena tak satu pun kartu tertutup Anda ikut membentuk lima kartu yang Anda mainkan — setiap kartu dalam tangan itu milik bersama.
+A. Playing the board berarti lima kartu komunitas adalah tangan terbaik Anda dan kartu tertutup Anda tak bisa memperbaikinya. Kalau tak seorang pun bisa memperbaiki board, semua orang memakai lima kartu yang sama dan pot dibagi. Kartu samping Anda berhenti menentukan apa pun, karena tak satu pun kartu tertutup Anda ikut membentuk lima kartu yang Anda mainkan — setiap kartu dalam tangan itu milik bersama.
 
 **Q. Apakah kicker penting di Texas Hold'em?**
 

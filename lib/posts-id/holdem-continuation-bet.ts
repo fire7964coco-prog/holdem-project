@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Continuation Bet (C-Bet): Kapan Tembak Flop, Berapa Besar, dan Kapan Check",
   seoTitle: "Kenapa 'C-Bet Tiap Flop' Menguras Chip — Strategi Continuation Bet",
   desc: "Apa itu continuation bet, flop mana yang di-c-bet dan mana yang di-check, sizing tepat — kecil di board kering, besar di board basah — dan seberapa sering.",
-  tldr: "Continuation bet (c-bet) adalah taruhan di flop oleh pemain yang raise preflop. Aturan modern bukan 'c-bet tiap flop' — melainkan taruh kecil dan sering di flop yang menguntungkan range Anda (board tinggi dan kering seperti K-7-2) dan check yang menguntungkan lawan (board rendah dan nyambung seperti 7-6-5). Beri sizing kecil — sekitar sepertiga pot — di board kering, besar — dua pertiga pot atau lebih — di board basah, c-bet lebih jarang saat out of position, dan jauh lebih jarang di pot multiway.",
+  tldr: "Continuation bet (c-bet) adalah taruhan di flop oleh pemain yang raise preflop. Aturan modern bukan 'c-bet tiap flop' — melainkan taruh kecil dan sering di flop yang menguntungkan range Anda (board tinggi dan kering seperti K-7-2) dan check yang menguntungkan lawan (board rendah dan nyambung seperti 7-6-5). Beri sizing kecil — sekitar sepertiga pot — di board kering, besar — dua pertiga pot atau lebih — di board basah, c-bet lebih jarang saat out of position kalau Anda raiser tunggalnya (sebagai 3-bettor out of position keadaannya justru berbalik — hampir selalu bertaruh), dan jauh lebih jarang di pot multiway.",
   category: "strategy",
   date: "2026-07-06",
   updated: "2026-09-11",
@@ -269,7 +269,7 @@ A. Sekitar 55–70% untuk c-bet flop adalah band yang sehat dan seimbang. Di ata
 1. **C-bet adalah taruhan flop oleh raiser preflop** — dan ia berhasil karena tangan meleset di flop sekitar dua pertiga dari waktu.
 2. **Board yang memutuskan.** Taruh board tinggi dan kering yang menguntungkan range Anda; check board rendah dan nyambung yang menguntungkan lawan.
 3. **Range advantage menetapkan frekuensi; nut advantage menetapkan ukuran.** Bertaruh sering di board yang Anda dominasi; bertaruh besar hanya saat Anda memegang lebih banyak nut.
-4. **Kecil (⅓) di kering, besar (⅔+) di basah.** C-bet lebih jarang out of position, dan jauh lebih jarang di multiway.
+4. **Kecil (⅓) di kering, besar (⅔+) di basah.** C-bet lebih jarang out of position kalau Anda raiser tunggalnya (sebagai 3-bettor out of position keadaannya justru berbalik — hampir selalu bertaruh), dan jauh lebih jarang di multiway.
 5. **Check itu senjata.** Pemain terbaik meng-check sering dan dengan sengaja — c-bet itu pisau bedah, bukan palu.
 
 Kuasai ini dan Anda berhenti membakar pot di board yang memang bukan milik Anda untuk di-bet. Padukan c-betting tajam dengan [permainan 3-bet](/id/blog/holdem-3bet) yang solid, kesadaran [posisi](/id/blog/holdem-position-play) yang nyata, dan [kerangka strategi](/id/blog/holdem-strategy) penuh, dan permainan flop Anda diam-diam meninggalkan kerumunan "bet tiap flop" di belakang.

@@ -251,13 +251,13 @@ Hier ist jede Aktion, die dir am Tisch zur Verfügung steht – der Teil, den An
 
 | Aktion | Was sie bewirkt | Wann verfügbar |
 |------|------|------|
-| Fold | Hand aufgeben, Karten wegschieben | Jederzeit |
+| Fold | Hand aufgeben, Karten wegschieben | Jede Street – wenn du an der Reihe bist |
 | Check | Action weitergeben, ohne zu setzen | Nur wenn keine Bet vor dir liegt |
 | Call | Den aktuellen Einsatz mitgehen | Wenn eine Bet vor dir liegt |
 | Bet | Den ersten Einsatz einer Runde machen | Wenn noch niemand gesetzt hat |
 | Raise | Über den aktuellen Einsatz erhöhen | Wenn eine Bet vor dir liegt |
 | Re-Raise (3-Bet) | Über einen Raise erhöhen | Wenn ein Raise vor dir liegt |
-| All-in | Alle eigenen Chips setzen | Jederzeit |
+| All-in | Alle eigenen Chips setzen | Jede Street – wenn du an der Reihe bist, als Bet oder Raise |
 
 </div>
 

@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Continuation Bet (C-Bet): Wann du am Flop feuerst, wie viel und wann du checkst",
   seoTitle: "C-Bet im Poker: warum „jeden Flop feuern“ Chips kostet",
   desc: "Was eine C-Bet ist, welche Flops du c-betten und welche du checken solltest, exaktes Sizing – klein auf trockenen, groß auf wet Boards – und wie oft du feuerst.",
-  tldr: "Eine Continuation Bet (C-Bet) ist ein Einsatz am Flop vom Spieler, der preflop geraist hat. Die moderne Regel ist nicht 'jeden Flop c-betten' – sondern die Flops zu setzen, die deine Range favorisieren (hohe, trockene Boards wie K-7-2) klein und oft, und die zu checken, die deinen Gegner favorisieren (niedrige, verbundene Boards wie 7-6-5). Setze klein – etwa ein Drittel Pot – auf trockenen Boards, groß – zwei Drittel oder mehr – auf wet Boards, c-bette weniger out of Position und deutlich weniger multiway.",
+  tldr: "Eine Continuation Bet (C-Bet) ist ein Einsatz am Flop vom Spieler, der preflop geraist hat. Die moderne Regel ist nicht 'jeden Flop c-betten' – sondern die Flops zu setzen, die deine Range favorisieren (hohe, trockene Boards wie K-7-2) klein und oft, und die zu checken, die deinen Gegner favorisieren (niedrige, verbundene Boards wie 7-6-5). Setze klein – etwa ein Drittel Pot – auf trockenen Boards, groß – zwei Drittel oder mehr – auf wet Boards, c-bette weniger out of Position, wenn du der alleinige Raiser warst (als 3-Better out of Position kippt es zu fast immer), und deutlich weniger multiway.",
   category: "strategy",
   date: "2026-07-06",
   updated: "2026-09-11",
@@ -272,7 +272,7 @@ A. Etwa 55–70% für Flop-C-Bet ist ein gesundes, ausbalanciertes Band. Über e
 1. **Eine C-Bet ist ein Flop-Einsatz vom Preflop-Raiser** – und sie funktioniert, weil Hände den Flop etwa zwei Drittel der Zeit verfehlen.
 2. **Das Board entscheidet.** Bette hohe, trockene Boards, die deine Range favorisieren; checke niedrige, verbundene Boards, die die Range deines Gegners favorisieren.
 3. **Range Advantage bestimmt die Frequenz; Nut Advantage bestimmt die Größe.** Bette oft auf Boards, die du dominierst; bette groß nur, wenn du mehr der Nuts hältst.
-4. **Klein (⅓) auf trocken, groß (⅔+) auf wet.** C-bette weniger out of Position und deutlich weniger multiway.
+4. **Klein (⅓) auf trocken, groß (⅔+) auf wet.** C-bette weniger out of Position, wenn du der alleinige Raiser warst (als 3-Better out of Position kippt es zu fast immer), und deutlich weniger multiway.
 5. **Checken ist eine Waffe.** Die besten Spieler checken oft und mit Absicht – die C-Bet ist ein Skalpell, kein Hammer.
 
 Mach das richtig, und du hörst auf, Pots auf Boards zu verbrennen, die nie deine zum Betten waren. Kombiniere scharfes C-betten mit einem soliden [3-Bet-Spiel](/de/blog/holdem-3bet), echtem [Positions](/de/blog/holdem-position-play)-Bewusstsein und dem vollständigen [Strategie-Framework](/de/blog/holdem-strategy), und dein Flop-Spiel lässt die „jeden Flop betten“-Meute leise hinter sich.

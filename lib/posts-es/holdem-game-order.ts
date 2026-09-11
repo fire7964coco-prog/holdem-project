@@ -253,13 +253,13 @@ Aquí tienes todas las acciones disponibles en la mesa — la parte que más con
 
 | Acción | Qué hace | Cuándo está disponible |
 |------|------|------|
-| Fold | Abandonas la mano y tiras tus cartas | En cualquier momento |
+| Fold | Abandonas la mano y tiras tus cartas | En cualquier calle — en tu turno |
 | Check (pasar) | Cedes la acción sin apostar | Solo si no hay apuesta delante de ti |
 | Call (pagar) | Igualas la apuesta actual | Cuando hay una apuesta delante |
 | Bet (apostar) | Haces la primera apuesta de la ronda | Cuando nadie ha apostado todavía |
 | Raise (subir) | Aumentas por encima de la apuesta actual | Cuando hay una apuesta delante |
 | Re-raise (3-bet) | Subes por encima de una subida | Cuando hay una subida delante |
-| All-in | Metes todas tus fichas | En cualquier momento |
+| All-in | Metes todas tus fichas | En cualquier calle — en tu turno, como apuesta o subida |
 
 </div>
 
