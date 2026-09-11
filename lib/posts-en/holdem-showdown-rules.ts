@@ -40,7 +40,7 @@ The rule depends on how the final betting round ended (for the full street-by-st
 |--------------------|-----------------|
 | Someone bet or raised on the river | ==The last player to bet or raise== shows first |
 | Everyone checked the river | First active player left of the dealer button shows first |
-| All-in on earlier street (no river betting) | Tournament: every hand tabled before/during the runout (TDA Rule 16). Cash: the all-in player turns over first — with a side pot, the side-pot players show first (Live Action Rule 149) |
+| All-in on earlier street (no river betting) | Tournament: every hand tabled without delay once all betting is complete (TDA Rule 16). Cash: the all-in player turns over first — with a side pot, the side-pot players show first (Live Action Rule 149) |
 
 </div>
 
@@ -82,7 +82,7 @@ In a **tournament**, when a player goes all-in and there's no more betting possi
 
 | All-in scenario | Showdown rule |
 |----------------|---------------|
-| Player goes all-in on an earlier street, others call, no more betting possible | Tournament: every hand shown face-up before or during the runout. Cash: the all-in player turns over first — with a side pot, the side-pot players show first (Live Action Rule 149) |
+| Player goes all-in on an earlier street, others call, no more betting possible | Tournament: every hand tabled without delay once all betting is complete. Cash: the all-in player turns over first — with a side pot, the side-pot players show first (Live Action Rule 149) |
 | All-in bet on the river gets called | The all-in bettor shows first as last aggressor — and in a tournament ==r:nobody may muck here==: under TDA Rule 16 the caller must table too |
 | Multiple all-ins creating multiple side pots | Each pot resolved separately; all involved hands shown |
 
@@ -146,7 +146,7 @@ You're pretty sure you lost. You slide your cards face-down toward the muck. Dea
 
 ### Mistake 3: Demanding to see every called hand
 
-In most cardrooms you can ask the dealer to expose a mucked hand — but only a hand that was called and reached showdown. Folded hands are dead and can never be retrieved. The request rule exists to guard against collusion, not to satisfy curiosity, and abusing it is considered rude. Use it sparingly.
+In most cardrooms you can ask the dealer to expose a mucked hand — but only a hand that was called and reached showdown. A folded hand is dead once it is in the muck, and only a hand that is still clearly identifiable may be retrieved (WSOP Tournament Rule 109). The request rule exists to guard against collusion, not to satisfy curiosity, and abusing it is considered rude. Use it sparingly.
 
 ### Mistake 4: Not knowing you can show early
 
@@ -179,7 +179,7 @@ A. Slow rolling is deliberately delaying showing a winning hand you already know
 
 **Q. In an all-in situation, who shows their cards first?**
 
-A. In a tournament, when a player goes all-in and no further betting is possible, all hands involved in that pot are shown face-up before or during the community card runout (TDA Rule 16). If there is a side pot, it is awarded first and the main pot after it — but the all-in player's cards are face-up long before that. In a cash game the WSOP Live Action rules have the player who pushed all-in turn over first, and side-pot players show before anyone who is all-in for only the main pot (Rule 149). While the others still have chips and can bet, everything stays face-down.
+A. In a tournament, when a player goes all-in and no further betting is possible, all hands involved in that pot are tabled without delay once all betting action is complete — before the remaining community cards are dealt (TDA Rule 16). If there is a side pot, it is awarded first and the main pot after it — but the all-in player's cards are face-up long before that. In a cash game the WSOP Live Action rules have the player who pushed all-in turn over first, and side-pot players show before anyone who is all-in for only the main pot (Rule 149). While the others still have chips and can bet, everything stays face-down.
 
 **Q. What does "cards speak" mean in poker?**
 

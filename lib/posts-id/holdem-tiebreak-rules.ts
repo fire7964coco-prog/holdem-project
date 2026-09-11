@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Seri dipecahkan dalam urutan tetap: jenis tangan dulu, lalu kartu pembentuk tangan, lalu kicker dari tertinggi ke terendah. Pair sama → kicker pertama tertinggi menang; lima kartu identik → pot dibagi. Jenis kartu tak pernah menentukan seri.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-10",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "⚖️",
@@ -228,7 +228,7 @@ A. Kartu teratas lebih tinggi yang menang, persis seperti straight biasa. Dua st
 
 **Q. Apakah jenis kartu pernah memecah seri di Texas Hold'em?**
 
-A. Tidak. Tak ada peringkat jenis di Hold'em — jika dua tangan lima-kartu terbaik cocok nilai per nilai, pot dibagi tanpa memandang jenis.
+A. Tidak — tapi ada satu tempat jenis kartu memang dipakai di meja Hold'em, dan itu bukan pot. Di cash game, dan menurut house rule kebanyakan card room, setiap pemain menarik satu kartu untuk menentukan di mana dealer button dimulai, dan kalau dua tarikan seri di nilai, urutan jenis yang memutuskannya. (Turnamen WSOP melewatkan tarikan itu: Aturan turnamen WSOP 85 memulai button dari stack pertama di sebelah kanan dealer dan hanya menarik ulang saat tersisa tiga, dua, dan satu meja — tanpa melibatkan jenis kartu sama sekali.) Bagaimanapun juga itu memilih kursi, bukan tangan. Satu-satunya urutan jenis kartu di buku aturan turnamen itu milik stud dan razz. Jika dua tangan lima-kartu terbaik cocok nilai per nilai, pot dibagi tanpa memandang jenis.
 
 **Q. Apa yang terjadi jika kedua pemain punya tangan persis sama?**
 

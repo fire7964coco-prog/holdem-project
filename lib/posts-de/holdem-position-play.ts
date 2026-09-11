@@ -183,7 +183,7 @@ Jeder Sitz bekommt seine eigene Open-Range, weil **die Anzahl der noch handelnde
 | Hijack | ~20% | Steal-Gelegenheiten beginnen |
 | **Cutoff** | **~27%** | Nur der Button dahinter – prima Steal-Sitz |
 | **Button** | ==g:**~43%**== | Garantierte letzte Aktion postflop – weitester Open |
-| Small Blind | ~40% (raise-or-fold) | Weit, wenn zu dir gefoldet wird – standardmäßig raisen, wobei Completen im ungeraisten Pot ein vertretbarer [Limp](/de/blog/holdem-limping) ist; gegen einen Raise: 3-betten oder folden, nicht flat-callen |
+| Small Blind | ~40%, wenn zu dir gefoldet wird (gegen einen Raise: 3-betten oder folden) | Weit, wenn zu dir gefoldet wird – standardmäßig raisen, wobei Completen im ungeraisten Pot ein vertretbarer [Limp](/de/blog/holdem-limping) ist; gegen einen Raise: 3-betten oder folden, nicht flat-callen |
 | Big Blind | Verteidigt weit gegen Steals | Schließende Aktion + Pot Odds, keine Opens |
 
 ![9-handed Pokertisch, der zeigt, wie sich Open-Ranges von UTG (~13%, eng rot) bis zum Button (~43%, weit grün) verbreitern](/images/holdem-position-play-opening-range.webp "Open-Range nach Position – UTG öffnet ~13%, der Button ~43%")

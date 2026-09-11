@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Nicht so wie im Blackjack – das Deck wird jede Hand neu gemischt und zu wenige Karten liegen offen, also bringt dir das Tracken hoher und niedriger Karten keinen Edge. Aber Poker hat sein eigenes legales Zählen: Outs zählen, Blocker nutzen und tote Karten tracken, um zu lesen, was dein Gegner nicht haben kann.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "🧮",
@@ -94,7 +94,7 @@ Blocker wirken auch teilweise. Auf einem ==b:Q-J-9== Board ist die Nut-Straße K
 
 ### Card Removal & tote Karten
 
-Jede Karte, die du sehen kannst, entfernt Möglichkeiten. Im Hold'em kann ein Out aber nicht auf dem Board liegen – läge es dort, stünde deine Hand ja bereits. Die ==toten Karten==, die du trackst, sind deshalb die, die *neben* dem Board sichtbar wurden: eine Karte, die bei einem Fehlgeben aufblitzt, eine Hand, die vor dem Muck gezeigt wird, ein Fold des Nachbarn, den du zufällig siehst. Jede davon ist ein Out, das du nicht mehr hast. Diese Anpassung ist eine ständige, stille Gewohnheit, die gute Spieler auf jeder Street pflegen. Es ist Zählen, nur nicht die Art, die einen Running Total braucht.
+Jede Karte, die du sehen kannst, entfernt Möglichkeiten. Im Hold'em kann ein Out aber nicht auf dem Board liegen – läge es dort, stünde deine Hand ja bereits. Die ==toten Karten==, die du trackst, sind deshalb die, die *neben* dem Board sichtbar wurden: eine Karte, die versehentlich aufblitzt, eine Hand, die vor dem Muck gezeigt wird, ein Fold des Nachbarn, den du zufällig siehst. Jede davon ist ein Out, das du nicht mehr hast. Diese Anpassung ist eine ständige, stille Gewohnheit, die gute Spieler auf jeder Street pflegen. Es ist Zählen, nur nicht die Art, die einen Running Total braucht.
 
 ---
 
@@ -114,7 +114,7 @@ Die Linie, die du nie überschreiten darfst, ist physisches oder informationelle
 
 **Bei Seven Card Stud wird ein großer Teil der Karten jedes Spielers offen ausgeteilt – also kannst du das Deck tatsächlich auf die altmodische Art zählen.** Wenn du eine bestimmte Karte brauchst, um deine Hand zu vervollständigen, kannst du dich am Tisch umsehen und buchstäblich zählen, wie viele deiner Outs bereits offen in den Up-Cards der Gegner liegen. Jedes, das du entdeckst, ist ein totes Out.
 
-Hold'em legt nur die fünf gemeinsamen Community Cards offen, also ist das hier auf das Board begrenzt. Aber Stud – und seine Verwandten Razz und Stud Hi-Lo, die genauso offen austeilen – belohnt genau die Art von Karten-Tracking, in der Blackjack-Zähler gut sind. Das ist das, was der Filmversion am nächsten kommt, was Poker bietet.
+Beim Hold'em werden als einzige Karten die fünf gemeinsamen Community Cards offen ausgeteilt – alles andere, was du zu sehen bekommst, ist ein Versehen (eine aufgeblitzte Karte, eine beim Folden gezeigte Hand), also gibt es kaum etwas zu tracken. Aber Stud – und seine Verwandten Razz und Stud Hi-Lo, die genauso offen austeilen – belohnt genau die Art von Karten-Tracking, in der Blackjack-Zähler gut sind. Das ist das, was der Filmversion am nächsten kommt, was Poker bietet.
 
 ---
 
@@ -125,7 +125,7 @@ Hold'em legt nur die fünf gemeinsamen Community Cards offen, also ist das hier 
 :::steps
 Zähle deine Outs bei jedem Draw | Sobald du einen Draw hast, zähle die Karten, die ihn vervollständigen, und multipliziere – ×4 nur, wenn beide Karten kommen (du bist all-in, oder der River kostet nichts mehr), sonst ×2 nur für die nächste Karte. Calle, wenn diese Chance den Preis schlägt
 Frage, was deine Hand blockt | Bevor du bluffst, prüfe, ob du eine Karte hältst, die ihre stärkste Calling-Hand unmöglich oder unwahrscheinlicher macht
-Passe an tote Karten an | Ziehe jedes Out ab, das du abseits vom Board gesehen hast – eine aufgeblitzte Karte, eine gezeigte Hand, ein Fold, den du zufällig gesehen hast. Karten, die du sehen kannst, sind Karten, die dein Gegner nicht haben kann – aber nur zufällig erhascht: gezielt zu versuchen, die Karten eines anderen Spielers zu sehen, verstößt gegen die Regeln und ist in jedem Cardroom strafbewehrt
+Passe an tote Karten an | Ziehe jedes Out ab, das du abseits vom Board gesehen hast – eine aufgeblitzte Karte, eine gezeigte Hand, ein Fold, den du zufällig gesehen hast. Karten, die du sehen kannst, sind Karten, die dein Gegner nicht haben kann – aber nur zufällig erhascht: gezielt zu versuchen, die Karten eines anderen Spielers zu sehen, ist nicht Teil dieser Methode – es zählen nur versehentliche Aufdeckungen
 :::
 
 Mach das ein paar Sessions lang und es wird automatisch – du wirst jede Hand „Karten zählen“, nur auf die Poker-Art. Der nächste Schritt ist, diese Zählungen mit [Pot Odds](/de/blog/holdem-pot-odds) in Calls und Folds zu verwandeln, der Mathematik, die dir sagt, ob deine Outs den Preis wert sind.

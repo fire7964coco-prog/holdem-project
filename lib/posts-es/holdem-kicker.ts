@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "El kicker es la carta lateral más alta que no forma parte de tu mano hecha — rompe el empate cuando dos jugadores comparten el mismo valor. La pareja usa 3 kickers, la doble pareja 1, el trío 2; escaleras, colores, fulls y escaleras de color no tienen ninguno. Es la razón por la que AK gana a AQ cuando la mesa empareja un as.",
   category: "hand-rankings",
   date: "2026-07-08",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -194,7 +194,7 @@ A. Un kicker de as significa que tu carta lateral más alta es un as — el kick
 
 **Q. ¿Qué significa "jugar la mesa"?**
 
-A. Jugar la mesa significa que las cinco cartas comunitarias son tu mejor mano y tus cartas propias no pueden mejorarla. Si nadie puede mejorar la mesa, todos usan las mismas cinco cartas y el bote se divide. No hay kicker porque ninguna de tus cartas propias entra en las cinco que juegas — todas las cartas de la mano son comunitarias.
+A. Jugar la mesa significa que las cinco cartas comunitarias son tu mejor mano y tus cartas propias no pueden mejorarla. Si nadie puede mejorar la mesa, todos usan las mismas cinco cartas y el bote se divide. Tus cartas laterales dejan de decidir nada, porque ninguna de tus cartas propias entra en las cinco que juegas — todas las cartas de la mano son comunitarias.
 
 **Q. ¿Importan los kickers en el Texas Hold'em?**
 

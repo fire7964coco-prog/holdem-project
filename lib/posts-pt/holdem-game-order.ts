@@ -251,13 +251,13 @@ Aqui está tudo o que você pode fazer na mesa — a parte que os iniciantes mai
 
 | Ação | O que faz | Quando está disponível |
 |------|------|------|
-| Fold | Desiste da mão e descarta as cartas | Sempre que a ação estiver com você |
+| Fold | Desiste da mão e descarta as cartas | Em qualquer street — na sua vez |
 | Check | Passa a ação sem apostar | Só quando não há aposta para você |
 | Call | Iguala a aposta atual | Quando há uma aposta para você |
 | Bet | Faz a primeira aposta da rodada | Quando ninguém apostou ainda |
 | Raise | Aumenta por cima da aposta atual | Quando há uma aposta para você |
 | Re-raise (3-bet) | Aumenta por cima de um aumento | Quando há um aumento para você |
-| All-in | Empurra todas as suas fichas | Sempre que a ação estiver com você |
+| All-in | Empurra todas as suas fichas | Em qualquer street — na sua vez, como aposta ou aumento |
 
 </div>
 

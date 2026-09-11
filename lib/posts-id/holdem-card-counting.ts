@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Tidak seperti di blackjack — dek diacak ulang setiap tangan dan terlalu sedikit kartu terlihat, jadi melacak kartu tinggi dan rendah tak memberi keunggulan. Tapi poker punya penghitungan legalnya sendiri: menghitung outs, memakai blocker, dan melacak dead card untuk membaca apa yang tak mungkin dipegang lawan.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "10 mnt",
   emoji: "🧮",
@@ -94,7 +94,7 @@ Blocker juga bekerja secara parsial. Pada board ==b:Q-J-9==, nut straight-nya K-
 
 ### Card removal & dead card
 
-Setiap kartu yang bisa Anda lihat menghapus kemungkinan. Di Hold'em sebuah out tak mungkin tergeletak di board — kalau begitu, tangan Anda sudah jadi — jadi ==dead card== yang perlu dilacak adalah kartu yang terlihat *di luar* board: kartu yang tersingkap saat misdeal, tangan yang dibuka sebelum masuk muck, fold tetangga meja yang kebetulan Anda lihat. Setiap satu yang Anda lihat adalah out yang tak lagi Anda punya. Menyesuaikan diri terhadapnya adalah kebiasaan konstan dan senyap yang dijaga pemain bagus di setiap street. Itu menghitung, hanya saja bukan jenis yang butuh running total.
+Setiap kartu yang bisa Anda lihat menghapus kemungkinan. Di Hold'em sebuah out tak mungkin tergeletak di board — kalau begitu, tangan Anda sudah jadi — jadi ==dead card== yang perlu dilacak adalah kartu yang terlihat *di luar* board: kartu yang tersingkap karena kesalahan, tangan yang dibuka sebelum masuk muck, fold tetangga meja yang kebetulan Anda lihat. Setiap satu yang Anda lihat adalah out yang tak lagi Anda punya. Menyesuaikan diri terhadapnya adalah kebiasaan konstan dan senyap yang dijaga pemain bagus di setiap street. Itu menghitung, hanya saja bukan jenis yang butuh running total.
 
 ---
 
@@ -114,7 +114,7 @@ Garis yang tak boleh dilanggar adalah kecurangan fisik atau informasi — kartu 
 
 **Di Seven Card Stud, sebagian besar kartu setiap pemain dibagikan menghadap ke atas — jadi Anda benar-benar bisa menghitung dek dengan cara kuno.** Jika Anda butuh kartu tertentu untuk melengkapi tangan, Anda bisa memandang sekeliling meja dan secara harfiah menghitung berapa banyak outs Anda yang sudah terlihat di up-card lawan. Setiap yang Anda temukan adalah dead out.
 
-Hold'em hanya menampilkan lima community card bersama, jadi ini terbatas pada board. Tapi Stud — dan kerabatnya, Razz dan Stud Hi-Lo, yang membagikan kartu terbuka dengan cara yang sama — memberi imbalan tepat pada jenis pelacakan kartu yang dikuasai penghitung blackjack. Inilah yang paling dekat poker mendekati versi film.
+Di Hold'em satu-satunya kartu yang dibagikan menghadap ke atas adalah lima community card bersama — apa pun selain itu yang Anda lihat adalah kecelakaan (kartu yang tersingkap, tangan yang ditunjukkan saat fold), jadi hanya sedikit yang bisa dilacak. Tapi Stud — dan kerabatnya, Razz dan Stud Hi-Lo, yang membagikan kartu terbuka dengan cara yang sama — memberi imbalan tepat pada jenis pelacakan kartu yang dikuasai penghitung blackjack. Inilah yang paling dekat poker mendekati versi film.
 
 ---
 
@@ -125,7 +125,7 @@ Hold'em hanya menampilkan lima community card bersama, jadi ini terbatas pada bo
 :::steps
 Hitung outs Anda di setiap draw | Begitu Anda punya draw, hitung kartu yang melengkapinya dan kalikan — ×4 hanya kalau kedua kartu memang akan datang (Anda all-in, atau turn dan river sama-sama gratis), selain itu ×2 hanya untuk kartu berikutnya. Call saat peluang itu mengalahkan harganya
 Tanyakan apa yang tangan Anda blokir | Sebelum Anda bluff, cek apakah Anda pegang kartu yang membuat tangan call terkuat mereka mustahil atau lebih kecil kemungkinannya
-Sesuaikan dengan dead card | Kurangi out mana pun yang sudah Anda lihat terbuka di luar board — kartu yang tak sengaja terlihat, tangan yang ditunjukkan, fold yang kebetulan Anda lihat. Kartu yang bisa Anda lihat adalah kartu yang tak mungkin dipegang lawan — tapi hanya kalau terlihat karena kebetulan: sengaja berusaha melihat kartu pemain lain melanggar aturan dan bisa kena penalti di card room mana pun
+Sesuaikan dengan dead card | Kurangi out mana pun yang sudah Anda lihat terbuka di luar board — kartu yang tak sengaja terlihat, tangan yang ditunjukkan, fold yang kebetulan Anda lihat. Kartu yang bisa Anda lihat adalah kartu yang tak mungkin dipegang lawan — tapi hanya kalau terlihat karena kebetulan: sengaja berusaha melihat kartu pemain lain bukan bagian dari metode ini — hanya paparan yang tak disengaja
 :::
 
 Lakukan ini beberapa sesi dan ia menjadi otomatis — Anda akan "menghitung kartu" setiap tangan, hanya saja dengan cara poker. Langkah berikutnya adalah mengubah penghitungan itu menjadi call dan fold dengan [pot odds](/id/blog/holdem-pot-odds), matematika yang memberitahu apakah outs Anda sepadan dengan harganya.

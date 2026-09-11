@@ -260,13 +260,13 @@ Here is every action available at the table — the part beginners mix up most.
 
 | Action | What it does | When it's available |
 |------|------|------|
-| Fold | Give up the hand, muck your cards | Anytime |
+| Fold | Give up the hand, muck your cards | Any street — in turn |
 | Check | Pass the action with no bet | Only when there's no bet to you |
 | Call | Match the current bet | When there's a bet to you |
 | Bet | Make the first wager of a round | When no one has bet yet |
 | Raise | Increase over the current bet | When there's a bet to you |
 | Re-raise (3-bet) | Raise over a raise | When there's a raise to you |
-| All-in | Push all your chips in | Anytime |
+| All-in | Push all your chips in | Any street — in turn, as a bet or raise |
 
 </div>
 

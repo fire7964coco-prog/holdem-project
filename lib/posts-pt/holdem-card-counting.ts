@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Não do jeito que você faz no blackjack — o baralho é reembaralhado toda mão e poucas cartas ficam expostas, então rastrear cartas altas e baixas não te dá vantagem nenhuma. Mas o poker tem a sua própria contagem legal: contar outs, usar blockers e rastrear cartas mortas para ler o que o seu adversário não pode ter.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🧮",
@@ -114,7 +114,7 @@ A linha que você nunca deve cruzar é a trapaça física ou informacional — c
 
 **No Seven Card Stud, uma boa parte das cartas de cada jogador é distribuída virada para cima — então você genuinamente consegue contar o baralho à moda antiga.** Se você precisa de uma carta específica para completar a sua mão, dá para olhar em volta da mesa e literalmente contar quantos dos seus outs já estão aparecendo nas up-cards dos adversários. Cada um que você identifica é um out morto.
 
-O Hold'em só expõe as cinco cartas comunitárias compartilhadas, então isso fica limitado ao board. Mas o Stud — e os seus parentes, o Razz e o Stud Hi-Lo, que distribuem as mesmas cartas viradas para cima — recompensa exatamente o tipo de rastreamento de cartas em que os contadores de blackjack são bons. É o mais perto que o poker chega da versão do filme.
+No Hold'em, as únicas cartas distribuídas viradas para cima são as cinco cartas comunitárias compartilhadas — qualquer outra coisa que você enxergue é acidente (uma carta virada por engano, uma mão mostrada no fold), então há pouco a rastrear. Mas o Stud — e os seus parentes, o Razz e o Stud Hi-Lo, que distribuem as mesmas cartas viradas para cima — recompensa exatamente o tipo de rastreamento de cartas em que os contadores de blackjack são bons. É o mais perto que o poker chega da versão do filme.
 
 ---
 
@@ -125,7 +125,7 @@ O Hold'em só expõe as cinco cartas comunitárias compartilhadas, então isso f
 :::steps
 Conte os seus outs em todo projeto | No momento em que você tem um projeto, conte as cartas que o completam e multiplique — ×4 só quando as duas cartas vêm de graça (você está all-in no flop), caso contrário ×2 só pela próxima carta. Pague quando essa chance vencer o preço
 Pergunte o que a sua mão bloqueia | Antes de blefar, veja se você tem uma carta que torna a mão de call mais forte dele impossível ou menos provável
-Ajuste para as cartas mortas | Subtraia qualquer out que você viu exposto fora do board — uma carta que apareceu por engano, uma mão mostrada, um fold que você enxergou. Cartas que você enxerga são cartas que o seu adversário não pode ter — mas só enxergadas por acaso: tentar deliberadamente ver as cartas de outro jogador é contra as regras e passível de penalidade em qualquer card room
+Ajuste para as cartas mortas | Subtraia qualquer out que você viu exposto fora do board — uma carta que apareceu por engano, uma mão mostrada, um fold que você enxergou. Cartas que você enxerga são cartas que o seu adversário não pode ter — mas só enxergadas por acaso: tentar deliberadamente ver as cartas de outro jogador não faz parte deste método — só exposição acidental
 :::
 
 Faça isso por algumas sessões e vira automático — você vai estar "contando cartas" em toda mão, só que à maneira do poker. O próximo passo é transformar essas contagens em calls e folds com [pot odds](/pt/blog/holdem-pot-odds), a matemática que te diz se os seus outs valem o preço.

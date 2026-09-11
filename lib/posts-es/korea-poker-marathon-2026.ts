@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Corre y juega en Corea 2026 — maratones y póker en un solo viaje",
   seoTitle: "Póker y maratón Corea 2026 — Chuncheon, JTBC y Paradise City",
   desc: "El plazo de extranjeros al JTBC Seúl (1 nov) depende del canal — Chuncheon y Garmin ya están llenas. Calendario, precios y póker en Paradise City.",
-  tldr: "Los grandes maratones de otoño de Corea (Chuncheon 25 oct, JTBC Seúl 1 nov, Garmin Run 15 nov) coinciden con el clima ideal para correr. El casino Paradise City, junto al aeropuerto de Incheon, ofrece cash games todo el año — solo extranjeros, a 10 min de la terminal. Un viaje cubre ambas cosas. Para 2026, la única inscripción de extranjeros es la del JTBC, con fecha límite el 4 de sep.",
+  tldr: "Los grandes maratones de otoño de Corea (Chuncheon 25 oct, JTBC Seúl 1 nov, Garmin Run 15 nov) coinciden con el clima ideal para correr. El casino Paradise City, junto al aeropuerto de Incheon, ofrece cash games todo el año — solo extranjeros, a 10 min de la terminal. Un viaje cubre ambas cosas. Para 2026, la única inscripción de extranjeros es la del JTBC, y el plazo depende del canal que uses.",
   category: "tournament",
   date: "2026-06-19",
-  updated: "2026-09-10",
-  masterUpdated: "2026-09-10",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏃",
@@ -44,7 +44,7 @@ Corea es donde ambas encajan a la perfección. ==**Maratones de otoño de talla 
 ---
 
 > **Respuesta rápida**
-> Torneos de póker en Corea: ==**APT Incheon 7–16 ago**==, ==**APT Jeju 25 sep–7 oct**== (ambos en casinos solo para extranjeros). Maratones de Corea: ==**Chuncheon 25 oct**==, ==**JTBC Seúl 1 nov**==, ==**Garmin Run 15 nov**==. El APT Jeju acaba el 7 oct → Chuncheon arranca el 25 oct — ==g:18 días de margen, un solo viaje cubre ambos.== ==r:Inscripciones de maratón 2026: solo el JTBC, fecha límite 4 de sep — Chuncheon y Garmin ya están completos.==
+> Torneos de póker en Corea: ==**APT Incheon 7–16 ago**==, ==**APT Jeju 25 sep–7 oct**== (ambos en casinos solo para extranjeros). Maratones de Corea: ==**Chuncheon 25 oct**==, ==**JTBC Seúl 1 nov**==, ==**Garmin Run 15 nov**==. El APT Jeju acaba el 7 oct → Chuncheon arranca el 25 oct — ==g:18 días de margen, un solo viaje cubre ambos.== ==r:Inscripciones de maratón 2026: solo el JTBC — el plazo depende del canal que uses; Chuncheon y Garmin ya están completos.==
 
 ---
 
@@ -69,7 +69,7 @@ El argumento no es complicado. Es cuestión de fechas y ubicación.
 | Maratón Internacional Dong-A de Seúl | Mar 2026 | Completo, 10K | Seúl | [dongamarathon.com](https://www.dongamarathon.com) | Finalizado en 2026 |
 | ==**YTN Seoul Tour Marathon**== | ==**6 sep**== | ==**11KM**==, Medio | Seoul Plaza | [run.ytn.co.kr](http://run.ytn.co.kr) | Cerrado — se llenó el 26 jun |
 | ==g:**Maratón de Chuncheon**== | ==g:**25 oct**== | ==g:Completo, 10K== | ==g:Chuncheon== | ==g:[chuncheonmarathon.com](https://www.chuncheonmarathon.com)== | ==g:Inscripción cerrada (agotado)== |
-| ==**JTBC Seoul Marathon**== | ==**1 nov**== | Completo, 10K | Seúl (Sangam) | [worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon) | ==r:Inscripción de extranjeros hasta el **4 sep 2026**== — cupo limitado, sorteo |
+| ==**JTBC Seoul Marathon**== | ==**1 nov**== | Completo, 10K | Seúl (Sangam) | [worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon) | ==r:Inscripción de extranjeros: el plazo depende del canal== — cupo limitado, sorteo |
 | Garmin Run Korea | 15 nov | Medio, 10K | Goyang | [runable.me](http://runable.me/product/18977?comp=18962) | Cerrado (reg. fue 1–3 jul) |
 
 </div>
@@ -123,7 +123,7 @@ El ==**JTBC Seoul Marathon**== es la carrera urbana estrella de Corea — de 25,
 - Pasaporte obligatorio en la recogida (sin recogida por terceros)
 
 **Cómo inscribirse (extranjeros):**
-Los corredores extranjeros residentes fuera de Corea se inscriben exclusivamente a través de ==**[worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon)**==. ==r:Las plazas son limitadas y se agotan pronto==, así que consulta la página oficial para ver la disponibilidad actual — ==r:**el plazo depende del canal que uses**==. La ventana japonesa de RUNNET llegó hasta el 4 de septiembre de 2026 y ya cerró; worldsmarathons.com es un canal aparte y puede seguir mostrando plazas, así que confírmalo ahí antes de contar con una. En cualquiera de los dos, el cierre de cancelación/reembolso cae el mismo día que cierra ese canal (23:59 KST) y es también el límite de cancelación/reembolso. Los titulares de pasaporte coreano no pueden inscribirse por esta vía.
+Los corredores extranjeros residentes fuera de Corea se inscriben a través de ==**[worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon)**==. ==r:Las plazas son limitadas y se agotan pronto==, así que consulta la página oficial para ver la disponibilidad actual — ==r:**el plazo depende del canal que uses**==. La ventana japonesa de RUNNET llegó hasta el 4 de septiembre de 2026 y ya cerró; worldsmarathons.com es un canal aparte y puede seguir mostrando plazas, así que confírmalo ahí antes de contar con una. En cualquiera de los dos, el cierre de cancelación/reembolso cae el mismo día que cierra ese canal (23:59 KST) y es también el límite de cancelación/reembolso. Los titulares de pasaporte coreano no pueden inscribirse por esta vía.
 
 Los precios en ese canal son ==**€104 el 10K**== y ==**€129 el maratón completo de 42,2K**== (solo corredores del extranjero). Como en años anteriores ambas distancias se agotaron el primer día, ==g:la asignación pasó a sorteo==: inscribirse pronto ya no garantiza plaza, solo te mete en el sorteo. El dorsal se recoge en la EXPO antes de la carrera y el nombre de la inscripción debe coincidir con el pasaporte. El recorrido sale del ==**World Cup Park (Mapo-gu)**== y termina en el ==**Parque Olímpico (Songpa-gu)**==.
 
@@ -346,7 +346,7 @@ Para el panorama completo de torneos (el APT Incheon se disputó del 7 al 16 de 
 
 ==g:El punto dulce del que nadie habla:== **el APT Jeju acaba el 7 de octubre — el Maratón de Chuncheon es el 25 de octubre.** Eso son 18 días de margen. Juega el torneo, quédate en Corea, corre la carrera. Un solo vuelo cubre ambos. Y si estás dispuesto a quedarte hasta el 1 de noviembre, el JTBC de Seúl está ahí mismo.
 
-El doblete más limpio: APT Incheon (7–16 ago) → descanso en Seúl → Maratón de Chuncheon (25 oct) o JTBC (1 nov). O bien: APT Jeju (25 sep–7 oct) → 18 días en Corea → Chuncheon (25 oct). ⚠ Para 2026, la única inscripción de maratón es la del JTBC, fecha límite 4 de sep — trata la ruta de Chuncheon como plantilla para 2027.
+El doblete más limpio: APT Incheon (7–16 ago) → descanso en Seúl → Maratón de Chuncheon (25 oct) o JTBC (1 nov). O bien: APT Jeju (25 sep–7 oct) → 18 días en Corea → Chuncheon (25 oct). ⚠ Para 2026, la única inscripción de maratón es la del JTBC — el plazo depende del canal que uses; trata la ruta de Chuncheon como plantilla para 2027.
 
 ---
 

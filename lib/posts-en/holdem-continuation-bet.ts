@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Continuation Bet (C-Bet): When to Fire the Flop, How Much, and When to Check",
   seoTitle: "Why 'C-Bet Every Flop' Bleeds Chips — Continuation Bet Strategy",
   desc: "What a continuation bet is, which flops to c-bet and which to check, exact sizing — small on dry boards, big on wet — and how often to fire in position.",
-  tldr: "A continuation bet (c-bet) is a bet on the flop by the player who raised preflop. The modern rule isn't 'c-bet every flop' — it's to bet the flops that favor your range (high, dry boards like K-7-2) small and often, and check the ones that favor your opponent (low, connected boards like 7-6-5). Size small — about one-third pot — on dry boards, big — two-thirds or more — on wet ones, c-bet less out of position, and much less multiway.",
+  tldr: "A continuation bet (c-bet) is a bet on the flop by the player who raised preflop. The modern rule isn't 'c-bet every flop' — it's to bet the flops that favor your range (high, dry boards like K-7-2) small and often, and check the ones that favor your opponent (low, connected boards like 7-6-5). Size small — about one-third pot — on dry boards, big — two-thirds or more — on wet ones, c-bet less out of position when you were the single raiser (as the out-of-position 3-bettor it flips to almost always), and much less multiway.",
   category: "strategy",
   date: "2026-07-06",
   // 2026-08-19: range advantage 절에 `a-high-board-cbet` 역링크 한 문단 추가(EN·KO 전용 자산이라
@@ -268,7 +268,7 @@ A. Around 55–70% for flop c-bet is a healthy, balanced band. Over about 85% si
 1. **A c-bet is a flop bet by the preflop raiser** — and it works because hands miss the flop about two-thirds of the time.
 2. **The board decides.** Bet high, dry boards that favor your range; check low, connected boards that favor your opponent's.
 3. **Range advantage sets frequency; nut advantage sets size.** Bet often on boards you dominate; bet big only when you hold more of the nuts.
-4. **Small (⅓) on dry, big (⅔+) on wet.** C-bet less out of position, and much less multiway.
+4. **Small (⅓) on dry, big (⅔+) on wet.** C-bet less out of position as the single raiser (as the OOP 3-bettor it flips to almost always), and much less multiway.
 5. **Checking is a weapon.** The best players check often and on purpose — the c-bet is a scalpel, not a hammer.
 
 Get this right and you stop torching pots on boards that were never yours to bet. Pair sharp c-betting with a solid [3-bet game](/en/blog/holdem-3bet), real [position](/en/blog/holdem-position-play) awareness, and the full [strategy framework](/en/blog/holdem-strategy), and your flop play quietly leaves the "bet every flop" crowd behind.

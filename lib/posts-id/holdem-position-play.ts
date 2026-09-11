@@ -177,7 +177,7 @@ Setiap kursi mendapat opening range-nya sendiri karena **jumlah pemain yang masi
 | Hijack | ~20% | Peluang steal dimulai |
 | **Cutoff** | **~27%** | Hanya button di belakang — kursi steal utama |
 | **Button** | ==g:**~43%**== | Aksi terakhir dijamin di postflop — open terlebar |
-| Small blind | ~40% (raise-atau-fold) | Lebar saat di-fold ke Anda — raise sebagai default, meski melengkapi blind adalah [limp](/id/blog/holdem-limping) yang bisa dibenarkan di pot yang tak di-raise; menghadapi raise, 3-bet atau fold — jangan flat-call |
+| Small blind | ~40% saat di-fold ke Anda (menghadapi raise: 3-bet atau fold) | Lebar saat di-fold ke Anda — raise sebagai default, meski melengkapi blind adalah [limp](/id/blog/holdem-limping) yang bisa dibenarkan di pot yang tak di-raise; menghadapi raise, 3-bet atau fold — jangan flat-call |
 | Big blind | Bertahan lebar vs steal | Menutup aksi + pot odds, bukan open |
 
 ![Meja poker 9 pemain menunjukkan opening range yang melebar dari UTG (~13%, merah ketat) ke Button (~43%, hijau lebar)](/images/holdem-position-play-opening-range.webp "Opening range menurut posisi — UTG membuka ~13%, button ~43%")

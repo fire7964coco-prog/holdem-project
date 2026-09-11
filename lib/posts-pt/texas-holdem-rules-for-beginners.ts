@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "No Texas Hold'em cada jogador recebe 2 cartas fechadas, usa 5 cartas comunitárias, e a melhor mão de 5 cartas ganha depois de quatro rodadas de apostas.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
@@ -201,7 +201,7 @@ Quando alguém fala "Texas Hold'em", quase sempre quer dizer **No-Limit Hold'em 
 
 | Formato | Quanto pode apostar? | Onde você vai encontrar |
 |--------|-----------------------|---------------------|
-| **No-Limit (NLHE)** | Qualquer valor até todas as suas fichas (o "all-in") | O padrão — jogos em casa, maioria dos cassinos, WSOP |
+| **No-Limit (NLHE)** | Do big blind até todas as suas fichas (o "all-in") | O padrão — jogos em casa, maioria dos cassinos, WSOP |
 | **Fixed-Limit** | Só incrementos fixos (uma aposta pequena definida, dobrada no turn/river) | Mesas de cassino mais antigas; menos oscilações grandes |
 | **Pot-Limit** | Até o tamanho atual do pote | Raro no Hold'em; padrão no Omaha (PLO) |
 
@@ -442,7 +442,7 @@ A. Você precisa de pelo menos 2 jogadores e pode sentar até 10. Com exatamente
 
 **Q. O que significa no-limit no Texas Hold'em?**
 
-A. No-Limit significa que você pode apostar qualquer valor, até todas as suas fichas, em qualquer rodada de apostas — esse é o famoso "all-in". É o formato padrão e mais popular, incluindo o Main Event da WSOP. Já no Limit Hold'em, cada aposta tem um tamanho fixo; e no Pot-Limit, a aposta é limitada ao tamanho atual do pote.
+A. No-Limit significa que você pode apostar desde o big blind até todas as suas fichas, em qualquer rodada de apostas — o topo dessa faixa é o famoso "all-in". É o formato padrão e mais popular, incluindo o Main Event da WSOP. Já no Limit Hold'em, cada aposta tem um tamanho fixo; e no Pot-Limit, a aposta é limitada ao tamanho atual do pote.
 
 **Q. Quais são as melhores dicas de poker para iniciantes?**
 

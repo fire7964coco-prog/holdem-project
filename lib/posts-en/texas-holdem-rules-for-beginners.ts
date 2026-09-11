@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Texas Hold'em gives each player 2 hole cards, uses 5 community cards, and the best 5-card poker hand wins after four betting rounds.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-09",
+  updated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
@@ -199,7 +199,7 @@ When people say "Texas Hold'em," they almost always mean **No-Limit Hold'em (NLH
 
 | Format | How much can you bet? | Where you'll see it |
 |--------|-----------------------|---------------------|
-| **No-Limit (NLHE)** | Any amount up to all your chips ("all-in") | Default game — home games, most casinos, WSOP |
+| **No-Limit (NLHE)** | Any amount from the big blind up to all your chips ("all-in") | Default game — home games, most casinos, WSOP |
 | **Fixed-Limit** | Only fixed increments (a set small bet, then a double bet on turn/river) | Older casino tables; fewer big swings |
 | **Pot-Limit** | Up to the current size of the pot | Rare for Hold'em; standard for Omaha (PLO) |
 
@@ -432,7 +432,7 @@ A. You need at least 2 players and can seat up to 10. With exactly two players i
 
 **Q. What does no-limit mean in Texas Hold'em?**
 
-A. No-Limit means you can bet any amount up to all of your chips on any betting round — that is the "all-in" move. It is the default and most popular format, including the WSOP Main Event. Limit Hold'em caps each bet to a fixed size, and Pot-Limit caps your bet to the current pot size.
+A. No-Limit means you can bet any amount from the big blind up to all of your chips on any betting round — the top end is the "all-in" move. It is the default and most popular format, including the WSOP Main Event. Limit Hold'em caps each bet to a fixed size, and Pot-Limit caps your bet to the current pot size.
 
 **Q. How long does one hand of Texas Hold'em take?**
 

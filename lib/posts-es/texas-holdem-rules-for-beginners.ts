@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "En el Texas Hold'em cada jugador recibe 2 cartas propias y comparte 5 cartas comunitarias en la mesa. Se apuesta en cuatro rondas — preflop, flop, turn y river — y gana quien forma la mejor mano de póker de 5 cartas, o el último que quede si todos los demás se retiran. Puedes usar tus dos cartas, una sola o ninguna: lo que forme la mano más fuerte.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
@@ -201,7 +201,7 @@ Cuando la gente dice "Texas Hold'em", casi siempre se refiere al **No-Limit Hold
 
 | Formato | ¿Cuánto puedes apostar? | Dónde lo verás |
 |--------|-----------------------|---------------------|
-| **No-Limit (NLHE)** | Cualquier cantidad hasta todas tus fichas ("all-in") | El juego por defecto — partidas en casa, la mayoría de casinos, WSOP |
+| **No-Limit (NLHE)** | Desde la ciega grande hasta todas tus fichas ("all-in") | El juego por defecto — partidas en casa, la mayoría de casinos, WSOP |
 | **Fixed-Limit** | Solo incrementos fijos (una apuesta pequeña fija, que se dobla en turn/river) | Mesas de casino más antiguas; menos vaivenes grandes |
 | **Pot-Limit** | Hasta el tamaño actual del bote | Raro en Hold'em; el estándar en Omaha (PLO) |
 
@@ -438,7 +438,7 @@ A. Se necesitan al menos 2 jugadores y caben hasta 10. Con exactamente dos se ll
 
 **Q. ¿Qué significa no-limit en el Texas Hold'em?**
 
-A. No-Limit significa que puedes apostar cualquier cantidad hasta todas tus fichas en cualquier ronda de apuestas — eso es el "all-in". Es el formato por defecto y el más popular, incluido el Main Event de las WSOP. El Limit Hold'em limita cada apuesta a un tamaño fijo y el Pot-Limit la limita al tamaño actual del bote.
+A. No-Limit significa que puedes apostar desde la ciega grande hasta todas tus fichas en cualquier ronda de apuestas — el tope es el movimiento de "all-in". Es el formato por defecto y el más popular, incluido el Main Event de las WSOP. El Limit Hold'em limita cada apuesta a un tamaño fijo y el Pot-Limit la limita al tamaño actual del bote.
 
 **Q. ¿Cuánto dura una mano de Texas Hold'em?**
 

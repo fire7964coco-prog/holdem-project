@@ -135,7 +135,7 @@ const SPEC: [string, string][] = [
   //    «Chinesisch» 하나로 묶었다(숫자를 주장하지 않으므로 허용 · M-046 §3 판정).
   // ★2026-08-24 갱신 — 앱이 fr을 배포해 셀렉터가 9개가 됐다(Französisch 추가).
   // ★2026-09-05 갱신 — 앱이 id·ms를 배포해 셀렉터가 11개가 됐다(라이브 실측 · ③ 마감 회차).
-  ["Sprache", "Deutsch (auch Koreanisch, Englisch, Japanisch, Spanisch, Portugiesisch, Französisch, Chinesisch (Kurz- und Langzeichen), Indonesisch, Malaiisch und Hindi)"],
+  // 🔴 2026-09-11 — 이 자리에 있던 «지원 언어 열거» 행을 삭제했다(사장님 결정 2026-09-09 · 솔버 S-013 · docs/solver-landing-playbook.md). 재신설 금지 — 언어 대응은 FAQ 한 문항으로만.
   ["Engine", "Open-Source WASM Postflop (AGPL-3.0) · geänderter Quellcode veröffentlicht"],
 ];
 

@@ -122,6 +122,12 @@ EN 12편 정정 → 7로케일(de·es·id·ja·pt·zh·zh-hant) 전파 완료. 1
 - **J#9** ✅ **종결(2026-09-11 (8))** — `holdem-bubble` tldr 「on a satellite bubble you fold everything, even aces」에 **multi-seat** 한정어(본문 L147은 있고 tldr만 없었다 · 싱글시트/승자독식 새틀라이트에선 조언이 반대 = D유형). EN + de·es·id·ja·pt·zh·zh-hant(각 본문이 쓰는 표기 승계).
 - **J#10** ✅ **종결(2026-09-11 (8))** — `holdem-strategy` 「five of the six map directly onto the five decisions」인데 표의 Decision 태그는 4행뿐. 「Being too passive」 행 fix 셀에 **(Decision 4)** (判断4 = 플랍에서 베팅을 이어가는가 · 수동성의 반대). EN + 7로케일 동형 처리. ko는 표 구조가 달라 대상 아님.
 
+### 2-E. 검수장 MA-130·MA-131·MA-136이 올린 것 (2026-09-11 · 우편함 회차에서 처리)
+
+- **X-1** 🟠 **미결** — `holdem-blind-meaning` EN **L80** 「Nobody gets to skip their turn」(id L81 「Tidak ada yang bisa melewatkan gilirannya」 · zh-hant 직답 L82 동형). 검수장 판정 = RISKY — 자리를 비운 플레이어의 missed blind(WSOP Live Action §155~158)·데드 버튼(Tournament §85)이 있어 «아무도 건너뛰지 못한다»는 단정이 아니다. 처방 = 「자리에 있는 한」 한정 또는 missed-blind 한 줄. **EN 먼저, 그 다음 8로케일.** 1차 출처 = `docs/sources/wsop-2026-live-action-rules.txt` §155~158.
+- **X-2** ✅ **종결(우편함 회차)** — `texas-holdem-rules-for-beginners` L202 표·L435 FAQ 「any amount up to all your chips」 → 「from the big blind up to …」(NL 최소 오픈 = 빅블라인드 · A 96 «minimum legal amount»). EN + 7로케일.
+- ✅ **종결(우편함 회차 · EN + 7로케일)** — MA-130 요청 1의 es 동형 3건: `holdem-game-order` 표 Fold·All-in 「Anytime」 → 「Any street — in turn」(A 84 non-standard/out-of-turn fold) · `holdem-showdown-rules` 「before/during the runout」 3자리 → TDA 16 축어 「tabled without delay once all betting is complete」 · 「can never be retrieved」 → A 109(식별 가능하면 회수 가능). MA-131 요청 2~4: `holdem-continuation-bet` tldr·L271 OOP 한정 · `holdem-kicker` FAQ L196 → L109 문면 · `holdem-card-counting` L96 misdeal→by mistake · L116 · L127 «any card room» 삭제 · `holdem-position-play` SB 행 「vs a raise」 · `holdem-bubble` 「WSOP Tournament Rule 126」 · `korea-poker-marathon-2026` 「9/4 단일 마감」 7자리 → 창구 종속(L125 정합).
+
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - 🔴 **EN 56편 `updated` 필드 전수 대조** — zh-hant가 **세 회차 연속** 청구했다. 이 필드가 낡으면 `check:drift`가

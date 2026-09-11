@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "O desempate segue uma ordem fixa: primeiro o tipo de mão, depois as cartas que formam a mão, depois os kickers do mais alto ao mais baixo. Mesmo par → ganha o primeiro kicker mais alto; cinco cartas idênticas → pote dividido. Os naipes nunca desempatam.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-10",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "⚖️",
@@ -228,7 +228,7 @@ A. Ganha o straight flush mais alto, decidido pela carta de topo — um straight
 
 **Q. Os naipes desempatam alguma vez no Texas Hold'em?**
 
-A. Não. Não há valor de naipe no Hold'em — se duas melhores mãos de cinco cartas coincidem valor a valor, o pote é dividido, não importam os naipes.
+A. Não — mas existe um lugar numa mesa de Hold'em em que os naipes são usados, e não é o pote. Nos cash games, e pelas regras da casa da maioria dos clubes, cada jogador puxa uma carta para definir onde o botão do dealer começa, e se duas cartas empatam em valor é a ordem de naipes que resolve. (Os torneios da WSOP dispensam esse sorteio: a regra 85 do regulamento de torneios da WSOP coloca o botão no primeiro stack à direita do dealer e só refaz o sorteio quando restam três, duas e uma mesa — sem naipe nenhum.) De um jeito ou de outro, isso escolhe um assento, nunca uma mão. A única ordem de naipes do regulamento de torneios pertence ao stud e ao razz. Se duas melhores mãos de cinco cartas coincidem valor a valor, o pote é dividido, não importam os naipes.
 
 **Q. O que acontece se os dois jogadores têm exatamente a mesma mão?**
 

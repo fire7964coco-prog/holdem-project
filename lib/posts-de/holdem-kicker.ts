@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ein Kicker ist die höchste Beikarte, die nicht zu deiner eigentlichen Hand gehört – er bricht den Gleichstand, wenn zwei Spieler denselben Rang teilen. Ein Paar nutzt 3 Kicker, Zwei Paare 1, Drilling 2; Straße, Flush, Full House und Straight Flush haben keinen. Deshalb schlägt AK das AQ, wenn das Board ein Ass pairt.",
   category: "hand-rankings",
   date: "2026-07-08",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "🃏",
@@ -197,7 +197,7 @@ A. Ein hoher – ein Ass oder König als Kicker ist stark, während ein niedrige
 
 **Q. Was bedeutet „das Board spielen“?**
 
-A. Das Board spielen bedeutet, dass die fünf Gemeinschaftskarten deine beste Hand sind und deine Hole Cards sie nicht verbessern können. Kann niemand das Board verbessern, nutzen alle dieselben fünf Karten und der Pot wird geteilt. Es gibt keinen Kicker, weil keine deiner Hole Cards zu den fünf Karten gehört, die du spielst – jede Karte der Hand ist geteilt.
+A. Das Board spielen bedeutet, dass die fünf Gemeinschaftskarten deine beste Hand sind und deine Hole Cards sie nicht verbessern können. Kann niemand das Board verbessern, nutzen alle dieselben fünf Karten und der Pot wird geteilt. Deine Beikarten entscheiden dann nichts mehr, weil keine deiner Hole Cards zu den fünf Karten gehört, die du spielst – jede Karte der Hand ist geteilt.
 
 **Q. Zählen Kicker im Texas Hold'em?**
 

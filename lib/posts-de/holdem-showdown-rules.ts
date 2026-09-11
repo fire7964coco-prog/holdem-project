@@ -41,7 +41,7 @@ Die Regel hängt davon ab, wie die letzte Setzrunde geendet hat (den kompletten 
 |--------------------|-----------------|
 | Jemand hat am River gesetzt oder erhöht | ==Der Spieler, der zuletzt gesetzt oder erhöht hat==, zeigt zuerst |
 | Alle haben den River durchgecheckt | Der erste aktive Spieler links vom Dealer-Button zeigt zuerst |
-| All-in auf einer früheren Street | Turnier: Sobald niemand mehr setzen kann, werden alle Hände offen hingelegt (TDA-Regel 16). Cashgame: Der All-in-Spieler dreht zuerst um – gibt es einen Side Pot, zeigen dessen Spieler zuerst (Live Action Rule 149) |
+| All-in auf einer früheren Street | Turnier: Sobald das Setzen abgeschlossen ist, wird jede Hand unverzüglich offen hingelegt (TDA-Regel 16). Cashgame: Der All-in-Spieler dreht zuerst um – gibt es einen Side Pot, zeigen dessen Spieler zuerst (Live Action Rule 149) |
 
 </div>
 
@@ -83,7 +83,7 @@ Im **Turnier** gilt: Geht ein Spieler All-in und sind keine weiteren Bets mehr m
 
 | All-in-Szenario | Showdown-Regel |
 |----------------|---------------|
-| Spieler geht auf einer früheren Street All-in, andere callen, keine Bets mehr möglich | Turnier: Alle Hände werden vor oder während des Runouts offen gezeigt. Cashgame: Der All-in-Spieler dreht zuerst um – gibt es einen Side Pot, zeigen dessen Spieler zuerst (Live Action Rule 149) |
+| Spieler geht auf einer früheren Street All-in, andere callen, keine Bets mehr möglich | Turnier: Sobald das Setzen abgeschlossen ist, wird jede Hand unverzüglich offen hingelegt (TDA-Regel 16). Cashgame: Der All-in-Spieler dreht zuerst um – gibt es einen Side Pot, zeigen dessen Spieler zuerst (Live Action Rule 149) |
 | All-in-Bet am River wird gecallt | Der All-in-Spieler zeigt als letzter Aggressor zuerst – und ==r:im Turnier darf hier niemand mucken==, nach TDA-Regel 16 muss auch der Caller seine Hand tablen |
 | Mehrere All-ins mit mehreren Side Pots | Jeder Pot wird separat vergeben; alle beteiligten Hände werden gezeigt |
 
@@ -147,7 +147,7 @@ Du bist dir ziemlich sicher, dass du verloren hast. Du schiebst deine Karten ver
 
 ### Fehler 3: Jede gecallte Hand sehen wollen
 
-In den meisten Cardrooms kannst du den Dealer bitten, eine gemuckte Hand aufzudecken – aber nur eine Hand, die gecallt wurde und den Showdown erreicht hat. Gefoldete Hände sind tot und können nie zurückgeholt werden. Die Regel existiert als Schutz vor Absprachen (Collusion), nicht zur Befriedigung von Neugier – und wer sie missbraucht, gilt als unhöflich. Setze sie sparsam ein.
+In den meisten Cardrooms kannst du den Dealer bitten, eine gemuckte Hand aufzudecken – aber nur eine Hand, die gecallt wurde und den Showdown erreicht hat. Eine gefoldete Hand ist tot, sobald sie im Muck liegt, und zurückgeholt werden kann nur eine Hand, die noch eindeutig identifizierbar ist (WSOP-Turnierregel 109). Die Regel existiert als Schutz vor Absprachen (Collusion), nicht zur Befriedigung von Neugier – und wer sie missbraucht, gilt als unhöflich. Setze sie sparsam ein.
 
 ### Fehler 4: Nicht wissen, dass man früher zeigen darf
 
@@ -180,7 +180,7 @@ A. Nein – verboten ist es nicht, aber überall verhasst. Slow Rolling bedeutet
 
 **Q. Werden die Karten beim All-in sofort aufgedeckt?**
 
-A. Im Turnier gilt: Geht ein Spieler All-in und sind keine weiteren Bets möglich, werden alle an diesem Pot beteiligten Hände vor oder während des Austeilens der restlichen Gemeinschaftskarten offen gezeigt (TDA-Regel 16). Gibt es einen Side Pot, wird dieser zuerst vergeben und danach der Hauptpot – die Karten des All-in-Spielers liegen zu diesem Zeitpunkt aber längst offen. Im Cashgame lassen die WSOP Live Action Rules den Spieler, der All-in gegangen ist, zuerst umdrehen, und die Side-Pot-Spieler zeigen vor jedem, der nur im Main Pot All-in ist (Rule 149). Solange die anderen noch Chips haben und setzen können, bleibt dagegen alles verdeckt.
+A. Im Turnier gilt: Geht ein Spieler All-in und sind keine weiteren Bets möglich, werden alle an diesem Pot beteiligten Hände unverzüglich offen hingelegt, sobald das Setzen komplett abgeschlossen ist – noch bevor die restlichen Gemeinschaftskarten ausgeteilt werden (TDA-Regel 16). Gibt es einen Side Pot, wird dieser zuerst vergeben und danach der Hauptpot – die Karten des All-in-Spielers liegen zu diesem Zeitpunkt aber längst offen. Im Cashgame lassen die WSOP Live Action Rules den Spieler, der All-in gegangen ist, zuerst umdrehen, und die Side-Pot-Spieler zeigen vor jedem, der nur im Main Pot All-in ist (Rule 149). Solange die anderen noch Chips haben und setzen können, bleibt dagegen alles verdeckt.
 
 **Q. Kann ich gewinnen, wenn ich meine Hand falsch ansage?**
 

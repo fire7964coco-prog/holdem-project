@@ -41,7 +41,7 @@ Aturannya tergantung bagaimana ronde taruhan terakhir berakhir (untuk urutan len
 |--------------------|-----------------|
 | Ada yang bet atau raise di river | ==Pemain terakhir yang bet atau raise== buka duluan |
 | Semua orang cek di river | Pemain aktif pertama di kiri tombol dealer buka duluan |
-| All-in di street sebelumnya (tidak ada taruhan di river) | Turnamen: semua hand dibuka sebelum/saat sisa kartu dibagikan (TDA Rule 16). Cash game: pemain yang all-in membuka duluan — kalau ada side pot, pemain side pot membuka lebih dulu (Live Action Rule 149) |
+| All-in di street sebelumnya (tidak ada taruhan di river) | Turnamen: semua hand dibuka tanpa ditunda begitu seluruh aksi taruhan selesai (TDA Rule 16). Cash game: pemain yang all-in membuka duluan — kalau ada side pot, pemain side pot membuka lebih dulu (Live Action Rule 149) |
 
 </div>
 
@@ -83,7 +83,7 @@ Di **turnamen**, ketika seorang pemain all-in dan tidak ada taruhan lagi yang mu
 
 | Skenario all-in | Aturan showdown |
 |----------------|---------------|
-| Pemain all-in di street sebelumnya, yang lain call, tidak ada taruhan lagi | Turnamen: semua hand dibuka menghadap ke atas sebelum atau saat sisa kartu dibagikan. Cash game: pemain all-in membuka duluan — kalau ada side pot, pemain side pot membuka lebih dulu (Live Action Rule 149) |
+| Pemain all-in di street sebelumnya, yang lain call, tidak ada taruhan lagi | Turnamen: semua hand dibuka tanpa ditunda begitu seluruh aksi taruhan selesai (TDA Rule 16). Cash game: pemain all-in membuka duluan — kalau ada side pot, pemain side pot membuka lebih dulu (Live Action Rule 149) |
 | Bet all-in di river di-call | Pemain yang all-in buka duluan sebagai agresor terakhir — tapi di turnamen ==r:tidak ada yang boleh muck==: menurut TDA Rule 16 pemain yang call pun wajib membuka hand-nya |
 | Beberapa all-in menciptakan beberapa side pot | Setiap pot diselesaikan terpisah; semua hand yang terlibat dibuka |
 
@@ -147,7 +147,7 @@ Anda cukup yakin kalah. Anda menggeser kartu menghadap ke bawah ke arah muck. De
 
 ### Kesalahan 3: Menuntut melihat setiap hand yang di-call
 
-Di kebanyakan cardroom Anda boleh minta dealer membuka hand yang di-muck — tapi hanya hand yang di-call dan sampai ke showdown. Hand yang di-fold sudah mati dan tidak bisa diambil kembali. Aturan permintaan ini ada untuk mencegah kolusi, bukan memuaskan rasa penasaran, dan menyalahgunakannya dianggap tidak sopan. Pakai seperlunya saja.
+Di kebanyakan cardroom Anda boleh minta dealer membuka hand yang di-muck — tapi hanya hand yang di-call dan sampai ke showdown. Hand yang di-fold sudah mati begitu masuk muck, dan hanya hand yang masih jelas bisa dikenali yang boleh diambil kembali (WSOP Tournament Rule 109). Aturan permintaan ini ada untuk mencegah kolusi, bukan memuaskan rasa penasaran, dan menyalahgunakannya dianggap tidak sopan. Pakai seperlunya saja.
 
 ### Kesalahan 4: Tidak tahu Anda boleh buka lebih awal
 
@@ -180,7 +180,7 @@ A. Slow roll adalah sengaja menunda membuka hand pemenang yang Anda sudah tahu p
 
 **Q. Dalam situasi all-in, siapa yang buka kartu duluan?**
 
-A. Di turnamen, ketika seorang pemain all-in dan tidak ada taruhan lagi yang mungkin, semua hand yang terlibat di pot itu dibuka menghadap ke atas sebelum atau saat sisa kartu bersama dibagikan (TDA Rule 16). Kalau ada side pot, side pot dibagikan lebih dulu dan pot utama sesudahnya — tapi kartu pemain yang all-in sudah terbuka jauh sebelum itu. Di cash game, WSOP Live Action Rules membuat pemain yang all-in membuka duluan, dan pemain side pot membuka sebelum siapa pun yang all-in hanya untuk pot utama (Rule 149). Selama pemain lain masih punya chip dan masih bisa bertaruh, semua kartu tetap tertutup.
+A. Di turnamen, ketika seorang pemain all-in dan tidak ada taruhan lagi yang mungkin, semua hand yang terlibat di pot itu dibuka tanpa ditunda begitu seluruh aksi taruhan selesai — sebelum sisa kartu komunitas dibagikan (TDA Rule 16). Kalau ada side pot, side pot dibagikan lebih dulu dan pot utama sesudahnya — tapi kartu pemain yang all-in sudah terbuka jauh sebelum itu. Di cash game, WSOP Live Action Rules membuat pemain yang all-in membuka duluan, dan pemain side pot membuka sebelum siapa pun yang all-in hanya untuk pot utama (Rule 149). Selama pemain lain masih punya chip dan masih bisa bertaruh, semua kartu tetap tertutup.
 
 **Q. Apa arti "cards speak" dalam poker?**
 

@@ -176,7 +176,7 @@ Every seat gets its own opening range because **the number of players still to a
 | Hijack | ~20% | Steal opportunities begin |
 | **Cutoff** | **~27%** | Only the button behind — prime steal seat |
 | **Button** | ==g:**~43%**== | Guaranteed last action postflop — widest open |
-| Small blind | ~40% (raise-or-fold) | Wide when folded to — raise by default, though completing is a defensible [limp](/en/blog/holdem-limping) in an unraised pot; facing a raise, 3-bet or fold — don't flat-call |
+| Small blind | ~40% when folded to (vs a raise: 3-bet or fold) | Wide when folded to — raise by default, though completing is a defensible [limp](/en/blog/holdem-limping) in an unraised pot; facing a raise, 3-bet or fold — don't flat-call |
 | Big blind | Defends wide vs steals | Closing action + pot odds, not opens |
 
 ![9-handed poker table showing opening ranges widening from UTG (~13%, tight red) to the Button (~43%, wide green)](/images/holdem-position-play-opening-range.webp "Opening range by position — UTG opens ~13%, the button ~43%")
