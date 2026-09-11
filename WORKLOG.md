@@ -1,3 +1,11 @@
+## 2026-09-11 (5) — **`/solver` 한국어 랜딩 CTA가 앱을 영어로 열던 결함 — `?lang=ko` 페깅** (빌드 · 배포)
+
+사장님 지적 「/solver 열어봐, 한국어로 안 되어 있네」. Playwright 실측: 랜딩 본문·메타는 데스크톱·모바일 다 한국어(`<html lang="ko">`)였고, **한국어가 아닌 것은 CTA 뒤의 앱**(solver.holdemmaster.com)이었다.
+- **원인**: 앱은 «`?lang=` → 저장값 `solver.locale.pegged` → 브라우저 언어» 순으로 언어를 정한다(`solver/src/i18n.ts` L6·L32). 10개 랜딩 중 **ko만 유일하게** `SOLVER_URL`이 파라미터 없는 `https://solver.holdemmaster.com`이었다(en~id 9개는 전부 `?lang=<loc>`). 그래서 ① 영어 브라우저(en-US 컨텍스트 재현 → `<html lang="en">` · 「HoldemMaster GTO Trainer」) ② 다른 로케일 랜딩을 먼저 거쳐 pegged가 남은 기기 — 두 경로에서 한국어 랜딩으로 들어가도 앱이 영어로 뜬다. 랜딩 표 「화면 언어 = 한국어」·FAQ 「화면 전체가 한국어」 약속과 어긋나는 자리.
+- **처방**: `app/solver/solver-client.tsx` `SOLVER_URL` → `https://solver.holdemmaster.com/?lang=ko`(CTA 4개가 상수 하나를 씀). 라이브 `?lang=ko` 새 컨텍스트 실측 = `<html lang="ko">` · pegged=ko 저장 확인. `#lang=ko`·`/ko` 경로는 안 먹는다(404·무시) — 파라미터만 유효.
+- 빌드 exit 0 · **70 blog posts + 525 intl** (전체 로그 파일로 받음) · 산출물 `solver.html`에 `lang=ko` 1건.
+- 🪶 한국어 포스트 본문에서 앱을 직접 여는 링크는 0개(EN 3편은 이미 `?lang=en`) — 다른 자리는 없다.
+
 ## 2026-09-11 (4) — **ja 회차 10 머지·배포(`4291087c`) — 직답 «길이 규격» 축 종결 25자리/15편 + 헤드 §5-H 처리** (빌드 · 배포)
 
 사장님 지시 「ja 회차 10 끝났어, 머지해」. 프로토콜 §6 순서 그대로.

@@ -3,7 +3,14 @@
 import Link from "next/link";
 import { SOLVER_FAQ } from "./faq";
 
-const SOLVER_URL = "https://solver.holdemmaster.com";
+/**
+ * ★CTA는 `?lang=ko`로 보낸다 (2026-09-11 정정). 앱은 «?lang= → 저장값(solver.locale.pegged) →
+ *   브라우저 언어» 순으로 언어를 정하는데, 이 랜딩만 10개 중 유일하게 파라미터 없이 열고 있어서
+ *   영어 브라우저·다른 로케일 랜딩을 먼저 거친 기기에서는 **한국어 랜딩에서 들어가도 앱이 영어**로 떴다
+ *   (사장님 실물 지적 · Playwright en-US 컨텍스트 재현 · `?lang=ko`로 `<html lang="ko">` 확인).
+ *   아래 표·FAQ가 «화면 전체가 한국어»를 약속하므로 링크가 그 약속을 지켜야 한다. UTM은 붙이지 않는다.
+ */
+const SOLVER_URL = "https://solver.holdemmaster.com/?lang=ko";
 
 /**
  * ═══════════════════════════════════════════════════════════════════════════
