@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "In Position zu sein bedeutet, dass du zuletzt handelst – du siehst jede Entscheidung deiner Gegner, bevor du einen Chip ausgibst. Solver- und Datenbank-Studien legen nahe, dass Out-of-Position-Spieler nur etwa 60–85% ihrer Equity mitnehmen – in Position liegst du dann zwangsläufig über 100%. Deshalb öffnet UTG ~13% der Hände und der Button ~43% – und deshalb schreibt Position postflop jede C-Bet, jeden Bluff und jede Pot-Control-Entscheidung neu.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-09-10",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "16 Min.",
   emoji: "🎯",
@@ -217,7 +217,7 @@ Sehr stark – und der Grund ist Information. Die Continuation Bet ist im Grunde
 | Situation | Typische Solver-C-Bet-Frequenz (Flop) |
 |---|---|
 | **IP (BTN/CO vs Blind-Defense)** | **~65–75%** der Boards |
-| OOP als 3-Better (3-Bet-Pots aus den Blinds) | Sehr hoch – in unseren Solver-Läufen c-bettet der Big Blind auf Q♥T♥7♠ wie auf 8♦5♣2♠ in über 97% der Fälle |
+| OOP als 3-Better (3-Bet-Pots aus den Blinds) | Sehr hoch – in unseren Solver-Läufen c-bettet der Big Blind auf Q♥T♥7♠ wie auf 8♦5♣2♠ in über 97% der Fälle – mit der Zwei-Drittel-Pot-Größe; die Ein-Drittel-Größe bekam unter 1% |
 | OOP-Raiser vs IP-Caller (Single-Raised Pot) | ~30–45% – am selektivsten |
 
 In Position kannst du eine weite Range c-betten – inklusive Air und Backdoor-Draws – weil dein Gegner reagieren muss, ohne deinen nächsten Zug zu kennen, und wenn gecallt wird, handelst du am Turn immer noch zuletzt. Out of Position ist dieselbe Bet riskanter: ein Check-Raise beendet deinen Bluff, und ein Call lässt dich auf jeder verbleibenden Street zuerst rätseln. Deshalb verbrennt blindes 100%-C-Betten „weil du preflop geraist hast“ OOP im Single-Raised Pot Geld – die Zeile mit fast 100% oben gehört dem 3-Better, dem sein Range-Vorteil das erlaubt.

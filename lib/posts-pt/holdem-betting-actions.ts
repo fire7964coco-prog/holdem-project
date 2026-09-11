@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Ações de aposta no Texas Hold'em: check, call, raise e fold",
   seoTitle: "Check, pagar ou foldar? — Ações de aposta e regras do raise",
   desc: "Chegou a sua vez e deu branco? Entenda o que são check, call, raise e fold no poker, como funciona a regra do min-raise e quantas vezes dá para reaumentar.",
-  tldr: "O Texas Hold'em tem 5 ações de aposta: check (passar de graça), apostar (abrir a rodada), pagar/call (igualar uma aposta), aumentar/raise (o aumento mínimo é igual à aposta ou ao raise anterior) e foldar. Você só pode dar check quando não há aposta viva à sua frente — no pré-flop, isso só acontece sendo o big blind.",
+  tldr: "O Texas Hold'em tem 5 ações de aposta: check (passar de graça), apostar (abrir a rodada), pagar/call (igualar uma aposta), aumentar/raise (o aumento mínimo é igual à aposta ou ao raise anterior) e foldar. Você só pode dar check quando não há aposta viva à sua frente — no pré-flop, isso normalmente só acontece sendo o big blind (ou quem postou um straddle vivo).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "🃏",
@@ -50,7 +50,7 @@ Toda decisão que você toma numa mesa de poker é uma destas cinco:
 | Ação | Quando está disponível | Custo em fichas |
 |--------|---------------|-----------|
 | Fold | Sempre que a ação estiver com você | Grátis — mas as fichas que já foram para o pote ficam lá |
-| Check | Só quando não há aposta viva à sua frente (pré-flop: só como big blind) | Grátis — você passa a vez sem colocar fichas |
+| Check | Só quando não há aposta viva à sua frente (pré-flop: como big blind, ou como o jogador que postou um straddle vivo) | Grátis — você passa a vez sem colocar fichas |
 | Call | Depois que alguém apostou ou aumentou | Você iguala exatamente a aposta atual |
 | Bet | Primeira aposta da rodada | O valor que você escolher (mínimo = 1 big blind) |
 | Raise | Depois que alguém apostou | Pelo menos o tamanho da aposta ou do raise anterior por cima |
@@ -73,10 +73,10 @@ Dar check não é se render. Você mantém suas cartas, mantém todas as opçõe
 
 ## Quando você pode dar check no poker?
 
-Você pode dar check exatamente em duas situações:
+Você pode dar check em dois tipos de situação:
 
 - **Ninguém apostou ainda** na street atual (flop, turn ou river)
-- **Você é o big blind no pré-flop e ninguém aumentou** — seu blind já conta como aposta viva, então você pode dar check e ver o flop de graça
+- **Você é o big blind no pré-flop e ninguém aumentou** — seu blind já conta como aposta viva, então você pode dar check e ver o flop de graça (o mesmo vale para quem postou um straddle vivo)
 
 Se alguém apostar depois do seu check, você enfrenta uma decisão nova: foldar, pagar ou aumentar. Dar check primeiro e aumentar quando o adversário aposta se chama ==check-raise== — é totalmente legal no Texas Hold'em e uma arma padrão do jogo, não uma sacanagem.
 
@@ -92,7 +92,7 @@ Check vs call é a confusão mais comum de iniciante, então aqui vai a separaç
 
 | | Check | Call |
 |-|-------|------|
-| Quando existe | Não há aposta viva à sua frente (pré-flop: só como big blind) | Alguém apostou antes de você |
+| Quando existe | Não há aposta viva à sua frente (pré-flop: como big blind, ou como o jogador que postou um straddle vivo) | Alguém apostou antes de você |
 | Custo em fichas | Grátis | Você iguala a aposta atual |
 | O que diz | "Passo, mas continuo" | "Pago para continuar" |
 
@@ -155,7 +155,7 @@ Nos jogos de **Fixed-Limit** cada rodada é capada (pote "capado"). As regras de
 
 All-in significa apostar ==todas as fichas que você ainda tem==. Dá para fazer isso a qualquer momento em que a ação estiver com você — como aposta, call ou raise.
 
-Se o seu all-in for *menor* que a aposta atual, você não está foldado: você simplesmente disputa um ==pote principal== limitado à sua contribuição, enquanto as fichas extras dos stacks maiores formam um ==pote paralelo== que você não pode ganhar. E um all-in *menor que um min-raise completo* em geral não reabre a ação de raise para quem já agiu — uma regra sutil que surpreende até os regulares.
+Se o seu all-in for *menor* que a aposta atual, você não está foldado: você simplesmente disputa um ==pote principal== limitado à sua contribuição, enquanto as fichas extras dos stacks maiores formam um ==pote paralelo== que você não pode ganhar. (Se alguém está ainda mais curto que você, você continua disputando o pote paralelo que ele não alcança — cada all-in limita só a própria camada.) E um all-in *menor que um min-raise completo* em geral não reabre a ação de raise para quem já agiu — uma regra sutil que surpreende até os regulares.
 
 A mecânica completa — a conta do pote paralelo, quem mostra primeiro, table stakes — está em [regras de all-in e potes paralelos](/pt/blog/holdem-all-in-rules), e o que acontece quando mãos em all-in empatam é assunto das [regras de pote dividido e chop](/pt/blog/holdem-split-pot-rules).
 
@@ -220,15 +220,15 @@ A. Não deveria. A ação precisa seguir em sentido horário, na ordem, e um fol
 
 **Q. Pode dar check no pré-flop?**
 
-A. Só como big blind, e só se ninguém aumentou. O BB já postou uma aposta viva, então pode dar check e ver o flop de graça. Todas as outras posições no pré-flop precisam pagar, aumentar ou foldar.
+A. Só se a aposta que você mesmo postou for a aposta viva e ninguém tiver aumentado — normalmente o big blind, mas também um straddle vivo (regras 159 e 165 do regulamento Live Action da WSOP): essa aposta postada conta como sua abertura, então você pode dar check e ver o flop de graça. Todas as outras posições no pré-flop precisam pagar, aumentar ou foldar.
 
 **Q. Pode aumentar depois que alguém vai de all-in?**
 
-A. Depende do tamanho do all-in. Se o all-in for um raise completo e legal, a ação reabre e você pode reaumentar. Se for *menor* que um min-raise completo, quem já agiu em geral só pode pagar ou foldar — o all-in curto não reabre o raise para esses jogadores na maioria dos clubes.
+A. Depende do tamanho do all-in. Se o all-in for um raise completo e legal, a ação reabre e você pode reaumentar — desde que sobre na mão pelo menos um adversário que não esteja all-in; heads-up contra um all-in não sobra ninguém para aumentar em cima, então só dá para pagar ou foldar. Se for *menor* que um min-raise completo, quem já agiu em geral só pode pagar ou foldar — o all-in curto não reabre o raise para esses jogadores na maioria dos clubes.
 
 **Q. O que é string bet no poker?**
 
-A. É tentar apostar ou aumentar em vários movimentos — voltando ao seu stack no meio, sem ter anunciado "raise" (==regra 103==). O dealer decreta o string bet como um call do valor original. A mesma regra também proíbe um gesto enganoso para provocar ação fora de vez antes de a sua própria ação terminar. Dizer "call" e depois acrescentar não é string bet, mas uma declaração vinculante (==regra 90.d==) — mesmo efeito. Anuncie sua ação em voz alta ou mova todas as fichas em um único movimento.
+A. É tentar apostar ou aumentar em vários movimentos — voltando ao seu stack no meio, sem ter anunciado "raise" (==regra 103==). O segundo movimento nunca conta — só valem as fichas do primeiro: um call se ficarem abaixo de metade de um min-raise, e um min-raise completo obrigatório se chegarem à metade ou mais (regra 43-A da TDA). A mesma regra também proíbe um gesto enganoso para provocar ação fora de vez antes de a sua própria ação terminar. Dizer "call" e depois acrescentar não é string bet, mas uma declaração vinculante (==regra 90.d==) — mesmo efeito. Anuncie sua ação em voz alta ou mova todas as fichas em um único movimento.
 
 **Q. O que significa dar limp no poker?**
 

@@ -8,14 +8,14 @@ export const POST: Post = {
   tldr: "Uma continuation bet (c-bet) é uma aposta no flop feita por quem deu raise no pré-flop. A regra moderna não é 'c-bet em todo flop' — é apostar pequeno e com frequência nos flops que favorecem o seu range (boards altos e dry como K-7-2) e dar check nos que favorecem o adversário (boards baixos e conectados como 7-6-5). Aposte pequeno — cerca de um terço do pote — em dry boards, grande — dois terços ou mais — nos wet, dê c-bet menos fora de posição e bem menos multiway.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-10",
+  updated: "2026-09-11",
   // 2026-09-09: EN 09-09 정정(토너먼트 c-bet 사이즈 «각 구간 안에서» 축소) 본문 전파 완료.
   //   🔴 masterUpdated는 08-19에 그대로 둔다 — 아래 미결 항목의 드리프트 추적기다(올리면 게이트가 눈이 먼다).
   // masterUpdated 08-19 = EN의 08-19 변경(a-high-board-cbet 역링크 1문단)은 EN·KO 전용 자산이라
   //   번역본에 전파하지 않는다(EN 파일 주석 + docs/locale-intentional-diffs.md) — 검토 완료 표시.
   //   ⚠ EN에는 08-20 커밋(851d8dc7)의 GTO ⑨ 역링크 1문단도 있으나 EN updated가 08-19에 머물러
   //   스테일 게이트 밖이다 — 같은 사유로 전파 제외(locale-intentional-diffs에 함께 등재).
-  masterUpdated: "2026-09-09",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "15 min",
   emoji: "🔥",
@@ -105,7 +105,7 @@ Não existe uma única porcentagem "correta" de c-bet — quem te dá um número
 |:---|:---:|:---|
 | **Em posição, heads-up, dry board** | **70–100%** (pequeno) | Clássica "range bet" — aposte quase tudo, minúsculo |
 | **Em posição, heads-up, wet board** | **~50–60%** | Mais polarizado — valor e draws apostam, nada dá check |
-| **Fora de posição, heads-up (pote de um aumento só, você foi o raiser)** | **~30–45%** | Dê check bem mais para proteger o seu checking range. Como *3-bettor* fora de posição, inverte — acima de 97% nos dois boards que resolvemos, veja o [guia de posições](/pt/blog/holdem-position-play) |
+| **Fora de posição, heads-up (pote de um aumento só, você foi o raiser)** | **~30–45%** | Dê check bem mais para proteger o seu checking range. Como *3-bettor* fora de posição, inverte — acima de 97% nos dois boards que resolvemos, quase tudo no tamanho de dois terços do pote (o tamanho de um terço ficou abaixo de 1%), veja o [guia de posições](/pt/blog/holdem-position-play) |
 | **Multiway (2 adversários)** | **~50% ou menos** | Alguém provavelmente conectou — aperte |
 | **Multiway (3+ adversários)** | **Só mãos fortes e bons draws** | O fold equity basicamente sumiu |
 

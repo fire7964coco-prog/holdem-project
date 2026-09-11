@@ -10,7 +10,7 @@ export const POST: Post = {
   date: "2026-07-06",
   // 2026-08-19: range advantage 절에 `a-high-board-cbet` 역링크 한 문단 추가(EN·KO 전용 자산이라
   //   7개 번역본에는 전파하지 않는다 — 의도적 차이. `docs/locale-intentional-diffs.md`에 기록).
-  updated: "2026-09-09",
+  updated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "15 min",
   emoji: "🔥",
@@ -102,7 +102,7 @@ There is no single "correct" c-bet percentage — anyone who gives you one numbe
 |:---|:---:|:---|
 | **In position, heads-up, dry board** | **70–100%** (small) | Classic "range bet" — bet nearly everything, tiny |
 | **In position, heads-up, wet board** | **~50–60%** | More polarized — value and draws bet, air checks |
-| **Out of position, heads-up (single-raised pot, you were the raiser)** | **~30–45%** | Check far more to protect your checking range. As the OOP *3-bettor* it flips — over 97% on the two boards we solved, see the [position guide](/en/blog/holdem-position-play) |
+| **Out of position, heads-up (single-raised pot, you were the raiser)** | **~30–45%** | Check far more to protect your checking range. As the OOP *3-bettor* it flips — over 97% on the two boards we solved, almost all of it at the two-thirds-pot size (the one-third size got under 1%), see the [position guide](/en/blog/holdem-position-play) |
 | **Multiway (2 opponents)** | **~50% or less** | Someone likely connected — tighten up |
 | **Multiway (3+ opponents)** | **Strong hands & good draws only** | Fold equity is basically gone |
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Las ciegas son apuestas obligatorias que se ponen antes de repartir las cartas. La ciega pequeña se sienta a la izquierda del botón y la ciega grande a su izquierda; la ciega grande — normalmente el doble de la pequeña — es la unidad de apuesta de la mesa.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "💰",
@@ -31,7 +31,7 @@ Las ciegas son ==el motor que mantiene vivo el póker== — la primera pieza de 
 ### Los números clave
 
 :::stripe
-2 | apuestas obligatorias en cada mano, sin excepción
+2 | apuestas obligatorias — ciega pequeña y ciega grande
 1/2 | la ciega pequeña suele ser la mitad de la grande
 1 BB | la ciega grande = la unidad de apuesta de la mesa
 :::
@@ -40,7 +40,7 @@ Las ciegas son ==el motor que mantiene vivo el póker== — la primera pieza de 
 
 ## Qué es una ciega en el póker — y por qué existe
 
-Una **ciega** es una apuesta que estás obligado a hacer *antes* de recibir tus cartas — apuestas "a ciegas", sin haber visto nada. Dos jugadores la ponen en cada mano: la ciega pequeña y la ciega grande, los dos asientos inmediatamente a la izquierda del botón del dealer.
+Una **ciega** es una apuesta que estás obligado a hacer *antes* de recibir tus cartas — apuestas "a ciegas", sin haber visto nada. Dos jugadores la ponen en cada mano normal: la ciega pequeña y la ciega grande, los dos asientos inmediatamente a la izquierda del botón del dealer. (La única excepción es el botón muerto, que puede dejar una mano sin ciega pequeña.)
 
 ¿Por qué obligar a alguien a pagar? Para que el juego no muera. ==r:Sin ciegas, todos podrían tirar sus cartas y esperar eternamente a las manos premium==; los botes estarían vacíos, farolear no tendría sentido y la partida se pararía. ==g:Dos apuestas obligatorias en cada mano garantizan que siempre haya algo por lo que pelear.==
 

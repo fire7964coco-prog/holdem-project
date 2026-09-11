@@ -515,6 +515,9 @@
 
 ## 5. 헤드 요청
 
+> 🆕 **헤드 통지 2026-09-11 (7) — EN-먼저 회차가 ja 12편을 고쳤다. 회차 11 시작 전 `git merge main` 필수.**
+> 고친 편 = all-in-rules · showdown-rules · game-order · betting-actions · blind-meaning · flush-vs-straight(場面2 H3 제목 → 「完成したストレートに、さらにフラッシュドロー」 — §3-J 8 「제목이 부정확」 상태 **해소**) · continuation-bet · position-play · strategy · bad-beat · short-stack · tournament(형식 표 ターボ/ミステリーバウンティ 2행 + 용어표 3행 신설 = §5-H 4 **종결**). §5-G 4~8(J#1~J#5)·§5-H 2·4(J#6·J#7) **전건 종결** — 단 **J#4는 기각**(「コールに対して降りる人はいません」는 참 · 원문 유지). 🔴 회차 11 브리프(미커밋)의 대상 절(probability L214 · cbet L221 · pot-odds L124 · when-to-fold L213 · game-order L56/L345 · glossary · bad-beat L146 · card-counting · strategy L167 · fish · ept · apt)과는 **다른 절**이라 hunk 충돌은 없어야 하나, 브리프 §6 드리프트 표는 재측정하라. showdown 직답 블록(파일 L93)을 헤드가 재서술했다(토너/캐시 분기 · 163자).
+
 > **헤드 처리 2026-09-07 (8)**: 1 ✅ `npm run check:hangul`(`1f34f3e5` · 셀프테스트 7/7 · C 구간 게이트 목록에 넣을 것) · 2 ✅ EN·es·zh 「pocket fives」(`73782e82` · ja는 자체 4항목) · 3 **기각(문맥상 참)** — 그 괄호절은 «셋(보드에 그 랭크 1장)» 문맥이라, 보드에 K가 한 장 있으면 남은 K 2장을 한 사람만 들 수 있어 «같은 랭크 셋 둘»은 불가능. 레인의 반례 K♠K♥ vs K♦K♣는 보드에 K가 없는 경우라 셋이 아니다. 단 문장이 근거를 «셋 문맥»으로 못 박지 않아 정밀화 후보(헤드 대기열 17) · 4 ✅ **13-A 실재** — `docs/sources/tda-2022-shortform-rules.txt` L28 「13: Tabling Cards & Killing Winning Hand A: Proper tabling is both 1) turning all cards face up…」 · 5 ✅ **172조 실재** — 검수장 발췌 사본을 `docs/sources/wsop-2026-rules-발췌.md`로 복사(§B L854 축어) · 6·7 헤드 대기열 5·6 · 8 ✅ `rakko-playbook.md` §1-A(「ポーカー ボード」 사례 추가) · 9 **판정 = 반각** · 10 ✅ `docs/sources/` · 11 ✅ sitemap · 12 ✅ `paired-board-strategy` `ペアボード` 태그 제거(헤드).
 > 🔴 **회차 3(확률) 시작 전 `git merge main`**(HARDEN.md 첫 명령 · C 구간 전 한 번 더 — 프로토콜 §5-⓪). 이번 회차는 main을 안 당겨 kicker에서 충돌이 났다.
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "No showdown, o último jogador que apostou ou aumentou mostra primeiro. Se todos deram check no river, o primeiro jogador ativo à esquerda do botão abre o jogo. Quem perdeu pode dar muck sem mostrar, mas quem pagou a aposta do river pode pedir para ver a mão de quem apostou.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -42,7 +42,7 @@ A regra depende de como a última rodada de apostas terminou (para a sequência 
 |--------------------|-----------------|
 | Alguém apostou ou aumentou no river | ==O último jogador que apostou ou aumentou== mostra primeiro |
 | Todos deram check no river | O primeiro jogador ativo à esquerda do botão mostra primeiro |
-| All-in em street anterior (sem apostas no river) | Todas as mãos viradas para cima antes/durante o runout |
+| All-in em street anterior (sem apostas no river) | Torneio: todas as mãos viradas para cima antes/durante o runout (regra 16 da TDA). Cash: quem foi de all-in vira primeiro — havendo pote paralelo, os jogadores dele mostram primeiro (regra 149 das Live Action Rules) |
 
 </div>
 
@@ -78,19 +78,19 @@ Exemplo: botão, small blind e big blind chegam ao river. O SB dá check, o BB d
 
 ## Regras de showdown no all-in — quem está all-in mostra primeiro?
 
-Quando um jogador vai de all-in e não há mais apostas possíveis, as cartas restantes normalmente são abertas com **todas as mãos viradas para cima**. Isso protege a integridade da mão — ninguém deve poder dar muck estrategicamente em uma situação de all-in.
+Em **torneio**, quando um jogador vai de all-in e não há mais apostas possíveis, as cartas restantes são abertas com **todas as mãos viradas para cima** (==regra 16 da TDA==). Isso protege a integridade da mão — ninguém deve poder dar muck estrategicamente em uma situação de all-in. **No cash valem as regras da casa**, e as WSOP Live Action Rules colocam ao contrário: se as apostas terminaram antes do river, quem foi de all-in é responsável por virar primeiro, e havendo pote paralelo, quem o disputa mostra antes de qualquer um que esteja all-in só pelo pote principal (==regra 149 das Live Action Rules==).
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Cenário de all-in | Regra de showdown |
 |----------------|---------------|
-| Jogador vai all-in, os outros pagam, sem mais apostas possíveis | Todas as mãos viradas para cima antes ou durante o runout |
+| Jogador vai all-in numa street anterior, os outros pagam, sem mais apostas possíveis | Torneio: todas as mãos viradas para cima antes ou durante o runout. Cash: o jogador de all-in vira primeiro — havendo pote paralelo, os jogadores dele mostram primeiro (regra 149 das Live Action Rules) |
 | Aposta all-in no river é paga | Quem foi all-in mostra primeiro como último agressor — e em torneio ==r:aqui ninguém pode dar muck==: pela regra 16 da TDA quem pagou também precisa mostrar |
 | Vários all-ins criando vários side pots | Cada pote é resolvido separadamente; todas as mãos envolvidas são mostradas |
 
 </div>
 
-Um detalhe: se existe um **side pot** (pote paralelo — outros jogadores ainda têm fichas e continuam apostando), o side pot é pago primeiro e o pote principal depois. Essa é a **ordem de pagamento** e não tem nada a ver com a hora de virar as cartas: a mão de quem está all-in já está aberta desde o instante em que nenhuma aposta é mais possível. A ilustração da TDA para a regra 16 diz isso com todas as letras — não se espera o side pot ser dividido para virar a mão do all-in.
+Um detalhe: se existe um **side pot** (pote paralelo — outros jogadores ainda têm fichas e continuam apostando), o side pot é pago primeiro e o pote principal depois. Essa é a **ordem de pagamento**. Em torneio ela não tem nada a ver com a hora de virar as cartas: a mão de quem está all-in já está aberta desde o instante em que nenhuma aposta é mais possível. A ilustração da TDA para a regra 16 diz isso com todas as letras — não se espera o side pot ser dividido para virar a mão do all-in. No cash, pelas WSOP Live Action Rules, a ordem de mostrar segue os potes: primeiro os do pote paralelo, depois quem está all-in só pelo pote principal (regra 149).
 
 Para entender como os side pots são montados e pagos quando alguém está all-in, veja [as regras de all-in e side pots](/pt/blog/holdem-all-in-rules); para potes divididos, veja as [regras de split pot e divisão do pote](/pt/blog/holdem-split-pot-rules).
 
@@ -104,7 +104,7 @@ Para entender como os side pots são montados e pagos quando alguém está all-i
 
 Se um jogador lê errado a própria mão e anuncia "tenho um par", mas na verdade tem uma sequência — a sequência ganha. O dealer lê as cartas e entrega o pote à melhor mão mostrada.
 
-Isso vale para os dois lados. Se você acha que perdeu e dá muck sem mostrar, mas a sua mão era a vencedora — ==r:o pote já era==. Sua mão só morre quando o dealer a empurra para o muck e ela deixa de ser claramente identificável — cartas viradas para baixo não morrem automaticamente (regra 14 da TDA). Ainda assim, nunca conte com isso. Se não tiver 100% de certeza de que perdeu, sempre deixe o dealer ler a sua mão antes de descartar.
+Isso vale para os dois lados. Se você acha que perdeu e dá muck sem mostrar, mas a sua mão era a vencedora — ==r:o pote já era==. Sua mão morre assim que o dealer a empurra para o muck, ou quando ela deixa de ser identificável e recuperável — cartas viradas para baixo não morrem automaticamente (regra 14 da TDA). Ainda assim, nunca conte com isso. Se não tiver 100% de certeza de que perdeu, sempre deixe o dealer ler a sua mão antes de descartar.
 
 Situação real: você tem J♥ 10♥ em um board Q♥ 9♥ 8♥ 2♣ 5♦. Você tem um straight flush até a dama (Q-J-10-9-8 de copas). O adversário mostra K♣ Q♦ (um par de damas). Você ganha de lavada. Não dê muck só porque viu a dama dele.
 
@@ -152,7 +152,7 @@ Na maioria dos clubes você pode pedir ao dealer para expor uma mão descartada 
 
 ### Erro 4: não saber que pode mostrar antes da sua vez
 
-No showdown — ou seja, quando todas as apostas já se encerraram — não existe regra contra virar a mão antes de chegar oficialmente a sua vez. Enquanto a mão ainda estiver viva e houver ação pendente vale o contrário: mostrar cartas custa uma punição pela ==regra 117 da WSOP==. ==g:Se você tem os nuts ou uma mão muito forte, mostre na hora.== Os outros jogadores agradecem. Acelera o jogo. E é o oposto do slow roll.
+No showdown — ou seja, quando todas as apostas já se encerraram — não existe regra contra virar a mão antes de chegar oficialmente a sua vez. Enquanto a mão ainda estiver viva e houver ação pendente vale o contrário: mostrar cartas custa uma punição pela ==regra 117 do regulamento de torneios da WSOP== (o regulamento de Live Action numera diferente). ==g:Se você tem os nuts ou uma mão muito forte, mostre na hora.== Os outros jogadores agradecem. Acelera o jogo. E é o oposto do slow roll.
 
 ---
 
@@ -169,7 +169,7 @@ A. O último jogador que fez uma ação agressiva (aposta ou aumento) na última
 
 **Q. Sou obrigado a mostrar as cartas se pagarem minha aposta no showdown?**
 
-A. Sim — se você foi o último a apostar ou aumentar no river, você mostra primeiro quando é pago. Se foi você quem pagou a aposta de alguém, pode dar muck com as cartas viradas para baixo depois de ver a mão dele, caso tenha perdido. A exceção é o all-in em torneio: pela regra 16 da TDA quem pagou também precisa mostrar. E em torneio só pode pedir para ver uma mão quem ainda tem cartas ou já as mostrou — inviolável, apenas a do último agressor.
+A. Sim — se você foi o último a apostar ou aumentar no river, você mostra primeiro quando é pago. Se foi você quem pagou a aposta de alguém, pode dar muck com as cartas viradas para baixo depois de ver a mão dele, caso tenha perdido. A exceção é o all-in em torneio: pela regra 16 da TDA quem pagou também precisa mostrar. E em torneio o direito garantido de pedir é de quem **pagou a aposta do river** — desde que tenha mostrado ou ainda segure as cartas — e cobre apenas a mão do último agressor, a mão que ele pagou para ver (==regra 18 da TDA==). Quem deu muck virado para baixo não pode mais pedir nada, e qualquer outro pedido fica a critério do diretor.
 
 **Q. Dá para dar muck no showdown sem mostrar?**
 
@@ -181,11 +181,11 @@ A. Slow roll é atrasar de propósito a exibição de uma mão vencedora que voc
 
 **Q. Em um all-in, quem mostra as cartas primeiro?**
 
-A. Quando um jogador vai de all-in e não há mais apostas possíveis, todas as mãos envolvidas naquele pote normalmente são viradas para cima antes ou durante a abertura das cartas comunitárias. Se existe um side pot, ele é pago primeiro e o pote principal depois — mas as cartas de quem está all-in já estão abertas muito antes disso. Enquanto os outros ainda têm fichas e podem apostar, tudo continua virado para baixo.
+A. Em torneio, quando um jogador vai de all-in e não há mais apostas possíveis, todas as mãos envolvidas naquele pote são viradas para cima antes ou durante a abertura das cartas comunitárias (regra 16 da TDA). Se existe um side pot, ele é pago primeiro e o pote principal depois — mas as cartas de quem está all-in já estão abertas muito antes disso. No cash, as WSOP Live Action Rules fazem quem foi de all-in virar primeiro, e os do pote paralelo mostram antes de qualquer um que esteja all-in só pelo pote principal (regra 149). Enquanto os outros ainda têm fichas e podem apostar, tudo continua virado para baixo.
 
 **Q. O que significa "cards speak" no poker?**
 
-A. Cards speak (as cartas falam) significa que a melhor mão ganha pelo que as cartas realmente mostram — não pelo que os jogadores dizem. Um jogador que lê a própria mão errado e anuncia a mão incorreta ainda ganha se as cartas dele formarem a melhor mão. Por outro lado, quem dá muck sem confirmar que perdeu não tem nenhum direito ao pote, mesmo que a mão dele fosse a vencedora.
+A. Cards speak (as cartas falam) significa que a melhor mão ganha pelo que as cartas realmente mostram — não pelo que os jogadores dizem. Um jogador que lê a própria mão errado e anuncia a mão incorreta ainda ganha se as cartas dele formarem a melhor mão. Por outro lado, quem dá muck sem confirmar que perdeu quase sempre joga o pote fora: a mão está morta assim que o dealer a empurra para o muck, ou assim que deixa de ser identificável, mesmo que fosse a vencedora (regra 14 da TDA — até então, cartas viradas para baixo que continuam 100% identificáveis e recuperáveis ainda podem ser mostradas, mas nunca conte com isso).
 
 **Q. Preciso mostrar as cartas se ganhar sem showdown?**
 

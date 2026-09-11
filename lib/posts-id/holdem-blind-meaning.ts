@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Blinds adalah taruhan wajib yang dipasang sebelum kartu dibagikan. Small Blind duduk di kiri tombol dealer dan Big Blind di kirinya lagi; Big Blind — biasanya dua kali lipat Small Blind — adalah satuan taruhan di meja.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "9 menit",
   emoji: "💰",
@@ -31,7 +31,7 @@ Blinds adalah ==mesin yang membuat poker terus bergerak== — bagian pertama dar
 ### Angka-angka intinya
 
 :::stripe
-2 | taruhan wajib yang dipasang di setiap hand
+2 | taruhan wajib — small blind dan big blind
 1/2 | Small Blind biasanya setengah dari Big Blind
 1 BB | Big Blind = satuan taruhan di meja
 :::
@@ -40,7 +40,7 @@ Blinds adalah ==mesin yang membuat poker terus bergerak== — bagian pertama dar
 
 ## Apa Itu Blind di Poker — dan Kenapa Harus Ada?
 
-**Blind** adalah taruhan yang wajib Anda pasang *sebelum* kartu Anda datang — Anda bertaruh "buta", tanpa melihat apa pun. Dua pemain memasangnya di setiap hand: Small Blind dan Big Blind, dua kursi tepat di kiri tombol dealer.
+**Blind** adalah taruhan yang wajib Anda pasang *sebelum* kartu Anda datang — Anda bertaruh "buta", tanpa melihat apa pun. Dua pemain memasangnya di setiap hand normal: Small Blind dan Big Blind, dua kursi tepat di kiri tombol dealer. (Satu-satunya pengecualian adalah dead button, yang bisa membuat small blind tidak terpasang untuk satu hand.)
 
 Kenapa harus ada yang dipaksa bayar? Supaya game tetap hidup. ==r:Tanpa blinds, setiap pemain bisa fold terus dan menunggu kartu premium tanpa batas==; pot bakal kosong, bluff jadi percuma, dan permainan macet. ==g:Dua taruhan wajib di setiap hand menjamin selalu ada sesuatu yang diperebutkan.==
 

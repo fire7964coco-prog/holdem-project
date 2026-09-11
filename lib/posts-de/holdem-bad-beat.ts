@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ein Bad Beat ist, wenn du dein Geld als klarer Favorit reinbekommst – meist mit 80% oder mehr – und verlierst, weil dein Gegner eine Glückskarte trifft und dich aussaugt. Anders als beim Cooler warst du die ganze Zeit vorne; das Deck hat dich erst am Ende verraten. Es schmerzt, aber Bad Beats sind eigentlich ein Zeichen, dass du in einem profitablen Spiel sitzt.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "💔",
@@ -79,7 +79,7 @@ Hier trennen sich Gelegenheitsspieler und ernsthafte Spieler: **nicht jeder Verl
 
 - **~80% oder mehr, und du verlierst an einen Suckout** – ein echter Bad Beat. Deine Asse (ein ~4:1-Favorit über ein kleineres Paar), die geknackt werden, sind der Lehrbuchfall. Ein **One-Outer** – der Verlust an die einzige verbliebene Karte im Deck – ist der reinste Bad Beat von allen.
 - **60–70%-Favorit, der verliert** – unangenehm, aber wirklich nur Varianz. Du warst nur ein bescheidener Favorit; das andere Ergebnis sollte ohnehin ziemlich oft eintreten.
-- **Ein Coinflip ist nie ein Bad Beat.** A‑K gegen Q‑Q zu verlieren, oder ein Paar gegen zwei Overcards, ist ungefähr 50/50 – das einen Bad Beat zu nennen ist, als würde man einen verlorenen Münzwurf einen Raubüberfall nennen. Wenn es nahe an Even Money war, wurdest du nicht *geschlagen*, du hast einfach einen Flip verloren.
+- **Ein Coinflip ist nie ein Bad Beat.** A‑K gegen Q‑Q zu verlieren (etwa 43/57 offsuit, 46/54 suited), oder ein Paar gegen zwei Overcards, ist nah genug an einem Münzwurf – das einen Bad Beat zu nennen ist, als würde man einen verlorenen Münzwurf einen Raubüberfall nennen. Wenn es nahe an Even Money war, wurdest du nicht *geschlagen*, du hast einfach einen Flip verloren.
 
 Die Faustregel: Ein Bad Beat braucht **beides** – einen großen Vorteil (ein klarer Favorit) **und** einen Suckout (der Underdog verbessert sich zum Sieg). Fehlt eine der beiden Bedingungen, ist es nur die normale Textur des Spiels. Dabei ehrlich zu sein ist es, was einen Spieler, der studiert, von einem trennt, der das Deck für jeden Verlust verantwortlich macht – dieselbe Selbstehrlichkeit, die einen echten Cooler von einer [falsch gespielten Hand](/de/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") unterscheidet.
 
@@ -198,7 +198,7 @@ A. Nein, das ist ein Cooler. Der Unterschied liegt daran, ob der Gewinner sich v
 
 **Q. Ist der Verlust eines Coinflips ein Bad Beat?**
 
-A. Nein. Ein Bad Beat verlangt, dass du ein klarer Favorit bist – meist um die 80% oder mehr – und dann rausgedrawt wirst. Ein fast ausgeglichenes Duell wie A‑K gegen Q‑Q (ungefähr 50/50) zu verlieren ist einfach normale Varianz. Wenn die Hand nahe an einem Münzwurf war, wurdest du nicht schwer geschlagen, du hast einfach einen Flip verloren, der ohnehin ungefähr die Hälfte der Zeit andersherum ausgehen sollte.
+A. Nein. Ein Bad Beat verlangt, dass du ein klarer Favorit bist – meist um die 80% oder mehr – und dann rausgedrawt wirst. Ein fast ausgeglichenes Duell wie A‑K gegen Q‑Q (A‑K gewinnt offsuit nur etwa 43%, suited 46%) zu verlieren ist einfach normale Varianz. Wenn die Hand nahe an einem Münzwurf war, wurdest du nicht schwer geschlagen, du hast einfach einen Flip verloren, der ohnehin ungefähr die Hälfte der Zeit andersherum ausgehen sollte.
 
 **Q. Wer bezahlt eigentlich den Bad Beat Jackpot?**
 

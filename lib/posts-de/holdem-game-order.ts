@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Eine Texas-Hold'em-Hand läuft so ab: Blinds setzen → zwei Hole Cards erhalten → Preflop → Flop (3 Karten) → Turn (1 Karte) → River (1 Karte) → Showdown – mit insgesamt vier Setzrunden.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-09-10",
-  masterUpdated: "2026-09-07",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "16 Min.",
   emoji: "🎬",
@@ -136,7 +136,7 @@ Die Showdown-Regeln:
 - Jeder Spieler bildet seine **beste Fünf-Karten-Hand** aus seinen zwei Hole Cards und den fünf Gemeinschaftskarten.
 - Du musst nicht beide Hole Cards benutzen – du kannst auch nur eine spielen oder sogar nur das Board (null Karten), wenn das deine besten fünf sind.
 - Der Spieler mit der letzten aggressiven Aktion (Bet oder Raise) zeigt zuerst; wurde am River nur durchgecheckt, zeigt zuerst der erste aktive Spieler links vom Button.
-- Ein unterlegener Spieler darf einfach **mucken** (folden, ohne zu zeigen).
+- Ein unterlegener Spieler darf einfach **mucken** (folden, ohne zu zeigen) – außer bei einem All-in im Turnier: Sobald ein Spieler All-in ist und das Setzen beendet ist, wird jede Hand offen hingelegt (TDA-Regel 16 · WSOP Tournament Rule 70).
 - Bei gleichwertigen Händen wird der Pot **geteilt** („Chop“) – zu gleichen Teilen.
 
 Wer zuerst zeigen muss, wann du mucken darfst und was es mit der Etikette rund ums Slow-Rolling auf sich hat, steht ausführlich in den [Showdown-Regeln](/de/blog/holdem-showdown-rules).
@@ -261,7 +261,7 @@ Hier ist jede Aktion, die dir am Tisch zur Verfügung steht – der Teil, den An
 
 </div>
 
-==r:**Wichtig:** Preflop kannst du nicht checken – mit einer Ausnahme.== Der Big Blind zählt bereits als aktive Bet, also müssen alle anderen callen, raisen oder folden. ==Nur der Big Blind selbst darf checken, wenn niemand erhöht hat; für alle anderen beginnt das Checken erst am Flop.==
+==r:**Wichtig:** Preflop kannst du nicht checken – es sei denn, dein eigener Einsatz ist schon die aktive Bet.== Der Big Blind ist eine aktive Bet, also müssen alle anderen callen, raisen oder folden. ==Der Big Blind darf checken, wenn niemand erhöht hat – und ebenso, wer einen Live Straddle gepostet hat, denn dieser Post ist seine Eröffnungsbet und er handelt Preflop als Letzter (WSOP Live Action Rules 159 · 165); für alle anderen beginnt das Checken erst am Flop.==
 
 Einen tieferen Entscheidungs-Guide dazu, wann welcher Zug der richtige ist – inklusive Check-Call-Raise-Fold-Entscheidungstabelle – findest du unter [Setzaktionen im Poker erklärt](/de/blog/holdem-betting-actions).
 
@@ -352,7 +352,7 @@ A. Der erste noch aktive Spieler links vom Button – am vollen Tisch ist das de
 
 **Q. Wer zeigt im Showdown seine Karten zuerst?**
 
-A. Wer die letzte aggressive Aktion gemacht hat – die letzte Bet oder den letzten Raise am River –, muss zuerst zeigen. Wurde der River komplett durchgecheckt, zeigt der erste aktive Spieler links vom Button zuerst, der Rest folgt im Uhrzeigersinn. Wer weiß, dass er geschlagen ist, darf stattdessen mucken.
+A. Wer die letzte aggressive Aktion gemacht hat – die letzte Bet oder den letzten Raise am River –, muss zuerst zeigen. Wurde der River komplett durchgecheckt, zeigt der erste aktive Spieler links vom Button zuerst, der Rest folgt im Uhrzeigersinn. Wer weiß, dass er geschlagen ist, darf stattdessen mucken – es sei denn, im Turnier ist jemand All-in: Dann wird jede Hand offen hingelegt (TDA-Regel 16).
 
 **Q. Was ist der Unterschied zwischen Preflop und Flop?**
 

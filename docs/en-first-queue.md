@@ -94,60 +94,25 @@
 | **zh-hant §5-11** | 🔴 11-1 `holdem-card-counting:96` 「스트레이트 아웃이 보드에 있으면 dead out」 = **홀덤에서 성립 불가**(보충 랭크가 보드에 있으면 이미 완성) · 다음 절 七張梭哈에서는 성립 → **조항이 잘못된 절에 놓였다** · 🟠 11-2 ×4 과대추정 임계 「8 초과」 ↔ probability 「9 초과」(실측 교차점 6~7) — 🪶 ja §5-A ⑮가 같은 자리를 독립으로 잡았다 | 소~중 |
 | **zh-hant §5-22** | `holdem-bubble` 3건 — 🔴 22-1 手手制 「長考는 시계상 무료 — 그래서 유효하다」가 **D유형**(WSOP Rule 126.c 「each hand will run 2 minutes off the clock」이면 레벨이 핸드 수로 가므로 長考해도 봐야 할 핸드 수가 안 준다) · 🟠 22-2 泡沫因子 P 정의(실제는 P+c) · 🟠 22-3 「6인 FT BF 2.0 起跳」 전칭(칩리더 1.0~1.3) · **22-1은 §13 손검산 필수** | 중 |
 | **솔버 랜딩** | 🟠 트레이너 문턱 `0,08bb` 반올림 모순(실제 경계 22,5×0,35% = 0,07875bb) · «range advantage»를 총 에퀴티 지분과 등치 · GTO Wizard «방식» 1차 출처 없이 단정 — **랜딩 10파일 동시** 🔴 단 **랜딩은 잠겨 있다**(settled-decisions §1-A) | — |
-| 🆕 **ar GPT 교차 2026-09-10** | **규칙 클러스터 11건**(아래 §2-A 표) — 이 프로젝트 **최초의 아랍어 교차 렌즈**가 올린 것인데 **11건 전부 EN 동형**이라 ar만 고치면 «ar이 혼자 맞는 상태»가 된다. 🔴 룰북 축어를 이미 확보해 뒀다(§2-A 「1차 출처」 열) | 중~대 |
+| ✅ **ar GPT 교차 2026-09-10 → 종결(09-11 (7))** | 규칙 클러스터 11건 = EN 정정 + 7로케일 전파 완료. **ar 자체는 미전파**(사장님 지시) — §2-A~2-C 잔여 표 | — |
 
-### 2-A. 🆕 ar GPT 교차검수(2026-09-10)가 올린 EN-먼저 11건
+### 2-A~2-C. ✅ 종결 — EN-먼저 18건(ar 11 · ja 7) 회차 (2026-09-11 (7) · 경위 = WORKLOG)
 
-> 출처 = `홀덤검수/GPT검수보고서_ar_A_규칙4편_2026-09-10.md`(A#) · `…_ar_B_규칙3편+대회vs캐시_…md`(B#) · 동결점 `61bc1e85`.
-> **본체가 전건 원문 재판정 완료**(2026-09-10). 아래는 «채택 = EN 정정 대상»만 남긴 것이다.
-> 🔴 룰북 축어는 `pdftotext`로 뜬 사본에서 직접 확인했다 — WSOP 2026 **토너먼트**와 **Live Action**은 **같은 번호가 다른 조항**이다(§117이 실증).
-> 🪶 기각 3건은 되살리지 마라 — 아래 「기각」 절.
+EN 12편 정정 → 7로케일(de·es·id·ja·pt·zh·zh-hant) 전파 완료. 1차 출처 축어 = `docs/sources/`(TDA 2024 §14·16·18·43·47 · WSOP T §70·85·103·117 · LA §117·149·155·159·165).
+🔴 **되살리지 마라 — 이 회차의 기각 판정 4건**(원문 판정 · 근거는 WORKLOG 「2026-09-11 (7)」):
+- **A#4A** `blind-meaning` 「27% breaks even」 — 문장이 명시적으로 팟오즈다(1.5 ÷ 5.5 = 27.27%). 에퀴티 실현률·레이크는 다른 층.
+- **A#4B** `texas-holdem-rules-for-beginners` 「if it is lower, fold」 — 즉시 팟오즈 primer의 결론. 임플라이드는 전용 글이 있다.
+- **A#8** `betting-actions` 「folding usually beats calling」 — «usually»가 이미 경향 표현.
+- **J#4** `strategy` 「nobody folds to a call」 — **참이다.** 콜은 누구도 폴드시키지 않는다(뒤 사람이 접는 건 «레이즈에» 접는 것). 완화 문안을 넣었다가 같은 글 표 행(「it never folds anyone out」)과 충돌해 **원문 복원**. 「콜드콜이 뒤 사람을 죽인다 = 스퀴즈 전제」는 방향이 반대(스퀴즈는 콜드콜러를 «압박»하는 것).
 
-| # | EN 자리 | 무엇이 틀렸나 | 1차 출처(축어 확인함) | 급 |
-|---|---|---|---|---|
-| **B#2** | `holdem-all-in-rules` 「Multiple short all-ins…betting reopens for players who already acted」 | 재개방은 **플레이어별**이다. 누적이 임계를 넘어도 «자기 차례가 돌아왔을 때 풀레이즈를 마주하지 않는» 사람에겐 안 열린다 | TDA 2024 **§47A** 「…are not facing at least a full bet or raise **when the action returns to them**」 | 🔴 §13급 |
-| **B#3** | `holdem-showdown-rules` FAQ 「a player who mucks without verifying they lost has no claim to the pot」 | **같은 글 본문과 자기모순** — 본문은 「엎어둔 카드가 자동으로 죽는 건 아니다」라고 정확히 쓴다 | TDA 2024 **§14** 「Discarding non-tabled cards face down does not automatically kill them…killed by the dealer when pushed into the muck」 | 🔴 §13급 |
-| **B#4** | `holdem-showdown-rules` 올인 절·표·FAQ 「all hands shown face-up」 + 「payout order — nothing to do with when cards come up」 | **토너먼트 한정이 빠졌다.** 캐시는 사이드팟 참가자가 메인팟 전용 올인자보다 **먼저** 보인다 | LA **§149** 「If there is a side pot, participants involved in the side pot **should show their hands before** anyone who is all-in for only the main pot」 / TDA §16은 토너먼트 | 🔴 §13급 |
-| **B#6** | `holdem-showdown-rules` 「exposing cards costs you a penalty under WSOP Rule 117」 | 캐시·토너를 함께 다루는 글인데 **어느 룰북인지 없다.** T §117은 카드 노출, **LA §117은 «결함 있는 덱»** — 완전히 다른 조항 | T **§117** 「Exposing Cards and Proper Folding…will incur a penalty but will not have a dead hand」 ↔ LA **§117** 「knows the deck is defective」 | 🔴 |
-| **A#1** | `holdem-game-order` 「A losing player may simply muck」 + 쇼다운 FAQ | 토너먼트 올인 예외가 없다 | WSOP T **§70** 「All cards will be turned face up once a Participant is all in and all betting action for the hand is complete」 · TDA §16 | 🔴 |
-| **A#5** | `holdem-betting-actions` FAQ 「Dealers rule string bets as a call of the original amount」 | 선행 베팅이 없는 스트링 **벳**은 «콜»이 될 수 없다(같은 글 실수 1이 「There's nothing to call」이라고 쓴다) | T **§103** 「attempting **a bet or raise** in multiple movements…」 | 🟠 |
-| **A#6** | `holdem-betting-actions` FAQ + `holdem-game-order` 「The big blind alone may check」 | 라이브 포스터·라이브 스트래들도 자기가 낸 금액 위로 안 올라오면 체크할 수 있다 | LA **§159** 「When you post the big blind, it serves as your opening bet」 · **§160** · **§165** 「The player posting the straddle will have **last action** in the opening round…retains the option to raise」 | 🟠 |
-| **A#2** | `holdem-betting-actions` 「compete for a main pot capped at your contribution, while the extra chips…form a side pot you can't win」 | 더 **짧은** 스택이 있으면 중간 올인도 사이드팟 1에 참가한다(50/100/200/200 → 메인 200 · 사이드1 **150에 100올인자 참가** · 사이드2 200) | 산수 직접 검산 · TDA §16 부록 | 🟠 |
-| **A#3** | `holdem-betting-actions` FAQ 「If the all-in is a full legal raise, action reopens and you can re-raise」 | 받아줄 비올인 상대가 남아 있어야 한다 — 헤즈업이면 콜/폴드뿐 | TDA §16 부록 「no further betting is possible」 | 🟠 |
-| **A#7** | `holdem-blind-meaning` 스탯 「2 \| forced bets posted **every single hand**」 | 데드버튼이면 SB가 빈 자리에 놓여 SB 없는 핸드가 생긴다 | LA **§155** 「…even if this means the small blind or the button is placed in front of an **empty seat**」 · T §85 | 🟠 |
-| **B#5** | `holdem-showdown-rules` FAQ 「only a player who still holds cards or has tabled them may ask to see a hand — inalienably, only the last aggressor's」 | 보장된 열람권의 주체는 **리버 베팅을 콜한 사람**이다. 카드 보유는 «추가» 조건이지 주체 조건이 아니다(§18A와 §18B를 섞었다) | TDA **§18B** 「If there was a river bet, **any caller** has an inalienable right…**provided the caller** tabled or retains his or her cards」 | 🟠 |
-
-**🔴 기각 3건 — 되살리지 마라(2026-09-10 본체 판정)**
-- **A#4A** `holdem-blind-meaning` 「roughly 27% equity breaks even on the call」 — **문장이 명시적으로 팟오즈를 말한다.** 1.5 ÷ 5.5 = **27.27%**로 정확하고, «에퀴티 실현률·레이크»는 다른 층의 보강이지 오류가 아니다. GPT가 «팟오즈 손익분기»를 «실제 콜 수익성»으로 읽었다.
-- **A#4B** `texas-holdem-rules-for-beginners` 「if it is lower, fold」 — 즉시 팟오즈 primer의 결론이고 임플라이드는 전용 글(`holdem-implied-odds`)이 따로 있다. 초보 허브에서 임플라이드를 끌어오면 primer가 무너진다. 🪶 다만 «임플라이드 링크 한 줄»은 값이 있을 수 있다(별건).
-- **A#8** `holdem-betting-actions` 「if a hand isn't strong enough to raise, folding usually beats calling」 — **«usually»가 이미 경향 표현**이고 GPT 자신이 확신도 «아마»로 냈다. 블러프캐치 반례는 이 문장을 거짓으로 만들지 않는다.
-
----
-
-### 2-B. 🆕 ja 경화 회차 9(2026-09-10)가 올린 EN-먼저 5건
-
-> 출처 = `docs/harden-ja-진행.md` §5-G 4~8. **레인이 ja 단독으로 고치지 않고 올렸다**(프로토콜 §0 「EN에도 같은 결함이 있으면 로케일에서 고치지 않는다」).
-> 🔴 **EN을 고치면 로케일 전파가 따라온다** — 아래 «동문 로케일»이 그 범위다.
-
-| # | EN 자리 | 무엇이 틀렸나 | 근거 | 급 |
-|---|---|---|---|---|
-| **J#1** | `holdem-flush-vs-straight` H3 「Spot 2 — Drawing to both a straight and a flush」 | **제목이 본문과 어긋난다** — 본문 장면은 «스트레이트 **완성** + 플러시만 드로»다. 🔴 ja는 블록 ②만 정확하게 고쳐 두었으므로 **지금 ja는 블록이 옳고 제목이 부정확**하다(진행 파일 §3-J 8 「되돌리지 마라」) | 본문 대조 · EN 상속 오류 | 🔴 |
-| **J#2** | `holdem-all-in-rules` ミス4 경험담 | **국면(캐시/토너먼트) 미명시** — 같은 글의 「토너먼트에서는 전원 핸드 원칙 오픈」과 충돌한다 | EN L219 동문 · 딜러 렌즈 | 🟠 |
-| **J#3** | `holdem-continuation-bet` 「97%超」 | **사이즈가 빠졌다** — 근거 둘 다 **66% 팟 단일 사이즈**이고 33% 팟은 0.3~0.7%다. 임의 사이즈로 97% 벳하면 큰 누수(**D유형**) | EN L105 동문 | 🟠 |
-| **J#4** | `holdem-strategy` 「コールに対して降りる人はいません」 | **멀티웨이에서 거짓** — 콜드콜이 뒤 사람을 죽인다(그게 스퀴즈의 전제다). 🪶 2026-09-09 `8cfd0b07`이 만든 문장 | EN 198 동문 | 🟠 |
-| **J#5** | `holdem-bad-beat` 「A-K対Q-Qのような50/50」 | 실제는 **43.2/56.8**이다. 🪶 은어로는 통용되고 결론은 안 바뀐다 | EN 74·177 동문 | 🪶 |
-
-🔴 **J#2~J#5는 「EN 동문」이 확인된 자리다** — ja만 고치면 다음 회차가 드리프트로 다시 집는다.
-🪶 J#1은 **`docs/locale-intentional-diffs.md` 등재 대상이 아니다** — 의도가 아니라 EN 오류이므로 EN을 고쳐 닫는다.
-
-### 2-C. 🆕 ja 경화 회차 10(2026-09-11)이 올린 EN-먼저 2건
-
-> 출처 = `docs/harden-ja-진행.md` §5-H 2·4. 헤드가 09-11 머지 때 EN 실물을 대조했다(둘 다 EN에 없음 확인).
-
-| # | EN 자리 | 무엇이 빠졌나 | 근거 | 급 |
-|---|---|---|---|---|
-| **J#6** | `holdem-short-stack` 본문 | **`holdem-pot-odds` 내부링크 0** — 직답이 「팟오즈와 레인지 대비 에퀴티로 정한다」고 팟오즈를 판단 기준으로 부르는데 그 필라로 가는 링크가 없다(EN 실측: bubble×4 · icm×3 · tournament×1 · when-to-fold×1). 「클러스터는 필라를 링크한다」(CLAUDE.md §8) 위반. ja 단독 신설은 「내부링크 EN 1:1」 규율로 기각됐다 | EN 실측 09-11 · SEO 렌즈 | 🟠 |
-| **J#7** | `holdem-tournament` 형식 표(8행) | **「Turbo」·「Mystery Bounty」·「Add-on」 행이 없다** — ja 상위 5편 중 4편이 ターボ를 見出し로 가짐(`ポーカー ターボ` 20 · `ミステリーバウンティ` 70 · `ポーカー アドオン` 50). EN 실측 09-11: 본문에 turbo 0회 · Mystery Bounty 0회(add-on은 리바이 FAQ에만). 표 행 신설은 EN에 먼저 | `docs/keyword-bank/ja-answer-blocks.md` §2-B·§3·§4 | 🪶 |
+🟠 **이 회차가 남긴 잔여**
+| 무엇 | 어디서 |
+|---|---|
+| **ar 5편 · fr 5편 미전파**(사장님 지시 2026-09-11 「경화·검수 안 한 두 언어는 제외」) — `check:drift` 🔴 핵심 5 = ar. 각 언어 경화 트랙의 A 구간이 EN diff(`git log --since=2026-09-11 -- lib/posts-en/holdem-{all-in-rules,showdown-rules,game-order,betting-actions,blind-meaning}.ts`)로 받는다 | ar·fr 경화 트랙 |
+| **꼬리 15로케일(bn fa fil he hi it ms pl ro ru sw th tr uk vi) §13급 3건 미전파** — showdown-rules «올인 후 전원 페이스업» 토너먼트 한정(TDA §16 ↔ LA §149) · all-in-rules 누적 재개방 «플레이어별»(TDA §47A) · cards-speak FAQ «머크=권리 없음»(TDA §14). 판정 ⓒ(꼬리는 §13급만) 대상. 무자격 「WSOP Rule 117」도 17로케일에 남아 있다 | 꼬리 §13급 전파 회차 |
+| 딜러 렌즈 #16 — LA §149 「올인자 먼저」는 원문이 **No Limit 한정**. 사이트 전체가 NLHE라 한정어를 안 붙였다(기록만) | — |
+| 라틴 렌즈 #22 — EN `holdem-tournament` H2 「…Freezeout, PKO, Satellite, Deepstack & More」에 Turbo·Mystery Bounty 미반영 — §17 「노출 붙은 제목 단독 교체 금지」라 GSC 실측 후 | GSC 확인 후 |
+| zh-hant `holdem-short-stack` 내부링크 11개(다른 로케일 10) — 이번 diff 이전부터의 차이(라틴 렌즈 발견) | zh-hant 레인 |
 
 ---
 

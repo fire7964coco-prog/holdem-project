@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Blinds sind Zwangseinsätze, die vor dem Austeilen der Karten gesetzt werden. Der Small Blind sitzt direkt links vom Dealer-Button, der Big Blind links daneben; der Big Blind – meist das Doppelte des Small Blinds – ist die Setzeinheit des Tischs.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "9 Min.",
   emoji: "💰",
@@ -33,7 +33,7 @@ Blinds sind ==der Motor, der Poker am Laufen hält== – das erste Stück der [T
 ### Die Kernzahlen
 
 :::stripe
-2 | Zwangseinsätze, gesetzt in jeder einzelnen Hand
+2 | Zwangseinsätze – Small Blind und Big Blind
 1/2 | der Small Blind ist meist die Hälfte des Big Blinds
 1 BB | der Big Blind = die Setzeinheit des Tischs
 :::
@@ -42,7 +42,7 @@ Blinds sind ==der Motor, der Poker am Laufen hält== – das erste Stück der [T
 
 ## Was sind Blinds beim Poker – und warum gibt es sie?
 
-Ein **Blind** ist ein Einsatz, den du bringen musst, *bevor* deine Karten ankommen – du setzt „blind“, ohne etwas gesehen zu haben. Zwei Spieler setzen ihn in jeder Hand: der Small Blind und der Big Blind, die beiden Sitze direkt links vom Dealer-Button.
+Ein **Blind** ist ein Einsatz, den du bringen musst, *bevor* deine Karten ankommen – du setzt „blind“, ohne etwas gesehen zu haben. Zwei Spieler setzen ihn in jeder normalen Hand: der Small Blind und der Big Blind, die beiden Sitze direkt links vom Dealer-Button. (Die eine Ausnahme ist der Dead Button, bei dem der Small Blind in einer Hand ausfallen kann.)
 
 Warum überhaupt jemanden zum Zahlen zwingen? Damit das Spiel lebt. ==r:Ohne Blinds könnte jeder Spieler endlos folden und auf Premiumhände warten==; die Pots wären leer, Bluffen wäre sinnlos, und das Spiel käme zum Stillstand. ==g:Zwei Zwangseinsätze pro Hand garantieren, dass es immer etwas zu holen gibt.==
 

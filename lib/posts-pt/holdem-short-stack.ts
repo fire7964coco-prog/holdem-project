@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Um short stack (grosso modo abaixo de 20–25 big blinds) não consegue jogar poker pós-flop normal, e de uns 15 big blinds para baixo ele troca para push/fold: vai de all-in first-in para manter a fold equity, e nunca faz open-limp nem min-raise-depois-fold. Dê shove com mais mãos da late position, mantenha seu range de pagar mais fechado que o de shove, e não fique blindando até o zero 'esperando uma mão' — a fold equity é a arma, e abaixo de uns 8 big blinds ela some rápido.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-09-10",
-  masterUpdated: "2026-08-13",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "📉",
@@ -61,7 +61,7 @@ O maior erro de todos é não saber em qual linha você está. Um stack de 12 bi
 
 Pense no que um min-raise faz quando você está curto: ele compromete fichas, convida um re-raise que você não consegue pagar, e deixa os adversários realizarem a equity deles barato. Um ==shove== faz o oposto. Ele diz "pague pelo seu torneio ou folde", e a maioria das mãos folda. Quando você recolhe os blinds e antes sem contestação vezes o bastante, ==você lucra até nas vezes em que é pago e perde==, porque os potes de graça pagam de sobra por elas.
 
-O detalhe é que a fold equity ==decai conforme seu stack encolhe==. Com 12–15 big blinds, os adversários foldam muito — seu shove é assustador. Ela começa a sumir por volta de 8–10 big blinds, e com 4–5 eles estão recebendo um preço tão bom que pagam com quase qualquer coisa — sua fold equity está quase acabada. Esse é o motivo inteiro para não esperar: ==dê shove enquanto seu all-in ainda assusta as pessoas==, não depois.
+O detalhe é que a fold equity ==decai conforme seu stack encolhe==. Com 12–15 big blinds, os adversários foldam muito — seu shove é assustador. Ela começa a sumir por volta de 8–10 big blinds, e com 4–5 eles estão recebendo um [preço tão bom](/pt/blog/holdem-pot-odds) que pagam com quase qualquer coisa — sua fold equity está quase acabada. Esse é o motivo inteiro para não esperar: ==dê shove enquanto seu all-in ainda assusta as pessoas==, não depois.
 
 ---
 

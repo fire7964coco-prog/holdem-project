@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un bad beat es cuando metes las fichas siendo favorito clarísimo —normalmente 80% o más— y pierdes porque tu rival liga una carta afortunada para 'cazarte' (suck out). A diferencia de un cooler, ibas por delante todo el rato; la baraja simplemente te traicionó al final. Duele, pero los bad beats son en realidad señal de que juegas en una partida rentable.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "💔",
@@ -72,7 +72,7 @@ Aquí es donde los jugadores casuales y los serios se separan: **no toda derrota
 
 - **~80% o más, y pierdes ante un suckout** — un bad beat genuino. Tus ases (un favorito de ~4 a 1 sobre una pareja menor) rotos es el caso de manual. Un **one-outer** — perder ante la única carta que queda en la baraja — es el bad beat más puro de todos.
 - **60–70% favorito perdiendo** — desagradable, pero en realidad es solo varianza. Solo eras un favorito modesto; el otro resultado siempre iba a pasar bastante a menudo.
-- **Un coin flip nunca es un bad beat.** Perder A‑K contra Q‑Q, o una pareja ante dos sobrecartas, es más o menos 50/50 — llamar a eso bad beat es como llamar robo a una moneda perdida. Si era casi dinero parejo, no te *ganaron*, simplemente perdiste una moneda al aire.
+- **Un coin flip nunca es un bad beat.** Perder A‑K contra Q‑Q (unos 43/57 offsuit, 46/54 suited), o una pareja ante dos sobrecartas, está lo bastante cerca de una moneda al aire — llamar a eso bad beat es como llamar robo a una moneda perdida. Si era casi dinero parejo, no te *ganaron*, simplemente perdiste una moneda al aire.
 
 La regla general: un bad beat requiere **tanto** una gran ventaja (favorito claro) **como** un suckout (el desfavorecido mejorando para ganar). Si falta cualquiera de las dos condiciones, es solo la textura normal del juego. Ser honesto con esto es lo que separa a un jugador que estudia de uno que culpa a la baraja de cada derrota — la misma honestidad que distingue un cooler real de una [mano mal jugada](/es/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp").
 
@@ -175,7 +175,7 @@ A. En un bad beat eras el favorito cuando entró el dinero y te cazaron una cart
 
 **Q. ¿Perder un coin flip es un bad beat?**
 
-A. No. Un bad beat requiere que seas favorito claro — normalmente en torno al 80% o más — y que luego te cacen una carta. Perder un enfrentamiento casi parejo como A‑K contra Q‑Q (más o menos 50/50) es solo varianza normal. Si la mano estaba cerca de una moneda al aire, no te ganaron con dureza, simplemente perdiste un flip que siempre iba a caer del otro lado la mitad de las veces.
+A. No. Un bad beat requiere que seas favorito claro — normalmente en torno al 80% o más — y que luego te cacen una carta. Perder un enfrentamiento casi parejo como A‑K contra Q‑Q (A‑K solo gana alrededor del 43% offsuit, 46% suited) es solo varianza normal. Si la mano estaba cerca de una moneda al aire, no te ganaron con dureza, simplemente perdiste un flip que siempre iba a caer del otro lado la mitad de las veces.
 
 **Q. ¿Qué es un bad beat jackpot y qué cualifica?**
 

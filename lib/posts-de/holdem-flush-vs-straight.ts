@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ein Flush (fünf Karten einer Farbe – ~0,197% aller Fünf-Karten-Deals) schlägt im Texas Hold'em immer eine Straße (fünf in Folge, ~0,392%) – weil ein Flush seltener ist: über alle sieben Karten bis zum River 3,03% gegenüber 4,62% für die Straße.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "⚡",
@@ -88,7 +88,7 @@ Die Regel zu kennen ist nicht dasselbe wie sie live zu lesen – genau diese Fä
 
 Du hältst **9♠ 10♠** für eine saubere **6-7-8-9-10 Straße**. Fühlt sich stark an – aber das Board zeigt **drei Herz**. Hält dein Gegner zwei Herz-Karten, hat er einen Flush, und **Flush schlägt Straße**. Sobald drei oder mehr einer Farbe auf dem Board liegen, ist ein Flush möglich; kalkuliere deine Bets und Calls entsprechend.
 
-### Situation 2 – Draw auf Straße und Flush gleichzeitig
+### Situation 2 – Fertige Straße mit Flush-Draw obendrauf
 
 :::hand[8♥,7♥,6♠,2♣] Board (4 Karten, Turn):::
 

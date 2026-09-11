@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Estar en posición significa que hablas último — ves la decisión de cada rival antes de gastar una ficha. Los estudios de solver y de bases de datos sugieren que fuera de posición solo capturas alrededor del 60–85% de tu equity — lo que en posición te deja por encima del 100%. Por eso UTG abre ~13% de las manos y el botón ~43% — y por eso la posición reescribe cada c-bet, cada farol y cada decisión de control del bote en el postflop.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-09-10",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎯",
@@ -211,7 +211,7 @@ Muchísimo. La apuesta de continuación es en el fondo una jugada de informació
 | Situación | Frecuencia típica de c-bet del solver (flop) |
 |---|---|
 | **IP (BTN/CO vs defensa de ciega)** | **~65–75%** de las mesas |
-| OOP como quien mete el 3-bet (botes de 3-bet desde las ciegas) | Altísima — en nuestras corridas de solver la ciega grande cbetea más del 97% de las veces tanto en Q♥T♥7♠ como en 8♦5♣2♠ |
+| OOP como quien mete el 3-bet (botes de 3-bet desde las ciegas) | Altísima — en nuestras corridas de solver la ciega grande cbetea más del 97% de las veces tanto en Q♥T♥7♠ como en 8♦5♣2♠ — con el tamaño de dos tercios del bote; el de un tercio quedó por debajo del 1% |
 | Quien subió OOP vs quien iguala IP (bote de una sola subida) | ~30–45% — el más selectivo |
 
 En posición, puedes cbetear un rango amplio — incluido aire y proyectos backdoor — porque tu rival tiene que responder sin saber tu siguiente movimiento, y cuando iguala tú sigues actuando último en el turn. Fuera de posición, la misma apuesta es más arriesgada: un check-raise termina tu farol, y un call te deja adivinando primero en cada calle que queda. Por eso cbetear a ciegas el 100% «porque subiste en el preflop» quema dinero OOP en un bote de una sola subida — la fila de casi el 100% de arriba es la de quien mete el 3-bet, a quien su ventaja de rango se lo permite.

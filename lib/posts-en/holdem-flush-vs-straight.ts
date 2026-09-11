@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A flush (five cards of one suit — ~0.197% of five-card deals) always beats a straight (five in sequence, ~0.392%) in Texas Hold'em — because a flush is rarer: across all seven cards to the river, 3.03% versus 4.62% for the straight.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-09",
+  updated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "⚡",
@@ -87,7 +87,7 @@ Knowing the rule isn't the same as reading it live — that skill is exactly wha
 
 You hold **9♠ 10♠** for a clean **6-7-8-9-10 straight**. Feels strong — but the board shows **three hearts**. If your opponent holds two hearts, they have a flush, and **flush beats straight**. Any time three or more of one suit are on the board, a flush is live; price your bets and calls accordingly.
 
-### Spot 2 — Drawing to both a straight and a flush
+### Spot 2 — A made straight with a flush draw on top
 
 :::hand[8♥,7♥,6♠,2♣] Board (4 cards, turn):::
 
