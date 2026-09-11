@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Sebuah out adalah kartu mana pun yang tersisa di deck yang mengubah tangan Anda menjadi kemungkinan pemenang. Hitung, lalu konversi: kalikan outs dengan 4 di flop atau dengan 2 di turn untuk mendapat persen kasar Anda. Flush draw punya 9 outs ≈ 36% hingga river.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "11 mnt",
   emoji: "🎯",
@@ -63,7 +63,7 @@ Perhitungan hanya memakai kartu yang bisa Anda lihat. Anda tidak mengurangi kart
 
 ## Chart Outs Poker: Setiap Draw Umum
 
-![Straight eight-high tersusun berurutan di atas kain hijau, menunjukkan rangkaian kartu yang dikejar open-ended draw](/images/holdem-reading-straight-example.webp "Open-ended straight draw terisi dari kedua ujung — delapan outs, draw umum terbesar kedua")
+![Dua hitungan outs berdampingan — tiga belas sekop dengan empat dicoret di samping angka 9 besar, dan rangkaian open-ended dengan kedua ujung ditandai di samping angka 8 besar](/images/holdem-outs-nine-and-eight.webp "Kiri flush draw, kanan open-ended draw — dua hitungan outs yang menjadi patokan semua draw lain")
 
 Hafalkan ini dan Anda akan mengenali jumlah out Anda sekilas. Inilah chart yang tertanam di ingatan setiap pemain menang:
 

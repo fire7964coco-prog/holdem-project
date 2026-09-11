@@ -58,9 +58,9 @@ A mágica não está em nenhuma decisão isolada — está em como elas *se enca
 
 ## Decisão 1 — Onde estou sentado? (Posição)
 
-![Um jogador no botão do dealer com cartas e fichas no feltro verde, a cadeira que age por último em cada street depois do flop](/images/holdem-button-position-hero.webp "O botão age por último em todas as streets pós-flop — a cadeira mais lucrativa da mesa")
+![Um jogador sentado no botão do dealer com duas cartas fechadas e uma pilha de fichas, a cadeira que age por último em cada street pós-flop](/images/holdem-strategy-button-seat.webp "O botão age por último em todas as streets pós-flop — a cadeira mais lucrativa da mesa")
 
-Antes mesmo de olhar suas cartas, a informação mais importante já está definida: **sua cadeira.** No Hold'em, o jogador que age *por último* depois do flop tem uma vantagem enorme — ele vê o que todo mundo faz antes de comprometer uma ficha. É por isso que o [botão](/pt/blog/holdem-position-play "thumb:/images/holdem-button-position-hero.webp") é a cadeira mais lucrativa do jogo e os blinds, as piores.
+Antes mesmo de olhar suas cartas, a informação mais importante já está definida: **sua cadeira.** No Hold'em, o jogador que age *por último* depois do flop tem uma vantagem enorme — ele vê o que todo mundo faz antes de comprometer uma ficha. É por isso que o [botão](/pt/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp") é a cadeira mais lucrativa do jogo e os blinds, as piores.
 
 Agir por último te permite fazer três coisas que ninguém em posição inicial consegue:
 
@@ -91,7 +91,7 @@ O [starting hands chart](/pt/blog/holdem-starting-hands-chart) transforma isso n
 
 ## Decisão 3 — Aumentar ou foldar. Nunca só dar limp.
 
-![Infográfico de um botão de dealer dourado, duas cartas fechadas viradas para baixo e um flop K♦ 7♣ 2♠ — o botão age por último pós-flop](/images/holdem-button-dealer-board.webp "Dar open-limp convida um pote multiway inflado sem iniciativa — aumente para ganhar agora, ou folde e espere um spot melhor")
+![Três cartões numerados sob o título RAISE / FOLD — OVER-LIMP com fichas e um marcador de assento, BIG BLIND com 1,5 ÷ 5,5 e 27%, SET-MINING com um par de cincos e 11,8%](/images/holdem-strategy-raise-or-fold.webp "Primeiro a entrar no pote é aumentar ou foldar — os únicos descontos são o over-limp em posição, uma defesa de big blind a 27% e o set-mining")
 
 Depois de decidir que uma mão vale a pena jogar, tem uma segunda decisão que a maioria dos iniciantes erra: *como* entrar no pote. A resposta, quase sempre, é **aumentar — não dar limp.**
 
@@ -121,7 +121,7 @@ Sobre sizing, uma aposta pequena de **25–35% do pote** funciona quando você e
 
 ## Decisão 5 — Quando eu foldo? (A decisão que economiza mais dinheiro)
 
-![Infográfico visto de cima de uma mesa de Hold'em com um board completo K♦ 7♣ 2♠ 9♥ 3♦, pilhas de fichas e o botão do dealer](/images/holdem-pub-players-table.webp "A jogada mais lucrativa do poker é a que ninguém repara — foldar uma mão vencida antes que ela te custe um stack")
+![Infográfico de A♣ K♣ contra um flop 2♥ 7♦ 9♠ de três naipes diferentes, um check-raise e um banner dourado de FOLD](/images/holdem-strategy-fold-ace-high.webp "A jogada mais lucrativa do poker é a que ninguém repara — foldar uma mão vencida antes que ela te custe um stack")
 
 Agressão ganha potes. **Disciplina mantém stacks.** A decisão que separa jogadores que ficam no zero a zero de vencedores não é um hero call ou um blefe genial — é o ato chato e repetido de foldar quando você está vencido.
 

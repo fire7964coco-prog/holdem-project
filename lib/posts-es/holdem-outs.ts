@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un out es cualquier carta que queda en la baraja y convierte tu mano en una probable ganadora. Cuéntalos y conviértelos: multiplica los outs por 4 en el flop o por 2 en el turn para tu % aproximado de ligar. Un proyecto de color son 9 outs ≈ 36% para el river.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🎯",
@@ -63,7 +63,7 @@ El conteo solo usa cartas que puedes ver. No restas las cartas desconocidas de t
 
 ## Tabla de outs del póker: todos los proyectos comunes
 
-![Una escalera con ocho alto tendida en secuencia sobre el tapete verde, mostrando la tirada de cartas que persigue un proyecto abierto](/images/holdem-reading-straight-example.webp "Un proyecto de escalera abierto se completa por cualquiera de los dos extremos — ocho outs, el segundo proyecto más común")
+![Dos conteos de outs uno al lado del otro — trece picas con cuatro tachadas junto a un 9 grande, y una escalera abierta con ambos extremos marcados junto a un 8 grande](/images/holdem-outs-nine-and-eight.webp "A la izquierda el proyecto de color, a la derecha el proyecto abierto — los dos conteos de outs con los que se mide todo lo demás")
 
 Memoriza esto y reconocerás tu número de outs a simple vista. Esta es la tabla que todo jugador ganador tiene grabada en la memoria:
 

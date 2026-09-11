@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Mit einem Pocket Pair floppst du in 11,8% der Fälle ein Set (7,5:1 dagegen), mit zwei suited Karten nur 0,84% einen Flush, und einen gefloppten Flushdraw komplettierst du bis zum River in 35% der Fälle. Jede Zahl unten stammt aus dem Deck, nicht aus dem Bauch.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-09-10",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "12 Min.",
   emoji: "🎲",
@@ -120,7 +120,7 @@ Ein **Backdoor** (Runner-Runner) Flush – du floppst nur *eine* zusätzliche Ka
 
 ## Wie oft floppst du eine Straße – und wie oft nur den Draw?
 
-![Eine Acht-hohe Straße der Reihe nach auf grünem Filz ausgelegt, die fertige Hand, die ein Open-Ended Draw jagt](/images/holdem-reading-straight-example.webp "Ein Open-Ended Straight Draw füllt von beiden Enden – acht Outs, 31,5% bis zum River zu komplettieren")
+![Zwei Straight-Draw-Felder nebeneinander – eine Reihe, an beiden Enden offen, mit einer grünen 8 im Kreis, und eine Reihe mit einer Lücke in der Mitte und einer goldenen 4](/images/holdem-drawing-odds-oesd-vs-gutshot.webp "Ein Open-Ender ist doppelt so viel wert wie ein Gutshot – zwei offene Enden gegen eine Lücke in der Mitte")
 
 Connectors wie 8♠7♠ haben ihren eigenen Lebenszyklus. Du **floppst nur in 1,3%** der Fälle eine fertige Straße (76:1) – seltener, als die meisten Spieler annehmen. Dieser Wert gilt für 54s bis JTs, also die Connectors, die eine Straße von beiden Enden füllen können; Hände am Rand des Decks haben weniger Sequenzen, bis hinunter zu 0,33% für A-K. Weit häufiger floppst du einen **Draw**:
 

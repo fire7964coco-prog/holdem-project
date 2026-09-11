@@ -14,7 +14,7 @@
 |---|---|---|---|---|---|---|---|
 | **Q1** | **결재 실행 — 판정형 소품** | `settled-decisions` §1-B **결재 1**(`starting-hands-chart` #13 — EN 콤보 직접 세기 → 그쪽에 맞춤 · `en-first-queue` §1 ㉗과 한 판) · **결재 6·소품**(PDF 용지 A4 통일 · es 국기 · `app/home-client.tsx` 삭제 · 규칙 PDF pt·id · CAPT `buyin` + Pokermania XL) · 핸드오프 「결재 완료」 표 | **Opus 전 구간 · 1세션**(계산·파일 작업 · 새 문장 없음) | ✅ | (아래 §1-Q1) | 렌즈 4종 = 지적 26 · 반영 21 · 기각 3 · 이관 2 | 09-11 |
 | **Q2-a** | **결재 7 — 이미지 40건 판정 + 슬롯 스펙** | `settled-decisions` §1-B 결재 7(40건 = 8로케일 × 같은 5건 · 뿌리 EN 1곳) · 핸드오프 「이미지·워터마크」 절 · 카드 문구 창작 금지(§3-A) · 게이트 `check:images`·`check:image-reuse` → **산출 = 브리프 `docs/harden-brief/queue-Q2-이미지.md`**(아래 §1-Q2-a) | **Opus 전 구간 · 1세션**(판정형 · 새 문장 없음) | ✅ | (아래 §1-Q2-a) | — (판정 회차 · 렌즈는 Q2-b) | 09-11 |
-| **Q2-b** | **결재 7 — 이미지 10장 제작 → EN 교체 → 8로케일 전파** | **브리프가 본체**(`queue-Q2-이미지.md` §4 슬롯 10 · §6 실행 순서 · §7 하지 말 것). 🔴 실사 2장은 **사장님 산출물 대기**(브리프 §4 ①·⑥ 프롬프트) · 인포 8장은 이 레인이 `scripts/gen-*.html` → `render-gen-final.mjs` q82 | **Opus 전 구간 · 1세션**(카드·수치는 본문 축어라 새 문장 없음 · Fable 불요) | ⏳ | | | |
+| **Q2-b** | **결재 7 — 이미지 10장 제작 → EN 교체 → 8로케일 전파** | **브리프가 본체**(`queue-Q2-이미지.md` §4 슬롯 10 · §6 실행 순서 · §7 하지 말 것) | **Opus 전 구간 · 1세션** | ✅ | (아래 §1-Q2-b) | 렌즈 4종+2차 교열 = 지적 51(중복 5 제거 후 **46**) · 반영 33 · 기각 5 · 이관 4 · 기록만 4 | 09-11 |
 | ~~Q3~~ | **EN 56편 `updated` 전수 대조** — ✅ **종결(신설 시점 실측 · 회차 불요)** | 실측 2026-09-11: EN 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · `2c9012c7` · «올리지 않는다» 판정 이미 완료) · 창 밖 5 = `8d2aba44` CSS 수리 2 · `a069430a` tldr 별표 제거 2 · `index.ts`(포스트 아님) → **전부 §1-C «기계적 변경은 안 올린다»에 해당**. `en-first-queue` §3의 「이미 잡힌 6건」은 `fd8cafc0`로 닫혀 있다(현재 파일에 남은 어긋남 0). 재현 = 셸 한 줄(파일별 `git log -1 --date=short` ↔ `updated` 비교) — Q7에서 `check:stamp --locale=en` 게이트로 박는다. **§3 잔여(경쟁 페이지 언급 3곳 · EN↔pt FAQ 개수 · game-order 「who bets first」)는 Q4-a로 이관** | — | ✅ | (실측만 · 커밋 없음) | — | 09-11 |
 | **Q4-a** | **EN-먼저 묶음 I — 미결·동형** | `en-first-queue` §2-D **J#8**(ept-barcelona €330 ↔ €825 · 공식 일정 축어 확보 후) · §2-E **X-1**(blind-meaning 「Nobody gets to skip their turn」 · WSOP Live Action §155~158 · Tournament §85) · 핸드오프 「대회·사실 판정」 절의 **EN 동형 30건**(M-089 §4 잔여 = bad-beat #12 ~62% · betting-actions 103조 두 요소 · flush-vs-straight SF 5장/7장 라벨 · 목록 `docs/reply-to-review-2026-09-04-m089.md` §2·§4) · `tiebreak-rules` L232 「Rule 85」 룰북 한정어 · **Q3 이관분**(경쟁 페이지 언급 3곳 · EN↔pt FAQ 개수 bubble·short-stack·tournament·icm · game-order title 「who bets first」) · 🆕 **ja 회차 13 §5-K 이관**(`harden-ja-진행` §5-K · 09-11 머지): **K1** `when-to-fold` 셀프체크 ⑤ 「(= a bluff-catcher)」 EN L141/L153 + 8로케일(D유형) · **K3** = J#8과 같은 자리(ept €330 H2·비교표 — 블록만 €825로 갈려 있다) · **K4** `tiebreak-rules`↔`kicker` «キッカーなし 족 개수» 5 vs 4 — 헤드 실측(09-11): **EN도 같다**(kicker FAQ L184 「Straights, flushes, full houses, and straight flushes」 = 4 · tiebreak 표 L84~89 = 로열 행 별도 5) → 로열 = 스트레이트플러시라 둘 다 참 · **결함 아님** · 통일은 선택(kicker FAQ에 「(royal included)」 한 마디 · 8로케일) · **K2**(bad-beat 63%) = 🔴 **결재 15 재론 금지**(≈63% 유지 · 65.0%/1.86으로 되돌리지 마라). 🔴 헤드 실측(09-11): 결재 15의 **행 문구 «nine outs plus live side cards»가 EN L92·ja L105에 아직 없다**(「9-out flush draw fills on the river」 그대로 · `en-first-queue` §1 ③과 같은 자리) → **결재 15 이행 = EN L92 행 문구 + 8로케일** · 🆕 **ja 회차 14 §5-L 이관**: **L1** `holdem-straddle` EN L88·L169·히어로 캡션 L69 「buys the last action」 프레이밍 — 버튼은 원래 포스트플롭 마지막이라 버튼 스트라들이 사는 건 **프리플랍** 마지막 액션뿐(EN L188만 정확) → 한 줄 한정 + 8로케일 · **L2** `holdem-outs` 표 15행(플러시+OESD) 도출 「9 + 8 − 2」 — EN 같은 칸이 산문이면 동형 + 7로케일(ja는 이미 고침) | **A Opus(1차 출처 · WSOP 룰북 `docs/sources/`) → B Fable(EN 재서술 + 8로케일 전파 문장) → C Opus(렌즈 4종 · 게이트) · 1세션**(구간 경계에서 `/model`) | ⏳ | | | |
 | **Q4-b** | **검수장 MA-118 요청 2 — es 대회 2편** | `como-entrar-al-wsop`·`wsop-2026-tournament-guide`(es) WRONG 15·RISKY 10·STALE 2 + **LISR 138조 웹 실측**(멕시코 소득세법 · 1차 출처) · 원장 = `홀덤검수-es/ledger/` · EN 동형이면 EN-먼저 | **Opus 전 구간 · 1세션**(번역 QA·법령 실측 = Opus · 새 문장은 원장 처방 이식) | ⏳ | | | |
@@ -117,9 +117,57 @@
 
 **착수점(2026-09-11 헤드 실측 · 레인 신설 시점)**: `check:drift --locale=ja/zh/zh-hant` 🔴 0 · 세 로케일 레인 회차 = zh·zh-hant 트랙 종결 · **ja 회차 13 진행 중**(워크트리 미커밋 13파일 · 브리프 `ja-회차13-개수열거.md`) → Q6·EN 전파에서 ja 13파일은 «머지 뒤». 우편함 미처리(본체 몫) 0. 핸드오프 30,258B(30KB 경계). EN 스탬프 어긋남(창 안) 1 = icm 판정 완료.
 
+### §1-Q2-b. 회차 Q2-b 산출 — 이미지 10장 제작·교체·전파 (2026-09-11)
+
+**🔴 §2-C 썸네일 선례 판정 = «의도 아님, 정정».** `git log -S holdem-button-position-hero -- lib/posts-en/`는
+**최초 발행 커밋 4건뿐**이고 「왜 안 바꿨는지」 메시지가 없다. 결정적 근거는 **날짜**다 — 드리프트 3자리는
+2026-07-05·07-06 발행 때 붙었는데 올바른 대상(`holdem-position-play-hero` 06-18 · `holdem-positions-hero` 06-13)은
+**그때 이미 존재했다.** 「대안이 없어서」가 아니다. → `locale-intentional-diffs` 등재 없이 **24자리 전건 정정**
+(22자리 변경 + zh-hant 2자리는 이미 올바름).
+
+**산출 = 이미지 10장**(실사 2 = 사장님 생성분 워터마크 합성 · 인포 8 = `scripts/gen-*.html` → `render-gen-final.mjs` q82).
+전부 1200×675 · 12~60KB. **반영 = 80행**(슬롯 10 × 로케일 8) + 썸네일 22행.
+
+🔴 **「사진 5장」이 10장이 된 이유는 Q2-a가 이미 적었다. 이 회차가 새로 안 것은 «언어 중립»의 경계다:**
+- **통화 기호는 언어 중립이 아니다.** 스트래들 그림에 `$1/$2/$4/$8`을 박았는데 **de 본문만 €**(48곳)다.
+  alt를 €로 고치면 그림과 어긋나고 $로 두면 본문과 어긋난다 → **그림에서 `$`를 뺐다**(`SB 1 / BB 2 / 4` · `4 × 2 = 8`).
+  🪶 그릇된 층에서 고치면 딜레마가 남는다 — 값이 로케일마다 다르면 **그림이 값을 말하지 말아야 한다.**
+- **분모 없는 배수를 그리지 마라.** `15–20×`는 본문이 「**콜 금액의** 15–20배」인데 그림·alt 8곳이 한정어를 잃어
+  「15–20bb 스택」으로 읽혔다 — 그건 **본문이 «누수»라 경고하는 깊이**라 결론이 뒤집힌다(D유형).
+  → 본문 축어 **`11.8%`**(분모가 필요 없는 수)로 교체. 수학·딜러 두 렌즈가 독립 재발견했다.
+- **등호는 스플릿으로 읽힌다.** 쿨러 패널의 `A A = A A`가 「찹」·「쿼드」로 오독 → **취소선 화살표 + 흐린 `A A`**로.
+- **색은 두 축을 겹치지 마라.** SHARK를 초록 강조했더니 캡션의 「누구를 노리나」와 정반대로 안내했다 → 강조 제거,
+  ▲▼ 글리프만 남겨 «승패 방향»만 말하게 했다.
+- **본문에 없는 약어를 그림이 가르치지 마라.** `IP`는 코퍼스에 65회 있으나 **전부 GTO 솔버 UI 라벨**이고
+  `holdem-strategy`엔 7로케일 전부 0회 → 글자를 빼고 좌석 도트 `○ ○ ▸ ●`로.
+
+🔴 **2차 교열이 «1차 반영이 만든 새 결함» 4건을 잡았다 — 이 절차가 값을 한 실증이다:**
+- 캡션에서 뺀 숫자가 **alt로 옮겨갔을 뿐**이었다. `lib/render-markdown.ts:200`이 **`alt=`와 `<figcaption>`을 둘 다**
+  내보내므로 중복은 그대로였다. → **「중복을 없앴다」고 말하기 전에 렌더러가 무엇을 내보내는지 보라.**
+- alt와 캡션이 **같은 3항목을 같은 순서로** 반복(8로케일). → alt는 «그림 묘사», 캡션은 «주장»으로 역할을 갈랐다.
+- zh-hant `跟跛`는 코퍼스에 없다(정본은 `跟跛入` 16곳). **새로 쓴 두 자리가 전부였다.**
+- 신설 내부링크가 앵커를 약화시켰다(`位置專篇` → `牌桌位置指南`).
+
+🪶 **네이티브 렌즈가 브리프의 가정 하나를 뒤집었다**: es 세 번째 예외는 `buscar trío`가 아니라 **`set-mining`**이다
+(같은 글 104행이 예외 3개를 세는데 둘은 축어 일치인데 셋째만 달랐다). `buscar trío`는 es 코퍼스에서 **항상 괄호 주석**이다.
+같은 유형으로 zh `开口顺`→`两头顺`(drawing-odds 한정) · zh-hant `中洞`→`卡順`(drawing-odds 한정)을 되돌렸다 —
+🔴 **두 용어는 파일마다 정본이 다르다**(zh: outs=开口顺 / drawing-odds=两头顺). 파일을 보고 골라라.
+그리고 `4 比 1`은 **zh에선 틀리고 zh-hant에선 맞다**(zh는 `N:N` 116회 / zh-hant는 `N比N` 98회) — **같으면 안 되는 자리**다.
+
+**기각 2건(사유 기록)**
+- ⑩ 하단 `31.5% ≈ 2 × 16.5%`를 지우라 — **기각**. `≈`가 근사를 명시하고 본문 자체가 「double / half」라는 같은
+  근사를 주장한다. 지우면 그 글의 결론이 그림에서 사라진다.
+- ④ 캡션이 FAQ와 6그램 일치 — **기각**. 158줄 떨어진 다른 섹션이고 그 문장은 이 글의 핵심 리트머스다.
+  상단·하단 반복은 «중복»이 아니라 «강화»다(5-A/5-C는 2~6줄 거리라 성격이 다르다).
+
+**이관 1건** → zh `holdem-outs`의 `开口顺`(14곳) vs 코퍼스 다수파 `两头顺` = **Q6**(로케일 표기 통일)로.
+지금 캡션만 바꾸면 6줄 아래 표와 어긋난다.
+
+
 ## 2. 미결 (해결될 때까지 유지)
 
-- 🔴 **ja 회차 14 진행 중**(2026-09-11 Q2-a 실측 — 이 행은 「회차 없음」이었다. 낡은 상태 메모를 그대로 믿지 마라: memory `lane-notice-check-worktree-first`). 워크트리 미커밋 = 브리프 `docs/harden-brief/ja-회차14-개수열거II.md` + `lib/posts-ja/` 8편(apt-incheon · fish · glossary · outs · positions · probability · straddle · tiebreak-rules). **Q2-b 전파와 겹치는 3파일 = `holdem-glossary`·`holdem-outs`·`holdem-straddle`** → 그 ja 전파는 건너뛰고 §5에 「머지 뒤 전파」로 올린다(§7-F). `zh`·`zh-hant` 워크트리는 clean.
+- 🟠 **`lib/render-markdown.ts:200`이 모든 이미지에 `width="1200" height="630"`을 박는다 — 실제는 1200×675**(종횡비 예약이 7% 어긋나 CLS). 591장 **전체**에 걸린 기존 문제이고 어떤 게이트도 안 본다. → **Q7 게이트/정정 후보**(2차 교열 렌즈 발견 · 2026-09-11).
+- 🟠 **`check:drift` 🔴 6건(ar)은 이 회차 이전부터 있던 부채다** — Q2-b 착수 전 실측으로 동일 확인(all-in-rules · betting-actions · blind-meaning · game-order · showdown-rules · texas-holdem-rules-for-beginners). ar는 이 회차 8슬러그를 하나도 갖고 있지 않다. 이 회차가 만든 드리프트 **0**.
 - 🟠 결재 5(EN 제목 보강 3편)는 **보류** — GSC 실측 먼저. 회차에 넣지 마라.
 
 ## 3. 되돌리지 마라
@@ -127,6 +175,14 @@
 - `settled-decisions` §1-B 전건(결재 15 · 재론 금지). 특히 **15** bad-beat ≈63%(65.0%/1.86:1로 되돌리지 마라) · **11** KPM 「9/4 마감」 중립화 · **2-ⓑ** 문장 다듬기 안 함.
 - `en-first-queue` §1 **②** apt «개막 전 마감» — EN이 틀렸다(3자리). EN을 따라 로케일을 되돌리지 마라.
 - EN `updated`는 구두점·별표·태그만 바뀐 커밋이면 올리지 않는다(`en/holdem-icm` 실증 · §1-C). Q3 실측이 이 규율의 두 번째 실증이다(창 밖 5건 전부 기계적 변경).
+- **Q2-b 이미지 10장의 설계 판정**(§1-Q2-b): 스트래들 그림에 **통화 기호를 되살리지 마라**(de만 €라 공용 이미지가 값을 말하면 안 된다) ·
+  `15–20×`를 이미지에 **되살리지 마라**(분모 없이는 「15–20bb」로 읽혀 본문 결론을 뒤집는다 — `11.8%`가 그 자리의 답이다) ·
+  쿨러 패널에 **등호를 쓰지 마라**(스플릿으로 읽힌다) · SHARK에 **초록 강조를 되살리지 마라**(캡션의 target/avoid와 반대다).
+- **alt와 캡션은 역할이 다르다**: alt = «그림에 무엇이 보이나» · 캡션 = «그 그림이 무엇을 주장하나».
+  🔴 둘 다 HTML로 나간다(`render-markdown.ts:200`이 `alt=`와 `<figcaption>`을 함께 내보낸다) — **한쪽에서 뺀 문장을 다른 쪽에 옮기면 중복은 그대로다.**
+- **로케일 용어는 파일마다 정본이 다르다**: zh `holdem-outs`=`开口顺` / `holdem-drawing-odds`=`两头顺` ·
+  zh-hant `holdem-outs`=`中洞` / `holdem-drawing-odds`=`卡順` · **`4:1`은 zh, `4 比 1`은 zh-hant.** 코퍼스 전체가 아니라 **그 파일**을 보고 골라라.
+- es 세 번째 예외는 **`set-mining`**이다(`buscar trío` 아님 — 그건 항상 괄호 주석이다). 되돌리지 마라.
 
 ## 4. 거울쌍 갈림
 
@@ -202,6 +258,38 @@
   이 진행 파일. 🔴 EN·로케일 포스트와 `public/images/`는 **무변경**이라 `check:drift`·`check:image-reuse` 수치도 그대로다.
 - 🪶 **Q2-7 정본에서 지워도 되는 것 없음** — 핸드오프 「이미지·워터마크」 절은 Q2-b가 닫는다. 단 그 절의
   「🟠 `check:image-reuse` 🟠 7건 «교차 클러스터» 판정 대기」는 **KO 수치**이고 이번 판정 대상(EN 뿌리)과 다른 층이다 — 섞지 말 것.
+
+### Q2-b (2026-09-11 · 이미지 10장 제작·교체·전파 — **배포가 걸린 회차다**)
+
+- 🔴 **Q2b-1 MB 발신**(Q2-a의 Q2-3 초안을 **실측으로 갱신** — 그 초안은 「본문 문장은 안 바뀐다」라고 적었으나 **바뀌었다**):
+  > EN 이미지 **10자리 교체 + 썸네일 3자리 재조준**(+7로케일 전파 = 총 80 + 22행). 글 7편 —
+  > `holdem-strategy`(3) · `holdem-bad-beat`(2) · `holdem-cooler`·`holdem-straddle`·`holdem-glossary`·`holdem-outs`·`holdem-drawing-odds`(각 1) + `holdem-limping`(썸네일만).
+  > **새 파일명 10개**가 EN·8로케일에 등장한다 — 앵커 갱신 필요: `holdem-strategy-button-seat` ·
+  > `holdem-strategy-raise-or-fold` · `holdem-strategy-fold-ace-high` · `holdem-bad-beat-litmus` ·
+  > `holdem-bad-beat-aces-vs-set` · `holdem-cooler-stacks-collide` · `holdem-straddle-action-order` ·
+  > `holdem-glossary-player-types` · `holdem-outs-nine-and-eight` · `holdem-drawing-odds-oesd-vs-gutshot`.
+  > **캡션 4자리 교체**(예고는 2자리였다): `outs`·`drawing-odds`(F유형 정정 — 「완성된 스트레이트」를 「draw」라 불렀다) +
+  > `strategy:93`·`bad-beat:46`(새 그림에 맞춰). **본문 문장 2곳도 바뀌었다** — `ja/holdem-drawing-odds`의
+  > `ちょうど半分`→`およそ半分`(16.5/31.5 = 52.4%라 「정확히」가 거짓) · `zh-hant/holdem-glossary:122`에 **내부링크 신설**.
+  > 🔴 되돌리지 마라: §3의 Q2-b 항목 전건.
+- 🟠 **Q2b-2 `locale-intentional-diffs` 등재 요청 1건**: `zh-hant/holdem-glossary`가 이제 `holdem-positions`를
+  **본문 + FAQ 두 곳**에서 가리킨다(다른 7로케일은 본문 1곳). 원인 = zh-hant만 본문 링크가 결손이고 FAQ로 대신하고 있었다.
+  본문 쪽을 신설해 EN 자리 패리티를 맞췄고 FAQ 링크는 그 답변의 기능이라 남겼다 → **의도적 편차로 등재**해 다음 회차가 또 집지 않게 해 달라.
+  🪶 `check:structure`는 «슬러그 집합» 기준이라 1 vs 2를 **원리상 못 본다**.
+- 🟠 **Q2b-3 `settled-decisions` 한 줄 승격 요청**: 「**공용 이미지는 값을 말하지 않는다**」 —
+  통화 기호·로케일마다 다른 수치는 그림에 박지 말고 캡션·본문에 맡긴다. 단 **`$ $ $`처럼 «액수»가 아니라
+  «돈이 많다»는 픽토그램은 예외**(`holdem-glossary-player-types` WHALE 타일). 이 구분을 안 박으면 다음 회차가 또 집는다.
+- 🟠 **Q2b-4 Q6 재료 2건**(로케일 표기 통일 묶음): ① zh `holdem-outs`의 `开口顺` 14곳 ↔ 코퍼스 다수파 `两头顺`
+  ② zh-hant `holdem-outs`의 `中洞` 6곳 ↔ 코퍼스 `卡順`. 둘 다 **파일 안에서는 일관**하므로 캡션만 바꾸면 안 된다.
+- 🟠 **Q2b-5 Q7 재료 1건**: `lib/render-markdown.ts:200`의 `height="630"` ↔ 실제 675 (§2 미결 참조).
+- 🟠 **Q2b-6 Q8 재료 1건**: `lib/posts-ja/holdem-glossary.ts:89` 표제어가 `ミニマムレイズ`인데 본문은 전부 `最低レイズ`다
+  (용어사전 표제어라 오류는 아니다 — `ミニマムレイズ（最低レイズ）` 병기가 낫다).
+- 🪶 **Q2b-7 다른 레인 파일**: ja·zh·zh-hant 워크트리 **전부 clean**(실측) · 미머지 커밋 0 → **겹침 없음**.
+  단 `lib/posts-ja/`·`posts-zh/`·`posts-zh-hant/`의 8슬러그를 만졌으므로 **머지 때 각 레인 `HARDEN.md`에 §6-0 통지**가 필요하다.
+  🔴 Q2-a가 예고한 「ja 3편 건너뜀」은 **실행되지 않았다** — ja 회차 14가 이미 머지돼 워크트리가 비어 있었다(착수 시 재실측). 전파 완료.
+- 🪶 **Q2b-8 정본에서 지워 달라**: 핸드오프 「이미지·워터마크」 절의 **결재 7 행**(40건 = 8로케일 × 5건) — 🔴 **0으로 닫혔다**.
+  `settled-decisions` §1-B 결재 7은 「실행 완료(Q2-b)」 표기. Q2-a의 §5 항목 Q2-1·Q2-3·Q2-4·Q2-5도 전부 닫혔다.
+- 🟠 **Q2b-9 Q2-c는 아직 열려 있다**(T2 3자리 — `limping:64`·`limping:116`·`drawing-odds:58`). 이 회차는 손대지 않았다.
 
 ## 6. 자산 축적 체크 (매 회차 마감 3종)
 

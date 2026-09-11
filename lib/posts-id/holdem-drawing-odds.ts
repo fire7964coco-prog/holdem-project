@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Anda flop set dengan pocket pair 11,8% dari waktu (7,5:1 melawan), flop flush dengan dua kartu suited hanya 0,84%, dan menyelesaikan flush draw yang di-flop hingga river 35% dari waktu. Setiap angka di bawah diturunkan dari deck, bukan ditebak.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "🎲",
@@ -118,7 +118,7 @@ Sebuah flush **backdoor** (runner-runner) — Anda flop hanya *satu* kartu ekstr
 
 ## Peluang straight: flop satu vs draw ke satu
 
-![Sebuah straight eight-high tersusun berurutan di atas felt hijau, tangan jadi yang dikejar sebuah open-ended draw](/images/holdem-reading-straight-example.webp "Sebuah open-ended straight draw terisi dari ujung mana pun — delapan outs, 31,5% untuk selesai hingga river")
+![Dua panel straight draw berdampingan — rangkaian yang terbuka di kedua ujung dengan angka 8 hijau dalam lingkaran, dan rangkaian berlubang di tengah dengan angka 4 emas](/images/holdem-drawing-odds-oesd-vs-gutshot.webp "Open-ender bernilai dua kali lipat gutshot — dua ujung terbuka melawan satu lubang di tengah")
 
 Connector seperti 8♠7♠ punya siklus hidupnya sendiri. Anda akan **flop straight jadi hanya 1,3%** dari waktu (76:1) — lebih langka dari dugaan kebanyakan pemain. Angka itu berlaku untuk 54s sampai JTs, connector yang bisa mengisi straight dari kedua ujung; tangan di pinggir dek punya lebih sedikit rangkaian, turun sampai 0,33% untuk A-K. Jauh lebih sering Anda flop sebuah **draw**:
 

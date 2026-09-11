@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Este es un glosario en lenguaje llano de los términos de póker que de verdad salen en una partida de Texas Hold'em, agrupados según cómo te los vas a encontrar: acciones de apuesta, posiciones, manos y mesa, tipos de jugador, dinero y situaciones de mesa. Empieza por los términos que más se confunden (pasar vs igualar, trío/set vs trips, cooler vs bad beat) y luego navega por categoría. Los términos con una guía más completa enlazan directamente a ella.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-10",
-  masterUpdated: "2026-08-30",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "📖",
@@ -110,7 +110,7 @@ Dónde te sientas decide cuándo actúas — y actuar el último es una ventaja 
 
 </div>
 
-Para el mapa completo de asientos, mira la [guía de posiciones de la mesa](/es/blog/holdem-positions "thumb:/images/holdem-button-position-hero.webp").
+Para el mapa completo de asientos, mira la [guía de posiciones de la mesa](/es/blog/holdem-positions "thumb:/images/holdem-positions-hero.webp").
 
 ---
 
@@ -158,7 +158,7 @@ Las cartas en sí, y lo que haces con ellas. ¿Nuevo con el flujo de las calles?
 
 ## Tipos de jugador y jerga
 
-![Infografía cenital de una mesa de Texas Hold'em de pub con una mesa K♦ 7♣ 2♠ 9♥ 3♦, fichas y un botón de repartidor](/images/holdem-pub-players-table.webp "Toda mesa es una mezcla de tipos — aprender la jerga te dice a quién atacar y de quién huir")
+![Cinco tarjetas de tipos de jugador — fish, whale, donk, nit y shark — cada una con el símbolo que la define](/images/holdem-glossary-player-types.webp "Toda mesa es una mezcla de tipos — aprender la jerga te dice a quién atacar y de quién huir")
 
 El zoo de apodos para la gente al otro lado del tapete. El desglose completo está en la [guía del fish](/es/blog/holdem-fish).
 

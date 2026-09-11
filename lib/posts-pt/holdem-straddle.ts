@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "O straddle é uma aposta de blind opcional — normalmente o dobro do big blind — postada antes de as cartas serem distribuídas. Ela compra pro straddler a última ação e a opção de aumentar no pré-flop, dobrando os blinds do jogo. Em quase todo caso é uma jogada -EV, e na prática só existe em cash games, conforme as regras da casa.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "💰",
@@ -49,7 +49,7 @@ Um straddle não é um aumento no sentido normal — é um blind que reseta o pr
 
 ## Como o straddle funciona: quem age primeiro e por último
 
-![Infográfico de um button de dealer dourado e duas cartas de mão viradas pra baixo atrás de um flop K♦ 7♣ 2♠, onde o button age por último no pós-flop](/images/holdem-button-dealer-board.webp "Um straddle UTG vivo transforma a cadeira à esquerda do big blind num terceiro blind — o straddler agora age por último antes do flop")
+![Ordem de ação pré-flop com um straddle UTG de $4 sobre blinds de $1/$2 — UTG+1 age primeiro, o straddler por último, e o aumento mínimo vai a $8](/images/holdem-straddle-action-order.webp "Um straddle UTG vivo transforma a cadeira à esquerda do big blind num terceiro blind — o straddler agora age por último antes do flop")
 
 Essa é a parte que as páginas de definição pulam, e é onde os novatos se perdem. Um straddle **reorganiza a ordem de ação do pré-flop.** Acompanhe um jogo padrão de $1/$2 onde o UTG dá straddle pra $4:
 

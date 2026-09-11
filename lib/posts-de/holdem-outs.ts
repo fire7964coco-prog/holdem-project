@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ein Out ist jede Karte im Deck, die deine Hand zu einem wahrscheinlichen Gewinner verbessert. Zähle sie, dann rechne um: multipliziere die Outs am Flop mit 4 oder am Turn mit 2 für deinen groben Prozentwert. Ein Flushdraw sind 9 Outs ≈ 36% bis zum River.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-10",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "🎯",
@@ -65,7 +65,7 @@ Das Zählen nutzt nur Karten, die du sehen kannst. Du ziehst die unbekannten Kar
 
 ## Poker-Outs-Tabelle: Jeder gängige Draw
 
-![Eine achterhohe Straße in Reihenfolge auf grünem Filz ausgelegt, zeigt die Kartenfolge, die ein beidseitig offener Draw jagt](/images/holdem-reading-straight-example.webp "Ein beidseitig offener Straßendraw füllt von beiden Enden – acht Outs, der zweitgrößte gängige Draw")
+![Zwei Draw-Zählungen nebeneinander – dreizehn Pik, vier davon durchgestrichen, neben einer großen 9, und eine beidseitig offene Reihe mit markierten Enden neben einer großen 8](/images/holdem-outs-nine-and-eight.webp "Links der Flushdraw, rechts der beidseitig offene Draw – die zwei Out-Zahlen, an denen jeder andere Draw gemessen wird")
 
 Präge dir diese ein und du erkennst deine Out-Zahl auf einen Blick. Das ist die Tabelle, die sich jeder erfolgreiche Spieler eingeprägt hat:
 

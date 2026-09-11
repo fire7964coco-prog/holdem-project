@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A straddle is an optional blind bet — usually twice the big blind — posted before the cards are dealt. It buys the straddler the last action and the option to raise preflop, doubling the stakes. In almost every case it's a -EV play, and outside cash games it's almost never allowed.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-09-09",
+  updated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "💰",
@@ -48,7 +48,7 @@ A straddle isn't a raise in the normal sense — it's a blind that resets the pr
 
 ## How a Straddle Works: Who Acts First and Last
 
-![Infographic of a gold dealer button and two face-down hole cards behind a K♦ 7♣ 2♠ flop, where the button acts last postflop](/images/holdem-button-dealer-board.webp "A live UTG straddle turns the seat left of the big blind into a third blind — the straddler now acts last before the flop")
+![Preflop action order with a $4 UTG straddle over $1/$2 blinds — UTG+1 acts first, the straddler acts last, and the minimum raise doubles to $8](/images/holdem-straddle-action-order.webp "A live UTG straddle turns the seat left of the big blind into a third blind — the straddler now acts last before the flop")
 
 This is the part definition pages skip, and it's where new players get lost. A straddle **rearranges the preflop action order.** Walk through a standard $1/$2 game where UTG straddles to $4:
 

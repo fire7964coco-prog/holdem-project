@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Este é um glossário direto dos termos de poker que realmente aparecem numa mesa de Texas Hold'em, agrupados pela forma como você vai encontrá-los — ações de aposta, posições, mãos e board, tipos de jogador, dinheiro e situações de mesa. Comece pelos termos 'mais confundidos' logo abaixo (check vs call, set vs trips, cooler vs bad beat) e depois navegue por categoria. Os termos com um guia mais completo linkam direto pra ele.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-10",
-  masterUpdated: "2026-08-30",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "📖",
@@ -110,7 +110,7 @@ Onde você senta decide quando você age — e agir por último é uma vantagem 
 
 </div>
 
-Pra ver o mapa completo dos assentos, veja o [guia de posições na mesa](/pt/blog/holdem-positions "thumb:/images/holdem-button-position-hero.webp").
+Pra ver o mapa completo dos assentos, veja o [guia de posições na mesa](/pt/blog/holdem-positions "thumb:/images/holdem-positions-hero.webp").
 
 ---
 
@@ -159,7 +159,7 @@ Ainda aprendendo o que ganha de quê? O [guia de ranking de mãos](/pt/blog/hold
 
 ## Tipos de jogador e gírias
 
-![Infográfico visto de cima de uma mesa de Texas Hold'em de pub com um board K♦ 7♣ 2♠ 9♥ 3♦, fichas e um botão de dealer](/images/holdem-pub-players-table.webp "Toda mesa é uma mistura de tipos — aprender as gírias te diz quem mirar e de quem fugir")
+![Cinco cartões de tipos de jogador — fish, whale, donk, nit e shark — cada um com o símbolo que o define](/images/holdem-glossary-player-types.webp "Toda mesa é uma mistura de tipos — aprender as gírias te diz quem mirar e de quem fugir")
 
 O zoológico de apelidos pras pessoas do outro lado do feltro. A análise completa está no [guia do fish](/pt/blog/holdem-fish).
 

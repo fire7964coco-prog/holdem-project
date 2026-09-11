@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ein Straddle ist ein optionaler Blind-Einsatz – meist das Doppelte des Big Blinds – der gesetzt wird, bevor die Karten ausgeteilt werden. Er kauft dem Straddler die letzte Action preflop und die Option zu raisen, und verdoppelt so den Einsatz. In nahezu jedem Fall ist es ein -EV-Spielzug und fast immer auf Cashgames nach Hausregeln beschränkt.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-09-10",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "💰",
@@ -53,7 +53,7 @@ Ein Straddle ist kein Raise im üblichen Sinn – er ist ein Blind, der den Prei
 > **Kurze Antwort**
 > Ein Live-Straddle verschiebt die gesamte Preflop-Reihenfolge um einen Platz. Zuerst ist der Spieler ==links vom Straddler== dran, nicht mehr UTG. Danach geht es reihum, Small Blind und Big Blind entscheiden zum neuen, verdoppelten Preis, und der **Straddler kommt als Letzter** – mit der Option, zu checken oder zu erhöhen, falls vor ihm niemand erhöht hat.
 
-![Infografik eines goldenen Dealer-Buttons und zweier verdeckter Hole Cards hinter einem K♦ 7♣ 2♠ Flop, wobei der Button postflop zuletzt handelt](/images/holdem-button-dealer-board.webp "Ein Live-UTG-Straddle macht den Platz links vom Big Blind zu einem dritten Blind – der Straddler handelt jetzt vor dem Flop zuletzt")
+![Preflop-Reihenfolge mit einem €4-UTG-Straddle über €1/€2-Blinds – UTG+1 handelt zuerst, der Straddler zuletzt, Mindest-Raise €8](/images/holdem-straddle-action-order.webp "Ein Live-UTG-Straddle macht den Platz links vom Big Blind zu einem dritten Blind – der Straddler handelt jetzt vor dem Flop zuletzt")
 
 Das ist der Teil, den Definitionsseiten überspringen, und genau hier verlieren neue Spieler den Faden. Ein Straddle **ordnet die Preflop-Action-Reihenfolge neu.** Gehen wir ein Standard-€1/€2-Spiel durch, in dem UTG auf €4 straddelt:
 

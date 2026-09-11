@@ -57,9 +57,9 @@ The magic isn't in any single decision — it's that they *chain*. Good position
 
 ## Decision 1 — Where Am I Sitting? (Position)
 
-![A poker player on the dealer button with cards and chips on the green felt, the seat that acts last on every street after the flop](/images/holdem-button-position-hero.webp "The button acts last on every postflop street — the single most profitable seat at the table")
+![A player sitting on the dealer button with two face-down hole cards and a chip stack, the seat that acts last on every postflop street](/images/holdem-strategy-button-seat.webp "The button acts last on every postflop street — the single most profitable seat at the table")
 
-Before you even look at your cards, the most important information is already fixed: **your seat.** In Hold'em, the player who acts *last* after the flop has an enormous edge — they see what everyone else does before committing a chip. That's why the [button](/en/blog/holdem-position-play "thumb:/images/holdem-button-position-hero.webp") is the most profitable seat in the game and the blinds are the least.
+Before you even look at your cards, the most important information is already fixed: **your seat.** In Hold'em, the player who acts *last* after the flop has an enormous edge — they see what everyone else does before committing a chip. That's why the [button](/en/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp") is the most profitable seat in the game and the blinds are the least.
 
 Acting last lets you do three things nobody in early position can:
 
@@ -90,7 +90,7 @@ The [starting hands chart](/en/blog/holdem-starting-hands-chart) turns this into
 
 ## Decision 3 — Raise or Fold. Never Just Limp.
 
-![Infographic of a gold dealer button, two face-down hole cards, and a K♦ 7♣ 2♠ flop — the button acts last postflop](/images/holdem-button-dealer-board.webp "Open-limping invites a bloated multiway pot with no initiative — raise to win it now, or fold and wait for a better spot")
+![Three numbered tiles under a RAISE / FOLD headline — OVER-LIMP with chips and a seat marker, BIG BLIND with 1.5 ÷ 5.5 and 27%, SET-MINING with a pair of fives and 11.8%](/images/holdem-strategy-raise-or-fold.webp "Raise or fold first-in — the only discounts are over-limping in position, a 27% big-blind defence, and set-mining")
 
 Once you've decided a hand is worth playing, there's a second decision most beginners get wrong: *how* to enter the pot. The answer, almost always, is **raise — don't limp.**
 
@@ -120,7 +120,7 @@ On sizing, a small **25–35% of the pot** bet works when you're betting a wide 
 
 ## Decision 5 — When Do I Fold? (The Decision That Saves the Most Money)
 
-![Top-down infographic of a Hold'em table with a complete K♦ 7♣ 2♠ 9♥ 3♦ board, chip stacks, and the dealer button](/images/holdem-pub-players-table.webp "The most profitable move in poker is the one nobody notices — folding a beaten hand before it costs you a stack")
+![Infographic of A♣ K♣ against a rainbow 2♥ 7♦ 9♠ flop, met by a check-raise and answered with a gold FOLD banner](/images/holdem-strategy-fold-ace-high.webp "The most profitable move in poker is the one nobody notices — folding a beaten hand before it costs you a stack")
 
 Aggression wins pots. **Discipline keeps stacks.** The decision that separates break-even players from winners isn't a hero call or a slick bluff — it's the boring, repeated act of folding when you're beaten.
 

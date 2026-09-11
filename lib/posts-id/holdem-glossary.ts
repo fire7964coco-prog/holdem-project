@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ini glosarium bahasa sederhana untuk istilah poker yang benar-benar muncul di permainan Texas Hold'em, dikelompokkan berdasarkan cara Anda menemuinya — aksi taruhan, posisi, tangan dan board, tipe pemain, uang, dan situasi meja. Mulai dari istilah yang paling sering tertukar di bawah (check vs call, set vs trips, cooler vs bad beat), lalu jelajahi per kategori. Istilah dengan panduan mendalam langsung tertaut ke sana.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-10",
-  masterUpdated: "2026-08-30",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "📖",
@@ -110,7 +110,7 @@ Tempat Anda duduk menentukan kapan Anda beraksi — dan beraksi terakhir adalah 
 
 </div>
 
-Untuk peta tempat duduk lengkap, lihat [panduan posisi meja](/id/blog/holdem-positions "thumb:/images/holdem-button-position-hero.webp").
+Untuk peta tempat duduk lengkap, lihat [panduan posisi meja](/id/blog/holdem-positions "thumb:/images/holdem-positions-hero.webp").
 
 ---
 
@@ -158,7 +158,7 @@ Masih belajar apa mengalahkan apa? [Panduan peringkat tangan](/id/blog/holdem-ha
 
 ## Tipe Pemain & Slang
 
-![Infografik tampak atas meja poker pub Texas Hold'em dengan board K♦ 7♣ 2♠ 9♥ 3♦, chip, dan tombol dealer](/images/holdem-pub-players-table.webp "Setiap meja adalah campuran tipe — menguasai slang memberi tahu Anda siapa yang harus dibidik dan siapa yang harus dihindari")
+![Lima panel tipe pemain — fish, whale, donk, nit, dan shark — masing-masing dengan simbol yang menandainya](/images/holdem-glossary-player-types.webp "Setiap meja adalah campuran tipe — menguasai slang memberi tahu Anda siapa yang harus dibidik dan siapa yang harus dihindari")
 
 Kebun binatang julukan untuk orang-orang di seberang felt. Rinciannya ada di [panduan fish](/id/blog/holdem-fish).
 

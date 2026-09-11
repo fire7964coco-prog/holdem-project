@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.suits { position:absolute; top:36px; left:0; width:100%; text-align:center; color:#C9A227; font-size:18px; letter-spacing:.5em; opacity:.5; }
+.divider { position:absolute; top:104px; left:50%; width:2px; height:492px; background:linear-gradient(180deg,rgba(201,162,39,0),rgba(201,162,39,.5),rgba(201,162,39,0)); }
+
+.half { position:absolute; top:104px; width:540px; height:492px; display:flex; flex-direction:column; align-items:center; justify-content:center; }
+.half.l { left:40px; }
+.half > * { flex:none; }
+.half.r { right:40px; }
+
+.suitgrid { display:grid; grid-template-columns:repeat(7,44px); gap:10px 12px; justify-content:center; }
+.suitgrid span { display:flex; align-items:center; justify-content:center; width:44px; height:48px; border-radius:8px; background:rgba(242,238,227,.06); color:#F2EEE3; font-size:28px; line-height:1; }
+.suitgrid span.seen { position:relative; background:rgba(242,238,227,.05); color:#F2EEE3; opacity:.34; }
+.suitgrid span.seen::after { content:""; position:absolute; left:6px; right:6px; top:50%; height:3px; border-radius:2px; background:#c0392b; transform:rotate(-32deg); opacity:.95; }
+.suitgrid span.live { background:rgba(57,255,122,.12); color:#39FF6A; }
+
+.run { display:flex; align-items:center; gap:8px; }
+.run .slot { width:58px; height:68px; border-radius:8px; border:2px dashed rgba(57,255,122,.62); background:rgba(57,255,122,.08); display:flex; align-items:center; justify-content:center; color:#39FF6A; font-size:24px; font-weight:900; }
+.run .mid { width:44px; height:66px; border-radius:8px; background:linear-gradient(175deg,#FDFBF4 0%,#F2EEE3 100%); box-shadow:0 5px 12px rgba(0,0,0,.4); }
+.run .gap { width:14px; }
+
+.eq { margin-top:38px; color:#F2EEE3; font-size:36px; font-weight:800; letter-spacing:.04em; opacity:.9; }
+.eq b { color:#C9A227; font-weight:900; }
+.huge { margin-top:16px; font-size:150px; font-weight:900; line-height:1; color:#C9A227; text-shadow:0 6px 28px rgba(0,0,0,.5); }
+.wordmark { position:absolute; right:44px; bottom:20px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.03em; opacity:.9; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="suits">&#9824; &#9829; &#9830; &#9827;</div>
+  <div class="divider"></div>
+
+  <div class="half l">
+    <div class="suitgrid">
+      <span class="seen">&#9824;</span><span class="seen">&#9824;</span><span class="seen">&#9824;</span><span class="seen">&#9824;</span>
+      <span class="live">&#9824;</span><span class="live">&#9824;</span><span class="live">&#9824;</span>
+      <span class="live">&#9824;</span><span class="live">&#9824;</span><span class="live">&#9824;</span>
+      <span class="live">&#9824;</span><span class="live">&#9824;</span><span class="live">&#9824;</span>
+    </div>
+    <div class="eq">13 &#8722; <b>4</b> =</div>
+    <div class="huge">9</div>
+  </div>
+
+  <div class="half r">
+    <div class="run">
+      <div class="slot">&#215;4</div>
+      <div class="gap"></div>
+      <div class="mid"></div><div class="mid"></div><div class="mid"></div><div class="mid"></div>
+      <div class="gap"></div>
+      <div class="slot">&#215;4</div>
+    </div>
+    <div class="eq"><b>4</b> + <b>4</b> =</div>
+    <div class="huge">8</div>
+  </div>
+  <div class="wordmark">&#9824; holdemmaster.com</div>
+</div>
+</body>
+</html>

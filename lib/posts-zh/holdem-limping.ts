@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "limp（平跟）就是翻前不加注也不弃牌，只用跟大盲的方式进池。open-limp（开池平跟，第一个进池）几乎永远是错的——你翻前赢不下底池，交出了主动权，还会被高手针对惩罚。但 limp 也不是永远都错：补齐小盲、跟在别人后面 over-limp 投机牌、以及一些现场牌局和锦标赛短码情形，都是正当的例外。",
   category: "strategy",
   date: "2026-07-05",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "11 分钟",
   emoji: "🚶",
@@ -159,7 +159,7 @@ over-limp / 小盲 | 那些其实没问题的位置
 ---
 
 :::readnext[继续阅读]
-/zh/blog/holdem-position-play | 位置如何帮你赢下底池 | /images/holdem-button-position-hero.webp
+/zh/blog/holdem-position-play | 位置如何帮你赢下底池 | /images/holdem-position-play-hero.webp
 /zh/blog/holdem-starting-hands-chart | 该玩哪些牌 | /images/holdem-starting-hands-chart-hero.webp
 :::
 

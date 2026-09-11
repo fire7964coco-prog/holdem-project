@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "straddle 就是发牌前主动补的一个盲注——通常是大盲的 2 倍。它替抓的人买下翻前最后行动权和加注权，把赌注翻倍。绝大多数情况下这是一个 -EV 的打法，而且现金局之外几乎不允许抓。",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "10 分钟",
   emoji: "💰",
@@ -53,7 +53,7 @@ straddle 不是通常意义上的加注——它是一个重置价格的盲注�
 > **快速回答**
 > 行动从抓 straddle 的人左边开始，他自己翻前最后说话；在 $1/$2 的局里，每个人要跟的价格变成 $4，最小加注变成 $8。但这份「最后行动」只管翻前——翻牌一来顺序恢复正常，UTG straddle 又回到那个无位置的座位。
 
-![信息图：一枚金色的庄家按钮和两张背面朝上的底牌，摆在 K♦ 7♣ 2♠ 的翻牌后面，按钮位在翻后最后行动](/images/holdem-button-dealer-board.webp "一次活的 UTG straddle 把大盲左边那个座位变成第三个盲注——抓的人现在在翻牌前最后行动")
+![信息图：$1/$2 牌局里 $4 的 UTG straddle 之后的翻前行动顺序——UTG+1 先说话，抓的人最后说话，最小加注翻倍到 $8](/images/holdem-straddle-action-order.webp "一次活的 UTG straddle 把大盲左边那个座位变成第三个盲注——抓的人现在在翻牌前最后行动")
 
 这是那些定义页会跳过、也正是新手会迷路的地方。一次 straddle **重排了翻前的行动顺序**。走一遍标准的 $1/$2 局，枪口位 straddle 到 $4：
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Das ist ein Poker-Lexikon in einfachem Deutsch mit den Begriffen, die in einem Texas-Hold'em-Spiel wirklich vorkommen, gruppiert danach, wie du ihnen begegnest – Setzaktionen, Positionen, Hände und Board, Spielertypen, Geld, Tischsituationen und die Turnier- und Online-Abkürzungen. Beginn mit den „am häufigsten verwechselten“ Begriffen unten (Check vs. Call, Set vs. Trips, Cooler vs. Bad Beat), dann stöber nach Kategorie. Begriffe mit einem tieferen Guide verlinken direkt darauf.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-10",
-  masterUpdated: "2026-08-30",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "12 Min.",
   emoji: "📖",
@@ -117,7 +117,7 @@ Wie du diesen Vorteil wirklich in Chips umsetzt, zeigt das [Positionsspiel](/de/
 
 </div>
 
-Die vollständige Sitzordnung findest du im [Guide zu den Tischpositionen](/de/blog/holdem-positions "thumb:/images/holdem-button-position-hero.webp").
+Die vollständige Sitzordnung findest du im [Guide zu den Tischpositionen](/de/blog/holdem-positions "thumb:/images/holdem-positions-hero.webp").
 
 ---
 
@@ -165,7 +165,7 @@ Lernst du noch, was was schlägt? Der [Guide zu den Hand-Rankings](/de/blog/hold
 
 ## Was bedeuten Fish, Shark, Nit und Whale? Der Slang für Spielertypen
 
-![Infografik einer Texas-Hold'em-Pub-Tischplatte von oben mit einem K♦ 7♣ 2♠ 9♥ 3♦ Board, Chips und einem Dealer-Button](/images/holdem-pub-players-table.webp "Jeder Tisch ist eine Mischung von Typen – den Slang zu lernen sagt dir, wen du angreifst und wen du meidest")
+![Fünf Kacheln mit Spielertypen – Fish, Whale, Donk, Nit und Shark – jede mit dem Symbol, das sie kennzeichnet](/images/holdem-glossary-player-types.webp "Jeder Tisch ist eine Mischung von Typen – den Slang zu lernen sagt dir, wen du angreifst und wen du meidest")
 
 > **Kurze Antwort**
 > Der Tisch-Zoo beschreibt Spielstile, keine Menschen. Ein **Fish** ist ein schwacher Freizeitspieler, ein **Shark** ein starker Gewinner, ein **Whale** ein zahlungskräftiger Fish an hohen Stakes und eine **Calling Station** jemand, der viel zu oft callt und fast nie raist. ==g:Ein Nit ist dagegen kein Fish== – er spielt extrem tight, verliert wenig und gewinnt wenig.

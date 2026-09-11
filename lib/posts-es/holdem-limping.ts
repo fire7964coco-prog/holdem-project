@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Limpear es entrar en un bote preflop solo igualando la ciega grande en lugar de subir o foldear. El open-limp (ser el primero en entrar) casi siempre es un error — no puedes ganar el bote preflop, cedes la iniciativa y los buenos jugadores te castigan. Pero limpear no siempre está mal: completar la ciega pequeña, hacer over-limp con manos especulativas detrás de otros limpers, y algunos casos en vivo y con stack corto son excepciones legítimas.",
   category: "strategy",
   date: "2026-07-05",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🚶",
@@ -135,7 +135,7 @@ En las **partidas en vivo muy pasivas de stakes bajos**, es otro mundo. Si en la
 ---
 
 :::readnext[Sigue leyendo]
-/es/blog/holdem-position-play | Cómo la posición te gana botes | /images/holdem-button-position-hero.webp
+/es/blog/holdem-position-play | Cómo la posición te gana botes | /images/holdem-position-play-hero.webp
 /es/blog/holdem-starting-hands-chart | Qué manos jugar | /images/holdem-starting-hands-chart-hero.webp
 :::
 

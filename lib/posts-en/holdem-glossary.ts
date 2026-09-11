@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "This is a plain-English glossary of the poker terms that actually come up in a Texas Hold'em game, grouped by how you'll meet them — betting actions, positions, hands and board, player types, money, and table situations. Start with the 'most confused' terms below (check vs call, set vs trips, cooler vs bad beat), then browse by category. Terms with a deeper guide link straight to it.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-08-30",
+  updated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "📖",
@@ -109,7 +109,7 @@ Where you sit decides when you act — and acting last is a permanent edge. For 
 
 </div>
 
-For the full seating map, see the [table positions guide](/en/blog/holdem-positions "thumb:/images/holdem-button-position-hero.webp").
+For the full seating map, see the [table positions guide](/en/blog/holdem-positions "thumb:/images/holdem-positions-hero.webp").
 
 ---
 
@@ -157,7 +157,7 @@ Still learning what beats what? The [hand rankings guide](/en/blog/holdem-hand-r
 
 ## Player Types & Slang
 
-![Top-down infographic of a Texas Hold'em pub table with a K♦ 7♣ 2♠ 9♥ 3♦ board, chips, and a dealer button](/images/holdem-pub-players-table.webp "Every table is a mix of types — learning the slang tells you who to target and who to avoid")
+![Five poker player-type tiles — fish, whale, donk, nit and shark — each marked with the symbol that defines it](/images/holdem-glossary-player-types.webp "Every table is a mix of types — learning the slang tells you who to target and who to avoid")
 
 The zoo of nicknames for the people across the felt. The full breakdown lives in the [fish guide](/en/blog/holdem-fish).
 

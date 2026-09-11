@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ligas un set en el flop con una pareja servida el 11.8% de las veces (7.5 a 1 en contra), ligas un color en el flop con dos cartas del mismo palo apenas un 0.84%, y completas un proyecto de color del flop al river el 35% de las veces. Cada número de abajo sale de la baraja, no se adivina.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🎲",
@@ -118,7 +118,7 @@ Un color por **puerta trasera** (backdoor, runner-runner) — ligas solo *una* c
 
 ## Odds de escalera: ligarla vs tener proyecto a ella
 
-![Una escalera al ocho tendida en secuencia sobre el tapete verde, la mano terminada a la que persigue un proyecto abierto](/images/holdem-reading-straight-example.webp "Un proyecto de escalera abierto se llena por cualquiera de los dos extremos — ocho outs, 31.5% de completarlo al river")
+![Dos paneles de proyecto de escalera uno al lado del otro — una serie abierta por ambos extremos con un 8 verde en un círculo, y otra con un hueco interior y un 4 dorado](/images/holdem-drawing-odds-oesd-vs-gutshot.webp "Un proyecto abierto vale el doble que un gutshot — dos extremos abiertos frente a un hueco interior")
 
 Las conectoras como 8♠7♠ tienen su propio ciclo de vida. **Ligarás una escalera hecha en el flop solo el 1.3%** de las veces (76 a 1) — más raro de lo que asume la mayoría. Esa cifra vale de 54s a JTs, las conectoras que pueden cerrar la escalera por los dos extremos; las manos del borde de la baraja tienen menos secuencias posibles, hasta el 0.33% del A-K. Mucho más a menudo ligas un **proyecto**:
 

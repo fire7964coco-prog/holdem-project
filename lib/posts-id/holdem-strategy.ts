@@ -58,9 +58,9 @@ Keajaibannya bukan pada satu keputusan mana pun — melainkan bahwa semuanya *sa
 
 ## Keputusan 1 — Di Mana Saya Duduk? (Position)
 
-![Seorang pemain poker di dealer button dengan kartu dan chip di felt hijau, kursi yang beraksi terakhir di setiap street setelah flop](/images/holdem-button-position-hero.webp "Button beraksi terakhir di setiap street postflop — kursi paling menguntungkan di meja")
+![Seorang pemain duduk di dealer button dengan dua kartu tertutup dan tumpukan chip — kursi yang beraksi terakhir di setiap street postflop](/images/holdem-strategy-button-seat.webp "Button beraksi terakhir di setiap street postflop — kursi paling menguntungkan di meja")
 
-Bahkan sebelum Anda melihat kartu, informasi terpenting sudah tetap: **kursi Anda.** Di Hold'em, pemain yang beraksi *terakhir* setelah flop punya keunggulan besar — mereka melihat apa yang dilakukan semua orang sebelum mempertaruhkan satu chip pun. Itulah kenapa [button](/id/blog/holdem-position-play "thumb:/images/holdem-button-position-hero.webp") adalah kursi paling menguntungkan dalam permainan dan blinds adalah yang paling tidak.
+Bahkan sebelum Anda melihat kartu, informasi terpenting sudah tetap: **kursi Anda.** Di Hold'em, pemain yang beraksi *terakhir* setelah flop punya keunggulan besar — mereka melihat apa yang dilakukan semua orang sebelum mempertaruhkan satu chip pun. Itulah kenapa [button](/id/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp") adalah kursi paling menguntungkan dalam permainan dan blinds adalah yang paling tidak.
 
 Beraksi terakhir memungkinkan Anda melakukan tiga hal yang tak bisa dilakukan siapa pun di early position:
 
@@ -91,7 +91,7 @@ Tangan mana yang lolos tergantung pada position Anda (Keputusan 1 memberi umpan 
 
 ## Keputusan 3 — Raise atau Fold. Jangan Pernah Sekadar Limp.
 
-![Infografis dealer button emas, dua kartu tertutup, dan flop K♦ 7♣ 2♠ — button beraksi terakhir postflop](/images/holdem-button-dealer-board.webp "Open-limp mengundang pot multiway yang menggembung tanpa inisiatif — raise untuk memenangkannya sekarang, atau fold dan tunggu spot yang lebih baik")
+![Tiga panel bernomor di bawah judul RAISE / FOLD — OVER-LIMP dengan chip dan penanda kursi, BIG BLIND dengan 1,5 ÷ 5,5 dan 27%, SET-MINING dengan sepasang lima dan 11,8%](/images/holdem-strategy-raise-or-fold.webp "Masuk pertama berarti raise atau fold — satu-satunya diskon adalah over-limp dalam position, big blind defense di 27%, dan set-mining")
 
 Setelah Anda memutuskan sebuah tangan layak dimainkan, ada keputusan kedua yang salah dilakukan sebagian besar pemula: *bagaimana* masuk ke pot. Jawabannya, hampir selalu, adalah **raise — jangan limp.**
 
@@ -121,7 +121,7 @@ Soal ukuran, bet kecil **25–35% dari pot** cocok saat Anda bertaruh dengan ran
 
 ## Keputusan 5 — Kapan Saya Fold? (Keputusan yang Paling Banyak Menghemat Uang)
 
-![Infografis tampak atas meja Hold'em dengan board lengkap K♦ 7♣ 2♠ 9♥ 3♦, tumpukan chip, dan dealer button](/images/holdem-pub-players-table.webp "Langkah paling menguntungkan di poker adalah yang tak diperhatikan siapa pun — fold tangan yang kalah sebelum ia menghabiskan satu stack Anda")
+![Infografis A♣ K♣ melawan flop 2♥ 7♦ 9♠ dengan tiga jenis berbeda, sebuah check-raise, dan spanduk emas FOLD](/images/holdem-strategy-fold-ace-high.webp "Langkah paling menguntungkan di poker adalah yang tak diperhatikan siapa pun — fold tangan yang kalah sebelum ia menghabiskan satu stack Anda")
 
 Agresi memenangkan pot. **Disiplin menjaga stack.** Keputusan yang memisahkan pemain impas dari pemenang bukanlah hero call atau bluff licin — melainkan tindakan membosankan dan berulang untuk fold saat Anda kalah.
 

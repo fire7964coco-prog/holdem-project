@@ -44,7 +44,7 @@ O mecanismo é sempre um **suckout**: uma carta — no flop, no turn ou no river
 
 ## Bad beat vs cooler: a diferença que importa
 
-![Infográfico de um par de ases A♠ A♦ contra um par de reis K♥ K♦ num board K♠ 7♦ 2♣ 8♥ 3♠ — a trinca de reis flopada quebra os ases](/images/holdem-cooler-vs-badbeat.webp "Os ases colocam o dinheiro na frente e mesmo assim perdem — o rei no flop entrega o pote para a trinca")
+![Infográfico que separa o bad beat do cooler — ases contra setes que melhoram para uma trinca, ao lado de reis que esbarram em ases que nunca precisaram melhorar](/images/holdem-bad-beat-litmus.webp "Uma pergunta resolve: se o adversário precisou melhorar pra ganhar, foi um bad beat — se ele já estava na frente, foi um cooler")
 
 As pessoas usam "bad beat" e "cooler" como sinônimos, mas eles são opostos — e saber qual dos dois acabou de acontecer te diz se você deve ficar irritado com o baralho ou impressionado com ele. A diferença toda é **quem estava na frente quando o dinheiro entrou, e se houve um suckout:**
 
@@ -80,7 +80,7 @@ A regra prática: um bad beat exige **ambos** uma grande vantagem (favorito pesa
 
 ## Quais são os bad beats mais clássicos? (com as odds)
 
-![Infográfico de um botão de dealer dourado e duas hole cards viradas para baixo atrás de um flop K♦ 7♣ 2♠ — o botão age por último depois do flop](/images/holdem-button-dealer-board.webp "Em todo bad beat a matemática estava do seu lado — o azarão só pegou a carta de que precisava")
+![Infográfico de um par de ases em torno de 80% contra um par de setes em torno de 20%, a vantagem de 4 para 1 que uma trinca flopada quebra](/images/holdem-bad-beat-aces-vs-set.webp "Em todo bad beat a matemática estava do seu lado — o azarão só pegou a carta de que precisava")
 
 Todo bad beat tem a mesma forma: você é o favorito, o azarão precisa de ajuda, e a ajuda chega. As versões mais comuns, com as equities aproximadas de preflop/flop:
 

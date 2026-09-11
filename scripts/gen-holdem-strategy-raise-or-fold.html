@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.suits { position:absolute; top:40px; left:0; width:100%; text-align:center; color:#C9A227; font-size:19px; letter-spacing:.5em; opacity:.55; }
+.hdr { position:absolute; top:78px; left:0; width:100%; text-align:center; }
+.hdr h1 { color:#C9A227; font-size:62px; font-weight:900; letter-spacing:.03em; text-shadow:0 2px 14px rgba(0,0,0,.5); }
+.hdr h1 .sep { color:#F2EEE3; font-size:34px; font-weight:700; opacity:.7; vertical-align:middle; margin:0 14px; }
+.rule { position:absolute; top:172px; left:50%; transform:translateX(-50%); width:280px; height:2px; background:linear-gradient(90deg,rgba(201,162,39,0),#C9A227,rgba(201,162,39,0)); }
+.exc { position:absolute; top:196px; left:0; width:100%; text-align:center; }
+.exc span { display:inline-flex; align-items:center; gap:10px; }
+.exc b { display:inline-flex; align-items:center; justify-content:center; width:28px; height:28px; border-radius:50%; background:#C9A227; color:#0B1F17; font-size:16px; font-weight:900; letter-spacing:0; }
+
+.tiles { position:absolute; top:256px; left:66px; width:1068px; display:flex; gap:26px; }
+.t { flex:1; height:300px; background:rgba(0,0,0,.28); border:2px solid rgba(201,162,39,.55); border-radius:16px; padding:26px 20px; display:flex; flex-direction:column; align-items:center; justify-content:flex-start; }
+.t .n { width:34px; height:34px; border-radius:50%; background:#C9A227; color:#0B1F17; font-size:19px; font-weight:900; display:flex; align-items:center; justify-content:center; }
+.t .term { color:#F2EEE3; font-size:27px; font-weight:900; letter-spacing:.03em; margin-top:16px; text-align:center; line-height:1.2; }
+.t .val { color:#C9A227; font-size:30px; font-weight:900; margin-top:auto; letter-spacing:.01em; }
+.t .val.sm { font-size:26px; color:#C9A227; }
+.chips { display:flex; align-items:flex-end; gap:9px; margin-top:26px; height:52px; }
+.seats { display:flex; align-items:center; gap:13px; margin-top:auto; height:56px; }
+.seats .s { display:block; width:32px; height:32px; border-radius:50%; border:3px solid rgba(242,238,227,.45); }
+.seats .s.me { width:52px; height:52px; background:#C9A227; border-color:#C9A227; box-shadow:0 0 22px rgba(201,162,39,.55); }
+.seats .arw { color:#C9A227; font-size:30px; font-weight:900; }
+.chip { width:44px; height:11px; border-radius:3px; background:linear-gradient(90deg,#2E7D46,#39FF6A); opacity:.85; }
+.chip.g { background:linear-gradient(90deg,#C9A227,#EFCB52); }
+.arrow { color:#C9A227; font-size:26px; font-weight:900; margin-top:26px; }
+.pair { display:flex; gap:11px; margin-top:22px; }
+.rank { width:56px; height:76px; border-radius:9px; background:linear-gradient(175deg,#FDFBF4 0%,#F2EEE3 100%); color:#1a1a1a; font-size:36px; font-weight:900; display:flex; align-items:center; justify-content:center; box-shadow:0 6px 14px rgba(0,0,0,.45); }
+.wordmark { position:absolute; right:44px; bottom:20px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.03em; opacity:.9; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="suits">&#9824; &#9829; &#9830; &#9827;</div>
+  <div class="hdr"><h1>RAISE<span class="sep">/</span>FOLD</h1></div>
+  <div class="rule"></div>
+
+  <div class="tiles">
+    <div class="t">
+      <div class="n">1</div>
+      <div class="term">OVER-LIMP</div>
+      <div class="chips"><div class="chip"></div><div class="chip"></div><div class="chip g"></div></div>
+      <div class="seats"><span class="s"></span><span class="s"></span><span class="arw">&#10148;</span><span class="s me"></span></div>
+    </div>
+    <div class="t">
+      <div class="n">2</div>
+      <div class="term">BIG BLIND</div>
+      <div class="arrow">1.5 &#247; 5.5</div>
+      <div class="val">27%</div>
+    </div>
+    <div class="t">
+      <div class="n">3</div>
+      <div class="term">SET-MINING</div>
+      <div class="pair"><div class="rank">5</div><div class="rank">5</div></div>
+      <div class="val">11.8%</div>
+    </div>
+  </div>
+  <div class="wordmark">&#9824; holdemmaster.com</div>
+</div>
+</body>
+</html>

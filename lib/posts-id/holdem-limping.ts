@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Limping adalah masuk ke pot preflop dengan sekadar call big blind alih-alih raise atau fold. Open-limping (jadi orang pertama yang masuk) hampir selalu keliru — Anda tak bisa memenangkan pot preflop, Anda melepas inisiatif, dan pemain bagus menghukum Anda. Tapi limping tak selalu salah: menyelesaikan small blind, over-limping tangan spekulatif di belakang limper lain, serta beberapa spot live dan short-stack adalah pengecualian yang sah.",
   category: "strategy",
   date: "2026-07-05",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "11 mnt",
   emoji: "🚶",
@@ -135,7 +135,7 @@ Di **permainan live taruhan kecil yang sangat pasif**, itu dunia yang berbeda. J
 ---
 
 :::readnext[Lanjut membaca]
-/id/blog/holdem-position-play | Bagaimana Posisi Memenangkan Pot untuk Anda | /images/holdem-button-position-hero.webp
+/id/blog/holdem-position-play | Bagaimana Posisi Memenangkan Pot untuk Anda | /images/holdem-position-play-hero.webp
 /id/blog/holdem-starting-hands-chart | Tangan Mana yang Dimainkan | /images/holdem-starting-hands-chart-hero.webp
 :::
 

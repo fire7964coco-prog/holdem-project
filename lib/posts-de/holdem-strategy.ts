@@ -64,9 +64,9 @@ Der Zauber liegt nicht in einer einzelnen Entscheidung – er liegt darin, dass 
 > **Kurze Antwort**
 > Position ist die wichtigste Information am Tisch – und sie steht fest, bevor du auf deine Karten schaust. Wer nach dem Flop zuletzt handelt, sieht jede Entscheidung der Gegner, bevor er selbst einen Chip investiert. Deshalb ist der Button der profitabelste Platz im Spiel und die Blinds sind der teuerste. Wer spät sitzt, kauft sich Information; wer früh sitzt, bezahlt sie – und zwar auf **jeder** Street der Hand, nicht nur einmal.
 
-![Ein Pokerspieler auf dem Dealer-Button mit Karten und Chips auf grünem Filz, der Platz, der auf jeder Street nach dem Flop zuletzt handelt](/images/holdem-button-position-hero.webp "Der Button handelt auf jeder Postflop-Street zuletzt – der einzelne profitabelste Platz am Tisch")
+![Ein Spieler am Dealer-Button mit zwei verdeckten Hole Cards und einem Chipstack – der Platz, der auf jeder Postflop-Street zuletzt handelt](/images/holdem-strategy-button-seat.webp "Der Button handelt auf jeder Postflop-Street zuletzt – der einzelne profitabelste Platz am Tisch")
 
-Bevor du überhaupt auf deine Karten schaust, steht die wichtigste Information bereits fest: **dein Platz.** Im Hold'em hat der Spieler, der nach dem Flop *zuletzt* handelt, einen enormen Vorteil – er sieht, was alle anderen tun, bevor er einen Chip investiert. Deshalb ist der [Button](/de/blog/holdem-position-play "thumb:/images/holdem-button-position-hero.webp") der profitabelste Platz im Spiel und die Blinds sind der unprofitabelste.
+Bevor du überhaupt auf deine Karten schaust, steht die wichtigste Information bereits fest: **dein Platz.** Im Hold'em hat der Spieler, der nach dem Flop *zuletzt* handelt, einen enormen Vorteil – er sieht, was alle anderen tun, bevor er einen Chip investiert. Deshalb ist der [Button](/de/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp") der profitabelste Platz im Spiel und die Blinds sind der unprofitabelste.
 
 Zuletzt zu handeln lässt dich drei Dinge tun, die niemand in früher Position kann:
 
@@ -103,7 +103,7 @@ Die [Starthände-Tabelle](/de/blog/holdem-starting-hands-chart) verwandelt das i
 > **Kurze Antwort**
 > Weil ein Limp den Pot vor dem Flop **nie** gewinnen kann. Ein First-in-Raise gewinnt die Blinds sofort, wenn alle folden; ein Limp wirft genau diesen Weg weg, gibt die Initiative ab und lädt starke Spieler ein, dich zu isolieren. Echte Ausnahmen von dieser Raise-oder-Fold-Grundregel gibt es – Over-Limpen in Position, die BB-Defense und Set-Mining bei tiefen Stacks –, aber bei allen dreien geht es um den **Preis**, nicht um Bequemlichkeit.
 
-![Infografik eines goldenen Dealer-Buttons, zweier verdeckter Hole Cards und eines K♦ 7♣ 2♠ Flops – der Button handelt postflop zuletzt](/images/holdem-button-dealer-board.webp "Open-Limpen lädt zu einem aufgeblähten Multiway-Pot ohne Initiative ein – raise, um ihn jetzt zu gewinnen, oder fold und warte auf einen besseren Spot")
+![Drei nummerierte Kacheln unter der Überschrift RAISE / FOLD – OVER-LIMP mit Chips und Sitzmarkierung, BIG BLIND mit 1,5 ÷ 5,5 und 27%, SET-MINING mit einem Fünfer-Paar und 11,8%](/images/holdem-strategy-raise-or-fold.webp "Als Erster im Pot gilt raise oder fold – die einzigen Rabatte sind Over-Limpen in Position, eine 27%-BB-Defense und Set-Mining")
 
 Sobald du entschieden hast, dass eine Hand spielenswert ist, gibt es eine zweite Entscheidung, die die meisten Anfänger falsch machen: *wie* du in den Pot einsteigst. Die Antwort ist fast immer: **raise – nicht limpen.**
 
@@ -139,7 +139,7 @@ Beim Sizing funktioniert eine kleine **25–35%-Pot**-Bet, wenn du eine weite Ra
 > **Kurze Antwort**
 > An drei Stellen, und sie sehen völlig unterschiedlich aus: **vor dem Flop** bei schwachen Starthänden, **auf dem Flop und danach**, wenn du verfehlt hast und echter Aggression gegenüberstehst, und **mit einem Draw**, wenn der Preis nicht stimmt. Die ersten beiden sparen kleine Beträge sehr oft; die dritte spart selten, dafür ganze Stacks. Zusammen sind sie der Grund, warum disziplinierte Spieler kleinere Verlusttage haben.
 
-![Top-Down-Infografik eines Hold'em-Tisches mit einem kompletten K♦ 7♣ 2♠ 9♥ 3♦ Board, Chip-Stapeln und dem Dealer-Button](/images/holdem-pub-players-table.webp "Der profitabelste Move im Poker ist der, den niemand bemerkt – eine geschlagene Hand zu folden, bevor sie dich einen Stack kostet")
+![Infografik: A♣ K♣ gegen einen Flop 2♥ 7♦ 9♠ aus drei verschiedenen Farben, ein Check-Raise und ein goldenes FOLD-Banner](/images/holdem-strategy-fold-ace-high.webp "Der profitabelste Move im Poker ist der, den niemand bemerkt – eine geschlagene Hand zu folden, bevor sie dich einen Stack kostet")
 
 Aggression gewinnt Pots. **Disziplin behält Stacks.** Die Entscheidung, die Break-even-Spieler von Gewinnern trennt, ist kein Hero-Call und kein glatter Bluff – es ist der langweilige, wiederholte Akt des Foldens, wenn du geschlagen bist.
 

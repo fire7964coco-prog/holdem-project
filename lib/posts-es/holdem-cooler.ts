@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un cooler es una mano en la que pierdes un bote grande con una mano muy fuerte que jamás podrías foldear correctamente — como una pareja de reyes que choca con ases, o un trío que pierde ante un trío mayor. A diferencia de un bad beat, ibas por detrás desde el principio y ninguna carta afortunada te 'cazó': jugaste bien y aun así perdiste. Es el desastre más honesto del póker.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-08-11",
-  masterUpdated: "2026-08-11",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🧊",
@@ -73,7 +73,7 @@ Aquí están los mismos jugadores enseñando ambos casos, para que te encaje. **
 
 ## Ejemplos clásicos de cooler (toda la familia)
 
-![Infografía de un botón de repartidor dorado, dos cartas privadas boca abajo y un flop K♦ 7♣ 2♠ sobre fieltro verde](/images/holdem-button-dealer-board.webp "Los coolers pasan cuando ambos jugadores tienen manos demasiado fuertes para foldear — el dinero entra y el segundo mejor monstruo paga")
+![Dos jugadores empujan sus stacks completos al centro del tapete verde, la colisión en la que ninguna mano puede foldear](/images/holdem-cooler-stacks-collide.webp "Los coolers pasan cuando ambos jugadores tienen manos demasiado fuertes para foldear — el dinero entra y el segundo mejor monstruo paga")
 
 Los coolers vienen en una familia reconocible. En todos ellos, *ambas* manos son lo bastante fuertes como para que foldear fuese una jugada perdedora a largo plazo — que es justo por lo que son inevitables:
 

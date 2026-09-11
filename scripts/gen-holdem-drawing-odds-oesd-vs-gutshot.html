@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.suits { position:absolute; top:34px; left:0; width:100%; text-align:center; color:#C9A227; font-size:18px; letter-spacing:.5em; opacity:.5; }
+
+.cols { position:absolute; top:84px; left:52px; width:1096px; display:flex; gap:34px; }
+.c { flex:1; height:436px; border-radius:20px; background:rgba(0,0,0,.28); border:2px solid rgba(201,162,39,.45); padding:30px 26px; display:flex; flex-direction:column; align-items:center; }
+.c.hot { border-color:rgba(57,255,122,.55); background:rgba(46,125,70,.12); }
+
+.run { display:flex; align-items:center; gap:8px; height:64px; }
+.run .slot { width:56px; height:64px; border-radius:8px; border:2px dashed rgba(57,255,122,.62); background:rgba(57,255,122,.08); display:flex; align-items:center; justify-content:center; color:#39FF6A; font-size:22px; font-weight:900; }
+.run .mid { width:42px; height:64px; border-radius:8px; background:linear-gradient(175deg,#FDFBF4 0%,#F2EEE3 100%); box-shadow:0 5px 12px rgba(0,0,0,.4); }
+.run .gap { width:12px; }
+
+.outs { display:flex; align-items:center; gap:14px; margin-top:26px; }
+.outs .o { width:86px; height:86px; border-radius:50%; background:linear-gradient(140deg,#C9A227,#EFCB52); color:#0B1F17; font-size:48px; font-weight:900; display:flex; align-items:center; justify-content:center; box-shadow:0 8px 22px rgba(0,0,0,.45); }
+.c.hot .outs .o { background:linear-gradient(140deg,#2E7D46,#39FF6A); }
+
+.rows { margin-top:auto; width:100%; }
+.r { display:flex; align-items:center; justify-content:center; gap:20px; height:64px; }
+.r + .r { border-top:1px solid rgba(201,162,39,.2); }
+.streets { display:flex; gap:7px; width:74px; justify-content:flex-end; }
+.streets i { display:block; width:24px; height:34px; border-radius:5px; background:rgba(242,238,227,.14); border:1px solid rgba(242,238,227,.3); }
+.pct { width:150px; text-align:left; color:#F2EEE3; font-size:38px; font-weight:900; }
+.c.hot .pct { color:#39FF6A; }
+.c .pct.sm { font-size:30px; opacity:.78; }
+
+.ratio { position:absolute; left:50%; transform:translateX(-50%); bottom:66px; display:flex; align-items:center; gap:16px; height:82px; padding:0 44px; border-radius:16px; background:rgba(0,0,0,.32); border:2px solid rgba(201,162,39,.5); }
+.ratio span { color:#C9A227; font-size:42px; font-weight:900; letter-spacing:.02em; }
+.ratio .x { color:#F2EEE3; font-size:30px; font-weight:800; opacity:.7; }
+.wordmark { position:absolute; right:44px; bottom:20px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.03em; opacity:.9; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="suits">&#9824; &#9829; &#9830; &#9827;</div>
+
+  <div class="cols">
+    <div class="c hot">
+      <div class="run">
+        <div class="slot">&#215;4</div>
+        <div class="gap"></div>
+        <div class="mid"></div><div class="mid"></div><div class="mid"></div><div class="mid"></div>
+        <div class="gap"></div>
+        <div class="slot">&#215;4</div>
+      </div>
+      <div class="outs"><div class="o">8</div></div>
+      <div class="rows">
+        <div class="r"><div class="streets"><i></i><i></i></div><div class="pct">31.5%</div></div>
+        <div class="r"><div class="streets"><i></i></div><div class="pct sm">17%</div></div>
+      </div>
+    </div>
+
+    <div class="c">
+      <div class="run">
+        <div class="mid"></div><div class="mid"></div>
+        <div class="gap"></div>
+        <div class="slot">&#215;4</div>
+        <div class="gap"></div>
+        <div class="mid"></div><div class="mid"></div>
+      </div>
+      <div class="outs"><div class="o">4</div></div>
+      <div class="rows">
+        <div class="r"><div class="streets"><i></i><i></i></div><div class="pct">16.5%</div></div>
+        <div class="r"><div class="streets"><i></i></div><div class="pct sm">8.5%</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ratio"><span>31.5%</span><span class="x">&#8776;</span><span>2 &#215;</span><span>16.5%</span></div>
+  <div class="wordmark">&#9824; holdemmaster.com</div>
+</div>
+</body>
+</html>

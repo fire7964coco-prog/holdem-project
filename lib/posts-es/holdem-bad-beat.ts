@@ -44,7 +44,7 @@ El mecanismo siempre es un **suckout**: una carta — en el flop, el turn o el r
 
 ## Bad beat vs cooler: la diferencia que importa
 
-![Infografía de pareja de ases A♠ A♦ contra pareja de reyes K♥ K♦ en una mesa K♠ 7♦ 2♣ 8♥ 3♠ — el trío de reyes ligado en el flop rompe a los ases](/images/holdem-cooler-vs-badbeat.webp "Los ases meten el dinero por delante y aun así pierden — el rey en el flop entrega el bote al trío")
+![Infografía que separa el bad beat del cooler — ases contra sietes que mejoran a trío, junto a reyes que chocan con ases que nunca necesitaron mejorar](/images/holdem-bad-beat-litmus.webp "Una sola pregunta lo resuelve: si tu rival necesitaba mejorar para ganar, fue un bad beat — si ya iba por delante, fue un cooler")
 
 La gente usa "bad beat" y "cooler" como sinónimos, pero son opuestos — y saber cuál acaba de pasar te dice si molestarte con la baraja o quedarte impresionado por ella. Toda la diferencia está en **quién iba por delante cuando entró el dinero, y si hubo un suckout:**
 
@@ -80,7 +80,7 @@ La regla general: un bad beat requiere **tanto** una gran ventaja (favorito clar
 
 ## Ejemplos clásicos de bad beat (con las probabilidades)
 
-![Infografía de un botón de repartidor dorado y dos cartas privadas boca abajo tras un flop K♦ 7♣ 2♠ — el botón actúa último tras el flop](/images/holdem-button-dealer-board.webp "En todo bad beat la matemática estaba de tu lado — el desfavorecido solo cazó la carta que necesitaba")
+![Infografía de pareja de ases en torno al 80% contra pareja de sietes en torno al 20%, la ventaja de 4 a 1 que rompe un trío ligado en el flop](/images/holdem-bad-beat-aces-vs-set.webp "En todo bad beat la matemática estaba de tu lado — el desfavorecido solo cazó la carta que necesitaba")
 
 Todo bad beat tiene la misma forma: eres el favorito, el desfavorecido necesita ayuda y la ayuda llega. Las versiones más comunes, con equities aproximadas preflop/flop:
 

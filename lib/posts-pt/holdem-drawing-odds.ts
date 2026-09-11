@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Você flopa um set com um par na mão 11,8% das vezes (7,5 para 1 contra), flopa um flush com duas cartas do mesmo naipe apenas 0,84%, e completa um flush draw flopado até o river 35% das vezes. Cada número abaixo vem do baralho, não de chute.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-09-10",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🎲",
@@ -118,7 +118,7 @@ Um flush **backdoor** (runner-runner) — você flopa só *uma* carta extra do s
 
 ## Odds de sequência: flopar uma vs ter projeto de uma
 
-![Uma sequência de oito alto disposta em ordem no feltro verde, a mão pronta que um open-ended draw está perseguindo](/images/holdem-reading-straight-example.webp "Um open-ended straight draw completa por qualquer das pontas — oito outs, 31,5% pra completar até o river")
+![Dois painéis de projeto de sequência lado a lado — uma sequência aberta nas duas pontas com um 8 verde num círculo, e outra com um buraco no meio e um 4 dourado](/images/holdem-drawing-odds-oesd-vs-gutshot.webp "Um projeto aberto vale o dobro de um gutshot — duas pontas abertas contra um buraco no meio")
 
 Conectores como 8♠7♠ têm o próprio ciclo de vida. Você vai **flopar uma sequência feita só 1,3%** das vezes (76 para 1) — mais raro do que a maioria dos jogadores imagina. Esse número vale de 54s até JTs, os conectores que fecham sequência pelas duas pontas; mãos na borda do baralho entram em menos sequências, caindo até 0,33% no A-K. Bem mais frequente é flopar um **projeto**:
 

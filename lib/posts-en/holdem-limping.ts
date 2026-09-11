@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Limping is entering a pot preflop by just calling the big blind instead of raising or folding. Open-limping (being first in) is almost always a mistake — you can't win the pot preflop, you give up initiative, and good players punish you. But limping isn't always wrong: completing the small blind, over-limping speculative hands behind other limpers, and some live and short-stack spots are legitimate exceptions.",
   category: "strategy",
   date: "2026-07-05",
-  updated: "2026-09-09",
+  updated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🚶",
@@ -134,7 +134,7 @@ In **very passive live low-stakes games**, it's a different world. If the table 
 ---
 
 :::readnext[Keep reading]
-/en/blog/holdem-position-play | How Position Wins You Pots | /images/holdem-button-position-hero.webp
+/en/blog/holdem-position-play | How Position Wins You Pots | /images/holdem-position-play-hero.webp
 /en/blog/holdem-starting-hands-chart | Which Hands to Play | /images/holdem-starting-hands-chart-hero.webp
 :::
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Straddle adalah taruhan blind opsional — biasanya dua kali big blind — yang dipasang sebelum kartu dibagi. Ia membeli aksi terakhir bagi si straddler dan opsi untuk raise preflop, menggandakan taruhan. Dalam hampir semua kasus ini adalah play -EV, dan dalam praktiknya hanya ada di cash game sesuai aturan rumah.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "10 mnt",
   emoji: "💰",
@@ -49,7 +49,7 @@ Straddle bukanlah raise dalam arti biasa — melainkan blind yang mereset harga.
 
 ## Cara Kerja Straddle: Siapa Beraksi Lebih Dulu dan Terakhir
 
-![Infografik tombol dealer emas dan dua kartu tertutup di belakang flop K♦ 7♣ 2♠, di mana button beraksi terakhir postflop](/images/holdem-button-dealer-board.webp "Sebuah UTG straddle hidup mengubah kursi di kiri big blind menjadi blind ketiga — si straddler kini beraksi terakhir sebelum flop")
+![Urutan aksi preflop dengan straddle UTG $4 di atas blind $1/$2 — UTG+1 beraksi pertama, straddler terakhir, dan raise minimum menjadi $8](/images/holdem-straddle-action-order.webp "Sebuah UTG straddle hidup mengubah kursi di kiri big blind menjadi blind ketiga — si straddler kini beraksi terakhir sebelum flop")
 
 Inilah bagian yang dilewati halaman-halaman definisi, dan di sinilah pemain baru tersesat. Sebuah straddle **menata ulang urutan aksi preflop.** Ikuti game standar $1/$2 di mana UTG straddle jadi $4:
 

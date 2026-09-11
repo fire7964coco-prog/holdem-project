@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "You flop a set with a pocket pair 11.8% of the time (7.5-to-1 against), flop a flush with two suited cards just 0.84%, and complete a flopped flush draw by the river 35% of the time. Every number below is derived from the deck, not guessed.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-09-09",
+  updated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🎲",
@@ -117,7 +117,7 @@ A **backdoor** (runner-runner) flush — you flop just *one* extra card of your 
 
 ## Straight Odds: Flopping One vs Drawing to One
 
-![An eight-high straight laid out in sequence on green felt, the finished hand an open-ended draw is chasing](/images/holdem-reading-straight-example.webp "An open-ended straight draw fills from either end — eight outs, 31.5% to complete by the river")
+![Two straight-draw panels side by side — a run open at both ends with a green 8 in a circle, and a run with a single inside gap and a gold 4](/images/holdem-drawing-odds-oesd-vs-gutshot.webp "An open-ender is worth double a gutshot — two open ends against one inside gap")
 
 Connectors like 8♠7♠ have their own lifecycle. You'll **flop a made straight only 1.3%** of the time (76-to-1) — rarer than most players assume. That figure holds for 54s through JTs, the connectors that can fill a straight from either end; hands at the edge of the deck have fewer runs, down to 0.33% for A-K. Far more often you flop a **draw**:
 

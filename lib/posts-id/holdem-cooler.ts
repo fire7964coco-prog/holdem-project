@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Cooler adalah tangan di mana Anda kalah pot besar dengan holding sangat kuat yang tak pernah bisa Anda fold dengan benar — seperti pocket kings bertemu aces, atau sebuah set kalah oleh set yang lebih besar. Berbeda dari bad beat, Anda tertinggal sepanjang jalan dan tak ada kartu keberuntungan yang 'suckout' pada Anda: Anda memainkannya dengan benar dan tetap kalah. Inilah jenis bencana poker yang paling jujur.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-08-28",
-  masterUpdated: "2026-08-11",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "10 mnt",
   emoji: "🧊",
@@ -73,7 +73,7 @@ Berikut pemain yang sama menunjukkan keduanya, supaya perbedaannya benar-benar t
 
 ## Contoh Cooler Klasik (Seluruh Keluarga)
 
-![Infografis tombol dealer emas, dua kartu tertutup, dan flop K♦ 7♣ 2♠ di felt hijau](/images/holdem-button-dealer-board.webp "Cooler terjadi saat kedua pemain memegang tangan yang jauh terlalu kuat untuk fold — chip masuk dan monster kedua-terbaik membayar")
+![Dua pemain mendorong seluruh tumpukan chip mereka ke tengah felt hijau — tabrakan di mana tak satu pun tangan bisa fold](/images/holdem-cooler-stacks-collide.webp "Cooler terjadi saat kedua pemain memegang tangan yang jauh terlalu kuat untuk fold — chip masuk dan monster kedua-terbaik membayar")
 
 Cooler datang dalam satu keluarga yang mudah dikenali. Di setiap kasusnya, *kedua* tangan cukup kuat sehingga fold akan menjadi permainan yang merugi dalam jangka panjang — itulah persisnya kenapa mereka tak terhindarkan:
 

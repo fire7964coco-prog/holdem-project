@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A cooler is a hand where you lose a big pot with a very strong holding you could never correctly fold — like pocket kings running into aces, or a set losing to a bigger set. Unlike a bad beat, you were behind the whole way and no lucky card 'sucked out' on you: you played it right and still lost. It's poker's most honest kind of disaster.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-08-11",
+  updated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🧊",
@@ -72,7 +72,7 @@ Here's the same players showing both, so it clicks. **Bad beat:** you hold A♠A
 
 ## Classic Cooler Examples (The Whole Family)
 
-![Infographic of a gold dealer button, two face-down hole cards, and a K♦ 7♣ 2♠ flop on green felt](/images/holdem-button-dealer-board.webp "Coolers happen when both players hold hands far too strong to fold — the money goes in and the second-best monster pays off")
+![Two players pushing their full chip stacks into the middle of the green felt, the collision where neither hand can fold](/images/holdem-cooler-stacks-collide.webp "Coolers happen when both players hold hands far too strong to fold — the money goes in and the second-best monster pays off")
 
 Coolers come in a recognizable family. In every one, *both* hands are strong enough that folding would be a losing play over the long run — which is exactly why they're unavoidable:
 

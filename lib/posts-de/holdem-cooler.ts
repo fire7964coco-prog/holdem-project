@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ein Cooler ist eine Hand, bei der du einen großen Pot mit einer sehr starken Holding verlierst, die du niemals korrekt folden könntest – wie Pocket Kings, die auf Asse treffen, oder ein Set, das gegen ein größeres Set verliert. Anders als beim Bad Beat lagst du die ganze Zeit hinten und keine Glückskarte hat dich „ausgesaugt“: Du hast alles richtig gemacht und trotzdem verloren. Es ist die ehrlichste Art von Poker-Katastrophe.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-08-26",
-  masterUpdated: "2026-08-26",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "🧊",
@@ -77,7 +77,7 @@ Hier zeigen dieselben Spieler beides, damit es klick macht. **Bad Beat:** Du hä
 
 ## Welche Cooler gibt es? Die klassischen Beispiele
 
-![Infografik eines goldenen Dealer-Buttons, zwei verdeckter Hole Cards und eines K♦ 7♣ 2♠ Flops auf grünem Filz](/images/holdem-button-dealer-board.webp "Cooler passieren, wenn beide Spieler Hände halten, die viel zu stark zum Folden sind – das Geld geht rein und das zweitbeste Monster bezahlt")
+![Zwei Spieler schieben ihre kompletten Stacks in die Mitte des grünen Filzes – die Kollision, bei der keine Hand folden kann](/images/holdem-cooler-stacks-collide.webp "Cooler passieren, wenn beide Spieler Hände halten, die viel zu stark zum Folden sind – das Geld geht rein und das zweitbeste Monster bezahlt")
 
 > **Kurze Antwort**
 > Sechs Zusammenstöße machen fast alle Cooler aus: **Kings gegen Asse**, **Set über Set**, **Flush über Flush**, **Full House über Full House**, **Full House gegen Vierling** und **Straße über Straße**. Das Muster ist immer dasselbe – beide Hände sind so stark, dass Folden auf lange Sicht Geld verlieren würde. Genau deshalb sind sie unvermeidbar und nicht dein Fehler.

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.suits { position:absolute; top:40px; left:0; width:100%; text-align:center; color:#C9A227; font-size:18px; letter-spacing:.5em; opacity:.5; }
+
+.side { position:absolute; top:112px; width:400px; display:flex; flex-direction:column; align-items:center; }
+.side.l { left:64px; }
+.side.r { right:64px; }
+.hand { display:flex; gap:13px; }
+.rank { width:92px; height:126px; border-radius:11px; background:linear-gradient(175deg,#FDFBF4 0%,#F2EEE3 100%); color:#1a1a1a; font-size:62px; font-weight:900; display:flex; align-items:center; justify-content:center; box-shadow:0 8px 18px rgba(0,0,0,.48); }
+.pct { margin-top:30px; font-size:74px; font-weight:900; line-height:1; }
+.pct.fav { color:#39FF6A; text-shadow:0 0 26px rgba(57,255,122,.35); }
+.pct.dog { color:#C9A227; }
+.bar { margin-top:20px; width:300px; height:16px; border-radius:8px; background:rgba(255,255,255,.08); overflow:hidden; }
+.bar i { display:block; height:100%; border-radius:8px; }
+.bar.fav i { width:80%; background:linear-gradient(90deg,#2E7D46,#39FF6A); }
+.bar.dog i { width:20%; background:linear-gradient(90deg,#C9A227,#EFCB52); }
+
+.badge { position:absolute; top:212px; left:50%; transform:translateX(-50%); width:170px; height:170px; border-radius:50%; background:linear-gradient(140deg,#C9A227,#EFCB52); display:flex; align-items:center; justify-content:center; box-shadow:0 12px 34px rgba(0,0,0,.5); }
+.badge span { color:#0B1F17; font-size:56px; font-weight:900; letter-spacing:.02em; }
+
+.foot { position:absolute; left:0; bottom:78px; width:100%; display:flex; align-items:center; justify-content:center; gap:18px; }
+.foot .rk { width:52px; height:72px; border-radius:8px; background:linear-gradient(175deg,#FDFBF4 0%,#F2EEE3 100%); color:#1a1a1a; font-size:34px; font-weight:900; display:flex; align-items:center; justify-content:center; box-shadow:0 5px 12px rgba(0,0,0,.4); }
+.foot .rk.hot { box-shadow:0 0 20px rgba(57,255,122,.55),0 5px 12px rgba(0,0,0,.4); }
+.foot .arr { color:#C9A227; font-size:34px; font-weight:900; }
+.wordmark { position:absolute; right:44px; bottom:20px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.03em; opacity:.9; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="suits">&#9824; &#9829; &#9830; &#9827;</div>
+
+  <div class="side l">
+    <div class="hand"><div class="rank">A</div><div class="rank">A</div></div>
+    <div class="pct fav">~80%</div>
+    <div class="bar fav"><i></i></div>
+  </div>
+
+  <div class="badge"><span>4 : 1</span></div>
+
+  <div class="side r">
+    <div class="hand"><div class="rank">7</div><div class="rank">7</div></div>
+    <div class="pct dog">~20%</div>
+    <div class="bar dog"><i></i></div>
+  </div>
+
+  <div class="foot">
+    <div class="rk">7</div><div class="rk">7</div>
+    <div class="arr">&#10132;</div>
+    <div class="rk hot">7</div><div class="rk hot">7</div><div class="rk hot">7</div>
+  </div>
+  <div class="wordmark">&#9824; holdemmaster.com</div>
+</div>
+</body>
+</html>

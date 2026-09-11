@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.suits { position:absolute; top:52px; left:0; width:100%; text-align:center; color:#C9A227; font-size:20px; letter-spacing:.52em; opacity:.55; }
+.rule { position:absolute; top:104px; left:50%; transform:translateX(-50%); width:320px; height:2px; background:linear-gradient(90deg,rgba(201,162,39,0),#C9A227,rgba(201,162,39,0)); }
+
+.tiles { position:absolute; top:158px; left:52px; width:1096px; display:flex; gap:20px; }
+.t { flex:1; height:346px; border-radius:18px; background:rgba(0,0,0,.28); border:2px solid rgba(201,162,39,.4); padding:34px 12px 30px; display:flex; flex-direction:column; align-items:center; justify-content:space-between; }
+.t .term { color:#F2EEE3; font-size:34px; font-weight:900; letter-spacing:.06em; }
+.t .icon { display:flex; align-items:center; justify-content:center; height:180px; }
+
+.tri { font-size:66px; font-weight:900; line-height:1; }
+.tri.dn { color:#c0392b; }
+.tri.up { color:#39FF6A; }
+.money { color:#C9A227; font-size:44px; font-weight:900; letter-spacing:.04em; }
+.grid { display:grid; grid-template-columns:repeat(4,20px); grid-template-rows:repeat(4,20px); gap:4px; }
+.grid i { display:block; width:20px; height:20px; border-radius:4px; background:rgba(242,238,227,.14); }
+.grid i.on { background:#C9A227; }
+.mark { font-size:56px; font-weight:900; color:#c0392b; line-height:1; }
+.wordmark { position:absolute; right:44px; bottom:20px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.03em; opacity:.9; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="suits">&#9824; &#9829; &#9830; &#9827;</div>
+  <div class="rule"></div>
+
+  <div class="tiles">
+    <div class="t">
+      <div class="term">FISH</div>
+      <div class="icon"><div class="tri dn">&#9660;</div></div>
+    </div>
+    <div class="t">
+      <div class="term">WHALE</div>
+      <div class="icon"><div class="money">$ $ $</div></div>
+    </div>
+    <div class="t">
+      <div class="term">DONK</div>
+      <div class="icon"><div class="mark">&#10007;</div></div>
+    </div>
+    <div class="t">
+      <div class="term">NIT</div>
+      <div class="icon">
+        <div class="grid">
+          <i class="on"></i><i class="on"></i><i></i><i></i>
+          <i></i><i></i><i></i><i></i>
+          <i></i><i></i><i></i><i></i>
+          <i></i><i></i><i></i><i></i>
+        </div>
+      </div>
+    </div>
+    <div class="t strong">
+      <div class="term">SHARK</div>
+      <div class="icon"><div class="tri up">&#9650;</div></div>
+    </div>
+  </div>
+  <div class="wordmark">&#9824; holdemmaster.com</div>
+</div>
+</body>
+</html>

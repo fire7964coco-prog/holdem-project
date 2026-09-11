@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Um out é qualquer carta que sobrou no baralho e melhora sua mão para uma provável vencedora. Conte-os e converta: multiplique os outs por 4 no flop ou por 2 no turn para a % aproximada de acertar. Um projeto de flush são 9 outs ≈ 36% até o river.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-10",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🎯",
@@ -63,7 +63,7 @@ A contagem só usa cartas que você consegue ver. Você não subtrai as cartas d
 
 ## Tabela de outs no poker: todo projeto comum
 
-![Uma sequência de oito alto disposta em ordem no feltro verde, mostrando a fileira de cartas que um projeto aberto está caçando](/images/holdem-reading-straight-example.webp "Um projeto aberto de sequência completa por qualquer das duas pontas — oito outs, o segundo maior projeto comum")
+![Duas contagens de outs lado a lado — treze espadas com quatro riscadas ao lado de um 9 grande, e uma sequência aberta com as duas pontas marcadas ao lado de um 8 grande](/images/holdem-outs-nine-and-eight.webp "À esquerda o projeto de flush, à direita o projeto aberto — as duas contagens de outs que servem de referência para todas as outras")
 
 Memorize estas e você reconhecerá sua contagem de outs de bate-pronto. Esta é a tabela que todo jogador vencedor tem gravada na memória:
 

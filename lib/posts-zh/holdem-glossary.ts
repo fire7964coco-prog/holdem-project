@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "这是一份大白话的德州扑克术语表，收的都是牌桌上真会碰到的词，按你怎么遇到它们来分组——下注动作、位置、牌型和牌面、玩家类型、钱，以及牌桌情境。先看下面那组「最容易搞混」的词（过牌 vs 跟注、set vs trips、cooler vs bad beat），再按分类随便翻。有深入指南的术语会直接给你链接。",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-09",
-  masterUpdated: "2026-08-30",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "12 分钟",
   emoji: "📖",
@@ -135,7 +135,7 @@ export const POST: Post = {
 
 </div>
 
-想看完整的座位图，见 [牌桌位置指南](/zh/blog/holdem-positions "thumb:/images/holdem-button-position-hero.webp")。
+想看完整的座位图，见 [牌桌位置指南](/zh/blog/holdem-positions "thumb:/images/holdem-positions-hero.webp")。
 
 ---
 
@@ -189,7 +189,7 @@ export const POST: Post = {
 > **快速回答**
 > fish 是又松又被动、长期输钱的弱手；shark 是长期赢钱、专吃鱼的强手；whale 是口袋很深的鱼，不是更强的玩家；nit 极紧，但不算鱼。筹码堆的大小说明的是他带来多少钱，不是他打得多强。
 
-![一张俯视信息图：一张德扑酒馆桌，牌面是 K♦ 7♣ 2♠ 9♥ 3♦，还有筹码和庄家按钮](/images/holdem-pub-players-table.webp "每张桌子都是各种类型的混合——学会这些黑话，你就知道该盯谁、该躲谁")
+![五张玩家类型卡片——fish、whale、donk、nit、shark——每张都配着代表它的符号](/images/holdem-glossary-player-types.webp "每张桌子都是各种类型的混合——学会这些黑话，你就知道该盯谁、该躲谁")
 
 这一组讲的是牌桌对面那些人的一堆外号。完整的拆解在 [fish 指南](/zh/blog/holdem-fish)。
 

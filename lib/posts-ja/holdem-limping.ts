@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "リンプとは、プリフロップでレイズもフォールドもせず、ビッグブラインドにコールだけしてポットに参加すること。オープンリンプ(最初に入る側でのリンプ)はほぼ常に間違いです——プリフロップでポットを取れず、主導権を手放し、上級者に狩られます。ただしリンプが常に悪いわけではありません。スモールブラインドのコンプリート、他のリンパーの後ろでの投機的ハンドのオーバーリンプ、一部のライブやショートスタックの場面は正当な例外です。",
   category: "strategy",
   date: "2026-07-05",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "11分",
   emoji: "🚶",
@@ -159,7 +159,7 @@ export const POST: Post = {
 ---
 
 :::readnext[あわせて読みたい]
-/ja/blog/holdem-position-play | ポジションはどうポットを勝たせるか | /images/holdem-button-position-hero.webp
+/ja/blog/holdem-position-play | ポジションはどうポットを勝たせるか | /images/holdem-position-play-hero.webp
 /ja/blog/holdem-starting-hands-chart | どのハンドをプレーすべきか | /images/holdem-starting-hands-chart-hero.webp
 :::
 

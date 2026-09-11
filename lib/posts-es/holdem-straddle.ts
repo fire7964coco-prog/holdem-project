@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un straddle es una apuesta ciega voluntaria — normalmente el doble de la ciega grande (2× BB) — que un jugador pone antes de repartir las cartas, casi siempre desde UTG; en España se le llama 'matar la ciega'. Le compra al que lo pone la última acción y la opción de subir en preflop, doblando la apuesta de la mano. Para casi todo el mundo es una jugada -EV, y casi siempre queda restringido a los cash games según las reglas de la casa (prácticamente nunca en torneos).",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "💰",
@@ -49,7 +49,7 @@ Un straddle no es una subida en el sentido normal — es una ciega que resetea e
 
 ## Cómo funciona un straddle: quién actúa primero y último
 
-![Infografía de un botón de repartidor dorado y dos cartas privadas boca abajo detrás de un flop K♦ 7♣ 2♠, donde el botón actúa el último en postflop](/images/holdem-button-dealer-board.webp "Un straddle UTG vivo convierte el asiento a la izquierda de la ciega grande en una tercera ciega — el que lo pone ahora actúa el último antes del flop")
+![Orden de acción preflop con un straddle UTG de $4 sobre ciegas de $1/$2 — UTG+1 actúa primero, el straddler último, y la subida mínima sube a $8](/images/holdem-straddle-action-order.webp "Un straddle UTG vivo convierte el asiento a la izquierda de la ciega grande en una tercera ciega — el que lo pone ahora actúa el último antes del flop")
 
 Esta es la parte que las páginas de definiciones se saltan, y donde los jugadores nuevos se pierden. Un straddle **reordena el orden de acción en preflop.** Repasemos una partida estándar de $1/$2 donde UTG pone un straddle de $4:
 

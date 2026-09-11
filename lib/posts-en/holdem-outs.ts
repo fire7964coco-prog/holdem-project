@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "An out is any card left in the deck that improves your hand to a likely winner. Count them, then convert: multiply outs by 4 on the flop or by 2 on the turn to get your rough % to hit. A flush draw is 9 outs ≈ 36% by the river.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-09",
+  updated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🎯",
@@ -62,7 +62,7 @@ The counting only uses cards you can see. You don't subtract your opponent's unk
 
 ## Poker Outs Chart: Every Common Draw
 
-![An eight-high straight laid out in sequence on green felt, showing the run of cards an open-ended draw is chasing](/images/holdem-reading-straight-example.webp "An open-ended straight draw fills from either end — eight outs, the second-biggest common draw")
+![Two draw counts side by side — thirteen spades with four struck through beside a large 9, and an open-ended run marked at both ends beside a large 8](/images/holdem-outs-nine-and-eight.webp "Left, the flush draw; right, the open-ender — the two out counts every other draw is measured against")
 
 Memorize these and you'll recognize your out count on sight. This is the chart every winning player has burned into memory:
 

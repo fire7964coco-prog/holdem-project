@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.suits { position:absolute; top:38px; left:0; width:100%; text-align:center; color:#C9A227; font-size:18px; letter-spacing:.5em; opacity:.5; }
+
+.panels { position:absolute; top:88px; left:56px; width:1088px; display:flex; gap:32px; }
+.p { flex:1; height:470px; border-radius:20px; background:rgba(0,0,0,.28); border:2px solid rgba(201,162,39,.5); padding:26px 22px 22px; display:flex; flex-direction:column; align-items:center; position:relative; }
+.p.badbeat { border-color:rgba(57,255,122,.42); }
+.p h2 { font-size:34px; font-weight:900; letter-spacing:.08em; color:#F2EEE3; }
+.p.badbeat h2 { color:#39FF6A; }
+.p.cooler h2 { color:#C9A227; }
+.mark { position:absolute; top:22px; right:24px; width:46px; height:46px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:28px; font-weight:900; }
+.mark.up { background:rgba(57,255,122,.16); border:2px solid rgba(57,255,122,.7); color:#39FF6A; }
+.mark.eq { background:rgba(201,162,39,.16); border:2px solid rgba(201,162,39,.7); color:#C9A227; }
+
+.duel { display:flex; align-items:center; gap:18px; margin-top:34px; }
+.vs { color:#F2EEE3; font-size:20px; font-weight:800; opacity:.65; letter-spacing:.1em; }
+.hand { display:flex; gap:9px; }
+.rank { width:62px; height:86px; border-radius:9px; background:linear-gradient(175deg,#FDFBF4 0%,#F2EEE3 100%); color:#1a1a1a; font-size:42px; font-weight:900; display:flex; align-items:center; justify-content:center; box-shadow:0 6px 14px rgba(0,0,0,.45); }
+.rank.dim { opacity:.42; }
+.rank.hot { box-shadow:0 0 22px rgba(57,255,122,.55),0 6px 14px rgba(0,0,0,.45); }
+
+.down { color:#C9A227; font-size:40px; font-weight:900; margin-top:26px; line-height:1; }
+.after { display:flex; gap:9px; margin-top:22px; }
+.after .rank { width:56px; height:78px; font-size:38px; }
+.noimp { position:relative; margin-top:26px; width:74px; height:48px; display:flex; align-items:center; justify-content:center; }
+.noimp .ar { color:#C9A227; font-size:44px; font-weight:900; line-height:1; opacity:.40; }
+.noimp .slash { position:absolute; left:-6px; right:-6px; top:50%; height:9px; border-radius:3px; background:#c0392b; transform:rotate(-34deg); }
+.eqline { display:flex; align-items:center; gap:14px; margin-top:22px; }
+.eqline .rank { width:56px; height:78px; font-size:38px; }
+.eqline .sym { color:#C9A227; font-size:36px; font-weight:900; }
+.wordmark { position:absolute; right:44px; bottom:20px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.03em; opacity:.9; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="suits">&#9824; &#9829; &#9830; &#9827;</div>
+
+  <div class="panels">
+    <div class="p badbeat">
+      <h2>BAD BEAT</h2>
+      <div class="mark up">&#8593;</div>
+      <div class="duel">
+        <div class="hand"><div class="rank">A</div><div class="rank">A</div></div>
+        <div class="vs">vs</div>
+        <div class="hand"><div class="rank">7</div><div class="rank">7</div></div>
+      </div>
+      <div class="down">&#8595;</div>
+      <div class="after">
+        <div class="rank hot">7</div><div class="rank hot">7</div><div class="rank hot">7</div>
+      </div>
+    </div>
+
+    <div class="p cooler">
+      <h2>COOLER</h2>
+      <div class="mark eq">=</div>
+      <div class="duel">
+        <div class="hand"><div class="rank dim">K</div><div class="rank dim">K</div></div>
+        <div class="vs">vs</div>
+        <div class="hand"><div class="rank">A</div><div class="rank">A</div></div>
+      </div>
+      <div class="noimp"><span class="ar">&#8595;</span><span class="slash"></span></div>
+      <div class="after">
+        <div class="rank dim">A</div><div class="rank dim">A</div>
+      </div>
+    </div>
+  </div>
+  <div class="wordmark">&#9824; holdemmaster.com</div>
+</div>
+</body>
+</html>

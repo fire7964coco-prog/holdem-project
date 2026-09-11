@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Limpar é entrar num pote no pré-flop só pagando o big blind em vez de aumentar ou foldar. Open-limpar (ser o primeiro a entrar) é quase sempre um erro — você não consegue ganhar o pote no pré-flop, abre mão da iniciativa, e bons jogadores te punem. Mas limpar nem sempre é errado: completar o small blind, over-limpar mãos especulativas atrás de outros limpers, e alguns spots ao vivo e de stack curto são exceções legítimas.",
   category: "strategy",
   date: "2026-07-05",
-  updated: "2026-09-10",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🚶",
@@ -135,7 +135,7 @@ Em **jogos ao vivo de stakes muito baixas e passivos**, é um mundo diferente. S
 ---
 
 :::readnext[Continue lendo]
-/pt/blog/holdem-position-play | Como a posição ganha potes para você | /images/holdem-button-position-hero.webp
+/pt/blog/holdem-position-play | Como a posição ganha potes para você | /images/holdem-position-play-hero.webp
 /pt/blog/holdem-starting-hands-chart | Quais mãos jogar | /images/holdem-starting-hands-chart-hero.webp
 :::
 

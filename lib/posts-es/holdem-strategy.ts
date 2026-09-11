@@ -58,9 +58,9 @@ La magia no está en ninguna decisión aislada — está en que se *encadenan*. 
 
 ## Decisión 1 — ¿Dónde estoy sentado? (Posición)
 
-![Un jugador de póker en el botón del repartidor con cartas y fichas sobre el tapete verde, el asiento que actúa último en cada calle después del flop](/images/holdem-button-position-hero.webp "El botón actúa último en cada calle postflop — el asiento más rentable de la mesa")
+![Un jugador sentado en el botón con dos cartas boca abajo y un stack de fichas, el asiento que actúa último en cada calle postflop](/images/holdem-strategy-button-seat.webp "El botón actúa último en cada calle postflop — el asiento más rentable de la mesa")
 
-Antes incluso de mirar tus cartas, la información más importante ya está fijada: **tu asiento.** En Hold'em, el jugador que actúa *último* después del flop tiene una ventaja enorme — ve lo que hacen todos los demás antes de comprometer una sola ficha. Por eso el [botón](/es/blog/holdem-position-play "thumb:/images/holdem-button-position-hero.webp") es el asiento más rentable del juego y las ciegas, el menos.
+Antes incluso de mirar tus cartas, la información más importante ya está fijada: **tu asiento.** En Hold'em, el jugador que actúa *último* después del flop tiene una ventaja enorme — ve lo que hacen todos los demás antes de comprometer una sola ficha. Por eso el [botón](/es/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp") es el asiento más rentable del juego y las ciegas, el menos.
 
 Actuar último te deja hacer tres cosas que nadie en posición temprana puede:
 
@@ -91,7 +91,7 @@ La [tabla de manos iniciales](/es/blog/holdem-starting-hands-chart) convierte es
 
 ## Decisión 3 — Sube o foldea. Nunca solo limpees.
 
-![Infografía de un botón de repartidor dorado, dos cartas boca abajo, y un flop K♦ 7♣ 2♠ — el botón actúa último postflop](/images/holdem-button-dealer-board.webp "El open-limp invita a un bote multiway inflado sin iniciativa — sube para ganarlo ya, o foldea y espera un spot mejor")
+![Tres tarjetas numeradas bajo el titular RAISE / FOLD — OVER-LIMP con fichas y una marca de asiento, BIG BLIND con 1.5 ÷ 5.5 y 27%, SET-MINING con una pareja de cincos y 11.8%](/images/holdem-strategy-raise-or-fold.webp "Primero en el bote, sube o foldea — los únicos descuentos son el over-limp en posición, una defensa de ciega grande al 27% y el set-mining")
 
 Una vez que has decidido que vale la pena jugar una mano, hay una segunda decisión que la mayoría de los principiantes falla: *cómo* entrar al bote. La respuesta, casi siempre, es **subir — no limpear.**
 
@@ -121,7 +121,7 @@ En cuanto al tamaño, una apuesta pequeña del **25–35% del bote** funciona cu
 
 ## Decisión 5 — ¿Cuándo foldeo? (La decisión que más dinero salva)
 
-![Infografía cenital de una mesa de Hold'em con un board completo K♦ 7♣ 2♠ 9♥ 3♦, stacks de fichas y el botón del repartidor](/images/holdem-pub-players-table.webp "La jugada más rentable del póker es la que nadie nota — foldear una mano batida antes de que te cueste un stack")
+![Infografía de A♣ K♣ frente a un flop 2♥ 7♦ 9♠ de tres palos distintos, un check-raise y un banner dorado de FOLD](/images/holdem-strategy-fold-ace-high.webp "La jugada más rentable del póker es la que nadie nota — foldear una mano batida antes de que te cueste un stack")
 
 La agresión gana botes. **La disciplina conserva stacks.** La decisión que separa a los jugadores de tablas de los ganadores no es un hero call ni un farol de lujo — es el aburrido y repetido acto de foldear cuando estás batido.
 

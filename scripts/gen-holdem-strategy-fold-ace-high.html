@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.card { position:relative; width:96px; height:138px; background:linear-gradient(175deg,#FDFBF4 0%,#F2EEE3 100%); border-radius:10px; box-shadow:0 6px 14px rgba(0,0,0,.45),0 1px 3px rgba(0,0,0,.3); }
+.card .corner { position:absolute; top:7px; left:9px; font-size:25px; font-weight:800; line-height:1; text-align:center; }
+.card .corner .csuit { display:block; font-size:17px; line-height:1; margin-top:1px; }
+.card .big { position:absolute; top:50%; left:50%; transform:translate(-42%,-44%); font-size:60px; line-height:1; }
+.black { color:#1a1a1a; } .red { color:#c0392b; }
+
+.row { position:absolute; display:flex; align-items:center; gap:14px; }
+.left { top:96px; left:82px; }
+.right { top:96px; right:82px; }
+.lbl { position:absolute; color:#C9A227; font-size:16px; font-weight:800; letter-spacing:.22em; }
+.lbl.l { top:56px; left:84px; }
+.lbl.r { top:56px; right:84px; }
+.divider { position:absolute; top:78px; left:50%; width:2px; height:176px; background:linear-gradient(180deg,rgba(201,162,39,0),rgba(201,162,39,.6),rgba(201,162,39,0)); }
+
+.flow { position:absolute; top:286px; left:0; width:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:14px; }
+.chev { transform:rotate(90deg); }
+.step { display:flex; align-items:center; justify-content:center; height:74px; padding:0 34px; border-radius:14px; background:rgba(0,0,0,.28); border:2px solid rgba(201,162,39,.45); color:#F2EEE3; font-size:28px; font-weight:900; letter-spacing:.05em; }
+.step.you { border-color:rgba(46,125,70,.75); }
+.chev { color:#C9A227; font-size:36px; font-weight:900; }
+
+.verdict { position:absolute; left:50%; transform:translateX(-50%); bottom:96px; width:560px; height:96px; border-radius:18px; background:linear-gradient(90deg,#C9A227,#EFCB52); display:flex; align-items:center; justify-content:center; box-shadow:0 10px 28px rgba(0,0,0,.45); }
+.verdict span { color:#0B1F17; font-size:46px; font-weight:900; letter-spacing:.08em; }
+.note { position:absolute; left:0; bottom:70px; width:100%; text-align:center; color:#F2EEE3; font-size:22px; font-weight:800; opacity:.82; letter-spacing:.04em; }
+.wordmark { position:absolute; right:44px; bottom:20px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.03em; opacity:.9; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="row left">
+    <div class="card"><div class="corner black">A<span class="csuit">&#9827;</span></div><div class="big black">&#9827;</div></div>
+    <div class="card"><div class="corner black">K<span class="csuit">&#9827;</span></div><div class="big black">&#9827;</div></div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="row right">
+    <div class="card"><div class="corner red">2<span class="csuit">&#9829;</span></div><div class="big red">&#9829;</div></div>
+    <div class="card"><div class="corner red">7<span class="csuit">&#9830;</span></div><div class="big red">&#9830;</div></div>
+    <div class="card"><div class="corner black">9<span class="csuit">&#9824;</span></div><div class="big black">&#9824;</div></div>
+  </div>
+
+  <div class="flow">
+    <div class="step">CHECK-RAISE</div>
+    <div class="chev">&#10148;</div>
+  </div>
+
+  <div class="verdict"><span>FOLD</span></div>
+  <div class="wordmark">&#9824; holdemmaster.com</div>
+</div>
+</body>
+</html>

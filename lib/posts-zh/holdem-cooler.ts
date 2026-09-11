@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "cooler 就是你握着一手极强的牌、却输掉一个大底池，而且这手牌你根本不可能正确地弃掉——比如口袋 KK 撞上 AA，或者暗三条输给更大的暗三条。跟 bad beat 不一样：你自始至终都落后，没有哪张幸运牌把你「翻盘」；你打得完全正确，却还是输了。这是扑克里最诚实的一种灾难。",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-09",
-  masterUpdated: "2026-08-11",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "10 分钟",
   emoji: "🧊",
@@ -82,7 +82,7 @@ export const POST: Post = {
 > **快速回答**
 > 一整个家族：KK 撞 AA、set over set（暗三条对暗三条）、K 高同花对 A 高同花、葫芦对更大的葫芦或四条、顺子对更大的顺子。共同点是两边都强到长期看弃牌就是亏钱——所以这些牌你躲不掉。
 
-![信息图：绿色桌布上一个金色庄家按钮、两张盖着的底牌，和一副 K♦ 7♣ 2♠ 翻牌](/images/holdem-button-dealer-board.webp "当两名玩家握着的牌都强到没法弃时，cooler 就发生了——筹码进池，第二大的怪兽把钱付出去")
+![两名牌手把各自的整叠筹码同时推向绿色桌布中央——谁都弃不掉的那次碰撞](/images/holdem-cooler-stacks-collide.webp "当两名玩家握着的牌都强到没法弃时，cooler 就发生了——筹码进池，第二大的怪兽把钱付出去")
 
 cooler 有一整个能认出来的家族。在每一种里，*两*手牌都强到长期看弃牌就是亏钱的打法——这正是它们躲不掉的原因：
 

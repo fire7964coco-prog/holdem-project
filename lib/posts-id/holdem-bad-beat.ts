@@ -44,7 +44,7 @@ Mekanismenya selalu **suckout**: sebuah kartu — di flop, turn, atau river — 
 
 ## Bad Beat vs Cooler: Perbedaan yang Penting
 
-![Infografik pocket aces A♠ A♦ melawan pocket kings K♥ K♦ di board K♠ 7♦ 2♣ 8♥ 3♠ — set kings yang flop menghancurkan aces](/images/holdem-cooler-vs-badbeat.webp "Satu tabrakan, dua label — preflop, KK melawan AA adalah spot cooler klasik bagi si kings (itulah label pada gambar); begitu king kena flop, tangan yang sama menjadi bad beat bagi si aces, dan sisi itulah yang dibahas bagian ini")
+![Infografis yang memisahkan bad beat dari cooler — aces melawan sevens yang improve jadi set, di sebelahnya kings yang bertemu aces yang tak pernah perlu improve](/images/holdem-bad-beat-litmus.webp "Satu pertanyaan menyelesaikannya: kalau lawan harus improve untuk menang, itu bad beat — kalau ia sudah unggul, itu cooler")
 
 Orang memakai "bad beat" dan "cooler" secara bergantian, padahal keduanya berlawanan — dan mengetahui yang mana yang baru saja terjadi memberi tahu Anda apakah harus jengkel pada dek atau justru kagum padanya. Seluruh perbedaannya adalah **siapa yang unggul saat uang masuk, dan apakah suckout terjadi:**
 
@@ -80,7 +80,7 @@ Aturan praktisnya: bad beat menuntut **keduanya** — keunggulan besar (favorit 
 
 ## Contoh Bad Beat Klasik (Dengan Odds-nya)
 
-![Infografik tombol dealer emas dan dua kartu tertutup di belakang flop K♦ 7♣ 2♠ — button bertindak terakhir setelah flop](/images/holdem-button-dealer-board.webp "Di setiap bad beat matematika berpihak pada Anda — underdog sekadar menangkap kartu yang mereka butuhkan")
+![Infografis pocket aces sekitar 80% melawan pocket sevens sekitar 20%, keunggulan 4:1 yang dipatahkan set sevens di flop](/images/holdem-bad-beat-aces-vs-set.webp "Di setiap bad beat matematika berpihak pada Anda — underdog sekadar menangkap kartu yang mereka butuhkan")
 
 Setiap bad beat punya bentuk yang sama: Anda favorit, underdog butuh bantuan, dan bantuan itu datang. Versi paling umum, dengan perkiraan equity preflop/flop:
 

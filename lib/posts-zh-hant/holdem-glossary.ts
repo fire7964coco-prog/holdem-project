@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "這是一份大白話的德州撲克術語表，收的都是牌桌上真會碰到的詞，按你怎麼遇到它們來分組——下注動作、位置、牌型與牌面、玩家類型、錢，以及牌桌局面。先看下面那組「最容易搞混」的詞（過牌 vs 跟注、暗三條 vs 明三條、Cooler vs Bad Beat），再按分類隨便翻。有深入指南的術語會直接給你連結。",
   category: "glossary",
   date: "2026-07-22",
-  updated: "2026-09-10",
-  masterUpdated: "2026-08-30",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "12 分鐘",
   emoji: "📖",
@@ -119,7 +119,7 @@ export const POST: Post = {
 
 </div>
 
-完整的座位圖，之後在位置專篇會細講。
+完整的座位圖看[牌桌位置指南](/zh-hant/blog/holdem-positions "thumb:/images/holdem-positions-hero.webp")。
 
 ---
 
@@ -173,7 +173,7 @@ export const POST: Post = {
 > **快速解答**
 > 這 11 個綽號不是由弱到強的排行榜，而是「鬆或緊」乘上「兇或被動」兩條軸畫出來的座標。所以鯨魚跟魚落在同一格、石頭跟魚完全不同格，而緊兇、鬆兇根本不是弱手標籤——認錯格子，你就會去打錯的人。
 
-![德州撲克撲克室牌桌俯視圖，K♦ 7♣ 2♠ 9♥ 3♦ 牌面、籌碼與莊家按鈕](/images/holdem-pub-players-table.webp "每張桌子都是各種類型的混合——學會這些黑話，你就知道該鎖定誰、又該避開誰")
+![五張玩家類型卡片——魚（Fish）、鯨魚（Whale）、驢子（Donk）、石頭（Nit）、鯊魚（Shark）——每張都配著代表它的符號](/images/holdem-glossary-player-types.webp "每張桌子都是各種類型的混合——學會這些黑話，你就知道該鎖定誰、又該避開誰")
 
 檯子對面那些人，江湖上各種綽號的大集合。
 

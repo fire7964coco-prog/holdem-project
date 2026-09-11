@@ -45,7 +45,7 @@ Der Mechanismus ist immer ein **Suckout**: eine Karte – am Flop, Turn oder Riv
 
 ## Bad Beat oder Cooler – was ist der Unterschied?
 
-![Infografik von zwei Assen A♠ A♦ gegen zwei Könige K♥ K♦ auf einem K♠ 7♦ 2♣ 8♥ 3♠ Board – das gefloppte Set Könige knackt die Asse](/images/holdem-cooler-vs-badbeat.webp "Die Asse bekommen das Geld vorne rein und verlieren trotzdem – der König auf dem Flop schenkt den Pot dem Set")
+![Infografik, die Bad Beat und Cooler trennt – Asse gegen Siebenen, die sich zum Set verbessern, daneben Könige, die auf Asse treffen, die sich nie verbessern mussten](/images/holdem-bad-beat-litmus.webp "Eine Frage entscheidet: musste der Gegner sich verbessern, um zu gewinnen, war es ein Bad Beat – lag er schon vorne, war es ein Cooler")
 
 > **Kurze Antwort**
 > Entscheidend ist, **wer vorn lag, als das Geld reinging**. Beim Bad Beat warst du der Favorit und wurdest von einer Glückskarte überholt. Beim Cooler lagst du von Anfang an hinten und konntest die Hand trotzdem nicht folden – es kam gar kein Suckout. ==Set über Set ist deshalb meist kein Bad Beat==, sondern ein Cooler: Standen beide Sets schon, als das Geld reinging, führte das größere die ganze Zeit.
@@ -87,7 +87,7 @@ Die Faustregel: Ein Bad Beat braucht **beides** – einen großen Vorteil (ein k
 
 ## Welche Bad Beats gibt es? Die Klassiker mit ihren Odds
 
-![Infografik eines goldenen Dealer Buttons und zweier verdeckter Hole Cards hinter einem K♦ 7♣ 2♠ Flop – der Button agiert nach dem Flop als Letzter](/images/holdem-button-dealer-board.webp "Bei jedem Bad Beat war die Mathematik auf deiner Seite – der Underdog hat nur die Karte gefangen, die er brauchte")
+![Infografik: Ein Ass-Paar mit rund 80% gegen ein Siebener-Paar mit rund 20% – der 4:1-Vorsprung, den ein geflopptes Set der Siebenen knackt](/images/holdem-bad-beat-aces-vs-set.webp "Bei jedem Bad Beat war die Mathematik auf deiner Seite – der Underdog hat nur die Karte gefangen, die er brauchte")
 
 > **Kurze Antwort**
 > Fünf Formen decken fast alles ab: **Asse, die ein Set knackt** (~80%), **Asse gegen eine zufällige Hand** (~85%), ein **Overpair gegen einen Flushdraw** (~63% – der Grenzfall), ein **Runner-Runner-Draw** (~90%+) und der **One-Outer** (~96%). Das Muster ist immer identisch: Du bist der Favorit, der Underdog braucht Hilfe, und die Hilfe kommt an.

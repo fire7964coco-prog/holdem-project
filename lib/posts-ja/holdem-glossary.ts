@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "glossary",
   date: "2026-07-05",
   updated: "2026-09-11",
-  masterUpdated: "2026-08-30",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "12分",
   emoji: "📖",
@@ -119,7 +119,7 @@ export const POST: Post = {
 
 </div>
 
-座席の全体像は[テーブルポジションのガイド](/ja/blog/holdem-positions "thumb:/images/holdem-button-position-hero.webp")へ。
+座席の全体像は[テーブルポジションのガイド](/ja/blog/holdem-positions "thumb:/images/holdem-positions-hero.webp")へ。
 
 ---
 
@@ -173,7 +173,7 @@ export const POST: Post = {
 > **先に結論**
 > 相手につけるあだ名は、悪口ではなく「誰から稼ぎ、誰を避けるか」を決める地図です。基本の軸は2本——参加が多いか少ないか(ルース/タイト)、レイズが多いか少ないか(アグレッシブ/受け身)。ただし勝ち負け(シャーク)、金額の大きさ(ホエール)、打つ量(グラインダー)のように、別の軸で付いた呼び名もあります。
 
-![K♦ 7♣ 2♠ 9♥ 3♦ のボード、チップ、ディーラーボタンが並ぶポーカーパブのテーブルを真上から見た図解](/images/holdem-pub-players-table.webp "どのテーブルもタイプの寄せ集め——スラングを覚えると、狙うべき相手と避けるべき相手が分かる")
+![プレイヤータイプのタイル5枚——フィッシュ、ホエール、ドンク、ニット、シャーク——それぞれを示す記号つき](/images/holdem-glossary-player-types.webp "どのテーブルもタイプの寄せ集め——スラングを覚えると、狙うべき相手と避けるべき相手が分かる")
 
 フェルトの向こう側にいる人たちを指すあだ名の動物園。詳しい分類は[カモのガイド](/ja/blog/holdem-fish)にあります。
 
