@@ -11,6 +11,7 @@
 - **§5-I 5·6 = 미착수**(핸드오프 미결): `check:answer-echo` «포인터» 검사(3단 판정 결손/의존/브리지 · 레인 스캐너 구멍 2 = 절당 첫 블록 `break`·「表のとおり」형) · «선언 개수 ↔ 열거 개수» 검사. 첫 주사 42히트 중 29 오탐 → **셀프테스트 먼저**(게이트 튜닝 루프).
 - **게이트(헤드 편집 후)**: `audit:hard --locale=ja` 57/57 🔴 0 · 🟠 2(기존) · en·de·es·id·pt·zh·zh-hant × bubble·strategy 14회 전부 🔴 0·🟠 0 · `check:drift` 🔴 핵심 5 = ar(불변 · 사장님 지시 제외) · `check:answer-echo` echo 0 · 🟠 47(ko 2 · zh 22편 · zh-hant 7편 · **ja 0**) · 빌드 exit 0 · 708p.
 - 통지: 검수장 **MB-034** · 세 레인 HARDEN.md §6-0(헤드가 ja 5파일 · zh 2 · zh-hant 2 만짐 — 레인 회차 없음 · 다음 `lane:sync`로 받는다). 마지막 `lane:sync -- --apply`.
+- **추가(사장님 문의 → MB-035)**: 검수장 HANDOFF ⚠ 「회귀 🔴 2(id all-in-rules · pt strategy) = 본체 미커밋 97파일이라 판정 안 함」의 뜻 = 검수장 `assert-claims.mjs --regression`(앵커 1,248)이 (7) 회차 진행 중 트리를 읽어 보류한 것. 커밋된 main(`74b30071`)으로 재실행 → **🔴 2 = id·zh all-in-rules**(둘 다 `c4d2b3f3`의 의도 정정: §47A 플레이어별 · §14 머크+토너/캐시 분기 — MB-033 ①이 예고한 자리) · **pt strategy ✅**(09-09 `48d0b607` 형태로 통과). 결함 0 → 검수장에 재앵커 요청(MB-035).
 
 ---
 
