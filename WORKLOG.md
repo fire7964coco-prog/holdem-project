@@ -1,3 +1,17 @@
+## 2026-09-11 (4) — **ja 회차 10 머지·배포(`4291087c`) — 직답 «길이 규격» 축 종결 25자리/15편 + 헤드 §5-H 처리** (빌드 · 배포)
+
+사장님 지시 「ja 회차 10 끝났어, 머지해」. 프로토콜 §6 순서 그대로.
+- **머지**: `lane:status` 3레인 SAFE → `git merge harden-ja` = fast-forward `dc12b1a4`(레인 워크트리 클린 · 18파일 · ja 15편 + 브리프·진행·뱅크 3문서). 빌드 exit 0 · sitemap **lastmod 15 = ja 15편**(loc 변화 0). 🪶 빌드 로그를 `tail -15`로 받아 «N blog posts» 행을 못 봤다 — 대신 sitemap loc diff 0으로 편수 불변을 확인. **다음부터 빌드는 전체 로그를 파일로 받아라.**
+- **§5-H 1 게이트 결함 = 고쳤다**: `check:answer-echo` LEN이 로케일 무관 90~170 → 로케일 표(ja·ko 90~170 · zh·zh-hant **60~110** = `hardening-protocol` §4 정본). 🔴 **레인 주장 «zh·zh-hant 약 200건 오탐 · 대부분 72~89자»는 절반만 맞다** — 실측 분포 zh 중앙값 **107**(p75 119 · max 168) · zh-hant **93**(p75 102). 단일 규격이면 zh 68·zh-hant 131이 «아래로» 걸리고, 프로토콜 규격이면 **zh 137 · zh-hant 53**이 «위로» 걸린다. 부채가 사라진 게 아니라 «어느 쪽이 걸리는가»가 바뀐다 → 헤드 미결 «zh 상한 110이 맞는가»(핸드오프). ja 378블록 전수 규격 내 · selftest 14/14.
+- **§5-H 2·4 EN-먼저 = 등재**: `en-first-queue` §2-C **J#6**(short-stack→pot-odds 링크 0 · EN 실측 bubble×4·icm×3·tournament·when-to-fold) · **J#7**(tournament 표 Turbo/Mystery Bounty/Add-on 행 부재 · EN 본문 turbo 0회·Mystery Bounty 0회 실측).
+- **§5-H 6·7 정본 승격**: `rakko-playbook` §1-A 「앵커를 붙이면 죽는 낱말」 반대 사례(`ハンドフォーハンド` 50→10 · suggest 오염 0) + 판별식 · `ja-notation` §7-A ポーカーチェイス 상시 함정.
+- **§5-H 8**: 루트 0바이트 파일 8개 삭제(`검수장`·`실측일`·`예정`·`종료`·`진행중`·`출처:`·`**승격`·`🔴` · 전부 size 0 확인 후 · git 미추적).
+- **§5-H 3·5·10 = 헤드 판정 대기 유지**(pot-odds L194 中黒 · showdown マック FAQ 신설 · bubble 「複数シート」 4자리). §2-J(포인터 블록 3자리 · 常体 판정 · 何で 잔여)는 레인 회차 11 몫 — 정본은 진행 파일.
+- **라이브 확인 ✅**(push 후 67초 · Playwright `page.content()` + sitemap은 `res.text()`): split-pot 「引き分けのときディーラーがポットを等分すること」 · tiebreak 「第1・第2キッカーまで同じなら」 2/2 · sitemap split-pot lastmod 2026-09-11.
+- 통지: 검수장 MB-032 · 세 레인 HARDEN.md. 마지막 `lane:sync -- --apply`.
+
+---
+
 ## 2026-09-11 (3) — **`check:answer-echo` 🔴 8건 전건 해소(zh 4 · zh-hant 4) — 직답 블록 재서술** (빌드 · 배포)
 
 핸드오프 2순위 첫 행. 규율 = §3-J 1(«삭제»가 아니라 «재서술» · 포인터화 금지) · §3-J 2(고칠 때마다 게이트 재실행). 전건 «블록 쪽»을 다시 썼고 본문은 손대지 않았다. 수치·룰(TDA re-opening · 3bet-or-fold · board plays)은 불변.
