@@ -116,6 +116,12 @@ EN 12편 정정 → 7로케일(de·es·id·ja·pt·zh·zh-hant) 전파 완료. 1
 
 ---
 
+### 2-D. ja 회차 11이 올린 것 (2026-09-11 · 헤드 머지 시 처리)
+
+- **J#8** 🟠 **미결** — `ept-barcelona-2026-guide` **L84** 비교표 「Events range | €330 – €100,000」 · **L92** H2 「From €330 to €100,000」 ↔ 그 절 이벤트 표 7행의 최저가는 **€825**(PokerStars Cup)이고 €330 이벤트는 본문에 행이 없다. ja는 파일L90·L98 동형(레인은 직답 블록만 €825로 맞춰 **블록↔H2가 갈려 있다**). 🔴 **€330의 1차 출처가 이 세션엔 없다** — PokerNews 일정 페이지를 WebFetch로 물었더니 «€825 미만 없음 · 최저 €1,650»이라 답했으나 **요약 응답이라 근거로 못 쓴다**(§12-B). 처방 ① €330 사이드 이벤트의 공식 일정(pokerstarslive.com) 축어 확보 → 본문에 한 줄 ② 못 찾으면 H2·비교표를 **€825**로. **EN 먼저, 그 다음 8로케일**(ja 블록 포함). 🪶 같은 페이지가 「EPT Mystery Bounty €1,650 Aug 27–28」로 읽혔다(우리 표 €3,250 Aug 25–27) — **미검증 신호**, 이 글 다음 검수 때 공식 일정으로 전수 대조.
+- **J#9** ✅ **종결(2026-09-11 (8))** — `holdem-bubble` tldr 「on a satellite bubble you fold everything, even aces」에 **multi-seat** 한정어(본문 L147은 있고 tldr만 없었다 · 싱글시트/승자독식 새틀라이트에선 조언이 반대 = D유형). EN + de·es·id·ja·pt·zh·zh-hant(각 본문이 쓰는 표기 승계).
+- **J#10** ✅ **종결(2026-09-11 (8))** — `holdem-strategy` 「five of the six map directly onto the five decisions」인데 표의 Decision 태그는 4행뿐. 「Being too passive」 행 fix 셀에 **(Decision 4)** (判断4 = 플랍에서 베팅을 이어가는가 · 수동성의 반대). EN + 7로케일 동형 처리. ko는 표 구조가 달라 대상 아님.
+
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - 🔴 **EN 56편 `updated` 필드 전수 대조** — zh-hant가 **세 회차 연속** 청구했다. 이 필드가 낡으면 `check:drift`가

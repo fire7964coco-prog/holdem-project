@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Jede gewinnende Texas-Hold'em-Entscheidung reduziert sich auf fünf wiederholbare Fragen: Wo sitze ich (Position), ist diese Hand spielenswert, raise oder fold ich (nie limpen), bette ich auf dem Flop weiter, und wann lasse ich los? Ein Tight-Aggressive-Spieler, der diese fünf gut beantwortet, foldet ~80% der Hände preflop, spielt sie aggressiv, wenn er sie spielt, und schlägt fast jedes Freizeitspiel – ohne auswendig gelernte Tippliste.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-09",
+  updated: "2026-09-11",
   masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "14 Min.",
@@ -175,7 +175,7 @@ Wenn du Strategie auf das herunterbrichst, was neue Spieler wirklich Geld kostet
 |:---|:---|:---|
 | **Zu viele Hände spielen** | Schwache Starthände floppen schwache Made Hands, die dich postflop kosten | Folde ~80% preflop (Entscheidung 2) |
 | **Zu viel callen** | Ein Call gewinnt nur am Showdown – er foldet nie jemanden raus | Raise oder fold; hör auf, „zum Sehen zu callen“ (Entscheidung 3) |
-| **Zu passiv sein** | Gewinner betten und raisen um Value; Passivität gewinnt winzige Pots und verliert große | Nimm die aggressive Linie, wenn du sie hast |
+| **Zu passiv sein** | Gewinner betten und raisen um Value; Passivität gewinnt winzige Pots und verliert große | Nimm die aggressive Linie, wenn du sie hast (Entscheidung 4) |
 | **Position ignorieren** | Müll out of position zu spielen heißt, jede Street zu raten | Spiele tighter früh, looser spät (Entscheidung 1) |
 | **Draws ohne Odds jagen** | „Hoffnungs“-Calls, die der Pot nicht rechtfertigt | Prüfe Pot Odds vor jedem Draw-Call (Entscheidung 5) |
 | **Auf Tilt spielen** | Emotionale Entscheidungen verbrennen eine gute Session | Hör auf, wenn du nicht klar denkst |

@@ -151,7 +151,7 @@ Jika Anda mengupas strategi hingga apa yang benar-benar merugikan pemain baru, i
 |:---|:---|:---|
 | **Memainkan terlalu banyak tangan** | Starting hand lemah menjadi made hand lemah di flop, lalu merugikan Anda di postflop | Fold ~80% preflop (Keputusan 2) |
 | **Terlalu banyak call** | Sebuah call tak punya fold equity — ia tak pernah membuat siapa pun fold, jadi ia harus jadi atau sampai showdown dalam keadaan unggul | Raise atau fold; berhenti "call untuk melihat" (Keputusan 3) |
-| **Terlalu pasif** | Pemenang bet dan raise untuk value; pasivitas menang pot kecil dan kalah pot besar | Ambil line agresif saat Anda memang punya tangannya |
+| **Terlalu pasif** | Pemenang bet dan raise untuk value; pasivitas menang pot kecil dan kalah pot besar | Ambil line agresif saat Anda memang punya tangannya (Keputusan 4) |
 | **Mengabaikan position** | Memainkan sampah di luar position berarti menebak setiap street | Main lebih ketat di awal, lebih longgar di belakang (Keputusan 1) |
 | **Mengejar draw tanpa odds** | Call "harapan" yang tak dibenarkan pot | Cek pot odds sebelum setiap call draw (Keputusan 5) |
 | **Bermain saat tilt** | Keputusan emosional membakar sesi yang bagus | Berhenti saat Anda tak berpikir jernih |

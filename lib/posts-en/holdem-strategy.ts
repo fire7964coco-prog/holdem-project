@@ -150,7 +150,7 @@ If you strip strategy down to what actually loses money for new players, it's th
 |:---|:---|:---|
 | **Playing too many hands** | Weak starting hands flop weak made hands that cost you postflop | Fold ~80% preflop (Decision 2) |
 | **Calling too much** | A call has no fold equity — it never folds anyone out, so it has to hit or reach showdown ahead | Raise or fold; stop "calling to see" (Decision 3) |
-| **Being too passive** | Winners bet and raise for value; passivity wins tiny pots and loses big ones | Take the aggressive line when you have it |
+| **Being too passive** | Winners bet and raise for value; passivity wins tiny pots and loses big ones | Take the aggressive line when you have it (Decision 4) |
 | **Ignoring position** | Playing junk out of position means guessing every street | Play tighter early, looser late (Decision 1) |
 | **Chasing draws without odds** | "Hope" calls that the pot doesn't justify | Check pot odds before every draw call (Decision 5) |
 | **Playing on tilt** | Emotional decisions torch a good session | Quit when you're not thinking clearly |

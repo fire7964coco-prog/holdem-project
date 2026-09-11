@@ -1,3 +1,19 @@
+## 2026-09-11 (8) — **ja 회차 11 머지·배포(레인 `9fbe7b6e` → ff `0b7ea301` · sitemap `d2056bcb`) — 직답 «자기완결성» 축 16자리/13편 + 헤드 §5-I 11건 처리(EN-먼저 J#9·J#10 고침 · J#8 미결)** (빌드 · 배포)
+
+사장님 지시 「ja 회차 11 끝났어, 머지해」. 프로토콜 §6 순서 그대로.
+- **머지**: `lane:status` 3레인 SAFE(behind 0) → `git merge --ff-only harden-ja` = **fast-forward `0b7ea301`**(레인이 이미 main `4d0868b6`을 머지해 둔 상태 · 16파일 · ja 13편 + 브리프 `ja-회차11-직답자기완결.md`·진행·뱅크 `ja-answer-blocks` §6). 빌드 **전체 로그를 파일로**(지난 회차 교훈) → exit 0 · **70 blog posts + 525 intl + 708p** · sitemap lastmod **6**·loc 0(13편 중 7편은 (7) 회차가 이미 09-11로 올려 둔 것). sitemap 커밋 `d2056bcb` push 15:17 → **라이브 ✅**(Playwright `page.content()` · fish 「カモはオービット…1〜2周のうちに正体を現します」 · glossary 「お金とゲームの言葉は…2つの形式」に分かれます」 2/2 · sitemap `res.text()` ja/holdem-fish lastmod 09-11).
+- **§5-I 0 = 고쳤다(EN-먼저 J#9)**: `holdem-bubble` tldr 「on a satellite bubble you fold everything, even aces」 — **EN 본문 L147은 「multi-seat」+승자독식 예외가 있고 tldr만 없었다** → 8로케일(en·de·es·id·ja·pt·zh·zh-hant) tldr에 각 본문이 쓰는 표기 승계(「複数シートの」·「mit mehreren Plätzen」·「de varios asientos」·「multi-kursi」·「de várias vagas」·「送出多个席位的」·「多席位」). 레인 주장 «4자리가 아니라 3자리» = 실측 일치(tldr 부재). EN `updated` 09-11 · 7로케일 `masterUpdated`·`updated` 09-11. ko는 bubble 글이 없다.
+- **§5-I 3 = 고쳤다(EN-먼저 J#10)**: `holdem-strategy` EN L160 「five of the six map directly onto the five decisions」인데 표 태그 4행 — **EN 동형**. 「Being too passive」 행 fix 셀에 **(Decision 4)**(判断4 = 플랍 베팅 지속 · 수동성의 반대) → EN + 7로케일. ko 전략은 판단 태그 표가 없어 대상 밖.
+- **§5-I 2 = 고쳤다**: 「何で」 3자리 전부 「どのハンドで」(`3bet-pot-cbet` L159 · `monotone-board-strategy` L102 · `paired-board-strategy` L201 · GTO 시리즈라 헤드 소유). 렌즈 갈림(네이티브 «오독» vs 교열 «정상 なにで»)은 **선례 §3-K 8-ⓐ**(회차 10 「何でシューブし」→「どのハンドレンジで」)로 가름 — 직전 문장이 「A-Q・A-J・K-Qでコール」라 «무엇으로»가 의도인데 「なんで(왜)」 독해가 자연스러워 위험. `updated` 09-11(내용 변경) · `masterUpdated` 불변.
+- **§5-I 1 = J#8 미결 등재**(`en-first-queue` §2-D): `ept-barcelona` L84 비교표·L92 H2 「€330」 ↔ 이벤트 표 최저 **€825**(EN·ja 동형 · 레인은 블록만 €825로 맞춰 **ja 블록↔H2가 갈려 있다**). 🔴 **€330의 1차 출처를 못 잡았다** — PokerNews 일정 페이지 WebFetch 응답 «€825 미만 없음·최저 €1,650 · Mystery Bounty €1,650 Aug 27–28»는 **요약이라 근거 불가**(§12-B). 처방 ①공식 일정 축어로 €330 사이드 이벤트 한 줄 ②못 찾으면 H2·표를 €825로 — EN 먼저. 🪶 Mystery Bounty 값(우리 표 €3,250 Aug 25–27)도 미검증 신호로 같은 자리에 적어 뒀다.
+- **§5-I 4 = 범위 판정**: 규율은 «블록만 떼면 답이 0»(자기완결성)이지 «절 상대 지시어 금지»가 아니다 — glossary 「この節」 2자리는 답이 앞에 있으므로 대상 아님·손대지 않음. 진행 파일 §5-I 머리에 기록.
+- **§5-I 7·8·9 = 정본 승격**: `hardening-protocol` §4 직답 행에 **길이 산식 문장**(장식·URL·이미지·디렉티브 제거 → 공백 전삭 → 라벨 제외 · §3-K 4 두 번째 재발) + §5 ③에 «렌즈 프롬프트에 축어로» · `rakko-playbook` §1-A **세 번째 방향 «복합어 조각»**(`必要勝率` 20 → `ポーカー 必要勝率` 170 · 오염률로 원리상 못 봄 → **판별 순서 «방향 → 오염률»**) · `ja-notation` **§7-B `アンティ`**(6,600 = suggest 30/30 포커 밖 · 전방일치 오염 · `ポーカー アンティ` 170).
+- **§5-I 5·6 = 미착수**(핸드오프 미결): `check:answer-echo` «포인터» 검사(3단 판정 결손/의존/브리지 · 레인 스캐너 구멍 2 = 절당 첫 블록 `break`·「表のとおり」형) · «선언 개수 ↔ 열거 개수» 검사. 첫 주사 42히트 중 29 오탐 → **셀프테스트 먼저**(게이트 튜닝 루프).
+- **게이트(헤드 편집 후)**: `audit:hard --locale=ja` 57/57 🔴 0 · 🟠 2(기존) · en·de·es·id·pt·zh·zh-hant × bubble·strategy 14회 전부 🔴 0·🟠 0 · `check:drift` 🔴 핵심 5 = ar(불변 · 사장님 지시 제외) · `check:answer-echo` echo 0 · 🟠 47(ko 2 · zh 22편 · zh-hant 7편 · **ja 0**) · 빌드 exit 0 · 708p.
+- 통지: 검수장 **MB-034** · 세 레인 HARDEN.md §6-0(헤드가 ja 5파일 · zh 2 · zh-hant 2 만짐 — 레인 회차 없음 · 다음 `lane:sync`로 받는다). 마지막 `lane:sync -- --apply`.
+
+---
+
 ## 2026-09-11 (7) — **EN-먼저 18건 회차 — EN 12편 정정 + 7로케일 83파일 전파 · 렌즈 4종+2차 교열 · 배포** (빌드 · 배포)
 
 사장님 「진행해」(핸드오프 다음 할 일 2번). 범위 = `en-first-queue` §2-A ar 11 + §2-B ja 5 + §2-C ja 2. 🔴 **ar·fr은 사장님 지시로 제외**(「경화·검수 안 한 언어는 일단 제외」) → 7로케일(de·es·id·ja·pt·zh·zh-hant).
