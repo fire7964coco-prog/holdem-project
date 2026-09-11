@@ -336,6 +336,8 @@ D유형(전략적 유해 조언)·F유형(사실 오류)에 시간을 쓴다) **
 | **`updated` 스탬프가 낡았나 (전 로케일)** | `docs/stamp-drift-audit-2026-09-10.md` ← 커밋 55개 전건 판정표. 🔴 **정책 정본은 `settled-decisions` §1-C** — 이 문서는 «적용 부채»만 담는다 |
 | 지난 핸드오프 원문(경위 추적) | `docs/handoff-archive/` ← 통독 금지, grep으로 찾을 때만 |
 | 커뮤니티 손댈 때 | `docs/community-status.md` · `supabase/schema.sql` |
+| **화면·레이아웃·모바일 표시를 본다 (캡처 부탁 금지)** | 스킬 `screen-review`(`.claude/skills/screen-review`) ← 레포 Playwright로 찍고 Read로 본다 · 디자인 기준 `docs/DESIGN.md`(값 정본 `app/globals.css`) |
+| **새 도구·스킬·MCP를 깔까 — 채택·후보·기각 판정표** | `../홀덤관련스킬방/외부도구-카탈로그-lazyowen.md` §1 ← 기각 사유 있는 건 재제안 금지 · 자동/수동 안내 = `../홀덤관련스킬방/스킬-사용안내.md` |
 | 성능·빌드·GSC 루틴 | `.cursor/rules/tech.mdc` |
 | Windows 함정 | `docs/windows-notes.md` |
 | 영상 | `docs/video-workflow.md` |
