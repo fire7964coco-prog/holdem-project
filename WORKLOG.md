@@ -6,6 +6,7 @@
 - **MA-136(검수장)**: ja short-stack 3자리 + ept L407. 🪶 레인 실측 정정 — `af6ca275`는 한정어를 블록에 넣었고 회차 11이 압축; 무한정 잔존 자리는 본문 L122 → 축어 복원. 회신 MB-038.
 - **실행 = Opus 서브 7(로케일별 병렬 · exact-match 1회 단언 · 스탬프 규율) + 교열 렌즈 1(전체 diff 263KB)**. 렌즈 8건: HIGH 2(zh showdown 「在那之前」 **의미 역전** · EN bubble L139 Tournament 누락) · MEDIUM 3(zh bubble 스톨링 문장 자기모순(기존) · KPM desc 「still open」 ↔ 본문 「may still show places」 → 6로케일 「may still」 + pt 표 셀 되돌림 · zh-hant c-bet 「唯一」 탈락) · LOW 3(ja 「。 」 공백 · zh-hant 굵게 · EN tiebreak 「Rule 85」 한정어 = **보류**(EN updated 올리면 4로케일 가짜 드리프트)). 7건 반영.
 - **게이트**: audit:hard en 56/56·de 43/43·es 60/60·id 42/42·ja 57/57·pt 42/42·zh 56/56·zh-hant 57/57 전부 🔴 0(🟠은 기존 C2) · check:drift 🔴 6 = ar(제외) · answer-echo echo 0 · 백틱 = HEAD 동일 · **check:meta 🔴 1(EN KPM desc 174자)** → 157자 → 렌즈 반영 후 168 → 159(de 161→147 · pt 163→159 · 꼬리 축약) · 빌드 exit 0 · 70+525 · sitemap lastmod 32 · loc 0.
+- **마감 `lane:sync`**: zh·zh-hant ✅ `a60ae683` · **ja 🔴 BLOCKED** — 레인 워크트리에 회차 12 진행 중(브리프 미커밋 + 7편) · 겹침 `texas-holdem-rules-for-beginners.ts` 1개(다른 hunk) → HARDEN.md에 «커밋 뒤 merge main» 지시 · 헤드는 레인 커밋 통지 후 재실행. 🪶 §6-0을 헤드가 어긴 셈이다(레인 진행 중 파일 1개를 만졌다) — 착수 전 `lane:status`가 아니라 **레인 워크트리 `git status`**를 봐야 진행 중 회차가 보인다(`lane:status`는 «behind»만 본다).
 - 🪶 교훈: ① desc를 고칠 땐 **길이를 같은 스크립트에서 단언**하라(2회 재빌드) ② 서브 7개가 같은 스크래치패드를 써 pt 워커 스크립트가 덮어써졌다(무해 · write 전 exit 구조) — 병렬 서브에는 **전용 하위 폴더**를 지정하라 ③ bash 헤레독 안에 긴 JS를 넣지 마라(파싱 실패 → 아무것도 안 돈다) — 스크립트는 파일로.
 
 ---
