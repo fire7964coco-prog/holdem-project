@@ -4,6 +4,7 @@
 - **자산**: 프로토콜 §1-B 행 + **§7-F**(쓰는 파일 = EN·ar·de·es·fr·id·pt·이미지·scripts · ja/zh/zh-hant는 «상대 워크트리 미커밋과 안 겹칠 때만» · mailbox/핸드오프/정본은 §5 요청) · §6-1 머지 순서에 queue · 진행 파일 `docs/harden-queue-진행.md`(회차 Q1~Q9 = 재료 포인터만) · `lane-sync.mjs` OWNED.queue(셀프테스트 25/25) · `pre-commit` 훅 queue 자리(셀프테스트 8/8 · 실사고 쌍 `74b30071→35fe9f57` 재현) · `hooks:install` · 상태표시줄 MAP 🧰 · worktree `../Holdem-queue`(`harden-queue`) + `node_modules` junction + 비추적 `HARDEN.md`.
 - **규율 신설**: 헤드는 이제 «글을 고치지 않는다»(예외 KO 신규 발행 · 한 줄 긴급 정정). 정본 = 프로토콜 §1-B.
 - 🔴 **발견**: 핸드오프 「ja 회차 13 착수 지시 대기」는 낡은 문장 — 워크트리에 미커밋 13파일 + 브리프 `ja-회차13-개수열거.md`(진행 중). 핸드오프 정정 + queue 진행 파일 §2 미결로.
+- **사장님 문의 «모델 제안 · 2세션이면 되나 · Q3 작업량»** → 회차 표에 «모델 · 세션» 열 추가(Fable은 Q4-a·Q5-a·Q5-b의 B 구간뿐 · 합계 12~13세션). **Q3 실측 = 회차 불요**: EN 57파일 중 «마지막 커밋 > updated» 6 · 창(09-08 이후) 1 = icm(판정 완료) · 창 밖 5 = CSS·별표·index → §1-C 기계적 변경. `en-first-queue` §3 첫 불릿 종결 표시 · 재현 셸은 Q7-a `check:stamp`로. «전수 검수/경화» 대안은 이미 결재된 자리 — 검수 = 검수장 en 레인(MA-123) · 경화 = 끝난 것으로 결재(§1-B) → queue에서 다시 열지 않는다.
 
 ---
 

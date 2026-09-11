@@ -130,11 +130,7 @@ EN 12편 정정 → 7로케일(de·es·id·ja·pt·zh·zh-hant) 전파 완료. 1
 
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
-- 🔴 **EN 56편 `updated` 필드 전수 대조** — zh-hant가 **세 회차 연속** 청구했다. 이 필드가 낡으면 `check:drift`가
-  **모든 로케일을 영구히 ✅로 통과**시킨다(게이트가 원리상 못 보는 방향).
-  판별식 = `git log --format="%h %ad" --date=short -- lib/posts-en/<slug>.ts`에서 **스타일 전용**(`8d2aba44`·`c8d8c75c`)·**메타 전용**(`dde72b36`) 커밋을 제외한 최신 날짜.
-  이미 잡힌 6건: `holdem-probability` 08-11→**08-12**(`1d427c6d`) · `holdem-short-stack` 08-13→**08-21**(`8db7767b`) ·
-  `korea-poker-marathon-2026` 08-31→**09-07**(`1f34f3e5`) 외 3. 🔴 **낱개로 고치지 말고 전수 회차로.**
+- ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.
 - 🟠 EN 경쟁 페이지 언급 문구 잔존(rake:48 «no single competitor page» 등 3곳) — EN도 지울지 판정
 - 🟠 EN↔pt FAQ 개수 드리프트(bubble 9↔7 · short-stack 9↔7 · tournament 9↔8 · icm 8↔7) — **위 §0-B와 한 판**
 - 🟠 en `holdem-game-order`가 「who bets first」 계열 51노출을 못 받는다 — title·seoTitle 어디에도 who bets/goes/acts first가 없다
