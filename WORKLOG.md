@@ -1,3 +1,17 @@
+## 2026-09-11 (10) — **ja 회차 12 머지·배포(레인 `d847d2e1` ff · sitemap `2c67693b`) — 직답 «포인터» 축 7편 11자리 + 헤드 §5-J 14건 처리(훅 설치본 결함 재발 차단 · EN-먼저 1건 8로케일)** (빌드 · 배포 · 라이브 확인)
+
+사장님 지시 「ja 회차 12 끝났어, 머지해」. 프로토콜 §6 순서 그대로.
+- **머지**: 레인이 main(`79ebf676`)을 이미 머지·커밋(`75b0ce82` → `d847d2e1`) → `git merge --ff-only harden-ja` fast-forward. 겹쳤던 `texas-holdem-rules-for-beginners`는 레인이 충돌(masterUpdated)을 헤드 판으로 풀었고 두 hunk(헤드 NL 최소 벳 2자리 · 레인 L422 포인터) 전부 보존 실측. 빌드 exit 0 · 70+525 · 708p · sitemap lastmod 20(ja 7 + 앞 회차 잔여 · 커밋 메시지의 「7」은 과소) · loc 0 → push 17:07 → **라이브 ✅**(ja rake 「レーキの取り方(徴収の仕方)は4種類あり」 · sitemap ja/holdem-rake lastmod 09-11).
+- **§5-J 1 = 훅 설치본 결함 — 고쳤다**: 레포본 `scripts/hooks/pre-commit`에는 머지 커밋 예외(MERGE_HEAD)가 있는데 설치본 `.git/hooks/pre-commit`엔 없었다(`diff` 19a20,21 · 09-09 `4d0868b6`에 기록 후 **레포본만 고치고 `hooks:install`을 안 돌려 재발** → 레인이 HARDEN_SKIP_SYNC=1로 우회). `npm run hooks:install` 재실행(diff 0) + **`hooks:selftest`에 설치본↔레포본 대조 항목 추가**(6/6 · 갈리면 🔴 + 처방 문구) — 셀프테스트가 레포본만 검증하던 사각을 메웠다. 🪶 삽입 중 `node -e` 안의 `\\r\\n`이 실제 줄바꿈으로 들어가 정규식이 갈라졌다 → 파일 스크립트로 재수정(교훈 ③ 재확인).
+- **§5-J 2 = EN-먼저(8로케일)**: rules-for-beginners 본문 「No-Limit is the easiest to understand (bet whatever you want)」 — 헤드가 (9)에서 표·FAQ만 고치고 이 문장을 놓쳤다(같은 글 안 하한 유무 공존 · 레인 발견). EN 「bet anything from the big blind up to your whole stack」 + de·es·id·ja·pt·zh·zh-hant(zh-hant는 직답 L224 + 본문 L234 2자리 · 블록 75→80자 규격 내). 게이트 8로케일 beginners 🔴 0.
+- **§5-J 3·4 = 판정(EN 유지 · ja만)**: implied-odds 블록 «丸見え» 축 — 규칙은 참·본문 L126 뒷받침 → EN 불변, ja 블록만 2차 교열 대안(19자 삭제 → 150자). wpt 「史上最大」 — EN 「fields」 복수(페스티벌 합계) 유지, **ja L190만 단수화 되돌림**(「フェスティバル全体のフィールドは」) · de·es·id·pt 복수 유지 실측.
+- **§5-J 8·9 = 판정**: 비율 표기 — **표 셀 「N:1」 유지·본문/블록 「N対1」**(EN 동형 · 기호 표기는 표 관례 · 행 전체 교체 불요). 「身だしなみ」 hygiene — 8로케일 grep 결과 **ja 단독**(다른 로케일은 다른 문면) → 회차 13.
+- **§5-J 5·7 = 게이트 미착수**(핸드오프 미결 갱신: 포인터 검사 1차 신호 = «H2 개수어 N ↔ 블록 열거 수» · 브리지 정의 «마지막 한 문장 + H2 약속 항목 전부» · 명제 단위 중복 신호 별도) · **6 = 이미 승격됨**(09-11 (8)).
+- **게이트(헤드 편집 후)**: audit:hard ja 57/57 🔴 0 · en·de·es·id·pt·zh·zh-hant beginners 🔴 0 · answer-echo echo 0 · hooks:selftest 6/6 · 빌드 exit 0.
+- 통지: 검수장 **MB-039** · ja HARDEN.md §6-0(헤드가 ja 3편 만짐: beginners·implied-odds·wpt). 마지막 `lane:sync -- --apply`.
+
+---
+
 ## 2026-09-11 (9) — **우편함 회차 — 미처리 4건(S-013 · MA-130 · MA-131 · MA-136) 전건 이행: 솔버 랜딩 8행 삭제 · EN-먼저 9편 + 7로케일 전파(78파일) · ja MA-136 2건 · 교열 렌즈 7건** (커밋 `522b57f8` · 빌드 · 배포 · 라이브 확인)
 
 사장님 「우편함 확인 후 밀린 거 있나 봐봐」 → 「진행해」. `mailbox-check` 미처리 7건 중 수신 4건(가장 오래된 S-013 09-09부터) — WORKLOG·핸드오프·발신함 어디에도 언급 없음 = 전부 미착수 확인 후 실물 대조.

@@ -205,7 +205,7 @@ Cuando la gente dice "Texas Hold'em", casi siempre se refiere al **No-Limit Hold
 | **Fixed-Limit** | Solo incrementos fijos (una apuesta pequeña fija, que se dobla en turn/river) | Mesas de casino más antiguas; menos vaivenes grandes |
 | **Pot-Limit** | Hasta el tamaño actual del bote | Raro en Hold'em; el estándar en Omaha (PLO) |
 
-Para principiantes, ==g:asume que juegas No-Limit salvo que alguien diga lo contrario.== El No-Limit es el más fácil de *entender* (apuesta lo que quieras) pero el que más castiga *jugarlo* mal, porque un solo call equivocado puede costarte el stack entero. Justo por eso importan tanto la sección de pot odds de abajo y tus [acciones de apuesta — pasar, igualar, subir, retirarse](/es/blog/holdem-betting-actions).
+Para principiantes, ==g:asume que juegas No-Limit salvo que alguien diga lo contrario.== El No-Limit es el más fácil de *entender* (apuesta lo que quieras, desde la ciega grande hasta todo tu stack) pero el que más castiga *jugarlo* mal, porque un solo call equivocado puede costarte el stack entero. Justo por eso importan tanto la sección de pot odds de abajo y tus [acciones de apuesta — pasar, igualar, subir, retirarse](/es/blog/holdem-betting-actions).
 
 ---
 

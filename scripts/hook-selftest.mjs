@@ -7,7 +7,9 @@
  * 🔴 게이트는 «규칙보다 셀프테스트 먼저»다(메모리 gate-tuning-loop-is-the-work).
  *    여기 🔴 케이스 둘은 **실제로 났던 사고의 커밋 쌍**이다 — 훅이 그때 있었으면 막았어야 한다.
  */
-import { spawnSync } from 'node:child_process';
+import { spawnSync, execFileSync } from 'node:child_process';
+import { resolve } from 'node:path';
+import { readFileSync, existsSync } from 'node:fs';
 
 const HOOK = 'scripts/hooks/pre-commit';
 
@@ -48,7 +50,17 @@ for (const c of CASES) {
   console.log(`${ok ? '✅' : '🔴'} ${c.name}  → exit ${got} (기대 ${c.want})`);
 }
 
-console.log(`\n${bad === 0 ? '✅' : '🔴'} 훅 셀프테스트 ${CASES.length - bad}/${CASES.length}`);
+// 🔴 설치본 ↔ 레포본 대조 (2026-09-11 ja 회차 12 §5-J 1) — 레포본만 고치고 `npm run hooks:install` 을 안 돌리면
+//    5/5 가 «레포본»만 검증해 낡은 설치본이 그대로 남는다(09-09 기록 → 09-11 재발 · HARDEN_SKIP_SYNC 우회).
+{
+  const commonDir = execFileSync('git', ['rev-parse', '--git-common-dir'], { encoding: 'utf8' }).trim();
+  const installed = resolve(commonDir, 'hooks', 'pre-commit');
+  const norm = (t) => t.split(String.fromCharCode(13)).join('');
+  const same = existsSync(installed) && norm(readFileSync(installed, 'utf8')) === norm(readFileSync(HOOK, 'utf8'));
+  if (!same) bad++;
+  console.log(`${same ? '✅' : '🔴'} 설치본 == 레포본 (${installed})${same ? '' : '  → npm run hooks:install 을 돌려라'}`);
+}
+console.log(`\n${bad === 0 ? '✅' : '🔴'} 훅 셀프테스트 ${CASES.length + 1 - bad}/${CASES.length + 1}`);
 console.log('🪶 미판정: 훅은 `lib/posts-<locale>/` 만 본다. 레인 소유 «문서»(진행 파일·뱅크·voice)가');
 console.log('   겹치는 경우는 막지 않는다 — 그쪽은 헤드가 `npm run lane:status` 의 🟠 OWNED 로 본다.');
 process.exit(bad === 0 ? 0 : 1);

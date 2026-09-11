@@ -207,7 +207,7 @@ Ketika orang bilang "Texas Hold'em", hampir selalu maksudnya **No-Limit Hold'em 
 | **Fixed-Limit** | Hanya kelipatan tetap (small bet tetap, lalu dobel di turn/river) | Meja kasino lama; naik-turun chip lebih kecil |
 | **Pot-Limit** | Maksimal sebesar pot saat itu | Jarang untuk Hold'em; standar untuk Omaha (PLO) |
 
-Untuk pemula, ==g:anggap Anda main No-Limit kecuali ada yang bilang sebaliknya.== No-Limit paling mudah *dipahami* (bertaruh berapa pun Anda mau) tapi paling kejam kalau *dimainkan* dengan buruk, karena satu call yang salah bisa menghabiskan seluruh stack. Persis karena itu bagian pot odds di bawah dan [aksi taruhan — check, call, raise, fold](/id/blog/holdem-betting-actions) sangat penting.
+Untuk pemula, ==g:anggap Anda main No-Limit kecuali ada yang bilang sebaliknya.== No-Limit paling mudah *dipahami* (bertaruh berapa pun Anda mau, dari big blind sampai seluruh stack Anda) tapi paling kejam kalau *dimainkan* dengan buruk, karena satu call yang salah bisa menghabiskan seluruh stack. Persis karena itu bagian pot odds di bawah dan [aksi taruhan — check, call, raise, fold](/id/blog/holdem-betting-actions) sangat penting.
 
 ---
 

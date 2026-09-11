@@ -203,7 +203,7 @@ When people say "Texas Hold'em," they almost always mean **No-Limit Hold'em (NLH
 | **Fixed-Limit** | Only fixed increments (a set small bet, then a double bet on turn/river) | Older casino tables; fewer big swings |
 | **Pot-Limit** | Up to the current size of the pot | Rare for Hold'em; standard for Omaha (PLO) |
 
-For beginners, ==g:assume you are playing No-Limit unless someone says otherwise.== No-Limit is the easiest to *understand* (bet whatever you want) but the most punishing to *play* badly, because one wrong call can cost your whole stack. That is exactly why the pot odds section below and your [betting actions — check, call, raise, fold](/en/blog/holdem-betting-actions) matter so much.
+For beginners, ==g:assume you are playing No-Limit unless someone says otherwise.== No-Limit is the easiest to *understand* (bet anything from the big blind up to your whole stack) but the most punishing to *play* badly, because one wrong call can cost your whole stack. That is exactly why the pot odds section below and your [betting actions — check, call, raise, fold](/en/blog/holdem-betting-actions) matter so much.
 
 ---
 
