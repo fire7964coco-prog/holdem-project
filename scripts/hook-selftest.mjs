@@ -25,6 +25,16 @@ const CASES = [
     want: 1,
   },
   {
+    name: '🔴 🧰 queue — 헤드 우편함 회차(74b30071→35fe9f57)가 EN 9편 + 7로케일을 고침(queue 자기 자리)',
+    env: { HARDEN_HOOK_BRANCH: 'harden-queue', HARDEN_HOOK_LANE_REF: '74b30071', HARDEN_HOOK_BASE: '35fe9f57' },
+    want: 1,
+  },
+  {
+    name: '🟢 🧰 queue — main 이 sitemap 만 바꿈(0b7ea301→d2056bcb · 오탐 금지)',
+    env: { HARDEN_HOOK_BRANCH: 'harden-queue', HARDEN_HOOK_LANE_REF: '0b7ea301', HARDEN_HOOK_BASE: 'd2056bcb' },
+    want: 0,
+  },
+  {
     name: '🟢 zh 회차 4 (2026-09-08) — main 이 앞섰지만 lib/posts-zh/ 는 안 건드림(오탐 금지)',
     env: { HARDEN_HOOK_BRANCH: 'harden-zh', HARDEN_HOOK_LANE_REF: '818c08d0', HARDEN_HOOK_BASE: 'c872db83' },
     want: 0,

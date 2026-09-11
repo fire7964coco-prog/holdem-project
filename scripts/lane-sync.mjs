@@ -46,6 +46,20 @@ const OWNED = {
     'docs/local-voice/ja-jp.md',
     'docs/translation-terms-ja.md',
   ],
+  /** 🧰 헤드 잔여 작업 레인(2026-09-11 · 프로토콜 §7-F) — 로케일 레인 셋의 자리를 «뺀» 나머지 글·이미지·게이트 */
+  queue: [
+    'lib/posts-en/',
+    'lib/posts-ar/',
+    'lib/posts-de/',
+    'lib/posts-es/',
+    'lib/posts-fr/',
+    'lib/posts-id/',
+    'lib/posts-pt/',
+    'public/images/',
+    'docs/harden-queue-진행.md',
+    'docs/harden-brief/queue-',
+    'docs/en-first-queue.md',
+  ],
 };
 
 /** 🔴 접두 충돌 — `zh` 의 자리가 `zh-hant` 를 삼키면 안 된다. 긴 로케일부터 본다. */
@@ -90,7 +104,14 @@ function selftest() {
     ['lib/posts-zh/holdem-3bet.ts', 'zh'],
     ['lib/posts-zh-hant/holdem-3bet.ts', 'zh-hant'],
     ['lib/posts-ja/holdem-3bet.ts', 'ja'],
-    ['lib/posts-en/holdem-3bet.ts', null],
+    ['lib/posts-en/holdem-3bet.ts', 'queue'],
+    ['lib/posts-de/holdem-3bet.ts', 'queue'],
+    ['public/images/holdem-3bet-hero.webp', 'queue'],
+    ['docs/harden-queue-진행.md', 'queue'],
+    ['docs/harden-brief/queue-Q1.md', 'queue'],
+    ['docs/en-first-queue.md', 'queue'],
+    ['lib/posts-ko/holdem-3bet.ts', null],
+    ['scripts/lane-sync.mjs', null],
     ['docs/keyword-bank/zh-strategy.md', 'zh'],
     ['docs/keyword-bank/zh-hant-odds-cluster.md', 'zh-hant'],
     ['docs/keyword-bank/ja-probability.md', 'ja'],

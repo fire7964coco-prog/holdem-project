@@ -68,6 +68,7 @@
 | 🇨🇳 | `Holdem-zh` | zh 경화 | 본체 |
 | 🇹🇼 | `Holdem-zh-hant` | zh-hant 경화 | 본체 |
 | 🇯🇵 | `Holdem-ja` | ja 경화(`harden-ja`) | 본체 |
+| 🧰 | `Holdem-queue` | **헤드 잔여 작업 레인**(`harden-queue` · 2026-09-11 신설) — EN-먼저 대기열 · 결재 실행 · 헤드 판정 묶음 · 게이트 신설을 **회차 단위**로. 부록 = **§7-F** | 본체 |
 | 본부 | `홀덤검수` | 검수 설계·규율·머지 | **검수장** |
 | 레인 | `홀덤검수-es`·`-zh`·`-id` | **원장**(판정) | 검수장 |
 | 솔버 | `클로드-프로그램만들기` | 앱 | 솔버 |
@@ -75,8 +76,10 @@
 🔴 **`Holdem-*` = 경화(글 고침) · `홀덤검수-*` = 원장(판정).** 이름이 비슷하니 헷갈리지 마라.
 🔴 **경화 레인은 `git push` 금지 · 배포 금지.** 머지·배포는 본체 main이 한다(= 승인).
 🔴 **모델 전환은 사장님 손** — 레인은 구간 경계(A→B→C)에서 멈추고 `/model` 전환을 요청한다(§2).
-🔴 **머지 대기 확인**: `for l in zh zh-hant ja; do git log --oneline main..harden-$l | wc -l; done`
+🔴 **머지 대기 확인**: `for l in zh zh-hant ja queue; do git log --oneline main..harden-$l | wc -l; done`
 🪶 **레인 창 띄우기**: `wt.exe -w new new-tab --suppressApplicationTitle --title "🇯🇵 harden-ja (일본어 경화)" -d "C:\Users\하봄\Downloads\Holdem-ja" claude`
+🪶 **🧰 queue 창**: `wt.exe -w new new-tab --suppressApplicationTitle --title "🧰 harden-queue (잔여 작업)" -d "C:\Users\하봄\Downloads\Holdem-queue" claude`
+🔴 **2026-09-11부터 헤드(본체 main)는 «글을 고치지 않는다».** 헤드 몫 = 머지·빌드·배포·우편함·핸드오프·WORKLOG·정본 승격·`lane:sync`. 글·이미지·게이트 손질은 전부 🧰 queue 레인 회차로 간다(사장님 지시 「여기서 작업하니까 컨텍스트가 길어지고 맥락이 자꾸 끊기네」). 예외 = KO 신규 발행(`new-post` 스킬)과 한 줄짜리 긴급 정정.
 
 **회차 표**(두 레인 공통) = 1 규칙 6 → 2 족보 6 → 3 확률 7 → 4 전략 8 → 5 토너먼트 9 → 6 용어 6 = **42편**.
 대상 밖 = GTO 13 · wsop · taiwan-clubs.
@@ -226,7 +229,7 @@ git commit -F commit-msg.txt   # "harden(<locale>): <클러스터> N편 — 회�
 ## 6. 헤드(본체 main)가 하는 것 — 레인은 읽기만
 
 0. 🔴 **레인이 진행 중인 클러스터의 로케일 파일은 손대지 않는다.** EN-먼저 정정이 그 클러스터에 걸리면 EN + 다른 로케일만 먼저 고치고, 그 레인 로케일은 **진행 파일 §5에 «헤드가 EN을 고쳤다 — C 구간 merge main 때 받아라»로 넘긴다.** 불가피하게 손댔으면 그 레인 `HARDEN.md`(비추적) 말미에 통지를 붙인다.
-1. `git merge harden-zh` → `git merge harden-zh-hant` → `git merge harden-ja`(conflict가 공용 파일이면 레인이 §1을 어긴 것 — 되돌린다 · 로케일 파일이면 §6-0을 헤드가 어긴 것 — 헤드가 푼다). 🪶 머지 전에 `npm run lane:status`로 «지금 충돌할 수 있는가»를 먼저 본다(0.5초).
+1. `git merge harden-zh` → `git merge harden-zh-hant` → `git merge harden-ja` → `git merge harden-queue`(🧰 queue 머지 뒤 추가 절차 = §7-F 말미)(conflict가 공용 파일이면 레인이 §1을 어긴 것 — 되돌린다 · 로케일 파일이면 §6-0을 헤드가 어긴 것 — 헤드가 푼다). 🪶 머지 전에 `npm run lane:status`로 «지금 충돌할 수 있는가»를 먼저 본다(0.5초).
 2. `npm run build`(N blog posts 확인) → `git push` → 배포 도착 폴링 → **라이브 확인은 `page.content()`**(innerText는 접힌 FAQ를 못 본다 · 앵커는 원문 표기).
 3. 진행 파일 «헤드 요청» 절 처리: `locale-intentional-diffs.md` 등재 · EN-먼저 묶음을 EN에 먼저 정정 후 전 로케일 전파 · 이미지 교체 · 게이트 수정.
 4. `WORKLOG.md`·`session-handoff.md` 기록. 검수장 lane-zh에 **머지 커밋 해시**를 우편함으로 통보(검수는 해시 기준 판정).
@@ -307,6 +310,31 @@ git commit -F commit-msg.txt   # "harden(<locale>): <클러스터> N편 — 회�
 | 거울쌍 | **없음** — §5-⑥·§7-D 생략. `check:mirror-pair` 미적용 |
 | 드리프트(09-07 실측) | 14편: 3bet · betting-actions · card-counting · continuation-bet · fish · game-order · glossary · kicker 외 6. 🔴 08-27 세션 3/9 `f8d9b2bd`가 15편을 먼저 소급 — 그 diff가 경계 |
 | 대상 밖 | GTO 13편(09-02) · `wsop-2026-tournament-guide` · `japan-poker-tournaments-guide`(ja 고유 · 09-02) |
+
+---
+
+### 7-F. 🧰 queue — 헤드 잔여 작업 레인 (2026-09-11 신설 · 사장님 지시)
+
+> 로케일 레인이 아니다. **헤드가 하던 «글·이미지·게이트 손질»을 통째로 옮겨 받는 자리**다.
+> 왜: 본체 창에서 작업하면 컨텍스트가 길어져 맥락이 끊긴다(사장님 지시 09-11). 로케일 레인처럼
+> **`/clear` 1회 = 회차 1개**로 자르고, 상태는 진행 파일 하나에만 둔다.
+
+| 항목 | 규율 |
+|---|---|
+| 폴더·브랜치 | `Holdem-queue` / `harden-queue` (git worktree · `node_modules`는 본체와 junction 공유) |
+| 진행 파일 | **`docs/harden-queue-진행.md`** — 회차 표가 곧 대기열이다. 재료의 정본은 `docs/en-first-queue.md` · `session-handoff.md` 미결 절 · `settled-decisions` §1-B(결재) — **복사하지 말고 포인터로** |
+| **쓰는 파일** | `lib/posts-en/` · `lib/posts-{ar,de,es,fr,id,pt}/` · 꼬리 17로케일(`§13급`만 · 결재 40) · `lib/posts.ts`·`lib/posts/`(KO 정정) · `public/images/`(**이 레인만** — 헤드도 안 만진다) · `scripts/`(게이트 신설·수정 — 🔴 셀프테스트 먼저) · `docs/en-first-queue.md` · `docs/harden-brief/queue-*.md` · `lib/tournaments*.ts` · `app/`(결재 6 소품류) |
+| **ja·zh·zh-hant 포스트** | 전파는 한다. 단 🔴 **그 레인 워크트리의 «미커밋 파일»과 겹치면 그 파일은 건너뛰고 진행 파일 §5에 「레인 회차 중 · 머지 뒤 전파」로 적는다**. 확인 = `git -C ../Holdem-ja status --porcelain -- lib/posts-ja/`(zh·zh-hant 동일). 만졌으면 §5에 파일 목록을 적어 헤드가 머지 때 그 레인 `HARDEN.md`에 §6-0 통지를 붙이게 한다 |
+| **안 쓰는 파일** | `mailbox/`(MB 통지는 **초안을 §5에** · 발신은 헤드) · `session-handoff.md` · `WORKLOG.md` · `CLAUDE.md` · `docs/settled-decisions.md` · `docs/locale-intentional-diffs.md`(등재 요청은 §5) · 다른 레인 진행 파일·브리프 · `public/sitemap.xml`(빌드 부산물 — 커밋 전 `git checkout --`) |
+| 회차 모양 | §2 그대로(A 준비 → B 집필 → C 마감). 🔴 단 **판정형 회차**(콤보 세기 · 스탬프 대조 · 게이트 신설)는 B가 «새 문장»이 아니므로 **전 구간 Opus** — 「문서에 적힌 분담을 작업 성격으로 다시 짜라」(§5-A-3). 집필이 있는 회차(사진 카드 문구 · EN 재서술)만 Fable |
+| 게이트(C) | `audit:hard --slug=<slug>` 손댄 글 전부(로케일별 `--locale`) · `check:drift`(EN 손대면 8로케일 🔴가 늘어야 정상 — **같은 회차에 전파해 0으로**) · `check:structure` · `check:images`·`check:image-reuse`(이미지 손댔으면) · `check:hangul`·`cjk`·`seo-sync`·`meta` · 새 게이트는 `--selftest` 동봉 · `npm run build` |
+| 렌즈 | §5-③ 4종 + 2차 교열 그대로. EN을 고치면 **EN 렌즈에 8로케일 전파 diff까지** 준다(전파 누락이 최다 결함 유형 — memory `completion-count-the-copies-first`) |
+| 스탬프 | EN `updated`는 문턱이 높다(구두점·별표만이면 올리지 않는다 · `settled-decisions` §1-C) · 전파본 `updated` = 전파일 · `masterUpdated` = 대조한 EN 날짜 |
+| 검수장 통지 | EN 변경 커밋 = MB 통지 필수(MA-123 요청 1). 레인은 **§5에 MB 초안**(슬러그 · 자리 · 되돌리지 마라 · 앵커 갱신 필요) — 헤드가 머지 뒤 번호를 받아 발신한다 |
+| 커밋 | `harden(queue): <묶음> — 회차 Q<N> · 렌즈 X/Y · EN-먼저 Z · 전파 M로케일`. push 금지 |
+| 보고 | §5-⑨ 양식. 마지막 줄 「▶ 다음 지시: 헤드 창에 「queue 회차 N 끝났어, 머지해」 → 이 창 `/clear` → 「`HARDEN.md` 읽고 회차 N+1 시작해」」 |
+
+🔴 **헤드가 queue 회차를 머지할 때 추가로 하는 것**(§6에 얹는다): ① §5의 MB 초안 발신 ② ja·zh·zh-hant 파일을 만졌으면 그 레인 `HARDEN.md`에 §6-0 통지 ③ `locale-intentional-diffs`·`settled-decisions` 승격 요청 처리 ④ `lane:sync -- --apply`(queue 레인도 받는다).
 
 ---
 

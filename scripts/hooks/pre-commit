@@ -32,7 +32,13 @@ lane_ref=${HARDEN_HOOK_LANE_REF:-$branch}
 git rev-parse --verify "$base_ref" >/dev/null 2>&1 || exit 0
 
 loc=${branch#harden-}
-owned=$(git diff --name-only "$lane_ref...$base_ref" -- "lib/posts-$loc/" 2>/dev/null || true)
+# 🧰 queue 레인(프로토콜 §7-F)의 «자기 자리»는 로케일 레인 셋을 뺀 나머지 포스트 + 이미지다
+case "$loc" in
+  queue) paths="lib/posts-en/ lib/posts-ar/ lib/posts-de/ lib/posts-es/ lib/posts-fr/ lib/posts-id/ lib/posts-pt/ public/images/" ;;
+  *) paths="lib/posts-$loc/" ;;
+esac
+# shellcheck disable=SC2086
+owned=$(git diff --name-only "$lane_ref...$base_ref" -- $paths 2>/dev/null || true)
 
 [ -z "$owned" ] && exit 0
 
