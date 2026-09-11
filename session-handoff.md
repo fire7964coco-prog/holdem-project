@@ -22,7 +22,7 @@
 
 ## ▶▶▶ 다음 할 일
 
-> 직전 회차 = **EN-먼저 18건 회차**(09-11 (7) · EN 12편 + 7로케일 83파일 · 경위 = WORKLOG 「2026-09-11 (7)」) · 그 앞 = ja 회차 10 머지(`4291087c`). 🔴 **ja 레인은 «회차 없음»이 아니다** — 워크트리에 **회차 11 브리프 `docs/harden-brief/ja-회차11-직답자기완결.md`(35KB)와 `ja-answer-blocks.md` 수정이 미커밋**으로 있다(A 구간 산출 · 09-11 헤드 실측). 레인 회차 11 시작 시 첫 명령 `git merge main` 필수 — 헤드가 ja 12편(all-in·showdown·game-order·betting-actions·blind-meaning·flush-vs-straight·cbet·position-play·strategy·bad-beat·short-stack·tournament)을 09-11에 고쳤다(브리프 대상 절과는 다른 절). 브리프 §6 드리프트 표는 재측정 대상.
+> 직전 회차 = **EN-먼저 18건 회차**(09-11 (7) · EN 12편 + 7로케일 83파일 · 경위 = WORKLOG 「2026-09-11 (7)」) · 그 앞 = ja 회차 10 머지(`4291087c`). 🔴 **ja 레인 회차 11이 «커밋 완료 · 헤드 머지 대기»다** — 레인 `9fbe7b6e`(09-11 14:13 · 직답 «자기완결성» 축 16자리/13편 · 렌즈 4종+2차 교열). 헤드 `lane:sync`가 main(`c4d2b3f3`)을 그 위에 머지했고 충돌 2건(bad-beat·strategy `masterUpdated` 09-09↔09-11)은 헤드 값으로 풀어 머지 커밋했다 → 워크트리 클린. **main 머지(`git merge harden-ja`)는 사장님 지시 대기** — 프로토콜 §6 순서(머지→빌드→push→라이브→진행 파일 «헤드 요청» 처리→MB 통지). 🪶 회차 11이 ja 12편(all-in·showdown·game-order·betting-actions·blind-meaning·flush-vs-straight·cbet·position-play·strategy·bad-beat·short-stack·tournament)을 09-11에 고쳤다(브리프 대상 절과는 다른 절). 브리프 §6 드리프트 표는 재측정 대상.
 > 🔴 **회차 9가 남긴 규율 = «머지로 받은 뒤에는 헤드 요청을 다시 재라»**(§5-G 11건 중 3건이 이미 닫힌 자리였다 · 정본 `docs/harden-ja-진행.md` §5-G 머리).
 > 🔴 **빌드 로그는 전체를 파일로 받아라** — 09-11 (4)에 `tail`로 받아 «N blog posts» 행을 잃었다(sitemap loc diff로 대신 확인).
 
