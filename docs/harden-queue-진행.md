@@ -32,7 +32,7 @@
 
 ## 2. 미결 (해결될 때까지 유지)
 
-- 🔴 **ja 회차 13이 진행 중이다**(2026-09-11 실측 · 핸드오프 「착수 지시 대기」는 낡은 문장). 겹치는 파일 = `apt-incheon` · `3bet` · `bad-beat` · `betting-actions` · `cooler` · `fish` · `short-stack` · `starting-hands-chart` · `strategy` · `tournament-vs-cash-game` · `when-to-fold` · `texas-holdem-rules-for-beginners` · `wpt-australia`(13). **EN을 고쳐 ja로 전파할 때 이 13편은 §5에 「머지 뒤 전파」로 넘긴다.** 회차 13 머지 뒤 이 행을 지운다.
+- 🟢 **ja 레인 회차 없음**(회차 13 머지 09-11 ff `a9b5d549`). 회차 14가 열리면 그 브리프(`docs/harden-brief/ja-회차14-*.md`)의 대상 파일과 겹침을 §7-F 규칙대로 확인 — 회차 14 재료 = `harden-ja-진행` §2-M 7편(glossary · probability · positions · tiebreak-rules · straddle · outs · apt-incheon).
 - 🟠 결재 5(EN 제목 보강 3편)는 **보류** — GSC 실측 먼저. 회차에 넣지 마라.
 
 ## 3. 되돌리지 마라
