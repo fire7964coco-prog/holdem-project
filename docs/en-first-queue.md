@@ -140,6 +140,15 @@
 🔴 **J#2~J#5는 「EN 동문」이 확인된 자리다** — ja만 고치면 다음 회차가 드리프트로 다시 집는다.
 🪶 J#1은 **`docs/locale-intentional-diffs.md` 등재 대상이 아니다** — 의도가 아니라 EN 오류이므로 EN을 고쳐 닫는다.
 
+### 2-C. 🆕 ja 경화 회차 10(2026-09-11)이 올린 EN-먼저 2건
+
+> 출처 = `docs/harden-ja-진행.md` §5-H 2·4. 헤드가 09-11 머지 때 EN 실물을 대조했다(둘 다 EN에 없음 확인).
+
+| # | EN 자리 | 무엇이 빠졌나 | 근거 | 급 |
+|---|---|---|---|---|
+| **J#6** | `holdem-short-stack` 본문 | **`holdem-pot-odds` 내부링크 0** — 직답이 「팟오즈와 레인지 대비 에퀴티로 정한다」고 팟오즈를 판단 기준으로 부르는데 그 필라로 가는 링크가 없다(EN 실측: bubble×4 · icm×3 · tournament×1 · when-to-fold×1). 「클러스터는 필라를 링크한다」(CLAUDE.md §8) 위반. ja 단독 신설은 「내부링크 EN 1:1」 규율로 기각됐다 | EN 실측 09-11 · SEO 렌즈 | 🟠 |
+| **J#7** | `holdem-tournament` 형식 표(8행) | **「Turbo」·「Mystery Bounty」·「Add-on」 행이 없다** — ja 상위 5편 중 4편이 ターボ를 見出し로 가짐(`ポーカー ターボ` 20 · `ミステリーバウンティ` 70 · `ポーカー アドオン` 50). EN 실측 09-11: 본문에 turbo 0회 · Mystery Bounty 0회(add-on은 리바이 FAQ에만). 표 행 신설은 EN에 먼저 | `docs/keyword-bank/ja-answer-blocks.md` §2-B·§3·§4 | 🪶 |
+
 ---
 
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)

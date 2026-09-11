@@ -79,8 +79,22 @@ function isEnumerationOrFormula(s) {
   const ops = (s.match(/[=÷×−+%()（）→~]/g) ?? []).length;
   return seps >= 3 || ops >= 4;
 }
-/** 블록 길이 규격(정규화 후 문자 수) */
-const LEN = { min: 90, max: 170 };
+/**
+ * 블록 길이 규격(정규화 후 문자 수) — 🔴 로케일별(2026-09-11 · ja 회차 10 §5-H 1).
+ *   ja  90~170  = ja 회차 10 브리프 규격(가나가 섞여 중문보다 길다 · 378블록 전수가 이 안)
+ *   zh·zh-hant 60~110 = `docs/hardening-protocol.md` §4 「40~75단어(중문은 60~110자)」 — 프로토콜 정본을 그대로 옮겼다.
+ *   ko  90~170 (임시 · 실측 블록 2개뿐이라 판정 근거 없음) · en 은 단어 단위 규격이라 이 카운터로 재지 않는다(측정 0).
+ *   🪶 09-11 실측: 단일 90~170으로 재면 zh 68·zh-hant 131이 «아래로» 걸리고, 60~110으로 재면 zh 137·zh-hant 53이 «위로» 걸린다
+ *   (zh 중앙값 107 · zh-hant 93). 규격을 바꾼다고 부채가 사라지는 게 아니라 «어느 쪽이 걸리는가»가 바뀐다 — 상한 판정은 헤드 미결.
+ */
+const LEN_BY_LOCALE = {
+  ja: { min: 90, max: 170 },
+  zh: { min: 60, max: 110 },
+  'zh-hant': { min: 60, max: 110 },
+  ko: { min: 90, max: 170 },
+};
+const LEN_DEFAULT = { min: 90, max: 170 };
+const lenSpec = (loc) => LEN_BY_LOCALE[loc] ?? LEN_DEFAULT;
 
 /** 고유명사·정형 문구 — 이만큼 겹쳐도 «되풀이»가 아니다 */
 const PROPER_NOUNS = [
@@ -253,8 +267,9 @@ function main() {
       for (const r of rows) {
         if (only && r.kind !== only) continue;
         if (r.kind === 'echo') { red++; bad.push(`  🔴 echo   ${r.at} 「${r.head}」 LCS ${r.len}자(원문 ${r.raw}) — ${r.sample}`); }
+        const LEN = lenSpec(loc);
         if (r.kind === 'length' && !LENGTH_EXEMPT.test(s) && (r.len < LEN.min || r.len > LEN.max)) {
-          amber++; bad.push(`  🟠 length ${r.at} 「${r.head}」 ${r.len}자 (규격 ${LEN.min}~${LEN.max})`);
+          amber++; bad.push(`  🟠 length ${r.at} 「${r.head}」 ${r.len}자 (규격 ${loc} ${LEN.min}~${LEN.max})`);
         }
         if (r.kind === 'place') { amber++; bad.push(`  🟠 place  ${r.at} 「${r.head}」 앞에: ${r.before}`); }
       }
@@ -263,7 +278,7 @@ function main() {
   }
   console.log(`직답 블록 검사 · 로케일 ${locales.join(',')} · 파일 ${files} · 블록 ${blocks} · 🔴 echo ${red} · 🟠 그밖 ${amber}`);
   for (const l of lines) console.log(l);
-  console.log(`\n🪶 임계 = ${Object.entries(MIN_LCS).map(([k, v]) => `${k} ${v}자`).join(' · ')} · 길이 면제 = 이벤트 가이드(물류 정보는 직답이 표 대용 · 판정 13-ⓑ)`);
+  console.log(`\n🪶 임계 = ${Object.entries(MIN_LCS).map(([k, v]) => `${k} ${v}자`).join(' · ')} · 길이 규격 = ${Object.entries(LEN_BY_LOCALE).map(([k, v]) => `${k} ${v.min}~${v.max}`).join(' · ')}(그밖 ${LEN_DEFAULT.min}~${LEN_DEFAULT.max}) · 길이 면제 = 이벤트 가이드(물류 정보는 직답이 표 대용 · 판정 13-ⓑ)`);
   console.log('🪶 원리상 못 보는 것: 글자가 겹치지 않고 «내용»만 어긋나는 결함(ja §5-A 유형) — 그 자리는 렌즈 몫이다.');
   if (has('strict') && red) process.exit(1);
 }
