@@ -66,6 +66,7 @@
 
 | 발신 | 무엇 | 상태 |
 |---|---|---|
+| **MB-036·037·038** | 🆕 우편함 회차(09-11 (9) · `522b57f8`) 회신 — S-013 ACK(솔버 · 라이브 대조 후 닫힘 대기) · MA-130·131 이행(앵커 갱신 필요 · X-1 미결 통지) · MA-136 이행 | 솔버 · 검수장 |
 | **MB-035** | 🆕 검수장 HANDOFF ⚠ 「회귀 🔴 2 = 미커밋 트리」 재실행 회신 — 본체 커밋 뒤 `--regression` 🔴 2 = id·zh all-in-rules(둘 다 `c4d2b3f3` 의도 정정 · §47A 플레이어별 · §14 머크) · pt strategy ✅. 요청 1 = 앵커 2건 현행 문장으로 재앵커 + ⚠ 행 닫기 | 검수장 |
 | **MB-034** | 🆕 ja 회차 11 머지·배포 통지(ff `0b7ea301` · 헤드 `74b30071`) — 앵커 갱신(ja 직답 16자리/13편 · bubble tldr 멀티시트 8로케일 · strategy (Decision 4) 8로케일) · J#8 €330 «예고» · 요청 0 | 검수장 |
 | **MB-033** | 🆕 EN-먼저 18건 회차 배포 통지 — EN 12편 + 7로케일 83파일(ar·fr 제외) · 룰 인용 정본 변경(WSOP Tournament/Live Action 구분 · TDA §43-A·§47A·§14·§18B · LA §149) · 회귀 앵커 갱신 필요 · 기각 4건 · 요청 1 = ar 원장의 11건을 «EN 정정 완료 · ar 미전파»로 표시 | 검수장 |
@@ -134,6 +135,8 @@
 
 ### 대회·사실 판정
 - 🔴 **EN 동형 30건(M-089 §4)** — ④는 «등급표 항목»만 닫았다. 남은 것 = bad-beat #12 «~65%(2:1)»→~62% 8로케일 동시 · betting-actions 103조 두 요소 8로케일 · flush-vs-straight SF 5장/7장 라벨 등
+- 🟠 **MA-136 통지 ③④(ja · 회차 12 재료)** — RISKY 4(문안 재량): wpt L359 「10泊…本戦期間のみ」 ↔ フル体験 14박 · apt L286 「AREXは2種類」 열거 단절 · kpm L166 18시↔21시 무게 · bubble L166 「生き残りに寄与しません」(EN은 핸드 수만 부정 · A 126.b) · 약 잔존: icm L54·56 · bubble L52 top-heavy · short-stack L129·138·176·30·155·157 · ept 골드패스 확정형 5자리·L171·L266 · kpm L411 「18日間」(표는 15일)
+- 🟠 **EN `holdem-tiebreak-rules` L232 「==Rule 85==」 룰북 한정어 부재**(렌즈 LOW) — de·id·pt는 「Tournament Rule 85」로 이식됨. EN만 고치면 es·ja·zh·zh-hant 4로케일 가짜 드리프트 → **다음 EN 실변경 때 함께**
 - 🟠 대회 note EN 측 재판정 2 — `NOTE_EN["apl-seoul-winter-circuit-1"]` 「전 이벤트」 탈락 · `NOTE_EN["hpt-5"]` 「Day 1 Sep 11–12」 범위 표기
 - 🟠 **APT 제주 이벤트 수는 개막(9/25) 전에 한 번 더 잰다** — 09-10 라이브 = **135**(#1~#135·결번 0)로 45자리 전파 완료.
   🔴 **종목 분해(홀덤 90 + 기타 46)는 여전히 «7월 발표 편성 기준»이다** — APT 공식 분류를 재현 못 해 재분류하지 않았다.
@@ -155,10 +158,7 @@
 - 🔴 glossary 이미지의 6타일(ACTIONS/POSITIONS/HANDS/PLAYERS/MONEY/SLANG)이 본문 6섹션과 **이름이 다르다**
 
 ### GSC·GA4·색인 계측
-- 🟢 **관측 대기** — 「홀덤 spr」 카니발 조치(`bc910c73`) 효과는 재크롤 후. 기준선(07-29~08-26) = 「홀덤 spr」 115노출 클릭 0
-- 🟢 **관측 대기** — 「홀덤사이트」 앵커 효과. `npm run analytics` 주 1회 → 홈 CTR 0.4% ↔ `/ranking` 1.5% 분배가 바뀌는지. 🔴 **그 전에 새 글을 쓰지 마라**
-- 🟢 **관측 대기** — `/en/blog/holdem-tiebreak-rules` 재크롤 후(`node scripts/gsc-page.mjs en/blog/holdem-tiebreak-rules --days 28` · 볼 것 = r19.3이 1페이지로 들어오나 · 클릭 0을 벗어나나)
-- 🟢 **관측 대기** — `blind-meaning` 처방(`node scripts/ga-page.mjs blog/holdem-blind-meaning --days 28` · 기준선 랜딩 오가닉 40.3%·이탈 59.7%·2:49 · 모바일 29.8%·0:25)
+- 🟢 **관측 대기 4건**(재크롤 후 · `npm run analytics` 주 1회) — 「홀덤 spr」 카니발 조치 `bc910c73`(기준선 115노출·클릭 0) · 「홀덤사이트」 앵커(홈 CTR 0.4% ↔ `/ranking` 1.5% 분배 · 🔴 그 전에 새 글 쓰지 마라) · `/en/blog/holdem-tiebreak-rules`(`scripts/gsc-page.mjs` · r19.3 1페이지 진입?) · `blind-meaning`(`scripts/ga-page.mjs` · 기준선 오가닉 40.3%·이탈 59.7%·모바일 0:25)
 - 🔴 **GA4 `page_view` 유실 121세션**(오가닉 5.5% · 55→137로 2.5배 증가 중) — `session_start` 121 · `user_engagement` 113인데 `page_view` 0
 - 🟠 `/calculator` 확률·승률 계열이 전부 2페이지(r15.4~21.8 · 합 ~200노출 클릭 1) — 이번 회차는 «훅 근거 없음» 판정만 · ⚠ 1:10 체류는 어느 층으로도 재현 안 됨(원출처 확인 필요 · 랜딩 참여율 58.0%는 실재)
 - 🟠 `/pub` 「근처 홀덤펍」 11노출 r6.1인데 클릭 0 — SPR과 같은 «순위 대비 CTR 이상» 신호
