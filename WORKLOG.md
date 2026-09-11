@@ -1,3 +1,13 @@
+## 2026-09-11 (3) — **`check:answer-echo` 🔴 8건 전건 해소(zh 4 · zh-hant 4) — 직답 블록 재서술** (빌드 · 배포)
+
+핸드오프 2순위 첫 행. 규율 = §3-J 1(«삭제»가 아니라 «재서술» · 포인터화 금지) · §3-J 2(고칠 때마다 게이트 재실행). 전건 «블록 쪽»을 다시 썼고 본문은 손대지 않았다. 수치·룰(TDA re-opening · 3bet-or-fold · board plays)은 불변.
+- zh: `all-in-rules` L131(완전가입 미달 전押의 재개방) · `betting-actions` L179 끝문장 · `position-play` L270 첫문장(SB 3bet-or-fold — 본문 L272 하이라이트와 축어 동일했다) · `beginners` L195(緊張 新手 문장 — L209 동문)
+- zh-hant: `positions` L41(「每一手都戴著不同的名字」 — L43 굵은 글씨와 동일) · `reading-the-board` L101(「你的」結果 — L103 동문) · `split-pot-rules` L88(board plays 정의 — L90 동문) · `strategy` L216(TAG 학습곡선 — L223 동문)
+게이트(후) = `answer-echo` zh echo 0·그밖 68(불변) · zh-hant echo 0·그밖 132(불변) → **새 echo·length 0** · `audit:hard` 8편 🔴 0 · `check:drift` zh·zh-hant 핵심 0 · 빌드 70+525. `updated` 8편 09-11(재서술 = §1-C).
+🪶 zh·zh-hant 레인은 회차 없음·미커밋 0이라 헤드가 직접 했다(§6-0 통지는 각 HARDEN.md에). 남은 🟠 length(zh 68 · zh-hant 132)는 판단 대기 13-ⓑ와 같은 축 — ja 회차 10이 하는 방식(브리프 `ja-회차10-직답길이.md`)을 두 레인에 복제하면 된다.
+
+---
+
 ## 2026-09-11 (2) — **ja 회차 9 렌즈 15편 «내용» 판정 완료 — 결함 2 고침(implied-odds 조사 · shc FAQ 구조) · 나머지 12 종결** (빌드 · 배포)
 
 핸드오프 「ja 렌즈 15편 지적 내용은 아직 안 봤다」를 닫았다. 판정 근거는 렌즈 원문이 없어(진행 파일 §5-G 9의 요약 한 줄뿐) **현재 본문 ↔ EN 원문 대조**로 했다.
