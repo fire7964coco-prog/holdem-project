@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "De los 169 tipos de mano inicial, solo una pequeña franja superior — cerca del 15–20% de las manos que te reparten — es rentable para un principiante. Los pares grandes (AA–TT) y AK suben desde cualquier asiento; cuanto más tarde actúas, más abres tu rango — desde ~13% en UTG hasta ~43% en el botón (más amplio aún en 6-max). Empieza con una tabla simplificada y añade las tablas preflop GTO cuando el subir-o-foldear ya te salga automático.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🂡",
@@ -105,6 +105,8 @@ Aquí tienes la tabla de manos iniciales de póker para una mesa estándar de 9-
 
 La regla: ==cuanto más tarde actúas, más manos puedes abrir de forma rentable==. Como el botón siempre actúa último postflop, es el asiento más valioso del póker.
 
+Esa tabla **no** dice dos cosas. El porcentaje es una parte de las 1,326 combinaciones de manos iniciales: ~13% son unas 172, y esa es la amplitud con la que abre en UTG un regular sólido, no la que esta página le pide a un principiante. Y las manos de cada asiento son el **núcleo**: la fila de UTG son 58 combinaciones, y cada fila siguiente solo añade lo que ese asiento suma. Las secciones de abajo ensanchan ese núcleo a medida que mejoras; el último tramo hasta un ~13% completo pertenece a las tablas GTO de más abajo.
+
 Mira cómo se ensancha el rango de apertura asiento a asiento — UTG, MP, CO y BTN (la cuadrícula completa de 13×13 con las 169 manos está en la herramienta de tabla de manos enlazada más abajo):
 
 :::rangechart:::
@@ -115,7 +117,7 @@ Mira cómo se ensancha el rango de apertura asiento a asiento — UTG, MP, CO y 
 
 UTG es el asiento más difícil de jugar. ==r:Ocho jugadores aún actúan detrás de ti.== Cualquier mano que abras aquí tiene que aguantar contra rangos fuertes.
 
-El núcleo del rango de UTG (un rango completo de ~13% se ensancha con parejas medias (77–99), más suited broadways y algunas offsuit como AQo/AJo a medida que mejoras):
+El núcleo del rango de UTG (un rango completo de ~13% se ensancha con parejas medias (77–99), más suited broadways y algunas offsuit como AQo a medida que mejoras):
 
 - Pares servidos: **TT, JJ, QQ, KK, AA**
 - Premium del mismo palo: **AKs, AQs, AJs, KQs**

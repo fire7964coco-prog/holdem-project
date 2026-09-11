@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Dos 169 tipos de mãos iniciais, só uma pequena fatia do topo — cerca de 15–20% das mãos que você recebe — dá lucro pra um iniciante. Pares grandes (AA–TT) e AK aumentam de qualquer assento; quanto mais tarde você age, mais amplo você abre — de ~13% no under the gun a ~43% no button (ainda mais amplo no 6-max). Comece com uma tabela simplificada e adicione as tabelas GTO de pré-flop quando o aumentar-ou-foldar já for automático.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🂡",
@@ -106,6 +106,8 @@ Aqui está a tabela de mãos iniciais do poker pra uma mesa 9-max padrão — o 
 
 A regra: ==quanto mais tarde você age, mais mãos você pode abrir com lucro==. Como o button sempre age por último no pós-flop, é o assento mais valioso do poker.
 
+Duas coisas que essa tabela **não** está dizendo. A porcentagem é uma fatia das 1.326 combinações de mãos iniciais, então ~13% são cerca de 172 delas — é essa a largura com que um regular sólido abre no UTG, não a que esta página pede a um iniciante. E as mãos ao lado de cada assento são o **núcleo**: a linha do UTG acima são 58 combinações, e cada linha abaixo dela só lista o que aquele assento acrescenta. As seções seguintes alargam esse núcleo conforme você evolui; o último trecho até uns ~13% completos pertence às tabelas de GTO mais adiante.
+
 Compare o tamanho de cada range de abertura, do UTG ao button:
 
 :::rangechart:::
@@ -116,7 +118,7 @@ Quer a matriz completa — a grade 13×13 com cada uma das 169 mãos? A aba **Ta
 
 O UTG é o assento mais difícil de jogar. ==r:Oito jogadores ainda agem atrás de você.== Qualquer mão que você abra aqui precisa aguentar contra ranges fortes.
 
-O núcleo do range do UTG (um range completo de ~13% se abre pra pares médios como 77–99, mais broadways suited e algumas mãos offsuit como AQo/AJo conforme você evolui):
+O núcleo do range do UTG (um range completo de ~13% se abre pra pares médios como 77–99, mais broadways suited e algumas mãos offsuit como AQo conforme você evolui):
 
 - Pocket pairs: **TT, JJ, QQ, KK, AA**
 - Suited premium: **AKs, AQs, AJs, KQs**

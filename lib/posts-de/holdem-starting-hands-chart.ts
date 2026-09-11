@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Von den 169 Starthand-Typen ist nur eine kleine Spitzengruppe – etwa 15–20% der Hände, die du bekommst – für einen Anfänger profitabel. Große Paare (AA–TT) und AK raist du aus jeder Position; je später du agierst, desto weiter öffnest du – von ~13% unter der Gun bis ~43% am Button (im 6-Max nochmals weiter). Starte mit einem vereinfachten Chart, füge GTO-Preflop-Charts hinzu, sobald Raise-or-Fold automatisch sitzt.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "🂡",
@@ -109,6 +109,8 @@ Hier ist das Poker-Starthände-Chart für einen Standard-9-Max-Tisch:
 
 Die Regel: ==je später du agierst, desto mehr Hände kannst du profitabel öffnen==. Weil der Button postflop immer als Letzter agiert, ist er die wertvollste Position im Poker.
 
+Zwei Dinge sagt diese Tabelle **nicht**. Der Prozentwert ist ein Anteil an allen 1.326 Starthand-Kombinationen – ~13% sind also rund 172 davon, und das ist die Breite, mit der ein guter Stammspieler UTG eröffnet, nicht die, zu der diese Seite einen Anfänger auffordert. Und die Hände neben jedem Sitz sind der **Kern**: Die UTG-Zeile oben umfasst 58 Kombinationen, jede Zeile darunter nennt nur, was dieser Sitz ergänzt. Die folgenden Abschnitte weiten diesen Kern, sobald du besser wirst; das letzte Stück bis zu vollen ~13% gehört zu den GTO-Charts weiter unten.
+
 Sieh, wie sich die Opening-Range Position für Position weitet – UTG, MP, CO und BTN (das vollständige 13×13-Grid mit allen 169 Händen steckt im unten verlinkten Starthände-Chart-Tool):
 
 :::rangechart:::
@@ -119,7 +121,7 @@ Willst du es als eigenständiges Tool mit erweiterten Ranges pro Position? Nutze
 
 UTG ist die schwierigste Position zu spielen. ==r:Acht Spieler agieren noch hinter dir.== Jede Hand, die du hier öffnest, muss gegen starke Ranges standhalten.
 
-Der Kern der UTG-Range (eine volle ~13%-Range weitet sich zu Mid Pairs wie 77–99, mehr Suited Broadways und ein paar Offsuit-Händen wie AQo/AJo, wenn du besser wirst):
+Der Kern der UTG-Range (eine volle ~13%-Range weitet sich zu Mid Pairs wie 77–99, mehr Suited Broadways und ein paar Offsuit-Händen wie AQo, wenn du besser wirst):
 
 - Pocket Pairs: **TT, JJ, QQ, KK, AA**
 - Premium suited: **AKs, AQs, AJs, KQs**

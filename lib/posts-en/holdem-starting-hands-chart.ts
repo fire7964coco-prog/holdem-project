@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Of the 169 starting hand types, only a small top slice — about 15–20% of the hands you're dealt — is profitable for a beginner. Big pairs (AA–TT) and AK raise from any seat; the later you act, the wider you open — from ~13% under the gun to ~43% on the button (wider again in 6-max). Start with a simplified chart, add GTO preflop charts once raise-or-fold is automatic.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-09-09",
+  updated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🂡",
@@ -101,6 +101,8 @@ Here is the poker starting hands chart for a standard 9-max table:
 | BTN (Button) | Top ~43% | Add 22–44, A2s+, suited broadways, weaker offsuit hands |
 
 The rule: ==the later you act, the more hands you can open profitably==. Because the button always acts last postflop, it's the most valuable seat in poker.
+
+Two things that table is **not** saying. The percentage is a share of all 1,326 starting-hand combinations, so ~13% is about 172 of them — that is how wide a solid regular opens under the gun, not how wide this page asks a beginner to open. And the hands beside each seat are the **core**: the UTG row above is 58 combinations, and each row below it only lists what that seat adds. The sections that follow widen the core as you improve; the last stretch up to a full ~13% belongs to the GTO charts further down.
 
 See how the opening range widens seat by seat — UTG, MP, CO, and BTN (the full 13×13 grid of all 169 hands is in the hand chart tool linked below):
 

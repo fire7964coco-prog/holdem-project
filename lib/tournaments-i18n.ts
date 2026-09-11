@@ -1514,6 +1514,16 @@ const MONTH_ES = ["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","n
      (15억 → ₩1.5bn / 15億ウォン / 15亿韩元 / 1.500 millones de KRW).
    ──────────────────────────────────────────────────────────── */
 const NOTE_EN: Record<string, string> = {
+  // 2026-09-11 회차 Q1: 오스트리아 6행이 NOTE_* 어디에도 없어 비KO 보드가 바이인만 맨몸으로 보여주고 있었다
+  //   (`localizedNote` 가 undefined 면 배지를 아예 안 그린다 — 한국어 폴백 금지). 특히 범위형 바이인은
+  //   하한이 «새틀라이트 가격»이라 해설 없이 보면 「그 돈이면 이 대회를 칠 수 있다」로 읽힌다.
+  //   🔴 ja·zh·zh-hant·es·de 는 아직 비어 있다 — 진행 파일 §5 참조.
+  "capt-graz": "Main Event €500+50 (Day 1A–1C, best stack forward) · CAPT Opening €15,000 GTD · satellites from €50+10",
+  "capt-seefeld-oct": "Main Event €500+50 · the pricier NLH Unicorn Seefeld (€1,000+100) runs Oct 7–8 and is a side event, not the Main",
+  "capt-bregenz-oct": "Main Event €1,100 · Lake Constance (Bodensee) Hold'em Trophy €30,000 GTD",
+  "capt-innsbruck-nov": "Main Event €1,000+100 — Innsbruck's first ever €1,100 Main Event",
+  "capt-million-baden": "Season finale · Main Event €500+50 / €1,000,000 GTD",
+  "pokermania-xl-velden": "Main Event €200+30, best stack forward · Day 1A–1E in Velden plus a Sep 27 starting day at Casino Graz · €50,000 GTD · min cash €500 · Mega Satellite from €30+6",
   // 2026-09-03 M-082 ② 추가 13건
   "hpt-5": "₩1.6B total prize · online satellites on Hangame Royal Hold'em → live Main Event (Day 1 Sep 11–12 · Day 2 Sep 13) · open to Korean nationals",
   // 2026-09-04 M-086 ⑤: ko note가 「2년 만의 서울 복귀」를 되찾고 SEAT·주최를 얻었다 → EN도 같은 내용으로 맞춘다.

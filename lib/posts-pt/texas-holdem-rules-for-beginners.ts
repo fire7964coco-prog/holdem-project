@@ -323,9 +323,9 @@ Se a sua chance percentual de ganhar for **maior** do que o percentual que as po
 
 ## Cola de regras do Texas Hold'em em PDF para imprimir
 
-Esta é a versão rápida para deixar do lado da mesa. Copie para as suas notas, imprima a página ou use o PDF em inglês antes do jogo em casa.
+Esta é a versão rápida para deixar do lado da mesa. Copie para as suas notas, imprima a página ou leve o PDF antes do jogo em casa.
 
-[Baixe o PDF de regras do Texas Hold'em para iniciantes (em inglês)](/downloads/texas-holdem-rules-for-beginners.pdf)
+**[Baixe o PDF de regras do Texas Hold'em para iniciantes (A4, 2 páginas)](/downloads/texas-holdem-rules-for-beginners-pt.pdf)** — em português, com ranking de mãos, rodadas de apostas e o setup de fichas. Imprima uma vez e deixe ao lado da mesa.
 
 | Tema | Resposta para iniciantes |
 |------|-----------------|

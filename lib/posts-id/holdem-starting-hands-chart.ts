@@ -8,14 +8,14 @@ export const POST: Post = {
   tldr: "Dari 169 tipe starting hand, hanya irisan atas kecil — sekitar 15–20% kartu yang Anda terima — yang profit untuk pemula. Pair besar (AA–TT) dan AK raise dari kursi mana pun; makin belakang Anda beraksi, makin lebar Anda open — dari ~13% di under the gun hingga ~43% di button (lebih lebar lagi di 6-max). Mulai dengan chart sederhana, tambahkan chart preflop GTO setelah raise-or-fold jadi otomatis.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-09-10",
+  updated: "2026-09-11",
   // 2026-09-09: EN 09-09 정정(77/88 UTG 위치 · suited ~6,5→6,4% · 목록 머리말) 본문 전파 완료.
   //   🔴 masterUpdated는 08-11에 그대로 둔다 — 아래 미결 항목의 드리프트 추적기다(올리면 게이트가 눈이 먼다).
   // masterUpdated 08-11 유지 — EN 08-26 변경 중 PDF 앵커 정정(9-max 전용 + 6-max 한 줄)과
   //   suited FAQ 정밀화(2pt·AKs 67/AKo 65)는 08-27에 이식 완료. 남은 유일한 델타 = UTG 확장 목록의
   //   AJo 삭제(EN은 «AQo»만) — 사장님 판단 대기 #1(UTG 13% 구성)과 같은 갈래라 임의 소급 금지.
   //   #1 판정 후 함께 반영하고 그때 masterUpdated를 올릴 것.
-  masterUpdated: "2026-09-09",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "10 mnt",
   emoji: "🂡",
@@ -109,6 +109,8 @@ Inilah chart starting hands poker untuk meja 9-max standar:
 
 Aturannya: ==makin belakang Anda beraksi, makin banyak tangan yang bisa Anda open secara profit==. Karena button selalu beraksi terakhir postflop, ia adalah kursi paling berharga di poker.
 
+Ada dua hal yang **tidak** ditunjukkan oleh tabel itu. Persentasenya adalah bagian dari total 1.326 kombinasi starting hand, jadi ~13% itu kira-kira 172 kombinasi — selebar itulah seorang reguler yang solid open dari UTG, bukan selebar yang diminta halaman ini kepada pemula. Dan tangan di sebelah tiap kursi adalah **inti**-nya: baris UTG di atas berisi 58 kombinasi, dan tiap baris di bawahnya hanya menyebut apa yang ditambahkan kursi itu. Bagian-bagian berikutnya melebarkan inti tersebut seiring Anda berkembang; sisa jarak sampai ~13% penuh ada di chart GTO yang dibahas lebih jauh di bawah.
+
 Lihat bagaimana opening range melebar kursi demi kursi — UTG, MP, CO, dan BTN (grid 13×13 lengkap berisi semua 169 tangan ada di alat chart tangan yang ditautkan di bawah):
 
 :::rangechart:::
@@ -119,7 +121,7 @@ Mau versi sebagai alat mandiri dengan range yang diperluas per kursi? Gunakan [a
 
 UTG adalah kursi tersulit untuk dimainkan. ==r:Delapan pemain masih beraksi di belakang Anda.== Tangan apa pun yang Anda open di sini harus bertahan melawan range yang kuat.
 
-Inti dari range UTG (range penuh ~13% melebar ke pair menengah seperti 77–99, lebih banyak suited broadway, dan beberapa tangan offsuit seperti AQo/AJo seiring Anda meningkat):
+Inti dari range UTG (range penuh ~13% melebar ke pair menengah seperti 77–99, lebih banyak suited broadway, dan beberapa tangan offsuit seperti AQo seiring Anda meningkat):
 
 - Pocket pair: **TT, JJ, QQ, KK, AA**
 - Premium suited: **AKs, AQs, AJs, KQs**

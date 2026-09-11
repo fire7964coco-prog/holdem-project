@@ -128,6 +128,7 @@ const CONTENT = {
 
   ko: {
     dir: "ltr",
+    pageSize: "A4",
     fileName: "texas-holdem-rules-for-beginners-ko.pdf",
     fontStack: "'Malgun Gothic', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif",
     brand: "holdemmaster.com",
@@ -222,6 +223,7 @@ const CONTENT = {
 
   ja: {
     dir: "ltr",
+    pageSize: "A4",
     compact: true,
     fileName: "texas-holdem-rules-for-beginners-ja.pdf",
     fontStack: "'Yu Gothic', 'Meiryo', 'Noto Sans JP', sans-serif",
@@ -317,6 +319,7 @@ const CONTENT = {
 
   zh: {
     dir: "ltr",
+    pageSize: "A4",
     compact: true,
     fileName: "texas-holdem-rules-for-beginners-zh.pdf",
     fontStack: "'Microsoft YaHei', 'Noto Sans SC', 'PingFang SC', sans-serif",
@@ -509,6 +512,206 @@ const CONTENT = {
     },
     tip: "Tipp: Einmal ausdrucken und für die ersten Runden neben den Tisch legen.",
   },
+  /* pt — 2026-09-11 추가(결재 6·소품). 그전까지 pt 글은 **영어 PDF**를 «(em inglês)» 표기와 함께 걸고 있었다.
+     문안은 lib/posts-pt/texas-holdem-rules-for-beginners.ts 에서 축어 이식했다.
+     🪶 예외 1곳 — tiebreak 꼬리절 「naipe nunca decide」는 그 자리의 축어가 아니라 같은 글 FAQ(:421
+        「não existe hierarquia de naipes no Texas Hold'em」)의 명제를 옮긴 것이다. de 블록(:458)과 같은 꼴. */
+  pt: {
+    dir: "ltr",
+    pageSize: "A4",
+    fileName: "texas-holdem-rules-for-beginners-pt.pdf",
+    fontStack: "'Helvetica Neue', Arial, sans-serif",
+    brand: "holdemmaster.com",
+    title: "Regras de Texas Hold'em para Iniciantes",
+    subtitle: "Cola de uma página: ranking de mãos, fluxo do jogo e o básico",
+    page2Title: "Jogar, apostar e ganhar - referência para iniciantes",
+    footer1: "holdemmaster.com · Regras de Texas Hold'em para Iniciantes",
+    footer2: "Guia completo: holdemmaster.com/pt/blog/texas-holdem-rules-for-beginners",
+    pageLabel: (n, total) => `Página ${n} de ${total}`,
+    howItWorks: {
+      heading: "Como o jogo funciona",
+      paras: [
+        "Cada jogador recebe 2 cartas fechadas. Cinco cartas comunitárias ficam abertas no centro da mesa.",
+        "Você monta a melhor mão de 5 cartas com qualquer combinação das sete - usando duas, uma ou até nenhuma das suas.",
+        "São 4 rodadas de apostas: pré-flop, flop, turn e river. No showdown, a melhor mão leva o pote - ou você ganha antes, se todos os outros foldarem.",
+      ],
+    },
+    handRankings: {
+      heading: "Ranking de mãos",
+      hint: "da mais forte para a mais fraca",
+      headers: ["", "MÃO", "EXEMPLO", "O QUE SIGNIFICA"],
+      rows: [
+        ["Royal flush", ["A", "K", "Q", "J", "10"], "spade", "A melhor mão possível"],
+        ["Straight flush", ["9", "8", "7", "6", "5"], "heart", "5 em sequência, mesmo naipe"],
+        ["Quadra", ["Q", "Q", "Q", "Q"], null, "Quatro cartas do mesmo valor"],
+        ["Full house", ["K", "K", "K", "7", "7"], null, "Trinca + par"],
+        ["Flush", ["A", "J", "8", "5", "2"], "diamond", "5 do mesmo naipe, ordem não importa"],
+        ["Sequência", ["10", "9", "8", "7", "6"], null, "5 em sequência, naipes misturados"],
+        ["Trinca", ["8", "8", "8"], null, "Três cartas do mesmo valor"],
+        ["Dois pares", ["A", "A", "9", "9"], null, "Dois pares diferentes"],
+        ["Par", ["J", "J"], null, "Duas cartas do mesmo valor"],
+        ["Carta alta", ["A", "K", "7", "4", "2"], null, "Nenhuma combinação"],
+      ],
+      tiebreak:
+        "Empate: mesmo tipo de mão? Comparam-se as cartas mais altas (o kicker). Se as melhores cinco cartas forem exatamente iguais, o pote é dividido - naipe nunca decide.",
+    },
+    bettingRounds: {
+      heading: "As quatro rodadas de apostas",
+      steps: [
+        ["PRÉ-FLOP", "0 cartas", "Você age só com as 2 cartas da mão"],
+        ["FLOP", "3 cartas", "As primeiras cartas compartilhadas aparecem"],
+        ["TURN", "+1 carta", "Aparece a quarta carta comunitária"],
+        ["RIVER", "+1 carta", "Aparece a quinta e última carta"],
+      ],
+      showdown:
+        "Showdown: se dois ou mais jogadores chegam ao fim do river, a melhor mão de 5 cartas leva o pote.",
+    },
+    whoActsFirst: {
+      heading: "Quem age primeiro?",
+      rows: [
+        ["Pré-flop:", "o jogador à esquerda do big blind age primeiro."],
+        ["Depois do flop:", "o primeiro jogador ativo à esquerda do botão (o botão age por último)."],
+      ],
+      memory:
+        "Truque: antes do flop, olhe à esquerda do big blind. Depois do flop, olhe à esquerda do botão.",
+    },
+    bettingActions: {
+      heading: "Ações de aposta",
+      hint: "só existem estas quatro",
+      actions: [
+        ["Foldar", "Você desiste da mão."],
+        ["Check", "Você passa a vez sem aposta na mesa."],
+        ["Pagar", "Você iguala a aposta atual."],
+        ["Apostar / Aumentar", "Você coloca fichas ou aumenta a aposta."],
+      ],
+    },
+    startingHands: {
+      heading: "Boas mãos iniciais",
+      hint: "jogue estas com confiança",
+      line: "AA  KK  QQ  JJ   —   AK  AQ   —   TT-77   —   broadways suited (KQs, QJs, JTs)",
+    },
+    chipSetup: {
+      heading: "Fichas para o home game",
+      hint: "200 em fichas = 100 big blinds com blinds 1/2",
+      headers: ["FICHA", "VALOR", "POR JOGADOR", "TOTAL"],
+      rows: [
+        ["Branca", "1", "20", "20"],
+        ["Vermelha", "5", "16", "80"],
+        ["Azul", "25", "4", "100"],
+      ],
+    },
+    mistakes: {
+      heading: "Erros comuns de iniciante",
+      items: [
+        "Achar que precisa usar as duas cartas da mão - ganha a melhor mão de cinco cartas, ponto.",
+        "Esquecer que a ordem de ação muda depois do flop.",
+        "Jogar qualquer ás; ases fracos costumam fazer o segundo melhor par.",
+        "Correr atrás de todo draw - continue só quando o preço estiver certo.",
+      ],
+    },
+    tip: "Dica: imprima uma cópia por jogador e deixe ao lado da mesa nas primeiras sessões.",
+  },
+
+  /* id — 2026-09-11 추가(결재 6·소품). 그전까지 id 글은 영어 PDF를 «(berbahasa Inggris)» 표기와 함께 걸고 있었다.
+     문안은 lib/posts-id/texas-holdem-rules-for-beginners.ts 에서 축어 이식했다.
+     🔴 예외 1곳 — tiebreak 꼬리절 「jenis kartu tidak pernah menentukan」은 **id 글에 대응 명제가 없다**(grep 0건).
+        de 블록(:458 「Farben entscheiden nie」)에서 가져온 추가다. 포커 사실로는 참이지만(§13 · 무늬 서열 없음)
+        「전부 축어」가 아니므로 여기 적어 둔다 — 다음 세션이 「대조 불필요」로 읽지 않게. */
+  id: {
+    dir: "ltr",
+    pageSize: "A4",
+    fileName: "texas-holdem-rules-for-beginners-id.pdf",
+    fontStack: "'Helvetica Neue', Arial, sans-serif",
+    brand: "holdemmaster.com",
+    title: "Aturan Texas Hold'em untuk Pemula",
+    subtitle: "Cheat sheet satu halaman: peringkat kartu, alur permainan, dan dasar-dasarnya",
+    page2Title: "Main, Bertaruh, Menang - Referensi Pemula",
+    footer1: "holdemmaster.com · Aturan Texas Hold'em untuk Pemula",
+    footer2: "Panduan lengkap: holdemmaster.com/id/blog/texas-holdem-rules-for-beginners",
+    pageLabel: (n, total) => `Halaman ${n} dari ${total}`,
+    howItWorks: {
+      heading: "Cara Permainan Berjalan",
+      paras: [
+        "Setiap pemain menerima 2 hole cards tertutup. Lima kartu bersama dibuka di tengah meja.",
+        "Anda menyusun tangan 5 kartu terbaik dari ketujuh kartu itu - memakai dua, satu, atau bahkan nol hole cards.",
+        "Ada 4 ronde taruhan: preflop, flop, turn, river. Di showdown, tangan terbaik memenangkan pot - atau Anda menang lebih awal kalau semua pemain lain fold.",
+      ],
+    },
+    handRankings: {
+      heading: "Peringkat Kartu",
+      hint: "terkuat di atas",
+      headers: ["", "TANGAN", "CONTOH", "ARTINYA"],
+      rows: [
+        ["Royal Flush", ["A", "K", "Q", "J", "10"], "spade", "Tangan terbaik yang mungkin"],
+        ["Straight Flush", ["9", "8", "7", "6", "5"], "heart", "5 berurutan, satu jenis"],
+        ["Four of a Kind", ["Q", "Q", "Q", "Q"], null, "Empat kartu bernilai sama"],
+        ["Full House", ["K", "K", "K", "7", "7"], null, "Three of a kind + pair"],
+        ["Flush", ["A", "J", "8", "5", "2"], "diamond", "5 kartu sejenis, urutan bebas"],
+        ["Straight", ["10", "9", "8", "7", "6"], null, "5 berurutan, jenis campur"],
+        ["Three of a Kind", ["8", "8", "8"], null, "Tiga kartu bernilai sama"],
+        ["Two Pair", ["A", "A", "9", "9"], null, "Dua pair berbeda"],
+        ["One Pair", ["J", "J"], null, "Dua kartu bernilai sama"],
+        ["High Card", ["A", "K", "7", "4", "2"], null, "Tidak terbentuk kombinasi"],
+      ],
+      tiebreak:
+        "Seri: tipe tangan sama? Bandingkan kartu tertinggi (kicker). Kalau lima kartu terbaiknya persis sama, pot dibagi rata - jenis kartu tidak pernah menentukan.",
+    },
+    bettingRounds: {
+      heading: "Empat Ronde Taruhan",
+      steps: [
+        ["PREFLOP", "0 kartu", "Anda bertindak hanya dengan 2 hole cards"],
+        ["FLOP", "3 kartu", "Kartu bersama pertama muncul"],
+        ["TURN", "+1 kartu", "Kartu bersama keempat muncul"],
+        ["RIVER", "+1 kartu", "Kartu bersama kelima dan terakhir"],
+      ],
+      showdown:
+        "Showdown: kalau dua pemain atau lebih masih bertahan setelah river, tangan 5 kartu terbaik memenangkan pot.",
+    },
+    whoActsFirst: {
+      heading: "Siapa yang Jalan Duluan?",
+      rows: [
+        ["Preflop:", "pemain di kiri big blind yang jalan duluan."],
+        ["Setelah flop:", "pemain aktif pertama di kiri Button (Button hampir selalu bertindak terakhir)."],
+      ],
+      memory:
+        "Trik mengingat: sebelum flop, lihat ke kiri big blind. Setelah flop, lihat ke kiri Button.",
+    },
+    bettingActions: {
+      heading: "Aksi Taruhan",
+      hint: "hanya ada empat ini",
+      actions: [
+        ["Fold", "Anda melepas tangan Anda."],
+        ["Check", "Anda lewat tanpa ada taruhan aktif."],
+        ["Call", "Anda menyamakan taruhan saat ini."],
+        ["Bet / Raise", "Anda memasang chip atau menaikkan taruhan."],
+      ],
+    },
+    startingHands: {
+      heading: "Kartu Awal yang Kuat",
+      hint: "mainkan ini dengan percaya diri",
+      line: "AA  KK  QQ  JJ   —   AK  AQ   —   TT-77   —   suited broadway (KQs, QJs, JTs)",
+    },
+    chipSetup: {
+      heading: "Susunan Chip untuk Home Game",
+      hint: "200 chip = 100 big blind di blinds 1/2",
+      headers: ["CHIP", "NILAI", "PER PEMAIN", "TOTAL"],
+      rows: [
+        ["Putih", "1", "20", "20"],
+        ["Merah", "5", "16", "80"],
+        ["Biru", "25", "4", "100"],
+      ],
+    },
+    mistakes: {
+      heading: "Kesalahan Umum Pemula",
+      items: [
+        "Mengira wajib memakai kedua hole cards - yang menang selalu tangan 5 kartu terbaik.",
+        "Lupa bahwa urutan aksi berubah setelah flop.",
+        "Memainkan semua As; As lemah sering berakhir jadi pair terbaik kedua.",
+        "Mengejar semua draw - lanjut hanya kalau harganya pas.",
+      ],
+    },
+    tip: "Tips: cetak satu lembar per pemain dan taruh di samping meja untuk beberapa sesi pertama.",
+  },
 };
 
 // ── HTML 빌드 ───────────────────────────────────────────
@@ -596,6 +799,9 @@ function renderHtml(c, favicon, langCode = "en") {
 <meta charset="utf-8" />
 <style>
   @page { size: ${c.pageSize ?? "Letter"}; margin: 0; }
+  /* 🔴 .page 치수는 @page 와 반드시 같은 값이어야 한다 — .page 가 더 넓으면 넘치는 만큼이 **용지 경계에서**
+     잘리고(overflow:hidden 이 막아 주는 게 아니다), 더 좁으면 그만큼 빈다.
+     2026-09-11 이전에는 8.5in×11in 고정이라, A4(210mm) 를 고른 de 가 오른쪽 5.9mm 를 잃고 있었다. */
   * { box-sizing: border-box; margin: 0; padding: 0; }
   :root {
     --felt: #0d3d2b;
@@ -613,7 +819,7 @@ function renderHtml(c, favicon, langCode = "en") {
   html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   body { font-family: ${c.fontStack}; color: var(--ink); }
   .page {
-    width: 8.5in; height: 11in; overflow: hidden;
+    width: ${PAGE_DIMS[c.pageSize ?? "Letter"].w}; height: ${PAGE_DIMS[c.pageSize ?? "Letter"].h}; overflow: hidden;
     padding: 0 0 0.5in 0; position: relative;
   }
   .page.first { page-break-after: always; }
@@ -769,6 +975,12 @@ function renderHtml(c, favicon, langCode = "en") {
 </body>
 </html>`;
 }
+
+/** 용지 치수 — `@page size` 와 `.page` 박스가 **같은 값**을 써야 한다. */
+const PAGE_DIMS = {
+  Letter: { w: "8.5in", h: "11in" },   // 미국 규격 — en 만 쓴다
+  A4: { w: "210mm", h: "297mm" },      // ko·ja·zh·de·pt·id — 각 시장 프린터의 기본 용지
+};
 
 // ── PDF 출력 ────────────────────────────────────────────
 async function renderPdf(lang, favicon, browser) {

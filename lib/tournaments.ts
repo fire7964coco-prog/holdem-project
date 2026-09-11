@@ -3050,6 +3050,52 @@ const RAW_TOURNAMENTS: Tournament[] = [
     sourceTier: "A",
     verifiedAt: "2026-09-06",
   },
+  /* ── Casinos Austria 기타 시리즈(CAPT 아님) ──────────────────────────────
+     🔴 위 「CAPT — 잔여 5개 스톱」 블록은 `capt-*` **5행 그대로**다. 아래는 CAPT 스톱이 아니므로 세지 마라
+     (공식 포커 캘린더에서 `series=5` 로 CAPT 와 별개로 분류된다). 렌더 순서는 startDate 정렬이라 위치와 무관하다. */
+
+  /* ── Pokermania XL (Casino Velden) — 2026-09-11 신설(결재 6·소품 · M-102 §7 미결) ──
+     왜 별행인가: `capt-graz` 주석이 「9/27 Pokermania XL «200 + 30»(Casino Velden 개최 · 그라츠는 Starttag만)」이라
+     그라츠 note 에 넣지 못하고 주석에만 남아 있었다. 개최지·기간이 다른 **독립 시리즈**라 행으로 세운다.
+     🔴 1차 출처 축어(2026-09-11 본체 재실측 · casinos.at 은 봇에 403이라 r.jina.ai 경유):
+       · Velden 포커 페이지: 「Bei der Pokermania XL vom 29.9. bis 4.10.2026」 · 「Garantierter Preispool: 50.000 Euro」 ·
+         「2 DAY EVENT」 · 「„best stack forward"」 · 「„ min cash" für das Turnier beträgt 500 Euro」 · 「ITM wird bei ca. 15% erreicht」
+       · 공식 포커 캘린더(`/events/poker-kalender?casino=11&series=5`) 전건 열거 — 바이인의 출처는 여기다:
+         Di. 29.09. Mega Satellite 「€ 30 + 6」(10 Tickets Garantie) · Mi. 30.09. Day 1A · Do. 01.10. Day 1B ·
+         Fr. 02.10. Day 1C · Sa. 03.10. Day 1D(16:00)·Turbo Day 1E(20:00) · So. 04.10. Day 2 — 1A~1E 전부 「€ 200 + 30」·「€ 50.000 Garantie」
+     🔴 **날짜의 «범위»는 A급 둘이 갈린다 — 좁은 쪽을 쓰되 넓은 쪽을 note 에 적는다.**
+        벨덴 페이지의 「29.9. ~ 4.10.」은 **벨덴 개최분** 기준이다. 그라츠 Turnierplan 2026-09 는 같은 대회의
+        스타팅데이 하나를 **9/27 그라츠**에 싣는다 — 축어 「Sonntag, 27. September 2026 / 15:00  NLH Pokermania XL -
+        Casino Velden Starttag / € 50.000 garantiert  200 + 30  30k/30‘  Level 8  2 Days  unlimited」.
+        가격·보장액이 벨덴 1A~1E 와 **한 푼도 다르지 않다** = 새틀라이트가 아니라 **Day 1 플라이트**다.
+        `startDate` 는 `sourceUrl`(벨덴 페이지)이 축어로 지지하는 9/29 로 두되, **note 가 9/27 을 말한다** —
+        「Day 1A~1E」만 적으면 완결 열거로 읽혀 9/27 에 칠 수 있는 독자가 대회를 놓친다(레그→이벤트→플라이트 계층 혼동).
+     🔴 **2025판 PDF를 쓰지 마라** — `.../09_Pokermania_XL/turnierplan-pokermania-web.pdf` 는 「30. SEPTEMBER BIS 04. OKTOBER 2025」
+        (Published 2025-09-01)라 **한 해 낡았다**. 날짜가 하루씩 어긋나므로 그쪽을 근거로 되돌리지 마라.
+     🔴 회귀 앵커 주의: M-102 §6 이 `/tournaments` 의 0-감시 문자열로 「€30+6」을 걸어 뒀는데(그라츠 구값),
+        **벨덴 메가새틀이 진짜 €30+6이라** 이 행이 서면 그 앵커가 더는 0이 아니다. 앵커를 그라츠 문맥으로 좁혀야 한다.
+        🪶 위 `capt-graz` 주석의 「구형 문자열은 주석에도 축어로 안 적는다」와 어긋나 보이지만 아니다 — 그 규율은
+        **폐기된 틀린 값**이 계수에 섞이는 걸 막으려는 것이고, 여기 「€30+6」은 벨덴의 **현행 참값**이라 note 로
+        렌더까지 된다. 앵커가 깨지는 원인은 주석이 아니라 렌더되는 note 다. */
+  {
+    id: "pokermania-xl-velden",
+    name: "포커매니아 XL 벨덴",
+    nameEn: "Pokermania XL Velden",
+    type: "international",
+    startDate: "2026-09-29",
+    endDate: "2026-10-04",
+    location: "오스트리아 벨덴 (Casino Velden)",
+    city: "Velden",
+    country: "AT",
+    venue: "Casino Velden",
+    buyin: "€36~€230",
+    emoji: "🇦🇹",
+    color: "bg-rose-500/15 text-rose-400 border-rose-500/30",
+    note: "메인 €200+30 · 벨덴 Day 1A~1E + 9/27 그라츠 스타팅데이 · best stack forward · €50,000 GTD · min cash €500 · 최저 €30+6 메가새틀",
+    sourceUrl: "https://www.casinos.at/casinos/velden/spiel/poker",
+    sourceTier: "A",
+    verifiedAt: "2026-09-11",
+  },
   {
     id: "capt-seefeld-oct",
     name: "CAPT 제펠트 (10월)",
@@ -3061,6 +3107,15 @@ const RAW_TOURNAMENTS: Tournament[] = [
     city: "Seefeld",
     country: "AT",
     venue: "Casino Seefeld",
+    // 🔴 2026-09-11 결재 6·소품 「CAPT buyin 규약」 판정 — **단일값을 유지한다.** 한 번 «€550~€1,100»으로
+    //    넓혔다가 되돌렸다. 이유는 규약의 «상한이 무엇이냐»다:
+    //      · `capt-graz` 「€60~€550」 = 새틀라이트(하한) ~ **메인**(상한)
+    //      · 제펠트를 「€550~€1,100」으로 하면 상한이 **사이드이벤트**(NLH Unicorn)가 되어 형제 행과 뜻이 뒤집히고,
+    //        메인 가격 €550이 «하한»으로 숨는다. 비KO 로케일은 note 배지를 아예 안 그리므로(→ `tournaments-i18n.ts`)
+    //        EN 독자에겐 「제펠트 메인 = €1,100」으로 읽힌다. **개정 전 단일값이 메인에 대해서는 더 정확했다.**
+    //    → 규약 = **`buyin` 의 상한은 언제나 메인 이벤트**다. 하한은 «실측된 더 싼 참가 경로»가 있을 때만 붙인다
+    //      (그라츠는 Turnierplan 으로 €50+10 새틀을 실측했고, 제펠트·브레겐츠·인스브루크·바덴은 실측이 없다).
+    //      메인보다 비싼 사이드(Unicorn €1,000+100)는 상한에 올리지 않고 note 에 둔다 — 아래 note 가 이미 그렇게 한다.
     buyin: "€550",
     emoji: "🇦🇹",
     color: "bg-rose-500/15 text-rose-400 border-rose-500/30",

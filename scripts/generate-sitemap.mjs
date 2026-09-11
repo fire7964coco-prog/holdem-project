@@ -246,7 +246,7 @@ function gitLastModified(paths, fallback) {
 
 /** 라우트 → 그 라우트를 그리는 소스 경로. 명시 안 된 건 `app/<path>`로 추론한다. */
 const ROUTE_SOURCES = {
-  "/": ["app/page.tsx", "app/home-client.tsx"],
+  "/": ["app/page.tsx", "app/community/community-home.tsx", "app/community/community-client.tsx"],
   "/blog": ["app/blog/page.tsx"],
   "/blog/roadmap": ["app/blog/roadmap"],
   // 데이터가 바뀌면 페이지 내용도 바뀐다 — 데이터 파일을 함께 본다

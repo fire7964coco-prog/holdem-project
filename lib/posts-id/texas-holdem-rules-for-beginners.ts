@@ -325,9 +325,9 @@ Kalau persentase peluang menang Anda **lebih tinggi** dari persentase yang ditun
 
 ## Cheat Sheet Aturan Texas Hold'em Siap Cetak
 
-Ini versi ringkas untuk ditaruh di samping meja. Anda bisa menyalinnya ke catatan, mencetak halaman ini, atau memakai PDF yang kami sediakan (berbahasa Inggris) sebelum home game.
+Ini versi ringkas untuk ditaruh di samping meja. Anda bisa menyalinnya ke catatan, mencetak halaman ini, atau membawa PDF-nya sebelum home game.
 
-[Unduh PDF Aturan Texas Hold'em untuk Pemula](/downloads/texas-holdem-rules-for-beginners.pdf)
+**[Unduh PDF Aturan Texas Hold'em untuk Pemula (A4, 2 halaman)](/downloads/texas-holdem-rules-for-beginners-id.pdf)** — berbahasa Indonesia, lengkap dengan peringkat kartu, ronde taruhan, dan susunan chip. Cetak sekali dan taruh di samping meja.
 
 | Topik | Jawaban untuk pemula |
 |------|-----------------|

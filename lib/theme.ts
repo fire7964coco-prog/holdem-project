@@ -29,7 +29,7 @@ export const DIVIDER        = "#d0c8b8";   // 구분선
 export const SURFACE        = "#e2dccf";   // 프로그레스 배경 등
 
 export const FLAG: Record<string, string> = {
-  ko: "🇰🇷", en: "🇺🇸", ja: "🇯🇵", zh: "🇨🇳", es: "🇪🇸", de: "🇩🇪",
+  ko: "🇰🇷", en: "🇺🇸", ja: "🇯🇵", zh: "🇨🇳", es: "🇲🇽", de: "🇩🇪",
   pt: "🇧🇷", ar: "🇸🇦", tr: "🇹🇷", vi: "🇻🇳", id: "🇮🇩", ms: "🇲🇾", hi: "🇮🇳",
 };
 
