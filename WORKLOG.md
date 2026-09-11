@@ -7,6 +7,7 @@
 - **렌즈 4종(Opus)**: 라틴·SEO 23 · 수학 1(🟠 LA §156 «포스트한 라이브 블라인드» 오지정 → 구절 삭제, BB+스트래들만) · 딜러 17(🔴 all-in-rules L194·L243·L255 캐시 서술이 새 showdown 문안과 반대 · 스트링 «콜» 처분은 TDA §43-A 50% 규칙 · §14 and→or · CJK 직답 3블록 모순) · CJK 32(zh-hant `活盲抓` 정본 · `尺度→尺寸` · 용어표 「中文（English）」 · ja 괄호 규약 · 조사). **2차 교열 10건**(all-in FAQ L259 8자리 예외 누락 · id L255 미전파 · L255 «올인한 사람» 지시 불명 → 포트 단위 순서 · zh-hant blind 직답 「正常情況下」 · ja 프레임 축 · 괄호 파일 관례). 채택 ≈ 75 · 기각 = 딜러 #16(NL 한정어 — 사이트 전체 NLHE) · #17 · 라틴 #22(H2 교체는 GSC 먼저). 마지막 ja 직답 174→163자.
 - **게이트**: `audit:hard` en+7로케일 🔴 0(🟠는 전부 기존 C2) · `check:answer-echo` ja/zh/zh-hant echo 0(ja length 0) · `check:structure` 핵심 0 · `check:drift` 🔴 5 = **ar 5편**(제외 대상 · 의도된 신호) · mirror-pair 12편 갈림 = 기존 2건(strategy·tournament 수치) · hangul/cjk/meta/intl-links/faq-schema 0 · 빌드 EXIT 0 · 70+525.
 - **문서**: `en-first-queue` §2-A~2-C 삭제 → 종결 절 + 기각 4 + 잔여 표(ar·fr · 꼬리 15로케일 §13급 3건 · NL 한정어 · H2) · `locale-intentional-diffs` de strategy 행 · 핸드오프 2순위 행 교체 + **ja 레인 «회차 없음» 정정**(회차 11 브리프 미커밋 실측) + MB-033 · ja 진행 §5 헤드 통지.
+- 🪶 **마감 중 실측**: ja 레인이 14:13에 **회차 11을 커밋**(`9fbe7b6e` · 렌즈·2차 교열까지 C 구간 완료)해 있었다 — 핸드오프의 「회차 없음」·「브리프 미커밋」은 둘 다 낡은 서술이었다(레인 통지 전 워크트리 확인 규율 재확인). 헤드 `lane:sync --apply`가 그 위에 main을 머지하다 `bad-beat`·`strategy` **`masterUpdated` 09-09↔09-11 충돌 2건** → 헤드 값 09-11 채택·머지 커밋. main 머지는 지시 대기.
 
 ## 2026-09-11 (6) — **zh·zh-hant 직답 블록 «길이 규격» 헤드 판정 = 60~130** (게이트·프로토콜·settled 승격 · 배포 없음)
 
