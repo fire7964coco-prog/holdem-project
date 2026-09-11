@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Blinds are forced bets posted before cards are dealt. The small blind sits left of the dealer button and the big blind to their left; the big blind — usually double the small blind — is the table's betting unit.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-09-09",
+  updated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "💰",
@@ -30,7 +30,7 @@ Blinds are ==the engine that keeps poker moving== — the first piece of the [ru
 ### The core numbers
 
 :::stripe
-2 | forced bets posted every single hand
+2 | forced bets — the small blind and the big blind
 1/2 | the small blind is usually half the big blind
 1 BB | the big blind = the table's betting unit
 :::
@@ -39,7 +39,7 @@ Blinds are ==the engine that keeps poker moving== — the first piece of the [ru
 
 ## What Is a Blind in Poker — and Why Does It Exist?
 
-A **blind** is a bet you're forced to make *before* your cards arrive — you're betting "blind," sight unseen. Two players post them every hand: the small blind and the big blind, the two seats immediately left of the dealer button.
+A **blind** is a bet you're forced to make *before* your cards arrive — you're betting "blind," sight unseen. Two players post them on every normal hand: the small blind and the big blind, the two seats immediately left of the dealer button. (The one exception is a dead button, which can leave the small blind unposted for a hand.)
 
 Why force anyone to pay? To keep the game alive. ==r:Without blinds, every player could fold and wait endlessly for premium hands==; pots would be empty, bluffing would be pointless, and the game would stall. ==g:Two forced bets every hand guarantee there's always something to fight for.==
 

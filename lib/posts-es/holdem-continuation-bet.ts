@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Una apuesta de continuación (c-bet) es una apuesta en el flop del jugador que subió antes del flop. La regla moderna no es 'cbetear cada flop' — es apostar los flops que favorecen tu rango (boards altos y secos como K-7-2) pequeño y a menudo, y pasar los que favorecen a tu rival (boards bajos y conectados como 7-6-5). Apuesta pequeño — un tercio del bote — en boards secos, grande — dos tercios o más — en los húmedos, cbetea menos fuera de posición y mucho menos multiway.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-10",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "15 min",
   emoji: "🔥",
@@ -101,7 +101,7 @@ No hay un único porcentaje "correcto" de c-bet — quien te dé un solo número
 |:---|:---:|:---|
 | **En posición, mano a mano, board seco** | **70–100%** (pequeño) | El clásico "range bet" — apuesta casi todo, mínimo |
 | **En posición, mano a mano, board húmedo** | **~50–60%** | Más polarizado — valor y proyectos apuestan, el aire pasa |
-| **Fuera de posición, mano a mano (bote de subida simple, tú eras el agresor)** | **~30–45%** | Pasa mucho más para proteger tu rango de check. Como *3-bettor* fuera de posición se invierte — más del 97% en los dos boards que resolvimos, mira el [juego posicional](/es/blog/holdem-position-play) |
+| **Fuera de posición, mano a mano (bote de subida simple, tú eras el agresor)** | **~30–45%** | Pasa mucho más para proteger tu rango de check. Como *3-bettor* fuera de posición se invierte — más del 97% en los dos boards que resolvimos, casi todo con el tamaño de dos tercios del bote (el tamaño de un tercio quedó por debajo del 1%), mira el [juego posicional](/es/blog/holdem-position-play) |
 | **Multiway (2 rivales)** | **~50% o menos** | Alguien seguramente ligó — aprieta |
 | **Multiway (3+ rivales)** | **Solo manos fuertes y buenos proyectos** | El fold equity básicamente desapareció |
 

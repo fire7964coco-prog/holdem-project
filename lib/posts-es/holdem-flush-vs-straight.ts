@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "En el Texas Hold'em, un color (cinco cartas del mismo palo) siempre gana a una escalera (cinco cartas en secuencia), sin excepciones. La razón es pura frecuencia: hay unas 5,108 formas de ligar un color frente a 10,200 de armar una escalera, así que el color es casi el doble de raro entre las manos de cinco cartas; sobre las siete cartas hasta el river son 3.03% frente a 4.62%. Al color solo le ganan el full, el póker, la escalera de color, la escalera real y un color más alto.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "⚡",
@@ -88,7 +88,7 @@ Conocer la regla no es lo mismo que leerla en vivo — esa destreza es justo lo 
 
 Tienes **9♠ 10♠** para una **escalera limpia 6-7-8-9-10**. Se siente fuerte — pero la mesa muestra **tres corazones**. Si tu rival tiene dos corazones, tiene color, y **el color gana a la escalera**. Cada vez que haya tres o más cartas de un palo en la mesa, un color está vivo; ajusta tus apuestas y pagos en consecuencia.
 
-### Situación 2 — Proyecto doble: a escalera y a color
+### Situación 2 — Escalera hecha con proyecto de color encima
 
 :::hand[8♥,7♥,6♠,2♣] Mesa (4 cartas, turn):::
 

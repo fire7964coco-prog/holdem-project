@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Estar in position significa agir por último — você vê a decisão de cada adversário antes de gastar uma ficha. Estudos de solver e de banco de dados sugerem que jogadores out of position capturam só cerca de 60–85% da sua equity — o que deixa você acima de 100% quando está in position. É por isso que o UTG abre ~13% das mãos e o button ~43% — e por que posição reescreve cada c-bet, bluff e decisão de controle de pote no pós-flop.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-09-10",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎯",
@@ -211,7 +211,7 @@ Massivamente. A continuation bet é fundamentalmente uma jogada de informação,
 | Situação | Frequência típica de c-bet no solver (flop) |
 |---|---|
 | **IP (BTN/CO vs defesa de blind)** | **~65–75%** dos boards |
-| OOP como 3-bettor (potes de 3-bet dos blinds) | Altíssima — nas nossas rodadas de solver o big blind c-beta mais de 97% das vezes nos dois boards, Q♥T♥7♠ e 8♦5♣2♠ |
+| OOP como 3-bettor (potes de 3-bet dos blinds) | Altíssima — nas nossas rodadas de solver o big blind c-beta mais de 97% das vezes nos dois boards, Q♥T♥7♠ e 8♦5♣2♠ — no tamanho de dois terços do pote; o de um terço ficou abaixo de 1% |
 | Aumentador OOP vs pagador IP (pote de um aumento) | ~30–45% — o mais seletivo |
 
 In position, você pode dar c-bet num range largo — incluindo ar e backdoor draws — porque o seu adversário precisa responder sem saber a sua próxima jogada, e quando pagam você ainda age por último no turn. Out of position, a mesma aposta é mais arriscada: um check-raise encerra o seu bluff, e um call te deixa adivinhando primeiro em toda street restante. É por isso que dar c-bet 100% cegamente "porque você aumentou no pré-flop" queima dinheiro OOP num pote de um aumento só — a linha de quase 100% ali em cima é do 3-bettor, e é a vantagem de range dele que autoriza isso.

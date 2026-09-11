@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Going all-in means betting every chip you have. You can only win what you matched from each opponent (the main pot). Extra bets from bigger stacks form a side pot that only the players who covered them can win. An all-in for less than a full raise does NOT reopen the betting for players who already acted.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-09",
+  updated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "♠",
@@ -145,7 +145,7 @@ Why does this exist? It protects players from being forced into larger raises by
 
 ### Advanced Case: What If Multiple Players Go All-In Short?
 
-This is the version that trips up even regulars. Multiple short all-ins can **add up** to a full raise — and if their combined increments reach the threshold, betting reopens for players who already acted.
+This is the version that trips up even regulars. Multiple short all-ins can **add up** to a full raise — and if their combined increments reach the threshold, betting reopens for a player who already acted. ==r:The test is run player by player, not once for the table:== it reopens only for a player who, **when the action returns to them, is facing at least a full raise above what they have already put in** (==TDA Rule 47==).
 
 This is the official TDA "re-opening the bet" rule, and most card rooms follow it.
 
@@ -157,7 +157,7 @@ This is the official TDA "re-opening the bet" rule, and most card rooms follow i
 
 Combined increments: $4 + $7 = **$11** — that meets the $10 minimum raise threshold.
 
-**Result: betting REOPENS for Player A.** A can fold, call, or re-raise, even though neither B nor C individually made a full raise.
+**Result: betting REOPENS for Player A.** A put in $10 and now faces $21 — $11 more, at least a full raise — so A can fold, call, or re-raise, even though neither B nor C individually made a full raise. A player who had called B's $14 in between would face only $7 more when it came back around, and for them nothing reopens: call or fold.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -180,7 +180,7 @@ The minimum raise threshold is always the *last full valid bet or raise* — not
 | Single all-in < full raise | ❌ No — call or fold only |
 | Single all-in ≥ full raise | ✅ Yes — all can re-raise |
 | Multiple short all-ins, combined < full raise | ❌ No |
-| Multiple short all-ins, combined ≥ full raise | ✅ Yes |
+| Multiple short all-ins, combined ≥ full raise | ✅ Yes — for each player who now faces at least a full raise above their own last action |
 | Player who has NOT yet acted | ✅ Always can raise (regardless) |
 
 </div>
@@ -191,7 +191,7 @@ The minimum raise threshold is always the *last full valid bet or raise* — not
 
 When all betting is complete and a player is all-in, here is what happens at showdown:
 
-1. **Cards are turned face-up.** In tournaments, all hands involved in the all-in are typically tabled once betting is complete. In cash games, the standard [last-aggressor showdown rule](/en/blog/holdem-showdown-rules) applies first, then all-in players show.
+1. **Cards are turned face-up.** In tournaments, all hands involved in the all-in are typically tabled once betting is complete. In cash games it depends on when the betting ended: if it ended before the river, the player who pushed all-in turns over first (WSOP Live Action Rule 149); if the river was bet, the standard [last-aggressor showdown rule](/en/blog/holdem-showdown-rules) applies.
 2. **Side pots are awarded first.** The dealer resolves the most recently created side pot first, then works backward to the main pot.
 3. **Cards speak.** The best hand wins each pot they're eligible for — regardless of what players say they have.
 4. **Multiple winners are possible.** Player A can win the main pot. Player B can win the side pot. Neither takes everything just because they won "their" pot.
@@ -216,7 +216,7 @@ A partial all-in gives players who have **already acted** this round no second c
 Table stakes. What's on the table is all you can bet. If you're all-in for $80 and the pot is $400, you can only win $80 from each caller.
 
 ### Mistake 4: Mucking your hand too quickly
-You're all-in for the main pot. Two other players battle it out for the side pot. I once watched a short stack toss his cards the moment the side-pot showdown went against him — forgetting he wasn't even in that pot, and the main pot was still his to win. Once the dealer had swept them into the muck they were unidentifiable — dead, and the main pot went the other way. (A hand that can still be clearly identified may be retrieved at the floor's discretion, but never count on it.) Don't muck — your hand is still live for the main pot. ==Always wait for the dealer to resolve every pot before touching your cards.==
+You're all-in for the main pot. Two other players battle it out for the side pot. In a tournament this resolves itself — once their betting ends, ==TDA Rule 16== has every hand tabled, yours included. In a cash game it doesn't: I once watched a short stack toss his cards the moment the side-pot showdown went against him — forgetting he wasn't even in that pot, and the main pot was still his to win. Once the dealer had swept them into the muck they were unidentifiable — dead, and the main pot went the other way. (A hand that can still be clearly identified may be retrieved at the floor's discretion, but never count on it.) Don't muck — your hand is still live for the main pot. ==Always wait for the dealer to resolve every pot before touching your cards.==
 
 ### Mistake 5: Going all-in out of frustration
 The all-in is the most powerful move at the table. It forces opponents into all-or-nothing decisions. That power disappears when you shove randomly. Use it at the right moment — short stack pressure, value hands you want called, bluffs with real fold equity.
@@ -240,7 +240,7 @@ A. You collect the main pot (what you matched from each player) and the other pl
 
 **Q. Does going all-in expose your hand?**
 
-A. In tournaments, yes — once all betting is done with an all-in, all involved hands are typically tabled face-up. In live cash games, the standard showdown rules apply: last aggressor shows first, then others show or muck.
+A. In tournaments, yes — once all betting is done with an all-in, all involved hands are typically tabled face-up. In live cash games, the standard showdown rules apply — last aggressor shows first, then others show or muck — unless the betting ended before the river, in which case the player who went all-in turns over first (WSOP Live Action Rule 149).
 
 **Q. Can you run it twice in a poker all-in?**
 
@@ -252,11 +252,11 @@ A. Table stakes means you can only wager chips that were in front of you when th
 
 **Q. If two players go all-in for different amounts, who shows first?**
 
-A. The last all-in that was a bet or raise is the last aggressive action and shows first. An all-in that merely calls for less is not aggressive — the original bettor still shows first. In cash games, if it was a called all-in with no further action, the caller can muck if they lose after seeing the all-in player's hand (in tournaments all involved hands stay face-up).
+A. The last all-in that was a bet or raise is the last aggressive action and shows first. An all-in that merely calls for less is not aggressive — in a tournament the original bettor still shows first, while in a cash game the WSOP Live Action rules go by pot instead: anyone in the side pot shows before the player who is all-in for only the main pot (Rule 149). In cash games, if it was a called all-in with no further action, the caller can muck if they lose after seeing the all-in player's hand (in tournaments all involved hands stay face-up).
 
 **Q. Are all-in rules different in tournaments vs. cash games?**
 
-A. The core rules are the same, but there are two practical differences. First, in tournaments all hands involved in an all-in are tabled face-up as soon as all betting is complete (TDA Rule 16) — you cannot muck until showdown. In cash games, standard showdown order applies and players can muck. Second, running it twice is common in cash games (if both players agree) but is generally not permitted in tournaments.
+A. The core rules are the same, but there are two practical differences. First, in tournaments all hands involved in an all-in are tabled face-up as soon as all betting is complete (TDA Rule 16) — you cannot muck until showdown. In cash games, standard showdown order applies — unless the betting ended before the river, when the all-in player turns over first (Live Action Rule 149) — and players can muck. Second, running it twice is common in cash games (if both players agree) but is generally not permitted in tournaments.
 
 ---
 

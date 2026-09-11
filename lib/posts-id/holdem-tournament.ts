@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Di turnamen poker Anda membayar buy-in tetap untuk mendapat chip, blind naik mengikuti timer sampai satu pemain memegang semua chip. 10–15% pemain teratas ITM. Formatnya meliputi freezeout, PKO, satellite, dan deepstack — masuk lewat buy-in langsung, satellite, atau pra-registrasi online.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "14 mnt",
   emoji: "🏆",
@@ -125,6 +125,8 @@ Biasanya tersisa 6–9 pemain. Payout naik tajam dengan setiap eliminasi. [ICM (
 | **PKO (Progressive KO)** | Bounty tumbuh dengan setiap knockout — sebagian dibayar ke Anda, sebagian ditambahkan ke kepala Anda | Pemain high-variance, upside besar |
 | **Deepstack** | Starting stack jauh di atas event standar di seri yang sama, plus level lebih lambat | Pemain yang ingin lebih banyak permainan postflop |
 | **Satellite** | Hadiah = tiket masuk ke turnamen lebih besar, bukan uang tunai | Pemain hemat yang mengincar event besar |
+| **Turbo / Hyper-Turbo** | Level blind jauh lebih pendek dari event standar, jadi stack cepat menipis dan push/fold datang lebih awal | Sesi singkat — pemain yang nyaman dengan shove-or-fold |
+| **Mystery Bounty** | Event bounty di mana tiap knockout (biasanya mulai dari tahap tertentu) menarik hadiah acak — kebanyakan kecil, beberapa jackpot | Pemain yang mengejar satu bayaran besar |
 | **MTT** | Multi-Table Tournament — field besar di banyak meja | Siapa saja — format paling umum |
 | **SNG (Sit & Go)** | Mulai saat kursi terisi (tanpa waktu mulai tetap) — biasanya 6–9 pemain | Permainan cepat, tanpa perlu penjadwalan |
 
@@ -270,7 +272,7 @@ Jadwal payout bisa dicek sebelum turnamen mulai, tapi jumlah akhir posisi yang d
 
 ## Glosarium Turnamen — Istilah yang Akan Anda Dengar di Day 1
 
-13 istilah ini mencakup sebagian besar yang akan Anda dengar di meja. Untuk daftar lengkap A sampai Z, lihat [glosarium poker](/id/blog/holdem-glossary).
+16 istilah ini mencakup sebagian besar yang akan Anda dengar di meja. Untuk daftar lengkap A sampai Z, lihat [glosarium poker](/id/blog/holdem-glossary).
 
 | Istilah | Artinya |
 |------|--------------|
@@ -285,6 +287,9 @@ Jadwal payout bisa dicek sebelum turnamen mulai, tapi jumlah akhir posisi yang d
 | **Re-entry** | Buy-in lagi setelah bust (hanya selama jendela late reg) |
 | **Satellite** | Turnamen qualifier di mana hadiahnya adalah kursi di event lebih besar |
 | **PKO** | Progressive Knockout — turnamen bounty di mana hadiahnya tumbuh |
+| **Mystery Bounty** | Format bounty di mana hadiah tiap knockout diundi secara acak |
+| **Turbo** | Struktur dengan level blind jauh lebih pendek; hyper-turbo lebih pendek lagi |
+| **Add-on** | Pembelian chip tambahan satu kali yang ditawarkan ke semua pemain di akhir periode rebuy, tanpa melihat ukuran stack |
 | **ICM** | Independent Chip Model — kerangka matematis untuk nilai chip turnamen |
 | **Min-cash** | Posisi payout terendah — minimum yang Anda dapat untuk masuk uang |
 

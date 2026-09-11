@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A short stack (roughly under 20–25 big blinds) can't play normal postflop poker, and from about 15 big blinds down it switches to push/fold: move all-in first-in to keep your fold equity, and never open-limp or min-raise-then-fold. Shove wider from late position, keep your calling range tighter than your shoving range, and don't blind down to nothing 'waiting for a hand' — your fold equity is the weapon, and it fades hard below about 8 big blinds.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-08-13",
+  updated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "📉",
@@ -60,7 +60,7 @@ The single biggest mistake is not knowing which row you're in. A 12-big-blind st
 
 Think about what a min-raise does when you're short: it commits chips, invites a re-raise you can't call, and lets opponents realize their equity cheaply. A ==shove== does the opposite. It says "call for your tournament or fold," and most hands fold. When you pick up the blinds and antes uncontested often enough, ==you profit even on the times you get called and lose==, because the free pots more than pay for them.
 
-The catch is that fold equity ==decays as your stack shrinks==. At 12–15 big blinds, opponents fold a lot — your shove is scary. It starts fading around 8–10 big blinds, and by 4–5 they're getting such a good price that they call with almost anything — your fold equity is nearly gone. That's the whole reason not to wait: ==shove while your all-in still frightens people==, not after.
+The catch is that fold equity ==decays as your stack shrinks==. At 12–15 big blinds, opponents fold a lot — your shove is scary. It starts fading around 8–10 big blinds, and by 4–5 they're getting [such a good price](/en/blog/holdem-pot-odds) that they call with almost anything — your fold equity is nearly gone. That's the whole reason not to wait: ==shove while your all-in still frightens people==, not after.
 
 ---
 

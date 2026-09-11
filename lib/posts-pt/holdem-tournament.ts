@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Num torneio de poker você paga um buy-in fixo por fichas, e os blinds sobem num relógio até uma pessoa ficar com todas as fichas. Os 10–15% melhores do field entram no dinheiro. Os formatos incluem freezeout, PKO, satellite e deepstack — você entra por buy-in direto, satellite ou pré-registro online.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-09-10",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏆",
@@ -123,6 +123,8 @@ Normalmente sobram 6–9 jogadores. Os payouts sobem forte a cada eliminação. 
 | **PKO (Progressive KO)** | Os bounties crescem a cada knockout — parte vem pra você, parte é somada à sua cabeça | Jogadores de alta variância e grande upside |
 | **Deepstack** | Stack inicial bem acima do evento padrão da mesma série, com níveis mais lentos | Quem quer mais jogo pós-flop |
 | **Satellite** | Prêmio = entrada num torneio maior, não dinheiro | Jogadores com orçamento mirando grandes eventos |
+| **Turbo / Hyper-Turbo** | Níveis de blind muito mais curtos que no evento padrão — os stacks ficam rasos rápido e o push/fold chega cedo | Sessões curtas — jogadores à vontade com o shove-or-fold |
+| **Mystery Bounty** | Torneio de bounty em que cada eliminação (em geral a partir de uma fase definida) sorteia um prêmio — a maioria pequena, alguns jackpots | Jogadores atrás de um grande pagamento único |
 | **MTT** | Multi-Table Tournament — field grande em várias mesas | Qualquer um — o formato mais comum |
 | **SNG (Sit & Go)** | Começa quando as cadeiras enchem (sem horário fixo) — normalmente 6–9 jogadores | Jogo rápido, sem depender de agenda |
 
@@ -270,7 +272,7 @@ A tabela de payout pode ser consultada antes de o torneio começar, mas o númer
 
 ## Glossário de torneio — termos que você vai ouvir no Day 1
 
-Estes 13 termos cobrem a maior parte do que você vai ouvir na mesa. Pra ver o A a Z completo, veja o [glossário de poker](/pt/blog/holdem-glossary).
+Estes 16 termos cobrem a maior parte do que você vai ouvir na mesa. Pra ver o A a Z completo, veja o [glossário de poker](/pt/blog/holdem-glossary).
 
 | Termo | O que significa |
 |------|--------------|
@@ -285,6 +287,9 @@ Estes 13 termos cobrem a maior parte do que você vai ouvir na mesa. Pra ver o A
 | **Re-entry** | Comprar de novo depois de quebrar (só durante a janela de late reg) |
 | **Satellite** | Um torneio qualifier cujo prêmio é uma vaga num evento maior |
 | **PKO** | Progressive Knockout — torneios de bounty em que o prêmio cresce |
+| **Mystery Bounty** | Formato de bounty em que o prêmio de cada eliminação é sorteado |
+| **Turbo** | Estrutura com níveis de blind muito mais curtos; o hyper-turbo é mais curto ainda |
+| **Add-on** | Compra extra de fichas, oferecida uma única vez a todos no fim do período de rebuy, independentemente do tamanho do stack |
 | **ICM** | Independent Chip Model — um framework matemático pro valor das fichas no torneio |
 | **Min-cash** | A posição de payout mais baixa — o mínimo que você leva por entrar no dinheiro |
 

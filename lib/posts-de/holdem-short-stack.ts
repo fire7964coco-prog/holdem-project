@@ -8,7 +8,8 @@ export const POST: Post = {
   tldr: "Ein Short Stack (grob unter 20–25 Big Blinds) kann kein normales Postflop-Poker mehr spielen, und ab rund 15 Big Blinds abwärts wechselt er zu Push/Fold: geh first-in all-in, um deine Fold Equity zu behalten, und open-limpe oder min-raise-fold fast nie, wenn du first-in bist. Shove von Late Position weiter, halte deine Calling-Range enger als deine Shoving-Range, und blinde nicht auf null herunter, während du „auf eine Hand wartest“ – deine Fold Equity ist die Waffe, und unter etwa 8 Big Blinds schwindet sie rapide.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-09-10",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "13 Min.",
   emoji: "📉",
@@ -66,7 +67,7 @@ Dieser Gratisgewinn ist ==Fold Equity==: der Profit, den du jedes Mal machst, we
 
 Überleg mal, was ein Min-Raise bewirkt, wenn du kurz bist: er committet Chips, lädt zu einem Re-Raise ein, den du nicht callen kannst, und lässt Gegner ihre Equity billig realisieren. Ein ==Shove== macht das Gegenteil. Er sagt „calle um dein Turnier oder folde“, und die meisten Hände folden. Wenn du die Blinds und Antes oft genug ungestört einsammelst, ==machst du sogar dann Profit, wenn du gecallt wirst und verlierst==, weil die freien Pots das mehr als ausgleichen.
 
-Der Haken ist, dass Fold Equity ==abnimmt, während dein Stack schrumpft==. Bei 12–15 Big Blinds folden Gegner viel – dein Shove ist beängstigend. Sie beginnt bei etwa 8–10 Big Blinds zu schwinden, und bei 4–5 bekommen sie einen so guten Preis, dass sie mit fast allem callen – deine Fold Equity ist fast weg. Genau das ist der Grund, nicht zu warten: ==shove, solange dein All-in Leute noch erschreckt==, nicht danach.
+Der Haken ist, dass Fold Equity ==abnimmt, während dein Stack schrumpft==. Bei 12–15 Big Blinds folden Gegner viel – dein Shove ist beängstigend. Sie beginnt bei etwa 8–10 Big Blinds zu schwinden, und bei 4–5 bekommen sie einen [so guten Preis](/de/blog/holdem-pot-odds), dass sie mit fast allem callen – deine Fold Equity ist fast weg. Genau das ist der Grund, nicht zu warten: ==shove, solange dein All-in Leute noch erschreckt==, nicht danach.
 
 ---
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Bad beat adalah saat uang Anda masuk sebagai favorit berat — biasanya 80% atau lebih — dan Anda kalah karena lawan menangkap kartu beruntung untuk 'suck out' pada Anda. Berbeda dengan cooler, Anda unggul sepanjang tangan; hanya di akhir kartu berkhianat. Perih, tapi bad beat sebenarnya tanda Anda bermain di permainan yang menguntungkan.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "11 mnt",
   emoji: "💔",
@@ -72,7 +72,7 @@ Di sinilah pemain kasual dan pemain serius berpisah jalan: **tidak setiap kekala
 
 - **~80% atau lebih, dan Anda kalah ke suckout** — bad beat sejati. Aces Anda (favorit ~4:1 atas pair lebih rendah) yang dihancurkan adalah kasus buku teks. Sebuah **one-outer** — kalah oleh satu-satunya kartu di dek yang bisa mengalahkan Anda — adalah bad beat termurni dari semuanya.
 - **Favorit 60–70% yang kalah** — tak enak, tapi sebenarnya hanya variance. Anda hanya favorit sedang; hasil satunya memang akan cukup sering terjadi.
-- **Coinflip tak pernah jadi bad beat.** Kalah A‑K ke Q‑Q, atau sebuah pair ke dua overcard, kira-kira 50/50 — menyebut itu bad beat sama seperti menyebut lemparan koin yang kalah sebagai perampokan. Jika hampir seimbang, Anda tidak *dikalahkan*, Anda sekadar kalah lemparan.
+- **Coinflip tak pernah jadi bad beat.** Kalah A‑K ke Q‑Q (sekitar 43/57 offsuit, 46/54 suited), atau sebuah pair ke dua overcard, cukup dekat dengan lemparan koin — menyebut itu bad beat sama seperti menyebut lemparan koin yang kalah sebagai perampokan. Jika hampir seimbang, Anda tidak *dikalahkan*, Anda sekadar kalah lemparan.
 
 Aturan praktisnya: bad beat menuntut **keduanya** — keunggulan besar (favorit berat) **dan** suckout (underdog membaik untuk menang). Lewatkan salah satu syaratnya dan itu hanya tekstur normal permainan. Jujur soal ini yang memisahkan pemain yang belajar dari yang menyalahkan dek atas setiap kekalahan — kejujuran diri yang sama yang membedakan cooler sungguhan dari [tangan yang dimainkan salah](/id/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp").
 
@@ -175,7 +175,7 @@ A. Dalam bad beat Anda favorit saat uang masuk dan di-outdraw — sebuah suckout
 
 **Q. Apakah kalah coinflip itu bad beat?**
 
-A. Bukan. Bad beat menuntut Anda jadi favorit berat — biasanya sekitar 80% atau lebih — lalu terkena suckout. Kalah di duel hampir seimbang seperti A‑K melawan Q‑Q (kira-kira 50/50) hanyalah variance normal. Jika tangannya mendekati lemparan koin, Anda tidak dikalahkan dengan buruk, Anda sekadar kalah lemparan yang memang akan berbalik sekitar separuh waktu.
+A. Bukan. Bad beat menuntut Anda jadi favorit berat — biasanya sekitar 80% atau lebih — lalu terkena suckout. Kalah di duel hampir seimbang seperti A‑K melawan Q‑Q (A‑K hanya menang sekitar 43% offsuit, 46% suited) hanyalah variance normal. Jika tangannya mendekati lemparan koin, Anda tidak dikalahkan dengan buruk, Anda sekadar kalah lemparan yang memang akan berbalik sekitar separuh waktu.
 
 **Q. Apa itu bad beat jackpot dan apa yang memenuhi syarat?**
 

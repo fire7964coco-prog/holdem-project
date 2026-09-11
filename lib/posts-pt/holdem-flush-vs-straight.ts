@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Um flush (cinco cartas do mesmo naipe — cerca de 0,197% das mãos de cinco cartas) sempre ganha de uma sequência (cinco em sequência, cerca de 0,392%) no Texas Hold'em — porque o flush é mais raro: ao longo das sete cartas até o river, 3,03% contra 4,62% da sequência.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "⚡",
@@ -88,7 +88,7 @@ Saber a regra não é o mesmo que lê-la ao vivo — é exatamente essa habilida
 
 Você tem **9♠ 10♠** para uma **sequência 6-7-8-9-10** limpa. Parece forte — mas o board mostra **três copas**. Se seu adversário tiver duas copas, ele tem flush, e **o flush ganha da sequência**. Toda vez que houver três ou mais cartas de um mesmo naipe na mesa, um flush está vivo; precifique suas apostas e seus pagamentos de acordo.
 
-### Situação 2 — Buscando ao mesmo tempo a sequência e o flush
+### Situação 2 — Sequência feita com flush draw por cima
 
 :::hand[8♥,7♥,6♠,2♣] Board (4 cartas, turn):::
 

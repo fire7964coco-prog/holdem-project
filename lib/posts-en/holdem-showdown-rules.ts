@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "At showdown, the last player to bet or raise shows first. If the river was checked through, the first active player left of the button shows first. You can muck without showing if you lose, but whoever called the river bet can ask to see the bettor's hand.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-09",
+  updated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -40,7 +40,7 @@ The rule depends on how the final betting round ended (for the full street-by-st
 |--------------------|-----------------|
 | Someone bet or raised on the river | ==The last player to bet or raise== shows first |
 | Everyone checked the river | First active player left of the dealer button shows first |
-| All-in on earlier street (no river betting) | All hands tabled face-up before/during the runout |
+| All-in on earlier street (no river betting) | Tournament: every hand tabled before/during the runout (TDA Rule 16). Cash: the all-in player turns over first — with a side pot, the side-pot players show first (Live Action Rule 149) |
 
 </div>
 
@@ -76,19 +76,19 @@ Example: Button, small blind, and big blind see the river. SB checks, BB checks,
 
 ## All-In Showdown Rules — Does the All-In Player Show First?
 
-When a player goes all-in and there's no more betting possible, all remaining cards are typically run out with **all hands shown face-up**. This protects the integrity of the hand — no player should be able to muck strategically in an all-in situation.
+In a **tournament**, when a player goes all-in and there's no more betting possible, all remaining cards are run out with **all hands shown face-up** (==TDA Rule 16==). This protects the integrity of the hand — no player should be able to muck strategically in an all-in situation. **Cash games run on house rules**, and the WSOP Live Action rules put it the other way round: if betting ended before the river, the player who pushed all-in is responsible for turning over first, and when there is a side pot, the players contesting it show before anyone who is all-in for only the main pot (==Live Action Rule 149==).
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | All-in scenario | Showdown rule |
 |----------------|---------------|
-| Player goes all-in, others call, no more betting possible | All hands shown face-up before or during runout |
+| Player goes all-in on an earlier street, others call, no more betting possible | Tournament: every hand shown face-up before or during the runout. Cash: the all-in player turns over first — with a side pot, the side-pot players show first (Live Action Rule 149) |
 | All-in bet on the river gets called | The all-in bettor shows first as last aggressor — and in a tournament ==r:nobody may muck here==: under TDA Rule 16 the caller must table too |
 | Multiple all-ins creating multiple side pots | Each pot resolved separately; all involved hands shown |
 
 </div>
 
-One nuance: if there is a **side pot** (other players still have chips and keep betting), the side pot is awarded first and then the main pot. That is the **payout order** — it has nothing to do with when cards come up. The all-in player's hand is already face-up the moment no further betting is possible; the TDA illustration to Rule 16 says it outright: do *not* wait for the side pot to be divided before turning up the all-in.
+One nuance: if there is a **side pot** (other players still have chips and keep betting), the side pot is awarded first and then the main pot. That is the **payout order**. In a tournament it has nothing to do with when cards come up — the all-in player's hand is already face-up the moment no further betting is possible; the TDA illustration to Rule 16 says it outright: do *not* wait for the side pot to be divided before turning up the all-in. In a cash game under the WSOP Live Action rules the show order follows the pots instead: the side-pot players show first, then the player who is all-in for only the main pot (Rule 149).
 
 For how side pots are built and paid when players are all-in, see [all-in rules and side pots](/en/blog/holdem-all-in-rules); for chopped pots, see [split pot and chop rules](/en/blog/holdem-split-pot-rules).
 
@@ -102,7 +102,7 @@ For how side pots are built and paid when players are all-in, see [all-in rules 
 
 If a player misreads their hand and says "I have a pair," but they actually have a straight — the straight wins. The dealer reads the cards and awards the pot to the best hand shown.
 
-This works both ways. If you think you lost and muck without showing, but your hand would have been the winner — ==r:the pot is gone==. Your hand is dead only once the dealer has pushed it into the muck and it is no longer clearly identifiable — cards laid face-down are not automatically dead (==TDA Rule 14==). Never rely on that, though. Always let the dealer read your hand before mucking if you're not 100% sure you lost.
+This works both ways. If you think you lost and muck without showing, but your hand would have been the winner — ==r:the pot is gone==. Your hand is dead once the dealer has pushed it into the muck, or once it can no longer be identified and retrieved — cards laid face-down are not automatically dead (==TDA Rule 14==). Never rely on that, though. Always let the dealer read your hand before mucking if you're not 100% sure you lost.
 
 Real situation: you hold J♥ 10♥ on a board of Q♥ 9♥ 8♥ 2♣ 5♦. You have a queen-high straight flush (Q-J-10-9-8 of hearts). Opponent shows K♣ Q♦ (one pair of queens). You win by a mile. Don't muck just because you see their queen.
 
@@ -150,7 +150,7 @@ In most cardrooms you can ask the dealer to expose a mucked hand — but only a 
 
 ### Mistake 4: Not knowing you can show early
 
-At showdown — once all betting is complete — there's no rule against flipping your hand before it's officially your turn. While the hand is still live and any action is pending, the opposite applies: exposing cards costs you a penalty under ==WSOP Rule 117==. ==g:If you have the nuts or a very strong hand, show immediately.== Other players appreciate it. It speeds up the game. And it's the opposite of slow rolling.
+At showdown — once all betting is complete — there's no rule against flipping your hand before it's officially your turn. While the hand is still live and any action is pending, the opposite applies: exposing cards costs you a penalty under ==WSOP Tournament Rule 117== (the Live Action rulebook numbers its clauses differently). ==g:If you have the nuts or a very strong hand, show immediately.== Other players appreciate it. It speeds up the game. And it's the opposite of slow rolling.
 
 ---
 
@@ -167,7 +167,7 @@ A. The last player to make an aggressive action (bet or raise) on the final bett
 
 **Q. Do you have to show your cards if you get called at showdown?**
 
-A. Yes — if you were the last bettor or raiser on the river, you must show first when called. If you called someone else's bet, you can muck face-down after seeing their hand if you've lost. The exception is a tournament all-in: under ==TDA Rule 16== the caller has to table as well. And in tournaments only a player who still holds cards or has tabled them may ask to see a hand — inalienably, only the last aggressor's.
+A. Yes — if you were the last bettor or raiser on the river, you must show first when called. If you called someone else's bet, you can muck face-down after seeing their hand if you've lost. The exception is a tournament all-in: under ==TDA Rule 16== the caller has to table as well. And in tournaments the guaranteed right to ask belongs to whoever **called the river bet** — provided they tabled or still hold their cards — and it covers only the last aggressor's hand, the one they paid to see (==TDA Rule 18==). A player who mucked face-down has no right to ask at all, and every other request is at the director's discretion.
 
 **Q. Can you muck at showdown without showing?**
 
@@ -179,11 +179,11 @@ A. Slow rolling is deliberately delaying showing a winning hand you already know
 
 **Q. In an all-in situation, who shows their cards first?**
 
-A. When a player goes all-in and no further betting is possible, all hands involved in that pot are typically shown face-up before or during the community card runout. If there is a side pot, it is awarded first and the main pot after it — but the all-in player's cards are face-up long before that. While the others still have chips and can bet, everything stays face-down.
+A. In a tournament, when a player goes all-in and no further betting is possible, all hands involved in that pot are shown face-up before or during the community card runout (TDA Rule 16). If there is a side pot, it is awarded first and the main pot after it — but the all-in player's cards are face-up long before that. In a cash game the WSOP Live Action rules have the player who pushed all-in turn over first, and side-pot players show before anyone who is all-in for only the main pot (Rule 149). While the others still have chips and can bet, everything stays face-down.
 
 **Q. What does "cards speak" mean in poker?**
 
-A. Cards speak means the best hand wins based on what the cards actually show — not based on what players say. A player who misreads their hand and declares the wrong hand still wins if their actual cards are the best hand. Conversely, a player who mucks without verifying they lost has no claim to the pot, even if their hand would have won.
+A. Cards speak means the best hand wins based on what the cards actually show — not based on what players say. A player who misreads their hand and declares the wrong hand still wins if their actual cards are the best hand. Conversely, a player who mucks without verifying they lost usually throws the pot away: the hand is dead the moment the dealer pushes it into the muck, or once it otherwise can't be identified, even if it would have won (TDA Rule 14 — until then, face-down cards that are still 100% identifiable and retrievable can be tabled, but never count on it).
 
 **Q. Do you have to show your cards if you win without a showdown?**
 

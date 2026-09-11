@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Eine Continuation Bet (C-Bet) ist ein Einsatz am Flop vom Spieler, der preflop geraist hat. Die moderne Regel ist nicht 'jeden Flop c-betten' – sondern die Flops zu setzen, die deine Range favorisieren (hohe, trockene Boards wie K-7-2) klein und oft, und die zu checken, die deinen Gegner favorisieren (niedrige, verbundene Boards wie 7-6-5). Setze klein – etwa ein Drittel Pot – auf trockenen Boards, groß – zwei Drittel oder mehr – auf wet Boards, c-bette weniger out of Position und deutlich weniger multiway.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-10",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "15 Min.",
   emoji: "🔥",
@@ -105,7 +105,7 @@ Es gibt keinen einzelnen „korrekten“ C-Bet-Prozentsatz – wer dir eine Zahl
 |:---|:---:|:---|
 | **In Position, heads-up, trockenes Board** | **70–100%** (klein) | Klassische „Range-Bet“ – bette fast alles, winzig |
 | **In Position, heads-up, wet Board** | **~50–60%** | Polarisierter – Value und Draws betten, Air checkt |
-| **Out of Position, heads-up (Single-Raised Pot, du warst der Raiser)** | **~30–45%** | Checke weit öfter, um deine Checking-Range zu schützen. Als OOP-*3-Better* dreht es sich um – über 97% auf den beiden Boards, die wir gelöst haben, siehe das [Positions-Playbook](/de/blog/holdem-position-play) |
+| **Out of Position, heads-up (Single-Raised Pot, du warst der Raiser)** | **~30–45%** | Checke weit öfter, um deine Checking-Range zu schützen. Als OOP-*3-Better* dreht es sich um – über 97% auf den beiden Boards, die wir gelöst haben, fast alles davon mit der Zwei-Drittel-Pot-Größe (die Ein-Drittel-Größe bekam unter 1%), siehe das [Positions-Playbook](/de/blog/holdem-position-play) |
 | **Multiway (2 Gegner)** | **~50% oder weniger** | Wahrscheinlich hat jemand getroffen – zieh zusammen |
 | **Multiway (3+ Gegner)** | **Nur starke Hände & gute Draws** | Fold Equity ist im Grunde weg |
 

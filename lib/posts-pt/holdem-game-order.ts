@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Uma mão de Texas Hold'em segue esta ordem: postar os blinds → receber duas cartas fechadas → pré-flop → flop (3 cartas) → turn (1 carta) → river (1 carta) → showdown, com quatro rodadas de apostas no total.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-09-10",
-  masterUpdated: "2026-09-07",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎬",
@@ -136,7 +136,7 @@ Regras do showdown:
 - Cada jogador forma sua **melhor mão de cinco cartas** com as duas cartas fechadas e as cinco comunitárias.
 - Você não é obrigado a usar as duas cartas da mão — pode usar uma só, ou até jogar só com a mesa (zero), se essa for sua melhor combinação.
 - Quem fez a última ação agressiva (aposta ou aumento) mostra primeiro; no river com checks, mostra primeiro o **primeiro jogador ativo** à esquerda do botão.
-- Quem perdeu pode simplesmente dar **muck** (foldar sem mostrar).
+- Quem perdeu pode simplesmente dar **muck** (foldar sem mostrar) — exceto num all-in de torneio: quando um jogador está all-in e a ação terminou, todas as mãos são viradas para cima (regra 16 da TDA · regra 70 do regulamento de torneios da WSOP).
 - Mãos idênticas **dividem o pote** ("chop") em partes iguais.
 
 Quem é obrigado a mostrar primeiro, quando você pode dar muck e a etiqueta em torno do slow roll estão explicados por completo nas [regras do showdown](/pt/blog/holdem-showdown-rules).
@@ -261,7 +261,7 @@ Aqui está tudo o que você pode fazer na mesa — a parte que os iniciantes mai
 
 </div>
 
-==r:**Importante:** no pré-flop não dá para dar check — com uma exceção.== O big blind já é uma aposta viva, então todos os outros precisam pagar, aumentar ou foldar. ==Só o big blind pode dar check, se ninguém tiver aumentado; para todos os demais, o check só passa a existir do flop em diante.==
+==r:**Importante:** no pré-flop não dá para dar check — a menos que a sua própria aposta postada já seja a aposta viva.== O big blind é uma aposta viva, então todos os outros precisam pagar, aumentar ou foldar. ==O big blind pode dar check se ninguém tiver aumentado — e também quem postou um straddle vivo, porque essa aposta postada é a abertura dele e ele age por último no pré-flop (regras 159 e 165 do regulamento Live Action da WSOP); para todos os demais, o check só passa a existir do flop em diante.==
 
 Para um guia de decisão mais profundo sobre quando usar cada jogada — com uma tabela de decisão check-call-raise-fold — veja as [ações de aposta explicadas](/pt/blog/holdem-betting-actions).
 
@@ -352,7 +352,7 @@ A. O primeiro jogador ainda na mão à esquerda do botão — numa mesa cheia, o
 
 **Q. Quem mostra as cartas primeiro no showdown?**
 
-A. Quem fez a última ação agressiva — a última aposta ou aumento no river — tem de mostrar primeiro. Se o river passou em check sem nenhuma aposta, mostra primeiro o jogador ativo mais à esquerda do botão, e os demais seguem em sentido horário. Quem sabe que está batido pode dar muck em vez de mostrar.
+A. Quem fez a última ação agressiva — a última aposta ou aumento no river — tem de mostrar primeiro. Se o river passou em check sem nenhuma aposta, mostra primeiro o jogador ativo mais à esquerda do botão, e os demais seguem em sentido horário. Quem sabe que está batido pode dar muck em vez de mostrar — a menos que alguém esteja all-in num torneio, quando todas as mãos são mostradas (regra 16 da TDA).
 
 **Q. Qual é a diferença entre pré-flop e flop?**
 

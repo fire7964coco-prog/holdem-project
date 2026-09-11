@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Poker-Aktionen im Texas Hold'em: Check, Call, Raise, Fold",
   seoTitle: "Checken, callen oder folden? – Poker-Aktionen & Raise-Regeln",
   desc: "Du bist dran und dein Kopf ist leer? Was Check, Call, Raise und Fold beim Poker bedeuten, die Min-Raise-Regel und wie oft du re-raisen darfst.",
-  tldr: "Texas Hold'em kennt 5 Setz-Aktionen: Check (kostenlos schieben), Bet (die Runde eröffnen), Call (einen Einsatz mitgehen), Raise (erhöhen – der Mindest-Raise entspricht dem vorherigen Bet oder Raise) und Fold. Checken darfst du nur, solange vor dir kein offener Einsatz steht – preflop also nur als Big Blind.",
+  tldr: "Texas Hold'em kennt 5 Setz-Aktionen: Check (kostenlos schieben), Bet (die Runde eröffnen), Call (einen Einsatz mitgehen), Raise (erhöhen – der Mindest-Raise entspricht dem vorherigen Bet oder Raise) und Fold. Checken darfst du nur, solange vor dir kein offener Einsatz steht – preflop also normalerweise nur als Big Blind (oder wer einen Live Straddle gepostet hat).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "9 Min.",
   emoji: "🃏",
@@ -50,7 +50,7 @@ Jede einzelne Entscheidung am Pokertisch ist eine dieser fünf:
 | Aktion | Wann möglich | Chip-Kosten |
 |--------|-------------|-------------|
 | Fold | Immer, wenn du an der Reihe bist | Kostenlos – aber Chips, die schon im Pot liegen, sind verloren |
-| Check | Nur, wenn vor dir kein offener Einsatz steht (preflop: nur als Big Blind) | Kostenlos – du schiebst, ohne Chips zu legen |
+| Check | Nur, wenn vor dir kein offener Einsatz steht (preflop: als Big Blind oder als Spieler, der einen Live Straddle gepostet hat) | Kostenlos – du schiebst, ohne Chips zu legen |
 | Call | Nachdem jemand gesetzt oder erhöht hat | Du gehst den aktuellen Einsatz exakt mit |
 | Bet | Der erste Einsatz der Runde | Frei wählbarer Betrag (Minimum = 1 Big Blind) |
 | Raise | Nachdem jemand gesetzt hat | Mindestens die Größe der vorherigen Bet oder des vorherigen Raises obendrauf |
@@ -73,10 +73,10 @@ Checken ist kein Aufgeben. Du behältst deine Karten, du behältst jede Option, 
 
 ## Wann darfst du beim Poker checken?
 
-Checken ist in genau zwei Situationen möglich:
+Checken ist in zwei Arten von Situationen möglich:
 
 - **Noch niemand hat gesetzt** auf der aktuellen Street (Flop, Turn oder River)
-- **Du bist Preflop der Big Blind und niemand hat erhöht** – dein Blind zählt bereits als aktiver Einsatz, also darfst du checken und den Flop gratis sehen
+- **Du bist Preflop der Big Blind und niemand hat erhöht** – dein Blind zählt bereits als aktiver Einsatz, also darfst du checken und den Flop gratis sehen (dasselbe gilt für einen Spieler, der einen Live Straddle gepostet hat)
 
 Setzt jemand, nachdem du gecheckt hast, stehst du vor einer frischen Entscheidung: folden, callen oder raisen. Erst zu checken und dann zu raisen, wenn ein Gegner setzt, nennt sich ==Check-Raise== – das ist im Texas Hold'em völlig legal und eine Standardwaffe, kein Angle-Shooting.
 
@@ -92,7 +92,7 @@ Check vs. Call ist die häufigste Anfänger-Verwechslung überhaupt, darum hier 
 
 | | Check | Call |
 |-|-------|------|
-| Wann es existiert | Vor dir steht kein offener Einsatz (preflop: nur als Big Blind) | Jemand hat vor dir gesetzt |
+| Wann es existiert | Vor dir steht kein offener Einsatz (preflop: als Big Blind oder als Spieler, der einen Live Straddle gepostet hat) | Jemand hat vor dir gesetzt |
 | Chip-Kosten | Kostenlos | Du gehst den aktuellen Einsatz mit |
 | Was es aussagt | „Ich schiebe, bin noch dabei“ | „Ich zahle, um weiterzuspielen“ |
 
@@ -157,7 +157,7 @@ In **Fixed-Limit**-Spielen ist jede Runde gedeckelt (ein „gecappter“ Pot). D
 
 All-in heißt, ==jeden Chip zu setzen, den du noch hast==. Du kannst es jederzeit tun, wenn du an der Reihe bist – als Bet, Call oder Raise.
 
-Ist dein All-in *kleiner* als der aktuelle Einsatz, bist du nicht raus: Du spielst einfach um einen ==Hauptpot==, gedeckelt auf deinen Beitrag, während die überschüssigen Chips der größeren Stacks einen ==Side Pot== bilden, den du nicht gewinnen kannst. Und ein All-in, das *kleiner als ein voller Min-Raise* ist, eröffnet das Raisen für Spieler, die bereits gehandelt haben, in der Regel nicht neu – eine subtile Regel, die selbst Regulars überrascht.
+Ist dein All-in *kleiner* als der aktuelle Einsatz, bist du nicht raus: Du spielst einfach um einen ==Hauptpot==, gedeckelt auf deinen Beitrag, während die überschüssigen Chips der größeren Stacks einen ==Side Pot== bilden, den du nicht gewinnen kannst. (Ist jemand noch kürzer als du, spielst du trotzdem um den Side Pot mit, an den er nicht herankommt – jedes All-in deckelt nur seine eigene Schicht.) Und ein All-in, das *kleiner als ein voller Min-Raise* ist, eröffnet das Raisen für Spieler, die bereits gehandelt haben, in der Regel nicht neu – eine subtile Regel, die selbst Regulars überrascht.
 
 Die komplette Mechanik – Side-Pot-Rechnung, wer zuerst zeigt, Table Stakes – steht in den [All-in-Regeln und Side Pots](/de/blog/holdem-all-in-rules), und was bei gleich starken All-in-Händen passiert, regeln die [Split-Pot- und Chop-Regeln](/de/blog/holdem-split-pot-rules).
 
@@ -226,15 +226,15 @@ A. Reden ja – über die laufende Hand nein. Die offiziellen WSOP-Turnierregeln
 
 **Q. Darf man Preflop checken?**
 
-A. Nur als Big Blind, und nur wenn niemand erhöht hat. Der BB hat bereits einen aktiven Einsatz gelegt, darum darf er checken und den Flop gratis sehen. Jede andere Position muss Preflop callen, raisen oder folden.
+A. Nur wenn dein eigener Post die aktive Bet ist und niemand erhöht hat – normalerweise der Big Blind, aber auch ein Live Straddle (WSOP Live Action Rules 159 · 165): Der Post gilt als deine Eröffnungsbet, darum darfst du checken und den Flop gratis sehen. Jede andere Position muss Preflop callen, raisen oder folden.
 
 **Q. Darf man raisen, nachdem jemand All-in gegangen ist?**
 
-A. Das hängt von der Größe des All-ins ab. Ist das All-in ein voller, legaler Raise, wird die Action neu eröffnet und du darfst re-raisen. Ist es *kleiner* als ein voller Min-Raise, dürfen Spieler, die bereits gehandelt haben, in den meisten Cardrooms nur noch callen oder folden – das kurze All-in eröffnet das Raisen für sie nicht neu.
+A. Das hängt von der Größe des All-ins ab. Ist das All-in ein voller, legaler Raise, wird die Action neu eröffnet und du darfst re-raisen – vorausgesetzt, mindestens ein Gegner, der nicht All-in ist, ist noch in der Hand; heads-up gegen ein All-in gibt es niemanden mehr, gegen den du raisen könntest, also bleibt nur callen oder folden. Ist es *kleiner* als ein voller Min-Raise, dürfen Spieler, die bereits gehandelt haben, in den meisten Cardrooms nur noch callen oder folden – das kurze All-in eröffnet das Raisen für sie nicht neu.
 
 **Q. Was ist ein String Bet beim Poker?**
 
-A. Der Versuch, in mehreren Bewegungen zu setzen oder zu erhöhen – zwischendurch zurück zum eigenen Stack –, ohne vorher „Raise“ anzusagen (==Rule 103==). Dealer werten String Bets als Call des ursprünglichen Betrags. Dieselbe Regel verbietet auch eine täuschende Geste, die Action außer der Reihe provozieren soll, bevor die eigene Aktion abgeschlossen ist. Sagst du dagegen erst „Call“ und legst dann nach, ist das kein String Bet, sondern eine bindende Ansage (==Rule 90.d==) – der Effekt ist derselbe. Sag deine Aktion laut an oder beweg alle Chips in einer Bewegung.
+A. Der Versuch, in mehreren Bewegungen zu setzen oder zu erhöhen – zwischendurch zurück zum eigenen Stack –, ohne vorher „Raise“ anzusagen (==Rule 103==). Die zweite Bewegung zählt nie – nur die Chips der ersten Bewegung gelten: ein Call, wenn sie unter der Hälfte eines Min-Raise liegen, ein erzwungener voller Min-Raise, wenn sie die Hälfte erreichen (TDA-Regel 43-A). Dieselbe Regel verbietet auch eine täuschende Geste, die Action außer der Reihe provozieren soll, bevor die eigene Aktion abgeschlossen ist. Sagst du dagegen erst „Call“ und legst dann nach, ist das kein String Bet, sondern eine bindende Ansage (==Rule 90.d==) – der Effekt ist derselbe. Sag deine Aktion laut an oder beweg alle Chips in einer Bewegung.
 
 **Q. Was bedeutet Limpen beim Poker?**
 

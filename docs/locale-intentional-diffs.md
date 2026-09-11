@@ -35,6 +35,7 @@
 
 | 날짜 | 글 | 차이 | 판정 근거 |
 |---|---|---|---|
+| 2026-09-11 | de `holdem-strategy` | FAQ 「nobody folds to a call」 문장이 de에 없다(de는 「Callen gewinnt nur am Showdown – entweder liegst du schon vorn, oder du musst dich verbessern」) | ✅ `git log -S`로 **fc404ca8(de 전용 회차)의 의도적 문안** 확인(2차 교열 렌즈). EN-먼저 J#4는 **기각·원문 복원**됐으므로 전파할 델타가 없다 → `masterUpdated`만 09-11로 올렸다(«이미 갖고 있더라» 케이스). 🔴 드리프트로 다시 집지 마라 |
 | 2026-08-12 | `holdem-implied-odds` | 「리버에서도 implied odds가 성립하나」 **FAQ가 de에만 있다** | ✅ 실측: 8 로케일 중 de만 보유(다른 7편엔 문항 자체가 없다). 인계서는 이걸 «미러 결함»으로 적어 뒀으나 **옮길 대상이 없었다** |
 | 2026-08-12 | `holdem-hand-rankings` | 「Pokerblatt·Pokerhand는 같은 뜻」 **용어 동일시 문장은 de 전용** | ✅ 실측: de 키워드 배치용 문장. 12 로케일에 대응 문장 없음 |
 | 2026-08-12 | `holdem-hand-rankings` | **무늬 서열의 «형식적 용도» FAQ가 de 전용** | ✅ 실측: 다른 12편은 「홀덤에서 무늬는 승부를 가르지 않는다」로 끝나고 **그 서술은 참**이다. de만 스터드·오드칩·버튼 추첨까지 다룬다 |

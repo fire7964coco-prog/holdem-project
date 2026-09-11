@@ -1,3 +1,13 @@
+## 2026-09-11 (7) — **EN-먼저 18건 회차 — EN 12편 정정 + 7로케일 83파일 전파 · 렌즈 4종+2차 교열 · 배포** (빌드 · 배포)
+
+사장님 「진행해」(핸드오프 다음 할 일 2번). 범위 = `en-first-queue` §2-A ar 11 + §2-B ja 5 + §2-C ja 2. 🔴 **ar·fr은 사장님 지시로 제외**(「경화·검수 안 한 언어는 일단 제외」) → 7로케일(de·es·id·ja·pt·zh·zh-hant).
+- **1차 출처 축어 대조 14조항**(`docs/sources/`): TDA 2024 §14·16·18·43·47 · WSOP T §70·85·103·117 · LA §117·149·155·156·159·160·165. §13 검산 = **AK vs QQ 1,712,304 보드 전수 열거**(AKo 42.84/57.16 · AKs 46.21/53.79 → 본문 「약 43/57 · 46/54」 · 대기열의 43.2/56.8은 근사) · $10/$14/$21 재개방 산술 · 3벳팟 c-bet 사이즈(Q♥T♥7♠ 66% 98.4%·33% 0.7% · 8♦5♣2♠ 97.8%·0.3%).
+- **EN 정정 18건 → 12편**(position-play는 cbet와 같은 97% 사본): B#2 누적 재개방 «플레이어별»(§47A) · B#3 cards-speak FAQ(§14) · B#4 올인 전원 페이스업 토너먼트 한정 + 캐시 LA §149 · B#5 열람권 주체 = 리버 벳 콜러(§18B) · B#6 「WSOP Tournament Rule 117」 명시 · A#1 game-order 머크 예외(§16·T §70) · A#2 사이드팟 층 · A#3 헤즈업 재개방 불가 · A#5 스트링 처분 · A#6 BB 체크 예외 + 라이브 스트래들(§159·§165) · A#7 데드버튼 · J#1 Spot 2 H3 「made straight with a flush draw on top」 · J#2 실수4 국면 · J#3 97% = 2/3팟 사이즈 병기 · J#5 50/50 → 43/57 · J#6 short-stack→pot-odds 링크 · J#7 tournament Turbo/Mystery Bounty 행 + 용어표 3행(→ 「16 terms」). **J#4 기각**(콜엔 폴드에쿼티 없음 = 참 · 완화가 표 행과 충돌 → 원문 복원).
+- **전파**: 7로케일 × 12편(de strategy는 해당 문장 없음 → masterUpdated만) = 83파일 · «정확히 1회 매치» 스크립트 · `updated`=`masterUpdated`=09-11(선례 `125c83f5`) · de short-stack·tournament는 masterUpdated **신설**.
+- **렌즈 4종(Opus)**: 라틴·SEO 23 · 수학 1(🟠 LA §156 «포스트한 라이브 블라인드» 오지정 → 구절 삭제, BB+스트래들만) · 딜러 17(🔴 all-in-rules L194·L243·L255 캐시 서술이 새 showdown 문안과 반대 · 스트링 «콜» 처분은 TDA §43-A 50% 규칙 · §14 and→or · CJK 직답 3블록 모순) · CJK 32(zh-hant `活盲抓` 정본 · `尺度→尺寸` · 용어표 「中文（English）」 · ja 괄호 규약 · 조사). **2차 교열 10건**(all-in FAQ L259 8자리 예외 누락 · id L255 미전파 · L255 «올인한 사람» 지시 불명 → 포트 단위 순서 · zh-hant blind 직답 「正常情況下」 · ja 프레임 축 · 괄호 파일 관례). 채택 ≈ 75 · 기각 = 딜러 #16(NL 한정어 — 사이트 전체 NLHE) · #17 · 라틴 #22(H2 교체는 GSC 먼저). 마지막 ja 직답 174→163자.
+- **게이트**: `audit:hard` en+7로케일 🔴 0(🟠는 전부 기존 C2) · `check:answer-echo` ja/zh/zh-hant echo 0(ja length 0) · `check:structure` 핵심 0 · `check:drift` 🔴 5 = **ar 5편**(제외 대상 · 의도된 신호) · mirror-pair 12편 갈림 = 기존 2건(strategy·tournament 수치) · hangul/cjk/meta/intl-links/faq-schema 0 · 빌드 EXIT 0 · 70+525.
+- **문서**: `en-first-queue` §2-A~2-C 삭제 → 종결 절 + 기각 4 + 잔여 표(ar·fr · 꼬리 15로케일 §13급 3건 · NL 한정어 · H2) · `locale-intentional-diffs` de strategy 행 · 핸드오프 2순위 행 교체 + **ja 레인 «회차 없음» 정정**(회차 11 브리프 미커밋 실측) + MB-033 · ja 진행 §5 헤드 통지.
+
 ## 2026-09-11 (6) — **zh·zh-hant 직답 블록 «길이 규격» 헤드 판정 = 60~130** (게이트·프로토콜·settled 승격 · 배포 없음)
 
 핸드오프 헤드 미결 「zh 상한 110이 맞는가」를 실측으로 닫았다(사장님 「진행해」 · 다음 할 일 1순위).

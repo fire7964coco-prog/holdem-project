@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Flush (lima kartu satu jenis — sekitar 0,197% dari pembagian lima kartu) selalu mengalahkan straight (lima kartu berurutan, sekitar 0,392%) di Texas Hold'em — karena flush lebih langka: sepanjang tujuh kartu sampai river, 3,03% berbanding 4,62% untuk straight.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "11 mnt",
   emoji: "⚡",
@@ -88,7 +88,7 @@ Tahu aturannya tidak sama dengan membacanya secara live — keterampilan itulah 
 
 Anda pegang **9♠ 10♠** untuk **straight 6-7-8-9-10** yang bersih. Terasa kuat — tapi meja menunjukkan **tiga hati**. Kalau lawan Anda pegang dua hati, mereka punya flush, dan **flush mengalahkan straight**. Setiap kali ada tiga kartu atau lebih satu jenis di meja, flush itu hidup; sesuaikan taruhan dan call Anda dengan itu.
 
-### Situasi 2 — Menarik ke straight sekaligus flush
+### Situasi 2 — Straight yang sudah jadi dengan flush draw di atasnya
 
 :::hand[8♥,7♥,6♠,2♣] Meja (4 kartu, turn):::
 

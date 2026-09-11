@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A bad beat is when you get your money in as a heavy favorite — usually 80% or more — and lose because your opponent hits a lucky card to 'suck out' on you. Unlike a cooler, you were ahead the whole way; the deck just betrayed you at the end. It stings, but bad beats are actually a sign you're playing in a profitable game.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-09",
+  updated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "💔",
@@ -71,7 +71,7 @@ Here's where casual players and serious ones part ways: **not every loss as a fa
 
 - **~80% or more, and you lose to a suckout** — a genuine bad beat. Your aces (a ~4-to-1 favorite over a lower pair) getting cracked is the textbook case. A **one-outer** — losing to the single remaining card in the deck — is the purest bad beat of all.
 - **60–70% favorite losing** — unpleasant, but really just variance. You were only a modest favorite; the other outcome was always going to happen fairly often.
-- **A coinflip is never a bad beat.** Losing A‑K to Q‑Q, or a pair to two overcards, is roughly 50/50 — calling that a bad beat is like calling a lost coin toss a robbery. If it was close to even money, you didn't get *beaten*, you just lost a flip.
+- **A coinflip is never a bad beat.** Losing A‑K to Q‑Q (about 43/57 offsuit, 46/54 suited), or a pair to two overcards, is close enough to a coinflip — calling that a bad beat is like calling a lost coin toss a robbery. If it was close to even money, you didn't get *beaten*, you just lost a flip.
 
 The rule of thumb: a bad beat requires **both** a big edge (a heavy favorite) **and** a suckout (the underdog improving to win). Miss either condition and it's just the normal texture of the game. Being honest about this is what separates a player who studies from one who blames the deck for every loss — the same self-honesty that tells a real cooler from a [misplayed hand](/en/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp").
 
@@ -174,7 +174,7 @@ A. In a bad beat you were the favorite when the money went in and got outdrawn �
 
 **Q. Is losing a coinflip a bad beat?**
 
-A. No. A bad beat requires you to be a heavy favorite — usually around 80% or more — and then get sucked out on. Losing a near-even matchup like A‑K versus Q‑Q (roughly 50/50) is just normal variance. If the hand was close to a coin toss, you didn't get beaten badly, you simply lost a flip that was always going to go the other way about half the time.
+A. No. A bad beat requires you to be a heavy favorite — usually around 80% or more — and then get sucked out on. Losing a near-even matchup like A‑K versus Q‑Q (A‑K wins only about 43% of the time offsuit, 46% suited) is just normal variance. If the hand was close to a coin toss, you didn't get beaten badly, you simply lost a flip that was always going to go the other way about half the time.
 
 **Q. What is a bad beat jackpot and what qualifies?**
 

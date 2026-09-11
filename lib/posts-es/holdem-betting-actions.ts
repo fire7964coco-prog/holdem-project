@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Acciones de apuesta en Texas Hold'em: pasar, igualar, subir y retirarse",
   seoTitle: "¿Pasar, igualar o tirarte? — Acciones de apuesta en el póker",
   desc: "¿Te llega el turno y te quedas en blanco? Aprende qué significan check, call, raise y fold, la regla de la subida mínima y cuántas veces se puede resubir.",
-  tldr: "En Texas Hold'em hay 5 acciones de apuesta: pasar (check, gratis), apostar (abrir la ronda), igualar (call, pagar la apuesta), subir (raise — la subida mínima iguala la apuesta o subida anterior) y retirarse (fold). Solo puedes pasar cuando no tienes una apuesta viva por delante — preflop, eso solo pasa siendo la ciega grande.",
+  tldr: "En Texas Hold'em hay 5 acciones de apuesta: pasar (check, gratis), apostar (abrir la ronda), igualar (call, pagar la apuesta), subir (raise — la subida mínima iguala la apuesta o subida anterior) y retirarse (fold). Solo puedes pasar cuando no tienes una apuesta viva por delante — preflop, eso normalmente solo pasa siendo la ciega grande (o quien puso un straddle vivo).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "🃏",
@@ -49,7 +49,7 @@ Cada decisión que tomas en una mesa de póker es una de estas cinco:
 | Acción | Cuándo está disponible | Coste en fichas |
 |--------|---------------|-----------|
 | Retirarse (fold) | Siempre que la acción sea tuya | Gratis — pero pierdes las fichas que ya metiste en el bote |
-| Pasar (check) | Solo si no tienes una apuesta viva por delante (preflop: solo como ciega grande) | Gratis — pasas el turno sin poner fichas |
+| Pasar (check) | Solo si no tienes una apuesta viva por delante (preflop: como ciega grande, o como el jugador que puso un straddle vivo) | Gratis — pasas el turno sin poner fichas |
 | Igualar (call) | Después de que alguien haya apostado o subido | Pagas exactamente la apuesta vigente |
 | Apostar (bet) | Primera apuesta de la ronda | La cantidad que elijas (mínimo = 1 ciega grande) |
 | Subir (raise) | Después de que alguien haya apostado | Al menos el tamaño de la apuesta o subida anterior por encima |
@@ -72,10 +72,10 @@ Pasar no es rendirse. Conservas tus cartas, conservas todas tus opciones y no ha
 
 ## ¿Cuándo se puede pasar en el póker?
 
-Puedes pasar exactamente en dos situaciones:
+Puedes pasar en dos tipos de situación:
 
 - **Nadie ha apostado todavía** en la calle actual (flop, turn o river)
-- **Eres la ciega grande en el preflop y nadie ha subido** — tu ciega ya cuenta como apuesta viva, así que puedes pasar y ver el flop gratis
+- **Eres la ciega grande en el preflop y nadie ha subido** — tu ciega ya cuenta como apuesta viva, así que puedes pasar y ver el flop gratis (lo mismo vale para quien puso un straddle vivo)
 
 Si alguien apuesta después de tu check, te toca una decisión nueva: retirarte, igualar o subir. Pasar primero y subir cuando un rival apuesta se llama ==check-raise== — es completamente legal en Texas Hold'em y un arma estándar del juego, no una jugarreta.
 
@@ -91,7 +91,7 @@ Check vs call es la confusión de principiante más habitual, así que aquí va 
 
 | | Pasar (check) | Igualar (call) |
 |-|-------|------|
-| Cuándo existe | No tienes una apuesta viva por delante (preflop: solo como ciega grande) | Alguien ha apostado antes que tú |
+| Cuándo existe | No tienes una apuesta viva por delante (preflop: como ciega grande, o como el jugador que puso un straddle vivo) | Alguien ha apostado antes que tú |
 | Coste en fichas | Gratis | Pagas la apuesta vigente |
 | Qué dice | "Paso palabra, sigo dentro" | "Pago por continuar" |
 
@@ -154,7 +154,7 @@ En las partidas de **Fixed-Limit** cada ronda está capada (bote "capado"). Las 
 
 Ir all-in significa apostar ==todas las fichas que te quedan==. Puedes hacerlo en cualquier momento en que la acción sea tuya — como apuesta, como pago o como subida.
 
-Si tu all-in es *menor* que la apuesta vigente, no estás fuera: simplemente compites por un ==bote principal== limitado a tu aportación, mientras que las fichas extra de los stacks más grandes forman un ==bote secundario (side pot)== que tú no puedes ganar. Y un all-in que sea *menor que un min-raise completo* generalmente no reabre la acción para los jugadores que ya actuaron — una regla sutil que sorprende hasta a los habituales.
+Si tu all-in es *menor* que la apuesta vigente, no estás fuera: simplemente compites por un ==bote principal== limitado a tu aportación, mientras que las fichas extra de los stacks más grandes forman un ==bote secundario (side pot)== que tú no puedes ganar. (Si alguien está aún más corto que tú, tú sí juegas por el side pot al que él no llega — cada all-in solo limita su propia capa.) Y un all-in que sea *menor que un min-raise completo* generalmente no reabre la acción para los jugadores que ya actuaron — una regla sutil que sorprende hasta a los habituales.
 
 La mecánica completa — las cuentas del side pot, quién enseña primero, el table stakes — está en [reglas del all-in y side pots](/es/blog/holdem-all-in-rules), y lo que pasa cuando las manos en all-in empatan lo cubren las [reglas del bote dividido](/es/blog/holdem-split-pot-rules).
 
@@ -219,15 +219,15 @@ A. No deberías. La acción debe avanzar en orden, en el sentido de las agujas d
 
 **Q. ¿Se puede pasar en el preflop?**
 
-A. Solo siendo la ciega grande, y solo si nadie ha subido. La BB ya ha puesto una apuesta viva, así que puede pasar y ver el flop gratis. Cualquier otra posición en el preflop debe igualar, subir o retirarse.
+A. Solo si tu propia ciega o straddle es la apuesta viva y nadie ha subido — normalmente la ciega grande, pero también un straddle vivo (reglas 159 y 165 del reglamento Live Action de la WSOP): esa apuesta cuenta como tu apertura, así que puedes pasar y ver el flop gratis. Cualquier otra posición en el preflop debe igualar, subir o retirarse.
 
 **Q. ¿Se puede subir después de un all-in?**
 
-A. Depende del tamaño del all-in. Si el all-in es una subida legal completa, la acción se reabre y puedes resubir. Si es *menor* que un min-raise completo, los jugadores que ya actuaron generalmente solo pueden pagar o retirarse — en la mayoría de las salas ese all-in corto no les reabre la subida.
+A. Depende del tamaño del all-in. Si el all-in es una subida legal completa, la acción se reabre y puedes resubir — siempre que quede en la mano al menos un rival que no esté all-in; mano a mano contra un all-in no queda nadie a quien subirle, así que solo puedes pagar o retirarte. Si es *menor* que un min-raise completo, los jugadores que ya actuaron generalmente solo pueden pagar o retirarse — en la mayoría de las salas ese all-in corto no les reabre la subida.
 
 **Q. ¿Qué es un string bet en el póker?**
 
-A. Intentar apostar o subir en varios movimientos — volviendo a tu stack por el camino — sin haber anunciado "subo" primero (==regla 103==). Los crupieres dictaminan el string bet como un call de la cantidad original. La misma regla también prohíbe un gesto engañoso para provocar acción fuera de turno antes de que tu propia acción termine. Decir "pago" y luego añadir no es un string bet sino una declaración vinculante (==regla 90.d==) — mismo efecto. Anuncia tu acción en voz alta o mueve todas las fichas en un solo movimiento.
+A. Intentar apostar o subir en varios movimientos — volviendo a tu stack por el camino — sin haber anunciado "subo" primero (==regla 103==). El segundo movimiento nunca cuenta — solo valen las fichas del primero: un call si no llegan a la mitad de una subida mínima, y una subida mínima completa obligatoria si llegan a la mitad o más (regla 43-A de la TDA). La misma regla también prohíbe un gesto engañoso para provocar acción fuera de turno antes de que tu propia acción termine. Decir "pago" y luego añadir no es un string bet sino una declaración vinculante (==regla 90.d==) — mismo efecto. Anuncia tu acción en voz alta o mueve todas las fichas en un solo movimiento.
 
 **Q. ¿Qué significa limpear en el póker?**
 

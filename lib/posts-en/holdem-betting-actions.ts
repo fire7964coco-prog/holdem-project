@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Texas Hold'em Betting Actions: Check, Call, Raise, Fold",
   seoTitle: "Check, Call or Fold? — Poker Betting Actions & Raise Rules",
   desc: "Action's on you and your mind goes blank? Learn what a check, call, raise and fold mean in poker, the min-raise rule, and how many times you can re-raise.",
-  tldr: "Texas Hold'em has 5 betting actions: check (pass for free), bet (open the round), call (match a bet), raise (increase it — the minimum raise equals the previous bet or raise), and fold. You can only check when there is no live bet in front of you — preflop that means only the big blind.",
+  tldr: "Texas Hold'em has 5 betting actions: check (pass for free), bet (open the round), call (match a bet), raise (increase it — the minimum raise equals the previous bet or raise), and fold. You can only check when there is no live bet in front of you — preflop that normally means only the big blind (or whoever posted a live straddle).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-09-09",
+  updated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "🃏",
@@ -48,7 +48,7 @@ Every single decision you make at a poker table is one of these five:
 | Action | When available | Chip cost |
 |--------|---------------|-----------|
 | Fold | Any time the action is on you | Free — but you forfeit chips already in the pot |
-| Check | Only when there is no live bet in front of you (preflop: only as the big blind) | Free — you pass without adding chips |
+| Check | Only when there is no live bet in front of you (preflop: as the big blind, or as the player who posted a live straddle) | Free — you pass without adding chips |
 | Call | After someone has bet or raised | You match the current bet exactly |
 | Bet | First wager of the round | Your chosen amount (minimum = 1 big blind) |
 | Raise | After someone has bet | At least the size of the previous bet or raise on top |
@@ -71,10 +71,10 @@ Checking is not surrendering. You keep your cards, you keep every option, and yo
 
 ## When Can You Check in Poker?
 
-You can check in exactly two situations:
+You can check in two kinds of situation:
 
 - **No one has bet yet** on the current street (flop, turn, or river)
-- **You are the big blind preflop and no one raised** — your blind already counts as a live bet, so you may check and see the flop for free
+- **You are the big blind preflop and no one raised** — your blind already counts as a live bet, so you may check and see the flop for free (the same goes for a player who posted a live straddle)
 
 If someone bets after you check, you face a fresh decision: fold, call, or raise. Checking first and then raising when an opponent bets is called a ==check-raise== — it is completely legal in Texas Hold'em and a standard weapon, not an angle.
 
@@ -90,7 +90,7 @@ Check vs call is the single most common beginner mix-up, so here's the clean spl
 
 | | Check | Call |
 |-|-------|------|
-| When it exists | No live bet in front of you (preflop: only as the big blind) | Someone has bet before you |
+| When it exists | No live bet in front of you (preflop: as the big blind, or as the player who posted a live straddle) | Someone has bet before you |
 | Chip cost | Free | You match the current bet |
 | What it says | "I pass, still in" | "I pay to continue" |
 
@@ -153,7 +153,7 @@ In **Fixed-Limit** games every round is capped (a "capped" pot). The WSOP tourna
 
 All-in means betting ==every chip you have left==. You can do it any time the action is on you — as a bet, a call, or a raise.
 
-If your all-in is *smaller* than the current bet, you're not folded: you simply compete for a ==main pot== capped at your contribution, while the extra chips from bigger stacks form a ==side pot== you can't win. And an all-in that's *less than a full min-raise* generally does not reopen raising for players who already acted — a subtle rule that surprises even regulars.
+If your all-in is *smaller* than the current bet, you're not folded: you simply compete for a ==main pot== capped at your contribution, while the extra chips from bigger stacks form a ==side pot== you can't win. (If someone is even shorter than you, you still play for the side pot they can't reach — each all-in caps only its own layer.) And an all-in that's *less than a full min-raise* generally does not reopen raising for players who already acted — a subtle rule that surprises even regulars.
 
 The full mechanics — side pot math, who shows first, table stakes — are in [all-in rules and side pots](/en/blog/holdem-all-in-rules), and what happens when all-in hands tie is in [split pot and chop rules](/en/blog/holdem-split-pot-rules).
 
@@ -218,15 +218,15 @@ A. You shouldn't. Action must proceed clockwise in order, and an out-of-turn fol
 
 **Q. Can you check on the preflop?**
 
-A. Only as the big blind, and only if no one raised. The BB has already posted a live bet, so they may check to see the flop for free. Every other position preflop must call, raise, or fold.
+A. Only if your own post is the live bet and no one raised — normally the big blind, but also a live straddle (WSOP Live Action Rules 159 · 165): the post counts as your opening bet, so you may check to see the flop for free. Every other position preflop must call, raise, or fold.
 
 **Q. Can you raise after someone goes all-in?**
 
-A. It depends on the all-in's size. If the all-in is a full legal raise, action reopens and you can re-raise. If it's *less* than a full min-raise, players who already acted can generally only call or fold — the short all-in does not reopen raising for them in most cardrooms.
+A. It depends on the all-in's size. If the all-in is a full legal raise, action reopens and you can re-raise — provided at least one opponent who isn't all-in is still in the hand; heads-up against an all-in there is nothing left to raise into, so you can only call or fold. If it's *less* than a full min-raise, players who already acted can generally only call or fold — the short all-in does not reopen raising for them in most cardrooms.
 
 **Q. What is a string bet in poker?**
 
-A. Trying to bet or raise in multiple motions — going back to your stack in between — without announcing "raise" first (==Rule 103==). Dealers rule string bets as a call of the original amount. The same rule also bans a deceptive gesture meant to induce action out of turn before your own action is complete. Saying "call" and then adding is not a string bet but a binding declaration (==Rule 90.d==) — same effect. Announce your action verbally or move all chips in one motion.
+A. Trying to bet or raise in multiple motions — going back to your stack in between — without announcing "raise" first (==Rule 103==). The second motion never counts — only the chips from the first motion stand: a call if they're under half a minimum raise, a forced full min-raise if they're half or more (TDA Rule 43-A). The same rule also bans a deceptive gesture meant to induce action out of turn before your own action is complete. Saying "call" and then adding is not a string bet but a binding declaration (==Rule 90.d==) — same effect. Announce your action verbally or move all chips in one motion.
 
 **Q. What does it mean to limp in poker?**
 

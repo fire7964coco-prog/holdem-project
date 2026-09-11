@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Short stack (kira-kira di bawah 20–25 big blind) tak bisa main poker postflop normal, dan dari sekitar 15 big blind ke bawah ia beralih ke push/fold: masuk all-in first-in untuk menjaga fold equity Anda, dan jangan pernah open-limp atau min-raise-lalu-fold. Shove lebih lebar dari posisi akhir, jaga calling range lebih ketat daripada shoving range Anda, dan jangan blind down sampai habis 'menunggu tangan bagus' — fold equity adalah senjata Anda, dan di bawah sekitar 8 big blind ia memudar dengan cepat.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-08-28",
-  masterUpdated: "2026-08-13",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "13 mnt",
   emoji: "📉",
@@ -61,7 +61,7 @@ Kesalahan terbesar adalah tidak tahu Anda ada di baris yang mana. Stack 12 big b
 
 Pikirkan apa yang dilakukan min-raise saat Anda pendek: ia mengikat chip, mengundang re-raise yang tak bisa Anda call, dan membiarkan lawan merealisasikan equity mereka dengan murah. Sebuah ==shove== melakukan kebalikannya. Ia berkata "call demi turnamen Anda atau fold," dan sebagian besar tangan fold. Saat Anda mengambil blind dan ante tanpa lawan cukup sering, ==Anda profit bahkan di saat Anda di-call dan kalah==, karena pot gratis itu lebih dari sekadar menutupinya.
 
-Jebakannya adalah fold equity ==meluruh saat stack Anda menyusut==. Di 12–15 big blind, lawan banyak fold — shove Anda menakutkan. Ia mulai memudar sekitar 8–10 big blind, dan pada 4–5 mereka mendapat harga yang begitu bagus sehingga mereka call dengan hampir apa saja — fold equity Anda nyaris habis. Itulah seluruh alasan untuk tidak menunggu: ==shove selagi all-in Anda masih menakuti orang==, bukan setelahnya.
+Jebakannya adalah fold equity ==meluruh saat stack Anda menyusut==. Di 12–15 big blind, lawan banyak fold — shove Anda menakutkan. Ia mulai memudar sekitar 8–10 big blind, dan pada 4–5 mereka mendapat [harga yang begitu bagus](/id/blog/holdem-pot-odds) sehingga mereka call dengan hampir apa saja — fold equity Anda nyaris habis. Itulah seluruh alasan untuk tidak menunggu: ==shove selagi all-in Anda masih menakuti orang==, bukan setelahnya.
 
 ---
 

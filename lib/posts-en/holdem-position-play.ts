@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Being in position means you act last — you see every opponent's decision before spending a chip. Solver and database studies suggest out-of-position players capture only about 60–85% of their equity — which puts you above 100% when you're in position. That's why UTG opens ~13% of hands and the button ~43% — and why position rewrites every c-bet, bluff, and pot-control decision postflop.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-09-09",
+  updated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎯",
@@ -210,7 +210,7 @@ Massively. The continuation bet is fundamentally an information play, and inform
 | Situation | Typical solver c-bet frequency (flop) |
 |---|---|
 | **IP (BTN/CO vs blind defense)** | **~65–75%** of boards |
-| OOP as the 3-bettor (3-bet pots from the blinds) | Very high — in our solver runs the big blind c-bets over 97% of the time on both Q♥T♥7♠ and 8♦5♣2♠ |
+| OOP as the 3-bettor (3-bet pots from the blinds) | Very high — in our solver runs the big blind c-bets over 97% of the time on both Q♥T♥7♠ and 8♦5♣2♠ — at the two-thirds-pot size; the one-third size got under 1% |
 | OOP raiser vs IP caller (single-raised pot) | ~30–45% — most selective |
 
 In position, you can c-bet a wide range — including air and backdoor draws — because your opponent must respond without knowing your next move, and when called you still act last on the turn. Out of position, the same bet is riskier: a check-raise ends your bluff, and a call leaves you guessing first on every remaining street. That's why blindly c-betting 100% "because you raised preflop" burns money OOP in a single-raised pot — the near-100% row above belongs to the 3-bettor, whose range advantage licenses it.

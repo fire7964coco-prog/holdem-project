@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Beim Showdown zeigt zuerst, wer als Letzter gesetzt oder erhöht hat. Wurde der River durchgecheckt, zeigt der erste aktive Spieler links vom Button zuerst. Verlierst du, darfst du verdeckt mucken – aber wer die River-Bet gecallt hat, darf die Hand des Bettors sehen.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-10",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "🃏",
@@ -41,7 +41,7 @@ Die Regel hängt davon ab, wie die letzte Setzrunde geendet hat (den kompletten 
 |--------------------|-----------------|
 | Jemand hat am River gesetzt oder erhöht | ==Der Spieler, der zuletzt gesetzt oder erhöht hat==, zeigt zuerst |
 | Alle haben den River durchgecheckt | Der erste aktive Spieler links vom Dealer-Button zeigt zuerst |
-| All-in auf einer früheren Street | Sobald niemand mehr setzen kann, werden alle Hände offen hingelegt und die restlichen Karten ausgeteilt – können Mitspieler noch setzen, bleibt bis dahin alles verdeckt |
+| All-in auf einer früheren Street | Turnier: Sobald niemand mehr setzen kann, werden alle Hände offen hingelegt (TDA-Regel 16). Cashgame: Der All-in-Spieler dreht zuerst um – gibt es einen Side Pot, zeigen dessen Spieler zuerst (Live Action Rule 149) |
 
 </div>
 
@@ -77,19 +77,19 @@ Beispiel: Button, Small Blind und Big Blind sehen den River. SB checkt, BB check
 
 ## All-in-Showdown-Regeln – zeigt der All-in-Spieler zuerst?
 
-Geht ein Spieler All-in und sind keine weiteren Bets mehr möglich, werden die restlichen Karten üblicherweise ausgeteilt, während **alle Hände offen auf dem Tisch liegen**. Das schützt die Integrität der Hand – in einer All-in-Situation soll niemand strategisch mucken können.
+Im **Turnier** gilt: Geht ein Spieler All-in und sind keine weiteren Bets mehr möglich, werden die restlichen Karten ausgeteilt, während **alle Hände offen auf dem Tisch liegen** (==TDA-Regel 16==). Das schützt die Integrität der Hand – in einer All-in-Situation soll niemand strategisch mucken können. **Cashgames laufen nach Hausregeln**, und die WSOP Live Action Rules drehen es um: Endete das Setzen vor dem River, ist der Spieler, der All-in gegangen ist, dafür verantwortlich, zuerst umzudrehen, und gibt es einen Side Pot, zeigen dessen Spieler vor jedem, der nur im Main Pot All-in ist (==Live Action Rule 149==).
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | All-in-Szenario | Showdown-Regel |
 |----------------|---------------|
-| Spieler geht All-in, andere callen, keine Bets mehr möglich | Alle Hände werden vor oder während des Runouts offen gezeigt |
+| Spieler geht auf einer früheren Street All-in, andere callen, keine Bets mehr möglich | Turnier: Alle Hände werden vor oder während des Runouts offen gezeigt. Cashgame: Der All-in-Spieler dreht zuerst um – gibt es einen Side Pot, zeigen dessen Spieler zuerst (Live Action Rule 149) |
 | All-in-Bet am River wird gecallt | Der All-in-Spieler zeigt als letzter Aggressor zuerst – und ==r:im Turnier darf hier niemand mucken==, nach TDA-Regel 16 muss auch der Caller seine Hand tablen |
 | Mehrere All-ins mit mehreren Side Pots | Jeder Pot wird separat vergeben; alle beteiligten Hände werden gezeigt |
 
 </div>
 
-Eine Feinheit: Gibt es einen **Side Pot** (andere Spieler haben noch Chips und setzen weiter), wird zuerst der Side Pot vergeben und danach der Hauptpot. Das ist die **Auszahlungsreihenfolge** – mit dem Aufdecken hat sie nichts zu tun: Die Karten des All-in-Spielers liegen längst offen, sobald kein Einsatz mehr möglich ist. Die TDA-Illustration zu Regel 16 sagt es wörtlich – man wartet *nicht*, bis der Side Pot verteilt ist, bevor man die Hand des All-in-Spielers umdreht.
+Eine Feinheit: Gibt es einen **Side Pot** (andere Spieler haben noch Chips und setzen weiter), wird zuerst der Side Pot vergeben und danach der Hauptpot. Das ist die **Auszahlungsreihenfolge**. Im Turnier hat sie mit dem Aufdecken nichts zu tun: Die Karten des All-in-Spielers liegen längst offen, sobald kein Einsatz mehr möglich ist. Die TDA-Illustration zu Regel 16 sagt es wörtlich – man wartet *nicht*, bis der Side Pot verteilt ist, bevor man die Hand des All-in-Spielers umdreht. Im Cashgame folgt die Zeigereihenfolge nach den WSOP Live Action Rules dagegen den Pots: Erst zeigen die Side-Pot-Spieler, dann der, der nur im Main Pot All-in ist (Rule 149).
 
 Wie Side Pots entstehen und ausbezahlt werden, wenn Spieler All-in sind, liest du in den [All-in-Regeln und Side Pots](/de/blog/holdem-all-in-rules); für geteilte Pots siehe die [Split-Pot- und Chop-Regeln](/de/blog/holdem-split-pot-rules).
 
@@ -103,7 +103,7 @@ Wie Side Pots entstehen und ausbezahlt werden, wenn Spieler All-in sind, liest d
 
 Verliest sich ein Spieler und sagt „Ich habe ein Paar“, obwohl er in Wirklichkeit eine Straße hält – dann gewinnt die Straße. Der Dealer liest die Karten und vergibt den Pot an die beste gezeigte Hand.
 
-Das gilt in beide Richtungen. Wenn du glaubst, verloren zu haben, und verdeckt muckst, obwohl deine Hand gewonnen hätte – ==r:ist der Pot weg==. Tot ist deine Hand erst, wenn der Dealer sie in den Muck geschoben hat und sie nicht mehr eindeutig identifizierbar ist – verdeckt abgelegte Karten sind nach ==TDA-Regel 14== nicht automatisch tot. Verlass dich trotzdem nie darauf. Lass den Dealer immer deine Hand lesen, bevor du muckst, wenn du nicht zu 100% sicher bist, dass du verloren hast.
+Das gilt in beide Richtungen. Wenn du glaubst, verloren zu haben, und verdeckt muckst, obwohl deine Hand gewonnen hätte – ==r:ist der Pot weg==. Tot ist deine Hand, sobald der Dealer sie in den Muck geschoben hat oder sie nicht mehr identifizierbar und zurückholbar ist – verdeckt abgelegte Karten sind nach ==TDA-Regel 14== nicht automatisch tot. Verlass dich trotzdem nie darauf. Lass den Dealer immer deine Hand lesen, bevor du muckst, wenn du nicht zu 100% sicher bist, dass du verloren hast.
 
 Echte Situation: Du hältst J♥ 10♥ auf einem Board mit Q♥ 9♥ 8♥ 2♣ 5♦. Du hast einen Straight Flush bis zur Dame (Q-J-10-9-8 in Herz). Dein Gegner zeigt K♣ Q♦ (ein Paar Damen). Du gewinnst haushoch. Mucke nicht, nur weil du seine Dame siehst.
 
@@ -151,7 +151,7 @@ In den meisten Cardrooms kannst du den Dealer bitten, eine gemuckte Hand aufzude
 
 ### Fehler 4: Nicht wissen, dass man früher zeigen darf
 
-Beim Showdown – also sobald alle Einsätze abgeschlossen sind – verbietet dir keine Regel, deine Hand umzudrehen, bevor du offiziell an der Reihe bist. Läuft die Hand dagegen noch und steht irgendwo eine Aktion aus, gilt das Gegenteil: Karten zu zeigen kostet nach ==WSOP Rule 117== eine Strafe. ==g:Hast du die Nuts oder eine sehr starke Hand, zeig sofort.== Die anderen Spieler wissen das zu schätzen. Es beschleunigt das Spiel. Und es ist das Gegenteil von Slow Rolling.
+Beim Showdown – also sobald alle Einsätze abgeschlossen sind – verbietet dir keine Regel, deine Hand umzudrehen, bevor du offiziell an der Reihe bist. Läuft die Hand dagegen noch und steht irgendwo eine Aktion aus, gilt das Gegenteil: Karten zu zeigen kostet nach ==WSOP Tournament Rule 117== eine Strafe (das Live-Action-Regelwerk zählt anders). ==g:Hast du die Nuts oder eine sehr starke Hand, zeig sofort.== Die anderen Spieler wissen das zu schätzen. Es beschleunigt das Spiel. Und es ist das Gegenteil von Slow Rolling.
 
 ---
 
@@ -168,7 +168,7 @@ A. Der Spieler, der in der letzten Setzrunde die letzte aggressive Aktion gemach
 
 **Q. Muss man seine Karten zeigen, wenn man beim Showdown gecallt wird?**
 
-A. Ja – warst du am River der Letzte, der gesetzt oder erhöht hat, musst du nach dem Call zuerst zeigen. Hast du die Bet eines anderen gecallt, darfst du nach dem Blick auf seine Hand verdeckt mucken, wenn du verloren hast – es sei denn, jemand war all-in: Dann muss im Turnier nach ==TDA-Regel 16== auch der Caller tablen. Allerdings darf im Turnier nach ==TDA-Regel 18== nur derjenige verlangen, eine Hand zu sehen, der selbst noch Karten hält oder sie getablet hat – und das unantastbare Recht gilt allein der Hand des letzten Aggressors am River. In Cashgames sind viele Cardrooms großzügiger.
+A. Ja – warst du am River der Letzte, der gesetzt oder erhöht hat, musst du nach dem Call zuerst zeigen. Hast du die Bet eines anderen gecallt, darfst du nach dem Blick auf seine Hand verdeckt mucken, wenn du verloren hast – es sei denn, jemand war all-in: Dann muss im Turnier nach ==TDA-Regel 16== auch der Caller tablen. Allerdings steht im Turnier nach ==TDA-Regel 18== das garantierte Recht, eine Hand zu sehen, dem zu, der **die River-Bet gecallt hat** – sofern er seine Karten getablet hat oder noch hält –, und es gilt allein der Hand des letzten Aggressors, der Hand, die er bezahlt hat. Wer verdeckt gemuckt hat, darf gar nicht mehr fragen, und jeder andere Wunsch liegt im Ermessen des Turnierdirektors. In Cashgames sind viele Cardrooms großzügiger.
 
 **Q. Muss ich allen meine Karten zeigen, wenn ich sie einem Spieler zeige?**
 
@@ -180,11 +180,11 @@ A. Nein – verboten ist es nicht, aber überall verhasst. Slow Rolling bedeutet
 
 **Q. Werden die Karten beim All-in sofort aufgedeckt?**
 
-A. Geht ein Spieler All-in und sind keine weiteren Bets möglich, werden alle an diesem Pot beteiligten Hände üblicherweise vor oder während des Austeilens der restlichen Gemeinschaftskarten offen gezeigt. Gibt es einen Side Pot, wird dieser zuerst vergeben und danach der Hauptpot – die Karten des All-in-Spielers liegen zu diesem Zeitpunkt aber längst offen. Solange die anderen noch Chips haben und setzen können, bleibt dagegen alles verdeckt.
+A. Im Turnier gilt: Geht ein Spieler All-in und sind keine weiteren Bets möglich, werden alle an diesem Pot beteiligten Hände vor oder während des Austeilens der restlichen Gemeinschaftskarten offen gezeigt (TDA-Regel 16). Gibt es einen Side Pot, wird dieser zuerst vergeben und danach der Hauptpot – die Karten des All-in-Spielers liegen zu diesem Zeitpunkt aber längst offen. Im Cashgame lassen die WSOP Live Action Rules den Spieler, der All-in gegangen ist, zuerst umdrehen, und die Side-Pot-Spieler zeigen vor jedem, der nur im Main Pot All-in ist (Rule 149). Solange die anderen noch Chips haben und setzen können, bleibt dagegen alles verdeckt.
 
 **Q. Kann ich gewinnen, wenn ich meine Hand falsch ansage?**
 
-A. Ja – dafür sorgt die Regel „cards speak“ (die Karten sprechen). Sie heißt: Die beste Hand gewinnt auf Basis dessen, was die Karten tatsächlich zeigen, nicht auf Basis dessen, was die Spieler sagen. Wer sich verliest und die falsche Hand ansagt, gewinnt trotzdem, wenn seine Karten die beste Hand sind. Umgekehrt hat jemand, der muckt, ohne zu prüfen, ob er verloren hat, keinerlei Anspruch auf den Pot – selbst wenn seine Hand gewonnen hätte. ==r:Absichtlich falsch anzusagen ist dagegen kein Kavaliersdelikt== und kann nach TDA-Regel 12 bestraft werden – wer bewusst zu niedrig ansagt, um einen Gegner zum Mucken zu bringen, riskiert eine Strafe.
+A. Ja – dafür sorgt die Regel „cards speak“ (die Karten sprechen). Sie heißt: Die beste Hand gewinnt auf Basis dessen, was die Karten tatsächlich zeigen, nicht auf Basis dessen, was die Spieler sagen. Wer sich verliest und die falsche Hand ansagt, gewinnt trotzdem, wenn seine Karten die beste Hand sind. Umgekehrt wirft jemand, der muckt, ohne zu prüfen, ob er verloren hat, den Pot meist weg: Die Hand ist tot, sobald der Dealer sie in den Muck schiebt oder sie sonst nicht mehr identifizierbar ist – selbst wenn sie gewonnen hätte (TDA-Regel 14: bis dahin können verdeckte, aber zu 100% identifizierbare und zurückholbare Karten noch getablet werden – verlass dich aber nie darauf). ==r:Absichtlich falsch anzusagen ist dagegen kein Kavaliersdelikt== und kann nach TDA-Regel 12 bestraft werden – wer bewusst zu niedrig ansagt, um einen Gegner zum Mucken zu bringen, riskiert eine Strafe.
 
 **Q. Muss ich meinen Bluff zeigen, wenn alle folden?**
 

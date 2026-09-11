@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un short stack (más o menos por debajo de 20–25 ciegas grandes) no puede jugar póker postflop normal, y desde unas 15 ciegas grandes hacia abajo cambia al push/fold: vas all-in siendo el primero en entrar para conservar tu fold equity, y nunca haces open-limp ni min-raise para luego foldear. Vas de shove más amplio desde posición tardía, mantienes tu rango de igualar más cerrado que tu rango de shove, y no te dejas fundir hasta nada 'esperando una mano': tu fold equity es el arma, y por debajo de unas 8 ciegas grandes se apaga a toda velocidad.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-09-09",
-  masterUpdated: "2026-08-13",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "📉",
@@ -61,7 +61,7 @@ El mayor error, con diferencia, es no saber en qué fila estás. Un stack de 12 
 
 Piensa en lo que hace un min-raise cuando vas corto: compromete fichas, invita a una resubida que no puedes pagar y deja que los rivales realicen su equity barato. Un ==shove== hace lo contrario. Dice "iguala por tu torneo o foldea", y la mayoría de las manos foldean. Cuando te llevas las ciegas y los antes sin oposición con suficiente frecuencia, ==ganas incluso las veces que te pagan y pierdes==, porque los botes gratis pagan de sobra por ellas.
 
-La trampa es que la fold equity ==decae a medida que tu stack encoge==. Con 12–15 ciegas grandes, los rivales foldean mucho: tu shove da miedo. Empieza a apagarse en torno a las 8–10 ciegas grandes, y con 4–5 les dan un precio tan bueno que igualan con casi cualquier cosa: tu fold equity casi ha desaparecido. Esa es toda la razón para no esperar: ==ve de shove mientras tu all-in todavía asusta a la gente==, no después.
+La trampa es que la fold equity ==decae a medida que tu stack encoge==. Con 12–15 ciegas grandes, los rivales foldean mucho: tu shove da miedo. Empieza a apagarse en torno a las 8–10 ciegas grandes, y con 4–5 les dan un [precio tan bueno](/es/blog/holdem-pot-odds) que igualan con casi cualquier cosa: tu fold equity casi ha desaparecido. Esa es toda la razón para no esperar: ==ve de shove mientras tu all-in todavía asusta a la gente==, no después.
 
 ---
 

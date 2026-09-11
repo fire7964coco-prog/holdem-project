@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In a poker tournament you pay a fixed buy-in for chips, blinds increase on a timer until one player holds all chips. Top 10–15% of players cash. Formats include freezeout, PKO, satellite, and deepstack — enter via direct buy-in, satellite, or online pre-registration.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-09-09",
+  updated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏆",
@@ -122,6 +122,8 @@ Usually 6–9 players left. Payouts increase sharply with each elimination. [ICM
 | **PKO (Progressive KO)** | Bounties grow with each knockout — part paid to you, part added to your head | High-variance, big-upside players |
 | **Deepstack** | Starting stack well above the standard event in the same series, plus slower levels | Players who want more postflop play |
 | **Satellite** | Prize = entry into a bigger tournament, not cash | Budget players targeting major events |
+| **Turbo / Hyper-Turbo** | Much shorter blind levels than the standard event, so stacks get shallow fast and push/fold arrives early | Short sessions — players comfortable with shove-or-fold |
+| **Mystery Bounty** | A bounty event where each knockout (usually from a set stage of the event) draws a random prize — most are small, a few are jackpots | Players chasing one big payout |
 | **MTT** | Multi-Table Tournament — large field across many tables | Any — the most common format |
 | **SNG (Sit & Go)** | Starts when seats fill (no set start time) — usually 6–9 players | Quick game, no scheduling needed |
 
@@ -267,7 +269,7 @@ The payout schedule can be checked before the tournament starts, but the final n
 
 ## Tournament Glossary — Terms You'll Hear on Day 1
 
-These 13 terms cover most of what you'll hear at the table. For the full A-to-Z, see the [poker glossary](/en/blog/holdem-glossary).
+These 16 terms cover most of what you'll hear at the table. For the full A-to-Z, see the [poker glossary](/en/blog/holdem-glossary).
 
 | Term | What it means |
 |------|--------------|
@@ -282,6 +284,9 @@ These 13 terms cover most of what you'll hear at the table. For the full A-to-Z,
 | **Re-entry** | Buying back in after busting (only during the late reg window) |
 | **Satellite** | A qualifier tournament where the prize is a seat in a bigger event |
 | **PKO** | Progressive Knockout — bounty tournaments where the prize grows |
+| **Mystery Bounty** | A bounty format where the prize for each knockout is drawn at random |
+| **Turbo** | A structure with much shorter blind levels; a hyper-turbo is shorter still |
+| **Add-on** | A one-time extra chip purchase offered to everyone at the end of the rebuy period, regardless of stack size |
 | **ICM** | Independent Chip Model — a mathematical framework for tournament chip value |
 | **Min-cash** | The lowest payout position — the minimum you earn for making the money |
 

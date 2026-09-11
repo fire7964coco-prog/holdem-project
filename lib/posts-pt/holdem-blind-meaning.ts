@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Blinds são apostas obrigatórias pagas antes de as cartas serem distribuídas. O small blind fica à esquerda do botão do dealer e o big blind à esquerda dele; o big blind — normalmente o dobro do small blind — é a unidade de aposta da mesa.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "💰",
@@ -31,7 +31,7 @@ Os blinds são ==o motor que mantém o poker andando== — a primeira parte das 
 ### Os números essenciais
 
 :::stripe
-2 | apostas obrigatórias pagas em toda mão
+2 | apostas obrigatórias — small blind e big blind
 1/2 | o small blind costuma ser metade do big blind
 1 BB | o big blind = a unidade de aposta da mesa
 :::
@@ -40,7 +40,7 @@ Os blinds são ==o motor que mantém o poker andando== — a primeira parte das 
 
 ## O que é um blind no poker — e por que ele existe?
 
-Um **blind** é uma aposta que você é obrigado a fazer *antes* de as suas cartas chegarem — você aposta "no escuro", sem ver nada. Dois jogadores pagam em toda mão: o small blind e o big blind, os dois assentos imediatamente à esquerda do botão do dealer.
+Um **blind** é uma aposta que você é obrigado a fazer *antes* de as suas cartas chegarem — você aposta "no escuro", sem ver nada. Dois jogadores pagam em toda mão normal: o small blind e o big blind, os dois assentos imediatamente à esquerda do botão do dealer. (A única exceção é o botão morto, que pode deixar uma mão sem small blind.)
 
 Por que obrigar alguém a pagar? Para manter o jogo vivo. ==r:Sem blinds, todo mundo poderia foldar e esperar eternamente por mãos premium==; os potes ficariam vazios, blefar não teria sentido e o jogo travaria. ==g:Duas apostas obrigatórias em cada mão garantem que sempre exista algo pelo que brigar.==
 

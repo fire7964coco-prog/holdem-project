@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Berada in position berarti Anda beraksi terakhir — Anda melihat setiap keputusan lawan sebelum mengeluarkan satu chip pun. Studi solver dan database menunjukkan pemain out of position hanya menangkap sekitar 60–85% dari equity mereka — yang berarti in position Anda berada di atas 100%. Itulah kenapa UTG membuka ~13% tangan dan button ~43% — dan kenapa posisi menulis ulang setiap keputusan c-bet, bluff, dan pot control di postflop.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-11",
+  masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "16 mnt",
   emoji: "🎯",
@@ -211,7 +211,7 @@ Sangat besar. Continuation bet pada dasarnya adalah permainan informasi, dan inf
 | Situasi | Frekuensi c-bet solver umum (flop) |
 |---|---|
 | **IP (BTN/CO vs pertahanan blind)** | **~65–75%** board |
-| OOP sebagai pihak yang 3-bet (pot 3-bet dari blind) | Sangat tinggi — di run solver kami big blind c-bet lebih dari 97% dari waktu, baik di Q♥T♥7♠ maupun di 8♦5♣2♠ |
+| OOP sebagai pihak yang 3-bet (pot 3-bet dari blind) | Sangat tinggi — di run solver kami big blind c-bet lebih dari 97% dari waktu, baik di Q♥T♥7♠ maupun di 8♦5♣2♠ — dengan ukuran dua pertiga pot; ukuran sepertiga hanya di bawah 1% |
 | Raiser OOP vs caller IP (pot single-raised) | ~30–45% — paling selektif |
 
 In position, Anda bisa c-bet range lebar — termasuk tangan kosong dan backdoor draw — karena lawan Anda harus merespons tanpa tahu gerakan Anda berikutnya, dan saat di-call Anda tetap beraksi terakhir di turn. Out of position, bet yang sama lebih berisiko: sebuah check-raise mengakhiri bluff Anda, dan sebuah call membuat Anda menebak lebih dulu di setiap street tersisa. Itulah kenapa c-bet buta 100% "karena Anda raise preflop" membakar uang saat OOP di pot single-raised — baris nyaris-100% di atas itu milik pihak yang 3-bet, yang keunggulan range-nya memang mengizinkannya.
