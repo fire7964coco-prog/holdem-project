@@ -2,19 +2,19 @@
 
 > `node scripts/scan-color-debt.mjs`로 재생성. 대상 = `components/` `app/` `lib/` (tsx·ts·css).
 > 제외 = `app/globals.css`(토큰 정의처) · `*Diagram.tsx`(SVG 일러스트).
-> 오탐 제거 = 색 문맥 없는 3~4자리 `#XXX` **34건**(「#1000」 같은 순위·수량 표기).
+> 오탐 제거 = 색 문맥 없는 3~4자리 `#XXX` **38건**(「#1000」 같은 순위·수량 표기).
 > ✅ **이미 회수돼 제외된 자리 = 0건** (`var(--토큰)` 참조 — 부채가 아니다).
 
 ## 한눈에
 
 | 구역 | 자리 | 파일 | 성격 |
 |---|---:|---:|---|
-| **UI (components·app)** | **1188** | 57 | 🔴 토큰 회수 대상 — 톤 변경이 여기서 갈린다 |
-| **포스트 본문 인라인 스타일** | **9784** | 453 | 🟠 콘텐츠 편집 필요 · 다국어라 파급 큼 |
-| 데이터·기타 | 481 | 4 | 🟡 의미색(등급·상태)일 수 있음 — 개별 판정 |
-| **합계** | **11453** | 514 | |
+| **UI (components·app)** | **1188** | 65 | 🔴 토큰 회수 대상 — 톤 변경이 여기서 갈린다 |
+| **포스트 본문 인라인 스타일** | **9841** | 455 | 🟠 콘텐츠 편집 필요 · 다국어라 파급 큼 |
+| 데이터·기타 | 553 | 4 | 🟡 의미색(등급·상태)일 수 있음 — 개별 판정 |
+| **합계** | **11582** | 524 | |
 
-**종류별**: hex 642 · rgba 9725 · arbitrary 96 · palette 990
+**종류별**: hex 642 · rgba 9779 · arbitrary 96 · palette 1065
 
 ## 🔴 UI — 회수 대상
 
@@ -22,15 +22,14 @@
 
 | 파일 | 자리 | 내역 |
 |---|---:|---|
-| `app/calculator/calculator-client.tsx` | 141 | palette 139 · hex 2 |
+| `app/calculator/calculator-client.tsx` | 153 | palette 151 · hex 2 |
 | `app/en/calculator/calculator-client.tsx` | 140 | palette 139 · hex 1 |
 | `app/_archive/home-client.tsx` | 68 | palette 62 · rgba 6 |
-| `app/home-client.tsx` | 63 | palette 62 · rgba 1 |
 | `app/blog/roadmap/blog-roadmap-client.tsx` | 59 | hex 33 · arbitrary 1 · palette 25 |
-| `app/tournaments/tournaments-client.tsx` | 54 | palette 54 |
+| `app/tournaments/tournaments-client.tsx` | 57 | palette 57 |
 | `components/quiz-widget.tsx` | 51 | hex 19 · rgba 32 |
 | `app/win-rate-quiz/_simulator.tsx` | 40 | hex 26 · rgba 14 |
-| `app/blog/[slug]/blog-post-client.tsx` | 38 | hex 23 · rgba 6 · arbitrary 8 · palette 1 |
+| `app/blog/[slug]/blog-post-client.tsx` | 36 | hex 22 · rgba 5 · arbitrary 8 · palette 1 |
 | `app/rules/rules-client.tsx` | 35 | hex 9 · arbitrary 9 · palette 17 |
 | `app/pub/[region]/pub-region-client.tsx` | 31 | hex 13 · palette 5 · arbitrary 13 |
 | `app/login/page.tsx` | 29 | hex 18 · rgba 11 |
@@ -61,13 +60,22 @@
 | `app/community/event-tab.tsx` | 7 | hex 6 · palette 1 |
 | `app/en/glossary/glossary-client.tsx` | 7 | hex 6 · rgba 1 |
 | `components/calc-cta-button.tsx` | 6 | hex 2 · arbitrary 2 · rgba 2 |
+| `app/de/solver/solver-client.tsx` | 6 | palette 6 |
+| `app/es/solver/solver-client.tsx` | 6 | palette 6 |
+| `app/fr/solver/solver-client.tsx` | 6 | palette 6 |
+| `app/id/solver/solver-client.tsx` | 6 | palette 6 |
 | `app/post/[id]/post-detail-client.tsx` | 6 | rgba 4 · hex 2 |
+| `app/pt/solver/solver-client.tsx` | 6 | palette 6 |
+| `app/zh/solver/solver-client.tsx` | 6 | palette 6 |
+| `app/zh-hant/solver/solver-client.tsx` | 6 | palette 6 |
 | `components/card-thumb.tsx` | 4 | hex 3 · rgba 1 |
 | `components/feed-nav-arrows.tsx` | 4 | hex 3 · rgba 1 |
 | `components/footer.tsx` | 4 | hex 3 · arbitrary 1 |
 | `components/intl-footer.tsx` | 4 | hex 3 · arbitrary 1 |
 | `components/tournament-board.tsx` | 4 | palette 4 |
 | `app/en/ranking/ranking-client.tsx` | 4 | palette 4 |
+| `app/en/solver/solver-client.tsx` | 4 | palette 4 |
+| `app/ja/solver/solver-client.tsx` | 4 | palette 4 |
 | `app/ranking/ranking-client.tsx` | 4 | palette 4 |
 | `app/solver/solver-client.tsx` | 4 | palette 4 |
 | `components/blog-top-bar.tsx` | 3 | hex 3 |
@@ -87,7 +95,7 @@
 | 파일 | 자리 | 내역 |
 |---|---:|---|
 | `lib/posts/apt-incheon-2026-guide.ts` | 76 | rgba 63 · hex 13 |
-| `lib/posts/appt-korea-2026-guide.ts` | 69 | rgba 59 · hex 10 |
+| `lib/posts/appt-korea-2026-guide.ts` | 71 | rgba 61 · hex 10 |
 | `lib/posts/apt-jeju-2026-fall-guide.ts` | 69 | rgba 58 · hex 11 |
 | `lib/posts-de/holdem-tournament.ts` | 69 | rgba 59 · hex 10 |
 | `lib/posts-en/holdem-tournament.ts` | 69 | rgba 59 · hex 10 |
@@ -101,11 +109,11 @@
 | `lib/posts-de/korea-poker-marathon-2026.ts` | 45 | rgba 42 · hex 3 |
 | `lib/posts-en/korea-poker-marathon-2026.ts` | 45 | rgba 42 · hex 3 |
 | `lib/posts-es/korea-poker-marathon-2026.ts` | 45 | rgba 42 · hex 3 |
-| `lib/posts-id/korea-poker-marathon-2026.ts` | 45 | rgba 42 · hex 3 |
 | `lib/posts-ja/korea-poker-marathon-2026.ts` | 45 | rgba 42 · hex 3 |
 | `lib/posts-pt/korea-poker-marathon-2026.ts` | 45 | rgba 42 · hex 3 |
 | `lib/posts-zh/korea-poker-marathon-2026.ts` | 45 | rgba 42 · hex 3 |
 | `lib/posts-zh-hant/korea-poker-marathon-2026.ts` | 45 | rgba 42 · hex 3 |
+| `lib/posts-id/korea-poker-marathon-2026.ts` | 44 | rgba 41 · hex 3 |
 | `lib/posts-es/wsop-2026-tournament-guide.ts` | 38 | rgba 38 |
 | `lib/posts/wsop-2026-tournament-guide.ts` | 36 | rgba 36 |
 | `lib/posts-ja/texas-holdem-rules-for-beginners.ts` | 36 | rgba 36 |
@@ -175,6 +183,7 @@
 | `lib/posts-zh/holdem-hand-rankings.ts` | 28 | rgba 28 |
 | `lib/posts-zh-hant/apt-incheon-2026-guide.ts` | 28 | rgba 20 · hex 8 |
 | `lib/posts-zh-hant/holdem-3bet.ts` | 28 | rgba 28 |
+| `lib/posts-zh-hant/holdem-hand-rankings.ts` | 28 | rgba 28 |
 | `lib/posts-de/holdem-drawing-odds.ts` | 26 | rgba 26 |
 | `lib/posts-de/holdem-probability.ts` | 26 | rgba 26 |
 | `lib/posts-de/holdem-tournament-vs-cash-game.ts` | 26 | rgba 26 |
@@ -196,6 +205,7 @@
 | `lib/posts-pl/texas-holdem-rules-for-beginners.ts` | 26 | rgba 26 |
 | `lib/posts-pt/holdem-drawing-odds.ts` | 26 | rgba 26 |
 | `lib/posts-pt/holdem-probability.ts` | 26 | rgba 26 |
+| `lib/posts-pt/holdem-tournament-vs-cash-game.ts` | 26 | rgba 26 |
 | `lib/posts-ru/texas-holdem-rules-for-beginners.ts` | 26 | rgba 26 |
 | `lib/posts-zh/holdem-probability.ts` | 26 | rgba 26 |
 | `lib/posts-zh/holdem-tournament-vs-cash-game.ts` | 26 | rgba 26 |
@@ -273,6 +283,7 @@
 | `lib/posts-zh-hant/holdem-game-order.ts` | 22 | rgba 22 |
 | `lib/posts-zh-hant/holdem-icm.ts` | 22 | rgba 22 |
 | `lib/posts-zh-hant/holdem-outs.ts` | 22 | rgba 22 |
+| `lib/posts-zh-hant/holdem-strategy.ts` | 22 | rgba 22 |
 | `lib/posts-zh-hant/holdem-tiebreak-rules.ts` | 22 | rgba 22 |
 | `lib/posts-zh-hant/holdem-when-to-fold.ts` | 22 | rgba 22 |
 | `lib/posts-zh-hant/wsop-2026-tournament-guide.ts` | 22 | rgba 22 |
@@ -345,7 +356,6 @@
 | `lib/posts-zh-hant/holdem-pot-odds.ts` | 20 | rgba 20 |
 | `lib/posts-zh-hant/holdem-rake.ts` | 20 | rgba 20 |
 | `lib/posts-zh-hant/holdem-short-stack.ts` | 20 | rgba 20 |
-| `lib/posts-zh-hant/holdem-strategy.ts` | 20 | rgba 20 |
 | `lib/posts-ar/holdem-all-in-rules.ts` | 18 | rgba 18 |
 | `lib/posts-ar/holdem-game-order.ts` | 18 | rgba 18 |
 | `lib/posts-bn/holdem-all-in-rules.ts` | 18 | rgba 18 |
@@ -447,7 +457,6 @@
 | `lib/posts-pt/holdem-positions.ts` | 16 | rgba 16 |
 | `lib/posts-pt/holdem-showdown-rules.ts` | 16 | rgba 16 |
 | `lib/posts-pt/holdem-split-pot-rules.ts` | 16 | rgba 16 |
-| `lib/posts-pt/holdem-tournament-vs-cash-game.ts` | 16 | rgba 16 |
 | `lib/posts-sw/holdem-blind-meaning.ts` | 16 | rgba 16 |
 | `lib/posts-th/holdem-blind-meaning.ts` | 16 | rgba 16 |
 | `lib/posts-tr/holdem-blind-meaning.ts` | 16 | rgba 16 |
@@ -467,6 +476,7 @@
 | `lib/posts-zh-hant/holdem-split-pot-rules.ts` | 16 | rgba 16 |
 | `lib/posts-zh-hant/holdem-probability.ts` | 14 | rgba 14 |
 | `lib/posts-ar/holdem-betting-actions.ts` | 12 | rgba 12 |
+| `lib/posts-ar/holdem-tournament-vs-cash-game.ts` | 12 | rgba 12 |
 | `lib/posts-bn/holdem-betting-actions.ts` | 12 | rgba 12 |
 | `lib/posts-de/holdem-betting-actions.ts` | 12 | rgba 12 |
 | `lib/posts-de/holdem-flush-vs-straight.ts` | 12 | rgba 12 |
@@ -516,6 +526,7 @@
 | `lib/posts-zh-hant/holdem-betting-actions.ts` | 12 | rgba 12 |
 | `lib/posts-zh-hant/holdem-starting-hands-chart.ts` | 12 | rgba 12 |
 | `lib/posts-zh-hant/texas-holdem-rules-for-beginners.ts` | 10 | rgba 10 |
+| `lib/posts-ar/holdem-hand-rankings.ts` | 8 | rgba 8 |
 | `lib/posts-ar/holdem-showdown-rules.ts` | 8 | rgba 8 |
 | `lib/posts-bn/holdem-showdown-rules.ts` | 8 | rgba 8 |
 | `lib/posts-fa/holdem-showdown-rules.ts` | 8 | rgba 8 |
@@ -537,7 +548,6 @@
 | `lib/posts-ro/holdem-blind-meaning.ts` | 4 | rgba 4 |
 | `lib/posts-ru/holdem-blind-meaning.ts` | 4 | rgba 4 |
 | `lib/posts-uk/holdem-blind-meaning.ts` | 4 | rgba 4 |
-| `lib/posts-zh-hant/holdem-hand-rankings.ts` | 4 | rgba 4 |
 | `lib/posts/holdem-tournament-tax-guide.ts` | 2 | rgba 2 |
 
 ## 🟡 데이터·기타
@@ -546,14 +556,14 @@
 
 | 파일 | 자리 | 내역 |
 |---|---:|---|
-| `lib/tournaments.ts` | 351 | palette 351 |
-| `lib/render-markdown.ts` | 107 | hex 64 · rgba 43 |
+| `lib/tournaments.ts` | 423 | palette 423 |
+| `lib/render-markdown.ts` | 107 | hex 65 · rgba 42 |
 | `lib/theme.ts` | 15 | hex 15 |
 | `lib/range-chart.ts` | 8 | rgba 8 |
 
 ## 🔴 UI — 자리별 전체 목록
 
-### `app/calculator/calculator-client.tsx` (141)
+### `app/calculator/calculator-client.tsx` (153)
 
 - **L18** — `text-slate-300` · `text-red-400` · `text-red-400` · `text-slate-300`
   <br/>`const SUIT_COLORS = ["text-slate-300","text-red-400","text-red-400","text-slate-300"];`
@@ -645,43 +655,51 @@
   <br/>`{ r:"8 ≤ SPR < 15", l:"딥스택 시작", c:"bg-blue-400/20 border-blue-400/40 text-blue-400" },`
 - **L689** — `bg-green-400` · `border-green-400` · `text-green-400`
   <br/>`{ r:"SPR ≥ 15", l:"딥스택", c:"bg-green-400/20 border-green-400/40 text-green-400" },`
-- **L715** — `text-red-500` · `bg-red-900` · `border-red-500`
+- **L742** — `text-red-400` · `bg-red-500` · `border-red-500`
+  <br/>`{ max: 10,       name: "푸시/폴드", range: "≤10",    color: "text-red-400",    bg: "bg-red-500/10 border`
+- **L748** — `text-orange-400` · `bg-orange-500` · `border-orange-500`
+  <br/>`{ max: 20,       name: "숏스택",    range: "10–20",  color: "text-orange-400", bg: "bg-orange-500/10 bo`
+- **L750** — `text-yellow-400` · `bg-yellow-500` · `border-yellow-500`
+  <br/>`{ max: 40,       name: "미들스택",  range: "20–40",  color: "text-yellow-400", bg: "bg-yellow-500/10 bor`
+- **L752** — `text-green-400` · `bg-green-500` · `border-green-500`
+  <br/>`{ max: 100,      name: "여유 스택", range: "40–100", color: "text-green-400",  bg: "bg-green-500/10 bord`
+- **L776** — `text-red-500` · `bg-red-900` · `border-red-500`
   <br/>`: M < 1  ? { name:"💀 데드 존", color:"text-red-500", bg:"bg-red-900/30 border-red-500/40",`
-- **L717** — `text-red-400` · `bg-red-500` · `border-red-500`
+- **L778** — `text-red-400` · `bg-red-500` · `border-red-500`
   <br/>`: M < 6  ? { name:"🔴 레드 존", color:"text-red-400", bg:"bg-red-500/10 border-red-500/40",`
-- **L719** — `text-orange-400` · `bg-orange-500` · `border-orange-500`
+- **L780** — `text-orange-400` · `bg-orange-500` · `border-orange-500`
   <br/>`: M < 10 ? { name:"🟠 오렌지 존", color:"text-orange-400", bg:"bg-orange-500/10 border-orange-500/40",`
-- **L721** — `text-yellow-400` · `bg-yellow-500` · `border-yellow-500`
+- **L782** — `text-yellow-400` · `bg-yellow-500` · `border-yellow-500`
   <br/>`: M < 20 ? { name:"🟡 옐로우 존", color:"text-yellow-400", bg:"bg-yellow-500/10 border-yellow-500/40",`
-- **L723** — `text-green-400` · `bg-green-500` · `border-green-500`
+- **L784** — `text-green-400` · `bg-green-500` · `border-green-500`
   <br/>`: { name:"🟢 그린 존", color:"text-green-400", bg:"bg-green-500/10 border-green-500/40",`
-- **L781** — `text-red-500` · `bg-red-900` · `border-red-500`
+- **L876** — `text-red-500` · `bg-red-900` · `border-red-500`
   <br/>`["💀 데드 존",  "< 1",  "text-red-500",   "bg-red-900/20 border-red-500/30",   "즉시 올인"],`
-- **L782** — `text-red-400` · `bg-red-500` · `border-red-500`
+- **L877** — `text-red-400` · `bg-red-500` · `border-red-500`
   <br/>`["🔴 레드 존",  "1–5",  "text-red-400",   "bg-red-500/10 border-red-500/30",   "푸시/폴드"],`
-- **L783** — `text-orange-400` · `bg-orange-500` · `border-orange-500`
+- **L878** — `text-orange-400` · `bg-orange-500` · `border-orange-500`
   <br/>`["🟠 오렌지 존","6–9",  "text-orange-400","bg-orange-500/10 border-orange-500/30","좁은 레인지"],`
-- **L784** — `text-yellow-400` · `bg-yellow-500` · `border-yellow-500`
+- **L879** — `text-yellow-400` · `bg-yellow-500` · `border-yellow-500`
   <br/>`["🟡 옐로우 존","10–19","text-yellow-400","bg-yellow-500/10 border-yellow-500/30","어그레시브 플레이"],`
-- **L785** — `text-green-400` · `bg-green-500` · `border-green-500`
+- **L880** — `text-green-400` · `bg-green-500` · `border-green-500`
   <br/>`["🟢 그린 존",  "20+",  "text-green-400", "bg-green-500/10 border-green-500/30", "자유로운 전략"],`
-- **L980** — `text-green-400` · `text-red-400`
+- **L1091** — `text-green-400` · `text-red-400`
   <br/>`<td className={'px-3 py-1.5 text-right font-mono font-bold ${diff > 0.1 ? "text-green-400" : diff < `
-- **L991** — `text-green-400`
+- **L1102** — `text-green-400`
   <br/>`<span className="text-green-400 font-bold flex-shrink-0">+차이</span>`
-- **L995** — `text-red-400`
+- **L1106** — `text-red-400`
   <br/>`<span className="text-red-400 font-bold flex-shrink-0">−차이</span>`
-- **L1134** — `text-green-400`
+- **L1245** — `text-green-400`
   <br/>`<span className={'text-[26px] sm:text-4xl leading-none font-black tabular-nums ${isCall ? "text-gree`
-- **L1159** — `bg-green-500`
+- **L1270** — `bg-green-500`
   <br/>`<span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded-[3px] bg-green-500/90 i`
-- **L1186** — `bg-green-500` · `text-green-950`
+- **L1297** — `bg-green-500` · `text-green-950`
   <br/>`? "bg-green-500/90 text-green-950"`
-- **L1300** — `#1a3a2a`
+- **L1421** — `#1a3a2a`
   <br/>`{/* 🔴 여기 있던 「모바일 상단 섹션 네비」(다크 그린 #1a3a2a · 62px · sticky top-0 z-40)는`
-- **L1400** — `text-green-600` · `text-red-500`
+- **L1521** — `text-green-600` · `text-red-500`
   <br/>`<td className={'px-3 py-2.5 text-right font-mono font-bold ${up ? "text-green-600" : "text-red-500"}`
-- **L1438** — `text-green-600` · `text-red-500`
+- **L1559** — `text-green-600` · `text-red-500`
   <br/>`<td className={'px-3 py-2.5 text-right font-mono font-bold ${up ? "text-green-600" : "text-red-500"}`
 
 ### `app/en/calculator/calculator-client.tsx` (140)
@@ -808,9 +826,9 @@
   <br/>`<span className="flex items-center gap-1.5"><span className="w-3 h-3 rounded-[3px] bg-green-500/90 i`
 - **L1149** — `bg-green-500` · `text-green-950`
   <br/>`? "bg-green-500/90 text-green-950"`
-- **L1319** — `text-green-600` · `text-red-500`
+- **L1323** — `text-green-600` · `text-red-500`
   <br/>`<td className={'px-3 py-2.5 text-right font-mono font-bold ${up ? "text-green-600" : "text-red-500"}`
-- **L1357** — `text-green-600` · `text-red-500`
+- **L1361** — `text-green-600` · `text-red-500`
   <br/>`<td className={'px-3 py-2.5 text-right font-mono font-bold ${up ? "text-green-600" : "text-red-500"}`
 
 ### `app/_archive/home-client.tsx` (68)
@@ -900,85 +918,6 @@
 - **L790** — `text-yellow-400`
   <br/>`<Link href="/glossary" className="inline-flex items-center gap-2 text-primary font-semibold hover:te`
 
-### `app/home-client.tsx` (63)
-
-- **L33** — `bg-yellow-500`
-  <br/>`badgeColor: "bg-yellow-500",`
-- **L44** — `bg-red-600`
-  <br/>`badgeColor: "bg-red-600",`
-- **L55** — `bg-green-600`
-  <br/>`badgeColor: "bg-green-600",`
-- **L66** — `bg-blue-600`
-  <br/>`badgeColor: "bg-blue-600",`
-- **L77** — `bg-purple-600`
-  <br/>`badgeColor: "bg-purple-600",`
-- **L144** — `text-red-400` · `bg-red-500` · `border-red-500`
-  <br/>`{ name: "얼리 포지션 (EP)", seats: "UTG, UTG+1", strategy: "프리미엄 핸드만 플레이. AA, KK, QQ, AK 위주로 타이트하게.", col`
-- **L145** — `text-yellow-400` · `bg-yellow-500` · `border-yellow-500`
-  <br/>`{ name: "미들 포지션 (MP)", seats: "MP1, MP2, MP3", strategy: "EP보다 약간 넓게. JJ, TT, AQ, AJ 추가 가능.", color:`
-- **L146** — `text-green-400` · `bg-green-500` · `border-green-500`
-  <br/>`{ name: "레이트 포지션 (LP)", seats: "CO, BTN", strategy: "가장 유리한 자리. 더 넓은 핸드 레인지로 공격적 플레이 가능.", color: "t`
-- **L147** — `text-blue-400` · `bg-blue-500` · `border-blue-500`
-  <br/>`{ name: "블라인드 (SB/BB)", seats: "스몰·빅 블라인드", strategy: "강제로 베팅. BB는 수비적, SB는 가장 불리한 포지션.", color: "te`
-- **L151** — `bg-yellow-500` · `border-yellow-500` · `text-yellow-300`
-  <br/>`{ tier: "S급 (항상 플레이)", hands: ["AA", "KK", "QQ", "AKs"], color: "bg-yellow-500/20 border-yellow-500/`
-- **L152** — `bg-green-500` · `border-green-500` · `text-green-300`
-  <br/>`{ tier: "A급 (강력 추천)", hands: ["JJ", "TT", "AQs", "AKo", "KQs"], color: "bg-green-500/20 border-green`
-- **L153** — `bg-blue-500` · `border-blue-500` · `text-blue-300`
-  <br/>`{ tier: "B급 (포지션에 따라)", hands: ["99", "88", "AJs", "AQo", "KJs", "QJs"], color: "bg-blue-500/20 bord`
-- **L182** — `fill-yellow-400` · `text-yellow-400` · `fill-yellow-400` · `text-yellow-400` · `text-gray-600`
-  <br/>`className={'w-4 h-4 ${i <= Math.floor(rating) ? "fill-yellow-400 text-yellow-400" : i - 0.5 <= ratin`
-- **L185** — `text-yellow-400`
-  <br/>`<span className="ml-1.5 text-sm font-bold text-yellow-400">{rating}/5</span>`
-- **L283** — `rgba(0,0,0...)`
-  <br/>`style={{ textShadow: "0 4px 32px rgba(0,0,0,0.55)" }}`
-- **L398** — `border-yellow-500` · `bg-yellow-500`
-  <br/>`{ step: "1단계", name: "프리플랍 (Pre-Flop)", desc: "각 플레이어에게 홀 카드 2장을 배분합니다. 스몰 블라인드·빅 블라인드 강제 베팅 후, 왼쪽부터`
-- **L399** — `border-green-500` · `bg-green-500`
-  <br/>`{ step: "2단계", name: "플랍 (Flop)", desc: "공용 카드 3장을 테이블 중앙에 공개합니다. 본격적인 핸드 강도 판단 시작. 가장 많은 정보가 나오는 단계`
-- **L400** — `border-blue-500` · `bg-blue-500`
-  <br/>`{ step: "3단계", name: "턴 (Turn)", desc: "4번째 공용 카드를 공개합니다. 팟이 커지고 베팅 압박이 높아지는 단계. 드로우 핸드의 완성 여부가 중요해집`
-- **L401** — `border-purple-500` · `bg-purple-500`
-  <br/>`{ step: "4단계", name: "리버 (River)", desc: "마지막 5번째 공용 카드 공개. 최종 베팅 라운드 후 쇼다운. 남은 플레이어 중 가장 강한 패를 가진 사`
-- **L416** — `text-yellow-400`
-  <br/>`<Link href="/rules" className="inline-flex items-center gap-2 text-primary font-semibold hover:text-`
-- **L433** — `text-green-400`
-  <br/>`<CheckCircle className="w-3.5 h-3.5 text-green-400" />`
-- **L445** — `bg-yellow-500` · `bg-gray-500`
-  <br/>`<div className={'flex items-center justify-center md:w-20 py-4 md:py-0 ${idx === 0 ? "bg-yellow-500/`
-- **L446** — `text-yellow-400` · `text-gray-400`
-  <br/>`<span className={'text-3xl font-black ${idx === 0 ? "text-yellow-400" : idx === 1 ? "text-gray-400" `
-- **L462** — `text-green-400`
-  <br/>`<CheckCircle className="w-3 h-3 text-green-400 flex-shrink-0" /> {pro}`
-- **L483** — `text-yellow-400`
-  <br/>`<Link href="/ranking" className="inline-flex items-center gap-2 text-primary font-semibold hover:tex`
-- **L512** — `bg-yellow-500`
-  <br/>`<tr key={hand.rank} className={'border-b border-border/50 ${idx === 0 ? "bg-yellow-500/5" : ""}'}>`
-- **L514** — `text-yellow-400`
-  <br/>`<span className={'font-black text-lg ${idx === 0 ? "text-yellow-400" : idx <= 2 ? "text-primary" : "`
-- **L527** — `text-yellow-400`
-  <br/>`<Link href="/blog/holdem-hand-rankings" className="inline-flex items-center gap-2 text-primary font-`
-- **L555** — `text-yellow-400`
-  <br/>`<Link href="/strategy" className="inline-flex items-center gap-2 text-primary font-semibold hover:te`
-- **L587** — `text-yellow-400`
-  <br/>`<Link href="/strategy" className="inline-flex items-center gap-2 text-primary font-semibold hover:te`
-- **L640** — `text-yellow-400`
-  <br/>`<Link href="/strategy" className="inline-flex items-center gap-2 text-primary font-semibold hover:te`
-- **L655** — `bg-red-500` · `border-red-500`
-  <br/>`<div className="flex-shrink-0 w-12 h-12 rounded-full bg-red-500/10 border border-red-500/20 flex ite`
-- **L656** — `text-red-400`
-  <br/>`<AlertTriangle className="w-5 h-5 text-red-400" />`
-- **L669** — `text-yellow-400`
-  <br/>`<Link href="/strategy" className="inline-flex items-center gap-2 text-primary font-semibold hover:te`
-- **L714** — `to-yellow-600`
-  <br/>`<div className="w-24 h-24 rounded-full bg-gradient-to-br from-primary to-yellow-600 flex items-cente`
-- **L720** — `text-green-400`
-  <br/>`<CheckCircle className="w-4 h-4 text-green-400" />`
-- **L745** — `text-yellow-400`
-  <br/>`<Link href="/blog" className="hidden md:flex items-center gap-1 text-primary text-sm font-semibold h`
-- **L792** — `text-yellow-400`
-  <br/>`<Link href="/glossary" className="inline-flex items-center gap-2 text-primary font-semibold hover:te`
-
 ### `app/blog/roadmap/blog-roadmap-client.tsx` (59)
 
 - **L37** — `#7c3aed`
@@ -1017,116 +956,118 @@
   <br/>`color: "#be185d",`
 - **L170** — `#fce7f3`
   <br/>`textColor: "#fce7f3",`
-- **L231** — `#0a0f1a` · `bg-[#0a0f1a]`
+- **L235** — `#0a0f1a` · `bg-[#0a0f1a]`
   <br/>`<div className="min-h-screen bg-[#0a0f1a] text-white">`
-- **L234** — `text-gray-400`
+- **L238** — `text-gray-400`
   <br/>`<nav className="flex items-center gap-2 text-sm text-gray-400 mb-6">`
-- **L235** — `text-yellow-400`
-  <br/>`<Link href="/" className="flex items-center gap-1 hover:text-yellow-400 transition-colors">`
 - **L239** — `text-yellow-400`
+  <br/>`<Link href="/" className="flex items-center gap-1 hover:text-yellow-400 transition-colors">`
+- **L243** — `text-yellow-400`
   <br/>`<Link href="/blog" className="flex items-center gap-1 hover:text-yellow-400 transition-colors">`
-- **L246** — `text-yellow-400`
+- **L250** — `text-yellow-400`
   <br/>`<h1 className="text-3xl font-bold text-yellow-400 mb-2">홀덤마스터 블로그 로드맵</h1>`
-- **L247** — `text-gray-300`
+- **L251** — `text-gray-300`
   <br/>`<p className="text-gray-300 mb-3">`
-- **L253** — `bg-gray-800`
+- **L257** — `bg-gray-800`
   <br/>`<div className="flex-1 bg-gray-800 rounded-full h-2.5 overflow-hidden">`
-- **L255** — `from-yellow-500` · `to-yellow-300`
+- **L259** — `from-yellow-500` · `to-yellow-300`
   <br/>`className="h-full bg-gradient-to-r from-yellow-500 to-yellow-300 rounded-full transition-all duratio`
-- **L259** — `text-yellow-400`
+- **L263** — `text-yellow-400`
   <br/>`<span className="text-sm text-yellow-400 font-mono whitespace-nowrap">`
-- **L265** — `text-gray-400`
+- **L269** — `text-gray-400`
   <br/>`<div className="flex gap-4 text-xs text-gray-400 mb-6">`
-- **L267** — `bg-yellow-400`
+- **L271** — `bg-yellow-400`
   <br/>`<span className="w-3 h-3 rounded-full bg-yellow-400 inline-block" />`
-- **L271** — `bg-gray-600` · `border-gray-500`
+- **L275** — `bg-gray-600` · `border-gray-500`
   <br/>`<span className="w-3 h-3 rounded-full bg-gray-600 border border-gray-500 border-dashed inline-block"`
-- **L288** — `#111827`
+- **L292** — `#111827`
   <br/>`<stop offset="0%" stopColor="#111827" />`
-- **L289** — `#0a0f1a`
+- **L293** — `#0a0f1a`
   <br/>`<stop offset="100%" stopColor="#0a0f1a" />`
-- **L301** — `#1e293b`
+- **L305** — `#1e293b`
   <br/>`fill="none" stroke="#1e293b" strokeWidth="1" strokeDasharray="4 6" opacity="0.5" />`
-- **L339** — `#374151`
+- **L343** — `#374151`
   <br/>`stroke={cluster.published ? pillar.color : "#374151"}`
-- **L355** — `#1e293b`
+- **L359** — `#1e293b`
   <br/>`fill={isHovered ? pillar.color : "#1e293b"}`
-- **L362** — `#fbbf24`
+- **L366** — `#fbbf24`
   <br/>`fill="#fbbf24" />`
-- **L377** — `#111827`
+- **L381** — `#111827`
   <br/>`fill="#111827"`
-- **L378** — `#374151`
+- **L382** — `#374151`
   <br/>`stroke="#374151"`
-- **L383** — `#4b5563`
+- **L387** — `#4b5563`
   <br/>`fill="#4b5563" />`
-- **L386** — `#6b7280`
+- **L390** — `#6b7280`
   <br/>`fontSize="10.5" fill="#6b7280"`
-- **L426** — `#92400e` · `#fbbf24`
+- **L430** — `#92400e` · `#fbbf24`
   <br/>`fill="#92400e" stroke="#fbbf24" strokeWidth="2.5" />`
-- **L428** — `#fef3c7`
+- **L432** — `#fef3c7`
   <br/>`fontSize="15" fontWeight="bold" fill="#fef3c7"`
-- **L433** — `#fcd34d`
+- **L437** — `#fcd34d`
   <br/>`fontSize="10" fill="#fcd34d"`
-- **L443** — `text-yellow-400` · `border-gray-800`
+- **L447** — `text-yellow-400` · `border-gray-800`
   <br/>`<h2 className="text-xl font-bold text-yellow-400 mb-6 border-b border-gray-800 pb-3">`
-- **L449** — `bg-gray-900` · `border-gray-800`
+- **L453** — `bg-gray-900` · `border-gray-800`
   <br/>`className="bg-gray-900 rounded-xl p-4 border border-gray-800">`
-- **L454** — `text-gray-500`
+- **L458** — `text-gray-500`
   <br/>`<span className="ml-auto text-xs text-gray-500">`
-- **L463** — `bg-yellow-400`
+- **L467** — `bg-yellow-400`
   <br/>`<span className="w-1.5 h-1.5 rounded-full bg-yellow-400 flex-shrink-0" />`
-- **L465** — `text-gray-200` · `text-yellow-400`
+- **L469** — `text-gray-200` · `text-yellow-400`
   <br/>`className="text-gray-200 hover:text-yellow-400 transition-colors leading-snug">`
-- **L471** — `bg-gray-600`
+- **L475** — `bg-gray-600`
   <br/>`<span className="w-1.5 h-1.5 rounded-full bg-gray-600 flex-shrink-0" />`
-- **L472** — `text-gray-600`
+- **L476** — `text-gray-600`
   <br/>`<span className="text-gray-600 leading-snug">{c.label}</span>`
-- **L485** — `bg-yellow-500` · `bg-yellow-400`
+- **L489** — `bg-yellow-500` · `bg-yellow-400`
   <br/>`className="inline-flex items-center gap-2 px-6 py-3 bg-yellow-500 hover:bg-yellow-400 text-black fon`
 
-### `app/tournaments/tournaments-client.tsx` (54)
+### `app/tournaments/tournaments-client.tsx` (57)
 
-- **L44** — `bg-blue-500` · `text-blue-400` · `border-blue-500`
+- **L49** — `bg-blue-500` · `text-blue-400` · `border-blue-500`
   <br/>`badgeColor: "bg-blue-500/15 text-blue-400 border-blue-500/30",`
-- **L60** — `bg-yellow-500` · `text-yellow-400` · `border-yellow-500`
+- **L65** — `bg-yellow-500` · `text-yellow-400` · `border-yellow-500`
   <br/>`badgeColor: "bg-yellow-500/15 text-yellow-400 border-yellow-500/30",`
-- **L76** — `bg-green-500` · `text-green-400` · `border-green-500`
+- **L81** — `bg-green-500` · `text-green-400` · `border-green-500`
   <br/>`badgeColor: "bg-green-500/15 text-green-400 border-green-500/30",`
-- **L119** — `bg-blue-500` · `text-blue-400` · `border-blue-500`
+- **L124** — `bg-blue-500` · `text-blue-400` · `border-blue-500`
   <br/>`badgeColor: "bg-blue-500/15 text-blue-400 border-blue-500/30",`
-- **L137** — `bg-red-500` · `text-red-400` · `border-red-500`
+- **L142** — `bg-red-500` · `text-red-400` · `border-red-500`
   <br/>`badgeColor: "bg-red-500/15 text-red-400 border-red-500/30",`
-- **L155** — `bg-orange-500` · `text-orange-400` · `border-orange-500`
+- **L162** — `bg-orange-500` · `text-orange-400` · `border-orange-500`
   <br/>`badgeColor: "bg-orange-500/15 text-orange-400 border-orange-500/30",`
-- **L206** — `text-blue-400`
+- **L213** — `text-blue-400`
   <br/>`color: "text-blue-400",`
-- **L217** — `text-yellow-400`
+- **L224** — `text-yellow-400`
   <br/>`color: "text-yellow-400",`
-- **L243** — `bg-blue-500` · `text-blue-400` · `border-blue-500`
+- **L250** — `bg-blue-500` · `text-blue-400` · `border-blue-500`
   <br/>`color: "bg-blue-500/15 text-blue-400 border-blue-500/30",`
-- **L256** — `bg-orange-500` · `text-orange-400` · `border-orange-500`
+- **L263** — `bg-orange-500` · `text-orange-400` · `border-orange-500`
   <br/>`color: "bg-orange-500/15 text-orange-400 border-orange-500/30",`
-- **L272** — `bg-green-500` · `text-green-400` · `border-green-500`
+- **L283** — `bg-emerald-500` · `text-emerald-400` · `border-emerald-500`
+  <br/>`color: "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",`
+- **L295** — `bg-green-500` · `text-green-400` · `border-green-500`
   <br/>`color: "bg-green-500/15 text-green-400 border-green-500/30",`
-- **L281** — `bg-blue-500` · `text-blue-400` · `border-blue-500`
+- **L304** — `bg-blue-500` · `text-blue-400` · `border-blue-500`
   <br/>`color: "bg-blue-500/15 text-blue-400 border-blue-500/30",`
-- **L290** — `bg-yellow-500` · `text-yellow-400` · `border-yellow-500`
+- **L313** — `bg-yellow-500` · `text-yellow-400` · `border-yellow-500`
   <br/>`color: "bg-yellow-500/15 text-yellow-400 border-yellow-500/30",`
-- **L299** — `bg-orange-500` · `text-orange-400` · `border-orange-500`
+- **L322** — `bg-orange-500` · `text-orange-400` · `border-orange-500`
   <br/>`color: "bg-orange-500/15 text-orange-400 border-orange-500/30",`
-- **L308** — `bg-violet-500` · `text-violet-400` · `border-violet-500`
+- **L331** — `bg-violet-500` · `text-violet-400` · `border-violet-500`
   <br/>`color: "bg-violet-500/15 text-violet-400 border-violet-500/30",`
-- **L422** — `border-yellow-500` · `shadow-yellow-500`
+- **L445** — `border-yellow-500` · `shadow-yellow-500`
   <br/>`className={'bg-card border rounded-2xl p-5 flex flex-col gap-3 relative overflow-hidden ${"highlight`
-- **L425** — `bg-yellow-500` · `text-yellow-400`
+- **L448** — `bg-yellow-500` · `text-yellow-400`
   <br/>`<div className="absolute top-0 right-0 bg-yellow-500/20 text-yellow-400 text-[10px] font-bold px-2.5`
-- **L441** — `bg-green-500` · `text-green-400` · `border-green-500`
+- **L464** — `bg-green-500` · `text-green-400` · `border-green-500`
   <br/>`? "bg-green-500/15 text-green-400 border-green-500/30"`
-- **L1097** — `border-yellow-500` · `border-yellow-500` · `shadow-yellow-500`
+- **L1132** — `border-yellow-500` · `border-yellow-500` · `shadow-yellow-500`
   <br/>`<div className="mb-4 p-5 bg-card border-2 border-yellow-500/40 rounded-2xl hover:border-yellow-500/7`
-- **L1098** — `bg-yellow-500` · `text-yellow-400`
+- **L1133** — `bg-yellow-500` · `text-yellow-400`
   <br/>`<div className="absolute top-0 right-0 bg-yellow-500/20 text-yellow-400 text-[10px] font-bold px-2.5`
-- **L1102** — `text-yellow-400`
+- **L1137** — `text-yellow-400`
   <br/>`<div className="text-[11px] font-bold text-yellow-400 uppercase tracking-widest mb-1">WSOP 2026 · 메인`
 
 ### `components/quiz-widget.tsx` (51)
@@ -1255,49 +1196,45 @@
 - **L539** — `#7dd3fc`
   <br/>`<motion.div className="h-full" style={{ background: "#7dd3fc" }}`
 
-### `app/blog/[slug]/blog-post-client.tsx` (38)
+### `app/blog/[slug]/blog-post-client.tsx` (36)
 
-- **L405** — `#1a3a2a` · `#0d1c14`
+- **L436** — `#1a3a2a` · `#0d1c14`
   <br/>`배경은 하단 전역 탭바와 같은 계열에 한 톤 밝게(#1a3a2a vs #0d1c14). */`
-- **L407** — `#1a3a2a` · `#0d1c14`
+- **L438** — `#1a3a2a` · `#0d1c14`
   <br/>`배경만 한 톤 밝게(#1a3a2a vs 하단 #0d1c14)해 상·하단을 구분한다. */`
-- **L408** — `#1a3a2a` · `rgba(255,255,255...)`
+- **L439** — `#1a3a2a` · `rgba(255,255,255...)`
   <br/>`style={{ background: "#1a3a2a", borderBottom: "1px solid rgba(255,255,255,0.10)", height: 62 }}`
-- **L409** — `rgba(0,0,0...)`
+- **L440** — `rgba(0,0,0...)`
   <br/>`className={'xl:hidden fixed inset-x-0 top-0 lg:top-14 z-40 px-2 sm:px-4 flex items-stretch shadow-[0`
-- **L424** — `#f4f0e7`
+- **L455** — `#f4f0e7`
   <br/>`style={{ color: "#f4f0e7" }}`
-- **L439** — `#f4f0e7`
+- **L470** — `#f4f0e7`
   <br/>`style={{ color: "#f4f0e7" }}`
-- **L468** — `#f4f0e7`
+- **L499** — `#f4f0e7`
   <br/>`style={{ color: "#f4f0e7" }}`
-- **L494** — `#e9c766`
+- **L525** — `#e9c766`
   <br/>`style={{ color: "#e9c766" }}`
-- **L616** — `#f0d060`
-  <br/>`style={{ background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)", boxShadow: "0 2px `
-- **L619** — `rgba(13,28,20...)`
-  <br/>`<div className="text-[10px] font-bold uppercase tracking-widest mb-1" style={{ color: "rgba(13,28,20`
-- **L620** — `#0d1c14`
-  <br/>`<div className="text-sm font-extrabold leading-snug line-clamp-2" style={{ color: "#0d1c14" }}>`
-- **L624** — `rgba(13,28,20...)`
-  <br/>`<div className="w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0" style={{ backgr`
-- **L625** — `#0d1c14`
-  <br/>`<ChevronRight className="w-5 h-5" style={{ color: "#0d1c14" }} />`
-- **L764** — `#1da1f2` · `#1da1f2` · `#1da1f2` · `#1da1f2` · `bg-[#1da1f2]` · `border-[#1da1f2]` · `text-[#1da1f2]` · `bg-[#1da1f2]`
+- **L800** — `#1da1f2` · `#1da1f2` · `#1da1f2` · `#1da1f2` · `bg-[#1da1f2]` · `border-[#1da1f2]` · `text-[#1da1f2]` · `bg-[#1da1f2]`
   <br/>`className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#1da1f2]/10 border border-[#1da1f2]/`
-- **L773** — `#1877f2` · `#1877f2` · `#1877f2` · `#1877f2` · `bg-[#1877f2]` · `border-[#1877f2]` · `text-[#1877f2]` · `bg-[#1877f2]`
+- **L809** — `#1877f2` · `#1877f2` · `#1877f2` · `#1877f2` · `bg-[#1877f2]` · `border-[#1877f2]` · `text-[#1877f2]` · `bg-[#1877f2]`
   <br/>`className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#1877f2]/10 border border-[#1877f2]/`
-- **L794** — `text-yellow-400`
+- **L830** — `text-yellow-400`
   <br/>`<Link href="/blog" className="inline-flex items-center gap-2 text-primary font-semibold hover:text-y`
-- **L821** — `#f0d060`
-  <br/>`style={{ bottom: TAB_BAR_HEIGHT, background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d0`
-- **L825** — `rgba(13,28,20...)`
-  <br/>`<div className="text-[10px] font-bold uppercase tracking-widest mb-0.5" style={{ color: "rgba(13,28,`
-- **L826** — `#0d1c14`
-  <br/>`<div className="text-sm font-extrabold truncate" style={{ color: "#0d1c14" }}>{nextPost.title}</div>`
-- **L828** — `rgba(13,28,20...)`
+- **L879** — `#f0d060`
+  <br/>`style={{ bottom: chromeHidden ? 0 : TAB_BAR_HEIGHT, background: "linear-gradient(135deg,rgb(var(--go`
+- **L884** — `#0d1c14`
+  <br/>`<div className="text-[15px] font-extrabold truncate" style={{ color: "#0d1c14" }}>{stickyHub.label}<`
+- **L885** — `rgba(13,28,20...)`
   <br/>`<div className="w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0" style={{ backgr`
-- **L829** — `#0d1c14`
+- **L886** — `#0d1c14`
+  <br/>`<ChevronRight className="w-5 h-5" style={{ color: "#0d1c14" }} />`
+- **L892** — `rgba(13,28,20...)`
+  <br/>`<div className="text-[10px] font-bold uppercase tracking-widest mb-0.5" style={{ color: "rgba(13,28,`
+- **L893** — `#0d1c14`
+  <br/>`<div className="text-sm font-extrabold truncate" style={{ color: "#0d1c14" }}>{nextPost!.title}</div`
+- **L895** — `rgba(13,28,20...)`
+  <br/>`<div className="w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0" style={{ backgr`
+- **L896** — `#0d1c14`
   <br/>`<ChevronRight className="w-5 h-5" style={{ color: "#0d1c14" }} />`
 
 ### `app/rules/rules-client.tsx` (35)
@@ -1318,17 +1255,17 @@
   <br/>`{ name: "레이즈 (Raise)", desc: "상대방의 베팅 금액에 더 많은 칩을 추가해 올리는 것", color: "text-orange-400" },`
 - **L116** — `text-yellow-400`
   <br/>`{ name: "콜 (Call)", desc: "상대방의 베팅 금액과 동일하게 베팅하여 핸드에 남아 계속 플레이하는 것", color: "text-yellow-400" },`
-- **L303** — `bg-red-500` · `border-red-500`
+- **L309** — `bg-red-500` · `border-red-500`
   <br/>`<div className="flex gap-3 bg-red-500/5 border border-red-500/20 rounded-xl px-4 py-4">`
-- **L304** — `text-red-400`
+- **L310** — `text-red-400`
   <br/>`<AlertTriangle className="w-4 h-4 text-red-400 shrink-0 mt-0.5" />`
-- **L328** — `bg-red-500` · `border-red-500` · `text-red-400`
+- **L334** — `bg-red-500` · `border-red-500` · `text-red-400`
   <br/>`<span className="w-6 h-6 rounded-full bg-red-500/15 border border-red-500/30 text-red-400 text-xs fl`
-- **L407** — `border-green-500` · `bg-green-500`
+- **L413** — `border-green-500` · `bg-green-500`
   <br/>`{ name: "노 리밋 (No-Limit)", desc: "플레이어가 언제든지 원하는 만큼 베팅할 수 있으며, '올인'까지 가능합니다. 텍사스 홀덤에서 가장 일반적입니다.", c`
-- **L408** — `border-yellow-500` · `bg-yellow-500`
+- **L414** — `border-yellow-500` · `bg-yellow-500`
   <br/>`{ name: "팟 리밋 (Pot-Limit)", desc: "현재 팟의 크기가 플레이어가 베팅할 수 있는 최대 금액을 결정합니다. 오마하 포커에서 주로 사용됩니다.", color`
-- **L409** — `border-blue-500` · `bg-blue-500`
+- **L415** — `border-blue-500` · `bg-blue-500`
   <br/>`{ name: "고정 리밋 (Fixed-Limit)", desc: "베팅과 레이즈 금액이 미리 정해진 고정액으로 제한됩니다. 세븐 카드 스터드에서 일반적입니다.", color: "`
 
 ### `app/pub/[region]/pub-region-client.tsx` (31)
@@ -1412,25 +1349,25 @@
 
 ### `app/blog/blog-index-client.tsx` (26)
 
-- **L135** — `bg-gray-500`
+- **L138** — `bg-gray-500`
   <br/>`★2026-08-04: 회색(bg-gray-500) 풀블리드 히어로 + 흑백 로드맵 배경 이미지를 걷어냈다.`
-- **L195** — `#1c0b35` · `#0d1f3a` · `#071a0e` · `from-[#1c0b35]` · `via-[#0d1f3a]` · `to-[#071a0e]`
+- **L198** — `#1c0b35` · `#0d1f3a` · `#071a0e` · `from-[#1c0b35]` · `via-[#0d1f3a]` · `to-[#071a0e]`
   <br/>`<div className="absolute inset-0 bg-gradient-to-br from-[#1c0b35] via-[#0d1f3a] to-[#071a0e]" />`
-- **L201** — `rgba(255,220,80...)`
+- **L204** — `rgba(255,220,80...)`
   <br/>`style={{ background: "linear-gradient(105deg, transparent 40%, rgba(255,220,80,0.13) 50%, transparen`
-- **L215** — `bg-yellow-500` · `border-yellow-400`
+- **L218** — `bg-yellow-500` · `border-yellow-400`
   <br/>`<div className="flex-shrink-0 w-14 h-14 rounded-xl bg-yellow-500/15 border border-yellow-400/40 flex`
-- **L222** — `bg-yellow-400`
+- **L225** — `bg-yellow-400`
   <br/>`<span className="inline-block text-[11px] bg-yellow-400 text-black font-black px-2.5 py-0.5 rounded-`
-- **L229** — `text-yellow-300`
+- **L232** — `text-yellow-300`
   <br/>`<p className="text-xs text-yellow-300/75 mt-0.5">`
-- **L243** — `bg-yellow-400`
+- **L246** — `bg-yellow-400`
   <br/>`className="flex-shrink-0 px-4 py-2.5 bg-yellow-400 text-black font-black text-sm rounded-xl flex ite`
-- **L244** — `#fef08a`
+- **L247** — `#fef08a`
   <br/>`whileHover={{ backgroundColor: "#fef08a" }}`
-- **L323** — `#0d2618` · `#0a3320` · `#071a10` · `from-[#0d2618]` · `via-[#0a3320]` · `to-[#071a10]`
+- **L326** — `#0d2618` · `#0a3320` · `#071a10` · `from-[#0d2618]` · `via-[#0a3320]` · `to-[#071a10]`
   <br/>`<div className="h-52 md:h-auto md:w-72 bg-gradient-to-br from-[#0d2618] via-[#0a3320] to-[#071a10] f`
-- **L398** — `#0d2618` · `#0a3320` · `#071a10` · `from-[#0d2618]` · `via-[#0a3320]` · `to-[#071a10]`
+- **L401** — `#0d2618` · `#0a3320` · `#071a10` · `from-[#0d2618]` · `via-[#0a3320]` · `to-[#071a10]`
   <br/>`<div className="h-36 bg-gradient-to-br from-[#0d2618] via-[#0a3320] to-[#071a10] flex items-center j`
 
 ### `app/rules/texas-holdem/rules-texas-holdem-client.tsx` (25)
@@ -1484,15 +1421,15 @@
 
 ### `components/cluster-minimap.tsx` (24)
 
-- **L63** — `#2563eb` · `#2563eb` · `fill-[#2563eb]` · `text-[#2563eb]` · `rgba(37,99,235...)`
+- **L66** — `#2563eb` · `#2563eb` · `fill-[#2563eb]` · `text-[#2563eb]` · `rgba(37,99,235...)`
   <br/>`<MapPin className="w-4 h-4 fill-[#2563eb] text-[#2563eb] drop-shadow-[0_0_7px_rgba(37,99,235,0.8)]" `
-- **L83** — `#2563eb` · `#2563eb` · `bg-[#2563eb]` · `border-[#2563eb]` · `rgba(37,99,235...)`
+- **L86** — `#2563eb` · `#2563eb` · `bg-[#2563eb]` · `border-[#2563eb]` · `rgba(37,99,235...)`
   <br/>`<div className="-mt-0.5 rounded-lg bg-[#2563eb]/10 border border-[#2563eb]/45 px-2 py-1 shadow-[0_0_`
-- **L85** — `#2563eb` · `text-[#2563eb]`
+- **L88** — `#2563eb` · `text-[#2563eb]`
   <br/>`<div className="text-[9px] font-semibold text-[#2563eb] uppercase tracking-wider mt-0.5">{labels.you`
-- **L138** — `#2563eb` · `#2563eb` · `#2563eb` · `text-[#2563eb]` · `bg-[#2563eb]` · `border-[#2563eb]`
+- **L141** — `#2563eb` · `#2563eb` · `#2563eb` · `text-[#2563eb]` · `bg-[#2563eb]` · `border-[#2563eb]`
   <br/>`<span className="flex-shrink-0 text-[10px] font-semibold text-[#2563eb] bg-[#2563eb]/10 border borde`
-- **L155** — `#2563eb` · `#2563eb` · `#2563eb` · `text-[#2563eb]` · `bg-[#2563eb]` · `border-[#2563eb]`
+- **L158** — `#2563eb` · `#2563eb` · `#2563eb` · `text-[#2563eb]` · `bg-[#2563eb]` · `border-[#2563eb]`
   <br/>`<span className="ml-auto text-[10px] font-semibold text-[#2563eb] bg-[#2563eb]/10 border border-[#25`
 
 ### `app/en/quiz/quiz-client.tsx` (22)
@@ -1559,13 +1496,13 @@
 
 ### `components/intl-blog-post-client.tsx` (18)
 
-- **L296** — `rgba(0,0,0...)`
+- **L308** — `rgba(0,0,0...)`
   <br/>`className="xl:hidden sticky top-0 lg:top-14 z-40 -mx-4 mb-6 px-4 pt-2 pb-2 bg-background/95 backdrop`
-- **L456** — `#1da1f2` · `#1da1f2` · `#1da1f2` · `#1da1f2` · `bg-[#1da1f2]` · `border-[#1da1f2]` · `text-[#1da1f2]` · `bg-[#1da1f2]`
+- **L468** — `#1da1f2` · `#1da1f2` · `#1da1f2` · `#1da1f2` · `bg-[#1da1f2]` · `border-[#1da1f2]` · `text-[#1da1f2]` · `bg-[#1da1f2]`
   <br/>`className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#1da1f2]/10 border border-[#1da1f2]/`
-- **L464** — `#1877f2` · `#1877f2` · `#1877f2` · `#1877f2` · `bg-[#1877f2]` · `border-[#1877f2]` · `text-[#1877f2]` · `bg-[#1877f2]`
+- **L476** — `#1877f2` · `#1877f2` · `#1877f2` · `#1877f2` · `bg-[#1877f2]` · `border-[#1877f2]` · `text-[#1877f2]` · `bg-[#1877f2]`
   <br/>`className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#1877f2]/10 border border-[#1877f2]/`
-- **L483** — `text-yellow-400`
+- **L495** — `text-yellow-400`
   <br/>`<Link href={base} className="inline-flex items-center gap-2 text-primary font-semibold hover:text-ye`
 
 ### `app/admin/admin-client.tsx` (17)
@@ -1816,17 +1753,17 @@
 
 ### `app/strategy/strategy-client.tsx` (10)
 
-- **L192** — `text-red-400`
+- **L196** — `text-red-400`
   <br/>`<p className="text-muted-foreground mt-2">플러시 드로우 승률 ≈ 20% (턴 기준) → 수학적으로 <span className="text-red-`
-- **L193** — `text-green-400`
+- **L197** — `text-green-400`
   <br/>`<p className="text-muted-foreground">플러시 드로우 승률 ≈ 35% (플랍→쇼다운) → 수학적으로 <span className="text-green-4`
-- **L208** — `border-blue-500` · `bg-blue-500`
+- **L212** — `border-blue-500` · `bg-blue-500`
   <br/>`{ size: "팟의 25~33%", use: "블로킹 벳, 정보 수집", color: "border-blue-500/30 bg-blue-500/5" },`
-- **L209** — `border-green-500` · `bg-green-500`
+- **L213** — `border-green-500` · `bg-green-500`
   <br/>`{ size: "팟의 50%", use: "일반 밸류 벳, 드로우 차단", color: "border-green-500/30 bg-green-500/5" },`
-- **L210** — `border-yellow-500` · `bg-yellow-500`
+- **L214** — `border-yellow-500` · `bg-yellow-500`
   <br/>`{ size: "팟의 75%", use: "강한 밸류 벳, 세미 블러프", color: "border-yellow-500/30 bg-yellow-500/5" },`
-- **L211** — `border-red-500` · `bg-red-500`
+- **L215** — `border-red-500` · `bg-red-500`
   <br/>`{ size: "팟의 100%+", use: "너트 핸드, 풀 블러프", color: "border-red-500/30 bg-red-500/5" },`
 
 ### `components/community-cta.tsx` (9)
@@ -1919,8 +1856,68 @@
 
 ### `components/calc-cta-button.tsx` (6)
 
-- **L21** — `#2563eb` · `#2563eb` · `border-[#2563eb]` · `border-[#2563eb]` · `rgba(37,99,235...)` · `rgba(37,99,235...)`
-  <br/>`className="calc-pulse group mb-4 flex items-center gap-2.5 rounded-xl border-2 border-[#2563eb]/50 b`
+- **L32** — `#2563eb` · `#2563eb` · `border-[#2563eb]` · `border-[#2563eb]` · `rgba(37,99,235...)` · `rgba(37,99,235...)`
+  <br/>`className={'${pulse ? "calc-pulse " : ""}group mb-4 flex items-center gap-2.5 rounded-xl border-2 bo`
+
+### `app/de/solver/solver-client.tsx` (6)
+
+- **L475** — `text-orange-500`
+  <br/>`<span className="font-semibold text-orange-500">0,1% der Fälle</span> – sie ergreift`
+- **L480** — `text-emerald-500`
+  <br/>`<span className="font-semibold text-emerald-500">23,7% der Fälle</span>.`
+- **L601** — `text-emerald-600`
+  <br/>`<span key={name} className="font-bold text-emerald-600">Ja</span>`
+- **L671** — `text-emerald-500`
+  <br/>`gemessen – <span className="font-semibold text-emerald-500">bis 0,35%</span> ist ein`
+- **L672** — `text-blue-500`
+  <br/>`Top-Play · <span className="font-semibold text-blue-500">bis 1%</span> akzeptabel ·{" "}`
+- **L673** — `text-orange-500`
+  <br/>`<span className="font-semibold text-orange-500">darüber</span> lohnt sich das Nachschauen`
+
+### `app/es/solver/solver-client.tsx` (6)
+
+- **L454** — `text-orange-500`
+  <br/>`<span className="font-semibold text-orange-500">el 0.1% de las veces</span>. Prácticamente`
+- **L459** — `text-emerald-500`
+  <br/>`<span className="font-semibold text-emerald-500">el 23.7% de las veces</span>.`
+- **L569** — `text-emerald-600`
+  <br/>`<span key={name} className="font-bold text-emerald-600">Sí</span>`
+- **L633** — `text-emerald-500`
+  <br/>`<span className="font-semibold text-emerald-500">hasta el 0.35%</span> es jugada óptima ·{" "}`
+- **L634** — `text-blue-500`
+  <br/>`<span className="font-semibold text-blue-500">hasta el 1%</span> es aceptable ·{" "}`
+- **L635** — `text-orange-500`
+  <br/>`<span className="font-semibold text-orange-500">por encima</span> conviene revisar`
+
+### `app/fr/solver/solver-client.tsx` (6)
+
+- **L410** — `text-orange-500`
+  <br/>`<span className="font-semibold text-orange-500">0,1 %</span> — il ne prend presque`
+- **L415** — `text-emerald-500`
+  <br/>`<span className="font-semibold text-emerald-500">23,7 %</span>.`
+- **L522** — `text-emerald-600`
+  <br/>`<span key={name} className="font-bold text-emerald-600">Oui</span>`
+- **L588** — `text-emerald-500`
+  <br/>`<span className="font-semibold text-emerald-500">jusqu'à 0,35 %</span> : meilleur`
+- **L589** — `text-blue-500`
+  <br/>`choix · <span className="font-semibold text-blue-500">jusqu'à 1 %</span> : acceptable ·{" "}`
+- **L590** — `text-orange-500`
+  <br/>`<span className="font-semibold text-orange-500">au-delà</span> : spot à revoir`
+
+### `app/id/solver/solver-client.tsx` (6)
+
+- **L389** — `text-orange-500`
+  <br/>`<span className="font-semibold text-orange-500">0,1%</span> — nyaris tidak pernah`
+- **L394** — `text-emerald-500`
+  <br/>`<span className="font-semibold text-emerald-500">23,7%</span>.`
+- **L516** — `text-emerald-600`
+  <br/>`<span key={name} className="font-bold text-emerald-600">Ya</span>`
+- **L585** — `text-emerald-500`
+  <br/>`<span className="font-semibold text-emerald-500">sampai 0,35%</span>: pilihan terbaik`
+- **L586** — `text-blue-500`
+  <br/>`· <span className="font-semibold text-blue-500">sampai 1%</span>: masih bisa diterima ·{" "}`
+- **L587** — `text-orange-500`
+  <br/>`<span className="font-semibold text-orange-500">di atas itu</span>: spot yang perlu`
 
 ### `app/post/[id]/post-detail-client.tsx` (6)
 
@@ -1937,6 +1934,51 @@
 - **L149** — `#f0d060`
   <br/>`<Link href="/login" className="px-4 py-2.5 rounded-xl text-xs font-bold flex-shrink-0" style={{ back`
 
+### `app/pt/solver/solver-client.tsx` (6)
+
+- **L481** — `text-orange-500`
+  <br/>`<span className="font-semibold text-orange-500">0,1% das vezes</span>. Praticamente nunca`
+- **L486** — `text-emerald-500`
+  <br/>`<span className="font-semibold text-emerald-500">23,7% das vezes</span>.`
+- **L601** — `text-emerald-600`
+  <br/>`<span key={name} className="font-bold text-emerald-600">Sim</span>`
+- **L669** — `text-emerald-500`
+  <br/>`<span className="font-semibold text-emerald-500">até 0,35%</span> é jogada ótima ·{" "}`
+- **L670** — `text-blue-500`
+  <br/>`<span className="font-semibold text-blue-500">até 1%</span> é aceitável ·{" "}`
+- **L671** — `text-orange-500`
+  <br/>`<span className="font-semibold text-orange-500">acima disso</span> vale revisar`
+
+### `app/zh/solver/solver-client.tsx` (6)
+
+- **L440** — `text-orange-500`
+  <br/>`<span className="font-semibold text-orange-500">0.1%</span>——几乎从不主动出手。`
+- **L444** — `text-emerald-500`
+  <br/>`<span className="font-semibold text-emerald-500">23.7%</span>。`
+- **L547** — `text-emerald-600`
+  <br/>`<span key={name} className="font-bold text-emerald-600">有</span>`
+- **L600** — `text-emerald-500`
+  <br/>`<span className="font-semibold text-emerald-500">0.35% 以内</span>是顶级操作 ·{" "}`
+- **L601** — `text-blue-500`
+  <br/>`<span className="font-semibold text-blue-500">1% 以内</span>可以接受 ·{" "}`
+- **L602** — `text-orange-500`
+  <br/>`<span className="font-semibold text-orange-500">超过 1%</span> 值得回头复盘`
+
+### `app/zh-hant/solver/solver-client.tsx` (6)
+
+- **L456** — `text-orange-500`
+  <br/>`<span className="font-semibold text-orange-500">0.1%</span>——幾乎從不主動出手。`
+- **L460** — `text-emerald-500`
+  <br/>`<span className="font-semibold text-emerald-500">23.7%</span>。`
+- **L552** — `text-emerald-600`
+  <br/>`<span key={name} className="font-bold text-emerald-600">有</span>`
+- **L604** — `text-emerald-500`
+  <br/>`<span className="font-semibold text-emerald-500">0.35% 以內</span>是頂級操作 ·{" "}`
+- **L605** — `text-blue-500`
+  <br/>`<span className="font-semibold text-blue-500">1% 以內</span>可以接受 ·{" "}`
+- **L606** — `text-orange-500`
+  <br/>`<span className="font-semibold text-orange-500">超過 1%</span> 值得回頭復盤`
+
 ### `components/card-thumb.tsx` (4)
 
 - **L64** — `#c0392b` · `#0f172a`
@@ -1948,18 +1990,18 @@
 
 ### `components/feed-nav-arrows.tsx` (4)
 
-- **L138** — `#f0d060`
+- **L152** — `#f0d060`
   <br/>`? "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)" // 브랜드 골드 (맨위로 버튼과 통일)`
-- **L139** — `rgba(13,28,20...)`
+- **L153** — `rgba(13,28,20...)`
   <br/>`: "rgba(13,28,20,0.85)", // 다크 포레스트 그린 반투명`
-- **L140** — `#0d1c14` · `#f4f0e7`
+- **L154** — `#0d1c14` · `#f4f0e7`
   <br/>`color: lit ? "#0d1c14" : "#f4f0e7",`
 
 ### `components/footer.tsx` (4)
 
-- **L100** — `#f5d36a` · `#b8862a`
+- **L104** — `#f5d36a` · `#b8862a`
   <br/>`background: "linear-gradient(135deg, #f5d36a 0%, rgb(var(--gold-dark-rgb)) 50%, #b8862a 100%)",`
-- **L103** — `#1a0e02` · `text-[#1a0e02]`
+- **L107** — `#1a0e02` · `text-[#1a0e02]`
   <br/>`<Spade className="h-4 w-4 text-[#1a0e02] fill-current" aria-hidden="true" />`
 
 ### `components/intl-footer.tsx` (4)
@@ -1971,21 +2013,43 @@
 
 ### `components/tournament-board.tsx` (4)
 
-- **L122** — `border-yellow-500`
+- **L182** — `border-yellow-500`
   <br/>`t.highlight ? "border-yellow-500/40" : "border-border"`
-- **L144** — `bg-green-500` · `text-green-400` · `border-green-500`
+- **L204** — `bg-green-500` · `text-green-400` · `border-green-500`
   <br/>`? "bg-green-500/15 text-green-400 border-green-500/30"`
 
 ### `app/en/ranking/ranking-client.tsx` (4)
 
-- **L64** — `from-yellow-300`
+- **L66** — `from-yellow-300`
   <br/>`<span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-primary">How to C`
-- **L128** — `text-green-400`
+- **L130** — `text-green-400`
   <br/>`<CheckCircle className="w-3.5 h-3.5 text-green-400 flex-shrink-0" /> {f}`
-- **L189** — `text-red-400`
+- **L191** — `text-red-400`
   <br/>`<AlertTriangle className="w-6 h-6 text-red-400 flex-shrink-0" />`
-- **L195** — `text-red-400`
+- **L197** — `text-red-400`
   <br/>`<span className="text-red-400 font-bold flex-shrink-0 mt-0.5">✕</span>`
+
+### `app/en/solver/solver-client.tsx` (4)
+
+- **L466** — `text-emerald-600`
+  <br/>`<span className="font-bold text-emerald-600">Yes</span>`
+- **L543** — `text-emerald-500`
+  <br/>`<span className="font-semibold text-emerald-500">up to 0.35%</span> is a best play ·{" "}`
+- **L544** — `text-blue-500`
+  <br/>`<span className="font-semibold text-blue-500">up to 1%</span> is acceptable ·{" "}`
+- **L545** — `text-orange-500`
+  <br/>`<span className="font-semibold text-orange-500">beyond that</span> is a spot to review`
+
+### `app/ja/solver/solver-client.tsx` (4)
+
+- **L485** — `text-emerald-600`
+  <br/>`<span className="font-bold text-emerald-600">あり</span>`
+- **L537** — `text-emerald-500`
+  <br/>`<span className="font-semibold text-emerald-500">0.35%まで</span>が最善手 ·{" "}`
+- **L538** — `text-blue-500`
+  <br/>`<span className="font-semibold text-blue-500">1%まで</span>が許容 ·{" "}`
+- **L539** — `text-orange-500`
+  <br/>`<span className="font-semibold text-orange-500">それ以上</span>は見直し対象`
 
 ### `app/ranking/ranking-client.tsx` (4)
 
@@ -2000,13 +2064,13 @@
 
 ### `app/solver/solver-client.tsx` (4)
 
-- **L370** — `text-emerald-600`
+- **L379** — `text-emerald-600`
   <br/>`<span className="font-bold text-emerald-600">있음</span>`
-- **L400** — `text-emerald-500`
-  <br/>`<span className="font-semibold text-emerald-500">0.01bb 이하</span> = 최적 선택 ·{" "}`
-- **L401** — `text-blue-500`
-  <br/>`<span className="font-semibold text-blue-500">0.05bb 이하</span> = 허용 가능 ·{" "}`
-- **L402** — `text-orange-500`
+- **L424** — `text-emerald-500`
+  <br/>`<span className="font-semibold text-emerald-500">팟 대비 0.35% 이하</span> = 최적 선택 ·{" "}`
+- **L425** — `text-blue-500`
+  <br/>`<span className="font-semibold text-blue-500">1% 이하</span> = 허용 가능 ·{" "}`
+- **L426** — `text-orange-500`
   <br/>`<span className="font-semibold text-orange-500">그 이상</span> = 다시 볼 스팟`
 
 ### `components/blog-top-bar.tsx` (3)
@@ -2029,40 +2093,40 @@
 
 ### `components/bottom-tab-bar.tsx` (2)
 
-- **L109** — `rgba(255,255,255...)`
+- **L168** — `rgba(255,255,255...)`
   <br/>`borderTop: "1px solid rgba(255,255,255,0.06)",`
-- **L115** — `rgba(244,240,231...)`
+- **L176** — `rgba(244,240,231...)`
   <br/>`const color = active === t.key ? BG : "rgba(244,240,231,0.4)";`
 
 ### `components/side-rail.tsx` (2)
 
-- **L263** — `#7a2e2e` · `#f4f0e7`
+- **L384** — `#7a2e2e` · `#f4f0e7`
   <br/>`style={{ background: "#7a2e2e", color: "#f4f0e7" }}`
 
 ### `components/site-chrome.tsx` (2)
 
-- **L96** — `#f0d060`
+- **L195** — `#f0d060`
   <br/>`background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)",`
-- **L97** — `#0b1120`
+- **L196** — `#0b1120`
   <br/>`color: "#0b1120",`
 
 ### `components/solver-promo.tsx` (2)
 
-- **L22** — `rgba(212,175,55...)`
+- **L24** — `rgba(212,175,55...)`
   <br/>`/** 골드 액센트 — 이벤트 카드가 쓰는 rgba(212,175,55,…)와 같은 색. */`
-- **L43** — `rgba(244,240,231...)`
+- **L191** — `rgba(244,240,231...)`
   <br/>`style={{ color: "rgba(244,240,231,0.72)", fontFamily: FONT_SANS }}`
 
 ### `app/community/community-client.tsx` (2)
 
-- **L1052** — `rgba(32,49,42...)`
+- **L1135** — `rgba(32,49,42...)`
   <br/>`style={{ background: "rgba(32,49,42,0.5)", backdropFilter: "blur(4px)" }}`
-- **L1218** — `rgba(32,49,42...)`
+- **L1301** — `rgba(32,49,42...)`
   <br/>`style={{ bottom: 80, right: 20, width: 48, height: 48, background: INK, boxShadow: "0 4px 16px rgba(`
 
 ### `app/glossary/glossary-client.tsx` (1)
 
-- **L51** — `rgba(0,0,0...)`
+- **L54** — `rgba(0,0,0...)`
   <br/>`className="block w-full pl-12 pr-4 py-4 border border-primary/30 rounded-xl bg-card text-foreground `
 
 ### `app/layout.tsx` (1)

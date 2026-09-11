@@ -58,7 +58,7 @@
 | ㉔ | EN 3bet fold-to-3bet 표 ~35% 행 «3-bet and call them value-heavy» — 서술 방향 불일치 |
 | ㉕ | EN position-play SB 행 «~40% (raise-or-fold) … never flat»이 국면 한정어 없이 무조건형 |
 | ㉖ | EN limping `==g:==` 하이라이트가 경고문에 초록 — g=권장/r=경고 관례 위반 |
-| ㉗ | EN shc UTG 13% 구성 3중 충돌 — **판단 대기 #1과 같은 갈래라 함께 판정** |
+| ㉗ | ✅ **종결(queue Q1 `16e8a9ac` · 09-11)** — 콤보 실측 58/112/172 · 13% 유지 · 목록 «지위» 문단 신설 EN+7로케일 · 판정표 `harden-queue-진행` §1-Q1 |
 | ㉘ | EN when-to-fold 표 마무리 문단이 `</div>` 안쪽 |
 | ㉙ | 전략 클러스터 이미지 재사용 3장 + limping↔strategy readnext 썸네일 상이 — 18언어 공용 자산 |
 | ㉚ | 소품: position-play OOP 60–85% 하한 산술 긴장 · positions «one middle seat»↔LJ · cbet OOP 40–50 ↔ position-play 30–45 |
@@ -72,6 +72,8 @@
 | ㊶ | EN apt 소품: 일정표 시간순 · 환율 3계열 공존 · Country Exclusives «$1.684» 이탈 · $183.570 절사 · 예산표 행합-총계 규격 상이 |
 | ㊷ | EN tournament 소품: 안테 시점 · 홈칩 FAQ «That's why» 인과 · 타임라인 Level 1만 60분 + 스톨 페널티 조항 번호 부재 |
 | ㊸ | pt RISKY 40 회차(`e3f5a3a2`)가 pt만 고친 **EN 동형 30건** — 목록·문안 = `docs/reply-to-review-2026-09-04-m089.md` §2·§4 |
+| ㊹ | 🆕(queue Q1-11 · 09-11) EN `holdem-starting-hands-chart:126` 「77·88이 테이블이 셀 때 **가장 먼저** 떨어지는 페어」 — 실전 순서 반대(셋마이닝 플랜 있는 77·88보다 지배당하는 오프수트·얇은 수딧 브로드웨이가 먼저 나간다). 8로케일 동형 · m089 §2-C #17·#24·#25(77/88/99 배치)와 같은 자리 |
+| ㊺ | 🆕(queue Q1-11) `lib/render-markdown.ts:213,215` PDF 카드 크롬 영어 하드코딩 — `locale` 인자가 있는데 안 쓴다. 전 로케일 노출(코드 1곳) |
 
 🪶 ㉜㉝㉞(인포그래픽 alt 3건)는 ✅ 종결(`781301e4`).
 
