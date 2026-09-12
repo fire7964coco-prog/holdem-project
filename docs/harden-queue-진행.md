@@ -377,6 +377,9 @@ Unlimited Re-Entry」 · 스택 50,000** 실재 확인 → 처방 ①(본문에 
 
 ### Q4-a (2026-09-12 · EN 11파일 + 9로케일 · **배포가 걸린 회차다**)
 
+
+> 🔵 **헤드 처리 (2026-09-12 (20) · 머지 `5d8f1be0` · sitemap `149b35b6` · 라이브 앵커 4종 실측 OK · IndexNow 85 URL 200)** — **Q4-1 = MB-044 발신** ✅ · **Q4-2 = 정본 4곳 정리** ✅(`en-first-queue` J#8·X-1 종결 + §3 세 항목 종결 · `session-handoff` 「EN 동형 30건」·「tiebreak L232」 행 삭제 · `harden-ja-진행` §5-K·§5-L에 이행 완료 표기) · **Q4-3 = ja·zh·zh-hant 세 레인에 §6-0 통지** ✅(`lane:sync -- --apply`와 함께) · **Q4-7 = `en-first-queue` §1에 ㊻㊼로 등재** ✅ · **Q4-8 게이트 후보 2건은 Q7 재료로 남는다**(표 정렬 방향 ↔ 본문 서술 · 같은 글 안 최상급·최저가 주장 2개 이상) · **Q4-9·Q4-10 확인**(기각 6건은 재제안 금지).
+
 - 🔴 **Q4-1 MB 초안**(EN 변경 = MA-123 요청 1 상시 통지):
   > EN **11편** 변경 + 9로케일 전파. ① `holdem-positions` 도입 경험담 「Two orbits later」 → **「Three hands later」**(좌석 산수 — UTG는 버튼+3석이라 3핸드 뒤 버튼이다 · 2오빗이면 다시 UTG) ② `holdem-bad-beat` 표 행 문구 = **결재 15 이행**(🔴 수치 **~63% (1.7:1)은 불변** · 「9-out flush draw fills」 → 「nine flush outs, plus backdoor two pair or straight, get there by the river」) + 본문에 「Most of the time」 한정 ③ `holdem-blind-meaning` 「Nobody gets to skip their turn.」 → **either/or**(WSOP Live-Action **Rule 160** 축어 · 같은 글 FAQ 「Alternatively, you can wait…」와 정합) ④ `holdem-when-to-fold` 셀프체크 도입문(D유형) ⑤ `holdem-straddle` **5자리**(캡션·**alt**·각주·본문 불릿·FAQ) — 버튼 스트라들이 포스트플롭 포지션을 «사는» 게 아니라 «원래 갖고 있다» ⑥ `holdem-outs` 15아웃 도출 「9 + 8 − 2」 + **표 순서 15→12→9→8**(본문 「the two combo draws at the top」과 맞췄다 · de가 이미 옳던 배치) ⑦ `holdem-tiebreak-rules` 「Rule 85」 → 「**Tournament** Rule 85」 ⑧ `ept-barcelona-2026-guide` **€330 Deep Stack (#76 · Aug 29) 행 신설** + 예산표 하한 €825→€330 · 총액 **€7,280–€11,550**(ja는 항공권 제외판 €7,130) + 최저가 주장 4자리 정합 ⑨ `rake`·`tournament`·`3bet`·`straddle`·`ept`에서 **경쟁 페이지 배타 주장** 제거.
   > 🔴 **되돌리지 마라**: bad-beat **~63%(1.7:1)**(결재 15) · EPT **Mystery Bounty €3,250 Aug 25–27**(공식 #48 — €1,650은 별개 이벤트 #64다) · straddle **L85 각주·「the button keeps last action」**은 일부러 그 문면을 쓴다 · 「most guides / almost every article」류 **완화형은 유지**가 판정이다.

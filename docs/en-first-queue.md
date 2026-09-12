@@ -75,6 +75,9 @@
 | ㊹ | 🆕(queue Q1-11 · 09-11) EN `holdem-starting-hands-chart:126` 「77·88이 테이블이 셀 때 **가장 먼저** 떨어지는 페어」 — 실전 순서 반대(셋마이닝 플랜 있는 77·88보다 지배당하는 오프수트·얇은 수딧 브로드웨이가 먼저 나간다). 8로케일 동형 · m089 §2-C #17·#24·#25(77/88/99 배치)와 같은 자리 |
 | ㊺ | 🆕(queue Q1-11) `lib/render-markdown.ts:213,215` PDF 카드 크롬 영어 하드코딩 — `locale` 인자가 있는데 안 쓴다. 전 로케일 노출(코드 1곳) |
 
+| ㊻ | 🆕(queue Q4-7 ① · 09-12) 🔴 EN `holdem-tiebreak-rules` 「The only suit order in the tournament rulebook belongs to stud and razz」는 **틀렸다** — 같은 룰북 용어집 `DEALER BUTTON` 축어 «the highest card by rank and suit to determine the initial position of the Dealer Button» = 스터드·라즈 밖에서 무늬 서열을 쓴다. 같은 문단이 바로 앞에서 그 드로를 설명해 **자기모순**이기도 하다. 8로케일 동형 |
+| ㊼ | 🆕(queue Q4-7 ② · 09-12) 🟠 EN `holdem-when-to-fold` — 「bluff-catcher」가 본문 3회뿐이고 H2·FAQ·tags 어디에도 없다. 같은 글 L153에 **1.5x 오버벳 37.5%** 계산이 이미 있어 FAQ 1문 흡수 비용이 0에 가깝다(저볼륨 롱테일 집합전략) |
+
 🪶 ㉜㉝㉞(인포그래픽 alt 3건)는 ✅ 종결(`781301e4`).
 
 ---
@@ -120,20 +123,20 @@ EN 12편 정정 → 7로케일(de·es·id·ja·pt·zh·zh-hant) 전파 완료. 1
 
 ### 2-D. ja 회차 11이 올린 것 (2026-09-11 · 헤드 머지 시 처리)
 
-- **J#8** 🟠 **미결** — `ept-barcelona-2026-guide` **L84** 비교표 「Events range | €330 – €100,000」 · **L92** H2 「From €330 to €100,000」 ↔ 그 절 이벤트 표 7행의 최저가는 **€825**(PokerStars Cup)이고 €330 이벤트는 본문에 행이 없다. ja는 파일L90·L98 동형(레인은 직답 블록만 €825로 맞춰 **블록↔H2가 갈려 있다**). 🔴 **€330의 1차 출처가 이 세션엔 없다** — PokerNews 일정 페이지를 WebFetch로 물었더니 «€825 미만 없음 · 최저 €1,650»이라 답했으나 **요약 응답이라 근거로 못 쓴다**(§12-B). 처방 ① €330 사이드 이벤트의 공식 일정(pokerstarslive.com) 축어 확보 → 본문에 한 줄 ② 못 찾으면 H2·비교표를 **€825**로. **EN 먼저, 그 다음 8로케일**(ja 블록 포함). 🪶 같은 페이지가 「EPT Mystery Bounty €1,650 Aug 27–28」로 읽혔다(우리 표 €3,250 Aug 25–27) — **미검증 신호**, 이 글 다음 검수 때 공식 일정으로 전수 대조.
+- **J#8** ✅ **종결(queue 회차 Q4-a · 2026-09-12)** — €330 Deep Stack은 **공식 #76(Aug 29)로 실재 확인**됐다(처방 ①). EN `ept-barcelona-2026-guide` 이벤트 표에 **€330 행 신설** + 예산표 하한 €825→€330 · 총액 €7,280–€11,550(ja는 항공권 제외판 €7,130) · 「최저가」 주장 4자리 정합(이제 €825 주장은 전부 **multi-day** 한정). 9로케일 전파 완료. 🪶 부수 확인: 「Mystery Bounty €1,650」은 **오독**이었다(공식 #48 = €3,250 Aug 25–27 · €1,650은 별개 이벤트 #64) — 우리 표가 옳다.
 - **J#9** ✅ **종결(2026-09-11 (8))** — `holdem-bubble` tldr 「on a satellite bubble you fold everything, even aces」에 **multi-seat** 한정어(본문 L147은 있고 tldr만 없었다 · 싱글시트/승자독식 새틀라이트에선 조언이 반대 = D유형). EN + de·es·id·ja·pt·zh·zh-hant(각 본문이 쓰는 표기 승계).
 - **J#10** ✅ **종결(2026-09-11 (8))** — `holdem-strategy` 「five of the six map directly onto the five decisions」인데 표의 Decision 태그는 4행뿐. 「Being too passive」 행 fix 셀에 **(Decision 4)** (判断4 = 플랍에서 베팅을 이어가는가 · 수동성의 반대). EN + 7로케일 동형 처리. ko는 표 구조가 달라 대상 아님.
 
 ### 2-E. 검수장 MA-130·MA-131·MA-136이 올린 것 (2026-09-11 · 우편함 회차에서 처리)
 
-- **X-1** 🟠 **미결** — `holdem-blind-meaning` EN **L80** 「Nobody gets to skip their turn」(id L81 「Tidak ada yang bisa melewatkan gilirannya」 · zh-hant 직답 L82 동형). 검수장 판정 = RISKY — 자리를 비운 플레이어의 missed blind(WSOP Live Action §155~158)·데드 버튼(Tournament §85)이 있어 «아무도 건너뛰지 못한다»는 단정이 아니다. 처방 = 「자리에 있는 한」 한정 또는 missed-blind 한 줄. **EN 먼저, 그 다음 8로케일.** 1차 출처 = `docs/sources/wsop-2026-live-action-rules.txt` §155~158.
+- **X-1** ✅ **종결(queue 회차 Q4-a · 2026-09-12)** — `holdem-blind-meaning` 「Nobody gets to skip their turn.」를 **either/or 문면**으로 교체(WSOP Live-Action **Rule 160** 축어 근거 · 같은 글 FAQ 「Alternatively, you can wait…」와 정합). EN + 9로케일.
 - **X-2** ✅ **종결(우편함 회차)** — `texas-holdem-rules-for-beginners` L202 표·L435 FAQ 「any amount up to all your chips」 → 「from the big blind up to …」(NL 최소 오픈 = 빅블라인드 · A 96 «minimum legal amount»). EN + 7로케일.
 - ✅ **종결(우편함 회차 · EN + 7로케일)** — MA-130 요청 1의 es 동형 3건: `holdem-game-order` 표 Fold·All-in 「Anytime」 → 「Any street — in turn」(A 84 non-standard/out-of-turn fold) · `holdem-showdown-rules` 「before/during the runout」 3자리 → TDA 16 축어 「tabled without delay once all betting is complete」 · 「can never be retrieved」 → A 109(식별 가능하면 회수 가능). MA-131 요청 2~4: `holdem-continuation-bet` tldr·L271 OOP 한정 · `holdem-kicker` FAQ L196 → L109 문면 · `holdem-card-counting` L96 misdeal→by mistake · L116 · L127 «any card room» 삭제 · `holdem-position-play` SB 행 「vs a raise」 · `holdem-bubble` 「WSOP Tournament Rule 126」 · `korea-poker-marathon-2026` 「9/4 단일 마감」 7자리 → 창구 종속(L125 정합).
 
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.
-- 🟠 EN 경쟁 페이지 언급 문구 잔존(rake:48 «no single competitor page» 등 3곳) — EN도 지울지 판정
-- 🟠 EN↔pt FAQ 개수 드리프트(bubble 9↔7 · short-stack 9↔7 · tournament 9↔8 · icm 8↔7) — **위 §0-B와 한 판**
-- 🟠 en `holdem-game-order`가 「who bets first」 계열 51노출을 못 받는다 — title·seoTitle 어디에도 who bets/goes/acts first가 없다
+- ✅ **종결(queue Q4-a · 2026-09-12)** — EN 경쟁 페이지 배타 주장 제거(`rake`·`tournament`·`3bet`·`straddle`·`ept`). 🔴 단 「most guides / almost every article」류 **완화형은 유지가 판정**이다(차별점 서술 · E-E-A-T 목소리 — 다시 지우자고 하지 마라).
+- ✅ **종결(queue Q4-a 실측 · 2026-09-12)** — EN↔pt FAQ 개수 드리프트는 **실측 0**이었다(bubble·short-stack·tournament·icm).
+- ✅ **종결(낡은 항목 · queue Q4-a 확인)** — en `holdem-game-order`의 seoTitle은 **이미 「who bets first」 축**이다(`updated: 2026-09-11`).
 - 🟠 EN 제목 보강 3편(`holdem-3bet`·`holdem-continuation-bet`·`holdem-pot-odds` — 제목에 poker/hold'em 없음) 🔴 **GSC 먼저**(노출 붙었으면 교체 순간 측정이 끊긴다) · 사장님 결재 대기

@@ -1,3 +1,15 @@
+## 2026-09-12 (20) — **🧰 queue 회차 Q4-a 머지·배포(레인 `b311d693` → 머지 `5d8f1be0`) — EN-먼저 묶음 I: EN 11편 + 9로케일 전파 · 렌즈 59/반영 43** (빌드 · 배포 · 라이브 · IndexNow)
+
+사장님 지시 「진행해」(= Q4-a 머지). 프로토콜 §6 + §7-F. 🔴 **직전 세션이 로그인 만료로 끊겨 레인 커밋이 머지 대기 상태로 남아 있었다** — 헤드가 창을 띄우기 전에 `git log main..harden-queue`로 먼저 잰 덕에 발견했다(메모리 `lane-notice-check-worktree-first`).
+- **머지**: `lane:status` 4레인 전부 🟢 SAFE · 레인 워크트리 clean · 92파일 +733/−336(EN 11 + 8로케일 각 11 + ar·fr 1 + docs 3 + public 2). 빌드 EXIT=0 · **70 blog + 525 intl + 69 static + 25 locale homes** · `check:hreflang` ✅ 0 · `check:tournaments-i18n` 🔴 0(🟠 note 공통 공백 6 = 오스트리아 6행 비KO 미등재 = Q6 몫) · sitemap 재생성 `149b35b6`.
+- **내용**(EN 11편): positions 「Two orbits later」→「Three hands later」(좌석 산수) · bad-beat 결재 15 이행(🔴 ~63%(1.7:1) **불변** · 행 문구만 「nine flush outs, plus backdoor two pair or straight…」) · blind-meaning 「Nobody gets to skip their turn」→ either/or(WSOP Live-Action **Rule 160** 축어 · X-1 종결) · when-to-fold 셀프체크 도입문(D유형) · straddle 5자리(버튼은 원래 포스트플롭 마지막 · 스트라들이 사는 건 프리플랍 마지막 액션) · outs 「9 + 8 − 2」 + 표 순서 15→12→9→8 · tiebreak 「Tournament Rule 85」 · **ept-barcelona €330 Deep Stack(#76 · Aug 29) 행 신설** + 예산표 하한 €330 + 총액 €7,280–€11,550(J#8 종결 — 공식 일정으로 실재 확인) · rake·tournament·3bet·straddle·ept 경쟁 페이지 배타 주장 제거.
+- **라이브 확인**(`page.content()` · 앵커 4종): 「€330 Deep Stack」·「#76」·「Tournament Rule 85」·「backdoor two pair」·「you either post the blinds you missed」 **전부 OK · 1회차에 이미 배포 도착**.
+- 🆕 **`npm run indexnow -- --since 2026-09-12` — 85 URL ✅ 200**(09-12에 신설된 머지 절차 한 줄의 첫 실행 · Bing·Yandex·Naver 크롤 큐).
+- **§5 헤드 처리**: MB-044 발신 · 정본 4곳 정리(`en-first-queue` J#8·X-1 + §3 세 항목 종결 · 핸드오프 「EN 동형 30건」·「tiebreak L232」 행 삭제 · `harden-ja-진행` §5-K·§5-L 이행 표기) · `en-first-queue` §1에 **㊻㊼ 신규 등재**(🔴 tiebreak 「무늬 서열은 스터드·라즈뿐」이 **룰북 용어집 DEALER BUTTON 축어와 자기모순** · 🟠 when-to-fold bluff-catcher FAQ 흡수) · Q4-8 게이트 후보 2건은 Q7 재료 · `lane:sync -- --apply`.
+- 🔴 **기각 6건은 재제안 금지**(진행 파일 Q4-10): bad-beat overcards화 · ept 예산 절 개명 · zh straddle 「最後一句話」 · zh-hant blind-meaning 직답 이동 · 「most guides」 완화형 제거 · PokerStars **Open** Cup 개명(보류 — 공식 DOM 확인은 됐다).
+
+---
+
 ## 2026-09-12 (19) — **Bing·Yandex 등록 완결(소유확인 + 사이트맵) · Daum/ZUM은 «하지 않는다» 결재 · 국내 포털 실측** (배포 `3f5fd0ef`)
 
 사장님 지시 ① 「직전 세션이 로그인 만료로 끊겼다 — 상위노출 가능하도록 등록작업하자」 ② 결재 「얀덱스와 빙까지만 하자」.
