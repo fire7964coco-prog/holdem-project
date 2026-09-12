@@ -64,6 +64,12 @@ const HANDS = [
   { rank: 10, cards: ["A", "Q", "9", "5", "3"],  suit: null,      prob: "17,4%"   },
 ];
 
+/** 용지 치수 — `@page size` 와 `.page` 박스가 **같은 값**을 써야 한다 (게이트 `check:pdf-page`) */
+const PAGE_DIMS = {
+  A4: { w: "210mm", h: "297mm" },
+  Letter: { w: "8.5in", h: "11in" },
+};
+
 const CONTENT = {
   de: {
     dir: "ltr",
@@ -120,7 +126,7 @@ function renderHtml(c, favicon) {
 <head>
 <meta charset="utf-8" />
 <style>
-  @page { size: ${c.pageSize}; margin: 0; }
+  @page { size: ${c.pageSize ?? "A4"}; margin: 0; }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   :root {
     --felt: #0d3d2b; --green: #1c8059; --ink: #1f242e; --gray: #6b7380;
@@ -129,7 +135,13 @@ function renderHtml(c, favicon) {
   }
   html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   body { font-family: ${c.fontStack}; color: var(--ink); }
-  .page { width: 210mm; height: 297mm; overflow: hidden; position: relative; }
+  /* .page 치수는 @page size 와 **같은 표에서** 온다 — 값을 손으로 적지 마라.
+     왜: 2026-09-11 이전 generate-beginner-pdf.mjs 가 8.5in×11in 고정이라 A4를 고른 de 판이
+     오른쪽 5.9mm 잘려 나갔다(overflow:hidden 은 그걸 막아 주지 않는다).
+     여기도 2026-09-12 «이전»에는 210mm 고정이었다 — CONTENT 가 de 하나뿐이고 A4라 우연히 맞아 있었을 뿐,
+     용지를 하나 더 넣으면 같은 사고가 났다. 게이트 = npm run check:pdf-page.
+     🔴 이 주석은 «템플릿 리터럴 안»이다 — 백틱을 쓰면 문자열이 거기서 끊긴다(CLAUDE.md §12-A). */
+  .page { width: ${PAGE_DIMS[c.pageSize ?? "A4"].w}; height: ${PAGE_DIMS[c.pageSize ?? "A4"].h}; overflow: hidden; position: relative; }
 
   .header { background: var(--felt); color: #fff; padding: 20px 16mm; display: flex; align-items: center; gap: 14px; }
   .logo { width: 34px; height: 34px; flex: 0 0 auto; }
@@ -229,7 +241,7 @@ async function renderPdf(lang, favicon, browser) {
   const page = await browser.newPage();
   await page.setContent(renderHtml(c, favicon), { waitUntil: "networkidle" });
   const out = join(DOWNLOADS, c.fileName);
-  await page.pdf({ path: out, format: c.pageSize, printBackground: true, preferCSSPageSize: true });
+  await page.pdf({ path: out, format: c.pageSize ?? "A4", printBackground: true, preferCSSPageSize: true });
   await page.close();
   return out;
 }

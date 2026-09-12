@@ -220,7 +220,7 @@ Esta sección es la que ==r:se salta la guía de toda la competencia== — y es 
 
 Bajo las **reformas de manejo de efectivo de los casinos de NSW**, existe un **límite diario de AUD $5,000 en efectivo** para el juego (está previsto que este tope baje a AUD $1,000/día a partir de agosto de 2027). 
 
-⚠️ **Esto no es la norma de aduanas.** Los AUD $5.000 son el efectivo que puedes meter en juego por día en The Star. Aparte, las normas fronterizas australianas exigen ==r:declarar AUD $10,000 o más== (o su equivalente en otra divisa) al entrar o salir del país. ==g:No hay un máximo que puedas llevar== — lo que se exige es declararlo.
+⚠️ **Esto no es la norma de aduanas.** Los AUD $5,000 son el efectivo que puedes meter en juego por día en The Star. Aparte, las normas fronterizas australianas exigen ==r:declarar AUD $10,000 o más== (o su equivalente en otra divisa) al entrar o salir del país. ==g:No hay un máximo que puedas llevar== — lo que se exige es declararlo.
 
 El juego es **carded** — juegas a través de tu tarjeta del Star Club — y todas las entradas de torneo (incluidos los satélites) deben comprarse con fichas de juego, no con tarjetas de crédito ni efectivo en la mesa.
 

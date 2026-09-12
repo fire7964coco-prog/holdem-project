@@ -125,11 +125,11 @@ El ==**JTBC Seoul Marathon**== es la carrera urbana estrella de Corea — de 25,
 **Cómo inscribirse (extranjeros):**
 Los corredores extranjeros residentes fuera de Corea se inscriben a través de ==**[worldsmarathons.com](https://worldsmarathons.com/marathon/international-seoul-marathon)**==. ==r:Las plazas son limitadas y se agotan pronto==, así que consulta la página oficial para ver la disponibilidad actual — ==r:**el plazo depende del canal que uses**==. La ventana japonesa de RUNNET llegó hasta el 4 de septiembre de 2026 y ya cerró; worldsmarathons.com es un canal aparte y puede seguir mostrando plazas, así que confírmalo ahí antes de contar con una. En cualquiera de los dos, el cierre de cancelación/reembolso cae el mismo día que cierra ese canal (23:59 KST) y es también el límite de cancelación/reembolso. Los titulares de pasaporte coreano no pueden inscribirse por esta vía.
 
-Los precios en ese canal son ==**€104 el 10K**== y ==**€129 el maratón completo de 42,2K**== (solo corredores del extranjero). Como en años anteriores ambas distancias se agotaron el primer día, ==g:la asignación pasó a sorteo==: inscribirse pronto ya no garantiza plaza, solo te mete en el sorteo. El dorsal se recoge en la EXPO antes de la carrera y el nombre de la inscripción debe coincidir con el pasaporte. El recorrido sale del ==**World Cup Park (Mapo-gu)**== y termina en el ==**Parque Olímpico (Songpa-gu)**==.
+Los precios en ese canal son ==**€104 el 10K**== y ==**€129 el maratón completo de 42.2K**== (solo corredores del extranjero). Como en años anteriores ambas distancias se agotaron el primer día, ==g:la asignación pasó a sorteo==: inscribirse pronto ya no garantiza plaza, solo te mete en el sorteo. El dorsal se recoge en la EXPO antes de la carrera y el nombre de la inscripción debe coincidir con el pasaporte. El recorrido sale del ==**World Cup Park (Mapo-gu)**== y termina en el ==**Parque Olímpico (Songpa-gu)**==.
 
 ==g:El cupo de extranjeros del JTBC es limitado — inscríbete pronto antes de que se agote.==
 
-**Tras la carrera → póker:** el maratón completo termina en el ==Parque Olímpico== (Songpa, líneas 5/8). Desde ahí, metro hasta la estación de Seúl u Hongdae, luego el AREX con todas las paradas → lanzadera de Paradise City desde la T1. Cuenta con ==**1,5–2 horas**== desde la meta, sin contar ducha y cambio de ropa. El grueso del pelotón entra entre las 12 y la 1 — una sesión de cash game a última hora de la tarde es realista; a mediodía, no.
+**Tras la carrera → póker:** el maratón completo termina en el ==Parque Olímpico== (Songpa, líneas 5/8). Desde ahí, metro hasta la estación de Seúl u Hongdae, luego el AREX con todas las paradas → lanzadera de Paradise City desde la T1. Cuenta con ==**1.5–2 horas**== desde la meta, sin contar ducha y cambio de ropa. El grueso del pelotón entra entre las 12 y la 1 — una sesión de cash game a última hora de la tarde es realista; a mediodía, no.
 
 ---
 
@@ -156,7 +156,7 @@ Para quienes lleguen en septiembre, el ==**YTN Seoul Tour Marathon**== sale de =
 
 - Fecha: 6 de septiembre de 2026, salida a las 7:30
 - Distancias: ==**11KM**== · Medio — ==r:aquí no hay 10K==
-- Inscripción: 11KM ₩70.000 · Medio ₩80.000
+- Inscripción: 11KM ₩70,000 · Medio ₩80,000
 - Salida: Seoul Plaza (zona del Ayuntamiento)
 - Organizador: YTN
 - Web: [run.ytn.co.kr](http://run.ytn.co.kr)
@@ -207,7 +207,7 @@ Aquí es donde el calendario se pone interesante. Tres festivales de póker se c
 
 ==**La isla de Jeju**== es el destino de resort nacional más popular de Corea — costa volcánica, clima subtropical, sin visado para la mayoría de nacionalidades. El torneo se disputa en el ==**LES A Casino**== dentro de Jeju Shinhwa World.
 
-- **Garantizado:** ==g:$3.5M+ garantizado total (GTD) repartido en 135 eventos con trofeo== (Main Event: buy-in de ==**KRW 2,7M**== ≈ $1.800, ==g:KRW 2.200M GTD==)
+- **Garantizado:** ==g:$3.5M+ garantizado total (GTD) repartido en 135 eventos con trofeo== (Main Event: buy-in de ==**KRW 2.7M**== ≈ $1,800, ==g:KRW 2,200M GTD==)
 - **Calendario completo:** publicado — 135 eventos en 13 días · [theasianpokertour.com](https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/info)
 - Solo extranjeros · +19 · pasaporte válido (coreanos residentes en el extranjero: pasaporte coreano + green card o certificado de emigración)
 

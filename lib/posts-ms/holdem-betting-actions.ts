@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Texas Hold'em ada 5 aksi pertaruhan: cek (lepas giliran secara percuma), bertaruh (buka pusingan), call (samai pertaruhan), raise (menaikkannya — kenaikan minimum sama dengan saiz pertaruhan atau raise sebelumnya), dan fold. Anda hanya boleh cek apabila tiada pertaruhan aktif di hadapan anda — pada praflop itu hanya berlaku jika anda big blind.",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-07-13",
+  updated: "2026-09-07",
   masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "9 minit",

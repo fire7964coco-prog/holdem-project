@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Texas Hold'em'de 5 bahis hareketi var: check (bedavaya pas), bet (turu açmak), call (bahsi görmek), raise (yükseltmek — minimum yükseltme, önceki bahse ya da yükseltmeye eşittir) ve fold (yatmak). Check'i yalnızca önünde açık bir bahis yoksa yapabilirsin — preflopta bu sadece big blind için geçerlidir.",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-07-13",
+  updated: "2026-09-07",
   masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "9 dk",

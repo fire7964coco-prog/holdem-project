@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Texas Hold'em có 5 hành động cược: check (nhường lượt miễn phí), cược (mở vòng cược), theo (call — trả đúng mức cược), tố (raise — mức tố tối thiểu bằng khoản cược hoặc khoản tố trước đó) và bỏ bài (fold). Bạn chỉ được check khi trước mặt không có khoản cược đang mở — ở preflop điều đó chỉ xảy ra khi bạn là big blind.",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-07-13",
+  updated: "2026-09-07",
   masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "9 phút",

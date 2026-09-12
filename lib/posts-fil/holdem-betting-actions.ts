@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "May 5 betting actions ang Texas Hold'em: check (pumasa nang libre), bet (buksan ang round), call (tapatan ang bet), raise (dagdagan — ang min-raise ay katumbas ng huling bet o raise), at fold. Pwede ka lang mag-check kung walang aktibong bet sa harap mo — sa preflop, nangyayari lang iyon kapag ikaw ang big blind.",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-07-13",
+  updated: "2026-09-07",
   masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "9 min",

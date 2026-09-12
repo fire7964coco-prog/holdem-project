@@ -26,7 +26,11 @@ import { chromium } from 'playwright';
 const args = process.argv.slice(2);
 const bi = args.indexOf('--base');
 const BASE = bi >= 0 && args[bi + 1] ? args[bi + 1] : 'https://www.holdemmaster.com';
-const paths = args.filter((a, i) => a.startsWith('/') && i !== bi + 1);
+/* 🔴 `--base` 가 없으면 bi = -1 이라 `bi + 1` 이 **0** 이 된다 — 그러면 이 필터가
+   «첫 번째 인자»를 통째로 버린다. `node scan-mobile-fold.mjs /calculator /ranking` 이
+   조용히 `/ranking` 만 재고 있었다(2026-09-11 회차 Q1 발견 · 오류도 경고도 없다).
+   제외는 «--base 가 실제로 있을 때 그 다음 인자»에만 걸어야 한다. */
+const paths = args.filter((a, i) => a.startsWith('/') && !(bi >= 0 && i === bi + 1));
 
 const TARGETS = paths.length ? paths : [
   '/',                                        // 홈 (모바일 56.7% ↔ 데스크톱 73.1%)

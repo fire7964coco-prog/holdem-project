@@ -29,12 +29,28 @@ const CHART: number[][] = [
   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4], // 2
 ];
 
+/**
+ * 🔴 이 표의 %는 «핸드 **타입**» 기준이다 — 169종 가운데 몇 종인가(21/169 = 12%).
+ *    전략 글의 「UTG 약 13%」는 «**콤보**» 기준이다 — 1,326콤보 가운데 몇 개인가.
+ *    축어 근거는 **EN 판**에 있다(`lib/posts-en/holdem-starting-hands-chart.ts`:
+ *    *"The percentage is a share of all 1,326 starting-hand combinations, so ~13% is about 172 of them"*).
+ *    🔴 `holdem-starting-hands-chart` 는 **KO 판이 없다** — `/blog/…`로 링크하면 404다(CLAUDE.md §8).
+ *    한국어 자리는 `holdem-starting-hand-range`(`lib/posts.ts`)이고 거기 축어는 「76콤보 = 약 5.7%」다.
+ *    두 기준은 같은 레인지에서도 값이 다르다(이 차트의 UTG = 타입 12.4% ↔ 콤보 10.0%).
+ *    🔴 **한 화면에 기준을 안 밝히면 두 숫자가 같은 뜻으로 읽힌다.** 그래서 라벨에 기준을 병기한다.
+ *    (2026-09-12 · queue 회차 Q7-a ⑦ · 재료 Q1-7)
+ */
+/**
+ * 🔴 **%를 손으로 적지 마라.** `pct: "약 12%"` 가 상수로 박혀 있었는데, 버튼은 `CHART`에서 계산하고
+ *    표·범례는 이 문자열을 썼다 — `CHART` 한 칸만 고치면 **버튼은 41%, 표는 계속 42%**가 된다
+ *    (2026-09-12 렌즈 실증). 세 자리가 같은 표를 보게 아래 `typePct()`로 통일한다.
+ */
 const POSITIONS = [
-  { id: 1, label: "UTG", full: "언더더건 (UTG)", color: "#dc2626", pct: "약 12%" },
-  { id: 2, label: "HJ", full: "하이잭 (HJ)", color: "#ea580c", pct: "약 20%" },
-  { id: 3, label: "CO", full: "컷오프 (CO)", color: "#ca8a04", pct: "약 29%" },
-  { id: 4, label: "BTN", full: "버튼 (BTN)", color: "#16a34a", pct: "약 42%" },
-  { id: 5, label: "SB", full: "스몰블라인드 (SB)", color: "#2563eb", pct: "약 56%" },
+  { id: 1, label: "UTG", full: "언더더건 (UTG)", color: "#dc2626" },
+  { id: 2, label: "HJ", full: "하이잭 (HJ)", color: "#ea580c" },
+  { id: 3, label: "CO", full: "컷오프 (CO)", color: "#ca8a04" },
+  { id: 4, label: "BTN", full: "버튼 (BTN)", color: "#16a34a" },
+  { id: 5, label: "SB", full: "스몰블라인드 (SB)", color: "#2563eb" },
 ];
 
 const TIER_COLORS = [
@@ -73,6 +89,31 @@ function countPlayable(maxTier: number): number {
     for (let j = 0; j < 13; j++)
       if (CHART[i][j] > 0 && CHART[i][j] <= maxTier) count++;
   return count;
+}
+
+/**
+ * 같은 레인지를 «콤보» 기준으로 센다 — 페어 6 · 수티드 4 · 오프수트 12, 전체 1,326콤보.
+ * 🔴 값을 손으로 적지 마라. CHART 를 고치면 두 기준이 같이 움직여야 한다.
+ */
+const TOTAL_COMBOS = 1326;
+const TOTAL_TYPES = 169;
+/** 핸드 «타입» 비율 — 169종 중 몇 종인가. 표·범례·버튼이 전부 이걸 쓴다. */
+function typePct(maxTier: number): string {
+  return `약 ${Math.round((countPlayable(maxTier) / TOTAL_TYPES) * 100)}%`;
+}
+/** 「콤보」 비율 — 🪶 자릿수를 `toFixed(1)`로 고정한다. `Math.round(x*1000)/10`은 UTG만 «10»으로 찍혀
+ *  근사값(약 12%)과 정밀값(10.0%)이 뒤섞인 것처럼 보인다. */
+function comboPct(maxTier: number): string {
+  return `${((countCombos(maxTier) / TOTAL_COMBOS) * 100).toFixed(1)}%`;
+}
+function countCombos(maxTier: number): number {
+  let combos = 0;
+  for (let i = 0; i < 13; i++)
+    for (let j = 0; j < 13; j++) {
+      const v = CHART[i][j];
+      if (v > 0 && v <= maxTier) combos += i === j ? 6 : i < j ? 4 : 12;
+    }
+  return combos;
 }
 
 export default function HandChart() {
@@ -131,6 +172,10 @@ export default function HandChart() {
           <p className="text-xs text-muted-foreground text-center font-semibold tracking-widest uppercase">
             포지션 선택 → 플레이 가능 핸드 하이라이트
           </p>
+          {/* 🔴 칩에 찍히는 %의 기준을 여기서 한 번 밝힌다 — 칩마다 붙이면 390px에서 줄이 무너진다 */}
+          <p className="text-[11px] text-muted-foreground text-center">
+            칩의 %는 <strong className="text-foreground">169종 중 비율</strong>입니다 (콤보 기준은 아래 표에 함께 적었습니다)
+          </p>
           <div className="flex flex-wrap gap-2 justify-center">
             <button
               onClick={() => setSelectedPos(null)}
@@ -159,6 +204,7 @@ export default function HandChart() {
                   }
                 >
                   {pos.label}
+                  {/* 기준(169종 중)은 칩 줄 위 캡션이 한 번 밝힌다 — 칩마다 붙이면 좁은 폭에서 줄이 무너진다 */}
                   <span className="ml-1.5 opacity-80 font-normal text-xs">{pct}%</span>
                 </button>
               );
@@ -306,7 +352,7 @@ export default function HandChart() {
                 </div>
                 <div className="text-xs leading-tight min-w-0">
                   <div className="font-semibold text-foreground truncate">{pos.full}</div>
-                  <div className="text-muted-foreground">{pos.pct}</div>
+                  <div className="text-muted-foreground">169종 중 {typePct(pos.id)}</div>
                 </div>
               </div>
             ))}
@@ -323,13 +369,16 @@ export default function HandChart() {
         {/* Position Table */}
         <section className="space-y-4">
           <h2 className="text-xl font-bold text-foreground border-l-4 border-primary pl-3">포지션별 오픈 레인지 요약</h2>
+          {/* 🔴 390px에서 「범위」 열은 초기 화면 «밖»이다(실측: 표 최소폭 560 ↔ 래퍼 358).
+              13×13 그리드엔 같은 힌트가 있는데 이 표엔 없었다 — 새로 넣은 콤보 기준을 못 보고 지나친다. */}
+          <p className="text-xs text-muted-foreground md:hidden">← 좌우로 밀어 「범위 · 대표 핸드」를 보세요</p>
           <div className="overflow-x-auto rounded-2xl border border-border/50">
             <table className="w-full text-sm min-w-[560px]">
               <thead>
                 <tr className="border-b border-border/50 bg-card/50">
                   <th className="text-left px-4 py-3 font-semibold text-foreground">포지션</th>
-                  <th className="text-left px-4 py-3 font-semibold text-foreground">핸드 수</th>
-                  <th className="text-left px-4 py-3 font-semibold text-foreground">범위</th>
+                  <th className="text-left px-4 py-3 font-semibold text-foreground">핸드 수 <span className="font-normal text-muted-foreground text-xs">(169종 중)</span></th>
+                  <th className="text-left px-4 py-3 font-semibold text-foreground">범위 <span className="font-normal text-muted-foreground text-xs">타입 / 콤보</span></th>
                   <th className="text-left px-4 py-3 font-semibold text-foreground">대표 핸드</th>
                 </tr>
               </thead>
@@ -354,7 +403,10 @@ export default function HandChart() {
                           (+{newHands})
                         </span>
                       </td>
-                      <td className="px-4 py-3 text-muted-foreground whitespace-nowrap">{pos.pct}</td>
+                      <td className="px-4 py-3 text-muted-foreground whitespace-nowrap">
+                        {typePct(pos.id)}
+                        <span className="ml-1.5 text-xs opacity-70">/ 콤보 {comboPct(pos.id)}</span>
+                      </td>
                       <td className="px-4 py-3 text-muted-foreground text-xs">
                         {pos.id === 1 && "AA-77, AKs-A10s, KQs-KJs, AKo-AJo, KQo"}
                         {pos.id === 2 && "+66-55, A9s-A8s, K10s, Q10s, J9s, 10-8s, 98s, A10o, KJo, QJo, J10o"}
@@ -368,6 +420,15 @@ export default function HandChart() {
               </tbody>
             </table>
           </div>
+          <p className="text-xs text-muted-foreground">
+            * <strong className="text-foreground">기준이 둘입니다.</strong> 「169종 중 12%」는 핸드{" "}
+            <strong className="text-foreground">타입</strong> 기준(169종 가운데 몇 종인가)이고,{" "}
+            <strong className="text-foreground">콤보</strong> 기준은 1,326개 조합 가운데 몇 개인가입니다.
+            같은 레인지라도 값이 다릅니다 — AA는 1종이지만 6콤보, AKo는 1종이지만 12콤보이기 때문입니다.
+            솔버와 전략 글은 보통 콤보 기준을 씁니다(
+            <Link href="/blog/holdem-starting-hand-range" className="text-primary hover:underline">스타팅 핸드 레인지 글</Link>
+            의 「Tier 1~2 = 76콤보 = 약 5.7%」가 그 기준입니다).
+          </p>
           <p className="text-xs text-muted-foreground">
             * 표준 오픈 레인지의 근사값입니다. 실제 솔버 계산값은 오픈 사이즈·스택·상대 레인지에 따라
             달라집니다 — 예를 들어{" "}

@@ -12,6 +12,7 @@
  */
 import { createHeadingSlugger } from "./blog-headings";
 import { RANGE_CHART_SEATS, rangeChartCopy } from "./range-chart";
+import { IMAGE_DIMS, IMAGE_DIMS_FALLBACK } from "./image-dims";
 
 /**
  * 풀쿼트 마크업 — 한 줄형과 블록형이 **같은 HTML** 을 내도록 한 곳에 둔다.
@@ -84,6 +85,21 @@ export function renderMarkdown(content: string, locale?: string): string {
     src.startsWith("/") ? `/_next/image?url=${encodeURIComponent(src)}&w=${w}&q=${q}` : src;
   const optSet = (src: string, widths: number[], q = 75) =>
     src.startsWith("/") ? widths.map((w) => `${optSrc(src, w, q)} ${w}w`).join(", ") : "";
+  /**
+   * 🔴 `width`/`height` 는 **그 파일의 실제 치수**를 준다 — 한 값으로 고정하면 안 된다.
+   *
+   * 2026-09-12 이전에는 모든 본문 이미지에 `width="1200" height="630"` 이 박혀 있었다.
+   * 실측하면 `public/images/` 593장 중 **1200×630은 3장**뿐이고 최다는 **1200×675(377장)** 다.
+   * 선언 비율 1.905 ↔ 실제 1.778 → 672px 표시 폭에서 **장당 약 25px** 자리 예약이 어긋나 CLS가 났다.
+   * 🔴 그렇다고 675로 바꾸면 비-675 규격(820×448 · 1024×572 · 700×1244 …)이 반대로 어긋난다.
+   *    그래서 파일별 표(`lib/image-dims.ts` · 생성기 `scripts/gen-image-dims.mjs`)를 본다.
+   * 표에 없는 src(외부 호스트·갓 추가한 파일)는 코퍼스 최다 규격으로 떨어진다.
+   */
+  const dimAttrs = (src: string) => {
+    const [w, h] = IMAGE_DIMS[src] ?? IMAGE_DIMS_FALLBACK;
+    return `width="${w}" height="${h}"`;
+  };
+
   /** 본문 전폭 이미지용 src/srcset/sizes 속성 문자열 (컨테이너 max-w-2xl = 672px) */
   const fullWidthImg = (src: string) => {
     if (!src.startsWith("/")) return `src="${src}"`;
@@ -197,11 +213,11 @@ export function renderMarkdown(content: string, locale?: string): string {
     .replace(/\*(.+?)\*/g, '<em class="italic text-foreground/90">$1</em>')
     .replace(/!\[([^\]]*)\]\(([^)]+?)\s+"([^"]+)"\)/g, (_, alt, src, cap) => {
       const a = imgAttrs(src);
-      return `<figure class="my-4 sm:my-6 max-w-2xl mx-auto"><img ${fullWidthImg(src)} alt="${alt}" width="1200" height="630" loading="${a.loading}" fetchpriority="${a.fetchpriority}" decoding="async" class="w-full h-auto rounded-xl border border-border transition-transform duration-200 hover:scale-[1.015] hover:shadow-lg" /><figcaption class="text-center text-xs text-muted-foreground mt-2 italic">${cap}</figcaption></figure>`;
+      return `<figure class="my-4 sm:my-6 max-w-2xl mx-auto"><img ${fullWidthImg(src)} alt="${alt}" ${dimAttrs(src)} loading="${a.loading}" fetchpriority="${a.fetchpriority}" decoding="async" class="w-full h-auto rounded-xl border border-border transition-transform duration-200 hover:scale-[1.015] hover:shadow-lg" /><figcaption class="text-center text-xs text-muted-foreground mt-2 italic">${cap}</figcaption></figure>`;
     })
     .replace(/!\[([^\]]*)\]\(([^)]+)\)/g, (_, alt, src) => {
       const a = imgAttrs(src);
-      return `<figure class="my-4 sm:my-6 max-w-2xl mx-auto"><img ${fullWidthImg(src)} alt="${alt}" width="1200" height="630" loading="${a.loading}" fetchpriority="${a.fetchpriority}" decoding="async" class="w-full h-auto rounded-xl border border-border transition-transform duration-200 hover:scale-[1.015] hover:shadow-lg" /></figure>`;
+      return `<figure class="my-4 sm:my-6 max-w-2xl mx-auto"><img ${fullWidthImg(src)} alt="${alt}" ${dimAttrs(src)} loading="${a.loading}" fetchpriority="${a.fetchpriority}" decoding="async" class="w-full h-auto rounded-xl border border-border transition-transform duration-200 hover:scale-[1.015] hover:shadow-lg" /></figure>`;
     })
     .replace(
       /\[([^\]]+)\]\((\/downloads\/[^)]+\.pdf)\)/g,
@@ -533,7 +549,7 @@ export function renderMarkdown(content: string, locale?: string): string {
       const a = imgAttrs(src);
       return `<div style="margin:28px 0;padding:3px;border-radius:18px;background:linear-gradient(135deg,rgba(196,154,24,0.55) 0%,rgba(56,189,248,0.25) 48%,rgba(196,154,24,0.45) 100%);box-shadow:0 6px 24px rgba(0,0,0,0.15)">` +
         `<div style="background:#faf6ed;border-radius:16px;overflow:hidden">` +
-        `<img ${fullWidthImg(src)} alt="${alt}" loading="${a.loading}" fetchpriority="${a.fetchpriority}" decoding="async" width="1124" height="613" style="width:100%;height:auto;display:block" />` +
+        `<img ${fullWidthImg(src)} alt="${alt}" loading="${a.loading}" fetchpriority="${a.fetchpriority}" decoding="async" ${dimAttrs(src)} style="width:100%;height:auto;display:block" />` +
         `<div style="padding:10px 18px;border-top:1px solid rgba(196,154,24,0.25);text-align:center">` +
         `<p class="blog-faqcard-caption" style="font-size:14px;color:#b8820a;margin:0;letter-spacing:0.4px;font-weight:700">${caption}</p>` +
         `</div></div></div>`;

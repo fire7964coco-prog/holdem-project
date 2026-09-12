@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Au Texas Hold'em, il y a 5 actions : checker (parole, gratuit), miser (ouvrir le tour), suivre (payer la mise), relancer (le min-raise vaut au moins la mise ou la relance précédente) et se coucher. Tu ne peux checker que s'il n'y a pas de mise en cours devant toi — au préflop, cela ne concerne que la grosse blinde.",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-07-13",
+  updated: "2026-09-07",
   masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "9 min",

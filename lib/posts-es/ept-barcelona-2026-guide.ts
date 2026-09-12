@@ -85,7 +85,7 @@ El ==**European Poker Tour (EPT)**== es el circuito en vivo insignia que organiz
 
 </div>
 
-**El field de 2026 quedó por debajo del de 2025: 1,823 entradas frente a 2,045, alrededor de un 11% menos.** Conviene tenerlo en cuenta si estás haciendo números para 2027. Barcelona sigue siendo la parada más grande del calendario europeo (1,823 fue el séptimo Main Event más grande de la historia del EPT), pero no se repitió la asistencia récord de 2025 y el bote bajó con ella, de €9,92M a €8,84M.
+**El field de 2026 quedó por debajo del de 2025: 1,823 entradas frente a 2,045, alrededor de un 11% menos.** Conviene tenerlo en cuenta si estás haciendo números para 2027. Barcelona sigue siendo la parada más grande del calendario europeo (1,823 fue el séptimo Main Event más grande de la historia del EPT), pero no se repitió la asistencia récord de 2025 y el bote bajó con ella, de €9.92M a €8.84M.
 
 ---
 
@@ -235,7 +235,7 @@ Todo jugador del EPT debe tener una cuenta de PokerStars Live — ==r:sin ella, 
 
 ### 2. Declaración de Origen de Fondos (transacciones en efectivo)
 
-Este es el trámite del que casi nadie te avisa. Si pagas un torneo con **efectivo** en el Casino Barcelona, ==r:te pueden exigir que declares el origen de ese dinero== — la página del evento del EPT habla de "cualquier transacción en efectivo", mientras que el propio formulario de declaración del casino se aplica a transacciones en efectivo de 10.000 (€10.000) o más.
+Este es el trámite del que casi nadie te avisa. Si pagas un torneo con **efectivo** en el Casino Barcelona, ==r:te pueden exigir que declares el origen de ese dinero== — la página del evento del EPT habla de "cualquier transacción en efectivo", mientras que el propio formulario de declaración del casino se aplica a transacciones en efectivo de 10.000 (€10,000) o más.
 
 **Cómo completarla por adelantado:**
 1. Inicia sesión en tu cuenta de **PokerStars Live** en [pokerstarslive.com](https://www.pokerstarslive.com/ept/barcelona/)
@@ -425,7 +425,7 @@ A. Necesitas una cuenta de ==**PokerStars Live**== (independiente de tu cuenta d
 
 **Q. ¿Qué es el formulario de Origen de Fondos y es realmente obligatorio?**
 
-A. Si pagas en efectivo, cuenta con ello. La página del evento del EPT dice que "cualquier transacción en efectivo" exige declarar el origen de los fondos, mientras que el formulario de declaración del casino se aplica a transacciones en efectivo de 10.000 (€10.000) o más, así que confirma el umbral y el papeleo con el casino por adelantado. Puedes completar el formulario online a través de tu cuenta de PokerStars Live por adelantado — ==g:lleva unos 10 minutos==. Los pagos con tarjeta o con tokens comprados por adelantado pueden no requerirlo.
+A. Si pagas en efectivo, cuenta con ello. La página del evento del EPT dice que "cualquier transacción en efectivo" exige declarar el origen de los fondos, mientras que el formulario de declaración del casino se aplica a transacciones en efectivo de 10.000 (€10,000) o más, así que confirma el umbral y el papeleo con el casino por adelantado. Puedes completar el formulario online a través de tu cuenta de PokerStars Live por adelantado — ==g:lleva unos 10 minutos==. Los pagos con tarjeta o con tokens comprados por adelantado pueden no requerirlo.
 
 **Q. Si gano un Gold Pass del Power Path, ¿el hotel se reserva automáticamente?**
 
