@@ -1,3 +1,13 @@
+## 2026-09-12 (17) — **🧰 queue 회차 Q2-b 머지·배포(레인 `311f6497` ff) — 결재 7 이미지 10장 제작·교체 · EN 10자리 + 썸네일 3자리 + 7로케일 전파 · `check:image-reuse` 🔴 40→0 · F유형 2 정정** (빌드 · 배포 · 라이브 확인)
+
+사장님 지시 「queue 회차 Q2-b 끝났어, 머지해」. 프로토콜 §6 + §7-F.
+- **머지**: 레인 클린 · behind 0 → ff. 84파일 = 이미지 10(실사 2 = 사장님 생성본 워터마크·q82 · 인포 8 = `scripts/gen-*.html` 신규 8) + EN 7편 + 7로케일 56편 + 진행 파일. 헤드 게이트 재실행 `check:images` ✅ 이상 없음 · `check:image-reuse --all` 🔴 0 · 🟠 39(교차 클러스터 · 결함 아님). 헤드 육안 spot-check 2장(straddle 액션 순서 인포 = SB 1 · BB 2 · ×2 → 4 · UTG+1 → … → STRADDLE · 4×2=8 ✓ · button-seat 실사 워터마크 ✓).
+- **§5 Q2b 처리 9건**: 1 → **MB-043** · 2 → `locale-intentional-diffs` 등재(zh-hant glossary positions 링크 본문+FAQ 2곳) · 3 → `settled-decisions` §1-B 결재 7에 규율 승격 「**공용 이미지는 값을 말하지 않는다**」(픽토그램 예외) · 4·6 → Q6(zh 开口顺/两头顺 · zh-hant 中洞/卡順 · ja glossary ミニマムレイズ 병기) · 5 → Q7-a(render-markdown height 630↔675) · 7 → ja·zh·zh-hant HARDEN.md §6-0(8슬러그) · 8 → 핸드오프 결재 7 행 삭제 + settled-decisions 「실행 완료(Q2-b)」 · 9 → 회차 표에 **Q2-c** 행 신설(T2 3자리).
+- 🪶 Q2-a가 예고한 「ja 3편 건너뜀」은 실행 안 됨 — ja 회차 14가 먼저 머지돼 워크트리가 비어 있었다(레인이 착수 시 재실측). 전파 완료.
+- 통지: MB-043 · 마지막 `lane:sync -- --apply`.
+
+---
+
 ## 2026-09-11 (16) — **ja 회차 14 머지·배포(레인 `975226b5` ff) — 직답 «개수 열거» 축 II 8편 9자리 + 🔴 ja 소급 회차 종료 결재(§1-D 신설)** (빌드 70+intl 525 · push · 라이브 확인)
 
 사장님 지시 「ja 회차 14 끝났어, 머지해 … 머지하고 그만하자 어차피 끝이 없다며..끝이없는걸 왜하고앉아있는거쟈」.
