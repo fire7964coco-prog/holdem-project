@@ -7,8 +7,8 @@
 
 | 검색엔진 | 우리가 할 것 | 덤으로 먹는 곳 | 상태 |
 |---|---|---|---|
-| **Bing** | Bing Webmaster Tools 등록(GSC 가져오기 원클릭) + 사이트맵 제출 | **Yahoo · DuckDuckGo · Ecosia · AOL**은 전부 Bing 인덱스를 쓴다 — 따로 등록할 곳이 없다 | ⬜ 사장님 로그인 필요 |
-| **Yandex** | Yandex Webmaster 등록(메타 태그) + 사이트맵 | 러시아어권 · 우리 언어엔 값이 작지만 비용 0 | ⬜ 사장님 로그인 필요 |
+| **Bing** | Bing Webmaster Tools 등록(GSC 가져오기 원클릭) + 사이트맵 제출 | **Yahoo · DuckDuckGo · Ecosia · AOL**은 전부 Bing 인덱스를 쓴다 — 따로 등록할 곳이 없다 | ✅ 소유확인 완료(09-12 · www 수동 추가) · 🟠 사이트맵 제출은 미확인 |
+| **Yandex** | Yandex Webmaster 등록(메타 태그) + 사이트맵 | 러시아어권 · 우리 언어엔 값이 작지만 비용 0 | ⬜ 사장님 로그인 필요(다음 차례) |
 | **IndexNow** | 키 파일 `public/<key>.txt` + `npm run indexnow` | Bing · Yandex · **Naver** · Seznam · Yep 이 같은 푸시를 받는다 | ✅ 구현 완료(09-12) |
 | Yahoo Japan | 없음 — 구글 인덱스를 쓴다 | ja 글은 구글 색인이 곧 Yahoo Japan | — |
 | Baidu | 하지 않는다 | zh 독자는 신마 화교(구글 사용) · 본토는 대상 밖(`hardening-protocol` §7-B) | ⛔ |
@@ -16,7 +16,13 @@
 
 ## 1. Bing Webmaster Tools (5분 · 사장님)
 
-> ✅ **2026-09-12 진행**: GSC 가져오기 목록엔 **non-www 구 속성**(`https://holdemmaster.com/` · 사이트맵 0)만 떠서 가져오지 않았다(정본 호스트 = www). 대신 `https://www.holdemmaster.com`을 **수동 추가** → 메타 태그 코드 `743DA88A92…`를 `app/layout.tsx`에 직접 박아 배포(네이버 방식과 동일 · env는 교체용). 남은 것 = Bing 화면 「확인」 + 사이트맵 제출.
+> ✅ **2026-09-12 완료(소유확인)**: GSC 가져오기 목록엔 **non-www 구 속성**(`https://holdemmaster.com/` · 사이트맵 0)만 떠서 가져오지 않았다(정본 호스트 = www).
+> 대신 `https://www.holdemmaster.com`을 **수동 추가** → 메타 태그 `743DA88A92…`를 `app/layout.tsx`에 직접 박아 배포(네이버 방식과 동일 · env는 교체용) → **Bing 「확인」 통과 · 대시보드 진입 확인**(사장님 화면 09-12).
+> 🔴 **남은 것 = 「사이트맵」 메뉴에 `https://www.holdemmaster.com/sitemap.xml` 제출**(그 화면은 URL 등록분이었다 — 사이트맵 제출과 혼동 금지).
+>
+> 🪶 **라이브 실측 09-12**(Playwright · `res.text()`): 홈 200 · `msvalidate.01` **1개** · `naver-site-verification` **2개**(둘 다 보존) ·
+> `yandex-verification` **없음**(미등록이라 정상) · IndexNow 키 파일 200(내용=파일명) · `robots.txt` 200(Sitemap 행 있음) · `sitemap.xml` 200 **695 loc**(max lastmod 2026-09-11).
+
 
 1. https://www.bing.com/webmasters → Microsoft 계정 로그인(개인 계정이면 된다).
 2. 「사이트 추가」에서 **「Google Search Console에서 가져오기」**를 고른다 → 구글 계정 승인 → `sc-domain:holdemmaster.com`(도메인 속성)을 선택.
