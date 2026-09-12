@@ -1,3 +1,16 @@
+## 2026-09-12 (19) — **Bing·Yandex 등록 완결(소유확인 + 사이트맵) · Daum/ZUM은 «하지 않는다» 결재 · 국내 포털 실측** (배포 `3f5fd0ef`)
+
+사장님 지시 ① 「직전 세션이 로그인 만료로 끊겼다 — 상위노출 가능하도록 등록작업하자」 ② 결재 「얀덱스와 빙까지만 하자」.
+- **라이브 실측 먼저**(Playwright · `res.text()`): 홈 200 · `msvalidate.01` 1 · `naver-site-verification` 2 · `yandex-verification` 0(당시 미등록) · IndexNow 키 파일 200 · `robots.txt` 200 · `sitemap.xml` 200 **695 loc**(max lastmod 09-11).
+- **Bing**: 소유확인(09-12 메타)에 이어 **사이트맵 제출 완료** — 알려진 사이트맵 1 · 오류 0 · 경고 0 · **발견 URL 695** · 상태 「성공」. 🪶 695가 우리 라이브 loc 수와 일치 = 제출이 먹혔다는 교차검증.
+- **Yandex**: 발급 화면이 **「Meta tag」가 아니라 「HTML file」**이었다 → env(`YANDEX_SITE_VERIFICATION`) 대신 `public/yandex_7cf430b9ee058a0d.html`을 화면 축어 그대로 만들어 배포(`3f5fd0ef`). 빌드 EXIT=0(70 blog + 525 intl + 69 static + 25 locale homes). 라이브 폴링 = 404 4회 → **5회째 200**(본문 `Verification: 7cf430b9ee058a0d` 일치) → 사장님 Verify → **Role = Owner**(File in root directory · 09/12/2026). 이어 Sitemap files 접수(화면 축어 「added to the processing queue … up to 1-2 weeks」). 🔴 **이 HTML 파일을 지우면 소유확인이 풀린다.**
+- **국내 포털 실측**(§12-B · 요약 금지): 떠도는 ZUM 주소 3개(`search/site/register`·`search/blog/register`·`search/site/process`)는 **전부 「요청하신 페이지를 찾을 수 없습니다」** 본문이었다 — 현재 「검색 서비스」 하위는 쇼핑·기타문의 둘뿐. Daum은 살아 있고 무료지만 **신청서가 개인정보를 요구**. → 사장님 결재로 **둘 다 하지 않는다**(정본 `settled-decisions` §1 · 재론 조건 명시).
+- **IndexNow 재푸시 안 함** — 695는 같은 날 14:36에 이미 접수됐다(하루 한 번 규율).
+- 문서: `docs/search-engine-registration.md` 전면 갱신(실측·결재·재론 조건) · `settled-decisions` §1 한 줄 승격 · `docs/update-calendar.md` **9/26경 후속 관측** 신설.
+- 🪶 교훈: 웹마스터 도구의 **발급 방식은 화면마다 다르다**(Bing=메타 / Yandex=HTML 파일). 문서에 「메타 태그」로 적어 두면 다음 세션이 없는 길을 찾는다 — **절차서는 «우리가 실제로 쓴 길»로 고쳐 둔다.**
+
+---
+
 ## 2026-09-12 (18) — **검색엔진 등록 인프라 — IndexNow 구현(키 파일 + `npm run indexnow`) · Bing/Yandex 소유확인 env · 절차 문서 `docs/search-engine-registration.md`** (배포 · 첫 푸시)
 
 사장님 문답 ① 「구글봇 크롤 690 / 색인 370 · 하루 10개 수동 요청은 스팸? 기업용 대량 API가 있다던데」 → 답: Google Indexing API는 JobPosting·BroadcastEvent 전용이라 블로그엔 못 쓴다 · 수동 요청은 쿼터일 뿐 스팸 판정 없음 · 크롤 690/색인 370의 갭은 «제출»이 아니라 «판정» 문제 · GSC 색인 요청은 사장님이 손으로(08-25 판정 유효). 사유별 실측을 위해 `gsc-index-audit --all`(URL Inspection · 읽기 전용) 백그라운드 실행. ② 「야후·얀덱스·빙 등 할 수 있는 건 하고 싶어」 → 이 회차.
