@@ -44,6 +44,7 @@
   npm run indexnow -- --urls /blog/x,/en/blog/y
   npm run indexnow -- --all --dry           # 목록만
   ```
+- **첫 푸시 이력**: 2026-09-12 14:36 ✅ 200 접수(695 URL). 배포 직후 첫 시도는 403 `SiteVerificationNotCompleted`였다 — 새 키는 라이브 뒤 몇 분간 IndexNow 쪽 소유확인이 늦는다. 재시도는 «첫 접수에서 멈추는» 루프로.
 - 응답 200/202 = **접수**. 🔴 접수 ≠ 색인. 크롤 큐에 넣을 뿐이고, 색인 판정은 각 엔진의 몫이다.
 - 🔴 같은 URL 을 하루에 여러 번 보내지 마라(429 · 신뢰도 하락). 루틴은 **배포마다 `--since <오늘>` 한 번**.
 - 프로토콜 §6(헤드 머지 절차)에 «push 뒤 `npm run indexnow -- --since <오늘>`» 한 줄이 들어간다(2026-09-12).

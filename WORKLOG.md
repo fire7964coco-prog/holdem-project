@@ -4,7 +4,7 @@
 - **IndexNow**: `public/7966fb5cebb48fca1febb6d9af6ae3d8.txt` + `scripts/indexnow.mjs`(`--all`·`--since`·`--urls`·`--dry` · 사이트맵 695 URL · api.indexnow.org 한 요청) + `npm run indexnow`. Bing·Yandex·Naver·Seznam·Yep 공유. 프로토콜 §6-2에 «push 뒤 `--since <오늘>`» 한 줄.
 - **소유확인**: `app/layout.tsx` `metadata.verification`에 `YANDEX_SITE_VERIFICATION` · `BING_SITE_VERIFICATION`(msvalidate.01) env 조건부 렌더 — 사장님이 웹마스터 도구에서 코드를 받아 Vercel env에 넣으면 코드 수정 없이 켜진다. Bing은 GSC 가져오기면 메타 불필요.
 - **판정**: Yahoo·DuckDuckGo·Ecosia = Bing 인덱스(별도 등록 없음) · Yahoo Japan = 구글 인덱스 · Baidu 안 함(본토 대상 밖) · Google Indexing API 금지.
-- CLAUDE.md §19 라우팅 1행. 첫 푸시 결과는 아래 (19).
+- CLAUDE.md §19 라우팅 1행. **첫 푸시**: 배포 뒤 키 파일 200(14:30) → 첫 시도 403 `SiteVerificationNotCompleted`(IndexNow 쪽 소유확인 지연) → 5분 뒤 재시도 **✅ 202 접수(14:36 · 695 URL)**. 🪶 새 키는 라이브 직후 몇 분간 403이 정상 — 재시도는 «첫 접수에서 멈추는» 루프로(하루 한 번 규율).
 
 ---
 
