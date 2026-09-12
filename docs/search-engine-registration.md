@@ -16,6 +16,8 @@
 
 ## 1. Bing Webmaster Tools (5분 · 사장님)
 
+> ✅ **2026-09-12 진행**: GSC 가져오기 목록엔 **non-www 구 속성**(`https://holdemmaster.com/` · 사이트맵 0)만 떠서 가져오지 않았다(정본 호스트 = www). 대신 `https://www.holdemmaster.com`을 **수동 추가** → 메타 태그 코드 `743DA88A92…`를 `app/layout.tsx`에 직접 박아 배포(네이버 방식과 동일 · env는 교체용). 남은 것 = Bing 화면 「확인」 + 사이트맵 제출.
+
 1. https://www.bing.com/webmasters → Microsoft 계정 로그인(개인 계정이면 된다).
 2. 「사이트 추가」에서 **「Google Search Console에서 가져오기」**를 고른다 → 구글 계정 승인 → `sc-domain:holdemmaster.com`(도메인 속성)을 선택.
    → 소유확인·사이트맵(`https://www.holdemmaster.com/sitemap.xml`)이 **같이 넘어온다**. 메타 태그 불필요.
