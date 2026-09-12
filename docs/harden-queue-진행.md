@@ -17,7 +17,7 @@
 | **Q2-b** | **결재 7 — 이미지 10장 제작 → EN 교체 → 8로케일 전파** | **브리프가 본체**(`queue-Q2-이미지.md` §4 슬롯 10 · §6 실행 순서 · §7 하지 말 것) | **Opus 전 구간 · 1세션** | ✅ | (아래 §1-Q2-b) | 렌즈 4종+2차 교열 = 지적 51(중복 5 제거 후 **46**) · 반영 33 · 기각 5 · 이관 4 · 기록만 4 | 09-11 |
 | **Q2-c** | **결재 7 잔여 — T2 3자리(이미지↔캡션 무관)** | 브리프 `queue-Q2-이미지.md` **§8**: `limping:64`(리밍의 비용 인포 or 삭제) · `limping:116`(아이솔레이트 레이즈 인포 or 삭제) · `drawing-odds:58`(셋마이닝 11.8% · 7.5:1 인포) — 8로케일 동형(+3장 · +24행). 규격·팔레트·«값을 말하지 않는다» 규율은 Q2-b 그대로 | **Opus 전 구간 · 1세션** | ⏳ | | | |
 | ~~Q3~~ | **EN 56편 `updated` 전수 대조** — ✅ **종결(신설 시점 실측 · 회차 불요)** | 실측 2026-09-11: EN 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · `2c9012c7` · «올리지 않는다» 판정 이미 완료) · 창 밖 5 = `8d2aba44` CSS 수리 2 · `a069430a` tldr 별표 제거 2 · `index.ts`(포스트 아님) → **전부 §1-C «기계적 변경은 안 올린다»에 해당**. `en-first-queue` §3의 「이미 잡힌 6건」은 `fd8cafc0`로 닫혀 있다(현재 파일에 남은 어긋남 0). 재현 = 셸 한 줄(파일별 `git log -1 --date=short` ↔ `updated` 비교) — Q7에서 `check:stamp --locale=en` 게이트로 박는다. **§3 잔여(경쟁 페이지 언급 3곳 · EN↔pt FAQ 개수 · game-order 「who bets first」)는 Q4-a로 이관** | — | ✅ | (실측만 · 커밋 없음) | — | 09-11 |
-| **Q4-a** | **EN-먼저 묶음 I — 미결·동형** | `en-first-queue` §2-D **J#8**(ept-barcelona €330 ↔ €825 · 공식 일정 축어 확보 후) · §2-E **X-1**(blind-meaning 「Nobody gets to skip their turn」 · WSOP Live Action §155~158 · Tournament §85) · 핸드오프 「대회·사실 판정」 절의 **EN 동형 30건**(M-089 §4 잔여 = bad-beat #12 ~62% · betting-actions 103조 두 요소 · flush-vs-straight SF 5장/7장 라벨 · 목록 `docs/reply-to-review-2026-09-04-m089.md` §2·§4) · `tiebreak-rules` L232 「Rule 85」 룰북 한정어 · **Q3 이관분**(경쟁 페이지 언급 3곳 · EN↔pt FAQ 개수 bubble·short-stack·tournament·icm · game-order title 「who bets first」) · 🆕 **ja 회차 13 §5-K 이관**(`harden-ja-진행` §5-K · 09-11 머지): **K1** `when-to-fold` 셀프체크 ⑤ 「(= a bluff-catcher)」 EN L141/L153 + 8로케일(D유형) · **K3** = J#8과 같은 자리(ept €330 H2·비교표 — 블록만 €825로 갈려 있다) · **K4** `tiebreak-rules`↔`kicker` «キッカーなし 족 개수» 5 vs 4 — 헤드 실측(09-11): **EN도 같다**(kicker FAQ L184 「Straights, flushes, full houses, and straight flushes」 = 4 · tiebreak 표 L84~89 = 로열 행 별도 5) → 로열 = 스트레이트플러시라 둘 다 참 · **결함 아님** · 통일은 선택(kicker FAQ에 「(royal included)」 한 마디 · 8로케일) · **K2**(bad-beat 63%) = 🔴 **결재 15 재론 금지**(≈63% 유지 · 65.0%/1.86으로 되돌리지 마라). 🔴 헤드 실측(09-11): 결재 15의 **행 문구 «nine outs plus live side cards»가 EN L92·ja L105에 아직 없다**(「9-out flush draw fills on the river」 그대로 · `en-first-queue` §1 ③과 같은 자리) → **결재 15 이행 = EN L92 행 문구 + 8로케일** · 🆕 **ja 회차 14 §5-L 이관**: **L1** `holdem-straddle` EN L88·L169·히어로 캡션 L69 「buys the last action」 프레이밍 — 버튼은 원래 포스트플롭 마지막이라 버튼 스트라들이 사는 건 **프리플랍** 마지막 액션뿐(EN L188만 정확) → 한 줄 한정 + 8로케일 · **L2** `holdem-outs` 표 15행(플러시+OESD) 도출 「9 + 8 − 2」 — EN 같은 칸이 산문이면 동형 + 7로케일(ja는 이미 고침) | **A Opus(1차 출처 · WSOP 룰북 `docs/sources/`) → B Fable(EN 재서술 + 8로케일 전파 문장) → C Opus(렌즈 4종 · 게이트) · 1세션**(구간 경계에서 `/model`) | ⏳ | | | |
+| **Q4-a** | **EN-먼저 묶음 I — 미결·동형** | `en-first-queue` §2-D **J#8**(ept-barcelona €330 ↔ €825 · 공식 일정 축어 확보 후) · §2-E **X-1**(blind-meaning 「Nobody gets to skip their turn」 · WSOP Live Action §155~158 · Tournament §85) · 핸드오프 「대회·사실 판정」 절의 **EN 동형 30건**(M-089 §4 잔여 = bad-beat #12 ~62% · betting-actions 103조 두 요소 · flush-vs-straight SF 5장/7장 라벨 · 목록 `docs/reply-to-review-2026-09-04-m089.md` §2·§4) · `tiebreak-rules` L232 「Rule 85」 룰북 한정어 · **Q3 이관분**(경쟁 페이지 언급 3곳 · EN↔pt FAQ 개수 bubble·short-stack·tournament·icm · game-order title 「who bets first」) · 🆕 **ja 회차 13 §5-K 이관**(`harden-ja-진행` §5-K · 09-11 머지): **K1** `when-to-fold` 셀프체크 ⑤ 「(= a bluff-catcher)」 EN L141/L153 + 8로케일(D유형) · **K3** = J#8과 같은 자리(ept €330 H2·비교표 — 블록만 €825로 갈려 있다) · **K4** `tiebreak-rules`↔`kicker` «キッカーなし 족 개수» 5 vs 4 — 헤드 실측(09-11): **EN도 같다**(kicker FAQ L184 「Straights, flushes, full houses, and straight flushes」 = 4 · tiebreak 표 L84~89 = 로열 행 별도 5) → 로열 = 스트레이트플러시라 둘 다 참 · **결함 아님** · 통일은 선택(kicker FAQ에 「(royal included)」 한 마디 · 8로케일) · **K2**(bad-beat 63%) = 🔴 **결재 15 재론 금지**(≈63% 유지 · 65.0%/1.86으로 되돌리지 마라). 🔴 헤드 실측(09-11): 결재 15의 **행 문구 «nine outs plus live side cards»가 EN L92·ja L105에 아직 없다**(「9-out flush draw fills on the river」 그대로 · `en-first-queue` §1 ③과 같은 자리) → **결재 15 이행 = EN L92 행 문구 + 8로케일** · 🆕 **ja 회차 14 §5-L 이관**: **L1** `holdem-straddle` EN L88·L169·히어로 캡션 L69 「buys the last action」 프레이밍 — 버튼은 원래 포스트플롭 마지막이라 버튼 스트라들이 사는 건 **프리플랍** 마지막 액션뿐(EN L188만 정확) → 한 줄 한정 + 8로케일 · **L2** `holdem-outs` 표 15행(플러시+OESD) 도출 「9 + 8 − 2」 — EN 같은 칸이 산문이면 동형 + 7로케일(ja는 이미 고침) | **Opus 전 구간 · 1세션** — 🔴 재료 실측 후 재조정(§5-A-3): EN 쪽이 «짧은 한정어 10자리»로 줄어 새 문장 집필 구간이 없었다 | ✅ | (아래 §1-Q4-a) | 렌즈 4종+2차 교열 = 지적 **59** · 반영 **43** · 기각 **6** · 이관 **7** · 기록만 **3** | 09-12 |
 | **Q4-b** | **검수장 MA-118 요청 2 — es 대회 2편** | `como-entrar-al-wsop`·`wsop-2026-tournament-guide`(es) WRONG 15·RISKY 10·STALE 2 + **LISR 138조 웹 실측**(멕시코 소득세법 · 1차 출처) · 원장 = `홀덤검수-es/ledger/` · EN 동형이면 EN-먼저 | **Opus 전 구간 · 1세션**(번역 QA·법령 실측 = Opus · 새 문장은 원장 처방 이식) | ⏳ | | | |
 | **Q5-a** | **EN-먼저 묶음 II — 세션 1 렌즈 38건 판정(전반)** | `en-first-queue` **§1 ①~㉑**(⑤ 3번 독립 재발견 = 우선) · 판정 뒤 EN 정정 → 8로케일 전파 · 기각은 사유와 함께 §1에서 지우기 요청 | **A Opus(전건 원문 판정) → B Fable(채택분 재서술) → C Opus · 1세션** | ⏳ | | | |
 | **Q5-b** | **EN-먼저 묶음 II — (후반)** | `en-first-queue` **§1 ㉒~㊸**(㉟ 우선 · ㊲는 검수장 판정 산물이라 재론 절차 = MB 초안) | 위와 동일 · 1세션 | ⏳ | | | |
@@ -165,10 +165,77 @@
 지금 캡션만 바꾸면 6줄 아래 표와 어긋난다.
 
 
+### §1-Q4-a. 회차 Q4-a 산출 — EN-먼저 묶음 I (미결 · 동형) (2026-09-12)
+
+> 브리프 = `docs/harden-brief/queue-Q4-a-EN먼저.md`(전건 재판정표 + 1차 출처 축어가 거기 있다 · 여기 복사하지 않는다)
+> 모델 = **전 구간 Opus**. 재료를 실측해 보니 EN 쪽이 «짧은 한정어 수정 10자리»로 줄고 나머지가 전부 판정·번역 QA라
+> 「문서에 적힌 분담을 작업 성격으로 다시 짜라」(`settled-decisions` §5-A-3)에 따라 Fable 구간을 두지 않았다.
+
+**🔴 이 회차의 첫 산출은 «재료가 낡아 있었다»는 실측이다**
+Q4-a의 뼈대였던 **M-089 §4 「EN 동형 30건」을 EN 현행 원문으로 전건 재판정** → **이미 닫힘 27 · 열림 2 · 기각 1**.
+Q3 이관분도 3건 중 **2건이 이미 닫혀 있었다**(pt FAQ 개수 드리프트 = `check:structure --only=faq --locale=pt` 핵심 결손 0 ·
+`en/holdem-game-order` seoTitle이 이미 「Who Bets First in Texas Hold'em?」 · `updated: 2026-09-11`).
+→ **규율 후보(§5 Q4-6)**: 「남은 것 N건」 형태의 미결 행은 **재료를 옮길 때가 아니라 회차 A 구간에서 다시 센다.**
+
+**고친 자리 (EN 11파일 + 9로케일 · 90파일 · +338/−328)**
+
+| # | 자리 | 무엇을 | 전파 |
+|---|---|---|---|
+| 1 | `holdem-positions` L29 | 「Two orbits later」 → 「Three hands later」(§13급 좌석 산수) | 6(pt 기보유) |
+| 2 | `holdem-bad-beat` 본문 | 「That's a player…」에 「Most of the time」 한정 | 6(pt 기보유) |
+| 3 | `holdem-bad-beat` 표 4열 | 🔴 **결재 15 이행** — 수치 ~63%(1.7:1) 불변 · 행 문구만 | 7(pt 포함) |
+| 4 | `holdem-blind-meaning` | 「Nobody gets to skip their turn.」 단정 해소(X-1) | 9 |
+| 5 | `holdem-when-to-fold` 셀프체크 도입문 | D유형 — 블록만 읽으면 「블러프캐처=폴드」 오독(ja §5-K 1) | 7 |
+| 6 | `holdem-straddle` 5자리 | 「buys last action postflop」 → 버튼은 원래 갖고 있다(ja §5-L 1) | 7 |
+| 7 | `holdem-outs` 표 | 15아웃 행에 도출 「9 + 8 − 2」(ja §5-L 2) **+ 표 순서 15→12→9→8** | 7 |
+| 8 | `holdem-tiebreak-rules` | 「Rule 85」 → 「Tournament Rule 85」 | 4(de·id·pt 기보유) |
+| 9 | `ept-barcelona-2026-guide` | **J#8 종결** — €330 행 신설 + 예산표 하한·총액 재계산 + 최저가 주장 4자리 정합 | 7 |
+| 10 | `rake`·`tournament`·`3bet`·`straddle`·`ept` | 경쟁 페이지 **배타 주장** 제거(완화형 「most guides」류는 유지) | 보유 로케일만 |
+
+**J#8 = 1차 출처로 종결.** 공식 일정(`pokerstarslive.com/ept/barcelona/schedule/`) DOM을 레포 Playwright로 렌더 후
+`document.body.innerText` 직독 → **이벤트 행 131건 전수 파싱**(2026-09-12). **#76 · Aug 29 · 12:00 · 「€330 Deep Stack –
+Unlimited Re-Entry」 · 스택 50,000** 실재 확인 → 처방 ①(본문에 행) 채택 · 처방 ②(H2·비교표를 €825로) **기각**.
+덤으로 일정표 7행 전건 대조 = **전부 일치**(이 글 미결이던 「공식 일정 전수 대조」가 닫혔다).
+🔴 **ja가 「미검증 신호」로 남긴 「EPT Mystery Bounty €1,650 Aug 27–28」은 오독이었다** — 공식에는 Mystery Bounty가 **둘**이다:
+`EPT Mystery Bounty (€1,000 Mystery Bounty)` **€3,250**(#48 · Aug 25–27 · **우리 표**)와 별개의 `Mystery Bounty (€500)` **€1,650**(#64 · Aug 27–28).
+**우리 표가 맞다 — 되돌리지 마라.** §12-B 「요약을 근거로 쓰지 마라」의 실물(요약이 두 이벤트를 합쳤다).
+
+**§13 손검산 — 내 자신의 문안을 하나 뒤집었다**
+결재 15 이행 문구를 처음에 「nine flush outs + **live side cards that can pair**」로 썼는데, **990조합 전수열거**로 반증했다:
+`QQ vs 5♦3♦ / J♦7♦2♣` = **61.62%**(플러시 34.95% + 스트레이트 1.82% + 투페어 0.91% + 트립스 0.61%) — **페어의 기여가 0**이다.
+사이드카드가 진짜 살아 있는 형태(`QQ vs A♦K♦`)는 오버페어가 **45.56%**로 63%와 전혀 다른 자리가 된다.
+→ 「plus backdoor two pair or straight」로 고쳤다. 🪶 **M-089 §2-B의 61.62 / 62.53 / 63.43을 소수점까지 독립 재현**했다(결재 15의 근거가 재확인됐다).
+
+**렌즈 4종 + 2차 교열** — 지적 **59** · 반영 **43** · 기각 **6** · 이관 **7** · 기록만 **3**
+독립 수렴 4건(딜러·수학 ↔ SEO ↔ 교열이 같은 자리를 잡았다): ① bad-beat 「pair」 문안(내 손검산과 동일 결론)
+② blind-meaning 단정형이 같은 글 FAQ 「Alternatively, you can wait…」와 충돌 ③ straddle 각주·**alt**가 옛 프레이밍 잔존
+④ 경쟁 배타 주장이 **이번 회차가 손댄 파일 안에** 사본으로 남음.
+🔴 **기각 6 중 하나는 렌즈가 틀린 자리다** — SEO 렌즈가 bad-beat를 「overcards」로 고치라 했는데, 오버카드가 살아 있으면
+오버페어는 45.6%다(위 전수열거). 딜러·수학 렌즈가 독립적으로 같은 반례(`QQ vs A♠K♠`)를 들어 **렌즈끼리 갈렸고 원문 계산이 갈랐다.**
+
+**🔴 2차 교열이 «반영이 만든 새 모순» 3종을 잡았다**(「수정이 결함 주입 공정이다」 재현):
+① **개수 주장** — 경쟁 문구를 지우면서 straddle을 「Here's how the **four** types compare」로 바꿨는데 **표는 5행**(Re-straddle 포함)이고,
+   de `rake`는 「**vier** Methoden」인데 de 표만 **5행**(Jackpot Drop)이다. → 둘 다 **개수를 빼는 쪽**으로 철회(7+1로케일).
+② 🔴 **새 최상급이 1차 출처에 반증됐다** — €330 충돌을 풀려고 「€825 = 최저가 **복수일**」을 만들었는데,
+   공식 일정 파싱본(149행)에 **€550 복수일 이벤트가 셋**(#12 In the Money at 180,000 Aug 17–18 · #63 Women's Aug 27–28 · #72 Aug 28–29) 있다.
+   → 최상급을 걷어내고 「2일제 · 상금 실재 · 초심자 필드」라는 **검증 가능한 서술**로 교체(8로케일).
+   🪶 반면 **「€330 = 단독 이벤트 최저가」는 참**이다 — 그 아래는 새틀라이트(#2 €190 · #68 €175)와 €0 사교 행사(요가·퀴즈·카라오케)뿐이다.
+③ **EN만 고치고 5로케일이 갈렸다** — `ept`의 「경쟁사가 안 알려준다」가 de·es·id·ja·zh-hant에 그대로 남아 있었다(pt·zh는 원래 깨끗).
+
+**🔴 스탬프 4건이 거짓 주장이었다** — §3 「스탬프 정직성」으로 승격. 되돌린 뒤 `check:drift` 🔴가 **5 → 6**(정직한 ar 부채)으로,
+🟠 추적불가가 **7 → 9**로 돌아왔다. **숫자가 나빠 보이는 쪽이 참이다.**
+
+**게이트** — `audit:hard` 10로케일 전부 🔴 0 · `check:drift` 🔴 6(**전부 ar 기존 부채** · 이 회차가 만든 드리프트 **0** · 🟠 추적불가 9) ·
+`check:structure` 핵심 결손 0 · `check:meta` 0 · `check:cjk` 0 · `check:hangul` 0 · `check:seo-sync` 0 ·
+`check:answer-echo` 🔴 echo 0(ja·zh·zh-hant·ko) · 자체 기계 점검(백틱·`==`짝·표 열 수) 90/90파일 0건 · `npm run build` 성공(70 + 525).
+
+
 ## 2. 미결 (해결될 때까지 유지)
 
 - 🟠 **`lib/render-markdown.ts:200`이 모든 이미지에 `width="1200" height="630"`을 박는다 — 실제는 1200×675**(종횡비 예약이 7% 어긋나 CLS). 591장 **전체**에 걸린 기존 문제이고 어떤 게이트도 안 본다. → **Q7 게이트/정정 후보**(2차 교열 렌즈 발견 · 2026-09-11).
-- 🟠 **`check:drift` 🔴 6건(ar)은 이 회차 이전부터 있던 부채다** — Q2-b 착수 전 실측으로 동일 확인(all-in-rules · betting-actions · blind-meaning · game-order · showdown-rules · texas-holdem-rules-for-beginners). ar는 이 회차 8슬러그를 하나도 갖고 있지 않다. 이 회차가 만든 드리프트 **0**.
+- 🟠 **`check:drift` 🔴 6건(ar)은 회차들 이전부터 있던 부채다** — 2026-09-12 실측 = all-in-rules · betting-actions · **blind-meaning** · game-order · showdown-rules · texas-holdem-rules-for-beginners. **Q4-a가 만든 드리프트 0**(ar blind-meaning은 Q4-a가 X-1 한 문장을 이식했지만 **EN 09-11 델타 전체를 대조하지는 않았으므로** `masterUpdated`를 올리지 않았다 — §3 「스탬프 정직성」 참조).
+- 🟠 **`check:answer-echo` 🟠 length가 zh 33 · zh-hant 10 · es/en 다수** — Q4-a 착수 전부터 있던 부채다(예: zh `holdem-blind-meaning` 직답 152자 ↔ 규격 60~130). 🔴 echo는 전 로케일 **0**. → **Q7-b**(셈의 단위 · 개수 신호)와 한 판.
+- 🟠 **`check:structure` 🟠 꼬리 39편** — 꼬리 17로케일 몫. 핵심 8로케일은 **0편**이다.
 - 🟠 결재 5(EN 제목 보강 3편)는 **보류** — GSC 실측 먼저. 회차에 넣지 마라.
 
 ## 3. 되돌리지 마라
@@ -184,6 +251,22 @@
 - **로케일 용어는 파일마다 정본이 다르다**: zh `holdem-outs`=`开口顺` / `holdem-drawing-odds`=`两头顺` ·
   zh-hant `holdem-outs`=`中洞` / `holdem-drawing-odds`=`卡順` · **`4:1`은 zh, `4 比 1`은 zh-hant.** 코퍼스 전체가 아니라 **그 파일**을 보고 골라라.
 - es 세 번째 예외는 **`set-mining`**이다(`buscar trío` 아님 — 그건 항상 괄호 주석이다). 되돌리지 마라.
+
+- **Q4-a 판정 6건**(§1-Q4-a): `bad-beat` **~63% (1.7:1)** 수치는 결재 15로 고정 — **~62%로도 65.0%/1.86:1로도 되돌리지 마라** ·
+  그 행 문구를 **「overcards」로 바꾸지 마라**(오버카드가 살아 있으면 오버페어는 **45.6%**다 · 990조합 전수열거 · 63%를 만드는 건 백도어다) ·
+  EPT **Mystery Bounty €3,250 Aug 25–27**(공식 #48)을 **€1,650으로 내리지 마라**(€1,650은 별개 이벤트 #64 · 요약이 둘을 합친 오독이었다) ·
+  `straddle` **각주 「only … when it is posted on the button」**과 **「the button keeps last action all the way down」**은 일부러 그 문면이다 ·
+  zh·zh-hant `straddle` **「最后一句话 / 最後一句話」**은 그 파일의 기존 정본이다(직역투로 보고 바꾸지 마라) ·
+  「**most guides / almost every article**」류 **완화형은 남긴다** — 지운 것은 「no other page / no single competitor / competitors don't tell you」 같은 **검증 불가 배타 주장**뿐이다.
+- **`holdem-outs` 표 정렬은 15 → 12 → 9 → 8이다**(내림차순). 본문이 「the two combo draws **at the top**」이라 적기 때문이다 —
+  9·8을 위로 올리지 마라. 🪶 바로 아래 «Outs to Odds» 변환표는 **오름차순(2→15)이 정상**이다(다른 표다).
+
+- 🔴 **스탬프 정직성 — `masterUpdated`는 «전파한 날»이 아니라 «EN 어느 판을 전건 대조했나»다**(Q4-a 2차 교열 발견 · 2026-09-12).
+  Q4-a가 한 문장만 이식한 `ar`·`fr`의 `holdem-blind-meaning`에 `masterUpdated: 2026-09-12`를 찍었다가 **되돌렸다**(ar 09-09 · fr 2026-07-11 복원).
+  올렸다면 **그 두 파일은 `check:drift`를 영구히 ✅로 통과**한다 — EN이 07-11~09-11에 쌓은 델타를 아무도 다시 안 본다.
+  같은 이유로 `de`·`id` `ept-barcelona`에 **신설했던 `masterUpdated`를 지웠다**(원래 «추적불가»였던 것이 정직한 상태다 · 🟠 추적불가 7 → **9로 되돌림**).
+  🪶 **판정식**: «편집 전 `masterUpdated` ≥ 편집 전 EN `updated`»이면 그 사이 EN 델타가 내 편집뿐이므로 올려도 정직하다. Q4-a 79파일 중 **75가 정직 · 4가 거짓**이었다.
+  🔴 **`updated`는 올린다** — 내용이 실제로 바뀌었으므로(`settled-decisions` §1-C). **두 필드는 같이 움직이지 않는다.**
 
 ## 4. 거울쌍 갈림
 
@@ -292,6 +375,51 @@
   `settled-decisions` §1-B 결재 7은 「실행 완료(Q2-b)」 표기. Q2-a의 §5 항목 Q2-1·Q2-3·Q2-4·Q2-5도 전부 닫혔다.
 - 🟠 **Q2b-9 Q2-c는 아직 열려 있다**(T2 3자리 — `limping:64`·`limping:116`·`drawing-odds:58`). 이 회차는 손대지 않았다.
 
+### Q4-a (2026-09-12 · EN 11파일 + 9로케일 · **배포가 걸린 회차다**)
+
+- 🔴 **Q4-1 MB 초안**(EN 변경 = MA-123 요청 1 상시 통지):
+  > EN **11편** 변경 + 9로케일 전파. ① `holdem-positions` 도입 경험담 「Two orbits later」 → **「Three hands later」**(좌석 산수 — UTG는 버튼+3석이라 3핸드 뒤 버튼이다 · 2오빗이면 다시 UTG) ② `holdem-bad-beat` 표 행 문구 = **결재 15 이행**(🔴 수치 **~63% (1.7:1)은 불변** · 「9-out flush draw fills」 → 「nine flush outs, plus backdoor two pair or straight, get there by the river」) + 본문에 「Most of the time」 한정 ③ `holdem-blind-meaning` 「Nobody gets to skip their turn.」 → **either/or**(WSOP Live-Action **Rule 160** 축어 · 같은 글 FAQ 「Alternatively, you can wait…」와 정합) ④ `holdem-when-to-fold` 셀프체크 도입문(D유형) ⑤ `holdem-straddle` **5자리**(캡션·**alt**·각주·본문 불릿·FAQ) — 버튼 스트라들이 포스트플롭 포지션을 «사는» 게 아니라 «원래 갖고 있다» ⑥ `holdem-outs` 15아웃 도출 「9 + 8 − 2」 + **표 순서 15→12→9→8**(본문 「the two combo draws at the top」과 맞췄다 · de가 이미 옳던 배치) ⑦ `holdem-tiebreak-rules` 「Rule 85」 → 「**Tournament** Rule 85」 ⑧ `ept-barcelona-2026-guide` **€330 Deep Stack (#76 · Aug 29) 행 신설** + 예산표 하한 €825→€330 · 총액 **€7,280–€11,550**(ja는 항공권 제외판 €7,130) + 최저가 주장 4자리 정합 ⑨ `rake`·`tournament`·`3bet`·`straddle`·`ept`에서 **경쟁 페이지 배타 주장** 제거.
+  > 🔴 **되돌리지 마라**: bad-beat **~63%(1.7:1)**(결재 15) · EPT **Mystery Bounty €3,250 Aug 25–27**(공식 #48 — €1,650은 별개 이벤트 #64다) · straddle **L85 각주·「the button keeps last action」**은 일부러 그 문면을 쓴다 · 「most guides / almost every article」류 **완화형은 유지**가 판정이다.
+  > 앵커 갱신: EN·로케일에 **「€330 Deep Stack」·「#76」·「Tournament Rule 85」·「backdoor two pair」** 신규 등장. **「€825」 최저가 주장은 이제 전부 「multi-day」 한정**이다.
+
+- 🟠 **Q4-2 정본에서 지워 달라**(닫혔다):
+  ① `docs/en-first-queue.md` **§2-D J#8**(€330 = 공식 #76로 실재 확인 · 처방 ① 이행) · **§2-E X-1**(blind-meaning)
+  ② `docs/en-first-queue.md` **§3**의 「EN 경쟁 페이지 언급 3곳」 · 「EN↔pt FAQ 개수 드리프트(bubble·short-stack·tournament·icm)」 **= 실측 0** · 「en `holdem-game-order`가 「who bets first」를 못 받는다」 **= 낡았다**(seoTitle이 이미 그 축이고 `updated: 2026-09-11`)
+  ③ `session-handoff.md` 「대회·사실 판정」의 **「🔴 EN 동형 30건(M-089 §4)」 행** — 전건 재판정 결과 **이미 닫힘 27 · 이번 회차 처리 2 · 기각 1로 종결**. 같은 절의 **「EN `holdem-tiebreak-rules` L232 룰북 한정어」 행**도 종결
+  ④ `docs/harden-ja-진행.md` **§5-K 1**(when-to-fold) · **§5-L 1·2**(straddle · outs) — queue가 이행 완료(K3 = J#8과 함께 닫힘 · K4는 «결함 아님»으로 이미 종결)
+
+- 🔴 **Q4-3 ja·zh·zh-hant 파일을 만졌다**(§6-0 통지용 목록 · 착수 시 세 워크트리 전부 clean 실측):
+  `lib/posts-ja/` = `holdem-positions` · `holdem-bad-beat` · `holdem-blind-meaning` · `holdem-when-to-fold` · `holdem-straddle` · `holdem-outs` · `holdem-tiebreak-rules` · `holdem-tournament` · `holdem-3bet` · `ept-barcelona-2026-guide` (10편)
+  `lib/posts-zh/` = 위와 같은 10편 · `lib/posts-zh-hant/` = `holdem-3bet`·`holdem-tournament`을 뺀 **8편** + `holdem-rake`
+  🪶 ja `holdem-outs`는 **본문 무변경**(도출은 이미 있었다) — 표 행 순서만 옮겼고 `masterUpdated`만 올렸다.
+
+- 🟠 **Q4-4 `settled-decisions` 표기 요청**: **결재 15 = 「실행 완료(Q4-a)」**(≈63% 유지는 재론 금지로 그대로 두고 «행 문구» 부분만 이행 표시).
+
+- 🟠 **Q4-5 `locale-intentional-diffs` 등재 요청 없음** — 이번 회차가 만든 «일부러 다른» 자리는 0이다.
+  🪶 단 **실측으로 드러난 «잉여» 1건**: `pt/holdem-tournament` FAQ가 **10문 ↔ EN 9문**이다(결손이 아니라 하나 더 갖고 있어 `check:structure`가 원리상 못 본다). 의도인지 판정해 등재하거나 지워 달라.
+
+- 🟠 **Q4-6 프로토콜 한 줄 삽입 요청**(두 레인이 같이 읽는 정본이라 레인이 직접 안 고친다):
+  `docs/hardening-protocol.md` §3 A 준비에 — **「「남은 것 N건」 형태의 미결 행은 재료를 옮길 때가 아니라 그 회차 A 구간에서 다시 센다. 회차 표에 적힌 재료 수는 «가설»이다.」**
+  근거 = 이번 회차 실측(M-089 §4 30건 중 **27건이 이미 닫혀 있었다** · 그 행이 낡은 채 여러 회차를 넘어왔다). 프로토콜 ③-0 「브리프의 전제도 실측하라」의 **재료 층 버전**이다.
+  ② 같은 §5-⑦(스탬프)에 — **「`masterUpdated`는 «EN 어느 판을 전건 대조했나»다. 한 문장만 이식했으면 올리지 마라 — 올리는 순간 그 파일은 `check:drift`를 영구히 ✅로 통과한다. 판정식 = «편집 전 masterUpdated ≥ 편집 전 EN updated»일 때만 올린다. `updated`는 내용이 바뀌었으면 올린다(두 필드는 같이 움직이지 않는다).」**
+  근거 = Q4-a 79파일 실측(**정직 75 · 거짓 4**) · 2차 교열 발견 · 상세는 §3 「스탬프 정직성」.
+
+- 🟠 **Q4-7 EN-먼저 신규 등재 2건**(`docs/en-first-queue.md` §1):
+  ① 🔴 **`holdem-tiebreak-rules` 「The only suit order in the tournament rulebook belongs to stud and razz」는 틀렸다** — 같은 룰북 **용어집 `DEALER BUTTON`** 축어: *"At the start of a new game each Participant will receive a card; **the highest card by rank and suit** to determine the initial position of the Dealer Button."* 스터드·라즈가 아닌 자리에서 무늬 서열을 쓴다. 같은 문단이 바로 앞에서 그 드로를 설명하고 있어 **자기모순**이기도 하다. 이번 회차 범위 밖(①원본 유래)이라 손대지 않았다 · 8로케일 동형.
+  ② 🟠 `holdem-when-to-fold` — 「bluff-catcher」가 본문 3회뿐이고 **H2·FAQ·tags 어디에도 없다**. 같은 글 L153에 **1.5x 오버벳 37.5%** 계산이 이미 있어 FAQ 1문 흡수 비용이 0에 가깝다(저볼륨 롱테일 집합전략).
+
+- 🟠 **Q4-8 Q7 게이트 후보 2건**:
+  ① **「표의 정렬 방향이 본문 서술과 어긋나는가」** — `holdem-outs`가 「the two combo draws **at the top**」이라 적고 표는 15→9→8→**12**였다(de만 옳았다). 8로케일이 같은 자리에서 갈렸는데 **어떤 게이트도 안 봤다.**
+  ② **「같은 글 안 최상급·최저가 주장이 둘 이상인가」** — EPT에 €330 행을 넣자 「cheapest」 주장이 표·팁·FAQ·예산표 **4자리**에서 갈렸다. 값이 든 최상급은 기계로 셀 수 있다.
+
+- 🪶 **Q4-9 이번 회차가 «덤으로» 닫은 것 3건**(정본에서 지워도 된다): EPT 일정표 **7행 공식 전수 대조**(이 글 검수 미결) ·
+  ja가 남긴 「Mystery Bounty €1,650」 미검증 신호(= 오독으로 종결) · `de`·`id` `ept-barcelona`의 **`masterUpdated` 부재**(신설해 «추적불가»를 9 → 7로 줄였다).
+
+- 🪶 **Q4-10 기각 기록**(다음 회차가 다시 제안하지 않게):
+  ① bad-beat를 「overcards」로 — **기각**(오버카드가 살아 있으면 오버페어는 45.6%다 · 전수열거) ② `ept` 「Budget Scenario: PokerStars Cup (€825)」 제목 개명 — **기각**(그 절은 «여행 플랜» 셋 중 최저가이고 €330은 하루짜리 단일 이벤트다) ③ zh·zh-hant straddle 「最后一句话/最後一句話」 — **기각**(그 파일의 기존 정본이다 · 5회·1회 선례) ④ `zh-hant` blind-meaning 편집을 직답 → 본문으로 이동 — **기각**(단정이 있던 자리가 직답이다) ⑤ 「most guides / almost every article」류 완화형 제거 — **기각**(차별점 서술 · E-E-A-T 목소리) ⑥ EPT 「PokerStars Cup」 → 공식명 「PokerStars **Open** Cup」 개명 — **범위 밖으로 보류**(공식 일정 DOM에서 확인은 했다 · EN 4자리 + 8로케일).
+
 ## 6. 자산 축적 체크 (매 회차 마감 3종)
 
 ① 키워드뱅크 — 해당 회차만 ② 편차 판정 → §5 ③ 판정 정본 승격 → §5
+
+**Q4-a**: ① 키워드뱅크 — **해당 없음**(정합·사실 정정 회차 · 키워드 축을 안 건드렸다) ② 편차 판정 → §5 **Q4-5**(pt tournament FAQ 잉여 1건) ③ 판정 정본 승격 → §5 **Q4-4**(결재 15 이행 표기) · **Q4-6**(프로토콜 §3 한 줄) · **Q4-7**(EN-먼저 2건)

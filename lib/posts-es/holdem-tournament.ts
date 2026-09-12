@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "En un torneo de póker pagas un buy-in fijo por fichas; las ciegas suben con el reloj hasta que un jugador tiene todas las fichas. El 10-15% de arriba cobra. Formatos: freezeout, PKO, satélite y deepstack — entras por buy-in directo, satélite o preinscripción online.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-12",
+  masterUpdated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏆",
@@ -209,7 +209,7 @@ Un solo post no puede enseñar toda la estrategia de torneo — para eso están 
 
 ## Qué pasa en el Día 1 — hora a hora
 
-Esto es lo que ninguna otra guía te cuenta. Aquí tienes una cronología realista de Día 1 para un freezeout en vivo de $300 con inicio a las 12pm:
+Esta es la parte que la mayoría de los novatos solo aprende a las malas. Aquí tienes una cronología realista de Día 1 para un freezeout en vivo de $300 con inicio a las 12pm:
 
 <div style="background:rgba(255,248,210,0.06);border:1px solid rgba(255,240,180,0.25);border-radius:12px;padding:20px 24px;margin:20px 0">
 <div style="font-size:13px;font-weight:700;color:hsl(var(--primary));margin-bottom:14px">Cronología de Día 1 — Freezeout de $300, 10,000 fichas iniciales</div>

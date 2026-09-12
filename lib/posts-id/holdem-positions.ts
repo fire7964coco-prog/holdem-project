@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Posisi poker adalah nama kursi yang diukur dari tombol dealer — UTG, lojack, hijack, cutoff, button, dan blind — dan semuanya bergerak satu kursi searah jarum jam setiap tangan. Preflop, UTG aksi lebih dulu dan big blind terakhir; postflop, small blind aksi lebih dulu dan button terakhir. Nomor kursi fisik tak pernah berpindah; posisi berpindah.",
   category: "strategy",
   date: "2026-06-13",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-12",
+  masterUpdated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "🎯",
@@ -27,7 +27,7 @@ export const POST: Post = {
   content: `
 Cash game live pertama saya, saya duduk di kursi yang belakangan saya tahu bernama UTG. Saya melihat J♥ J♠ dan raise. Hijack call. Cutoff call. Button call. Big blind 3-bet. Saya benar-benar tak tahu harus apa — saya call dan chip saya terkuras di tiga street.
 
-Dua orbit kemudian saya di button dengan J♥ J♠ yang sama. Saya raise. Semua orang fold. Saya menang $14 tanpa pernah melihat flop.
+Tiga hand kemudian saya di button dengan J♥ J♠ yang sama. Saya raise. Semua orang fold. Saya menang $14 tanpa pernah melihat flop.
 
 Tangan yang sama. Hasil yang sepenuhnya berbeda. Satu-satunya yang berubah hanyalah kursi saya — dan malam itu saya sadar saya sebenarnya tak tahu kursi-kursi itu *disebut* apa, apalagi apa artinya. Jika Anda masih belajar bagaimana satu tangan penuh mengalir dari deal sampai showdown, mulailah dari [panduan aturan Texas Hold'em](/id/blog/texas-holdem-rules-for-beginners); artikel ini adalah peta kursi yang diasumsikan sudah Anda ketahui oleh panduan itu.
 

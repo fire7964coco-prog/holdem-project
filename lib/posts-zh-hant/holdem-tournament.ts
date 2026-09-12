@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "德州撲克錦標賽裡，你付一筆固定買入換籌碼，盲注照計時器上升，直到一個人贏走全部籌碼。通常前 10–15% 的人進錢圈。賽制有 freezeout、PKO、衛星賽、deepstack——報名方式有直接買入、衛星賽晉級、或線上預先報名。台灣則多在立案的撲克協會打合法錦標賽。",
   category: "tournament",
   date: "2026-07-22",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-12",
+  masterUpdated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "14 分鐘",
   emoji: "🏆",
@@ -221,7 +221,7 @@ deepstack 讓你的起始籌碼相對盲注明顯高於同系列的標準賽事�
 > **快速解答**
 > 第一次來最常出錯的不是打法，而是時間：報名通常在開賽前一個多小時開放、排隊可能很長，而晚報名關閉後就不能再進場。所以照下面的時間軸，抓開賽前至少半小時到場當底線，並先問清楚晚報名幾點截止。
 
-這是別的指南不會告訴你的。以一場中午 12 點開賽的 $300 現場 freezeout 為例，一個實際的 Day 1 時間軸：
+這是多數新手只能靠吃虧學到的部分。以一場中午 12 點開賽的 $300 現場 freezeout 為例，一個實際的 Day 1 時間軸：
 
 <div style="background:rgba(255,248,210,0.06);border:1px solid rgba(255,240,180,0.25);border-radius:12px;padding:20px 24px;margin:20px 0">
 <div style="font-size:13px;font-weight:700;color:hsl(var(--primary));margin-bottom:14px">Day 1 時間軸——$300 freezeout，10,000 起始籌碼</div>

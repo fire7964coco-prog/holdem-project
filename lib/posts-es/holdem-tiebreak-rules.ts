@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Los empates se rompen en un orden fijo: primero el tipo de mano, luego las cartas que la forman y por último los kickers de mayor a menor. Misma pareja → gana el primer kicker más alto; cinco cartas idénticas → bote dividido. Los palos nunca deciden un empate.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-12",
+  masterUpdated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "⚖️",
@@ -230,7 +230,7 @@ A. Gana la escalera de color más alta, decidida por su carta más alta — una 
 
 **Q. ¿Los palos rompen alguna vez un empate en Texas Hold'em?**
 
-A. No — pero hay un sitio en una mesa de Hold'em donde sí se usan los palos, y no es el bote. En las mesas de cash, y en la mayoría de las reglas de la casa, cada jugador saca una carta para decidir dónde arranca el botón, y si dos cartas empatan en valor, el orden de palos lo resuelve. (Los torneos de la WSOP se saltan el sorteo: la ==regla 85== coloca el botón en el primer stack a la derecha del dealer y solo vuelve a sortear cuando quedan tres, dos y una mesa — sin palos de por medio.) En cualquier caso eso elige un *asiento*, nunca una mano. El único orden de palos del reglamento de torneos pertenece al stud y al razz. Si dos mejores manos de cinco coinciden valor por valor, el bote se divide sin importar los palos.
+A. No — pero hay un sitio en una mesa de Hold'em donde sí se usan los palos, y no es el bote. En las mesas de cash, y en la mayoría de las reglas de la casa, cada jugador saca una carta para decidir dónde arranca el botón, y si dos cartas empatan en valor, el orden de palos lo resuelve. (Los torneos de la WSOP se saltan el sorteo: la ==regla 85 del reglamento de torneos== coloca el botón en el primer stack a la derecha del dealer y solo vuelve a sortear cuando quedan tres, dos y una mesa — sin palos de por medio.) En cualquier caso eso elige un *asiento*, nunca una mano. El único orden de palos del reglamento de torneos pertenece al stud y al razz. Si dos mejores manos de cinco coinciden valor por valor, el bote se divide sin importar los palos.
 
 **Q. ¿Qué pasa si ambos jugadores tienen exactamente la misma mano?**
 

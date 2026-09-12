@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Rake is the small cut the cardroom takes from each pot to host the game — usually 2.5–10% up to a cap of a few dollars. Most rooms take nothing if everyone folds before the flop ('no flop, no drop'). It hits low-stakes and short-handed players hardest, and rakeback returns a slice of it to regulars.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-09-09",
+  updated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🏦",
@@ -45,7 +45,7 @@ In a cash game it's usually taken straight from the pot: a small percentage of t
 
 ![A dealer sweeping a few chips from the center of the pot into the table's rake slot before pushing the rest to the winner](/images/holdem-rake-drop.webp "Pot rake: a small percentage skimmed from the pot and dropped before the winner is paid")
 
-There isn't just one kind of rake. How the house collects its money depends on the stakes and the room, and the differences matter — here's the comparison no single competitor page lays out:
+There isn't just one kind of rake. How the house collects its money depends on the stakes and the room, and the differences matter — four methods, and the one your room uses decides how much you actually pay:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "抽水就是牌房从每个底池里抽走的一小块钱，用来撑起这场牌局——通常是 2.5–10%，封顶几美元。大多数牌房在翻牌前所有人都弃牌时不抽（「no flop, no drop」）。它对低级别和短台牌手伤害最大，而 rakeback 会把其中一部分还给常客。",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-12",
+  masterUpdated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "11 分钟",
   emoji: "🏦",
@@ -54,7 +54,7 @@ No flop, no drop | 翻前全弃通常不抽水
 
 ![荷官在把剩下的筹码推给赢家之前，先从底池中间刮几个筹码进桌上的抽水口子](/images/holdem-rake-drop.webp "底池抽水：从底池里刮出一小部分百分比，在赢家拿钱之前投进口子里")
 
-抽水不止一种收法。牌房怎么收钱，取决于级别和这间房，而这些差别很关键——下面这张对照表是任何一个竞品页面都没摊开讲的：
+抽水不止一种收法。牌房怎么收钱，取决于级别和这间房，而这些差别很关键——一共四种收法，你常去的牌房用哪一种，决定你实际付多少：
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

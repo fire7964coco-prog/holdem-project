@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Rake adalah potongan kecil yang diambil cardroom dari setiap pot untuk menyelenggarakan permainan — biasanya 2,5–10% hingga cap beberapa dolar. Sebagian besar room tidak mengambil apa pun jika semua fold sebelum flop ('no flop, no drop'). Ia paling memukul pemain stake rendah dan short-handed, dan rakeback mengembalikan sebagian kepada regular.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-12",
+  masterUpdated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "11 mnt",
   emoji: "🏦",
@@ -46,7 +46,7 @@ Dalam cash game biasanya diambil langsung dari pot: persentase kecil dari uang d
 
 ![Seorang dealer menyapu beberapa chip dari tengah pot ke slot rake meja sebelum mendorong sisanya ke pemenang](/images/holdem-rake-drop.webp "Pot rake: persentase kecil disaring dari pot dan dijatuhkan sebelum pemenang dibayar")
 
-Rake bukan hanya satu jenis. Bagaimana house mengumpulkan uangnya tergantung pada stake dan room, dan perbedaannya penting — inilah perbandingan yang tak satu halaman kompetitor pun paparkan:
+Rake bukan hanya satu jenis. Bagaimana house mengumpulkan uangnya tergantung pada stake dan room, dan perbedaannya penting — ada empat metode, dan yang dipakai room Anda menentukan berapa yang benar-benar Anda bayar:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

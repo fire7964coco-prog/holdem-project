@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Blinds are forced bets posted before cards are dealt. The small blind sits left of the dealer button and the big blind to their left; the big blind — usually double the small blind — is the table's betting unit.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-09-11",
+  updated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "💰",
@@ -77,7 +77,7 @@ Understand the big blind and the game's number-talk — raise sizes, stack depth
 
 ## Small Blind and Big Blind Rules: Who Posts Them, and When
 
-Both blinds are posted **before the deal**, and the dealer button moves one seat clockwise after every hand — so the blind seats rotate with it and ==everyone pays both blinds once per orbit==. Nobody gets to skip their turn.
+Both blinds are posted **before the deal**, and the dealer button moves one seat clockwise after every hand — so the blind seats rotate with it and ==everyone pays both blinds once per orbit==. Nobody gets to skip their turn by sitting out — step away and you either post the blinds you missed or wait for the big blind to reach you again.
 
 | | Small Blind | Big Blind |
 |------|-------------|-------------|

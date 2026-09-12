@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un straddle es una apuesta ciega voluntaria — normalmente el doble de la ciega grande (2× BB) — que un jugador pone antes de repartir las cartas, casi siempre desde UTG; en España se le llama 'matar la ciega'. Le compra al que lo pone la última acción y la opción de subir en preflop, doblando la apuesta de la mano. Para casi todo el mundo es una jugada -EV, y casi siempre queda restringido a los cash games según las reglas de la casa (prácticamente nunca en torneos).",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-12",
+  masterUpdated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "💰",
@@ -67,9 +67,9 @@ Esa "última acción preflop" es lo que está pagando el que pone el straddle. P
 
 ## Tipos de straddle (UTG, Mississippi, botón y sleeper)
 
-![Un straddle puesto junto al botón del repartidor, mostrando un button o Mississippi straddle que compra la última posición durante la mano](/images/holdem-straddle-button.webp "Un button (Mississippi) straddle se pone desde el botón — el único straddle que compra la última acción también en postflop")
+![Un straddle puesto junto al botón del repartidor, mostrando un button o Mississippi straddle puesto desde el asiento que ya actúa último tras el flop](/images/holdem-straddle-button.webp "Un button (Mississippi) straddle se pone desde el botón — el único straddle puesto desde el asiento que ya actúa último tras el flop")
 
-No todos los straddles son iguales — y las diferencias tienen que ver con **dónde empieza la acción y cuánto tiempo conservas la última posición.** Aquí tienes la comparación que ninguna otra página reúne en un solo sitio:
+No todos los straddles son iguales — y las diferencias tienen que ver con **dónde empieza la acción y cuánto tiempo conservas la última posición.** Así se comparan:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -83,10 +83,10 @@ No todos los straddles son iguales — y las diferencias tienen que ver con **d�
 
 </div>
 
-*Un Mississippi straddle solo compra la última acción en postflop cuando se pone ==en el botón==. Después del flop el orden lo marca únicamente el botón, así que un straddle desde el cutoff te da la última palabra solo en preflop.
+*Un Mississippi straddle solo actúa último en postflop cuando se pone ==en el botón== — y eso viene del botón, no del straddle. Después del flop el orden lo marca únicamente el botón, así que un straddle desde el cutoff te da la última palabra solo en preflop.
 
 - **Straddle UTG** — el clásico. Se pone en UTG, última acción solo en preflop. El más común y el más débil en cuanto a posición.
-- **Mississippi straddle** — se puede poner desde **cualquier posición**, con más fuerza desde el botón o el cutoff. La acción empieza a la izquierda del que lo pone, así que un Mississippi straddle desde el botón compra la **última acción tanto en preflop como en postflop** — el único straddle con un argumento posicional real. No está permitido en todas partes.
+- **Mississippi straddle** — se puede poner desde **cualquier posición**, con más fuerza desde el botón o el cutoff. La acción empieza a la izquierda del que lo pone, así que un Mississippi straddle desde el botón añade la **última palabra en preflop** a la posición postflop que el botón ya tenía — el único straddle con un argumento posicional real. No está permitido en todas partes.
 - **Button straddle** — un straddle estilo Mississippi específicamente desde el botón; el botón conserva la última acción hasta el final. El flujo exacto (dónde encaja la ciega pequeña) varía según la sala — confírmalo con el repartidor.
 - **Sleeper straddle** — una ciega desde un asiento que no es UTG y que se queda "dormida": está **inactiva a menos que la acción foldee hasta llegar a ella**. Nunca compra posición; que al "despertar" gane la opción de subir como ciega viva depende de las reglas de la casa. Rara, y casi nunca se ve online.
 - **Re-straddle (doble straddle)** — un jugador a la izquierda puede straddlear *por encima* de un straddle, por un mínimo del doble del anterior ($4 → $8 → $16). Si está permitido, y desde qué asientos, es pura regla de la casa.
@@ -171,7 +171,7 @@ A. No. Un straddle es una apuesta ciega, no una subida — resetea el precio que
 
 **Q. ¿Qué es un Mississippi straddle?**
 
-A. Un Mississippi straddle se puede poner desde cualquier posición, no solo desde UTG — habitualmente el botón o el cutoff. La acción empieza entonces a la izquierda de quien lo pone, así que un Mississippi straddle desde el botón compra la última acción tanto en preflop como en postflop, que es por lo que es el único straddle con un argumento posicional genuino. No está permitido en todas las salas.
+A. Un Mississippi straddle se puede poner desde cualquier posición, no solo desde UTG — habitualmente el botón o el cutoff. La acción empieza entonces a la izquierda de quien lo pone, así que un Mississippi straddle desde el botón añade la última palabra en preflop a la posición postflop que el botón ya tenía, que es por lo que es el único straddle con un argumento posicional genuino. No está permitido en todas las salas.
 
 **Q. ¿Qué es un sleeper straddle?**
 

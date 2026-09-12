@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A 3-bet is the first re-raise before the flop — called a 3-bet because the big blind is the first bet, the open-raise the second, and your re-raise the third. Value-3-bet a tight core (QQ+, AK) plus a few suited blocker bluffs like A5s, size it around 3x the open in position and 4x out of position, and keep your overall 3-bet frequency near 6–10%. When you're the one facing a 3-bet, 4-bet your premiums, call the hands that play well, and fold the rest — folding more than 'balanced' against low-stakes players who never bluff.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-09",
+  updated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "♦️",
@@ -133,7 +133,7 @@ In tournaments with shallow stacks, the whole calculus changes: at roughly **10�
 
 ## 3-Bet, Flat, or Fold? A Decision Table
 
-Facing an open, you have three choices, not two. This is the map most articles never draw — when a hand prefers a 3-bet, a flat (call), or the muck:
+Facing an open, you have three choices, not two. This is the map that rarely gets drawn for beginners — when a hand prefers a 3-bet, a flat (call), or the muck:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

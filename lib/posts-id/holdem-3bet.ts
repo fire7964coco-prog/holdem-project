@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "3-bet adalah re-raise pertama sebelum flop — disebut 3-bet karena big blind adalah taruhan pertama, open-raise yang kedua, dan re-raise Anda yang ketiga. Value-3-bet inti yang ketat (QQ+, AK) plus beberapa bluff blocker suited seperti A5s, ukur sekitar 3x dari open in position dan 4x out of position, dan jaga frekuensi 3-bet keseluruhan Anda dekat 6–10%. Saat Andalah yang menghadapi 3-bet, 4-bet tangan premium Anda, call tangan yang bermain baik, dan fold sisanya — fold lebih banyak daripada 'balanced' melawan pemain stake rendah yang tak pernah bluff.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-12",
+  masterUpdated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "16 mnt",
   emoji: "♦️",
@@ -134,7 +134,7 @@ Di turnamen dengan stack dangkal, seluruh kalkulasinya berubah: pada kira-kira *
 
 ## 3-Bet, Flat, atau Fold? Sebuah Tabel Keputusan
 
-Menghadapi sebuah open, Anda punya tiga pilihan, bukan dua. Inilah peta yang tak pernah digambar kebanyakan artikel — kapan sebuah tangan lebih memilih 3-bet, flat (call), atau di-muck:
+Menghadapi sebuah open, Anda punya tiga pilihan, bukan dua. Inilah peta yang jarang digambarkan untuk pemula — kapan sebuah tangan lebih memilih 3-bet, flat (call), atau di-muck:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

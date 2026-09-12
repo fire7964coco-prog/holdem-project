@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Foldar é a habilidade mais subestimada do poker — o pior resultado de um fold é zero, enquanto um call perdedor sangra fichas toda vez. Um bom jogador folda cerca de 75–85% das mãos antes do flop, larga mãos que erraram e projetos fracos que não batem suas pot odds depois dele e — o mais difícil de tudo — abre mão de mãos fortes mas derrotadas quando a linha de um adversário passivo grita valor. A maioria não paga demais porque não sabe ler mãos; paga porque as fichas que já estão no pote parecem suas. Não são.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-10",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-12",
+  masterUpdated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🛡️",
@@ -139,7 +139,7 @@ Entre os dois extremos ficam os dois perfis perdedores: a **calling station** qu
 
 ## "Devo foldar?" — um autoteste de 30 segundos
 
-Antes de qualquer call grande, rode este checklist. Se as respostas honestas continuam apontando para "eu só venço um blefe aqui", você tem um fold:
+Antes de qualquer call grande, rode este checklist. Quatro das cinco perguntas já bastam sozinhas pra te mandar pro fold; a quinta é a que ainda pode defender o call:
 
 :::steps
 Consigo nomear as mãos piores que ele apostaria assim? | Se as únicas mãos que apostam assim me vencem, estou pagando valor.

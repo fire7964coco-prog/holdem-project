@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Poker-Positionen sind Sitznamen, gemessen vom Dealer-Button – UTG, Lojack, Hijack, Cutoff, Button und die Blinds – und sie wandern jede Hand einen Sitz im Uhrzeigersinn. Preflop handelt UTG zuerst und der Big Blind zuletzt; postflop handelt der Small Blind zuerst und der Button zuletzt. Physische Sitznummern bewegen sich nie; Positionen schon.",
   category: "strategy",
   date: "2026-06-13",
-  updated: "2026-09-10",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-12",
+  masterUpdated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "12 Min.",
   emoji: "🎯",
@@ -27,7 +27,7 @@ export const POST: Post = {
   content: `
 Mein erstes Live-Cashgame: Ich saß auf dem Platz, den ich später als UTG kennenlernen sollte. Ich schaute auf J♥ J♠ und raiste. Der Hijack callte. Der Cutoff callte. Der Button callte. Der Big Blind 3-bettete. Ich hatte keine Ahnung, was ich tun sollte – ich callte und blutete über drei Streets Chips.
 
-Zwei Orbits später saß ich auf dem Button mit demselben J♥ J♠. Ich raiste. Alle foldeten. Ich gewann $14, ohne je einen Flop zu sehen.
+Drei Hände später saß ich auf dem Button mit demselben J♥ J♠. Ich raiste. Alle foldeten. Ich gewann $14, ohne je einen Flop zu sehen.
 
 Dieselbe Hand. Völlig anderes Ergebnis. Das Einzige, was sich änderte, war mein Sitz – und in dieser Nacht wurde mir klar, dass ich gar nicht wusste, wie die Sitze *heißen*, geschweige denn, was sie bedeuten. Wenn du noch lernst, wie eine komplette Hand vom Geben bis zum Showdown abläuft, starte mit dem [Texas Hold'em Regeln-Leitfaden](/de/blog/texas-holdem-rules-for-beginners); dieser Artikel ist die Sitz-Map, die jener Leitfaden voraussetzt.
 

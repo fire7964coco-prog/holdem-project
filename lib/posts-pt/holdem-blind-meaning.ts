@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Blinds são apostas obrigatórias pagas antes de as cartas serem distribuídas. O small blind fica à esquerda do botão do dealer e o big blind à esquerda dele; o big blind — normalmente o dobro do small blind — é a unidade de aposta da mesa.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-12",
+  masterUpdated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "💰",
@@ -78,7 +78,7 @@ Entenda o big blind, e toda a conversa numérica do jogo — tamanhos de raise, 
 
 ## Regras do small blind e do big blind: quem paga, e quando
 
-Os dois blinds são pagos **antes da distribuição das cartas**, e o botão do dealer avança um assento no sentido horário a cada mão — os assentos dos blinds giram junto e ==todo mundo paga os dois blinds uma vez a cada volta completa do botão==. Ninguém pula a vez.
+Os dois blinds são pagos **antes da distribuição das cartas**, e o botão do dealer avança um assento no sentido horário a cada mão — os assentos dos blinds giram junto e ==todo mundo paga os dois blinds uma vez a cada volta completa do botão==. Ninguém pula a vez saindo da mesa — se você se levantar, paga os blinds perdidos quando voltar ou espera o big blind chegar até o seu assento.
 
 | | Small Blind | Big Blind |
 |------|-------------|-------------|

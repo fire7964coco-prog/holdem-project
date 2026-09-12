@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Bad beat adalah saat uang Anda masuk sebagai favorit berat — biasanya 80% atau lebih — dan Anda kalah karena lawan menangkap kartu beruntung untuk 'suck out' pada Anda. Berbeda dengan cooler, Anda unggul sepanjang tangan; hanya di akhir kartu berkhianat. Perih, tapi bad beat sebenarnya tanda Anda bermain di permainan yang menguntungkan.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-12",
+  masterUpdated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "11 mnt",
   emoji: "💔",
@@ -90,7 +90,7 @@ Setiap bad beat punya bentuk yang sama: Anda favorit, underdog butuh bantuan, da
 |:---|:---|:---:|:---|
 | **Aces dihancurkan set** | AA vs pair lebih rendah (mis. 7‑7) | ~80% (4:1) | Pair mereka kena set di flop, turn, atau river |
 | **Aces vs tangan acak** | AA all-in preflop | ~85% | Dua kartu apa pun mengejar Anda |
-| **Overpair vs flush draw (kasus batas)** | Overpair di flop | ~63% (1,7:1) | Flush draw 9-out mereka lengkap di river |
+| **Overpair vs flush draw (kasus batas)** | Overpair di flop | ~63% (1,7:1) | Sembilan out flush mereka, plus backdoor two pair atau backdoor straight, sampai di river |
 | **Runner-runner** | Made hand unggul di flop | ~90%+ | Dua kartu sempurna (turn *dan* river) melengkapi draw |
 | **One-outer** | Tangan hampir terkunci | ~96% | Satu-satunya kartu tersisa di dek mengalahkan Anda |
 
@@ -140,7 +140,7 @@ Itulah puncak rasa sakit bad beat: bukan favorit 80% yang tumbang, tapi *four ac
 
 Sekarang kebenaran yang mengubah bad beat dari bahan bakar tilt menjadi sumber percaya diri yang tenang. **Setiap bad beat yang Anda terima adalah bukti Anda bermain di permainan yang bisa dikalahkan.**
 
-Pikirkan apa yang dibutuhkan sebuah bad beat: lawan yang memasukkan uang saat *tertinggal*, sebagai underdog matematis, dan beruntung. Itu pemain yang membuat **keputusan-keputusan kalah** — persis lawan yang Anda inginkan. Jika tak ada seorang pun di meja Anda yang pernah menyusul Anda, itu berarti semua orang mem-fold tangan lemah mereka dengan benar, dan tak akan ada uang untuk dimenangkan. Seperti kata pepatah pelatih poker yang terkenal, suckout dari pemain lemah adalah sebuah *hadiah*: itu harga tiket untuk mengambil chip mereka empat kali lainnya.
+Pikirkan apa yang dibutuhkan sebuah bad beat: lawan yang memasukkan uang saat *tertinggal*, sebagai underdog matematis, dan beruntung. Sebagian besar waktu, itu pemain yang membuat **keputusan-keputusan kalah** — persis lawan yang Anda inginkan. Jika tak ada seorang pun di meja Anda yang pernah menyusul Anda, itu berarti semua orang mem-fold tangan lemah mereka dengan benar, dan tak akan ada uang untuk dimenangkan. Seperti kata pepatah pelatih poker yang terkenal, suckout dari pemain lemah adalah sebuah *hadiah*: itu harga tiket untuk mengambil chip mereka empat kali lainnya.
 
 Di atas sampel yang cukup besar, bad beat yang Anda terima dan bad beat yang Anda *berikan* kira-kira saling meniadakan. Yang tersisa — satu-satunya hal yang benar-benar menggerakkan hasil jangka panjang Anda — adalah kualitas keputusan Anda. **Memasukkan uang saat unggul lalu kalah tetaplah sebuah kemenangan** dalam segala hal yang penting seiring waktu. Chip akan kembali; edge itu permanen, variance itu sementara.
 

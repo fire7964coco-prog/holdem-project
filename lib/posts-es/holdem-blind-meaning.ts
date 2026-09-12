@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Las ciegas son apuestas obligatorias que se ponen antes de repartir las cartas. La ciega pequeña se sienta a la izquierda del botón y la ciega grande a su izquierda; la ciega grande — normalmente el doble de la pequeña — es la unidad de apuesta de la mesa.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-12",
+  masterUpdated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "💰",
@@ -78,7 +78,7 @@ En cuanto entiendes la ciega grande, toda la jerga numérica del juego — tama�
 
 ## Reglas de la ciega pequeña y la ciega grande: quién las pone y cuándo
 
-Las dos ciegas se ponen **antes del reparto**, y el botón del dealer avanza un asiento en el sentido de las agujas del reloj tras cada mano — así que los asientos de las ciegas rotan con él y ==todos pagan ambas ciegas una vez por órbita==. Aquí no se libra nadie.
+Las dos ciegas se ponen **antes del reparto**, y el botón del dealer avanza un asiento en el sentido de las agujas del reloj tras cada mano — así que los asientos de las ciegas rotan con él y ==todos pagan ambas ciegas una vez por órbita==. Ausentarte no te libra: si te levantas, al volver pones las ciegas que te saltaste o esperas a que la ciega grande llegue a tu asiento.
 
 | | Ciega pequeña | Ciega grande |
 |------|-------------|-------------|

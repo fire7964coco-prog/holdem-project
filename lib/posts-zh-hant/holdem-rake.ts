@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "抽水（Rake）是撲克室為了主辦牌局，從每個底池抽走的小額分成——通常 2.5～10%，抽到幾塊錢的上限（cap）為止。多數場子在翻牌前全蓋就不抽（「沒翻牌不抽水」）。它對低注、短手牌手傷害最大，而返水（Rakeback）會把其中一部分退還給常客。",
   category: "glossary",
   date: "2026-07-23",
-  updated: "2026-09-10",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-12",
+  masterUpdated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "11 分鐘",
   emoji: "🏦",
@@ -52,7 +52,7 @@ $3～$6 | 常見的實體場抽水封頂
 
 ![荷官在把剩下的籌碼推給贏家之前，先從底池中央撥幾枚籌碼進桌上的抽水孔](/images/holdem-rake-drop.webp "底池抽水：從底池刮下一個小百分比，在贏家收錢前先投進去")
 
-抽水不只一種。撲克室怎麼收錢，取決於注額大小和場子，而這些差異很重要——這是沒有任何一個競品頁面攤開來講的對照：
+抽水不只一種。撲克室怎麼收錢，取決於注額大小和場子，而這些差異很重要——一共四種收法，你常去的場子用哪一種，決定你實際付多少：
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

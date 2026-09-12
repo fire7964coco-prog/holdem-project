@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Der Rake ist der kleine Anteil, den der Cardroom aus jedem Pot nimmt, um das Spiel auszurichten – meist 2,5–10% bis zu einem Cap – in deutschen Spielbanken €10 bis €20. Die meisten Räume nehmen nichts, wenn vor dem Flop alle folden („no flop, no drop“). Er trifft Low-Stakes- und Short-handed-Spieler am härtesten, und Rakeback gibt Stammspielern einen Teil zurück.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-09-10",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-12",
+  masterUpdated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "🏦",
@@ -52,7 +52,7 @@ In einem Cashgame wird er meist direkt aus dem Pot genommen: ein kleiner Prozent
 
 ![Ein Dealer fegt ein paar Chips aus der Mitte des Pots in den Rake-Schlitz des Tisches, bevor er den Rest zum Gewinner schiebt](/images/holdem-rake-drop.webp "Pot Rake: ein kleiner Prozentsatz wird aus dem Pot abgeschöpft und gedroppt, bevor der Gewinner ausgezahlt wird")
 
-Welcher Weg gilt, hängt von den Stakes und vom Raum ab, und die Unterschiede sind teuer – hier der Vergleich, den keine einzelne Konkurrenzseite so darlegt:
+Welcher Weg gilt, hängt von den Stakes und vom Raum ab, und die Unterschiede sind teuer – welche Methode dein Room nutzt, entscheidet, wie viel du tatsächlich zahlst:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

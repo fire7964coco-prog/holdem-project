@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Les blindes sont des mises obligatoires posées avant la distribution des cartes. La petite blinde est assise à gauche du bouton du donneur et la grosse blinde à sa gauche ; la grosse blinde — en général le double de la petite — est l'unité de mise de la table.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-07-13",
+  updated: "2026-09-12",
   masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "9 min",
@@ -78,7 +78,7 @@ Une fois que tu as compris la grosse blinde, tout le jargon chiffré du jeu — 
 
 ## Règles de la petite et de la grosse blinde : qui les paie, et quand
 
-Les deux blindes sont posées **avant la distribution**, et le bouton du donneur avance d'un siège dans le sens des aiguilles d'une montre après chaque main — donc les sièges des blindes tournent avec lui et ==tout le monde paie les deux blindes une fois par tour de table==. Personne n'y coupe.
+Les deux blindes sont posées **avant la distribution**, et le bouton du donneur avance d'un siège dans le sens des aiguilles d'une montre après chaque main — donc les sièges des blindes tournent avec lui et ==tout le monde paie les deux blindes une fois par tour de table==. Personne n'y coupe en s'absentant — si tu quittes la table, tu reposes les blindes manquées à ton retour ou tu attends la grosse blinde.
 
 | | Petite blinde | Grosse blinde |
 |------|-------------|-------------|

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "EPT Barcelona 2026 berlangsung 16–29 Agu di Casino Barcelona. Pemain Italia Manuel Ferrari memenangi Main Event €5.300 dan membawa pulang €1.002.488 dari prize pool €8.841.550 dengan 1.823 entri. Untuk 2027, jalur online termurah tetap Power Path dari $0,50 → Gold Pass (Main Event €5.300 + side event €1.100 + hotel 8 malam + biaya €690). Anda butuh akun PokerStars Live dan paspor yang berlaku, dan sebaiknya pesan hotel lebih awal — Agustus musim puncak.",
   category: "tournament",
   date: "2026-06-17",
-  updated: "2026-09-09",
+  updated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "16 mnt",
   emoji: "🃏",
@@ -96,7 +96,8 @@ Festival ini menjalankan dua seri paralel: **PokerStars Open** (titik masuk terj
 
 | Event | Tanggal | Buy-In | Untuk Siapa |
 |:---|:---|:---:|:---|
-| PokerStars Cup | 20–21 Agu | **€825** | Titik masuk terbaik bagi pemula pertama |
+| €330 Deep Stack (#76) | 29 Agu | **€330** | Event mandiri termurah di festival ini — satu hari, re-entry tanpa batas |
+| PokerStars Cup | 20–21 Agu | **€825** | Titik masuk **multi-hari** terbaik bagi pemula pertama |
 | PokerStars Open Main Event | 16–22 Agu | **€1.650** | Grinder mid-stakes |
 | PokerStars Open High Roller | 21–23 Agu | **€2.700** | Jembatan antara Open & EPT |
 | EPT Mystery Bounty | 25–27 Agu | **€3.250** | Format knockout dengan bounty acak |
@@ -106,7 +107,7 @@ Festival ini menjalankan dua seri paralel: **PokerStars Open** (titik masuk terj
 
 </div>
 
-> **Tips pemula pertama:** Jika Main Event €5.300 terasa terlalu berat, ==g:**PokerStars Cup €825**== adalah turnamen sah dengan uang hadiah nyata. Banyak pemain memakainya sebagai pemanasan sebelum mencoba peruntungan di Main Event.
+> **Tips pemula pertama:** Jika Main Event €5.300 terasa terlalu berat, ==g:**PokerStars Cup €825**== adalah turnamen dua hari dengan uang hadiah nyata dan field yang ramah pemula (€330 Deep Stack lebih murah, tapi hanya satu hari). Banyak pemain memakainya sebagai pemanasan sebelum mencoba peruntungan di Main Event.
 
 ---
 
@@ -166,7 +167,7 @@ Tidak mau grind empat langkah? PokerStars juga menjalankan **satelit langsung** 
 
 ## Total Biaya Perjalanan EPT Barcelona 2026 — Rincian Anggaran Realistis
 
-==r:Inilah yang tidak diberitahukan pesaing kepada Anda: buy-in hanyalah sebagian dari biaya.== Mari kita rinci berapa biaya sebenarnya perjalanan EPT Barcelona yang realistis.
+==r:Buy-in hanyalah sebagian dari biaya.== Mari kita rinci berapa biaya sebenarnya perjalanan EPT Barcelona yang realistis.
 
 ### Skenario Hemat: PokerStars Cup (€825)
 
@@ -192,8 +193,8 @@ Tidak mau grind empat langkah? PokerStars juga menjalankan **satelit langsung** 
 | Hotel (10 malam, kelas menengah) | €1.000–€1.800 |
 | Buy-in EPT Main Event | **€5.300** |
 | Makan & transport harian (10 hari) | €500–€800 |
-| Side event (opsional) | €825–€3.250 |
-| ==**Perkiraan total perjalanan**== | ==**€7.775–€11.550**== |
+| Side event (opsional) | €330–€3.250 |
+| ==**Perkiraan total perjalanan**== | ==**€7.280–€11.550**== |
 
 </div>
 
@@ -415,7 +416,7 @@ Cetak ini dan centang sebelum Anda berangkat ke bandara:
 
 **Q. Bisakah saya bermain EPT Barcelona jika belum pernah bermain turnamen live sebelumnya?**
 
-A. Bisa — tapi ==g:mulailah dengan PokerStars Cup €825== daripada Main Event. Cup punya field lebih kecil, struktur lebih pendek, dan buy-in lebih rendah. Ini cara terbaik untuk merasakan festival PokerStars Live sebelum mengeluarkan €5.300.
+A. Bisa — tapi ==g:mulailah dengan PokerStars Cup €825== daripada Main Event. Cup punya field lebih kecil, struktur lebih pendek, dan buy-in lebih rendah. Ini cara multi-hari terbaik untuk merasakan festival PokerStars Live sebelum mengeluarkan €5.300.
 
 **Q. Apakah saya perlu akun PokerStars, atau cukup akun PokerStars Live?**
 

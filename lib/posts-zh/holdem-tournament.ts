@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "在锦标赛里你交一笔固定买入换取筹码，盲注按计时器不断上涨，直到一名玩家赢下全部筹码。通常前 10–15% 的人进钱。赛制包括 freezeout、PKO、卫星赛和 deepstack——报名方式有直接买入、卫星赛晋级，或线上预注册。",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-12",
+  masterUpdated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "14 分钟",
   emoji: "🏆",
@@ -233,7 +233,7 @@ deepstack 锦标赛让你的起始筹码相对盲注明显高于同系列的标�
 > **快速回答**
 > 一场中午 12 点开赛的现场 $300 freezeout，Day 1 大致是这样：10:30 报名、12:00 发牌、下午 3 点半迟到报名关闭并确认奖池、5 点晚餐休息时约四成人已出局、傍晚 6–9 点钱圈 bubble 逐手打、9–11 点进钱后装袋或打到决赛桌。整天 9–11 小时，带件外套。
 
-这是别的指南不会告诉你的。这里是一场现场 $300 freezeout、中午 12 点开赛的、真实的 Day 1 时间线：
+这是多数新手只能靠吃亏学到的部分。这里是一场现场 $300 freezeout、中午 12 点开赛的、真实的 Day 1 时间线：
 
 <div style="background:rgba(255,248,210,0.06);border:1px solid rgba(255,240,180,0.25);border-radius:12px;padding:20px 24px;margin:20px 0">
 <div style="font-size:13px;font-weight:700;color:hsl(var(--primary));margin-bottom:14px">Day 1 时间线 — $300 Freezeout，10,000 起始筹码</div>

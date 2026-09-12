@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Foldear es la habilidad más infravalorada del póker: en el peor de los casos un fold te cuesta cero, mientras que un call perdedor sangra fichas todas las veces. Un jugador sólido foldea entre el 75 y el 85% de sus manos antes del flop, suelta las manos falladas y los proyectos débiles que no cumplen sus pot odds después, y —lo más difícil de todo— tira manos fuertes pero batidas cuando la línea de un rival pasivo grita valor. La mayoría no paga de más porque no sepa leer manos; paga porque las fichas que ya están en el bote las siente suyas. No lo son.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-12",
+  masterUpdated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🛡️",
@@ -139,7 +139,7 @@ Entre los dos extremos se sientan los dos perfiles perdedores: la **calling stat
 
 ## "¿Debería foldear?" — un autotest de 30 segundos
 
-Antes de cualquier call grande, pasa esta checklist. Si las respuestas honestas siguen apuntando a "aquí solo le gano a un farol", tienes un fold:
+Antes de cualquier call grande, pasa esta checklist. Cuatro de las cinco preguntas bastan por sí solas para mandarte al fold; la quinta es la que todavía puede defender el call:
 
 :::steps
 ¿Puedo nombrar las manos peores que apostarían así? | Si las únicas manos que apuestan así me ganan, estoy pagando valor.

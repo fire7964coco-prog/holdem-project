@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Blinds sind Zwangseinsätze, die vor dem Austeilen der Karten gesetzt werden. Der Small Blind sitzt direkt links vom Dealer-Button, der Big Blind links daneben; der Big Blind – meist das Doppelte des Small Blinds – ist die Setzeinheit des Tischs.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-12",
+  masterUpdated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "9 Min.",
   emoji: "💰",
@@ -80,7 +80,7 @@ Verstehst du den Big Blind, erschließt sich das gesamte Zahlen-Vokabular des Sp
 
 ## Small-Blind- und Big-Blind-Regeln: Wer setzt sie – und wann?
 
-Beide Blinds werden **vor dem Austeilen** gesetzt, und der Dealer-Button wandert nach jeder Hand einen Sitz im Uhrzeigersinn weiter – die Blind-Sitze rotieren mit, und ==jeder zahlt beide Blinds einmal pro Runde (Orbit)==. Niemand kann sich davor drücken.
+Beide Blinds werden **vor dem Austeilen** gesetzt, und der Dealer-Button wandert nach jeder Hand einen Sitz im Uhrzeigersinn weiter – die Blind-Sitze rotieren mit, und ==jeder zahlt beide Blinds einmal pro Runde (Orbit)==. Durch Aussetzen drückt sich niemand davor – stehst du auf, setzt du die verpassten Blinds bei der Rückkehr nach oder wartest, bis der Big Blind wieder zu dir kommt.
 
 | | Small Blind | Big Blind |
 |------|-------------|-------------|

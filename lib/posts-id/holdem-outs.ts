@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Sebuah out adalah kartu mana pun yang tersisa di deck yang mengubah tangan Anda menjadi kemungkinan pemenang. Hitung, lalu konversi: kalikan outs dengan 4 di flop atau dengan 2 di turn untuk mendapat persen kasar Anda. Flush draw punya 9 outs ≈ 36% hingga river.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-12",
+  masterUpdated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "11 mnt",
   emoji: "🎯",
@@ -71,10 +71,10 @@ Hafalkan ini dan Anda akan mengenali jumlah out Anda sekilas. Inilah chart yang 
 
 | Draw Anda | Outs | Kenapa |
 |:---|:---:|:---|
-| Flush + open-ended straight | 15 | Sang monster — dua draw sekaligus |
+| Flush + open-ended straight | 15 | 9 flush + 8 straight − 2 kartu bersama — sang monster |
+| Flush + gutshot | 12 | 9 flush + 4 gutshot − 1 kartu bersama |
 | Flush draw | 9 | 13 satu jenis − 4 yang bisa Anda lihat |
 | Open-ended straight draw | 8 | Empat kartu di tiap ujung |
-| Flush + gutshot | 12 | 9 flush + 4 gutshot − 1 kartu bersama |
 | Dua overcard | 6 | Tiga kartu tiap nilai untuk berpasangan |
 | One pair → two pair atau trips | 5 | 3 untuk memasangkan kicker + 2 untuk trips |
 | Gutshot (inside straight) | 4 | Hanya satu nilai mengisi lubangnya |

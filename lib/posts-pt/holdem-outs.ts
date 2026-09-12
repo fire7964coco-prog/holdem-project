@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Um out é qualquer carta que sobrou no baralho e melhora sua mão para uma provável vencedora. Conte-os e converta: multiplique os outs por 4 no flop ou por 2 no turn para a % aproximada de acertar. Um projeto de flush são 9 outs ≈ 36% até o river.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-12",
+  masterUpdated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🎯",
@@ -71,10 +71,10 @@ Memorize estas e você reconhecerá sua contagem de outs de bate-pronto. Esta é
 
 | Seu projeto | Outs | Por quê |
 |:---|:---:|:---|
-| Flush + projeto aberto | 15 | O monstro — dois projetos de uma vez |
+| Flush + projeto aberto | 15 | 9 de flush + 8 de sequência − 2 cartas compartilhadas — o monstro |
+| Flush + gutshot | 12 | 9 de flush + 4 de gutshot − 1 carta compartilhada |
 | Projeto de flush | 9 | 13 de um naipe − 4 que você vê |
 | Projeto aberto de sequência | 8 | Quatro cartas em cada ponta |
-| Flush + gutshot | 12 | 9 de flush + 4 de gutshot − 1 carta compartilhada |
 | Duas overcards | 6 | Três de cada valor para parear |
 | Um par → dois pares ou trinca | 5 | 3 para parear seu kicker + 2 para trincar |
 | Gutshot (sequência interna) | 4 | Só um valor preenche o buraco |
