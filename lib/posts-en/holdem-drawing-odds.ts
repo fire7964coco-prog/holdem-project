@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "You flop a set with a pocket pair 11.8% of the time (7.5-to-1 against), flop a flush with two suited cards just 0.84%, and complete a flopped flush draw by the river 35% of the time. Every number below is derived from the deck, not guessed.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-09-11",
+  updated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🎲",
@@ -55,7 +55,7 @@ Read across a row and you see the whole lifecycle of a hand. Two suited cards al
 
 ## Odds of Flopping a Set (and the Set-Mining Math)
 
-![Infographic of a gold dealer button and two face-down hole cards on a K♦ 7♣ 2♠ flop — the moment a set-mining call is decided](/images/holdem-button-dealer-board.webp "The flop decides a set-mining call: hit your two-outer 11.8% of the time, or fold and wait for the next pair")
+![Infographic of a pocket pair's two outs highlighted in gold inside the deck, an arrow to three face-down flop cards, and a bar split twelve percent gold against eighty-eight percent grey](/images/holdem-drawing-odds-set-mining.webp "Three cards off the top of the deck settle a set-mining call — and most of the time they settle it against you")
 
 **You flop a set (or better) with a pocket pair 11.8% of the time — about 1 in 8.5, or 7.5-to-1 against.** This is the most important drawing number in the game, because it's the entire basis for *set mining*: calling a raise with a small pair purely to flop three of a kind.
 

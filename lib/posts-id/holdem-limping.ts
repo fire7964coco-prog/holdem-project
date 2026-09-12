@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Limping adalah masuk ke pot preflop dengan sekadar call big blind alih-alih raise atau fold. Open-limping (jadi orang pertama yang masuk) hampir selalu keliru — Anda tak bisa memenangkan pot preflop, Anda melepas inisiatif, dan pemain bagus menghukum Anda. Tapi limping tak selalu salah: menyelesaikan small blind, over-limping tangan spekulatif di belakang limper lain, serta beberapa spot live dan short-stack adalah pengecualian yang sah.",
   category: "strategy",
   date: "2026-07-05",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-12",
+  masterUpdated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "11 mnt",
   emoji: "🚶",
@@ -62,8 +62,6 @@ Perbedaan ini penting karena sebagian besar nasihat "limping itu buruk" sebenarn
 
 ## Kenapa Limping Biasanya Keliru (4 Alasan)
 
-![Infografik tombol dealer emas dan dua kartu tertutup menghadap flop K♦ 7♣ 2♠ — button beraksi terakhir setelah flop](/images/holdem-button-dealer-board.webp "Open-limping mengundang pot multiway yang membengkak di mana Anda tak punya inisiatif — sering kali di luar posisi")
-
 Saat Anda open-limp, Anda melepas jauh lebih banyak daripada yang Anda kira. Inilah persisnya:
 
 1. **Anda tak bisa memenangkan pot preflop.** Ini yang paling besar. Saat Anda *raise* first-in, semua orang bisa fold dan Anda menyapu blind tanpa perlawanan — uang gratis, dan itu terjadi cukup sering. Saat Anda limp, angka itu **nol**. Anda menjamin bahwa Anda harus membentuk tangan atau memenangkannya nanti; Anda membuang cara termurah untuk menang.
@@ -114,7 +112,7 @@ Masalahnya adalah ia sudah menjadi **transparan.** Karena hampir tak ada yang li
 
 ## Apakah Limping Sebuah Tell "Fish"? Bagaimana Pemain Bagus Menghukumnya
 
-![Infografik tampak-atas meja Hold'em bergaya pub dengan board penuh K♦ 7♣ 2♠ 9♥ 3♦, chip, dan tombol dealer](/images/holdem-pub-players-table.webp "Pemain kuat memperlakukan open-limp sebagai target — mereka raise untuk mengisolasi limper dan memainkan pot dalam posisi melawan range yang terbatas")
+![Diagram meja enam pemain — kursi bertanda merah masuk dengan limp satu chip, empat kursi fold dan dicoret sambil meninggalkan chip blind yang sudah dipasang, dan button menjawab dengan warna emas lewat tumpukan yang jauh lebih besar serta panah mengarah balik ke limper](/images/holdem-limping-isolation-raise.webp "Satu chip membuat Anda masuk — berapa harga pot itu nanti, yang menentukan adalah pemain di button")
 
 Ya — di sebagian besar permainan, sebuah open-limp adalah tanda menyala yang berbunyi *"pemain lemah dan pasif ada di sini."* Dan alasan ia menjadi kebiasaan yang begitu mahal adalah pemain terampil tak hanya mencatatnya, mereka **menyerangnya**:
 

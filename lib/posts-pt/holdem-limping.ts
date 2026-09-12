@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Limpar é entrar num pote no pré-flop só pagando o big blind em vez de aumentar ou foldar. Open-limpar (ser o primeiro a entrar) é quase sempre um erro — você não consegue ganhar o pote no pré-flop, abre mão da iniciativa, e bons jogadores te punem. Mas limpar nem sempre é errado: completar o small blind, over-limpar mãos especulativas atrás de outros limpers, e alguns spots ao vivo e de stack curto são exceções legítimas.",
   category: "strategy",
   date: "2026-07-05",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-12",
+  masterUpdated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🚶",
@@ -62,8 +62,6 @@ Essa distinção importa porque a maior parte do conselho "limpar é terrível" 
 
 ## Por que limpar geralmente é erro (4 motivos)
 
-![Infográfico de um button dourado do dealer e duas cartas fechadas encarando um flop K♦ 7♣ 2♠ — o button age por último depois do flop](/images/holdem-button-dealer-board.webp "Open-limpar convida um pote multiway inflado onde você não tem iniciativa — muitas vezes fora de posição")
-
 Quando você open-limpa, abre mão de uma quantidade surpreendente de coisas. Eis exatamente o quê:
 
 1. **Você não consegue ganhar o pote no pré-flop.** Esse é o principal. Quando você *aumenta* primeiro a entrar, todo mundo pode foldar e você embolsa os blinds sem disputa — dinheiro de graça, numa fatia considerável das vezes. Quando você limpa, esse número é **zero**. Você garantiu que precisa formar uma mão ou ganhar depois; jogou fora o jeito mais limpo de vencer.
@@ -114,7 +112,7 @@ O problema é que virou **transparente.** Como quase ninguém limpa *pretendendo
 
 ## Limpar é um tell de "peixe"? Como bons jogadores punem isso
 
-![Infográfico visto de cima de uma mesa de Hold'em estilo pub com um board completo K♦ 7♣ 2♠ 9♥ 3♦, fichas e o button do dealer](/images/holdem-pub-players-table.webp "Jogadores fortes tratam um open-limp como alvo — eles aumentam para isolar o limper e jogar um pote em posição contra um range limitado")
+![Diagrama de uma mesa de seis jogadores — o lugar marcado em vermelho entrou de limp com uma única ficha, quatro lugares foldaram e estão riscados deixando para trás as fichas dos blinds, e o button responde em dourado com uma pilha bem maior e uma seta apontando de volta para o limper](/images/holdem-limping-isolation-raise.webp "Uma ficha te coloca no pote — quanto esse pote vai te custar, quem decide é o jogador do button")
 
 Sim — na maioria dos jogos, um open-limp é uma placa piscando que diz *"jogador fraco e passivo aqui."* E o motivo de ser um hábito tão caro é que jogadores habilidosos não só notam, eles **atacam**:
 

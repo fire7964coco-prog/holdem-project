@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Limpear es entrar en un bote preflop solo igualando la ciega grande en lugar de subir o foldear. El open-limp (ser el primero en entrar) casi siempre es un error — no puedes ganar el bote preflop, cedes la iniciativa y los buenos jugadores te castigan. Pero limpear no siempre está mal: completar la ciega pequeña, hacer over-limp con manos especulativas detrás de otros limpers, y algunos casos en vivo y con stack corto son excepciones legítimas.",
   category: "strategy",
   date: "2026-07-05",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-12",
+  masterUpdated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🚶",
@@ -62,8 +62,6 @@ Esta distinción importa porque casi todo el consejo de "limpear es terrible" va
 
 ## Por qué limpear normalmente es un error (4 razones)
 
-![Infografía de un botón dorado de repartidor y dos cartas tapadas frente a un flop K♦ 7♣ 2♠ — el botón actúa último tras el flop](/images/holdem-button-dealer-board.webp "Hacer open-limp invita a un bote multiway inflado donde no tienes iniciativa — a menudo fuera de posición")
-
 Cuando haces open-limp, renuncias a una cantidad sorprendente de cosas. Esto es exactamente lo que cedes:
 
 1. **No puedes ganar el bote preflop.** Esta es la grande. Cuando *subes* siendo el primero en entrar, todos pueden foldear y te llevas las ciegas sin oposición — dinero gratis, una buena parte de las veces. Cuando limpeas, ese número es **cero**. Te has garantizado que tienes que ligar una mano o ganarla más tarde; has tirado la forma más limpia de ganar.
@@ -114,7 +112,7 @@ El problema es que se ha vuelto **transparente.** Como casi nadie limpea con la 
 
 ## ¿Es limpear una señal de "fish"? Cómo lo castigan los buenos jugadores
 
-![Infografía cenital de una mesa de Hold'em estilo pub con un board completo K♦ 7♣ 2♠ 9♥ 3♦, fichas y el botón del repartidor](/images/holdem-pub-players-table.webp "Los jugadores fuertes tratan un open-limp como un objetivo — suben para aislar al limpeador y jugar un bote en posición contra un rango limitado")
+![Diagrama de una mesa de seis jugadores — el asiento marcado en rojo entró con un limp de una sola ficha, cuatro asientos están foldeados y tachados dejando atrás las fichas de las ciegas, y el botón responde en dorado con una pila mucho mayor y una flecha apuntando de vuelta al limper](/images/holdem-limping-isolation-raise.webp "Una ficha te mete en el bote — lo que ese bote va a costarte lo decide el jugador del botón")
 
 Sí — en la mayoría de las partidas, un open-limp es un cartel luminoso que dice *"aquí hay un jugador débil y pasivo".* Y la razón de que sea un hábito tan caro es que los jugadores hábiles no solo lo notan, lo **atacan**:
 

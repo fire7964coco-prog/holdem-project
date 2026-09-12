@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Limpen bedeutet, preflop in einen Pot einzusteigen, indem du nur den Big Blind callst, statt zu raisen oder zu folden. Open-Limpen (als Erster reinzugehen) ist fast immer ein Fehler – du kannst den Pot preflop nicht kampflos gewinnen, gibst die Initiative ab und gute Spieler bestrafen dich. Aber Limpen ist nicht immer falsch: den Small Blind zu completen, spekulative Hände hinter anderen Limpern zu over-limpen sowie einige Live- und Short-Stack-Situationen sind legitime Ausnahmen.",
   category: "strategy",
   date: "2026-07-05",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-12",
+  masterUpdated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "🚶",
@@ -65,8 +65,6 @@ Diese Unterscheidung ist wichtig, weil die meisten Ratschläge im Stil von „Li
 > **Kurze Antwort**
 > Vier Dinge auf einmal: Du kannst den Pot preflop nicht mehr kampflos gewinnen, du gibst die Initiative an den Raiser ab, du baust einen aufgeblähten Multiway-Pot – meist ohne Position – und du machst deine Range für aufmerksame Gegner lesbar. Der erste Punkt allein ist teuer genug: Ein Raise gewinnt die Blinds regelmäßig kampflos, ein Limp nie.
 
-![Infografik mit einem goldenen Dealer-Button und zwei verdeckten Hole Cards vor einem K♦ 7♣ 2♠ Flop – der Button handelt nach dem Flop als Letzter](/images/holdem-button-dealer-board.webp "Open-Limpen lädt zu einem aufgeblähten Multiway-Pot ein, in dem du keine Initiative hast – oft aus schlechter Position")
-
 Wenn du open-limpst, gibst du überraschend viel auf. Genau das hier:
 
 1. **Du kannst den Pot preflop nicht kampflos gewinnen.** Das ist der große Punkt. Wenn du first-in *raist*, können alle folden und du kassierst die Blinds kampflos – Gratisgeld, und das nennenswert oft. Wenn du limpst, ist diese Zahl **null**. Du hast garantiert, dass du eine Hand treffen oder ihn später gewinnen musst; du hast den saubersten Weg zu gewinnen weggeworfen.
@@ -120,7 +118,7 @@ Der Haken ist, dass er **durchschaubar** geworden ist. Weil fast niemand limpt, 
 
 ## Ist Limpen ein „Fish“-Tell? Wie gute Spieler es bestrafen
 
-![Top-Down-Infografik eines pub-artigen Hold'em-Tisches mit vollem K♦ 7♣ 2♠ 9♥ 3♦ Board, Chips und dem Dealer-Button](/images/holdem-pub-players-table.webp "Starke Spieler behandeln einen Open-Limp als Ziel – sie raisen, um den Limper zu isolieren, und spielen einen Pot in Position gegen eine gedeckelte Range")
+![Diagramm eines 6-max-Tisches – der rot markierte Platz hat für einen einzigen Chip gelimpt, vier Plätze haben gefoldet und sind durchgestrichen, die Blinds lassen ihre gesetzten Chips zurück, und der Button antwortet in Gold mit einem viel größeren Stapel, mit einem Pfeil zurück auf den Limper](/images/holdem-limping-isolation-raise.webp "Ein Chip bringt dich rein – was der Pot am Ende kostet, entscheidet der Spieler am Button")
 
 Ja – in den meisten Spielen ist ein Open-Limp ein blinkendes Schild, das sagt: *„Schwacher, passiver Spieler hier.“* Und der Grund, warum es eine so teure Angewohnheit ist: Geübte Spieler notieren es nicht nur, sie **attackieren** es:
 

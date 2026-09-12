@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.suits { position:absolute; top:24px; left:0; width:100%; text-align:center; color:#C9A227; font-size:18px; letter-spacing:.5em; opacity:.5; }
+
+/* ── seat row ───────────────────────────────── */
+.seats { position:absolute; top:72px; left:52px; width:1096px; display:flex; gap:16px; }
+.seat { flex:1; height:248px; border-radius:18px; border:2px solid rgba(242,238,227,.14); background:rgba(0,0,0,.22);
+        display:flex; align-items:center; justify-content:center; position:relative; }
+.seat.out { opacity:.34; }
+.seat.live { border-color:rgba(242,238,227,.5); background:rgba(0,0,0,.34); }
+.seat.hero { border-color:rgba(192,57,43,.95); background:rgba(192,57,43,.12); box-shadow:0 0 30px rgba(192,57,43,.30); }
+.seat.gold { border-color:rgba(201,162,39,.9); background:rgba(46,125,70,.18); box-shadow:0 0 30px rgba(201,162,39,.25); }
+
+.hole { display:flex; gap:8px; }
+.hole i { display:block; width:54px; height:78px; border-radius:8px;
+          background:repeating-linear-gradient(45deg,#7a1420 0 8px,#5c0f18 8px 16px);
+          border:2px solid #F2EEE3; box-shadow:0 6px 14px rgba(0,0,0,.5); }
+.seat.out .hole i { transform:rotate(-15deg); filter:grayscale(1); }
+.seat.out .hole i + i { transform:rotate(11deg) translateY(7px); }
+
+.x { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); color:#F2EEE3; font-size:74px; font-weight:900; opacity:.9; }
+
+.dbtn { position:absolute; top:-20px; right:-16px; width:60px; height:60px; border-radius:50%;
+        background:linear-gradient(140deg,#EFCB52,#C9A227); color:#0B1F17; font-size:30px; font-weight:900;
+        display:flex; align-items:center; justify-content:center; border:3px dashed rgba(11,31,23,.35);
+        box-shadow:0 7px 18px rgba(0,0,0,.55); }
+
+/* ── bets (shared baseline) ─────────────────── */
+.bets { position:absolute; top:330px; left:52px; width:1096px; height:184px; display:flex; gap:16px; }
+.bet { flex:1; position:relative; }
+.stack { position:absolute; bottom:0; display:flex; flex-direction:column-reverse; }
+.chip { width:84px; height:23px; border-radius:50%; margin-top:-9px;
+        background:linear-gradient(180deg,#EFCB52 0%,#C9A227 55%,#a8871c 100%); border:2px solid #6b5410;
+        box-shadow:0 3px 8px rgba(0,0,0,.5); }
+.s1 { left:50%; transform:translateX(-50%); }
+.s2 { left:14%; } .s3 { left:50%; transform:translateX(-50%); } .s4 { left:86%; transform:translateX(-100%); }
+.dead { opacity:.42; }
+.chip.half { width:50px; }
+
+/* ── aim line ───────────────────────────────── */
+.aim { position:absolute; top:556px; left:150px; width:533px; height:5px; border-radius:3px;
+       background:linear-gradient(90deg,rgba(201,162,39,0) 0%,rgba(201,162,39,.9) 100%); }
+.aim b { position:absolute; left:-34px; top:-29px; color:#C9A227; font-size:56px; line-height:1; font-weight:900; }
+
+.wordmark { position:absolute; right:44px; bottom:22px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.03em; opacity:.9; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="suits">&#9824; &#9829; &#9830; &#9827;</div>
+
+  <div class="seats">
+    <div class="seat hero"><div class="hole"><i></i><i></i></div></div>
+    <div class="seat out"><div class="hole"><i></i><i></i></div><div class="x">&#10005;</div></div>
+    <div class="seat out"><div class="hole"><i></i><i></i></div><div class="x">&#10005;</div></div>
+    <div class="seat gold"><div class="hole"><i></i><i></i></div><div class="dbtn">D</div></div>
+    <div class="seat out"><div class="hole"><i></i><i></i></div><div class="x">&#10005;</div></div>
+    <div class="seat out"><div class="hole"><i></i><i></i></div><div class="x">&#10005;</div></div>
+  </div>
+
+  <div class="bets">
+    <div class="bet"><div class="stack s1"><div class="chip"></div></div></div>
+    <div class="bet"></div>
+    <div class="bet"></div>
+    <div class="bet">
+      <div class="stack s2"><div class="chip"></div><div class="chip"></div><div class="chip"></div></div>
+      <div class="stack s3"><div class="chip"></div><div class="chip"></div><div class="chip"></div><div class="chip"></div></div>
+      
+    </div>
+    <div class="bet"><div class="stack s1 dead"><div class="chip half"></div></div></div>
+    <div class="bet"><div class="stack s1 dead"><div class="chip"></div></div></div>
+  </div>
+
+  <div class="aim"><b>&#9664;</b></div>
+  <div class="wordmark">&#9824; holdemmaster.com</div>
+</div>
+</body>
+</html>

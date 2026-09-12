@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ligas un set en el flop con una pareja servida el 11.8% de las veces (7.5 a 1 en contra), ligas un color en el flop con dos cartas del mismo palo apenas un 0.84%, y completas un proyecto de color del flop al river el 35% de las veces. Cada número de abajo sale de la baraja, no se adivina.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-12",
+  masterUpdated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🎲",
@@ -56,7 +56,7 @@ Lee una fila de izquierda a derecha y ves el ciclo de vida completo de una mano.
 
 ## Probabilidad de ligar un set (y la matemática del set mining)
 
-![Infografía de un botón de dealer dorado y dos cartas boca abajo sobre un flop K♦ 7♣ 2♠ — el momento en que se decide un call de set mining](/images/holdem-button-dealer-board.webp "El flop decide un call de set mining: liga tu proyecto de dos outs el 11.8% de las veces, o pasa y espera la siguiente pareja")
+![Infografía: los dos outs de una pareja servida resaltados en dorado dentro de la baraja, una flecha hacia tres cartas de flop boca abajo y una barra dividida en doce por ciento dorado y ochenta y ocho por ciento gris](/images/holdem-drawing-odds-set-mining.webp "Tres cartas de lo alto de la baraja deciden un call de set mining — y la mayoría de las veces lo deciden en tu contra")
 
 **Ligas un set (o mejor) en el flop con una pareja servida el 11.8% de las veces — más o menos 1 de cada 8.5, o 7.5 a 1 en contra.** Este es el número de proyecto más importante del juego, porque es toda la base del *set mining*: pagar una subida con una pareja pequeña solo para ligar trío en el flop.
 

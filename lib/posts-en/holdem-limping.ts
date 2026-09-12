@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Limping is entering a pot preflop by just calling the big blind instead of raising or folding. Open-limping (being first in) is almost always a mistake — you can't win the pot preflop, you give up initiative, and good players punish you. But limping isn't always wrong: completing the small blind, over-limping speculative hands behind other limpers, and some live and short-stack spots are legitimate exceptions.",
   category: "strategy",
   date: "2026-07-05",
-  updated: "2026-09-11",
+  updated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🚶",
@@ -61,8 +61,6 @@ This distinction matters because most of the "limping is terrible" advice is rea
 
 ## Why Limping Is Usually a Mistake (4 Reasons)
 
-![Infographic of a gold dealer button and two face-down hole cards facing a K♦ 7♣ 2♠ flop — the button acts last after the flop](/images/holdem-button-dealer-board.webp "Open-limping invites a bloated multiway pot where you have no initiative — often out of position")
-
 When you open-limp, you give up a surprising amount. Here's exactly what:
 
 1. **You can't win the pot preflop.** This is the big one. When you *raise* first-in, everyone can fold and you scoop the blinds uncontested — free money, a meaningful chunk of the time. When you limp, that number is **zero**. You've guaranteed you have to make a hand or win it later; you've thrown away the cleanest way to win.
@@ -113,7 +111,7 @@ The catch is that it's become **transparent.** Because almost nobody limps *inte
 
 ## Is Limping a "Fish" Tell? How Good Players Punish It
 
-![Top-down infographic of a pub-style Hold'em table with a full K♦ 7♣ 2♠ 9♥ 3♦ board, chips, and the dealer button](/images/holdem-pub-players-table.webp "Strong players treat an open-limp as a target — they raise to isolate the limper and play a pot in position against a capped range")
+![Six-seat table diagram — the seat marked in red has limped for a single chip, four seats are folded and crossed out with the blinds' posted chips left behind, and the button answers in gold with a much larger stack, an arrow aimed back at the limper](/images/holdem-limping-isolation-raise.webp "One chip buys you in — and the player on the button decides what the pot is going to cost you")
 
 Yes — in most games, an open-limp is a flashing sign that says *"weak, passive player here."* And the reason it's such a costly habit is that skilled players don't just note it, they **attack** it:
 

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.suits { position:absolute; top:26px; left:0; width:100%; text-align:center; color:#C9A227; font-size:18px; letter-spacing:.5em; opacity:.5; }
+
+.row { position:absolute; top:88px; left:52px; width:1096px; height:262px; display:flex; align-items:center; }
+
+.panel { height:262px; border-radius:20px; background:rgba(0,0,0,.28); border:2px solid rgba(201,162,39,.45);
+         display:flex; align-items:center; position:relative; }
+.panel.a { width:498px; border-color:rgba(201,162,39,.8); background:rgba(46,125,70,.14); padding-left:34px; gap:26px; }
+.panel.b { width:498px; justify-content:center; gap:16px; }
+
+.badge { width:100px; height:100px; border-radius:50%; display:flex; align-items:center; justify-content:center;
+         font-size:52px; font-weight:900; box-shadow:0 8px 22px rgba(0,0,0,.45);
+         background:linear-gradient(140deg,#EFCB52,#C9A227); color:#0B1F17; flex:none; }
+
+.deck { position:relative; width:320px; height:160px; flex:none; }
+.deck i { position:absolute; display:block; width:74px; height:106px; border-radius:9px; top:24px;
+          background:repeating-linear-gradient(45deg,#5c0f18 0 9px,#480c13 9px 18px);
+          border:2px solid rgba(242,238,227,.42); box-shadow:0 4px 10px rgba(0,0,0,.4); }
+.deck i.on { background:linear-gradient(170deg,#EFCB52 0%,#C9A227 100%); border-color:#F2EEE3;
+             top:0; box-shadow:0 10px 22px rgba(0,0,0,.55); }
+
+.arrow { width:100px; text-align:center; color:#C9A227; font-size:60px; font-weight:900; line-height:1; }
+
+.back { width:86px; height:124px; border-radius:10px;
+        background:repeating-linear-gradient(45deg,#7a1420 0 9px,#5c0f18 9px 18px);
+        border:2px solid #F2EEE3; box-shadow:0 7px 16px rgba(0,0,0,.5); }
+
+.bar { position:absolute; left:52px; top:468px; width:1096px; height:100px; border-radius:16px; overflow:hidden;
+       display:flex; border:2px solid rgba(201,162,39,.5); }
+.bar .hit  { width:12%; background:linear-gradient(180deg,#EFCB52,#C9A227); color:#0B1F17;
+             display:flex; align-items:center; justify-content:center; font-size:34px; font-weight:900; }
+.bar .miss { width:88%; background:rgba(242,238,227,.19); color:#F2EEE3;
+             display:flex; align-items:center; justify-content:center; gap:20px; font-size:42px; font-weight:900; }
+.bar .miss span { opacity:.5; font-size:36px; }
+
+.tick { position:absolute; left:52px; top:416px; width:131px; text-align:center; color:#C9A227; font-size:38px; font-weight:900; }
+
+.wordmark { position:absolute; right:44px; bottom:22px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.03em; opacity:.9; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="suits">&#9824; &#9829; &#9830; &#9827;</div>
+
+  <div class="row">
+    <div class="panel a">
+      <div class="badge">2</div>
+      <div class="deck">
+        <i style="left:0px"></i><i style="left:5px"></i><i style="left:10px"></i><i style="left:15px"></i><i style="left:20px"></i><i style="left:25px"></i><i style="left:30px"></i><i style="left:35px"></i><i style="left:40px"></i><i style="left:45px"></i><i style="left:50px"></i><i style="left:55px"></i><i style="left:60px"></i><i style="left:65px"></i><i style="left:70px"></i><i style="left:75px"></i><i style="left:80px"></i><i style="left:85px"></i><i style="left:90px"></i><i style="left:95px"></i><i style="left:100px"></i><i style="left:105px"></i><i style="left:110px"></i><i style="left:115px"></i><i style="left:120px"></i><i style="left:125px"></i><i style="left:130px"></i><i style="left:135px"></i><i style="left:140px"></i><i style="left:145px"></i><i style="left:150px"></i><i style="left:155px"></i><i style="left:160px"></i><i style="left:165px"></i><i style="left:170px"></i><i style="left:175px"></i><i style="left:180px"></i><i style="left:185px"></i><i style="left:190px"></i><i style="left:195px"></i><i style="left:200px"></i><i style="left:205px"></i><i style="left:210px"></i><i style="left:215px"></i><i style="left:220px"></i><i style="left:225px"></i><i style="left:230px"></i><i style="left:235px"></i><i class="on" style="left:90px"></i><i class="on" style="left:170px"></i>
+      </div>
+    </div>
+    <div class="arrow">&#10230;</div>
+    <div class="panel b">
+      <div class="back"></div><div class="back"></div><div class="back"></div>
+    </div>
+  </div>
+
+  <div class="tick">&#10003;</div>
+  <div class="bar">
+    <div class="hit">12%</div>
+    <div class="miss">88% <span>&#10005;</span></div>
+  </div>
+
+  <div class="wordmark">&#9824; holdemmaster.com</div>
+</div>
+</body>
+</html>

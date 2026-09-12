@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Mit einem Pocket Pair floppst du in 11,8% der Fälle ein Set (7,5:1 dagegen), mit zwei suited Karten nur 0,84% einen Flush, und einen gefloppten Flushdraw komplettierst du bis zum River in 35% der Fälle. Jede Zahl unten stammt aus dem Deck, nicht aus dem Bauch.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-12",
+  masterUpdated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "12 Min.",
   emoji: "🎲",
@@ -58,7 +58,7 @@ Lies eine Zeile quer und du siehst den ganzen Lebenszyklus einer Hand: Zwei suit
 
 ## Wie hoch ist die Chance, mit einem Pocket Pair ein Set zu floppen?
 
-![Infografik eines goldenen Dealer Buttons und zweier verdeckter Hole Cards auf einem K♦ 7♣ 2♠ Flop – der Moment, in dem ein Set-Mining-Call entschieden wird](/images/holdem-button-dealer-board.webp "Der Flop entscheidet einen Set-Mining-Call: triff deinen Two-Outer in 11,8% der Fälle, oder folde und warte aufs nächste Paar")
+![Infografik: die zwei Outs eines Pocket Pairs golden hervorgehoben im Deck, ein Pfeil auf drei verdeckte Flopkarten und ein Balken, der sich in zwölf Prozent Gold und achtundachtzig Prozent Grau teilt](/images/holdem-drawing-odds-set-mining.webp "Drei Karten von oben aus dem Deck entscheiden einen Set-Mining-Call – und meistens entscheiden sie ihn gegen dich")
 
 **Mit einem Pocket Pair floppst du in 11,8% der Fälle ein Set (oder besser) – etwa 1 von 8,5, oder 7,5:1 dagegen.** Das ist die wichtigste Drawing-Zahl im Spiel, denn sie ist die gesamte Grundlage für *Set Mining*: einen Raise mit einem kleinen Paar rein deshalb zu callen, um ein Set zu floppen.
 

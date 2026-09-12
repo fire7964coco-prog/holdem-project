@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Anda flop set dengan pocket pair 11,8% dari waktu (7,5:1 melawan), flop flush dengan dua kartu suited hanya 0,84%, dan menyelesaikan flush draw yang di-flop hingga river 35% dari waktu. Setiap angka di bawah diturunkan dari deck, bukan ditebak.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-12",
+  masterUpdated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "🎲",
@@ -56,7 +56,7 @@ Ikuti satu baris dari kiri ke kanan, dan Anda melihat seluruh siklus hidup sebua
 
 ## Peluang flop set (dan matematika set mining)
 
-![Infografik tombol dealer emas dan dua kartu tertutup di atas flop K♦ 7♣ 2♠ — momen sebuah call set mining diputuskan](/images/holdem-button-dealer-board.webp "Flop memutuskan call set mining: kena two-outer 11,8% dari waktu, atau fold dan tunggu pair berikutnya")
+![Infografik: dua out dari sebuah pocket pair disorot emas di dalam deck, panah menuju tiga kartu flop tertutup, dan batang yang terbagi dua belas persen emas melawan delapan puluh delapan persen abu-abu](/images/holdem-drawing-odds-set-mining.webp "Tiga kartu dari atas deck yang memutuskan sebuah call set mining — dan sebagian besar waktu keputusannya melawan Anda")
 
 **Anda flop set (atau lebih baik) dengan pocket pair 11,8% dari waktu — kira-kira 1 dari 8,5, atau 7,5:1 melawan.** Ini angka drawing terpenting dalam permainan, karena inilah seluruh dasar *set mining*: call sebuah raise dengan pair kecil murni untuk flop three of a kind.
 

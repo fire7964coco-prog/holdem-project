@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Você flopa um set com um par na mão 11,8% das vezes (7,5 para 1 contra), flopa um flush com duas cartas do mesmo naipe apenas 0,84%, e completa um flush draw flopado até o river 35% das vezes. Cada número abaixo vem do baralho, não de chute.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-12",
+  masterUpdated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🎲",
@@ -56,7 +56,7 @@ Leia ao longo de uma linha e você vê o ciclo de vida inteiro de uma mão. Duas
 
 ## Odds de flopar um set (e a matemática do set mining)
 
-![Infográfico de um botão de dealer dourado e duas cartas na mão viradas pra baixo num flop K♦ 7♣ 2♠ — o momento em que um call de set mining é decidido](/images/holdem-button-dealer-board.webp "O flop decide um call de set mining: acerte seu two-outer 11,8% das vezes, ou folde e espere o próximo par")
+![Infográfico: os dois outs de um par na mão destacados em dourado dentro do baralho, uma seta para três cartas de flop viradas pra baixo e uma barra dividida em doze por cento dourado contra oitenta e oito por cento cinza](/images/holdem-drawing-odds-set-mining.webp "Três cartas do topo do baralho decidem um call de set mining — e na maioria das vezes decidem contra você")
 
 **Você flopa um set (ou melhor) com um par na mão 11,8% das vezes — cerca de 1 em 8,5, ou 7,5 para 1 contra.** Esse é o número de projeto mais importante do jogo, porque é a base inteira do *set mining*: pagar um aumento com um par pequeno puramente pra flopar trinca.
 
