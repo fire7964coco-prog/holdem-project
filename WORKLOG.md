@@ -1,3 +1,13 @@
+## 2026-09-12 (18) — **검색엔진 등록 인프라 — IndexNow 구현(키 파일 + `npm run indexnow`) · Bing/Yandex 소유확인 env · 절차 문서 `docs/search-engine-registration.md`** (배포 · 첫 푸시)
+
+사장님 문답 ① 「구글봇 크롤 690 / 색인 370 · 하루 10개 수동 요청은 스팸? 기업용 대량 API가 있다던데」 → 답: Google Indexing API는 JobPosting·BroadcastEvent 전용이라 블로그엔 못 쓴다 · 수동 요청은 쿼터일 뿐 스팸 판정 없음 · 크롤 690/색인 370의 갭은 «제출»이 아니라 «판정» 문제 · GSC 색인 요청은 사장님이 손으로(08-25 판정 유효). 사유별 실측을 위해 `gsc-index-audit --all`(URL Inspection · 읽기 전용) 백그라운드 실행. ② 「야후·얀덱스·빙 등 할 수 있는 건 하고 싶어」 → 이 회차.
+- **IndexNow**: `public/7966fb5cebb48fca1febb6d9af6ae3d8.txt` + `scripts/indexnow.mjs`(`--all`·`--since`·`--urls`·`--dry` · 사이트맵 695 URL · api.indexnow.org 한 요청) + `npm run indexnow`. Bing·Yandex·Naver·Seznam·Yep 공유. 프로토콜 §6-2에 «push 뒤 `--since <오늘>`» 한 줄.
+- **소유확인**: `app/layout.tsx` `metadata.verification`에 `YANDEX_SITE_VERIFICATION` · `BING_SITE_VERIFICATION`(msvalidate.01) env 조건부 렌더 — 사장님이 웹마스터 도구에서 코드를 받아 Vercel env에 넣으면 코드 수정 없이 켜진다. Bing은 GSC 가져오기면 메타 불필요.
+- **판정**: Yahoo·DuckDuckGo·Ecosia = Bing 인덱스(별도 등록 없음) · Yahoo Japan = 구글 인덱스 · Baidu 안 함(본토 대상 밖) · Google Indexing API 금지.
+- CLAUDE.md §19 라우팅 1행. 첫 푸시 결과는 아래 (19).
+
+---
+
 ## 2026-09-12 (17) — **🧰 queue 회차 Q2-b 머지·배포(레인 `311f6497` ff) — 결재 7 이미지 10장 제작·교체 · EN 10자리 + 썸네일 3자리 + 7로케일 전파 · `check:image-reuse` 🔴 40→0 · F유형 2 정정** (빌드 · 배포 · 라이브 확인)
 
 사장님 지시 「queue 회차 Q2-b 끝났어, 머지해」. 프로토콜 §6 + §7-F.

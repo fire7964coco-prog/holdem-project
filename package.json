@@ -81,7 +81,8 @@
     "check:hygiene": "node scripts/check-locale-hygiene.mjs",
     "check:hygiene:selftest": "node scripts/check-locale-hygiene.mjs --selftest",
     "check:handoff": "node scripts/check-handoff-size.mjs",
-    "check:handoff:selftest": "node scripts/check-handoff-size.mjs --selftest"
+    "check:handoff:selftest": "node scripts/check-handoff-size.mjs --selftest",
+    "indexnow": "node scripts/indexnow.mjs"
   },
   "dependencies": {
     "@radix-ui/react-tabs": "^1.1.4",

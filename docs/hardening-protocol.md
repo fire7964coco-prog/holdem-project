@@ -231,7 +231,7 @@ git commit -F commit-msg.txt   # "harden(<locale>): <클러스터> N편 — 회�
 
 0. 🔴 **레인이 진행 중인 클러스터의 로케일 파일은 손대지 않는다.** EN-먼저 정정이 그 클러스터에 걸리면 EN + 다른 로케일만 먼저 고치고, 그 레인 로케일은 **진행 파일 §5에 «헤드가 EN을 고쳤다 — C 구간 merge main 때 받아라»로 넘긴다.** 불가피하게 손댔으면 그 레인 `HARDEN.md`(비추적) 말미에 통지를 붙인다.
 1. `git merge harden-zh` → `git merge harden-zh-hant` → `git merge harden-ja` → `git merge harden-queue`(🧰 queue 머지 뒤 추가 절차 = §7-F 말미)(conflict가 공용 파일이면 레인이 §1을 어긴 것 — 되돌린다 · 로케일 파일이면 §6-0을 헤드가 어긴 것 — 헤드가 푼다). 🪶 머지 전에 `npm run lane:status`로 «지금 충돌할 수 있는가»를 먼저 본다(0.5초).
-2. `npm run build`(N blog posts 확인) → `git push` → 배포 도착 폴링 → **라이브 확인은 `page.content()`**(innerText는 접힌 FAQ를 못 본다 · 앵커는 원문 표기).
+2. `npm run build`(N blog posts 확인) → `git push` → 배포 도착 폴링 → **라이브 확인은 `page.content()`**(innerText는 접힌 FAQ를 못 본다 · 앵커는 원문 표기) → 🆕 **`npm run indexnow -- --since <오늘>`**(2026-09-12 · Bing·Yandex·Naver 크롤 큐 푸시 · 하루 한 번만 · 정본 `docs/search-engine-registration.md` §3).
 3. 진행 파일 «헤드 요청» 절 처리: `locale-intentional-diffs.md` 등재 · EN-먼저 묶음을 EN에 먼저 정정 후 전 로케일 전파 · 이미지 교체 · 게이트 수정.
 4. `WORKLOG.md`·`session-handoff.md` 기록. 검수장 lane-zh에 **머지 커밋 해시**를 우편함으로 통보(검수는 해시 기준 판정).
 5. 트랙 종결(6/6) 시: 검수장 원장 편입 요청 + GPT 교차검수 팩(`docs/mailbox-protocol.md` §5).

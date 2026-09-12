@@ -171,11 +171,21 @@ export const metadata: Metadata = {
      * ⚠ Next의 `verification.other`는 값에 배열을 주면 같은 name의 meta를 **여러 개** 렌더한다.
      *   네이버는 각 사이트의 값을 각자 찾으므로 둘 다 있어야 양쪽 소유확인이 유지된다.
      */
+    /**
+     * Bing · Yandex 소유확인 (2026-09-12 · 사장님 지시 「야후·얀덱스·빙 등 등록」).
+     *   값은 Vercel 환경변수로 넣는다 — 코드 수정 없이 사장님이 웹마스터 도구에서 받은 코드를 붙이면 된다:
+     *     BING_SITE_VERIFICATION   = Bing Webmaster Tools「메타 태그」의 content 값 (msvalidate.01)
+     *     YANDEX_SITE_VERIFICATION = Yandex Webmaster「메타 태그」의 content 값
+     *   비어 있으면 meta 를 아예 안 그린다. 절차 = docs/search-engine-registration.md
+     *   🪶 Bing 은 GSC 가져오기(원클릭)로 소유확인이 끝나면 메타가 필요 없다 — 그때는 비워 둬라.
+     */
+    ...(process.env.YANDEX_SITE_VERIFICATION ? { yandex: process.env.YANDEX_SITE_VERIFICATION } : {}),
     other: {
       "naver-site-verification": [
         "b978aa0f38cbfd49ce7e06253e0bcb6f9e2efd18",
         "ad6bd8de7952760de5147c6755301779d0b9b4ac",
       ],
+      ...(process.env.BING_SITE_VERIFICATION ? { "msvalidate.01": process.env.BING_SITE_VERIFICATION } : {}),
     },
   },
   icons: {
