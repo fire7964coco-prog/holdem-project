@@ -174,7 +174,7 @@ export const metadata: Metadata = {
     /**
      * Bing · Yandex 소유확인 (2026-09-12 · 사장님 지시 「야후·얀덱스·빙 등 등록」).
      *   값은 Vercel 환경변수로 넣는다 — 코드 수정 없이 사장님이 웹마스터 도구에서 받은 코드를 붙이면 된다:
-     *     BING_SITE_VERIFICATION   = Bing Webmaster Tools「메타 태그」의 content 값 (msvalidate.01)
+     *     BING_SITE_VERIFICATION   = (선택) Bing 코드 교체용 — 기본값은 아래에 직접 박힌 www 사이트 코드(2026-09-12)
      *     YANDEX_SITE_VERIFICATION = Yandex Webmaster「메타 태그」의 content 값
      *   비어 있으면 meta 를 아예 안 그린다. 절차 = docs/search-engine-registration.md
      *   🪶 Bing 은 GSC 가져오기(원클릭)로 소유확인이 끝나면 메타가 필요 없다 — 그때는 비워 둬라.
@@ -185,7 +185,8 @@ export const metadata: Metadata = {
         "b978aa0f38cbfd49ce7e06253e0bcb6f9e2efd18",
         "ad6bd8de7952760de5147c6755301779d0b9b4ac",
       ],
-      ...(process.env.BING_SITE_VERIFICATION ? { "msvalidate.01": process.env.BING_SITE_VERIFICATION } : {}),
+      /** Bing Webmaster Tools — `https://www.holdemmaster.com` 수동 추가(2026-09-12 · 사장님 발급). non-www 구 속성은 가져오지 않았다. */
+      "msvalidate.01": process.env.BING_SITE_VERIFICATION || "743DA88A92F895EADF573DBC7B11028B",
     },
   },
   icons: {
