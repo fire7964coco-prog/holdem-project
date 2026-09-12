@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Las posiciones del póker son nombres de asiento que se miden desde el botón del repartidor — UTG, lojack, hijack, cutoff, botón y las ciegas — y se mueven un asiento en el sentido de las agujas del reloj cada mano. En el preflop, UTG actúa primero y la ciega grande última; en el postflop, la ciega pequeña actúa primero y el botón último. Los números de asiento físicos nunca se mueven; las posiciones sí.",
   category: "strategy",
   date: "2026-06-13",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-12",
+  masterUpdated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🎯",
@@ -27,7 +27,7 @@ export const POST: Post = {
   content: `
 Mi primera partida de cash en vivo estaba sentado en lo que más tarde aprendería que era UTG. Miré mis cartas, J♥ J♠, y subí. El hijack pagó. El cutoff pagó. El botón pagó. La ciega grande hizo 3-bet. No tenía ni idea de qué hacer — igualé y fui sangrando fichas durante tres calles.
 
-Dos vueltas después estaba en el botón con las mismas J♥ J♠. Subí. Todos foldearon. Gané $14 sin ver siquiera un flop.
+Tres manos después estaba en el botón con las mismas J♥ J♠. Subí. Todos foldearon. Gané $14 sin ver siquiera un flop.
 
 La misma mano. Un resultado completamente distinto. Lo único que cambió fue mi asiento — y esa noche me di cuenta de que en realidad no sabía cómo se *llamaban* los asientos, ni mucho menos qué significaban. Si todavía estás aprendiendo cómo fluye una mano entera desde el reparto hasta el showdown, empieza por la [guía de reglas del Texas Hold'em](/es/blog/texas-holdem-rules-for-beginners); este artículo es el mapa de asientos que esa guía da por sabido.
 

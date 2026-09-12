@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Blinds adalah taruhan wajib yang dipasang sebelum kartu dibagikan. Small Blind duduk di kiri tombol dealer dan Big Blind di kirinya lagi; Big Blind — biasanya dua kali lipat Small Blind — adalah satuan taruhan di meja.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-12",
+  masterUpdated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "9 menit",
   emoji: "💰",
@@ -78,7 +78,7 @@ Pahami Big Blind, dan semua obrolan angka di game ini — ukuran raise, kedalama
 
 ## Aturan Small Blind dan Big Blind: Siapa yang Memasang, dan Kapan
 
-Kedua blind dipasang **sebelum kartu dibagikan**, dan tombol dealer bergeser satu kursi searah jarum jam setelah setiap hand — jadi kursi blind ikut berputar dan ==semua orang membayar kedua blind sekali per putaran==. Tidak ada yang bisa melewatkan gilirannya.
+Kedua blind dipasang **sebelum kartu dibagikan**, dan tombol dealer bergeser satu kursi searah jarum jam setelah setiap hand — jadi kursi blind ikut berputar dan ==semua orang membayar kedua blind sekali per putaran==. Meninggalkan meja pun tidak membuat Anda lolos — blind yang terlewat itu Anda pasang saat kembali, atau Anda menunggu big blind sampai ke kursi Anda.
 
 | | Small Blind | Big Blind |
 |------|-------------|-------------|

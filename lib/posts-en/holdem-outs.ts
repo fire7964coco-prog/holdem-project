@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "An out is any card left in the deck that improves your hand to a likely winner. Count them, then convert: multiply outs by 4 on the flop or by 2 on the turn to get your rough % to hit. A flush draw is 9 outs ≈ 36% by the river.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-11",
+  updated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🎯",
@@ -70,10 +70,10 @@ Memorize these and you'll recognize your out count on sight. This is the chart e
 
 | Your draw | Outs | Why |
 |:---|:---:|:---|
-| Flush + open-ended straight | 15 | The monster — two draws at once |
+| Flush + open-ended straight | 15 | 9 flush + 8 straight − 2 shared cards — the monster |
+| Flush + gutshot | 12 | 9 flush + 4 gutshot − 1 shared card |
 | Flush draw | 9 | 13 of a suit − 4 you can see |
 | Open-ended straight draw | 8 | Four cards on each end |
-| Flush + gutshot | 12 | 9 flush + 4 gutshot − 1 shared card |
 | Two overcards | 6 | Three of each rank to pair |
 | One pair → two pair or trips | 5 | 3 to pair your kicker + 2 to trip up |
 | Gutshot (inside straight) | 4 | Only one rank fills the hole |

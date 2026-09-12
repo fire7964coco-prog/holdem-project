@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un 3-bet es la primera resubida antes del flop — se llama 3-bet porque la ciega grande es la primera apuesta, la subida de apertura la segunda y tu resubida la tercera. Haz un 3-bet de valor con un núcleo cerrado (QQ+, AK) más unos pocos faroles con bloqueadores del mismo palo como A5s, dale un tamaño de unas 3x la apertura en posición y 4x fuera de posición, y mantén tu frecuencia global de 3-bet cerca del 6–10%. Cuando eres tú quien se enfrenta a un 3-bet, resube con un 4-bet tus manos premium, iguala las que se juegan bien y foldea el resto — foldeando más de lo 'balanceado' contra jugadores de stakes bajos que nunca farolean.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-12",
+  masterUpdated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "♦️",
@@ -134,7 +134,7 @@ En torneos con stacks cortos, todo el cálculo cambia: con más o menos **10–2
 
 ## ¿3-bet, flat o fold? Una tabla de decisión
 
-Enfrentando una apertura tienes tres opciones, no dos. Este es el mapa que casi ningún artículo dibuja — cuándo una mano prefiere un 3-bet, un flat (igualar) o el muck:
+Enfrentando una apertura tienes tres opciones, no dos. Este es el mapa que rara vez le dibujan al principiante — cuándo una mano prefiere un 3-bet, un flat (igualar) o el muck:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

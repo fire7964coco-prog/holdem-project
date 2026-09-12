@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Eine 3-Bet ist der erste Re-Raise vor dem Flop – sie heißt 3-Bet, weil der Big Blind die erste Bet ist, der Open-Raise die zweite und dein Re-Raise die dritte. 3-bette auf Value einen engen Kern (QQ+, AK) plus ein paar suited Blocker-Bluffs wie A5s, size sie in Position auf etwa das 3-fache des Opens und out of Position auf das 4-fache, und halte deine gesamte 3-Bet-Frequenz bei 6–10%. Wenn du selbst gegen eine 3-Bet sitzt, 4-bette deine Premiums, calle die Hände, die gut spielen, und folde den Rest – gegen Low-Stakes-Spieler, die nie bluffen, häufiger als „ausgeglichen“.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-12",
+  masterUpdated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "16 Min.",
   emoji: "♦️",
@@ -149,7 +149,7 @@ In Turnieren mit flachen Stacks ändert sich die ganze Rechnung: Bei etwa **10�
 > **Kurze Antwort**
 > Die Entscheidung hängt an zwei Dingen: deiner Handstärke **und** deinem Sitz. Dieselbe Hand ist am Button oft eine 3-Bet und aus dem Small Blind ein Fold, weil du dort jede Street zuerst handeln müsstest. Grobe Linie: Premiums immer 3-betten, spielbare Hände in Position flatten, und aus dem Small Blind lieber 3-betten oder folden statt zu callen.
 
-Gegen einen Open hast du drei Optionen, nicht zwei. Das ist die Landkarte, die die meisten Artikel nie zeichnen – wann eine Hand eine 3-Bet, einen Flat (Call) oder den Muck bevorzugt:
+Gegen einen Open hast du drei Optionen, nicht zwei. Das ist die Landkarte, die Anfängern selten gezeichnet wird – wann eine Hand eine 3-Bet, einen Flat (Call) oder den Muck bevorzugt:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

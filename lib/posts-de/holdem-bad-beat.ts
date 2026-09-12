@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ein Bad Beat ist, wenn du dein Geld als klarer Favorit reinbekommst – meist mit 80% oder mehr – und verlierst, weil dein Gegner eine Glückskarte trifft und dich aussaugt. Anders als beim Cooler warst du die ganze Zeit vorne; das Deck hat dich erst am Ende verraten. Es schmerzt, aber Bad Beats sind eigentlich ein Zeichen, dass du in einem profitablen Spiel sitzt.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-12",
+  masterUpdated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "💔",
@@ -100,7 +100,7 @@ Die häufigsten Versionen, mit ungefähren Preflop- und Flop-Equities:
 |:---|:---|:---:|:---|
 | **Asse geknackt durch ein Set** | AA vs. ein kleineres Paar (z. B. 7‑7) | ~80% (4:1) | Sein Paar trifft ein Set am Flop, Turn oder River |
 | **Asse vs. eine zufällige Hand** | AA all-in preflop | ~85% | Zwei beliebige Karten überrennen dich |
-| **Overpair vs. ein Flushdraw (Grenzfall)** | Overpair auf dem Flop | ~63% (1,7:1) | Sein 9-Out-Flushdraw füllt sich auf dem Turn oder River |
+| **Overpair vs. ein Flushdraw (Grenzfall)** | Overpair auf dem Flop | ~63% (1,7:1) | Seine neun Flush-Outs, dazu Backdoor-Zweipaar oder -Straße, kommen bis zum River an |
 | **Runner-Runner** | Eine fertige Hand vorne auf dem Flop | ~90%+ | Zwei perfekte Karten (Turn *und* River) vervollständigen einen Draw |
 | **Der One-Outer** | Eine fast sichere Hand | ~96% | Die einzige übrige Karte im Deck schlägt dich |
 
@@ -160,7 +160,7 @@ Das ist die Obergrenze des Bad-Beat-Schmerzes: nicht ein 80%-Favorit, der unterg
 
 **Jeder Bad Beat, den du kassierst, ist der Beweis, dass du in einem schlagbaren Spiel sitzt.**
 
-Denk darüber nach, was ein Bad Beat braucht: einen Gegner, der sein Geld als mathematischer Underdog *hinten* reingesteckt hat und Glück hatte. Das ist ein Spieler, der **verlierende Entscheidungen** trifft – genau der Gegner, den du willst. Wenn niemand an deinem Tisch je gegen dich rausdrawen würde, hieße das, dass alle ihre schwachen Hände korrekt folden, und es gäbe kein Geld zu gewinnen. Wie eine bekannte Coaching-Maxime es ausdrückt: Ein Suckout von einem schwachen Spieler ist ein *Geschenk* – es ist der Eintrittspreis dafür, die anderen vier Male an seine Chips zu kommen.
+Denk darüber nach, was ein Bad Beat braucht: einen Gegner, der sein Geld als mathematischer Underdog *hinten* reingesteckt hat und Glück hatte. Meistens ist das ein Spieler, der **verlierende Entscheidungen** trifft – genau der Gegner, den du willst. Wenn niemand an deinem Tisch je gegen dich rausdrawen würde, hieße das, dass alle ihre schwachen Hände korrekt folden, und es gäbe kein Geld zu gewinnen. Wie eine bekannte Coaching-Maxime es ausdrückt: Ein Suckout von einem schwachen Spieler ist ein *Geschenk* – es ist der Eintrittspreis dafür, die anderen vier Male an seine Chips zu kommen.
 
 Und je besser du spielst, desto mehr Beats kassierst du und desto weniger teilst du selbst aus – genau das ist das Vorzeichen eines Edges. Was übrig bleibt – das Einzige, was deine langfristigen Ergebnisse tatsächlich bestimmt – ist die Qualität deiner Entscheidungen. **Dein Geld gut reinzubekommen und zu verlieren ist auf Dauer trotzdem ein Sieg** in allem, worauf es ankommt. Die Chips kommen zurück; der Edge ist dauerhaft, die Varianz vorübergehend.
 

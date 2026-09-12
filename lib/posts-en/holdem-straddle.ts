@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A straddle is an optional blind bet — usually twice the big blind — posted before the cards are dealt. It buys the straddler the last action and the option to raise preflop, doubling the stakes. In almost every case it's a -EV play, and outside cash games it's almost never allowed.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-09-11",
+  updated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "💰",
@@ -66,9 +66,9 @@ That "last action preflop" is what the straddler is paying for. But note the cat
 
 ## Types of Straddle (UTG, Mississippi, Button & Sleeper)
 
-![A straddle bet posted beside the dealer button, showing a button or Mississippi straddle that buys last position for the hand](/images/holdem-straddle-button.webp "A button (Mississippi) straddle posts from the button — the one straddle that buys last action postflop too")
+![A straddle bet posted beside the dealer button, showing a button or Mississippi straddle posted from the seat that already acts last after the flop](/images/holdem-straddle-button.webp "A button (Mississippi) straddle posts from the button — the one straddle posted from the seat that already acts last after the flop")
 
-Not all straddles are the same — and the differences are all about **where the action starts and how long you keep last position.** Here's the comparison no other page lays out in one place:
+Not all straddles are the same — and the differences are all about **where the action starts and how long you keep last position.** Here's how they compare:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -82,10 +82,10 @@ Not all straddles are the same — and the differences are all about **where the
 
 </div>
 
-*A Mississippi straddle only buys last action postflop when it is posted ==on the button==. After the flop the order is set by the button alone, so a straddle from the cutoff buys you the last word preflop only.
+*A Mississippi straddle is last after the flop only when it is posted ==on the button== — and that comes from the button itself, not from the straddle, so a straddle from the cutoff buys you the last word preflop only.
 
 - **UTG straddle** — the classic. Posted under the gun, last action preflop only. The most common and the weakest, positionally.
-- **Mississippi straddle** — can be posted from **any position**, most powerfully from the button or cutoff. Action starts to the straddler's left, so a button Mississippi straddle buys **last action both preflop and postflop** — the one straddle with a real positional case. Not allowed everywhere.
+- **Mississippi straddle** — can be posted from **any position**, most powerfully from the button or cutoff. Action starts to the straddler's left, so a button Mississippi straddle adds the **last word preflop** to the postflop position the button already has — the one straddle with a real positional case. Not allowed everywhere.
 - **Button straddle** — a Mississippi-style straddle specifically from the button; the button keeps last action all the way down. Exact flow (where the small blind fits) varies by room — confirm with the dealer.
 - **Sleeper straddle** — a blind from a non-UTG seat that stays "asleep": it's **inactive unless the action folds all the way to it**. Position it never buys; whether it gains the option to raise as a live blind once it "wakes up" is house-rules territory. Rare, and almost never seen online.
 - **Re-straddle (double straddle)** — a player to the left can straddle *over* a straddle, for a minimum of double the previous one ($4 → $8 → $16). Whether it's allowed, and from which seats, is pure house rules.
@@ -166,7 +166,7 @@ A. No. A straddle is a blind bet, not a raise — it resets the price everyone m
 
 **Q. What is a Mississippi straddle?**
 
-A. A Mississippi straddle can be posted from any position, not just under the gun — commonly the button or cutoff. Action then starts to the straddler's left, so a button Mississippi straddle buys last action both preflop and postflop, which is why it's the one straddle with a genuine positional argument. It's not allowed in every room.
+A. A Mississippi straddle can be posted from any position, not just under the gun — commonly the button or cutoff. Action then starts to the straddler's left, so a button Mississippi straddle adds the last word preflop to the postflop position the button already has, which is why it's the one straddle with a genuine positional argument. It's not allowed in every room.
 
 **Q. What is a sleeper straddle?**
 

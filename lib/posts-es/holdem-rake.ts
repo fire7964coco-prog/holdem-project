@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "El rake es la pequeña tajada que la sala se lleva de cada bote por montar la partida — normalmente entre 2.5 y 10% hasta un tope de unos pocos dólares. La mayoría de salas no cobra nada si todos foldean antes del flop ('no flop, no drop'). Golpea más fuerte a los límites bajos y a las mesas cortas, y el rakeback devuelve una parte a los regulares.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-12",
+  masterUpdated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🏦",
@@ -46,7 +46,7 @@ En un cash game normalmente se toma directamente del bote: un pequeño porcentaj
 
 ![Un repartidor barriendo unas fichas del centro del bote hacia la ranura del rake de la mesa antes de empujar el resto al ganador](/images/holdem-rake-drop.webp "Rake por bote: un pequeño porcentaje recortado del bote y depositado antes de pagar al ganador")
 
-No existe un único tipo de rake. Cómo cobra la casa su dinero depende de los límites y de la sala, y las diferencias importan — aquí tienes la comparación que ninguna página rival deja clara:
+No existe un único tipo de rake. Cómo cobra la casa su dinero depende de los límites y de la sala, y las diferencias importan — cuatro métodos, y el que use tu sala decide cuánto pagas de verdad:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

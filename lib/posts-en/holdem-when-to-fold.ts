@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Folding is the most underrated skill in poker — a fold's worst outcome is zero, while a losing call bleeds chips every time. A solid player folds around 75–85% of hands before the flop, releases missed hands and weak draws that don't meet their pot odds after it, and — hardest of all — lays down strong-but-beaten hands when a passive opponent's line screams value. Most players don't call too much because they can't read hands; they call because the chips already in the pot feel like theirs. They aren't.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-09",
+  updated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🛡️",
@@ -138,7 +138,7 @@ Between the two extremes sit the two losing profiles: the **calling station** wh
 
 ## "Should I Fold?" — A 30-Second Self-Check
 
-Before any big call, run this checklist. If the honest answers keep pointing to "I only beat a bluff here," you have a fold:
+Before any big call, run this checklist. Four of the five questions can send you straight to the fold on their own; the fifth is the one that can still argue for a call:
 
 :::steps
 Can I name the worse hands they'd bet this way? | If the only hands that bet like this beat me, I'm paying off value.

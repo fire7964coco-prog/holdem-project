@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Straddle adalah taruhan blind opsional — biasanya dua kali big blind — yang dipasang sebelum kartu dibagi. Ia membeli aksi terakhir bagi si straddler dan opsi untuk raise preflop, menggandakan taruhan. Dalam hampir semua kasus ini adalah play -EV, dan dalam praktiknya hanya ada di cash game sesuai aturan rumah.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-12",
+  masterUpdated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "10 mnt",
   emoji: "💰",
@@ -67,9 +67,9 @@ Si straddler beraksi TERAKHIR | Jika tak ada yang raise, si straddler bisa check
 
 ## Jenis-Jenis Straddle (UTG, Mississippi, Button & Sleeper)
 
-![Taruhan straddle dipasang di samping tombol dealer, menunjukkan button atau Mississippi straddle yang membeli posisi terakhir untuk tangan itu](/images/holdem-straddle-button.webp "Sebuah button (Mississippi) straddle dipasang dari button — satu-satunya straddle yang membeli aksi terakhir postflop juga")
+![Taruhan straddle dipasang di samping tombol dealer, menunjukkan button atau Mississippi straddle yang dipasang dari kursi yang memang sudah beraksi terakhir setelah flop](/images/holdem-straddle-button.webp "Sebuah button (Mississippi) straddle dipasang dari button — satu-satunya straddle yang dipasang dari kursi yang memang sudah beraksi terakhir setelah flop")
 
-Tak semua straddle sama — dan perbedaannya semuanya soal **di mana aksi dimulai dan berapa lama Anda mempertahankan posisi terakhir.** Berikut perbandingan yang tak Anda temukan tersusun di satu tempat di halaman mana pun:
+Tak semua straddle sama — dan perbedaannya semuanya soal **di mana aksi dimulai dan berapa lama Anda mempertahankan posisi terakhir.** Berikut perbandingannya:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -83,10 +83,10 @@ Tak semua straddle sama — dan perbedaannya semuanya soal **di mana aksi dimula
 
 </div>
 
-*Mississippi straddle hanya membeli aksi terakhir postflop kalau dipasang ==di button==. Setelah flop, urutan ditentukan semata-mata oleh button, jadi straddle dari cutoff hanya memberi Anda kata terakhir sebelum flop.
+*Mississippi straddle baru beraksi terakhir setelah flop kalau dipasang ==di button== — dan itu datang dari button-nya, bukan dari straddle-nya. Setelah flop, urutan ditentukan semata-mata oleh button, jadi straddle dari cutoff hanya memberi Anda kata terakhir sebelum flop.
 
 - **UTG straddle** — yang klasik. Dipasang di under the gun, aksi terakhir hanya preflop. Paling umum dan, secara posisi, paling lemah.
-- **Mississippi straddle** — bisa dipasang dari **posisi mana pun**, paling kuat dari button atau cutoff. Aksi dimulai dari kiri si straddler, jadi sebuah button Mississippi straddle membeli **aksi terakhir baik preflop maupun postflop** — satu-satunya straddle dengan alasan posisi yang nyata. Tak diizinkan di semua tempat.
+- **Mississippi straddle** — bisa dipasang dari **posisi mana pun**, paling kuat dari button atau cutoff. Aksi dimulai dari kiri si straddler, jadi sebuah button Mississippi straddle menambahkan **kata terakhir di preflop** pada posisi postflop yang memang sudah dimiliki button — satu-satunya straddle dengan alasan posisi yang nyata. Tak diizinkan di semua tempat.
 - **Button straddle** — straddle gaya Mississippi khusus dari button; button mempertahankan aksi terakhir sepanjang jalan. Alur persisnya (di mana small blind masuk) berbeda per ruangan — pastikan dengan dealer.
 - **Sleeper straddle** — sebuah blind dari kursi non-UTG yang tetap "tidur": ia **tidak aktif kecuali aksi fold sampai ke sana**. Sleeper straddle tak pernah membeli posisi; apakah opsi untuk raise ikut hidup begitu blind-nya "terbangun" adalah wilayah aturan rumah. Langka, dan hampir tak pernah terlihat online.
 - **Re-straddle (double straddle)** — pemain di kiri bisa straddle *di atas* sebuah straddle, minimal dua kali lipat dari yang sebelumnya ($4 → $8 → $16). Apakah diizinkan, dan dari kursi mana, murni aturan rumah.
@@ -167,7 +167,7 @@ A. Tidak. Straddle adalah taruhan blind, bukan raise — ia mereset harga yang h
 
 **Q. Apa itu Mississippi straddle?**
 
-A. Mississippi straddle bisa dipasang dari posisi mana pun, tak hanya under the gun — umumnya button atau cutoff. Aksi lalu dimulai dari kiri si straddler, jadi sebuah button Mississippi straddle membeli aksi terakhir baik preflop maupun postflop, itulah kenapa ia satu-satunya straddle dengan argumen posisi yang sejati. Ia tak diizinkan di setiap ruangan.
+A. Mississippi straddle bisa dipasang dari posisi mana pun, tak hanya under the gun — umumnya button atau cutoff. Aksi lalu dimulai dari kiri si straddler, jadi sebuah button Mississippi straddle menambahkan kata terakhir di preflop pada posisi postflop yang memang sudah dimiliki button, itulah kenapa ia satu-satunya straddle dengan argumen posisi yang sejati. Ia tak diizinkan di setiap ruangan.
 
 **Q. Apa itu sleeper straddle?**
 

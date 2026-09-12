@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ein Out ist jede Karte im Deck, die deine Hand zu einem wahrscheinlichen Gewinner verbessert. Zähle sie, dann rechne um: multipliziere die Outs am Flop mit 4 oder am Turn mit 2 für deinen groben Prozentwert. Ein Flushdraw sind 9 Outs ≈ 36% bis zum River.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-12",
+  masterUpdated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "🎯",
@@ -73,7 +73,7 @@ Präge dir diese ein und du erkennst deine Out-Zahl auf einen Blick. Das ist die
 
 | Dein Draw | Outs | Warum |
 |:---|:---:|:---|
-| Flush + beidseitig offene Straße | 15 | Das Monster – zwei Draws auf einmal |
+| Flush + beidseitig offene Straße | 15 | 9 Flush + 8 Straße − 2 geteilte Karten – das Monster |
 | Flush + Gutshot | 12 | 9 Flush + 4 Gutshot − 1 geteilte Karte |
 | Flushdraw | 9 | 13 einer Farbe − 4 sichtbare |
 | Beidseitig offener Straßendraw | 8 | Vier Karten an jedem Ende |

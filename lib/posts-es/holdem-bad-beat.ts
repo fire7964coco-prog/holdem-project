@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un bad beat es cuando metes las fichas siendo favorito clarísimo —normalmente 80% o más— y pierdes porque tu rival liga una carta afortunada para 'cazarte' (suck out). A diferencia de un cooler, ibas por delante todo el rato; la baraja simplemente te traicionó al final. Duele, pero los bad beats son en realidad señal de que juegas en una partida rentable.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-12",
+  masterUpdated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "💔",
@@ -90,7 +90,7 @@ Todo bad beat tiene la misma forma: eres el favorito, el desfavorecido necesita 
 |:---|:---|:---:|:---|
 | **Ases rotos por un trío** | AA vs una pareja menor (p. ej. 7‑7) | ~80% (4:1) | Su pareja liga trío en el flop, el turn o el river |
 | **Ases vs una mano cualquiera** | AA all-in preflop | ~85% | Dos cartas cualesquiera te adelantan |
-| **Sobrepar vs proyecto de color (caso límite)** | Sobrepar en el flop | ~63% (1.7:1) | Su proyecto de color de 9 outs se completa en el river |
+| **Sobrepar vs proyecto de color (caso límite)** | Sobrepar en el flop | ~63% (1.7:1) | Sus nueve outs de color, más doble pareja o escalera backdoor, llegan para el river |
 | **Runner-runner** | Una mano hecha por delante en el flop | ~90%+ | Dos cartas perfectas (turn *y* river) completan un proyecto |
 | **El one-outer** | Una mano casi blindada | ~96% | La única carta que queda en la baraja te gana |
 
@@ -140,7 +140,7 @@ Ese es el techo del dolor de un bad beat: no un favorito del 80% cayendo, sino *
 
 Ahora la verdad que convierte los bad beats de combustible de tilt en una fuente silenciosa de confianza. **Cada bad beat que recibes es prueba de que juegas en una partida ganable.**
 
-Piensa en lo que exige un bad beat: un rival que metió su dinero *por detrás*, como desfavorecido matemático, y tuvo suerte. Eso es un jugador tomando **decisiones perdedoras** — exactamente el rival que quieres. Si nadie en tu mesa te cazara nunca una carta, significaría que todos tiran sus manos flojas correctamente, y no habría dinero que ganar. Como dice una máxima de coaching muy conocida, un suckout de un jugador flojo es un *regalo*: es el precio de la entrada por llevarte sus fichas las otras cuatro veces.
+Piensa en lo que exige un bad beat: un rival que metió su dinero *por detrás*, como desfavorecido matemático, y tuvo suerte. La mayoría de las veces, eso es un jugador tomando **decisiones perdedoras** — exactamente el rival que quieres. Si nadie en tu mesa te cazara nunca una carta, significaría que todos tiran sus manos flojas correctamente, y no habría dinero que ganar. Como dice una máxima de coaching muy conocida, un suckout de un jugador flojo es un *regalo*: es el precio de la entrada por llevarte sus fichas las otras cuatro veces.
 
 Sobre una muestra suficientemente grande, los bad beats que recibes y los que *repartes* se cancelan más o menos. Lo que queda — lo único que de verdad mueve tus resultados a largo plazo — es la calidad de tus decisiones. **Meter el dinero por delante y perder sigue siendo una victoria** en todo lo que importa con el tiempo. Las fichas volverán; la ventaja es permanente, la varianza es temporal.
 

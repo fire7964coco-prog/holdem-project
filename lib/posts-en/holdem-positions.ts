@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Poker positions are seat names measured from the dealer button — UTG, lojack, hijack, cutoff, button, and the blinds — and they move one seat clockwise every hand. Preflop, UTG acts first and the big blind last; postflop, the small blind acts first and the button last. Physical seat numbers never move; positions do.",
   category: "strategy",
   date: "2026-06-13",
-  updated: "2026-09-09",
+  updated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🎯",
@@ -26,7 +26,7 @@ export const POST: Post = {
   content: `
 My first live cash game, I was seated in what I'd later learn was UTG. I looked down at J♥ J♠ and raised. The hijack called. The cutoff called. The button called. The big blind 3-bet. I had no idea what to do — I called and bled chips across three streets.
 
-Two orbits later I was on the button with the same J♥ J♠. I raised. Everyone folded. I won $14 without ever seeing a flop.
+Three hands later I was on the button with the same J♥ J♠. I raised. Everyone folded. I won $14 without ever seeing a flop.
 
 Same hand. Completely different result. The only thing that changed was my seat — and that night I realized I didn't actually know what the seats were *called*, let alone what they meant. If you're still learning how a full hand flows from deal to showdown, start with the [Texas Hold'em rules guide](/en/blog/texas-holdem-rules-for-beginners); this article is the seat map that guide assumes you know.
 

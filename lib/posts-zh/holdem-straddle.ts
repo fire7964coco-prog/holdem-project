@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "straddle 就是发牌前主动补的一个盲注——通常是大盲的 2 倍。它替抓的人买下翻前最后行动权和加注权，把赌注翻倍。绝大多数情况下这是一个 -EV 的打法，而且现金局之外几乎不允许抓。",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-12",
+  masterUpdated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "10 分钟",
   emoji: "💰",
@@ -74,9 +74,9 @@ straddle 不是通常意义上的加注——它是一个重置价格的盲注�
 > **快速回答**
 > UTG straddle 只买到翻前最后一句话；Mississippi 可从任何座位抓，从按钮位抓（就是 Button straddle）时连翻后也最后行动；Sleeper 要等行动弃到它才激活，位置从来买不到；Re-straddle 是再翻一倍。
 
-![一个 straddle 盲注放在庄家按钮旁边，展示的是买下这手牌最后位置的 button 或 mississippi straddle](/images/holdem-straddle-button.webp "一次 button（mississippi）straddle 从按钮位抓——唯一一种连翻后也买下最后行动的 straddle")
+![一个 straddle 盲注放在庄家按钮旁边，展示的是从翻后本来就最后行动的座位抓的 button 或 mississippi straddle](/images/holdem-straddle-button.webp "一次 button（mississippi）straddle 从按钮位抓——唯一一种从翻后本来就最后行动的座位抓的 straddle")
 
-不是所有 straddle 都一样——它们的区别全在于 **行动从哪里开始、你能把最后位置保住多久**。这是没有别的页面在一处摆出来过的对比：
+不是所有 straddle 都一样——它们的区别全在于 **行动从哪里开始、你能把最后位置保住多久**。各种 straddle 的对比如下：
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -90,10 +90,10 @@ straddle 不是通常意义上的加注——它是一个重置价格的盲注�
 
 </div>
 
-*mississippi straddle 只有下在==按钮位==上，翻后才是最后行动。翻牌之后的顺序完全由按钮位决定，所以从 CO 抓的 straddle 只买到翻前的最后一句话。*
+*mississippi straddle 只有下在==按钮位==上翻后才是最后行动，而那是按钮位本身带来的，不是 straddle 买来的。翻牌之后的顺序完全由按钮位决定，所以从 CO 抓的 straddle 只买到翻前的最后一句话。*
 
 - **UTG straddle**——经典款。在枪口位抓，只在翻前最后行动。最常见、但从位置上说最弱。
-- **Mississippi straddle**——可以从 **任何位置** 抓，从按钮位或关煞位抓时威力最大。行动从抓 straddle 者左边开始，所以一次 button 的 mississippi straddle 买下 **翻前和翻后都最后行动**——是唯一一种真有位置理由的 straddle。并非所有牌房都允许。
+- **Mississippi straddle**——可以从 **任何位置** 抓，从按钮位或关煞位抓时威力最大。行动从抓 straddle 者左边开始，所以一次 button 的 mississippi straddle 是把 **翻前的最后一句话** 加在按钮位本来就有的翻后位置上——是唯一一种真有位置理由的 straddle。并非所有牌房都允许。
 - **Button straddle**——特指从按钮位抓的 mississippi 式 straddle；按钮位一路保持最后行动。具体流程（小盲怎么安排）各房不同——跟荷官确认。
 - **Sleeper straddle**——从非枪口位的座位补的一个盲注，它保持「睡着」：**除非行动一路弃到它这儿，否则它不激活**。位置它从来买不到；而它「睡醒」后作为活盲有没有加注权，要看各家房规。很少见，线上几乎见不到。
 - **Re-straddle（double straddle）**——左边的玩家可以在一个 straddle *之上*再抓 straddle，最低是前一个的两倍（$4 → $8 → $16）。允不允许、能从哪些座位抓，纯看房规。
@@ -200,7 +200,7 @@ A. 不算。straddle 是一个盲注，不是加注——它重置了每个人�
 
 **Q. 什么是 mississippi straddle？**
 
-A. mississippi straddle 可以从任何位置抓，不只是枪口位——常见的是按钮位或关煞位。然后行动从抓 straddle 者左边开始，所以一次 button 的 mississippi straddle 买下翻前和翻后都最后行动，这就是为什么它是唯一一种有真正位置理由的 straddle。并非每家牌房都允许。
+A. mississippi straddle 可以从任何位置抓，不只是枪口位——常见的是按钮位或关煞位。然后行动从抓 straddle 者左边开始，所以一次 button 的 mississippi straddle 是把翻前的最后一句话加在按钮位本来就有的翻后位置上，这就是为什么它是唯一一种有真正位置理由的 straddle。并非每家牌房都允许。
 
 **Q. 什么是 sleeper straddle？**
 

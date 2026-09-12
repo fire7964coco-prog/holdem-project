@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A bad beat is when you get your money in as a heavy favorite — usually 80% or more — and lose because your opponent hits a lucky card to 'suck out' on you. Unlike a cooler, you were ahead the whole way; the deck just betrayed you at the end. It stings, but bad beats are actually a sign you're playing in a profitable game.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-11",
+  updated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "💔",
@@ -89,7 +89,7 @@ Every bad beat has the same shape: you're the favorite, the underdog needs help,
 |:---|:---|:---:|:---|
 | **Aces cracked by a set** | AA vs a lower pair (e.g. 7‑7) | ~80% (4:1) | Their pair hits a set on the flop, turn or river |
 | **Aces vs a random hand** | AA all-in preflop | ~85% | Any two cards run you down |
-| **Overpair vs a flush draw (borderline)** | Overpair on the flop | ~63% (1.7:1) | Their 9-out flush draw fills on the river |
+| **Overpair vs a flush draw (borderline)** | Overpair on the flop | ~63% (1.7:1) | Their nine flush outs, plus backdoor two pair or straight, get there by the river |
 | **Runner-runner** | A made hand ahead on the flop | ~90%+ | Two perfect cards (turn *and* river) complete a draw |
 | **The one-outer** | A near-locked hand | ~96% | The single card left in the deck beats you |
 
@@ -139,7 +139,7 @@ That's the ceiling of bad-beat pain: not an 80% favorite going down, but *four a
 
 Now the truth that turns bad beats from tilt-fuel into a quiet source of confidence. **Every bad beat you take is proof you're playing in a beatable game.**
 
-Think about what a bad beat requires: an opponent who put their money in *behind*, as a mathematical underdog, and got lucky. That's a player making **losing decisions** — exactly the opponent you want. If nobody at your table ever drew out on you, it would mean everyone was folding their weak hands correctly, and there'd be no money to win. As one well-known coaching maxim puts it, a suckout from a weak player is a *gift*: it's the price of admission for getting their chips the other four times.
+Think about what a bad beat requires: an opponent who put their money in *behind*, as a mathematical underdog, and got lucky. Most of the time that's a player making **losing decisions** — exactly the opponent you want. If nobody at your table ever drew out on you, it would mean everyone was folding their weak hands correctly, and there'd be no money to win. As one well-known coaching maxim puts it, a suckout from a weak player is a *gift*: it's the price of admission for getting their chips the other four times.
 
 Over a large enough sample, the beats you take and the beats you *deliver* roughly cancel out. What's left — the only thing that actually drives your long-term results — is the quality of your decisions. **Getting your money in good and losing is still a win** in every way that matters over time. The chips will come back; the edge is permanent, the variance is temporary.
 

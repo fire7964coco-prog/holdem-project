@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un out es cualquier carta que queda en la baraja y convierte tu mano en una probable ganadora. Cuéntalos y conviértelos: multiplica los outs por 4 en el flop o por 2 en el turn para tu % aproximado de ligar. Un proyecto de color son 9 outs ≈ 36% para el river.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-12",
+  masterUpdated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🎯",
@@ -71,10 +71,10 @@ Memoriza esto y reconocerás tu número de outs a simple vista. Esta es la tabla
 
 | Tu proyecto | Outs | Por qué |
 |:---|:---:|:---|
-| Color + escalera abierta | 15 | El monstruo — dos proyectos a la vez |
+| Color + escalera abierta | 15 | 9 de color + 8 de escalera − 2 cartas compartidas — el monstruo |
+| Color + gutshot | 12 | 9 de color + 4 de gutshot − 1 carta compartida |
 | Proyecto de color | 9 | 13 de un palo − 4 que ves |
 | Proyecto de escalera abierto | 8 | Cuatro cartas en cada extremo |
-| Color + gutshot | 12 | 9 de color + 4 de gutshot − 1 carta compartida |
 | Dos sobrecartas | 6 | Tres de cada valor para emparejar |
 | Una pareja → doble pareja o trío | 5 | 3 para emparejar tu kicker + 2 para ligar el trío |
 | Gutshot (escalera interior) | 4 | Solo un valor rellena el hueco |

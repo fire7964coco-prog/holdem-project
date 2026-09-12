@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Di turnamen poker Anda membayar buy-in tetap untuk mendapat chip, blind naik mengikuti timer sampai satu pemain memegang semua chip. 10–15% pemain teratas ITM. Formatnya meliputi freezeout, PKO, satellite, dan deepstack — masuk lewat buy-in langsung, satellite, atau pra-registrasi online.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-12",
+  masterUpdated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "14 mnt",
   emoji: "🏆",
@@ -211,7 +211,7 @@ Satu postingan tidak bisa mengajarkan strategi turnamen lengkap — itu tugas pa
 
 ## Apa yang Terjadi di Day 1 — Jam demi Jam
 
-Ini yang tidak diberitahukan panduan lain. Inilah timeline Day 1 realistis untuk freezeout live $300 dengan waktu mulai jam 12 siang:
+Ini bagian yang biasanya baru dipelajari pemula lewat pengalaman pahit. Inilah timeline Day 1 realistis untuk freezeout live $300 dengan waktu mulai jam 12 siang:
 
 <div style="background:rgba(255,248,210,0.06);border:1px solid rgba(255,240,180,0.25);border-radius:12px;padding:20px 24px;margin:20px 0">
 <div style="font-size:13px;font-weight:700;color:hsl(var(--primary));margin-bottom:14px">Timeline Day 1 — Freezeout $300, 10.000 Chip Awal</div>

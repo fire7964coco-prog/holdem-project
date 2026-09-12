@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Num torneio de poker você paga um buy-in fixo por fichas, e os blinds sobem num relógio até uma pessoa ficar com todas as fichas. Os 10–15% melhores do field entram no dinheiro. Os formatos incluem freezeout, PKO, satellite e deepstack — você entra por buy-in direto, satellite ou pré-registro online.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-12",
+  masterUpdated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏆",
@@ -211,7 +211,7 @@ Um post só não ensina estratégia completa de torneio — é pra isso que serv
 
 ## O que acontece no Day 1 — hora a hora
 
-Isto é o que nenhum outro guia te conta. Aqui está uma linha do tempo realista de Day 1 pra um freezeout ao vivo de $300 com início às 12h:
+Esta é a parte que a maioria dos iniciantes só aprende do jeito difícil. Aqui está uma linha do tempo realista de Day 1 pra um freezeout ao vivo de $300 com início às 12h:
 
 <div style="background:rgba(255,248,210,0.06);border:1px solid rgba(255,240,180,0.25);border-radius:12px;padding:20px 24px;margin:20px 0">
 <div style="font-size:13px;font-weight:700;color:hsl(var(--primary));margin-bottom:14px">Linha do tempo do Day 1 — freezeout de $300, 10.000 fichas iniciais</div>

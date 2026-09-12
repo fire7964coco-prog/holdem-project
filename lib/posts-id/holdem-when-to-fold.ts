@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Fold adalah skill paling diremehkan di poker — hasil terburuk sebuah fold adalah nol, sementara call yang kalah menguras chip setiap kali. Pemain solid fold sekitar 75–85% tangan sebelum flop, melepas tangan yang meleset dan draw lemah yang tak memenuhi pot odds mereka setelahnya, dan — yang paling sulit — melepas tangan kuat-tapi-kalah saat line lawan pasif jelas menunjukkan value. Kebanyakan pemain tidak call terlalu banyak karena tak bisa membaca tangan; mereka call karena chip yang sudah ada di pot terasa milik mereka. Padahal bukan.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-12",
+  masterUpdated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "16 mnt",
   emoji: "🛡️",
@@ -139,7 +139,7 @@ Di antara dua ekstrem itu duduk dua profil pecundang: **calling station** yang t
 
 ## "Haruskah Saya Fold?" — Cek Diri 30 Detik
 
-Sebelum call besar apa pun, jalankan checklist ini. Jika jawaban jujur terus mengarah ke "saya hanya mengalahkan bluff di sini," Anda punya fold:
+Sebelum call besar apa pun, jalankan checklist ini. Empat dari lima pertanyaan ini sudah cukup sendirian untuk mengirim Anda ke fold; yang kelima masih bisa membela call:
 
 :::steps
 Bisakah saya menyebut tangan lebih buruk yang akan mereka taruhkan begini? | Jika hanya tangan yang bertaruh begini mengalahkan saya, saya membayar value.

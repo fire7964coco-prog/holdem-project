@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "In einem Pokerturnier zahlst du ein festes Buy-in für Chips, die Blinds steigen auf einem Timer, bis ein Spieler alle Chips hält. Die Top 10–15% des Feldes kommen in die Payouts. Formate sind Freezeout, PKO, Satellite und Deepstack – der Einstieg läuft über direktes Buy-in, Satellite oder Online-Vorregistrierung.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-12",
+  masterUpdated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "14 Min.",
   emoji: "🏆",
@@ -318,7 +318,7 @@ Ein Beitrag kann keine vollständige Turnierstrategie lehren – dafür gibt es 
 > **Kurze Antwort**
 > Rechne mit einem langen Tag. Zwischen Registrierungsöffnung und dem Platzen der Money-Bubble liegen im Beispiel unten rund zwölf Stunden, unterbrochen von einer Dinner-Pause. Die entscheidenden Marken sind der Schluss der Late Registration – erst dann steht die Feldgröße fest – und der Beginn des Hand-for-Hand-Spiels kurz vor den Geldrängen.
 
-Das erzählt dir kein anderer Guide. Hier ist eine realistische Tag-1-Timeline für einen Live-€300-Freezeout mit 12-Uhr-Startzeit:
+Das ist der Teil, den die meisten Anfänger nur auf die harte Tour lernen. Hier ist eine realistische Tag-1-Timeline für einen Live-€300-Freezeout mit 12-Uhr-Startzeit:
 
 <div style="background:rgba(255,248,210,0.06);border:1px solid rgba(255,240,180,0.25);border-radius:12px;padding:20px 24px;margin:20px 0">
 <div style="font-size:13px;font-weight:700;color:hsl(var(--primary));margin-bottom:14px">Tag-1-Timeline – €300-Freezeout, 10.000 Startchips</div>

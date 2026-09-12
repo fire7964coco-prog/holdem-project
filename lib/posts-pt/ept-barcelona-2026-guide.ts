@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "O EPT Barcelona 2026 aconteceu de 16 a 29 de agosto no Casino Barcelona. O italiano Manuel Ferrari venceu o Main Event de €5.300 e levou €1.002.488 de uma premiação de €8.841.550 com 1.823 inscrições. Para 2027, o caminho online mais barato continua sendo o Power Path a partir de $0,50 → Gold Pass (Main de €5.300 + side event de €1.100 + 8 noites de hotel + €690 de despesas). Você precisa de conta PokerStars Live e passaporte válido, e vale reservar hotel cedo — agosto é alta temporada.",
   category: "tournament",
   date: "2026-06-17",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-12",
+  masterUpdated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🃏",
@@ -97,7 +97,8 @@ O festival roda duas séries paralelas: o **PokerStars Open** (portas de entrada
 
 | Evento | Datas | Buy-In | Pra Quem É |
 |:---|:---|:---:|:---|
-| PokerStars Cup | 20–21 de ago | **€825** | Melhor porta de entrada pra estreantes |
+| €330 Deep Stack (#76) | 29 de ago | **€330** | Evento próprio mais barato do festival — um dia, re-entry ilimitado |
+| PokerStars Cup | 20–21 de ago | **€825** | Melhor porta de entrada **de vários dias** pra estreantes |
 | PokerStars Open Main Event | 16–22 de ago | **€1.650** | Grinders de stakes médias |
 | PokerStars Open High Roller | 21–23 de ago | **€2.700** | Ponte entre o Open e o EPT |
 | EPT Mystery Bounty | 25–27 de ago | **€3.250** | Formato de knockout com bounties aleatórios |
@@ -107,7 +108,7 @@ O festival roda duas séries paralelas: o **PokerStars Open** (portas de entrada
 
 </div>
 
-> **Dica de estreante:** Se o Main Event de €5.300 parece pesado, o ==g:**PokerStars Cup de €825**== é um torneio legítimo com premiação de verdade. Muita gente usa como aquecimento antes de dar uma tacada no Main Event.
+> **Dica de estreante:** Se o Main Event de €5.300 parece pesado, o ==g:**PokerStars Cup de €825**== é um torneio de dois dias com premiação de verdade e um field feito pra estreantes (o €330 Deep Stack é mais barato, mas é de um dia só). Muita gente usa como aquecimento antes de dar uma tacada no Main Event.
 
 ---
 
@@ -167,7 +168,7 @@ Não quer grindar quatro etapas? A PokerStars também roda **satellites diretos*
 
 ## Custo total da viagem ao EPT Barcelona 2026 — orçamento realista detalhado
 
-==r:Aqui está o que os concorrentes não te contam: o buy-in é só parte do custo.== Vamos detalhar quanto uma viagem realista ao EPT Barcelona custa de verdade.
+==r:O buy-in é só parte do custo.== Vamos detalhar quanto uma viagem realista ao EPT Barcelona custa de verdade.
 
 ### Cenário Econômico: PokerStars Cup (€825)
 
@@ -193,8 +194,8 @@ Não quer grindar quatro etapas? A PokerStars também roda **satellites diretos*
 | Hotel (10 noites, categoria média) | €1.000–€1.800 |
 | Buy-in do EPT Main Event | **€5.300** |
 | Comida e transporte diários (10 dias) | €500–€800 |
-| Side events (opcional) | €825–€3.250 |
-| ==**Estimativa total da viagem**== | ==**€7.775–€11.550**== |
+| Side events (opcional) | €330–€3.250 |
+| ==**Estimativa total da viagem**== | ==**€7.280–€11.550**== |
 
 </div>
 
@@ -416,7 +417,7 @@ Imprima isto e vá marcando antes de sair pro aeroporto:
 
 **Q. Posso jogar o EPT Barcelona se nunca joguei um torneio ao vivo antes?**
 
-A. Pode — mas ==g:comece com o PokerStars Cup de €825== em vez do Main Event. O Cup tem um field menor, estrutura mais curta e buy-in mais baixo. É o melhor jeito de vivenciar um festival da PokerStars Live antes de comprometer €5.300.
+A. Pode — mas ==g:comece com o PokerStars Cup de €825== em vez do Main Event. O Cup tem um field menor, estrutura mais curta e buy-in mais baixo. É o melhor jeito de vários dias de vivenciar um festival da PokerStars Live antes de comprometer €5.300.
 
 **Q. Preciso de uma conta PokerStars, ou só de uma conta PokerStars Live?**
 

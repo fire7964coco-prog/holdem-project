@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ein Straddle ist ein optionaler Blind-Einsatz – meist das Doppelte des Big Blinds – der gesetzt wird, bevor die Karten ausgeteilt werden. Er kauft dem Straddler die letzte Action preflop und die Option zu raisen, und verdoppelt so den Einsatz. In nahezu jedem Fall ist es ein -EV-Spielzug und fast immer auf Cashgames nach Hausregeln beschränkt.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-12",
+  masterUpdated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "💰",
@@ -74,9 +74,9 @@ Diese „letzte Action preflop“ ist es, wofür der Straddler bezahlt. Aber mer
 > **Kurze Antwort**
 > Es gibt vier gängige Typen, und sie unterscheiden sich nur darin, **wo** der Blind liegt. Der **UTG-Straddle** ist der Klassiker und positionell der schwächste. Der **Mississippi-Straddle** darf von jedem Platz kommen, der **Button-Straddle** ist der Sonderfall davon mit der besten Position. Der **Sleeper-Straddle** schläft, bis alles zu ihm durchfoldet, und kauft meist gar nichts.
 
-![Ein Straddle-Einsatz neben dem Dealer-Button gesetzt, zeigt einen Button- oder Mississippi-Straddle, der für die Hand die letzte Position kauft](/images/holdem-straddle-button.webp "Ein Button- (Mississippi-) Straddle wird vom Button gesetzt – der einzige Straddle, der auch postflop die letzte Action kauft")
+![Ein Straddle-Einsatz neben dem Dealer-Button gesetzt, zeigt einen Button- oder Mississippi-Straddle vom Platz, der nach dem Flop ohnehin zuletzt handelt](/images/holdem-straddle-button.webp "Ein Button- (Mississippi-) Straddle wird vom Button gesetzt – der einzige Straddle von einem Platz, der nach dem Flop ohnehin zuletzt handelt")
 
-Nicht alle Straddles sind gleich – und die Unterschiede drehen sich alle darum, **wo die Action beginnt und wie lange du die letzte Position behältst.** Hier ist der Vergleich, den keine andere Seite an einem Ort auflistet:
+Nicht alle Straddles sind gleich – und die Unterschiede drehen sich alle darum, **wo die Action beginnt und wie lange du die letzte Position behältst.** Hier ist der Vergleich:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -90,10 +90,10 @@ Nicht alle Straddles sind gleich – und die Unterschiede drehen sich alle darum
 
 </div>
 
-*Die letzte Action nach dem Flop bekommt ein Mississippi-Straddle nur, wenn er ==auf dem Button== gesetzt wird. Nach dem Flop bestimmt allein der Button die Reihenfolge – ein Straddle vom Cutoff kauft dir das letzte Wort also nur vor dem Flop.
+*Nach dem Flop ist ein Mississippi-Straddle nur dann zuletzt dran, wenn er ==auf dem Button== gesetzt wird – und das kommt vom Button selbst, nicht vom Straddle; ein Straddle vom Cutoff kauft dir das letzte Wort also nur vor dem Flop.
 
 - **UTG-Straddle** – der Klassiker. Unter der Pistole gesetzt, letzte Action nur preflop. Der häufigste und positionell der schwächste.
-- **Mississippi-Straddle** – kann von **jeder Position** gesetzt werden, am stärksten vom Button oder Cutoff. Die Action beginnt links vom Straddler, also kauft ein Button-Mississippi-Straddle die **letzte Action sowohl preflop als auch postflop** – der einzige Straddle mit einem echten positionellen Argument. Nicht überall erlaubt.
+- **Mississippi-Straddle** – kann von **jeder Position** gesetzt werden, am stärksten vom Button oder Cutoff. Die Action beginnt links vom Straddler, also fügt ein Button-Mississippi-Straddle der Postflop-Position, die der Button ohnehin hat, das **letzte Wort preflop** hinzu – der einzige Straddle mit einem echten positionellen Argument. Nicht überall erlaubt.
 - **Button-Straddle** – ein Straddle im Mississippi-Stil speziell vom Button; der Button behält die letzte Action bis zum Ende. Der genaue Ablauf (wo der Small Blind hineinpasst) variiert je nach Room – kläre es mit dem Dealer.
 - **Sleeper-Straddle** – ein Blind von einem Nicht-UTG-Platz, der „schlafend“ bleibt: Er ist **inaktiv, es sei denn, die Action foldet ganz bis zu ihm durch**. Wird er dadurch aktiv, ist er ein Live-Blind – Position bringt er trotzdem nie; ob er dann auch die Option zu raisen mitbringt, ist Hausregelsache. Selten und online fast nie zu sehen.
 - **Re-Straddle (Double Straddle)** – ein Spieler links kann *über* einen Straddle straddeln, mindestens für das Doppelte des vorherigen (€4 → €8 → €16). Ob es erlaubt ist und von welchen Plätzen, ist reine Hausregelsache.
@@ -191,7 +191,7 @@ A. Nein. Ein Straddle ist ein Blind-Einsatz, kein Raise – er setzt den Preis n
 
 **Q. Was ist ein Mississippi-Straddle?**
 
-A. Ein Mississippi-Straddle kann von jeder Position gesetzt werden, nicht nur von UTG – häufig vom Button oder Cutoff. Die Action beginnt dann links vom Straddler, also kauft ein Button-Mississippi-Straddle die letzte Action sowohl preflop als auch postflop, weshalb er der einzige Straddle mit einem echten positionellen Argument ist. Er ist nicht in jedem Room erlaubt.
+A. Ein Mississippi-Straddle kann von jeder Position gesetzt werden, nicht nur von UTG – häufig vom Button oder Cutoff. Die Action beginnt dann links vom Straddler, also fügt ein Button-Mississippi-Straddle der Postflop-Position, die der Button ohnehin hat, das letzte Wort preflop hinzu, weshalb er der einzige Straddle mit einem echten positionellen Argument ist. Er ist nicht in jedem Room erlaubt.
 
 **Q. Was ist ein Sleeper-Straddle?**
 

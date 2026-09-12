@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In a poker tournament you pay a fixed buy-in for chips, blinds increase on a timer until one player holds all chips. Top 10–15% of players cash. Formats include freezeout, PKO, satellite, and deepstack — enter via direct buy-in, satellite, or online pre-registration.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-09-11",
+  updated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏆",
@@ -208,7 +208,7 @@ One post can't teach full tournament strategy — that's what the cluster guides
 
 ## What Happens on Day 1 — Hour by Hour
 
-This is what no other guide tells you. Here's a realistic Day 1 timeline for a live $300 freezeout with a 12pm start time:
+This is the part most beginners only learn the hard way. Here's a realistic Day 1 timeline for a live $300 freezeout with a 12pm start time:
 
 <div style="background:rgba(255,248,210,0.06);border:1px solid rgba(255,240,180,0.25);border-radius:12px;padding:20px 24px;margin:20px 0">
 <div style="font-size:13px;font-weight:700;color:hsl(var(--primary));margin-bottom:14px">Day 1 Timeline — $300 Freezeout, 10,000 Starting Chips</div>
