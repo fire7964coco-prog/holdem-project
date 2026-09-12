@@ -60,7 +60,7 @@
 | ㉖ | EN limping `==g:==` 하이라이트가 경고문에 초록 — g=권장/r=경고 관례 위반 |
 | ㉗ | ✅ **종결(queue Q1 `16e8a9ac` · 09-11)** — 콤보 실측 58/112/172 · 13% 유지 · 목록 «지위» 문단 신설 EN+7로케일 · 판정표 `harden-queue-진행` §1-Q1 |
 | ㉘ | EN when-to-fold 표 마무리 문단이 `</div>` 안쪽 |
-| ㉙ | 전략 클러스터 이미지 재사용 3장 + limping↔strategy readnext 썸네일 상이 — 18언어 공용 자산 |
+| ㉙ | 🟢 **2장분 종결(queue Q2-c · 09-12)** — `holdem-button-dealer-board`(3편 → glossary 1편) · `holdem-pub-players-table`(2편 → fish 1편). **잔여만 남는다**: `holdem-starting-hands-premium` · `holdem-starting-hands-weak-ace-trap`(둘 다 `starting-hands-chart` ↔ `pot-odds`/`fish` 쌍) + limping↔strategy readnext 썸네일 상이 |
 | ㉚ | 소품: position-play OOP 60–85% 하한 산술 긴장 · positions «one middle seat»↔LJ · cbet OOP 40–50 ↔ position-play 30–45 |
 | ㉛ | EN rake NL50 «온라인» 예시가 cap $4인데 같은 글이 온라인 캡을 $1–$3로 두 번 선언 — 자기모순 |
 | ㉟ | EN bad-beat 잭팟 절이 자기 기준과 긴장(잭팟 자격 핸드 다수는 suckout 없는 cooler) |
@@ -78,6 +78,8 @@
 | ㊻ | 🆕(queue Q4-7 ① · 09-12) 🔴 EN `holdem-tiebreak-rules` 「The only suit order in the tournament rulebook belongs to stud and razz」는 **틀렸다** — 같은 룰북 용어집 `DEALER BUTTON` 축어 «the highest card by rank and suit to determine the initial position of the Dealer Button» = 스터드·라즈 밖에서 무늬 서열을 쓴다. 같은 문단이 바로 앞에서 그 드로를 설명해 **자기모순**이기도 하다. 8로케일 동형 |
 | ㊼ | 🆕(queue Q4-7 ② · 09-12) 🟠 EN `holdem-when-to-fold` — 「bluff-catcher」가 본문 3회뿐이고 H2·FAQ·tags 어디에도 없다. 같은 글 L153에 **1.5x 오버벳 37.5%** 계산이 이미 있어 FAQ 1문 흡수 비용이 0에 가깝다(저볼륨 롱테일 집합전략) |
 
+| ㊽ | 🆕(queue Q2c-2 ① · 09-12) 🟠 **§14-A 직답 공백** — `holdem-limping` 「4가지 이유」 절과 `holdem-drawing-odds` 셋마이닝 절에 직답 블록이 **de·ja·zh·zh-hant에만 있고 en·es·id·pt엔 없다**(교열 렌즈 실측). Q2-c의 이미지 삭제로 그 절이 H2 → 본문 직행이 돼 더 드러난다 |
+| ㊾ | 🆕(queue Q2c-2 ② · 09-12) 🟠 `lib/render-markdown.ts:200` `height="630"` — 실제 최다 규격은 1200×675(593장 중 **377장** · 1200×630은 **0장**). 선언 비율 1.905 vs 실제 1.778 → 672px 표시 폭에서 **한 장당 약 25px** 밀린다. 🔴 **한 줄 수정이 아니다** — `675`로 바꾸면 비-675 규격 216장이 반대로 어긋난다(설계 판단 = Q7-a) |
 🪶 ㉜㉝㉞(인포그래픽 alt 3건)는 ✅ 종결(`781301e4`).
 
 ---
