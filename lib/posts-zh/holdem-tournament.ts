@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "在锦标赛里你交一笔固定买入换取筹码，盲注按计时器不断上涨，直到一名玩家赢下全部筹码。通常前 10–15% 的人进钱。赛制包括 freezeout、PKO、卫星赛和 deepstack——报名方式有直接买入、卫星赛晋级，或线上预注册。",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-09-12",
-  masterUpdated: "2026-09-12",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "14 分钟",
   emoji: "🏆",
@@ -40,7 +40,7 @@ export const POST: Post = {
 
 :::stripe
 10–15% | 通常能进钱的选手占比
-20–40 分钟 | 现场赛每个盲注级别的时长
+20–40 分钟 | 现场赛每级时长（旗舰主赛 60 分钟起）
 $100+$9 | 一笔典型买入的拆分——奖池 + 手续费
 :::
 
@@ -82,7 +82,7 @@ $100+$9 | 一笔典型买入的拆分——奖池 + 手续费
 > **快速回答**
 > 盲注一开始很小，然后按计时器上涨，现场赛通常每 20–40 分钟涨一级；过了早期级别还会加一个大盲前注。从 Level 1 到 Level 9 你可能一枚筹码都没输，码量却从 200 个大盲掉到 10 个——锦标赛就是这样逼出行动、淘汰玩家的。码量一掉，打法就得跟着变。
 
-这正是大多数新手指南略过、却是锦标赛里最重要的一套机制。级别表长这样（以 10,000 起始筹码为例）：
+这正是大多数新手指南略过、却是锦标赛里最重要的一套机制。20–40 分钟是常规赛事的节奏，旗舰主赛事的级别则是 60 分钟起跳，后面几天还会拉到 90 分钟（WPT Australia 2026 的 Championship Event 就是这么排的）。级别表长这样（以 10,000 起始筹码为例）：
 
 | 级别 | 盲注 | 前注 | 你的 10k 筹码 = |
 |:---|:---:|:---:|:---|
@@ -247,7 +247,7 @@ deepstack 锦标赛让你的起始筹码相对盲注明显高于同系列的标�
 <div style="color:hsl(var(--foreground))">发牌开打。Level 1：盲注 25/50。你有 200BB。打探索性的牌。</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="color:hsl(var(--primary));font-weight:700">1:00–3pm</div>
+<div style="color:hsl(var(--primary));font-weight:700">12:40–2:40pm</div>
 <div style="color:hsl(var(--foreground))">Level 2–4。迟到报名仍开放。人数增长。前注按结构表上场（上面示例里是 Level 3）。有些玩家已经破产。</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">

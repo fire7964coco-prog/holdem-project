@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Das Main Event der APT Incheon 2026 gewann Stephen Pang aus Hongkong – KRW 411.180.000 (~$293.700) nach einem Dreier-ICM-Deal plus die 24K-Gold-Löwentrophäe. Das Feld setzte mit 1.393 Entries einen neuen Rekord, der Preispool lag bei KRW 3.008.880.000. Zweiter wurde Shoumin Zhang (China, KRW 366.500.000 / ~$261.785), Dritter Yifu He (USA). Die Top 3 erhielten zusätzlich Seats für das Main Event der APT Championship 2026 in Taipeh (~$10.000 pro Seat). Nur für ausländische Staatsbürger (koreanische Bürger ohne Wohnsitz im Ausland dürfen nicht rein). Seoul ist ~1 Stunde entfernt – beim nächsten Stopp sind Pokerreise und Korea-Reise wieder dieselbe Reise.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "16 Min.",
   emoji: "🇰🇷",
@@ -76,7 +76,7 @@ Und für internationale Besucher: ==g:Deutschland, Österreich und die Schweiz b
 
 </div>
 
-:::note[**★Zu den USD-Angaben:** Buy-ins und Preisgelder in diesem Artikel sind mit **unterschiedlichen Kursen** umgerechnet – Buy-in rund **1.468 KRW/USD**, die Preisgelder der Endergebnisse rund **1.400 KRW/USD** (so hat der Veranstalter sie bekannt gegeben). Verbindlich ist jeweils der **KRW-Betrag**.]:::
+:::note[**★Zu den USD-Angaben:** Buy-ins und Preisgelder in diesem Artikel sind mit **unterschiedlichen Kursen** umgerechnet – Buy-in rund **1.468 KRW/USD**, die Preisgelder der Endergebnisse rund **1.400 KRW/USD** (so hat der Veranstalter sie bekannt gegeben) – jeder Block rechnet zu dem Kurs, der galt, als seine eigene Quelle erschien. Verbindlich ist der **KRW-Betrag**, außer bei den Natural8-Paketen weiter unten, die der Anbieter in **NT$** ausweist.]:::
 
 ---
 
@@ -90,8 +90,8 @@ Und für internationale Besucher: ==g:Deutschland, Österreich und die Schweiz b
 | Mystery Bounty Hunter | 8.–9. Aug | ~$610 | ~$204K |
 | APT Super High Roller | 9.–10. Aug | ==r:~$10.200== | ~$340K |
 | ==**APT Main Event**== | ==**9.–15. Aug**== | ==**~$1.703**== | ==g:**~$1M**== |
-| Superstar Challenge | 14.–15. Aug | ~$23.800 | – |
 | Zodiac Classic | 13.–14. Aug | ~$2.000 | ~$340K |
+| Superstar Challenge | 14.–15. Aug | ~$23.800 | – |
 | Mini Main Event | 14.–15. Aug | ~$610 | ~$272K |
 | APT High Roller | 15.–16. Aug | ~$3.400 | ~$340K |
 | Ultra Stack | 15.–16. Aug | ~$477 | ~$102K |
@@ -153,7 +153,7 @@ $20 Step Satellite → Ticket für das $200 Mega Satellite gewinnen → Main-Eve
 
 > **Was OnLive war:** Die Route ließ dich Day 1 aus deiner heimischen Zeitzone spielen und nur dann nach Korea fliegen, wenn du bis Day 3 überlebtest – der clevere Weg, wenn das Reisebudget knapp war. ==r:Sie endete am 2. August und ist für diese Ausgabe keine Option mehr== – hier notiert, weil sie beim nächsten APT-Stopp einen Blick wert ist.
 
-**Es gibt einen dritten Weg, den fast keine Anleitung erwähnt: die Country Exclusives.** Natural8 veranstaltet Qualifier, die auf einzelne Länder beschränkt sind, und ein Paket daraus ist nicht nur der Seat, sondern Ticket plus Reisekosten. Der für Incheon 2026 offengelegte Lauf hieß „N8TW x APT Incheon 2026“ – das Paket bestand aus **NT$53.888 für das Ticket plus NT$16.000 Reisekosten**. Normale Satellites geben dir den Platz, den Flug zahlst du selbst. ==r:Für diese Brackets zählt die Staatsangehörigkeit – anders als beim Kontozugang, der am Wohnsitzland hängt== – dieser Lauf stand ausschließlich taiwanischen Staatsbürgern offen, und Natural8 gleicht das in der KYC-Verifizierung ab. Eine geänderte Meldeadresse bringt dich hier also nicht hinein. Prüf in der Lobby, ob für dein Land überhaupt ein Bracket läuft, bevor du den allgemeinen Weg gehst.
+**Es gibt einen dritten Weg, den fast keine Anleitung erwähnt: die Country Exclusives.** Natural8 veranstaltet Qualifier, die auf einzelne Länder beschränkt sind, und ein Paket daraus ist nicht nur der Seat, sondern Ticket plus Reisekosten. Der für Incheon 2026 offengelegte Lauf hieß „N8TW x APT Incheon 2026“ – das Paket bestand aus **NT$53.888 für das Ticket plus NT$16.000 Reisekosten** (rund $1.684 und $500). Natural8 preist diese Pakete in Neuen Taiwan-Dollar aus – deshalb trifft der Ticketwert nicht genau das Buy-in von KRW 2.500.000 (~$1.703) weiter oben. Normale Satellites geben dir den Platz, den Flug zahlst du selbst. ==r:Für diese Brackets zählt die Staatsangehörigkeit – anders als beim Kontozugang, der am Wohnsitzland hängt== – dieser Lauf stand ausschließlich taiwanischen Staatsbürgern offen, und Natural8 gleicht das in der KYC-Verifizierung ab. Eine geänderte Meldeadresse bringt dich hier also nicht hinein. Prüf in der Lobby, ob für dein Land überhaupt ein Bracket läuft, bevor du den allgemeinen Weg gehst.
 
 ---
 

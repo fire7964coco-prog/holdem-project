@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Limping adalah masuk ke pot preflop dengan sekadar call big blind alih-alih raise atau fold. Open-limping (jadi orang pertama yang masuk) hampir selalu keliru — Anda tak bisa memenangkan pot preflop, Anda melepas inisiatif, dan pemain bagus menghukum Anda. Tapi limping tak selalu salah: menyelesaikan small blind, over-limping tangan spekulatif di belakang limper lain, serta beberapa spot live dan short-stack adalah pengecualian yang sah.",
   category: "strategy",
   date: "2026-07-05",
-  updated: "2026-09-12",
-  masterUpdated: "2026-09-12",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "11 mnt",
   emoji: "🚶",
@@ -19,7 +19,7 @@ export const POST: Post = {
   content: `
 Saat mulai bermain, saya limp ke hampir setiap pot. Rasanya aman — saya bisa melihat flop dengan murah, saya tak mempertaruhkan banyak, dan saya "menjaga pilihan tetap terbuka." Yang tak saya sadari adalah setiap pemain berpengalaman di meja langsung mengenali saya begitu saya melakukannya. Limping adalah tanda paling jelas di poker taruhan kecil bahwa seseorang belum sepenuhnya paham apa yang ia lakukan — dan selama dua tahun, orang itu adalah saya.
 
-Sebuah **limp** terjadi saat Anda masuk ke pot sebelum flop dengan sekadar *call* big blind, alih-alih raise atau fold. Kedengarannya tak berbahaya, dan kadang memang wajar — tapi ==g:open-limping sebagai pemain pertama yang masuk== adalah salah satu kebiasaan paling umum dan mahal di permainan ini. Berikut ini persisnya apa itu limping, kenapa ia biasanya merugikan, spot spesifik di mana ia justru benar (tak *selalu* salah), dan bagaimana pemain kuat mengubah limp Anda menjadi keuntungan mereka. Memahami satu konsep ini dengan benar adalah lompatan yang lebih besar daripada yang disadari kebanyakan pemain — ini adalah keputusan ketiga dari sebuah [strategi Texas Hold'em](/id/blog/holdem-strategy "thumb:/images/holdem-strategy-hero.webp") yang menang, tepat setelah memilih kursi dan starting hand Anda.
+Sebuah **limp** terjadi saat Anda masuk ke pot sebelum flop dengan sekadar *call* big blind, alih-alih raise atau fold. Kedengarannya tak berbahaya, dan kadang memang wajar — tapi ==r:open-limping sebagai pemain pertama yang masuk== adalah salah satu kebiasaan paling umum dan mahal di permainan ini. Berikut ini persisnya apa itu limping, kenapa ia biasanya merugikan, spot spesifik di mana ia justru benar (tak *selalu* salah), dan bagaimana pemain kuat mengubah limp Anda menjadi keuntungan mereka. Memahami satu konsep ini dengan benar adalah lompatan yang lebih besar daripada yang disadari kebanyakan pemain — ini adalah keputusan ketiga dari sebuah [strategi Texas Hold'em](/id/blog/holdem-strategy "thumb:/images/holdem-strategy-hero.webp") yang menang, tepat setelah memilih kursi dan starting hand Anda.
 
 ---
 

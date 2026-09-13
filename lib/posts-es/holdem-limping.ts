@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Limpear es entrar en un bote preflop solo igualando la ciega grande en lugar de subir o foldear. El open-limp (ser el primero en entrar) casi siempre es un error — no puedes ganar el bote preflop, cedes la iniciativa y los buenos jugadores te castigan. Pero limpear no siempre está mal: completar la ciega pequeña, hacer over-limp con manos especulativas detrás de otros limpers, y algunos casos en vivo y con stack corto son excepciones legítimas.",
   category: "strategy",
   date: "2026-07-05",
-  updated: "2026-09-12",
-  masterUpdated: "2026-09-12",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🚶",
@@ -19,7 +19,7 @@ export const POST: Post = {
   content: `
 Cuando empecé a jugar, limpeaba en casi todos los botes. Se sentía seguro — veía el flop barato, no arriesgaba mucho y "mantenía mis opciones abiertas". Lo que no sabía era que cada jugador con experiencia de la mesa me tenía calado en el instante en que lo hacía. Limpear es la señal más clara en las partidas de stakes bajos de que alguien no sabe del todo lo que hace — y durante dos años, ese alguien fui yo.
 
-Un **limp** es cuando entras en un bote antes del flop solo *igualando* la ciega grande, en lugar de subir o foldear. Suena inofensivo, y a veces está bien — pero ==g:el open-limp siendo el primero en entrar== es uno de los hábitos más comunes y caros del juego. Aquí tienes exactamente qué es limpear, por qué normalmente pierde dinero, los casos concretos en los que sí es correcto (no *siempre* está mal), y cómo los jugadores fuertes convierten tu limp en su beneficio. Acertar con este único concepto es un salto mayor de lo que la mayoría cree — es la tercera decisión de una [estrategia de Texas Hold'em](/es/blog/holdem-strategy "thumb:/images/holdem-strategy-hero.webp") ganadora, justo después de elegir tu asiento y tu mano inicial.
+Un **limp** es cuando entras en un bote antes del flop solo *igualando* la ciega grande, en lugar de subir o foldear. Suena inofensivo, y a veces está bien — pero ==r:el open-limp siendo el primero en entrar== es uno de los hábitos más comunes y caros del juego. Aquí tienes exactamente qué es limpear, por qué normalmente pierde dinero, los casos concretos en los que sí es correcto (no *siempre* está mal), y cómo los jugadores fuertes convierten tu limp en su beneficio. Acertar con este único concepto es un salto mayor de lo que la mayoría cree — es la tercera decisión de una [estrategia de Texas Hold'em](/es/blog/holdem-strategy "thumb:/images/holdem-strategy-hero.webp") ganadora, justo después de elegir tu asiento y tu mano inicial.
 
 ---
 

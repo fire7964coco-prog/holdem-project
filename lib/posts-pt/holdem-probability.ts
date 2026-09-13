@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Até o river você faz um par 43,8% das vezes, dois pares 23,5%, um flush 3,0% e um full house 2,6% — enquanto um royal flush aparece só uma vez a cada 31.000 mãos.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-10",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🎲",
@@ -256,7 +256,7 @@ A. Um atalho para as odds de projeto: multiplique seus outs por 4 no flop (duas 
 
 **Q. Como calcular pot odds?**
 
-A. Divida a quantia que você precisa pagar pelo pote total depois do seu call. Pagar $50 num pote de $150 significa 50 ÷ 200 = 25% — então você precisa de pelo menos 25% de equity para dar call com lucro. Compare isso com suas drawing odds: se sua chance de acertar for maior, você paga.
+A. Divida a quantia que você precisa pagar pelo pote total depois do seu call: pagar $50 num pote de $150 dá 50 ÷ 200 = 25%, a equity de que você precisa. Esta página entrega a outra metade da comparação — com que frequência o seu projeto realmente chega. O lado do preço está em [o guia de pot odds — ratios, atalhos de tamanho de aposta e os erros mais caros](/pt/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp").
 
 **Q. Quais são as odds de set over set?**
 

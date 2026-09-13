@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Hingga river Anda akan membuat one pair 43,8% dari waktu, two pair 23,5%, flush 3,0%, dan full house 2,6% — sementara royal flush hanya muncul sekali dalam sekitar 31.000 tangan.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "13 mnt",
   emoji: "🎲",
@@ -244,11 +244,11 @@ A. 1 dari 221 (0,45%) untuk aces secara spesifik. Sembarang pocket pair, meski b
 
 **Q. Apa itu Aturan 2 dan 4 di poker?**
 
-A. Jalan pintas untuk odds draw — juga disebut "aturan 4-2": kalikan outs Anda dengan 4 di flop (dua kartu akan datang) atau dengan 2 di turn (satu kartu akan datang) untuk memperkirakan persentase peluang hit Anda. Ia akurat dalam satu-dua poin hingga sekitar sembilan outs.
+A. Jalan pintas untuk odds draw — juga disebut "aturan 4-2": kalikan outs Anda dengan 4 di flop (dua kartu akan datang) atau dengan 2 di turn (satu kartu akan datang) untuk memperkirakan persentase peluang hit Anda. Ia akurat dalam satu-dua poin hingga sekitar sembilan outs. Pakai ×4 hanya saat Anda akan melihat kedua kartu tanpa taruhan lagi.
 
 **Q. Bagaimana cara menghitung pot odds?**
 
-A. Bagi jumlah yang harus Anda call dengan total pot setelah call Anda. Call $50 ke pot $150 berarti 50 ÷ 200 = 25% — jadi Anda butuh setidaknya 25% equity untuk call secara menguntungkan. Bandingkan itu dengan drawing odds Anda: jika peluang Anda hit lebih tinggi, Anda call.
+A. Bagi jumlah yang harus Anda call dengan total pot setelah call Anda: call $50 ke pot $150 adalah 50 ÷ 200 = 25%, itulah equity yang Anda butuhkan. Halaman ini memberi separuh lainnya dari perbandingan itu — seberapa sering draw Anda benar-benar sampai. Sisi harganya ada di [panduan pot odds — rasio, jalan pintas ukuran taruhan, dan kesalahan yang mahal](/id/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp").
 
 **Q. Berapa odds set over set?**
 

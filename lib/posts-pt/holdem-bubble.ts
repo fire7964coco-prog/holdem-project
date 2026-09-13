@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "A bolha é o momento logo antes do dinheiro, onde mais uma eliminação paga todo mundo. Como quebrar significa não ganhar nada, sobreviver vale mais que as fichas que você ganharia — então os ranges de call apertam muito enquanto os shoves continuam largos. Big stacks atacam, médios são os mais presos (não os short stacks), e numa bolha de satélite de várias vagas você folda tudo, até ases, assim que sua vaga está garantida.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🫧",
@@ -137,7 +137,7 @@ A outra metade é que o bubble factor acompanha **quem está do outro lado**, n�
 
 **Quando o dinheiro está perto, os torneios mudam para "hand-for-hand" — toda mesa joga exatamente uma mão ao mesmo tempo, e então espera — justamente para impedir que jogadores deem stall para dentro do dinheiro.** Sem isso, jogadores em mesas lentas poderiam foldar mão após mão enquanto mesas mais rápidas queimavam a bolha. O hand-for-hand nivela o jogo:
 
-- **Como funciona:** o diretor de torneio pausa o relógio, e a partir daí cada mão desconta ==2 minutos== fixos do nível, não importa quanto ela demore (regra 126.a e 126.c do regulamento de torneios da WSOP; RP-8 da TDA) — então os blinds continuam subindo durante a bolha, só que por mão e não por minuto real. Todas as mesas dão uma mão, e nenhuma mesa começa a próxima até que todas tenham terminado. Se dois jogadores quebram na mesma mão hand-for-hand **na mesma mesa**, o que tinha menos fichas no início da mão fica com a colocação mais baixa (a da bolha); se quebram em **mesas diferentes**, são classificados como empate e dividem os dois prêmios envolvidos.
+- **Como funciona:** o diretor de torneio pausa o relógio, e a partir daí cada mão desconta ==2 minutos== fixos do nível, não importa quanto ela demore (regra 126.a e 126.c do regulamento de torneios da WSOP; RP-8-C e RP-8-D da TDA) — então os blinds continuam subindo durante a bolha, só que por mão e não por minuto real. Todas as mesas dão uma mão, e nenhuma mesa começa a próxima até que todas tenham terminado. Se dois jogadores quebram na mesma mão hand-for-hand **na mesma mesa**, o que tinha menos fichas no início da mão fica com a colocação mais baixa (a da bolha); se quebram em **mesas diferentes**, ficam empatados naquela colocação (regra 126.b do regulamento de torneios da WSOP) e, na prática, dividem os dois prêmios envolvidos. Há um caso que os dois regulamentos escrevem igual: na única mão ainda em andamento quando o hand-for-hand é anunciado, tanto a 126.c da WSOP quanto a RP-8-A da TDA fazem todos os que quebram nela dividirem a colocação (ou as colocações) paga. Confirme a regra da casa antes de contar com subir um degrau.
 - **Stalling:** usar todo o time bank em cada decisão para tentar ver menos mãos (e foldar para dentro do dinheiro). Dentro do hand-for-hand, porém, isso não compra nada: a mão desconta os seus 2 minutos do mesmo jeito e todas as mesas jogam o mesmo número de mãos — enrolar só estica o tempo real, sem reduzir os blinds que você paga nem as mãos que vê. Big stacks não têm motivo para dar stall — eles querem mais mãos para atacar. E ==stall em excesso pode render um clock call ou uma penalidade== — tanke dentro do razoável, sem queimar o time bank de propósito.
 - **Explore isso:** porque todo mundo desacelera, um big stack que continua aplicando pressão durante o hand-for-hand junta blinds e antes quase sem oposição.
 
@@ -148,7 +148,7 @@ A outra metade é que o bubble factor acompanha **quem está do outro lado**, n�
 **Num satélite que dá várias vagas idênticas, toda vaga paga o mesmo — então, no momento em que sua vaga está matematicamente garantida, você folda tudo, incluindo par de ases.** Este é o spot mais contraintuitivo do poker, e está correto. (O satélite winner-take-all, que dá uma vaga só, é diferente: ele se joga pelo primeiro lugar, em chip EV.) Se ganhar um cara ou coroa te dá a ==mesma vaga que você já garantiu== enquanto perdê-lo te elimina, não há recompensa e há risco enorme:
 
 - **Assim que sua vaga está matematicamente segura** (ninguém mais consegue te alcançar), folde toda mão — sim, até AA e KK — e deixe os stacks mais curtos brigarem. E reavalie a conta a cada subida de blinds: a "zona segura" encolhe conforme os antes entram.
-- **Não conte com o stall ao vivo.** Online, usar o relógio inteiro não gera penalidade; ao vivo, esgotar o time bank de propósito para subir de posição é passível de penalidade pelas regras (a WSOP cita isso textualmente) — folde em ritmo normal e deixe os curtos brigarem.
+- **Não conte com o stall ao vivo.** Online, usar o relógio inteiro não gera penalidade; ao vivo, esgotar o time bank de propósito para subir de posição é passível de penalidade: a regra 80 do regulamento de torneios da WSOP cita nominalmente esgotar de propósito o time bank para subir na premiação e a encaminha para relógio reduzido ou penalidade pelas regras 40, 113 e 114 — folde em ritmo normal e deixe os curtos brigarem.
 - **A única exceção:** pague só se você cobrir o short stack em questão e a eliminação dele estourar a bolha *a seu favor* — e desde que a sua vaga fique garantida mesmo que você perca o pote.
 
 Se você tirar uma coisa desta seção: um satélite não é um torneio normal. Fichas acima do limiar de segurança não valem nada, então jogue como se fosse assim.
@@ -184,7 +184,7 @@ A. Uma stone bubble (ou bolha dura) é quando uma única eliminação coloca tod
 
 **Q. O que significa "pagar a bolha" ou estourar a bolha?**
 
-A. "A bolha" é a última colocação antes do dinheiro, então quem quebra ali — o bubble boy — não leva nada enquanto todo mundo que continua está garantido; é isso que as pessoas querem dizer com pagar a bolha. "Estourar a bolha" é essa eliminação final: no instante em que ela acontece, todos os jogadores restantes estão no dinheiro e a pressão intensa de sobrevivência afrouxa. Alguns eventos dão ao bubble boy um consolo pequeno, mas tradicionalmente a bolha paga zero.
+A. "A bolha" é a última colocação antes do dinheiro, então quem quebra ali — o bubble boy — não leva nada enquanto todo mundo que continua está garantido. "Estourar a bolha" é essa eliminação final: no instante em que ela acontece, todos os jogadores restantes estão no dinheiro e a pressão intensa de sobrevivência afrouxa. "Pagar a bolha" é outra coisa: alguns eventos — ou os próprios jogadores, por acordo — dão ao bubble boy um pagamento pequeno de consolação. Isso é a exceção, não a regra; tradicionalmente a bolha paga zero.
 
 **Q. Você deve foldar na bolha?**
 

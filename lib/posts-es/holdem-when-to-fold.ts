@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Foldear es la habilidad más infravalorada del póker: en el peor de los casos un fold te cuesta cero, mientras que un call perdedor sangra fichas todas las veces. Un jugador sólido foldea entre el 75 y el 85% de sus manos antes del flop, suelta las manos falladas y los proyectos débiles que no cumplen sus pot odds después, y —lo más difícil de todo— tira manos fuertes pero batidas cuando la línea de un rival pasivo grita valor. La mayoría no paga de más porque no sepa leer manos; paga porque las fichas que ya están en el bote las siente suyas. No lo son.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-12",
-  masterUpdated: "2026-09-12",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🛡️",
@@ -182,9 +182,9 @@ Contémoslo. Mis mejores cinco cartas son ==K♣ K♦ 9♠ 9♥ A♥== — doble
 | **Hero-call "para tenerlo honesto"** | Atrapas un farol, pagas diez valores | Resérvalo para rivales que de verdad farolean |
 | **Foldear de más a cada carta de miedo (el nit)** | Los buenos te farolean fuera de la mejor mano | Foldea a las líneas de valor, no al miedo |
 
-Fíjate en que ambos polos están aquí: foldea *más* contra los jugadores cargados de valor que nunca farolean (la mayor parte de la población de stakes bajos), y foldea *menos* contra los regs que piensan y farolean lo suficiente para explotar a un nit.
-
 </div>
+
+Fíjate en que ambos polos están aquí: foldea *más* contra los jugadores cargados de valor que nunca farolean (la mayor parte de la población de stakes bajos), y foldea *menos* contra los regs que piensan y farolean lo suficiente para explotar a un nit.
 
 ---
 

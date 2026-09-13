@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "O rake é a pequena fatia que a sala de poker tira de cada pote para sediar o jogo — geralmente 2,5–10% até um cap de alguns dólares. A maioria das salas não tira nada se todo mundo folda antes do flop ('no flop, no drop'). Ele pesa mais para quem joga stakes baixos e short-handed, e o rakeback devolve uma parte dele aos regulares.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-12",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🏦",
@@ -76,7 +76,7 @@ Aqui está a parte que mudou como eu penso o jogo. A porcentagem parece minúscu
 
 **Um jogo ao vivo de $1/$2.** Com 10% de rake com cap de $5 e cerca de 30 mãos distribuídas por hora, a maioria dos potes disputados atinge ou chega perto do cap. Uma única mesa cheia pode pagar **$100+ por hora** para o drop entre todos os jogadores. Esse dinheiro sai direto dos ganhos coletivos — é a razão pela qual uma mesa cheia de jogadores mais ou menos parelhos sangra fichas devagar para a casa. E o rake nem é o único drop: muitas salas ao vivo ainda tiram um ou dois dólares por mão pra promoções ou jackpot, e a gorjeta do dealer também sai do seu lado da mesa. No Brasil, a mesma lógica vale nos clubes — R$1/R$2, R$2/R$5, com rake por mão ou taxa por hora; as porcentagens e o raciocínio do cap são idênticos, só muda a moeda.
 
-**A "armadilha do rake" dos stakes baixos.** Essa é a moral que todo iniciante deveria ouvir. Como o cap quase não desce junto conforme você desce nos stakes, quanto *mais baixo* você joga, *maior* a mordida que o rake tira proporcionalmente. Um exemplo trabalhado no NL50 online (ilustrativo — o número exato muda conforme quantos potes você disputa e como a sala aplica o cap, não conforme quantas mãos você registra):
+**A "armadilha do rake" dos stakes baixos.** Essa é a moral que todo iniciante deveria ouvir. Como o cap quase não desce junto conforme você desce nos stakes, quanto *mais baixo* você joga, *maior* a mordida que o rake tira proporcionalmente. Segue um exemplo trabalhado no NL50 online (ilustrativo — o número exato muda conforme quantos potes você disputa e como a sala aplica o cap, não conforme quantas mãos você registra). Dos dois caps abaixo, um cai dentro da faixa online usual e o outro acima dela: $2 dentro do $1–$3 que a maioria das salas pratica, $4 acima dela.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

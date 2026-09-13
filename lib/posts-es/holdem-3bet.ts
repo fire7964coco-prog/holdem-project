@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un 3-bet es la primera resubida antes del flop — se llama 3-bet porque la ciega grande es la primera apuesta, la subida de apertura la segunda y tu resubida la tercera. Haz un 3-bet de valor con un núcleo cerrado (QQ+, AK) más unos pocos faroles con bloqueadores del mismo palo como A5s, dale un tamaño de unas 3x la apertura en posición y 4x fuera de posición, y mantén tu frecuencia global de 3-bet cerca del 6–10%. Cuando eres tú quien se enfrenta a un 3-bet, resube con un 4-bet tus manos premium, iguala las que se juegan bien y foldea el resto — foldeando más de lo 'balanceado' contra jugadores de stakes bajos que nunca farolean.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-12",
-  masterUpdated: "2026-09-12",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "♦️",
@@ -176,7 +176,7 @@ Aquí tienes la mitad del 3-bet que casi todos los artículos se saltan: **estar
 - **Igualar** — con manos que ligan bien y tienen la equity o la posición para continuar: parejas servidas buscando trío, broadways del mismo palo y manos fuertes que no quieren inflar el bote hacia una guerra de 4-bets.
 - **Fold** — todo lo demás. La mayor parte de tu rango de apertura simplemente debería rendirse a un 3-bet; eso es normal, no debilidad.
 
-¿Cuánto deberías continuar? La base teórica es la **Frecuencia Mínima de Defensa (MDF)** — la parte de tu rango que debes continuar para que el que 3-betea no pueda ganar dinero faroleando con dos cartas cualquiera. Es ==bote ÷ (bote + apuesta)== — donde *bote* es lo que hay en el medio antes del 3-bet y *apuesta* es lo que el que 3-betea está **añadiendo** (desde una ciega, es la subida menos las fichas que ya tenía puestas) —, que contra tamaños típicos de 3-bet aterriza en torno a **un tercio de tu rango** en el vacío (con un 3-bet de 3x desde el botón: 4.5bb de bote ÷ (4.5bb + 9bb) ≈ 33%). Pero aquí tienes el exploit que gana dinero en las mesas reales:
+¿Cuánto deberías continuar? La base teórica es la **Frecuencia Mínima de Defensa (MDF)** — la parte de tu rango que debes continuar para que el que 3-betea no pueda ganar dinero faroleando con dos cartas cualquiera. Es ==bote ÷ (bote + apuesta)== — donde *bote* es lo que hay en el medio antes del 3-bet y *apuesta* es lo que el que 3-betea está **añadiendo** (desde una ciega, es la subida menos las fichas que ya tenía puestas) —, que contra tamaños típicos de 3-bet aterriza en torno a **un tercio de tu rango** en el vacío (con un 3-bet de 3x desde el botón: 4.5bb de bote ÷ (4.5bb + 9bb) ≈ 33%). Pero aquí tienes el exploit que gana dinero en las mesas reales. Se lee mejor desde la otra silla, así que, solo para la tabla de abajo, cámbiate de silla: el dato de abajo es con qué frecuencia foldean **ellos** cuando **tú** les haces 3-bet.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -188,7 +188,7 @@ Aquí tienes la mitad del 3-bet que casi todos los artículos se saltan: **estar
 
 </div>
 
-La MDF asume un rival *balanceado*. En stakes bajos y en juego en vivo, los jugadores **farolean de menos** sus 3-bets — así que cuando un jugador pasivo resube de repente, créetelo y **foldea más de lo que dice la MDF.** No le debes una defensa "balanceada" a un nit.
+Ahora vuelve a tu silla. La MDF asume un rival *balanceado*. En stakes bajos y en juego en vivo, los jugadores **farolean de menos** sus 3-bets — así que cuando un jugador pasivo resube de repente, créetelo y **foldea más de lo que dice la MDF.** No le debes una defensa "balanceada" a un nit.
 
 ---
 

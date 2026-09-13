@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Limpen bedeutet, preflop in einen Pot einzusteigen, indem du nur den Big Blind callst, statt zu raisen oder zu folden. Open-Limpen (als Erster reinzugehen) ist fast immer ein Fehler – du kannst den Pot preflop nicht kampflos gewinnen, gibst die Initiative ab und gute Spieler bestrafen dich. Aber Limpen ist nicht immer falsch: den Small Blind zu completen, spekulative Hände hinter anderen Limpern zu over-limpen sowie einige Live- und Short-Stack-Situationen sind legitime Ausnahmen.",
   category: "strategy",
   date: "2026-07-05",
-  updated: "2026-09-12",
-  masterUpdated: "2026-09-12",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "🚶",
@@ -19,7 +19,7 @@ export const POST: Post = {
   content: `
 Als ich anfing zu spielen, bin ich in fast jeden Pot gelimpt. Es fühlte sich sicher an – ich sah den Flop billig, riskierte nicht viel und „hielt mir alle Optionen offen“. Was mir nicht klar war: Jeder erfahrene Spieler am Tisch hatte mich in dem Moment durchschaut, in dem ich es tat. Limpen ist das deutlichste Tell in Low-Stakes-Poker dafür, dass jemand nicht ganz weiß, was er tut – und zwei Jahre lang war dieser jemand ich.
 
-Ein **Limp** ist, wenn du vor dem Flop in einen Pot einsteigst, indem du den Big Blind nur *callst*, statt zu raisen oder zu folden. Es klingt harmlos, und gelegentlich ist es auch okay – aber ==g:Open-Limpen als erster Spieler== im Pot ist eine der häufigsten und teuersten Angewohnheiten im Spiel. Hier steht genau, was Limpen ist, warum es meist Geld verliert, in welchen konkreten Situationen es tatsächlich richtig ist (es ist *nicht* immer falsch) und wie starke Spieler deinen Limp in ihren Profit verwandeln. Dieses eine Konzept richtig zu verstehen ist ein größerer Sprung, als die meisten Spieler ahnen – es ist Entscheidung drei einer gewinnenden [Texas-Hold'em-Strategie](/de/blog/holdem-strategy "thumb:/images/holdem-strategy-hero.webp"), gleich nach der Wahl deines Platzes und deiner Starthand.
+Ein **Limp** ist, wenn du vor dem Flop in einen Pot einsteigst, indem du den Big Blind nur *callst*, statt zu raisen oder zu folden. Es klingt harmlos, und gelegentlich ist es auch okay – aber ==r:Open-Limpen als erster Spieler== im Pot ist eine der häufigsten und teuersten Angewohnheiten im Spiel. Hier steht genau, was Limpen ist, warum es meist Geld verliert, in welchen konkreten Situationen es tatsächlich richtig ist (es ist *nicht* immer falsch) und wie starke Spieler deinen Limp in ihren Profit verwandeln. Dieses eine Konzept richtig zu verstehen ist ein größerer Sprung, als die meisten Spieler ahnen – es ist Entscheidung drei einer gewinnenden [Texas-Hold'em-Strategie](/de/blog/holdem-strategy "thumb:/images/holdem-strategy-hero.webp"), gleich nach der Wahl deines Platzes und deiner Starthand.
 
 ---
 

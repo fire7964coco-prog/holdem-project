@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "德州撲克錦標賽裡，你付一筆固定買入換籌碼，盲注照計時器上升，直到一個人贏走全部籌碼。通常前 10–15% 的人進錢圈。賽制有 freezeout、PKO、衛星賽、deepstack——報名方式有直接買入、衛星賽晉級、或線上預先報名。台灣則多在立案的撲克協會打合法錦標賽。",
   category: "tournament",
   date: "2026-07-22",
-  updated: "2026-09-12",
-  masterUpdated: "2026-09-12",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "14 分鐘",
   emoji: "🏆",
@@ -29,7 +29,7 @@ export const POST: Post = {
 
 :::stripe
 10–15% | 通常能進錢圈（拿到獎金）的比例
-20–40 分鐘 | 現場賽每個盲注級別的長度
+20–40 分鐘 | 現場賽每級長度（旗艦主賽 60 分鐘起）
 $100+$9 | 典型買入怎麼拆——獎池 + 手續費
 :::
 
@@ -75,7 +75,7 @@ $100+$9 | 典型買入怎麼拆——獎池 + 手續費
 
 這是多數新手指南跳過、卻是錦標賽最重要的機制概念。要是你對[小盲和大盲到底是什麼](/zh-hant/blog/holdem-blind-meaning)還完全陌生，先補那一篇，下面每個「BB」數字才會一下子對上號。
 
-**盲注一開始很小，照計時器上升——現場賽通常每 20–40 分鐘升一級。**
+**盲注一開始很小，照計時器上升——現場賽通常每 20–40 分鐘升一級，旗艦主賽事則是 60 分鐘起跳**（WPT Australia 2026 的 Championship Event 用 60 分鐘級別，最後幾天拉長到 90 分鐘）。
 
 | 級別 | 盲注 | 底注 | 你的 1 萬籌碼 = |
 |:---|:---:|:---:|:---|
@@ -235,7 +235,7 @@ deepstack 讓你的起始籌碼相對盲注明顯高於同系列的標準賽事�
 <div style="color:hsl(var(--foreground))">發牌開打。第 1 級：盲注 25/50。你有 200BB。打探索性的牌。</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="color:hsl(var(--primary));font-weight:700">13:00–15:00</div>
+<div style="color:hsl(var(--primary));font-weight:700">12:40–14:40</div>
 <div style="color:hsl(var(--foreground))">第 2–4 級。晚報名還開著。人數增加。底注按結構表進場（上面示例是第 3 級）。有些玩家已經出局。</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">

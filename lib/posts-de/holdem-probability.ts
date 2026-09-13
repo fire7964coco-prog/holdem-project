@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Bis zum River endest du mit einem Paar in 43,8% der Fälle, mit zwei Paaren in 23,5%, mit einem Flush in 3,0% und mit einem Full House in 2,6% – während ein Royal Flush nur etwa einmal in 31.000 Händen auftaucht.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-10",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "13 Min.",
   emoji: "🎲",
@@ -253,7 +253,7 @@ A. Bis etwa neun Outs liegt sie ein bis zwei Punkte daneben – für jede Entsch
 
 **Q. Wie berechnet man Pot Odds?**
 
-A. Teile den Betrag, den du callen musst, durch den gesamten Pot nach deinem Call. $50 in einen $150-Pot zu callen bedeutet 50 ÷ 200 = 25% – du brauchst also mindestens 25% Equity, um profitabel zu callen. Vergleiche das mit deinen Drawing Odds: ist deine Trefferchance höher, callst du.
+A. Teile den Betrag, den du callen musst, durch den gesamten Pot nach deinem Call: $50 in einen $150-Pot sind 50 ÷ 200 = 25%, also die Equity, die du brauchst. Diese Seite liefert die andere Hälfte des Vergleichs – wie oft dein Draw wirklich ankommt. Die Preisseite mit Ratios, Bet-Size-Abkürzungen und den teuersten Fehlern steht in [Pot Odds berechnen](/de/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp").
 
 **Q. Wie stehen die Odds für Set over Set?**
 

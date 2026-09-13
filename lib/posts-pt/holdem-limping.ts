@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Limpar é entrar num pote no pré-flop só pagando o big blind em vez de aumentar ou foldar. Open-limpar (ser o primeiro a entrar) é quase sempre um erro — você não consegue ganhar o pote no pré-flop, abre mão da iniciativa, e bons jogadores te punem. Mas limpar nem sempre é errado: completar o small blind, over-limpar mãos especulativas atrás de outros limpers, e alguns spots ao vivo e de stack curto são exceções legítimas.",
   category: "strategy",
   date: "2026-07-05",
-  updated: "2026-09-12",
-  masterUpdated: "2026-09-12",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🚶",
@@ -19,7 +19,7 @@ export const POST: Post = {
   content: `
 Quando comecei a jogar, eu limpava em quase todo pote. Parecia seguro — eu via o flop barato, não arriscava muito e "mantinha minhas opções abertas". O que eu não percebia era que todo jogador rodado da mesa já tinha me decifrado no instante em que eu fazia isso. Limpar é o tell mais claro no poker de stakes baixas de que alguém não sabe direito o que está fazendo — e por dois anos, esse alguém fui eu.
 
-Um **limp** é quando você entra num pote antes do flop só *pagando* o big blind, em vez de aumentar ou foldar. Soa inofensivo, e de vez em quando é ok — mas ==g:open-limpar como o primeiro jogador a entrar== é um dos hábitos mais comuns e caros do jogo. Abaixo está exatamente o que é limpar, por que geralmente perde dinheiro, os spots específicos em que é correto de verdade (não é *sempre* errado), e como jogadores fortes transformam o seu limp no lucro deles. Acertar esse conceito é um salto maior do que a maioria imagina — é a terceira decisão de uma [estratégia de Texas Hold'em](/pt/blog/holdem-strategy "thumb:/images/holdem-strategy-hero.webp") vencedora, logo depois de escolher a sua cadeira e a sua mão inicial.
+Um **limp** é quando você entra num pote antes do flop só *pagando* o big blind, em vez de aumentar ou foldar. Soa inofensivo, e de vez em quando é ok — mas ==r:open-limpar como o primeiro jogador a entrar== é um dos hábitos mais comuns e caros do jogo. Abaixo está exatamente o que é limpar, por que geralmente perde dinheiro, os spots específicos em que é correto de verdade (não é *sempre* errado), e como jogadores fortes transformam o seu limp no lucro deles. Acertar esse conceito é um salto maior do que a maioria imagina — é a terceira decisão de uma [estratégia de Texas Hold'em](/pt/blog/holdem-strategy "thumb:/images/holdem-strategy-hero.webp") vencedora, logo depois de escolher a sua cadeira e a sua mão inicial.
 
 ---
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "トーナメントは決まったバイインを払ってチップを受け取り、時間ごとにブラインドが上がって最後の1人が全チップを持つまで続く形式です。インマネ(ITM=賞金圏)に入るのは通常上位10〜15%。フリーズアウト・PKO・サテライト・ディープスタックなどの種類があり、直接バイイン・サテライト・オンライン事前登録で参加できます。",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-09-12",
-  masterUpdated: "2026-09-12",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "14分",
   emoji: "🏆",
@@ -40,7 +40,7 @@ export const POST: Post = {
 
 :::stripe
 10〜15% | が通常入賞(賞金圏)に入る割合
-20〜40分 | ライブでのブラインドレベル1つあたりの時間
+20〜40分 | ライブの1レベル(旗艦メインは60分以上)
 $100+$9 | 典型的なバイインの内訳 — プライズプール + 手数料
 :::
 
@@ -88,7 +88,7 @@ $100+$9 | 典型的なバイインの内訳 — プライズプール + 手数�
 
 ここが多くの初心者向けガイドが飛ばすところで、トーナメントで最も重要な仕組みの部分です。
 
-**ブラインドは小さく始まり、時間ごとに上がっていきます——ライブでは通常20〜40分ごと。**
+**ブラインドは小さく始まり、時間ごとに上がっていきます——ライブでは通常20〜40分ごと、フラッグシップのメインイベントでは60分以上です。**(WPTオーストラリア2026のチャンピオンシップイベントは60分レベルで、終盤日は90分まで伸びます。)
 
 | レベル | ブラインド | アンティ | あなたの10kスタック = |
 |:---|:---:|:---:|:---|
@@ -253,7 +253,7 @@ $10,000を使う代わりに、$500のトーナメントで他の19人と競い�
 <div style="color:hsl(var(--foreground))">カードが配られる。レベル1:ブラインド25/50。あなたは200BB。探りを入れるプレーを。</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="color:hsl(var(--primary));font-weight:700">13:00〜15:00</div>
+<div style="color:hsl(var(--primary));font-weight:700">12:40〜14:40</div>
 <div style="color:hsl(var(--foreground))">レベル2〜4。レイトレジはまだ開いている。フィールドが増える。ストラクチャーシートどおりにアンティが入る(上の例ではレベル3)。すでに飛ぶ人も。</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">

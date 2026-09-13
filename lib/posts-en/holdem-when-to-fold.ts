@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Folding is the most underrated skill in poker — a fold's worst outcome is zero, while a losing call bleeds chips every time. A solid player folds around 75–85% of hands before the flop, releases missed hands and weak draws that don't meet their pot odds after it, and — hardest of all — lays down strong-but-beaten hands when a passive opponent's line screams value. Most players don't call too much because they can't read hands; they call because the chips already in the pot feel like theirs. They aren't.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-12",
+  updated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🛡️",
@@ -181,9 +181,9 @@ Let's count it out. My best five cards are ==K♣ K♦ 9♠ 9♥ A♥== — two 
 | **Hero-calling to "keep them honest"** | You catch one bluff, pay off ten values | Reserve it for players who actually bluff |
 | **Over-folding to every scare card (the nit)** | Good players bluff you off the best hand | Fold to value lines, not to fear |
 
-Notice both poles are here: fold *more* against the value-heavy players who never bluff (most of the low-stakes population), and fold *less* against the thinking regulars who bluff enough to exploit a nit.
-
 </div>
+
+Notice both poles are here: fold *more* against the value-heavy players who never bluff (most of the low-stakes population), and fold *less* against the thinking regulars who bluff enough to exploit a nit.
 
 ---
 

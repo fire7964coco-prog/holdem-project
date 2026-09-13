@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In cash games, chips are real money and blinds stay fixed. In tournaments, chips are survival equity, blinds rise, and payouts depend on where you finish.",
   category: "tournament",
   date: "2026-06-11",
-  updated: "2026-08-26",
+  updated: "2026-09-13",
   hideSummaryImageSlot: true,
   readTime: "18 min",
   emoji: "🏆",
@@ -383,7 +383,7 @@ A. A common guideline is 20-40 buy-ins for cash games and 100+ buy-ins for large
 
 **Q. How many big blinds should you start with in a cash game vs a tournament?**
 
-A. In a cash game, buy in for the table maximum — at $1/$2 that's usually $200–$300, i.e. 100–150 big blinds — because deep stacks reward postflop skill and let you win a full stack when you're ahead. A tournament picks your depth for you: you typically start around 100-300 big blinds, but rising blinds shrink that to 20, then 10, then push/fold territory. Short version: buy in deep for cash, and in a tournament watch your big-blind count fall and adjust as it does.
+A. In a cash game, buy in for the table maximum — at $1/$2 that's usually $200–$300, i.e. 100–150 big blinds — because deep stacks reward postflop skill and let you win a full stack when you're ahead — with two conditions. Your bankroll has to carry it (the 20-40 buy-in guideline above is for full buy-ins, not short ones), and a deep stack only pays when you are the better postflop player. If either is shaky, buying in shorter is a legitimate choice, not a beginner mistake: shorter stacks simplify decisions, they just cap what a good spot can win. A tournament picks your depth for you: you typically start around 100-300 big blinds, but rising blinds shrink that to 20, then 10, then push/fold territory. Short version: buy in deep for cash when your bankroll and your postflop game support it, and in a tournament watch your big-blind count fall and adjust as it does.
 
 **Q. How many chips do you need for a home cash game?**
 

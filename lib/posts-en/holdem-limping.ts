@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Limping is entering a pot preflop by just calling the big blind instead of raising or folding. Open-limping (being first in) is almost always a mistake — you can't win the pot preflop, you give up initiative, and good players punish you. But limping isn't always wrong: completing the small blind, over-limping speculative hands behind other limpers, and some live and short-stack spots are legitimate exceptions.",
   category: "strategy",
   date: "2026-07-05",
-  updated: "2026-09-12",
+  updated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🚶",
@@ -18,7 +18,7 @@ export const POST: Post = {
   content: `
 When I started playing, I limped into almost every pot. It felt safe — I got to see a flop cheaply, I wasn't risking much, and I "kept my options open." What I didn't realize was that every seasoned player at the table had me pegged the moment I did it. Limping is the clearest tell in low-stakes poker that someone doesn't fully know what they're doing — and for two years, that someone was me.
 
-A **limp** is when you enter a pot before the flop by just *calling* the big blind, instead of raising or folding. It sounds harmless, and occasionally it's fine — but ==g:open-limping as the first player in== is one of the most common and costly habits in the game. Below is exactly what limping is, why it usually loses money, the specific spots where it's actually correct (it's not *always* wrong), and how strong players turn your limp into their profit. Getting this one concept right is a bigger leap than most players realize — it's decision three of a winning [Texas Hold'em strategy](/en/blog/holdem-strategy "thumb:/images/holdem-strategy-hero.webp"), right after choosing your seat and your starting hand.
+A **limp** is when you enter a pot before the flop by just *calling* the big blind, instead of raising or folding. It sounds harmless, and occasionally it's fine — but ==r:open-limping as the first player in== is one of the most common and costly habits in the game. Below is exactly what limping is, why it usually loses money, the specific spots where it's actually correct (it's not *always* wrong), and how strong players turn your limp into their profit. Getting this one concept right is a bigger leap than most players realize — it's decision three of a winning [Texas Hold'em strategy](/en/blog/holdem-strategy "thumb:/images/holdem-strategy-hero.webp"), right after choosing your seat and your starting hand.
 
 ---
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Di turnamen poker Anda membayar buy-in tetap untuk mendapat chip, blind naik mengikuti timer sampai satu pemain memegang semua chip. 10–15% pemain teratas ITM. Formatnya meliputi freezeout, PKO, satellite, dan deepstack — masuk lewat buy-in langsung, satellite, atau pra-registrasi online.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-09-12",
-  masterUpdated: "2026-09-12",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "14 mnt",
   emoji: "🏆",
@@ -41,7 +41,7 @@ Panduan ini adalah semua yang saya harap seseorang katakan kepada saya sebelum h
 
 :::stripe
 10–15% | dari field biasanya dibayar
-20–40 mnt | per blind level di event live
+20–40 mnt | per blind level live (60+ di Main unggulan)
 $100+$9 | cara buy-in umum terbagi — prize pool + fee
 :::
 
@@ -78,7 +78,7 @@ Setiap turnamen mempublikasikan strukturnya dalam **structure sheet**: starting 
 
 Ini yang paling sering dilewati panduan pemula, dan ini konsep mekanis paling penting dalam turnamen.
 
-**Blind mulai kecil dan naik mengikuti timer — biasanya setiap 20–40 menit di event live.**
+**Blind mulai kecil dan naik mengikuti timer — biasanya setiap 20–40 menit di event live, dan 60 menit atau lebih di Main Event unggulan** (Championship Event WPT Australia 2026 memakai level 60 menit, memanjang jadi 90 di hari-hari akhir).
 
 | Level | Blind | Ante | Stack 10rb Anda = |
 |:---|:---:|:---:|:---|
@@ -225,7 +225,7 @@ Ini bagian yang biasanya baru dipelajari pemula lewat pengalaman pahit. Inilah t
 <div style="color:hsl(var(--foreground))">Kartu dibagikan. Level 1: blind 25/50. Anda punya 200BB. Mainkan poker eksploratif.</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="color:hsl(var(--primary));font-weight:700">13:00–15:00</div>
+<div style="color:hsl(var(--primary));font-weight:700">12:40–14:40</div>
 <div style="color:hsl(var(--foreground))">Level 2–4. Late registration masih buka. Field bertambah. Ante mulai berlaku sesuai structure sheet (Level 3 pada contoh di atas). Beberapa pemain sudah bust.</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">

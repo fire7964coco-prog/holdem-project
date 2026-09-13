@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "3-bet adalah re-raise pertama sebelum flop — disebut 3-bet karena big blind adalah taruhan pertama, open-raise yang kedua, dan re-raise Anda yang ketiga. Value-3-bet inti yang ketat (QQ+, AK) plus beberapa bluff blocker suited seperti A5s, ukur sekitar 3x dari open in position dan 4x out of position, dan jaga frekuensi 3-bet keseluruhan Anda dekat 6–10%. Saat Andalah yang menghadapi 3-bet, 4-bet tangan premium Anda, call tangan yang bermain baik, dan fold sisanya — fold lebih banyak daripada 'balanced' melawan pemain stake rendah yang tak pernah bluff.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-12",
-  masterUpdated: "2026-09-12",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "16 mnt",
   emoji: "♦️",
@@ -176,7 +176,7 @@ Inilah separuh dari 3-betting yang hampir setiap artikel lewati: **Anda akan ber
 - **Call** — dengan tangan yang mem-flop baik dan punya equity atau posisi untuk lanjut: pocket pair yang ingin set-mine, suited broadway, dan tangan kuat yang tak ingin menggembungkan pot menjadi perang 4-bet.
 - **Fold** — selain itu. Sebagian besar range open Anda harus cukup menyerah ke sebuah 3-bet; itu normal, bukan kelemahan.
 
-Seberapa banyak Anda harus lanjut? Baseline teoretisnya adalah **Minimum Defense Frequency (MDF)** — porsi range Anda yang harus Anda lanjutkan agar si 3-bettor tak bisa profit dengan bluff dua kartu apa pun. Ia adalah ==pot ÷ (pot + bet)== — di mana *pot* adalah yang ada di tengah sebelum 3-bet dan *bet* adalah yang **ditambahkan** si 3-bettor (dari blind, itu berarti besar raise dikurangi chip yang sudah dipasang) — yang melawan ukuran 3-bet tipikal mendarat di sekitar **sepertiga dari range Anda** dalam vakum (3-bet 3x dari button: pot 4,5bb ÷ (4,5bb + 9bb) ≈ 33%). Tapi inilah eksploitasi yang memenangkan uang di meja nyata:
+Seberapa banyak Anda harus lanjut? Baseline teoretisnya adalah **Minimum Defense Frequency (MDF)** — porsi range Anda yang harus Anda lanjutkan agar si 3-bettor tak bisa profit dengan bluff dua kartu apa pun. Ia adalah ==pot ÷ (pot + bet)== — di mana *pot* adalah yang ada di tengah sebelum 3-bet dan *bet* adalah yang **ditambahkan** si 3-bettor (dari blind, itu berarti besar raise dikurangi chip yang sudah dipasang) — yang melawan ukuran 3-bet tipikal mendarat di sekitar **sepertiga dari range Anda** dalam vakum (3-bet 3x dari button: pot 4,5bb ÷ (4,5bb + 9bb) ≈ 33%). Tapi inilah eksploitasi yang memenangkan uang di meja nyata. Ini paling jelas dibaca dari kursi sebelah, jadi khusus untuk tabel di bawah ini, tukar posisi: angka di bawah adalah seberapa sering **mereka** fold saat **Anda** yang 3-bet.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -188,7 +188,7 @@ Seberapa banyak Anda harus lanjut? Baseline teoretisnya adalah **Minimum Defense
 
 </div>
 
-MDF mengasumsikan lawan yang *balanced*. Di stake rendah dan game live, pemain sangat **under-bluff** 3-bet mereka — jadi saat pemain pasif tiba-tiba re-raise, percayai mereka dan **fold lebih banyak daripada yang dikatakan MDF.** Anda tak berutang pertahanan "balanced" pada seorang nit.
+Sekarang kembali ke kursi Anda. MDF mengasumsikan lawan yang *balanced*. Di stake rendah dan game live, pemain sangat **under-bluff** 3-bet mereka — jadi saat pemain pasif tiba-tiba re-raise, percayai mereka dan **fold lebih banyak daripada yang dikatakan MDF.** Anda tak berutang pertahanan "balanced" pada seorang nit.
 
 ---
 

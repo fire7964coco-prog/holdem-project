@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Para el river ligarás pareja el 43.8% de las veces, doble pareja el 23.5%, color el 3.0% y full el 2.6% — mientras que una escalera real aparece solo una vez cada 31,000 manos.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🎲",
@@ -244,7 +244,7 @@ A. 1 entre 221 (0.45%) para los ases en concreto. Cualquier pareja, en cambio, l
 
 **Q. ¿Qué es la regla del 2 y 4 en el póker?**
 
-A. Un atajo para las odds de proyecto — también llamada "regla del 4 y 2": multiplica tus outs por 4 en el flop (faltan dos cartas) o por 2 en el turn (falta una carta) para estimar tu porcentaje de ligar. Es precisa a un punto o dos hasta unos nueve outs.
+A. Un atajo para las odds de proyecto — también llamada "regla del 4 y 2": multiplica tus outs por 4 en el flop (faltan dos cartas) o por 2 en el turn (falta una carta) para estimar tu porcentaje de ligar. Es precisa a un punto o dos hasta unos nueve outs. Usa el ×4 solo cuando vayas a ver ambas cartas sin más apuestas.
 
 **Q. ¿Cómo se calculan las probabilidades en el póker?**
 
@@ -256,7 +256,7 @@ A. No es una fórmula de odds fija, sino la idea de que buena parte del benefici
 
 **Q. ¿Cómo se calculan las pot odds?**
 
-A. Divide la cantidad que debes igualar entre el bote total tras tu call. Igualar $50 a un bote de $150 da 50 ÷ 200 = 25% — así que necesitas al menos 25% de equity para pagar de forma rentable. Compáralo con tus odds de proyecto: si tu probabilidad de ligar es mayor, pagas.
+A. Divide la cantidad que debes igualar entre el bote total tras tu call: igualar $50 a un bote de $150 da 50 ÷ 200 = 25%, la equity que necesitas. Esta página aporta la otra mitad de la comparación — con qué frecuencia liga de verdad tu proyecto. El lado del precio está en [la guía de pot odds — ratios, atajos por tamaño de apuesta y los errores caros](/es/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp").
 
 **Q. ¿Cuál es la probabilidad de set sobre set?**
 

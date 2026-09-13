@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "In einem Pokerturnier zahlst du ein festes Buy-in für Chips, die Blinds steigen auf einem Timer, bis ein Spieler alle Chips hält. Die Top 10–15% des Feldes kommen in die Payouts. Formate sind Freezeout, PKO, Satellite und Deepstack – der Einstieg läuft über direktes Buy-in, Satellite oder Online-Vorregistrierung.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-09-12",
-  masterUpdated: "2026-09-12",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "14 Min.",
   emoji: "🏆",
@@ -42,7 +42,7 @@ Dieser Guide ist alles, was ich mir vor jenem Tag gewünscht hätte zu wissen �
 
 :::stripe
 10–15% | des Feldes werden in der Regel bezahlt
-20–40 Min. | pro Blind-Level bei Live-Events
+20–40 Min. | pro Blind-Level live (60+ bei Flaggschiff-Mains)
 €100 + €9 | wie sich ein typisches Buy-in aufteilt – Prize Pool + Fee
 :::
 
@@ -82,7 +82,7 @@ Jedes Turnier veröffentlicht seine Struktur in einem **Structure Sheet**: Start
 ## Wie funktioniert die Blind-Struktur im Pokerturnier?
 
 > **Kurze Antwort**
-> Die Blinds stehen nicht fest, sondern werden auf einer Uhr angehoben – live meist alle 20–40 Minuten, online deutlich kürzer. Deshalb misst du deinen Stack nie in Chips, sondern in Big Blinds: Dieselben 10.000 Chips sind auf Level 1 ein bequemer Stack und acht Level später ein Notfall. Diese Uhr erzwingt am Ende jede wichtige Entscheidung.
+> Die Blinds stehen nicht fest, sondern werden auf einer Uhr angehoben – live meist alle 20–40 Minuten (bei Flaggschiff-Main-Events 60 Minuten oder mehr – das Championship Event der WPT Australia 2026 läuft auf 60-Minuten-Leveln, an den späteren Tagen auf 90), online deutlich kürzer. Deshalb misst du deinen Stack nie in Chips, sondern in Big Blinds: Dieselben 10.000 Chips sind auf Level 1 ein bequemer Stack und acht Level später ein Notfall. Diese Uhr erzwingt am Ende jede wichtige Entscheidung.
 
 Genau das lassen die meisten Anfänger-Guides aus, und es ist das wichtigste mechanische Konzept in Turnieren.
 
@@ -332,7 +332,7 @@ Das ist der Teil, den die meisten Anfänger nur auf die harte Tour lernen. Hier 
 <div style="color:hsl(var(--foreground))">Karten in der Luft. Level 1: Blinds 25/50. Du hast 200 BB. Spiele exploratives Poker.</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="color:hsl(var(--primary));font-weight:700">13:00–15:00</div>
+<div style="color:hsl(var(--primary));font-weight:700">12:40–14:40</div>
 <div style="color:hsl(var(--foreground))">Levels 2–4. Late Registration noch offen. Das Feld wächst. Die Antes setzen ein, wie im Structure Sheet festgelegt (Level 3 im Beispiel oben). Einige Spieler busten bereits.</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">

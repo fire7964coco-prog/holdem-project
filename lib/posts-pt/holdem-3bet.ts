@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Um 3-bet é o primeiro re-raise antes do flop — chamado de 3-bet porque o big blind é a primeira aposta, o open-raise a segunda, e o seu re-raise a terceira. Dê 3-bet por valor com um núcleo apertado (QQ+, AK) mais alguns blefes de bloqueio suited como A5s, dimensione em torno de 3x o open in position e 4x out of position, e mantenha sua frequência geral de 3-bet perto de 6–10%. Quando você é quem enfrenta um 3-bet, 4-bete suas mãos premium, pague as mãos que jogam bem, e folde o resto — foldando mais que o \"balanceado\" contra jogadores de stakes baixos que nunca blefam.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-12",
-  masterUpdated: "2026-09-12",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "♦️",
@@ -176,7 +176,7 @@ Aqui está a metade do 3-bet que quase todo artigo pula: **você vai estar do la
 - **Pagar** — com mãos que flopam bem e têm a equity ou posição para continuar: pares para set-mine, broadways suited, e mãos fortes que não querem inflar o pote numa guerra de 4-bet.
 - **Foldar** — todo o resto. A maior parte do seu range de open deveria simplesmente entregar a um 3-bet; isso é normal, não fraqueza.
 
-Quanto você deve continuar? A referência teórica é a **Frequência Mínima de Defesa (MDF)** — a fatia do seu range que você precisa continuar para que o 3-bettor não possa lucrar blefando com duas cartas quaisquer. É ==pote ÷ (pote + aposta)== — onde *pote* é o que está no meio antes do 3-bet e *aposta* é o que o 3-bettor está **acrescentando** (de um blind, é o aumento menos as fichas que ele já postou) — o que, contra sizes típicos de 3-bet, dá em torno de **um terço do seu range** no vácuo (um 3-bet de 3x do button: 4,5bb de pote ÷ (4,5bb + 9bb) ≈ 33%). Continuar um terço quer dizer foldar no máximo uns 66,6% nesse spot isolado — um teto, não um alvo; os ~55% de fold da tabela abaixo são uma referência prática, não uma garantia (veja o FAQ). Mas aqui está o exploit que ganha dinheiro em mesas reais:
+Quanto você deve continuar? A referência teórica é a **Frequência Mínima de Defesa (MDF)** — a fatia do seu range que você precisa continuar para que o 3-bettor não possa lucrar blefando com duas cartas quaisquer. É ==pote ÷ (pote + aposta)== — onde *pote* é o que está no meio antes do 3-bet e *aposta* é o que o 3-bettor está **acrescentando** (de um blind, é o aumento menos as fichas que ele já postou) — o que, contra sizes típicos de 3-bet, dá em torno de **um terço do seu range** no vácuo (um 3-bet de 3x do button: 4,5bb de pote ÷ (4,5bb + 9bb) ≈ 33%). Continuar um terço quer dizer foldar no máximo uns 66,6% nesse spot isolado — um teto, não um alvo; os ~55% de fold da tabela abaixo são uma referência prática, não uma garantia (veja o FAQ). Mas aqui está o exploit que ganha dinheiro em mesas reais. Ele se lê melhor da outra cadeira, então, só para a tabela abaixo, troque de cadeira: o número abaixo é com que frequência **eles** foldam quando **você** dá o 3-bet.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -188,7 +188,7 @@ Quanto você deve continuar? A referência teórica é a **Frequência Mínima d
 
 </div>
 
-A MDF assume um adversário *balanceado*. Em stakes baixos e jogos live, os jogadores **sub-blefam** feio seus 3-bets — então quando um jogador passivo de repente dá re-raise, acredite nele e **folde mais do que a MDF manda.** Você não deve a um nit uma defesa "balanceada".
+Agora volte para a sua cadeira. A MDF assume um adversário *balanceado*. Em stakes baixos e jogos live, os jogadores **sub-blefam** feio seus 3-bets — então quando um jogador passivo de repente dá re-raise, acredite nele e **folde mais do que a MDF manda.** Você não deve a um nit uma defesa "balanceada".
 
 ---
 

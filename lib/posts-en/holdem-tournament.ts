@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In a poker tournament you pay a fixed buy-in for chips, blinds increase on a timer until one player holds all chips. Top 10–15% of players cash. Formats include freezeout, PKO, satellite, and deepstack — enter via direct buy-in, satellite, or online pre-registration.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-09-12",
+  updated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏆",
@@ -38,7 +38,7 @@ This guide is everything I wish someone had told me before that day — how tour
 
 :::stripe
 10–15% | of the field typically gets paid
-20–40 min | per blind level in live events
+20–40 min | per blind level live (60+ at flagship Mains)
 $100+$9 | how a typical buy-in splits — prize pool + fee
 :::
 
@@ -75,7 +75,7 @@ Every tournament publishes its structure in a **structure sheet**: starting stac
 
 This is what most beginner guides skip, and it's the most important mechanical concept in tournaments.
 
-**Blinds start small and increase on a timer — usually every 20–40 minutes in live events.**
+**Blinds start small and increase on a timer — usually every 20–40 minutes in live events, and 60 minutes or more in flagship Main Events** (WPT Australia 2026 runs its Championship Event on 60-minute levels, stretching to 90 on the later days).
 
 | Level | Blinds | Antes | Your 10k stack = |
 |:---|:---:|:---:|:---|
@@ -222,7 +222,7 @@ This is the part most beginners only learn the hard way. Here's a realistic Day 
 <div style="color:hsl(var(--foreground))">Cards in the air. Level 1: blinds 25/50. You have 200BB. Play exploratory poker.</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="color:hsl(var(--primary));font-weight:700">1:00–3pm</div>
+<div style="color:hsl(var(--primary));font-weight:700">12:40–2:40pm</div>
 <div style="color:hsl(var(--foreground))">Levels 2–4. Late registration still open. Field grows. Antes kick in per the structure sheet (Level 3 in the example above). Some players already bust.</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">

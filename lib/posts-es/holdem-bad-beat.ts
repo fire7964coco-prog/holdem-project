@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un bad beat es cuando metes las fichas siendo favorito clarísimo —normalmente 80% o más— y pierdes porque tu rival liga una carta afortunada para 'cazarte' (suck out). A diferencia de un cooler, ibas por delante todo el rato; la baraja simplemente te traicionó al final. Duele, pero los bad beats son en realidad señal de que juegas en una partida rentable.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-12",
-  masterUpdated: "2026-09-12",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "💔",
@@ -121,6 +121,8 @@ Las reglas **varían según la sala**, pero la estructura común tiene esta pint
 | **Resto de los que recibieron cartas en esa mano** | ~25% (repartido a partes iguales) |
 
 </div>
+
+**Hay algo que el jackpot no usa: el test del principio de esta página.** Su cualificador está escrito en fuerza de mano, no en quién iba por delante cuando entró el dinero. Aplica la prueba al detonante clásico: tienes A♠A♥ en un board de A♣ J♠ J♦ 7♥ 2♣ y llevas full de ases con jotas; tu rival lleva J♥J♣ y tiene póker de jotas. Las dos manos estaban completas en el flop y ahí fue donde entraron las fichas, así que a nadie le remontaron después de meter el dinero — con el criterio de arriba eso es un **cooler**, y es justo lo que paga el jackpot. Trata “bad beat jackpot” como el nombre comercial de una sala, no como una segunda definición del término.
 
 Una advertencia importante: **cada casino y sala online fija su propio cualificador y reparto** — algunos usan 40/30/30, otros exigen una pareja servida para formar el póker cualificador, otros retienen la aportación del jackpot de forma distinta. Nunca lo des por hecho; consulta siempre las reglas publicadas de la sala concreta antes de contar con un premio.
 

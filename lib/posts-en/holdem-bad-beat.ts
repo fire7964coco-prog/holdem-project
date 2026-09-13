@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A bad beat is when you get your money in as a heavy favorite — usually 80% or more — and lose because your opponent hits a lucky card to 'suck out' on you. Unlike a cooler, you were ahead the whole way; the deck just betrayed you at the end. It stings, but bad beats are actually a sign you're playing in a profitable game.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-12",
+  updated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "💔",
@@ -120,6 +120,8 @@ The rules **vary by room**, but the common structure looks like this:
 | **Others dealt into the hand** | ~25% (split evenly) |
 
 </div>
+
+**One thing the jackpot does not use: the litmus at the top of this page.** Its qualifier is written in hand strength, not in who was ahead when the money went in. Run the test on the classic trigger: you hold A♠A♥ on a board of A♣ J♠ J♦ 7♥ 2♣ for aces full of jacks, and your opponent holds J♥J♣ for four jacks. Both hands were complete on the flop and that is where the chips went in, so nobody was outdrawn after the money was committed — by the standard above that is a **cooler**, and it is exactly what the jackpot pays. Treat "bad beat jackpot" as a cardroom product name, not a second definition of the term.
 
 One important caveat: **every casino and poker site sets its own qualifier and split** — some use 40/30/30, some require a pocket pair to make the qualifying quads, some rake the jackpot drop differently. Never assume; always check the specific room's posted rules before you count on a payout.
 

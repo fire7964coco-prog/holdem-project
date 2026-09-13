@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ein Bad Beat ist, wenn du dein Geld als klarer Favorit reinbekommst – meist mit 80% oder mehr – und verlierst, weil dein Gegner eine Glückskarte trifft und dich aussaugt. Anders als beim Cooler warst du die ganze Zeit vorne; das Deck hat dich erst am Ende verraten. Es schmerzt, aber Bad Beats sind eigentlich ein Zeichen, dass du in einem profitablen Spiel sitzt.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-12",
-  masterUpdated: "2026-09-12",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "💔",
@@ -135,6 +135,8 @@ Die Regeln **variieren je nach Room**, aber die übliche Struktur sieht so aus:
 | **Andere Spieler, die in dieser Hand Karten bekommen haben** | ~25% (gleichmäßig geteilt) |
 
 </div>
+
+**Eines benutzt der Jackpot nicht: den Lackmustest vom Anfang dieser Seite.** Sein Qualifier ist in Handstärke formuliert, nicht darin, wer vorn lag, als das Geld reinging. Mach die Probe am klassischen Auslöser: Du hältst A♠A♥ auf einem Board von A♣ J♠ J♦ 7♥ 2♣ und hast Asse voll mit Buben, dein Gegner hält J♥J♣ und hat vier Buben. Beide Hände waren am Flop fertig und dort gingen auch die Chips rein, also wurde nach dem Einsatz niemand mehr ausgedrawt – nach dem Maßstab oben ist das ein **Cooler**, und genau das zahlt der Jackpot aus. Behandle „Bad Beat Jackpot“ als Produktnamen des Rooms, nicht als zweite Definition des Begriffs.
 
 Ein wichtiger Vorbehalt: **jedes Casino und jede Pokerseite legt ihren eigenen Qualifier und Split fest** – manche nutzen 40/30/30, manche verlangen ein Pocket Pair für die qualifizierenden Quads, manche raken den Jackpot-Drop anders. Nimm nie etwas an; prüfe immer die ausgehängten Regeln des jeweiligen Rooms, bevor du mit einer Auszahlung rechnest.
 

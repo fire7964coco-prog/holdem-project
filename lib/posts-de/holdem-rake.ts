@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Der Rake ist der kleine Anteil, den der Cardroom aus jedem Pot nimmt, um das Spiel auszurichten – meist 2,5–10% bis zu einem Cap – in deutschen Spielbanken €10 bis €20. Die meisten Räume nehmen nichts, wenn vor dem Flop alle folden („no flop, no drop“). Er trifft Low-Stakes- und Short-handed-Spieler am härtesten, und Rakeback gibt Stammspielern einen Teil zurück.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-09-12",
-  masterUpdated: "2026-09-12",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "🏦",
@@ -86,7 +86,7 @@ Hier kommt der Teil, der geändert hat, wie ich über das Spiel denke. Der Betra
 
 **Ein Live-Spiel in einer deutschen Spielbank.** Hier gibt es keine feste Prozentzahl, sondern eine Staffel. Die Spielbank Berlin nimmt in der untersten Blind-Stufe aus einem Pot von €60 bis €99 genau **€4**, ab €100 sind es **€6**, und ab €150 greift das Cap von **€10**. Bei rund 30 ausgeteilten Händen pro Stunde, von denen etwa 20 überhaupt gerakt werden, sind das ==20 × €4 bis 20 × €6 = **€80 bis €120 pro Stunde**== an einem einzigen Tisch, über alle Spieler zusammen. Dieses Geld kommt direkt aus den gemeinsamen Gewinnen – es ist der Grund, warum ein Tisch voller etwa gleich starker Spieler langsam Chips ans Haus verliert.
 
-**Die Low-Stakes-„Rake-Falle“.** Das ist die Pointe, die jeder Anfänger hören sollte. Weil das Cap kaum sinkt, wenn du in den Stakes runtergehst, nimmt der Rake proportional einen *größeren* Bissen, je *niedriger* du spielst. Ein durchgerechnetes Beispiel bei Online-NL50 (illustrativ – der genaue Wert bewegt sich damit, an wie vielen Pots du beteiligt bist und wie der Raum sein Cap anwendet, nicht damit, wie viele Hände du loggst):
+**Die Low-Stakes-„Rake-Falle“.** Das ist die Pointe, die jeder Anfänger hören sollte. Weil das Cap kaum sinkt, wenn du in den Stakes runtergehst, nimmt der Rake proportional einen *größeren* Bissen, je *niedriger* du spielst. Hier ein durchgerechnetes Beispiel bei Online-NL50 (illustrativ – der genaue Wert bewegt sich damit, an wie vielen Pots du beteiligt bist und wie der Raum sein Cap anwendet, nicht damit, wie viele Hände du loggst). Von den beiden Caps unten liegt einer innerhalb der üblichen Online-Spanne und einer darüber: $2 innerhalb der $1–$3, die die meisten Räume ansetzen, $4 darüber.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

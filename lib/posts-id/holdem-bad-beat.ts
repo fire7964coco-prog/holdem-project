@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Bad beat adalah saat uang Anda masuk sebagai favorit berat — biasanya 80% atau lebih — dan Anda kalah karena lawan menangkap kartu beruntung untuk 'suck out' pada Anda. Berbeda dengan cooler, Anda unggul sepanjang tangan; hanya di akhir kartu berkhianat. Perih, tapi bad beat sebenarnya tanda Anda bermain di permainan yang menguntungkan.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-12",
-  masterUpdated: "2026-09-12",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "11 mnt",
   emoji: "💔",
@@ -121,6 +121,8 @@ Aturannya **bervariasi per ruangan**, tapi struktur umumnya terlihat seperti ini
 | **Pemain lain yang ikut dibagi kartu di tangan itu** | ~25% (dibagi rata) |
 
 </div>
+
+**Ada satu hal yang tidak dipakai jackpot: uji lakmus di awal halaman ini.** Kualifikasinya ditulis dalam kekuatan tangan, bukan dalam siapa yang unggul saat uang masuk. Coba ujikan pada pemicu klasiknya: Anda pegang A♠A♥ di board A♣ J♠ J♦ 7♥ 2♣ untuk full house ace penuh jack, lawan pegang J♥J♣ untuk four of a kind jack. Kedua tangan sudah jadi di flop dan di situ pula chip masuk, jadi tak ada yang disusul setelah uang ditaruh — menurut patokan di atas itu **cooler**, dan justru itulah yang dibayar jackpot. Perlakukan "bad beat jackpot" sebagai nama produk cardroom, bukan definisi kedua dari istilah ini.
 
 Satu catatan penting: **setiap kasino dan situs poker menetapkan kualifikasi dan pembagiannya sendiri** — sebagian pakai 40/30/30, sebagian mensyaratkan pocket pair untuk membentuk quads yang memenuhi syarat, sebagian me-rake drop jackpot secara berbeda. Jangan pernah berasumsi; selalu cek aturan tertulis ruangan tertentu sebelum Anda mengandalkan sebuah bayaran.
 

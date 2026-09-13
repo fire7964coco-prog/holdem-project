@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Las posiciones del póker son nombres de asiento que se miden desde el botón del repartidor — UTG, lojack, hijack, cutoff, botón y las ciegas — y se mueven un asiento en el sentido de las agujas del reloj cada mano. En el preflop, UTG actúa primero y la ciega grande última; en el postflop, la ciega pequeña actúa primero y el botón último. Los números de asiento físicos nunca se mueven; las posiciones sí.",
   category: "strategy",
   date: "2026-06-13",
-  updated: "2026-09-12",
-  masterUpdated: "2026-09-12",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🎯",
@@ -184,7 +184,7 @@ Los nombres de las posiciones no cambian con el tamaño de la mesa — ==se van 
 
 **El mano a mano es el que rompe la intuición de todo el mundo.** Con solo dos jugadores, ==el botón pone la ciega pequeña== — el mismo asiento es BTN y SB a la vez. Eso significa que el botón actúa ==**primero** en el preflop== (la ciega grande actúa última, como siempre) pero aun así actúa ==**último** en cada calle postflop==, mientras que la ciega grande actúa primera en el postflop. Cualquier otro tamaño de mesa sigue el patrón normal; solo el mano a mano funde el mejor asiento con una ciega.
 
-**6-max vs. mesa completa** es pura resta: los tres asientos de más (UTG+1, UTG+2 y un asiento medio) no existen, así que el 6-max va UTG → HJ → CO → BTN → SB → BB. La consecuencia práctica no es que un asiento juegue "más tarde" — el cutoff tiene los mismos tres jugadores por detrás en ambas mesas. Es que ==al desaparecer los asientos tempranos, te sientas en las ciegas y en posición tardía mucho más a menudo, y menos jugadores abren antes que tú== — el UTG de 6-max se enfrenta a cinco rivales, no a ocho — y por eso los rangos se abren en todos los asientos en las partidas de pocos jugadores. Los números asiento por asiento viven en la [guía de juego posicional](/es/blog/holdem-position-play), y las manos exactas que llenan cada rango están mapeadas en la [tabla de manos iniciales](/es/blog/holdem-starting-hands-chart).
+**6-max vs. mesa completa** es pura resta: los tres asientos tempranos (UTG, UTG+1 y UTG+2) desaparecen y el lojack hereda el nombre UTG, así que el 6-max va UTG → HJ → CO → BTN → SB → BB. La consecuencia práctica no es que un asiento juegue "más tarde" — el cutoff tiene los mismos tres jugadores por detrás en ambas mesas. Es que ==al desaparecer los asientos tempranos, te sientas en las ciegas y en posición tardía mucho más a menudo, y menos jugadores abren antes que tú== — el UTG de 6-max se enfrenta a cinco rivales, no a ocho — y por eso los rangos se abren en todos los asientos en las partidas de pocos jugadores. Los números asiento por asiento viven en la [guía de juego posicional](/es/blog/holdem-position-play), y las manos exactas que llenan cada rango están mapeadas en la [tabla de manos iniciales](/es/blog/holdem-starting-hands-chart).
 
 > **Matiz de nomenclatura:** algunos sitios y salas etiquetan el primer asiento de 6-max como "LJ" o "MP" en vez de UTG, y los asientos medios de 10 jugadores aparecen a veces como "MP1/MP2". Las etiquetas varían; el orden de acción nunca.
 
@@ -215,7 +215,7 @@ A. La ciega pequeña actúa antes que la ciega grande en cada calle. En el prefl
 
 **Q. ¿Cuántas posiciones hay en el póker 6-max?**
 
-A. Seis: UTG (también llamado lojack), hijack, cutoff, botón, ciega pequeña y ciega grande. Comparado con una mesa de 9-max, los asientos UTG+1, UTG+2 y un asiento medio simplemente no existen — los nombres se quitan primero de la posición temprana. Cada asiento conserva los mismos jugadores por detrás que su homólogo de mesa completa, pero al desaparecer los asientos tempranos te sientas en las ciegas y en posición tardía mucho más a menudo, así que los rangos son más amplios de media.
+A. Seis: UTG (también llamado lojack), hijack, cutoff, botón, ciega pequeña y ciega grande. Comparado con una mesa de 9-max, los tres asientos tempranos (UTG, UTG+1 y UTG+2) simplemente desaparecen y el lojack hereda el nombre UTG — los nombres se quitan primero de la posición temprana, así que los dos asientos medios sobreviven. Cada asiento que conserva su propio nombre — hijack, cutoff, botón y las ciegas — mantiene los mismos jugadores por detrás que su homólogo de mesa completa, pero al desaparecer los asientos tempranos te sientas en las ciegas y en posición tardía mucho más a menudo, así que los rangos son más amplios de media.
 
 **Q. ¿Cambian las posiciones del póker cada mano?**
 
@@ -235,7 +235,7 @@ A. El botón (BTN). Es el único asiento que actúa último en cada calle postfl
 
 **Q. ¿Qué es el 6-max y en qué cambian las posiciones?**
 
-A. Una mesa 6-max tiene seis asientos en vez de nueve: UTG (también llamado lojack), hijack, cutoff, botón, ciega pequeña y ciega grande. Se quitan los tres asientos tempranos de más (UTG+1, UTG+2 y un asiento medio). Cada asiento conserva los mismos jugadores por detrás que su homólogo de mesa completa, pero te sientas en las ciegas y en posición tardía mucho más a menudo, así que los rangos se abren en todos los asientos.
+A. Una mesa 6-max tiene seis asientos en vez de nueve: UTG (también llamado lojack), hijack, cutoff, botón, ciega pequeña y ciega grande. Se quitan los tres asientos tempranos (UTG, UTG+1 y UTG+2) y el lojack hereda el nombre UTG. Cada asiento que conserva su propio nombre — hijack, cutoff, botón y las ciegas — mantiene los mismos jugadores por detrás que su homólogo de mesa completa, pero te sientas en las ciegas y en posición tardía mucho más a menudo, así que los rangos se abren en todos los asientos.
 
 ---
 

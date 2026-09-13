@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "La burbuja es el punto justo antes de premios, donde una eliminación más deja cobrar a todos los demás. Como bustear significa no ganar nada, sobrevivir vale más que las fichas que ganarías: los rangos de call se cierran a lo bestia mientras los shoves siguen amplios. Los stacks grandes atacan, los stacks medios son los más atrapados (no los cortos), y en una burbuja de satélite de varios asientos foldeas todo, incluso ases, una vez que tu asiento está asegurado.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🫧",
@@ -137,7 +137,7 @@ La otra mitad es que el bubble factor depende de **quién tienes enfrente**, no 
 
 **Cuando el dinero está cerca, los torneos pasan a "hand-for-hand" — todas las mesas juegan exactamente una mano a la vez y luego esperan — precisamente para impedir que los jugadores hagan stalling hasta colarse en premios.** Sin ello, los jugadores de mesas lentas podrían foldear mano tras mano mientras las mesas más rápidas queman la burbuja. El hand-for-hand nivela el terreno:
 
-- **Cómo funciona:** el director del torneo pausa el reloj, y a partir de ahí cada mano descuenta ==2 minutos== fijos del nivel, dure lo que dure (reglas 126.a y 126.c del reglamento de torneos de las WSOP; RP-8 de la TDA) — así que las ciegas siguen subiendo durante la burbuja, solo que por mano y no por minuto real. Todas las mesas reparten una mano, y ninguna empieza la siguiente hasta que todas han terminado. Si dos jugadores bustean en la misma mano de hand-for-hand en la misma mesa, el que tenía menos fichas al inicio de la mano se lleva el puesto más bajo (el de la burbuja); si bustean en mesas distintas, quedan clasificados como empate y reparten los dos premios implicados.
+- **Cómo funciona:** el director del torneo pausa el reloj, y a partir de ahí cada mano descuenta ==2 minutos== fijos del nivel, dure lo que dure (reglas 126.a y 126.c del reglamento de torneos de las WSOP; RP-8-C y RP-8-D de la TDA) — así que las ciegas siguen subiendo durante la burbuja, solo que por mano y no por minuto real. Todas las mesas reparten una mano, y ninguna empieza la siguiente hasta que todas han terminado. Si dos jugadores bustean en la misma mano de hand-for-hand en la misma mesa, el que tenía menos fichas al inicio de la mano se lleva el puesto más bajo (el de la burbuja); si bustean en mesas distintas, quedan empatados en ese puesto (regla 126.b del reglamento de torneos de las WSOP) y en la práctica reparten los dos premios implicados. Hay un caso que ambos reglamentos escriben igual: en la única mano que sigue en juego cuando se anuncia el hand-for-hand, tanto la 126.c de las WSOP como la RP-8-A de la TDA hacen que todos los que bustean en ella se repartan el puesto o los puestos pagados. Confirma la regla de la casa antes de contar con subir un escalón.
 - **Stalling:** consumir todo el banco de tiempo en cada decisión con la esperanza de ver menos manos antes de premios. Durante el hand-for-hand esa esperanza no se sostiene: no reduce el número de manos que tu mesa tiene que jugar — todas las mesas juegan las mismas manos y cada mano descuenta 2 minutos del reloj (reglas 126.a y 126.c del reglamento de torneos de las WSOP), foldees al instante o quemes entero el banco de tiempo. Los stacks grandes no tienen razón para hacer stalling — quieren más manos para atacar. Los stacks cortos y medios lo siguen haciendo por costumbre, ==pero un stalling excesivo puede ganarte que te pidan el reloj (clock call) o una penalización== — tanquea con cabeza, sin quemar el banco de tiempo a propósito.
 - **Explótalo:** como todos los demás bajan el ritmo, un stack grande que sigue aplicando presión durante el hand-for-hand acumula ciegas y antes casi sin oposición.
 
@@ -148,7 +148,7 @@ La otra mitad es que el bubble factor depende de **quién tienes enfrente**, no 
 **En un satélite que reparte varios asientos idénticos, cada asiento paga lo mismo — así que en el momento en que tu stack está a salvo dentro de la burbuja, foldeas todo, incluidos ases servidos.** Este es el spot más contraintuitivo del póker, y es correcto. (El satélite winner-take-all que reparte un solo asiento es distinto: ese se juega por el primer puesto, en chip EV.) Si ganar un flip te da el ==mismo asiento que ya tienes asegurado== mientras que perderlo te elimina, no hay recompensa y sí un riesgo enorme:
 
 - **Una vez que tu asiento está matemáticamente a salvo** (estás lo bastante dentro de la burbuja como para que no te alcancen), foldea cada mano — sí, incluso AA y KK — y deja que los stacks más cortos se peleen. Rehaz esa cuenta cada vez que suban las ciegas: la "zona segura" encoge cuando entran los antes.
-- **No cuentes con el stalling en vivo.** Online, usar todo tu reloj no conlleva penalización; en vivo, quemar bancos de tiempo a propósito para escalar premios es explícitamente sancionable bajo las reglas de las WSOP — foldea a velocidad normal.
+- **No cuentes con el stalling en vivo.** Online, usar todo tu reloj no conlleva penalización; en vivo, quemar bancos de tiempo a propósito para escalar premios es explícitamente sancionable: la regla 80 del reglamento de torneos de las WSOP nombra expresamente agotar a propósito el banco de tiempo para escalar en los premios y lo remite a un reloj reducido o a una penalización por las reglas 40, 113 y 114 — foldea a velocidad normal.
 - **La única excepción:** paga solo si cubres al stack corto en cuestión y su eliminación asegura la burbuja *para ti* — y solo mientras tu asiento siga garantizado aunque pierdas el bote.
 
 Si te llevas una sola cosa de esta sección: un satélite no es un torneo normal. Las fichas por encima del umbral de seguridad no valen nada, así que juega en consecuencia.
@@ -188,7 +188,7 @@ A. Una stone bubble (o burbuja dura) es cuando una sola eliminación mete a todo
 
 **Q. ¿Qué significa estallar/reventar la burbuja?**
 
-A. "La burbuja" es el último puesto antes de premios, así que el jugador que bustea ahí — el bubble boy — no gana nada mientras todos los que siguen vivos cobran; eso es a lo que se refiere la gente con "pagar la burbuja". "Estallar (o reventar) la burbuja" es esa eliminación final: en el instante en que ocurre, todos los jugadores restantes están en premios y la intensa presión por sobrevivir se afloja. Algunos eventos dan al bubble boy un pequeño premio de consolación, pero tradicionalmente la burbuja paga cero.
+A. "La burbuja" es el último puesto antes de premios, así que el jugador que bustea ahí — el bubble boy — no gana nada mientras todos los que siguen vivos cobran. "Estallar (o reventar) la burbuja" es esa eliminación final: en el instante en que ocurre, todos los jugadores restantes están en premios y la intensa presión por sobrevivir se afloja. "Pagar la burbuja" es otra cosa: algunos eventos — o los propios jugadores, por acuerdo — le dan al bubble boy un pequeño pago de consolación. Eso es la excepción, no la regla; tradicionalmente la burbuja paga cero.
 
 **Q. ¿Deberías foldear en la burbuja?**
 

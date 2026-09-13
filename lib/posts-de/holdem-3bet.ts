@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Eine 3-Bet ist der erste Re-Raise vor dem Flop – sie heißt 3-Bet, weil der Big Blind die erste Bet ist, der Open-Raise die zweite und dein Re-Raise die dritte. 3-bette auf Value einen engen Kern (QQ+, AK) plus ein paar suited Blocker-Bluffs wie A5s, size sie in Position auf etwa das 3-fache des Opens und out of Position auf das 4-fache, und halte deine gesamte 3-Bet-Frequenz bei 6–10%. Wenn du selbst gegen eine 3-Bet sitzt, 4-bette deine Premiums, calle die Hände, die gut spielen, und folde den Rest – gegen Low-Stakes-Spieler, die nie bluffen, häufiger als „ausgeglichen“.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-12",
-  masterUpdated: "2026-09-12",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "16 Min.",
   emoji: "♦️",
@@ -194,7 +194,7 @@ Hier die Hälfte des 3-Bettings, die fast jeder Artikel überspringt: **Du wirst
 - **Call** – mit Händen, die gut floppen und die Equity oder Position zum Weiterspielen haben: Pocket Pairs zum Set-Minen, suited Broadways und starke Hände, die den Pot nicht in einen 4-Bet-Krieg aufblähen wollen.
 - **Fold** – alles andere. Der Großteil deiner Open-Range sollte einfach gegen eine 3-Bet aufgeben; das ist normal, keine Schwäche.
 
-Wie viel solltest du weiterspielen? Die theoretische Basislinie ist die **Minimum Defense Frequency (MDF)** – der Anteil deiner Range, den du weiterspielen musst, damit der 3-Better nicht profitieren kann, indem er mit beliebigen zwei Karten blufft. Sie ist ==Pot ÷ (Pot + Bet)== – wobei *Pot* ist, was vor der 3-Bet in der Mitte liegt, und *Bet* das ist, was der 3-Better **zusätzlich in den Pot legt** (aus einem Blind heraus also der Raise abzüglich der bereits gesetzten Chips) – was gegen typische 3-Bet-Sizes im Vakuum bei etwa **einem Drittel deiner Range** landet (eine 3x-3-Bet vom Button: 4,5bb Pot ÷ (4,5bb + 9bb) ≈ 33%). Aber hier der Exploit, der an echten Tischen Geld gewinnt:
+Wie viel solltest du weiterspielen? Die theoretische Basislinie ist die **Minimum Defense Frequency (MDF)** – der Anteil deiner Range, den du weiterspielen musst, damit der 3-Better nicht profitieren kann, indem er mit beliebigen zwei Karten blufft. Sie ist ==Pot ÷ (Pot + Bet)== – wobei *Pot* ist, was vor der 3-Bet in der Mitte liegt, und *Bet* das ist, was der 3-Better **zusätzlich in den Pot legt** (aus einem Blind heraus also der Raise abzüglich der bereits gesetzten Chips) – was gegen typische 3-Bet-Sizes im Vakuum bei etwa **einem Drittel deiner Range** landet (eine 3x-3-Bet vom Button: 4,5bb Pot ÷ (4,5bb + 9bb) ≈ 33%). Aber hier der Exploit, der an echten Tischen Geld gewinnt. Er liest sich am klarsten vom anderen Stuhl aus, also tauschen wir für diese eine Tabelle die Plätze: Der Wert unten ist, wie oft **sie** folden, wenn **du** sie 3-bettest.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -206,7 +206,7 @@ Wie viel solltest du weiterspielen? Die theoretische Basislinie ist die **Minimu
 
 </div>
 
-MDF setzt einen *ausgeglichenen* Gegner voraus. Bei Low Stakes und in Live-Games **under-bluffen** Spieler ihre 3-Bets stark – wenn also ein passiver Spieler plötzlich re-raist, glaub ihm und **folde mehr, als MDF sagt.** Du schuldest einem Nit keine „ausgeglichene“ Verteidigung.
+Jetzt zurück auf deinen Stuhl. MDF setzt einen *ausgeglichenen* Gegner voraus. Bei Low Stakes und in Live-Games **under-bluffen** Spieler ihre 3-Bets stark – wenn also ein passiver Spieler plötzlich re-raist, glaub ihm und **folde mehr, als MDF sagt.** Du schuldest einem Nit keine „ausgeglichene“ Verteidigung.
 
 ---
 

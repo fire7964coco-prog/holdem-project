@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Posições no poker são nomes de assento medidos a partir do dealer button — UTG, lojack, hijack, cutoff, button e os blinds — e elas andam um assento no sentido horário toda mão. No pré-flop, o UTG age primeiro e o big blind por último; no pós-flop, o small blind age primeiro e o button por último. Os números de assento físicos nunca mudam; as posições sim.",
   category: "strategy",
   date: "2026-06-13",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-12",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🎯",
@@ -184,7 +184,7 @@ Os nomes das posições não mudam com o tamanho da mesa — ==os nomes desapare
 
 **O heads-up é o que quebra a intuição de todo mundo.** Com só dois jogadores, ==o button posta o small blind== — o mesmo assento é BTN e SB ao mesmo tempo. Isso significa que o button age ==**primeiro** no pré-flop== (o big blind age por último, como sempre) mas ainda age ==**por último** em toda street pós-flop==, enquanto o big blind age primeiro no pós-flop. Todo outro tamanho de mesa segue o padrão normal; só o heads-up funde o melhor assento com um blind.
 
-**6-max vs full ring** é subtração pura: os três assentos extras (UTG+1, UTG+2 e um assento do meio) não existem, então o 6-max roda UTG → HJ → CO → BTN → SB → BB. A consequência prática não é que um assento jogue "mais tarde" — o cutoff tem os mesmos três jogadores atrás dele nas duas mesas. É que ==com os assentos iniciais fora, você senta nos blinds e em posição tardia com muito mais frequência, e menos gente abre à sua frente== — o UTG do 6-max enfrenta cinco adversários, não oito — e é por isso que os ranges ficam mais amplos em toda a linha em jogos short-handed. Os números assento por assento vivem no [guia de estratégia de posição](/pt/blog/holdem-position-play), e as mãos exatas que preenchem cada range estão mapeadas na [tabela de starting hands](/pt/blog/holdem-starting-hands-chart).
+**6-max vs full ring** é subtração pura: os três assentos de early (UTG, UTG+1 e UTG+2) somem e o lojack herda o nome UTG, então o 6-max roda UTG → HJ → CO → BTN → SB → BB. A consequência prática não é que um assento jogue "mais tarde" — o cutoff tem os mesmos três jogadores atrás dele nas duas mesas. É que ==com os assentos iniciais fora, você senta nos blinds e em posição tardia com muito mais frequência, e menos gente abre à sua frente== — o UTG do 6-max enfrenta cinco adversários, não oito — e é por isso que os ranges ficam mais amplos em toda a linha em jogos short-handed. Os números assento por assento vivem no [guia de estratégia de posição](/pt/blog/holdem-position-play), e as mãos exatas que preenchem cada range estão mapeadas na [tabela de starting hands](/pt/blog/holdem-starting-hands-chart).
 
 > **Ressalva de nomenclatura:** alguns sites e salas rotulam o primeiro assento do 6-max como "LJ" ou "MP" em vez de UTG, e os assentos do meio no 10-handed às vezes aparecem como "MP1/MP2". Os rótulos variam; a ordem de ação nunca.
 
@@ -215,7 +215,7 @@ A. O small blind age antes do big blind em toda street. No pré-flop, os dois bl
 
 **Q. Quantas posições existem no poker 6-max?**
 
-A. Seis: UTG (também chamado de lojack), hijack, cutoff, button, small blind e big blind. Comparado com uma mesa 9-max, o UTG+1, o UTG+2 e um assento do meio simplesmente não existem — os nomes são removidos primeiro da early position. Um assento como o cutoff continua com os mesmos jogadores atrás que o seu xará do full ring; já o primeiro a agir enfrenta cinco adversários em vez de oito, e, sem os assentos iniciais, você senta nos blinds e em posição tardia com muito mais frequência — por isso os ranges ficam mais amplos na média.
+A. Seis: UTG (também chamado de lojack), hijack, cutoff, button, small blind e big blind. Comparado com uma mesa 9-max, os três assentos de early (UTG, UTG+1 e UTG+2) simplesmente somem e o lojack herda o nome UTG — os nomes são removidos primeiro da early position, de modo que os dois assentos do meio continuam existindo. Todo assento que mantém o próprio nome — hijack, cutoff, button e os blinds — continua com os mesmos jogadores atrás que o seu xará do full ring; já o primeiro a agir enfrenta cinco adversários em vez de oito, e, sem os assentos iniciais, você senta nos blinds e em posição tardia com muito mais frequência — por isso os ranges ficam mais amplos na média.
 
 **Q. As posições no poker mudam a cada mão?**
 

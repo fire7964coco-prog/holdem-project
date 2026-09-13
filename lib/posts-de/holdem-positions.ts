@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Poker-Positionen sind Sitznamen, gemessen vom Dealer-Button – UTG, Lojack, Hijack, Cutoff, Button und die Blinds – und sie wandern jede Hand einen Sitz im Uhrzeigersinn. Preflop handelt UTG zuerst und der Big Blind zuletzt; postflop handelt der Small Blind zuerst und der Button zuletzt. Physische Sitznummern bewegen sich nie; Positionen schon.",
   category: "strategy",
   date: "2026-06-13",
-  updated: "2026-09-12",
-  masterUpdated: "2026-09-12",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "12 Min.",
   emoji: "🎯",
@@ -190,7 +190,7 @@ Die Positionsnamen ändern sich nicht mit der Tischgröße – ==sie fallen zuer
 
 **Heads-up ist das, was jedermanns Intuition bricht.** Mit nur zwei Spielern ==setzt der Button den Small Blind== – derselbe Sitz ist BTN und SB zugleich. Das bedeutet, der Button handelt ==preflop **zuerst**== (der Big Blind handelt zuletzt, wie immer), aber immer noch ==auf jeder Postflop-Street **zuletzt**==, während der Big Blind postflop zuerst handelt. Jede andere Tischgröße folgt dem normalen Muster; einzig Heads-up verschmilzt den besten Sitz mit einem Blind.
 
-**6-Max vs. Full Ring** ist reine Subtraktion: Die drei zusätzlichen Sitze (UTG+1, UTG+2 und ein Middle-Sitz) existieren nicht, also läuft 6-Max UTG → HJ → CO → BTN → SB → BB. Die praktische Konsequenz ist, dass ==du häufiger in den Blinds und in Late Position sitzt und seltener jemanden vor dir eröffnen siehst== – 6-Max-UTG hat fünf Gegner, nicht acht – weshalb sich die Ranges in Short-handed-Spielen auf ganzer Linie weiten. Die Sitz-für-Sitz-Zahlen stehen im [Positionsstrategie-Leitfaden](/de/blog/holdem-position-play), und die genauen Hände, die jede Range füllen, sind im [Starthände-Chart](/de/blog/holdem-starting-hands-chart) abgebildet.
+**6-Max vs. Full Ring** ist reine Subtraktion: Die drei Early-Sitze (UTG, UTG+1 und UTG+2) fallen weg und der Lojack erbt den Namen UTG, also läuft 6-Max UTG → HJ → CO → BTN → SB → BB. Die praktische Konsequenz ist, dass ==du häufiger in den Blinds und in Late Position sitzt und seltener jemanden vor dir eröffnen siehst== – 6-Max-UTG hat fünf Gegner, nicht acht – weshalb sich die Ranges in Short-handed-Spielen auf ganzer Linie weiten. Die Sitz-für-Sitz-Zahlen stehen im [Positionsstrategie-Leitfaden](/de/blog/holdem-position-play), und die genauen Hände, die jede Range füllen, sind im [Starthände-Chart](/de/blog/holdem-starting-hands-chart) abgebildet.
 
 > **Benennungs-Vorbehalt:** Manche Seiten und Card Rooms labeln den ersten 6-Max-Sitz als „LJ“ oder „MP“ statt UTG, und 10-händige Middle-Sitze erscheinen manchmal als „MP1/MP2“. Labels variieren; die Handlungsreihenfolge nie.
 
@@ -221,7 +221,7 @@ A. Der Small Blind handelt auf jeder Street vor dem Big Blind. Preflop handeln b
 
 **Q. Wie viele Positionen gibt es beim 6-Max-Poker?**
 
-A. Sechs: UTG (auch Lojack genannt), Hijack, Cutoff, Button, Small Blind und Big Blind. Verglichen mit einem 9-Max-Tisch existieren UTG+1, UTG+2 und ein Middle-Sitz schlicht nicht – gestrichen wird zuerst die Early Position. Hijack, Cutoff, Button, Small Blind und Big Blind behalten dabei ihren Abstand zum Button und damit exakt gleich viele Gegner hinter sich wie im Full Ring. Was sich verschiebt, ist der erste Sitz: 6-Max-UTG sitzt dort, wo im Full Ring der Lojack sitzt, und hat fünf Gegner statt acht.
+A. Sechs: UTG (auch Lojack genannt), Hijack, Cutoff, Button, Small Blind und Big Blind. Verglichen mit einem 9-Max-Tisch fallen schlicht die drei Early-Sitze (UTG, UTG+1 und UTG+2) weg, und der Lojack erbt den Namen UTG – gestrichen wird zuerst die Early Position, beide Middle-Sitze bleiben also erhalten. Hijack, Cutoff, Button, Small Blind und Big Blind – also jeder Sitz, der seinen Namen behält – behalten dabei ihren Abstand zum Button und damit exakt gleich viele Gegner hinter sich wie im Full Ring. Was sich verschiebt, ist der erste Sitz: 6-Max-UTG sitzt dort, wo im Full Ring der Lojack sitzt, und hat fünf Gegner statt acht.
 
 **Q. Ändern sich Poker-Positionen jede Hand?**
 

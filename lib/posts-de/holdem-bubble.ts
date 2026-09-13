@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Die Bubble ist der Moment kurz vor dem Geld, wo eine weitere Elimination allen anderen auszahlt. Weil ein Bust nichts bringt, ist Überleben mehr wert als die Chips, die du gewinnen würdest – Calling Ranges ziehen sich hart zusammen, während Shoves weit bleiben. Big Stacks attackieren, Medium Stacks sitzen am meisten in der Falle (nicht die Short Stacks), und an der Bubble eines Satellites mit mehreren Plätzen foldest du alles, sogar Asse, sobald dein Platz gesichert ist.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "13 Min.",
   emoji: "🫧",
@@ -161,7 +161,7 @@ Die andere Hälfte: Der Bubble Factor richtet sich danach, **wer dir gegenübers
 
 Ohne diese Regel könnten Spieler an langsamen Tischen Hand um Hand folden, während schnellere Tische durch die Bubble brennen. Hand for Hand gleicht das Feld an:
 
-- **Wie es funktioniert:** Der Turnierdirektor kündigt Hand for Hand an – die Turnieruhr wird dabei angehalten, und stattdessen laufen pro gespielter Hand feste ==2 Minuten== vom Level ab, egal wie lange die Hand tatsächlich dauert (WSOP-Turnierregel 126.a und 126.c; TDA RP-8). Die Blinds steigen also auch während der Bubble weiter – nur eben pro Hand statt pro Echtzeitminute. Alle Tische teilen eine Hand aus, und kein Tisch startet die nächste, bis jeder Tisch fertig ist. Busten zwei Spieler in derselben Hand-for-Hand-Runde am **selben Tisch**, nimmt derjenige mit weniger Chips zu Beginn der Hand die niedrigere (Bubble-)Platzierung; busten sie an **verschiedenen Tischen**, werden sie als gleichrangig gewertet und teilen sich die beiden betroffenen Auszahlungen.
+- **Wie es funktioniert:** Der Turnierdirektor kündigt Hand for Hand an – die Turnieruhr wird dabei angehalten, und stattdessen laufen pro gespielter Hand feste ==2 Minuten== vom Level ab, egal wie lange die Hand tatsächlich dauert (WSOP-Turnierregel 126.a und 126.c; TDA RP-8-C und RP-8-D). Die Blinds steigen also auch während der Bubble weiter – nur eben pro Hand statt pro Echtzeitminute. Alle Tische teilen eine Hand aus, und kein Tisch startet die nächste, bis jeder Tisch fertig ist. Busten zwei Spieler in derselben Hand-for-Hand-Runde am **selben Tisch**, nimmt derjenige mit weniger Chips zu Beginn der Hand die niedrigere (Bubble-)Platzierung; busten sie an **verschiedenen Tischen**, werden sie für diese Platzierung als gleichrangig gewertet (WSOP-Turnierregel 126.b) und teilen sich in der Praxis die beiden betroffenen Auszahlungen. Ein Fall steht in beiden Regelwerken gleich: Für die eine Hand, die beim Ausruf von Hand for Hand noch läuft, teilen sich nach WSOP 126.c wie nach TDA RP-8-A alle, die darin busten, die ausgezahlte(n) Platzierung(en). Kläre die Hausregel, bevor du auf das Hochklettern in der Auszahlung setzt.
 - **Stalling:** die volle Time Bank bei jeder Entscheidung nehmen, in der Hoffnung, vor dem Geld weniger Hände sehen zu müssen. Während Hand for Hand ist diese Hoffnung falsch: Es senkt die Zahl der Hände an deinem Tisch nicht – jeder Tisch spielt gleich viele Hände, und jede Hand zieht ihre 2 Minuten von der Uhr ab (WSOP-Turnierregel 126.a, 126.c), ob du sofort foldest oder die ganze Time Bank verbrennst. Big Stacks haben keinen Grund zu stallen – sie wollen mehr Hände zum Attackieren. Short und Medium Stacks stallen trotzdem aus Gewohnheit, ==aber exzessives Stalling kann einen Clock-Call oder eine Penalty einbringen== – tanke in Maßen, ohne die Time Bank absichtlich zu verbrennen.
 - **Nutze es aus:** Weil alle anderen langsamer werden, sammelt ein Big Stack, der während Hand for Hand weiter Druck macht, Blinds und Antes fast unangefochten ein.
 
@@ -175,7 +175,7 @@ Ohne diese Regel könnten Spieler an langsamen Tischen Hand um Hand folden, wäh
 Dieser Fold ist der kontraintuitivste Spot im Poker – und er ist korrekt. (Ein Winner-take-all-Satellite, der nur einen einzigen Platz vergibt, ist anders: Er wird nach Chip EV auf Platz eins gespielt.) Wenn dir das Gewinnen eines Flips ==denselben Platz gibt, den du bereits gesichert hast==, während das Verlieren dich eliminiert, gibt es keine Belohnung und ein enormes Risiko:
 
 - **Sobald dein Platz mathematisch sicher ist** (du bist weit genug innerhalb der Bubble, dass du nicht mehr eingeholt werden kannst), folde jede Hand – ja, sogar AA und KK – und lass die kürzeren Stacks es ausfechten. Rechne diese Schwelle bei jedem Blind-Anstieg neu: Die „sichere Zone“ schrumpft, sobald die Antes greifen.
-- **Spiel bewusst langsam, aber bleib innerhalb der Regeln.** An einer Satellite-Bubble schaut der Floor am schärfsten auf Stalling und geht oft früh in Hand for Hand. Exzessives Tanken bringt einen Clock-Call – läuft die Zeit ab, wird deine Hand für tot erklärt – und wiederholtes Stallen zieht Penalties nach sich, von der Verwarnung über ausgesetzte Hände bis zu mehreren ausgesetzten Runden. An der Sicherheitsschwelle kostet dich das genau den Sitzplatz, den du schützen wolltest.
+- **Spiel bewusst langsam, aber bleib innerhalb der Regeln.** An einer Satellite-Bubble schaut der Floor am schärfsten auf Stalling und geht oft früh in Hand for Hand. Exzessives Tanken bringt einen Clock-Call – läuft die Zeit ab, wird deine Hand für tot erklärt – und wiederholtes Stallen zieht Penalties nach sich, von der Verwarnung über ausgesetzte Hände bis zu mehreren ausgesetzten Runden. WSOP-Turnierregel 80 nennt das absichtliche Aufbrauchen der Time Bank zum Hochklettern in der Auszahlung ausdrücklich und verweist es an die Penalty-Regeln 40, 113 und 114. An der Sicherheitsschwelle kostet dich das genau den Sitzplatz, den du schützen wolltest.
 - **Die eine Ausnahme:** Calle nur, wenn du den betreffenden Short Stack coverst und seine Elimination die Bubble *für dich* platzen lässt – und nur, solange dein Platz auch dann garantiert bleibt, wenn du den Pot verlierst.
 
 Wenn du eine Sache aus diesem Abschnitt mitnimmst: Ein Satellite ist kein normales Turnier. Chips über der Sicherheitsschwelle sind wertlos, also spiel entsprechend.
@@ -214,7 +214,7 @@ A. Eine Stone Bubble (oder Hard Bubble) ist, wenn eine einzige Elimination jeden
 
 **Q. Was heißt „die Bubble bezahlen“ oder die Bubble platzen lassen?**
 
-A. „Die Bubble“ ist der letzte Platz vor dem Geld: Wer dort bustet – der Bubble Boy –, gewinnt nichts, während alle Verbliebenen bezahlt werden; genau das meint man mit die Bubble bezahlen. „Die Bubble platzen lassen“ ist diese letzte Elimination: In dem Moment sind alle Verbliebenen im Geld, und der harte Überlebensdruck lässt nach. Manche Events geben dem Bubble Boy einen kleinen Trostpreis, traditionell zahlt die Bubble aber null.
+A. „Die Bubble“ ist der letzte Platz vor dem Geld: Wer dort bustet – der Bubble Boy –, gewinnt nichts, während alle Verbliebenen bezahlt werden. „Die Bubble platzen lassen“ ist diese letzte Elimination: In dem Moment sind alle Verbliebenen im Geld, und der harte Überlebensdruck lässt nach. „Die Bubble bezahlen“ ist etwas anderes: Manche Events – oder die verbliebenen Spieler per Absprache – geben dem Bubble Boy eine kleine Trostzahlung. Das ist die Ausnahme, nicht die Regel; traditionell zahlt die Bubble null.
 
 **Q. Solltest du an der Bubble folden?**
 

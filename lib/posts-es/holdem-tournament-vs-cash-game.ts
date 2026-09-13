@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "En los cash games las fichas son dinero real y las ciegas se mantienen fijas. En los torneos las fichas son equity de supervivencia, las ciegas suben y los premios dependen de en qué puesto termines.",
   category: "tournament",
   date: "2026-06-11",
-  updated: "2026-08-26",
-  masterUpdated: "2026-08-26",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   hideSummaryImageSlot: true,
   readTime: "16 min",
   emoji: "🏆",
@@ -384,7 +384,7 @@ A. Una guía común es 20-40 buy-ins para cash games y 100+ buy-ins para torneos
 
 **Q. ¿Con cuántas ciegas grandes se empieza en un cash game vs un torneo?**
 
-A. En un cash game entras por el máximo de la mesa — en un $1/$2 suele ser $200–$300, es decir, 100–150 ciegas grandes — porque los stacks profundos recompensan la habilidad postflop y te dejan ganar un stack completo cuando vas por delante. En un torneo la profundidad te la elige el propio evento: sueles empezar en torno a 100-300 ciegas grandes, pero las ciegas que suben lo reducen a 20, luego a 10 y luego a terreno de push/fold. En corto: en cash entras profundo, y en torneo vigila cómo baja tu cuenta de ciegas grandes y ajusta a medida que lo hace.
+A. En un cash game entras por el máximo de la mesa — en un $1/$2 suele ser $200–$300, es decir, 100–150 ciegas grandes — porque los stacks profundos recompensan la habilidad postflop y te dejan ganar un stack completo cuando vas por delante — con dos condiciones: tu bankroll tiene que aguantarlo (la regla de 20-40 buy-ins de arriba cuenta buy-ins completos, no entradas cortas) y un stack profundo solo paga si eres el mejor postflop. Si alguna de las dos flaquea, entrar más corto es una opción legítima, no un error de novato: los stacks cortos simplifican las decisiones, solo limitan lo que puedes ganar en una buena situación. En un torneo la profundidad te la elige el propio evento: sueles empezar en torno a 100-300 ciegas grandes, pero las ciegas que suben lo reducen a 20, luego a 10 y luego a terreno de push/fold. En corto: en cash entras profundo si tu bankroll y tu juego postflop lo permiten, y en torneo vigila cómo baja tu cuenta de ciegas grandes y ajusta a medida que lo hace.
 
 **Q. ¿Cuántas fichas hacen falta para un cash game en casa?**
 

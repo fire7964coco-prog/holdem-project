@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A 3-bet is the first re-raise before the flop — called a 3-bet because the big blind is the first bet, the open-raise the second, and your re-raise the third. Value-3-bet a tight core (QQ+, AK) plus a few suited blocker bluffs like A5s, size it around 3x the open in position and 4x out of position, and keep your overall 3-bet frequency near 6–10%. When you're the one facing a 3-bet, 4-bet your premiums, call the hands that play well, and fold the rest — folding more than 'balanced' against low-stakes players who never bluff.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-12",
+  updated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "♦️",
@@ -175,7 +175,7 @@ Here's the half of 3-betting that almost every article skips: **you'll be on the
 - **Call** — with hands that flop well and have the equity or position to continue: pocket pairs looking to set-mine, suited broadways, and strong hands that don't want to bloat the pot into a 4-bet war.
 - **Fold** — everything else. Most of your opening range should simply give up to a 3-bet; that's normal, not weakness.
 
-How much should you continue? The theoretical baseline is **Minimum Defense Frequency (MDF)** — the share of your range you must continue so the 3-bettor can't profit by bluffing any two cards. It's ==pot ÷ (pot + bet)== — where *pot* is what's in the middle before the 3-bet and *bet* is what the 3-bettor is **adding** (from a blind, that's the raise minus the chips already posted) — which against typical 3-bet sizes lands around **a third of your range** in a vacuum (a 3x 3-bet from the button: 4.5bb pot ÷ (4.5bb + 9bb) ≈ 33%). But here's the exploit that wins money at real tables:
+How much should you continue? The theoretical baseline is **Minimum Defense Frequency (MDF)** — the share of your range you must continue so the 3-bettor can't profit by bluffing any two cards. It's ==pot ÷ (pot + bet)== — where *pot* is what's in the middle before the 3-bet and *bet* is what the 3-bettor is **adding** (from a blind, that's the raise minus the chips already posted) — which against typical 3-bet sizes lands around **a third of your range** in a vacuum (a 3x 3-bet from the button: 4.5bb pot ÷ (4.5bb + 9bb) ≈ 33%). But here's the exploit that wins money at real tables. It reads cleanest from the other chair, so swap seats for the table below: the stat below is how often **they** fold when **you** 3-bet them.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -187,7 +187,7 @@ How much should you continue? The theoretical baseline is **Minimum Defense Freq
 
 </div>
 
-MDF assumes a *balanced* opponent. At low stakes and in live games, players badly **under-bluff** their 3-bets — so when a passive player suddenly re-raises, believe them and **fold more than MDF says.** You don't owe a nit a "balanced" defense.
+Now swap back. MDF assumes a *balanced* opponent. At low stakes and in live games, players badly **under-bluff** their 3-bets — so when a passive player suddenly re-raises, believe them and **fold more than MDF says.** You don't owe a nit a "balanced" defense.
 
 ---
 

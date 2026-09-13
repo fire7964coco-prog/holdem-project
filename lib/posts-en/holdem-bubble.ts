@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "The bubble is the spot right before the money, where one more elimination pays everyone else. Because busting means winning nothing, survival is worth more than the chips you'd gain — so calling ranges tighten hard while shoving stays wide. Big stacks attack, medium stacks are the most trapped (not short stacks), and on a multi-seat satellite bubble you fold everything, even aces, once your seat is locked.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-09-11",
+  updated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🫧",
@@ -136,7 +136,7 @@ The other half is that bubble factor tracks **who is across from you**, not the 
 
 **When the money is close, tournaments switch to "hand-for-hand" — every table plays exactly one hand at the same time, then waits — specifically to stop players from stalling into the money.** Without it, players at slow tables could fold hand after hand while faster tables burned through the bubble. Hand-for-hand levels the field:
 
-- **How it works:** the tournament director pauses the clock, and from then on every hand runs a fixed ==2 minutes== off the level no matter how long it actually takes (WSOP Tournament Rule 126.a and 126.c; TDA RP-8) — so blinds keep climbing through the bubble, just per hand instead of per real minute. All tables deal one hand, and no table starts the next until every table has finished. If two players bust on the same hand-for-hand at the same table, the one who started the hand with fewer chips takes the lower (bubble) finish; if they bust at different tables, they are ranked as a tie and split the two payouts involved.
+- **How it works:** the tournament director pauses the clock, and from then on every hand runs a fixed ==2 minutes== off the level no matter how long it actually takes (WSOP Tournament Rule 126.a and 126.c; TDA RP-8-C and RP-8-D) — so blinds keep climbing through the bubble, just per hand instead of per real minute. All tables deal one hand, and no table starts the next until every table has finished. If two players bust on the same hand-for-hand at the same table, the one who started the hand with fewer chips takes the lower (bubble) finish; if they bust at different tables, they tie for that place finish (WSOP Tournament Rule 126.b) and in practice split the two payouts involved. One case is written the same way in both rulebooks: for the single hand still in progress when hand-for-hand is announced, WSOP 126.c and TDA RP-8-A both have everyone who busts on it share the place or places paid. Check the house rule before you count on laddering.
 - **Stalling:** taking the full time bank on every decision in the hope of seeing fewer hands before the money. During hand-for-hand that hope is misplaced: it does not reduce the number of hands your table has to play — every table runs the same number of hands and each hand takes 2 minutes off the clock (WSOP Tournament Rule 126.a, 126.c) whether you snap-fold or burn the whole time bank. Big stacks have no reason to stall — they want more hands to attack. Short and medium stacks still stall out of habit, ==but excessive stalling can earn a clock call or a penalty== — tank within reason, without deliberately burning your time bank.
 - **Exploit it:** because everyone else slows down, a big stack that keeps applying pressure during hand-for-hand racks up blinds and antes almost uncontested.
 
@@ -147,7 +147,7 @@ The other half is that bubble factor tracks **who is across from you**, not the 
 **On a multi-seat satellite, every seat pays the same — so the moment your stack is safely inside the bubble, you fold everything, including pocket aces.** This is the most counterintuitive spot in poker, and it's correct. (A winner-take-all satellite that awards a single seat is different: it is played for first place on chip EV.) If winning a flip gives you the ==same seat you've already locked== while losing it eliminates you, there is no reward and enormous risk:
 
 - **Once your seat is mathematically safe** (you're far enough inside the bubble that you can't be caught), fold every hand — yes, even AA and KK — and let the shorter stacks fight it out. Re-check that math every time the blinds go up: the "safe zone" shrinks as antes kick in.
-- **Don't count on stalling live.** Online, using your full clock carries no penalty; live, deliberately burning time banks to ladder up is explicitly penalty-eligible under WSOP rules — fold at normal speed and let the short stacks fight.
+- **Don't count on stalling live.** Online, using your full clock carries no penalty; live, deliberately burning time banks to ladder up is explicitly penalty-eligible — WSOP Tournament Rule 80 names "purposely depleting time banks to ladder up in the payout" and routes it to a reduced clock or a penalty under Rules 40, 113 and 114 — fold at normal speed and let the short stacks fight.
 - **The one exception:** call only if you cover the short stack in question and their elimination locks the bubble *for you* — and only as long as your seat stays guaranteed even if you lose the pot.
 
 If you take one thing from this section: a satellite is not a normal tournament. Chips above the safety threshold are worthless, so play like it.
@@ -183,7 +183,7 @@ A. A stone (or hard) bubble is when a single elimination puts every remaining pl
 
 **Q. What does it mean to "pay the bubble" or burst the bubble?**
 
-A. "The bubble" is the last spot before the money, so the player who busts there — the bubble boy — wins nothing while everyone still in gets paid; that's what people mean by paying the bubble. "Bursting the bubble" is that final elimination: the instant it happens, every remaining player is in the money and the intense survival pressure eases. Some events give the bubble boy a small consolation, but traditionally the bubble pays zero.
+A. "The bubble" is the last spot before the money, so the player who busts there — the bubble boy — wins nothing while everyone still in gets paid. "Bursting the bubble" is that final elimination: the instant it happens, every remaining player is in the money and the intense survival pressure eases. "Paying the bubble" is a separate thing: some events — or the remaining players, by agreement — hand the bubble finisher a small consolation payment. That is the exception, not the rule; traditionally the bubble pays zero.
 
 **Q. Should you fold on the bubble?**
 

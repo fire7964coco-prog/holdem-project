@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Folden ist die am meisten unterschätzte Fähigkeit im Poker – das schlechteste Ergebnis eines Folds ist null, während ein verlorener Call jedes Mal Chips verblutet. Ein solider Spieler foldet rund 75–85% seiner Hände vor dem Flop, legt nach dem Flop verfehlte Hände und schwache Draws ab, die seine Pot Odds nicht erfüllen, und – am schwersten von allem – gibt starke, aber geschlagene Hände auf, wenn die Linie eines passiven Gegners nach Value schreit. Die meisten Spieler callen nicht zu viel, weil sie Hände nicht lesen können; sie callen, weil sich die Chips im Pot bereits wie ihre eigenen anfühlen. Sind sie aber nicht.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-12",
-  masterUpdated: "2026-09-12",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "16 Min.",
   emoji: "🛡️",
@@ -197,9 +197,9 @@ Rechnen wir es aus. Meine besten fünf Karten sind ==K♣ K♦ 9♠ 9♥ A♥== 
 | **Hero-Callen, „um sie ehrlich zu halten“** | Du fängst einen Bluff, bezahlst zehn Values | Reserviere es für Spieler, die tatsächlich bluffen |
 | **Auf jede Scare Card overfolden (der Nit)** | Gute Spieler bluffen dich von der besten Hand weg | Folde gegen Value-Linien, nicht gegen Angst |
 
-Beachte, dass beide Pole hier sind: folde *mehr* gegen die value-lastigen Spieler, die nie bluffen (der Großteil der Low-Stakes-Population), und folde *weniger* gegen die denkenden Regulars, die genug bluffen, um einen Nit auszunutzen.
-
 </div>
+
+Beachte, dass beide Pole hier sind: folde *mehr* gegen die value-lastigen Spieler, die nie bluffen (der Großteil der Low-Stakes-Population), und folde *weniger* gegen die denkenden Regulars, die genug bluffen, um einen Nit auszunutzen.
 
 ---
 

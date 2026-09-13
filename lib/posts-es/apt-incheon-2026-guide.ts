@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "El Main Event del APT Incheon 2026 lo ganó Stephen Pang, de Hong Kong, que se llevó KRW 411,180,000 (~$293,700) tras un acuerdo ICM a tres y el trofeo del León de oro de 24K. El campo marcó un récord con 1,393 entradas y una bolsa de KRW 3,008,880,000. El subcampeón fue Shoumin Zhang (China, KRW 366,500,000 / ~$261,785) y el tercero Yifu He (EE. UU.). Los tres primeros también ganaron asientos para el Main Event del APT Championship 2026 en Taipéi (~$10,000 cada uno). Solo para extranjeros (los ciudadanos coreanos sin residencia en el extranjero no pueden entrar). Seúl está a ~1 hora — para la próxima parada, el viaje de póker y el viaje a Corea siguen siendo el mismo viaje.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🇰🇷",
@@ -76,6 +76,8 @@ Y para el visitante internacional: ==g:la mayoría de los pasaportes occidentale
 
 </div>
 
+:::note[**★Sobre las cifras en USD:** los buy-ins y los premios de este artículo están convertidos a **tipos de cambio distintos** — el buy-in a unos **1,468 KRW/USD** y los premios del resultado final a unos **1,400 KRW/USD** (tal como los anunció la organización) — cada bloque convierte al tipo vigente cuando publicó su propia fuente. La cifra que manda es el **importe en KRW**, salvo los paquetes de Natural8 más abajo, que el operador cotiza en **NT$**.]:::
+
 ---
 
 ## Calendario completo de eventos
@@ -88,8 +90,8 @@ Y para el visitante internacional: ==g:la mayoría de los pasaportes occidentale
 | Mystery Bounty Hunter | 8–9 ago | ~$610 | ~$204K |
 | APT Super High Roller | 9–10 ago | ==r:~$10,200== | ~$340K |
 | ==**APT Main Event**== | ==**9–15 ago**== | ==**~$1,703**== | ==g:**~$1M**== |
-| Superstar Challenge | 14–15 ago | ~$23,800 | — |
 | Zodiac Classic | 13–14 ago | ~$2,000 | ~$340K |
+| Superstar Challenge | 14–15 ago | ~$23,800 | — |
 | Mini Main Event | 14–15 ago | ~$610 | ~$272K |
 | APT High Roller | 15–16 ago | ~$3,400 | ~$340K |
 | Ultra Stack | 15–16 ago | ~$477 | ~$102K |
@@ -151,7 +153,7 @@ Step de $20 → ganas ticket para el Mega Satélite de $200 → ganas asiento pa
 
 > **Qué era OnLive:** la ruta te dejaba jugar el Día 1 desde tu propia zona horaria y solo volar a Corea si sobrevivías hasta el Día 3 — la vía más inteligente cuando el presupuesto de viaje iba justo. ==r:Cerró el 2 de agosto, así que en esta edición ya no es una opción== — queda anotada porque merece la pena vigilarla en la próxima parada del APT.
 
-**Hay una tercera vía que casi ninguna guía menciona: los Country Exclusives.** Natural8 organiza clasificatorios restringidos por nacionalidad que reparten **seis paquetes en vivo**, y un paquete no es solo el asiento: incluye **la entrada al Main Event (~$1.684) más unos $500 en gastos de viaje**. Los satélites normales te dan el asiento y el vuelo corre de tu cuenta. ==r:Aquí la elegibilidad va por **nacionalidad y se verifica en el KYC** — no por la dirección que tengas registrada, al contrario que el acceso a la cuenta, que ese sí depende del país de residencia.== El único bracket publicado para Incheon 2026, "N8TW x APT Incheon 2026", era **solo para nacionalidad taiwanesa**. Mira en el lobby si hay alguna edición que puedas jugar de verdad antes de contar con esta vía.
+**Hay una tercera vía que casi ninguna guía menciona: los Country Exclusives.** Natural8 organiza clasificatorios restringidos por nacionalidad que reparten **seis paquetes en vivo**, y un paquete no es solo el asiento: incluye **la entrada al Main Event más dinero de viaje** — en el único bracket publicado para Incheon 2026 eso fueron **NT$53,888 de ticket y NT$16,000 de gastos** (unos $1,684 y $500). Natural8 cotiza estos paquetes en nuevos dólares taiwaneses, por eso la cifra del ticket no cuadra exactamente con la entrada de KRW 2,500,000 (~$1,703) citada arriba. Los satélites normales te dan el asiento y el vuelo corre de tu cuenta. ==r:Aquí la elegibilidad va por **nacionalidad y se verifica en el KYC** — no por la dirección que tengas registrada, al contrario que el acceso a la cuenta, que ese sí depende del país de residencia.== El único bracket publicado para Incheon 2026, "N8TW x APT Incheon 2026", era **solo para nacionalidad taiwanesa**. Mira en el lobby si hay alguna edición que puedas jugar de verdad antes de contar con esta vía.
 
 ---
 

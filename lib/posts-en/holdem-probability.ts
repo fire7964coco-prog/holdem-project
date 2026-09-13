@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "By the river you'll make one pair 43.8% of the time, two pair 23.5%, a flush 3.0%, and a full house 2.6% — while a royal flush shows up just once in about 31,000 hands.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-09",
+  updated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🎲",
@@ -243,11 +243,11 @@ A. 1 in 221 (0.45%) for aces specifically. Any pocket pair, though, comes around
 
 **Q. What is the Rule of 2 and 4 in poker?**
 
-A. A shortcut for draw odds — also called the "4-2 rule": multiply your outs by 4 on the flop (two cards to come) or by 2 on the turn (one card to come) to estimate your percentage chance of hitting. It's accurate to within a point or two up to about nine outs.
+A. A shortcut for draw odds — also called the "4-2 rule": multiply your outs by 4 on the flop (two cards to come) or by 2 on the turn (one card to come) to estimate your percentage chance of hitting. It's accurate to within a point or two up to about nine outs. Use ×4 only when you'll see both cards without more betting.
 
 **Q. How do you calculate pot odds?**
 
-A. Divide the amount you must call by the total pot after your call. Calling $50 into a $150 pot means 50 ÷ 200 = 25% — so you need at least 25% equity to call profitably. Compare that to your drawing odds: if your chance to hit is higher, you call.
+A. Divide the amount you must call by the total pot after your call: calling $50 into a $150 pot is 50 ÷ 200 = 25%, the equity you need. This page supplies the other half of that comparison — how often your draw actually gets there. The pricing side is covered in [the pot odds guide — ratios, bet-size shortcuts and the costly mistakes](/en/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp").
 
 **Q. What are the odds of set over set?**
 

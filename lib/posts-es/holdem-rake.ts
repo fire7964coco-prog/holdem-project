@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "El rake es la pequeña tajada que la sala se lleva de cada bote por montar la partida — normalmente entre 2.5 y 10% hasta un tope de unos pocos dólares. La mayoría de salas no cobra nada si todos foldean antes del flop ('no flop, no drop'). Golpea más fuerte a los límites bajos y a las mesas cortas, y el rakeback devuelve una parte a los regulares.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-09-12",
-  masterUpdated: "2026-09-12",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🏦",
@@ -76,7 +76,7 @@ Aquí viene la parte que cambió mi forma de ver el juego. El porcentaje suena m
 
 **Una partida en vivo $1/$2.** Con un rake del 10% topado en $5 y unas 30 manos repartidas por hora, la mayoría de botes disputados llegan o rozan el tope. Una sola mesa concurrida puede pagar **$100+ por hora** a la ranura entre todos los jugadores. Ese dinero sale directo de las ganancias colectivas — es la razón por la que una mesa llena de jugadores más o menos parejos sangra fichas poco a poco hacia la casa.
 
-**La "trampa del rake" en límites bajos.** Esta es la moraleja que todo principiante debería oír. Como el tope apenas baja conforme bajas de límites, cuanto *más bajo* juegas, *mayor* es la tajada que el rake se lleva en proporción. Un ejemplo trabajado en NL50 online (ilustrativo — la cifra exacta se mueve según cuántos botes disputes y cómo aplique la sala su tope, no según cuántas manos registres):
+**La "trampa del rake" en límites bajos.** Esta es la moraleja que todo principiante debería oír. Como el tope apenas baja conforme bajas de límites, cuanto *más bajo* juegas, *mayor* es la tajada que el rake se lleva en proporción. Aquí va un ejemplo trabajado en NL50 online (ilustrativo — la cifra exacta se mueve según cuántos botes disputes y cómo aplique la sala su tope, no según cuántas manos registres). De los dos topes de abajo, uno cae dentro de la banda online habitual y el otro por encima: $2 dentro del $1–$3 que anuncian casi todas las salas, $4 por encima.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

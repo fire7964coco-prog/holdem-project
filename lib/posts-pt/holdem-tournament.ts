@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Num torneio de poker você paga um buy-in fixo por fichas, e os blinds sobem num relógio até uma pessoa ficar com todas as fichas. Os 10–15% melhores do field entram no dinheiro. Os formatos incluem freezeout, PKO, satellite e deepstack — você entra por buy-in direto, satellite ou pré-registro online.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-09-12",
-  masterUpdated: "2026-09-12",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏆",
@@ -39,7 +39,7 @@ Este guia é tudo o que eu queria que alguém tivesse me contado antes daquele d
 
 :::stripe
 10–15% | do field costuma entrar no dinheiro
-20–40 min | por nível de blind em eventos ao vivo
+20–40 min | por nível de blind ao vivo (60+ nos Mains principais)
 $100+$9 | como um buy-in típico se divide — prize pool + taxa
 :::
 
@@ -76,7 +76,7 @@ Todo torneio publica sua estrutura numa **structure sheet**: stack inicial, nív
 
 Isto é o que a maioria dos guias pra iniciante pula, e é o conceito mecânico mais importante dos torneios.
 
-**Os blinds começam pequenos e sobem num relógio — normalmente a cada 20–40 minutos em eventos ao vivo.**
+**Os blinds começam pequenos e sobem num relógio — normalmente a cada 20–40 minutos em eventos ao vivo, e 60 minutos ou mais nos Main Events de destaque** (o Championship Event do WPT Australia 2026 roda níveis de 60 minutos, que esticam para 90 nos dias finais).
 
 | Nível | Blinds | Antes | Seu stack de 10k = |
 |:---|:---:|:---:|:---|
@@ -225,7 +225,7 @@ Esta é a parte que a maioria dos iniciantes só aprende do jeito difícil. Aqui
 <div style="color:hsl(var(--foreground))">Cartas na mesa. Nível 1: blinds 25/50. Você tem 200BB. Jogue um poker exploratório.</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="color:hsl(var(--primary));font-weight:700">13h–15h</div>
+<div style="color:hsl(var(--primary));font-weight:700">12h40–14h40</div>
 <div style="color:hsl(var(--foreground))">Níveis 2–4. Late registration ainda aberto. O field cresce. Os antes entram conforme a structure sheet (no exemplo acima, no nível 3). Alguns jogadores já quebram.</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">

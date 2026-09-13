@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "WPT Australia 2026: 10–30 Sep, The Star Sydney. Dua flagship: AUD $1.500 WPT Prime (17–22 Sep) dan AUD $5.000 WPT Championship (24–30 Sep). Satelit on-site dari AUD $270, dengan qualifier Championship $290 dan $550. Hadiah juara pertama Championship sudah termasuk kursi WPT World Championship senilai $15.000 yang dipotong dari prize pool. Wajib 18+, anggota Star Club, dan dress code smart-casual ditegakkan.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   readTime: "14 mnt",
   emoji: "🦘",
   layout: "tournament-guide",
@@ -132,7 +132,7 @@ Kalau Anda di luar Australia dan ingin pemanasan dengan satelit online sebelum t
 | **$10K WPT High Roller** | 23–24 Sep | $10.000 | High roller |
 | **WPT Australia Championship** | ==**24–30 Sep**== | ==**$5.000**== | ==g:FT livestream== |
 | Mini-Championship | 27–28 Sep | $2.000 | Format 2 hari |
-| WPT World Champs Warm-Up | 29–30 Sep | $1.150 | Pemanasan WC Des |
+| WPT World Champs Prime Warm Up | 29–30 Sep | $1.150 | Pemanasan WC Des |
 | Australian PLO Championship | 29–30 Sep | $5.000 | Pot Limit Omaha |
 | The Ultimate Freeze | 30 Sep | $1.500 | Freezeout |
 | Sydney Finale | 30 Sep | $680 | Event penutup |
@@ -158,6 +158,28 @@ Kalau Anda di luar Australia dan ingin pemanasan dengan satelit online sebelum t
 Dengan buy-in 2026 diturunkan menjadi AUD $5.000 (dari $5.500 pada 2025) dan format dual-championship baru yang membawa lebih banyak pemain ke festival, field diperkirakan menjadi yang terbesar dalam sejarah event.
 
 **Kursi sang juara**: Hadiah peringkat pertama di WPT Australia Championship sudah termasuk ==g:kursi WPT World Championship senilai $15.000== — itu valuasi penyelenggara, tertulis di halaman resmi event Championship (halaman itu tidak menyebut mata uangnya; mata uang festival ini AUD, dan WPT mencantumkan buy-in World Championship sebesar ==**US $10.400**==). Baca kalimat resminya baik-baik: kursi itu ==r:bagian dari hadiah juara pertama dan dipotong dari total prize pool==, bukan bonus tambahan di luar uang tunai. Brosur jadwal The Star hanya menulis "CHAMPIONSHIP = ticket to WPT World Championship"; nilai dan pemotongannya ada di halaman event, bukan di brosur. Juara Prime Championship menerima kursi Prime WPT World Championship senilai $1.500 dengan ketentuan yang sama. ==r:Baca Tournament Conditions final sebelum menganggap hadiah utama itu seluruhnya tunai.==
+
+**Ke mana sembilan tiket itu pergi.** Halaman festival mengiklankan ==**sembilan tiket WPT World Championship**==, yang terdengar seperti sembilan kursi di Main Event US $10.400. Legenda di brosur jadwalnya membagi tiket itu ke tiga gelar, dan ==r:hanya dua dari sembilan yang merupakan tiket Main Event==:
+
+<div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.25);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
+
+| Tiket | Event (hari final) | Buy-in (AUD) | Tanggal |
+|:---|:---|:---:|:---:|
+| ==g:**WPT World Championship**== | **#24 Championship Event** | $5.000 | 30 Sep |
+| ==g:**WPT World Championship**== | **#22 $10K High Roller** | $10.000 | 24 Sep |
+| WPT World Championship Prime | #14 Prime Championship Event | $1.500 | 22 Sep |
+| WPT World Championship Prime | #1 Australian Poker Cup | $1.150 | 14 Sep |
+| WPT World Championship Prime | #6 Aussie Monster Stack | $1.250 | 14 Sep |
+| WPT World Championship Prime | #20 Mystery Bounty | $1.350 | 22 Sep |
+| WPT World Championship Prime | #30 Mini-Championship | $2.000 | 28 Sep |
+| WPT World Championship Prime | #33 WPT World Champs Prime Warm Up | $1.150 | 30 Sep |
+| WPT Ladies Championship | #11 Ladies Australian Championship | $500 | 16 Sep |
+
+</div>
+
+🪶 Legenda brosur menulis badge Prime sebagai "ticket to WPT Prime Championship"; Tournament Conditions menyebut kursi yang sama sebagai kursi WPT World Championship Prime. #14 *adalah* Prime Championship dan membawa badge itu sendiri, jadi badge-nya tidak mungkin menunjuk event-nya sendiri.
+
+Dua hal mengikuti untuk siapa pun yang memilih event. ==**$10K High Roller adalah satu-satunya pintu lain menuju tiket Main Event**==, dan tabel satelit di atas menunjukkan ia punya kualifikasi AUD $1.050 sendiri pada 22 September. Bandingkan antar-kualifikasi, bukan dengan buy-in: Championship punya sendiri di AUD $290 dan $550, jadi jalur termurah masuk ke field yang bermain demi tiket Main Event tetap yang $290 — catat, itu tutup 9 September, sementara kualifikasi $1.050 berjalan 22 September. Lalu enam tiket Prime datang dari event dengan buy-in AUD $1.150 sampai $2.000, jadi tiket ke pekan World Championship tidak menuntut Anda mengalahkan field unggulan. (Sumber: halaman WPT Australia milik The Star dan brosur jadwal festival, diperiksa 13 September 2026. Kedua nilai kursi ada di paragraf di atas.)
 
 ---
 

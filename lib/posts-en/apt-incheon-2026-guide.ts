@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "APT Incheon 2026 wrapped on Aug 16 at Paradise City Casino, Incheon. Hong Kong's Stephen Pang won the Main Event for KRW 411,180,000 (~$293,700) after a three-handed ICM deal, topping a record 1,393-entry field with a KRW 3,008,880,000 prize pool. Runner-up Shoumin Zhang (China) took KRW 366,500,000 (~$261,785), and the top three also earned APT Championship 2026 Main Event seats (~$10,000 each). Foreign nationals only (Korean citizens without overseas residency cannot enter). Seoul is ~1 hour away — for the next stop, the poker trip and the Korea trip are still the same trip.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-09-09",
+  updated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🇰🇷",
@@ -75,6 +75,8 @@ And for international visitors: ==g:most Western passport holders (the USA, Cana
 
 </div>
 
+:::note[**★On the USD figures:** buy-ins and prize money in this article are converted at **different rates** — the buy-in at roughly **1,468 KRW/USD**, the final-result prize money at roughly **1,400 KRW/USD** (as the organizer announced them) — each block converts at the rate current when its own source published. The binding figure is the **KRW amount**, except the Natural8 packages further down, which the operator prices in **NT$**.]:::
+
 ---
 
 ## Full Event Schedule
@@ -87,8 +89,8 @@ And for international visitors: ==g:most Western passport holders (the USA, Cana
 | Mystery Bounty Hunter | Aug 8–9 | ~$610 | ~$204K |
 | APT Super High Roller | Aug 9–10 | ==r:~$10,200== | ~$340K |
 | ==**APT Main Event**== | ==**Aug 9–15**== | ==**~$1,703**== | ==g:**~$1M**== |
-| Superstar Challenge | Aug 14–15 | ~$23,800 | — |
 | Zodiac Classic | Aug 13–14 | ~$2,000 | ~$340K |
+| Superstar Challenge | Aug 14–15 | ~$23,800 | — |
 | Mini Main Event | Aug 14–15 | ~$610 | ~$272K |
 | APT High Roller | Aug 15–16 | ~$3,400 | ~$340K |
 | Ultra Stack | Aug 15–16 | ~$477 | ~$102K |
@@ -152,7 +154,7 @@ $20 Step Satellite → win ticket to $200 Mega Satellite → win Main Event seat
 
 > **What OnLive was:** the route let you play Day 1 from your home time zone and only fly to Korea if you survived to Day 3 — the smarter path when the travel budget was tight. ==r:It closed on Aug 2, so for this edition it is no longer an option== — noted here because it is worth watching for at the next APT stop.
 
-**There's a third route most guides skip — Country Exclusives.** Natural8 runs country-restricted qualifiers that award **six live packages**, and a package is not just a seat: it's the **Main Event entry (~$1,684) plus roughly $500 in travel expenses**. Ordinary satellites give you the seat and leave the flight to you. ==r:Eligibility here runs on **nationality, checked at KYC** — not on your registered address, unlike account access, which does depend on your country of residence.== The one bracket published for Incheon 2026, "N8TW x APT Incheon 2026", was open to **Taiwanese nationals only**. Check the tournament lobby for a bracket you can actually enter before you build a plan around this route.
+**There's a third route most guides skip — Country Exclusives.** Natural8 runs country-restricted qualifiers that award **six live packages**, and a package is not just a seat: it's the **Main Event ticket plus travel money** — in the one bracket published for Incheon 2026 that was **NT$53,888 for the ticket and NT$16,000 for expenses** (about $1,684 and $500). Natural8 prices these packages in New Taiwan dollars, which is why the ticket figure doesn't land exactly on the KRW 2,500,000 (~$1,703) buy-in quoted above. Ordinary satellites give you the seat and leave the flight to you. ==r:Eligibility here runs on **nationality, checked at KYC** — not on your registered address, unlike account access, which does depend on your country of residence.== The one bracket published for Incheon 2026, "N8TW x APT Incheon 2026", was open to **Taiwanese nationals only**. Check the tournament lobby for a bracket you can actually enter before you build a plan around this route.
 
 ---
 

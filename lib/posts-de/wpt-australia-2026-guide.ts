@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "WPT Australia 2026: 10.–30. Sep, The Star Sydney. Zwei Flaggschiffe: AUD $1.500 WPT Prime (17.–22. Sep) und AUD $5.000 WPT Championship (24.–30. Sep). On-Site-Satellites ab AUD $270, Championship-Qualifier ab $290. Im Preisgeld für Platz 1 der Championship steckt ein WPT-World-Championship-Seat im Wert von $15.000, der aus dem Preispool abgezogen wird. Mindestalter 18, Star-Club-Mitgliedschaft mit verifiziertem WPT.com-Konto und Smart-Casual-Dresscode sind Pflicht.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-09-09",
+  updated: "2026-09-13",
   readTime: "14 Min.",
   emoji: "🦘",
   layout: "tournament-guide",
@@ -131,7 +131,7 @@ Wenn du außerhalb Australiens bist und dich vor dem Abflug mit Online-Satellite
 | **$10K WPT High Roller** | 23.–24. Sep | $10.000 | High Roller |
 | **WPT Australia Championship** | ==**24.–30. Sep**== | ==**$5.000**== | ==g:livestreamter FT== |
 | Mini-Championship | 27.–28. Sep | $2.000 | 2-Tage-Format |
-| WPT World Champs Warm-Up | 29.–30. Sep | $1.150 | Warm-Up für Dez-WC |
+| WPT World Champs Prime Warm Up | 29.–30. Sep | $1.150 | Warm-Up für Dez-WC |
 | Australian PLO Championship | 29.–30. Sep | $5.000 | Pot Limit Omaha |
 | The Ultimate Freeze | 30. Sep | $1.500 | Freezeout |
 | Sydney Finale | 30. Sep | $680 | Closing-Event |
@@ -157,6 +157,28 @@ Wenn du außerhalb Australiens bist und dich vor dem Abflug mit Online-Satellite
 Mit dem auf AUD $5.000 gesenkten 2026er-Buy-in (runter von $5.500 in 2025) und einem neuen Dual-Championship-Format, das mehr Spieler ins Festival bringt, werden die Felder voraussichtlich die größten der Event-Geschichte.
 
 **Der Seat des Siegers**: Im Preisgeld für Platz 1 der WPT Australia Championship steckt ein ==g:WPT-World-Championship-Seat im Wert von $15.000== – so bewertet ihn der Veranstalter auf der offiziellen Championship-Eventseite (eine Währung nennt die Seite nicht; die Festivalwährung ist AUD, und WPT gibt das Buy-in der World Championship mit ==**US $10.400**== an). Lies die offizielle Formulierung genau: Der Seat ist ==r:Teil des Preises für Platz 1 und wird aus dem Gesamt-Preispool abgezogen== – er kommt nicht als Bonus obendrauf. Der veröffentlichte Zeitplan des The Star vermerkt dazu nur „CHAMPIONSHIP = ticket to WPT World Championship"; Wert und Abzug stehen auf der Eventseite, nicht im Zeitplan-Aushang. Der Sieger des Prime Championship erhält zu denselben Bedingungen einen WPT-World-Championship-Prime-Seat im Wert von $1.500. ==r:Lies die finalen Turnierbedingungen, bevor du davon ausgehst, dass das Headline-Preisgeld komplett Cash ist.==
+
+**Wohin alle neun Tickets gehen.** Die Festival-Seite wirbt mit ==**neun WPT-World-Championship-Tickets**==, was nach neun Plätzen im US $10.400 Main Event klingt. Die Legende des Turnierplans teilt sie auf drei Titel auf, und ==r:nur zwei der neun sind Main-Event-Tickets==:
+
+<div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.25);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
+
+| Ticket | Event (Final Day) | Buy-in (AUD) | Datum |
+|:---|:---|:---:|:---:|
+| ==g:**WPT World Championship**== | **#24 Championship Event** | $5.000 | 30. Sep |
+| ==g:**WPT World Championship**== | **#22 $10K High Roller** | $10.000 | 24. Sep |
+| WPT World Championship Prime | #14 Prime Championship Event | $1.500 | 22. Sep |
+| WPT World Championship Prime | #1 Australian Poker Cup | $1.150 | 14. Sep |
+| WPT World Championship Prime | #6 Aussie Monster Stack | $1.250 | 14. Sep |
+| WPT World Championship Prime | #20 Mystery Bounty | $1.350 | 22. Sep |
+| WPT World Championship Prime | #30 Mini-Championship | $2.000 | 28. Sep |
+| WPT World Championship Prime | #33 WPT World Champs Prime Warm Up | $1.150 | 30. Sep |
+| WPT Ladies Championship | #11 Ladies Australian Championship | $500 | 16. Sep |
+
+</div>
+
+🪶 Die Legende des Turnierplans schreibt das Prime-Badge als „ticket to WPT Prime Championship"; die Turnierbedingungen nennen denselben Platz einen WPT-World-Championship-Prime-Seat. #14 *ist* das Prime Championship und trägt das Badge selbst – es kann also nicht das eigene Event meinen.
+
+Daraus folgt zweierlei für die Eventauswahl. Der ==**$10K High Roller ist die einzige weitere Tür zu einem Main-Event-Ticket**==, und laut Satellite-Tabelle oben hat er am 22. Sep seinen eigenen AUD $1.050-Qualifier. Vergleiche aber die Qualifier miteinander und nicht mit den Buy-ins: Das Championship hat eigene für AUD $290 und $550, der billigste Weg in ein Feld, das um ein Main-Event-Ticket spielt, bleibt also der $290er – er schließt am 9. Sep, der $1.050-High-Roller-Qualifier läuft am 22. Sep. Und die sechs Prime-Tickets hängen an Events mit AUD $1.150 bis $2.000 Buy-in: Ein Ticket in die World-Championship-Woche verlangt also nicht, das Flaggschiff-Feld zu schlagen. (Quelle: WPT-Australia-Seite von The Star und der Turnierplan des Festivals, geprüft am 13. September 2026. Die beiden Seat-Werte stehen im Absatz darüber.)
 
 ---
 

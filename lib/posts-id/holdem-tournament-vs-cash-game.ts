@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Di cash game, chip adalah uang nyata dan blind tetap. Di turnamen, chip adalah ekuitas bertahan, blind naik, dan hadiah bergantung pada posisi finis Anda.",
   category: "tournament",
   date: "2026-06-11",
-  updated: "2026-08-28",
-  masterUpdated: "2026-08-26",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   hideSummaryImageSlot: true,
   readTime: "18 mnt",
   emoji: "🏆",
@@ -384,7 +384,7 @@ A. Panduan umum adalah 20-40 buy-in untuk cash game dan 100+ buy-in untuk turnam
 
 **Q. Berapa big blind yang sebaiknya Anda bawa saat mulai di cash game vs turnamen?**
 
-A. Di cash game, masuklah dengan buy-in maksimum meja — di $1/$2 itu biasanya $200–$300, alias 100–150 big blind — karena stack dalam memberi hadiah pada skill postflop dan membuat Anda bisa memenangkan satu stack penuh saat unggul. Turnamen memilihkan kedalaman untuk Anda: biasanya mulai sekitar 100–300 big blind, tapi blind yang naik menyusutkannya jadi 20, lalu 10, lalu wilayah push/fold. Versi singkat: buy-in dalam untuk cash, dan di turnamen perhatikan jumlah big blind Anda menyusut, lalu sesuaikan permainan Anda.
+A. Di cash game, masuklah dengan buy-in maksimum meja — di $1/$2 itu biasanya $200–$300, alias 100–150 big blind — karena stack dalam memberi hadiah pada skill postflop dan membuat Anda bisa memenangkan satu stack penuh saat unggul — dengan dua syarat: bankroll Anda harus sanggup menanggungnya (panduan 20-40 buy-in di atas dihitung dari buy-in penuh, bukan masuk pendek), dan stack dalam baru terbayar kalau Anda memang pemain postflop yang lebih baik. Kalau salah satunya goyah, masuk lebih pendek adalah pilihan yang sah, bukan kesalahan pemula: stack pendek menyederhanakan keputusan, hanya saja membatasi berapa besar yang bisa Anda menangkan. Turnamen memilihkan kedalaman untuk Anda: biasanya mulai sekitar 100–300 big blind, tapi blind yang naik menyusutkannya jadi 20, lalu 10, lalu wilayah push/fold. Versi singkat: buy-in dalam untuk cash kalau bankroll dan permainan postflop Anda mendukung, dan di turnamen perhatikan jumlah big blind Anda menyusut, lalu sesuaikan permainan Anda.
 
 **Q. Berapa chip yang Anda butuhkan untuk cash game di rumah?**
 

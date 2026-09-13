@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "En un torneo de póker pagas un buy-in fijo por fichas; las ciegas suben con el reloj hasta que un jugador tiene todas las fichas. El 10-15% de arriba cobra. Formatos: freezeout, PKO, satélite y deepstack — entras por buy-in directo, satélite o preinscripción online.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-09-12",
-  masterUpdated: "2026-09-12",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🏆",
@@ -39,7 +39,7 @@ Esta guía es todo lo que ojalá me hubieran contado antes de aquel día — có
 
 :::stripe
 10-15% | del campo suele cobrar
-20-40 min | por nivel de ciegas en eventos en vivo
+20-40 min | por nivel de ciegas en vivo (60+ en los Mains estrella)
 $100+$9 | cómo se reparte un buy-in típico — bolsa de premios + comisión
 :::
 
@@ -76,7 +76,7 @@ Todo torneo publica su estructura en una **hoja de estructura**: stack inicial, 
 
 Esto es lo que la mayoría de guías para principiantes se salta, y es el concepto mecánico más importante de los torneos.
 
-**Las ciegas empiezan pequeñas y suben con un reloj — normalmente cada 20-40 minutos en eventos en vivo.**
+**Las ciegas empiezan pequeñas y suben con un reloj — normalmente cada 20-40 minutos en eventos en vivo, y 60 minutos o más en los Main Events estrella** (el Championship Event del WPT Australia 2026 corre niveles de 60 minutos, que se estiran a 90 en los días finales).
 
 | Nivel | Ciegas | Antes | Tu stack de 10k = |
 |:---|:---:|:---:|:---|
@@ -223,7 +223,7 @@ Esta es la parte que la mayoría de los novatos solo aprende a las malas. Aquí 
 <div style="color:hsl(var(--foreground))">Cartas al aire. Nivel 1: ciegas 25/50. Tienes 200BB. Juega un póker exploratorio.</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">
-<div style="color:hsl(var(--primary));font-weight:700">1:00-3pm</div>
+<div style="color:hsl(var(--primary));font-weight:700">12:40-2:40pm</div>
 <div style="color:hsl(var(--foreground))">Niveles 2-4. El registro tardío sigue abierto. El campo crece. Los antes entran según la hoja de estructura (Nivel 3 en el ejemplo de arriba). Algunos jugadores ya bustean.</div>
 </div>
 <div style="display:grid;grid-template-columns:80px 1fr;gap:12px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)">

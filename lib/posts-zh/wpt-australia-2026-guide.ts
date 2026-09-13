@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "WPT Australia 2026：9 月 10–30 日，The Star Sydney。两个旗舰赛：AUD $1,500 WPT Prime（9 月 17–22 日）和 AUD $5,000 WPT Championship（9 月 24–30 日）。现场卫星赛 AUD $270 起，主赛资格赛为 $290 与 $550。冠军赛冠军的头名奖金里包含一个价值 $15,000、并从奖池中扣除的 WPT World Championship 席位。必须年满 18 岁、成为 Star Club 会员，并遵守 smart-casual 着装要求。",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   readTime: "14 分钟",
   emoji: "🦘",
   layout: "tournament-guide",
@@ -144,7 +144,7 @@ WPT Australia 2026 重回 The Star Sydney，规模是 WPT 历史上最大的一�
 | **$10K WPT High Roller** | 9 月 23–24 日 | $10,000 | 豪客赛 |
 | **WPT Australia Championship** | ==**9 月 24–30 日**== | ==**$5,000**== | ==g:决赛桌直播== |
 | Mini-Championship | 9 月 27–28 日 | $2,000 | 两日赛制 |
-| WPT World Champs Warm-Up | 9 月 29–30 日 | $1,150 | 12 月 WC 热身赛 |
+| WPT World Champs Prime Warm Up | 9 月 29–30 日 | $1,150 | 12 月 WC 热身赛 |
 | Australian PLO Championship | 9 月 29–30 日 | $5,000 | Pot Limit Omaha |
 | The Ultimate Freeze | 9 月 30 日 | $1,500 | Freezeout |
 | Sydney Finale | 9 月 30 日 | $680 | 收官赛事 |
@@ -173,6 +173,28 @@ WPT Australia 2026 重回 The Star Sydney，规模是 WPT 历史上最大的一�
 2026 年买入降到 AUD $5,000（从 2025 年的 $5,500 下调），加上新的双冠军赛制把更多牌手带进赛事，参赛规模预计将是赛事史上最大。
 
 **冠军的席位**：WPT Australia Championship 头名奖金里包含 ==g:一个价值 $15,000 的 WPT World Championship 席位==——这是主办方的估值，写在官方冠军赛事页面上（该页没有标明币种；赛事本身以澳元计价，而 WPT 把世界锦标赛的买入列为 ==**US $10,400**==）。官方的措辞要看仔细：这个席位是 ==r:头名奖金的一部分，并且从总奖池中扣除==，不是在现金之外另外加发的。The Star 的赛程手册只写「CHAMPIONSHIP = ticket to WPT World Championship」；金额和扣除方式写在赛事页面上，不在手册里。Prime Championship 的冠军获得一个价值 $1,500 的 WPT World Championship Prime 席位，条件相同。==r:在把标题上的奖金当成全额现金之前，先看最终的赛事条件。==
+
+**这九张票分别去了哪里。** 赛事官网打的是 ==**9 张 WPT World Championship 门票**==，读起来像是 US $10,400 主赛事有九个席位。但官方赛程手册的图例把这九张分成了**三个冠军赛**，==r:九张里只有两张是主赛事门票==：
+
+<div style="background:rgba(255,248,210,0.08);border:1px solid rgba(255,240,180,0.25);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
+
+| 门票 | 赛事（决赛日） | 买入（AUD） | 日期 |
+|:---|:---|:---:|:---:|
+| ==g:**WPT World Championship**== | **#24 Championship Event** | $5,000 | 9 月 30 日 |
+| ==g:**WPT World Championship**== | **#22 $10K High Roller** | $10,000 | 9 月 24 日 |
+| WPT World Championship Prime | #14 Prime Championship Event | $1,500 | 9 月 22 日 |
+| WPT World Championship Prime | #1 Australian Poker Cup | $1,150 | 9 月 14 日 |
+| WPT World Championship Prime | #6 Aussie Monster Stack | $1,250 | 9 月 14 日 |
+| WPT World Championship Prime | #20 Mystery Bounty | $1,350 | 9 月 22 日 |
+| WPT World Championship Prime | #30 Mini-Championship | $2,000 | 9 月 28 日 |
+| WPT World Championship Prime | #33 WPT World Champs Prime Warm Up | $1,150 | 9 月 30 日 |
+| WPT Ladies Championship | #11 Ladies Australian Championship | $500 | 9 月 16 日 |
+
+</div>
+
+🪶 赛程手册的图例把 Prime 标记写成「ticket to WPT Prime Championship」，而赛事条件把同一个席位叫作 WPT World Championship Prime 席位。#14 *本身就是* Prime Championship，而且自己也带着这个标记，所以这个标记不可能指它自己那场。
+
+挑赛事的人能从这里拿走两条。==**通往主赛事门票的另一扇门只有 $10K High Roller**==，而上面的卫星赛表里它自己就有一场 9 月 22 日的 AUD $1,050 资格赛。不过该比的是资格赛之间，而不是拿资格赛去比买入：冠军赛自己的资格赛是 AUD $290 和 $550，所以要进到争夺主赛事门票的那个赛场，最便宜的路仍然是 $290 那条——但它 9 月 9 日就关，$1,050 的高额赛资格赛则在 9 月 22 日。另外六张 Prime 门票来自买入 AUD $1,150 到 $2,000 的赛事，所以拿到世界冠军赛那一周的门票，并不需要先赢下旗舰赛场。（来源：The Star 的 WPT Australia 页面与赛程手册，2026 年 9 月 13 日核对。两个席位的估值写在上面那一段。）
 
 ---
 

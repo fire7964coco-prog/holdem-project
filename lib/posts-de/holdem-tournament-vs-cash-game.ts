@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Im Cash Game sind Chips echtes Geld und die Blinds bleiben fest. Im Turnier sind Chips Überlebens-Equity, die Blinds steigen und Auszahlungen hängen von deiner Platzierung ab.",
   category: "tournament",
   date: "2026-06-11",
-  updated: "2026-09-10",
+  updated: "2026-09-13",
   hideSummaryImageSlot: true,
   readTime: "16 Min.",
   emoji: "🏆",
@@ -401,7 +401,7 @@ A. Eine gängige Regel sind 20-40 Buy-ins für Cash Games und 100+ Buy-ins für 
 
 **Q. Mit wie vielen Big Blinds startest du im Cash Game und mit wie vielen im Turnier?**
 
-A. Im Cash Game kaufst du dich zum Tischmaximum ein – bei $1/$2 sind das meist $200–$300, also 100–150 Big Blinds –, weil tiefe Stacks Postflop-Können belohnen und dich einen ganzen Stack gewinnen lassen, wenn du vorne liegst. Ein Turnier wählt die Tiefe dagegen für dich: Du startest typischerweise mit rund 100–300 Big Blinds, aber die steigenden Blinds drücken das auf 20, dann 10, dann ins Push/Fold-Territorium. Kurzfassung: im Cash Game tief einkaufen, im Turnier den Big-Blind-Zähler im Auge behalten und mit ihm mitgehen.
+A. Im Cash Game kaufst du dich zum Tischmaximum ein – bei $1/$2 sind das meist $200–$300, also 100–150 Big Blinds –, weil tiefe Stacks Postflop-Können belohnen und dich einen ganzen Stack gewinnen lassen, wenn du vorne liegst – mit zwei Bedingungen: Deine Bankroll muss das tragen (die 20-40-Buy-in-Regel oben rechnet mit vollen Buy-ins, nicht mit Short Stacks), und ein tiefer Stack zahlt sich nur aus, wenn du postflop der bessere Spieler bist. Wackelt eines von beidem, ist ein kürzerer Einstieg eine legitime Wahl und kein Anfängerfehler: Kurze Stacks vereinfachen die Entscheidungen, sie deckeln nur, was eine gute Situation einbringt. Ein Turnier wählt die Tiefe dagegen für dich: Du startest typischerweise mit rund 100–300 Big Blinds, aber die steigenden Blinds drücken das auf 20, dann 10, dann ins Push/Fold-Territorium. Kurzfassung: im Cash Game tief einkaufen, wenn Bankroll und Postflop-Spiel das hergeben, im Turnier den Big-Blind-Zähler im Auge behalten und mit ihm mitgehen.
 
 **Q. Wie viele Chips brauche ich für ein Cash Game zu Hause?**
 

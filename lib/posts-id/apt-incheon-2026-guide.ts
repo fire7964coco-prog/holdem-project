@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Main Event APT Incheon 2026 dimenangkan Stephen Pang dari Hong Kong, yang membawa pulang KRW 411.180.000 (~$293.700) setelah deal ICM tiga pemain, plus trofi Singa emas 24K. Field mencetak rekor 1.393 entri dengan total prize pool KRW 3.008.880.000. Runner-up Shoumin Zhang (Tiongkok, KRW 366.500.000 / ~$261.785), posisi ketiga Yifu He (AS). Tiga besar juga mendapat kursi Main Event APT Championship 2026 di Taipei (~$10.000 per kursi). Hanya untuk warga negara asing (warga negara Korea tanpa izin tinggal tetap di luar negeri tidak boleh masuk). Seoul berjarak ~1 jam — untuk stop berikutnya, trip poker dan trip Korea tetap trip yang sama.",
   category: "tournament",
   date: "2026-06-18",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "16 mnt",
   emoji: "🇰🇷",
@@ -76,6 +76,8 @@ Dan untuk pengunjung internasional: ==g:sebagian besar pemegang paspor negara Ba
 
 </div>
 
+:::note[**★Soal angka USD:** buy-in dan hadiah di artikel ini dikonversi dengan **kurs yang berbeda** — buy-in sekitar **1.468 KRW/USD**, hadiah hasil akhir sekitar **1.400 KRW/USD** (sebagaimana diumumkan penyelenggara) — tiap blok dikonversi dengan kurs yang berlaku saat sumbernya sendiri terbit. Angka yang mengikat adalah **nominal KRW**, kecuali paket Natural8 di bawah, yang dihargai operatornya dalam **NT$**.]:::
+
 ---
 
 ## Jadwal Acara Lengkap
@@ -88,8 +90,8 @@ Dan untuk pengunjung internasional: ==g:sebagian besar pemegang paspor negara Ba
 | Mystery Bounty Hunter | 8–9 Agu | ~$610 | ~$204K |
 | APT Super High Roller | 9–10 Agu | ==r:~$10.200== | ~$340K |
 | ==**APT Main Event**== | ==**9–15 Agu**== | ==**~$1.703**== | ==g:**~$1 juta**== |
-| Superstar Challenge | 14–15 Agu | ~$23.800 | — |
 | Zodiac Classic | 13–14 Agu | ~$2.000 | ~$340K |
+| Superstar Challenge | 14–15 Agu | ~$23.800 | — |
 | Mini Main Event | 14–15 Agu | ~$610 | ~$272K |
 | APT High Roller | 15–16 Agu | ~$3.400 | ~$340K |
 | Ultra Stack | 15–16 Agu | ~$477 | ~$102K |
@@ -151,7 +153,7 @@ Step $20 → menangkan tiket ke Mega Satellite $200 → menangkan kursi Main Eve
 
 > **Dulu OnLive itu apa:** lewat rute ini Day 1 bisa dimainkan dari zona waktu sendiri — terbang ke Korea baru perlu kalau bertahan sampai Day 3, jalur paling cerdas saat anggaran perjalanan ketat. ==r:Rutenya tutup 2 Agustus, jadi untuk edisi ini sudah bukan pilihan== — dicatat di sini karena layak diincar di stop APT berikutnya.
 
-**Ada jalur ketiga yang hampir tidak pernah disebut panduan lain: Country Exclusives.** Natural8 menjalankan kualifikasi khusus berdasarkan kewarganegaraan yang membagikan **enam paket live** — dan paket bukan sekadar kursi: isinya **tiket Main Event (~$1.684) plus sekitar $500 biaya perjalanan**. Satelit biasa hanya memberi kursi, tiket pesawat urusan Anda sendiri. ==r:Kelayakan di sini ditentukan **kewarganegaraan dan dicek lewat KYC** — bukan alamat domisili yang Anda daftarkan, berbeda dengan akses akun yang memang bergantung pada negara domisili.== Satu-satunya bracket yang diumumkan untuk Incheon 2026, "N8TW x APT Incheon 2026", **hanya untuk warga negara Taiwan**. Cek dulu di lobby apakah ada edisi yang benar-benar bisa Anda ikuti sebelum menghitung jalur ini.
+**Ada jalur ketiga yang hampir tidak pernah disebut panduan lain: Country Exclusives.** Natural8 menjalankan kualifikasi khusus berdasarkan kewarganegaraan yang membagikan **enam paket live** — dan paket bukan sekadar kursi: isinya **tiket Main Event plus uang perjalanan** — di satu-satunya bracket yang dipublikasikan untuk Incheon 2026 itu berupa **NT$53.888 untuk tiket dan NT$16.000 untuk biaya** (sekitar $1.684 dan $500). Natural8 memasang harga paket ini dalam dolar Taiwan baru, jadi angka tiketnya memang tidak jatuh persis di buy-in KRW 2.500.000 (~$1.703) yang dikutip di atas. Satelit biasa hanya memberi kursi, tiket pesawat urusan Anda sendiri. ==r:Kelayakan di sini ditentukan **kewarganegaraan dan dicek lewat KYC** — bukan alamat domisili yang Anda daftarkan, berbeda dengan akses akun yang memang bergantung pada negara domisili.== Satu-satunya bracket yang diumumkan untuk Incheon 2026, "N8TW x APT Incheon 2026", **hanya untuk warga negara Taiwan**. Cek dulu di lobby apakah ada edisi yang benar-benar bisa Anda ikuti sebelum menghitung jalur ini.
 
 ---
 
