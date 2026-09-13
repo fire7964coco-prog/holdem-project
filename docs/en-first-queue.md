@@ -62,6 +62,7 @@
 
 | ㊽ | 🆕(queue Q2c-2 ① · 09-12) 🟠 **§14-A 직답 공백** — `holdem-limping` 「4가지 이유」 절과 `holdem-drawing-odds` 셋마이닝 절에 직답 블록이 **de·ja·zh·zh-hant에만 있고 en·es·id·pt엔 없다**(교열 렌즈 실측). Q2-c의 이미지 삭제로 그 절이 H2 → 본문 직행이 돼 더 드러난다 |
 | ㊾ | 🟢 **종결(queue Q7-a · 2026-09-12)** — `render-markdown`의 `height="630"`을 **파일별 치수표**(`lib/image-dims.ts`)로 교체했다. «675로 바꾸면 비-675가 어긋난다»는 딜레마를 «한 값으로 고정하지 않는 것»으로 풀었다. 산출물 실측 = 본문 `<img>` **1,417개 전부 실제 치수**(그 전엔 1,364개가 틀린 자리 예약 = CLS) · 게이트 `check:image-dims`가 `prebuild`에 물려 있다 |
+| ⓐ | 🆕(queue Q5a-7 · 09-13) 🟠 **EN `holdem-flush-vs-straight:138` 한 문단 안 동어반복** — 「only the ranks matter. (… ranks, never suits, decide a flush.)」. es에 이식한 괄호절이 같은 구조를 복제했는데 **EN 원본이 그렇다**(교열 렌즈). 고치려면 EN부터 · 8로케일 동형 |
 🪶 ㉜㉝㉞(인포그래픽 alt 3건)는 ✅ 종결(`781301e4`).
 
 ---
