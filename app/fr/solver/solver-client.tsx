@@ -163,6 +163,7 @@ const FEATURES: [string, "yes" | "no", string][] = [
   ["Donk bet avec son propre sizing", "yes", "La ligne où l'OOP mise en premier se règle à part"],
   ["Rake et cap de rake", "yes", "Pour coller aux conditions réelles de ta table"],
   ["Édition de l'arbre nœud par nœud", "yes", "Ajouter ou retirer des actions à un nœud précis"],
+  ["Fixer un nœud et recalculer", "yes", "Tu fixes les fréquences d'un nœud et tu relances le calcul"],
   ["Modes de précision et de mémoire", "yes", "Flottant 32 bits / entier 16 bits · plafond navigateur ≈ 4 Go"],
   ["Exploitabilité cible", "yes", "Plus elle est basse, plus c'est précis — et plus c'est long"],
   ["Sauvegarde des ranges et réglages", "yes", "Sauvegarder, charger, importer, exporter"],
@@ -170,6 +171,7 @@ const FEATURES: [string, "yes" | "no", string][] = [
   ["Lien de partage de spot", "yes", "Le même spot s'ouvre chez ton partenaire d'étude"],
   ["Spots d'étude précalculés", "yes", "Résultats au clic, sans attendre"],
   ["Trainer GTO avec notation", "yes", "Analyse des points faibles et bouton Révision inclus"],
+  ["Travailler tes propres spots calculés", "yes", "Un clic sur l'écran de résultats les transforme en exercices du Trainer · sur cet appareil uniquement"],
 ];
 
 /**

@@ -136,6 +136,8 @@ const jsonLd = {
         "Equity, EV e realização de equity (EQR) mão a mão",
         "Ranges, board, stack e árvore de tamanhos de aposta totalmente configuráveis",
         "Rake e teto de rake, e edição da árvore de jogo nó a nó",
+        "Fixar nós — fixar as frequências de um nó e resolver de novo",
+        "Spots que você calculou salvos como questões do Treinador (só neste aparelho)",
         "Modos de precisão (ponto flutuante 32 bits / inteiro 16 bits) e exploitabilidade alvo",
         "Spots de estudo já calculados que abrem na hora",
         "Treinador GTO que pontua a perda de EV em relação ao pote",

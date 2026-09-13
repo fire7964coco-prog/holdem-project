@@ -118,6 +118,8 @@ const jsonLd = {
         "Equity, EV et réalisation d'equity (EQR) main par main",
         "Ranges, board, stacks et arbre des tailles de mise librement réglables",
         "Rake et cap de rake, édition de l'arbre de décision nœud par nœud",
+        "Fixation de nœud — fixer les fréquences d'un nœud et relancer le calcul",
+        "Tes propres spots calculés enregistrés comme exercices du Trainer (sur cet appareil uniquement)",
         "Modes de précision (flottant 32 bits / entier 16 bits) et exploitabilité cible",
         "Spots d'étude précalculés, résultats au clic",
         "Trainer GTO qui note tes décisions sur la perte d'EV par rapport au pot",

@@ -211,6 +211,7 @@ const FEATURES: [string, "yes" | "no", string][] = [
   ["Tamanho separado para o donk bet", "yes", "Dá para desenhar à parte a linha em que o OOP aposta primeiro"],
   ["Rake e teto de rake", "yes", "Ajuste às condições da mesa que você joga"],
   ["Edição da árvore nó a nó", "yes", "Adicione ou tire ações num nó específico"],
+  ["Fixar nós e calcular de novo", "yes", "Você fixa as frequências de um nó e resolve de novo"],
   ["Modos de precisão e memória", "yes", "Ponto flutuante 32 bits / inteiro 16 bits · limite do navegador ≈ 4GB"],
   ["Exploitabilidade alvo", "yes", "Quanto mais baixa, mais preciso e mais lento"],
   ["Salvar ranges e configurações", "yes", "Salvar, carregar, importar e exportar"],
@@ -218,6 +219,7 @@ const FEATURES: [string, "yes" | "no", string][] = [
   ["Link para compartilhar um spot", "yes", "Mande o mesmo spot para o seu grupo de estudo"],
   ["Abrir spots de estudo já calculados", "yes", "O resultado aparece sem espera"],
   ["Treinador GTO com pontuação", "yes", "Com detalhamento dos pontos fracos e fila de revisão"],
+  ["Treinar com os spots que você calculou", "yes", "Um clique nos resultados salva o spot como questões do Treinador · só neste aparelho"],
 ];
 
 /**

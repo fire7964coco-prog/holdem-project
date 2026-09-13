@@ -135,6 +135,8 @@ const jsonLd = {
         "Equity, EV und Equity-Realisierung (EQR) Hand für Hand",
         "Ranges, Board, Stack und Bet-Size-Baum frei konfigurierbar",
         "Rake und Rake-Cap sowie Spielbaum-Bearbeitung Knoten für Knoten",
+        "Knoten fixieren — Häufigkeiten an einem Knoten festlegen und neu berechnen",
+        "Selbst berechnete Spots als Trainer-Aufgaben gespeichert (nur auf diesem Gerät)",
         "Präzisionsmodi (32-Bit-Float / 16-Bit-Integer) und Ziel-Exploitability",
         "Fertig gelöste Lernspots, die sich sofort öffnen",
         "GTO-Trainer, der Entscheidungen nach EV-Verlust im Verhältnis zum Pot benotet",

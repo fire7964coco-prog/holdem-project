@@ -193,6 +193,7 @@ const FEATURES: [string, "yes" | "no", string][] = [
   ["Eigene Größe für die Donk Bet", "yes", "Die Line, in der OOP zuerst bettet, lässt sich separat zeichnen"],
   ["Rake und Rake-Cap", "yes", "Anpassung an den Tisch, an dem du wirklich sitzt"],
   ["Spielbaum-Bearbeitung Knoten für Knoten", "yes", "Aktionen an einem bestimmten Knoten ergänzen oder streichen"],
+  ["Knoten fixieren und neu berechnen", "yes", "Du legst die Häufigkeiten an einem Knoten fest und rechnest neu"],
   ["Präzisions- und Speichermodi", "yes", "32-Bit-Float / 16-Bit-Integer · Browser-Limit ≈ 4GB"],
   ["Ziel-Exploitability", "yes", "Je niedriger, desto präziser und langsamer"],
   ["Ranges und Einstellungen speichern", "yes", "Speichern, Laden, Import und Export"],
@@ -200,6 +201,7 @@ const FEATURES: [string, "yes" | "no", string][] = [
   ["Teilen-Link für einen Spot", "yes", "Schick denselben Spot an deine Study Group"],
   ["Fertig gelöste Lernspots öffnen", "yes", "Das Ergebnis steht ohne Wartezeit da"],
   ["GTO-Trainer mit Benotung", "yes", "Mit Schwachstellen-Auswertung und Wiederholungs-Queue"],
+  ["Mit selbst berechneten Spots üben", "yes", "Ein Klick im Ergebnisfenster speichert den Spot als Trainer-Aufgaben · nur auf diesem Gerät"],
 ];
 
 /**

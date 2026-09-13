@@ -93,6 +93,8 @@ const jsonLd = {
         "Per-hand equity, EV and equity realization (EQR)",
         "Custom ranges, board, stacks and bet sizing tree",
         "Rake and rake cap, plus node-by-node game tree editing",
+        "Node locking — set the action frequencies at one node and solve again",
+        "Your own solved spots saved as trainer questions (this device only)",
         "Precision modes (32-bit float / 16-bit integer) and target exploitability",
         "Pre-solved study spots that open instantly",
         "GTO Trainer that grades decisions by EV loss relative to the pot",

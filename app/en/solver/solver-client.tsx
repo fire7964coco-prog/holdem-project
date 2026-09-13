@@ -118,6 +118,7 @@ const FEATURES: [string, "yes" | "no", string][] = [
   ["Separate donk (lead) sizing", "yes", "Design the OOP-leads line on its own"],
   ["Rake and rake cap", "yes", "Match the conditions of your actual game"],
   ["Edit the game tree by node", "yes", "Add or remove actions at a specific node"],
+  ["Node locking with re-solve", "yes", "Set the action frequencies at one node and solve again"],
   ["Precision and memory modes", "yes", "32-bit float or 16-bit integer · ~4GB browser limit"],
   ["Set target exploitability", "yes", "Lower is more accurate and slower"],
   ["Save ranges and configurations", "yes", "Save, load, import and export"],
@@ -125,6 +126,7 @@ const FEATURES: [string, "yes" | "no", string][] = [
   ["Share a spot by link", "yes", "Send your exact spot to a study group"],
   ["Open pre-solved study spots", "yes", "No waiting — solutions appear instantly"],
   ["GTO Trainer with EV-loss grading", "yes", "Plus weak-spot filters and a review queue"],
+  ["Practice your own solved spots", "yes", "One click on the results screen saves it as trainer questions · this device only"],
 ];
 
 /**

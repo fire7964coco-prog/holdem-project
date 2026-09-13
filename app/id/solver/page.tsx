@@ -115,6 +115,8 @@ const jsonLd = {
         "Equity, EV, dan realisasi equity (EQR) per hand",
         "Range, board, stack, dan pohon bet size yang bisa diatur bebas",
         "Rake dan cap rake, edit pohon keputusan per node",
+        "Kunci node — tentukan frekuensi aksi di satu node lalu hitung ulang",
+        "Spot hasil hitungan Anda sendiri tersimpan sebagai soal Trainer (hanya di perangkat ini)",
         "Mode presisi (float 32-bit / integer 16-bit) dan target exploitability",
         "Spot belajar yang sudah dihitung, hasil langsung tampil saat diklik",
         "Trainer GTO yang menilai keputusan Anda dari kerugian EV relatif terhadap pot",

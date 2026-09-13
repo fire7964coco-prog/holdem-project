@@ -151,6 +151,7 @@ const FEATURES: [string, "yes" | "no", string][] = [
   ["Donk bet dengan size sendiri", "yes", "Jalur ketika OOP bet lebih dulu diatur terpisah"],
   ["Rake dan cap rake", "yes", "Supaya sesuai kondisi meja Anda yang sebenarnya"],
   ["Edit pohon keputusan per node", "yes", "Menambah atau menghapus aksi di satu node tertentu"],
+  ["Kunci node lalu hitung ulang", "yes", "Anda menentukan sendiri frekuensi aksi di satu node, lalu menghitung ulang"],
   ["Mode presisi dan memori", "yes", "Float 32-bit / integer 16-bit · batas browser ≈ 4 GB"],
   ["Target exploitability", "yes", "Makin rendah makin presisi — dan makin lama"],
   ["Simpan range dan pengaturan", "yes", "Simpan, Muat, Impor JSON, Ekspor JSON"],
@@ -158,6 +159,7 @@ const FEATURES: [string, "yes" | "no", string][] = [
   ["Tautan Bagikan Spot", "yes", "Spot yang sama terbuka di perangkat teman belajar Anda"],
   ["Spot belajar yang sudah dihitung", "yes", "Hasil langsung tampil saat diklik, tanpa menunggu"],
   ["Trainer GTO dengan skor EV", "yes", "Termasuk analisis titik lemah dan tombol Tinjau ulang"],
+  ["Latihan dengan spot hasil hitungan Anda sendiri", "yes", "Sekali klik di layar hasil menyimpan spot itu menjadi soal Trainer · hanya di perangkat ini"],
 ];
 
 /**
