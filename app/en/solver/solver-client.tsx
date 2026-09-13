@@ -71,7 +71,7 @@ const SOLVER_URL = "https://solver.holdemmaster.com/?lang=en";
 const SPEC: [string, string][] = [
   ["Price", "Free — every feature, no usage limits"],
   ["Install", "None — runs in the browser (WebAssembly)"],
-  ["Account", "Not required (sign-in only syncs trainer history)"],
+  ["Account", "Not required (sign-in only syncs trainer history · your own solved spots stay on this device)"],
   ["Scope", "Postflop, heads-up (flop, turn, river)"],
   ["Where it solves", "On your own CPU, not on a server"],
   ["Platforms", "Any modern browser — Windows, macOS, Linux, mobile"],

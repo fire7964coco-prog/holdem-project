@@ -133,7 +133,7 @@ const SOLVER_URL = "https://solver.holdemmaster.com/?lang=es";
 const SPEC: [string, string][] = [
   ["Precio", "Gratis — todas las funciones, sin límite de uso"],
   ["Instalación", "No hace falta — corre en el navegador (WebAssembly)"],
-  ["Cuenta", "No hace falta (el inicio de sesión solo sincroniza el historial del Entrenador)"],
+  ["Cuenta", "No hace falta (el inicio de sesión solo sincroniza el historial del Entrenador · los spots que calculaste se quedan en este dispositivo)"],
   ["Alcance", "Postflop heads-up (flop, turn y river)"],
   ["Dónde se calcula", "En tu dispositivo, no en un servidor nuestro"],
   ["Compatibilidad", "Navegadores modernos — Windows, macOS, Linux y móvil"],

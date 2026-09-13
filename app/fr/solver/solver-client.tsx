@@ -97,7 +97,7 @@ const SOLVER_URL = "https://solver.holdemmaster.com/?lang=fr";
 const SPEC: [string, string][] = [
   ["Prix", "Gratuit — toutes les fonctions, sans limite d'usage"],
   ["Installation", "Aucune — il tourne dans ton navigateur (WebAssembly)"],
-  ["Compte", "Aucun (la connexion ne sert qu'à synchroniser le Trainer)"],
+  ["Compte", "Aucun (la connexion ne sert qu'à synchroniser le Trainer · tes propres spots calculés restent sur cet appareil)"],
   ["Couverture", "Postflop, heads-up (flop · turn · river)"],
   // 🪶 네이티브 렌즈(2026-08-25): «rien ne» 절대문 대신 계산 한정으로(트레이너 동기화 예외와 정합).
   ["Où se fait le calcul", "Sur ton propre appareil — tes calculs ne passent pas par nos serveurs"],
