@@ -19,7 +19,7 @@
 | ~~Q3~~ | **EN 56편 `updated` 전수 대조** — ✅ **종결(신설 시점 실측 · 회차 불요)** | 실측 2026-09-11: EN 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · `2c9012c7` · «올리지 않는다» 판정 이미 완료) · 창 밖 5 = `8d2aba44` CSS 수리 2 · `a069430a` tldr 별표 제거 2 · `index.ts`(포스트 아님) → **전부 §1-C «기계적 변경은 안 올린다»에 해당**. `en-first-queue` §3의 「이미 잡힌 6건」은 `fd8cafc0`로 닫혀 있다(현재 파일에 남은 어긋남 0). 재현 = 셸 한 줄(파일별 `git log -1 --date=short` ↔ `updated` 비교) — Q7에서 `check:stamp --locale=en` 게이트로 박는다. **§3 잔여(경쟁 페이지 언급 3곳 · EN↔pt FAQ 개수 · game-order 「who bets first」)는 Q4-a로 이관** | — | ✅ | (실측만 · 커밋 없음) | — | 09-11 |
 | **Q4-a** | **EN-먼저 묶음 I — 미결·동형** | `en-first-queue` §2-D **J#8**(ept-barcelona €330 ↔ €825 · 공식 일정 축어 확보 후) · §2-E **X-1**(blind-meaning 「Nobody gets to skip their turn」 · WSOP Live Action §155~158 · Tournament §85) · 핸드오프 「대회·사실 판정」 절의 **EN 동형 30건**(M-089 §4 잔여 = bad-beat #12 ~62% · betting-actions 103조 두 요소 · flush-vs-straight SF 5장/7장 라벨 · 목록 `docs/reply-to-review-2026-09-04-m089.md` §2·§4) · `tiebreak-rules` L232 「Rule 85」 룰북 한정어 · **Q3 이관분**(경쟁 페이지 언급 3곳 · EN↔pt FAQ 개수 bubble·short-stack·tournament·icm · game-order title 「who bets first」) · 🆕 **ja 회차 13 §5-K 이관**(`harden-ja-진행` §5-K · 09-11 머지): **K1** `when-to-fold` 셀프체크 ⑤ 「(= a bluff-catcher)」 EN L141/L153 + 8로케일(D유형) · **K3** = J#8과 같은 자리(ept €330 H2·비교표 — 블록만 €825로 갈려 있다) · **K4** `tiebreak-rules`↔`kicker` «キッカーなし 족 개수» 5 vs 4 — 헤드 실측(09-11): **EN도 같다**(kicker FAQ L184 「Straights, flushes, full houses, and straight flushes」 = 4 · tiebreak 표 L84~89 = 로열 행 별도 5) → 로열 = 스트레이트플러시라 둘 다 참 · **결함 아님** · 통일은 선택(kicker FAQ에 「(royal included)」 한 마디 · 8로케일) · **K2**(bad-beat 63%) = 🔴 **결재 15 재론 금지**(≈63% 유지 · 65.0%/1.86으로 되돌리지 마라). 🔴 헤드 실측(09-11): 결재 15의 **행 문구 «nine outs plus live side cards»가 EN L92·ja L105에 아직 없다**(「9-out flush draw fills on the river」 그대로 · `en-first-queue` §1 ③과 같은 자리) → **결재 15 이행 = EN L92 행 문구 + 8로케일** · 🆕 **ja 회차 14 §5-L 이관**: **L1** `holdem-straddle` EN L88·L169·히어로 캡션 L69 「buys the last action」 프레이밍 — 버튼은 원래 포스트플롭 마지막이라 버튼 스트라들이 사는 건 **프리플랍** 마지막 액션뿐(EN L188만 정확) → 한 줄 한정 + 8로케일 · **L2** `holdem-outs` 표 15행(플러시+OESD) 도출 「9 + 8 − 2」 — EN 같은 칸이 산문이면 동형 + 7로케일(ja는 이미 고침) | **Opus 전 구간 · 1세션** — 🔴 재료 실측 후 재조정(§5-A-3): EN 쪽이 «짧은 한정어 10자리»로 줄어 새 문장 집필 구간이 없었다 | ✅ | (아래 §1-Q4-a) | 렌즈 4종+2차 교열 = 지적 **59** · 반영 **43** · 기각 **6** · 이관 **7** · 기록만 **3** | 09-12 |
 | **Q4-b** | **검수장 MA-118 요청 2 — es 대회 2편** | `como-entrar-al-wsop`·`wsop-2026-tournament-guide`(es) WRONG 15·RISKY 10·STALE 2 + **LISR 138조 웹 실측**(멕시코 소득세법 · 1차 출처) · 원장 = `홀덤검수-es/ledger/` · EN 동형이면 EN-먼저 | **Opus 전 구간 · 1세션**(번역 QA·법령 실측 = Opus · 새 문장은 원장 처방 이식) | ⏳ | | | |
-| **Q5-a** | **EN-먼저 묶음 II — 세션 1 렌즈 38건 판정(전반)** | `en-first-queue` **§1 ①~㉑**(⑤ 3번 독립 재발견 = 우선) · 판정 뒤 EN 정정 → 8로케일 전파 · 기각은 사유와 함께 §1에서 지우기 요청 | **A Opus(전건 원문 판정) → B Fable(채택분 재서술) → C Opus · 1세션** | ⏳ | | | |
+| **Q5-a** | **EN-먼저 묶음 II — 세션 1 렌즈 38건 판정(전반)** | `en-first-queue` **§1 ①~㉑** · 판정 뒤 EN 정정 → 8로케일 전파 | **Opus 전 구간 · 1세션** — 🔴 재료 실측 후 재조정(§5-A-3): 채택 12건 중 새 문장 집필은 2문장뿐이고 나머지는 **짧은 한정어·표 헤더·기계적 변경·기존 로케일 정본의 이식**이었다(Q4-a와 같은 사유) | ✅ | (아래 §1-Q5-a) | 렌즈 4종+2차 교열 = 지적 **35**(렌즈 간 중복 3 제거 후 **32**) · 반영 **29** · 기각 **2** · 등재만 **1** | 09-13 |
 | **Q5-b** | **EN-먼저 묶음 II — (후반)** | `en-first-queue` **§1 ㉒~㊸**(㉟ 우선 · ㊲는 검수장 판정 산물이라 재론 절차 = MB 초안) | 위와 동일 · 1세션 | ⏳ | | | |
 | **Q6** | **헤드 판정 묶음 — 로케일 표기·구조**(ja·zh·zh-hant 파일 포함 → §7-F «미커밋 겹침» 확인 먼저) | 핸드오프 「▶ 그밖에 열 수 있는 것」 zh 표기 통일 4갈래(`打公共牌`/`打公牌`/`打牌面` · 二四法则 3표기 · 劫机位/劫持位 · 인용부호 3갈래 + pot-odds 比率↔百分比 절 통합) · 헤드 판정 6건(ja 전각（） · 見出し 콜론 · `drawing-odds` `## FAQ` · zh-hant `快速解答` 상자 셋 · zh-hant probability FAQ 10:15:16 · 부분문자열 태그 쌍) · `check:mirror-pair` 실제 갈림 4(zh apt 3행 결손 · zh만 2 · zh-hant만 2) · ja 회차 10·11 판정 2(pot-odds L194 中黒 · showdown 「マック」 FAQ) · MA-136 RISKY 4 + 약 잔존(ja) · pt `holdem-strategy.ts:183` 용어표 · 🆕 **Q1-10 `lib/tournaments-i18n.ts` NOTE_JA·ZH·HANT·ES·DE 오스트리아 6행**(EN만 채워져 있어 비KO 보드가 「€36~€230」 범위형 바이인을 해설 없이 그린다 — 로케일별 재저작) · 🆕🔴 **ja 잔여 묶음 = `harden-ja-진행` §2-N 전건**(ja 소급 회차는 14로 종료 · 사장님 결재 09-11 · 이제 queue가 ja 파일을 직접 고친다): 개수 열거 결손 5(rake L105 2通り↔1 · glossary L240 3범주↔2 · position-play L273 4↔2+수치 0 · kicker L82 ハイカード · rake L50 호명어) · positions L75 존 매핑 삼중 · straddle L76 「2点」 · probability↔L57 명제 겹침 · apt AREX ₩4,750·約60分 1차 출처 재실측 · glossary stripe L31 「ペア」 · outs 화살표 표기 · 🆕 **Q2b-4·6**: zh `holdem-outs` `开口顺` 14곳 ↔ 코퍼스 `两头顺` · zh-hant `holdem-outs` `中洞` 6곳 ↔ `卡順`(파일 안은 일관 — 캡션만 바꾸지 말 것) · ja `holdem-glossary:89` 표제어 `ミニマムレイズ` ↔ 본문 `最低レイズ`(병기 권고) | **Opus 전 구간 · 1~2세션**(표기 치환·판정·번역 QA = Opus · 네이티브 렌즈는 Opus 서브 zh/ja 각 1). 🔴 ja 레인 회차 중이면 ja 자리는 «머지 뒤 전파» | ⏳ | | | |
 | **Q7-a** | **게이트 신설 I — 우편함·대회 수치·스탬프** | 핸드오프 「렌더·게이트·코퍼스」: ① `mailbox/out-본체.md` 검사(MB 행 수 = 고유 ID 수 · 헤더 1 · 아카이브 아래 MB 0 · 파이프 5~7) ② `lib/tournaments.ts`↔`tournaments-i18n.ts` **숫자 토큰 대조** ③ 🆕 `check:stamp`(Q3 재현 셸을 게이트로 · 창 09-08 이후 · EN 문턱 · 양방향) ④ 「따옴표 빠진 썸네일 링크」 검사 ⑤ `scan-mobile-fold.mjs` 첫 인자 버그 · 🆕 **Q1-7** ⑥ PDF `.page` 치수 ↔ `@page size` 불일치 검사(de가 6mm 잘려 있었다 · PDF는 어떤 게이트도 안 본다) ⑦ `/hand-chart` 「UTG 약 12%」 = 핸드 타입 비율(21/169) ↔ 블로그 13% = 콤보 비율 — 도구 라벨에 기준 병기 · 🆕 **Q2b-5** ⑧ `lib/render-markdown.ts:200` `height="630"` ↔ 실제 675(CLS 예약 높이 오기) | **Opus · 1세션** · 게이트마다 `--selftest` + 첫 실행 전건 원문 판정(memory `gate-tuning-loop-is-the-work`) | ✅ | (아래 §1-Q7-a) | 렌즈 4종 = 지적 60 · 반영 41 · 기각 3(오탐) · 기록 16 | 09-12 |
@@ -286,6 +286,71 @@ Unlimited Re-Entry」 · 스택 50,000** 실재 확인 → 처방 ①(본문에 
 `check:answer-echo` 🔴 echo 0(ja·zh·zh-hant·ko) · 자체 기계 점검(백틱·`==`짝·표 열 수) 90/90파일 0건 · `npm run build` 성공(70 + 525).
 
 
+### §1-Q5-a. 회차 Q5-a 판정 — EN-먼저 묶음 II 전반(`en-first-queue` §1 ①~㉑) (2026-09-13)
+
+🔴 **이 회차의 첫 발견은 «목록이 낡았다»였다 — 21건 중 9건이 이미 종결돼 있었다.**
+`bb68af3b`(09-10 핸드오프 대청소)가 옮겨 적은 목록인데, 그 사이 `65dc0d1d`(09-02) · `125c83f5`(09-09) ·
+Q4-a `b311d693`(09-12)가 먼저 고쳤고 아무도 목록을 지우지 않았다.
+**착수 근거를 «건수»로 잡으면 한 세션을 헛돈다** — 판정은 반드시 원문에서(`absence-may-be-the-standard`).
+
+| # | 판정 | 근거(실측) |
+|---|---|---|
+| ① wpt NSW 11개월 공백 | ✅ 이미 종결 | `65dc0d1d`(09-02) 「defers the reduction to AUD $1,000/day until 19 August 2027」 |
+| ② apt «개막 전 마감» | ✅ 이미 종결 | EN 4자리 전부 「closed on Aug 7, the festival's opening day」 |
+| ③ bad-beat «fills on the river» | ✅ 이미 종결 | Q4-a가 「nine flush outs … get there by the river」로 |
+| ④ ept Gold Pass €690 이중계상 | 🔴 채택 | 패스가 «€690 expenses 포함»인데 바로 아래 Food를 만액 계상. **총액 산수는 맞다**(150+400 / 400+600) — 결함은 €690을 두 번 세는 것 |
+| ⑤ bad-beat 잭팟 표 «Rest of the table» | ✅ 이미 종결 | `125c83f5`(09-09) 「Others dealt into the hand」 · **8로케일 전부 정상** · 그 문자열은 `lib/` 전체 0건 |
+| ⑥ PDF «~2–3% equity» | 🔴 채택 | 본문은 「about 2 **percentage points**(AKs 67% ↔ AKo 65%)」 → 카드를 「~2 points of equity」로 + PDF 재생성 |
+| ⑦ es glossary «Mano a mano» 중복 | 🔴 채택 | 표제어 2행이 동일. **근거는 웹이 아니라 코퍼스** — es `holdem-bubble`은 「hand-for-hand」를 번역 없이 쓰고, `mano a mano`는 25파일 40+회가 heads-up 뜻 |
+| ⑧ bubble H4H 스톨 | ✅ 이미 종결 | EN L140 「that hope is misplaced … 2 minutes(126.a·126.c)」 |
+| ⑨ content 종단 `.trim()` | 🟠 채택 | 실측 32파일(ja 4·es 20·de 3·zh 3·zh-hant 2) **+ 교열 렌즈가 KO 24자리를 더 찾았다**(`lib/posts/` 19편 · `lib/posts.ts` 5) = **56자리** |
+| ⑩ blind-meaning 「Two habits」 ↔ 불릿 3개 | 🔴 채택 | **de·id가 이미 정본** → 이식. ar·es·pt·zh 4자리. ja·fr·zh-hant는 해당 문단 없음/이미 정본 |
+| ⑪ beginners 「none … about strategy」 | 🔴 채택 | 실수 3·4·5가 전부 전략. **de가 정본**. ar·es·zh·**zh-hant**·id |
+| ⑫ beginners ×4 캐비어트 | ✅ 이미 종결 | EN L314가 「9 ÷ 47 = ~19%」까지 명시 |
+| ⑬ showdown 사이드팟 | ✅ 이미 종결 | EN 4자리 + **pt 3자리**도 보유(Live Action Rule 149) |
+| ⑭ reading-the-board 「How common」 | ✅ 이미 종결 | 헤더 = 「Of the 21 possible 5-card picks」 + 표 아래 한정문 |
+| ⑮ flush-vs-straight 추상 표 | 🔴 채택(es 1곳) | EN·ja·zh·zh-hant는 괄호 캐비어트 보유 — **es만 결손** |
+| ⑯ `:::tiebreak` 로열 행 | ✅ 이미 종결 | 두 글 다 「Tie only when the board itself is the royal」 |
+| ⑰a kicker two pair FAQ | ✅ 이미 종결 | `Q♣7♠7♦4♥2♣` 5장 보드 · §13 검산 통과 |
+| ⑰b FAQ↔H2 축어중복 9건 | 🟠 **부분 채택** | 재측정 = 6자리. **직답블록↔FAQ 5자리는 기각(설계)** · 채택 1 = **인접 두 FAQ**(reading-the-board)가 같은 명제를 반복 |
+| ⑱ outs 표 「Turn only (1 card)」 | 🔴 채택 | 값이 전부 ÷47 = **플랍에서 보는 다음 한 장**. **de·id·zh가 이미 정본** → en·es·ja·pt·zh-hant |
+| ⑲ card-counting 「the river is free」 | 🔴 채택 | **id가 정본**(「turn dan river sama-sama gratis」) · pt·zh·zh-hant도 이미 정확 → en·de·es·ja |
+| ⑳a 「one in six on a single street」 | 🔴 채택 | 9아웃 **19.1%(1/5.2)** · 8아웃 **17.0%(1/5.9)** → 「one in six」는 과소. **id가 정본** |
+| ⑳b 「exactly four flops」 | ✅ 이미 종결 | 가장자리 전수 열거 보유(QJs 3 · KQs 2 · A2s 1) · 직접 검산 일치 |
+| ㉑a pot-odds 「35% > 25%」 | ✅ 이미 종결 | 두 자리 다 「with two cards to come and no more betting」 |
+| ㉑b implied-odds 오버카드 | 🔴 채택 | **교육 전제가 걸린 자리** — 오버카드 6장을 더하면 15/46 = **32.6% > 25%**라 팟오즈만으로 콜이 돼 이 절의 결론이 뒤집힌다. **id가 정본** |
+
+**합계**: 종결 9 · 채택 12 · 부분기각 1(⑰b 5자리)
+
+**🔬 렌즈 4종 + 2차 교열 — 내 편집의 결함 여러 건을 잡았다**
+
+| 렌즈 | 잡은 것(반영) | 값어치 |
+|---|---|---|
+| 수학·딜러 | ① **zh `ept` 직답에 «€690 포함이니까 자기부담이 …» 인과문이 남았다**(표 자리만 고쳤다) ② id `beginners`의 「대부분」도 거짓(5중 규칙 2) ③ de `reading-the-board`만 괄호절 결손 ④ **표는 ÷47인데 본문은 「턴 베팅에 직면했을 때」(÷46)** — id 정본 괄호를 EN-먼저로 이식 | 표 7행·9/46·15/46·`K♠6♠5♠4♠3♠`를 **직접 계산**해 확인했다 |
+| 네이티브 | ⑤ **zh 「更早发生」은 비교 대상이 없어 «앞 둘보다 먼저»로 읽힌다** ⑥ `削筹码`는 코퍼스 0건(정본 `漏筹码` 12) ⑦ **zh·zh-hant `€690 补贴`** — 파일 정본은 `花销`/`費用`이고 «보조금»은 브리프가 금지한 성격 규정 ⑧ **`五到六分之一`은 「5 ~ 1/6」으로도 파싱된다**(그 패턴 코퍼스 0건) ⑨ ar `أوّلان منها` 비문 + `قبل وقت طويل من` 직역투 ⑩ es `que llamarías` 서법 오류 ⑪ ja `クリーンなアウツ`(정본 `きれいなアウツ`) ⑫ de `ein Paar Asse`는 포켓 AA로 읽힌다 ⑬ **es glossary는 `Mano por mano (hand-for-hand)`라는 선례가 형제 글에 있다** ⑭ pt `um em cada`는 같은 문장의 `um em três`와 구성이 갈린다 | **근거를 전부 코퍼스 횟수로** 댔다 — 「더 자연스럽다」가 아니라 실측 |
+| SEO·GEO | ⑮ 🔴 **zh-hant `beginners`는 해당 절이 있는데 브리프가 「없음」으로 오판했다 — 내용은 그대로 두고 `masterUpdated`만 올려 스탬프가 거짓말을 하게 됐다** ⑯ ja `drawing-odds` 직답이 편집으로 171자(규격 ≤170) ⑰ zh `drawing-odds` 직답 +1자 악화 | 🔴 **게이트가 못 보는 자리**(FAQ↔FAQ)까지 봤다 |
+| 교열·diff | ⑱ 🔴 **⑰b 처방은 «마침표에서 종료»였는데 절을 새로 붙여 «인접 FAQ 중복»을 다른 문장으로 재생산했다**(8로케일) ⑲ 🔴 de `beginners` 머리 주석(「07-12 동결」)이 값과 정면 충돌 ⑳ **`.trim()` 사본을 다 세지 않았다 — KO 24자리 잔존** | 「내 편집이 무엇을 깨뜨렸나」만 물어 **3건이 이 렌즈에서만 나왔다** |
+| **2차 교열** | ㉑ 🔴 **내가 새로 쓴 주석의 커밋 출처가 거짓이었다** — `125c83f5`는 07-12를 **동결 유지**했고 실제로 푼 커밋은 `01c30673`(09-10)이다 ㉒ 🔴 zh·zh-hant `高牌`는 코퍼스에서 **«하이카드(족보)»**다 — 오버카드 정본은 `高张/高張`(형제 `holdem-outs` 「两张高张 \| 6」) ㉓ ar 「بوقت طويل」이 「قبل」에서 10낱말 떨어졌다 ㉔ id `memuat`(파일 정본 `mencakup`) ㉕ es·pt `pase/passe` ↔ `pass` 한 파일 두 표기 | **반영이 새 결함을 만든다**는 규율의 실증 — ㉑㉒는 렌즈 반영이 만든 것이다 |
+
+🔴 **㉑이 이 회차 최대 교훈이다.** 낡은 주석을 고치면서 «근거 커밋»을 **확인 없이 적었다.**
+고치려던 결함(낡은 지시)을 «출처가 틀린 지시»로 바꿨을 뿐이다 — `no-guessing-verified-facts-only`의 교과서적 재발.
+지금 주석은 `git show <커밋>:<파일>`로 **값을 커밋별로 전부 뽑아** 다시 썼다(07-12 → 07-12 → 09-09 → 09-11 → 09-13).
+
+🔴 **⑮·⑱은 같은 뿌리다 — «사본을 세지 않고 목록을 믿었다».** ⑮는 `五個錯` ↔ `五個錯誤` 표기 차이로 grep이 못 잡았고(회차 안에서 ja `0〜2` ↔ `0–2`로 **이미 한 번 당한 유형**), ⑱은 브리프 처방을 내가 넘겼다.
+
+**기각 2건(사유와 함께 — 다시 올리지 마라)**
+- **zh `holdem-drawing-odds` L151 「一半」** — ⑳a 지침의 문면엔 걸리지만 **수치상 거짓이 아니다**(35% → 19.1% = 0.546). ⑳a가 틀렸던 것은 «1/3 → 1/6»이라는 **구체적 분수**였다.
+- **es `holdem-glossary` 표제어 순서** — `Hand-for-hand (mano por mano)`가 형제 `holdem-tournament:279`의 `Mano por mano (hand-for-hand)`와 반대다. 그러나 **이 표 자신의 지배 패턴이 「영어 (스페인어)」**다(`Bounty (knockout)`·`GTD (garantizado)`·`RFI (raise first in)`·`Heads-up (mano a mano)`). **표 안 일관이 형제 글과의 일관보다 앞선다** — 두 글은 다른 표다.
+
+**게이트** — `audit:hard` 10로케일 🔴 **0**(ko 42·en 56·ar 8·de 43·es 60·id 42·ja 57·pt 42·zh 56·zh-hant 57) ·
+`check:drift` 🔴 **핵심 0**(ar 6은 회차 이전 부채 · 이 회차가 만든 드리프트 0) · `check:answer-echo` 🔴 echo **0**(🟠 착수 전 49 → **47**) ·
+`cjk` 0 · `hangul` 0 · `seo-sync` 0 · `structure` 핵심 결손 0 · `image-refs` 0 · `pdf-page` 0 · `faq-schema` 523편 🔴 0 ·
+`check:number-format` 🔴 2 = §2 미결의 es 스페인식 2편(이 회차 변경분 아님) · `npm run build` ✅ **70 + 525** · `typecheck` 오류 수 = 기준선과 동일(신규 0).
+
+🪶 **`check:answer-echo` 🔴 echo가 회차 중 두 번 켜졌다 — 둘 다 내 편집이었다**(zh `beginners` 직답↔본문 38자 · zh `ept` 직답↔본문 18자).
+**직답 블록이 있는 글의 본문을 고치면 그 블록도 같이 본다** — 이 회차에서 두 번 걸렸다.
+
+
 ## 2. 미결 (해결될 때까지 유지)
 
 - ✅ ~~`lib/render-markdown.ts:200`이 모든 이미지에 `width="1200" height="630"`~~ → **Q7-a에서 닫았다.** 파일별 실제 치수표
@@ -306,8 +371,11 @@ Unlimited Re-Entry」 · 스택 50,000** 실재 확인 → 처방 ①(본문에 
   규격은 6열인데 마지막 두 열(`포인터`·`확인`)이 통째로 빠져 있다. 표가 깨진 건 아니지만 **「확인」 칸이 비면
   «상대가 받았는지»를 계산할 수 없다**(그 파일 「상태는 계산되는 것이다」 절). MB-011·012는 2026-09-08 자기삼킴 사고의
   **영구 유실분**이라 복구 불가다. 🔴 `mailbox/`는 레인 소유가 아니다 → §5 헤드 요청.
+- 🔴 **`.trim()`은 이제 전 코퍼스 100%다**(Q5-a). `lib/posts-*` 25로케일 **532편** + `lib/posts/` 51편 + `lib/posts.ts` 21자리.
+  🪶 Q5-a 브리프가 처음 센 것은 **32자리뿐**이었다 — `lib/posts-*`만 세고 **KO 24자리를 빠뜨렸다**(교열 렌즈가 잡았다).
+  「전부 붙였다」로 닫았으면 거짓이 될 뻔했다([[completion-count-the-copies-first]]).
 - 🟠 **`check:drift` 🔴 6건(ar)은 회차들 이전부터 있던 부채다** — 2026-09-12 실측 = all-in-rules · betting-actions · **blind-meaning** · game-order · showdown-rules · texas-holdem-rules-for-beginners. **Q4-a가 만든 드리프트 0**(ar blind-meaning은 Q4-a가 X-1 한 문장을 이식했지만 **EN 09-11 델타 전체를 대조하지는 않았으므로** `masterUpdated`를 올리지 않았다 — §3 「스탬프 정직성」 참조).
-- 🟠 **`check:answer-echo` 🟠 length가 zh 33 · zh-hant 10 · es/en 다수** — Q4-a 착수 전부터 있던 부채다(예: zh `holdem-blind-meaning` 직답 152자 ↔ 규격 60~130). 🔴 echo는 전 로케일 **0**. → **Q7-b**(셈의 단위 · 개수 신호)와 한 판.
+- 🟠 **`check:answer-echo` 🟠 length 47건** — Q4-a 착수 전부터 있던 부채다(Q5-a 착수 시 49 → 마감 47)(예: zh `holdem-blind-meaning` 직답 152자 ↔ 규격 60~130). 🔴 echo는 전 로케일 **0**. → **Q7-b**(셈의 단위 · 개수 신호)와 한 판.
 - 🟠 **`check:structure` 🟠 꼬리 39편** — 꼬리 17로케일 몫. 핵심 8로케일은 **0편**이다.
 - 🟠 결재 5(EN 제목 보강 3편)는 **보류** — GSC 실측 먼저. 회차에 넣지 마라.
 - 🟠 **기존 이미지 자산의 «소수점 구분자» 부채** — 공용 그림에 `31.5%`·`16.5%`·`8.5%`처럼 마침표 소수가 박힌 것이 있는데
@@ -390,6 +458,23 @@ Unlimited Re-Entry」 · 스택 50,000** 실재 확인 → 처방 ①(본문에 
   `alt=`까지 합쳐 한 화면에 **세 겹**이 된다. limping 캡션은 **«누가 팟 값을 정하나»**, drawing-odds 캡션은 **«덱 위 3장이 결정한다»**다 —
   heads-up/아웃오브포지션 열거나 「the entire basis for set mining」으로 되돌리지 마라.
 - **`holdem-limping`·`holdem-drawing-odds`는 KO에 없다**(실측 0건). 「KO 전파 부채」로 다시 파지 마라.
+
+- 🔴 **Q5-a 판정 — 다시 열지 마라**:
+  - **⑰b 직답블록↔FAQ 축어중복 5자리는 설계다**(kicker 19·11·10어절 · reading-the-board 13·10어절). Q-A-E 구조상 직답 블록과
+    FAQ 답은 **각각 자기완결 패시지**이고 거리가 멀다. 선례 = 대기열 33 ⑨(「최장 공통 ≤9단어 → 결함 아님」)의 취지 = **거리**.
+    🔴 **실제 결함은 «인접한 두 FAQ»였고 그건 고쳤다** — 게이트 `check:answer-echo`는 직답↔본문만 보고 **FAQ↔FAQ는 원리상 못 본다.**
+  - **`holdem-reading-the-board` FAQ1은 「보드 자체가 플러시다」에서 끝난다** — 「남은 전원이 이미 갖고 있다」류 절을
+    **다시 붙이지 마라**(바로 다음 FAQ 첫 문장과 같은 말이 된다 · 1차 편집이 그렇게 했다가 교열 렌즈에 걸렸다).
+    🔴 그 대신 **pt·ja는 예시(`K♠6♠5♠4♠3♠`)를 FAQ2로 옮겨 자립시켰다** — FAQ1로 되돌리지 마라(ja는 「上の…の例で」 역참조였다).
+  - **es `holdem-glossary` 표제어는 「영어 (스페인어)」 순서다** — `Hand-for-hand (mano por mano)`를 형제 글
+    `holdem-tournament:279`의 `Mano por mano (hand-for-hand)`에 맞춰 뒤집지 마라. **표 안 일관이 형제 글과의 일관보다 앞선다.**
+  - **zh `holdem-drawing-odds` L151 「一半」은 그대로 둔다** — 35% → 19.1%(0.546)라 참이다. ⑳a가 고친 것은 「1/3 → 1/6」이라는 **분수**다.
+  - **zh-hant `holdem-outs` L206 「只看轉牌那一張」은 그대로 둔다** — zh 대응 자리(L208)도 같은 서술형이라 **둘이 동형**이다.
+    고치려면 zh와 **같이** 고쳐라(zh-hant만 고치면 새 거울쌍 갈림이 생긴다).
+  - **오버카드는 zh `高张` / zh-hant `高張`이다** — `高牌`는 같은 코퍼스에서 **«하이카드(족보)»**다(정본 = 형제 `holdem-outs` 「两张高张 | 6」).
+  - **`de/texas-holdem-rules-for-beginners` 머리 주석의 커밋 목록은 값별 실측이다**(`git show <커밋>:<파일>`).
+    07-12 → `125c83f5`(09-09)까지 **동결 유지** → `01c30673`(09-10)이 09-09로 품 → `522b57f8`(09-11) → Q5-a(09-13).
+    🔴 **이 목록을 기억으로 고쳐 적지 마라** — 1차안이 `125c83f5`를 「푼 커밋」으로 잘못 적어 2차 교열에 걸렸다.
 
 ## 4. 거울쌍 갈림
 
@@ -690,6 +775,58 @@ pdf-page 19 · number-format 24 · image-dims 8). 전 게이트에 «못 보는 
   Q2c-2 ②가 「설계 판단이 필요하다(Q7-a)」로 올려 둔 그 항목이다.
 
 
+- 🔴 **Q5a-1 MB 초안**(EN 변경 = MA-123 요청 1 상시 통지):
+  > EN **8편** 변경 + 9로케일 전파(queue Q5-a · `en-first-queue` §1 ①~㉑ 전건 판정).
+  > ① `holdem-outs` 변환표 헤더 **「Turn only (1 card)」 → 「Flop → turn (1 card)」**(값은 전부 ÷47 = 플랍에서 보는 다음 한 장 · **숫자 무변경**) + 본문에 「(9 ÷ 47 = 19.1%; 턴→리버는 9 ÷ 46 = 19.6%)」 신설
+  > ② `holdem-card-counting` ×4 조건 「or the river is free」 → **「or both the turn and the river are free」**
+  > ③ `holdem-drawing-odds` 「one in six on a single street」 → **「one in five to six」**(9아웃 19.1% · 8아웃 17.0%) 2자리
+  > ④ `holdem-implied-odds` 「9 outs ÷ 46 unseen cards」에 **«오버카드는 클린 아웃이 아니다» 한정** 신설(없으면 15/46 = 32.6% > 25%라 이 절의 결론이 뒤집힌다)
+  > ⑤ `holdem-reading-the-board` FAQ 「How do you know if a flush is possible」의 답을 **자기 질문까지만** 축약(«누가 이기나»는 바로 다음 FAQ 소유)
+  > ⑥ `holdem-blind-meaning` 「Two habits fix most of it:」 → **「Two habits in the blinds … and one late-position move wins some of it back:」**(불릿이 3개다)
+  > ⑦ `texas-holdem-rules-for-beginners` 인트로 「none of them are about strategy」 → **「앞 둘은 규칙 혼동, 나머지 셋은 진짜 전략이라 부를 만한 것보다 훨씬 먼저 칩을 깎는다」**(실수 3·4·5는 전략이다)
+  > ⑧ `ept-barcelona-2026-guide` 골드패스 표 아래 **한정문 1개**(패스에 €690 경비가 이미 포함인데 표는 식사·추가일을 만액으로 또 센다 → 이 구간은 상한이다 · **표 수치 무변경**)
+  > 🔴 되돌리지 마라: ⑤의 FAQ1에 «남은 전원이 이미 갖고 있다»류 절을 다시 붙이지 마라(다음 FAQ와 같은 말) · ①의 표 숫자·「River odds」 열은 정확하다.
+  > 앵커 갱신: EN·로케일에 **「Flop → turn」·「19.1%」·「19.6%」·「one in five to six」·「€690」 한정문**이 신규 등장. 「Turn only」·「one in six」로 걸어 둔 0-감시가 있으면 재조준 필요.
+  > 🪶 별건: `scripts/starting-hands-chart-print.html` 카드 문구 「~2–3% equity」 → **「~2 points of equity」** + `public/downloads/poker-starting-hands-chart.pdf` 재생성(본문 축어 「about 2 percentage points」와 일치).
+
+- 🟠 **Q5a-2 정본에서 지워 달라(닫혔다)** — `docs/en-first-queue.md` §1 **①~㉑ 21행은 이 회차가 직접 지웠다**(레인 소유 파일).
+  🔴 **핸드오프·`settled-decisions` 쪽에 같은 항목이 남아 있으면 함께 닫아 달라.** 특히 ⑤(bad-beat 잭팟 표 라벨)는
+  **「3번 독립 재발견」으로 우선순위가 올라 있었는데 실측하면 `125c83f5`(09-09)가 이미 고쳤고 8로케일 전부 정상**이다 —
+  다음 세션이 또 파지 않도록 **«이미 고쳐졌다»를 근거 커밋과 함께** 남겨 달라.
+
+- 🔴 **Q5a-3 `settled-decisions` 승격 요청 2건**(둘 다 이 회차가 값을 치르고 배운 것이다):
+  ① **「직답 블록이 있는 글의 본문을 고치면 그 블록도 같이 본다」** — 이 회차에서 `check:answer-echo` 🔴 echo가 **두 번** 켜졌고
+     둘 다 내 편집이었다(zh `beginners` 38자 · zh `ept` 18자). 본문만 보고 고치면 블록이 축어 사본이 된다.
+  ② **「낡은 주석을 고칠 때 근거 커밋은 `git show <커밋>:<파일>`로 값을 뽑아 확인한다」** — 1차안이 «푼 커밋»을
+     `125c83f5`로 적었는데 그 커밋은 오히려 **동결을 유지**했다(실제는 `01c30673`). 고치려던 결함을 «출처가 틀린 지시»로 바꿨을 뿐이다.
+
+- 🟠 **Q5a-4 프로토콜 §3 보강 제안 1줄** — 「③-0 브리프의 «전제»도 실측하라」 아래에:
+  **「③-0-B 재료 목록의 «건수»를 착수 근거로 쓰지 마라 — 항목마다 원문을 먼저 열어 «아직 열려 있나»를 판정한다.
+  Q5-a는 21건 중 9건이 이미 종결이었다(`bb68af3b` 대청소가 옮긴 목록이 낡아 있었다).」**
+
+- 🟠 **Q5a-5 다른 레인 파일을 만졌다 — §6-0 통지 필요**:
+  - **ja 5파일**: `holdem-outs` · `holdem-drawing-odds` · `holdem-implied-odds` · `holdem-card-counting` · `holdem-reading-the-board`
+    + `.trim()`만 4파일(`ept-barcelona-2026-guide`·`japan-poker-tournaments-guide`·`wpt-australia-2026-guide`·`wsop-2026-tournament-guide`)
+  - **zh 6파일**: `holdem-blind-meaning` · `texas-holdem-rules-for-beginners` · `holdem-drawing-odds` · `holdem-implied-odds` · `holdem-reading-the-board` · `ept-barcelona-2026-guide`
+    + `.trim()`만 2파일(`wpt-australia-2026-guide`·`wsop-2026-tournament-guide`)
+  - **zh-hant 6파일**: `texas-holdem-rules-for-beginners` · `holdem-outs` · `holdem-drawing-odds` · `holdem-implied-odds` · `holdem-reading-the-board` · `ept-barcelona-2026-guide`
+    + `.trim()`만 2파일(`taiwan-poker-clubs-guide`·`wsop-2026-tournament-guide`)
+  🪶 착수 시점에 세 워크트리 전부 **clean**이었다(실측) — 겹침 없음.
+
+- 🔴 **Q5a-6 ar 부채를 핸드오프에 남겨 달라 — 다음 회차가 중복 이식하지 않게**:
+  `ar`의 `holdem-blind-meaning`·`texas-holdem-rules-for-beginners`는 이번에 **⑩·⑪만 이식**했고 `masterUpdated`는
+  **09-09 그대로 뒀다**(편집 전 09-09 < 편집 전 EN 09-12/09-11이라 올리면 거짓 ✅ 판정이 된다).
+  → `check:drift`가 ar를 계속 🔴로 찍는 것은 **의도된 상태**다. **남은 것은 EN 09-09→09-11 델타**이지 ⑩·⑪이 아니다.
+
+- 🟠 **Q5a-7 EN-먼저 신규 등재 1건**(`en-first-queue`에 넣어 달라 — 이 회차 범위 밖):
+  **EN `holdem-flush-vs-straight:138` 한 문단 안 동어반복** — 「only the ranks matter. (… ranks, never suits, decide a flush.)」.
+  es에 이식한 괄호절이 같은 구조를 복제했는데 **EN 원본이 그렇다**(교열 렌즈). 고치려면 EN부터.
+
+- 🟠 **Q5a-8 `locale-intentional-diffs` 등재 요청 없음** — 이번 회차가 만든 «일부러 다른» 자리는 **0**이다.
+  🪶 단 **기록만**: es `holdem-glossary`의 `Hand-for-hand (mano por mano)` ↔ es `holdem-tournament:279`의
+  `Mano por mano (hand-for-hand)`는 **표 패턴이 달라서 생긴 순서 차이**이지 의도적 편차가 아니다(§3에 판정 기록).
+
+
 ## 6. 자산 축적 체크 (매 회차 마감 3종)
 
 ① 키워드뱅크 — 해당 회차만 ② 편차 판정 → §5 ③ 판정 정본 승격 → §5
@@ -703,3 +840,10 @@ pdf-page 19 · number-format 24 · image-dims 8). 전 게이트에 «못 보는 
 ③ 판정 정본 승격 → §3 「Q7-a 게이트 6종의 튜닝 판정」(오탐 6종을 되돌리지 마라) +
    §3 「`en/holdem-icm`은 구두점만이 아니다」 · 「`emoji` 1행 삭제는 올리지 않는다」 · 「es 표기 정정에 `updated` 안 올린다」 +
    §5 **Q7a-3**(`settled-decisions` 규율 2건) · **Q7a-4**(프로토콜 §7-F 게이트 행)
+
+**Q5-a**: ① 키워드뱅크 — **해당 없음**(사실·정합 정정 회차 · 키워드 축을 안 건드렸다 · 메타 변경 0건)
+② 편차 판정 → §5 **Q5a-8**(«일부러 다른» 자리 **0** · es glossary↔tournament 표제어 순서는 편차가 아니라 표 패턴 차이로 판정)
+③ 판정 정본 승격 → §3 「Q5-a 판정 — 다시 열지 마라」 7항(⑰b 설계 기각 · FAQ1 종료점 · es 표제어 순서 · zh 「一半」 ·
+   zh-hant outs L206은 zh와 같이 · 오버카드 = `高张/高張` · de 주석 커밋 목록) +
+   §5 **Q5a-3**(`settled-decisions` 규율 2건 — 직답 블록 동반 점검 · 근거 커밋 실측) · **Q5a-4**(프로토콜 §3 ③-0-B 한 줄) ·
+   **Q5a-7**(EN-먼저 신규 1건)

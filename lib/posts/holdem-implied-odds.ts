@@ -228,7 +228,7 @@ A. 콜하기 전에 **"누구에게서, 어떤 리버에서, 몇 BB를 받아낼
 단, 세 가지를 잊지 말자. ①숏스택에선 임플라이드 오즈가 0이고 ②낮은 드로우는 리버스 임플라이드 오즈로 맞아도 질 수 있으며 ③"맞으면 다 딴다"는 낙관은 나쁜 콜을 정당화하는 함정이다.
 
 기초가 되는 [팟오즈 계산법](/blog/holdem-pot-odds-calculation)과 [아웃츠 계산법](/blog/holdem-outs-calculation)을 먼저 다지고, 확률 전체 그림은 [홀덤 확률 완전정복](/blog/holdem-probability)에서, 이 계산이 전체 전략에서 어디에 놓이는지는 [홀덤 전략 완전정복 로드맵](/blog/holdem-strategy)에서 확인하자.
-`,
+`.trim(),
 };
 
 export default POST;

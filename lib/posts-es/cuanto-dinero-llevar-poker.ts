@@ -174,7 +174,7 @@ La respuesta corta es 100 ciegas grandes por entrada. La respuesta útil son tre
 **El buy-in** es lo que pones en la mesa — $200 en una de $1/$2, $2,000 MXN en una de 10/20. **El presupuesto** son tres buy-ins, decididos antes de salir de tu casa, y cuando se acaban se acabó la noche. **El fondo de juego** solo aplica si vas a jugar de forma habitual, y se cuenta en decenas de entradas.
 
 Si tres entradas te parecen mucho, baja de mesa en lugar de llevar menos. Y si es tu primera vez en una sala, el resto del trámite —lista de espera, compra de fichas, qué se dice en la mesa— está en la [guía de tu primera vez](/es/blog/poker-casino-primera-vez "thumb:/images/poker-casino-primera-vez-hero.webp").
-`,
+`.trim(),
 };
 
 export default POST;

@@ -412,5 +412,5 @@ A. はい。ザ・スター・ポーカールームは毎日==g:午前10時〜�
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">あなたのスタイルに合うのはどっち?</div>
   </a>
 </div>
-`,
+`.trim(),
 };

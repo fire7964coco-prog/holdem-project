@@ -310,7 +310,7 @@ A. 맨 위 카드의 뒷면에 흠집이나 표시가 생겼을 경우 다음에
 - [체크 뜻 — 언제 체크하고 언제 벳해야 하는가](/blog/holdem-check-meaning)
 - [스플릿 팟 규칙 — 같은 패일 때 키커와 찹 계산](/blog/holdem-split-pot-rules)
 - [홀덤 초보 완전 가이드 — 첫 판부터 이기는 법](/blog/texas-holdem-rules-for-beginners)
-`,
+`.trim(),
 };
 
 export default POST;

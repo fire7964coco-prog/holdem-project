@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Você flopa um set com um par na mão 11,8% das vezes (7,5 para 1 contra), flopa um flush com duas cartas do mesmo naipe apenas 0,84%, e completa um flush draw flopado até o river 35% das vezes. Cada número abaixo vem do baralho, não de chute.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-09-12",
-  masterUpdated: "2026-09-12",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🎲",
@@ -125,7 +125,7 @@ Conectores como 8♠7♠ têm o próprio ciclo de vida. Você vai **flopar uma s
 - **Open-ended straight draw (OESD):** ~10% dos flops com conectores. Oito outs, completa **31,5%** até o river — 1 − C(39,2)/C(47,2) — ou 17% em qualquer carta única.
 - **Gutshot (projeto de sequência por dentro):** quatro outs, completa **16,5%** até o river, 8,5% numa carta. Metade da equity de um open-ended, e é por isso que os mesmos conectores jogam tão diferente dependendo do flop.
 
-Repare que o OESD (31,5%) e o flush draw (35%) estão perto — os dois são "um projeto grande", os dois mais ou menos um terço pra acertar até o river. Esse é o atalho que vale internalizar: um projeto grande normal é cerca de ==**um em três**== pra completar até o river, e cai pra mais ou menos um em seis numa street só.
+Repare que o OESD (31,5%) e o flush draw (35%) estão perto — os dois são "um projeto grande", os dois mais ou menos um terço pra acertar até o river. Esse é o atalho que vale internalizar: um projeto grande normal é cerca de ==**um em três**== pra completar até o river, e cai pra mais ou menos um em cinco ou seis numa street só.
 
 ---
 
@@ -228,7 +228,7 @@ A. Não existe um número fixo único — depende de quantos adversários têm p
 
 1. **Flopar um set: 11,8% (7,5 para 1).** O número que decide todo call de set mining — só pague fundo o bastante pra ser pago 15× ou mais quando você acerta.
 2. **Feito vs projeto vs completar são números diferentes.** Duas cartas do mesmo naipe flopam um flush feito 0,84%, um flush draw 10,9%, e completam esse projeto 35%. Nunca cite o errado.
-3. **Um projeto grande é cerca de um em três até o river.** Flush draw 35%, open-ended 31,5% — e mais ou menos um em seis numa street só.
+3. **Um projeto grande é cerca de um em três até o river.** Flush draw 35%, open-ended 31,5% — e mais ou menos um em cinco ou seis numa street só.
 
 Cada número aqui vem direto do baralho, não de um palpite. Leve isso pra [como contar outs](/pt/blog/holdem-outs) pra montar o número em tempo real, depois [pot odds](/pt/blog/holdem-pot-odds) pra transformar num call ou fold — ou volte pra tabela completa de [odds e probabilidade do poker](/pt/blog/holdem-probability) pra ter todo número de mão feita e de tiro longo num lugar só.
 

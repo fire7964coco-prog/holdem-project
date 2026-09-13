@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un out es cualquier carta que queda en la baraja y convierte tu mano en una probable ganadora. Cuéntalos y conviértelos: multiplica los outs por 4 en el flop o por 2 en el turn para tu % aproximado de ligar. Un proyecto de color son 9 outs ≈ 36% para el river.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-12",
-  masterUpdated: "2026-09-12",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🎯",
@@ -93,7 +93,7 @@ Contar outs solo sirve cuando lo conviertes en un porcentaje que puedas comparar
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Outs | Solo turn (1 carta) | Para el river (2 cartas) | Odds al river |
+| Outs | Flop → turn (1 carta) | Para el river (2 cartas) | Odds al river |
 |:---|:---:|:---:|:---:|
 | 2 | 4.3% | 8.4% | 11 a 1 |
 | 4 | 8.5% | 16.5% | 5 a 1 |
@@ -105,7 +105,7 @@ Contar outs solo sirve cuando lo conviertes en un porcentaje que puedas comparar
 
 </div>
 
-Dos números importan en cada proyecto. **"Para el river"** cuenta ambas cartas restantes y aplica cuando estás all-in en el flop sin nada más que apostar. **"Solo turn"** cuenta solo la siguiente carta — úsalo en cuanto quede más apuesta por venir, porque solo tienes garantizado ver una carta cada vez. Los principiantes citan el número gordo de "para el river" mientras afrontan una apuesta en el turn, se convencen de igualar, y lo pagan.
+Dos números importan en cada proyecto. **"Para el river"** cuenta ambas cartas restantes y aplica cuando estás all-in en el flop sin nada más que apostar. **"Flop → turn"** cuenta solo la siguiente carta (9 ÷ 47 = 19.1%; del turn al river pasa a ser 9 ÷ 46 = 19.6%) — úsalo en cuanto quede más apuesta por venir, porque solo tienes garantizado ver una carta cada vez. Los principiantes citan el número gordo de "para el river" mientras afrontan una apuesta en el turn, se convencen de igualar, y lo pagan.
 
 Fíjate en el monstruo de 15 outs: con dos cartas por venir es en realidad **favorito** (54.1%), el raro proyecto con el que puedes irte all-in feliz en el flop.
 

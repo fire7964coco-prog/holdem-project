@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "El EPT Barcelona 2026 se jugó del 16 al 29 de agosto en Casino Barcelona. El italiano Manuel Ferrari ganó el Main Event de €5,300 y se llevó €1,002,488 de un bote de €8,841,550 con 1,823 entradas. Para 2027, la vía online más barata sigue siendo el Power Path desde $0.50 → Gold Pass (Main de €5,300 + side event de €1,100 + 8 noches de hotel + €690 de gastos). Necesitas cuenta de PokerStars Live y pasaporte en regla, y conviene reservar hotel pronto — agosto es plena temporada alta.",
   category: "tournament",
   date: "2026-06-17",
-  updated: "2026-09-12",
-  masterUpdated: "2026-09-12",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🃏",
@@ -212,6 +212,8 @@ Gana el Paso 4 y recibirás uno de estos cuatro Power Passes:
 | ==**Total de tu bolsillo**== | ==g:**~€550–€1,000**== |
 
 </div>
+
+Un matiz sobre ese total: el Gold Pass ya incluye €690 de gastos, y esta tabla sigue contando la comida y los días extra a precio completo por encima — así que lee el rango como un techo, no como una previsión.
 
 ==g:La ruta del Gold Pass es, con diferencia, la más rentable.== Aunque te gastes $100 grindeando hasta el Paso 4, un Gold Pass representa un retorno de valor de 100×.
 
@@ -464,5 +466,5 @@ A. La zona del Port Olímpic de Barcelona es, en general, segura. ==r:Los carter
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Domina lo básico antes de tu primer evento en vivo</div>
   </a>
 </div>
-`,
+`.trim(),
 };

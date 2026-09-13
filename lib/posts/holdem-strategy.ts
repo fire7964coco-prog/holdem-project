@@ -196,7 +196,7 @@ A. 초보·중수 단계, 특히 상대가 실수를 많이 하는 홀덤펍 저
 ==홀덤 전략==의 핵심은 새 기술을 얼마나 많이 아느냐가 아니라, 그 기술들이 **의사결정 순서로 정렬돼 있느냐**다. 프리플랍 핸드 선택 → 포지션 → 베팅 액션 → 확률 → 자금, 이 5단계 위에서 아래로 훑는 절차가 몸에 배면 "감으로 눌렀다"가 사라진다.
 
 위 로드맵을 순서대로 클릭해 한 편씩 소화하는 것을 권한다. 상대를 범위로 읽는 [레인지 사고](/blog/holdem-range-meaning)에서 출발해, 프리플랍 공격인 [3벳](/blog/holdem-3bet-strategy)과 플랍 주도권인 [C벳](/blog/holdem-cbet-strategy)을 익히고, 마지막으로 [뱅크롤 관리](/blog/holdem-bankroll-management)로 실력을 지키면 된다. 확률의 토대가 필요하면 [홀덤 확률 완전정복](/blog/holdem-probability)을 함께 보자.
-`,
+`.trim(),
 };
 
 export default POST;

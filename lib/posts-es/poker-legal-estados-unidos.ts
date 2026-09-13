@@ -213,7 +213,7 @@ Este mapa no sale de listas de afiliados sino de leyes y reglamentos públicos. 
 Si tuviera que quedarme con tres ideas de todo este mapa, serían estas: **el estado donde estás pesa más que cualquier otra cosa**; **"casino" no significa "póker"** — hay estados llenos de casinos sin una sola mesa de póker de verdad; y **las apuestas deportivas legales no implican póker legal**, porque son leyes distintas.
 
 Si ya sabes dónde vas a jugar y lo que quieres es llegar preparado a tu primera mesa, empieza por las [reglas del Texas Hold'em](/es/blog/texas-holdem-rules-for-beginners "thumb:/images/rules-texas-holdem.webp") y por el [ranking de manos](/es/blog/holdem-hand-rankings). Si lo que te frena es el vocabulario que vuela en la mesa, el [glosario de términos](/es/blog/holdem-glossary) te ahorra más de un mal rato. Y si tu objetivo es entrar a un torneo — el WSOP incluido — la [guía de torneos](/es/blog/holdem-tournament) explica cómo funcionan por dentro.
-`,
+`.trim(),
 };
 
 export default POST;

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Mit einem Pocket Pair floppst du in 11,8% der Fälle ein Set (7,5:1 dagegen), mit zwei suited Karten nur 0,84% einen Flush, und einen gefloppten Flushdraw komplettierst du bis zum River in 35% der Fälle. Jede Zahl unten stammt aus dem Deck, nicht aus dem Bauch.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-09-12",
-  masterUpdated: "2026-09-12",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "12 Min.",
   emoji: "🎲",
@@ -127,7 +127,7 @@ Connectors wie 8♠7♠ haben ihren eigenen Lebenszyklus. Du **floppst nur in 1,
 - **Open-Ended Straight Draw (OESD):** ~10% der Flops mit Connectors. Acht Outs, komplettiert **31,5%** bis zum River – 1 − C(39,2)/C(47,2) – oder 17% auf jede einzelne Karte.
 - **Gutshot (Inside) Straight Draw:** vier Outs, komplettiert **16,5%** bis zum River, 8,5% auf eine Karte. Die halbe Equity eines Open-Enders, weshalb sich dieselben Connectors je nach Flop so unterschiedlich spielen.
 
-Beachte, dass der OESD (31,5%) und der Flushdraw (35%) nah beieinanderliegen – beide sind „ein großer Draw“, beide ungefähr ein Drittel, bis zum River zu treffen. Das ist die Abkürzung, die es sich zu verinnerlichen lohnt: ein normaler großer Draw ist etwa ==**einer von drei**== bis zum River zu komplettieren, und er halbiert sich auf etwa einen von sechs auf einer einzelnen Street.
+Beachte, dass der OESD (31,5%) und der Flushdraw (35%) nah beieinanderliegen – beide sind „ein großer Draw“, beide ungefähr ein Drittel, bis zum River zu treffen. Das ist die Abkürzung, die es sich zu verinnerlichen lohnt: ein normaler großer Draw ist etwa ==**einer von drei**== bis zum River zu komplettieren, und auf einer einzelnen Street sinkt er auf etwa einen von fünf bis sechs.
 
 ---
 
@@ -236,7 +236,7 @@ A. Es gibt keine einzelne feste Zahl – sie hängt davon ab, wie viele Gegner P
 
 1. **Ein Set floppen: 11,8% (7,5:1).** Die Zahl, die jeden Set-Mining-Call entscheidet – calle nur tief genug, um das 15-Fache oder mehr ausgezahlt zu bekommen, wenn du triffst.
 2. **Fertig vs. Draw vs. Komplett sind verschiedene Zahlen.** Zwei suited Karten floppen einen fertigen Flush 0,84%, einen Flushdraw 10,9% und komplettieren diesen Draw 35%. Nenne nie die falsche.
-3. **Ein großer Draw ist etwa einer von drei bis zum River.** Flushdraw 35%, Open-Ender 31,5% – und rund einer von sechs auf einer einzelnen Street.
+3. **Ein großer Draw ist etwa einer von drei bis zum River.** Flushdraw 35%, Open-Ender 31,5% – und rund einer von fünf bis sechs auf einer einzelnen Street.
 
 Jede Zahl hier kommt direkt aus dem Deck, nicht aus dem Bauchgefühl. Nimm sie mit zu [wie man Outs zählt](/de/blog/holdem-outs), um die Zahl in Echtzeit aufzubauen, dann [Pot Odds](/de/blog/holdem-pot-odds), um sie in einen Call oder Fold zu verwandeln – oder geh zurück zur kompletten [Poker-Odds- und Wahrscheinlichkeitstabelle](/de/blog/holdem-probability) für jede Made-Hand- und Long-Shot-Zahl an einem Ort.
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "EPT Barcelona 2026 berlangsung 16–29 Agu di Casino Barcelona. Pemain Italia Manuel Ferrari memenangi Main Event €5.300 dan membawa pulang €1.002.488 dari prize pool €8.841.550 dengan 1.823 entri. Untuk 2027, jalur online termurah tetap Power Path dari $0,50 → Gold Pass (Main Event €5.300 + side event €1.100 + hotel 8 malam + biaya €690). Anda butuh akun PokerStars Live dan paspor yang berlaku, dan sebaiknya pesan hotel lebih awal — Agustus musim puncak.",
   category: "tournament",
   date: "2026-06-17",
-  updated: "2026-09-12",
+  updated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "16 mnt",
   emoji: "🃏",
@@ -211,6 +211,8 @@ Tidak mau grind empat langkah? PokerStars juga menjalankan **satelit langsung** 
 | ==**Total pengeluaran pribadi**== | ==g:**~€550–€1.000**== |
 
 </div>
+
+Satu catatan soal total itu: Gold Pass sudah mencakup biaya €690, dan tabel ini tetap menghitung makan dan hari tambahan dengan harga penuh di atasnya — jadi bacalah rentang itu sebagai batas atas, bukan perkiraan.
 
 ==g:Rute Gold Pass adalah yang paling hemat biaya sejauh ini.== Bahkan jika Anda menghabiskan $100 untuk grind sampai Step 4, Gold Pass mewakili pengembalian nilai 100×.
 

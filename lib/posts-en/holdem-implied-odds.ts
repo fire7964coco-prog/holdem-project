@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Implied odds are the extra chips you expect to win on later streets when your draw hits. They let you profitably call a draw that pot odds alone say to fold — but only if stacks are deep and your opponent will actually pay you off.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-09",
+  updated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "💰",
@@ -83,7 +83,7 @@ Let's run the numbers so the formula stops being abstract.
 
 You hold ==b:A♥ K♥== on a ==Q♥ 7♥ 2♣ 3♠== board — the nut flush draw, 9 outs, with one card to come. The pot is $100 and your opponent bets $50 on the turn, so there's ==$150 in the middle== and it's $50 to you.
 
-- **Pot odds first:** you're getting 150-to-50, or 3-to-1, so you need **25%** equity. Your flush hits on the river just ==r:19.6%== of the time (9 outs ÷ 46 unseen cards). 19.6% is less than 25%, so the immediate price says ==r:fold.==
+- **Pot odds first:** you're getting 150-to-50, or 3-to-1, so you need **25%** equity. Your flush hits on the river just ==r:19.6%== of the time (9 outs ÷ 46 unseen cards — we count flush outs only; pairing the ace or king is not enough to be sure you are ahead, so the overcards are not clean outs). 19.6% is less than 25%, so the immediate price says ==r:fold.==
 - **Now the implied odds:** x = (call ÷ hit%) − (pot + call) = (50 ÷ 0.196) − (150 + 50) = 255 − 200 = ==g:about $55.== That's the extra you must win on the river when your flush lands.
 
 So the question isn't "should I call $50?" It's "**when a heart hits, can I win at least $55 more?**" Against a deep opponent who'll pay off a river bet with top pair or a set, that's easy — you call. Against someone with $40 left behind, or on a board where a fourth heart kills their action, you can't — so you fold.

@@ -192,7 +192,7 @@ Chicago tiene una escena de póker sana, pero **no está donde la gente la busca
 **El casino del centro no tiene mesas de póker** y no las tendrá hasta el complejo de 2027. **La sala más grande de Illinois es Rivers, en Des Plaines, con 22 mesas** — y la única de 24 horas está cruzando a Indiana, en Hammond. Y **online no hay nada legal en Illinois**: el estado lleva más de 60 cartas de cese contra las páginas que dicen lo contrario.
 
 Si quieres ver cómo está el resto del país, ahí está el [mapa de los 50 estados](/es/blog/poker-legal-estados-unidos "thumb:/images/poker-legal-estados-unidos-hero.webp"). Y si vas a debutar en una mesa de Des Plaines o de Hammond, empieza por las [reglas del Texas Hold'em](/es/blog/texas-holdem-rules-for-beginners) y por [cómo funcionan las apuestas](/es/blog/holdem-betting-actions) — llegar sabiendo eso te ahorra la peor parte de la primera noche.
-`,
+`.trim(),
 };
 
 export default POST;

@@ -477,7 +477,7 @@ A. 홀덤이 실력이 더 많이 반영됩니다. 공용 카드로 인해 상�
 족보 순서 자체가 헷갈린다면 [홀덤 족보 순위 10가지](/blog/holdem-hand-rankings)에서 다시 한 번 확인하세요.
 
 같은 족보끼리 붙었을 때 더 정확한 판단을 원한다면 [홀덤 족보 타이브레이크 규칙](/blog/holdem-tiebreak-rules)을, 어떤 홀카드로 게임에 들어갈지 기준을 잡고 싶다면 [홀덤 스타팅 핸드 완전 가이드](/blog/holdem-starting-hand-range)를 함께 읽어보세요.
-`,
+`.trim(),
  },
  {
  slug: "holdem-hand-rankings-confusing",
@@ -842,7 +842,7 @@ A. 그 상황은 홀덤에서 아예 나오지 않습니다. 서로 다른 무�
 | [플러시 vs 스트레이트](/blog/holdem-flush-vs-straight) | 순서 착각 해결 |
 | [홀덤 족보 순위 10가지](/blog/holdem-hand-rankings) | 전체 순서표 |
 | [홀덤 체크 뜻](/blog/holdem-check-meaning) | 베팅 0원·BB 옵션 |
-`,
+`.trim(),
 },
 {
  slug: "holdem-tiebreak-rules",
@@ -1299,7 +1299,7 @@ A. 아닙니다. 텍사스 홀덤에서는 스페이드·다이아·하트·클�
 | [플러시 vs 스트레이트](/blog/holdem-flush-vs-straight) | 1:1 비교 |
 | [홀덤 체크 뜻](/blog/holdem-check-meaning) | 체크·콜·폴드 |
 | [스몰블라인드 역할](/blog/holdem-small-blind-role) | SB 운영법 |
-`,
+`.trim(),
 },
 {
 slug: "holdem-odds-calculator",
@@ -1547,7 +1547,7 @@ A. 모바일에서는 **"Poker Cruncher"(iOS)**, **"PokerBoss"(Android)**를 추
 온라인 홀덤 게임이든 오프라인 포커 클럽이든, 확률로 결정하는 습관 하나가 장기 수익을 만들어준답니다
 
 오늘 배운 내용이 도움됐다면, [홀덤 스타팅 핸드 전략 완전 정리](/blog/holdem-starting-hand-range)와 [프리플랍 폴드 기준 가이드](/blog/when-to-fold-preflop-holdem)도 함께 보세요! 확률 개념이 훨씬 깊어질 거예요!
-`,
+`.trim(),
  },
  {
  slug: "holdem-blind-meaning",
@@ -1919,7 +1919,7 @@ MP가 오픈하고 BTN이 콜했을 때 BB에서 3벳 하는 것을 **스쿼즈(
 | [플러시 vs 스트레이트](/blog/holdem-flush-vs-straight) | 순서 비교 |
 | [홀덤 체크 뜻](/blog/holdem-check-meaning) | BB 옵션·체크 규칙 |
 | [홀덤 게임 순서](/blog/holdem-game-order) | 프리플랍~쇼다운 흐름 |
-`,
+`.trim(),
 },
 {
 slug: "holdem-game-order",

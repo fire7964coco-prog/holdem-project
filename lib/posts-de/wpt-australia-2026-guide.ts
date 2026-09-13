@@ -339,5 +339,5 @@ A. Ja. Der Star-Poker-Raum bietet täglich Cashgames ==g:von 10 AM – 4 AM==, S
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Welches Format passt zu deinem Stil?</div>
   </a>
 </div>
-`,
+`.trim(),
 };

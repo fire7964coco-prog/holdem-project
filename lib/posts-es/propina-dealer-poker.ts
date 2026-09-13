@@ -202,7 +202,7 @@ Tres cosas y ya sabes lo que hay que saber:
 **Un dólar por bote ganado** en mesas bajas de Estados Unidos, y solo cuando ganas. **En torneos no se va dando mano por mano** — tu inscripción ya incluye la cuota del personal, y lo que se acostumbra es dejar algo del premio si cobras. Y **hay veces en que no se da nada**: cuando pierdes, cuando el bote es diminuto, cuando se divide, o cuando vas justo de dinero.
 
 Si además es tu primera vez en una sala, el recorrido completo —lista de espera, compra de fichas, qué se dice en la mesa— está en la [guía de tu primera vez](/es/blog/poker-casino-primera-vez "thumb:/images/poker-casino-primera-vez-hero.webp").
-`,
+`.trim(),
 };
 
 export default POST;

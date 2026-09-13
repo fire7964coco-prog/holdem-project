@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "En el Texas Hold'em cada jugador recibe 2 cartas propias y comparte 5 cartas comunitarias en la mesa. Se apuesta en cuatro rondas — preflop, flop, turn y river — y gana quien forma la mejor mano de póker de 5 cartas, o el último que quede si todos los demás se retiran. Puedes usar tus dos cartas, una sola o ninguna: lo que forme la mano más fuerte.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
@@ -361,7 +361,7 @@ Si dos jugadores tienen el mismo tipo de mano, se comparan las cartas más altas
 
 ## Errores típicos de principiante
 
-Después de años organizando timbas en casa, veo los mismos cinco errores en casi toda mesa de principiantes — y ninguno tiene que ver con la estrategia. Vienen de no fiarse todavía de las reglas.
+Después de años organizando timbas en casa, veo los mismos cinco errores en casi toda mesa de principiantes — y los dos primeros son puro lío con las reglas, mientras que los otros tres te cuestan fichas mucho antes de que entre en juego nada que puedas llamar estrategia avanzada.
 
 ### Error 1: Creer que debes usar tus dos cartas propias
 

@@ -189,7 +189,7 @@ Indiana tiene menos salas de las que su tamaño sugiere, pero las que hay están
 **Cinco salas en todo el estado**, y la más cercana a Chicago —Horseshoe Hammond, 24 horas— **está en Indiana, no en Illinois**. **Varios casinos grandes no tienen póker**: Hard Rock Gary, Ameristar East Chicago y Harrah's Hoosier Park, así que revisa antes de manejar. Y **la ley de 2026 sacó a los casinos de monedas pero dejó por escrito una excepción para el póker entre jugadores** — algo que, hasta ahora, ningún otro estado ha hecho — y que no equivale a tener licencia estatal.
 
 Si vas a debutar en una mesa de verdad, repasa antes las [reglas del Texas Hold'em](/es/blog/texas-holdem-rules-for-beginners "thumb:/images/rules-texas-holdem.webp") y [cómo funcionan las apuestas](/es/blog/holdem-betting-actions) — llegar sabiendo eso te ahorra la peor parte de la primera noche.
-`,
+`.trim(),
 };
 
 export default POST;

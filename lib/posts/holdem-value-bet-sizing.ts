@@ -262,5 +262,5 @@ A. 원칙은 같아요. 홀덤펍은 콜러가 많아서 **밸류를 크게** �
 | [팟 오즈](/blog/holdem-pot-odds-calculation) | 콜·폴드 |
 | [전략 로드맵](/blog/holdem-strategy) | 초→고수 학습 순서 |
 | [로드맵](/blog) | 학습 지도 |
-`,
+`.trim(),
 };

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Di Texas Hold'em Anda selalu memainkan tangan 5-kartu terbaik dari 7 (2 kartu tertutup + 5 kartu komunitas) — memakai kedua kartu tertutup, satu, atau tak satu pun (main dengan board). Pindai ketujuh kartu dengan urutan tetap: flush → straight → nilai berpasangan → kartu tinggi.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "11 mnt",
   emoji: "🃏",
@@ -266,7 +266,7 @@ A. Tidak. Rangkaian seperti K-A-2-3-4 atau Q-K-A-2-3 bukan straight di Texas Hol
 
 **Q. Bagaimana tahu flush mungkin di board?**
 
-A. Hitung jenis di board. Dengan 0–2 kartu satu jenis, tak ada flush bagi siapa pun. Dengan 3, pemain butuh dua kartu jenis itu di tangan; dengan 4, cukup satu; dengan kelimanya, board itu sendiri adalah flush: kartu jenis itu yang lebih tinggi dari kartu terendah di board memperbaikinya — dan di board yang berurutan, kartu jenis itu mana pun yang melengkapi straight flush, bahkan yang lebih rendah, mengalahkan semua flush.
+A. Hitung jenis di board. Dengan 0–2 kartu satu jenis, tak ada flush bagi siapa pun. Dengan 3, pemain butuh dua kartu jenis itu di tangan; dengan 4, cukup satu; dengan kelimanya, board itu sendiri adalah flush.
 
 **Q. Jika ada flush di board, siapa yang menang?**
 

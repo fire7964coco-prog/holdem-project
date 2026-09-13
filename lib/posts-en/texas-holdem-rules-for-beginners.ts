@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Texas Hold'em gives each player 2 hole cards, uses 5 community cards, and the best 5-card poker hand wins after four betting rounds.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-11",
+  updated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
@@ -359,7 +359,7 @@ If two players have the same type of hand, compare the highest relevant cards �
 
 ## Common Beginner Mistakes
 
-After years of hosting home games, I see the same five mistakes at almost every beginner table — and none of them are about strategy. They come from not yet trusting the rules.
+After years of hosting home games, I see the same five mistakes at almost every beginner table — and the first two are pure rule confusion, while the other three cost chips long before anything you would call advanced strategy.
 
 ### Mistake 1: Thinking you must use both hole cards
 

@@ -201,7 +201,7 @@ A. 매장명·지역, 주소·영업시간, 정기 토너먼트/운영 일정, �
 📩 **holdemmaster.kr@gmail.com**
 
 홀덤펍이 처음인 손님을 맞을 준비가 궁금하다면 [홀덤펍 완전 가이드](/blog/holdem-pub-guide)를 시작으로 [홀덤펍 첫 방문 가이드](/blog/holdem-pub-first-visit-guide)와 [홀덤펍 합법성 정리](/blog/holdem-pub-legal)도 함께 참고하세요.
-`,
+`.trim(),
 };
 
 export default POST;

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "EPT 巴塞隆納 2026 已於 8/16–8/29 在巴塞隆納賭場落幕。義大利的 Manuel Ferrari 拿下 €5,300 主賽事，從 1,823 人次、€8,841,550 獎池中贏得 €1,002,488。想挑戰 2027 的話，最便宜的線上路線仍是 Power Path 從 $0.50 起 → Gold Pass（€5,300 主賽事席位 + €1,100 附加賽事 + 8 晚住宿 + €690 費用）。你需要一個 PokerStars Live 帳號和一本有效護照，住宿要早訂——八月是旺季。",
   category: "tournament",
   date: "2026-07-23",
-  updated: "2026-09-12",
-  masterUpdated: "2026-09-12",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "16 分鐘",
   emoji: "🃏",
@@ -230,6 +230,8 @@ PokerStars 設計 Power Path 的用意，就是 ==要擋住職業牌手直接買
 | ==**自付總額**== | ==g:**~€550–€1,000**== |
 
 </div>
+
+關於這個總額有一點要講清楚：Gold Pass 本身已經含了 €690 費用，而上面這張表還是把餐費和多出來的天數按全價再算了一次——所以把這個區間當成上限看，不要當成預期值。
 
 ==g:Gold Pass 路線的性價比遠遠勝過其他。== 就算你花了 $100 一路磨到第 4 階，一張 Gold Pass 也代表著 100 倍的價值回報。
 

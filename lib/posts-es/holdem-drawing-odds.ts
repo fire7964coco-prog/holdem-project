@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ligas un set en el flop con una pareja servida el 11.8% de las veces (7.5 a 1 en contra), ligas un color en el flop con dos cartas del mismo palo apenas un 0.84%, y completas un proyecto de color del flop al river el 35% de las veces. Cada número de abajo sale de la baraja, no se adivina.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-09-12",
-  masterUpdated: "2026-09-12",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🎲",
@@ -125,7 +125,7 @@ Las conectoras como 8♠7♠ tienen su propio ciclo de vida. **Ligarás una esca
 - **Proyecto de escalera abierto (de dos puntas):** ~10% de los flops con conectoras. Ocho outs, se completa el **31.5%** al river — 1 − C(39,2)/C(47,2) — o un 17% con una sola carta.
 - **Proyecto interior (gutshot):** cuatro outs, se completa el **16.5%** al river, 8.5% con una carta. La mitad de la equity de un abierto, y por eso las mismas conectoras se juegan tan distinto según el flop.
 
-Fíjate en que el proyecto abierto (31.5%) y el proyecto de color (35%) están cerca — ambos son "un proyecto grande", ambos alrededor de un tercio de ligar al river. Ese es el atajo que vale la pena interiorizar: un proyecto grande normal es de ==**uno de cada tres**== de completarse al river, y baja a más o menos uno de cada seis en una sola calle.
+Fíjate en que el proyecto abierto (31.5%) y el proyecto de color (35%) están cerca — ambos son "un proyecto grande", ambos alrededor de un tercio de ligar al river. Ese es el atajo que vale la pena interiorizar: un proyecto grande normal es de ==**uno de cada tres**== de completarse al river, y baja a más o menos uno de cada cinco o seis en una sola calle.
 
 ---
 
@@ -232,7 +232,7 @@ A. No hay un número único fijo — depende de cuántos rivales tengan parejas 
 
 1. **Ligar un set: 11.8% (7.5 a 1).** El número que decide cada call de set mining — solo paga con stacks lo bastante profundos para cobrar 15× o más cuando aciertes.
 2. **Hecho vs proyecto vs completado son números distintos.** Dos cartas del mismo palo ligan un color hecho un 0.84%, un proyecto de color un 10.9%, y completan ese proyecto un 35%. Nunca cites el equivocado.
-3. **Un proyecto grande es más o menos uno de cada tres al river.** Proyecto de color 35%, abierto 31.5% — y más o menos uno de cada seis en una sola calle.
+3. **Un proyecto grande es más o menos uno de cada tres al river.** Proyecto de color 35%, abierto 31.5% — y más o menos uno de cada cinco o seis en una sola calle.
 
 Cada cifra de aquí sale directamente de la baraja, no de una corazonada. Lleva estas a [cómo contar outs](/es/blog/holdem-outs) para armar el número en tiempo real, luego a las [pot odds](/es/blog/holdem-pot-odds) para convertirlo en un call o un fold — o vuelve a la tabla completa de [probabilidades del póker](/es/blog/holdem-probability) para tener cada número de mano hecha y de proyecto largo en un solo sitio.
 

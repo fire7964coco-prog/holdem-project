@@ -431,5 +431,5 @@ A. 满 21 岁、有有效证件就行，没有国籍限制。但中国护照上�
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:6px;line-height:1.5">亚洲最近的大型赛事</div>
   </a>
 </div>
-`,
+`.trim(),
 };

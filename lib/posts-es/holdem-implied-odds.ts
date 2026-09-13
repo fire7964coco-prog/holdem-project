@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Las odds implícitas son las fichas extra que esperas ganar en las calles siguientes cuando ligas tu proyecto. Te permiten pagar de forma rentable un proyecto que las pot odds por sí solas dirían foldear — pero solo si los stacks son profundos y tu rival de verdad va a pagarte.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "💰",
@@ -84,7 +84,7 @@ Corramos los números para que la fórmula deje de ser abstracta.
 
 Tienes ==b:A♥ K♥== en una mesa ==Q♥ 7♥ 2♣ 3♠== — el proyecto de color al nut, 9 outs, con una carta por venir. El bote es de $100 y tu rival apuesta $50 en el turn, así que hay ==$150 en el centro== y te toca poner $50.
 
-- **Primero las pot odds:** te dan 150 a 50, o 3 a 1, así que necesitas **25%** de equity. Tu color liga en el river solo el ==r:19.6%== de las veces (9 outs ÷ 46 cartas desconocidas). 19.6% es menos que 25%, así que el precio inmediato dice ==r:fold.==
+- **Primero las pot odds:** te dan 150 a 50, o 3 a 1, así que necesitas **25%** de equity. Tu color liga en el river solo el ==r:19.6%== de las veces (9 outs ÷ 46 cartas desconocidas — contamos solo los outs de color a propósito; emparejar el as o el rey no basta para estar seguro de ir por delante, así que las sobrecartas no son outs limpios). 19.6% es menos que 25%, así que el precio inmediato dice ==r:fold.==
 - **Ahora las odds implícitas:** x = (call ÷ % de ligar) − (bote + call) = (50 ÷ 0.196) − (150 + 50) = 255 − 200 = ==g:unos $55.== Ese es el extra que debes ganar en el river cuando tu color caiga.
 
 Así que la pregunta no es "¿debería pagar $50?". Es "**cuando caiga un corazón, ¿puedo ganar al menos $55 más?**". Contra un rival profundo que pagará una apuesta en el river con top pair o un set, es fácil — pagas. Contra alguien con $40 detrás, o en una mesa donde un cuarto corazón le mata la acción, no puedes — así que foldeas.

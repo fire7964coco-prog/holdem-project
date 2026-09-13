@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "You flop a set with a pocket pair 11.8% of the time (7.5-to-1 against), flop a flush with two suited cards just 0.84%, and complete a flopped flush draw by the river 35% of the time. Every number below is derived from the deck, not guessed.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-09-12",
+  updated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🎲",
@@ -124,7 +124,7 @@ Connectors like 8♠7♠ have their own lifecycle. You'll **flop a made straight
 - **Open-ended straight draw (OESD):** ~10% of flops with connectors. Eight outs, completes **31.5%** by the river — 1 − C(39,2)/C(47,2) — or 17% on any single card.
 - **Gutshot (inside) straight draw:** four outs, completes **16.5%** by the river, 8.5% on one card. Half the equity of an open-ender, which is why the same connectors play so differently depending on the flop.
 
-Notice the OESD (31.5%) and the flush draw (35%) are close — both are "one big draw," both roughly a third to hit by the river. That's the shortcut worth internalizing: a normal big draw is about ==**one in three**== to complete by the river, and it halves to about one in six on a single street.
+Notice the OESD (31.5%) and the flush draw (35%) are close — both are "one big draw," both roughly a third to hit by the river. That's the shortcut worth internalizing: a normal big draw is about ==**one in three**== to complete by the river, and it drops to about one in five to six on a single street.
 
 ---
 
@@ -227,7 +227,7 @@ A. There's no single fixed number — it depends on how many opponents hold pock
 
 1. **Flop a set: 11.8% (7.5-to-1).** The number that decides every set-mining call — only call deep enough to be paid 15× or more when you hit.
 2. **Made vs draw vs complete are different numbers.** Two suited cards flop a made flush 0.84%, a flush draw 10.9%, and complete that draw 35%. Never quote the wrong one.
-3. **A big draw is about one in three by the river.** Flush draw 35%, open-ender 31.5% — and roughly one in six on a single street.
+3. **A big draw is about one in three by the river.** Flush draw 35%, open-ender 31.5% — and roughly one in five to six on a single street.
 
 Every figure here comes straight from the deck, not a gut feeling. Take these into [how to count outs](/en/blog/holdem-outs) to build the number in real time, then [pot odds](/en/blog/holdem-pot-odds) to turn it into a call or fold — or back up to the complete [poker odds and probability chart](/en/blog/holdem-probability) for every made-hand and long-shot number in one place.
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Um out é qualquer carta que sobrou no baralho e melhora sua mão para uma provável vencedora. Conte-os e converta: multiplique os outs por 4 no flop ou por 2 no turn para a % aproximada de acertar. Um projeto de flush são 9 outs ≈ 36% até o river.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-12",
-  masterUpdated: "2026-09-12",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🎯",
@@ -93,7 +93,7 @@ Contar outs só é útil depois que você as transforma em uma porcentagem que d
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Outs | Só o turn (1 carta) | Até o river (2 cartas) | Odds no river |
+| Outs | Flop → turn (1 carta) | Até o river (2 cartas) | Odds no river |
 |:---|:---:|:---:|:---:|
 | 2 | 4,3% | 8,4% | 11 para 1 |
 | 4 | 8,5% | 16,5% | 5 para 1 |
@@ -105,7 +105,7 @@ Contar outs só é útil depois que você as transforma em uma porcentagem que d
 
 </div>
 
-Dois números importam para todo projeto. **"Até o river"** conta as duas cartas restantes e vale quando você está all-in no flop sem mais nada para apostar. **"Só o turn"** conta só a próxima carta — use isso no momento em que ainda há aposta por vir, porque você só tem garantia de ver uma carta de cada vez. Iniciantes citam o número gordo do "até o river" enquanto encaram uma aposta no turn, se convencem a pagar, e pagam caro por isso.
+Dois números importam para todo projeto. **"Até o river"** conta as duas cartas restantes e vale quando você está all-in no flop sem mais nada para apostar. **"Flop → turn"** conta só a próxima carta (9 ÷ 47 = 19,1%; do turn para o river vira 9 ÷ 46 = 19,6%) — use isso no momento em que ainda há aposta por vir, porque você só tem garantia de ver uma carta de cada vez. Iniciantes citam o número gordo do "até o river" enquanto encaram uma aposta no turn, se convencem a pagar, e pagam caro por isso.
 
 Repare no monstro de 15 outs: com duas cartas por vir ele é na verdade **favorito** (54,1%), o raro projeto com o qual você pode alegremente ir de all-in no flop.
 

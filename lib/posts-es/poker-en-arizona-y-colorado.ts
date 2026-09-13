@@ -212,7 +212,7 @@ Arizona y Colorado comparten la misma rareza: **apuestas deportivas por celular 
 Lo que sí tienes es póker en vivo, y con una diferencia enorme entre los dos: **Phoenix tiene una sala de 69 mesas a veinte minutos del centro**, mientras que en todo el sur de Colorado quedan seis mesas abiertas cuatro días a la semana.
 
 Antes de manejar, llama. Y antes de registrarte en cualquier página que te acepte desde Phoenix o Denver, revisa el [mapa de los 50 estados](/es/blog/poker-legal-estados-unidos "thumb:/images/poker-legal-estados-unidos-hero.webp") — porque si tu estado no está en la lista de seis, no hay regulador que te respalde. Y si vas a debutar en una mesa de Black Hawk o de Talking Stick, empieza por las [reglas del Texas Hold'em](/es/blog/texas-holdem-rules-for-beginners).
-`,
+`.trim(),
 };
 
 export default POST;

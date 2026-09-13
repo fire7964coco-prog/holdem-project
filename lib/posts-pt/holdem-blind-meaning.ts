@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Blinds são apostas obrigatórias pagas antes de as cartas serem distribuídas. O small blind fica à esquerda do botão do dealer e o big blind à esquerda dele; o big blind — normalmente o dobro do small blind — é a unidade de aposta da mesa.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-09-12",
-  masterUpdated: "2026-09-12",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "💰",
@@ -139,7 +139,7 @@ Ao sentar em um cash game ao vivo, normalmente você não joga de graça: na mai
 
 ![Pilha de fichas caindo em direção ao pote em uma mesa de poker — um push de roubo de blinds a partir do botão](/images/holdem-blind-steal.webp)
 
-É nos blinds que eu mais vejo iniciante sangrar fichas sem perceber — não em um pote grande, mas um pouquinho a cada volta do botão. Dois hábitos resolvem a maior parte disso:
+É nos blinds que eu mais vejo iniciante sangrar fichas sem perceber — não em um pote grande, mas um pouquinho a cada volta do botão. Dois hábitos nos blinds resolvem a maior parte disso — e um terceiro movimento, da posição final, recupera parte do que sai:
 
 - **Small blind: simplifique.** Penúltimo no pré-flop mas **primeiro a agir** depois do flop — a linha limpa para iniciante é **aumentar ou foldar**, não pagar. Dar limp e levar pressão fora de posição é um vazamento constante de fichas.
 - **Big blind: defenda com as odds.** Você já pôs uma aposta completa, então pode pagar aumentos com um range mais largo do que qualquer outro assento — com lucro. Contra um open de 2,5 BB (com o small blind foldando), você paga 1,5 BB para um pote de 4 BB — cerca de 2,7 para 1, ou seja, aproximadamente 27% de equity já empata o call. Essa matemática são as [pot odds](/pt/blog/holdem-pot-odds), e é por isso que existe a "defesa de big blind".

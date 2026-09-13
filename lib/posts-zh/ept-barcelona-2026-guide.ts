@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "EPT Barcelona 2026 已于 8 月 16–29 日在 Casino Barcelona 结束。意大利的 Manuel Ferrari 拿下 €5,300 主赛事，从 1,823 人次、€8,841,550 奖池中赢得 €1,002,488。想冲 2027 的话，最便宜的线上路线仍是 Power Path 从 $0.50 起步 → Gold Pass（€5,300 主赛席位 + €1,100 副赛 + 8 晚酒店 + €690 花销）。你需要一个 PokerStars Live 账号和一本有效护照，酒店要早订——8 月是旺季。",
   category: "tournament",
   date: "2026-06-17",
-  updated: "2026-09-12",
-  masterUpdated: "2026-09-12",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "16 分钟",
   emoji: "🃏",
@@ -184,7 +184,7 @@ PokerStars 专门设计了 Power Path，就是要 ==挡住职业牌手直接买�
 ## EPT Barcelona 2026 全程花销 — 现实预算拆解
 
 > **快速回答**
-> 买入只是成本的一部分。经济方案打 €825 的 PokerStars Cup，7 晚全程约 €2,025–€2,985；标准方案打 €5,300 主赛，10 晚约 €7,280–€11,550；Gold Pass 方案自掏腰包只要约 €550–€1,000，因为席位、副赛、8 晚酒店和 €690 花销都已包含。
+> 买入只是成本的一部分。经济方案打 €825 的 PokerStars Cup，7 晚全程约 €2,025–€2,985；标准方案打 €5,300 主赛，10 晚约 €7,280–€11,550；Gold Pass 方案席位、副赛、8 晚酒店和 €690 花销都已包含，自掏腰包约 €550–€1,000——这是上限，不是预期值。
 
 ==r:参赛者们不会告诉你的是：真正的账单是整趟行程。== 我们来拆一下一趟真实的 EPT 巴塞罗那之行到底要花多少。
 
@@ -230,6 +230,8 @@ PokerStars 专门设计了 Power Path，就是要 ==挡住职业牌手直接买�
 | ==**自掏腰包合计**== | ==g:**~€550–€1,000**== |
 
 </div>
+
+关于这个总额有一点要说明：Gold Pass 本身已经含了 €690 花销，而上面这张表仍然把餐费和多出来的天数按全价另算了一遍——所以把这个区间当成上限来看，而不是预期值。
 
 ==g:Gold Pass 路线的性价比远超其他。== 就算你花 $100 一路打到 Step 4，一张 Gold Pass 也代表着 100 倍的价值回报。
 
@@ -500,7 +502,7 @@ A. 巴塞罗那的奥林匹克港区域总体安全。==r:游客密集的地方�
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">打第一场线下赛前先掌握基础</div>
   </a>
 </div>
-`,
+`.trim(),
 };
 
 export default POST;

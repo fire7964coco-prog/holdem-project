@@ -367,7 +367,7 @@ A. 能。The Star Poker 室每天开现金局 ==g:上午 10 点至凌晨 4 点==
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">哪种赛制适合你的风格？</div>
   </a>
 </div>
-`,
+`.trim(),
 };
 
 export default POST;

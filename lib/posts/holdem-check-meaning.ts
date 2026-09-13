@@ -238,5 +238,5 @@ A. 앞자리에서 이미 베팅이나 레이즈가 나온 상황입니다. 테�
 | [홀덤 족보 같을 때](/blog/holdem-tiebreak-rules) | 키커·스플릿 |
 | [플러시 vs 스트레이트](/blog/holdem-flush-vs-straight) | 족보 순서 |
 | [홀덤 게임 순서](/blog/holdem-game-order) | 체크가 나오는 타이밍 |
-`,
+`.trim(),
 };

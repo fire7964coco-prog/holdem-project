@@ -194,7 +194,7 @@ A. Sí. Harrah's Atlantic City recibe el WSOP Circuit del 13 al 24 de agosto de 
 Nueva Jersey es el estado donde todo lo que quieres hacer es legal: jugar online, jugar en vivo y cobrar sin sobresaltos. Tres cosas para quedarte: **no hace falta ser residente, solo estar aquí**; **de los nueve casinos de Atlantic City solo tres tienen póker**, y Borgata es el grande; y **la cuenta parada un año te puede costar el saldo**.
 
 Si quieres comparar con el resto del país, el [mapa de los 50 estados](/es/blog/poker-legal-estados-unidos) lo resume. Y si vas a debutar en una mesa de verdad, empieza por las [reglas del Texas Hold'em](/es/blog/texas-holdem-rules-for-beginners) y mira cuánto se lleva [la comisión de la sala](/es/blog/holdem-rake).
-`,
+`.trim(),
 };
 
 export default POST;

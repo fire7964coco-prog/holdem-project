@@ -340,5 +340,5 @@ A. Sí. La sala de póker de The Star ofrece cash games a diario ==g:de 10:00 a 
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">¿Qué formato encaja con tu estilo?</div>
   </a>
 </div>
-`,
+`.trim(),
 };

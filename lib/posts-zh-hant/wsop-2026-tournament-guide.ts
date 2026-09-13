@@ -415,5 +415,5 @@ A. 滿 21 歲、有有效證件就可以，沒有國籍限制。但台港澳的�
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:6px;line-height:1.5">離台港澳最近的大型賽事</div>
   </a>
 </div>
-`,
+`.trim(),
 };

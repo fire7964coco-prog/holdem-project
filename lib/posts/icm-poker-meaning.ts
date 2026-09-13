@@ -262,5 +262,5 @@ ICM을 완벽하게 계산하는 것은 불가능하지만, 개념을 이해하�
 [홀덤 버블 전략 완전 가이드](/blog/holdem-bubble-strategy)에서 ICM 압박을 실전에서 어떻게 활용하는지 더 자세히 확인해보세요. 버블 전략과 ICM 개념을 함께 이해하면 토너먼트 후반 플레이가 완전히 달라집니다.
 
 아직 대회에 나가본 적이 없다면 순서가 반대입니다 — [홀덤 대회 참가 방법](/blog/holdem-tournament-how-to-enter)에서 등록 절차부터 보고, [대회 바이인·참가비](/blog/holdem-tournament-buy-in-cost)로 예산을 잡은 뒤 이 글로 돌아오면 ICM이 훨씬 구체적으로 읽힙니다.
-`,
+`.trim(),
 };

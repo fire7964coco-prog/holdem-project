@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Este es un glosario en lenguaje llano de los términos de póker que de verdad salen en una partida de Texas Hold'em, agrupados según cómo te los vas a encontrar: acciones de apuesta, posiciones, manos y mesa, tipos de jugador, dinero y situaciones de mesa. Empieza por los términos que más se confunden (pasar vs igualar, trío/set vs trips, cooler vs bad beat) y luego navega por categoría. Los términos con una guía más completa enlazan directamente a ella.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-11",
+  updated: "2026-09-13",
   masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "12 min",
@@ -206,7 +206,7 @@ Fichas, límites y los dos formatos. La gran bifurcación es [cash game vs torne
 | **Torneo** | Buy-in fijo, ciegas crecientes, juegas hasta bustear o ganar. |
 | **Freezeout** | Un torneo sin recompras — fuera es fuera. |
 | **GTD (garantizado)** | La bolsa de premios mínima prometida de un torneo, pagada aunque las entradas se queden cortas. |
-| **Mano a mano (hand-for-hand)** | Cerca de la burbuja de premios, todas las mesas juegan una mano cada vez para que nadie pueda hacer tiempo hasta entrar en premios. |
+| **Hand-for-hand (mano por mano)** | Cerca de la burbuja de premios, todas las mesas juegan una mano cada vez para que nadie pueda hacer tiempo hasta entrar en premios. |
 | **Bounty (knockout)** | Un torneo que paga un premio por cada jugador que elimines. |
 | **Sit & Go (SNG)** | Un torneo pequeño que arranca en cuanto se llena. |
 | **MTT** | Un torneo multimesa que fusiona mesas a medida que los jugadores bustean. |
@@ -242,7 +242,7 @@ Las palabras para lo que está pasando — y cómo comportarse mientras pasa.
 | **Cold deck** | Un reparto de mala suerte que produce un cooler (originalmente la baraja pre-ordenada de un tramposo). |
 | **"Don't tap the glass"** | No critiques a los jugadores flojos — espantarás a los que te dan de comer. |
 | **Run it twice** | Los jugadores all-in reparten la mesa restante dos veces, cada una por la mitad del bote, para reducir la varianza — por lo general solo en cash, y todos los implicados deben aceptar. |
-| **Mano a mano (heads-up)** | Jugar uno contra uno — ya sea una partida de dos jugadores o los dos últimos de un torneo. |
+| **Heads-up (mano a mano)** | Jugar uno contra uno — ya sea una partida de dos jugadores o los dos últimos de un torneo. |
 | **RFI (raise first in)** | La abreviatura de rangos y stats para el open-raise: con qué frecuencia abres el bote cuando nadie ha entrado antes que tú. |
 | **Splash the pot** | Tirar las fichas de cualquier manera al bote en vez de apilarlas delante de ti — mal visto, porque no se puede verificar la cantidad. |
 

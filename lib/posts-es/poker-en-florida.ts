@@ -188,7 +188,7 @@ Florida es de los estados más cómodos del país para jugar póker en vivo, y t
 Lo que no hay es póker online legal — y ahí la autoridad ya actuó contra los sitios que lo ofrecían.
 
 Si quieres comparar con otros estados, el [mapa de los 50 estados](/es/blog/poker-legal-estados-unidos) lo resume. Y si vas a debutar en una mesa, empieza por las [reglas del Texas Hold'em](/es/blog/texas-holdem-rules-for-beginners) y el [ranking de manos](/es/blog/holdem-hand-rankings).
-`,
+`.trim(),
 };
 
 export default POST;

@@ -9,9 +9,12 @@ export const POST: Post = {
   category: "rules",
   date: "2026-06-11",
   updated: "2026-09-11",
-  // 🔴 masterUpdated는 07-12 그대로 둔다 – 이 글은 「판 전체 재동기화」 보류분(드리프트 잔존)이다.
-  //    남은 항목이 있는 채로 올리면 드리프트 추적이 거짓말을 한다(session-handoff §착수 전 7).
-  masterUpdated: "2026-09-11",
+  // 🪶 「masterUpdated 07-12 동결」 지시는 해소됐다(queue Q5-a 실측 2026-09-13 · 값별 전건 추적).
+  //    ddf265db(07-12)=07-12 · 125c83f5(09-09)=07-12(동결 유지) · 01c30673(09-10)=09-09 ← 실제로 푼 커밋
+  //    · 522b57f8(09-11)=09-11 · queue Q5-a(09-13)=09-13.
+  //    Q5-a는 판정식 «편집 전 masterUpdated ≥ 편집 전 EN updated»를 만족해 올렸다(09-11 ≥ 09-11).
+  //    🔴 되돌리려면 EN 07-12~현재 델타를 먼저 실측하라 — 주석만 보고 되돌리지 마라.
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "14 Min.",
   emoji: "♠️",

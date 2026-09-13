@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "En Texas Hold'em siempre juegas la mejor mano de 5 cartas entre 7 (2 cartas propias + 5 cartas comunitarias) — usando las dos, una, o ninguna (jugar con la mesa). Repasa las 7 cartas en un orden fijo: color → escalera → parejas → carta alta.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🃏",
@@ -274,7 +274,7 @@ A. No. Secuencias como K-A-2-3-4 o Q-K-A-2-3 no son escaleras en Texas Hold'em �
 
 **Q. ¿Cómo sabes si un color es posible en la mesa?**
 
-A. Cuenta los palos en la mesa. Con 0–2 de un palo, no hay color para nadie. Con 3, un jugador necesita dos de ese palo en la mano; con 4, solo uno; con los 5, la propia mesa es color: lo mejora una carta de ese palo más alta que la más baja de la mesa — y en una mesa conectada, cualquier carta de ese palo que complete una escalera de color, incluso una más baja, gana a todo color.
+A. Cuenta los palos en la mesa. Con 0–2 de un palo, no hay color para nadie. Con 3, un jugador necesita dos de ese palo en la mano; con 4, solo uno; con los 5, la propia mesa es color.
 
 **Q. Si hay un color en la mesa, ¿quién gana?**
 

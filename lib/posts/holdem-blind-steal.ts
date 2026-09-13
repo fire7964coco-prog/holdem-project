@@ -251,7 +251,7 @@ A. 네. 앤티가 추가되면 매 판 테이블 가운데 쌓이는 데드머�
 포지션별 레인지(BTN 40~50%·CO 25~30%·SB 40~50%)와 사이즈(온라인 2~2.5bb·펍 3bb↑)를 기준으로 잡고, 당했을 때는 팟오즈로 넓게 디펜스하거나 3벳 리스틸로 응징하면 된다.
 
 스틸은 포지션 게임의 꽃이다. 토대가 되는 [포지션 전략](/blog/position-is-everything-in-holdem)과 [버튼 포지션](/blog/holdem-button-position)을 먼저 다지고, 전체 전략에서 스틸이 어디쯤 놓이는지는 [홀덤 전략 완전정복 로드맵](/blog/holdem-strategy)에서 순서로 확인하자.
-`,
+`.trim(),
 };
 
 export default POST;

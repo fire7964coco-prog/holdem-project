@@ -447,5 +447,5 @@ A. 日本は源泉徴収ではなく確定申告の仕組みです。一時的�
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:6px;line-height:1.5">日本から一番近い大型フェスティバル</div>
   </a>
 </div>
-`,
+`.trim(),
 };

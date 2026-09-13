@@ -333,7 +333,7 @@ A. 2026년에는 **3월 31일~4월 12일 프라하 힐튼**에서 열렸고 이�
 - [APPT 코리아 2026 참가 완전 가이드 — PokerStars 위성부터 현장까지](/blog/appt-korea-2026-guide)
 - [홀덤 대회 참가 방법 — 온라인 무료부터 WSOP까지](/blog/holdem-tournament-how-to-enter)
 - [홀덤 대회 바이인·참가비 — 초보는 얼마짜리부터?](/blog/holdem-tournament-buy-in-cost)
-`,
+`.trim(),
 };
 
 export default POST;

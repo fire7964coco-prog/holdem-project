@@ -213,7 +213,7 @@ California juega con reglas propias, y una vez que las entiendes es de los mejor
 **Tienes 78 salas y más de dos mil mesas** — la escena presencial más grande de Estados Unidos, con Commerce a la cabeza. **Los botes grandes salen más baratos aquí**, porque nadie te cobra un porcentaje: pagas una tarifa fija, ganes cien dólares o mil. Y **tienes un juego que casi no existe fuera de aquí** — 41 cartas, comodín, cinco iguales, y el color por encima del full.
 
 Si vas a ir por primera vez, dos lecturas te ahorran la peor parte de la noche: las [reglas del Texas Hold'em](/es/blog/texas-holdem-rules-for-beginners "thumb:/images/rules-texas-holdem.webp") —que es lo que vas a encontrar en la mayoría de las mesas— y el [ranking de manos](/es/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp"). Y si andas por otro estado, el [mapa de los 50](/es/blog/poker-legal-estados-unidos) te dice qué tienes cerca.
-`,
+`.trim(),
 };
 
 export default POST;

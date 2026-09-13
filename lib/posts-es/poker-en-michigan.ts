@@ -215,7 +215,7 @@ Michigan es, ahora mismo, uno de los mejores sitios del país para jugar póker 
 **La app decide contra quién juegas** — WSOP te junta con Nevada, FanDuel y DraftKings con Pensilvania. Elige por eso, no por el bono. **Hay seis salas con licencia**, así que no hay ninguna razón para arriesgarte en un sitio extranjero de los 45 que acaban de recibir orden de cese. Y **en vivo la ciudad se quedó corta**: en Detroit solo queda MGM Grand, y las buenas mesas están en FireKeepers y Gun Lake.
 
 Si vas a debutar en una mesa, repasa antes las [reglas del Texas Hold'em](/es/blog/texas-holdem-rules-for-beginners "thumb:/images/rules-texas-holdem.webp") y [cómo funcionan las apuestas](/es/blog/holdem-betting-actions).
-`,
+`.trim(),
 };
 
 export default POST;

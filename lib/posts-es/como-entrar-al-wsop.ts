@@ -220,7 +220,7 @@ El WSOP no es un club cerrado, y la barrera real casi nunca es la que la gente i
 **El registro tiene un paso presencial** que mucha gente no espera: dos cuentas gratuitas, pago por app si quieres, pero verificación en persona con tu identificación — y una segunda identificación si la primera no trae domicilio.
 
 Si vas a ir, lo que más te va a servir no es un consejo de estrategia sino dos lecturas: [cómo funcionan los torneos](/es/blog/holdem-tournament "thumb:/images/holdem-tournament-hero.webp") y la hoja de estructura del evento que elijas.
-`,
+`.trim(),
 };
 
 export default POST;

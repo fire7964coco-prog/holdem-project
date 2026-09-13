@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "O EPT Barcelona 2026 aconteceu de 16 a 29 de agosto no Casino Barcelona. O italiano Manuel Ferrari venceu o Main Event de €5.300 e levou €1.002.488 de uma premiação de €8.841.550 com 1.823 inscrições. Para 2027, o caminho online mais barato continua sendo o Power Path a partir de $0,50 → Gold Pass (Main de €5.300 + side event de €1.100 + 8 noites de hotel + €690 de despesas). Você precisa de conta PokerStars Live e passaporte válido, e vale reservar hotel cedo — agosto é alta temporada.",
   category: "tournament",
   date: "2026-06-17",
-  updated: "2026-09-12",
-  masterUpdated: "2026-09-12",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🃏",
@@ -212,6 +212,8 @@ Não quer grindar quatro etapas? A PokerStars também roda **satellites diretos*
 | ==**Total do seu bolso**== | ==g:**~€550–€1.000**== |
 
 </div>
+
+Uma ressalva sobre esse total: o Gold Pass já inclui €690 de despesas, e esta tabela ainda conta comida e dias extras a preço cheio por cima — então leia a faixa como um teto, não como uma expectativa.
 
 ==g:A rota do Gold Pass é de longe a mais custo-efetiva.== Mesmo que você gaste $100 grindando até a Etapa 4, um Gold Pass representa um retorno de 100× em valor.
 

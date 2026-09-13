@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Di Texas Hold'em, setiap pemain menerima 2 hole cards, ada 5 kartu bersama di tengah meja, dan tangan poker 5 kartu terbaik menang setelah empat ronde taruhan.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "14 menit",
   emoji: "♠️",
@@ -363,7 +363,7 @@ Kalau dua pemain punya tipe tangan yang sama, bandingkan kartu tertinggi yang re
 
 ## Kesalahan Umum Pemula
 
-Setelah bertahun-tahun menjadi tuan rumah home game, saya melihat lima kesalahan yang sama di hampir setiap meja pemula — dan sebagian besar muncul bukan dari strategi yang rumit, melainkan karena belum percaya penuh pada aturannya.
+Setelah bertahun-tahun menjadi tuan rumah home game, saya melihat lima kesalahan yang sama di hampir setiap meja pemula — dua yang pertama murni soal aturan yang belum dipercaya penuh, sedangkan tiga sisanya sudah memakan chip jauh sebelum ada yang pantas disebut strategi lanjutan.
 
 ### Kesalahan 1: Mengira Anda wajib memakai kedua hole cards
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "EPT Barcelona 2026 ran Aug 16–29 at Casino Barcelona. Italy's Manuel Ferrari won the €5,300 Main Event for €1,002,488, beating 1,823 entries for a share of the €8,841,550 prize pool. For 2027: the cheapest online route is the Power Path from $0.50 → Gold Pass (€5,300 ME seat + €1,100 side event + 8-night hotel + €690 expenses). You need a PokerStars Live account and a valid passport, and hotels sell out early — August is peak season in Barcelona.",
   category: "tournament",
   date: "2026-06-17",
-  updated: "2026-09-12",
+  updated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🃏",
@@ -212,6 +212,8 @@ Don't want to grind four steps? PokerStars also runs **direct satellites** for E
 | ==**Total out-of-pocket**== | ==g:**~€550–€1,000**== |
 
 </div>
+
+One caveat about that total: the pass already includes €690 of expenses, and this table still counts food and extra days at full price on top of it — so read the range as a ceiling, not an expectation.
 
 ==g:The Gold Pass route is by far the most cost-effective.== Even if you spend $100 grinding your way to Step 4, a Gold Pass represents a 100× return on value.
 

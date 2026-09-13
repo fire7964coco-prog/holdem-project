@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "An out is any card left in the deck that improves your hand to a likely winner. Count them, then convert: multiply outs by 4 on the flop or by 2 on the turn to get your rough % to hit. A flush draw is 9 outs ≈ 36% by the river.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-12",
+  updated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🎯",
@@ -92,7 +92,7 @@ Counting outs is only useful once you turn them into a percentage you can compar
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Outs | Turn only (1 card) | By the river (2 cards) | River odds |
+| Outs | Flop → turn (1 card) | By the river (2 cards) | River odds |
 |:---|:---:|:---:|:---:|
 | 2 | 4.3% | 8.4% | 11-to-1 |
 | 4 | 8.5% | 16.5% | 5-to-1 |
@@ -104,7 +104,7 @@ Counting outs is only useful once you turn them into a percentage you can compar
 
 </div>
 
-Two numbers matter for every draw. **"By the river"** counts both remaining cards and applies when you're all-in on the flop with nothing left to bet. **"Turn only"** counts just the next card — use this the moment there's more betting to come, because you're only guaranteed to see one card at a time. Beginners quote the fat "by the river" number while facing a turn bet, talk themselves into a call, and pay for it.
+Two numbers matter for every draw. **"By the river"** counts both remaining cards and applies when you're all-in on the flop with nothing left to bet. **"Flop → turn"** counts just the next card (9 ÷ 47 = 19.1%; from the turn to the river it becomes 9 ÷ 46 = 19.6%) — use this the moment there's more betting to come, because you're only guaranteed to see one card at a time. Beginners quote the fat "by the river" number while facing a turn bet, talk themselves into a call, and pay for it.
 
 Notice the 15-out monster: with two cards to come it's actually a **favorite** (54.1%), the rare draw you can happily get all-in with on the flop.
 

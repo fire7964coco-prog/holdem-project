@@ -250,5 +250,5 @@ A. 상황마다 다르지만, 일반적으로 체크레이즈 기회의 10~15% �
 | [포지션이 전부다](/blog/position-is-everything-in-holdem) | OOP에서 체크레이즈가 강한 이유 |
 | [포켓에이스 AA](/blog/pocket-aces-aa-strategy) | 드라이 보드 체크레이즈 대응 |
 | [블로그 로드맵](/blog) | 전체 50편 학습 지도 |
-`,
+`.trim(),
 };

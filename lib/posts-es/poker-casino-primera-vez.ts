@@ -254,7 +254,7 @@ El juego ya lo sabes. Lo que faltaba era el trámite, y son veinte minutos:
 **Identificación y efectivo**, unas 100 ciegas grandes por entrada y tres entradas de presupuesto. **Te anotas** en el mostrador o desde la app antes de salir de casa. **Compras fichas** en la caja o en la propia mesa, siempre poniendo el dinero sobre el paño. Y en la mesa, **siete palabras**: bet, call, fold, check, all-in, pot, complete.
 
 El resto se aprende mirando. Si vas a ir esta semana, repasa el [ranking de manos](/es/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp") y [cómo funcionan las rondas de apuestas](/es/blog/holdem-betting-actions) — con eso llegas sabiendo lo que hay que saber.
-`,
+`.trim(),
 };
 
 export default POST;

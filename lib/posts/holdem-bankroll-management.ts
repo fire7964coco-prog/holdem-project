@@ -309,7 +309,7 @@ A. 틸트를 통제하기 어려운 단계라면 강력히 권합니다. "오늘
 | [홀덤 토너먼트 참가비 완전 정리](/blog/holdem-tournament-buy-in-cost) | 토너 실지출과 리바이 비용 계산 |
 | [토너먼트 vs 캐시게임](/blog/holdem-tournament-vs-cash-game) | 두 포맷의 변동성과 자금 차이 |
 | [홀덤펍 첫 방문 가이드](/blog/holdem-pub-first-visit-guide) | 펍 레이크·리바이 구조 이해 |
-`,
+`.trim(),
 };
 
 export default POST;

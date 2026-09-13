@@ -26,33 +26,15 @@
 
 ---
 
-## 1. 세션 1 렌즈 발견 — EN-먼저 판정 후보 38건
+## 1. 세션 1 렌즈 발견 — EN-먼저 판정 후보
 
-전부 **EN 상속**이라 로케일에서 임의 소급하지 마라. ⑤·㉟는 3번 독립 재발견되어 우선순위가 올라 있다.
+전부 **EN 상속**이라 로케일에서 임의 소급하지 마라.
+🟢 **①~㉑은 전건 종결(queue Q5-a · 2026-09-13).** 21건 중 **9건은 손대기 전에 이미 고쳐져 있었다** — `65dc0d1d`(09-02) · `125c83f5`(09-09) · Q4-a `b311d693`(09-12)가 먼저 닫았는데 이 목록이 낡아 있었다. 나머지 12건을 EN 정정 + 8로케일 전파했다. **전건 판정표 = `docs/harden-queue-진행.md` §1-Q5-a.**
+🔴 **교훈**: 이 표의 «건수»는 착수 근거가 못 된다 — **원문을 먼저 열어라**(`absence-may-be-the-standard`).
+🔴 **㉟는 3번 독립 재발견돼 우선순위가 올라 있다**(Q5-b 몫).
 
 | # | 무엇 |
 |---|---|
-| ① | EN wpt NSW 서술의 11개월 공백(캡 «through Sep 2026»→«from Aug 2027» · 2026-10~2027-07 한도 미정 — 1차 출처 재확인) |
-| ② | EN apt «개막 전 마감» 거짓 — 실은 3자리다 🔴 **EN을 따라 되돌리지 마라** |
-| ③ | EN bad-beat overpair 행 «fills on the river» — 65%는 두 장 기준이라 «turn or river»가 정확 |
-| ④ | EN ept 비용표 — Gold Pass에 €690 포함인데 «Food & extra days €400–600» 만액 계상·총액 무상계 |
-| ⑤ | EN bad-beat 잭팟 분배 표 라벨 «Rest of the table»만 구표현 — **3번째 독립 재발견 · 우선순위 상향** |
-| ⑥ | PDF 자산 «Suited adds only ~2–3% equity» ↔ 본문 «~2 percentage points» |
-| ⑦ | es glossary «Mano a mano»가 hand-for-hand·heads-up 두 항목에 중복 |
-| ⑧ | EN bubble 핸드포핸드 스톨 불릿 — 정의문이 사실상 권고로 읽히고 H4H 개시 후 스톨 실익 0 한정 부재 |
-| ⑨ | content 종단 `.trim()` — EN 56편 전부인데 ja(ept·wpt·wsop)·es·de·zh 일부 미이식 |
-| ⑩ | EN blind-meaning «Two habits fix most of it» 뒤 불릿이 3개 |
-| ⑪ | EN beginners 실수 인트로 «none of them are about strategy»가 실수 3~5와 모순 |
-| ⑫ | EN beginners 2·4법칙에 «×4는 턴·리버 두 장을 다 본다는 전제» 캐비어트 부재 |
-| ⑬ | EN·pt showdown all-in FAQ에서 «side pot 경합 시 누가 먼저 여는가»가 `8ee6b047` 정정 때 소실 |
-| ⑭ | EN reading-the-board «How common» 표 헤더 — C(7,5)=21 조합 가짓수를 빈도로 라벨 |
-| ⑮ | EN flush-vs-straight 추상 표(스페이드vs하트) — pt·id는 보드 공유형이 정본 |
-| ⑯ | EN hand-rankings·tiebreak `:::tiebreak` 첫 행 «Royal Flush｜Always a tie» — 문자 그대로는 거짓 |
-| ⑰ | EN kicker two pair FAQ «Q-7-7» 3장 보드로 쇼다운 비교 + EN FAQ↔H2 축어중복 9건 |
-| ⑱ | EN outs 변환표 컬럼 «Turn only (1 card)» 라벨 오류 — **3렌즈 독립 수렴 + 기계 검산** |
-| ⑲ | EN card-counting steps «(you're all-in, or the river is free)» — 플랍 ×4 조건 불완전 |
-| ⑳ | EN drawing-odds 소품 2 — «one in six on a single street» · «exactly four flops» |
-| ㉑ | EN pot-odds·equity FAQ «35% > 25% → call» 예문에 «두 장 전제» 무언급 |
 | ㉒ | EN odds 클러스터 구조 판정(SEO 렌즈) — 태그 카니발 7쌍 · probability FAQ 5문 호스팅 |
 | ㉓ | EN 3bet polarized 표 «flat 중간 QQ/AQ/TT» + «Pakai saat: Anda di blinds» 조합이 블라인드 QQ 플랫으로 읽힘 |
 | ㉔ | EN 3bet fold-to-3bet 표 ~35% 행 «3-bet and call them value-heavy» — 서술 방향 불일치 |

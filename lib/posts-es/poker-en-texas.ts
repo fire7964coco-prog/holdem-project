@@ -213,7 +213,7 @@ Texas es el estado con más jugadores y ningún casino, y eso creó un modelo qu
 **La ley no dice "legal": da una defensa** con tres condiciones, y sobre eso se apoyan los clubes. **La victoria judicial de 2025 fue de un club concreto**, no un permiso general. Y **antes de cruzar a Oklahoma, recuerda que WinStar tiene el póker cerrado** — el que sí abre es Choctaw en Durant.
 
 Si quieres ver cómo está el resto del país, el [mapa de los 50 estados](/es/blog/poker-legal-estados-unidos) lo resume. Y si vas a debutar en una mesa, empieza por las [reglas del Texas Hold'em](/es/blog/texas-holdem-rules-for-beginners) — el juego que lleva el nombre de este estado.
-`,
+`.trim(),
 };
 
 export default POST;

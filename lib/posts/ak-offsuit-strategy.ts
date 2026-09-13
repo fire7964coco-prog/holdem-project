@@ -214,5 +214,5 @@ A. 자료마다 다릅니다. 순수 **헤즈업 승률**만으로 줄을 세우
 - [3벳이란? 밸류·블러프 완전 정리](/blog/holdem-3bet-strategy)
 - [홀덤 스타팅 핸드 레인지 — 포지션별 기준](/blog/holdem-starting-hand-range)
 - [프리플랍 폴드 기준 — 언제 버려야 할까](/blog/when-to-fold-preflop-holdem)
-`,
+`.trim(),
 };

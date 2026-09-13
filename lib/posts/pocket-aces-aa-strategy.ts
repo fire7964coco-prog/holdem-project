@@ -269,5 +269,5 @@ A. 단기적으로는 충분히 가능한 일입니다. 헤즈업 기준 85% 승
 AA가 익숙해졌다면 다음은 같은 프리미엄 핸드 두 편입니다. [포켓킹 KK 플레이법](/blog/pocket-kings-kk-strategy)은 에이스 보드라는 AA에 없는 약점을 다루고, [AK 오프수트 전략](/blog/ak-offsuit-strategy)은 아예 성격이 다른 — 플랍에서 맞아야 힘이 나오는 — 패의 운영법입니다. 셋을 같이 읽으면 프리플랍 판단이 확실히 빨라져요. 169가지 전체 기준은 [홀덤 스타팅 핸드 완전 가이드](/blog/holdem-starting-hand-range)에 있습니다.
 
 블러핑 타이밍이 궁금하다면 [홀덤 블러핑 전략 완전 가이드](/blog/bluffing-strategy-when-and-how)를, 3벳 이후 어떻게 플레이해야 하는지 궁금하다면 [홀덤 3벳 전략 완전 가이드](/blog/holdem-3bet-strategy)를, C벳을 유도해 팟을 키우는 [홀덤 체크레이즈 전략](/blog/holdem-check-raise)과 함께 읽으시길 추천합니다.
-`,
+`.trim(),
 };

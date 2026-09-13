@@ -253,5 +253,5 @@ A. 상대가 C벳에 레이즈하거나 콜 후 턴에서 나를 베팅으로 �
 실전에서 바로 적용할 순서를 제안한다. ①프리플랍에서 내가 레이즈했는지 확인 → ②헤즈업인지 멀티웨이인지 판단 → ③드라이/웻 보드 구분 → ④IP/OOP 확인 → ⑤이 네 가지 조건을 종합해 C벳 여부와 사이즈 결정.
 
 [스타팅 핸드 레인지 완전 가이드](/blog/holdem-starting-hand-range)를 함께 보면 어떤 핸드로 프리플랍 레이즈를 할지, 그리고 그 핸드로 C벳을 할지 기준이 명확해진다. C벳을 받는 OOP 입장이라면 [홀덤 체크레이즈 전략](/blog/holdem-check-raise)을 세트로 읽어두세요. 스몰블라인드에서 C벳을 남발해 손해 본다면 [스몰블라인드 역할](/blog/holdem-small-blind-role)부터 다시 잡는 게 빠릅니다. 이 글이 속한 전체 흐름은 [홀덤 전략 완전정복 로드맵](/blog/holdem-strategy)에서 프리플랍부터 자금 관리까지 순서대로 볼 수 있다. 배팅 클러스터: [밸류벳 사이즈](/blog/holdem-value-bet-sizing) · [3벳](/blog/holdem-3bet-strategy) · [블러핑](/blog/bluffing-strategy-when-and-how) · [오버벳](/blog/holdem-overbet-strategy) · [로드맵](/blog). [프리플랍 폴드 기준](/blog/when-to-fold-preflop-holdem)에서는 레이즈 범위 자체를 좁히는 법을 다루고 있어 C벳 전략과 자연스럽게 연결된다. 실수를 줄이고 싶다면 [홀덤 초보 실수 10가지](/blog/holdem-beginner-mistakes-10)도 꼭 확인해두자.
-`,
+`.trim(),
 };

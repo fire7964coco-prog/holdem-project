@@ -316,7 +316,7 @@ A. ==r:현장 등록이 거절될 수 있습니다.== KYC 인증 단계에서 �
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">바이인·블라인드·ICM 기초부터</div>
   </a>
 </div>
-`,
+`.trim(),
 };
 
 

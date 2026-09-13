@@ -230,7 +230,7 @@ Nada de lo que has leído aquí sale de una lista de afiliados: todo está en do
 Tres ideas para quedarse: **la app importa más que el estado**, porque las mesas las junta la marca y no la frontera; **no necesitas ser ciudadano ni tener Seguro Social**, aunque los formularios no lo digan; y **verifica tu cuenta el primer día**, porque el plazo existe y las ganancias no verificadas se pierden.
 
 Si todavía estás decidiendo dónde puedes jugar, empieza por el [mapa de los 50 estados](/es/blog/poker-legal-estados-unidos). Si lo que quieres es llegar preparado a la mesa, las [reglas del Texas Hold'em](/es/blog/texas-holdem-rules-for-beginners) y la [guía de torneos](/es/blog/holdem-tournament) son el siguiente paso. Y si te preguntas por qué ganando parece que no subes, mira cuánto se lleva [la comisión de la sala](/es/blog/holdem-rake).
-`,
+`.trim(),
 };
 
 export default POST;

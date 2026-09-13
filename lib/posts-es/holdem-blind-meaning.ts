@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Las ciegas son apuestas obligatorias que se ponen antes de repartir las cartas. La ciega pequeña se sienta a la izquierda del botón y la ciega grande a su izquierda; la ciega grande — normalmente el doble de la pequeña — es la unidad de apuesta de la mesa.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-09-12",
-  masterUpdated: "2026-09-12",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "💰",
@@ -139,7 +139,7 @@ Al sentarte en una mesa de cash en vivo normalmente no juegas gratis: en la mayo
 
 ![Pila de fichas cayendo hacia el bote en una mesa de póker — un robo de ciegas desde el botón](/images/holdem-blind-steal.webp)
 
-Las ciegas son el sitio donde veo a los principiantes sangrar fichas en silencio — no en un bote enorme, sino un poquito cada órbita. Dos hábitos arreglan casi todo:
+Las ciegas son el sitio donde veo a los principiantes sangrar fichas en silencio — no en un bote enorme, sino un poquito cada órbita. Dos hábitos en las ciegas arreglan casi todo — y un tercer movimiento, desde posición tardía, recupera parte de lo que se va:
 
 - **Ciega pequeña: sin complicarte.** Penúltima preflop pero **primera en hablar** tras el flop; el enfoque limpio para empezar es **subir o tirar**, no pagar. Entrar de limp y que te ataquen fuera de posición es una fuga constante de fichas — la ciega pequeña es el asiento desde el que más veo perder a los novatos a lo largo de una sesión entera.
 - **Ciega grande: defiende con las odds.** Ya has puesto una apuesta completa, así que puedes pagar subidas de forma rentable con más manos que desde cualquier otro asiento. Ante un open a 2.5 BB (con la ciega pequeña retirándose), pagas 1.5 BB por un bote de 4 BB — unas 2.7 a 1, es decir, con aproximadamente un 27% de equity el call ya sale a cuenta. Esa cuenta son las [pot odds](/es/blog/holdem-pot-odds), y por eso existe la "defensa de la ciega grande".

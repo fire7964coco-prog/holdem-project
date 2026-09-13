@@ -235,7 +235,7 @@ Oklahoma es, para mucha gente del norte de Texas, el sitio donde de verdad se ju
 **La sala del WinStar está cerrada** y su propia web no da fecha, así que hoy la más cercana a Dallas es **Choctaw Durant** (más de 30 mesas, desde los 18 años). **La edad cambia según el casino** — 18 en el sur, 21 en Tulsa —, y eso decide a dónde puedes ir si tienes menos de 21. Y **si vives en Texas, revisa lo de la declaración en Oklahoma** antes de que llegue la temporada de impuestos.
 
 Antes de manejar, llama a la sala y confirma que hay mesa ese día. Si es tu primera vez en una mesa de verdad, repasa las [reglas del Texas Hold'em](/es/blog/texas-holdem-rules-for-beginners "thumb:/images/rules-texas-holdem.webp") y [cómo funcionan las apuestas](/es/blog/holdem-betting-actions) — llegar sabiendo eso vale más que cualquier consejo de estrategia.
-`,
+`.trim(),
 };
 
 export default POST;

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Odds implícitas são as fichas extras que você espera ganhar nas próximas streets quando o seu projeto acerta. Elas deixam você pagar com lucro um projeto que só as pot odds mandariam foldar — mas só se os stacks forem profundos e o adversário realmente for pagar você.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-10",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-13",
+  masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "💰",
@@ -84,7 +84,7 @@ Vamos rodar os números para a fórmula deixar de ser abstrata.
 
 Você tem ==b:A♥ K♥== num board ==Q♥ 7♥ 2♣ 3♠== — o nut flush draw, 9 outs, com uma carta por vir. O pote é $100 e o adversário aposta $50 no turn, então há ==$150 no meio== e são $50 para você.
 
-- **Pot odds primeiro:** você está recebendo 150 para 50, ou 3 para 1, então precisa de **25%** de equity. Seu flush acerta no river só ==r:19,6%== das vezes (9 outs ÷ 46 cartas não vistas). 19,6% é menos que 25%, então o preço imediato manda ==r:foldar.==
+- **Pot odds primeiro:** você está recebendo 150 para 50, ou 3 para 1, então precisa de **25%** de equity. Seu flush acerta no river só ==r:19,6%== das vezes (9 outs ÷ 46 cartas não vistas — contamos de propósito só os outs de flush; emparelhar o ás ou o rei não garante que você esteja na frente, então as overcards não são outs limpos). 19,6% é menos que 25%, então o preço imediato manda ==r:foldar.==
 - **Agora as odds implícitas:** x = (call ÷ hit%) − (pote + call) = (50 ÷ 0,196) − (150 + 50) = 255 − 200 = ==g:cerca de $55.== Esse é o extra que você precisa ganhar no river quando o seu flush entra.
 
 Então a pergunta não é "devo pagar $50?" É "**quando um naipe cai, consigo ganhar pelo menos $55 a mais?**" Contra um adversário com stack profundo que vai pagar uma aposta no river com top pair ou um set, isso é fácil — você paga. Contra alguém com $40 atrás, ou numa mesa em que uma quarta carta do naipe mata a ação dele, você não consegue — então você folda.

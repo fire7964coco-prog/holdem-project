@@ -294,7 +294,7 @@ Drei Dinge, die du mitnehmen solltest:
 Wenn du zum ersten Mal ein Live-Turnier spielst, lies vorher nach, [wie ein Pokerturnier abläuft](/de/blog/holdem-tournament "thumb:/images/holdem-tournament-hero.webp") – Blind-Level, Registrierung und Payouts funktionieren anders, als es online wirkt. Und wenn die Blinds steigen, entscheidet vor allem, welche [Starthände](/de/blog/holdem-starting-hands-chart) du in welcher Position noch spielst.
 
 :::note[**Quellen (abgerufen am 15.08.2026):** spielbanken-bayern.de (Turnierdaten, SBPM-Reglement, Anfahrt) · dbregiobus-bayern.de (Casino-Blitz) · gesetze-bayern.de (Spielbankgesetz, Fassung ab 01.01.2025) · munichpoker.de · isar-poker.de · pokerbundesliga.de. Alle Angaben ohne Gewähr – Zeiten, Preise und Formate ändern sich.]:::
-`,
+`.trim(),
 };
 
 export default POST;

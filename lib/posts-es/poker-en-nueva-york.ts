@@ -179,7 +179,7 @@ Nueva York es un caso raro: una de las ciudades más grandes del mundo, con casi
 Y la parte que conviene no olvidar: **la ley de aquí protege al jugador**. Sentarse a jugar no te convierte en delincuente; cobrar por organizar la partida, sí.
 
 Si quieres ver cómo está tu estado o el de tu familia, el [mapa de los 50 estados](/es/blog/poker-legal-estados-unidos) lo resume. Y si vas a debutar en una sala, empieza por las [reglas del Texas Hold'em](/es/blog/texas-holdem-rules-for-beginners) y la [guía de torneos](/es/blog/holdem-tournament).
-`,
+`.trim(),
 };
 
 export default POST;

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In Texas Hold'em you always play the best 5-card hand from 7 (2 hole cards + 5 community cards) — using both hole cards, one, or none at all (playing the board). Scan all 7 cards in a fixed order: flush → straight → paired ranks → high card.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-09-09",
+  updated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🃏",
@@ -265,7 +265,7 @@ A. No. Sequences like K-A-2-3-4 or Q-K-A-2-3 are not straights in Texas Hold'em 
 
 **Q. How do you know if a flush is possible on the board?**
 
-A. Count suits on the board. With 0–2 of one suit, no flush exists for anyone. With 3, a player needs two of that suit in hand; with 4, just one; with all 5, the board itself is a flush: a card of that suit higher than the board's lowest one improves it — and on a connected board, any card of that suit that completes a straight flush, even a lower one, beats every flush.
+A. Count suits on the board. With 0–2 of one suit, no flush exists for anyone. With 3, a player needs two of that suit in hand; with 4, just one; with all 5, the board itself is a flush.
 
 **Q. If there is a flush on the board, who wins?**
 

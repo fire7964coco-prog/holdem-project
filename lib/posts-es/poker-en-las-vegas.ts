@@ -297,7 +297,7 @@ Las Vegas es la ciudad con más póker del mundo, y aun así la mayoría de guí
 **21 años, sin excepciones** — y ni siquiera puedes quedarte parado junto a la mesa si eres menor. **Las mesas baratas están fuera del Strip**: South Point publica $1–$2 sin límite y torneos diarios desde $120, mientras que las salas del Strip no publican los límites de sus mesas bajas. Y **si no eres residente fiscal, te retienen el 30%** de los premios de póker; de todos los países hispanohablantes, solo España está exenta por convenio.
 
 Si es tu primera vez en una mesa de verdad, empieza por un torneo diario de $120: sabes exactamente cuánto arriesgas y no te la juegas en una sola mano. Y antes de ir, repasa las [reglas del Texas Hold'em](/es/blog/texas-holdem-rules-for-beginners) y el [ranking de manos](/es/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp") — llegar sabiendo eso vale más que cualquier consejo de estrategia.
-`,
+`.trim(),
 };
 
 export default POST;
