@@ -35,25 +35,10 @@
 
 | # | 무엇 |
 |---|---|
-| ㉒ | EN odds 클러스터 구조 판정(SEO 렌즈) — 태그 카니발 7쌍 · probability FAQ 5문 호스팅 |
-| ㉓ | EN 3bet polarized 표 «flat 중간 QQ/AQ/TT» + «Pakai saat: Anda di blinds» 조합이 블라인드 QQ 플랫으로 읽힘 |
-| ㉔ | EN 3bet fold-to-3bet 표 ~35% 행 «3-bet and call them value-heavy» — 서술 방향 불일치 |
-| ㉕ | EN position-play SB 행 «~40% (raise-or-fold) … never flat»이 국면 한정어 없이 무조건형 |
-| ㉖ | EN limping `==g:==` 하이라이트가 경고문에 초록 — g=권장/r=경고 관례 위반 |
+| ㉒ | 🟢 **대부분 종결(queue Q5-b · 09-13)** — 남은 것은 **c항뿐**: 직답 리드 4편(별도 회차 재료) |
 | ㉗ | ✅ **종결(queue Q1 `16e8a9ac` · 09-11)** — 콤보 실측 58/112/172 · 13% 유지 · 목록 «지위» 문단 신설 EN+7로케일 · 판정표 `harden-queue-진행` §1-Q1 |
-| ㉘ | EN when-to-fold 표 마무리 문단이 `</div>` 안쪽 |
-| ㉙ | 🟢 **2장분 종결(queue Q2-c · 09-12)** — `holdem-button-dealer-board`(3편 → glossary 1편) · `holdem-pub-players-table`(2편 → fish 1편). **잔여만 남는다**: `holdem-starting-hands-premium` · `holdem-starting-hands-weak-ace-trap`(둘 다 `starting-hands-chart` ↔ `pot-odds`/`fish` 쌍) + limping↔strategy readnext 썸네일 상이 |
-| ㉚ | 소품: position-play OOP 60–85% 하한 산술 긴장 · positions «one middle seat»↔LJ · cbet OOP 40–50 ↔ position-play 30–45 |
-| ㉛ | EN rake NL50 «온라인» 예시가 cap $4인데 같은 글이 온라인 캡을 $1–$3로 두 번 선언 — 자기모순 |
-| ㉟ | EN bad-beat 잭팟 절이 자기 기준과 긴장(잭팟 자격 핸드 다수는 suckout 없는 cooler) |
-| ㊱ | EN bubble «pay the bubble» FAQ gloss가 헐거움 |
-| ㊲ | EN bubble H4H Stalling «It works precisely because tanking is free» — 원리상 불성립 ⚠ `1392148d` 검수장 판정 산물이라 **재론 절차 필요** |
-| ㊳ | EN tvc big-blinds FAQ 무조건 맥스 바이인 권고 — 초보 헤지 부재 |
-| ㊴ | EN wpt WC 좌석 — 공식 «nine WPT World Championship tickets» 9장 분포 부재 + 통화 미표기 |
-| ㊵ | EN bubble 동시 탈락 분기의 TDA 귀속 오류 — TDA RP-8-A 축어는 테이블 무관 «share» |
-| ㊶ | EN apt 소품: 일정표 시간순 · 환율 3계열 공존 · Country Exclusives «$1.684» 이탈 · $183.570 절사 · 예산표 행합-총계 규격 상이 |
-| ㊷ | EN tournament 소품: 안테 시점 · 홈칩 FAQ «That's why» 인과 · 타임라인 Level 1만 60분 + 스톨 페널티 조항 번호 부재 |
-| ㊸ | pt RISKY 40 회차(`e3f5a3a2`)가 pt만 고친 **EN 동형 30건** — 목록·문안 = `docs/reply-to-review-2026-09-04-m089.md` §2·§4 |
+| ㉙ | 🟢 **거의 종결** — 남은 것은 **이미지 1장 제작**뿐(`holdem-starting-hands-premium`·`weak-ace-trap` 쌍 중 1장) |
+| ㊲ | ⛔ **대상 부재(queue Q5-b 실측 · 09-13)** — 「It works precisely because tanking is free」류 문구가 **전 로케일 0건**이다. 🔴 «재론 절차 필요»가 아니라 **고칠 것이 없다** — 다시 파지 마라 |
 | ㊹ | 🆕(queue Q1-11 · 09-11) EN `holdem-starting-hands-chart:126` 「77·88이 테이블이 셀 때 **가장 먼저** 떨어지는 페어」 — 실전 순서 반대(셋마이닝 플랜 있는 77·88보다 지배당하는 오프수트·얇은 수딧 브로드웨이가 먼저 나간다). 8로케일 동형 · m089 §2-C #17·#24·#25(77/88/99 배치)와 같은 자리 |
 | ㊺ | 🆕(queue Q1-11) `lib/render-markdown.ts:213,215` PDF 카드 크롬 영어 하드코딩 — `locale` 인자가 있는데 안 쓴다. 전 로케일 노출(코드 1곳) |
 
