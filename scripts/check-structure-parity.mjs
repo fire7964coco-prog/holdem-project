@@ -12,7 +12,8 @@
  *   `masterUpdated`는 09-09였다. 「날짜 진실」이 「내용 진실」을 가린 실물이다.
  *
  * 무엇을 세나 (전부 «EN보다 적은 쪽»만 본다 — 많은 것은 현지 추가라 규율상 허용된다)
- *   link   내부링크 대상 slug **집합** (🔴 메모리 「번역 내부링크 = EN과 구조 동일」: 대상·개수까지 1:1)
+ *   link   내부링크 대상 slug **집합** — 🔴 **마크다운 본문 링크만**(카드·readnext는 로케일이 큐레이션한다 · measure 주석)
+ *   linkn  같은 대상에 거는 링크 **개수** — 🔴 세 형식 전부(마크다운 + 생 `<a href>` + `:::readnext` 카드 · 2026-09-13 신설)
  *   h2     ## 절 개수
  *   h3     ### 개수
  *   row    표 행 개수
@@ -53,13 +54,50 @@ const contentOf = (src) => { const m = src.match(/content:\s*`([^`]*)`/); return
 /** 구조 요소를 센다 */
 export function measure(content) {
   const links = new Set();
+  /**
+   * 🔴 **집합만으로는 «같은 대상에 거는 링크가 한 개 줄어든 것»을 못 본다** (2026-09-13 · queue Q7-b · Q5b-5).
+   *    Q5-b 실증: EN `holdem-probability` FAQ에 `/blog/holdem-pot-odds` 링크를 신설하고 7로케일에 전파했는데
+   *    **es만 빠졌다.** 그런데 es 본문에는 이미 같은 slug 링크가 있어서 **집합이 안 변했다** →
+   *    네 렌즈가 전부 잡은 자리를 게이트는 **0건**으로 통과시켰다.
+   *    그래서 대상 slug별 «개수»도 같이 센다(`linkCounts`). 집합 결손은 `link`, 개수 결손은 `linkn`이다.
+   *    🪶 커밋된 코퍼스엔 그 실례가 남아 있지 않다(같은 회차가 고쳤다) — 셀프테스트로 재현한다.
+   */
+  const linkCounts = new Map();
   // 🔴 썸네일 링크(제목 인자가 붙은 링크)도 내부링크다 — 허용하지 않으면
   //    ① 로케일이 «가지고 있는데 없다»고 잡히고 ② EN 자신의 썸네일 링크가 기준선에서 통째로 빠진다.
   //    2026-09-10 실측: zh-hant hand-rankings tiebreak 링크가 오탐 · EN kicker·probability는 미검사였다.
-  for (const m of content.matchAll(/\]\((?:https?:\/\/(?:www\.)?holdemmaster\.com)?\/(?:[a-z-]{2,7}\/)?blog\/([a-z0-9-]+)(?:\s+"[^"]*")?\)/g)) links.add(m[1]);
+  /**
+   * 🔴 **내부링크는 세 형식이다 — 마크다운만 세면 3분의 1을 못 본다** (2026-09-13 · queue Q7-b · 렌즈 2 B-1).
+   *    실측(EN): 마크다운 `](…)` **481** · 생 `<a href>` **162** · `:::readnext` 카드 줄 **113**.
+   *    즉 EN 내부링크의 **약 36%**가 `link`·`linkn` 양쪽에 보이지 않았다 — 메모리 규율
+   *    「번역 내부링크 = 대상·개수·Related/readnext 카드·thumb까지 EN 1:1」이 부르는 자리인데 계수 대상이 아니었다.
+   *    🔴 세 패턴을 같은 `linkCounts`에 합산한다. 형식을 바꿔 쓴 로케일이 «유령 결손»으로 뜨지 않게 하려면
+   *    **형식별로 나눠 세지 마라** — 합계가 판정 단위다.
+   */
+  const LINK_PATTERNS = [
+    /\]\((?:https?:\/\/(?:www\.)?holdemmaster\.com)?\/(?:[a-z-]{2,7}\/)?blog\/([a-z0-9-]+)(?:\s+"[^"]*")?\)/g,
+    /<a\s[^>]*href="(?:https?:\/\/(?:www\.)?holdemmaster\.com)?\/(?:[a-z-]{2,7}\/)?blog\/([a-z0-9-]+)"/g,
+    /^\/(?:[a-z-]{2,7}\/)?blog\/([a-z0-9-]+)\s*\|/gm,
+  ];
+  /**
+   * 🔴 **집합(`link`)은 마크다운 본문 링크만, 개수(`linkn`)는 세 형식 전부.** 첫 실행 판정이 그렇게 갈랐다.
+   *    세 형식을 집합에도 넣자 🔴 핵심 결손이 **0 → 12편(전부 zh-hant)**으로 튀었는데, 원문을 열어 보니
+   *    **«관련 글 카드»는 로케일이 스스로 고른다**: `holdem-cooler` 카드 4장이 EN = fish·tiebreak·straddle·pot-odds ↔
+   *    zh-hant = glossary·tiebreak·hand-rankings·probability로 **개수는 같고 대상만 다르다.**
+   *    카드·readnext를 «대상 1:1»로 요구하면 그 큐레이션을 전부 결함으로 찍는다 → 집합에서는 뺀다.
+   *    🔴 그래도 **개수 축에는 넣는다** — 렌즈 2 실측대로 EN 링크의 36%가 그 두 형식이고,
+   *    「카드 블록이 통째로 빠진」 진짜 결함(`zh-hant/texas-holdem-rules-for-beginners` 6장 → 0장)은 개수로 드러난다.
+   */
+  for (const [i, re] of LINK_PATTERNS.entries()) {
+    for (const m of content.matchAll(re)) {
+      if (i === 0) links.add(m[1]);
+      linkCounts.set(m[1], (linkCounts.get(m[1]) ?? 0) + 1);
+    }
+  }
   const count = (re) => (content.match(re) ?? []).length;
   return {
     link: links,
+    linkCounts,
     h2: count(/^##\s+/gm),
     h3: count(/^###\s+/gm),
     row: count(/^\s*\|.*\|\s*$/gm),
@@ -194,6 +232,26 @@ export function deficit(en, loc) {
   for (const k of NUMERIC) { const d = en[k] - loc[k]; if (d > 0) out[k] = d; }
   const missing = [...en.link].filter((s) => !loc.link.has(s));
   if (missing.length) out.link = missing;
+  /**
+   * 🔴 링크 «개수» 결손 — 로케일이 그 대상을 **가지고는 있는데 EN보다 적게** 거는 자리.
+   *    대상이 통째로 없는 것(`link`)과 겹쳐 두 번 보고하지 않는다 → `loc ≥ 1`인 slug만 본다.
+   *    🪶 EN보다 «많이» 거는 것은 결손이 아니다(현지 추가 허용 — 다른 종류와 같은 규칙).
+   */
+  /**
+   * 🔴 **`m === 0`도 본다 — 단 «집합 축이 이미 보고한 자리»만 뺀다** (2026-09-13 2차 교열 C).
+   *    처음엔 `m >= 1`로 막았는데, 그러면 **카드·readnext에만 있는 대상**(집합 축에서 제외된 부류)이
+   *    로케일에서 통째로 빠졌을 때 **두 축 모두 침묵한다.** 실례 = `zh-hant/texas-holdem-rules-for-beginners`의
+   *    `holdem-showdown-rules`·`holdem-all-in-rules`(EN 카드 6장 중 2장은 본문 마크다운에 없다) —
+   *    「카드 블록 통째 부재」라는 이 게이트의 대표 실증이 정작 그 두 자리를 못 내고 있었다.
+   */
+  const fewer = [];
+  for (const [slug, n] of en.linkCounts ?? []) {
+    const m = loc.linkCounts?.get(slug) ?? 0;
+    if (n <= m) continue;
+    if (m === 0 && en.link.has(slug)) continue; // 집합 축(`link`)이 이미 보고한다 — 두 번 세지 않는다
+    fewer.push(`${slug} ${n}→${m}`);
+  }
+  if (fewer.length) out.linkn = fewer;
   return out;
 }
 
@@ -232,6 +290,26 @@ function selftest() {
   const owned2 = new Set(['holdem-3bet']);
   cases.push(['보유한 글로의 링크 결손은 남는다', ['holdem-3bet'].filter((x) => owned2.has(x)).length === 1]);
   cases.push(['🔴 보유하지 않은 글로의 링크는 결손이 아니다', ['holdem-icm'].filter((x) => owned2.has(x)).length === 0]);
+  // 🔴 linkn — Q5-b가 실증한 «집합은 그대로인데 개수가 줄어든» 자리 (queue Q7-b)
+  const enTwice = measure('본문 [a](/blog/holdem-pot-odds) 그리고 FAQ [b](/blog/holdem-pot-odds)');
+  const locOnce = measure('본문 [a](/es/blog/holdem-pot-odds)');
+  const dn = deficit(enTwice, locOnce);
+  cases.push(['🔴 같은 대상 링크가 2→1로 줄면 linkn이 잡는다', Array.isArray(dn.linkn) && dn.linkn[0] === 'holdem-pot-odds 2→1']);
+  cases.push(['그때 link(집합) 쪽은 침묵한다(두 번 보고하지 않는다)', !dn.link]);
+  const locNone = measure('링크가 하나도 없는 본문');
+  const dn0 = deficit(enTwice, locNone);
+  cases.push(['대상이 통째로 없으면 link만 잡고 linkn은 안 잡는다', !!dn0.link && !dn0.linkn]);
+  const locMore = measure('[a](/ja/blog/holdem-pot-odds) [b](/ja/blog/holdem-pot-odds) [c](/ja/blog/holdem-pot-odds)');
+  cases.push(['EN보다 많이 걸면 결손이 아니다', !deficit(enTwice, locMore).linkn]);
+  // 🔴 세 형식 전부 센다(렌즈 2 B-1) — 마크다운만 세면 EN 내부링크의 36%가 안 보인다
+  const rawA = measure('<a href="/en/blog/holdem-icm" style="x">ICM</a>');
+  cases.push(['생 <a href>는 «개수»에는 들고 «집합»에는 안 든다(카드는 로케일이 고른다)', rawA.linkCounts.get('holdem-icm') === 1 && !rawA.link.has('holdem-icm')]);
+  const card = measure(':::readnext[Keep reading]\n/en/blog/holdem-outs | How to Count Outs | /images/holdem-outs-hero.webp\n:::');
+  cases.push([':::readnext 카드 줄도 «개수»에 든다', card.linkCounts.get('holdem-outs') === 1 && !card.link.has('holdem-outs')]);
+  const mixed = measure('[a](/en/blog/holdem-icm) <a href="/en/blog/holdem-icm">b</a>');
+  cases.push(['형식이 섞여도 합산한다(형식별로 나눠 세지 않는다)', mixed.linkCounts.get('holdem-icm') === 2]);
+  const ext2 = measure('<a href="https://example.com/blog/holdem-icm">x</a>');
+  cases.push(['외부 도메인 <a>는 내부링크가 아니다', !ext2.link.has('holdem-icm')]);
   let pass = 0;
   for (const [name, ok] of cases) { if (ok) pass++; console.log(`${ok ? '✅' : '❌'} ${name}`); }
   console.log(`selftest ${pass}/${cases.length}`);
@@ -261,7 +339,7 @@ function main() {
   const stray = [];
   let unbuildable = 0;
   const unbuildableLoc = new Map();
-  const coreLines = [], tailByLoc = new Map();
+  const coreLines = [], tailByLoc = new Map(), linknLines = [];
   for (const loc of locales) {
     const isCore = CORE_LOCALES.includes(loc);
     if (!isCore && !has('tail') && !onlyLoc) { /* 계수는 하되 목록은 접는다 */ }
@@ -291,21 +369,37 @@ function main() {
       // 예외 등재분은 «지적»에서 뺀다(대신 마지막에 건수를 노출한다 — 조용히 사라지면 안 된다)
       for (const k of Object.keys(d)) if (allowHit(loc, slug, k)) { delete d[k]; allowed++; }
       if (measure(c).faqSections > 1) stray.push(`  🔴 ${loc}/${slug} — FAQ 문항이 FAQ 절 밖에도 있다(이식 사고 유형)`);
+      /**
+       * 🔴 `linkn`은 **자리마다 판정이 갈리는 신호**라 «핵심 = 🔴» 규칙에서 뺀다 (2026-09-13 Q7-b).
+       *    🔴 **첫 주사(마크다운만)의 「19편 전부 zh-hant」는 재현율이 낮은 상태의 그림이었다** —
+       *    세 형식을 다 세고 `m === 0`까지 보게 하자 **94편 · 160자리 · 15로케일**이 됐다
+       *    (zh-hant 40 · 꼬리 로케일 각 2~4 · ar 4 …). «zh-hant 단독 문제»로 읽으면 오진이다(2차 교열 B·C).
+       *    표본 원문 판정 = 세 기전이 섞여 있다 — ⓐ 진짜 결손(`drawing-odds` 인트로 썸네일 링크) ·
+       *    ⓑ **재저작이라 자리 자체가 없어진 것**(`when-to-fold` 마무리가 EN 산문 → zh-hant 5항 「濃縮版」) ·
+       *    ⓒ **구조 블록 부재**(`zh-hant/texas-holdem-rules-for-beginners`의 관련 글 카드 6장 → 0장).
+       *    → 자리별 원문 판정 전에는 🔴을 쓰지 않는다. 대신 **접지 않고 매 실행 전건 출력**한다.
+       */
+      if (d.linkn) { linknLines.push(`  🟠 ${loc}/${slug} — ${d.linkn.length}자리: ${d.linkn.join(' · ')}`); delete d.linkn; }
       const keys = Object.keys(d);
       if (!keys.length) continue;
-      const parts = keys.map((k) => (k === 'link' ? `link ${d.link.length}개(${d.link.slice(0, 3).join(',')}${d.link.length > 3 ? '…' : ''})` : `${k} −${d[k]}`));
+      const parts = keys.map((k) => (k === 'link' ? `link ${d.link.length}개(${d.link.slice(0, 3).join(',')}${d.link.length > 3 ? '…' : ''})`
+        : `${k} −${d[k]}`));
       const line = `  ${isCore ? '🔴' : '🟠'} ${loc}/${slug} — ${parts.join(' · ')}`;
       if (isCore) { core++; coreLines.push(line); }
       else { tail++; tailByLoc.set(loc, [...(tailByLoc.get(loc) ?? []), line]); }
     }
   }
 
-  console.log(`구조 계수 대조 · EN 마스터 ${enMap.size}편 · 대조 ${checked}편 · 🔴 핵심 결손 ${core}편 · 🟠 꼬리 결손 ${tail}편`);
-  console.log(`   핵심 = ${CORE_LOCALES.join(' ')} · 세는 것 = link(대상 slug 집합) h2 h3 row li img faq`);
+  console.log(`구조 계수 대조 · EN 마스터 ${enMap.size}편 · 대조 ${checked}편 · 🔴 핵심 결손 ${core}편 · 🟠 꼬리 결손 ${tail}편 · 🟠 링크 개수 결손 ${linknLines.length}편`);
+  console.log(`   핵심 = ${CORE_LOCALES.join(' ')} · 세는 것 = link(대상 slug 집합) linkn(같은 대상 링크 «개수») h2 h3 row li img faq`);
   console.log(`   예외 등재로 제외 ${allowed}건 — 사유는 scripts/check-structure-parity.mjs의 ALLOW와 docs/locale-intentional-diffs.md`);
   if (unbuildable) console.log(`   🪶 «대상 글이 그 로케일에 없어서» 걸 수 없는 링크 ${unbuildable}건 제외 — ${[...unbuildableLoc].sort((a,b)=>b[1]-a[1]).map(([l,n])=>`${l} ${n}`).join(' · ')}`);
   if (stray.length) { console.log('\n🔴 FAQ 문항이 FAQ 절 밖에 있다(이식 사고):'); stray.forEach((l) => console.log(l)); }
   if (coreLines.length) { console.log('\n🔴 EN에 있고 로케일에 없는 구조:'); coreLines.forEach((l) => console.log(l)); }
+  if (linknLines.length) {
+    console.log('\n🟠 링크 «개수» 결손 — 대상은 가지고 있는데 EN보다 적게 건다(자리별 원문 판정 필요):');
+    linknLines.forEach((l) => console.log(l));
+  }
   if (tail) {
     console.log('\n🟠 꼬리 17로케일:');
     if (has('tail') || onlyLoc) for (const [, ls] of tailByLoc) ls.forEach((l) => console.log(l));

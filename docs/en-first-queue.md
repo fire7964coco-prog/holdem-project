@@ -110,3 +110,8 @@ EN 12편 정정 → 7로케일(de·es·id·ja·pt·zh·zh-hant) 전파 완료. 1
 - ✅ **종결(queue Q4-a 실측 · 2026-09-12)** — EN↔pt FAQ 개수 드리프트는 **실측 0**이었다(bubble·short-stack·tournament·icm).
 - ✅ **종결(낡은 항목 · queue Q4-a 확인)** — en `holdem-game-order`의 seoTitle은 **이미 「who bets first」 축**이다(`updated: 2026-09-11`).
 - 🟠 EN 제목 보강 3편(`holdem-3bet`·`holdem-continuation-bet`·`holdem-pot-odds` — 제목에 poker/hold'em 없음) 🔴 **GSC 먼저**(노출 붙었으면 교체 순간 측정이 끊긴다) · 사장님 결재 대기
+- 🆕 🟠 **EN `holdem-hand-rankings` — 리드 산문 ↔ 같은 절 비교표 셀이 축어 중복**(queue Q7-b · 2026-09-13 · 렌즈 3 재검).
+  자리 = 「Short Deck … a flush beats a full house … **A-6-7-8-9 counts as a straight**」가 **산문과 표 셀에 두 번** 나온다.
+  ja가 그 구조를 직답 블록으로 승계해 `check:answer-echo`에 잡혔는데(ja 「A-6-7-8-9をストレート扱いすることも」) **뿌리는 EN**이다.
+  🔴 **EN엔 직답 블록이 없어 이 게이트가 원리상 EN을 못 본다** — 로케일 쪽만 고치면 다음 번역이 같은 구조를 다시 들여온다. **EN부터.**
+  🪶 «표 셀과 산문의 중복»은 §14-A 직답 축과 다른 축이다 — 표를 지우는 게 아니라 **산문 쪽을 한정**하는 것이 처방이다.

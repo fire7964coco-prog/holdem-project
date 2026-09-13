@@ -23,7 +23,9 @@
  *   ③ **메타**       : 나머지가 전부 «필드 한 줄»이고 그중 독자가 읽는 필드
  *                     (content·tldr·title·desc·seoTitle·image·imageAlt)가 없다 → 🟠.
  *                     실측 1/8 = `lib/posts/holdem-community-event-guide.ts`의 `emoji:` 1행 삭제.
- *   ④ **실질**       : 그 밖 전부 → 🔴(EN은 🟠 — 아래 문턱).
+ *   ④ **코드 골격**  : 나머지가 `.trim()` 류 «호출 문법»만 다르다(2026-09-13 Q7-b · 첫 오탐 44건).
+ *   ⑤ **주석만**     : 나머지가 전부 JS 주석 줄이다(동결 지시·근거 메모 재작성 — 독자가 읽는 자리가 아니다).
+ *   ⑥ **실질**       : 그 밖 전부 → 🔴(EN은 🟠 — 아래 문턱).
  *
  * 🔴 EN 문턱이 다른 이유 (`settled-decisions` §1-C · 메모리 `audit-recent-window-not-history`)
  *   EN `updated`는 8로케일 `masterUpdated`의 **기준선**이다. 올리는 순간 그 8편이 전부
@@ -99,9 +101,45 @@ export function bare(s) {
 const KEEP = /[^\p{L}\p{N}♠♥♦♣+\-<>≤≥×÷]+/gu;
 
 /**
+ * 🔴 **코드 골격 토큰** — 독자가 읽는 문자열이 아니라 «TS 문법»이다 (2026-09-13 · queue Q7-b).
+ *    Q5-a 커밋 `f38a4b14`가 전 코퍼스 content 템플릿 리터럴 끝에 `.trim()`을 붙였고
+ *    (한 줄 diff = 닫는 백틱 + `.trim(),`) **그 한 줄 때문에 44파일이 «실질»(🔴)로 잡혔다.**
+ *    `bare()`는 letters를 남기므로 `trim`이 «새로 생긴 단어»로 보인 것이다(헤드 실측 Q5-a (24)).
+ *    🔴 지우는 것은 **«호출 문법»뿐이다** — `.trim()`이라는 문자열이 본문에 들어갈 길은 없다
+ *    (포스트 본문은 백틱 금지 · `CLAUDE.md` §12-A). 이 목록을 «식별자 일반»으로 넓히지 마라 —
+ *    넓히는 순간 진짜 코드 변경이 조용히 통과한다. 필드 «이름»이 바뀌는 변경도 여기 들지 않는다.
+ */
+/**
+ * 🔴 `trim` 계열 **셋뿐**이다 — `normalize`·`toString`·`valueOf`는 **값을 바꾸는** 호출이라 넣으면 안 된다
+ *    (2026-09-13 렌즈 2: `.normalize()` = NFC 변환 · `(1100).toString()` = 타입 변경. 코퍼스 실측 등장 **0건**이라
+ *    정밀도 기여 없이 위험만 순증이었다 — 첫 판의 과오를 같은 회차에서 되돌린다).
+ */
+const CODE_FRAME = /\.(?:trim|trimStart|trimEnd)\(\)/g;
+const bareCode = (s) => bare(s.replace(CODE_FRAME, ''));
+
+/**
+ * 🔴 **주석 줄** — 이 레포의 포스트 파일 머리엔 «되돌리지 마라»·동결 지시가 주석으로 산다.
+ *    그 주석을 고치는 것은 **다음 세션을 위한 일**이지 «독자가 읽는 페이지의 손질»이 아니다
+ *    → `updated`를 올릴 근거가 못 된다(§1-C 「기계적 변경은 안 올린다」와 같은 취지).
+ *    실례 = `f38a4b14`의 `de/texas-holdem-rules-for-beginners`(masterUpdated 1행 + 동결 주석 재작성).
+ *    🔴 주석 «만» 바뀐 경우다 — 본문 줄이 하나라도 섞이면 여전히 «실질»이다.
+ */
+const COMMENT_LINE = /^\s*(?:\/\/|\/\*|\*\/)/;
+
+/**
+ * 🔴 **§13 안전벨트 — 무늬가 든 줄은 «가벼운» 부류로 내리지 않는다** (2026-09-13 · 렌즈 2·4 수렴).
+ *    첫 판의 `COMMENT_LINE`은 끝에 홑별표 `*`가 붙어 있어 **본문 마크다운을 JS 주석으로 읽었다** —
+ *    `**굵게`로 여는 문단과 `**Q.` FAQ 줄이 이 레포의 표준이라 적중률이 높았다(창 7일 26건 중 **25건이 오분류** ·
+ *    그중 `33acbaa1`의 `holdem-rake` 문단 재작성 8로케일 · `holdem-limping`의 `==g:`→`==r:` 2로케일이 있었다).
+ *    같은 뿌리로 `FIELD_LINE`은 본문 `Board: A♠ A♦ …` 줄을 «필드 한 줄»로 읽어 **§13 변경을 `meta`(🟠)로 강등**한다(선재).
+ *    → 둘 다 **무늬 한 글자면 무조건 «실질»**로 되돌린다. 🔴 이 가드를 빼지 마라.
+ */
+const HAS_SUIT = /[♠♥♦♣]/;
+
+/**
  * 한 커밋이 한 파일에 가한 변경의 «무게»를 판정한다.
  * @param lines 그 파일 hunk의 +/- 본문 줄 (접두 부호 포함)
- * @returns 'stamp' | 'cosmetic' | 'meta' | 'substantive'
+ * @returns 'stamp' | 'cosmetic' | 'code' | 'comment' | 'meta' | 'substantive'
  */
 export function classify(lines) {
   const body = lines.filter((l) => /^[-+]/.test(l) && !/^([-+])\1\1/.test(l));
@@ -110,8 +148,12 @@ export function classify(lines) {
   const minus = kept.filter((l) => l[0] === '-').map((l) => l.slice(1)).join('\n');
   const plus = kept.filter((l) => l[0] === '+').map((l) => l.slice(1)).join('\n');
   if (bare(minus) === bare(plus)) return 'cosmetic';
+  // 🔴 §13 안전벨트 — 무늬가 한 글자라도 있으면 아래 «가벼운» 부류로 내리지 않는다
+  const suited = kept.some((l) => HAS_SUIT.test(l));
+  if (!suited && bareCode(minus) === bareCode(plus)) return 'code';
+  if (!suited && kept.every((l) => COMMENT_LINE.test(l.slice(1)))) return 'comment';
   const fields = kept.map((l) => (l.slice(1).match(FIELD_LINE) || [])[1]).filter(Boolean);
-  if (fields.length === kept.length && !fields.some((f) => READER_FIELDS.includes(f))) return 'meta';
+  if (!suited && fields.length === kept.length && !fields.some((f) => READER_FIELDS.includes(f))) return 'meta';
   return 'substantive';
 }
 
@@ -243,6 +285,62 @@ function selftest() {
   ]) === 'substantive');
   one('메타 — 읽히지 않는 필드만 바뀌면 여전히 메타', classify(['-  emoji: "🏆",']) === 'meta');
 
+  // 🔴 2026-09-13 Q7-b — Q5-a가 만든 첫 오탐 44건(코드 골격 한 줄)
+  one('코드 골격 — content 템플릿 끝에 .trim() 추가(f38a4b14 유형)', classify([
+    '-`,',
+    '+`.trim(),',
+  ]) === 'code');
+  one('코드 골격 — 스탬프와 섞여도 코드다', classify([
+    '-  updated: "2026-09-09",', '+  updated: "2026-09-09",',
+    '-`,', '+`.trim(),',
+  ]) === 'code');
+  one('코드 골격이 아니다 — 본문이 함께 바뀌면 실질', classify([
+    '-옛 문장 하나`,',
+    '+아주 다른 문장 둘`.trim(),',
+  ]) === 'substantive');
+  one('코드 골격이 아니다 — 필드 이름이 바뀌면 여전히 잡는다', classify([
+    '-  content: `본문`,',
+    '+  body: `본문`,',
+  ]) !== 'code');
+
+  one('주석만 — 동결 지시 재작성 + masterUpdated(f38a4b14 de 유형)', classify([
+    '-  // 🔴 masterUpdated는 07-12 그대로 둔다 – 보류분이다.',
+    '-  masterUpdated: "2026-09-11",',
+    '+  // 🪶 동결 지시는 해소됐다(Q5-a 실측 · 값별 전건 추적).',
+    '+  masterUpdated: "2026-09-13",',
+  ]) === 'comment');
+  // 🔴 2026-09-13 렌즈 2·4 수렴 — 첫 판의 `COMMENT_LINE`이 본문 마크다운을 주석으로 읽었다
+  one('🔴 **굵게**로 여는 본문 줄은 «주석»이 아니다', classify([
+    '-**핵심은 포지션이다.** 버튼이 가장 강하다.',
+    '+**핵심은 스택이다.** 20bb 아래는 푸시폴드다.',
+  ]) === 'substantive');
+  one('🔴 **Q. FAQ 줄도 «주석»이 아니다', classify([
+    '-**Q. 폴드 에퀴티란?**', '+**Q. 폴드 에퀴티는 언제 생기나?**',
+  ]) === 'substantive');
+  one('🔴 `* ` 불릿도 «주석»이 아니다', classify([
+    '-* EV -0.5bb', '+* EV +0.5bb',
+  ]) === 'substantive');
+  one('🔴 §13 안전벨트 — 무늬가 든 줄은 «주석»으로 안 내린다', classify([
+    '-// 보드 A♠K♠Q♠', '+// 보드 A♥K♥Q♥',
+  ]) === 'substantive');
+  one('🔴 §13 안전벨트 — 무늬가 든 줄은 «코드 골격»으로도 안 내린다', classify([
+    '-보드 A♠K♠`,', '+보드 A♥K♥`.trim(),',
+  ]) === 'substantive');
+  one('🔴 §13 안전벨트 — 본문 `Board:` 줄이 «메타»로 강등되지 않는다', classify([
+    '-Board: A♠ A♦ A♣ 7♥ 7♦ — a full house',
+    '+Board: A♥ A♦ A♣ 7♠ 7♦ — a full house',
+  ]) === 'substantive');
+  // 🔴 «홑별표 `*`로 시작하는 줄»은 주석으로 세지 않는다 — 마크다운 볼드·불릿과 구분할 방법이 없다.
+  //    JSDoc 이어짐 줄만 바뀐 커밋은 «실질»로 과보고된다(안전한 방향 · 사람이 판정하면 된다).
+  one('JSDoc 이어짐 줄만 바뀌면 «실질»로 과보고한다(안전한 방향)', classify([
+    '- * 옛 메모 한 줄', '+ * 새 메모 한 줄',
+  ]) === 'substantive');
+
+  one('주석만이 아니다 — 본문 줄이 섞이면 실질', classify([
+    '-  // 메모 한 줄', '+  // 다른 메모 한 줄',
+    '-옛 문장 하나', '+아주 다른 문장 둘',
+  ]) === 'substantive');
+
   one('READER_FIELDS에 content·tldr이 있다',
     READER_FIELDS.includes('content') && READER_FIELDS.includes('tldr'));
 
@@ -284,7 +382,7 @@ function main() {
    *    첫 판은 마지막 `else` 분기에서만 셌고, 그래서 「스탬프만 28건」이라고 찍는데
    *    실측은 198건이었다(2026-09-12 렌즈 실측 · 7배). 창 안 커밋을 통째로 먼저 센다.
    */
-  const tally = { stamp: 0, cosmetic: 0, meta: 0, substantive: 0 };
+  const tally = { stamp: 0, cosmetic: 0, code: 0, comment: 0, meta: 0, substantive: 0 };
   for (const [rel, commits] of win) {
     if (onlyLocale && localeOf(rel) !== onlyLocale) continue;
     for (const c of commits) tally[c.weight] = (tally[c.weight] || 0) + 1;
@@ -330,7 +428,7 @@ function main() {
 
   console.log('\n── 커버리지 (0건이 «검증»으로 오독되지 않게) ──');
   console.log(`   판정 대상 파일 ${files.length}개 · 창 안에서 움직인 파일 ${inWindow}개`);
-  console.log(`   🪶 창 안 커밋×파일 ${tally.stamp + tally.cosmetic + tally.meta + tally.substantive}건 = 스탬프만 ${tally.stamp} · 구두점·장식만 ${tally.cosmetic} · 메타 ${tally.meta} · 실질 ${tally.substantive}`);
+  console.log(`   🪶 창 안 커밋×파일 ${tally.stamp + tally.cosmetic + tally.code + tally.comment + tally.meta + tally.substantive}건 = 스탬프만 ${tally.stamp} · 구두점·장식만 ${tally.cosmetic} · 코드 골격만 ${tally.code} · 주석만 ${tally.comment} · 메타 ${tally.meta} · 실질 ${tally.substantive}`);
   console.log(`   🪶 창 밖 과소 ${outside}건 — 계수만 한다(과거 발굴 금지 · 메모리 audit-recent-window-not-history)`);
   console.log(`   ⚠ 미판정: lib/posts.ts(LEGACY 다중 포스트 한 파일 — 파일 단위 스탬프가 성립하지 않는다) · updated 필드 없는 파일 ${noStamp}개`);
 

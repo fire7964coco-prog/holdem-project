@@ -1014,6 +1014,51 @@ const NON_COMPARABLE_CELL = new RegExp([
 const isEventGuide = (s) => /\b(19|20)\d{2}\b/.test(s);
 
 /**
+ * 🔴 **C2 판정 등재** — «육안 대조 필요»로 올라온 쌍을 사람이 보고 «대조할 것이 없다»고 판정한 자리.
+ *    등재하지 않으면 매 회차가 같은 쌍을 다시 읽는다(`check:structure`의 `ALLOW`와 같은 장치).
+ *    🔴 **사유 없는 행 금지** · 🔴 **«수치가 어긋난다»(C1)는 여기 넣지 마라** — 여기는 «짝이 아니다»만이다.
+ *    2026-09-13 queue Q7-b 육안 대조. 🔴 **전건이 아니다** — 실측 **21쌍 중 14쌍을 닫았고 7쌍이 남았다**
+ *    (en 3 · pt 4 · ja 2 · es 2 · zh 1 · zh-hant 1 · de 1 닫힘 / **ko 4** · zh 1 · zh-hant 1 · es 1 남음).
+ *    남은 7쌍은 «실수 표» 계열이 아니라 다른 묶음이고 **아직 판정하지 않았다** — 진행 파일 §5 Q7b-4.
+ *    🔴 ko 4쌍이 통째로 남아 **기본 `npm run audit:hard`(ko) 출력은 이 회차로 바뀌지 않았다.**
+ *    언어 불변 판정이라 등재된 쌍은 로케일을 가리지 않는다.
+ */
+const C2_JUDGED = [
+  {
+    slugs: ['holdem-3bet', 'holdem-continuation-bet', 'holdem-when-to-fold'],
+    reason:
+      '«실수 표»끼리 짝지어진 것이다 — 헤더가 같을 뿐(ミス|なぜ損するか|直し方 / Mistake|Why it costs|Fix) ' +
+      '주제가 다르다(3bet 실수 ↔ c-bet 실수 ↔ 폴드 실수). 행 키가 하나도 안 겹치는 것이 **정상**이다. ' +
+      '2026-09-13 육안 대조: en·ja·zh·es·pt·de 6로케일 전건 — 대조할 같은 행이 없다.',
+  },
+  {
+    slugs: ['holdem-tiebreak-rules', 'holdem-reading-the-board'],
+    reason:
+      '표 둘 다 «ベスト5枚» 열을 갖지만 세로축이 다르다 — tiebreak는 «카운터피트 예시의 두 플레이어», ' +
+      'reading-the-board는 «페어보드 K♣K♦7♠3♥2♣에서 손패 3종». 2026-09-13 §13 손검산 전건 일치: ' +
+      'tiebreak 9♠9♥5♠5♦K♣ ↔ K♦K♣9♠9♥A♣(상대 승) · rtb K-K-K-9-7 · 7-7-7-K-K · K-K-A-Q-7. ' +
+      '🔴 두 표를 «맞추려고» 행을 고치지 마라 — 다른 글의 다른 예시다.',
+  },
+  {
+    slugs: ['holdem-tiebreak-rules', 'holdem-split-pot-rules'],
+    reason:
+      '위 행과 같은 성격 — «ベスト5枚/Mejores cinco» 열만 같고 세로축이 다르다. tiebreak는 2인 카운터피트 예시, ' +
+      'split-pot은 3인 사이드팟 정산(A 올인 / B / C). 2026-09-13 §13 손검산 전건 일치: ' +
+      'A·B 모두 A-A-Q-J-7로 메인팟 분할 · B가 사이드팟 · C(K♦K♠)는 보드 A를 써 K-K-A-J-7로 양쪽 패배. ' +
+      '행 키가 「Tú/Rival」 ↔ 「A/B/C」라 겹칠 수 없다 — es·pt 양쪽 동형.',
+  },
+];
+/**
+ * 두 슬러그가 «짝이 아니다»로 이미 판정된 조합인가.
+ * 🔴 **키가 «슬러그 쌍»뿐이라 그 두 글 사이의 «모든» 표 쌍이 닫힌다**(2026-09-13 렌즈 4 D-2).
+ *    같은 슬러그 쌍에 표 쌍이 둘 이상인 사례가 실재한다 — ko `holdem-blind-meaning(L83)↔small-blind-role(L84)`와
+ *    `blind-meaning(L157)↔같은 글(L84)`. 자매 장치는 더 좁게 잠근다(`check:structure`의 `ALLOW` = 로케일+슬러그+종류).
+ *    🔴 **여기 행을 늘릴 때는 그 슬러그 쌍에 표 쌍이 하나뿐인지 먼저 확인해라** — 둘 이상이면 헤더 조각을 키에 더해야 한다.
+ */
+const c2Judged = (a, b) =>
+  C2_JUDGED.find((j) => j.slugs.includes(a) && j.slugs.includes(b) && a !== b);
+
+/**
  * GTO 솔버 시리즈 — **편마다 «다른 보드»의 해설**이라 액션 빈도·등급 비중이 서로 다른 것이 정상이다.
  * 대회 가이드끼리 엔트리·상금이 다른 것과 같은 성격이라 같은 규율을 적용한다.
  *
@@ -1148,6 +1193,9 @@ function auditClusterTables(cluster, slugs, bySlug, stats, focus = null) {
         // 대조하지 못하고 남은 것이 있다 — 행 키가 안 맞거나(matched 0), 열 이름이 달라 비교에서 빠진 값 열이 있다.
         // ★이름이 다른 두 열이 "다른 개념"인지 "같은 개념의 다른 이름"인지는 기계가 판정할 수 없다.
         //   여기서 침묵하면 "검증됨"으로 읽힌다 → 사람에게 넘긴다. (overbet↔bluffing 사고가 정확히 이 자리)
+        // 🔴 «짝이 아니다»로 이미 판정된 조합은 닫는다(사유는 C2_JUDGED · 계수는 남긴다)
+        const jd = c2Judged(A.slug, B.slug);
+        if (jd) { stats.judged = (stats.judged ?? 0) + 1; continue; }
         stats.manual++;
         out.push({
           sev: 'WARN', code: 'C2',
@@ -1533,7 +1581,7 @@ for (const r of report) {
 
 /* ── 클러스터 단위 대조 (C유형) — 글 1편 검수로는 원리상 못 잡는 자리 ── */
 const clusterFindings = [];
-const cStats = { tables: 0, pairs: 0, rows: 0, rowsSkipped: 0, manual: 0 };
+const cStats = { tables: 0, pairs: 0, rows: 0, rowsSkipped: 0, manual: 0, judged: 0 };
 for (const [cluster, slugs] of clusterTargets) {
   if (slugs.length < 2) continue;
   clusterFindings.push(...auditClusterTables(cluster, slugs, bySlug, cStats, oneSlug));
@@ -1544,7 +1592,7 @@ if (oneSlug) {
     ? `대상: ${oneSlug} ↔ [${focusCluster}] 형제 ${CLUSTERS[focusCluster].length - 1}편`
     : `대상: ${oneSlug} — 형제 없음`);
 }
-console.log(`표 ${cStats.tables}개 수집 · 같은 주제로 짝지어진 표 ${cStats.pairs}쌍 · 자동 대조한 행 ${cStats.rows}개 · 육안 대조 넘김 ${cStats.manual}쌍`);
+console.log(`표 ${cStats.tables}개 수집 · 같은 주제로 짝지어진 표 ${cStats.pairs}쌍 · 자동 대조한 행 ${cStats.rows}개 · 육안 대조 넘김 ${cStats.manual}쌍 · 판정 등재로 닫은 쌍 ${cStats.judged}(사유 = scripts/audit-hardening.mjs의 C2_JUDGED)`);
 if (cStats.rowsSkipped) {
   // 짝은 지어졌는데 행 키가 안 맞아 그냥 지나간 행들. "0건"이 이 공백을 덮지 않게 항상 보여준다.
   console.log(`ℹ 짝지어진 표 안에서 행 키가 안 맞아 대조 못 한 행 ${cStats.rowsSkipped}개 — 이 행들은 검증되지 않았다.`);
