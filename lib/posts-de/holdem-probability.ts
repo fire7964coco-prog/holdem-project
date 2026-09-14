@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Bis zum River endest du mit einem Paar in 43,8% der Fälle, mit zwei Paaren in 23,5%, mit einem Flush in 3,0% und mit einem Full House in 2,6% – während ein Royal Flush nur etwa einmal in 31.000 Händen auftaucht.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-13",
+  updated: "2026-09-14",
   masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "13 Min.",
@@ -211,6 +211,7 @@ Mit einem Pocket Pair floppst du Quads **1 zu 408** – rechnest du ein, dass du
 
 :::readnext[Weiterlesen]
 /de/blog/holdem-hand-rankings | Pokerhände-Reihenfolge, von der besten zur schlechtesten | /images/holdem-hand-rankings-hero.webp
+/de/blog/holdem-starting-hands-chart | Welche Starthände du wirklich spielen solltest | /images/holdem-starting-hands-chart-hero.webp
 :::
 
 ## FAQ

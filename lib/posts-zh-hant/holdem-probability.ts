@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "打到河牌時，你有 43.8% 會做成一對、23.5% 兩對、3.0% 同花、2.6% 葫蘆——而皇家同花順大約每 3 萬手才出現一次。",
   category: "odds",
   date: "2026-07-22",
-  updated: "2026-09-13",
+  updated: "2026-09-14",
   masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "13 分鐘",
@@ -204,7 +204,7 @@ export const POST: Post = {
 為什麼這麼稀有？皇家同花順剛好是**一種特定花色裡一段特定的連牌**——整副牌裡只有四種湊法，而普通高牌有 1,302,540 種湊法。稀有正是它穩坐排名之首的全部原因。
 
 :::note
-一個常見誤區：「皇家同花順打贏一切，所以它可以被*打平*。」底池確實可能平分，但原因不是大家常說的那個。兩副*不同花色*的皇家同花順要用掉十張特定的牌，而兩名玩家一共只有九張可用——各兩張底牌加上牌面五張——所以根本不可能。兩人同時拿到皇家同花順的唯一情形，是牌面本身就是皇家同花順：這時所有人都在打牌面，底池平分。實際上，你基本上永遠不會遇到。
+一個常見誤區：「皇家同花順打贏一切，所以它可以被*打平*。」底池確實可能平分，但原因不是大家常說的那個。兩副*不同花色*的皇家同花順要用掉十張特定的牌，而兩名玩家一共只有九張可用——各兩張底牌加上牌面五張——所以根本不可能。兩人同時拿到皇家同花順的唯一情形，是牌面本身就是皇家同花順：這時所有人都在打公牌，底池平分。實際上，你基本上永遠不會遇到。
 :::
 
 ---
@@ -322,6 +322,21 @@ A. 因為勝率是長期的平均，單一一手仍會受變異數左右。一�
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">新手規則</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">德州撲克規則怎麼玩</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">盲注、發牌順序、牌型大小、誰先動一次搞懂</div>
+  </a>
+  <a href="/zh-hant/blog/holdem-flush-vs-straight" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">牌力對決</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">同花跟順子哪個大？</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">為什麼更稀有的牌總是贏</div>
+  </a>
+  <a href="/zh-hant/blog/holdem-reading-the-board" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">讀牌面</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">德州撲克牌面怎麼讀？</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">7 選 5、堅果牌反推與危險牌面</div>
+  </a>
+  <a href="/zh-hant/blog/holdem-position-play" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">策略</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">德州撲克位置怎麼打</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">有利位置 vs 不利位置，每個座位怎麼打</div>
   </a>
 </div>
 `.trim(),

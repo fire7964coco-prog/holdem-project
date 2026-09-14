@@ -88,16 +88,46 @@ export function measure(content) {
    *    🔴 그래도 **개수 축에는 넣는다** — 렌즈 2 실측대로 EN 링크의 36%가 그 두 형식이고,
    *    「카드 블록이 통째로 빠진」 진짜 결함(`zh-hant/texas-holdem-rules-for-beginners` 6장 → 0장)은 개수로 드러난다.
    */
+  /**
+   * 🔴🔴 **«개수»를 한 축에 몰면 카드 큐레이션이 그 축을 오염시킨다 — 축을 둘로 갈랐다**
+   *    (2026-09-14 · queue Q6-a 전건 판정). 바로 위 주석이 스스로 적었듯 **카드·readnext는 대상을 로케일이 고르는 자리**인데
+   *    Q7-b는 그것을 «개수» 축에 넣었다. 그래서 개수 축이 큐레이션 차이를 결손으로 찍었다 — 실측:
+   *    `wsop-2026-tournament-guide`의 `holdem-icm 3→1`은 **EN이 카드·readnext에 icm을, es·ja·zh는 같은 자리에**
+   *    **지역 대회 가이드**(apt-incheon·ept-barcelona)**를 골랐을 뿐**이고 카드 앵커 «장수»는 EN 4 ↔ 셋 다 4로 같다.
+   *    ✅ 처방 = **`linkn`은 본문 마크다운만**(큐레이션이 없는 자리) · **카드·readnext는 «장수»(`cardn`)로만**(대상 무관).
+   *    Q7-b가 잡으려던 진짜 결함(`zh-hant/texas-holdem-rules-for-beginners` 카드 6장 → 0장)은 `cardn`이 그대로 잡는다.
+   */
+  let cardn = 0;
+  const cardRawT = [], cardRnT = [];
+  const body = (t) => { links.add(t); linkCounts.set(t, (linkCounts.get(t) ?? 0) + 1); };
   for (const [i, re] of LINK_PATTERNS.entries()) {
     for (const m of content.matchAll(re)) {
-      if (i === 0) links.add(m[1]);
-      linkCounts.set(m[1], (linkCounts.get(m[1]) ?? 0) + 1);
+      if (i === 0) { body(m[1]); continue; }
+      /**
+       * 🔴 **카드인지 아닌지는 «HTML 형식»이 아니라 «역할»로 가른다** (2026-09-14 Q6-a 렌즈 1 C-8).
+       *    실측: 전 코퍼스 생 `<a>` 내부링크 **1,559개가 전부 `display:block`**(카드 앵커)이고 산문 인라인 `<a>`는 **0개**다.
+       *    그 가정이 코드에 없으면, 누가 산문에 `<a href>`를 하나 쓰는 순간 그 링크가 조용히 «카드 큐레이션»으로
+       *    재분류돼 `linkn` 축에서 사라진다. 지금 박아 두면 **비용 0**이다(현재 예외 0건).
+       */
+      if (i === 1) {
+        // 🪶 정규식은 href까지만 먹으므로 «태그 전체»를 다시 잘라 본다(style은 href 뒤에 온다).
+        const tag = content.slice(m.index, content.indexOf('>', m.index) + 1);
+        if (!/display\s*:\s*block/.test(tag)) { body(m[1]); continue; }
+      }
+      cardn += 1;
+      (i === 1 ? cardRawT : cardRnT).push(m[1]);
     }
   }
   const count = (re) => (content.match(re) ?? []).length;
   return {
     link: links,
     linkCounts,
+    cardn,
+    cardRaw: cardRawT.length,
+    cardRn: cardRnT.length,
+    cardRawT,
+    cardRnT,
+    cardTargets: [...cardRawT, ...cardRnT],
     h2: count(/^##\s+/gm),
     h3: count(/^###\s+/gm),
     row: count(/^\s*\|.*\|\s*$/gm),
@@ -220,9 +250,110 @@ const ALLOW = [
       '이관했고, showdown-rules가 H2 「攤牌時誰要先亮牌？」로 이 축의 주인이다. 태그를 넘기며 FAQ를 새로 만들면 자기모순. ' +
       '정본 = docs/locale-intentional-diffs.md(2026-09-07 행).',
   },
+  /**
+   * 🔴 zh-hant 링크 정책 = «대상당 대체로 1회 + 대상 수를 늘린다» (2026-09-14 queue Q6-a 전건 원문 판정).
+   *    아래 두 편은 **대상 수가 EN과 같아** 상쇄 규칙에 안 걸리는데, 원문을 열면 기전은 같다 —
+   *    EN이 같은 대상을 인트로·본문·FAQ·마무리에서 2~4회 다시 거는 자리를 zh-hant는 1~3회만 건다.
+   *    대응 문단은 **다 있다**(전건 대조: tiebreak zh-hant L55·L263·L277 ↔ EN L51·L175·L236·L250 ·
+   *    flush-vs-straight zh-hant L151 ↔ EN L100·L137 · marathon zh-hant L281 ↔ EN L261·L517).
+   */
+  {
+    slug: 'holdem-bubble',
+    locales: ['zh-hant'],
+    kinds: ['linkn'],
+    spots: ['holdem-icm 3→1', 'holdem-when-to-fold 2→1'],
+    reason:
+      '2026-09-14 queue Q6-a 전건 원문 판정 — **zh-hant 링크 정책**: EN이 같은 대상을 인트로·표·FAQ·마무리에서 2~4회 다시 거는 자리를 zh-hant는 1~3회만 건다. 대응 «문단»은 다 있고 링크만 없다. 코퍼스 실측: zh-hant 링크 총계 771(EN 756) · 대상 수 432(EN 378) = 반복을 줄이고 대상을 늘린 것이다. 🔴 개수를 맞추려고 같은 문단에 두 번째 링크를 심지 마라. 🪶 `spots`에 적힌 «그 자리»만 면제다 — 새 자리가 생기면 게이트가 다시 잡는다(정본 = docs/harden-queue-진행.md §1-Q6-a).' +
+      ' 대조: zh-hant L24(icm 인트로)·L247(when-to-fold 마무리) ↔ EN L23·L55·L216 / L103·L216.',
+  },
+  {
+    slug: 'holdem-drawing-odds',
+    locales: ['zh-hant'],
+    kinds: ['linkn'],
+    spots: ['holdem-outs 2→1'],
+    reason:
+      '2026-09-14 queue Q6-a 전건 원문 판정 — **zh-hant 링크 정책**: EN이 같은 대상을 인트로·표·FAQ·마무리에서 2~4회 다시 거는 자리를 zh-hant는 1~3회만 건다. 대응 «문단»은 다 있고 링크만 없다. 코퍼스 실측: zh-hant 링크 총계 771(EN 756) · 대상 수 432(EN 378) = 반복을 줄이고 대상을 늘린 것이다. 🔴 개수를 맞추려고 같은 문단에 두 번째 링크를 심지 마라. 🪶 `spots`에 적힌 «그 자리»만 면제다 — 새 자리가 생기면 게이트가 다시 잡는다(정본 = docs/harden-queue-진행.md §1-Q6-a).' +
+      ' 대조: zh-hant L251(마무리) ↔ EN L21(인트로 썸네일)·L232.',
+  },
+  {
+    slug: 'holdem-equity',
+    locales: ['zh-hant'],
+    kinds: ['linkn'],
+    spots: ['holdem-implied-odds 2→1'],
+    reason:
+      '2026-09-14 queue Q6-a 전건 원문 판정 — **zh-hant 링크 정책**: EN이 같은 대상을 인트로·표·FAQ·마무리에서 2~4회 다시 거는 자리를 zh-hant는 1~3회만 건다. 대응 «문단»은 다 있고 링크만 없다. 코퍼스 실측: zh-hant 링크 총계 771(EN 756) · 대상 수 432(EN 378) = 반복을 줄이고 대상을 늘린 것이다. 🔴 개수를 맞추려고 같은 문단에 두 번째 링크를 심지 마라. 🪶 `spots`에 적힌 «그 자리»만 면제다 — 새 자리가 생기면 게이트가 다시 잡는다(정본 = docs/harden-queue-진행.md §1-Q6-a).' +
+      ' 대조: zh-hant L94(썸네일 링크) ↔ EN L88·L236.',
+  },
+  {
+    slug: 'holdem-implied-odds',
+    locales: ['zh-hant'],
+    kinds: ['linkn'],
+    spots: ['holdem-drawing-odds 2→1'],
+    reason:
+      '2026-09-14 queue Q6-a 전건 원문 판정 — **zh-hant 링크 정책**: EN이 같은 대상을 인트로·표·FAQ·마무리에서 2~4회 다시 거는 자리를 zh-hant는 1~3회만 건다. 대응 «문단»은 다 있고 링크만 없다. 코퍼스 실측: zh-hant 링크 총계 771(EN 756) · 대상 수 432(EN 378) = 반복을 줄이고 대상을 늘린 것이다. 🔴 개수를 맞추려고 같은 문단에 두 번째 링크를 심지 마라. 🪶 `spots`에 적힌 «그 자리»만 면제다 — 새 자리가 생기면 게이트가 다시 잡는다(정본 = docs/harden-queue-진행.md §1-Q6-a).' +
+      ' 대조: zh-hant L143(썸네일 링크) ↔ EN L130·L228.',
+  },
+  {
+    slug: 'holdem-reading-the-board',
+    locales: ['zh-hant'],
+    kinds: ['linkn'],
+    spots: ['holdem-hand-rankings 3→2'],
+    reason:
+      '2026-09-14 queue Q6-a 전건 원문 판정 — **zh-hant 링크 정책**: EN이 같은 대상을 인트로·표·FAQ·마무리에서 2~4회 다시 거는 자리를 zh-hant는 1~3회만 건다. 대응 «문단»은 다 있고 링크만 없다. 코퍼스 실측: zh-hant 링크 총계 771(EN 756) · 대상 수 432(EN 378) = 반복을 줄이고 대상을 늘린 것이다. 🔴 개수를 맞추려고 같은 문단에 두 번째 링크를 심지 마라. 🪶 `spots`에 적힌 «그 자리»만 면제다 — 새 자리가 생기면 게이트가 다시 잡는다(정본 = docs/harden-queue-진행.md §1-Q6-a).' +
+      ' 대조: zh-hant L197·L343 ↔ EN L42·L176·L290.',
+  },
+  {
+    slug: 'holdem-strategy',
+    locales: ['zh-hant'],
+    kinds: ['linkn'],
+    spots: ['holdem-limping 2→1', 'holdem-betting-actions 2→1'],
+    reason:
+      '2026-09-14 queue Q6-a 전건 원문 판정 — **zh-hant 링크 정책**: EN이 같은 대상을 인트로·표·FAQ·마무리에서 2~4회 다시 거는 자리를 zh-hant는 1~3회만 건다. 대응 «문단»은 다 있고 링크만 없다. 코퍼스 실측: zh-hant 링크 총계 771(EN 756) · 대상 수 432(EN 378) = 반복을 줄이고 대상을 늘린 것이다. 🔴 개수를 맞추려고 같은 문단에 두 번째 링크를 심지 마라. 🪶 `spots`에 적힌 «그 자리»만 면제다 — 새 자리가 생기면 게이트가 다시 잡는다(정본 = docs/harden-queue-진행.md §1-Q6-a).' +
+      ' 대조: zh-hant L52(결정 표)·L133 ↔ EN L48·L97 / L49·L117.',
+  },
+  {
+    slug: 'holdem-tournament',
+    locales: ['zh-hant'],
+    kinds: ['cardn'],
+    reason:
+      '2026-09-14 queue Q6-a 전건 원문 판정: zh-hant는 이 글의 카드 세트를 «대만 독자용으로 재선정»했다 — 카드 4장(starting-hands-chart · strategy · beginners · glossary) + readnext 2행이고, 그중 strategy·glossary는 **EN 카드에 없는 대상**이다(EN = tvc · shc · short-stack · beginners · blind-meaning · positions). 같은 글의 li 결손이 이미 «대만 전용 블록(立案的撲克協會·台北·台中·高雄)» 때문에 등재돼 있다 — 같은 뿌리다. 🔴 장수를 EN에 맞추려고 카드를 덧붙이면 그 큐레이션을 밀어낸다. 다시 열려면 헤드 판정을 받아라.',
+  },
+  {
+    slug: 'holdem-tiebreak-rules',
+    locales: ['zh-hant'],
+    kinds: ['linkn'],
+    spots: ['holdem-split-pot-rules 4→3', 'holdem-flush-vs-straight 2→1'],
+    reason:
+      '2026-09-14 queue Q6-a 전건 원문 판정: zh-hant는 같은 대상을 반복해 걸지 않는다(split-pot 4→3 · flush-vs-straight 2→1). ' +
+      'EN이 다시 거는 문단은 zh-hant에도 있고 링크만 없다 — 대상 집합도 총계도 온전하다(코퍼스 실측: zh-hant 링크 771·대상 432 ↔ EN 756·378). ' +
+      '🔴 개수를 맞추려고 같은 문단에 두 번째 링크를 심지 마라(정본 = docs/harden-queue-진행.md §1-Q6-a).',
+  },
+  {
+    slug: 'korea-poker-marathon-2026',
+    locales: ['zh-hant'],
+    kinds: ['linkn'],
+    spots: ['apt-incheon-2026-guide 2→1'],
+    reason:
+      '2026-09-14 queue Q6-a 전건 원문 판정: EN은 apt-incheon 가이드를 본문(L261)과 마무리(L517) 두 곳에서 걸고 ' +
+      'zh-hant는 본문(L281 · 썸네일 링크)에서 한 번 건다. 같은 링크 정책이며 총계는 zh-hant가 더 많다(10 ↔ 8).',
+  },
 ];
 const allowHit = (loc, slug, kind) =>
   ALLOW.find((a) => a.slug === slug && a.locales.includes(loc) && a.kinds.includes(kind));
+
+/**
+ * 🔴 **목록형 지적(`linkn`)의 예외는 «판정한 자리»까지 적어야 한다** (2026-09-14 Q6-a 렌즈 1 C-10).
+ *    `kinds: ['linkn']`만 적으면 그 파일의 개수 결손이 **영원히** 면제된다 — 내일 EN이 새 링크를 걸고
+ *    로케일이 전파를 빠뜨려도 같은 면제가 삼킨다. 그래서 `spots`(지문)를 쓰면 **그 자리만** 빼고
+ *    새 자리는 다시 뜨게 한다. `spots`가 없는 등재는 종전대로 전부 면제(스칼라 종류와 같은 동작).
+ */
+export function applyAllow(loc, slug, kind, value) {
+  const hit = allowHit(loc, slug, kind);
+  if (!hit) return { value, allowed: 0 };
+  if (!Array.isArray(hit.spots) || !Array.isArray(value)) return { value: undefined, allowed: 1 };
+  const left = value.filter((x) => !hit.spots.includes(x));
+  return { value: left.length ? left : undefined, allowed: value.length - left.length ? 1 : 0 };
+}
 
 const NUMERIC = ['h2', 'h3', 'row', 'li', 'img', 'faq'];
 
@@ -238,21 +369,69 @@ export function deficit(en, loc) {
    *    🪶 EN보다 «많이» 거는 것은 결손이 아니다(현지 추가 허용 — 다른 종류와 같은 규칙).
    */
   /**
-   * 🔴 **`m === 0`도 본다 — 단 «집합 축이 이미 보고한 자리»만 뺀다** (2026-09-13 2차 교열 C).
-   *    처음엔 `m >= 1`로 막았는데, 그러면 **카드·readnext에만 있는 대상**(집합 축에서 제외된 부류)이
-   *    로케일에서 통째로 빠졌을 때 **두 축 모두 침묵한다.** 실례 = `zh-hant/texas-holdem-rules-for-beginners`의
-   *    `holdem-showdown-rules`·`holdem-all-in-rules`(EN 카드 6장 중 2장은 본문 마크다운에 없다) —
-   *    「카드 블록 통째 부재」라는 이 게이트의 대표 실증이 정작 그 두 자리를 못 내고 있었다.
+   * 🔴 **`m === 0`은 집합 축(`link`)이 보고한다 — 여기서는 «가지고 있는데 적게 거는» 자리만 본다.**
+   *    2026-09-14(Q6-a 렌즈 1 C-7 반영): 축을 가른 뒤 `linkCounts`에는 **본문 마크다운만** 들어가므로
+   *    `keys(linkCounts) ≡ link`가 **항등**이고, 이 조건은 구조적으로 «`m === 0`이면 항상 continue»가 된다.
+   *    🪶 그래서 2026-09-13 주석이 걱정한 «카드·readnext에만 있는 대상이 통째로 빠졌는데 두 축이 다 침묵»은
+   *    이제 `linkn`이 아니라 **`cardn`(형식별 장수)**이 덮는다 — 그 자리가 정확히 형식별 결손으로 나온다.
    */
   const fewer = [];
   for (const [slug, n] of en.linkCounts ?? []) {
     const m = loc.linkCounts?.get(slug) ?? 0;
     if (n <= m) continue;
-    if (m === 0 && en.link.has(slug)) continue; // 집합 축(`link`)이 이미 보고한다 — 두 번 세지 않는다
+    if (m === 0) continue; // 집합 축(`link`)이 이미 보고한다 — 두 번 세지 않는다
     fewer.push(`${slug} ${n}→${m}`);
   }
   if (fewer.length) out.linkn = fewer;
   return out;
+}
+
+/**
+ * 🔴 **파일 하나의 «최종 판정»** — `deficit()`(계수 차이)와 달리 «그 로케일이 실제로 할 수 있는 일인가»를 본다.
+ *    main()에 인라인으로 있던 것을 뽑았다(2026-09-14 Q6-a 렌즈 1 B-5: 새 규칙 7개 분기의 셀프테스트 커버리지가 0이었고
+ *    테스트 2개는 main()의 로직을 테스트 안에서 **재작성한 동어반복**이었다 — main()을 지워도 통과했다).
+ *    반환 = { d(지적) · impossible(대상 미보유로 뺀 link 수) · offsetSpots(상쇄로 뺀 linkn 자리 수) }
+ */
+export function judge(en, m, owned) {
+  const d = deficit(en, m);
+  let impossible = 0, offsetSpots = 0;
+  if (Array.isArray(d.link)) {
+    const gone = d.link.filter((t) => !owned.has(t));
+    impossible += gone.length;
+    const real = d.link.filter((t) => owned.has(t));
+    if (real.length) d.link = real; else delete d.link;
+  }
+  /**
+   * 🔴 **`linkn`에도 «보유» 필터를 건다** — ar처럼 8편뿐인 로케일이 **없는 글로 링크를 안 걸었다는 이유로**
+   *    결손으로 찍히던 자리(ar 4편 4자리 전건). 🪶 `linkn`은 `m >= 1`에서만 발화하므로 여기 걸리는 것은
+   *    «로케일이 자기가 없는 글로 실제 링크를 걸고 있다» = 404 신호다(현재 코퍼스 0건 · `check:intl-links`가 본다).
+   *    그래서 **«걸 수 없는 링크» 카운터에는 더하지 않는다**(단위가 다르다 — 렌즈 1 C-9).
+   */
+  if (Array.isArray(d.linkn)) {
+    const target = (x) => x.replace(/ \d+→\d+$/, '');
+    const real = d.linkn.filter((x) => owned.has(target(x)));
+    if (real.length) d.linkn = real; else delete d.linkn;
+  }
+  /**
+   * 🔴 **카드 결손은 «형식별로» 센다** (2026-09-14 Q6-a 렌즈 1 A-2·A-3·A-4 반영).
+   *    기대치 = EN이 그 형식에 건 대상 중 **그 로케일이 보유한 것의 수**(못 만드는 카드는 요구하지 않는다).
+   *    형식별이라 «블록이 통째로 없는» 자리는 그 형식 기대치가 통째로 결손으로 나온다 —
+   *    별도 `blockGone` 분기가 필요 없다(전엔 그 분기가 «장수 결손이 이미 있을 때»만 평가돼 8편을 놓쳤다).
+   *    🔴 **카드 결손에는 «상쇄»를 적용하지 않는다** — 축이 «장수»인데 «대상 수»로 면제하면 자기모순이고,
+   *    실제로 `zh-hant/holdem-tournament`의 카드 3장 소실이 그렇게 무성 통과했다.
+   */
+  const expRaw = en.cardRawT.filter((t) => owned.has(t)).length;
+  const expRn = en.cardRnT.filter((t) => owned.has(t)).length;
+  const cardDef = Math.max(0, expRaw - m.cardRaw) + Math.max(0, expRn - m.cardRn);
+  if (cardDef > 0) d.cardn = cardDef;
+  /**
+   * 🔴 **상쇄는 «본문 대상»으로만 판정한다** (렌즈 1 A-1 — 이 회차가 처음 넣었을 때의 구멍).
+   *    처음엔 대상 union에 카드 대상을 넣었는데, **카드 대상은 로케일이 고르는 자리**라
+   *    «카드를 다양하게 골랐다»는 이유만으로 본문 전파 누락이 지워졌다(실측 6편 8자리).
+   *    본문 대상이 EN보다 많을 때만 «반복을 다른 대상으로 바꿨다»가 성립한다.
+   */
+  if (d.linkn && m.link.size > en.link.size) { offsetSpots = d.linkn.length; delete d.linkn; }
+  return { d, impossible, offsetSpots };
 }
 
 function selftest() {
@@ -284,6 +463,12 @@ function selftest() {
   cases.push(['등재 안 된 종류는 예외가 아니다', !allowHit('ja', 'wsop-2026-tournament-guide', 'img')]);
   cases.push(['등재된 종류는 예외다(faq)', !!allowHit('es', 'wsop-2026-tournament-guide', 'faq')]);
   cases.push(['모든 예외 행에 사유가 있다', ALLOW.every((a) => typeof a.reason === 'string' && a.reason.length > 30)]);
+  /**
+   * 🔴 `spots`(자리 지문)는 **목록형 종류에만** 의미가 있다 — `cardn`·`h2` 같은 스칼라에 적으면
+   *    `applyAllow`가 «자리만 면제»가 아니라 **통째로 면제**한다(2026-09-14 Q6-a 2차 교열 #26).
+   *    그래서 표 자체를 검사한다: `spots`가 있는 행의 `kinds`는 `link`·`linkn`뿐이어야 한다.
+   */
+  cases.push(['🔴 spots 등재는 목록형(link·linkn)에만 붙는다', ALLOW.every((a) => !a.spots || a.kinds.every((k) => k === 'link' || k === 'linkn'))]);
   cases.push(['FAQ가 한 절에 모여 있으면 1', measure('## FAQ\n**Q. a**\n**Q. b**').faqSections === 1]);
   cases.push(['🔴 FAQ가 다른 절에도 박히면 2', measure('## 기억법\n**Q. a**\n## FAQ\n**Q. b**').faqSections === 2]);
   cases.push(['FAQ가 없으면 0', measure('## A\n본문').faqSections === 0]);
@@ -302,12 +487,38 @@ function selftest() {
   const locMore = measure('[a](/ja/blog/holdem-pot-odds) [b](/ja/blog/holdem-pot-odds) [c](/ja/blog/holdem-pot-odds)');
   cases.push(['EN보다 많이 걸면 결손이 아니다', !deficit(enTwice, locMore).linkn]);
   // 🔴 세 형식 전부 센다(렌즈 2 B-1) — 마크다운만 세면 EN 내부링크의 36%가 안 보인다
-  const rawA = measure('<a href="/en/blog/holdem-icm" style="x">ICM</a>');
-  cases.push(['생 <a href>는 «개수»에는 들고 «집합»에는 안 든다(카드는 로케일이 고른다)', rawA.linkCounts.get('holdem-icm') === 1 && !rawA.link.has('holdem-icm')]);
+  const rawA = measure('<a href="/en/blog/holdem-icm" style="display:block;padding:16px 18px">ICM</a>');
+  cases.push(['생 <a href>는 cardn에만 들고 집합·linkn에는 안 든다(대상은 로케일이 고른다)', rawA.cardn === 1 && !rawA.link.has('holdem-icm') && !rawA.linkCounts.get('holdem-icm')]);
   const card = measure(':::readnext[Keep reading]\n/en/blog/holdem-outs | How to Count Outs | /images/holdem-outs-hero.webp\n:::');
-  cases.push([':::readnext 카드 줄도 «개수»에 든다', card.linkCounts.get('holdem-outs') === 1 && !card.link.has('holdem-outs')]);
-  const mixed = measure('[a](/en/blog/holdem-icm) <a href="/en/blog/holdem-icm">b</a>');
-  cases.push(['형식이 섞여도 합산한다(형식별로 나눠 세지 않는다)', mixed.linkCounts.get('holdem-icm') === 2]);
+  cases.push([':::readnext 카드 줄도 cardn에 든다', card.cardn === 1 && !card.link.has('holdem-outs')]);
+  const mixed = measure('[a](/en/blog/holdem-icm) <a href="/en/blog/holdem-icm" style="display:block;padding:16px 18px">b</a>');
+  cases.push(['형식별로 축이 갈린다 — 마크다운 1(linkn) + 카드 1(cardn)', mixed.linkCounts.get('holdem-icm') === 1 && mixed.cardn === 1]);
+  const enCards = measure('<a href="/en/blog/holdem-outs" style="display:block;padding:16px 18px">1</a><a href="/en/blog/holdem-icm" style="display:block;padding:16px 18px">2</a>');
+  cases.push(['🔴 카드 대상이 달라도 장수가 같으면 조용하다', measure('<a href="/ja/blog/holdem-fish" style="display:block;padding:16px 18px">1</a><a href="/ja/blog/holdem-rake" style="display:block;padding:16px 18px">2</a>').cardn === enCards.cardn]);
+  cases.push(['🔴 카드 블록이 통째로 빠지면 장수 차이로 드러난다', enCards.cardn - measure('본문만').cardn === 2]);
+  cases.push(['🔴 형식별 카드 계수를 따로 센다(블록 부재 판정용)', measure('<a href="/en/blog/a-x" style="display:block;padding:16px 18px">1</a>').cardRaw === 1 && measure('/en/blog/b-y | t | /images/x.webp').cardRn === 1]);
+  /**
+   * 🔴 **판정 로직(`judge`)의 분기를 직접 먹인다** — 2026-09-14 Q6-a 렌즈 1 B-5:
+   *    이 자리에 있던 두 케이스는 main()의 로직을 테스트 안에서 재작성한 **동어반복**이라
+   *    main()을 통째로 지워도 통과했다. 아래는 `judge()`를 실제로 호출한다.
+   */
+  const CARD = (href) => `<a href="${href}" style="display:block;padding:16px">x</a>`;
+  const jEn = measure(`[a](/en/blog/holdem-pot-odds) [b](/en/blog/holdem-pot-odds)\n${CARD('/en/blog/holdem-icm')}\n/en/blog/holdem-icm | t | /i.webp`);
+  const jLoc = measure(`[a](/ja/blog/holdem-pot-odds)\n${CARD('/ja/blog/holdem-fish')}\n/ja/blog/holdem-rake | t | /i.webp`);
+  const own3 = new Set(['holdem-pot-odds', 'holdem-icm', 'holdem-fish', 'holdem-rake']);
+  const j1 = judge(jEn, jLoc, own3);
+  cases.push(['🔴 카드 대상만 늘어난 것은 상쇄가 아니다(본문 대상으로만 판정)', Array.isArray(j1.d.linkn) && j1.d.linkn[0] === 'holdem-pot-odds 2→1' && j1.offsetSpots === 0]);
+  const jLoc2 = measure('[a](/ja/blog/holdem-pot-odds) [c](/ja/blog/holdem-outs)\n' + CARD('/ja/blog/holdem-icm') + '\n/ja/blog/holdem-icm | t | /i.webp');
+  cases.push(['본문 대상이 EN보다 많으면 상쇄한다', !judge(jEn, jLoc2, new Set([...own3, 'holdem-outs'])).d.linkn]);
+  const cEn = measure(CARD('/en/blog/holdem-icm') + CARD('/en/blog/holdem-fish') + '\n/en/blog/holdem-rake | t | /i.webp');
+  const cLoc = measure(CARD('/ja/blog/holdem-outs'));
+  const jc = judge(cEn, cLoc, new Set(['holdem-icm', 'holdem-fish', 'holdem-rake', 'holdem-outs']));
+  cases.push(['🔴 형식별로 센다 — readnext 블록이 통째로 없으면 장수가 달라도 잡는다', jc.d.cardn === 2]);
+  cases.push(['🔴 카드 결손은 대상 수로 면제되지 않는다', judge(cEn, measure(CARD('/ja/blog/a-1') + '\n[x](/ja/blog/b-2) [y](/ja/blog/c-3)'), new Set(['holdem-icm','holdem-fish','holdem-rake','a-1','b-2','c-3'])).d.cardn === 2]);
+  cases.push(['🔴 못 만드는 카드는 기대치에서 깎는다(보유 0이면 결손 0)', !judge(cEn, measure('본문만'), new Set()).d.cardn]);
+  cases.push(['🔴 개수 결손도 «보유하지 않은 대상»은 제외한다', !judge(measure('[a](/en/blog/holdem-icm) [b](/en/blog/holdem-icm)'), measure('[a](/ja/blog/holdem-icm)'), new Set()).d.linkn]);
+  cases.push(['🔴 산문 인라인 <a>는 카드가 아니라 본문 링크다', measure('<a href="/en/blog/holdem-icm">x</a>').link.has('holdem-icm')]);
+  cases.push(['🔴 spots 등재는 «그 자리»만 뺀다', applyAllow('zh-hant', 'holdem-bubble', 'linkn', ['holdem-icm 3→1', 'holdem-rake 9→1']).value?.[0] === 'holdem-rake 9→1']);
   const ext2 = measure('<a href="https://example.com/blog/holdem-icm">x</a>');
   cases.push(['외부 도메인 <a>는 내부링크가 아니다', !ext2.link.has('holdem-icm')]);
   let pass = 0;
@@ -338,6 +549,8 @@ function main() {
   let allowed = 0;
   const stray = [];
   let unbuildable = 0;
+  const offsetFiles = new Set();
+  let offsetSpots = 0;
   const unbuildableLoc = new Map();
   const coreLines = [], tailByLoc = new Map(), linknLines = [];
   for (const loc of locales) {
@@ -357,27 +570,28 @@ function main() {
       const c = contentOf(fs.readFileSync(path.join(dir, f), 'utf8'));
       if (!c) continue;
       checked++;
-      let d = deficit(en, measure(c));
-      if (Array.isArray(d.link)) {
-        const impossible = d.link.filter((t) => !owned.has(t));
-        if (impossible.length) { unbuildable += impossible.length; unbuildableLoc.set(loc, (unbuildableLoc.get(loc) ?? 0) + impossible.length); }
-        const real = d.link.filter((t) => owned.has(t));
-        if (real.length) d.link = real; else delete d.link;
-      }
+      const m = measure(c);
+      const judged = judge(en, m, owned);
+      let d = judged.d;
+      if (judged.impossible) { unbuildable += judged.impossible; unbuildableLoc.set(loc, (unbuildableLoc.get(loc) ?? 0) + judged.impossible); }
+      if (judged.offsetSpots) { offsetFiles.add(`${loc}/${slug}`); offsetSpots += judged.offsetSpots; }
       const onlyKind = opt('only');
       if (onlyKind) d = Object.fromEntries(Object.entries(d).filter(([k]) => k === onlyKind));
       // 예외 등재분은 «지적»에서 뺀다(대신 마지막에 건수를 노출한다 — 조용히 사라지면 안 된다)
-      for (const k of Object.keys(d)) if (allowHit(loc, slug, k)) { delete d[k]; allowed++; }
-      if (measure(c).faqSections > 1) stray.push(`  🔴 ${loc}/${slug} — FAQ 문항이 FAQ 절 밖에도 있다(이식 사고 유형)`);
+      for (const k of Object.keys(d)) {
+        const r = applyAllow(loc, slug, k, d[k]);
+        if (r.allowed) allowed += r.allowed;
+        if (r.value === undefined) delete d[k]; else d[k] = r.value;
+      }
+      if (m.faqSections > 1) stray.push(`  🔴 ${loc}/${slug} — FAQ 문항이 FAQ 절 밖에도 있다(이식 사고 유형)`);
       /**
        * 🔴 `linkn`은 **자리마다 판정이 갈리는 신호**라 «핵심 = 🔴» 규칙에서 뺀다 (2026-09-13 Q7-b).
-       *    🔴 **첫 주사(마크다운만)의 「19편 전부 zh-hant」는 재현율이 낮은 상태의 그림이었다** —
-       *    세 형식을 다 세고 `m === 0`까지 보게 하자 **94편 · 160자리 · 15로케일**이 됐다
-       *    (zh-hant 40 · 꼬리 로케일 각 2~4 · ar 4 …). «zh-hant 단독 문제»로 읽으면 오진이다(2차 교열 B·C).
-       *    표본 원문 판정 = 세 기전이 섞여 있다 — ⓐ 진짜 결손(`drawing-odds` 인트로 썸네일 링크) ·
-       *    ⓑ **재저작이라 자리 자체가 없어진 것**(`when-to-fold` 마무리가 EN 산문 → zh-hant 5항 「濃縮版」) ·
-       *    ⓒ **구조 블록 부재**(`zh-hant/texas-holdem-rules-for-beginners`의 관련 글 카드 6장 → 0장).
+       *    🔴🔴 **2026-09-14(Q6-a) 정정 — 「세 형식을 다 세니 94편·160자리·15로케일」은 «재현율»이 아니라 «정밀도 붕괴»였다.**
+       *    당시 주석은 「첫 주사(마크다운만)의 19편 전부 zh-hant는 재현율이 낮은 그림」이라 적었는데, **그 판독이 오진이었다** —
+       *    ⓐ 보유 필터 누락(ar 4편 5자리) ⓑ 카드·readnext 큐레이션 ⓒ 상쇄 미고려를 걷어내자 **첫 주사가 맞았다**(zh-hant 단독).
+       *    지금 이 축이 내는 자리는 **본문 마크다운 링크의 «반복 횟수»뿐**이고, 카드 블록 부재는 `cardn`이 형식별로 낸다.
        *    → 자리별 원문 판정 전에는 🔴을 쓰지 않는다. 대신 **접지 않고 매 실행 전건 출력**한다.
+       *    🪶 판정 정본 = `docs/harden-queue-진행.md` §1-Q6-a.
        */
       if (d.linkn) { linknLines.push(`  🟠 ${loc}/${slug} — ${d.linkn.length}자리: ${d.linkn.join(' · ')}`); delete d.linkn; }
       const keys = Object.keys(d);
@@ -391,8 +605,9 @@ function main() {
   }
 
   console.log(`구조 계수 대조 · EN 마스터 ${enMap.size}편 · 대조 ${checked}편 · 🔴 핵심 결손 ${core}편 · 🟠 꼬리 결손 ${tail}편 · 🟠 링크 개수 결손 ${linknLines.length}편`);
-  console.log(`   핵심 = ${CORE_LOCALES.join(' ')} · 세는 것 = link(대상 slug 집합) linkn(같은 대상 링크 «개수») h2 h3 row li img faq`);
+  console.log(`   핵심 = ${CORE_LOCALES.join(' ')} · 세는 것 = link(본문 링크 대상 집합) linkn(같은 대상 본문 링크 «개수») cardn(카드·readnext «장수» · 대상 무관) h2 h3 row li img faq`);
   console.log(`   예외 등재로 제외 ${allowed}건 — 사유는 scripts/check-structure-parity.mjs의 ALLOW와 docs/locale-intentional-diffs.md`);
+  if (offsetSpots) console.log(`   🪶 «반복 링크를 다른 대상으로 바꾼» 상쇄 ${offsetSpots}자리(${offsetFiles.size}편) 제외 — 그 편의 «본문 링크 대상 수»가 EN보다 많다(기전 ⓑ · 판정 = docs/harden-queue-진행.md §1-Q6-a)`);
   if (unbuildable) console.log(`   🪶 «대상 글이 그 로케일에 없어서» 걸 수 없는 링크 ${unbuildable}건 제외 — ${[...unbuildableLoc].sort((a,b)=>b[1]-a[1]).map(([l,n])=>`${l} ${n}`).join(' · ')}`);
   if (stray.length) { console.log('\n🔴 FAQ 문항이 FAQ 절 밖에 있다(이식 사고):'); stray.forEach((l) => console.log(l)); }
   if (coreLines.length) { console.log('\n🔴 EN에 있고 로케일에 없는 구조:'); coreLines.forEach((l) => console.log(l)); }

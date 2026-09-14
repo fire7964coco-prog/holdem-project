@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "德州撲克牌型大小由大到小依序為：皇家同花順、同花順、四條、葫蘆、同花、順子、三條、兩對、一對、高牌。",
   category: "hand-rankings",
   date: "2026-07-22",
-  updated: "2026-09-10",
+  updated: "2026-09-14",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "14 分鐘",
@@ -296,6 +296,11 @@ A是最大的牌，也是唯一會「破例」的牌：它可以當大（A-K-Q-J
 打了這麼多年，不管坐了幾個小時，我到現在每一副牌都還是照這個順序掃：同花、順子、對子。==先看危險（檯面上的同花／順子），再看檯面有沒有成對（那會威脅到所有牌）。== 把它變成習慣，你就不會再在河牌倉促跟注了——想把這套[讀牌面的方法](/zh-hant/blog/holdem-reading-the-board)練到能反推檯面最強牌，再往下走一篇。
 
 ---
+
+:::readnext[繼續閱讀]
+/zh-hant/blog/holdem-flush-vs-straight | 同花跟順子哪個大？ | /images/holdem-flush-vs-straight-hero.webp
+/zh-hant/blog/holdem-tiebreak-rules | 牌型一樣誰贏？ | /images/holdem-tiebreak-hero.webp
+:::
 
 ## 常見問題 FAQ
 

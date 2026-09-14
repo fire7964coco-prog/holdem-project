@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "德州撲克每位玩家發 2 張底牌，搭配 5 張公牌，經過翻牌前、翻牌、轉牌、河牌四輪下注後，能組成最強 5 張牌型的人贏得底池。",
   category: "rules",
   date: "2026-07-22",
-  updated: "2026-09-13",
+  updated: "2026-09-14",
   masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "14 分鐘",
@@ -426,6 +426,7 @@ A♣4♦ 在新手眼裡很誘人——我看過的新玩家，用弱 A 輸掉�
 ---
 
 :::readnext[繼續閱讀]
+/zh-hant/blog/holdem-game-order | 德州撲克行動順序 | /images/blog-holdem-game-flow.webp
 /zh-hant/blog/holdem-hand-rankings | 德州撲克牌型大小排名 | /images/holdem-hand-rankings-hero.webp
 :::
 
@@ -508,5 +509,42 @@ A. 實體牌桌上，一手牌通常要 30 秒到 2 分鐘，不過多人入池�
 第一步，==先把流程學會==：盲注、兩張底牌、五張公牌、四輪下注、最強五張牌型獲勝。==g:再來才學位置、起手牌和基本的底池決策。==
 
 下一步，複習[德州撲克牌型大小排名](/zh-hant/blog/holdem-hand-rankings)，用[起手牌表](/hand-chart)練手，想搞懂某次跟注為什麼划算（或不划算）時，就打開[撲克機率計算器](/calculator)。
+
+---
+
+## 相關文章
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
+  <a href="/zh-hant/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">牌局流程</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">德州撲克行動順序</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">一手牌的完整流程——從翻牌前到攤牌，附真實範例</div>
+  </a>
+  <a href="/zh-hant/blog/holdem-hand-rankings" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">牌型大小</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">德州撲克牌型大小排名</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">全部 10 種牌型，附機率、範例和牌面練習題</div>
+  </a>
+  <a href="/zh-hant/blog/holdem-positions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">位置</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">德州撲克位置：從槍口位到按鈕位</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">9 人桌 vs 6 人桌各位置代號與行動順序</div>
+  </a>
+  <a href="/zh-hant/blog/holdem-betting-actions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">下注動作</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">過牌、跟注、加注、蓋牌逐一解說</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">每個動作的使用時機 + 決策表</div>
+  </a>
+  <a href="/zh-hant/blog/holdem-showdown-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">攤牌</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">攤牌規則：誰先亮牌？</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">最後加注者、蓋牌（Muck）、搓牌與全下規則</div>
+  </a>
+  <a href="/zh-hant/blog/holdem-all-in-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">全下</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">全下規則：邊池與再加注</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">主池、邊池，以及誰有資格再加注</div>
+  </a>
+</div>
 `.trim(),
 };

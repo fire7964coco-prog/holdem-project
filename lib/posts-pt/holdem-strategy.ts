@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Toda decisão vencedora no Texas Hold'em se resume a cinco perguntas que se repetem: onde estou sentado (posição), essa mão vale a pena jogar, eu aumento ou foldo (nunca dou limp), continuo apostando no flop, e quando eu largo a mão? Um jogador tight-aggressive que responde bem a essas cinco folda ~80% das mãos no pré-flop, joga com agressividade quando entra, e ganha de quase todo jogo casual — sem lista de dicas decorada.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-11",
+  updated: "2026-09-14",
   masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -179,8 +179,8 @@ TAG funciona porque ataca os dois maiores vazamentos de iniciante de uma vez —
 
 | Termo | O que significa | Onde aparece |
 |:---|:---|:---|
-| **Linear (merged)** | Um bloco sólido das melhores mãos, sem buracos | Aberturas padrão; 3-bets contra opens fracos |
-| **Polarizado** | Só mãos muito fortes + blefes — nada no meio | 3-bets dos blinds; apostas grandes no river e c-bets grandes em board molhado |
+| **Linear (merged)** | Um bloco sólido das melhores mãos, sem buracos | Aberturas padrão; 3-bets contra opens fracos — e do small blind |
+| **Polarizado** | Só mãos muito fortes + blefes — nada no meio | 3-bets do big blind; apostas grandes no river e c-bets grandes em board molhado |
 | **Capado** | Um range sem as mãos mais fortes possíveis | Quem só paga (as premium teriam aumentado) |
 | **Vantagem de range** | Não é um formato — é qual range conecta melhor com um board específico | A base de toda decisão de [c-bet](/pt/blog/holdem-continuation-bet) |
 
