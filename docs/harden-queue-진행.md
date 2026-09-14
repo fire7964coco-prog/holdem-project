@@ -831,6 +831,10 @@ tiebreak L55·L263·L277 ↔ EN L51·L175·L236·L250 · marathon L281 ↔ EN L2
   ② zh `holdem-pot-odds` ¾ 팟 행 **`2.3:1`**은 글이 강조하는 `1÷(X+1)`을 적용하면 30.3%인데 표는 30%다(정확값은 2.333:1 · **en·ja·zh-hant 동형** = EN-먼저 후보).
   ③ zh 조어 **`公共牌通杀`**(9자리)는 신마 독자에게 «딜러가 전원 베팅을 쓸어간다»로 먼저 읽힌다(바카라 용어) — 실제 뜻은 반대(전원 평분). zh 고유 조어라 EN-먼저 아님.
   ④ zh-hant `holdem-game-order:163`이 slow roll을 **`慢秀（Slow Roll）`**로 쓴다 — 코퍼스 정본은 `搓牌`(12회 · title·H2·glossary).
+     🔴 **단 «`搓牌`가 정본»은 그 자체로 판정 대기다**(2026-09-14 zh-hant 네이티브 렌즈 · 확신도 중): 대만·홍콩 일상어에서 `搓牌`는
+     **바카라식 「카드를 비벼 여는 동작」**으로 먼저 읽히고 현지 포커판은 영어 `slow roll`을 그대로 쓴다. `holdem-showdown-rules` title·H2 ·
+     `holdem-glossary` **3자리에 이미 고정**돼 있어 회차 범위를 넘는다 → `慢秀`를 `搓牌`로 통일하기 **전에** 이 판정부터 받아라
+     (settled §3 「표기 판정은 파일에서 센다」와 충돌하는 자리다 — 코퍼스 다수파가 곧 좋은 역어라는 뜻은 아니다).
   ⑤ 🆕 `pl/holdem-blind-meaning` **`cardn` −1**(`:::readnext` 블록이 없다) — 새 축이 찾은 꼬리 로케일 신호. §13급이 아니라 이 레인 범위 밖이다.
   ⑥ zh-hant `holdem-probability`의 카드·readnext 대상이 **EN·zh와 다르다**(shc → beginners) — 장수가 같아 게이트가 원리상 못 본다. 등재 또는 교체 판정 필요.
 - ✅ **Q6a-8 머지 뒤 sitemap 재생성** → `430ca145`(lastmod 18행 · 18편과 일치 실측): 이 회차가 **18편의 `updated`를 09-14로 올렸다** → `public/sitemap.xml`의 `lastmod` **18행**이 바뀐다.
