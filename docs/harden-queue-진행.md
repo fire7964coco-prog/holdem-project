@@ -792,7 +792,7 @@ tiebreak L55·L263·L277 ↔ EN L51·L175·L236·L250 · marathon L281 ↔ EN L2
 
 ### Q6-a (2026-09-14 · 표기·용어 통일 + 게이트 정밀도 — **배포가 걸린 회차다**)
 
-- 🔴 **Q6a-1 MB 초안**(EN 변경 **0** · 그래도 8로케일 중 5가 바뀌었으니 앵커 갱신 통지가 필요하다):
+- ✅ **Q6a-1 MB 초안** → **발신 완료 = MB-051**(2026-09-14 · 검수장). 원문(EN 변경 **0** · 그래도 8로케일 중 5가 바뀌었으니 앵커 갱신 통지가 필요하다):
   > queue 회차 Q6-a — **EN 파일 변경 0**. 바뀐 것 = zh 8편 · zh-hant 7편 · ja 1편 · pt 1편 · de 1편.
   > ① **표기 통일**: zh `打公牌`·`打牌面` → **`打公共牌`**(23자리) · zh `开口顺` → **`两头顺`**(19자리) ·
   > zh-hant `中洞` → **`卡順`**(10자리) · zh-hant `打牌面` → **`打公牌`**(4자리) · ja 용어집 표제어 **3표기 병기**.
@@ -804,7 +804,7 @@ tiebreak L55·L263·L277 ↔ EN L51·L175·L236·L250 · marathon L281 ↔ EN L2
 > zh `开口顺` 20 → **1**(🔴 0이 아니다 — `holdem-outs:30`의 별칭 병기 「两头顺（开口顺）」를 일부러 남겼다).
   > 🔴 되돌리지 마라: 표기 정본이 **zh ↔ zh-hant 반대**다(`打公共牌` ↔ `打公牌`) · zh `二四法则（也叫"四二法则"）`·`两头顺（开口顺）` 별칭 병기는 존치 ·
   > zh-hant에는 `中洞` 병기를 **일부러 두지 않았다**(대만 SERP = 마작 용어).
-- 🔴 **Q6a-2 `settled-decisions` 승격 요청 3건**:
+- ✅ **Q6a-2 `settled-decisions` 승격 요청 3건** → **승격 완료**(①은 기존 **§3-E**에 「다섯 번째 실례 · 이번엔 게이트가 0바이트」로 합쳤다 — 새 절을 만들지 않았다 · ②③은 §3 새 불릿 2개):
   ① **«파일 쓰기는 인코딩을 먼저 끝내고 tmp → rename»** — 이번 회차에 `UnicodeEncodeError`가 **파일을 비운 뒤** 터져
      `scripts/check-structure-parity.mjs`가 **0바이트**가 됐다(미커밋이라 복구 · 수정 96줄 재작업). 편집기 사고 계열의 다섯 번째 실례다.
      처방은 «조심하기»가 아니라 **쓰기 순서**다: `data = s.encode('utf-8')` → tmp 파일 → `os.replace`.
@@ -812,30 +812,30 @@ tiebreak L55·L263·L277 ↔ EN L51·L175·L236·L250 · marathon L281 ↔ EN L2
      정밀도가 무너져 94편·160자리가 됐고, 축을 가르니 **첫 주사(19편·zh-hant 단독)가 맞았다**는 게 드러났다.
      🔴 **«N편 결손»은 일감이 아니라 가설이다 — 정밀도부터 세워라.**
   ③ **«목록형 지적의 예외는 «판정한 자리»(spots)까지 적어라»** — `kinds`만 등재하면 그 파일의 **미래 결함까지** 면제된다.
-- 🟠 **Q6a-3 `locale-intentional-diffs` 등재 요청 4건**(레인 소유 아님):
+- ✅ **Q6a-3 `locale-intentional-diffs` 등재 요청 4건** → **4행 등재 완료**(2026-09-14 행)(레인 소유 아님):
   ① **zh-hant 링크 정책** = 같은 대상을 반복해 걸지 않고 대상 수를 늘린다(코퍼스 771/432 ↔ EN 756/378 · 8자리 원문 판정 · 게이트 ALLOW `spots` 8행).
   ② **카드·readnext 대상은 로케일이 고른다** — `wsop-2026-tournament-guide`의 es·ja·zh는 EN의 icm 대신 **지역 대회 가이드**를 고른다(장수는 같다).
   ③ **`zh-hant/holdem-tournament` 카드 4+2 재선정**(strategy·glossary = EN에 없는 대상).
   ④ **«play the board» 정본이 zh ↔ zh-hant 반대**(기반 용어가 반대다) · **gutshot 구용어 병기 비대칭**(zh 有 / zh-hant 無 · 대만 SERP 근거).
-- 🟠 **Q6a-4 다른 레인 문서의 대기 항목 종결 표기**(그 파일은 레인 소유가 아니다):
+- ✅ **Q6a-4 다른 레인 문서의 대기 항목 종결 표기** → **3건 처리 완료**(브리프 1 · `harden-zh-진행` 2 · 인용부호는 «정본 `“ ”` · 스윕은 Q6-b»로 적었다)(그 파일은 레인 소유가 아니다):
   ① `docs/harden-brief/zh-트랙종결.md:167` 「比率↔百分比 절 두 개 = **헤드 판정 대기** · 통합하지 마라」 → **Q6-a가 통합했다**(사문).
   ② `docs/harden-zh-진행.md` §2의 🟠 「`pot-odds`에 比率↔百分比 절이 두 개 … 헤드 판정」 → **종결**.
   ③ `docs/harden-zh-진행.md` §2·§5-9의 🔴 「인용부호 3갈래 — 헤드가 한쪽으로 정해 줄 것」 → **정해 줬다**(zh = `“ ”` · 스윕은 Q6-b).
-- 🟠 **Q6a-5 ja·zh·zh-hant 파일을 만졌다**(§6-0 통지용 목록 · 세 레인 워크트리는 착수 시점에 전부 clean이었다):
+- ✅ **Q6a-5 ja·zh·zh-hant 파일을 만졌다** → 세 레인 `HARDEN.md`에 **§6-0 통지 완료**(§6-0 통지용 목록 · 세 레인 워크트리는 착수 시점에 전부 clean이었다):
   `lib/posts-zh/` **8편**(holdem-outs · holdem-flush-vs-straight · holdem-pot-odds · holdem-probability · holdem-reading-the-board ·
   holdem-split-pot-rules · holdem-tiebreak-rules · paired-board-strategy) ·
   `lib/posts-zh-hant/` **7편**(holdem-outs · holdem-hand-rankings · holdem-probability · texas-holdem-rules-for-beginners ·
   holdem-game-order · holdem-reading-the-board · paired-board-strategy) · `lib/posts-ja/` **1편**(holdem-glossary).
-- 🟠 **Q6a-6 새 부채 등재 요청**(핸드오프 미결 · 이 회차가 만든 것이 아니다):
+- ✅ **Q6a-6 새 부채 등재 요청** → **핸드오프 「미결」에 6건 등재 완료**(핸드오프 미결 · 이 회차가 만든 것이 아니다):
   ① zh 직답 2자리 규격 초과 — `holdem-pot-odds:219` **146자** · `holdem-outs:102` **133자**(zh 한도 130).
   ② zh `holdem-pot-odds` ¾ 팟 행 **`2.3:1`**은 글이 강조하는 `1÷(X+1)`을 적용하면 30.3%인데 표는 30%다(정확값은 2.333:1 · **en·ja·zh-hant 동형** = EN-먼저 후보).
   ③ zh 조어 **`公共牌通杀`**(9자리)는 신마 독자에게 «딜러가 전원 베팅을 쓸어간다»로 먼저 읽힌다(바카라 용어) — 실제 뜻은 반대(전원 평분). zh 고유 조어라 EN-먼저 아님.
   ④ zh-hant `holdem-game-order:163`이 slow roll을 **`慢秀（Slow Roll）`**로 쓴다 — 코퍼스 정본은 `搓牌`(12회 · title·H2·glossary).
   ⑤ 🆕 `pl/holdem-blind-meaning` **`cardn` −1**(`:::readnext` 블록이 없다) — 새 축이 찾은 꼬리 로케일 신호. §13급이 아니라 이 레인 범위 밖이다.
   ⑥ zh-hant `holdem-probability`의 카드·readnext 대상이 **EN·zh와 다르다**(shc → beginners) — 장수가 같아 게이트가 원리상 못 본다. 등재 또는 교체 판정 필요.
-- 🔴 **Q6a-8 머지 뒤 sitemap 재생성**: 이 회차가 **18편의 `updated`를 09-14로 올렸다** → `public/sitemap.xml`의 `lastmod` **18행**이 바뀐다.
+- ✅ **Q6a-8 머지 뒤 sitemap 재생성** → `430ca145`(lastmod 18행 · 18편과 일치 실측): 이 회차가 **18편의 `updated`를 09-14로 올렸다** → `public/sitemap.xml`의 `lastmod` **18행**이 바뀐다.
   레인은 규율대로 커밋하지 않았다(`git checkout -- public/sitemap.xml`). Q5-b 때처럼 **머지 후 `chore(sitemap)` 커밋**이 필요하다.
-- 🪶 **Q6a-7 정본에서 지워도 되는 것**: 핸드오프 「▶ 그밖에 열 수 있는 것」의 **zh 표기 통일 행** · **헤드 판정 6건 행 중 4건**
+- ✅ **Q6a-7 정본에서 지워도 되는 것** → **핸드오프에서 삭제 완료**(zh 표기 통일 행 · 헤드 판정 6건 중 4건 · 링크 개수 94편 행 · pt `holdem-strategy:183` 행). 남은 3건은 「→ queue Q6-b가 받는다」 한 줄로 남겼다. 원문 요청: 핸드오프 「▶ 그밖에 열 수 있는 것」의 **zh 표기 통일 행** · **헤드 판정 6건 행 중 4건**
   (ja 전각（） · 見出し 콜론 · `drawing-odds` `## FAQ` · pt `holdem-strategy:183`) · 미결 「링크 개수 결손 94편」 행.
   남는 것 = zh-hant `快速解答` 상자 · zh-hant probability FAQ 10:15:16 · 부분문자열 태그 쌍(→ **Q6-b**).
 
