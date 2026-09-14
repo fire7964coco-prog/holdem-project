@@ -60,7 +60,7 @@ export const SOLVER_FAQ_DE: FaqItem[] = [
   },
   {
     q: "Brauche ich ein Konto oder eine Anmeldung?",
-    a: "Nein. Du öffnest die Seite und rechnest. Der Login dient nur dazu, deinen Trainer-Verlauf zwischen Geräten zu synchronisieren – wer ihn nicht nutzt, verliert keine einzige Funktion.",
+    a: "Nein. Du öffnest die Seite und rechnest. Mit Login kannst du den Übungsverlauf aus Lernspots und täglichen Aufgaben im Konto speichern und auf anderen Geräten weiterführen. Selbst berechnete Spots und ihr Übungsverlauf bleiben auch mit Login nur auf diesem Gerät. Zum Rechnen und Üben brauchst du kein Konto.",
   },
   {
     q: "Muss ich etwas installieren?",
@@ -115,7 +115,7 @@ export const SOLVER_FAQ_DE: FaqItem[] = [
   },
   {
     q: "Werden meine Ranges an einen Server geschickt?",
-    a: "Nein. Gerechnet wird auf dem Prozessor deines eigenen Geräts, nicht auf unseren Servern. Gespeicherte Ranges bleiben in deinem Browser und verlassen ihn nur, wenn du einen Teilen-Link erzeugst oder eine Datei exportierst. Die Ausnahme ist der Trainer-Verlauf: Wenn du dich einloggst, liegt er in deinem Konto, damit du ihn auf einem anderen Gerät weiterführen kannst.",
+    a: "Nein. Gerechnet wird auf dem Prozessor deines eigenen Geräts, nicht auf unseren Servern. Gespeicherte Ranges bleiben in deinem Browser und verlassen ihn nur, wenn du einen Teilen-Link erzeugst oder eine Datei exportierst. Mit Login kannst du den Übungsverlauf aus Lernspots und täglichen Aufgaben im Konto speichern und auf anderen Geräten weiterführen. Selbst berechnete Spots und ihr Übungsverlauf bleiben auch mit Login nur auf diesem Gerät.",
   },
   {
     q: "Berücksichtigt der Poker Solver den Rake?",
@@ -138,10 +138,9 @@ export const SOLVER_FAQ_DE: FaqItem[] = [
     a: "Gerechnet wird Chip-EV, das passt also direkt aufs Cash Game und auf Turnierphasen, in denen ICM noch kaum ins Gewicht fällt. Nahe der Bubble und an den Preissprüngen kann die richtige Entscheidung von der Chip-EV-Lösung abweichen – das ist eine andere Rechnung, die dieses Werkzeug nicht macht.",
   },
   {
-    // ⚠ 언어 열거는 앱 셀렉터(8개: ko,en,ja,es,pt,de,zh,zh-hant)와 1:1이 아니다 — 간체·번체를
-    //    «Chinesisch» 하나로 묶었다(숫자를 주장하지 않으므로 허용 · M-046 §3 판정과 같은 처리).
+    // 해당 언어 지원 여부만 안내한다. 앱 언어 선택기·다른 언어 열거는 넣지 않는다.
     q: "Ist die Oberfläche auf Deutsch?",
-    a: "Ja, komplett – Menüs, Lernspots und Trainer sind lokalisiert, keine Teilübersetzung. In der Sprachauswahl kannst du außerdem auf Koreanisch, Englisch, Japanisch, Spanisch, Portugiesisch, Französisch und Chinesisch umschalten.",
+    a: "Ja, komplett – Menüs, Lernspots und Trainer sind lokalisiert, keine Teilübersetzung.",
   },
   {
     // 🔴 `poker simulator kostenlos`(20 · +50%) 흡수 + 게임 의도(`poker simulator` 390 SERP

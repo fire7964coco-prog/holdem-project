@@ -145,7 +145,7 @@ const SOLVER_URL = "https://solver.holdemmaster.com/?lang=pt";
 const SPEC: [string, string][] = [
   ["Preço", "Grátis — todos os recursos, sem limite de uso"],
   ["Instalação", "Não precisa — roda no navegador (WebAssembly)"],
-  ["Conta", "Não precisa (o login só sincroniza o histórico do Treinador · os spots que você calculou ficam neste aparelho)"],
+  ["Conta", "Não precisa (sincronização opcional do histórico · seus spots calculados e o histórico de treino deles ficam neste aparelho)"],
   ["Alcance", "Depois do flop, heads-up (flop, turn e river)"],
   ["Onde o cálculo roda", "No seu aparelho, não em um servidor nosso"],
   ["Compatibilidade", "Navegadores modernos — Windows, macOS, Linux e celular"],
@@ -692,8 +692,10 @@ export default function SolverClientPt() {
           <li className="text-muted-foreground">
             A sequência de acertos, o detalhamento dos pontos fracos e a{" "}
             <strong className="text-foreground">fila de revisão</strong> com os exercícios em que você
-            mais perdeu EV são construídos com esse histórico. Se você não fizer login, tudo fica no
-            seu aparelho
+            mais perdeu EV são construídos com esse histórico. Por padrão, ele fica neste aparelho.
+            Se fizer login, o histórico de treino dos spots de estudo e das questões do dia fica salvo
+            na sua conta para você continuar em outro aparelho. Os spots que você calculou e o histórico
+            de treino deles ficam só neste aparelho, mesmo com login
           </li>
         </ul>
         <div className="mt-5">

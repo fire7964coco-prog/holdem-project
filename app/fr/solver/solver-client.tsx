@@ -97,7 +97,7 @@ const SOLVER_URL = "https://solver.holdemmaster.com/?lang=fr";
 const SPEC: [string, string][] = [
   ["Prix", "Gratuit — toutes les fonctions, sans limite d'usage"],
   ["Installation", "Aucune — il tourne dans ton navigateur (WebAssembly)"],
-  ["Compte", "Aucun (la connexion ne sert qu'à synchroniser le Trainer · tes propres spots calculés restent sur cet appareil)"],
+  ["Compte", "Aucun (synchronisation facultative de l'historique · tes spots calculés et leur historique d'entraînement restent sur cet appareil)"],
   ["Couverture", "Postflop, heads-up (flop · turn · river)"],
   // 🪶 네이티브 렌즈(2026-08-25): «rien ne» 절대문 대신 계산 한정으로(트레이너 동기화 예외와 정합).
   ["Où se fait le calcul", "Sur ton propre appareil — tes calculs ne passent pas par nos serveurs"],
@@ -621,8 +621,11 @@ export default function SolverClientFr() {
           <li className="text-muted-foreground">
             Séries de bonnes réponses, analyse des points faibles et{" "}
             <strong className="text-foreground">bouton Révision</strong> (les mains où tu perds le
-            plus d'EV reviennent) s'appuient sur ton historique. Sans connexion, il reste sur ton
-            appareil
+            plus d'EV reviennent) s'appuient sur ton historique. Par défaut, il reste sur cet appareil.
+            Si tu te connectes, l'historique d'entraînement des spots d'étude et des questions du jour
+            est enregistré sur ton compte pour continuer sur un autre appareil. Tes propres spots
+            calculés et leur historique d'entraînement restent uniquement sur cet appareil, même si tu
+            te connectes
           </li>
         </ul>
         <div className="mt-5">

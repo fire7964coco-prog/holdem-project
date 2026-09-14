@@ -68,7 +68,7 @@ export const SOLVER_FAQ_PT: FaqItem[] = [
   },
   {
     q: "Preciso me cadastrar ou criar uma conta?",
-    a: "Não. Você abre a página e calcula. O login serve só para sincronizar o seu histórico do Treinador entre aparelhos — se você não usar, não perde nenhuma função.",
+    a: "Não. Você abre a página e calcula. Se fizer login, o histórico de treino dos spots de estudo e das questões do dia fica salvo na sua conta para você continuar em outro aparelho. Os spots que você calculou e o histórico de treino deles ficam só neste aparelho, mesmo com login.",
   },
   {
     q: "Tem alguma coisa para instalar?",
@@ -120,7 +120,7 @@ export const SOLVER_FAQ_PT: FaqItem[] = [
   },
   {
     q: "Os meus ranges são enviados para algum servidor?",
-    a: "Não. O cálculo roda no processador do seu próprio aparelho, não em um servidor nosso. Os ranges que você salva ficam no seu navegador e só saem de lá se você gerar um link para compartilhar um spot ou exportar um arquivo. A exceção é o histórico do Treinador: se você fizer login, ele fica salvo na sua conta para poder ser visto de outro aparelho.",
+    a: "Não. O cálculo roda no processador do seu próprio aparelho, não em um servidor nosso. Os ranges que você salva ficam no seu navegador e só saem de lá se você gerar um link para compartilhar um spot ou exportar um arquivo. Se fizer login, o histórico de treino dos spots de estudo e das questões do dia fica salvo na sua conta. Os spots que você calculou e o histórico de treino deles ficam só neste aparelho, mesmo com login.",
   },
   {
     q: "O solver leva o rake em conta?",
@@ -135,7 +135,7 @@ export const SOLVER_FAQ_PT: FaqItem[] = [
   },
   {
     q: "Dá para salvar um spot e compartilhar?",
-    a: "Dá. Você pode salvar ranges e configurações, importar e exportar como arquivo, tirar o resumo dos resultados em CSV e gerar um link que abre exatamente o mesmo spot no aparelho de outra pessoa. É a forma mais rápida de perguntar uma mão no grupo de estudo.",
+    a: "Dá. Você pode salvar ranges e configurações, importar e exportar como arquivo, tirar o resumo dos resultados em CSV e gerar um link que abre exatamente o mesmo spot no aparelho de outra pessoa. É a forma mais rápida de perguntar uma mão no grupo de estudo. Se você salvar um spot que calculou como questões do Treinador, essas questões e o histórico de treino delas ficam só neste aparelho, mesmo com login; não são sincronizados com a sua conta.",
   },
   {
     q: "Serve para torneio ou só para cash?",
@@ -143,7 +143,7 @@ export const SOLVER_FAQ_PT: FaqItem[] = [
   },
   {
     q: "O aplicativo está em português?",
-    a: "Está, a interface inteira em português, e você também pode trocar para coreano, inglês, japonês, espanhol, alemão, francês e chinês no seletor de idioma. Não é tradução parcial: os menus, os spots de estudo e o Treinador estão localizados.",
+    a: "Sim, a interface inteira está em português. Não é tradução parcial: os menus, os spots de estudo e o Treinador estão localizados.",
   },
   {
     q: "Onde encontro material de estudo de poker de graça?",

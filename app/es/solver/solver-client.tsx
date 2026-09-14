@@ -133,7 +133,7 @@ const SOLVER_URL = "https://solver.holdemmaster.com/?lang=es";
 const SPEC: [string, string][] = [
   ["Precio", "Gratis — todas las funciones, sin límite de uso"],
   ["Instalación", "No hace falta — corre en el navegador (WebAssembly)"],
-  ["Cuenta", "No hace falta (el inicio de sesión solo sincroniza el historial del Entrenador · los spots que calculaste se quedan en este dispositivo)"],
+  ["Cuenta", "No hace falta (sincronización opcional del historial · tus spots calculados y su historial de práctica se quedan en este dispositivo)"],
   ["Alcance", "Postflop heads-up (flop, turn y river)"],
   ["Dónde se calcula", "En tu dispositivo, no en un servidor nuestro"],
   ["Compatibilidad", "Navegadores modernos — Windows, macOS, Linux y móvil"],
@@ -656,7 +656,10 @@ export default function SolverClientEs() {
           <li className="text-muted-foreground">
             La racha de aciertos, el desglose de puntos débiles y la{" "}
             <strong className="text-foreground">cola de repaso</strong> con los ejercicios donde más EV
-            has perdido se construyen con ese historial. Si no inicias sesión, se queda en tu dispositivo
+            has perdido se construyen con ese historial. Por defecto, se guarda en este dispositivo.
+            Si inicias sesión, el historial de práctica de los spots de estudio y las preguntas del día
+            se guarda en tu cuenta para continuar desde otro dispositivo. Los spots que calculaste y
+            su historial de práctica se quedan solo en este dispositivo, incluso si inicias sesión
           </li>
         </ul>
         <div className="mt-5">

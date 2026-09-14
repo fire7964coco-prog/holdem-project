@@ -49,7 +49,7 @@ export const SOLVER_FAQ_FR: FaqItem[] = [
   },
   {
     q: "Faut-il créer un compte ?",
-    a: "Non. Tu ouvres la page et tu calcules. La connexion ne sert qu'à une chose : synchroniser ton historique du Trainer entre plusieurs appareils. Sans compte, aucune fonction ne manque.",
+    a: "Non. Tu ouvres la page et tu calcules. Si tu te connectes, l'historique d'entraînement des spots d'étude et des questions du jour est enregistré sur ton compte pour continuer sur un autre appareil. Tes propres spots calculés et leur historique d'entraînement restent uniquement sur cet appareil, même si tu te connectes.",
   },
   {
     q: "Faut-il télécharger ou installer quelque chose ?",
@@ -111,7 +111,7 @@ export const SOLVER_FAQ_FR: FaqItem[] = [
   },
   {
     q: "Mes ranges sont-elles envoyées sur un serveur ?",
-    a: "Non. Le calcul tourne sur le processeur de ton propre appareil, sans passer par nos serveurs. Les ranges sauvegardées restent dans ton navigateur ; elles n'en sortent que si tu génères un lien de partage ou exportes un fichier. Seule exception : l'historique du Trainer — connecté, il est stocké sur ton compte pour que tu puisses continuer sur un autre appareil.",
+    a: "Non. Le calcul tourne sur le processeur de ton propre appareil, sans passer par nos serveurs. Les ranges sauvegardées restent dans ton navigateur ; elles n'en sortent que si tu génères un lien de partage ou exportes un fichier. Si tu te connectes, l'historique d'entraînement des spots d'étude et des questions du jour est enregistré sur ton compte. Tes propres spots calculés et leur historique d'entraînement restent uniquement sur cet appareil, même si tu te connectes.",
   },
   {
     q: "Le rake est-il pris en compte ?",
@@ -129,16 +129,15 @@ export const SOLVER_FAQ_FR: FaqItem[] = [
   },
   {
     q: "Je peux sauvegarder et partager mes spots ?",
-    a: "Oui. Ranges et réglages se sauvegardent, s'importent et s'exportent ; le récapitulatif s'exporte en CSV ; et un lien de partage ouvre exactement le même spot sur l'appareil de quelqu'un d'autre. Pour débriefer une main avec un ami, c'est le chemin le plus court.",
+    a: "Oui. Ranges et réglages se sauvegardent, s'importent et s'exportent ; le récapitulatif s'exporte en CSV ; et un lien de partage ouvre exactement le même spot sur l'appareil de quelqu'un d'autre. Pour débriefer une main avec un ami, c'est le chemin le plus court. Si tu enregistres un spot que tu as calculé comme exercices du Trainer, ces exercices et leur historique d'entraînement restent uniquement sur cet appareil, même si tu te connectes ; ils ne sont pas synchronisés avec ton compte.",
   },
   {
     q: "C'est adapté au cash game ou au tournoi ?",
     a: "Il calcule en EV jetons (chip EV) : directement valable en cash game, et dans les phases de tournoi où l'ICM pèse encore peu. À l'approche de la bulle et des paliers de paiement, la bonne décision peut s'écarter de la réponse en EV jetons — c'est un autre calcul, que cet outil ne fait pas.",
   },
   {
-    // 🟢 언어 열거가 앱 셀렉터(9개)와 1:1이다 — fr 배포로 9언어가 됐다(2026-08-24 실측).
     q: "L'interface est-elle en français ?",
-    a: "Oui, entièrement — menus, spots d'étude, Trainer : tout est localisé, pas une traduction à moitié faite. Le sélecteur de langue propose aussi l'anglais, le coréen, le japonais, l'espagnol, le portugais, l'allemand, le chinois simplifié et le chinois traditionnel.",
+    a: "Oui, entièrement — menus, spots d'étude, Trainer : tout est localisé, pas une traduction à moitié faite.",
   },
   {
     // 🔴 게임 의도 방어 — `simulateur poker`(170·상승)는 «플레이» 의도 의심이라 조준 금지(뱅크 §1-④).

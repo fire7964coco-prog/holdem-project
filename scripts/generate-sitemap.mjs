@@ -173,6 +173,8 @@ const STATIC_ROUTES = [
    *   🔴 빌드 후 `.next/server/app/id/solver.html`의 meta가 **index, follow**인지 확인할 것.
    */
   { path: "/id/solver", priority: "0.7", changefreq: "monthly" },
+  // `/ms/solver` — 형제 솔버 랜딩과 같은 가중치. hreflang은 각 page.tsx에서 선언한다.
+  { path: "/ms/solver", priority: "0.7", changefreq: "monthly" },
 
   /**
    * ★`/holdem-practice` 누락 복구 (2026-08-04). 색인 가능(index, follow)하고 좌측 레일에도

@@ -85,6 +85,8 @@ const LOCALE_HUB_ROUTES: Record<string, readonly string[]> = {
   //      ⚠ **fr과 같은 모양이다** — `app/id/`에 있는 것은 blog·solver·page.tsx뿐이라
   //      **`/id/tournaments`도 없다.** 없는 라우트를 넣지 마라.
   id: ["/id/blog", "/id/solver"],
+  // ms — 솔버만 HubPage로 감싼다. 블로그 목록은 아직 자체 크롬을 쓴다.
+  ms: ["/ms/solver"],
 };
 
 /**

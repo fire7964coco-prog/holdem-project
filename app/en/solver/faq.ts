@@ -44,7 +44,7 @@ export const SOLVER_FAQ_EN: FaqItem[] = [
   },
   {
     q: "Is this GTO solver really free?",
-    a: "Yes. Every feature is free with no usage limits, no payment method, no locked tier and no account required. Signing in is optional and only syncs your trainer history across devices. The solver is built on the open-source engine WASM Postflop (AGPL-3.0), and HoldemMaster's modified source code is published under the same license.",
+    a: "Yes. Every feature is free with no usage limits, no payment method, no locked tier and no account required. Signing in is optional and syncs your history for Study Spots and Daily Challenge across devices. Your own solved spots and their practice history stay on this device, even when signed in. The solver is built on the open-source engine WASM Postflop (AGPL-3.0), and HoldemMaster's modified source code is published under the same license.",
   },
   {
     q: "Do I need to download or install anything?",
@@ -52,7 +52,7 @@ export const SOLVER_FAQ_EN: FaqItem[] = [
   },
   {
     q: "How accurate is a browser-based solver?",
-    a: "It runs the same iterative algorithm desktop solvers use, and you set the accuracy yourself: the target exploitability defaults to 0.5% and can be lowered at the cost of solve time. The real limits are memory and speed, not correctness — a browser tab can address about 4GB, so very large trees are better suited to a desktop solver.",
+    a: "You set the target exploitability, and the solver iterates toward it. Lower targets require more solve time; check the final exploitability because calculation can also stop at the iteration limit. The result applies to the ranges and decision tree you supplied. Memory and speed limit the size of the tree — the WebAssembly engine can address about 4GB, so very large trees are better suited to a desktop solver.",
   },
   {
     q: "How do I use a poker solver for the first time?",
@@ -82,7 +82,7 @@ export const SOLVER_FAQ_EN: FaqItem[] = [
   },
   {
     q: "What is the GTO Trainer?",
-    a: "It is a drill mode built on the solved study spots. The trainer draws its questions from several decision points across the solved spots, so the combinations run past ten thousand, and it deals you hands drawn from the actual GTO range weights — so a hand shows up as often as you would really hold it there. You pick an action and it grades the decision against the solution.",
+    a: "It is a drill mode built on the solved study spots. The trainer draws its questions from several decision points across the solved spots, so the combinations run past ten thousand, and it deals you hands drawn from the actual GTO range weights — so a hand shows up as often as you would really hold it there. You pick an action and it grades the decision against the solution. You can also save your own solved spots as trainer questions from the results screen and practice them on this device.",
   },
   {
     q: "Why does the trainer grade by EV loss instead of right or wrong?",
@@ -96,7 +96,7 @@ export const SOLVER_FAQ_EN: FaqItem[] = [
   },
   {
     q: "Where is my study progress saved?",
-    a: "On your device by default, with no account needed. If you sign in with a HoldemMaster account you can keep the history on the account and continue on another device. Streaks, weak-spot breakdowns by scenario, and the Review queue of your biggest EV losses all run on that history.",
+    a: "On your device by default, with no account needed. If you sign in with a HoldemMaster account, your history for Study Spots and Daily Challenge can sync across devices. Your own solved spots and their practice history stay on this device even when signed in; they are not saved to your account. Streaks, weak-spot breakdowns by scenario, and the Review queue of your biggest EV losses use your practice history.",
   },
   {
     q: "Can I install it to my home screen?",

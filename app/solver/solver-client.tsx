@@ -58,7 +58,7 @@ const SOLVER_URL = "https://solver.holdemmaster.com/?lang=ko";
 const SPEC = [
   ["가격", "완전 무료 · 횟수 제한 없음"],
   ["설치", "없음 — 브라우저에서 바로 실행(WebAssembly)"],
-  ["회원가입", "필요 없음 (로그인은 학습 기록 동기화용 선택 사항 · 직접 계산한 스팟은 이 기기에만)"],
+  ["회원가입", "필요 없음 (로그인은 교육 예제·오늘의 문제 기록 동기화용 · 직접 계산한 스팟과 연습 기록은 이 기기에만)"],
   ["다루는 구간", "포스트플랍(플랍·턴·리버) 헤즈업 2인"],
   ["계산 위치", "내 컴퓨터 CPU · 입력한 핸드가 서버로 전송되지 않음"],
   ["화면 언어", "한국어 (용어는 한국 홀덤 커뮤니티 표현)"],
@@ -153,7 +153,7 @@ const SPOT_GROUPS = [
     items: [
       { n: "⑧", slug: "3bet-pot-cbet", board: "A♦K♠2♥", anchor: "3벳팟 C벳과 SPR", note: "체크가 0% — 레인지 전체 벳" },
       { n: "⑨", slug: "3bet-pot-bet-sizing", board: "Q♥T♥7♠", anchor: "3벳팟 벳 사이즈", note: "사이즈를 정하는 것은 보드" },
-      { n: "⑩", slug: "3bet-pot-low-board", board: "8♦5♣2♠", anchor: "3벳팟 로우 보드", note: "페어도 없는데 큰 사이즈" },
+      { n: "⑩", slug: "3bet-pot-low-board", board: "8♦5♣2♠", anchor: "3벳팟 로우 보드", note: "탑페어도 없는데 큰 사이즈" },
     ],
   },
   {
@@ -457,8 +457,9 @@ export default function SolverClient() {
             <strong className="text-foreground">복습</strong> 버튼으로 다시 출제
           </li>
           <li className="text-muted-foreground">
-            기록은 <strong className="text-foreground">이 기기 안에만</strong> 저장되고 로그인은
-            필요 없습니다. 구글·카카오로 로그인하면 계정에 보관해 다른 기기에서 이어서 풀 수 있습니다
+            학습 기록은 기본적으로 <strong className="text-foreground">이 기기 안에</strong> 저장됩니다.
+            구글·카카오로 로그인하면 교육 예제와 오늘의 문제 기록을 계정에 보관해 다른 기기에서
+            이어서 풀 수 있습니다. 직접 계산한 스팟과 그 연습 기록은 로그인해도 이 기기에만 남습니다
           </li>
         </ul>
         <div className="mt-5">

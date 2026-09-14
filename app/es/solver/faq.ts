@@ -65,7 +65,7 @@ export const SOLVER_FAQ_ES: FaqItem[] = [
   },
   {
     q: "¿Necesito registrarme o crear una cuenta?",
-    a: "No. Abres la página y calculas. El inicio de sesión solo sirve para sincronizar tu historial del Entrenador entre dispositivos — si no lo usas, no pierdes ninguna función.",
+    a: "No. Abres la página y calculas. Si inicias sesión, el historial de práctica de los spots de estudio y las preguntas del día se guarda en tu cuenta para continuar desde otro dispositivo. Los spots que calculaste y su historial de práctica se quedan solo en este dispositivo, incluso si inicias sesión.",
   },
   {
     q: "¿Hay que instalar algo?",
@@ -105,7 +105,7 @@ export const SOLVER_FAQ_ES: FaqItem[] = [
   },
   {
     q: "¿Mis rangos se envían a algún servidor?",
-    a: "No. El cálculo corre en el procesador de tu propio dispositivo, no en un servidor nuestro. Los rangos que guardas quedan en tu navegador, y solo salen de ahí si tú generas un enlace para compartir un spot o exportas un archivo. La excepción es el historial del Entrenador: si inicias sesión, se guarda en tu cuenta para poder verlo desde otro dispositivo.",
+    a: "No. El cálculo corre en el procesador de tu propio dispositivo, no en un servidor nuestro. Los rangos que guardas quedan en tu navegador, y solo salen de ahí si tú generas un enlace para compartir un spot o exportas un archivo. Si inicias sesión, el historial de práctica de los spots de estudio y las preguntas del día se guarda en tu cuenta. Los spots que calculaste y su historial de práctica se quedan solo en este dispositivo, incluso si inicias sesión.",
   },
   {
     q: "¿El solver tiene en cuenta el rake?",
@@ -117,7 +117,7 @@ export const SOLVER_FAQ_ES: FaqItem[] = [
   },
   {
     q: "¿Puedo guardar un spot y compartirlo?",
-    a: "Sí. Puedes guardar rangos y configuraciones, importarlas y exportarlas como archivo, sacar el resumen de resultados en CSV y generar un enlace que abra exactamente el mismo spot en el dispositivo de otra persona. Es la forma más rápida de preguntar una mano en un grupo de estudio.",
+    a: "Sí. Puedes guardar rangos y configuraciones, importarlas y exportarlas como archivo, sacar el resumen de resultados en CSV y generar un enlace que abra exactamente el mismo spot en el dispositivo de otra persona. Es la forma más rápida de preguntar una mano en un grupo de estudio. Si guardas un spot que calculaste como preguntas del Entrenador, esas preguntas y su historial de práctica se quedan solo en este dispositivo, incluso si inicias sesión; no se sincronizan con tu cuenta.",
   },
   {
     q: "¿Sirve para torneos o solo para cash?",
@@ -125,7 +125,7 @@ export const SOLVER_FAQ_ES: FaqItem[] = [
   },
   {
     q: "¿Está la aplicación en español?",
-    a: "Sí, la interfaz completa está en español, y también puedes cambiar a coreano, inglés, japonés, portugués, alemán, francés y chino desde el selector de idioma. No es una traducción parcial: los menús, los spots de estudio y el Entrenador están localizados.",
+    a: "Sí, la interfaz completa está en español. No es una traducción parcial: los menús, los spots de estudio y el Entrenador están localizados.",
   },
   {
     q: "¿Cuál es la mejor aplicación para jugar poker?",

@@ -87,7 +87,7 @@ const SOLVER_URL = "https://solver.holdemmaster.com/?lang=id";
 const SPEC: [string, string][] = [
   ["Harga", "Gratis — semua fitur, tanpa batas pemakaian"],
   ["Instalasi", "Tidak ada — berjalan di browser Anda (WebAssembly)"],
-  ["Akun", "Tidak perlu (login hanya untuk menyinkronkan Trainer · spot hasil hitungan Anda sendiri tetap di perangkat ini)"],
+  ["Akun", "Tidak perlu (login menyinkronkan riwayat spot belajar dan Tantangan Harian · spot hitungan sendiri dan riwayat latihannya hanya di perangkat ini)"],
   ["Cakupan", "Postflop, heads-up (flop · turn · river)"],
   ["Tempat perhitungan", "Di perangkat Anda sendiri — perhitungan Anda tidak lewat server kami"],
   ["Kompatibilitas", "Browser modern — Windows, macOS, Linux, ponsel"],
@@ -615,7 +615,10 @@ export default function SolverClientId() {
             Rentetan jawaban benar, analisis titik lemah, dan{" "}
             <strong className="text-foreground">tombol Tinjau ulang</strong> (hand tempat Anda
             paling banyak kehilangan EV muncul kembali) bekerja dari riwayat Anda. Tanpa login,
-            riwayat tetap di perangkat Anda
+            riwayat tetap di perangkat Anda. Dengan login, riwayat latihan dari spot belajar dan
+            Tantangan Harian bisa disimpan di akun dan dilanjutkan di perangkat lain. Spot hasil
+            hitungan Anda sendiri beserta riwayat latihannya hanya tersimpan di perangkat ini,
+            meskipun Anda login
           </li>
         </ul>
         <div className="mt-5">

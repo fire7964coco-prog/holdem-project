@@ -139,7 +139,7 @@ const SOLVER_URL = "https://solver.holdemmaster.com/?lang=zh-hant";
 const SPEC: [string, string][] = [
   ["價格", "免費——全部功能，不限次數"],
   ["安裝", "不需要——在瀏覽器裡執行（WebAssembly）"],
-  ["帳號", "不需要（登入只用來同步訓練器紀錄 · 自己算的牌局只留在你的裝置上）"],
+  ["帳號", "不需要（登入可同步教學案例和每日題目的紀錄 · 自己算的牌局和練習紀錄即使登入也只留在這台裝置上）"],
   ["涵蓋範圍", "翻牌後、單挑（翻牌·轉牌·河牌）"],
   ["在哪裡計算", "在你自己的裝置上，不經過我們的伺服器"],
   ["相容性", "現代瀏覽器——Windows、macOS、Linux、手機"],
@@ -213,7 +213,7 @@ const FEATURES: [string, "yes" | "no", string][] = [
   ["牌局分享連結", "yes", "把同一個牌局傳給牌友"],
   ["打開算好的教學案例", "yes", "結果即點即看，不用等"],
   ["帶評分的 GTO 訓練器", "yes", "含弱點分析和「複習」機制"],
-  ["用自己算的牌局練習", "yes", "在結果頁點一下就存成訓練器題目 · 只留在你的裝置上"],
+  ["用自己算的牌局練習", "yes", "在結果頁點一下就存成訓練器題目 · 題目和練習紀錄即使登入也只留在這台裝置上"],
 ];
 
 /**
@@ -617,7 +617,7 @@ export default function SolverClientZhHant() {
             發牌按 <strong className="text-foreground">GTO 範圍裡的真實權重</strong>來——一手牌出現的頻率，就是你在那個局面裡真會拿到它的頻率
           </li>
           <li className="text-muted-foreground">
-            連勝紀錄、弱點分析和<strong className="text-foreground">「複習」機制</strong>（把你虧 EV 最多的題排回來）都建立在做題紀錄上。不登入的話，紀錄只留在你的裝置裡
+            連勝紀錄、弱點分析和<strong className="text-foreground">「複習」機制</strong>（把你虧 EV 最多的題排回來）都建立在做題紀錄上。紀錄預設存在這台裝置上；登入後，教學案例和每日題目的紀錄可以同步到別的裝置。自己算的牌局和對應的練習紀錄，即使登入也只留在這台裝置上
           </li>
         </ul>
         <div className="mt-5">

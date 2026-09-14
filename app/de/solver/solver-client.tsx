@@ -127,7 +127,7 @@ const SOLVER_URL = "https://solver.holdemmaster.com/?lang=de";
 const SPEC: [string, string][] = [
   ["Preis", "Kostenlos – alle Funktionen, ohne Nutzungslimit"],
   ["Installation", "Keine – läuft im Browser (WebAssembly)"],
-  ["Konto", "Keins nötig (der Login synchronisiert nur den Trainer-Verlauf · selbst berechnete Spots bleiben auf diesem Gerät)"],
+  ["Konto", "Keins nötig (Login synchronisiert den Verlauf von Lernspots und täglichen Aufgaben · eigene Spots und ihr Übungsverlauf bleiben auf diesem Gerät)"],
   ["Umfang", "Nach dem Flop, heads-up (Flop, Turn und River)"],
   ["Wo gerechnet wird", "Auf deinem Gerät, nicht auf unserem Server"],
   ["Kompatibilität", "Moderne Browser – Windows, macOS, Linux und Handy"],
@@ -704,8 +704,10 @@ export default function SolverClientDe() {
           <li className="text-muted-foreground">
             Serien, Schwachstellen-Auswertung und die{" "}
             <strong className="text-foreground">Wiederholungs-Queue</strong> mit den Übungen, in denen
-            du am meisten EV verloren hast, bauen auf diesem Verlauf auf. Ohne Login bleibt alles auf
-            deinem Gerät
+            du am meisten EV verloren hast, bauen auf diesem Verlauf auf. Ohne Login bleibt er auf
+            deinem Gerät. Mit Login kannst du den Verlauf aus Lernspots und täglichen Aufgaben im
+            Konto speichern und auf anderen Geräten weiterführen. Selbst berechnete Spots und ihr
+            Übungsverlauf bleiben auch mit Login nur auf diesem Gerät
           </li>
         </ul>
         <div className="mt-5">

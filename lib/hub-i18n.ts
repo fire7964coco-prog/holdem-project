@@ -14,7 +14,7 @@ import type { SecondaryLocale } from "./intl";
  *   순간 숫자가 바뀐다. LABELS를 고치면 여기도 **복사해서** 맞출 것(다시 쓰지 말 것).
  *
  * ★커버리지: 도구 페이지가 실제로 존재하는 로케일만 넣는다
- *   (2026-09-05 현재 **9개** = en·ja·es·pt·de·zh·zh-hant·fr·id — 정본은 아래 MAP이다).
+ *   정본은 아래 MAP이며, 새 랜딩과 함께 해당 로케일을 추가한다.
  *   나머지는 en으로 떨어진다 — 지금은 그 언어에 도구 페이지 자체가 없어 쓰이지 않는다.
  *   새 언어에 도구 페이지를 만들면 **여기 항목을 먼저 추가**할 것. 안 하면 영어가 섞인다.
  *   🔴 2026-08-23 — `/pt/solver` 신설. **pt 항목이 아예 없어서 그대로 열었으면 포르투갈어
@@ -199,7 +199,20 @@ const ID: HubLabels = {
   languages: "🌐 Bahasa Komunitas",
 };
 
-const MAP: Partial<Record<SecondaryLocale, HubLabels>> = { en: EN, ja: JA, es: ES, pt: PT, de: DE, zh: ZH, "zh-hant": ZH_HANT, fr: FR, id: ID };
+/** `/ms/solver` 신설 — `community-client.tsx`의 LABELS.ms 9키를 그대로 공유한다. */
+const MS: HubLabels = {
+  login: "Log masuk",
+  write: "✏️ Tulis",
+  trending: "🔥 Trending Minggu Ini",
+  eventBadge: "🎰 Acara · Akan datang",
+  eventTitle: "Pilih 6 Nombor\nMenang Baucar!",
+  eventDesc: "3 padanan → $30 · 4 → $200\n5 → $1,000",
+  eventSchedule: "🔗 Setiap Ahad jam 7 petang KST\nCabutan automatik via Bitcoin block hash",
+  eventButton: "Lihat acara →",
+  languages: "🌐 Bahasa Komuniti",
+};
+
+const MAP: Partial<Record<SecondaryLocale, HubLabels>> = { en: EN, ja: JA, es: ES, pt: PT, de: DE, zh: ZH, "zh-hant": ZH_HANT, fr: FR, id: ID, ms: MS };
 
 /** locale이 null/undefined면 한국어 */
 export function hubLabels(locale: SecondaryLocale | null | undefined): HubLabels {
