@@ -1,4 +1,15 @@
-## 2026-09-14 — `/ms/solver` 말레이시아 말레이어 랜딩 신설 (로컬 검증 완료 · 배포 전)
+## 2026-09-14 — MS 솔버 랜딩·다국어 FAQ 운영 배포 완료
+
+사장님 지시 「수고했어 배포해줘」에 따라 아래 로컬 검증본을 함께 배포했다.
+
+- **커밋·배포**: `27c08021ad5763b90975bb7f45e6abef7e0e95cd` · 44파일. `main`을 origin과 동기 상태에서 커밋·일반 push했고 Vercel 상태 **success** 확인(20:21:15 KST). 강제 push·다른 저장소 수정·외부 담당자 메시지는 하지 않았다.
+- **운영 실측**(20:22:38 KST): 11개 solver 경로 전부 **HTTP 200**. 배포 커밋의 `git show` 원문에 고정해 **FAQ 229개** 소스=화면=FAQPage, featureList 125항목, canonical·11언어 hreflang·HTML 언어·CTA 45개 언어 매개변수를 대조해 전부 통과했다. `/ms/solver`의 `ms`·`ms_MY`·H1 1개·144자 description 및 내부 링크 8경로 200 확인. 결과 = `tmp/solver-live-audit-27c08021.json`.
+- **사이트맵·검색 통지**: 운영 sitemap에 11개 solver URL이 각각 1회 포함. IndexNow는 바뀐 **11개 solver URL만** `--urls`로 제출해 **HTTP 200 접수**했다. 검색엔진 색인이 완료됐다는 뜻은 아니다.
+- **현재 상태**: 말레이어 신설과 앞선 10언어 FAQ 동기화 정정은 **운영 반영 완료**. 공개 URL = `https://www.holdemmaster.com/ms/solver`. 남은 별도 작업은 솔버 앱 저장소의 MS `/solver` outbound 매핑이며, 랜딩 미구현 언어는 hi다.
+
+---
+
+## 2026-09-14 — `/ms/solver` 말레이시아 말레이어 랜딩 신설 (배포 전 작업 기록 · 이후 위 항목으로 배포 완료)
 
 사장님 지시 「다음언어가 ms인가?? ms관련파일 읽어보고 구글현지 웹사이트 서치후에 작업하자.현지 전문가 페르소나 확실히 주고」.
 
