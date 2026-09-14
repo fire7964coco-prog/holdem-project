@@ -57,6 +57,7 @@ export const metadata: Metadata = {
       // ★2026-09-05 — `/id/solver` 신설(10번째). 🔴 열 파일이 «같은 세트»를 선언해야 한다.
       "id-ID": `${SITE}/id/solver`,
       "ms-MY": `${SITE}/ms/solver`,
+      "hi-IN": `${SITE}/hi/solver`,
     },
   },
   openGraph: {

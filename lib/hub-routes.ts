@@ -87,6 +87,8 @@ const LOCALE_HUB_ROUTES: Record<string, readonly string[]> = {
   id: ["/id/blog", "/id/solver"],
   // ms — 솔버만 HubPage로 감싼다. 블로그 목록은 아직 자체 크롬을 쓴다.
   ms: ["/ms/solver"],
+  // hi — 솔버만 HubPage로 감싼다. 블로그 목록은 자체 크롬을 유지한다.
+  hi: ["/hi/solver"],
 };
 
 /**

@@ -75,6 +75,7 @@ export const metadata: Metadata = {
       // ★2026-09-05 — `/id/solver` 신설(10번째). 🔴 열 파일이 «같은 세트»를 선언해야 한다.
       "id-ID": `${SITE}/id/solver`,
       "ms-MY": `${SITE}/ms/solver`,
+      "hi-IN": `${SITE}/hi/solver`,
     },
   },
   // twitter:*를 안 주면 루트 레이아웃의 한국어가 그대로 나간다(check:meta-lang 게이트)

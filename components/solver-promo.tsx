@@ -170,6 +170,14 @@ const COPY = {
     desc: "Kira strategi GTO postflop terus dalam pelayar — percuma, tanpa pemasangan atau akaun",
     cta: "Buka solver →",
   },
+  // 힌디 산문 + 라틴 포커 용어: docs/translation-terms-hi.md.
+  hi: {
+    href: "/hi/solver",
+    badge: "♠ मुफ़्त टूल",
+    title: "GTO सॉल्वर",
+    desc: "अपने postflop स्पॉट की रणनीति ब्राउज़र में निकालें — मुफ़्त, इंस्टॉलेशन या खाते की ज़रूरत नहीं",
+    cta: "सॉल्वर खोलें →",
+  },
 } as const;
 
 export type SolverPromoLocale = keyof typeof COPY;

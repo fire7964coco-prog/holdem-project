@@ -212,7 +212,23 @@ const MS: HubLabels = {
   languages: "🌐 Bahasa Komuniti",
 };
 
-const MAP: Partial<Record<SecondaryLocale, HubLabels>> = { en: EN, ja: JA, es: ES, pt: PT, de: DE, zh: ZH, "zh-hant": ZH_HANT, fr: FR, id: ID, ms: MS };
+/**
+ * `/hi/solver` 신설 — community-client.tsx에 LABELS.hi가 없어 허브 문구만 번역한다.
+ * 공통 금액·추첨 시각은 그대로 유지한다. 홈 피드 전체 번역은 이 변경의 범위가 아니다.
+ */
+const HI: HubLabels = {
+  login: "लॉग इन करें",
+  write: "✏️ पोस्ट लिखें",
+  trending: "🔥 इस हफ़्ते लोकप्रिय",
+  eventBadge: "🎰 इवेंट · जल्द आ रहा है",
+  eventTitle: "6 नंबर चुनें\nगिफ़्ट कार्ड जीतें!",
+  eventDesc: "3 नंबर मिलें → $30 · 4 → $200\n5 → $1,000",
+  eventSchedule: "🔗 हर रविवार शाम 7 बजे KST\nBitcoin ब्लॉक हैश से ऑटो ड्रॉ",
+  eventButton: "इवेंट देखें →",
+  languages: "🌐 समुदाय की भाषाएँ",
+};
+
+const MAP: Partial<Record<SecondaryLocale, HubLabels>> = { en: EN, ja: JA, es: ES, pt: PT, de: DE, zh: ZH, "zh-hant": ZH_HANT, fr: FR, id: ID, ms: MS, hi: HI };
 
 /** locale이 null/undefined면 한국어 */
 export function hubLabels(locale: SecondaryLocale | null | undefined): HubLabels {
