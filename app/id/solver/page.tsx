@@ -69,6 +69,7 @@ export const metadata: Metadata = {
       "zh-Hant": `${SITE}/zh-hant/solver`,
       "fr-FR": `${SITE}/fr/solver`,
       "id-ID": `${SITE}/id/solver`,
+      "ms-MY": `${SITE}/ms/solver`,
     },
   },
   // twitter:*를 안 주면 루트 레이아웃의 한국어가 그대로 나간다(check:meta-lang 게이트)

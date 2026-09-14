@@ -71,7 +71,7 @@ const SOLVER_URL = "https://solver.holdemmaster.com/?lang=en";
 const SPEC: [string, string][] = [
   ["Price", "Free — every feature, no usage limits"],
   ["Install", "None — runs in the browser (WebAssembly)"],
-  ["Account", "Not required (sign-in only syncs trainer history · your own solved spots stay on this device)"],
+  ["Account", "Not required (sign-in syncs history for Study Spots and Daily Challenge · your own solved spots and their practice history stay on this device)"],
   ["Scope", "Postflop, heads-up (flop, turn, river)"],
   ["Where it solves", "On your own CPU, not on a server"],
   ["Platforms", "Any modern browser — Windows, macOS, Linux, mobile"],
@@ -563,8 +563,9 @@ export default function SolverClientEn() {
           </li>
           <li className="text-muted-foreground">
             Streaks, weak-spot breakdowns and a <strong className="text-foreground">Review</strong>{" "}
-            queue of your biggest EV losses run on your history, which stays on the device unless you
-            sign in
+            queue of your biggest EV losses run on your practice history. Signing in syncs your
+            history for Study Spots and Daily Challenge across devices. Your own solved spots and their
+            practice history stay on this device even when signed in
           </li>
         </ul>
         <div className="mt-5">

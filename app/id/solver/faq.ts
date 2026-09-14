@@ -25,7 +25,7 @@
  *   9종이 공유하는 §4-B 정정본 수치에서만 왔다.** 앱의 «설명 문장»은 해설로 옮기지 않았다
  *   (브리프 §7-9 · ja에서 3건 사고). 트레이너 채점 = **«팟 대비»**(앱 축어 «relatif terhadap pot»
  *   🟢 정정본) — «bb로 채점»으로 쓰지 마라.
- * 🔴 언어 열거는 앱 셀렉터 **11개**(`solver/src/i18n.ts:18` — 브리프 실측)와 1:1이다.
+ * 🔴 해당 언어 지원 여부만 안내한다. 앱 언어 선택기·다른 언어 열거는 넣지 않는다.
  *
  * 🔴 카니발 — 이 FAQ가 답하지 않는 것: **프리플랍 레인지표 축**(→ `id/blog/holdem-starting-hands-chart`
  *   소유 — chart 문항이 핸드오프한다) · 입문 룰(→ `texas-holdem-rules-for-beginners`).
@@ -51,7 +51,7 @@ export const SOLVER_FAQ_ID: FaqItem[] = [
   },
   {
     q: "Apakah saya harus membuat akun?",
-    a: "Tidak. Anda membuka halamannya dan langsung menghitung. Login hanya berguna untuk satu hal: menyinkronkan riwayat Trainer Anda antar perangkat. Tanpa akun, tidak ada fitur yang hilang.",
+    a: "Tidak. Anda membuka halamannya dan langsung menghitung. Dengan login, riwayat latihan dari spot belajar dan Tantangan Harian bisa disimpan di akun dan dilanjutkan di perangkat lain. Spot hasil hitungan Anda sendiri beserta riwayat latihannya hanya tersimpan di perangkat ini, meskipun Anda login. Untuk menghitung dan berlatih, Anda tidak memerlukan akun.",
   },
   {
     // 관련검색 `gto poker app` 흡수 — «앱»의 정체를 정직하게 가른다(설치 불필요 · PWA는 바로가기).
@@ -101,7 +101,7 @@ export const SOLVER_FAQ_ID: FaqItem[] = [
   },
   {
     q: "Apakah range saya dikirim ke server?",
-    a: "Tidak. Perhitungan berjalan di prosesor perangkat Anda sendiri, tanpa lewat server kami. Range yang disimpan tetap ada di browser Anda; range itu hanya keluar kalau Anda membuat tautan Bagikan Spot atau mengekspor file. Satu-satunya pengecualian: riwayat Trainer — kalau login, riwayat disimpan di akun Anda supaya bisa dilanjutkan di perangkat lain.",
+    a: "Tidak. Perhitungan berjalan di prosesor perangkat Anda sendiri, tanpa lewat server kami. Range yang disimpan tetap ada di browser Anda; range itu hanya keluar kalau Anda membuat tautan Bagikan Spot atau mengekspor file. Dengan login, riwayat latihan dari spot belajar dan Tantangan Harian bisa disimpan di akun dan dilanjutkan di perangkat lain. Spot hasil hitungan Anda sendiri beserta riwayat latihannya hanya tersimpan di perangkat ini, meskipun Anda login.",
   },
   {
     q: "Apakah rake ikut dihitung?",
@@ -122,9 +122,9 @@ export const SOLVER_FAQ_ID: FaqItem[] = [
     a: "Solver ini menghitung dalam EV chip (chip EV): langsung berlaku di cash game, dan di fase turnamen ketika ICM belum banyak berpengaruh. Menjelang bubble dan lompatan hadiah, keputusan yang benar bisa menyimpang dari jawaban EV chip — itu perhitungan lain, yang tidak dilakukan alat ini.",
   },
   {
-    // 🟢 언어 열거가 앱 셀렉터(11개)와 1:1이다 — 브리프 실측 `solver/src/i18n.ts:18`.
+    // 해당 언어 지원 여부만 안내한다. 앱 언어 선택기·다른 언어 열거는 넣지 않는다.
     q: "Apakah tampilannya berbahasa Indonesia?",
-    a: "Ya, seluruhnya — menu, spot belajar, Trainer: semuanya sudah disesuaikan sepenuhnya untuk bahasa Indonesia, bukan terjemahan setengah jadi. Pemilih bahasa juga menyediakan bahasa Inggris, Korea, Jepang, Spanyol, Portugis, Jerman, Mandarin aksara sederhana, Mandarin aksara tradisional, Prancis, dan Melayu.",
+    a: "Ya, seluruhnya — menu, spot belajar, Trainer: semuanya sudah disesuaikan sepenuhnya untuk bahasa Indonesia, bukan terjemahan setengah jadi.",
   },
   {
     // 관련검색 `gto poker calculator` 흡수 — 앱 내장 Equity 탭(네비 축어 «Equity % menang»)이 받는다.

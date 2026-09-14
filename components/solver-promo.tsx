@@ -162,6 +162,14 @@ const COPY = {
     desc: "Hitung range poker postflop Anda dengan solver GTO di browser — tanpa instal, tanpa akun, gratis",
     cta: "Buka solver →",
   },
+  // 말레이시아 말레이어: ms-posting-reference.md의 percuma·pelayar 표기를 쓴다.
+  ms: {
+    href: "/ms/solver",
+    badge: "♠ Alat percuma",
+    title: "Solver GTO",
+    desc: "Kira strategi GTO postflop terus dalam pelayar — percuma, tanpa pemasangan atau akaun",
+    cta: "Buka solver →",
+  },
 } as const;
 
 export type SolverPromoLocale = keyof typeof COPY;
