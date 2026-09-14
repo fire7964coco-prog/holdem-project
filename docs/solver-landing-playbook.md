@@ -11,7 +11,7 @@
 > **정본은 `solver/src/i18n.ts:18`의 `Locale` 타입 축어**이고, 라이브 `?lang=` 12/12가 고유 문안임을 확인했다(2026-09-06).
 > 랜딩이 없는 언어 = **ms · hi** — 앱만 있고 랜딩은 아직 없다(M-100은 «새 hi 랜딩 신설은 이번 요청에 포함하지 않는다»고 명시했다).
 >
-> **2026-09-14 운영 갱신**: 사용자 직접 지시로 `/ms/solver`와 기존 FAQ 정정을 **`27c08021`로 배포 완료**했다. 운영 랜딩은 **11개 언어**(`ko en ja es pt de zh zh-hant fr id ms`)이며 모두 HTTP 200·FAQ 229개 일치를 실측했다. 위 10개는 이전 이력이다. 랜딩 미구현 언어는 **hi**다. MS 조사·라벨·현지 전문가 페르소나 기록 = `docs/ms-solver-landing-brief.md`.
+> **2026-09-14 최신 운영 상태**: 사용자 직접 지시로 MS·기존 FAQ 정정은 **`27c08021`**, HI 신규 랜딩은 **`2dbb885c`**로 배포했다. 현재 **12개 언어**(`ko en ja es pt de zh zh-hant fr id ms hi`) 모두 HTTP200·FAQ252 소스/화면/스키마 일치를 20:55:39 KST 실측했다. 앱의 현재12언어 중 랜딩 미구현은 없다. 위 10개·M-100 범위는 이전 이력이다. 조사·라벨·AI 현지 전문가 역할 기록 = `docs/{ms,hi}-solver-landing-brief.md`. 다음 포스팅은 **`docs/keyword-bank/{ms,hi}-posting-reference.md`**에 승격한 실제 조사 내용부터 읽는다.
 >
 > 🔴 **«언어 셀렉터»라는 말을 쓰지 마라 — 2026-08-27에 제거됐다.** 앱은 본진(holdemmaster.com) 언어에
 > **페깅**되고 `?lang=`만 받는다(`solver/src/i18n.ts` KEY 주석 · 라이브 `select` 0개·언어 버튼 0개 실측).
@@ -50,7 +50,7 @@ pt에서 실제로 걸렸다) · `components/side-rail.tsx` · `components/solve
 `scripts/generate-sitemap.mjs` · **각 랜딩의 `alternates.languages`**.
 
 - 🔴 **hreflang은 «전 랜딩 파일이 완전히 같은 문자열 세트»여야 게이트를 통과한다.**
-  MS 포함 소스 세트(11파일): `ko-KR en-US ja-JP es-ES pt-BR de-DE zh-Hans zh-Hant fr-FR id-ID ms-MY`. 새 랜딩 하나를 열면 **기존 파일 전부에 새 코드를 같이** 단다.
+  HI 포함 소스 세트(12파일): `ko-KR en-US ja-JP es-ES pt-BR de-DE zh-Hans zh-Hant fr-FR id-ID ms-MY hi-IN`. 새 랜딩 하나를 열면 **기존 파일 전부에 새 코드를 같이** 단다.
 - 캡처 스크립트 3종(`capture-solver-spots.mjs`·`make-solver-range-charts.mjs`·
   `convert-solver-captures.mjs`)은 `--lang` 지원 — 새 로케일은 **화면 문자열 사전을 라이브에서 직접
   읽어** 채워라. 안 갈면 에러가 아니라 **«조용히 0건»**. 원본 PNG는 커밋 금지(`.solver-captures-*/`).

@@ -102,6 +102,7 @@ const TAB_LABELS: Record<string, Record<BottomTabKey, string>> = {
   pt: { home: "Feed", blog: "Blog", chat: "Chat", event: "Evento", profile: "Perfil" },
   id: { home: "Feed", blog: "Blog", chat: "Obrolan", event: "Acara", profile: "Profil" },
   ms: { home: "Suapan", blog: "Blog", chat: "Sembang", event: "Acara", profile: "Profil" },
+  hi: { home: "फ़ीड", blog: "ब्लॉग", chat: "चैट", event: "इवेंट", profile: "प्रोफ़ाइल" },
   vi: { home: "Bảng tin", blog: "Blog", chat: "Trò chuyện", event: "Sự kiện", profile: "Hồ sơ" },
   tr: { home: "Akış", blog: "Blog", chat: "Sohbet", event: "Etkinlik", profile: "Profil" },
 };

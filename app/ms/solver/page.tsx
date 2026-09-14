@@ -26,6 +26,7 @@ export const metadata: Metadata = {
       "fr-FR": `${SITE}/fr/solver`,
       "id-ID": `${SITE}/id/solver`,
       "ms-MY": `${SITE}/ms/solver`,
+      "hi-IN": `${SITE}/hi/solver`,
     },
   },
   twitter: { card: "summary_large_image", title: TITLE, description: DESCRIPTION },

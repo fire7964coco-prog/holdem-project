@@ -1,3 +1,19 @@
+## 2026-09-14 — HI 솔버 랜딩 배포 및 MS·HI 신규 포스팅 참고 정본 확정
+
+사장님 지시 「다음이 힌디어인가?? 말레이어 작업할때처럼 똑같이 서치하고 참조하고 해서 만들어줘 그리고 배포까지 완료되면 말레이어와 힌디어 둘다서치해서 얻은정보들 해당언어파일에 넣어줘 나중에 신규포스팅시 활용하게」.
+
+- **조사·작성**: HI 용어 브리프·기존8편을 읽고 Chrome Google `gl=in&hl=hi&pws=0`으로 3쿼리를 직접 확인했다. 원문 지역·실제 언어·Google 자동 번역·스토어 언어·운영국을 구분했다. 델리 HI 포커 교육 편집자·인도 검색의도 분석가·제품 검수자·초심자 독자의 **AI 역할**로 작성·분리 검수했다. 실제 현지 인간 감수·검색량 측정 주장은 하지 않았다. 상세 = `docs/hi-solver-landing-brief.md`.
+- **구현**: HI 랜딩3파일, FAQ23·13예제·실제 버튼·개인 스팟/연습기록의 기기 한정 저장·node lock·EV 채점 반영. 기존11개와 신규HI에 동일12언어 hreflang, 허브/레일/프로모/사이트맵 연결. HI 허브9키·공용탭5키를 추가해 신규 셸의 영어 폴백을 해소했다. 기존 HI 커뮤니티 전체 번역으로 확대하지 않았다.
+- **검수 반영**: 13개 titleHi와3개 그룹명·모든 보드/수치는 앱 원문 및 §4-B와 일치. 문법3곳, JSX 공백6곳, GTO라고 단정하는 range 가중치 표현, OOP/IP 행동 순서를 보강했다. 직접 계산 목표와 Study/Trainer0.5%를 구분했다.
+- **로컬 검증**: 최종 `npm run build` EXIT0(prebuild/postbuild 포함). 빌드가 출력한70 blog+525 intl·사이트맵 포함. 전체12언어 FAQ252/featureList137/CTA49·canonical·hreflang·HTML언어·HI/MS각8내부경로·sitemap 통과. 데스크톱1920px·모바일390px에서 글자·공백·표·가로 넘침 확인. 로그 `tmp/hi-solver-build.log`, `tmp/hi-solver-audit.log`.
+- **타입 검사 한계**: 기존596건으로 `typecheck` 실패. 직전 MS596건과 오류 내용 동일(bottom-tab-bar는 행·union출력순서만 변화), 신규HI3파일 오류0. 생성된 tsconfig.tsbuildinfo는 이번 실행 전 HEAD내용으로 복원했다. 전체 타입 통과라고 보고하지 않는다.
+- **배포**: **`2dbb885cdb43101f3c785f0356ea3b1720e73d73`**,25파일, main 일반push. Vercel **success 20:53:34 KST**. [배포](https://vercel.com/masters-projects-ca17ea56/holdem-project-milk/5FrfDHX2ikBh12pVMiEzfPNwbExF). [공개 HI](https://www.holdemmaster.com/hi/solver).
+- **운영 검증 20:55:39 KST**:12/12 HTTP200, 배포SHA `git show` 기준 FAQ252 소스=화면=FAQPage, featureList137일치, canonical/hreflang12/언어/CTA49 정상. HI23FAQ·4CTA·hi/hi_IN/H1하나, MS동일추가검사, 두언어내부각8경로 모두200. sitemap12URL 각1회. 결과 `tmp/solver-live-audit-2dbb885c.json`. Chrome으로 실제 운영페이지도 직접 확인했다.
+- **검색 통지**: 새 `/hi/solver`1URL만 IndexNow HTTP200접수. 오늘 앞서 접수한MS등기존11개는 중복전송하지 않았다. 색인 완료와 접수를 구분한다.
+- **사용자 요청한 지식 보존**: `docs/keyword-bank/ms-posting-reference.md §8`에 이번말레이시아조사내용을 직접추가, `docs/keyword-bank/hi-posting-reference.md`에 HI언어·실측·출처·검색의도·UI·후속작성방법신설. 배포확인후두파일에운영결과확정. HI구용어파일은새정본으로안내. 플레이북현재상태12개갱신, 핸드오프HI미구현표시제거.
+
+---
+
 ## 2026-09-14 — MS 솔버 랜딩·다국어 FAQ 운영 배포 완료
 
 사장님 지시 「수고했어 배포해줘」에 따라 아래 로컬 검증본을 함께 배포했다.
