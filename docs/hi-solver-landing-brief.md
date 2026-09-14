@@ -81,4 +81,7 @@ Chrome에서 [HI 앱](https://solver.holdemmaster.com/?lang=hi)을 열었다. �
 - 최종 `npm run build` **EXIT=0**(prebuild/postbuild 포함). 2026-09-14 20:49 KST 산출물 검사에서 **12언어 FAQ252**, featureList·canonical·hreflang12·CTA언어·HI/MS 각8내부경로·sitemap 통과. 로그 `tmp/hi-solver-build.log`, `tmp/hi-solver-audit.log`.
 - 실제 로컬 production 화면을 데스크톱1920px·모바일390px에서 확인. 문서 가로 넘침 없음, 2열 표 줄바꿈·3/4열 표 내부 스크롤. 힌디어 결합문자 표시 및 수정한 공백 정상. 뷰포트 원복.
 - `npm run typecheck`는 기존 **596건** 때문에 실패했다. 직전 MS 검사596건과 비교해 오류 내용은 같고, bottom-tab-bar의 기존 TS2345는 행번호·union 출력 순서만 달랐다. 신규 HI3파일 타입 오류는 없다. 전체 타입 검사가 통과했다고 보고하지 않는다.
-- **운영 배포 대기**. 배포 후 실제 URL·커밋·검증 결과를 이 절과 HI 포스팅 정본에 기록한다.
+- **운영 배포 완료**: `2dbb885cdb43101f3c785f0356ea3b1720e73d73`, Vercel success **2026-09-14 20:53:34 KST**. [공개 HI 랜딩](https://www.holdemmaster.com/hi/solver).
+- **운영 재검증 20:55:39 KST**: 12언어 HTTP200, 배포 SHA 원문에 고정해 FAQ252 소스=화면=FAQPage, featureList137 소스 일치, hreflang12·canonical·HTML 언어·CTA49 모두 통과. HI `hi`/`hi_IN`, H1 하나, MS/HI 각 내부8경로와 sitemap12개 URL 정상. 결과 `tmp/solver-live-audit-2dbb885c.json`. Chrome에서도 운영 H1·4CTA·화면을 직접 확인했다.
+- 새 `/hi/solver` **1 URL만** IndexNow HTTP200 접수. 오늘 이미 접수한 MS 등 기존11개는 재제출하지 않았다. 접수는 검색 색인 완료를 뜻하지 않는다.
+- 사용자 요청에 따라 조사 내용은 MS·HI 각 포스팅 참고 파일에 직접 승격했고, 운영 검증 후 이력을 확정했다.
