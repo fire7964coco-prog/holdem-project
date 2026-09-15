@@ -163,7 +163,7 @@
 ### 전파·기타
 - 🔴 **ar 2편의 `masterUpdated`는 «일부러» 낡은 채다**(queue Q5a-6 · 09-13): `holdem-blind-meaning`·`texas-holdem-rules-for-beginners`에 EN-먼저 ⑩·⑪만 이식하고 `masterUpdated`는 **09-09 그대로** 뒀다 — 올리면 «EN 최신과 동기화됨»이 거짓이 된다. `check:drift`의 ar 🔴는 **의도된 상태**이고, 남은 것은 **EN 09-09 → 09-11 델타**이지 ⑩·⑪이 아니다. 🔴 다음 회차가 같은 자리를 중복 이식하지 않게 이 줄을 지우지 마라
 - 전 언어 태그 전수 실측 완료(~2,100종) → `docs/keyword-bank/<locale>-tag-volumes.md` 6종 · 4개 필라 반영 · **잔여 반영 계속**
-- GTO 13편 → 12개 언어 전파: ✅ ja·es·zh · 🔴 **잔여 pt·de·zh-hant·fr**(fr은 랜딩 보유)
+- GTO 13편 다음 언어 발행: **잔여 de·fr·id·ms·hi**. PT까지의 완료 상태와 재사용할 조사·원문 정밀화·검수 근거는 WORKLOG 2026-09-15 및 `docs/pt-gto-publication-review-2026-09-15.md` 참조. 다음 번역은 최신 EN과 이 근거를 함께 확인한다.
 - KO ⑫ 「13스팟」 하드코딩 — **⑭를 만들 때 함께 열어라**(지금 값이 맞고 고치면 8곳이 움직인다)
 - ja 판단 ① `ポーカー gtoとは`(170) — 뱅크는 `ja/holdem-strategy`에 양보시켰는데 그 글 H2 12개 전부 GTO 0회(**양보가 명목뿐**)
 - ja 판단 ② 사이트맵 solver 3종 hreflang 부재 — 컨벤션 분열(tournaments `ko|en|ja` vs solver `ko-KR|…`) · 넣으려면 표기 통일이 먼저

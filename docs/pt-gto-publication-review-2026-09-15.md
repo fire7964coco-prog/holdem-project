@@ -1,6 +1,6 @@
 # PT GTO example publication — review record
 
-Status: all 13 articles written and reviewed; correction-only proofreading approved. Final full build passed. Production deployment/verification follows; it is not yet claimed.
+Status: complete. All 13 articles published, final proofreading/build passed, and production URLs/assets/schema/links/sitemap verified on 2026-09-15.
 
 ## Scope
 
@@ -72,8 +72,12 @@ These are PT precision corrections, not new solver calculations or an EN-wide re
 
 - All 13 pages returned 200 locally at mobile width 390, with expected H1/SEO title, PT-BR language, canonical and self hreflang. FAQPage graph nesting is parsed explicitly: 67 questions total, no raw emphasis/highlight markers.
 - All 13 have one own hero and no document-level horizontal overflow. All 13 landing links are present. Root inspected mobile sizing hero, mobile check-raise explanation and desktop check-raise table; screenshots retained in tmp/pt-render.
-- Final proofreading changes affect prose/metadata only. Final production build and post-deployment checks follow below when complete.
+- Repeated the render checks against the final production build after proofreading: all 13 passed, 67 FAQ entries, no overflow or duplicated own hero.
 
-## Remaining work
+## Publication and live verification
 
-- Final build, commit and deploy; verify live URLs/schema/links/assets/sitemap and submit changed URLs through the existing IndexNow workflow.
+- Content commit: b8b4269e. Publication sitemap commit: 82b93235. Both pushed together to main; Vercel reported success for [the production deployment](https://vercel.com/masters-projects-ca17ea56/holdem-project-milk/AmDcdr31xH7z55qRmVr4hUPNRwUb).
+- Live verification completed at 2026-09-15 11:56:32 KST (02:56:32 UTC): 13/13 HTTP 200, correct PT-BR HTML language/SEO titles/canonicals, eight alternate entries each (seven languages plus default), 67 FAQ entries with clean markup, all 26 WebP assets HTTP 200 with correct media type.
+- [PT solver landing](https://www.holdemmaster.com/pt/solver): 13 article links present. Three existing PT articles return 200 with all four restored backlinks. All 13 new article URLs are in the public sitemap. Report: tmp/pt-live-report.json.
+- Changed URLs only: 13 new articles + three backlink articles + PT landing = 17 URLs submitted once to IndexNow, HTTP 200 accepted. Acceptance is not a claim that indexing is complete.
+- No publication work remains. EN and other-language prose were not changed; the narrow inherited source corrections are documented above for future translations.

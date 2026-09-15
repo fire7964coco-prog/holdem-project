@@ -1,3 +1,18 @@
+## 2026-09-15 — PT 솔버 예제 해설 13편 발행 완료
+
+사장님 지시 「pt 발행작업하자」「고품질해설 포스팅 부탁해」에 따라 PT-BR 13편을 작성·검수·배포했다.
+
+- **발행 전 상태 실측**: registry·운영 sitemap·78 URL 확인으로 ko/en/ja/es/zh/zh-hant 각13/13, pt0/13을 확인했다. 이번 발행으로 PT도13/13, 완료 언어는7개다. 다음 미발행 언어는 de/fr/id/ms/hi.
+- **콘텐츠**: 최신 EN 전체 설명·조건·표·계산·주의사항·67FAQ를 보존한 PT-BR 해설13편. 4/4/5 집필, 전체 시리즈 언어·SEO·전략·수치 검수, 정밀 수정 후 교정 부분만 한 번 재교열했다. AI 역할 검수이며 현지 인간 감수를 주장하지 않는다.
+- **정밀화**: BB의 실제 AJ 보유, nuts/완성 스트레이트 구분, root 결과/⑦ 별도 solve 구분, suited6x 블로커 인과, equity/팟 승리 빈도, underpair와 overcard 정의, MDF 전제 등 근거가 확인된 원문 오해를 PT에서 바로잡았다. EN 본문은 수정하지 않았다. 전체 판정 = `docs/pt-gto-publication-review-2026-09-15.md`.
+- **연결·이미지**: 실제 PT 앱 UI와 값으로 13 OOP 화면+13 레인지 차트, WebP q82/너비1200. PT index55편·랜딩13링크·readnext26카드·본문93내부링크 확인. c-bet/position-play/3bet 기존3편에 보류됐던 역링크4개 연결, 의도적 차이 면제 해소 기록.
+- **검증**: 표637행(헤더 포함) 숫자·카드 대조13/13, GTO수치103일치/오류0/미판정0, 구조13/13, PT hard55/55. 기계 미판정 카드 문단과 형제 표 대조의 한계는 수치 검수로 보완했다. 전체 최종 `npm run build` EXIT0, 출력70 KO+538 intl. 기존 설정상 typecheck/lint는 생략되므로 전체 타입 통과를 주장하지 않는다.
+- **실제 화면**: 최종 빌드에서 모바일390px 13편 전수, 데스크톱 대표 표 확인. H1/SEO/canonical/pt-BR/FAQ67, 자체 히어로1개씩, 가로 넘침0, 랜딩13링크 정상. 최종 로그 `tmp/pt-build-final.log`, 화면 보고서 `tmp/pt-render/report.json`.
+- **배포**: 콘텐츠 `b8b4269e`, sitemap `82b93235`, main 동시push. [Vercel 성공 배포](https://vercel.com/masters-projects-ca17ea56/holdem-project-milk/AmDcdr31xH7z55qRmVr4hUPNRwUb). [PT 솔버 랜딩](https://www.holdemmaster.com/pt/solver).
+- **운영 확인 11:56:32 KST**: 13 URL 모두200, PT-BR/canonical/SEO/대체언어8(7언어+default)/FAQ67 정상, WebP26개200, 랜딩13·기존3편역링크4·sitemap13 모두 확인. `tmp/pt-live-report.json`.
+- **검색 통지**: 새13편+역링크수정3편+랜딩1 =17 URL만 IndexNow HTTP200 접수. 색인 완료와 구분한다.
+- **후속 재사용 문서**: `docs/keyword-bank/pt-gto-series.md`, 번역 브리프, source contract, PT UI verbatim, 발행 검수 기록. 최신 검색량·top10·PAA를 측정한 것처럼 쓰지 않았다.
+
 ## 2026-09-14 — HI 솔버 랜딩 배포 및 MS·HI 신규 포스팅 참고 정본 확정
 
 사장님 지시 「다음이 힌디어인가?? 말레이어 작업할때처럼 똑같이 서치하고 참조하고 해서 만들어줘 그리고 배포까지 완료되면 말레이어와 힌디어 둘다서치해서 얻은정보들 해당언어파일에 넣어줘 나중에 신규포스팅시 활용하게」.
