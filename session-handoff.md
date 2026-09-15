@@ -22,6 +22,10 @@
 
 ## ▶▶▶ 다음 할 일
 
+### 최우선 — 다음 새 세션은 ID 솔버 해설
+
+**2026-09-15 사용자 지시: “다음새션에서는 id작업하자”.** 다음 세션은 인도네시아어 GTO 예제 해설 작업부터 시작한다. 실행 인계 = **`docs/id-gto-next-session.md`**(원문·ID 자료·PT 정정 근거·4/4/5 집필·검수·발행 순서). 이번 세션에서는 인계만 정리했으며 ID 집필은 미착수다. 아래 일반 queue는 이 명시적 후속 작업을 대신하지 않는다.
+
 > 🧰🔴 **2026-09-11 (11) 신설 — 헤드 잔여 작업은 `Holdem-queue` 레인(`harden-queue`)이 회차로 한다.** 정본 = `docs/hardening-protocol.md` **§7-F** · 회차 표 = **`docs/harden-queue-진행.md` §1**(Q1 결재 소품 · Q2 사진 5장 · Q4·Q5 EN-먼저 · Q6 로케일 판정 묶음 · Q7 게이트 신설 · Q8 용어 분열 · Q9 = 검수장 몫 · Q3은 실측 종결 · **합계 12~13세션 · 모델·세션은 표의 열**). **아래 절·미결의 항목은 그 표의 «재료»다 — 여기서 지우지 말고 회차가 닫히면 헤드가 지운다.** 헤드(이 창)는 머지·빌드·배포·우편함·핸드오프·정본 승격만. 창 띄우기 = §1-B 「🧰 queue 창」 · 첫 마디 「`HARDEN.md` 읽고 회차 Q1 시작해」.
 > 🧰 **queue 상태(09-14 (30))**: Q1·Q2-a·Q2-b·Q2-c·Q4-a·Q5-a·Q5-b·Q6-a·Q7-a·Q7-b ✅ · 🔴 **다음 회차 = Q6-b**(인용부호·괄호 스윕 + 남은 헤드 판정 · 정본 `docs/harden-queue-진행.md` §1) → 그다음 **Q6-c**(ja 잔여 + NOTE_* + echo 19). 헤드는 머지·빌드·배포·우편함·핸드오프·정본 승격만. 머지 절차 = 프로토콜 §6 + §7-F: `lane:status` → `git merge harden-queue` → 빌드(전체 로그 파일로) → sitemap 커밋 → push → 라이브 앵커 실측(`page.content()`) → **IndexNow는 «바뀐 URL만» `--urls`**(하루 한 번) → §5 헤드 처리 → MB 발신 → 세 레인 §6-0 → WORKLOG·핸드오프 → `lane:sync -- --apply`. Q6 뒤 남은 회차 = **Q8-a**(pt 용어) · **Q8-b**(id·de·es) · 🏆 **Q4-b**(대회 묶음 · WRONG 15). 🆕 별도 재료 = `en-first-queue` §1 ㉒-c(직답 리드 4편) · ㉙(이미지 1장) · §3 EN `holdem-hand-rankings` 리드↔표 축어 중복.
 > 직전 회차 = **queue 회차 Q6-a 머지·배포**(09-14 (30) · 레인 ff `ae840532` · sitemap `430ca145` · 빌드 70 + intl 525 · 라이브 앵커 실측 OK · IndexNow 18 URL 200 · 통지 MB-051). 글 18편(zh 8 · zh-hant 7 · ja 1 · pt 1 · de 1) · `check:structure` 🟠 링크 개수 **94편 → 0**(오탐 5종 · 축을 `linkn`/`cardn`으로 갈랐다) — 경위 WORKLOG.
@@ -153,7 +157,6 @@
 - pt `flush-vs-straight`·`split-pot-rules` 2편만 `masterUpdated` 부재(게이트 🟠 추적불가 2)
 - pt shc «AQo/AJo conforme evolui» — EN 07-19가 AJo 삭제, pt 등 6로케일이 낡은 판(**UTG 13% 판정 #1과 함께**)
 - pt strategy 허브 표의 결정 4·5 목적지가 betting-actions·pot-odds(전용 필라 아님) · tvc «Situação/Melhor encaixe» 표가 «Quando sair» H2 아래 — **둘 다 EN 패리티**
-- id 표기 코퍼스 분열 — `cek`/`check`(betting-actions만 check 40회) · `tangan`/`hand`(beginners만 tangan 50회) · `meja`/`board`(rankings 클러스터 4:2)
 - id-posting-reference §5의 «variance·leak 다수파» 판정 ↔ 세션 9 렌즈 전수 grep 상충(실측 kebocoran 23 : leak 13) — §5 계수 근거 재확인
 - ⚠ ja 뱅크의 「SD 24 = 유일한 低」는 **거짓 근거** — 다음 ja 회차에 정정
 - de 적대 QA 잔여 6 — `rabattieren` 13곳/4편 · `Side Pot↔Nebenpot` · 드로 라벨 `-Straße` · `Leaks↔Lecks` 8:8 · outs 19,1%↔19,6% · WSOP Rule 96.a 누락 🔴 **손대기 전 재grep**
@@ -163,7 +166,7 @@
 ### 전파·기타
 - 🔴 **ar 2편의 `masterUpdated`는 «일부러» 낡은 채다**(queue Q5a-6 · 09-13): `holdem-blind-meaning`·`texas-holdem-rules-for-beginners`에 EN-먼저 ⑩·⑪만 이식하고 `masterUpdated`는 **09-09 그대로** 뒀다 — 올리면 «EN 최신과 동기화됨»이 거짓이 된다. `check:drift`의 ar 🔴는 **의도된 상태**이고, 남은 것은 **EN 09-09 → 09-11 델타**이지 ⑩·⑪이 아니다. 🔴 다음 회차가 같은 자리를 중복 이식하지 않게 이 줄을 지우지 마라
 - 전 언어 태그 전수 실측 완료(~2,100종) → `docs/keyword-bank/<locale>-tag-volumes.md` 6종 · 4개 필라 반영 · **잔여 반영 계속**
-- GTO 13편 다음 언어 발행: **잔여 de·fr·id·ms·hi**. PT까지의 완료 상태와 재사용할 조사·원문 정밀화·검수 근거는 WORKLOG 2026-09-15 및 `docs/pt-gto-publication-review-2026-09-15.md` 참조. 다음 번역은 최신 EN과 이 근거를 함께 확인한다.
+- GTO 다음 발행 언어는 **ID로 확정**(2026-09-15 사용자 지시) → `docs/id-gto-next-session.md`. 이후 남은 언어는 de·fr·ms·hi이며 순서는 미정이다.
 - KO ⑫ 「13스팟」 하드코딩 — **⑭를 만들 때 함께 열어라**(지금 값이 맞고 고치면 8곳이 움직인다)
 - ja 판단 ① `ポーカー gtoとは`(170) — 뱅크는 `ja/holdem-strategy`에 양보시켰는데 그 글 H2 12개 전부 GTO 0회(**양보가 명목뿐**)
 - ja 판단 ② 사이트맵 solver 3종 hreflang 부재 — 컨벤션 분열(tournaments `ko|en|ja` vs solver `ko-KR|…`) · 넣으려면 표기 통일이 먼저
