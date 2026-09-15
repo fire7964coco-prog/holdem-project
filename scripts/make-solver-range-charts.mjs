@@ -34,6 +34,8 @@ const CHART_L10N = {
         equity: 'エクイティ', eqr: 'エクイティ実現率' },
   es: { title: 'Composición del rango', source: 'Calculado con el solver GTO de HoldemMaster · rake no modelado',
         equity: 'Equity', eqr: 'Realización de equity' },
+  pt: { title: 'Composição dos ranges', source: 'Solver GTO da HoldemMaster · sem rake',
+        equity: 'Equity', eqr: 'Realização de equity' },
   zh: { title: '范围构成', source: 'HoldemMaster GTO 求解器计算值 · 未计入抽水',
         equity: '胜率 (EQ)', eqr: '权益实现率 (EQR)' },
   'zh-hant': { title: '範圍構成', source: 'HoldemMaster GTO 解算器計算值 · 未計入抽水',
@@ -42,11 +44,26 @@ const CHART_L10N = {
 const C = CHART_L10N[LANG];
 if (!C) { console.error('지원하지 않는 로케일:', LANG, '· 아는 것:', Object.keys(CHART_L10N).join(', ')); process.exit(1); }
 
+const SUIT = { '♠': '#e2e8f0', '♥': '#f87171', '♦': '#60a5fa', '♣': '#4ade80' };
+// PT UI의 98,2%를 parseFloat에 바로 넣으면 98로 잘린다. 화면 축어는 data.json에 보존하고 계산할 때만 정규화한다.
+const num = (s) => {
+  const value = String(s).trim().replace(/%$/, '').replace(',', '.');
+  if (!/^\d+(?:\.\d+)?$/.test(value)) throw new Error(`잘못된 백분율: ${s}`);
+  return Number(value);
+};
+const pct = (n) => (LANG === 'pt' ? n.toFixed(1).replace('.', ',') : n.toFixed(1)) + '%';
+
+if (process.argv.includes('--selftest')) {
+  const { strict: assert } = await import('node:assert');
+  for (const [raw, expected] of [['98,2%', 98.2], ['0,1%', 0.1], ['98.2%', 98.2], ['0%', 0], ['100,0%', 100]]) assert.equal(num(raw), expected);
+  for (const raw of ['', '—', '1,2,3%', '12oops%']) assert.throws(() => num(raw));
+  assert.equal(pct(num('0,1%')), LANG === 'pt' ? '0,1%' : '0.1%');
+  console.log('✔ percentage parsing: dot/comma, zero, bounds, invalid input, locale display');
+  process.exit(0);
+}
+
 const data = JSON.parse(readFileSync(path.join(DIR, `data${SUF}.json`), 'utf8'));
 console.log('로케일', LANG, '· 입력 data' + SUF + '.json · 출력 접미', SUF || '(없음)');
-
-const SUIT = { '♠': '#e2e8f0', '♥': '#f87171', '♦': '#60a5fa', '♣': '#4ade80' };
-const num = (s) => parseFloat(String(s).replace('%', '')) || 0;
 
 /** "OOP (BB (콜러))" → "BB · 콜러 (OOP)" */
 const shortLabel = (s, fallback) => {
@@ -80,11 +97,14 @@ function html(d) {
   const max = Math.max(...rows.flatMap(r => [r.x, r.y]), 10);
   const rowH = Math.min(58, Math.floor(428 / rows.length));
   const barH = Math.max(7, Math.round(rowH * 0.30));
+  const heading = LANG === 'pt'
+    ? `<div><h1>${C.title}</h1><p class="spot-title">${title}</p></div>`
+    : `<h1>${C.title} — ${title}</h1>`;
 
   const body = rows.map(r => `
     <div class="row" style="height:${rowH}px"><div class="lab">${r.label}</div><div class="bars">
-      <div class="bl"><div class="bar a" style="width:${(r.x / max * 100).toFixed(1)}%;height:${barH}px"></div><span class="v va">${r.x.toFixed(1)}%</span></div>
-      <div class="bl"><div class="bar b" style="width:${(r.y / max * 100).toFixed(1)}%;height:${barH}px"></div><span class="v vb">${r.y.toFixed(1)}%</span></div>
+      <div class="bl"><div class="bar a" style="width:${(r.x / max * 100).toFixed(1)}%;height:${barH}px"></div><span class="v va">${pct(r.x)}</span></div>
+      <div class="bl"><div class="bar b" style="width:${(r.y / max * 100).toFixed(1)}%;height:${barH}px"></div><span class="v vb">${pct(r.y)}</span></div>
     </div></div>`).join('');
 
   return `<!doctype html><html><head><meta charset="utf-8"><style>
@@ -95,6 +115,7 @@ function html(d) {
   .wrap{padding:34px 44px 0}
   .top{display:flex;align-items:center;gap:16px;border-bottom:1px solid rgba(212,175,55,.3);padding-bottom:16px}
   h1{font-size:31px;font-weight:800;letter-spacing:-.5px}
+  ${LANG === 'pt' ? 'h1{font-size:27px;line-height:1.15}.spot-title{font-size:18px;line-height:1.2;margin-top:3px;color:#c3ccc5}.board{flex-shrink:0}' : ''}
   .board{display:flex;gap:7px;margin-left:auto}
   .card{display:inline-flex;align-items:center;background:#111814;border:1px solid #2b3a32;border-radius:7px;padding:5px 10px;font-size:24px;font-weight:800;line-height:1}
   .card i{font-style:normal;margin-left:2px}
@@ -115,7 +136,7 @@ function html(d) {
   .foot b{color:#f0ead8}
   .mark{margin-left:auto;font-size:15px;color:#d4af37;font-weight:700;opacity:.9}
   </style></head><body><div class="wrap">
-    <div class="top"><h1>${C.title} — ${title}</h1><div class="board">${boardHtml(board)}</div></div>
+    <div class="top">${heading}<div class="board">${boardHtml(board)}</div></div>
     <div class="legend">
       <span><i class="dot" style="background:#4ade80"></i>${nameX}</span>
       <span><i class="dot" style="background:#e7c15c"></i>${nameY}</span>

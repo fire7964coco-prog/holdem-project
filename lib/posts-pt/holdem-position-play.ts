@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Estar in position significa agir por último — você vê a decisão de cada adversário antes de gastar uma ficha. Estudos de solver e de banco de dados sugerem que jogadores out of position capturam só cerca de 60–85% da sua equity — o que deixa você acima de 100% quando está in position. É por isso que o UTG abre ~13% das mãos e o button ~43% — e por que posição reescreve cada c-bet, bluff e decisão de controle de pote no pós-flop.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-09-11",
+  updated: "2026-09-15",
   masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -192,7 +192,7 @@ Essas porcentagens descrevem *tamanhos de range* — quais mãos específicas os
 
 A maioria dos guias para em "evite jogar OOP". Beleza — mas você está nos blinds duas vezes por órbita, e às vezes a sua abertura do UTG é paga pelo button. Veja como perder o mínimo, e de vez em quando virar o jogo:
 
-**1. O check-raise é o seu equalizador.** É a única arma que o OOP tem e o IP não: como ele espera apostar quando recebe check, ==g:um check-raise vira o piloto automático posicional dele contra ele mesmo.== Monte o range com honestidade — mãos fortes (trincas, two pair) mais projetos com equity de verdade (sequências abertas, flush draws) — para nunca ser só bluff nem só valor.
+**1. O [check-raise](/pt/blog/low-board-check-raise) é o seu equalizador.** É a única arma que o OOP tem e o IP não: como ele espera apostar quando recebe check, ==g:um check-raise vira o piloto automático posicional dele contra ele mesmo.== Monte o range com honestidade — mãos fortes (trincas, two pair) mais projetos com equity de verdade (sequências abertas, flush draws) — para nunca ser só bluff nem só valor.
 
 **2. Aposte maior quando apostar.** Apostas OOP precisam encerrar a mão mais cedo. Um sizing maior (pense em dois terços a três quartos do pote em vez de um terço) nega as cartas grátis e os floats baratos que, sem isso, a posição daria de graça ao seu adversário. Jogar small-ball OOP só estende a mão — e cada street extra favorece quem age por último.
 

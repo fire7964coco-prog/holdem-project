@@ -33,6 +33,8 @@
 
 ## 판정 로그
 
+2026-09-15 PT GTO 발행 반영: 아래 2026-08-19·08-26·09-10 기록의 **PT 미발행에 따른 링크 면제는 해소**됐다. 13편을 PT index에 등록하고, holdem-continuation-bet의 ① A-high(98,2%)·⑨ 3bet sizing(98,4%) 두 링크, holdem-position-play의 ⑦ check-raise 링크, holdem-3bet의 ⑧ range c-bet 링크를 연결했다. 과거의 부재 기록은 이력으로 유지한다. de·id 등 아직 글이 없는 로케일의 판정에는 변화가 없다.
+
 | 날짜 | 글 | 차이 | 판정 근거 |
 |---|---|---|---|
 | 2026-09-11 | de `holdem-strategy` | FAQ 「nobody folds to a call」 문장이 de에 없다(de는 「Callen gewinnt nur am Showdown – entweder liegst du schon vorn, oder du musst dich verbessern」) | ✅ `git log -S`로 **fc404ca8(de 전용 회차)의 의도적 문안** 확인(2차 교열 렌즈). EN-먼저 J#4는 **기각·원문 복원**됐으므로 전파할 델타가 없다 → `masterUpdated`만 09-11로 올렸다(«이미 갖고 있더라» 케이스). 🔴 드리프트로 다시 집지 마라 |

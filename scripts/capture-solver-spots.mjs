@@ -68,6 +68,10 @@ const L10N = {
         back: '← Lista', spots: 'Spots de estudio', view: '⚡ Ver resultados',
         noDraw: 'Sin proyecto', combos: 'combos', hands: 'Manos', draws: 'Proyectos',
         all: 'Todo', summary: 'Resumen', barWidth: 'Ancho de barra' },   // 2026-09-02 라이브 ?lang=es 화면에서 직접 읽음(Playwright innerText)
+  pt: { url: 'https://solver.holdemmaster.com/?lang=pt',
+        back: '← Lista', spots: 'Spots de estudo', view: '⚡ Ver resultados',
+        noDraw: 'Sem draw', combos: 'combos', hands: 'Mãos', draws: 'Draws',
+        all: 'Tudo', summary: 'Resumo', barWidth: 'Largura da barra' }, // 2026-09-15 라이브 PT DOM 축어 · 결과 숫자도 소수 쉼표
   zh: { url: 'https://solver.holdemmaster.com/?lang=zh',
         back: '← 列表', spots: '教学案例', view: '⚡ 直接看结果',
         noDraw: '无听牌', combos: '组合', hands: '手牌', draws: '听牌',
@@ -93,8 +97,8 @@ const extract = (page) => page.evaluate((T) => {
   if (cardsEl) {
     const L = txt(cardsEl).split('\n').map(s => s.trim()).filter(Boolean);
     for (let i = 0; i < L.length; i++) {
-      if (/^\d+(\.\d+)?%$/.test(L[i]) && L[i + 1] === T.combos) actions.push({ name: L[i - 1], freq: L[i] });
-      else if (/^\d+(\.\d+)?%$/.test(L[i]) && /^\d/.test(L[i + 1] || '')) actions.push({ name: L[i - 1], freq: L[i], combos: L[i + 1] });
+      if (/^\d+([.,]\d+)?%$/.test(L[i]) && L[i + 1] === T.combos) actions.push({ name: L[i - 1], freq: L[i] });
+      else if (/^\d+([.,]\d+)?%$/.test(L[i]) && /^\d/.test(L[i + 1] || '')) actions.push({ name: L[i - 1], freq: L[i], combos: L[i + 1] });
     }
   }
 
@@ -105,7 +109,7 @@ const extract = (page) => page.evaluate((T) => {
     for (let i = 0; i < L.length; i++) {
       if (L[i] === T.hands) { sec = hands; continue; }
       if (L[i] === T.draws) { sec = draws; continue; }
-      if (/^\d+(\.\d+)?%$/.test(L[i]) && sec) sec.push({ label: L[i - 1], pct: L[i] });
+      if (/^\d+([.,]\d+)?%$/.test(L[i]) && sec) sec.push({ label: L[i - 1], pct: L[i] });
     }
   }
 
@@ -183,6 +187,12 @@ for (const spot of targets) {
     });
     await showChrome(); await page.waitForTimeout(300);
     const ip = await extract(page);
+    for (const [side, d] of [['oop', oop], ['ip', ip]]) {
+      if (!d.header || d.players.length !== 2 || !d.hands.length || !d.draws.length || !d.total || !d.head) {
+        throw new Error(`${side}: 필수 결과 데이터가 비어 있음 — UI 라벨/셀렉터를 확인할 것`);
+      }
+    }
+    if (!oop.actions.length) throw new Error('OOP 액션 빈도가 비어 있음 — 숫자 표기/셀렉터를 확인할 것');
     await hideChrome();
     await page.screenshot({ path: path.join(OUT, `${spot.key}-ip${SUF}.png`), clip });
 
@@ -196,3 +206,4 @@ for (const spot of targets) {
 writeFileSync(path.join(OUT, `data${SUF}.json`), JSON.stringify(results, null, 2), 'utf8');
 await browser.close();
 console.log('\nsaved →', OUT);
+if (Object.keys(results).length !== targets.length) process.exitCode = 1;

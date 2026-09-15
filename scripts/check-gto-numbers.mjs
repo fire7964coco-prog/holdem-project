@@ -89,6 +89,15 @@ function extractContent(src) {
   return src.slice(i + 10, j < 0 ? undefined : j);
 }
 
+/** PT prose uses decimal commas. Normalize only for numeric comparison;
+ * keep the source and all other locales unchanged. Includes the first endpoint
+ * of percentage ranges, so the coverage warning still sees hidden values. */
+function normalizeNumericText(text, locale) {
+  if (locale !== "pt") return text;
+  return text.replace(/(?<![\d.,])(\d+(?:\.\d{3})*),(\d+)/g,
+    (_, integer, fraction) => `${integer.replace(/\./g, "")}.${fraction}`);
+}
+
 const has = (text, v) => v != null && new RegExp(`(?<![\\d.])${String(v).replace(".", "\\.")}\\s*%`).test(text);
 /**
  * 본문에 등장하는 «소수 한 자리 퍼센트» 집합 — 계산 부분의 지문이다.
@@ -141,7 +150,7 @@ function run({ locale = null } = {}) {
     for (const [loc, dir] of dirs) {
       const file = join(ROOT, dir, `${slug}.ts`);
       if (!existsSync(file)) { notPublished++; continue; }
-      const text = extractContent(readFileSync(file, "utf8"));
+      const text = normalizeNumericText(extractContent(readFileSync(file, "utf8")), loc);
       present.set(loc, text);
       for (const h of hiddenRanges(text)) hidden.push({ loc, slug, h });
       for (const [label, v] of [["OOP 에퀴티", row.oopEquity], ["OOP EQR", row.oopEqr], ["IP EQR", row.ipEqr]]) {
@@ -206,6 +215,24 @@ function run({ locale = null } = {}) {
 /** 셀프테스트 — 규칙보다 이게 먼저다([[gate-tuning-loop-is-the-work]]). */
 function selftest() {
   const cases = [
+    ["PT decimal commas preserve the numeric fingerprint", () => {
+      const pt = pctSet(normalizeNumericText("EQ 45,1% e EQR 84,0%", "pt"));
+      return pt.has("45.1") && pt.has("84.0") && pt.size === 2;
+    }],
+    ["PT percentage range retains its coverage warning", () => {
+      const pt = normalizeNumericText("73,4–75,2%", "pt");
+      return hiddenRanges(pt).length === 1 && pctSet(pt).has("75.2");
+    }],
+    ["PT grouped numbers cannot masquerade as smaller values", () => {
+      const pt = normalizeNumericText("1.084,0%", "pt");
+      return has(pt, "1084.0") && !has(pt, "84.0");
+    }],
+    ["PT excludes percentage points and readnext after normalization", () => {
+      const pt = normalizeNumericText("0,3%p\n:::readnext\n/pt/blog/x | 99,8%\n:::\n45,1%", "pt");
+      const values = pctSet(pt);
+      return values.size === 1 && values.has("45.1");
+    }],
+    ["other locales keep their original numeric text", () => normalizeNumericText("1,326 · 45.1%", "en") === "1,326 · 45.1%"],
     ["정본 값이 있으면 has=true", () => has("equity 45.1% and EQR 84.0%", 45.1) === true],
     ["「A~B%」는 앞 숫자가 pctSet에 안 잡힌다", () => {
       const p = pctSet("체크 빈도는 73.4~75.2% 입니다");
