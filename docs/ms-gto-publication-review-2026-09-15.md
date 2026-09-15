@@ -37,7 +37,7 @@
 - 수학·카드: 별도 `gpt-5.6-terra`가 EQR26개, 산술21항목, draw 열거16사례, 보드4개의 합법 straight 종류와 베스트5 근거를 확인했다. 본체의 프로그램 출력만으로 모든 전략을 인증하지 않고 실제 글의 분모·조건과 대조했다. 확정 결함은 없었다.
 - 전략: `gpt-5.6-sol`이 실제 13편에서 인용한 문장과 원문 계약·직접 계산을 짝지어 검수했다. ⑦의 2026-08-20 별도 계산·root 수치·내부 단위, ⑩의 큰 bet97.8%와 전체 bet98.1%, draw와 clean outs, MDF 전제와 UI가 제공하는 범위를 확인했다. 확정 결함은 없었다. 근거가 틀린 앞선 전략 요약은 채택하지 않았으며 실제 원문 증거를 담은 이 보고서로 판정했다.
 - 위 검수는 AI 역할 검수다. 현지 인간 감수나 새 solver 실행을 주장하지 않는다. 근거: `tmp/ms-language-review.md`, `tmp/ms-seo-review.md`, `tmp/ms-math-review.md`, `tmp/ms-strategy-evidence-review.md`.
-- 수정 부분만 별도 `gpt-5.6-sol`이 교열했다. diff1,273줄·17파일·97hunks, 새13편·랜딩13링크·기존3편의4역링크를 모두 읽었다. 동결본과 최종본의 숫자·수트 카드 토큰 순서와 개수는 13편 모두 일치했다. 교열에서 잡힌 `"Bet 4.1bb"`의 축어 UI 간격 한 곳을 되돌렸다. 근거 `tmp/ms-correction-proofread.md`.
+- 수정 부분만 별도 `gpt-5.6-sol`이 교열했다. diff1,273줄·17파일·97hunks, 새13편·랜딩13링크·기존3편의4역링크를 모두 읽었다. 동결본과 최종본의 숫자·수트 카드 토큰 순서와 개수는 13편 모두 일치했다. 교열에서 잡힌 `"Bet 4.1bb"`의 축어 UI 간격 한 곳을 되돌리고 같은 검수자가 해당 한 줄의 정정을 확인했다. 근거 `tmp/ms-correction-proofread.md`.
 
 ## 빌드와 실제 화면
 
@@ -45,10 +45,13 @@
 - MS 구조13/13·수치103일치/미판정0/오류0를 수정 후 재확인했다. 공통 구조 파서 수정의 ID 회귀도13/13 통과했다. MS hard21/21의 언어 불변 항목은 오류0·경고0이다.
 - `audit:hard --locale=ms --schema`는 기존 구현이 KO `.next/server/app/blog`를 읽으므로 MS FAQ 판정으로 채택하지 않았다. 실제 MS 페이지에서 JSON-LD를 파싱해 소스13편과 **FAQ67개**가 일치함을 확인했다.
 - 모바일390×844에서13편 전수 확인: HTTP200, H1·SEO title·`lang=ms`·canonical·자기 hreflang, 각 글 hero1개, 본문 이미지 alt, FAQ 마크업 누출0, 가로 넘침0. 핀치 확대를 막는 viewport 설정이 없다. 13편 상단과 대표 모바일 차트·데스크톱을 직접 열었으며 ⑦의 별도 계산 고지가 표 앞에 나오는 것도 확인했다.
-- 실제 WebP26개, EN13편의 MS 역방향 hreflang, 랜딩13링크, 기존3편의 역링크4개를 확인했다. 빌드 sitemap736 URL에서 변경17경로가 각각 한 번 존재한다. 랜딩 lastmod는 콘텐츠 커밋 뒤 생성기로 갱신한다.
+- 실제 WebP26개, EN13편의 MS 역방향 hreflang, 랜딩13링크, 기존3편의 역링크4개를 확인했다. 빌드 sitemap736 URL에서 변경17경로가 각각 한 번 존재한다. 콘텐츠 커밋 뒤 생성기를 실행해 랜딩 lastmod도09-15로 갱신했다.
+- 최종 UI 인용 정정 뒤 전체 build EXIT0 및 해당 페이지의 실제 인용을 재확인했다. ⑨의 넓은 draw 표는 모바일에서 내부 가로 스크롤로 끝 열까지 접근된다(너비322px, scrollWidth438px, scrollLeft116px). 모바일·데스크톱 표를 직접 열어 읽었다.
 - 로컬의 제한 없는 모바일 크기 새 브라우저 컨텍스트3회: LCP200/236/232ms, CLS0, 초기 리소스 약740–749KB. 현장 사용자 성능이나 통신망 제한 결과가 아니다. 최종 운영 측정은 배포 뒤 따로 확인한다.
 - 근거: `tmp/ms-build-final.log`, `tmp/ms-render/report.json`, `tmp/ms-render/delivery-report.json`, 실제 화면 PNG.
 
 ## 운영 확인
 
-콘텐츠·sitemap 커밋과 push, Vercel 배포, 실제 운영13편·이미지26개·변경17 URL의 lastmod, IndexNow 접수 결과는 완료 뒤 기록한다. GSC 수동 작업은 기존 사용자 보류 결정을 따른다.
+- 로컬 콘텐츠 커밋 `c7dbd01f`, 생성 sitemap 커밋 `ac967bc7`. 배포 직전 원격 main은 시작 시점과 같은 `87b312d1`이었다.
+- **현재 공개 배포 대기:** 자동 승인 검토가 `git push origin main`을 거절했다. 요청에 운영 배포의 명시적 승인이 없다는 이유이며, 사용자에게 승인을 요청했다. 원격 push·Vercel 새 배포·운영 신규13편 확인·IndexNow 전송은 아직 수행하지 않았다.
+- 승인되면 일반 push → 해당 SHA의 Vercel success → 운영13편·이미지26개·연결·sitemap의 변경17경로 확인 → 해당17 URL만 IndexNow 한 번 순서로 마무리한다. GSC 수동 작업은 기존 사용자 보류 결정을 따른다.
