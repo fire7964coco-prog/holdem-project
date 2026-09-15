@@ -1,12 +1,14 @@
-## 2026-09-15 — MS 솔버 해설 13편 제작·검수 완료, 공개 배포 승인 대기
+## 2026-09-15 — MS 솔버 해설 13편 발행 완료
 
-사용자 「고품질 해설포스팅 부탁해」에 따라 인계된 말레이어13편을 제작했다. 상세 = `docs/ms-gto-publication-review-2026-09-15.md`.
+사용자 「고품질 해설포스팅 부탁해」와 후속 「배포해줘」에 따라 인계된 말레이어13편을 작성·검수·발행했다. [MS 솔버 랜딩](https://www.holdemmaster.com/ms/solver)에서 전편으로 연결된다. 상세 = `docs/ms-gto-publication-review-2026-09-15.md`.
 
 - **콘텐츠**: MY/MS 검색·최신 EN 원문·승인된 N01–N24/C01–C12 정정으로 4/4/5 집필. 표637행·FAQ67개·readnext26개를 보존하고 실제 MS 링크124개를 연결했다. 실제 OOP 화면13장+range 차트13장, 랜딩13링크·기존3편역링크4개 완료. 기존 입문 글의 draw 확률/현재 call 가격 문단만 좁게 보완했다.
 - **품질**: 언어·SEO·수학·전략의 서로 다른 AI 검수와 본체 검산, 수정17파일의97hunks 교열 완료. 교열에서 발견한 UI 축어 한 곳을 정정·확인했다. 현지 인간 감수·새 solver 실행을 주장하지 않는다.
 - **검증**: MS 구조13/13·수치103일치/오류0, hard21/21의 언어 불변 항목0err/0warn. 구조 자체테스트16·수치30. 최종 build EXIT0(70 KO+564 intl), 모바일13/13·FAQ67·가로 넘침0, 대표 표의 내부 가로 스크롤 확인. 기존 typecheck/lint 생략과 KO 전용 hard-schema 한계는 실제 MS JSON-LD 확인과 구분해 기록했다.
 - **재사용 자료**: MS 검색 조사·브리프·원문 계약·미디어/발행 검수 문서와 reference §9. 캡처·차트·구조·수치 도구의 MS 지원을 추가하고 링크 suffix false pass를 바로잡았다.
-- **현재 상태**: 로컬 콘텐츠 `c7dbd01f`, sitemap `ac967bc7`. 자동 승인 검토가 `git push origin main`을 운영 공개에 대한 명시적 승인 부족으로 차단해 사용자에게 배포 승인을 요청했다. **push·Vercel·운영 확인·IndexNow는 미완료**다. 승인 후 변경17 MS URL을 확인하고 IndexNow 한 번으로 마무리한다. GSC는 기존 보류 유지.
+- **배포**: 콘텐츠 `c7dbd01f` + sitemap `ac967bc7` + 검수 기록 `dd3002ec`. 첫 push가 자동 승인 검토에서 차단된 뒤 사용자의 「배포해줘」로 명시적 승인을 받아 main 일반 push. **17:12:36 KST** 정확한 SHA의 [Vercel success](https://vercel.com/masters-projects-ca17ea56/holdem-project-milk/3tE6gZ6nzWAHdhGZPX7qxcKJn9f1)를 확인했다.
+- **운영 확인 17:14:29 KST**: 신규13편·이미지26개200, FAQ67·대체언어10개(9언어+default)·EN→MS13링크·랜딩13/역링크4 정상, 가로 넘침0. sitemap736개에서 변경17경로 각1회·lastmod09-15. 제한 없는 모바일 크기 측정3회 LCP236/276/284ms·CLS0이며 실제 사용자 성능 분포와 구분한다.
+- **검색 통지 17:15:09 KST**: 변경17 MS URL만 IndexNow **HTTP200 접수**. 색인 완료를 뜻하지 않는다. GSC는 기존 보류 유지. 다음 언어 HI는 추천 상태이며 새 집필은 시작하지 않았다.
 
 ## 2026-09-15 — ID 솔버 해설 13편 발행 완료·Codex 시작 규칙 정리
 

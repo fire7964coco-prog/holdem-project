@@ -1,6 +1,6 @@
 # MS GTO 해설 13편 — 제작·검수 기록
 
-기준일: 2026-09-15. 대상은 `lib/gto-series.ts`의 MS ①–⑬이다. 집필·전편 검수·수정 부분 교열을 마쳤다. 공개 배포 결과는 아래 운영 확인 절에 기록한다.
+기준일: 2026-09-15. 대상은 `lib/gto-series.ts`의 MS ①–⑬이다. 집필·전편 검수·수정 부분 교열·공개 배포·운영 확인·IndexNow 접수를 완료했다. [MS 솔버 랜딩](https://www.holdemmaster.com/ms/solver)에서 전편으로 연결된다.
 
 ## 집필 입력과 제작
 
@@ -53,5 +53,9 @@
 ## 운영 확인
 
 - 로컬 콘텐츠 커밋 `c7dbd01f`, 생성 sitemap 커밋 `ac967bc7`. 배포 직전 원격 main은 시작 시점과 같은 `87b312d1`이었다.
-- **현재 공개 배포 대기:** 자동 승인 검토가 `git push origin main`을 거절했다. 요청에 운영 배포의 명시적 승인이 없다는 이유이며, 사용자에게 승인을 요청했다. 원격 push·Vercel 새 배포·운영 신규13편 확인·IndexNow 전송은 아직 수행하지 않았다.
-- 승인되면 일반 push → 해당 SHA의 Vercel success → 운영13편·이미지26개·연결·sitemap의 변경17경로 확인 → 해당17 URL만 IndexNow 한 번 순서로 마무리한다. GSC 수동 작업은 기존 사용자 보류 결정을 따른다.
+- 최초 push는 자동 승인 검토에서 운영 공개의 명시적 승인 부족으로 차단됐고, 사용자의 후속 **「배포해줘」**로 승인됐다. 일반 push로 `dd3002ec7841fce00b0a400ba8447b464c07c162`까지 원격 main에 반영했다.
+- 별도 에이전트가 committed sitemap과 IndexNow dry 목록을 읽기 전용으로 대조했다. 신규13+기존3+solver1의17경로, 중복/누락/추가0, 각 lastmod09-15가 일치했다.
+- **17:12:36 KST Vercel success**: 위 정확한 SHA의 [운영 배포](https://vercel.com/masters-projects-ca17ea56/holdem-project-milk/3tE6gZ6nzWAHdhGZPX7qxcKJn9f1)를 확인했다.
+- **17:14:29 KST 운영 확인 완료**: 신규13편 HTTP200, MS 언어·H1/SEO/canonical, 대체언어10개(9언어+x-default), FAQ67개, hero 각1개, 모바일 가로 넘침0·마크업 누출0. WebP26개200, EN→MS13개, 랜딩13링크·기존3편의 역링크4개 정상. 운영 sitemap736개에서 변경17경로 각1회·lastmod 모두09-15. 근거 `tmp/ms-live/report.json`, `tmp/ms-live/delivery-report.json`.
+- 운영 사이트를 새 모바일 크기 컨텍스트3개에서 제한 없이 측정한 LCP236/276/284ms, CLS0, 초기 리소스 약746–752KB. 실제 내려받은 대표 hero는 약24.3–29.0KB다. 통신망 제한 측정이나 실제 사용자 성능 분포로 해석하지 않는다.
+- **17:15:09 KST IndexNow HTTP200 접수**: 승인된 변경17 MS URL만 한 번 제출했다. 오늘 발행한 다른 언어를 재전송하지 않았다. 접수는 검색 색인 완료를 뜻하지 않는다. GSC 수동 작업은 기존 사용자 보류 결정을 따른다.
