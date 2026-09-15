@@ -8,13 +8,9 @@ export const POST: Post = {
   tldr: "Continuation bet (c-bet) adalah taruhan di flop oleh pemain yang raise preflop. Aturan modern bukan 'c-bet tiap flop' — melainkan taruh kecil dan sering di flop yang menguntungkan range Anda (board tinggi dan kering seperti K-7-2) dan check yang menguntungkan lawan (board rendah dan nyambung seperti 7-6-5). Beri sizing kecil — sekitar sepertiga pot — di board kering, besar — dua pertiga pot atau lebih — di board basah, c-bet lebih jarang saat out of position kalau Anda raiser tunggalnya (sebagai 3-bettor out of position keadaannya justru berbalik — hampir selalu bertaruh), dan jauh lebih jarang di pot multiway.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-11",
-  // 2026-09-09: EN 09-09 정정(토너먼트 c-bet 사이즈 «각 구간 안에서» 축소) 본문 전파 완료.
-  //   🔴 masterUpdated는 08-19에 그대로 둔다 — 아래 미결 항목의 드리프트 추적기다(올리면 게이트가 눈이 먼다).
-  // masterUpdated 08-19 = EN의 08-19 변경(a-high-board-cbet 역링크 1문단)은 EN·KO 전용 자산이라
-  //   번역본에 전파하지 않는다(EN 파일 주석 + docs/locale-intentional-diffs.md) — 검토 완료 표시.
-  //   ⚠ EN에는 08-20 커밋(851d8dc7)의 GTO ⑨ 역링크 1문단도 있으나 EN updated가 08-19에 머물러
-  //   스테일 게이트 밖이다 — 같은 사유로 전파 제외(locale-intentional-diffs에 함께 등재).
+  updated: "2026-09-15",
+  // 2026-09-15: ID GTO ①·⑨ 발행에 맞춰 해당 해설과 ID 이미지 역링크 반영.
+  // EN 09-11 본문 대응 상태는 유지한다. 세부 이력: docs/locale-intentional-diffs.md.
   masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "15 mnt",
@@ -66,6 +62,8 @@ Inilah hal krusial yang sebenarnya dikatakan strategi modern, karena mudah disal
 - Di board yang menguntungkan lawan, **check jauh lebih banyak** — dan bertaruh lebih besar serta lebih selektif saat Anda melakukannya.
 
 Konsep yang mendasarinya adalah ==range advantage==: range keseluruhan siapa yang lebih kuat di flop tertentu ini. Sebagai raiser preflop, Anda memegang lebih banyak kartu besar dan overpair, jadi **board tinggi dan kering milik Anda** — dan board penuh kartu sedang yang nyambung milik pemain yang meng-call. Kuasai satu ide itu dan Anda unggul dari setiap pemain "asal c-bet" di meja.
+
+Angka untuk opener tidak bisa langsung diterapkan kepada caller. Pada contoh A♥7♦2♣ setelah BTN open dan BB call, BB check dengan 98,2% range-nya, termasuk top pair. Analisis [A-7-2: mengapa top pair juga check](/id/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-id.webp") memperlihatkan bagaimana posisi dan realisasi equity memengaruhi keputusan itu.
 
 ---
 
@@ -128,6 +126,8 @@ Beri angka nyata. Misalkan pot-nya ==$30== di flop:
 - C-bet **dua pertiga pot** adalah ==$20== — sizing board basah Anda untuk membebani draw.
 
 Di **turnamen**, condong sedikit lebih kecil: ukuran kecilnya tetap sepertiga, tapi ukuran besarnya lebih sering **setengah pot** ketimbang dua pertiga, karena stack Anda berharga dan tak bisa reload. Apa pun yang Anda pilih, ikat ukurannya pada board, bukan pada kebiasaan.
+
+Untuk melihat alasan memilih ukuran tertentu, buka contoh Q♥T♥7♠ dalam pot 3-bet. Pada konfigurasi itu, BB sebagai 3-bettor memakai [bet dua pertiga pot dengan 98,4% range-nya](/id/blog/3bet-pot-bet-sizing "thumb:/images/gto-3bp-dynamic-oop-id.webp"). Pembahasannya membandingkan harga call untuk draw dan menjelaskan mengapa bet kecil memberi lawan kesempatan lebih murah.
 
 ---
 

@@ -17,12 +17,18 @@ import { readFileSync, existsSync } from 'fs';
 
 const args = process.argv.slice(2);
 const LOCALE = (args.find((a) => a.startsWith('--locale=')) || '').split('=')[1];
-if (!LOCALE) { console.error('사용법: node scripts/check-gto-structure.mjs --locale=<zh|ja|es|…>'); process.exit(2); }
+if (!LOCALE && !args.includes('--selftest')) { console.error('사용법: node scripts/check-gto-structure.mjs --locale=<id|pt|zh|ja|es|…> 또는 --selftest'); process.exit(2); }
 
 const SLUGS = ['a-high-board-cbet','k-high-board-cbet','broadway-board-strategy','donk-bet-strategy','monotone-board-strategy','paired-board-strategy','low-board-check-raise','3bet-pot-cbet','3bet-pot-bet-sizing','3bet-pot-low-board','blind-battle-cbet','blind-battle-connected-board','ace-paired-board-strategy'];
 
 /** 로케일별 규칙 — 앵커·라벨·문자 집합. 없는 로케일은 구조 계수만 본다. */
 const RULES = {
+  id: {
+    quick: /> \*\*Jawaban singkat\*\*/,
+    readnext: /:::readnext\[(?!Lanjut membaca\])/,
+    readTime: /readTime: "\d+ mnt"/,
+    extra: [[/\*\*\*\*/, '**** 볼드 충돌'], [/13x13/, '13x13(→13×13)']],
+  },
   pt: {
     quick: /> \*\*Resposta rápida\*\*/,
     readnext: /:::readnext\[(?!Continue lendo\])/,
@@ -71,6 +77,37 @@ const counts = (c, loc) => ({
   readnext: (c.match(/^\/[a-z-]{2,7}\/blog\/[^|]+\|/gm) || []).length,
 });
 
+if (args.includes('--selftest')) {
+  const cases = [
+    ['ID quick-answer label accepts corpus spelling and rejects English fallback', () =>
+      RULES.id.quick.test('> **Jawaban singkat**') && !RULES.id.quick.test('> **Quick answer**')],
+    ['ID readnext rejects untranslated and Malay labels', () =>
+      !RULES.id.readnext.test(':::readnext[Lanjut membaca]') &&
+      RULES.id.readnext.test(':::readnext[Read next]') && RULES.id.readnext.test(':::readnext[Baca seterusnya]')],
+    ['ID reading time follows mnt, while PT retains min', () =>
+      RULES.id.readTime.test('readTime: "12 mnt"') && !RULES.id.readTime.test('readTime: "12 menit"') &&
+      !RULES.id.readTime.test('readTime: "12 min"') && RULES.pt.readTime.test('readTime: "12 min"')],
+    ['Translated labels preserve link destinations and structural counts', () => {
+      const en = counts('## Question?\n[Solver](/en/solver)\n**Q. Why?**\n| A | B |\n', 'en');
+      const id = counts('## Pertanyaan?\n[Solver](/id/solver)\n**Q. Mengapa?**\n| A | B |\n', 'id');
+      return JSON.stringify(en) === JSON.stringify(id);
+    }],
+    ['A missing FAQ or changed link destination changes the signature', () => {
+      const a = counts('**Q. Why?**\n[X](/id/blog/a-high-board-cbet)', 'id');
+      const b = counts('[X](/id/blog/k-high-board-cbet)', 'id');
+      return a.faq !== b.faq && a.linkTargets !== b.linkTargets;
+    }],
+  ];
+  let passed = 0;
+  for (const [name, test] of cases) {
+    const ok = test();
+    console.log(`${ok ? '✅' : '❌'} ${name}`);
+    if (ok) passed++;
+  }
+  console.log(`\n셀프테스트 ${passed}/${cases.length}`);
+  process.exit(passed === cases.length ? 0 : 1);
+}
+
 let bad = 0;
 for (const slug of SLUGS) {
   const lp = `lib/posts-${LOCALE}/${slug}.ts`;
@@ -105,4 +142,5 @@ for (const slug of SLUGS) {
   for (const w of warns) console.log(`   🟠 ${w}`);
 }
 console.log(bad ? `\n🔴 ${bad}편 결함` : `\n✅ ${SLUGS.length}/${SLUGS.length} 구조 통과 (${LOCALE})`);
+console.log('🪶 구조·표기 계수만 검사한다. 표의 값·분모·노드·전략적 의미·언어 자연스러움은 별도 검수 대상이다.');
 process.exit(bad ? 1 : 0);

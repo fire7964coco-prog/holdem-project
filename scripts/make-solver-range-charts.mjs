@@ -36,6 +36,8 @@ const CHART_L10N = {
         equity: 'Equity', eqr: 'Realización de equity' },
   pt: { title: 'Composição dos ranges', source: 'Solver GTO da HoldemMaster · sem rake',
         equity: 'Equity', eqr: 'Realização de equity' },
+  id: { title: 'Komposisi range', source: 'Solver GTO HoldemMaster · tanpa rake',
+        equity: 'Equity', eqr: 'Realisasi equity' },
   zh: { title: '范围构成', source: 'HoldemMaster GTO 求解器计算值 · 未计入抽水',
         equity: '胜率 (EQ)', eqr: '权益实现率 (EQR)' },
   'zh-hant': { title: '範圍構成', source: 'HoldemMaster GTO 解算器計算值 · 未計入抽水',
@@ -45,19 +47,21 @@ const C = CHART_L10N[LANG];
 if (!C) { console.error('지원하지 않는 로케일:', LANG, '· 아는 것:', Object.keys(CHART_L10N).join(', ')); process.exit(1); }
 
 const SUIT = { '♠': '#e2e8f0', '♥': '#f87171', '♦': '#60a5fa', '♣': '#4ade80' };
-// PT UI의 98,2%를 parseFloat에 바로 넣으면 98로 잘린다. 화면 축어는 data.json에 보존하고 계산할 때만 정규화한다.
+// PT·ID UI의 98,2%를 parseFloat에 바로 넣으면 98로 잘린다. 화면 축어는 data.json에 보존하고 계산할 때만 정규화한다.
 const num = (s) => {
   const value = String(s).trim().replace(/%$/, '').replace(',', '.');
   if (!/^\d+(?:\.\d+)?$/.test(value)) throw new Error(`잘못된 백분율: ${s}`);
   return Number(value);
 };
-const pct = (n) => (LANG === 'pt' ? n.toFixed(1).replace('.', ',') : n.toFixed(1)) + '%';
+const commaDecimal = ['pt', 'id'].includes(LANG);
+const stackedHeading = ['pt', 'id'].includes(LANG);
+const pct = (n) => (commaDecimal ? n.toFixed(1).replace('.', ',') : n.toFixed(1)) + '%';
 
 if (process.argv.includes('--selftest')) {
   const { strict: assert } = await import('node:assert');
   for (const [raw, expected] of [['98,2%', 98.2], ['0,1%', 0.1], ['98.2%', 98.2], ['0%', 0], ['100,0%', 100]]) assert.equal(num(raw), expected);
   for (const raw of ['', '—', '1,2,3%', '12oops%']) assert.throws(() => num(raw));
-  assert.equal(pct(num('0,1%')), LANG === 'pt' ? '0,1%' : '0.1%');
+  assert.equal(pct(num('0,1%')), commaDecimal ? '0,1%' : '0.1%');
   console.log('✔ percentage parsing: dot/comma, zero, bounds, invalid input, locale display');
   process.exit(0);
 }
@@ -97,7 +101,7 @@ function html(d) {
   const max = Math.max(...rows.flatMap(r => [r.x, r.y]), 10);
   const rowH = Math.min(58, Math.floor(428 / rows.length));
   const barH = Math.max(7, Math.round(rowH * 0.30));
-  const heading = LANG === 'pt'
+  const heading = stackedHeading
     ? `<div><h1>${C.title}</h1><p class="spot-title">${title}</p></div>`
     : `<h1>${C.title} — ${title}</h1>`;
 
@@ -115,7 +119,7 @@ function html(d) {
   .wrap{padding:34px 44px 0}
   .top{display:flex;align-items:center;gap:16px;border-bottom:1px solid rgba(212,175,55,.3);padding-bottom:16px}
   h1{font-size:31px;font-weight:800;letter-spacing:-.5px}
-  ${LANG === 'pt' ? 'h1{font-size:27px;line-height:1.15}.spot-title{font-size:18px;line-height:1.2;margin-top:3px;color:#c3ccc5}.board{flex-shrink:0}' : ''}
+  ${stackedHeading ? 'h1{font-size:27px;line-height:1.15}.spot-title{font-size:18px;line-height:1.2;margin-top:3px;color:#c3ccc5}.board{flex-shrink:0}' : ''}
   .board{display:flex;gap:7px;margin-left:auto}
   .card{display:inline-flex;align-items:center;background:#111814;border:1px solid #2b3a32;border-radius:7px;padding:5px 10px;font-size:24px;font-weight:800;line-height:1}
   .card i{font-style:normal;margin-left:2px}

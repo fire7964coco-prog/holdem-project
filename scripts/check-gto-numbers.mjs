@@ -89,11 +89,11 @@ function extractContent(src) {
   return src.slice(i + 10, j < 0 ? undefined : j);
 }
 
-/** PT prose uses decimal commas. Normalize only for numeric comparison;
+/** PT and ID prose use decimal commas. Normalize only for numeric comparison;
  * keep the source and all other locales unchanged. Includes the first endpoint
  * of percentage ranges, so the coverage warning still sees hidden values. */
 function normalizeNumericText(text, locale) {
-  if (locale !== "pt") return text;
+  if (!["pt", "id"].includes(locale)) return text;
   return text.replace(/(?<![\d.,])(\d+(?:\.\d{3})*),(\d+)/g,
     (_, integer, fraction) => `${integer.replace(/\./g, "")}.${fraction}`);
 }
@@ -111,6 +111,15 @@ const pctSet = (text) => {
   const body = text.replace(/:::readnext[\s\S]*?:::/g, "");
   return new Set([...body.matchAll(/(?<![\d.])(\d+\.\d)\s*%(?!p)/g)].map((m) => m[1]));
 };
+/** A translation may explicitly name this spot's total OOP bet frequency from
+ * §4-B even when KO only names its sizes. Example: ⑨ 99.1% = 98.4% + 0.7%.
+ * Permit only the exact, parsed spec value as an extra; keep missing source
+ * figures and every other extra as differences. This does not check placement. */
+const pctDiff = (base, local, specOopBet) => ({
+  onlyBase: [...base].filter(v => !local.has(v)),
+  onlyLoc: [...local].filter(v => !base.has(v) && v !== specOopBet),
+  specExtra: specOopBet != null && local.has(specOopBet) && !base.has(specOopBet),
+});
 /**
  * 🪶 **커버리지 출력 — 이 게이트가 «못 보는» 수치를 매 실행 드러낸다.**
  *
@@ -170,8 +179,8 @@ function run({ locale = null } = {}) {
       for (const [loc, text] of present) {
         if (loc === BASE) continue;
         const s = pctSet(text);
-        const onlyBase = [...baseSet].filter((v) => !s.has(v));
-        const onlyLoc = [...s].filter((v) => !baseSet.has(v));
+        const { onlyBase, onlyLoc, specExtra } = pctDiff(baseSet, s, row.oopBet);
+        if (specExtra) lines.push(`🪶 [${loc}] ${slug} — ${BASE} 미기재 총 bet ${row.oopBet}%를 §4-B 정본과 직접 대조했다(문장 귀속은 별도 검수)`);
         if (onlyBase.length || onlyLoc.length) {
           red++;
           lines.push(
@@ -215,6 +224,41 @@ function run({ locale = null } = {}) {
 /** 셀프테스트 — 규칙보다 이게 먼저다([[gate-tuning-loop-is-the-work]]). */
 function selftest() {
   const cases = [
+    ["Exact spec total may be stated in addition to KO's size frequencies", () => {
+      const d = pctDiff(pctSet("98.4% 0.7% 0.8%"), pctSet("98.4% 0.7% 0.8% 99.1%"), "99.1");
+      return !d.onlyBase.length && !d.onlyLoc.length && d.specExtra;
+    }],
+    ["Wrong total remains a numeric difference", () => {
+      const d = pctDiff(pctSet("98.4% 0.7%"), pctSet("98.4% 0.7% 99.2%"), "99.1");
+      return d.onlyLoc.includes("99.2") && !d.specExtra;
+    }],
+    ["Spec total cannot hide a changed size frequency", () => {
+      const d = pctDiff(pctSet("98.4% 0.7%"), pctSet("98.5% 0.7% 99.1%"), "99.1");
+      return d.onlyBase.includes("98.4") && d.onlyLoc.includes("98.5");
+    }],
+    ["Approved total is scoped to its own spot", () => {
+      const d = pctDiff(pctSet("3.0%"), pctSet("3.0% 99.1%"), "3.0");
+      return d.onlyLoc.includes("99.1");
+    }],
+    ["ID decimal commas preserve metrics and exclude grouped-number suffixes", () => {
+      const id = normalizeNumericText("EQ 45,1% · EQR 84,0% · 1.084,0%", "id");
+      return pctSet(id).has("45.1") && has(id, "84.0") && has(id, "1084.0") &&
+        !has(normalizeNumericText("1.084,0%", "id"), "84.0");
+    }],
+    ["ID hidden ranges remain visible while explicit endpoints are compared", () => {
+      const hidden = normalizeNumericText("73,4–75,2%", "id");
+      const explicit = normalizeNumericText("73,4%–75,2%", "id");
+      return hiddenRanges(hidden).length === 1 && hiddenRanges(explicit).length === 0 &&
+        pctSet(explicit).has("73.4") && pctSet(explicit).has("75.2");
+    }],
+    ["ID UI decimal points are preserved alongside prose decimal commas", () => {
+      const id = normalizeNumericText("UI 45.1% · narasi 45,1% · 1.000 iterasi", "id");
+      return pctSet(id).size === 1 && pctSet(id).has("45.1") && id.includes("1.000 iterasi");
+    }],
+    ["ID ignores readnext figures and percentage-point suffixes", () => {
+      const id = normalizeNumericText("0,3%p\n:::readnext\n/id/blog/x | 99,8%\n:::\n45,1%", "id");
+      return pctSet(id).size === 1 && pctSet(id).has("45.1");
+    }],
     ["PT decimal commas preserve the numeric fingerprint", () => {
       const pt = pctSet(normalizeNumericText("EQ 45,1% e EQR 84,0%", "pt"));
       return pt.has("45.1") && pt.has("84.0") && pt.size === 2;

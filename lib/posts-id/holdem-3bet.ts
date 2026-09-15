@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "3-bet adalah re-raise pertama sebelum flop — disebut 3-bet karena big blind adalah taruhan pertama, open-raise yang kedua, dan re-raise Anda yang ketiga. Value-3-bet inti yang ketat (QQ+, AK) plus beberapa bluff blocker suited seperti A5s, ukur sekitar 3x dari open in position dan 4x out of position, dan jaga frekuensi 3-bet keseluruhan Anda dekat 6–10%. Saat Andalah yang menghadapi 3-bet, 4-bet tangan premium Anda, call tangan yang bermain baik, dan fold sisanya — fold lebih banyak daripada 'balanced' melawan pemain stake rendah yang tak pernah bluff.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-13",
+  updated: "2026-09-15",
   masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "16 mnt",
@@ -299,7 +299,7 @@ A. Saat stack makin pendek — kira-kira 10–25 big blind — banyak tangan ber
 3. **Ukur ~3x in position, ~4x out** — dan jangan pernah kecil out of position.
 4. **Cocokkan bentuk dengan spot:** linear vs open lebar/lemah (dan dari small blind), polarized vs open ketat dan dari big blind.
 5. **Menghadapi 3-bet, sebagian besar tangan fold** — 4-bet premium, call yang bisa dimainkan, dan fold lebih banyak daripada "balanced" melawan lawan yang tak pernah bluff.
-6. **Lalu flop pun datang.** Pot 3-bet sama sekali tidak dimainkan seperti pot single-raised — dengan angka artikel ini (open 3bb, 3-bet 9bb, 100bb deep) pot-nya kira-kira 2,6× lebih besar (19,5bb dibanding 7,5bb yang dibangun sebuah flat heads-up; 3-bet out of position yang lebih besar mendorongnya mendekati 3,5×) dan SPR turun ke sekitar 4,7. Pihak yang meng-3-bet tetap sering bertaruh dengan seluruh range-nya di flop — karena bentuk range-nya, bukan karena stack-nya dangkal.
+6. **Lalu flop pun datang.** Pot 3-bet sama sekali tidak dimainkan seperti pot single-raised — dengan angka artikel ini (open 3bb, 3-bet 9bb, 100bb deep) pot-nya kira-kira 2,6× lebih besar (19,5bb dibanding 7,5bb yang dibangun sebuah flat heads-up; 3-bet out of position yang lebih besar mendorongnya mendekati 3,5×) dan SPR turun ke sekitar 4,7. Pihak yang meng-3-bet tetap sering bertaruh dengan [seluruh range-nya di flop](/id/blog/3bet-pot-cbet) — karena bentuk range-nya, bukan karena stack-nya dangkal.
 
 Kuasai 3-betting dengan benar dan Anda berhenti menjadi pemain yang hanya call dengan aces dan menang pot mungil. Padukan dengan [range starting-hand](/id/blog/holdem-starting-hands-chart) yang disiplin, kesadaran [posisi](/id/blog/holdem-position-play) yang tajam, dan [kerangka strategi](/id/blog/holdem-strategy) lengkap, dan permainan preflop Anda diam-diam bergerak melampaui field.
 

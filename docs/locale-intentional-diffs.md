@@ -33,6 +33,8 @@
 
 ## 판정 로그
 
+2026-09-15 ID GTO 신규 등록: **ID 미발행에 따른 링크 면제를 해소**했다. ID index에 13편을 등록하고, holdem-continuation-bet의 ① A-high·⑨ 3bet sizing 두 링크, holdem-position-play의 ⑦ check-raise 링크, holdem-3bet의 ⑧ range c-bet 링크를 연결했다. 새 ID 이미지도 같은 글에 대응한다. 파일·등록·링크 대조 근거는 `docs/id-gto-publication-review-2026-09-15.md`에 정리한다. 아래 과거 부재 기록은 당시의 이력으로 유지하며, 다른 미발행 로케일의 판정은 유지한다.
+
 2026-09-15 PT GTO 발행 반영: 아래 2026-08-19·08-26·09-10 기록의 **PT 미발행에 따른 링크 면제는 해소**됐다. 13편을 PT index에 등록하고, holdem-continuation-bet의 ① A-high(98,2%)·⑨ 3bet sizing(98,4%) 두 링크, holdem-position-play의 ⑦ check-raise 링크, holdem-3bet의 ⑧ range c-bet 링크를 연결했다. 과거의 부재 기록은 이력으로 유지한다. de·id 등 아직 글이 없는 로케일의 판정에는 변화가 없다.
 
 | 날짜 | 글 | 차이 | 판정 근거 |

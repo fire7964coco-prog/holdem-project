@@ -72,6 +72,10 @@ const L10N = {
         back: '← Lista', spots: 'Spots de estudo', view: '⚡ Ver resultados',
         noDraw: 'Sem draw', combos: 'combos', hands: 'Mãos', draws: 'Draws',
         all: 'Tudo', summary: 'Resumo', barWidth: 'Largura da barra' }, // 2026-09-15 라이브 PT DOM 축어 · 결과 숫자도 소수 쉼표
+  id: { url: 'https://solver.holdemmaster.com/?lang=id',
+        back: '← Kembali', spots: 'Spot belajar', view: '⚡ Lihat hasil',
+        noDraw: 'Tanpa draw', combos: 'combo', hands: 'Hand', draws: 'Draw',
+        all: 'Semua', summary: 'Ringkasan', barWidth: 'Lebar batang:' }, // 2026-09-15 라이브 ID DOM 축어 · 결과 숫자도 소수 쉼표
   zh: { url: 'https://solver.holdemmaster.com/?lang=zh',
         back: '← 列表', spots: '教学案例', view: '⚡ 直接看结果',
         noDraw: '无听牌', combos: '组合', hands: '手牌', draws: '听牌',

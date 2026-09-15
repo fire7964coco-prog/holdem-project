@@ -41,6 +41,19 @@ import { POST as holdemCooler } from "./holdem-cooler";
 import { POST as holdemBadBeat } from "./holdem-bad-beat";
 import { POST as holdemCardCounting } from "./holdem-card-counting";
 import { POST as holdemTournamentVsCashGame } from "./holdem-tournament-vs-cash-game";
+import { POST as aHighBoardCbet } from "./a-high-board-cbet";
+import { POST as kHighBoardCbet } from "./k-high-board-cbet";
+import { POST as broadwayBoardStrategy } from "./broadway-board-strategy";
+import { POST as donkBetStrategy } from "./donk-bet-strategy";
+import { POST as monotoneBoardStrategy } from "./monotone-board-strategy";
+import { POST as pairedBoardStrategy } from "./paired-board-strategy";
+import { POST as lowBoardCheckRaise } from "./low-board-check-raise";
+import { POST as threebetPotCbet } from "./3bet-pot-cbet";
+import { POST as threebetPotBetSizing } from "./3bet-pot-bet-sizing";
+import { POST as threebetPotLowBoard } from "./3bet-pot-low-board";
+import { POST as blindBattleCbet } from "./blind-battle-cbet";
+import { POST as blindBattleConnectedBoard } from "./blind-battle-connected-board";
+import { POST as acePairedBoardStrategy } from "./ace-paired-board-strategy";
 
 /**
  * 인도네시아어(id) 블로그 포스트.
@@ -98,6 +111,20 @@ export const ID_POSTS: Post[] = [
   holdemCardCounting,
   // 기타
   holdemTournamentVsCashGame,
+  // GTO solver example explanations (series order)
+  aHighBoardCbet,
+  kHighBoardCbet,
+  broadwayBoardStrategy,
+  donkBetStrategy,
+  monotoneBoardStrategy,
+  pairedBoardStrategy,
+  lowBoardCheckRaise,
+  threebetPotCbet,
+  threebetPotBetSizing,
+  threebetPotLowBoard,
+  blindBattleCbet,
+  blindBattleConnectedBoard,
+  acePairedBoardStrategy,
 ];
 
 export function getIdPost(slug: string): Post | undefined {
