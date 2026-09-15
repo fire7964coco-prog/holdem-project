@@ -1,6 +1,6 @@
 # 힌디어 신규 포스팅 참고 정본
 
-갱신: **2026-09-14**. 대상 **인도 힌디어 `hi`**. 기존 [translation-terms-hi.md](../translation-terms-hi.md)의 검증된 하우스 스타일에 이번 Google 인도·원문·실제 앱 조사를 합친다. 이번에 내린 결정은 이 파일을 우선하며 과거 코퍼스 실측·작업 이력은 기존 문서에 보존한다. 랜딩 작업 상세는 [hi-solver-landing-brief.md](../hi-solver-landing-brief.md).
+갱신: **2026-09-15**. 대상 **인도 힌디어 `hi`**. 기존 [translation-terms-hi.md](../translation-terms-hi.md)의 검증된 하우스 스타일에 Google 인도·원문·실제 앱 조사를 합친다. 이번에 내린 결정은 이 파일을 우선하며 과거 코퍼스 실측·작업 이력은 기존 문서에 보존한다. 랜딩 작업 상세는 [hi-solver-landing-brief.md](../hi-solver-landing-brief.md), GTO 해설 자료는 §8이다.
 
 ## 1. 다음 글 작성 시 바로 적용할 기준
 
@@ -14,7 +14,7 @@
 
 ## 2. 기존 글과 코퍼스 근거
 
-`lib/posts-hi/index.ts` 등록 **8편**. 다음 slug는 `/hi/blog/` 뒤에 붙는다. 2026-09-14에 8편 모두 GET **200**, HTML `lang=hi`를 확인했다.
+2026-09-14 조사 당시 `lib/posts-hi/index.ts`의 입문 **8편**이 아래 코퍼스다. 다음 slug는 `/hi/blog/` 뒤에 붙는다. 당시 8편 모두 GET **200**, HTML `lang=hi`를 확인했다. 이후 GTO 신규 등록은 §8에 구분한다.
 
 | 글 slug | 의도·연결 용도 |
 |---|---|
@@ -27,7 +27,7 @@
 | holdem-hand-rankings | 족보·비교 |
 | holdem-tournament-vs-cash-game | tournament와 cash game·칩 가치 |
 
-현재 8편은 입문 규칙 글이며 GTO 전략 시리즈가 아니다. 독립 HI calculator/hand-chart나 13개 전략 예제 글의 URL을 추측해 만들지 않는다. `/hi/solver`를 도구 페이지로 사용하고, 프리플랍 차트·equity는 실제 솔버 앱 탭으로 연결한다.
+이 8편은 입문 규칙 글이다. 독립 HI calculator/hand-chart URL을 추측해 만들지 않는다. `/hi/solver`를 도구 페이지로 사용하고, 프리플랍 차트·equity는 실제 솔버 앱 탭으로 연결한다. GTO 전략 예제는 §8의 실제 등록 목록으로 확인한다.
 
 이번 재계수는 index를 제외한 8개 소스 전부를 이어 붙여 **142,278 UTF-16 code units**였다. 대소문자 구분·Unicode 문자/결합문자/숫자/밑줄/하이픈 경계 기준으로 हैंड251, hand20, हाथ15, range6/रेंज0, equity11/इक्विटी0, bet135, raise143, fold75, call118, check63, pot121, stack36, आप190/तुम0. 무료 표현은 부분문자열 기준 मुफ़्त19/मुफ्त0/निःशुल्क0이었다. **기존 9/6 문서와 경계 방식이 달라 수치 차이를 문체 변경으로 해석하지 않는다.** 입문 코퍼스의 적은 range/equity 표본을 현지 GTO 전문 용어의 대규모 실측으로 소개하지 않는다.
 
@@ -90,7 +90,7 @@
 
 ## 6. 다음 신규 글 기획에 쓰는 방법
 
-1. 기존 8편과 주제가 겹치는지 확인한다. 초보 규칙 글은 기존 URL로 연결하고, GTO 개념·range 읽기·equity와EV 차이 등 새 주제는 실제 주제 검색을 별도로 한다.
+1. 기존 입문 글과 등록된 GTO 시리즈의 주제 중복을 확인한다. 초보 규칙 글은 기존 URL로 연결하고, 새 주제는 실제 주제 검색을 별도로 한다.
 2. 델리 HI 교육 편집자, 인도 검색의도 분석가, 제품 검수자, 초심자 독자의 **AI 역할**을 나누어 작성·검수한다. 실제 현지 전문가 감수라고 표시하지 않는다.
 3. 해당 글에 필요한 원출처를 읽고 지역/본문 언어/자동 번역/운영자 구분을 기록한다. 이 파일의 9/14 SERP를 영구적인 최신 시장 자료로 취급하지 않는다.
 4. 문체·수치·UI를 각각 검토한다. range의 가중치, OOP/IP 행동 순서, EV 손실과 승률, node lock과GTO, 기기 저장과계정 동기화를 혼동하지 않게 한다.
@@ -101,3 +101,12 @@
 **운영 배포 완료:** [힌디어 솔버 랜딩](https://www.holdemmaster.com/hi/solver), 커밋 **`2dbb885c`**, Vercel success **2026-09-14 20:53:34 KST**. 로컬 전체 빌드·데스크톱/390px 모바일 검증에 이어, 운영 **20:55:39 KST**에 12언어 모두 HTTP200, FAQ252 소스·화면·FAQPage 일치, hreflang12·canonical·CTA·사이트맵을 확인했다. HI/MS 내부 연결 각8경로도 모두200이다. 상세 기록은 WORKLOG와 `tmp/solver-live-audit-2dbb885c.json`.
 
 새 HI URL만 IndexNow **HTTP200 접수**했다(검색 색인 완료 의미 아님). 앱의 현재12언어에 대응하는 본진 solver 랜딩은 모두 구현·배포되었다. 조사 내용과 용어·출처 판단은 §1–6에 직접 들어 있으므로 다음 글 작성 시 이 파일을 먼저 읽는다.
+
+## 8. GTO 해설 시리즈 자료 — 2026-09-15
+
+- `lib/gto-series.ts`의 ①–⑬을 HI index에 등록하고 `/hi/solver`에서 연결했다. 실제 발행·검수 상태는 [HI 발행 검수 기록](../hi-gto-publication-review-2026-09-15.md)을 따른다. 로컬 등록을 공개 배포 완료로 읽지 않는다.
+- 주제별 [HI 검색 팩](hi-gto-series.md), [공통 집필 브리프](../hi-gto-translation-brief.md), [원문 계약](../hi-gto-source-contract.md), [실제 미디어 검수](../hi-gto-media-review.md)를 다음 작업에 사용한다. 검색 팩의 제목 어순은 편집 선택이며 검색량 우위의 증거가 아니다.
+- 범용 입문 검색어를 전략 글 제목에 반복하지 않는다. `GTO`에는 `पोकर`/poker 맥락을 붙이고, 보드·행동 주체·빈도의 분모를 분명히 한다. `97.8%`는 ⑩의 큰 bet이며 전체 bet `98.1%`와 다르다.
+- 세 집필 배치가 같은 용어를 쓰도록 직답 `सीधा जवाब`, 다음 글 `आगे पढ़ें`, 소요시간 `N मिनट`, हैंड·कॉम्बो·range·equity·EQR 표기를 맞춘다. UI 축어는 일반 문체보다 우선한다. 결과 화면 직접 계산은 `इस स्पॉट की गणना खुद करें`, 목록은 `खुद गणना करें`이다.
+- 현재 전문 보충 글이 없는 EN 링크 자리는 계약에 정한 source별 HI solver·입문 글로만 치환한다. 도구 페이지를 전문 해설 글처럼 소개하지 않는다. readnext title·hero는 실제 HI 대상에서 가져온다.
+- 기본 root, 별도 후속 solve, whole-range 빈도, hand class 평균, 개별 combo, 실제 상대 반응을 구분한다. EQR은 pot 지분이 아니며, draw 완성 확률은 clean outs나 수익성 있는 call을 자동 보증하지 않는다. ⑦의 과거 계산 날짜·내부단위·표시/역산 차이는 원문 계약의 고지를 유지한다.

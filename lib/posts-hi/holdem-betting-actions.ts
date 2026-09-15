@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "टेक्सस होल्डम में 5 betting actions हैं: check (मुफ़्त में पास), bet (राउंड खोलना), call (bet बराबर करना), raise (बढ़ाना — minimum raise पिछले bet या raise के बराबर होती है), और fold। check सिर्फ़ तब कर सकते हैं जब आपके सामने कोई चालू bet न हो — preflop में यह सिर्फ़ big blind के साथ होता है।",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-07-13",
+  updated: "2026-09-15",
   masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "9 min",
@@ -167,6 +167,8 @@ all-in का मतलब है अपने ==सारे बचे chips== 
 - पहले अपनी हैंड की कच्ची ताक़त परखें: [पोकर हैंड रैंकिंग](/hi/blog/holdem-hand-rankings)
 - हर फ़ैसले का ढाँचा: टेक्सस होल्डम strategy और उसके 5 फ़ैसले
 - आपकी सीट सब कुछ क्यों बदल देती है: पोकर की positions
+
+इन फ़ैसलों को वास्तविक सॉल्वर उदाहरणों में देखें: [AK2 पर 3-bet pot में BB का c-bet](/hi/blog/3bet-pot-cbet) range और बचे हुए stack का असर दिखाता है। [6-6-3 के paired board पर check करने की रणनीति](/hi/blog/paired-board-strategy) समझाती है कि मज़बूत हैंड होने पर भी check क्यों चुना जा सकता है।
 
 तब तक एक थंब रूल जो शुरुआती के असली पैसे बचाता है: ==अगर कोई हैंड raise करने लायक़ मज़बूत नहीं है, तो fold करना आम तौर पर call से बेहतर है।==
 

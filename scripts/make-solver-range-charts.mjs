@@ -40,6 +40,8 @@ const CHART_L10N = {
         equity: 'Equity', eqr: 'Realisasi equity' },
   ms: { title: 'Komposisi range', source: 'Solver GTO HoldemMaster · tanpa rake',
         equity: 'Equity', eqr: 'Realisasi equity' }, // MS 정본 §8-C · 세부 분류명은 라이브 MS UI
+  hi: { title: 'Range की बनावट', source: 'HoldemMaster GTO सॉल्वर · rake शामिल नहीं',
+        equity: 'Equity', eqr: 'Equity realization (EQR)' }, // HI 랜딩 용례 유지 · 세부 분류명은 2026-09-15 라이브 HI UI
   zh: { title: '范围构成', source: 'HoldemMaster GTO 求解器计算值 · 未计入抽水',
         equity: '胜率 (EQ)', eqr: '权益实现率 (EQR)' },
   'zh-hant': { title: '範圍構成', source: 'HoldemMaster GTO 解算器計算值 · 未計入抽水',
@@ -52,24 +54,72 @@ const SUIT = { '♠': '#e2e8f0', '♥': '#f87171', '♦': '#60a5fa', '♣': '#4a
 // PT·ID UI의 98,2%를 parseFloat에 바로 넣으면 98로 잘린다. 화면 축어는 data.json에 보존하고 계산할 때만 정규화한다.
 const num = (s) => {
   const value = String(s).trim().replace(/%$/, '').replace(',', '.');
-  if (!/^\d+(?:\.\d+)?$/.test(value)) throw new Error(`잘못된 백분율: ${s}`);
+  if (!/^\d+(?:\.\d+)?$/.test(value) || !Number.isFinite(Number(value))) throw new Error(`잘못된 백분율: ${s}`);
   return Number(value);
 };
 const commaDecimal = ['pt', 'id'].includes(LANG);
-const stackedHeading = ['pt', 'id', 'ms'].includes(LANG);
+const stackedHeading = ['pt', 'id', 'ms', 'hi'].includes(LANG);
 const pct = (n) => (commaDecimal ? n.toFixed(1).replace('.', ',') : n.toFixed(1)) + '%';
+
+/** Partial spot sets are valid, but every selected spot must supply both chart panels. */
+function validateChartData(data) {
+  if (!data || typeof data !== 'object' || Array.isArray(data) || !Object.keys(data).length) {
+    throw new Error('캡처 데이터가 비어 있거나 객체가 아니다');
+  }
+  const entries = Object.entries(data);
+  for (const [key, d] of entries) {
+    if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(key)) throw new Error(`잘못된 스팟 파일명: ${key}`);
+    for (const side of ['oop', 'ip']) {
+      const panel = d?.[side];
+      const parts = typeof panel?.header === 'string' ? panel.header.split('|').map(s => s.trim()) : [];
+      if (!panel || !parts[1] || !parts[2] || !Array.isArray(panel.players) || panel.players.length !== 2 ||
+          panel.players.some(player => typeof player !== 'string' || !player.trim()) ||
+          !Array.isArray(panel.total) || panel.total.length < 6 || !Array.isArray(panel.hands) || !panel.hands.length) {
+        throw new Error(`${key} ${side}: 데이터 불완전 — header·players·total·hands를 다시 캡처할 것`);
+      }
+      try {
+        if (num(panel.total[3]) > 100) throw new Error('EQ가 100%를 넘는다');
+        num(panel.total[5]); // EQR may legitimately exceed 100%.
+        for (const hand of panel.hands) {
+          if (typeof hand?.label !== 'string' || !hand.label.trim()) throw new Error('빈 핸드 분류');
+          if (num(hand.pct) > 100) throw new Error('분류 비중이 100%를 넘는다');
+        }
+      } catch (err) { throw new Error(`${key} ${side}: ${err.message}`); }
+    }
+  }
+  return entries;
+}
 
 if (process.argv.includes('--selftest')) {
   const { strict: assert } = await import('node:assert');
   for (const [raw, expected] of [['98,2%', 98.2], ['0,1%', 0.1], ['98.2%', 98.2], ['0%', 0], ['100,0%', 100]]) assert.equal(num(raw), expected);
-  for (const raw of ['', '—', '1,2,3%', '12oops%']) assert.throws(() => num(raw));
+  for (const raw of ['', '—', '1,2,3%', '12oops%', '9'.repeat(400)]) assert.throws(() => num(raw));
   assert.equal(pct(num('0,1%')), commaDecimal ? '0,1%' : '0.1%');
   console.log('✔ percentage parsing: dot/comma, zero, bounds, invalid input, locale display');
+  const panel = { header: 'Back | Example | A♥7♦2♣', players: ['OOP (BB)', 'IP (BTN)'],
+    total: ['All', '', '464.0', '45.1%', '2.09', '84.0%'], hands: [{ label: 'Top Pair', pct: '20.7%' }] };
+  const pair = { oop: panel, ip: { ...panel, total: ['All', '', '463.0', '54.9%', '3.41', '113.1%'] } };
+  assert.equal(validateChartData({ 'srp-dry-ace': pair }).length, 1);
+  for (const input of [null, [], {}, { 'srp-dry-ace': null }, { 'srp-dry-ace': { oop: panel } }]) {
+    assert.throws(() => validateChartData(input));
+  }
+  for (const patch of [{ total: null }, { total: [] }, { hands: [] }, { players: [] }, { header: '' },
+    { total: ['All', '', '464.0', 'NaN', '2.09', '84.0%'] },
+    { hands: [{ label: 'Top Pair', pct: 'oops%' }] }]) {
+    for (const side of ['oop', 'ip']) {
+      assert.throws(() => validateChartData({ 'srp-dry-ace': pair,
+        'srp-paired': { ...pair, [side]: { ...panel, ...patch } } }));
+    }
+  }
+  console.log('✔ chart input: one-spot partial accepted; empty/missing/malformed OOP/IP rejected before rendering');
   process.exit(0);
 }
 
-const data = JSON.parse(readFileSync(path.join(DIR, `data${SUF}.json`), 'utf8'));
+let entries;
+try { entries = validateChartData(JSON.parse(readFileSync(path.join(DIR, `data${SUF}.json`), 'utf8'))); }
+catch (err) { console.error('✘', err.message); process.exit(1); }
 console.log('로케일', LANG, '· 입력 data' + SUF + '.json · 출력 접미', SUF || '(없음)');
+console.log(`입력 범위 (${entries.length}): ${entries.map(([key]) => key).join(', ')}`);
 
 /** "OOP (BB (콜러))" → "BB · 콜러 (OOP)" */
 const shortLabel = (s, fallback) => {
@@ -158,11 +208,16 @@ function html(d) {
 }
 
 const browser = await chromium.launch();
-const page = await browser.newPage({ viewport: { width: 1200, height: 675 }, deviceScaleFactor: 2 });
-for (const [key, d] of Object.entries(data)) {
-  if (!d.oop?.total || !d.ip?.total) { console.error('✘', key, '데이터 불완전 — 다시 캡처할 것'); continue; }
-  await page.setContent(html(d), { waitUntil: 'load' });
-  await page.screenshot({ path: path.join(DIR, `${key}-ranges${SUF}.png`) });
-  console.log('✔', key);
+const generated = [];
+try {
+  const page = await browser.newPage({ viewport: { width: 1200, height: 675 }, deviceScaleFactor: 2 });
+  for (const [key, d] of entries) {
+    await page.setContent(html(d), { waitUntil: 'load' });
+    await page.screenshot({ path: path.join(DIR, `${key}-ranges${SUF}.png`) });
+    generated.push(key);
+    console.log('✔', key);
+  }
+} finally {
+  await browser.close();
+  console.log(`생성 범위 (${generated.length}/${entries.length}): ${generated.join(', ') || '(없음)'}`);
 }
-await browser.close();

@@ -33,6 +33,8 @@
 
 ## 판정 로그
 
+2026-09-15 HI GTO 신규 등록: HI index에 해설13편과 랜딩13링크를 등록하고 기존 입문3편에 역링크4개를 연결했다. 별도 HI c-bet·equity·implied-odds·position-play·pot-odds·3bet 전문 글이 없어 EN 본문의 해당 링크26자리는 **현재 HI solver 또는 실제 입문 글**로 연결하고, 앵커도 그 목적지에서 제공하는 범위로 한정한다. source slug+기존 target별 예외이며 설명·링크 수·중복 횟수를 줄이는 면제가 아니다. readnext는 실제 블로그2장을 유지한다. 입력 계약은 `docs/hi-gto-source-contract.md`, 최종 검수·공개 상태는 `docs/hi-gto-publication-review-2026-09-15.md`를 따른다.
+
 2026-09-15 MS GTO 신규 등록: MS index에 해설13편을 등록하고 랜딩13링크와 기존 입문3편의 역링크4개를 연결했다. MS에는 별도의 c-bet·equity·implied-odds·position-play·pot-odds·3bet 전문 글이 없으므로, EN 본문의 해당 링크26자리는 **현재 MS solver 또는 실제 입문 글**로 연결하고 앵커의 약속도 목적지 범위로 한정한다. 본문 설명을 지우는 면제가 아니며, source slug+기존 target별로만 허용한다. readnext는 별도 실제 블로그2장을 유지한다. 등록·링크 대조 근거와 공개 발행 상태는 `docs/ms-gto-source-contract.md` 및 `docs/ms-gto-publication-review-2026-09-15.md`에 둔다.
 
 2026-09-15 ID GTO 신규 등록: **ID 미발행에 따른 링크 면제를 해소**했다. ID index에 13편을 등록하고, holdem-continuation-bet의 ① A-high·⑨ 3bet sizing 두 링크, holdem-position-play의 ⑦ check-raise 링크, holdem-3bet의 ⑧ range c-bet 링크를 연결했다. 새 ID 이미지도 같은 글에 대응한다. 파일·등록·링크 대조 근거는 `docs/id-gto-publication-review-2026-09-15.md`에 정리한다. 아래 과거 부재 기록은 당시의 이력으로 유지하며, 다른 미발행 로케일의 판정은 유지한다.

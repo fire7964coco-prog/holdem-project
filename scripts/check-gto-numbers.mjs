@@ -27,6 +27,8 @@
  * 사용:
  *   node scripts/check-gto-numbers.mjs              # 전 로케일
  *   node scripts/check-gto-numbers.mjs --locale=en
+ *   node scripts/check-gto-numbers.mjs --locale=hi --slugs=a-high-board-cbet,k-high-board-cbet
+ *   (--slug=slug도 지원. 명시한 로케일/배치의 누락 파일은 실패한다.)
  *   node scripts/check-gto-numbers.mjs --selftest   # 게이트 자체 검증 (규칙보다 이게 먼저다)
  */
 import { readFileSync, readdirSync, existsSync } from "node:fs";
@@ -37,12 +39,36 @@ const SPEC = "docs/gto-solver-series-spec.md";
 /** 수치 집합 대조의 기준 로케일 — 시리즈 원본이 한국어다. */
 const BASE = "ko";
 
+function selectLocale(argv) {
+  const options = argv.filter((a) => a.startsWith('--locale='));
+  if (options.length > 1) throw new Error('--locale은 한 번만 지정한다');
+  if (!options.length) return null;
+  const locale = options[0].slice('--locale='.length);
+  if (!/^[a-z]{2}(?:-[a-z]+)?$/.test(locale)) throw new Error('빈 값 또는 잘못된 --locale');
+  return locale;
+}
+
 function loadSeries() {
   const t = readFileSync(join(ROOT, "lib/gto-series.ts"), "utf8");
   const out = new Map();
   for (const m of t.matchAll(/\{\s*n:\s*(\d+),[^}]*?slug:\s*"([^"]+)"/g)) out.set(Number(m[1]), m[2]);
   return out;
 }
+
+function selectSlugs(argv, knownSlugs) {
+  const selectors = argv.filter((a) => /^--slugs?=/.test(a));
+  const unknown = argv.filter((a) => a !== '--selftest' && !/^--(?:locale|slugs?)=/.test(a));
+  if (unknown.length) throw new Error(`지원하지 않는 옵션: ${unknown.join(', ')}`);
+  if (selectors.length > 1) throw new Error('--slug 또는 --slugs는 한 번만 지정한다');
+  if (!selectors.length) return knownSlugs;
+  const requested = selectors[0].slice(selectors[0].indexOf('=') + 1).split(',').map((s) => s.trim());
+  if (requested.some((s) => !s || !knownSlugs.includes(s))) throw new Error(`잘못된 GTO slug 목록: ${requested.join(', ')}`);
+  if (new Set(requested).size !== requested.length) throw new Error('중복 GTO slug');
+  return knownSlugs.filter((s) => requested.includes(s));
+}
+
+// 전체 로케일 감사는 미발행 번역을 건너뛰지만, 명시한 로케일과 KO 기준 파일은 필수다.
+const requiredLocale = (loc, selectedLocale) => loc === BASE || loc === selectedLocale;
 
 /** §4-B 표 파싱 — 편 | 보드 | 조건 | OOP 리드/벳 | OOP 에퀴티 | OOP EQR | IP EQR */
 function loadSpec() {
@@ -56,7 +82,8 @@ function loadSpec() {
   for (const line of seg.split("\n")) {
     if (!line.startsWith("|")) continue;
     const c = line.split("|").map((s) => s.trim());
-    if (c.length < 8) continue;
+    // The following action table has six columns; it is not the seven-column EQ/EQR table.
+    if (c.length !== 9) continue;
     const n = MARKS.indexOf(c[1]) + 1;
     if (n < 1) continue;
     // 🔴 Number로 바꾸지 마라 — `84.0` 이 `84` 가 되어 본문의 「84.0%」와 매칭에 실패한다
@@ -115,11 +142,11 @@ const pctSet = (text) => {
  * §4-B even when KO only names its sizes. Example: ⑨ 99.1% = 98.4% + 0.7%.
  * Permit only the exact, parsed spec value as an extra; keep missing source
  * figures and every other extra as differences. This does not check placement. */
-// MS ⑦ explicitly includes the separate historical root and the BTN combo quotient.
+// MS/HI ⑦ explicitly includes the separate historical root and the BTN combo quotient.
 // Both are in SPEC §4-B-3 (98.0%; 316.5/503 = 62.9%) and docs/id-gto-source-contract.md.
 // This only permits these supplemental values in this one article; their node attribution
 // still needs independent review. It never suppresses a missing original value.
-const supplementalPct = (locale, slug) => locale === 'ms' && slug === 'low-board-check-raise'
+const supplementalPct = (locale, slug) => ['ms', 'hi'].includes(locale) && slug === 'low-board-check-raise'
   ? ['98.0', (316.5 / 503 * 100).toFixed(1)] : [];
 const pctDiff = (base, local, specOopBet, supplements = []) => ({
   onlyBase: [...base].filter(v => !local.has(v)),
@@ -147,25 +174,37 @@ const hiddenRanges = (text) => {
   return [...body.matchAll(/(?<![\d.])(\d+\.\d)\s*[~–—-]\s*(\d+\.\d)\s*%/g)].map((m) => m[0].trim());
 };
 
-function run({ locale = null } = {}) {
+function run({ locale = null, argv = [] } = {}) {
   const series = loadSeries();
+  const selected = selectSlugs(argv, [...series.values()]);
+  if (argv.some((a) => /^--slugs?=/.test(a)) && !locale) throw new Error('--slug/--slugs는 --locale과 함께 지정한다');
   const spec = loadSpec();
   const all = localeDirs();
+  if (locale && !all.some(([loc]) => loc === locale)) throw new Error(`포스트 디렉터리가 없는 로케일: ${locale}`);
   const dirs = all.filter(([l]) => !locale || l === locale || l === BASE);
+  for (const slug of selected) {
+    if (!spec.some((row) => series.get(row.n) === slug)) throw new Error(`정본 수치표에 없는 GTO slug: ${slug}`);
+  }
 
   let red = 0, orange = 0, ok = 0, notPublished = 0;
+  const covered = new Map(dirs.map(([loc]) => [loc, 0]));
   const hidden = [];   // 🪶 커버리지: 게이트가 못 보는 「A~B%」 표기
   const lines = [];
 
   for (const row of spec) {
     const slug = series.get(row.n);
-    if (!slug) continue;
+    if (!slug || !selected.includes(slug)) continue;
 
     // ── A. 정본 대조 ────────────────────────────────────────────────
     const present = new Map();
     for (const [loc, dir] of dirs) {
       const file = join(ROOT, dir, `${slug}.ts`);
-      if (!existsSync(file)) { notPublished++; continue; }
+      if (!existsSync(file)) {
+        if (requiredLocale(loc, locale)) { red++; lines.push(`🔴 [${loc}] ${slug} — 명시 대상/기준 파일 없음 (${file})`); }
+        else notPublished++;
+        continue;
+      }
+      covered.set(loc, covered.get(loc) + 1);
       const text = normalizeNumericText(extractContent(readFileSync(file, "utf8")), loc);
       present.set(loc, text);
       for (const h of hiddenRanges(text)) hidden.push({ loc, slug, h });
@@ -203,9 +242,11 @@ function run({ locale = null } = {}) {
 
   console.log("\n══════ GTO 시리즈 계산 대조 게이트 ══════");
   console.log(`정본 = ${SPEC} §4-B · 기준 로케일 = ${BASE} · 대상 ${dirs.map((d) => d[0]).join(" ")}`);
+  console.log(`대상 ${selected.length}편: ${selected.join(', ')}`);
   if (lines.length) console.log("\n" + lines.join("\n"));
   console.log(`\n✅ 일치 ${ok} · 🟠 대조 불가 ${orange} · 🔴 ${red}`);
   console.log(`🪶 미발행 (편 × 로케일) 조합 ${notPublished}개는 검사 대상이 아니다.`);
+  console.log(`파일 커버리지: ${[...covered].map(([loc, n]) => `${loc} ${n}/${selected.length}`).join(' · ')}`);
   console.log("⚠ 🟠 는 «틀렸다»가 아니라 «그 글이 그 수치를 안 써서 대조하지 못했다»는 뜻이다.");
   console.log("⚠ B(로케일 간 대조)는 «수치 집합»만 본다 — 어느 자리에 쓰였는지는 사람이 본다");
 
@@ -232,6 +273,46 @@ function run({ locale = null } = {}) {
 /** 셀프테스트 — 규칙보다 이게 먼저다([[gate-tuning-loop-is-the-work]]). */
 function selftest() {
   const cases = [
+    ["Blank or duplicate locale cannot turn into an all-locale or first-locale run", () =>
+      [['--locale='], ['--locale= '], ['--locale=hi', '--locale=ms'], ['--locale=hi', '--locale=hi']]
+        .every((argv) => { try { selectLocale(argv); return false; } catch { return true; } }) &&
+      selectLocale([]) === null && selectLocale(['--locale=hi']) === 'hi' && selectLocale(['--locale=zh-hant']) === 'zh-hant'],
+    ["Spec parser reads each EQ/EQR source row once and excludes the action table", () => {
+      const rows = loadSpec();
+      const series = loadSeries();
+      return rows.length === series.size && new Set(rows.map((row) => row.n)).size === series.size &&
+        rows.every((row) => series.has(row.n) && [row.oopBet, row.oopEquity, row.oopEqr, row.ipEqr].every((v) => v != null));
+    }],
+    ["Explicit slug selection is ordered and accepts the singular alias", () => {
+      const known = ['a-high-board-cbet', 'k-high-board-cbet'];
+      return selectSlugs(['--slugs=k-high-board-cbet,a-high-board-cbet'], known).join(',') === known.join(',') &&
+        selectSlugs(['--slug=a-high-board-cbet'], known).join(',') === 'a-high-board-cbet';
+    }],
+    ["Invalid, duplicate, conflicting and unsupported selectors fail", () => {
+      const known = ['a-high-board-cbet', 'k-high-board-cbet'];
+      return [['--slugs='], ['--slug=missing'], ['--slugs=a-high-board-cbet,a-high-board-cbet'],
+        ['--slug=a-high-board-cbet', '--slugs=k-high-board-cbet'], ['--from=1', '--to=4']]
+        .every((argv) => { try { selectSlugs(argv, known); return false; } catch { return true; } });
+    }],
+    ["Explicit target and KO baseline cannot silently skip missing files", () =>
+      requiredLocale('hi', 'hi') && requiredLocale('ko', 'hi') && requiredLocale('ko', null) &&
+      !requiredLocale('ms', 'hi') && !requiredLocale('hi', null)],
+    ["HI Latin digits, decimal points and grouped numbers remain unchanged", () => {
+      const text = 'equity 45.1% · EQR 84.0% · 1,326 combos';
+      const hi = normalizeNumericText(text, 'hi');
+      return hi === text && has(hi, '45.1') && pctSet(hi).has('84.0') &&
+        normalizeNumericText('45,1%', 'hi') === '45,1%';
+    }],
+    ["HI separate-solve supplements remain exact and limited to article seven", () => {
+      const d = pctDiff(pctSet('96.8% 3.2%'), pctSet('96.8% 3.2% 98.0% 62.9%'), '3.2', supplementalPct('hi', 'low-board-check-raise'));
+      const bad = pctDiff(pctSet('96.8% 3.2%'), pctSet('96.9% 3.2% 98.0% 62.8%'), '3.2', supplementalPct('hi', 'low-board-check-raise'));
+      return !d.onlyBase.length && !d.onlyLoc.length && d.sourceExtras.length === 2 &&
+        bad.onlyBase.includes('96.8') && bad.onlyLoc.includes('96.9') && bad.onlyLoc.includes('62.8') &&
+        supplementalPct('hi', 'a-high-board-cbet').length === 0 && supplementalPct('vi', 'low-board-check-raise').length === 0;
+    }],
+    ["HI hidden range endpoints remain a reported coverage gap", () =>
+      hiddenRanges(normalizeNumericText('73.4–75.2%', 'hi')).length === 1 &&
+      pctSet(normalizeNumericText('73.4%–75.2%', 'hi')).has('73.4')],
     ["Exact spec total may be stated in addition to KO's size frequencies", () => {
       const d = pctDiff(pctSet("98.4% 0.7% 0.8%"), pctSet("98.4% 0.7% 0.8% 99.1%"), "99.1");
       return !d.onlyBase.length && !d.onlyLoc.length && d.specExtra;
@@ -341,6 +422,12 @@ function selftest() {
 }
 
 const args = process.argv.slice(2);
-if (args.includes("--selftest")) process.exit(selftest());
-const loc = (args.find((a) => a.startsWith("--locale=")) || "").split("=")[1] || null;
-process.exit(run({ locale: loc }) > 0 ? 1 : 0);
+try {
+  const loc = selectLocale(args);
+  if (args.includes("--selftest")) process.exit(selftest());
+  process.exit(run({ locale: loc, argv: args }) > 0 ? 1 : 0);
+} catch (err) {
+  console.error(err.message);
+  console.error('사용법: node scripts/check-gto-numbers.mjs [--locale=hi] [--slugs=slug1,slug2 | --slug=slug] 또는 --selftest');
+  process.exit(2);
+}
