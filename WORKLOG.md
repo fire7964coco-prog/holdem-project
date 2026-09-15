@@ -1,3 +1,15 @@
+## 2026-09-15 — ID 솔버 해설 13편 발행 완료·Codex 시작 규칙 정리
+
+사용자 「고품질 해설 포스팅 부탁해」에 따라 인도네시아어 GTO 예제13편을 작성·검수·발행했다. [ID 솔버 랜딩](https://www.holdemmaster.com/id/solver)에서 전편으로 연결된다. 상세 = `docs/id-gto-publication-review-2026-09-15.md`.
+
+- **제작**: 최신 EN 논거·절·표637행·FAQ67개를 보존하고 확정된 PT 원문 정정을 승계했다. 실제 ID 화면13장·레인지 차트13장(q82), ID 총등록55, readnext26·본문 내부링크93, 랜딩13·기존3편 역링크4개를 연결했다.
+- **품질**: 새 ID 검색조사·공통 브리프 후 집필. 언어·SEO·전략의 독립 AI 검수와 본체 산술·카드 검산, 최종19개 변경 교열 완료. 확인 범위의 확정 결함0. 현지 인간 감수나 새로운 solver 계산을 주장하지 않는다. ⑦의 역사적 후속 계산과 root 값을 분리했다.
+- **검증**: 구조13/13, GTO 수치103일치·오류0·경고0 및 자체테스트28, ID hard55/55. 최종 전체 build EXIT0(70 KO+551 intl), 모바일390px13/13·가로넘침0, 데스크톱 표·출처 note 직접 확인. 기존 설정은 타입검사/lint를 생략하므로 전체 타입 통과와 구분했다.
+- **배포·공개 확인**: 콘텐츠 `96627977` + sitemap `b87e4984`, main 일반 push. [Vercel success](https://vercel.com/masters-projects-ca17ea56/holdem-project-milk/Ertbf3W4Tu93GbXJEwnoRWkMMnGC) **13:38:36 KST**. **13:39:28 KST** 운영13편·이미지26개200, FAQ67, 대체언어9(8언어+default) 및 EN→ID13링크, 역링크·랜딩 정상. sitemap loc723, 변경17URL 각1회·lastmod09-15.
+- **검색 통지**: **13:40:24 KST**, 변경17개 ID URL만 IndexNow **HTTP200 접수**. 색인 완료를 뜻하지 않는다.
+- **재사용 지식**: ID reference §10에 검색 의도·용어·실제 UI·표기·조건/빈도 설명 규칙을 보존했다. ID 미디어·수치·구조 검사 지원과 자체테스트를 추가했다. 검색량을 새로 측정한 것처럼 쓰지 않았다.
+- **세션 문서 정리**: 사용자 요청대로 루트 `AGENTS.md`가 CLAUDE·handoff를 읽고 시작하도록 연결했다. CLAUDE에 짧은 인계 원칙을 넣고, 이전29,061바이트 핸드오프를 `docs/handoff-archive/2026-09-15-before-id-session-handoff.md`에 보관했다. 완료 경위는 WORKLOG, 장기 미결은 해당 대기열과 `docs/pending-work.md`, 다음 행동은 짧은 handoff로 분리한다. ID 작업 전용 인계도 완료 기록 링크로 교체했다.
+
 ## 2026-09-15 — PT 솔버 예제 해설 13편 발행 완료
 
 후속 사용자 지시: 다음 새 세션은 **ID(인도네시아어)** 작업. `session-handoff.md` 최우선 항목과 `docs/id-gto-next-session.md`에 재사용 자료·PT 원문 정정·실행 순서·검증 주의점을 인계했다. 이번 마감은 문서 정리만 했으며 ID 조사·집필·캡처는 시작하지 않았다. ID reference §5-A가 09-02에 이미 판정한 check/hand/board를 핸드오프가 여전히 미결로 적던 행은 제거했고, 실제 남은 용어·문체 미결은 유지했다.
