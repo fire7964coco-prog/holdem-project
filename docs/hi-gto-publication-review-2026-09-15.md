@@ -1,6 +1,6 @@
 # HI GTO 해설 13편 — 제작·검수 기록
 
-기준일: 2026-09-15. 대상은 `lib/gto-series.ts`의 HI ①–⑬이다. **제작·독립 검수·정정 교열·최종 로컬 검증 완료, 공개 배포 대기.**
+기준일: 2026-09-15. 대상은 `lib/gto-series.ts`의 HI ①–⑬이다. **제작·독립 검수·정정 교열·최종 검증 및 공개 발행 완료.** [힌디어 솔버 허브](https://www.holdemmaster.com/hi/solver)에서 전편으로 연결된다.
 
 ## 입력·집필
 
@@ -53,4 +53,9 @@
 - 최종⑦/⑨ 선택 표에서 마지막 열 도달과⑦ 별도 solve 고지 순서·단위 검사를 다시 통과했다(`tmp/hi-table-final.log`). 루트는 정정 후⑥·⑨·⑩·⑪·⑫ 문단 화면을 직접 열어 힌디어·굵은 글씨·UI 인용·표시를 확인했다.
 - 정본이 지정한 `audit:hard --schema`도 EXIT0이다. 이 경로는 **KO 산출물**을 검사하므로 HI FAQ 통과 근거로 사용하지 않는다. KO42편의🔴0·기존 교차표🟠4와 FAQ 소스/산출 일치를 확인했으며, HI67개 검증은 위 실제 브라우저 경로가 담당한다.
 
-공개 URL·배포SHA·IndexNow 접수는 아직 확정하지 않았다. GSC 수동 작업은 기존 사용자 보류 결정을 따른다.
+## 공개 배포·운영 확인·검색 통지
+
+- 콘텐츠 `f05763d8`과 자동 sitemap `570eb121`을 main에 일반 push했다. **2026-09-15 19:28:48 KST**, 정확한 SHA `570eb1213b3645c81bbe8e33e0a9237631a0f148`의 [Vercel success](https://vercel.com/masters-projects-ca17ea56/holdem-project-milk/FwdQw2ARJx5GgdSyrfcCwAxJZ8wG)를 확인했다. sitemap 후속 생성은 HI 허브와 홈의 git 기반 lastmod만09-15로 갱신했다.
+- **운영 확인19:30:15 KST**: 신규13편 HTTP200, HI 언어·H1·메타·canonical·자기 hreflang·히어로1개·가로 넘침0, FAQ67개 source/JSON-LD/화면 일치와 첫 FAQ 확장을 확인했다. 대체언어는 페이지별11개(10언어+default), 실제 WebP26개200, EN→HI13·허브13·역링크4 정상이다. 공개 sitemap에서 변경17 URL 각1회·lastmod09-15를 확인했다. 근거 `tmp/hi-live/report.json`, 같은 실행의 `delivery-report.json` 및 `tmp/hi-live.log`.
+- **IndexNow19:30 KST**: 신규13편+역링크수정3편+허브1개의 **17 HI URL만 `--urls`로 HTTP200 접수**했다. 날짜 전체나 이미 접수한 다른 언어를 재전송하지 않았다. 근거 `tmp/hi-indexnow.log`. 접수는 색인 완료를 뜻하지 않는다. GSC 수동 작업은 기존 사용자 보류 결정을 따른다.
+- EN 원문의 counterfeiting 조건 누락은 `docs/en-first-queue.md` §3에 남겼다. HI 정정 종결과 형제 언어의 후속 적용을 구분한다. 이번 임시 검증 `.mjs`는 마감 때 제거하며 JSON·diff·로그·화면 증거는 로컬 `tmp/`에 남긴다.
