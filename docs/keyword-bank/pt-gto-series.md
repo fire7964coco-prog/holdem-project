@@ -214,4 +214,3 @@ Títulos SEO têm no máximo 60 caracteres; descrições têm no máximo 160. A 
 - Conservar condições, arredondamentos, ausência de rake modelado e as ressalvas do EN. Na parte 9, diferenciar a conta simplificada de odds/equity de uma recomendação completa de call.
 - Partes 11→12 podem comparar alteração só do board quando os parâmetros são iguais; partes 6→13 também mudam posições/ranges e precisam dizer isso.
 - Meta e keywords não substituem a qualidade da explicação: o leitor deve entender **quem age, o que o número mede, por que o range produz a decisão e até onde a conclusão vale**.
-
