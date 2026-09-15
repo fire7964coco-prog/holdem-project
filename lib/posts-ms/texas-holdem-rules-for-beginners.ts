@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Dalam Texas Hold'em, setiap pemain menerima 2 kad pemula, 5 kad komuniti dikongsi bersama, dan tangan poker 5 kad terbaik menang selepas empat pusingan pertaruhan.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-08-14",
+  updated: "2026-09-15",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 minit",
@@ -310,7 +310,9 @@ Bila anda memegang tangan draw (contohnya empat kad ke arah Flush), kira **outs*
 
 </div>
 
-Jika peratusan peluang anda untuk menang **lebih tinggi** daripada peratusan yang diperlukan pot odds, call itu menguntungkan. Jika lebih rendah, fold.
+Perbandingan ini terus menentukan nilai call apabila tiada lagi pertaruhan selepas anda call, contohnya apabila kedua-dua pemain all-in. Jika masih ada pertaruhan pada turn atau river, peluang melengkapkan draw dengan dua kad belum menjamin call yang menguntungkan: kad seterusnya mungkin mempunyai harga tambahan, dan draw yang lengkap masih boleh kalah.
+
+Lihat [contoh harga call dan draw pada flop QT7 dalam pot 3-bet](/ms/blog/3bet-pot-bet-sizing) untuk membandingkan peluang satu kad dengan peluang dua kad serta memahami batas kiraan ringkas ini.
 
 ==r:Inilah konsep matematik paling penting untuk pemula. Kuasainya dan anda secara automatik akan mengelakkan separuh daripada kesilapan mahal yang dilakukan pemain baru.==
 

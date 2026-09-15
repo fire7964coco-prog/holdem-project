@@ -76,6 +76,10 @@ const L10N = {
         back: '← Kembali', spots: 'Spot belajar', view: '⚡ Lihat hasil',
         noDraw: 'Tanpa draw', combos: 'combo', hands: 'Hand', draws: 'Draw',
         all: 'Semua', summary: 'Ringkasan', barWidth: 'Lebar batang:' }, // 2026-09-15 라이브 ID DOM 축어 · 결과 숫자도 소수 쉼표
+  ms: { url: 'https://solver.holdemmaster.com/?lang=ms',
+        back: '← Kembali', spots: 'Spot belajar', view: '⚡ Lihat hasil',
+        noDraw: 'Tiada draw', combos: 'combo', hands: 'Tangan', draws: 'Draw',
+        all: 'Semua', summary: 'Ringkasan', barWidth: 'Lebar bar:' }, // 2026-09-15 라이브 MS DOM 축어 · 결과 숫자는 소수점
   zh: { url: 'https://solver.holdemmaster.com/?lang=zh',
         back: '← 列表', spots: '教学案例', view: '⚡ 直接看结果',
         noDraw: '无听牌', combos: '组合', hands: '手牌', draws: '听牌',
@@ -90,7 +94,7 @@ if (!T) { console.error('지원하지 않는 로케일:', LANG, '· 아는 것:'
 const SUF = LANG === 'ko' ? '' : '-' + LANG;
 console.log('로케일', LANG, '· URL', T.url, '· 파일 접미', SUF || '(없음)');
 
-const extract = (page) => page.evaluate((T) => {
+const extractDocument = (T) => {
   const txt = (e) => (e?.innerText || '').trim();
   const all = [...document.querySelectorAll('div,section')];
   const headerEl = all.filter(e => txt(e).startsWith(T.back) && txt(e).length < 200)[0];
@@ -128,7 +132,45 @@ const extract = (page) => page.evaluate((T) => {
   const players = sel ? [...sel.options].map(o => o.text) : [];
 
   return { header: txt(headerEl).replace(/\n+/g, ' | '), players, actions, hands, draws, head, total };
-}, T);
+};
+const extract = (page) => page.evaluate(extractDocument, T);
+
+function validateResults(oop, ip) {
+  for (const [side, d] of [['oop', oop], ['ip', ip]]) {
+    if (!d.header || d.players.length !== 2 || !d.hands.length || !d.draws.length || !d.total || !d.head) {
+      throw new Error(`${side}: 필수 결과 데이터가 비어 있음 — UI 라벨/셀렉터를 확인할 것`);
+    }
+  }
+  if (!oop.actions.length) throw new Error('OOP 액션 빈도가 비어 있음 — 숫자 표기/셀렉터를 확인할 것');
+}
+
+// 라이브 의존 없이 각 로케일의 표시값·분류·합계 추출과 빈 결과 거부를 검증한다.
+if (args.includes('--selftest')) {
+  const { strict: assert } = await import('node:assert');
+  const testBrowser = await chromium.launch();
+  try {
+    const testPage = await testBrowser.newPage();
+    for (const [locale, labels] of Object.entries(L10N)) {
+      const value = ['pt', 'id'].includes(locale) ? '98,2%' : '98.2%';
+      await testPage.setContent(`<div>${labels.back}<br>Board A-high<br>A♥7♦2♣</div>
+        <select><option>OOP (BB (caller))</option><option>IP (BTN (opener))</option></select>
+        <section>Check<br>${value}<br>455.5<br>${labels.combos}</section>
+        <section>${labels.hands}<br>Top Pair<br>20.7%<br>${labels.draws}<br>${labels.noDraw}<br>71.3%</section>
+        <table><tr><th>${labels.hands}</th><th>EQ</th></tr><tr><td>${labels.all}</td><td>45.1%</td></tr></table>`);
+      const result = await testPage.evaluate(extractDocument, labels);
+      assert.deepEqual(result.actions, [{ name: 'Check', freq: value, combos: '455.5' }]);
+      assert.deepEqual(result.hands, [{ label: 'Top Pair', pct: '20.7%' }]);
+      assert.deepEqual(result.draws, [{ label: labels.noDraw, pct: '71.3%' }]);
+      assert.deepEqual(result.total, [labels.all, '45.1%']);
+      validateResults(result, { ...result, actions: [] }); // IP의 행동 전략 없음은 정상이다.
+      assert.throws(() => validateResults({ ...result, hands: [] }, result));
+      assert.throws(() => validateResults({ ...result, actions: [] }, result));
+      assert.throws(() => validateResults(result, { ...result, total: null }));
+      console.log(`✔ ${locale}: 액션·분류·합계 추출, 누락 거부`);
+    }
+  } finally { await testBrowser.close(); }
+  process.exit(0);
+}
 
 const rects = (page) => page.evaluate((T) => {
   const all = [...document.querySelectorAll('div,section')];
@@ -191,12 +233,7 @@ for (const spot of targets) {
     });
     await showChrome(); await page.waitForTimeout(300);
     const ip = await extract(page);
-    for (const [side, d] of [['oop', oop], ['ip', ip]]) {
-      if (!d.header || d.players.length !== 2 || !d.hands.length || !d.draws.length || !d.total || !d.head) {
-        throw new Error(`${side}: 필수 결과 데이터가 비어 있음 — UI 라벨/셀렉터를 확인할 것`);
-      }
-    }
-    if (!oop.actions.length) throw new Error('OOP 액션 빈도가 비어 있음 — 숫자 표기/셀렉터를 확인할 것');
+    validateResults(oop, ip);
     await hideChrome();
     await page.screenshot({ path: path.join(OUT, `${spot.key}-ip${SUF}.png`), clip });
 

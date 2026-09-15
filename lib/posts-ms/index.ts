@@ -1,4 +1,17 @@
 import type { Post } from "../posts";
+import { POST as gtoAHighBoardCbet } from "./a-high-board-cbet";
+import { POST as gtoKHighBoardCbet } from "./k-high-board-cbet";
+import { POST as gtoBroadwayBoardStrategy } from "./broadway-board-strategy";
+import { POST as gtoDonkBetStrategy } from "./donk-bet-strategy";
+import { POST as gtoMonotoneBoardStrategy } from "./monotone-board-strategy";
+import { POST as gtoPairedBoardStrategy } from "./paired-board-strategy";
+import { POST as gtoLowBoardCheckRaise } from "./low-board-check-raise";
+import { POST as gto3betPotCbet } from "./3bet-pot-cbet";
+import { POST as gto3betPotBetSizing } from "./3bet-pot-bet-sizing";
+import { POST as gto3betPotLowBoard } from "./3bet-pot-low-board";
+import { POST as gtoBlindBattleCbet } from "./blind-battle-cbet";
+import { POST as gtoBlindBattleConnectedBoard } from "./blind-battle-connected-board";
+import { POST as gtoAcePairedBoardStrategy } from "./ace-paired-board-strategy";
 import { POST as texasHoldemRulesForBeginners } from "./texas-holdem-rules-for-beginners";
 import { POST as holdemGameOrder } from "./holdem-game-order";
 import { POST as holdemBettingActions } from "./holdem-betting-actions";
@@ -14,6 +27,20 @@ import { POST as holdemTournamentVsCashGame } from "./holdem-tournament-vs-cash-
  * 슬러그는 다른 언어 글과 동일하게 맞춰 hreflang 상호 링크가 성립하도록 한다.
  */
 export const MS_POSTS: Post[] = [
+  // GTO 솔버 예제 해설
+  gtoAHighBoardCbet,
+  gtoKHighBoardCbet,
+  gtoBroadwayBoardStrategy,
+  gtoDonkBetStrategy,
+  gtoMonotoneBoardStrategy,
+  gtoPairedBoardStrategy,
+  gtoLowBoardCheckRaise,
+  gto3betPotCbet,
+  gto3betPotBetSizing,
+  gto3betPotLowBoard,
+  gtoBlindBattleCbet,
+  gtoBlindBattleConnectedBoard,
+  gtoAcePairedBoardStrategy,
   // Rules 필라 (6/6)
   texasHoldemRulesForBeginners,
   holdemGameOrder,

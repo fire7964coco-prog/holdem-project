@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Satu tangan Texas Hold'em berjalan begini: letak blinds → terima dua kad pemula → preflop → flop (3 kad) → turn (1 kad) → river (1 kad) → showdown, dengan empat pusingan pertaruhan kesemuanya.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-07-13",
+  updated: "2026-09-15",
   masterUpdated: "2026-07-02",
   keepImagesInBody: true,
   readTime: "16 minit",
@@ -159,6 +159,8 @@ Siapa yang wajib tunjuk dulu, bila anda boleh muck, dan adab berkaitan slow roll
 </div>
 
 Helah untuk mengingatnya: ==**sebelum flop, tengok kiri big blind; selepas flop, tengok kiri butang.**== Butang bertindak paling akhir pada setiap pusingan selepas flop — sebab itulah ia tempat duduk paling menguntungkan di meja, dan posisi poker dari UTG hingga butang layak dijadikan panduan tersendiri.
+
+Kesan bertindak dahulu juga boleh dilihat dalam [perbandingan BB dan BTN pada flop K83](/ms/blog/k-high-board-cbet): equity, nilai jangkaan dan realisasi equity menerangkan bahagian berlainan daripada kelebihan posisi.
 
 ==g:**Heads-up (2 pemain) adalah pengecualian:**== butang meletakkan *small* blind dan bertindak **dulu** pada preflop, tetapi **akhir** pada flop, turn dan river. Itulah urutan yang digunakan dalam contoh tangan penuh di bawah.
 

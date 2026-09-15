@@ -115,10 +115,17 @@ const pctSet = (text) => {
  * §4-B even when KO only names its sizes. Example: ⑨ 99.1% = 98.4% + 0.7%.
  * Permit only the exact, parsed spec value as an extra; keep missing source
  * figures and every other extra as differences. This does not check placement. */
-const pctDiff = (base, local, specOopBet) => ({
+// MS ⑦ explicitly includes the separate historical root and the BTN combo quotient.
+// Both are in SPEC §4-B-3 (98.0%; 316.5/503 = 62.9%) and docs/id-gto-source-contract.md.
+// This only permits these supplemental values in this one article; their node attribution
+// still needs independent review. It never suppresses a missing original value.
+const supplementalPct = (locale, slug) => locale === 'ms' && slug === 'low-board-check-raise'
+  ? ['98.0', (316.5 / 503 * 100).toFixed(1)] : [];
+const pctDiff = (base, local, specOopBet, supplements = []) => ({
   onlyBase: [...base].filter(v => !local.has(v)),
-  onlyLoc: [...local].filter(v => !base.has(v) && v !== specOopBet),
+  onlyLoc: [...local].filter(v => !base.has(v) && v !== specOopBet && !supplements.includes(v)),
   specExtra: specOopBet != null && local.has(specOopBet) && !base.has(specOopBet),
+  sourceExtras: supplements.filter(v => local.has(v) && !base.has(v)),
 });
 /**
  * 🪶 **커버리지 출력 — 이 게이트가 «못 보는» 수치를 매 실행 드러낸다.**
@@ -179,8 +186,9 @@ function run({ locale = null } = {}) {
       for (const [loc, text] of present) {
         if (loc === BASE) continue;
         const s = pctSet(text);
-        const { onlyBase, onlyLoc, specExtra } = pctDiff(baseSet, s, row.oopBet);
+        const { onlyBase, onlyLoc, specExtra, sourceExtras } = pctDiff(baseSet, s, row.oopBet, supplementalPct(loc, slug));
         if (specExtra) lines.push(`🪶 [${loc}] ${slug} — ${BASE} 미기재 총 bet ${row.oopBet}%를 §4-B 정본과 직접 대조했다(문장 귀속은 별도 검수)`);
+        if (sourceExtras.length) lines.push(`🪶 [${loc}] ${slug} — 별도 계산의 보충값 ${sourceExtras.join('·')}%는 §4-B-3 출처/산술과 대조했다(노드 귀속은 별도 검수)`);
         if (onlyBase.length || onlyLoc.length) {
           red++;
           lines.push(
@@ -239,6 +247,17 @@ function selftest() {
     ["Approved total is scoped to its own spot", () => {
       const d = pctDiff(pctSet("3.0%"), pctSet("3.0% 99.1%"), "3.0");
       return d.onlyLoc.includes("99.1");
+    }],
+    ["MS separate-solve supplements are exact and scoped to one source article", () => {
+      const supplements = supplementalPct('ms', 'low-board-check-raise');
+      const d = pctDiff(pctSet('96.8% 3.2%'), pctSet('96.8% 3.2% 98.0% 62.9%'), '3.2', supplements);
+      return !d.onlyBase.length && !d.onlyLoc.length && d.sourceExtras.length === 2 &&
+        supplementalPct('id', 'low-board-check-raise').length === 0 &&
+        supplementalPct('ms', 'a-high-board-cbet').length === 0;
+    }],
+    ["Separate-solve supplements cannot hide a changed or omitted root value", () => {
+      const d = pctDiff(pctSet('96.8% 3.2%'), pctSet('96.9% 3.2% 98.0% 62.8%'), '3.2', supplementalPct('ms', 'low-board-check-raise'));
+      return d.onlyBase.includes('96.8') && d.onlyLoc.includes('96.9') && d.onlyLoc.includes('62.8');
     }],
     ["ID decimal commas preserve metrics and exclude grouped-number suffixes", () => {
       const id = normalizeNumericText("EQ 45,1% · EQR 84,0% · 1.084,0%", "id");

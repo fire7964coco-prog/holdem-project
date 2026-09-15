@@ -38,6 +38,8 @@ const CHART_L10N = {
         equity: 'Equity', eqr: 'Realização de equity' },
   id: { title: 'Komposisi range', source: 'Solver GTO HoldemMaster · tanpa rake',
         equity: 'Equity', eqr: 'Realisasi equity' },
+  ms: { title: 'Komposisi range', source: 'Solver GTO HoldemMaster · tanpa rake',
+        equity: 'Equity', eqr: 'Realisasi equity' }, // MS 정본 §8-C · 세부 분류명은 라이브 MS UI
   zh: { title: '范围构成', source: 'HoldemMaster GTO 求解器计算值 · 未计入抽水',
         equity: '胜率 (EQ)', eqr: '权益实现率 (EQR)' },
   'zh-hant': { title: '範圍構成', source: 'HoldemMaster GTO 解算器計算值 · 未計入抽水',
@@ -54,7 +56,7 @@ const num = (s) => {
   return Number(value);
 };
 const commaDecimal = ['pt', 'id'].includes(LANG);
-const stackedHeading = ['pt', 'id'].includes(LANG);
+const stackedHeading = ['pt', 'id', 'ms'].includes(LANG);
 const pct = (n) => (commaDecimal ? n.toFixed(1).replace('.', ',') : n.toFixed(1)) + '%';
 
 if (process.argv.includes('--selftest')) {

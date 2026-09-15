@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Texas Hold'em ada 5 aksi pertaruhan: cek (lepas giliran secara percuma), bertaruh (buka pusingan), call (samai pertaruhan), raise (menaikkannya — kenaikan minimum sama dengan saiz pertaruhan atau raise sebelumnya), dan fold. Anda hanya boleh cek apabila tiada pertaruhan aktif di hadapan anda — pada praflop itu hanya berlaku jika anda big blind.",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-09-07",
+  updated: "2026-09-15",
   masterUpdated: "2026-07-11",
   keepImagesInBody: true,
   readTime: "9 minit",
@@ -79,6 +79,8 @@ Anda boleh cek dalam tepat dua situasi:
 
 Jika seseorang bertaruh selepas anda cek, anda berdepan keputusan baharu: fold, call atau raise. Cek dahulu kemudian raise apabila lawan bertaruh dipanggil ==check-raise== — ia sepenuhnya sah dalam Texas Hold'em dan senjata standard, bukan helah kotor.
 
+Untuk melihat cara memilih tangan bagi tindakan ini, ikuti [contoh check-raise BB pada flop 652](/ms/blog/low-board-check-raise). Contoh itu membezakan keputusan awal daripada pengiraan berasingan selepas lawan bet.
+
 Untuk gambaran penuh siapa bertindak bila, pusingan demi pusingan, lihat [urutan permainan Texas Hold'em](/ms/blog/holdem-game-order "thumb:/images/blog-holdem-game-flow.webp").
 
 ---
@@ -133,7 +135,7 @@ Dua peraturan poker live yang datang bersama raise:
 1. **Umumkan "raise" sebelum menggerakkan cip.** Sebut "call" kemudian tolak cip tambahan? Pengumuman anda sudah mengikat sejak saat itu (==Rule 90.d==) — lebihannya tidak dikira. ==String bet== yang sebenar lain: menolak cip dalam beberapa pergerakan **tanpa** mengumumkan "raise" dahulu (==Rule 103==).
 2. **Satu pergerakan.** Jika anda tidak mengumumkan, cip anda mesti masuk dalam satu pergerakan ke hadapan sahaja.
 
-*Berapa banyak* anda patut raise (open 2.5x, 3-bet 3x, saiz mengikut tekstur board) ialah strategi, bukan peraturan — itu topik pilar strategi Texas Hold'em.
+*Berapa banyak* anda patut raise (open 2.5x, 3-bet 3x, saiz mengikut tekstur board) ialah strategi, bukan peraturan. Selepas 3-bet dan call berlaku, [contoh pot 3-bet pada flop AK2](/ms/blog/3bet-pot-cbet) menunjukkan bagaimana range dan stack yang tinggal mempengaruhi keputusan seterusnya.
 
 ---
 
