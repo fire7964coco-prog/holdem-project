@@ -61,7 +61,7 @@
 - **연결**: [ID 솔버 랜딩](https://www.holdemmaster.com/id/solver)의 시리즈13링크, 기존 c-bet·position-play·3bet 글의 역링크4개 정상. 로컬 등록55·readnext26·본문 내부링크93 확인. 라이브 보고서 = `tmp/id-live-report.json`.
 - **sitemap 원문**: HTTP200, loc **723개**. 신규13편·수정3편·랜딩1의 17개 URL이 각각 한 번 존재하며 lastmod가 모두 **2026-09-15**다. 빌드 요약에 표시되지 않는 별도 경로도 있어 loc 전체 수는 빌드 로그 항목들의 단순 합으로 계산하지 않았다.
 - **IndexNow**: 2026-09-15 **13:40:24 KST**, 위 **17개 ID URL만 1회**, **HTTP200 접수**. `tmp/id-indexnow-result.json`에 실제 대상·응답을 보관했다. 접수는 색인 완료가 아니다.
-- **최종 판정**: ID 해설13편 공개 발행 완료. 다음 언어는 지정되지 않았다. 이력은 WORKLOG, 후속 문서는 `docs/id-gto-next-session.md`, 현재 인계는 짧은 `session-handoff.md`로 분리한다.
+- **최종 판정**: ID 해설13편 공개 발행 완료. 이력은 WORKLOG, 후속 문서는 `docs/id-gto-next-session.md`, 다음 작업 인계는 짧은 `session-handoff.md`로 분리한다.
 
 검사 도구의 오탐도 구분했다. 링크 검사 이식 중 남아 있던 PT 정규식을 ID로 고치고 0개 커버리지 통과를 막았으며, 장식 썸네일의 빈 alt를 본문 결함으로 세지 않도록 범위를 한정했다. 수치 게이트는 같은 spot의 §4-B 총 베팅 수치99.1%만 허용하고 잘못된 값·다른 spot 값은 자체 테스트로 거부한다. 기계 통과를 언어·전략 전수 검수의 대체로 쓰지 않는다.
 

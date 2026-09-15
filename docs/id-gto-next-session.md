@@ -6,6 +6,6 @@
 - 완료 이력·커밋: WORKLOG의 **2026-09-15 ID 솔버 해설13편** 항목.
 - 실제 검수·배포·운영 결과: [발행 검수 기록](id-gto-publication-review-2026-09-15.md).
 - 후속 ID 글 작성: [ID 참고 정본 §10](keyword-bank/id-posting-reference.md), [집필 브리프](id-gto-series-translation-brief.md), [원문·정정 계약](id-gto-source-contract.md), [미디어·UI 근거](id-gto-media-review.md).
-- 현재 미결·다음 작업: 루트 session-handoff.md. 다음 언어는 아직 지정되지 않았다.
+- 현재 미결·다음 작업: 루트 session-handoff.md의 최신 인계를 따른다.
 
 임시 검사 예시는 Git에 없는 세션 도구였다. 상시 도구에는 ID 미디어·소수 쉼표·구조 지원이 반영돼 있다. 실제 새 작업 시점의 EN 원문·앱 UI·등록 상태를 확인한다.
