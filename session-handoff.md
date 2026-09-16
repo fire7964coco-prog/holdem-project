@@ -1,28 +1,30 @@
 # 다음 세션 알림장
 
-## 다음 작업 지시 대기
+> «다음 할 일 + 미결»만 담는다. 경위 = `WORKLOG.md`(slug로 grep) · 규칙 = 정본 MD · 시한 = `docs/update-calendar.md`.
+> 마지막 갱신 2026-09-16 (본체 HEAD `0704b2db` · 4레인 동기·클린 · 미커밋 0).
 
-- UI·UX 11개 지적+추가 개선 구현·검증·운영 배포 완료. 결과·캡처·재현검사 = `docs/ui-ux-improvements-2026-09-15.md`. 커밋 `60a79d9d` Vercel 배포 성공과 공개 핵심 7경로 HTTP 200을 확인했다. 기존 전체 타입698건은 증가 없음을 비교했고 실제 메일·Google 인증은 모의 검증 범위와 구분한다.
-- HI 발행 마감을 끝냈다. 경위는 WORKLOG의 HI 발행 항목, 근거는 `docs/hi-gto-publication-review-2026-09-15.md`다. 다음 주제·언어는 새 사용자 지시를 따른다.
+## ▶ 다음 할 일 (사장님이 고른다)
 
-## 포스팅 배치 — 유지 규칙 (회차는 2026-09-16 종결 · 경위 WORKLOG)
+1. **🧰 queue 다음 회차** — 후보 둘. 레인 창 첫 마디 「HARDEN.md 읽고 회차 Q4-b 시작해」(또는 §2-F).
+   - **Q4-b**: es `como-entrar-al-wsop`·`wsop-2026-tournament-guide` WRONG 15·RISKY 10·STALE 2 + 멕시코 LISR 138조 1차 실측(검수장 MA-118 요청 2). 🔴 라이브 사실오류라 대회 묶음을 기다리지 않아도 된다. 판정형 = 전 구간 Opus.
+   - **EN-먼저 §2-F 4건**(`docs/en-first-queue.md`): 1순위 **AK vs 작은 포켓페어 «coin flip» 명제**(EN shc L65 · zh-hant 18-3 · §13 콤보 직접 계산 → 8로케일) · kicker High card 행 · glossary 「pairs」 · hand-rankings 「often」. 집필 있음 → B 구간 Fable.
+2. **(not set) 랜딩 유실 원인 규명 회차**(본체) — 09-14 스냅샷 236세션(08-28 103 → 2.3배). page_view만 유실된 진짜 사람이 참여 0으로 잡혀 참여율을 6.6p 누른다. 후보: 네이버 유입 스크립트 순서 · GA 태그 로딩 지연. 근거 = `docs/seo-report-2026-09-16.md` §5-1.
+3. **10/14 이후 — 배치 효과 4주 비교**(캘린더 등재됨). 기준선 `docs/post-placement-analysis-2026-09-16.md` §2 · 같은 창(`npm run analytics` + `ga-fetch --pages --days 28`). 모바일 홈 36.7%(60세션)는 09-16 배포 전 값 — 그때 재측정.
 
-- 순서 정본 `lib/featured-order.ts`. 대회 끝나면 `EVENT_UNTIL`이 홈·/blog·/tournaments 카드를 같이 자동 강등 — **새 대회 글 발행 시 거기에 종료일 한 줄 추가**. S·A 배열은 분기마다 28일 창으로 재판정.
-- 4주 뒤(2026-10-14~) 비교: 기준선 = `docs/post-placement-analysis-2026-09-16.md` §2 · 검증 기록 = `docs/post-placement-verification-2026-09-16.md`.
+## 🔵 미결 (해결되면 WORKLOG에 적고 지운다)
 
-## 레인 상태 (2026-09-16)
+- **「홀덤 족보」 634노출·클릭 2** — 611노출이 noindex인 `/hands`에 남아 있다(반영 지연). 조치 없이 다음 28일 창에서 /hands 노출 0·필라 순위 상승 확인. 재제출·되살리기 금지.
+- **「포커 홀덤 차이」 계열 188노출·r9~11 · 전용 글 없음**(7포커 글은 다른 의도) — 롱테일 후보. 채택 전 SERP 실측. 근거 `docs/seo-report-2026-09-16.md` §4.
+- 우편함 미처리 20건은 전부 «→검수장»(MB-033~053 + S-022·023). 본체 몫 0. 검수장 회신이 오면 MA 요청부터 판정.
+- 장기 미결 = `docs/harden-queue-진행.md` §2 · `docs/pending-work.md` · `docs/en-first-queue.md` §3(EN counterfeiting 조건 누락 등).
 
-- 🧰 queue: Q6-b·Q6-c 머지·배포 완료(MB-052·MB-053). **다음 회차 후보 = Q4-b**(es WSOP 2편 WRONG 15 · 라이브 사실오류 · Opus) 또는 **EN-먼저 §2-F 4건**(`docs/en-first-queue.md` · AK vs 작은 포켓페어 §13 판정 → 8로케일 · 집필 있음). 레인 첫 마디 「HARDEN.md 읽고 회차 Q4-b 시작해」. 4레인 전부 `191ee840` 동기·클린.
-- 우편함: 미처리 20건 전부 «→검수장»(MB-033~052 + S-022·023). 본체 몫 0.
+## 🕒 시한 (정본 `docs/update-calendar.md` — 요약만)
 
-## 시작 자료
+- 9/26경 Bing·Yandex 색인 관측 · 10/5 WPL 제8회·10/7 APT 제주 종료 → `EVENT_UNTIL` 자동 강등 확인 + 결과 아카이브 전환 · 10/14~ 배치 비교 · 12/31 K-ETA 면제 + 중국 단체 무비자 연장 만료(한 회차로).
 
-- AGENTS → CLAUDE → 이 파일, Git 상태를 확인한다. ‘읽고 대기’ 요청이면 자동 착수하지 않는다.
-- HI 재사용 자료는 `docs/keyword-bank/hi-posting-reference.md` §8의 검색·브리프·원문 계약·실제 미디어 링크를 따른다.
-- 09-15 여러 언어의 IndexNow 접수를 마쳤다. 다음 발행도 **실제 변경 URL만 `--urls`로** 통지하며 날짜 전체로 재전송하지 않는다. GSC는 기존 사용자 보류 유지.
+## 유지 규칙 (정본은 각 파일 — 여기엔 포인터)
 
-## 미결과 기록
-
-- 일반 queue는 `docs/harden-queue-진행.md` §1, 장기 미결은 해당 대기열과 `docs/pending-work.md`에서 필요한 항목만 찾는다.
-- HI 검수에서 발견한 EN counterfeiting 조건 누락은 `docs/en-first-queue.md` §3에 있다. 이번 HI 정정 종결과 EN·형제 언어의 후속 적용을 구분한다.
-- UI·UX 점검과 HI 발행 경위는 WORKLOG.md의 해당 항목에 있다. 상시 규칙은 해당 정본 MD, 과거 인계는 `docs/handoff-archive/`에 둔다. 상세를 이 파일에 누적하지 않는다.
+- 포스팅 배치 = `lib/featured-order.ts`(새 대회 글 발행 시 `EVENT_UNTIL`에 종료일 한 줄 · S·A 배열은 분기마다 재판정). 관문 추천 블록 = `docs/post-placement-verification-2026-09-16.md` §1.
+- GTO 시리즈 러닝맵 라벨 = `lib/gto-series-i18n.ts`(로케일 솔버 랜딩 문구를 바꾸면 같이). 다국어 우측 레일 CTA 문구 = `components/intl-blog-post-client.tsx` CALC/SOLVER_CTA_LABELS.
+- 참여율은 `npm run analytics`로만(규칙 v1 · 누적 `docs/analytics-log.md`). IndexNow는 실제 변경 URL만.
+- 세션 시작: AGENTS → CLAUDE → 이 파일 → `git status`. 「읽고 대기」면 자동 착수하지 않는다. HI 재사용 자료 = `docs/keyword-bank/hi-posting-reference.md` §8.
