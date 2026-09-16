@@ -30,7 +30,7 @@ export const POST: Post = {
   content: `
 我第一次打 EPT，差点因为一张我从没听说过的表格而错过。
 
-我赢了卫星赛的席位，订好了飞巴塞罗那的机票，酒店也搞定了——然后赌场登记台的人告诉我，在交出哪怕一欧元之前，我得先完成一份 ==**资金来源声明（Source of Funds）**==。我完全不知道那是什么。排在我后面的那位常客只是笑了笑，说：==r:"这个几周前就该在网上办好了。"==
+我赢了卫星赛的席位，订好了飞巴塞罗那的机票，酒店也搞定了——然后赌场登记台的人告诉我，在交出哪怕一欧元之前，我得先完成一份 ==**资金来源声明（Source of Funds）**==。我完全不知道那是什么。排在我后面的那位常客只是笑了笑，说：==r:“这个几周前就该在网上办好了。”==
 
 别像我这样。这份指南把该讲的都讲了——从花不到一美元赢下席位，到 Day 1 走进 Casino Barcelona 时到底会发生什么。
 
@@ -159,7 +159,7 @@ PokerStars 专门设计了 Power Path，就是要 ==挡住职业牌手直接买�
 ### 如何在 PokerStars 客户端里找到 Power Path
 
 1. 打开 PokerStars → 点击 **Power Path** 标签
-2. 搜索 "Power Path" 或 "EPT Barcelona"
+2. 搜索“Power Path”或“EPT Barcelona”
 3. 选择你要起步的那一步
 4. 只要你玩真钱扑克，你还会看到 ==g:每天赠送的免费 Step 1 门票==——不过还是要看一下 Power Path 的条款，因为有时会有活动把这张每日门票替换掉
 
@@ -240,7 +240,7 @@ PokerStars 专门设计了 Power Path，就是要 ==挡住职业牌手直接买�
 ## PokerStars Live 账号设置与资金来源声明
 
 > **快速回答**
-> 两项行政手续要在落地之前办好：一是 PokerStars Live 账号——没有它报不了任何一场比赛，下载 app、按指引验证身份（要护照照片）；二是资金来源声明——用现金付买入就可能被要求申报来源（EPT 页面写「任何现金交易」，赌场表格写 €10,000 及以上），在账号的合规区域填表，通常当天处理。在家办 10 分钟，到登记台现场办要 45 分钟。
+> 两项行政手续要在落地之前办好：一是 PokerStars Live 账号——没有它报不了任何一场比赛，下载 app、按指引验证身份（要护照照片）；二是资金来源声明——用现金付买入就可能被要求申报来源（EPT 页面写“任何现金交易”，赌场表格写 €10,000 及以上），在账号的合规区域填表，通常当天处理。在家办 10 分钟，到登记台现场办要 45 分钟。
 
 ==r:有两项行政手续会让第一次参赛的人措手不及。== 两件都要在 **你落地巴塞罗那之前** 办好。
 
@@ -258,11 +258,11 @@ PokerStars 专门设计了 Power Path，就是要 ==挡住职业牌手直接买�
 
 ### 2. 资金来源声明（现金交易）
 
-这一项几乎没人提醒你。如果你在 Casino Barcelona 用 **现金** 支付锦标赛买入，==r:你可能被要求声明这笔钱的来源==——EPT 赛事页面写的是「任何现金交易」，而赌场自己的声明表格适用于 10.000（€10,000）及以上的现金交易。
+这一项几乎没人提醒你。如果你在 Casino Barcelona 用 **现金** 支付锦标赛买入，==r:你可能被要求声明这笔钱的来源==——EPT 赛事页面写的是“任何现金交易”，而赌场自己的声明表格适用于 10.000（€10,000）及以上的现金交易。
 
 **如何提前完成：**
 1. 在 [pokerstarslive.com](https://www.pokerstarslive.com/ept/barcelona/) 登录你的 **PokerStars Live** 账号
-2. 在账号的合规（compliance）区域找到 **Source of Funds** 表格（在官方 EPT Barcelona 页面 "Buy-in" 一栏下找这个链接）
+2. 在账号的合规（compliance）区域找到 **Source of Funds** 表格（在官方 EPT Barcelona 页面“Buy-in”一栏下找这个链接）
 3. 填写表格（收入来源 + 佐证材料）
 4. 提交并等待确认——==g:通常当天处理完毕==
 
@@ -308,7 +308,7 @@ Casino Barcelona 比蒙特卡洛宽松——但确实有硬性规定：
 
 </div>
 
-> **实用提醒：** 官方 PokerStars Live 页面写的是 ==r:"休闲即可，但不许运动服/短裤。"== 就算是看起来体面的短裤，也不许进锦标赛区域。赌场离海滩只有 5 分钟——==r:进来之前先换好衣服==。
+> **实用提醒：** 官方 PokerStars Live 页面写的是 ==r:“休闲即可，但不许运动服/短裤。”== 就算是看起来体面的短裤，也不许进锦标赛区域。赌场离海滩只有 5 分钟——==r:进来之前先换好衣服==。
 
 ---
 
@@ -399,7 +399,7 @@ Casino Barcelona 比蒙特卡洛宽松——但确实有硬性规定：
 
 | 时间 | 发生什么 |
 |---|---|
-| ~11:00 | 报名开始（==r:开放时就到场——排队要 30–45 分钟，「开赛前 30 分钟」已经晚了==） |
+| ~11:00 | 报名开始（==r:开放时就到场——排队要 30–45 分钟，“开赛前 30 分钟”已经晚了==） |
 | ~12:00 | 发牌——Day 1 开始 |
 | 晚间 | Day 1 收工——通常 8 个盲注级别，具体时间取决于结构表 |
 | Day 2+ | ==g:只有装袋保留了筹码的牌手才能继续== |
@@ -463,7 +463,7 @@ A. 你需要一个 ==**PokerStars Live**== 账号（与你的线上牌局账号�
 
 **Q. 资金来源（Source of Funds）表格是什么，真的必须填吗？**
 
-A. 如果你用现金支付，就按需要办来准备。EPT 赛事页面写的是「任何现金交易」都要声明资金来源，而赌场的声明表格适用于 10.000（€10,000）及以上的现金交易——所以门槛和手续请提前向赌场确认。你可以提前通过 PokerStars Live 账号在线填好这份表格——==g:大约花 10 分钟==。用银行卡或预购代币支付则可能不需要。
+A. 如果你用现金支付，就按需要办来准备。EPT 赛事页面写的是“任何现金交易”都要声明资金来源，而赌场的声明表格适用于 10.000（€10,000）及以上的现金交易——所以门槛和手续请提前向赌场确认。你可以提前通过 PokerStars Live 账号在线填好这份表格——==g:大约花 10 分钟==。用银行卡或预购代币支付则可能不需要。
 
 **Q. 如果我赢了 Power Path 的 Gold Pass，酒店是自动订好的吗？**
 
@@ -478,7 +478,7 @@ A. 巴塞罗那的奥林匹克港区域总体安全。==r:游客密集的地方�
 ## 来源
 
 - **赛期、场地、买入与赛程** — [PokerStars Live · EPT Barcelona](https://www.pokerstarslive.com/ept/barcelona/)（官方，2026 年 8 月 31 日查阅）
-- **2026 主赛事决赛桌、人次与奖池** — 现场直播报道，已在 [PokerNews](https://www.pokernews.com/news/2026/08/manuel-ferrari-wins-2026-ept-barcelona-main-event-52260.htm) 与 [Card Player](https://www.cardplayer.com/poker-news/1741396-manuel-ferrari-wins-ept-barcelona-main-event-for-1-2-million)（均为 2026 年 8 月 29 日）之间交叉核对，两者的人次与名次完全一致。「EPT 史上第七大」出自 Card Player。
+- **2026 主赛事决赛桌、人次与奖池** — 现场直播报道，已在 [PokerNews](https://www.pokernews.com/news/2026/08/manuel-ferrari-wins-2026-ept-barcelona-main-event-52260.htm) 与 [Card Player](https://www.cardplayer.com/poker-news/1741396-manuel-ferrari-wins-ept-barcelona-main-event-for-1-2-million)（均为 2026 年 8 月 29 日）之间交叉核对，两者的人次与名次完全一致。“EPT 史上第七大”出自 Card Player。
 - **官方结果** — [PokerStars · EPT Barcelona 2026 完整成绩](https://www.pokerstars.com/poker/learn/news/ept-barcelona-2026-full-results/)（2026 年 9 月 9 日查阅——冠军、奖金与参赛人次已逐项核对一致）
 
 ---
