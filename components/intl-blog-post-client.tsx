@@ -3,13 +3,13 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Clock, Tag, ChevronLeft, ChevronRight, ChevronDown, Share2, Link2, Map, BookOpen } from "lucide-react";
+import { Clock, Tag, ChevronLeft, ChevronRight, ChevronDown, Share2, Link2, Map, BookOpen, BrainCircuit } from "lucide-react";
 import { FaXTwitter, FaFacebookF } from "react-icons/fa6";
 import { useState, useRef, useEffect, useCallback } from "react";
 import type { Post } from "@/lib/posts";
 import { SITE } from "@/lib/site";
 import { POST_LABELS, NAV_CTA, NAV_HOME_FEED, CHROME, dirForLocale, type SecondaryLocale } from "@/lib/intl";
-import { clusterForSlug, EN_CLUSTERS, JA_CLUSTERS, ES_CLUSTERS, PT_CLUSTERS, DE_CLUSTERS, ZH_CLUSTERS, ZH_HANT_CLUSTERS, ID_CLUSTERS, type PillarCluster } from "@/lib/pillar-clusters";
+import { clusterForSlug, clustersForLocale, type PillarCluster } from "@/lib/pillar-clusters";
 import ClusterMinimap from "@/components/cluster-minimap";
 import CommunityCTA from "@/components/community-cta";
 import BlogTopBar from "@/components/blog-top-bar";
@@ -30,6 +30,25 @@ const CALC_CTA_LABELS: Partial<Record<SecondaryLocale, { title: string; subtitle
   de: { title: "Poker-Odds-Rechner", subtitle: "Equity, Outs & Pot Odds sofort" },
   zh: { title: "德州扑克概率计算器", subtitle: "胜率、补牌、底池赔率即时计算" },
   id: { title: "Kalkulator Odds Poker", subtitle: "Equity, outs & pot odds instan" },
+};
+
+/**
+ * 데스크톱 우측 레일의 GTO 솔버 버튼 문구 — 2026-09-16 (사장님 지시 「솔버 배너」 · KO의
+ * blog-post-client.tsx 08-18 버튼과 같은 자리·같은 크기). 🔴 문구는 지어내지 않았다 —
+ * 각 로케일 `app/<loc>/solver/page.tsx`의 metadata TITLE을 «제목 — 부제»로 가른 축어다.
+ * 랜딩 TITLE을 바꾸면 여기도 같이. fr은 클러스터 맵이 없어 레일 자체가 없다(대상 밖).
+ */
+const SOLVER_CTA_LABELS: Partial<Record<SecondaryLocale, { title: string; subtitle: string }>> = {
+  en: { title: "Free GTO Solver", subtitle: "Poker Solver in Your Browser" },
+  ja: { title: "無料ポーカーGTOツール", subtitle: "登録不要・インストール不要でGTO計算" },
+  es: { title: "Solver poker GTO gratis", subtitle: "sin registro, sin límites" },
+  pt: { title: "Solver de poker GTO grátis", subtitle: "sem cadastro, sem limites" },
+  de: { title: "GTO Poker Solver kostenlos", subtitle: "im Browser, ohne Anmeldung" },
+  zh: { title: "免费 GTO Poker Solver", subtitle: "打开浏览器就能算，无需下载、无需注册" },
+  "zh-hant": { title: "免費 GTO Poker Solver", subtitle: "打開瀏覽器就能算，免下載、免註冊" },
+  id: { title: "Solver GTO Poker Gratis", subtitle: "langsung di browser, tanpa instal" },
+  hi: { title: "मुफ़्त GTO पोकर सॉल्वर", subtitle: "सीधे ब्राउज़र में" },
+  ms: { title: "Solver Poker GTO Percuma", subtitle: "Terus dalam Pelayar" },
 };
 
 function IntlTocList({
@@ -148,8 +167,10 @@ export default function IntlBlogPostClient({
 
   const hasToc = headings.length >= 2;
   // 클러스터 미니맵: 전 필라를 완역한 로케일만(en·ja·es·pt·de·zh·zh-hant·id). 라벨은 로케일별 클러스터, UI라벨은 EN 유지.
-  const localeClusters: PillarCluster[] | null =
-    locale === "en" ? EN_CLUSTERS : locale === "ja" ? JA_CLUSTERS : locale === "es" ? ES_CLUSTERS : locale === "pt" ? PT_CLUSTERS : locale === "de" ? DE_CLUSTERS : locale === "zh" ? ZH_CLUSTERS : locale === "zh-hant" ? ZH_HANT_CLUSTERS : locale === "id" ? ID_CLUSTERS : null;
+  // ★2026-09-16: 하드코딩 사슬(8로케일) → lib/pillar-clusters.ts의 단일 출처. hi·ms는 GTO 시리즈 13편만 있는 «한 필라짜리» 맵이라
+  //   그 13편에만 사이드바·러닝맵이 붙고 나머지 글은 종전처럼 클러스터 없음(빈 배열 → null).
+  const localeClustersAll = clustersForLocale(locale);
+  const localeClusters: PillarCluster[] | null = localeClustersAll.length ? localeClustersAll : null;
   const showMinimap = localeClusters !== null && clusterForSlug(post.slug, localeClusters) !== null;
   // 3단 배치: 목차(좌) · 본문(중앙) · 학습맵(우). 있는 것만 컬럼 생성.
   // ★좌측 컬럼은 항상 있다 (2026-08-04) — 전역 레일(components/side-rail.tsx)이 그 안에 얹힌다.
@@ -501,6 +522,21 @@ export default function IntlBlogPostClient({
           {showMinimap && (
             <aside className="hidden xl:block">
               <div className="sticky top-16 max-h-[calc(100vh-5rem)] overflow-y-auto overscroll-contain pe-1">
+                {/* ★2026-09-16 (사장님 지시): KO 우측 레일과 같은 구성 — 계산기 CTA + GTO 솔버 CTA + 러닝맵.
+                    전엔 다국어 데스크톱 레일에 러닝맵만 있었다(계산기는 모바일 sticky 바에만). 문구는
+                    CALC_CTA_LABELS·SOLVER_CTA_LABELS 축어. 두 번째 버튼은 pulse를 끈다(둘이면 서로를 지운다 — calc-cta-button.tsx). */}
+                {CALC_CTA_LABELS[locale] && (
+                  <CalcCtaButton href="/calculator" title={CALC_CTA_LABELS[locale]!.title} subtitle={CALC_CTA_LABELS[locale]!.subtitle} />
+                )}
+                {SOLVER_CTA_LABELS[locale] && (
+                  <CalcCtaButton
+                    href={`/${locale}/solver`}
+                    title={SOLVER_CTA_LABELS[locale]!.title}
+                    subtitle={SOLVER_CTA_LABELS[locale]!.subtitle}
+                    Icon={BrainCircuit}
+                    pulse={!CALC_CTA_LABELS[locale]}
+                  />
+                )}
                 <ClusterMinimap slug={post.slug} clusters={localeClusters!} hrefBase={base} />
               </div>
             </aside>

@@ -4,6 +4,13 @@
 // 향후 KO·18언어 라벨 현지화로 확장.
 
 import { GTO_SERIES } from "./gto-series";
+import { solverClusterFor } from "./gto-series-i18n";
+
+/** 로케일별 「GTO 솔버」 필라 — 시리즈 번역본이 있는 로케일만 한 칸 붙는다(없으면 빈 배열 · lib/gto-series-i18n.ts). */
+const solverOf = (locale: string): PillarCluster[] => {
+  const c = solverClusterFor(locale);
+  return c ? [c] : [];
+};
 
 export type ClusterNode = {
   slug: string;
@@ -131,6 +138,8 @@ export const EN_CLUSTERS: PillarCluster[] = [
       { slug: "holdem-bad-beat", label: "Bad Beat" },
     ],
   },
+  // GTO 솔버 시리즈 13편 — 2026-09-16 (사장님 지시 · 러닝맵 + 우측 사이드바). 라벨 정본 = lib/gto-series-i18n.ts
+  ...solverOf("en"),
 ];
 
 // 한국어 필라-클러스터 로드맵 (KO 8필라, 실존 슬러그만 — 라이브 :::pillarhub에서 추출·전수 검증).
@@ -340,6 +349,8 @@ export const JA_CLUSTERS: PillarCluster[] = [
       { slug: "holdem-bad-beat", label: "バッドビート" },
     ],
   },
+  // GTO 솔버 시리즈 13편 — 2026-09-16 (사장님 지시 · 러닝맵 + 우측 사이드바). 라벨 정본 = lib/gto-series-i18n.ts
+  ...solverOf("ja"),
 ];
 
 // 스페인어 필라-클러스터 로드맵 (EN 6필라와 구조·슬러그 동일, 라벨만 현지화. es 42편 전부 실존).
@@ -421,6 +432,8 @@ export const ES_CLUSTERS: PillarCluster[] = [
       { slug: "holdem-bad-beat", label: "Bad beat" },
     ],
   },
+  // GTO 솔버 시리즈 13편 — 2026-09-16 (사장님 지시 · 러닝맵 + 우측 사이드바). 라벨 정본 = lib/gto-series-i18n.ts
+  ...solverOf("es"),
 ];
 
 // 포르투갈어 필라-클러스터 로드맵 (EN 6필라와 구조·슬러그 동일, 라벨만 pt-BR. pt 42편 전부 실존).
@@ -502,6 +515,8 @@ export const PT_CLUSTERS: PillarCluster[] = [
       { slug: "holdem-bad-beat", label: "Bad beat" },
     ],
   },
+  // GTO 솔버 시리즈 13편 — 2026-09-16 (사장님 지시 · 러닝맵 + 우측 사이드바). 라벨 정본 = lib/gto-series-i18n.ts
+  ...solverOf("pt"),
 ];
 
 // 독일어 필라-클러스터 로드맵 (EN 6필라와 구조·슬러그 동일, 라벨만 독일어. de 42편 전부 실존).
@@ -663,6 +678,8 @@ export const ZH_CLUSTERS: PillarCluster[] = [
       { slug: "holdem-bad-beat", label: "Bad Beat" },
     ],
   },
+  // GTO 솔버 시리즈 13편 — 2026-09-16 (사장님 지시 · 러닝맵 + 우측 사이드바). 라벨 정본 = lib/gto-series-i18n.ts
+  ...solverOf("zh"),
 ];
 
 // 번체(대만·홍콩) — 슬러그는 전 언어 공유, 라벨만 번체 현지화. Live Events 그룹 라벨은 EN 유지.
@@ -744,6 +761,8 @@ export const ZH_HANT_CLUSTERS: PillarCluster[] = [
       { slug: "holdem-bad-beat", label: "Bad Beat" },
     ],
   },
+  // GTO 솔버 시리즈 13편 — 2026-09-16 (사장님 지시 · 러닝맵 + 우측 사이드바). 라벨 정본 = lib/gto-series-i18n.ts
+  ...solverOf("zh-hant"),
 ];
 
 export const ID_CLUSTERS: PillarCluster[] = [
@@ -824,6 +843,8 @@ export const ID_CLUSTERS: PillarCluster[] = [
       { slug: "holdem-bad-beat", label: "Bad Beat" },
     ],
   },
+  // GTO 솔버 시리즈 13편 — 2026-09-16 (사장님 지시 · 러닝맵 + 우측 사이드바). 라벨 정본 = lib/gto-series-i18n.ts
+  ...solverOf("id"),
 ];
 
 /** 이 slug가 속한 필라를 반환 (허브이거나 노드이면 매치). 없으면 null. 기본 EN, clusters 인자로 KO 등 전달. */
@@ -849,6 +870,14 @@ export function clusterForSlug(slug: string, clusters: PillarCluster[] = EN_CLUS
  * locale 타입을 `SecondaryLocale`로 좁히지 않은 이유: `lib/intl.ts`를 import하면
  * 데이터 모듈이 로케일 레지스트리에 의존하게 된다. 값 자체는 문자열 키라 좁힐 실익이 없다.
  */
+/**
+ * hi·ms — 필라 클러스터 맵이 없는 로케일이지만 GTO 시리즈 13편은 있다(2026-09-16).
+ * 시리즈 글에 우측 사이드바·러닝맵이 붙도록 «솔버 필라 하나짜리» 맵을 둔다.
+ * 다른 글은 여전히 클러스터 없음(관련글은 카테고리 회전 폴백 · 미니맵 미표시) — 종전과 같다.
+ */
+export const HI_CLUSTERS: PillarCluster[] = [...solverOf("hi")];
+export const MS_CLUSTERS: PillarCluster[] = [...solverOf("ms")];
+
 const CLUSTERS_BY_LOCALE: Record<string, PillarCluster[]> = {
   en: EN_CLUSTERS,
   ja: JA_CLUSTERS,
@@ -858,6 +887,8 @@ const CLUSTERS_BY_LOCALE: Record<string, PillarCluster[]> = {
   zh: ZH_CLUSTERS,
   "zh-hant": ZH_HANT_CLUSTERS,
   id: ID_CLUSTERS,
+  hi: HI_CLUSTERS,
+  ms: MS_CLUSTERS,
 };
 
 /** 로케일별 클러스터. `null`(= 한국어)이면 KO_CLUSTERS. 맵이 없는 언어는 빈 배열. */
