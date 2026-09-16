@@ -3,6 +3,7 @@
 - 지시: 「전략 예제 13편 페이지에 우측 사이드바(로드맵·솔버 배너)가 없다 · 로드맵에 솔버 예제편도 넣어라」.
 - 원인: 「GTO 솔버」 필라가 08-18에 **KO_CLUSTERS에만** 들어가 KO 13편은 사이드바가 돌아왔지만, 같은 시리즈를 가진 9로케일(en·ja·es·pt·zh·zh-hant·id·hi·ms)은 `clusterForSlug`가 null → `showMinimap=false` → 우측 레일 자체가 없었다(라이브 1440 캡처로 확인 — KO는 정상).
 - 반영: `lib/gto-series-i18n.ts` 신설(로케일별 필라 라벨 + 13 노드 · 문구는 각 로케일 솔버 랜딩 SPOT_GROUPS `name`·`label` 축어 · 순서·슬러그 KO 정본과 일치 검증) → `pillar-clusters.ts` 7로케일 배열 끝에 `...solverOf(loc)` + hi·ms «솔버 한 필라짜리» 맵 신설·등록 → `intl-blog-post-client.tsx` 하드코딩 사슬을 `clustersForLocale`로. 다국어 데스크톱 우측 레일에 KO와 같은 계산기 CTA + GTO 솔버 CTA(문구 = 각 랜딩 metadata TITLE «제목 — 부제» 축어) 추가.
+- 후속(같은 날 사장님 「작업해줘」): zh-hant·hi·ms 계산기 CTA 문구 추가 — 계산기 랜딩이 없는 로케일이라 title은 본문의 계산기 링크 앵커 축어(撲克機率計算器 · Poker odds कैलकुलेटर · Kalkulator odds poker), subtitle은 zh·id 부제의 같은 세 용어를 그 코퍼스 표기로. 이제 클러스터 맵이 있는 10로케일 전부 우측 레일 = 계산기 + 솔버 + 러닝맵.
 - 검증: tsc 0 · 빌드 70 + intl 577 · 산출 HTML(en·ja·hi·ms·zh-hant 시리즈 글) 3열 그리드 + Learning Map + 허브 `/<loc>/solver` + 시리즈 링크 12 · 비시리즈 hi 글은 종전대로 2열 · 로컬 1440 캡처 넘침 0. 관련글 시리즈 가드(related-posts.ts)는 slug 기준이라 「13×13 링크 금지」 유지.
 
 ## 2026-09-16 (3) — 🧰 queue 회차 Q6-b 머지·배포 (인용부호·괄호 스윕 zh 43 + zh-hant 3 + ja 2 · 게이트 `check:hygiene` 신설)

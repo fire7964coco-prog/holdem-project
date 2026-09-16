@@ -30,6 +30,13 @@ const CALC_CTA_LABELS: Partial<Record<SecondaryLocale, { title: string; subtitle
   de: { title: "Poker-Odds-Rechner", subtitle: "Equity, Outs & Pot Odds sofort" },
   zh: { title: "德州扑克概率计算器", subtitle: "胜率、补牌、底池赔率即时计算" },
   id: { title: "Kalkulator Odds Poker", subtitle: "Equity, outs & pot odds instan" },
+  // ★2026-09-16 (사장님 지시) — 세 로케일은 계산기 랜딩이 없어(/calculator·/en/calculator만 존재) 제목을 딸 페이지가 없다.
+  //   title = 그 로케일 본문이 계산기를 부르는 링크 앵커 축어(lib/posts-<loc>/ … ](/calculator)) ·
+  //   subtitle = 형제 로케일 부제(zh·id)의 같은 세 용어를 그 로케일 코퍼스 표기로(zh-hant 勝率 514·補牌 281·底池賠率 185회 ·
+  //   ms serta-merta 13회 · hi는 본문이 outs·pot odds를 라틴으로 쓴다).
+  "zh-hant": { title: "撲克機率計算器", subtitle: "勝率、補牌、底池賠率即時計算" },
+  hi: { title: "Poker odds कैलकुलेटर", subtitle: "Equity, outs और pot odds तुरंत" },
+  ms: { title: "Kalkulator odds poker", subtitle: "Equity, outs & pot odds serta-merta" },
 };
 
 /**
