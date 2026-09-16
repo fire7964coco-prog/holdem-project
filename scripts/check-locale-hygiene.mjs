@@ -115,9 +115,9 @@ const QUOTE_CANON = {
 const STRAIGHT_ALLOW = {
   zh: ['with the APT turning twenty in 2026', 'Tony G', 'In button games with 2 or more'],
   'zh-hant': ['with the APT turning twenty in 2026', 'Tony G', 'In button games with 2 or more'],
-  // 🟠 ja 넷째 `Qualify for as Little as $0.50`은 **ja만 직선**이다(zh·zh-hant는 자기 인용부호) —
-  //    ja 레인 판정 대기라 잠정 면제. 판정이 나면 이 줄을 지우거나 근거를 적어 남겨라.
-  ja: ['with the APT turning twenty in 2026', 'Tony G', 'In button games with 2 or more', 'Qualify for as Little as $0.50'],
+  // ✅ 2026-09-16 헤드 판정(ja 레인은 회차 14로 종결 · settled §1-D): `Qualify for as Little as $0.50`은 zh·zh-hant와
+  //    동형으로 ja도 「」 — 직선 기준은 «라틴 축어»가 아니라 «세 로케일 동형»(Q6-b 규율)이므로 면제에서 뺐다.
+  ja: ['with the APT turning twenty in 2026', 'Tony G', 'In button games with 2 or more'],
 };
 
 /** HTML 태그·마크다운 링크 괄호를 공백으로 덮는다(인덱스 보존) → 남은 것이 «산문»이다. */

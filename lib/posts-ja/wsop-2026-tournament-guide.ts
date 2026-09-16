@@ -238,7 +238,7 @@ Ogitaの#72も数字のインパクトが大きいイベントでした。バイ
 
 ### GGPokerのサテライトなら$0.50から
 
-日本からメインイベントを狙うとき、最も現実的なのがオンラインのステップサテライトです。WSOP公式サイトもこの経路を案内していて、==g:"Qualify for as Little as $0.50"== と書かれています。GGPokerはWSOPの国際公式オンラインパートナーで、日本語UIも用意されています。
+日本からメインイベントを狙うとき、最も現実的なのがオンラインのステップサテライトです。WSOP公式サイトもこの経路を案内していて、==g:「Qualify for as Little as $0.50」== と書かれています。GGPokerはWSOPの国際公式オンラインパートナーで、日本語UIも用意されています。
 
 ![GGPoker WSOP Expressの4段階サテライト経路 — $0.50から$10,000のBracelet Passまで](/images/wsop-2026-ggpoker-satellite.webp)
 

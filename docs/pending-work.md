@@ -41,7 +41,7 @@
 
 ### ▶ 그밖에 열 수 있는 것
 - 🟢 **en 56편 원장 레인 = 결재됨(2026-09-10) — 「EN이 마스터다」.** `홀덤검수/DECISIONS.md` §2 「EN 9편 소급 전수 검수는 안 한다」는 **폐기**(MB-026으로 통지). 🔴 여는 것은 **경화가 아니라 검수·정합**이다 — 착수 ① EN 56편 `updated` 전수 대조 ② 원장 주장 판정. 상세 = `docs/en-first-queue.md` §3 · `settled-decisions` §1-B
-- 🟠 헤드 판정 잔여 3건 → **queue Q6-b가 받는다**(열지 마라): zh-hant 상단 `快速解答` 블록 넣지 않기(상자 13편) · zh-hant probability FAQ 10:15:16 결손/압축 판정 · zh-hant 부분문자열 태그 쌍
+- ✅ 헤드 판정 잔여 3건 종결(queue Q6-b · 2026-09-16): zh-hant 상단 직답 블록 = «일부러 없음»이 정본(`locale-intentional-diffs` 09-16 행) · probability FAQ 10:15:16 = 09-09에 닫힘 · 부분문자열 태그 쌍 = 결함 아님
 - 🟠 검수장 **MA-118 요청 2** — es `como-entrar-al-wsop`·`wsop-2026-tournament-guide` WRONG 15·RISKY 10·STALE 2 + **LISR 138조 웹 실측**
 
 ---
