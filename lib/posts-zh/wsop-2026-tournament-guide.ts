@@ -76,7 +76,7 @@ WSOP（World Series of Poker，世界扑克系列赛）从 1970 年办到现在�
 
 其余三条也各有看点。Yang Wang 的 #5 有 716 人次买入、奖池 $3,293,600。#96 的 Joshua Wang 单挑对手是 **Erik Seidel**，等于让这位名人堂级选手的第 11 条金手链晚了一年。#85 的 Zixuan Liu 从 1,733 人次的场子里杀出来，本职是 TikTok 的软件工程师，在加州 Cupertino 上班。
 
-:::note[国籍按原始报道标注，不做延伸解读。Zixuan Liu 的报道写的是中国籍、现居加州 Cupertino；Joshua Wang 被描述为「originally from China but now residing in the United States」（原籍中国、现居美国）。另外 #13 的 Honghao Zhang 在完整冠军名单上标的是**美国籍**，有些中文媒体把他算进中国选手，这里按官方标注处理。]:::
+:::note[国籍按原始报道标注，不做延伸解读。Zixuan Liu 的报道写的是中国籍、现居加州 Cupertino；Joshua Wang 被描述为“originally from China but now residing in the United States”（原籍中国、现居美国）。另外 #13 的 Honghao Zhang 在完整冠军名单上标的是**美国籍**，有些中文媒体把他算进中国选手，这里按官方标注处理。]:::
 
 ### 参赛人数上，中国排第 7
 
@@ -126,7 +126,7 @@ WSOP（World Series of Poker，世界扑克系列赛）从 1970 年办到现在�
 
 </div>
 
-==g:一场 $1,000 的比赛就涌进 22,811 人次==，是主赛事（9,208 人次）的两倍多。「WSOP 就是那场一万美金的主赛事」这个印象跟实际不太一样——真正把整个赛季撑起来的，是这种低买入的大场子。Zixuan Liu 那条金手链就是从 $1,000 的场子里打出来的。
+==g:一场 $1,000 的比赛就涌进 22,811 人次==，是主赛事（9,208 人次）的两倍多。“WSOP 就是那场一万美金的主赛事”这个印象跟实际不太一样——真正把整个赛季撑起来的，是这种低买入的大场子。Zixuan Liu 那条金手链就是从 $1,000 的场子里打出来的。
 
 ---
 
@@ -180,7 +180,7 @@ WSOP（World Series of Poker，世界扑克系列赛）从 1970 年办到现在�
 
 ## WSOP 的买入是多少？
 
-搜「WSOP 买入」跳出来的是 $10,000，但那是主赛事。==g:整个赛季其实从 **$500** 起。==
+搜“WSOP 买入”跳出来的是 $10,000，但那是主赛事。==g:整个赛季其实从 **$500** 起。==
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -198,7 +198,7 @@ WSOP（World Series of Poker，世界扑克系列赛）从 1970 年办到现在�
 
 奖金那边，主赛事冠军==**$10,000,000**==，第 9 名也有 $1,000,000。
 
-==r:不过「准备 $10,000」有时是不够的。== WSOP 规定只对**信用卡和 PayPal 收 2% 手续费**，==g:**借记卡不收**==。主赛事刷信用卡是==**$10,200**==，刷借记卡就是==g:**$10,000 整**==。单笔 $10,000 的上限按赛事买入计，规定明确举例：**主赛事可以刷卡，$50,000 的赛事不行**。这部分下面报名那节还会讲。
+==r:不过“准备 $10,000”有时是不够的。== WSOP 规定只对**信用卡和 PayPal 收 2% 手续费**，==g:**借记卡不收**==。主赛事刷信用卡是==**$10,200**==，刷借记卡就是==g:**$10,000 整**==。单笔 $10,000 的上限按赛事买入计，规定明确举例：**主赛事可以刷卡，$50,000 的赛事不行**。这部分下面报名那节还会讲。
 
 ---
 
@@ -224,7 +224,7 @@ WSOP（World Series of Poker，世界扑克系列赛）从 1970 年办到现在�
 
 | 项目 | 内容 |
 |:---|:---|
-| 谁要办 | 「You are a citizen of China. You have a valid Chinese passport.」 |
+| 谁要办 | “You are a citizen of China. You have a valid Chinese passport.” |
 | 需要的签证 | **十年期 B1、B2 或 B1/B2** |
 | 费用 | **$30.75** |
 | 支付方式 | MasterCard、VISA、American Express、Discover（仅限 JCB、Diners Club 品牌）、**银联（UnionPay）** |
@@ -242,13 +242,13 @@ WSOP（World Series of Poker，世界扑克系列赛）从 1970 年办到现在�
 | 护照 | VWP 名单内的有效护照 |
 | 支付方式 | MasterCard、VISA、American Express、Discover（仅限 JCB、Diners Club 品牌）、**PayPal** |
 | 填写时间 | 平均约 **23 分钟** |
-| 什么时候办 | CBP 建议「开始做行程计划时就办，**在买机票之前**」 |
+| 什么时候办 | CBP 建议“开始做行程计划时就办，**在买机票之前**” |
 
-:::note[ESTA 批准不等于一定能入境。CBP 官方写得很明白：「透过 ESTA 取得的授权，并不决定旅客是否获准入境美国。入境与否由 CBP 官员在旅客抵达时判断。」EVUS 登记同理。]:::
+:::note[ESTA 批准不等于一定能入境。CBP 官方写得很明白：“透过 ESTA 取得的授权，并不决定旅客是否获准入境美国。入境与否由 CBP 官员在旅客抵达时判断。”EVUS 登记同理。]:::
 
 ### 线上卫星赛
 
-WSOP 官网上也介绍了这条路，写的是 ==g:「Qualify for as Little as $0.50」==。GGPoker 是 WSOP 的国际官方线上伙伴。
+WSOP 官网上也介绍了这条路，写的是 ==g:“Qualify for as Little as $0.50”==。GGPoker 是 WSOP 的国际官方线上伙伴。
 
 ![GGPoker WSOP Express 四阶段卫星赛路径 — 从 $0.50 到 $10,000 的主赛事席位](/images/wsop-2026-ggpoker-satellite.webp)
 
@@ -300,7 +300,7 @@ WSOP 官网上也介绍了这条路，写的是 ==g:「Qualify for as Little as 
 :::steps
 虚拟卡不行 | 规定明文**不承认虚拟卡、数字卡作为确认手段**。只存在手机里的卡在柜台会被拦。要带实体卡。
 卡上的名字要和护照一致 | 证件姓名和卡片姓名必须相同。家人的附属卡、公司的对公卡都不行。
-手续费看卡种 | 收 2% 的只有**信用卡和 PayPal**，==g:**借记卡免手续费**==。主赛事刷信用卡 **$10,200**，刷借记卡 **$10,000**。🪶 但借记卡有银行设的**单日消费上限**，$10,000 一笔可能刷不过去——出发前先把额度调高。单笔 $10,000 上限按买入计，规定举例说主赛事可以刷、$50,000 的赛事不行。⚠️ **报名说明页至今仍写「3%」** —— 正本是赛季规程，但规程本身也写明「可能变动」，请在结算页确认最终金额。
+手续费看卡种 | 收 2% 的只有**信用卡和 PayPal**，==g:**借记卡免手续费**==。主赛事刷信用卡 **$10,200**，刷借记卡 **$10,000**。🪶 但借记卡有银行设的**单日消费上限**，$10,000 一笔可能刷不过去——出发前先把额度调高。单笔 $10,000 上限按买入计，规定举例说主赛事可以刷、$50,000 的赛事不行。⚠️ **报名说明页至今仍写“3%”** —— 正本是赛季规程，但规程本身也写明“可能变动”，请在结算页确认最终金额。
 习惯用现金的话可以开 Paris TA | 用现金或筹码在 **Paris 开一个赛事账户（TA）**，之后报名会顺很多。赛季结束时余额按存入的形式退回。
 ACH 只限美国居民 | 国内读者用不上。非美国居民可以用 **Luxon Pay**，信用卡和 PayPal 也行。
 电汇 $100,000 起 | 而且要事先核准。只打一场主赛事的人用不着。
@@ -325,9 +325,9 @@ ACH 只限美国居民 | 国内读者用不上。非美国居民可以用 **Luxo
 
 ==g:规定定的官方用语只有七个英文单词：**bet、call、fold、check、all-in、pot**（只用于底池限注 Pot-Limit）、**complete**。== 地区性的说法也认，但规定补了一句：用非标准说法的风险自己承担。
 
-**牌局进行中全桌只说英文。** 规定里有「当牌局进行中，所有牌桌只使用英文」这一条。不是针对哪个国籍，而是避免有人用别人听不懂的语言传递信息。上面那七个词就够用了。
+**牌局进行中全桌只说英文。** 规定里有“当牌局进行中，所有牌桌只使用英文”这一条。不是针对哪个国籍，而是避免有人用别人听不懂的语言传递信息。上面那七个词就够用了。
 
-而且==**你不用拿英文报自己的牌型。**== 规定写的是「由牌决定胜负」，对牌型价值的口头宣告没有约束力。不记得葫芦的英文也没关系，把牌摊开荷官会念。牌型本身还不太有把握，可以先看[德州扑克牌型大小](/zh/blog/holdem-hand-rankings)。
+而且==**你不用拿英文报自己的牌型。**== 规定写的是“由牌决定胜负”，对牌型价值的口头宣告没有约束力。不记得葫芦的英文也没关系，把牌摊开荷官会念。牌型本身还不太有把握，可以先看[德州扑克牌型大小](/zh/blog/holdem-hand-rankings)。
 
 ### 其他要知道的规定
 
@@ -343,7 +343,7 @@ ACH 只限美国居民 | 国内读者用不上。非美国居民可以用 **Luxo
 
 ## 奖金要交税吗？
 
-中国内地居民的境外所得，==**要在次年 3 月 1 日到 6 月 30 日之间申报**==。可以走个人所得税 APP，或者自然人电子税务局网页版的「年度汇算（适用境外所得）」模块办理。偶然所得这类分类所得是分别计算税额的。
+中国内地居民的境外所得，==**要在次年 3 月 1 日到 6 月 30 日之间申报**==。可以走个人所得税 APP，或者自然人电子税务局网页版的“年度汇算（适用境外所得）”模块办理。偶然所得这类分类所得是分别计算税额的。
 
 ==r:这里有个很实际的点。== 想抵免在境外已经缴过的税，需要**境外征税主体出具的完税证明、税款缴纳凭证或纳税记录**。所以如果在美国被预扣了税，那份材料要留好。
 
@@ -362,7 +362,7 @@ ACH 只限美国居民 | 国内读者用不上。非美国居民可以用 **Luxo
 
 **Q. WSOP 是什么的缩写？**
 
-A. World Series of Poker，中文一般叫「世界扑克系列赛」。1970 年开办，是规模最大的德州扑克锦标赛系列，每年夏天在拉斯维加斯打，冠军拿金手链。
+A. World Series of Poker，中文一般叫“世界扑克系列赛”。1970 年开办，是规模最大的德州扑克锦标赛系列，每年夏天在拉斯维加斯打，冠军拿金手链。
 
 **Q. 2026 年中国选手拿了几条金手链？**
 
@@ -391,8 +391,8 @@ A. 满 21 岁、有有效证件就行，没有国籍限制。但中国护照上�
 这篇的数字和规定都直接查过原始出处。**查证日：2026 年 7 月 28 日**（中国选手金手链与美国入境要件在 **7 月 29 日**、**主赛事最终结果与中国籍最高名次在 8 月 6 日**、**刷卡手续费一项在 8 月 15 日**依官方规则手册 PDF 再次确认）。
 
 - **WSOP 官方报名规定** — [wsop.com/registration](https://www.wsop.com/registration/)：必需账号（Caesars Rewards ＋ WSOP LIVE）、Versailles Ballroom 确认区、刷卡单笔 $10,000 上限、电汇 $100,000 起、证件无地址时的第二份材料、第一次报名提早一小时
-- **★2026 WSOP 官方规则手册（PDF）— 手续费的正本** *(2026-08-15 查证)* — [2026-WSOP-Tournament-Rules.pdf](https://wsop.gg-global-cdn.com/wsop/pdfs/2026-WSOP-Tournament-Rules.pdf)：Rule 5 逐字「Visa／Mastercard／Discover／Amex **或 PayPal 加收 2% 手续费** · **借记卡不收费** · Fees are subject to change」。⚠️ **报名说明页至今仍写「3%」，也没有 PayPal 与借记卡的条款** — 本文以赛季规程手册为正本。付款前请在结算页面确认最终金额
-- **★WSOP 官方结果 — Event #82 主赛事最终名次**（2026-08-06 确认）— [wsop.com/tournaments/result/619](https://www.wsop.com/tournaments/result/619/)：冠军 Lucas Jumalon（United States）$10,000,000、第 1～9 名的名次·国籍·奖金、**中国籍最高名次第 28 名 Tianle Wang $265,000**（直接查看第 1～50 名的 Country 栏）、收官日 8 月 5 日（官方页面 End Date 栏写的是「Aug 05 01:48 AM」）、9,208 人次、钱圈 1,383 名、**奖池 $87,568,080**
+- **★2026 WSOP 官方规则手册（PDF）— 手续费的正本** *(2026-08-15 查证)* — [2026-WSOP-Tournament-Rules.pdf](https://wsop.gg-global-cdn.com/wsop/pdfs/2026-WSOP-Tournament-Rules.pdf)：Rule 5 逐字“Visa／Mastercard／Discover／Amex **或 PayPal 加收 2% 手续费** · **借记卡不收费** · Fees are subject to change”。⚠️ **报名说明页至今仍写“3%”，也没有 PayPal 与借记卡的条款** — 本文以赛季规程手册为正本。付款前请在结算页面确认最终金额
+- **★WSOP 官方结果 — Event #82 主赛事最终名次**（2026-08-06 确认）— [wsop.com/tournaments/result/619](https://www.wsop.com/tournaments/result/619/)：冠军 Lucas Jumalon（United States）$10,000,000、第 1～9 名的名次·国籍·奖金、**中国籍最高名次第 28 名 Tianle Wang $265,000**（直接查看第 1～50 名的 Country 栏）、收官日 8 月 5 日（官方页面 End Date 栏写的是“Aug 05 01:48 AM”）、9,208 人次、钱圈 1,383 名、**奖池 $87,568,080**
 - **★WSOP 官方赛事日程表 — 100 条金手链全部发出**（2026-08-06 确认）— [wsop.com/tournaments/2026-57th-annual-world-series-of-poker](https://www.wsop.com/tournaments/2026-57th-annual-world-series-of-poker/)：逐行核对 Event #1～#100 的 Winner 栏，**100 条全部产生冠军**（无缺号）
 - **WSOP 官方转播公告** — [wsop.com/news](https://www.wsop.com/news/world-series-of-poker-begins-main-event-broadcast/)：国际转播网、决赛桌 8 月 3～5 日
 - **ESPN 官方节目表** — [espnpressroom.com](https://espnpressroom.com/press-release/espn-and-world-series-of-poker-announce-programming-schedule-for-2026-main-event/)：8/3 ESPN2、8/4 ESPN、8/5 ESPN 及具体时段
@@ -401,7 +401,7 @@ A. 满 21 岁、有有效证件就行，没有国籍限制。但中国护照上�
 - **赛季总计** — [CardPlayer 2026 WSOP By The Numbers](https://www.cardplayer.com/poker-news/1684562-record-entries-of-more-than-250000-headline-staggering-stats-for-2026-world-series-of-poker)：251,899 人次、$469,975,059、35,157 个钱圈名额、#63 22,811 人次、Ladies 1,475 人次
 - **中国选手金手链 — 逐场原始报道**
   · [PokerNews Event #5](https://www.pokernews.com/news/2026/05/yang-wang-wins-first-wsop-bracelet-5-000-pot-limit-omaha-51383.htm)：Yang Wang（China）$595,388、716 人次、奖池 $3,293,600、生涯第一条
-  · [PokerNews Event #38](https://www.pokernews.com/news/2026/06/dong-chen-beats-poker-legends-for-second-wsop-gold-bracelet-51541.htm)：Dong Chen（China）$285,200、亚军 Benny Glaser、121 人次・奖池 $1,125,300、第二条（首条为 2023 WSOP Paradise），原文载明「Chen is just the third player from China to win multiple WSOP bracelets, joining Xixiang Luo and Renji Mao」
+  · [PokerNews Event #38](https://www.pokernews.com/news/2026/06/dong-chen-beats-poker-legends-for-second-wsop-gold-bracelet-51541.htm)：Dong Chen（China）$285,200、亚军 Benny Glaser、121 人次・奖池 $1,125,300、第二条（首条为 2023 WSOP Paradise），原文载明“Chen is just the third player from China to win multiple WSOP bracelets, joining Xixiang Luo and Renji Mao”
   · [PokerNews Event #85](https://www.pokernews.com/news/2026/07/zixuan-liu-wins-wsop-1000-nlh-51778.htm)：Zixuan Liu（China・现居 Cupertino）$219,391、1,733 人次、亚军 Justin Shiao、生涯第一条
   · [PokerNews Event #96](https://www.pokernews.com/news/2026/07/2026-wsop-event-96-3000-plo-results-joshua-wang-beats-seidel-51896.htm)：Joshua Wang $407,137、奖池 $2,381,640、生涯第一条、亚军 Erik Seidel（$271,371）
   · [poker.org 2026 WSOP 完整冠军名单](https://www.poker.org/latest-news/2026-wsop-winners-the-full-list-aOgJd9w4oEe6)：中国籍冠军共 4 名（#5・#38・#85・#96）；#13 Honghao Zhang 标注为美国籍
