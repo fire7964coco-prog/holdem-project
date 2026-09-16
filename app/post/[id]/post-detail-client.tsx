@@ -4,6 +4,7 @@ import { useState, useTransition } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { addComment, deleteComment, toggleLike } from "@/app/community/actions";
+import { loginHref } from "@/lib/auth-navigation";
 import PostCard, { type FeedPost, timeAgo, GOLD, BG, CARD, TEXT_PRIMARY, TEXT_BODY, TEXT_SECONDARY, TEXT_MUTED, SURFACE, DIVIDER, BORDER } from "@/app/community/post-card";
 
 export type CommentItem = {
@@ -35,7 +36,7 @@ export default function PostDetailClient({
 
   function onLike(postId: string) {
     if (!currentUserId) {
-      router.push("/login");
+      router.push(loginHref(`/post/${post.id}`));
       return;
     }
     setPost((p) => ({ ...p, liked: !p.liked, likeCount: p.likeCount + (p.liked ? -1 : 1) }));
@@ -48,7 +49,7 @@ export default function PostDetailClient({
     const text = draft.trim();
     if (!text) return;
     if (!currentUserId) {
-      router.push("/login");
+      router.push(loginHref(`/post/${post.id}`));
       return;
     }
     startTransition(async () => {
@@ -71,8 +72,8 @@ export default function PostDetailClient({
   return (
     <div className="min-h-screen flex flex-col" style={{ background: BG, fontFamily: "'Inter','Pretendard',sans-serif" }}>
       {/* 헤더 */}
-      <header className="sticky top-0 z-40 flex items-center gap-3 px-4 py-3" style={{ background: "rgba(11,17,32,0.95)", borderBottom: `1px solid ${BORDER}`, backdropFilter: "blur(10px)" }}>
-        <Link href="/" className="flex items-center justify-center w-8 h-8 rounded-full active:scale-90 transition-transform" style={{ background: SURFACE }}>
+      <header className="sticky top-0 z-40 flex items-center gap-3 px-4 py-3" style={{ background: CARD, borderBottom: `1px solid ${BORDER}` }}>
+        <Link href="/" aria-label="홈으로" className="flex items-center justify-center w-11 h-11 rounded-full active:scale-90 transition-transform" style={{ background: SURFACE }}>
           <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} style={{ color: TEXT_PRIMARY }}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
           </svg>
@@ -130,23 +131,25 @@ export default function PostDetailClient({
 
       {/* 댓글 입력 */}
       {currentUserId ? (
-        <div className="fixed bottom-0 left-0 right-0 flex items-center gap-2 px-3 py-3" style={{ background: "rgba(11,17,32,0.97)", borderTop: "1px solid rgba(var(--gold-dark-rgb),0.15)", backdropFilter: "blur(10px)" }}>
+        <div className="fixed bottom-0 left-0 right-0 flex items-center gap-2 px-3 py-3" style={{ background: CARD, borderTop: `1px solid ${BORDER}` }}>
           <input
+            aria-label="댓글 입력"
+            maxLength={1000}
             value={draft}
             onChange={(e) => setDraft(e.target.value)}
-            onKeyDown={(e) => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); onSubmitComment(); } }}
+            onKeyDown={(e) => { if (e.key === "Enter" && !e.shiftKey && !e.nativeEvent.isComposing && e.keyCode !== 229) { e.preventDefault(); onSubmitComment(); } }}
             placeholder="댓글을 입력하세요..."
-            className="flex-1 px-4 py-2.5 rounded-full text-sm outline-none"
+            className="min-w-0 flex-1 px-4 py-2.5 rounded-full text-sm"
             style={{ background: SURFACE, color: TEXT_PRIMARY, border: `1px solid ${DIVIDER}` }}
           />
-          <button onClick={onSubmitComment} disabled={isPending || !draft.trim()} className="px-4 py-2.5 rounded-full text-sm font-bold disabled:opacity-50 flex-shrink-0" style={{ background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)", color: BG }}>
+          <button onClick={onSubmitComment} disabled={isPending || !draft.trim()} className="px-4 py-2.5 rounded-full text-sm font-bold disabled:opacity-50 flex-shrink-0" style={{ background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)", color: TEXT_PRIMARY }}>
             등록
           </button>
         </div>
       ) : (
-        <div className="fixed bottom-0 left-0 right-0 px-4 py-3 flex items-center gap-3" style={{ background: "rgba(11,17,32,0.97)", borderTop: "1px solid rgba(var(--gold-dark-rgb),0.15)", backdropFilter: "blur(10px)" }}>
+        <div className="fixed bottom-0 left-0 right-0 px-4 py-3 flex items-center gap-3" style={{ background: CARD, borderTop: `1px solid ${BORDER}` }}>
           <p className="text-xs flex-1 font-medium" style={{ color: TEXT_SECONDARY }}>댓글을 남기려면 로그인하세요</p>
-          <Link href="/login" className="px-4 py-2.5 rounded-xl text-xs font-bold flex-shrink-0" style={{ background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)", color: BG }}>
+          <Link href={loginHref(`/post/${post.id}`)} className="px-4 py-2.5 rounded-xl text-xs font-bold flex-shrink-0" style={{ background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)", color: TEXT_PRIMARY }}>
             로그인 →
           </Link>
         </div>

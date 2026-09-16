@@ -5,7 +5,9 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { createClient } from "@/lib/supabase/client";
 import { getEventData, submitEventEntry } from "./actions";
-import { EVENT_CONDITION, getCurrentEventId, PRIZE_TABLE } from "@/lib/event-config";
+import { EVENT_CONDITION, PRIZE_TABLE } from "@/lib/event-config";
+import { loginHref } from "@/lib/auth-navigation";
+import EventStatus, { useEventState } from "./event-status";
 import { GOLD, BG, CARD, BORDER, TEXT_PRIMARY, TEXT_BODY, TEXT_SECONDARY, TEXT_MUTED, SURFACE } from "./post-card";
 
 type DrawInfo = {
@@ -66,6 +68,7 @@ function NumberBall({
       type="button"
       onClick={onClick}
       disabled={disabled}
+      aria-pressed={onClick ? selected : undefined}
       className="flex items-center justify-center rounded-full font-bold text-xs transition-all active:scale-95"
       style={{
         width: 36,
@@ -77,7 +80,7 @@ function NumberBall({
           : selected
           ? "rgba(var(--gold-dark-rgb),0.85)"
           : SURFACE,
-        color: isMatch || selected ? BG : TEXT_SECONDARY,
+        color: isMatch || selected ? TEXT_PRIMARY : TEXT_SECONDARY,
         border: winning && !selected
           ? "2px solid rgba(var(--gold-dark-rgb),0.6)"
           : selected
@@ -92,34 +95,8 @@ function NumberBall({
   );
 }
 
-/** 일요일 오후 7시 KST → 방문자 현지 시간 자동 변환 */
-function EventLocalDrawTime() {
-  const [localStr, setLocalStr] = useState<string | null>(null);
-  useEffect(() => {
-    const tzOffsetMin = -new Date().getTimezoneOffset();
-    if (tzOffsetMin === 9 * 60) return; // KST면 표시 불필요
-    const now = new Date();
-    const day = now.getDay();
-    const daysUntil = day === 0 ? 7 : 7 - day;
-    const nextSun = new Date(now);
-    nextSun.setDate(now.getDate() + daysUntil);
-    nextSun.setUTCHours(10, 0, 0, 0); // 10:00 UTC = 19:00 KST
-    setLocalStr(nextSun.toLocaleString([], {
-      weekday: "short", hour: "2-digit", minute: "2-digit", timeZoneName: "short",
-    }));
-  }, []);
-  if (!localStr) return null;
-  return (
-    <p className="text-[10px] mt-1.5" style={{ color: TEXT_MUTED }}>
-      📍 현지 시간 기준: {localStr}
-    </p>
-  );
-}
-
-// ── 이벤트 탭 다국어 라벨 ────────────────────────────────────
 const EVENT_LABELS = {
   ko: {
-    eventBadge: "2026년 6월 이벤트",
     eventTitle: "번호 6개 선택 — 기프트콘 증정!",
     eventDesc: "1~45 중 6개를 선택하세요. 3개 이상 일치하면 기프트콘을 드립니다.",
     drawSchedule: "🔗 매주 일요일 오후 7시, 비트코인 블록 해시로 자동 추첨됩니다.",
@@ -149,7 +126,6 @@ const EVENT_LABELS = {
     submitting: "제출 중...",
   },
   en: {
-    eventBadge: "June 2026 Event",
     eventTitle: "Pick 6 Numbers — Win a Gift Voucher!",
     eventDesc: "Choose 6 numbers from 1–45. Match 3 or more to win a gift voucher.",
     drawSchedule: "🔗 Draw every Sunday at 7 PM KST via Bitcoin block hash.",
@@ -179,7 +155,6 @@ const EVENT_LABELS = {
     submitting: "Submitting...",
   },
   ja: {
-    eventBadge: "2026年6月イベント",
     eventTitle: "6つの番号を選択 — ギフト券プレゼント!",
     eventDesc: "1〜45の中から6つを選んでください。3つ以上一致でギフト券をプレゼント。",
     drawSchedule: "🔗 毎週日曜日 午後7時（KST）にビットコインブロックハッシュで自動抽選。",
@@ -209,7 +184,6 @@ const EVENT_LABELS = {
     submitting: "送信中...",
   },
   zh: {
-    eventBadge: "2026年6月活动",
     eventTitle: "选择6个号码 — 赢取礼品券!",
     eventDesc: "从1~45中选择6个号码，匹配3个或以上即可获得礼品券。",
     drawSchedule: "🔗 每周日晚7点（KST），通过比特币区块哈希自动抽签。",
@@ -239,7 +213,7 @@ const EVENT_LABELS = {
     submitting: "提交中...",
   },
   es: {
-    eventBadge: "Evento de junio 2026", eventTitle: "¡Elige 6 números — Gana un vale!", eventDesc: "Elige 6 números del 1 al 45. Acierta 3 o más para ganar un vale.",
+    eventTitle: "¡Elige 6 números — Gana un vale!", eventDesc: "Elige 6 números del 1 al 45. Acierta 3 o más para ganar un vale.",
     drawSchedule: "🔗 Sorteo automático cada domingo a las 7 PM KST mediante Bitcoin block hash.",
     match3: "3 aciertos", match4: "4 aciertos", match56: "5 aciertos", prize3: "$30", prize4: "$200", prize56: "$1,000",
     loginRequired: "Inicia sesión para participar", loginDesc: "Por favor inicia sesión para unirte al evento.", loginBtn: "Iniciar sesión / Registrarse →",
@@ -249,7 +223,7 @@ const EVENT_LABELS = {
     pickTitle: (p: number) => `🎯 Elegir números (${p}/6)`, reset: "Reiniciar", moreNeeded: (n: number) => `${n} más`, moreNeededBtn: (n: number) => `Elige ${n} número${n !== 1 ? "s" : ""} más`, submit: "🎰 Enviar números", submitting: "Enviando...",
   },
   de: {
-    eventBadge: "Juni 2026 Event", eventTitle: "6 Zahlen wählen — Geschenkkarte gewinnen!", eventDesc: "Wähle 6 Zahlen von 1–45. Triff 3 oder mehr für eine Geschenkkarte.",
+    eventTitle: "6 Zahlen wählen — Geschenkkarte gewinnen!", eventDesc: "Wähle 6 Zahlen von 1–45. Triff 3 oder mehr für eine Geschenkkarte.",
     drawSchedule: "🔗 Automatische Ziehung jeden Sonntag um 19 Uhr KST per Bitcoin Block Hash.",
     match3: "3 Treffer", match4: "4 Treffer", match56: "5 Treffer", prize3: "$30", prize4: "$200", prize56: "$1,000",
     loginRequired: "Anmelden zum Mitmachen", loginDesc: "Bitte melde dich an, um am Event teilzunehmen.", loginBtn: "Anmelden / Registrieren →",
@@ -259,7 +233,7 @@ const EVENT_LABELS = {
     pickTitle: (p: number) => `🎯 Zahlen wählen (${p}/6)`, reset: "Zurücksetzen", moreNeeded: (n: number) => `Noch ${n}`, moreNeededBtn: (n: number) => `Wähle noch ${n} Zahl${n !== 1 ? "en" : ""}`, submit: "🎰 Zahlen einreichen", submitting: "Wird eingereicht...",
   },
   pt: {
-    eventBadge: "Evento junho 2026", eventTitle: "Escolha 6 números — Ganhe um vale!", eventDesc: "Escolha 6 números de 1 a 45. Acerte 3 ou mais para ganhar um vale.",
+    eventTitle: "Escolha 6 números — Ganhe um vale!", eventDesc: "Escolha 6 números de 1 a 45. Acerte 3 ou mais para ganhar um vale.",
     drawSchedule: "🔗 Sorteio automático todo domingo às 19h KST via hash do bloco Bitcoin.",
     match3: "3 acertos", match4: "4 acertos", match56: "5 acertos", prize3: "$30", prize4: "$200", prize56: "$1,000",
     loginRequired: "Login para participar", loginDesc: "Faça login para participar do evento.", loginBtn: "Entrar / Cadastrar →",
@@ -269,7 +243,7 @@ const EVENT_LABELS = {
     pickTitle: (p: number) => `🎯 Escolher números (${p}/6)`, reset: "Resetar", moreNeeded: (n: number) => `Mais ${n}`, moreNeededBtn: (n: number) => `Escolha mais ${n} número${n !== 1 ? "s" : ""}`, submit: "🎰 Enviar números", submitting: "Enviando...",
   },
   id: {
-    eventBadge: "Event Juni 2026", eventTitle: "Pilih 6 Angka — Menangkan Voucher!", eventDesc: "Pilih 6 angka dari 1–45. Cocokkan 3 atau lebih untuk menang.",
+    eventTitle: "Pilih 6 Angka — Menangkan Voucher!", eventDesc: "Pilih 6 angka dari 1–45. Cocokkan 3 atau lebih untuk menang.",
     drawSchedule: "🔗 Undian otomatis setiap Minggu jam 7 malam KST via Bitcoin block hash.",
     match3: "3 cocok", match4: "4 cocok", match56: "5 cocok", prize3: "$30", prize4: "$200", prize56: "$1,000",
     loginRequired: "Login untuk berpartisipasi", loginDesc: "Silakan login untuk bergabung event.", loginBtn: "Masuk / Daftar →",
@@ -279,7 +253,7 @@ const EVENT_LABELS = {
     pickTitle: (p: number) => `🎯 Pilih Angka (${p}/6)`, reset: "Reset", moreNeeded: (n: number) => `${n} lagi`, moreNeededBtn: (n: number) => `Pilih ${n} angka lagi`, submit: "🎰 Kirim Angka", submitting: "Mengirim...",
   },
   ms: {
-    eventBadge: "Acara Jun 2026", eventTitle: "Pilih 6 Nombor — Menang Baucar!", eventDesc: "Pilih 6 nombor dari 1–45. Padankan 3 atau lebih untuk menang.",
+    eventTitle: "Pilih 6 Nombor — Menang Baucar!", eventDesc: "Pilih 6 nombor dari 1–45. Padankan 3 atau lebih untuk menang.",
     drawSchedule: "🔗 Cabutan automatik setiap Ahad jam 7 petang KST melalui Bitcoin block hash.",
     match3: "3 padanan", match4: "4 padanan", match56: "5 padanan", prize3: "$30", prize4: "$200", prize56: "$1,000",
     loginRequired: "Log masuk untuk sertai", loginDesc: "Sila log masuk untuk menyertai acara.", loginBtn: "Log masuk / Daftar →",
@@ -289,7 +263,7 @@ const EVENT_LABELS = {
     pickTitle: (p: number) => `🎯 Pilih Nombor (${p}/6)`, reset: "Set semula", moreNeeded: (n: number) => `${n} lagi`, moreNeededBtn: (n: number) => `Pilih ${n} nombor lagi`, submit: "🎰 Hantar Nombor", submitting: "Menghantar...",
   },
   vi: {
-    eventBadge: "Sự kiện tháng 6/2026", eventTitle: "Chọn 6 số — Nhận thẻ quà tặng!", eventDesc: "Chọn 6 số từ 1–45. Khớp 3 số trở lên để thắng.",
+    eventTitle: "Chọn 6 số — Nhận thẻ quà tặng!", eventDesc: "Chọn 6 số từ 1–45. Khớp 3 số trở lên để thắng.",
     drawSchedule: "🔗 Quay thưởng tự động mỗi Chủ nhật lúc 7 giờ tối KST qua Bitcoin block hash.",
     match3: "3 khớp", match4: "4 khớp", match56: "5 khớp", prize3: "$30", prize4: "$200", prize56: "$1,000",
     loginRequired: "Đăng nhập để tham gia", loginDesc: "Vui lòng đăng nhập để tham gia sự kiện.", loginBtn: "Đăng nhập / Đăng ký →",
@@ -299,7 +273,7 @@ const EVENT_LABELS = {
     pickTitle: (p: number) => `🎯 Chọn số (${p}/6)`, reset: "Đặt lại", moreNeeded: (n: number) => `Còn ${n}`, moreNeededBtn: (n: number) => `Chọn thêm ${n} số`, submit: "🎰 Gửi số", submitting: "Đang gửi...",
   },
   tr: {
-    eventBadge: "Haziran 2026 Etkinliği", eventTitle: "6 Numara Seç — Hediye Kartı Kazan!", eventDesc: "1–45 arasından 6 numara seç. 3 veya fazlası eşleşirse kazanırsın.",
+    eventTitle: "6 Numara Seç — Hediye Kartı Kazan!", eventDesc: "1–45 arasından 6 numara seç. 3 veya fazlası eşleşirse kazanırsın.",
     drawSchedule: "🔗 Her Pazar saat 19:00 KST'de Bitcoin block hash ile otomatik çekiliş.",
     match3: "3 eşleşme", match4: "4 eşleşme", match56: "5 eşleşme", prize3: "$30", prize4: "$200", prize56: "$1,000",
     loginRequired: "Katılmak için giriş yap", loginDesc: "Etkinliğe katılmak için lütfen giriş yapın.", loginBtn: "Giriş / Kayıt →",
@@ -333,24 +307,41 @@ export default function EventTab({
   const [submitError, setSubmitError] = useState<string | null>(null);
   const [submitted, setSubmitted] = useState(false);
   const [drawInfo, setDrawInfo] = useState<DrawInfo>(null);
+  const [loadingData, setLoadingData] = useState(false);
+  const eventState = useEventState();
+  const entriesOpen = !!eventState?.isOpen && !drawInfo;
 
   // 로그인 유저 데이터를 초기화 후에도 새로 불러올 수 있게
   useEffect(() => {
-    if (isLoggedIn && !initialData) {
-      getEventData().then(setData);
+    if (!eventState?.eventId) return;
+    let active = true;
+    setData(null);
+    setPicked([]);
+    setSubmitted(false);
+    setSubmitError(null);
+    if (isLoggedIn) {
+      setLoadingData(true);
+      getEventData().then((fresh) => { if (active) setData(fresh); })
+        .catch(() => { if (active) setSubmitError(lang === "ko" ? "참여 정보를 불러오지 못했습니다. 새로고침 후 다시 시도해주세요." : "Could not load your entry. Refresh and try again."); })
+        .finally(() => { if (active) setLoadingData(false); });
     }
-  }, [isLoggedIn, initialData]);
+    return () => { active = false; };
+  }, [isLoggedIn, eventState?.eventId]);
 
   // 이번 주 추첨 결과 fetch (공개 — 비로그인도 조회 가능)
   useEffect(() => {
+    if (!eventState?.eventId) return;
+    let active = true;
+    setDrawInfo(null);
     const supabase = createClient();
     supabase
       .from("event_draws")
       .select("block_height,block_hash,winning_numbers,explorer_url,drawn_at")
-      .eq("event_id", getCurrentEventId())
+      .eq("event_id", eventState.eventId)
       .maybeSingle()
-      .then(({ data }) => { if (data) setDrawInfo(data as DrawInfo); });
-  }, []);
+      .then(({ data }) => { if (active) setDrawInfo(data as DrawInfo); });
+    return () => { active = false; };
+  }, [eventState?.eventId, eventState?.isOpen]);
 
   const myPostCount = data?.myPostCount ?? 0;
   const myLikeCount = data?.myLikeCount ?? 0;
@@ -371,7 +362,7 @@ export default function EventTab({
   }
 
   function handleSubmit() {
-    if (picked.length !== 6) return;
+    if (picked.length !== 6 || !entriesOpen) return;
     setSubmitError(null);
     startTransition(async () => {
       const res = await submitEventEntry(picked);
@@ -402,6 +393,8 @@ export default function EventTab({
 
   return (
     <div className="px-3 lg:px-0 space-y-4">
+      {loadingData && <p role="status" className="text-sm text-muted-foreground">{lang === "ko" ? "참여 정보 불러오는 중…" : "Loading your entry…"}</p>}
+      {submitError && <p role="alert" className="text-sm text-destructive">{submitError}</p>}
 
       {/* ── 이벤트 헤더 카드 ── */}
       <div
@@ -416,7 +409,7 @@ export default function EventTab({
           <div className="flex items-center gap-2 mb-2">
             <span className="text-xl">🎰</span>
             <span className="text-xs font-black px-2 py-0.5 rounded-full" style={{ background: "rgba(var(--gold-dark-rgb),0.15)", color: GOLD }}>
-              {EL.eventBadge}
+              {eventState?.eventId ?? "…"}
             </span>
           </div>
           <h2 className="text-base font-bold mb-1" style={{ color: TEXT_PRIMARY }}>
@@ -447,16 +440,13 @@ export default function EventTab({
             className="mt-3 px-3 py-2.5 rounded-xl"
             style={{ background: "rgba(var(--gold-dark-rgb),0.06)", border: "1px solid rgba(var(--gold-dark-rgb),0.15)" }}
           >
-            <p className="text-[11px] leading-relaxed font-medium" style={{ color: TEXT_SECONDARY }}>
-              {EL.drawSchedule}
-            </p>
-            <EventLocalDrawTime />
+            <EventStatus lang={lang} />
           </div>
         </div>
       </div>
 
       {/* ── 비로그인 ── */}
-      {!isLoggedIn && (
+      {!isLoggedIn && entriesOpen && (
         <div
           className="rounded-2xl p-6 text-center"
           style={{ background: CARD, border: `1px solid ${BORDER}` }}
@@ -467,9 +457,9 @@ export default function EventTab({
             {EL.loginDesc}
           </p>
           <Link
-            href="/login"
+            href={loginHref(`${lang === "ko" ? "/" : `/${lang}`}?tab=event`)}
             className="inline-block px-5 py-2.5 rounded-xl text-sm font-bold"
-            style={{ background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)", color: BG }}
+            style={{ background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)", color: TEXT_PRIMARY }}
           >
             {EL.loginBtn}
           </Link>
@@ -477,7 +467,7 @@ export default function EventTab({
       )}
 
       {/* ── 로그인 + 조건 미충족 ── */}
-      {isLoggedIn && !isEligible && !myEntry && (
+      {isLoggedIn && !loadingData && entriesOpen && !isEligible && !myEntry && (
         <div
           className="rounded-2xl p-5"
           style={{ background: CARD, border: `1px solid ${BORDER}` }}
@@ -518,7 +508,7 @@ export default function EventTab({
                 {prize && (
                   <span
                     className="ml-2 text-xs px-2 py-0.5 rounded-full font-black"
-                    style={{ background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)", color: BG }}
+                    style={{ background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)", color: TEXT_PRIMARY }}
                   >
                     {prize}
                   </span>
@@ -590,7 +580,7 @@ export default function EventTab({
                   {EL.pendingDesc}
                 </p>
                 <p className="text-[10px] mt-2" style={{ color: TEXT_MUTED }}>
-                  🔗 Draw: Bitcoin block hash · Every Sunday 7 PM KST
+                  {EL.pendingDesc}
                 </p>
               </div>
             </>
@@ -599,7 +589,7 @@ export default function EventTab({
       )}
 
       {/* ── 조건 충족 + 미참여 → 번호 선택 ── */}
-      {isLoggedIn && isEligible && !myEntry && !submitted && (
+      {isLoggedIn && entriesOpen && isEligible && !myEntry && !submitted && (
         <div
           className="rounded-2xl p-5"
           style={{ background: CARD, border: `1px solid ${BORDER}` }}
@@ -653,10 +643,6 @@ export default function EventTab({
             </div>
           )}
 
-          {submitError && (
-            <p className="text-xs text-red-400 mb-3 text-center">{submitError}</p>
-          )}
-
           <button
             onClick={handleSubmit}
             disabled={picked.length !== 6 || isPending}
@@ -665,7 +651,7 @@ export default function EventTab({
               background: picked.length === 6
                 ? "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)"
                 : SURFACE,
-              color: picked.length === 6 ? BG : TEXT_MUTED,
+              color: picked.length === 6 ? TEXT_PRIMARY : TEXT_MUTED,
             }}
           >
             {isPending ? EL.submitting : picked.length === 6 ? EL.submit : EL.moreNeededBtn(6 - picked.length)}

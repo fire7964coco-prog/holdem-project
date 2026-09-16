@@ -8,7 +8,7 @@
  *   - System fallback         : 폰트 도착 전 자연스러운 페이크
  *
  * 컬러 토큰 (HSL): 커뮤니티 피드와 통일된 따뜻한 크림 + 진한 포레스트 그린 + 24K 골드.
- * 모든 텍스트는 WCAG AA 대비(>= 4.5:1) 충족 — 라이트하우스 a11y 100점 가이드.
+ * 밝은 면의 정보성 골드 글자는 primary-ink로 분리한다. primary는 버튼 면·장식용.
  */
 
 @theme inline {
@@ -29,6 +29,7 @@
   --color-popover: hsl(var(--card));
   --color-popover-foreground: hsl(var(--card-foreground));
   --color-primary: hsl(var(--primary));
+  --color-primary-ink: hsl(var(--primary-ink));
   --color-primary-foreground: hsl(var(--primary-foreground));
   --color-secondary: hsl(var(--secondary));
   --color-secondary-foreground: hsl(var(--secondary-foreground));
@@ -61,6 +62,8 @@
 
   /* ── 프라이머리: 24K 골드 (밝은 배경용으로 채도 약간 낮춤) ── */
   --primary: 43 65% 44%;
+  /* 밝은 배경 위 정보성 글자용 골드. 버튼 면의 primary·다크 표면 gold와 구분. */
+  --primary-ink: 43 78% 26%;
   --primary-foreground: 152 75% 4%;
 
   /* ── 세컨더리: 따뜻한 탄(tan) ── */
@@ -115,7 +118,7 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-serif tracking-tight text-primary;
+    @apply font-serif tracking-tight text-primary-ink;
     font-weight: 700;
     text-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
     letter-spacing: -0.01em;
@@ -123,7 +126,7 @@
 
   /* 포커스 링: 키보드 사용자에게만 보이고 디자인 깨지 않음 */
   :focus-visible {
-    outline: 2px solid hsl(var(--primary));
+    outline: 2px solid hsl(var(--primary-ink));
     outline-offset: 2px;
     border-radius: 4px;
   }
@@ -341,6 +344,7 @@
   --card: 156 22% 12%;
   --card-foreground: 40 30% 94%;
   --primary: 43 80% 62%;
+  --primary-ink: 43 80% 62%;
   --primary-foreground: 156 60% 6%;
   --secondary: 156 16% 17%;
   --secondary-foreground: 40 30% 94%;

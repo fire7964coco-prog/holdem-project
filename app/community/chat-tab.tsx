@@ -1,19 +1,12 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { createClient } from "@/lib/supabase/client";
 import { BG, BORDER, CARD, FLAG, GOLD, TEXT_PRIMARY, TEXT_BODY, TEXT_SECONDARY, TEXT_MUTED, SURFACE } from "./post-card";
 import type { CurrentUser } from "./community-client";
-
-interface ChatMessage {
-  id: string;
-  user_id: string;
-  nickname: string;
-  language: string;
-  content: string;
-  created_at: string;
-}
+import { loginHref } from "@/lib/auth-navigation";
+import { mergeChatMessages, type ChatMessage } from "@/lib/chat-messages";
 
 const ROOM = "global";
 const MAX_LEN = 200;
@@ -168,21 +161,43 @@ export default function ChatTab({
   const [input, setInput] = useState("");
   const [sending, setSending] = useState(false);
   const [sendError, setSendError] = useState<string | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [loadingOlder, setLoadingOlder] = useState(false);
+  const [hasOlder, setHasOlder] = useState(false);
+  const [loadError, setLoadError] = useState(false);
+  const [loadAttempt, setLoadAttempt] = useState(0);
+  const [unread, setUnread] = useState(false);
+  const scrollerRef = useRef<HTMLDivElement>(null);
+  const shouldScrollRef = useRef(true);
+  const historyScrollRef = useRef<{ height: number; top: number } | null>(null);
   const bottomRef = useRef<HTMLDivElement>(null);
   const supabaseRef = useRef(createClient());
 
   // 초기 메시지 로드
   useEffect(() => {
+    let cancelled = false;
+    setLoading(true);
+    setLoadError(false);
     (async () => {
-      const { data } = await supabaseRef.current
+      try {
+      const { data, error } = await supabaseRef.current
         .from("chat_messages")
         .select("id, user_id, nickname, language, content, created_at")
         .eq("room", ROOM)
-        .order("created_at", { ascending: true })
-        .limit(LOAD_COUNT);
-      if (data) setMessages(data);
+        .order("created_at", { ascending: false })
+        .order("id", { ascending: false })
+        .limit(LOAD_COUNT + 1);
+      if (cancelled) return;
+      setLoadError(!!error);
+      if (data) {
+        setHasOlder(data.length > LOAD_COUNT);
+        setMessages((previous) => mergeChatMessages(previous, data.slice(0, LOAD_COUNT)));
+      }
+      } catch { if (!cancelled) setLoadError(true); }
+      finally { if (!cancelled) setLoading(false); }
     })();
-  }, []);
+    return () => { cancelled = true; };
+  }, [loadAttempt]);
 
   // Supabase Realtime 구독
   useEffect(() => {
@@ -207,7 +222,10 @@ export default function ChatTab({
           filter: `room=eq.${ROOM}`,
         },
         (payload) => {
-          setMessages((prev) => [...prev, payload.new as ChatMessage]);
+          const scroller = scrollerRef.current;
+          shouldScrollRef.current = !scroller || scroller.scrollHeight - scroller.scrollTop - scroller.clientHeight < 80;
+          if (!shouldScrollRef.current) setUnread(true);
+          setMessages((prev) => mergeChatMessages(prev, [payload.new as ChatMessage]));
         }
       )
       .subscribe();
@@ -217,28 +235,67 @@ export default function ChatTab({
     };
   }, []);
 
-  // 새 메시지 도착 시 자동 스크롤
-  useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+  // 과거 대화를 읽는 동안에는 위치를 보존하고, 최신 위치에 있을 때만 따라간다.
+  useLayoutEffect(() => {
+    const scroller = scrollerRef.current;
+    if (!scroller) return;
+    if (historyScrollRef.current) {
+      scroller.scrollTop = historyScrollRef.current.top + scroller.scrollHeight - historyScrollRef.current.height;
+      historyScrollRef.current = null;
+    } else if (shouldScrollRef.current) {
+      scroller.scrollTop = scroller.scrollHeight;
+    }
   }, [messages]);
+
+  async function loadOlder() {
+    const oldest = messages[0];
+    if (!oldest || loadingOlder) return;
+    setLoadingOlder(true);
+    setLoadError(false);
+    try {
+    const { data, error } = await supabaseRef.current.from("chat_messages")
+      .select("id, user_id, nickname, language, content, created_at")
+      .eq("room", ROOM)
+      .or(`created_at.lt.${oldest.created_at},and(created_at.eq.${oldest.created_at},id.lt.${oldest.id})`)
+      .order("created_at", { ascending: false })
+      .order("id", { ascending: false })
+      .limit(LOAD_COUNT + 1);
+    setLoadError(!!error);
+    if (data) {
+      const scroller = scrollerRef.current;
+      if (scroller) historyScrollRef.current = { height: scroller.scrollHeight, top: scroller.scrollTop };
+      setHasOlder(data.length > LOAD_COUNT);
+      setMessages((previous) => mergeChatMessages(previous, data.slice(0, LOAD_COUNT)));
+    }
+    } catch { setLoadError(true); }
+    finally { setLoadingOlder(false); }
+  }
 
   async function handleSend() {
     const content = input.trim().slice(0, MAX_LEN);
     if (!content || !currentUser || sending) return;
-    setInput("");
     setSending(true);
     setSendError(null);
 
-    const { error } = await supabaseRef.current.from("chat_messages").insert({
+    try {
+    const { data, error } = await supabaseRef.current.from("chat_messages").insert({
       room: ROOM,
       user_id: currentUser.id,
       nickname: currentUser.nickname,
       language: currentUser.language,
       content,
-    });
+    }).select("id, user_id, nickname, language, content, created_at").single();
 
-    if (error) setSendError(error.message);
-    setSending(false);
+    if (error) setSendError(lang === "ko" ? "전송하지 못했습니다. 입력 내용을 확인하고 다시 전송해주세요." : "Message not sent. Your draft is saved; please try again.");
+    else {
+      setInput("");
+      shouldScrollRef.current = true;
+      setUnread(false);
+      if (data) setMessages((previous) => mergeChatMessages(previous, [data]));
+    }
+    } catch {
+      setSendError(lang === "ko" ? "연결을 확인하고 다시 전송해주세요. 입력 내용은 보존됩니다." : "Check your connection and retry. Your draft is saved.");
+    } finally { setSending(false); }
   }
 
   return (
@@ -293,13 +350,21 @@ export default function ChatTab({
 
       {/* 메시지 목록 */}
       <div
+        ref={scrollerRef}
         className="flex-1 overflow-y-auto px-3 py-3 space-y-2"
+        onScroll={(event) => {
+          const element = event.currentTarget;
+          if (element.scrollHeight - element.scrollTop - element.clientHeight < 80) setUnread(false);
+        }}
         style={{
           scrollbarWidth: "thin",
           scrollbarColor: "rgba(var(--gold-dark-rgb),0.15) transparent",
         }}
       >
-        {messages.length === 0 ? (
+        {hasOlder && <button type="button" onClick={loadOlder} disabled={loadingOlder} className="block min-h-11 w-full rounded-lg border border-border text-sm font-semibold disabled:opacity-50">{loadingOlder ? "…" : lang === "ko" ? "이전 메시지 더 보기" : "Load older messages"}</button>}
+        {loadError && <div role="alert" className="text-center text-sm text-destructive"><p>{lang === "ko" ? "메시지를 불러오지 못했습니다." : "Messages could not be loaded."}</p><button type="button" className="min-h-11 underline" onClick={() => hasOlder ? loadOlder() : setLoadAttempt((count) => count + 1)}>{lang === "ko" ? "다시 시도" : "Retry"}</button></div>}
+        {loading && <p role="status" className="py-4 text-center text-sm text-muted-foreground">{lang === "ko" ? "최근 메시지 불러오는 중…" : "Loading recent messages…"}</p>}
+        {!loading && !loadError && messages.length === 0 ? (
           <div className="flex items-center justify-center h-full text-sm text-center px-4 font-medium" style={{ color: TEXT_SECONDARY }}>
             {L.empty}
           </div>
@@ -344,6 +409,8 @@ export default function ChatTab({
         <div ref={bottomRef} />
       </div>
 
+      {unread && <button type="button" className="min-h-11 text-sm font-semibold text-primary" onClick={() => { if (scrollerRef.current) scrollerRef.current.scrollTop = scrollerRef.current.scrollHeight; setUnread(false); }}>{lang === "ko" ? "새 메시지 보기 ↓" : "New messages ↓"}</button>}
+
       {/* 입력 영역 */}
       <div
         className="flex-shrink-0 px-3 py-2.5"
@@ -353,10 +420,11 @@ export default function ChatTab({
           <>
             <div className="flex gap-2 items-center">
               <input
+                aria-label={L.placeholder}
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={(e) => {
-                  if (e.key === "Enter" && !e.shiftKey) {
+                  if (e.key === "Enter" && !e.shiftKey && !e.nativeEvent.isComposing && e.keyCode !== 229) {
                     e.preventDefault();
                     handleSend();
                   }
@@ -364,7 +432,7 @@ export default function ChatTab({
                 placeholder={L.placeholder}
                 maxLength={MAX_LEN}
                 disabled={sending}
-                className="flex-1 px-3 py-2 rounded-xl text-sm outline-none"
+                className="min-w-0 flex-1 px-3 py-2 rounded-xl text-sm"
                 style={{
                   background: SURFACE,
                   color: TEXT_PRIMARY,
@@ -377,7 +445,7 @@ export default function ChatTab({
                 className="px-4 py-2 rounded-xl text-sm font-bold flex-shrink-0 disabled:opacity-40 transition-opacity"
                 style={{
                   background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)",
-                  color: BG,
+                  color: TEXT_PRIMARY,
                 }}
               >
                 {L.send}
@@ -385,8 +453,9 @@ export default function ChatTab({
             </div>
             {sendError && (
               <p
+                role="alert"
                 className="text-[11px] mt-1"
-                style={{ color: "#f87171" }}
+                style={{ color: "hsl(var(--destructive))" }}
               >
                 {sendError}
               </p>
@@ -401,11 +470,11 @@ export default function ChatTab({
               {L.loginCta}
             </span>
             <Link
-              href="/login"
+              href={loginHref(`${lang === "ko" ? "/" : `/${lang}`}?tab=chat`)}
               className="text-sm font-bold px-3 py-1.5 rounded-lg flex-shrink-0"
               style={{
                 background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)",
-                color: BG,
+                color: TEXT_PRIMARY,
               }}
             >
               {L.loginBtn}

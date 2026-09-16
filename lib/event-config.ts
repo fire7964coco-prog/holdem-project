@@ -41,7 +41,49 @@ export const EVENT_CONDITION = {
 export const DRAW_SCHEDULE = {
   cronUtc: "0 10 * * 0",
   displayKST: "매주 일요일 오후 7시",
+  utcHour: 10,
 };
+
+/** 기존 주간 접수 동작. 운영 중단 시 이 설정을 바꾸면 안내와 서버 접수가 함께 닫힌다. */
+export const EVENT_OPERATION = { acceptingEntries: true };
+
+/** 회차는 UTC ISO 주차를 유지한다. 일요일 추첨 후 다음 월요일 00:00 UTC까지 접수 마감. */
+export function getEventState(now: Date) {
+  const monday = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()));
+  monday.setUTCDate(monday.getUTCDate() - ((monday.getUTCDay() + 6) % 7));
+  const draw = new Date(monday);
+  draw.setUTCDate(draw.getUTCDate() + 6);
+  draw.setUTCHours(DRAW_SCHEDULE.utcHour, 0, 0, 0);
+  const nextOpen = new Date(monday);
+  nextOpen.setUTCDate(nextOpen.getUTCDate() + 7);
+  return {
+    eventId: getIsoWeekId(now),
+    drawAt: draw.toISOString(),
+    nextOpenAt: nextOpen.toISOString(),
+    isOpen: EVENT_OPERATION.acceptingEntries && now.getTime() < draw.getTime(),
+    isPaused: !EVENT_OPERATION.acceptingEntries,
+  };
+}
+
+const EVENT_STATUS_LABELS: Record<string, { open: string; closed: string; paused: string; draw: string; next: string; round: string; conditions: (posts: number, likes: number) => string }> = {
+  ko: { open: "접수 중", closed: "이번 회차 접수 마감", paused: "이벤트 준비 중", draw: "추첨 예정", next: "다음 회차 접수", round: "회차", conditions: (p, l) => `로그인 · 커뮤니티 글 ${p}개 작성 · 내 글에 좋아요 ${l}개 받기` },
+  en: { open: "Entries open", closed: "Entries closed", paused: "Coming soon", draw: "Scheduled draw", next: "Next entries open", round: "Round", conditions: (p, l) => `Log in · Write ${p} community post · Receive ${l} like on your posts` },
+  ja: { open: "受付中", closed: "今週の受付終了", paused: "準備中", draw: "抽選予定", next: "次回受付開始", round: "回", conditions: (p, l) => `ログイン・投稿${p}件・自分の投稿にいいね${l}件` },
+  zh: { open: "报名中", closed: "本期报名结束", paused: "准备中", draw: "计划开奖", next: "下期报名", round: "期数", conditions: (p, l) => `登录 · 发帖${p}篇 · 自己的帖子获得${l}个赞` },
+  es: { open: "Inscripciones abiertas", closed: "Inscripciones cerradas", paused: "Próximamente", draw: "Sorteo previsto", next: "Próxima inscripción", round: "Ronda", conditions: (p, l) => `Inicia sesión · Publica ${p} entrada · Recibe ${l} me gusta` },
+  de: { open: "Teilnahme offen", closed: "Teilnahme geschlossen", paused: "Demnächst", draw: "Geplante Ziehung", next: "Nächste Teilnahme", round: "Runde", conditions: (p, l) => `Anmelden · ${p} Beitrag schreiben · ${l} Like erhalten` },
+  pt: { open: "Inscrições abertas", closed: "Inscrições encerradas", paused: "Em breve", draw: "Sorteio previsto", next: "Próxima inscrição", round: "Rodada", conditions: (p, l) => `Entre · Publique ${p} postagem · Receba ${l} curtida` },
+  id: { open: "Pendaftaran dibuka", closed: "Pendaftaran ditutup", paused: "Segera hadir", draw: "Jadwal undian", next: "Pendaftaran berikutnya", round: "Putaran", conditions: (p, l) => `Login · Tulis ${p} postingan · Terima ${l} suka` },
+  ms: { open: "Penyertaan dibuka", closed: "Penyertaan ditutup", paused: "Akan datang", draw: "Jadual cabutan", next: "Penyertaan seterusnya", round: "Pusingan", conditions: (p, l) => `Log masuk · Tulis ${p} siaran · Terima ${l} suka` },
+  vi: { open: "Đang nhận đăng ký", closed: "Đã đóng đăng ký", paused: "Sắp ra mắt", draw: "Lịch quay thưởng", next: "Mở đăng ký tiếp theo", round: "Kỳ", conditions: (p, l) => `Đăng nhập · Viết ${p} bài · Nhận ${l} lượt thích` },
+  tr: { open: "Katılım açık", closed: "Katılım kapandı", paused: "Yakında", draw: "Planlanan çekiliş", next: "Sonraki katılım", round: "Tur", conditions: (p, l) => `Giriş yap · ${p} gönderi yaz · ${l} beğeni al` },
+  hi: { open: "प्रविष्टियाँ खुली हैं", closed: "प्रविष्टियाँ बंद हैं", paused: "जल्द आ रहा है", draw: "निर्धारित ड्रा", next: "अगली प्रविष्टियाँ", round: "राउंड", conditions: (p, l) => `लॉगिन करें · ${p} पोस्ट लिखें · ${l} लाइक पाएँ` },
+  ar: { open: "التسجيل مفتوح", closed: "التسجيل مغلق", paused: "قريبًا", draw: "موعد السحب", next: "التسجيل القادم", round: "الجولة", conditions: (p, l) => `سجّل الدخول · اكتب ${p} منشورًا · احصل على ${l} إعجاب` },
+};
+
+export function getEventLabels(lang: string) {
+  return EVENT_STATUS_LABELS[lang === "zh-hant" ? "zh" : lang] ?? EVENT_STATUS_LABELS.en;
+}
 
 /**
  * 당첨 번호 — DB(event_draws 테이블)에서 fetch됩니다.

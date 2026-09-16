@@ -1,0 +1,57 @@
+{
+  "passed": true,
+  "base": "http://localhost:3100/",
+  "checks": [
+    {
+      "locale": "ko",
+      "width": 390,
+      "calculator": "8 tabs retain state and reset independently; labels and arrow navigation pass"
+    },
+    {
+      "locale": "ko",
+      "width": 390,
+      "quiz": "10 transitions, result and restart focus and header clearance pass"
+    },
+    {
+      "locale": "ko",
+      "width": 390,
+      "hands": "3 columns; no horizontal overflow"
+    },
+    {
+      "locale": "ko",
+      "width": 1440,
+      "calculator": "8 tabs retain state and reset independently; labels and arrow navigation pass"
+    },
+    {
+      "locale": "ko",
+      "width": 1440,
+      "quiz": "10 transitions, result and restart focus and header clearance pass"
+    },
+    {
+      "locale": "ko",
+      "width": 1440,
+      "hands": "4 columns; no horizontal overflow"
+    },
+    {
+      "locale": "en",
+      "width": 390,
+      "calculator": "8 tabs retain state and reset independently; labels and arrow navigation pass"
+    },
+    {
+      "locale": "en",
+      "width": 390,
+      "quiz": "10 transitions, result and restart focus and header clearance pass"
+    },
+    {
+      "locale": "en",
+      "width": 1440,
+      "calculator": "8 tabs retain state and reset independently; labels and arrow navigation pass"
+    },
+    {
+      "locale": "en",
+      "width": 1440,
+      "quiz": "10 transitions, result and restart focus and header clearance pass"
+    }
+  ],
+  "errors": []
+}

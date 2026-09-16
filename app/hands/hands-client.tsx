@@ -3,6 +3,7 @@
 import { SEO } from "@/components/seo";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { Fragment } from "react";
 import { HANDS, FAQS } from "./hands-data";
 
 
@@ -47,7 +48,7 @@ export default function Hands() {
             ⚠ 「텍사스 홀덤 족보」(2,400)는 두 페이지 어디에도 연속 문자열이 없어 비어 있었다 —
               리드 첫 문장에 **1회만** 자연스럽게 넣는다(반복은 §DON'T).
           */}
-          <h1 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-4">
+          <h1 className="text-3xl md:text-4xl font-serif font-bold text-primary-ink mb-4">
             포커 족보 10단계 표 — 강한 순서대로
           </h1>
           {/*
@@ -67,7 +68,7 @@ export default function Hands() {
         <motion.div
           initial={false}
           animate={{ opacity: 1, y: 0 }}
-          className="mb-10 bg-card border border-primary/20 rounded-xl p-5 overflow-x-auto"
+          className="mb-10 bg-card border border-primary/20 rounded-xl p-3 sm:p-5 overflow-x-auto"
         >
           <table className="w-full text-sm">
             <caption className="caption-top text-left text-xs text-muted-foreground pb-3">
@@ -76,20 +77,25 @@ export default function Hands() {
             </caption>
             <thead>
               <tr className="border-b border-border">
-                <th className="text-left py-2 pr-4 text-muted-foreground font-medium">순위</th>
-                <th className="text-left py-2 pr-4 text-muted-foreground font-medium">족보</th>
-                <th className="text-right py-2 pr-4 text-muted-foreground font-medium whitespace-nowrap">확률(7장)</th>
-                <th className="text-left py-2 text-muted-foreground font-medium">설명</th>
+                <th scope="col" className="text-left py-2 pr-2 sm:pr-4 text-muted-foreground font-medium whitespace-nowrap">순위</th>
+                <th scope="col" className="text-left py-2 pr-2 sm:pr-4 text-muted-foreground font-medium">족보</th>
+                <th scope="col" className="text-right py-2 sm:pr-4 text-muted-foreground font-medium whitespace-nowrap">확률(7장)</th>
+                <th scope="col" className="hidden sm:table-cell text-left py-2 text-muted-foreground font-medium">설명</th>
               </tr>
             </thead>
             <tbody>
               {HANDS.map((h) => (
-                <tr key={h.rank} className="border-b border-border/50 hover:bg-background/50 transition-colors">
-                  <td className="py-2 pr-4 font-bold text-primary">{h.rank}위</td>
-                  <td className="py-2 pr-4 font-semibold text-foreground whitespace-nowrap">{h.name.split(" (")[0]}</td>
-                  <td className="py-2 pr-4 text-right font-semibold text-foreground tabular-nums whitespace-nowrap">{h.prob}</td>
-                  <td className="py-2 text-muted-foreground">{h.description.split(". ")[0]}</td>
-                </tr>
+                <Fragment key={h.rank}>
+                  <tr className="sm:border-b border-border/50 hover:bg-background/50 transition-colors">
+                    <td className="pt-3 pb-1 sm:py-2 pr-2 sm:pr-4 font-bold text-primary-ink whitespace-nowrap">{h.rank}위</td>
+                    <th id={`hand-rank-${h.rank}`} scope="row" className="pt-3 pb-1 sm:py-2 pr-2 sm:pr-4 text-left font-semibold text-foreground whitespace-nowrap">{h.name.split(" (")[0]}</th>
+                    <td className="pt-3 pb-1 sm:py-2 sm:pr-4 text-right font-semibold text-foreground tabular-nums whitespace-nowrap">{h.prob}</td>
+                    <td className="hidden sm:table-cell py-2 text-muted-foreground">{h.description.split(". ")[0]}</td>
+                  </tr>
+                  <tr className="sm:hidden border-b border-border/50">
+                    <td colSpan={3} headers={`hand-rank-${h.rank}`} className="pb-3 text-xs leading-relaxed text-muted-foreground">{h.description.split(". ")[0]}</td>
+                  </tr>
+                </Fragment>
               ))}
             </tbody>
           </table>
@@ -118,7 +124,7 @@ export default function Hands() {
               >
                 <div className="flex flex-col items-center md:items-start text-center md:text-left md:w-[46%] md:flex-shrink-0">
                   <h2 className="font-serif font-bold text-foreground leading-snug text-base md:text-lg">
-                    <span className="mr-1.5 font-sans text-xs font-bold tracking-wider text-primary/70">
+                    <span className="mr-1.5 font-sans text-xs font-bold tracking-wider text-primary-ink">
                       {hand.rank}위
                     </span>
                     {ko}
@@ -164,7 +170,7 @@ export default function Hands() {
                   {href && (
                     <>
                       {" "}
-                      <Link href={href} className="text-primary font-semibold hover:underline">
+                      <Link href={href} className="text-primary-ink font-semibold hover:underline">
                         {linkLabel} →
                       </Link>
                     </>
@@ -193,7 +199,7 @@ export default function Hands() {
           */}
           <div className="mb-5 p-4 bg-primary/5 border border-primary/20 rounded-xl">
             <p className="text-sm text-muted-foreground mb-2">📖 표만으로 부족하고 <strong className="text-foreground">순서의 근거</strong>까지 알고 싶다면</p>
-            <Link href="/blog/holdem-hand-rankings" className="text-primary font-bold text-sm hover:underline">
+            <Link href="/blog/holdem-hand-rankings" className="text-primary-ink font-bold text-sm hover:underline">
               → 족보 순서가 왜 이 순서인지 — 7장 기준 확률로 보는 근거
             </Link>
           </div>
@@ -209,7 +215,7 @@ export default function Hands() {
             ].map(({ href, label, desc }) => (
               <Link key={href} href={href}>
                 <div className="bg-card border border-border rounded-lg p-3 hover:border-primary/50 hover:bg-primary/5 transition-all text-center group">
-                  <div className="font-bold text-sm text-foreground group-hover:text-primary transition-colors">{label}</div>
+                  <div className="font-bold text-sm text-foreground group-hover:text-primary-ink transition-colors">{label}</div>
                   <div className="text-xs text-muted-foreground mt-1">{desc}</div>
                 </div>
               </Link>

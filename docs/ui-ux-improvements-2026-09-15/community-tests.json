@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "checks": [
+    "Latest 50 of 75 messages",
+    "Older cursor pagination",
+    "One message per id",
+    "IME Enter blocked",
+    "Failure keeps draft",
+    "Retry appends returned message",
+    "Dialog autofocus",
+    "Dialog focus trap",
+    "Escape and focus return",
+    "Draft kept on modal close"
+  ],
+  "mockedWrites": 2,
+  "realWrites": 0,
+  "chatQueries": [
+    "?select=id%2Cuser_id%2Cnickname%2Clanguage%2Ccontent%2Ccreated_at&room=eq.global&order=created_at.desc%2Cid.desc&limit=51",
+    "?select=id%2Cuser_id%2Cnickname%2Clanguage%2Ccontent%2Ccreated_at&room=eq.global&or=%28created_at.lt.2026-09-15T00%3A26%3A00.000Z%2Cand%28created_at.eq.2026-09-15T00%3A26%3A00.000Z%2Cid.lt.00000000-0000-4000-8000-000000000026%29%29&order=created_at.desc%2Cid.desc&limit=51"
+  ],
+  "scrollerPosition": {
+    "scrollTop": 1629,
+    "scrollHeight": 5068
+  },
+  "errors": []
+}

@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { SEO } from "@/components/seo";
+import { CalculatorWorkspace } from "@/components/calculator-workspace";
 import { Calculator, TrendingUp, Layers, Target, Trophy, BarChart3, Zap } from "lucide-react";
 import { CALCULATOR_FAQ_EN } from "./faq";
 import { pfLookup, PF_STACK_MIN, PF_STACK_MAX, PF_STACK_STEP } from "@/lib/pushfold-data";
@@ -191,6 +192,8 @@ function CardPicker({ selected, max, onToggle, onClear, disabled = [], label }: 
                     onClick={() => !isDis && onToggle(c)}
                     disabled={isDis}
                     title={`${RANKS[rank]}${SUITS[si]}`}
+                    aria-label={`${RANKS[rank]}${SUITS[si]}`}
+                    aria-pressed={isSel}
                     className={`w-8 h-11 sm:w-[30px] sm:h-[38px] rounded-md text-xs font-bold border transition-all
                       ${isSel
                         ? "bg-primary border-primary text-primary-foreground shadow-md shadow-primary/30 scale-105 z-10"
@@ -264,9 +267,9 @@ function OutsCalc() {
     <div className="space-y-6">
       <div className="grid md:grid-cols-2 gap-4">
         <div>
-          <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">Draw type</label>
-          <select value={sel} onChange={e => setSel(Number(e.target.value))}
-            className="w-full px-4 py-3 rounded-xl bg-card border border-border text-foreground text-sm focus:outline-none focus:border-primary">
+          <label htmlFor="outs-draw" className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">Draw type</label>
+          <select id="outs-draw" value={sel} onChange={e => setSel(Number(e.target.value))}
+            className="w-full px-4 py-3 rounded-xl bg-card border border-border text-foreground text-sm focus-visible:outline-2 focus-visible:outline-primary focus-visible:outline-offset-2 focus:border-primary">
             {DRAW_PRESETS.map((p,i) => (
               <option key={i} value={i}>{p.label}{!p.custom ? ` (${p.outs} outs)` : ""}</option>
             ))}
@@ -279,7 +282,7 @@ function OutsCalc() {
           <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">Street</label>
           <div className="grid grid-cols-2 gap-2">
             {(["flop","turn"] as const).map(s => (
-              <button key={s} onClick={() => setStage(s)}
+              <button key={s} onClick={() => setStage(s)} aria-pressed={stage === s}
                 className={`py-3 rounded-xl text-sm font-bold border transition-all ${stage===s ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border text-muted-foreground hover:border-primary/50"}`}>
                 {s==="flop" ? "🃏 After flop" : "🔄 After turn"}
               </button>
@@ -289,10 +292,10 @@ function OutsCalc() {
       </div>
       {preset.custom && (
         <div>
-          <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">
+          <label htmlFor="outs-custom" className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">
             Number of outs: <span className="text-primary text-base">{custom}</span>
           </label>
-          <input type="range" min={1} max={20} value={custom} onChange={e => setCustom(Number(e.target.value))}
+          <input id="outs-custom" type="range" min={1} max={20} value={custom} onChange={e => setCustom(Number(e.target.value))}
             className="w-full accent-primary h-2 rounded-full" />
           <div className="flex justify-between text-xs text-muted-foreground mt-1"><span>1</span><span>5</span><span>10</span><span>15</span><span>20</span></div>
         </div>
@@ -354,14 +357,14 @@ function PotOddsCalc() {
     <div className="space-y-6">
       <div className="grid md:grid-cols-2 gap-4">
         <div>
-          <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">Current pot size</label>
-          <input type="number" value={pot} onChange={e => setPot(Math.max(0,Number(e.target.value)))}
-            className="w-full px-4 py-3 rounded-xl bg-card border border-border text-foreground text-sm focus:outline-none focus:border-primary" step={10} />
+          <label htmlFor="pot-size" className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">Current pot size</label>
+          <input id="pot-size" type="number" value={pot} onChange={e => setPot(Math.max(0,Number(e.target.value)))}
+            className="w-full px-4 py-3 rounded-xl bg-card border border-border text-foreground text-sm focus-visible:outline-2 focus-visible:outline-primary focus-visible:outline-offset-2 focus:border-primary" step={10} />
         </div>
         <div>
-          <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">Your call amount</label>
-          <input type="number" value={call} onChange={e => setCall(Math.max(0,Number(e.target.value)))}
-            className="w-full px-4 py-3 rounded-xl bg-card border border-border text-foreground text-sm focus:outline-none focus:border-primary" step={5} />
+          <label htmlFor="pot-call" className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">Your call amount</label>
+          <input id="pot-call" type="number" value={call} onChange={e => setCall(Math.max(0,Number(e.target.value)))}
+            className="w-full px-4 py-3 rounded-xl bg-card border border-border text-foreground text-sm focus-visible:outline-2 focus-visible:outline-primary focus-visible:outline-offset-2 focus:border-primary" step={5} />
         </div>
       </div>
 
@@ -378,11 +381,11 @@ function PotOddsCalc() {
 
       <div>
         <div className="flex items-center justify-between mb-2">
-          <label className="block text-xs font-bold text-muted-foreground uppercase tracking-wide">
+          <label htmlFor="pot-equity" className="block text-xs font-bold text-muted-foreground uppercase tracking-wide">
             Your hand equity: <span className="text-primary">{eq}%</span>
           </label>
         </div>
-        <input type="range" min={1} max={85} value={eq} onChange={e => setEq(Number(e.target.value))}
+        <input id="pot-equity" type="range" min={1} max={85} value={eq} onChange={e => setEq(Number(e.target.value))}
           className="w-full accent-primary h-2 rounded-full" />
         <div className="flex justify-between text-xs text-muted-foreground mt-1">
           <span>1%</span><span>Gutshot 8.7%</span><span>Flush 19%</span><span>85%</span>
@@ -390,7 +393,7 @@ function PotOddsCalc() {
       </div>
 
       <div>
-        <button onClick={() => setShowImplied(!showImplied)}
+        <button onClick={() => setShowImplied(!showImplied)} aria-expanded={showImplied}
           className="flex items-center gap-2 text-xs font-bold text-primary hover:text-primary/80 transition-colors mb-3">
           <TrendingUp className="w-3.5 h-3.5" />
           Implied odds {showImplied ? "Close ▲" : "Add ▼"}
@@ -399,10 +402,10 @@ function PotOddsCalc() {
           {showImplied && (
             <motion.div initial={{ height:0, opacity:0 }} animate={{ height:"auto", opacity:1 }} exit={{ height:0, opacity:0 }} className="overflow-hidden">
               <div className="pb-4">
-                <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">
+                <label htmlFor="pot-implied" className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">
                   Expected extra winnings (if you hit): <span className="text-blue-400">{implied.toLocaleString()}</span>
                 </label>
-                <input type="range" min={0} max={2000} step={10} value={implied} onChange={e => setImplied(Number(e.target.value))}
+                <input id="pot-implied" type="range" min={0} max={2000} step={10} value={implied} onChange={e => setImplied(Number(e.target.value))}
                   className="w-full h-2 rounded-full" style={{ accentColor: "#60a5fa" }} />
                 <div className="flex justify-between text-xs text-muted-foreground mt-1">
                   <span>None</span><span>1,000</span><span>2,000</span>
@@ -632,14 +635,14 @@ function SPRCalc() {
     <div className="space-y-6">
       <div className="grid md:grid-cols-2 gap-4">
         <div>
-          <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">Effective stack (yours)</label>
-          <input type="number" value={stack} onChange={e => setStack(Math.max(0,Number(e.target.value)))}
-            className="w-full px-4 py-3 rounded-xl bg-card border border-border text-foreground text-sm focus:outline-none focus:border-primary" step={50} />
+          <label htmlFor="spr-stack" className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">Effective stack (yours)</label>
+          <input id="spr-stack" type="number" value={stack} onChange={e => setStack(Math.max(0,Number(e.target.value)))}
+            className="w-full px-4 py-3 rounded-xl bg-card border border-border text-foreground text-sm focus-visible:outline-2 focus-visible:outline-primary focus-visible:outline-offset-2 focus:border-primary" step={50} />
         </div>
         <div>
-          <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">Current pot size</label>
-          <input type="number" value={pot} onChange={e => setPot(Math.max(1,Number(e.target.value)))}
-            className="w-full px-4 py-3 rounded-xl bg-card border border-border text-foreground text-sm focus:outline-none focus:border-primary" step={10} />
+          <label htmlFor="spr-pot" className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">Current pot size</label>
+          <input id="spr-pot" type="number" value={pot} onChange={e => setPot(Math.max(1,Number(e.target.value)))}
+            className="w-full px-4 py-3 rounded-xl bg-card border border-border text-foreground text-sm focus-visible:outline-2 focus-visible:outline-primary focus-visible:outline-offset-2 focus:border-primary" step={10} />
         </div>
       </div>
 
@@ -718,20 +721,20 @@ function MValueCalc() {
           { label:"Big blind", val:bb, set:setBb, step:100 },
           { label:"Small blind", val:sb, set:setSb, step:50 },
           { label:"Ante", val:ante, set:setAnte, step:25 },
-        ].map(f => (
+        ].map((f, index) => (
           <div key={f.label}>
-            <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">{f.label}</label>
-            <input type="number" value={f.val} onChange={e => f.set(Math.max(0,Number(e.target.value)))}
-              className="w-full px-3 py-2.5 rounded-xl bg-card border border-border text-foreground text-sm focus:outline-none focus:border-primary" step={f.step} />
+            <label htmlFor={`m-input-${index}`} className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">{f.label}</label>
+            <input id={`m-input-${index}`} type="number" value={f.val} onChange={e => f.set(Math.max(0,Number(e.target.value)))}
+              className="w-full px-3 py-2.5 rounded-xl bg-card border border-border text-foreground text-sm focus-visible:outline-2 focus-visible:outline-primary focus-visible:outline-offset-2 focus:border-primary" step={f.step} />
           </div>
         ))}
       </div>
 
       <div>
-        <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">
+        <label htmlFor="m-players" className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">
           Players at table: <span className="text-primary">{players}</span>
         </label>
-        <input type="range" min={2} max={10} value={players} onChange={e => setPlayers(Number(e.target.value))}
+        <input id="m-players" type="range" min={2} max={10} value={players} onChange={e => setPlayers(Number(e.target.value))}
           className="w-full accent-primary h-2 rounded-full" />
         <div className="flex justify-between text-xs text-muted-foreground mt-1">
           <span>2 (heads-up)</span><span>6</span><span>10</span>
@@ -866,6 +869,7 @@ function ICMCalc() {
           <div className="flex gap-1.5 flex-wrap">
             {[2,3,4,5,6,7,8,9].map(n => (
               <button key={n} onClick={() => { setNumPlayers(n); setNumPrizes(p => Math.min(p, n)); }}
+                aria-pressed={numPlayers === n}
                 className={`w-9 h-9 rounded-lg text-sm font-bold border transition-all ${numPlayers===n ? "bg-primary text-primary-foreground border-primary" : "bg-background border-border text-muted-foreground hover:border-primary/50"}`}>
                 {n}
               </button>
@@ -877,6 +881,7 @@ function ICMCalc() {
           <div className="flex gap-1.5 flex-wrap">
             {[1,2,3,4,5,6].map(n => (
               <button key={n} onClick={() => setNumPrizes(Math.min(n, numPlayers))}
+                aria-pressed={numPrizes === n}
                 className={`w-9 h-9 rounded-lg text-sm font-bold border transition-all ${numPrizes===n ? "bg-primary text-primary-foreground border-primary" : "bg-background border-border text-muted-foreground hover:border-primary/50"}`}>
                 {n}
               </button>
@@ -895,15 +900,16 @@ function ICMCalc() {
             {Array.from({ length: numPlayers }, (_, i) => (
               <div key={i} className="flex items-center gap-2">
                 <span className="text-xs font-bold text-muted-foreground w-10 flex-shrink-0 text-center">{MEDALS[i]}</span>
-                <button onClick={() => updateStack(i, stacks[i] - 1000)}
+                <button aria-label={`Decrease player ${i + 1} stack`} onClick={() => updateStack(i, stacks[i] - 1000)}
                   className="w-8 h-8 rounded-md bg-background border border-border text-muted-foreground hover:border-primary/50 flex-shrink-0 text-xs font-bold">−</button>
                 <input
                   type="number"
+                  aria-label={`Player ${i + 1} chip stack`}
                   value={stacks[i] ?? 1000}
                   onChange={e => updateStack(i, parseInt(e.target.value) || 0)}
                   className="flex-1 min-w-0 bg-background border border-border rounded-lg px-2 py-1.5 text-sm text-foreground text-right font-mono"
                 />
-                <button onClick={() => updateStack(i, stacks[i] + 1000)}
+                <button aria-label={`Increase player ${i + 1} stack`} onClick={() => updateStack(i, stacks[i] + 1000)}
                   className="w-8 h-8 rounded-md bg-background border border-border text-muted-foreground hover:border-primary/50 flex-shrink-0 text-xs font-bold">+</button>
               </div>
             ))}
@@ -919,15 +925,16 @@ function ICMCalc() {
             {Array.from({ length: numPrizes }, (_, i) => (
               <div key={i} className="flex items-center gap-2">
                 <span className="text-xs font-bold text-muted-foreground w-10 flex-shrink-0 text-center">{MEDALS[i]}</span>
-                <button onClick={() => updatePrize(i, prizes[i] - 500)}
+                <button aria-label={`Decrease place ${i + 1} prize`} onClick={() => updatePrize(i, prizes[i] - 500)}
                   className="w-8 h-8 rounded-md bg-background border border-border text-muted-foreground hover:border-primary/50 flex-shrink-0 text-xs font-bold">−</button>
                 <input
                   type="number"
+                  aria-label={`Place ${i + 1} prize`}
                   value={prizes[i] ?? 0}
                   onChange={e => updatePrize(i, parseInt(e.target.value) || 0)}
                   className="flex-1 min-w-0 bg-background border border-border rounded-lg px-2 py-1.5 text-sm text-foreground text-right font-mono"
                 />
-                <button onClick={() => updatePrize(i, prizes[i] + 500)}
+                <button aria-label={`Increase place ${i + 1} prize`} onClick={() => updatePrize(i, prizes[i] + 500)}
                   className="w-8 h-8 rounded-md bg-background border border-border text-muted-foreground hover:border-primary/50 flex-shrink-0 text-xs font-bold">+</button>
               </div>
             ))}
@@ -1036,7 +1043,7 @@ function PushFoldCalc() {
       <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">Ante</label>
       <div className="grid grid-cols-2 gap-2">
         {([[false, "No ante"], [true, "BB ante ON"]] as const).map(([v, l]) => (
-          <button key={String(v)} onClick={() => setAnte(v)}
+          <button key={String(v)} onClick={() => setAnte(v)} aria-pressed={ante === v}
             className={`py-3 rounded-xl text-sm font-bold border transition-all ${ante === v ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border text-muted-foreground hover:border-primary/50"}`}>
             {l}
           </button>
@@ -1052,7 +1059,7 @@ function PushFoldCalc() {
         <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">Table</label>
         <div className="grid grid-cols-3 gap-2">
           {([["hu", "Heads-Up"], [6, "6-max"], [9, "9-max"]] as const).map(([v, l]) => (
-            <button key={String(v)} onClick={() => setTable(v)}
+            <button key={String(v)} onClick={() => setTable(v)} aria-pressed={table === v}
               className={`py-3 rounded-xl text-sm font-bold border transition-all ${table === v ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border text-muted-foreground hover:border-primary/50"}`}>
               {l}
             </button>
@@ -1066,7 +1073,7 @@ function PushFoldCalc() {
             <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">Scenario</label>
             <div className="grid grid-cols-2 gap-2">
               {([["push", "SB: shove or fold"], ["call", "BB: call a shove"]] as const).map(([v, l]) => (
-                <button key={v} onClick={() => setView(v)}
+                <button key={v} onClick={() => setView(v)} aria-pressed={view === v}
                   className={`py-3 rounded-xl text-sm font-bold border transition-all ${view === v ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border text-muted-foreground hover:border-primary/50"}`}>
                   {l}
                 </button>
@@ -1083,7 +1090,7 @@ function PushFoldCalc() {
             </label>
             <div className={`grid gap-2 ${table === 9 ? "grid-cols-4" : "grid-cols-5"}`}>
               {positions!.map((p) => (
-                <button key={p} onClick={() => setPos(p)}
+                <button key={p} onClick={() => setPos(p)} aria-pressed={posSafe === p}
                   className={`py-2.5 rounded-xl text-xs sm:text-sm font-bold border transition-all ${posSafe === p ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border text-muted-foreground hover:border-primary/50"}`}>
                   {PF_POS_LABELS[p]}
                 </button>
@@ -1095,10 +1102,10 @@ function PushFoldCalc() {
       )}
 
       <div>
-        <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">
+        <label htmlFor="pushfold-stack" className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">
           Effective stack: <span className="text-primary text-base tabular-nums">{stack}bb</span>
         </label>
-        <input type="range" min={PF_STACK_MIN} max={PF_STACK_MAX} step={PF_STACK_STEP} value={stack}
+        <input id="pushfold-stack" type="range" min={PF_STACK_MIN} max={PF_STACK_MAX} step={PF_STACK_STEP} value={stack}
           onChange={e => setStack(Number(e.target.value))} className="w-full accent-primary h-2 rounded-full" />
         <div className="flex justify-between text-xs text-muted-foreground mt-1">
           <span>1bb</span><span>5</span><span>10</span><span>15</span><span>20</span><span>25bb</span>
@@ -1199,8 +1206,6 @@ const TABS = [
 // Page
 // ─────────────────────────────────────────────
 export default function CalculatorPageEn() {
-  const [active, setActive] = useState<typeof TABS[number]["id"]>("outs");
-  const tab = TABS.find(t => t.id === active)!;
 
   return (
     <>
@@ -1242,52 +1247,7 @@ export default function CalculatorPageEn() {
 
       {/* Calculator Area */}
       <section className="max-w-5xl mx-auto px-4 sm:px-6 py-10">
-        {/* Tabs — all in one view (mobile 4+4 centered / desktop 8 columns) */}
-        <div className="flex flex-wrap justify-center gap-1.5 sm:gap-2 mb-6">
-          {TABS.map(t => (
-            <button
-              key={t.id}
-              onClick={() => setActive(t.id)}
-              className={`flex flex-col items-center justify-center gap-1.5 w-[72px] sm:w-auto sm:flex-1 sm:basis-0 min-h-[62px] px-1 py-2 rounded-xl text-xs font-bold border transition-all ${
-                active === t.id
-                  ? "bg-primary text-primary-foreground border-primary shadow-lg shadow-primary/20"
-                  : "bg-card text-muted-foreground border-border hover:border-primary/50 hover:text-foreground"
-              }`}
-            >
-              {t.icon}
-              <span className="leading-tight text-center">{t.label}</span>
-            </button>
-          ))}
-        </div>
-
-        {/* Panel */}
-        <div className="calc-console rounded-2xl overflow-hidden">
-          {/* Panel Header */}
-          <div className="px-6 py-5 border-b border-primary/20 flex items-center gap-4">
-            <div className="w-10 h-10 rounded-xl bg-primary/20 flex items-center justify-center text-primary flex-shrink-0">
-              {tab.icon}
-            </div>
-            <div>
-              <h2 className="text-lg font-black text-foreground">{tab.label}</h2>
-              <p className="text-xs text-muted-foreground">{tab.sub}</p>
-            </div>
-          </div>
-
-          {/* Panel Content */}
-          <div className="p-6">
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={active}
-                initial={false}
-                animate={{ opacity:1, x:0 }}
-                exit={{ opacity:0, x:-10 }}
-                transition={{ duration:0.2 }}
-              >
-                {tab.component}
-              </motion.div>
-            </AnimatePresence>
-          </div>
-        </div>
+        <CalculatorWorkspace tabs={TABS} locale="en" />
       </section>
 
       {/* SEO Content */}
@@ -1305,7 +1265,7 @@ export default function CalculatorPageEn() {
                 <tr className="bg-card border-b border-border">
                   <th className="px-3 py-2.5 text-left font-bold text-muted-foreground">Player</th>
                   <th className="px-3 py-2.5 text-right font-bold text-muted-foreground">Chip %</th>
-                  <th className="px-3 py-2.5 text-right font-bold text-primary">ICM %</th>
+                  <th className="px-3 py-2.5 text-right font-bold text-primary-ink">ICM %</th>
                   <th className="px-3 py-2.5 text-right font-bold text-muted-foreground">Diff</th>
                 </tr>
               </thead>
@@ -1344,7 +1304,7 @@ export default function CalculatorPageEn() {
                 <tr className="bg-card border-b border-border">
                   <th className="px-3 py-2.5 text-left font-bold text-muted-foreground">Player</th>
                   <th className="px-3 py-2.5 text-right font-bold text-muted-foreground">Chip chop</th>
-                  <th className="px-3 py-2.5 text-right font-bold text-primary">ICM deal</th>
+                  <th className="px-3 py-2.5 text-right font-bold text-primary-ink">ICM deal</th>
                   <th className="px-3 py-2.5 text-right font-bold text-muted-foreground">Diff</th>
                 </tr>
               </thead>
@@ -1404,7 +1364,7 @@ export default function CalculatorPageEn() {
               <details key={i} className="luxe-card p-5 group" open={i === 0}>
                 <summary className="flex items-center justify-between cursor-pointer list-none font-bold text-foreground gap-3">
                   <span>Q. {f.q}</span>
-                  <span className="text-primary transition-transform group-open:rotate-45 text-xl leading-none flex-shrink-0">+</span>
+                  <span className="text-primary-ink transition-transform group-open:rotate-45 text-xl leading-none flex-shrink-0">+</span>
                 </summary>
                 <p className="text-sm text-muted-foreground leading-relaxed mt-3">{f.a}</p>
               </details>
@@ -1427,10 +1387,10 @@ export default function CalculatorPageEn() {
             ].map(l => (
               <a key={l.href} href={l.href} className="luxe-card p-4 flex items-center justify-between gap-3 group">
                 <div>
-                  <p className="font-bold text-foreground text-sm group-hover:text-primary transition-colors">{l.t}</p>
+                  <p className="font-bold text-foreground text-sm group-hover:text-primary-ink transition-colors">{l.t}</p>
                   <p className="text-xs text-muted-foreground mt-0.5">{l.d}</p>
                 </div>
-                <span className="text-primary flex-shrink-0 text-lg">→</span>
+                <span className="text-primary-ink flex-shrink-0 text-lg">→</span>
               </a>
             ))}
           </div>

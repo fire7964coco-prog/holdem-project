@@ -4,6 +4,7 @@ import Link from "next/link";
 import { BG, CARD, BORDER, INK, MUTED } from "@/app/community/post-card";
 import { tabLabels, type BottomTabActive, type BottomTabKey } from "@/components/bottom-tab-bar";
 import { CHROME, isSecondaryLocale } from "@/lib/intl";
+import { EventStatusBadge } from "@/app/community/event-status";
 
 /**
  * 데스크톱 전역 좌측 레일 — 모바일 하단 탭바(bottom-tab-bar.tsx)의 데스크톱 짝.
@@ -334,7 +335,7 @@ export function hasFixedSideRail(pathname: string): boolean {
 const TABS: { key: Exclude<BottomTabKey, "blog">; icon: string; badge?: string }[] = [
   { key: "home",    icon: "⊞" },
   { key: "chat",    icon: "💬" },
-  { key: "event",   icon: "🎰", badge: "Soon" },
+  { key: "event",   icon: "🎰", badge: "event" },
   { key: "profile", icon: "👤" },
 ];
 
@@ -393,7 +394,7 @@ export default function SideRail({
                 className="ml-auto text-[9px] px-1.5 py-0.5 rounded font-bold"
                 style={{ background: "#7a2e2e", color: "#f4f0e7" }}
               >
-                {item.badge}
+                {item.key === "event" ? <EventStatusBadge lang={locale ?? "ko"} /> : item.badge}
               </span>
             )}
           </>

@@ -2,6 +2,7 @@ import CommunityClient from "./community-client";
 import { POSTS } from "@/lib/posts";
 import { postsForLocale } from "@/lib/intl-posts";
 import { isSecondaryLocale } from "@/lib/intl";
+import { buildHeroLine } from "@/lib/tournaments-digest";
 
 /**
  * 홈(커뮤니티 피드) 서버 래퍼.
@@ -13,5 +14,6 @@ export default function CommunityHome({ pageLocale }: { pageLocale?: string }) {
   const src =
     pageLocale && isSecondaryLocale(pageLocale) ? postsForLocale(pageLocale) : POSTS;
   const blogPosts = src.map(({ content, ...meta }) => meta);
-  return <CommunityClient pageLocale={pageLocale} blogPosts={blogPosts} />;
+  const todayISO = new Date(Date.now() + 9 * 60 * 60 * 1000).toISOString().slice(0, 10);
+  return <CommunityClient pageLocale={pageLocale} blogPosts={blogPosts} tournamentTeaser={buildHeroLine(todayISO)} />;
 }

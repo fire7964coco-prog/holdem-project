@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { Suspense, useState, useMemo, useEffect, useCallback } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 import { SEO } from "@/components/seo";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -20,7 +21,14 @@ const KR_2026 = TOURNAMENTS.filter((t) => t.country === "KR" && (t.startDate ?? 
  * ★todayISO는 반드시 서버에서 내려온 prop을 넘긴다 — 여기서 new Date()를 부르면
  *   하이드레이션 불일치가 난다(page.tsx 주석 참조).
  */
-import { buildHeroLine, buildMetaTitle, buildMetaDescription } from "@/lib/tournaments-digest";
+import { buildDigest, buildHeroLine, buildMetaTitle, buildMetaDescription } from "@/lib/tournaments-digest";
+import { DEFAULT_SCHEDULE_FILTERS, readScheduleFilters, scheduleFilterHref, matchesSchedule, orderSchedule, scheduleMonths, type ScheduleFilters, type ScheduleStatus } from "@/lib/tournament-filters";
+
+function ScheduleUrlObserver({ sync }: { sync: () => void }) {
+  const params = useSearchParams();
+  useEffect(() => { sync(); }, [params, sync]);
+  return null;
+}
 
 const DOMESTIC = [
   {
@@ -29,7 +37,7 @@ const DOMESTIC = [
     id: "hpt",
     name: "HPT (Hangame Poker Tour)",
     badge: "내국인 참가 가능",
-    badgeColor: "bg-primary/20 text-primary border-primary/40",
+    badgeColor: "bg-primary/20 text-primary-ink border-primary/40",
     emoji: "🏆",
     desc: "NHN 「한게임 로얄홀덤」이 여는 국내 오프라인 홀덤 투어. 온라인 새틀라이트 토너먼트에서 참가권을 따 오프라인 메인이벤트에 나가는 구조로, 제5회(2026)는 9월 11~13일 스위스 그랜드 호텔 컨벤션센터에서 열리고 총상금 16억 원이 빗썸 계좌를 통해 원화로 지급됩니다. 카지노가 아닌 호텔 컨벤션 베뉴라 일반 한국 국적자도 참가할 수 있는 국내 대회입니다.",
     details: [
@@ -46,7 +54,7 @@ const DOMESTIC = [
     // 2026-09-03 M-082(검수장 2회차 §1-1·§3): 운영사는 ㈜네오위즈(pmang 운영정책 축어) · 공식 명칭은 «피망 쇼다운»(공지 6273 「피망 쇼다운입니다 … 오프라인 대회 진출권을 획득할 수 있는 온라인 새틀라이트」).
     name: "피망 쇼다운",
     badge: "네오위즈 공식 운영",
-    badgeColor: "bg-blue-500/15 text-blue-400 border-blue-500/30",
+    badgeColor: "bg-blue-500/15 text-blue-800 border-blue-500/30",
     emoji: "🃏",
     desc: "네오위즈가 운영하는 피망 포커의 공식 온라인 홀덤 대회. 별도 장비 없이 PC·모바일에서 참가할 수 있고, 게임머니(비환금) 기반으로 운영됩니다. 오프라인 대회 진출권을 거는 온라인 새틀라이트가 함께 열립니다.",
     details: [
@@ -62,7 +70,7 @@ const DOMESTIC = [
     id: "hangame",
     name: "한게임 포커 클래식",
     badge: "NHN 운영",
-    badgeColor: "bg-yellow-500/15 text-yellow-400 border-yellow-500/30",
+    badgeColor: "bg-yellow-500/15 text-yellow-800 border-yellow-500/30",
     emoji: "🎴",
     desc: "NHN(엔에이치엔㈜)이 운영하는 한게임 플랫폼의 홀덤 대회. 국내 최장수 온라인 포커 서비스로 풍부한 사용자 기반을 보유합니다. 텍사스 홀덤 외 다양한 포커 형식의 대회도 운영됩니다.",
     details: [
@@ -78,7 +86,7 @@ const DOMESTIC = [
     id: "hpl",
     name: "홀덤펍 리그 (HPL)",
     badge: "전국 펍 리그",
-    badgeColor: "bg-green-500/15 text-green-400 border-green-500/30",
+    badgeColor: "bg-green-500/15 text-green-800 border-green-500/30",
     emoji: "🍺",
     desc: "전국 홀덤펍(Holdem Pub)이 참가하는 리그 형태의 홀덤 대회. 동네 홀덤펍에서 시작해 지역 결선, 전국 결선까지 올라가는 피라미드 구조로 운영됩니다. 가장 접근성 높은 오프라인 홀덤 대회입니다.",
     details: [
@@ -101,7 +109,7 @@ const INTERNATIONAL = [
     prize: "메인이벤트 바이인 $10,000",
     emoji: "🌎",
     badge: "세계 최고 권위",
-    badgeColor: "bg-primary/20 text-primary border-primary/40",
+    badgeColor: "bg-primary/20 text-primary-ink border-primary/40",
     desc: "1970년부터 시작된 세계 포커의 올림픽. 2026년에는 라스베이거스 Horseshoe·Paris 카지노에서 100개의 브레이슬릿 이벤트가 열립니다. 골드 브레이슬릿(Gold Bracelet) 획득은 포커 선수 최고의 영예입니다. 한국 선수들도 매년 수십 명이 참가하는 세계적 홀덤 대회입니다.",
     highlights: [
       "2025 시리즈 총 참가 246,960명·상금 $4.82억 — 역대 최고 기록",
@@ -121,7 +129,7 @@ const INTERNATIONAL = [
     prize: "WPT Prime $1,100 · 메인 투어 $3,500~$5,300 (지역 통화 예: WPT Seoul ₩1,750,000)",
     emoji: "🌍",
     badge: "세계 순회 투어",
-    badgeColor: "bg-blue-500/15 text-blue-400 border-blue-500/30",
+    badgeColor: "bg-blue-500/15 text-blue-800 border-blue-500/30",
     desc: "2002년 창설된 세계 포커 투어. 전 세계 주요 카지노를 돌며 홀덤 대회 시리즈를 개최합니다. 한국에서도 WPT Korea 시리즈가 개최된 바 있어 국내 선수들의 참가율이 높습니다.",
     highlights: [
       "시즌 챔피언십 우승 상금 $1,000,000 이상",
@@ -139,7 +147,7 @@ const INTERNATIONAL = [
     prize: "메인이벤트 €5,300",
     emoji: "🌐",
     badge: "PokerStars 주최",
-    badgeColor: "bg-red-500/15 text-red-400 border-red-500/30",
+    badgeColor: "bg-red-500/15 text-red-800 border-red-500/30",
     desc: "PokerStars가 주관하는 유럽 최대 홀덤 대회 투어. 바르셀로나, 프라하, 몬테카를로 등 유럽 주요 도시를 순회합니다. PokerStars 온라인에서 위성 예선으로 진출 가능합니다.",
     highlights: [
       "메인이벤트 상금 총액 €5,000,000+ 규모",
@@ -159,7 +167,7 @@ const INTERNATIONAL = [
     prize: "한국 스톱 메인 ₩230만~₩270만 · 챔피언십 타이베이 메인 USD 10,000",
     emoji: "🗺️",
     badge: "아시아 최대 투어",
-    badgeColor: "bg-orange-500/15 text-orange-400 border-orange-500/30",
+    badgeColor: "bg-orange-500/15 text-orange-800 border-orange-500/30",
     desc: "2026년에 20주년을 맞는 아시아 대표 홀덤 대회 투어. 2026 시즌은 제주·타이베이·인천 5스톱으로 짜여 한국 선수 참가율이 가장 높고, 첫 해외(또는 국내 카지노) 홀덤 대회 도전에 가장 적합한 투어입니다. 한국 스톱은 외국인 전용 카지노 베뉴라 참가 자격을 먼저 확인하세요.",
     highlights: [
       "바이인이 WSOP보다 낮아 첫 해외 홀덤 대회에 최적",
@@ -210,7 +218,7 @@ const STRATEGY_TIPS = [
   {
     phase: "초반 (얼리 스테이지)",
     icon: BookOpen,
-    color: "text-blue-400",
+    color: "text-blue-800",
     tips: [
       "스타팅 스택이 충분할 때 타이트하게 플레이해 칩 손실 최소화",
       "상대 플레이어 성향 파악에 집중 (타이트/루즈, 어그레시브/패시브)",
@@ -221,7 +229,7 @@ const STRATEGY_TIPS = [
   {
     phase: "중반 (미들 스테이지)",
     icon: Target,
-    color: "text-yellow-400",
+    color: "text-yellow-800",
     tips: [
       "M값 20 이하 진입 시 스틸 레인지 확장 (BTN·CO 위치에서 적극 스틸)",
       "빅스택 상대로 무리한 플레이 자제, 미들스택과의 팟 집중",
@@ -232,7 +240,7 @@ const STRATEGY_TIPS = [
   {
     phase: "후반·버블·파이널",
     icon: Zap,
-    color: "text-primary",
+    color: "text-primary-ink",
     tips: [
       "버블에서 숏스택은 빅스택의 공격을 피하는 전략 우선",
       "ICM 관점에서 코인플립 상황을 최대한 회피",
@@ -247,7 +255,7 @@ const KOREA_HUB_2026 = [
     city: "제주",
     flag: "🌊",
     venue: "신화월드 리조트 (외국인 전용 카지노 · 내국인 참가 불가)",
-    color: "bg-blue-500/15 text-blue-400 border-blue-500/30",
+    color: "bg-blue-500/15 text-blue-800 border-blue-500/30",
     events: [
       { name: "KPC x LPT Series", date: "1.03~1.18" },
       { name: "APT 제주 클래식", date: "1.30~2.08", hot: true },
@@ -260,7 +268,7 @@ const KOREA_HUB_2026 = [
     city: "인천",
     flag: "🏙️",
     venue: "파라다이스 시티 리조트 (외국인 전용 카지노 · 내국인 참가 불가)",
-    color: "bg-orange-500/15 text-orange-400 border-orange-500/30",
+    color: "bg-orange-500/15 text-orange-800 border-orange-500/30",
     // 2026-09-03 M-082: ASPT Korea(#89)는 일정표가 «베뉴 공식 미기재»인데 이 카드가 파라다이스시티로 못 박고 있었다 → 분리.
     // 🔴 2026-09-04 M-087: 같은 결함이 형제 행에 남아 있었다 — `ajpc-incheon-1`(4.10~4.19)의 venue도
     //    🪶 이 주석에 그 행의 표시명을 축어로 적지 않는다 — 검수장 회귀 앵커가 그 문자열의 출현 수를 세어
@@ -280,7 +288,7 @@ const KOREA_HUB_2026 = [
     city: "서울",
     flag: "🏆",
     venue: "호텔 컨벤션 · 시내 베뉴 (내국인 참가 가능)",
-    color: "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
+    color: "bg-emerald-500/15 text-emerald-800 border-emerald-500/30",
     events: [
       { name: "제5회 HPT (스위스 그랜드 호텔)", date: "9.11~9.13", hot: true },
       { name: "APL 서울 Winter Prelims · Circuit I", date: "10.23~10.25" },
@@ -292,7 +300,7 @@ const BUYIN_LEVELS = [
   {
     level: "입문",
     range: "무료 ~ 소액",
-    color: "bg-green-500/15 text-green-400 border-green-500/30",
+    color: "bg-green-500/15 text-green-800 border-green-500/30",
     emoji: "🎮",
     examples: "피망포커, 한게임 포커",
     target: "처음 홀덤 대회를 경험하는 초보자",
@@ -301,7 +309,7 @@ const BUYIN_LEVELS = [
   {
     level: "초급",
     range: "₩1만 ~ ₩30만",
-    color: "bg-blue-500/15 text-blue-400 border-blue-500/30",
+    color: "bg-blue-500/15 text-blue-800 border-blue-500/30",
     emoji: "🍺",
     examples: "홀덤펍 리그(HPL), HPT 새틀라이트",
     target: "오프라인 실전을 처음 경험하는 단계",
@@ -310,7 +318,7 @@ const BUYIN_LEVELS = [
   {
     level: "중급",
     range: "$500 ~ $2,000",
-    color: "bg-yellow-500/15 text-yellow-400 border-yellow-500/30",
+    color: "bg-yellow-500/15 text-yellow-800 border-yellow-500/30",
     emoji: "🌊",
     examples: "APT 인천·제주, ASPT Korea, GOP",
     target: "국내·아시아 주요 대회 도전 단계",
@@ -319,7 +327,7 @@ const BUYIN_LEVELS = [
   {
     level: "고급",
     range: "$3,000 ~ $10,000",
-    color: "bg-orange-500/15 text-orange-400 border-orange-500/30",
+    color: "bg-orange-500/15 text-orange-800 border-orange-500/30",
     emoji: "🌎",
     examples: "WSOP 메인($10K), EPT 메인(€5,300)",
     target: "해외 대형 메이저 대회 도전",
@@ -328,7 +336,7 @@ const BUYIN_LEVELS = [
   {
     level: "하이롤러",
     range: "$50,000+",
-    color: "bg-violet-500/15 text-violet-400 border-violet-500/30",
+    color: "bg-violet-500/15 text-violet-800 border-violet-500/30",
     emoji: "💎",
     examples: "Triton Poker SHR 제주($150K)",
     target: "세계 최상위 프로·하이롤러 전용",
@@ -372,20 +380,47 @@ function ScheduleSection({
   /** 대회 id → 가이드 경로. 한국어 글이 실제로 있는 대회만 들어 있다 */
   blogLinks: Record<string, string>;
 }) {
-  const [filter, setFilter] = useState<"all" | "domestic" | "international">("all");
-  const filtered = filter === "all" ? TOURNAMENTS : TOURNAMENTS.filter(t => t.type === filter);
+  const router = useRouter();
+  const [filters, setFilters] = useState<ScheduleFilters>(DEFAULT_SCHEDULE_FILTERS);
+  const ordered = useMemo(() => orderSchedule(TOURNAMENTS, todayISO), [todayISO]);
+  const filtered = useMemo(() => ordered.filter(t => matchesSchedule(t, todayISO, filters)), [ordered, todayISO, filters]);
+  const visibleIds = new Set(filtered.map(t => t.id));
+  const months = useMemo(() => scheduleMonths(TOURNAMENTS), []);
+  const digest = useMemo(() => buildDigest(todayISO), [todayISO]);
+  const syncFromUrl = useCallback(() => { setFilters(readScheduleFilters(window.location.search)); }, []);
+  useEffect(() => {
+    syncFromUrl();
+    window.addEventListener("popstate", syncFromUrl);
+    return () => window.removeEventListener("popstate", syncFromUrl);
+  }, [syncFromUrl]);
+  useEffect(() => {
+    const id = window.location.hash.slice(1);
+    if (!id.startsWith("tournament-") || id === "tournament-schedule") return;
+    const target = document.getElementById(id);
+    if (target && !target.hidden) {
+      target.scrollIntoView({ block: "start", behavior: "instant" });
+      target.focus({ preventScroll: true });
+    }
+  }, [filters]);
+  function applyFilters(patch: Partial<ScheduleFilters>, hash = "tournament-schedule") {
+    const next = { ...filters, ...patch };
+    setFilters(next);
+    router.push(scheduleFilterHref(next, hash), { scroll: false });
+  }
 
   return (
     <motion.section
       initial={false}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.05 }}
-      className="mb-12"
+      className="mb-12 scroll-mt-28"
+      id="tournament-schedule"
     >
+      <Suspense fallback={null}><ScheduleUrlObserver sync={syncFromUrl} /></Suspense>
       <div className="flex items-center gap-3 mb-5">
-        <Calendar className="w-5 h-5 text-primary flex-shrink-0" />
+        <Calendar className="w-5 h-5 text-primary-ink flex-shrink-0" />
         <h2 className="text-2xl font-serif font-bold text-foreground">2026 홀덤 대회 일정표</h2>
-        <span className="text-xs bg-primary/15 text-primary border border-primary/30 px-2.5 py-0.5 rounded-full font-bold">{todayISO.replace(/-/g, ".")} 기준</span>
+        <span className="text-xs bg-primary/15 text-primary-ink border border-primary/30 px-2.5 py-0.5 rounded-full font-bold">{todayISO.replace(/-/g, ".")} 기준</span>
       </div>
       <p className="text-muted-foreground text-sm mb-5 leading-relaxed">
         각 대회 <strong className="text-foreground">공식 사이트 원문</strong>을 직접 확인해 기록했고, 카드마다 그 출처를 링크했습니다. 진행 상태는 날짜에서 자동 계산됩니다. 변경·연기는 공식 사이트를 우선 확인하세요.
@@ -396,7 +431,7 @@ function ScheduleSection({
           "공식 사이트 1순위 목록 + 확인 순서 + 체크 항목"만 여기로 옮겼다. */}
       <details className="mb-6 bg-card border border-border rounded-xl overflow-hidden group">
         <summary className="px-4 py-3 cursor-pointer text-sm font-bold text-foreground hover:bg-primary/5 transition-colors list-none flex items-center gap-2">
-          <span className="text-primary">🔍</span>
+          <span className="text-primary-ink">🔍</span>
           이 일정이 맞는지 직접 확인하는 법
           <ChevronRight className="w-4 h-4 ml-auto text-muted-foreground transition-transform group-open:rotate-90" />
         </summary>
@@ -413,7 +448,7 @@ function ScheduleSection({
               { k: "4순위 — 커뮤니티", v: "현장 후기·분위기. 일정 근거로는 쓰지 않는다" },
             ].map((r) => (
               <div key={r.k} className="bg-background/60 border border-border rounded-lg px-3 py-2">
-                <div className="text-xs font-bold text-primary mb-0.5">{r.k}</div>
+                <div className="text-xs font-bold text-primary-ink mb-0.5">{r.k}</div>
                 <div className="text-xs">{r.v}</div>
               </div>
             ))}
@@ -426,26 +461,63 @@ function ScheduleSection({
         </div>
       </details>
 
-      <div className="flex gap-2 mb-6">
+      <div className="mb-5 flex flex-wrap gap-2" aria-label="주요 진행·예정 대회">
+        {[...digest.ongoing.slice(0, 2), ...digest.upcoming.slice(0, 2)].map(t => (
+          <button type="button" key={t.id}
+            className="rounded-lg border border-border bg-card px-3 py-2 text-left text-xs text-foreground hover:border-primary"
+            onClick={() => applyFilters({ region: "all", status: "active", month: "" }, `tournament-${t.id}`)}>
+            <span className="font-semibold">{computeStatus(t, todayISO) === "ongoing" ? "진행 중" : "다음 개막"}</span> · {t.name}
+          </button>
+        ))}
+      </div>
+      <div className="rounded-xl border border-border bg-card p-3 mb-5 space-y-3">
+      <div className="flex gap-2 flex-wrap" role="group" aria-label="대회 지역">
         {(["all","domestic","international"] as const).map(f => (
-          <button key={f} onClick={() => setFilter(f)}
-            className={`px-4 py-1.5 rounded-full text-xs font-bold border transition-all ${filter===f ? "bg-primary text-primary-foreground border-primary" : "bg-card text-muted-foreground border-border hover:border-primary/50"}`}>
+          <button type="button" key={f} onClick={() => applyFilters({ region: f })} aria-pressed={filters.region === f}
+            className={`px-4 py-2 rounded-full text-xs font-bold border transition-colors ${filters.region===f ? "bg-primary text-primary-foreground border-primary" : "bg-card text-muted-foreground border-border hover:border-primary/50"}`}>
             {f==="all" ? "전체" : f==="domestic" ? "🇰🇷 국내" : "🌍 해외"}
           </button>
         ))}
       </div>
+      <div className="flex gap-2 flex-wrap" role="group" aria-label="대회 진행 상태">
+        {([['active', '진행·예정'], ['ongoing', '진행 중'], ['upcoming', '예정'], ['ended', '종료'], ['all', '전체 기간']] as [ScheduleStatus, string][]).map(([status, label]) => (
+          <button type="button" key={status} aria-pressed={filters.status === status} onClick={() => applyFilters({ status })}
+            className={`px-3 py-2 rounded-lg border text-xs font-semibold transition-colors ${filters.status === status ? "bg-foreground text-background border-foreground" : "text-muted-foreground border-border hover:border-primary"}`}>
+            {label}
+          </button>
+        ))}
+      </div>
+      <div className="flex items-center flex-wrap gap-3">
+        <label htmlFor="tournament-month" className="text-xs font-semibold text-foreground">개최 월</label>
+        <select id="tournament-month" value={filters.month} onChange={e => applyFilters({ month: e.target.value })}
+          className="min-h-10 rounded-lg border border-border bg-background px-3 text-sm text-foreground">
+          <option value="">모든 월</option>
+          {months.map(month => <option key={month} value={month}>{month.slice(0, 4)}년 {Number(month.slice(5))}월</option>)}
+        </select>
+        <button type="button" onClick={() => applyFilters(DEFAULT_SCHEDULE_FILTERS)} className="min-h-10 text-xs text-muted-foreground underline underline-offset-4">필터 초기화</button>
+      </div>
+      </div>
+      <p role="status" aria-live="polite" aria-atomic="true" className="mb-4 text-sm text-muted-foreground">{filtered.length}개 대회 · {filters.status === "active" ? "진행 중인 대회와 예정 일정을 먼저 보여드립니다." : "선택한 조건의 일정입니다."}</p>
+      {filtered.length === 0 && <div className="mb-6 rounded-xl border border-border bg-card p-6 text-center">
+        <p className="font-semibold text-foreground">조건에 맞는 대회가 없습니다</p>
+        <button type="button" className="mt-3 text-primary-ink underline" onClick={() => applyFilters(DEFAULT_SCHEDULE_FILTERS)}>진행·예정 일정 다시 보기</button>
+      </div>}
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        {filtered.map((t, i) => (
+        {ordered.map((t, i) => (
           <motion.div
             key={t.id}
+            id={`tournament-${t.id}`}
+            data-tournament-status={computeStatus(t, todayISO)}
+            tabIndex={-1}
+            hidden={!visibleIds.has(t.id)}
             initial={false}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: i * 0.04 }}
-            className={`bg-card border rounded-2xl p-5 flex flex-col gap-3 relative overflow-hidden ${"highlight" in t && t.highlight ? "border-yellow-500/40 shadow-lg shadow-yellow-500/10" : "border-border"}`}
+            className={`bg-card border rounded-2xl p-5 ${visibleIds.has(t.id) ? "flex" : "hidden"} flex-col gap-3 relative overflow-hidden scroll-mt-28 ${"highlight" in t && t.highlight ? "border-primary/40 shadow-sm" : "border-border"}`}
           >
             {"highlight" in t && t.highlight && (
-              <div className="absolute top-0 right-0 bg-yellow-500/20 text-yellow-400 text-[10px] font-bold px-2.5 py-1 rounded-bl-xl">
+              <div className="absolute top-0 right-0 bg-yellow-500/20 text-yellow-800 text-[10px] font-bold px-2.5 py-1 rounded-bl-xl">
                 {t.type === "domestic" ? "⭐ 추천" : "⭐ 세계 최대"}
               </div>
             )}
@@ -453,7 +525,7 @@ function ScheduleSection({
               <div className="flex items-center gap-2">
                 <span className="text-2xl">{t.emoji}</span>
                 <div>
-                  <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full border ${t.color} mb-1 inline-block`}>
+                  <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full border bg-primary/10 text-primary-ink border-primary/30 mb-1 inline-block`}>
                     {formatMonthBadge(t)}
                   </span>
                   <h3 className="text-sm font-bold text-foreground leading-snug">{t.name}</h3>
@@ -461,10 +533,10 @@ function ScheduleSection({
               </div>
               <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full border flex-shrink-0 ${
                 computeStatus(t, todayISO) === "ongoing"
-                  ? "bg-green-500/15 text-green-400 border-green-500/30"
+                  ? "bg-foreground/10 text-foreground border-foreground/25"
                   : computeStatus(t, todayISO) === "ended"
-                    ? "bg-muted/20 text-muted-foreground/80 border-border"
-                    : "bg-primary/10 text-primary border-primary/25"
+                    ? "bg-muted/20 text-muted-foreground border-border"
+                    : "bg-primary/10 text-primary-ink border-primary/25"
               }`}>
                 {STATUS_LABEL[computeStatus(t, todayISO)]}
               </span>
@@ -472,15 +544,15 @@ function ScheduleSection({
 
             <div className="grid grid-cols-2 gap-2 text-xs">
               <div className="bg-background/50 rounded-lg p-2">
-                <div className="text-[10px] text-muted-foreground/60 uppercase tracking-wider mb-0.5">일정</div>
+                <div className="text-[10px] text-muted-foreground uppercase tracking-wider mb-0.5">일정</div>
                 <div className="font-semibold text-foreground">{formatDateRange(t)}</div>
               </div>
               <div className="bg-background/50 rounded-lg p-2">
-                <div className="text-[10px] text-muted-foreground/60 uppercase tracking-wider mb-0.5">바이인</div>
+                <div className="text-[10px] text-muted-foreground uppercase tracking-wider mb-0.5">바이인</div>
                 <div className="font-semibold text-foreground">{t.buyin}</div>
               </div>
               <div className="bg-background/50 rounded-lg p-2 col-span-2">
-                <div className="text-[10px] text-muted-foreground/60 uppercase tracking-wider mb-0.5">장소</div>
+                <div className="text-[10px] text-muted-foreground uppercase tracking-wider mb-0.5">장소</div>
                 <div className="font-semibold text-foreground flex items-center gap-1">
                   <MapPin className="w-3 h-3 flex-shrink-0" />{t.location}
                 </div>
@@ -489,14 +561,14 @@ function ScheduleSection({
 
             {"note" in t && t.note && (
               <div className="flex items-start gap-1.5 bg-primary/8 border border-primary/20 rounded-lg px-2.5 py-2">
-                <Star className="w-3 h-3 text-primary flex-shrink-0 mt-0.5" />
+                <Star className="w-3 h-3 text-primary-ink flex-shrink-0 mt-0.5" />
                 <span className="text-[11px] text-foreground/80 leading-snug">{t.note}</span>
               </div>
             )}
             <div className="flex flex-wrap items-center gap-2 mt-auto">
               {t.sourceUrl && (
                 <a href={t.sourceUrl} target="_blank" rel="noopener noreferrer"
-                  className="flex items-center gap-1 text-[11px] text-primary font-semibold hover:underline">
+                  className="flex items-center gap-1 text-[11px] text-primary-ink font-semibold hover:underline">
                   공식 사이트 <ExternalLink className="w-3 h-3" />
                 </a>
               )}
@@ -505,7 +577,7 @@ function ScheduleSection({
                   서버에서 한국어 글 존재를 확인해 내려준 blogLinks만 신뢰한다. */}
               {blogLinks[t.id] && (
                 <Link href={blogLinks[t.id]}
-                  className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-primary/15 border border-primary/35 text-[11px] text-primary font-bold hover:bg-primary/25 transition-colors">
+                  className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-primary/15 border border-primary/35 text-[11px] text-primary-ink font-bold hover:bg-primary/25 transition-colors">
                   📖 상세 가이드 <ChevronRight className="w-3 h-3" />
                 </Link>
               )}
@@ -618,21 +690,21 @@ export default function Tournaments({
         type="article"
       />
 
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-12">
 
         {/* Hero */}
         <motion.div
           initial={false}
           animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-10"
+          className="text-center mb-7"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/25 text-primary text-xs font-bold uppercase tracking-widest mb-5">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/25 text-primary-ink text-xs font-bold uppercase tracking-widest mb-5">
             <Trophy className="w-3.5 h-3.5" /> Tournament Guide 2026
           </div>
-          <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-5 leading-tight">
+          <h1 className="text-3xl md:text-5xl font-serif font-bold text-primary-ink mb-4 leading-tight">
             홀덤 대회 완벽 가이드
           </h1>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             국내 HPT·피망 쇼다운·한게임·홀덤펍 리그부터<br className="hidden md:block" />
             세계 최대 <strong className="text-foreground">WSOP·WPT·EPT·APT</strong>까지.<br />
             홀덤 대회의 모든 것을 한눈에 정리했습니다.
@@ -640,10 +712,13 @@ export default function Tournaments({
                 2026-08-05까지 이 자리에 "2026년 7월 28일 기준 … 파이널 테이블만 8월 3~5일
                 남았습니다"가 굳어 있었다. 시한폭탄이 셋이었다(기준일·8/3~5 만료·브레이슬릿
                 "99개 수여"는 8/5 이후 100개). 매일 도는 리빌드가 이제 이 줄도 갱신한다. */}
-            <span className="block mt-3 text-sm text-primary/90">{buildHeroLine(todayISO)}</span>
+            <span className="block mt-3 text-sm text-primary-ink/90">{buildHeroLine(todayISO)}</span>
           </p>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-10 max-w-2xl mx-auto">
+          <a href="#tournament-schedule" className="inline-flex mt-4 min-h-11 items-center rounded-lg bg-foreground px-5 text-sm font-bold text-background">진행·예정 일정 보기 ↓</a>
+          <details className="mt-4 max-w-2xl mx-auto">
+          <summary className="cursor-pointer py-2 text-sm text-muted-foreground">대회 규모 한눈에 보기</summary>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-3">
             {[
               { icon: MapPin, label: "한국 개최 대회 (2026)", value: `${KR_2026}개` },
               { icon: Globe, label: "2026 전체 일정", value: "20개+" },
@@ -651,12 +726,13 @@ export default function Tournaments({
               { icon: DollarSign, label: "WSOP 메인 역대 최대 상금풀 (2024)", value: "$9,404만" },
             ].map(({ icon: Icon, label, value }) => (
               <div key={label} className="bg-card border border-border rounded-xl p-4 text-center">
-                <Icon className="w-5 h-5 text-primary mx-auto mb-1.5" />
+                <Icon className="w-5 h-5 text-primary-ink mx-auto mb-1.5" />
                 <div className="text-lg font-bold text-foreground">{value}</div>
                 <div className="text-xs text-muted-foreground">{label}</div>
               </div>
             ))}
           </div>
+          </details>
         </motion.div>
 
         {/* 2026 대회 일정표 */}
@@ -670,9 +746,9 @@ export default function Tournaments({
           className="mb-12"
         >
           <div className="flex items-center gap-3 mb-3">
-            <Trophy className="w-5 h-5 text-primary flex-shrink-0" />
+            <Trophy className="w-5 h-5 text-primary-ink flex-shrink-0" />
             <h2 className="text-2xl font-serif font-bold text-foreground">2026 한국 포커 허브</h2>
-            <span className="text-xs font-bold px-2 py-0.5 rounded-full border bg-primary/20 text-primary border-primary/40">아시아 최대 개최국</span>
+            <span className="text-xs font-bold px-2 py-0.5 rounded-full border bg-primary/20 text-primary-ink border-primary/40">아시아 최대 개최국</span>
           </div>
           <p className="text-muted-foreground text-sm mb-6 leading-relaxed">
             2026년 한국(제주·인천·서울)에서 <strong className="text-foreground">{KR_2026}개</strong>의 홀덤 대회가 일정표에 올라 있습니다.
@@ -708,11 +784,11 @@ export default function Tournaments({
                   {hub.events.map((ev) => (
                     <li key={ev.name} className="flex items-center justify-between gap-2 text-xs">
                       <span className="flex items-center gap-1.5 text-muted-foreground">
-                        {ev.hot && <Star className="w-3 h-3 text-primary flex-shrink-0" />}
+                        {ev.hot && <Star className="w-3 h-3 text-primary-ink flex-shrink-0" />}
                         {!ev.hot && <ChevronRight className="w-3 h-3 text-muted-foreground/50 flex-shrink-0" />}
                         <span className={ev.hot ? "text-foreground font-semibold" : ""}>{ev.name}</span>
                       </span>
-                      <span className="text-muted-foreground/60 tabular-nums flex-shrink-0">{ev.date}</span>
+                      <span className="text-muted-foreground tabular-nums flex-shrink-0">{ev.date}</span>
                     </li>
                   ))}
                 </ul>
@@ -723,15 +799,15 @@ export default function Tournaments({
           <div className="bg-primary/8 border border-primary/25 rounded-xl p-5">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
               <div className="text-center">
-                <div className="text-2xl font-serif font-bold text-primary mb-1">{KR_2026}개</div>
+                <div className="text-2xl font-serif font-bold text-primary-ink mb-1">{KR_2026}개</div>
                 <div className="text-xs text-muted-foreground">2026 한국 홀덤 대회</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-serif font-bold text-primary mb-1">₩49억+</div>
+                <div className="text-2xl font-serif font-bold text-primary-ink mb-1">₩49억+</div>
                 <div className="text-xs text-muted-foreground">APT 제주 클래식 보장 상금</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-serif font-bold text-primary mb-1">$150K</div>
+                <div className="text-2xl font-serif font-bold text-primary-ink mb-1">$150K</div>
                 <div className="text-xs text-muted-foreground">Triton SHR 제주 바이인</div>
               </div>
             </div>
@@ -784,7 +860,7 @@ export default function Tournaments({
           className="mb-12"
         >
           <div className="flex items-center gap-3 mb-6">
-            <BookOpen className="w-5 h-5 text-primary flex-shrink-0" />
+            <BookOpen className="w-5 h-5 text-primary-ink flex-shrink-0" />
             <h2 className="text-2xl font-serif font-bold text-foreground">홀덤 대회 구조 완전 이해</h2>
           </div>
           <p className="text-muted-foreground text-sm mb-6 leading-relaxed">
@@ -833,7 +909,7 @@ export default function Tournaments({
           className="mb-12"
         >
           <div className="flex items-center gap-3 mb-6">
-            <MapPin className="w-5 h-5 text-primary flex-shrink-0" />
+            <MapPin className="w-5 h-5 text-primary-ink flex-shrink-0" />
             <h2 className="text-2xl font-serif font-bold text-foreground">국내 포커·홀덤 대회 4종</h2>
           </div>
           <p className="text-muted-foreground text-sm mb-6 leading-relaxed">
@@ -862,18 +938,18 @@ export default function Tournaments({
                 <div className="grid grid-cols-2 gap-2">
                   {t.details.map(d => (
                     <div key={d.label} className="bg-background/50 rounded-lg p-2.5">
-                      <div className="text-[10px] text-muted-foreground/70 uppercase tracking-wider mb-0.5">{d.label}</div>
+                      <div className="text-[10px] text-muted-foreground uppercase tracking-wider mb-0.5">{d.label}</div>
                       <div className="text-xs font-semibold text-foreground">{d.value}</div>
                     </div>
                   ))}
                 </div>
                 <div className="flex items-start gap-2 bg-primary/8 border border-primary/20 rounded-lg px-3 py-2.5">
-                  <Star className="w-3.5 h-3.5 text-primary flex-shrink-0 mt-0.5" />
+                  <Star className="w-3.5 h-3.5 text-primary-ink flex-shrink-0 mt-0.5" />
                   <p className="text-xs text-foreground/85 leading-relaxed">{t.tip}</p>
                 </div>
                 {t.link && (
                   <a href={t.link} target="_blank" rel="noopener noreferrer"
-                    className="mt-auto flex items-center gap-1.5 text-xs text-primary font-semibold hover:underline">
+                    className="mt-auto flex items-center gap-1.5 text-xs text-primary-ink font-semibold hover:underline">
                     공식 사이트 방문 <ChevronRight className="w-3.5 h-3.5" />
                   </a>
                 )}
@@ -890,7 +966,7 @@ export default function Tournaments({
           className="mb-12"
         >
           <div className="flex items-center gap-3 mb-6">
-            <Globe className="w-5 h-5 text-primary flex-shrink-0" />
+            <Globe className="w-5 h-5 text-primary-ink flex-shrink-0" />
             <h2 className="text-2xl font-serif font-bold text-foreground">세계 4대 포커 홀덤 대회 투어</h2>
           </div>
 
@@ -930,27 +1006,27 @@ export default function Tournaments({
                   </div>
                   <div className="flex-1">
                     <div className="flex flex-wrap gap-3 mb-3 text-xs text-muted-foreground">
-                      <span className="flex items-center gap-1"><MapPin className="w-3 h-3 text-primary" />{t.location}</span>
-                      <span className="flex items-center gap-1"><Calendar className="w-3 h-3 text-primary" />{t.season}</span>
-                      <span className="flex items-center gap-1"><DollarSign className="w-3 h-3 text-primary" />{t.prize}</span>
+                      <span className="flex items-center gap-1"><MapPin className="w-3 h-3 text-primary-ink" />{t.location}</span>
+                      <span className="flex items-center gap-1"><Calendar className="w-3 h-3 text-primary-ink" />{t.season}</span>
+                      <span className="flex items-center gap-1"><DollarSign className="w-3 h-3 text-primary-ink" />{t.prize}</span>
                     </div>
                     <p className="text-sm text-muted-foreground leading-relaxed mb-4">{t.desc}</p>
                     <ul className="grid grid-cols-1 md:grid-cols-2 gap-1.5">
                       {t.highlights.map(h => (
                         <li key={h} className="flex items-start gap-2 text-xs text-muted-foreground">
-                          <ChevronRight className="w-3.5 h-3.5 text-primary flex-shrink-0 mt-0.5" />
+                          <ChevronRight className="w-3.5 h-3.5 text-primary-ink flex-shrink-0 mt-0.5" />
                           <span>{h}</span>
                         </li>
                       ))}
                     </ul>
                     <div className="mt-4 flex flex-wrap gap-2 items-center">
                       <a href={t.link} target="_blank" rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1.5 text-xs text-primary font-semibold hover:underline">
+                        className="inline-flex items-center gap-1.5 text-xs text-primary-ink font-semibold hover:underline">
                         공식 사이트 <ExternalLink className="w-3 h-3" />
                       </a>
                       {"blogLink" in t && t.blogLink && (
                         <Link href={t.blogLink as string}
-                          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-primary/15 border border-primary/35 text-xs text-primary font-bold hover:bg-primary/25 transition-colors">
+                          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-primary/15 border border-primary/35 text-xs text-primary-ink font-bold hover:bg-primary/25 transition-colors">
                           {"blogLabel" in t && t.blogLabel ? (t.blogLabel as string) : "📖 상세 가이드"} <ChevronRight className="w-3.5 h-3.5" />
                         </Link>
                       )}
@@ -970,7 +1046,7 @@ export default function Tournaments({
           className="mb-12"
         >
           <div className="flex items-center gap-3 mb-6">
-            <Target className="w-5 h-5 text-primary flex-shrink-0" />
+            <Target className="w-5 h-5 text-primary-ink flex-shrink-0" />
             <h2 className="text-2xl font-serif font-bold text-foreground">홀덤 대회 단계별 전략</h2>
           </div>
           <p className="text-muted-foreground text-sm mb-6 leading-relaxed">
@@ -992,7 +1068,7 @@ export default function Tournaments({
                 <ul className="space-y-2">
                   {s.tips.map(tip => (
                     <li key={tip} className="flex items-start gap-2 text-xs text-muted-foreground leading-relaxed">
-                      <ChevronRight className="w-3 h-3 text-primary flex-shrink-0 mt-0.5" />
+                      <ChevronRight className="w-3 h-3 text-primary-ink flex-shrink-0 mt-0.5" />
                       <span>{tip}</span>
                     </li>
                   ))}
@@ -1010,7 +1086,7 @@ export default function Tournaments({
           className="mb-12"
         >
           <div className="flex items-center gap-3 mb-6">
-            <Star className="w-5 h-5 text-primary flex-shrink-0" />
+            <Star className="w-5 h-5 text-primary-ink flex-shrink-0" />
             <h2 className="text-2xl font-serif font-bold text-foreground">초보자 홀덤 대회 도전 로드맵</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -1022,7 +1098,7 @@ export default function Tournaments({
                 transition={{ delay: 0.25 + i * 0.06 }}
                 className="bg-card border border-border rounded-xl p-5 flex gap-4"
               >
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary/15 border border-primary/30 text-primary font-serif font-bold text-sm flex items-center justify-center">
+                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary/15 border border-primary/30 text-primary-ink font-serif font-bold text-sm flex items-center justify-center">
                   {g.step}
                 </div>
                 <div>
@@ -1043,7 +1119,7 @@ export default function Tournaments({
           className="mb-12"
         >
           <div className="flex items-center gap-3 mb-3">
-            <DollarSign className="w-5 h-5 text-primary flex-shrink-0" />
+            <DollarSign className="w-5 h-5 text-primary-ink flex-shrink-0" />
             <h2 className="text-2xl font-serif font-bold text-foreground">홀덤 대회 바이인 단계별 가이드</h2>
           </div>
           <p className="text-muted-foreground text-sm mb-6 leading-relaxed">
@@ -1094,7 +1170,7 @@ export default function Tournaments({
           className="mb-12"
         >
           <div className="flex items-center gap-3 mb-6">
-            <Info className="w-5 h-5 text-primary flex-shrink-0" />
+            <Info className="w-5 h-5 text-primary-ink flex-shrink-0" />
             <h2 className="text-2xl font-serif font-bold text-foreground">홀덤 대회 자주 묻는 질문</h2>
           </div>
           <div className="flex flex-col gap-3">
@@ -1107,7 +1183,7 @@ export default function Tournaments({
                 className="bg-card border border-border rounded-xl p-5"
               >
                 <h3 className="font-bold text-foreground text-sm mb-2 flex items-start gap-2">
-                  <span className="text-primary font-serif text-base flex-shrink-0">Q.</span>
+                  <span className="text-primary-ink font-serif text-base flex-shrink-0">Q.</span>
                   {faq.q}
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed pl-5">{faq.a}</p>
@@ -1124,20 +1200,20 @@ export default function Tournaments({
           className="mb-8"
         >
           <h2 className="text-lg font-serif font-bold text-foreground mb-4 flex items-center gap-2">
-            <BookOpen className="w-4 h-4 text-primary" /> 홀덤 대회 준비에 도움이 되는 가이드
+            <BookOpen className="w-4 h-4 text-primary-ink" /> 홀덤 대회 준비에 도움이 되는 가이드
           </h2>
 
           {/* WSOP 2026 Featured */}
           <Link href="/blog/wsop-2026-tournament-guide">
             <div className="mb-4 p-5 bg-card border-2 border-yellow-500/40 rounded-2xl hover:border-yellow-500/70 transition-colors cursor-pointer shadow-lg shadow-yellow-500/8 relative overflow-hidden">
-              <div className="absolute top-0 right-0 bg-yellow-500/20 text-yellow-400 text-[10px] font-bold px-2.5 py-1 rounded-bl-xl tracking-wide">⏳ 8/3~5 파이널</div>
+              <div className="absolute top-0 right-0 bg-primary/15 text-primary-ink text-[10px] font-bold px-2.5 py-1 rounded-bl-xl tracking-wide">시즌 가이드</div>
               <div className="flex items-start gap-4">
                 <div className="text-3xl flex-shrink-0 mt-0.5">🏆</div>
                 <div className="flex-1">
-                  <div className="text-[11px] font-bold text-yellow-400 uppercase tracking-widest mb-1">WSOP 2026 · 메인이벤트 파이널 테이블 8월 3~5일</div>
+                  <div className="text-[11px] font-bold text-primary-ink uppercase tracking-widest mb-1">WSOP 2026</div>
                   <div className="text-base font-bold text-foreground mb-1 leading-tight">WSOP 2026 완전 가이드 — 일정·메인이벤트·한국인 참가 방법</div>
-                  <div className="text-xs text-muted-foreground leading-relaxed">메인이벤트 9,208명 참가·상금풀 $8,563만 · 파이널 9명 확정, 우승 상금 $1,000만을 놓고 8/3~5 ESPN 방송</div>
-                  <div className="mt-2 inline-flex items-center gap-1 text-xs text-primary font-bold">
+                  <div className="text-xs text-muted-foreground leading-relaxed">시즌 일정과 메인이벤트, 참가 준비 사항을 가이드에서 확인하세요.</div>
+                  <div className="mt-2 inline-flex items-center gap-1 text-xs text-primary-ink font-bold">
                     자세히 보기 <ChevronRight className="w-3.5 h-3.5" />
                   </div>
                 </div>

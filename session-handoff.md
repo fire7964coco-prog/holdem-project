@@ -2,7 +2,8 @@
 
 ## 다음 작업 지시 대기
 
-- HI 발행 마감을 끝냈다. 경위는 WORKLOG 최상단, 근거는 `docs/hi-gto-publication-review-2026-09-15.md`다. 다음 주제·언어는 새 사용자 지시를 따른다.
+- UI·UX 11개 지적+추가 개선 구현·production 로컬 검증 완료. 결과·캡처·재현검사 = `docs/ui-ux-improvements-2026-09-15.md`. **운영 배포 승인 대기**: main 커밋·push가 자동 승인 검토에서 거절되었고 코드가 작업 트리에 있다. 명시 승인 후 커밋·push → Vercel 성공 → 라이브 재확인. 기존 전체 타입698건은 증가 없음을 비교했고 실제 메일·Google 인증은 모의 검증 범위와 구분한다.
+- HI 발행 마감을 끝냈다. 경위는 WORKLOG의 HI 발행 항목, 근거는 `docs/hi-gto-publication-review-2026-09-15.md`다. 다음 주제·언어는 새 사용자 지시를 따른다.
 
 ## 시작 자료
 
@@ -15,4 +16,4 @@
 - 일반 queue는 `docs/harden-queue-진행.md` §1, 장기 미결은 해당 대기열과 `docs/pending-work.md`에서 필요한 항목만 찾는다.
 - HI 검수에서 발견한 EN counterfeiting 조건 누락은 `docs/en-first-queue.md` §3에 있다. 이번 HI 정정 종결과 EN·형제 언어의 후속 적용을 구분한다.
 - **9/20경 APT 제주 이벤트 수 재확인**: `docs/update-calendar.md`의 해당 항목.
-- 이번 경위는 WORKLOG.md 맨 위 HI 항목. 상시 규칙은 해당 정본 MD, 과거 인계는 `docs/handoff-archive/`에 둔다. 상세를 이 파일에 누적하지 않는다.
+- UI·UX 점검과 HI 발행 경위는 WORKLOG.md의 해당 항목에 있다. 상시 규칙은 해당 정본 MD, 과거 인계는 `docs/handoff-archive/`에 둔다. 상세를 이 파일에 누적하지 않는다.

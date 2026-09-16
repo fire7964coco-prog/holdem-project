@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { SEO } from "@/components/seo";
+import { CalculatorWorkspace } from "@/components/calculator-workspace";
 import { Calculator, TrendingUp, Layers, Target, Trophy, BarChart3, Zap } from "lucide-react";
 import { CALCULATOR_FAQ } from "./faq";
 import { pfLookup, PF_STACK_MIN, PF_STACK_MAX, PF_STACK_STEP } from "@/lib/pushfold-data";
@@ -191,6 +192,8 @@ function CardPicker({ selected, max, onToggle, onClear, disabled = [], label }: 
                     onClick={() => !isDis && onToggle(c)}
                     disabled={isDis}
                     title={`${RANKS[rank]}${SUITS[si]}`}
+                    aria-label={`${RANKS[rank]}${SUITS[si]}`}
+                    aria-pressed={isSel}
                     className={`w-8 h-11 sm:w-[30px] sm:h-[38px] rounded-md text-xs font-bold border transition-all
                       ${isSel
                         ? "bg-primary border-primary text-primary-foreground shadow-md shadow-primary/30 scale-105 z-10"
@@ -264,9 +267,9 @@ function OutsCalc() {
     <div className="space-y-4 sm:space-y-6">
       <div className="grid md:grid-cols-2 gap-4">
         <div>
-          <label className="block text-xs font-bold text-muted-foreground mb-1.5 sm:mb-2 uppercase tracking-wide">드로우 종류</label>
-          <select value={sel} onChange={e => setSel(Number(e.target.value))}
-            className="w-full px-4 py-3 rounded-xl bg-card border border-border text-foreground text-sm focus:outline-none focus:border-primary">
+          <label htmlFor="outs-draw" className="block text-xs font-bold text-muted-foreground mb-1.5 sm:mb-2 uppercase tracking-wide">드로우 종류</label>
+          <select id="outs-draw" value={sel} onChange={e => setSel(Number(e.target.value))}
+            className="w-full px-4 py-3 rounded-xl bg-card border border-border text-foreground text-sm focus-visible:outline-2 focus-visible:outline-primary focus-visible:outline-offset-2 focus:border-primary">
             {DRAW_PRESETS.map((p,i) => (
               <option key={i} value={i}>{p.label}{!p.custom ? ` (아웃츠 ${p.outs}개)` : ""}</option>
             ))}
@@ -279,7 +282,7 @@ function OutsCalc() {
           <label className="block text-xs font-bold text-muted-foreground mb-1.5 sm:mb-2 uppercase tracking-wide">게임 단계</label>
           <div className="grid grid-cols-2 gap-2">
             {(["flop","turn"] as const).map(s => (
-              <button key={s} onClick={() => setStage(s)}
+              <button key={s} onClick={() => setStage(s)} aria-pressed={stage === s}
                 className={`py-2.5 sm:py-3 rounded-xl text-sm font-bold border transition-all ${stage===s ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border text-muted-foreground hover:border-primary/50"}`}>
                 {s==="flop" ? "🃏 플랍 이후" : "🔄 턴 이후"}
               </button>
@@ -289,10 +292,10 @@ function OutsCalc() {
       </div>
       {preset.custom && (
         <div>
-          <label className="block text-xs font-bold text-muted-foreground mb-1.5 sm:mb-2 uppercase tracking-wide">
+          <label htmlFor="outs-custom" className="block text-xs font-bold text-muted-foreground mb-1.5 sm:mb-2 uppercase tracking-wide">
             아웃츠 수: <span className="text-primary text-base">{custom}개</span>
           </label>
-          <input type="range" min={1} max={20} value={custom} onChange={e => setCustom(Number(e.target.value))}
+          <input id="outs-custom" type="range" min={1} max={20} value={custom} onChange={e => setCustom(Number(e.target.value))}
             className="w-full accent-primary h-2 rounded-full" />
           <div className="flex justify-between text-xs text-muted-foreground mt-1"><span>1</span><span>5</span><span>10</span><span>15</span><span>20</span></div>
         </div>
@@ -355,18 +358,18 @@ function PotOddsCalc() {
     <div className="space-y-4 sm:space-y-6">
       <div className="grid md:grid-cols-2 gap-4">
         <div>
-          <label className="block text-xs font-bold text-muted-foreground mb-1.5 sm:mb-2 uppercase tracking-wide">현재 팟 크기</label>
+          <label htmlFor="pot-size" className="block text-xs font-bold text-muted-foreground mb-1.5 sm:mb-2 uppercase tracking-wide">현재 팟 크기</label>
           <div className="relative">
-            <input type="number" value={pot} onChange={e => setPot(Math.max(0,Number(e.target.value)))}
-              className="w-full px-4 py-3 pr-14 rounded-xl bg-card border border-border text-foreground text-sm focus:outline-none focus:border-primary" step={1000} />
+            <input id="pot-size" type="number" value={pot} onChange={e => setPot(Math.max(0,Number(e.target.value)))}
+              className="w-full px-4 py-3 pr-14 rounded-xl bg-card border border-border text-foreground text-sm focus-visible:outline-2 focus-visible:outline-primary focus-visible:outline-offset-2 focus:border-primary" step={1000} />
             <span className="absolute right-4 top-1/2 -translate-y-1/2 text-xs text-muted-foreground">원</span>
           </div>
         </div>
         <div>
-          <label className="block text-xs font-bold text-muted-foreground mb-1.5 sm:mb-2 uppercase tracking-wide">내 콜 금액</label>
+          <label htmlFor="pot-call" className="block text-xs font-bold text-muted-foreground mb-1.5 sm:mb-2 uppercase tracking-wide">내 콜 금액</label>
           <div className="relative">
-            <input type="number" value={call} onChange={e => setCall(Math.max(0,Number(e.target.value)))}
-              className="w-full px-4 py-3 pr-14 rounded-xl bg-card border border-border text-foreground text-sm focus:outline-none focus:border-primary" step={500} />
+            <input id="pot-call" type="number" value={call} onChange={e => setCall(Math.max(0,Number(e.target.value)))}
+              className="w-full px-4 py-3 pr-14 rounded-xl bg-card border border-border text-foreground text-sm focus-visible:outline-2 focus-visible:outline-primary focus-visible:outline-offset-2 focus:border-primary" step={500} />
             <span className="absolute right-4 top-1/2 -translate-y-1/2 text-xs text-muted-foreground">원</span>
           </div>
         </div>
@@ -385,11 +388,11 @@ function PotOddsCalc() {
 
       <div>
         <div className="flex items-center justify-between mb-2">
-          <label className="block text-xs font-bold text-muted-foreground uppercase tracking-wide">
+          <label htmlFor="pot-equity" className="block text-xs font-bold text-muted-foreground uppercase tracking-wide">
             내 핸드 승률: <span className="text-primary">{eq}%</span>
           </label>
         </div>
-        <input type="range" min={1} max={85} value={eq} onChange={e => setEq(Number(e.target.value))}
+        <input id="pot-equity" type="range" min={1} max={85} value={eq} onChange={e => setEq(Number(e.target.value))}
           className="w-full accent-primary h-2 rounded-full" />
         <div className="flex justify-between text-xs text-muted-foreground mt-1">
           <span>1%</span><span>거트샷 8.7%</span><span>플러시 19%</span><span>85%</span>
@@ -397,7 +400,7 @@ function PotOddsCalc() {
       </div>
 
       <div>
-        <button onClick={() => setShowImplied(!showImplied)}
+        <button onClick={() => setShowImplied(!showImplied)} aria-expanded={showImplied}
           className="flex items-center gap-2 text-xs font-bold text-primary hover:text-primary/80 transition-colors mb-3">
           <TrendingUp className="w-3.5 h-3.5" />
           임플라이드 오즈 {showImplied ? "닫기 ▲" : "추가 ▼"}
@@ -406,10 +409,10 @@ function PotOddsCalc() {
           {showImplied && (
             <motion.div initial={{ height:0, opacity:0 }} animate={{ height:"auto", opacity:1 }} exit={{ height:0, opacity:0 }} className="overflow-hidden">
               <div className="pb-4">
-                <label className="block text-xs font-bold text-muted-foreground mb-1.5 sm:mb-2 uppercase tracking-wide">
+                <label htmlFor="pot-implied" className="block text-xs font-bold text-muted-foreground mb-1.5 sm:mb-2 uppercase tracking-wide">
                   예상 추가 수익 (핸드 완성 시): <span className="text-blue-400">{implied.toLocaleString()}원</span>
                 </label>
-                <input type="range" min={0} max={200000} step={1000} value={implied} onChange={e => setImplied(Number(e.target.value))}
+                <input id="pot-implied" type="range" min={0} max={200000} step={1000} value={implied} onChange={e => setImplied(Number(e.target.value))}
                   className="w-full h-2 rounded-full" style={{ accentColor: "#60a5fa" }} />
                 <div className="flex justify-between text-xs text-muted-foreground mt-1">
                   <span>없음</span><span>10만</span><span>20만</span>
@@ -639,18 +642,18 @@ function SPRCalc() {
     <div className="space-y-4 sm:space-y-6">
       <div className="grid md:grid-cols-2 gap-4">
         <div>
-          <label className="block text-xs font-bold text-muted-foreground mb-1.5 sm:mb-2 uppercase tracking-wide">유효 스택 (내 스택)</label>
+          <label htmlFor="spr-stack" className="block text-xs font-bold text-muted-foreground mb-1.5 sm:mb-2 uppercase tracking-wide">유효 스택 (내 스택)</label>
           <div className="relative">
-            <input type="number" value={stack} onChange={e => setStack(Math.max(0,Number(e.target.value)))}
-              className="w-full px-4 py-3 pr-14 rounded-xl bg-card border border-border text-foreground text-sm focus:outline-none focus:border-primary" step={5000} />
+            <input id="spr-stack" type="number" value={stack} onChange={e => setStack(Math.max(0,Number(e.target.value)))}
+              className="w-full px-4 py-3 pr-14 rounded-xl bg-card border border-border text-foreground text-sm focus-visible:outline-2 focus-visible:outline-primary focus-visible:outline-offset-2 focus:border-primary" step={5000} />
             <span className="absolute right-4 top-1/2 -translate-y-1/2 text-xs text-muted-foreground">원</span>
           </div>
         </div>
         <div>
-          <label className="block text-xs font-bold text-muted-foreground mb-1.5 sm:mb-2 uppercase tracking-wide">현재 팟 크기</label>
+          <label htmlFor="spr-pot" className="block text-xs font-bold text-muted-foreground mb-1.5 sm:mb-2 uppercase tracking-wide">현재 팟 크기</label>
           <div className="relative">
-            <input type="number" value={pot} onChange={e => setPot(Math.max(1,Number(e.target.value)))}
-              className="w-full px-4 py-3 pr-14 rounded-xl bg-card border border-border text-foreground text-sm focus:outline-none focus:border-primary" step={1000} />
+            <input id="spr-pot" type="number" value={pot} onChange={e => setPot(Math.max(1,Number(e.target.value)))}
+              className="w-full px-4 py-3 pr-14 rounded-xl bg-card border border-border text-foreground text-sm focus-visible:outline-2 focus-visible:outline-primary focus-visible:outline-offset-2 focus:border-primary" step={1000} />
             <span className="absolute right-4 top-1/2 -translate-y-1/2 text-xs text-muted-foreground">원</span>
           </div>
         </div>
@@ -792,20 +795,20 @@ function MValueCalc() {
           { label:"빅 블라인드", val:bb, set:setBb, step:100, suffix:"" },
           { label:"스몰 블라인드", val:sb, set:setSb, step:50, suffix:"" },
           { label:"앤티", val:ante, set:setAnte, step:25, suffix:"" },
-        ].map(f => (
+        ].map((f, index) => (
           <div key={f.label}>
-            <label className="block text-xs font-bold text-muted-foreground mb-1.5 sm:mb-2 uppercase tracking-wide">{f.label}</label>
-            <input type="number" value={f.val} onChange={e => f.set(Math.max(0,Number(e.target.value)))}
-              className="w-full px-3 py-2.5 rounded-xl bg-card border border-border text-foreground text-sm focus:outline-none focus:border-primary" step={f.step} />
+            <label htmlFor={`m-input-${index}`} className="block text-xs font-bold text-muted-foreground mb-1.5 sm:mb-2 uppercase tracking-wide">{f.label}</label>
+            <input id={`m-input-${index}`} type="number" value={f.val} onChange={e => f.set(Math.max(0,Number(e.target.value)))}
+              className="w-full px-3 py-2.5 rounded-xl bg-card border border-border text-foreground text-sm focus-visible:outline-2 focus-visible:outline-primary focus-visible:outline-offset-2 focus:border-primary" step={f.step} />
           </div>
         ))}
       </div>
 
       <div>
-        <label className="block text-xs font-bold text-muted-foreground mb-1.5 sm:mb-2 uppercase tracking-wide">
+        <label htmlFor="m-players" className="block text-xs font-bold text-muted-foreground mb-1.5 sm:mb-2 uppercase tracking-wide">
           테이블 인원: <span className="text-primary">{players}명</span>
         </label>
-        <input type="range" min={2} max={10} value={players} onChange={e => setPlayers(Number(e.target.value))}
+        <input id="m-players" type="range" min={2} max={10} value={players} onChange={e => setPlayers(Number(e.target.value))}
           className="w-full accent-primary h-2 rounded-full" />
         <div className="flex justify-between text-xs text-muted-foreground mt-1">
           <span>2명 (헤즈업)</span><span>6명</span><span>10명</span>
@@ -991,6 +994,7 @@ function ICMCalc() {
           <div className="flex gap-1.5 flex-wrap">
             {[2,3,4,5,6,7,8,9].map(n => (
               <button key={n} onClick={() => { setNumPlayers(n); setNumPrizes(p => Math.min(p, n)); }}
+                aria-pressed={numPlayers === n}
                 className={`w-9 h-9 rounded-lg text-sm font-bold border transition-all ${numPlayers===n ? "bg-primary text-primary-foreground border-primary" : "bg-background border-border text-muted-foreground hover:border-primary/50"}`}>
                 {n}
               </button>
@@ -1002,6 +1006,7 @@ function ICMCalc() {
           <div className="flex gap-1.5 flex-wrap">
             {[1,2,3,4,5,6].map(n => (
               <button key={n} onClick={() => setNumPrizes(Math.min(n, numPlayers))}
+                aria-pressed={numPrizes === n}
                 className={`w-9 h-9 rounded-lg text-sm font-bold border transition-all ${numPrizes===n ? "bg-primary text-primary-foreground border-primary" : "bg-background border-border text-muted-foreground hover:border-primary/50"}`}>
                 {n}
               </button>
@@ -1020,15 +1025,16 @@ function ICMCalc() {
             {Array.from({ length: numPlayers }, (_, i) => (
               <div key={i} className="flex items-center gap-2">
                 <span className="text-xs font-bold text-muted-foreground w-10 flex-shrink-0 text-center">{MEDALS[i]}</span>
-                <button onClick={() => updateStack(i, stacks[i] - 1000)}
+                <button aria-label={`플레이어 ${i + 1} 스택 줄이기`} onClick={() => updateStack(i, stacks[i] - 1000)}
                   className="w-7 h-7 rounded-md bg-background border border-border text-muted-foreground hover:border-primary/50 flex-shrink-0 text-xs font-bold">−</button>
                 <input
                   type="number"
+                  aria-label={`플레이어 ${i + 1} 칩 스택`}
                   value={stacks[i] ?? 1000}
                   onChange={e => updateStack(i, parseInt(e.target.value) || 0)}
                   className="flex-1 min-w-0 bg-background border border-border rounded-lg px-2 py-1 text-sm text-foreground text-right font-mono"
                 />
-                <button onClick={() => updateStack(i, stacks[i] + 1000)}
+                <button aria-label={`플레이어 ${i + 1} 스택 늘리기`} onClick={() => updateStack(i, stacks[i] + 1000)}
                   className="w-7 h-7 rounded-md bg-background border border-border text-muted-foreground hover:border-primary/50 flex-shrink-0 text-xs font-bold">+</button>
               </div>
             ))}
@@ -1044,15 +1050,16 @@ function ICMCalc() {
             {Array.from({ length: numPrizes }, (_, i) => (
               <div key={i} className="flex items-center gap-2">
                 <span className="text-xs font-bold text-muted-foreground w-10 flex-shrink-0 text-center">{MEDALS[i]}</span>
-                <button onClick={() => updatePrize(i, prizes[i] - 50000)}
+                <button aria-label={`${i + 1}위 상금 줄이기`} onClick={() => updatePrize(i, prizes[i] - 50000)}
                   className="w-7 h-7 rounded-md bg-background border border-border text-muted-foreground hover:border-primary/50 flex-shrink-0 text-xs font-bold">−</button>
                 <input
                   type="number"
+                  aria-label={`${i + 1}위 상금 (원)`}
                   value={prizes[i] ?? 0}
                   onChange={e => updatePrize(i, parseInt(e.target.value) || 0)}
                   className="flex-1 min-w-0 bg-background border border-border rounded-lg px-2 py-1 text-sm text-foreground text-right font-mono"
                 />
-                <button onClick={() => updatePrize(i, prizes[i] + 50000)}
+                <button aria-label={`${i + 1}위 상금 늘리기`} onClick={() => updatePrize(i, prizes[i] + 50000)}
                   className="w-7 h-7 rounded-md bg-background border border-border text-muted-foreground hover:border-primary/50 flex-shrink-0 text-xs font-bold">+</button>
               </div>
             ))}
@@ -1173,7 +1180,7 @@ function PushFoldCalc() {
       <label className={ROW_LABEL}>앤티</label>
       <div className={`${ROW_BODY} grid grid-cols-2 gap-2`}>
         {([[false, "앤티 없음"], [true, "BB 앤티 ON"]] as const).map(([v, l]) => (
-          <button key={String(v)} onClick={() => setAnte(v)}
+          <button key={String(v)} onClick={() => setAnte(v)} aria-pressed={ante === v}
             className={`py-2 sm:py-3 rounded-xl text-[13px] sm:text-sm font-bold border transition-all ${ante === v ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border text-muted-foreground hover:border-primary/50"}`}>
             {l}
           </button>
@@ -1189,7 +1196,7 @@ function PushFoldCalc() {
         <label className={ROW_LABEL}>테이블</label>
         <div className={`${ROW_BODY} grid grid-cols-3 gap-2`}>
           {([["hu", "헤즈업"], [6, "6맥스"], [9, "9맥스"]] as const).map(([v, l]) => (
-            <button key={String(v)} onClick={() => setTable(v)}
+            <button key={String(v)} onClick={() => setTable(v)} aria-pressed={table === v}
               className={`py-2 sm:py-3 rounded-xl text-[13px] sm:text-sm font-bold border transition-all ${table === v ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border text-muted-foreground hover:border-primary/50"}`}>
               {l}
             </button>
@@ -1205,7 +1212,7 @@ function PushFoldCalc() {
             <label className={ROW_LABEL}>시나리오</label>
             <div className={`${ROW_BODY} grid grid-cols-2 gap-2`}>
               {([["push", "SB: 푸시 or 폴드"], ["call", "BB: 올인 콜 판단"]] as const).map(([v, l]) => (
-                <button key={v} onClick={() => setView(v)}
+                <button key={v} onClick={() => setView(v)} aria-pressed={view === v}
                   className={`py-2 sm:py-3 rounded-xl text-[13px] sm:text-sm font-bold border transition-all ${view === v ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border text-muted-foreground hover:border-primary/50"}`}>
                   {l}
                 </button>
@@ -1224,7 +1231,7 @@ function PushFoldCalc() {
             </label>
             <div className={`grid gap-2 ${table === 9 ? "grid-cols-4" : "grid-cols-5"}`}>
               {positions!.map((p) => (
-                <button key={p} onClick={() => setPos(p)}
+                <button key={p} onClick={() => setPos(p)} aria-pressed={posSafe === p}
                   className={`py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold border transition-all ${posSafe === p ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border text-muted-foreground hover:border-primary/50"}`}>
                   {PF_POS_LABELS[p]}
                 </button>
@@ -1239,14 +1246,14 @@ function PushFoldCalc() {
           슬라이더를 움직이면 바로 위 %가 바뀌므로 인과가 오히려 더 잘 보인다. */}
       <div className="rounded-2xl bg-card border border-border p-3 sm:p-5 space-y-2 sm:space-y-3">
         <div className="flex items-baseline justify-between gap-2">
-          <label className="text-[11px] sm:text-xs font-bold text-muted-foreground uppercase tracking-wide">
+          <label htmlFor="pushfold-stack" className="text-[11px] sm:text-xs font-bold text-muted-foreground uppercase tracking-wide">
             유효 스택 <span className="text-primary text-sm sm:text-base tabular-nums">{stack}bb</span>
           </label>
           <span className={`text-[26px] sm:text-4xl leading-none font-black tabular-nums ${isCall ? "text-green-400" : "text-primary"}`}>
             {stat.pct}%
           </span>
         </div>
-        <input type="range" min={PF_STACK_MIN} max={PF_STACK_MAX} step={PF_STACK_STEP} value={stack}
+        <input id="pushfold-stack" type="range" min={PF_STACK_MIN} max={PF_STACK_MAX} step={PF_STACK_STEP} value={stack}
           onChange={e => setStack(Number(e.target.value))} className="w-full accent-primary h-2 rounded-full" />
         <div className="flex items-baseline justify-between gap-2 text-[10px] sm:text-xs text-muted-foreground">
           <span className="min-w-0 truncate">
@@ -1358,8 +1365,6 @@ const TABS = [
 // Page
 // ─────────────────────────────────────────────
 export default function CalculatorPage() {
-  const [active, setActive] = useState<typeof TABS[number]["id"]>("outs");
-  const tab = TABS.find(t => t.id === active)!;
 
   return (
     <>
@@ -1439,53 +1444,7 @@ export default function CalculatorPage() {
 
       {/* Calculator Area */}
       <section className="max-w-5xl mx-auto px-4 sm:px-6 py-5 sm:py-10">
-        {/* Tabs — 전부 한 화면에 (모바일 4+4 가운데정렬 / 데스크톱 8열) */}
-        <div className="flex flex-wrap justify-center gap-1.5 sm:gap-2 mb-4 sm:mb-6">
-          {TABS.map(t => (
-            <button
-              key={t.id}
-              onClick={() => setActive(t.id)}
-              className={`flex flex-col items-center justify-center gap-1 sm:gap-1.5 w-[72px] sm:w-auto sm:flex-1 sm:basis-0 min-h-[50px] sm:min-h-[62px] px-1 py-1.5 sm:py-2 rounded-xl text-[11px] sm:text-xs font-bold border transition-all ${
-                active === t.id
-                  ? "bg-primary text-primary-foreground border-primary shadow-lg shadow-primary/20"
-                  : "bg-card text-muted-foreground border-border hover:border-primary/50 hover:text-foreground"
-              }`}
-            >
-              {t.icon}
-              <span className="leading-tight text-center">{t.label}</span>
-            </button>
-          ))}
-        </div>
-
-        {/* Panel */}
-        <div className="calc-console rounded-2xl overflow-hidden">
-          {/* Panel Header */}
-          {/* ★모바일은 숨긴다 — 바로 위 탭에서 이미 그 계산기가 골드로 선택돼 있어 제목이 중복이다(62px). */}
-          <div className="hidden sm:flex px-4 py-3 sm:px-6 sm:py-5 border-b border-primary/20 items-center gap-3 sm:gap-4">
-            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-primary/20 flex items-center justify-center text-primary flex-shrink-0">
-              {tab.icon}
-            </div>
-            <div>
-              <h2 className="text-base sm:text-lg font-black text-foreground leading-tight">{tab.label}</h2>
-              <p className="text-[11px] sm:text-xs text-muted-foreground">{tab.sub}</p>
-            </div>
-          </div>
-
-          {/* Panel Content */}
-          <div className="p-4 sm:p-6">
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={active}
-                initial={false}
-                animate={{ opacity:1, x:0 }}
-                exit={{ opacity:0, x:-10 }}
-                transition={{ duration:0.2 }}
-              >
-                {tab.component}
-              </motion.div>
-            </AnimatePresence>
-          </div>
-        </div>
+        <CalculatorWorkspace tabs={TABS} />
       </section>
 
       {/* SEO Content */}
@@ -1503,7 +1462,7 @@ export default function CalculatorPage() {
                 <tr className="bg-card border-b border-border">
                   <th className="px-3 py-2.5 text-left font-bold text-muted-foreground">플레이어</th>
                   <th className="px-3 py-2.5 text-right font-bold text-muted-foreground">칩 %</th>
-                  <th className="px-3 py-2.5 text-right font-bold text-primary">ICM %</th>
+                  <th className="px-3 py-2.5 text-right font-bold text-primary-ink">ICM %</th>
                   <th className="px-3 py-2.5 text-right font-bold text-muted-foreground">차이</th>
                 </tr>
               </thead>
@@ -1525,7 +1484,7 @@ export default function CalculatorPage() {
             </table>
           </div>
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mt-5 max-w-3xl">
-            핵심은 <strong className="text-foreground">칩 리더의 ICM 가치(33.3%)가 칩 비율(40%)보다 6.7%p 낮다</strong>는 점입니다. 1등을 해도 1등 상금만 받기 때문에 리더가 코인플립으로 얻는 상금 가치는 생각보다 적습니다. 그래서 버블에서 칩 리더는 <strong className="text-foreground">숏스택을 압박</strong>하는 것이 정답이고, 반대로 숏스택(칩 13.3% → ICM 16.6%)은 칩보다 가치가 높아 <strong className="text-foreground">불필요한 올인 콜을 피해</strong> 생존 가치를 지켜야 합니다. 개념이 더 궁금하면 <a href="/blog/icm-poker-meaning" className="text-primary font-semibold underline underline-offset-2">ICM이란</a> · <a href="/blog/holdem-bubble-strategy" className="text-primary font-semibold underline underline-offset-2">버블 생존 전략</a>을 참고하세요.
+            핵심은 <strong className="text-foreground">칩 리더의 ICM 가치(33.3%)가 칩 비율(40%)보다 6.7%p 낮다</strong>는 점입니다. 1등을 해도 1등 상금만 받기 때문에 리더가 코인플립으로 얻는 상금 가치는 생각보다 적습니다. 그래서 버블에서 칩 리더는 <strong className="text-foreground">숏스택을 압박</strong>하는 것이 정답이고, 반대로 숏스택(칩 13.3% → ICM 16.6%)은 칩보다 가치가 높아 <strong className="text-foreground">불필요한 올인 콜을 피해</strong> 생존 가치를 지켜야 합니다. 개념이 더 궁금하면 <a href="/blog/icm-poker-meaning" className="text-primary-ink font-semibold underline underline-offset-2">ICM이란</a> · <a href="/blog/holdem-bubble-strategy" className="text-primary-ink font-semibold underline underline-offset-2">버블 생존 전략</a>을 참고하세요.
           </p>
         </div>
 
@@ -1542,7 +1501,7 @@ export default function CalculatorPage() {
                 <tr className="bg-card border-b border-border">
                   <th className="px-3 py-2.5 text-left font-bold text-muted-foreground">플레이어</th>
                   <th className="px-3 py-2.5 text-right font-bold text-muted-foreground">칩찹(칩 비율)</th>
-                  <th className="px-3 py-2.5 text-right font-bold text-primary">ICM 딜</th>
+                  <th className="px-3 py-2.5 text-right font-bold text-primary-ink">ICM 딜</th>
                   <th className="px-3 py-2.5 text-right font-bold text-muted-foreground">차이</th>
                 </tr>
               </thead>
@@ -1613,7 +1572,7 @@ export default function CalculatorPage() {
                 <tr className="bg-card border-b border-border">
                   <th className="px-3 py-2.5 text-left font-bold text-muted-foreground">드로우 예시</th>
                   <th className="px-3 py-2.5 text-right font-bold text-muted-foreground">아웃츠</th>
-                  <th className="px-3 py-2.5 text-right font-bold text-primary">플랍→리버 (2장)</th>
+                  <th className="px-3 py-2.5 text-right font-bold text-primary-ink">플랍→리버 (2장)</th>
                   <th className="px-3 py-2.5 text-right font-bold text-muted-foreground">턴→리버 (1장)</th>
                 </tr>
               </thead>
@@ -1638,7 +1597,7 @@ export default function CalculatorPage() {
             </table>
           </div>
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mt-5 max-w-3xl">
-            다른 아웃츠 수와 정밀값은 위 <strong className="text-foreground">아웃츠 계산기</strong>에서 바로 확인할 수 있고, 아웃츠 세는 법은 <a href="/blog/holdem-outs-calculation" className="text-primary font-semibold underline underline-offset-2">아웃츠 세는 법</a>에서 자세히 다룹니다.
+            다른 아웃츠 수와 정밀값은 위 <strong className="text-foreground">아웃츠 계산기</strong>에서 바로 확인할 수 있고, 아웃츠 세는 법은 <a href="/blog/holdem-outs-calculation" className="text-primary-ink font-semibold underline underline-offset-2">아웃츠 세는 법</a>에서 자세히 다룹니다.
           </p>
         </div>
 
@@ -1654,7 +1613,7 @@ export default function CalculatorPage() {
               <thead>
                 <tr className="bg-card border-b border-border">
                   <th className="px-3 py-2.5 text-left font-bold text-muted-foreground">SPR 구간</th>
-                  <th className="px-3 py-2.5 text-left font-bold text-primary">성격</th>
+                  <th className="px-3 py-2.5 text-left font-bold text-primary-ink">성격</th>
                   <th className="px-3 py-2.5 text-left font-bold text-muted-foreground">필요 핸드 강도 · 액션</th>
                 </tr>
               </thead>
@@ -1688,7 +1647,7 @@ export default function CalculatorPage() {
               <thead>
                 <tr className="bg-card border-b border-border">
                   <th className="px-3 py-2.5 text-left font-bold text-muted-foreground">존</th>
-                  <th className="px-3 py-2.5 text-right font-bold text-primary">M값</th>
+                  <th className="px-3 py-2.5 text-right font-bold text-primary-ink">M값</th>
                   <th className="px-3 py-2.5 text-left font-bold text-muted-foreground">전략</th>
                 </tr>
               </thead>
@@ -1710,7 +1669,7 @@ export default function CalculatorPage() {
             </table>
           </div>
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mt-5 max-w-3xl">
-            M값·스택 압박 개념이 더 궁금하면 <a href="/blog/holdem-tournament-vs-cash-game" className="text-primary font-semibold underline underline-offset-2">토너먼트 vs 캐시게임</a>을 참고하세요.
+            M값·스택 압박 개념이 더 궁금하면 <a href="/blog/holdem-tournament-vs-cash-game" className="text-primary-ink font-semibold underline underline-offset-2">토너먼트 vs 캐시게임</a>을 참고하세요.
           </p>
         </div>
 
@@ -1723,7 +1682,7 @@ export default function CalculatorPage() {
               <details key={i} className="luxe-card p-5 group" open={i === 0}>
                 <summary className="flex items-center justify-between cursor-pointer list-none font-bold text-foreground gap-3">
                   <span>Q. {f.q}</span>
-                  <span className="text-primary transition-transform group-open:rotate-45 text-xl leading-none flex-shrink-0">+</span>
+                  <span className="text-primary-ink transition-transform group-open:rotate-45 text-xl leading-none flex-shrink-0">+</span>
                 </summary>
                 <p className="text-sm text-muted-foreground leading-relaxed mt-3">{f.a}</p>
               </details>
@@ -1756,10 +1715,10 @@ export default function CalculatorPage() {
             ].map(l => (
               <a key={l.href} href={l.href} className="luxe-card p-4 flex items-center justify-between gap-3 group">
                 <div>
-                  <p className="font-bold text-foreground text-sm group-hover:text-primary transition-colors">{l.t}</p>
+                  <p className="font-bold text-foreground text-sm group-hover:text-primary-ink transition-colors">{l.t}</p>
                   <p className="text-xs text-muted-foreground mt-0.5">{l.d}</p>
                 </div>
-                <span className="text-primary flex-shrink-0 text-lg">→</span>
+                <span className="text-primary-ink flex-shrink-0 text-lg">→</span>
               </a>
             ))}
           </div>

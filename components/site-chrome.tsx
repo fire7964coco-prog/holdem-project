@@ -30,7 +30,7 @@ const LOCALE_FEED_ROOTS = SECONDARY_LOCALES.map((l) => `/${l}`);
 function isFeedAppRoute(pathname: string): boolean {
   if (
     pathname === "/" ||
-    pathname === "/login" ||
+    pathname === "/login" || pathname.startsWith("/login/") ||
     pathname.startsWith("/post/") ||
     pathname.startsWith("/blog/")
   ) return true;
@@ -175,20 +175,24 @@ export function ScrollToTopButton() {
 
   useEffect(() => {
     const onScroll = () => setVisible(window.scrollY > 300);
+    onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  }, [pathname]);
 
   // ★하단 탭바가 깔리는 라우트에서는 그 위로 비켜선다.
   //   기본 bottom-6(24px)이면 버튼(44px)이 24~68px를 차지해 탭바(0~62px)와 겹친다.
   //   허브 셸도 자체적으로 탭바를 깐다(TAB_BAR_SECTIONS엔 없는 /quiz 등 포함) → 같이 비켜준다.
   const liftAboveTabBar = hasBottomTabBar(pathname) || isHubRoute(pathname);
+  const isCommunityHome = pathname === "/" || pathname === "/community" || LOCALE_FEED_ROOTS.includes(pathname.replace(/\/$/, ""));
 
   return (
     <button
       onClick={() => smoothScrollWindowTo(0)}
       aria-label={label}
-      className={`fixed right-4 z-50 w-11 h-11 rounded-full flex items-center justify-center shadow-lg transition-all duration-200 hover:scale-110 active:scale-95 ${
+      aria-hidden={!visible}
+      tabIndex={visible ? 0 : -1}
+      className={`fixed ${isCommunityHome ? "left-4 lg:left-auto lg:right-4" : "right-4"} z-50 w-11 h-11 rounded-full flex items-center justify-center shadow-lg transition-all duration-200 hover:scale-110 active:scale-95 ${
         liftAboveTabBar ? "bottom-[74px] lg:bottom-6" : "bottom-6"
       }`}
       style={{
@@ -261,7 +265,7 @@ export function SiteRail() {
  * 그 외 모든 페이지(블로그 글·목록·계산기·대회·규칙·툴)에는 푸터가 깔린다.
  */
 function isFooterlessRoute(pathname: string): boolean {
-  if (pathname === "/" || pathname === "/login") return true;
+  if (pathname === "/" || pathname === "/login" || pathname.startsWith("/login/")) return true;
   if (pathname.startsWith("/post/") || pathname.startsWith("/community")) return true;
   return LOCALE_FEED_ROOTS.some((p) => pathname === p || pathname === p + "/");
 }

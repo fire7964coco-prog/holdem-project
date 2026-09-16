@@ -3,7 +3,7 @@
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
-import { getCurrentEventId, EVENT_CONDITION } from "@/lib/event-config";
+import { getCurrentEventId, getEventState, EVENT_CONDITION } from "@/lib/event-config";
 
 export async function signOut() {
   const supabase = await createClient();
@@ -18,7 +18,7 @@ export async function createPost(formData: FormData) {
   } = await supabase.auth.getUser();
 
   if (!user) {
-    redirect("/login");
+    return { error: "로그인이 만료되었습니다. 다시 로그인해주세요. 작성 중인 내용은 보존됩니다.", requiresLogin: true };
   }
 
   const title = String(formData.get("title") || "").trim().slice(0, 100);
@@ -156,6 +156,8 @@ export async function getEventData() {
 
 /** 이벤트 번호 제출 */
 export async function submitEventEntry(numbers: number[]) {
+  const event = getEventState(new Date());
+  if (!event.isOpen) return { error: "이번 회차 접수가 마감되었습니다. 다음 회차 접수 시간을 확인해주세요." };
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
 
@@ -188,11 +190,16 @@ export async function submitEventEntry(numbers: number[]) {
     };
   }
 
+  const { data: draw, error: drawError } = await supabase.from("event_draws").select("event_id").eq("event_id", event.eventId).maybeSingle();
+  if (drawError) return { error: "이벤트 상태를 확인하지 못했습니다. 잠시 후 다시 시도해주세요." };
+  const currentEvent = getEventState(new Date());
+  if (draw || !currentEvent.isOpen || currentEvent.eventId !== event.eventId) return { error: "이번 회차 접수가 마감되었습니다. 이벤트 화면을 새로고침해주세요." };
+
   // is_eligible은 DB 기본값(false)으로 두고 서버 액션에서 직접 설정하지 않음
   // 이미 위에서 서버 측 조건 검증(isEligible)을 통과한 경우에만 여기 도달
   const { error } = await supabase.from("event_entries").insert({
     user_id: user.id,
-    event_id: getCurrentEventId(),
+    event_id: event.eventId,
     numbers: numbers.sort((a, b) => a - b),
   });
 
