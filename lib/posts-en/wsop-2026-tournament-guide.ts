@@ -8,13 +8,13 @@ export const POST: Post = {
   tldr: "Lucas Jumalon won the 2026 WSOP Main Event on August 5 for $10,000,000. He is 22, from Spokane, and came in with just over $180,000 in career earnings — his best previous score was $22,945. He walked into the final table with 194,000,000 chips, more than the next three stacks put together, and never gave the lead up. Lauri Saaskilahti took second for $6,000,000 after starting seventh in chips. Ninth place still paid $1,000,000.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-08-15",
-  masterUpdated: "2026-08-15",
+  updated: "2026-09-16",
+  masterUpdated: "2026-09-16",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🏆",
   image: "/images/wsop-2026-tournament-guide-hero.webp",
-  imageAlt: "WSOP 2026 summary card on dark green felt — 57th annual series in Las Vegas with 251,899 total entries, 100 bracelet events, and an $87.6M Main Event prize pool",
+  imageAlt: "WSOP 2026 summary card on dark green felt — 57th annual series in Las Vegas with 251,899 total entries, 100 bracelet events, and an $85.6M Main Event prize pool",
   tags: [
     "WSOP 2026 final table",
     "WSOP 2026 Main Event",
@@ -45,7 +45,7 @@ $10,000,000 | first place — $1,000,000 for ninth
 :::
 
 > **Quick answer**
-> ==**Lucas Jumalon won the 2026 WSOP Main Event**== and ==g:**$10,000,000**==, beating a field of ==**9,208 entries**== that built an ==**$87,568,080**== prize pool. He took the title at ==**22 years old**==, having walked into the final table with ==g:**194,000,000 chips (129 big blinds)**== — more than the next three stacks combined — and holding the lead until the last hand. Play ended ==**August 5**==. Runner-up ==**Lauri Saaskilahti**== earned ==**$6,000,000**==, and ninth place still paid ==**$1,000,000**==.
+> ==**Lucas Jumalon won the 2026 WSOP Main Event**== and ==g:**$10,000,000**==, beating a field of ==**9,208 entries**== that built an ==**$85,634,400**== prize pool. He took the title at ==**22 years old**==, having walked into the final table with ==g:**194,000,000 chips (129 big blinds)**== — more than the next three stacks combined — and holding the lead until the last hand. Play ended ==**August 5**==. Runner-up ==**Lauri Saaskilahti**== earned ==**$6,000,000**==, and ninth place still paid ==**$1,000,000**==.
 
 ---
 
@@ -151,7 +151,7 @@ Event #82, the $10,000 No-Limit Hold'em World Championship, ran four Day 1 fligh
 | | 2026 Main Event |
 |:---|:---|
 | **Entries** | ==**9,208**== — fourth-largest field ever |
-| **Prize pool** | ==g:**$87,568,080**== |
+| **Prize pool** | ==g:**$85,634,400**== |
 | **Countries represented** | ==**111**== — a record |
 | **Non-American entries** | 3,574 (==**38.8%**==) |
 | **American entries** | ==g:**5,634**== — the largest national contingent |
@@ -198,7 +198,7 @@ The 57th WSOP ran ==**May 26 through July 15**== across the Horseshoe and Paris 
 
 </div>
 
-Prize money was the ==r:second-highest ever==, not the highest — 2025 still holds that record at $481,761,919. More people played for slightly less money, which is what happens when a record share of the volume comes from the cheap end of the schedule.
+Prize money was the ==r:second-highest ever==, not the highest — 2025 still holds that record at $481,761,879. More people played for slightly less money, which is what happens when a record share of the volume comes from the cheap end of the schedule.
 
 **Bracelets by country, across the 99 events that finished before the Main Event:** ==**USA 58**==, Canada 7, then China, the UK and Japan on 4 apiece and Brazil on 3. American players won more than five times as many bracelets as the next country. The hundredth bracelet — the Main Event — went to an American too: Jumalon.
 
@@ -216,26 +216,26 @@ The WSOP's own site promotes online qualifying with the line ==**"Qualify for as
 
 **What Americans actually have:**
 
-- **Online:** ==**WSOP.com**==, which operates in ==g:**Nevada, New Jersey, Michigan and Pennsylvania**== only. If you don't live in or travel to one of those four states, there is no legal US online route to a seat.
-- **The wider legal map:** online poker is legal in ==**six states**== — Nevada, New Jersey, Michigan, Pennsylvania, Delaware and West Virginia. The four above are where WSOP.com runs.
+- **Online:** ==**WSOP Online**== (formerly WSOP.com), which operates in ==g:**Nevada, New Jersey, Michigan and Pennsylvania**== only. If you don't live in or travel to one of those four states, there is no legal US online route to a seat.
+- **The wider legal map:** online poker is legal in ==**six states**== — Nevada, New Jersey, Michigan, Pennsylvania, Delaware and West Virginia. The four above are where WSOP Online runs.
 - **Live satellites at the series.** This is the route open to anyone who can get to Las Vegas, and it's the one most people underuse.
 
-**What the live satellite menu looked like this year (July 1–6):**
+**What the live satellite menu looked like this year (July 1–7):**
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Satellite | Buy-in | Start | Target stack |
 |:---|---:|:---|---:|
-| Deepstack Step | $150 | 10 a.m. | 200,000 |
+| Turbo step | $150 | 8 a.m. | 100,000 |
 | ==**Landmark**== | ==g:**$585**== | 10 a.m. and 4 p.m. | 200,000 |
-| Turbo | $1,100 | 8 a.m. | 150,000 |
-| Landmark | $2,200 | 7 p.m. | 200,000 |
+| Turbo (July 2–7) | $1,100 | 8 a.m. | 150,000 |
+| Landmark | $2,200 | 7 p.m. | 100,000 |
 
 </div>
 
-These aren't winner-take-all. ==g:Reach the target stack and you're done — you take a $10,000 Main Event seat or $10,000 in chips, your choice.== That structure changes how you play them completely: once you're at the number, every additional chip is worth nothing to you and every hand you play risks the seat. Fold your way in.
+These aren't winner-take-all. ==g:Reach the target stack and you're done — in the $585, $1,100 and $2,200 satellites you take a seat in a $10,000 event (the Main Event is one) or $10,000 in chips, your choice.== The $150 turbo is only a step: hitting its target gets you into a $1,100 Main Event satellite, not the $10,000 seat. That structure changes how you play them completely: once you're at the number, every additional chip is worth nothing to you and every hand you play risks the seat. Fold your way in.
 
-The cash option matters more than it looks. If you hit the target in a $585 satellite and you'd rather have the money than the seat, you take $10,000 in chips and walk. That's a legitimate outcome, not a consolation prize.
+The cash option matters more than it looks. If you hit the target in a $585 satellite and you'd rather have the money than the seat, you take $10,000 in chips and walk. That's a legitimate outcome, not a consolation prize — just know that the satellite rules make any cash payout above $5,000 (net of the satellite buy-in) subject to tax reporting, so if you don't live in the US, check what gets withheld before you choose it.
 
 Planning further ahead? The [live tournament calendar](/en/tournaments) tracks what's running and when, and [tournament vs cash game](/en/blog/holdem-tournament-vs-cash-game "thumb:/images/tournament-table-action.webp") is worth reading before you commit a bankroll to a satellite grind.
 
@@ -274,9 +274,9 @@ The WSOP recommends arriving ==**an hour early**== for that first verification. 
 
 If you've only played online or in a local card room, the floor rules at a WSOP table are stricter than you expect — and one of them is genuinely reassuring.
 
-**There are seven official words:** ==**bet, call, fold, check, all-in, pot**== (Pot-Limit games only), and ==**complete**==. Use them and nothing else can be misread. English only at the table while a hand is live.
+**The rulebook gives seven official words as its examples:** ==**bet, call, fold, check, all-in, pot**== (Pot-Limit games only), and ==**complete**==. Use them and nothing can be misread. Regional terms can qualify too, but anything non-standard is at your own risk. English only at the table while a hand is live.
 
-Here's the reassuring part: ==g:**you don't have to call your hand in English.**== A verbal declaration of hand value isn't binding — the cards decide at showdown. Table your hand face up and the dealer reads it. If you're not fully confident announcing a hand out loud in a room full of pros, that's fine; just know [what beats what](/en/blog/holdem-hand-rankings) so you know when to turn your cards over.
+Here's the reassuring part: ==g:**you don't have to call your hand in English.**== A verbal declaration of hand value isn't binding — the cards decide at showdown. (A verbal bet in turn is the opposite: say "bet" or "all-in" when it's your action and you're held to it.) Table your hand face up and the dealer reads it. If you're not fully confident announcing a hand out loud in a room full of pros, that's fine; just know [what beats what](/en/blog/holdem-hand-rankings) so you know when to turn your cards over.
 
 <div style="background:rgba(255,248,210,0.06);border:1px solid rgba(255,240,180,0.25);border-radius:12px;padding:20px 24px;margin:20px 0">
 <div style="font-size:13px;font-weight:700;color:hsl(var(--primary));margin-bottom:14px">Table Conduct — the Short Version</div>
@@ -286,7 +286,7 @@ Here's the reassuring part: ==g:**you don't have to call your hand in English.**
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(255,150,0,0.12);border:1.5px solid rgba(255,150,0,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#ff9600">!</span><span>No phone, tablet, laptop or <strong>headphone case</strong> on the table</span></div>
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span><strong>Headphones are allowed through the final three tables</strong> — but devices with AI features are banned</span></div>
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span>Sunglasses and hoodies are fine — <strong>covering your face is not</strong></span></div>
-<div style="display:flex;align-items:center;gap:10px;padding:7px 0"><span style="width:18px;height:18px;border-radius:4px;background:rgba(255,150,0,0.12);border:1.5px solid rgba(255,150,0,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#ff9600">!</span><span>Re-entry only exists in re-entry events, and <strong>only with a zero stack</strong></span></div>
+<div style="display:flex;align-items:center;gap:10px;padding:7px 0"><span style="width:18px;height:18px;border-radius:4px;background:rgba(255,150,0,0.12);border:1.5px solid rgba(255,150,0,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#ff9600">!</span><span>Re-entry only exists in re-entry events, and <strong>only with a zero stack</strong> — except at the close of registration, when you may forfeit your stack and buy back in</span></div>
 </div>
 </div>
 
@@ -311,7 +311,7 @@ A. It aired on ESPN2 on August 3 from 9:00 PM to midnight ET, then on ESPN on Au
 
 **Q. How much did the WSOP Main Event winner get in 2026?**
 
-A. $10,000,000. Second place took $6,000,000, third $3,750,000, and ninth $1,000,000 — every player at the final table cashed for at least seven figures. The full prize pool across 9,208 entries was $87,568,080, paid out to the top 1,383 finishers.
+A. $10,000,000. Second place took $6,000,000, third $3,750,000, and ninth $1,000,000 — every player at the final table cashed for at least seven figures. The full prize pool across 9,208 entries was $85,634,400, paid out to the top 1,383 finishers.
 
 **Q. Who is Lucas Jumalon?**
 
@@ -319,7 +319,7 @@ A. The 2026 WSOP Main Event champion — a 22-year-old from Spokane, Washington,
 
 **Q. Can US players qualify for the WSOP Main Event online?**
 
-A. Only in four states. The "Qualify for as Little as $0.50" satellite ladder the WSOP promotes runs on GGPoker, which US players cannot use. For Americans the online route is WSOP.com, which operates in Nevada, New Jersey, Michigan and Pennsylvania. Online poker is legal in six states overall — those four plus Delaware and West Virginia. Everyone else's realistic path is a live satellite in Las Vegas during the series.
+A. Only in four states. The "Qualify for as Little as $0.50" satellite ladder the WSOP promotes runs on GGPoker, which US players cannot use. For Americans the online route is WSOP Online (formerly WSOP.com), which operates in Nevada, New Jersey, Michigan and Pennsylvania. Online poker is legal in six states overall — those four plus Delaware and West Virginia. Everyone else's realistic path is a live satellite in Las Vegas during the series.
 
 **Q. What do I need to register for a WSOP event in person?**
 
@@ -336,16 +336,17 @@ A. It depends on the card. Credit cards and PayPal carry a 2% fee, so a $10,000 
 1. **Lucas Jumalon won it at 22 for $10,000,000**, becoming the second-youngest Main Event champion behind Joe Cada.
 2. **He came in with 194,000,000 chips** — more than the next three stacks combined, which had never happened at a nine-handed WSOP final table since 2001 — and never lost the lead.
 3. **The chip order did not hold below him.** The second-biggest stack finished sixth; the seventh-biggest finished second for $6,000,000. Ninth place still paid $1,000,000.
-4. **9,208 entries from a record 111 countries** built an $87,568,080 prize pool paid to the top 1,383; 5,634 of those entries were American.
-5. **The $0.50 qualifying ladder is not open to US players** — that's GGPoker. Americans have WSOP.com in four states, or live satellites in Las Vegas from $150.
+4. **9,208 entries from a record 111 countries** built an $85,634,400 prize pool paid to the top 1,383; 5,634 of those entries were American.
+5. **The $0.50 qualifying ladder is not open to US players** — that's GGPoker. Americans have WSOP Online in four states, or live satellites in Las Vegas from $150 (that one is a step into a $1,100 satellite).
 
 ---
 
 ## Sources
 
-Every figure above was checked against primary sources. **Verified: July 29, 2026** — final results and payouts re-verified **August 6, 2026**, and the card-payment fees re-verified against the official rulebook PDF on **August 15, 2026.**
+Every figure above was checked against primary sources. **Verified: July 29, 2026** — final results and payouts re-verified **August 6, 2026** (prize pool and End Date re-checked **September 16, 2026**), and the card-payment fees re-verified against the official rulebook PDF on **August 15, 2026.**
 
-- **★Final results and payouts** *(verified Aug 6, 2026)* — [WSOP official result, Event #82](https://www.wsop.com/tournaments/result/619/) · champion Lucas Jumalon (United States) $10,000,000, all nine finishing positions with country and payout, end date August 5 (official page End Date field reads "Aug 05 01:48 AM"), 9,208 entries, 1,383 paid, **prize pool $87,568,080**
+- **★Final results and payouts** *(verified Aug 6, 2026; prize pool and End Date re-checked Sep 16, 2026)* — [WSOP official result, Event #82](https://www.wsop.com/tournaments/result/619/) · champion Lucas Jumalon (United States) $10,000,000, all nine finishing positions with country and payout, end date August 5 (the official page's End Date field), 9,208 entries, 1,383 paid, **prize pool $85,634,400**. When we first read this page on Aug 6 it showed $87,568,080; it now shows $85,634,400 — exactly $9,300 × 9,208, and the same figure ESPN reported
+- **Live satellite menu** *(checked Sep 16, 2026)* — "2026 Landmark Satellites All-In-One.pdf", linked from the [official 2026 schedule](https://www.wsop.com/tournaments/2026-57th-annual-world-series-of-poker/) · start times, target stacks and prizes for each satellite, and the tax-reporting line for cash payouts
 - **★All 100 bracelets awarded** *(verified Aug 6, 2026)* — [WSOP official 2026 event schedule](https://www.wsop.com/tournaments/2026-57th-annual-world-series-of-poker/) · the Winner column was read for every row from Event #1 to #100 — **all 100 have a champion**, no gaps
 - **Final table field, seats and stacks** — [WSOP — The 2026 World Series of Poker Main Event Reaches Its Final Table](https://www.wsop.com/news/the-2026-world-series-of-poker-main-event-reaches-it-s-final-table/) · the official nine, chip counts, and the three-week delay
 - **Final table confirmation, remaining payouts, and the Jumalon profile** — [PokerNews](https://www.pokernews.com) · the "more than the next three players combined" stat, Hendon Mob career earnings, the Day 8 run and the Trayner hand

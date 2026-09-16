@@ -18,7 +18,7 @@
 | **Q2-c** | **결재 7 잔여 — T2 3자리(이미지↔캡션 무관)** | 브리프 `queue-Q2-이미지.md` **§8**: `limping:64`(리밍의 비용 인포 or 삭제) · `limping:116`(아이솔레이트 레이즈 인포 or 삭제) · `drawing-odds:58`(셋마이닝 11.8% · 7.5:1 인포) — 8로케일 동형(+3장 · +24행). 규격·팔레트·«값을 말하지 않는다» 규율은 Q2-b 그대로 | **Opus 전 구간 · 1세션** | ✅ | (아래 §1-Q2-c) | 렌즈 4종+2차 교열 = 지적 **37**(원 41 · 렌즈 간 중복 4 제거) · 반영 **28** · 기각 **5** · 등재만 **3** · 경미 미반영 **1** | 09-12 |
 | ~~Q3~~ | **EN 56편 `updated` 전수 대조** — ✅ **종결(신설 시점 실측 · 회차 불요)** | 실측 2026-09-11: EN 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · `2c9012c7` · «올리지 않는다» 판정 이미 완료) · 창 밖 5 = `8d2aba44` CSS 수리 2 · `a069430a` tldr 별표 제거 2 · `index.ts`(포스트 아님) → **전부 §1-C «기계적 변경은 안 올린다»에 해당**. `en-first-queue` §3의 「이미 잡힌 6건」은 `fd8cafc0`로 닫혀 있다(현재 파일에 남은 어긋남 0). 재현 = 셸 한 줄(파일별 `git log -1 --date=short` ↔ `updated` 비교) — Q7에서 `check:stamp --locale=en` 게이트로 박는다. **§3 잔여(경쟁 페이지 언급 3곳 · EN↔pt FAQ 개수 · game-order 「who bets first」)는 Q4-a로 이관** | — | ✅ | (실측만 · 커밋 없음) | — | 09-11 |
 | **Q4-a** | **EN-먼저 묶음 I — 미결·동형** | `en-first-queue` §2-D **J#8**(ept-barcelona €330 ↔ €825 · 공식 일정 축어 확보 후) · §2-E **X-1**(blind-meaning 「Nobody gets to skip their turn」 · WSOP Live Action §155~158 · Tournament §85) · 핸드오프 「대회·사실 판정」 절의 **EN 동형 30건**(M-089 §4 잔여 = bad-beat #12 ~62% · betting-actions 103조 두 요소 · flush-vs-straight SF 5장/7장 라벨 · 목록 `docs/reply-to-review-2026-09-04-m089.md` §2·§4) · `tiebreak-rules` L232 「Rule 85」 룰북 한정어 · **Q3 이관분**(경쟁 페이지 언급 3곳 · EN↔pt FAQ 개수 bubble·short-stack·tournament·icm · game-order title 「who bets first」) · 🆕 **ja 회차 13 §5-K 이관**(`harden-ja-진행` §5-K · 09-11 머지): **K1** `when-to-fold` 셀프체크 ⑤ 「(= a bluff-catcher)」 EN L141/L153 + 8로케일(D유형) · **K3** = J#8과 같은 자리(ept €330 H2·비교표 — 블록만 €825로 갈려 있다) · **K4** `tiebreak-rules`↔`kicker` «キッカーなし 족 개수» 5 vs 4 — 헤드 실측(09-11): **EN도 같다**(kicker FAQ L184 「Straights, flushes, full houses, and straight flushes」 = 4 · tiebreak 표 L84~89 = 로열 행 별도 5) → 로열 = 스트레이트플러시라 둘 다 참 · **결함 아님** · 통일은 선택(kicker FAQ에 「(royal included)」 한 마디 · 8로케일) · **K2**(bad-beat 63%) = 🔴 **결재 15 재론 금지**(≈63% 유지 · 65.0%/1.86으로 되돌리지 마라). 🔴 헤드 실측(09-11): 결재 15의 **행 문구 «nine outs plus live side cards»가 EN L92·ja L105에 아직 없다**(「9-out flush draw fills on the river」 그대로 · `en-first-queue` §1 ③과 같은 자리) → **결재 15 이행 = EN L92 행 문구 + 8로케일** · 🆕 **ja 회차 14 §5-L 이관**: **L1** `holdem-straddle` EN L88·L169·히어로 캡션 L69 「buys the last action」 프레이밍 — 버튼은 원래 포스트플롭 마지막이라 버튼 스트라들이 사는 건 **프리플랍** 마지막 액션뿐(EN L188만 정확) → 한 줄 한정 + 8로케일 · **L2** `holdem-outs` 표 15행(플러시+OESD) 도출 「9 + 8 − 2」 — EN 같은 칸이 산문이면 동형 + 7로케일(ja는 이미 고침) | **Opus 전 구간 · 1세션** — 🔴 재료 실측 후 재조정(§5-A-3): EN 쪽이 «짧은 한정어 10자리»로 줄어 새 문장 집필 구간이 없었다 | ✅ | (아래 §1-Q4-a) | 렌즈 4종+2차 교열 = 지적 **59** · 반영 **43** · 기각 **6** · 이관 **7** · 기록만 **3** | 09-12 |
-| **Q4-b** | **검수장 MA-118 요청 2 — es 대회 2편** | `como-entrar-al-wsop`·`wsop-2026-tournament-guide`(es) WRONG 15·RISKY 10·STALE 2 + **LISR 138조 웹 실측**(멕시코 소득세법 · 1차 출처) · 원장 = `홀덤검수-es/ledger/` · EN 동형이면 EN-먼저 | **Opus 전 구간 · 1세션**(번역 QA·법령 실측 = Opus · 새 문장은 원장 처방 이식) | ⏳ | | | |
+| **Q4-b** | **검수장 MA-118 요청 2 — es 대회 2편** | `como-entrar-al-wsop`·`wsop-2026-tournament-guide`(es) WRONG 15·RISKY 10·STALE 2 + **LISR 138조 웹 실측**(멕시코 소득세법 · 1차 출처) · 원장 = `홀덤검수-es/ledger/` · EN 동형이면 EN-먼저 | **Opus 전 구간 · 1세션**(번역 QA·법령 실측 = Opus · 새 문장은 원장 처방 이식) | ✅ | (아래 §1-Q4-b) | 렌즈 4종 지적 **46**(렌즈 간 중복 약 10) + 2차 교열 **16** · 반영 **34 + 15** · 기각 **5** · 이관 **5** · 기록 **3** | 09-16 |
 | **Q5-a** | **EN-먼저 묶음 II — 세션 1 렌즈 38건 판정(전반)** | `en-first-queue` **§1 ①~㉑** · 판정 뒤 EN 정정 → 8로케일 전파 | **Opus 전 구간 · 1세션** — 🔴 재료 실측 후 재조정(§5-A-3): 채택 12건 중 새 문장 집필은 2문장뿐이고 나머지는 **짧은 한정어·표 헤더·기계적 변경·기존 로케일 정본의 이식**이었다(Q4-a와 같은 사유) | ✅ | (아래 §1-Q5-a) | 렌즈 4종+2차 교열 = 지적 **35**(렌즈 간 중복 3 제거 후 **32**) · 반영 **29** · 기각 **2** · 등재만 **1** | 09-13 |
 | **Q5-b** | **EN-먼저 묶음 II — (후반)** | `en-first-queue` **§1 ㉒~㊸**(㉟ 우선 · ㊲는 검수장 판정 산물이라 재론 절차 = MB 초안) | **Opus 전 구간 · 1세션** — 🔴 재료 실측 후 재조정(§5-A-3): 채택 14건이 «짧은 한정어·1차 출처 표 1개·정본 이식»이라 집필 구간이 없었다(Q4-a·Q5-a와 같은 사유) | ✅ | (아래 §1-Q5-b) | 렌즈 4종 지적 **50**(raw 75 · 렌즈 간 중복 25 제거) + 2차 교열 **13** = **63** · 반영 **54** · 기각 **5** · 등재 **4** | 09-13 |
 | **Q6-a** | **표기·용어 통일 + 내부링크 «개수» 축 정밀도** | 브리프 `docs/harden-brief/queue-Q6-a-로케일표기.md` · 핸드오프 「▶ 그밖에 열 수 있는 것」 zh 표기 4갈래 · Q2b-4·6 · pt `holdem-strategy:183` · `check:structure` linkn 94편 | **Opus 전 구간 · 1세션**(판정·치환) | ✅ | `988f1167` | 렌즈 5종 + 2차 교열 = **지적 70 · 반영 41 · 기각 4 · 등재 19** | 09-14 |
@@ -585,6 +585,25 @@ tiebreak L55·L263·L277 ↔ EN L51·L175·L236·L250 · marathon L281 ↔ EN L2
 
 🔴 **스탬프**: 내용이 바뀐 글만 `updated` 09-16(25편) · `masterUpdated` 무변경(EN 델타 대조 회차가 아니다).
 
+### §1-Q4-b. 회차 Q4-b 산출 — 검수장 MA-118 요청 2 이행(es 대회 2편) + EN-먼저 6로케일 (2026-09-16)
+
+**한 일** — 재료 = 검수장 원장 `홀덤검수/ledger/es/{como-entrar-al-wsop,wsop-2026-tournament-guide}.md`(본부본 = 레인본 바이트 동일) 비OK 27행(WRONG 15 · RISKY 10 · STALE 2) + UNV #108(LISR). 🔴 **착수 실측에서 «es 2편 회차»가 아니었다** — 상금풀·2025 총상금·위성 표·End Date 4종이 **EN·KO·ja·zh·zh-hant 같은 슬러그 + `/tournaments` 보드 10자리**에 동형으로 있었다 → EN-먼저로 **11파일**. 🔴 **배포가 걸린 회차다.**
+
+| 묶음 | 판정·결과 (1차 출처 = 이 회차가 직접 연 것 · 09-16) |
+|---|---|
+| **ME 상금풀** | 🔴 **$87,568,080 → $85,634,400**. 공식 결과 페이지 `wsop.com/tournaments/result/619` 오늘 원문 = 「Entries 9,208 · Prize **$85,634,400** · End Date Aug 05 07:52 PM · ITM Top 1,383」 · 9,208 × $9,300 = 정확히 일치(2025 = 9,735 × $9,300 = $90,535,500 = KO wsop-2025 글의 9,053만과 같은 구조) · ESPN과 동일. **08-06 본체 판정($87,568,080 = 공식)은 그날 페이지 값이었고 그 뒤 페이지가 바뀌었다** → Q6-c가 오늘 보드를 $87,568,080으로 맞춘 것(MB-053 ②)을 **되돌렸다**. 포스트 6로케일 tldr·직답·표·FAQ·imageAlt(8,757만 → 8,563만) + 보드 10자리 + 출처란 «08-06엔 $87,568,080이었고 지금은 $85,634,400» 이력 |
+| **2025 총상금** | $481,761,919 → **$481,761,879**(WSOP 2025 보도자료 원문) · 6로케일 × 2자리 |
+| **현장 위성 표** | 공식 「2026 Landmark Satellites All-In-One.pdf」(일정 페이지 직링크 · 1,592,690 B) 원문 대조 → $150 = **Turbo · 8 AM · 목표 100,000 · 보상 = $1,100 ME 위성 참가권** · $2,200 목표 **100,000** · 제목 7월 1~**7**일. 🔴 **원장 #121(「$1,100은 13:00·Turbo 아님」)은 불완전** — PDF에 「$1,100 TURBO … JULY 2–7 AT 8 AM · 150,000」이 **따로 있다**(우리 행이 맞고 날짜만 달랐다) → 13:00으로 고치지 않았다. 「Deepstack Step」은 공식 PDF 9종 어디에도 없다. 보상 문장 = «$585·$1,100·$2,200은 $10,000 이벤트 좌석(ME 포함) 또는 칩 / $150은 한 계단» + 🆕 **현금 수령 «바이인 제외 $5,000 초과 = 세금 신고 대상»**(PDF 16곳 공통 문구 · 렌즈 1 D유형) |
+| **룰북 조문** | 2·4·9·10·12·13·14·16·35·36·59·69·90.d조 원문 대조 전건 원장 일치. es: 9조 «textualmente» 인용 = **alien registration card** · 59조 «like»(예시 · 지역 용어 가능 · 비표준은 본인 책임) · 69조 ↔ 90.d(베팅 선언은 구속) · 13조 리엔트리 예외 · 16조 No-show. **EN-먼저 3**: 59조 «예시» · 90.d 대비 · 13조 예외 → EN + KO·ja·zh·zh-hant |
+| **como-entrar** | #1~#3 «21세 유일 요건» → 21세 + 신분증 + 무료 계정 2개 + 이벤트별 조건 · #9 matrícula 발급처(**SRE 원문 Playwright 실측** = 「expiden las Representaciones de México en Estados Unidos de América y Canadá」 · 「solo」는 원문에 없어 안 썼다) · #14 «웹에 안 올라온다» → PDF도 공개 · #25 티켓 소진 조건(4조 «if the buy-in amount is equal to or greater») · #30 지각 → 사전등록/레이트등록 구분 + No-show + 바이인 보관(16조) · #37·#39·#42 Circuit → **wsop.com/circuit 오늘 일정**: 🆕 Panamá(Sortis) 11/5~15 · **Super Circuit LATAM Punta Cana 2027-01-24~02-02** · Choctaw 10/28~11/9 · Caesars S. Indiana 10/22~11/2 · Hard Rock Tulsa(9/7 종료) 삭제 · #43 WSOP Online(4조 g 「formerly WSOP.com」) · #45 W-2G 기준선 |
+| **LISR 138조** | 하원 텍스트(정부 사본 `sncf.gob.mx` · 표기 «Última reforma DOF 30-11-2016») 원문: 적용 범위 = 「**organizados en territorio nacional**」 · 6%는 연방세가 아니라 **주세 문턱**(주세 ≤6%면 연방 1% · 초과면 21% — 복권·추첨·경연 문단 한정) · 내기 게임 문단은 1%. → es 본문·보드 FAQ = «1% ISR 체계는 국내 개최 한정 · WSOP 상금은 거기서 원천징수 안 됨 · 신고는 세무사에게». 🪶 diputados.gob.mx·sat.gob.mx는 이 환경에서 여전히 타임아웃/ECONNREFUSED |
+| **#22 Rodriguez** | 라이브 재확인도 충돌 그대로(뉴스 = Peru · 결과표 #39 = Argentina) → 원장 처방대로 **국적 단정 회피 문안** + 출처 2줄 |
+| 🆕 **곁에서 찾은 것** | 보드 EN·es FAQ «카드 3% · ME는 한 번에 결제 불가»(08-15 `3decddaa`가 포스트만 고치고 보드는 남겼다) → 룰북 5조·4조 a 기준 재작성 · KO 형제 글 2곳 «카드 3% 수수료»(`holdem-tournament-tax-guide` 표 · LEGACY `wsop-2025-tournament-guide` 안내 박스) → 2% · es imageAlt가 사진 묘사였는데 히어로는 요약 카드 → 카드 내용으로 |
+| **§13** | 핸드 예시 없음. 산수 = 9,208 × $9,300 = $85,634,400 · 8,563만 · KO «한화 약 1,200억»(같은 글 $10M = 140억의 1,400원 기준 → 1,198.9억) — 레인 + 렌즈 1·3·4 독립 일치 |
+| **게이트** | audit:hard 손댄 8편 × 로케일 🔴 0 · answer-echo 🔴 0(🟠 46 불변) · hangul·cjk·hygiene·seo-sync 0 · faq-schema 🔴 0 · directives 0 · drift 🔴 6 = **기존 ar 6**(신규 0) · structure 핵심 0 · tournament-numbers 값 0(설명문 6 = 기존 holdem-masters-8) · numfmt es 혼용 2 = **기존**(HEAD 판 대조로 확인 · §2) · build ✅ 70 + intl 577 |
+
+🔴 **스탬프**: 내용이 바뀐 11파일 중 포스트 9편 `updated` 09-16 · 로케일 4편(es·ja·zh·zh-hant wsop) `masterUpdated` 09-16(EN 08-15 이후 델타 = `8d2aba44` CSS뿐 → 실물 대조 완료) · EN `updated`·`masterUpdated` 09-16(사실 정정 — 문턱 통과). `lib/tournaments.ts` `verifiedAt`(= `sourceUrl` 일정 페이지의 날짜·바이인 확인일)은 **올리지 않았다**(그 값들을 재대조하지 않았다).
+
 ## 2. 미결 (해결될 때까지 유지)
 
 - ✅ ~~`lib/render-markdown.ts:200`이 모든 이미지에 `width="1200" height="630"`~~ → **Q7-a에서 닫았다.** 파일별 실제 치수표
@@ -659,6 +678,15 @@ tiebreak L55·L263·L277 ↔ EN L51·L175·L236·L250 · marathon L281 ↔ EN L2
   `check:directives`·`check:faq-schema`는 `.next` **빌드 산출물**을 읽으므로 «빌드가 편집보다 뒤»여야 유효하다 ·
   🔴 **`check:stamp`는 커밋 전 작업 트리를 못 본다**(`scripts/check-stamp.mjs` 머리글 L16이 자기 사각으로 적어 뒀다) → **스탬프 판정은 커밋 뒤에 확인**한다.
   🪶 인용부호 축은 **Q6-b가 `check:hygiene`에 게이트를 신설해 닫았다**(셀프테스트 25/25).
+
+- 🆕 🟠 **Q4-b가 남긴 것**(2026-09-16):
+  - **es 형제 글 `poker-en-las-vegas`에 como-entrar와 같은 명제 3종이 남아 있다**(렌즈 4 실측): L140 「Lo único que exigen es 21 años…」 · L256 「solo exige 21 años…」 · L142 matrícula 발급처 부재 + WSOP.com 명칭(형제 `nueva-jersey`·`dinero-real`도 WSOP.com). 원장 밖 · es 고유 글 → 다음 queue 회차 재료(EN 동형 없음).
+  - **KO `wsop-2025-tournament-guide`(LEGACY) `audit:hard` 🔴 2 = 기존 부채**(desc 114자 · emoji 필드 공백 `" "`) — Q4-b는 안내 박스 한 구절만 만졌다(HEAD 판도 같은 🔴 2). KO 정정 회차 몫.
+  - **como-entrar 히어로 이미지 문구**「21 años y una identificación. Ni ciudadanía, ni visa.」(imageAlt 동형)가 새 본문(«+ 무료 계정 2개»)보다 좁다 — 거짓은 아니다. 재제작 여부는 **사장님 판단**(§5 Q4b-6).
+  - **수치 기준이 형제끼리 갈린 자리(①원본 · 기록만)**: es wsop L397 「no vamos a darte un porcentaje」(미국 원천징수) ↔ como-entrar 「30%」 · KO·ja·zh 개요 표 바이인 「$500~」 ↔ como-entrar·보드 「$300」(Gladiators).
+  - **원장 UNV 20행(wsop) + 2행(como)은 그대로다** — 인물 신상 · PokerGO · YouTube 99편 · ESTA 카드 목록/23분 · GGPoker 사다리(404/403) · 「111개국 기록」 최상급 · 35,157 정의 · 「el proceso cambió」(2025 룰북 대조 필요). STALE #59 ESTA US$40,27은 **2027-01-01 만료**(캘린더 요청 §5).
+  - **LISR 텍스트는 «최종개정 DOF 30-11-2016» 표기 사본**이다 — 138조가 그 뒤 개정됐는지는 diputados.gob.mx 현행판으로 확인해야 하는데 이 환경에서 도달 불가(curl 타임아웃 · WebFetch ECONNREFUSED). 글은 «국내 개최 한정 · 1%»만 쓰고 6/21% 세부는 뺐다(렌즈 1·2).
+  - zh·zh-hant `wsop-2026` 표 행 「重买/重買」은 re-entry를 가리키는데 중화권 관용상 rebuy에 가깝다(렌즈 3 · ①원본) → **로케일 레인 판정**(§5 Q4b-4).
 
 ## 3. 되돌리지 마라
 
@@ -830,7 +858,16 @@ tiebreak L55·L263·L277 ↔ EN L51·L175·L236·L250 · marathon L281 ↔ EN L2
 
 - 🆕 **Q6-c — 다시 열지 마라**:
   - 중국 본토 **단체 무비자는 2026-12-31까지 연장**(지정 여행사 · 3인 이상 · 체류 15일 · 개인은 C-3-9 필요). «6/30 만료»로 되돌리지 마라 — 정본 문서 9개도 같이 고쳤다. 12-31 이후는 재실측(시한 항목 → §5).
-  - `/tournaments` 보드의 WSOP 2026 상금풀 = **$87,568,080(공식)**. ESPN값은 출처 설명 문장에만 남는다.
+
+- 🆕 **Q4-b — 다시 열지 마라**:
+  - **WSOP 2026 ME 상금풀 = $85,634,400**(공식 결과 페이지 result/619 · 09-16 원문 · 9,208 × $9,300 · ESPN 동일). $87,568,080은 **08-06에 그 페이지가 보인 값**이고 지금은 없다 → 출처란 이력 서술에만 남긴다. 포스트 6로케일 · 보드 10자리 · 히어로 이미지($85.6M) 전부 같은 값이다.
+  - 2025 총상금 = **$481,761,879**(WSOP 보도자료) — 업계 매체의 …919로 되돌리지 마라.
+  - 현장 위성 표: **$1,100 Turbo 8 AM · 150,000은 맞다**(PDF 「JULY 2–7」) — 원장 #121의 「13:00」으로 바꾸지 마라. $150은 **Turbo · 8 AM · 100,000 · 보상 = $1,100 위성 참가권**, $2,200 목표 **100,000**.
+  - matrícula 발급처 = **«미국·캐나다 주재 멕시코 공관»**(SRE 원문) — 「solo」를 붙이지 마라(원문에 없다) · 「여권이면 충분」을 쓰지 마라(같은 글의 «여권엔 주소 없음 → 2차 서류»와 충돌 · 2차 교열).
+  - Rodriguez 국적은 **단정하지 않는다**(WSOP 두 페이지가 갈린다 · 원장 #22 «뒤집지도 마라»).
+  - 멕시코 세금 = «138조 1% 체계는 국내 개최 한정» — 「6% + 1%」를 WSOP 상금에 적용되는 것처럼 되살리지 마라 · 6%/21% 세부도 다시 넣지 마라(복권·경연 문단 한정 · 내기 게임 문단엔 없다).
+  - 보드 카드 결제 = **신용·PayPal 2% · 체크카드 0 · 한도는 바이인 기준 → ME는 카드 한 장 가능**(룰북 5조·4조 a) — «3% · 한 번에 불가»로 되돌리지 마라.
+  - Hard Rock Tulsa 행은 **삭제가 맞다**(9/7 종료 · Circuit 공식 목록에 없음). 멕시코시티(Big Bola) 스톱은 **이미 종료돼 공식 목록에서 빠졌다** — 원장 처방 «표에 추가»는 시한이 지나 이행하지 않았다(§5 Q4b-1 앵커 통지).
   - echo 등재 3행은 **값 표현만**이다 — 산문을 감싼 겹침(ja EPT 「市内で別路線を経由して」 · zh 마라톤 「截止日按渠道而定」 · ko 펍 「합법요건(…)을확인한」)을 다시 등재하지 마라.
   - `check:answer-echo` 등재 판정은 **hit 루프 안 · 완전 일치**다. 블록 대표(picked)에 걸거나 «포함»으로 바꾸면 산문 겹침이 조용히 사라진다(셀프테스트 J2·J3가 막는다).
   - zh `holdem-strategy` VPIP 15–22% · zh-hant shc 「AK 約 47%」 문장은 **이 회차가 일부러 안 고쳤다**(전자 = zh 회차 4 «되돌리지 마라» · 후자 = EN-먼저 §5).
@@ -891,6 +928,25 @@ tiebreak L55·L263·L277 ↔ EN L51·L175·L236·L250 · marathon L281 ↔ EN L2
   **PDF는 어떤 게이트도 안 보는 자리**다) ② `/hand-chart` 도구의 「UTG 약 12%」는 **핸드 «타입» 비율**(21/169)인데
   블로그의 13%는 **콤보 비율**이다. 같은 화면에 두 기준이 섞여 있다 — 도구 라벨은 이번 회차 범위 밖이라 안 건드렸다.
 - ✅ (신설 시점 · 헤드 자체 처리) `en-first-queue` §3 첫 불릿 「EN 56편 `updated` 전수 대조」 = 종결 표시(실측 근거 위 Q3 행).
+
+### Q4-b (2026-09-16 · EN 1 + KO 3 + ja 1 + zh 1 + zh-hant 1 + es 2 + 대회 데이터 2 — **배포가 걸린 회차다**)
+
+- 🔴 **Q4b-1 MB 초안**(EN 변경 = MA-123 요청 1 상시 통지 + **MA-118 요청 2 이행 회신** + **MB-053 ② 역전 통지**):
+  > queue 회차 Q4-b — **MA-118 요청 2(es 회차 1 · WRONG 15 · RISKY 10 · STALE 2) 이행**. 바뀐 것 = EN `wsop-2026-tournament-guide` + KO·ja·zh·zh-hant·es 같은 슬러그 · es `como-entrar-al-wsop` · KO `holdem-tournament-tax-guide`·`wsop-2025-tournament-guide`(각 한 구절) · `lib/tournaments.ts`·`lib/tournaments-i18n.ts`.
+  > ① 🔴 **MB-053 ②를 뒤집는다 — 보드·포스트 ME 상금풀 = $85,634,400**(result/619 09-16 원문 · 9,208 × $9,300 · 귀측 원장 #32·#118과 동일). 08-06 본체가 본 $87,568,080은 그 뒤 페이지에서 사라졌다. 앵커 「85,634,400」 = 포스트 6로케일 본문·표·FAQ + 보드 10자리에 **있어야 정상** · 「87,568,080」은 **출처란 이력 서술 6자리에만** 남는다(0-감시로 걸려면 «출처란 밖»으로 좁혀 달라). 회귀 `es-round1`의 「85.634.400 | 0」 0-감시는 **이행 신호로 뒤집힌다**.
+  > ② 2025 총상금 …879(6로케일) · 위성 표(6로케일) · End Date 시각 삭제(6로케일) · 13조 리엔트리 예외(6로케일) · **EN-먼저 3**(59조 «예시» · 90.d 베팅 선언 구속 · 위성 현금 $5,000 세금 신고) → EN + 4로케일.
+  > ③ 🔴 **원장 #121 판정 불완전** — 위성 PDF에 「$1,100 TURBO … JULY 2 – 7 AT 8 AM · 150,000」이 별도로 있다 → 우리 행(8시·150,000)은 맞고 날짜 범위만 7월 2~7일로 고쳤다. 원장에 «#121 대체 근거 = PDF $1,100 TURBO 블록»을 남겨 달라(13:00으로 되돌리는 재지적 방지).
+  > ④ 원장 #37·#42 처방 «Big Bola 행 추가»는 **시한 경과로 미이행**(8/31~9/11 종료 · wsop.com/circuit 목록에서 빠짐) → 대신 Panamá(11/5~15) · Super Circuit LATAM Punta Cana(2027-01-24~02-02) 추가 · Hard Rock Tulsa 삭제. 회귀 「Big Bola | 0」 0-감시는 **무효**(재조준 요청).
+  > ⑤ #22 Rodriguez = 국적 단정 회피 문안(원장 처방) · #108 LISR 138조 = 정부 사본(sncf.gob.mx)으로 «territorio nacional» 확인 → «WSOP 상금에는 그 1% 원천징수 체계가 적용되지 않는다 · 신고는 세무사» · 6/21% 세부 삭제. 🔴 사본 표기가 «DOF 30-11-2016»이라 현행판 대조는 **귀측·본체 모두 미도달**(diputados.gob.mx).
+  > ⑥ matrícula 발급처 = SRE 원문(Playwright) «Representaciones de México en Estados Unidos de América y Canadá» — 원장 #9 근거 I 재확인.
+  > 🔴 되돌리지 마라: §3 「Q4-b — 다시 열지 마라」 8항.
+- 🟠 **Q4b-2 ja·zh·zh-hant 파일을 만졌다**(§6-0 통지용 · 착수 시점 세 워크트리 **clean** 실측): `lib/posts-ja/wsop-2026-tournament-guide.ts` · `lib/posts-zh/wsop-2026-tournament-guide.ts` · `lib/posts-zh-hant/wsop-2026-tournament-guide.ts` — 상금풀·2025 총상금·위성 표·보상 문장·리엔트리 예외·59조 예시·90.d 대비·21세 FAQ·출처란 · ja H2 「公式用語は7語だけ」 → 「…7語が基本」. `masterUpdated` 09-16.
+- 🟠 **Q4b-3 `docs/update-calendar.md` 요청 2건**: ① **L84~98 「WSOP 2026 결과」 절이 «$85,634,400 → $87,568,080(공식)»·«ESPN은 2차»로 적혀 있다** — 지금은 공식도 $85,634,400이다. 그 절에 «09-16 역전(Q4-b)» 한 줄 + «필드 값이 나중에 바뀔 수 있다 → 결과 페이지 수치는 재열람일을 적는다» 교훈 · ② 시한 행: **es `como-entrar-al-wsop` Circuit 표 = 2026-11-15(Panamá) · 2027-02-02(Punta Cana)** 이후 갱신 · **es wsop ESTA US$40,27 = 2027-01-01**(K-ETA 행과 같은 회차로 묶을 수 있다).
+- 🟠 **Q4b-4 로케일 레인 판정 요청**: zh·zh-hant `wsop-2026` 표 행 제목 「重买/重買」(re-entry 뜻인데 관용상 rebuy) — zh 「再入场」·zh-hant 「重新進場」 후보(렌즈 3 · 확신 중하). 이번 회차는 행 내용(예외)만 넣고 제목은 안 바꿨다.
+- 🟠 **Q4b-5 WORKLOG·정본 기록 요청**: `docs/tournament-spine.md:646`(이미 $85,634,400 — 정합) · `docs/market-profile/ja.md:169`(정합) · `docs/autonomous-run-2026-08-06.md`·`handoff-archive`(이력 문서 — 손대지 않음이 맞다). WORKLOG에 «08-06 판정의 역전 · 원인 = 공식 페이지 값 변경» 한 단락.
+- 🟡 **Q4b-6 사장님 판단 1건**: es `como-entrar-al-wsop` 히어로 이미지(「21 años y una identificación. Ni ciudadanía, ni visa.」)를 «+ 계정 2개»로 재제작할지. 현 문구는 거짓은 아니고 좁을 뿐이다. 재제작 시 imageAlt(L16)도 함께.
+- 🪶 **Q4b-7 `locale-intentional-diffs` 등재 요청 없음** — «일부러 다른» 자리 0. es 전용 추가(Rodriguez 국적 · LISR · matrícula 발급처 · Circuit LATAM 행 · 보드 es 세금 FAQ)는 **독자 시장 차이**라 EN에 올리지 않는다(EN 독자 = 미국).
+- 🪶 **Q4b-8 sitemap**: 포스트 9편 `updated` 09-16 → 머지 뒤 빌드로 `lastmod` 재생성(선례 Q6c-7). IndexNow 대상 = EN·es(2)·ja·zh·zh-hant·KO(3) 포스트 + `/tournaments` 6로케일.
 
 ### Q6-c (2026-09-16 · ja 10 + zh 7 + zh-hant 5 + ko 3 + 대회 데이터 2 + 게이트 1 + 정본 문서 9 — **배포가 걸린 회차다**)
 
@@ -1355,6 +1411,11 @@ pdf-page 19 · number-format 24 · image-dims 8). 전 게이트에 «못 보는 
 ## 6. 자산 축적 체크 (매 회차 마감 3종)
 
 ① 키워드뱅크 — 해당 회차만 ② 편차 판정 → §5 ③ 판정 정본 승격 → §5
+
+**Q4-b**: ① 키워드뱅크 — **해당 없음**(원장 이행·사실 정정 회차 · 키워드·메타 축을 안 건드렸다 · desc 변경 0)
+② 편차 판정 → §5 **Q4b-7**(«일부러 다른» 자리 0 · es 전용 추가는 시장 차이)
+③ 판정 정본 승격 → §3 「Q4-b — 다시 열지 마라」 8항 + §5 **Q4b-3**(캘린더 절 역전 기록 · 시한 2) · **Q4b-5**(WORKLOG 역전 단락) · **Q4b-1 ③**(검수장 원장 #121 대체 근거)
+④ 🪶 **교훈(정본 후보)**: «**공식 페이지의 필드 값도 나중에 바뀐다** — 08-06 판정은 그날 참이었고 09-16엔 거짓이었다. 결과 페이지 수치를 글에 박을 때는 **재열람일**을 출처란에 적고, «공식 vs 2차» 판정을 «되돌리지 마라»로 잠글 때도 **열람일을 같이 잠근다**»(메모리 `absence-may-be-the-standard` 짝 교훈 · 헤드 승격 판단)
 
 **Q6-c**: ① 키워드뱅크 — **해당 없음**(잔여 정리·사실 정정 회차 · 키워드 축을 안 건드렸다)
 ② 편차 판정 → §5 **Q6c-2**(등재 2건) + §4(거울쌍 28편 전건 판정)

@@ -5,16 +5,16 @@ export const POST: Post = {
   seoTitle: "Un joyero de Cancún, US$449.067 y el brazalete: la WSOP 2026",
   title: "WSOP 2026 — guía completa: los brazaletes latinos, la visa desde México y cómo inscribirse",
   desc: "Ganó Lucas Jumalon (US$10.000.000); el mejor hispanohablante, Antonio Galiana, 12.º. Brazaletes hispanos, visa desde México y cómo clasificar desde US$0,50.",
-  tldr: "El Main Event de la 57.ª WSOP se resolvió el 5 de agosto: ganó Lucas Jumalon, estadounidense de 22 años, por US$10.000.000. El mejor clasificado de habla hispana fue Antonio Galiana (España) en el puesto 12.º, con US$510.000 — no hubo hispanohablantes en la mesa final. La serie dejó 251.899 entradas —récord histórico— y US$469.975.059 repartidos en 35.157 puestos pagados, con tres brazaletes hispanohablantes: Ciro González (México, US$449.067), Adrian Mateos (España, US$4.334.411) y Juan Rodriguez (Perú, US$673.011). Ojo con el papeleo: México no está en el Visa Waiver Program, así que con pasaporte mexicano hace falta visa y el ESTA no aplica.",
+  tldr: "El Main Event de la 57.ª WSOP se resolvió el 5 de agosto: ganó Lucas Jumalon, estadounidense de 22 años, por US$10.000.000. El mejor clasificado de habla hispana fue Antonio Galiana (España) en el puesto 12.º, con US$510.000 — no hubo hispanohablantes en la mesa final. La serie dejó 251.899 entradas —récord histórico— y US$469.975.059 repartidos en 35.157 puestos pagados, con tres brazaletes hispanohablantes: Ciro González (México, US$449.067), Adrian Mateos (España, US$4.334.411) y Juan Rodriguez (Perú, según la crónica oficial; US$673.011). Ojo con el papeleo: México no está en el Visa Waiver Program, así que con pasaporte mexicano hace falta visa y el ESTA no aplica.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-09-10",
-  masterUpdated: "2026-08-15",
+  updated: "2026-09-16",
+  masterUpdated: "2026-09-16",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🏆",
   image: "/images/wsop-2026-tournament-guide-hero.webp",
-  imageAlt: "Sala de torneo de la WSOP 2026 en Las Vegas, con decenas de mesas de tapete verde llenas de jugadores y torres de fichas bajo los focos",
+  imageAlt: "Tarjeta resumen de la WSOP 2026 en Las Vegas: 251.899 entradas, 100 eventos de brazalete y un pozo de US$85,6 millones en el Main Event",
   tags: [
     "WSOP 2026",
     "brazalete WSOP mexicano",
@@ -39,7 +39,7 @@ Esa es, para nosotros, la portada de la 57.ª World Series of Poker. Y no fue la
 ---
 
 > **Respuesta rápida**
-> Los eventos de brazalete de la 57.ª WSOP se jugaron del ==**26 de mayo al 15 de julio de 2026**== en el Horseshoe y el Paris de Las Vegas, y la mesa final del Main Event se disputó tres semanas después, del 3 al 5 de agosto. ==**251.899 entradas**== (récord histórico) y ==**US$469.975.059**== repartidos en 35.157 puestos pagados. Tres brazaletes hispanohablantes: ==g:Ciro González (México), Adrian Mateos (España) y Juan Rodriguez (Perú)==. El Main Event lo ganó ==**Lucas Jumalon**== el ==**5 de agosto**== (US$10.000.000) y el mejor de habla hispana fue ==r:**Antonio Galiana (España), 12.º**==. ==r:Con pasaporte mexicano necesitas visa: México no está en el Visa Waiver Program.==
+> Los eventos de brazalete de la 57.ª WSOP se jugaron del ==**26 de mayo al 15 de julio de 2026**== en el Horseshoe y el Paris de Las Vegas, y la mesa final del Main Event se disputó tres semanas después, del 3 al 5 de agosto. ==**251.899 entradas**== (récord histórico) y ==**US$469.975.059**== repartidos en 35.157 puestos pagados. Tres brazaletes hispanohablantes: ==g:Ciro González (México), Adrian Mateos (España) y Juan Rodriguez (Perú, según la crónica oficial)==. El Main Event lo ganó ==**Lucas Jumalon**== el ==**5 de agosto**== (US$10.000.000) y el mejor de habla hispana fue ==r:**Antonio Galiana (España), 12.º**==. ==r:Con pasaporte mexicano necesitas visa: México no está en el Visa Waiver Program.==
 
 ---
 
@@ -89,18 +89,18 @@ Dejó atrás a **Phil Ivey**, a **Jason Koon**, a **Sean Winter** y a **David Ei
 
 ---
 
-## Y Perú también levantó: Juan Rodriguez en el Seniors High Roller
+## Un tercer brazalete hispano: Juan Rodriguez en el Seniors High Roller
 
-**Juan Rodriguez (Perú)** ganó el Evento #39: $5.000 Seniors High Roller No-Limit Hold'em, por ==g:US$673.011==.
+**Juan Rodriguez** ganó el Evento #39: $5.000 Seniors High Roller No-Limit Hold'em, por ==g:US$673.011==. La crónica oficial de la WSOP lo presenta como peruano, pero en la tabla de resultados de la misma web aparece con país «Argentina». Sea de donde sea, el brazalete se lo llevó un jugador de habla hispana.
 
-Con él se cierra la cuenta del verano: ==**tres brazaletes hispanohablantes en 2026**==, repartidos entre México, España y Perú.
+Con él se cierra la cuenta del verano: ==**tres brazaletes hispanohablantes en 2026**==, los de Ciro González (México), Adrian Mateos (España) y Juan Rodriguez.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Evento | Campeón | País | Premio |
 |:---|:---|:---|---:|
 | #41 — $250.000 Super High Roller NLH | Adrian Mateos | España | ==g:US$4.334.411== |
-| #39 — $5.000 Seniors High Roller NLH | Juan Rodriguez | Perú | ==g:US$673.011== |
+| #39 — $5.000 Seniors High Roller NLH | Juan Rodriguez | Perú o Argentina (ver arriba) | ==g:US$673.011== |
 | #65 — $1.500 Freezeout NLH | Ciro González | México | ==g:US$449.067== |
 
 </div>
@@ -122,19 +122,19 @@ La serie se jugó entre el **Horseshoe Las Vegas** y el **Paris Las Vegas**, con
 | Entradas totales | ==g:**251.899**== (récord histórico) |
 | Premios repartidos | ==**US$469.975.059**== |
 | Puestos pagados | **35.157** |
-| Récord de premios | ==r:sigue siendo 2025: **US$481.761.919**== |
+| Récord de premios | ==r:sigue siendo 2025: **US$481.761.879**== |
 | Evento con más gente | #63 $1.000 Mystery Millions — ==**22.811 entradas**== |
 | Ladies Championship | 1.475 entradas |
 
 </div>
 
-Fíjate en el matiz, porque es el titular que casi todo el mundo se come: ==**la WSOP 2026 batió el récord de entradas, no el de dinero repartido**==. Las 251.899 entradas son la marca más alta de la historia, pero los US$469.975.059 se quedaron por debajo de los US$481.761.919 de 2025. Más gente, más torneos baratos, más volumen — y aun así el pico de premios sigue en el año anterior.
+Fíjate en el matiz, porque es el titular que casi todo el mundo se come: ==**la WSOP 2026 batió el récord de entradas, no el de dinero repartido**==. Las 251.899 entradas son la marca más alta de la historia, pero los US$469.975.059 se quedaron por debajo de los US$481.761.879 de 2025. Más gente, más torneos baratos, más volumen — y aun así el pico de premios sigue en el año anterior.
 
 ---
 
 ## Un Main Event con 111 países y casi cuatro de cada diez jugadores de fuera
 
-El Evento #82, el **$10.000 No-Limit Hold'em World Championship**, reunió ==**9.208 entradas**== y un pozo de premios de ==g:**US$87.568.080**==.
+El Evento #82, el **$10.000 No-Limit Hold'em World Championship**, reunió ==**9.208 entradas**== y un pozo de premios de ==g:**US$85.634.400**==.
 
 ![Calendario de los vuelos del Día 1 del Main Event de la WSOP 2026, del 2 al 5 de julio, con las horas de inicio de cada jornada de salida](/images/wsop-2026-main-event-schedule.webp "Los vuelos del Día 1 del Main Event 2026 se repartieron entre el 2 y el 5 de julio")
 
@@ -247,9 +247,9 @@ Lo mismo aplica a ==r:**Argentina, Brasil, Colombia y Perú**==: tampoco están 
 
 ## La matrícula consular sirve en el mostrador de la WSOP — y solo a México
 
-Este es, probablemente, el dato más útil de todo el artículo para un lector mexicano, y también para el paisano que ya vive en Estados Unidos. El reglamento oficial de la WSOP dice, textualmente:
+Este es, probablemente, el dato más útil de todo el artículo para el paisano que ya vive en Estados Unidos (la matrícula la expiden los consulados de México en EE. UU. y Canadá; si viajas desde México, usa el pasaporte y un segundo documento con domicilio). El reglamento oficial de la WSOP dice, textualmente:
 
-> "If a Participant is not a U.S. citizen, Participant must have one of the following that is current, valid, and unexpired: passport, foreign government issued Driver's License (License must have a photograph, date of birth, and a valid expiration date), **Consular ID or Matrícula Consular Card (Mexico only)**, or U.S. Permanent Resident Card (PRC) is required. If the current, valid, and unexpired photo identification does not include a physical address, a second form of ID that indicates physical address will be required. This second form of ID can be a driver's license, utility bill, credit card statement, etc."
+> "If a Participant is not a U.S. citizen, Participant must have one of the following that is current, valid, and unexpired: passport, foreign government issued Driver's License (License must have a photograph, date of birth, and a valid expiration date), **Consular ID or Matrícula Consular Card (Mexico only)**, or alien registration card is required. If the current, valid, and unexpired photo identification does not include a physical address, a second form of ID that indicates physical address will be required. This second form of ID can be a driver's license, utility bill, credit card statement, etc."
 
 Traducido a lo práctico:
 
@@ -260,7 +260,7 @@ Traducido a lo práctico:
 | Pasaporte | Vigente y sin caducar |
 | Licencia de conducir extranjera | Con foto, fecha de nacimiento y caducidad válida |
 | ==g:**Matrícula consular / ID consular**== | ==g:**Solo México**== |
-| Green Card (U.S. Permanent Resident Card) | Vigente |
+| *Alien registration card* (la green card) | Vigente |
 
 </div>
 
@@ -314,11 +314,11 @@ Tres reglas más que cuestan disgustos:
 
 ---
 
-## En la mesa solo se habla inglés — pero no tienes que cantar tu jugada
+## En la mesa solo se habla inglés — pero no tienes que cantar tu mano
 
 Esta es la duda número uno del que viaja sin dominar el idioma, y la respuesta tranquiliza más de lo que la gente espera.
 
-Mientras haya manos en juego, ==**en las mesas solo se habla inglés**==. Pero el vocabulario obligatorio son ==g:**siete palabras**==:
+Mientras haya manos en juego, ==**en las mesas solo se habla inglés**==. Pero el reglamento cita como oficiales ==g:**siete palabras**==, y con ellas no hay malentendido posible (otra jerga no está prohibida, pero la usas por tu cuenta y riesgo):
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -334,7 +334,7 @@ Mientras haya manos en juego, ==**en las mesas solo se habla inglés**==. Pero e
 
 </div>
 
-Y el detalle que quita el miedo escénico: ==g:**no hace falta cantar tu jugada en inglés**==. Las cartas deciden; la declaración verbal no obliga. Si llegas al showdown con la mejor mano, la mesa la lee, digas lo que digas.
+Y el detalle que quita el miedo escénico: ==g:**no hace falta cantar tu mano en inglés**==. En el showdown las cartas deciden, y lo que digas sobre el **valor de tu mano** no te obliga (eso sí, cantarla mal a propósito se sanciona). Si llegas al showdown con la mejor mano, la mesa la lee. Pero no lo confundas: lo que dices en tu turno sobre **la apuesta** —«call», «all-in»— sí te obliga.
 
 ### El resto del reglamento de mesa
 
@@ -342,7 +342,7 @@ Y el detalle que quita el miedo escénico: ==g:**no hace falta cantar tu jugada 
 - ==r:Nada de móvil, tablet, portátil ni funda de auriculares **encima de la mesa**.==
 - **Auriculares**: permitidos ==**hasta las tres últimas mesas**==. ==r:Prohibidos los aparatos con funciones de IA.==
 - **Gafas de sol y capucha**: sí. ==r:Taparse la cara: no.==
-- **Reentrada**: solo en los eventos que la admiten, y ==r:únicamente con cero fichas==.
+- **Reentrada**: solo en los eventos que la admiten, y ==r:con cero fichas== — salvo al cierre del registro, cuando puedes rendir tu stack y volver a entrar.
 
 ---
 
@@ -369,7 +369,7 @@ También hay atajos: se puede entrar **directo al Step 4 por US$150**, o pasar p
 
 > ⚠️ ==r:El número de plazas cambia cada temporada.== Consúltalo en la web oficial antes de sentarte a grindear la escalera.
 
-### Satélites presenciales (1–6 de julio)
+### Satélites presenciales (1–7 de julio)
 
 Si ya estás en Las Vegas, la otra vía es el satélite en vivo:
 
@@ -377,14 +377,14 @@ Si ya estás en Las Vegas, la otra vía es el satélite en vivo:
 
 | Satélite | Entrada | Hora | Stack objetivo |
 |:---|:---:|:---|:---:|
-| Deepstack Step Satellite | US$150 | 10:00 | 200.000 |
+| Turbo Landmark (escalón) | US$150 | 8:00 | 100.000 |
 | Landmark Satellite | US$585 | 10:00 y 16:00 | 200.000 |
-| Turbo Satellite | US$1.100 | 8:00 | 150.000 |
-| Landmark Satellite | US$2.200 | 19:00 | 200.000 |
+| Turbo Satellite (2–7 de julio) | US$1.100 | 8:00 | 150.000 |
+| Landmark Satellite | US$2.200 | 19:00 | 100.000 |
 
 </div>
 
-Al alcanzar el stack objetivo eliges: ==g:**asiento de US$10.000 o US$10.000 en fichas**==. La segunda opción existe, y en más casos de los que parece es la buena.
+En los de US$585, US$1.100 y US$2.200, al alcanzar el stack objetivo eliges: ==g:**asiento en un evento de US$10.000 (por ejemplo, el Main Event) o US$10.000 en fichas**==. La segunda opción existe, y en más casos de los que parece es la buena — solo ten en cuenta que, según las reglas de los satélites, cobrar en efectivo más de US$5.000 (ya descontada la entrada) se reporta al fisco, y si no vives en EE. UU. conviene saber cuánto te retienen antes de elegir. El Turbo de US$150 es solo un escalón: lo que ganas al llegar al objetivo es **la entrada a un satélite de US$1.100 del Main Event**, no el asiento de US$10.000.
 
 ---
 
@@ -392,7 +392,7 @@ Al alcanzar el stack objetivo eliges: ==g:**asiento de US$10.000 o US$10.000 en 
 
 Antes de contar las ganancias, cuenta lo que no es tuyo.
 
-**México.** Los premios de póker en vivo llevan el ==**Impuesto por Obtención de Premios del 6 %**== más un ==**1 % de ISR**==.
+**México.** El ==**1 % de ISR**== que suele citarse para los premios sale del artículo 138 de la Ley del ISR, y ese artículo habla de sorteos, concursos y juegos con apuestas ==**organizados en territorio nacional**==. Un premio de la WSOP se juega y se paga en Las Vegas, así que ese 1 % no te lo retiene nadie allá; eso no quiere decir que no se declare: pregúntale a tu contador cómo se reporta un premio cobrado fuera de México.
 
 **Estados Unidos.** Puede haber ==r:**retención en origen**== sobre los premios de no residentes. Existe y hay que contar con ella; ==r:no vamos a darte un porcentaje==, porque depende del caso.
 
@@ -417,19 +417,19 @@ A. No. ==r:México no está en el Visa Waiver Program==, y el ESTA solo se puede
 
 **Q. ¿Puedo identificarme en la WSOP con la matrícula consular?**
 
-A. Sí. El reglamento oficial acepta ==g:"Consular ID or Matrícula Consular Card (**Mexico only**)"==. Es una excepción exclusiva para México. Eso sí: si tu identificación con foto no incluye domicilio, ==r:te pedirán un segundo documento que sí lo tenga== (licencia de conducir, recibo de servicios, estado de cuenta de tarjeta).
+A. Sí. El reglamento oficial acepta ==g:"Consular ID or Matrícula Consular Card (**Mexico only**)"==. Es una excepción exclusiva para México, y la matrícula la expiden los consulados mexicanos en EE. UU. y Canadá (si viajas desde México, usa el pasaporte). Eso sí: si tu identificación con foto no incluye domicilio, ==r:te pedirán un segundo documento que sí lo tenga== (licencia de conducir, recibo de servicios, estado de cuenta de tarjeta).
 
 **Q. ¿Cuánto cuesta de verdad inscribirse al Main Event con tarjeta?**
 
-A. Depende del plástico. Con **tarjeta de crédito o PayPal** la casa cobra un **2 %**, así que son ==r:**US$10.200**==; con ==g:**tarjeta de débito no hay comisión**== y pagas US$10.000 exactos. Hay un tope de **US$10.000 por transacción**, medido sobre el buy-in del evento y no sobre el total cobrado — el reglamento pone de ejemplo que una misma tarjeta cubre el Main Event de US$10.000 **y** el Monster Stack de US$1.500, pero no un evento de US$50.000. Y ==r:no aceptan tarjetas virtuales ni digitales==: el nombre de la tarjeta debe coincidir con el de tu documento.
+A. Depende del plástico. Con **tarjeta de crédito o PayPal** la casa cobra un **2 %**, así que son ==r:**US$10.200**== (la página de inscripción todavía dice 3 %: revisa el monto final en la pantalla de pago); con ==g:**tarjeta de débito no hay comisión**== y pagas US$10.000 exactos. Hay un tope de **US$10.000 por transacción**, medido sobre el buy-in del evento y no sobre el total cobrado — el reglamento pone de ejemplo que una misma tarjeta cubre el Main Event de US$10.000 **y** el Monster Stack de US$1.500, pero no un evento de US$50.000. Y ==r:no aceptan tarjetas virtuales ni digitales==: el nombre de la tarjeta debe coincidir con el de tu documento.
 
 **Q. No hablo inglés. ¿Puedo jugar igual?**
 
-A. Sí. Mientras hay manos en juego solo se habla inglés en las mesas, pero el vocabulario obligatorio son ==g:siete palabras: bet, call, fold, check, all-in, pot (solo en Pot-Limit) y complete==. Y ==g:no tienes que cantar tu jugada==: las cartas deciden, la declaración verbal no obliga.
+A. Sí. Mientras hay manos en juego solo se habla inglés en las mesas, pero el reglamento cita ==g:siete palabras oficiales: bet, call, fold, check, all-in, pot (solo en Pot-Limit) y complete==. Y ==g:no tienes que cantar tu mano==: en el showdown las cartas deciden y declarar el valor de tu mano no obliga — lo que sí obliga es lo que dices sobre la apuesta en tu turno.
 
 **Q. ¿Cuál es la vía más barata para llegar al Main Event?**
 
-A. La escalera de GGPoker, que arranca en un ==g:Step 0 gratuito== (entrando cada día) y sigue con pasos de US$0,50, US$2, US$10 y US$150 hasta el **Bracelet Pass de US$10.000**. Y si ya estás en Las Vegas, los satélites presenciales del 1 al 6 de julio, desde US$150.
+A. La escalera de GGPoker, que arranca en un ==g:Step 0 gratuito== (entrando cada día) y sigue con pasos de US$0,50, US$2, US$10 y US$150 hasta el **Bracelet Pass de US$10.000**. Y si ya estás en Las Vegas, los satélites presenciales del 1 al 7 de julio, desde US$150 (ese primero es un escalón hacia el satélite de US$1.100).
 
 **Q. ¿Dónde se puede ver la WSOP ahora que PokerGO no emite en directo?**
 
@@ -439,15 +439,18 @@ A. ==g:99 eventos se ven gratis en el canal oficial de YouTube de la WSOP.== La 
 
 ## Fuentes y aviso
 
-- **★Resultado final del Main Event (Evento #82)** *(consultado el 6 de agosto de 2026)*: [wsop.com/tournaments/result/619](https://www.wsop.com/tournaments/result/619/) — campeón Lucas Jumalon (EE. UU.) US$10.000.000, los nueve puestos con país y premio, **mejor hispanohablante: Antonio Galiana (España), 12.º, US$510.000** (columna *Country* de los puestos 1 al 50 revisada directamente), fecha de cierre 5 de agosto (el campo End Date de la página oficial indica «Aug 05 01:48 AM»), 9.208 entradas, 1.383 puestos pagados, **pozo US$87.568.080**
+- **★Resultado final del Main Event (Evento #82)** *(consultado el 6 de agosto de 2026; pozo y End Date revisados de nuevo el 16 de septiembre de 2026)*: [wsop.com/tournaments/result/619](https://www.wsop.com/tournaments/result/619/) — campeón Lucas Jumalon (EE. UU.) US$10.000.000, los nueve puestos con país y premio, **mejor hispanohablante: Antonio Galiana (España), 12.º, US$510.000** (columna *Country* de los puestos 1 al 50 revisada directamente), fecha de cierre 5 de agosto (campo End Date de la página oficial), 9.208 entradas, 1.383 puestos pagados, **pozo US$85.634.400**. El 6 de agosto esta página mostraba US$87.568.080; hoy muestra US$85.634.400, que es exactamente 9.208 × US$9.300 y la misma cifra que publicó ESPN
 - **★Los 100 brazaletes entregados** *(consultado el 6 de agosto de 2026)*: [calendario oficial de la WSOP 2026](https://www.wsop.com/tournaments/2026-57th-annual-world-series-of-poker/) — se revisó la columna *Winner* de los eventos #1 al #100: **los 100 tienen campeón**, sin huecos
 - Reglamento de inscripción, formas de pago e identificación: [wsop.com/registration](https://www.wsop.com/registration/)
-- **★Reglamento oficial 2026 en PDF — la fuente de la comisión** *(consultado el 15 de agosto de 2026)*: [2026-WSOP-Tournament-Rules.pdf](https://wsop.gg-global-cdn.com/wsop/pdfs/2026-WSOP-Tournament-Rules.pdf) · Regla 5, textual: **2 % de comisión** con Visa, Mastercard, Discover, American Express **o PayPal**, **sin comisión en tarjeta de débito**, y "Fees are subject to change". ⚠️ **La página de inscripción sigue publicando «3 %» y no menciona PayPal ni débito** — tomamos el reglamento de la temporada como fuente. Comprueba el importe final en la pantalla de pago
+- **★Reglamento oficial 2026 en PDF — la fuente de la comisión y de la identificación (cita textual, Regla 9)** *(consultado el 15 de agosto de 2026; Regla 9 cotejada de nuevo el 16 de septiembre de 2026)*: [2026-WSOP-Tournament-Rules.pdf](https://wsop.gg-global-cdn.com/wsop/pdfs/2026-WSOP-Tournament-Rules.pdf) · Regla 5, textual: **2 % de comisión** con Visa, Mastercard, Discover, American Express **o PayPal**, **sin comisión en tarjeta de débito**, y "Fees are subject to change". ⚠️ **La página de inscripción sigue publicando «3 %» y no menciona PayPal ni débito** — tomamos el reglamento de la temporada como fuente. Comprueba el importe final en la pantalla de pago
 - Retransmisión y cobertura de la serie: [wsop.com/news](https://www.wsop.com/news/)
 - Calendario de emisión de la mesa final: [espnpressroom.com](https://espnpressroom.com/) · [espn.com](https://www.espn.com/)
 - Análisis del Main Event por países: [pokerfuse.com](https://pokerfuse.com/)
 - Totales de la serie (entradas, premios, puestos pagados): [cardplayer.com](https://www.cardplayer.com/)
 - Adrian Mateos, Evento #41 y Ciro González, Evento #65: [pokernews.com](https://www.pokernews.com/)
+- **Satélites presenciales** *(consultado el 16 de septiembre de 2026)*: «2026 Landmark Satellites All-In-One.pdf», enlazado desde el [calendario oficial](https://www.wsop.com/tournaments/2026-57th-annual-world-series-of-poker/) — horas, stacks objetivo, premio de cada satélite y el umbral de reporte fiscal del cobro en efectivo
+- **Juan Rodriguez, Evento #39** *(consultado el 16 de septiembre de 2026)*: [crónica oficial de la WSOP](https://www.wsop.com/news/wsop-2026-updates-more-history-is-made-at-the-horseshoe-and-paris/) (Perú) · [tabla de resultados del Evento #39](https://www.wsop.com/tournaments/result/576/) (país «Argentina»)
+- **Impuesto por premios en México** *(consultado el 16 de septiembre de 2026)*: Ley del Impuesto sobre la Renta, artículo 138 (texto de la Cámara de Diputados reproducido por el [Sistema Nacional de Coordinación Fiscal](https://www.sncf.gob.mx/))
 - Lista completa de campeones 2026: [poker.org](https://www.poker.org/)
 - Sexto brazalete en la historia de México: [pokernoticias.com](https://www.pokernoticias.com/)
 - Visa Waiver Program y ESTA: [dhs.gov/visa-waiver-program](https://www.dhs.gov/visa-waiver-program) · [esta.cbp.dhs.gov](https://esta.cbp.dhs.gov/) · [cbp.gov](https://www.cbp.gov/)

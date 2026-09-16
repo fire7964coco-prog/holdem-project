@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "국내 홀덤 대회 상금은 소득세법 시행령 제87조가 '다수가 순위 경쟁하는 대회 입상 상금'에 필요경비 80%를 인정해, 남은 20%에 22%를 매긴 지급액 기준 실효 4.4%가 원천징수됩니다. 건별 기타소득금액이 5만 원 이하(지급액 25만 원 이하)면 과세최저한으로 세금이 없고, 300만 원을 넘으면 종합소득세 신고를 검토해야 합니다. 반면 미국 WSOP 상금은 IRS 면제국 목록에 한국이 없어 30%가 먼저 빠지며, 한국에서 외국납부세액공제로 조정합니다.",
   category: "토너먼트",
   date: "2026-06-12",
-  updated: "2026-08-02",
+  updated: "2026-09-16",
   hideSummaryImageSlot: true,
   readTime: "15분",
   emoji: "🧾",
@@ -406,7 +406,7 @@ A. 국내 대회는 원천징수영수증과 상금 지급 내역, 해외 대회
 | [홀덤 대회 바이인·참가비](/blog/holdem-tournament-buy-in-cost) | 대회별 비용과 총예산 계산 |
 | [홀덤 대회 참가 방법](/blog/holdem-tournament-how-to-enter) | 온라인 무료부터 WSOP까지 신청 절차 |
 | [홀덤 대회 완벽 가이드](/tournaments) | 2026 국내·해외 대회 일정 |
-| [WSOP 2026 완전 가이드](/blog/wsop-2026-tournament-guide) | 등록 규정·카드 3% 수수료·결제 수단 제한 |
+| [WSOP 2026 완전 가이드](/blog/wsop-2026-tournament-guide) | 등록 규정·신용카드 2% 수수료(체크카드 무료)·결제 수단 제한 |
 | [APT 제주 클래식 2026 가이드](/blog/apt-jeju-classic-2026-guide) | 국내 대형 대회 상금·바이인 사례 |
 | [홀덤 토너먼트 vs 캐시게임 차이](/blog/holdem-tournament-vs-cash-game) | 대회 상금 구조와 칩 가치 차이 |
 `.trim(),

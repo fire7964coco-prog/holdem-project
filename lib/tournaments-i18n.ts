@@ -166,7 +166,7 @@ const en: BoardStrings = {
     },
     {
       q: "Can I pay a five-figure buy-in by card?",
-      a: "Not in one go at the WSOP. Card payments there carry a 3% fee and are capped at $10,000 per transaction, which means the $10,000 Main Event cannot be covered by a single swipe. Plan the cage, not the card.",
+      a: "At the WSOP, up to $10,000 per event, yes. The 2026 rulebook adds a 2% fee on credit cards and PayPal and none on debit cards, and caps card payments at $10,000 per transaction measured against the buy-in, so the $10,000 Main Event fits on one card while a $50,000 event does not. Virtual cards aren't accepted, and a debit card may hit your bank's daily limit first.",
     },
   ],
 
@@ -259,7 +259,7 @@ const ja: BoardStrings = {
     },
     {
       q: "ポーカーの世界大会で日本勢はどのくらい勝っていますか？",
-      a: "2026年のWSOPで日本はブレスレットを4本獲得しました。Naoya KiharaがEvent #17($428,923)とEvent #23($301,970)、Koji FujimotoがEvent #67($392,478)、Daisuke OgitaがEvent #72で$1,000,000です。4本のうち3本がミックスゲームの選手権でした。メインイベント(9,208エントリー・賞金総額$87,568,080)は参加者222人で日本が全体5位。ファイナルテーブルの9人に日本人は残っていません。10位以下の順位はWSOP公式もPokerNewsも未公開のため、ここでは断定しません。",
+      a: "2026年のWSOPで日本はブレスレットを4本獲得しました。Naoya KiharaがEvent #17($428,923)とEvent #23($301,970)、Koji FujimotoがEvent #67($392,478)、Daisuke OgitaがEvent #72で$1,000,000です。4本のうち3本がミックスゲームの選手権でした。メインイベント(9,208エントリー・賞金総額$85,634,400)は参加者222人で日本が全体5位。ファイナルテーブルの9人に日本人は残っていません。10位以下の順位はWSOP公式もPokerNewsも未公開のため、ここでは断定しません。",
     },
     {
       q: "韓国・パラダイスシティの大会の参加費は？",
@@ -375,7 +375,7 @@ const zh: BoardStrings = {
     },
     {
       q: "德州扑克最大的赛事是哪一个？",
-      a: "WSOP（世界扑克系列赛）。2026年是5月26日至8月5日在拉斯维加斯，共100条金手链，主赛事有9,208人次报名，奖池$87,568,080，决赛桌在8月3至5日由ESPN转播。亚洲这边规模最大的是APT（亚洲扑克巡回赛），2026年的仁川站保证奖金超过40亿韩元。",
+      a: "WSOP（世界扑克系列赛）。2026年是5月26日至8月5日在拉斯维加斯，共100条金手链，主赛事有9,208人次报名，奖池$85,634,400，决赛桌在8月3至5日由ESPN转播。亚洲这边规模最大的是APT（亚洲扑克巡回赛），2026年的仁川站保证奖金超过40亿韩元。",
     },
     {
       q: "比赛奖金要交税吗？",
@@ -488,7 +488,7 @@ const zhHant: BoardStrings = {
     },
     {
       q: "德州撲克最大的賽事是哪一個？",
-      a: "WSOP（世界撲克大賽）。2026年是5月26日到8月5日在拉斯維加斯，共100條金手鍊，主賽事9,208人次報名、獎池$87,568,080，決賽桌8月3到5日由ESPN轉播。亞洲這邊規模最大的是APT，2026年仁川站保證獎金超過40億韓元。",
+      a: "WSOP（世界撲克大賽）。2026年是5月26日到8月5日在拉斯維加斯，共100條金手鍊，主賽事9,208人次報名、獎池$85,634,400，決賽桌8月3到5日由ESPN轉播。亞洲這邊規模最大的是APT，2026年仁川站保證獎金超過40億韓元。",
     },
     {
       q: "比賽獎金要繳稅嗎？",
@@ -603,7 +603,7 @@ const es: BoardStrings = {
     },
     {
       q: "¿Cuáles son los torneos de Las Vegas 2026?",
-      a: "Las World Series of Poker, del 26 de mayo al 5 de agosto: 100 brazaletes y un Main Event que reunió 9.208 entradas para una bolsa de premios de US$87.568.080, con la mesa final del 3 al 5 de agosto. Un detalle práctico que sorprende a mucha gente en la caja: los pagos con tarjeta llevan un 3% de comisión y están limitados a US$10.000 por transacción, así que el Main Event de US$10.000 no se puede pagar en un solo cargo.",
+      a: "Las World Series of Poker, del 26 de mayo al 5 de agosto: 100 brazaletes y un Main Event que reunió 9.208 entradas para una bolsa de premios de US$85.634.400, con la mesa final del 3 al 5 de agosto. Un detalle práctico que ahorra dinero en la caja: según el reglamento, con tarjeta de crédito o PayPal la WSOP cobra un 2 % y con débito nada, y el tope de US$10.000 por transacción se mide sobre el buy-in, así que el Main Event sí cabe en un solo cargo.",
     },
     {
       q: "¿Necesito visado para los torneos en Europa?",
@@ -611,7 +611,7 @@ const es: BoardStrings = {
     },
     {
       q: "¿Se pagan impuestos por los premios?",
-      a: "Depende del país y las diferencias son grandes. En México los premios de poker en vivo llevan el Impuesto por Obtención de Premios del 6% más un 1% de ISR. En España los ingresos por torneos, tanto en vivo como online, son declarables, pero sobre si se pueden compensar las pérdidas hay versiones contradictorias circulando, así que ahí lo honesto es remitirte a la Agencia Tributaria antes que darte un cálculo que puede estar mal. Para Argentina, Colombia, Perú y Chile no tenemos dato verificado.",
+      a: "Depende del país y las diferencias son grandes. En México, el 1 % de ISR que suele citarse para premios (artículo 138 de la Ley del ISR) es para sorteos y juegos con apuestas organizados en el país; un premio cobrado en el extranjero conviene revisarlo con tu contador. En España los ingresos por torneos, tanto en vivo como online, son declarables, pero sobre si se pueden compensar las pérdidas hay versiones contradictorias circulando, así que ahí lo honesto es remitirte a la Agencia Tributaria antes que darte un cálculo que puede estar mal. Para Argentina, Colombia, Perú y Chile no tenemos dato verificado.",
     },
     {
       q: "¿Hay torneos a los que no se puede entrar pagando?",
@@ -1114,7 +1114,7 @@ const SCHEMA_DESC_ZH: Record<string, string> = {
   "holdem-masters-7":
     "WPL赞助、WeLive主办、YAJASU协办。总奖金保证15亿韩元，仅凭邀请券参赛。",
   "wsop-2026":
-    "全球规模最大的扑克系列赛。5月26日至7月15日共100条金手链，主赛事9,208人次报名、奖池$87,568,080，决赛桌8月3至5日由ESPN转播。",
+    "全球规模最大的扑克系列赛。5月26日至7月15日共100条金手链，主赛事9,208人次报名、奖池$85,634,400，决赛桌8月3至5日由ESPN转播。",
   "kpc-king-july":
     "在济州岛LES A Casino举行的17天扑克节。系列赛保证20亿韩元，King Poker Cup主赛事保证11亿韩元。",
   "apt-incheon":
@@ -1212,7 +1212,7 @@ const SCHEMA_DESC_HANT: Record<string, string> = {
   "holdem-masters-7":
     "WPL贊助、WeLive主辦、YAJASU協辦。總獎金保證15億韓元，僅憑邀請券參賽。",
   "wsop-2026":
-    "全球規模最大的撲克系列賽。5月26日至7月15日共100條金手鍊，主賽事9,208人次報名、獎池$87,568,080，決賽桌8月3至5日由ESPN轉播。",
+    "全球規模最大的撲克系列賽。5月26日至7月15日共100條金手鍊，主賽事9,208人次報名、獎池$85,634,400，決賽桌8月3至5日由ESPN轉播。",
   "kpc-king-july":
     "在濟州島LES A Casino舉行的17天撲克節。系列賽保證20億韓元，King Poker Cup主賽事保證11億韓元。",
   "apt-incheon":
@@ -1359,7 +1359,7 @@ const SCHEMA_DESC_ES: Record<string, string> = {
   "holdem-masters-7":
     "Patrocinado por WPL, organizado por WeLive con YAJASU. 1.500 millones de KRW garantizados; entrada solo por invitación.",
   "wsop-2026":
-    "La serie de poker más grande del mundo. 100 brazaletes del 26 de mayo al 15 de julio; el Main Event reunió 9.208 entradas para una bolsa de premios de US$87.568.080, con la mesa final del 3 al 5 de agosto por ESPN.",
+    "La serie de poker más grande del mundo. 100 brazaletes del 26 de mayo al 15 de julio; el Main Event reunió 9.208 entradas para una bolsa de premios de US$85.634.400, con la mesa final del 3 al 5 de agosto por ESPN.",
   "kpc-king-july":
     "Festival de 17 días en el LES A Casino de la isla de Jeju. 2.000 millones de KRW garantizados en la serie y 1.100 millones en el Main Event de la King Poker Cup.",
   "apt-incheon":
@@ -1475,10 +1475,12 @@ const PAREN_DE: Record<string, string> = {
 /**
  * de판 대회 설명. 수치는 원문 그대로 — §13은 언어 불변. 표기만 독일식.
  * ⚠ WSOP 2026 상금풀 액수는 **의도적으로 뺐다** — ESPN 집계(85,634,400달러)와
- *   공식 집계(87,568,080달러)가 갈린 이력이 있다(WORKLOG 2026-08-06).
+ *   공식 결과 페이지(08-06 열람 당시 87,568,080달러)가 갈린 이력이 있다(WORKLOG 2026-08-06).
  *   🔴 2026-09-16 queue Q6-c: 포스트는 08-06에 공식값으로 정정됐는데 **이 파일·tournaments.ts의 보드 문장 10자리는
- *   ESPN값으로 남아 있었다** → 전부 공식값으로 맞췄다(출처 = WSOP 공식 결과 Event #82 · 포스트 출처란 08-06 확인).
- *   ESPN값으로 되돌리지 마라. 독일어판은 여전히 액수 없이 둔다(엔트리 수·브레이슬릿 수는 안전하다).
+ *   ESPN값으로 남아 있었다** → 전부 당시 공식 페이지값(87,568,080)으로 맞췄다(출처 = WSOP 공식 결과 Event #82 · 포스트 출처란 08-06 확인).
+ *   🔴 2026-09-16 queue Q4-b: **공식 결과 페이지(result/619)가 지금은 85,634,400달러다**(09-16 라이브 · 검수장 09-06 원장 동일 ·
+ *   9,208 × 9,300 = 정확히 일치 · ESPN과도 같다). 08-06 값은 그 뒤 페이지에서 바뀌었다 → 보드 문장 전부 85,634,400으로 되돌렸다.
+ *   87,568,080으로 다시 바꾸지 마라(근거가 사라졌다). 독일어판은 여전히 액수 없이 둔다(엔트리 수·브레이슬릿 수는 안전하다).
  */
 const SCHEMA_DESC_DE: Record<string, string> = {
   "holdem-masters-7":
@@ -2035,7 +2037,7 @@ const SCHEMA_DESC_EN: Record<string, string> = {
   "holdem-masters-7":
     "Sponsored by WPL, run by WeLive with YAJASU. ₩1.5bn guaranteed; entry by invitation ticket only.",
   "wsop-2026":
-    "The largest poker series in the world. 100 bracelets from May 26 to July 15; the Main Event drew 9,208 entries for an $87,568,080 prize pool, with the final table on August 3–5 on ESPN.",
+    "The largest poker series in the world. 100 bracelets from May 26 to July 15; the Main Event drew 9,208 entries for an $85,634,400 prize pool, with the final table on August 3–5 on ESPN.",
   "kpc-king-july":
     "A 17-day festival at LES A Casino on Jeju Island. ₩2bn guaranteed across the series, with ₩1.1bn GTD on the King Poker Cup Main Event.",
   "apt-incheon":
@@ -2060,7 +2062,7 @@ const SCHEMA_DESC_JA: Record<string, string> = {
   "holdem-masters-7":
     "WPL後援・WeLive主管・YAJASU協力。賞金総額15億ウォン保証、招待券のみで参加できるシリーズ。",
   "wsop-2026":
-    "世界最大のポーカーシリーズ。5月26日〜7月15日にブレスレット100個。メインイベントは9,208エントリー・賞金総額$87,568,080で、ファイナルテーブルは8月3〜5日にESPNが中継。",
+    "世界最大のポーカーシリーズ。5月26日〜7月15日にブレスレット100個。メインイベントは9,208エントリー・賞金総額$85,634,400で、ファイナルテーブルは8月3〜5日にESPNが中継。",
   "kpc-king-july":
     "済州島のLES A Casinoで開かれる17日間のフェスティバル。シリーズ全体で20億ウォン保証、King Poker Cupのメインイベントは11億ウォンGTD。",
   "apt-incheon":

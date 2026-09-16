@@ -3016,7 +3016,7 @@ A. BB 수비 범위는 **팟 오즈**를 기반으로 결정합니다. 상대가
  tldr: "WSOP 2025 메인 이벤트는 9,735명이 참가해 Michael Mizrachi가 상금 1,000만 달러에 우승했습니다. 2024년 10,112명에 이어 두 해 연속 1만 명 안팎의 필드였고, 위성과 저바이인 이벤트로 아마추어가 대거 섞이는 구조가 자리를 잡았습니다. 이 글은 2025년 기록이며, 참가를 준비한다면 진행 중인 대회 정보를 보는 편이 낫습니다.",
  category: "토너먼트",
  date: "2026-03-10",
- updated: "2026-07-28",
+ updated: "2026-09-16",
  readTime: "8분",
  emoji: " ",
  image: "/images/wsop-2025-tournament-guide-hero.webp",
@@ -3244,7 +3244,7 @@ A. 기본적인 홀덤 실력 외에 토너먼트 특유의 전략이 필요합�
 - **ESTA 수수료 인상**: [Fragomen — DHS Announces Implementation of New Fees for ESTA, EVUS, and Land Border I-94 Forms, Starting September 30](https://www.fragomen.com/insights/united-states-dhs-announces-implementation-of-new-fees-for-esta-evus-and-land-border-i-94-forms-starting-september-30.html) · **2025-09-30부로 $21 → $40**, 2026 회계연도부터 매년 물가연동
 - **WSOP 공식**: [wsop.com](https://www.wsop.com)
 
-> ⚠️ **연도가 붙은 기록물입니다.** 2025년 시점의 수치·프로모션·비용은 그대로 두되, **지금 참가를 준비한다면 이 글이 아니라 [WSOP 2026 완전 가이드](/blog/wsop-2026-tournament-guide)** 를 보세요. 등록 규정(계정 2종·카드 3% 수수료·주소 서류)과 위성 체계(WSOP Express)가 2025년과 달라졌습니다.
+> ⚠️ **연도가 붙은 기록물입니다.** 2025년 시점의 수치·프로모션·비용은 그대로 두되, **지금 참가를 준비한다면 이 글이 아니라 [WSOP 2026 완전 가이드](/blog/wsop-2026-tournament-guide)** 를 보세요. 등록 규정(계정 2종·신용카드 2% 수수료·주소 서류)과 위성 체계(WSOP Express)가 2025년과 달라졌습니다.
 
 ---
 
