@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "홀덤 대회 일정은 공식 투어 사이트를 1순위로 보고, PokerNews·SoMuchPoker·The Hendon Mob 같은 캘린더로 교차확인하세요. 날짜·장소·바이인·등록 마감은 대회 직전 반드시 다시 확인해야 합니다.",
   category: "토너먼트",
   date: "2026-06-12",
-  updated: "2026-08-02",
+  updated: "2026-09-16",
   // ★2026-08-02 카니발 몰아주기 — 이 글은 색인에서 뺀다.
   //   28일 GSC: 이 글 쿼리 5개·클릭 1 / `/tournaments` 쿼리 35개·클릭 84.
   //   이 글의 쿼리 5개가 전부 `/tournaments`와 겹치고 고유 쿼리는 0개였다
@@ -55,7 +55,7 @@ export const POST: Post = {
 
 ### 이 글 핵심 요약
 
-- 홀덤 대회 일정은 **공식 투어 사이트 → 전문 뉴스/캘린더 → 커뮤니티 공지** 순서로 확인한다
+- 확인 단계는 셋이다: **주최 측 공식 사이트**가 기준이고, 뉴스·캘린더 사이트는 교차 확인용, 커뮤니티 공지는 마지막 참고용이다
 - WSOP는 **wsop.com/schedule**, APT는 **theasianpokertour.com**, APPT/EPT는 **pokerstarslive.com**, WPT는 **worldpokertour.com**이 1순위다
 - 아시아권 일정은 **SoMuchPoker 캘린더**, 라이브 업데이트는 **PokerNews**, 과거 결과·페스티벌 확인은 **The Hendon Mob**이 유용하다
 - 날짜만 보지 말고 **장소, 바이인, 레이트 레지, 새틀라이트, 나이 제한, 규제 승인 문구**까지 확인해야 한다

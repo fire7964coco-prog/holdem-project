@@ -404,7 +404,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     verifiedAt: "2026-07-29",
     organizer: { name: "WSOP", url: "https://www.wsop.com" },
     schemaDescription:
-      "세계 최대 홀덤 대회. 브레이슬릿 100개 5/26~7/15, 메인이벤트 9,208 엔트리·상금풀 $85,634,400, 파이널 테이블 8/3~5 ESPN 중계.",
+      "세계 최대 홀덤 대회. 브레이슬릿 100개 5/26~7/15, 메인이벤트 9,208 엔트리·상금풀 $87,568,080, 파이널 테이블 8/3~5 ESPN 중계.",
   },
   {
     id: "kpc-king-july",
