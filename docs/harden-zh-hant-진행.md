@@ -823,6 +823,8 @@ zh가 그 드리프트를 아직 안 받았을 뿐 — 갈림이 아니라 **진
     | 18-5 🟠 | `posts-en/holdem-starting-hands-chart.ts` L118 ↔ L124 | **77·88이 같은 절에서 «13% 범위에 포함»이자 «UTG에선 蓋»** — 다섯 줄 사이 정면 충돌. 표의 MP 행(「加上 88, 99」)은 蓋 쪽 손을 든다 | 딜러 렌즈 |
     | 18-6 🟠 | `posts-en/holdem-limping.ts` L95 ↔ `posts-en/holdem-position-play.ts` L179 | **SB 「補齊는 정당한 예외」 ↔ SB 「never flat」** 자매 모순. 이번 회차 limping 직답이 이 긴장을 증폭시켰다 | 딜러 렌즈 |
 
+    > 🔵 **헤드 처리 (2026-09-16 · queue Q6-c)** — **18-3(AK vs 작은 포켓페어 · §5-17 4자리)은 닫지 않고 EN-먼저 `docs/en-first-queue.md` §2-F Q6c#1로 이관했다.** zh-hant 「22～99 · 47%」도 실측(AKo vs 22 46.9 · 99 44.3 · JJ 42.7 · QQ 42.9)과 어긋나므로 EN 판정 뒤 전파를 받는다.
+
     🪶 **경미(판정만)**: EN `holdem-starting-hands-chart` 「兩張同花 到河牌 約 6.5%」 실측 **6.40%** ·
     EN `holdem-3bet` 「4-bet to $55」가 자기 FAQ의 2.2–2.5배와 어긋남(실제 3.06배). 둘 다 EN·zh-hant 동형.
 

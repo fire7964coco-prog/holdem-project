@@ -103,6 +103,13 @@ EN 12편 정정 → 7로케일(de·es·id·ja·pt·zh·zh-hant) 전파 완료. 1
 - **X-2** ✅ **종결(우편함 회차)** — `texas-holdem-rules-for-beginners` L202 표·L435 FAQ 「any amount up to all your chips」 → 「from the big blind up to …」(NL 최소 오픈 = 빅블라인드 · A 96 «minimum legal amount»). EN + 7로케일.
 - ✅ **종결(우편함 회차 · EN + 7로케일)** — MA-130 요청 1의 es 동형 3건: `holdem-game-order` 표 Fold·All-in 「Anytime」 → 「Any street — in turn」(A 84 non-standard/out-of-turn fold) · `holdem-showdown-rules` 「before/during the runout」 3자리 → TDA 16 축어 「tabled without delay once all betting is complete」 · 「can never be retrieved」 → A 109(식별 가능하면 회수 가능). MA-131 요청 2~4: `holdem-continuation-bet` tldr·L271 OOP 한정 · `holdem-kicker` FAQ L196 → L109 문면 · `holdem-card-counting` L96 misdeal→by mistake · L116 · L127 «any card room» 삭제 · `holdem-position-play` SB 행 「vs a raise」 · `holdem-bubble` 「WSOP Tournament Rule 126」 · `korea-poker-marathon-2026` 「9/4 단일 마감」 7자리 → 창구 종속(L125 정합).
 
+### 2-F. queue 회차 Q6-c가 올린 것 (2026-09-16 · 머지 `c3d23cf2` · 미처리)
+
+- **Q6c#1** 🔴 **AK vs 작은 포켓페어 명제** — EN `holdem-starting-hands-chart` L65 「coin flip against every smaller pocket pair」가 실측과 어긋난다(AKo vs 22 **46.9** · 99 **44.3** · JJ **42.7** · QQ **42.9**). `harden-zh-hant-진행` §5-17 «4자리 일괄 판정 요청»이 미처리로 떨어져 있었고, zh-hant는 「22～99 · 47%」로 앞서 갔는데 그것도 부정확. → **EN + probability + equity + shc 4자리를 한 판에 판정한 뒤 8로케일 전파**(§13 · 콤보 직접 계산).
+- **Q6c#2** 🟠 EN `holdem-kicker` L75·L79–84 «각 족보 킥커 수» 표에 **High card 행이 없다**(같은 글 L55 표에는 있음). ja는 §2-N에서 잡았고 ①원본 유래라 EN부터. → 행 추가 후 8로케일.
+- **Q6c#3** 🟠 EN `holdem-glossary` `:::stripe` 「"Most confused" pairs」 — 8번째 항목(3bet 세는 법)이 **쌍이 아니다**(ja는 「項目」으로 고쳤다). → 「pairs」를 항목 수 표현으로 바꾸고 8로케일.
+- **Q6c#4** 🪶 EN `holdem-hand-rankings` L300 「often A-6-7-8-9 counts as a straight」 — 숏덱에선 거의 보편 규칙이라 «often»이 약하다(확신도 중 · ja는 「多くのルールで」). → 원문 판정 후 결정.
+
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - 🟠 **EN `paired-board-strategy` — 22 counterfeiting의 리버 조건 누락**(HI GTO 독립 전략·수학 검수, 2026-09-15). 원문 `a running three counterfeits it into playing the board`를 한정된 런아웃으로 명확히 할 필요가 있다. `22/6633K`는 보드 Two Pair를 플레이하지만 `22/66332`는 홀카드 22로 Full House를 만든다. HI 초안의 별도 오역(`66333`을 Two Pair로 분류)은 HI에서 고쳐 카드 재검산까지 종결했다. EN·기발행 형제 언어의 적용은 이 회차에서 하지 않았으며, 후속 회차는 실제 해당 문장을 확인한 뒤 최소 수정한다. 원본/도입 결함 구분과 증거 정본 = [HI 원문 계약](hi-gto-source-contract.md#hi-독립-검수에서-구체화한-런아웃-조건).

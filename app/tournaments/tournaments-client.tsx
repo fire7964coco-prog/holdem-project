@@ -649,7 +649,7 @@ export default function Tournaments({
     "author": { "@type": "Organization", "name": "홀덤마스터", "url": "https://www.holdemmaster.com" },
     "publisher": { "@type": "Organization", "name": "홀덤마스터", "url": "https://www.holdemmaster.com", "logo": { "@type": "ImageObject", "url": "https://www.holdemmaster.com/favicon.svg" } },
     "datePublished": "2026-03-26",
-    "dateModified": "2026-09-03",
+    "dateModified": "2026-09-16",
     "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.holdemmaster.com/tournaments" },
     "image": "https://www.holdemmaster.com/images/tournament-hall-wsop.webp",
     "keywords": "홀덤 대회, 포커 토너먼트, HPT 한게임 포커 투어, WSOP, 홀덤 대회 참가방법, 피망 쇼다운, 한게임 포커 대회",
