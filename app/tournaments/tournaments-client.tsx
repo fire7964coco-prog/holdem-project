@@ -22,6 +22,7 @@ const KR_2026 = TOURNAMENTS.filter((t) => t.country === "KR" && (t.startDate ?? 
  *   하이드레이션 불일치가 난다(page.tsx 주석 참조).
  */
 import { buildDigest, buildHeroLine, buildMetaTitle, buildMetaDescription } from "@/lib/tournaments-digest";
+import type { EventGuideCard } from "@/lib/active-event-guides";
 import { DEFAULT_SCHEDULE_FILTERS, readScheduleFilters, scheduleFilterHref, matchesSchedule, orderSchedule, scheduleMonths, type ScheduleFilters, type ScheduleStatus } from "@/lib/tournament-filters";
 
 function ScheduleUrlObserver({ sync }: { sync: () => void }) {
@@ -623,9 +624,12 @@ const FAQS = [
 export default function Tournaments({
   todayISO,
   blogLinks,
+  eventGuides,
 }: {
   todayISO: string;
   blogLinks: Record<string, string>;
+  /** 진행 중 대회 가이드 카드(서버가 EVENT_UNTIL로 판정해 내려줌). 없으면 빈 배열 */
+  eventGuides: EventGuideCard[];
 }) {
   const faqSchema = {
     "@context": "https://schema.org",
@@ -1203,30 +1207,36 @@ export default function Tournaments({
             <BookOpen className="w-4 h-4 text-primary-ink" /> 홀덤 대회 준비에 도움이 되는 가이드
           </h2>
 
-          {/* WSOP 2026 Featured */}
-          <Link href="/blog/wsop-2026-tournament-guide">
-            <div className="mb-4 p-5 bg-card border-2 border-yellow-500/40 rounded-2xl hover:border-yellow-500/70 transition-colors cursor-pointer shadow-lg shadow-yellow-500/8 relative overflow-hidden">
-              <div className="absolute top-0 right-0 bg-primary/15 text-primary-ink text-[10px] font-bold px-2.5 py-1 rounded-bl-xl tracking-wide">시즌 가이드</div>
-              <div className="flex items-start gap-4">
-                <div className="text-3xl flex-shrink-0 mt-0.5">🏆</div>
-                <div className="flex-1">
-                  <div className="text-[11px] font-bold text-primary-ink uppercase tracking-widest mb-1">WSOP 2026</div>
-                  <div className="text-base font-bold text-foreground mb-1 leading-tight">WSOP 2026 완전 가이드 — 일정·메인이벤트·한국인 참가 방법</div>
-                  <div className="text-xs text-muted-foreground leading-relaxed">시즌 일정과 메인이벤트, 참가 준비 사항을 가이드에서 확인하세요.</div>
-                  <div className="mt-2 inline-flex items-center gap-1 text-xs text-primary-ink font-bold">
-                    자세히 보기 <ChevronRight className="w-3.5 h-3.5" />
+          {/* 진행 중 대회 가이드 — 서버가 EVENT_UNTIL(lib/featured-order.ts)로 판정. 종료일이 지나면 자동으로 빠진다.
+              근거: docs/post-placement-analysis-2026-09-16.md §3 — /tournaments는 28일 오가닉 811세션의 최대 관문,
+              시한 글은 참여율 88~98%로 가장 높다. 제목·설명은 글의 title·desc 그대로(창작 금지). */}
+          {eventGuides.map((g, i) => (
+            <Link key={g.href} href={g.href}>
+              <div className="mb-4 p-5 bg-card border-2 border-yellow-500/40 rounded-2xl hover:border-yellow-500/70 transition-colors cursor-pointer shadow-lg shadow-yellow-500/8 relative overflow-hidden">
+                <div className="absolute top-0 right-0 bg-primary/15 text-primary-ink text-[10px] font-bold px-2.5 py-1 rounded-bl-xl tracking-wide">진행 중 대회</div>
+                <div className="flex items-start gap-4">
+                  <div className="text-3xl flex-shrink-0 mt-0.5">{i === 0 ? "🏆" : "🎫"}</div>
+                  <div className="flex-1 min-w-0">
+                    <div className="text-base font-bold text-foreground mb-1 leading-tight">{g.title}</div>
+                    <div className="text-xs text-muted-foreground leading-relaxed">{g.desc}</div>
+                    <div className="mt-2 inline-flex items-center gap-1 text-xs text-primary-ink font-bold">
+                      자세히 보기 <ChevronRight className="w-3.5 h-3.5" />
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </Link>
+            </Link>
+          ))}
 
+          {/* 순서 = 전환 경로(참가법 → 바이인 → 세금 → 펍 첫방문). S 티어 4편을 앞에 둔다(보고서 §3).
+              schedule-check는 noindex(28일 클릭 1)라 이 자리에서 뺐다 — 슬롯은 WSOP 2026 시즌 가이드(A 티어)로. */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
             {[
-              { href: "/blog/holdem-tournament-schedule-check", emoji: "📅", title: "홀덤 대회 일정 확인법", desc: "WSOP·APT·APPT 공식 일정 교차검증" },
-              { href: "/blog/holdem-tournament-tax-guide", emoji: "🧾", title: "홀덤 대회 세금·신고", desc: "상금 원천징수·WSOP 30%·외국납부세액" },
-              { href: "/blog/holdem-tournament-buy-in-cost", emoji: "💰", title: "홀덤 대회 바이인·참가비", desc: "홀덤펍·APT·WSOP 비용과 총예산 계산" },
               { href: "/blog/holdem-tournament-how-to-enter", emoji: "🎫", title: "홀덤 대회 참가 방법", desc: "온라인 무료부터 WSOP까지 단계별 신청법" },
+              { href: "/blog/holdem-tournament-buy-in-cost", emoji: "💰", title: "홀덤 대회 바이인·참가비", desc: "홀덤펍·APT·WSOP 비용과 총예산 계산" },
+              { href: "/blog/holdem-tournament-tax-guide", emoji: "🧾", title: "홀덤 대회 세금·신고", desc: "상금 원천징수·WSOP 30%·외국납부세액" },
+              { href: "/blog/holdem-pub-first-visit-guide", emoji: "🍺", title: "홀덤펍 처음 가는 법", desc: "입장·참가비·에티켓 5분 정리" },
+              { href: "/blog/wsop-2026-tournament-guide", emoji: "🏆", title: "WSOP 2026 완전 가이드", desc: "일정·메인이벤트·한국인 참가 방법" },
               { href: "/calculator", emoji: "🎲", title: "포커 확률 계산기", desc: "아웃츠·팟오즈·승률을 실시간 계산" },
               { href: "/blog/holdem-hand-rankings", emoji: "🃏", title: "족보 순위표", desc: "로열 플러시~하이카드 완벽 정리" },
               { href: "/blog/holdem-starting-hand-range", emoji: "📊", title: "스타팅 핸드 169가지", desc: "대회 핸드 선택 완전 가이드" },

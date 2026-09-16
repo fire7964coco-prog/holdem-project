@@ -1,3 +1,10 @@
+## 2026-09-16 — 포스팅 배치 5단계 마감: 관문 추천 블록 §3 적용 + 화면 검증 + 데스크톱 순환 결함 수정
+
+- 관문 블록: /tournaments(진행 중 대회 카드 `EVENT_UNTIL` 자동 강등 + S 4편 전환 경로 순, noindex schedule-check 제거) · /solver(추천 블록 신설) · /ranking·/pub(S 3편 앞) · /hand-chart 변경 없음. 서버 전용 `lib/active-event-guides.ts` 신설.
+- 검증: screen-review 2폭 × 홈·/blog·관문 4곳 — 넘침 0 · 중복 key 0 · /blog HTML 72링크/hidden 50/폴백 버튼 · 이음새 뒤 1번부터 재개. 기록 = `docs/post-placement-verification-2026-09-16.md`(+ 그림 폴더).
+- 결함 발견·수정: **데스크톱 홈은 순환·추가 로드가 전혀 안 됐다**(센티널이 `lg:hidden` 컨테이너에만 있어 IO 불발). 데스크톱 센티널 추가. /blog 2바퀴째 경계에 이음새 문구 추가.
+- 미실시: IndexNow(신규 URL 없음). 4주 뒤 비교는 update-calendar에 등록.
+
 ## 2026-09-15 — UI·UX 개선 구현·로컬 검증 완료, 배포 승인 대기
 
 후속 승인 후 커밋 `60a79d9d`를 main에 push했고 Vercel 성공 및 공개 핵심 7경로 HTTP 200을 확인했다.

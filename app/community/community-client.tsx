@@ -666,6 +666,10 @@ export default function CommunityClient({
   const [cycles, setCycles] = useState(1);
   const [loadingMore, setLoadingMore] = useState(false);
   const sentinelRef = useRef<HTMLDivElement>(null);
+  /** 데스크톱 본문(`hidden lg:block`)용 센티널. 모바일 센티널은 `lg:hidden` 컨테이너 안이라 데스크톱에선
+   *  display:none → IntersectionObserver가 영영 안 울렸다(2026-09-16 실측: 데스크톱 홈은 42,934px에서 멈추고
+   *  순환·추가 로드 둘 다 없음). ref는 요소 하나만 담으니 데스크톱은 별도 ref로 두고 둘 다 관찰한다. */
+  const desktopSentinelRef = useRef<HTMLDivElement>(null);
 
   // ── 피드 스크롤 위치 복원 ──────────────────────────────────
   // 모바일은 내부 overflow-y-auto div가 스크롤러(window 아님)라 브라우저 기본
@@ -895,13 +899,13 @@ export default function CommunityClient({
 
   // IntersectionObserver — sentinel 400px 전에 미리 로드 (딜레이 없음)
   useEffect(() => {
-    const sentinel = sentinelRef.current;
-    if (!sentinel) return;
+    const sentinels = [sentinelRef.current, desktopSentinelRef.current].filter((el): el is HTMLDivElement => !!el);
+    if (sentinels.length === 0) return;
     const observer = new IntersectionObserver(
-      (entries) => { if (entries[0].isIntersecting) loadMorePosts(); },
+      (entries) => { if (entries.some((e) => e.isIntersecting)) loadMorePosts(); },
       { rootMargin: "0px 0px 400px 0px", threshold: 0 }
     );
-    observer.observe(sentinel);
+    sentinels.forEach((el) => observer.observe(el));
     return () => observer.disconnect();
   }, [loadMorePosts]);
 
@@ -1592,6 +1596,8 @@ export default function CommunityClient({
             )}
 
             {(tab === "home" || isDesktop) && renderTabContent(true)}
+            {/* 데스크톱 무한스크롤·순환 센티널 (모바일 것은 lg:hidden 안이라 여기선 안 울린다) */}
+            {tab === "home" && <div ref={desktopSentinelRef} style={{ height: 1 }} />}
           </main>
 
           {/* ── 오른쪽 사이드바 ── */}

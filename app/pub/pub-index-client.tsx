@@ -143,8 +143,13 @@ export default function PubIndex() {
       {/* 내부링크 */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 py-14">
         <h2 className="font-serif text-xl font-bold text-foreground mb-5 text-center">홀덤 실력도 함께 키워보세요</h2>
+        {/* 구성 = docs/post-placement-analysis-2026-09-16.md §3(/ranking·/pub 관문: 족보·룰·펍 첫방문).
+            S 티어 3편을 앞에 두고 기존 3장(계산기·게임 순서·블러핑)은 뒤로. */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {[
+            { href: "/blog/holdem-pub-first-visit-guide", icon: "🚪", title: "홀덤펍 처음 가는 법", desc: "입장 5단계·참가비·에티켓 5분 정리" },
+            { href: "/blog/holdem-hand-rankings", icon: "🃏", title: "홀덤 족보 순위 10가지", desc: "7장 기준 실제 확률과 키커 규칙" },
+            { href: "/blog/holdem-rules", icon: "⚖️", title: "홀덤 올인·베팅 룰", desc: "사이드팟·최소 레이즈·쇼다운 순서" },
             { href: "/calculator", icon: "🧮", title: "포커 확률 계산기", desc: "아웃츠·팟오즈·족보 판별 무료 계산" },
             { href: "/blog/holdem-game-order", icon: "📖", title: "홀덤 게임 진행 순서", desc: "게임 흐름 완벽 이해" },
             { href: "/blog/bluffing-strategy-when-and-how", icon: "🎭", title: "블러핑 전략 가이드", desc: "언제, 어떻게 블러핑할까" },

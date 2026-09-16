@@ -498,6 +498,31 @@ export default function SolverClient() {
         ))}
       </section>
 
+      {/* ── 솔버 전에 읽을 글 (관문 추천 블록) ────────────────────────────
+          근거: docs/post-placement-analysis-2026-09-16.md §3 — /solver는 28일 오가닉 549세션의 2위 관문인데
+          레인지·3벳 글로 가는 링크가 없었다. 넣는 글은 §3 표 그대로(스타팅 레인지 S · 레인지 뜻·3벳 A).
+          GTO 시리즈 묶음은 바로 위 교육 예제 절이 이미 맡는다. */}
+      <section className="mt-12">
+        <h2 className="text-xl font-bold">솔버를 돌리기 전에 읽어 둘 글</h2>
+        <p className="mt-2 text-sm text-muted-foreground">
+          솔버 결과는 «어떤 레인지를 넣었나»에 따라 달라집니다. 레인지를 읽고 짜는 법을 먼저 잡아
+          두면 13×13 표가 훨씬 빨리 읽힙니다.
+        </p>
+        <div className="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-3">
+          {[
+            { href: "/blog/holdem-starting-hand-range", emoji: "📊", title: "스타팅 핸드 레인지", desc: "169가지 핸드 4등급 분류와 포지션별 레인지" },
+            { href: "/blog/holdem-range-meaning", emoji: "🎯", title: "홀덤 레인지란?", desc: "표기법·13×13 차트 보는 법·폴라라이즈드 뜻" },
+            { href: "/blog/holdem-3bet-strategy", emoji: "♠", title: "홀덤 3벳이란?", desc: "밸류 3벳 vs 블러프 3벳 타이밍과 대응" },
+          ].map((item) => (
+            <Link key={item.href} href={item.href} className="block rounded-xl border border-border bg-card p-4 transition-colors hover:border-primary/40">
+              <span className="text-xl">{item.emoji}</span>
+              <div className="mt-1 text-sm font-bold text-foreground">{item.title}</div>
+              <div className="mt-0.5 text-xs text-muted-foreground">{item.desc}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
       {/* ── 외부 도구 비교 ───────────────────────────────────────────── */}
       {/*
         ⚠ 가격·무료 티어 수치를 쓰지 않는다 — 1차 출처 확인이 안 됐고 자주 바뀐다(§12-B).

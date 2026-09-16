@@ -1,6 +1,6 @@
 "use client";
 
-import { Suspense, useState, useMemo, useEffect, useRef, useCallback } from "react";
+import { Fragment, Suspense, useState, useMemo, useEffect, useRef, useCallback } from "react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { motion } from "framer-motion";
@@ -395,9 +395,12 @@ export default function BlogIndex({
             {/* Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
               {loop(rest, visible).map(({ post, idx, cycle }) => (
-                <div key={cycle ? `${post.slug}-c${cycle}` : post.slug} hidden={idx >= visible}>
-                  <PostCard post={post} delay={Math.min(idx % PAGE, 8) * 0.07} />
-                </div>
+                <Fragment key={cycle ? `${post.slug}-c${cycle}` : post.slug}>
+                  {cycle > 0 && idx % rest.length === 0 && <CycleSeam hidden={idx >= visible} />}
+                  <div hidden={idx >= visible}>
+                    <PostCard post={post} delay={Math.min(idx % PAGE, 8) * 0.07} />
+                  </div>
+                </Fragment>
               ))}
             </div>
           </>
@@ -405,9 +408,12 @@ export default function BlogIndex({
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
             {filtered.length > 0
               ? loop(filtered, visible).map(({ post, idx, cycle }) => (
-                  <div key={cycle ? `${post.slug}-c${cycle}` : post.slug} hidden={idx >= visible}>
-                    <PostCard post={post} delay={Math.min(idx % PAGE, 8) * 0.07} />
-                  </div>
+                  <Fragment key={cycle ? `${post.slug}-c${cycle}` : post.slug}>
+                    {cycle > 0 && idx % filtered.length === 0 && <CycleSeam hidden={idx >= visible} />}
+                    <div hidden={idx >= visible}>
+                      <PostCard post={post} delay={Math.min(idx % PAGE, 8) * 0.07} />
+                    </div>
+                  </Fragment>
                 ))
               : (
                 <div className="md:col-span-2 xl:col-span-3 text-center py-20 text-muted-foreground">
@@ -449,6 +455,15 @@ export default function BlogIndex({
       </div>
 
     </>
+  );
+}
+
+/** 순환 이음새 — 2바퀴째 첫 카드 앞에 한 줄. 홈 피드의 «처음부터 다시 이어집니다»와 같은 문구(2026-09-16 캡처에서 /blog만 표시 없이 이어져 같은 카드가 두 번 보이는 것처럼 읽혔다) */
+function CycleSeam({ hidden }: { hidden: boolean }) {
+  return (
+    <div hidden={hidden} className="md:col-span-2 xl:col-span-3 text-center pt-6 pb-1 text-[11px] text-muted-foreground">
+      ♠ 모든 글을 다 봤습니다 — 처음부터 다시 이어집니다
+    </div>
   );
 }
 
