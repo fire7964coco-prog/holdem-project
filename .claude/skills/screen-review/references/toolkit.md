@@ -33,4 +33,4 @@
 - 긴 글은 390에서 2만px가 넘는다(3bet 20,868px · seg 25장). 전부 Read하지 말고 overview로 자리를 잡은 뒤 **필요한 seg만** 연다(컨텍스트).
 - 라이브 GA 수집 요청(`google-analytics.com/g/collect`)은 헤드리스에서 실패로 잡힌다 — 결함 아님.
 - Read는 세로 2000px로 축소한다 → 모바일 overview는 2000px 조각(스크립트가 폭<600이면 자동).
-- 🔴 홈 피드·/blog는 순환 피드(2026-09-16~)라 끝까지 스크롤하면 끝없이 자란다. `shoot.mjs`는 60,000px에서 스크롤을 끊지만 full.png는 그 높이까지 나온다 — 홈·/blog는 뷰포트·요소 캡처(`--selector`)나 이음새 전용 스크립트(`tmp/seam-shoot.mjs` 방식: 이음새 문구가 나올 때까지만 스크롤)로 본다. 이중 레이아웃(`lg:hidden`/`hidden lg:block`)은 두 폭 모두 실측 — 데스크톱 센티널 누락을 캡처가 잡았다.
+- 🔴 홈 피드·/blog는 순환 피드(2026-09-16~)라 끝까지 스크롤하면 끝없이 자란다. `shoot.mjs`는 60,000px에서 스크롤을 끊지만 full.png는 그 높이까지 나온다 — 홈·/blog는 뷰포트·요소 캡처(`--selector`)나 이음새 전용 스크립트(`scripts/seam-shoot.mjs`: 이음새 문구가 나올 때까지만 스크롤해 1440·390 홈·/blog를 찍고 초기 hidden 수·중복 key·이음새 뒤 첫 카드를 JSON으로 출력)로 본다. 이중 레이아웃(`lg:hidden`/`hidden lg:block`)은 두 폭 모두 실측 — 데스크톱 센티널 누락을 캡처가 잡았다.
