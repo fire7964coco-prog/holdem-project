@@ -5,6 +5,21 @@
 - UI·UX 11개 지적+추가 개선 구현·검증·운영 배포 완료. 결과·캡처·재현검사 = `docs/ui-ux-improvements-2026-09-15.md`. 커밋 `60a79d9d` Vercel 배포 성공과 공개 핵심 7경로 HTTP 200을 확인했다. 기존 전체 타입698건은 증가 없음을 비교했고 실제 메일·Google 인증은 모의 검증 범위와 구분한다.
 - HI 발행 마감을 끝냈다. 경위는 WORKLOG의 HI 발행 항목, 근거는 `docs/hi-gto-publication-review-2026-09-15.md`다. 다음 주제·언어는 새 사용자 지시를 따른다.
 
+## 🔴 다음 회차: 포스팅 배치 전략화 (2026-09-16 사장님 지시 · 한도 부족으로 계획만 박음)
+
+지시 원문: «포스팅 배치만 바꾸자. GA4·GSC 분석해서 전략적으로 배치. 접속해서 보이는 포스팅을 클릭할 확률이 높으니 중요순으로.»
+같은 날 판정: 홈은 고정(랜덤 금지·SEO 신호 보존) · 목록은 «HTML엔 전 카드, 표시만 20장씩 단계 공개»(봇은 전부 봄) · 회전은 «오늘의 글» 한 블록만 날짜 기반.
+
+| 순서 | 할 일 | 도구·파일 |
+|---|---|---|
+| 1 | 28일 창으로 글별 점수표 뽑기 — GA4 참여율×조회(보정 3종 포함) + GSC 클릭·노출 | `npm run analytics` · `scripts/gsc-analyze.mjs` · 창은 28일 고정(90일 금지) |
+| 2 | 점수식 확정: 상단 = 참여율 높고 조회 있는 검증된 글 → 필라 허브 → 나머지 날짜순. 시한 지난 대회 글은 상단 제외 | 결과는 `docs/analytics-log.md`에 근거 남김 |
+| 3 | 배치 순서를 코드로: slug 배열 하나(`FEATURED_ORDER` 등)를 lib에 두고 홈·목록이 같이 읽음. slug·라우트 불변 | `app/page.tsx` · `app/blog/page.tsx` · `blog-index-client.tsx` |
+| 4 | 목록 단계 공개(IntersectionObserver · 카드 높이 고정으로 CLS 0) | `blog-index-client.tsx` 한 파일 |
+| 5 | screen-review로 전후 캡처(모바일 포함) → 빌드 → 배포 → 배치 변경 전 GA4 기준선 기록(효과 측정용) | 스킬 `screen-review` · `docs/analytics-log.md` |
+
+끝나면 이 절은 지운다(취소선 금지).
+
 ## 시작 자료
 
 - AGENTS → CLAUDE → 이 파일, Git 상태를 확인한다. ‘읽고 대기’ 요청이면 자동 착수하지 않는다.
