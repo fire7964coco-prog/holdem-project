@@ -1,3 +1,9 @@
+## 2026-09-16 (6) — 🧰 queue 회차 Q6-c 머지·배포 (ja 잔여 10 · NOTE_* 오스트리아 · echo 19→0 · 거울쌍 28편 판정)
+
+- 레인 `d1714d74` → 머지 `c3d23cf2`(충돌 0) → 헤드 후속 `191ee840` → 빌드 70 + intl 577 · 게이트 hygiene 🔴 0 · answer-echo 🔴 echo 0 · tournaments-i18n 공백 0 · tournament-numbers 값 필드 0 · push · lane:sync 4레인.
+- 헤드 요청 8건 전건: MB-053 · intentional-diffs 2행 · **EN-먼저 4건 등재(§2-F Q6c#1~#4 · AK vs 작은 포켓페어가 1순위)** · 세 레인 §6-0 · 캘린더 12/31 중국 단체 무비자 연장 만료 · **dateModified 판정 = 올린다**(09-16) · sitemap 23행 · ja §2-N·zh-hant 18-3 이관 표기.
+- 라이브 확인·IndexNow는 MB-053 행. 다음 queue 회차 = **Q4-b**(es WSOP 2편 WRONG 15 · 라이브 사실오류) 또는 EN-먼저 §2-F(집필 있음 · Fable 구간).
+
 ## 2026-09-16 (5) — 애널리틱스 스냅샷 3회차(규칙 v1 · 확정일 09-14) + GA4·GSC 28일 분석
 
 - `npm run analytics` → `docs/analytics-log.md` 3행째 · 원본 `docs/analytics-snapshots/2026-09-14.*`. 걷어낸 것: 미처리일 2(오늘·09-15 5.8%) · (not set) 236 · Singapore 봇 611.
