@@ -105,6 +105,8 @@ EN 12편 정정 → 7로케일(de·es·id·ja·pt·zh·zh-hant) 전파 완료. 1
 
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
+- 🟠 **EN `paired-board-strategy` — 22 counterfeiting의 리버 조건 누락**(HI GTO 독립 전략·수학 검수, 2026-09-15). 원문 `a running three counterfeits it into playing the board`를 한정된 런아웃으로 명확히 할 필요가 있다. `22/6633K`는 보드 Two Pair를 플레이하지만 `22/66332`는 홀카드 22로 Full House를 만든다. HI 초안의 별도 오역(`66333`을 Two Pair로 분류)은 HI에서 고쳐 카드 재검산까지 종결했다. EN·기발행 형제 언어의 적용은 이 회차에서 하지 않았으며, 후속 회차는 실제 해당 문장을 확인한 뒤 최소 수정한다. 원본/도입 결함 구분과 증거 정본 = [HI 원문 계약](hi-gto-source-contract.md#hi-독립-검수에서-구체화한-런아웃-조건).
+
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.
 - ✅ **종결(queue Q4-a · 2026-09-12)** — EN 경쟁 페이지 배타 주장 제거(`rake`·`tournament`·`3bet`·`straddle`·`ept`). 🔴 단 「most guides / almost every article」류 **완화형은 유지가 판정**이다(차별점 서술 · E-E-A-T 목소리 — 다시 지우자고 하지 마라).
 - ✅ **종결(queue Q4-a 실측 · 2026-09-12)** — EN↔pt FAQ 개수 드리프트는 **실측 0**이었다(bubble·short-stack·tournament·icm).

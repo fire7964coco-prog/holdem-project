@@ -38,10 +38,16 @@ const DRY = process.argv.includes("--dry");
  */
 const langArg = process.argv.find((a) => a.startsWith("--lang="));
 const LANG = langArg ? langArg.split("=")[1] : null;
+// 새 발행은 §9-2-A의 q82를 명시한다. 명시한 품질은 용량 때문에 낮추지 않는다.
+const qualityArg = process.argv.find((a) => a.startsWith("--quality="));
+const requestedQuality = qualityArg ? Number(qualityArg.split("=")[1]) : null;
+if (requestedQuality !== null && (!Number.isInteger(requestedQuality) || requestedQuality < 1 || requestedQuality > 100)) {
+  console.error('--quality는 1~100 사이 정수여야 한다'); process.exit(1);
+}
 
 const WIDTH = 1200;
-const QUALITY = 76;      // 글자 가독성 우선. 80KB를 넘으면 아래 STEP_DOWN으로 한 단계씩 내린다
-const STEP_DOWN = [76, 70, 64, 58];
+const QUALITY = requestedQuality ?? 76; // 기존 호출 호환. 새 발행: --lang=pt --quality=82
+const STEP_DOWN = requestedQuality === null ? [76, 70, 64, 58] : [requestedQuality];
 const LIMIT_KB = 80;
 
 if (!existsSync(SRC)) process.exit(console.error("캡처 폴더 없음:", SRC, "\n먼저 node scripts/capture-solver-spots.mjs") || 1);

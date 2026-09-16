@@ -93,7 +93,8 @@ for (const width of opt.widths) {
     if (!resp || resp.error || resp.status() >= 400) { console.log(`🔴 ${url} @${width} → ${resp?.error || 'HTTP ' + resp.status()}`); await page.close(); continue; }
     for (const sel of opt.hide) await page.addStyleTag({ content: `${sel}{display:none !important}` }).catch(() => {});
     // lazy 이미지·폰트가 전부 오도록 끝까지 한 번 스크롤한 뒤 맨 위로
-    await page.evaluate(async () => { const step = window.innerHeight; for (let y = 0; y < document.documentElement.scrollHeight; y += step) { window.scrollTo(0, y); await new Promise(r => setTimeout(r, 60)); } window.scrollTo(0, 0); });
+    // 🔴 상한(60,000px): 홈 피드·/blog는 2026-09-16부터 «끝에 닿으면 1번부터 다시» 순환하므로 scrollHeight가 계속 자란다 — 상한 없이는 영영 안 끝난다
+    await page.evaluate(async () => { const step = window.innerHeight; const cap = 60000; for (let y = 0; y < Math.min(document.documentElement.scrollHeight, cap); y += step) { window.scrollTo(0, y); await new Promise(r => setTimeout(r, 60)); } window.scrollTo(0, 0); });
     await page.waitForTimeout(opt.wait);
     const meta = await page.evaluate((vw) => {
       const docW = document.documentElement.scrollWidth; const offenders = [];

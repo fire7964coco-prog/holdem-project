@@ -30,7 +30,6 @@ import path from 'path';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = process.env.SOLVER_CAPTURE_OUT || path.join(ROOT, '.solver-captures');
-mkdirSync(OUT, { recursive: true });
 
 /** 교육 예제 목록의 «표시 순서» — 원본 마크다운 파일명과 1:1 */
 const SPOTS = [
@@ -41,10 +40,6 @@ const SPOTS = [
 ].map((key, i) => ({ key, i }));
 
 const args = process.argv.slice(2);
-const langArg = args.find(a => a.startsWith('--lang='));
-const LANG = langArg ? langArg.split('=')[1] : 'ko';
-const only = args.filter(a => !a.startsWith('--'));
-const targets = only.length ? SPOTS.filter(s => only.includes(s.key)) : SPOTS;
 
 /**
  * 🔴 화면 문자열은 로케일마다 다르다. 셀렉터가 전부 innerText 기반이라
@@ -68,6 +63,22 @@ const L10N = {
         back: '← Lista', spots: 'Spots de estudio', view: '⚡ Ver resultados',
         noDraw: 'Sin proyecto', combos: 'combos', hands: 'Manos', draws: 'Proyectos',
         all: 'Todo', summary: 'Resumen', barWidth: 'Ancho de barra' },   // 2026-09-02 라이브 ?lang=es 화면에서 직접 읽음(Playwright innerText)
+  pt: { url: 'https://solver.holdemmaster.com/?lang=pt',
+        back: '← Lista', spots: 'Spots de estudo', view: '⚡ Ver resultados',
+        noDraw: 'Sem draw', combos: 'combos', hands: 'Mãos', draws: 'Draws',
+        all: 'Tudo', summary: 'Resumo', barWidth: 'Largura da barra' }, // 2026-09-15 라이브 PT DOM 축어 · 결과 숫자도 소수 쉼표
+  id: { url: 'https://solver.holdemmaster.com/?lang=id',
+        back: '← Kembali', spots: 'Spot belajar', view: '⚡ Lihat hasil',
+        noDraw: 'Tanpa draw', combos: 'combo', hands: 'Hand', draws: 'Draw',
+        all: 'Semua', summary: 'Ringkasan', barWidth: 'Lebar batang:' }, // 2026-09-15 라이브 ID DOM 축어 · 결과 숫자도 소수 쉼표
+  ms: { url: 'https://solver.holdemmaster.com/?lang=ms',
+        back: '← Kembali', spots: 'Spot belajar', view: '⚡ Lihat hasil',
+        noDraw: 'Tiada draw', combos: 'combo', hands: 'Tangan', draws: 'Draw',
+        all: 'Semua', summary: 'Ringkasan', barWidth: 'Lebar bar:' }, // 2026-09-15 라이브 MS DOM 축어 · 결과 숫자는 소수점
+  hi: { url: 'https://solver.holdemmaster.com/?lang=hi',
+        back: '← वापस', spots: 'अभ्यास स्पॉट', view: '⚡ परिणाम देखें',
+        noDraw: 'Draw नहीं', combos: 'combos', hands: 'हैंड', draws: 'Draws',
+        all: 'सभी', summary: 'सारांश', barWidth: 'बार की चौड़ाई:' }, // 2026-09-15 라이브 HI DOM 축어 · 결과 숫자는 소수점
   zh: { url: 'https://solver.holdemmaster.com/?lang=zh',
         back: '← 列表', spots: '教学案例', view: '⚡ 直接看结果',
         noDraw: '无听牌', combos: '组合', hands: '手牌', draws: '听牌',
@@ -77,12 +88,35 @@ const L10N = {
         noDraw: '無聽牌', combos: '組合', hands: '手牌', draws: '聽牌',
         all: '全部', summary: '彙總', barWidth: '長條寬' },   // 2026-09-03 라이브 ?lang=zh-hant 화면에서 직접 읽음(Playwright innerText · 간체와 다른 자리: 彙總·長條寬·無聽牌)
 };
+function parseCaptureArgs(argv) {
+  const unknownOptions = argv.filter(a => a.startsWith('--') && a !== '--selftest' && !a.startsWith('--lang='));
+  if (unknownOptions.length) throw new Error(`지원하지 않는 옵션: ${unknownOptions.join(', ')}`);
+  const langs = argv.filter(a => a.startsWith('--lang='));
+  if (langs.length > 1) throw new Error('--lang은 한 번만 지정한다');
+  const lang = langs.length ? langs[0].slice('--lang='.length) : 'ko';
+  if (!Object.hasOwn(L10N, lang)) throw new Error(`빈 값 또는 지원하지 않는 로케일: ${lang}`);
+  const requested = argv.filter(a => !a.startsWith('--'));
+  if (requested.some(key => !key.trim() || !SPOTS.some(spot => spot.key === key))) {
+    throw new Error(`빈 값 또는 알 수 없는 스팟: ${requested.join(', ')}`);
+  }
+  if (new Set(requested).size !== requested.length) throw new Error('중복 스팟은 지정할 수 없다');
+  const selected = requested.length ? SPOTS.filter(spot => requested.includes(spot.key)) : SPOTS;
+  if (!selected.length) throw new Error('캡처 대상이 비어 있다');
+  return { lang, targets: selected };
+}
+let selection;
+try { selection = parseCaptureArgs(args); }
+catch (err) {
+  console.error(err.message);
+  console.error('사용법: node scripts/capture-solver-spots.mjs [--lang=hi] [spot-key ...] 또는 --selftest');
+  process.exit(2);
+}
+const { lang: LANG, targets } = selection;
 const T = L10N[LANG];
-if (!T) { console.error('지원하지 않는 로케일:', LANG, '· 아는 것:', Object.keys(L10N).join(', ')); process.exit(1); }
 const SUF = LANG === 'ko' ? '' : '-' + LANG;
 console.log('로케일', LANG, '· URL', T.url, '· 파일 접미', SUF || '(없음)');
 
-const extract = (page) => page.evaluate((T) => {
+const extractDocument = (T) => {
   const txt = (e) => (e?.innerText || '').trim();
   const all = [...document.querySelectorAll('div,section')];
   const headerEl = all.filter(e => txt(e).startsWith(T.back) && txt(e).length < 200)[0];
@@ -93,8 +127,8 @@ const extract = (page) => page.evaluate((T) => {
   if (cardsEl) {
     const L = txt(cardsEl).split('\n').map(s => s.trim()).filter(Boolean);
     for (let i = 0; i < L.length; i++) {
-      if (/^\d+(\.\d+)?%$/.test(L[i]) && L[i + 1] === T.combos) actions.push({ name: L[i - 1], freq: L[i] });
-      else if (/^\d+(\.\d+)?%$/.test(L[i]) && /^\d/.test(L[i + 1] || '')) actions.push({ name: L[i - 1], freq: L[i], combos: L[i + 1] });
+      if (/^\d+([.,]\d+)?%$/.test(L[i]) && L[i + 1] === T.combos) actions.push({ name: L[i - 1], freq: L[i] });
+      else if (/^\d+([.,]\d+)?%$/.test(L[i]) && /^\d/.test(L[i + 1] || '')) actions.push({ name: L[i - 1], freq: L[i], combos: L[i + 1] });
     }
   }
 
@@ -105,7 +139,7 @@ const extract = (page) => page.evaluate((T) => {
     for (let i = 0; i < L.length; i++) {
       if (L[i] === T.hands) { sec = hands; continue; }
       if (L[i] === T.draws) { sec = draws; continue; }
-      if (/^\d+(\.\d+)?%$/.test(L[i]) && sec) sec.push({ label: L[i - 1], pct: L[i] });
+      if (/^\d+([.,]\d+)?%$/.test(L[i]) && sec) sec.push({ label: L[i - 1], pct: L[i] });
     }
   }
 
@@ -120,7 +154,52 @@ const extract = (page) => page.evaluate((T) => {
   const players = sel ? [...sel.options].map(o => o.text) : [];
 
   return { header: txt(headerEl).replace(/\n+/g, ' | '), players, actions, hands, draws, head, total };
-}, T);
+};
+const extract = (page) => page.evaluate(extractDocument, T);
+
+function validateResults(oop, ip) {
+  for (const [side, d] of [['oop', oop], ['ip', ip]]) {
+    if (!d.header || d.players.length !== 2 || !d.hands.length || !d.draws.length || !d.total || !d.head) {
+      throw new Error(`${side}: 필수 결과 데이터가 비어 있음 — UI 라벨/셀렉터를 확인할 것`);
+    }
+  }
+  if (!oop.actions.length) throw new Error('OOP 액션 빈도가 비어 있음 — 숫자 표기/셀렉터를 확인할 것');
+}
+
+// 라이브 의존 없이 각 로케일의 표시값·분류·합계 추출과 빈 결과 거부를 검증한다.
+if (args.includes('--selftest')) {
+  const { strict: assert } = await import('node:assert');
+  assert.equal(parseCaptureArgs([]).targets.length, SPOTS.length);
+  assert.deepEqual(parseCaptureArgs(['--lang=hi', 'srp-paired']).targets.map(s => s.key), ['srp-paired']);
+  for (const argv of [['missing-spot'], ['srp-paired', 'missing-spot'], ['srp-paired', 'srp-paired'],
+    [''], [' '], ['--lang='], ['--lang=hi', '--lang=ms'], ['--targets=']]) {
+    assert.throws(() => parseCaptureArgs(argv));
+  }
+  console.log('✔ 요청 범위: 전체/일부 허용, 빈 값·미지·중복·잘못된 옵션 거부');
+  const testBrowser = await chromium.launch();
+  try {
+    const testPage = await testBrowser.newPage();
+    for (const [locale, labels] of Object.entries(L10N)) {
+      const value = ['pt', 'id'].includes(locale) ? '98,2%' : '98.2%';
+      await testPage.setContent(`<div>${labels.back}<br>Board A-high<br>A♥7♦2♣</div>
+        <select><option>OOP (BB (caller))</option><option>IP (BTN (opener))</option></select>
+        <section>Check<br>${value}<br>455.5<br>${labels.combos}</section>
+        <section>${labels.hands}<br>Top Pair<br>20.7%<br>${labels.draws}<br>${labels.noDraw}<br>71.3%</section>
+        <table><tr><th>${labels.hands}</th><th>EQ</th></tr><tr><td>${labels.all}</td><td>45.1%</td></tr></table>`);
+      const result = await testPage.evaluate(extractDocument, labels);
+      assert.deepEqual(result.actions, [{ name: 'Check', freq: value, combos: '455.5' }]);
+      assert.deepEqual(result.hands, [{ label: 'Top Pair', pct: '20.7%' }]);
+      assert.deepEqual(result.draws, [{ label: labels.noDraw, pct: '71.3%' }]);
+      assert.deepEqual(result.total, [labels.all, '45.1%']);
+      validateResults(result, { ...result, actions: [] }); // IP의 행동 전략 없음은 정상이다.
+      assert.throws(() => validateResults({ ...result, hands: [] }, result));
+      assert.throws(() => validateResults({ ...result, actions: [] }, result));
+      assert.throws(() => validateResults(result, { ...result, total: null }));
+      console.log(`✔ ${locale}: 액션·분류·합계 추출, 누락 거부`);
+    }
+  } finally { await testBrowser.close(); }
+  process.exit(0);
+}
 
 const rects = (page) => page.evaluate((T) => {
   const all = [...document.querySelectorAll('div,section')];
@@ -134,6 +213,9 @@ const rects = (page) => page.evaluate((T) => {
 
 process.on('unhandledRejection', e => { console.error('UNHANDLED', e); process.exit(1); });
 
+// Validate the complete request before creating output directories or opening a browser.
+console.log(`요청 범위 (${targets.length}): ${targets.map(s => s.key).join(', ')}`);
+mkdirSync(OUT, { recursive: true });
 const browser = await chromium.launch();
 const page = await browser.newPage({ viewport: { width: 1500, height: 1300 }, deviceScaleFactor: 2 });
 await page.goto(T.url, { waitUntil: 'networkidle' });
@@ -183,6 +265,7 @@ for (const spot of targets) {
     });
     await showChrome(); await page.waitForTimeout(300);
     const ip = await extract(page);
+    validateResults(oop, ip);
     await hideChrome();
     await page.screenshot({ path: path.join(OUT, `${spot.key}-ip${SUF}.png`), clip });
 
@@ -193,6 +276,10 @@ for (const spot of targets) {
   }
 }
 
-writeFileSync(path.join(OUT, `data${SUF}.json`), JSON.stringify(results, null, 2), 'utf8');
+const completed = Object.keys(results);
+if (completed.length) writeFileSync(path.join(OUT, `data${SUF}.json`), JSON.stringify(results, null, 2), 'utf8');
+else console.error('✘ 완료된 캡처가 없어 기존 data 파일을 보존한다');
 await browser.close();
-console.log('\nsaved →', OUT);
+console.log(`완료 범위 (${completed.length}/${targets.length}): ${completed.join(', ') || '(없음)'}`);
+if (completed.length) console.log('\nsaved →', OUT);
+if (completed.length !== targets.length) process.exitCode = 1;

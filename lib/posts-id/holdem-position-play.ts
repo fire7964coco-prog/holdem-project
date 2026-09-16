@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Berada in position berarti Anda beraksi terakhir — Anda melihat setiap keputusan lawan sebelum mengeluarkan satu chip pun. Studi solver dan database menunjukkan pemain out of position hanya menangkap sekitar 60–85% dari equity mereka — yang berarti in position Anda berada di atas 100%. Itulah kenapa UTG membuka ~13% tangan dan button ~43% — dan kenapa posisi menulis ulang setiap keputusan c-bet, bluff, dan pot control di postflop.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-09-11",
+  updated: "2026-09-15",
   masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "16 mnt",
@@ -192,7 +192,7 @@ Persentase ini menggambarkan *ukuran range* — tangan spesifik mana yang mengis
 
 Sebagian besar panduan berhenti di "hindari bermain OOP." Baik — tapi Anda ada di blind dua kali setiap orbit, dan kadang open UTG Anda di-call button. Inilah cara kalah sesedikit mungkin, dan sesekali membalikkan keadaan:
 
-**1. Check-raise adalah penyeimbang Anda.** Ini satu-satunya senjata yang dimiliki OOP dan tidak dimiliki IP: karena mereka berharap bisa bet saat di-check kepada mereka, ==g:sebuah check-raise membalikkan autopilot posisi mereka melawan mereka sendiri.== Bangun range-nya dengan jujur — tangan kuat (set, two pair) plus draw dengan equity nyata (open-ender, flush draw) — jadi ia tak pernah semua-bluff atau semua-value.
+**1. [Check-raise](/id/blog/low-board-check-raise) adalah penyeimbang Anda.** Ini satu-satunya senjata yang dimiliki OOP dan tidak dimiliki IP: karena mereka berharap bisa bet saat di-check kepada mereka, ==g:sebuah check-raise membalikkan autopilot posisi mereka melawan mereka sendiri.== Bangun range-nya dengan jujur — tangan kuat (set, two pair) plus draw dengan equity nyata (open-ender, flush draw) — jadi ia tak pernah semua-bluff atau semua-value.
 
 **2. Bet lebih besar ketika Anda memang bet.** Bet OOP perlu mengakhiri tangan lebih cepat. Sizing yang lebih besar (bayangkan dua-pertiga hingga tiga-perempat pot ketimbang sepertiga) menolak kartu gratis dan float murah yang, tanpa itu, akan diambil lawan Anda berkat posisinya. Bermain small-ball OOP hanya memperpanjang tangan — dan setiap street ekstra menguntungkan pemain yang beraksi terakhir.
 

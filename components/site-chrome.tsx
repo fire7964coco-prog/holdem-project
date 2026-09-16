@@ -30,7 +30,7 @@ const LOCALE_FEED_ROOTS = SECONDARY_LOCALES.map((l) => `/${l}`);
 function isFeedAppRoute(pathname: string): boolean {
   if (
     pathname === "/" ||
-    pathname === "/login" ||
+    pathname === "/login" || pathname.startsWith("/login/") ||
     pathname.startsWith("/post/") ||
     pathname.startsWith("/blog/")
   ) return true;
@@ -173,23 +173,44 @@ export function ScrollToTopButton() {
   const locale = localeFromPath(pathname);
   const label = (locale && BACK_TO_TOP[locale]) || "맨 위로 이동";
 
+  const isCommunityHome = pathname === "/" || pathname === "/community" || LOCALE_FEED_ROOTS.includes(pathname.replace(/\/$/, ""));
+
   useEffect(() => {
-    const onScroll = () => setVisible(window.scrollY > 300);
+    // ★커뮤니티 홈은 «위로 스크롤할 때만» 보인다 (2026-09-16 사장님 지시).
+    //   순환 피드라 끝이 없어 버튼이 항상 떠 있었고, 카드 CTA(«바로가기 →»·«전체 읽기 →»)를 덮었다.
+    //   내려 읽는 동안은 숨기고, 손가락을 위로 올리는 순간(= 돌아가려는 신호) 나타난다. 8px 미만 흔들림은 무시.
+    let lastY = window.scrollY;
+    const onScroll = () => {
+      const y = window.scrollY;
+      const dy = y - lastY;
+      if (Math.abs(dy) >= 8) {
+        setVisible(y > 300 && (!isCommunityHome || dy < 0));
+        lastY = y;
+      } else if (y <= 300) {
+        setVisible(false);
+      }
+    };
+    setVisible(window.scrollY > 300 && !isCommunityHome);
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  }, [pathname, isCommunityHome]);
 
   // ★하단 탭바가 깔리는 라우트에서는 그 위로 비켜선다.
   //   기본 bottom-6(24px)이면 버튼(44px)이 24~68px를 차지해 탭바(0~62px)와 겹친다.
   //   허브 셸도 자체적으로 탭바를 깐다(TAB_BAR_SECTIONS엔 없는 /quiz 등 포함) → 같이 비켜준다.
   const liftAboveTabBar = hasBottomTabBar(pathname) || isHubRoute(pathname);
+  // ★커뮤니티 홈 모바일은 오른쪽에 두고 글쓰기 「+」(bottom 80 · 48px) 위에 쌓는다 (2026-09-16).
+  //   전엔 왼쪽 아래(left-4)였는데 카드의 CTA 버튼이 전부 왼쪽 정렬이라 그 위를 정확히 덮었다(캡처 m-home-seam.png).
+  //   오른쪽 열은 이미 「+」가 차지한 자리라 카드 내용과 부딪히지 않는다.
 
   return (
     <button
       onClick={() => smoothScrollWindowTo(0)}
       aria-label={label}
+      aria-hidden={!visible}
+      tabIndex={visible ? 0 : -1}
       className={`fixed right-4 z-50 w-11 h-11 rounded-full flex items-center justify-center shadow-lg transition-all duration-200 hover:scale-110 active:scale-95 ${
-        liftAboveTabBar ? "bottom-[74px] lg:bottom-6" : "bottom-6"
+        isCommunityHome ? "bottom-[138px] lg:bottom-6" : liftAboveTabBar ? "bottom-[74px] lg:bottom-6" : "bottom-6"
       }`}
       style={{
         background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)",
@@ -261,7 +282,7 @@ export function SiteRail() {
  * 그 외 모든 페이지(블로그 글·목록·계산기·대회·규칙·툴)에는 푸터가 깔린다.
  */
 function isFooterlessRoute(pathname: string): boolean {
-  if (pathname === "/" || pathname === "/login") return true;
+  if (pathname === "/" || pathname === "/login" || pathname.startsWith("/login/")) return true;
   if (pathname.startsWith("/post/") || pathname.startsWith("/community")) return true;
   return LOCALE_FEED_ROOTS.some((p) => pathname === p || pathname === p + "/");
 }

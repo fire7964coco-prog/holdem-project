@@ -2,13 +2,14 @@
 
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { Home, ChevronRight } from "lucide-react";
 import { BG, BORDER, INK, MUTED, FLAG, FONT_SANS, FONT_SERIF } from "@/lib/theme";
 import SideRail, { SIDE_RAIL_WIDTH, hubPagesFor, hubHeadingFor } from "@/components/side-rail";
 import BottomTabBar, { tabLabels } from "@/components/bottom-tab-bar";
 import { hubLabels } from "@/lib/hub-i18n";
 import { CHROME, type SecondaryLocale } from "@/lib/intl";
+import { loginHref } from "@/lib/auth-navigation";
 
 /**
  * 허브 페이지 공용 셸 — 홈(community-client.tsx)과 **같은 3열 구조**.
@@ -92,6 +93,12 @@ function useSessionNickname(): SessionUser {
 
 function AuthSlot({ base, loginLabel }: { base: string; loginLabel: string }) {
   const user = useSessionNickname();
+  const router = useRouter();
+  const pathname = usePathname();
+  const [returnPath, setReturnPath] = useState(pathname);
+  useEffect(() => {
+    setReturnPath(window.location.pathname + window.location.search + window.location.hash);
+  }, [pathname]);
   if (user) {
     return (
       <Link
@@ -111,7 +118,16 @@ function AuthSlot({ base, loginLabel }: { base: string; loginLabel: string }) {
   }
   return (
     <Link
-      href="/login"
+      href={loginHref(returnPath)}
+      onClick={(event) => {
+        // A filter may change the query without remounting the shared header.
+        const href = loginHref(window.location.pathname + window.location.search + window.location.hash);
+        event.currentTarget.href = href;
+        if (!event.ctrlKey && !event.metaKey && !event.shiftKey && !event.altKey) {
+          event.preventDefault();
+          router.push(href);
+        }
+      }}
       className="font-semibold rounded-full transition-transform active:scale-95 hover:opacity-90 text-[11px] px-3 py-1 lg:text-sm lg:px-4 lg:py-2 whitespace-nowrap"
       style={{ background: INK, color: BG, fontFamily: FONT_SANS }}
     >

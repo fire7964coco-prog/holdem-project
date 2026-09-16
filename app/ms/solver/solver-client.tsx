@@ -75,31 +75,31 @@ const SPOT_GROUPS = [
     label: "Single Raised Pot — BTN vs BB (asas)",
     cond: "OOP: BB yang call · IP: BTN yang open · Pot 5.5bb · Stack 97.5bb",
     items: [
-      { board: "A♥7♦2♣", name: "Board kering A-high", note: "Contoh kelebihan range untuk pemain yang open: board ini memihak kepada range BTN, dan BB check 98.2% pada keputusan pertama" },
-      { board: "K♠8♦3♣", name: "Board kering K-high", note: "Bandingkan dengan A-high. Range BTN masih mempunyai kelebihan, tetapi kekerapan check BB meningkat kepada 99.8%" },
-      { board: "Q♠J♦T♠", name: "Board Broadway bersambung, two-tone", note: "Board ini nampak sesuai untuk kedua-dua range, tetapi EQR BB hanya 77.9% berbanding 119.4% untuk BTN. BB check 99.9%" },
-      { board: "9♥8♥7♣", name: "Board tengah bersambung, two-tone", note: "BB mendahului dengan bet pada kekerapan 23.7%. Namun, kelebihan range masih pada BTN: equity BB 48.5% berbanding 51.5% untuk BTN" },
-      { board: "Q♠9♠2♠", name: "Board monotone (satu suit)", note: "Perhatikan tangan yang sudah mendapat flush dan tangan yang mempunyai flush draw, kemudian bandingkan saiz bet. BB check 88.8% pada keputusan pertama" },
-      { board: "6♣6♦3♥", name: "Board paired", note: "Bandingkan peranan pocket pair dan bluff apabila board berpasangan. BB check 97.0%, dengan strategi bet tersebar pada dua saiz" },
-      { board: "6♠5♥2♦", name: "Board rendah rainbow", note: "Mulakan dengan tindakan pertama BB: check 96.8% dan bet 3.2%. Satu saiz bet sahaja tersedia di sini, iaitu 33% pot" },
+      { slug: "a-high-board-cbet", board: "A♥7♦2♣", name: "Board kering A-high", note: "Contoh kelebihan range untuk pemain yang open: board ini memihak kepada range BTN, dan BB check 98.2% pada keputusan pertama" },
+      { slug: "k-high-board-cbet", board: "K♠8♦3♣", name: "Board kering K-high", note: "Bandingkan dengan A-high. Range BTN masih mempunyai kelebihan, tetapi kekerapan check BB meningkat kepada 99.8%" },
+      { slug: "broadway-board-strategy", board: "Q♠J♦T♠", name: "Board Broadway bersambung, two-tone", note: "Board ini nampak sesuai untuk kedua-dua range, tetapi EQR BB hanya 77.9% berbanding 119.4% untuk BTN. BB check 99.9%" },
+      { slug: "donk-bet-strategy", board: "9♥8♥7♣", name: "Board tengah bersambung, two-tone", note: "BB mendahului dengan bet pada kekerapan 23.7%. Namun, kelebihan range masih pada BTN: equity BB 48.5% berbanding 51.5% untuk BTN" },
+      { slug: "monotone-board-strategy", board: "Q♠9♠2♠", name: "Board monotone (satu suit)", note: "Perhatikan tangan yang sudah mendapat flush dan tangan yang mempunyai flush draw, kemudian bandingkan saiz bet. BB check 88.8% pada keputusan pertama" },
+      { slug: "paired-board-strategy", board: "6♣6♦3♥", name: "Board paired", note: "Bandingkan peranan pocket pair dan bluff apabila board berpasangan. BB check 97.0%, dengan strategi bet tersebar pada dua saiz" },
+      { slug: "low-board-check-raise", board: "6♠5♥2♦", name: "Board rendah rainbow", note: "Mulakan dengan tindakan pertama BB: check 96.8% dan bet 3.2%. Satu saiz bet sahaja tersedia di sini, iaitu 33% pot" },
     ],
   },
   {
     label: "Pot 3-bet — BB 3-bet, BTN call (SPR rendah)",
     cond: "OOP: BB yang 3-bet · IP: BTN yang call · Pot 22.5bb · Stack 89bb · SPR 4.0",
     items: [
-      { board: "A♦K♠2♥", name: "Board A-high, kelebihan 3-bettor", note: "Range BB mempunyai AA, KK dan AK, lalu bet 100%: 57.8% pada saiz kecil dan 42.2% pada saiz besar. Bentuk range menentukan campuran saiz; SPR rendah sahaja tidak menerangkannya" },
-      { board: "Q♥T♥7♠", name: "Board dinamik two-tone", note: "BB menggunakan bet kira-kira dua pertiga pot pada kekerapan 98.4%. Bandingkan tumpuan pada satu saiz ini dengan campuran dua saiz pada A♦K♠2♥" },
-      { board: "8♦5♣2♠", name: "Board rendah kering", note: "Perhatikan overpair dan tangan A-high dalam range 3-bet. Walaupun board rendah, BB masih bet 98.1% pada keputusan pertama" },
+      { slug: "3bet-pot-cbet", board: "A♦K♠2♥", name: "Board A-high, kelebihan 3-bettor", note: "Range BB mempunyai AA, KK dan AK, lalu bet 100%: 57.8% pada saiz kecil dan 42.2% pada saiz besar. Bentuk range menentukan campuran saiz; SPR rendah sahaja tidak menerangkannya" },
+      { slug: "3bet-pot-bet-sizing", board: "Q♥T♥7♠", name: "Board dinamik two-tone", note: "BB menggunakan bet kira-kira dua pertiga pot pada kekerapan 98.4%. Bandingkan tumpuan pada satu saiz ini dengan campuran dua saiz pada A♦K♠2♥" },
+      { slug: "3bet-pot-low-board", board: "8♦5♣2♠", name: "Board rendah kering", note: "Perhatikan overpair dan tangan A-high dalam range 3-bet. Walaupun board rendah, BB masih bet 98.1% pada keputusan pertama" },
     ],
   },
   {
     label: "Blind vs Blind — SB vs BB (range luas)",
     cond: "OOP: SB yang open · IP: BB yang call · Pot 6bb · Stack 97bb · SPR 16.2",
     items: [
-      { board: "K♥T♦6♠", name: "Board K-high dengan T", note: "SB ialah pemain yang open tetapi bertindak di luar posisi selepas flop. Bandingkan strategi ini dengan BTN vs BB; pilihan saiz bet di sini ialah 33% pot" },
-      { board: "7♦6♦5♣", name: "Board rendah bersambung, two-tone", note: "Board ini mencabar range SB yang open: SB check 90.4%, dan bet hanya 9.6%. Bandingkan dengan board K-high dalam kumpulan yang sama" },
-      { board: "A♠A♥6♦", name: "Board dengan dua Ace", note: "SB mempunyai lebih banyak kombinasi trips daripada BB. Bet kecil 33% pot mendominasi pada kekerapan 79.6%, manakala bet besar digunakan pada 0.5%" },
+      { slug: "blind-battle-cbet", board: "K♥T♦6♠", name: "Board K-high dengan T", note: "SB ialah pemain yang open tetapi bertindak di luar posisi selepas flop. Bandingkan strategi ini dengan BTN vs BB; pilihan saiz bet di sini ialah 33% pot" },
+      { slug: "blind-battle-connected-board", board: "7♦6♦5♣", name: "Board rendah bersambung, two-tone", note: "Board ini mencabar range SB yang open: SB check 90.4%, dan bet hanya 9.6%. Bandingkan dengan board K-high dalam kumpulan yang sama" },
+      { slug: "ace-paired-board-strategy", board: "A♠A♥6♦", name: "Board dengan dua Ace", note: "SB mempunyai lebih banyak kombinasi trips daripada BB. Bet kecil 33% pot mendominasi pada kekerapan 79.6%, manakala bet besar digunakan pada 0.5%" },
     ],
   },
 ];
@@ -419,7 +419,7 @@ export default function SolverClientMs() {
                 <li key={s.board} className="text-sm">
                   <span className="font-semibold">{s.board}</span>
                   <span className="mx-1.5 text-muted-foreground">·</span>
-                  <span className="font-medium">{s.name}</span>{" "}
+                  <Link href={`/ms/blog/${s.slug}`} className="font-medium text-primary hover:underline">{s.name}</Link>{" "}
                   <span className="text-muted-foreground">— {s.note}</span>
                 </li>
               ))}

@@ -27,6 +27,9 @@ import SolverPromo, { SOLVER_PROMO_LOCALES, type SolverPromoLocale } from "@/com
 import type { Post } from "@/lib/posts";
 import { isSecondaryLocale } from "@/lib/intl";
 import { getCurrentEventId } from "@/lib/event-config";
+import { loginHref } from "@/lib/auth-navigation";
+import MobileHomeNavigation from "./mobile-home-navigation";
+import EventStatus, { EventStatusBadge } from "./event-status";
 
 export type { FeedPost } from "./post-card";
 
@@ -83,7 +86,6 @@ const LABELS = {
     noPostsTitle: "아직 작성한 글이 없습니다",
     noPostsSub: "첫 글을 남겨보세요!",
     trendingTitle: "🔥 이번 주 인기글",
-    eventBadge: "🎰 이벤트 · 준비 중",
     eventTitle: "번호 6개 선택\n기프트콘 증정!",
     eventDesc: "3개 → 5만원 · 4개 → 30만원\n5개 → 100만원",
     eventDrawSchedule: "🔗 매주 일요일 오후 7시 (KST)\n비트코인 블록 해시로 자동 추첨",
@@ -137,7 +139,6 @@ const LABELS = {
     noPostsTitle: "No posts yet",
     noPostsSub: "Write your first post!",
     trendingTitle: "🔥 Trending This Week",
-    eventBadge: "🎰 Event · Coming Soon",
     eventTitle: "Pick 6 Numbers\nWin Gift Cards!",
     eventDesc: "3 match → $30 · 4 match → $200\n5 match → $1,000",
     eventDrawSchedule: "🔗 Every Sunday 7 PM KST\nAuto-draw via Bitcoin block hash",
@@ -191,7 +192,6 @@ const LABELS = {
     noPostsTitle: "まだ投稿がありません",
     noPostsSub: "最初の投稿をしよう！",
     trendingTitle: "🔥 今週のトレンド",
-    eventBadge: "🎰 イベント · 準備中",
     eventTitle: "6つの数字を選んで\nギフト券をゲット！",
     eventDesc: "3一致 → $30 · 4 → $200\n5 → $1,000",
     eventDrawSchedule: "🔗 毎週日曜 午後7時 (KST)\nBitcoin block hashで自動抽選",
@@ -245,7 +245,6 @@ const LABELS = {
     noPostsTitle: "暂无帖子",
     noPostsSub: "写下第一条帖子！",
     trendingTitle: "🔥 本周热帖",
-    eventBadge: "🎰 活动 · 准备中",
     eventTitle: "选6个数字\n赢取礼品券！",
     eventDesc: "3个匹配 → $30 · 4 → $200\n5 → $1,000",
     eventDrawSchedule: "🔗 每周日晚7点 (KST)\n比特币区块哈希自动抽签",
@@ -321,7 +320,6 @@ const LABELS = {
     noPostsTitle: "暫無貼文",
     noPostsSub: "寫下第一則貼文！",
     trendingTitle: "🔥 本週熱門",
-    eventBadge: "🎰 活動 · 準備中",
     eventTitle: "選6個數字\n贏取禮品券！",
     eventDesc: "3個號碼 → $30 · 4 → $200\n5 → $1,000",
     eventDrawSchedule: "🔗 每週日晚7點 (KST)\n比特幣區塊雜湊自動抽籤",
@@ -345,7 +343,7 @@ const LABELS = {
     comingSoon: "Próximamente", eventComing: "Eventos próximamente", eventComingSub: "Eventos estilo lotería abrirán pronto",
     loginRequired: "Inicio de sesión requerido", loginRequiredSub: "Inicia sesión para ver tus publicaciones y actividad",
     myPostsStat: "Publicaciones", likesStat: "Me gusta", commentsStat: "Comentarios", myPostsSection: "Mis publicaciones", noPostsTitle: "Sin publicaciones", noPostsSub: "¡Escribe tu primera publicación!",
-    trendingTitle: "🔥 Tendencias esta semana", eventBadge: "🎰 Evento · Próximamente", eventTitle: "Elige 6 números\n¡Gana tarjetas regalo!", eventDesc: "3 coincidencias → $30 · 4 → $200\n5 → $1,000",
+    trendingTitle: "🔥 Tendencias esta semana", eventTitle: "Elige 6 números\n¡Gana tarjetas regalo!", eventDesc: "3 coincidencias → $30 · 4 → $200\n5 → $1,000",
     eventDrawSchedule: "🔗 Cada domingo 7 PM KST\nSorteo automático via Bitcoin block hash",
     eventButton: "Ver evento →", communityLang: "🌐 Idiomas de la comunidad",
     badge_winner: "🏆 Campeón", badge_hot: "🔥 Popular", badge_top: "⭐ Top Usuario", badge_participant: "🎟️ Participante",
@@ -363,7 +361,7 @@ const LABELS = {
     comingSoon: "Demnächst", eventComing: "Events demnächst", eventComingSub: "Lotto-Events öffnen bald",
     loginRequired: "Anmeldung erforderlich", loginRequiredSub: "Melde dich an, um deine Beiträge zu sehen",
     myPostsStat: "Beiträge", likesStat: "Likes", commentsStat: "Kommentare", myPostsSection: "Meine Beiträge", noPostsTitle: "Keine Beiträge", noPostsSub: "Schreibe deinen ersten Beitrag!",
-    trendingTitle: "🔥 Trends dieser Woche", eventBadge: "🎰 Event · Demnächst", eventTitle: "6 Zahlen wählen\nGeschenkkarten gewinnen!", eventDesc: "3 Treffer → $30 · 4 → $200\n5 → $1,000",
+    trendingTitle: "🔥 Trends dieser Woche", eventTitle: "6 Zahlen wählen\nGeschenkkarten gewinnen!", eventDesc: "3 Treffer → $30 · 4 → $200\n5 → $1,000",
     eventDrawSchedule: "🔗 Jeden Sonntag 19 Uhr KST\nAuto-Ziehung per Bitcoin Block Hash",
     eventButton: "Event ansehen →", communityLang: "🌐 Community-Sprachen",
     badge_winner: "🏆 Gewinner", badge_hot: "🔥 Beliebt", badge_top: "⭐ Top User", badge_participant: "🎟️ Teilnehmer",
@@ -381,7 +379,7 @@ const LABELS = {
     comingSoon: "Em breve", eventComing: "Eventos em breve", eventComingSub: "Eventos estilo loteria abrirão em breve",
     loginRequired: "Login necessário", loginRequiredSub: "Faça login para ver suas publicações e atividades",
     myPostsStat: "Publicações", likesStat: "Curtidas", commentsStat: "Comentários", myPostsSection: "Minhas publicações", noPostsTitle: "Sem publicações", noPostsSub: "Escreva sua primeira publicação!",
-    trendingTitle: "🔥 Tendências desta semana", eventBadge: "🎰 Evento · Em breve", eventTitle: "Escolha 6 números\nGanhe vales-presente!", eventDesc: "3 acertos → $30 · 4 → $200\n5 → $1,000",
+    trendingTitle: "🔥 Tendências desta semana", eventTitle: "Escolha 6 números\nGanhe vales-presente!", eventDesc: "3 acertos → $30 · 4 → $200\n5 → $1,000",
     eventDrawSchedule: "🔗 Todo domingo 19h KST\nSorteio automático via Bitcoin block hash",
     eventButton: "Ver evento →", communityLang: "🌐 Idiomas da comunidade",
     badge_winner: "🏆 Campeão", badge_hot: "🔥 Popular", badge_top: "⭐ Top Usuário", badge_participant: "🎟️ Participante",
@@ -399,7 +397,7 @@ const LABELS = {
     comingSoon: "Segera hadir", eventComing: "Event segera hadir", eventComingSub: "Event gaya lotre akan segera dibuka",
     loginRequired: "Login diperlukan", loginRequiredSub: "Login untuk melihat postingan dan aktivitasmu",
     myPostsStat: "Postingan", likesStat: "Suka", commentsStat: "Komentar", myPostsSection: "Postinganku", noPostsTitle: "Belum ada postingan", noPostsSub: "Tulis postingan pertamamu!",
-    trendingTitle: "🔥 Trending Minggu Ini", eventBadge: "🎰 Event · Segera", eventTitle: "Pilih 6 Angka\nMenangkan Voucher!", eventDesc: "3 cocok → $30 · 4 → $200\n5 → $1,000",
+    trendingTitle: "🔥 Trending Minggu Ini", eventTitle: "Pilih 6 Angka\nMenangkan Voucher!", eventDesc: "3 cocok → $30 · 4 → $200\n5 → $1,000",
     eventDrawSchedule: "🔗 Setiap Minggu jam 7 malam KST\nUndian otomatis via Bitcoin block hash",
     eventButton: "Lihat event →", communityLang: "🌐 Bahasa Komunitas",
     badge_winner: "🏆 Juara", badge_hot: "🔥 Populer", badge_top: "⭐ Top User", badge_participant: "🎟️ Peserta",
@@ -417,7 +415,7 @@ const LABELS = {
     comingSoon: "Akan datang", eventComing: "Acara akan datang", eventComingSub: "Acara gaya loteri akan dibuka",
     loginRequired: "Log masuk diperlukan", loginRequiredSub: "Log masuk untuk melihat siaran dan aktiviti anda",
     myPostsStat: "Siaran", likesStat: "Suka", commentsStat: "Komen", myPostsSection: "Siaran saya", noPostsTitle: "Tiada siaran", noPostsSub: "Tulis siaran pertama anda!",
-    trendingTitle: "🔥 Trending Minggu Ini", eventBadge: "🎰 Acara · Akan datang", eventTitle: "Pilih 6 Nombor\nMenang Baucar!", eventDesc: "3 padanan → $30 · 4 → $200\n5 → $1,000",
+    trendingTitle: "🔥 Trending Minggu Ini", eventTitle: "Pilih 6 Nombor\nMenang Baucar!", eventDesc: "3 padanan → $30 · 4 → $200\n5 → $1,000",
     eventDrawSchedule: "🔗 Setiap Ahad jam 7 petang KST\nCabutan automatik via Bitcoin block hash",
     eventButton: "Lihat acara →", communityLang: "🌐 Bahasa Komuniti",
     badge_winner: "🏆 Juara", badge_hot: "🔥 Popular", badge_top: "⭐ Top User", badge_participant: "🎟️ Peserta",
@@ -435,7 +433,7 @@ const LABELS = {
     comingSoon: "Sắp ra mắt", eventComing: "Sự kiện sắp tới", eventComingSub: "Sự kiện kiểu xổ số sắp mở",
     loginRequired: "Cần đăng nhập", loginRequiredSub: "Đăng nhập để xem bài viết và hoạt động của bạn",
     myPostsStat: "Bài viết", likesStat: "Lượt thích", commentsStat: "Bình luận", myPostsSection: "Bài của tôi", noPostsTitle: "Chưa có bài", noPostsSub: "Viết bài đầu tiên của bạn!",
-    trendingTitle: "🔥 Xu hướng tuần này", eventBadge: "🎰 Sự kiện · Sắp tới", eventTitle: "Chọn 6 số\nNhận thẻ quà tặng!", eventDesc: "3 khớp → $30 · 4 → $200\n5 → $1,000",
+    trendingTitle: "🔥 Xu hướng tuần này", eventTitle: "Chọn 6 số\nNhận thẻ quà tặng!", eventDesc: "3 khớp → $30 · 4 → $200\n5 → $1,000",
     eventDrawSchedule: "🔗 Mỗi Chủ nhật 7 tối KST\nQuay thưởng tự động via Bitcoin block hash",
     eventButton: "Xem sự kiện →", communityLang: "🌐 Ngôn ngữ cộng đồng",
     badge_winner: "🏆 Vô địch", badge_hot: "🔥 Phổ biến", badge_top: "⭐ Top User", badge_participant: "🎟️ Người tham gia",
@@ -453,7 +451,7 @@ const LABELS = {
     comingSoon: "Yakında", eventComing: "Etkinlikler yakında", eventComingSub: "Piyango tarzı etkinlikler yakında açılıyor",
     loginRequired: "Giriş gerekli", loginRequiredSub: "Gönderi ve etkinliğinizi görmek için giriş yapın",
     myPostsStat: "Gönderi", likesStat: "Beğeni", commentsStat: "Yorum", myPostsSection: "Gönderilerim", noPostsTitle: "Gönderi yok", noPostsSub: "İlk gönderinizi yazın!",
-    trendingTitle: "🔥 Bu Haftanın Trendleri", eventBadge: "🎰 Etkinlik · Yakında", eventTitle: "6 Numara Seç\nHediye Kartı Kazan!", eventDesc: "3 eşleşme → $30 · 4 → $200\n5 → $1,000",
+    trendingTitle: "🔥 Bu Haftanın Trendleri", eventTitle: "6 Numara Seç\nHediye Kartı Kazan!", eventDesc: "3 eşleşme → $30 · 4 → $200\n5 → $1,000",
     eventDrawSchedule: "🔗 Her Pazar 19:00 KST\nBitcoin block hash ile otomatik çekiliş",
     eventButton: "Etkinliği gör →", communityLang: "🌐 Topluluk Dilleri",
     badge_winner: "🏆 Kazanan", badge_hot: "🔥 Popüler", badge_top: "⭐ Top Kullanıcı", badge_participant: "🎟️ Katılımcı",
@@ -493,7 +491,7 @@ type EventData = {
 // GSC 클릭 순 (2026-06-26 기준): tournaments 25 > pub 7 > strategy > rules > calculator > ranking > hand-chart > quiz > glossary > holdem-practice
 const KO_PAGE_TEASERS: FeedPost[] = [
   { id: "page:win-rate-quiz", type: "admin", language: "ko", title: "홀덤 승률 시뮬레이터 📈", content: "두세 명의 핸드를 랜덤으로 돌려, 카드가 열릴 때마다 각자 승률이 어떻게 바뀌는지 눈으로 확인하세요. 2~4인 지원.", imageUrl: null, likeCount: 0, commentCount: 0, createdAt: "2026-01-11T00:00:00Z", authorNickname: "HoldemMaster", authorAvatar: null, authorBadge: null, liked: false, pageHref: "/win-rate-quiz", pageIcon: "📈" },
-  { id: "page:tournaments", type: "admin", language: "ko", title: "2026 홀덤 대회 일정", content: "WSOP 메인이벤트 파이널 8/3~5(ESPN) · APT 인천(8/7)·APPT 코리아(9/3) 예정. 국내외 대회 일정 한눈에.", imageUrl: null, likeCount: 0, commentCount: 0, createdAt: "2026-01-10T00:00:00Z", authorNickname: "HoldemMaster", authorAvatar: null, authorBadge: null, liked: false, pageHref: "/tournaments", pageIcon: "🏆" },
+  { id: "page:tournaments", type: "admin", language: "ko", title: "2026 홀덤 대회 일정", content: "국내외 진행 중·예정 대회와 종료된 일정을 확인하세요.", imageUrl: null, likeCount: 0, commentCount: 0, createdAt: "2026-01-10T00:00:00Z", authorNickname: "HoldemMaster", authorAvatar: null, authorBadge: null, liked: false, pageHref: "/tournaments", pageIcon: "🏆" },
   { id: "page:pub", type: "admin", language: "ko", title: "내 근처 홀덤펍 찾기", content: "서울·경기 홀덤펍 위치, 바이인, 블라인드 구조 한 번에 비교.", imageUrl: null, likeCount: 0, commentCount: 0, createdAt: "2026-01-09T00:00:00Z", authorNickname: "HoldemMaster", authorAvatar: null, authorBadge: null, liked: false, pageHref: "/pub", pageIcon: "🍺" },
   { id: "page:strategy", type: "admin", language: "ko", title: "홀덤 전략 가이드", content: "포지션·핸드 선택·3-bet·버블 전략까지. 실전에서 바로 쓰는 전략 모음.", imageUrl: null, likeCount: 0, commentCount: 0, createdAt: "2026-01-08T00:00:00Z", authorNickname: "HoldemMaster", authorAvatar: null, authorBadge: null, liked: false, pageHref: "/strategy", pageIcon: "⚡" },
   { id: "page:rules", type: "admin", language: "ko", title: "홀덤 규칙 완전 정리", content: "딜링부터 쇼다운까지 — 텍사스 홀덤 기본 규칙을 순서대로 정리했습니다.", imageUrl: null, likeCount: 0, commentCount: 0, createdAt: "2026-01-07T00:00:00Z", authorNickname: "HoldemMaster", authorAvatar: null, authorBadge: null, liked: false, pageHref: "/rules", pageIcon: "📋" },
@@ -513,20 +511,22 @@ const KO_PAGE_TEASERS: FeedPost[] = [
 ];
 
 // GSC 클릭 기준 상위 고정 (2026-06-26) — 이 순서대로 피드 최상단에 고정
-const PINNED_IDS = [
-  "page:tournaments",
-  "blog:holdem-masters-7th-guide",
-  "blog:apt-incheon-2026-guide",
-  "blog:holdem-tiebreak-rules",
-  "blog:appt-korea-2026-guide",
-  "blog:pocket-kings-kk-strategy",
-];
+/**
+ * 고정 순서 — 페이지 핀 + 서버가 정한 블로그 배치 상위 N편.
+ * 블로그 순서는 lib/featured-order.ts(GA4·GSC 분석 기반)가 정하고 community-home.tsx가 그 순서로 blogPosts를 넘긴다.
+ * 2026-09-16 전엔 여기 slug 6개가 하드코딩돼 있어 배치 변경이 홈에 반영되지 않았다.
+ */
+const PAGE_PINNED_IDS = ["page:tournaments"];
+const FEATURED_PIN_COUNT = 8;
+function pinnedIdsFor(blogPosts: { slug: string }[]): string[] {
+  return [...PAGE_PINNED_IDS, ...blogPosts.slice(0, FEATURED_PIN_COUNT).map((p) => `blog:${p.slug}`)];
+}
 
 /** 고정글 우선 + 최신순 정렬 (초기 정적 렌더와 Supabase 로드 후가 동일한 규칙을 쓰도록 공유) */
-function sortFeed(list: FeedPost[]): FeedPost[] {
+function sortFeed(list: FeedPost[], pinnedIds: string[]): FeedPost[] {
   return [...list].sort((a, b) => {
-    const ai = PINNED_IDS.indexOf(a.id);
-    const bi = PINNED_IDS.indexOf(b.id);
+    const ai = pinnedIds.indexOf(a.id);
+    const bi = pinnedIds.indexOf(b.id);
     if (ai !== -1 && bi === -1) return -1;
     if (ai === -1 && bi !== -1) return 1;
     if (ai !== -1 && bi !== -1) return ai - bi;
@@ -583,11 +583,13 @@ function buildStaticTeasers(
 export default function CommunityClient({
   pageLocale,
   blogPosts,
+  tournamentTeaser,
 }: {
   /** locale 전용 피드 페이지에서 전달 — UI 언어를 강제 지정 */
   pageLocale?: string;
   /** 블로그 티저용 메타데이터(본문 content 제외). 서버(community-home)에서 전달 — 클라이언트가 전체 본문을 번들하지 않게. */
   blogPosts: Omit<Post, "content">[];
+  tournamentTeaser: string;
 }) {
   const router = useRouter();
 
@@ -595,8 +597,8 @@ export default function CommunityClient({
   // 이걸 posts 초기값으로 시딩해 LCP 콘텐츠가 처음부터 존재하게 하고(Supabase 대기 X),
   // 로딩→피드 스왑으로 인한 대규모 레이아웃 시프트(CLS)를 제거한다.
   const staticTeasers = useMemo(
-    () => buildStaticTeasers(pageLocale, blogPosts),
-    [pageLocale, blogPosts]
+    () => buildStaticTeasers(pageLocale, blogPosts).map((post) => post.pageHref === "/tournaments" ? { ...post, content: tournamentTeaser } : post),
+    [pageLocale, blogPosts, tournamentTeaser]
   );
 
   // loading = "Supabase 커뮤니티 글 로딩 중" (정적 티저는 이미 렌더된 상태)
@@ -605,12 +607,52 @@ export default function CommunityClient({
   const [myLanguage, setMyLanguage] = useState(pageLocale ?? "ko");
   const [tab, setTab] = useState<"home" | "chat" | "event" | "profile">("home");
   const [feedFilter, setFeedFilter] = useState<FilterKey>("All");
-  const [posts, setPosts] = useState<FeedPost[]>(() => sortFeed(staticTeasers));
+  const pinnedIds = useMemo(() => pinnedIdsFor(blogPosts), [blogPosts]);
+  const [posts, setPosts] = useState<FeedPost[]>(() => sortFeed(staticTeasers, pinnedIds));
   const [writeOpen, setWriteOpen] = useState(false);
+  const writeDialogRef = useRef<HTMLDialogElement>(null);
+  const [postError, setPostError] = useState<string | null>(null);
+  const [postLoginRequired, setPostLoginRequired] = useState(false);
   const [draft, setDraft] = useState("");
   const [isPending, startTransition] = useTransition();
   const [myPosts, setMyPosts] = useState<FeedPost[]>([]);
   const [eventData, setEventData] = useState<EventData>(null);
+  const [isDesktop, setIsDesktop] = useState(false);
+  useEffect(() => {
+    const media = window.matchMedia("(min-width: 1024px)");
+    const sync = () => setIsDesktop(media.matches);
+    sync();
+    media.addEventListener("change", sync);
+    return () => media.removeEventListener("change", sync);
+  }, []);
+  const homePath = pageLocale ? `/${pageLocale}` : "/";
+  const currentLoginHref = loginHref(`${homePath}${tab === "home" ? "" : `?tab=${tab}`}`);
+  const composeLoginHref = loginHref(`${homePath}?compose=1`);
+  const draftKey = `communityDraft:${pageLocale ?? "ko"}`;
+  useEffect(() => {
+    try { setDraft(sessionStorage.getItem(draftKey) ?? ""); } catch { /* private storage unavailable */ }
+  }, [draftKey]);
+  function updateDraft(value: string) {
+    setDraft(value);
+    try {
+      if (value) sessionStorage.setItem(draftKey, value);
+      else sessionStorage.removeItem(draftKey);
+    } catch { /* keep the in-memory draft */ }
+  }
+
+  useEffect(() => {
+    if (!writeOpen) return;
+    const dialog = writeDialogRef.current;
+    const previousFocus = document.activeElement as HTMLElement | null;
+    const previousOverflow = document.body.style.overflow;
+    dialog?.showModal();
+    document.body.style.overflow = "hidden";
+    return () => {
+      dialog?.close();
+      document.body.style.overflow = previousOverflow;
+      previousFocus?.focus({ preventScroll: true });
+    };
+  }, [writeOpen]);
 
   const [editingNickname, setEditingNickname] = useState(false);
   const [nicknameInput, setNicknameInput] = useState("");
@@ -620,8 +662,14 @@ export default function CommunityClient({
   const PAGE_SIZE = 20;
   const [communityOffset, setCommunityOffset] = useState(PAGE_SIZE);
   const [hasMore, setHasMore] = useState(true);
+  /** 순환 피드(2026-09-16 사장님 지시): 끝에 닿으면 1번부터 다시 이어 붙인다. 클라이언트 표시 전용 — 초기 HTML엔 각 카드가 한 번만 있다 */
+  const [cycles, setCycles] = useState(1);
   const [loadingMore, setLoadingMore] = useState(false);
   const sentinelRef = useRef<HTMLDivElement>(null);
+  /** 데스크톱 본문(`hidden lg:block`)용 센티널. 모바일 센티널은 `lg:hidden` 컨테이너 안이라 데스크톱에선
+   *  display:none → IntersectionObserver가 영영 안 울렸다(2026-09-16 실측: 데스크톱 홈은 42,934px에서 멈추고
+   *  순환·추가 로드 둘 다 없음). ref는 요소 하나만 담으니 데스크톱은 별도 ref로 두고 둘 다 관찰한다. */
+  const desktopSentinelRef = useRef<HTMLDivElement>(null);
 
   // ── 피드 스크롤 위치 복원 ──────────────────────────────────
   // 모바일은 내부 overflow-y-auto div가 스크롤러(window 아님)라 브라우저 기본
@@ -650,18 +698,20 @@ export default function CommunityClient({
   const writeParamHandled = useRef(false);
   useEffect(() => {
     if (writeParamHandled.current) return;
-    if (new URLSearchParams(window.location.search).get("write") !== "1") return;
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("write") !== "1" && params.get("compose") !== "1") return;
     if (loading) return; // 세션 판별 전엔 대기 — 로그인 상태인데 로그인 페이지로 튕기는 것 방지
     writeParamHandled.current = true;
     if (currentUser) setWriteOpen(true);
-    else router.push("/login");
+    else { router.push(composeLoginHref); return; }
     // 새로고침·뒤로가기에서 모달이 다시 열리지 않게 파라미터를 지운다
     try {
       const url = new URL(window.location.href);
       url.searchParams.delete("write");
+      url.searchParams.delete("compose");
       window.history.replaceState(window.history.state, "", url.toString());
     } catch { /* noop */ }
-  }, [loading, currentUser, router]);
+  }, [loading, currentUser, router, composeLoginHref]);
 
   // 탭 변경 시 URL(?tab=)에 동기화 → 도구(계산기 등)에 갔다가 뒤로가기 시 직전 탭(예: 채팅) 복원.
   const tabSynced = useRef(false);
@@ -679,7 +729,10 @@ export default function CommunityClient({
     // OAuth 에러 파라미터 처리
     const params = new URLSearchParams(window.location.search);
     if (params.get("error") || params.get("error_code")) {
-      router.push("/login?error=oauth");
+      params.delete("error");
+      params.delete("error_code");
+      params.delete("error_description");
+      router.push(loginHref(`${homePath}${params.size ? `?${params}` : ""}`, { error: "oauth" }));
       return;
     }
 
@@ -753,7 +806,7 @@ export default function CommunityClient({
 
       // 초기 정적 렌더와 동일한 규칙(sortFeed)으로 병합 — 고정 상단 6개는 그대로 유지되어
       // 뷰포트 상단이 밀리지 않고, 커뮤니티 글은 그 아래(대부분 폴드 밑)에 끼어든다.
-      setPosts(sortFeed([...communityPosts, ...staticTeasers]));
+      setPosts(sortFeed([...communityPosts, ...staticTeasers], pinnedIds));
       setLoading(false);
 
       // 내 글 + 이벤트 데이터 (로그인 시)
@@ -793,7 +846,12 @@ export default function CommunityClient({
   // ── 추가 로드 (무한스크롤) ──────────────────────────────────
   const loadMorePosts = useCallback(async () => {
     // loading 가드: 초기 렌더부터 sentinel이 존재하므로, 초기 Supabase 로드와의 경합 방지
-    if (loading || !hasMore || loadingMore || tab !== "home") return;
+    if (loading || loadingMore || tab !== "home") return;
+    if (!hasMore) {
+      // 서버에 더 없음 → 피드를 처음부터 한 바퀴 더 이어 붙인다 (순환)
+      setCycles((c) => c + 1);
+      return;
+    }
     setLoadingMore(true);
     const supabase = createClient();
     const adminLang = pageLocale ?? myLanguage;
@@ -841,13 +899,13 @@ export default function CommunityClient({
 
   // IntersectionObserver — sentinel 400px 전에 미리 로드 (딜레이 없음)
   useEffect(() => {
-    const sentinel = sentinelRef.current;
-    if (!sentinel) return;
+    const sentinels = [sentinelRef.current, desktopSentinelRef.current].filter((el): el is HTMLDivElement => !!el);
+    if (sentinels.length === 0) return;
     const observer = new IntersectionObserver(
-      (entries) => { if (entries[0].isIntersecting) loadMorePosts(); },
+      (entries) => { if (entries.some((e) => e.isIntersecting)) loadMorePosts(); },
       { rootMargin: "0px 0px 400px 0px", threshold: 0 }
     );
-    observer.observe(sentinel);
+    sentinels.forEach((el) => observer.observe(el));
     return () => observer.disconnect();
   }, [loadMorePosts]);
 
@@ -949,7 +1007,7 @@ export default function CommunityClient({
   }, [doRestore]);
 
   function onLike(postId: string) {
-    if (!currentUser) { router.push("/login"); return; }
+    if (!currentUser) { router.push(currentLoginHref); return; }
     setPosts((prev) =>
       prev.map((p) =>
         p.id === postId
@@ -976,11 +1034,16 @@ export default function CommunityClient({
 
   function onSubmitPost() {
     if (!draft.trim()) return;
+    setPostError(null);
+    setPostLoginRequired(false);
     const fd = new FormData();
     fd.append("content", draft);
     startTransition(async () => {
-      const res = await createPost(fd);
-      if (!res?.error) { setDraft(""); setWriteOpen(false); router.refresh(); }
+      try {
+        const res = await createPost(fd);
+        if (res?.error) { setPostError(res.error); setPostLoginRequired("requiresLogin" in res && !!res.requiresLogin); }
+        else { updateDraft(""); setWriteOpen(false); router.refresh(); }
+      } catch { setPostError(myLanguage === "ko" ? "게시하지 못했습니다. 연결을 확인하고 다시 시도해주세요." : "Post not sent. Check your connection and try again."); }
     });
   }
 
@@ -996,7 +1059,7 @@ export default function CommunityClient({
   const totalComments = myPosts.reduce((s, p) => s + p.commentCount, 0);
 
   // ── 탭별 컨텐츠 ────────────────────────────────────────────
-  function TabContent({ desktop = false }: { desktop?: boolean }) {
+  function renderTabContent(desktop = false) {
     return (
       <>
         {/* 피드 */}
@@ -1007,10 +1070,27 @@ export default function CommunityClient({
                 // 카드 높이에 맞춘 정적 스켈레톤으로 공간 예약 → 도착 시 시프트 최소화
                 ? <>{[0, 1, 2].map((i) => <SkeletonCard key={i} />)}</>
                 : <EmptyState icon="🃏" title={L.emptyFeedTitle} sub={L.emptyFeedSub} />)
-            : filteredPosts.map((p, i) => (
-                // 첫 3장만 eager(LCP 후보) — 나머지 수십 장의 티저 이미지는 lazy로 대역폭 양보
-                <PostCard key={p.id} post={p} myLanguage={myLanguage} myUserId={currentUser?.id} onLike={onLike} imgPriority={i < 3} />
-              ))
+            : Array.from({ length: hasMore ? 1 : cycles }, (_, c) => c).flatMap((c) => [
+                // 순환 이음새: 2바퀴째부터 «처음부터 다시» + 정책 링크(모바일 홈엔 푸터가 없어 여기가 그 자리)
+                c > 0 && (
+                  <div key={`seam-${c}`} className="flex flex-col items-center gap-2.5 py-5">
+                    <span style={{ fontSize: 11, color: MUTED, fontFamily: FONT_SANS }}>♠ 모든 글을 다 봤습니다 — 처음부터 다시 이어집니다</span>
+                    {!pageLocale && (
+                      <div className="flex flex-wrap justify-center gap-x-3 gap-y-1 px-4">
+                        {LEGAL_PAGES.map((lp) => (
+                          <Link key={lp.href} href={lp.href} className="hover:underline" style={{ fontSize: 11, color: MUTED, fontFamily: FONT_SANS }}>
+                            {lp.label}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                ),
+                ...filteredPosts.map((p, i) => (
+                  // 첫 3장만 eager(LCP 후보) — 나머지 수십 장의 티저 이미지는 lazy로 대역폭 양보
+                  <PostCard key={c ? `${p.id}-c${c}` : p.id} post={p} myLanguage={myLanguage} myUserId={currentUser?.id} onLike={onLike} imgPriority={c === 0 && i < 3} compactMobile={c > 0 || i >= 3} />
+                )),
+              ])
         )}
 
         {/* 채팅 */}
@@ -1039,7 +1119,7 @@ export default function CommunityClient({
                   <div className="text-3xl mb-3">👤</div>
                   <p className="text-[15px] font-medium mb-1" style={{ color: INK, fontFamily: "var(--font-lora),serif" }}>{L.loginRequired}</p>
                   <p className="text-sm mb-4" style={{ color: MUTED, fontFamily: "var(--font-inter),sans-serif" }}>{L.loginRequiredSub}</p>
-                  <Link href="/login" className="inline-block px-5 py-2.5 rounded text-sm font-semibold transition-transform active:scale-95 hover:opacity-90" style={{ background: INK, color: BG, fontFamily: "var(--font-inter),sans-serif" }}>
+                  <Link href={currentLoginHref} className="inline-block px-5 py-2.5 rounded text-sm font-semibold transition-transform active:scale-95 hover:opacity-90" style={{ background: INK, color: BG, fontFamily: "var(--font-inter),sans-serif" }}>
                     {L.loginSignup}
                   </Link>
                 </div>
@@ -1130,25 +1210,42 @@ export default function CommunityClient({
 
   // ── 글쓰기 모달 ────────────────────────────────────────────
   const WriteModal = writeOpen && (
-    <div
-      className="fixed inset-0 z-50 flex items-end lg:items-center justify-center"
-      style={{ background: "rgba(32,49,42,0.5)", backdropFilter: "blur(4px)" }}
-      onClick={() => setWriteOpen(false)}
+    <dialog
+      ref={writeDialogRef}
+      aria-labelledby="write-dialog-title"
+      onCancel={() => setWriteOpen(false)}
+      onKeyDown={(event) => {
+        if (event.key !== "Tab") return;
+        const items = Array.from(event.currentTarget.querySelectorAll<HTMLElement>("a[href], button:not([disabled]), textarea:not([disabled]), input:not([disabled]), [tabindex]:not([tabindex='-1'])")).filter((item) => item.getClientRects().length > 0);
+        const first = items[0];
+        const last = items[items.length - 1];
+        if (!first) { event.preventDefault(); return; }
+        if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+        else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+      }}
+      className="fixed inset-0 m-0 h-full max-h-none w-full max-w-none border-0 p-0 open:flex items-end lg:items-center justify-center md:backdrop-blur-sm"
+      style={{ background: "rgba(32,49,42,0.5)" }}
+      onClick={(event) => { if (event.target === event.currentTarget) setWriteOpen(false); }}
     >
       <div
         className="w-full max-w-lg rounded-t-2xl lg:rounded-xl p-5"
         style={{ background: BG, borderTop: `2px solid ${INK}` }}
         onClick={(e) => e.stopPropagation()}
       >
-        <p className="text-base font-medium mb-3" style={{ color: INK, fontFamily: FONT_SERIF }}>{L.writeModalTitle}</p>
+        <h2 id="write-dialog-title" className="text-base font-medium mb-3" style={{ color: INK, fontFamily: FONT_SERIF }}>{L.writeModalTitle}</h2>
         <textarea
+          aria-label={L.draftPlaceholder}
+          autoFocus
+          maxLength={5000}
           value={draft}
-          onChange={(e) => setDraft(e.target.value)}
+          onChange={(e) => updateDraft(e.target.value)}
           placeholder={L.draftPlaceholder}
           rows={4}
           className="w-full px-3 py-2.5 rounded text-sm outline-none resize-none"
           style={{ background: CARD, color: INK, border: `1px solid ${BORDER}`, fontFamily: FONT_SANS }}
         />
+        {postError && <p role="alert" className="mt-2 text-sm text-destructive">{postError}</p>}
+        {postLoginRequired && <Link href={composeLoginHref} className="mt-2 inline-block min-h-11 py-2 text-sm font-semibold underline">{L.loginSignup}</Link>}
         <div className="flex gap-2 mt-3">
           <button
             onClick={() => setWriteOpen(false)}
@@ -1163,7 +1260,7 @@ export default function CommunityClient({
           >{isPending ? L.posting : L.postNow}</button>
         </div>
       </div>
-    </div>
+    </dialog>
   );
 
   // 주의: 과거엔 loading 동안 전체 화면 스피너만 렌더 → 데이터 도착 시 페이지 전체가
@@ -1205,7 +1302,7 @@ export default function CommunityClient({
               </div>
             ) : (
               <Link
-                href="/login"
+                href={currentLoginHref}
                 className="text-[11px] font-bold px-3 py-1 rounded-full transition-transform active:scale-90 hover:opacity-90"
                 style={{ background: INK, color: BG }}
               >
@@ -1251,6 +1348,7 @@ export default function CommunityClient({
 
         {/* 모바일 본문 */}
         <div ref={feedScrollRef} className="flex-1 overflow-y-auto pb-24">
+          {!pageLocale && tab === "home" && <MobileHomeNavigation />}
           {/*
             GTO 솔버 버튼 (모바일) — ★2026-08-14.
             🔴 **모바일 홈에는 진입점이 0이었다.** 좌측 레일도 우측 사이드바도 데스크톱 전용이라
@@ -1264,7 +1362,7 @@ export default function CommunityClient({
               <SolverPromo locale={(pageLocale ?? "ko") as SolverPromoLocale} />
             </div>
           )}
-          <TabContent />
+          {(tab === "home" || !isDesktop) && renderTabContent()}
           {/* 무한스크롤 sentinel — 400px 미리 감지해 선제 로드 */}
           {tab === "home" && (
             <div ref={sentinelRef} style={{ height: 1 }} />
@@ -1296,7 +1394,8 @@ export default function CommunityClient({
         {/* 모바일 FAB */}
         {tab === "home" && (
           <button
-            onClick={() => currentUser ? setWriteOpen(true) : router.push("/login")}
+            aria-label={L.writePost}
+            onClick={() => currentUser ? setWriteOpen(true) : router.push(composeLoginHref)}
             className="fixed flex items-center justify-center rounded-full active:scale-95 transition-transform"
             style={{ bottom: 80, right: 20, width: 48, height: 48, background: INK, boxShadow: "0 4px 16px rgba(32,49,42,0.35)", zIndex: 45 }}
           >
@@ -1386,7 +1485,7 @@ export default function CommunityClient({
                 </>
               ) : (
                 <Link
-                  href="/login"
+                  href={currentLoginHref}
                   className="text-sm font-semibold px-4 py-2 rounded-full transition-transform active:scale-95 hover:opacity-90"
                   style={{ background: INK, color: BG, fontFamily: FONT_SANS }}
                 >
@@ -1411,7 +1510,7 @@ export default function CommunityClient({
                 base={pageLocale ? `/${pageLocale}` : ""}
                 locale={pageLocale ?? null}
                 onSelect={setTab}
-                onWrite={() => (currentUser ? setWriteOpen(true) : router.push("/login"))}
+                onWrite={() => (currentUser ? setWriteOpen(true) : router.push(composeLoginHref))}
                 writeLabel={L.writePost}
               />
             </div>
@@ -1455,7 +1554,7 @@ export default function CommunityClient({
                 <div
                   className="rounded p-4 mb-5 flex items-center gap-3 cursor-pointer"
                   style={{ background: CARD, border: `1px solid ${BORDER}` }}
-                  onClick={() => currentUser ? setWriteOpen(true) : router.push("/login")}
+                  onClick={() => currentUser ? setWriteOpen(true) : router.push(composeLoginHref)}
                 >
                   {currentUser ? (
                     <div
@@ -1496,7 +1595,9 @@ export default function CommunityClient({
               </>
             )}
 
-            <TabContent desktop />
+            {(tab === "home" || isDesktop) && renderTabContent(true)}
+            {/* 데스크톱 무한스크롤·순환 센티널 (모바일 것은 lg:hidden 안이라 여기선 안 울린다) */}
+            {tab === "home" && <div ref={desktopSentinelRef} style={{ height: 1 }} />}
           </main>
 
           {/* ── 오른쪽 사이드바 ── */}
@@ -1529,7 +1630,7 @@ export default function CommunityClient({
                   </p>
                   {trending.map((t, i) => (
                     <Link
-                      href={t.blogSlug ? (t.blogLocale ? `/${t.blogLocale}/blog/${t.blogSlug}` : `/blog/${t.blogSlug}`) : `/post/${t.id}`}
+                      href={t.pageHref ?? (t.blogSlug ? (t.blogLocale ? `/${t.blogLocale}/blog/${t.blogSlug}` : `/blog/${t.blogSlug}`) : `/post/${t.id}`)}
                       key={t.id}
                       className="flex items-start gap-3 mb-3 last:mb-0 group"
                     >
@@ -1559,7 +1660,7 @@ export default function CommunityClient({
               {/* 이벤트 배너 */}
               <div className="rounded p-4" style={{ background: CARD, border: `1px solid ${BORDER}` }}>
                 <p className="text-[10px] font-bold tracking-widest uppercase mb-1" style={{ color: RED, fontFamily: FONT_SANS }}>
-                  {L.eventBadge}
+                  🎰 <EventStatusBadge lang={pageLocale ?? myLanguage} />
                 </p>
                 <p
                   className="text-[16px] font-medium mb-1.5 whitespace-pre-line"
@@ -1575,10 +1676,7 @@ export default function CommunityClient({
                   className="rounded px-3 py-2 mb-3 whitespace-pre-line"
                   style={{ background: "rgba(var(--gold-dark-rgb),0.07)", border: "1px solid rgba(var(--gold-dark-rgb),0.18)" }}
                 >
-                  <p className="text-[11px] leading-relaxed" style={{ color: MUTED, fontFamily: FONT_SANS }}>
-                    {L.eventDrawSchedule}
-                  </p>
-                  <LocalDrawTime fontFamily={FONT_SANS} muted={MUTED} />
+                  <EventStatus lang={pageLocale ?? myLanguage} />
                 </div>
                 <button
                   onClick={() => setTab("event")}
@@ -1626,33 +1724,6 @@ export default function CommunityClient({
   );
 }
 
-/** 일요일 오후 7시 KST를 방문자 현지 시간으로 변환해 표시 */
-function LocalDrawTime({ fontFamily, muted }: { fontFamily: string; muted: string }) {
-  const [localStr, setLocalStr] = useState<string | null>(null);
-  useEffect(() => {
-    const tzOffsetMin = -new Date().getTimezoneOffset();
-    if (tzOffsetMin === 9 * 60) return; // 이미 KST면 표시 불필요
-    // 다음 일요일 KST 19:00 = UTC 10:00
-    const now = new Date();
-    const day = now.getDay();
-    const daysUntil = day === 0 ? 7 : 7 - day;
-    const nextSun = new Date(now);
-    nextSun.setDate(now.getDate() + daysUntil);
-    nextSun.setUTCHours(10, 0, 0, 0);
-    const fmt = nextSun.toLocaleString([], {
-      weekday: "short", hour: "2-digit", minute: "2-digit", timeZoneName: "short",
-    });
-    setLocalStr(fmt);
-  }, []);
-  // 항상 한 줄을 예약(minHeight) — 마운트 후 텍스트가 삽입되며 아래 버튼을 밀지 않게(CLS 방지)
-  return (
-    <p className="text-[10px] mt-1" style={{ color: muted, fontFamily, opacity: 0.75, minHeight: 15 }}>
-      {localStr ? `📍 현지 시간: ${localStr}` : " "}
-    </p>
-  );
-}
-
-/** 피드 카드와 유사한 높이의 정적 스켈레톤 — 공간 예약용(CLS 방지). 무한 애니메이션 없음. */
 function SkeletonCard() {
   return (
     <div

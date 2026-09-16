@@ -1,0 +1,303 @@
+{
+  "count": 16,
+  "overflow": [],
+  "reports": [
+    {
+      "width": 390,
+      "url": "http://localhost:3100/",
+      "overflowPx": 0,
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Refused to execute script from 'http://localhost:3100/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Refused to execute script from 'http://localhost:3100/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled."
+      ],
+      "failedRequests": [
+        "404 http://localhost:3100/_vercel/speed-insights/script.js",
+        "http://localhost:3100/_vercel/speed-insights/script.js",
+        "404 http://localhost:3100/_vercel/insights/script.js",
+        "http://localhost:3100/_vercel/insights/script.js",
+        "https://www.google-analytics.com/g/collect?v=2&tid=G-CHSBJJDC14&gtm=45je69b1v9247227014za200zd9247227014&_p=1789474631772&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=CA&ar",
+        "https://lh3.googleusercontent.com/a/ACg8ocL3-RjqstRpZNhW3UsqiTKD3N3bHBoYkBaQYr-0iwWQmMzzDw=s96-c",
+        "https://lh3.googleusercontent.com/a/ACg8ocKQ8ZumFC4xpyt2ibDLNCtUJ9P6CoUUV1mopb1GmlU10kTg8Vp6=s96-c",
+        "https://lh3.googleusercontent.com/a/ACg8ocK1yj7RjtrpIcFmKoCq-skstZxhHhsLvo-HoCxmGgOI_Sx8VSs=s96-c",
+        "http://localhost:3100/post/20d4d599-e76b-46b5-ac0f-2272d2c64588?_rsc=1wtp7",
+        "http://localhost:3100/post/e3b89664-6c06-403c-a3fa-6d9af2388854?_rsc=1wtp7"
+      ]
+    },
+    {
+      "width": 390,
+      "url": "http://localhost:3100/blog",
+      "overflowPx": 0,
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Refused to execute script from 'http://localhost:3100/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Refused to execute script from 'http://localhost:3100/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled."
+      ],
+      "failedRequests": [
+        "404 http://localhost:3100/_vercel/speed-insights/script.js",
+        "http://localhost:3100/_vercel/speed-insights/script.js",
+        "404 http://localhost:3100/_vercel/insights/script.js",
+        "http://localhost:3100/_vercel/insights/script.js",
+        "https://www.google-analytics.com/g/collect?v=2&tid=G-CHSBJJDC14&gtm=45je69b1v9247227014za200zd9247227014&_p=1789474637037&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=CA&ar"
+      ]
+    },
+    {
+      "width": 390,
+      "url": "http://localhost:3100/blog/holdem-tiebreak-rules",
+      "overflowPx": 0,
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Refused to execute script from 'http://localhost:3100/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Refused to execute script from 'http://localhost:3100/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled."
+      ],
+      "failedRequests": [
+        "404 http://localhost:3100/_vercel/speed-insights/script.js",
+        "http://localhost:3100/_vercel/speed-insights/script.js",
+        "404 http://localhost:3100/_vercel/insights/script.js",
+        "http://localhost:3100/_vercel/insights/script.js",
+        "https://www.google-analytics.com/g/collect?v=2&tid=G-CHSBJJDC14&gtm=45je69b1v9247227014za200zd9247227014&_p=1789474641942&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=CA&ar"
+      ]
+    },
+    {
+      "width": 390,
+      "url": "http://localhost:3100/tournaments",
+      "overflowPx": 0,
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Refused to execute script from 'http://localhost:3100/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Refused to execute script from 'http://localhost:3100/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled."
+      ],
+      "failedRequests": [
+        "404 http://localhost:3100/_vercel/speed-insights/script.js",
+        "http://localhost:3100/_vercel/speed-insights/script.js",
+        "404 http://localhost:3100/_vercel/insights/script.js",
+        "http://localhost:3100/_vercel/insights/script.js",
+        "https://www.google-analytics.com/g/collect?v=2&tid=G-CHSBJJDC14&gtm=45je69e0h2v9247227014za200zd9247227014&_p=1789474647599&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=CA&"
+      ]
+    },
+    {
+      "width": 390,
+      "url": "http://localhost:3100/calculator",
+      "overflowPx": 0,
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Refused to execute script from 'http://localhost:3100/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Refused to execute script from 'http://localhost:3100/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled."
+      ],
+      "failedRequests": [
+        "404 http://localhost:3100/_vercel/speed-insights/script.js",
+        "http://localhost:3100/_vercel/speed-insights/script.js",
+        "404 http://localhost:3100/_vercel/insights/script.js",
+        "http://localhost:3100/_vercel/insights/script.js",
+        "https://www.google-analytics.com/g/collect?v=2&tid=G-CHSBJJDC14&gtm=45je69e0h2v9247227014za200zd9247227014&_p=1789474656424&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=CA&"
+      ]
+    },
+    {
+      "width": 390,
+      "url": "http://localhost:3100/hands",
+      "overflowPx": 0,
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Refused to execute script from 'http://localhost:3100/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Refused to execute script from 'http://localhost:3100/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled."
+      ],
+      "failedRequests": [
+        "404 http://localhost:3100/_vercel/speed-insights/script.js",
+        "http://localhost:3100/_vercel/speed-insights/script.js",
+        "404 http://localhost:3100/_vercel/insights/script.js",
+        "http://localhost:3100/_vercel/insights/script.js",
+        "https://www.google-analytics.com/g/collect?v=2&tid=G-CHSBJJDC14&gtm=45je69b1v9247227014za200zd9247227014&_p=1789474660104&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=CA&ar"
+      ]
+    },
+    {
+      "width": 390,
+      "url": "http://localhost:3100/quiz",
+      "overflowPx": 0,
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Refused to execute script from 'http://localhost:3100/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Refused to execute script from 'http://localhost:3100/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled."
+      ],
+      "failedRequests": [
+        "404 http://localhost:3100/_vercel/speed-insights/script.js",
+        "http://localhost:3100/_vercel/speed-insights/script.js",
+        "404 http://localhost:3100/_vercel/insights/script.js",
+        "http://localhost:3100/_vercel/insights/script.js",
+        "https://www.google-analytics.com/g/collect?v=2&tid=G-CHSBJJDC14&gtm=45je69b1v9247227014za200zd9247227014&_p=1789474663360&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=CA&ar"
+      ]
+    },
+    {
+      "width": 390,
+      "url": "http://localhost:3100/login",
+      "overflowPx": 0,
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Refused to execute script from 'http://localhost:3100/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Refused to execute script from 'http://localhost:3100/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled."
+      ],
+      "failedRequests": [
+        "404 http://localhost:3100/_vercel/speed-insights/script.js",
+        "http://localhost:3100/_vercel/speed-insights/script.js",
+        "404 http://localhost:3100/_vercel/insights/script.js",
+        "http://localhost:3100/_vercel/insights/script.js",
+        "https://www.google-analytics.com/g/collect?v=2&tid=G-CHSBJJDC14&gtm=45je69b1v9247227014za200zd9247227014&_p=1789474666036&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=CA&ar"
+      ]
+    },
+    {
+      "width": 1440,
+      "url": "http://localhost:3100/",
+      "overflowPx": 0,
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Refused to execute script from 'http://localhost:3100/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Refused to execute script from 'http://localhost:3100/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled."
+      ],
+      "failedRequests": [
+        "404 http://localhost:3100/_vercel/insights/script.js",
+        "http://localhost:3100/_vercel/insights/script.js",
+        "404 http://localhost:3100/_vercel/speed-insights/script.js",
+        "http://localhost:3100/_vercel/speed-insights/script.js",
+        "https://lh3.googleusercontent.com/a/ACg8ocKQ8ZumFC4xpyt2ibDLNCtUJ9P6CoUUV1mopb1GmlU10kTg8Vp6=s96-c",
+        "https://lh3.googleusercontent.com/a/ACg8ocK1yj7RjtrpIcFmKoCq-skstZxhHhsLvo-HoCxmGgOI_Sx8VSs=s96-c",
+        "https://lh3.googleusercontent.com/a/ACg8ocL3-RjqstRpZNhW3UsqiTKD3N3bHBoYkBaQYr-0iwWQmMzzDw=s96-c",
+        "https://www.google-analytics.com/g/collect?v=2&tid=G-CHSBJJDC14&gtm=45je69b1h1v9247227014za200zd9247227014xf1&_p=1789474669164&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=",
+        "http://localhost:3100/post/20d4d599-e76b-46b5-ac0f-2272d2c64588?_rsc=1wtp7"
+      ]
+    },
+    {
+      "width": 1440,
+      "url": "http://localhost:3100/blog",
+      "overflowPx": 0,
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Refused to execute script from 'http://localhost:3100/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Refused to execute script from 'http://localhost:3100/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled."
+      ],
+      "failedRequests": [
+        "404 http://localhost:3100/_vercel/speed-insights/script.js",
+        "http://localhost:3100/_vercel/speed-insights/script.js",
+        "404 http://localhost:3100/_vercel/insights/script.js",
+        "http://localhost:3100/_vercel/insights/script.js",
+        "https://www.google-analytics.com/g/collect?v=2&tid=G-CHSBJJDC14&gtm=45je69b1v9247227014za200zd9247227014&_p=1789474686292&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=CA&ar"
+      ]
+    },
+    {
+      "width": 1440,
+      "url": "http://localhost:3100/blog/holdem-tiebreak-rules",
+      "overflowPx": 0,
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Refused to execute script from 'http://localhost:3100/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Refused to execute script from 'http://localhost:3100/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled."
+      ],
+      "failedRequests": [
+        "404 http://localhost:3100/_vercel/speed-insights/script.js",
+        "http://localhost:3100/_vercel/speed-insights/script.js",
+        "404 http://localhost:3100/_vercel/insights/script.js",
+        "http://localhost:3100/_vercel/insights/script.js",
+        "https://www.google-analytics.com/g/collect?v=2&tid=G-CHSBJJDC14&gtm=45je69b1v9247227014za200zd9247227014&_p=1789474692059&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=CA&ar"
+      ]
+    },
+    {
+      "width": 1440,
+      "url": "http://localhost:3100/tournaments",
+      "overflowPx": 0,
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Refused to execute script from 'http://localhost:3100/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Refused to execute script from 'http://localhost:3100/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled."
+      ],
+      "failedRequests": [
+        "404 http://localhost:3100/_vercel/speed-insights/script.js",
+        "http://localhost:3100/_vercel/speed-insights/script.js",
+        "404 http://localhost:3100/_vercel/insights/script.js",
+        "http://localhost:3100/_vercel/insights/script.js",
+        "https://www.google-analytics.com/g/collect?v=2&tid=G-CHSBJJDC14&gtm=45je69b1v9247227014za200zd9247227014&_p=1789474698426&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=CA&ar"
+      ]
+    },
+    {
+      "width": 1440,
+      "url": "http://localhost:3100/calculator",
+      "overflowPx": 0,
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Refused to execute script from 'http://localhost:3100/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Refused to execute script from 'http://localhost:3100/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled."
+      ],
+      "failedRequests": [
+        "404 http://localhost:3100/_vercel/speed-insights/script.js",
+        "http://localhost:3100/_vercel/speed-insights/script.js",
+        "404 http://localhost:3100/_vercel/insights/script.js",
+        "http://localhost:3100/_vercel/insights/script.js",
+        "https://www.google-analytics.com/g/collect?v=2&tid=G-CHSBJJDC14&gtm=45je69b1v9247227014za200zd9247227014&_p=1789474706470&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=CA&ar"
+      ]
+    },
+    {
+      "width": 1440,
+      "url": "http://localhost:3100/hands",
+      "overflowPx": 0,
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Refused to execute script from 'http://localhost:3100/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Refused to execute script from 'http://localhost:3100/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled."
+      ],
+      "failedRequests": [
+        "404 http://localhost:3100/_vercel/speed-insights/script.js",
+        "http://localhost:3100/_vercel/speed-insights/script.js",
+        "404 http://localhost:3100/_vercel/insights/script.js",
+        "http://localhost:3100/_vercel/insights/script.js",
+        "https://www.google-analytics.com/g/collect?v=2&tid=G-CHSBJJDC14&gtm=45je69b1v9247227014za200zd9247227014&_p=1789474710301&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=CA&ar"
+      ]
+    },
+    {
+      "width": 1440,
+      "url": "http://localhost:3100/quiz",
+      "overflowPx": 0,
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Refused to execute script from 'http://localhost:3100/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Refused to execute script from 'http://localhost:3100/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled."
+      ],
+      "failedRequests": [
+        "404 http://localhost:3100/_vercel/speed-insights/script.js",
+        "http://localhost:3100/_vercel/speed-insights/script.js",
+        "404 http://localhost:3100/_vercel/insights/script.js",
+        "http://localhost:3100/_vercel/insights/script.js",
+        "https://www.google-analytics.com/g/collect?v=2&tid=G-CHSBJJDC14&gtm=45je69b1v9247227014za200zd9247227014&_p=1789474713659&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=CA&ar"
+      ]
+    },
+    {
+      "width": 1440,
+      "url": "http://localhost:3100/login",
+      "overflowPx": 0,
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Refused to execute script from 'http://localhost:3100/_vercel/speed-insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled.",
+        "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "Refused to execute script from 'http://localhost:3100/_vercel/insights/script.js' because its MIME type ('text/html') is not executable, and strict MIME type checking is enabled."
+      ],
+      "failedRequests": [
+        "404 http://localhost:3100/_vercel/speed-insights/script.js",
+        "http://localhost:3100/_vercel/speed-insights/script.js",
+        "404 http://localhost:3100/_vercel/insights/script.js",
+        "http://localhost:3100/_vercel/insights/script.js",
+        "https://www.google-analytics.com/g/collect?v=2&tid=G-CHSBJJDC14&gtm=45je69e0h2v9247227014za200zd9247227014&_p=1789474716379&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=CA&"
+      ]
+    }
+  ]
+}

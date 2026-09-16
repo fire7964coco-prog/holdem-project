@@ -136,9 +136,7 @@ const SOLVER_URL = "https://solver.holdemmaster.com/?lang=pt";
  *   오프라인에서 되는 것은 학습 스팟 열람과 트레이너 풀이뿐이고, 커스텀 스팟 직접 계산은
  *   계산 엔진을 한 번 내려받은 뒤에만 돈다(ko·en·ja·es 주석과 같은 경고).
  *
- * 🪶 **학습 스팟에 블로그 링크가 하나도 없다 — 이것이 정상이다.**
- *   GTO 시리즈 13편은 **ko·en에만 있고 pt에는 0편**이다(`lib/posts-pt/`에 해당 slug 0건).
- *   **없는 링크를 미리 걸지 마라 — 404는 색인에 남는다.** pt판이 발행되면 그때 `slug`를 채운다.
+ * 2026-09-15: PT GTO 해설 13편을 등록하고 아래 학습 스팟을 각 해설에 연결했다.
  */
 
 /** 첫 화면 스펙 — 「무엇/얼마/설치/범위」를 표로 먼저 답한다(GEO 원칙 ②). */
@@ -242,8 +240,7 @@ const COMPARE: string[][] = [
  * 🟢 **note 13개 중 12개가 앱 축어 그대로다** — pt 앱은 ③⑨⑬이 이미 정정본이라 ja·es와 달리
  *    고칠 것이 하나뿐이었다.
  * 🔴 **④만 §4-B 정정본이다**(위 파일 헤더의 M-035 항목 참조). **앱 문구로 되돌리지 마라.**
- * 🪶 `slug`가 하나도 없다 — GTO 시리즈 해설 13편이 **pt에는 아직 0편**이기 때문이다.
- *    pt판을 발행하면 그 행에 채운다. **없는 링크를 미리 걸지 않는다.**
+ * 2026-09-15: 아래 13개 slug는 등록된 PT 해설과 일대일로 대응한다.
  */
 const SPOT_GROUPS = [
   {
@@ -252,30 +249,30 @@ const SPOT_GROUPS = [
     items: [
       // 🔴 M-046 P-2 정정(2026-08-24) — 「BB 체크 이후 BTN이 작은 C벳을 넓게 친다」는 화면이 주지 않는다
       //    (교육 예제는 플랍 첫 액션 = BB 차례에서 멈춘다 · KO ⑦ 239줄). 화면값(체크 98,2%)으로 교체.
-      { board: "A♥7♦2♣", name: "Board seco A-high", note: "O spot clássico de vantagem de range — o ás acerta em cheio no range de quem abriu, e o BB dá check em 98,2%" },
-      { board: "K♠8♦3♣", name: "Board seco K-high", note: "Também favorece o BTN, mas os checks aumentam um pouco — compare com o board A-high e tente dizer por quê" },
+      { slug: "a-high-board-cbet", board: "A♥7♦2♣", name: "Board seco A-high", note: "O spot clássico de vantagem de range — o ás acerta em cheio no range de quem abriu, e o BB dá check em 98,2%" },
+      { slug: "k-high-board-cbet", board: "K♠8♦3♣", name: "Board seco K-high", note: "Também favorece o BTN, mas os checks aumentam um pouco — compare com o board A-high e tente dizer por quê" },
       // 🟢 앱 pt 축어가 이미 정정본이다(es는 앱이 «ambos rangos conectan fuerte»라 우리가 고쳐야 했다).
       //    §4-B ③: BB의 EQR 77.9%로 13스팟 최저, BTN 119.4%, BB 첫 액션 벳 0.1%(= 체크 99.9%).
       // 🔴 M-046 P-1 정정(2026-08-24) — 편 수 하드코딩 금지(RP-08). 「dos 13 spots」 → 「da série」.
-      { board: "Q♠J♦T♠", name: "Board Broadway conectado, two-tone", note: "Um board que parece conectar com os dois ranges, mas o BB realiza menos equity aqui do que em qualquer outro spot da série — 77,9% contra 119,4% do BTN — e dá check em 99,9%" },
+      { slug: "broadway-board-strategy", board: "Q♠J♦T♠", name: "Board Broadway conectado, two-tone", note: "Um board que parece conectar com os dois ranges, mas o BB realiza menos equity aqui do que em qualquer outro spot da série — 77,9% contra 119,4% do BTN — e dá check em 99,9%" },
       // 🔴🔴 M-035 결함 1·2 정정 — 앱 pt는 아직 «favorece o caller … c-bet do BTN despenca»다.
       //    ▸ 「콜러 우위」는 **시리즈가 이름까지 대며 폐기한 명제**다(KO ④ `holdem-donk-bet-strategy`:
       //      「레인지 우위가 BB로 넘어간 것은 아니다 — 48.5% 대 51.5%」 · EN ④ FAQ 「→ No.」).
       //    ▸ 「BTN C벳 빈도」는 **화면에서 확인 불가**다 — 스팟은 플랍 첫 액션(BB 차례)에서 멈춘다.
       //    ▸ 「«sempre dar c-bet» é um erro」 절도 같은 이유로 뺐다(es가 먼저 뺐다).
       //    §4-B ④: OOP(BB) 첫 액션 벳 **23.7%**. ja·es·pt 세 언어에서 같은 결함을 확인했다.
-      { board: "9♥8♥7♣", name: "Board médio conectado, two-tone", note: "O único board de pote simples em que o BB realmente lidera: ele aposta primeiro em 23,7% das vezes (a vantagem de range continua sendo do BTN — equity de 48,5% contra 51,5%)" },
+      { slug: "donk-bet-strategy", board: "9♥8♥7♣", name: "Board médio conectado, two-tone", note: "O único board de pote simples em que o BB realmente lidera: ele aposta primeiro em 23,7% das vezes (a vantagem de range continua sendo do BTN — equity de 48,5% contra 51,5%)" },
       // 🔄 M-067 축어 재동기(2026-08-26) — 앱이 `190d293`에서 ⑤ lesson을 **완화형**으로 정정했다
       //    (구형 = «사라진다»형 → 신형 = «ficam raras» 형). 🔴 **구형 문자열은 주석에도 적지 마라** —
       //    검수장 회귀 앵커가 그 출현 수를 세고 «0 = 정정 반영»으로 읽는다. 화면값에 큰 벳이 3.2% 남아
       //    «사라진다»가 과장이었다(솔버 S-003 ③ · 검수장 S-007 라이브 md5 검증).
       //    🔴 이 자리는 **구형 완전 축어**였다 — 그래서 앱과 갈라지면 즉시 «축어 아님»이 된다.
-      { board: "Q♠9♠2♠", name: "Board monotone", note: "As apostas grandes ficam raras e dão lugar a apostas pequenas e checks — repare com que frequência até um flush fechado só dá check" },
-      { board: "6♣6♦3♥", name: "Board pareado", note: "Ninguém conecta com este board, então a proporção de blefes sobe — use a tabela de detalhes para achar quais mãos apostam como blefe" },
+      { slug: "monotone-board-strategy", board: "Q♠9♠2♠", name: "Board monotone", note: "As apostas grandes ficam raras e dão lugar a apostas pequenas e checks — repare com que frequência até um flush fechado só dá check" },
+      { slug: "paired-board-strategy", board: "6♣6♦3♥", name: "Board pareado", note: "Ninguém conecta com este board, então a proporção de blefes sobe — use a tabela de detalhes para achar quais mãos apostam como blefe" },
       // 🔴 M-045 RP-19 + M-046 P-3 정정(2026-08-24) — 결함이 한 문장에 둘이었다:
       //    ① 「BB가 체크레이즈를 아주 자주 한다」(구 문구)는 화면에 없는 값(KO ⑦ 239줄 · §4-B ⑦ = 체크 96,8 · 벳 3,2뿐)
       //    ② 「벳 다음의 상단 띠를 따라가 보라」는 화면이 주지 않는 것을 «보라»고 지시했다(교육 예제는 플랍 첫 액션에서 멈춘다).
-      { board: "6♠5♥2♦", name: "Board baixo e rainbow", note: "Uma guerra de overcards. O spot para desenhar o check-raise — na tela, a primeira ação do BB é 96,8% de check e 3,2% de aposta" },
+      { slug: "low-board-check-raise", board: "6♠5♥2♦", name: "Board baixo e rainbow", note: "Uma guerra de overcards. O spot para desenhar o check-raise — na tela, a primeira ação do BB é 96,8% de check e 3,2% de aposta" },
     ],
   },
   {
@@ -288,31 +285,31 @@ const SPOT_GROUPS = [
       //    스택 깊이가 아니라 레인지의 모양이다」(`lib/posts/3bet-pot-cbet.ts` 반박 문단).
       //    🪶 검수장 목록(M-038)에는 pt 행이 없었다 — **랜딩이 목록보다 하루 늦게 생겼기 때문**이고,
       //       발원지(EN)를 안 고치면 de·zh가 또 받는다는 그 경고가 pt에서 실제로 일어난 것이다.
-      { board: "A♦K♠2♥", name: "Board A-high, vantagem do 3-bettor", note: "O melhor flop possível para o range de 3-bet — carregado de AK, AA e KK. O que faz uma aposta pequena apertar o range inteiro é o formato desse range, não o SPR baixo" },
+      { slug: "3bet-pot-cbet", board: "A♦K♠2♥", name: "Board A-high, vantagem do 3-bettor", note: "O melhor flop possível para o range de 3-bet — carregado de AK, AA e KK. O que faz uma aposta pequena apertar o range inteiro é o formato desse range, não o SPR baixo" },
       // 🟢 앱 pt 축어가 이미 정정본이다(es·ja는 앱이 «empieza a frenar»여서 우리가 고쳤다).
       //    §4-B ⑨: 벳 합계 99.1%(큰 사이즈 98.4 + 작은 사이즈 0.7), 체크 **0.8%**.
       // 🔴 2026-09-06 EN 정렬 — 노트 꼬리의 «0,8 %만 체크한다» 절을 뗐다(구형 문자열은 주석에도 인용하지 않는다 — 회귀 앵커 계수 보호). 98,4는 «큰 사이즈» 몫이라 0,8과 나란히 두면
       //    독자가 뺄셈으로 0,8%p를 잃는다. en 문안이 정본.
       //    🔴 100−99.1로 «빼서» 구하면 0.9가 나온다 — 개별 반올림값의 합은 100이 아니다.
-      { board: "Q♥T♥7♠", name: "Board dinâmico two-tone", note: "Um pote de 3-bet num board que também agrada ao caller — e mesmo assim o 3-bettor não freia: 98,4% do range aposta com o mesmo tamanho de dois terços" },
+      { slug: "3bet-pot-bet-sizing", board: "Q♥T♥7♠", name: "Board dinâmico two-tone", note: "Um pote de 3-bet num board que também agrada ao caller — e mesmo assim o 3-bettor não freia: 98,4% do range aposta com o mesmo tamanho de dois terços" },
       // 🔴 M-042 RP-17 정정(2026-08-24) — **pt 는 목록에 없던 자리다**(RP-03 과 같은 이유로
       //    랜딩이 목록보다 늦게 생겼다). 종전 「em nada」는 en 의 절대 서술과 같은 형태였다.
       //    반례: **거트샷 4.8% · 백도어 플러시 16.9%(14콤보)**.
       //    🔴 **정본은 KO ⑩ `lib/posts/3bet-pot-low-board.ts` 142줄이다** — 초판 주석의 「정본은 ja」는
       //       **틀렸다**(2026-08-24 사장님 지적). ja 는 «정본과 어긋나지 않은 유일한 랜딩»이었을 뿐이다.
       //    🟢 문안은 수치로 갔다 — KO 표 실측 **탑 페어 0%**(8이 들어간 핸드가 3벳 레인지에 없다).
-      { board: "8♦5♣2♠", name: "Board baixo e seco", note: "O range de 3-bet não liga nenhum top pair aqui — só gutshots e backdoors — e mesmo assim os overpairs e as mãos A-high mantêm a pressão" },
+      { slug: "3bet-pot-low-board", board: "8♦5♣2♠", name: "Board baixo e seco", note: "O range de 3-bet não liga nenhum top pair aqui — só gutshots e backdoors — e mesmo assim os overpairs e as mãos A-high mantêm a pressão" },
     ],
   },
   {
     label: "Blind vs Blind — SB vs BB (ranges amplos)",
     cond: "OOP: SB (open-raiser) · IP: BB (caller) · Pote 6bb · Stack 97bb",
     items: [
-      { board: "K♥T♦6♠", name: "Board K-high com um T", note: "Ranges amplos e os dois jogadores chegam fracos ao flop — compare as frequências com o spot K-high de BTN vs BB" },
-      { board: "7♦6♦5♣", name: "Board baixo conectado, two-tone", note: "Dois ranges amplos se chocam num board ultraconectado: dois pares, straights e draws por todo lado" },
+      { slug: "blind-battle-cbet", board: "K♥T♦6♠", name: "Board K-high com um T", note: "Ranges amplos e os dois jogadores chegam fracos ao flop — compare as frequências com o spot K-high de BTN vs BB" },
+      { slug: "blind-battle-connected-board", board: "7♦6♦5♣", name: "Board baixo conectado, two-tone", note: "Dois ranges amplos se chocam num board ultraconectado: dois pares, straights e draws por todo lado" },
       // 🟢 앱 pt 축어가 이미 정정본이다(es·ja는 앱이 «los tríos son poco frecuentes»여서 우리가 고쳤다).
       //    §4-B ⑬: SB 벳 80.1%(벳45(75%) 0.5% + 벳20(33%) 79.6%) · 체크 19.8%.
-      { board: "A♠A♥6♦", name: "Board com A pareado", note: "As trincas não são raras — o SB simplesmente tem mais delas (88 combos contra 66 do BB), então o SB aposta 80,1%" },
+      { slug: "ace-paired-board-strategy", board: "A♠A♥6♦", name: "Board com A pareado", note: "As trincas não são raras — o SB simplesmente tem mais delas (88 combos contra 66 do BB), então o SB aposta 80,1%" },
     ],
   },
 ];

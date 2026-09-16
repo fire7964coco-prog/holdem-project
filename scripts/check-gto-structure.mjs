@@ -2,10 +2,12 @@
  * GTO 솔버 13편 — 로케일 «구조 게이트» (EN 1:1 계수 + 폐기 앵커 + 표기 규칙)
  *
  *   node scripts/check-gto-structure.mjs --locale=zh
+ *   node scripts/check-gto-structure.mjs --locale=hi --slugs=a-high-board-cbet,k-high-board-cbet
  *
  * 무엇을 보나 (zh 회차 2026-09-03에 신설 · es 회차의 임시 게이트를 상설화)
- *   · EN ↔ 로케일: H2 수 · 내부링크 수·대상 집합 · FAQ 문항 수 · ::: 디렉티브 종류·순서 · 본문 이미지 수 ·
+ *   · EN ↔ 로케일: H2 수 · 내부링크 수·대상 다중집합 · FAQ 문항 수 · ::: 디렉티브 종류·순서 · 본문 이미지 수 ·
  *     ==하이라이트== 수 · 표 행 수 · readnext 행 수 — 전부 «개수 동일»이어야 한다(스펙 §4-A-3 「번역 + 5필드」).
+ *     MS·HI의 미발행 전문 글 링크만 아래 명시적 로케일 목록의 판정한 글+대상으로 치환한다. readnext는 장수만 비교한다.
  *   · 백틱(content 여닫이 2개 외 0) · `-en.webp` 잔존 · 히어로 파일명 · content 안 히어로 마크다운(다국어는 금지) ·
  *     desc 길이 · masterUpdated = EN updated · readTime 형식 · 태그 앵커 · 폐기 명제 앵커(로케일별) · 표기 규칙(로케일별).
  *
@@ -16,13 +18,66 @@
 import { readFileSync, existsSync } from 'fs';
 
 const args = process.argv.slice(2);
-const LOCALE = (args.find((a) => a.startsWith('--locale=')) || '').split('=')[1];
-if (!LOCALE) { console.error('사용법: node scripts/check-gto-structure.mjs --locale=<zh|ja|es|…>'); process.exit(2); }
+const USAGE = '사용법: node scripts/check-gto-structure.mjs --locale=<hi|ms|id|pt|zh|ja|es|…> [--slugs=slug1,slug2 | --slug=slug] 또는 --selftest';
+let LOCALE;
+try { LOCALE = selectLocale(args, !args.includes('--selftest')); }
+catch (err) { console.error(err.message + '\n' + USAGE); process.exit(2); }
+
+function selectLocale(argv, required = false) {
+  const options = argv.filter((a) => a.startsWith('--locale='));
+  if (options.length > 1) throw new Error('--locale은 한 번만 지정한다');
+  if (!options.length) {
+    if (required) throw new Error('--locale이 필요하다');
+    return null;
+  }
+  const locale = options[0].slice('--locale='.length);
+  if (!/^[a-z]{2}(?:-[a-z]+)?$/.test(locale)) throw new Error('빈 값 또는 잘못된 --locale');
+  return locale;
+}
 
 const SLUGS = ['a-high-board-cbet','k-high-board-cbet','broadway-board-strategy','donk-bet-strategy','monotone-board-strategy','paired-board-strategy','low-board-check-raise','3bet-pot-cbet','3bet-pot-bet-sizing','3bet-pot-low-board','blind-battle-cbet','blind-battle-connected-board','ace-paired-board-strategy'];
 
+function selectSlugs(argv, knownSlugs) {
+  const selectors = argv.filter((a) => /^--slugs?=/.test(a));
+  const unknown = argv.filter((a) => a !== '--selftest' && !/^--(?:locale|slugs?)=/.test(a));
+  if (unknown.length) throw new Error(`지원하지 않는 옵션: ${unknown.join(', ')}`);
+  if (selectors.length > 1) throw new Error('--slug 또는 --slugs는 한 번만 지정한다');
+  if (!selectors.length) return knownSlugs;
+  const requested = selectors[0].slice(selectors[0].indexOf('=') + 1).split(',').map((s) => s.trim());
+  if (requested.some((s) => !s || !knownSlugs.includes(s))) throw new Error(`잘못된 GTO slug 목록: ${requested.join(', ')}`);
+  if (new Set(requested).size !== requested.length) throw new Error('중복 GTO slug');
+  return knownSlugs.filter((s) => requested.includes(s));
+}
+
 /** 로케일별 규칙 — 앵커·라벨·문자 집합. 없는 로케일은 구조 계수만 본다. */
 const RULES = {
+  hi: {
+    quick: /> \*\*सीधा जवाब\*\*/,
+    readnext: /:::readnext(?!\[आगे पढ़ें\])/,
+    readTime: /readTime: "\d+ मिनट"/,
+    extra: [[/\*\*\*\*/, '**** 볼드 충돌'], [/13x13/, '13x13(→13×13)'],
+      [/[०-९]/, 'HI 숫자는 라틴 0–9 사용'],
+      [/> \*\*(?:Jawapan ringkas|Jawaban singkat|Quick answer|Resposta rápida)\*\*/, 'HI 직답 블록에 다른 로케일 라벨 잔존']],
+  },
+  ms: {
+    quick: /> \*\*Jawapan ringkas\*\*/,
+    readnext: /:::readnext(?!\[Baca seterusnya\])/,
+    readTime: /readTime: "\d+ minit"/,
+    extra: [[/\*\*\*\*/, '**** 볼드 충돌'], [/13x13/, '13x13(→13×13)'],
+      [/> \*\*(?:Jawaban singkat|Quick answer)\*\*/, 'MS 직답 블록에 ID/EN 라벨 잔존']],
+  },
+  id: {
+    quick: /> \*\*Jawaban singkat\*\*/,
+    readnext: /:::readnext\[(?!Lanjut membaca\])/,
+    readTime: /readTime: "\d+ mnt"/,
+    extra: [[/\*\*\*\*/, '**** 볼드 충돌'], [/13x13/, '13x13(→13×13)']],
+  },
+  pt: {
+    quick: /> \*\*Resposta rápida\*\*/,
+    readnext: /:::readnext\[(?!Continue lendo\])/,
+    readTime: /readTime: "\d+ min"/,
+    extra: [[/\*\*\*\*/, '**** 볼드 충돌'], [/13x13/, '13x13(→13×13)']],
+  },
   zh: {
     ban: [/跟注方.{0,8}占优/, /(BB|跟注方).{0,6}占优牌面/, /c-bet 频率.{0,6}(掉|降|崩)/, /SPR 低的时候.{0,12}小注/, /因为 SPR 低/, /过牌加注.{0,4}频率.{0,6}(变高|上升|升高)/, /顺着下注之后/, /明三条.{0,6}(并不少见|很少见|罕见|不常见)/, /3bet 范围.{0,6}(整个|完全)都?没打中/, /13 个案例/, /13 篇/, /十三个/, /同样的 0\.05bb/, /只有能赢你的牌才会跟注/, /EQR 越高越有利/, /权益实现越高越占优/, /所以 58\.3% 弃牌/],
     badChars: /[這個們來時說於後為與從對將會裡邊籌詐關讓聽麼樣進圖]/g, badCharsName: '번체 의심',
@@ -51,30 +106,206 @@ const RULES = {
 };
 const R = RULES[LOCALE] || {};
 
+// 2026-09-15 MS 발행 판정: 실제 MS 입문 글·solver로 연결하고 앵커도 해당 범위로 바꾼다.
+// 개수 면제가 아니다. source slug + EN target에만 적용하며, 형제 GTO·다른 언어는 원래 대상으로 대조한다.
+// 전문 해설이 없는 자리를 입문 글의 전문 가이드로 소개하지 않는다(ms-posting-reference §8-D).
+const MS_LINK_TARGETS = {
+  'a-high-board-cbet': {
+    'blog/holdem-continuation-bet': 'solver',
+    'blog/holdem-equity': 'solver',
+    'blog/holdem-position-play': 'blog/holdem-game-order',
+  },
+  'k-high-board-cbet': { 'blog/holdem-position-play': 'blog/holdem-game-order' },
+  'broadway-board-strategy': {
+    'blog/holdem-continuation-bet': 'solver',
+    'blog/holdem-position-play': 'blog/holdem-game-order',
+    'blog/holdem-drawing-odds': 'blog/texas-holdem-rules-for-beginners',
+  },
+  'donk-bet-strategy': {
+    'blog/holdem-continuation-bet': 'solver',
+    'blog/holdem-drawing-odds': 'blog/texas-holdem-rules-for-beginners',
+  },
+  'monotone-board-strategy': {
+    'blog/holdem-drawing-odds': 'blog/texas-holdem-rules-for-beginners',
+    'blog/holdem-implied-odds': 'solver',
+  },
+  'paired-board-strategy': {
+    'blog/holdem-continuation-bet': 'solver',
+    'blog/holdem-pot-odds': 'blog/texas-holdem-rules-for-beginners',
+    'blog/holdem-3bet': 'blog/holdem-betting-actions',
+  },
+  'low-board-check-raise': { 'blog/holdem-continuation-bet': 'solver' },
+  '3bet-pot-cbet': {
+    'blog/holdem-position-play': 'blog/holdem-game-order',
+    'blog/holdem-3bet': 'blog/holdem-betting-actions',
+  },
+  '3bet-pot-bet-sizing': {
+    'blog/holdem-continuation-bet': 'solver',
+    'blog/holdem-position-play': 'blog/holdem-game-order',
+    'blog/holdem-drawing-odds': 'blog/texas-holdem-rules-for-beginners',
+    'blog/holdem-pot-odds': 'blog/texas-holdem-rules-for-beginners',
+  },
+  '3bet-pot-low-board': {
+    'blog/holdem-3bet': 'blog/holdem-betting-actions',
+    'blog/holdem-strategy': 'solver',
+  },
+  'blind-battle-cbet': {
+    'blog/holdem-continuation-bet': 'solver',
+    'blog/holdem-position-play': 'blog/holdem-game-order',
+  },
+};
+// HI도 실제 등록된 입문 slug가 같으므로 같은 source slug + EN target 자리만 승인한다.
+// 다른 로케일이나 목록에 없는 source/target에는 적용하지 않는다(hi-posting-reference §2).
+const LOCALE_LINK_TARGETS = { ms: MS_LINK_TARGETS, hi: MS_LINK_TARGETS };
+const expectedLinkTargets = (signature, locale, slug) => signature.split(',').filter(Boolean)
+  .map((target) => LOCALE_LINK_TARGETS[locale]?.[slug]?.[target] || target).sort().join(',');
+
 const content = (s) => { const i = s.indexOf('content: `'); const j = s.indexOf('`.trim()', i); return s.slice(i + 10, j < 0 ? undefined : j); };
 const counts = (c, loc) => ({
   h2: (c.match(/^## /gm) || []).length,
   links: (c.match(new RegExp('\\]\\(/' + loc + '/', 'g')) || []).length,
-  linkTargets: [...c.matchAll(new RegExp('\\]\\(/' + loc + '/(blog/[a-z0-9-]+|solver)', 'g'))].map((m) => m[1]).sort().join(','),
+  // Keep the complete destination: /solver-broken and /blog/slug/typo must not match a valid prefix.
+  linkTargets: [...c.matchAll(new RegExp('\\]\\(/' + loc + '/([^\\s)"]+)', 'g'))].map((m) => m[1]).sort().join(','),
   faq: (c.match(/\*\*Q\. /g) || []).length,
   dir: (c.match(/^:::[a-z]+/gm) || []).length,
   dirs: (c.match(/^:::[a-z]+/gm) || []).join(','),
   img: (c.match(/!\[/g) || []).length,
-  hl: (c.match(/==(?:[rgb]:)?[^=]+==/g) || []).length,
+  // Same single-line delimiters as render-markdown.ts; a formula may contain a single equals sign.
+  hl: (c.match(/==.+?==/g) || []).length,
   tableRows: (c.match(/^\|/gm) || []).length,
   readnext: (c.match(/^\/[a-z-]{2,7}\/blog\/[^|]+\|/gm) || []).length,
 });
 
-let bad = 0;
-for (const slug of SLUGS) {
+if (args.includes('--selftest')) {
+  const cases = [
+    ['Locale selection rejects blank and duplicate values, including identical duplicates', () =>
+      [ ['--locale='], ['--locale= '], ['--locale=hi', '--locale=ms'], ['--locale=hi', '--locale=hi'] ]
+        .every((argv) => { try { selectLocale(argv); return false; } catch { return true; } }) &&
+      selectLocale(['--locale=hi']) === 'hi' && selectLocale(['--locale=zh-hant']) === 'zh-hant' &&
+      selectLocale([]) === null],
+    ['Explicit slug selection is ordered and supports the singular alias', () =>
+      selectSlugs(['--slugs=k-high-board-cbet,a-high-board-cbet'], SLUGS).join(',') === SLUGS.slice(0, 2).join(',') &&
+      selectSlugs(['--slug=low-board-check-raise'], SLUGS).join(',') === 'low-board-check-raise'],
+    ['Empty, unknown, duplicate, conflicting and unsupported selectors fail', () =>
+      [['--slugs='], ['--slug=missing'], ['--slugs=a-high-board-cbet,a-high-board-cbet'],
+        ['--slug=a-high-board-cbet', '--slugs=k-high-board-cbet'], ['--from=1', '--to=4']]
+        .every((argv) => { try { selectSlugs(argv, SLUGS); return false; } catch { return true; } })],
+    ['HI quick-answer label catches other locale labels even beside a valid label', () =>
+      RULES.hi.quick.test('> **सीधा जवाब**') && !RULES.hi.quick.test('> **Quick answer**') &&
+      ['Quick answer', 'Jawapan ringkas', 'Jawaban singkat', 'Resposta rápida'].every((label) =>
+        RULES.hi.extra.some(([re]) => re.test(`> **सीधा जवाब**\n> **${label}**`)))],
+    ['HI readnext rejects foreign and missing labels', () =>
+      !RULES.hi.readnext.test(':::readnext[आगे पढ़ें]') &&
+      [':::readnext[Read next]', ':::readnext[Baca seterusnya]', ':::readnext\n'].every((c) => RULES.hi.readnext.test(c))],
+    ['HI reading time and Latin digit rule preserve corpus conventions', () =>
+      RULES.hi.readTime.test('readTime: "12 मिनट"') &&
+      ['12 minit', '12 min', '१२ मिनट'].every((v) => !RULES.hi.readTime.test(`readTime: "${v}"`)) &&
+      RULES.hi.extra.some(([re]) => re.test('equity ४५.१%')) &&
+      !RULES.hi.extra.some(([re]) => re.test('equity 45.1%, 1,326 combos'))],
+    ['HI approved link mapping is exact and preserves duplicate destinations', () => {
+      const en = counts('[A](/en/blog/holdem-continuation-bet) [B](/en/blog/holdem-continuation-bet) [C](/en/blog/holdem-position-play)', 'en');
+      const hi = counts('[A](/hi/solver) [B](/hi/solver) [C](/hi/blog/holdem-game-order)', 'hi');
+      const expected = expectedLinkTargets(en.linkTargets, 'hi', 'a-high-board-cbet');
+      return en.links === hi.links && expected === hi.linkTargets &&
+        expected !== counts('[A](/hi/solver) [C](/hi/blog/holdem-game-order)', 'hi').linkTargets &&
+        expected !== counts('[A](/hi/solver) [B](/hi/solver-broken) [C](/hi/blog/holdem-game-order/typo)', 'hi').linkTargets;
+    }],
+    ['HI mapping does not exempt unapproved source slots, siblings or other locales', () => {
+      const target = 'blog/holdem-equity';
+      return expectedLinkTargets(target, 'hi', 'k-high-board-cbet') === target &&
+        expectedLinkTargets(target, 'id', 'a-high-board-cbet') === target &&
+        expectedLinkTargets(target, 'vi', 'a-high-board-cbet') === target &&
+        expectedLinkTargets('blog/k-high-board-cbet', 'hi', 'a-high-board-cbet') === 'blog/k-high-board-cbet';
+    }],
+    ['MS quick-answer label rejects ID/EN and catches mixed label bleed', () =>
+      RULES.ms.quick.test('> **Jawapan ringkas**') && !RULES.ms.quick.test('> **Jawaban singkat**') &&
+      !RULES.ms.quick.test('> **Quick answer**') &&
+      RULES.ms.extra.some(([re]) => re.test('> **Jawapan ringkas**\n> **Jawaban singkat**'))],
+    ['MS readnext rejects ID, English and missing labels', () =>
+      !RULES.ms.readnext.test(':::readnext[Baca seterusnya]') &&
+      [':::readnext[Lanjut membaca]', ':::readnext[Read next]', ':::readnext\n'].every((c) => RULES.ms.readnext.test(c))],
+    ['MS reading time follows minit without accepting ID/PT forms', () =>
+      RULES.ms.readTime.test('readTime: "12 minit"') &&
+      ['12 mnt', '12 menit', '12 min'].every((v) => !RULES.ms.readTime.test(`readTime: "${v}"`))],
+    ['MS approved link mapping preserves duplicate destinations', () => {
+      const en = counts('[A](/en/blog/holdem-continuation-bet) [B](/en/blog/holdem-continuation-bet) [C](/en/blog/holdem-position-play)', 'en');
+      const ms = counts('[A](/ms/solver) [B](/ms/solver) [C](/ms/blog/holdem-game-order)', 'ms');
+      return en.links === ms.links && expectedLinkTargets(en.linkTargets, 'ms', 'a-high-board-cbet') === ms.linkTargets;
+    }],
+    ['MS rejects a wrong target or a dropped duplicate despite approved mapping', () => {
+      const en = counts('[A](/en/blog/holdem-continuation-bet) [B](/en/blog/holdem-continuation-bet)', 'en');
+      const expected = expectedLinkTargets(en.linkTargets, 'ms', 'a-high-board-cbet');
+      return expected !== counts('[A](/ms/solver) [B](/ms/blog/holdem-game-order)', 'ms').linkTargets &&
+        expected !== counts('[A](/ms/solver)', 'ms').linkTargets;
+    }],
+    ['MS mapping does not exempt unapproved source slots or other locales', () => {
+      const target = 'blog/holdem-equity';
+      return expectedLinkTargets(target, 'ms', 'k-high-board-cbet') === target &&
+        expectedLinkTargets(target, 'id', 'a-high-board-cbet') === target &&
+        expectedLinkTargets(target, 'en', 'a-high-board-cbet') === target &&
+        expectedLinkTargets('blog/k-high-board-cbet', 'ms', 'a-high-board-cbet') === 'blog/k-high-board-cbet';
+    }],
+    ['Complete link destinations reject valid prefixes with invalid suffixes', () => {
+      const expected = 'blog/holdem-game-order,solver';
+      return counts('[A](/ms/solver-broken) [B](/ms/blog/holdem-game-order/typo)', 'ms').linkTargets !== expected &&
+        counts('[A](/ms/solver/) [B](/ms/blog/holdem-game-order)', 'ms').linkTargets !== expected;
+    }],
+    ['Link titles do not become part of the destination', () =>
+      counts('[A](/ms/solver) [B](/ms/blog/holdem-game-order "thumb:/images/test.webp")', 'ms').linkTargets === 'blog/holdem-game-order,solver'],
+    ['Highlights count formulas with equals and approximation signs equally', () =>
+      counts('==2 + 3 = 5== and ==g:5 / 9 ≈ 56%==', 'ms').hl === 2 &&
+      counts('==2 + 3 ≈ 5== and ==g:5 / 9 = 56%==', 'en').hl === 2],
+    ['An unclosed highlight cannot span paragraphs', () =>
+      counts('==not closed\n\nnew paragraph==', 'ms').hl === 0],
+    ['MS readnext destinations remain a separate count-only axis', () => {
+      const en = counts(':::readnext[Read next]\n/en/blog/holdem-equity | Equity\n:::', 'en');
+      const ms = counts(':::readnext[Baca seterusnya]\n/ms/blog/holdem-hand-rankings | Susunan tangan\n:::', 'ms');
+      return en.readnext === 1 && ms.readnext === 1 && en.links === 0 && ms.linkTargets === '';
+    }],
+    ['ID quick-answer label accepts corpus spelling and rejects English fallback', () =>
+      RULES.id.quick.test('> **Jawaban singkat**') && !RULES.id.quick.test('> **Quick answer**')],
+    ['ID readnext rejects untranslated and Malay labels', () =>
+      !RULES.id.readnext.test(':::readnext[Lanjut membaca]') &&
+      RULES.id.readnext.test(':::readnext[Read next]') && RULES.id.readnext.test(':::readnext[Baca seterusnya]')],
+    ['ID reading time follows mnt, while PT retains min', () =>
+      RULES.id.readTime.test('readTime: "12 mnt"') && !RULES.id.readTime.test('readTime: "12 menit"') &&
+      !RULES.id.readTime.test('readTime: "12 min"') && RULES.pt.readTime.test('readTime: "12 min"')],
+    ['Translated labels preserve link destinations and structural counts', () => {
+      const en = counts('## Question?\n[Solver](/en/solver)\n**Q. Why?**\n| A | B |\n', 'en');
+      const id = counts('## Pertanyaan?\n[Solver](/id/solver)\n**Q. Mengapa?**\n| A | B |\n', 'id');
+      return JSON.stringify(en) === JSON.stringify(id);
+    }],
+    ['A missing FAQ or changed link destination changes the signature', () => {
+      const a = counts('**Q. Why?**\n[X](/id/blog/a-high-board-cbet)', 'id');
+      const b = counts('[X](/id/blog/k-high-board-cbet)', 'id');
+      return a.faq !== b.faq && a.linkTargets !== b.linkTargets;
+    }],
+  ];
+  let passed = 0;
+  for (const [name, test] of cases) {
+    const ok = test();
+    console.log(`${ok ? '✅' : '❌'} ${name}`);
+    if (ok) passed++;
+  }
+  console.log(`\n셀프테스트 ${passed}/${cases.length}`);
+  process.exit(passed === cases.length ? 0 : 1);
+}
+
+let selected;
+try { selected = selectSlugs(args, SLUGS); } catch (err) { console.error(err.message); process.exit(2); }
+let bad = 0, covered = 0;
+console.log(`대상 (${LOCALE}): ${selected.join(', ')}`);
+for (const slug of selected) {
   const lp = `lib/posts-${LOCALE}/${slug}.ts`;
   if (!existsSync(lp)) { console.log(`✘ ${slug}: 파일 없음(${lp})`); bad++; continue; }
+  covered++;
   const ls = readFileSync(lp, 'utf8'), es = readFileSync(`lib/posts-en/${slug}.ts`, 'utf8');
   const lc = content(ls), ec = content(es);
   const z = counts(lc, LOCALE), e = counts(ec, 'en');
   const issues = [];
   for (const k of ['h2','links','faq','dir','img','hl','tableRows','readnext']) if (z[k] !== e[k]) issues.push(`${k} en=${e[k]} ${LOCALE}=${z[k]}`);
-  if (z.linkTargets !== e.linkTargets) issues.push(`linkTargets differ:\n   en=${e.linkTargets}\n   ${LOCALE}=${z.linkTargets}`);
+  const expectedTargets = expectedLinkTargets(e.linkTargets, LOCALE, slug);
+  if (z.linkTargets !== expectedTargets) issues.push(`linkTargets differ:\n   expected=${expectedTargets}\n   ${LOCALE}=${z.linkTargets}`);
   if (z.dirs !== e.dirs) issues.push(`dirs differ en=${e.dirs} ${LOCALE}=${z.dirs}`);
   const bt = (ls.match(/`/g) || []).length - 2; if (bt !== 0) issues.push(`backticks ${bt}`);
   if (/-en\.webp/.test(ls)) issues.push('-en.webp 잔존');
@@ -98,5 +329,7 @@ for (const slug of SLUGS) {
   else console.log(`✔ ${slug} (H2 ${z.h2} · links ${z.links} · faq ${z.faq} · dir ${z.dir} · img ${z.img} · hl ${z.hl} · rows ${z.tableRows} · desc ${desc.length})`);
   for (const w of warns) console.log(`   🟠 ${w}`);
 }
-console.log(bad ? `\n🔴 ${bad}편 결함` : `\n✅ ${SLUGS.length}/${SLUGS.length} 구조 통과 (${LOCALE})`);
+console.log(bad ? `\n🔴 ${bad}편 결함` : `\n✅ ${selected.length}/${selected.length} 구조 통과 (${LOCALE})`);
+console.log(`구조 커버리지: ${covered}/${selected.length}편 (${LOCALE})`);
+console.log('🪶 구조·표기 계수만 검사한다. 표의 값·분모·노드·전략적 의미·언어 자연스러움은 별도 검수 대상이다.');
 process.exit(bad ? 1 : 0);

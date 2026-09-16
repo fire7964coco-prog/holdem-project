@@ -1,12 +1,20 @@
 "use client";
 
-import { useState, useMemo, useEffect, useRef, useCallback } from "react";
+import { Fragment, Suspense, useState, useMemo, useEffect, useRef, useCallback } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { motion } from "framer-motion";
 import { Clock, ChevronRight, Tag, Search, X } from "lucide-react";
 import { SEO } from "@/components/seo";
 import CardThumb from "@/components/card-thumb";
+import { blogFilterHref, readBlogFilters, type BlogFilters } from "@/lib/blog-filters";
+
+/** URL 구독만 작은 Suspense 경계 안에 둔다. 글 목록은 서버 HTML에 그대로 남는다. */
+function FilterUrlObserver({ onChange }: { onChange: () => void }) {
+  const params = useSearchParams();
+  useEffect(() => { onChange(); }, [params, onChange]);
+  return null;
+}
 
 /**
  * 카드가 실제로 그리는 필드만. 본문(content)은 여기 없다 — page.tsx 주석 참조.
@@ -54,7 +62,9 @@ export default function BlogIndex({
   const inputRef = useRef<HTMLInputElement>(null);
 
   /**
-   * URL 쿼리(?q= · ?tag=) 읽기 — **useSearchParams()를 쓰지 않는다.**
+   * URL 쿼리(?q= · ?tag= · ?category=) 읽기.
+   * useSearchParams는 페이지 본체에서 호출하지 않는다. 별도 Observer의 작은
+   * Suspense 경계만 클라이언트로 넘겨 서버의 전체 글 목록을 보존한다.
    *
    * ★이유(2026-08-05에 실제로 한 번 밟은 지뢰): 정적 렌더 페이지에서 useSearchParams()를
    *   호출하면 가장 가까운 Suspense 경계까지가 통째로 클라이언트 렌더로 떨어진다.
@@ -66,10 +76,11 @@ export default function BlogIndex({
    *   ⚠ 되돌리지 말 것 — 되돌리면 목록 HTML이 다시 빈다.
    */
   const syncFromUrl = useCallback(() => {
-    const sp = new URLSearchParams(window.location.search);
-    setQuery(sp.get("q") ?? "");
-    setActiveTag(sp.get("tag"));
-  }, []);
+    const filters = readBlogFilters(window.location.search, categories);
+    setQuery(filters.query);
+    setActiveTag(filters.tag);
+    setActiveCategory(filters.category);
+  }, [categories]);
 
   useEffect(() => {
     syncFromUrl();
@@ -78,10 +89,45 @@ export default function BlogIndex({
     return () => window.removeEventListener("popstate", syncFromUrl);
   }, [syncFromUrl]);
 
-  const sorted = useMemo(
-    () => [...posts].sort((a, b) => b.date.localeCompare(a.date)),
-    [posts]
-  );
+  /**
+   * 순서는 서버(app/blog/page.tsx → lib/featured-order.ts)가 정한다. 여기서 날짜로 재정렬하면
+   * GA4·GSC 기반 배치가 무력화된다 — 2026-09-16 전까지는 `b.date.localeCompare(a.date)`였다.
+   */
+  const sorted = posts;
+
+  /**
+   * 단계 공개(무한 피드 체감): HTML엔 전 카드를 두고(봇은 전부 본다 — 내부링크 보존)
+   * 화면엔 PAGE장씩 연다. 하단 근처에서 다음 묶음. 랜덤·서버 추가 로드 없음.
+   */
+  const PAGE = 20;
+  /**
+   * 순환(2026-09-16 사장님 지시): 마지막 카드 다음은 1번으로 다시 이어진다.
+   * 초기 HTML엔 각 카드가 정확히 한 번(visible ≤ 전체) — 반복분은 스크롤 뒤 클라이언트에서만 생긴다.
+   */
+  function loop<T>(list: T[], count: number): { post: T; idx: number; cycle: number }[] {
+    const n = list.length;
+    if (n === 0) return [];
+    const len = Math.max(n, count);
+    return Array.from({ length: len }, (_, idx) => ({ post: list[idx % n], idx, cycle: Math.floor(idx / n) }));
+  }
+  const [visible, setVisible] = useState(PAGE);
+  const sentinelRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    setVisible(PAGE);
+  }, [activeCategory, activeTag, query]);
+  useEffect(() => {
+    const el = sentinelRef.current;
+    if (!el || typeof IntersectionObserver === "undefined") return;
+    const io = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((e) => e.isIntersecting)) setVisible((v) => v + PAGE);
+      },
+      { rootMargin: "600px 0px" }
+    );
+    io.observe(el);
+    return () => io.disconnect();
+    // 센티널은 «남은 글이 있을 때만» 렌더되므로, 필터·공개 수가 바뀔 때마다 다시 붙인다
+  }, [activeCategory, activeTag, query, visible]);
 
   /** 검색어를 공백으로 쪼갠 토큰들. "팟오즈 리버" 처럼 두 단어를 다 만족하는 글만 남긴다. */
   const tokens = useMemo(
@@ -106,24 +152,32 @@ export default function BlogIndex({
   const featured = sorted[0];
   const rest = sorted.slice(1);
 
+  function applyFilters(patch: Partial<BlogFilters>) {
+    const filters = { query, category: activeCategory, tag: activeTag, ...patch };
+    setQuery(filters.query);
+    setActiveCategory(filters.category);
+    setActiveTag(filters.tag);
+    const href = blogFilterHref(filters);
+    if (`${window.location.pathname}${window.location.search}` !== href) {
+      router.push(href, { scroll: false });
+    }
+  }
+
   /** 검색 제출 — 입력 중에는 로컬 필터로 즉시 반응하고, 제출 시에만 URL에 남긴다(공유·뒤로가기용) */
   function submitSearch(e: React.FormEvent) {
     e.preventDefault();
-    const q = query.trim();
-    router.replace(q ? `/blog?q=${encodeURIComponent(q)}` : "/blog", { scroll: false });
+    applyFilters({ query: query.trim() });
     inputRef.current?.blur();
   }
 
   function clearAll() {
-    setQuery("");
-    setActiveTag(null);
-    setActiveCategory("전체");
-    router.replace("/blog", { scroll: false });
+    applyFilters({ query: "", tag: null, category: "전체" });
   }
 
 
   return (
     <>
+      <Suspense fallback={null}><FilterUrlObserver onChange={syncFromUrl} /></Suspense>
       <SEO
         /* 🔴 2026-08-29 — layout.tsx의 서버 metadata와 **같아야 한다**(seo.tsx가 런타임에 덮어쓴다).
            ⚠ 구 문구는 title이 「매주 업데이트」, desc가 「2~3일마다 업데이트」로 **서로 다른 주기를
@@ -140,14 +194,14 @@ export default function BlogIndex({
             들어왔는데, 그 안에서 회색 띠 하나만 튀어 「예전 레이아웃」으로 보였다
             (사장님 지적). 배경 이미지 위 골드 제목은 대비도 나빴다.
             제목·설명·검색·로드맵 배너만 크림 배경 위에 그대로 남긴다. */}
-      <section className="pt-8 pb-6 border-b border-border">
+      <section className={`${isFiltering ? "pt-4 pb-4" : "pt-8 pb-6"} border-b border-border`}>
         <div className="px-4 text-center">
-          <h1 className="text-3xl md:text-4xl font-serif font-black text-foreground mb-3">
+          <h1 className={`${isFiltering ? "text-2xl" : "text-3xl md:text-4xl"} font-serif font-black text-foreground mb-3`}>
             홀덤 전략 블로그
           </h1>
-          <p className="max-w-xl mx-auto mb-6 text-muted-foreground">
-            텍사스 홀덤 전략, 초보 가이드, 토너먼트 소식을 2~3일마다 업데이트합니다.
-          </p>
+          {!isFiltering && <p className="max-w-xl mx-auto mb-6 text-muted-foreground">
+            텍사스 홀덤 전략, 초보 가이드, 토너먼트 소식을 주제별로 찾아보세요.
+          </p>}
 
           {/* ★사이트 검색 (2026-08-05 신설).
               그 전까지 사이트 전체에 type="search" 입력이 **0개**였다 — 한국어 56편 +
@@ -157,7 +211,7 @@ export default function BlogIndex({
           <form
             onSubmit={submitSearch}
             role="search"
-            className="max-w-2xl mx-auto mb-8"
+            className={`max-w-2xl mx-auto ${isFiltering ? "" : "mb-6"}`}
             id="search"
           >
             <label htmlFor="blog-search" className="sr-only">
@@ -171,12 +225,13 @@ export default function BlogIndex({
               <input
                 ref={inputRef}
                 id="blog-search"
+                name="q"
                 type="search"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder="찾는 주제를 검색하세요 — 팟오즈, 블라인드, 족보…"
                 autoComplete="off"
-                className="w-full h-12 ps-12 pe-24 rounded-full bg-card border border-border text-foreground placeholder:text-muted-foreground/70 text-sm md:text-base shadow-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/25 transition-colors"
+                className="w-full h-12 ps-12 pe-24 rounded-full bg-card border border-border text-foreground placeholder:text-muted-foreground text-sm md:text-base shadow-sm focus-visible:outline-2 focus-visible:outline-primary-ink focus:border-primary-ink transition-colors"
               />
               <button
                 type="submit"
@@ -188,32 +243,17 @@ export default function BlogIndex({
           </form>
 
           {/* 로드맵 배너 */}
-          <Link href="/blog/roadmap">
+          {!isFiltering && <Link href="/blog/roadmap">
             <motion.div
               className="relative max-w-2xl mx-auto rounded-2xl overflow-hidden cursor-pointer"
               whileHover={{ scale: 1.025 }}
               transition={{ type: "spring", stiffness: 300, damping: 22 }}
             >
               {/* 배경 */}
-              <div className="absolute inset-0 bg-gradient-to-br from-[#1c0b35] via-[#0d1f3a] to-[#071a0e]" />
+              <div className="absolute inset-0 bg-foreground" />
               <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_50%,rgba(var(--gold-dark-rgb),0.18)_0%,transparent_65%)]" />
 
-              {/* shimmer 광택 */}
-              <motion.div
-                className="absolute inset-0 pointer-events-none"
-                style={{ background: "linear-gradient(105deg, transparent 40%, rgba(255,220,80,0.13) 50%, transparent 60%)", width: "200%" }}
-                animate={{ x: ["-100%", "100%"] }}
-                transition={{ repeat: Infinity, duration: 2.8, ease: "linear", repeatDelay: 1.2 }}
-              />
-
-              {/* 박동 테두리 */}
-              <motion.div
-                className="absolute inset-0 rounded-2xl border-2 pointer-events-none"
-                animate={{ borderColor: ["rgba(var(--gold-dark-rgb),0.35)", "rgba(var(--gold-dark-rgb),0.75)", "rgba(var(--gold-dark-rgb),0.35)"] }}
-                transition={{ repeat: Infinity, duration: 2.2, ease: "easeInOut" }}
-              />
-
-              <div className="relative px-5 py-5 flex items-center gap-4">
+              <div className="relative px-4 py-4 flex flex-wrap sm:flex-nowrap items-center gap-3">
                 {/* 아이콘 */}
                 <div className="flex-shrink-0 w-14 h-14 rounded-xl bg-yellow-500/15 border border-yellow-400/40 flex items-center justify-center text-3xl">
                   🗺️
@@ -243,24 +283,25 @@ export default function BlogIndex({
 
                 {/* CTA 버튼 */}
                 <motion.div
-                  className="flex-shrink-0 px-4 py-2.5 bg-yellow-400 text-black font-black text-sm rounded-xl flex items-center gap-1.5 whitespace-nowrap shadow-lg"
+                  className="w-full sm:w-auto flex-shrink-0 px-4 py-2.5 bg-yellow-400 text-black font-black text-sm rounded-xl flex items-center justify-center gap-1.5 whitespace-nowrap"
                   whileHover={{ backgroundColor: "#fef08a" }}
                 >
                   로드맵 보기 →
                 </motion.div>
               </div>
             </motion.div>
-          </Link>
+          </Link>}
         </div>
       </section>
 
       {/* Category Filter — 마스트헤드(56px) 아래에 붙는다 */}
-      <div className="sticky top-[57px] lg:top-[73px] z-30 bg-background/90 backdrop-blur-md border-b border-border">
+      <div className="sticky top-[100px] lg:top-[73px] z-30 bg-background md:bg-background/95 md:backdrop-blur-md border-b border-border">
         <div className="px-4 py-3 flex items-center gap-2 overflow-x-auto scrollbar-hide">
           {["전체", ...categories].map((cat) => (
             <button
               key={cat}
-              onClick={() => setActiveCategory(cat)}
+              onClick={() => applyFilters({ category: cat })}
+              aria-pressed={activeCategory === cat}
               className={`flex-shrink-0 px-4 py-1.5 rounded-full text-sm font-semibold transition-all ${
                 activeCategory === cat
                   ? "bg-primary text-primary-foreground shadow-[0_0_10px_rgba(var(--gold-dark-rgb),0.3)]"
@@ -273,15 +314,15 @@ export default function BlogIndex({
         </div>
       </div>
 
-      <div className="px-4 py-10">
+      <div className={`px-4 ${isFiltering ? "py-4" : "py-8"}`}>
         {/* 활성 필터 표시 — 지금 무엇으로 걸러진 목록인지 알려주고, 해제 경로를 준다 */}
         {isFiltering && (
           <div className="mb-6 flex flex-wrap items-center gap-2 text-sm">
-            <span className="text-muted-foreground">
+            <span className="text-muted-foreground" role="status" aria-live="polite" aria-atomic="true">
               <strong className="text-foreground">{filtered.length}편</strong>
             </span>
             {tokens.length > 0 && (
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/15 border border-primary/30 text-primary font-semibold">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/15 border border-primary/30 text-primary-ink font-semibold">
                 <Search className="w-3.5 h-3.5" aria-hidden="true" /> {query.trim()}
               </span>
             )}
@@ -290,9 +331,9 @@ export default function BlogIndex({
                  않아 URL만 바뀌고 화면은 그대로 남는다. 상태를 직접 지우고 URL을 정리한다. */
               <button
                 type="button"
-                onClick={clearAll}
+                onClick={() => applyFilters({ tag: null })}
                 aria-label={`태그 필터 «${activeTag}» 해제`}
-                className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/15 border border-primary/30 text-primary font-semibold hover:bg-primary/25 transition-colors"
+                className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/15 border border-primary/30 text-primary-ink font-semibold hover:bg-primary/25 transition-colors"
               >
                 <Tag className="w-3.5 h-3.5" aria-hidden="true" /> {activeTag}
                 <X className="w-3.5 h-3.5" aria-hidden="true" />
@@ -306,7 +347,7 @@ export default function BlogIndex({
             <button
               type="button"
               onClick={clearAll}
-              className="text-xs text-muted-foreground underline underline-offset-2 hover:text-primary transition-colors"
+              className="text-xs text-muted-foreground underline underline-offset-2 hover:text-primary-ink transition-colors"
             >
               필터 해제
             </button>
@@ -328,14 +369,14 @@ export default function BlogIndex({
                   </div>
                   <div className="p-7 flex flex-col justify-center">
                     <div className="flex items-center gap-3 mb-3">
-                      <span className="text-xs font-bold px-3 py-1 rounded-full bg-primary/15 text-primary border border-primary/25">
+                      <span className="text-xs font-bold px-3 py-1 rounded-full bg-primary/15 text-primary-ink border border-primary/25">
                         ★ 추천 포스트
                       </span>
                       <span className="text-xs font-bold px-2 py-1 rounded-full bg-card border border-border text-muted-foreground">
                         {featured.category}
                       </span>
                     </div>
-                    <h2 className="text-2xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors leading-snug">
+                    <h2 className="text-2xl font-bold text-foreground mb-3 group-hover:text-primary-ink transition-colors leading-snug">
                       {featured.title}
                     </h2>
                     <p className="text-muted-foreground text-sm leading-relaxed mb-4">{featured.desc}</p>
@@ -343,7 +384,7 @@ export default function BlogIndex({
                       <span className="flex items-center gap-1"><Clock className="w-3.5 h-3.5" /> {featured.readTime}</span>
                       <span>{featured.date}</span>
                     </div>
-                    <div className="mt-4 flex items-center text-primary font-semibold text-sm gap-1 group-hover:gap-2 transition-all">
+                    <div className="mt-4 flex items-center text-primary-ink font-semibold text-sm gap-1 group-hover:gap-2 transition-all">
                       읽기 <ChevronRight className="w-4 h-4" />
                     </div>
                   </div>
@@ -353,15 +394,27 @@ export default function BlogIndex({
 
             {/* Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
-              {rest.map((post, idx) => (
-                <PostCard key={post.slug} post={post} delay={idx * 0.07} />
+              {loop(rest, visible).map(({ post, idx, cycle }) => (
+                <Fragment key={cycle ? `${post.slug}-c${cycle}` : post.slug}>
+                  {cycle > 0 && idx % rest.length === 0 && <CycleSeam hidden={idx >= visible} />}
+                  <div hidden={idx >= visible}>
+                    <PostCard post={post} delay={Math.min(idx % PAGE, 8) * 0.07} />
+                  </div>
+                </Fragment>
               ))}
             </div>
           </>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
             {filtered.length > 0
-              ? filtered.map((post, idx) => <PostCard key={post.slug} post={post} delay={idx * 0.07} />)
+              ? loop(filtered, visible).map(({ post, idx, cycle }) => (
+                  <Fragment key={cycle ? `${post.slug}-c${cycle}` : post.slug}>
+                    {cycle > 0 && idx % filtered.length === 0 && <CycleSeam hidden={idx >= visible} />}
+                    <div hidden={idx >= visible}>
+                      <PostCard post={post} delay={Math.min(idx % PAGE, 8) * 0.07} />
+                    </div>
+                  </Fragment>
+                ))
               : (
                 <div className="md:col-span-2 xl:col-span-3 text-center py-20 text-muted-foreground">
                   <div className="text-5xl mb-4">—</div>
@@ -371,7 +424,7 @@ export default function BlogIndex({
                     <button
                       type="button"
                       onClick={clearAll}
-                      className="text-primary font-semibold underline underline-offset-2"
+                      className="text-primary-ink font-semibold underline underline-offset-2"
                     >
                       전체 글
                     </button>
@@ -382,9 +435,35 @@ export default function BlogIndex({
             }
           </div>
         )}
+
+        {/* 단계 공개 센티널 + JS/IO 없을 때의 폴백 버튼. 카드 자체는 이미 HTML에 다 있다 */}
+        {(() => {
+          const total = isFiltering ? filtered.length : rest.length;
+          if (total === 0) return null;
+          return (
+            <div ref={sentinelRef} className="flex justify-center pt-8">
+              <button
+                type="button"
+                onClick={() => setVisible((v) => v + PAGE)}
+                className="px-5 py-2.5 rounded-full border border-border bg-card text-sm font-medium text-foreground hover:border-primary-ink transition-colors"
+              >
+                {visible >= total ? "처음부터 다시 보기" : `글 더 보기 (${total - visible}편 남음)`}
+              </button>
+            </div>
+          );
+        })()}
       </div>
 
     </>
+  );
+}
+
+/** 순환 이음새 — 2바퀴째 첫 카드 앞에 한 줄. 홈 피드의 «처음부터 다시 이어집니다»와 같은 문구(2026-09-16 캡처에서 /blog만 표시 없이 이어져 같은 카드가 두 번 보이는 것처럼 읽혔다) */
+function CycleSeam({ hidden }: { hidden: boolean }) {
+  return (
+    <div hidden={hidden} className="md:col-span-2 xl:col-span-3 text-center pt-6 pb-1 text-[11px] text-muted-foreground">
+      ♠ 모든 글을 다 봤습니다 — 처음부터 다시 이어집니다
+    </div>
   );
 }
 
@@ -396,37 +475,37 @@ function PostCard({ post, delay }: { post: BlogCardMeta; delay: number }) {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.4, delay }}
-        className="bg-card border border-border rounded-xl overflow-hidden hover:border-primary/40 hover:-translate-y-1 transition-all duration-300 group cursor-pointer h-full flex flex-col"
+        className="bg-card border border-border rounded-xl overflow-hidden hover:border-primary/40 md:hover:-translate-y-1 transition-all duration-300 group cursor-pointer h-full flex flex-row md:flex-col"
       >
-        <div className="h-36 bg-gradient-to-br from-[#0d2618] via-[#0a3320] to-[#071a10] flex items-center justify-center">
+        <div className="w-24 shrink-0 md:w-full md:h-36 bg-gradient-to-br from-[#0d2618] via-[#0a3320] to-[#071a10] flex items-center justify-center [&>svg]:w-20 [&>svg]:h-auto md:[&>svg]:w-40">
           <CardThumb slug={post.slug} />
         </div>
-        <div className="p-5 flex flex-col flex-1">
-          <div className="flex items-center gap-2 mb-3">
-            <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-primary/15 text-primary border border-primary/20">
+        <div className="p-3 md:p-5 flex flex-col flex-1 min-w-0">
+          <div className="flex flex-wrap items-center gap-2 mb-2 md:mb-3">
+            <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-primary/15 text-primary-ink border border-primary/20">
               {post.category}
             </span>
             <span className="flex items-center gap-1 text-xs text-muted-foreground">
               <Clock className="w-3 h-3" /> {post.readTime}
             </span>
           </div>
-          <h3 className="font-bold text-foreground text-sm leading-snug mb-2 group-hover:text-primary transition-colors line-clamp-2 flex-1">
+          <h3 className="font-bold text-foreground text-sm leading-snug mb-2 group-hover:text-primary-ink transition-colors line-clamp-2 flex-1">
             {post.title}
           </h3>
-          <p className="text-xs text-muted-foreground line-clamp-2 leading-relaxed mb-3">{post.desc}</p>
+          <p className="hidden md:block text-xs text-muted-foreground line-clamp-2 leading-relaxed mb-3">{post.desc}</p>
           {/* ★카드 안의 태그는 링크로 만들지 않는다 — 카드 전체가 이미 <Link>라
               그 안에 또 <a>를 넣으면 중첩 앵커가 되어 HTML이 무효가 된다.
               태그를 눌러 필터링하는 경로는 글 상세 페이지의 태그 칩이 맡는다. */}
-          <div className="flex flex-wrap gap-1 mb-3">
+          <div className="hidden md:flex flex-wrap gap-1 mb-3">
             {post.tags.slice(0, 2).map(t => (
               <span key={t} className="flex items-center gap-0.5 text-xs text-muted-foreground/70">
                 <Tag className="w-2.5 h-2.5" /> {t}
               </span>
             ))}
           </div>
-          <div className="flex items-center justify-between text-xs text-muted-foreground mt-auto pt-3 border-t border-border">
+          <div className="flex items-center justify-between text-xs text-muted-foreground mt-auto pt-2 md:pt-3 border-t border-border">
             <span>{post.date}</span>
-            <span className="flex items-center gap-0.5 text-primary font-semibold group-hover:gap-1 transition-all">
+            <span className="flex items-center gap-0.5 text-primary-ink font-semibold group-hover:gap-1 transition-all">
               읽기 <ChevronRight className="w-3.5 h-3.5" />
             </span>
           </div>

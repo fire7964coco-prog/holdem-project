@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "टेक्सस होल्डम का एक हैंड ऐसे चलता है: blind लगाएँ → 2 hole कार्ड बाँटें → preflop → flop (3 कार्ड) → turn (1 कार्ड) → river (1 कार्ड) → showdown, कुल 4 betting राउंड के साथ।",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-08-10",
+  updated: "2026-09-15",
   masterUpdated: "2026-07-02",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -94,6 +94,8 @@ Blind लगने के बाद dealer हर खिलाड़ी को 2
 ![टेक्सस होल्डम की तीन streets की infographic — K♥ 7♦ 2♣ का flop, 9♠ turn, और Q♥ river](/images/blog-holdem-card-stages.webp "Streets: flop पर तीन कार्ड, फिर turn पर एक और river पर एक")
 
 Flop से एक नया विकल्प भी खुलता है: **check**। अगर अभी किसी ने bet नहीं किया, तो आप chips डाले बिना बारी छोड़ सकते हैं। पर अगर आपके check करने के बाद प्रतिद्वंद्वी bet कर दे, तो आपको call, raise या fold करना ही होगा।
+
+पहले action लेने का मतलब हमेशा check करना नहीं है। [SB बनाम BB के K-T-6 उदाहरण](/hi/blog/blind-battle-cbet) में देखें कि preflop पर किसने raise किया और flop उसकी range से कैसे मेल खाता है — दोनों बातें अगला फ़ैसला बदलती हैं।
 
 ---
 

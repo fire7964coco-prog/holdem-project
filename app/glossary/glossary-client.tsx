@@ -33,7 +33,7 @@ export default function Glossary() {
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-5">
+          <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary-ink mb-5">
             텍사스 홀덤 포커 용어 사전
           </h1>
           <p className="text-lg text-muted-foreground mb-3 max-w-xl mx-auto">
@@ -42,7 +42,7 @@ export default function Glossary() {
             반드시 알아야 할 25개 이상의 필수 포커 용어를 한국어로 정리했습니다.
           </p>
           <p className="text-sm text-muted-foreground mb-8">
-            총 <strong className="text-primary">{TERMS.length}개</strong> 용어 수록 · 검색으로 빠르게 찾기
+            총 <strong className="text-primary-ink">{TERMS.length}개</strong> 용어 수록 · 검색으로 빠르게 찾기
           </p>
 
           <div className="relative max-w-xl mx-auto">
@@ -71,7 +71,7 @@ export default function Glossary() {
                   transition={{ duration: 0.2, delay: index < 12 ? index * 0.03 : 0 }}
                   className="bg-card border border-border rounded-lg p-5 hover:border-primary/50 transition-colors group"
                 >
-                  <h2 className="text-lg font-bold text-primary mb-1.5">{item.term}</h2>
+                  <h2 className="text-lg font-bold text-primary-ink mb-1.5">{item.term}</h2>
                   <p className="text-foreground/85 leading-relaxed text-sm">{item.desc}</p>
                 </motion.div>
               ))
@@ -104,7 +104,7 @@ export default function Glossary() {
             ].map(({ href, label, desc }) => (
               <Link key={href} href={href}>
                 <div className="bg-card border border-border rounded-lg p-3 hover:border-primary/50 hover:bg-primary/5 transition-all text-center group">
-                  <div className="font-bold text-sm text-foreground group-hover:text-primary transition-colors">{label}</div>
+                  <div className="font-bold text-sm text-foreground group-hover:text-primary-ink transition-colors">{label}</div>
                   <div className="text-xs text-muted-foreground mt-1">{desc}</div>
                 </div>
               </Link>

@@ -142,6 +142,7 @@ export default function PostCard({
   onLike,
   clickable = true,
   imgPriority = true,
+  compactMobile = false,
 }: {
   post: FeedPost;
   myLanguage: string;
@@ -150,6 +151,7 @@ export default function PostCard({
   clickable?: boolean;
   /** false면 본문 이미지를 lazy 로드 (피드에서 폴드 아래 카드용). 기본 true = 기존 동작 유지. */
   imgPriority?: boolean;
+  compactMobile?: boolean;
 }) {
   const isMyPost = !!myUserId && !!post.authorId && myUserId === post.authorId;
   const isBlogTeaser = !!post.blogSlug;
@@ -157,6 +159,10 @@ export default function PostCard({
   const blogHref = post.blogLocale
     ? `/${post.blogLocale}/blog/${post.blogSlug}`
     : `/blog/${post.blogSlug}`;
+  const [translated, setTranslated] = useState<string | null>(null);
+  const [showOriginal, setShowOriginal] = useState(false);
+  const [translating, setTranslating] = useState(false);
+  const [transErr, setTransErr] = useState(false);
 
   if (isPageTeaser) {
     const CL = getCardLabel(myLanguage);
@@ -190,7 +196,7 @@ export default function PostCard({
           <Link
             href={post.pageHref!}
             className="inline-flex items-center gap-1.5 text-sm font-bold px-4 py-2 rounded-xl active:scale-95 transition-transform"
-            style={{ background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)", color: BG }}
+            style={{ background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)", color: TEXT_PRIMARY }}
           >
             {CL.goTo}
           </Link>
@@ -200,10 +206,6 @@ export default function PostCard({
   }
 
   const isMyLang = post.language === myLanguage;
-  const [translated, setTranslated] = useState<string | null>(null);
-  const [showOriginal, setShowOriginal] = useState(false);
-  const [translating, setTranslating] = useState(false);
-  const [transErr, setTransErr] = useState(false);
 
   const badge = post.authorBadge ? BADGE[post.authorBadge] : null;
   const showTitle = post.type === "admin" && post.title && post.title !== post.content;
@@ -240,8 +242,8 @@ export default function PostCard({
         style={{ background: CARD, border: "1px solid rgba(var(--gold-dark-rgb),0.25)" }}
       >
         <div className="hidden lg:block" style={{ height: 3, background: "linear-gradient(90deg,rgb(var(--gold-dark-rgb)),#f0d060,transparent)" }} />
-        <Link href={blogHref} className="block">
-          <div className="flex items-center gap-2.5 px-4 lg:px-5 pt-3.5 lg:pt-4 pb-2">
+        <Link href={blogHref} className={compactMobile ? "grid grid-cols-[minmax(0,1fr)_96px] gap-x-3 p-3 lg:block lg:p-0" : "block"}>
+          <div className={compactMobile ? "hidden lg:flex items-center gap-2.5 px-5 pt-4 pb-2" : "flex items-center gap-2.5 px-4 lg:px-5 pt-3.5 lg:pt-4 pb-2"}>
             <div className="w-8 h-8 lg:w-10 lg:h-10 flex-shrink-0">
               <Avatar post={post} size={36} />
             </div>
@@ -259,11 +261,11 @@ export default function PostCard({
               </p>
             </div>
           </div>
-          <div className="px-4 lg:px-5 pb-1.5">
+          <div className={compactMobile ? "col-start-1 row-start-1 lg:px-5 pb-1.5" : "px-4 lg:px-5 pb-1.5"}>
             <p className="text-[17px] font-extrabold leading-snug" style={{ color: TEXT_PRIMARY }}>{post.title}</p>
           </div>
-          <div className="px-4 lg:px-5 pb-3">
-            <p className="text-[13.5px] lg:text-sm leading-relaxed line-clamp-3" style={{ color: TEXT_BODY }}>
+          <div className={compactMobile ? "col-start-1 row-start-2 lg:px-5 lg:pb-3" : "px-4 lg:px-5 pb-3"}>
+            <p className={compactMobile ? "text-xs lg:text-sm leading-relaxed line-clamp-2 lg:line-clamp-3" : "text-[13.5px] lg:text-sm leading-relaxed line-clamp-3"} style={{ color: TEXT_BODY }}>
               {post.content}
             </p>
           </div>
@@ -271,7 +273,7 @@ export default function PostCard({
             /* 고정 aspect-ratio 컨테이너 — 이미지 로드 전에 높이가 확정되어 CLS 0.
                블로그 히어로는 원본이 1200×675(16:9)라 크롭 없음. */
             <div
-              className="w-full overflow-hidden"
+              className={compactMobile ? "col-start-2 row-start-1 row-span-2 w-full self-center overflow-hidden rounded-lg lg:rounded-none" : "w-full overflow-hidden"}
               style={{ aspectRatio: "16 / 9", maxHeight: 340, background: "rgba(var(--gold-dark-rgb),0.06)" }}
             >
               <img
@@ -286,8 +288,8 @@ export default function PostCard({
             </div>
           )}
         </Link>
-        <div className="px-4 lg:px-5 py-3" style={{ borderTop: `1px solid ${DIVIDER}` }}>
-          <Link href={blogHref} className="inline-flex items-center gap-1.5 text-sm font-bold px-4 py-2 rounded-xl active:scale-95 transition-transform" style={{ background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)", color: BG }}>
+        <div className={compactMobile ? "hidden lg:block px-5 py-3" : "px-4 lg:px-5 py-3"} style={{ borderTop: `1px solid ${DIVIDER}` }}>
+          <Link href={blogHref} className="inline-flex items-center gap-1.5 text-sm font-bold px-4 py-2 rounded-xl active:scale-95 transition-transform" style={{ background: "linear-gradient(135deg,rgb(var(--gold-dark-rgb)),#f0d060)", color: TEXT_PRIMARY }}>
             {CL.readMore}
           </Link>
         </div>

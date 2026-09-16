@@ -97,7 +97,9 @@
     "check:image-dims:selftest": "node scripts/gen-image-dims.mjs --selftest",
     "check:number-format": "node scripts/check-number-format.mjs",
     "check:number-format:selftest": "node scripts/check-number-format.mjs --selftest",
-    "indexnow": "node scripts/indexnow.mjs"
+    "indexnow": "node scripts/indexnow.mjs",
+    "check:ux": "node scripts/check-auth-navigation.mjs && node scripts/check-community-ux.mjs && node scripts/check-discovery-ux.mjs",
+    "check:ux:browser": "node scripts/check-discovery-browser.mjs && node scripts/check-tools-browser.mjs && node scripts/check-auth-browser.mjs && node scripts/check-community-browser.mjs"
   },
   "dependencies": {
     "@radix-ui/react-tabs": "^1.1.4",

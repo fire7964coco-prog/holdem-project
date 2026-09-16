@@ -108,8 +108,7 @@ Apple ms-my iPhone 안내. 🪶 ggpokermalaysia.com은 **영어 전용** — 말
 - 🔵 **`/ms/solver` 운영 배포 완료**(2026-09-14 · `27c08021` · HTTP 200). 근거 = `docs/ms-solver-landing-brief.md`, 실측 기록 = WORKLOG. 후속 작업은 별도 솔버 저장소의 `outbound.ts`에 MS `/solver` 매핑 추가다(솔버 통지 M-080 §D).
 - 🟢 `/ms` 커뮤니티 LABELS는 소문자 anda체라 **앱·코퍼스와 일치한다 — 결함 없음**
   (id는 kamu체라 갈렸다. 그건 id 쪽 미결이다).
-- ⚠ ms 코퍼스 8편은 전부 초심자 룰 글이라 **GTO 용어 판정의 표본이 얇다**(과거 어휘 실측 range 3 · equity 9).
-  전략 글을 쓸 때 이 표를 «확정»으로 읽지 말고 **그 회차에 SERP를 다시 재라.**
+- ⚠ 위 어휘 실측은 **당시 입문8편** 기준이다(range 3 · equity 9). 2026-09-15 GTO 해설13편을 추가하면서 검색·용어·실제 UI를 새로 확인했다(아래 §9). 과거 계수를 현재21편의 수치로 인용하지 말고, 새 전략 주제에서는 해당 검색 결과를 다시 확인한다.
 
 ## 8. 2026-09-14 현지 검색·원문 조사 — 새 포스팅에 재사용할 판단
 
@@ -163,3 +162,17 @@ DBP `percuma`는 검색 추출에서 확인했지만 직접 열람 오류가 있
 6. **제품 비교는 실제 이용 방식을 한정한다.** 9월 14일 [GTO Wizard 공식 페이지](https://gtowizard.com/)에서 라이브러리와 커스텀 계산을 모두 확인했다. GTO Wizard 전체를 미리 계산된 라이브러리만 제공하는 제품으로 쓰지 않는다. 설치형 계산은 [PioSOLVER 공식 FAQ](https://piosolver.com/docs/faq/)·[TexasSolver 공식 저장소](https://github.com/bupticybee/TexasSolver)처럼 기능을 직접 설명하는 출처를 확인한다. 타사 가격·무료 제한 수치나 우열은 이번 조사로 확정하지 않았다.
 
 솔버를 언급하는 글에서는 **교육 예제·오늘의 문제 기록만 선택적으로 계정 동기화**하고, **직접 계산한 스팟의 Trainer 문제와 연습 기록은 로그인해도 기기에만 저장**된다는 범위를 유지한다. 언어 선택기가 있다고 쓰지 않으며, MS 앱으로 보내는 링크는 `?lang=ms`를 사용한다.
+
+## 9. 2026-09-15 GTO 해설 — 재사용할 편집 기준
+
+새 검색 관찰과 원문별 근거는 [MS GTO 검색 뱅크](ms-gto-series.md), 제목·용어·실제 버튼명은 [공통 브리프](../ms-gto-translation-brief.md), 수치·원문 정정 범위는 [원문 계약](../ms-gto-source-contract.md)에 둔다. 검색량이나 쿼리 어순의 우위를 새로 측정한 것은 아니다. 제작·검수·공개 여부는 [발행 기록](../ms-gto-publication-review-2026-09-15.md)에서 확인한다.
+
+- **제목에 행동과 분모를 남긴다.** `Bet Besar 97.8%`는 큰 size의 빈도이고 전체 bet98.1%와 다르다. `BB check98.2%`는 전체 range의 값이다. A9 같은 개별 손패가 훅에 나오면 desc에서도 range값임을 밝힌다.
+- **소수와 띄어쓰기의 층을 구분한다.** 소수점은 마침표다. `sekitar 19.8%`, `SPR 4`, `40 kombo`, `2.5 bb`처럼 산문 단어·단위와 숫자는 띄운다. 실제 UI를 인용하는 경우에는 `Bet 14.9bb (66% pot)`처럼 화면 표기를 따른다.
+- **표는 같은 개념에 같은 라벨을 쓴다.** `Tetapan / Nilai`, `Tarikh semakan`, `Metrik`, `Kategori`, `Kekerapan`, `Kombo`. 실제 앱의 영어 혼합 category명은 유지하고, 무엇을 뜻하는지는 산문으로 설명한다. 예를 들어 paired board의 `Ace-High`는 베스트5가 high-card라는 뜻이 아니다.
+- **기존 용어 원칙은 활용형에도 적용한다.** 계산은 `kira` 계열을 선택하므로 `dihitung`도 `dikira`로 맞춘다. 일반 개수는 `kombo`, 실제 category명은 `Combo draw`다. 설명 속 숫자 rank는 `tiga / empat / enam / tujuh / lapan / sembilan`으로 쓰되 hand 표기·UI category명을 낱말 치환하지 않는다.
+- **동일 보드에서 서로 다른 축을 섞지 않는다.** `Tiada made hand`는 별도 Ace-High·King-High까지 포함하는 무페어 전체가 아니다. `Tiada draw`와 backdoor 비중도 분리한다. AK에 즉시 완성할 draw가 없다는 설명을 모든 backdoor 가능성까지 없다고 옮기지 않는다.
+- **재현 경로는 현재 기능에 맞춘다.** `Spot belajar → 예제명 → ⚡ Lihat hasil`은 flop 첫 결정 결과다. 후속 노드는 `Kira sendiri spot ini → Bina Tree → Jalankan Solver`로 별도 계산한다. 과거 별도 계산을 인용한⑦의 표는 날짜·단위·집계 차이 고지를 앞에 둔다. 예제 목록의 낡은 안내문 하나를 현재 viewer의 기능 근거로 쓰지 않는다.
+- **새 글 연결은 registry로 확인한다.** MS는 입문8편에 GTO13편을 추가했지만 equity·pot-odds 등 별도 전문 가이드가 모두 생긴 것은 아니다. 기존 링크 자리를 solver/입문 글로 바꿀 때 앵커도 실제 목적지 범위로 줄이고, 본문 설명과 계산은 보존한다. readnext 제목·이미지는 대상 Post의 현재 값을 쓴다.
+
+실제 앱 표시값과 미디어의 확인 범위는 [MS 미디어 기록](../ms-gto-media-review.md)에 남겼다. AI에 언어·전략·SEO 관점을 부여한 검수이며, 새 현지 인간 감수 이력으로 기록하지 않는다.

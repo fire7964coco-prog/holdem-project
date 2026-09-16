@@ -263,3 +263,13 @@ kicker·tiebreak·split-pot·reading 4편은 id 검색축이 없다 — 이 4편
    `super royal flush` +325% · `main poker itu apa` +113%(질문축 — 성장 지속 시 필라 FAQ 승격).
 3. 재실측 방법: 이 파일 §2~3의 키워드를 라쿠 배치 1회(15크레딧)로 — requestId 계보는
    `id-core-volumes.md` 머리 참조(1258288 → 1258295 → 1258342).
+
+## 10. GTO 예제 해설 조사와 집필 기준 (2026-09-15)
+
+- **독자 의도**: 일반 GTO·도구 검색은 `/id/solver`, 개별 해설은 보드·포지션·계산 조건에 따른 판단을 담당한다. 검색량이 확인되지 않은 보드별 질문을 인기 검색어라고 소개하지 않는다.
+- **새 조사**: Google Indonesia 모바일 organic Top10을 `gto poker`, `c bet poker`, `donk bet poker` 3개 시드에서 확보했다. 신규 검색량 측정은 하지 않았다. 실제 반환된 PAA는 donk 시드의 `Apa itu raise poker?` 하나였고, 직접 만든 보조 질문과 구분한다.
+- **조사 원문과 한계**: `docs/id-gto-language-research.md`, 재현 정보와 순위 자료는 `docs/keyword-bank/id-gto-serp-2026-09-15.json`. GGPoker ID 페이지는 검색 캐시와 라이브 접근 결과가 달라 새 독자용 출처 링크로 사용하지 않았다. 특정 URL의 정상 접근 여부는 이후 다시 확인한다.
+- **언어·숫자**: Anda, range/equity/board/hand, 행동 check와 확인 cek를 구별한다. 소수 쉼표와 천 단위 마침표, `mnt`, `Lanjut membaca`를 유지한다. 이 시리즈의 카드 표기는 EN·실제 앱과 같은 **T**다. 과거 일반 브리프의 T 일괄 금지를 앱 카드에 적용하지 않는다.
+- **실제 앱 UI**: `Spot belajar → [스팟 이름] → ⚡ Lihat hasil`; 결과 화면의 직접 계산 버튼은 `Hitung sendiri spot ini`. 현재 UI 숫자도 소수 쉼표다. Hand/Draw 범주는 축어로 쓰며 `Belum jadi`에 별도 Ace-High·King-High 범주를 합치지 않는다. 13개 정확한 이름과 이미지·표시값은 `docs/id-gto-media-review.md`.
+- **해설 품질**: 최신 EN의 논거·표·FAQ를 보존하고 검증된 원문 오류만 좁게 정정한다. 빈도의 플레이어·노드·분모를 함께 쓴다. 특히 ⑦의 별도 후속 solve와 기본 예제, ⑨의 큰 베팅 98,4%와 총 베팅 99,1%를 구별한다. 상세 교정은 `docs/id-gto-source-contract.md`, 집필 형식은 `docs/id-gto-series-translation-brief.md`.
+- **표와 이미지**: 실제 ID 화면과 ID 차트를 q82로 만들고, 모든 중요한 수치는 본문 표로도 제공한다. 국제판 히어로는 Post.image에서 렌더하므로 본문에 중복 삽입하지 않는다. 이미지·구조 검사만으로 전략적 해석이나 자연스러운 문장까지 검증했다고 보고하지 않는다.

@@ -1,3 +1,92 @@
+## 2026-09-16 — 포스팅 배치 5단계 마감: 관문 추천 블록 §3 적용 + 화면 검증 + 데스크톱 순환 결함 수정
+
+- 관문 블록: /tournaments(진행 중 대회 카드 `EVENT_UNTIL` 자동 강등 + S 4편 전환 경로 순, noindex schedule-check 제거) · /solver(추천 블록 신설) · /ranking·/pub(S 3편 앞) · /hand-chart 변경 없음. 서버 전용 `lib/active-event-guides.ts` 신설.
+- 검증: screen-review 2폭 × 홈·/blog·관문 4곳 — 넘침 0 · 중복 key 0 · /blog HTML 72링크/hidden 50/폴백 버튼 · 이음새 뒤 1번부터 재개. 기록 = `docs/post-placement-verification-2026-09-16.md`(+ 그림 폴더).
+- 결함 발견·수정: **데스크톱 홈은 순환·추가 로드가 전혀 안 됐다**(센티널이 `lg:hidden` 컨테이너에만 있어 IO 불발). 데스크톱 센티널 추가. /blog 2바퀴째 경계에 이음새 문구 추가.
+- 미실시: IndexNow(신규 URL 없음). 4주 뒤 비교는 update-calendar에 등록.
+- 추가(사장님 「↑ 알아서 바꿔줘」): 모바일 홈 맨위로 버튼을 오른쪽 「+」 위로 옮기고, 커뮤니티 홈은 위로 스크롤할 때만 보이게(`components/site-chrome.tsx`). 실측 390 캡처 = 검증 문서 §4.
+
+## 2026-09-15 — UI·UX 개선 구현·로컬 검증 완료, 배포 승인 대기
+
+후속 승인 후 커밋 `60a79d9d`를 main에 push했고 Vercel 성공 및 공개 핵심 7경로 HTTP 200을 확인했다.
+
+사용자 「위의 문제점과 개선점 모두 작업」에 따라 라이브 감사의 11개 항목과 추가 관찰을 구현했다. 상세·수정 전후·모의 검증 한계 = `docs/ui-ux-improvements-2026-09-15.md`.
+
+- **구현:** 인기 대회404, KO/EN 계산기8탭 값 보존·초기화, 퀴즈 초점/스크롤·난수 hydration, 검색 URL·결과 압축, 모바일 탐색·카드, 대회 상태·월·아카이브·바로가기, 골드 대비, 족보 표, 로그인 라벨·복구·원위치 복귀, 이벤트 공통 회차·마감, 채팅 최신50/과거·실패입력·IME, 글쓰기 초점/초안 및 고정버튼 겹침 수정.
+- **검증:** build EXIT0(KO70+intl577), published KO70/70 HTML 링크·대회144카드·복구 noindex 보존. production 로컬에서 재사용 browser4종 전부 EXIT0(탐색13묶음, 도구 KO/EN×2폭, 인증모의46, 커뮤니티모의10); 함수67+11 및 이벤트/병합 fixture 통과. 페이지 예외0. 전체 타입은 기존698→현재698, 추가0. 밝은 골드 대비2.61→5.76. 실제 메일/Google로그인/계정·게시·이벤트쓰기 미실행, 로컬 Vercel 분석404와 기존 타입부채 구분.
+- **기록:** 디자인 토큰 역할은 docs/DESIGN.md 승격, 회귀7스크립트와 npm check:ux/check:ux:browser 추가. 선별 캡처·JSON은 docs/ui-ux-improvements-2026-09-15/.
+- **배포 상태:** main 커밋+push 요청이 자동 승인 검토에서 거절됨(현재 요청의 명시적 운영 배포 승인 부재). 명령 자체가 실행되지 않아 커밋·push·운영 반영 없음. 변경은 작업 트리에 보존, 명시 승인 후 Vercel 성공/라이브 재검증 필요. GSC 기존 사용자 보류 유지.
+
+## 2026-09-16 — 포스팅 배치 전략화 (GA4·GSC 28일 분석 → 홈·/blog 순서 코드화)
+
+- 지시: «접속해서 보이는 포스팅을 클릭할 확률이 높으니 중요순으로 배치». 보고서 = `docs/post-placement-analysis-2026-09-16.md`.
+- 발견: 진짜 관문은 홈(252세션)이 아니라 /tournaments(811)·/solver(549). 홈 피드는 POSTS 배열 순서(옛 글부터)에 하드코딩 핀 6개, /blog는 최신순이었다.
+- 구현: `lib/featured-order.ts` 신설(진행 중 대회 → S 7편 → 오늘의 글 날짜시드 → A 13편 → 날짜순). `community-home.tsx`·`app/blog/page.tsx`가 서버에서 정렬, `community-client.tsx` 핀을 서버 순서 상위 8편으로, `blog-index-client.tsx` 날짜 재정렬 제거 + 20장 단계 공개(hidden 속성 · 전 카드 HTML 유지 · 폴백 «더 보기» 버튼).
+- 검증: 빌드 성공, 빌드 HTML에서 홈·/blog 순서와 전 카드 존재(고유 링크 72) 확인. 화면 캡처는 미실시(한도) — 핸드오프 5단계.
+- 추가 지시(같은 날): «맨 밑 다음은 1번으로 다시» → 홈 피드는 Supabase 페이지가 끝나면 `cycles`로 정적 티저를 다시 이어 붙이고(이음새에 정책 링크 유지), /blog는 `loop()`가 `idx % n`으로 반복. 초기 HTML엔 카드 1회(빌드 HTML 확인).
+- 미완: /tournaments·/solver 하단 추천 블록 재구성, screen-review 캡처(이음새 포함).
+
+## 2026-09-15 — 홀덤마스터 라이브 UI·UX 점검
+
+사용자 요청에 따라 홈·블로그·글 상세·대회·계산기·족보·퀴즈를 모바일390/데스크톱1440으로 방문하고 검색·목차·탭·입력·퀴즈 완료를 조작했다. 커뮤니티 비로그인 탭/게시글·로그인 키보드·솔버 앱 진입도 확인했다. 상세와 선별 캡처 = `docs/ui-ux-audit-2026-09-15.md`.
+
+- **직접 재현:** 홈 인기글 대회 링크404, 퀴즈 다음 문제 스크롤 잔류, 계산기 탭 입력 초기화, 블로그 카테고리 새로고침 초기화, 이벤트 안내 불일치, 로그인 포커스 표시 누락. 모바일 탐색·대회 정렬·검색 배너·골드 대비·족보 표 개선을 제안했다.
+- **검증·범위:** 라이브 캡처/DOM과 독립 코드 검토·도구 조작 대조. 기본8경로×2폭 가로넘침0·콘솔오류0, 도구3경로×2폭도 동일. 실제 인증·게시·채팅 전송·경품 참여·새 솔버 계산·포스트 사실검수는 미실행. 앱 코드 변경·빌드·배포 없음. 개선안은 사용자 우선순위 결정 전 제안 상태다.
+
+## 2026-09-15 — HI 솔버 해설 13편 발행 완료
+
+사용자 「다음이 힌두어인가, 워크플로우대로 고품질 포스팅 진행」에 따라 힌디어13편을 작성·검수·발행했다. [HI 솔버 허브](https://www.holdemmaster.com/hi/solver)에서 전편으로 연결된다. 상세 = `docs/hi-gto-publication-review-2026-09-15.md`.
+
+- **제작**: 인도 설정 검색3쿼리·관련 교육 원문13개, 최신 EN13과 승인 정정으로4/4/5 집필. 표637행·FAQ67·readnext26·본문링크124를 보존했다. 실제 HI 화면13장+range차트13장, 허브13링크·기존3편역링크4개 연결. 기존 입문 draw/call 가격 문단은 후속 betting 조건만 좁게 보완했다.
+- **품질**: GPT-6 Astra 작성, 별도 GPT-5.6 Sol 언어·SEO·전략 검수와 GPT-5.6 Terra 수학 검수. ⑥ counterfeiting을 정확한 `22/6633K` 사례로 고쳐 세 런아웃을 재검산하고, ⑨–⑫ 공백·UI 축어·문법과①·④·⑥ 표현을 교정했다. 정정7파일41hunks 및 연결5파일10hunks의 별도 Sol 사후 교열 완료·확정 결함0. 인간 원어민 감수·새 solver 실행은 하지 않았다.
+- **검증**: 구조13/13·수치91일치/오류0·표637행 대조/FAQ67 통과. HI hard21/21 언어 불변 항목0err/0warn, 카드 미판정61문단과 기존 입문stamp부채는 별도 범위다. 최종 build EXIT0(출력70 KO+577 intl), 모바일13편·FAQ67 source/schema/render·이미지26·허브/역링크 정상, 가로 넘침0. 대표 표와 교정 문단을 직접 보았다. 타입/lint 생략 및 KO 전용 hard-schema 한계는 상세 보고서에 구분했다.
+- **도구·기록**: 캡처/차트/구조/수치 도구의 HI 지원과 빈 입력·잘못된 대상 검증을 보완하고 Terra 독립 검수 완료. 구조 자체테스트24·수치38. 수치 정본 파서의 중복 action표 읽기를 고쳐 기존103회에서 올바른91회 비교가 됐다. HI 검색·브리프·원문/미디어/발행 검수 정본과 reference §8을 연결했다. EN의 counterfeiting 조건 누락은 `docs/en-first-queue.md` §3에 이관했고, 완료된 MS 착수 지시를 pending에서 제거했다.
+- **배포**: 콘텐츠 `f05763d8` + sitemap `570eb121` main 일반 push. 정확한SHA의 [Vercel success](https://vercel.com/masters-projects-ca17ea56/holdem-project-milk/FwdQw2ARJx5GgdSyrfcCwAxJZ8wG) **19:28:48 KST** 확인.
+- **운영·검색**: **19:30:15 KST** 공개13편·이미지26개200, FAQ67·대체언어11·EN→HI13·허브13/역링크4 정상, 가로 넘침0. 공개 sitemap의 변경17경로 각1회·lastmod09-15 확인. **19:30 KST** 변경17 HI URL만 IndexNow **HTTP200 접수**(색인 완료와 구분). GSC는 기존 사용자 보류 유지.
+
+## 2026-09-15 — MS 솔버 해설 13편 발행 완료
+
+사용자 「고품질 해설포스팅 부탁해」와 후속 「배포해줘」에 따라 인계된 말레이어13편을 작성·검수·발행했다. [MS 솔버 랜딩](https://www.holdemmaster.com/ms/solver)에서 전편으로 연결된다. 상세 = `docs/ms-gto-publication-review-2026-09-15.md`.
+
+- **콘텐츠**: MY/MS 검색·최신 EN 원문·승인된 N01–N24/C01–C12 정정으로 4/4/5 집필. 표637행·FAQ67개·readnext26개를 보존하고 실제 MS 링크124개를 연결했다. 실제 OOP 화면13장+range 차트13장, 랜딩13링크·기존3편역링크4개 완료. 기존 입문 글의 draw 확률/현재 call 가격 문단만 좁게 보완했다.
+- **품질**: 언어·SEO·수학·전략의 서로 다른 AI 검수와 본체 검산, 수정17파일의97hunks 교열 완료. 교열에서 발견한 UI 축어 한 곳을 정정·확인했다. 현지 인간 감수·새 solver 실행을 주장하지 않는다.
+- **검증**: MS 구조13/13·수치103일치/오류0, hard21/21의 언어 불변 항목0err/0warn. 구조 자체테스트16·수치30. 최종 build EXIT0(70 KO+564 intl), 모바일13/13·FAQ67·가로 넘침0, 대표 표의 내부 가로 스크롤 확인. 기존 typecheck/lint 생략과 KO 전용 hard-schema 한계는 실제 MS JSON-LD 확인과 구분해 기록했다.
+- **재사용 자료**: MS 검색 조사·브리프·원문 계약·미디어/발행 검수 문서와 reference §9. 캡처·차트·구조·수치 도구의 MS 지원을 추가하고 링크 suffix false pass를 바로잡았다.
+- **배포**: 콘텐츠 `c7dbd01f` + sitemap `ac967bc7` + 검수 기록 `dd3002ec`. 첫 push가 자동 승인 검토에서 차단된 뒤 사용자의 「배포해줘」로 명시적 승인을 받아 main 일반 push. **17:12:36 KST** 정확한 SHA의 [Vercel success](https://vercel.com/masters-projects-ca17ea56/holdem-project-milk/3tE6gZ6nzWAHdhGZPX7qxcKJn9f1)를 확인했다.
+- **운영 확인 17:14:29 KST**: 신규13편·이미지26개200, FAQ67·대체언어10개(9언어+default)·EN→MS13링크·랜딩13/역링크4 정상, 가로 넘침0. sitemap736개에서 변경17경로 각1회·lastmod09-15. 제한 없는 모바일 크기 측정3회 LCP236/276/284ms·CLS0이며 실제 사용자 성능 분포와 구분한다.
+- **검색 통지 17:15:09 KST**: 변경17 MS URL만 IndexNow **HTTP200 접수**. 색인 완료를 뜻하지 않는다. GSC는 기존 보류 유지. 다음 언어 HI는 추천 상태이며 새 집필은 시작하지 않았다.
+
+## 2026-09-15 — ID 솔버 해설 13편 발행 완료·Codex 시작 규칙 정리
+
+사용자 「고품질 해설 포스팅 부탁해」에 따라 인도네시아어 GTO 예제13편을 작성·검수·발행했다. [ID 솔버 랜딩](https://www.holdemmaster.com/id/solver)에서 전편으로 연결된다. 상세 = `docs/id-gto-publication-review-2026-09-15.md`.
+
+**후속 인계**: 사용자가 다음 언어를 물어 MS → HI를 작업 준비 상태 기준으로 추천했고, 이어 「핸드오프정리하고 새새션에서보자」라고 요청했다. 다음 세션은 **MS 해설13편**으로 인계했다. 09-15 파일·index 대조에서 de/fr/ms/hi는 각각0/13, MS·HI 랜딩은 현재 HTTP200이었다. MS 참고 정본·최신 EN·ID 정정 근거·제작/검수 순서를 짧은 handoff에 연결했다. 이번 마감에 MS 조사·집필·캡처는 착수하지 않았으며, HI 이후 순서나 시장 수요 우열을 확정하지 않았다. 직전 마감 커밋 `6eb82a2d`의 Vercel success도 확인했다.
+
+- **제작**: 최신 EN 논거·절·표637행·FAQ67개를 보존하고 확정된 PT 원문 정정을 승계했다. 실제 ID 화면13장·레인지 차트13장(q82), ID 총등록55, readnext26·본문 내부링크93, 랜딩13·기존3편 역링크4개를 연결했다.
+- **품질**: 새 ID 검색조사·공통 브리프 후 집필. 언어·SEO·전략의 독립 AI 검수와 본체 산술·카드 검산, 최종19개 변경 교열 완료. 확인 범위의 확정 결함0. 현지 인간 감수나 새로운 solver 계산을 주장하지 않는다. ⑦의 역사적 후속 계산과 root 값을 분리했다.
+- **검증**: 구조13/13, GTO 수치103일치·오류0·경고0 및 자체테스트28, ID hard55/55. 최종 전체 build EXIT0(70 KO+551 intl), 모바일390px13/13·가로넘침0, 데스크톱 표·출처 note 직접 확인. 기존 설정은 타입검사/lint를 생략하므로 전체 타입 통과와 구분했다.
+- **배포·공개 확인**: 콘텐츠 `96627977` + sitemap `b87e4984`, main 일반 push. [Vercel success](https://vercel.com/masters-projects-ca17ea56/holdem-project-milk/Ertbf3W4Tu93GbXJEwnoRWkMMnGC) **13:38:36 KST**. **13:39:28 KST** 운영13편·이미지26개200, FAQ67, 대체언어9(8언어+default) 및 EN→ID13링크, 역링크·랜딩 정상. sitemap loc723, 변경17URL 각1회·lastmod09-15.
+- **검색 통지**: **13:40:24 KST**, 변경17개 ID URL만 IndexNow **HTTP200 접수**. 색인 완료를 뜻하지 않는다.
+- **재사용 지식**: ID reference §10에 검색 의도·용어·실제 UI·표기·조건/빈도 설명 규칙을 보존했다. ID 미디어·수치·구조 검사 지원과 자체테스트를 추가했다. 검색량을 새로 측정한 것처럼 쓰지 않았다.
+- **세션 문서 정리**: 사용자 요청대로 루트 `AGENTS.md`가 CLAUDE·handoff를 읽고 시작하도록 연결했다. CLAUDE에 짧은 인계 원칙을 넣고, 이전29,061바이트 핸드오프를 `docs/handoff-archive/2026-09-15-before-id-session-handoff.md`에 보관했다. 완료 경위는 WORKLOG, 장기 미결은 해당 대기열과 `docs/pending-work.md`, 다음 행동은 짧은 handoff로 분리한다. ID 작업 전용 인계도 완료 기록 링크로 교체했다.
+
+## 2026-09-15 — PT 솔버 예제 해설 13편 발행 완료
+
+후속 사용자 지시: 다음 새 세션은 **ID(인도네시아어)** 작업. `session-handoff.md` 최우선 항목과 `docs/id-gto-next-session.md`에 재사용 자료·PT 원문 정정·실행 순서·검증 주의점을 인계했다. 이번 마감은 문서 정리만 했으며 ID 조사·집필·캡처는 시작하지 않았다. ID reference §5-A가 09-02에 이미 판정한 check/hand/board를 핸드오프가 여전히 미결로 적던 행은 제거했고, 실제 남은 용어·문체 미결은 유지했다.
+
+사장님 지시 「pt 발행작업하자」「고품질해설 포스팅 부탁해」에 따라 PT-BR 13편을 작성·검수·배포했다.
+
+- **발행 전 상태 실측**: registry·운영 sitemap·78 URL 확인으로 ko/en/ja/es/zh/zh-hant 각13/13, pt0/13을 확인했다. 이번 발행으로 PT도13/13, 완료 언어는7개다. 다음 미발행 언어는 de/fr/id/ms/hi.
+- **콘텐츠**: 최신 EN 전체 설명·조건·표·계산·주의사항·67FAQ를 보존한 PT-BR 해설13편. 4/4/5 집필, 전체 시리즈 언어·SEO·전략·수치 검수, 정밀 수정 후 교정 부분만 한 번 재교열했다. AI 역할 검수이며 현지 인간 감수를 주장하지 않는다.
+- **정밀화**: BB의 실제 AJ 보유, nuts/완성 스트레이트 구분, root 결과/⑦ 별도 solve 구분, suited6x 블로커 인과, equity/팟 승리 빈도, underpair와 overcard 정의, MDF 전제 등 근거가 확인된 원문 오해를 PT에서 바로잡았다. EN 본문은 수정하지 않았다. 전체 판정 = `docs/pt-gto-publication-review-2026-09-15.md`.
+- **연결·이미지**: 실제 PT 앱 UI와 값으로 13 OOP 화면+13 레인지 차트, WebP q82/너비1200. PT index55편·랜딩13링크·readnext26카드·본문93내부링크 확인. c-bet/position-play/3bet 기존3편에 보류됐던 역링크4개 연결, 의도적 차이 면제 해소 기록.
+- **검증**: 표637행(헤더 포함) 숫자·카드 대조13/13, GTO수치103일치/오류0/미판정0, 구조13/13, PT hard55/55. 기계 미판정 카드 문단과 형제 표 대조의 한계는 수치 검수로 보완했다. 전체 최종 `npm run build` EXIT0, 출력70 KO+538 intl. 기존 설정상 typecheck/lint는 생략되므로 전체 타입 통과를 주장하지 않는다.
+- **실제 화면**: 최종 빌드에서 모바일390px 13편 전수, 데스크톱 대표 표 확인. H1/SEO/canonical/pt-BR/FAQ67, 자체 히어로1개씩, 가로 넘침0, 랜딩13링크 정상. 최종 로그 `tmp/pt-build-final.log`, 화면 보고서 `tmp/pt-render/report.json`.
+- **배포**: 콘텐츠 `b8b4269e`, sitemap `82b93235`, main 동시push. [Vercel 성공 배포](https://vercel.com/masters-projects-ca17ea56/holdem-project-milk/AmDcdr31xH7z55qRmVr4hUPNRwUb). [PT 솔버 랜딩](https://www.holdemmaster.com/pt/solver).
+- **운영 확인 11:56:32 KST**: 13 URL 모두200, PT-BR/canonical/SEO/대체언어8(7언어+default)/FAQ67 정상, WebP26개200, 랜딩13·기존3편역링크4·sitemap13 모두 확인. `tmp/pt-live-report.json`.
+- **검색 통지**: 새13편+역링크수정3편+랜딩1 =17 URL만 IndexNow HTTP200 접수. 색인 완료와 구분한다.
+- **후속 재사용 문서**: `docs/keyword-bank/pt-gto-series.md`, 번역 브리프, source contract, PT UI verbatim, 발행 검수 기록. 최신 검색량·top10·PAA를 측정한 것처럼 쓰지 않았다.
+
 ## 2026-09-14 — HI 솔버 랜딩 배포 및 MS·HI 신규 포스팅 참고 정본 확정
 
 사장님 지시 「다음이 힌디어인가?? 말레이어 작업할때처럼 똑같이 서치하고 참조하고 해서 만들어줘 그리고 배포까지 완료되면 말레이어와 힌디어 둘다서치해서 얻은정보들 해당언어파일에 넣어줘 나중에 신규포스팅시 활용하게」.

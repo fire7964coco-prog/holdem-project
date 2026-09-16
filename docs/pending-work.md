@@ -1,0 +1,175 @@
+# 장기 미결 작업 참고 목록
+
+> 2026-09-15 사용자 지시에 따라 긴 핸드오프에서 옮겼다. **세션 시작 때 통독하지 않는다.**
+> 아래는 이전 세션이 남긴 미결 기록이며, 이번에 다시 검증하거나 실행을 승인받은 목록이 아니다.
+> 실제 작업에 착수할 때 해당 항목만 읽고, 최신 진행 파일·코드·사용자 결정을 먼저 확인한다.
+> 해결되면 이 목록에서 지우고 결과는 WORKLOG.md에 남긴다. 새 완료 이력·상시 규칙은 여기에 누적하지 않는다.
+
+## 정본과 우선순위
+
+- 명시된 현재 사용자 작업이 우선이다. 일반 queue는 docs/harden-queue-진행.md §1, 재료는 docs/en-first-queue.md.
+- 시한은 docs/update-calendar.md, 확정 결정과 중단된 작업은 docs/settled-decisions.md.
+- ja 추가 회차는 종료 결정이 우선이다(§1-D). 아래 오래된 ‘결재 대기’ 기록을 재착수 허가로 해석하지 않는다.
+- 레인 현재 상태는 각 docs/harden-<locale>-진행.md와 실제 Git 상태로 확인한다. 과거 핸드오프의 ‘queue 회차 0’ 등 낡은 요약은 옮기지 않았다.
+- 이관 전 원문: docs/handoff-archive/2026-09-15-before-id-session-handoff.md. 경위 확인 때 필요한 부분만 검색한다.
+
+## 이관된 미결
+
+### 🏆 대회 묶음 — 몰아서 한다 (2026-09-13 사장님 지시 「급한 거 아니면 나중에 대회만 몰아서」)
+
+- **queue Q4-b** — es `como-entrar-al-wsop`·`wsop-2026-tournament-guide` **WRONG 15 · RISKY 10 · STALE 2** + 멕시코 **LISR 138조** 1차 실측(검수장 MA-118 요청 2). 🔴 **WRONG 15는 라이브 사실오류다** — 묶음이 늦어지면 이것만 따로 뽑아도 된다
+- **queue Q7a-5 재료** — es 이벤트 3편(`apt-incheon-2026-guide`·`ept-barcelona-2026-guide`·`wsop-2026-tournament-guide`) 숫자 표기 약 **82자리**. 🔴 `$0,50`처럼 **축어 영어 인용 안의 것은 제외** · 닫힘 판정 = `npm run check:number-format -- --locale=es` 🔴 0
+- **시한** = `docs/update-calendar.md` 「9/20경」 **APT 제주 이벤트 수 재실측**(9/25 개막 전 · 09-10 라이브 135) — 🔴 이건 묶음을 기다리지 않는다
+- 남은 대회 판정 = 이 파일 「대회·사실 판정」 절(그 자리에 그대로 둔다)
+
+### 🟠 2순위 — 게이트가 새로 드러낸 나머지
+
+| 무엇 | 규모 |
+|---|---|
+| 🟠 **zh·zh-hant 회차 8(직답 길이 소급) — §1-D 판정 대상: 사장님이 따로 열라 하지 않으면 레인 회차가 아니라 queue Q6에 흡수.** 규격 60~130 확정(정본 `settled-decisions` §3). 부채 = `check:answer-echo` 🟠 length zh 22편 · zh-hant 7편(미달 6은 «자기완결 여부»로 판정 · 억지로 늘리지 않는다). 방법·렌즈 규율은 각 진행 파일 §5 머리의 헤드 통지(ja 회차 10 브리프 복제 · 네이티브 렌즈 1순위). 레인 첫 마디 「`HARDEN.md` 읽고 회차 8 시작해」 | 소~중 |
+| 🟠 **ja 회차 10·11이 헤드에 남긴 판정 2**(`harden-ja-진행` §5-H 3·5) — pot-odds L194 카드 행 中黒 이탈 · showdown 「マック 마너/손해」 FAQ 신설 여부(`ポーカー マック` 170 중 マナー·デメリット ≈40). | 소 |
+| `check:mirror-pair` **실제 갈림**(아티팩트 걷어낸 뒤) — zh 일정 표에 apt 이벤트 **3행 결손**(8/8·8/13·8/14) · zh만 보유 2(apt 비자 문단 · kpm The Star Sydney) · zh-hant만 보유 2(wsop 대만 세금 · ept 예산 문단) | 소 |
+
+### 🔴 결재 완료 — 남은 실행 1건
+
+- **§6-5 트랙 종결 절차(헤드)** — 검수장 원장 편입 요청 + 회차 6·7 GPT 팩(세 레인). 결재 정본 = `docs/settled-decisions.md` §1-B(15건 · 🔴 재론 금지).
+
+### 🔵 ar — ⓑ(42편 규격화)는 아직 열지 않는다
+
+ⓐ(있는 8편을 규격으로)는 09-10에 완주했다(구조 결손 0 · EN-먼저 이식 0 · GPT 네이티브 렌즈 1회). **경위 = WORKLOG 「2026-09-10 (4)(6)」.**
+🔵 ⓑ = 아랍어 수요 실측 선행(키워드 실측 기록 0 · 미결 절).
+
+### ▶ 그밖에 열 수 있는 것
+- 🟢 **en 56편 원장 레인 = 결재됨(2026-09-10) — 「EN이 마스터다」.** `홀덤검수/DECISIONS.md` §2 「EN 9편 소급 전수 검수는 안 한다」는 **폐기**(MB-026으로 통지). 🔴 여는 것은 **경화가 아니라 검수·정합**이다 — 착수 ① EN 56편 `updated` 전수 대조 ② 원장 주장 판정. 상세 = `docs/en-first-queue.md` §3 · `settled-decisions` §1-B
+- 🟠 헤드 판정 잔여 3건 → **queue Q6-b가 받는다**(열지 마라): zh-hant 상단 `快速解答` 블록 넣지 않기(상자 13편) · zh-hant probability FAQ 10:15:16 결손/압축 판정 · zh-hant 부분문자열 태그 쌍
+- 🟠 검수장 **MA-118 요청 2** — es `como-entrar-al-wsop`·`wsop-2026-tournament-guide` WRONG 15·RISKY 10·STALE 2 + **LISR 138조 웹 실측**
+
+---
+
+## 🔴 회신·대기 (도착하면 처리하고 지운다)
+
+| 발신 | 무엇 | 상태 |
+|---|---|---|
+| **MB-033~051** | 09-11~14 발신 19건 — **요지·전문은 `mailbox/out-본체.md`가 정본이다**(여기 복사하지 마라). 회신 대기 = 검수장행 MB-033~048·050·051(queue 회차 통지 + EN-먼저 배포 + 앵커 갱신 요청) | 검수장 |
+| **M-099** | ④ EN 역이식 + 7로케일 전파 회신. 요청 = 회귀 앵커 갱신(한정어 추가형 3개 재앵커) | 검수장 |
+| **M-107** | 앱 12언어 정본(`i18n.ts:18`) · 셀렉터 08-27 제거 · `translation-terms-hi` 정정 · ko·en 랜딩은 대상 밖 | 솔버 |
+| **솔버 통지 08-24** | `docs/reply-to-solver-2026-08-24.md`(④⑦⑧⑩). 🔴 **다시 보내지 마라** · 배포 통보 오면 번들 해시 한 줄로만 확인 · 다음 왕복 때 한 번에 얹을 것 | 솔버 |
+| **M-073** | pt 세션 0~6 정정 이행 완료(`0ba0687c`) · 남은 것 = 검수장 기준선 뒤집기 회신 | 검수장 |
+| **M-022** | K-ETA 4축 정정 — «22» 분해형 4로케일(zh 「日本等 22 国」·en 「and 16 more」·es 「y 16 más」·zh-hant 「及另外 16 國」) **실물 확인 후 닫아라** | 본체 확인 |
+| **de M-041 원장** | 반영 완료(쫓54+닫14) · 미해결 80→14. 보류 건은 트리거 대기(APT 인천 종료 / EPT 8/29) | 트리거 |
+| **원장 갱신 요청 4건** | #100·#99 종결 · #100 로케일 수 de→6 · pt 새 행 · 총계 22 UNVERIFIABLE | 검수장 |
+| **검수장 pt 원장 편입** | 진행 중(27/42편 · 1,691주장 — OK 1,570 · RISKY ~36 · WRONG 3 · UNV ~82). 잔여 = glossary 6 · tournament 9 | 진행 중 |
+| **wpt 비자·NSW 재실사** | 미착수(M-073 권고 ①) — immi 수수료표·여권목록이 JS 컴포넌트라 본문 미노출 · NSW 현금한도 $1.000/2027-08 법령 1차(§73A) 표기 층 확인 | 별도 리서치 회차 |
+
+---
+
+## 🔵 미결 — 해결될 때까지 유지
+
+### 렌더·게이트·코퍼스
+- 🆕 🔴 **새 게이트가 드러낸 콘텐츠 부채(2026-09-14 · queue Q7-b · 글은 아직 안 고쳤다)** — 🔴 **`check:answer-echo` echo 19자리**(직답 블록이 본문 축어를 되풀이 · 그중 **5자리는 «값 표현» 면제 판정 대상** = `settled-decisions` §3 헤드 판정) · 🟠 length 47 · 🟢 **`check:structure` 링크 개수는 Q6-a가 0으로 닫았다**(「94편」은 게이트 오탐 5종이었다 — 판정·근거는 `docs/harden-queue-진행.md` §1-Q6-a · 규율은 `settled-decisions` §3으로 승격). 🔴 남은 echo·length는 **queue Q6-c** 몫이다
+- 🆕 🟠 **queue Q6-a가 등재한 로케일 부채 6건**(이 회차가 만든 것이 아니다 · 고치지 말고 회차에 묶어라): ① zh 직답 규격 초과 2자리 — `holdem-pot-odds:219` **146자** · `holdem-outs:102` **133자**(zh 한도 130) ② zh `holdem-pot-odds` ¾ 팟 행 **`2.3:1`** — 글이 내세우는 `1÷(X+1)`을 쓰면 30.3%인데 표는 30%다(정확값 **2.333:1** · **en·ja·zh-hant 동형 = EN-먼저**) ③ zh 조어 **`公共牌通杀`** 9자리 — 신마 독자에게 «딜러가 전원 베팅을 쓸어간다»(바카라)로 먼저 읽힌다(실제 뜻은 반대 · zh 고유라 EN-먼저 아님) ④ zh-hant `holdem-game-order:163` slow roll = **`慢秀（Slow Roll）`** ↔ 코퍼스 정본 **`搓牌`**(12회 · title·H2·glossary) ⑤ `pl/holdem-blind-meaning` **`cardn` −1**(`:::readnext` 블록 부재 · 꼬리 로케일 신호) ⑥ zh-hant `holdem-probability`의 카드·readnext **대상**이 EN·zh와 다르다(shc → beginners · **장수가 같아 게이트가 원리상 못 본다** — 등재 또는 교체 판정 필요)
+- 🟠 **`audit:hard` C2 형제 표 대조 — 21쌍 중 14 종결 · 7쌍 남았다**(ko 4 · zh 1 · zh-hant 1 · es 1). 🔴 **ko 4쌍이 통째로 남아 기본 ko 출력은 Q7-b로 안 바뀌었다** — 「게이트가 좋아졌다」를 ko 출력으로 확인하지 마라. zh·zh-hant `game-order`↔`flush-vs-straight`는 **행 키 정규화**가 처방(`1` ↔ `第2名`) · es `probability`↔`drawing-odds`는 **진짜 대조가 필요**하다
+- 🪶 **직답 라벨은 로케일마다 다르다 — 검사 기대값을 옆 로케일에서 뽑지 마라**: zh `快速回答` · zh-hant `快速解答` · ja `先に結論` · ko `바로 답` · en `Quick answer`(전부 정본 · 의도된 차이)
+- 🟠 콜아웃 «형태» 코퍼스 분열 256블록·102파일 — `> **제목**` 다음 줄부터 본문이면 금색 카드(1,023), 같은 줄이면 회색 blockquote(256). 🔴 결함이 아니라 형태 차이
+- 🟠 검수장 회귀 앵커가 낡았다(콜아웃·앵커 둘 다 새 형태 · MB-013 통지) — 회신 전까지 그 앵커의 🔴는 판정 보류
+- 🟠 `audit:hard --locale=ja` 2건 — 형제 표 자동대조가 **행 키 불일치로 전혀 안 된다**(`tiebreak L100↔reading L129` · `3bet L192↔cbet L170`) → 육안 대조 필요
+- 🪶 게이트 H5 판정 경계 — 「한 줄에 카드 5장 + 족보명」이면 그 5장을 «핸드»로 본다(보드만 5장 적고 같은 줄에서 족보를 말하면 울린다)
+- 🔴 **배포 전 검증은 `npm run build`로** — `build:vercel`만 돌리면 사이트맵이 안 갱신된다(프로덕션 체인이 `prebuild`를 안 탄다)
+- 🔴 **라이브 `sitemap.xml`은 `page.content()`로 못 읽는다** — 브라우저가 XML을 **트리 뷰로 변환**해서 뷰어 DOM이 돌아온다. 2026-09-10 (7)에 배포 폴링이 **30회 전부 「미확인」**으로 끝났는데 **배포는 이미 도착해 있었다.** 처방 = `const res = await page.goto(url); const xml = await res.text();`로 **응답 본문을 직접** 받아라. 🪶 «없다» 보고 전에 탐지 방법부터 의심 — 그대로 믿었으면 «배포 실패»로 오판했다
+
+### 링크·라우트·자산
+- 🔴 `/zh/hand-chart` 라이브 404 — `lib/posts-zh/holdem-starting-hands-chart.ts`가 이걸 가리킨다. 라우트는 `app/hand-chart`·`app/en/hand-chart` 둘뿐 (판정 애매 — zh 레인 종결 선언과 상충하니 실물부터)
+- 🟠 `/hand-chart`가 6로케일에서 «자기 언어가 아닌 화면»으로 떨어진다(de·id·ja→한국어 · es→영어) · 나머지 6로케일 판정 필요
+- 🔷 `wpt-seoul`·「공식 미기재」 3행의 한국 허브 카드 편입 — **«행 단위 `venue`» 구조 회차가 열릴 때만**(09-04에 넣지 않기로 판정)
+- fr 랜딩 내부링크 보강 — fr 코퍼스가 규칙 6편뿐이라 표준 링크 세트 불성립(프리플랍 안내는 앱 Charts préflop 탭으로 임시 대체)
+
+### 경화·레인·우편함 운영
+- 🟠 GPT 경계 파일 — 검수 폴더는 닫혔고(`29937f3`) **솔버 폴더 쪽은 아직 없다**
+- 🟠 경화 «이후» 추가분이 진짜 대상인지 미확인 — zh 13편 · zh-hant 14편 · es 30편
+- 🪶 소수 언어 17개 112편 — 경화 트랙 0회 · 사장님 판정 «나중에»
+- 🟡 우편함 제안 A·B — **전환 신호 대기**(발신함 분리 + `MA-`/`MB-`/`S-` 접두). 🔴 본체는 아직 `M-###`도 쓴다 · `tools/mailbox-check.mjs` CHANNELS 접두 검수장 커밋이 전환 신호
+- 🪶 M-079가 중복이다(검수장 1 + 솔버 1) · 09-06에도 회신 번호를 두 번 내렸다 → 🔴 **우편함 ID는 행을 쓰기 «직전»에 다시 세라**
+- 🪶 `홀덤검수` 레포는 원격이 없다(로컬 전용) — 프로토콜 §2의 「발신 전 `git pull`」은 해당 없음
+
+### 솔버 랜딩·앱
+- **MS 랜딩 후속 연결**: 별도 솔버 저장소의 `outbound.ts`에 MS `/solver` 매핑이 아직 필요하다. 본진 랜딩은 MS(`27c08021`)·HI(`2dbb885c`)까지 현재 앱12언어 모두 배포·운영 검증 완료했다(경위 WORKLOG). 신규 MS/HI 포스팅은 `docs/keyword-bank/{ms,hi}-posting-reference.md`의 실제 현지 검색·용어·출처 판단을 먼저 읽는다.
+- 🟠 **ar 렌즈 잔여 둘** (1회 실시분의 경위·해소 3건 = WORKLOG 「2026-09-10 (6)」 · 🔴 `الورقة المحروقة`는 **조어가 아니다** — 되살리지 마라):
+  ⓓ FAQ 어형의 **실검색 빈도 미실측**(ar은 키워드 실측 기록이 아예 없다 · 자동완성 실측 필요) ·
+  🪶 board 역어 통일은 **문안 판단**(결함 아님). 🔴 ar 팩은 **규칙 7편만** 봤다 — 나머지는 다음 렌즈에.
+- 🟠 **인도네시아어 원어민 렌즈 미검사**(M-095 ⑦) — 기계 게이트는 `percuma`·`pelayar` 같은 알려진 말레이어 낱말만 잡는다. 🔴 «어법»이 말레이어인 문장은 원어민만 본다
+- 🟠 id 커뮤니티 LABELS가 kamu체 — 블로그 43편·브리프·솔버 앱은 Anda
+- 🟠 트레이너 문턱 `0,08bb` 반올림 모순 · «range advantage» 등치 · GTO Wizard «방식» 단정 → **EN-먼저**(`docs/en-first-queue.md` §2) 🔴 랜딩은 잠겨 있다
+
+### 대회·사실 판정
+- 🟠 **MA-136 통지 ③④(ja · 회차 12 재료)** — RISKY 4(문안 재량): wpt L359 「10泊…本戦期間のみ」 ↔ フル体験 14박 · apt L286 「AREXは2種類」 열거 단절 · kpm L166 18시↔21시 무게 · bubble L166 「生き残りに寄与しません」(EN은 핸드 수만 부정 · A 126.b) · 약 잔존: icm L54·56 · bubble L52 top-heavy · short-stack L129·138·176·30·155·157 · ept 골드패스 확정형 5자리·L171·L266 · kpm L411 「18日間」(표는 15일)
+- 🟠 대회 note EN 측 재판정 2 — `NOTE_EN["apl-seoul-winter-circuit-1"]` 「전 이벤트」 탈락 · `NOTE_EN["hpt-5"]` 「Day 1 Sep 11–12」 범위 표기
+- 🟠 **APT 제주 이벤트 수는 개막(9/25) 전에 한 번 더 잰다** — 09-10 라이브 = **135**(#1~#135·결번 0)로 45자리 전파 완료.
+  🔴 **종목 분해(홀덤 90 + 기타 46)는 여전히 «7월 발표 편성 기준»이다** — APT 공식 분류를 재현 못 해 재분류하지 않았다.
+  공식 분류 근거를 찾으면 그때 고친다. 시한 항목은 `docs/update-calendar.md` 「9/20경」 절
+- rake «GGPoker는 일부 프리플롭 팟도 레이크» — 사업자·시점 종속. GG 공식 레이크 표 라이브 재확인 후 유지/중립화
+- straddle «solvers open 15–20% less on the button» — GTO Wizard 귀속이 이 수치엔 안 걸려 있고 상대/절대 감소 중의적(수학 렌즈 검증 불가)
+- KO `apt-incheon` `$3.50` 스텝 위성 실재 여부 — Natural8 페이지 시즌 종료로 다운. 🔴 **서둘러 지우지 마라**
+- `GGPoker SuperSatellites` 고유명 — 08-13 중립화 · ggpoker.com 404 → 검수장에 근거 URL 요청 후 승격 판단
+- JTBC 외국인 쿼터도 추첨제인가 — 공식은 「국내 등록은 추첨제」만 명시
+
+### 이미지·워터마크
+- 🟠 `check:image-reuse` 🟠 7건 «교차 클러스터» 판정 대기 — 🔴 위반이 아니다(예: `holdem-pub-players-table`을 홀덤펍 필라와 스타팅핸드 필라가 나눠 씀)
+- 🔴 **구형 워드마크 «본문 378장»은 아직 판정 자체를 안 했다** — C-2 종결은 «히어로 77장» 한정이다
+- 🪶 밝고 복잡한 배경 위 워터마크는 판독성이 낮다 — **규격을 그 장만 바꾸지 마라**(`apt-jeju-fall`·`appt-korea`·`apt-jeju-classic`)
+- 🪶 외부 자산 3장은 손대지 않는다(WPL 공식 포스터 · GGPoker 배너) — 「워터마크 부재」로 잡혀도 조치 대상 아님
+- 🪶 본문 현장 실사 사진의 워터마크 부재분 — 착수 시 `node scripts/wm-audit.mjs body`
+- 🔴 glossary 이미지의 6타일(ACTIONS/POSITIONS/HANDS/PLAYERS/MONEY/SLANG)이 본문 6섹션과 **이름이 다르다**
+
+### GSC·GA4·색인 계측
+- 🟢 **관측 대기 4건**(재크롤 후 · `npm run analytics` 주 1회) — 「홀덤 spr」 카니발 조치 `bc910c73`(기준선 115노출·클릭 0) · 「홀덤사이트」 앵커(홈 CTR 0.4% ↔ `/ranking` 1.5% 분배 · 🔴 그 전에 새 글 쓰지 마라) · `/en/blog/holdem-tiebreak-rules`(`scripts/gsc-page.mjs` · r19.3 1페이지 진입?) · `blind-meaning`(`scripts/ga-page.mjs` · 기준선 오가닉 40.3%·이탈 59.7%·모바일 0:25)
+- 🔴 **GA4 `page_view` 유실 121세션**(오가닉 5.5% · 55→137로 2.5배 증가 중) — `session_start` 121 · `user_engagement` 113인데 `page_view` 0
+- 🟠 `/calculator` 확률·승률 계열이 전부 2페이지(r15.4~21.8 · 합 ~200노출 클릭 1) — 이번 회차는 «훅 근거 없음» 판정만 · ⚠ 1:10 체류는 어느 층으로도 재현 안 됨(원출처 확인 필요 · 랜딩 참여율 58.0%는 실재)
+- 🟠 `/pub` 「근처 홀덤펍」 11노출 r6.1인데 클릭 0 — SPR과 같은 «순위 대비 CTR 이상» 신호
+- 🔴 **EN 56편 중 색인 19편(34%)뿐** — Crawled-not-indexed 21 · Discovered 11 · unknown 3 · Duplicate 2. 🪶 별도 색인 트랙은 만들지 마라(settled-decisions)
+- 🟠 EN 필라 2편의 구글 canonical이 외부 도박 사이트 `747live.bet` 루트로 잡혀 있다(`/en/blog/holdem-pot-odds`·`holdem-reading-the-board`) — **우리 쪽에 고칠 것이 없다**(관측만)
+- 🪶 GSC 「감지된 참조 사이트맵이 없습니다」는 결함이 아니다(라이브 200·640 loc 정상)
+- 🔴 **저볼륨 페이지의 «쿼리 구성»으로 결론 내리지 마라** — 최대 100%가 안 보인다
+- 🟠 독일 실독자 0:14 · GA4 §8 남은 2개(page_view 유실 원인 · 독일어 도입부) — ⚠ **층 미확인 + 표본 과소**(de 실PV 18) → 판정 전 표본부터
+
+### 로케일 용어·문체 분열
+- 🟠 `blind-meaning`의 결핍이 다른 로케일에도 있을 수 있다(tldr 계산 공식 부재 + 본문 도구 링크 0) — KO만 고쳤다
+- 🪶 zh-hant `holdem-icm` fold equity 3분열(L104 «棄牌價值» · L127 «棄牌權益（fold equity）» · 그 외 영문 병기)
+- pt `vazamento`↔`leak` 분열 — 정본은 leak인데 glossary 3편만 전환, strategy는 H2 제목·표 헤더까지 vazamento(20+곳)
+- pt 「dar raise/deu raise」(cb 16곳) vs 「aumentar」 혼재 · 홀카드 지칭 3종 혼용(`cartas fechadas`/`cartas de mão`/`cartas na mão` — 브리프에 hole cards 정본 없음) · 「mesa pareada/assustadora」 → 「board pareado」 전환 여부
+- pt `flush-vs-straight`·`split-pot-rules` 2편만 `masterUpdated` 부재(게이트 🟠 추적불가 2)
+- pt shc «AQo/AJo conforme evolui» — EN 07-19가 AJo 삭제, pt 등 6로케일이 낡은 판(**UTG 13% 판정 #1과 함께**)
+- pt strategy 허브 표의 결정 4·5 목적지가 betting-actions·pot-odds(전용 필라 아님) · tvc «Situação/Melhor encaixe» 표가 «Quando sair» H2 아래 — **둘 다 EN 패리티**
+- id-posting-reference §5의 «variance·leak 다수파» 판정 ↔ 세션 9 렌즈 전수 grep 상충(실측 kebocoran 23 : leak 13) — §5 계수 근거 재확인
+- ⚠ ja 뱅크의 「SD 24 = 유일한 低」는 **거짓 근거** — 다음 ja 회차에 정정
+- de 적대 QA 잔여 6 — `rabattieren` 13곳/4편 · `Side Pot↔Nebenpot` · 드로 라벨 `-Straße` · `Leaks↔Lecks` 8:8 · outs 19,1%↔19,6% · WSOP Rule 96.a 누락 🔴 **손대기 전 재grep**
+- es LATAM 보충 패스 — Spain 베이스 42/42 완결 · 다음 = Country=Mexico부터, 슬랭 우선
+- 태그 어순 변형쌍 «bad beat vs cooler»↔«cooler vs bad beat» — URL 카니발 없음 · 기록만(조치 불요 후보)
+
+### 전파·기타
+- 🔴 **ar 2편의 `masterUpdated`는 «일부러» 낡은 채다**(queue Q5a-6 · 09-13): `holdem-blind-meaning`·`texas-holdem-rules-for-beginners`에 EN-먼저 ⑩·⑪만 이식하고 `masterUpdated`는 **09-09 그대로** 뒀다 — 올리면 «EN 최신과 동기화됨»이 거짓이 된다. `check:drift`의 ar 🔴는 **의도된 상태**이고, 남은 것은 **EN 09-09 → 09-11 델타**이지 ⑩·⑪이 아니다. 🔴 다음 회차가 같은 자리를 중복 이식하지 않게 이 줄을 지우지 마라
+- 전 언어 태그 전수 실측 완료(~2,100종) → `docs/keyword-bank/<locale>-tag-volumes.md` 6종 · 4개 필라 반영 · **잔여 반영 계속**
+- KO ⑫ 「13스팟」 하드코딩 — **⑭를 만들 때 함께 열어라**(지금 값이 맞고 고치면 8곳이 움직인다)
+- ja 판단 ① `ポーカー gtoとは`(170) — 뱅크는 `ja/holdem-strategy`에 양보시켰는데 그 글 H2 12개 전부 GTO 0회(**양보가 명목뿐**)
+- ja 판단 ② 사이트맵 solver 3종 hreflang 부재 — 컨벤션 분열(tournaments `ko|en|ja` vs solver `ko-KR|…`) · 넣으려면 표기 통일이 먼저
+- ja 판단 ③ **저자 소개 컴포넌트가 레포에 없다** — §13은 「WSOP·12년 경력」 전제인데 `components/author*` 0개
+- `desc` 🟠 꼬리 정보 10편(KO 6 · es 3 · de 1) — 글 열 때 함께 · ja `desc` 5슬러그(M-016 §4)
+
+---
+
+### 헤드 미결
+ⓐ `blind-meaning` 직답≈tldr 중복(전 로케일 구조 판정) · ⓑ FAQ 103조 정의 요소 둘(EN·7로케일 EN-먼저) ·
+ⓓ 사장님 문의 「경화 폴더 하나 더?」 → **ja 레인 권고**(결재 대기) · ⓓ′ `\$` 이스케이프 잔존(**라이브 재현 0 — 조건 확인 전 손대지 마라**) ·
+ⓔ kicker de/ja/zh-hant `masterUpdated` 07-18/19 — EN 08-26 델타가 실제로 빠졌는지 **커밋 diff 실물 대조** ·
+ⓕ zh-hant hand-rankings 별칭 열 Straight Flush 「—」(steel wheel=A-5 정보가 zh-hant만 없음)
+🔴 **룰북 인용 규율의 정본 = `docs/sources/README.md`**(WSOP는 룰북이 둘 · 같은 번호가 다른 조항 · TDA는 연도 불요).
+
+---
+
+## ▶ 백로그 (착수 지시 없으면 손대지 않는다)
+
+- **P3·P4** — 고아 클러스터 25편 편입 + `check:clusters` 게이트(🔴 `vercel.json` buildCommand에도 — npm 훅은 프로덕션에서 안 돈다) · 상세 = `docs/nav-flow-audit-2026-08-16.md` §4
+- **C3 표 ↔ C2 겹침 2편**(`바이인·참가비`·`vs 캐시게임`) — 본문 마크다운이라 코드로 못 고침 · KO 12편 · 전 로케일 67파일
+- **구간 B**(디렉티브 8개 본문 편입 · `hr` · 장식 이미지) — 콘텐츠 편집이라 §14 검수가 붙는 다른 트랙
+- **제목 세리프(Lora)** — 레이아웃과 같이 바꾸면 LCP 원인을 못 가린다
+- **다국어 히어로 이미지 201px 위치** — LCP 요소라 측정 선행
+- 🪶 `components/intl-blog-post-client.tsx:245` 한글 깨진 주석(`H1 ?? ?? ? ??? LCP ??`) — §16 사고 흔적이나 원문을 몰라 그대로 둠

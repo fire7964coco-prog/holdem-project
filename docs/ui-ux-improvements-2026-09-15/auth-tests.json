@@ -1,0 +1,44 @@
+{
+  "checkCount": 46,
+  "results": [
+    {
+      "width": 390,
+      "focus": {
+        "active": true,
+        "style": "solid",
+        "width": "2px",
+        "color": "rgb(118, 89, 15)",
+        "background": "rgb(251, 248, 244)",
+        "labels": 1,
+        "autocomplete": "email",
+        "overflow": false
+      },
+      "mockedCalls": [
+        "GET /rest/v1/popups",
+        "POST /auth/v1/recover",
+        "POST /auth/v1/recover"
+      ],
+      "pageErrors": []
+    },
+    {
+      "width": 1440,
+      "focus": {
+        "active": true,
+        "style": "solid",
+        "width": "2px",
+        "color": "rgb(118, 89, 15)",
+        "background": "rgb(251, 248, 244)",
+        "labels": 1,
+        "autocomplete": "email",
+        "overflow": false
+      },
+      "mockedCalls": [
+        "GET /rest/v1/popups",
+        "POST /auth/v1/recover",
+        "POST /auth/v1/recover"
+      ],
+      "pageErrors": []
+    }
+  ],
+  "externalAuth": "All Supabase requests mocked; no real email, signup, password update or social provider request sent."
+}

@@ -293,10 +293,14 @@ export default function Ranking() {
             홀덤마스터의 무료 가이드로 기초부터 탄탄히 다져보세요.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-left">
+            {/* 순서·구성 = docs/post-placement-analysis-2026-09-16.md §3(/ranking·/pub 관문: 족보·룰·펍 첫방문·펍 가이드).
+                S 티어 3편(족보·올인 룰·펍 첫방문)을 앞에 두고, 기존 기초 룰·전략 로드맵·펍 가이드는 유지. */}
             {[
+              { href: "/blog/holdem-hand-rankings", title: "홀덤 족보 순위 10가지", desc: "7장 기준 실제 확률과 키커로 가리는 법" },
               { href: "/blog/texas-holdem-rules-for-beginners", title: "홀덤 규칙 완전 기초", desc: "카드 배분부터 베팅까지, 처음이라면 여기부터" },
+              { href: "/blog/holdem-rules", title: "홀덤 올인·베팅 룰", desc: "사이드팟·최소 레이즈·쇼다운 공개 순서" },
               { href: "/blog/holdem-strategy", title: "홀덤 전략 로드맵", desc: "프리플랍부터 자금 관리까지 순서대로" },
-              { href: "/blog/holdem-bankroll-management", title: "뱅크롤(자금) 관리", desc: "잃지 않고 오래 살아남는 자금 운용의 핵심" },
+              { href: "/blog/holdem-pub-first-visit-guide", title: "홀덤펍 처음 가는 법", desc: "입장 5단계·참가비·에티켓 5분 정리" },
               { href: "/blog/holdem-pub-guide", title: "홀덤펍 이용 가이드", desc: "오프라인에서 합법적으로 즐기는 방법" },
             ].map(link => (
               <a key={link.href} href={link.href} className="group bg-background border border-border rounded-xl p-4 hover:border-primary/40 transition-colors flex items-center justify-between gap-3">

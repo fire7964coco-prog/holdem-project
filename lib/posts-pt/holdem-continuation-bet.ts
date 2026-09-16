@@ -8,13 +8,9 @@ export const POST: Post = {
   tldr: "Uma continuation bet (c-bet) é uma aposta no flop feita por quem deu raise no pré-flop. A regra moderna não é 'c-bet em todo flop' — é apostar pequeno e com frequência nos flops que favorecem o seu range (boards altos e dry como K-7-2) e dar check nos que favorecem o adversário (boards baixos e conectados como 7-6-5). Aposte pequeno — cerca de um terço do pote — em dry boards, grande — dois terços ou mais — nos wet, dê c-bet menos fora de posição quando você foi o único raiser (como 3-bettor fora de posição, inverte para quase sempre) e bem menos multiway.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-11",
-  // 2026-09-09: EN 09-09 정정(토너먼트 c-bet 사이즈 «각 구간 안에서» 축소) 본문 전파 완료.
-  //   🔴 masterUpdated는 08-19에 그대로 둔다 — 아래 미결 항목의 드리프트 추적기다(올리면 게이트가 눈이 먼다).
-  // masterUpdated 08-19 = EN의 08-19 변경(a-high-board-cbet 역링크 1문단)은 EN·KO 전용 자산이라
-  //   번역본에 전파하지 않는다(EN 파일 주석 + docs/locale-intentional-diffs.md) — 검토 완료 표시.
-  //   ⚠ EN에는 08-20 커밋(851d8dc7)의 GTO ⑨ 역링크 1문단도 있으나 EN updated가 08-19에 머물러
-  //   스테일 게이트 밖이다 — 같은 사유로 전파 제외(locale-intentional-diffs에 함께 등재).
+  updated: "2026-09-15",
+  // 2026-09-15: PT GTO 예제 발행으로 보류됐던 A72·QT7 해설 역링크를 연결했다.
+  // masterUpdated는 본문의 기존 EN 동기화 기준을 유지한다.
   masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "15 min",
@@ -66,6 +62,8 @@ Aqui está o ponto crucial que a estratégia moderna realmente diz, porque é f�
 - Em boards que favorecem o adversário, **dê check bem mais** — e aposte maior e de forma mais seletiva quando apostar.
 
 O conceito por baixo disso é o ==range advantage==: de quem é o range geral mais forte nesse flop específico. Como quem deu raise no pré-flop, você tem mais cartas altas e overpairs, então **boards altos e dry pertencem a você** — e boards cheios de cartas médias conectadas pertencem a quem pagou. Domine essa única ideia e você já está à frente de todo jogador do tipo "só dar c-bet" na mesa.
+
+A vantagem de range também precisa ser lida junto com a posição. No exemplo A-7-2 rainbow, o BB que pagou a abertura dá check com 98,2% do range, incluindo top pair, embora as equities dos dois jogadores estejam próximas. Veja os números e a diferença de realização de equity na análise de [A-7-2: top pair também dá check](/pt/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-pt.webp").
 
 ---
 
@@ -128,6 +126,8 @@ Vamos aos números reais. Digamos que o pote seja de ==$30== no flop:
 - Uma c-bet de **dois terços do pote** é ==$20== — o seu tamanho de wet board, para cobrar dos draws.
 
 Em **torneios**, aperte um pouco os tamanhos: o pequeno continua sendo um terço, mas o grande vira **meio pote** com mais frequência do que dois terços, porque o seu stack é precioso e você não pode recarregar. Seja qual for a escolha, amarre o tamanho ao board, não ao hábito.
+
+Para ver essa escolha em um spot concreto, compare os dois tamanhos disponíveis no flop Q♥T♥7♠ de um pote de 3-bet: o solver usa a [aposta de dois terços com 98,4% do range](/pt/blog/3bet-pot-bet-sizing "thumb:/images/gto-3bp-dynamic-oop-pt.webp"). A análise mostra o preço que os draws recebem para pagar e por que o tamanho faz diferença nesse board.
 
 ---
 

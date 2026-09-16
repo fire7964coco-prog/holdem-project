@@ -1,0 +1,78 @@
+{
+  "base": "http://localhost:3100",
+  "checks": [
+    {
+      "name": "390: popular tournament URL",
+      "detail": true
+    },
+    {
+      "name": "mobile: home search and complete guide menu",
+      "detail": true
+    },
+    {
+      "name": "390: search result visible above fold",
+      "detail": {
+        "firstResultTop": 385.5
+      }
+    },
+    {
+      "name": "390: category URL/reload/back/forward",
+      "detail": "전략"
+    },
+    {
+      "name": "390: active/archive/month/reload/reset/shortcut",
+      "detail": {
+        "targetTop": 112.25
+      }
+    },
+    {
+      "name": "390: /tournaments heading color",
+      "detail": {
+        "color": "rgb(118, 89, 15)",
+        "text": "홀덤 대회 완벽 가이드"
+      }
+    },
+    {
+      "name": "390: /glossary heading color",
+      "detail": {
+        "color": "rgb(118, 89, 15)",
+        "text": "텍사스 홀덤 포커 용어 사전"
+      }
+    },
+    {
+      "name": "1440: popular tournament URL",
+      "detail": true
+    },
+    {
+      "name": "1440: search result visible above fold",
+      "detail": {
+        "firstResultTop": 377.5
+      }
+    },
+    {
+      "name": "1440: category URL/reload/back/forward",
+      "detail": "전략"
+    },
+    {
+      "name": "1440: active/archive/month/reload/reset/shortcut",
+      "detail": {
+        "targetTop": 112
+      }
+    },
+    {
+      "name": "1440: /tournaments heading color",
+      "detail": {
+        "color": "rgb(118, 89, 15)",
+        "text": "홀덤 대회 완벽 가이드"
+      }
+    },
+    {
+      "name": "1440: /glossary heading color",
+      "detail": {
+        "color": "rgb(118, 89, 15)",
+        "text": "텍사스 홀덤 포커 용어 사전"
+      }
+    }
+  ],
+  "errors": []
+}

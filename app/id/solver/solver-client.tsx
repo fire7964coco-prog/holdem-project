@@ -79,7 +79,7 @@ const SOLVER_URL = "https://solver.holdemmaster.com/?lang=id";
  *   커스텀 계산은 엔진을 한 번 내려받은 뒤에만 돈다(아홉 랜딩 공통 경고).
  * 🔴 언어 열거는 앱 **12개 언어**(`solver/src/i18n.ts:18` `Locale` 축어)와 1:1이다 — 2026-09-06에 hi를 더했다(라이브 12/12 고유 문안 확인).
  *   🪶 «셀렉터»라는 말은 이제 틀리다 — 2026-08-27에 제거됐고 앱은 본진 언어에 페깅된다(`?lang=`만 받는다).
- * 🪶 **학습 스팟에 블로그 링크가 하나도 없다 — 정상이다.** GTO 시리즈 13편은 ko·en·ja·es·zh·zh-hant뿐(id 0편).
+ * 2026-09-15: 학습 스팟마다 대응하는 ID GTO 해설을 연결한다. 등록 정본은 lib/gto-series.ts와 lib/posts-id/index.ts.
  * ❌ RTA·봇 축 금지 · 합법성 축 금지 · 본문 백틱 금지.
  */
 
@@ -183,7 +183,7 @@ const COMPARE: string[][] = [
  * 🟢 그룹 라벨·조건 문자열, 그리고 스팟 «이름» 13개는 앱 id 축어다(2026-09-05 실측 · 축어 문서 §4).
  *    🔴 이름을 «현지화»하지 마라 — 앱이 two-tone·paired·monotone·opener를 영어로 둔 자리다.
  *    노트만 우리 문안이다(위 규율).
- * 🪶 `slug`가 하나도 없다 — GTO 시리즈 해설이 id에 0편이라서다. 발행되면 그때 채운다.
+ * 2026-09-15: 모든 스팟의 slug는 대응하는 ID GTO 해설이다. 앱 이름·조건은 유지하고, 노트는 해설의 근거에 맞춘다.
  */
 const SPOT_GROUPS = [
   {
@@ -191,17 +191,17 @@ const SPOT_GROUPS = [
     cond: "OOP: BB (caller) · IP: BTN (opener) · Pot 5,5bb · Stack 97,5bb",
     items: [
       // 🟢 §4-B 화면값(체크 98,2%). RP-20(«체크 다음 BTN이…»)은 쓰지 않는다 — 화면이 그 노드를 안 준다.
-      { board: "A♥7♦2♣", name: "Board kering A-high", note: "Contoh klasik range advantage — kartu As mengenai range opener jauh lebih sering daripada range caller, dan BB check di sini 98,2%" },
-      { board: "K♠8♦3♣", name: "Board kering K-high", note: "Pembanding untuk board A-high: kartu tertinggi turun satu tingkat, dan pertanyaannya adalah seberapa banyak keseimbangan antara kedua range ikut bergeser" },
+      { slug: "a-high-board-cbet", board: "A♥7♦2♣", name: "Board kering A-high", note: "Contoh klasik range advantage — kartu As mengenai range opener jauh lebih sering daripada range caller, dan BB check di sini 98,2%" },
+      { slug: "k-high-board-cbet", board: "K♠8♦3♣", name: "Board kering K-high", note: "Pembanding untuk board A-high: kartu tertinggi turun satu tingkat, dan pertanyaannya adalah seberapa banyak keseimbangan antara kedua range ikut bergeser" },
       // 🟢 §4-B ③(77,9/119,4 · 체크 99,9). 편 수 하드코딩 없음(RP-08).
-      { board: "Q♠J♦T♠", name: "Board Broadway terhubung, two-tone", note: "Board yang tampak mengenai kedua range. Justru di sini BB merealisasikan equity paling buruk di seluruh seri ini — 77,9% terealisasi berbanding 119,4% untuk BTN — dan BB check 99,9%" },
+      { slug: "broadway-board-strategy", board: "Q♠J♦T♠", name: "Board Broadway terhubung, two-tone", note: "Board yang tampak mengenai kedua range. Justru di sini BB merealisasikan equity paling buruk di seluruh seri ini — 77,9% terealisasi berbanding 119,4% untuk BTN — dan BB check 99,9%" },
       // 🔴 RP-01·RP-02 회피 — «콜러 우위»·«C벳 붕괴»를 쓰지 않는다. §4-B ④: OOP 벳 23,7% · 48,5 대 51,5.
-      { board: "9♥8♥7♣", name: "Board tengah terhubung, two-tone", note: "Satu-satunya board single raised pot tempat BB benar-benar mengambil inisiatif: BB bet lebih dulu 23,7% — tetapi range advantage tetap di BTN: equity BB 48,5% berbanding BTN 51,5%" },
+      { slug: "donk-bet-strategy", board: "9♥8♥7♣", name: "Board tengah terhubung, two-tone", note: "Satu-satunya board single raised pot tempat BB benar-benar mengambil inisiatif: BB bet lebih dulu 23,7% — tetapi range advantage tetap di BTN: equity BB 48,5% berbanding BTN 51,5%" },
       // 🪶 모노톤 보드 — 사이즈 분포를 «관찰하라»는 지시 대신 «무엇을 공부하는 스팟인가»만.
-      { board: "Q♠9♠2♠", name: "Board monotone (satu suit)", note: "Spot untuk mempelajari cara flush yang sudah jadi dan flush draw membagi bet size di board monotone — pilihan size di sini sangat berbeda dari board two-tone" },
-      { board: "6♣6♦3♥", name: "Board paired", note: "Board yang jarang mengenai kedua range, sehingga porsi bluff ikut bergeser. Tabel detail menunjukkan hand mana yang bet sebagai bluff" },
+      { slug: "monotone-board-strategy", board: "Q♠9♠2♠", name: "Board monotone (satu suit)", note: "Spot untuk mempelajari cara flush yang sudah jadi dan flush draw membagi bet size di board monotone — pilihan size di sini sangat berbeda dari board two-tone" },
+      { slug: "paired-board-strategy", board: "6♣6♦3♥", name: "Board paired", note: "Board yang jarang mengenai kedua range, sehingga porsi bluff ikut bergeser. Tabel detail menunjukkan hand mana yang bet sebagai bluff" },
       // 🔴 RP-19 회피 — «BB가 체크레이즈를 많이 한다»를 쓰지 않는다. §4-B ⑦ = 체크 96,8 · 벳 3,2뿐.
-      { board: "6♠5♥2♦", name: "Board rendah rainbow", note: "Perang overcard — spot untuk mempelajari konstruksi check-raise. Di layar, aksi pertama BB: check 96,8%, bet 3,2%" },
+      { slug: "low-board-check-raise", board: "6♠5♥2♦", name: "Board rendah rainbow", note: "Perang overcard — spot untuk mempelajari konstruksi check-raise. Di layar, aksi pertama BB: check 96,8%, bet 3,2%" },
     ],
   },
   {
@@ -209,14 +209,14 @@ const SPOT_GROUPS = [
     cond: "OOP: BB (3-bettor) · IP: BTN (caller) · Pot 22,5bb · Stack 89bb",
     items: [
       // 🔴 RP-03 정정 — 사이즈를 정하는 것은 스택 깊이가 아니라 레인지의 모양(⑨ 98,4% 반례).
-      { board: "A♦K♠2♥", name: "Board A-high, keunggulan 3-bettor", note: "Flop terbaik untuk 3-bettor yang range-nya penuh AK, AA, dan KK. Kalau bet kecil menekan seluruh range lawan, bentuk range inilah yang memungkinkannya — bukan SPR yang rendah" },
+      { slug: "3bet-pot-cbet", board: "A♦K♠2♥", name: "Board A-high, keunggulan 3-bettor", note: "Flop terbaik untuk 3-bettor yang range-nya penuh AK, AA, dan KK. Kalau bet kecil menekan seluruh range lawan, bentuk range inilah yang memungkinkannya — bukan SPR yang rendah" },
       // 🔴 §4-B ⑨ = 벳 «합계» 99,1(큰 사이즈 98,4 + 작은 사이즈 0,7) · 체크 0,8. 즉 **98,4와 0,8은
       //    짝이 아니다** — 나란히 놓으면 독자가 뺄셈을 해서 0,8%p가 사라진다. EN·es·ja는 이미 체크
       //    절을 철회했고 id도 그쪽에 붙인다(2026-09-05 ③ 마감 · 딜러 렌즈 발원).
       //    🔴 fr·de·zh·zh-hant·pt는 아직 들고 있다 = EN-먼저 소급 대상(핸드오프 미결). 되살리지 마라.
-      { board: "Q♥T♥7♠", name: "Board dinamis two-tone", note: "Pot 3-bet di board yang juga cocok untuk caller — tetapi 3-bettor tidak melambat: 98,4% range-nya bet dengan satu bet size yang sama — dua pertiga pot" },
+      { slug: "3bet-pot-bet-sizing", board: "Q♥T♥7♠", name: "Board dinamis two-tone", note: "Pot 3-bet di board yang juga cocok untuk caller — tetapi 3-bettor tidak melambat: 98,4% range-nya bet dengan satu bet size yang sama — dua pertiga pot" },
       // 🔴 RP-17 회피 — «통째로 빗나간다»를 쓰지 않는다. 수치는 브리프 §7-10(4,8 · 16,9 · 78,3 · 탑페어 0).
-      { board: "8♦5♣2♠", name: "Board rendah kering", note: "Board yang nyaris tidak menyentuh range 3-bettor — gutshot 4,8%, backdoor flush 16,9%, tanpa draw 78,3%, top pair 0% — namun overpair dan hand A-high tetap menekan. Equity melawan fold equity" },
+      { slug: "3bet-pot-low-board", board: "8♦5♣2♠", name: "Board rendah kering", note: "Board yang nyaris tidak menyentuh range 3-bettor — gutshot 4,8%, backdoor flush 16,9%, tanpa draw 78,3%, top pair 0% — namun overpair dan hand A-high tetap menekan. Equity melawan fold equity" },
     ],
   },
   {
@@ -224,10 +224,10 @@ const SPOT_GROUPS = [
     cond: "OOP: SB (opener) · IP: BB (caller) · Pot 6bb · Stack 97bb",
     items: [
       // 🟢 RP-18 감시 조건(빈도 수치가 붙으면 폐기 명제) 미충족 — 수치를 붙이지 마라.
-      { board: "K♥T♦6♠", name: "Board K-high dengan T", note: "Di blind vs blind, kedua range lebar, sehingga keduanya sampai di flop dalam keadaan lemah. Pembanding alami untuk spot «Board kering K-high» di BTN vs BB" },
-      { board: "7♦6♦5♣", name: "Board rendah terhubung, two-tone", note: "Dua range lebar bertabrakan di board yang sangat terhubung: two pair, straight, dan draw di mana-mana. Di sinilah panel kategori hand paling banyak bercerita" },
+      { slug: "blind-battle-cbet", board: "K♥T♦6♠", name: "Board K-high dengan T", note: "Di blind vs blind, kedua range lebar, sehingga keduanya sampai di flop dalam keadaan lemah. Pembanding alami untuk spot «Board kering K-high» di BTN vs BB" },
+      { slug: "blind-battle-connected-board", board: "7♦6♦5♣", name: "Board rendah terhubung, two-tone", note: "Dua range lebar bertabrakan di board yang sangat terhubung: two pair, straight, dan draw di mana-mana. Di sinilah panel kategori hand paling banyak bercerita" },
       // 🟢 §4-B ⑬(88 대 66 · 80,1). RP-04(«트립스는 드물다»)는 쓰지 않는다.
-      { board: "A♠A♥6♦", name: "Board dengan dua As", note: "Dua As di board. Trips bukan hal langka — hanya saja SB punya lebih banyak (88 combo berbanding 66 untuk BB), sehingga SB bet 80,1%. Seluruh pertanyaan di board ini: siapa yang punya lebih banyak As di range-nya" },
+      { slug: "ace-paired-board-strategy", board: "A♠A♥6♦", name: "Board dengan dua As", note: "Dua As di board. SB memiliki 88 combo trips berbanding 66 untuk BB, dan bet 80,1%. Pelajari bagaimana distribusi seluruh range mendukung bet kecil." },
     ],
   },
 ];

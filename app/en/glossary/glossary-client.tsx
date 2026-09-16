@@ -63,7 +63,7 @@ export default function GlossaryEn() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
         {/* Hero */}
         <div className="text-center mb-10">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/30 text-primary text-xs font-bold tracking-wide mb-5">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/30 text-primary-ink text-xs font-bold tracking-wide mb-5">
             ♠ {TERMS.length} terms · searchable A–Z
           </div>
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-4">
@@ -126,7 +126,7 @@ export default function GlossaryEn() {
             {groups.map((g) => (
               <section key={g.letter}>
                 <div className="flex items-center gap-3 mb-3">
-                  <span className="text-2xl font-black text-primary/80 font-serif w-7">{g.letter}</span>
+                  <span className="text-2xl font-black text-primary-ink/80 font-serif w-7">{g.letter}</span>
                   <div className="h-px flex-1 bg-border" />
                 </div>
                 <div className="grid sm:grid-cols-2 gap-3">
@@ -172,7 +172,7 @@ export default function GlossaryEn() {
             ].map(({ href, label, desc }) => (
               <Link key={href} href={href}>
                 <div className="bg-card border border-border rounded-lg p-3 hover:border-primary/50 hover:bg-primary/5 transition-all text-center group h-full">
-                  <div className="font-bold text-sm text-foreground group-hover:text-primary transition-colors">{label}</div>
+                  <div className="font-bold text-sm text-foreground group-hover:text-primary-ink transition-colors">{label}</div>
                   <div className="text-xs text-muted-foreground mt-1">{desc}</div>
                 </div>
               </Link>

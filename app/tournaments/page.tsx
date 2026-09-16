@@ -1,5 +1,6 @@
 import TournamentsClient from "./tournaments-client";
 import { resolveBlogLinks } from "@/lib/tournaments-blog-links";
+import { activeEventGuides } from "@/lib/active-event-guides";
 import HubPage from "@/components/hub-page";
 
 /**
@@ -19,7 +20,8 @@ export default function Page() {
   //   ko도 존재 검사를 타므로, 한국어판이 없는 가이드는 링크가 조용히 숨는다.
   return (
     <HubPage title="대회 일정">
-      <TournamentsClient todayISO={todayISO} blogLinks={resolveBlogLinks("ko")} />
+      {/* 추천 블록의 «진행 중 대회 가이드»도 서버에서 해결한다 — 종료일 정본은 lib/featured-order.ts EVENT_UNTIL */}
+      <TournamentsClient todayISO={todayISO} blogLinks={resolveBlogLinks("ko")} eventGuides={activeEventGuides(todayISO)} />
     </HubPage>
   );
 }

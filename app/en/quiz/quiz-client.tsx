@@ -1,7 +1,7 @@
 "use client";
 
-import { useState, useCallback } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useState, useCallback, useEffect, useRef } from "react";
+import { motion } from "framer-motion";
 import { SEO } from "@/components/seo";
 import { makeQuestion, type HandInfo, type Card } from "@/lib/poker-eval";
 
@@ -39,7 +39,7 @@ function CardTile({ card, highlight, dim }: { card: Card; highlight?: boolean; d
 }
 
 function getGrade(s: number) {
-  if (s===10) return { label:"🏆 Perfect! Hand-ranking master", color:"rgb(var(--gold-dark-rgb))" };
+  if (s===10) return { label:"🏆 Perfect! Hand-ranking master", color:"hsl(var(--primary-ink))" };
   if (s>=8)   return { label:"🔥 Expert — great job",           color:"#22c55e" };
   if (s>=6)   return { label:"👍 Solid — almost there!",         color:"#60a5fa" };
   if (s>=4)   return { label:"📚 Keep practicing — try again",   color:"#f59e0b" };
@@ -47,12 +47,38 @@ function getGrade(s: number) {
 }
 
 export default function QuizEn() {
+  const [ready, setReady] = useState(false);
+  useEffect(() => setReady(true), []);
+  // A fresh shuffled deal must only be created in the browser; SSR cannot reproduce it during hydration.
+  if (!ready) return (
+    <div className="min-h-screen max-w-xl mx-auto px-4 py-10">
+      <h1 className="text-2xl font-black text-foreground">Hand Quiz 🃏</h1>
+      <p role="status" className="mt-4 text-muted-foreground">Preparing your quiz…</p>
+    </div>
+  );
+  return <QuizRound />;
+}
+
+function QuizRound() {
   const [phase,    setPhase]    = useState<'playing'|'answered'|'done'>('playing');
   const [qNum,     setQNum]     = useState(1);
   const [score,    setScore]    = useState(0);
   const [q,        setQ]        = useState(() => makeQuestion());
   const [selected, setSelected] = useState<HandInfo|null>(null);
   const [copied,   setCopied]   = useState(false);
+  const headingRef = useRef<HTMLHeadingElement>(null);
+  const moveToHeading = useRef(false);
+
+  useEffect(() => {
+    if (!moveToHeading.current || !headingRef.current) return;
+    moveToHeading.current = false;
+    const heading = headingRef.current;
+    const header = document.querySelector("header");
+    const headerHeight = header && ["sticky", "fixed"].includes(getComputedStyle(header).position)
+      ? header.getBoundingClientRect().height : 0;
+    heading.focus({ preventScroll: true });
+    window.scrollTo({ top: Math.max(0, window.scrollY + heading.getBoundingClientRect().top - headerHeight - 16), behavior: "instant" });
+  }, [phase, qNum]);
 
   const answer = useCallback((choice: HandInfo) => {
     if (phase !== 'playing') return;
@@ -62,11 +88,14 @@ export default function QuizEn() {
   }, [phase, q.correct.rank]);
 
   const next = useCallback(() => {
+    moveToHeading.current = true;
     if (qNum >= TOTAL) { setPhase('done'); return; }
     setQNum(n => n+1); setQ(makeQuestion()); setSelected(null); setPhase('playing');
   }, [qNum]);
 
   const restart = useCallback(() => {
+    moveToHeading.current = true;
+    setCopied(false);
     setPhase('playing'); setQNum(1); setScore(0); setQ(makeQuestion()); setSelected(null);
   }, []);
 
@@ -85,15 +114,15 @@ export default function QuizEn() {
         <div className="min-h-screen flex items-center justify-center px-4 py-16">
           <motion.div initial={false} animate={{ opacity:1, scale:1 }} className="w-full max-w-md text-center">
             <div className="mb-6 inline-flex items-center justify-center w-20 h-20 rounded-full border-2 text-3xl"
-              style={{ borderColor:grade.color, background:`${grade.color}18` }}>
+              style={{ borderColor:grade.color, background:`color-mix(in srgb, ${grade.color} 9%, transparent)` }}>
               {score===10?'🏆':score>=8?'🔥':score>=6?'👍':score>=4?'📚':'💪'}
             </div>
-            <h1 className="font-serif text-3xl font-black text-foreground mb-1">Your result</h1>
+            <h1 ref={headingRef} tabIndex={-1} className="font-serif text-3xl font-black text-foreground mb-1">Your result</h1>
             <p className="text-muted-foreground mb-6">{TOTAL} questions completed</p>
             <div className="text-8xl font-black mb-1" style={{ color:grade.color }}>{score}</div>
             <div className="text-xl text-muted-foreground mb-4">/ {TOTAL}</div>
             <div className="inline-block px-5 py-2 rounded-full text-sm font-bold mb-8 border"
-              style={{ color:grade.color, borderColor:`${grade.color}66`, background:`${grade.color}12` }}>
+              style={{ color:grade.color, borderColor:`color-mix(in srgb, ${grade.color} 40%, transparent)`, background:`color-mix(in srgb, ${grade.color} 7%, transparent)` }}>
               {grade.label}
             </div>
             <div className="bg-card border border-border rounded-xl p-4 mb-6 text-left">
@@ -102,7 +131,7 @@ export default function QuizEn() {
             <div className="flex gap-3 justify-center">
               <button onClick={handleCopy}
                 className="flex-1 py-3 rounded-xl font-bold text-sm border transition-all"
-                style={{ borderColor:'rgba(var(--gold-dark-rgb),0.5)', color:'rgb(var(--gold-dark-rgb))', background:'rgba(var(--gold-dark-rgb),0.08)' }}>
+                style={{ borderColor:'rgba(var(--gold-dark-rgb),0.5)', color:'hsl(var(--primary-ink))', background:'rgba(var(--gold-dark-rgb),0.08)' }}>
                 {copied ? 'Copied ✓' : 'Copy result 📋'}
               </button>
               <button onClick={restart}
@@ -113,7 +142,7 @@ export default function QuizEn() {
             </div>
             <p className="text-xs text-muted-foreground mt-6">
               Want to study hand rankings?{' '}
-              <a href="/en/blog/holdem-hand-rankings" className="text-primary underline">Poker Hand Rankings →</a>
+              <a href="/en/blog/holdem-hand-rankings" className="text-primary-ink underline">Poker Hand Rankings →</a>
             </p>
           </motion.div>
         </div>
@@ -136,7 +165,7 @@ export default function QuizEn() {
           </div>
           <div className="text-right">
             <div className="text-xs text-muted-foreground">{qNum} / {TOTAL}</div>
-            <div className="font-black text-primary text-xl">{score} pts</div>
+            <div className="font-black text-primary-ink text-xl">{score} pts</div>
           </div>
         </div>
 
@@ -144,8 +173,8 @@ export default function QuizEn() {
           <motion.div className="h-full bg-primary rounded-full" animate={{ width:`${((qNum-1)/TOTAL)*100}%` }} transition={{ duration:0.4 }} />
         </div>
 
-        <AnimatePresence mode="wait">
-          <motion.div key={qNum} initial={false} animate={{ opacity:1, x:0 }} exit={{ opacity:0, x:-40 }} transition={{ duration:0.22 }}>
+          <div key={qNum}>
+            <h2 ref={headingRef} tabIndex={-1} className="text-base font-bold text-foreground mb-3">Question {qNum} / {TOTAL}</h2>
             <div className="bg-card border border-border rounded-2xl p-5 mb-3">
               <div className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground mb-3">Board (Community Cards)</div>
               <div className="flex gap-2 flex-wrap">
@@ -216,8 +245,7 @@ export default function QuizEn() {
                 {qNum>=TOTAL ? 'See results 🏆' : `Next → (${qNum+1}/${TOTAL})`}
               </motion.button>
             )}
-          </motion.div>
-        </AnimatePresence>
+          </div>
       </div>
     </>
   );

@@ -75,31 +75,31 @@ const SPOT_GROUPS = [
     label: "Single Raised Pot — BTN vs BB (बुनियाद)",
     cond: "OOP: BB call करता है · IP: BTN open करता है · Pot 5.5bb · Stack 97.5bb",
     items: [
-      { board: "A♥7♦2♣", name: "सूखा A-high board", note: "Open करने वाले खिलाड़ी के range advantage का उदाहरण: यह board BTN की range के पक्ष में है। पहले फ़ैसले पर BB 98.2% बार check करता है" },
-      { board: "K♠8♦3♣", name: "सूखा K-high board", note: "A-high से तुलना करें। BTN की range को अब भी फ़ायदा है, लेकिन BB की check frequency बढ़कर 99.8% हो जाती है" },
-      { board: "Q♠J♦T♠", name: "जुड़ा हुआ Broadway board, two-tone", note: "Board दोनों ranges के लिए अच्छा लग सकता है, लेकिन BB का EQR सिर्फ़ 77.9% है, जबकि BTN का 119.4%। BB 99.9% बार check करता है" },
-      { board: "9♥8♥7♣", name: "जुड़ा हुआ middle board, two-tone", note: "BB 23.7% बार पहले bet करता है। फिर भी range advantage BTN के पास है: BB की equity 48.5% और BTN की 51.5% है" },
-      { board: "Q♠9♠2♠", name: "Monotone board (एक ही suit)", note: "बने हुए flush और flush draw वाले हैंड देखें, फिर bet sizes की तुलना करें। पहले फ़ैसले पर BB की check frequency 88.8% है" },
-      { board: "6♣6♦3♥", name: "Paired board", note: "Board पर pair होने से pocket pairs और bluffs की भूमिका कैसे बदलती है, यह देखें। BB 97.0% बार check करता है और bet के लिए दो sizes इस्तेमाल करता है" },
-      { board: "6♠5♥2♦", name: "नीचा rainbow board", note: "BB के पहले फ़ैसले से शुरू करें: check 96.8% और bet 3.2%। यहाँ सिर्फ़ एक bet size उपलब्ध है, pot का 33%" },
+      { slug: "a-high-board-cbet", board: "A♥7♦2♣", name: "सूखा A-high board", note: "Open करने वाले खिलाड़ी के range advantage का उदाहरण: यह board BTN की range के पक्ष में है। पहले फ़ैसले पर BB 98.2% बार check करता है" },
+      { slug: "k-high-board-cbet", board: "K♠8♦3♣", name: "सूखा K-high board", note: "A-high से तुलना करें। BTN की range को अब भी फ़ायदा है, लेकिन BB की check frequency बढ़कर 99.8% हो जाती है" },
+      { slug: "broadway-board-strategy", board: "Q♠J♦T♠", name: "जुड़ा हुआ Broadway board, two-tone", note: "Board दोनों ranges के लिए अच्छा लग सकता है, लेकिन BB का EQR सिर्फ़ 77.9% है, जबकि BTN का 119.4%। BB 99.9% बार check करता है" },
+      { slug: "donk-bet-strategy", board: "9♥8♥7♣", name: "जुड़ा हुआ middle board, two-tone", note: "BB 23.7% बार पहले bet करता है। फिर भी range advantage BTN के पास है: BB की equity 48.5% और BTN की 51.5% है" },
+      { slug: "monotone-board-strategy", board: "Q♠9♠2♠", name: "Monotone board (एक ही suit)", note: "बने हुए flush और flush draw वाले हैंड देखें, फिर bet sizes की तुलना करें। पहले फ़ैसले पर BB की check frequency 88.8% है" },
+      { slug: "paired-board-strategy", board: "6♣6♦3♥", name: "Paired board", note: "Board पर pair होने से pocket pairs और bluffs की भूमिका कैसे बदलती है, यह देखें। BB 97.0% बार check करता है और bet के लिए दो sizes इस्तेमाल करता है" },
+      { slug: "low-board-check-raise", board: "6♠5♥2♦", name: "नीचा rainbow board", note: "BB के पहले फ़ैसले से शुरू करें: check 96.8% और bet 3.2%। यहाँ सिर्फ़ एक bet size उपलब्ध है, pot का 33%" },
     ],
   },
   {
     label: "3-Bet Pot — BB 3-bet, BTN call (कम SPR)",
     cond: "OOP: BB 3-bet करता है · IP: BTN call करता है · Pot 22.5bb · Stack 89bb · SPR 4.0",
     items: [
-      { board: "A♦K♠2♥", name: "A-high board, 3-bettor को फ़ायदा", note: "BB की range में AA, KK और AK हैं। BB 100% बार bet करता है: छोटे size से 57.8% और बड़े size से 42.2%। Sizes का यह मिश्रण range की बनावट पर निर्भर है; सिर्फ़ कम SPR इसे नहीं समझाता" },
-      { board: "Q♥T♥7♠", name: "Draws वाला two-tone board", note: "BB लगभग दो-तिहाई pot का bet 98.4% बार इस्तेमाल करता है। एक size पर इस ज़ोर की तुलना A♦K♠2♥ के दो sizes वाले मिश्रण से करें" },
-      { board: "8♦5♣2♠", name: "नीचा सूखा board", note: "3-bet range के overpairs और A-high हैंड पर ध्यान दें। Board नीचा होने के बावजूद BB पहले फ़ैसले पर 98.1% बार bet करता है" },
+      { slug: "3bet-pot-cbet", board: "A♦K♠2♥", name: "A-high board, 3-bettor को फ़ायदा", note: "BB की range में AA, KK और AK हैं। BB 100% बार bet करता है: छोटे size से 57.8% और बड़े size से 42.2%। Sizes का यह मिश्रण range की बनावट पर निर्भर है; सिर्फ़ कम SPR इसे नहीं समझाता" },
+      { slug: "3bet-pot-bet-sizing", board: "Q♥T♥7♠", name: "Draws वाला two-tone board", note: "BB लगभग दो-तिहाई pot का bet 98.4% बार इस्तेमाल करता है। एक size पर इस ज़ोर की तुलना A♦K♠2♥ के दो sizes वाले मिश्रण से करें" },
+      { slug: "3bet-pot-low-board", board: "8♦5♣2♠", name: "नीचा सूखा board", note: "3-bet range के overpairs और A-high हैंड पर ध्यान दें। Board नीचा होने के बावजूद BB पहले फ़ैसले पर 98.1% बार bet करता है" },
     ],
   },
   {
     label: "Blind vs Blind — SB vs BB (चौड़ी ranges)",
     cond: "OOP: SB open करता है · IP: BB call करता है · Pot 6bb · Stack 97bb · SPR 16.2",
     items: [
-      { board: "K♥T♦6♠", name: "K-high board पर T", note: "SB ने open किया है, लेकिन flop के बाद उसे पहले action लेना पड़ता है। BTN vs BB से तुलना करें; यहाँ bet size pot का 33% है" },
-      { board: "7♦6♦5♣", name: "जुड़ा हुआ low board, two-tone", note: "यह board SB की opening range के लिए मुश्किल है: SB 90.4% बार check और सिर्फ़ 9.6% बार bet करता है। इसी समूह के K-high board से तुलना करें" },
-      { board: "A♠A♥6♦", name: "दो Ace वाला board", note: "SB के पास BB से ज़्यादा trips combos हैं। Pot के 33% वाले छोटे bet की frequency 79.6% है, जबकि बड़े bet की सिर्फ़ 0.5%" },
+      { slug: "blind-battle-cbet", board: "K♥T♦6♠", name: "K-high board पर T", note: "SB ने open किया है, लेकिन flop के बाद उसे पहले action लेना पड़ता है। BTN vs BB से तुलना करें; यहाँ bet size pot का 33% है" },
+      { slug: "blind-battle-connected-board", board: "7♦6♦5♣", name: "जुड़ा हुआ low board, two-tone", note: "यह board SB की opening range के लिए मुश्किल है: SB 90.4% बार check और सिर्फ़ 9.6% बार bet करता है। इसी समूह के K-high board से तुलना करें" },
+      { slug: "ace-paired-board-strategy", board: "A♠A♥6♦", name: "दो Ace वाला board", note: "SB के पास BB से ज़्यादा trips combos हैं। Pot के 33% वाले छोटे bet की frequency 79.6% है, जबकि बड़े bet की सिर्फ़ 0.5%" },
     ],
   },
 ];
@@ -419,7 +419,7 @@ export default function SolverClientHi() {
                 <li key={s.board} className="text-sm">
                   <span className="font-semibold">{s.board}</span>
                   <span className="mx-1.5 text-muted-foreground">·</span>
-                  <span className="font-medium">{s.name}</span>{" "}
+                  <Link href={`/hi/blog/${s.slug}`} className="font-medium text-primary hover:underline">{s.name}</Link>{" "}
                   <span className="text-muted-foreground">— {s.note}</span>
                 </li>
               ))}

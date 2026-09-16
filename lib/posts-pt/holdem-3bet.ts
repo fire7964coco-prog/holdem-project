@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Um 3-bet é o primeiro re-raise antes do flop — chamado de 3-bet porque o big blind é a primeira aposta, o open-raise a segunda, e o seu re-raise a terceira. Dê 3-bet por valor com um núcleo apertado (QQ+, AK) mais alguns blefes de bloqueio suited como A5s, dimensione em torno de 3x o open in position e 4x out of position, e mantenha sua frequência geral de 3-bet perto de 6–10%. Quando você é quem enfrenta um 3-bet, 4-bete suas mãos premium, pague as mãos que jogam bem, e folde o resto — foldando mais que o \"balanceado\" contra jogadores de stakes baixos que nunca blefam.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-13",
+  updated: "2026-09-15",
   masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -299,7 +299,7 @@ A. Conforme os stacks ficam curtos — em torno de 10–25 big blinds — muitas
 3. **Dimensione ~3x in position, ~4x out** — e nunca pequeno out of position.
 4. **Case o formato ao spot:** linear vs opens abertos/fracos (e quando você está no small blind), polarizado vs opens apertados e quando você está no big blind.
 5. **Enfrentando um 3-bet, a maioria das mãos folda** — 4-bete as premium, pague as jogáveis, e folde mais que o "balanceado" contra adversários que nunca blefam.
-6. **E então vem o flop.** Um pote de 3-bet não se joga nada como um de um aumento só — com os números deste artigo (open de 3bb, 3-bet de 9bb, 100bb de profundidade) o pote fica cerca de 2,6× maior (19,5bb contra os 7,5bb que um flat heads-up construiria; um 3-bet maior fora de posição empurra isso para perto de 3,5×) e o SPR cai para cerca de 4,7. Mesmo assim, quem deu o 3-bet frequentemente aposta o range inteiro no flop — por causa do formato do range, não porque o stack está curto.
+6. **E então vem o flop.** Um pote de 3-bet não se joga nada como um de um aumento só — com os números deste artigo (open de 3bb, 3-bet de 9bb, 100bb de profundidade) o pote fica cerca de 2,6× maior (19,5bb contra os 7,5bb que um flat heads-up construiria; um 3-bet maior fora de posição empurra isso para perto de 3,5×) e o SPR cai para cerca de 4,7. Mesmo assim, quem deu o 3-bet frequentemente aposta o [range inteiro no flop](/pt/blog/3bet-pot-cbet) — por causa do formato do range, não porque o stack está curto.
 
 Acerte o 3-bet e você deixa de ser o jogador que só paga com ases e ganha um pote minúsculo. Combine com um [range disciplinado de mãos iniciais](/pt/blog/holdem-starting-hands-chart), consciência afiada de [posição](/pt/blog/holdem-position-play), e o [framework completo de estratégia](/pt/blog/holdem-strategy), e seu jogo pré-flop silenciosamente sai na frente do campo.
 
