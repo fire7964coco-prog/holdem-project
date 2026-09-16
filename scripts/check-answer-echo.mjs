@@ -235,6 +235,21 @@ const POINTER_PAT = {
  * 키 = 로케일 · 슬러그 · H2 제목의 «부분 문자열»(줄 번호는 편집 때마다 움직인다) · 검사 종류.
  * ──────────────────────────────────────────────────────────────── */
 export const JUDGED = [
+  /* ── echo · «값 표현» 면제 (2026-09-16 queue Q6-c · 판정 정본 = settled-decisions «echo 면제는 겹친 것의 성격으로» 2026-09-14) ──
+   * 🔴 kind 'echo'는 **hit(겹친 문자열의 부분)까지** 맞아야 닫힌다 — 절 단위로 닫으면 같은 절의 «산문» 겹침이 조용히 묻힌다.
+   * 🔴 산문 겹침은 등재하지 마라 — 그건 «지우되 남은 문단 재작성»(프로토콜 §4) 대상이다. */
+  {
+    loc: 'ja', slug: 'apt-incheon-2026-guide', head: '(머리말)', kind: 'echo', hit: '第1ターミナルから無料シャトルで10分',
+    reason: '값 표현(공항 터미널명+소요 시간). 물류 값은 자리마다 같은 문면이어야 한다 — 다르게 쓰라는 요구가 곧 드리프트다.',
+  },
+  {
+    loc: 'zh', slug: 'holdem-betting-actions', head: '一轮可以加注几次', kind: 'echo', hit: '在一次下注加四次加注（第100.b条）',
+    reason: '값 표현(WSOP Rule 100.b 상한 «1 bet + 4 raises» + 조항 번호). 룰 문구를 자리마다 달리 쓰면 룰이 갈린다.',
+  },
+  {
+    loc: 'ko', slug: 'broadway-board-strategy', head: '(머리말)', kind: 'echo', hit: '레인지의68.4%가드로우를',
+    reason: '값 표현(솔버 수치 68.4% + 그 수치가 가리키는 대상). GTO 시리즈 1차 데이터 — 문면을 흩으면 값의 지시 대상이 흐려진다.',
+  },
   {
     loc: 'ja', slug: 'holdem-drawing-odds', head: 'レアなフロップ', kind: 'pointer',
     reason:
@@ -262,6 +277,13 @@ export const JUDGED = [
       '최저 1.5–2.2배 · 우승 8–30% · WPT 1,435명 중 180명 인더머니 약 14%). 「下表四档」은 근거 제시다.',
   },
 ];
+/**
+ * echo 등재 — **겹침 하나(hit)와 «완전 일치»**해야 닫힌다 (2026-09-16 queue Q6-c 렌즈 4 교정).
+ * 🔴 «포함»으로 판정하지 마라 — 짧은 hit(「加四次加注」 5자)이 그것을 품은 35자 산문 겹침까지 닫았다(탐침 재현).
+ * 🔴 판정은 `inspect`의 hit 루프 **안에서** 겹침 하나씩 한다 — 블록 대표(picked)에 걸면 같은 블록의 약한 산문 겹침이 가려진다.
+ */
+export const judgedEcho = (loc, slug, head, hit) =>
+  JUDGED.some((j) => j.kind === 'echo' && j.loc === loc && j.slug === slug && head.includes(j.head) && hit === j.hit);
 /** 등재된 자리인가 */
 export const judged = (loc, slug, head, kind) =>
   JUDGED.some((j) => j.loc === loc && j.slug === slug && j.kind === kind && head.includes(j.head));
@@ -371,7 +393,7 @@ const contentOf = (src) => { const m = src.match(/content:\s*`([^`]*)`/); return
 /**
  * 한 편을 검사한다. 절(H2) 단위로 잘라 그 안의 직답 블록을 본문 나머지와 견준다.
  */
-export function inspect(content, loc, labels = LABELS[loc] ?? []) {
+export function inspect(content, loc, labels = LABELS[loc] ?? [], slug = null) {
   const out = [];
   const lines = content.split('\n');
   // H2 경계로 절을 나눈다
@@ -418,6 +440,8 @@ export function inspect(content, loc, labels = LABELS[loc] ?? []) {
         const byRaw = hit.length >= (RAW_MIN[loc] ?? 18) && eff >= (RAW_FLOOR[loc] ?? 12);
         if (!byEff && !byRaw) continue;
         if (isEnumerationOrFormula(hit) || exempt(hit, loc)) { exempted++; continue; }
+        if (slug && judgedEcho(loc, slug, sec.head, hit)) { out.push({ kind: 'echo-judged', at, head: sec.head }); continue; }
+        if (process.env.ECHO_HITS) console.error(`HIT ${loc}/${slug} 「${sec.head}」 ${JSON.stringify(hit)}`);
         // 여러 개면 «실효»가 가장 진한 것을 대표로 낸다(원문 길이가 아니다 — 그게 구 구현의 버그였다)
         if (!picked || eff > picked.len || (eff === picked.len && hit.length > picked.raw)) {
           picked = { kind: 'echo', at, head: sec.head, len: eff, raw: hit.length, axis: byEff ? '실효' : '원문', sample: hit.slice(0, 40) };
@@ -611,8 +635,24 @@ function selftest() {
   const okLen = lenRow && lenRow.len === 2;  // 「短。」 = 문장부호 포함 2자
   if (okLen) pass++; else console.log('❌ length 계수');
   console.log(`${okLen ? '✅' : '❌'} 길이 계수 — want 2 got ${lenRow ? lenRow.len : 'null'}`);
-  console.log(`selftest ${pass}/${cases.length + 1}`);
-  process.exit(pass === cases.length + 1 ? 0 : 1);
+  // 🔴 echo 등재는 겹침 하나와 «완전 일치»해야 닫힌다 (queue Q6-c · 렌즈 4가 탐침으로 잡은 두 구멍)
+  const J = JUDGED.find((j) => j.kind === 'echo' && j.loc === 'ja');
+  const okJ1 = !!J && judgedEcho(J.loc, J.slug, J.head, J.hit) === true;
+  const okJ2 = !!J && judgedEcho(J.loc, J.slug, J.head, `按规则${J.hit}以后就封顶了`) === false; // 포함≠일치
+  // 파이프라인: 등재 겹침 + 같은 블록의 «더 옅은» 산문 겹침 → 산문 쪽은 여전히 🔴 1
+  //   (🔴 산문이 등재 겹침보다 진하면 «블록 대표에만 판정을 거는» 옛 구현도 통과한다 — 2차 교열이 변이 시험으로 잡았다)
+  const probe = J ? `> **先に結論** ${J.hit}です。ABCホテル送迎バスは22時30分まで運行
+
+本文です。${J.hit}。そしてABCホテル送迎バスは22時30分まで運行
+
+## 見出し
+本文。` : '';
+  const okJ3 = !!J && inspect(probe, 'ja', undefined, J.slug).filter((r) => r.kind === 'echo').length === 1;
+  const okJ4 = !!J && inspect(probe.replace('ABCホテル送迎バスは22時30分まで運行', '').replace('そしてABCホテル送迎バスは22時30分まで運行', ''), 'ja', undefined, J.slug).filter((r) => r.kind === 'echo').length === 0;
+  for (const [ok, nm] of [[okJ1, 'echo 등재 — 완전 일치면 닫는다'], [okJ2, '🔴 echo 등재 — hit을 «품은» 긴 겹침은 안 닫는다'],
+    [okJ3, '🔴 echo 등재 — 같은 블록의 산문 겹침은 여전히 뜬다(파이프라인)'], [okJ4, 'echo 등재 — 등재 겹침만 있으면 0']]) { if (ok) pass++; console.log(`${ok ? '✅' : '❌'} ${nm}`); }
+  console.log(`selftest ${pass}/${cases.length + 5}`);
+  process.exit(pass === cases.length + 5 ? 0 : 1);
 }
 
 function main() {
@@ -620,7 +660,7 @@ function main() {
   const locales = (opt('locale') ?? Object.keys(LABELS).join(',')).split(',');
   const only = opt('only');
   const slug = opt('slug');
-  let red = 0, amber = 0, blocks = 0, leadBlocks = 0, files = 0, count = 0, pointer = 0, unknown = 0, exemptN = 0;
+  let red = 0, amber = 0, blocks = 0, leadBlocks = 0, files = 0, count = 0, pointer = 0, unknown = 0, exemptN = 0, judgedEchoN = 0;
   const lines = [], info = [];
   for (const loc of locales) {
     const dir = DIR(loc);
@@ -632,11 +672,12 @@ function main() {
       const c = contentOf(fs.readFileSync(path.join(dir, f), 'utf8'));
       if (!c) continue;
       files++;
-      const rows = inspect(c, loc);
+      const rows = inspect(c, loc, undefined, s);
       blocks += rows.filter((r) => r.kind === 'length').length;
       leadBlocks += rows.filter((r) => r.kind === 'lead').length;
       const bad = [];
       for (const r of rows) {
+        if (r.kind === 'echo-judged') { judgedEchoN++; continue; }
         if (only && r.kind !== only) continue;
         if (r.kind === 'echo') { red++; bad.push(`  🔴 echo   ${r.at} 「${r.head}」 ${r.axis}축 · LCS ${r.len}자(원문 ${r.raw}) — ${r.sample}`); }
         const LEN = lenSpec(loc);
@@ -691,6 +732,7 @@ function main() {
   console.log(`\n🪶 임계 = ${Object.entries(MIN_LCS).map(([k, v]) => `${k} ${v}자`).join(' · ')} · 길이 규격 = ${Object.entries(LEN_BY_LOCALE).map(([k, v]) => `${k} ${v.min}~${v.max}`).join(' · ')}(그밖 ${LEN_DEFAULT.min}~${LEN_DEFAULT.max}) · 길이 면제 = 이벤트 가이드(물류 정보는 직답이 표 대용 · 판정 13-ⓑ)`);
   console.log('🪶 원리상 못 보는 것: 글자가 겹치지 않고 «내용»만 어긋나는 결함(ja §5-A 유형) — 그 자리는 렌즈 몫이다.');
   console.log(`🪶 count·pointer는 «후보»다(ℹ 고정 — 등급 승격은 실측 정밀도가 선 뒤에). 판정 등재 ${JUDGED.length}건은 이 스크립트의 JUDGED에 사유와 함께 있다.`);
+  console.log(`🪶 «값 표현» 판정 등재로 닫은 echo ${judgedEchoN}자리 — JUDGED(kind: echo)는 **겹침 하나와 완전 일치**해야 닫힌다(같은 블록의 다른 겹침은 따로 판정된다 · settled-decisions «echo 면제는 겹친 것의 성격으로»).`);
   console.log(`🪶 «나열·공식·고유명사»로 면제한 겹침 ${exemptN}건 — 면제는 «그 겹침 하나»만 무효화한다(블록 무죄가 아니다 · 렌즈 1 항목 3).`);
   console.log(unknown
     ? `⚠ 미판정 ${unknown}건 — «N개를 약속했는데 볼드·번호가 없어 열거 수를 못 센» 블록이다(🔴 구분자는 근거로 세지 않는다 · «0건»이 아니라 «사람이 셀 자리»다).`

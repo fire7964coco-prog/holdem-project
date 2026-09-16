@@ -259,7 +259,7 @@ const ja: BoardStrings = {
     },
     {
       q: "ポーカーの世界大会で日本勢はどのくらい勝っていますか？",
-      a: "2026年のWSOPで日本はブレスレットを4本獲得しました。Naoya KiharaがEvent #17($428,923)とEvent #23($301,970)、Koji FujimotoがEvent #67($392,478)、Daisuke OgitaがEvent #72で$1,000,000です。4本のうち3本がミックスゲームの選手権でした。メインイベント(9,208エントリー・賞金総額$85,634,400)は参加者222人で日本が全体5位。ファイナルテーブルの9人に日本人は残っていません。10位以下の順位はWSOP公式もPokerNewsも未公開のため、ここでは断定しません。",
+      a: "2026年のWSOPで日本はブレスレットを4本獲得しました。Naoya KiharaがEvent #17($428,923)とEvent #23($301,970)、Koji FujimotoがEvent #67($392,478)、Daisuke OgitaがEvent #72で$1,000,000です。4本のうち3本がミックスゲームの選手権でした。メインイベント(9,208エントリー・賞金総額$87,568,080)は参加者222人で日本が全体5位。ファイナルテーブルの9人に日本人は残っていません。10位以下の順位はWSOP公式もPokerNewsも未公開のため、ここでは断定しません。",
     },
     {
       q: "韓国・パラダイスシティの大会の参加費は？",
@@ -302,7 +302,8 @@ const ja: BoardStrings = {
      亚洲 扑克 赛事 · 澳门 德州扑克 比赛 · 德州扑克 比赛奖金 · 德州扑克 赛事 直播
    ★★ 「济州岛 扑克 赛事」가 잡힌 것이 결정적이다.
      본토 여권은 제주가 **영구 무비자 30일**이고, 우리는 제주 대회를 6개 들고 있다.
-     반대로 인천은 2026-07-01부터 단체무비자가 끝나 비자가 필요하다 —
+     반대로 인천(본토 전역)은 개인 여행이면 비자가 필요하다 — 단체무비자(지정 여행사·3인 이상·15일)는
+     원래 2026-06-30 종료 예정이었으나 12-31까지 연장됐다(2026-09-16 queue Q6-c 정정 · zh FAQ 「那仁川呢」 주석).
      옛 정보를 그대로 옮기면 "인천 무비자"라는 치명적 오답이 나온다.
    ★ 台湾/台北 검색이 많지만 본토 여권으로는 사실상 막혀 있다.
      이 검색을 하는 사람은 싱가포르·말레이시아 화교이거나 해외 거주 본토인이다.
@@ -364,7 +365,9 @@ const zh: BoardStrings = {
     },
     {
       q: "那仁川呢？和济州一样免签吗？",
-      a: "不一样，这里最容易出错。仁川过去是全国团体免签的入境口岸，但那项措施已于2026年6月30日到期——从2026年7月1日起，三人团体也需要C-3-2团体旅游签证，个人旅游则走C-3-9（单次停留30天，有效期3个月）。也就是说APT仁川、APPT韩国、WPT Seoul、GOP仁川这几场都需要提前办签证。另外到2026年12月31日之前，团体旅游签证的手续费是免收的。",
+      // 2026-09-16 queue Q6-c: 「团体免签已于6/30到期」는 틀렸다 — 한국 법무부가 «중국의 대한 무비자 기간과 동일»(=2026-12-31)로 연장
+      //   (여행신문 2026-06-29 법무부 답변 축어 · 서울신문 2026-09-15 「정부가 시행 기간을 오는 12월 31일까지 연장했다」). 되돌리지 마라.
+      a: "不一样，这里最容易出错。济州的免签个人也能用，仁川的个人游不行：个人游去仁川要办C-3-9签证（单次停留30天，有效期3个月）。经指定旅行社组团、3人以上的团体游免签（停留最多15天）原定2026年6月30日结束，韩国法务部已表示延长到2026年12月31日，与中国对韩免签的期限一致——但个人报名比赛不适用，所以APT仁川、APPT韩国、WPT Seoul、GOP仁川这几场一般都要提前办签证。另外，不走免签、另办团体旅游签证的话，到2026年12月31日之前手续费是免收的。",
     },
     {
       q: "台湾的比赛能去吗？",
@@ -372,7 +375,7 @@ const zh: BoardStrings = {
     },
     {
       q: "德州扑克最大的赛事是哪一个？",
-      a: "WSOP（世界扑克系列赛）。2026年是5月26日至8月5日在拉斯维加斯，共100条金手链，主赛事有9,208人次报名，奖池$85,634,400，决赛桌在8月3至5日由ESPN转播。亚洲这边规模最大的是APT（亚洲扑克巡回赛），2026年的仁川站保证奖金超过40亿韩元。",
+      a: "WSOP（世界扑克系列赛）。2026年是5月26日至8月5日在拉斯维加斯，共100条金手链，主赛事有9,208人次报名，奖池$87,568,080，决赛桌在8月3至5日由ESPN转播。亚洲这边规模最大的是APT（亚洲扑克巡回赛），2026年的仁川站保证奖金超过40亿韩元。",
     },
     {
       q: "比赛奖金要交税吗？",
@@ -391,8 +394,8 @@ const zh: BoardStrings = {
   localHeading: "出发前需要知道的",
   localBlocks: [
     {
-      title: "济州免签、仁川需签——这是2026年7月才变的",
-      body: "中国大陆护照到济州岛长期免签、停留30天；而全国团体免签在2026年6月30日到期，从7月1日起前往仁川、首尔等地都需要签证。旧攻略里「仁川免签」的说法现在是错的，而仁川恰好是APT、APPT、WPT Seoul的所在地。团体旅游签证的手续费到2026年12月31日为止是免收的。",
+      title: "济州个人也免签，仁川只有团体免签",
+      body: "中国大陆护照到济州岛长期免签、停留30天，个人和团体都行；到仁川、首尔等地，免签只适用于经指定旅行社组团的3人以上团体（停留最多15天）——这项措施原定2026年6月30日结束，已延长到2026年12月31日。个人去打APT、APPT、WPT Seoul（都在仁川）仍要提前办C-3-9签证，别把“团体免签”当成“仁川免签”。不走免签、另办团体旅游签证的话，手续费到2026年12月31日为止也是免收的。",
     },
     {
       title: "同样是中文读者，能去的地方不一样",
@@ -485,7 +488,7 @@ const zhHant: BoardStrings = {
     },
     {
       q: "德州撲克最大的賽事是哪一個？",
-      a: "WSOP（世界撲克大賽）。2026年是5月26日到8月5日在拉斯維加斯，共100條金手鍊，主賽事9,208人次報名、獎池$85,634,400，決賽桌8月3到5日由ESPN轉播。亞洲這邊規模最大的是APT，2026年仁川站保證獎金超過40億韓元。",
+      a: "WSOP（世界撲克大賽）。2026年是5月26日到8月5日在拉斯維加斯，共100條金手鍊，主賽事9,208人次報名、獎池$87,568,080，決賽桌8月3到5日由ESPN轉播。亞洲這邊規模最大的是APT，2026年仁川站保證獎金超過40億韓元。",
     },
     {
       q: "比賽獎金要繳稅嗎？",
@@ -600,7 +603,7 @@ const es: BoardStrings = {
     },
     {
       q: "¿Cuáles son los torneos de Las Vegas 2026?",
-      a: "Las World Series of Poker, del 26 de mayo al 5 de agosto: 100 brazaletes y un Main Event que reunió 9.208 entradas para una bolsa de premios de US$85.634.400, con la mesa final del 3 al 5 de agosto. Un detalle práctico que sorprende a mucha gente en la caja: los pagos con tarjeta llevan un 3% de comisión y están limitados a US$10.000 por transacción, así que el Main Event de US$10.000 no se puede pagar en un solo cargo.",
+      a: "Las World Series of Poker, del 26 de mayo al 5 de agosto: 100 brazaletes y un Main Event que reunió 9.208 entradas para una bolsa de premios de US$87.568.080, con la mesa final del 3 al 5 de agosto. Un detalle práctico que sorprende a mucha gente en la caja: los pagos con tarjeta llevan un 3% de comisión y están limitados a US$10.000 por transacción, así que el Main Event de US$10.000 no se puede pagar en un solo cargo.",
     },
     {
       q: "¿Necesito visado para los torneos en Europa?",
@@ -997,6 +1000,8 @@ const FIELD_JA: Record<string, string> = {
    ラッコ 실측에 「パラダイスシティ ポーカー 大会」90 · 「台湾 ポーカー 大会 2026」70 ·
    「マニラ ポーカー 大会 2026」50 이 잡혔다. 라틴 표기로 두면 이 검색을 통째로 놓친다. */
 const CITY_JA: Record<string, string> = {
+  // 2026-09-16 queue Q6-c: 오스트리아 CAPT·Pokermania 6개 도시(독일어 발음 기준 관용 표기)
+  Graz: "グラーツ", Innsbruck: "インスブルック", Baden: "バーデン", Seefeld: "ゼーフェルト", Bregenz: "ブレゲンツ", Velden: "フェルデン",
   "Aix-en-Provence": "エクス・アン・プロヴァンス", "Atlantic City": "アトランティックシティ",
   Austin: "オースティン", Barcelona: "バルセロナ", Bratislava: "ブラチスラバ", Budva: "ブドヴァ",
   "Buenos Aires": "ブエノスアイレス", Calgary: "カルガリー", "Castellón": "カステリョン",
@@ -1068,6 +1073,8 @@ const FIELD_ZH: Record<string, string> = {
 /* ★ 간체 자동완성에 「济州岛 扑克 赛事」「台北 德州扑克 比赛」가 잡혔다.
    도시명을 라틴으로 두면 이 검색을 통째로 놓친다. */
 const CITY_ZH: Record<string, string> = {
+  // 2026-09-16 queue Q6-c: 오스트리아 — 관용 표기가 확실한 도시만(Seefeld·Velden은 라틴 그대로 통과)
+  Graz: "格拉茨", Innsbruck: "因斯布鲁克", Baden: "巴登", Bregenz: "布雷根茨",
   "Aix-en-Provence": "艾克斯普罗旺斯", "Atlantic City": "大西洋城", Austin: "奥斯汀",
   Barcelona: "巴塞罗那", Bratislava: "布拉迪斯拉发", Budva: "布德瓦",
   "Buenos Aires": "布宜诺斯艾利斯", Calgary: "卡尔加里", "Castellón": "卡斯特利翁",
@@ -1107,7 +1114,7 @@ const SCHEMA_DESC_ZH: Record<string, string> = {
   "holdem-masters-7":
     "WPL赞助、WeLive主办、YAJASU协办。总奖金保证15亿韩元，仅凭邀请券参赛。",
   "wsop-2026":
-    "全球规模最大的扑克系列赛。5月26日至7月15日共100条金手链，主赛事9,208人次报名、奖池$85,634,400，决赛桌8月3至5日由ESPN转播。",
+    "全球规模最大的扑克系列赛。5月26日至7月15日共100条金手链，主赛事9,208人次报名、奖池$87,568,080，决赛桌8月3至5日由ESPN转播。",
   "kpc-king-july":
     "在济州岛LES A Casino举行的17天扑克节。系列赛保证20亿韩元，King Poker Cup主赛事保证11亿韩元。",
   "apt-incheon":
@@ -1165,6 +1172,8 @@ const FIELD_HANT: Record<string, string> = {
    悉尼/雪梨(Sydney) · 蒙特卡洛/蒙地卡羅 · 巴塞罗那/巴塞隆納 ·
    新奥尔良/紐奧良 · 谢菲尔德/雪菲爾 — 간체판을 번체 변환만 하면 대만 독자에게 어색해진다. */
 const CITY_HANT: Record<string, string> = {
+  // 2026-09-16 queue Q6-c: 오스트리아 — 관용 표기가 확실한 도시만(Seefeld·Velden은 라틴 그대로 통과)
+  Graz: "格拉茲", Innsbruck: "因斯布魯克", Baden: "巴登", Bregenz: "布雷根茲",
   "Aix-en-Provence": "艾克斯普羅旺斯", "Atlantic City": "大西洋城", Austin: "奧斯汀",
   Barcelona: "巴塞隆納", Bratislava: "布拉提斯拉瓦", Budva: "布德瓦",
   "Buenos Aires": "布宜諾斯艾利斯", Calgary: "卡加利", "Castellón": "卡斯特利翁",
@@ -1203,7 +1212,7 @@ const SCHEMA_DESC_HANT: Record<string, string> = {
   "holdem-masters-7":
     "WPL贊助、WeLive主辦、YAJASU協辦。總獎金保證15億韓元，僅憑邀請券參賽。",
   "wsop-2026":
-    "全球規模最大的撲克系列賽。5月26日至7月15日共100條金手鍊，主賽事9,208人次報名、獎池$85,634,400，決賽桌8月3至5日由ESPN轉播。",
+    "全球規模最大的撲克系列賽。5月26日至7月15日共100條金手鍊，主賽事9,208人次報名、獎池$87,568,080，決賽桌8月3至5日由ESPN轉播。",
   "kpc-king-july":
     "在濟州島LES A Casino舉行的17天撲克節。系列賽保證20億韓元，King Poker Cup主賽事保證11億韓元。",
   "apt-incheon":
@@ -1350,7 +1359,7 @@ const SCHEMA_DESC_ES: Record<string, string> = {
   "holdem-masters-7":
     "Patrocinado por WPL, organizado por WeLive con YAJASU. 1.500 millones de KRW garantizados; entrada solo por invitación.",
   "wsop-2026":
-    "La serie de poker más grande del mundo. 100 brazaletes del 26 de mayo al 15 de julio; el Main Event reunió 9.208 entradas para una bolsa de premios de US$85.634.400, con la mesa final del 3 al 5 de agosto por ESPN.",
+    "La serie de poker más grande del mundo. 100 brazaletes del 26 de mayo al 15 de julio; el Main Event reunió 9.208 entradas para una bolsa de premios de US$87.568.080, con la mesa final del 3 al 5 de agosto por ESPN.",
   "kpc-king-july":
     "Festival de 17 días en el LES A Casino de la isla de Jeju. 2.000 millones de KRW garantizados en la serie y 1.100 millones en el Main Event de la King Poker Cup.",
   "apt-incheon":
@@ -1465,9 +1474,11 @@ const PAREN_DE: Record<string, string> = {
 
 /**
  * de판 대회 설명. 수치는 원문 그대로 — §13은 언어 불변. 표기만 독일식.
- * ⚠ WSOP 2026 상금풀 액수는 **의도적으로 뺐다** — ESPN 집계($85,634,400)와
- *   공식 집계($87,568,080)가 갈린 이력이 있다(WORKLOG 2026-08-06).
- *   확정 전까지 독일어판에 옮겨 적지 않는다. 엔트리 수·브레이슬릿 수는 안전하다.
+ * ⚠ WSOP 2026 상금풀 액수는 **의도적으로 뺐다** — ESPN 집계(85,634,400달러)와
+ *   공식 집계(87,568,080달러)가 갈린 이력이 있다(WORKLOG 2026-08-06).
+ *   🔴 2026-09-16 queue Q6-c: 포스트는 08-06에 공식값으로 정정됐는데 **이 파일·tournaments.ts의 보드 문장 10자리는
+ *   ESPN값으로 남아 있었다** → 전부 공식값으로 맞췄다(출처 = WSOP 공식 결과 Event #82 · 포스트 출처란 08-06 확인).
+ *   ESPN값으로 되돌리지 마라. 독일어판은 여전히 액수 없이 둔다(엔트리 수·브레이슬릿 수는 안전하다).
  */
 const SCHEMA_DESC_DE: Record<string, string> = {
   "holdem-masters-7":
@@ -1517,7 +1528,7 @@ const NOTE_EN: Record<string, string> = {
   // 2026-09-11 회차 Q1: 오스트리아 6행이 NOTE_* 어디에도 없어 비KO 보드가 바이인만 맨몸으로 보여주고 있었다
   //   (`localizedNote` 가 undefined 면 배지를 아예 안 그린다 — 한국어 폴백 금지). 특히 범위형 바이인은
   //   하한이 «새틀라이트 가격»이라 해설 없이 보면 「그 돈이면 이 대회를 칠 수 있다」로 읽힌다.
-  //   🔴 ja·zh·zh-hant·es·de 는 아직 비어 있다 — 진행 파일 §5 참조.
+  //   ✅ 2026-09-16 queue Q6-c: ja·zh·zh-hant·es·de 에도 채웠다.
   "capt-graz": "Main Event €500+50 (Day 1A–1C, best stack forward) · CAPT Opening €15,000 GTD · satellites from €50+10",
   "capt-seefeld-oct": "Main Event €500+50 · the pricier NLH Unicorn Seefeld (€1,000+100) runs Oct 7–8 and is a side event, not the Main",
   "capt-bregenz-oct": "Main Event €1,100 · Lake Constance (Bodensee) Hold'em Trophy €30,000 GTD",
@@ -1608,6 +1619,13 @@ const NOTE_EN: Record<string, string> = {
 };
 
 const NOTE_JA: Record<string, string> = {
+  // 2026-09-16 queue Q6-c(Q1-10 이행): 오스트리아 6행 — NOTE_EN(Q1) 재저작. 수치·통화·날짜는 EN 불변.
+  "capt-graz": "メインイベント€500+50（Day 1A〜1C、複数通過時はベストスタック持ち越し）· CAPT Opening €15,000 GTD · サテライトは€50+10から",
+  "capt-seefeld-oct": "メインイベント€500+50 · より高額なNLH Unicorn Seefeld（€1,000+100、10/7〜8）はサイドイベントで、メインではない",
+  "capt-bregenz-oct": "メインイベント€1,100 · Lake Constance Hold'em Trophy（ボーデン湖）€30,000 GTD",
+  "capt-innsbruck-nov": "メインイベント€1,000+100 — インスブルック史上初の€1,100メインイベント",
+  "capt-million-baden": "シーズン最終戦 · メインイベント€500+50／€1,000,000 GTD",
+  "pokermania-xl-velden": "メインイベント€200+30（複数通過時はベストスタック持ち越し）· Day 1A〜1Eはフェルデン、9/27にはCasino GrazでもDay 1を開催 · €50,000 GTD · 最低入賞額€500 · メガサテライトは€30+6から",
   "kpc-jeju": "KPC x LPTシリーズとKing Poker Seriesの合同開催",
   "aspt-korea": "90以上のトーナメント · メインイベントDay 1Aのバイインは150万ウォン",
   "apt-jeju-classic": "韓国開催の国際大会として過去最大 — 1,718エントリーで従来の1,693を更新",
@@ -1684,6 +1702,13 @@ const NOTE_JA: Record<string, string> = {
 };
 
 const NOTE_ZH: Record<string, string> = {
+  // 2026-09-16 queue Q6-c(Q1-10 이행): 오스트리아 6행 — NOTE_EN(Q1) 재저작. 수치·통화·날짜는 EN 불변.
+  "capt-graz": "主赛事€500+50（Day 1A〜1C，多次晋级取最大筹码）· CAPT Opening €15,000 GTD · 卫星赛€50+10起",
+  "capt-seefeld-oct": "主赛事€500+50 · 更贵的NLH Unicorn Seefeld（€1,000+100，10月7〜8日）是副赛，不是主赛事",
+  "capt-bregenz-oct": "主赛事€1,100 · 博登湖（Lake Constance）Hold'em Trophy €30,000 GTD",
+  "capt-innsbruck-nov": "主赛事€1,000+100——因斯布鲁克首次举办€1,100级别的主赛事",
+  "capt-million-baden": "赛季收官站 · 主赛事€500+50／€1,000,000 GTD",
+  "pokermania-xl-velden": "主赛事€200+30（多次晋级取最大筹码）· Day 1A〜1E在Velden，9月27日还在Casino Graz另设一个首日 · €50,000 GTD · 最低奖金€500 · 大型卫星赛€30+6起",
   "kpc-jeju": "KPC x LPT系列赛与King Poker系列赛联合举办",
   "aspt-korea": "90多场锦标赛 · 主赛事Day 1A买入150万韩元",
   "apt-jeju-classic": "韩国举办的国际赛事中规模最大——1,718人次，刷新此前的1,693",
@@ -1758,6 +1783,13 @@ const NOTE_ZH: Record<string, string> = {
 };
 
 const NOTE_HANT: Record<string, string> = {
+  // 2026-09-16 queue Q6-c(Q1-10 이행): 오스트리아 6행 — NOTE_EN(Q1) 재저작. 수치·통화·날짜는 EN 불변.
+  "capt-graz": "主賽事€500+50（Day 1A〜1C，多次晉級取最大籌碼）· CAPT Opening €15,000 GTD · 衛星賽€50+10起",
+  "capt-seefeld-oct": "主賽事€500+50 · 較貴的NLH Unicorn Seefeld（€1,000+100，10月7〜8日）是附屬賽，不是主賽事",
+  "capt-bregenz-oct": "主賽事€1,100 · 博登湖（Lake Constance）Hold'em Trophy €30,000 GTD",
+  "capt-innsbruck-nov": "主賽事€1,000+100——因斯布魯克首次舉辦€1,100級別的主賽事",
+  "capt-million-baden": "賽季收官站 · 主賽事€500+50／€1,000,000 GTD",
+  "pokermania-xl-velden": "主賽事€200+30（多次晉級取最大籌碼）· Day 1A〜1E在Velden，9月27日還在Casino Graz另設一個首日 · €50,000 GTD · 最小獎金€500 · 大型衛星賽€30+6起",
   "kpc-jeju": "KPC x LPT系列賽與King Poker系列賽合辦",
   "aspt-korea": "90多場錦標賽 · 主賽事Day 1A買入150萬韓元",
   "apt-jeju-classic": "韓國舉辦的國際賽事中規模最大——1,718人次，刷新先前的1,693",
@@ -1842,6 +1874,13 @@ const NOTE_HANT: Record<string, string> = {
 /* ★ es는 숫자 표기가 영어와 정반대이고(천 단위 마침표), 멕시코에서 `$`는 페소다.
    USD는 US$로, 큰 금액은 millones로 적는다. 수치 자체는 §13대로 불변. */
 const NOTE_ES: Record<string, string> = {
+  // 2026-09-16 queue Q6-c(Q1-10 이행): 오스트리아 6행 — NOTE_EN(Q1) 재저작. 수치·통화·날짜는 EN 불변.
+  "capt-graz": "Main Event €500+50 (Día 1A–1C, pasa el mejor stack) · CAPT Opening €15.000 GTD · satélites desde €50+10",
+  "capt-seefeld-oct": "Main Event €500+50 · el NLH Unicorn Seefeld, más caro (€1.000+100), se juega del 7 al 8 de oct y es un evento paralelo, no el Main",
+  "capt-bregenz-oct": "Main Event €1.100 · Lake Constance (Bodensee) Hold'em Trophy €30.000 GTD",
+  "capt-innsbruck-nov": "Main Event €1.000+100: el primer Main Event de €1.100 en la historia de Innsbruck",
+  "capt-million-baden": "Cierre de temporada · Main Event €500+50 / €1.000.000 GTD",
+  "pokermania-xl-velden": "Main Event €200+30, pasa el mejor stack · Días 1A–1E en Velden más un día inicial el 27 de sep en el Casino Graz · €50.000 GTD · premio mínimo €500 · Mega Satélite desde €30+6",
   "kpc-jeju": "La serie KPC x LPT y la King Poker Series se celebran juntas",
   "aspt-korea": "Más de 90 torneos · buy-in del Día 1A del Main Event: 1.500.000 KRW",
   "apt-jeju-classic": "El torneo internacional más grande celebrado en Corea: 1.718 entradas, por encima de las 1.693 anteriores",
@@ -1916,11 +1955,19 @@ const NOTE_ES: Record<string, string> = {
 };
 
 /**
- * de 배지 — 비워 둔다. `localizedNote`가 undefined면 보드가 배지를 아예 안 그린다.
+ * de 배지 — 기본은 비워 둔다(2026-09-16부터 오스트리아 6행만 있다). `localizedNote`가 undefined면 보드가 배지를 아예 안 그린다.
  * ⚠ 한국어·영어로 폴백시키지 말 것(독일어 페이지에 다른 언어가 섞인다).
  *   독일 독자에게 의미 있는 배지가 생기면 그때 채운다.
  */
-const NOTE_DE: Record<string, string> = {};
+const NOTE_DE: Record<string, string> = {
+  // 2026-09-16 queue Q6-c(Q1-10 이행): 오스트리아 대회가 바로 «독일어 독자에게 의미 있는 배지»다(DACH). 6행만 채운다.
+  "capt-graz": "Main Event €500+50 (Day 1A–1C, der größte Stack kommt weiter) · CAPT Opening €15.000 GTD · Satellites ab €50+10",
+  "capt-seefeld-oct": "Main Event €500+50 · das teurere NLH Unicorn Seefeld (€1.000+100) läuft am 7.–8. Oktober und ist ein Side Event, nicht das Main",
+  "capt-bregenz-oct": "Main Event €1.100 · Bodensee Hold'em Trophy €30.000 GTD",
+  "capt-innsbruck-nov": "Main Event €1.000+100 – das erste €1.100-Main-Event in Innsbruck",
+  "capt-million-baden": "Saisonfinale · Main Event €500+50 / €1.000.000 GTD",
+  "pokermania-xl-velden": "Main Event €200+30, der größte Stack kommt weiter · Day 1A–1E in Velden plus ein Starttag am 27. September im Casino Graz · €50.000 GTD · Min-Cash €500 · Mega Satellite ab €30+6",
+};
 
 const NOTES: Record<BoardLocale, Record<string, string>> = {
   en: NOTE_EN, ja: NOTE_JA, zh: NOTE_ZH, "zh-hant": NOTE_HANT, es: NOTE_ES, de: NOTE_DE,
@@ -1988,7 +2035,7 @@ const SCHEMA_DESC_EN: Record<string, string> = {
   "holdem-masters-7":
     "Sponsored by WPL, run by WeLive with YAJASU. ₩1.5bn guaranteed; entry by invitation ticket only.",
   "wsop-2026":
-    "The largest poker series in the world. 100 bracelets from May 26 to July 15; the Main Event drew 9,208 entries for an $85,634,400 prize pool, with the final table on August 3–5 on ESPN.",
+    "The largest poker series in the world. 100 bracelets from May 26 to July 15; the Main Event drew 9,208 entries for an $87,568,080 prize pool, with the final table on August 3–5 on ESPN.",
   "kpc-king-july":
     "A 17-day festival at LES A Casino on Jeju Island. ₩2bn guaranteed across the series, with ₩1.1bn GTD on the King Poker Cup Main Event.",
   "apt-incheon":
@@ -2013,7 +2060,7 @@ const SCHEMA_DESC_JA: Record<string, string> = {
   "holdem-masters-7":
     "WPL後援・WeLive主管・YAJASU協力。賞金総額15億ウォン保証、招待券のみで参加できるシリーズ。",
   "wsop-2026":
-    "世界最大のポーカーシリーズ。5月26日〜7月15日にブレスレット100個。メインイベントは9,208エントリー・賞金総額$85,634,400で、ファイナルテーブルは8月3〜5日にESPNが中継。",
+    "世界最大のポーカーシリーズ。5月26日〜7月15日にブレスレット100個。メインイベントは9,208エントリー・賞金総額$87,568,080で、ファイナルテーブルは8月3〜5日にESPNが中継。",
   "kpc-king-july":
     "済州島のLES A Casinoで開かれる17日間のフェスティバル。シリーズ全体で20億ウォン保証、King Poker Cupのメインイベントは11億ウォンGTD。",
   "apt-incheon":

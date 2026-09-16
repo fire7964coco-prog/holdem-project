@@ -23,7 +23,7 @@
 | **Q5-b** | **EN-먼저 묶음 II — (후반)** | `en-first-queue` **§1 ㉒~㊸**(㉟ 우선 · ㊲는 검수장 판정 산물이라 재론 절차 = MB 초안) | **Opus 전 구간 · 1세션** — 🔴 재료 실측 후 재조정(§5-A-3): 채택 14건이 «짧은 한정어·1차 출처 표 1개·정본 이식»이라 집필 구간이 없었다(Q4-a·Q5-a와 같은 사유) | ✅ | (아래 §1-Q5-b) | 렌즈 4종 지적 **50**(raw 75 · 렌즈 간 중복 25 제거) + 2차 교열 **13** = **63** · 반영 **54** · 기각 **5** · 등재 **4** | 09-13 |
 | **Q6-a** | **표기·용어 통일 + 내부링크 «개수» 축 정밀도** | 브리프 `docs/harden-brief/queue-Q6-a-로케일표기.md` · 핸드오프 「▶ 그밖에 열 수 있는 것」 zh 표기 4갈래 · Q2b-4·6 · pt `holdem-strategy:183` · `check:structure` linkn 94편 | **Opus 전 구간 · 1세션**(판정·치환) | ✅ | `988f1167` | 렌즈 5종 + 2차 교열 = **지적 70 · 반영 41 · 기각 4 · 등재 19** | 09-14 |
 | **Q6-b** | **인용부호·괄호 스윕 + 남은 헤드 판정 4건** | 브리프 `docs/harden-brief/queue-Q6-b-인용부호.md`가 본체. 🔴 **재료 6건 중 3건은 전제부터 뒤집혔다**(§1-Q6-b) | **Opus 전 구간 · 1세션**(치환·판정 · 새 문장 없음) | ✅ | (아래 §1-Q6-b) | 렌즈 5종 지적 **32** + 2차 교열 **4** · 반영 **13** · 기각·유지 **12** · 등재 **11** | 09-16 |
-| **Q6-c** | **ja 잔여 묶음 + `tournaments-i18n` NOTE_* + echo 19** | `harden-ja-진행` §2-N 전건(개수 열거 결손 5 · positions L75 존 매핑 · straddle L76 · probability L57 · apt AREX 1차 출처 재실측 · glossary stripe L31 · outs 화살표) · 🆕 **Q1-10 NOTE_JA·ZH·HANT·ES·DE 오스트리아 6행**(로케일별 재저작) · `check:answer-echo` 🔴 echo **19자리**(값 표현 면제 5 = JUDGED 등재 · 나머지는 «지우되 남은 문단 재작성») · `check:mirror-pair` 갈림 28편 전건 판정 | **Opus + 집필 구간**(echo 재작성·NOTE 재저작은 새 문장이다) | ⏳ | | | |
+| **Q6-c** | **ja 잔여 묶음 + `tournaments-i18n` NOTE_* + echo 19** | `harden-ja-진행` §2-N 전건(개수 열거 결손 5 · positions L75 존 매핑 · straddle L76 · probability L57 · apt AREX 1차 출처 재실측 · glossary stripe L31 · outs 화살표) · 🆕 **Q1-10 NOTE_JA·ZH·HANT·ES·DE 오스트리아 6행**(로케일별 재저작) · `check:answer-echo` 🔴 echo **19자리**(값 표현 면제 5 = JUDGED 등재 · 나머지는 «지우되 남은 문단 재작성») · `check:mirror-pair` 갈림 28편 전건 판정 | **Opus 전 구간 · 1세션** — 집필 구간이 있었으나 사장님 「리셋됨 이어서작업해」 → 프로토콜 §2 «그냥 계속해» 조항으로 B도 Opus | ✅ | (아래 §1-Q6-c) | 렌즈 4종 지적 **50** + 2차 교열 **9** · 반영 **41+9** · 기각 **1** · 기록 **4** · 이관 **3** · 중복 **1** | 09-16 |
 | **Q7-a** | **게이트 신설 I — 우편함·대회 수치·스탬프** | 핸드오프 「렌더·게이트·코퍼스」: ① `mailbox/out-본체.md` 검사(MB 행 수 = 고유 ID 수 · 헤더 1 · 아카이브 아래 MB 0 · 파이프 5~7) ② `lib/tournaments.ts`↔`tournaments-i18n.ts` **숫자 토큰 대조** ③ 🆕 `check:stamp`(Q3 재현 셸을 게이트로 · 창 09-08 이후 · EN 문턱 · 양방향) ④ 「따옴표 빠진 썸네일 링크」 검사 ⑤ `scan-mobile-fold.mjs` 첫 인자 버그 · 🆕 **Q1-7** ⑥ PDF `.page` 치수 ↔ `@page size` 불일치 검사(de가 6mm 잘려 있었다 · PDF는 어떤 게이트도 안 본다) ⑦ `/hand-chart` 「UTG 약 12%」 = 핸드 타입 비율(21/169) ↔ 블로그 13% = 콤보 비율 — 도구 라벨에 기준 병기 · 🆕 **Q2b-5** ⑧ `lib/render-markdown.ts:200` `height="630"` ↔ 실제 675(CLS 예약 높이 오기) | **Opus · 1세션** · 게이트마다 `--selftest` + 첫 실행 전건 원문 판정(memory `gate-tuning-loop-is-the-work`) | ✅ | (아래 §1-Q7-a) | 렌즈 4종 = 지적 60 · 반영 41 · 기각 3(오탐) · 기록 16 | 09-12 |
 | **Q7-b** | **게이트 신설 II — 직답 포인터·개수** | `check:answer-echo` 포인터·개수 검사(1차 신호 = «H2 개수어 N ↔ 블록 열거 수» · 브리지 정의 «마지막 한 문장 + H2 약속 항목 전부» · 명제 단위 중복 신호 · 🔴 첫 주사 42히트 중 29 오탐 → 셀프테스트 먼저) · 🆕 **ja §5-K 5 «셈의 단위»**(`cjkLen`이 표의문자만 세서 카타카나 18자 완전 축어가 🔴 0 — 카타카나·라틴·숫자 0.5자 또는 «원문 18자+문장 경계 무시» 신호 추가 · 실례 `betting-actions` 「ミス2 — …」) · 개수 신호 2차(블록 자체 선언 N — «H2에 개수어 없는» 결손 3자리) · `audit:hard --locale=ja` 형제 표 행 키 불일치 2건 | **Opus · 1세션** — 🔴 전 구간 Opus(판정·코드 회차 · 새 문장 0) | ✅ | `33d4221d` | 렌즈 4종 지적 **41** + 2차 교열 · 반영 **31** · 기각 **3** · 기록 **7** | 09-13 |
 | **Q8-a** | **로케일 용어·문체 분열 소급 — pt** | 핸드오프 「로케일 용어·문체 분열」 pt 행 전부(vazamento↔leak · dar raise↔aumentar · 홀카드 3종 · `masterUpdated` 부재 2편 · shc AJo 낡은 판 6로케일 · strategy 허브 표 목적지 · tvc 표 위치 = EN 패리티) | **Opus 전 구간 · 1세션**(번역 QA = Opus · 치환은 문장 단위 · 파일 치환 금지) | ⏳ | | | |
@@ -568,6 +568,23 @@ tiebreak L55·L263·L277 ↔ EN L51·L175·L236·L250 · marathon L281 ↔ EN L2
 
 **게이트** — `audit:hard` zh·zh-hant·ja **🔴 0**(🟠 = 선재 C2 형제 표 zh 1 · zh-hant 1) · `check:hygiene` **🔴 0**(셀프테스트 **25/25**) · `check:answer-echo` **19/47/13 = 선재 그대로**(이 회차 0 · 뒤집힘 없음) · `check:structure` 🔴 0 · 링크 개수 🟠 0 · `check:drift` zh **✅ 56/56** · `check:mirror-pair` 갈림 **28 = 선재** · `cjk`·`hangul`·`seo-sync`·`meta`·`faq-schema`·`directives`·`number-format(zh)` **0** · `npm run build` ✅ **70 + 577**.
 
+### §1-Q6-c. 회차 Q6-c 산출 — ja 잔여 · NOTE_* 오스트리아 · echo 19 · 거울쌍 28편 (2026-09-16)
+
+**한 일** — 브리프 = `docs/harden-brief/queue-Q6-c-잔여.md`(판정 전문). 🔴 **글 25편(ja 10 · zh 7 · zh-hant 5 · ko 3) + 대회 데이터 2 + 게이트 1 + 정본 문서 9 · 배포가 걸린 회차다.**
+
+| 묶음 | 결과 |
+|---|---|
+| **echo 19** | 🔴 **19 → 0**. 최종 = **값 표현 면제 3**(JUDGED: ja apt 공항·시간 · zh betting-actions Rule 100.b 상한 · ko broadway 68.4%) + **재작성 16**. A 구간은 면제 6으로 판정했으나 렌즈 4가 3자리(ja EPT · zh 마라톤 · ko 펍)를 «값을 감싼 산문»으로 뒤집었다 |
+| **게이트** | `check:answer-echo` — 등재 판정을 **겹침 하나 단위 · 완전 일치**로(셀프테스트 33 → **37**). 🔴 첫 구현은 «블록 대표에 판정 · 포함 일치»라 **같은 블록의 산문 겹침을 가리고 짧은 hit이 긴 산문까지 닫았다**(렌즈 4 탐침 재현) · 셀프테스트 첫 탐침은 그 버그를 못 잡았다(2차 교열 변이 시험) |
+| **ja §2-N** | N1·N2·N3·N5·N6·N7·N8·N10 **반영** · N4(kicker ハイカード) = **EN 동형 → EN-먼저** · N9(AREX) = **재실측 불가**(공식 운임 페이지 HTTP 500 · §2 유지) · N11(outs 화살표) = **유지로 닫음** |
+| **NOTE_* 오스트리아** | ja·zh·zh-hant·es·**de** 6행씩 재저작(Q1-10 종결) + CITY_JA 6 · CITY_ZH/HANT 4(Seefeld·Velden은 관용 표기 미확정이라 라틴) |
+| **거울쌍 28편** | 토큰 ~92 전건 판정 = A 표기차 12 · D 현지 추가 41 · B 3 · C 1 · E 4 → **고침 4**(zh-hant ept €7,800→€7,300 · zh kicker 예시 교체 · zh shc 순위문 · zh wsop 人次) · **기각 1**(zh VPIP — 되돌리지 마라) · **EN-먼저 1**(AK vs 포켓페어 · zh-hant §5-17 미처리) · 결함 아님 3(zh probability FAQ 세트 · zh split-pot 블록 이동 · zh-hant 마라톤 카드 큐레이션) |
+| 🆕 **곁에서 찾은 F유형 2** | ① **중국 본토 단체 무비자 «6/30 만료» = 틀림** — 12-31까지 연장(여행신문 06-29 법무부 답변 · 서울신문 09-15 축어 · 체류 15일) → zh 포스트 1 · `tournaments-i18n` 2 + 머리 주석 · **정본 문서 9**(translation-terms 6 · es-latam · market-profile/zh 3자리) ② **WSOP 2026 상금풀 보드 문장 10자리가 ESPN값 $85,634,400** — 포스트는 08-06에 공식값 $87,568,080으로 고쳤는데 `lib/tournaments.ts` 1 · `tournaments-i18n` 9가 남아 있었다 |
+| **§13** | zh kicker 새 예시(8-8-A-K-J vs 8-8-A-K-10 · 셋째 킥커) · zh-hant 3bet 15～16.5bb · ept 합계 · ja position-play 수치 · ja probability 10행 — 레인 + 렌즈 1·3·4 + 2차 교열 독립 일치 |
+| **게이트** | audit:hard 손댄 글 🔴 0(locale 전체 run의 🟠 1은 zh·zh-hant **기존** C2 표 쌍 — 이번에 안 만진 game-order↔flush-vs-straight) · answer-echo 🔴 0 · 🟠 47 → **46** · cjk·seo-sync·hangul·hygiene 0 · drift ja/zh/zh-hant 0 · numfmt 0 · tournament-numbers 값 0(설명문 6 = 기존 holdem-masters-8) · structure 핵심 0 · build ✅ 70 + intl 577 |
+
+🔴 **스탬프**: 내용이 바뀐 글만 `updated` 09-16(25편) · `masterUpdated` 무변경(EN 델타 대조 회차가 아니다).
+
 ## 2. 미결 (해결될 때까지 유지)
 
 - ✅ ~~`lib/render-markdown.ts:200`이 모든 이미지에 `width="1200" height="630"`~~ → **Q7-a에서 닫았다.** 파일별 실제 치수표
@@ -604,7 +621,7 @@ tiebreak L55·L263·L277 ↔ EN L51·L175·L236·L250 · marathon L281 ↔ EN L2
   새 그림 2장만 정수로 갔다(§1-Q2-c). → 판정은 **Q7-a 게이트 후보**(그림 안 문자열은 어떤 게이트도 안 본다)로.
 
 
-- 🆕 🔴 **직답 블록 «축어 되풀이» 19자리 / 16편** — `check:answer-echo`가 **원문 길이 축 + 머리말 절 + 극대 겹침 전수**를 갖자 드러난 **선재 부채**다(Q7-b · 이 회차가 만든 것 0).
+- ✅ ~~**직답 블록 «축어 되풀이» 19자리 / 16편**~~ → **Q6-c에서 0으로 닫았다**(면제 3 JUDGED + 재작성 16 · §1-Q6-c). 아래는 경위 기록 — `check:answer-echo`가 **원문 길이 축 + 머리말 절 + 극대 겹침 전수**를 갖자 드러난 **선재 부채**다(Q7-b · 이 회차가 만든 것 0).
   🔴 **고치는 쪽은 대개 «블록»이다**(본문에만 도출 규칙이 있는 자리가 있다 — zh-hant `3bet` 실례). 처방은 «지우기»가 아니라
   프로토콜 §4 「지우되 **남은 문단이 자기완결하도록 다시 쓴다**」(헤드리스 단락 방지) → **집필 구간이 있는 회차 몫**.
   - **H2 절 안 9**: `ja/holdem-blind-meaning` · `ja/holdem-drawing-odds` · `zh/texas-holdem-rules-for-beginners` **2** ·
@@ -633,6 +650,9 @@ tiebreak L55·L263·L277 ↔ EN L51·L175·L236·L250 · marathon L281 ↔ EN L2
   🔴 pointer 후보의 **등급이 같지 않다**(렌즈 3 판정): **결손 확정 2** = `zh/holdem-game-order`(「10 种牌型」인데 족보 이름 0개) · `zh/holdem-fish`(VPIP·PFR 수치 0개) ·
   **결손 아님 1** = `zh-hant/wpt-australia-2026-guide`(eVisitor·ETA·Visitor Visa 600 **세 경로를 다 대고** 처리시간·행동지침까지 준다).
   🪶 **미판정 248은 «못 센 자리»다** — 구분자를 근거에서 뺀 대가이고, 그게 정직한 상태다(빼기 전에는 200건이 «충족»으로 조용히 통과했다).
+- 🟠 **ja `apt-incheon` AREX `₩4,750`·`約60分`(T1→弘大 각역정차) 1차 출처 미확인** — Q6-c가 재실측을 시도했으나 **AREX 공식 운임 페이지가 HTTP 500**(`arex.or.kr/content.do?menuNo=MN201503300000000008` · 역 정보 페이지도 500 · WebFetch 동일 · 2026-09-16). EN L239·L246·L390 동형. 수치 무변경.
+- 🟠 **`check:mirror-pair` 갈림 28편은 «판정 완료 · 게이트 미등재»다**(Q6-c) — 게이트는 집합 대조라 D(현지 추가) 41토큰이 매 실행 다시 뜬다. 판정 전문 = 브리프 `queue-Q6-c-잔여.md` §3. 게이트에 slug·토큰 단위 ALLOW를 넣을지는 다음 게이트 회차 몫.
+- 🟠 **zh·zh-hant `audit:hard` C2 🟠 1씩(기존)** — `holdem-game-order` 족보표 ↔ `holdem-flush-vs-straight` 족보표 행 키 불일치(「1」 vs 「第7名」)로 자동 대조 불가 → 육안 대조 필요. Q6-c는 두 파일을 안 만졌다.
 - 🆕 🟠 **게이트가 «원리상» 못 보는 자리 목록**(2026-09-16 Q6-b 적대 렌즈 · 다음 회차가 «0건»을 검증으로 읽지 않도록):
   `check:mirror-pair`는 **구두점·괄호 폭 갈림을 안 본다**(언어 불변 항목만) · `check:cjk`는 `.tsx` JSX 텍스트 런 전용이라 **포스트 `content`는 대상 밖** ·
   `check:answer-echo`·`check:structure`는 **라벨 문자열 기반**이라 이형 라벨(`一句話總結`·`Quick Answer`)을 조용히 놓친다 ·
@@ -808,12 +828,21 @@ tiebreak L55·L263·L277 ↔ EN L51·L175·L236·L250 · marathon L281 ↔ EN L2
   - **메타에는 «정본 기호 혼입»만 먹인다** — 필드 구분자가 직선이라 «산문 직선» 규칙은 원리상 못 먹인다.
   - 🪶 **ja `Qualify for as Little as $0.50` 1자리는 잠정 면제**다(ja만 직선 · zh·zh-hant는 자기 인용부호) — **ja 레인 판정 대기**.
 
+- 🆕 **Q6-c — 다시 열지 마라**:
+  - 중국 본토 **단체 무비자는 2026-12-31까지 연장**(지정 여행사 · 3인 이상 · 체류 15일 · 개인은 C-3-9 필요). «6/30 만료»로 되돌리지 마라 — 정본 문서 9개도 같이 고쳤다. 12-31 이후는 재실측(시한 항목 → §5).
+  - `/tournaments` 보드의 WSOP 2026 상금풀 = **$87,568,080(공식)**. ESPN값은 출처 설명 문장에만 남는다.
+  - echo 등재 3행은 **값 표현만**이다 — 산문을 감싼 겹침(ja EPT 「市内で別路線を経由して」 · zh 마라톤 「截止日按渠道而定」 · ko 펍 「합법요건(…)을확인한」)을 다시 등재하지 마라.
+  - `check:answer-echo` 등재 판정은 **hit 루프 안 · 완전 일치**다. 블록 대표(picked)에 걸거나 «포함»으로 바꾸면 산문 겹침이 조용히 사라진다(셀프테스트 J2·J3가 막는다).
+  - zh `holdem-strategy` VPIP 15–22% · zh-hant shc 「AK 約 47%」 문장은 **이 회차가 일부러 안 고쳤다**(전자 = zh 회차 4 «되돌리지 마라» · 후자 = EN-먼저 §5).
+  - ja `holdem-straddle` 「ハウスルール」 마무리 · ja `holdem-positions` 블록의 9석 나열 — 유지.
+  - zh·zh-hant CITY 사전의 Seefeld·Velden은 **일부러 라틴**이다(관용 음차 미확정 · 추측 금지).
+
 ## 4. 거울쌍 갈림
 
 로케일 레인이 아니라 **양쪽을 직접 고친다**. Q6-a 판정:
 - 🆕 **«play the board» 정본이 zh ↔ zh-hant 반대**다(`打公共牌` ↔ `打公牌`) — 기반 용어가 반대라 **의도된 갈림**이다(§3).
 - 🆕 **gutshot 구용어 병기가 zh 有(`开口顺`) / zh-hant 無(`中洞`)** — SERP 실측으로 갈랐다(§3). 렌즈 4가 «비대칭 = 판정 미확정 신호»로 물었고, **판정해서 닫았다.**
-- 🔴 `check:mirror-pair` 갈림 **28편은 아직 전건 판정 안 했다** → **Q6-c**(회차 표).
+- ✅ ~~`check:mirror-pair` 갈림 **28편은 아직 전건 판정 안 했다**~~ → **Q6-c가 전건 판정했다**(브리프 §3 · 고침 4 · 기각 1 · EN-먼저 1 · 나머지 A/D).
 
 - 🆕 **Q6-b: zh ↔ zh-hant 괄호 폭 갈림 2자리를 «양쪽 다 전각»으로 맞췄다**(zh-hant 쪽을 고쳤다):
   `holdem-short-stack` H2 `M值(哈靈頓分區)` → `（哈靈頓分區）`(zh `M值（Harrington 分区）`) · `holdem-continuation-bet` 표 셀 `**單色(同花面)**` → `（同花面）`(zh `**单色（同花面）**`).
@@ -862,6 +891,23 @@ tiebreak L55·L263·L277 ↔ EN L51·L175·L236·L250 · marathon L281 ↔ EN L2
   **PDF는 어떤 게이트도 안 보는 자리**다) ② `/hand-chart` 도구의 「UTG 약 12%」는 **핸드 «타입» 비율**(21/169)인데
   블로그의 13%는 **콤보 비율**이다. 같은 화면에 두 기준이 섞여 있다 — 도구 라벨은 이번 회차 범위 밖이라 안 건드렸다.
 - ✅ (신설 시점 · 헤드 자체 처리) `en-first-queue` §3 첫 불릿 「EN 56편 `updated` 전수 대조」 = 종결 표시(실측 근거 위 Q3 행).
+
+### Q6-c (2026-09-16 · ja 10 + zh 7 + zh-hant 5 + ko 3 + 대회 데이터 2 + 게이트 1 + 정본 문서 9 — **배포가 걸린 회차다**)
+
+- 🟠 **Q6c-1 MB 초안**(EN 파일 변경 **0** · 그래도 로케일·보드 사실값이 바뀌었으니 앵커 통지):
+  > queue 회차 Q6-c — **EN 파일 변경 0**. 바뀐 것 = ja 10 · zh 7 · zh-hant 5 · ko 3편 + `lib/tournaments.ts`·`lib/tournaments-i18n.ts`.
+  > ① **중국 본토 단체 무비자 «2026-06-30 만료» → «2026-12-31까지 연장»**(zh `apt-incheon-2026-guide` 비자표 · `/zh/tournaments` FAQ·현지 블록) — 앵커 「已于 2026 年 6 月 30 日到期」는 0이어야 정상.
+  > ② **`/tournaments` 보드 WSOP 2026 상금풀 $85,634,400 → $87,568,080**(ko·en·ja·zh·zh-hant·es 설명문 · JSON-LD description) — 앵커 「85,634,400」은 포스트 출처란의 ESPN 언급에만 남는다.
+  > ③ zh-hant `ept-barcelona-2026-guide` 「€7,800」 → 「€7,300」 · zh `holdem-kicker` «같은 킥커» 예시 교체(보드 8♠8♦A♣5♥2♣ · K♦J♠ vs K♣10♦) · zh `holdem-starting-hands-chart` FAQ 순위문(AK>中对子) 삭제 → 상위 3개만.
+  > ④ 비KO 보드에 오스트리아 6개 대회 note 신설(ja·zh·zh-hant·es·de).
+  > 🔴 되돌리지 마라: ①② · zh VPIP 15–22%.
+- 🟠 **Q6c-2 `locale-intentional-diffs` 등재 요청 2건**: ① zh `holdem-probability` FAQ에 EN 「How rare is a flush, a straight, or a full house?」가 없다 — 값은 표·tldr에 있고 FAQ 세트가 재구성됐다(ja·pt 09-09 행과 같은 유형 · 결함 아님) ② zh·zh-hant CITY 사전의 Seefeld·Velden 라틴 유지(관용 음차 미확정).
+- 🟠 **Q6c-3 EN-먼저 등재 요청 4건**(`docs/en-first-queue.md`): ① **AK vs 작은 포켓페어 명제** — EN `holdem-starting-hands-chart` L65 「coin flip against every smaller pocket pair」가 실측과 어긋난다(AKo vs 22 46.9 · 99 44.3 · JJ 42.7 · QQ 42.9 · `harden-zh-hant-진행` §5-17 «4자리 일괄 판정 요청»이 **미처리로 떨어져 있었다** · zh-hant는 「22～99 · 47%」로 앞서 갔고 그것도 부정확) → EN + probability + equity + shc 4자리 판정 후 8로케일 ② EN `holdem-kicker` L75·L79–84 «각 족보 킥커 수» 표에 High card 행 없음(같은 글 L55 표는 있음 · ja §2-N) ③ EN `holdem-glossary` stripe 「"Most confused" pairs」 — 8번째 항목(3bet 세는 법)이 쌍이 아니다(ja는 「項目」으로 고쳤다) ④ 🪶 EN `holdem-hand-rankings` L300 「often A-6-7-8-9 counts as a straight」 — 숏덱에서 거의 보편 규칙이라 «often»이 약하다(확신도 중 · ja는 「多くのルールで」로 맞췄다).
+- 🟠 **Q6c-4 ja·zh·zh-hant 파일을 만졌다** → 세 레인 `HARDEN.md` §6-0 통지(착수 시점 세 워크트리 clean · 같은 커밋 `77ca6a89`): ja = blind-meaning · drawing-odds · ept-barcelona · glossary · hand-rankings · position-play · positions · probability · rake · straddle / zh = apt-incheon · holdem-kicker · holdem-starting-hands-chart · korea-poker-marathon · texas-holdem-rules-for-beginners · wsop-2026-tournament-guide / zh-hant = ept-barcelona · holdem-3bet · holdem-position-play · holdem-positions · holdem-strategy · + 용어 정본 `translation-terms-{zh,zh-hant,ja}`·`market-profile/zh`.
+- 🟠 **Q6c-5 `docs/update-calendar.md` 시한 1행 요청**: **2026-12-31 중국 본토 단체 무비자 연장 만료** — 재연장 여부 재실측(zh 포스트 1 · `tournaments-i18n` 2 · 정본 문서 9). K-ETA 면제 12-31 행과 같은 날이다.
+- 🪶 **Q6c-6 판정 요청 1건(낮음)**: `app/tournaments/tournaments-client.tsx:652` `dateModified: "2026-09-03"`이 손값인데 이번에 KO `schemaDescription`(WSOP 상금풀)이 바뀌었다 — 이 필드를 올릴지(정책)는 헤드 판정.
+- 🪶 **Q6c-7 sitemap**: 25편 `updated` 09-16 → 머지 뒤 `lastmod` 재생성 필요(선례 Q6a-8).
+- 🪶 **Q6c-8 정본에서 지워도 되는 것**: `harden-ja-진행` §2-N의 N1·N2·N3·N5~N8·N10·N11(닫힘) · N4 → EN-먼저로 이관 · §2 «echo 19» 행(닫힘) · `harden-zh-hant-진행` §5-17은 **닫지 말고** EN-먼저 대기열로 옮겨 달라.
 
 ### Q6-b (2026-09-16 · zh 43 + zh-hant 3 + ja 2 + 정본 3 + 게이트 1 — **배포가 걸린 회차다**)
 
@@ -1309,6 +1355,11 @@ pdf-page 19 · number-format 24 · image-dims 8). 전 게이트에 «못 보는 
 ## 6. 자산 축적 체크 (매 회차 마감 3종)
 
 ① 키워드뱅크 — 해당 회차만 ② 편차 판정 → §5 ③ 판정 정본 승격 → §5
+
+**Q6-c**: ① 키워드뱅크 — **해당 없음**(잔여 정리·사실 정정 회차 · 키워드 축을 안 건드렸다)
+② 편차 판정 → §5 **Q6c-2**(등재 2건) + §4(거울쌍 28편 전건 판정)
+③ 판정 정본 승격 → **정본 문서 9개 직접 정정**(단체 무비자) + §3 「Q6-c — 다시 열지 마라」 + §5 **Q6c-3**(EN-먼저 4) · **Q6c-5**(시한 1)
+④ **게이트 승격** — `check:answer-echo` «값 표현» echo 등재(겹침 단위·완전 일치 · 셀프테스트 37)
 
 **Q6-b**: ① 키워드뱅크 — **해당 없음**(기호 통일·판정 회차 · 키워드 축을 안 건드렸다)
 ② 편차 판정 → §5 **Q6b-2**(`locale-intentional-diffs` 등재 3건 — zh-hant 상단 블록 부재 · 구간 나열 반각 · ja 직선 1자리) + §4(괄호 갈림 2자리는 **고쳤다**)
