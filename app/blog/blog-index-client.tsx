@@ -89,10 +89,35 @@ export default function BlogIndex({
     return () => window.removeEventListener("popstate", syncFromUrl);
   }, [syncFromUrl]);
 
-  const sorted = useMemo(
-    () => [...posts].sort((a, b) => b.date.localeCompare(a.date)),
-    [posts]
-  );
+  /**
+   * 순서는 서버(app/blog/page.tsx → lib/featured-order.ts)가 정한다. 여기서 날짜로 재정렬하면
+   * GA4·GSC 기반 배치가 무력화된다 — 2026-09-16 전까지는 `b.date.localeCompare(a.date)`였다.
+   */
+  const sorted = posts;
+
+  /**
+   * 단계 공개(무한 피드 체감): HTML엔 전 카드를 두고(봇은 전부 본다 — 내부링크 보존)
+   * 화면엔 PAGE장씩 연다. 하단 근처에서 다음 묶음. 랜덤·서버 추가 로드 없음.
+   */
+  const PAGE = 20;
+  const [visible, setVisible] = useState(PAGE);
+  const sentinelRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    setVisible(PAGE);
+  }, [activeCategory, activeTag, query]);
+  useEffect(() => {
+    const el = sentinelRef.current;
+    if (!el || typeof IntersectionObserver === "undefined") return;
+    const io = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((e) => e.isIntersecting)) setVisible((v) => v + PAGE);
+      },
+      { rootMargin: "600px 0px" }
+    );
+    io.observe(el);
+    return () => io.disconnect();
+    // 센티널은 «남은 글이 있을 때만» 렌더되므로, 필터·공개 수가 바뀔 때마다 다시 붙인다
+  }, [activeCategory, activeTag, query, visible]);
 
   /** 검색어를 공백으로 쪼갠 토큰들. "팟오즈 리버" 처럼 두 단어를 다 만족하는 글만 남긴다. */
   const tokens = useMemo(
@@ -360,14 +385,20 @@ export default function BlogIndex({
             {/* Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
               {rest.map((post, idx) => (
-                <PostCard key={post.slug} post={post} delay={idx * 0.07} />
+                <div key={post.slug} hidden={idx >= visible}>
+                  <PostCard post={post} delay={Math.min(idx % PAGE, 8) * 0.07} />
+                </div>
               ))}
             </div>
           </>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
             {filtered.length > 0
-              ? filtered.map((post, idx) => <PostCard key={post.slug} post={post} delay={idx * 0.07} />)
+              ? filtered.map((post, idx) => (
+                  <div key={post.slug} hidden={idx >= visible}>
+                    <PostCard post={post} delay={Math.min(idx % PAGE, 8) * 0.07} />
+                  </div>
+                ))
               : (
                 <div className="md:col-span-2 xl:col-span-3 text-center py-20 text-muted-foreground">
                   <div className="text-5xl mb-4">—</div>
@@ -388,6 +419,23 @@ export default function BlogIndex({
             }
           </div>
         )}
+
+        {/* 단계 공개 센티널 + JS/IO 없을 때의 폴백 버튼. 카드 자체는 이미 HTML에 다 있다 */}
+        {(() => {
+          const total = isFiltering ? filtered.length : rest.length;
+          if (total <= visible) return null;
+          return (
+            <div ref={sentinelRef} className="flex justify-center pt-8">
+              <button
+                type="button"
+                onClick={() => setVisible((v) => v + PAGE)}
+                className="px-5 py-2.5 rounded-full border border-border bg-card text-sm font-medium text-foreground hover:border-primary-ink transition-colors"
+              >
+                글 더 보기 ({total - visible}편 남음)
+              </button>
+            </div>
+          );
+        })()}
       </div>
 
     </>

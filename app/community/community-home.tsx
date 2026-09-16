@@ -1,6 +1,7 @@
 import CommunityClient from "./community-client";
 import { POSTS } from "@/lib/posts";
 import { postsForLocale } from "@/lib/intl-posts";
+import { orderForFeed } from "@/lib/featured-order";
 import { isSecondaryLocale } from "@/lib/intl";
 import { buildHeroLine } from "@/lib/tournaments-digest";
 
@@ -13,7 +14,8 @@ import { buildHeroLine } from "@/lib/tournaments-digest";
 export default function CommunityHome({ pageLocale }: { pageLocale?: string }) {
   const src =
     pageLocale && isSecondaryLocale(pageLocale) ? postsForLocale(pageLocale) : POSTS;
-  const blogPosts = src.map(({ content, ...meta }) => meta);
   const todayISO = new Date(Date.now() + 9 * 60 * 60 * 1000).toISOString().slice(0, 10);
+  // 배치 순서 = lib/featured-order.ts (GA4·GSC 분석 기반). 전엔 POSTS 배열 순서(LEGACY→NEW = 옛 글부터)였다.
+  const blogPosts = orderForFeed(src, todayISO).map(({ content, ...meta }) => meta);
   return <CommunityClient pageLocale={pageLocale} blogPosts={blogPosts} tournamentTeaser={buildHeroLine(todayISO)} />;
 }

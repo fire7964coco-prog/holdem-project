@@ -511,20 +511,22 @@ const KO_PAGE_TEASERS: FeedPost[] = [
 ];
 
 // GSC 클릭 기준 상위 고정 (2026-06-26) — 이 순서대로 피드 최상단에 고정
-const PINNED_IDS = [
-  "page:tournaments",
-  "blog:holdem-masters-7th-guide",
-  "blog:apt-incheon-2026-guide",
-  "blog:holdem-tiebreak-rules",
-  "blog:appt-korea-2026-guide",
-  "blog:pocket-kings-kk-strategy",
-];
+/**
+ * 고정 순서 — 페이지 핀 + 서버가 정한 블로그 배치 상위 N편.
+ * 블로그 순서는 lib/featured-order.ts(GA4·GSC 분석 기반)가 정하고 community-home.tsx가 그 순서로 blogPosts를 넘긴다.
+ * 2026-09-16 전엔 여기 slug 6개가 하드코딩돼 있어 배치 변경이 홈에 반영되지 않았다.
+ */
+const PAGE_PINNED_IDS = ["page:tournaments"];
+const FEATURED_PIN_COUNT = 8;
+function pinnedIdsFor(blogPosts: { slug: string }[]): string[] {
+  return [...PAGE_PINNED_IDS, ...blogPosts.slice(0, FEATURED_PIN_COUNT).map((p) => `blog:${p.slug}`)];
+}
 
 /** 고정글 우선 + 최신순 정렬 (초기 정적 렌더와 Supabase 로드 후가 동일한 규칙을 쓰도록 공유) */
-function sortFeed(list: FeedPost[]): FeedPost[] {
+function sortFeed(list: FeedPost[], pinnedIds: string[]): FeedPost[] {
   return [...list].sort((a, b) => {
-    const ai = PINNED_IDS.indexOf(a.id);
-    const bi = PINNED_IDS.indexOf(b.id);
+    const ai = pinnedIds.indexOf(a.id);
+    const bi = pinnedIds.indexOf(b.id);
     if (ai !== -1 && bi === -1) return -1;
     if (ai === -1 && bi !== -1) return 1;
     if (ai !== -1 && bi !== -1) return ai - bi;
@@ -605,7 +607,8 @@ export default function CommunityClient({
   const [myLanguage, setMyLanguage] = useState(pageLocale ?? "ko");
   const [tab, setTab] = useState<"home" | "chat" | "event" | "profile">("home");
   const [feedFilter, setFeedFilter] = useState<FilterKey>("All");
-  const [posts, setPosts] = useState<FeedPost[]>(() => sortFeed(staticTeasers));
+  const pinnedIds = useMemo(() => pinnedIdsFor(blogPosts), [blogPosts]);
+  const [posts, setPosts] = useState<FeedPost[]>(() => sortFeed(staticTeasers, pinnedIds));
   const [writeOpen, setWriteOpen] = useState(false);
   const writeDialogRef = useRef<HTMLDialogElement>(null);
   const [postError, setPostError] = useState<string | null>(null);
@@ -797,7 +800,7 @@ export default function CommunityClient({
 
       // 초기 정적 렌더와 동일한 규칙(sortFeed)으로 병합 — 고정 상단 6개는 그대로 유지되어
       // 뷰포트 상단이 밀리지 않고, 커뮤니티 글은 그 아래(대부분 폴드 밑)에 끼어든다.
-      setPosts(sortFeed([...communityPosts, ...staticTeasers]));
+      setPosts(sortFeed([...communityPosts, ...staticTeasers], pinnedIds));
       setLoading(false);
 
       // 내 글 + 이벤트 데이터 (로그인 시)

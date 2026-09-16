@@ -1,5 +1,6 @@
 import BlogIndexClient, { type BlogCardMeta } from "./blog-index-client";
 import { POSTS, CATEGORIES } from "@/lib/posts";
+import { orderForFeed, todayKST } from "@/lib/featured-order";
 import HubPage from "@/components/hub-page";
 import { SITE } from "@/lib/site";
 
@@ -18,7 +19,8 @@ import { SITE } from "@/lib/site";
  *   정적 렌더에서 떨어뜨려 목록 HTML을 비워 버린다. 자세한 근거는 blog-index-client.tsx 주석.
  */
 export default function Page() {
-  const posts: BlogCardMeta[] = POSTS.map((p) => ({
+  // 배치 순서 = lib/featured-order.ts (GA4·GSC 분석 기반). 클라이언트는 이 순서를 그대로 쓴다(재정렬 금지).
+  const posts: BlogCardMeta[] = orderForFeed(POSTS, todayKST()).map((p) => ({
     slug: p.slug,
     title: p.title,
     desc: p.desc,
