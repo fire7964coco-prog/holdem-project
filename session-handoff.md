@@ -12,9 +12,8 @@
 
 | 순서 | 할 일 | 도구·파일 |
 |---|---|---|
-| 1 | 28일 창으로 글별 점수표 뽑기 — GA4 참여율×조회(보정 3종 포함) + GSC 클릭·노출 | `npm run analytics` · `scripts/gsc-analyze.mjs` · 창은 28일 고정(90일 금지) |
-| 2 | 점수식 확정: 상단 = 참여율 높고 조회 있는 검증된 글 → 필라 허브 → 나머지 날짜순. 시한 지난 대회 글은 상단 제외 | 결과는 `docs/analytics-log.md`에 근거 남김 |
-| 3 | 배치 순서를 코드로: slug 배열 하나(`FEATURED_ORDER` 등)를 lib에 두고 홈·목록이 같이 읽음. slug·라우트 불변 | `app/page.tsx` · `app/blog/page.tsx` · `blog-index-client.tsx` |
+| 1·2 | ✅ 분석·티어·배치안 완료 (09-16) — **`docs/post-placement-analysis-2026-09-16.md`가 정본.** 핵심: 진짜 관문은 홈(252)이 아니라 /tournaments(811)·/solver(549) 하단 추천 블록 · S 7편 고정 + 시한 글 날짜 규칙 + A 티어 «오늘의 글» 날짜 시드 · B 티어(blind-meaning 등 저참여)는 상단 금지 | — |
+| 3 | 배치 순서를 코드로: slug 배열 하나(`FEATURED_ORDER`)를 lib에 두고 홈 피드(`community-client.tsx`의 POSTS 순서)·목록·관문 추천 블록이 같이 읽음. 시한 글은 배열 아닌 날짜 규칙. slug·라우트 불변 | `app/community/community-client.tsx` · `blog-index-client.tsx` · /tournaments·/solver 추천 블록(현재 구성 미확인) |
 | 4 | 목록 단계 공개(IntersectionObserver · 카드 높이 고정으로 CLS 0) | `blog-index-client.tsx` 한 파일 |
 | 5 | screen-review로 전후 캡처(모바일 포함) → 빌드 → 배포 → 배치 변경 전 GA4 기준선 기록(효과 측정용) | 스킬 `screen-review` · `docs/analytics-log.md` |
 
