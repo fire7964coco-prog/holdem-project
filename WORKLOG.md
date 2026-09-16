@@ -15,7 +15,8 @@
 - 발견: 진짜 관문은 홈(252세션)이 아니라 /tournaments(811)·/solver(549). 홈 피드는 POSTS 배열 순서(옛 글부터)에 하드코딩 핀 6개, /blog는 최신순이었다.
 - 구현: `lib/featured-order.ts` 신설(진행 중 대회 → S 7편 → 오늘의 글 날짜시드 → A 13편 → 날짜순). `community-home.tsx`·`app/blog/page.tsx`가 서버에서 정렬, `community-client.tsx` 핀을 서버 순서 상위 8편으로, `blog-index-client.tsx` 날짜 재정렬 제거 + 20장 단계 공개(hidden 속성 · 전 카드 HTML 유지 · 폴백 «더 보기» 버튼).
 - 검증: 빌드 성공, 빌드 HTML에서 홈·/blog 순서와 전 카드 존재(고유 링크 72) 확인. 화면 캡처는 미실시(한도) — 핸드오프 5단계.
-- 미완: /tournaments·/solver 하단 추천 블록 재구성, screen-review 캡처.
+- 추가 지시(같은 날): «맨 밑 다음은 1번으로 다시» → 홈 피드는 Supabase 페이지가 끝나면 `cycles`로 정적 티저를 다시 이어 붙이고(이음새에 정책 링크 유지), /blog는 `loop()`가 `idx % n`으로 반복. 초기 HTML엔 카드 1회(빌드 HTML 확인).
+- 미완: /tournaments·/solver 하단 추천 블록 재구성, screen-review 캡처(이음새 포함).
 
 ## 2026-09-15 — 홀덤마스터 라이브 UI·UX 점검
 

@@ -662,6 +662,8 @@ export default function CommunityClient({
   const PAGE_SIZE = 20;
   const [communityOffset, setCommunityOffset] = useState(PAGE_SIZE);
   const [hasMore, setHasMore] = useState(true);
+  /** 순환 피드(2026-09-16 사장님 지시): 끝에 닿으면 1번부터 다시 이어 붙인다. 클라이언트 표시 전용 — 초기 HTML엔 각 카드가 한 번만 있다 */
+  const [cycles, setCycles] = useState(1);
   const [loadingMore, setLoadingMore] = useState(false);
   const sentinelRef = useRef<HTMLDivElement>(null);
 
@@ -840,7 +842,12 @@ export default function CommunityClient({
   // ── 추가 로드 (무한스크롤) ──────────────────────────────────
   const loadMorePosts = useCallback(async () => {
     // loading 가드: 초기 렌더부터 sentinel이 존재하므로, 초기 Supabase 로드와의 경합 방지
-    if (loading || !hasMore || loadingMore || tab !== "home") return;
+    if (loading || loadingMore || tab !== "home") return;
+    if (!hasMore) {
+      // 서버에 더 없음 → 피드를 처음부터 한 바퀴 더 이어 붙인다 (순환)
+      setCycles((c) => c + 1);
+      return;
+    }
     setLoadingMore(true);
     const supabase = createClient();
     const adminLang = pageLocale ?? myLanguage;
@@ -1059,10 +1066,27 @@ export default function CommunityClient({
                 // 카드 높이에 맞춘 정적 스켈레톤으로 공간 예약 → 도착 시 시프트 최소화
                 ? <>{[0, 1, 2].map((i) => <SkeletonCard key={i} />)}</>
                 : <EmptyState icon="🃏" title={L.emptyFeedTitle} sub={L.emptyFeedSub} />)
-            : filteredPosts.map((p, i) => (
-                // 첫 3장만 eager(LCP 후보) — 나머지 수십 장의 티저 이미지는 lazy로 대역폭 양보
-                <PostCard key={p.id} post={p} myLanguage={myLanguage} myUserId={currentUser?.id} onLike={onLike} imgPriority={i < 3} compactMobile={i >= 3} />
-              ))
+            : Array.from({ length: hasMore ? 1 : cycles }, (_, c) => c).flatMap((c) => [
+                // 순환 이음새: 2바퀴째부터 «처음부터 다시» + 정책 링크(모바일 홈엔 푸터가 없어 여기가 그 자리)
+                c > 0 && (
+                  <div key={`seam-${c}`} className="flex flex-col items-center gap-2.5 py-5">
+                    <span style={{ fontSize: 11, color: MUTED, fontFamily: FONT_SANS }}>♠ 모든 글을 다 봤습니다 — 처음부터 다시 이어집니다</span>
+                    {!pageLocale && (
+                      <div className="flex flex-wrap justify-center gap-x-3 gap-y-1 px-4">
+                        {LEGAL_PAGES.map((lp) => (
+                          <Link key={lp.href} href={lp.href} className="hover:underline" style={{ fontSize: 11, color: MUTED, fontFamily: FONT_SANS }}>
+                            {lp.label}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                ),
+                ...filteredPosts.map((p, i) => (
+                  // 첫 3장만 eager(LCP 후보) — 나머지 수십 장의 티저 이미지는 lazy로 대역폭 양보
+                  <PostCard key={c ? `${p.id}-c${c}` : p.id} post={p} myLanguage={myLanguage} myUserId={currentUser?.id} onLike={onLike} imgPriority={c === 0 && i < 3} compactMobile={c > 0 || i >= 3} />
+                )),
+              ])
         )}
 
         {/* 채팅 */}

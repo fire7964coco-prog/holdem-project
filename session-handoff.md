@@ -15,6 +15,7 @@
 | 1·2 | ✅ 분석·티어·배치안 완료 (09-16) — **`docs/post-placement-analysis-2026-09-16.md`가 정본.** 핵심: 진짜 관문은 홈(252)이 아니라 /tournaments(811)·/solver(549) 하단 추천 블록 · S 7편 고정 + 시한 글 날짜 규칙 + A 티어 «오늘의 글» 날짜 시드 · B 티어(blind-meaning 등 저참여)는 상단 금지 | — |
 | 3·4 | ✅ 구현·빌드·배포 (09-16) — `lib/featured-order.ts`(EVENT_UNTIL 날짜 규칙 + S 7편 + 오늘의 글 날짜시드 + A 13편) → 홈 피드(`community-client.tsx` 핀을 서버 순서 상위 8편으로 교체)·`/blog`(서버 정렬, 클라이언트 재정렬 제거, 20장 단계 공개 + 폴백 버튼). 빌드 HTML로 순서·전 카드 존재(72링크) 확인 | — |
 | 5 | **미완**: ① screen-review로 홈·/blog 데스크톱+모바일 캡처(hidden 카드·더보기 버튼·CLS 육안) ② /tournaments·/solver 하단 «추천 글» 블록 — 현재 구성부터 확인 후 보고서 §3 표대로 ③ 4주 뒤 비교용 기준선은 보고서 §2 표가 대신함(창 2026-08-17~09-13) | 스킬 `screen-review` · 보고서 §3 |
+| 순환 | ✅ (09-16 추가 지시) 홈 피드·/blog 둘 다 마지막 카드 다음에 1번부터 다시 이어짐(클라이언트 전용 · 초기 HTML엔 카드 1회 · 이음새에 «처음부터 다시»+정책 링크). 5단계 캡처 때 이음새·중복 키·모바일도 같이 본다 | `community-client.tsx` cycles · `blog-index-client.tsx` loop() |
 | 유지 | 대회 끝나면 `EVENT_UNTIL`이 자동 강등. 새 대회 글 발행 시 거기에 종료일 한 줄 추가. S·A 배열은 분기마다 28일 창으로 재판정 | `lib/featured-order.ts` |
 
 끝나면 이 절은 지운다(취소선 금지).

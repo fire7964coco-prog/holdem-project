@@ -100,6 +100,16 @@ export default function BlogIndex({
    * 화면엔 PAGE장씩 연다. 하단 근처에서 다음 묶음. 랜덤·서버 추가 로드 없음.
    */
   const PAGE = 20;
+  /**
+   * 순환(2026-09-16 사장님 지시): 마지막 카드 다음은 1번으로 다시 이어진다.
+   * 초기 HTML엔 각 카드가 정확히 한 번(visible ≤ 전체) — 반복분은 스크롤 뒤 클라이언트에서만 생긴다.
+   */
+  function loop<T>(list: T[], count: number): { post: T; idx: number; cycle: number }[] {
+    const n = list.length;
+    if (n === 0) return [];
+    const len = Math.max(n, count);
+    return Array.from({ length: len }, (_, idx) => ({ post: list[idx % n], idx, cycle: Math.floor(idx / n) }));
+  }
   const [visible, setVisible] = useState(PAGE);
   const sentinelRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
@@ -384,8 +394,8 @@ export default function BlogIndex({
 
             {/* Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
-              {rest.map((post, idx) => (
-                <div key={post.slug} hidden={idx >= visible}>
+              {loop(rest, visible).map(({ post, idx, cycle }) => (
+                <div key={cycle ? `${post.slug}-c${cycle}` : post.slug} hidden={idx >= visible}>
                   <PostCard post={post} delay={Math.min(idx % PAGE, 8) * 0.07} />
                 </div>
               ))}
@@ -394,8 +404,8 @@ export default function BlogIndex({
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
             {filtered.length > 0
-              ? filtered.map((post, idx) => (
-                  <div key={post.slug} hidden={idx >= visible}>
+              ? loop(filtered, visible).map(({ post, idx, cycle }) => (
+                  <div key={cycle ? `${post.slug}-c${cycle}` : post.slug} hidden={idx >= visible}>
                     <PostCard post={post} delay={Math.min(idx % PAGE, 8) * 0.07} />
                   </div>
                 ))
@@ -423,7 +433,7 @@ export default function BlogIndex({
         {/* 단계 공개 센티널 + JS/IO 없을 때의 폴백 버튼. 카드 자체는 이미 HTML에 다 있다 */}
         {(() => {
           const total = isFiltering ? filtered.length : rest.length;
-          if (total <= visible) return null;
+          if (total === 0) return null;
           return (
             <div ref={sentinelRef} className="flex justify-center pt-8">
               <button
@@ -431,7 +441,7 @@ export default function BlogIndex({
                 onClick={() => setVisible((v) => v + PAGE)}
                 className="px-5 py-2.5 rounded-full border border-border bg-card text-sm font-medium text-foreground hover:border-primary-ink transition-colors"
               >
-                글 더 보기 ({total - visible}편 남음)
+                {visible >= total ? "처음부터 다시 보기" : `글 더 보기 (${total - visible}편 남음)`}
               </button>
             </div>
           );
