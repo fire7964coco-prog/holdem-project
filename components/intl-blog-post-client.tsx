@@ -35,7 +35,8 @@ const CALC_CTA_LABELS: Partial<Record<SecondaryLocale, { title: string; subtitle
   //   subtitle = 형제 로케일 부제(zh·id)의 같은 세 용어를 그 로케일 코퍼스 표기로(zh-hant 勝率 514·補牌 281·底池賠率 185회 ·
   //   ms serta-merta 13회 · hi는 본문이 outs·pot odds를 라틴으로 쓴다).
   "zh-hant": { title: "撲克機率計算器", subtitle: "勝率、補牌、底池賠率即時計算" },
-  hi: { title: "Poker odds कैलकुलेटर", subtitle: "Equity, outs और pot odds तुरंत" },
+  // hi는 힌디·영어 혼합이 어색해 EN 문구 그대로(사장님 지시 09-16 「계산기라는 현지 용어가 없으면 그냥 영어로」).
+  hi: { title: "Poker Odds Calculator", subtitle: "Win %, outs & pot odds instantly" },
   ms: { title: "Kalkulator odds poker", subtitle: "Equity, outs & pot odds serta-merta" },
 };
 
