@@ -1,3 +1,8 @@
+## 2026-09-16 (2) — APT 제주 2026 가을 개막 전 이벤트 수 최종 재실측 — 변경 0
+
+- 캘린더 「9/20경」 항목. §12-B대로 Playwright로 공식 이벤트 페이지 DOM을 긁어 직접 셌다: `#1~#135` · 결번 0 · 마지막 행 `#135 Hyper Turbo - High Roller` · 25 Sept~7 Oct · 메인 #19 KRW 2.2bn GTD · 바이인 2.7M. 08-31·09-10 값과 전부 같다.
+- 반영: `lib/tournaments.ts` apt-jeju-fall `verifiedAt` 09-16 + 주석. 글 본문의 「2026-09-10 재확인」 문구는 사실이 유지되므로 그대로(내용 변경 0 → `updated` 안 올림). 캘린더 항목 ✅ · 핸드오프 행 삭제.
+
 ## 2026-09-16 — 포스팅 배치 5단계 마감: 관문 추천 블록 §3 적용 + 화면 검증 + 데스크톱 순환 결함 수정
 
 - 관문 블록: /tournaments(진행 중 대회 카드 `EVENT_UNTIL` 자동 강등 + S 4편 전환 경로 순, noindex schedule-check 제거) · /solver(추천 블록 신설) · /ranking·/pub(S 3편 앞) · /hand-chart 변경 없음. 서버 전용 `lib/active-event-guides.ts` 신설.

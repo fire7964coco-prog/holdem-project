@@ -712,14 +712,15 @@ const RAW_TOURNAMENTS: Tournament[] = [
      * 🔴 **종목 분해는 여기 적지 않는다.** 내 재분류로는 NLH 91 / 기타 44가 나오지만
      *   `#71 Atomic Pineapple` 같은 자리에서 APT 공식 분류를 재현하지 못한다
      *   = «내 기준의 값»이라 발행 부적합. 글의 「90+46」을 고치려면 공식 분류 근거부터 찾아라.
-     * ⚠️ 개막(9/25) 전 또 바뀔 수 있다 — `docs/update-calendar.md`에 재확인 등재.
+     * ✅ 2026-09-16 개막 전 최종 재실측(Playwright DOM 직접 셈): `#1~#135` · 결번 0 · 마지막 행 `#135 Hyper Turbo - High Roller` ·
+     *   일정 25 Sept~7 Oct · 메인 #19 KRW 2,200,000,000 GTD · 바이인 2.7M — 08-31·09-10 값과 전부 동일. 변경 0.
      */
     note: "135개 이벤트 · 메인이벤트 22억 GTD · APTC 시트 12석",
     highlight: true,
     blogLink: "/blog/apt-jeju-2026-fall-guide",
     sourceUrl: "https://www.theasianpokertour.com/series/apt-jeju-south-korea-2026/events",
     sourceTier: "A",
-    verifiedAt: "2026-08-31",
+    verifiedAt: "2026-09-16",
     organizer: { name: "Asian Poker Tour", url: "https://www.theasianpokertour.com" },
     schemaDescription:
       "APT의 2026 제주 가을 스톱. 135개 이벤트, 메인이벤트 22억원 보장.",

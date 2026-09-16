@@ -20,5 +20,4 @@
 
 - 일반 queue는 `docs/harden-queue-진행.md` §1, 장기 미결은 해당 대기열과 `docs/pending-work.md`에서 필요한 항목만 찾는다.
 - HI 검수에서 발견한 EN counterfeiting 조건 누락은 `docs/en-first-queue.md` §3에 있다. 이번 HI 정정 종결과 EN·형제 언어의 후속 적용을 구분한다.
-- **9/20경 APT 제주 이벤트 수 재확인**: `docs/update-calendar.md`의 해당 항목.
 - UI·UX 점검과 HI 발행 경위는 WORKLOG.md의 해당 항목에 있다. 상시 규칙은 해당 정본 MD, 과거 인계는 `docs/handoff-archive/`에 둔다. 상세를 이 파일에 누적하지 않는다.
