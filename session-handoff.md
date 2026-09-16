@@ -10,6 +10,11 @@
 - 순서 정본 `lib/featured-order.ts`. 대회 끝나면 `EVENT_UNTIL`이 홈·/blog·/tournaments 카드를 같이 자동 강등 — **새 대회 글 발행 시 거기에 종료일 한 줄 추가**. S·A 배열은 분기마다 28일 창으로 재판정.
 - 4주 뒤(2026-10-14~) 비교: 기준선 = `docs/post-placement-analysis-2026-09-16.md` §2 · 검증 기록 = `docs/post-placement-verification-2026-09-16.md`.
 
+## 레인 상태 (2026-09-16)
+
+- 🧰 queue: Q6-b 머지·배포 완료(`a2e4e5c1`·`4a9fd0c4` · MB-052). **다음 회차 = Q6-c**(재료 `docs/harden-queue-진행.md` §1) → Q4-b(es WSOP 2편 WRONG 15 · 라이브 사실오류). 레인 첫 마디 「HARDEN.md 읽고 회차 Q6-c 시작해」. 4레인 전부 `4a9fd0c4` 동기·클린.
+- 우편함: 미처리 20건 전부 «→검수장»(MB-033~052 + S-022·023). 본체 몫 0.
+
 ## 시작 자료
 
 - AGENTS → CLAUDE → 이 파일, Git 상태를 확인한다. ‘읽고 대기’ 요청이면 자동 착수하지 않는다.

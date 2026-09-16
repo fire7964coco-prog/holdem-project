@@ -1,3 +1,9 @@
+## 2026-09-16 (3) — 🧰 queue 회차 Q6-b 머지·배포 (인용부호·괄호 스윕 zh 43 + zh-hant 3 + ja 2 · 게이트 `check:hygiene` 신설)
+
+- 레인 `25be86a5` → 머지 `a2e4e5c1`(충돌 0) → 헤드 후속 `4a9fd0c4` → 빌드 70 + intl 577 · `check:hygiene` 🔴 0 · push · lane:sync 4레인 ff(`4a9fd0c4`).
+- 헤드 요청 7건 전건 처리: MB-052 발신 · `locale-intentional-diffs` 2행(③은 판정으로 소멸) · `settled-decisions` §3 승격 3건 · 세 레인 HARDEN §6-0 통지 · **Q6b-5 ja 판정을 헤드가 했다**(ja 레인 종결) — `$0.50` 슬로건 ja도 「」(세 로케일 동형) · pending-work 3건 종결 한 줄.
+- 라이브 확인·IndexNow는 MB-052 행에 적었다. 다음 queue 회차 = **Q6-c**(ja 잔여 + NOTE_* + echo 19).
+
 ## 2026-09-16 (2) — APT 제주 2026 가을 개막 전 이벤트 수 최종 재실측 — 변경 0
 
 - 캘린더 「9/20경」 항목. §12-B대로 Playwright로 공식 이벤트 페이지 DOM을 긁어 직접 셌다: `#1~#135` · 결번 0 · 마지막 행 `#135 Hyper Turbo - High Roller` · 25 Sept~7 Oct · 메인 #19 KRW 2.2bn GTD · 바이인 2.7M. 08-31·09-10 값과 전부 같다.
