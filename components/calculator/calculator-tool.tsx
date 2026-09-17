@@ -1387,7 +1387,7 @@ function PushFoldCalc() {
             <strong className="text-primary">{fmt(D.mwNote.strong, { table })}</strong>{D.mwNote.p1}<strong>{D.mwNote.strong2}</strong>{D.mwNote.p2}
           </>
         )}
-        {" "}{D.readMore}{sep(D.readMore)}
+        {sep(table === "hu" ? D.huNote.p2 : D.mwNote.p2)}{D.readMore}{sep(D.readMore)}
         <a href={`/${locale}/blog/${D.shortStackLink.slug}`} className="text-primary font-semibold underline underline-offset-2">{D.shortStackLink.text}</a>{D.readMoreEnd}
       </div>
     </div>
@@ -1573,8 +1573,9 @@ export default function CalculatorTool({ locale, dict, faq }: { locale: string; 
               <table className="w-full text-sm">
                 <thead>
                   <tr className="bg-card border-b border-border">
+                    {/* ★2026-09-17 (zh-hant) CJK 헤더는 nowrap 열이면 헤더도 한 줄 — 「翻牌→河牌」가 390px에서 3줄로 꺾였다(zh·ja 동형). 라틴 헤더(EN)는 불변 */}
                     {sec.th.map((h, i) => (
-                      <th key={h} className={`px-3 py-2.5 font-bold ${i === 0 ? "whitespace-nowrap" : ""} ${sec.align?.[i] === "right" ? "text-right" : "text-left"} ${i === sec.emphasis ? "text-primary-ink" : "text-muted-foreground"}`}>{h}</th>
+                      <th key={h} className={`px-3 py-2.5 font-bold ${i === 0 || (sec.nowrap?.includes(i) && /[぀-ヿ一-鿿]/.test(h)) ? "whitespace-nowrap" : ""} ${sec.align?.[i] === "right" ? "text-right" : "text-left"} ${i === sec.emphasis ? "text-primary-ink" : "text-muted-foreground"}`}>{h}</th>
                     ))}
                   </tr>
                 </thead>
@@ -1591,7 +1592,7 @@ export default function CalculatorTool({ locale, dict, faq }: { locale: string; 
             </div>
             {sec.note && (
               <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mt-5 max-w-3xl">
-                {sec.note}{sec.link && <> <a href={`/${locale}/blog/${sec.link.slug}`} className="text-primary-ink font-semibold underline underline-offset-2">{sec.link.text}</a>{sec.linkTail ?? ""}</>}
+                {sec.note}{sec.link && <>{sep(sec.note)}<a href={`/${locale}/blog/${sec.link.slug}`} className="text-primary-ink font-semibold underline underline-offset-2">{sec.link.text}</a>{sec.linkTail ?? ""}</>}
               </p>
             )}
           </div>
