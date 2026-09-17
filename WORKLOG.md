@@ -1,3 +1,8 @@
+## 2026-09-17 (2) — es `como-entrar-al-wsop` 히어로 재제작 (Q4b-6 사장님 결정 「수정해줘」 · 헤드 실행)
+
+- 문구가 새 본문보다 좁았다(「21 años y una identificación」 ↔ 본문 «+ dos cuentas gratuitas»). 새 템플릿 `scripts/gen-como-entrar-al-wsop-hero.html`(구 `gen-wsop-hero.html` 삭제 — 산출 이름과 어긋나 있었다) → `render-gen-final` q82 → 46KB · 1200×675 · Read 육안 스펠링 확인. 헤드라인 3행 + 부제 「Caesars Rewards y WSOP LIVE — obligatorias para cualquier evento, no solo online」(stripe 축어) · 서류 4카드·바이인 4칸 승계 · 워터마크 템플릿 내장.
+- imageAlt 동형 갱신 · `updated` 09-17 · `check:images` 이상 없음 · `check:image-reuse` 🔴 0 · audit:hard es 0. 썸네일 3편은 같은 경로라 자동. 곁에서: es `holdem-tournament:298` 썸네일 문장이 같은 좁은 명제 → 다음 queue 회차 재료(핸드오프).
+
 ## 2026-09-17 — 🧰 queue 회차 Q4-b 머지·배포 (검수장 MA-118 요청 2 이행 · es WSOP 2편 + EN-먼저 6로케일 · 🔴 WSOP 2026 상금풀 08-06 판정 역전)
 
 - 레인 `8d7f2047`(ff 머지 · 충돌 0) → 헤드 후속 `45825ddb`(sitemap 8행 · 캘린더 · zh/zh-hant 판정 요청) → 빌드 70 + intl 577 · 게이트 hygiene 🔴 0 · answer-echo 🔴 echo 0 · tournament-numbers 값 필드 0 · stamp en 신규 0 · push · lane:sync 4레인.
