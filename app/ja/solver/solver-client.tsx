@@ -61,7 +61,7 @@ const SOLVER_URL = "https://solver.holdemmaster.com/?lang=ja";
  * 🔴 **일본은 「ツール」보다 「アプリ」가 크다**(110 대 90). EN "tool"을 그대로 옮기면 작은 쪽을 잡는다.
  *
  * 🔴🔴 카니발 방지 — **ja는 EN·KO와 «가진 것»이 다르다. 여기서 그대로 옮기면 404가 난다.**
- *   · **`/ja/hand-chart`·`/ja/calculator`·`/ja/win-rate-quiz`는 존재하지 않는다.**
+ *   · **`/ja/hand-chart`·`/ja/win-rate-quiz`는 존재하지 않는다.** (`/ja/calculator`는 2026-09-17에 신설됐다 — 낡은 서술 정정)
  *     `app/ja/`에 있는 것은 `blog`·`tournaments`·`page.tsx` 셋뿐이다(2026-08-21 확인).
  *     → EN이 거는 도구 링크 3종을 **전부 ja 블로그 글로 갈았다.** 링크 대상은 전건
  *        `lib/posts-ja/<slug>.ts` 파일 존재 + `index.ts` 등록 **양쪽으로 확인**했다.
