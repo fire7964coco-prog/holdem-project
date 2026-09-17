@@ -10,6 +10,11 @@ import { pfLookupMultiway, PF_MW_POSITIONS } from "@/lib/pushfold-multiway-data"
 import { calcEquity, evaluate7, categoryOf } from "@/lib/equity";
 import type { CalcDict } from "./dict";
 
+/** ★2026-09-17 (zh 회차) — 사전 조각 사이에 넣던 고정 반각 공백은 영어용이다. 앞 조각이 CJK 문자·전각 문장부호로 끝나면
+ *  공백을 넣지 않는다(「A5s 能凑成 轮子顺」·「都在这篇： 德州…」처럼 문장 한가운데 공백이 뜨던 자리 — 2차 교열 렌즈). EN은 라틴으로 끝나 불변. */
+const cjkEnd = (s?: string) => !!s && /[぀-ヿ㐀-䶿一-鿿＀-ﾟ　-〿]$/.test(s);
+const sep = (prev?: string) => (cjkEnd(prev) ? null : " ");
+
 // ─────────────────────────────────────────────
 // Dictionary plumbing
 // ─────────────────────────────────────────────
@@ -1348,7 +1353,7 @@ function PushFoldCalc() {
         </div>
         <p className="text-xs leading-relaxed break-keep text-muted-foreground rounded-lg bg-muted/40 border border-border/60 px-3 py-2">
           <strong className="text-foreground/85">{D.note.strong1}</strong><br />
-          {D.note.p1}<strong className="text-foreground/85">{D.note.strong2}</strong>{D.note.p2}{" "}
+          {D.note.p1}<strong className="text-foreground/85">{D.note.strong2}</strong>{D.note.p2}{sep(D.note.p2)}
           <strong className="text-foreground/85">{D.note.strong3}</strong>{D.note.p3}
         </p>
         <div className="grid gap-[2px]" style={{ gridTemplateColumns: "repeat(13, minmax(0, 1fr))" }}>
@@ -1382,7 +1387,7 @@ function PushFoldCalc() {
             <strong className="text-primary">{fmt(D.mwNote.strong, { table })}</strong>{D.mwNote.p1}<strong>{D.mwNote.strong2}</strong>{D.mwNote.p2}
           </>
         )}
-        {" "}{D.readMore}{" "}
+        {" "}{D.readMore}{sep(D.readMore)}
         <a href={`/${locale}/blog/${D.shortStackLink.slug}`} className="text-primary font-semibold underline underline-offset-2">{D.shortStackLink.text}</a>{D.readMoreEnd}
       </div>
     </div>
@@ -1536,7 +1541,7 @@ export default function CalculatorTool({ locale, dict, faq }: { locale: string; 
           </p>
           {G.deal.link && (
             <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mt-3 max-w-3xl">
-              {G.deal.linkLead}{" "}<a href={`/${locale}/blog/${G.deal.link.slug}`} className="text-primary-ink font-semibold underline underline-offset-2">{G.deal.link.text}</a>
+              {G.deal.linkLead}{sep(G.deal.linkLead)}<a href={`/${locale}/blog/${G.deal.link.slug}`} className="text-primary-ink font-semibold underline underline-offset-2">{G.deal.link.text}</a>
             </p>
           )}
         </div>
