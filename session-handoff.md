@@ -1,7 +1,7 @@
 # 다음 세션 알림장
 
 > «다음 할 일 + 미결»만 담는다. 경위 = `WORKLOG.md`(slug로 grep) · 규칙 = 정본 MD · 시한 = `docs/update-calendar.md`.
-> 마지막 갱신 2026-09-17 (본체 HEAD `82853dba` · queue Q4-b 머지·배포 + como-entrar 히어로 재제작 완료 · 4레인 `45825ddb` 동기·클린 · 미커밋 0).
+> 마지막 갱신 2026-09-17 (본체 HEAD `82853dba` · queue Q4-b 머지·배포 + como-entrar 히어로 재제작 완료 · 4레인 lane:sync 동기·클린 · 미커밋 0).
 
 ## ▶ 다음 할 일 (사장님이 고른다)
 
