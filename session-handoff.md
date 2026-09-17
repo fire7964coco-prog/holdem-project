@@ -1,14 +1,13 @@
 # 다음 세션 알림장
 
 > «다음 할 일 + 미결»만 담는다. 경위 = `WORKLOG.md`(slug로 grep) · 규칙 = 정본 MD · 시한 = `docs/update-calendar.md`.
-> 마지막 갱신 2026-09-17 (본체 HEAD `2e3acd14` · queue Q4-b 머지·배포 완료 · 4레인 `45825ddb` 동기·클린 · 미커밋 0).
+> 마지막 갱신 2026-09-17 (본체 HEAD `82853dba` · queue Q4-b 머지·배포 + como-entrar 히어로 재제작 완료 · 4레인 `45825ddb` 동기·클린 · 미커밋 0).
 
 ## ▶ 다음 할 일 (사장님이 고른다)
 
 1. **🧰 queue 다음 회차** — 후보 둘. 레인 창 첫 마디 「HARDEN.md 읽고 회차 Q7-c 시작해」(회차 이름은 레인이 진행 파일 §1 표에 맞춰 정한다).
    - **EN-먼저 §2-F 4건**(`docs/en-first-queue.md`): 1순위 **AK vs 작은 포켓페어 «coin flip» 명제**(EN shc L65 · zh-hant 18-3 · §13 콤보 직접 계산 → 8로케일) · kicker High card 행 · glossary 「pairs」 · hand-rankings 「often」. 집필 있음 → B 구간 Fable.
-   - **es `poker-en-las-vegas` 동형 명제 3종**(Q4-b §2 잔여 · es 고유 · EN 동형 없음): L140·L256 「solo exige 21 años」 · L142 matrícula 발급처 부재 + WSOP.com 명칭(형제 `nueva-jersey`·`dinero-real`도). 판정형 = Opus. 근거 `docs/harden-queue-진행.md` §2 「Q4-b가 남긴 것」.
-   - 🟡 **사장님 판단 1건(Q4b-6)**: es `como-entrar-al-wsop` 히어로 이미지 문구 「21 años y una identificación. Ni ciudadanía, ni visa.」가 새 본문(«+ 무료 계정 2개»)보다 좁다 — 거짓은 아님. 재제작하면 imageAlt(L16)도 함께(queue 레인 몫).
+   - **es `poker-en-las-vegas` 동형 명제 3종**(Q4-b §2 잔여 · es 고유 · EN 동형 없음): L140·L256 「solo exige 21 años」 · L142 matrícula 발급처 부재 + WSOP.com 명칭(형제 `nueva-jersey`·`dinero-real`도). 🆕 **`holdem-tournament` L298**(썸네일 링크 문장 「pide 21 años y una identificación válida」)도 같은 좁은 명제 — 히어로를 «+ dos cuentas gratuitas»로 재제작(09-17)했으니 형제 문장도 같은 회차에. 판정형 = Opus. 근거 `docs/harden-queue-진행.md` §2 「Q4-b가 남긴 것」.
 2. **(not set) 랜딩 유실 원인 규명 회차**(본체) — 09-14 스냅샷 236세션(08-28 103 → 2.3배). page_view만 유실된 진짜 사람이 참여 0으로 잡혀 참여율을 6.6p 누른다. 후보: 네이버 유입 스크립트 순서 · GA 태그 로딩 지연. 근거 = `docs/seo-report-2026-09-16.md` §5-1.
 3. **10/14 이후 — 배치 효과 4주 비교**(캘린더 등재됨). 기준선 `docs/post-placement-analysis-2026-09-16.md` §2 · 같은 창(`npm run analytics` + `ga-fetch --pages --days 28`). 모바일 홈 36.7%(60세션)는 09-16 배포 전 값 — 그때 재측정.
 
