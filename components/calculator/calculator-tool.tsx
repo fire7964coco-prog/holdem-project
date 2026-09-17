@@ -7,6 +7,7 @@ import { CalculatorWorkspace } from "@/components/calculator-workspace";
 import { Calculator, TrendingUp, Layers, Target, Trophy, BarChart3, Zap } from "lucide-react";
 import { pfLookup, PF_STACK_MIN, PF_STACK_MAX, PF_STACK_STEP } from "@/lib/pushfold-data";
 import { pfLookupMultiway, PF_MW_POSITIONS } from "@/lib/pushfold-multiway-data";
+import { calcEquity, evaluate7, categoryOf } from "@/lib/equity";
 import type { CalcDict } from "./dict";
 
 // ─────────────────────────────────────────────
@@ -239,6 +240,191 @@ function CardPicker({ selected, max, onToggle, onClear, disabled = [], label }: 
 }
 
 // ─────────────────────────────────────────────
+// 0. Equity Calculator (hand vs hand) — ★2026-09-17 · renders only when dict.equity exists
+// ─────────────────────────────────────────────
+// Card {rank,suit} ↔ lib/equity 0..51 share the same encoding (rank*4+suit, suits ♠♥♦♣ = 0..3).
+type Seat = { cards: Card[]; random: boolean };
+const EQ_MAX_PLAYERS = 4;
+
+function fromId(id: number): Card { return { rank: id >> 2, suit: id & 3 }; }
+function cardText(c: Card) { return RANKS[c.rank] + SUITS[c.suit]; }
+
+function EquityCalc() {
+  const { dict } = useCalc();
+  const D = dict.equity!;
+  const [seats, setSeats] = useState<Seat[]>([{ cards: [], random: false }, { cards: [], random: false }]);
+  const [board, setBoard] = useState<Card[]>([]);
+  const [active, setActive] = useState<number>(0); // seat index, or -1 = board
+
+  const allUsed = useMemo(() => [...board, ...seats.flatMap(s => s.cards)], [board, seats]);
+  const activeCards = active < 0 ? board : seats[active].cards;
+  const activeMax = active < 0 ? 5 : 2;
+
+  const toggle = (c: Card) => {
+    const id = cardId(c);
+    if (active < 0) {
+      setBoard(prev => prev.some(x => cardId(x) === id) ? prev.filter(x => cardId(x) !== id) : prev.length >= 5 ? prev : [...prev, c]);
+    } else {
+      setSeats(prev => prev.map((s, i) => {
+        if (i !== active) return s;
+        const has = s.cards.some(x => cardId(x) === id);
+        if (has) return { ...s, cards: s.cards.filter(x => cardId(x) !== id) };
+        if (s.cards.length >= 2) return s;
+        return { ...s, cards: [...s.cards, c], random: false };
+      }));
+    }
+  };
+  const clearActive = () => {
+    if (active < 0) setBoard([]);
+    else setSeats(prev => prev.map((s, i) => i === active ? { ...s, cards: [] } : s));
+  };
+  const setRandom = (i: number, random: boolean) =>
+    setSeats(prev => prev.map((s, j) => j === i ? { cards: random ? [] : s.cards, random } : s));
+  const addSeat = () => setSeats(prev => prev.length >= EQ_MAX_PLAYERS ? prev : [...prev, { cards: [], random: false }]);
+  const removeSeat = () => {
+    setSeats(prev => prev.length <= 2 ? prev : prev.slice(0, -1));
+    setActive(a => Math.min(a, seats.length - 2));
+  };
+  const applyPreset = (hands: string[]) => {
+    const parse = (h: string) => [h.slice(0, 2), h.slice(2, 4)].map(s => {
+      const r = ["2","3","4","5","6","7","8","9","T","J","Q","K","A"].indexOf(s[0]);
+      const su = "shdc".indexOf(s[1]);
+      return { rank: r, suit: su };
+    });
+    setSeats(hands.map(h => ({ cards: parse(h), random: false })));
+    setBoard([]);
+    setActive(0);
+  };
+
+  const ready = seats.every(s => s.random || s.cards.length === 2) && [0, 3, 4, 5].includes(board.length);
+  const result = useMemo(() => {
+    if (!ready) return null;
+    const hands = seats.map(s => s.random ? [] : s.cards.map(cardId));
+    const b = board.map(cardId);
+    const r = calcEquity(hands, b, { trials: 60_000 });
+    // showdown detail when the board is complete and every hand is known
+    let showdown: { cat: number; best: boolean }[] | null = null;
+    if (b.length === 5 && hands.every(h => h.length === 2)) {
+      const scores = hands.map(h => evaluate7([...h, ...b]));
+      const top = Math.max(...scores);
+      showdown = scores.map(s => ({ cat: categoryOf(s), best: s === top }));
+    }
+    return { ...r, showdown };
+  }, [ready, seats, board]);
+
+  const seatLabel = (i: number) => i === 0 ? D.hero : fmt(D.opp, { n: i });
+
+  return (
+    <div className="space-y-6">
+      {/* Seats + board selector */}
+      <div className="flex flex-wrap gap-2">
+        {seats.map((s, i) => (
+          <button key={i} type="button" onClick={() => setActive(i)} aria-pressed={active === i}
+            className={`rounded-xl border px-3 py-2 text-left transition-all min-w-[120px] ${active === i ? "border-primary bg-primary/10" : "border-border bg-card hover:border-primary/50"}`}>
+            <p className="text-[10px] font-bold uppercase tracking-wide text-muted-foreground">{seatLabel(i)}</p>
+            <p className="text-sm font-black text-foreground font-mono min-h-[20px]">
+              {s.random ? D.random : s.cards.length ? s.cards.map(cardText).join(" ") : "— —"}
+            </p>
+          </button>
+        ))}
+        <button type="button" onClick={() => setActive(-1)} aria-pressed={active === -1}
+          className={`rounded-xl border px-3 py-2 text-left transition-all min-w-[150px] ${active === -1 ? "border-primary bg-primary/10" : "border-border bg-card hover:border-primary/50"}`}>
+          <p className="text-[10px] font-bold uppercase tracking-wide text-muted-foreground">{D.board}</p>
+          <p className="text-sm font-black text-foreground font-mono min-h-[20px]">{board.length ? board.map(cardText).join(" ") : "— — —"}</p>
+        </button>
+      </div>
+
+      <div className="flex flex-wrap items-center gap-2 text-xs">
+        {active >= 1 && (
+          <label className="flex items-center gap-1.5 rounded-lg border border-border bg-card px-2.5 py-1.5 cursor-pointer">
+            <input type="checkbox" checked={seats[active].random} onChange={e => setRandom(active, e.target.checked)} />
+            <span className="font-semibold text-foreground">{D.random}</span>
+          </label>
+        )}
+        <button type="button" onClick={addSeat} disabled={seats.length >= EQ_MAX_PLAYERS}
+          className="rounded-lg border border-border bg-card px-2.5 py-1.5 font-semibold text-foreground disabled:opacity-40">{D.addPlayer}</button>
+        <button type="button" onClick={removeSeat} disabled={seats.length <= 2}
+          className="rounded-lg border border-border bg-card px-2.5 py-1.5 font-semibold text-foreground disabled:opacity-40">{D.removePlayer}</button>
+        <span className="text-muted-foreground">{D.pickerHint}</span>
+      </div>
+
+      <CardPicker selected={activeCards} max={activeMax} onToggle={toggle} onClear={clearActive}
+        disabled={allUsed.filter(c => !activeCards.some(x => cardId(x) === cardId(c)))}
+        label={active < 0 ? D.board : seatLabel(active)} />
+
+      {/* Presets */}
+      <div className="flex flex-wrap gap-1.5">
+        {D.presets.map(p => (
+          <button key={p.label} type="button" onClick={() => applyPreset(p.hands)}
+            className="rounded-full border border-border bg-card px-3 py-1 text-xs font-semibold text-muted-foreground hover:text-foreground hover:border-primary/60">{p.label}</button>
+        ))}
+      </div>
+
+      {/* Result */}
+      <div className="rounded-2xl bg-card border border-border p-5">
+        {!result ? (
+          <div className="text-center py-6">
+            <p className="text-3xl mb-3">🎲</p>
+            {/* headline names the condition that actually failed (hands first, then board) */}
+            {seats.every(s => s.random || s.cards.length === 2)
+              ? <p className="text-muted-foreground text-sm">{D.boardCount}</p>
+              : <><p className="text-muted-foreground text-sm">{D.needTwo}</p><p className="text-xs text-muted-foreground mt-2">{D.boardCount}</p></>}
+          </div>
+        ) : (
+          <div>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="border-b border-border">
+                    <th className="px-2 py-2 text-left font-bold text-muted-foreground">{D.th.player}</th>
+                    <th className="px-2 py-2 text-left font-bold text-muted-foreground">{D.th.hand}</th>
+                    {/* 09-17 screen-review: on 390px the Equity column fell off-screen — Win/Tie fold under the hand on mobile */}
+                    <th className="px-2 py-2 text-right font-bold text-muted-foreground hidden sm:table-cell">{D.th.win}</th>
+                    <th className="px-2 py-2 text-right font-bold text-muted-foreground hidden sm:table-cell">{D.th.tie}</th>
+                    <th className="px-2 py-2 text-right font-bold text-primary-ink">{D.th.equity}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {seats.map((s, i) => {
+                    const eq = result.equity[i] * 100;
+                    return (
+                      <tr key={i} className="border-b border-border/60 last:border-0">
+                        <td className="px-2 py-2.5 font-bold text-foreground whitespace-nowrap">{seatLabel(i)}</td>
+                        <td className="px-2 py-2.5 font-mono text-foreground whitespace-nowrap">{s.random ? D.random : s.cards.map(cardText).join(" ")}<span className="block sm:hidden text-[10px] text-muted-foreground mt-0.5">{D.th.win} {(result.win[i] * 100).toFixed(1)}% · {D.th.tie} {(result.tie[i] * 100).toFixed(1)}%</span></td>
+                        <td className="px-2 py-2.5 text-right font-mono text-muted-foreground hidden sm:table-cell">{(result.win[i] * 100).toFixed(1)}%</td>
+                        <td className="px-2 py-2.5 text-right font-mono text-muted-foreground hidden sm:table-cell">{(result.tie[i] * 100).toFixed(1)}%</td>
+                        <td className={`px-2 py-2.5 text-right font-mono font-black text-lg ${pcolor(eq)}`}>{eq.toFixed(1)}%</td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
+            <div className="mt-4 flex h-3 w-full overflow-hidden rounded-full bg-muted">
+              {seats.map((_, i) => (
+                <div key={i} className={`h-3 ${["bg-primary", "bg-red-400", "bg-blue-400", "bg-amber-400"][i]}`} style={{ width: `${result.equity[i] * 100}%` }} />
+              ))}
+            </div>
+            {result.showdown && (
+              <p className="mt-4 text-sm font-bold text-foreground">
+                {result.showdown.filter(x => x.best).length === 1
+                  ? fmt(D.winner, { p: seatLabel(result.showdown.findIndex(x => x.best)), hand: dict.handEval.rankNames[result.showdown.find(x => x.best)!.cat] })
+                  : fmt(D.chop, { n: result.showdown.filter(x => x.best).length, hand: dict.handEval.rankNames[result.showdown.find(x => x.best)!.cat] })}
+              </p>
+            )}
+            <p className="mt-3 text-[11px] text-muted-foreground">
+              {board.length === 5 && result.showdown
+                ? D.showdownNote
+                : result.exact ? fmt(D.exactNote, { n: result.samples.toLocaleString(dict.numberLocale) }) : fmt(D.mcNote, { n: result.samples.toLocaleString(dict.numberLocale) })}
+            </p>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+// ─────────────────────────────────────────────
 // 1. Outs Calculator
 // ─────────────────────────────────────────────
 // Outs per preset — labels/descriptions live in dict.outs.presets (aligned by index).
@@ -269,13 +455,22 @@ function OutsCalc() {
   const D = dict.outs;
   const [sel, setSel] = useState(1);
   const [custom, setCustom] = useState(9);
-  const [stage, setStage] = useState<"flop"|"turn">("flop");
+  const [stage, setStage] = useState<"flop"|"flop1"|"turn">("flop");
   const preset = DRAW_PRESETS[sel];
   const presetText = D.presets[sel];
   const outs = preset.custom ? custom : preset.outs;
   const flop = ec(outs, true);
   const turn = ec(outs, false);
-  const pct = stage === "flop" ? flop : turn;
+  // ★2026-09-17 optional third street: flop → next card only (o/47) — the figure when facing one bet on the flop
+  const hasFlopOne = !!(D.flopOneBtn && D.afterFlopOne && D.chanceFlopOne);
+  const flop1 = Math.round((outs / 47) * 1000) / 10;
+  const pct = stage === "flop" ? flop : stage === "flop1" ? flop1 : turn;
+  const ruleN: 4|2 = stage === "flop" ? 4 : 2;
+  const stages = hasFlopOne ? (["flop","flop1","turn"] as const) : (["flop","turn"] as const);
+  const stageBtn = (s: "flop"|"flop1"|"turn") => s === "flop" ? D.afterFlopBtn : s === "flop1" ? D.flopOneBtn : D.afterTurnBtn;
+  const cards: [string, number, string, string][] = hasFlopOne
+    ? [["flop", flop, D.afterFlop, D.ruleOf4], ["flop1", flop1, D.afterFlopOne!, D.ruleOf2], ["turn", turn, D.afterTurn, D.ruleOf2]]
+    : [["flop", flop, D.afterFlop, D.ruleOf4], ["turn", turn, D.afterTurn, D.ruleOf2]];
   return (
     <div className="space-y-6">
       <div className="grid md:grid-cols-2 gap-4">
@@ -293,11 +488,11 @@ function OutsCalc() {
         </div>
         <div>
           <label className="block text-xs font-bold text-muted-foreground mb-2 uppercase tracking-wide">{D.street}</label>
-          <div className="grid grid-cols-2 gap-2">
-            {(["flop","turn"] as const).map(s => (
+          <div className={`grid gap-2 ${hasFlopOne ? "grid-cols-3" : "grid-cols-2"}`}>
+            {stages.map(s => (
               <button key={s} onClick={() => setStage(s)} aria-pressed={stage === s}
                 className={`py-3 rounded-xl text-sm font-bold border transition-all ${stage===s ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border text-muted-foreground hover:border-primary/50"}`}>
-                {s==="flop" ? D.afterFlopBtn : D.afterTurnBtn}
+                {stageBtn(s)}
               </button>
             ))}
           </div>
@@ -313,8 +508,8 @@ function OutsCalc() {
           <div className="flex justify-between text-xs text-muted-foreground mt-1"><span>1</span><span>5</span><span>10</span><span>15</span><span>20</span></div>
         </div>
       )}
-      <div className="grid grid-cols-2 gap-3">
-        {[["flop", flop, D.afterFlop, D.ruleOf4], ["turn", turn, D.afterTurn, D.ruleOf2]].map(([k, val, lbl, ruleLbl]) => (
+      <div className={`grid gap-3 ${hasFlopOne ? "grid-cols-3" : "grid-cols-2"}`}>
+        {cards.map(([k, val, lbl, ruleLbl]) => (
           <div key={String(k)} className={`rounded-xl p-4 border text-center transition-all ${stage===k ? "border-primary/60 bg-primary/5" : "border-border bg-card"}`}>
             <p className="text-xs text-muted-foreground mb-1">{String(lbl)}</p>
             <p className="text-xs text-muted-foreground/60 mb-2">{String(ruleLbl)}</p>
@@ -325,13 +520,13 @@ function OutsCalc() {
       <div className="rounded-2xl bg-card border border-border p-5">
         <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between mb-4">
           <div>
-            <p className="text-xs text-muted-foreground mb-1">{stage==="flop" ? D.chanceFlop : D.chanceTurn}{D.exact}</p>
+            <p className="text-xs text-muted-foreground mb-1">{stage==="flop" ? D.chanceFlop : stage==="flop1" ? D.chanceFlopOne : D.chanceTurn}{D.exact}</p>
             <p className={`text-5xl sm:text-6xl font-black tabular-nums ${pcolor(pct)}`}>{pct}%</p>
             <p className={`text-sm font-bold mt-1 ${pcolor(pct)}`}>{plabel(pct, D.verdict)}</p>
           </div>
           <div className="text-right text-xs text-muted-foreground space-y-1">
-            <p>{fmtNodes(D.ruleMental, { n: stage==="flop"?4:2 })}</p>
-            <p className="text-foreground font-bold text-base">{outs} × {stage==="flop"?4:2} = ~{rule(outs, stage==="flop"?4:2)}%</p>
+            <p>{fmtNodes(D.ruleMental, { n: ruleN })}</p>
+            <p className="text-foreground font-bold text-base">{outs} × {ruleN} = ~{rule(outs, ruleN)}%</p>
             <p className="text-primary/70 text-[10px]">{D.exactNote}</p>
           </div>
         </div>
@@ -965,6 +1160,7 @@ function ICMCalc() {
                   <th className="px-3 py-2.5 text-right text-muted-foreground font-bold hidden sm:table-cell">{D.th.chipPct}</th>
                   <th className="px-3 py-2.5 text-right text-primary font-bold">{D.th.icmValue}</th>
                   <th className="px-3 py-2.5 text-right text-muted-foreground font-bold">{D.th.icmPct}</th>
+                  {D.th.chop && <th className="px-3 py-2.5 text-right text-muted-foreground font-bold">{D.th.chop}</th>}
                   <th className="px-3 py-2.5 text-right text-muted-foreground font-bold">{D.th.diff}</th>
                 </tr>
               </thead>
@@ -980,6 +1176,8 @@ function ICMCalc() {
                       <td className="px-3 py-2.5 text-right font-mono text-muted-foreground hidden sm:table-cell">{chipPct.toFixed(1)}%</td>
                       <td className="px-3 py-2.5 text-right font-mono font-bold text-primary">{nf(Math.round(equity))}</td>
                       <td className="px-3 py-2.5 text-right font-mono">{icmPct.toFixed(1)}%</td>
+                      {/* ★2026-09-17 chip chop = chip share × remaining prize pool — optional column (dict.icm.th.chop) */}
+                      {D.th.chop && <td className="px-3 py-2.5 text-right font-mono text-muted-foreground">{nf(Math.round((stacks[i] / totalChips) * totalPrize))}</td>}
                       <td className={`px-3 py-2.5 text-right font-mono font-bold ${diff > 0.1 ? "text-green-400" : diff < -0.1 ? "text-red-400" : "text-muted-foreground"}`}>
                         {diff > 0 ? "+" : ""}{diff.toFixed(1)}%
                       </td>
@@ -1204,7 +1402,9 @@ export default function CalculatorTool({ locale, dict, faq }: { locale: string; 
   }), [dict, locale]);
 
   // ─── Tab Config ───
+  // ★2026-09-17 「Equity」 탭은 dict.equity가 있는 로케일에만 — 맨 앞(초기 탭 = SSR되는 유일한 탭 · «poker odds calculator» 의도).
   const TABS = useMemo(() => [
+    ...(dict.equity ? [{ id:"equity", icon:<Layers className="w-4 h-4" />, label:dict.equity.label, sub:dict.equity.sub, component:<EquityCalc /> }] : []),
     { id:"outs",     icon:<Target className="w-4 h-4" />,      label:dict.tabs.outs.label,     sub:dict.tabs.outs.sub,     component:<OutsCalc /> },
     { id:"pot",      icon:<TrendingUp className="w-4 h-4" />,  label:dict.tabs.pot.label,      sub:dict.tabs.pot.sub,      component:<PotOddsCalc /> },
     { id:"hand",     icon:<Layers className="w-4 h-4" />,      label:dict.tabs.hand.label,     sub:dict.tabs.hand.sub,     component:<HandEvaluatorCalc /> },
@@ -1334,6 +1534,11 @@ export default function CalculatorTool({ locale, dict, faq }: { locale: string; 
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mt-5 max-w-3xl">
             {fmtNodes(G.deal.summary.text, { b1: bold(G.deal.summary.b1), b2: bold(G.deal.summary.b2), b3: bold(G.deal.summary.b3) })}
           </p>
+          {G.deal.link && (
+            <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mt-3 max-w-3xl">
+              {G.deal.linkLead}{" "}<a href={`/${locale}/blog/${G.deal.link.slug}`} className="text-primary-ink font-semibold underline underline-offset-2">{G.deal.link.text}</a>
+            </p>
+          )}
         </div>
 
         {/* Tool guide cards */}
@@ -1343,7 +1548,7 @@ export default function CalculatorTool({ locale, dict, faq }: { locale: string; 
           <div className="grid md:grid-cols-2 gap-4">
             {dict.guide.cards.map((c, i) => (
               <div key={c.title} className="luxe-card p-5 flex gap-4">
-                <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-xl flex-shrink-0">{GUIDE_ICONS[i]}</div>
+                <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-xl flex-shrink-0">{c.icon ?? GUIDE_ICONS[i]}</div>
                 <div>
                   <h3 className="text-base font-black text-foreground mb-1.5">{c.title}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">{c.body}</p>
@@ -1352,6 +1557,40 @@ export default function CalculatorTool({ locale, dict, faq }: { locale: string; 
             ))}
           </div>
         </div>
+
+        {/* Quick reference tables — ★2026-09-17 · static, indexable summaries of the tool data (dict.quickRef, optional) */}
+        {dict.quickRef?.map(sec => (
+          <div key={sec.h2}>
+            <p className="mb-3"><span className="badge-gold">{sec.badge}</span></p>
+            <h2 className="text-xl sm:text-2xl font-black text-foreground mb-3">{sec.h2}</h2>
+            <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-5 max-w-3xl">{sec.intro}</p>
+            <div className="overflow-x-auto rounded-xl border border-border">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="bg-card border-b border-border">
+                    {sec.th.map((h, i) => (
+                      <th key={h} className={`px-3 py-2.5 font-bold ${i === 0 ? "whitespace-nowrap" : ""} ${sec.align?.[i] === "right" ? "text-right" : "text-left"} ${i === sec.emphasis ? "text-primary-ink" : "text-muted-foreground"}`}>{h}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {sec.rows.map((row, ri) => (
+                    <tr key={ri} className="border-b border-border/60 last:border-0">
+                      {row.map((cell, ci) => (
+                        <td key={ci} className={`px-3 py-2.5 ${sec.align?.[ci] === "right" ? "text-right font-mono" : ""} ${ci === 0 || sec.nowrap?.includes(ci) ? "whitespace-nowrap" : ""} ${ci === 0 ? "font-bold text-foreground" : ci === sec.emphasis ? "font-bold text-foreground" : "text-muted-foreground"}`}>{cell}</td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            {sec.note && (
+              <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mt-5 max-w-3xl">
+                {sec.note}{sec.link && <> <a href={`/${locale}/blog/${sec.link.slug}`} className="text-primary-ink font-semibold underline underline-offset-2">{sec.link.text}</a>{sec.linkTail ?? ""}</>}
+              </p>
+            )}
+          </div>
+        ))}
 
         {/* FAQ */}
         <div>
