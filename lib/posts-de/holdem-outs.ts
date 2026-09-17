@@ -111,7 +111,7 @@ Hier ist die Master-Tabelle – die Odds, bis zum River zu treffen, plus die Ein
 
 Zwei Zahlen zählen für jeden Draw. **„Bis zum River“** rechnet beide verbleibenden Karten und gilt, wenn du am Flop all-in bist und nichts mehr zu setzen hast. **„Nur Turn“** rechnet nur die nächste Karte (9 ÷ 47 = 19,1%; vom Turn zum River werden daraus 9 ÷ 46 = 19,6%) – nutze das, sobald noch weitere Setzrunden kommen, denn dir ist nur garantiert, jeweils eine Karte zu sehen. Anfänger zitieren die fette „bis zum River“-Zahl, während sie eine Turn-Bet vor sich haben, reden sich in einen Call hinein und zahlen dafür.
 
-Beachte das 15-Outs-Monster: mit zwei kommenden Karten ist es tatsächlich ein **Favorit** (54,1%), der seltene Draw, mit dem du am Flop happy all-in gehen kannst. Wenn du einen Spot gegenrechnen willst, statt ihn zu schätzen: unser [Poker-Rechner](/calculator) macht Outs, Pot Odds und Equity in einem Schritt.
+Beachte das 15-Outs-Monster: mit zwei kommenden Karten ist es tatsächlich ein **Favorit** (54,1%), der seltene Draw, mit dem du am Flop happy all-in gehen kannst. Wenn du einen Spot gegenrechnen willst, statt ihn zu schätzen: unser [Poker-Rechner](/de/calculator) macht Outs, Pot Odds und Equity in einem Schritt.
 
 ---
 

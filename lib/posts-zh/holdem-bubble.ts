@@ -57,7 +57,7 @@ bubble 之所以要紧，是因为锦标赛的奖金结构 ==头重脚轻==。�
 
 换算成真金白银，一次在筹码上打平的跟注可能就是亏钱的打法。
 
-你不需要在牌桌上现算这套数学——那正是我们的 [ICM 计算器](/calculator) 要干的事，完整的拆解则在 [ICM 指南](/zh/blog/holdem-icm) 里。在牌桌上真正要紧的是那个后果：==跟注收得紧得多，但 shove 依然宽==，因为在别人都吓得缩手时，不摊牌就赢下底池（fold equity，弃牌胜率）比任何时候都更值钱。记住一句话：**先收紧你的跟注，再收紧你的 shove。**
+你不需要在牌桌上现算这套数学——那正是我们的 [ICM 计算器](/zh/calculator) 要干的事，完整的拆解则在 [ICM 指南](/zh/blog/holdem-icm) 里。在牌桌上真正要紧的是那个后果：==跟注收得紧得多，但 shove 依然宽==，因为在别人都吓得缩手时，不摊牌就赢下底池（fold equity，弃牌胜率）比任何时候都更值钱。记住一句话：**先收紧你的跟注，再收紧你的 shove。**
 
 ---
 
@@ -161,7 +161,7 @@ bubble factor 为 1.0，意味着筹码和钱同步移动（锦标赛早期）�
 
 最后那一列要当成上限来读，而不是你这个局面的数字：真实的 bubble 底池里躺着死钱，而死钱会把要求往**下**压。小盲推 10bb、你跟 9bb，底池里已经有 12bb 的话，bubble factor 1.5 下你需要的是 ==52.9%==，不是 60%；完全没有 ICM 压力时，那就只是纯粹的底池赔率 ==42.9%==。
 
-另一半是：bubble factor 跟着**坐在你对面的是谁**走，而不是跟着阶段走。四人剩三人进钱时，中等码量面对 chip leader 的 bubble factor 接近 ==3.0==，而同一个中等码量面对最短的那个人却勉强超过 ==1.1==；码量均等时约为 ==1.9==，六人的决赛桌 bubble 则从 ==2.0== 起跳。把 1.5–1.7 当成一个正经 bubble 的**下限**，而不是峰值——至于进了钱会掉回来，这一点是对的。把你自己的码量和奖金填进 [ICM 计算器](/calculator)，看看某个局面里你真正的数字是多少。
+另一半是：bubble factor 跟着**坐在你对面的是谁**走，而不是跟着阶段走。四人剩三人进钱时，中等码量面对 chip leader 的 bubble factor 接近 ==3.0==，而同一个中等码量面对最短的那个人却勉强超过 ==1.1==；码量均等时约为 ==1.9==，六人的决赛桌 bubble 则从 ==2.0== 起跳。把 1.5–1.7 当成一个正经 bubble 的**下限**，而不是峰值——至于进了钱会掉回来，这一点是对的。把你自己的码量和奖金填进 [ICM 计算器](/zh/calculator)，看看某个局面里你真正的数字是多少。
 
 ---
 
@@ -280,7 +280,7 @@ A. 因为在送出多个席位的卫星赛里，每一个席位发的奖都一�
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">扑克里什么时候该弃牌</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">bubble 所要求的那份自律</div>
   </a>
-  <a href="/calculator" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/zh/calculator" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">免费工具</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ICM 计算器</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">找出你真正的 bubble-factor 数字</div>

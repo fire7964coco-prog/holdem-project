@@ -91,7 +91,7 @@ Sekarang kalikan tiap baris dengan payout dan Anda dapat nilai dolar tiap stack:
 
 </div>
 
-Itu dia dalam angka: leader punya ==separuh chip tapi hanya 38,4% dari uang==, sementara 20% chip short stack bernilai 28,9%. Anda tak perlu menghitung ini dengan tangan di meja — [kalkulator ICM](/calculator) melakukannya seketika — tapi melihat mesinnya sekali itulah yang membuat strateginya melekat.
+Itu dia dalam angka: leader punya ==separuh chip tapi hanya 38,4% dari uang==, sementara 20% chip short stack bernilai 28,9%. Anda tak perlu menghitung ini dengan tangan di meja — [kalkulator ICM](/id/calculator) melakukannya seketika — tapi melihat mesinnya sekali itulah yang membuat strateginya melekat.
 
 ---
 
@@ -146,7 +146,7 @@ Misalkan tiga pemain dengan 50% / 30% / 20% chip membagi sisa pool ==$1.500== (m
 
 </div>
 
-Short stack mendapat ==$97 lebih banyak== dari ICM deal daripada chip chop, karena ICM memperhitungkan pay jump yang sudah mereka peroleh. Jadi aturannya mudah: ==jika Anda short, minta ICM deal; jika Anda chip leader, usulkan chip chop.== Dalam praktik chip leader sering menegosiasikan sedikit *di atas* angka ICM mereka (dan short stack menerima sedikit di bawah) demi kepastian mengunci uang — itu tak apa, selama Anda tahu angka ICM Anda dulu. Jalankan stack dan payout Anda sendiri lewat [kalkulator ICM deal](/calculator) sebelum menyetujui apa pun.
+Short stack mendapat ==$97 lebih banyak== dari ICM deal daripada chip chop, karena ICM memperhitungkan pay jump yang sudah mereka peroleh. Jadi aturannya mudah: ==jika Anda short, minta ICM deal; jika Anda chip leader, usulkan chip chop.== Dalam praktik chip leader sering menegosiasikan sedikit *di atas* angka ICM mereka (dan short stack menerima sedikit di bawah) demi kepastian mengunci uang — itu tak apa, selama Anda tahu angka ICM Anda dulu. Jalankan stack dan payout Anda sendiri lewat [kalkulator ICM deal](/id/calculator) sebelum menyetujui apa pun.
 
 ---
 
@@ -225,7 +225,7 @@ A. Matematika probabilitas finis biasanya dikreditkan kepada David Harville (dar
 
 1. **Chip bukan uang.** Anda hanya memenangkan satu hadiah pertama, jadi chip leader bernilai lebih kecil dari porsi chipnya dan short stack bernilai lebih besar. Celah tunggal itu adalah seluruh ICM.
 2. **Late game, beralih dari chip EV ke $EV.** Menjelang pay jump, sebuah call butuh equity ekstra (risk premium) agar profit. Medium stack memfold tangan yang akan di-snap-call cash game.
-3. **Ketahui angka Anda sebelum deal.** Short stack ingin ICM deal, big stack ingin chip chop — jalankan [kalkulator](/calculator) dulu.
+3. **Ketahui angka Anda sebelum deal.** Short stack ingin ICM deal, big stack ingin chip chop — jalankan [kalkulator](/id/calculator) dulu.
 
 Dari sini, lihat bagaimana tekanan ICM cocok dengan [strategi turnamen](/id/blog/holdem-tournament) yang lebih luas, atau kembali ke fondasi dengan [equity poker](/id/blog/holdem-equity) dan [pot odds](/id/blog/holdem-pot-odds).
 
@@ -249,7 +249,7 @@ Dari sini, lihat bagaimana tekanan ICM cocok dengan [strategi turnamen](/id/blog
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Equity Poker Dijelaskan</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Chip EV hanyalah equity dalam chip</div>
   </a>
-  <a href="/calculator" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/id/calculator" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Alat Gratis</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Kalkulator ICM</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Jalankan stack dan deal Anda sendiri</div>

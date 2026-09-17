@@ -131,6 +131,8 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
     { href: "/ja/blog",        icon: "📚", label: "ブログ" },
     { href: "/ja/solver",      icon: "🧠", label: "GTOソルバー" },
     { href: "/ja/tournaments", icon: "🏆", label: "トーナメント" },
+    // ★2026-09-17 `/ja/calculator` 신설. 라벨 = 그 페이지 HubPage title 축어(제목 「ポーカー勝率計算機 — …」의 단축형).
+    { href: "/ja/calculator",  icon: "🧮", label: "勝率計算機" },
   ],
   /**
    * ★2026-08-22 — `/es/solver` 신설과 함께 추가. 라벨 "Solver GTO"는 **지어낸 것이 아니라**
@@ -142,6 +144,8 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
     { href: "/es/blog",        icon: "📚", label: "Blog" },
     { href: "/es/solver",      icon: "🧠", label: "Solver GTO" },
     { href: "/es/tournaments", icon: "🏆", label: "Torneos" },
+    // ★2026-09-17 `/es/calculator` 신설. 라벨 = 제목 「Calculadora de probabilidades de poker — …」의 단축형.
+    { href: "/es/calculator",  icon: "🧮", label: "Calculadora de poker" },
   ],
   /**
    * ★2026-08-23 — `/pt/solver` 신설과 함께 추가. 라벨 "Solver GTO"는 **지어낸 것이 아니라**
@@ -154,6 +158,8 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
   pt: [
     { href: "/pt/blog",   icon: "📚", label: "Blog" },
     { href: "/pt/solver", icon: "🧠", label: "Solver GTO" },
+    // ★2026-09-17 `/pt/calculator` 신설. 라벨 = 제목 「Calculadora de probabilidades de poker — …」에서 딴 단축형.
+    { href: "/pt/calculator", icon: "🧮", label: "Calculadora de poker" },
   ],
   /**
    * de — 2026-08-10 신설. 라벨은 ja·es와 같은 규칙으로 **검증된 값에서 축어 복사**:
@@ -172,6 +178,8 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
      */
     { href: "/de/solver",      icon: "🧠", label: "GTO Solver" },
     { href: "/de/tournaments", icon: "🏆", label: "Turniere" },
+    // ★2026-09-17 `/de/calculator` 신설. 라벨 = 그 페이지 HubPage title 축어(de 코퍼스 다수 앵커 「Poker-Rechner」 5회).
+    { href: "/de/calculator",  icon: "🧮", label: "Poker-Rechner" },
   ],
   /**
    * ★2026-08-24 — `/zh/solver` 신설과 함께 추가(7번째 솔버 랜딩). 라벨은 전부 검증된 값에서
@@ -185,6 +193,8 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
     { href: "/zh/blog",        icon: "📚", label: "博客" },
     { href: "/zh/solver",      icon: "🧠", label: "GTO 求解器" },
     { href: "/zh/tournaments", icon: "🏆", label: "锦标赛" },
+    // ★2026-09-17 `/zh/calculator` 신설. 라벨 = 그 페이지 HubPage title 축어(제목 「免费德州扑克概率计算器 — …」의 단축형).
+    { href: "/zh/calculator",  icon: "🧮", label: "概率计算器" },
   ],
   /**
    * ★2026-08-24 — `/zh-hant/solver` 신설과 함께 추가(8번째 = 마지막 솔버 랜딩). 라벨은 전부
@@ -200,6 +210,8 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
     { href: "/zh-hant/blog",        icon: "📚", label: "部落格" },
     { href: "/zh-hant/solver",      icon: "🧠", label: "GTO 解算器" },
     { href: "/zh-hant/tournaments", icon: "🏆", label: "錦標賽" },
+    // ★2026-09-17 `/zh-hant/calculator` 신설. 라벨 = 그 페이지 HubPage title 축어(제목 「撲克機率計算器 — …」의 단축형).
+    { href: "/zh-hant/calculator",  icon: "🧮", label: "機率計算器" },
   ],
   /**
    * ★2026-08-24 — `/fr/solver` 신설과 함께 추가(9번째 · 솔버 앱 fr 배포 당일). 라벨은 검증된
@@ -211,6 +223,8 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
   fr: [
     { href: "/fr/blog",   icon: "📚", label: "Blog" },
     { href: "/fr/solver", icon: "🧠", label: "Solver GTO" },
+    // ★2026-09-17 `/fr/calculator` 신설. 라벨 = 그 페이지 HubPage title 축어(제목 「Calculatrice de probabilités poker — …」의 단축형).
+    { href: "/fr/calculator", icon: "🧮", label: "Calculatrice poker" },
   ],
   /**
    * ★2026-09-05 — `/id/solver` 신설과 함께 추가(10번째). 라벨은 검증된 값에서:
@@ -223,16 +237,22 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
   id: [
     { href: "/id/blog",   icon: "📚", label: "Blog" },
     { href: "/id/solver", icon: "🧠", label: "Solver GTO" },
+    // ★2026-09-17 `/id/calculator` 신설. 라벨 = 제목 「Kalkulator Odds Poker — …」의 단축형.
+    { href: "/id/calculator", icon: "🧮", label: "Kalkulator Odds" },
   ],
   // ms — 실제 존재하는 블로그와 신규 솔버 랜딩만 연결한다.
   ms: [
     { href: "/ms/blog",   icon: "📚", label: "Blog" },
     { href: "/ms/solver", icon: "🧠", label: "Solver GTO" },
+    // ★2026-09-17 `/ms/calculator` 신설. 라벨 = 제목 「Kalkulator Odds Poker — …」의 핵심명 축어.
+    { href: "/ms/calculator", icon: "🧮", label: "Kalkulator Odds Poker" },
   ],
   // hi — 기존 힌디 블로그와 신규 솔버 랜딩만 연결한다.
   hi: [
     { href: "/hi/blog",   icon: "📚", label: CHROME.hi.blogLabel },
     { href: "/hi/solver", icon: "🧠", label: "GTO सॉल्वर" },
+    // ★2026-09-17 `/hi/calculator` 신설. 핵심명은 영어 유지(사장님 규칙 09-16) · 라벨 = hi 코퍼스 앵커 「poker odds कैलकुलेटर」의 단축형.
+    { href: "/hi/calculator", icon: "🧮", label: "Odds कैलकुलेटर" },
   ],
 };
 

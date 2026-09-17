@@ -53,7 +53,7 @@ La burbuja importa porque los premios de torneo son ==top-heavy== (cargados arri
 
 **Porque las fichas de torneo no son dinero — solo ganas un primer premio, así que las fichas que protegen un cobro garantizado valen más que las fichas que van a por más.** Esto es el Independent Chip Model (ICM), y cerca de un salto de premios significa que ==el riesgo de bustear pesa más que la recompensa de ganar un coin flip==. Un call que es break-even en fichas puede ser una jugada perdedora en dólares reales.
 
-No necesitas hacer las cuentas en vivo — para eso está nuestra [calculadora de ICM](/en/calculator), y el desglose completo vive en la [guía de ICM](/es/blog/holdem-icm). Lo que importa en la mesa es la consecuencia: ==los calls se cierran muchísimo, pero los shoves siguen amplios==, porque ganar sin llegar al showdown (fold equity) vale más que nunca cuando todos los demás juegan con miedo. Recuerda una frase: **cierra tus calls antes de cerrar tus shoves.**
+No necesitas hacer las cuentas en vivo — para eso está nuestra [calculadora de ICM](/es/calculator), y el desglose completo vive en la [guía de ICM](/es/blog/holdem-icm). Lo que importa en la mesa es la consecuencia: ==los calls se cierran muchísimo, pero los shoves siguen amplios==, porque ganar sin llegar al showdown (fold equity) vale más que nunca cuando todos los demás juegan con miedo. Recuerda una frase: **cierra tus calls antes de cerrar tus shoves.**
 
 ---
 
@@ -129,7 +129,7 @@ Aquí va la parte útil: la equity que necesitas para quedar break-even en un ca
 
 Lee esa última columna como un techo, no como tu spot: los botes reales de burbuja llevan dinero muerto, y el dinero muerto empuja el requisito **hacia abajo**. Si la ciega pequeña va de jam por 10bb y tú pagas 9bb a un bote que ya tiene 12bb, con un bubble factor de 1.5 necesitas ==52.9%==, no 60% — y sin ninguna presión ICM son simples pot odds, ==42.9%==.
 
-La otra mitad es que el bubble factor depende de **quién tienes enfrente**, no de la fase. A cuatro jugadores con tres premiados, un stack medio frente al chip leader carga un bubble factor cercano a ==3.0==, mientras que ese mismo stack medio frente al jugador más corto apenas pasa de ==1.1==; con stacks iguales ronda ==1.9==, y en una burbuja de mesa final a seis los stacks medios van de ==2.0== para arriba (el chip leader, como siempre, se queda muy por debajo). Trata 1.5–1.7 como un suelo de una burbuja seria, no como un pico — y sí, bajan una vez que estás en premios. Mete tus propios stacks y premios en la [calculadora de ICM](/en/calculator) para ver tu número real en un spot.
+La otra mitad es que el bubble factor depende de **quién tienes enfrente**, no de la fase. A cuatro jugadores con tres premiados, un stack medio frente al chip leader carga un bubble factor cercano a ==3.0==, mientras que ese mismo stack medio frente al jugador más corto apenas pasa de ==1.1==; con stacks iguales ronda ==1.9==, y en una burbuja de mesa final a seis los stacks medios van de ==2.0== para arriba (el chip leader, como siempre, se queda muy por debajo). Trata 1.5–1.7 como un suelo de una burbuja seria, no como un pico — y sí, bajan una vez que estás en premios. Mete tus propios stacks y premios en la [calculadora de ICM](/es/calculator) para ver tu número real en un spot.
 
 ---
 
@@ -240,7 +240,7 @@ El motor detrás de todo esto es el [ICM](/es/blog/holdem-icm); la disciplina de
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Cuándo foldear en póker</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">La disciplina que exige la burbuja</div>
   </a>
-  <a href="/en/calculator" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/es/calculator" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Herramienta gratis</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Calculadora de ICM</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Encuentra tu número real de bubble factor</div>

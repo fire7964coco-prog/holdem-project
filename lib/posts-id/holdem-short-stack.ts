@@ -123,7 +123,7 @@ Pakai untuk membangun intuisi, bukan sebagai hukum alam:
 
 - **Chart itu mengasumsikan kondisi spesifik.** Chart Nash standar mengabaikan ante dan ICM; tambahkan ante dan shove Anda jadi lebih lebar, tambahkan [tekanan bubble/ICM](/id/blog/holdem-bubble) dan call Anda jadi jauh lebih ketat.
 - **Ini model heads-up / hanya-blind.** Spot nyata punya banyak pemain tersisa untuk bertindak, read, dan lonjakan bayaran yang tak bisa dilihat sebuah chart.
-- **Kesimpulan yang andal adalah bentuknya**, bukan tangan persisnya: shove lebih lebar di posisi akhir, call lebih ketat daripada Anda shove, dan jam lebih banyak saat stack Anda turun. Untuk angka sebenarnya di spot ICM atau bubble nyata, masukkan stack dan payout Anda ke [kalkulator ICM](/calculator) daripada memercayai range yang tercetak.
+- **Kesimpulan yang andal adalah bentuknya**, bukan tangan persisnya: shove lebih lebar di posisi akhir, call lebih ketat daripada Anda shove, dan jam lebih banyak saat stack Anda turun. Untuk angka sebenarnya di spot ICM atau bubble nyata, masukkan stack dan payout Anda ke [kalkulator ICM](/id/calculator) daripada memercayai range yang tercetak.
 
 *(Satu nuansa untuk yang penasaran: di 10–15 big blind, pemain kuat kadang mencampurkan min-raise kecil dengan tangan premium untuk memancing shove dari tangan yang terdominasi. Ia bisa menghasilkan lebih dari sekadar jamming murni — tapi itu tambahan tingkat lanjut. Push/fold adalah kerangka yang andal; kuasai dulu.)*
 
@@ -139,7 +139,7 @@ Apa artinya dalam praktik:
 - **Anda bisa menunggu jika yang lain lebih pendek.** Jika dua pemain punya chip lebih sedikit dari Anda di money bubble, Anda bisa fold spot marginal dan biarkan mereka bangkrut lebih dulu, naik tangga secara gratis — tapi hanya jika Anda benar-benar punya chip untuk menunggu, bukan jika Anda yang paling pendek.
 - **Jangan jadikan ICM alasan untuk fold semuanya.** Fold turun sampai tak ada fold equity untuk "menyelinap ke min-cash" menukar turnamen dengan hadiah terkecilnya. Hormati lonjakan bayaran, lalu kembali menumpuk chip.
 
-Matematika sebenarnya di balik "seberapa lebih rendah bubble factor saya" ada di [panduan ICM](/id/blog/holdem-icm) — jalankan spot persis Anda melalui [kalkulator](/calculator) saat itu penting.
+Matematika sebenarnya di balik "seberapa lebih rendah bubble factor saya" ada di [panduan ICM](/id/blog/holdem-icm) — jalankan spot persis Anda melalui [kalkulator](/id/calculator) saat itu penting.
 
 ---
 
@@ -228,7 +228,7 @@ Permainan short stack adalah tempat matematika turnamen menjadi memori otot — 
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Kapan Harus Fold di Poker</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Kapan harganya menyuruh Anda fold</div>
   </a>
-  <a href="/calculator" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/id/calculator" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Alat Gratis</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Kalkulator ICM</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Hitung spot shove/call Anda yang sebenarnya</div>

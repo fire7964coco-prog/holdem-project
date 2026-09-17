@@ -59,7 +59,7 @@ Die Bubble ist deshalb so wichtig, weil Turnier-Payouts ==top-heavy== sind. Der 
 
 Dieser Effekt ist das Independent Chip Model (ICM), und nahe eines Pay Jumps bedeutet er, dass ==das Risiko zu busten die Belohnung überwiegt, einen Coin Flip zu gewinnen==. Ein Call, der in Chips break-even ist, kann in echten Dollars ein Verlustzug sein.
 
-Du musst die Mathematik nicht live durchrechnen – dafür ist unser [ICM-Rechner](/calculator) da, und die volle Aufschlüsselung steht im [ICM-Guide](/de/blog/holdem-icm). Was am Tisch zählt, ist die Konsequenz: ==Calls werden viel tighter, aber Shoves bleiben weit==, weil Gewinnen ohne Showdown (Fold Equity) mehr wert ist als je zuvor, wenn alle anderen ängstlich spielen. Merke dir eine Zeile: **ziehe deine Calls zusammen, bevor du deine Shoves zusammenziehst.**
+Du musst die Mathematik nicht live durchrechnen – dafür ist unser [ICM-Rechner](/de/calculator) da, und die volle Aufschlüsselung steht im [ICM-Guide](/de/blog/holdem-icm). Was am Tisch zählt, ist die Konsequenz: ==Calls werden viel tighter, aber Shoves bleiben weit==, weil Gewinnen ohne Showdown (Fold Equity) mehr wert ist als je zuvor, wenn alle anderen ängstlich spielen. Merke dir eine Zeile: **ziehe deine Calls zusammen, bevor du deine Shoves zusammenziehst.**
 
 ---
 
@@ -150,7 +150,7 @@ Hier der nützliche Teil: Die Equity, die du für einen Break-even-Call brauchst
 
 Lies die letzte Spalte als Obergrenze, nicht als deinen Spot: In echten Bubble-Pots liegt Dead Money, und Dead Money drückt die Anforderung **nach unten**. Jamt der Small Blind über 10bb und du callst 9bb in einen Pot, in dem schon 12bb liegen, brauchst du bei einem Bubble Factor von 1,5 ==52,9%== statt 60% – und ganz ohne ICM-Druck sind es schlicht Pot Odds, ==42,9%==.
 
-Die andere Hälfte: Der Bubble Factor richtet sich danach, **wer dir gegenübersitzt**, nicht nach der Phase. Zu viert mit drei bezahlten Plätzen trägt ein Mittelstack gegen den Chipleader einen Bubble Factor nahe ==3,0==, während derselbe Mittelstack gegen den kürzesten Spieler kaum über ==1,1== liegt; gleiche Stacks liegen bei etwa ==1,9==, und an einer Final-Table-Bubble zu sechst laufen die Mittelstacks ab ==2,0== aufwärts (der Chipleader liegt wie immer deutlich darunter). Behandle 1,5–1,7 als Untergrenze einer ernsten Bubble, nicht als Höhepunkt – und sie fallen zurück, sobald du im Geld bist. Gib deine eigenen Stacks und Payouts in den [ICM-Rechner](/calculator) ein, um deine echte Zahl für einen Spot zu sehen.
+Die andere Hälfte: Der Bubble Factor richtet sich danach, **wer dir gegenübersitzt**, nicht nach der Phase. Zu viert mit drei bezahlten Plätzen trägt ein Mittelstack gegen den Chipleader einen Bubble Factor nahe ==3,0==, während derselbe Mittelstack gegen den kürzesten Spieler kaum über ==1,1== liegt; gleiche Stacks liegen bei etwa ==1,9==, und an einer Final-Table-Bubble zu sechst laufen die Mittelstacks ab ==2,0== aufwärts (der Chipleader liegt wie immer deutlich darunter). Behandle 1,5–1,7 als Untergrenze einer ernsten Bubble, nicht als Höhepunkt – und sie fallen zurück, sobald du im Geld bist. Gib deine eigenen Stacks und Payouts in den [ICM-Rechner](/de/calculator) ein, um deine echte Zahl für einen Spot zu sehen.
 
 ---
 
@@ -266,7 +266,7 @@ Der Motor hinter allem ist [ICM](/de/blog/holdem-icm); die Disziplin hinter den 
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Wann du im Poker folden solltest</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Die Disziplin, die die Bubble verlangt</div>
   </a>
-  <a href="/calculator" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/de/calculator" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Kostenloses Tool</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ICM-Rechner</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Finde deine echte Bubble Factor-Zahl</div>

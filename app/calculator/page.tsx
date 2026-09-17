@@ -3,6 +3,7 @@ import { SITE } from "@/lib/site";
 import CalculatorClient from "./calculator-client";
 import { CALCULATOR_FAQ } from "./faq";
 import HubPage from "@/components/hub-page";
+import { CALCULATOR_ALTERNATES } from "@/lib/calculator-alternates";
 
 export const metadata: Metadata = {
   // ★2026-08-16 CTR 재조준: 최대 쿼리 「홀덤 spr」을 앞으로 뺐다(구 제목은 SPR이 맨 뒤·45자라 SERP 잘림).
@@ -27,10 +28,8 @@ export const metadata: Metadata = {
     "칩 리더인데 왜 그 콜이 손해일까? 내 칩의 진짜 상금 가치가 3초에 나옵니다. ICM·아웃츠·팟오즈·SPR·M값·푸시폴드까지 홀덤 계산기 8종 무료.",
   alternates: {
     canonical: `${SITE}/calculator`,
-    languages: {
-      "ko-KR": `${SITE}/calculator`,
-      "en-US": `${SITE}/en/calculator`,
-    },
+    // ★2026-09-17 — 계산기 랜딩 12개(ko·en + 10로케일)가 같은 세트를 선언한다. 정본 = lib/calculator-alternates.ts
+    languages: CALCULATOR_ALTERNATES,
   },
   openGraph: {
     title: "ICM 계산기·홀덤 확률 계산기 — 홀덤 계산 8종 올인원",

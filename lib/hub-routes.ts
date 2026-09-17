@@ -52,43 +52,40 @@ const LOCALE_HUB_ROUTES: Record<string, readonly string[]> = {
   en: ["/en/blog", "/en/calculator", "/en/glossary", "/en/hand-chart", "/en/quiz", "/en/ranking", "/en/solver", "/en/tournaments", "/en/win-rate-quiz"],
   /**
    * ja — ★2026-08-21 `/ja/solver` 신설. 일본어권에 솔버 진입로가 0개였다(본체는 noindex).
-   *   ⚠ 그 외의 도구 페이지(calculator·hand-chart·glossary…)는 ja에 **여전히 없다.**
+   *   ⚠ 그 외의 도구 페이지(hand-chart·glossary·win-rate-quiz…)는 ja에 **여전히 없다.**
    *      없는 라우트를 넣으면 isHubRoute가 참이 되어 site-chrome이 전역 크롬을 비켜주는데
    *      정작 그 경로에 페이지가 없으니 아무 효과도 없다. **있는 것만 넣는다.**
-   * es는 아직 2개뿐이다 (`app/es/`에 있는 건 blog·tournaments 둘뿐).
    */
-  ja: ["/ja/blog", "/ja/solver", "/ja/tournaments"],
+  // ★2026-09-17 — `/<locale>/calculator` 10개 로케일 동시 신설(사장님 지시 · 다국어 글 우측 레일
+  //   계산기 CTA가 전부 한국어 `/calculator`로 떨어지던 것의 처방). 공용 컴포넌트
+  //   `components/calculator/calculator-tool.tsx` + 로케일 사전. hreflang 세트 = `lib/calculator-alternates.ts`.
+  ja: ["/ja/blog", "/ja/calculator", "/ja/solver", "/ja/tournaments"],
   // es — ★2026-08-22 `/es/solver` 신설. 스페인어권에 솔버 진입로가 0개였다(본체는 noindex).
-  //      ⚠ `/es/hand-chart`·`/es/calculator`·`/es/win-rate-quiz`는 **여전히 없다** — 넣지 마라.
-  es: ["/es/blog", "/es/solver", "/es/tournaments"],
+  //      ⚠ `/es/hand-chart`·`/es/win-rate-quiz`는 **여전히 없다** — 넣지 마라.
+  es: ["/es/blog", "/es/calculator", "/es/solver", "/es/tournaments"],
   // pt — ★2026-08-23 `/pt/solver` 신설. 포르투갈어권에 솔버 진입로가 0개였다(본체는 noindex).
-  //      ⚠ **pt는 es보다 가진 것이 적다** — `app/pt/`에 있는 것은 `blog`·`page.tsx`뿐이라
-  //         **`/pt/tournaments`도 없다**(es에는 있다). 없는 라우트를 넣지 마라.
-  pt: ["/pt/blog", "/pt/solver"],
+  //      ⚠ **pt는 es보다 가진 것이 적다** — **`/pt/tournaments`는 없다**(es에는 있다). 없는 라우트를 넣지 마라.
+  pt: ["/pt/blog", "/pt/calculator", "/pt/solver"],
   // de — 2026-08-10 신설. 독일어 지역·일정 검색 수요(LDA 4~9)를 받을 랜딩이 없었다.
   //      근거: docs/keyword-bank/de-core-volumes.md 시드⑫
   // ★2026-08-24 — `/de/solver` 신설과 함께 추가(6번째 솔버 랜딩).
-  de: ["/de/blog", "/de/solver", "/de/tournaments"],
+  de: ["/de/blog", "/de/calculator", "/de/solver", "/de/tournaments"],
   // zh — ★2026-08-24 `/zh/solver` 신설과 함께 추가(7번째 솔버 랜딩). 중국어권에 솔버
-  //      진입로가 0개였다(본체는 noindex). ⚠ `app/zh/`에 있는 것은 blog·tournaments·solver
-  //      셋뿐이다 — 없는 라우트(hand-chart·calculator…)를 넣지 마라.
-  zh: ["/zh/blog", "/zh/solver", "/zh/tournaments"],
+  //      진입로가 0개였다(본체는 noindex). ⚠ 없는 라우트(hand-chart…)를 넣지 마라.
+  zh: ["/zh/blog", "/zh/calculator", "/zh/solver", "/zh/tournaments"],
   // zh-hant — ★2026-08-24 `/zh-hant/solver` 신설과 함께 추가(8번째 솔버 랜딩).
-  //      번체권(대만·홍콩)에 솔버 진입로가 0개였다(본체는 noindex).
-  //      ⚠ `app/zh-hant/`에 있는 것은 blog·tournaments·solver 셋뿐이다 — 없는 라우트를 넣지 마라.
-  "zh-hant": ["/zh-hant/blog", "/zh-hant/solver", "/zh-hant/tournaments"],
+  //      번체권(대만·홍콩)에 솔버 진입로가 0개였다(본체는 noindex). 없는 라우트를 넣지 마라.
+  "zh-hant": ["/zh-hant/blog", "/zh-hant/calculator", "/zh-hant/solver", "/zh-hant/tournaments"],
   // fr — ★2026-08-24 `/fr/solver` 신설과 함께 추가(9번째 — 솔버 앱 fr 배포 당일).
-  //      ⚠ **fr은 pt보다도 가진 것이 적다** — `app/fr/`에 있는 것은 blog·solver·page.tsx뿐이라
-  //      **`/fr/tournaments`도 없다.** 없는 라우트를 넣지 마라.
-  fr: ["/fr/blog", "/fr/solver"],
+  //      ⚠ **`/fr/tournaments`는 없다.** 없는 라우트를 넣지 마라.
+  fr: ["/fr/blog", "/fr/calculator", "/fr/solver"],
   // id — ★2026-09-05 `/id/solver` 신설과 함께 추가(10번째 솔버 랜딩).
-  //      ⚠ **fr과 같은 모양이다** — `app/id/`에 있는 것은 blog·solver·page.tsx뿐이라
-  //      **`/id/tournaments`도 없다.** 없는 라우트를 넣지 마라.
-  id: ["/id/blog", "/id/solver"],
-  // ms — 솔버만 HubPage로 감싼다. 블로그 목록은 아직 자체 크롬을 쓴다.
-  ms: ["/ms/solver"],
-  // hi — 솔버만 HubPage로 감싼다. 블로그 목록은 자체 크롬을 유지한다.
-  hi: ["/hi/solver"],
+  //      ⚠ **`/id/tournaments`는 없다.** 없는 라우트를 넣지 마라.
+  id: ["/id/blog", "/id/calculator", "/id/solver"],
+  // ms — 솔버·계산기만 HubPage로 감싼다. 블로그 목록은 아직 자체 크롬을 쓴다.
+  ms: ["/ms/calculator", "/ms/solver"],
+  // hi — 솔버·계산기만 HubPage로 감싼다. 블로그 목록은 자체 크롬을 유지한다.
+  hi: ["/hi/calculator", "/hi/solver"],
 };
 
 /**

@@ -179,6 +179,23 @@ const STATIC_ROUTES = [
   { path: "/hi/solver", priority: "0.7", changefreq: "monthly" },
 
   /**
+   * ★2026-09-17 신설 — `/<locale>/calculator` 10개(ja es pt de zh zh-hant fr id ms hi).
+   *   `/en/calculator`(0.7)와 같은 구조·같은 가중치. 공용 도구 컴포넌트 + 로케일 사전이라
+   *   robots는 EN과 동일(index, follow) — 빌드 후 `.next/server/app/<loc>/calculator.html`로 확인.
+   *   hreflang 12세트는 `lib/calculator-alternates.ts` 한 곳에서 선언한다.
+   */
+  { path: "/ja/calculator", priority: "0.7", changefreq: "monthly" },
+  { path: "/es/calculator", priority: "0.7", changefreq: "monthly" },
+  { path: "/pt/calculator", priority: "0.7", changefreq: "monthly" },
+  { path: "/de/calculator", priority: "0.7", changefreq: "monthly" },
+  { path: "/zh/calculator", priority: "0.7", changefreq: "monthly" },
+  { path: "/zh-hant/calculator", priority: "0.7", changefreq: "monthly" },
+  { path: "/fr/calculator", priority: "0.7", changefreq: "monthly" },
+  { path: "/id/calculator", priority: "0.7", changefreq: "monthly" },
+  { path: "/ms/calculator", priority: "0.7", changefreq: "monthly" },
+  { path: "/hi/calculator", priority: "0.7", changefreq: "monthly" },
+
+  /**
    * ★`/holdem-practice` 누락 복구 (2026-08-04). 색인 가능(index, follow)하고 좌측 레일에도
    *   있는 한국어 도구 페이지인데 사이트맵에만 빠져 있었다.
    *   `npm run canonical:check`의 C-6 검사가 잡았다.

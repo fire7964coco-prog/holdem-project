@@ -496,7 +496,7 @@ Texas Hold'em lernt sich leichter, wenn du Regeln und Strategie trennst.
 
 Lerne zuerst ==den Ablauf==: Blinds, zwei Hole Cards, fünf Gemeinschaftskarten, vier Setzrunden, beste Fünf-Karten-Hand. ==g:Dann lerne Position, Starthände und einfache Pot-Entscheidungen.==
 
-Als nächsten Schritt wiederhole die [Pokerhände-Reihenfolge im Texas Hold'em](/de/blog/holdem-hand-rankings), übe mit dem [Starthand-Chart](/hand-chart) und nutze den [Poker-Odds-Rechner](/calculator), wenn du verstehen willst, warum ein Call profitabel ist oder nicht.
+Als nächsten Schritt wiederhole die [Pokerhände-Reihenfolge im Texas Hold'em](/de/blog/holdem-hand-rankings), übe mit dem [Starthand-Chart](/hand-chart) und nutze den [Poker-Odds-Rechner](/de/calculator), wenn du verstehen willst, warum ein Call profitabel ist oder nicht.
 
 ---
 

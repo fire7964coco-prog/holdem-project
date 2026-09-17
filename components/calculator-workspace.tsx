@@ -4,8 +4,32 @@ import { useEffect, useState, type KeyboardEvent, type ReactNode } from "react";
 
 type CalculatorTab = { id: string; label: string; sub: string; icon: ReactNode; component: ReactNode };
 
+/** Chrome strings. When given they replace the built-in ko/en pair (used by the dictionary-driven intl calculator). */
+export type CalculatorWorkspaceLabels = {
+  tablist: string;
+  reset: string;
+  resetAria: (tabLabel: string) => string;
+  resetMessage: (tabLabel: string) => string;
+};
+
+const BUILTIN_LABELS: Record<"ko" | "en", CalculatorWorkspaceLabels> = {
+  ko: {
+    tablist: "계산기 선택",
+    reset: "입력 초기화",
+    resetAria: (l) => `${l} 초기화`,
+    resetMessage: (l) => `${l} 입력값을 초기화했습니다.`,
+  },
+  en: {
+    tablist: "Choose a calculator",
+    reset: "Reset inputs",
+    resetAria: (l) => `Reset ${l}`,
+    resetMessage: (l) => `${l} inputs reset.`,
+  },
+};
+
 /** Mount a tool on its first visit, then keep its inputs while another tool is open. */
-export function CalculatorWorkspace({ tabs, locale = "ko" }: { tabs: readonly CalculatorTab[]; locale?: "ko" | "en" }) {
+export function CalculatorWorkspace({ tabs, locale = "ko", labels }: { tabs: readonly CalculatorTab[]; locale?: "ko" | "en"; labels?: CalculatorWorkspaceLabels }) {
+  const L = labels ?? BUILTIN_LABELS[locale];
   const [ready, setReady] = useState(false);
   useEffect(() => setReady(true), []);
   const [active, setActive] = useState(tabs[0].id);
@@ -34,12 +58,12 @@ export function CalculatorWorkspace({ tabs, locale = "ko" }: { tabs: readonly Ca
 
   function reset() {
     setVersions(current => ({ ...current, [active]: (current[active] ?? 0) + 1 }));
-    setResetMessage(locale === "ko" ? `${tab.label} 입력값을 초기화했습니다.` : `${tab.label} inputs reset.`);
+    setResetMessage(L.resetMessage(tab.label));
   }
 
   return (
     <>
-      <div role="tablist" aria-busy={!ready} aria-label={locale === "ko" ? "계산기 선택" : "Choose a calculator"}
+      <div role="tablist" aria-busy={!ready} aria-label={L.tablist}
         className="flex flex-wrap justify-center gap-1.5 sm:gap-2 mb-4 sm:mb-6">
         {tabs.map((t, index) => (
           <button key={t.id} type="button" role="tab" id={`calculator-tab-${t.id}`} disabled={!ready}
@@ -61,9 +85,9 @@ export function CalculatorWorkspace({ tabs, locale = "ko" }: { tabs: readonly Ca
             <p className="text-xs text-muted-foreground">{tab.sub}</p>
           </div>
           <button type="button" onClick={reset} disabled={!ready}
-            aria-label={locale === "ko" ? `${tab.label} 초기화` : `Reset ${tab.label}`}
+            aria-label={L.resetAria(tab.label)}
             className="ml-auto min-h-9 px-3 py-1.5 rounded-lg border border-border text-xs font-bold text-foreground hover:border-primary hover:bg-primary/10">
-            {locale === "ko" ? "입력 초기화" : "Reset inputs"}
+            {L.reset}
           </button>
           <span role="status" className="sr-only">{resetMessage}</span>
         </div>

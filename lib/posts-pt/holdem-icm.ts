@@ -91,7 +91,7 @@ Agora multiplique cada linha pelos payouts e você tem o valor em dólares de ca
 
 </div>
 
-Lá está em números: o leader tem ==metade das fichas mas só 38,4% do dinheiro==, enquanto os 20% de fichas do short stack valem 28,9%. Você não precisa fazer essa conta na mão na mesa — a [calculadora de ICM](/en/calculator) (em inglês) faz na hora — mas ver a máquina funcionando uma vez é o que faz a estratégia grudar.
+Lá está em números: o leader tem ==metade das fichas mas só 38,4% do dinheiro==, enquanto os 20% de fichas do short stack valem 28,9%. Você não precisa fazer essa conta na mão na mesa — a [calculadora de ICM](/pt/calculator) faz na hora — mas ver a máquina funcionando uma vez é o que faz a estratégia grudar.
 
 ---
 
@@ -146,7 +146,7 @@ Digamos que três jogadores com 50% / 30% / 20% das fichas estão dividindo um p
 
 </div>
 
-O short stack recebe ==$97 a mais== de um ICM deal do que de um chip chop, porque o ICM credita os pay jumps que ele já conquistou. Então a regra é fácil: ==se você está short, peça um ICM deal; se você é o chip leader, proponha um chip chop.== Na prática o chip leader muitas vezes negocia um pouco *acima* do seu número de ICM (e os short stacks aceitam um pouco abaixo) em troca da certeza de travar o dinheiro — tudo bem, desde que você saiba seu número de ICM primeiro. Rode seus próprios stacks e payouts na [calculadora de ICM deal](/en/calculator) antes de concordar com qualquer coisa.
+O short stack recebe ==$97 a mais== de um ICM deal do que de um chip chop, porque o ICM credita os pay jumps que ele já conquistou. Então a regra é fácil: ==se você está short, peça um ICM deal; se você é o chip leader, proponha um chip chop.== Na prática o chip leader muitas vezes negocia um pouco *acima* do seu número de ICM (e os short stacks aceitam um pouco abaixo) em troca da certeza de travar o dinheiro — tudo bem, desde que você saiba seu número de ICM primeiro. Rode seus próprios stacks e payouts na [calculadora de ICM deal](/pt/calculator) antes de concordar com qualquer coisa.
 
 ---
 
@@ -249,9 +249,9 @@ Daqui, veja como a pressão de ICM se encaixa na [estratégia de torneio](/pt/bl
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Equity no poker explicada</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Chip EV é só equity em fichas</div>
   </a>
-  <a href="/en/calculator" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/pt/calculator" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Ferramenta grátis</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Calculadora de ICM (em inglês)</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Calculadora de ICM</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Rode seus próprios stacks e deals</div>
   </a>
 </div>

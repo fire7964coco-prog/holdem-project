@@ -3,6 +3,7 @@ import { SITE } from "@/lib/site";
 import CalculatorClientEn from "./calculator-client";
 import { CALCULATOR_FAQ_EN } from "./faq";
 import HubPage from "@/components/hub-page";
+import { CALCULATOR_ALTERNATES } from "@/lib/calculator-alternates";
 
 export const metadata: Metadata = {
   // absolute — 안 쓰면 루트 layout의 title.template("%s | 홀덤마스터")이 붙어
@@ -12,10 +13,8 @@ export const metadata: Metadata = {
     "Free Texas Hold'em calculator: outs & draw odds, pot odds, hand evaluator, starting hand strength, SPR, tournament M value, ICM, and push/fold Nash charts — 8 tools in one.",
   alternates: {
     canonical: `${SITE}/en/calculator`,
-    languages: {
-      "ko-KR": `${SITE}/calculator`,
-      "en-US": `${SITE}/en/calculator`,
-    },
+    // ★2026-09-17 — 계산기 랜딩 12개(ko·en + 10로케일)가 같은 세트를 선언한다. 정본 = lib/calculator-alternates.ts
+    languages: CALCULATOR_ALTERNATES,
   },
   // twitter:*를 안 주면 루트 레이아웃의 한국어가 그대로 나간다
   twitter: {
