@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Of the 169 starting hand types, only a small top slice — about 15–20% of the hands you're dealt — is profitable for a beginner. Big pairs (AA–TT) and AK raise from any seat; the later you act, the wider you open — from ~13% under the gun to ~43% on the button (wider again in 6-max). Start with a simplified chart, add GTO preflop charts once raise-or-fold is automatic.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-09-11",
+  updated: "2026-09-17",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🂡",
@@ -62,7 +62,7 @@ These are the best starting hands in poker — the ones you should almost always
 
 ![Four premium Texas Hold'em starting hands — pocket aces, pocket kings, pocket queens, and ace-king suited — glowing gold on dark green felt](/images/holdem-starting-hands-premium.webp "The premium tier — hands you can raise from any position")
 
-==g:With hands 1–5 (the pocket pairs), always raise and often re-raise preflop to build the pot.== With AK and AQ, the goal is to get heads-up where your big cards have maximum equity. One number worth memorizing: AK is roughly a ==coin flip against every smaller pocket pair== (the classic "race") and around 43–46% against QQ — close enough that raising and re-raising with AK stays correct.
+==g:With hands 1–5 (the pocket pairs), always raise and often re-raise preflop to build the pot.== With AK and AQ, the goal is to get heads-up where your big cards have maximum equity. The numbers worth memorizing: ==AK is never the favorite against a pocket pair, but against 22–QQ it is never far behind== — the classic "race." Offsuit AK has about 46–47% against 22–44, about 45% against 55–99, and about 43% against TT–QQ; suited AK adds roughly 2.5–3 points to each (AKs against 22, at about 50%, is the closest thing to a true coin flip). Against KK and AA the gap is far wider — but against every pair below them, raising and re-raising with AK stays correct.
 
 Pocket rockets, cowboys, big slick — if the table slang is new to you, the [poker glossary](/en/blog/holdem-glossary) covers every hand nickname. And if you're fuzzy on what beats what once the board comes, review the [poker hand rankings](/en/blog/holdem-hand-rankings) first.
 

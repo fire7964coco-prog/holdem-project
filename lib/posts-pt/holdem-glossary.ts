@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "glossary",
   date: "2026-07-05",
   updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  masterUpdated: "2026-09-17",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "📖",
@@ -263,7 +263,7 @@ As palavras pro que está acontecendo — e como se comportar enquanto acontece.
 
 **Q. Quais são os termos de poker mais comuns que todo iniciante deveria saber?**
 
-A. O essencial são as ações de aposta (check, bet, call, raise, fold, all-in), as streets (flop, turn, river), as posições (button, small blind, big blind, UTG) e um punhado de termos de mão (the nuts, kicker, set, top pair). Aprenda os pares "mais confundidos" lá de cima — principalmente check vs call e set vs trips — e você vai acompanhar quase qualquer conversa de mesa.
+A. O essencial são as ações de aposta (check, bet, call, raise, fold, all-in), as streets (flop, turn, river), as posições (button, small blind, big blind, UTG) e um punhado de termos de mão (the nuts, kicker, set, top pair). Aprenda as confusões mais comuns lá de cima — principalmente check vs call e set vs trips — e você vai acompanhar quase qualquer conversa de mesa.
 
 **Q. O que significa UTG (under the gun) no poker?**
 

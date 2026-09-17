@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Poker hand rankings from best to worst are: Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, One Pair, and High Card.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-09-09",
+  updated: "2026-09-17",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🃏",
@@ -297,7 +297,7 @@ Mostly yes — the same ten-hand order carries across Texas Hold'em, Omaha, and 
 | **Texas Hold'em** | Standard (this guide) | Use any 0–2 of your hole cards |
 | **Omaha** | Standard | Must use *exactly* 2 of your 4 hole cards |
 | **Seven-Card Stud** | Standard | No community cards |
-| **Short Deck (6+)** | Modified | Flush beats full house; often A-6-7-8-9 counts as a straight |
+| **Short Deck (6+)** | Modified | Flush beats full house; A-6-7-8-9 is the lowest straight (the ace still plays low, and with the 2s–5s gone it connects to the 6) |
 
 The takeaway: learn the standard order once and it carries you through nearly every game. Just remember Omaha's "exactly two" rule and Short Deck's flush bump.
 

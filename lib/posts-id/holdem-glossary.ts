@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ini glosarium bahasa sederhana untuk istilah poker yang benar-benar muncul di permainan Texas Hold'em, dikelompokkan berdasarkan cara Anda menemuinya — aksi taruhan, posisi, tangan dan board, tipe pemain, uang, dan situasi meja. Mulai dari istilah yang paling sering tertukar di bawah (check vs call, set vs trips, cooler vs bad beat), lalu jelajahi per kategori. Istilah dengan panduan mendalam langsung tertaut ke sana.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-17",
+  masterUpdated: "2026-09-17",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "📖",
@@ -28,7 +28,7 @@ Poker punya kosakatanya sendiri, dan menguasainya melakukan dua hal: membuat And
 :::stripe
 6 | Kategori, dikelompokkan berdasarkan cara Anda menemuinya
 100+ | Istilah dijelaskan dalam bahasa sederhana
-8 | Pasangan yang "paling sering tertukar", diluruskan lebih dulu
+8 | Kekeliruan yang "paling sering terjadi", diluruskan lebih dulu
 → | Panduan mendalam tertaut dari istilah kunci
 :::
 
@@ -259,7 +259,7 @@ Kata-kata untuk apa yang sedang terjadi — dan bagaimana bersikap selama itu be
 
 **Q. Apa istilah poker paling umum yang harus diketahui setiap pemula?**
 
-A. Yang esensial adalah aksi taruhan (check, bet, call, raise, fold, all-in), street (flop, turn, river), posisi (button, small blind, big blind, UTG), dan segelintir istilah tangan (the nuts, kicker, set, top pair). Pelajari pasangan yang "paling sering tertukar" di atas — terutama check vs call dan set vs trips — dan Anda akan bisa mengikuti hampir semua percakapan di meja.
+A. Yang esensial adalah aksi taruhan (check, bet, call, raise, fold, all-in), street (flop, turn, river), posisi (button, small blind, big blind, UTG), dan segelintir istilah tangan (the nuts, kicker, set, top pair). Pelajari kekeliruan yang "paling sering terjadi" di atas — terutama check vs call dan set vs trips — dan Anda akan bisa mengikuti hampir semua percakapan di meja.
 
 **Q. Apa arti UTG (under the gun) di poker?**
 

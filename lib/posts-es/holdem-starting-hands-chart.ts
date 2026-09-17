@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "De los 169 tipos de mano inicial, solo una pequeña franja superior — cerca del 15–20% de las manos que te reparten — es rentable para un principiante. Los pares grandes (AA–TT) y AK suben desde cualquier asiento; cuanto más tarde actúas, más abres tu rango — desde ~13% en UTG hasta ~43% en el botón (más amplio aún en 6-max). Empieza con una tabla simplificada y añade las tablas preflop GTO cuando el subir-o-foldear ya te salga automático.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-17",
+  masterUpdated: "2026-09-17",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🂡",
@@ -65,7 +65,7 @@ Estas son las mejores manos iniciales del póker — las que casi siempre deber�
 
 ![Cuatro manos iniciales premium de Texas Hold'em — pareja de ases, pareja de reyes, pareja de reinas y as-rey del mismo palo — brillando en dorado sobre el tapete verde](/images/holdem-starting-hands-premium.webp "El nivel premium — manos que puedes subir desde cualquier posición")
 
-==g:Con las manos 1–5 (los pares servidos), sube siempre y a menudo resube en preflop para agrandar el bote.== Con AK y AQ, el objetivo es llegar mano a mano, donde tus cartas altas tienen la máxima equity. Un número que vale la pena memorizar: AK es más o menos un ==coin flip contra cualquier par servido menor== (la clásica "carrera") y ronda el 43–46% frente a QQ — lo bastante cerca como para que subir y resubir con AK siga siendo correcto.
+==g:Con las manos 1–5 (los pares servidos), sube siempre y a menudo resube en preflop para agrandar el bote.== Con AK y AQ, el objetivo es llegar mano a mano, donde tus cartas altas tienen la máxima equity. Los números que vale la pena memorizar: ==AK nunca es favorito contra un par servido, pero contra 22–QQ tampoco se queda nunca muy atrás== — la clásica "carrera". De distinto palo, AK tiene cerca del 46–47% contra 22–44, cerca del 45% contra 55–99 y cerca del 43% contra TT–QQ; del mismo palo, AK suma unos 2.5–3 puntos a cada cifra (AKs contra 22, con cerca del 50%, es lo más parecido a un coin flip de verdad). Contra KK y AA la distancia es mucho mayor — pero contra cualquier par por debajo de ellos, subir y resubir con AK sigue siendo correcto.
 
 Pocket rockets, cowboys, big slick — si la jerga de la mesa te suena nueva, el [glosario de póker](/es/blog/holdem-glossary) cubre todos los apodos de manos. Y si no tienes claro qué gana a qué cuando cae la mesa, repasa antes las [jerarquías de manos de póker](/es/blog/holdem-hand-rankings).
 

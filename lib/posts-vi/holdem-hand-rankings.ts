@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Thứ hạng các tay bài poker từ mạnh nhất đến yếu nhất là: Thùng Phá Sảnh Hoàng Gia, Thùng Phá Sảnh, Tứ Quý, Cù Lũ, Thùng, Sảnh, Sám Cô, Hai Đôi, Một Đôi, và Mậu Thầu.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-09-07",
+  updated: "2026-09-17",
 
   masterUpdated: "2026-09-07",
   keepImagesInBody: true,
@@ -277,7 +277,7 @@ Thứ tự này dùng chung cho gần như mọi biến thể poker, với vài 
 | **Texas Hold'em** | Chuẩn (hướng dẫn này) | Dùng 0-2 lá của bạn |
 | **Omaha** | Chuẩn | Bắt buộc dùng *đúng* 2 trong 4 lá của bạn |
 | **Seven-Card Stud** | Chuẩn | Không có lá chung |
-| **Short Deck (6+)** | Có chỉnh sửa | Thùng thắng Cù Lũ; đôi khi A-6-7-8-9 được tính là Sảnh |
+| **Short Deck (6+)** | Có chỉnh sửa | Thùng thắng Cù Lũ; A-6-7-8-9 là Sảnh thấp nhất (Át chơi thấp, và vì các lá 2–5 đã bị loại khỏi bộ bài nên nối thẳng với lá 6) |
 
 Kết luận: học thứ tự chuẩn một lần là dùng được trong gần như mọi trò. Chỉ cần nhớ quy tắc "đúng hai lá" của Omaha và việc Thùng được nâng hạng trong Short Deck.
 

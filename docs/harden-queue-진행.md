@@ -21,6 +21,7 @@
 | **Q4-b** | **검수장 MA-118 요청 2 — es 대회 2편** | `como-entrar-al-wsop`·`wsop-2026-tournament-guide`(es) WRONG 15·RISKY 10·STALE 2 + **LISR 138조 웹 실측**(멕시코 소득세법 · 1차 출처) · 원장 = `홀덤검수-es/ledger/` · EN 동형이면 EN-먼저 | **Opus 전 구간 · 1세션**(번역 QA·법령 실측 = Opus · 새 문장은 원장 처방 이식) | ✅ | (아래 §1-Q4-b) | 렌즈 4종 지적 **46**(렌즈 간 중복 약 10) + 2차 교열 **16** · 반영 **34 + 15** · 기각 **5** · 이관 **5** · 기록 **3** | 09-16 |
 | **Q5-a** | **EN-먼저 묶음 II — 세션 1 렌즈 38건 판정(전반)** | `en-first-queue` **§1 ①~㉑** · 판정 뒤 EN 정정 → 8로케일 전파 | **Opus 전 구간 · 1세션** — 🔴 재료 실측 후 재조정(§5-A-3): 채택 12건 중 새 문장 집필은 2문장뿐이고 나머지는 **짧은 한정어·표 헤더·기계적 변경·기존 로케일 정본의 이식**이었다(Q4-a와 같은 사유) | ✅ | (아래 §1-Q5-a) | 렌즈 4종+2차 교열 = 지적 **35**(렌즈 간 중복 3 제거 후 **32**) · 반영 **29** · 기각 **2** · 등재만 **1** | 09-13 |
 | **Q5-b** | **EN-먼저 묶음 II — (후반)** | `en-first-queue` **§1 ㉒~㊸**(㉟ 우선 · ㊲는 검수장 판정 산물이라 재론 절차 = MB 초안) | **Opus 전 구간 · 1세션** — 🔴 재료 실측 후 재조정(§5-A-3): 채택 14건이 «짧은 한정어·1차 출처 표 1개·정본 이식»이라 집필 구간이 없었다(Q4-a·Q5-a와 같은 사유) | ✅ | (아래 §1-Q5-b) | 렌즈 4종 지적 **50**(raw 75 · 렌즈 간 중복 25 제거) + 2차 교열 **13** = **63** · 반영 **54** · 기각 **5** · 등재 **4** | 09-13 |
+| **Q5-c** | **EN-먼저 묶음 III — §2-F 4건(Q6c#1~#4)** | `en-first-queue` **§2-F** · 브리프 `docs/harden-brief/queue-Q5-c-EN먼저-2F.md`(전수 열거표 · WSOP 원문 축어) | **Fable 전 구간 · 1세션**(사장님이 Fable로 열었다 · 집필 = AK 명제 8로케일 재서술 · 렌즈 6종은 Opus 서브) | ✅ | (아래 §1-Q5-c) | 1차 4종 지적 53(중복 제거 34 · 반영 30 · 기록 3 · 기각 1) + 2차 2종 지적 36(반영 33 · 기록 3) | 09-17 |
 | **Q6-a** | **표기·용어 통일 + 내부링크 «개수» 축 정밀도** | 브리프 `docs/harden-brief/queue-Q6-a-로케일표기.md` · 핸드오프 「▶ 그밖에 열 수 있는 것」 zh 표기 4갈래 · Q2b-4·6 · pt `holdem-strategy:183` · `check:structure` linkn 94편 | **Opus 전 구간 · 1세션**(판정·치환) | ✅ | `988f1167` | 렌즈 5종 + 2차 교열 = **지적 70 · 반영 41 · 기각 4 · 등재 19** | 09-14 |
 | **Q6-b** | **인용부호·괄호 스윕 + 남은 헤드 판정 4건** | 브리프 `docs/harden-brief/queue-Q6-b-인용부호.md`가 본체. 🔴 **재료 6건 중 3건은 전제부터 뒤집혔다**(§1-Q6-b) | **Opus 전 구간 · 1세션**(치환·판정 · 새 문장 없음) | ✅ | (아래 §1-Q6-b) | 렌즈 5종 지적 **32** + 2차 교열 **4** · 반영 **13** · 기각·유지 **12** · 등재 **11** | 09-16 |
 | **Q6-c** | **ja 잔여 묶음 + `tournaments-i18n` NOTE_* + echo 19** | `harden-ja-진행` §2-N 전건(개수 열거 결손 5 · positions L75 존 매핑 · straddle L76 · probability L57 · apt AREX 1차 출처 재실측 · glossary stripe L31 · outs 화살표) · 🆕 **Q1-10 NOTE_JA·ZH·HANT·ES·DE 오스트리아 6행**(로케일별 재저작) · `check:answer-echo` 🔴 echo **19자리**(값 표현 면제 5 = JUDGED 등재 · 나머지는 «지우되 남은 문단 재작성») · `check:mirror-pair` 갈림 28편 전건 판정 | **Opus 전 구간 · 1세션** — 집필 구간이 있었으나 사장님 「리셋됨 이어서작업해」 → 프로토콜 §2 «그냥 계속해» 조항으로 B도 Opus | ✅ | (아래 §1-Q6-c) | 렌즈 4종 지적 **50** + 2차 교열 **9** · 반영 **41+9** · 기각 **1** · 기록 **4** · 이관 **3** · 중복 **1** | 09-16 |
@@ -604,6 +605,24 @@ tiebreak L55·L263·L277 ↔ EN L51·L175·L236·L250 · marathon L281 ↔ EN L2
 
 🔴 **스탬프**: 내용이 바뀐 11파일 중 포스트 9편 `updated` 09-16 · 로케일 4편(es·ja·zh·zh-hant wsop) `masterUpdated` 09-16(EN 08-15 이후 델타 = `8d2aba44` CSS뿐 → 실물 대조 완료) · EN `updated`·`masterUpdated` 09-16(사실 정정 — 문턱 통과). `lib/tournaments.ts` `verifiedAt`(= `sourceUrl` 일정 페이지의 날짜·바이인 확인일)은 **올리지 않았다**(그 값들을 재대조하지 않았다).
 
+### §1-Q5-c. 회차 Q5-c 산출 — EN-먼저 §2-F 4건(AK vs 포켓페어 · kicker High card · glossary pairs · Short Deck A-6-7-8-9) (2026-09-17)
+
+**한 일** — 재료 = `en-first-queue` §2-F Q6c#1~#4. 🔴 **배포가 걸린 회차다**(EN 4편 + 8로케일 + 꼬리 5로케일 + KO 1편 + zh-hant probability = 39파일).
+
+| 묶음 | 판정·결과 (근거 = 브리프 §1~§4) |
+|---|---|
+| **#1 AK vs 작은 포켓페어** | 🔴 「coin flip against **every** smaller pocket pair」 거짓 → **전수 열거**(보드 1,712,304장 × 수트 패턴 · AA vs KK 81.95% 검산 일치 · MC 아님): AKo 22 **47.35** · 33 46.62 · 44 45.97 · 55–99 **45.4→44.7** · TT–QQ **43.1–43.2** · AKs = +2.54~2.81p · AKs vs 22 **49.89**. 새 문안(EN + 7로케일 + zh-hant probability FAQ) = «페어 상대 절대 유리 아님 · **22–QQ**엔 크게 안 뒤짐(오프수트 46–47/45/43 · 수티드 +2.5–3 · AKs vs 22 ≈50 = 진짜 코인플립에 가장 가까움) · **KK·AA는 격차 훨씬 큼**». 🔴 1차 문안이 «smaller»를 떨어뜨려 「never far behind」가 KK 30%·AA 7%에서 거짓이었다 — **렌즈 4종 전부 독립 검출** → 2차 문안에서 범위 명시. `holdem-equity` 「22 vs AK ~52/48」은 **96콤보 가중 52.0/48.0으로 정확 → 무변경**(zh-hant 렌즈 ⓓ 판단 일치). KO `ak-offsuit-strategy` L80 「50.1% vs 47.4%(2.7%p)」= 특정 수트 조합값(A♠K♠ vs 2♥2♦ 50.08)과 클래스 평균의 혼합 → **49.9 / 2.5~5.3%p**로 |
+| **#2 kicker High card 행** | «조합 + 킥커 = 5» → High card **1 + 4**. 8로케일 × **8자리**(stripe 「4 \|」 신설 · 첫 표 「up to 4」→「4」 · 직답 · 둘째 표 행 · 마무리 요약 · tldr · FAQ · de 머리말/zh L142/zh-hant L54 열거). 1차 편집이 3자리만 고치고 5자리를 남겼다(렌즈 1·2·3·4가 각각 다른 사본을 잡음 — «같은 명제 N곳» 규율 재실증). EN 직답 35→43단어(40–75 규격) + de·es·id·pt 동형 절 |
+| **#3 glossary 「pairs」** | 8행 중 7행만 쌍 → 「terms」. stripe + **FAQ L261**(EN·de·es·id) + **직답 블록**(de 「Acht Paare」→「Punkte」 · zh 「8 组」→「8 个」 · zh-hant 「8 組詞」→「8 個說法」). pt·ja는 원래 쌍 표현이 아니라 무변경 |
+| **#4 Short Deck 「often」** | 1차 출처 = 레포 사본 `docs/sources/wsop-2026-tournament-rules.txt` L1634–35 / live-action Rule 366·369 축어 *「An Ace is still both the highest and lowest card in rank. Therefore, the holding of 9-8-7-6-A is a Straight.」* + 족보 순서(Flush > Full House · Straight > Trips). → 「A-6-7-8-9 is the lowest straight (the ace **still** plays low, and with the 2s–5s gone it connects to the 6)」 — 1차 문안 「plays low **because** 2–5 gone」은 인과가 한 칸 어긋나(렌즈 1·3) 재서술. **13로케일**(꼬리 ar·hi·ms·tr·vi는 「sometimes」로 더 틀리게 번역돼 §13급으로 전파 · 각 파일 L119 wheel 행의 관용구 축어 승계) + ja L305·zh L415 사본. zh-hant는 변형 표 없음(의도적 · masterUpdated만). 🪶 운영사 페이지(PokerStars·GGPoker·Triton)는 이 세션에서 404/타임아웃 — WebFetch·Playwright 모두 |
+| **곁에서 잡은 것** | pt shc FAQ 「(AKs 67% vs random; AKo 65%)」 괄호 누락(①원본 · masterUpdated가 덮고 있었다) · zh shc 본문 영어 앵커 「[poker glossary]」→「德州扑克术语表」 · zh kicker L85 직답↔본문 12자 축어 중복(게이트 임계 18자 미만이라 원리상 못 봄) · id shc 머리 **낡은 동결 주석 6줄 삭제**(「masterUpdated 08-11 유지」 — Q1 `16e8a9ac`가 09-11로 올린 뒤에도 남아 값과 정면 모순) · **hi·ms·tr·vi masterUpdated는 09-07로 되돌렸다**(EN 09-09 델타 미이식 상태에서 09-17을 찍으면 드리프트 추적기가 눈이 먼다 — 꼬리 드리프트 6→7은 «보이는 부채»가 맞다) |
+| **§13** | 핸드 예시 없음 · 수치 = 위 전수 열거(렌즈 1이 독립 열거 + MC 3M으로 재산 · 소수 둘째 자리까지 일치) · 9파일 밴드 축어 동일 · 킥커 산식 1+4=5 · 숏덱 = 1차 출처 축어 |
+| **게이트** | audit:hard 39편 × 로케일 🔴 0 · answer-echo 🔴 echo 0(1차 편집이 ja hand-rankings 직답↔표 echo 1을 만들었고 같은 회차에 닫음) · drift 핵심 8로케일 0 · numfmt de·id·pt 0 / es 혼용 2 = 기존(apt-incheon·wsop guide) · structure 핵심 0 · stamp 신규 0 · cjk·hangul·hygiene·faq-schema·directives·seo-sync·meta 0 · mirror-pair 갈림 = 전부 기존 구조 차이(§4) · build ✅ intl 577 |
+
+🔴 **스탬프**: 본문 바뀐 35편 `updated` 09-17 · 로케일 `masterUpdated` 09-17(EN 4편 변경) · **예외 3**: pt·ja glossary·zh-hant hand-rankings = masterUpdated만(델타 이미 보유) · zh-hant probability = updated만(EN 무변경) · **hi·ms·tr·vi = updated 09-17 + masterUpdated 09-07 유지**(위 사유) · KO ak-offsuit updated 09-17.
+
+🪶 **모델**: 사장님이 `/model` Fable로 열었고 「집필 있음」 지시라 A·B·C 전 구간 Fable(구간 경계에서 멈추지 않았다 — §2 「그냥 계속해」 조항 적용). 렌즈 6종(1차 4 + 2차 교열·네이티브 2)은 전부 Opus 서브.
+
 ## 2. 미결 (해결될 때까지 유지)
 
 - ✅ ~~`lib/render-markdown.ts:200`이 모든 이미지에 `width="1200" height="630"`~~ → **Q7-a에서 닫았다.** 파일별 실제 치수표
@@ -690,6 +709,13 @@ tiebreak L55·L263·L277 ↔ EN L51·L175·L236·L250 · marathon L281 ↔ EN L2
 
 ## 3. 되돌리지 마라
 
+- 🆕 **Q5-c — 다시 열지 마라**(2026-09-17 · 근거 = 브리프 `queue-Q5-c-EN먼저-2F.md` §1 전수 열거표):
+  ① **AK vs 포켓페어 밴드** = 오프수트 22–44 «46–47%» · 55–99 «45%» · TT–QQ «43%» · 수티드 «+2.5–3p» · AKs vs 22 «≈50%». 「every smaller pocket pair = coin flip」·「22～99 ≈ 47%」 어느 판본도 되살리지 마라. 🔴 **범위 한정어(22–QQ)를 빼지 마라** — 빼면 KK 30%·AA 7%에서 거짓이 된다(1차 문안 실사고).
+  ② `holdem-equity` 「22 vs AK ~52/48 · The true coin flip」은 **AK 96콤보 가중 52.0/48.0으로 정확** — «AKs 49.9»로 고치지 마라(클래스가 다르다). shc는 「closest thing to a true coin flip」으로 라벨 충돌을 피했다.
+  ③ kicker High card = **조합 1 + 킥커 4**(첫 표도 「up to 4」가 아니라 「4」). 8자리 전부 같은 수.
+  ④ Short Deck: 「A-6-7-8-9 = 최저 스트레이트」는 **규칙**(WSOP 2026 Rule 366 축어 · «often/sometimes» 금지) · 인과는 「A는 원래 low로도 논다 → 2–5가 빠져 6에 붙는다」(「2–5가 빠져서 low가 된다」 아님).
+  ⑤ hi·ms·tr·vi hand-rankings `masterUpdated` 09-07은 **의도적 유지** — EN 09-09 델타(five-card 괄호 · 스캔 순서)를 안 받았다. 올리려면 그 델타를 먼저 이식하라.
+  ⑥ KO `ak-offsuit-strategy` 「49.9% vs 47.4%」 — 50.1로 되돌리지 마라(특정 수트 조합값).
 - `settled-decisions` §1-B 전건(결재 15 · 재론 금지). 특히 **15** bad-beat ≈63%(65.0%/1.86:1로 되돌리지 마라) · **11** KPM 「9/4 마감」 중립화 · **2-ⓑ** 문장 다듬기 안 함.
 - `en-first-queue` §1 **②** apt «개막 전 마감» — EN이 틀렸다(3자리). EN을 따라 로케일을 되돌리지 마라.
 - EN `updated`는 구두점·별표·태그만 바뀐 커밋이면 올리지 않는다(`en/holdem-icm` 실증 · §1-C). Q3 실측이 이 규율의 두 번째 실증이다(창 밖 5건 전부 기계적 변경).
@@ -886,6 +912,8 @@ tiebreak L55·L263·L277 ↔ EN L51·L175·L236·L250 · marathon L281 ↔ EN L2
 - 🆕 **남은 갈림 1자리는 «유지» 판정**: zh-hant `holdem-short-stack:230` `死區(小於 1)` ↔ zh `死（低于 1）`. **나열 안 일관이 앞선다**(§3).
 - 🆕 **ja 단독 이상치 1자리**: `wsop-2026-tournament-guide`의 `==g:"Qualify for as Little as $0.50"==`가 **ja만 직선**이다(zh·zh-hant는 자기 인용부호). → **ja 레인 판정**(§5-Q6b-5).
 
+- 🆕 **Q5-c: `check:mirror-pair` 갈림 4편 전건 판정 = 전부 «기존 구조 차이»(고칠 것 0)**: shc(zh만 34.5%·82% = zh 추가 문단) · kicker(zh만 8♠8♦10♦J♥2♦ = Q6-c 예시 교체) · glossary(zh-hant만 1bb) · probability(zh-hant만 AK FAQ — zh는 그 FAQ 자체가 없다 · `locale-intentional-diffs` 09-16 행). 이번 회차가 새로 만든 갈림 0.
+
 ## 5. 헤드 요청 (헤드가 처리하면 ✅)
 
 > 회차마다 여기에 쌓는다: ① MB 통지 초안(EN 변경 슬러그·자리·되돌리지 마라·앵커 갱신) ② ja·zh·zh-hant 파일 목록(§6-0 통지용) ③ `locale-intentional-diffs`·`settled-decisions` 승격 ④ 정본(en-first-queue·핸드오프)에서 지울 항목.
@@ -928,6 +956,24 @@ tiebreak L55·L263·L277 ↔ EN L51·L175·L236·L250 · marathon L281 ↔ EN L2
   **PDF는 어떤 게이트도 안 보는 자리**다) ② `/hand-chart` 도구의 「UTG 약 12%」는 **핸드 «타입» 비율**(21/169)인데
   블로그의 13%는 **콤보 비율**이다. 같은 화면에 두 기준이 섞여 있다 — 도구 라벨은 이번 회차 범위 밖이라 안 건드렸다.
 - ✅ (신설 시점 · 헤드 자체 처리) `en-first-queue` §3 첫 불릿 「EN 56편 `updated` 전수 대조」 = 종결 표시(실측 근거 위 Q3 행).
+
+### Q5-c (2026-09-17 · EN 4 + 8로케일 + 꼬리 5 + KO 1 + zh-hant probability — **배포가 걸린 회차다**)
+
+- 🔴 **Q5c-1 MB 초안**(EN 변경 = MA-123 요청 1 상시 통지):
+  > queue 회차 Q5-c — EN-먼저 §2-F 4건. 바뀐 것 = EN `holdem-starting-hands-chart`·`holdem-kicker`·`holdem-glossary`·`holdem-hand-rankings` + 8로케일(de·es·id·pt·ja·zh·zh-hant + hand-rankings는 ar·hi·ms·tr·vi까지 13) + zh-hant `holdem-probability` FAQ + KO `ak-offsuit-strategy`.
+  > ① **AK vs 포켓페어**: 「coin flip against every smaller pocket pair」·zh-hant 「22～99 ≈ 47%」 폐기 → **전수 열거**(MC 아님) 밴드 = 오프수트 22–44 46–47% · 55–99 45% · TT–QQ 43% · 수티드 +2.5–3p · AKs vs 22 ≈50% · **KK·AA는 별도**. 앵커 갱신: 「46–47%」「2.5–3」(de·id·pt는 「2,5–3」) 신규 · 「every smaller pocket pair」「22～99」 0-감시. `holdem-equity` 「~52/48」은 **무변경이 정답**(96콤보 가중) — 재지적 방지.
+  > ② kicker High card 행(1+4) 8로케일 × 8자리 · 첫 표 「up to 4」→「4」 ③ glossary 「pairs」→「terms」(stripe+FAQ+직답) ④ Short Deck 「often」→ 규칙 서술(WSOP Rule 366 축어 · 13로케일).
+  > 🔴 되돌리지 마라: 진행 파일 §3 「Q5-c」 6항. 특히 ①의 **범위 한정어 22–QQ**.
+- 🟠 **Q5c-2 ja·zh·zh-hant 파일을 만졌다**(§6-0 통지용 · 착수 시점 세 워크트리 **clean** 실측): ja = `holdem-starting-hands-chart`·`holdem-kicker`·`holdem-hand-rankings`(본문) + `holdem-glossary`(masterUpdated만) / zh = `holdem-starting-hands-chart`·`holdem-kicker`·`holdem-glossary`·`holdem-hand-rankings` / zh-hant = `holdem-starting-hands-chart`·`holdem-kicker`·`holdem-glossary`·`holdem-probability`(본문) + `holdem-hand-rankings`(masterUpdated만).
+- 🔴 **Q5c-3 다른 레인 진행 파일 갱신 요청**(레인이 못 쓰는 파일): ① `docs/harden-zh-hant-진행.md` **§3 L421 잠금**(「probability FAQ의 五五開 되살리지 마라 · MC AK vs QQ 42.9…」)을 이 회차 밴드로 **재잠금**(전수 열거값으로 교체 · 「22～99 47%」 판본도 금지) + **§5-17 종결**(「EN 4자리 판정 완료 → Q5-c」) ② `docs/harden-ja-진행.md` §2-N **N4 종결**.
+- 🟠 **Q5c-4 정본에서 지워 달라**(닫혔다): `docs/en-first-queue.md` **§2-F Q6c#1~#4 전건** · `session-handoff.md` ▶1 「EN-먼저 §2-F 4건」 후보 행.
+- 🟠 **Q5c-5 `settled-decisions` 승격 후보 1건**: §3 「Q5-c ①②」(AK 밴드 + equity 52/48 클래스 구분) — 세 레인이 3개월간 세 판본을 만든 명제라 재론 금지 목록에 올릴 가치가 있다.
+- 🪶 **Q5c-6 `locale-intentional-diffs` 등재 요청 없음** — 새 «일부러 다른» 자리 0(zh-hant hand-rankings 변형표 부재는 09-09 행에 이미 있다).
+- 🟠 **Q5c-7 KO 판정 요청 2건(낮음 · 이 회차 범위 밖 · 렌즈 1·4)**: ① `lib/posts.ts` probability 표 「AA vs AK(수티드) **87%**」 = 승률만(에퀴티 87.9) — 「승률 vs 에퀴티」 표기 규약 정본화 여부 ② KO `holdem-tiebreak-rules`가 하이카드를 「0장 + 키커 5장 전부」로 모델링(EN 8로케일은 1+4) + 같은 글 L985↔L991 자기모순(「원페어 키커 3장이 가장 많다」 ↔ 「키커 5장 전부」).
+- 🟠 **Q5c-8 게이트 커버리지 메모(Q7 재료)**: `check:answer-echo`는 **en 라벨 없는 굵은 직답을 블록으로 안 본다**(`LABELS.en = ['Quick answer']`) + **de·es·id·pt 미스캔** → 이번 diff 직답 8자리 중 3자리만 검사됐다. 직답↔본문 12자 중복(zh kicker L85)은 임계 18자 미만이라 원리상 못 본다.
+- 🪶 **Q5c-9 꼬리 드리프트 +1 = 의도적**: hi·ms·tr·vi hand-rankings는 §13급만 받았고 masterUpdated 09-07 유지(§3 ⑤). `check:drift` 꼬리 6→7은 정직한 부채 표시다.
+- 🪶 **Q5c-11 2차 렌즈가 남긴 기록 3(고치지 않았다)**: ① es shc L120·L295 「suited broadways」·「offsuit como AQo」 영어 잔존(①원본 · es 전용 어휘 통일은 Q8-b 재료) ② ja·zh·zh-hant kicker 직답에는 EN·de·es·id·pt에 얹은 꼬리절(「어떤 손은 사이드카드로 못 가른다」)이 없다 — CJK 직답은 이미 길이 규격 안이라 안 얹었다(패리티 공백 · 언어 결함 아님) ③ zh-hant hand-rankings `masterUpdated` 09-17 = «변형표 부재는 의도적(09-09 등재)»을 다시 판정한 기록이지 파리티 주장이 아니다.
+- 🪶 **Q5c-10 sitemap**: 36편 `updated` 09-17 → 머지 뒤 빌드로 `lastmod` 재생성(선례 Q6c-7). IndexNow 대상 = EN 4 + 로케일 사본 + KO 1.
 
 ### Q4-b (2026-09-16 · EN 1 + KO 3 + ja 1 + zh 1 + zh-hant 1 + es 2 + 대회 데이터 2 — **배포가 걸린 회차다**)
 
@@ -1417,6 +1463,10 @@ pdf-page 19 · number-format 24 · image-dims 8). 전 게이트에 «못 보는 
 
 ① 키워드뱅크 — 해당 회차만 ② 편차 판정 → §5 ③ 판정 정본 승격 → §5
 
+**Q5-c**: ① 키워드뱅크 — **해당 없음**(사실 정정 회차 · 키워드·메타 축 안 건드림 · desc 변경 0)
+② 편차 판정 → §5 **Q5c-6**(«일부러 다른» 자리 0) + §4(거울쌍 4편 = 기존 구조 차이)
+③ 판정 정본 승격 → §3 「Q5-c — 다시 열지 마라」 6항 + §5 **Q5c-3**(zh-hant §3 재잠금 · ja N4 종결) · **Q5c-5**(`settled-decisions` 후보 1)
+④ 🪶 **교훈(정본 후보)**: «**한정어 하나가 명제의 진리값을 바꾼다** — «smaller»를 빼는 순간 참이던 문장이 KK·AA에서 거짓이 됐고, 4렌즈가 전부 잡았다. 범위를 좁힌 명제를 재서술할 때는 **범위어를 먼저 옮기고** 수치를 붙여라» · «**같은 명제 N곳**은 3곳이 아니라 8곳일 수 있다(kicker: stripe·표2·직답·요약·tldr·FAQ·머리말·열거) — 고치기 전 `grep -c`는 «숫자»가 아니라 «개념»으로 걸어라».
 **Q4-b**: ① 키워드뱅크 — **해당 없음**(원장 이행·사실 정정 회차 · 키워드·메타 축을 안 건드렸다 · desc 변경 0)
 ② 편차 판정 → §5 **Q4b-7**(«일부러 다른» 자리 0 · es 전용 추가는 시장 차이)
 ③ 판정 정본 승격 → §3 「Q4-b — 다시 열지 마라」 8항 + §5 **Q4b-3**(캘린더 절 역전 기록 · 시한 2) · **Q4b-5**(WORKLOG 역전 단락) · **Q4b-1 ③**(검수장 원장 #121 대체 근거)

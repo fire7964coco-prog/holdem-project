@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "This is a plain-English glossary of the poker terms that actually come up in a Texas Hold'em game, grouped by how you'll meet them — betting actions, positions, hands and board, player types, money, and table situations. Start with the 'most confused' terms below (check vs call, set vs trips, cooler vs bad beat), then browse by category. Terms with a deeper guide link straight to it.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-11",
+  updated: "2026-09-17",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "📖",
@@ -27,7 +27,7 @@ Poker has its own vocabulary, and knowing it does two things: it stops you looki
 :::stripe
 6 | Categories, grouped by how you meet them
 90+ | Terms defined in plain English
-8 | "Most confused" pairs, sorted out first
+8 | "Most confused" mix-ups, sorted out first
 → | Deeper guides linked from key terms
 :::
 
@@ -258,7 +258,7 @@ The words for what's happening — and how to behave while it does.
 
 **Q. What are the most common poker terms every beginner should know?**
 
-A. The essentials are the betting actions (check, bet, call, raise, fold, all-in), the streets (flop, turn, river), the positions (button, small blind, big blind, UTG), and a handful of hand terms (the nuts, kicker, set, top pair). Learn the "most confused" pairs above — especially check vs call and set vs trips — and you'll follow almost any table conversation.
+A. The essentials are the betting actions (check, bet, call, raise, fold, all-in), the streets (flop, turn, river), the positions (button, small blind, big blind, UTG), and a handful of hand terms (the nuts, kicker, set, top pair). Learn the "most confused" mix-ups above — especially check vs call and set vs trips — and you'll follow almost any table conversation.
 
 **Q. What does UTG (under the gun) mean in poker?**
 

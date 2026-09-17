@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Was ist ein Kicker beim Poker – Regeln, Zählen & das dominierte Ass",
   seoTitle: "Was ist ein Kicker beim Poker? Die Karte, die Pots gewinnt",
   desc: "Der Kicker ist die Beikarte, die beim Poker Gleichstände bricht – welche Hände einen haben und wie viele, warum A9 gegen AK verliert und die Vierling-Ausnahme.",
-  tldr: "Ein Kicker ist die höchste Beikarte, die nicht zu deiner eigentlichen Hand gehört – er bricht den Gleichstand, wenn zwei Spieler denselben Rang teilen. Ein Paar nutzt 3 Kicker, Zwei Paare 1, Drilling 2; Straße, Flush, Full House und Straight Flush haben keinen. Deshalb schlägt AK das AQ, wenn das Board ein Ass pairt.",
+  tldr: "Ein Kicker ist die höchste Beikarte, die nicht zu deiner eigentlichen Hand gehört – er bricht den Gleichstand, wenn zwei Spieler denselben Rang teilen. High Card nutzt 4 Kicker, ein Paar 3, Zwei Paare 1, Drilling 2; Straße, Flush, Full House und Straight Flush haben keinen. Deshalb schlägt AK das AQ, wenn das Board ein Ass pairt.",
   category: "hand-rankings",
   date: "2026-07-08",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-17",
+  masterUpdated: "2026-09-17",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "🃏",
@@ -28,13 +28,14 @@ Wo ein Kicker ins größere Bild der [Pokerhände-Reihenfolge](/de/blog/holdem-h
 ### Kicker auf einen Blick
 
 :::stripe
+4 | Kicker bei High Card
 3 | Kicker in einer Hand mit einem Paar
 1 | Kicker bei Zwei Paaren (und Vierling)
 0 | Kicker bei einer Straße, einem Flush, Full House oder Straight Flush
 :::
 
 > **Kurze Antwort**
-> Ein Kicker (deutsch: **Beikarte**) ist die höchste Karte in deinen besten fünf, die nicht zur gewerteten Kombination gehört. Er entscheidet den Pot, wenn zwei Spieler dieselbe Hand halten: ==g:A-K schlägt A-Q, sobald das Board ein Ass pairt==. Ein Paar nutzt drei Kicker, ein Drilling zwei, Zwei Paare und Vierling je einen – **Straße, Flush, Full House und Straight Flush haben keinen**, weil sie bereits alle fünf Karten füllen.
+> Ein Kicker (deutsch: **Beikarte**) ist die höchste Karte in deinen besten fünf, die nicht zur gewerteten Kombination gehört. Er entscheidet den Pot, wenn zwei Spieler dieselbe Hand halten: ==g:A-K schlägt A-Q, sobald das Board ein Ass pairt==. Bei High Card zählen vier Kicker, bei einem Paar drei, bei einem Drilling zwei, bei Zwei Paaren und Vierling je einer – **Straße, Flush, Full House und Straight Flush haben keinen**, weil sie bereits alle fünf Karten füllen.
 
 ---
 
@@ -56,7 +57,7 @@ Angenommen, du hältst A-K und dein Gegner hält A-Q, und das Board pairt ein As
 
 | Hand | Hat einen Kicker? | Kicker-Karten |
 |:---|:---:|:---:|
-| High Card | Ja – alle fünf werden der Reihe nach verglichen | bis zu 4 |
+| High Card | Ja – alle fünf werden der Reihe nach verglichen | 4 |
 | Ein Paar | ✅ Ja | 3 |
 | Zwei Paare | ✅ Ja | 1 |
 | Drilling | ✅ Ja | 2 |
@@ -76,12 +77,13 @@ Die Logik ist reine Rechnerei: **Kombinationskarten + Kicker ergeben immer fünf
 
 ## Wie viele Kicker nutzt jede Hand?
 
-**Ein Paar nutzt drei Kicker, ein Drilling nutzt zwei, und Zwei Paare und Vierling nutzen nur einen.** Zu wissen, wie viele es sind, verrät dir genau, wie tief ein Tiebreaker laufen kann.
+**High Card nutzt vier Kicker, ein Paar drei, ein Drilling zwei, und Zwei Paare und Vierling nur einen.** Zu wissen, wie viele es sind, verrät dir genau, wie tief ein Tiebreaker laufen kann – und welche Hände sich durch eine Beikarte gar nicht trennen lassen.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Hand | Kombination | + Kicker | = 5 Karten |
 |:---|:---:|:---:|:---:|
+| High Card | 1 | 4 | ✅ |
 | Ein Paar | 2 | 3 | ✅ |
 | Drilling | 3 | 2 | ✅ |
 | Zwei Paare | 4 | 1 | ✅ |
@@ -189,7 +191,7 @@ A. Ein Ass-Kicker heißt, deine höchste Beikarte ist ein Ass – der stärkste 
 
 **Q. Wie viele Kicker sind in einer Pokerhand?**
 
-A. Es kommt auf die Hand an: Ein Paar nutzt drei Kicker, ein Drilling nutzt zwei, und Zwei Paare und Vierling nutzen je einen. Straße, Flush, Full House und Straight Flush haben keine Kicker, weil sie bereits alle fünf Karten füllen.
+A. Es kommt auf die Hand an: High Card nutzt vier Kicker (alle fünf Karten werden der Reihe nach verglichen), ein Paar drei, ein Drilling zwei, und Zwei Paare und Vierling je einen. Straße, Flush, Full House und Straight Flush haben keine Kicker, weil sie bereits alle fünf Karten füllen.
 
 **Q. Was ist ein guter Kicker beim Poker?**
 
@@ -208,7 +210,7 @@ A. Eine Menge. Weil alle die Gemeinschaftskarten teilen, machen Spieler häufig 
 ## Die 3 Dinge zum Merken
 
 1. **Kicker = Beikarte, nur Tiebreaker.** Er entscheidet Gleichstände zwischen gleichen Rängen und schlägt nie eine höherrangige Hand.
-2. **Kombination + Kicker = fünf.** Ein Paar hat 3 Kicker, Drilling 2, Zwei Paare und Vierling 1; Straße, Flush, Full House und Straight Flush haben keinen.
+2. **Kombination + Kicker = fünf.** High Card hat 4 Kicker, ein Paar 3, Drilling 2, Zwei Paare und Vierling 1; Straße, Flush, Full House und Straight Flush haben keinen.
 3. **Kicker entscheiden echtes Geld.** Dominanz (A9 vs AK) und das Board spielen laufen beide auf den Kicker hinaus – wähle Hände mit starken Beikarten und wisse, wann deine tot ist.
 
 Hast du den Kicker richtig verstanden, hört eine ganze Kategorie von „Wie habe ich das verloren?“-Händen auf, ein Rätsel zu sein. Von hier aus schau dir die komplette [Pokerhände-Reihenfolge](/de/blog/holdem-hand-rankings) an oder die vollständigen [Tiebreaker-Regeln](/de/blog/holdem-tiebreak-rules) für jeden Handtyp.

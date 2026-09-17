@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Susunan tangan poker daripada terkuat ke terlemah ialah: Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, Pair, dan High Card.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-09-07",
+  updated: "2026-09-17",
 
   masterUpdated: "2026-09-07",
   keepImagesInBody: true,
@@ -277,7 +277,7 @@ Susunan ini sama untuk hampir semua varian poker, dengan beberapa perbezaan pent
 | **Texas Hold'em** | Standard (panduan ini) | Guna 0-2 kad anda |
 | **Omaha** | Standard | Wajib guna *tepat* 2 daripada 4 kad anda |
 | **Seven-Card Stud** | Standard | Tiada kad komuniti |
-| **Short Deck (6+)** | Diubah suai | Flush menang ke atas full house; kadangkala A-6-7-8-9 dikira straight |
+| **Short Deck (6+)** | Diubah suai | Flush menang ke atas full house; A-6-7-8-9 ialah straight terendah (As main rendah, dan tanpa kad 2–5 ia terus bersambung ke 6) |
 
 Intinya: pelajari susunan standard sekali dan ia terpakai dalam hampir semua permainan. Cuma ingat peraturan "tepat dua" Omaha dan kenaikan flush dalam Short Deck.
 

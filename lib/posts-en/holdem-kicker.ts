@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "What Is a Kicker in Poker — Rules, Counting & the Dominated Ace",
   seoTitle: "What Is a Kicker in Poker? The Side Card That Wins Pots",
   desc: "A kicker is the side card that breaks ties in poker — which hands have one and how many, why A9 loses to AK, and the quads exception most guides get wrong.",
-  tldr: "A kicker is the highest side card that isn't part of your main hand — it breaks ties when two players share the same rank. One pair uses 3 kickers, two pair 1, trips 2; straights, flushes, full houses, and straight flushes have none. It's why AK beats AQ when the board pairs an ace.",
+  tldr: "A kicker is the highest side card that isn't part of your main hand — it breaks ties when two players share the same rank. High card uses 4 kickers, one pair 3, two pair 1, trips 2; straights, flushes, full houses, and straight flushes have none. It's why AK beats AQ when the board pairs an ace.",
   category: "hand-rankings",
   date: "2026-07-08",
-  updated: "2026-09-11",
+  updated: "2026-09-17",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -27,6 +27,7 @@ Where a kicker fits in the bigger picture of [poker hand rankings](/en/blog/hold
 ### Kickers at a glance
 
 :::stripe
+4 | Kickers in a high-card hand
 3 | Kickers in a one-pair hand
 1 | Kicker in two pair (and quads)
 0 | Kickers in a straight, flush, full house, or straight flush
@@ -52,7 +53,7 @@ Say you hold A-K and your opponent holds A-Q, and the board pairs an ace. You bo
 
 | Hand | Has a kicker? | Kicker cards |
 |:---|:---:|:---:|
-| High card | Yes — all five compared in order | up to 4 |
+| High card | Yes — all five compared in order | 4 |
 | One pair | ✅ Yes | 3 |
 | Two pair | ✅ Yes | 1 |
 | Three of a kind | ✅ Yes | 2 |
@@ -72,12 +73,13 @@ The logic is pure arithmetic: **combination cards + kickers always equal five.**
 
 ## How Many Kickers Does Each Hand Use?
 
-**One pair uses three kickers, three of a kind uses two, and two pair and four of a kind use just one.** Knowing the count tells you exactly how deep a tiebreaker can run.
+**High card uses four kickers, one pair three, three of a kind two, and two pair and four of a kind just one.** Knowing the count tells you exactly how deep a tiebreaker can run — and which hands can never be separated by a side card at all.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Hand | Combination | + Kickers | = 5 cards |
 |:---|:---:|:---:|:---:|
+| High card | 1 | 4 | ✅ |
 | One pair | 2 | 3 | ✅ |
 | Three of a kind | 3 | 2 | ✅ |
 | Two pair | 4 | 1 | ✅ |
@@ -181,7 +183,7 @@ A. No. A kicker can be a community card. Poker always makes the best five cards 
 
 **Q. How many kickers are in a poker hand?**
 
-A. It depends on the hand: one pair uses three kickers, three of a kind uses two, and two pair and four of a kind each use one. Straights, flushes, full houses, and straight flushes have no kickers because they already fill all five cards.
+A. It depends on the hand: a high-card hand uses four kickers (all five cards compared in order), one pair uses three, three of a kind uses two, and two pair and four of a kind each use one. Straights, flushes, full houses, and straight flushes have no kickers because they already fill all five cards.
 
 **Q. What is a good kicker in poker?**
 
@@ -204,7 +206,7 @@ A. A lot. Because everyone shares the community cards, players frequently make t
 ## The 3 Things to Remember
 
 1. **Kicker = side card, tiebreaker only.** It settles ties between equal ranks and never beats a higher-ranked hand.
-2. **Combination + kickers = five.** One pair has 3 kickers, trips 2, two pair and quads 1; straights, flushes, full houses, and straight flushes have none.
+2. **Combination + kickers = five.** High card has 4 kickers, one pair 3, trips 2, two pair and quads 1; straights, flushes, full houses, and straight flushes have none.
 3. **Kickers decide real money.** Domination (A9 vs AK) and playing the board both come down to the kicker — pick hands with strong side cards and know when yours is dead.
 
 Get the kicker right and a whole category of "how did I lose that?" hands stops being a mystery. From here, see the full [poker hand rankings](/en/blog/holdem-hand-rankings) order, or the complete [tie-breaking rules](/en/blog/holdem-tiebreak-rules) for every hand type.

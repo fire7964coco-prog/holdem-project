@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Von den 169 Starthand-Typen ist nur eine kleine Spitzengruppe – etwa 15–20% der Hände, die du bekommst – für einen Anfänger profitabel. Große Paare (AA–TT) und AK raist du aus jeder Position; je später du agierst, desto weiter öffnest du – von ~13% unter der Gun bis ~43% am Button (im 6-Max nochmals weiter). Starte mit einem vereinfachten Chart, füge GTO-Preflop-Charts hinzu, sobald Raise-or-Fold automatisch sitzt.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-17",
+  masterUpdated: "2026-09-17",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "🂡",
@@ -63,7 +63,7 @@ Das sind die besten Starthände im Poker – die, die du fast immer preflop rais
 
 ![Vier Premium-Texas-Hold'em-Starthände – Pocket Aces, Pocket Kings, Pocket Queens und Ass-König suited – golden leuchtend auf dunkelgrünem Filz](/images/holdem-starting-hands-premium.webp "Die Premium-Stufe – Hände, die du aus jeder Position raisen kannst")
 
-==g:Mit den Händen 1–5 (den Pocket Pairs) raist du immer und re-raist oft preflop, um den Pot aufzubauen.== Mit AK und AQ ist das Ziel, heads-up zu kommen, wo deine großen Karten maximale Equity haben. Eine Zahl, die sich zu merken lohnt: AK ist ungefähr ein ==Coinflip gegen jedes kleinere Pocket Pair== (das klassische „Race“) und rund 43–46% gegen QQ – nah genug, dass Raisen und Re-Raisen mit AK korrekt bleibt.
+==g:Mit den Händen 1–5 (den Pocket Pairs) raist du immer und re-raist oft preflop, um den Pot aufzubauen.== Mit AK und AQ ist das Ziel, heads-up zu kommen, wo deine großen Karten maximale Equity haben. Die Zahlen, die sich zu merken lohnen: ==AK ist gegen ein Pocket Pair nie Favorit, liegt aber gegen 22–QQ auch nie weit zurück== – das klassische „Race“. Offsuit hat AK etwa 46–47% gegen 22–44, etwa 45% gegen 55–99 und etwa 43% gegen TT–QQ; suited kommen jeweils rund 2,5–3 Punkte dazu (AKs gegen 22 kommt mit etwa 50% einem echten Coinflip am nächsten). Gegen KK und AA ist der Abstand viel größer – gegen jedes Paar darunter bleibt Raisen und Re-Raisen mit AK aber korrekt.
 
 Pocket Rockets, Cowboys, Big Slick – falls dir der Tisch-Slang neu ist, das [Poker-Glossar](/de/blog/holdem-glossary) deckt jeden Hand-Spitznamen ab. Und falls du unsicher bist, was was schlägt, sobald das Board kommt, schau dir zuerst die [Poker-Reihenfolge der Hände](/de/blog/holdem-hand-rankings) an.
 

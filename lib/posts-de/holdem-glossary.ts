@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Das ist ein Poker-Lexikon in einfachem Deutsch mit den Begriffen, die in einem Texas-Hold'em-Spiel wirklich vorkommen, gruppiert danach, wie du ihnen begegnest – Setzaktionen, Positionen, Hände und Board, Spielertypen, Geld, Tischsituationen und die Turnier- und Online-Abkürzungen. Beginn mit den „am häufigsten verwechselten“ Begriffen unten (Check vs. Call, Set vs. Trips, Cooler vs. Bad Beat), dann stöber nach Kategorie. Begriffe mit einem tieferen Guide verlinken direkt darauf.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-17",
+  masterUpdated: "2026-09-17",
   keepImagesInBody: true,
   readTime: "12 Min.",
   emoji: "📖",
@@ -28,7 +28,7 @@ Poker hat sein eigenes Vokabular, und es zu kennen bringt zwei Dinge: Es verhind
 :::stripe
 7 | Kategorien, gruppiert danach, wie du ihnen begegnest
 110+ | Begriffe in einfachem Deutsch erklärt
-8 | „Am häufigsten verwechselte“ Paare, zuerst geklärt
+8 | Häufigste Verwechslungen, zuerst geklärt
 → | Tiefere Guides von Schlüsselbegriffen verlinkt
 :::
 
@@ -37,7 +37,7 @@ Poker hat sein eigenes Vokabular, und es zu kennen bringt zwei Dinge: Es verhind
 ## Welche Poker-Begriffe werden am häufigsten verwechselt?
 
 > **Kurze Antwort**
-> Acht Paare stiften am Tisch die meiste Verwirrung: Check vs. Call, Blind vs. Ante, Set vs. Trips, Cooler vs. Bad Beat, Value Bet vs. Bluff, Pot Odds vs. Implied Odds, VPIP vs. PFR und die Zählweise der 3-Bet. Wer diese acht sauber trennt, versteht schon den größten Teil des Tischgesprächs – und spart sich die teuersten Anfängerfehler.
+> Acht Verwechslungen sorgen am Tisch für die meiste Verwirrung: Check vs. Call, Blind vs. Ante, Set vs. Trips, Cooler vs. Bad Beat, Value Bet vs. Bluff, Pot Odds vs. Implied Odds, VPIP vs. PFR und die Zählweise der 3-Bet. Wer diese acht sauber trennt, versteht schon den größten Teil des Tischgesprächs – und spart sich die teuersten Anfängerfehler.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -300,7 +300,7 @@ Wie viel dich das Spiel selbst kostet, steht im [Rake-Guide](/de/blog/holdem-rak
 
 **Q. Was sind die häufigsten Poker-Begriffe, die jeder Anfänger kennen sollte?**
 
-A. Die Grundlagen sind die Setzaktionen (Check, Bet, Call, Raise, Fold, All-in), die Streets (Flop, Turn, River), die Positionen (Button, Small Blind, Big Blind, UTG) und eine Handvoll Hand-Begriffe (the Nuts, Kicker, Set, Top Pair). Lern die „am häufigsten verwechselten“ Paare oben – besonders Check vs. Call und Set vs. Trips – und du folgst fast jedem Tischgespräch.
+A. Die Grundlagen sind die Setzaktionen (Check, Bet, Call, Raise, Fold, All-in), die Streets (Flop, Turn, River), die Positionen (Button, Small Blind, Big Blind, UTG) und eine Handvoll Hand-Begriffe (the Nuts, Kicker, Set, Top Pair). Lern die häufigsten Verwechslungen oben – besonders Check vs. Call und Set vs. Trips – und du folgst fast jedem Tischgespräch.
 
 **Q. Was bedeutet UTG (Under the Gun) im Poker?**
 

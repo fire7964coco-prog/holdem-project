@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "La jerarquía de manos de póker, de la mejor a la peor, es: Escalera Real, Escalera de Color, Póker, Full, Color, Escalera, Trío, Doble Pareja, Pareja y Carta Alta. La regla básica: cuanto más rara es una mano de ligar, más alto está — por eso el color gana a la escalera y el full gana al color. Cuando dos jugadores tienen el mismo tipo de mano, decide el kicker; si las cinco cartas coinciden, el bote se divide.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-17",
+  masterUpdated: "2026-09-17",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🃏",
@@ -296,7 +296,7 @@ En su mayoría sí — el mismo orden de diez manos vale en Texas Hold'em, Omaha
 | **Texas Hold'em** | Estándar (esta guía) | Usa 0-2 de tus cartas propias |
 | **Omaha** | Estándar | Debes usar *exactamente* 2 de tus 4 cartas |
 | **Seven-Card Stud** | Estándar | Sin cartas comunitarias |
-| **Short Deck (6+)** | Modificada | El color gana al full; a menudo A-6-7-8-9 cuenta como escalera |
+| **Short Deck (6+)** | Modificada | El color gana al full; A-6-7-8-9 es la escalera más baja (el As juega bajo y, sin las cartas del 2 al 5, conecta con el 6) |
 
 La conclusión: aprende el orden estándar una vez y te servirá en casi todos los juegos. Solo recuerda la regla de "exactamente dos" del Omaha y el ascenso del color en Short Deck.
 

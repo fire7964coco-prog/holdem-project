@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "सबसे मज़बूत से सबसे कमज़ोर तक पोकर हैंड रैंकिंग है: Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, Pair, और High Card।",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-09-07",
+  updated: "2026-09-17",
 
   masterUpdated: "2026-09-07",
   keepImagesInBody: true,
@@ -277,7 +277,7 @@ High Card|पाँचों, ऊँचे से नीचे|+kicker लाग
 | **Texas Hold'em** | मानक (यह गाइड) | अपने 0-2 कार्ड इस्तेमाल करें |
 | **Omaha** | मानक | अपने 4 में से *ठीक* 2 कार्ड इस्तेमाल करना ज़रूरी |
 | **Seven-Card Stud** | मानक | कोई सामुदायिक कार्ड नहीं |
-| **Short Deck (6+)** | बदला हुआ | flush, full house से जीतता है; कभी-कभी A-6-7-8-9 straight माना जाता है |
+| **Short Deck (6+)** | बदला हुआ | flush, full house से जीतता है; A-6-7-8-9 सबसे नीचा straight है (Ace नीचा खेलता है, और 2–5 के हट जाने से सीधे 6 से जुड़ता है) |
 
 निचोड़: मानक क्रम एक बार सीख लें, यह लगभग हर गेम में काम आएगा। बस Omaha का "ठीक दो" नियम और Short Deck में flush की पदोन्नति याद रखें।
 

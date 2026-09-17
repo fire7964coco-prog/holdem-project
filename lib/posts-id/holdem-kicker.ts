@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Apa Itu Kicker di Poker — Aturan, Cara Menghitung & Ace yang Terdominasi",
   seoTitle: "Apa Itu Kicker di Poker? Kartu Samping yang Memenangkan Pot",
   desc: "Kicker adalah kartu samping yang memecah seri di poker: tangan mana yang punya kicker, kenapa A9 kalah dari AK, dan pengecualian quads yang sering keliru.",
-  tldr: "Kicker adalah kartu samping tertinggi yang bukan bagian dari tangan utama Anda — ia memecah seri saat dua pemain punya nilai tangan yang sama. One pair pakai 3 kicker, two pair 1, trips 2; straight, flush, full house, dan straight flush tidak punya. Inilah kenapa AK menang atas AQ saat meja memasangkan sebuah ace.",
+  tldr: "Kicker adalah kartu samping tertinggi yang bukan bagian dari tangan utama Anda — ia memecah seri saat dua pemain punya nilai tangan yang sama. High card pakai 4 kicker, one pair 3, two pair 1, trips 2; straight, flush, full house, dan straight flush tidak punya. Inilah kenapa AK menang atas AQ saat meja memasangkan sebuah ace.",
   category: "hand-rankings",
   date: "2026-07-08",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-17",
+  masterUpdated: "2026-09-17",
   keepImagesInBody: true,
   readTime: "10 mnt",
   emoji: "🃏",
@@ -28,6 +28,7 @@ Di mana kicker cocok dalam gambaran besar [urutan kartu poker](/id/blog/holdem-h
 ### Kicker sekilas
 
 :::stripe
+4 | Kicker dalam tangan high card
 3 | Kicker dalam tangan one-pair
 1 | Kicker dalam two pair (dan quads)
 0 | Kicker dalam straight, flush, full house, atau straight flush
@@ -53,7 +54,7 @@ Misalnya Anda pegang A-K dan lawan pegang A-Q, lalu meja memasangkan sebuah ace.
 
 | Tangan | Punya kicker? | Kartu kicker |
 |:---|:---:|:---:|
-| High card | Ya — kelimanya dibandingkan berurutan | hingga 4 |
+| High card | Ya — kelimanya dibandingkan berurutan | 4 |
 | One pair | ✅ Ya | 3 |
 | Two pair | ✅ Ya | 1 |
 | Three of a kind | ✅ Ya | 2 |
@@ -73,12 +74,13 @@ Logikanya murni aritmetika: **kartu kombinasi + kicker selalu berjumlah lima.** 
 
 ## Berapa Banyak Kicker yang Dipakai Tiap Tangan?
 
-**One pair pakai tiga kicker, three of a kind pakai dua, dan two pair serta four of a kind pakai hanya satu.** Mengetahui jumlahnya memberi tahu persis seberapa dalam pemecah seri bisa berjalan.
+**High card pakai empat kicker, one pair tiga, three of a kind dua, dan two pair serta four of a kind hanya satu.** Mengetahui jumlahnya memberi tahu persis seberapa dalam pemecah seri bisa berjalan — dan tangan mana yang sama sekali tak bisa dipisahkan oleh kicker.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Tangan | Kombinasi | + Kicker | = 5 kartu |
 |:---|:---:|:---:|:---:|
+| High card | 1 | 4 | ✅ |
 | One pair | 2 | 3 | ✅ |
 | Three of a kind | 3 | 2 | ✅ |
 | Two pair | 4 | 1 | ✅ |
@@ -182,7 +184,7 @@ A. Tidak. Kicker bisa berupa kartu komunitas. Poker selalu membentuk lima terbai
 
 **Q. Berapa banyak kicker dalam satu tangan poker?**
 
-A. Tergantung tangannya: one pair pakai tiga kicker, three of a kind pakai dua, dan two pair serta four of a kind masing-masing pakai satu. Straight, flush, full house, dan straight flush tak punya kicker karena sudah mengisi kelima kartu.
+A. Tergantung tangannya: high card pakai empat kicker (kelimanya dibandingkan berurutan), one pair tiga, three of a kind dua, dan two pair serta four of a kind masing-masing satu. Straight, flush, full house, dan straight flush tak punya kicker karena sudah mengisi kelima kartu.
 
 **Q. Apa itu kicker yang bagus di poker?**
 
@@ -205,7 +207,7 @@ A. Sangat. Karena semua orang berbagi kartu komunitas, pemain sering membentuk p
 ## 3 Hal yang Harus Diingat
 
 1. **Kicker = kartu samping, hanya pemecah seri.** Ia menentukan seri antara nilai tangan yang setara dan tak pernah mengalahkan tangan bernilai lebih tinggi.
-2. **Kombinasi + kicker = lima.** One pair punya 3 kicker, trips 2, two pair dan quads 1; straight, flush, full house, dan straight flush tak punya.
+2. **Kombinasi + kicker = lima.** High card punya 4 kicker, one pair 3, trips 2, two pair dan quads 1; straight, flush, full house, dan straight flush tak punya.
 3. **Kicker menentukan uang sungguhan.** Dominasi (A9 vs AK) dan playing the board sama-sama berujung pada kicker — pilih tangan dengan kartu samping kuat dan tahu kapan milik Anda sudah mati.
 
 Pahami kicker dengan benar dan seluruh kategori tangan "kok saya bisa kalah?" berhenti jadi misteri. Dari sini, lihat urutan [peringkat tangan poker](/id/blog/holdem-hand-rankings) lengkap, atau [aturan pemecah seri](/id/blog/holdem-tiebreak-rules) lengkap untuk tiap jenis tangan.

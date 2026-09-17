@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Este es un glosario en lenguaje llano de los términos de póker que de verdad salen en una partida de Texas Hold'em, agrupados según cómo te los vas a encontrar: acciones de apuesta, posiciones, manos y mesa, tipos de jugador, dinero y situaciones de mesa. Empieza por los términos que más se confunden (pasar vs igualar, trío/set vs trips, cooler vs bad beat) y luego navega por categoría. Los términos con una guía más completa enlazan directamente a ella.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-13",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-17",
+  masterUpdated: "2026-09-17",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "📖",
@@ -28,7 +28,7 @@ El póker tiene su propio vocabulario, y dominarlo hace dos cosas: evita que par
 :::stripe
 6 | Categorías, agrupadas por cómo te las encuentras
 90+ | Términos explicados en lenguaje llano
-8 | Parejas de "los que más se confunden", aclaradas primero
+8 | Confusiones más comunes, aclaradas primero
 → | Guías más completas enlazadas desde términos clave
 :::
 
@@ -259,7 +259,7 @@ Las palabras para lo que está pasando — y cómo comportarse mientras pasa.
 
 **Q. ¿Cuáles son los términos de póker más comunes que todo principiante debería conocer?**
 
-A. Lo esencial son las acciones de apuesta (pasar, apostar, igualar, subir, retirarse, all-in), las calles (flop, turn, river), las posiciones (botón, ciega pequeña, ciega grande, UTG) y un puñado de términos de mano (los nuts, kicker, set, pareja máxima). Aprende las parejas de "los que más se confunden" de arriba — sobre todo pasar vs igualar y set vs trips — y seguirás casi cualquier conversación de mesa.
+A. Lo esencial son las acciones de apuesta (pasar, apostar, igualar, subir, retirarse, all-in), las calles (flop, turn, river), las posiciones (botón, ciega pequeña, ciega grande, UTG) y un puñado de términos de mano (los nuts, kicker, set, pareja máxima). Aprende las confusiones más comunes de arriba — sobre todo pasar vs igualar y set vs trips — y seguirás casi cualquier conversación de mesa.
 
 **Q. ¿Qué significa UTG (under the gun) en el póker?**
 

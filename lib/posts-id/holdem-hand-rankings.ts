@@ -8,9 +8,9 @@ export const POST: Post = {
   tldr: "Urutan kartu poker dari tertinggi sampai terendah: Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, Pair, dan High Card. As adalah kartu tertinggi; simbol (sekop, hati) tidak punya peringkat.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-09-10",
+  updated: "2026-09-17",
 
-  masterUpdated: "2026-09-09",
+  masterUpdated: "2026-09-17",
   image: "/images/holdem-hand-rankings-hero.webp",
   imageAlt: "Royal Flush — 10 J Q K A sekop di meja poker dengan tumpukan chip dan tombol dealer",
   keepImagesInBody: true,
@@ -283,7 +283,7 @@ Urutan ini berlaku di hampir semua varian poker, dengan beberapa perbedaan penti
 | **Texas Hold'em** | Standar (panduan ini) | Pakai 0-2 kartu Anda |
 | **Omaha** | Standar | Wajib pakai *tepat* 2 dari 4 kartu Anda |
 | **Seven-Card Stud** | Standar | Tanpa kartu komunitas |
-| **Short Deck (6+)** | Dimodifikasi | Flush menang atas full house; kadang A-6-7-8-9 dihitung straight |
+| **Short Deck (6+)** | Dimodifikasi | Flush menang atas full house; A-6-7-8-9 adalah straight terendah (As main rendah dan, tanpa kartu 2–5, tersambung ke 6) |
 
 Intinya: pelajari urutan standar sekali dan ia berlaku di hampir semua permainan. Hanya ingat aturan "tepat dua" Omaha dan naiknya flush di Short Deck.
 

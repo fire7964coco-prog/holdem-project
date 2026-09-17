@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Dos 169 tipos de mãos iniciais, só uma pequena fatia do topo — cerca de 15–20% das mãos que você recebe — dá lucro pra um iniciante. Pares grandes (AA–TT) e AK aumentam de qualquer assento; quanto mais tarde você age, mais amplo você abre — de ~13% no under the gun a ~43% no button (ainda mais amplo no 6-max). Comece com uma tabela simplificada e adicione as tabelas GTO de pré-flop quando o aumentar-ou-foldar já for automático.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-17",
+  masterUpdated: "2026-09-17",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🂡",
@@ -66,7 +66,7 @@ Estas são as melhores mãos iniciais do poker — as que você deveria quase se
 
 ![Quatro mãos iniciais premium do Texas Hold'em — pocket ases, pocket reis, pocket damas e ás-rei suited — brilhando em dourado sobre o feltro verde-escuro](/images/holdem-starting-hands-premium.webp "O tier premium — mãos que você pode aumentar de qualquer posição")
 
-==g:Com as mãos 1–5 (os pocket pairs), sempre aumente e muitas vezes re-aumente no pré-flop pra crescer o pote.== Com AK e AQ, o objetivo é chegar heads-up onde suas cartas grandes têm equity máxima. Um número que vale decorar: AK é praticamente um ==cara ou coroa contra todo pocket pair menor== (o clássico "race") e algo em torno de 43–46% contra QQ — perto o suficiente pra que aumentar e re-aumentar com AK continue certo.
+==g:Com as mãos 1–5 (os pocket pairs), sempre aumente e muitas vezes re-aumente no pré-flop pra crescer o pote.== Com AK e AQ, o objetivo é chegar heads-up onde suas cartas grandes têm equity máxima. Os números que valem decorar: ==AK nunca é favorito contra um pocket pair, mas contra 22–QQ também nunca fica muito atrás== — o clássico "race". Offsuit, AK tem cerca de 46–47% contra 22–44, cerca de 45% contra 55–99 e cerca de 43% contra TT–QQ; suited soma uns 2,5–3 pontos a cada número (AKs contra 22, com cerca de 50%, é o que mais se aproxima de um cara ou coroa de verdade). Contra KK e AA a distância é bem maior — mas contra qualquer par abaixo deles, aumentar e re-aumentar com AK continua certo.
 
 Pocket rockets, cowboys, big slick — se as gírias da mesa são novas pra você, o [glossário do poker](/pt/blog/holdem-glossary) cobre cada apelido de mão. E se você está enferrujado no que ganha do quê quando a mesa aparece, revise primeiro o [ranking de mãos do poker](/pt/blog/holdem-hand-rankings).
 
@@ -281,7 +281,7 @@ A. Não de cara. As tabelas GTO de pré-flop usam frequências mistas feitas pra
 
 **Q. Ser suited faz diferença de verdade?**
 
-A. Ser suited adiciona cerca de 2 pontos percentuais de equity sobre a mesma mão offsuit — relevante, mas não é motivo pra jogar uma mão ruim. Duas cartas do mesmo naipe fazem flush até o river só ~6,4% das vezes (e um flush draw flopado fecha cerca de 35% das vezes até o river). Lixo suited continua lixo.
+A. Ser suited adiciona cerca de 2 pontos percentuais de equity sobre a mesma mão offsuit (AKs tem 67% contra uma mão aleatória; AKo, 65%) — relevante, mas não é motivo pra jogar uma mão ruim. Duas cartas do mesmo naipe fazem flush até o river só ~6,4% das vezes (e um flush draw flopado fecha cerca de 35% das vezes até o river). Lixo suited continua lixo.
 
 **Q. Devo sempre foldar pares pequenos como 22 ou 33?**
 

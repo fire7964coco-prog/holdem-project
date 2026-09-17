@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Die Reihenfolge der Pokerhände von der besten zur schlechtesten lautet: Royal Flush, Straight Flush, Vierling, Full House, Flush, Straße, Drilling, Zwei Paare, Paar und High Card.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-17",
+  masterUpdated: "2026-09-17",
   keepImagesInBody: true,
   readTime: "14 Min.",
   emoji: "🃏",
@@ -318,7 +318,7 @@ Die Reihenfolge ist in fast allen Poker-Varianten gleich, mit einigen wichtigen 
 | **Texas Hold'em** | Standard (dieser Guide) | Nutze 0-2 deiner Hole Cards |
 | **Omaha** | Standard | Du musst *genau* 2 deiner 4 Hole Cards nutzen |
 | **Seven-Card Stud** | Standard | Keine Gemeinschaftskarten |
-| **Short Deck (6+)** | Angepasst | Flush schlägt Full House; oft zählt A-6-7-8-9 als Straße |
+| **Short Deck (6+)** | Angepasst | Flush schlägt Full House; A-6-7-8-9 ist die niedrigste Straße (das Ass spielt niedrig und schließt ohne die Zweien bis Fünfen direkt an die 6 an) |
 
 Fazit: Lerne die Standard-Reihenfolge einmal und sie trägt dich durch fast jedes Spiel. Merke dir nur Omahas „genau zwei“-Regel und die Aufwertung des Flushs im Short Deck.
 
