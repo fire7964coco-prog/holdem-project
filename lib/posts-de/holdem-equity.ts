@@ -49,7 +49,7 @@ Das ist der ganze Grund, warum die Equity zählt: sie verwandelt „liege ich vo
 
 **Beim Draw multiplizierst du deine Outs mit 4 auf dem Flop oder mit 2 auf dem Turn; preflop merkst du dir die Handvoll Matchups, die immer wieder vorkommen.** Am Tisch berechnest du fast nie die exakte Equity – du schätzt, und diese zwei Abkürzungen decken 90% der Spots ab.
 
-**Draws (die Faustregel):** zähle deine [Outs](/de/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp"), dann multipliziere. (Den exakten Wert statt der Näherung liefert der [Poker-Rechner](/calculator).) Ein Flushdraw hat 9 Outs → ==9 × 4 = 36%== auf dem Flop (echter Wert 35%). Die exakten Zahlen für jeden Draw findest du in den [Draw-Odds](/de/blog/holdem-drawing-odds); hier die Schnellreferenz:
+**Draws (die Faustregel):** zähle deine [Outs](/de/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp"), dann multipliziere. (Den exakten Wert statt der Näherung liefert der [Poker-Rechner](/de/calculator).) Ein Flushdraw hat 9 Outs → ==9 × 4 = 36%== auf dem Flop (echter Wert 35%). Die exakten Zahlen für jeden Draw findest du in den [Draw-Odds](/de/blog/holdem-drawing-odds); hier die Schnellreferenz:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

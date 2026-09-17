@@ -1,0 +1,385 @@
+import type { CalcDict } from "@/components/calculator/dict";
+
+/**
+ * `/zh-hant/calculator` 사전 — 공용 `CalculatorTool`이 이 객체 하나로 화면 전체를 그린다.
+ * ★2026-09-17 신설. 원문 = `components/calculator/dict.ts`의 `CALC_DICT_EN`(구조·플레이스홀더·배열 길이 동일).
+ *
+ * 용어 정본(우선순위 순): `docs/translation-terms-zh-hant.md` → `lib/posts-zh-hant/holdem-glossary.ts`
+ *   → `lib/posts-zh-hant/*.ts` 실제 표기(2026-09-17 전수 grep). 간체 사전을 자형 변환한 것이 아니다.
+ *   · outs = 補牌(281회) · pot odds = 底池賠率 · implied = 隱含賠率 · gutshot = 卡順(zh 「中洞」과 다르다 — §7-A)
+ *   · open-ended = 兩頭順 · fold = 蓋牌(493회 ↔ 棄牌 133회) · push-fold = 全下或蓋牌（push-fold）
+ *   · SPR = 籌碼與底池比（SPR）(3bet-pot 시리즈) · M = M值（哈靈頓）·綠/黃/橙/紅/死區(short-stack)
+ *   · ICM = 獨立籌碼模型 · chip chop = 籌碼平分 · ICM deal = ICM 交易 · bubble = 泡泡時間(local-voice §1-D-5)
+ *   · Nash = 納許均衡(glossary; short-stack의 納什는 소수) · 위치 = 槍口位/中位/關煞位/按鈕位·前位/後位
+ * 🔴 `聽牌`은 대만에서 마작 용어라 **메타(seo.title·description)에는 쓰지 않는다**(본문은 그대로) — local-voice §1-D-3.
+ * 🔴 인용부호는 「」(check:hygiene 정본) · 간체 전용자 금지.
+ */
+export const CALC_DICT_ZH_HANT: CalcDict = {
+  numberLocale: "zh-TW",
+
+  seo: {
+    title: "撲克機率計算器 — 免費德州撲克勝率計算器，補牌、底池賠率、ICM 一次算",
+    description:
+      "免費德州撲克計算器，8 種工具一頁全包：補牌與成牌機率、底池賠率、隱含賠率、牌型判定、起手牌強度、SPR、錦標賽 M值、ICM 獎金換算、全下或蓋牌納許表——打開瀏覽器就能算，免註冊。",
+    path: "/zh-hant/calculator",
+  },
+
+  hero: {
+    badges: ["免費工具", "即時計算"],
+    h1: "撲克機率計算器",
+    h1Sub: "德州撲克要用的數字，全在這一頁",
+    lead: "補牌 · 底池賠率 · 牌型判定 · 起手牌強度 · SPR · 錦標賽 M值 · ICM · 納許全下或蓋牌表——牌桌上需要的算術，馬上算給你看。",
+    chips: ["🎯 補牌", "💰 底池賠率", "🃏 牌型判定", "📊 起手牌", "📐 SPR", "🏆 M值", "📈 ICM", "⚡ 全下或蓋牌"],
+  },
+
+  tabs: {
+    outs: { label: "補牌", sub: "成牌機率" },
+    pot: { label: "底池賠率", sub: "跟注或蓋牌" },
+    hand: { label: "牌型判定", sub: "選牌就算" },
+    starting: { label: "起手牌", sub: "開池強度" },
+    spr: { label: "SPR", sub: "籌碼與底池比" },
+    m: { label: "錦標賽 M值", sub: "M值分區" },
+    icm: { label: "ICM", sub: "獎金價值" },
+    pushfold: { label: "全下或蓋牌", sub: "納許表" },
+  },
+
+  workspace: {
+    chooseCalculator: "選擇計算器",
+    resetInputs: "重設輸入",
+    resetAria: "重設{label}",
+    resetMessage: "{label}的輸入已重設。",
+  },
+
+  cardPicker: {
+    clearAll: "全部清除",
+  },
+
+  outs: {
+    drawType: "聽牌類型",
+    presets: [
+      { label: "自訂輸入" },
+      { label: "堅果同花聽牌", desc: "手上 4 張同花色 → 還差第 5 張" },
+      { label: "兩頭順聽牌（OESD）", desc: "例如 5-6-7-8，來 4 或 9 都成順" },
+      { label: "同花 + 卡順複合聽牌", desc: "9 張同花 + 3 張卡順（已扣掉重複）" },
+      { label: "卡順（內順）", desc: "例如 5-6-8-9，只差一張 7" },
+      { label: "兩張高張", desc: "牌面上沒有的 2 個高點數 × 各 3 張" },
+      { label: "兩對 → 葫蘆", desc: "例如 A-K 在 A-K-x 牌面 → 還剩 2 張 A + 2 張 K" },
+      { label: "一對 → 三條", desc: "同點數還剩 2 張" },
+      { label: "同花 + 兩頭順（怪物聽牌）", desc: "9 張同花 + 8 張順子（重複 2 張）" },
+    ],
+    outsSuffix: "（{n} 張補牌）",
+    street: "街",
+    afterFlopBtn: "🃏 翻牌圈之後",
+    afterTurnBtn: "🔄 轉牌圈之後",
+    outsCount: "補牌數：{v}",
+    afterFlop: "翻牌圈之後",
+    afterTurn: "轉牌圈之後",
+    ruleOf4: "×4 法則",
+    ruleOf2: "×2 法則",
+    chanceFlop: "翻牌圈之後的成牌機率",
+    chanceTurn: "轉牌圈之後的成牌機率",
+    exact: "（精確值）",
+    ruleMental: "×{n} 法則（心算）：",
+    exactNote: "上面顯示的是精確值",
+    verdict: { great: "很好 🔥", good: "不錯 ✅", fair: "普通 ⚠️", poor: "偏差 ❌", veryPoor: "很差 💀" },
+  },
+
+  pot: {
+    potSize: "目前底池大小",
+    callAmount: "你要跟注的金額",
+    potOddsCaption: "底池賠率（所需最低勝率）",
+    orHigher: "以上，這個跟注才划算",
+    equityLabel: "你的手牌勝率：{v}",
+    sliderGutshot: "卡順 8.7%",
+    sliderFlush: "同花 19%",
+    impliedToggle: "隱含賠率 {toggle}",
+    close: "收起 ▲",
+    add: "加入 ▼",
+    extraWinnings: "成牌後預期多贏的金額：{v}",
+    none: "無",
+    impliedCaption: "隱含賠率（算進額外贏得的籌碼）",
+    impliedNote: "算進額外的 {n} 之後，所需最低勝率",
+    needImplied: "隱含賠率 {n}%",
+    needPot: "底池賠率 {n}%",
+    verdict: {
+      call: { title: "跟注（有利可圖）", body: "你的勝率 {eq}% > {need} → 長期來看是賺的" },
+      even: { title: "打平（EV 0）", body: "你的勝率 {eq}% = {need} → 跟注不賺也不虧。請用底池賠率以外的因素決定，例如位置和對手的打法傾向" },
+      fold: { title: "建議蓋牌", body: "你的勝率 {eq}% < {need} → 長期來看是虧的" },
+    },
+  },
+
+  handEval: {
+    pickerLabel: "選牌（5～7 張）",
+    emptyTitle: "選 5 張以上的牌來判定牌型",
+    emptyHint: "選滿 7 張時，會自動找出最強的 5 張組合",
+    bestFrom: "{n} 張牌裡的最強牌型",
+    rankNames: [
+      "高牌", "一對", "兩對", "三條", "順子",
+      "同花", "葫蘆", "四條", "同花順", "皇家同花順",
+    ],
+    resultNames: [
+      "高牌 🃏", "一對 1️⃣", "兩對 ✌️", "三條 3️⃣", "順子 ➡️",
+      "同花 🌊", "葫蘆 🏠", "四條 💎", "同花順 🌟", "皇家同花順 👑",
+    ],
+    axis: ["高牌", "一對", "同花", "四條", "皇家"],
+  },
+
+  starting: {
+    pickerLabel: "選你的 2 張底牌",
+    emptyPrompt: "先選你的 2 張底牌",
+    unknownDesc: "非常弱的牌",
+    unknownAction: "通常蓋牌",
+    tierNames: ["🥇 第 1 級 — 頂級", "🥈 第 2 級 — 強牌", "🥉 第 3 級 — 可玩", "⚠️ 第 4 級 — 邊緣", "🚫 第 5 級 — 弱牌"],
+    recommendedAction: "建議動作：",
+    axis: ["頂級", "強牌", "可玩", "邊緣", "弱牌"],
+    summaryTitle: "起手牌分級一覽",
+    summary: [
+      { hands: "AA KK QQ JJ 10-10 AKs AKo", action: "一律加注" },
+      { hands: "AQs AJs A10s KQs KJs 99 88 AQo", action: "多數位置加注" },
+      { hands: "AJo KQo K10s QJs J10s 10-9s 77 A9s", action: "後位加注" },
+      { hands: "66–55 A8s–A2s KJo QJo 同花連張", action: "後位挑著打" },
+      { hands: "44–22 弱的不同花牌", action: "通常蓋牌" },
+    ],
+    hands: {
+      AA: { desc: "最強的起手牌。任何位置都加注", action: "一律加注／再加注（3bet）" },
+      KK: { desc: "只需要提防翻牌來 A", action: "一律加注／再加注" },
+      QQ: { desc: "比 JJ 強，但別高估", action: "一律加注；深籌碼時小心" },
+      JJ: { desc: "提防翻牌出現高張", action: "任何位置都加注" },
+      "1010": { desc: "翻牌來高張時價值下降", action: "中位、後位加注；前位可考慮跟注" },
+      AKs: { desc: "最強的聽牌型起手牌。把底池做大", action: "一律加注／再加注" },
+      AKo: { desc: "比 AKs 弱，但仍是頂級牌", action: "一律加注；面對再加注可以跟" },
+      AQs: { desc: "強牌；有位置時更值錢", action: "多數位置加注" },
+      AJs: { desc: "在按鈕位／關煞位很好用，槍口位偏弱", action: "中位、後位加注；前位可考慮跟注" },
+      A10s: { desc: "同花 A 裡的前段班", action: "後位加注，前位跟注" },
+      KQs: { desc: "高同花 + 順子的聽牌潛力", action: "多數位置加注" },
+      KJs: { desc: "強的聽牌型手牌", action: "後位加注，前位跟注" },
+      "99": { desc: "中等口袋對，提防翻牌高張", action: "多數位置加注；深籌碼時小心" },
+      "88": { desc: "口袋對，摸暗三條的潛力不錯", action: "後位加注，前位可考慮跟注" },
+      AQo: { desc: "不同花偏弱；位置很重要", action: "中位、後位加注" },
+      AJo: { desc: "前位弱，後位強", action: "關煞位／按鈕位加注，前位小心" },
+      KQo: { desc: "最強的不同花連張", action: "後位加注，前位跟注或蓋牌" },
+      K10s: { desc: "同花 K，後位很強", action: "後位加注，前位蓋牌" },
+      QJs: { desc: "雙向聽牌潛力強", action: "後位加注，深籌碼時更值錢" },
+      J10s: { desc: "最好的同花連張之一", action: "後位加注，前位看底池賠率跟注" },
+      "109s": { desc: "強的同花連張", action: "後位加注／跟注" },
+      "77": { desc: "摸暗三條的牌，提防高張", action: "後位加注，前位跟注" },
+      A9s: { desc: "同花 A，有同花潛力", action: "後位加注" },
+      "66": { desc: "摸暗三條；需要底池賠率", action: "後位跟注／加注，多人底池最好" },
+      "55": { desc: "沒中暗三條就沒什麼價值", action: "後位跟注，單次加注底池" },
+      A8s: { desc: "中等的同花 A", action: "後位打，前位蓋牌" },
+      A7s: { desc: "中等的同花 A", action: "只在後位打" },
+      A6s: { desc: "中等的同花 A", action: "只在後位打" },
+      A5s: { desc: "輪子 + A 擋牌價值；最愛拿來 3bet 詐唬的牌", action: "只在後位；隱含賠率很重要" },
+      A4s: { desc: "帶輪子聽牌的同花 A", action: "只在後位打" },
+      A3s: { desc: "同花 A 裡的墊底", action: "只在按鈕位／小盲位打" },
+      A2s: { desc: "輪子 + 堅果同花，但偏弱", action: "只在按鈕位打" },
+      KJo: { desc: "容易被壓制；只在後位打", action: "關煞位／按鈕位加注，遇到再加注就蓋" },
+      QJo: { desc: "連結性普通；需要位置", action: "只在後位打" },
+      "98s": { desc: "強的同花連張", action: "後位跟注／加注" },
+      "87s": { desc: "不錯的同花連張", action: "後位跟注" },
+      "76s": { desc: "同花連張", action: "後位看底池賠率跟注" },
+      "44": { desc: "沒中暗三條幾乎沒價值", action: "只在便宜的底池賠率下跟注" },
+      "33": { desc: "得靠摸暗三條；投機牌", action: "多人底池、便宜才跟" },
+      "22": { desc: "最小的口袋對", action: "多人底池、便宜才跟" },
+      K10o: { desc: "不同花 K-10，偏弱", action: "偶爾從按鈕位打" },
+      Q10o: { desc: "連結性差的不同花牌", action: "只在按鈕位打" },
+      J10o: { desc: "不同花裡還算能打，但很脆弱", action: "偶爾從按鈕位打" },
+      Q10s: { desc: "強的同花百老匯牌，有位置時很好打", action: "後位加注，前位看底池賠率跟注" },
+      A10o: { desc: "邊緣的不同花 A，容易被壓制", action: "只在後位打" },
+      "65s": { desc: "同花連張；要多人底池或隱含賠率", action: "後位跟注" },
+      "54s": { desc: "小同花連張；投機牌", action: "後位跟注，便宜的多人底池" },
+    },
+  },
+
+  spr: {
+    effectiveStack: "有效籌碼（你的）",
+    potSize: "目前底池大小",
+    caption: "SPR（籌碼與底池比）",
+    stackDivPot: "籌碼 ÷ 底池",
+    zones: {
+      low: {
+        label: "低 SPR（綁定底池）",
+        desc: "底池裡已經投入了一大部分籌碼。拿頂對頂踢腳或更好的牌，可以考慮全下——在這裡蓋牌反而可能是錯的。",
+        actions: [["頂對頂踢腳以上", "考慮全下"], ["聽牌", "一定要看底池賠率"], ["弱牌", "小心蓋牌"]],
+      },
+      mid: {
+        label: "中 SPR（彈性區）",
+        desc: "這是用兩對以上的強牌來打的區間。保護自己的籌碼變得重要。",
+        actions: [["兩對以上", "價值下注"], ["一對", "看情況打"], ["聽牌", "衡量風險與回報"]],
+      },
+      high: {
+        label: "高 SPR（開始變深）",
+        desc: "籌碼開始變深。聽牌和強成牌的相對價值會上升。",
+        actions: [["暗三條以上", "強勢打"], ["聽牌", "隱含賠率上升"], ["一對／頂對頂踢腳", "小心行事"]],
+      },
+      deep: {
+        label: "極高 SPR（深籌碼）",
+        desc: "這是深籌碼的局。位置、聽牌潛力和讀對手範圍的能力，都非常重要。",
+        actions: [["堅果牌", "可以下大注"], ["聽牌", "隱含賠率極高"], ["弱的成牌", "小心，容易被詐唬"]],
+      },
+    },
+    legend: ["綁定", "彈性", "偏深", "深籌碼"],
+  },
+
+  m: {
+    inputs: { stack: "你的籌碼", bb: "大盲", sb: "小盲", ante: "底注" },
+    players: "桌上人數：{v}",
+    headsUp: "2（單挑）",
+    orbitCaption: "一圈的成本（每圈要付的盲注）",
+    orbitFormula: "大盲 {bb} + 小盲 {sb} + 底注 {ante}×{players}",
+    mCaption: "M值（哈靈頓的 M）",
+    zones: {
+      dead: { name: "💀 死區", desc: "你必須馬上全下。已經沒有空間等更好的牌——拿你手上最能打的牌推出去。", action: "立刻全下" },
+      red: { name: "🔴 紅區", desc: "你得儘快翻倍。用全下或蓋牌的打法——好牌就全下，其餘蓋掉。", action: "全下或蓋牌" },
+      orange: { name: "🟠 橙區", desc: "你的籌碼正在縮水。把範圍收緊到只打強牌，找機會開池全下。", action: "收緊範圍" },
+      yellow: { name: "🟡 黃區", desc: "壓力來了。你需要主動累積籌碼——好機會出現時就積極進攻。", action: "積極進攻" },
+      green: { name: "🟢 綠區", desc: "你的籌碼很充裕。全套打法都能用——靠位置和詐唬把籌碼堆起來。", action: "全套打法" },
+    },
+  },
+
+  icm: {
+    introStrong: "ICM（獨立籌碼模型）",
+    introRest: "是把錦標賽籌碼換算成真實獎金價值的方法。就連籌碼領先者的 ICM 價值也低於他的籌碼佔比，而短碼的價值反而高於他的籌碼佔比。決賽桌和泡泡時間的跟注或蓋牌，就靠它來判斷。",
+    numPlayers: "玩家人數",
+    paidPlaces: "獲獎名次",
+    stacksTitle: "每位玩家的籌碼量",
+    total: "合計 {n}",
+    decStack: "減少玩家 {n} 的籌碼",
+    stackInput: "玩家 {n} 的籌碼量",
+    incStack: "增加玩家 {n} 的籌碼",
+    prizesTitle: "獎金",
+    decPrize: "減少第 {n} 名的獎金",
+    prizeInput: "第 {n} 名的獎金",
+    incPrize: "增加第 {n} 名的獎金",
+    currencyNote: "獎金用任何貨幣單位輸入都可以。",
+    resultTitle: "ICM 結果",
+    th: { player: "玩家", chips: "籌碼", chipPct: "籌碼 %", icmValue: "ICM 價值", icmPct: "ICM %", diff: "差額" },
+    playerCell: "{medal} P{n}",
+    diffPlus: "+差額",
+    diffPlusNote: "ICM 價值高於籌碼佔比 → 短碼的保護區，避免五五開",
+    diffMinus: "−差額",
+    diffMinusNote: "ICM 價值低於籌碼佔比 → 籌碼領先者的施壓更划算",
+    empty: "把籌碼和獎金設成大於零，就會顯示 ICM 結果。",
+  },
+
+  pushfold: {
+    ante: "底注",
+    noAnte: "無底注",
+    bbAnteOn: "大盲底注 開",
+    table: "桌型",
+    headsUp: "單挑",
+    sixMax: "6 人桌",
+    nineMax: "9 人桌",
+    scenario: "情境",
+    sbShove: "小盲位：全下或蓋牌",
+    bbCall: "大盲位：跟不跟全下",
+    position: "位置 {hint}",
+    firstInHint: "（搶第一個進池——前面全蓋到你）",
+    effectiveStack: "有效籌碼：{v}",
+    captionHuPush: "{stack}bb 時小盲位該全下的手牌",
+    captionHuCall: "{stack}bb 時大盲位該跟全下的手牌",
+    captionMw: "{table} 人桌、{stack}bb，{pos} 搶第一個進池的全下範圍",
+    withAnte: "（含底注）",
+    combosSuffix: " / {total} 種組合",
+    legendPush: "全下（push）",
+    legendCall: "跟注",
+    legendFold: "蓋牌",
+    note: {
+      strong1: "對角線 = 口袋對 · 右上 = 同花 · 左下 = 不同花",
+      p1: "表格是按",
+      strong2: "點數排列，不是按強度",
+      p2: "，所以同一列裡亮起和沒亮的格子交錯出現是正常的——AQo、KQo 和 QQ 並排，但它們不是按強度排的。A5s 在範圍裡、A6s 卻不在，也是對的：A5s 能成",
+      strong3: "輪子順（A-2-3-4-5）",
+      p3: "，這比較低的踢腳更有價值。",
+    },
+    cellTitle: "{hand} — {action}",
+    cell: { push: "全下", call: "跟注", fold: "蓋牌" },
+    huNote: {
+      strong: "納許均衡，單挑（小盲位對大盲位）",
+      p1: "：假設小盲位只有全下或蓋牌兩種選擇。底注設定會替每位玩家加上 0.125bb（相當於大盲底注，約 12.5%）。籌碼越短，範圍越寬——而在大約 3～4bb 以下，大盲位正確的跟注範圍反而",
+      em: "比",
+      p2: "小盲位的全下範圍更寬，原因是底池賠率。",
+    },
+    mwNote: {
+      strong: "{table} 人桌搶第一個進池的全下表",
+      p1: "：前面的人全蓋了，你只能全下或蓋牌。這是一個",
+      strong2: "純籌碼 EV",
+      p2: "的納許式均衡——後面玩家的跟注範圍是同時解出來的——並採用標準的近似方式：被跟注的底池視為和第一個跟注者單挑（忽略多人跟注的底池）。你身後剩的人越少（槍口位 → 按鈕位 → 小盲位）、籌碼越短、底注開啟時（每位玩家 0.125bb），範圍就越寬。因為它是純籌碼 EV，前位（槍口位／中位）10bb 的範圍會比常見的經驗法則更緊（小口袋對要蓋）——實戰時請按 ICM 和對手調整。",
+    },
+    readMore: "短碼的基本功，請讀我們的",
+    shortStackLink: { slug: "holdem-short-stack", text: "短碼打法指南" },
+    readMoreEnd: "。",
+  },
+
+  icmGuide: {
+    bubble: {
+      badge: "ICM 指南",
+      h2: "ICM 計算器怎麼用——3 分鐘看懂泡泡時間範例",
+      intro: "假設桌上剩 4 個人、3 個人有獎金（泡泡時間）。籌碼分別是 60,000 / 40,000 / 30,000 / 20,000，獎金是 $500 / $300 / $200。把這些輸入計算器，就能看到每位玩家的籌碼佔比和他真實的獎金價值（ICM）：",
+      th: { player: "玩家", chipPct: "籌碼 %", icmPct: "ICM %", diff: "差額" },
+      rows: [
+        { player: "🥇 籌碼領先者", chip: "40.0%", icm: "33.3%", diff: "-6.7 點", up: false },
+        { player: "🥈 第 2 名", chip: "26.7%", icm: "27.2%", diff: "+0.6 點", up: true },
+        { player: "🥉 第 3 名", chip: "20.0%", icm: "22.9%", diff: "+2.9 點", up: true },
+        { player: "第 4 名（短碼）", chip: "13.3%", icm: "16.6%", diff: "+3.3 點", up: true },
+      ],
+      keyPoint: {
+        text: "重點在這：{b1}，差了 6.7 個百分點。因為贏了也只拿得到第一名的獎金，籌碼領先者在一次五五開裡贏到的獎金價值，比籌碼數字看起來的少。所以在泡泡時間，領先者應該{b2}；而短碼（籌碼 13.3% → ICM 16.6%）的價值高於他的籌碼，應該{b3}，守住這份存活價值。",
+        b1: "籌碼領先者的 ICM 價值（33.3%）低於他的籌碼佔比（40%）",
+        b2: "對短碼施壓",
+        b3: "避免不必要的跟全下",
+      },
+    },
+    deal: {
+      badge: "獎金分配",
+      h2: "ICM 交易 vs 籌碼平分——獎池怎麼拆",
+      intro: "現在剩 3 個人，正在談交易。籌碼佔比是 50% / 30% / 20%，還剩 $1,500 的獎金，兩種算法拆出來差很多：",
+      th: { player: "玩家", chop: "籌碼平分", icm: "ICM 交易", diff: "差額" },
+      rows: [
+        { player: "🥇 籌碼領先者（50%）", chop: "$750", icm: "$618", diff: "-$132", up: false },
+        { player: "🥈 第 2 名（30%）", chop: "$450", icm: "$485", diff: "+$35", up: true },
+        { player: "🥉 短碼（20%）", chop: "$300", icm: "$397", diff: "+$97", up: true },
+      ],
+      summary: {
+        text: "籌碼平分按籌碼佔比拆錢，{b1}；ICM 交易反映的是各名次的完賽機率，{b2}。上面的例子裡，短碼在籌碼平分拿 $300，ICM 交易卻能拿到約 $397——{b3}。你是短碼就要求 ICM 交易；你是籌碼領先者就提議籌碼平分。",
+        b1: "偏袒籌碼領先者",
+        b2: "對短碼更公平",
+        b3: "多了 $97",
+      },
+    },
+  },
+
+  guide: {
+    badge: "工具",
+    h2: "8 種德州撲克計算器怎麼用",
+    cards: [
+      { title: "補牌計算器", body: "精確算出你的聽牌在翻牌圈或轉牌圈之後成牌的機率。四二法則的心算值和精確值同時顯示。" },
+      { title: "底池賠率與隱含賠率", body: "用數學決定跟注還是蓋牌。對手籌碼深的時候，加上隱含賠率，判斷更準。" },
+      { title: "牌型判定", body: "選牌就能看牌型大小。最多輸入 7 張牌，自動找出最強的 5 張組合。" },
+      { title: "起手牌強度", body: "選你的兩張底牌，看它在 169 種起手牌裡屬於哪一級，以及各位置的建議動作。" },
+      { title: "SPR（籌碼與底池比）", body: "籌碼和底池的比例，決定你需要多強的牌。SPR 越低，拿強牌就越該綁定底池。" },
+      { title: "錦標賽 M值", body: "哈靈頓的 M值衡量你在錦標賽裡的籌碼壓力。綠、黃、橙、紅、死區，每一區的打法完全不同。" },
+      { title: "ICM 計算器", body: "獨立籌碼模型把錦標賽籌碼換算成真實的獎金價值——泡泡時間和決賽桌的跟注或蓋牌、談交易，都少不了它。" },
+      { title: "納許全下或蓋牌表", body: "用納許均衡算出的 13×13 單挑表：1～25bb 時哪些牌該開池全下、哪些牌該跟。錦標賽後期必備。" },
+    ],
+  },
+
+  faq: {
+    badge: "FAQ",
+    h2: "ICM 計算器與德州撲克計算器常見問題",
+    q: "Q. {q}",
+  },
+
+  related: {
+    badge: "延伸閱讀",
+    h2: "數字看懂之後，接著讀這幾篇",
+    links: [
+      { slug: "holdem-tournament", title: "錦標賽怎麼打", desc: "ICM、泡泡時間與決賽桌打法" },
+      { slug: "holdem-equity", title: "勝率（Equity）是什麼", desc: "勝率、棄牌權益與兌現率" },
+      { slug: "holdem-pot-odds", title: "底池賠率怎麼算", desc: "把跟注或蓋牌變成一道算式" },
+      { slug: "holdem-outs", title: "補牌怎麼數", desc: "各種聽牌的補牌數與四二法則" },
+      { slug: "holdem-probability", title: "德州撲克機率表", desc: "每一手牌背後的核心數字" },
+      { slug: "holdem-starting-hands-chart", title: "起手牌表", desc: "各位置該打哪些牌" },
+    ],
+  },
+};

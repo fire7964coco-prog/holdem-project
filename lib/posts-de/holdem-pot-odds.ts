@@ -125,7 +125,7 @@ Jetzt verbinde den Preis mit deiner Hand. [Zähle deine **Outs**](/de/blog/holde
 
 </div>
 
-Lies sie gegen die Bet-Size-Tabelle oben. Für Spots, die nicht in der Tabelle stehen – krumme Bet-Sizes, mehrere Gegner –, rechnet der [Poker-Rechner](/calculator) Pot Odds und benötigte Equity direkt aus. Gegen eine ==Half-Pot-Bet (25% nötig)==: mit zwei kommenden Karten ist ein Flushdraw (35%) ein klarer Call – aber auf einer *einzelnen* Karte ist derselbe Draw vom Flop aus (9 ÷ 47) nur 19,1%, was den Preis für sich genommen **nicht** trifft. Genau diese Lücke ist der Ort, an dem Implied Odds ins Spiel kommen.
+Lies sie gegen die Bet-Size-Tabelle oben. Für Spots, die nicht in der Tabelle stehen – krumme Bet-Sizes, mehrere Gegner –, rechnet der [Poker-Rechner](/de/calculator) Pot Odds und benötigte Equity direkt aus. Gegen eine ==Half-Pot-Bet (25% nötig)==: mit zwei kommenden Karten ist ein Flushdraw (35%) ein klarer Call – aber auf einer *einzelnen* Karte ist derselbe Draw vom Flop aus (9 ÷ 47) nur 19,1%, was den Preis für sich genommen **nicht** trifft. Genau diese Lücke ist der Ort, an dem Implied Odds ins Spiel kommen.
 
 ---
 

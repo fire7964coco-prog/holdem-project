@@ -74,7 +74,7 @@ Teile deinen Call durch diese Trefferquote | Das ist der Gesamtbetrag, den du ge
 Beurteile, ob es realistisch ist | Tiefe Stacks + ein auszahlfreudiger Gegner = ja. Kurze Stacks oder ein gefährliches Board = nein
 :::
 
-Die Formel in einer Zeile: ==b:x = (Call ÷ Trefferquote) − (aktueller Pot + Call).== Die Trefferquote dafür holst du dir aus der Outs-Tabelle oben oder aus dem [Poker-Rechner](/calculator). Wenn das Extra-Geld, das du realistisch auf späteren Streets herausholst, *größer* ist als x, ist der Call profitabel, selbst wenn die sofortigen Pot Odds Fold sagen.
+Die Formel in einer Zeile: ==b:x = (Call ÷ Trefferquote) − (aktueller Pot + Call).== Die Trefferquote dafür holst du dir aus der Outs-Tabelle oben oder aus dem [Poker-Rechner](/de/calculator). Wenn das Extra-Geld, das du realistisch auf späteren Streets herausholst, *größer* ist als x, ist der Call profitabel, selbst wenn die sofortigen Pot Odds Fold sagen.
 
 ---
 

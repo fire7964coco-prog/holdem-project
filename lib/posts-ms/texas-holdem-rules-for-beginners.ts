@@ -443,7 +443,7 @@ Texas Hold'em lebih mudah dipelajari bila anda asingkan peraturan daripada strat
 
 Pertama, ==belajar alirannya==: blinds, dua kad pemula, lima kad komuniti, empat pusingan pertaruhan, dan tangan lima kad terbaik. ==g:Kemudian belajar posisi, tangan permulaan dan keputusan pot asas.==
 
-Sebagai langkah seterusnya, semak [kedudukan tangan Texas Hold'em](/ms/blog/holdem-hand-rankings), berlatih dengan [carta tangan permulaan](/hand-chart), dan guna [kalkulator odds poker](/calculator) bila anda mahu faham kenapa sesuatu call itu menguntungkan atau tidak.
+Sebagai langkah seterusnya, semak [kedudukan tangan Texas Hold'em](/ms/blog/holdem-hand-rankings), berlatih dengan [carta tangan permulaan](/hand-chart), dan guna [kalkulator odds poker](/ms/calculator) bila anda mahu faham kenapa sesuatu call itu menguntungkan atau tidak.
 
 ---
 

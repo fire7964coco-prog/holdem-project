@@ -123,7 +123,7 @@ Use-os para construir intuição, não como lei da natureza:
 
 - **Eles pressupõem condições específicas.** Charts de Nash padrão ignoram antes e ICM; adicione antes e seus shoves ficam mais amplos, adicione [pressão de bolha/ICM](/pt/blog/holdem-bubble) e seus calls ficam bem mais fechados.
 - **Eles são um modelo heads-up / só-blinds.** Spots reais têm vários jogadores restando para agir, reads, e saltos de premiação que um chart não enxerga.
-- **A lição confiável é o formato**, não a mão exata: dê shove mais amplo tarde, pague mais fechado do que você dá shove, e dê jam com mais mãos conforme seu stack cai. Para o número real num spot de ICM ou bolha de verdade, jogue seus stacks e premiações na [calculadora de ICM](/en/calculator) (em inglês) em vez de confiar num range impresso.
+- **A lição confiável é o formato**, não a mão exata: dê shove mais amplo tarde, pague mais fechado do que você dá shove, e dê jam com mais mãos conforme seu stack cai. Para o número real num spot de ICM ou bolha de verdade, jogue seus stacks e premiações na [calculadora de ICM](/pt/calculator) em vez de confiar num range impresso.
 
 *(Uma nuance para os curiosos: com 10–15 big blinds, jogadores fortes às vezes misturam um pequeno min-raise com mãos premium para induzir shoves de mãos dominadas. Isso pode render mais que o jam puro — mas é um recurso avançado. O push/fold é o framework confiável; domine ele primeiro.)*
 
@@ -139,7 +139,7 @@ O que isso significa na prática:
 - **Você pode esperar se outros estão mais curtos.** Se dois jogadores têm menos fichas que você na bolha do dinheiro, você pode foldar spots marginais e deixá-los serem eliminados primeiro, subindo na escada de graça — mas só se você de fato tiver fichas para esperar, não se você for o mais curto.
 - **Não transforme o ICM numa desculpa para foldar tudo.** Blindar até ficar sem fold equity para "entrar de fininho no min-cash" troca o torneio pelo seu menor prêmio. Respeite o salto de premiação, depois volte a acumular.
 
-A matemática real por trás de "quanto menor é o meu bubble factor" vive no [guia de ICM](/pt/blog/holdem-icm) — jogue seu spot exato na [calculadora](/en/calculator) quando importar.
+A matemática real por trás de "quanto menor é o meu bubble factor" vive no [guia de ICM](/pt/blog/holdem-icm) — jogue seu spot exato na [calculadora](/pt/calculator) quando importar.
 
 ---
 
@@ -228,9 +228,9 @@ O jogo de short stack é onde a matemática de torneio vira memória muscular �
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Quando foldar no poker</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Quando o preço manda foldar</div>
   </a>
-  <a href="/en/calculator" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/pt/calculator" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Ferramenta grátis</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Calculadora de ICM (em inglês)</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Calculadora de ICM</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Calcule seu spot real de shove/call</div>
   </a>
 </div>

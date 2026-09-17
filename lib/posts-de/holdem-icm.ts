@@ -100,7 +100,7 @@ Multipliziere jetzt jede Zeile mit den Payouts, und du bekommst den Dollarwert j
 
 </div>
 
-Da steht es in Zahlen: der Leader hat ==die Hälfte der Chips, aber nur 38,4% des Geldes==, während die 20% Chips des Short Stacks 28,9% wert sind. Du musst das nicht am Tisch von Hand rechnen – der [ICM-Rechner](/calculator) macht es sofort – aber die Mechanik einmal zu sehen, ist es, was die Strategie hängen lässt.
+Da steht es in Zahlen: der Leader hat ==die Hälfte der Chips, aber nur 38,4% des Geldes==, während die 20% Chips des Short Stacks 28,9% wert sind. Du musst das nicht am Tisch von Hand rechnen – der [ICM-Rechner](/de/calculator) macht es sofort – aber die Mechanik einmal zu sehen, ist es, was die Strategie hängen lässt.
 
 ---
 
@@ -167,7 +167,7 @@ Sagen wir, drei Spieler mit 50% / 30% / 20% der Chips teilen einen verbleibenden
 
 </div>
 
-Der Short Stack bekommt aus einem ICM Deal ==$97 mehr== als aus einem Chip Chop, weil ICM ihm die Pay Jumps gutschreibt, die er sich bereits verdient hat. Also ist die Regel einfach: ==bist du short, verlange einen ICM Deal; bist du der Chipleader, schlage einen Chip Chop vor.== In der Praxis verhandelt der Chipleader oft ein Stück *über* seiner ICM-Zahl (und Short Stacks akzeptieren ein Stück darunter) im Tausch gegen die Sicherheit, Geld festzuschreiben – das ist in Ordnung, solange du deine ICM-Zahl zuerst kennst. Jag deine eigenen Stacks und Payouts durch den [ICM-Deal-Rechner](/calculator), bevor du irgendetwas zustimmst.
+Der Short Stack bekommt aus einem ICM Deal ==$97 mehr== als aus einem Chip Chop, weil ICM ihm die Pay Jumps gutschreibt, die er sich bereits verdient hat. Also ist die Regel einfach: ==bist du short, verlange einen ICM Deal; bist du der Chipleader, schlage einen Chip Chop vor.== In der Praxis verhandelt der Chipleader oft ein Stück *über* seiner ICM-Zahl (und Short Stacks akzeptieren ein Stück darunter) im Tausch gegen die Sicherheit, Geld festzuschreiben – das ist in Ordnung, solange du deine ICM-Zahl zuerst kennst. Jag deine eigenen Stacks und Payouts durch den [ICM-Deal-Rechner](/de/calculator), bevor du irgendetwas zustimmst.
 
 ---
 
@@ -252,7 +252,7 @@ A. Die Finish-Wahrscheinlichkeits-Mathematik wird meist David Harville (aus der 
 
 1. **Chips sind kein Geld.** Du gewinnst nur ein erstes Preisgeld, also ist der Chipleader weniger wert als sein Chipanteil und der Short Stack mehr. Diese eine Lücke ist ganz ICM.
 2. **Late Game, wechsle von Chip EV zu $EV.** Nahe an Pay Jumps braucht ein Call zusätzliche Equity (ein Risk Premium), um profitabel zu sein. Der Medium Stack foldet Hände, die ein Cash Game snap-callen würde.
-3. **Kenne deine Zahl, bevor du dealst.** Short Stacks wollen einen ICM Deal, Big Stacks wollen einen Chip Chop – jag deine Zahlen zuerst durch den [Rechner](/calculator).
+3. **Kenne deine Zahl, bevor du dealst.** Short Stacks wollen einen ICM Deal, Big Stacks wollen einen Chip Chop – jag deine Zahlen zuerst durch den [Rechner](/de/calculator).
 
 Von hier aus sieh, wie ICM-Druck in die breitere [Turnierstrategie](/de/blog/holdem-tournament) passt, oder geh zurück zum Fundament mit [Poker Equity](/de/blog/holdem-equity) und [Pot Odds](/de/blog/holdem-pot-odds).
 
@@ -276,7 +276,7 @@ Von hier aus sieh, wie ICM-Druck in die breitere [Turnierstrategie](/de/blog/hol
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Poker Equity erklärt</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Chip EV ist nur Equity in Chips</div>
   </a>
-  <a href="/calculator" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/de/calculator" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Kostenloses Tool</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ICM-Rechner</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Deine Stacks und Deals durchrechnen</div>

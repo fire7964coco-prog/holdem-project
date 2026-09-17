@@ -53,7 +53,7 @@ Bubble penting karena pembayaran turnamen bersifat ==top-heavy==. Lonjakan dari 
 
 **Karena chip turnamen bukan uang — Anda hanya menang satu hadiah pertama, jadi chip yang melindungi cash yang dijamin lebih berharga daripada chip yang meraih lebih banyak.** Ini adalah Independent Chip Model, dan di dekat pay jump ini berarti ==risiko bust mengalahkan imbalan memenangkan sebuah coin flip==. Sebuah call yang break-even dalam chip bisa menjadi permainan yang merugi dalam dolar sungguhan.
 
-Anda tidak perlu menjalankan matematika secara langsung — itulah gunanya [kalkulator ICM](/calculator) kami, dan rincian lengkapnya ada di [panduan ICM](/id/blog/holdem-icm). Yang penting di meja adalah konsekuensinya: ==call menjadi jauh lebih ketat, tapi shove tetap lebar==, karena menang tanpa showdown (fold equity) lebih berharga dari sebelumnya ketika semua orang bermain takut. Ingat satu baris: **ketatkan call Anda sebelum Anda mengetatkan shove Anda.**
+Anda tidak perlu menjalankan matematika secara langsung — itulah gunanya [kalkulator ICM](/id/calculator) kami, dan rincian lengkapnya ada di [panduan ICM](/id/blog/holdem-icm). Yang penting di meja adalah konsekuensinya: ==call menjadi jauh lebih ketat, tapi shove tetap lebar==, karena menang tanpa showdown (fold equity) lebih berharga dari sebelumnya ketika semua orang bermain takut. Ingat satu baris: **ketatkan call Anda sebelum Anda mengetatkan shove Anda.**
 
 ---
 
@@ -129,7 +129,7 @@ Inilah bagian yang berguna: equity yang Anda butuhkan untuk break even pada sebu
 
 Baca kolom terakhir itu sebagai batas atas, bukan sebagai spot Anda: pot bubble sungguhan berisi dead money, dan dead money justru menekan syaratnya **turun**. Kalau small blind jam 10bb dan Anda call 9bb ke pot yang sudah berisi 12bb, pada bubble factor 1,5 Anda butuh ==52,9%==, bukan 60% — dan tanpa tekanan ICM sama sekali itu cuma pot odds, ==42,9%==.
 
-Separuh lainnya: bubble factor mengikuti **siapa yang duduk di seberang Anda**, bukan fasenya. Empat orang dengan tiga dibayar, stack menengah melawan chip leader membawa bubble factor mendekati ==3,0==, sedangkan stack menengah yang sama melawan pemain terpendek nyaris tak lewat ==1,1==; stack setara ada di sekitar ==1,9==, dan di bubble final table enam orang stack menengahnya berjalan dari ==2,0== ke atas (chip leader, seperti biasa, duduk jauh lebih rendah). Perlakukan 1,5–1,7 sebagai lantai sebuah bubble serius, bukan puncaknya — dan memang turun kembali begitu Anda masuk uang. Masukkan stack dan pembayaran Anda sendiri ke [kalkulator ICM](/calculator) untuk melihat angka sebenarnya untuk sebuah spot.
+Separuh lainnya: bubble factor mengikuti **siapa yang duduk di seberang Anda**, bukan fasenya. Empat orang dengan tiga dibayar, stack menengah melawan chip leader membawa bubble factor mendekati ==3,0==, sedangkan stack menengah yang sama melawan pemain terpendek nyaris tak lewat ==1,1==; stack setara ada di sekitar ==1,9==, dan di bubble final table enam orang stack menengahnya berjalan dari ==2,0== ke atas (chip leader, seperti biasa, duduk jauh lebih rendah). Perlakukan 1,5–1,7 sebagai lantai sebuah bubble serius, bukan puncaknya — dan memang turun kembali begitu Anda masuk uang. Masukkan stack dan pembayaran Anda sendiri ke [kalkulator ICM](/id/calculator) untuk melihat angka sebenarnya untuk sebuah spot.
 
 ---
 
@@ -236,7 +236,7 @@ Mesin di balik semuanya adalah [ICM](/id/blog/holdem-icm); disiplin di balik fol
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Kapan Harus Fold di Poker</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Disiplin yang dituntut bubble</div>
   </a>
-  <a href="/calculator" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/id/calculator" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Alat Gratis</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Kalkulator ICM</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Temukan angka bubble-factor sebenarnya</div>

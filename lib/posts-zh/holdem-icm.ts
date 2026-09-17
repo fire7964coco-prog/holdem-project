@@ -98,7 +98,7 @@ short stack | 值得比他的筹码占比**更多**
 
 </div>
 
-数字摆在这儿了：leader 握着 ==一半的筹码，却只有 38.4% 的钱==，而 short stack 那 20% 的筹码值得 28.9%。你不用在牌桌上手算这些——[ICM 计算器](/calculator) 一瞬间就算好——但把这套机器看懂一次，才能让策略真正扎根。
+数字摆在这儿了：leader 握着 ==一半的筹码，却只有 38.4% 的钱==，而 short stack 那 20% 的筹码值得 28.9%。你不用在牌桌上手算这些——[ICM 计算器](/zh/calculator) 一瞬间就算好——但把这套机器看懂一次，才能让策略真正扎根。
 
 ---
 
@@ -165,7 +165,7 @@ short stack | 值得比他的筹码占比**更多**
 
 </div>
 
-short stack 从一次 ICM deal 里，比 chip chop 多拿 ==$97==，因为 ICM 把他已经挣到的那些 pay jump 记在了他头上。所以规则很简单：==如果你是 short，就要求 ICM deal；如果你是 chip leader，就提议 chip chop。== 实战里，chip leader 常常会谈到略*高于*他的 ICM 数字（而 short stack 接受略低），换来一份锁定奖金的确定性——这没问题，只要你先知道自己的 ICM 数字。在你答应任何事之前，先把你自己的码量和奖金结构丢进 [ICM 分钱计算器](/calculator) 里跑一遍。
+short stack 从一次 ICM deal 里，比 chip chop 多拿 ==$97==，因为 ICM 把他已经挣到的那些 pay jump 记在了他头上。所以规则很简单：==如果你是 short，就要求 ICM deal；如果你是 chip leader，就提议 chip chop。== 实战里，chip leader 常常会谈到略*高于*他的 ICM 数字（而 short stack 接受略低），换来一份锁定奖金的确定性——这没问题，只要你先知道自己的 ICM 数字。在你答应任何事之前，先把你自己的码量和奖金结构丢进 [ICM 分钱计算器](/zh/calculator) 里跑一遍。
 
 ---
 
@@ -257,7 +257,7 @@ A. 落名次概率的数学，通常归功于 David Harville（源自 1970 年�
 
 1. **筹码不是钱。** 你只能赢一个冠军，所以 chip leader 值得比他的筹码占比更少，short stack 则值得更多。这一个差距，就是 ICM 的全部。
 2. **后期，从 chip EV 切换到 $EV。** 逼近 pay jump 时，一次跟注需要额外的胜率（一份风险溢价）才能赚钱。中等码量会弃掉现金局里会 snap-call 的牌。
-3. **分钱前先知道你的数字。** short stack 想要 ICM deal，大码量想要 chip chop——先跑一遍 [计算器](/calculator)。
+3. **分钱前先知道你的数字。** short stack 想要 ICM deal，大码量想要 chip chop——先跑一遍 [计算器](/zh/calculator)。
 
 从这儿出发，看看 ICM 压力如何嵌进更宽的 [锦标赛策略](/zh/blog/holdem-tournament)，或者回到 [扑克胜率](/zh/blog/holdem-equity) 和 [底池赔率](/zh/blog/holdem-pot-odds) 的基础。
 
@@ -281,7 +281,7 @@ A. 落名次概率的数学，通常归功于 David Harville（源自 1970 年�
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">扑克胜率讲清楚</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">chip EV 不过就是用筹码算的胜率</div>
   </a>
-  <a href="/calculator" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/zh/calculator" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">免费工具</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ICM 计算器</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">跑一遍你自己的码量和分钱</div>

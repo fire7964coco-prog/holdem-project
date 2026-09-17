@@ -458,7 +458,7 @@ Texas Hold'em lebih mudah dipelajari kalau Anda memisahkan aturan dari strategi.
 
 Pertama, ==pelajari alurnya==: blind, dua hole cards, lima kartu bersama, empat ronde taruhan, dan tangan lima kartu terbaik. ==g:Setelah itu pelajari posisi, kartu awal, dan keputusan pot dasar.==
 
-Sebagai langkah berikutnya, ulas [peringkat kartu Texas Hold'em](/id/blog/holdem-hand-rankings), berlatih dengan [alat chart kartu awal interaktif](/hand-chart), dan pakai [kalkulator odds poker](/calculator) saat Anda ingin memahami kenapa sebuah call menguntungkan atau tidak.
+Sebagai langkah berikutnya, ulas [peringkat kartu Texas Hold'em](/id/blog/holdem-hand-rankings), berlatih dengan [alat chart kartu awal interaktif](/hand-chart), dan pakai [kalkulator odds poker](/id/calculator) saat Anda ingin memahami kenapa sebuah call menguntungkan atau tidak.
 
 ---
 

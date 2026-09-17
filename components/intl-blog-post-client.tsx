@@ -38,6 +38,10 @@ const CALC_CTA_LABELS: Partial<Record<SecondaryLocale, { title: string; subtitle
   // hi는 힌디·영어 혼합이 어색해 EN 문구 그대로(사장님 지시 09-16 「계산기라는 현지 용어가 없으면 그냥 영어로」).
   hi: { title: "Poker Odds Calculator", subtitle: "Win %, outs & pot odds instantly" },
   ms: { title: "Kalkulator odds poker", subtitle: "Equity, outs & pot odds serta-merta" },
+  // fr — ★2026-09-17 `/fr/calculator` 신설과 함께 추가. title = fr 코퍼스 앵커 축어
+  //   (lib/posts-fr/texas-holdem-rules-for-beginners.ts:444 「calculatrice de probabilités poker」) ·
+  //   subtitle = es/pt 형제 부제와 같은 세 용어를 fr 코퍼스 표기(cotes du pot · equity)로.
+  fr: { title: "Calculatrice de probabilités poker", subtitle: "Equity, outs et cotes du pot en un instant" },
 };
 
 /**
@@ -340,7 +344,7 @@ export default function IntlBlogPostClient({
                 {localeClusters !== null && CALC_CTA_LABELS[locale] && (
                   <div className="[&>a]:mb-0 [&>a]:py-2">
                     <CalcCtaButton
-                      href="/calculator"
+                      href={`/${locale}/calculator`}
                       title={CALC_CTA_LABELS[locale]!.title}
                       subtitle={CALC_CTA_LABELS[locale]!.subtitle}
                     />
@@ -534,7 +538,7 @@ export default function IntlBlogPostClient({
                     전엔 다국어 데스크톱 레일에 러닝맵만 있었다(계산기는 모바일 sticky 바에만). 문구는
                     CALC_CTA_LABELS·SOLVER_CTA_LABELS 축어. 두 번째 버튼은 pulse를 끈다(둘이면 서로를 지운다 — calc-cta-button.tsx). */}
                 {CALC_CTA_LABELS[locale] && (
-                  <CalcCtaButton href="/calculator" title={CALC_CTA_LABELS[locale]!.title} subtitle={CALC_CTA_LABELS[locale]!.subtitle} />
+                  <CalcCtaButton href={`/${locale}/calculator`} title={CALC_CTA_LABELS[locale]!.title} subtitle={CALC_CTA_LABELS[locale]!.subtitle} />
                 )}
                 {SOLVER_CTA_LABELS[locale] && (
                   <CalcCtaButton

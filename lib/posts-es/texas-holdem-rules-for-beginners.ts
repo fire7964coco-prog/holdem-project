@@ -468,7 +468,7 @@ El Texas Hold'em es más fácil de aprender cuando separas las reglas de la estr
 
 Primero, ==aprende el flujo==: ciegas, dos cartas propias, cinco comunitarias, cuatro rondas de apuestas y la mejor mano de cinco cartas. ==g:Después aprende la posición, las manos iniciales y las decisiones básicas de bote.==
 
-Como siguiente paso, repasa la [jerarquía de manos del Texas Hold'em](/es/blog/holdem-hand-rankings), practica con el [chart de manos iniciales](/en/hand-chart) y usa la [calculadora de probabilidades de póker](/en/calculator) cuando quieras entender por qué un call es rentable o no.
+Como siguiente paso, repasa la [jerarquía de manos del Texas Hold'em](/es/blog/holdem-hand-rankings), practica con el [chart de manos iniciales](/en/hand-chart) y usa la [calculadora de probabilidades de póker](/es/calculator) cuando quieras entender por qué un call es rentable o no.
 
 ---
 

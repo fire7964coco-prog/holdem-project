@@ -139,7 +139,7 @@ M值由 Dan Harrington 推广：==M = 你的码量 ÷（小盲 + 大盲 + 每圈
 
 - **它们假设特定条件。**标准 Nash 图忽略 ante 和 ICM；加上 ante 你的推变宽，加上 [钱圈/ICM 压力](/zh/blog/holdem-bubble) 你的跟变得紧得多。
 - **它们是一个单挑 / 只算盲注的模型。**真实局面里还有多个人要行动、有读牌、有一张图看不到的名次奖金跳档。
-- **可靠的要点是“形状”**，而不是具体那张牌：后位推更宽，跟得比推更紧，码量越掉就推得越多。真要一个真实 ICM 或钱圈局面下的确切数字，就把你的码量和奖金结构塞进 [ICM 计算器](/calculator)，别去信一张印出来的范围表。
+- **可靠的要点是“形状”**，而不是具体那张牌：后位推更宽，跟得比推更紧，码量越掉就推得越多。真要一个真实 ICM 或钱圈局面下的确切数字，就把你的码量和奖金结构塞进 [ICM 计算器](/zh/calculator)，别去信一张印出来的范围表。
 
 *（给好奇的你一个细节：在 10–15 个大盲时，强手有时会用超强牌混入一个小 min-raise，来诱使被压制的牌推进来。它可能比纯推赚得更多——但那是个进阶附加项。push/fold 才是可靠的框架；先把它练精。）*
 
@@ -158,7 +158,7 @@ M值由 Dan Harrington 推广：==M = 你的码量 ÷（小盲 + 大盲 + 每圈
 - **如果别人比你更短，你可以等。**如果钱圈上有两个人筹码比你少，你可以弃掉边缘位置，让他们先出局，白白往上爬名次——但前提是你真的有筹码可以等，而不是你自己就是最短的那个。
 - **别把 ICM 当成什么都弃的借口。**为了“溜进最低钱圈”而盲到没有 fold equity，是拿整个锦标赛去换它最小的那份奖金。尊重奖金跳档，然后回到积累筹码上来。
 
-“我的 bubble factor 到底低多少”背后真正的数学在 [ICM 指南](/zh/blog/holdem-icm) 里——真到关键时刻，就把你的确切局面跑一遍 [计算器](/calculator)。
+“我的 bubble factor 到底低多少”背后真正的数学在 [ICM 指南](/zh/blog/holdem-icm) 里——真到关键时刻，就把你的确切局面跑一遍 [计算器](/zh/calculator)。
 
 ---
 
@@ -257,7 +257,7 @@ A. 是的。在现金局你随时可以补码或加买到满码，而且通常�
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">什么时候该弃牌</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">什么价格下该弃牌</div>
   </a>
-  <a href="/calculator" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+  <a href="/zh/calculator" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">免费工具</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">ICM 计算器</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">算出你真实的推/跟位置</div>

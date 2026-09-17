@@ -1,3 +1,13 @@
+## 2026-09-17 (3) — 계산기 랜딩 10개 로케일 신설 `/{ja,zh,zh-hant,es,pt,de,fr,id,ms,hi}/calculator` (사장님 지시 「각 언어로 번역해서 랜딩페이지를 만들어야지」)
+
+- 발단: ms 글 우측 레일 계산기 CTA가 한국어 `/calculator`로 떨어졌다(사장님 캡처). 원인 = `intl-blog-post-client.tsx` CTA href 하드코딩 + 계산기 랜딩이 ko·en 둘뿐. ja 본문 7곳은 존재하지 않는 `/ja/calculator`(404)를 가리키고 있었다.
+- 구조: EN 클라이언트(1,401행 · 문자열 JSX 인라인)를 **공용 컴포넌트 + 로케일 사전**으로 리팩터링 — `components/calculator/calculator-tool.tsx`(1,392행) + `components/calculator/dict.ts`(`CalcDict` 타입 · `CALC_DICT_EN`) · `calculator-workspace.tsx`에 `labels` prop. EN은 12행 래퍼. **검증 = EN SSR HTML 전후 0줄 차이(청크 해시·flight 정규화) + 클라이언트 32상태 `.calc-console` 덤프 바이트 동일.**
+- 로케일 10개: `app/<loc>/calculator/{dict,faq,page}.ts(x)` — 서브에이전트 10개 병렬(공용 브리프: 용어 정본 우선순위 = translation-terms → glossary 포스트 → 코퍼스 grep · §13 수치 불변 · 언어 열거 금지 · 링크는 실재 슬러그만). 핵심명 = 09-16 사장님 확정 CTA 라벨(fr은 신규 「Calculatrice de probabilités poker」 · hi는 영어 유지 규칙). numberLocale: es·hi는 코퍼스 실측으로 **en-US**(es 쉼표 천단위 1,421:178 · hi 서양식 그룹핑 90+회), 나머지 자국.
+- 등록: `lib/calculator-alternates.ts`(hreflang 12세트 **한 곳** — 솔버처럼 12파일 복사 안 함 · ko·en 페이지도 이걸 import) · `hub-routes` 10 · `side-rail` 10(라벨 = 각 페이지 제목 단축형) · sitemap 10(0.7) · CTA href `/${locale}/calculator` · fr CTA 라벨 신설 · 본문 링크 재조준 **29파일 66곳**(`](/calculator`·`](/en/calculator`·`href="/calculator"`·`href="/en/calculator"` 4형태 · pt 「(em inglês)」 6곳 삭제 · `updated` 안 올림 = URL만 바뀐 기계적 변경 §1-C).
+- 게이트: 빌드 70 + intl 577 + static 81 · postbuild hreflang 0(세트 67종) · meta-lang 0 · directives 0 · robots 10/10 index · `<html lang>` 10/10 · 로컬 Playwright 10로케일 탭 8개 전부 hydration·pageError 0·영어 잔존 0 · ja/es/hi 데스크톱·모바일 캡처 육안 OK.
+- 🔴 sed 함정: `sed -i`가 매치 없는 파일까지 stat을 바꿔 git이 218파일을 M으로 찍었다 → `git update-index --refresh` + 매치 없는 파일 `git checkout --`로 정리(실제 diff는 numstat 기준 66행뿐).
+- 미결(핸드오프): ① 10개 랜딩 SEO 재조준(키워드 실측·SERP)은 queue 회차로 — 이번은 «코퍼스 용어 기반 1판» ② 검수장 청구(신설 10 + 기존 ko·en 횡단) = MB-055 ③ 낡은 주석: `app/de/solver/faq.ts` 머리·`docs/keyword-bank/de-gto-solver.md` §4 「de에 계산기 없음」 · `app/ja/solver/page.tsx` 「`/ja/calculator`는 존재하지 않는다」 ④ zh-hant push/fold 표기 갈림(`全下或棄牌` 30 vs `全下或蓋牌`) 판정.
+
 ## 2026-09-17 (2) — es `como-entrar-al-wsop` 히어로 재제작 (Q4b-6 사장님 결정 「수정해줘」 · 헤드 실행)
 
 - 문구가 새 본문보다 좁았다(「21 años y una identificación」 ↔ 본문 «+ dos cuentas gratuitas»). 새 템플릿 `scripts/gen-como-entrar-al-wsop-hero.html`(구 `gen-wsop-hero.html` 삭제 — 산출 이름과 어긋나 있었다) → `render-gen-final` q82 → 46KB · 1200×675 · Read 육안 스펠링 확인. 헤드라인 3행 + 부제 「Caesars Rewards y WSOP LIVE — obligatorias para cualquier evento, no solo online」(stripe 축어) · 서류 4카드·바이인 4칸 승계 · 워터마크 템플릿 내장.
