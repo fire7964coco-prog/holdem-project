@@ -17,6 +17,13 @@ const faq = Object.values(faqMod).find((v: any) => Array.isArray(v)) as { q: str
 const en = CALC_DICT_EN;
 let bad = 0;
 const num = (s: string) => (s.match(/\d[\d.,]*%?|[<≥≤]\s*\d+|\d+[–-]\d+|\d+\+/g) || []).join(" ");
+// ★2026-09-17 pt 회차: 소수 콤마 로케일(pt-BR 등 · 코퍼스 실측 1,637 : 0)은 «81,9%»·«$1.035»로 적는다 → 로케일 쪽 숫자 토큰의 `.`↔`,`를 뒤집어 EN과 비교.
+//   판정은 사전의 numberLocale로(Intl이 1.5를 «1,5»로 쓰면 콤마 로케일). en-US 표기 로케일(es·ja·zh…)은 그대로.
+const commaDecimal = (1.5).toLocaleString(zh.numberLocale).includes(",");
+const numL = (s: string) => {
+  const t = num(s);
+  return commaDecimal ? t.replace(/[.,]/g, (c) => (c === "." ? "," : ".")) : t;
+};
 const hit = (msg: string) => { console.log(msg); bad++; };
 
 // A. quickRef
@@ -30,7 +37,7 @@ else {
     t.rows.forEach((r, ri) => r.forEach((c, ci) => {
       const zc = z.rows[ri]?.[ci] ?? "";
       // EN 셀에 숫자가 있을 때만 비교 — 라벨 셀은 로케일이 「one」을 「1枚」로 적어도 된다(ja 오탐 6건 · 09-17)
-      if (num(c) && num(c) !== num(zc)) hit(`A 표${i + 1} r${ri + 1}c${ci + 1}: EN「${c}」 ${locale}「${zc}」`);
+      if (num(c) && num(c) !== numL(zc)) hit(`A 표${i + 1} r${ri + 1}c${ci + 1}: EN「${c}」 ${locale}「${zc}」`);
     }));
     if (t.link?.slug !== z.link?.slug) hit(`A 표${i + 1} link slug ${t.link?.slug} vs ${z.link?.slug}`);
   });
@@ -41,7 +48,7 @@ else {
   if (a.length !== b.length) hit(`B ${k} 행 수 ${a.length} vs ${b.length}`);
   a.forEach((r, i) => { const z = b[i]; if (!z) return;
     for (const f of Object.keys(r) as (keyof typeof r)[]) { if (f === "player") continue;
-      if (String(r[f]) !== String(z[f]) && num(String(r[f])) !== num(String(z[f]))) hit(`B ${k} r${i + 1}.${f}: EN「${r[f]}」 ${locale}「${z[f]}」`); }
+      if (String(r[f]) !== String(z[f]) && num(String(r[f])) !== numL(String(z[f]))) hit(`B ${k} r${i + 1}.${f}: EN「${r[f]}」 ${locale}「${z[f]}」`); }
   });
 });
 if (zh.equity) en.equity!.presets.forEach((p, i) => { const z = zh.equity!.presets[i];
