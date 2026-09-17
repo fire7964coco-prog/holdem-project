@@ -1,3 +1,13 @@
+## 2026-09-17 (6) — `/ja/calculator` 재조준 «계산 기능 강조» 트랙 2/11 — Equity 탭(「ハンド勝率」) + 빠른 참조 6표 + FAQ 18 + 메타 재조준 (브리프 §3-A 12단계 그대로)
+
+- 실측(라쿠 Japan 80시드 15크레딧 · 질문검색 4 · 서제스트 6 · DFS SERP 3 · 상위 7페이지 구조 추출) → `docs/keyword-bank/ja-calculator.md`. 머리어 = 「ポーカー 勝率 計算」 720(SD 22 · 승인 CTA 「ポーカー勝率計算機」와 같은 축) · 「〜 サイト」 390 · 「ハンド 勝率」 320 · 「必要勝率」 170 · 「ICM 計算機」 20(SD 23). 🔴 「チップチョップ」 1,600은 明治 과자 오염(서제스트 26건 전부) → 훅 금지. GSC는 신설 직후라 0.
+- SERP: 「勝率 計算」 1~3위 = pokerlistings 계산기 · mpj-portal · **pokerqz 에퀴티 도구**(「主要なプリフロップ対戦の勝率表」 AA vs KK 81.9%) · ICM 1위 holdemcalc.com/ja. 공통형 = 도구 + 정적 표 + FAQ(EN과 동형). pokerlistings FAQ 「オッズはプレイ人数で変わる?」 = 질문 DB 1위 「5人の場合」 → **FAQ 18(ja 고유)** 로 흡수(값 = AA vs 랜덤 N 표).
+- 제목 `ポーカー勝率計算機 — ハンド勝率・ICM・必要勝率を無料計算`(31자 · 「アウツ・ポットオッズ」→ 실측 큰 축으로) · 설명 109자 · Equity 탭 라벨 「ハンド勝率」 · 아웃츠 3스트리트 「フロップ→リバー / →ターン / ターン→リバー」(ja outs 축어) · quickRef H2 「〜計算機の早見表」 프레임 · M 표 「CSI」 병기 · ICM 딜 새 예시(EN 동형 · 옛 예시는 ja `holdem-icm` L151~170과 동일했다) · 관련 글 8 · 딜러 렌즈 EN 12항 동반. page.tsx는 EN처럼 `CALC_DICT_JA.seo` 파생 + OG/트위터 images. 수치·행 개수 = EN 그대로(교열 렌즈 A/B/C 0 불일치 · 스크립트 대조).
+- 렌즈 3종(Opus · 병렬): 네이티브 적대 15(확실 7: hero.lead 미완 문장 · `{b3}` 술어 종결이 「べきです」와 안 붙음 · 「キッカーの低さを上回る」 주어 오류 · 77/88/KQo 「アーリーはコール」= 오픈 림프로 읽힘 · AA vs 5인 「ポットを取る側ではなくなる」 거짓 명제 · です 불일치 · FAQ 3문 동사 종결) · 교열 2(탭 이름 「勝率計算機」 vs 「ハンド勝率」 충돌 5곳 · 헤더 「4倍 · 2倍の法則」 역순) · 2차 교열 14(확실 6: `{b3}` 이음매 garden-path 재발 · 「ポットを取る側」 복원 · 「——」 문장 접착 · Q14 「なぜ?」 · あなた→自分 · 「会場が…場所によって」 순환) → **반영 31 · 기각 1**(탭 라벨 「スタハン」/「Push/Fold」 축약 — 390 캡처에서 두 줄로 읽히고 슬랭·라틴 전환은 근거 부족). 🔴 1차 수정이 2차 결함을 만들었다(b3 두 번) — 2차 교열 필수 재확인.
+- 화면(screen-review 390/1440 · overflow 0): 🔴 **CJK 표 라벨 열이 1글자씩 세로로 쌓였다**(아웃츠 「代表的なドロー」·SPR 「コミット済み」·M 「10–19」) → 세 표 `nowrap`에 라벨 열 추가(옆 스크롤). Equity 프리셋 AA vs KK · 아웃츠 3열 · ICM chop 열 상호작용 OK.
+- 게이트: 빌드 EXIT 0 ×2 · seo-sync 0 · meta 109 · cjk 0 · hreflang 0 · meta-lang 0 · 산출물 H2 12 + Question 18 + `calculator-tab-equity` SSR + og:image. 곁: `app/ja/solver/{page,solver-client}.tsx` 낡은 주석 「`/ja/calculator`는 존재하지 않는다」 정정(09-17 (3) 미결 ③).
+- 브리프 §0 ja ✅ · §3-B(ja가 남긴 것 6) · §5 EN 후속 +1(77/88/KQo 「call EP」 모호). 다음 = **zh**(「zh 시작해」).
+
 ## 2026-09-17 (5) — `/en/calculator` 재저작 «계산 기능 강조» 트랙 1/11 — Equity(핸드 vs 핸드) 탭 신설 + 빠른 참조 6표 + FAQ 17 + 메타 재조준 (사장님 지시 「ko처럼 계산기능 강조 · 한 언어씩 · en부터」)
 
 - 방향: 첫 초안(경험담·경화식)은 폐기 — «검색자 의도 = 계산기». 정본 = `docs/harden-brief/calculator-landing-rewrite.md`. 뱅크 = `docs/keyword-bank/en-calculator.md`(라쿠 US 46개 · DFS suggestions · PAA 4쿼리 · 경쟁 12페이지 구조). 머리어 「poker odds calculator」 9,900(KD 7)의 의도 = 핸드 vs 핸드 승률인데 우리 도구엔 없었다 → **Equity 탭 신설**.

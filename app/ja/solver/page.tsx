@@ -32,7 +32,7 @@ import { SOLVER_FAQ_JA } from "./faq";
  *   **두 층을 섞지 마라**: 검색 축 = GTO / 본문 용어 = ソルバー.
  *
  * 🔴 카니발 방지 — ja는 EN·KO와 «가진 것»이 다르다:
- *   · **`/ja/hand-chart`·`/ja/calculator`·`/ja/win-rate-quiz`는 존재하지 않는다.**
+ *   · **`/ja/hand-chart`·`/ja/win-rate-quiz`는 존재하지 않는다.** (`/ja/calculator`는 2026-09-17에 신설됐다 — 낡은 서술 정정)
  *     EN 랜딩이 거는 도구 링크 3종을 그대로 옮기면 전부 404다. → **ja 블로그 글로 갈았다.**
  *   · 프리플랍 레인지 표 = `ja/holdem-starting-hands-chart`가 이미 소유한다
  *     (`ポーカー レンジ表` **1,600** · H2 「GTOプリフロップチャート vs 初心者用チャート」).

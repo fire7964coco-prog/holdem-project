@@ -9,25 +9,26 @@ import { CALCULATOR_FAQ_JA } from "./faq";
 /**
  * `/ja/calculator` — 한국어 `/calculator`·영어 `/en/calculator`의 일본어판. ★2026-09-17 신설
  * (10개 로케일 동시 신설 — 다국어 글의 우측 레일 계산기 CTA가 전부 한국어 `/calculator`로 떨어지던 것의 처방).
+ * ★2026-09-17 (ja 회차) 재조준 — EN 재저작(b337e436)과 동형: Equity 탭 · quickRef 6표 · FAQ 18 · 메타 재조준.
+ *   근거 = docs/keyword-bank/ja-calculator.md(라쿠 Japan 실측 · 질문 DB · DFS SERP 3쿼리 · 상위 페이지 구조).
  * 정본 구조 = `app/en/calculator/page.tsx`. 도구 본체는 **공용 컴포넌트**
  *   `components/calculator/calculator-tool.tsx` + 이 폴더의 사전(`dict.ts`)·FAQ(`faq.ts`)만 일본어다.
  * hreflang 세트 = `lib/calculator-alternates.ts`(12개 랜딩이 같은 세트를 선언해야 `check:hreflang` 통과).
  *
- * 용어 출처: `docs/translation-terms-ja.md`(문체·반각 괄호·$ 유지) → `lib/posts-ja/holdem-glossary.ts` →
- *   `lib/posts-ja/{holdem-icm,holdem-outs,holdem-pot-odds,holdem-short-stack,holdem-starting-hands-chart}.ts` 축어.
+ * 🔴 title/description은 CALC_DICT_JA.seo에서 가져온다 — 클라이언트 <SEO>가 같은 값을 덮어쓰므로
+ *   두 자리가 갈리면 안 된다(settled-decisions §6 · check:seo-sync). 접미 「| HoldemMaster」만 여기서 붙인다.
  *
- * 제목·설명에서 내린 판단:
- *   ① 핵심어는 사장님 승인 CTA 「ポーカー勝率計算機」(components/intl-blog-post-client.tsx:27)를 그대로 H1·title에.
- *      본문 링크 앵커는 「ICM計算機」(4)·「ICM計算ツール」(3)·「計算ツール」(2)·「ポーカー確率計算機」(1)로 갈려 있어
- *      어느 것도 정본이 아니다 — 승인된 이름을 정본으로 세우고 ICM 섹션 안에서만 「ICM計算機」를 쓴다.
- *   ② 제목 차별화어 = 「アウツ・ポットオッズ・ICM」. 「確率計算機」 축(`ポーカー 確率計算機` 50 · keyword-bank/ja-probability.md §1)은
- *      「確率計算」 390의 하위이고 `holdem-probability`가 허브를 소유하므로 제목에서 겹치지 않게 「勝率」 쪽으로 세웠다.
- *   ③ 「無料」는 설명 첫 어절 + 제목 끝에만. 솔버 랜딩과 같은 이유로 「登録不要」를 설명 첫머리에 두었다(제목 폭 ~31자 유지).
- *   ④ ICM 예시 통화는 EN 그대로 `$`(translation-terms-ja.md:17 「$ 유지·円 환산 금지」 · holdem-icm.ts:158~170 축어).
+ * 제목·설명에서 내린 판단(09-17 재조준):
+ *   ① 핵심어는 사장님 승인 CTA 「ポーカー勝率計算機」 유지. 실측도 이 축이 머리다 — 「ポーカー 勝率 計算」 720(SD 22) ·
+ *      「〜 サイト」 390 · 「〜 計算ツール/アプリ」 90/90(라쿠 Japan · 09-17). 「確率 計算」 320은 `holdem-probability`가 소유.
+ *   ② 차별화어 = 「ハンド勝率」(「ポーカー ハンド 勝率」 320 · SERP 3위 pokerqz가 «ハンドvsハンド» 도구 = Equity 탭의 의도) ·
+ *      「ICM」(「ICM 計算機」 20 · SD 23 · SERP 1위 holdemcalc) · 「必要勝率」(「ポーカー 必要勝率」 170 > 「ポットオッズ」 50).
+ *      옛 제목의 「アウツ・ポットオッズ」는 설명으로 내렸다. 🔴 SPR·BB는 제목 훅 금지(settled §1) — 탭·표에서만.
+ *   ③ 「チップチョップ」 1,600은 明治 과자 오염(라쿠 서제스트 26건 전부 과자) → 제목·OG 훅 금지. 설명 끝에 ICM 문맥으로만.
+ *   ④ ICM 예시 통화는 EN 그대로 `$`(translation-terms-ja.md:17 「$ 유지·円 환산 금지」).
  */
-const TITLE = "ポーカー勝率計算機 — アウツ・ポットオッズ・ICMを無料計算 | HoldemMaster";
-const DESCRIPTION =
-  "登録不要・無料のテキサスホールデム計算ツール。アウツとドロー完成率、ポットオッズ、役判定、スターティングハンドの強さ、SPR、トーナメントのM値、ICM、プッシュ/フォールドのナッシュ表——8つの計算機を1ページで。";
+const TITLE = `${CALC_DICT_JA.seo.title} | HoldemMaster`;
+const DESCRIPTION = CALC_DICT_JA.seo.description;
 
 export const metadata: Metadata = {
   // absolute — 안 쓰면 루트 layout의 title.template("%s | 홀덤마스터")이 붙어
@@ -39,19 +40,22 @@ export const metadata: Metadata = {
     languages: CALCULATOR_ALTERNATES,
   },
   // twitter:*를 안 주면 루트 레이아웃의 한국어가 그대로 나간다
+  // 🔴 images는 루트 layout에서 상속되지 않는다(Next metadata는 얕은 병합) — 안 적으면 summary_large_image 카드가 빈 채로 나간다.
   twitter: {
     card: "summary_large_image",
     title: TITLE,
     description: DESCRIPTION,
+    images: ["/opengraph.jpg"],
   },
   openGraph: {
-    title: "ポーカー勝率計算機 — HoldemMaster",
+    title: "ポーカー勝率計算機 & ICM計算機 — HoldemMaster",
     description:
-      "アウツ、ポットオッズ、役判定、スターティングハンド、SPR、M値、ICM——ホールデムに必要な数字を1か所で。",
+      "ハンド対ハンドの勝率、ICMディール、ポットオッズと必要勝率、アウツ、SPR、M値、プッシュ/フォールド——ホールデムに必要な数字を1か所で、無料。",
     url: `${SITE}/ja/calculator`,
     siteName: "HoldemMaster",
     locale: "ja_JP",
     type: "website",
+    images: [{ url: "/opengraph.jpg", width: 1200, height: 630, alt: "HoldemMaster ポーカー勝率計算機" }],
   },
 };
 
@@ -67,7 +71,9 @@ const jsonLd = {
       browserRequirements: "Requires JavaScript",
       inLanguage: "ja",
       offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      // ★2026-09-17 7 → 9: Equity 신설 + push/fold 누락 보완(EN과 동형). 탭을 늘리면 이 배열·hero.chips·guide.cards도 같이.
       featureList: [
+        "勝率計算機(ハンド対ハンドの勝率)",
         "アウツ計算機",
         "ポットオッズ & インプライドオッズ計算機",
         "役判定",
@@ -75,6 +81,7 @@ const jsonLd = {
         "SPR(スタック対ポット比)計算機",
         "トーナメントのM値計算機",
         "ICM(独立チップモデル)計算機",
+        "プッシュ/フォールドのナッシュ表",
       ],
       publisher: { "@type": "Organization", name: "HoldemMaster", url: SITE },
     },
