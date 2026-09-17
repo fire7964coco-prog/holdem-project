@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Solo seis estados tienen póker online con licencia y funcionando: Nueva Jersey, Nevada, Pensilvania, Míchigan, Delaware y Virginia Occidental. Comparten jugadores gracias a un acuerdo llamado MSIGA, pero las mesas las junta cada marca y no el estado — por eso alguien de Nevada nunca coincide con alguien de Delaware. Para abrir cuenta no hace falta ser ciudadano ni tener Seguro Social: las reglas aceptan pasaporte o número fiscal como equivalente, aunque cada sala aplica su propio criterio.",
   category: "rules",
   date: "2026-07-26",
-  updated: "2026-07-26",
+  updated: "2026-09-17",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "💻",
@@ -46,10 +46,10 @@ En seis, y en ningún otro: **Nueva Jersey, Nevada, Pensilvania, Míchigan, Dela
 
 | Estado | Dónde puedes jugar |
 |---|---|
-| Nueva Jersey | WSOP.com · BetMGM (también como Borgata, misma red) · PokerStars (como FanDuel) |
-| Nevada | WSOP.com — la única con sala abierta al público |
-| Pensilvania | WSOP.com · BetMGM · BetRivers · PokerStars (FanDuel) |
-| Míchigan | WSOP.com · BetMGM · BetRivers · PokerStars (FanDuel) · DraftKings |
+| Nueva Jersey | WSOP Online (antes WSOP.com) · BetMGM (también como Borgata, misma red) · PokerStars (como FanDuel) |
+| Nevada | WSOP Online — la única con sala abierta al público |
+| Pensilvania | WSOP Online · BetMGM · BetRivers · PokerStars (FanDuel) |
+| Míchigan | WSOP Online · BetMGM · BetRivers · PokerStars (FanDuel) · DraftKings |
 | Delaware | BetRivers — es la única |
 | Virginia Occidental | BetRivers — es la única |
 
@@ -65,7 +65,7 @@ Hay tres estados donde la ley avanzó pero sigue sin haber una sala de póker ab
 
 Porque el acuerdo que une a los seis estados —el **MSIGA**— solo da permiso; quien junta las mesas de verdad es cada marca. Y ninguna marca tiene licencia en los seis a la vez. Por eso ==el estado en el que vives importa menos que la app que elijas.==
 
-La consecuencia práctica sorprende a todo el mundo: **un jugador de Nevada no puede sentarse con uno de Delaware o Virginia Occidental.** En Nevada la única sala abierta al público es WSOP.com; en Delaware y Virginia Occidental, la única es BetRivers. No existe ninguna marca con licencia en ambos lados, así que esos jugadores nunca se cruzan.
+La consecuencia práctica sorprende a todo el mundo: **un jugador de Nevada no puede sentarse con uno de Delaware o Virginia Occidental.** En Nevada la única sala abierta al público es WSOP Online; en Delaware y Virginia Occidental, la única es BetRivers. No existe ninguna marca con licencia en ambos lados, así que esos jugadores nunca se cruzan.
 
 Lo que sí funciona igual en todas partes: **Nueva Jersey, Míchigan y Pensilvania** están en prácticamente todas las redes. Si vives en uno de esos tres, tienes acceso a las mesas más llenas del país sin importar qué app abras.
 

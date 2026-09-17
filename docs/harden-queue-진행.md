@@ -19,6 +19,7 @@
 | ~~Q3~~ | **EN 56편 `updated` 전수 대조** — ✅ **종결(신설 시점 실측 · 회차 불요)** | 실측 2026-09-11: EN 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · `2c9012c7` · «올리지 않는다» 판정 이미 완료) · 창 밖 5 = `8d2aba44` CSS 수리 2 · `a069430a` tldr 별표 제거 2 · `index.ts`(포스트 아님) → **전부 §1-C «기계적 변경은 안 올린다»에 해당**. `en-first-queue` §3의 「이미 잡힌 6건」은 `fd8cafc0`로 닫혀 있다(현재 파일에 남은 어긋남 0). 재현 = 셸 한 줄(파일별 `git log -1 --date=short` ↔ `updated` 비교) — Q7에서 `check:stamp --locale=en` 게이트로 박는다. **§3 잔여(경쟁 페이지 언급 3곳 · EN↔pt FAQ 개수 · game-order 「who bets first」)는 Q4-a로 이관** | — | ✅ | (실측만 · 커밋 없음) | — | 09-11 |
 | **Q4-a** | **EN-먼저 묶음 I — 미결·동형** | `en-first-queue` §2-D **J#8**(ept-barcelona €330 ↔ €825 · 공식 일정 축어 확보 후) · §2-E **X-1**(blind-meaning 「Nobody gets to skip their turn」 · WSOP Live Action §155~158 · Tournament §85) · 핸드오프 「대회·사실 판정」 절의 **EN 동형 30건**(M-089 §4 잔여 = bad-beat #12 ~62% · betting-actions 103조 두 요소 · flush-vs-straight SF 5장/7장 라벨 · 목록 `docs/reply-to-review-2026-09-04-m089.md` §2·§4) · `tiebreak-rules` L232 「Rule 85」 룰북 한정어 · **Q3 이관분**(경쟁 페이지 언급 3곳 · EN↔pt FAQ 개수 bubble·short-stack·tournament·icm · game-order title 「who bets first」) · 🆕 **ja 회차 13 §5-K 이관**(`harden-ja-진행` §5-K · 09-11 머지): **K1** `when-to-fold` 셀프체크 ⑤ 「(= a bluff-catcher)」 EN L141/L153 + 8로케일(D유형) · **K3** = J#8과 같은 자리(ept €330 H2·비교표 — 블록만 €825로 갈려 있다) · **K4** `tiebreak-rules`↔`kicker` «キッカーなし 족 개수» 5 vs 4 — 헤드 실측(09-11): **EN도 같다**(kicker FAQ L184 「Straights, flushes, full houses, and straight flushes」 = 4 · tiebreak 표 L84~89 = 로열 행 별도 5) → 로열 = 스트레이트플러시라 둘 다 참 · **결함 아님** · 통일은 선택(kicker FAQ에 「(royal included)」 한 마디 · 8로케일) · **K2**(bad-beat 63%) = 🔴 **결재 15 재론 금지**(≈63% 유지 · 65.0%/1.86으로 되돌리지 마라). 🔴 헤드 실측(09-11): 결재 15의 **행 문구 «nine outs plus live side cards»가 EN L92·ja L105에 아직 없다**(「9-out flush draw fills on the river」 그대로 · `en-first-queue` §1 ③과 같은 자리) → **결재 15 이행 = EN L92 행 문구 + 8로케일** · 🆕 **ja 회차 14 §5-L 이관**: **L1** `holdem-straddle` EN L88·L169·히어로 캡션 L69 「buys the last action」 프레이밍 — 버튼은 원래 포스트플롭 마지막이라 버튼 스트라들이 사는 건 **프리플랍** 마지막 액션뿐(EN L188만 정확) → 한 줄 한정 + 8로케일 · **L2** `holdem-outs` 표 15행(플러시+OESD) 도출 「9 + 8 − 2」 — EN 같은 칸이 산문이면 동형 + 7로케일(ja는 이미 고침) | **Opus 전 구간 · 1세션** — 🔴 재료 실측 후 재조정(§5-A-3): EN 쪽이 «짧은 한정어 10자리»로 줄어 새 문장 집필 구간이 없었다 | ✅ | (아래 §1-Q4-a) | 렌즈 4종+2차 교열 = 지적 **59** · 반영 **43** · 기각 **6** · 이관 **7** · 기록만 **3** | 09-12 |
 | **Q4-b** | **검수장 MA-118 요청 2 — es 대회 2편** | `como-entrar-al-wsop`·`wsop-2026-tournament-guide`(es) WRONG 15·RISKY 10·STALE 2 + **LISR 138조 웹 실측**(멕시코 소득세법 · 1차 출처) · 원장 = `홀덤검수-es/ledger/` · EN 동형이면 EN-먼저 | **Opus 전 구간 · 1세션**(번역 QA·법령 실측 = Opus · 새 문장은 원장 처방 이식) | ✅ | (아래 §1-Q4-b) | 렌즈 4종 지적 **46**(렌즈 간 중복 약 10) + 2차 교열 **16** · 반영 **34 + 15** · 기각 **5** · 이관 **5** · 기록 **3** | 09-16 |
+| **Q4-c** | **Q4-b 잔여 — es 「WSOP 참가 요건」 동형 명제 + «WSOP.com» 명칭** | §2 「Q4-b가 남긴 것」 첫 항목 + §5 Q4b-6 말미(`holdem-tournament:298`) + 핸드오프 ▶1 · 브리프 `docs/harden-brief/queue-Q4-c-es-동형명제.md`(1차 출처 축어 · 자리 전수 · §5 실측) | **Fable 전 구간 · 1세션**(사장님이 Fable로 열었다 · 렌즈 5종 Opus 서브) — 🔴 착수 실측: 대상 3편이 **미발행**(es-US 13편 · index 미등록)이라 배포가 걸리는 변경은 es 2 + EN 보드 2자리 + KO 1 | ✅ | (아래 §1-Q4-c) | 1차 4종 지적 43(raw · 중복 제거 약 31) · 반영 19 · 기록 6 · 기각 2 · EN-먼저 1 + 2차 교열 7 · 반영 6 · 기록 1 | 09-17 |
 | **Q5-a** | **EN-먼저 묶음 II — 세션 1 렌즈 38건 판정(전반)** | `en-first-queue` **§1 ①~㉑** · 판정 뒤 EN 정정 → 8로케일 전파 | **Opus 전 구간 · 1세션** — 🔴 재료 실측 후 재조정(§5-A-3): 채택 12건 중 새 문장 집필은 2문장뿐이고 나머지는 **짧은 한정어·표 헤더·기계적 변경·기존 로케일 정본의 이식**이었다(Q4-a와 같은 사유) | ✅ | (아래 §1-Q5-a) | 렌즈 4종+2차 교열 = 지적 **35**(렌즈 간 중복 3 제거 후 **32**) · 반영 **29** · 기각 **2** · 등재만 **1** | 09-13 |
 | **Q5-b** | **EN-먼저 묶음 II — (후반)** | `en-first-queue` **§1 ㉒~㊸**(㉟ 우선 · ㊲는 검수장 판정 산물이라 재론 절차 = MB 초안) | **Opus 전 구간 · 1세션** — 🔴 재료 실측 후 재조정(§5-A-3): 채택 14건이 «짧은 한정어·1차 출처 표 1개·정본 이식»이라 집필 구간이 없었다(Q4-a·Q5-a와 같은 사유) | ✅ | (아래 §1-Q5-b) | 렌즈 4종 지적 **50**(raw 75 · 렌즈 간 중복 25 제거) + 2차 교열 **13** = **63** · 반영 **54** · 기각 **5** · 등재 **4** | 09-13 |
 | **Q5-c** | **EN-먼저 묶음 III — §2-F 4건(Q6c#1~#4)** | `en-first-queue` **§2-F** · 브리프 `docs/harden-brief/queue-Q5-c-EN먼저-2F.md`(전수 열거표 · WSOP 원문 축어) | **Fable 전 구간 · 1세션**(사장님이 Fable로 열었다 · 집필 = AK 명제 8로케일 재서술 · 렌즈 6종은 Opus 서브) | ✅ | (아래 §1-Q5-c) | 1차 4종 지적 53(중복 제거 34 · 반영 30 · 기록 3 · 기각 1) + 2차 2종 지적 36(반영 33 · 기록 3) | 09-17 |
@@ -623,6 +624,23 @@ tiebreak L55·L263·L277 ↔ EN L51·L175·L236·L250 · marathon L281 ↔ EN L2
 
 🪶 **모델**: 사장님이 `/model` Fable로 열었고 「집필 있음」 지시라 A·B·C 전 구간 Fable(구간 경계에서 멈추지 않았다 — §2 「그냥 계속해」 조항 적용). 렌즈 6종(1차 4 + 2차 교열·네이티브 2)은 전부 Opus 서브.
 
+### §1-Q4-c. 회차 Q4-c 산출 — es 「WSOP 참가 요건」 동형 명제 + «WSOP.com» 명칭 (2026-09-17)
+
+**한 일** — 재료 = Q4-b §2 잔여(`poker-en-las-vegas` L140·L142·L256 「21세 유일 요건」·matrícula 발급처 부재·WSOP.com 명칭 + 형제 `nueva-jersey`·`dinero-real`) + `holdem-tournament:298` 썸네일 문장. 1차 출처 = 룰북 Rule 2·4(g)·9·10 축어(`docs/sources/wsop-2026-tournament-rules.txt`) + 라이브 `wsoponline.com`(09-17 · `<title>` WSOP Online). 🔴 **착수 실측에서 «es 형제 3편»이 미발행이었다** — `poker-en-las-vegas`·`poker-en-nueva-jersey`·`poker-online-dinero-real-estados-unidos`는 07-27 발행 중단된 es-US 합법성 13편(`lib/posts-es/index.ts` L59~64 · `settled-decisions` «되살리지 마라»). 빌드·사이트맵에 없고 `audit:hard --locale=es`(index 60편 로드)도 안 본다 → 편집은 «보존 재료 정정»으로 유지, index 등록 안 함. **배포가 걸리는 변경 = es `holdem-tournament`(L298·L180·L307) · es `como-entrar-al-wsop`(L152 글로스·L168 identificación) · EN 보드 FAQ `lib/tournaments-i18n.ts` L153·L177 「WSOP Online (formerly WSOP.com)」 · KO `holdem-tournament-how-to-enter` L200 「WSOP Online(구 WSOP.com)」+「9월 현재」.**
+
+| 묶음 | 판정·결과 |
+|---|---|
+| **참가 요건 명제** | 「Lo único que exigen es 21 años」·「solo exige 21 años」·「21 años y una identificación válida」 → **21 + 신분증 + 무료 계정 2(Caesars Rewards·WSOP LIVE) + 이벤트별 조건**(Rule 2·4·10 축어). 렌즈가 잡은 것: 「Lo que exigen **es**」 수일치 → son · 「con prueba de edad」+「identificación válida」 이중 열거 삭제 · 비자 범위 괄호(「entrar al país es otro trámite」) · 「obligatorias aunque te inscribas en la ventanilla」(Rule 4 「any WSOP Event」) · FAQ는 짧은 답 + 허브 위임(본문↔FAQ 축어 런 19단어 → 5) |
+| **matrícula** | 발급처 = 「las representaciones de México en Estados Unidos y Canadá」(SRE 원문 · 「solo」 0 · 「consulados」 좁힘도 풀었다 · «거주자에게 유용» 추론 삭제) + 🔴 **2차 서류 절 복원**(렌즈 1·4 D유형: 새 문장이 「usa el pasaporte」에서 끝나 Rule 9 「physical address 없으면 2차 서류」를 잘라 먹었다) → 2차 교열이 다시 잡음(「el reglamento lo exige」 단정 → 조건절 「cuando la primera no trae domicilio físico — y el pasaporte no lo trae」) |
+| **WSOP Online 명칭** | Rule 4(g) 「WSOP Online (formerly WSOP.com)」 + 라이브. es 병기 규칙(브리프 §5) = **「(antes WSOP.com)」 한 형태 · 파일 첫 언급 1회 + FAQ 답 허용 · 재병기 금지** → vegas L222 「antes se anunciaba como」 단축 · nj L68·dinero L68 재병기 삭제 · como-entrar L152 단축. 🔴 «공식 사이트 도메인» wsop.com(구조표 출처·일정 링크)은 대상 아님 — 과잉 치환 0(렌즈 1 전수) |
+| **holdem-tournament(es)** | L298 「pide tres cosas —21 años, identificación con foto y dos cuentas gratuitas—… ninguna es migratoria: no pide ciudadanía ni visa」 · L307 체크리스트 「si la piden (en el WSOP es obligatoria: Caesars Rewards)」(편집이 만든 모순 · Rule 10) · L180 「WSOP LIVE —más Caesars Rewards— para el WSOP」 · 「la WSOP」 → 「el WSOP」 2곳(코퍼스 13:2) |
+| **§13** | 핸드·확률·수치 변경 0 · 「tres cosas」 산수 3 ✓ |
+| **게이트** | audit:hard es holdem-tournament·como-entrar 🔴 0 · KO how-to-enter 🔴 0(미발행 3편은 **미검사**) · answer-echo 🔴 0 · hygiene 0 · hangul 0 · cjk 0 · seo-sync 0 · meta 초과 0 · drift es ✅ 56/56 · structure 핵심 0 · tournament-numbers 값 0 · number-format es 🔴 2 = **기존**(apt-incheon·wsop-2026) · faq-schema es 60/60·en 56/56 🔴 0 · directives 0 · `git diff --check` 0 · 백틱 HEAD 동일 7/7 · build ✅ ×3 |
+
+🔴 **스탬프**: es `poker-en-las-vegas`·`nueva-jersey`·`dinero-real`(미발행) `updated` 09-17 · es `holdem-tournament` 09-17(`masterUpdated` 09-13 유지 — EN 델타 미대조) · como-entrar는 HEAD 이미 09-17 · KO `holdem-tournament-how-to-enter` 08-17 → 09-17 · `lib/tournaments-i18n.ts`는 스탬프 필드 없음. 사이트맵 lastmod 변동 = 2행(KO how-to-enter · es holdem-tournament) — 헤드 빌드로 재생성.
+
+🪶 **렌즈가 게이트 밖에서 잡은 것**(다음 게이트 후보): 본문↔같은 글 FAQ 축어 런 · 글↔허브 FAQ 축어 런 — `check:answer-echo`는 H2 직답↔다음 문단만 본다. 이번 회차 3편이 한 건도 안 걸렸는데 렌즈 3이 19·13·12단어 런을 쟀다.
+
 ## 2. 미결 (해결될 때까지 유지)
 
 - ✅ ~~`lib/render-markdown.ts:200`이 모든 이미지에 `width="1200" height="630"`~~ → **Q7-a에서 닫았다.** 파일별 실제 치수표
@@ -699,7 +717,7 @@ tiebreak L55·L263·L277 ↔ EN L51·L175·L236·L250 · marathon L281 ↔ EN L2
   🪶 인용부호 축은 **Q6-b가 `check:hygiene`에 게이트를 신설해 닫았다**(셀프테스트 25/25).
 
 - 🆕 🟠 **Q4-b가 남긴 것**(2026-09-16):
-  - **es 형제 글 `poker-en-las-vegas`에 como-entrar와 같은 명제 3종이 남아 있다**(렌즈 4 실측): L140 「Lo único que exigen es 21 años…」 · L256 「solo exige 21 años…」 · L142 matrícula 발급처 부재 + WSOP.com 명칭(형제 `nueva-jersey`·`dinero-real`도 WSOP.com). 원장 밖 · es 고유 글 → 다음 queue 회차 재료(EN 동형 없음).
+  - 🆕 **Q4-c가 남긴 것**(2026-09-17): `poker-en-las-vegas`·`nueva-jersey`·`dinero-real`은 **미발행 es-US 13편**이라 audit:hard 밖(미검사)이고 ①원본 부채가 남아 있다 — nj L60·L162 「cuatro redes completas」인데 열거 3(DraftKings 제외) · vegas L136~138 「Sí」 2회 · 재발행(되살리기 금지 · 재료 재사용)할 때 판정. `lib/posts.ts:3154` 「WSOP Online/WSOP.com」 슬래시 병기 → 「(구 WSOP.com)」는 KO 정정 회차(LEGACY 🔴 2 부채 파일).
   - **KO `wsop-2025-tournament-guide`(LEGACY) `audit:hard` 🔴 2 = 기존 부채**(desc 114자 · emoji 필드 공백 `" "`) — Q4-b는 안내 박스 한 구절만 만졌다(HEAD 판도 같은 🔴 2). KO 정정 회차 몫.
   - **como-entrar 히어로 이미지 문구**「21 años y una identificación. Ni ciudadanía, ni visa.」(imageAlt 동형)가 새 본문(«+ 무료 계정 2개»)보다 좁다 — 거짓은 아니다. 재제작 여부는 **사장님 판단**(§5 Q4b-6).
   - **수치 기준이 형제끼리 갈린 자리(①원본 · 기록만)**: es wsop L397 「no vamos a darte un porcentaje」(미국 원천징수) ↔ como-entrar 「30%」 · KO·ja·zh 개요 표 바이인 「$500~」 ↔ como-entrar·보드 「$300」(Gladiators).
@@ -885,6 +903,12 @@ tiebreak L55·L263·L277 ↔ EN L51·L175·L236·L250 · marathon L281 ↔ EN L2
 - 🆕 **Q6-c — 다시 열지 마라**:
   - 중국 본토 **단체 무비자는 2026-12-31까지 연장**(지정 여행사 · 3인 이상 · 체류 15일 · 개인은 C-3-9 필요). «6/30 만료»로 되돌리지 마라 — 정본 문서 9개도 같이 고쳤다. 12-31 이후는 재실측(시한 항목 → §5).
 
+- 🆕 **Q4-c — 다시 열지 마라**:
+  - WSOP 참가 요건은 **21세(+prueba de edad) · 신분증 · 무료 계정 2(Caesars Rewards·WSOP LIVE) · 이벤트별 조건**(Rule 2·4·9·10) — 「21세만」·「21세+신분증만」으로 되돌리지 마라. 「prueba de edad」와 「identificación válida」를 **나란히 열거하지 마라**(같은 서류를 두 번 센다 · 렌즈 4).
+  - matrícula 발급처 = 「las representaciones de México en Estados Unidos y Canadá」(SRE) — 「solo」 금지(Q4-b) + **「usa el pasaporte」로 문장을 끝내지 마라**(Rule 9 2차 서류 절 필수 · 여권엔 주소 없음) + 「el reglamento lo exige」식 단정 금지(조건절이다).
+  - 온라인 포커룸 명칭 = **WSOP Online**(Rule 4g 「formerly WSOP.com」 · 라이브 wsoponline.com). 병기 = es 「(antes WSOP.com)」 · EN 「(formerly WSOP.com)」 · KO 「(구 WSOP.com)」 · **파일 첫 언급 1회 + FAQ 답만** · 🔴 공식 사이트 도메인 wsop.com(구조표·일정 출처)은 치환 대상 아님.
+  - `poker-en-las-vegas`·`nueva-jersey`·`dinero-real`은 **index에 등록하지 마라**(07-27 발행 중단 · `settled-decisions`) — 이 회차의 편집은 보존 재료 정정이다.
+  - es `holdem-tournament` L298 브리지에 「condiciones propias」를 넣지 않은 것은 **의도적 생략**(브리프 §5).
 - 🆕 **Q4-b — 다시 열지 마라**:
   - **WSOP 2026 ME 상금풀 = $85,634,400**(공식 결과 페이지 result/619 · 09-16 원문 · 9,208 × $9,300 · ESPN 동일). $87,568,080은 **08-06에 그 페이지가 보인 값**이고 지금은 없다 → 출처란 이력 서술에만 남긴다. 포스트 6로케일 · 보드 10자리 · 히어로 이미지($85.6M) 전부 같은 값이다.
   - 2025 총상금 = **$481,761,879**(WSOP 보도자료) — 업계 매체의 …919로 되돌리지 마라.
@@ -956,6 +980,23 @@ tiebreak L55·L263·L277 ↔ EN L51·L175·L236·L250 · marathon L281 ↔ EN L2
   **PDF는 어떤 게이트도 안 보는 자리**다) ② `/hand-chart` 도구의 「UTG 약 12%」는 **핸드 «타입» 비율**(21/169)인데
   블로그의 13%는 **콤보 비율**이다. 같은 화면에 두 기준이 섞여 있다 — 도구 라벨은 이번 회차 범위 밖이라 안 건드렸다.
 - ✅ (신설 시점 · 헤드 자체 처리) `en-first-queue` §3 첫 불릿 「EN 56편 `updated` 전수 대조」 = 종결 표시(실측 근거 위 Q3 행).
+
+### Q4-c (2026-09-17 · es 2(발행) + es 3(미발행 재료) + EN 보드 FAQ 2자리 + KO 1 — **배포가 걸린 회차다**)
+
+- 🔴 **Q4c-1 MB 초안**(EN 변경 = MA-123 요청 1 상시 통지):
+  > queue 회차 Q4-c — **es 「WSOP 참가 요건」 동형 명제 + 「WSOP.com」 명칭 정정**. 바뀐 것 = es `holdem-tournament`(L298 브리지 · L180·L307 계정 예시) · es `como-entrar-al-wsop`(L152 글로스 「(antes WSOP.com)」 · FAQ L168 「una identificación válida」 삽입) · **EN 보드 `/en/tournaments` FAQ·localBlock 2자리 「WSOP Online (formerly WSOP.com)」**(`lib/tournaments-i18n.ts` L153·L177) · KO `holdem-tournament-how-to-enter` L200 「WSOP Online(구 WSOP.com)」 + 「2026년 9월 현재」.
+  > ① 근거 = 룰북 Rule 4(g) 「Real Money Online Poker Site WSOP Online (formerly WSOP.com)」 + 09-17 라이브(`wsop.com/online-poker/` → `wsoponline.com` · title 「WSOP Online」). 🔴 **공식 사이트 도메인 wsop.com(구조표 출처·일정 링크)은 그대로다** — 「WSOP.com」 0-감시 앵커를 걸려면 «온라인 룸 명칭 자리»로 좁혀 달라(도메인 지칭 자리는 정상).
+  > ② es `poker-en-las-vegas`·`nueva-jersey`·`dinero-real`도 같은 명제로 고쳤으나 **미발행 파일**(07-27 중단 13편)이라 라이브엔 없다 — 원장 대상 아님.
+  > ③ 요건 문장 정본(3편 공통) = 21 años · identificación · dos cuentas gratuitas(Caesars Rewards·WSOP LIVE) · 이벤트별 조건(Rule 2·4·10) · matrícula 발급처 = SRE 「representaciones de México en EE. UU. y Canadá」 · 2차 서류(Rule 9) 절 동봉.
+  > 🔴 되돌리지 마라: §3 「Q4-c — 다시 열지 마라」 5항.
+- 🟠 **Q4c-2 `settled-decisions` 승격 요청 1**: «WSOP Online 병기 규칙»(§3 Q4-c 3항 · 브리프 §5) — 로케일 공통 규율이라 §1-B 또는 §3에.
+- 🟠 **Q4c-3 핸드오프 정리 요청**: ▶1 첫 후보(es `poker-en-las-vegas` 동형 명제 3종 + `holdem-tournament` L298) **삭제**(종결). 🔴 그 재료가 «미발행 파일»이었음을 한 줄로(다음에 같은 자리를 또 올리지 않게).
+- 🟠 **Q4c-4 EN-먼저 등재 1(낮음)**: EN `holdem-tournament` L179 「Set up an account on the event's platform (e.g., the WSOP LIVE app for WSOP …)」 — WSOP는 Caesars Rewards까지 2계정(Rule 4·10). es만 「—más Caesars Rewards—」로 앞섰다 → `en-first-queue` §2-G에 레인이 직접 등재했다. EN 정정 시 7로케일 전파.
+- 🟠 **Q4c-5 KO 정정 회차 재료 1**: `lib/posts.ts:3154` 「WSOP Online/WSOP.com」 → 「WSOP Online(구 WSOP.com)」(LEGACY `wsop-2025-tournament-guide` · 기존 audit 🔴 2 부채 파일이라 이번엔 안 만졌다).
+- 🪶 **Q4c-6 `locale-intentional-diffs` 등재 요청 없음** — es `holdem-tournament` L180·L307의 Caesars Rewards 정밀화는 EN-먼저(Q4c-4)로 닫힐 자리라 «일부러 다른» 등재 대신 EN 정정 대기.
+- 🪶 **Q4c-7 sitemap·IndexNow**: lastmod 변동 2행(KO `/blog/holdem-tournament-how-to-enter` · `/es/blog/holdem-tournament`) + `/es/blog/como-entrar-al-wsop`(HEAD 09-17) + `/en/tournaments`(FAQ 텍스트). 미발행 3편은 대상 아님.
+- 🪶 **Q4c-8 ja·zh·zh-hant 파일 안 만졌다**(세 워크트리 clean 실측 · 해당 명제 없음) — §6-0 통지 불요.
+- 🪶 **Q4c-9 게이트 후보(다음 Q7)**: 본문↔FAQ·글↔허브 FAQ **축어 런 길이** 검사(렌즈 3 측정법 = 구두점·볼드 제거 후 4단어 이상 연속 일치 · 이번 19·13·12단어가 answer-echo 밖에서 살았다).
 
 ### Q5-c (2026-09-17 · EN 4 + 8로케일 + 꼬리 5 + KO 1 + zh-hant probability — **배포가 걸린 회차다**)
 
@@ -1465,6 +1506,11 @@ pdf-page 19 · number-format 24 · image-dims 8). 전 게이트에 «못 보는 
 ## 6. 자산 축적 체크 (매 회차 마감 3종)
 
 ① 키워드뱅크 — 해당 회차만 ② 편차 판정 → §5 ③ 판정 정본 승격 → §5
+
+**Q4-c**: ① 키워드뱅크 — **해당 없음**(사실 정정·명칭 회차 · 키워드·메타 축 안 건드림 · desc 변경 0 · 「WSOP.com」 검색어는 병기로 보존)
+② 편차 판정 → §5 **Q4c-6**(등재 0 · es 정밀화는 EN-먼저 Q4c-4로)
+③ 판정 정본 승격 → §3 「Q4-c — 다시 열지 마라」 5항 + §5 **Q4c-2**(병기 규칙) · **Q4c-9**(게이트 후보)
+④ 🪶 **교훈(정본 후보)**: «**재료를 받으면 그 파일이 «발행 중»인지부터 실측하라** — 렌즈·헤드·핸드오프가 세 번 «형제 글»로 올린 3편이 7월에 발행 중단된 파일이었다(`ls .next/server/app/es/blog/<slug>.html` 한 줄). 게이트 0건도 index 밖 파일은 미검사다.» + «**수리가 조건절을 단정으로 접는다** — 1차 렌즈가 요구한 2차 서류 절을 넣으면서 「el reglamento lo exige」로 썼고 2차 교열이 Rule 9 「If … does not include」로 되돌렸다. 2차 교열 필수 규율 재확인.»
 
 **Q5-c**: ① 키워드뱅크 — **해당 없음**(사실 정정 회차 · 키워드·메타 축 안 건드림 · desc 변경 0)
 ② 편차 판정 → §5 **Q5c-6**(«일부러 다른» 자리 0) + §4(거울쌍 4편 = 기존 구조 차이)

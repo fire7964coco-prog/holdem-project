@@ -150,7 +150,7 @@ const en: BoardStrings = {
     },
     {
       q: "Where do I play satellites for these?",
-      a: "It depends on where you are, and the answer changes a lot between English-speaking countries. US players go through WSOP.com, which runs the deepest WSOP satellite schedule and operates in Nevada, Michigan, Pennsylvania and New Jersey — the international sites are not an option there. In the UK you have the widest choice anywhere, with 14 UKGC-licensed rooms as of June 2026. In Australia the practical route is live rather than online, which is what WPT Australia at The Star Sydney is for. Check what is available where you are before you plan around a satellite.",
+      a: "It depends on where you are, and the answer changes a lot between English-speaking countries. US players go through WSOP Online (formerly WSOP.com), which runs the deepest WSOP satellite schedule and operates in Nevada, Michigan, Pennsylvania and New Jersey — the international sites are not an option there. In the UK you have the widest choice anywhere, with 14 UKGC-licensed rooms as of June 2026. In Australia the practical route is live rather than online, which is what WPT Australia at The Star Sydney is for. Check what is available where you are before you plan around a satellite.",
     },
     {
       q: "What does a WPT Passport actually cover?",
@@ -174,7 +174,7 @@ const en: BoardStrings = {
   localBlocks: [
     {
       title: "Online access is not one answer in English",
-      body: "Where you live changes which routes are open to you. The UK has the widest choice of licensed rooms anywhere. In the US the picture is state by state, and the online path runs through WSOP.com in Nevada, Michigan, Pennsylvania and New Jersey rather than the international sites. Australian players tend to go live rather than online — which is exactly what WPT Australia at The Star Sydney is for. Canada treats Ontario separately from the rest of the country.",
+      body: "Where you live changes which routes are open to you. The UK has the widest choice of licensed rooms anywhere. In the US the picture is state by state, and the online path runs through WSOP Online (formerly WSOP.com) in Nevada, Michigan, Pennsylvania and New Jersey rather than the international sites. Australian players tend to go live rather than online — which is exactly what WPT Australia at The Star Sydney is for. Canada treats Ontario separately from the rest of the country.",
     },
     {
       title: "A blocked head office does not mean a blocked country",
