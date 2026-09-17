@@ -1,15 +1,15 @@
 # 다음 세션 알림장
 
 > «다음 할 일 + 미결»만 담는다. 경위 = `WORKLOG.md`(slug로 grep) · 규칙 = 정본 MD · 시한 = `docs/update-calendar.md`.
-> 마지막 갱신 2026-09-17 (본체 · `/en/calculator` 재저작 배포(Equity 탭·quickRef 6표·FAQ 17) · Q4-b·Q5-c 머지 · 계산기 랜딩 10로케일 신설 · 4레인 lane:sync 동기·클린 · 미커밋 0).
+> 마지막 갱신 2026-09-17 (본체 HEAD `c50879e8` · `/en/calculator` 재저작 배포(Equity 탭·quickRef 6표·FAQ 17 · MB-057) · 다음 = **ja 계산기 회차(§3-A)** · 4레인 lane:sync 동기·클린 · 미커밋 0).
 
 ## ▶ 다음 할 일 (사장님이 고른다)
 
-1. **🧰 queue 다음 회차** — 후보 둘. 레인 창 첫 마디 「HARDEN.md 읽고 회차 Q7-c 시작해」(회차 이름은 레인이 진행 파일 §1 표에 맞춰 정한다).
-   - **es `poker-en-las-vegas` 동형 명제 3종 + `holdem-tournament` L298**(Q4-b §2 잔여 · es 고유 · EN 동형 없음): L140·L256 「solo exige 21 años」 · L142 matrícula 발급처 부재 + WSOP.com 명칭(형제 `nueva-jersey`·`dinero-real`도) · `holdem-tournament:298` 썸네일 문장 「pide 21 años y una identificación válida」 — 히어로가 «+ dos cuentas gratuitas»로 바뀌었으니(09-17) 형제 문장도 같은 회차에. 판정형 = Opus. 근거 `docs/harden-queue-진행.md` §2 「Q4-b가 남긴 것」.
-   - 🧮 **계산기 랜딩 «계산 기능 강조» 재저작 트랙 — 한 언어씩(사장님 09-17). EN 완료·배포(WORKLOG 09-17 (5)) → 다음 = ja.** 정본 `docs/harden-brief/calculator-landing-rewrite.md`(§3 로케일 인계 · §5 EN 후속 — OG images 사이트 패턴·x-default·M 라벨). 로케일 회차 = `dict.equity`·`dict.quickRef`·`outs.flopOne*`·`icm.th.chop`·`deal.link` 옵션 키 채우기 + FAQ 17 + 메타(라쿠 location = 그 나라 · ja는 질문형) + 딜러 렌즈가 EN에서 고친 도구 문안 12항 동반 정정. 곁다리(그대로): 낡은 주석 3곳(ja solver page/client 「/ja/calculator 없음」 · de solver faq 머리 · `de-gto-solver.md` §4) · zh-hant push/fold 표기 갈림(蓋牌 vs 棄牌).
-2. **(not set) 랜딩 유실 원인 규명 회차**(본체) — 09-14 스냅샷 236세션(08-28 103 → 2.3배). page_view만 유실된 진짜 사람이 참여 0으로 잡혀 참여율을 6.6p 누른다. 후보: 네이버 유입 스크립트 순서 · GA 태그 로딩 지연. 근거 = `docs/seo-report-2026-09-16.md` §5-1.
-3. **10/14 이후 — 배치 효과 4주 비교**(캘린더 등재됨). 기준선 `docs/post-placement-analysis-2026-09-16.md` §2 · 같은 창(`npm run analytics` + `ga-fetch --pages --days 28`). 모바일 홈 36.7%(60세션)는 09-16 배포 전 값 — 그때 재측정.
+1. 🧮 **ja 계산기 랜딩 회차 — 첫 마디 「핸드오프 읽고 ja 계산기 회차 시작해」** (본체 창). 절차 전문 = `docs/harden-brief/calculator-landing-rewrite.md` **§3-A**(12단계: 라쿠 실측 → 질문형 → SERP → 뱅크 → 사전 옵션 키 채우기 → FAQ 17 → page.tsx → 게이트 → 렌즈 2종 → 화면 → 배포·MB). EN 정본 = `docs/keyword-bank/en-calculator.md` + `CALC_DICT_EN`. 수치는 EN 그대로(§13) · 정의형 FAQ 금지 · 딜러 렌즈 EN 정정 12항 동반. 끝나면 §0 표 ja ✅ + 다음 로케일 zh를 이 자리에.
+2. **🧰 queue 다음 회차** — es `poker-en-las-vegas` 동형 명제 3종 + `holdem-tournament` L298(Q4-b §2 잔여 · es 고유 · EN 동형 없음): L140·L256 「solo exige 21 años」 · L142 matrícula 발급처 부재 + WSOP.com 명칭(형제 `nueva-jersey`·`poker-online-dinero-real-estados-unidos`도 · como-entrar L152는 「WSOP Online (antes WSOP.com)」 — 1차 출처 재확인 후 통일 방향 판정) · `holdem-tournament:298` 썸네일 문장 「pide 21 años y una identificación válida」(히어로는 09-17 «+ dos cuentas gratuitas»). 판정형 = Opus. 레인 창 첫 마디 「HARDEN.md 읽고 회차 Q4-c 시작해」 — 🔴 **HARDEN.md 헤드 통지는 아직 안 붙였다**(사장님 「올려」 대기). 근거 `docs/harden-queue-진행.md` §2 「Q4-b가 남긴 것」.
+3. **(not set) 랜딩 유실 원인 규명 회차**(본체) — 09-14 스냅샷 236세션(08-28 103 → 2.3배). page_view만 유실된 진짜 사람이 참여 0으로 잡혀 참여율을 6.6p 누른다. 후보: 네이버 유입 스크립트 순서 · GA 태그 로딩 지연. 근거 = `docs/seo-report-2026-09-16.md` §5-1.
+4. **10/14 이후 — 배치 효과 4주 비교**(캘린더 등재됨). 기준선 `docs/post-placement-analysis-2026-09-16.md` §2 · 같은 창(`npm run analytics` + `ga-fetch --pages --days 28`). 모바일 홈 36.7%(60세션)는 09-16 배포 전 값 — 그때 재측정.
+5. 🪶 계산기 EN 후속(공용 헬퍼 감) = 브리프 §5: OG/트위터 `images` 누락은 en 홈·솔버·10로케일 랜딩 공통 · `calculator-alternates` x-default · M 존 라벨 소수 경계.
 
 ## 🔵 미결 (해결되면 WORKLOG에 적고 지운다)
 

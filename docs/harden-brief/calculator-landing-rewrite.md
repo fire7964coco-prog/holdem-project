@@ -34,6 +34,25 @@
 - 수치·표 행 개수 = EN과 동일. 문안·H2 형태소·FAQ 질문 표기 = 현지 실측(라쿠 volume location = 그 나라 · 질문검색은 ja만 유효).
 - 검수: 로케일 네이티브 렌즈 1 + 교열 1(수학 렌즈는 EN 1회로 종결 · 값 전사 대조만).
 
+### 3-A. ja 회차 착수 절차 (새 세션이 첫 턴에 그대로 따른다 · 2026-09-17 헤드 작성)
+
+**첫 마디** = 「핸드오프 읽고 ja 계산기 회차 시작해」. 본체 창(헤드)에서 한다 — queue 레인이 아니다(MCP 라쿠·DFS는 본체에만).
+
+0. `git status` 클린 확인 → 이 파일 §1·§3·§5 + `docs/keyword-bank/en-calculator.md` 통독(EN이 정본) → `app/ja/calculator/{dict,faq,page}.ts` · `components/calculator/dict.ts`의 `CALC_DICT_EN`(equity·quickRef·outs 3스트리트·icm.th.chop·icmGuide.deal) 읽기.
+1. **실측(라쿠 · location Japan · language Japanese)**: `search-volume-history` 시드 = ポーカー 計算機 / ポーカー 確率 計算 / ポーカー 勝率 計算 / ポーカー オッズ 計算機 / エクイティ 計算 / ICM 計算機 / ICM計算 / ポットオッズ 計算 / アウツ 計算 / プッシュ フォールド 表 / ハンド 勝率 + `docs/keyword-bank/ja-probability.md`·`ja-tag-volumes.md`의 기존 값 재사용. 🔴 띄어쓰기·표기(計算機/計算ツール/カルキュレーター)가 별개 키워드(`rakko-playbook` §1) — 갈래마다 잰다.
+2. **질문형**: 라쿠 `question-search`는 ja에서 유효(EN은 0건이었다) — 「ポーカー 確率」「ICM」「ポットオッズ」「エクイティ」로 뽑아 FAQ 17문항의 질문 표기(「〜とは?」「〜の計算方法は?」)를 현지 형태소로. `suggest-keywords`(google)로 서제스트 보강.
+3. **SERP**: DFS `serp/google/organic/live/advanced`(location 2392 · language ja · mobile)로 「ポーカー 確率 計算」「ICM 計算機」 top10 + PAA → 상위 페이지 구조는 서브에이전트(sonnet)에 URL 목록만 주고 H1/H2/FAQ/입력·출력만 추출(요약 금지).
+4. **뱅크 작성** `docs/keyword-bank/ja-calculator.md`(EN 뱅크와 같은 절: 코어 볼륨 · GSC(`node scripts/gsc-page.mjs ja/calculator --days 90`) · PAA/질문 · SERP 구조 · 채택 · 인계).
+5. **사전 채우기** `app/ja/calculator/dict.ts`: `equity`(UI 문자열 · 프리셋 라벨은 EN 그대로 「AA vs KK」) · `quickRef` 6표(**수치 EN 그대로** · 라벨·intro·note만 일본어 · `link` 슬러그는 `lib/posts-ja/`에 실재하는 것만 — EN이 쓰는 9개 슬러그(icm·equity·pot-odds·outs·probability·starting-hands-chart·short-stack·implied-odds·tournament-vs-cash-game)는 ja에 전부 있다 · 09-17 확인) · `outs.flopOneBtn/afterFlopOne/chanceFlopOne` · `icm.th.chop` · `icmGuide.deal` 새 예시(45/25/18/12 · $2,300 · ICM 726/591/526/458 · `linkLead`+`link`) · `guide.cards` 9(icon 명시) · `related.links` 8(EN과 개수 동일) · hero chips 9 · **딜러 렌즈 EN 정정 12항 동반**(§5 마지막 줄 — ja 사전의 같은 자리를 찾아 고친다).
+6. **FAQ 17** `app/ja/calculator/faq.ts` — EN 17문항의 «명제»를 옮기되 질문은 2단계 실측 표기로. 정의형 금지(EN에서 뺀 이유 = `holdem-icm`·`holdem-pot-odds` 소유).
+7. **page.tsx**: TITLE·DESCRIPTION을 `CALC_DICT_JA.seo`에서 파생(EN page.tsx의 방식 복사 · 접미 「| HoldemMaster」만 page에서) · `featureList` 9 · `twitter/openGraph.images` 추가 · 제목 핵심어 = 사장님 확정 CTA 「ポーカー勝率計算機」 유지, 차별화어만 실측으로.
+8. **게이트**: `npm run build`(seo-sync·meta-lang 포함) · `check:hreflang` · `check:meta` · `check:cjk` · 산출물 `.next/server/app/ja/calculator.html`에서 H2·Question 17·`calculator-tab-equity` 확인.
+9. **렌즈**(Opus 서브 병렬): 네이티브 적대(일본 홀덤 전문가 · 용어 = `docs/translation-terms-ja.md` · `ja-notation.md`) · 교열(EN 표와 값 전사 대조 · 행 개수 · 자리표시자) · 수학은 EN 1회로 종결(값 대조만). 반영 → 2차 교열 1렌즈.
+10. **화면**: `node .claude/skills/screen-review/scripts/shoot.mjs --base http://localhost:3100 --path /ja/calculator --widths 1440,390`(먼저 `npx next start -p 3100` 백그라운드 · 끝나면 kill) — 모바일 overflow 0 · 결과표 Equity 열 · 아웃츠 6열.
+11. **배포**: 커밋·push → `tmp/screen/live-check.mjs`를 ja용으로 고쳐 라이브 DOM 확인 → `npm run indexnow -- --urls /ja/calculator` → MB 발신(`.mjs` splice · `check:mailbox` 전후) → WORKLOG · 이 파일 §0 ja 행 ✅ · 핸드오프 다음 로케일(zh) · `npm run lane:sync -- --apply`.
+
+🔴 세션 = 회차 1개(ja만). 끝나면 「zh 시작해」로 다음 세션.
+
 ## 4. 하지 마라
 
 - 경험담·에세이 섹션 추가(사장님 지시) · 탭 안에 색인용 문안 · 수치 재계산 · SPR/BB 제목 훅 · 로케일 사전 키 삭제.
