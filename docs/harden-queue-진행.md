@@ -948,6 +948,10 @@ tiebreak L55·L263·L277 ↔ EN L51·L175·L236·L250 · marathon L281 ↔ EN L2
 - 🪶 **Q4b-7 `locale-intentional-diffs` 등재 요청 없음** — «일부러 다른» 자리 0. es 전용 추가(Rodriguez 국적 · LISR · matrícula 발급처 · Circuit LATAM 행 · 보드 es 세금 FAQ)는 **독자 시장 차이**라 EN에 올리지 않는다(EN 독자 = 미국).
 - 🪶 **Q4b-8 sitemap**: 포스트 9편 `updated` 09-16 → 머지 뒤 빌드로 `lastmod` 재생성(선례 Q6c-7). IndexNow 대상 = EN·es(2)·ja·zh·zh-hant·KO(3) 포스트 + `/tournaments` 6로케일.
 
+> 🔵 **헤드 처리 (2026-09-17 · 머지 ff `8d7f2047` → 헤드 후속 `45825ddb` · 빌드 70 + intl 577 · 게이트 hygiene 🔴 0 · answer-echo 🔴 echo 0 · tournament-numbers 값 필드 0 · stamp en 신규 0)**:
+> **Q4b-1 ✅ 발신 = MB-054**(라이브 앵커·IndexNow 결과는 그 행) · **Q4b-2 ✅** 세 레인 `HARDEN.md` §6-0 통지(🔴 Q6-c 통지의 «$87,568,080 되돌리지 마라»가 뒤집혔음을 명시) · **Q4b-3 ✅ `45825ddb`** 캘린더 8/5 절에 역전 기록 + 교훈, 시한 행 2 신설(**11/15** Circuit Panamá → es como-entrar 표 · **2027-01-01** ESTA US$40) · **Q4b-4 → zh·zh-hant 진행 파일 §5 말미에 헤드 판정 요청으로 이관**(거울쌍 동시 처리 조건 · 레인 회차 없음 유지) · **Q4b-5 ✅** WORKLOG 「2026-09-17」 역전 단락 · 정본 3곳은 레인 실측대로 손대지 않음 · **Q4b-6 → 핸드오프 「사장님 판단」**(히어로 재제작 여부) · **Q4b-7** 등재 0 확인 · **Q4b-8 ✅** sitemap 8행(9편 중 ja·zh·zh-hant wsop 일부는 Q6-c에서 이미 09-16) · ④ 교훈은 **메모리 승격**(`official-page-values-change-lock-view-date`) + 캘린더 8/5 절 — `settled-decisions` §4에는 올리지 않았다(대회 결과 페이지 한정 사례라 §4-A «축어 지지 여부»로 충분).
+> 🟠 **§2 「Q4-b가 남긴 것」 첫 항목(es `poker-en-las-vegas` 명제 3종)은 다음 queue 회차 재료**로 핸드오프에 올렸다.
+
 ### Q6-c (2026-09-16 · ja 10 + zh 7 + zh-hant 5 + ko 3 + 대회 데이터 2 + 게이트 1 + 정본 문서 9 — **배포가 걸린 회차다**)
 
 - ✅ **Q6c-1 MB 초안** → **발신 완료 = MB-053**(2026-09-16 · 검수장 · 라이브 앵커 실측 + IndexNow 51 URL + dateModified 판정 + EN-먼저 4건 얹음). 원문(EN 파일 변경 **0** · 그래도 로케일·보드 사실값이 바뀌었으니 앵커 통지):

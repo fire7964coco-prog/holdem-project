@@ -1,3 +1,11 @@
+## 2026-09-17 — 🧰 queue 회차 Q4-b 머지·배포 (검수장 MA-118 요청 2 이행 · es WSOP 2편 + EN-먼저 6로케일 · 🔴 WSOP 2026 상금풀 08-06 판정 역전)
+
+- 레인 `8d7f2047`(ff 머지 · 충돌 0) → 헤드 후속 `45825ddb`(sitemap 8행 · 캘린더 · zh/zh-hant 판정 요청) → 빌드 70 + intl 577 · 게이트 hygiene 🔴 0 · answer-echo 🔴 echo 0 · tournament-numbers 값 필드 0 · stamp en 신규 0 · push · lane:sync 4레인.
+- 🔴 **08-06 판정의 역전 — 원인 = 공식 페이지 값 변경.** 08-06 본체는 공식 결과 페이지 `result/619`가 보인 $87,568,080을 «공식»으로 채택하고 ESPN $85,634,400을 «2차»로 적었다(캘린더 8/5 절 · WORKLOG 2026-08-06). 레인이 09-16에 같은 페이지를 다시 열자 **$85,634,400**(9,208 × $9,300 · ESPN 동일)이었고 옛 값은 페이지에 없다 → 포스트 6로케일 + `/tournaments` 보드 10자리를 되돌렸고 $87,568,080은 출처란 이력 서술 6자리에만 남겼다. **Q6-c(같은 날 오전)가 옛 판정대로 보드를 $87,568,080에 맞춘 것(MB-053 ②)도 이 회차가 뒤집었다.** 교훈(«공식 페이지 값도 바뀐다 → 열람일을 같이 잠가라»)은 메모리 + 캘린더 8/5 절에 승격. `docs/tournament-spine.md:646`·`market-profile/ja.md:169`는 이미 정합(레인 실측) · 이력 문서는 손대지 않음.
+- 그 밖의 정정: 2025 총상금 …919 → …879 · 현장 위성 표(공식 Landmark Satellites PDF · 원장 #121 «13:00»은 불완전 판정) · End Date 시각 삭제 · 13조 리엔트리 예외 · 59조 «예시» · 90.d 베팅 선언 구속 · es como-entrar(21세 유일 요건 해체 · matrícula 발급처 SRE 원문 · Circuit 표 = Panamá·Punta Cana 추가/Tulsa 삭제 · W-2G) · es wsop(LISR 138조 «국내 개최 한정» · Rodriguez 국적 단정 회피) · 보드 EN·es FAQ 카드 결제(3% → 룰북 5조 2%) · KO 형제 글 2곳 카드 3% → 2%.
+- 헤드 요청 8건 전건: MB-054 · 세 레인 §6-0(옛 «되돌리지 마라» 뒤집힘 명시) · 캘린더 역전 기록 + 시한 2행(11/15 Panamá · 2027-01-01 ESTA) · zh·zh-hant 「重买/重買」 판정 요청 이관(거울쌍) · 사장님 판단 1(es como-entrar 히어로 재제작 여부 → 핸드오프) · intentional-diffs 등재 0 · sitemap.
+- 라이브 확인·IndexNow는 MB-054 행. 다음 queue 회차 = **EN-먼저 §2-F 4건**(집필 있음 · Fable 구간) 또는 **es `poker-en-las-vegas` 동형 명제 3종**(Q4-b §2 잔여 · es 고유).
+
 ## 2026-09-16 (6) — 🧰 queue 회차 Q6-c 머지·배포 (ja 잔여 10 · NOTE_* 오스트리아 · echo 19→0 · 거울쌍 28편 판정)
 
 - 레인 `d1714d74` → 머지 `c3d23cf2`(충돌 0) → 헤드 후속 `191ee840` → 빌드 70 + intl 577 · 게이트 hygiene 🔴 0 · answer-echo 🔴 echo 0 · tournaments-i18n 공백 0 · tournament-numbers 값 필드 0 · push · lane:sync 4레인.
