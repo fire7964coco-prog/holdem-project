@@ -1,3 +1,14 @@
+## 2026-09-17 (9) — `/es/calculator` 재조준 «계산 기능 강조» 트랙 5/11 — Equity 탭 + 빠른 참조 6표 + FAQ 18 + 메타 재조준 (브리프 §3-A를 es로 · `f839bb1e` · MB-061)
+
+- 실측(DFS 볼륨 MX 60시드 · ES 50 · CO 24 · AR 24 — `language_code` 생략 · 구글 자동완성 `hl=es` × MX/AR/CO/ES/US 50시드 — 45시드 5지역 동일 · DFS SERP 모바일 3쿼리 · 상위 9페이지 구조 추출 sonnet 2) → `docs/keyword-bank/es-calculator.md`.
+- 핵심 수치: **calculadora de poker MX 70 · AR 90 · CO 70 · ES 170** · calculadora de probabilidades poker 전 지역 10 · 영문 **icm calculator MX 140 · AR 140** · poker odds calculator MX 90 · jerarquia de manos poker MX 390(hand-rankings 소유). 🔴 «calculadora icm» 자동완성 10개 = 전부 **IMC(체질량지수)** · «regla del 4 y 2» = 의료 오염. GSC 90일 노출 0(신설).
+- SERP: «calculadora de poker» 1 PokerNews ES · 2 math4all(클릭재킹형 광고 오버레이) · 3 PokerListings ES(표 2 + FAQ 6 — 우리 골격과 가장 가깝다) · 4 888poker.es 글. 1·3위가 «Calculadora de Probabilidades» 이름 = 동의어군. PAA 없음. PokerNews·888 FAQ에 «계산기 사용 가능?» 축.
+- 채택: 제목 `Calculadora de poker — probabilidades, equity e ICM`(앞머리 = 실측 머리어 · H1·CTA·브레드크럼은 앵커 «Calculadora de probabilidades» 유지) · 설명 155자 · FAQ 18(고유 = TDA 2024 Rule 5 · Omaha 문항은 «못 한다»라 빼고 뱅크 §7 미구현 수요로) · 새 ICM 딜 예시 · 딜러 12항 · 관련 글 8.
+- 렌즈 3종(Opus 병렬) + 2차 교열: LATAM 네이티브+딜러 17(board = «Mesa» 충돌 → «Board» · «por 6.7 puntos» 칼크 · «cerrarse» · satélite «cada asiento paga» · TDA «apps de apuestas» · 87s/65s/54s/33/22 림프로 읽힘 · EN «average» 가중치 누락) · 교열/EN 대조 18(b3 뒤 «para proteger»가 «pagando»에 붙음 · huNote 비문 · **EN «×2 runs 1–2 points low»는 5~11 outs만 참** · orHigher «o más» = EV 0과 어긋남 · 딜 H2 «un deal») · SEO/카니발 10(FAQ 3문항이 holdem-icm·holdem-bubble과 의도 충돌 → 계산기형 · 팟오즈 H2가 holdem-pot-odds H2와 근접 · 설명에 «probabilidades» 보강) · 2차 교열 7(수정이 만든 결함 2: «desde el SB» 성 불일치 · «(deep)» 잔존). M 표 링크(tournament-vs-cash)는 대상 글이 스택을 «ciegas grandes»로 재는 내용 33곳 + EN 구조라 유지(SEO 렌즈 기각 1).
+- 게이트: 빌드 EXIT 0 ×3 · seo-sync 0 · meta-lang 0 · hreflang 0 · check:calc-parity es 0 · 산출물 Question 18 + Equity 탭 SSR · 화면 390/1440 overflow 0(콘솔 오류 = 로컬 전용 _vercel 스크립트 404) · 라이브 Playwright(제목 · H2 14 · Question 18 · Equity 탭 · AA vs KK Monte Carlo · og:image · hreflang 12) · IndexNow 200.
+- 🪶 `check:mailbox` 🔴 «MB-054 파이프 9»는 HEAD판에도 있던 기존 파손(이번 MB-061 무관 · 미수정).
+- 브리프 §0 es ✅ + pt 다음 · §3-F(es가 남긴 것 9항) · §5 EN 회灌 후보 +4(×2 오차 서술 · 가중 평균 · orHigher · call LP). 다음 = **pt**(「핸드오프 읽고 pt 계산기 회차 시작해」).
+
 ## 2026-09-17 (8) — `/zh-hant/calculator` 재조준 «계산 기능 강조» 트랙 4/11 — Equity 탭(「手牌勝率」) + 빠른 참조 6표 + FAQ 18 + 메타 재조준 (브리프 §3-A를 zh-hant로 · `cf2ba10f` · 헤드 Opus · Fable 판정 생략)
 
 - 실측(구글 자동완성 `hl=zh-TW` × gl=TW/HK 44시드 — **TW=HK 완전 동일** · DFS 2158 볼륨 50시드(`language_code` 생략) · DFS SERP 모바일 4쿼리(`zh-TW`) · 상위 6페이지 구조 = sonnet 서브 2개 raw DOM 추출 `tmp/zhhant-extract-{a,b}.json`) → `docs/keyword-bank/zh-hant-calculator.md`. GSC 90일 0(신설 직후).
