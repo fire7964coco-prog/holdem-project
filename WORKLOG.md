@@ -1,3 +1,14 @@
+## 2026-09-17 (5) — `/en/calculator` 재저작 «계산 기능 강조» 트랙 1/11 — Equity(핸드 vs 핸드) 탭 신설 + 빠른 참조 6표 + FAQ 17 + 메타 재조준 (사장님 지시 「ko처럼 계산기능 강조 · 한 언어씩 · en부터」)
+
+- 방향: 첫 초안(경험담·경화식)은 폐기 — «검색자 의도 = 계산기». 정본 = `docs/harden-brief/calculator-landing-rewrite.md`. 뱅크 = `docs/keyword-bank/en-calculator.md`(라쿠 US 46개 · DFS suggestions · PAA 4쿼리 · 경쟁 12페이지 구조). 머리어 「poker odds calculator」 9,900(KD 7)의 의도 = 핸드 vs 핸드 승률인데 우리 도구엔 없었다 → **Equity 탭 신설**.
+- 엔진 `lib/equity.ts`(7장 비트마스크 평가기 + 전수 열거/MC · 2~4명 · 랜덤 핸드 · 보드 0/3/4/5). §13 검산 = `scripts/verify-equity.ts`(무작위 7장 20,000세트 ↔ poker-eval 카테고리·우열 0 불일치) + `scripts/verify-equity-weighted.ts`(수트 가중 매치업 5/5 = 브리프 Q5-c §1). 수학 렌즈가 독립 30만 쌍 대조 0건 · AK vs 22~AA 전수 재현.
+- 정본표 `scripts/calc-reference-tables.ts` → quickRef 6표(매치업 14 · AA vs 랜덤 1~8 · 아웃츠 1~20 ×3열 · 팟오즈 9 · SPR 4 · M 5). 🔴 수학 렌즈가 잡은 결함: 스크립트의 LCG 난수가 53비트를 넘쳐 **주기 14,469** → AA vs 랜덤 3칸이 0.1p 틀림 → mulberry32 + 8,000,000회로 교체(73.4 · 49.2 · 38.7). 교훈: «seed*1103515245»식 LCG를 JS에서 쓰지 마라.
+- 카니발 정리(SEO 렌즈): ICM 딜 절이 `holdem-icm` §「ICM Deal vs Chip Chop」과 표까지 동일 → 새 예시(4명 45/25/18/12 · $2,300)로 «ICM chop calculator» 재조준 + 글 링크 · FAQ 4문항(「What is ICM in poker?」 등 정의형)을 계산기형 질문으로 교체 · quickRef H2 3개를 «calculator reference»로 · related에 `holdem-implied-odds` 편입(tournament 제외) · OG/트위터 `images` 누락 보완(루트 layout에서 상속 안 됨 — 🟠 en 홈·솔버·10로케일 랜딩도 같은 누락 → 후속).
+- 도구 문안(딜러 렌즈 20건): 「Effective stack (yours)」→ 두 스택 중 짧은 쪽 · 아웃츠 3번째 스트리트 «Flop → turn»(9/47 = 19.1%) 신설(선택 키) · 팟 입력 라벨 «bet you face 포함» · 낮은 SPR 커밋 조언에 보드 텍스처 단서 · 데드존 문구 · diffPlusNote(숏스택 아닌 미들스택이 가장 타이트) · 스타팅 핸드 12항 «EP 림프» 권고 제거 · 미등재 핸드 폴백 문구 · ICM 결과표 **Chip chop 열**(선택 키) · ICM 딜 절대문(「always ask ICM」) 완화 · Effective M 안내.
+- 게이트: 빌드 EXIT 0 ×5 · seo-sync 0 · hreflang 0 · meta-lang 0 · meta ≤160(158) · 산출물 H2 12 + FAQ Question 17 + Equity 탭 SSR · screen-review 390/1440 overflow 0(모바일 결과표 Equity 열 잘림 → Win/Tie 접기 · 데스크톱 아웃츠 표 6열 잘림 → 헤더 줄바꿈 허용). Playwright 상호작용: AA vs KK 프리셋 ~100ms · 랜덤 핸드 · 리버 승자 표시 OK.
+- 렌즈: 1차 4종(SEO 13 · 딜러 20 · 교열 36 · 수학 15) + 2차 교열 25 — 반영 ~80 · 기각·기록 ~10(M 라벨 «1–5» vs 소수 경계 · 라쿠 질문검색 영어 0건 등). 미반영 후속 = `docs/harden-brief/calculator-landing-rewrite.md` §5.
+- 곁: `settled-decisions` §3-F 「QQ 43.1」→ 43.24 정정(TT 43.12 오전사). 로케일 사전은 손대지 않음(`equity`·`quickRef`·`outs.flopOne*`·`icm.th.chop`·`deal.link` 전부 **옵션 키** — 로케일 회차마다 채운다).
+
 ## 2026-09-17 (4) — 🧰 queue 회차 Q5-c 머지·배포 (EN-먼저 §2-F 4건 · AK vs 포켓페어 전수 열거 · kicker High card · glossary pairs · Short Deck 규칙)
 
 - 레인 `abdc7a21`(ff 머지 `6f498ec7` · 충돌 0 — 레인이 lane:sync 머지를 안고 있어 main이 그 머지 커밋으로 ff) → 헤드 후속 `b0d8422d` → 빌드 70 + intl 577 · hreflang 0 · hygiene 0 · answer-echo echo 0 · drift 핵심 6(= 기존 ar 부채 · 신규 0) · sitemap 49행 · push · lane:sync 4레인.

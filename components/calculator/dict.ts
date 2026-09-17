@@ -35,7 +35,7 @@ export type CalcDict = {
     /** H1 second (gold gradient) line. */
     h1Sub: string;
     lead: string;
-    /** 8 feature chips (emoji + label), aligned by index with the tabs. */
+    /** 9 feature chips (emoji + label) — equity first, then the 8 tabs in order (locales without dict.equity ship 8). */
     chips: string[];
   };
 
@@ -75,6 +75,10 @@ export type CalcDict = {
     street: string;
     afterFlopBtn: string;
     afterTurnBtn: string;
+    /** Optional third street (flop → next card only). All three keys or none. */
+    flopOneBtn?: string;
+    afterFlopOne?: string;
+    chanceFlopOne?: string;
     /** "Number of outs: {v}" — {v} is the highlighted number. */
     outsCount: string;
     /** Result cards. */
@@ -215,7 +219,8 @@ export type CalcDict = {
     incPrize: string;
     currencyNote: string;
     resultTitle: string;
-    th: { player: string; chips: string; chipPct: string; icmValue: string; icmPct: string; diff: string };
+    /** `chop` (optional) adds a chip-chop column = chip share × remaining prize pool. */
+    th: { player: string; chips: string; chipPct: string; icmValue: string; icmPct: string; diff: string; chop?: string };
     /** "{medal} P{n}" — player cell. */
     playerCell: string;
     diffPlus: string;
@@ -284,15 +289,67 @@ export type CalcDict = {
       th: { player: string; chop: string; icm: string; diff: string };
       rows: { player: string; chop: string; icm: string; diff: string; up: boolean }[];
       summary: { text: string; b1: string; b2: string; b3: string };
+      /** Optional link sentence rendered after the summary (calculator → blog). */
+      linkLead?: string;
+      link?: { slug: string; text: string };
     };
   };
+
+  /**
+   * 0. Equity (hand vs hand) calculator — ★2026-09-17 · OPTIONAL. The tab (first position) renders only when present,
+   * so locales adopt it one at a time. Values: label/sub = tab chrome · presets = quick matchups as "AsAh" strings.
+   */
+  equity?: {
+    label: string; sub: string;
+    hero: string;
+    /** "Opponent {n}" */
+    opp: string;
+    random: string;
+    board: string;
+    pickerHint: string;
+    addPlayer: string; removePlayer: string;
+    needTwo: string;
+    boardCount: string;
+    th: { player: string; hand: string; win: string; tie: string; equity: string };
+    /** "Exact — all {n} runouts enumerated" */
+    exactNote: string;
+    /** "Monte Carlo — {n} random runouts" */
+    mcNote: string;
+    /** "{p} wins with {hand}" */
+    winner: string;
+    /** "Chop — {n} hands tie with {hand}" */
+    chop: string;
+    /** Shown instead of exactNote when the board has 5 cards and every hand is known. */
+    showdownNote: string;
+    presets: { label: string; hands: string[] }[];
+  };
+
+  /**
+   * Static quick-reference tables rendered between the guide cards and the FAQ — ★2026-09-17 · OPTIONAL.
+   * Every number must come from scripts/calc-reference-tables.ts (§13). `emphasis` = column index shown bold.
+   */
+  quickRef?: {
+    badge: string;
+    h2: string;
+    intro: string;
+    th: string[];
+    align?: ("left" | "right")[];
+    emphasis?: number;
+    /** Column indices that must not wrap (short labels/numbers) — the table scrolls sideways instead. Column 0 never wraps. */
+    nowrap?: number[];
+    rows: string[][];
+    note?: string;
+    /** Rendered right after `note` as a link into the locale's blog. */
+    link?: { slug: string; text: string };
+    linkTail?: string;
+  }[];
 
   /** Tool guide cards. */
   guide: {
     badge: string;
     h2: string;
-    /** 8 cards, aligned by index with the icons in code. */
-    cards: { title: string; body: string }[];
+    /** Cards aligned by index with the icons in code unless `icon` is given (EN gives all 9 explicitly). */
+    cards: { title: string; body: string; icon?: string }[];
   };
 
   faq: {
@@ -313,18 +370,44 @@ export type CalcDict = {
 export const CALC_DICT_EN: CalcDict = {
   numberLocale: "en-US",
 
+  // ★2026-09-17 재조준 — 근거 docs/keyword-bank/en-calculator.md. 🔴 app/en/calculator/page.tsx metadata와 «같은 문자열»(check:seo-sync).
   seo: {
-    title: "Poker Odds Calculator — Outs, Pot Odds, Hand Rank, SPR & ICM",
-    description: "Free Texas Hold'em calculator: outs & draw odds, pot odds, hand evaluator, starting hand strength, SPR, tournament M value, ICM, and push/fold Nash charts — 8 tools in one.",
+    title: "Poker Odds Calculator — Equity, ICM & Pot Odds",
+    description: "Free Texas Hold'em calculator: hand-vs-hand equity (win %), pot odds, implied odds, outs, hand ranks, SPR, M value, ICM deal & chip chop — 9 tools, no signup.",
     path: "/en/calculator",
   },
 
   hero: {
-    badges: ["Free tool", "Real-time"],
+    badges: ["Free tool", "No signup"],
     h1: "Poker Odds Calculator",
-    h1Sub: "Every Hold'em number in one place",
-    lead: "Outs · pot odds · hand evaluator · starting hand strength · SPR · tournament M value · ICM · Nash push/fold chart — get the math you need at the table, instantly.",
-    chips: ["🎯 Outs", "💰 Pot Odds", "🃏 Hand Rank", "📊 Starting Hand", "📐 SPR", "🏆 M Value", "📈 ICM", "⚡ Push/Fold"],
+    h1Sub: "Equity calculator, ICM & pot odds in one place",
+    lead: "Enter two hands and see who wins — then check pot odds, outs, ICM deals, SPR, tournament M and push/fold ranges. Nine free Hold'em calculators, with exact enumeration on every street where it is fast enough.",
+    chips: ["🎲 Equity", "🎯 Outs", "💰 Pot Odds", "🃏 Hand Rank", "📊 Starting Hand", "📐 SPR", "🏆 M Value", "📈 ICM", "⚡ Push/Fold"],
+  },
+
+  equity: {
+    label: "Equity", sub: "Hand vs hand",
+    hero: "Your hand",
+    opp: "Opponent {n}",
+    random: "Random hand",
+    board: "Board",
+    pickerHint: "Select a seat or the board, then pick its cards.",
+    addPlayer: "+ Add opponent", removePlayer: "− Remove opponent",
+    needTwo: "Give every hand 2 cards (or mark an opponent as a random hand).",
+    boardCount: "Leave the board empty for preflop, or give it 3 (flop), 4 (turn) or 5 (river) cards.",
+    th: { player: "Player", hand: "Hand", win: "Win", tie: "Tie", equity: "Equity" },
+    exactNote: "Exact — all {n} possible runouts enumerated.",
+    mcNote: "Monte Carlo — {n} random runouts; results vary by about ±0.3 points between runs.",
+    winner: "{p} wins with {hand}",
+    chop: "Chop — {n} hands split the pot with {hand}",
+    showdownNote: "Showdown — the board is complete, so this is the final result.",
+    presets: [
+      { label: "AA vs KK", hands: ["AsAh", "KsKd"] },
+      { label: "AKs vs QQ", hands: ["AhKh", "QsQc"] },
+      { label: "AKo vs 22", hands: ["AhKd", "2s2c"] },
+      { label: "AKo vs AQo", hands: ["AhKd", "AsQc"] },
+      { label: "AA vs 87s", hands: ["AsAh", "8d7d"] },
+    ],
   },
 
   tabs: {
@@ -353,40 +436,44 @@ export const CALC_DICT_EN: CalcDict = {
     drawType: "Draw type",
     presets: [
       { label: "Custom input" },
-      { label: "Nut flush draw", desc: "4 cards of a suit → need the 5th" },
+      { label: "Flush draw", desc: "4 cards of a suit → need the 5th (9 outs whether or not it is the nut flush)" },
       { label: "Open-ended straight draw (OESD)", desc: "e.g. 5-6-7-8, need a 4 or 9" },
       { label: "Flush + gutshot combo", desc: "9 flush + 3 gutshot (overlap removed)" },
       { label: "Gutshot straight", desc: "e.g. 5-6-8-9, need just a 7" },
-      { label: "Two overcards", desc: "2 high ranks not on board × 3 each" },
+      { label: "Two overcards", desc: "2 high ranks not on board × 3 each — discount hard against a made hand: pairing an overcard often still loses" },
       { label: "Two pair → full house", desc: "e.g. A-K on an A-K-x board → 2 aces + 2 kings left" },
       { label: "One pair → trips", desc: "2 cards of the rank remain" },
       { label: "Flush + OESD (monster)", desc: "9 flush + 8 straight (2 overlap)" },
     ],
     outsSuffix: " ({n} outs)",
     street: "Street",
-    afterFlopBtn: "🃏 After flop",
-    afterTurnBtn: "🔄 After turn",
+    afterFlopBtn: "🃏 Flop → river",
+    afterTurnBtn: "🔄 Turn → river",
+    // ★2026-09-17 third street (flop → next card only) — the number you need when facing one bet on the flop
+    flopOneBtn: "🎯 Flop → turn",
+    afterFlopOne: "Flop → turn",
+    chanceFlopOne: "Chance to hit on the next card from the flop",
     outsCount: "Number of outs: {v}",
-    afterFlop: "After flop",
-    afterTurn: "After turn",
+    afterFlop: "Flop → river",
+    afterTurn: "Turn → river",
     ruleOf4: "Rule of 4",
     ruleOf2: "Rule of 2",
-    chanceFlop: "Chance to complete after the flop",
-    chanceTurn: "Chance to complete after the turn",
+    chanceFlop: "Chance to complete by the river from the flop (both cards — an all-in)",
+    chanceTurn: "Chance to complete on the river from the turn",
     exact: " (exact)",
     ruleMental: "Rule of {n} (mental math):",
-    exactNote: "Value above is the exact figure",
+    exactNote: "The big number is the exact figure",
     verdict: { great: "Great 🔥", good: "Good ✅", fair: "Fair ⚠️", poor: "Poor ❌", veryPoor: "Very poor 💀" },
   },
 
   pot: {
-    potSize: "Current pot size",
+    potSize: "Pot size (including the bet you face)",
     callAmount: "Your call amount",
     potOddsCaption: "Pot odds (minimum equity needed)",
-    orHigher: "or higher makes the call profitable",
+    orHigher: "above this makes the call profitable",
     equityLabel: "Your hand equity: {v}",
     sliderGutshot: "Gutshot 8.7%",
-    sliderFlush: "Flush 19%",
+    sliderFlush: "Flush 19.6%",
     impliedToggle: "Implied odds {toggle}",
     close: "Close ▲",
     add: "Add ▼",
@@ -422,8 +509,8 @@ export const CALC_DICT_EN: CalcDict = {
   starting: {
     pickerLabel: "Select your 2 hole cards",
     emptyPrompt: "Pick your 2 hole cards",
-    unknownDesc: "Very weak hand",
-    unknownAction: "Usually fold",
+    unknownDesc: "Not in the core opening chart",
+    unknownAction: "Cutoff/button only, and only when folded to you",
     tierNames: ["🥇 Tier 1 — Premium", "🥈 Tier 2 — Strong", "🥉 Tier 3 — Playable", "⚠️ Tier 4 — Marginal", "🚫 Tier 5 — Weak"],
     recommendedAction: "Recommended action:",
     axis: ["Premium", "Strong", "Playable", "Marginal", "Weak"],
@@ -440,14 +527,14 @@ export const CALC_DICT_EN: CalcDict = {
       KK: { desc: "Only watch for an ace on the flop", action: "Always raise/re-raise" },
       QQ: { desc: "Stronger than JJ, but don't overvalue", action: "Always raise; careful when deep" },
       JJ: { desc: "Watch for overcards on the flop", action: "Raise from any position" },
-      "1010": { desc: "Loses value when overcards flop", action: "Raise mid/late, consider calling EP" },
+      "1010": { desc: "Loses value when overcards flop", action: "Raise from any position — do not open-limp" },
       AKs: { desc: "The best drawing hand. Build the pot", action: "Always raise/re-raise" },
       AKo: { desc: "Weaker than AKs but still premium", action: "Always raise; can call a re-raise" },
       AQs: { desc: "Strong hand; more valuable in position", action: "Raise from most positions" },
-      AJs: { desc: "Great on BTN/CO, weak from UTG", action: "Raise mid/late, consider calling EP" },
-      A10s: { desc: "One of the top suited aces", action: "Raise in LP, call in EP" },
+      AJs: { desc: "Great on BTN/CO, weak from UTG", action: "Raise mid/late; from UTG raise or fold — never limp" },
+      A10s: { desc: "One of the top suited aces", action: "Raise in LP; fold from EP unless the table is passive" },
       KQs: { desc: "High flush + straight draw potential", action: "Raise from most positions" },
-      KJs: { desc: "Strong drawing hand", action: "Raise in LP, call in EP" },
+      KJs: { desc: "Strong drawing hand", action: "Raise in LP; fold or raise from EP — never limp" },
       "99": { desc: "Medium pair, watch overcard flops", action: "Raise most positions; careful deep" },
       "88": { desc: "Pocket pair with good set potential", action: "Raise LP, consider calling EP" },
       AQo: { desc: "Weaker offsuit; position matters", action: "Raise in mid/late position" },
@@ -455,12 +542,12 @@ export const CALC_DICT_EN: CalcDict = {
       KQo: { desc: "Top offsuit connector", action: "Raise in LP, call/fold in EP" },
       K10s: { desc: "Suited king, strong in LP", action: "Raise LP, fold EP" },
       QJs: { desc: "Strong two-way draws", action: "Raise LP, more valuable when deep" },
-      J10s: { desc: "One of the best suited connectors", action: "Raise LP, call EP on pot odds" },
+      J10s: { desc: "One of the best suited connectors", action: "Raise LP; call a single raise with position" },
       "109s": { desc: "Strong suited connector", action: "Raise/call in LP" },
       "77": { desc: "Set-mining hand, watch overcards", action: "Raise LP, call EP" },
       A9s: { desc: "Suited ace with flush potential", action: "Raise in LP" },
-      "66": { desc: "Set-mining; needs pot odds", action: "Call/raise LP, best multiway" },
-      "55": { desc: "Little value without a set", action: "Call LP, single-raised pots" },
+      "66": { desc: "Set-mining — needs implied odds", action: "Call a raise with ~15× the call behind; raise LP" },
+      "55": { desc: "Little value without a set", action: "Call a single raise in LP; raise first in from LP" },
       A8s: { desc: "Medium suited ace", action: "Play LP, fold EP" },
       A7s: { desc: "Medium suited ace", action: "Play LP only" },
       A6s: { desc: "Medium suited ace", action: "Play LP only" },
@@ -472,14 +559,14 @@ export const CALC_DICT_EN: CalcDict = {
       QJo: { desc: "Moderate connectivity; needs position", action: "LP only" },
       "98s": { desc: "Strong suited connector", action: "Call/raise LP" },
       "87s": { desc: "Good suited connector", action: "Call LP" },
-      "76s": { desc: "Suited connector", action: "Call LP on pot odds" },
-      "44": { desc: "Almost no value without a set", action: "Call only at low pot odds" },
-      "33": { desc: "Needs to set-mine; speculative", action: "Multiway pots, cheap calls only" },
-      "22": { desc: "Lowest pocket pair", action: "Multiway pots, cheap calls only" },
+      "76s": { desc: "Suited connector", action: "Raise first in from LP; call a raise only with position and deep stacks" },
+      "44": { desc: "Almost no value without a set", action: "Call a raise only with ~15× the call behind" },
+      "33": { desc: "Needs to set-mine; speculative", action: "Multiway pots with deep stacks only" },
+      "22": { desc: "Lowest pocket pair", action: "Multiway pots with deep stacks only" },
       K10o: { desc: "K-10 offsuit, weak", action: "Occasionally from BTN" },
       Q10o: { desc: "Low-connectivity offsuit", action: "BTN only" },
       J10o: { desc: "Decent offsuit but vulnerable", action: "Occasionally from BTN" },
-      Q10s: { desc: "Strong suited broadway, plays well in position", action: "Raise LP, call EP on pot odds" },
+      Q10s: { desc: "Strong suited broadway, plays well in position", action: "Raise LP; fold from EP" },
       A10o: { desc: "Marginal offsuit ace, domination-prone", action: "LP only" },
       "65s": { desc: "Suited connector; wants multiway/implied odds", action: "Call LP" },
       "54s": { desc: "Low suited connector; speculative", action: "Call LP, cheap multiway pots" },
@@ -487,20 +574,20 @@ export const CALC_DICT_EN: CalcDict = {
   },
 
   spr: {
-    effectiveStack: "Effective stack (yours)",
+    effectiveStack: "Effective stack (the shorter of the two stacks)",
     potSize: "Current pot size",
     caption: "SPR (Stack-to-Pot Ratio)",
     stackDivPot: "stack ÷ pot",
     zones: {
       low: {
         label: "Low SPR (committed)",
-        desc: "A big part of the pot is already in. With top pair top kicker or better, consider going all-in — folding can be a mistake here.",
+        desc: "A big part of the pot is already in. With top pair top kicker or better on a dry flop, plan to get the rest in — at this depth folding is often the bigger mistake. On paired, three-flush or three-straight boards, or facing action only a set or straight makes, one pair is still one pair.",
         actions: [["TPTK+", "Consider all-in"], ["Draws", "Pot odds are a must"], ["Weak hands", "Fold carefully"]],
       },
       mid: {
         label: "Medium SPR (flexible)",
         desc: "This is the zone to play strong hands like two pair or better. Protecting your stack becomes important.",
-        actions: [["Two pair+", "Value bet"], ["One pair", "Play it by feel"], ["Draws", "Weigh risk vs reward"]],
+        actions: [["Two pair+", "Value bet"], ["One pair", "One or two streets, then pot control"], ["Draws", "Semi-bluff with fold equity; give up without it"]],
       },
       high: {
         label: "High SPR (getting deep)",
@@ -524,7 +611,7 @@ export const CALC_DICT_EN: CalcDict = {
     orbitFormula: "BB {bb} + SB {sb} + ante {ante}×{players}",
     mCaption: "M value (Harrington's M)",
     zones: {
-      dead: { name: "💀 Dead zone", desc: "You need to move all-in immediately. There's no room to wait for a better hand — shove your best available hand.", action: "All-in now" },
+      dead: { name: "💀 Dead zone", desc: "Fold equity is gone — the all-in is your only move, so take the best live hand you see before the blinds reach you, and prefer a spot where the pot is unopened.", action: "All-in now" },
       red: { name: "🔴 Red zone", desc: "You need to double up soon. Use a push/fold strategy — shove your good hands, fold the rest.", action: "Push/fold" },
       orange: { name: "🟠 Orange zone", desc: "Your stack is shrinking. Tighten your range to strong hands only and look to open-shove.", action: "Tight range" },
       yellow: { name: "🟡 Yellow zone", desc: "The pressure is on. You need to actively gather chips — play aggressively when good spots come up.", action: "Play aggressive" },
@@ -534,7 +621,7 @@ export const CALC_DICT_EN: CalcDict = {
 
   icm: {
     introStrong: "ICM (Independent Chip Model)",
-    introRest: " is a way to calculate the real cash value of your tournament chips. Even the chip leader's ICM value is lower than their chip share, while short stacks are worth more than theirs. Use it for call/fold decisions at the final table and on the bubble.",
+    introRest: " converts your tournament chips into real prize-money value. With more than one place paid, even the chip leader's ICM value is lower than their chip share, while short stacks are worth more than theirs. For a call/fold decision, compare your ICM value after winning and after busting with your value if you fold.",
     numPlayers: "Number of players",
     paidPlaces: "Paid places",
     stacksTitle: "Player chip stacks",
@@ -548,10 +635,10 @@ export const CALC_DICT_EN: CalcDict = {
     incPrize: "Increase place {n} prize",
     currencyNote: "Enter prize amounts in any currency unit.",
     resultTitle: "ICM result",
-    th: { player: "Player", chips: "Chips", chipPct: "Chip %", icmValue: "ICM value", icmPct: "ICM %", diff: "Diff" },
+    th: { player: "Player", chips: "Chips", chipPct: "Chip %", icmValue: "ICM value", icmPct: "ICM %", diff: "Diff", chop: "Chip chop" },
     playerCell: "{medal} P{n}",
     diffPlus: "+diff",
-    diffPlusNote: "ICM value above chip share → short-stack protection zone, avoid coin flips",
+    diffPlusNote: "ICM value above chip share → your risk premium is high; the medium stacks should be tightest. A stack short enough to be blinded out is the exception — it has less to protect",
     diffMinus: "−diff",
     diffMinusNote: "ICM value below chip share → the chip leader's aggression pays off more",
     empty: "Set stacks and prizes above zero to see the ICM result.",
@@ -622,40 +709,186 @@ export const CALC_DICT_EN: CalcDict = {
         text: "The key point: {b1} by 6.7 points. Because winning only pays 1st-place money, the leader gains less prize value from a coin flip than the chip count suggests. So on the bubble the leader should {b2}, while the short stack (13.3% chips → 16.6% ICM) is worth more than its chips and should {b3} to protect that survival value.",
         b1: "the chip leader's ICM value (33.3%) is lower than their chip share (40%)",
         b2: "apply pressure to short stacks",
-        b3: "avoid unnecessary all-in calls",
+        b3: "pick its spots rather than call off — unless the blinds are about to eat it",
       },
     },
     deal: {
-      badge: "Prize split",
-      h2: "ICM deal vs chip chop — splitting the prize pool",
-      intro: "Now three players are left and discussing a deal. With stacks of 50% / 30% / 20% and $1,500 of prize money left, the two methods split very differently:",
+      // ★2026-09-17 재조준 — 옛 예시(50/30/20 · $900/$400/$200 · 618/485/397)는 lib/posts-en/holdem-icm.ts §「ICM Deal vs Chip Chop」과
+      //   표까지 동일해 카니발이었다(SEO 렌즈). 새 예시 = 4명 · 45/25/18/12 · $2,300(1,000/600/400/300) · scripts/calc-icm-example.ts.
+      badge: "ICM chop calculator",
+      h2: "ICM chop calculator — what a final-table deal is actually worth",
+      intro: "Four players are left and talking about a deal. Stacks are 450,000 / 250,000 / 180,000 / 120,000 (45% / 25% / 18% / 12%) and $2,300 of prize money remains, paid $1,000 / $600 / $400 / $300. Enter those into the ICM calculator above and its Chip chop column puts the two numbers side by side:",
       th: { player: "Player", chop: "Chip chop", icm: "ICM deal", diff: "Diff" },
       rows: [
-        { player: "🥇 Chip leader (50%)", chop: "$750", icm: "$618", diff: "-$132", up: false },
-        { player: "🥈 2nd (30%)", chop: "$450", icm: "$485", diff: "+$35", up: true },
-        { player: "🥉 Short stack (20%)", chop: "$300", icm: "$397", diff: "+$97", up: true },
+        { player: "🥇 Chip leader (45%)", chop: "$1,035", icm: "$726", diff: "-$309", up: false },
+        { player: "🥈 2nd (25%)", chop: "$575", icm: "$591", diff: "+$16", up: true },
+        { player: "🥉 3rd (18%)", chop: "$414", icm: "$526", diff: "+$112", up: true },
+        { player: "4th (12%)", chop: "$276", icm: "$458", diff: "+$182", up: true },
       ],
       summary: {
-        text: "A chip chop splits by chip share and {b1}; an ICM deal reflects finishing probabilities and is {b2}. Above, the short stack gets $300 with a chip chop but about $397 with an ICM deal — {b3}. Ask for an ICM deal when you're short; propose a chip chop when you're the leader.",
+        text: "A raw chip chop splits by chip share and {b1}; an ICM deal reflects each player's chance of finishing in each place and is {b2}. Here the shortest stack gets $276 by chips but $458 by ICM — {b3}. Run both numbers before you talk. What a room calls a chip chop is often a save-and-chop — everyone is paid the next payout first and only the remainder is split by chips — which lands near ICM, not the raw split this column shows. And ICM assumes equal skill and ignores who posts the next blinds, so expect the big stack to negotiate above its ICM figure.",
         b1: "favors the chip leader",
         b2: "fairer to short stacks",
-        b3: "$97 more",
+        b3: "$182 more",
       },
+      linkLead: "The model behind these numbers, with bubble factor and deal etiquette, is in",
+      link: { slug: "holdem-icm", text: "What Is ICM in Poker?" },
     },
   },
 
+  // ★2026-09-17 빠른 참조 6표 — 🔴 모든 값 = scripts/calc-reference-tables.ts 출력(09-17). 손으로 고치지 마라.
+  quickRef: [
+    {
+      badge: "Quick reference",
+      h2: "Equity calculator reference — preflop all-in matchups",
+      intro: "Equity when two hands go all-in preflop, averaged over every suit combination of the matchup (precomputed offline: all 1,712,304 boards for each one). A specific combination can differ by about a point — enter the exact cards in the equity calculator above.",
+      th: ["Matchup", "Hand A", "Hand B", "Tie"],
+      align: ["left", "right", "right", "right"],
+      emphasis: 1,
+      nowrap: [1, 2, 3],
+      rows: [
+        ["AA vs KK", "81.9%", "18.1%", "0.5%"],
+        ["AA vs AKs", "87.9%", "12.1%", "1.3%"],
+        ["AA vs 87s", "77.5%", "22.5%", "0.3%"],
+        ["AA vs 72o", "88.2%", "11.8%", "0.4%"],
+        ["KK vs AKs", "65.9%", "34.1%", "0.8%"],
+        ["QQ vs AKo", "56.8%", "43.2%", "0.4%"],
+        ["QQ vs AKs", "54.0%", "46.0%", "0.4%"],
+        ["JJ vs TT", "82.0%", "18.0%", "0.4%"],
+        ["TT vs A9o", "72.2%", "27.8%", "0.4%"],
+        ["TT vs 87s", "80.3%", "19.7%", "0.5%"],
+        ["22 vs AKo", "52.6%", "47.4%", "0.6%"],
+        ["AKo vs AQo", "74.4%", "25.6%", "4.7%"],
+        ["AKs vs QJs", "63.5%", "36.5%", "0.5%"],
+        ["AKo vs JTs", "59.5%", "40.5%", "0.5%"],
+      ],
+      note: "Equity is your average share of the pot, counting ties (chops). A pair against two overcards is the classic race; a pair against a higher pair is about a 4.5 to 1 underdog. The full odds chart, street by street, is in",
+      link: { slug: "holdem-probability", text: "Poker Odds & Probability Chart" },
+      linkTail: ".",
+    },
+    {
+      badge: "Quick reference",
+      h2: "Pocket aces vs random hands — by number of opponents",
+      intro: "How often AA wins when everyone is all-in preflop against N random hands (Monte Carlo, 8,000,000 runouts per row). The first two callers cost the aces about 10 points each; after that each one costs less.",
+      th: ["Opponents", "AA equity"],
+      align: ["left", "right"],
+      emphasis: 1,
+      nowrap: [1],
+      rows: [
+        ["1", "85.2%"], ["2", "73.4%"], ["3", "63.8%"], ["4", "55.9%"],
+        ["5", "49.2%"], ["6", "43.6%"], ["7", "38.7%"], ["8", "34.6%"],
+      ],
+      note: "That is why aces want a heads-up pot: against five random hands the best starting hand in Hold'em is no longer a favorite to win the pot (49.2%, with the other five sharing the rest). Set an opponent to “Random hand” in the equity calculator to test any hand the same way (it takes up to three opponents). Why big hands shrink in multiway pots is in",
+      link: { slug: "holdem-equity", text: "Poker Equity Explained" },
+      linkTail: ".",
+    },
+    {
+      badge: "Quick reference",
+      h2: "Outs calculator reference — draw odds by number of outs",
+      intro: "Chance your draw completes: flop → river (two cards to come), flop → turn (the next card only) and turn → river (one card) — exact, next to the Rule of 4 and 2 estimate. Count outs first, then read across.",
+      th: ["Outs", "Typical draw", "Flop → river", "Flop → turn", "Turn → river", "Rule of 4 · 2"],
+      align: ["left", "left", "right", "right", "right", "right"],
+      emphasis: 2,
+      nowrap: [2, 3, 4, 5],
+      rows: [
+        ["1", "–", "4.3%", "2.1%", "2.2%", "4% · 2%"],
+        ["2", "Pocket pair → set", "8.4%", "4.3%", "4.3%", "8% · 4%"],
+        ["3", "One overcard", "12.5%", "6.4%", "6.5%", "12% · 6%"],
+        ["4", "Gutshot straight", "16.5%", "8.5%", "8.7%", "16% · 8%"],
+        ["5", "Pair → two pair or trips", "20.4%", "10.6%", "10.9%", "20% · 10%"],
+        ["6", "Two overcards", "24.1%", "12.8%", "13.0%", "24% · 12%"],
+        ["7", "Set → full house or quads", "27.8%", "14.9%", "15.2%", "28% · 14%"],
+        ["8", "Open-ended straight", "31.5%", "17.0%", "17.4%", "32% · 16%"],
+        ["9", "Flush draw", "35.0%", "19.1%", "19.6%", "36% · 18%"],
+        ["10", "Gutshot + two overcards", "38.4%", "21.3%", "21.7%", "40% · 20%"],
+        ["11", "Open-ended + one overcard", "41.7%", "23.4%", "23.9%", "44% · 22%"],
+        ["12", "Flush draw + gutshot", "45.0%", "25.5%", "26.1%", "48% · 24%"],
+        ["13", "–", "48.1%", "27.7%", "28.3%", "52% · 26%"],
+        ["14", "Open-ended + two overcards", "51.2%", "29.8%", "30.4%", "56% · 28%"],
+        ["15", "Flush draw + open-ended", "54.1%", "31.9%", "32.6%", "60% · 30%"],
+        ["16", "–", "57.0%", "34.0%", "34.8%", "64% · 32%"],
+        ["17", "–", "59.8%", "36.2%", "37.0%", "68% · 34%"],
+        ["18", "–", "62.4%", "38.3%", "39.1%", "72% · 36%"],
+        ["19", "–", "65.0%", "40.4%", "41.3%", "76% · 38%"],
+        ["20", "–", "67.5%", "42.6%", "43.5%", "80% · 40%"],
+      ],
+      note: "The two-card figure only applies when you will see both cards without paying again (an all-in). Facing one bet on the flop, use the flop-to-turn column: 9 outs = 19.1%. Overcards are the least reliable outs — against a made hand, pairing one often still loses, so discount them. How to count outs without double-counting is in",
+      link: { slug: "holdem-outs", text: "How to Count Outs" },
+      linkTail: ".",
+    },
+    {
+      badge: "Quick reference",
+      h2: "Pot odds calculator reference — equity you need to call",
+      intro: "Facing a bet of this size into the pot, this is the minimum equity a call needs to break even: call ÷ (pot after the bet + call). It is shown both ways — as odds and as the equity they require; the calculator reports the equity form. Compare it with your draw's exact odds in the outs table above.",
+      th: ["Bet size", "Odds (X : 1)", "Equity needed"],
+      align: ["left", "right", "right"],
+      emphasis: 2,
+      nowrap: [1, 2],
+      rows: [
+        ["¼ pot", "5 : 1", "16.7%"],
+        ["⅓ pot", "4 : 1", "20.0%"],
+        ["½ pot", "3 : 1", "25.0%"],
+        ["⅔ pot", "2.5 : 1", "28.6%"],
+        ["¾ pot", "2.33 : 1", "30.0%"],
+        ["Pot", "2 : 1", "33.3%"],
+        ["1.5× pot", "1.67 : 1", "37.5%"],
+        ["2× pot", "1.5 : 1", "40.0%"],
+        ["3× pot", "1.33 : 1", "42.9%"],
+      ],
+      note: "A flush draw (35.0% with two cards to come, 19.1% on the next card) calls a pot-sized bet on the flop only when it is all-in. Otherwise the implied odds calculator — the toggle in the pot odds tab — adds the money you expect to win later, provided your opponent has chips behind and a hand that will pay; discount it heavily when you are not drawing to the nuts. The 10-second method for any spot is in",
+      link: { slug: "holdem-pot-odds", text: "How to Calculate Pot Odds" },
+      linkTail: ".",
+    },
+    {
+      badge: "Quick reference",
+      h2: "SPR calculator reference — how strong a hand you need",
+      intro: "SPR is effective stack ÷ current pot, where the effective stack is the shorter of the two stacks — all either player can win or lose. The lower it is, the more of that stack is already committed and the weaker the hand you can stack off with; the higher it is, the closer to the nuts you need to be for a big pot. Read the zones as flop planning: on a wet or paired board, one pair is still one pair.",
+      th: ["SPR", "Zone", "Hand strength · action"],
+      align: ["left", "left", "left"],
+      emphasis: 1,
+      rows: [
+        ["SPR < 4", "Committed", "Top pair top kicker or better on a dry flop: plan to get it in — at this depth folding is often the bigger mistake"],
+        ["4 ≤ SPR < 8", "Flexible", "Two pair or better for value; one pair takes one or two streets, then pot control"],
+        ["8 ≤ SPR < 15", "Getting deep", "Sets and better play for stacks; draws gain implied odds"],
+        ["SPR ≥ 15", "Deep", "Big pots only with nut-class hands — weak made hands are bluff targets"],
+      ],
+      note: "The SPR calculator above turns any stack and pot into one of these four zones. For ranges by stack depth see",
+      link: { slug: "holdem-short-stack", text: "Short Stack & Push/Fold Strategy" },
+      linkTail: ".",
+    },
+    {
+      badge: "Quick reference",
+      h2: "M value calculator — the five tournament zones",
+      intro: "M is your stack ÷ one orbit's cost (small blind + big blind + all antes): how many laps you can survive without playing a hand. The zones assume a full nine- or ten-handed table; short-handed, multiply M by (players ÷ 10) first — Harrington's Effective M — so an M of 10 at a six-handed final table plays like a 6 (the calculator above shows raw M; make that conversion yourself).",
+      th: ["Zone", "M", "Strategy"],
+      align: ["left", "right", "left"],
+      emphasis: 1,
+      rows: [
+        ["💀 Dead zone", "< 1", "Fold equity is gone — shove the best live hand you see before the blinds reach you, preferably first in"],
+        ["🔴 Red zone", "1–5", "Push/fold: shove your good hands, fold the rest, double up soon"],
+        ["🟠 Orange zone", "6–9", "Tighten to strong hands and look to open-shove"],
+        ["🟡 Yellow zone", "10–19", "Pressure is on — gather chips aggressively in good spots"],
+        ["🟢 Green zone", "20+", "Comfortable stack — full strategy, position play and bluffs"],
+      ],
+      note: "Why tournament stacks are measured in orbits and blinds rather than chips is in",
+      link: { slug: "holdem-tournament-vs-cash-game", text: "Tournament vs Cash Game" },
+      linkTail: ".",
+    },
+  ],
+
   guide: {
     badge: "Tools",
-    h2: "How to use the 8 Hold'em calculators",
+    h2: "How to use the 9 Hold'em calculators",
     cards: [
-      { title: "Outs calculator", body: "Precisely calculates the chance your draw completes on the flop or turn. See both the Rule of 4 and 2 shortcut and the exact figure at once." },
-      { title: "Pot odds & implied odds", body: "Decide whether to call or fold with math. When your opponent is deep, add implied odds for a more accurate decision." },
-      { title: "Hand evaluator", body: "Pick cards to check the hand rank. Enter up to 7 cards and it finds the best 5-card combination automatically." },
-      { title: "Starting hand strength", body: "Pick your two hole cards to see which of the 169 hands it is and the recommended action by position." },
-      { title: "SPR (Stack-to-Pot Ratio)", body: "The stack-to-pot ratio tells you how strong a hand you need. The lower the SPR, the more it favors committing with a strong hand." },
-      { title: "Tournament M value", body: "Harrington's M measures the pressure on your tournament stack. Your strategy shifts completely across the green/yellow/orange/red/dead zones." },
-      { title: "ICM calculator", body: "The Independent Chip Model converts tournament chips into real prize-money value — essential for call/fold decisions and deal talks on the bubble and final table." },
-      { title: "Nash push/fold chart", body: "A 13×13 heads-up chart computed from the Nash equilibrium: which hands to open-shove and which to call with at 1–25bb. A must-have for late-stage tournaments." },
+      { icon: "🎲", title: "Equity calculator (hand vs hand)", body: "Enter 2–4 hands and any board to get each hand's win %, tie % and equity. With every hand known, the flop and turn are enumerated exactly; preflop, or with a random-hand opponent, it samples 60,000 runouts and says so." },
+      { icon: "🎯", title: "Outs calculator", body: "Precisely calculates the chance your draw completes on the flop or turn. See both the Rule of 4 and 2 shortcut and the exact figure at once." },
+      { icon: "💰", title: "Pot odds & implied odds", body: "Decide whether to call or fold with math; the implied odds toggle adds the money you expect to win on later streets." },
+      { icon: "🃏", title: "Hand evaluator", body: "Pick cards to check the hand rank. Enter up to 7 cards and it finds the best 5-card combination automatically." },
+      { icon: "📊", title: "Starting hand strength", body: "Pick your two hole cards to see which of the 169 hands it is and the recommended action by position." },
+      { icon: "📐", title: "SPR (Stack-to-Pot Ratio)", body: "The stack-to-pot ratio tells you how strong a hand you need. The lower the SPR, the more it favors committing with a strong hand." },
+      { icon: "🏆", title: "Tournament M value", body: "Harrington's M measures the pressure on your tournament stack. Your strategy shifts completely across the green/yellow/orange/red/dead zones." },
+      { icon: "📈", title: "ICM calculator", body: "The Independent Chip Model converts tournament chips into real prize-money value, with a chip chop column beside it — the numbers behind bubble decisions and final-table deal talks." },
+      { icon: "⚡", title: "Nash push/fold chart", body: "A 13×13 Nash chart for heads-up, 6-max and 9-max: which hands to open-shove and which to call with at 1–25bb. A must-have for late-stage tournaments." },
     ],
   },
 
@@ -668,13 +901,16 @@ export const CALC_DICT_EN: CalcDict = {
   related: {
     badge: "Go deeper",
     h2: "Guides to read once the math clicks",
+    // ★2026-09-17 6 → 8 (ICM · short stack 추가). 로케일 사전은 EN과 «개수» 동일이 규율(translation-link-structure-equals-en).
     links: [
-      { slug: "holdem-tournament", title: "Tournament Strategy", desc: "ICM, the bubble, and final-table play" },
+      { slug: "holdem-icm", title: "What Is ICM in Poker?", desc: "Chip EV vs prize EV, bubble factor, deals" },
       { slug: "holdem-equity", title: "Poker Equity Explained", desc: "Win %, fold equity, and realization" },
       { slug: "holdem-pot-odds", title: "How to Calculate Pot Odds", desc: "Turn call/fold spots into math" },
-      { slug: "holdem-outs", title: "How to Count Outs", desc: "Outs by draw and the 4-2 rule" },
-      { slug: "holdem-probability", title: "Poker Odds & Probability", desc: "The core numbers behind every hand" },
+      { slug: "holdem-outs", title: "How to Count Outs", desc: "Outs by draw and the 4 and 2 rule" },
+      { slug: "holdem-probability", title: "Poker Odds & Probability Chart", desc: "The full odds chart behind every hand" },
       { slug: "holdem-starting-hands-chart", title: "Starting Hands Chart", desc: "Which hands to play by position" },
+      { slug: "holdem-short-stack", title: "Short Stack & Push/Fold", desc: "How to use a push/fold chart and its limits" },
+      { slug: "holdem-implied-odds", title: "Implied Odds Explained", desc: "When a bad price is still a good call" },
     ],
   },
 };
