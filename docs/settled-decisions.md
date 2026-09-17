@@ -382,6 +382,16 @@ def safe_write(path, text):
 - 근거: WPT «시트 공제 미공개» — GPT 지적 2건이 «1차 표면 누락»형 오탐이었고, 원장 pt #3·#62 / de #5·#97이 이벤트 페이지 축어(«Seat valued at $15,000 … deducted from the overall prize pool»)를 들고 있었는데 대조 없이 `65dc0d1d`→`519240b6`으로 **8로케일이 OK에서 WRONG으로 퇴행**했다. 되돌림 = M-078.
 - 🪶 반대 사례가 같은 날 있었다: GTO 13편 GPT 28건은 본체가 전건 원문 대조를 했고 오탐 유입 0(M-077). **차이는 «대조를 했느냐»뿐이다.**
 
+### 3-F. 🔴 AK vs 포켓페어 명제 — 밴드·범위어·클래스 (2026-09-17 · queue Q5-c에서 승격 · 재론 금지)
+
+세 레인이 3개월간 세 판본(「every smaller pocket pair = coin flip」 · zh-hant 「22～99 ≈ 47%」 · MC 400k 낱값)을 만든 명제다. 정본 = **전수 열거**(브리프 `docs/harden-brief/queue-Q5-c-EN먼저-2F.md` §1 · 보드 1,712,304장 × 수트 패턴 · AA vs KK 81.95% 검산 일치).
+
+- **밴드로 적는다**: 오프수트 22–44 «46–47%» · 55–99 «45%» · TT–QQ «43%» · 수티드 «+2.5–3p» · AKs vs 22 «≈50%». 낱값이 필요하면 브리프 표를 인용한다(AKo 22 47.35 · 99 44.7 · QQ 43.1 · AKs 22 49.89).
+- 🔴 **범위 한정어(22–QQ / «smaller»)를 빼지 마라** — 빼는 순간 KK 30%·AA 7%에서 거짓이 된다(Q5-c 1차 문안 실사고 · 4렌즈 전부 검출). 범위를 좁힌 명제를 재서술할 때는 **범위어를 먼저 옮기고 수치를 붙인다.**
+- 🔴 **클래스를 섞지 마라**: `holdem-equity`의 「22 vs AK ~52/48 · true coin flip」은 **AK 96콤보 가중값(52.0/48.0)으로 정확** — «AKs 49.9»로 고치지 마라. shc는 「closest thing to a true coin flip」으로 라벨 충돌을 피했다. 같은 이유로 KO `ak-offsuit-strategy` 「49.9%」는 50.1(특정 수트 조합값)로 되돌리지 마라.
+- 짝 규율: kicker High card = **조합 1 + 킥커 4**(8자리 전부 같은 수 · 「up to 4」 아님) · Short Deck 「A-6-7-8-9 = 최저 스트레이트」는 **규칙**(WSOP 2026 Rule 366 축어 · often/sometimes 금지 · 인과 = 「A는 원래 low로도 논다 → 2–5가 빠져 6에 붙는다」).
+- 교훈: **같은 명제 N곳은 3곳이 아니라 8곳일 수 있다**(kicker: stripe·표1·직답·표2·요약·tldr·FAQ·열거) — 고치기 전 `grep -c`로 자리 수부터([[completion-count-the-copies-first]]).
+
 ## 4. 1차 출처·인용 규율
 
 - **1차 출처 확보 경로(재조사 금지)**: WSOP 룰북·IRS Pub 515 = `pdftotext -layout`(WinGet Poppler) ·

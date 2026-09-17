@@ -296,6 +296,7 @@
 ### 2-N. 회차 14가 남긴 미결 (회차 15·헤드가 받는다)
 
 > 🔵 **헤드 처리 (2026-09-16 · queue 회차 Q6-c 머지 `c3d23cf2`)** — 이 절의 **N1·N2·N3·N5~N8·N10·N11 종결**(개수 열거 결손 5 · positions L75 · straddle L76 · probability L57 · AREX 실측 · glossary stripe L31 · outs 화살표 — 상세 `docs/harden-queue-진행.md` §1-Q6-c). **N4(kicker High card 행)는 ①원본 유래라 EN-먼저 `docs/en-first-queue.md` §2-F Q6c#2로 이관.** §2의 «echo 19» 부채도 같은 회차에 0으로 닫혔다(`check:answer-echo` 🔴 echo 0).
+> 🔵 **헤드 처리 (2026-09-17 · queue Q5-c 머지 ff `6f498ec7`) — N4 종결.** EN `holdem-kicker`에 High card 행(조합 1 + 킥커 4)을 넣고 ja 포함 8로케일 × 8자리에 전파했다(첫 표 「up to 4」→「4」 포함). §2-N 전건 종결.
 
 - 🔴🔴 **SEO 렌즈가 378블록 3패스 전수 주사로 «개수 열거» 결손 5자리를 더 찾았다 — 전부 ①원본 유래. 회차 15 1순위** (우선순위 순) —
   · `holdem-rake` **파일L105**(H2 「レーキバックとは?」): 블록이 스스로 **「計算方式は2通りあり」**라고 선언하고 **1개만** 부른다. 본문 `:::compare`는 **コントリビュート方式 / ディールド方式** 둘 다 이름을 준다. 🔴 **이번 축의 순수형**(선언 N ↔ 실제 1).

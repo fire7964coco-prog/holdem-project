@@ -103,12 +103,9 @@ EN 12편 정정 → 7로케일(de·es·id·ja·pt·zh·zh-hant) 전파 완료. 1
 - **X-2** ✅ **종결(우편함 회차)** — `texas-holdem-rules-for-beginners` L202 표·L435 FAQ 「any amount up to all your chips」 → 「from the big blind up to …」(NL 최소 오픈 = 빅블라인드 · A 96 «minimum legal amount»). EN + 7로케일.
 - ✅ **종결(우편함 회차 · EN + 7로케일)** — MA-130 요청 1의 es 동형 3건: `holdem-game-order` 표 Fold·All-in 「Anytime」 → 「Any street — in turn」(A 84 non-standard/out-of-turn fold) · `holdem-showdown-rules` 「before/during the runout」 3자리 → TDA 16 축어 「tabled without delay once all betting is complete」 · 「can never be retrieved」 → A 109(식별 가능하면 회수 가능). MA-131 요청 2~4: `holdem-continuation-bet` tldr·L271 OOP 한정 · `holdem-kicker` FAQ L196 → L109 문면 · `holdem-card-counting` L96 misdeal→by mistake · L116 · L127 «any card room» 삭제 · `holdem-position-play` SB 행 「vs a raise」 · `holdem-bubble` 「WSOP Tournament Rule 126」 · `korea-poker-marathon-2026` 「9/4 단일 마감」 7자리 → 창구 종속(L125 정합).
 
-### 2-F. queue 회차 Q6-c가 올린 것 (2026-09-16 · 머지 `c3d23cf2` · 미처리)
+### 2-F. queue 회차 Q6-c가 올린 것 (2026-09-16 · 머지 `c3d23cf2`) — ✅ **전건 종결(queue Q5-c · 2026-09-17 · 레인 `abdc7a21` · 머지 `6f498ec7`)**
 
-- **Q6c#1** 🔴 **AK vs 작은 포켓페어 명제** — EN `holdem-starting-hands-chart` L65 「coin flip against every smaller pocket pair」가 실측과 어긋난다(AKo vs 22 **46.9** · 99 **44.3** · JJ **42.7** · QQ **42.9**). `harden-zh-hant-진행` §5-17 «4자리 일괄 판정 요청»이 미처리로 떨어져 있었고, zh-hant는 「22～99 · 47%」로 앞서 갔는데 그것도 부정확. → **EN + probability + equity + shc 4자리를 한 판에 판정한 뒤 8로케일 전파**(§13 · 콤보 직접 계산).
-- **Q6c#2** 🟠 EN `holdem-kicker` L75·L79–84 «각 족보 킥커 수» 표에 **High card 행이 없다**(같은 글 L55 표에는 있음). ja는 §2-N에서 잡았고 ①원본 유래라 EN부터. → 행 추가 후 8로케일.
-- **Q6c#3** 🟠 EN `holdem-glossary` `:::stripe` 「"Most confused" pairs」 — 8번째 항목(3bet 세는 법)이 **쌍이 아니다**(ja는 「項目」으로 고쳤다). → 「pairs」를 항목 수 표현으로 바꾸고 8로케일.
-- **Q6c#4** 🪶 EN `holdem-hand-rankings` L300 「often A-6-7-8-9 counts as a straight」 — 숏덱에선 거의 보편 규칙이라 «often»이 약하다(확신도 중 · ja는 「多くのルールで」). → 원문 판정 후 결정.
+- Q6c#1 AK vs 포켓페어(전수 열거 밴드 · EN + 7로케일 + zh-hant probability) · #2 kicker High card 행(1+4 · 8로케일 × 8자리) · #3 glossary 「pairs」→「terms」 · #4 Short Deck 「often」→ 규칙(WSOP Rule 366 · 13로케일). 되돌리지 마라 = `docs/harden-queue-진행.md` §3 「Q5-c」 6항 · 정본 승격 = `settled-decisions` §3-F.
 
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
