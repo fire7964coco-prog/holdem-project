@@ -975,6 +975,9 @@ tiebreak L55·L263·L277 ↔ EN L51·L175·L236·L250 · marathon L281 ↔ EN L2
 - 🪶 **Q5c-11 2차 렌즈가 남긴 기록 3(고치지 않았다)**: ① es shc L120·L295 「suited broadways」·「offsuit como AQo」 영어 잔존(①원본 · es 전용 어휘 통일은 Q8-b 재료) ② ja·zh·zh-hant kicker 직답에는 EN·de·es·id·pt에 얹은 꼬리절(「어떤 손은 사이드카드로 못 가른다」)이 없다 — CJK 직답은 이미 길이 규격 안이라 안 얹었다(패리티 공백 · 언어 결함 아님) ③ zh-hant hand-rankings `masterUpdated` 09-17 = «변형표 부재는 의도적(09-09 등재)»을 다시 판정한 기록이지 파리티 주장이 아니다.
 - 🪶 **Q5c-10 sitemap**: 36편 `updated` 09-17 → 머지 뒤 빌드로 `lastmod` 재생성(선례 Q6c-7). IndexNow 대상 = EN 4 + 로케일 사본 + KO 1.
 
+> 🔵 **헤드 처리 (2026-09-17 · 머지 ff `6f498ec7` → 헤드 후속 `b0d8422d` · 빌드 70 + intl 577 · hreflang 0 · hygiene 0 · answer-echo echo 0 · drift 핵심 6 = 기존 ar · sitemap 49행 · 라이브 앵커 OK · IndexNow 60 URL)**:
+> **Q5c-1 ✅ MB-056** · **Q5c-2 ✅** 세 레인 HARDEN §6-0 · **Q5c-3 ✅ `b0d8422d`** zh-hant §3 L421 재잠금(전수 열거 밴드 · 「22～99」 판본 금지) + §5-17·18-3 종결 · ja §2-N N4 종결 · **Q5c-4 ✅** en-first-queue §2-F 전건 종결 + 핸드오프 후보 행 삭제 · **Q5c-5 ✅ `settled-decisions` §3-F 신설**(AK 밴드 · 범위 한정어 · equity 52/48 클래스 · kicker 1+4 · Short Deck 규칙 · 「같은 명제 8곳」 교훈) · Q5c-6 수신 · **Q5c-7 → 핸드오프 미결**(KO 정정 회차 몫) · **Q5c-8 → Q7 재료로 여기 유지**(answer-echo en 라벨 없는 직답 미검사 · de·es·id·pt 미스캔 · 12자 중복 임계) · Q5c-9·11 수신 · **Q5c-10 ✅**. 🪶 라이브 zh-hant probability 「五五開」 1자리 잔존은 「AKs 對 22 約 50%，接近真正的五五開」 = 22 한정의 정당한 쓰임(검수장 0-감시에서 제외 요청함).
+
 ### Q4-b (2026-09-16 · EN 1 + KO 3 + ja 1 + zh 1 + zh-hant 1 + es 2 + 대회 데이터 2 — **배포가 걸린 회차다**)
 
 - 🔴 **Q4b-1 MB 초안**(EN 변경 = MA-123 요청 1 상시 통지 + **MA-118 요청 2 이행 회신** + **MB-053 ② 역전 통지**):

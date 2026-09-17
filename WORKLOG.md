@@ -1,3 +1,9 @@
+## 2026-09-17 (4) — 🧰 queue 회차 Q5-c 머지·배포 (EN-먼저 §2-F 4건 · AK vs 포켓페어 전수 열거 · kicker High card · glossary pairs · Short Deck 규칙)
+
+- 레인 `abdc7a21`(ff 머지 `6f498ec7` · 충돌 0 — 레인이 lane:sync 머지를 안고 있어 main이 그 머지 커밋으로 ff) → 헤드 후속 `b0d8422d` → 빌드 70 + intl 577 · hreflang 0 · hygiene 0 · answer-echo echo 0 · drift 핵심 6(= 기존 ar 부채 · 신규 0) · sitemap 49행 · push · lane:sync 4레인.
+- 헤드 요청 11건: MB-056 · 세 레인 §6-0 · zh-hant 진행 §3 L421 **재잠금**(MC 낱값 → 전수 열거 밴드 · 「22～99 47%」 판본 금지) + §5-17·18-3 종결 · ja §2-N N4 종결 · en-first-queue §2-F 전건 종결 · **`settled-decisions` §3-F 승격**(AK 밴드 · 범위 한정어 · equity 52/48 클래스 · kicker 1+4 · Short Deck 규칙) · KO 판정 2건(Q5c-7) → 핸드오프 미결 · intentional-diffs 등재 0 · 꼬리 드리프트 +1 의도적(hi·ms·tr·vi masterUpdated 09-07 유지) · 게이트 커버리지 메모(Q5c-8)는 Q7 재료로 진행 파일에 남김.
+- 라이브 확인·IndexNow는 MB-056 행. 🪶 교훈(승격): «범위 한정어 하나가 진리값을 바꾼다 — 범위어를 먼저 옮기고 수치를 붙여라» · «같은 명제는 8곳일 수 있다».
+
 ## 2026-09-17 (3) — 계산기 랜딩 10개 로케일 신설 `/{ja,zh,zh-hant,es,pt,de,fr,id,ms,hi}/calculator` (사장님 지시 「각 언어로 번역해서 랜딩페이지를 만들어야지」)
 
 - 발단: ms 글 우측 레일 계산기 CTA가 한국어 `/calculator`로 떨어졌다(사장님 캡처). 원인 = `intl-blog-post-client.tsx` CTA href 하드코딩 + 계산기 랜딩이 ko·en 둘뿐. ja 본문 7곳은 존재하지 않는 `/ja/calculator`(404)를 가리키고 있었다.
