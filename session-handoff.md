@@ -1,13 +1,13 @@
 # 다음 세션 알림장
 
 > «다음 할 일 + 미결»만 담는다. 경위 = `WORKLOG.md`(slug로 grep) · 규칙 = 정본 MD · 시한 = `docs/update-calendar.md`.
-> 마지막 갱신 2026-09-17 (본체 HEAD `b0d8422d` · Q4-b·Q5-c 머지 + como-entrar 히어로 + 계산기 랜딩 10로케일 신설·배포 완료 · 4레인 lane:sync 동기·클린 · 미커밋 0).
+> 마지막 갱신 2026-09-17 (본체 HEAD `bea274b8` · Q4-b·Q5-c 머지 + como-entrar 히어로 + 계산기 랜딩 10로케일 신설·배포 완료 · 4레인 lane:sync 동기·클린 · 미커밋 0).
 
 ## ▶ 다음 할 일 (사장님이 고른다)
 
-1. **🧰 queue 다음 회차** — 후보 셋. 레인 창 첫 마디 「HARDEN.md 읽고 회차 Q7-c 시작해」(회차 이름은 레인이 진행 파일 §1 표에 맞춰 정한다).
-   - 🆕 **계산기 랜딩 10로케일 SEO 재조준**(09-17 신설 `64c0fd9a` · `/{ja,zh,zh-hant,es,pt,de,fr,id,ms,hi}/calculator`): 이번 판은 «코퍼스 용어 기반 1판»이다. 로케일별 키워드 실측(라쿠/DFS)·SERP 6쿼리·카니발 grep → 제목·설명·H1 재조준 + 검수장 MB-055 회신 반영. 구조 = 공용 `components/calculator/calculator-tool.tsx` + `app/<loc>/calculator/dict.ts`(사전 키는 전 로케일 공유 — 지우지 말 것) · hreflang 12세트 = `lib/calculator-alternates.ts`. 곁다리: 낡은 주석 3곳(ja solver page/client 「/ja/calculator 없음」 · de solver faq 머리 · `de-gto-solver.md` §4) · zh-hant push/fold 표기 갈림(蓋牌 vs 棄牌) 판정.
-   - **es `poker-en-las-vegas` 동형 명제 3종**(Q4-b §2 잔여 · es 고유 · EN 동형 없음): L140·L256 「solo exige 21 años」 · L142 matrícula 발급처 부재 + WSOP.com 명칭(형제 `nueva-jersey`·`dinero-real`도). 🆕 **`holdem-tournament` L298**(썸네일 링크 문장 「pide 21 años y una identificación válida」)도 같은 좁은 명제 — 히어로를 «+ dos cuentas gratuitas»로 재제작(09-17)했으니 형제 문장도 같은 회차에. 판정형 = Opus. 근거 `docs/harden-queue-진행.md` §2 「Q4-b가 남긴 것」.
+1. **🧰 queue 다음 회차** — 후보 둘. 레인 창 첫 마디 「HARDEN.md 읽고 회차 Q7-c 시작해」(회차 이름은 레인이 진행 파일 §1 표에 맞춰 정한다).
+   - **es `poker-en-las-vegas` 동형 명제 3종 + `holdem-tournament` L298**(Q4-b §2 잔여 · es 고유 · EN 동형 없음): L140·L256 「solo exige 21 años」 · L142 matrícula 발급처 부재 + WSOP.com 명칭(형제 `nueva-jersey`·`dinero-real`도) · `holdem-tournament:298` 썸네일 문장 「pide 21 años y una identificación válida」 — 히어로가 «+ dos cuentas gratuitas»로 바뀌었으니(09-17) 형제 문장도 같은 회차에. 판정형 = Opus. 근거 `docs/harden-queue-진행.md` §2 「Q4-b가 남긴 것」.
+   - 🪶 **선택 — 계산기 랜딩 10로케일 제목 재조준**(페이지는 09-17 `64c0fd9a`로 **완성·배포·검수 청구(MB-055)까지 끝났다**). 남은 건 제목·설명의 검색어를 볼륨·SERP로 확정하는 일뿐이다(현재 제목 = 사장님 확정 CTA 라벨 + 코퍼스 용어 · 색인·유입엔 문제 없음). 검수장 MB-055 회신이 오면 그 지적과 한 회차로 묶는 게 효율적. 구조 = 공용 `components/calculator/calculator-tool.tsx` + `app/<loc>/calculator/dict.ts`(사전 키는 전 로케일 공유 — 지우지 말 것) · hreflang = `lib/calculator-alternates.ts`. 곁다리: 낡은 주석 3곳(ja solver page/client 「/ja/calculator 없음」 · de solver faq 머리 · `de-gto-solver.md` §4) · zh-hant push/fold 표기 갈림(蓋牌 vs 棄牌).
 2. **(not set) 랜딩 유실 원인 규명 회차**(본체) — 09-14 스냅샷 236세션(08-28 103 → 2.3배). page_view만 유실된 진짜 사람이 참여 0으로 잡혀 참여율을 6.6p 누른다. 후보: 네이버 유입 스크립트 순서 · GA 태그 로딩 지연. 근거 = `docs/seo-report-2026-09-16.md` §5-1.
 3. **10/14 이후 — 배치 효과 4주 비교**(캘린더 등재됨). 기준선 `docs/post-placement-analysis-2026-09-16.md` §2 · 같은 창(`npm run analytics` + `ga-fetch --pages --days 28`). 모바일 홈 36.7%(60세션)는 09-16 배포 전 값 — 그때 재측정.
 
