@@ -13,8 +13,9 @@
 | **ja** | ✅ 09-17 배포(WORKLOG 09-17 (6)) | `docs/keyword-bank/ja-calculator.md` | Equity 탭(「ハンド勝率」) + quickRef 6표 + FAQ 18(ja 고유 1) + 메타 재조준(「ハンド勝率・ICM・必要勝率」) + 딜러 렌즈 12항 + 네이티브·교열·2차 교열 3렌즈. 🔴 CJK 표는 라벨 열도 `nowrap`(390px 세로 쌓임) |
 | **zh** | ✅ 09-17 배포(WORKLOG 09-17 (7) · `ff81a242`) | `docs/keyword-bank/zh-calculator.md` | Equity 탭(「手牌胜率」) + quickRef 6표 + FAQ 18(zh 고유 1) + 메타 「德州扑克概率计算器 — 胜率计算器、ICM、底池赔率免费算」 + 렌즈 3종 76 반영. 🔴 **볼륨 절대값 없음**(DFS 2156·2702 · 라쿠 SG 전부 10 바닥) → 자동완성·SERP·PAS로. 공용 `sep()` 처방 + 게이트 `check:calc-parity` 신설 |
 | **zh-hant** | ✅ 09-17 배포(WORKLOG 09-17 (8)) | `docs/keyword-bank/zh-hant-calculator.md` | Equity 탭(「手牌勝率」) + quickRef 6표 + FAQ 18(zh-hant 고유 = **TDA 2024 Rule 5** 「牌桌上可以用勝率計算器嗎？」) + 메타 「德州撲克勝率計算器 — 撲克機率、ICM 計算機、底池賠率免費算」(260 · H1 CTA 「撲克機率計算器」은 볼륨 null이라 H1에만) + 렌즈 3종. 🔴 **ICM만 «計算機»**(icm計算機 70 ↔ 計算器 null) |
-| **es** | ⏳ 다음 | — | 한 언어씩 · 권역 = LATAM 중립(`/es/` · es-plan) — 볼륨 location은 Mexico부터 · `language_code`는 볼륨을 안 나눈다(rakko-playbook) |
-| pt · de · fr · id · ms · hi | ⏳ | — | 한 언어씩 · `npm run check:calc-parity -- <loc>`가 미채움을 «미검사»로 표시한다 |
+| **es** | ✅ 09-17 배포(WORKLOG 09-17 (9)) | `docs/keyword-bank/es-calculator.md` | Equity 탭(«Equity») + quickRef 6표 + FAQ 18(es 고유 = TDA 2024 Rule 5 «¿Se puede usar una calculadora de poker en la mesa?» · PokerNews·888 FAQ 축) + 메타 «Calculadora de poker — probabilidades, equity e ICM»(MX 70·AR 90·CO 70 · H1·CTA «Calculadora de probabilidades»(10)는 앵커로 유지) + 렌즈 3종 + 2차 교열. 🔴 **«calculadora icm» = IMC(BMI) 오염** · 볼륨은 DFS MX·AR·CO·ES |
+| **pt** | ⏳ 다음 | — | 한 언어씩 · 권역 판정부터(BR 중심?) · es 교훈 §3-F |
+| de · fr · id · ms · hi | ⏳ | — | 한 언어씩 · `npm run check:calc-parity -- <loc>`가 미채움을 «미검사»로 표시한다 |
 | ko | ⏳ 후순위 | GSC 실측 메타 보유 | 별도 클라이언트 · Equity 탭 이식은 공용화 뒤 |
 
 ## 1. 공통 골격 (EN에서 확정 · 로케일은 «값 동일 · 문안 현지화»)
@@ -88,6 +89,18 @@
 - 🪶 데스크톱 탭 라벨이 5자 이상이면 2줄로 꺾인다(「錦標賽 M值」 → 「錦標賽 M」 · zh 「锦标赛 M」 동형). 탭 라벨을 바꾸면 「…」 인용 자리를 전부 같이.
 - 🪶 zh-hant 고유 FAQ의 근거 = 경쟁 FAQ 축(calculators.hk 「我可以在實戰中使用這個工具嗎？」) + 1차 출처(TDA) + 경쟁 0 — «질문 DB가 없는 로케일»의 세 번째 방법(zh는 자동완성 시드였다).
 
+### 3-F. es 회차가 남긴 것 (09-17 · 다음 로케일이 그대로 쓴다)
+
+- 🔴 **약어 오염을 자동완성으로 먼저 걸러라** — «calculadora icm»의 자동완성 10개가 전부 «calculadora imc»(체질량지수)였다. 라틴계(pt «IMC»도 같은 약어) 로케일은 ICM을 늘 «de poker»/«de ICM»에 붙여 앵커. «regla del 4 y 2»는 의료(4-2-1) 오염 → 코퍼스 «2 y 4».
+- 🔴 **라틴계 로케일은 영문 «icm calculator»가 자국어보다 크다**(MX 140 · AR 140 vs «calculadora icm» 10) — 제목엔 «ICM»을 넣되 자국어 머리어 뒤에.
+- 🔴 **«calculator + X»의 X가 볼륨을 가른다** — «calculadora de poker» 70~170 ↔ «de probabilidades» 10. CTA 앵커(de probabilidades)는 H1에만(§3-E 선례 재확인). SERP 1·3위가 앵커 이름으로 머리어 쿼리에 올라 있으면 동의어군 = 분리해도 손해 없음.
+- 🔴 **board를 «mesa»로 옮기지 마라**(es 코퍼스 board 634 · board pareado 33 ↔ mesa pareada 0) — 같은 도구에 «Mesa»(6-max 테이블)·«mesa final»이 있어 충돌한다. 로케일마다 board 역어가 table 역어와 겹치는지 먼저 본다.
+- 🔴 **형제 글 FAQ와 «의도» 충돌은 축어가 아니어도 잡힌다**(SEO 렌즈 3건: chip chop vs ICM · ICM vs chip EV · 버블 폴드) — 계산기형·결과형 질문으로 틀어라(«¿Por qué un call rentable en fichas puede perder dinero en premios?»). EN FAQ도 같은 3문항을 갖고 있다(EN은 PAA 근거로 유지) — 로케일은 형제 글 FAQ를 grep한 뒤 결정.
+- 🔴 **`captionMw`에 관사를 붙이지 마라** — pos 값에 SB(여성 «la SB»)와 나머지(«el BTN»)가 섞인다. 성·관사가 있는 로케일은 «en {pos}» 형.
+- 🔴 **스타팅 핸드 «pagar»/«call LP»는 림프로 읽힌다** — 87s·65s·54s·33·22도 «pagar una subida»로 명시(네이티브 렌즈 · EN 원문도 같은 모호성 → §5).
+- 🪶 **FAQ 고유 문항 = 경쟁 FAQ 축 + 1차 출처**(es·zh-hant 둘 다 «계산기 사용 가능?» 축이 SERP에 있었다). 자동완성 수요가 있어도 «못 한다»가 답이면(Omaha) 넣지 않고 뱅크 «미구현 수요»로.
+- 🪶 게이트 `check:calc-parity` C는 FAQ «EN 17 + 고유 1»까지만 허용한다 — 고유 2개를 넣으려면 게이트부터 판정.
+
 ### 3-D. 🔴 모델 분담 — 절약 국면 (2026-09-17 사장님: 「Fable만 썼더니 한도가 찬다 · Fable/Opus 구분해라」)
 
 zh 회차의 소모 구조 = **헤드(Fable)가 전부**였다: 실측 도구 호출 · 뱅크·사전·FAQ·page 집필 · 렌즈 반영 · 마감 문서까지 한 창. 서브(sonnet 2 · Opus 3)는 그에 비하면 작다.
@@ -123,5 +136,9 @@ zh 회차의 소모 구조 = **헤드(Fable)가 전부**였다: 실측 도구 �
 - 🟠 **클라이언트 `<SEO>`가 `og:title`을 서버 `openGraph.title`과 다른 값(fullTitle)으로 덮어쓴다** — en·ja·zh 공통(교열 렌즈 09-17). `check:seo-sync`는 이 축을 안 본다. 로케일 공통 판정 필요(서버 og:title을 fullTitle로 맞추거나 클라이언트가 og를 안 건드리게).
 - 🪶 `icm.introRest` 선행 공백 — EN 타입 주석 「keep the leading space」는 영어용. CJK 로케일에서 「）」와 「是」 사이 공백이 렌더된다(zh는 뺐고 ja는 남음). 렌더러 쪽 처방(`sep()` 동형)으로 통일 후보.
 - 🪶 zh 88/KQo/77의 「不要开池平跟」은 EN(「call EP」)에 없는 절 — ja와 동형. EN 「call EP」 정정(위 77/88/KQo 항)과 함께 판정.
+- 🪶 **EN FAQ «4 and 2 rule»의 «times-2 half runs 1–2 points low»는 5~11 outs에서만 참**(표: 1~4 outs 0.2~0.7 · 12 outs 2.1 · 15 outs 2.6 · 20 outs 3.5 — es 교열 렌즈 09-17). es는 «outs가 늘수록 더 모자란다(9 outs 1.6 · 15 outs 2.6)»로 고쳤다. EN·ja·zh·zh-hant 회灌 후보.
+- 🪶 **EN FAQ «compare the average against your value if you just fold»** — 승/버스트 단순 평균은 승률 50% 가정이 된다(es 네이티브 렌즈). es는 «승률로 가중한 평균». EN·타 로케일 회灌 후보.
+- 🪶 EN `pot.orHigher` «above this…» ↔ de·fr·pt·id·es(옛)·ms «or more» — 정확히 같으면 EV 0(verdict.even)과 어긋난다. es는 «— con más equity, el call es rentable». 남은 로케일 회차에서 같이.
+- 🪶 EN `starting.hands` 87s·65s·54s «Call LP» · 33/22 «Multiway pots…» — «레이즈에 콜»이 명시 안 돼 림프로 읽힌다(es 네이티브 렌즈). es만 «pagar una subida»로 명시.
 - 로케일 회차 공통: 딜러 렌즈가 고친 EN 도구 문안 12항(Effective stack · 팟 라벨 · SPR low · 데드존 · diffPlusNote · 스타팅 12핸드 · unknown 폴백 · 슬라이더 19.6 · 프리셋 «Flush draw» · 오버카드 desc · 가이드 카드 · introRest)은 **각 로케일 사전에도 그대로 남아 있다** — 로케일 회차에서 같이 정정.
 
