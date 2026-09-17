@@ -12,8 +12,9 @@
 | **en** | ✅ 09-17 배포(WORKLOG 09-17 (5)) | `docs/keyword-bank/en-calculator.md` | Equity 탭 신설 + quickRef 6표 + FAQ 17 + 메타 재조준 + 도구 문안 정정(딜러 렌즈) |
 | **ja** | ✅ 09-17 배포(WORKLOG 09-17 (6)) | `docs/keyword-bank/ja-calculator.md` | Equity 탭(「ハンド勝率」) + quickRef 6표 + FAQ 18(ja 고유 1) + 메타 재조준(「ハンド勝率・ICM・必要勝率」) + 딜러 렌즈 12항 + 네이티브·교열·2차 교열 3렌즈. 🔴 CJK 표는 라벨 열도 `nowrap`(390px 세로 쌓임) |
 | **zh** | ✅ 09-17 배포(WORKLOG 09-17 (7) · `ff81a242`) | `docs/keyword-bank/zh-calculator.md` | Equity 탭(「手牌胜率」) + quickRef 6표 + FAQ 18(zh 고유 1) + 메타 「德州扑克概率计算器 — 胜率计算器、ICM、底池赔率免费算」 + 렌즈 3종 76 반영. 🔴 **볼륨 절대값 없음**(DFS 2156·2702 · 라쿠 SG 전부 10 바닥) → 자동완성·SERP·PAS로. 공용 `sep()` 처방 + 게이트 `check:calc-parity` 신설 |
-| zh-hant | ⏳ 다음 | — | 자동완성 `hl=zh-TW&gl=TW` · 볼륨 DFS 2158(`language_code` 생략 · 「德州撲克勝率計算器」 260 실측 08-31) · SERP 2158 + `zh-TW`. 거울쌍이지만 기반 용어가 다르다(公牌·「」·機率/籌碼) — 간체 파일 변환 금지, 재저작. 절차 = §3-A + §3-B + §3-C |
-| es · pt · de · fr · id · ms · hi | ⏳ | — | 한 언어씩 · `npm run check:calc-parity -- <loc>`가 미채움을 «미검사»로 표시한다 |
+| **zh-hant** | ✅ 09-17 배포(WORKLOG 09-17 (8)) | `docs/keyword-bank/zh-hant-calculator.md` | Equity 탭(「手牌勝率」) + quickRef 6표 + FAQ 18(zh-hant 고유 = **TDA 2024 Rule 5** 「牌桌上可以用勝率計算器嗎？」) + 메타 「德州撲克勝率計算器 — 撲克機率、ICM 計算機、底池賠率免費算」(260 · H1 CTA 「撲克機率計算器」은 볼륨 null이라 H1에만) + 렌즈 3종. 🔴 **ICM만 «計算機»**(icm計算機 70 ↔ 計算器 null) |
+| **es** | ⏳ 다음 | — | 한 언어씩 · 권역 = LATAM 중립(`/es/` · es-plan) — 볼륨 location은 Mexico부터 · `language_code`는 볼륨을 안 나눈다(rakko-playbook) |
+| pt · de · fr · id · ms · hi | ⏳ | — | 한 언어씩 · `npm run check:calc-parity -- <loc>`가 미채움을 «미검사»로 표시한다 |
 | ko | ⏳ 후순위 | GSC 실측 메타 보유 | 별도 클라이언트 · Equity 탭 이식은 공용화 뒤 |
 
 ## 1. 공통 골격 (EN에서 확정 · 로케일은 «값 동일 · 문안 현지화»)
@@ -74,6 +75,18 @@
 - 🪶 **볼륨이 없는 로케일의 근거 3종** = 자동완성 «존재 여부»(3지역 교차) + SERP 구성(위젯만 vs 도구+표+FAQ) + PAS. zh는 이 셋으로 제목·탭명·FAQ 표기를 전부 결정했다 — 사후 판정은 28일 GSC 쿼리 단위뿐.
 - 🪶 「ICM计算器」처럼 **앵커 없는 라틴 단독은 자동완성이 죽는다**(「德州扑克 icm计算」은 산다) — 제목엔 「ICM」만, 본문·H2는 코퍼스 표기.
 - 🪶 zh 고유 FAQ의 근거는 «자동완성에 살아 있는 시드»(「德州扑克 aa 胜率」)로 잡았다 — 라쿠 질문 DB는 zh를 안 덮는다(4번째 실증).
+
+### 3-E. zh-hant 회차가 남긴 것 (09-17 · 다음 로케일이 그대로 쓴다)
+
+- 🔴 **CTA 이름이 볼륨 0일 수 있다** — 로케일 CTA는 09-16에 «코퍼스 앵커 축어»로 정했지 검색어로 정한 게 아니다(zh-hant 「撲克機率計算器」 = null·자동완성 0). 제목 앞머리는 실측 머리어(260)에, H1·CTA·브레드크럼은 앵커에 — **분리해도 된다**.
+- 🔴 **«calculator» 명사 자체를 갈래마다 재라** — 대만은 計算器(260 머리어)와 計算機(icm計算機 70 ↔ icm計算器 null)가 축마다 갈린다. ja(計算機/計算ツール)와 같은 결.
+- 🔴 **fold equity를 「○○率」로 옮기지 마라** — zh-hant 「棄牌率」은 형제 글(holdem-equity L122)이 «혼동 금지»로 설명하는 오역이었다(네이티브 렌즈 高). 각 로케일 코퍼스의 fold equity 정본을 grep하라(zh 간체 사전의 「弃牌率」도 같은 결 — 후속 판정 후보).
+- 🔴 **M 데드존 「看到最好的一手就推」류는 «프리미엄을 기다려라»로 읽힌다** — EN 「the best live hand you see」 = «받는 패 중 쓸 만한 것». zh 「看到的最好的一手牌就推」도 같은 결(후속 판정 후보).
+- 🔴 **「綁定」(계정 연동) ≠ pot-committed** — 대만 코퍼스는 「綁死」. 로케일마다 SPR «committed» 역어를 코퍼스로 재라.
+- 🔴 **TDA 인용은 2024판** — 2022판 Rule 5(«live hand 중»)는 2024 5-D(«at the table» 전체)로 넓어졌다. `zh-hant-odds-cluster.md` §3-A는 2022 문구.
+- 🪶 공용 컴포넌트 처방 3건(EN 산출물 불변): quickRef 헤더 CJK `nowrap`(「翻牌→河牌」 3줄 꺾임 — zh·ja 동형) · quickRef note 뒤 `sep()` · push/fold readMore 앞 `sep()`.
+- 🪶 데스크톱 탭 라벨이 5자 이상이면 2줄로 꺾인다(「錦標賽 M值」 → 「錦標賽 M」 · zh 「锦标赛 M」 동형). 탭 라벨을 바꾸면 「…」 인용 자리를 전부 같이.
+- 🪶 zh-hant 고유 FAQ의 근거 = 경쟁 FAQ 축(calculators.hk 「我可以在實戰中使用這個工具嗎？」) + 1차 출처(TDA) + 경쟁 0 — «질문 DB가 없는 로케일»의 세 번째 방법(zh는 자동완성 시드였다).
 
 ### 3-D. 🔴 모델 분담 — 절약 국면 (2026-09-17 사장님: 「Fable만 썼더니 한도가 찬다 · Fable/Opus 구분해라」)
 
