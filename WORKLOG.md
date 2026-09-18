@@ -1,3 +1,31 @@
+## 2026-09-18 (1) — `/de/calculator` 재조준 «계산 기능 강조» 트랙 7/11 — Equity 탭 + 빠른 참조 6표 + FAQ 18 + 메타 재조준 (브리프 §3-A를 de로 · `688b67d1` · MB-063 · 헤드 Opus · Fable 판정 생략)
+
+- 권역 = **DACH**. 🟢 자동완성 62시드 × DE/AT/CH 3지역 교차에서 **지역차가 사실상 0**(2시드만 순서 차이) → 권역 분리 근거 없음. 숫자는 코퍼스 실측(소수 콤마 3.399 : 점 179)으로 `numberLocale: "de-DE"` 유지.
+- 실측(DFS Germany 2276 105시드 · `language_code` 생략 · 구글 자동완성 62시드×3지역 `tmp/de-calc-suggest.mjs` · DFS SERP 모바일 3쿼리 · 상위 10페이지 구조 = sonnet 2 raw DOM) → `docs/keyword-bank/de-calculator.md`(신설). GSC 90일 0(09-17 신설 직후).
+- 핵심 수치: **poker odds calculator(영문) 590 · poker wahrscheinlichkeiten 480 · poker calculator(영문) 390 · poker rechner 260 · poker wahrscheinlichkeiten rechner 210 · poker equity calculator 210 · icm poker 110 · pot odds 90 · poker odds rechner 50(승인 CTA — 🟢 살아 있다)**.
+- 🟢 **ICM 오염 0** — es(IMC)·pt(ICMS+IMC)와 달리 독일어 BMI는 「BMI」라 「icm rechner」·「icm poker」·「icm calculator」 3시드 30개 확장이 전부 포커였다. 🔴 **대신 오염이 다른 5갈래로 왔다**: 「quotenrechner」 210=스포츠베팅(「poker quotenrechner」 0) · 「chip chop」=햄 · 「equity rechner」=금융(private equity) · 「harrington m」=재킷 브랜드 · 「poker kalkulator」 390=폴란드어. → 점검 단위는 «ICM»이 아니라 «시드마다 확장 10개가 내 업종인가».
+- 🔴 **경쟁사 1위 표기가 볼륨 0일 수 있다** — SERP #1 888poker.de가 FAQ에서 「Texas Holdem **Quotenrechner**」를 쓰지만 검색어가 아니다(odds 직역 잔재 · 로컬보이스 §3이 그 시장을 「번역체 잔재」로 적어둔 것과 같은 결). 제목·H2·FAQ 어디에도 안 씀.
+- 🔴 **EN 규칙 이름의 직역이 자동완성 전멸** — 「Regel der 4 und 2」·「4 2 regel poker」 확장 0. 독일어는 「**Faustregel**」(PAS 「Poker Wahrscheinlichkeiten Faustregel」·「Poker outs faustregel」 · 코퍼스 33 : 「2 und 4」 6 : 「4 und 2」 2). 단 «연산 병기»는 코퍼스 8/8이 4 → 2라 그 순서를 유지했다 — **이름과 연산 순서는 코퍼스에서 원래 갈라져 있다**(2차 교열이 주석↔본문 불일치로 잡아 판정).
+- 🔴 **영문 머리어가 자국어의 2.3배**(590 : 260 · pt는 260:260 동급이었다) → 승인 CTA 「Poker-**Odds**-Rechner」 합성어가 둘 다 먹는다. zh-hant처럼 CTA를 분리할 필요가 없었다 — **§3-E를 「CTA는 분리한다」로 일반화하면 안 된다, 측정 후 판정이다.**
+- 🟢 **카니발 경계**: 형제 글이 소유한 것은 「Wahrscheinlichkeiten 〈**Tabelle**〉」(holdem-probability title 축어)이고 title·H2에 「Rechner」를 쓰는 형제는 **0건**(SEO 렌즈 재검증) → 「poker wahrscheinlichkeiten rechner」 210을 계산기가 온전히 가져간다. **소유권 판정은 키워드가 아니라 구(句) 단위로.**
+- SERP: 「poker rechner」 = 888poker.de · poker.de 둘뿐 + 앱스토어·영어. 「icm rechner poker」 = **10자리 중 8자리가 영어**, 독일어 ICM 도구는 PokerFirma 「ICM-Dealrechner」 1곳(iframe · 산문 0 · 표 헤더 3). 독일어 SERP에 **스트리트 3열 아웃츠표·수트 가중 매치업표·ICM/칩찹 병렬 열·SPR 구간표·M 존표가 0곳** → 표 6개 자체가 차별점(pt와 동형).
+- 🔴 **렌즈 4종(네이티브 적대·교열 전사·SEO 카니발·2차 교열)이 게이트 0건 뒤에서 잡은 것**:
+  - **§11-7 위반 — meta description 171자.** 🔴 **게이트 사각지대**였다: `check:meta-length`는 `lib/posts-*`만 순회해 계산기 랜딩을 **원리상 안 본다**. 빌드·hreflang·meta·meta-lang·seo-sync를 전부 통과한 채였다 → 157자로 줄이고 **`check:calc-parity`에 desc ≤160 검사 신설**(셀프테스트 3/3: 통과 → 165자 심은 오류 검출 → 복구 · 재조준 완료 5로케일 통과 확인).
+  - **de 사전이 09-17 EN 경화 «이전» 텍스트를 들고 있었다** — `spr.mid` 「Nach Gefühl spielen」(D유형 유해 조언) · `spr.low` EN 안전문장 누락(젖은 보드에서도 TPTK 스택오프 조언이 된다) · `starting.hands` **13항이 EN이 딜러 렌즈로 전수 제거한 오픈 림프를 권유** · `unknownDesc` 「매우 약한 핸드」(K9s·QTs가 이 폴백에 떨어지는데 BTN 스탠다드 오픈 = 사실 오류) · `page.tsx` og/twitter `images` 부재 · TITLE/DESCRIPTION 하드코딩.
+    → 🔴 **전수 grep으로 세니 de·fr·id·ms·hi 5개 공통이었다**(es·ja·pt·zh·zh-hant는 개정본). de는 이 회차에서 해소, **남은 4개는 브리프 §3-I 판정표**로. 「de 번역 문제」로 읽었으면 절반이 「완료」로 닫혔다(메모리 `completion-count-the-copies-first`).
+  - **자기모순**: quickRef가 「두 오버카드 vs 페어 = der klassische **Coinflip**」인데 바로 위 표(QQ vs AKo 56,8%)와 FAQ Q3(「nie genau 50/50」)이 반증 → 「das klassische **Rennen**」.
+  - **독일어 비문 5**: 「als ihrer」(비교 파탄) · 「shovt entweder oder foldet」 · **「der Call gewinnt und verliert nichts」**(EV 0 판정인데 「이긴다」로 읽힌다) · 「ein gepaartes Overcard」(성 오류 · 코퍼스 여성 6 : 중성 0) · 쉼표 미로.
+  - **오독 3**: `weiter`(코퍼스 용례는 전부 「계속」) → `breiter` · FAQ 방위어가 **반대**(「weiter unten」인데 렌더 순서상 표는 위) · `Runde`(베팅 라운드) → `Orbit`(코퍼스 11 : 0).
+  - **SEO 카니발 6**: 형제 FAQ 충돌 5 — 그중 「Faustregel 정확도」는 `holdem-probability` FAQ와 **근거 수치 60%/54,1%까지 같았다** · ICM vs Chip EV · Chip Chop vs ICM Deal(답 전개 순서까지) · 버블 폴드 · Flushdraw 적중률(H2 축어) + quickRef[3] H2가 `holdem-pot-odds` H2·7행 표의 **상위집합** → 전부 계산기형으로.
+  - **2차 교열이 «내 수정이 만든 새 모순» 3건 적발**: Overcard 성이 한 파일 안에서 갈림(1차가 presets만 잡고 quickRef note를 놓쳤다) · 「M-Wert」 ↔ 페이지 전체 「M-Ratio」 · 「Orbit-Kosten (Blinds pro Orbit)」 동어반복 + Umlauf 혼용.
+- 🪶 **내 뱅크 §6도 렌즈가 정정**: 「Faustregel 소유 2곳」 → **3곳**(`holdem-pot-odds:151` 누락) · 「역방향 링크 14곳」 → **16곳**(자기 나열의 합이 16인데 총계를 14로 적었다) · §6이 **형제 FAQ를 아예 안 봤다** → 그래서 카니발 5건이 통과했다. **소유권은 title·H2·FAQ 셋으로 잰다**를 fr 인계(§9)에 규율로 박음.
+- 🟢 **역방향 누수 0** — de 형제 글 16곳이 이미 `/de/calculator`를 가리키고 `/de/solver` 링크는 0건(pt의 «/solver로 샌다» 문제는 로케일 상수가 아니다). 다만 `holdem-equity`·`holdem-icm` FAQ가 계산기를 말하면서 **링크를 안 준다**(부정관사 「einen ICM-Rechner」가 경쟁사로 가는 문) → 포스트 수정이라 범위 밖, MB-063 ⓒ로 청구.
+- 🪶 quickRef 화살표 헤더(「Flop → River」)가 390px에서 3줄로 꺾이지만 **EN도 동일**(둘 다 실측 81px · CJK용 `nowrap` 조건이 라틴 헤더엔 안 걸린다) → de 회귀가 아니라 수용된 EN 동작이라 안 건드림. **「보기 나쁘다」를 만나면 먼저 EN과 대조.**
+- 🪶 서브에이전트 2개에 **같은 파일명**(`tmp/de-calc-extract-b.mjs`)을 주면 덮어쓴다(실제로 났다) → 병렬 추출은 에이전트별로 다른 파일명.
+- 🪶 IndexNow를 Git Bash에서 `--urls /de/calculator`로 부르면 **MSYS가 `C:/Program Files/Git/de/calculator`로 변환**한다(200이 떠도 잘못된 URL). → PowerShell로 재발신해 정정.
+- 게이트: `check:calc-parity -- de` **0건(46 → 0)** · build ✓ · hreflang 0 · meta 0 · meta-lang 0 · seo-sync 0 · 화면 1440/390 overflow 0 · 산출물 Question 18 · 표 8 · 「Quoten」 0 · 「Regel der 4 und 2」 0 · 라이브 Playwright 확인 · IndexNow 200.
+- 수치는 전부 EN 그대로(§13 언어 불변) — 교열 렌즈가 quickRef 6표 **220개 값 + FAQ 수치**를 프로그램 대조해 불일치 0 확인.
+
 ## 2026-09-17 (10) — `/pt/calculator` 재조준 «계산 기능 강조» 트랙 6/11 — Equity 탭 + 빠른 참조 6표 + FAQ 18 + 메타 재조준 (브리프 §3-A를 pt로 · `73f2fbea` · MB-062 · 헤드 Opus · Fable 판정 생략)
 
 - 권역 판정 = **pt-BR**(translation-terms-pt 대상 · pt 태그 볼륨도 Brazil) · 숫자 표기는 코퍼스 실측(소수 콤마 1,637 : 점 0)으로 `numberLocale: "pt-BR"` 유지 — es(en-US 표기)와 반대.
