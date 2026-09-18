@@ -110,11 +110,18 @@ const SPEC: [string, string][] = [
 
 /**
  * 「무엇을 원하나 → 어디로」 — 내부 역할 분리 표.
- * 🔴 **fr에는 도구 페이지도 전략 글도 없다**(코퍼스 = 규칙 6편) — 실존 글 3종으로만 보낸다
+ * 🔴 **fr 코퍼스는 규칙 6편뿐이고 전략 글이 없다** — 블로그 링크는 실존 글 3종으로만 보낸다
  *    (전건 `lib/posts-fr/<slug>.ts` 실존 확인). 전략 글 링크는 fr 코퍼스 확장 때 보강.
+ * 🔴 ★2026-09-18 — 「도구 페이지도 없다」는 낡았다: `/fr/calculator`가 09-17에 생겼고 09-18에 재조준됐다.
+ *    지금 표는 **도구 2행(솔버·계산기) + 규칙 글 3행**이다. 계산기 행을 «오염»으로 지우지 마라(아래 근거).
  */
 const PICK_TOOL: readonly [string, string, string | null][] = [
   ["Résoudre un spot postflop précis", "Le solver de cette page", null],
+  // 🔴 ★2026-09-18 신설 — `/fr/calculator` 재조준 회차가 만든 «머리어 충돌»의 처방.
+  //   이 페이지 FAQ는 2026-08-24에 `calculateur poker`(390)를 흡수하려고 만들어졌는데, 그때는 계산기 랜딩이 없었다.
+  //   지금은 `/fr/calculator`의 H1이 바로 «Calculateur poker»다 → 솔버가 그 의도를 «자기가 답하고 끝내면» 카니발이다.
+  //   처방은 noindex가 아니라 «도구 → 도구 링크 신설»(메모리 `seo-tool-vs-blog-cannibalization`).
+  ["Calculer une équité main contre main, des cotes du pot ou un deal ICM", "Calculateur poker", "/fr/calculator"],
   ["Apprendre les règles et le déroulement d'une main", "Guide des règles du Texas Hold'em", "/fr/blog/texas-holdem-rules-for-beginners"],
   ["Comprendre les actions : miser, relancer, checker, se coucher", "Guide des actions de mise", "/fr/blog/holdem-betting-actions"],
   ["Savoir ce que paient la petite et la grosse blinde", "Guide des blindes", "/fr/blog/holdem-blind-meaning"],

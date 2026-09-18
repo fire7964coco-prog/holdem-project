@@ -146,10 +146,13 @@ export const SOLVER_FAQ_FR: FaqItem[] = [
     a: "Non — ici, pas d'adversaires virtuels ni de parties à jouer : on calcule de la stratégie. Pour jouer au poker gratuitement, il faut une room de poker ; pour savoir à quelle fréquence une main doit miser, checker ou se coucher sur un board donné — et pourquoi — c'est ce solver qu'il te faut. Cela dit, le Trainer ressemble à un jeu : il te met devant de vraies décisions, puis il te note.",
   },
   {
-    // 🔴 fr 고유 문항 — `calculateur poker`(390) 흡수. 답의 사실은 앱 Equity 탭 기능(9언어 공통 —
-    //    zh-hant 회차 라이브 검증)과 fr 네비 축어(«Equity % victoire»)에서만.
+    // 🔴 fr 고유 문항 — 2026-08-24에 `calculateur poker`(390)를 흡수하려고 만들었다. 답의 사실은 앱 Equity 탭
+    //    기능(9언어 공통 — zh-hant 회차 라이브 검증)과 fr 네비 축어(«Equity % victoire»)에서만.
+    //    🔴 ★2026-09-18: 그 머리어는 이제 `/fr/calculator`의 H1이다 → 답 끝에서 **핸드오프한다**(같은 파일
+    //    «Où apprendre le poker gratuitement» 문항이 규칙 클러스터로 넘기는 패턴과 동형). 렌더러가 링크를
+    //    못 그리므로 페이지 이름을 축어로 부르고, 실제 링크는 `solver-client.tsx`의 PICK_TOOL 표가 준다.
     q: "Y a-t-il un calculateur poker gratuit intégré ?",
-    a: "Oui — l'onglet Equity (% victoire), gratuit et sans compte : tu choisis tes deux cartes, l'adversaire peut être une main précise ou une range entière, et le board vide donne l'equity préflop — avec 3, 4 ou 5 cartes, celle du flop, du turn ou de la river. Il calcule l'equity à tapis entre deux joueurs ; dès qu'il y a des mises et des folds au milieu, c'est le travail du solver lui-même. L'app intègre aussi un onglet Charts préflop pour les ranges d'open.",
+    a: "Oui — l'onglet Equity (% victoire), gratuit et sans compte : tu choisis tes deux cartes, l'adversaire peut être une main précise ou une range entière, et le board vide donne l'equity préflop — avec 3, 4 ou 5 cartes, celle du flop, du turn ou de la river. Il calcule l'equity à tapis entre deux joueurs ; dès qu'il y a des mises et des folds au milieu, c'est le travail du solver lui-même. L'app intègre aussi un onglet Charts préflop pour les ranges d'open. Et pour les chiffres que le solver ne calcule pas — cotes du pot, outs, SPR, valeur M, deal ICM — le Calculateur poker du site les réunit sur une page.",
   },
   {
     // 🟢 `apprendre le poker`(720)·`s'entrainer au poker`(30) 흡수 — 답이 fr 규칙 클러스터(소유자)로

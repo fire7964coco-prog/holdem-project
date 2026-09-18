@@ -100,7 +100,8 @@
     "indexnow": "node scripts/indexnow.mjs",
     "check:ux": "node scripts/check-auth-navigation.mjs && node scripts/check-community-ux.mjs && node scripts/check-discovery-ux.mjs",
     "check:ux:browser": "node scripts/check-discovery-browser.mjs && node scripts/check-tools-browser.mjs && node scripts/check-auth-browser.mjs && node scripts/check-community-browser.mjs",
-    "check:calc-parity": "npx tsx scripts/calc-dict-parity.ts"
+    "check:calc-parity": "npx tsx scripts/calc-dict-parity.ts",
+    "check:calc-parity:selftest": "npx tsx scripts/calc-dict-parity.ts --selftest"
   },
   "dependencies": {
     "@radix-ui/react-tabs": "^1.1.4",
