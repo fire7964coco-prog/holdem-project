@@ -223,8 +223,10 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
   fr: [
     { href: "/fr/blog",   icon: "📚", label: "Blog" },
     { href: "/fr/solver", icon: "🧠", label: "Solver GTO" },
-    // ★2026-09-17 `/fr/calculator` 신설. 라벨 = 그 페이지 HubPage title 축어(제목 「Calculatrice de probabilités poker — …」의 단축형).
-    { href: "/fr/calculator", icon: "🧮", label: "Calculatrice poker" },
+    // ★2026-09-17 `/fr/calculator` 신설 → ★2026-09-18 재조준 회차에서 「Calculateur poker」로 교체.
+    //   라벨 = 그 페이지 HubPage title 축어. 근거 = `docs/keyword-bank/fr-calculator.md` §3-A
+    //   (SERP 프랑스어 도구 페이지 title 6/6이 «Calculateur» · «Calculatrice» 0건 · 볼륨은 둘을 못 가른다).
+    { href: "/fr/calculator", icon: "🧮", label: "Calculateur poker" },
   ],
   /**
    * ★2026-09-05 — `/id/solver` 신설과 함께 추가(10번째). 라벨은 검증된 값에서:

@@ -15,8 +15,9 @@
 | **zh-hant** | ✅ 09-17 배포(WORKLOG 09-17 (8)) | `docs/keyword-bank/zh-hant-calculator.md` | Equity 탭(「手牌勝率」) + quickRef 6표 + FAQ 18(zh-hant 고유 = **TDA 2024 Rule 5** 「牌桌上可以用勝率計算器嗎？」) + 메타 「德州撲克勝率計算器 — 撲克機率、ICM 計算機、底池賠率免費算」(260 · H1 CTA 「撲克機率計算器」은 볼륨 null이라 H1에만) + 렌즈 3종. 🔴 **ICM만 «計算機»**(icm計算機 70 ↔ 計算器 null) |
 | **es** | ✅ 09-17 배포(WORKLOG 09-17 (9)) | `docs/keyword-bank/es-calculator.md` | Equity 탭(«Equity») + quickRef 6표 + FAQ 18(es 고유 = TDA 2024 Rule 5 «¿Se puede usar una calculadora de poker en la mesa?» · PokerNews·888 FAQ 축) + 메타 «Calculadora de poker — probabilidades, equity e ICM»(MX 70·AR 90·CO 70 · H1·CTA «Calculadora de probabilidades»(10)는 앵커로 유지) + 렌즈 3종 + 2차 교열. 🔴 **«calculadora icm» = IMC(BMI) 오염** · 볼륨은 DFS MX·AR·CO·ES |
 | **pt** | ✅ 09-17 배포(WORKLOG 09-17 (10)) | `docs/keyword-bank/pt-calculator.md` | 권역 = **pt-BR**(코퍼스 소수 콤마 1,637 : 0 → `numberLocale: "pt-BR"` 유지) · Equity 탭(«Equity») + quickRef 6표 + FAQ 18(pt 고유 = TDA 2024 Rule 5 «Posso usar uma calculadora de poker na mesa?») + 메타 «Calculadora de poker — odds, equity, ICM e pot odds»(calculadora poker 390 · odds poker 260 · de poker 170 · H1·CTA «Calculadora de probabilidades»(10~40)는 앵커) + 렌즈 3종 + 2차 교열. 🔴 **ICM = ICMS(세금)+IMC 이중 오염** → «acordo» 금지·«ICM deal» · `check:calc-parity`에 소수 콤마 정규화 |
-| **de** | 🔄 09-18 진행 중(렌즈 단계) | `docs/keyword-bank/de-calculator.md` | 권역 = DACH(3지역 자동완성 차이 사실상 0) · Equity 탭(«Equity»/«Hand gegen Hand») + quickRef 6표 + FAQ 18(de 고유 = TDA 2024 Rule 5 «Darf man am Pokertisch einen Rechner benutzen?») + 메타 «Poker-Odds-Rechner – Equity, Wahrscheinlichkeiten & ICM». 🟢 **ICM 오염 0**(es=IMC·pt=ICMS와 달리 독일어 BMI는 «BMI») · 🔴 오염은 **다른 5갈래**로 왔다(Quotenrechner=스포츠베팅 · chip chop=햄 · equity rechner=금융 · harrington m=재킷 브랜드 · poker kalkulator=폴란드어) · 🔴 **4/2 규칙 직역은 자동완성 전멸 → «Faustregel»** · 🔴 영문 머리어가 자국어의 **2.3배**(590:260) |
-| fr · id · ms · hi | ⏳ | — | 한 언어씩 · `npm run check:calc-parity -- <loc>`가 미채움을 «미검사»로 표시한다 |
+| **de** | ✅ 09-18 배포(WORKLOG 09-18 · `688b67d1`) | `docs/keyword-bank/de-calculator.md` | 권역 = DACH(3지역 자동완성 차이 사실상 0) · Equity 탭(«Equity»/«Hand gegen Hand») + quickRef 6표 + FAQ 18(de 고유 = TDA 2024 Rule 5 «Darf man am Pokertisch einen Rechner benutzen?») + 메타 «Poker-Odds-Rechner – Equity, Wahrscheinlichkeiten & ICM». 🟢 **ICM 오염 0**(es=IMC·pt=ICMS와 달리 독일어 BMI는 «BMI») · 🔴 오염은 **다른 5갈래**로 왔다(Quotenrechner=스포츠베팅 · chip chop=햄 · equity rechner=금융 · harrington m=재킷 브랜드 · poker kalkulator=폴란드어) · 🔴 **4/2 규칙 직역은 자동완성 전멸 → «Faustregel»** · 🔴 영문 머리어가 자국어의 **2.3배**(590:260) |
+| **fr** | 🔄 09-18 진행 중(렌즈 단계) | `docs/keyword-bank/fr-calculator.md` | 권역 = **프랑스 단일**(FR/BE/CH/CA 자동완성 74시드 **전부 동일** — de의 DACH보다 더 붙어 있다) · Equity 탭(«Équité»/«Main contre main») + quickRef 6표 + FAQ 18(fr 고유 = TDA 2024 Rule 5-D) + 메타 «Calculateur poker — équité, cotes du pot et ICM». 🔴 **도구 명사를 «Calculatrice» → «Calculateur»로 교체**(볼륨은 동의어군 390이라 못 가른다 · SERP title 6/6) · 🔴 **Equity = «Équité»**(110 : 50 · 옛 사전 주석이 반대였다) · 🔴 **«Push or Fold»는 영어 «or»**(«push ou fold» null ×3 · PokerStars.fr만 쓴다) · 🔴 **코퍼스 6편** → related 6 · quickRef 링크 전부 비움 · 게이트 F항 신설 |
+| id · ms · hi | ⏳ | — | 한 언어씩 · `npm run check:calc-parity -- <loc>`가 미채움을 «미검사»로 표시한다 |
 | ko | ⏳ 후순위 | GSC 실측 메타 보유 | 별도 클라이언트 · Equity 탭 이식은 공용화 뒤 |
 
 ## 1. 공통 골격 (EN에서 확정 · 로케일은 «값 동일 · 문안 현지화»)
@@ -148,10 +149,10 @@ zh 회차의 소모 구조 = **헤드(Fable)가 전부**였다: 실측 도구 �
 
 - 경험담·에세이 섹션 추가(사장님 지시) · 탭 안에 색인용 문안 · 수치 재계산 · SPR/BB 제목 훅 · 로케일 사전 키 삭제.
 
-### 3-I. 🔴 미재조준 4로케일(fr · id · ms · hi)이 **지금 들고 있는 구멍** (de 회차가 실측 · 09-18)
+### 3-I. 🔴 미재조준 3로케일(id · ms · hi)이 **지금 들고 있는 구멍** (de 회차가 실측 · 09-18 · fr 회차에서 fr 해소)
 
 de 회차의 렌즈 2종이 「de 번역 문제」로 보고한 것들이 실은 **09-17 EN 경화가 로케일에 안 실린 것**이었다.
-`app/*/calculator/dict.ts` 전수 grep으로 세어 보니 **es·ja·pt·zh·zh-hant는 개정본을 이미 실었고, de·fr·id·ms·hi 5개만 개정 전**이었다(de는 이 회차에서 해소 → **남은 건 fr·id·ms·hi 4개**).
+`app/*/calculator/dict.ts` 전수 grep으로 세어 보니 **es·ja·pt·zh·zh-hant는 개정본을 이미 실었고, de·fr·id·ms·hi 5개만 개정 전**이었다(de 09-18 해소 · **fr 09-18 해소** → **남은 건 id·ms·hi 3개**).
 🔴 **각 로케일 회차는 사전을 새로 쓰기 전에 아래를 EN 정본과 먼저 대조하라** — 안 하면 「완료」로 닫히고 유해 조언이 남는다(메모리 `completion-count-the-copies-first`).
 
 | 자리 | 개정 전(위험) | EN 정본 |
@@ -191,3 +192,23 @@ de 회차의 렌즈 2종이 「de 번역 문제」로 보고한 것들이 실은
 - 🪶 EN 66·44 «~15× the call behind» — 누구의 스택인지(양쪽 유효 스택) 명시 없음. pt는 «você e quem aumentou tiverem atrás pelo menos ~15×».
 - 로케일 회차 공통: 딜러 렌즈가 고친 EN 도구 문안 12항(Effective stack · 팟 라벨 · SPR low · 데드존 · diffPlusNote · 스타팅 12핸드 · unknown 폴백 · 슬라이더 19.6 · 프리셋 «Flush draw» · 오버카드 desc · 가이드 카드 · introRest)은 **각 로케일 사전에도 그대로 남아 있다** — 로케일 회차에서 같이 정정.
 
+
+### fr 회차(09-18)가 §5에 더한 것
+
+- 🟠🟠 **최우선 — `components/calculator/calculator-tool.tsx`의 동적 퍼센트가 `numberLocale`을 무시한다.**
+  `:399-401, 521, 529, 534, 589, 593, 600, 631, 1179-1187, 1338`이 전부 **`toFixed(1)` + 하드코딩 `%`**다.
+  `numberLocale`은 `nf()`(정수)에만 먹는다 → **fr 화면에서 도구가 «81.9%»를 찍는 바로 아래에 우리 quickRef 표가 «81,9 %»로 찍힌다.**
+  즉 사전 문자열에 박아 둔 조판 규율(소수 쉼표 · % 앞 공백)이 **도구 본체에서 전부 무효**다. de(«81,9%» 기대)·es·pt도 같이 맞는다.
+  🔴 fr 회차에서 안 고친 이유 = **공용 컴포넌트라 12로케일 렌더가 동시에 바뀐다**(EN은 «81.9%»가 정답이라 분기 필요) → 화면 재검증이 회차 범위를 넘는다.
+  처방 = `toFixed(1)` 자리를 `Intl.NumberFormat(dict.numberLocale, { minimumFractionDigits: 1, maximumFractionDigits: 1 })`로 바꾸고 `%` 앞 공백은 로케일 플래그로. **고칠 때 12로케일 390px 캡처를 같이 뜬다.**
+- 🟠 **EN `starting.unknownAction`에 하한이 없다** — 표 밖 **122개 핸드 전부**가 이 폴백으로 떨어지는데(`calculator-tool.tsx:762`가 tier 5 고정) 「CO/BTN에서 first-in이면 오픈」으로 읽힌다 → **72o·32o·J2o도 오픈 가능**이 된다. 09-17 개정이 K9s·QTs를 살리려다 반대쪽 끝을 열었다(fr 딜러 렌즈 09-18). EN에 「진짜 약한 손은 여전히 폴드」 단서를 넣고 전 로케일 전파.
+- 🟠 **EN FAQ 「open and re-shove wider as the aggressor」에 스택 구분이 없다** — 중간 스택이 리슈브를 넓히면 ICM상 손해다(fr 딜러 렌즈).
+- 🔴 **«완료 전에 사본을 세라» — 두 명제가 로케일마다 갈린 채다**(fr 교열 렌즈 전수 실측 09-18):
+  | 명제 | en | es | pt | de | fr | ja · zh · zh-hant |
+  |---|---|---|---|---|---|---|
+  | «×2는 outs가 늘수록 더 모자란다»(9 outs 1,6 · 15 outs 2,6) | **옛 문장(1–2 points)** | 최신 | 최신 | 최신 | 최신 | **미반영** |
+  | deal.summary의 «next payout»에 값 못박기($300 = 4위) | **없음** | 없음 | 있음 | 있음 | 있음 | 없음 |
+  🔴 첫 줄은 EN이 **사실 서술**로 틀리게 적어 둔 것이다 — EN을 안 고치면 다음 로케일이 **또 옛 문장을 번역한다**.
+- 🪶 EN FAQ Q11 끝 절(「which is why the chip leader's ICM value sits below their chip share」)이 **Q14의 명제 전부**와 겹친다 · Q16의 save-and-chop 설명이 `icmGuide.deal.summary`와 거의 축어 중복(둘 다 EN 상속 · fr SEO·교열 렌즈 09-18).
+- 🪶 EN `pushfold.cell`·`m.zones.red.action`의 «Push/Fold» ↔ «Push/fold» 대소문자가 EN 안에서 갈려 있다(로케일이 그대로 물려받는다).
+- 🪶 **quickRef 화살표 헤더 390px 3줄 꺾임이 이제 3번째 로케일**(de·fr·EN 전부 동일 · `calculator-tool.tsx:1578`의 `nowrap` 조건이 CJK만 본다). 고칠 때 EN 산출물이 같이 바뀌므로 위 🟠🟠와 **한 회차로 묶는 게 싸다**.

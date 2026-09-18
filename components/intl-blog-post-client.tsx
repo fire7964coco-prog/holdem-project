@@ -41,7 +41,12 @@ const CALC_CTA_LABELS: Partial<Record<SecondaryLocale, { title: string; subtitle
   // fr — ★2026-09-17 `/fr/calculator` 신설과 함께 추가. title = fr 코퍼스 앵커 축어
   //   (lib/posts-fr/texas-holdem-rules-for-beginners.ts:444 「calculatrice de probabilités poker」) ·
   //   subtitle = es/pt 형제 부제와 같은 세 용어를 fr 코퍼스 표기(cotes du pot · equity)로.
-  fr: { title: "Calculatrice de probabilités poker", subtitle: "Equity, outs et cotes du pot en un instant" },
+  //   🔴 ★2026-09-18 재조준 회차에서 «Calculateur»로 교체했다(옛 값 = «Calculatrice de probabilités poker»).
+  //   볼륨은 calculateur≡calculatrice를 못 가른다(동의어군 390) — 가른 근거 셋 = 자동완성이 calculatrice를
+  //   calculateur로 재조준(확장 8개 중 4개) · 전치사 «de»가 39배를 죽인다(390 ↔ 10) ·
+  //   SERP 프랑스어 도구 페이지 title 6/6이 «Calculateur»(«Calculatrice» 0건). 근거 = `docs/keyword-bank/fr-calculator.md` §3-A.
+  //   subtitle의 «équité»도 같은 회차 판정(«équité poker» 110 : «equity poker» 50 · SERP #1·#2·#3이 전부 «équité»).
+  fr: { title: "Calculateur poker", subtitle: "Équité, outs et cotes du pot en un instant" },
 };
 
 /**
