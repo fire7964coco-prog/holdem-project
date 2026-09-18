@@ -77,6 +77,11 @@ const walk = (a: any, b: any, path: string) => {
   if (a && typeof a === "object") for (const k of Object.keys(a)) walk(a[k], b?.[k], `${path}.${k}`);
 };
 walk(en, zh, "dict");
+// E-0. meta description 길이 — 🔴 §11-7(160자 초과 금지). ★2026-09-18 de 회차에서 신설.
+//   `scripts/check-meta-length.mjs`는 `lib/posts-*`만 순회해 **계산기 랜딩을 원리상 안 본다** —
+//   그래서 de가 171자로 빌드·hreflang·meta·meta-lang 게이트를 전부 통과했다. 그 사각지대를 여기서 닫는다.
+const descLen = zh.seo.description.length;
+if (descLen > 160) hit(`E desc ${descLen}자 > 160 (§11-7)`);
 // E. 인용부호 — 직선 " 은 전 로케일 금지 · 「」는 zh만 금지
 const all = JSON.stringify(zh) + JSON.stringify(faq);
 const straight = (all.match(/\\"/g) || []).length;
