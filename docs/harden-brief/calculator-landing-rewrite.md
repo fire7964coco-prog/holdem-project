@@ -17,7 +17,8 @@
 | **pt** | ✅ 09-17 배포(WORKLOG 09-17 (10)) | `docs/keyword-bank/pt-calculator.md` | 권역 = **pt-BR**(코퍼스 소수 콤마 1,637 : 0 → `numberLocale: "pt-BR"` 유지) · Equity 탭(«Equity») + quickRef 6표 + FAQ 18(pt 고유 = TDA 2024 Rule 5 «Posso usar uma calculadora de poker na mesa?») + 메타 «Calculadora de poker — odds, equity, ICM e pot odds»(calculadora poker 390 · odds poker 260 · de poker 170 · H1·CTA «Calculadora de probabilidades»(10~40)는 앵커) + 렌즈 3종 + 2차 교열. 🔴 **ICM = ICMS(세금)+IMC 이중 오염** → «acordo» 금지·«ICM deal» · `check:calc-parity`에 소수 콤마 정규화 |
 | **de** | ✅ 09-18 배포(WORKLOG 09-18 · `688b67d1`) | `docs/keyword-bank/de-calculator.md` | 권역 = DACH(3지역 자동완성 차이 사실상 0) · Equity 탭(«Equity»/«Hand gegen Hand») + quickRef 6표 + FAQ 18(de 고유 = TDA 2024 Rule 5 «Darf man am Pokertisch einen Rechner benutzen?») + 메타 «Poker-Odds-Rechner – Equity, Wahrscheinlichkeiten & ICM». 🟢 **ICM 오염 0**(es=IMC·pt=ICMS와 달리 독일어 BMI는 «BMI») · 🔴 오염은 **다른 5갈래**로 왔다(Quotenrechner=스포츠베팅 · chip chop=햄 · equity rechner=금융 · harrington m=재킷 브랜드 · poker kalkulator=폴란드어) · 🔴 **4/2 규칙 직역은 자동완성 전멸 → «Faustregel»** · 🔴 영문 머리어가 자국어의 **2.3배**(590:260) |
 | **fr** | ✅ 09-18 배포(WORKLOG 09-18 (2) · `140f585d` · MB-064) | `docs/keyword-bank/fr-calculator.md` | 권역 = **프랑스 단일**(FR/BE/CH/CA 자동완성 74시드 **전부 동일** — de의 DACH보다 더 붙어 있다) · Equity 탭(«Équité»/«Main contre main») + quickRef 6표 + FAQ 18(fr 고유 = TDA 2024 Rule 5-D) + 메타 «Calculateur poker — équité, cotes du pot et ICM». 🔴 **도구 명사를 «Calculatrice» → «Calculateur»로 교체**(볼륨은 동의어군 390이라 못 가른다 · SERP title 6/6) · 🔴 **Equity = «Équité»**(110 : 50 · 옛 사전 주석이 반대였다) · 🔴 **«Push or Fold»는 영어 «or»**(«push ou fold» null ×3 · PokerStars.fr만 쓴다) · 🔴 **코퍼스 6편** → related 6 · quickRef 링크 전부 비움 · 게이트 F항 신설 |
-| id · ms · hi | ⏳ | — | 한 언어씩 · `npm run check:calc-parity -- <loc>`가 미채움을 «미검사»로 표시한다 |
+| **id** | ✅ 09-19 배포(WORKLOG 09-19 · `35dfadaa` · MB-065) | `docs/keyword-bank/id-calculator.md` | 권역 = 인도네시아 단일 · Equity 탭(«Equity»/«Hand lawan hand») + quickRef 6표 + FAQ 18(id 고유 = TDA 2024 Rule 5 «Apakah boleh memakai kalkulator poker di meja?») + 메타 «Kalkulator Poker — Odds, Equity, ICM & Pot Odds». 🔴 **인니어 계산기 명사가 전멸**(«kalkulator + X» 자동완성 전부 0건 · 볼륨은 `kalkulator poker` 10만 생존) ↔ **영어형만 산다**(90/90) · 🔴 그런데 **영어 축은 조준 안 함**(SERP 10/10이 영어 도구 업계) · 🔴 머리어 «Kalkulator Odds Poker»(null) → **«Kalkulator Poker»로 교체** · 🔴 `/id/solver` 카니발이 fr보다 심했다(주석이 09-05에 멈춰 있었다) |
+| ms · hi | ⏳ | — | 한 언어씩 · `npm run check:calc-parity -- <loc>`가 미채움을 «미검사»로 표시한다. 🔴 **ms는 `CALC_CTA_LABELS.ms`가 id가 폐기한 «Kalkulator odds poker»를 들고 있다** — 그대로 옮기지 말고 `location=Malaysia`로 **재측정**(§3-J: 로케일 상수가 아니다) |
 | ko | ⏳ 후순위 | GSC 실측 메타 보유 | 별도 클라이언트 · Equity 탭 이식은 공용화 뒤 |
 
 ## 1. 공통 골격 (EN에서 확정 · 로케일은 «값 동일 · 문안 현지화»)
@@ -144,6 +145,47 @@
 - 🔴 **2차 교열이 «내 수정이 만든 새 결함» 8건을 잡았다** — 이 회차에서 가장 값이 컸다. 특히 ① 1차 수정이 «A5s fait la roue»(관용구 충돌)를 **새로 만들었다** ② 가중 서술 삽입이 **수학을 틀리게** 했다(두 값을 같은 p로 가중 불가) ③ 두 핸드의 액션을 **축어 동일**로 평탄화했다(티어가 다른데). **1차 지적을 반영한 뒤 반드시 한 겹 더.**
 - 🪶 **주석이 다음 세션의 근거다** — fr 초안 주석 4곳이 사실과 달랐다(「hero에서 병기」인데 실제는 가이드 카드 · FAQ §13 목록이 그 파일에 **없는** 수치를 나열 · featureList가 «탭 라벨»이 아니라 guide 카드 확장형 · 코퍼스 tapis 136 → 실측 133). **주석도 렌즈 대상에 넣어라.**
 
+### 3-K. id 회차가 남긴 것 (09-19 · 다음 로케일이 그대로 쓴다)
+
+- 🔴 **«자국어 도구 명사가 통째로 죽어 있는» 로케일이 있다.** de·fr는 «영문이 크냐 자국어가 크냐»의 문제였지만 id는
+  **«kalkulator + X»가 자동완성에서 전멸**이다(52시드 · `kalkulator poker`까지 0건 · 볼륨도 그것만 10, 나머지는 null).
+  → **자동완성 0건은 «그 말이 시장에 없다»는 뜻이지 «측정 실패»가 아니다.** 시드를 인니어/영어 두 벌로 돌려야 이게 보인다(hl=id·en × gl=ID).
+- 🔴 **«영어형이 더 크다»가 «영어형을 조준하라»는 뜻이 아니다.** id는 영어 축이 자국어의 9배(90 : 10)인데도 **안 조준했다** —
+  근거는 볼륨이 아니라 **SERP 구성**이다: 영어 쿼리 top10이 **10/10 영어 도구 업계**(pokerlistings·omnicalculator·natural8·splitsuit)라
+  단기 승산 0이고, 자국어 쿼리는 **8개 중 3개가 `translate.google.com`**(구글이 원문이 없어 기계번역으로 때운다) = 무주공산이다.
+  **de(영문 2.3배 → 합성어로 둘 다 먹음)와 정반대의 처방이 나온 이유가 이것이다 — 볼륨 비(比)가 아니라 «그 SERP에서 이길 수 있나»를 봐라.**
+  🪶 `translate.google.com`이 랭크에 있으면 그 자리는 비어 있다는 신호다(id 솔버 09-04가 같은 신호로 판정했다 · 두 번째 실증).
+- 🔴 **오염은 «개발자 검색»으로도 온다** — id `push fold` 단독이 **git «push folder to github»** 지배다. 약어·업종 오염(es=IMC · pt=ICMS ·
+  de=스포츠베팅/햄 · fr=BMW/병원)에 이어 **기술 커뮤니티가 큰 나라의 새 갈래**다. `cara menghitung outs` → 10/10 «outstanding»(회계) ·
+  `kalkulator outs` → «outsourcing»도 같은 결. 🔴 `rumus poker` 390은 **«rumus poker jitu»(도박 필승법)** — 시드로도 쓰지 마라.
+- 🔴 **«주석이 09-XX에 멈춰 있는 것»이 도구→도구 카니발의 실제 원인이었다.** fr는 솔버 FAQ가 머리어를 «흡수»한 경우였지만,
+  id는 `/id/solver`의 주석 두 자리가 **「id에는 도구 라우트가 없다」(09-05)** 로 굳어 있어서 09-17에 `/id/calculator`가 생긴 뒤에도
+  `PICK_TOOL`이 outs·pot odds·equity 의도를 **블로그로** 보내고 있었다. → **다음 로케일은 `app/<loc>/solver/`를 grep할 때
+  «흡수한 FAQ»만 보지 말고 «라우트가 없다»류 주석도 같이 찾아라**(한 파일 안에 두 자리였고, 하나만 고쳤다가 2차 교열이 잡았다).
+- 🔴 **2차 교열이 «1차 수정이 만든 새 결함»을 16건 중 9건 잡았다 — fr(8건)에 이은 두 번째 실증.** 이 단계를 빼면 안 된다.
+  특히 **1차 렌즈의 지적을 «그대로 반영하면» 반대쪽 끝이 열린다**: 딜러 렌즈가 「폴백이 72o를 CO에서 오픈하라고 읽힌다」고 해서
+  2분기(suited/연결 → 오픈 / 나머지 → 폴드)로 고쳤더니 **표 밖인 A9o·K9o·Q9o가 «어느 포지션에서도 fold»**가 됐다(3분기로 재수정).
+  **고치기 전에 `HAND_TABLE`(`calculator-tool.tsx:137`)에 무엇이 있는지부터 세라** — 폴백은 표 밖 **122개 전부**를 받는다.
+- 🔴 **«서열»은 고친 자리가 아니라 형제 항목에서 깨진다.** 109s·98s·55·65s·A10s를 고쳤더니 **87s만 «raise first in»이 없어
+  더 약한 76s보다 좁아졌다**(티어 4 내부 역전). 스타팅 핸드를 손대면 **47개를 티어 순으로 훑어 조건이 단조인지** 확인하라.
+- 🔴 **역어는 코퍼스에서 «그 뜻으로 쓰이는지»까지 세라** — id에서 raise를 «kenaikan»으로 옮겼는데, 코퍼스 `kenaikan` 6건이
+  **전부 «증가»**(EV 상승·EQR 상승)이고 액션 raise 용례가 **0**이었다(정본 = `call raise` 12 · `call sebuah raise` 7 · `meng-call` 15).
+  «있다/없다»가 아니라 **«그 뜻으로 있나»**다(메모리 `absence-may-be-the-standard`의 짝 — pemecah=solver 0 선례와 같은 결).
+  같은 회차에 **`pemanggil`(caller 92 : 0) · `berhand`(영어+id 혼종 접두사 0건) · `antar-` 띄어쓰기(PUEBI 위반)**도 나왔다.
+- 🔴 **관용구는 «형제 로케일이 어떻게 풀었는지»를 먼저 봐라** — EN «once the math clicks»를 id만 축어(«matematikanya klik»)로 옮겼는데
+  인니어 `klik`은 **마우스 클릭뿐**이다. fr·de·es는 셋 다 관용구를 풀어 썼다. **한 로케일만 축어면 그게 신호다.**
+- 🔴 **내 주석 5곳이 사실과 달랐다(fr §3-J 🪶의 재발)** — 「EN 09-17 정정」(EN은 **미정정**) · 「13항」(실계수 **9**) ·
+  §5-A에 **없는** 코퍼스 수치 3개를 §5-A 출처로 인용(§5-A는 **문장 수**, 내가 쓴 건 raw 출현수 — **척도가 다르다**) ·
+  breadcrumb를 «같이 바꾼 자리»로 적음(바뀐 적 없다) · 「셋의 목적지를 바꿨다」(2 재조준 + 1 신설).
+  **주석을 렌즈 대상에 넣어라 — 교열 렌즈가 이 5건을 전부 잡았다.**
+- 🪶 **질문 어형은 «PAA가 준 것»과 «쓸 수 있는 것»이 다르다** — id PAA는 「X itu apa?」·「Apa itu X?」를 주는데 **정의형 금지 규율이
+  그 어형을 통째로 배제한다.** 실제로 쓴 건 「Bagaimana cara …?」·「Berapa …?」·「Seberapa …?」·「Apakah …?」다
+  (가부 의문은 `Apakah`로 표시 — 코퍼스 173 : `Bolehkah` 0). **뱅크에 «PAA 어형»과 «채택 어형»을 따로 적어라.**
+- 🪶 **id 조판은 fr의 반대다** — 소수 쉼표·천단위 점은 같지만 **`%` 앞 공백이 없다**(`35,4%` · `id-posting-reference.md` §5-A C).
+  라틴 로케일이라고 fr 규칙을 복사하지 마라.
+- 🪶 **코퍼스가 두꺼우면(55편) 링크는 전건 실존한다** — EN 9슬러그가 id에 전부 있어 fr(6편)식 «비우기»가 불필요했다.
+  그래도 `check:calc-parity` F항을 렌즈 **전에** 돌렸다(47 → 0).
+
 ### 3-D. 🔴 모델 분담 — 절약 국면 (2026-09-17 사장님: 「Fable만 썼더니 한도가 찬다 · Fable/Opus 구분해라」)
 
 zh 회차의 소모 구조 = **헤드(Fable)가 전부**였다: 실측 도구 호출 · 뱅크·사전·FAQ·page 집필 · 렌즈 반영 · 마감 문서까지 한 창. 서브(sonnet 2 · Opus 3)는 그에 비하면 작다.
@@ -165,10 +207,10 @@ zh 회차의 소모 구조 = **헤드(Fable)가 전부**였다: 실측 도구 �
 
 - 경험담·에세이 섹션 추가(사장님 지시) · 탭 안에 색인용 문안 · 수치 재계산 · SPR/BB 제목 훅 · 로케일 사전 키 삭제.
 
-### 3-I. 🔴 미재조준 3로케일(id · ms · hi)이 **지금 들고 있는 구멍** (de 회차가 실측 · 09-18 · fr 회차에서 fr 해소)
+### 3-I. 🔴 미재조준 로케일(~~id~~ · **ms · hi**)이 **지금 들고 있는 구멍** (de 회차가 실측 · 09-18 · fr 09-18 · **id 09-19 해소**)
 
 de 회차의 렌즈 2종이 「de 번역 문제」로 보고한 것들이 실은 **09-17 EN 경화가 로케일에 안 실린 것**이었다.
-`app/*/calculator/dict.ts` 전수 grep으로 세어 보니 **es·ja·pt·zh·zh-hant는 개정본을 이미 실었고, de·fr·id·ms·hi 5개만 개정 전**이었다(de 09-18 해소 · **fr 09-18 해소** → **남은 건 id·ms·hi 3개**).
+`app/*/calculator/dict.ts` 전수 grep으로 세어 보니 **es·ja·pt·zh·zh-hant는 개정본을 이미 실었고, de·fr·id·ms·hi 5개만 개정 전**이었다(de 09-18 · **fr 09-18** · **id 09-19** 해소 → **남은 건 ms·hi 2개**).
 🔴 **각 로케일 회차는 사전을 새로 쓰기 전에 아래를 EN 정본과 먼저 대조하라** — 안 하면 「완료」로 닫히고 유해 조언이 남는다(메모리 `completion-count-the-copies-first`).
 
 | 자리 | 개정 전(위험) | EN 정본 |
@@ -176,7 +218,7 @@ de 회차의 렌즈 2종이 「de 번역 문제」로 보고한 것들이 실은
 | `starting.unknownDesc`/`unknownAction` | 「매우 약한 핸드 / 대개 폴드」 — 🔴 **사실 오류**(K9s·QTs·J9s 등이 전부 이 폴백에 떨어진다) | 「Not in the core opening chart」 / 「Cutoff/button only, and only when folded to you」 |
 | `spr.zones.mid.actions[1][2]` | 「감으로 플레이」·「리스크 대 이득을 재라」 — 🔴 **D유형**(계산기가 줄 수 있는 최악의 조언) | 「One or two streets, then pot control」 / 「Semi-bluff with fold equity; give up without it」 |
 | `spr.zones.low.desc` | EN 끝문장 **통째 누락** → 젖은 보드에서도 TPTK 스택오프 조언이 된다 | 「On paired, three-flush or three-straight boards … one pair is still one pair.」 |
-| `starting.hands` **13항** (1010·AJs·A10s·KJs·Q10s·J10s·77·66·55·44·33·22·76s) | 「얼리에서 콜」 — 🔴 EN이 딜러 렌즈로 **전수 제거한 오픈 림프 권유**가 살아 있다. 셋마이닝 정량 기준(~15×)·first-in 레이즈도 소실 | 「— never limp」 / 「fold from EP」 / 「~15× the call behind」 / 「raise first in」 |
+| `starting.hands` **13항** (1010·AJs·A10s·KJs·Q10s·J10s·77·66·55·44·33·22·76s) | 「얼리에서 콜」 = 오픈 림프 권유. 셋마이닝 정량 기준(~15×)·first-in 레이즈도 소실<br>🔴 **이 칸의 두 서술은 id 회차(09-19)가 원문 대조로 정정했다**: ① **EN은 «전수 제거»하지 않았다** — `components/calculator/dict.ts`의 `88 «consider calling EP»`·`77 «call EP»`·`KQo «call/fold in EP»`가 **지금도 그대로**이고(EP엔 앞선 레이즈가 없으니 논리상 림프다), 실제로 전수 제거한 것은 **fr 09-18**뿐이다 ② **«13항»은 핸드 목록 길이이지 결함 자리 수가 아니다** — id 09-17판 실계수는 「call di posisi awal」 8 + 「call/fold di posisi awal」 1 = **9자리**. **로케일마다 실계수를 다시 세라** | 「— never limp」 / 「fold from EP」 / 「~15× the call behind」 / 「raise first in」<br>🔴 단 88·77·KQo는 **EN 자체가 아직 정본이 아니다**(§5 ⓐ) |
 | `pot.potSize`·`sliderFlush`·`outs.presets[1][5]`·`icm.diffPlusNote`·`spr.effectiveStack`·`m.zones.dead` | 딜러 렌즈 12항 전반 | §5 마지막 줄 |
 | `page.tsx` `twitter.images`·`openGraph.images` | 없음 → 카드가 빈 채로 나간다 | 두 자리 다 `/opengraph.jpg` |
 | `page.tsx` TITLE/DESCRIPTION | 하드코딩 → 클라이언트 `<SEO>`가 dict로 덮어써서 갈리면 조용히 dict가 이긴다 | `${DICT.seo.title} | HoldemMaster` 파생 |
@@ -228,3 +270,32 @@ de 회차의 렌즈 2종이 「de 번역 문제」로 보고한 것들이 실은
 - 🪶 EN FAQ Q11 끝 절(「which is why the chip leader's ICM value sits below their chip share」)이 **Q14의 명제 전부**와 겹친다 · Q16의 save-and-chop 설명이 `icmGuide.deal.summary`와 거의 축어 중복(둘 다 EN 상속 · fr SEO·교열 렌즈 09-18).
 - 🪶 EN `pushfold.cell`·`m.zones.red.action`의 «Push/Fold» ↔ «Push/fold» 대소문자가 EN 안에서 갈려 있다(로케일이 그대로 물려받는다).
 - 🪶 **quickRef 화살표 헤더 390px 3줄 꺾임이 이제 3번째 로케일**(de·fr·EN 전부 동일 · `calculator-tool.tsx:1578`의 `nowrap` 조건이 CJK만 본다). 고칠 때 EN 산출물이 같이 바뀌므로 위 🟠🟠와 **한 회차로 묶는 게 싸다**.
+
+
+### id 회차(09-19)가 §5에 더한 것
+
+- 🔴 **최우선 — EN `starting.hands`에 오픈 림프 권유가 «아직» 셋 남아 있다**: `88 "Raise LP, consider calling EP"` ·
+  `77 "Raise LP, call EP"` · `KQo "Raise in LP, call/fold in EP"`(`components/calculator/dict.ts:539·547·542`).
+  **EP에는 앞선 레이즈가 있을 수 없다**(UTG/MP에서 폴드가 돌아온 상태) → 이 문장들은 **논리적으로 림프밖에 될 수 없다**.
+  09-17 「림프 전수 제거」가 놓친 자리이고, **브리프 §3-I의 「EN이 전수 제거했다」는 서술도 여기서 틀렸다**(§3-I 정정 완료).
+  ja·zh·zh-hant·es·pt·de가 이 셋을 EN에서 그대로 물려받았을 가능성이 높다 — **전 로케일 grep 후 동시 정정** 대상.
+- 🟠 **EN `starting.unknownAction`은 «하한»뿐 아니라 «상한»도 없다**(fr §5 ⓒ의 반대쪽 끝). 표 밖 **122핸드 전부**가
+  이 한 줄을 받는데, EN 「Cutoff/button only, and only when folded to you」는 72o·J2o까지 오픈으로 읽히고,
+  반대로 «전부 폴드»로 고치면 **A9o·K9o·Q9o(표 밖)**가 죽는다. id가 쓴 **3분기**가 전파안이다:
+  「suited/연결(K9s·Q9s·10-8s) → CO/BTN 오픈 / ace offsuit·브로드웨이(A9o·K9o) → BTN만 / 나머지(J2o·72o·93o) → 폴드」.
+  🔴 같이 볼 것: 폴백 핸드는 코드가 **tier 5로 고정**해(`calculator-tool.tsx:762`) 화면에 「🚫 Tier 5 — Lemah」가 찍힌다 —
+  **suited/connected면 tier 4로 내리는 공용 코드 2줄**이 12로케일을 한 번에 고친다(사전 수정보다 싸다).
+- 🟠 **EN `outs.presets[5]` 오버카드 정의가 아직 «not on board»다** — 이미 §5에 있던 항목인데,
+  🔴 **id 사전 주석이 이를 「EN 09-17 정정」이라고 잘못 적고 있던 것이 09-19에 발견됐다**(교열 렌즈).
+  현재 정정된 로케일 = **pt · de · fr · id 4개** / 옛 문안 = **EN · es · ja · zh · zh-hant 5개**. 전파 대기.
+- 🪶 **EN `87s "Call LP"`만 «raise first in»이 없다** — 같은 티어의 76s·98s에는 있어 **더 강한 핸드가 더 좁다**(티어 내 역전).
+  id는 98s와 동형으로 맞췄다. EN·타 로케일 회灌 후보.
+- 🪶 **EN `55 "Call a single raise in LP"`에만 셋마이닝 스택 조건이 없다** — 66·44는 「~15× the call behind」를 요구한다.
+  id는 66의 조건절을 승계시켰다. EN 회灌 후보.
+- 🪶 **EN FAQ 「4 and 2 rule」의 «times-4» 서술은 정확하다**(「stays within about a point up to 9 outs」) — 🔴 **번역이 조이기 쉽다**:
+  id 초안이 「meleset **kurang dari** satu poin」(1포인트 «미만»)으로 옮겼는데 9 outs 오차가 **정확히 1,0**이라 자기 예시에서 거짓이 됐다.
+  **«about/이내»를 «미만»으로 옮기지 마라**(다음 로케일 공통 함정).
+- 🪶 `<SEO>`의 **og:title 덮어쓰기**(§5 기존 항목)가 **id에서도 재확인**됐다 — 서버 `openGraph.title`은 «Kalkulator Poker — HoldemMaster»인데
+  라이브 DOM은 fullTitle(제목+브랜드)이다. 이제 en·ja·zh·fr·id 5로케일에서 실측됐다 = **로케일 공통이 확정**이다.
+- 🪶 **ms 전파 후보**: `components/intl-blog-post-client.tsx`의 `CALC_CTA_LABELS.ms`가 id가 09-19에 폐기한 바로 그 구
+  «Kalkulator odds poker»를 들고 있다. 🔴 **id 근거를 그대로 옮기지 마라** — `location=Malaysia`로 **재측정**이 ms 회차 첫 과제다.
