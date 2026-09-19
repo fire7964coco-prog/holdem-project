@@ -5,6 +5,8 @@
 > · hi는 **머리어를 영어로 «유지»한 유일한 로케일**(사장님 09-16 지시를 실측이 «확인» — 근거 `docs/keyword-bank/hi-calculator.md` §5)
 > · Equity 탭 + 빠른 참조 6표 + FAQ 18 + §3-I 미재조준 **전부 해소** + 솔버 카니발 해소 · 게이트 40→0 · 셀프테스트 20/20
 > · 배포·라이브 확인·IndexNow 완료 · 미커밋 0 · 경위 = WORKLOG 09-19 (4) · 교훈 = 브리프 §3-M).
+> 🆕 09-19 (5) `7fae5a72` — 번역본 도구 링크 44자리 재조준(한국어 `/hand-chart`·`/calculator` → `/en/*` · 🔴 라이브 404 `/es|ja|zh/quiz` 3자리 포함)
+> + `check:intl-links` 3차(도구 링크 라우트 실존) 신설 · 경위 = WORKLOG 09-19 (5).
 
 ## ▶ 다음 할 일 (사장님이 고른다)
 
@@ -21,8 +23,7 @@
 - **KO 판정 2건(낮음 · Q5-c 렌즈가 남김 · `docs/harden-queue-진행.md` §5 Q5c-7)**: ① `lib/posts.ts` probability 표 「AA vs AK(수티드) 87%」 = 승률(에퀴티 87.9) — «승률 vs 에퀴티» 표기 규약 정본화 여부 ② KO `holdem-tiebreak-rules` 하이카드 「0장 + 키커 5장」 모델링(EN·8로케일은 1+4) + L985↔L991 자기모순. KO 정정 회차 몫.
 - **zh·zh-hant 판정 요청 1건 대기**(Q4b-4 · re-entry 행 제목 「重买/重買」 → 「再入场/重新進場」 후보 · 거울쌍으로 같이) — 두 로케일 진행 파일 §5 말미. 레인 회차 없음 유지, 사장님이 열 때.
 - **de 형제 글 3건(낮음 · 포스트 수정이라 posting.mdc 절차 · MB-063 ⓒⓓ)**: ① `holdem-equity` FAQ 「Brauche ich einen Equity-Rechner?」와 `holdem-icm` FAQ 「In der Praxis nutzt du **einen** ICM-Rechner」가 계산기를 말하면서 **링크를 안 준다**(부정관사가 경쟁사로 가는 문) ② `holdem-bubble`이 계산기를 3번 가리키는데 계산기는 버블 글을 0번 가리킨다(related 8은 EN parity라 본문 링크로) ③ `holdem-short-stack` M 존 표가 경계를 겹쳐 적는다(「10–20 / 6–10」 ↔ 계산기 「10–19 / 6–9」 — 계산기 쪽이 정본). 🟢 `/de/solver` 누수는 0건.
-- 🔴 **`/hand-chart`(한국어 UI 도구) 링크 = 21로케일 29자리**(hi 회차 09-19 실측 · 포스트 수정이라 posting.mdc 절차 → **별도 회차**): fr 미결 ②가 **fr 고유가 아니었다.** ja·it·id·de 각 2 · ar·bn·fa·fil·fr·he·hi·ms·pl·ro·ru·sw·th·tr·uk·vi·zh-hant 각 1(대부분 `texas-holdem-rules-for-beginners`의 같은 문단 · id·ja·de는 `holdem-starting-hands-chart`에도). 계산기에 «Starting Hand» 탭이 생긴 뒤라 재조준 대상 — 랜딩이 있는 11로케일은 `/{loc}/calculator`로. 근거 = 브리프 §5 말미.
-- **fr 포스트 1건(낮음 · posting.mdc 절차 · MB-064 ⓓ)**: `lib/posts-fr/texas-holdem-rules-for-beginners.ts:444` — **fr 유일의 인바운드**인데 앵커가 09-18에 교체한 «calculatrice de probabilités poker»다(현 페이지 이름 = «Calculateur poker»). 같은 줄의 `/hand-chart`는 위 항목으로 옮겼다.
+- **fr 포스트 1건(낮음 · posting.mdc 절차 · MB-064 ⓓ)**: `lib/posts-fr/texas-holdem-rules-for-beginners.ts:444` — **fr 유일의 인바운드**인데 앵커가 09-18에 교체한 «calculatrice de probabilités poker»다(현 페이지 이름 = «Calculateur poker»). 같은 줄의 `/hand-chart`는 09-19 (5)에서 `/en/hand-chart`로 해소.
 - **EN 계산기 부채 6건(브리프 §5 · MB-065 ⓐⓑⓒ + MB-067)** — 한 회차로 묶어 EN을 고치고 전 로케일 전파: 🔴 EN `starting.hands`의 **오픈 림프 권유 셋**(`88`·`77`·`KQo`) — 🔴 **근거를 정정했다(ms 09-19)**: 「EP엔 앞선 레이즈가 없다」는 **UTG에만 참**이고 MP는 UTG 레이즈를 마주한다 → 처방은 «call 제거»가 아니라 **«무엇에 대한 call인지 명시 + 오픈 림프 금지»**이며 **선례 7로케일이 이미 그 형**이다(de만 옛 문안) · 🟠 EN `unknownAction` 상·하한 부재(표 밖 **122핸드** 전부가 이 한 줄) — 전파안 = **ms가 수치 경계로 다시 쓴 3분기**(전수 대입 검산 완료 · 미분류 0). 🔴 **id·ms 초안의 «두 장의 브로드웨이» 절은 공집합이었다** — 오프수트 브로드웨이 10개가 전부 `HAND_TABLE` 안이다(**id 사전 예시 `K9o`도 틀렸다 · id 정정 대상**). **tier 5 고정 코드 2줄**이 12로케일을 한 번에 고친다 · 🟠 EN `unknownDesc`에 «Tier 5 = 표 밖이지 최약 아님» 단서 부재(화면에 「🚫 Tier 5 — Weak」와 「CO/BTN 오픈」이 나란히 뜬다 · id·ms만 막았다) · 🟠 EN 오버카드 정의 «not on board»(정정 = pt·de·fr·id·**ms 5개** / 옛 문안 = EN·es·ja·zh·zh-hant 5개) · 🪶 EN FAQ 「times-2 half runs 1–2 points low」 ja·zh·zh-hant 미반영 — 🔴 **번역이 «방향»을 뒤집기 쉬운 자리다**(ms 초안이 실제로 뒤집었고 렌즈 2종이 잡았다 · 규칙 18% < 실제 19.6% = 규칙이 «낮다») · 🪶 EN `quickRef[1].note` «no longer a favorite» — «최우선 선택»으로 옮기면 거짓 명제가 된다(49.2%는 equity) · 전 로케일 grep 후보.
 - 장기 미결 = `docs/harden-queue-진행.md` §2 · `docs/pending-work.md` · `docs/en-first-queue.md` §3(EN counterfeiting 조건 누락 등).
 

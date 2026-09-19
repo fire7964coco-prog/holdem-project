@@ -433,6 +433,9 @@ de 회차의 렌즈 2종이 「de 번역 문제」로 보고한 것들이 실은
   대부분 `texas-holdem-rules-for-beginners`의 같은 문단이고, id·ja·de는 `holdem-starting-hands-chart`에도 있다.
   🔴 **계산기에 «Starting Hand» 탭이 생긴 뒤라 재조준 대상**이다(로케일 랜딩이 있는 11곳은 `/{loc}/calculator`로,
   없는 곳은 그대로 두거나 `/calculator`로). **포스트 수정이라 posting.mdc 절차 → 별도 회차**(queue 후보).
+  ✅ **09-19 (5) 해소 `7fae5a72`** — 단 목적지는 이 안과 달리 **`/en/hand-chart`**다: 그 문장이 전 로케일에서 **이미 계산기를 링크**해
+  `/{loc}/calculator`로 돌리면 한 문장에 같은 목적지가 두 번 된다(+ Starting Hand 탭은 차트가 아니다). 덤으로 한국어 `/calculator` 14자리 ·
+  라이브 404 `/es|ja|zh/quiz` 3자리도 `/en/*`로. 재발 방지 = `check:intl-links` 3차(도구 링크 라우트 실존).
 - 🟠 **EN `starting.unknownAction`의 «두 장의 브로드웨이» 팔을 «ace-offsuit만»으로 대체하면 안 된다** — ms 회차 §5의 처방을
   그대로 실으면 K9o·Q9o·J9o·T9o가 «나머지 = fold»로 떨어져 **BTN 표준 오픈이 전 포지션 폴드**가 된다(hi 딜러 렌즈).
   hi가 쓴 형 = **«ace offsuit, 또는 두 장 다 9 이상»**(덮는 표 밖 집합 = K9o·Q9o·J9o·10-9o 넷 · 98o는 8이라 제외).

@@ -1,3 +1,20 @@
+## 2026-09-19 (5) — 번역본 도구 링크 44자리 재조준 + `check:intl-links` 3차 신설 (`7fae5a72` · 헤드 Opus)
+
+핸드오프 미결 「`/hand-chart` = 21로케일 29자리」 처리. 실측하니 **셋이 한 부류**였다.
+- **`/hand-chart`(한국어 UI) 25자리 · 21로케일 → `/en/hand-chart`**(핸드오프의 29 = 이 25 + 이미 `/en/hand-chart`였던 es·zh 4).
+  🔴 **브리프 안(`/{loc}/calculator`)은 기각** — `texas-holdem-rules-for-beginners`의 그 문장이 **전 로케일에서 이미 계산기를 링크한다**
+  (재조준하면 한 문장에 같은 목적지 두 번) · Starting Hand 탭은 «두 장 → 등급» 조회라 «스타팅 핸드 차트» 앵커와 안 맞는다.
+  `/en/hand-chart` = EN 마스터 parity + zh 레인 09-08 선례. noindex(follow)지만 EN 마스터도 같은 곳을 가리킨다.
+  7로케일의 자국어 `holdem-starting-hands-chart`로 보내는 안도 봤으나 그 글이 **같은 포스트에 이미 1회 링크**돼 있어 버렸다.
+- **`/calculator`(한국어 UI) 14자리 → `/en/calculator`** — 랜딩 없는 14로케일(ar·bn·fa·fil·he·it·pl·ro·ru·sw·th·tr·uk·vi)의 같은 문장.
+- 🔴 **라이브 404 3자리**: `/es/quiz`·`/ja/quiz`·`/zh/quiz`(`holdem-starting-hands-chart`) — 라우트가 없다(Playwright 404 확인).
+  de·id의 `/quiz`(한국어)와 함께 → `/en/quiz`. **이 셋은 핸드오프에 없던 결함**이다.
+- `updated` 26파일 → 09-19(settled §1-C) · `masterUpdated` 불변.
+- 🔴 **샌 자리 = `check:intl-links`가 블로그 링크만 봤다**(주석 「/calculator 등 공용 유틸 페이지는 통과」). **3차 검사 신설**:
+  로케일 접두 경로는 `app/` 라우트 실존 · 접두 없는 경로는 위반(`public/` 파일 통과) · 마크다운/`href`/readnext 세 형태.
+  **역검증** = 수정 전 트리(stash)에서 **43건**(it 한 글 2자리를 1건으로) 전건 검출 → 수정 후 0. 빌드 전 자동 실행.
+- 빌드 EXIT 0 · 산출 HTML + 라이브(Playwright 6편)에서 한국어 `/hand-chart`·`/quiz`·로케일 퀴즈 href 0 확인 · IndexNow 26 URL 200.
+
 ## 2026-09-19 (4) — hi 계산기 랜딩 재조준 (`4a6842f0` · **계산기 트랙 11/11 종료** · 헤드 Opus · 렌즈 4종 Opus)
 
 브리프 `docs/harden-brief/calculator-landing-rewrite.md` §3-A를 hi로. 뱅크 = `docs/keyword-bank/hi-calculator.md`(신설).
