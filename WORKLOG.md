@@ -1,3 +1,19 @@
+## 2026-09-19 (2) — 계산기 도구 본체의 «수치 조판»을 로케일화 + 화살표 헤더 3줄 꺾임 (12로케일 공용 · `27c5503d` · 헤드 Opus · 로케일 회차 아님)
+
+브리프 §5의 🟠🟠(fr 09-18 제기)와 «화살표 헤더 3건째»(de·fr·EN)를 **한 회차로 묶었다** — 둘 다 `components/calculator/calculator-tool.tsx` 한 파일이고, 어느 쪽을 고쳐도 12로케일 렌더가 같이 바뀌어 화면 재검증을 두 번 할 이유가 없다.
+
+- 🔴 **증상**: 동적 퍼센트 17자리가 전부 `toFixed(1)` + 하드코딩 «%»였다. `numberLocale`은 `nf()`(정수)에만 먹고 있었다 → **fr 화면에서 도구가 «81.9%»를 찍는 바로 아래에서 우리 quickRef 표가 «81,9 %»로 찍혔다.** de·pt·id도 같이 틀렸다(소수 쉼표 미적용).
+- **처방**: ctx에 공용 헬퍼 둘 — `nd(n, fixed?)`(소수 · 구분자는 `numberLocale`) · `pf(n, fixed?)`(= `nd` + `percentGap` + «%»). Equity·Outs·Pot Odds·SPR·M·ICM·Push/Fold 전 탭 교체.
+- 🔴 **설계가 실측으로 갈렸다 — «% 앞 공백»을 `numberLocale`에서 파생하면 안 된다.** ICU `style:'percent'`는 de-DE·es-ES·fr-FR에 NBSP를 넣지만, **사전 코퍼스 실측은 정반대**다: 숫자 뒤 «%»가 de **186 : 7**(그 7은 「Win %」·「Chip %」류 **열 머리글**이라 숫자 조판이 아니다) · pt 188 · id 190 · en/ja/zh/zh-hant/es 전부 붙여 쓴다. **띄우는 로케일은 fr 하나**(195 : 0). → `CalcDict.percentGap` **옵션 키**로 분리하고 fr에만 넣었다(옵션이라 ms·hi 포함 타입 파손 0).
+- 🔴 **`percentGap`은 고정공백(U+00A0)이다 — 반각으로 뒀다가 캡처가 잡았다.** 390px 팟오즈에서 큰 숫자가 «23,1» / «%» **두 줄로 꺾였다**(flex 형제가 폭을 눌러 공백이 줄바꿈 지점이 된다). **텍스트 추출만 봤으면 «23,1 %»로 읽혀 통과시켰을 자리다** — 화면을 찍어야 보이는 결함의 표본.
+- **같은 축이라 같이 고친 것**: 사전이 «%»를 들고 있는 자리(`needPot`·`needImplied`·`verdict.*.body`)는 숫자만 주는 `nd()`로 · SPR 값·M 값·ICM 상금 축약(`k`·`M`)의 소수점(fr «4,8»). 🔴 **CSS 길이(`width: ${x}%`) 3자리는 손대지 않았다** — 로케일화하면 레이아웃이 깨진다(주석으로 박았다).
+- 🔴 **화살표 헤더 — 브리프의 처방(nowrap)을 실측으로 바꿨다.** «Flop → river»가 390px에서 «Flop / → / river» 3줄로 꺾이는 건 EN·de·fr·es·pt·id **6개 동형**(헤더 81px). 그런데 **nowrap으로 한 줄에 펴면 표가 426 → 555px로 넓어져 390px에서 보이는 열이 하나 줄어든다**(en 실측 · 전후 캡처로 확인). 대신 **화살표를 뒤 단어에 고정공백으로 붙여**(`glueArrow`) 2줄까지만 꺾이게 했다 → 453px라 **열 손실 0 · 고아 화살표 0**. CJK 헤더(「翻牌→河牌」)는 화살표 둘레에 공백이 없어 무영향이고 그쪽 nowrap 분기는 그대로 뒀다(zh-hant·ja 1줄 비회귀 확인).
+- **게이트 신설** `check:calc-parity` **G항**: 사전의 «숫자 뒤 %» 실측(gapped : plain)과 `percentGap`이 어긋나면 잡는다 + **반각 공백 자체를 잡는다**(위 실측을 규칙으로). 표 미채움 로케일은 «미검사»로 둔다. 셀프테스트 **15/15 → 20/20**(통제군을 «붙여 쓰는 de»와 «띄어 쓰는 fr» 둘 다 넣었다).
+- 🪶 **`indexnow --urls`의 Git Bash 경로 변환을 스크립트가 되돌리게 했다** — 09-18 id 회차에 이어 **이틀 연속** 같은 함정에 걸렸고(둘 다 HTTP 200이라 조용히 지나간다) `MSYS_NO_PATHCONV=1`을 사람이 기억하는 방식은 실패가 증명됐다. 이제 `C:/Program Files/Git/...`를 감지해 되돌리고 그 사실을 출력한다.
+- **검증**: `npm run build` ✅(773 페이지 · 70+577 포스트) · `check:calc-parity` **8로케일 🔴 0건**(회귀 0) · 셀프테스트 20/20 · **9로케일 390px 렌더 실측**(fr만 gap · 전부 `overflow 0`) · 라이브↔로컬 전후 캡처 대조(`tmp/screen/calc-arrow/`) · **배포 후 라이브 DOM 재확인**(fr «23,1 %» 1줄 · de «23,1%» · en 불변 · 헤더 2줄 · U+00A0) · IndexNow 200.
+- 🪶 **남은 것**: ms·hi의 `check:calc-parity` 40건은 이 회차 밖 — 브리프 §3-I가 적어 둔 «미재조준 부채»(quickRef·equity 미채움 + 옛 deal 예시)다. ms 회차가 해소한다.
+- 🪶 **fr 사전 195곳의 반각 공백은 그대로 뒀다** — 전부 nowrap 열 안이라 안 꺾이고, 렌더 폭도 같다. 굳이 건드리면 게이트 정규화·교열 렌즈 대조 비용만 든다.
+
 ## 2026-09-19 — `/id/calculator` 재조준 «계산 기능 강조» 트랙 9/11 — «Equity» 탭 + 빠른 참조 6표 + FAQ 18 + 머리어 교체 (브리프 §3-A를 id로 · `35dfadaa` · MB-065 · 헤드 Opus · 렌즈 4종 Opus · Fable 미사용)
 
 - 권역 = **인도네시아 단일**. 실측 = 구글 자동완성 **52시드 × hl=id·en**(`tmp/id-calc-suggest.mjs`) · 라쿠 `search-volume-history` **location=Indonesia · language=Indonesian · requestId 1280627 · 35종** · DFS SERP 모바일 3쿼리(+PAA) → `docs/keyword-bank/id-calculator.md`(신설).

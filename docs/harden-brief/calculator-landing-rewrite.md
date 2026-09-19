@@ -125,7 +125,7 @@
 - 🔴 **형제 글이 소유한 것은 «명사»가 아니라 «명사+한정어»다** — `holdem-probability`가 가진 것은 «Poker Wahrscheinlichkeiten **Tabelle**»이고 «**Rechner**»를 title에 쓰는 형제 글은 **0건**이었다. 그래서 계산기가 «Wahrscheinlichkeiten Rechner» 210을 통째로 가져갈 수 있었다. 카니발 판정은 키워드 단위가 아니라 **구(句) 단위**로.
 - 🟢 **역방향 누수(§3-G)는 de에 없었다** — 형제 글 14곳이 이미 `/de/calculator`를 가리킨다(«Poker-Rechner» 5 · «ICM-Rechner» 4 · «ICM-Deal-Rechner» 1 …). pt의 «/solver로 샌다» 문제는 로케일 상수가 아니다 — **grep으로 확인하고 «없다»도 기록**하라(반복 방지).
 - 🪶 **게이트가 46 → 0을 먼저 잡는다** — `check:calc-parity -- de`를 렌즈 **전에** 돌려 미채움 46건을 0으로 만든 뒤 렌즈를 붙였다(§3-C 규율 그대로). 렌즈가 전사 오류를 볼 필요가 없어진다.
-- 🪶 **quickRef 화살표 헤더(«Flop → River»)는 390px에서 3줄로 꺾인다 — 그런데 EN도 똑같다**(둘 다 실측 81px). CJK용 `nowrap` 조건(`calculator-tool.tsx:1578`)이 라틴 헤더엔 안 걸리기 때문. **de 회귀가 아니라 기존 EN 산출물의 수용된 동작**이라 이번 회차에서 고치지 않았다 → §5 후속. 「보기 나쁘다」를 만나면 **먼저 EN과 대조**하라.
+- 🪶 **quickRef 화살표 헤더(«Flop → River») 3줄 꺾임은 2026-09-19 조판 회차가 해소했다**(§5 말미 ✅ 절). 「보기 나쁘다」를 만나면 **먼저 EN과 대조**하라는 교훈은 그대로다 — 이 건도 de 회귀가 아니라 EN 동형이었다.
 - 🪶 상위 페이지 추출을 **서브에이전트 2개에 같은 파일명**(`tmp/de-calc-extract-b.mjs`)으로 시키면 덮어쓴다(실제로 났다 · 한쪽이 `-FINAL.json`으로 피신). 병렬 추출은 **에이전트별로 다른 파일명**을 지정하라.
 - 🪶 독일어 ICM 위젯의 1차 자료 = PokerFirma `/dealrechner/deal.html`(iframe · 산문 0) 축어 «Chipstände / Preisgelder / Geld nach Deal». 🔴 그런데 «Chipstände»는 **우리 코퍼스 0건**(Chipstack(s) 19 · Stacks 149)이라 채택하지 않았다 — **한 경쟁사의 표기 ≠ 시장 표준**.
 
@@ -253,12 +253,6 @@ de 회차의 렌즈 2종이 「de 번역 문제」로 보고한 것들이 실은
 
 ### fr 회차(09-18)가 §5에 더한 것
 
-- 🟠🟠 **최우선 — `components/calculator/calculator-tool.tsx`의 동적 퍼센트가 `numberLocale`을 무시한다.**
-  `:399-401, 521, 529, 534, 589, 593, 600, 631, 1179-1187, 1338`이 전부 **`toFixed(1)` + 하드코딩 `%`**다.
-  `numberLocale`은 `nf()`(정수)에만 먹는다 → **fr 화면에서 도구가 «81.9%»를 찍는 바로 아래에 우리 quickRef 표가 «81,9 %»로 찍힌다.**
-  즉 사전 문자열에 박아 둔 조판 규율(소수 쉼표 · % 앞 공백)이 **도구 본체에서 전부 무효**다. de(«81,9%» 기대)·es·pt도 같이 맞는다.
-  🔴 fr 회차에서 안 고친 이유 = **공용 컴포넌트라 12로케일 렌더가 동시에 바뀐다**(EN은 «81.9%»가 정답이라 분기 필요) → 화면 재검증이 회차 범위를 넘는다.
-  처방 = `toFixed(1)` 자리를 `Intl.NumberFormat(dict.numberLocale, { minimumFractionDigits: 1, maximumFractionDigits: 1 })`로 바꾸고 `%` 앞 공백은 로케일 플래그로. **고칠 때 12로케일 390px 캡처를 같이 뜬다.**
 - 🟠 **EN `starting.unknownAction`에 하한이 없다** — 표 밖 **122개 핸드 전부**가 이 폴백으로 떨어지는데(`calculator-tool.tsx:762`가 tier 5 고정) 「CO/BTN에서 first-in이면 오픈」으로 읽힌다 → **72o·32o·J2o도 오픈 가능**이 된다. 09-17 개정이 K9s·QTs를 살리려다 반대쪽 끝을 열었다(fr 딜러 렌즈 09-18). EN에 「진짜 약한 손은 여전히 폴드」 단서를 넣고 전 로케일 전파.
 - 🟠 **EN FAQ 「open and re-shove wider as the aggressor」에 스택 구분이 없다** — 중간 스택이 리슈브를 넓히면 ICM상 손해다(fr 딜러 렌즈).
 - 🔴 **«완료 전에 사본을 세라» — 두 명제가 로케일마다 갈린 채다**(fr 교열 렌즈 전수 실측 09-18):
@@ -269,7 +263,23 @@ de 회차의 렌즈 2종이 「de 번역 문제」로 보고한 것들이 실은
   🔴 첫 줄은 EN이 **사실 서술**로 틀리게 적어 둔 것이다 — EN을 안 고치면 다음 로케일이 **또 옛 문장을 번역한다**.
 - 🪶 EN FAQ Q11 끝 절(「which is why the chip leader's ICM value sits below their chip share」)이 **Q14의 명제 전부**와 겹친다 · Q16의 save-and-chop 설명이 `icmGuide.deal.summary`와 거의 축어 중복(둘 다 EN 상속 · fr SEO·교열 렌즈 09-18).
 - 🪶 EN `pushfold.cell`·`m.zones.red.action`의 «Push/Fold» ↔ «Push/fold» 대소문자가 EN 안에서 갈려 있다(로케일이 그대로 물려받는다).
-- 🪶 **quickRef 화살표 헤더 390px 3줄 꺾임이 이제 3번째 로케일**(de·fr·EN 전부 동일 · `calculator-tool.tsx:1578`의 `nowrap` 조건이 CJK만 본다). 고칠 때 EN 산출물이 같이 바뀌므로 위 🟠🟠와 **한 회차로 묶는 게 싸다**.
+
+### ✅ 2026-09-19 해소 — 조판 회차(`27c5503d` · WORKLOG 09-19 (2) · 로케일 회차 아님)
+
+위 🟠🟠(동적 퍼센트의 `numberLocale` 무시)와 🪶(화살표 헤더 3줄 꺾임)를 **한 회차로 묶어 끝냈다.** 다음 로케일 회차가 알아야 할 것만 남긴다:
+
+- **사전에 새 옵션 키 `percentGap`이 생겼다.** 도구가 계산해 찍는 퍼센트의 «%» 앞 공백을 정한다.
+  🔴 **`numberLocale`에서 파생하지 마라** — ICU는 de-DE·es-ES·fr-FR에 NBSP를 넣지만 **코퍼스 실측은 정반대**다:
+  숫자 뒤 «%»가 de **186 : 7**(그 7은 「Win %」류 **열 머리글**) · pt 188 · id 190 · en/ja/zh/zh-hant/es 전부 붙여 쓴다.
+  **띄우는 로케일은 fr 하나**(195 : 0). 새 로케일은 **자기 코퍼스를 세고** 필요할 때만 넣는다(없으면 붙여 쓴다).
+  🔴 넣을 땐 **고정공백(U+00A0)**이다 — 반각으로 뒀다가 390px 팟오즈에서 «23,1» / «%»로 꺾였다(캡처가 잡았다).
+- **게이트 `check:calc-parity`에 G항**이 이 둘을 본다(사전 조판 ↔ `percentGap` 일치 · 반각 공백 금지 · 셀프테스트 20/20).
+  표를 아직 안 채운 로케일은 «미검사»로 흘린다 — **ms·hi의 40건은 이 항이 아니라 §3-I 미재조준 부채다.**
+- **화살표 헤더는 nowrap이 아니라 «화살표 + 고정공백 + 뒤 단어»로 묶었다**(`glueArrow`). 이유는 실측이다:
+  nowrap으로 한 줄에 펴면 표가 **426 → 555px**로 넓어져 390px에서 보이는 열이 하나 줄어든다. 이 방식은 453px라 열 손실이 0이다.
+  **CJK 헤더는 무영향**(화살표 둘레에 공백이 없다) — 그쪽 `nowrap` 분기가 계속 정본이다.
+- 🪶 도구 본체의 수치는 이제 전부 `nd()`(소수)·`pf()`(퍼센트)를 지난다. 사전이 «%»를 들고 있는 자리(`needPot`·`verdict.*.body`)는 `nd()`다.
+  🔴 CSS 길이(`width: ${x}%`)는 로케일화 대상이 **아니다**(주석으로 박아 뒀다).
 
 
 ### id 회차(09-19)가 §5에 더한 것

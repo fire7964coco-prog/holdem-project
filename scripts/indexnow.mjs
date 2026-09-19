@@ -43,8 +43,21 @@ const entries = [...xml.matchAll(/<url>([\s\S]*?)<\/url>/g)].map((m) => ({
   lastmod: (m[1].match(/<lastmod>([^<]+)<\/lastmod>/) || [])[1] || '',
 })).filter((e) => e.loc);
 
+/**
+ * ★2026-09-19 — Git Bash(MSYS)는 `--urls /fr/calculator`의 선행 `/`를 윈도우 경로로 바꿔
+ * `C:/Program Files/Git/fr/calculator`를 넘긴다. 09-18 id 회차와 09-19 계산기 조판 회차가
+ * **이틀 연속** 이걸로 엉뚱한 URL을 보냈다(둘 다 HTTP 200이라 조용히 통과했다) →
+ * 사람이 `MSYS_NO_PATHCONV=1`을 기억하는 대신 여기서 되돌린다. 남은 조각이 진짜 경로다.
+ */
+const unmangle = (p) => {
+  const m = p.match(/^[A-Za-z]:[\\/](?:Program Files[\\/])?Git[\\/](.*)$/);
+  if (!m) return p;
+  console.log(`🪶 Git Bash 경로 변환을 되돌렸다: ${p} → /${m[1]}`);
+  return '/' + m[1].replace(/\\/g, '/');
+};
+
 let urls = [];
-if (val('--urls')) urls = val('--urls').split(',').map((p) => p.trim()).filter(Boolean).map((p) => (p.startsWith('http') ? p : `https://${HOST}${p.startsWith('/') ? p : '/' + p}`));
+if (val('--urls')) urls = val('--urls').split(',').map((p) => unmangle(p.trim())).filter(Boolean).map((p) => (p.startsWith('http') ? p : `https://${HOST}${p.startsWith('/') ? p : '/' + p}`));
 else if (val('--since')) { const s = val('--since'); urls = entries.filter((e) => e.lastmod && e.lastmod >= s).map((e) => e.loc); }
 else if (flag('--all')) urls = entries.map((e) => e.loc);
 else { console.log(readFileSync(new URL(import.meta.url), 'utf8').split('*/')[0]); process.exit(0); }
