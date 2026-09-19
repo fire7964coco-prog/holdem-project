@@ -1,3 +1,36 @@
+## 2026-09-19 (3) — ms 계산기 랜딩 재조준: «Kalkulator Poker» (`3275beb8` · 계산기 트랙 10/11 · 헤드 Opus · 렌즈 3종 Opus)
+
+브리프 `docs/harden-brief/calculator-landing-rewrite.md` §3-A를 ms로. 뱅크 = `docs/keyword-bank/ms-calculator.md`(신설).
+
+- 🔴 **말레이어 계산기 어휘가 id보다 한 단계 더 죽어 있다** — `kalkulator poker`가 `ms-MY`·`en-MY`·`ms-SG`·`ms-BN` **4조합 모두 자동완성 0건**이고 DFS 볼륨도 **null**이다(id는 10이라도 남아 있었다). 도구·개념구 **22개 전멸**(`kalkulator peluang/kebarangkalian/ekuiti/tangan poker` · `pengira(an) poker` · `cara kira ...` · `nilai m poker` · `carta push fold` · `tangan permulaan poker` · `siapa menang poker` …). ↔ 영어형만 산다: `poker odds calculator` **90** · `poker calculator` **90** · equity 20 · icm/pot odds/outs/hand/push fold chart/texas holdem calculator 각 10.
+- 🔴 **그래도 영어 머리어는 조준하지 않았다** — `location=Malaysia` SERP가 **20/20 전부 글로벌 도구 업계**(cardplayer·pokernews·888·runitonce·natural8·omnicalculator·pokerlistings·splitsuit·upswing…)라 말레이시아 페이지가 **0건**, 단기 승산 0. 반대로 `kalkulator poker`(language ms) SERP는 **비어 있다**: **#1이 개인 GitHub Pages 습작**(`b-inary.github.io`)이고 8개 중 3개가 **의도 불일치**(wsop 상금분배 · easysevens 정산로그 · pokercalculator.app 칩정산). id의 `translate.google.com` 3/8과 같은 «공백 신호»의 **두 번째 형태**다 → 일반화해 브리프 §3-L에 박았다: **「#1이 기관·업계가 아니고 절반이 의도 불일치면 그 자리는 비어 있다.」**
+- 🔴 **«볼륨 null»을 «수요 0»으로 읽지 않은 것이 이 회차의 핵심 판정이다.** Google Ads는 월 10 미만을 null로 준다. 말레이시아 인구 **3,200만** ↔ 인도네시아 **2.8억**(≈9배)이라 id의 «10»은 ms에서 **구조적으로 null**이 된다. 판별 축 둘을 세웠다 — ① 같은 언어의 다른 축이 사는가(`texas holdem` **720** · `poker malaysia` 140 = 시장은 있고 도구만 영어로 친다) ② 그 언어 SERP가 비었는가. **둘 다 예라서 말레이어를 조준**하고, 차별화어를 영어 토큰(Odds·Equity·ICM·Pot Odds)으로 두어 90짜리 영어 축도 제목이 같이 들게 했다.
+- 🔴 **머리어 교체** «Kalkulator odds poker»(볼륨 null · 자동완성 확장 0) → **«Kalkulator Poker»**. 🔴 **id 근거를 옮긴 게 아니라 `location=Malaysia`로 재측정한 결과**다(브리프 §3-J 「로케일 상수가 아니다」 · 사장님 지시 그대로). `CALC_CTA_LABELS.ms`·`side-rail.tsx` 동반 교체.
+- 🔴 **새 오염 갈래(말레이시아·싱가포르 고유)**: `spr calculator` → **`spr cpf calculator`**(싱가포르 영주권 CPF 납입)·`spr rate`. `peraturan 4 dan 2`(rule of 4 and 2 직역)는 법령 노이즈 — de의 «Faustregel» 교훈과 같은 결이되 **ms는 영어형이 답**이다(`rule of 4 and 2 poker`가 산다). `kalkulator outs` → outsourcing(id 동일) · `icm calculator` PAS에 체중·IMC(fr가 잡은 영문 시드 오염).
+- 🔴 **구글의 `hl=ms` 자동완성 DB가 인도네시아어로 오염돼 있다** — 「cara main poker **gimana**」·「**remi**」·「**kartu**」(말레이어는 macam mana·kad). 우리 코퍼스는 깨끗했다(kad 459 : kartu 0 · boleh 409 : bisa 0 · kejohanan 33 : turnamen 0 · pusingan 51 : putaran 0 · percuma 52 : gratis 0) → **자동완성으로 언어를 판정할 때 인접어 오염을 먼저 걸러라**(브리프 §3-L · 위험한 짝 = ms↔id · zh↔zh-hant · es↔pt).
+- **반영**: Equity 탭(«Equity»/«Tangan lawan tangan» — `ekuiti`는 코퍼스 **0회**) · 빠른 참조 6표(수치 EN 그대로 §13) · outs 3스트리트 · `icm.th.chop` · `icmGuide.deal`을 EN 09-17 예시로 교체 · guide 9카드 · hero 9칩 · FAQ 8→**18**(EN 17 + ms 고유 = TDA 2024 Rule 5 「Bolehkah saya guna kalkulator poker di meja?」) · 메타 47자/desc 154자 · **§3-I 미재조준 7자리 해소**.
+- 🔴 **EN 고유 9슬러그 중 ms 실재는 `holdem-tournament-vs-cash-game` 1개뿐**이다(fr 6편보다 코퍼스는 두꺼운 21편인데 주제가 안 겹친다) → `related` 8은 **전부 ms 코퍼스**에서 고르고 `quickRef` ①②는 **링크를 비웠다**(브리프 §3-J 「없는 게 정답」 · 게이트 F항). 🔴 부작용 기록: 그 1개가 한 페이지에서 **4자리**(pushfold·deal.link·quickRef⑥·related[0])에 쓰인다 — EN은 서로 다른 4슬러그다.
+- **도구→도구 카니발**: ms `PICK_TOOL`에 계산기 행이 **처음부터 없었다** — id의 「라우트가 없다」 **낡은 주석과는 다른 변종**(빈 채로 열린 경우). 행 3개 신설 + 솔버 FAQ에 인계 문장 → `/ms/calculator` 링크 **0 → 5**.
+- **게이트**: `check:calc-parity -- ms` **40 → 0**. 🪶 G항 주석이 「ms·hi는 판정하지 않는다」로 **낡아** 있었다 — ms가 quickRef를 채운 순간 판정 대상이 됐다(186 : 0 → `percentGap` 없음이 정답). 주석 정정 + **셀프테스트 20/20 유지**. 남은 미검사 = hi.
+- **조판**: `percentGap` **미사용**(코퍼스 숫자 뒤 % **1,599 : 0**) · `numberLocale: ms-MY` 유지. 🪶 **조판 실측에서 마크업을 먼저 걸러라** — `[0-9],[0-9]` 335건이 전부 **rgba CSS 색상**이었다(`rgba(255,248,210,0.10)`). 안 거르면 «소수 콤마 로케일»로 오판한다.
+
+### 렌즈 3종(네이티브 적대 · 교열 · 2차 교열)이 잡은 것
+
+- 🔴 **FAQ Q4 「darab-2」 오차 방향이 뒤집혀 있었다** — 규칙 18%가 실제 19.6%보다 **낮은** 것인데 «terlebih»(초과)로 썼다. **두 렌즈가 독립적으로 같은 자리를 지적**했고, 같은 문장 안의 수치(1.6·2.6)가 스스로 반증하고 있었다. 선례 4~6로케일이 전부 «부족»으로 쓴 자리다.
+- 🔴 **폴백(`starting.unknownAction`)이 위쪽으로 안 막혀 있었다** — id의 3분기를 옮기며 「Suited」에 **한정어를 안 붙여** `72s·J2s·92s`까지 **CO/BTN 오픈 허가**(수티드 54개 전부)를 받았다. id 원문의 **first-in 조건**(「kalau semua fold ke Anda」)도 빠졌고, `atau`를 `dan`으로 옮겨 **2분기가 공집합**이 됐다.
+- 🔴 **2차 교열이 «1차 수정이 만든 새 결함»을 또 잡았다 — fr 8건·id 9건에 이은 세 번째 실증.** ① **1차 렌즈가 틀렸다**: 「TDA 조항은 선례 6로케일이 Rule 5-D」라는 보고가 **원문·선례 실측으로 거짓**이었다(6로케일 본문은 전부 상위 **Rule 5**이고 5-A·5-C·5-D는 주석에만 · 내 문장은 5-D와 5-C를 **합쳐** 서술한다) → 본문 되돌림. **검수자도 틀린다 — 1차 출처가 심판이다.** ② `menentang`→`lawan` 교체가 **코퍼스 규칙상 소유격·명령형으로 읽히는** 자리를 만들었다(`명사+lawan`=소유격 184회 · 문두 `Lawan` 3/3이 명사) → `menghadapi`로. ③ ace-offsuit만 남기자 **`K9o`·`Q9o`가 무조건 fold**가 되어 `A2o`(BTN 허가)와 **분기 간 서열이 역전**됐다.
+- **처방**: 3분기를 **수치 경계**로 다시 쓰고(«두 번째 카드 6 이상 / suited connector·one-gapper» · «두 번째 카드 2–5» · «ace offsuit 또는 두 장의 높은 카드») **표 밖 122핸드 전수 대입**으로 검산했다 — **미분류 0**, 겹침 해소, 전에 어디에도 안 걸리던 `97s·86s·75s`도 분류된다.
+- 🔴 **실측 정정 2건(EN·id에 영향)**: ① 브리프 §5 id ⓐ의 근거 「EP에는 앞선 레이즈가 있을 수 없다」는 **UTG에만 참**이다(MP·EP+1은 UTG 레이즈를 마주한다) → 처방은 «call을 없애기»가 아니라 «무엇에 대한 call인지 명시 + 오픈 림프 금지»이고 **선례 7로케일이 이미 그 형**이다(de만 옛 문안). 🪶 내가 처음에 「raise atau fold」로 썼다가 **자가검사에서 되돌렸다** — 「선례 N개가 같은 형인데 나만 다르면 그게 신호다」. ② **오프수트 브로드웨이 10개가 전부 `HAND_TABLE` 안**이라 id·ms 3분기의 «두 장의 브로드웨이» 절은 **공집합**이었다 — **id 사전의 예시 `K9o`도 틀렸다**(ace-offsuit도 브로드웨이도 아니다 · id 정정 대상).
+- **용어**: `menentang` 15회가 **코퍼스 0회**였다 → 전량 교체(잔여 0 · 정본 `lawan` 184 · `menghadapi` 32). `pilihan utama`가 배당 용어 **favorite을 오역**해 「AA가 최선의 패가 아니다」라는 **거짓 명제**를 만들고 있었다(49.2%는 equity고 나머지 5명은 각 ~10%). `kekecualian`→`pengecualian`(코퍼스 10:0) · `tempat duduk`→`pemain`(순환 문장 해소).
+- 🔴 **내 한국어 주석 5곳이 사실과 달랐다**(fr 4곳·id 5곳에 이은 세 번째) — 그중 하나는 「EN 9슬러그 중 **0개** 실재」라 적어 놓고 **바로 다음 줄에서 그 슬러그를 링크**하고 있었고, 다른 하나는 「**먼저 열린** 자리를 택하라」로 본문·EN(«아직 아무도 안 연 자리» = first in)과 **정반대**였다. 전건 정정. **주석을 렌즈 대상에 넣은 것이 값을 냈다.**
+
+### 검증
+
+빌드 EXIT=0 · Question **18** · Equity 탭 SSR · 390/1440 **overflow 0** · §13 손 검산(4·2 규칙 오차 방향·크기 · 팟오즈 23.1% · 4.2:1 · AA vs KK 4.5:1) 전건 일치 · 라이브 Playwright(제목·desc 154자·og/twitter image·hreflang 12·quickRef 6·Question 18) · IndexNow 200 · MB-067.
+
+🪶 **아웃츠 6열 표가 390px에서 마지막 열을 옆으로 미는 건 EN 동형**이다(ms 445px < en 458 < de 490 — 실측 후 «회귀 아님»으로 판정). §3-H의 「보기 나쁘다를 만나면 먼저 EN과 대조하라」를 그대로 적용했다.
+🪶 **로컬 캡처가 한 번 «Application error»를 냈는데 코드 결함이 아니었다** — 빌드 전에 띄운 `next start`가 `pkill`로 안 죽고 포트를 잡은 채 교체된 `.next`를 읽어 `ChunkLoadError`가 났다. 프로세스를 실제로 죽이고 재기동하니 정상(16,820px). **Windows에서 `pkill -f "next start"`는 듣지 않는다 — `Stop-Process -Id`로 확인 사살하라.**
+
 ## 2026-09-19 (2) — 계산기 도구 본체의 «수치 조판»을 로케일화 + 화살표 헤더 3줄 꺾임 (12로케일 공용 · `27c5503d` · 헤드 Opus · 로케일 회차 아님)
 
 브리프 §5의 🟠🟠(fr 09-18 제기)와 «화살표 헤더 3건째»(de·fr·EN)를 **한 회차로 묶었다** — 둘 다 `components/calculator/calculator-tool.tsx` 한 파일이고, 어느 쪽을 고쳐도 12로케일 렌더가 같이 바뀌어 화면 재검증을 두 번 할 이유가 없다.
