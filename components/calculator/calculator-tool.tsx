@@ -15,6 +15,15 @@ import type { CalcDict } from "./dict";
 const cjkEnd = (s?: string) => !!s && /[぀-ヿ㐀-䶿一-鿿＀-ﾟ　-〿]$/.test(s);
 const sep = (prev?: string) => (cjkEnd(prev) ? null : " ");
 
+/**
+ * ★2026-09-19 — quickRef 화살표 헤더(«Flop → river»)는 390px에서 «Flop / → / river» 3줄로 꺾이고
+ * 화살표가 제 줄에 혼자 남는다(EN·de·fr·es·pt·id 6개 동형 실측 · 헤더 높이 81px).
+ * 화살표를 뒤 단어에 고정공백으로 붙여 «Flop / → river» 2줄까지만 꺾이게 한다.
+ * 🔴 nowrap으로 한 줄에 펴지 «않는» 이유: 표가 426 → 555px로 넓어져 390px에서 보이는 열이 하나 줄어든다
+ *    (실측 en · 이 방식은 458px라 열 손실 0). CJK 헤더는 화살표 둘레에 공백이 없어 무영향 — 그쪽은 nowrap이 정본.
+ */
+const glueArrow = (s: string) => s.replace(/([→←])\s+/g, "$1 ");
+
 // ─────────────────────────────────────────────
 // Dictionary plumbing
 // ─────────────────────────────────────────────
@@ -47,7 +56,22 @@ export function fmtNodes(template: string, vars: Record<string, ReactNode>): Rea
   return out;
 }
 
-type Ctx = { dict: CalcDict; locale: string; nf: (n: number) => string };
+/**
+ * ★2026-09-19 — Number typography belongs to the locale, and until today only `nf()` (integers)
+ * honoured it: every computed percentage was `toFixed(1)` + a hard-coded "%", so a French reader
+ * saw the tool print «81.9%» directly above our own static table printing «81,9 %» (fr §5 🟠🟠).
+ * - `nd(n, fixed?)` — decimal number, separator from `dict.numberLocale`. `fixed` pins the digit
+ *   count (the old `toFixed(1)` sites); omit it for "one decimal only when there is one".
+ * - `pf(n, fixed?)` — the same number followed by `dict.percentGap` and "%".
+ * 🔴 CSS lengths (`width: ${x}%`) must stay raw — never route those through `pf()`.
+ */
+type Ctx = {
+  dict: CalcDict;
+  locale: string;
+  nf: (n: number) => string;
+  nd: (n: number, fixed?: number) => string;
+  pf: (n: number, fixed?: number) => string;
+};
 const CalcCtx = createContext<Ctx | null>(null);
 function useCalc(): Ctx {
   const ctx = useContext(CalcCtx);
@@ -255,7 +279,7 @@ function fromId(id: number): Card { return { rank: id >> 2, suit: id & 3 }; }
 function cardText(c: Card) { return RANKS[c.rank] + SUITS[c.suit]; }
 
 function EquityCalc() {
-  const { dict } = useCalc();
+  const { dict, pf } = useCalc();
   const D = dict.equity!;
   const [seats, setSeats] = useState<Seat[]>([{ cards: [], random: false }, { cards: [], random: false }]);
   const [board, setBoard] = useState<Card[]>([]);
@@ -395,10 +419,10 @@ function EquityCalc() {
                     return (
                       <tr key={i} className="border-b border-border/60 last:border-0">
                         <td className="px-2 py-2.5 font-bold text-foreground whitespace-nowrap">{seatLabel(i)}</td>
-                        <td className="px-2 py-2.5 font-mono text-foreground whitespace-nowrap">{s.random ? D.random : s.cards.map(cardText).join(" ")}<span className="block sm:hidden text-[10px] text-muted-foreground mt-0.5">{D.th.win} {(result.win[i] * 100).toFixed(1)}% · {D.th.tie} {(result.tie[i] * 100).toFixed(1)}%</span></td>
-                        <td className="px-2 py-2.5 text-right font-mono text-muted-foreground hidden sm:table-cell">{(result.win[i] * 100).toFixed(1)}%</td>
-                        <td className="px-2 py-2.5 text-right font-mono text-muted-foreground hidden sm:table-cell">{(result.tie[i] * 100).toFixed(1)}%</td>
-                        <td className={`px-2 py-2.5 text-right font-mono font-black text-lg ${pcolor(eq)}`}>{eq.toFixed(1)}%</td>
+                        <td className="px-2 py-2.5 font-mono text-foreground whitespace-nowrap">{s.random ? D.random : s.cards.map(cardText).join(" ")}<span className="block sm:hidden text-[10px] text-muted-foreground mt-0.5">{D.th.win} {pf(result.win[i] * 100, 1)} · {D.th.tie} {pf(result.tie[i] * 100, 1)}</span></td>
+                        <td className="px-2 py-2.5 text-right font-mono text-muted-foreground hidden sm:table-cell">{pf(result.win[i] * 100, 1)}</td>
+                        <td className="px-2 py-2.5 text-right font-mono text-muted-foreground hidden sm:table-cell">{pf(result.tie[i] * 100, 1)}</td>
+                        <td className={`px-2 py-2.5 text-right font-mono font-black text-lg ${pcolor(eq)}`}>{pf(eq, 1)}</td>
                       </tr>
                     );
                   })}
@@ -456,7 +480,7 @@ function pbg(p: number) { return p>=35?"bg-green-400":p>=20?"bg-yellow-400":"bg-
 function plabel(p: number, v: CalcDict["outs"]["verdict"]) { return p>=45?v.great:p>=35?v.good:p>=25?v.fair:p>=15?v.poor:v.veryPoor; }
 
 function OutsCalc() {
-  const { dict } = useCalc();
+  const { dict, pf } = useCalc();
   const D = dict.outs;
   const [sel, setSel] = useState(1);
   const [custom, setCustom] = useState(9);
@@ -518,7 +542,7 @@ function OutsCalc() {
           <div key={String(k)} className={`rounded-xl p-4 border text-center transition-all ${stage===k ? "border-primary/60 bg-primary/5" : "border-border bg-card"}`}>
             <p className="text-xs text-muted-foreground mb-1">{String(lbl)}</p>
             <p className="text-xs text-muted-foreground/60 mb-2">{String(ruleLbl)}</p>
-            <p className={`text-3xl font-black ${pcolor(Number(val))}`}>{val}%</p>
+            <p className={`text-3xl font-black ${pcolor(Number(val))}`}>{pf(Number(val))}</p>
           </div>
         ))}
       </div>
@@ -526,12 +550,12 @@ function OutsCalc() {
         <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between mb-4">
           <div>
             <p className="text-xs text-muted-foreground mb-1">{stage==="flop" ? D.chanceFlop : stage==="flop1" ? D.chanceFlopOne : D.chanceTurn}{D.exact}</p>
-            <p className={`text-5xl sm:text-6xl font-black tabular-nums ${pcolor(pct)}`}>{pct}%</p>
+            <p className={`text-5xl sm:text-6xl font-black tabular-nums ${pcolor(pct)}`}>{pf(pct)}</p>
             <p className={`text-sm font-bold mt-1 ${pcolor(pct)}`}>{plabel(pct, D.verdict)}</p>
           </div>
           <div className="text-right text-xs text-muted-foreground space-y-1">
             <p>{fmtNodes(D.ruleMental, { n: ruleN })}</p>
-            <p className="text-foreground font-bold text-base">{outs} × {ruleN} = ~{rule(outs, ruleN)}%</p>
+            <p className="text-foreground font-bold text-base">{outs} × {ruleN} = ~{pf(rule(outs, ruleN))}</p>
             <p className="text-primary/70 text-[10px]">{D.exactNote}</p>
           </div>
         </div>
@@ -541,7 +565,7 @@ function OutsCalc() {
             transition={{ duration:0.6, ease:"easeOut" }} />
         </div>
         <div className="flex justify-between text-xs text-muted-foreground mt-1">
-          <span>0%</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span>
+          {[0, 25, 50, 75, 100].map(v => <span key={v}>{pf(v)}</span>)}
         </div>
       </div>
     </div>
@@ -552,7 +576,7 @@ function OutsCalc() {
 // 2. Pot Odds + Implied Odds
 // ─────────────────────────────────────────────
 function PotOddsCalc() {
-  const { dict, nf } = useCalc();
+  const { dict, nf, nd, pf } = useCalc();
   const D = dict.pot;
   const [pot, setPot] = useState(100);
   const [call, setCall] = useState(30);
@@ -586,24 +610,24 @@ function PotOddsCalc() {
       <div className="rounded-2xl bg-card border border-border p-5">
         <p className="text-xs text-muted-foreground mb-1">{D.potOddsCaption}</p>
         <div className="flex items-end gap-3">
-          <span className="text-4xl sm:text-5xl font-black tabular-nums text-primary">{potOdds}%</span>
+          <span className="text-4xl sm:text-5xl font-black tabular-nums text-primary">{pf(potOdds)}</span>
           <span className="text-sm text-muted-foreground mb-2">{D.orHigher}</span>
         </div>
         <p className="text-xs text-muted-foreground mt-1 font-mono">
-          {nf(call)} ÷ ({nf(pot)} + {nf(call)}) = {potOdds}%
+          {nf(call)} ÷ ({nf(pot)} + {nf(call)}) = {pf(potOdds)}
         </p>
       </div>
 
       <div>
         <div className="flex items-center justify-between mb-2">
           <label htmlFor="pot-equity" className="block text-xs font-bold text-muted-foreground uppercase tracking-wide">
-            {fmtNodes(D.equityLabel, { v: <span className="text-primary">{eq}%</span> })}
+            {fmtNodes(D.equityLabel, { v: <span className="text-primary">{pf(eq)}</span> })}
           </label>
         </div>
         <input id="pot-equity" type="range" min={1} max={85} value={eq} onChange={e => setEq(Number(e.target.value))}
           className="w-full accent-primary h-2 rounded-full" />
         <div className="flex justify-between text-xs text-muted-foreground mt-1">
-          <span>1%</span><span>{D.sliderGutshot}</span><span>{D.sliderFlush}</span><span>85%</span>
+          <span>{pf(1)}</span><span>{D.sliderGutshot}</span><span>{D.sliderFlush}</span><span>{pf(85)}</span>
         </div>
       </div>
 
@@ -628,7 +652,7 @@ function PotOddsCalc() {
                 {implied > 0 && (
                   <div className="mt-3 rounded-xl bg-blue-400/5 border border-blue-400/20 p-3">
                     <p className="text-xs text-muted-foreground">{D.impliedCaption}</p>
-                    <p className="text-2xl font-black text-blue-400 mt-1">{impliedOdds}%</p>
+                    <p className="text-2xl font-black text-blue-400 mt-1">{pf(impliedOdds)}</p>
                     <p className="text-xs text-muted-foreground mt-1">{fmtNodes(D.impliedNote, { n: nf(implied) })}</p>
                   </div>
                 )}
@@ -639,14 +663,17 @@ function PotOddsCalc() {
       </div>
 
       {(() => {
-        const need = showImplied && implied > 0 ? fmt(D.needImplied, { n: impliedOdds }) : fmt(D.needPot, { n: threshold });
+        // ★2026-09-19 `needPot`/`needImplied`/`verdict.*.body` carry the "%" themselves (fr even carries
+        //   the gap: «les cotes du pot {n} %») — so the placeholder takes `nd()`, never `pf()`.
+        const need = showImplied && implied > 0 ? fmt(D.needImplied, { n: nd(impliedOdds) }) : fmt(D.needPot, { n: nd(threshold) });
+        const eqText = nd(eq);
         const V = {
           call: { box:"border-green-500/50 bg-green-500/10", text:"text-green-400", icon:"✅", title:D.verdict.call.title,
-                  body:fmt(D.verdict.call.body, { eq, need }) },
+                  body:fmt(D.verdict.call.body, { eq: eqText, need }) },
           even: { box:"border-yellow-500/50 bg-yellow-500/10", text:"text-yellow-400", icon:"⚖️", title:D.verdict.even.title,
-                  body:fmt(D.verdict.even.body, { eq, need }) },
+                  body:fmt(D.verdict.even.body, { eq: eqText, need }) },
           fold: { box:"border-red-500/50 bg-red-500/10", text:"text-red-400", icon:"❌", title:D.verdict.fold.title,
-                  body:fmt(D.verdict.fold.body, { eq, need }) },
+                  body:fmt(D.verdict.fold.body, { eq: eqText, need }) },
         }[verdict];
         return (
           <motion.div key={verdict} animate={{ scale:[1,1.02,1] }} transition={{ duration:0.3 }}
@@ -836,7 +863,7 @@ const SPR_ZONE_STYLE = {
 } as const;
 
 function SPRCalc() {
-  const { dict, nf } = useCalc();
+  const { dict, nf, nd } = useCalc();
   const D = dict.spr;
   const [stack, setStack] = useState(500);
   const [pot, setPot] = useState(100);
@@ -863,10 +890,10 @@ function SPRCalc() {
       <div className="rounded-2xl bg-card border border-border p-5">
         <p className="text-xs text-muted-foreground mb-1">{D.caption}</p>
         <div className="flex items-end gap-3">
-          <p className={`text-5xl sm:text-6xl font-black tabular-nums ${zone?.color || "text-foreground"}`}>{spr}</p>
+          <p className={`text-5xl sm:text-6xl font-black tabular-nums ${zone?.color || "text-foreground"}`}>{nd(spr)}</p>
           <p className="text-sm text-muted-foreground mb-2">{D.stackDivPot}</p>
         </div>
-        <p className="text-xs font-mono text-muted-foreground mt-1">{nf(stack)} ÷ {nf(pot)} = {spr}</p>
+        <p className="text-xs font-mono text-muted-foreground mt-1">{nf(stack)} ÷ {nf(pot)} = {nd(spr)}</p>
       </div>
 
       {zone && (
@@ -915,7 +942,7 @@ const M_ZONES = [
 ] as const;
 
 function MValueCalc() {
-  const { dict, nf } = useCalc();
+  const { dict, nf, nd } = useCalc();
   const D = dict.m;
   const [stack, setStack] = useState(15000);
   const [bb, setBb] = useState(400);
@@ -967,9 +994,9 @@ function MValueCalc() {
         </div>
         <div className={`rounded-2xl border p-5 ${zone?.bg || "bg-card border-border"}`}>
           <p className="text-xs text-muted-foreground mb-1">{D.mCaption}</p>
-          <p className={`text-4xl sm:text-5xl font-black tabular-nums ${zone?.color || "text-foreground"}`}>{M}</p>
+          <p className={`text-4xl sm:text-5xl font-black tabular-nums ${zone?.color || "text-foreground"}`}>{nd(M)}</p>
           <p className="text-xs font-mono text-muted-foreground mt-1">
-            {nf(stack)} ÷ {nf(orbit)} = {M}
+            {nf(stack)} ÷ {nf(orbit)} = {nd(M)}
           </p>
         </div>
       </div>
@@ -1037,7 +1064,7 @@ const ICM_DEFAULT_STACKS = [15000, 12000, 10000, 8000, 6000, 4000, 3000, 2000, 1
 const ICM_DEFAULT_PRIZES = [5000, 3000, 2000, 1000, 600, 400];
 
 function ICMCalc() {
-  const { dict, nf } = useCalc();
+  const { dict, nf, nd, pf } = useCalc();
   const D = dict.icm;
   const [numPlayers, setNumPlayers] = useState(6);
   const [numPrizes, setNumPrizes] = useState(3);
@@ -1055,8 +1082,9 @@ function ICMCalc() {
   const totalPrize = prizes.slice(0, numPrizes).reduce((a, b) => a + b, 0);
 
   const fmtNum = (n: number) => {
-    if (n >= 1000000) return (n / 1000000).toFixed(1) + "M";
-    if (n >= 1000) return (n / 1000).toFixed(0) + "k";
+    // ★2026-09-19 the "M"/"k" abbreviations stay English, but their decimal separator is the locale's.
+    if (n >= 1000000) return nd(n / 1000000, 1) + "M";
+    if (n >= 1000) return nf(Math.round(n / 1000)) + "k";
     return nf(n);
   };
 
@@ -1176,15 +1204,15 @@ function ICMCalc() {
                   const diff = icmPct - chipPct;
                   return (
                     <tr key={i} className="border-b border-border/50 last:border-0 hover:bg-primary/5 transition-colors">
-                      <td className="px-3 py-2.5 font-bold text-foreground">{fmtNodes(D.playerCell, { medal: MEDALS[i], n: i+1 })}<span className="block sm:hidden text-[10px] font-mono font-normal text-muted-foreground mt-0.5">{nf(stacks[i])} · {chipPct.toFixed(1)}%</span></td>
+                      <td className="px-3 py-2.5 font-bold text-foreground">{fmtNodes(D.playerCell, { medal: MEDALS[i], n: i+1 })}<span className="block sm:hidden text-[10px] font-mono font-normal text-muted-foreground mt-0.5">{nf(stacks[i])} · {pf(chipPct, 1)}</span></td>
                       <td className="px-3 py-2.5 text-right font-mono text-muted-foreground hidden sm:table-cell">{nf(stacks[i])}</td>
-                      <td className="px-3 py-2.5 text-right font-mono text-muted-foreground hidden sm:table-cell">{chipPct.toFixed(1)}%</td>
+                      <td className="px-3 py-2.5 text-right font-mono text-muted-foreground hidden sm:table-cell">{pf(chipPct, 1)}</td>
                       <td className="px-3 py-2.5 text-right font-mono font-bold text-primary">{nf(Math.round(equity))}</td>
-                      <td className="px-3 py-2.5 text-right font-mono">{icmPct.toFixed(1)}%</td>
+                      <td className="px-3 py-2.5 text-right font-mono">{pf(icmPct, 1)}</td>
                       {/* ★2026-09-17 chip chop = chip share × remaining prize pool — optional column (dict.icm.th.chop) */}
                       {D.th.chop && <td className="px-3 py-2.5 text-right font-mono text-muted-foreground">{nf(Math.round((stacks[i] / totalChips) * totalPrize))}</td>}
                       <td className={`px-3 py-2.5 text-right font-mono font-bold ${diff > 0.1 ? "text-green-400" : diff < -0.1 ? "text-red-400" : "text-muted-foreground"}`}>
-                        {diff > 0 ? "+" : ""}{diff.toFixed(1)}%
+                        {diff > 0 ? "+" : ""}{pf(diff, 1)}
                       </td>
                     </tr>
                   );
@@ -1229,7 +1257,7 @@ function pfCombos(r: number, c: number): number {
 }
 
 function PushFoldCalc() {
-  const { dict, locale, nf } = useCalc();
+  const { dict, locale, nf, pf } = useCalc();
   const D = dict.pushfold;
   const [table, setTable] = useState<"hu" | 6 | 9>("hu");
   const [pos, setPos] = useState("BTN");
@@ -1335,7 +1363,7 @@ function PushFoldCalc() {
           {ante ? D.withAnte : ""}
         </p>
         <div className="flex items-end gap-3">
-          <p className={`text-4xl sm:text-5xl font-black tabular-nums ${isCall ? "text-green-400" : "text-primary"}`}>{stat.pct}%</p>
+          <p className={`text-4xl sm:text-5xl font-black tabular-nums ${isCall ? "text-green-400" : "text-primary"}`}>{pf(stat.pct)}</p>
           <p className="text-sm text-muted-foreground mb-1.5">{nf(stat.combos)}{fmt(D.combosSuffix, { total: nf(1326) })}</p>
         </div>
       </div>
@@ -1400,11 +1428,17 @@ function PushFoldCalc() {
 const GUIDE_ICONS = ["🎯", "💰", "🃏", "📊", "📐", "🏆", "📈", "⚡"];
 
 export default function CalculatorTool({ locale, dict, faq }: { locale: string; dict: CalcDict; faq: { q: string; a: string }[] }) {
-  const ctx = useMemo<Ctx>(() => ({
-    dict,
-    locale,
-    nf: (n: number) => n.toLocaleString(dict.numberLocale),
-  }), [dict, locale]);
+  const ctx = useMemo<Ctx>(() => {
+    const nd = (n: number, fixed = 0) =>
+      n.toLocaleString(dict.numberLocale, { minimumFractionDigits: fixed, maximumFractionDigits: Math.max(fixed, 1) });
+    return {
+      dict,
+      locale,
+      nf: (n: number) => n.toLocaleString(dict.numberLocale),
+      nd,
+      pf: (n: number, fixed = 0) => `${nd(n, fixed)}${dict.percentGap ?? ""}%`,
+    };
+  }, [dict, locale]);
 
   // ─── Tab Config ───
   // ★2026-09-17 「Equity」 탭은 dict.equity가 있는 로케일에만 — 맨 앞(초기 탭 = SSR되는 유일한 탭 · «poker odds calculator» 의도).
@@ -1575,7 +1609,7 @@ export default function CalculatorTool({ locale, dict, faq }: { locale: string; 
                   <tr className="bg-card border-b border-border">
                     {/* ★2026-09-17 (zh-hant) CJK 헤더는 nowrap 열이면 헤더도 한 줄 — 「翻牌→河牌」가 390px에서 3줄로 꺾였다(zh·ja 동형). 라틴 헤더(EN)는 불변 */}
                     {sec.th.map((h, i) => (
-                      <th key={h} className={`px-3 py-2.5 font-bold ${i === 0 || (sec.nowrap?.includes(i) && /[぀-ヿ一-鿿]/.test(h)) ? "whitespace-nowrap" : ""} ${sec.align?.[i] === "right" ? "text-right" : "text-left"} ${i === sec.emphasis ? "text-primary-ink" : "text-muted-foreground"}`}>{h}</th>
+                      <th key={h} className={`px-3 py-2.5 font-bold ${i === 0 || (sec.nowrap?.includes(i) && /[぀-ヿ一-鿿]/.test(h)) ? "whitespace-nowrap" : ""} ${sec.align?.[i] === "right" ? "text-right" : "text-left"} ${i === sec.emphasis ? "text-primary-ink" : "text-muted-foreground"}`}>{glueArrow(h)}</th>
                     ))}
                   </tr>
                 </thead>

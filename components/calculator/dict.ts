@@ -17,6 +17,15 @@ export type CalcDict = {
   /** BCP-47 tag passed to Number#toLocaleString for every formatted number ("en-US"). */
   numberLocale: string;
 
+  /**
+   * ★2026-09-19 — Gap printed between a number and "%" by the tool's `pf()` helper.
+   * Typography is measured per corpus, not derived from `numberLocale`: French writes «81,9 %»
+   * (fr dict corpus 19 : 0) while German writes «81,9%» even though ICU would insert a space for
+   * de-DE. Every other locale ships "" (de·pt·id 186 : 0 digit-then-% in their own dicts).
+   * Omit for no gap.
+   */
+  percentGap?: string;
+
   /** <SEO> props (client-side metadata sync — must equal the server metadata of the page). */
   seo: {
     /** Without the "| Brand" suffix — seo.tsx appends it. */

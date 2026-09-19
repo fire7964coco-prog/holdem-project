@@ -30,6 +30,13 @@ import type { CalcDict } from "@/components/calculator/dict";
 
 export const CALC_DICT_FR: CalcDict = {
   numberLocale: "fr-FR",
+  // ★2026-09-19 — 도구가 계산해서 찍는 퍼센트도 이 조판을 따른다(«81,9 %»). 그전까지 `toFixed(1)` + 하드코딩 «%»였고,
+  //   그래서 도구가 «81.9%»를 찍는 바로 아래에서 우리 quickRef 표가 «81,9 %»로 찍혔다(브리프 §5 🟠🟠 · 이 회차에서 해소).
+  //   🔴 공백을 쓰는 로케일은 fr 하나다 — 전 사전 실측에서 숫자 뒤 «%»는 de 186:7(7은 열 머리글)·pt 188·id 190이 전부 붙여 쓴다.
+  //   문자는 사전 본문 195곳과 같은 반각 공백(게이트 `check:calc-parity`가 `[\s  ]`로 정규화한다).
+  //   🔴 문자는 **고정공백(U+00A0)**이다 — 반각 공백으로 두면 390px에서 «23,1» / «%»로 두 줄로 꺾인다(팟오즈 캡처 실측).
+  //      사전 본문 195곳은 반각 공백이지만 그쪽은 전부 nowrap 열 안이라 안 꺾인다(렌더 폭은 같다).
+  percentGap: " ",
 
   // ★2026-09-18 재조준 — 🔴 app/fr/calculator/page.tsx metadata와 «같은 문자열»(check:seo-sync).
   //   머리어 «Calculateur poker» 390 + «équité» 110 + «cote» 110 + «ICM» 480(fr에서 ICM은 롱테일이 아니라 머리어다).

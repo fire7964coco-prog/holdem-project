@@ -134,6 +134,23 @@ walk(en, zh, "dict");
 //   그래서 de가 171자로 빌드·hreflang·meta·meta-lang 게이트를 전부 통과했다. 그 사각지대를 여기서 닫는다.
 const descLen = zh.seo.description.length;
 if (descLen > 160) hit(`E desc ${descLen}자 > 160 (§11-7)`);
+// ★G. 퍼센트 조판 일치 — 2026-09-19 신설(브리프 §5 🟠🟠 해소 회차).
+//   도구 본체(`calculator-tool.tsx`)가 계산해 찍는 퍼센트는 `dict.percentGap`으로 «%» 앞 공백을 넣는다.
+//   그러니 사전이 «81,9 %»로 적어 놓고 percentGap이 비어 있으면 **같은 화면에서 조판이 갈린다** —
+//   실제로 09-18까지 fr이 그 상태였다(도구 «81.9%» ↔ 우리 표 «81,9 %»).
+//   판정은 사전의 «숫자 뒤 %» 실측으로 한다(열 머리글 «Win %»는 숫자가 앞에 없어 안 센다).
+{
+  const dictText = JSON.stringify(zh);
+  const gapped = (dictText.match(/\d[   ]%/g) || []).length;
+  const plain = (dictText.match(/\d%/g) || []).length;
+  const gap = zh.percentGap ?? "";
+  if (gapped + plain >= 10) { // 표를 아직 안 채운 로케일(ms·hi)은 판정하지 않는다 — 미검사로 둔다
+    if (gapped > plain && !gap) hit(`G 사전은 «숫자 %»로 적는데(${gapped} : ${plain}) percentGap이 비었다 — 도구가 붙여 쓴다`);
+    if (plain > gapped && gap) hit(`G 사전은 «숫자%»로 붙여 적는데(${plain} : ${gapped}) percentGap이 있다 — 도구만 띄운다`);
+  }
+  // 🔴 반각 공백은 안 된다 — 390px에서 «23,1» / «%»로 두 줄로 꺾인다(fr 팟오즈 캡처 실측 2026-09-19).
+  if (gap === " ") hit("G percentGap이 반각 공백이다 — 고정공백(U+00A0)을 써라(390px에서 숫자와 % 가 갈라진다)");
+}
 // E. 인용부호 — 직선 " 은 전 로케일 금지 · 「」는 zh만 금지
 const all = JSON.stringify(zh) + JSON.stringify(faq);
 const straight = (all.match(/\\"/g) || []).length;
@@ -218,6 +235,21 @@ async function selftest() {
   // 12. D 플레이스홀더 소실
   const d10 = clone(); d10.outs.outsCount = d10.outs.outsCount.replace("{v}", "");
   t("12 D: {v} 플레이스홀더 소실", caught(hitsOf(d10), "D dict.outs.outsCount"));
+
+  // 13-A~D. ★G 퍼센트 조판 일치(2026-09-19 신설) — 통제군은 «붙여 쓰는» de와 «띄어 쓰는» fr 둘 다 본다.
+  const frMod = await import("../app/fr/calculator/dict");
+  const frDict = Object.values(frMod).find((v: any) => v && typeof v === "object" && "seo" in v) as Dict;
+  t("13-A 통제군: 실제 de(붙여 씀 · percentGap 없음) = G 0건", !caught(hitsOf(clone()), "G "));
+  t("13-B 통제군: 실제 fr(띄어 씀 · percentGap 고정공백) = G 0건",
+    !check("fr", structuredClone(frDict), baseFaq, corpusSlugs("fr")).some(h => h.startsWith("G ")));
+  const d13c = clone(); d13c.percentGap = " ";
+  t("13-C de 사전에 percentGap을 붙이면 잡는다", caught(hitsOf(d13c), "G 사전은 «숫자%»로 붙여 적는데"));
+  const d13d = structuredClone(frDict); delete (d13d as any).percentGap;
+  t("13-D fr 사전에서 percentGap을 빼면 잡는다",
+    check("fr", d13d, baseFaq, corpusSlugs("fr")).some(h => h.includes("G 사전은 «숫자 %»로 적는데")));
+  const d13e = structuredClone(frDict); d13e.percentGap = " ";
+  t("13-E percentGap이 반각 공백이면 잡는다(390px 줄바꿈)",
+    check("fr", d13e, baseFaq, corpusSlugs("fr")).some(h => h.includes("G percentGap이 반각 공백")));
 
   console.log(`
 SELFTEST ${pass}/${pass + fail}`);
