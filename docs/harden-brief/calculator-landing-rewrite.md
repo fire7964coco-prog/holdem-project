@@ -19,7 +19,10 @@
 | **fr** | ✅ 09-18 배포(WORKLOG 09-18 (2) · `140f585d` · MB-064) | `docs/keyword-bank/fr-calculator.md` | 권역 = **프랑스 단일**(FR/BE/CH/CA 자동완성 74시드 **전부 동일** — de의 DACH보다 더 붙어 있다) · Equity 탭(«Équité»/«Main contre main») + quickRef 6표 + FAQ 18(fr 고유 = TDA 2024 Rule 5-D) + 메타 «Calculateur poker — équité, cotes du pot et ICM». 🔴 **도구 명사를 «Calculatrice» → «Calculateur»로 교체**(볼륨은 동의어군 390이라 못 가른다 · SERP title 6/6) · 🔴 **Equity = «Équité»**(110 : 50 · 옛 사전 주석이 반대였다) · 🔴 **«Push or Fold»는 영어 «or»**(«push ou fold» null ×3 · PokerStars.fr만 쓴다) · 🔴 **코퍼스 6편** → related 6 · quickRef 링크 전부 비움 · 게이트 F항 신설 |
 | **id** | ✅ 09-19 배포(WORKLOG 09-19 · `35dfadaa` · MB-065) | `docs/keyword-bank/id-calculator.md` | 권역 = 인도네시아 단일 · Equity 탭(«Equity»/«Hand lawan hand») + quickRef 6표 + FAQ 18(id 고유 = TDA 2024 Rule 5 «Apakah boleh memakai kalkulator poker di meja?») + 메타 «Kalkulator Poker — Odds, Equity, ICM & Pot Odds». 🔴 **인니어 계산기 명사가 전멸**(«kalkulator + X» 자동완성 전부 0건 · 볼륨은 `kalkulator poker` 10만 생존) ↔ **영어형만 산다**(90/90) · 🔴 그런데 **영어 축은 조준 안 함**(SERP 10/10이 영어 도구 업계) · 🔴 머리어 «Kalkulator Odds Poker»(null) → **«Kalkulator Poker»로 교체** · 🔴 `/id/solver` 카니발이 fr보다 심했다(주석이 09-05에 멈춰 있었다) |
 | **ms** | ✅ 09-19 배포 | `docs/keyword-bank/ms-calculator.md` | 권역 = **말레이어권 단일**(ms-MY ≡ ms-SG ≡ ms-BN이 59시드 **전부 동일** — fr보다 더 붙어 있다 · 갈리는 축은 나라가 아니라 «어느 언어로 치는가») · Equity 탭(«Equity»/«Tangan lawan tangan») + quickRef 6표 + FAQ 18(ms 고유 = TDA 2024 **Rule 5-D** 「Bolehkah saya guna kalkulator poker di meja?」) + 메타 «Kalkulator Poker — Odds, Equity, ICM & Pot Odds». 🔴 **말레이어 도구 어휘가 id보다 더 죽어 있다**(22구 전멸 · `kalkulator poker`가 4조합 모두 0건 · 볼륨 **null** — id는 10이라도 있었다) ↔ 영어 `poker odds calculator`·`poker calculator` 각 **90** · 🔴 그래도 영어는 조준 안 함(SERP **20/20** 글로벌 업계) · 말레이어 SERP는 비었다(**#1이 개인 GitHub Pages** + 3/8 의도 불일치) · 🔴 머리어 «Kalkulator odds poker» → **«Kalkulator Poker»**(Malaysia 재측정) · `percentGap` 없음(1,599 : 0) |
-| hi | ⏳ | — | 마지막 미재조준 로케일 · §3-I 표 7자리를 EN 정본과 먼저 대조 |
+| **hi** | ✅ 09-19 배포(`4a6842f0`) | `docs/keyword-bank/hi-calculator.md` | 권역 = 인도 단일 · Equity 탭(«Equity»/«हैंड बनाम हैंड») + quickRef 6표 + FAQ 18(hi 고유 = TDA 2024 Rule 5) + 메타 «Poker Odds Calculator — equity, pot odds और ICM». 🔴 **머리어를 영어로 «유지»한 유일한 로케일** — 힌디어 도구구는 전부 볼륨 null이고 자동완성이 **영어로 치환**돼 돌아오는데(id·ms의 «0건»과 다른 세 번째 형태), 인구 14억에서 `पोकर`는 880이라 «해상도 아래»로 설명되지 않는다 → 2026-09-16 사장님 지시를 실측이 **확인**. 🔴 힌디어 SERP는 **유기 9개 중 5개가 translate.google.com**(최강 공백 신호)이지만 그 자리엔 **수요가 없다** — 공백은 본문이 힌디어인 것으로 먹는다 · `percentGap` 없음(1,611 : 0) · `numberLocale: en-US`(लाख 묶음 0건) |
+
+> ✅ **계산기 로케일 트랙 종료 — 11/11**(en·ja·zh·zh-hant·es·pt·de·fr·id·ms·hi). ko는 별도 클라이언트라 후순위(§0 ko 행).
+> 🔴 **§3-I 미재조준 로케일은 이제 없다.** 게이트 `check:calc-parity`의 G항 «미검사» 로케일도 없다(hi가 quickRef를 채웠다).
 | ko | ⏳ 후순위 | GSC 실측 메타 보유 | 별도 클라이언트 · Equity 탭 이식은 공용화 뒤 |
 
 ## 1. 공통 골격 (EN에서 확정 · 로케일은 «값 동일 · 문안 현지화»)
@@ -224,6 +227,53 @@
   🔴 **부작용**: 그 한 슬러그가 **한 페이지에서 4자리**(pushfold · deal.link · quickRef⑥ · related[0])에 쓰인다.
   EN은 그 네 자리에 서로 다른 4슬러그를 쓴다 — **ms에 대체 글이 생기면 우선 분산 대상**이다.
 
+### 3-M. hi 회차가 남긴 것 (09-19 · **계산기 로케일 트랙의 마지막 회차**)
+
+- 🔴 **«볼륨 null»의 해석은 «같은 표에서 잡힌 자국어 최대값»과 «인구»를 같이 봐야 한다** — §3-L ①의 다음 단계다.
+  ms는 인구 3,200만이라 «10 미만 → null»이 구조적이었지만, **hi는 인구 14억에서 데바나가리 `पोकर`가 880으로 잡히는데도**
+  도구구(`पोकर कैलकुलेटर` 등)가 전부 null이다. → **해상도가 아니라 부재다.**
+  🔴 **일반화**: 「null을 보고 «조준하라»로 가기 전에, **그 언어의 문자로 잡히는 최대 볼륨**을 찾아라.
+  그게 자국어 문자로 크게 잡히는데 도구축만 null이면 그건 시장 사실이지 측정 실패가 아니다.」
+  → 그래서 hi는 **머리어를 영어로 «유지»한 유일한 로케일**이다(id·ms는 자국어로 «교체»했다).
+
+- 🔴 **«공백 SERP»의 세 번째 신호형 — 자동완성이 «영어로 치환»해서 돌아온다.**
+  id는 자동완성 **0건**, ms도 **0건**이었지만 hi는 **0건이 아니다**: `पोकर संभावना कैलकुलेटर` → `poker probability calculator`(5개 전부 영어) ·
+  `पोकर इक्विटी कैलकुलेटर` → 영어 10개. **구글이 그 언어의 쿼리 공간을 안 들고 있어서 라틴으로 대체하는 것**이다.
+  🔴 **비라틴 문자 로케일(hi·ar·th·he 등)에서는 «0건»이 아니라 «라틴으로 치환»이 공백의 신호다** — 0건만 찾으면 놓친다.
+
+- 🔴 **«SERP가 비었다»와 «제목을 자국어로 바꿔라»는 다른 명제다.** hi의 힌디어 SERP는 **유기 9개 중 5개가
+  `translate.google.com`**(id의 3/8보다 강한, 지금까지 가장 뚜렷한 공백)인데도 제목은 영어를 유지했다 —
+  **그 자리에 검색량이 없기 때문**이다. 공백 + 수요 없음 = 제목을 바꿔 얻을 게 없고, **본문이 그 언어 원문인 것만으로 충분하다**
+  (경쟁자가 전부 기계번역이라 그것만으로 차별점이 된다). ms는 «공백 + 수요 불명»이라 제목까지 갔다 — **판정 축이 다르다.**
+
+- 🔴 **§3-L ⑤(폴백 3분기)의 «ms 정정» 서술이 과했다 — 이 회차가 원문으로 반증했다.**
+  `app/ms/calculator/dict.ts:166`은 지금도 `A9o, A5o, K9o, Q9o`이고 «A9o, A7o, A5o로 고쳤다»는 **사실이 아니다**.
+  다만 ms의 라벨은 「Ace offsuit **atau dua kad tinggi**」라 K9o가 **라벨상 정합**이므로 **ms는 오류가 아니다**.
+  실제 오류는 **id뿐**이다(「dua kartu **broadway** (K9o)」 — 9는 브로드웨이가 아니다 · id 정정 대상).
+  🪶 **교훈**: 「예시 카드만 보고 판정하지 마라 — **분기 «라벨»이 그 카드를 덮는지** 먼저 읽어라.」
+
+- 🔴 **폴백 수정은 «양쪽 끝»을 동시에 봐야 한다 — 이 회차에서 세 번 뒤집혔다.**
+  ① 팔을 «ace-offsuit만»으로 좁혔더니 **K9o·Q9o·J9o·10-9o가 전 포지션 폴드**가 됐다(딜러 렌즈)
+  ② 「두 장 다 9 이상」으로 되돌렸더니 주석 열거에 **98o를 잘못 넣었다**(8이라 조건 밖 · 교열 렌즈)
+  ③ 1분기 겹침을 «बाक़ी»로 풀었더니 **32s·42s까지 CO 오픈**으로 확정됐다(2차 교열) → 연결자 갈래에 **«작은 쪽 카드 3 이상»** 바닥을 박아 해소.
+  🔴 **처방**: 폴백 문안을 고칠 때마다 **표 밖 122개를 스크립트로 재분류해 각 분기가 잡는 집합을 세라.** 눈으로는 세 번 다 놓쳤다.
+
+- 🪶 **2차 교열의 네 번째 실증 — 이번엔 7건**(fr 8 · id 16중 9 · ms 1). 그중 **4건이 «1차 렌즈 반영이 만든» 새 결함**이고,
+  한 건은 «교열 렌즈가 앵커 중복을 없애라»고 해서 고쳤더니 **linkLead와 앵커가 한 문장 안에서 축어 중복**이 된 자리다.
+  **«중복 제거» 지적을 반영할 땐 반영 후 그 문장을 통째로 다시 읽어라.**
+
+- 🪶 **표기 정본은 «코퍼스»가 아니라 «그 화면이 실제로 찍는 문자열»일 수 있다** — `T9o`로 적었는데
+  `displayHandName()`이 `10-9o`로 찍어 독자가 같은 핸드를 못 알아본다. **핸드 코드를 사전에 손으로 쓸 땐 렌더 함수를 먼저 확인하라.**
+
+- 🪶 **인도 고유 오염 갈래**: `आईसीएम कैलकुलेटर` → **`lcm कैलकुलेटर`**(최소공배수 · 수학) · `spr calculator` → **`sip calculator`**
+  (인도 금융 Systematic Investment Plan) · `poker hindi` → «hindi meaning in english/malayalam» = **사전 의도**(시드로 쓰지 마라).
+
+- 🪶 **DFS SERP는 힌디어에서 `language_code: "hi"`를 거부한다**(40101 Internal SE Server Error) — **`language_name: "Hindi"`**로는 된다.
+  메모리 「«측정 불가»는 벤더가 아니라 엔드포인트 단위로 적어라」의 재확인이되, **이번엔 «필드 이름» 단위**다.
+
+- 🪶 **`related` 8슬러그와 «EN 9슬러그»는 다른 집합이다** — hi는 전자가 **0/8**, 후자가 **1/9**(`holdem-tournament-vs-cash-game`)다.
+  두 수를 섞어 적으면 주석이 틀린다(교열 렌즈가 내 주석에서 잡았다).
+
 ### 3-D. 🔴 모델 분담 — 절약 국면 (2026-09-17 사장님: 「Fable만 썼더니 한도가 찬다 · Fable/Opus 구분해라」)
 
 zh 회차의 소모 구조 = **헤드(Fable)가 전부**였다: 실측 도구 호출 · 뱅크·사전·FAQ·page 집필 · 렌즈 반영 · 마감 문서까지 한 창. 서브(sonnet 2 · Opus 3)는 그에 비하면 작다.
@@ -374,3 +424,24 @@ de 회차의 렌즈 2종이 「de 번역 문제」로 보고한 것들이 실은
   뒤 순서인 `KQs "Raise from most positions"`·`KJs "raise or fold from EP"`보다 **좁다** ②
   `K10o "Occasionally from BTN"` → `Q10o "BTN only"` → `J10o "Occasionally from BTN"`로 **가운데(더 약한) Q10o만 완화형**이다.
   둘 다 EN 상속이라 ms는 건드리지 않았다 — **EN 정정 후 전 로케일 전파** 후보.
+
+### hi 회차(09-19)가 §5에 더한 것
+
+- 🔴 **전 로케일 부채 발견 — 포스트가 `/hand-chart`(한국어 UI 도구 페이지)를 가리키는 자리가 «21로케일 29자리»다.**
+  fr 미결 ②(`docs/`·핸드오프)는 **fr 고유가 아니었다.** 실측:
+  ja·it·id·de 각 2 · ar·bn·fa·fil·fr·he·**hi**·ms·pl·ro·ru·sw·th·tr·uk·vi·zh-hant 각 1.
+  대부분 `texas-holdem-rules-for-beginners`의 같은 문단이고, id·ja·de는 `holdem-starting-hands-chart`에도 있다.
+  🔴 **계산기에 «Starting Hand» 탭이 생긴 뒤라 재조준 대상**이다(로케일 랜딩이 있는 11곳은 `/{loc}/calculator`로,
+  없는 곳은 그대로 두거나 `/calculator`로). **포스트 수정이라 posting.mdc 절차 → 별도 회차**(queue 후보).
+- 🟠 **EN `starting.unknownAction`의 «두 장의 브로드웨이» 팔을 «ace-offsuit만»으로 대체하면 안 된다** — ms 회차 §5의 처방을
+  그대로 실으면 K9o·Q9o·J9o·T9o가 «나머지 = fold»로 떨어져 **BTN 표준 오픈이 전 포지션 폴드**가 된다(hi 딜러 렌즈).
+  hi가 쓴 형 = **«ace offsuit, 또는 두 장 다 9 이상»**(덮는 표 밖 집합 = K9o·Q9o·J9o·10-9o 넷 · 98o는 8이라 제외).
+  1분기 연결자 갈래에는 **«작은 쪽 카드 3 이상»** 바닥이 필요하다(없으면 32s·42s까지 CO 오픈).
+- 🪶 **EN 티어 역전 1건 추가 실측**(hi 2차 교열): 폴백에 걸리는 `43s`(Tier 5)가 표 안 `54s`·`65s`(Tier 4 · «Call LP»만)보다
+  **공격적으로 읽힌다** — EN 동형이라(EN 폴백 «Cutoff/button only» ↔ EN 54s «Call LP») hi는 건드리지 않고 예시에서만 뺐다.
+  **EN 정정 후 전 로케일 전파** 후보(§5의 `K10o/Q10o/J10o`·`A10s/KQs` 역전과 같은 묶음).
+- 🪶 **EN `A3s` «Bottom of the suited aces»는 같은 표에 A2s가 있어 거짓이다**(hi 네이티브 렌즈). EN + 12로케일 공통.
+- 🪶 **EN `outs.exactNote` «The big number»는 «활자 크기»인데 번역이 «값의 크기»로 뒤집기 쉽다** — hi 초안이 실제로
+  `मान`(값)으로 옮겨 **«더 큰 쪽 수치가 정확값»** = Rule of 4 추정치를 고르게 만들었다(항상 추정치가 더 크다).
+  🔴 **전 로케일 grep 후보**: de `große Zahl` · ja `大きい数字` · ms `Angka besar` · zh `那個大數字`는 활자 뜻이 살아 있다.
+
