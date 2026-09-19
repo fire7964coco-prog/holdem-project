@@ -128,8 +128,10 @@ export const SOLVER_FAQ_ID: FaqItem[] = [
   },
   {
     // 관련검색 `gto poker calculator` 흡수 — 앱 내장 Equity 탭(네비 축어 «Equity % menang»)이 받는다.
+    // 🔴 2026-09-19: 끝에 «계산기 페이지» 핸드오프 한 문장 추가(브리프 §3-J ③ · PICK_TOOL 표가 링크를 준다).
+    //    FAQ 답은 평문 렌더라 링크를 못 넣는다 — 페이지 이름만 축어로 부른다.
     q: "Apakah ada kalkulator equity poker gratis di dalamnya?",
-    a: "Ada — tab Equity (% menang), gratis dan tanpa akun: Anda memilih dua kartu Anda, lawan bisa berupa satu hand tertentu atau satu range utuh, dan board kosong memberikan equity preflop — dengan 3, 4, atau 5 kartu, Anda mendapat equity flop, turn, atau river. Tab ini menghitung equity all-in antara dua pemain; begitu ada bet dan fold di tengah jalan, itu pekerjaan solver itu sendiri.",
+    a: "Ada — tab Equity (% menang), gratis dan tanpa akun: Anda memilih dua kartu Anda, lawan bisa berupa satu hand tertentu atau satu range utuh, dan board kosong memberikan equity preflop — dengan 3, 4, atau 5 kartu, Anda mendapat equity flop, turn, atau river. Tab ini menghitung equity all-in antara dua pemain; begitu ada bet dan fold di tengah jalan, itu pekerjaan solver itu sendiri. Untuk hitungan cepat tanpa menjalankan solver — pot odds, outs, SPR, nilai M, dan ICM — kami punya halaman Kalkulator Poker tersendiri (tautannya ada di tabel di atas).",
   },
   {
     q: "Apakah ini solver GTO poker open source?",

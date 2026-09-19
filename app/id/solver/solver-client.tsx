@@ -38,10 +38,11 @@ const SOLVER_URL = "https://solver.holdemmaster.com/?lang=id";
  *   equity·postflop = **영어 그대로**(id 42편 실측 — solver 26회 · range 215회 · board 380회) ·
  *   소수 구분자 **쉼표**(`0,0%` — 앱 표기).
  *
- * 🔴 내부링크(브리프 §6) — **id에는 도구 라우트가 없다**(`hand-chart`·`calculator`·`glossary`·`quiz`
- *   전부 404 — EN 링크를 옮기면 깨진다). 대신 id 블로그 42편이 두껍고 **표준 세트 12/13 성립**.
- *   링크 개수·대상 구조는 EN 랜딩과 같게 — 도구 자리를 같은 역할의 글로 치환했다
- *   (hand-chart→`holdem-starting-hands-chart` · calculator→`holdem-pot-odds` · quiz→`holdem-equity`).
+ * 🔴 내부링크(브리프 §6) — ~~id에는 도구 라우트가 없다~~ **2026-09-17에 `/id/calculator`가 생겼다**(09-19 갱신 ·
+ *   아래 `PICK_TOOL` 주석과 같은 사실). 아직 없는 것은 `hand-chart`·`glossary`·`quiz` 셋뿐이다.
+ *   대신 id 블로그 55편이 두껍고 **표준 세트 12/13 성립**. 링크 개수·대상 구조는 EN 랜딩과 같게 —
+ *   아직 없는 도구 자리만 같은 역할의 글로 치환한다
+ *   (hand-chart→`holdem-starting-hands-chart` · quiz→`holdem-equity` · **calculator는 이제 `/id/calculator`로 직접 간다**).
  *   ❌ `holdem-range-meaning`은 id에 없다 — 링크 걸지 않았다. 경로 = `/id/blog/<slug>`.
  *   🔴 프리플랍 레인지표 축은 `holdem-starting-hands-chart`가 소유 — 랜딩은 포스트플랍으로 가른다.
  *
@@ -98,14 +99,19 @@ const SPEC: [string, string][] = [
 
 /**
  * 「무엇을 원하나 → 어디로」 — 내부 역할 분리 표.
- * 🔴 **id에는 도구 라우트가 없다**(브리프 §6) — EN의 hand-chart·calculator·quiz 자리를 같은 역할의
- *    id 블로그 글로 치환했다(전건 `lib/posts-id/<slug>.ts` 실존 확인 · 2026-09-05).
+ * 🔴 ~~id에는 도구 라우트가 없다~~ — **2026-09-17에 `/id/calculator`가 생겼다.** 이 주석(09-05)을
+ *    믿고 두면 계산기 의도가 계속 블로그로 샌다(브리프 §3-J ③ «도구 → 도구 카니발» · fr 선례).
+ * 🔴 2026-09-19(id 계산기 회차): outs·pot odds 행과 equity 행 **둘을 도구로 재조준**하고 ICM 행 **하나를 신설**했다(4행 → 5행) —
+ *    셋 다 «계산기» 의도이고, 09-19부터 계산기에 Equity 탭이 있다. 개념 설명 몫은 그대로 블로그가 갖는다
+ *    (계산기 dict의 quickRef·related가 같은 글들을 가리킨다 = 도구 ↔ 글 왕복).
+ *    `hand-chart`·`quiz` 자리는 여전히 id 라우트가 없어 블로그로 둔다.
  */
 const PICK_TOOL: readonly [string, string, string | null][] = [
   ["Menghitung satu spot postflop dan melihat frekuensi bet", "Solver GTO di halaman ini", null],
   ["Melihat hand mana yang dibuka dari tiap posisi", "Chart starting hands", "/id/blog/holdem-starting-hands-chart"],
-  ["Menghitung outs dan pot odds tanpa menjalankan solver", "Panduan pot odds", "/id/blog/holdem-pot-odds"],
-  ["Melatih perkiraan equity Anda", "Panduan equity poker", "/id/blog/holdem-equity"],
+  ["Menghitung outs dan pot odds tanpa menjalankan solver", "Kalkulator Poker", "/id/calculator"],
+  ["Mengadu dua hand dan melihat % menangnya", "Kalkulator equity", "/id/calculator"],
+  ["Menghitung nilai hadiah di bubble atau saat deal", "Kalkulator ICM", "/id/calculator"],
 ];
 
 /** 사용법 — 앱 사이드바 탭 라벨을 그대로 쓴다(브리프 §1-2 축어 · ⑤=«Hitung»). */
@@ -337,7 +343,10 @@ export default function SolverClientId() {
         </p>
         {/*
           «부르는 이름» 문단 — 검색어 변형을 여기서만 축어로 놓는다(플레이북 §4-5 · 브리프 §2-1):
-          gto poker 50 · gto solver 10 · solver poker 10 · poker solver 10 · kalkulator poker 10.
+          gto poker 50 · gto solver 10 · solver poker 10 · poker solver 10.
+          🔴 2026-09-19: 이 열거에 있던 `kalkulator poker` 10은 **`/id/calculator`에 양보**했다 —
+             09-19부터 그 페이지의 H1·title 머리어다(뱅크 §5 «도구 → 도구 카니발»). 본문의
+             «kalkulator GTO»는 솔버 것이라 유지한다(GTO 한정어가 붙어 다른 구다 — de §3-H «구 단위 판정»).
         */}
         <p className="mt-3 text-sm text-muted-foreground">
           Alat yang sama punya beberapa nama:{" "}

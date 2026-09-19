@@ -239,8 +239,9 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
   id: [
     { href: "/id/blog",   icon: "📚", label: "Blog" },
     { href: "/id/solver", icon: "🧠", label: "Solver GTO" },
-    // ★2026-09-17 `/id/calculator` 신설. 라벨 = 제목 「Kalkulator Odds Poker — …」의 단축형.
-    { href: "/id/calculator", icon: "🧮", label: "Kalkulator Odds" },
+    // ★2026-09-17 `/id/calculator` 신설 → ★2026-09-19 머리어 교체에 맞춰 라벨도 같이(뱅크 §4 · fr §3-J ⑤의 «다섯 자리»).
+    //   옛 라벨 「Kalkulator Odds」는 이제 존재하지 않는 페이지 이름이다(제목·H1·CTA 전부 «Kalkulator Poker»).
+    { href: "/id/calculator", icon: "🧮", label: "Kalkulator Poker" },
   ],
   // ms — 실제 존재하는 블로그와 신규 솔버 랜딩만 연결한다.
   ms: [
