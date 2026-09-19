@@ -15,8 +15,16 @@ const SPEC: [string, string][] = [
   ["Enjin", "WASM Postflop sumber terbuka (AGPL-3.0) · kod sumber yang diubah suai diterbitkan"],
 ];
 
+// ★2026-09-19 (ms 계산기 회차) — 계산기 행 3개 신설.
+// 🔴 `/ms/calculator`는 09-17에 생겼는데 이 표에는 계산기 행이 «처음부터 없었다» — id처럼 「라우트가 없다」는
+//    옛 주석이 원인이 아니라 빈 채로 열린 경우다(브리프 §3-K ③의 변종). 그래서 outs·pot odds·equity·ICM 의도가
+//    솔버에서 갈 곳이 없었고, 아래 FAQ 「Adakah ini kalkulator peluang poker atau solver strategi?」도
+//    계산기를 안 가리켰다(도구 → 도구 링크 0건 · 메모리 `seo-tool-vs-blog-cannibalization`).
 const PICK_TOOL: readonly [string, string, string | null][] = [
   ["Kira strategi untuk situasi postflop tertentu", "Solver pada halaman ini", null],
+  ["Kira outs dan pot odds tanpa menjalankan solver", "Kalkulator Poker", "/ms/calculator"],
+  ["Adu dua tangan dan lihat peratus menangnya", "Kalkulator equity", "/ms/calculator"],
+  ["Kira nilai hadiah di bubble atau semasa deal", "Kalkulator ICM", "/ms/calculator"],
   ["Belajar peraturan dan cara bermain", "Panduan Texas Hold'em untuk pemula", "/ms/blog/texas-holdem-rules-for-beginners"],
   ["Fahami bet, check, call, raise dan fold", "Panduan aksi pertaruhan", "/ms/blog/holdem-betting-actions"],
   ["Fahami small blind dan big blind", "Panduan blind dalam poker", "/ms/blog/holdem-blind-meaning"],

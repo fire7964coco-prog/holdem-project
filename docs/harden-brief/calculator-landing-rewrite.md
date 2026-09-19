@@ -18,7 +18,8 @@
 | **de** | ✅ 09-18 배포(WORKLOG 09-18 · `688b67d1`) | `docs/keyword-bank/de-calculator.md` | 권역 = DACH(3지역 자동완성 차이 사실상 0) · Equity 탭(«Equity»/«Hand gegen Hand») + quickRef 6표 + FAQ 18(de 고유 = TDA 2024 Rule 5 «Darf man am Pokertisch einen Rechner benutzen?») + 메타 «Poker-Odds-Rechner – Equity, Wahrscheinlichkeiten & ICM». 🟢 **ICM 오염 0**(es=IMC·pt=ICMS와 달리 독일어 BMI는 «BMI») · 🔴 오염은 **다른 5갈래**로 왔다(Quotenrechner=스포츠베팅 · chip chop=햄 · equity rechner=금융 · harrington m=재킷 브랜드 · poker kalkulator=폴란드어) · 🔴 **4/2 규칙 직역은 자동완성 전멸 → «Faustregel»** · 🔴 영문 머리어가 자국어의 **2.3배**(590:260) |
 | **fr** | ✅ 09-18 배포(WORKLOG 09-18 (2) · `140f585d` · MB-064) | `docs/keyword-bank/fr-calculator.md` | 권역 = **프랑스 단일**(FR/BE/CH/CA 자동완성 74시드 **전부 동일** — de의 DACH보다 더 붙어 있다) · Equity 탭(«Équité»/«Main contre main») + quickRef 6표 + FAQ 18(fr 고유 = TDA 2024 Rule 5-D) + 메타 «Calculateur poker — équité, cotes du pot et ICM». 🔴 **도구 명사를 «Calculatrice» → «Calculateur»로 교체**(볼륨은 동의어군 390이라 못 가른다 · SERP title 6/6) · 🔴 **Equity = «Équité»**(110 : 50 · 옛 사전 주석이 반대였다) · 🔴 **«Push or Fold»는 영어 «or»**(«push ou fold» null ×3 · PokerStars.fr만 쓴다) · 🔴 **코퍼스 6편** → related 6 · quickRef 링크 전부 비움 · 게이트 F항 신설 |
 | **id** | ✅ 09-19 배포(WORKLOG 09-19 · `35dfadaa` · MB-065) | `docs/keyword-bank/id-calculator.md` | 권역 = 인도네시아 단일 · Equity 탭(«Equity»/«Hand lawan hand») + quickRef 6표 + FAQ 18(id 고유 = TDA 2024 Rule 5 «Apakah boleh memakai kalkulator poker di meja?») + 메타 «Kalkulator Poker — Odds, Equity, ICM & Pot Odds». 🔴 **인니어 계산기 명사가 전멸**(«kalkulator + X» 자동완성 전부 0건 · 볼륨은 `kalkulator poker` 10만 생존) ↔ **영어형만 산다**(90/90) · 🔴 그런데 **영어 축은 조준 안 함**(SERP 10/10이 영어 도구 업계) · 🔴 머리어 «Kalkulator Odds Poker»(null) → **«Kalkulator Poker»로 교체** · 🔴 `/id/solver` 카니발이 fr보다 심했다(주석이 09-05에 멈춰 있었다) |
-| ms · hi | ⏳ | — | 한 언어씩 · `npm run check:calc-parity -- <loc>`가 미채움을 «미검사»로 표시한다. 🔴 **ms는 `CALC_CTA_LABELS.ms`가 id가 폐기한 «Kalkulator odds poker»를 들고 있다** — 그대로 옮기지 말고 `location=Malaysia`로 **재측정**(§3-J: 로케일 상수가 아니다) |
+| **ms** | ✅ 09-19 배포 | `docs/keyword-bank/ms-calculator.md` | 권역 = **말레이어권 단일**(ms-MY ≡ ms-SG ≡ ms-BN이 59시드 **전부 동일** — fr보다 더 붙어 있다 · 갈리는 축은 나라가 아니라 «어느 언어로 치는가») · Equity 탭(«Equity»/«Tangan lawan tangan») + quickRef 6표 + FAQ 18(ms 고유 = TDA 2024 **Rule 5-D** 「Bolehkah saya guna kalkulator poker di meja?」) + 메타 «Kalkulator Poker — Odds, Equity, ICM & Pot Odds». 🔴 **말레이어 도구 어휘가 id보다 더 죽어 있다**(22구 전멸 · `kalkulator poker`가 4조합 모두 0건 · 볼륨 **null** — id는 10이라도 있었다) ↔ 영어 `poker odds calculator`·`poker calculator` 각 **90** · 🔴 그래도 영어는 조준 안 함(SERP **20/20** 글로벌 업계) · 말레이어 SERP는 비었다(**#1이 개인 GitHub Pages** + 3/8 의도 불일치) · 🔴 머리어 «Kalkulator odds poker» → **«Kalkulator Poker»**(Malaysia 재측정) · `percentGap` 없음(1,599 : 0) |
+| hi | ⏳ | — | 마지막 미재조준 로케일 · §3-I 표 7자리를 EN 정본과 먼저 대조 |
 | ko | ⏳ 후순위 | GSC 실측 메타 보유 | 별도 클라이언트 · Equity 탭 이식은 공용화 뒤 |
 
 ## 1. 공통 골격 (EN에서 확정 · 로케일은 «값 동일 · 문안 현지화»)
@@ -186,6 +187,42 @@
 - 🪶 **코퍼스가 두꺼우면(55편) 링크는 전건 실존한다** — EN 9슬러그가 id에 전부 있어 fr(6편)식 «비우기»가 불필요했다.
   그래도 `check:calc-parity` F항을 렌즈 **전에** 돌렸다(47 → 0).
 
+### 3-L. ms 회차가 남긴 것 (09-19 · 다음 로케일이 그대로 쓴다)
+
+- 🔴 **«볼륨 null»은 «수요 0»이 아니라 «측정 해상도 아래»일 수 있다.** Google Ads는 월 10 미만을 null로 준다.
+  말레이시아 인구 **3,200만** ↔ 인도네시아 **2.8억**(≈9배)이라 id의 «10»은 ms에서 구조적으로 null로 나온다.
+  → **null을 보고 «그 언어를 버려라»로 가지 마라.** 판별 축 둘: ① **같은 언어의 다른 축이 사는가**
+  (ms는 `texas holdem` 720 · `poker malaysia` 140 — 시장은 있고 도구만 영어로 친다) ② **그 언어 SERP가 비었는가**(아래).
+  둘 다 예면 조준한다. 🪶 id(§3-K ②)와 **결론은 같고 근거가 다르다** — 근거를 베끼지 말고 다시 세워라.
+- 🔴 **«공백 SERP»의 두 번째 신호형**: id는 `translate.google.com`이 3/8이었다. ms는 **#1이 개인 GitHub Pages 습작**
+  (`b-inary.github.io`)이고 8개 중 3개가 **의도 불일치**(wsop 상금분배 · easysevens 정산로그 · pokercalculator.app 칩정산)였다.
+  → **일반화: 「#1이 기관·업계가 아니고 절반이 의도 불일치면 그 자리는 비어 있다.」** 구글이 그 언어로 내줄 게 없어 아무거나 채운 것이다.
+- 🔴 **구글의 `hl=<언어>` 자동완성 DB가 «인접 언어»로 오염돼 있을 수 있다** — `hl=ms`가 「cara main poker **gimana**」·
+  「**remi**」·「**kartu**」(전부 인도네시아어)를 준다. → **자동완성으로 언어를 판정할 때 인접어 오염을 먼저 걸러라.**
+  대조군은 우리 코퍼스다(ms는 kad 459 : kartu 0 · boleh 409 : bisa 0 · kejohanan 33 : turnamen 0으로 깨끗했다).
+  🪶 이 위험이 큰 짝: **ms↔id · zh↔zh-hant · es↔pt**. 그 짝의 로케일 회차는 **선례 사전을 베끼면 인접어가 새어 든다.**
+- 🔴 **§3-K ⑤(역어는 «그 뜻으로 쓰이는지»까지 세라)가 ms에서 뒤집혔다** — id는 `kenaikan` 6/6이 «증가»라 raise 역어로 못 썼지만,
+  **ms는 4건 중 2건이 진짜 raise다**(「kenaikan minimum」·「kenaikan $4 di atas blind $2」). **로케일 상수가 아니다 — 매번 센다.**
+- 🔴 **브리프 §5 id ⓐ의 근거가 과했다(이 회차가 정정)**: 「EP에는 앞선 레이즈가 있을 수 없다」는 **UTG에만 참**이다.
+  MP·EP+1은 UTG 레이즈를 마주할 수 있다. → 처방은 «call을 없애는 것»이 아니라 **«무엇에 대한 call인지 명시 + 오픈 림프 금지»**다.
+  선례 **7로케일(ja·zh·zh-hant·es·pt·fr·id)이 전부 그렇게 풀었고**(de만 아직 옛 문안), ms도 같은 형으로 되돌렸다.
+  🪶 내가 처음에 「raise atau fold」로 썼다가 **자가검사에서 되돌렸다** — 「선례 N개가 같은 형인데 나만 다르면 그게 신호다」(§3-K ⑥ 동형).
+- 🔴 **폴백 3분기를 옮길 때 «한정어»를 잃지 마라.** id의 3분기를 ms로 옮기며 「Suited」를 한정어 없이 써서
+  **72s·J2s·92s까지 CO/BTN 오픈 허가**가 됐고(수티드 54개 전부), id에 있던 **first-in 조건**(「kalau semua fold ke Anda」)도 빠졌다.
+  → 전파할 땐 **원문의 한정어·조건절을 토큰 단위로 대조**하라.
+  🔴 **그리고 예시 카드가 «정말 표 밖인지» 세라** — id·ms 둘 다 2분기 예시를 `K9o`로 적었는데 K9o는 ace-offsuit도 브로드웨이도 아니다.
+  실측하면 **오프수트 브로드웨이 10개가 전부 HAND_TABLE 안**이라 그 분기는 **ace-offsuit(A9o~A2o)만 남는다**(id도 정정 대상).
+- 🪶 **조판 실측에서 마크업을 먼저 걸러라** — ms 코퍼스의 `[0-9],[0-9]` 335건은 전부 **rgba CSS 색상**이었다(`rgba(255,248,210,0.10)`).
+  안 거르면 «소수 콤마 로케일»로 오판해 `numberLocale`을 틀리게 잡는다.
+- 🪶 **새 오염 갈래(말레이시아·싱가포르 고유)**: `spr calculator` → **`spr cpf calculator`**(싱가포르 영주권 CPF 납입).
+  `peraturan 4 dan 2`(rule of 4 and 2 직역)는 법령 노이즈 — de의 «Faustregel» 교훈과 같은 결이되 **ms는 영어형이 답**이다.
+- 🪶 **게이트 주석도 낡는다** — `calc-dict-parity.ts` G항 주석이 「ms·hi는 판정하지 않는다」로 굳어 있었다.
+  ms가 quickRef를 채운 순간 판정 대상이 됐으므로(186 : 0) 같이 고쳤다(셀프테스트 20/20 유지). **다음 로케일은 hi 차례에 같은 줄을 본다.**
+- 🪶 **ms 코퍼스는 21편인데 EN 9슬러그가 «0개»가 아니라 «1개» 실재한다**(`holdem-tournament-vs-cash-game`).
+  그래서 related 8은 전부 자국 코퍼스에서 골랐고 quickRef는 ①②만 비웠다(fr는 6편이라 전부 비웠다).
+  🔴 **부작용**: 그 한 슬러그가 **한 페이지에서 4자리**(pushfold · deal.link · quickRef⑥ · related[0])에 쓰인다.
+  EN은 그 네 자리에 서로 다른 4슬러그를 쓴다 — **ms에 대체 글이 생기면 우선 분산 대상**이다.
+
 ### 3-D. 🔴 모델 분담 — 절약 국면 (2026-09-17 사장님: 「Fable만 썼더니 한도가 찬다 · Fable/Opus 구분해라」)
 
 zh 회차의 소모 구조 = **헤드(Fable)가 전부**였다: 실측 도구 호출 · 뱅크·사전·FAQ·page 집필 · 렌즈 반영 · 마감 문서까지 한 창. 서브(sonnet 2 · Opus 3)는 그에 비하면 작다.
@@ -207,10 +244,10 @@ zh 회차의 소모 구조 = **헤드(Fable)가 전부**였다: 실측 도구 �
 
 - 경험담·에세이 섹션 추가(사장님 지시) · 탭 안에 색인용 문안 · 수치 재계산 · SPR/BB 제목 훅 · 로케일 사전 키 삭제.
 
-### 3-I. 🔴 미재조준 로케일(~~id~~ · **ms · hi**)이 **지금 들고 있는 구멍** (de 회차가 실측 · 09-18 · fr 09-18 · **id 09-19 해소**)
+### 3-I. 🔴 미재조준 로케일(~~id~~ · ~~ms~~ · **hi**)이 **지금 들고 있는 구멍** (de 회차가 실측 · 09-18 · fr 09-18 · id 09-19 · **ms 09-19 해소**)
 
 de 회차의 렌즈 2종이 「de 번역 문제」로 보고한 것들이 실은 **09-17 EN 경화가 로케일에 안 실린 것**이었다.
-`app/*/calculator/dict.ts` 전수 grep으로 세어 보니 **es·ja·pt·zh·zh-hant는 개정본을 이미 실었고, de·fr·id·ms·hi 5개만 개정 전**이었다(de 09-18 · **fr 09-18** · **id 09-19** 해소 → **남은 건 ms·hi 2개**).
+`app/*/calculator/dict.ts` 전수 grep으로 세어 보니 **es·ja·pt·zh·zh-hant는 개정본을 이미 실었고, de·fr·id·ms·hi 5개만 개정 전**이었다(de 09-18 · fr 09-18 · id 09-19 · **ms 09-19** 해소 → **남은 건 hi 하나**).
 🔴 **각 로케일 회차는 사전을 새로 쓰기 전에 아래를 EN 정본과 먼저 대조하라** — 안 하면 「완료」로 닫히고 유해 조언이 남는다(메모리 `completion-count-the-copies-first`).
 
 | 자리 | 개정 전(위험) | EN 정본 |
@@ -309,3 +346,26 @@ de 회차의 렌즈 2종이 「de 번역 문제」로 보고한 것들이 실은
   라이브 DOM은 fullTitle(제목+브랜드)이다. 이제 en·ja·zh·fr·id 5로케일에서 실측됐다 = **로케일 공통이 확정**이다.
 - 🪶 **ms 전파 후보**: `components/intl-blog-post-client.tsx`의 `CALC_CTA_LABELS.ms`가 id가 09-19에 폐기한 바로 그 구
   «Kalkulator odds poker»를 들고 있다. 🔴 **id 근거를 그대로 옮기지 마라** — `location=Malaysia`로 **재측정**이 ms 회차 첫 과제다.
+
+### ms 회차(09-19)가 §5에 더한 것
+
+- 🔴 **EN `starting.unknownAction`의 «오프수트 브로드웨이» 분기는 실제로 공집합이다** — id가 쓰고 ms가 물려받은 3분기안의
+  2분기(「ace offsuit **또는** 두 장의 브로드웨이」)에서, **오프수트 브로드웨이 10개(AKo AQo AJo ATo KQo KJo KTo QJo QTo JTo)가
+  전부 `HAND_TABLE` 안**이다. 폴백에 떨어지는 건 **ace-offsuit(A9o~A2o) 8개뿐**이다.
+  🔴 **id 사전의 예시 `K9o`도 틀렸다**(ace-offsuit도 브로드웨이도 아니다) — id 정정 대상. ms는 `A9o, A7o, A5o`로 고쳤다.
+  → EN에 3분기를 실을 때 이 실측을 반영하라(**tier 5 고정 코드 2줄**과 함께 · fr §5 ⓒ · id §5 ⓑ).
+- 🔴 **EN `starting.unknownDesc`에 «Tier 5 = 표 밖이지 최약이 아니다»라는 단서가 없다** — 코드가 폴백을 **tier 5로 고정**해
+  화면에 「🚫 Tier 5 — Weak」와 「Cutoff/button only」가 **나란히** 뜬다(K9s·A9o가 «최약»으로 낙인되면서 동시에 오픈 지시).
+  id가 desc로 막았고 ms도 따랐다 — **EN·나머지 8로케일 회灌 후보**.
+- 🪶 **EN FAQ Q4 「times-2 half runs 1–2 points low」는 ja·zh·zh-hant에 아직 미반영**(fr 09-18 표의 3열).
+  ms는 최신 문안(9 outs 1.6 · 15 outs 2.6)을 실었다 — 🔴 **번역이 «방향»을 뒤집기 쉬운 자리다**(ms 초안이 실제로
+  «terlebih»(초과)로 뒤집었고 렌즈 2종이 잡았다). 남은 로케일은 **부호를 검산하라**: 규칙 18% < 실제 19.6% = 규칙이 «낮다».
+- 🪶 **EN `quickRef[1].note`의 «no longer a favorite»는 번역이 사실을 흔든다** — «favorite»는 «equity 50% 미만»이라는
+  배당 용어인데 «최우선 선택»으로 옮기면 「AA가 이제 최선의 패가 아니다」라는 **거짓 명제**가 된다(49.2%는 나머지 5명 각 ~10% 대비 압도적 1위).
+  ms는 «peluang … jatuh di bawah 50%»로 풀었다 — **전 로케일 grep 후보**.
+- 🪶 **EN `pushfold`·`deal.link`·`quickRef[4]`·`quickRef[5]`·`related`가 가리키는 슬러그가 얇은 로케일에서 한 글로 수렴한다**
+  (ms는 `holdem-tournament-vs-cash-game` 하나가 4자리). 게이트 F항은 «실존»만 보고 «수렴»은 안 본다 — **F항 후속 후보**.
+- 🪶 **EN `starting.hands` 티어 내부 역전 2건 추가 실측**(ms 렌즈): ① `A10s "fold from EP unless passive"`가
+  뒤 순서인 `KQs "Raise from most positions"`·`KJs "raise or fold from EP"`보다 **좁다** ②
+  `K10o "Occasionally from BTN"` → `Q10o "BTN only"` → `J10o "Occasionally from BTN"`로 **가운데(더 약한) Q10o만 완화형**이다.
+  둘 다 EN 상속이라 ms는 건드리지 않았다 — **EN 정정 후 전 로케일 전파** 후보.

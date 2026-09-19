@@ -247,8 +247,9 @@ const LOCALE_HUB_PAGES: Record<string, readonly { href: string; icon: string; la
   ms: [
     { href: "/ms/blog",   icon: "📚", label: "Blog" },
     { href: "/ms/solver", icon: "🧠", label: "Solver GTO" },
-    // ★2026-09-17 `/ms/calculator` 신설. 라벨 = 제목 「Kalkulator Odds Poker — …」의 핵심명 축어.
-    { href: "/ms/calculator", icon: "🧮", label: "Kalkulator Odds Poker" },
+    // ★2026-09-19 재조준. 라벨 = 제목 「Kalkulator Poker — Odds, Equity, ICM & Pot Odds」의 핵심명 축어
+    //   (옛 「Kalkulator Odds Poker」는 Malaysia 재측정에서 볼륨 null·자동완성 0 — 뱅크 §2-A).
+    { href: "/ms/calculator", icon: "🧮", label: "Kalkulator Poker" },
   ],
   // hi — 기존 힌디 블로그와 신규 솔버 랜딩만 연결한다.
   hi: [

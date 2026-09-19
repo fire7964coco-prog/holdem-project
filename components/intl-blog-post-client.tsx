@@ -39,7 +39,11 @@ const CALC_CTA_LABELS: Partial<Record<SecondaryLocale, { title: string; subtitle
   "zh-hant": { title: "撲克機率計算器", subtitle: "勝率、補牌、底池賠率即時計算" },
   // hi는 힌디·영어 혼합이 어색해 EN 문구 그대로(사장님 지시 09-16 「계산기라는 현지 용어가 없으면 그냥 영어로」).
   hi: { title: "Poker Odds Calculator", subtitle: "Win %, outs & pot odds instantly" },
-  ms: { title: "Kalkulator odds poker", subtitle: "Equity, outs & pot odds serta-merta" },
+  // ★2026-09-19 (ms 계산기 회차) 교체 — «Kalkulator odds poker»는 `location=Malaysia` 재측정에서 볼륨 null ·
+  //   자동완성 확장 0이었다(id 근거를 옮긴 게 아니라 다시 쟀다 — 브리프 §3-J 「로케일 상수가 아니다」).
+  //   «Kalkulator Poker»도 말레이시아에선 볼륨 null이지만, 영어 축(90)은 SERP 20/20이 글로벌 업계라 승산이 없고
+  //   말레이어 SERP는 비어 있다(뱅크 `docs/keyword-bank/ms-calculator.md` §5).
+  ms: { title: "Kalkulator Poker", subtitle: "Equity, outs & pot odds serta-merta" },
   // fr — ★2026-09-17 `/fr/calculator` 신설과 함께 추가. title = fr 코퍼스 앵커 축어
   //   (lib/posts-fr/texas-holdem-rules-for-beginners.ts:444 「calculatrice de probabilités poker」) ·
   //   subtitle = es/pt 형제 부제와 같은 세 용어를 fr 코퍼스 표기(cotes du pot · equity)로.

@@ -144,7 +144,9 @@ if (descLen > 160) hit(`E desc ${descLen}자 > 160 (§11-7)`);
   const gapped = (dictText.match(/\d[   ]%/g) || []).length;
   const plain = (dictText.match(/\d%/g) || []).length;
   const gap = zh.percentGap ?? "";
-  if (gapped + plain >= 10) { // 표를 아직 안 채운 로케일(ms·hi)은 판정하지 않는다 — 미검사로 둔다
+  // 표를 아직 안 채운 로케일은 «숫자 뒤 %»가 10개도 안 나와 판정하지 않는다(미검사).
+  // ★2026-09-19 ms는 quickRef를 채워 판정 대상이 됐다(186 : 0 → percentGap 없음이 정답). 남은 미검사 = hi.
+  if (gapped + plain >= 10) {
     if (gapped > plain && !gap) hit(`G 사전은 «숫자 %»로 적는데(${gapped} : ${plain}) percentGap이 비었다 — 도구가 붙여 쓴다`);
     if (plain > gapped && gap) hit(`G 사전은 «숫자%»로 붙여 적는데(${plain} : ${gapped}) percentGap이 있다 — 도구만 띄운다`);
   }

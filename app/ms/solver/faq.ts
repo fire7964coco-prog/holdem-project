@@ -88,7 +88,7 @@ export const SOLVER_FAQ_MS: FaqItem[] = [
   },
   {
     q: "Adakah ini kalkulator peluang poker atau solver strategi?",
-    a: "Aplikasi ini menyediakan kedua-duanya. Tab Equity (% menang) mengira equity all-in antara dua pemain: pilih tangan anda, satu tangan atau range lawan, dan board jika ada. Board kosong memberikan equity preflop; tiga, empat atau lima kad memberikan equity flop, turn atau river. Untuk mengetahui kekerapan bet, check, call, raise atau fold serta EV sesuatu tindakan, gunakan solver postflop.",
+    a: "Aplikasi ini menyediakan kedua-duanya. Tab Equity (% menang) mengira equity all-in antara dua pemain: pilih tangan anda, satu tangan atau range lawan, dan board jika ada. Board kosong memberikan equity preflop; tiga, empat atau lima kad memberikan equity flop, turn atau river. Untuk mengetahui kekerapan bet, check, call, raise atau fold serta EV sesuatu tindakan, gunakan solver postflop. Untuk pengiraan pantas tanpa menjalankan solver — pot odds, outs, SPR, nilai M dan ICM — kami ada halaman Kalkulator Poker yang berasingan (pautannya ada dalam jadual di atas).",
   },
   {
     q: "Adakah solver GTO ini bersumber terbuka?",
