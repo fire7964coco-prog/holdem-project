@@ -496,7 +496,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/hi/solver</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -566,7 +566,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/hi/calculator</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -922,7 +922,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/hi</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/" />
