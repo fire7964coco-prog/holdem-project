@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Nel Texas Hold'em ogni giocatore riceve 2 carte personali, si usano 5 carte comuni e, dopo quattro giri di puntate, vince la migliore mano di 5 carte.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-08-14",
+  updated: "2026-09-19",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -283,7 +283,7 @@ Buone mani iniziali per principianti sono:
 
 </div>
 
-Per uno schema completo delle 169 mani organizzato per posizione (da UTG al bottone), consulta lo [schema delle mani iniziali del Texas Hold'em per posizione](/hand-chart). E prima di poter usare bene le mani iniziali, devi conoscere le tue [azioni di puntata — check, chiamare, rilanciare, passare](/it/blog/holdem-betting-actions).
+Per uno schema completo delle 169 mani organizzato per posizione (da UTG al bottone), consulta lo [schema delle mani iniziali del Texas Hold'em per posizione](/en/hand-chart). E prima di poter usare bene le mani iniziali, devi conoscere le tue [azioni di puntata — check, chiamare, rilanciare, passare](/it/blog/holdem-betting-actions).
 
 ---
 
@@ -440,7 +440,7 @@ Il Texas Hold'em è più facile da imparare quando separi le regole dalla strate
 
 Prima, ==impara il flusso==: bui, due carte personali, cinque carte comuni, quattro giri di puntate e migliore mano di cinque carte. ==g:Poi impara la posizione, le mani iniziali e le decisioni base sul piatto.==
 
-Come passo successivo, ripassa la classifica delle mani del Texas Hold'em, allenati con lo [schema delle mani iniziali](/hand-chart) e usa il [calcolatore di probabilità del poker](/calculator) quando vuoi capire perché una chiamata è profittevole o no.
+Come passo successivo, ripassa la classifica delle mani del Texas Hold'em, allenati con lo [schema delle mani iniziali](/en/hand-chart) e usa il [calcolatore di probabilità del poker](/en/calculator) quando vuoi capire perché una chiamata è profittevole o no.
 
 ---
 

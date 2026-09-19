@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Beim Texas Hold'em bekommt jeder Spieler 2 Hole Cards, dazu kommen 5 Gemeinschaftskarten – nach vier Setzrunden gewinnt die beste Fünf-Karten-Hand.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-11",
+  updated: "2026-09-19",
   // 🪶 「masterUpdated 07-12 동결」 지시는 해소됐다(queue Q5-a 실측 2026-09-13 · 값별 전건 추적).
   //    ddf265db(07-12)=07-12 · 125c83f5(09-09)=07-12(동결 유지) · 01c30673(09-10)=09-09 ← 실제로 푼 커밋
   //    · 522b57f8(09-11)=09-11 · queue Q5-a(09-13)=09-13.
@@ -496,7 +496,7 @@ Texas Hold'em lernt sich leichter, wenn du Regeln und Strategie trennst.
 
 Lerne zuerst ==den Ablauf==: Blinds, zwei Hole Cards, fünf Gemeinschaftskarten, vier Setzrunden, beste Fünf-Karten-Hand. ==g:Dann lerne Position, Starthände und einfache Pot-Entscheidungen.==
 
-Als nächsten Schritt wiederhole die [Pokerhände-Reihenfolge im Texas Hold'em](/de/blog/holdem-hand-rankings), übe mit dem [Starthand-Chart](/hand-chart) und nutze den [Poker-Odds-Rechner](/de/calculator), wenn du verstehen willst, warum ein Call profitabel ist oder nicht.
+Als nächsten Schritt wiederhole die [Pokerhände-Reihenfolge im Texas Hold'em](/de/blog/holdem-hand-rankings), übe mit dem [Starthand-Chart](/en/hand-chart) und nutze den [Poker-Odds-Rechner](/de/calculator), wenn du verstehen willst, warum ein Call profitabel ist oder nicht.
 
 ---
 

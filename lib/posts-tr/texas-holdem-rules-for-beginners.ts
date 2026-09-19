@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Texas Hold'em'de her oyuncu 2 kapalı kart alır, 5 ortak kart açılır ve dört bahis turunun sonunda en iyi 5 kartlık poker eli kazanır.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-08-14",
+  updated: "2026-09-19",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 dk",
@@ -441,7 +441,7 @@ Texas Hold'em, kuralları stratejiden ayırdığında öğrenmesi çok daha kola
 
 Önce ==akışı öğren==: blindler, iki hole kart, beş ortak kart, dört bahis turu ve en iyi beş kartlık el. ==g:Sonra pozisyonu, başlangıç ellerini ve temel pot kararlarını öğren.==
 
-Bir sonraki adımın için [Texas Hold'em el sıralamasını](/tr/blog/holdem-hand-rankings) gözden geçir, [başlangıç eli tablosuyla](/hand-chart) pratik yap ve bir call'ın neden kârlı olup olmadığını anlamak istediğinde [poker olasılık hesaplayıcısını](/calculator) kullan.
+Bir sonraki adımın için [Texas Hold'em el sıralamasını](/tr/blog/holdem-hand-rankings) gözden geçir, [başlangıç eli tablosuyla](/en/hand-chart) pratik yap ve bir call'ın neden kârlı olup olmadığını anlamak istediğinde [poker olasılık hesaplayıcısını](/en/calculator) kullan.
 
 ---
 

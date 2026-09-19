@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "De los 169 tipos de mano inicial, solo una pequeña franja superior — cerca del 15–20% de las manos que te reparten — es rentable para un principiante. Los pares grandes (AA–TT) y AK suben desde cualquier asiento; cuanto más tarde actúas, más abres tu rango — desde ~13% en UTG hasta ~43% en el botón (más amplio aún en 6-max). Empieza con una tabla simplificada y añade las tablas preflop GTO cuando el subir-o-foldear ya te salga automático.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-09-17",
+  updated: "2026-09-19",
   masterUpdated: "2026-09-17",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -243,7 +243,7 @@ Tres situaciones de tabla. Decide antes de espiar las respuestas:
 
 :::quiz:::
 
-¿Acertaste las tres? Prueba el [test completo de 10 preguntas de manos de póker](/es/quiz) — las mejores cinco cartas de siete, contra el reloj.
+¿Acertaste las tres? Prueba el [test completo de 10 preguntas de manos de póker](/en/quiz) — las mejores cinco cartas de siete, contra el reloj.
 
 ---
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Dalam Texas Hold'em, setiap pemain menerima 2 kad pemula, 5 kad komuniti dikongsi bersama, dan tangan poker 5 kad terbaik menang selepas empat pusingan pertaruhan.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-15",
+  updated: "2026-09-19",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 minit",
@@ -443,7 +443,7 @@ Texas Hold'em lebih mudah dipelajari bila anda asingkan peraturan daripada strat
 
 Pertama, ==belajar alirannya==: blinds, dua kad pemula, lima kad komuniti, empat pusingan pertaruhan, dan tangan lima kad terbaik. ==g:Kemudian belajar posisi, tangan permulaan dan keputusan pot asas.==
 
-Sebagai langkah seterusnya, semak [kedudukan tangan Texas Hold'em](/ms/blog/holdem-hand-rankings), berlatih dengan [carta tangan permulaan](/hand-chart), dan guna [kalkulator odds poker](/ms/calculator) bila anda mahu faham kenapa sesuatu call itu menguntungkan atau tidak.
+Sebagai langkah seterusnya, semak [kedudukan tangan Texas Hold'em](/ms/blog/holdem-hand-rankings), berlatih dengan [carta tangan permulaan](/en/hand-chart), dan guna [kalkulator odds poker](/ms/calculator) bila anda mahu faham kenapa sesuatu call itu menguntungkan atau tidak.
 
 ---
 

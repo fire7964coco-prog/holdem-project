@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "W Texas Hold'em każdy gracz dostaje 2 karty zakryte, na stole leży 5 kart wspólnych, a po czterech rundach licytacji wygrywa najlepszy 5-kartowy układ.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-08-14",
+  updated: "2026-09-19",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -440,7 +440,7 @@ Texas Hold'em łatwiej się uczyć, gdy oddzielisz zasady od strategii.
 
 Najpierw ==naucz się przebiegu==: blindy, dwie karty własne, pięć kart wspólnych, cztery rundy licytacji i najlepszy pięciokartowy układ. ==g:Potem poznaj pozycję, ręce startowe i podstawowe decyzje przy puli.==
 
-Jako następny krok przejrzyj hierarchię układów Texas Hold'em, poćwicz z [tabelą rąk startowych](/hand-chart) i korzystaj z [kalkulatora szans w pokerze](/calculator), gdy chcesz zrozumieć, dlaczego dany call jest opłacalny albo nie.
+Jako następny krok przejrzyj hierarchię układów Texas Hold'em, poćwicz z [tabelą rąk startowych](/en/hand-chart) i korzystaj z [kalkulatora szans w pokerze](/en/calculator), gdy chcesz zrozumieć, dlaczego dany call jest opłacalny albo nie.
 
 ---
 

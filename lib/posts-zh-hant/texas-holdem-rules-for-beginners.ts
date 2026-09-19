@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "德州撲克每位玩家發 2 張底牌，搭配 5 張公牌，經過翻牌前、翻牌、轉牌、河牌四輪下注後，能組成最強 5 張牌型的人贏得底池。",
   category: "rules",
   date: "2026-07-22",
-  updated: "2026-09-14",
+  updated: "2026-09-19",
   masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "14 分鐘",
@@ -508,7 +508,7 @@ A. 實體牌桌上，一手牌通常要 30 秒到 2 分鐘，不過多人入池�
 
 第一步，==先把流程學會==：盲注、兩張底牌、五張公牌、四輪下注、最強五張牌型獲勝。==g:再來才學位置、起手牌和基本的底池決策。==
 
-下一步，複習[德州撲克牌型大小排名](/zh-hant/blog/holdem-hand-rankings)，用[起手牌表](/hand-chart)練手，想搞懂某次跟注為什麼划算（或不划算）時，就打開[撲克機率計算器](/zh-hant/calculator)。
+下一步，複習[德州撲克牌型大小排名](/zh-hant/blog/holdem-hand-rankings)，用[起手牌表](/en/hand-chart)練手，想搞懂某次跟注為什麼划算（或不划算）時，就打開[撲克機率計算器](/zh-hant/calculator)。
 
 ---
 

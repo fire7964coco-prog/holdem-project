@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Au Texas Hold'em, chaque joueur reçoit 2 cartes fermées, on utilise 5 cartes communes, et la meilleure main de 5 cartes l'emporte après quatre tours d'enchères.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-08-14",
+  updated: "2026-09-19",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -441,7 +441,7 @@ Le Texas Hold'em s'apprend plus facilement quand tu sépares les règles de la s
 
 D'abord, ==apprends le déroulé== : blindes, deux cartes fermées, cinq cartes communes, quatre tours d'enchères, et meilleure main de cinq cartes. ==g:Ensuite, apprends la position, les mains de départ et les décisions de base sur le pot.==
 
-Pour la suite, entraîne-toi avec le [tableau des mains de départ](/hand-chart) et sers-toi de la [calculatrice de probabilités poker](/fr/calculator) quand tu veux comprendre pourquoi un call est rentable ou non.
+Pour la suite, entraîne-toi avec le [tableau des mains de départ](/en/hand-chart) et sers-toi de la [calculatrice de probabilités poker](/fr/calculator) quand tu veux comprendre pourquoi un call est rentable ou non.
 
 ---
 

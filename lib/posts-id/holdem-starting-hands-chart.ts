@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Dari 169 tipe starting hand, hanya irisan atas kecil — sekitar 15–20% kartu yang Anda terima — yang profit untuk pemula. Pair besar (AA–TT) dan AK raise dari kursi mana pun; makin belakang Anda beraksi, makin lebar Anda open — dari ~13% di under the gun hingga ~43% di button (lebih lebar lagi di 6-max). Mulai dengan chart sederhana, tambahkan chart preflop GTO setelah raise-or-fold jadi otomatis.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-09-17",
+  updated: "2026-09-19",
   masterUpdated: "2026-09-17",
   keepImagesInBody: true,
   readTime: "10 mnt",
@@ -109,7 +109,7 @@ Lihat bagaimana opening range melebar kursi demi kursi — UTG, MP, CO, dan BTN 
 
 :::rangechart:::
 
-Mau versi sebagai alat mandiri dengan range yang diperluas per kursi? Gunakan [alat chart starting hand Texas Hold'em](/hand-chart). Untuk rincian setiap nama kursi (UTG, HJ, CO, BTN, SB, BB), lihat [panduan posisi poker](/id/blog/holdem-positions "thumb:/images/holdem-positions-hero.webp").
+Mau versi sebagai alat mandiri dengan range yang diperluas per kursi? Gunakan [alat chart starting hand Texas Hold'em](/en/hand-chart). Untuk rincian setiap nama kursi (UTG, HJ, CO, BTN, SB, BB), lihat [panduan posisi poker](/id/blog/holdem-positions "thumb:/images/holdem-positions-hero.webp").
 
 ### Posisi awal (UTG): range paling ketat
 
@@ -241,7 +241,7 @@ Tiga spot chart. Putuskan sebelum Anda mengintip jawaban:
 
 :::quiz:::
 
-Dapat ketiganya? Coba [kuis tangan poker 10 soal](/quiz) penuh — lima kartu terbaik dari tujuh, melawan waktu.
+Dapat ketiganya? Coba [kuis tangan poker 10 soal](/en/quiz) penuh — lima kartu terbaik dari tujuh, melawan waktu.
 
 ---
 

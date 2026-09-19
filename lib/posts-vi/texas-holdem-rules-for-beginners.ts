@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Trong Texas Hold'em, mỗi người chơi nhận 2 lá bài tẩy, dùng chung 5 lá bài chung, và tay bài poker 5 lá mạnh nhất sẽ thắng sau bốn vòng cược.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-08-14",
+  updated: "2026-09-19",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 phút",
@@ -441,7 +441,7 @@ Texas Hold'em dễ học hơn khi bạn tách luật ra khỏi chiến thuật.
 
 Trước tiên, ==học trình tự==: mù, hai lá bài tẩy, năm lá bài chung, bốn vòng cược và tay bài 5 lá mạnh nhất. ==g:Sau đó học vị trí, bài khởi đầu và các quyết định pot cơ bản.==
 
-Bước tiếp theo, hãy ôn lại [thứ hạng bài Texas Hold'em](/vi/blog/holdem-hand-rankings), luyện tập với [bảng bài khởi đầu](/hand-chart) và dùng [máy tính xác suất poker](/calculator) khi bạn muốn hiểu vì sao một lần theo bài có lãi hay không.
+Bước tiếp theo, hãy ôn lại [thứ hạng bài Texas Hold'em](/vi/blog/holdem-hand-rankings), luyện tập với [bảng bài khởi đầu](/en/hand-chart) và dùng [máy tính xác suất poker](/en/calculator) khi bạn muốn hiểu vì sao một lần theo bài có lãi hay không.
 
 ---
 

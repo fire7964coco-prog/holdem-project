@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "টেক্সাস হোল্ডেমে প্রতিটি খেলোয়াড় 2টি hole কার্ড পান, 5টি community কার্ড ব্যবহার হয়, আর চারটি betting রাউন্ডের পর সেরা 5-কার্ড হ্যান্ড জেতে।",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-08-14",
+  updated: "2026-09-19",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -441,7 +441,7 @@ A. সরাসরি টেবিলে একটা হ্যান্ডে �
 
 প্রথমে, ==ফ্লো শিখুন==: blinds, দুটো hole কার্ড, পাঁচটি community কার্ড, চার betting রাউন্ড, আর সেরা পাঁচ-কার্ড হ্যান্ড। ==g:তারপর position, starting হ্যান্ড আর বেসিক pot সিদ্ধান্ত শিখুন।==
 
-পরের ধাপের জন্য, [starting hand চার্ট](/hand-chart) দিয়ে প্র্যাকটিস করুন, আর কোনো call লাভজনক কি না বুঝতে চাইলে [poker odds ক্যালকুলেটর](/calculator) ব্যবহার করুন।
+পরের ধাপের জন্য, [starting hand চার্ট](/en/hand-chart) দিয়ে প্র্যাকটিস করুন, আর কোনো call লাভজনক কি না বুঝতে চাইলে [poker odds ক্যালকুলেটর](/en/calculator) ব্যবহার করুন।
 
 ---
 

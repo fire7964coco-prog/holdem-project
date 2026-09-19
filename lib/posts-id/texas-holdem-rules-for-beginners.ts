@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Di Texas Hold'em, setiap pemain menerima 2 hole cards, ada 5 kartu bersama di tengah meja, dan tangan poker 5 kartu terbaik menang setelah empat ronde taruhan.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-13",
+  updated: "2026-09-19",
   masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "14 menit",
@@ -458,7 +458,7 @@ Texas Hold'em lebih mudah dipelajari kalau Anda memisahkan aturan dari strategi.
 
 Pertama, ==pelajari alurnya==: blind, dua hole cards, lima kartu bersama, empat ronde taruhan, dan tangan lima kartu terbaik. ==g:Setelah itu pelajari posisi, kartu awal, dan keputusan pot dasar.==
 
-Sebagai langkah berikutnya, ulas [peringkat kartu Texas Hold'em](/id/blog/holdem-hand-rankings), berlatih dengan [alat chart kartu awal interaktif](/hand-chart), dan pakai [kalkulator odds poker](/id/calculator) saat Anda ingin memahami kenapa sebuah call menguntungkan atau tidak.
+Sebagai langkah berikutnya, ulas [peringkat kartu Texas Hold'em](/id/blog/holdem-hand-rankings), berlatih dengan [alat chart kartu awal interaktif](/en/hand-chart), dan pakai [kalkulator odds poker](/id/calculator) saat Anda ingin memahami kenapa sebuah call menguntungkan atau tidak.
 
 ---
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Von den 169 Starthand-Typen ist nur eine kleine Spitzengruppe – etwa 15–20% der Hände, die du bekommst – für einen Anfänger profitabel. Große Paare (AA–TT) und AK raist du aus jeder Position; je später du agierst, desto weiter öffnest du – von ~13% unter der Gun bis ~43% am Button (im 6-Max nochmals weiter). Starte mit einem vereinfachten Chart, füge GTO-Preflop-Charts hinzu, sobald Raise-or-Fold automatisch sitzt.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-09-17",
+  updated: "2026-09-19",
   masterUpdated: "2026-09-17",
   keepImagesInBody: true,
   readTime: "10 Min.",
@@ -115,7 +115,7 @@ Sieh, wie sich die Opening-Range Position für Position weitet – UTG, MP, CO u
 
 :::rangechart:::
 
-Willst du es als eigenständiges Tool mit erweiterten Ranges pro Position? Nutze das [Texas-Hold'em-Starthände-Chart-Tool](/hand-chart). Für eine Aufschlüsselung jedes Positionsnamens (UTG, HJ, CO, BTN, SB, BB) siehe den [Poker-Positionen-Guide](/de/blog/holdem-positions "thumb:/images/holdem-positions-hero.webp").
+Willst du es als eigenständiges Tool mit erweiterten Ranges pro Position? Nutze das [Texas-Hold'em-Starthände-Chart-Tool](/en/hand-chart). Für eine Aufschlüsselung jedes Positionsnamens (UTG, HJ, CO, BTN, SB, BB) siehe den [Poker-Positionen-Guide](/de/blog/holdem-positions "thumb:/images/holdem-positions-hero.webp").
 
 ### Frühe Position (UTG): die engste Range
 
@@ -247,7 +247,7 @@ Drei Chart-Spots. Entscheide, bevor du bei den Antworten spickst:
 
 :::quiz:::
 
-Alle drei richtig? Probier das komplette [10-Fragen-Poker-Hand-Quiz](/quiz) – beste fünf Karten aus sieben, gegen die Uhr.
+Alle drei richtig? Probier das komplette [10-Fragen-Poker-Hand-Quiz](/en/quiz) – beste fünf Karten aus sieben, gegen die Uhr.
 
 ---
 

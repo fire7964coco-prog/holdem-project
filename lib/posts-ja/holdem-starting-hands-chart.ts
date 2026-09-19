@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "169種類のスターティングハンドのうち、初心者が利益を出せるのは上位のほんの一部——配られた手の約15〜20%だけです。大きなポケットペア(AA〜TT)とAKはどの席からでもレイズ。後ろの席ほどオープンレンジは広がり、UTGの約13%からボタンの約43%まで(6maxではさらに広く)。まずはシンプルな表から始め、レイズorフォールドが自動になったらGTOプリフロップチャートを足します。",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-09-17",
+  updated: "2026-09-19",
   masterUpdated: "2026-09-17",
   keepImagesInBody: true,
   readTime: "10分",
@@ -121,7 +121,7 @@ export const POST: Post = {
 
 :::rangechart:::
 
-各席の拡張レンジ付きの独立ツールとして使いたいなら、[テキサスホールデムのスターティングハンド表ツール](/hand-chart)をどうぞ。各席の名前(UTG, HJ, CO, BTN, SB, BB)の内訳は[ポーカーのポジション解説](/ja/blog/holdem-positions "thumb:/images/holdem-positions-hero.webp")を参照してください。
+各席の拡張レンジ付きの独立ツールとして使いたいなら、[テキサスホールデムのスターティングハンド表ツール](/en/hand-chart)をどうぞ。各席の名前(UTG, HJ, CO, BTN, SB, BB)の内訳は[ポーカーのポジション解説](/ja/blog/holdem-positions "thumb:/images/holdem-positions-hero.webp")を参照してください。
 
 ### アーリーポジション(UTG):最もタイトなレンジ
 
@@ -289,7 +289,7 @@ GTOプリフロップチャート | シンプルな初心者用チャート
 
 :::quiz:::
 
-3問全部正解? 完全版の[10問ポーカーハンド小テスト](/ja/quiz)も試してみてください——7枚からベスト5枚、時間との勝負です。
+3問全部正解? 完全版の[10問ポーカーハンド小テスト](/en/quiz)も試してみてください——7枚からベスト5枚、時間との勝負です。
 
 ---
 

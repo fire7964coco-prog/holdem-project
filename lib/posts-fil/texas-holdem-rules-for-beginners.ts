@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Sa Texas Hold'em, bawat player ay may 2 hole cards, may 5 community cards, at ang pinakamagandang 5-card poker hand ang panalo pagkatapos ng apat na betting rounds.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-08-14",
+  updated: "2026-09-19",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -441,7 +441,7 @@ Mas madaling matutunan ang Texas Hold'em kapag hiniwalay mo ang rules sa strateg
 
 Una, ==pag-aralan ang flow==: blinds, dalawang hole cards, limang community cards, apat na betting rounds, at pinakamagandang five-card hand. ==g:Tapos pag-aralan ang position, starting hands, at basic pot decisions.==
 
-Para sa susunod mong hakbang, i-review ang Texas Hold'em hand rankings, mag-practice gamit ang [starting hand chart](/hand-chart), at gamitin ang [poker odds calculator](/calculator) kapag gusto mong maintindihan kung bakit profitable o hindi ang isang call.
+Para sa susunod mong hakbang, i-review ang Texas Hold'em hand rankings, mag-practice gamit ang [starting hand chart](/en/hand-chart), at gamitin ang [poker odds calculator](/en/calculator) kapag gusto mong maintindihan kung bakit profitable o hindi ang isang call.
 
 ---
 

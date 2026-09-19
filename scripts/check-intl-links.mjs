@@ -10,6 +10,7 @@
  * 사용: npm run check:intl-links (build 전 자동 실행)
  */
 import { dirname, join } from "node:path";
+import { existsSync, readdirSync, statSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { createJiti } from "jiti";
 
@@ -99,5 +100,53 @@ if (missingTargets.length > 0) {
   process.exit(1);
 }
 
+// ── 3차: 블로그 «밖» 내부 링크(도구 페이지) — ★2026-09-19 신설 ──
+// 1·2차는 /blog/ 링크만 봐서 도구 링크를 «공용 유틸 페이지는 통과»로 흘렸다. 그 사이
+//   ① 21로케일 본문이 한국어 UI 도구(/hand-chart·/calculator·/quiz)를 가리키고 있었고
+//   ② /es/quiz·/ja/quiz·/zh/quiz 는 라우트가 아예 없어 라이브 404였다(09-19 Playwright 확인).
+// 판정: 로케일 접두 경로 = app/ 아래 라우트가 실존해야 한다(다른 로케일 도구 — 주로 /en/* — 는 허용) ·
+//       접두 없는 경로 = 한국어 화면이므로 위반(public/ 파일 — /downloads·/images — 은 통과).
+// 형태 셋을 다 본다: 마크다운 ](…) · HTML href="…" · :::readnext 행(`/경로 | 제목 | 이미지`).
+const appDir = join(root, "app");
+const isDir = (p) => existsSync(p) && statSync(p).isDirectory();
+function routeExists(segs) {
+  let dir = appDir;
+  for (const seg of segs) {
+    if (isDir(join(dir, seg))) { dir = join(dir, seg); continue; }
+    const dyn = readdirSync(dir).find((d) => d.startsWith("[") && isDir(join(dir, d)));
+    if (!dyn) return false;
+    dir = join(dir, dyn);
+  }
+  return ["page.tsx", "page.ts", "page.jsx", "page.js"].some((f) => existsSync(join(dir, f)));
+}
+const TOOL_LINK_RES = [/\]\((\/[^)\s"]*)/g, /href="(\/[^"]*)"/g, /^\s*(\/[^\s|]+)\s*\|/gm];
+const toolViolations = [];
+for (const locale of SECONDARY_LOCALES) {
+  for (const post of POSTS_BY_LOCALE[locale]) {
+    const seen = new Set();
+    for (const re of TOOL_LINK_RES) {
+      for (const m of post.content.matchAll(re)) {
+        const path = m[1].split(/[#?]/)[0].replace(/\/+$/, "");
+        if (!path || /\/blog(\/|$)/.test(path) || seen.has(path)) continue;
+        seen.add(path);
+        if (existsSync(join(root, "public", path))) continue; // /downloads/*.pdf · /images/*
+        const segs = path.split("/").filter(Boolean);
+        if (!SECONDARY_SET.has(segs[0])) {
+          toolViolations.push({ locale, slug: post.slug, href: path, reason: "한국어 화면(접두 없음) → /en/… 또는 /<lang>/… 도구로" });
+        } else if (!routeExists(segs)) {
+          toolViolations.push({ locale, slug: post.slug, href: path, reason: "라우트 없음(404) → 실존하는 /en/… 도구로" });
+        }
+      }
+    }
+  }
+}
+
+if (toolViolations.length > 0) {
+  console.error(`\n✖ 번역본 도구 링크 위반 — ${toolViolations.length}건\n`);
+  for (const v of toolViolations) console.error(`  [${v.locale}] ${v.slug} → ${v.href}  (${v.reason})`);
+  console.error("");
+  process.exit(1);
+}
+
 const total = SECONDARY_LOCALES.reduce((n, l) => n + POSTS_BY_LOCALE[l].length, 0);
-console.log(`✓ 다국어 내부 링크 검사 통과 (${total}편, ${SECONDARY_LOCALES.length}개 언어) — 언어경로+대상실존 확인`);
+console.log(`✓ 다국어 내부 링크 검사 통과 (${total}편, ${SECONDARY_LOCALES.length}개 언어) — 언어경로+대상실존+도구링크 확인`);

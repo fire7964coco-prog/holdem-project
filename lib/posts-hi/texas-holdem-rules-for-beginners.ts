@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "टेक्सस होल्डम में हर खिलाड़ी को 2 hole कार्ड मिलते हैं, 5 community कार्ड इस्तेमाल होते हैं, और चार betting राउंड के बाद सबसे अच्छा 5-कार्ड हैंड जीतता है।",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-15",
+  updated: "2026-09-19",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -443,7 +443,7 @@ A. लाइव टेबल पर एक हैंड आम तौर पर 
 
 पहले, ==फ़्लो सीखें==: blinds, दो hole कार्ड, पाँच community कार्ड, चार betting राउंड, और सबसे अच्छा पाँच-कार्ड हैंड। ==g:उसके बाद पोज़ीशन, starting हैंड और बुनियादी pot फ़ैसले सीखें।==
 
-अगले क़दम के लिए, [टेक्सस होल्डम हैंड रैंकिंग](/hi/blog/holdem-hand-rankings) दोबारा देखें, [starting hand चार्ट](/hand-chart) के साथ प्रैक्टिस करें, और जब समझना चाहें कि कोई call फ़ायदेमंद है या नहीं, तब [poker odds कैलकुलेटर](/hi/calculator) इस्तेमाल करें।
+अगले क़दम के लिए, [टेक्सस होल्डम हैंड रैंकिंग](/hi/blog/holdem-hand-rankings) दोबारा देखें, [starting hand चार्ट](/en/hand-chart) के साथ प्रैक्टिस करें, और जब समझना चाहें कि कोई call फ़ायदेमंद है या नहीं, तब [poker odds कैलकुलेटर](/hi/calculator) इस्तेमाल करें।
 
 ---
 

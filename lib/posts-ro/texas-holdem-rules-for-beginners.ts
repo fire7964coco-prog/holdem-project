@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "La Texas Hold'em fiecare jucător primește 2 cărți din mână, se folosesc 5 cărți comune, iar după patru runde de pariere câștigă cea mai bună mână de 5 cărți.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-08-14",
+  updated: "2026-09-19",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -441,7 +441,7 @@ Texas Hold'em e mai ușor de învățat când separi regulile de strategie.
 
 Întâi, ==învață desfășurarea==: blind-uri, două cărți din mână, cinci cărți comune, patru runde de pariere și cea mai bună mână de cinci cărți. ==g:Apoi învață poziția, mâinile de start și deciziile de bază legate de pot.==
 
-Ca pas următor, exersează cu [tabelul cu mâini de start](/hand-chart) și folosește [calculatorul de pot odds](/calculator) când vrei să înțelegi de ce o plată e sau nu profitabilă.
+Ca pas următor, exersează cu [tabelul cu mâini de start](/en/hand-chart) și folosește [calculatorul de pot odds](/en/calculator) când vrei să înțelegi de ce o plată e sau nu profitabilă.
 
 ---
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Katika Texas Hold'em kila mchezaji anapata karata 2 za mkononi, kunatumika karata 5 za pamoja, na baada ya raundi nne za kuweka dau, mkono bora wa karata 5 unashinda.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-08-14",
+  updated: "2026-09-19",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -441,7 +441,7 @@ Texas Hold'em ni rahisi kujifunza unapotenganisha sheria na mkakati.
 
 Kwanza, ==jifunze mtiririko==: blinds, karata mbili za mkononi, karata tano za pamoja, raundi nne za kuweka dau, na mkono bora wa karata tano. ==g:Kisha jifunze position, mikono ya kuanzia, na maamuzi ya msingi ya pot.==
 
-Kwa hatua yako inayofuata, pitia madaraja ya mikono ya Texas Hold'em, fanya mazoezi na [chati ya mikono ya kuanzia](/hand-chart), na utumie [kikokotoo cha uwezekano wa poker](/calculator) unapotaka kuelewa kwa nini call ina faida au haina.
+Kwa hatua yako inayofuata, pitia madaraja ya mikono ya Texas Hold'em, fanya mazoezi na [chati ya mikono ya kuanzia](/en/hand-chart), na utumie [kikokotoo cha uwezekano wa poker](/en/calculator) unapotaka kuelewa kwa nini call ina faida au haina.
 
 ---
 
