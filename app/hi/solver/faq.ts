@@ -88,7 +88,7 @@ export const SOLVER_FAQ_HI: FaqItem[] = [
   },
   {
     q: "यह पोकर odds कैलकुलेटर है या रणनीति सॉल्वर?",
-    a: "ऐप में दोनों हैं। Equity टैब (हिस्सा) दो खिलाड़ियों के बीच all-in equity निकालता है। अपना हैंड, विरोधी का एक हैंड या range और चाहें तो बोर्ड चुनें। खाली बोर्ड पर preflop equity मिलती है; 3, 4 या 5 कार्ड पर flop, turn या river की equity मिलती है। Bet, check, call, raise या fold की आवृत्ति और हर कार्रवाई का EV जानने के लिए postflop सॉल्वर इस्तेमाल करें।",
+    a: "ऐप में दोनों हैं। Equity टैब (हिस्सा) दो खिलाड़ियों के बीच all-in equity निकालता है। अपना हैंड, विरोधी का एक हैंड या range और चाहें तो बोर्ड चुनें। खाली बोर्ड पर preflop equity मिलती है; 3, 4 या 5 कार्ड पर flop, turn या river की equity मिलती है। Bet, check, call, raise या fold की आवृत्ति और हर कार्रवाई का EV जानने के लिए postflop सॉल्वर इस्तेमाल करें। और सॉल्वर चलाए बिना झटपट हिसाब — pot odds, outs, SPR, M value और ICM — के लिए हमारा अलग Poker Odds Calculator पेज है (लिंक ऊपर की तालिका में है)।",
   },
   {
     q: "क्या यह GTO सॉल्वर ओपन सोर्स है?",

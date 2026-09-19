@@ -15,8 +15,14 @@ const SPEC: [string, string][] = [
   ["इंजन", "ओपन सोर्स WASM Postflop (AGPL-3.0) · बदलावों सहित सोर्स कोड प्रकाशित है"],
 ];
 
+// 🔴 ★2026-09-19 (hi 계산기 회차) — 계산기 행 3개 신설. 09-17에 `/hi/calculator`가 생겼는데도 이 표가
+//   outs·pot odds·equity·ICM 의도를 전부 «이 페이지의 솔버»나 블로그로 보내고 있었다(도구→도구 카니발 ·
+//   브리프 §3-J ⑨ · §3-K ④). ms와 동형으로 **처음부터 계산기 행이 없던** 경우다(id는 낡은 주석이 원인이었다).
 const PICK_TOOL: readonly [string, string, string | null][] = [
   ["किसी खास postflop स्थिति की रणनीति निकालना", "इस पेज का सॉल्वर", null],
+  ["सॉल्वर चलाए बिना outs और pot odds निकालना", "Poker Odds Calculator", "/hi/calculator"],
+  ["दो हैंड भिड़ाकर जीत का प्रतिशत देखना", "Equity कैलकुलेटर", "/hi/calculator"],
+  ["Bubble या deal पर prize की कीमत निकालना", "ICM कैलकुलेटर", "/hi/calculator"],
   ["पोकर के नियम और खेल का तरीका सीखना", "शुरुआती के लिए Texas Hold'em की गाइड", "/hi/blog/texas-holdem-rules-for-beginners"],
   ["bet, check, call, raise और fold समझना", "Betting actions की गाइड", "/hi/blog/holdem-betting-actions"],
   ["small blind और big blind समझना", "पोकर blinds की गाइड", "/hi/blog/holdem-blind-meaning"],

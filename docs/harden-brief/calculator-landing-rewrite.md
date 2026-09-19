@@ -206,6 +206,7 @@
 - 🔴 **브리프 §5 id ⓐ의 근거가 과했다(이 회차가 정정)**: 「EP에는 앞선 레이즈가 있을 수 없다」는 **UTG에만 참**이다.
   MP·EP+1은 UTG 레이즈를 마주할 수 있다. → 처방은 «call을 없애는 것»이 아니라 **«무엇에 대한 call인지 명시 + 오픈 림프 금지»**다.
   선례 **7로케일(ja·zh·zh-hant·es·pt·fr·id)이 전부 그렇게 풀었고**(de만 아직 옛 문안), ms도 같은 형으로 되돌렸다.
+  🪶 **정정(hi 회차 09-19)**: ms를 포함하면 **8로케일**이다(ja·zh·zh-hant·es·pt·fr·id·ms · de만 예외) — 교열 렌즈가 축어로 셌다.
   🪶 내가 처음에 「raise atau fold」로 썼다가 **자가검사에서 되돌렸다** — 「선례 N개가 같은 형인데 나만 다르면 그게 신호다」(§3-K ⑥ 동형).
 - 🔴 **폴백 3분기를 옮길 때 «한정어»를 잃지 마라.** id의 3분기를 ms로 옮기며 「Suited」를 한정어 없이 써서
   **72s·J2s·92s까지 CO/BTN 오픈 허가**가 됐고(수티드 54개 전부), id에 있던 **first-in 조건**(「kalau semua fold ke Anda」)도 빠졌다.
@@ -352,7 +353,11 @@ de 회차의 렌즈 2종이 「de 번역 문제」로 보고한 것들이 실은
 - 🔴 **EN `starting.unknownAction`의 «오프수트 브로드웨이» 분기는 실제로 공집합이다** — id가 쓰고 ms가 물려받은 3분기안의
   2분기(「ace offsuit **또는** 두 장의 브로드웨이」)에서, **오프수트 브로드웨이 10개(AKo AQo AJo ATo KQo KJo KTo QJo QTo JTo)가
   전부 `HAND_TABLE` 안**이다. 폴백에 떨어지는 건 **ace-offsuit(A9o~A2o) 8개뿐**이다.
-  🔴 **id 사전의 예시 `K9o`도 틀렸다**(ace-offsuit도 브로드웨이도 아니다) — id 정정 대상. ms는 `A9o, A7o, A5o`로 고쳤다.
+  🔴 **id 사전의 예시 `K9o`는 틀렸다** — id의 라벨은 「dua kartu **broadway**」인데 9는 브로드웨이가 아니다(id 정정 대상).
+  🔴 **정정(hi 회차 09-19)**: 이 줄의 「ms는 `A9o, A7o, A5o`로 고쳤다」는 **사실과 다르다** — `app/ms/calculator/dict.ts:166`은
+  지금도 `A9o, A5o, K9o, Q9o`다. 다만 ms의 라벨은 「Ace offsuit **atau dua kad tinggi**」라 K9o가 라벨상 정합이므로 **ms는 오류가 아니다**(이 줄의 «ms 정정» 판정이 과했다).
+  🔴 **그리고 팔을 «ace-offsuit만»으로 좁히면 반대쪽이 열린다**(hi 딜러 렌즈): K9o·Q9o·J9o·T9o가 «나머지 = fold»로 떨어져 BTN 표준 오픈이 전 포지션 폴드가 된다.
+  hi가 쓴 형 = **«ace offsuit, 또는 두 장 다 9 이상»**(그 조건이 덮는 표 밖 집합 = K9o·Q9o·J9o·T9o 넷 · 🔴 **98o는 8이라 안 들어간다** — 교열 렌즈가 열거 오류를 잡았다).
   → EN에 3분기를 실을 때 이 실측을 반영하라(**tier 5 고정 코드 2줄**과 함께 · fr §5 ⓒ · id §5 ⓑ).
 - 🔴 **EN `starting.unknownDesc`에 «Tier 5 = 표 밖이지 최약이 아니다»라는 단서가 없다** — 코드가 폴백을 **tier 5로 고정**해
   화면에 「🚫 Tier 5 — Weak」와 「Cutoff/button only」가 **나란히** 뜬다(K9s·A9o가 «최약»으로 낙인되면서 동시에 오픈 지시).
