@@ -449,7 +449,10 @@ export const CALC_DICT_EN: CalcDict = {
       { label: "Open-ended straight draw (OESD)", desc: "e.g. 5-6-7-8, need a 4 or 9" },
       { label: "Flush + gutshot combo", desc: "9 flush + 3 gutshot (overlap removed)" },
       { label: "Gutshot straight", desc: "e.g. 5-6-8-9, need just a 7" },
-      { label: "Two overcards", desc: "2 high ranks not on board × 3 each — discount hard against a made hand: pairing an overcard often still loses" },
+      // 🔴 2026-09-20 — «not on board»는 오버카드의 정의가 아니다(pt 네이티브 렌즈 09-17).
+      //    보드가 A-K-Q일 때 7·2도 «보드에 없는» 카드지만 오버카드가 아니고, ×3=6 아웃츠 산술이 성립하지 않는다.
+      //    정의는 «보드의 «모든» 카드보다 높은 2장»이다. hi·id는 이미 이렇게 고쳐져 있었다(EN이 마지막).
+      { label: "Two overcards", desc: "2 ranks higher than every card on the board × 3 each — discount hard against a made hand: pairing an overcard often still loses" },
       { label: "Two pair → full house", desc: "e.g. A-K on an A-K-x board → 2 aces + 2 kings left" },
       { label: "One pair → trips", desc: "2 cards of the rank remain" },
       { label: "Flush + OESD (monster)", desc: "9 flush + 8 straight (2 overlap)" },
@@ -471,7 +474,13 @@ export const CALC_DICT_EN: CalcDict = {
     chanceTurn: "Chance to complete on the river from the turn",
     exact: " (exact)",
     ruleMental: "Rule of {n} (mental math):",
-    exactNote: "The big number is the exact figure",
+    /**
+     * 🔴 2026-09-20 — 구 문구 «The big number is the exact figure»는 **«big»이 활자 크기인지
+     *    값 크기인지 갈린다.** 값으로 읽으면 거짓이다: 15 아웃츠에서 Rule of 4는 60%를 내놓고
+     *    정확값은 54.1%라 **규칙 쪽 숫자가 더 크다.** 로케일이 «더 큰 값»으로 옮기면 사실오류가 된다.
+     *    → «활자가 큰 쪽»이라고 못 박는다. 로케일 번역도 «글자 크기» 축으로 옮겨라.
+     */
+    exactNote: "The figure in large type is the exact one",
     verdict: { great: "Great 🔥", good: "Good ✅", fair: "Fair ⚠️", poor: "Poor ❌", veryPoor: "Very poor 💀" },
   },
 
@@ -562,7 +571,8 @@ export const CALC_DICT_EN: CalcDict = {
       A6s: { desc: "Medium suited ace", action: "Play LP only" },
       A5s: { desc: "Wheel + ace-blocker value; a favorite 3-bet bluff", action: "LP only; implied odds matter" },
       A4s: { desc: "Suited ace with a wheel draw", action: "LP only" },
-      A3s: { desc: "Bottom of the suited aces", action: "BTN/SB only" },
+      // 🔴 2026-09-20 — 구 문구 «Bottom of the suited aces»는 **같은 표에 A2s가 있어 거짓**이었다.
+      A3s: { desc: "Nut flush draw with a wheel card, a notch above A2s", action: "BTN/SB only" },
       A2s: { desc: "Wheel + nut flush, but weak", action: "BTN only" },
       KJo: { desc: "Domination risk; LP only", action: "Raise CO/BTN, fold to a re-raise" },
       QJo: { desc: "Moderate connectivity; needs position", action: "LP only" },

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { SITE } from "@/lib/site";
+import { socialMeta } from "@/lib/page-metadata";
 import HandChartClient from "./hand-chart-client";
 import HubPage from "@/components/hub-page";
 import { HAND_CHART_FAQ } from "./faq";
@@ -50,12 +51,17 @@ import { HAND_CHART_FAQ } from "./faq";
  *      **실제로 GTO를 산출하는 `/solver`가 가져간다.** 역할 분리로 카니발도 함께 막는다.
  *    ⚠ 차트를 솔버 값으로 다시 만들면 그때는 GTO를 붙여도 된다. 지금은 아니다.
  */
+const TITLE = "홀덤 차트 — 포지션별 오픈 레인지 169핸드 한눈에";
+const DESCRIPTION =
+  "UTG에선 12%, 버튼에선 42%. 169개 프리플랍 핸드를 5개 포지션별로 색칠한 홀덤 차트입니다. 포지션을 누르면 그 자리에서 오픈할 핸드레인지만 골라 보여줍니다.";
+
 export const metadata: Metadata = {
-  title: "홀덤 차트 — 포지션별 오픈 레인지 169핸드 한눈에",
-  description:
-    "UTG에선 12%, 버튼에선 42%. 169개 프리플랍 핸드를 5개 포지션별로 색칠한 홀덤 차트입니다. 포지션을 누르면 그 자리에서 오픈할 핸드레인지만 골라 보여줍니다.",
+  title: TITLE,
+  description: DESCRIPTION,
   robots: { index: true, follow: true },
   alternates: { canonical: `${SITE}/hand-chart` },
+  // ★2026-09-20: og도 같은 이유로 홈 카드를 물려받고 있었다(lib/page-metadata.ts 주석).
+  ...socialMeta({ title: TITLE, description: DESCRIPTION, path: "/hand-chart" }),
 };
 
 /**

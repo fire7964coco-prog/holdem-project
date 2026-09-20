@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { SITE } from "@/lib/site";
+import { socialMeta } from "@/lib/page-metadata";
 import GlossaryClient from "./glossary-client";
 import HubPage from "@/components/hub-page";
 import { TERMS } from "./glossary-data";
@@ -7,16 +8,21 @@ import { TERMS } from "./glossary-data";
 // ★2026-08-01: metadata export가 없어 /strategy와 <title>이 완전히 같았다(루트 기본값).
 //   용어집은 경쟁하는 블로그 필라가 없다(holdem-glossary 슬러그는 KO에 존재하지 않음) →
 //   noindex·역할 이전 대상이 아니라 **고유 제목만 주면 되는 자산**이다.
+const TITLE = "홀덤 포커 용어 사전 — 플랍·턴·리버부터 ICM까지 29개";
+const DESCRIPTION =
+  "홀덤 테이블에서 실제로 오가는 용어 29개를 한 곳에 모았습니다. 플랍·턴·리버·체크·레이즈 같은 기본부터 레인지·ICM까지, 뜻과 실전에서 쓰이는 장면을 함께 정리했습니다.";
+
 export const metadata: Metadata = {
   // 🔴 개수는 **배열이 진실이다.** 2026-08-13 실측에서 여기 「27개」가 실제 26개와 어긋났고,
   //    화면은 {TERMS.length}를 렌더하고 있어 SERP 제목과 페이지가 갈려 있었다.
   //    게다가 제목이 약속한 **턴·리버·ICM이 배열에 아예 없었다** → 그 셋을 채워 제목을 참으로 만들었다(29개).
-  title: "홀덤 포커 용어 사전 — 플랍·턴·리버부터 ICM까지 29개",
-  description:
-    "홀덤 테이블에서 실제로 오가는 용어 29개를 한 곳에 모았습니다. 플랍·턴·리버·체크·레이즈 같은 기본부터 레인지·ICM까지, 뜻과 실전에서 쓰이는 장면을 함께 정리했습니다.",
+  title: TITLE,
+  description: DESCRIPTION,
   robots: { index: true, follow: true },
   // ★2026-08-02: alternates 미선언 → 루트 layout의 홈 canonical을 물려받고 있었다.
   alternates: { canonical: `${SITE}/glossary` },
+  // ★2026-09-20: og도 같은 이유로 홈 카드를 물려받고 있었다(lib/page-metadata.ts 주석).
+  ...socialMeta({ title: TITLE, description: DESCRIPTION, path: "/glossary" }),
 };
 
 /**

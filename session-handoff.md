@@ -13,20 +13,23 @@
 > 결함이 아니라 **GA4 세션 타임아웃 재개**였다(신규 0.8% ↔ 전체 75.7%로 「태그 지연」 기각 · 네이버는
 > 28.3%→25.4% 과소표라 「스크립트 순서」도 기각). **「2.3배」도 분모를 안 본 것**(오가닉 대비 5.56→6.53%).
 > 보정 ②는 유지하되 근거 교체 · `RULES_VERSION`은 1 그대로. 정리 = `docs/ga-notset-diagnosis-2026-09-20.md`.
+> 🆕 **09-20 (3) — OG 카드 20/20 교정 + 사전 부채 7건**(4-A 종결). 🔴 «og:title 5곳»이 실측 **20/20**이었고
+> `/ranking`·`/glossary` 등 **10개 라우트는 서버 og가 아예 없어 «홈 카드»가 나가고 있었다**(08-02에 og 축만 안 고침).
+> **og는 서버 전용**으로 정리(`lib/page-metadata.ts` 신설 · `<SEO>`에서 og 갱신 제거) · 🔴 상수 리팩터가
+> `check:seo-sync`를 깨 **게이트를 고쳤다**(셀프테스트 14→20/20). 정리 = `docs/og-meta-audit-2026-09-20.md`.
 
 ## ▶ 다음 할 일 (사장님이 고른다)
 
 1. **🧰 queue 다음 회차** — es `poker-en-las-vegas` 동형 명제 3종 + `holdem-tournament` L298(Q4-b §2 잔여 · es 고유 · EN 동형 없음): L140·L256 「solo exige 21 años」 · L142 matrícula 발급처 부재 + WSOP.com 명칭(형제 `nueva-jersey`·`poker-online-dinero-real-estados-unidos`도 · como-entrar L152는 「WSOP Online (antes WSOP.com)」 — 1차 출처 재확인 후 통일 방향 판정) · `holdem-tournament:298` 썸네일 문장 「pide 21 años y una identificación válida」(히어로는 09-17 «+ dos cuentas gratuitas»). 판정형 = Opus. 레인 창 첫 마디 「HARDEN.md 읽고 회차 Q4-c 시작해」 — 🔴 **HARDEN.md 헤드 통지는 아직 안 붙였다**(사장님 「올려」 대기). 근거 `docs/harden-queue-진행.md` §2 「Q4-b가 남긴 것」.
 2. **🟠 GA 계측 판정 2건**(09-20 (2) 규명 회차가 남긴 것 · 정리 `docs/ga-notset-diagnosis-2026-09-20.md` §6) — ⓐ **Vercel Analytics·Speed Insights가 꺼져 있다**: 레이아웃에 `<Analytics />`·`<SpeedInsights />`가 렌더되고 패키지도 깔렸는데 라이브 요청 0건(`web_analytics_not_enabled`). **켜거나(대시보드 토글 = 사장님 몫) 컴포넌트를 빼거나** 둘 중 하나 — 지금은 둘 다 아니다. 켜면 GA4가 못 보는 유실을 독립 측정할 유일한 수단이 생긴다. ⓑ **GA `lazyOnload` 유지/변경**: 느린 회선에서 page_view가 7~8초까지 밀려 그 전 이탈자가 집계에 아예 없다. 단 `afterInteractive`로 얻는 건 **1.25초뿐**(병목이 대역폭 경합) → **ⓐ를 먼저 켜서 규모를 재고 판정하는 순서를 권한다.**
 3. **10/14 이후 — 배치 효과 4주 비교**(캘린더 등재됨). 기준선 `docs/post-placement-analysis-2026-09-16.md` §2 · 같은 창(`npm run analytics` + `ga-fetch --pages --days 28`). 모바일 홈 36.7%(60세션)는 09-16 배포 전 값 — 그때 재측정. 같은 창에서 `/ja/calculator`·`/zh/calculator`·`/zh-hant/calculator`·`/es/calculator`·`/pt/calculator`·`/de/calculator`·`/fr/calculator` GSC 쿼리 첫 판독(일곱 다 신설 직후 0 · pt는 «calculadora poker»·«calculadora odds poker»·«icm calculator» 축 · es는 «calculadora de poker»·«icm calculator» 축 · zh-hant는 「德州撲克勝率計算器」 260·「icm計算機」 70 축을 본다 · de는 «poker rechner» 260·«poker wahrscheinlichkeiten rechner» 210·«poker odds calculator»(영문 590) 축을 본다 · fr은 «calculateur poker» 390·«icm poker» 480·«équité poker» 110·«tableau push or fold» 70 축을 본다 · **ms는 쿼리 단위로도 볼 게 없다** — 말레이어 축이 통째로 null이라 «poker calculator»·«poker odds calculator»(각 90 · 조준 안 한 영어 축)에 노출이 붙는지만 기록한다 · **id는 «kalkulator poker» 10 하나만 본다** — 🔴 인니어 축이 통째로 10 단위라 **쿼리 단위로 내려가야 보인다**(페이지 합계로는 0으로 보인다) · 영어 «poker calculator»·«poker odds calculator» 각 90은 **조준 안 한 축**이라 노출이 붙으면 그것대로 기록해 둘 것 · 🆕 **hi는 «데바나가리 쿼리에 노출이 붙는가»만 본다** — 조준한 영어 축 `poker odds calculator` 390은 SERP 19/19라 노출이 붙기 어렵고 힌디어 축은 볼륨 자체가 null이다. **붙으면 §3-B의 «힌디어 SERP 공백» 판정이 맞은 것**이라 그 자체가 결과다).
-4. 🪶 **계산기 EN 후속**(브리프 §5) — 🔴 두 건은 09-20에 닫혔다(폴백 티어 · 오픈 림프). **남은 것**:
+4. 🪶 **계산기 EN 후속**(브리프 §5) — 🔴 폴백 티어·오픈 림프는 09-20에, **4-A 7건은 09-20 (3)에 닫혔다**
+   (og 카드 20/20 · images · x-default · 오버카드 · times-2 · A3s · exactNote → `docs/og-meta-audit-2026-09-20.md`). **남은 것**:
    🟠 EN `88`이 `77`보다 좁다(«consider calling» vs «call» — 88이 더 센데 권고가 더 좁다 · 12로케일이 이 비대칭을 충실히 옮겼다) ·
    🟠 88·77의 «EP 첫 진입» 미정의(「Raise LP」만 읽으면 EP 첫 진입에 할 게 없어 림프로 빠진다 · AJs·55는 그 자리를 닫아 뒀다) ·
    🟠 `44`(T5)가 `43s`(T4)보다 아래(페어 승격은 `summary` 5행 「44–22 weak offsuit hands」를 13자리에서 같이 고쳐야 한다) ·
    🟠 EN `87s`·`65s`·`54s` 「Call LP」(76s만 «raise first in» — 티어 내 역전 + LP 첫 진입 림프 암시) ·
-   🟠 오버카드 «not on board»(EN·es·ja·zh·zh-hant 5개 잔존) · 🟠 FAQ «times-2» 방향(ja·zh·zh-hant 미반영) ·
-   🟠 `<SEO>`의 og:title 덮어쓰기(로케일 공통 · en·ja·zh·fr·id 5곳 실측) · 🟠 OG/트위터 `images` 누락 · `calculator-alternates` x-default ·
-   🪶 EN `A3s` «Bottom of the suited aces»는 같은 표에 A2s가 있어 거짓 · 🪶 `outs.exactNote` «The big number»(활자 크기 ↔ 값 크기 오역 위험).
+   🪶 **로케일 전파 2건**(EN만 고쳤다): `outs.exactNote` — 로케일이 «값의 크기»로 옮겼으면 **사실오류**다(grep 후보 de `große Zahl`·ja `大きい数字`·ms `Angka besar`·zh `那個大數字`) · EN `A3s` 새 문구 12로케일.
    🔴 **ko는 계산기 나머지 탭이 아직 09-17 이전이다**(`spr.zones`·`outs`·`icm` — 09-20은 스타팅 탭만 닫았다) → ko 전수 대조는 별도 회차.
 
 ## 🔵 미결 (해결되면 WORKLOG에 적고 지운다)

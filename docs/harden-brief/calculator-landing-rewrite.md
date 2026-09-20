@@ -316,6 +316,32 @@ de 회차의 렌즈 2종이 「de 번역 문제」로 보고한 것들이 실은
 
 ## 5. EN 후속(미반영 · 다음 queue/헤드 회차 재료)
 
+### ✅ 2026-09-20 (3) 해소 — OG 카드 + 사전 부채 회차(본체 · 헤드 Opus)
+
+닫힌 것: **OG/트위터 `images` 누락** · **`x-default` 없음** · **오버카드 «not on board»**(EN·es·ja·zh·zh-hant
+5개 = 이로써 9/9 로케일 + EN 완료) · **«times-2» 방향**(EN·ja·zh·zh-hant) · **EN `A3s` 거짓 문구** ·
+**EN `outs.exactNote` «The big number»** · **`<SEO>` og:title 덮어쓰기**.
+
+🔴 **마지막 항목은 5곳이 아니라 20/20이었다** — 감사 정본 = `docs/og-meta-audit-2026-09-20.md`.
+원인이 둘이었다: ① `/ranking`·`/glossary`·`/hands`·`/strategy` 등 **10개 라우트는 서버 og가 아예 없어
+«홈 카드»가 나가고 있었다**(2026-08-02에 title·canonical만 고치고 og 축은 안 고쳤다) ② 계산기 12곳은
+서버의 **의도된 카드용 제목**을 클라이언트가 페이지 제목으로 덮었다.
+
+다음 회차가 알아야 할 것:
+
+- 🔴 **og는 서버 전용 영역이다.** 소셜 스크래퍼는 JS를 안 돌려 클라이언트 갱신을 **영원히 못 본다**.
+  `components/seo.tsx`에서 og 갱신을 **제거**했다 — 되살리지 마라(그 주석에 반증 조건을 적어 뒀다).
+- 🔴 **Next metadata는 얕은 병합이라 함정이 «둘»이다**: 안 적으면 루트 홈 카드가 나가고,
+  적으면 `images`가 상속 안 돼 카드가 빈다. → **`lib/page-metadata.ts`의 `socialMeta()`를 써라.**
+- 🔴 **부모 layout도 샌다** — `/blog/roadmap`이 `app/blog/layout.tsx`의 블로그 카드를 물려받고 있었다.
+  새 하위 라우트를 만들 때 `socialMeta()`를 빼먹으면 같은 일이 난다.
+- 🔴 **제목·설명을 상수로 올리면 `check:seo-sync`가 오탐했다**(8건) — 게이트가 리터럴만 읽었다.
+  **게이트를 고쳤다**(상수 해석 + 🔴 **상수가 jsonLd 리터럴보다 우선** — 첫 수정에서 `/ranking`이
+  jsonLd 설명을 물고 오는 오탐이 실제로 났다). 셀프테스트 14 → **20/20**.
+- 🪶 **결함은 JS를 꺼야 보였다** — 브라우저로 열면 클라이언트가 «고쳐» 놔서 정상으로 보인다.
+  메타를 의심할 땐 **JS 끈 컨텍스트로 서버 HTML을 직접 읽어라.**
+
+
 ### ✅ 2026-09-20 해소 — 폴백 티어 + 오픈 림프 회차(`3db98e3f` · WORKLOG 09-20 · 12로케일 + **ko**)
 
 닫힌 것(아래 목록에서 지웠다): **EN·de의 오픈 림프 셋**(88·77·KQo) · **`unknownAction` 상·하한 부재**(표 밖 122핸드) ·
@@ -341,8 +367,7 @@ de 회차의 렌즈 2종이 「de 번역 문제」로 보고한 것들이 실은
   이번에 폴백·림프 9자리·방향 역전 4자리를 고쳤지만 **`spr.zones`·`outs`·`icm` 등 나머지 탭은 아직 09-17 이전이다** —
   ko 전수 대조는 별도 회차 몫(§0 ko 행).
 
-- 🟠 **OG/트위터 `images` 누락은 사이트 패턴**: `app/en/page.tsx`·`app/en/solver/page.tsx`·10로케일 계산기 `page.tsx` 전부 — Next metadata는 얕은 병합이라 루트 layout 이미지가 상속되지 않는다. 공용 헬퍼로 한 번에.
-- 🟠 `lib/calculator-alternates.ts`에 `x-default` 없음(12랜딩 공용).
+*(OG/트위터 `images` 누락 · `x-default` 없음 — 둘 다 2026-09-20 (3) 해소. 아래 ✅ 블록)*
 - 🪶 M 존 라벨 «1–5 / 6–9 / 10–19»(코드 `M_ZONES`)는 소수 경계(5.5 → 레드)와 안 맞는다 — 코드·표 동시 수정 대상(전 로케일).
 - 🪶 M 탭은 플레이어 수를 앤티에만 쓰고 Effective M을 존에 적용하지 않는다(표 intro에 안내만) — 기능 개선 후보.
 - 🪶 `holdem-bubble`(EN)이 `/en/calculator`를 3번 링크하는데 역링크 없음 · 「rule of 4 and 2」가 EN 4곳에 분산(140/mo).
@@ -351,11 +376,11 @@ de 회차의 렌즈 2종이 「de 번역 문제」로 보고한 것들이 실은
 - 🪶 EN `quickRef[5].intro` 「the calculator above shows raw M」 — 도구가 9개라 모호. zh는 「“锦标赛 M”标签页」로 지목했다. EN도 탭 이름으로.
 - 🟠 **클라이언트 `<SEO>`가 `og:title`을 서버 `openGraph.title`과 다른 값(fullTitle)으로 덮어쓴다** — en·ja·zh 공통(교열 렌즈 09-17). `check:seo-sync`는 이 축을 안 본다. 로케일 공통 판정 필요(서버 og:title을 fullTitle로 맞추거나 클라이언트가 og를 안 건드리게).
 - 🪶 `icm.introRest` 선행 공백 — EN 타입 주석 「keep the leading space」는 영어용. CJK 로케일에서 「）」와 「是」 사이 공백이 렌더된다(zh는 뺐고 ja는 남음). 렌더러 쪽 처방(`sep()` 동형)으로 통일 후보.
-- 🪶 **EN FAQ «4 and 2 rule»의 «times-2 half runs 1–2 points low»는 5~11 outs에서만 참**(표: 1~4 outs 0.2~0.7 · 12 outs 2.1 · 15 outs 2.6 · 20 outs 3.5 — es 교열 렌즈 09-17). es는 «outs가 늘수록 더 모자란다(9 outs 1.6 · 15 outs 2.6)»로 고쳤다. EN·ja·zh·zh-hant 회灌 후보.
+*(«times-2» 방향 — 2026-09-20 (3)에 EN·ja·zh·zh-hant 반영 완료. 아래 ✅ 블록)*
 - 🪶 **EN FAQ «compare the average against your value if you just fold»** — 승/버스트 단순 평균은 승률 50% 가정이 된다(es 네이티브 렌즈). es는 «승률로 가중한 평균». EN·타 로케일 회灌 후보.
 - 🪶 EN `pot.orHigher` «above this…» ↔ de·fr·pt·id·es(옛)·ms «or more» — 정확히 같으면 EV 0(verdict.even)과 어긋난다. es는 «— con más equity, el call es rentable». 남은 로케일 회차에서 같이.
 - 🪶 EN `starting.hands` 87s·65s·54s «Call LP» · 33/22 «Multiway pots…» — «레이즈에 콜»이 명시 안 돼 림프로 읽힌다(es 네이티브 렌즈). es만 «pagar una subida»로 명시.
-- 🟠 **EN `outs.presets[5].desc` «2 high ranks not on board»는 오버카드 정의가 틀렸다** — «보드의 어느 카드보다 높은 2장»(pt 네이티브 렌즈 09-17 high). EN·ja·zh·zh-hant·es 사전 동형 확인 후 회灌.
+*(오버카드 정의 — 2026-09-20 (3)에 EN·es·ja·zh·zh-hant 5개 전부 해소. 아래 ✅ 블록)*
 - 🪶 **EN deal.summary «pay everyone the next payout first»** — «next payout»이 «다음 상금 점프»로 오독된다(pt 네이티브 렌즈). pt는 «o próximo prêmio a ser pago (aqui, os $300 do 4º lugar)». EN·타 로케일 회灌 후보.
 - 🪶 EN 66·44 «~15× the call behind» — 누구의 스택인지(양쪽 유효 스택) 명시 없음. pt는 «você e quem aumentou tiverem atrás pelo menos ~15×».
 - 로케일 회차 공통: 딜러 렌즈가 고친 EN 도구 문안 12항(Effective stack · 팟 라벨 · SPR low · 데드존 · diffPlusNote · 스타팅 12핸드 · unknown 폴백 · 슬라이더 19.6 · 프리셋 «Flush draw» · 오버카드 desc · 가이드 카드 · introRest)은 **각 로케일 사전에도 그대로 남아 있다** — 로케일 회차에서 같이 정정.
@@ -393,9 +418,7 @@ de 회차의 렌즈 2종이 「de 번역 문제」로 보고한 것들이 실은
 
 ### id 회차(09-19)가 §5에 더한 것
 
-- 🟠 **EN `outs.presets[5]` 오버카드 정의가 아직 «not on board»다** — 이미 §5에 있던 항목인데,
-  🔴 **id 사전 주석이 이를 「EN 09-17 정정」이라고 잘못 적고 있던 것이 09-19에 발견됐다**(교열 렌즈).
-  현재 정정된 로케일 = **pt · de · fr · id 4개** / 옛 문안 = **EN · es · ja · zh · zh-hant 5개**. 전파 대기.
+*(오버카드 정의 전파 — 2026-09-20 (3)에 남은 5개 완료 = 9/9 로케일 + EN. 아래 ✅ 블록)*
 - 🪶 **EN `87s "Call LP"`만 «raise first in»이 없다** — 같은 티어의 76s·98s에는 있어 **더 강한 핸드가 더 좁다**(티어 내 역전).
   id는 98s와 동형으로 맞췄다. EN·타 로케일 회灌 후보.
 - 🪶 **EN `55 "Call a single raise in LP"`에만 셋마이닝 스택 조건이 없다** — 66·44는 「~15× the call behind」를 요구한다.
@@ -410,9 +433,8 @@ de 회차의 렌즈 2종이 「de 번역 문제」로 보고한 것들이 실은
 
 ### ms 회차(09-19)가 §5에 더한 것
 
-- 🪶 **EN FAQ Q4 「times-2 half runs 1–2 points low」는 ja·zh·zh-hant에 아직 미반영**(fr 09-18 표의 3열).
-  ms는 최신 문안(9 outs 1.6 · 15 outs 2.6)을 실었다 — 🔴 **번역이 «방향»을 뒤집기 쉬운 자리다**(ms 초안이 실제로
-  «terlebih»(초과)로 뒤집었고 렌즈 2종이 잡았다). 남은 로케일은 **부호를 검산하라**: 규칙 18% < 실제 19.6% = 규칙이 «낮다».
+*(«times-2» ja·zh·zh-hant 미반영 — 2026-09-20 (3) 해소. 🔴 **번역이 «방향»을 뒤집기 쉬운 자리라는 경고는 유효하다**:
+  규칙 18% < 실제 19.6% = 규칙이 «낮다». 새 로케일은 **부호를 검산하라**.)*
 - 🪶 **EN `quickRef[1].note`의 «no longer a favorite»는 번역이 사실을 흔든다** — «favorite»는 «equity 50% 미만»이라는
   배당 용어인데 «최우선 선택»으로 옮기면 「AA가 이제 최선의 패가 아니다」라는 **거짓 명제**가 된다(49.2%는 나머지 5명 각 ~10% 대비 압도적 1위).
   ms는 «peluang … jatuh di bawah 50%»로 풀었다 — **전 로케일 grep 후보**.
@@ -437,8 +459,10 @@ de 회차의 렌즈 2종이 「de 번역 문제」로 보고한 것들이 실은
 - 🪶 **EN 티어 역전 1건 추가 실측**(hi 2차 교열): 폴백에 걸리는 `43s`(Tier 5)가 표 안 `54s`·`65s`(Tier 4 · «Call LP»만)보다
   **공격적으로 읽힌다** — EN 동형이라(EN 폴백 «Cutoff/button only» ↔ EN 54s «Call LP») hi는 건드리지 않고 예시에서만 뺐다.
   **EN 정정 후 전 로케일 전파** 후보(§5의 `K10o/Q10o/J10o`·`A10s/KQs` 역전과 같은 묶음).
-- 🪶 **EN `A3s` «Bottom of the suited aces»는 같은 표에 A2s가 있어 거짓이다**(hi 네이티브 렌즈). EN + 12로케일 공통.
-- 🪶 **EN `outs.exactNote` «The big number»는 «활자 크기»인데 번역이 «값의 크기»로 뒤집기 쉽다** — hi 초안이 실제로
-  `मान`(값)으로 옮겨 **«더 큰 쪽 수치가 정확값»** = Rule of 4 추정치를 고르게 만들었다(항상 추정치가 더 크다).
-  🔴 **전 로케일 grep 후보**: de `große Zahl` · ja `大きい数字` · ms `Angka besar` · zh `那個大數字`는 활자 뜻이 살아 있다.
+*(EN `A3s` 거짓 문구 · EN `outs.exactNote` «The big number» — 둘 다 2026-09-20 (3)에 **EN만** 해소. 아래 ✅ 블록)*
+- 🪶 **`outs.exactNote` 로케일 전수 확인은 남았다** — EN을 «The figure in large type is the exact one»으로
+  못 박았으니, 로케일이 «값의 크기»로 옮겼으면 **사실오류**다(항상 Rule of 4 추정치가 더 크다).
+  🔴 **grep 후보**: de `große Zahl` · ja `大きい数字` · ms `Angka besar` · zh `那個大數字`는 활자 뜻이 살아 있다 —
+  hi 초안이 실제로 `मान`(값)으로 옮겨 **«더 큰 쪽 수치가 정확값»**을 만들었다. 로케일 회차에서 확인.
+- 🪶 **EN `A3s` 새 문구의 12로케일 전파는 남았다**(EN만 고쳤다).
 

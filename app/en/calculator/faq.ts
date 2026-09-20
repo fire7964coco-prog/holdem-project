@@ -21,7 +21,7 @@ export const CALCULATOR_FAQ_EN: { q: string; a: string }[] = [
   },
   {
     q: "What is the 4 and 2 rule in poker?",
-    a: "A mental shortcut for draw odds: with two cards to come (flop to river) multiply your outs by 4; with one card to come (turn to river) multiply by 2. For 9 outs that gives 36% and 18%; the exact figures are in the next answer. The times-4 half stays within about a point up to 9 outs and drifts roughly a point per out after that (15 outs is really 54.1%, not 60%); the times-2 half runs 1–2 points low. And times 4 only applies when you will see both cards without paying again.",
+    a: "A mental shortcut for draw odds: with two cards to come (flop to river) multiply your outs by 4; with one card to come (turn to river) multiply by 2. For 9 outs that gives 36% and 18%; the exact figures are in the next answer. The times-4 half stays within about a point up to 9 outs and drifts roughly a point per out after that (15 outs is really 54.1%, not 60%); the times-2 half runs low, and more so the more outs you have (1.6 points at 9 outs, 2.6 at 15). And times 4 only applies when you will see both cards without paying again.",
   },
   {
     q: "How often does a flush draw hit?",

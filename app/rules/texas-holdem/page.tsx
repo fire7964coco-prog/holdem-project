@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { SITE } from "@/lib/site";
+import { socialMeta } from "@/lib/page-metadata";
 import RulesTexasHoldemClient from "./rules-texas-holdem-client";
 import HubPage from "@/components/hub-page";
 import { FAQ_ITEMS } from "./faq-data";
@@ -7,9 +8,20 @@ import { FAQ_ITEMS } from "./faq-data";
 // 카니발 방지: /blog/holdem-rules 필라가 "홀덤 룰" 키워드 소유 → 이 도구는 noindex.
 // ★2026-08-02 canonical 추가: 루트 layout의 홈 canonical을 물려받아 **noindex인데 홈을
 //   표준으로 지목**하고 있었다(모순 신호). noindex를 확실히 전달하려면 자기 자신을 가리켜야 한다.
+// ★2026-09-20: title·description·og가 통째로 없어 **루트 layout의 홈 값**이 서버 HTML에 나갔다
+//   (실측: 서버 <title> = 「홀덤마스터 — 텍사스 홀덤 완벽 가이드」 · og:url = 홈).
+//   noindex라 SERP엔 안 뜨지만 **공유하면 카드는 나간다** — 그 카드가 홈이었다.
+//   문구는 클라이언트 <SEO>가 쓰던 값 그대로다(rules-texas-holdem-client.tsx와 같아야 한다).
+const TITLE = "텍사스 홀덤 포커 규칙 완벽 가이드 — 블라인드·베팅·족보 총정리";
+const DESCRIPTION =
+  "⚡텍사스 홀덤⚡ 기초 규칙을 처음부터 끝까지 정리했습니다. 블라인드·프리플랍·플랍·턴·리버·쇼다운 6단계 + 베팅 옵션 7가지 + 족보 10가지 + FAQ 8개.";
+
 export const metadata: Metadata = {
+  title: TITLE,
+  description: DESCRIPTION,
   robots: { index: false, follow: true },
   alternates: { canonical: `${SITE}/rules/texas-holdem` },
+  ...socialMeta({ title: TITLE, description: DESCRIPTION, path: "/rules/texas-holdem" }),
 };
 
 /**

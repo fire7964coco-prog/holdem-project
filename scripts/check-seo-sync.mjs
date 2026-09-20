@@ -66,15 +66,55 @@ export function propOf(block, name) {
   const m = block.match(new RegExp(`\\b${name}=\\{?["'\`]([^"'\`]*)["'\`]`));
   return m ? m[1] : null;
 }
+/**
+ * 최상단 `const NAME = "…";` 을 모아 둔다.
+ *
+ * ★2026-09-20 신설. metadata가 문자열을 **상수로 빼서 참조**하는 형태
+ * (`title: TITLE`)를 이 게이트가 못 읽어 «서버에 title이 없다»로 **8건을 오탐**했다.
+ * 🔴 그런데 상수 참조는 **게이트가 권장하는 모범 사례 쪽**이다 — `holdem-practice`가
+ *    「SEO_TITLE/SEO_DESC 상수를 page.tsx가 import해 두 곳이 같은 문자열을 쓴다」로
+ *    이미 그렇게 돼 있고, og 카드까지 같은 값을 써야 하는 자리에서는 리터럴을 두 번
+ *    적는 것이 오히려 드리프트를 만든다. **고칠 것은 코드가 아니라 게이트였다.**
+ * ⚠ 보간이 든 템플릿 리터럴(`` `${X} | Y` ``)은 **일부러 안 푼다** — 값을 정적으로
+ *   알 수 없다. 그런 자리는 종전처럼 «title 없음»으로 떨어져 사람이 판정한다.
+ */
+export function topLevelConsts(src) {
+  const map = new Map();
+  const re = /^const\s+([A-Za-z_$][\w$]*)\s*(?::[^=\n]+)?=\s*(?:\r?\n\s*)?["'`]([^"'`$]+)["'`]\s*;/gm;
+  let m;
+  while ((m = re.exec(src))) map.set(m[1], m[2]);
+  return map;
+}
+
 export function serverMeta(src) {
-  // title: "…"  또는  title: { absolute: "…" }
+  const consts = topLevelConsts(src);
+  /** `title: TITLE` / `description: DESCRIPTION` 처럼 식별자를 가리키는 자리를 푼다. */
+  const viaConst = (key) => {
+    const m = src.match(new RegExp(`^\\s*${key}:\\s*([A-Za-z_$][\\w$]*)\\s*,`, "m"));
+    return m && consts.has(m[1]) ? consts.get(m[1]) : null;
+  };
+  // title: "…"  또는  title: { absolute: "…" }  또는  title: TITLE / { absolute: TITLE }
   const abs = src.match(/title:\s*\{\s*absolute:\s*["'`]([^"'`]+)["'`]/);
   const plain = src.match(/^\s*title:\s*["'`]([^"'`]+)["'`]/m);
+  const absConstM = src.match(/title:\s*\{\s*absolute:\s*([A-Za-z_$][\w$]*)\s*\}/);
+  const absConst = absConstM && consts.has(absConstM[1]) ? consts.get(absConstM[1]) : null;
+  const titleConst = viaConst("title");
   // ⚠ `description:` 과 문자열 사이에 **주석 줄이 낀다**(이 레포는 «왜»를 주석에 남긴다).
   //    주석을 건너뛰지 않으면 매칭에 실패하고, 그러면 뒤에 오는 `openGraph.description`을
   //    metadata의 것으로 잘못 집는다 — 첫 실행에서 실제로 그 오탐이 났다.
   const desc = src.match(/^\s*description:\s*(?:\r?\n\s*(?:\/\/[^\n]*|\/\*[\s\S]*?\*\/)\s*)*\r?\n?\s*["'`]([^"'`]+)["'`]/m);
-  return { title: abs ? abs[1] : plain ? plain[1] : null, description: desc ? desc[1] : null };
+  const descConst = viaConst("description");
+  /**
+   * 🔴 **상수 해석이 리터럴 스캔보다 «먼저»다.** 순서를 뒤집으면 오탐이 난다 —
+   *    리터럴 스캔은 파일 전체에서 `description: "…"` 를 찾으므로, metadata가 상수를
+   *    가리키는 순간 **jsonLd 안의 description을 metadata 것으로 잘못 집는다.**
+   *    2026-09-20 첫 구현에서 실제로 `/ranking`이 jsonLd의 사이트 목록 설명을 물고 왔다.
+   *    상수 매칭은 `^\s*key:\s*IDENT\s*,` 로 자리가 특정되므로 이쪽이 더 믿을 만하다.
+   */
+  return {
+    title: absConst ?? titleConst ?? (abs ? abs[1] : plain ? plain[1] : null),
+    description: descConst ?? (desc ? desc[1] : null),
+  };
 }
 export function isNoindex(src) {
   return /index:\s*false/.test(src);
@@ -184,6 +224,37 @@ function selftest() {
     `export const metadata = {\n  description:\n    // 왜 이렇게 썼는지\n    "진짜 설명",\n  openGraph: {\n    description: "OG 설명",\n  },\n}`
   ).description === "진짜 설명");
   ok("desc — 주석 없는 평범한 경우", serverMeta('  description:\n    "그냥 설명",').description === "그냥 설명");
+
+  // ★2026-09-20 — 상수 참조(`title: TITLE`) 해석. 이걸 못 읽어 8건을 오탐했다.
+  const CONST_SRC =
+    'const TITLE = "홀덤 차트 — 포지션별 오픈 레인지";\n' +
+    'const DESCRIPTION =\n  "169개 프리플랍 핸드를 포지션별로 색칠한 표.";\n\n' +
+    "export const metadata: Metadata = {\n  title: TITLE,\n  description: DESCRIPTION,\n};";
+  ok("상수 참조 — title", serverMeta(CONST_SRC).title === "홀덤 차트 — 포지션별 오픈 레인지");
+  ok("상수 참조 — description", serverMeta(CONST_SRC).description === "169개 프리플랍 핸드를 포지션별로 색칠한 표.");
+  ok(
+    "상수 참조 — title:{absolute: CONST}",
+    serverMeta('const T = "X | HoldemMaster";\nexport const metadata = {\n  title: { absolute: T },\n};').title ===
+      "X | HoldemMaster",
+  );
+  // 🔴 보간이 든 템플릿 리터럴은 **정적으로 값을 모른다** → 풀지 않고 null로 떨어뜨려 사람이 판정한다.
+  ok(
+    "보간 템플릿은 풀지 않는다",
+    serverMeta("const TITLE = `${D.seo.title} | HoldemMaster`;\nexport const metadata = {\n  title: TITLE,\n};").title ===
+      null,
+  );
+  // 정의되지 않은 식별자를 가리키면 «있다»고 속이지 않는다
+  ok("미정의 상수는 null", serverMeta("export const metadata = {\n  title: NOT_DEFINED,\n};").title === null);
+  // 🔴 회귀 방지 — 상수 해석이 리터럴 스캔보다 먼저여야 한다.
+  //    아니면 metadata가 상수를 가리킬 때 **jsonLd의 description**을 물고 온다(첫 구현의 실제 오탐).
+  ok(
+    "상수가 jsonLd 리터럴보다 우선",
+    serverMeta(
+      'const DESCRIPTION = "진짜 메타 설명";\n' +
+        "export const metadata = {\n  description: DESCRIPTION,\n};\n" +
+        'const jsonLd = {\n  description: "jsonLd 안의 다른 설명",\n};',
+    ).description === "진짜 메타 설명",
+  );
 
   const bad = t.filter(([, c]) => !c);
   console.log("\n── check:seo-sync 셀프테스트 ──");

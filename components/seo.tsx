@@ -86,10 +86,26 @@ export function SEO({ title, description, path }: SEOProps) {
       el.setAttribute(attr, value);
     };
     setMeta('meta[name="description"]', "content", description);
-    setMeta('meta[property="og:title"]', "content", fullTitle);
-    setMeta('meta[property="og:description"]', "content", description);
-    setMeta('meta[property="og:url"]', "content", canonical);
     setMeta('link[rel="canonical"]', "href", canonical);
+    /**
+     * 🔴 **og:* 는 여기서 건드리지 않는다** (2026-09-20에 제거).
+     *
+     * 전엔 `og:title`·`og:description`·`og:url` 셋을 런타임에 덮어썼다. 두 가지로 해로웠다:
+     *   ① **아무도 못 본다** — 카카오톡·페이스북·트위터 스크래퍼는 **JS를 돌리지 않는다.**
+     *      그들이 읽는 건 서버 HTML뿐이라, 여기서 고쳐 봐야 카드는 영원히 서버 값으로 나간다.
+     *   ② **구글에겐 값이 둘로 보인다** — 구글은 렌더하므로 서버 값과 다른 값을 보게 된다.
+     *      계산기 랜딩 12곳은 서버가 **카드용 짧은 제목**을 일부러 따로 두는데, 그걸 페이지
+     *      제목으로 덮어써서 저자의 의도를 지우고 있었다.
+     *
+     * 실측(20개 라우트 · JS 끈 서버 HTML ↔ 렌더 후 DOM): **20/20이 덮어쓰기 중**이었고
+     * 그중 `/ranking`·`/glossary`·`/hands`·`/strategy` 등은 서버 og가 **홈 카드**였다.
+     * → 처방은 «클라이언트가 더 잘 고치게»가 아니라 **서버에 og를 채우고 여기선 손 떼기**다.
+     *   서버 쪽 정본 = `lib/page-metadata.ts`의 `socialMeta()`.
+     *
+     * ⚠ SPA 이동 뒤 og가 이전 페이지 값으로 남는 것은 **무해하다** — 스크래퍼는 URL을
+     *   새로 받아 서버 HTML을 읽지, 남의 브라우저 히스토리를 따라오지 않는다.
+     * 🔴 되돌리지 마라. 되살리려면 위 ①②를 먼저 반증해야 한다.
+     */
   }, [fullTitle, description, canonical]);
 
   return null;

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { SITE } from "@/lib/site";
+import { OG_IMAGE } from "@/lib/page-metadata";
 import CommunityClient from "@/app/community/community-home";
 import { LocaleHomeJsonLd } from "@/lib/intl-jsonld";
 
@@ -27,6 +28,8 @@ export const metadata: Metadata = {
     siteName: "HoldemMaster",
     locale: "en_US",
     type: "website",
+    // 🔴 2026-09-20 추가 — 얕은 병합이라 루트 layout의 images가 상속되지 않는다(빈 카드).
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "HoldemMaster" }],
   },
   // 🔴 **twitter:*를 안 주면 루트 `app/layout.tsx`의 «한국어»가 그대로 나간다.**
   //    2026-08-23 라이브 실측으로 발견 — **25개 로케일 홈 전부**가 twitter:title 로
@@ -40,6 +43,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "HoldemMaster Community — Live Feed for Poker Players Worldwide",
     description: "Strategy · hands · rankings — discuss live with poker players from 14 countries.",
+    images: [OG_IMAGE],
   },
 };
 

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { SITE } from "@/lib/site";
+import { socialMeta } from "@/lib/page-metadata";
 import HandsClient from "./hands-client";
 import { HANDS, FAQS } from "./hands-data";
 
@@ -79,14 +80,19 @@ import { HANDS, FAQS } from "./hands-data";
  *     ⚠ 「홀덤족보」는 **붙여쓰기**가 8,100이다. 띄어쓰면 그 축을 놓친다.
  *   🔴 이 두 값은 hands-client.tsx의 SEO 컴포넌트와 **한 글자도 다르면 안 된다**(한쪽만 고치면 탭과 SERP가 갈린다).
  */
+const TITLE = "족보 헷갈릴 때 여는 표 — 포커 족보·홀덤족보 순위";
+const DESCRIPTION =
+  "로열플러시부터 하이카드까지 포커 족보 10단계를 예시 카드와 7장 기준 확률로 한 장에 담았습니다. 게임 중 홀덤족보가 헷갈릴 때 바로 열어 확인하는 표입니다.";
+
 export const metadata: Metadata = {
-  title: "족보 헷갈릴 때 여는 표 — 포커 족보·홀덤족보 순위",
-  description:
-    "로열플러시부터 하이카드까지 포커 족보 10단계를 예시 카드와 7장 기준 확률로 한 장에 담았습니다. 게임 중 홀덤족보가 헷갈릴 때 바로 열어 확인하는 표입니다.",
+  title: TITLE,
+  description: DESCRIPTION,
   // 🔴 follow는 유지한다 — 이 페이지가 필라로 보내는 링크 7개(하단 박스 1 + FAQ 앵커 6)가
   //   계속 권위를 전달하게 하려는 것이다. index만 끈다.
   robots: { index: false, follow: true },
   alternates: { canonical: `${SITE}/hands` },
+  // ★2026-09-20: noindex여도 «공유되면» 카드는 나간다 — 그동안 홈 카드가 나갔다.
+  ...socialMeta({ title: TITLE, description: DESCRIPTION, path: "/hands" }),
 };
 
 /**

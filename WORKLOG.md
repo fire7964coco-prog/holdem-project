@@ -1,3 +1,39 @@
+## 2026-09-20 (3) — OG 카드 20/20 교정 + 계산기 사전 부채 7건 (본체 · 헤드 Opus)
+
+핸드오프 4-A(판정 없이 되는 것). 감사 정본 = `docs/og-meta-audit-2026-09-20.md` · 브리프 §5에 ✅ 블록.
+
+- 🔴 **«og:title 5곳»이 실측에서 20/20이었다.** 방법 = 같은 URL을 **JS 끈 컨텍스트**(서버 HTML)와
+  **켠 컨텍스트**(렌더 후 DOM)로 열어 비교. 원인이 둘이다:
+  ① **서버 og 부재 10개 라우트**(`/ranking`·`/glossary`·`/hands`·`/strategy`·`/hand-chart`·`/quiz`·
+     `/pub`·`/rules`·`/rules/seven-card-stud`·`/rules/texas-holdem`) — og:title이 «홀덤마스터 —
+     텍사스 홀덤 완벽 가이드», og:url이 **홈**이었다. **2026-08-02에 title·canonical만 고치고 og는 안 고쳤다.**
+     `/rules/texas-holdem`은 서버 `<title>`·`description`까지 홈 값이었다.
+  ② **의도된 서버 값을 덮어씀** — 계산기 12곳은 카드용 짧은 제목을 일부러 따로 두는데 페이지 제목으로 덮였다.
+  ①-b **부모 layout 누수**: `/blog/roadmap`이 `app/blog/layout.tsx`의 «블로그 카드»를 물려받고 있었다.
+- 🔴 **결함이 안 보였던 이유 = 클라이언트가 런타임에 «고쳐» 놨다.** 브라우저로 열면 정상으로 보인다.
+  그런데 **카카오톡·페북·트위터 스크래퍼는 JS를 안 돌린다** → 공유 카드는 늘 서버 값(=홈)으로 나갔고,
+  **구글만** 서버와 다른 값을 봤다. → **og는 서버 전용 영역**으로 정리하고 `components/seo.tsx`에서 og 갱신 제거.
+- **`lib/page-metadata.ts` 신설** — `socialMeta()`가 og+twitter를 한 번에. 🔴 **얕은 병합 함정이 둘**이다:
+  안 적으면 홈 카드, 적으면 `images` 미상속으로 빈 카드. 헬퍼가 둘 다 닫는다.
+- `images` 누락 3곳(`/calculator` — `twitter` 키 자체가 없었다 · `/en` · `/en/solver`) · `x-default` 추가(`/en/calculator` 지목).
+- **사전 부채 4건**: 🔴 오버카드 «not on board» → «보드의 **모든** 카드보다 높은 2장»(EN·es·ja·zh·zh-hant
+  = 9/9 로케일 완료) · 🔴 «times-2» 방향(EN·ja·zh·zh-hant) **검산: 부족분 = N/46 − 0.02N 이라 아웃츠에
+  비례해 커진다**(9→1.57 · 15→2.61) · 🪶 EN `A3s` «Bottom of the suited aces»는 같은 표에 A2s가 있어 거짓 ·
+  🪶 EN `outs.exactNote` «The big number»는 활자/값이 갈린다(**값으로 읽으면 거짓** — 15 아웃츠에서
+  Rule of 4가 60%로 정확값 54.1%보다 크다) → «in large type»으로 못 박음.
+
+🔴 **내 리팩터가 게이트를 깼고, 게이트를 고쳤다.** 제목·설명을 상수로 올리자 `check:seo-sync`가
+**8건 오탐**(«서버에 title이 없다») — 리터럴만 읽었기 때문. **고칠 것은 코드가 아니라 게이트였다**
+(게이트 자신이 상수 방식을 「모범 사례」로 칭찬 중이었다). **첫 수정엔 우선순위 버그**가 있어
+`/ranking`이 **jsonLd의 description을 metadata 것으로 물고 왔다** → 상수 해석을 리터럴 스캔보다
+먼저로 바꾸고 **회귀 케이스를 박았다.** 셀프테스트 14 → **20/20**.
+
+**검증**: `npm run build` EXIT=0(정적 773쪽) · `check:seo-sync` 8→**0건** · `check:hreflang` ✅(x-default 포함) ·
+`check:calc-parity` **10/10** · **빌드 산출물**에서 10개 라우트 자기 제목·자기 URL·og:image 1개 ·
+**로컬 프로덕션(JS 끔↔켬) 15개 라우트 덮어쓰기 0건 · og:image 누락 0건**.
+
+---
+
 ## 2026-09-20 (2) — (not set) 랜딩 유실 원인 규명 **종결** (본체 · 코드 변경 없음 · 헤드 Opus)
 
 핸드오프 2번. 08-28부터 미결이던 「(not set) 236세션」을 GA4 Data API 직접 조회 + 라이브

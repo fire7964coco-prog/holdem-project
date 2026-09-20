@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { SITE } from "@/lib/site";
+import { socialMeta } from "@/lib/page-metadata";
 import RankingClient from "./ranking-client";
 import { SITES, FAQS } from "./ranking-data";
 
@@ -7,12 +8,21 @@ import { SITES, FAQS } from "./ranking-data";
 //   (components/seo.tsx는 useEffect로만 도는 클라이언트 컴포넌트라 서버 HTML엔 안 박힌다).
 //   이 페이지는 「홀덤사이트」 28일 1,896노출로 사이트 최대 쿼리를 받는데, 같은 쿼리를 홈(/)이
 //   1,351노출로 나눠 갖고 있었다. canonical이 홈을 가리키니 구글이 둘을 가를 근거가 없었다.
+// ★2026-09-20: 제목·설명을 상수로 올렸다 — og/트위터 카드가 같은 값을 써야 하는데
+//   문자열을 두 번 적으면 한쪽만 고쳐져 갈린다(en/calculator와 같은 규율).
+const TITLE = "온라인 홀덤 사이트, 안전하게 고르는 법 — 체크리스트 & 주요 사이트 비교 [2026]";
+const DESCRIPTION =
+  "온라인 홀덤 사이트를 찾기 전 꼭 확인할 안전·합법성 기준과 먹튀 경고 신호를 정리했습니다. 세계 주요 홀덤 사이트의 라이센스·규모·특징도 정보 목적으로 비교합니다.";
+
 export const metadata: Metadata = {
-  title: "온라인 홀덤 사이트, 안전하게 고르는 법 — 체크리스트 & 주요 사이트 비교 [2026]",
-  description:
-    "온라인 홀덤 사이트를 찾기 전 꼭 확인할 안전·합법성 기준과 먹튀 경고 신호를 정리했습니다. 세계 주요 홀덤 사이트의 라이센스·규모·특징도 정보 목적으로 비교합니다.",
+  title: TITLE,
+  description: DESCRIPTION,
   robots: { index: true, follow: true },
   alternates: { canonical: `${SITE}/ranking` },
+  // 🔴 2026-09-20 추가 — 이게 없으면 루트 layout의 **홈 카드**(og:title «홀덤마스터 — 텍사스 홀덤
+  //   완벽 가이드» · og:url 홈)가 그대로 나간다. 클라이언트 <SEO>가 런타임에 고쳐도
+  //   카카오톡·페이스북 스크래퍼는 JS를 안 돌려 영원히 못 본다. 근거 = lib/page-metadata.ts 주석.
+  ...socialMeta({ title: TITLE, description: DESCRIPTION, path: "/ranking" }),
 };
 
 /**

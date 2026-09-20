@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { SITE } from "@/lib/site";
+import { OG_IMAGE } from "@/lib/page-metadata";
 import CalculatorClient from "./calculator-client";
 import { CALCULATOR_FAQ } from "./faq";
 import HubPage from "@/components/hub-page";
@@ -39,6 +40,18 @@ export const metadata: Metadata = {
     siteName: "홀덤마스터",
     locale: "ko_KR",
     type: "website",
+    // 🔴 2026-09-20 추가 — Next metadata는 얕은 병합이라 `openGraph`를 선언한 순간
+    //    루트 layout의 `images`가 **상속되지 않는다.** 그래서 카드가 빈 채로 나가고 있었다.
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "홀덤마스터 홀덤 계산기" }],
+  },
+  // 🔴 2026-09-20 추가 — `twitter`를 안 적어 루트 layout의 **홈 카드**가 그대로 나갔다.
+  //    문구는 위 openGraph를 그대로 쓴다(새로 짓지 않는다 — app/en/page.tsx 주석과 같은 규율).
+  twitter: {
+    card: "summary_large_image",
+    title: "ICM 계산기·홀덤 확률 계산기 — 홀덤 계산 8종 올인원",
+    description:
+      "아웃츠·팟오즈·족보 판별·스타팅핸드·SPR·토너먼트 M값·ICM·푸시폴드 — 실전에서 필요한 홀덤 계산을 한 곳에서 무료로.",
+    images: [OG_IMAGE],
   },
 };
 

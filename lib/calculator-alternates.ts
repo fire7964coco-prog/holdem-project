@@ -25,4 +25,12 @@ export const CALCULATOR_ALTERNATES: Record<string, string> = {
   "id-ID": `${SITE}/id/calculator`,
   "ms-MY": `${SITE}/ms/calculator`,
   "hi-IN": `${SITE}/hi/calculator`,
+  /**
+   * ★2026-09-20 추가 — `x-default`는 «어느 언어에도 안 맞는 방문자»가 갈 곳이다.
+   *   없으면 구글이 알아서 고르는데, 그 선택은 우리가 통제하지 못한다.
+   *   🔴 **영어판을 지목한다** — ko가 아니다. 12개 랜딩 중 도구 용어가 가장 국제적이고
+   *      (equity·ICM·pot odds가 원어 그대로), 실제 유입도 비한국어권이 대부분인 자리다.
+   *   ⚠ 값이 `en-US`와 **같은 URL인 것은 정상**이다(하나의 페이지가 두 역할을 겸한다).
+   */
+  "x-default": `${SITE}/en/calculator`,
 };

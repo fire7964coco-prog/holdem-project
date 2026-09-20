@@ -105,7 +105,8 @@ export const CALC_DICT_ES: CalcDict = {
       { label: "Color + gutshot (combo)", desc: "9 de color + 3 de gutshot (solapamiento descontado)" },
       { label: "Gutshot (escalera interior)", desc: "p. ej. 5-6-8-9, solo sirve un 7" },
       // 딜러 렌즈(EN): 오버카드는 메이드 핸드 상대로 크게 할인
-      { label: "Dos sobrecartas", desc: "2 valores altos que no están en el board × 3 cada uno — descuéntalas mucho contra una mano hecha: ligar pareja con una sobrecarta muchas veces sigue perdiendo" },
+      // 🔴 2026-09-20 — «que no están en el board» no es la definición de sobrecarta (EN §5).
+      { label: "Dos sobrecartas", desc: "2 valores más altos que cualquier carta del board × 3 cada uno — descuéntalas mucho contra una mano hecha: ligar pareja con una sobrecarta muchas veces sigue perdiendo" },
       { label: "Doble pareja → full", desc: "p. ej. A-K en un board A-K-x → quedan 2 ases + 2 reyes" },
       { label: "Pareja → trío", desc: "quedan 2 cartas de ese valor" },
       { label: "Color + OESD (monstruo)", desc: "9 de color + 8 de escalera (2 repetidas)" },

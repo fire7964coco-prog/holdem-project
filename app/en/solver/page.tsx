@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { SITE } from "@/lib/site";
+import { OG_IMAGE } from "@/lib/page-metadata";
 import SolverClientEn from "./solver-client";
 import HubPage from "@/components/hub-page";
 import { SOLVER_FAQ_EN } from "./faq";
@@ -57,6 +58,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: TITLE,
     description: DESCRIPTION,
+    images: [OG_IMAGE],
   },
   openGraph: {
     title: "Free GTO Solver — HoldemMaster",
@@ -66,6 +68,8 @@ export const metadata: Metadata = {
     siteName: "HoldemMaster",
     locale: "en_US",
     type: "website",
+    // 🔴 2026-09-20 추가 — 얕은 병합이라 루트 layout의 images가 상속되지 않는다(빈 카드).
+    images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: "HoldemMaster GTO solver" }],
   },
 };
 
