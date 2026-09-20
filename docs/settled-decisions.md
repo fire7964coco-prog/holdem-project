@@ -392,6 +392,17 @@ def safe_write(path, text):
 - 짝 규율: kicker High card = **조합 1 + 킥커 4**(8자리 전부 같은 수 · 「up to 4」 아님) · Short Deck 「A-6-7-8-9 = 최저 스트레이트」는 **규칙**(WSOP 2026 Rule 366 축어 · often/sometimes 금지 · 인과 = 「A는 원래 low로도 논다 → 2–5가 빠져 6에 붙는다」).
 - 교훈: **같은 명제 N곳은 3곳이 아니라 8곳일 수 있다**(kicker: stripe·표1·직답·표2·요약·tldr·FAQ·열거) — 고치기 전 `grep -c`로 자리 수부터([[completion-count-the-copies-first]]).
 
+### 3-G. 🔴 WSOP 참가 요건·「WSOP Online」 명칭 — 전 로케일 공통 (2026-09-20 · queue Q4-c에서 승격 · 재론 금지)
+
+1차 출처 = 레포 사본 `docs/sources/wsop-2026-tournament-rules.txt`(Rule 2·4·4g·9·10 축어) + 09-17 라이브 `wsoponline.com`.
+
+- **참가 요건은 «21세만»이 아니다**: **21세(+proof of age) · 신분증 · 무료 계정 2개(Caesars Rewards·WSOP LIVE) · 이벤트별 조건**. 근거 = Rule 4 「Registration for both accounts is **required to participate in any WSOP Event**」(온라인 등록 전용이 아니다) + Rule 10(Caesars Rewards 독립 조항) + Rule 2 후반(「Certain WSOP Events may have age or other requirements」). 🔴 「21세만」·「21세+신분증만」으로 되돌리지 마라 — **배타 표현(「lo único」·「solo」·「유일한」)이 들어가는 순간 1차 출처와 직접 충돌한다.**
+- 🔴 **「proof of age」와 「신분증」을 나란히 열거하지 마라** — 같은 서류를 두 번 센다(Q4-c 렌즈 4).
+- **matrícula consular**: 룰북 한정어는 **「(Mexico only)」**(Rule 9) · 발급처는 **「las representaciones de México en Estados Unidos y Canadá」**(SRE 원문). 🔴 발급처에 **「solo」를 붙이지 마라**(원문에 없다 · Q4-b 판정) — «어느 나라 것을 받나»(룰북)와 «어디서 떼나»(SRE)는 **다른 명제**다. 🔴 **「여권을 쓰라」로 문장을 끝내지 마라**: Rule 9는 「If the… identification **does not include a physical address**, a second form of ID… will be required」이고 여권엔 주소가 없다 → **조건절로** 적는다(「el reglamento lo exige」식 단정 금지 · 2차 교열이 되돌린 자리).
+- **온라인 포커룸 명칭 = WSOP Online**(Rule 4g 「Real Money Online Poker Site WSOP Online (**formerly WSOP.com**)」). 병기 = es 「(antes WSOP.com)」 · EN 「(formerly WSOP.com)」 · KO 「(구 WSOP.com)」 — **파일 첫 언급 1회 + FAQ 답만**(재병기 금지 · 옛 이름은 검색어라 지우지도 않는다).
+- 🔴 **«브랜드»와 «도메인»은 다른 자리다** — 룰북 자신이 `www.WSOP.com/2026`을 **구조표·일정 출처 도메인**으로 계속 쓴다(L13·L18). 일괄치환 금지이고, 라이브 회귀 앵커를 걸 때도 «온라인 룸 명칭 자리»로 좁힌다.
+- 교훈: **재료를 받으면 그 파일이 «발행 중»인지부터 실측하라.** 렌즈·헤드·핸드오프가 세 번 「형제 글」로 올린 es 3편(`poker-en-las-vegas`·`nueva-jersey`·`dinero-real`)은 **07-27에 발행 중단된 es-US 13편**이었다(index 미등록 · 확인 = `ls .next/server/app/es/blog/<slug>.html`). **게이트 0건도 index 밖 파일은 미검사다**([[review-mechanize-not-repeat]]).
+
 ## 4. 1차 출처·인용 규율
 
 - **1차 출처 확보 경로(재조사 금지)**: WSOP 룰북·IRS Pub 515 = `pdftotext -layout`(WinGet Poppler) ·

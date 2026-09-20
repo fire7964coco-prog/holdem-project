@@ -997,6 +997,9 @@ tiebreak L55·L263·L277 ↔ EN L51·L175·L236·L250 · marathon L281 ↔ EN L2
 - 🪶 **Q4c-7 sitemap·IndexNow**: lastmod 변동 2행(KO `/blog/holdem-tournament-how-to-enter` · `/es/blog/holdem-tournament`) + `/es/blog/como-entrar-al-wsop`(HEAD 09-17) + `/en/tournaments`(FAQ 텍스트). 미발행 3편은 대상 아님.
 - 🪶 **Q4c-8 ja·zh·zh-hant 파일 안 만졌다**(세 워크트리 clean 실측 · 해당 명제 없음) — §6-0 통지 불요.
 - 🪶 **Q4c-9 게이트 후보(다음 Q7)**: 본문↔FAQ·글↔허브 FAQ **축어 런 길이** 검사(렌즈 3 측정법 = 구두점·볼드 제거 후 4단어 이상 연속 일치 · 이번 19·13·12단어가 answer-echo 밖에서 살았다).
+- 🆕 🔴 **Q4c-10 게이트 후보 2종 — 헤드가 머지(2026-09-20)에서 발견했다.** 🔴 **이 회차는 09-17에 끝났는데 머지가 3일 늦었다**(레인 `07d33271` → 머지 `53fc7892`). 같은 날 queue 회차가 **둘**(Q5-c·Q4-c) 끝났고 헤드가 **Q5-c만** 머지했다. 핸드오프 ▶1이 그대로 남아 **09-18·19·20 세션 셋이 「아직 안 한 일」로 읽었고**, 09-20에 헤드가 «지시서»를 새로 쓰다가 발견했다.
+  - ⓐ **`lane:status`는 «레인 → main»을 원리상 못 본다.** 그 게이트는 «main → 레인»(레인이 얼마나 뒤처졌나 · `behind N`)만 잰다. 머지 대기는 프로토콜 §1-B의 **맨손 셸**(`git log --oneline main..harden-<l> | wc -l`)에만 있고 **게이트가 아니다** → 세션 시작 점검에 «머지 대기 N건»을 넣어야 한다. 🪶 짝 교훈: **«레인 워크트리 clean»은 «회차 없음»이 아니다** — 회차가 끝나 커밋된 상태도 clean이다([[lane-notice-check-worktree-first]]의 두 번째 형태).
+  - ⓑ **`/{locale}/tournaments` 6개가 `lib/tournaments-i18n.ts` 한 파일을 공유해 lastmod가 같이 오른다.** 이번 회차는 `const en:` 블록만 고쳤는데 ja·zh·zh-hant·es·de 보드 5개가 **내용 무변경으로 09-17에 올랐다**(실변경 3 : 가짜 5 · 커밋 `dca3581b`에 기록). 🔴 **09-20의 `/pub` 처방(ROUTE_SOURCES 매핑 좁히기)은 여기 안 통한다** — 가르는 경계가 «파일»이 아니라 **«한 파일 안의 로케일 블록»**이다. 처방 후보 = 생성기가 로케일 보드에 한해 «그 블록의 마지막 변경»을 보게 하거나(`git log -L`), 로케일별 문자열을 파일로 쪼개거나. 🪶 IndexNow에는 실변경 3 URL만 보냈다(규율 「실제 변경 URL만」).
 
 ### Q5-c (2026-09-17 · EN 4 + 8로케일 + 꼬리 5 + KO 1 + zh-hant probability — **배포가 걸린 회차다**)
 
