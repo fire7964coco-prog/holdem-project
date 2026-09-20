@@ -272,12 +272,17 @@ const ROUTE_SOURCES = {
   "/blog/roadmap": ["app/blog/roadmap"],
   // 데이터가 바뀌면 페이지 내용도 바뀐다 — 데이터 파일을 함께 본다
   "/tournaments": ["app/tournaments", "lib/tournaments.ts"],
-  "/pub": ["app/pub", "lib/pubs.ts"],
+  // 🔴 2026-09-20 — `app/pub`(디렉터리 전체)에서 **인덱스 파일만**으로 좁혔다.
+  //    전체를 보면 인덱스만 고쳐도 `/pub/<지역>` 11개가 **같이 lastmod를 올린다**(내용은 그대로).
+  //    이 파일 머리 주석이 경고하는 «내용이 안 바뀌었는데 바뀌었다고 말하는» 바로 그 경우다.
+  //    실제로 09-20 og 카드 회차에서 인덱스에 socialMeta를 붙이자 11개가 같이 떴다.
+  "/pub": ["app/pub/page.tsx", "app/pub/pub-index-client.tsx", "lib/pubs.ts"],
   "/ranking": ["app/ranking", "lib/posts.ts"],
 };
 function sourcesFor(path) {
   if (ROUTE_SOURCES[path]) return ROUTE_SOURCES[path];
-  if (path.startsWith("/pub/")) return ["app/pub", "lib/pubs.ts"]; // 동적 라우트 [region]
+  // 동적 라우트 [region] — 자기 템플릿과 데이터만 본다(인덱스 변경에 딸려 오르지 않게).
+  if (path.startsWith("/pub/")) return ["app/pub/[region]", "lib/pubs.ts"];
   const dir = `app${path}`;
   if (existsSync(join(root, dir))) return [dir];
   // /en/calculator 처럼 로케일 하위가 별도 디렉터리로 없으면 한 단계 위로
