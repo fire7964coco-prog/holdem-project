@@ -172,9 +172,10 @@ export const CALC_DICT_HI: CalcDict = {
     pickerLabel: "अपने 2 hole कार्ड चुनें",
     emptyPrompt: "अपने 2 hole कार्ड चुनें",
     // 🔴 §3-I — 옛 문안 「बहुत कमज़ोर हैंड / आम तौर पर fold」은 **사실 오류**였다: 표 밖 122개에는 K9s·Q9s·A9o처럼
-    //    CO/BTN에서 여는 핸드가 들어 있다. 코드가 폴백을 tier 5로 고정하므로(calculator-tool.tsx) 화면에
-    //    「🚫 Tier 5 — कमज़ोर」가 같이 뜬다 → desc에 «표 밖이라는 뜻이지 약하다는 뜻이 아니다»를 박는다(id·ms 선례).
-    unknownDesc: "मुख्य opening चार्ट में नहीं है (Tier 5 का बैज «चार्ट से बाहर» बताता है, यह नहीं कि हैंड कमज़ोर ही है)",
+    //    CO/BTN에서 여는 핸드가 들어 있다.
+    // 🔴 09-20 — 코드가 폴백 티어를 계산하게 바꿨다(calculator-tool.tsx `fallbackTier`): K9s·A9o는 Tier 4,
+    //    J2o·72o는 Tier 5. 그래서 «Tier 5는 표 밖이라는 뜻»이라는 단서는 **이제 거짓**이라 뺀다.
+    unknownDesc: "मुख्य opening चार्ट में नहीं है",
     // 🔴 3분기 — 폴백은 표 밖 **122개 전부**를 받는다(실측: suited 54 · ace-offsuit 8 · 나머지 offsuit 60 · pair 0).
     //    🔴 **«दो broadway»로 쓰면 그 팔은 공집합이 된다**: offsuit broadway 10개(AKo AQo AJo ATo KQo KJo KTo
     //    QJo QTo JTo)가 전부 HAND_TABLE **안**이다. → id의 「dua kartu broadway (**K9o**)」는 실제 오류다(9는 broadway가 아니다 · id 정정 대상).
@@ -188,10 +189,11 @@ export const CALC_DICT_HI: CalcDict = {
     //    🔴 그리고 1분기 뒤 절에 «बाक़ी»가 없으면 43s·32s·75s·64s·53s·42s가 **두 절에 동시에 걸린다**(같은 렌즈 · ms와 공유하는 결함).
     //    🔴 **그런데 «बाक़ी»만 넣으면 반대쪽이 또 열린다**(2차 교열 09-19): 그 여섯이 통째로 «CO/BTN 오픈»으로 확정돼
     //    32s·42s까지 열린다 → 연결자 갈래에 **«작은 쪽 카드 3 이상»**이라는 바닥을 박았다(그 갈래 = 75s·64s·53s·43s 넷).
-    //    🪶 **남은 역전은 EN 상속이다**: 43s(Tier 5)가 표 안 54s·65s(Tier 4 · «raise पर call»만)보다 공격적으로 읽힌다.
-    //    EN도 동형이라(EN 폴백 «Cutoff/button only» ↔ EN 54s «Call LP») hi에서 단독으로 바꾸지 않고 **EN 회灌 후보**로 둔다 —
-    //    예시에서 43s만 빼 부각을 피했다.
-    unknownAction: "ऐसा suited हैंड जिसका दूसरा कार्ड 6 या ऊपर हो, या ऐसा suited connector/one-gapper जिसका छोटा कार्ड 3 या ऊपर हो (K9s, Q9s, 10-8s, 97s): सब आप तक fold कर दें तो CO/BTN से open करें — बाक़ी वे suited हैंड जिनका दूसरा कार्ड 2–5 हो (J2s, 92s, 72s, 32s) फिर भी fold। Ace offsuit, या offsuit जिसके दोनों कार्ड 9 या ऊपर हों (A9o, A5o, K9o, 10-9o): सब fold कर दें तो सिर्फ़ BTN से। बाक़ी सब (J2o, 72o, 93o): fold",
+    // 🔴 09-20 EN 정본으로 교체 — 위 이중 조건(«둘째 카드 6 이상» 또는 «connector/one-gapper 작은 쪽 3 이상»)은
+    //    43s·53s·64s·75s를 «3 이상 → open»과 «둘째 카드 2–5 → fold» **두 절에 동시에** 걸리게 했다(hi 회차 자기모순 · 09-20 발견).
+    //    EN이 «작은 쪽 3 이상» 한 조건으로 다시 썼고, CO는 «6 이상»으로 좁혀 10-3s·93s의 CO 오픈 누수를 닫았다.
+    //    🪶 43s 역전도 같이 해소됐다 — 코드가 43s를 Tier 4로 계산해 표 안 54s·65s와 같은 급이 됐다.
+    unknownAction: "Suited: सब आप तक fold कर दें तो BTN से कोई भी suited हैंड open करें; CO से सिर्फ़ suited king, ऐसे हैंड जिनके दोनों कार्ड 8 या ऊपर हों (Q8s, 10-8s), और 54s तक के connector। Offsuit: सिर्फ़ BTN से — कोई भी ace (A9o, A5o) या ऐसा हैंड जिसके दोनों कार्ड 9 या ऊपर हों (K9o, 10-9o)। बाक़ी सब (J2o, 93o, 72o): fold",
     tierNames: ["🥇 Tier 1 — Premium", "🥈 Tier 2 — मज़बूत", "🥉 Tier 3 — खेलने लायक", "⚠️ Tier 4 — Marginal", "🚫 Tier 5 — कमज़ोर"],
     recommendedAction: "सुझाई गई कार्रवाई:",
     axis: ["Premium", "मज़बूत", "खेलने लायक", "Marginal", "कमज़ोर"],

@@ -164,7 +164,9 @@ const HAND_TABLE: TierEntry[] = [
   [3, "AJo"], [3, "KQo"], [3, "K10s"], [3, "QJs"], [3, "J10s"], [3, "109s"], [3, "77"], [3, "A9s"],
   [4, "66"], [4, "55"], [4, "A8s"], [4, "A7s"], [4, "A6s"], [4, "A5s"], [4, "A4s"], [4, "A3s"], [4, "A2s"],
   [4, "KJo"], [4, "QJo"], [4, "98s"], [4, "87s"], [4, "76s"],
-  [5, "44"], [5, "33"], [5, "22"], [5, "K10o"], [5, "Q10o"], [5, "J10o"],
+  // K10o·Q10o·J10o는 Tier 4다 — 폴백이 계산한 K9o·Q9o·J9o가 Tier 4인데 이들이 Tier 5면
+  // 「더 센 핸드가 더 약하게」 뜬다(09-20 딜러 렌즈). 세 핸드 다 BTN 표준 오픈이다.
+  [5, "44"], [5, "33"], [5, "22"], [4, "K10o"], [4, "Q10o"], [4, "J10o"],
   [3, "Q10s"], [4, "A10o"], [4, "65s"], [4, "54s"],
 ];
 
@@ -177,6 +179,20 @@ function getHandName(c1: Card, c2: Card): string {
 
 function lookupHand(name: string): TierEntry | null {
   return HAND_TABLE.find(([, h]) => h === name) || null;
+}
+
+// The 122 hands outside HAND_TABLE share one fallback string, but they are not equally
+// weak — K9s and A9o are steal opens while 72o is a fold. Badging all of them Tier 5 put
+// "🚫 Weak" right next to "open from the cutoff/button". Mirrors the branches of
+// dict.starting.unknownAction, so every locale is corrected by this one function.
+// rank is an index into RANKS: 1 = "3", 7 = "9", 12 = "A".
+// A ~50% button range is 663 combos: 78 pairs + 312 suited leaves 273 for offsuit, i.e. ~22 hand
+// types — every ace (12) + K9o+ (4) + Q9o+ (3) + J9o+ (2) + 10-9o. That is the offsuit line below.
+// Every suited hand fits inside the 312, so the button opens all of them; the cutoff limit lives
+// in the prose, not here, because the badge is one tier either way.
+function fallbackTier(hi: Card, lo: Card): 4 | 5 {
+  if (hi.suit === lo.suit) return 4;              // any suited hand is a button open
+  return hi.rank === 12 || lo.rank >= 7 ? 4 : 5;  // offsuit ace, or both cards 9 or higher
 }
 
 function displayHandName(name: string): string {
@@ -785,8 +801,8 @@ function StartingHandCalc() {
     const entry = lookupHand(name);
     const text = entry ? D.hands[entry[1]] : undefined;
     if (!entry || !text) {
-      const [tier5] = [5 as const];
-      return { name, tier: tier5, desc: D.unknownDesc, action: D.unknownAction };
+      const [hi, lo] = cards[0].rank >= cards[1].rank ? [cards[0], cards[1]] : [cards[1], cards[0]];
+      return { name, tier: fallbackTier(hi, lo), desc: D.unknownDesc, action: D.unknownAction };
     }
     return { name, tier: entry[0], desc: text.desc, action: text.action };
   }, [cards, D]);
@@ -815,8 +831,10 @@ function StartingHandCalc() {
                 </div>
               </div>
               <p className="text-sm text-muted-foreground mb-2">{result.desc}</p>
-              <div className="flex items-start gap-2 mt-3">
-                <span className="text-xs font-bold text-foreground uppercase tracking-wide">{D.recommendedAction}</span>
+              {/* 09-20: 폴백 문구가 3분기로 길어지면서 390px에서 라벨이 한 글자씩 세로로 쌓였다
+                  (캡처가 잡았다 — 게이트는 못 본다). 좁은 화면에서는 라벨을 위로 올린다. */}
+              <div className="flex flex-col sm:flex-row items-start gap-1 sm:gap-2 mt-3">
+                <span className="shrink-0 whitespace-nowrap text-xs font-bold text-foreground uppercase tracking-wide">{D.recommendedAction}</span>
                 <span className={`text-sm font-bold ${tierMeta?.color}`}>{result.action}</span>
               </div>
             </div>

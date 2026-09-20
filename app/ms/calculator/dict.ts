@@ -162,8 +162,12 @@ export const CALC_DICT_MS: CalcDict = {
     //      오프수트 브로드웨이 10개가 전부 HAND_TABLE 안이다 ② 그래서 ace-offsuit만 남기면 **K9o·Q9o가 무조건 fold**가 되는데
     //      A2o는 «BTN 허가»라 **분기 간 서열이 역전**된다 → 2분기를 «ace offsuit 또는 두 장의 높은 카드»로 넓혔다
     //      ③ 1분기의 «suited»·«connected»·«아주 낮은»은 **수치 경계**로 못박았다(안 그러면 97s·86s·75s가 미분류로 남는다).
-    unknownDesc: "Tiada dalam carta open teras (lencana Tier 5 bermaksud “di luar carta”, bukan bermaksud tangan itu lemah)",
-    unknownAction: "Suited dengan kad kedua 6 ke atas atau suited connector/one-gapper (K9s, Q9s, 10-8s, 97s): open dari CO/BTN apabila semua fold kepada anda — suited dengan kad kedua 2–5 (J2s, 92s, 72s) tetap fold. Ace offsuit atau dua kad tinggi (A9o, A5o, K9o, Q9o): BTN sahaja apabila semua fold kepada anda. Selainnya (J2o, 72o, 93o): fold",
+    // 🔴 09-20 EN 정본으로 교체 — ms·hi의 «둘째 카드 6 이상 + connector/one-gapper 3 이상» 이중 조건은 43s·53s·64s·75s를
+    //    «3 이상 오픈»과 «2–5 폴드» **두 절에 동시에** 걸리게 했다(hi 회차가 못 잡은 자기모순). EN이 «kad kecil 3 ke atas»
+    //    한 조건으로 다시 썼고, CO는 «6 ke atas»로 좁혀 10-3s·93s의 CO 오픈 누수를 닫았다.
+    //    Tier 5 단서는 뺐다 — 코드가 폴백 티어를 계산하므로(calculator-tool.tsx fallbackTier) 더는 참이 아니다.
+    unknownDesc: "Tiada dalam carta open teras",
+    unknownAction: "Suited: apabila semua fold kepada anda, open mana-mana tangan suited dari BTN; dari CO hadkan kepada king suited, dua kad 8 ke atas (Q8s, 10-8s), dan connector sehingga 54s. Offsuit: BTN sahaja — mana-mana ace (A9o, A5o) atau dua kad 9 ke atas (K9o, 10-9o). Selainnya (J2o, 93o, 72o): fold",
     tierNames: ["🥇 Tier 1 — Premium", "🥈 Tier 2 — Kuat", "🥉 Tier 3 — Boleh dimainkan", "⚠️ Tier 4 — Marginal", "🚫 Tier 5 — Lemah"],
     recommendedAction: "Tindakan disyorkan:",
     axis: ["Premium", "Kuat", "Boleh dimainkan", "Marginal", "Lemah"],

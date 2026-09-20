@@ -178,7 +178,7 @@ export const CALC_DICT_ES: CalcDict = {
     emptyPrompt: "Elige tus 2 cartas de mano",
     // 딜러 렌즈(EN): 미등재 핸드 = «약한 손»이 아니라 «코어 차트 밖»
     unknownDesc: "Fuera de la tabla básica de apertura",
-    unknownAction: "Solo desde CO/BTN, y solo si todos foldearon hasta ti",
+    unknownAction: "Del mismo palo: si todos foldearon hasta ti, abre cualquier mano del mismo palo desde el BTN; desde el CO quédate con los reyes del mismo palo, las dos cartas de 8 o más (Q8s, 10-8s) y los conectores hasta 54s. De distinto palo: solo BTN — cualquier as (A9o, A5o) o dos cartas de 9 o más (K9o, 10-9o). El resto (J2o, 93o, 72o): fold",
     tierNames: ["🥇 Nivel 1 — Premium", "🥈 Nivel 2 — Fuerte", "🥉 Nivel 3 — Jugable", "⚠️ Nivel 4 — Marginal", "🚫 Nivel 5 — Débil"],
     recommendedAction: "Acción recomendada:",
     axis: ["Premium", "Fuerte", "Jugable", "Marginal", "Débil"],
@@ -210,7 +210,7 @@ export const CALC_DICT_ES: CalcDict = {
       "88": { desc: "Par servido con buen potencial de set", action: "Subir en tardía; en temprana plantéate pagar una subida — no hagas open-limp" },
       AQo: { desc: "Más floja de distinto palo; la posición importa", action: "Subir en posición media/tardía" },
       AJo: { desc: "Floja en posición temprana, fuerte en tardía", action: "Subir en CO/BTN, cuidado en temprana" },
-      KQo: { desc: "El mejor conector de distinto palo", action: "Subir en tardía; en temprana paga una subida o foldea — no hagas open-limp" },
+      KQo: { desc: "El mejor conector de distinto palo", action: "Subir en tardía; en temprana sube o foldea si nadie ha entrado, y ante una subida normalmente foldea" },
       K10s: { desc: "Rey del mismo palo, fuerte en posición tardía", action: "Subir en tardía, fold en temprana" },
       QJs: { desc: "Proyectos fuertes por los dos lados", action: "Subir en tardía, vale más con stacks profundos" },
       J10s: { desc: "Uno de los mejores conectores del mismo palo", action: "Subir en tardía; paga una sola subida si tienes posición" },

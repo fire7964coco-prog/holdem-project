@@ -174,7 +174,7 @@ export const CALC_DICT_ZH: CalcDict = {
     emptyPrompt: "先选出你的 2 张底牌",
     // 딜러 렌즈(EN): 미등재 핸드 = «약한 손»이 아니라 «코어 차트 밖»
     unknownDesc: "不在基础开池表里的牌",
-    unknownAction: "只在 CO/BTN、前面全弃到你时打",
+    unknownAction: "同花：前面全弃到你时，BTN 上任何同花都可以开池；CO 只开同花 K、两张都是 8 或更高的（Q8s、10-8s）以及到 54s 为止的连张。非同花：只从 BTN 开池，带 A 的（A9o、A5o）或两张都是 9 或更高的（K9o、10-9o）。其余（J2o、93o、72o）：弃牌",
     tierNames: ["🥇 第 1 层 — 顶级", "🥈 第 2 层 — 强牌", "🥉 第 3 层 — 可打", "⚠️ 第 4 层 — 边缘", "🚫 第 5 层 — 弱牌"],
     recommendedAction: "建议动作：",
     axis: ["顶级", "强牌", "可打", "边缘", "弱牌"],
@@ -204,7 +204,7 @@ export const CALC_DICT_ZH: CalcDict = {
       "88": { desc: "口袋对子，挖暗三条的潜力不错", action: "后位加注；前位可以考虑跟一个加注——不要开池平跟" },
       AQo: { desc: "偏弱的非同花牌；位置很关键", action: "中后位加注" },
       AJo: { desc: "前位弱，后位强", action: "CO/BTN 加注，前位小心" },
-      KQo: { desc: "最强的非同花连张", action: "后位加注；前位跟一个加注或弃牌——不要开池平跟" },
+      KQo: { desc: "最强的非同花连张", action: "后位加注；前位没人进池就加注或弃牌，面对加注通常弃牌" },
       K10s: { desc: "同花 K，后位有力", action: "后位加注，前位弃牌" },
       QJs: { desc: "顺子、同花两种听牌都强", action: "后位加注，深码时更值钱" },
       J10s: { desc: "最好的同花连张之一", action: "后位加注；有位置时可以跟一个加注" },

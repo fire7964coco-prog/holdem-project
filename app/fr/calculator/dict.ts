@@ -192,7 +192,7 @@ export const CALC_DICT_FR: CalcDict = {
     // 🔴 EN 09-17 정정: 옛 폴백 «Main très faible / Se coucher en général»은 **사실 오류**였다 —
     //   K9s·QTs·J9s처럼 표에 없을 뿐 약하지 않은 핸드가 전부 여기로 떨어진다(브리프 §3-I).
     unknownDesc: "Absente du tableau d'ouverture principal",
-    unknownAction: "CO/BTN uniquement, et seulement si tout le monde s'est couché avant toi",
+    unknownAction: "Assorties : si tout le monde s'est couché avant toi, ouvre n'importe quelle main assortie au BTN ; au CO, garde les rois assortis, les deux cartes de 8 ou plus (Q8s, 10-8s) et les connecteurs jusqu'à 54s. Dépareillées : BTN uniquement — n'importe quel as (A9o, A5o) ou deux cartes de 9 ou plus (K9o, 10-9o). Le reste (J2o, 93o, 72o) : se coucher",
     tierNames: ["🥇 Tier 1 — Premium", "🥈 Tier 2 — Forte", "🥉 Tier 3 — Jouable", "⚠️ Tier 4 — Marginale", "🚫 Tier 5 — Faible"],
     recommendedAction: "Action recommandée :",
     axis: ["Premium", "Forte", "Jouable", "Marginale", "Faible"],

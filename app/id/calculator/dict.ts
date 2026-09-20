@@ -172,8 +172,12 @@ export const CALC_DICT_ID: CalcDict = {
     emptyPrompt: "Pilih 2 kartu tertutup Anda",
     // 🔴 EN 09-17 정정 — 옛 문안(«Hand sangat lemah / Biasanya fold»)은 **사실 오류**였다:
     //    K9s·QTs·J9s처럼 쓸 만한 핸드가 전부 이 폴백에 떨어진다.
-    unknownDesc: "Tidak ada di chart open inti (badge Tier 5 berarti “di luar chart”, bukan “hand terlemah”)",
-    unknownAction: "Suited atau tersambung (mis. K9s · Q9s · 10-8s): open dari cutoff/button kalau semua fold ke Anda. Ace offsuit atau dua kartu broadway (mis. A9o · K9o): hanya dari button. Sisanya (mis. J2o · 72o · 93o): fold",
+    // 🔴 09-20 EN 정본으로 교체 — 옛 id 문안의 «dua kartu broadway»는 **공집합**이었고(오프수트 브로드웨이 10개가
+    //    전부 HAND_TABLE 안 · 예시 K9o는 broadway가 아니라 라벨 자체가 틀렸다), «suited atau tersambung»에는
+    //    바닥이 없어 32s·42s까지 열렸다. EN이 «kartu kecil 3 ke atas» 한 조건으로 다시 썼다.
+    //    Tier 5 단서는 뺐다 — 코드가 폴백 티어를 계산하므로(calculator-tool.tsx fallbackTier) 더는 참이 아니다.
+    unknownDesc: "Tidak ada di chart open inti",
+    unknownAction: "Suited: kalau semua fold ke Anda, open hand suited apa pun dari BTN; dari CO batasi ke king suited, dua kartu 8 ke atas (Q8s, 10-8s), dan connector sampai 54s. Offsuit: hanya dari BTN — ace apa pun (A9o, A5o) atau dua kartu 9 ke atas (K9o, 10-9o). Sisanya (J2o, 93o, 72o): fold",
     tierNames: ["🥇 Tier 1 — Premium", "🥈 Tier 2 — Kuat", "🥉 Tier 3 — Bisa dimainkan", "⚠️ Tier 4 — Marginal", "🚫 Tier 5 — Lemah"],
     recommendedAction: "Aksi yang disarankan:",
     axis: ["Premium", "Kuat", "Bisa dimainkan", "Marginal", "Lemah"],
@@ -206,7 +210,7 @@ export const CALC_DICT_ID: CalcDict = {
       "88": { desc: "Pocket pair dengan potensi set yang bagus", action: "Raise di posisi akhir; di posisi awal boleh call raise — jangan open-limp" },
       AQo: { desc: "Versi offsuit lebih lemah; posisi menentukan", action: "Raise di posisi tengah/akhir" },
       AJo: { desc: "Lemah di posisi awal, kuat di posisi akhir", action: "Raise di CO/BTN, hati-hati di posisi awal" },
-      KQo: { desc: "Connector offsuit teratas", action: "Raise di posisi akhir; di posisi awal call raise atau fold — jangan open-limp" },
+      KQo: { desc: "Connector offsuit teratas", action: "Raise di posisi akhir; di posisi awal raise atau fold kalau belum ada yang masuk, dan biasanya fold menghadapi raise" },
       K10s: { desc: "Suited king, kuat di posisi akhir", action: "Raise di posisi akhir, fold di posisi awal" },
       QJs: { desc: "Draw dua arah yang kuat", action: "Raise di posisi akhir, lebih bernilai saat deep" },
       J10s: { desc: "Salah satu suited connector terbaik", action: "Raise di posisi akhir; call sebuah raise kalau in position" },

@@ -179,7 +179,7 @@ export const CALC_DICT_PT: CalcDict = {
     emptyPrompt: "Escolha suas 2 cartas fechadas",
     // 딜러 렌즈(EN): 미등재 핸드 = «약한 손»이 아니라 «코어 차트 밖»
     unknownDesc: "Fora da tabela básica de abertura",
-    unknownAction: "Só do CO/BTN, e só se todos foldaram até você",
+    unknownAction: "Suited: se todos foldaram até você, abra qualquer mão suited do BTN; do CO fique com os reis suited, as duas cartas de 8 ou mais (Q8s, 10-8s) e os connectors até 54s. Offsuit: só do BTN — qualquer ás (A9o, A5o) ou duas cartas de 9 ou mais (K9o, 10-9o). O resto (J2o, 93o, 72o): folde",
     tierNames: ["🥇 Tier 1 — Premium", "🥈 Tier 2 — Forte", "🥉 Tier 3 — Jogável", "⚠️ Tier 4 — Marginal", "🚫 Tier 5 — Fraca"],
     recommendedAction: "Ação recomendada:",
     axis: ["Premium", "Forte", "Jogável", "Marginal", "Fraca"],
