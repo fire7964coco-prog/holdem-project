@@ -179,10 +179,10 @@ export const CALC_DICT_MS: CalcDict = {
       { hands: "66–55 A8s–A2s KJo QJo suited connector", action: "Pilih-pilih di posisi lewat" },
       { hands: "44–22 tangan offsuit yang lemah", action: "Biasanya fold" },
     ],
-    // ★2026-09-19 «오픈 림프로 읽히는 자리»를 전수 정리했다. EN 88·77·KQo는 EN 자체가 아직 미정정이다(브리프 §5 id ⓐ).
+    // ★2026-09-19 «오픈 림프로 읽히는 자리»를 전수 정리했다. ✅ EN 88·77·KQo는 2026-09-20에 정정됐다(WORKLOG 09-20).
     // 🔴 단 브리프 §5 id ⓐ의 근거 「EP에는 앞선 레이즈가 있을 수 없다」는 **UTG에만 참이다** — MP·EP+1은 UTG 레이즈를
     //    마주할 수 있다. 그래서 처방은 «call을 없애는 것»이 아니라 **«무엇에 대한 call인지 명시 + 오픈 림프 금지»**다.
-    //    선례 7로케일(ja·zh·zh-hant·es·pt·fr·id)이 전부 그렇게 풀었고 ms도 같은 형을 쓴다(de만 아직 옛 문안).
+    //    선례 7로케일(ja·zh·zh-hant·es·pt·fr·id)이 전부 그렇게 풀었고 ms도 같은 형을 쓴다(de도 09-20에 합류).
     //    EN이 이미 림프를 배제한 자리는 EN 그대로 따른다 — 축어는 셋으로 갈린다:
   //    1010 «do not open-limp» · AJs·KJs «raise or fold» · A10s·Q10s «fold from EP».
     hands: {

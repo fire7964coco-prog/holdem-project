@@ -191,7 +191,8 @@ export const CALC_DICT_ES: CalcDict = {
       { hands: "44–22 manos débiles de distinto palo", action: "Normalmente fold" },
     ],
     // 딜러 렌즈(EN 12항): «en temprana plantéate pagar» = 오픈 림프 권고로 읽힌다 → «sube o foldea — no hagas open-limp».
-    //   EN 77/88/KQo 「call EP」는 «레이즈에 콜»로 읽어 옮겼다(ja·zh·zh-hant 동형 · 브리프 §5). 66·44 set mining은 «~15 veces» 조건.
+    //   EN 77/88은 «레이즈에 콜»로 읽어 옮겼다(브리프 §5). 66·44 set mining은 «~15 veces» 조건.
+    //   🔴 KQo는 그 독해가 틀렸다 — EN은 «미개봉이면 레이즈 아니면 폴드»다. 2026-09-20에 es도 EN 형으로 맞췄다.
     //   limpear = 코퍼스 정본(173) · open-limp 37.
     hands: {
       AA: { desc: "La mejor mano. Sube en cualquier spot", action: "Subir/resubir siempre (3-bet)" },

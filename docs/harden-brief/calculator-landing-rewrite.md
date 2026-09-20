@@ -306,7 +306,7 @@ de 회차의 렌즈 2종이 「de 번역 문제」로 보고한 것들이 실은
 | `starting.unknownDesc`/`unknownAction` | 「매우 약한 핸드 / 대개 폴드」 — 🔴 **사실 오류**(K9s·QTs·J9s 등이 전부 이 폴백에 떨어진다) | 「Not in the core opening chart」 / 「Cutoff/button only, and only when folded to you」 |
 | `spr.zones.mid.actions[1][2]` | 「감으로 플레이」·「리스크 대 이득을 재라」 — 🔴 **D유형**(계산기가 줄 수 있는 최악의 조언) | 「One or two streets, then pot control」 / 「Semi-bluff with fold equity; give up without it」 |
 | `spr.zones.low.desc` | EN 끝문장 **통째 누락** → 젖은 보드에서도 TPTK 스택오프 조언이 된다 | 「On paired, three-flush or three-straight boards … one pair is still one pair.」 |
-| `starting.hands` **13항** (1010·AJs·A10s·KJs·Q10s·J10s·77·66·55·44·33·22·76s) | 「얼리에서 콜」 = 오픈 림프 권유. 셋마이닝 정량 기준(~15×)·first-in 레이즈도 소실<br>🔴 **이 칸의 두 서술은 id 회차(09-19)가 원문 대조로 정정했다**: ① **EN은 «전수 제거»하지 않았다** — `components/calculator/dict.ts`의 `88 «consider calling EP»`·`77 «call EP»`·`KQo «call/fold in EP»`가 **지금도 그대로**이고(EP엔 앞선 레이즈가 없으니 논리상 림프다), 실제로 전수 제거한 것은 **fr 09-18**뿐이다 ② **«13항»은 핸드 목록 길이이지 결함 자리 수가 아니다** — id 09-17판 실계수는 「call di posisi awal」 8 + 「call/fold di posisi awal」 1 = **9자리**. **로케일마다 실계수를 다시 세라** | 「— never limp」 / 「fold from EP」 / 「~15× the call behind」 / 「raise first in」<br>🔴 단 88·77·KQo는 **EN 자체가 아직 정본이 아니다**(§5 ⓐ) |
+| `starting.hands` **13항** (1010·AJs·A10s·KJs·Q10s·J10s·77·66·55·44·33·22·76s) | 「얼리에서 콜」 = 오픈 림프 권유. 셋마이닝 정량 기준(~15×)·first-in 레이즈도 소실<br>✅ **2026-09-20 해소** — EN·de의 `88`·`77`·`KQo`를 정정해 **12로케일 + ko 전부 «레이즈에 대한 콜 + 오픈 림프 금지» 형**이 됐다(경위 = WORKLOG 09-20). 아래 「EN 정본」 칸이 이제 실제 EN이다. ① **«13항»은 핸드 목록 길이이지 결함 자리 수가 아니다** — id 09-17판 실계수는 「call di posisi awal」 8 + 「call/fold di posisi awal」 1 = **9자리**. **로케일마다 실계수를 다시 세라** | 「— never limp」 / 「fold from EP」 / 「~15× the call behind」 / 「raise first in」 |
 | `pot.potSize`·`sliderFlush`·`outs.presets[1][5]`·`icm.diffPlusNote`·`spr.effectiveStack`·`m.zones.dead` | 딜러 렌즈 12항 전반 | §5 마지막 줄 |
 | `page.tsx` `twitter.images`·`openGraph.images` | 없음 → 카드가 빈 채로 나간다 | 두 자리 다 `/opengraph.jpg` |
 | `page.tsx` TITLE/DESCRIPTION | 하드코딩 → 클라이언트 `<SEO>`가 dict로 덮어써서 갈리면 조용히 dict가 이긴다 | `${DICT.seo.title} | HoldemMaster` 파생 |
@@ -316,32 +316,53 @@ de 회차의 렌즈 2종이 「de 번역 문제」로 보고한 것들이 실은
 
 ## 5. EN 후속(미반영 · 다음 queue/헤드 회차 재료)
 
+### ✅ 2026-09-20 해소 — 폴백 티어 + 오픈 림프 회차(`3db98e3f` · WORKLOG 09-20 · 12로케일 + **ko**)
+
+닫힌 것(아래 목록에서 지웠다): **EN·de의 오픈 림프 셋**(88·77·KQo) · **`unknownAction` 상·하한 부재**(표 밖 122핸드) ·
+**`unknownDesc`의 Tier 5 단서**(코드가 티어를 계산하게 돼 단서가 오히려 거짓이 됐다 → id·ms·hi에서 뺐다) ·
+**tier 5 고정 코드** · **§3-I 「id·ms 초안의 두 장의 브로드웨이 = 공집합」**(EN을 단일 조건으로 다시 써 소멸).
+
+다음 로케일·회차가 알아야 할 것:
+
+- 🔴 **폴백 규칙의 근거는 «차트 감»이 아니라 콤보 산술이다.** BTN 50% = 663콤보 → 페어 78 + 수티드 312를
+  빼면 오프수트 몫은 **273콤보 = 약 22타입** = 에이스 12 + K9o+ 4 + Q9o+ 3 + J9o+ 2 + 10-9o.
+  딜러 렌즈가 「K5o·Q8o·J8o·98o까지 넓혀라」고 했으나 **그러면 BTN이 58%+가 된다 → 기각**했다.
+  🔴 **렌즈가 첨부한 코드는 자기 주장과도 어긋났다**(`hi.rank>=8` 조건이 98o를 오히려 뺀다) —
+  **렌즈가 준 코드는 돌려 보고 받아라**(메모리 「도구 출력 ≠ 원문」).
+- 🔴 **수티드에 «작은 쪽» 바닥을 두지 마라.** hi·ms가 쓴 「둘째 카드 6 이상 + connector 3 이상」 이중 조건은
+  ① **43s·53s·64s·75s를 두 절에 동시에** 걸리게 했고(hi 자기모순 · 09-20 발견) ② K2s·Q2s·J2s를 **버튼에서 폴드**시켰다.
+  수티드 312콤보는 BTN 레인지에 통째로 들어간다 → **버튼은 수티드 전부, 제한은 CO 문구에만.**
+- 🔴 **코드가 티어를 계산하면 «표 안»과의 역전을 반드시 다시 세라.** K9o가 T4가 되자 표의 K10o(T5)와 역전됐다
+  → K10o·Q10o·J10o를 T4로 올려 해소. 🪶 **남은 역전 = `44`(T5) ↔ `43s`(T4)** — 페어 승격은 `summary` 5행
+  (「44–22 weak offsuit hands」)을 13자리에서 같이 고쳐야 해 이번엔 안 건드렸다.
+- 🔴 **게이트가 원리상 못 보는 자리가 또 있었다**: 문구가 길어지자 390px에서 「추천 액션:」 라벨이 **한 글자씩 세로로 쌓였다.**
+  `check:calc-parity`·빌드 게이트 전부 초록이었고 **캡처가 유일한 검출 경로**였다. 사전 문자열을 크게 늘리면 **반드시 390px를 찍어라.**
+- 🔴 **ko(`app/calculator/calculator-client.tsx`)는 별도 클라이언트라 09-17 경화를 통째로 못 받고 있었다.**
+  이번에 폴백·림프 9자리·방향 역전 4자리를 고쳤지만 **`spr.zones`·`outs`·`icm` 등 나머지 탭은 아직 09-17 이전이다** —
+  ko 전수 대조는 별도 회차 몫(§0 ko 행).
+
 - 🟠 **OG/트위터 `images` 누락은 사이트 패턴**: `app/en/page.tsx`·`app/en/solver/page.tsx`·10로케일 계산기 `page.tsx` 전부 — Next metadata는 얕은 병합이라 루트 layout 이미지가 상속되지 않는다. 공용 헬퍼로 한 번에.
 - 🟠 `lib/calculator-alternates.ts`에 `x-default` 없음(12랜딩 공용).
 - 🪶 M 존 라벨 «1–5 / 6–9 / 10–19»(코드 `M_ZONES`)는 소수 경계(5.5 → 레드)와 안 맞는다 — 코드·표 동시 수정 대상(전 로케일).
 - 🪶 M 탭은 플레이어 수를 앤티에만 쓰고 Effective M을 존에 적용하지 않는다(표 intro에 안내만) — 기능 개선 후보.
 - 🪶 `holdem-bubble`(EN)이 `/en/calculator`를 3번 링크하는데 역링크 없음 · 「rule of 4 and 2」가 EN 4곳에 분산(140/mo).
 - 🪶 스타팅 핸드 표 미등재 수티드 커넥터(97s·86s…)·K9s·Q9s는 폴백 문구로만 처리 — 항목 보강 후보.
-- 🪶 EN `starting.hands` 77 「call EP」 · 88 「consider calling EP」 · KQo 「call/fold in EP」 — «레이즈에 콜»인지 «오픈 림프»인지 모호(ja 네이티브 렌즈 09-17). 딜러 렌즈 12항에서 빠진 3항 → EN 정정 후 로케일 전파 후보.
 - 🪶 **EN `icmGuide.bubble.keyPoint.b3`의 조건절 위치**: EN은 b3 끝에 「— unless the blinds are about to eat it」가 붙어 뒤의 「to protect that survival value」와 어긋나게 읽힌다(zh 2차 교열 렌즈 09-17). zh·ja처럼 조건절을 `text`로 앞당기고 목적절을 대시로 분리하는 구조를 EN에 회灌.
 - 🪶 EN `quickRef[5].intro` 「the calculator above shows raw M」 — 도구가 9개라 모호. zh는 「“锦标赛 M”标签页」로 지목했다. EN도 탭 이름으로.
 - 🟠 **클라이언트 `<SEO>`가 `og:title`을 서버 `openGraph.title`과 다른 값(fullTitle)으로 덮어쓴다** — en·ja·zh 공통(교열 렌즈 09-17). `check:seo-sync`는 이 축을 안 본다. 로케일 공통 판정 필요(서버 og:title을 fullTitle로 맞추거나 클라이언트가 og를 안 건드리게).
 - 🪶 `icm.introRest` 선행 공백 — EN 타입 주석 「keep the leading space」는 영어용. CJK 로케일에서 「）」와 「是」 사이 공백이 렌더된다(zh는 뺐고 ja는 남음). 렌더러 쪽 처방(`sep()` 동형)으로 통일 후보.
-- 🪶 zh 88/KQo/77의 「不要开池平跟」은 EN(「call EP」)에 없는 절 — ja와 동형. EN 「call EP」 정정(위 77/88/KQo 항)과 함께 판정.
 - 🪶 **EN FAQ «4 and 2 rule»의 «times-2 half runs 1–2 points low»는 5~11 outs에서만 참**(표: 1~4 outs 0.2~0.7 · 12 outs 2.1 · 15 outs 2.6 · 20 outs 3.5 — es 교열 렌즈 09-17). es는 «outs가 늘수록 더 모자란다(9 outs 1.6 · 15 outs 2.6)»로 고쳤다. EN·ja·zh·zh-hant 회灌 후보.
 - 🪶 **EN FAQ «compare the average against your value if you just fold»** — 승/버스트 단순 평균은 승률 50% 가정이 된다(es 네이티브 렌즈). es는 «승률로 가중한 평균». EN·타 로케일 회灌 후보.
 - 🪶 EN `pot.orHigher` «above this…» ↔ de·fr·pt·id·es(옛)·ms «or more» — 정확히 같으면 EV 0(verdict.even)과 어긋난다. es는 «— con más equity, el call es rentable». 남은 로케일 회차에서 같이.
 - 🪶 EN `starting.hands` 87s·65s·54s «Call LP» · 33/22 «Multiway pots…» — «레이즈에 콜»이 명시 안 돼 림프로 읽힌다(es 네이티브 렌즈). es만 «pagar una subida»로 명시.
 - 🟠 **EN `outs.presets[5].desc` «2 high ranks not on board»는 오버카드 정의가 틀렸다** — «보드의 어느 카드보다 높은 2장»(pt 네이티브 렌즈 09-17 high). EN·ja·zh·zh-hant·es 사전 동형 확인 후 회灌.
 - 🪶 **EN deal.summary «pay everyone the next payout first»** — «next payout»이 «다음 상금 점프»로 오독된다(pt 네이티브 렌즈). pt는 «o próximo prêmio a ser pago (aqui, os $300 do 4º lugar)». EN·타 로케일 회灌 후보.
-- 🪶 **EN `starting.hands` KQo «call/fold in EP»** — EP에서 레이즈에 콜은 도미네이트·OOP 누수(pt 딜러 렌즈). pt는 «se ninguém entrou, aumente ou folde; diante de um aumento geralmente folde». 77/88 항과 함께 판정.
 - 🪶 EN 66·44 «~15× the call behind» — 누구의 스택인지(양쪽 유효 스택) 명시 없음. pt는 «você e quem aumentou tiverem atrás pelo menos ~15×».
 - 로케일 회차 공통: 딜러 렌즈가 고친 EN 도구 문안 12항(Effective stack · 팟 라벨 · SPR low · 데드존 · diffPlusNote · 스타팅 12핸드 · unknown 폴백 · 슬라이더 19.6 · 프리셋 «Flush draw» · 오버카드 desc · 가이드 카드 · introRest)은 **각 로케일 사전에도 그대로 남아 있다** — 로케일 회차에서 같이 정정.
 
 
 ### fr 회차(09-18)가 §5에 더한 것
 
-- 🟠 **EN `starting.unknownAction`에 하한이 없다** — 표 밖 **122개 핸드 전부**가 이 폴백으로 떨어지는데(`calculator-tool.tsx:762`가 tier 5 고정) 「CO/BTN에서 first-in이면 오픈」으로 읽힌다 → **72o·32o·J2o도 오픈 가능**이 된다. 09-17 개정이 K9s·QTs를 살리려다 반대쪽 끝을 열었다(fr 딜러 렌즈 09-18). EN에 「진짜 약한 손은 여전히 폴드」 단서를 넣고 전 로케일 전파.
 - 🟠 **EN FAQ 「open and re-shove wider as the aggressor」에 스택 구분이 없다** — 중간 스택이 리슈브를 넓히면 ICM상 손해다(fr 딜러 렌즈).
 - 🔴 **«완료 전에 사본을 세라» — 두 명제가 로케일마다 갈린 채다**(fr 교열 렌즈 전수 실측 09-18):
   | 명제 | en | es | pt | de | fr | ja · zh · zh-hant |
@@ -372,17 +393,6 @@ de 회차의 렌즈 2종이 「de 번역 문제」로 보고한 것들이 실은
 
 ### id 회차(09-19)가 §5에 더한 것
 
-- 🔴 **최우선 — EN `starting.hands`에 오픈 림프 권유가 «아직» 셋 남아 있다**: `88 "Raise LP, consider calling EP"` ·
-  `77 "Raise LP, call EP"` · `KQo "Raise in LP, call/fold in EP"`(`components/calculator/dict.ts:539·547·542`).
-  **EP에는 앞선 레이즈가 있을 수 없다**(UTG/MP에서 폴드가 돌아온 상태) → 이 문장들은 **논리적으로 림프밖에 될 수 없다**.
-  09-17 「림프 전수 제거」가 놓친 자리이고, **브리프 §3-I의 「EN이 전수 제거했다」는 서술도 여기서 틀렸다**(§3-I 정정 완료).
-  ja·zh·zh-hant·es·pt·de가 이 셋을 EN에서 그대로 물려받았을 가능성이 높다 — **전 로케일 grep 후 동시 정정** 대상.
-- 🟠 **EN `starting.unknownAction`은 «하한»뿐 아니라 «상한»도 없다**(fr §5 ⓒ의 반대쪽 끝). 표 밖 **122핸드 전부**가
-  이 한 줄을 받는데, EN 「Cutoff/button only, and only when folded to you」는 72o·J2o까지 오픈으로 읽히고,
-  반대로 «전부 폴드»로 고치면 **A9o·K9o·Q9o(표 밖)**가 죽는다. id가 쓴 **3분기**가 전파안이다:
-  「suited/연결(K9s·Q9s·10-8s) → CO/BTN 오픈 / ace offsuit·브로드웨이(A9o·K9o) → BTN만 / 나머지(J2o·72o·93o) → 폴드」.
-  🔴 같이 볼 것: 폴백 핸드는 코드가 **tier 5로 고정**해(`calculator-tool.tsx:762`) 화면에 「🚫 Tier 5 — Lemah」가 찍힌다 —
-  **suited/connected면 tier 4로 내리는 공용 코드 2줄**이 12로케일을 한 번에 고친다(사전 수정보다 싸다).
 - 🟠 **EN `outs.presets[5]` 오버카드 정의가 아직 «not on board»다** — 이미 §5에 있던 항목인데,
   🔴 **id 사전 주석이 이를 「EN 09-17 정정」이라고 잘못 적고 있던 것이 09-19에 발견됐다**(교열 렌즈).
   현재 정정된 로케일 = **pt · de · fr · id 4개** / 옛 문안 = **EN · es · ja · zh · zh-hant 5개**. 전파 대기.
@@ -400,18 +410,6 @@ de 회차의 렌즈 2종이 「de 번역 문제」로 보고한 것들이 실은
 
 ### ms 회차(09-19)가 §5에 더한 것
 
-- 🔴 **EN `starting.unknownAction`의 «오프수트 브로드웨이» 분기는 실제로 공집합이다** — id가 쓰고 ms가 물려받은 3분기안의
-  2분기(「ace offsuit **또는** 두 장의 브로드웨이」)에서, **오프수트 브로드웨이 10개(AKo AQo AJo ATo KQo KJo KTo QJo QTo JTo)가
-  전부 `HAND_TABLE` 안**이다. 폴백에 떨어지는 건 **ace-offsuit(A9o~A2o) 8개뿐**이다.
-  🔴 **id 사전의 예시 `K9o`는 틀렸다** — id의 라벨은 「dua kartu **broadway**」인데 9는 브로드웨이가 아니다(id 정정 대상).
-  🔴 **정정(hi 회차 09-19)**: 이 줄의 「ms는 `A9o, A7o, A5o`로 고쳤다」는 **사실과 다르다** — `app/ms/calculator/dict.ts:166`은
-  지금도 `A9o, A5o, K9o, Q9o`다. 다만 ms의 라벨은 「Ace offsuit **atau dua kad tinggi**」라 K9o가 라벨상 정합이므로 **ms는 오류가 아니다**(이 줄의 «ms 정정» 판정이 과했다).
-  🔴 **그리고 팔을 «ace-offsuit만»으로 좁히면 반대쪽이 열린다**(hi 딜러 렌즈): K9o·Q9o·J9o·T9o가 «나머지 = fold»로 떨어져 BTN 표준 오픈이 전 포지션 폴드가 된다.
-  hi가 쓴 형 = **«ace offsuit, 또는 두 장 다 9 이상»**(그 조건이 덮는 표 밖 집합 = K9o·Q9o·J9o·T9o 넷 · 🔴 **98o는 8이라 안 들어간다** — 교열 렌즈가 열거 오류를 잡았다).
-  → EN에 3분기를 실을 때 이 실측을 반영하라(**tier 5 고정 코드 2줄**과 함께 · fr §5 ⓒ · id §5 ⓑ).
-- 🔴 **EN `starting.unknownDesc`에 «Tier 5 = 표 밖이지 최약이 아니다»라는 단서가 없다** — 코드가 폴백을 **tier 5로 고정**해
-  화면에 「🚫 Tier 5 — Weak」와 「Cutoff/button only」가 **나란히** 뜬다(K9s·A9o가 «최약»으로 낙인되면서 동시에 오픈 지시).
-  id가 desc로 막았고 ms도 따랐다 — **EN·나머지 8로케일 회灌 후보**.
 - 🪶 **EN FAQ Q4 「times-2 half runs 1–2 points low」는 ja·zh·zh-hant에 아직 미반영**(fr 09-18 표의 3열).
   ms는 최신 문안(9 outs 1.6 · 15 outs 2.6)을 실었다 — 🔴 **번역이 «방향»을 뒤집기 쉬운 자리다**(ms 초안이 실제로
   «terlebih»(초과)로 뒤집었고 렌즈 2종이 잡았다). 남은 로케일은 **부호를 검산하라**: 규칙 18% < 실제 19.6% = 규칙이 «낮다».
@@ -436,10 +434,6 @@ de 회차의 렌즈 2종이 「de 번역 문제」로 보고한 것들이 실은
   ✅ **09-19 (5) 해소 `7fae5a72`** — 단 목적지는 이 안과 달리 **`/en/hand-chart`**다: 그 문장이 전 로케일에서 **이미 계산기를 링크**해
   `/{loc}/calculator`로 돌리면 한 문장에 같은 목적지가 두 번 된다(+ Starting Hand 탭은 차트가 아니다). 덤으로 한국어 `/calculator` 14자리 ·
   라이브 404 `/es|ja|zh/quiz` 3자리도 `/en/*`로. 재발 방지 = `check:intl-links` 3차(도구 링크 라우트 실존).
-- 🟠 **EN `starting.unknownAction`의 «두 장의 브로드웨이» 팔을 «ace-offsuit만»으로 대체하면 안 된다** — ms 회차 §5의 처방을
-  그대로 실으면 K9o·Q9o·J9o·T9o가 «나머지 = fold»로 떨어져 **BTN 표준 오픈이 전 포지션 폴드**가 된다(hi 딜러 렌즈).
-  hi가 쓴 형 = **«ace offsuit, 또는 두 장 다 9 이상»**(덮는 표 밖 집합 = K9o·Q9o·J9o·10-9o 넷 · 98o는 8이라 제외).
-  1분기 연결자 갈래에는 **«작은 쪽 카드 3 이상»** 바닥이 필요하다(없으면 32s·42s까지 CO 오픈).
 - 🪶 **EN 티어 역전 1건 추가 실측**(hi 2차 교열): 폴백에 걸리는 `43s`(Tier 5)가 표 안 `54s`·`65s`(Tier 4 · «Call LP»만)보다
   **공격적으로 읽힌다** — EN 동형이라(EN 폴백 «Cutoff/button only» ↔ EN 54s «Call LP») hi는 건드리지 않고 예시에서만 뺐다.
   **EN 정정 후 전 로케일 전파** 후보(§5의 `K10o/Q10o/J10o`·`A10s/KQs` 역전과 같은 묶음).

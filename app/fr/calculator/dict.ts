@@ -225,7 +225,7 @@ export const CALC_DICT_FR: CalcDict = {
       AQo: { desc: "Dépareillée, plus faible ; la position compte", action: "Relancer en position mid/late" },
       AJo: { desc: "Faible en EP, forte en LP", action: "Relancer au CO/BTN, prudence en EP" },
       // 🔴 딜러 렌즈 09-18(高): 초안이 EP를 «personne n'est entré면 relancer»로만 적어 **폴드 선택지를 지웠다** —
-      //    EN `call/fold in EP` · pt «aumente **ou folde**» · de «früh Call/Fold»에 전부 있는 갈래다.
+      //    ✅ 2026-09-20: EN은 이제 «raise or fold when nobody has entered, and usually fold facing a raise», de도 동형이다.
       //    9-max UTG에서 KQo 오픈은 AK·AQ·KK·QQ에 도미네이트되고, 같은 파일 summary 3티어(«position tardive»)와도 모순이었다.
       KQo: { desc: "Le meilleur connecteur dépareillé", action: "Relancer en LP ; en EP, relancer ou se coucher si personne n'est entré, et se coucher face à une relance" },
       K10s: { desc: "Roi assorti, fort en LP", action: "Relancer en LP, se coucher en EP" },

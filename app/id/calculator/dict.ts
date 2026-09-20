@@ -189,8 +189,8 @@ export const CALC_DICT_ID: CalcDict = {
       { hands: "66–55 A8s–A2s KJo QJo suited connector", action: "Selektif di posisi akhir" },
       { hands: "44–22 hand offsuit lemah", action: "Biasanya fold" },
     ],
-    // 🔴 오픈 림프 권유 제거 — **fr 09-18 딜러 렌즈 승계**(EN 미반영: `components/calculator/dict.ts`의 88 「consider calling EP」·
-    //    77 「call EP」·KQo 「call/fold in EP」가 그대로다 — **EP엔 앞선 레이즈가 없으니 논리상 림프밖에 안 된다** → §5).
+    // 🔴 오픈 림프 권유 제거 — **fr 09-18 딜러 렌즈 승계**(EP엔 앞선 레이즈가 없으니 「call EP」는 논리상 림프밖에 안 된다).
+    //    ✅ EN 88·77·KQo도 2026-09-20에 정정됐다 — 이제 EN이 정본이다(WORKLOG 09-20).
     //    id 09-17판 실계수 = 「call di posisi awal」 8곳 + 「call/fold di posisi awal」 1곳 = **9곳**
     //    (브리프 §3-I의 «13항»은 핸드 목록 길이이지 결함 자리 수가 아니다). 「call」은 전부 «raise를 call»로 명시했다(코퍼스 정본 = call raise 12 · call sebuah raise 7 · 🔴 «kenaikan»은 id에서 «증가» 뜻뿐이라 raise 역어로 쓰지 마라 — 2차 교열 렌즈).
     hands: {

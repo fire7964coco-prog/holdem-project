@@ -192,7 +192,8 @@ export const CALC_DICT_PT: CalcDict = {
       { hands: "44–22 mãos offsuit fracas", action: "Geralmente folde" },
     ],
     // 딜러 렌즈(EN 12항): «considere pagar em EP» = 오픈 림프 권고로 읽힌다 → «aumente ou folde — não dê open-limp».
-    //   EN 77/88 「call EP」와 87s·65s·54s «Call LP»·33/22는 «레이즈에 콜»로 명시해 옮겼다(ja·zh·zh-hant·es 동형 · 브리프 §3-F·§5).
+    //   EN 77/88 「call EP」와 87s·65s·54s «Call LP»·33/22는 «레이즈에 콜»로 명시해 옮겼다(브리프 §3-F·§5).
+    //   ✅ 2026-09-20: EN 77·88·KQo가 정정돼 이제 EN이 정본이다(pt KQo는 이미 EN과 같은 형이었다).
     //   66·44 set mining은 «~15×» 조건. dar limp = 코퍼스 정본.
     hands: {
       AA: { desc: "A melhor mão. Aumente em qualquer spot", action: "Sempre aumente/reaumente (3-bet)" },

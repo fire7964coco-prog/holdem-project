@@ -1,19 +1,29 @@
 # 다음 세션 알림장
 
 > «다음 할 일 + 미결»만 담는다. 경위 = `WORKLOG.md`(slug로 grep) · 규칙 = 정본 MD · 시한 = `docs/update-calendar.md`.
-> 마지막 갱신 2026-09-19 (본체 HEAD = **hi 계산기 회차 `4a6842f0`**(+사이트맵 `24dd6fd9`) · ✅ **계산기 로케일 트랙 종료 11/11**
+> 마지막 갱신 2026-09-20 (본체 HEAD = **`3db98e3f`** · ✅ **계산기 로케일 트랙 종료 11/11**(09-19 `4a6842f0`)
 > · hi는 **머리어를 영어로 «유지»한 유일한 로케일**(사장님 09-16 지시를 실측이 «확인» — 근거 `docs/keyword-bank/hi-calculator.md` §5)
 > · Equity 탭 + 빠른 참조 6표 + FAQ 18 + §3-I 미재조준 **전부 해소** + 솔버 카니발 해소 · 게이트 40→0 · 셀프테스트 20/20
 > · 배포·라이브 확인·IndexNow 완료 · 미커밋 0 · 경위 = WORKLOG 09-19 (4) · 교훈 = 브리프 §3-M).
-> 🆕 09-19 (5) `7fae5a72` — 번역본 도구 링크 44자리 재조준(한국어 `/hand-chart`·`/calculator` → `/en/*` · 🔴 라이브 404 `/es|ja|zh/quiz` 3자리 포함)
-> + `check:intl-links` 3차(도구 링크 라우트 실존) 신설 · 경위 = WORKLOG 09-19 (5).
+> 🆕 **09-20 `3db98e3f`** — 스타팅 핸드 **폴백 122개 티어 계산**(전엔 Tier 5 고정 → 「🚫 약함」과 「오픈하라」가 나란히 떴다)
+> + **오픈 림프 제거**(EN·de의 88·77·KQo · 나머지 9로케일은 이미 정정형) + 폴백 문구 13자리 재작성 + **ko 합류**(09-17 경화를 한 번도 못 받고 있었다).
+> 🔴 폴백 규칙 근거 = **콤보 산술**(BTN 50% 663콤보 → 오프수트 몫 273 = 22타입) — 딜러 렌즈의 «더 넓혀라»는 이 산술로 기각.
+> 검증 = 전수 대입 169/47/122 · 명제 22건 0건 · 라이브 DOM 11/11(en·ko) · 390px 오버플로 0. 경위 = WORKLOG 09-20.
 
 ## ▶ 다음 할 일 (사장님이 고른다)
 
 1. **🧰 queue 다음 회차** — es `poker-en-las-vegas` 동형 명제 3종 + `holdem-tournament` L298(Q4-b §2 잔여 · es 고유 · EN 동형 없음): L140·L256 「solo exige 21 años」 · L142 matrícula 발급처 부재 + WSOP.com 명칭(형제 `nueva-jersey`·`poker-online-dinero-real-estados-unidos`도 · como-entrar L152는 「WSOP Online (antes WSOP.com)」 — 1차 출처 재확인 후 통일 방향 판정) · `holdem-tournament:298` 썸네일 문장 「pide 21 años y una identificación válida」(히어로는 09-17 «+ dos cuentas gratuitas»). 판정형 = Opus. 레인 창 첫 마디 「HARDEN.md 읽고 회차 Q4-c 시작해」 — 🔴 **HARDEN.md 헤드 통지는 아직 안 붙였다**(사장님 「올려」 대기). 근거 `docs/harden-queue-진행.md` §2 「Q4-b가 남긴 것」.
 2. **(not set) 랜딩 유실 원인 규명 회차**(본체) — 09-14 스냅샷 236세션(08-28 103 → 2.3배). page_view만 유실된 진짜 사람이 참여 0으로 잡혀 참여율을 6.6p 누른다. 후보: 네이버 유입 스크립트 순서 · GA 태그 로딩 지연. 근거 = `docs/seo-report-2026-09-16.md` §5-1.
 3. **10/14 이후 — 배치 효과 4주 비교**(캘린더 등재됨). 기준선 `docs/post-placement-analysis-2026-09-16.md` §2 · 같은 창(`npm run analytics` + `ga-fetch --pages --days 28`). 모바일 홈 36.7%(60세션)는 09-16 배포 전 값 — 그때 재측정. 같은 창에서 `/ja/calculator`·`/zh/calculator`·`/zh-hant/calculator`·`/es/calculator`·`/pt/calculator`·`/de/calculator`·`/fr/calculator` GSC 쿼리 첫 판독(일곱 다 신설 직후 0 · pt는 «calculadora poker»·«calculadora odds poker»·«icm calculator» 축 · es는 «calculadora de poker»·«icm calculator» 축 · zh-hant는 「德州撲克勝率計算器」 260·「icm計算機」 70 축을 본다 · de는 «poker rechner» 260·«poker wahrscheinlichkeiten rechner» 210·«poker odds calculator»(영문 590) 축을 본다 · fr은 «calculateur poker» 390·«icm poker» 480·«équité poker» 110·«tableau push or fold» 70 축을 본다 · **ms는 쿼리 단위로도 볼 게 없다** — 말레이어 축이 통째로 null이라 «poker calculator»·«poker odds calculator»(각 90 · 조준 안 한 영어 축)에 노출이 붙는지만 기록한다 · **id는 «kalkulator poker» 10 하나만 본다** — 🔴 인니어 축이 통째로 10 단위라 **쿼리 단위로 내려가야 보인다**(페이지 합계로는 0으로 보인다) · 영어 «poker calculator»·«poker odds calculator» 각 90은 **조준 안 한 축**이라 노출이 붙으면 그것대로 기록해 둘 것 · 🆕 **hi는 «데바나가리 쿼리에 노출이 붙는가»만 본다** — 조준한 영어 축 `poker odds calculator` 390은 SERP 19/19라 노출이 붙기 어렵고 힌디어 축은 볼륨 자체가 null이다. **붙으면 §3-B의 «힌디어 SERP 공백» 판정이 맞은 것**이라 그 자체가 결과다).
-4. 🪶 계산기 EN 후속(공용 헬퍼 감) = 브리프 §5: OG/트위터 `images` 누락은 en 홈·솔버·8로케일 랜딩(ja·zh는 반영) 공통 · `calculator-alternates` x-default · M 존 라벨 소수 경계 · EN `starting.hands` 77/88/KQo 「call EP」 모호(+ zh·ja가 붙인 「림프 금지」절) · b3 조건절 구조 회灌 · 「the calculator above」→탭 이름 · 🟠 클라이언트 `<SEO>`의 og:title 덮어쓰기(로케일 공통) · `icm.introRest` 선행 공백(CJK) · 🆕 es 렌즈가 남긴 EN 회灌 4건(FAQ ×2 오차 서술 · ICM 가중 평균 · `pot.orHigher` «or more» · 87s/65s/54s·33/22 «call» 모호) · 🆕 pt 렌즈 4건(🟠 오버카드 정의 «not on board» 오류 · save and chop «next payout» · KQo EP 콜 · 66/44 15× 주체) · 🆕 de 렌즈가 남긴 회灌·후속 2건: 🪶 EN `quickRef[5]` M 존 note가 `holdem-tournament-vs-cash-game`을 가리키는데 존 정의 소유는 short-stack 계열(로케일 공통 · EN parity라 de는 안 건드림) · 🪶 **`check:calc-parity`에 desc ≤160 검사 신설**(09-18 · 셀프테스트 3/3) — `check:meta-length`가 `lib/posts-*`만 보는 사각지대를 닫았다 · 🪶 **역방향 누수**(형제 글이 계산기 의도를 /solver로 — pt holdem-pot-odds FAQ·holdem-equity L191 · 로케일 공통 grep 후보 · 브리프 §3-G) · 🆕 **hi 렌즈가 남긴 4건**(브리프 §5 말미): 🟠 EN `unknownAction`에 ms 처방(«ace-offsuit만»)을 그대로 실으면 **K9o~10-9o가 전 포지션 폴드**가 된다(hi 형 = «ace offsuit, 또는 두 장 다 9 이상» + 연결자 갈래에 «작은 쪽 3 이상» 바닥) · 🪶 EN `outs.exactNote` «The big number»는 **활자 크기**인데 번역이 «값의 크기»로 뒤집기 쉽다(hi 초안이 실제로 뒤집어 **추정치를 정확값으로 고르게** 만들었다 — 전 로케일 grep 후보) · 🪶 EN `A3s` «Bottom of the suited aces»는 같은 표에 A2s가 있어 **거짓** · 🪶 EN 티어 역전 1건 추가(폴백 43s가 표 안 54s·65s보다 공격적).
+4. 🪶 **계산기 EN 후속**(브리프 §5) — 🔴 두 건은 09-20에 닫혔다(폴백 티어 · 오픈 림프). **남은 것**:
+   🟠 EN `88`이 `77`보다 좁다(«consider calling» vs «call» — 88이 더 센데 권고가 더 좁다 · 12로케일이 이 비대칭을 충실히 옮겼다) ·
+   🟠 88·77의 «EP 첫 진입» 미정의(「Raise LP」만 읽으면 EP 첫 진입에 할 게 없어 림프로 빠진다 · AJs·55는 그 자리를 닫아 뒀다) ·
+   🟠 `44`(T5)가 `43s`(T4)보다 아래(페어 승격은 `summary` 5행 「44–22 weak offsuit hands」를 13자리에서 같이 고쳐야 한다) ·
+   🟠 EN `87s`·`65s`·`54s` 「Call LP」(76s만 «raise first in» — 티어 내 역전 + LP 첫 진입 림프 암시) ·
+   🟠 오버카드 «not on board»(EN·es·ja·zh·zh-hant 5개 잔존) · 🟠 FAQ «times-2» 방향(ja·zh·zh-hant 미반영) ·
+   🟠 `<SEO>`의 og:title 덮어쓰기(로케일 공통 · en·ja·zh·fr·id 5곳 실측) · 🟠 OG/트위터 `images` 누락 · `calculator-alternates` x-default ·
+   🪶 EN `A3s` «Bottom of the suited aces»는 같은 표에 A2s가 있어 거짓 · 🪶 `outs.exactNote` «The big number»(활자 크기 ↔ 값 크기 오역 위험).
+   🔴 **ko는 계산기 나머지 탭이 아직 09-17 이전이다**(`spr.zones`·`outs`·`icm` — 09-20은 스타팅 탭만 닫았다) → ko 전수 대조는 별도 회차.
 
 ## 🔵 미결 (해결되면 WORKLOG에 적고 지운다)
 
@@ -24,7 +34,6 @@
 - **zh·zh-hant 판정 요청 1건 대기**(Q4b-4 · re-entry 행 제목 「重买/重買」 → 「再入场/重新進場」 후보 · 거울쌍으로 같이) — 두 로케일 진행 파일 §5 말미. 레인 회차 없음 유지, 사장님이 열 때.
 - **de 형제 글 3건(낮음 · 포스트 수정이라 posting.mdc 절차 · MB-063 ⓒⓓ)**: ① `holdem-equity` FAQ 「Brauche ich einen Equity-Rechner?」와 `holdem-icm` FAQ 「In der Praxis nutzt du **einen** ICM-Rechner」가 계산기를 말하면서 **링크를 안 준다**(부정관사가 경쟁사로 가는 문) ② `holdem-bubble`이 계산기를 3번 가리키는데 계산기는 버블 글을 0번 가리킨다(related 8은 EN parity라 본문 링크로) ③ `holdem-short-stack` M 존 표가 경계를 겹쳐 적는다(「10–20 / 6–10」 ↔ 계산기 「10–19 / 6–9」 — 계산기 쪽이 정본). 🟢 `/de/solver` 누수는 0건.
 - **fr 포스트 1건(낮음 · posting.mdc 절차 · MB-064 ⓓ)**: `lib/posts-fr/texas-holdem-rules-for-beginners.ts:444` — **fr 유일의 인바운드**인데 앵커가 09-18에 교체한 «calculatrice de probabilités poker»다(현 페이지 이름 = «Calculateur poker»). 같은 줄의 `/hand-chart`는 09-19 (5)에서 `/en/hand-chart`로 해소.
-- **EN 계산기 부채 6건(브리프 §5 · MB-065 ⓐⓑⓒ + MB-067)** — 한 회차로 묶어 EN을 고치고 전 로케일 전파: 🔴 EN `starting.hands`의 **오픈 림프 권유 셋**(`88`·`77`·`KQo`) — 🔴 **근거를 정정했다(ms 09-19)**: 「EP엔 앞선 레이즈가 없다」는 **UTG에만 참**이고 MP는 UTG 레이즈를 마주한다 → 처방은 «call 제거»가 아니라 **«무엇에 대한 call인지 명시 + 오픈 림프 금지»**이며 **선례 7로케일이 이미 그 형**이다(de만 옛 문안) · 🟠 EN `unknownAction` 상·하한 부재(표 밖 **122핸드** 전부가 이 한 줄) — 전파안 = **ms가 수치 경계로 다시 쓴 3분기**(전수 대입 검산 완료 · 미분류 0). 🔴 **id·ms 초안의 «두 장의 브로드웨이» 절은 공집합이었다** — 오프수트 브로드웨이 10개가 전부 `HAND_TABLE` 안이다(**id 사전 예시 `K9o`도 틀렸다 · id 정정 대상**). **tier 5 고정 코드 2줄**이 12로케일을 한 번에 고친다 · 🟠 EN `unknownDesc`에 «Tier 5 = 표 밖이지 최약 아님» 단서 부재(화면에 「🚫 Tier 5 — Weak」와 「CO/BTN 오픈」이 나란히 뜬다 · id·ms만 막았다) · 🟠 EN 오버카드 정의 «not on board»(정정 = pt·de·fr·id·**ms 5개** / 옛 문안 = EN·es·ja·zh·zh-hant 5개) · 🪶 EN FAQ 「times-2 half runs 1–2 points low」 ja·zh·zh-hant 미반영 — 🔴 **번역이 «방향»을 뒤집기 쉬운 자리다**(ms 초안이 실제로 뒤집었고 렌즈 2종이 잡았다 · 규칙 18% < 실제 19.6% = 규칙이 «낮다») · 🪶 EN `quickRef[1].note` «no longer a favorite» — «최우선 선택»으로 옮기면 거짓 명제가 된다(49.2%는 equity) · 전 로케일 grep 후보.
 - 장기 미결 = `docs/harden-queue-진행.md` §2 · `docs/pending-work.md` · `docs/en-first-queue.md` §3(EN counterfeiting 조건 누락 등).
 
 ## 🕒 시한 (정본 `docs/update-calendar.md` — 요약만)
