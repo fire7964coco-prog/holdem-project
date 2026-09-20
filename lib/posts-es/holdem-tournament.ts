@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "En un torneo de póker pagas un buy-in fijo por fichas; las ciegas suben con el reloj hasta que un jugador tiene todas las fichas. El 10-15% de arriba cobra. Formatos: freezeout, PKO, satélite y deepstack — entras por buy-in directo, satélite o preinscripción online.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-09-13",
+  updated: "2026-09-17",
   masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -177,7 +177,7 @@ En lugar de gastar $10,000, compites en un torneo de $500 contra otros 19 jugado
 
 ### Opción B: Preinscripción online
 La mayoría de grandes festivales en vivo te dejan registrarte online por adelantado:
-- Crea una cuenta en la plataforma del evento (p. ej., la app WSOP LIVE para la WSOP, las pestañas "Events" y "Live" del lobby de PokerStars para eventos EPT/APPT)
+- Crea una cuenta en la plataforma del evento (p. ej., la app WSOP LIVE —más Caesars Rewards— para el WSOP, las pestañas "Events" y "Live" del lobby de PokerStars para eventos EPT/APPT)
 - Paga el buy-in online
 - Llega a la sede → verificación de identidad → imprime el ticket de asiento en un kiosco o recógelo en el mostrador
 - Te saltas la cola de registro — vale la pena para eventos grandes
@@ -295,7 +295,7 @@ Estos 16 términos cubren casi todo lo que oirás en la mesa. Para la A a la Z c
 
 ## ¿Cómo entro a un torneo grande como el WSOP?
 
-Menos filtros de los que la gente cree: el reglamento del WSOP pide **21 años y una identificación válida**, sin requisitos de ciudadanía ni visa, y su evento de brazalete más barato cuesta **$300**. Qué papeles acepta, cómo funciona el registro y qué pasa el primer día está en la [guía de cómo entrar al WSOP](/es/blog/como-entrar-al-wsop "thumb:/images/como-entrar-al-wsop-hero.webp").
+Menos filtros de los que la gente cree: el reglamento del WSOP pide tres cosas —**21 años, identificación con foto y dos cuentas gratuitas** (Caesars Rewards y WSOP LIVE)— y ninguna es migratoria: no pide ciudadanía ni visa. Su evento de brazalete más barato cuesta **$300**. Qué papeles acepta, cómo funciona el registro y qué pasa el primer día está en la [guía de cómo entrar al WSOP](/es/blog/como-entrar-al-wsop "thumb:/images/como-entrar-al-wsop-hero.webp").
 
 ## Checklist para tu primer torneo
 
@@ -304,7 +304,7 @@ Menos filtros de los que la gente cree: el reglamento del WSOP pide **21 años y
 <div style="display:grid;gap:8px;font-size:13px">
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span><strong>Documento con foto válido</strong> — pasaporte o carné de conducir. Sin excepciones.</span></div>
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span><strong>Buy-in + 20% extra</strong> en efectivo — algunos locales no aceptan tarjeta</span></div>
-<div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span><strong>Tarjeta de fidelización del casino</strong> si la piden (p. ej., Caesars Rewards para la WSOP)</span></div>
+<div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span><strong>Tarjeta de fidelización del casino</strong> si la piden (en el WSOP es obligatoria: Caesars Rewards)</span></div>
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span><strong>Email de confirmación del registro</strong> si te preinscribiste online</span></div>
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span>Ropa cómoda — los torneos duran 6-12 horas. Lleva una chaqueta (las salas de póker son frías).</span></div>
 </div>

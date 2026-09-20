@@ -149,7 +149,7 @@ Sí — el **WSOP Circuit** es la versión itinerante, y no se queda en Estados 
 
 Las fechas cambian cada temporada: antes de reservar, confírmalas en el [calendario oficial del Circuit](https://www.wsop.com/circuit/).
 
-Y si prefieres clasificar desde casa, **WSOP Online** (antes se anunciaba como WSOP.com) es la versión por internet: funciona en Nevada, Nueva Jersey, Michigan y Pensilvania, y ahí también se juegan satélites que reparten entradas.
+Y si prefieres clasificar desde casa, **WSOP Online** (antes WSOP.com) es la versión por internet: funciona en Nevada, Nueva Jersey, Michigan y Pensilvania, y ahí también se juegan satélites que reparten entradas.
 
 ## ¿Cuánto te retienen de impuestos si ganas?
 
@@ -165,7 +165,7 @@ Si vienes de fuera del país, la regla general del IRS retiene el **30%** de lo 
 
 **Q. ¿Cualquiera puede jugar en el WSOP?**
 
-A. El reglamento pide 21 años cumplidos con prueba de edad y dos cuentas gratuitas (Caesars Rewards y WSOP LIVE), y algunos eventos añaden condiciones propias que vienen en su hoja de estructura. No exige ciudadanía estadounidense ni menciona requisitos de visa para participar.
+A. El reglamento pide 21 años cumplidos con prueba de edad, una identificación válida y dos cuentas gratuitas (Caesars Rewards y WSOP LIVE), y algunos eventos añaden condiciones propias que vienen en su hoja de estructura. No exige ciudadanía estadounidense ni menciona requisitos de visa para participar.
 
 **Q. ¿Qué documentos necesito si no soy ciudadano de Estados Unidos?**
 

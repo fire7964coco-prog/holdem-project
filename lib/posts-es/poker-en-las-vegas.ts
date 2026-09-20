@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Para jugar póker en Las Vegas necesitas 21 años cumplidos, sin excepciones — ni siquiera puedes quedarte parado en la zona de juego si eres menor. Las mesas más baratas no están en el Strip: salas como South Point publican mesas de $1–$2 sin límite, mientras que las del Strip no publican los límites de sus mesas bajas. Y hay algo que casi ninguna guía en español dice: si no eres residente fiscal en Estados Unidos, te retienen el 30% de los premios de póker, y de todos los países hispanohablantes solo España está exenta por convenio.",
   category: "rules",
   date: "2026-07-27",
-  updated: "2026-07-27",
+  updated: "2026-09-17",
   keepImagesInBody: true,
   readTime: "15 min",
   emoji: "♠️",
@@ -137,11 +137,13 @@ Sí — los requisitos y los papeles exactos los detallo en la [guía de cómo e
 
 **Sí, y esta es probablemente la mejor noticia de esta guía.**
 
-Las reglas oficiales del World Series of Poker no piden ciudadanía ni visa de ningún tipo. Lo único que exigen es **21 años cumplidos con prueba de edad**.
+Las reglas oficiales del World Series of Poker no piden ciudadanía ni visa de ningún tipo (entrar al país es otro trámite, que no depende del WSOP). Lo que exigen son **21 años cumplidos**, una identificación válida y dos cuentas gratuitas (Caesars Rewards y WSOP LIVE, obligatorias aunque te inscribas en la ventanilla); algunos eventos añaden condiciones propias en su hoja de estructura.
 
 Y hay un detalle que casi nadie menciona. El reglamento enumera qué identificaciones acepta de quien no es ciudadano estadounidense, y en esa lista aparece de forma expresa la ==**matrícula consular mexicana**== —junto con el pasaporte, la licencia de conducir extranjera y la tarjeta de residencia—.
 
-:::note[Que el WSOP acepte la matrícula consular no significa que todos los casinos la acepten en la puerta. Son cosas distintas: una es el reglamento de un torneo, la otra es la política de cada casino. Si la matrícula es tu única identificación, lleva también el pasaporte.]:::
+Ojo con una cosa: la matrícula la expiden las representaciones de México en Estados Unidos y Canadá; si vienes desde México con el pasaporte, súmale un segundo documento con domicilio (licencia, recibo de servicios o estado de cuenta), porque el reglamento pide una segunda identificación cuando la primera no trae domicilio físico — y el pasaporte no lo trae.
+
+:::note[Y ojo con la puerta del casino: que el WSOP acepte la matrícula consular no significa que todos los casinos la acepten en la puerta. Son cosas distintas: una es el reglamento de un torneo, la otra es la política de cada casino. Si la matrícula es tu única identificación, lleva también el pasaporte.]:::
 
 ### ¿Cuándo es y cuánto cuesta?
 
@@ -219,7 +221,7 @@ Buena noticia para quien no tiene documentos estadounidenses: la norma permite i
 
 Sí, y Nevada tiene una particularidad curiosa: **en juego de casino por internet, este estado solo permite el póker.** Su reglamento de juego interactivo prohíbe expresamente aceptar apuestas *"en cualquier juego que no sea el póker y sus derivados"*. Nada de tragamonedas ni de casino online. (Las apuestas deportivas por aplicación son otra categoría legal, con sus propias reglas — por eso sí las ves anunciadas.)
 
-En la práctica hay dos licencias vigentes, pero **la única sala abierta al público es WSOP.com**. Y aplican las reglas de siempre: 21 años y estar **físicamente dentro de Nevada** mientras juegas.
+En la práctica hay dos licencias vigentes, pero **la única sala abierta al público es WSOP Online** (antes WSOP.com). Y aplican las reglas de siempre: 21 años y estar **físicamente dentro de Nevada** mientras juegas.
 
 Un detalle del reglamento que cuesta dinero ignorar: tienes **30 días desde que abres la cuenta** para completar la verificación de identidad. Mientras no la termines no puedes retirar nada ni depositar más de $5,000 — y si se cumple el plazo sin verificar, la sala cierra la cuenta, **te devuelve el depósito y se queda con las ganancias**. Si el inglés te frena, pide ayuda el primer día, no el día 29.
 
@@ -253,7 +255,7 @@ A. No. Su propio sitio la anuncia como cerrada temporalmente. La de Resorts Worl
 
 **Q. ¿Necesito visa especial o ser ciudadano para jugar el WSOP?**
 
-A. No. El reglamento oficial solo exige 21 años cumplidos con prueba de edad. Para quien no es ciudadano estadounidense acepta pasaporte, licencia de conducir extranjera, tarjeta de residencia y, de forma expresa, la matrícula consular mexicana.
+A. No. El reglamento del WSOP no pide ciudadanía ni visa: te pide tener 21 años, una identificación válida y las dos cuentas gratuitas de Caesars Rewards y WSOP LIVE, más lo que indique la hoja de estructura de tu evento. Qué documentos acepta a quien no es ciudadano —incluida la matrícula consular mexicana— lo detallo en la guía de cómo entrar al WSOP.
 
 **Q. ¿Cuánto me retienen si gano siendo turista?**
 
@@ -269,7 +271,7 @@ A. El casino presenta un reporte, y no pasa nada más. Lo que sí es delito es p
 
 **Q. ¿Puedo jugar online desde mi hotel en Las Vegas?**
 
-A. Sí, si estás físicamente en Nevada y tienes 21 años. En este estado el único juego de casino legal por internet es el póker, y la única sala abierta al público es WSOP.com. Tienes 30 días para verificar tu identidad o pierdes las ganancias.
+A. Sí, si estás físicamente en Nevada y tienes 21 años. En este estado el único juego de casino legal por internet es el póker, y la única sala abierta al público es WSOP Online (antes WSOP.com). Tienes 30 días para verificar tu identidad o pierdes las ganancias.
 
 ---
 

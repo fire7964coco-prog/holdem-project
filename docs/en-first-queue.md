@@ -107,6 +107,10 @@ EN 12편 정정 → 7로케일(de·es·id·ja·pt·zh·zh-hant) 전파 완료. 1
 
 - Q6c#1 AK vs 포켓페어(전수 열거 밴드 · EN + 7로케일 + zh-hant probability) · #2 kicker High card 행(1+4 · 8로케일 × 8자리) · #3 glossary 「pairs」→「terms」 · #4 Short Deck 「often」→ 규칙(WSOP Rule 366 · 13로케일). 되돌리지 마라 = `docs/harden-queue-진행.md` §3 「Q5-c」 6항 · 정본 승격 = `settled-decisions` §3-F.
 
+### 2-G. queue 회차 Q4-c가 올린 것 (2026-09-17 · 레인 직접 등재)
+
+- **G-1**(낮음) `holdem-tournament` L179 「Set up an account on the event's platform (e.g., the WSOP LIVE app for WSOP, …)» — WSOP는 **계정 2개**(WSOP LIVE + Caesars Rewards · 룰북 Rule 4 L66~68 「Registration for both accounts is required to participate in any WSOP Event» · Rule 10). 예시를 「the WSOP LIVE app plus a Caesars Rewards account for WSOP»로. es는 Q4-c에서 「—más Caesars Rewards—»로 앞섰다(`lib/posts-es/holdem-tournament.ts:180`) · L302 체크리스트 「loyalty card if required»도 같은 자리(es L307 「en el WSOP es obligatoria: Caesars Rewards»). EN 정정 시 ar·de·id·ja·pt·zh·zh-hant 전파(fr는 EN 미러 여부 확인).
+
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - 🟠 **EN `paired-board-strategy` — 22 counterfeiting의 리버 조건 누락**(HI GTO 독립 전략·수학 검수, 2026-09-15). 원문 `a running three counterfeits it into playing the board`를 한정된 런아웃으로 명확히 할 필요가 있다. `22/6633K`는 보드 Two Pair를 플레이하지만 `22/66332`는 홀카드 22로 Full House를 만든다. HI 초안의 별도 오역(`66333`을 Two Pair로 분류)은 HI에서 고쳐 카드 재검산까지 종결했다. EN·기발행 형제 언어의 적용은 이 회차에서 하지 않았으며, 후속 회차는 실제 해당 문장을 확인한 뒤 최소 수정한다. 원본/도입 결함 구분과 증거 정본 = [HI 원문 계약](hi-gto-source-contract.md#hi-독립-검수에서-구체화한-런아웃-조건).

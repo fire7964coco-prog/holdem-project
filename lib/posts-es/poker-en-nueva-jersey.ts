@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Nueva Jersey es el mejor estado del país para jugar póker: online con licencia estatal y en vivo en Atlantic City. Seis marcas ofrecen póker con permiso del estado, y no hace falta ser residente — basta con estar dentro de Nueva Jersey mientras juegas, algo clave si vives en Nueva York. Dato que sorprende: de los nueve casinos de Atlantic City, solo tres tienen sala de póker de verdad.",
   category: "rules",
   date: "2026-07-26",
-  updated: "2026-07-26",
+  updated: "2026-09-17",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🎰",
@@ -53,7 +53,7 @@ Menos de las que anuncian, y varias comparten mesa entre sí. El estado publica 
 | Marca | Bajo la licencia de |
 |---|---|
 | **Borgata Poker** · **BetMGM Poker** · **partypoker** | Borgata (misma casa) |
-| **WSOP.com** | Tropicana |
+| **WSOP Online** (antes WSOP.com) | Tropicana |
 | **PokerStars** · **FanDuel Poker** | Resorts / Golden Nugget (desde 2026 comparten mesa) |
 | **DraftKings** | Resorts (recién llegado) |
 
@@ -65,7 +65,7 @@ Aquí está la ventaja de jugar desde Nueva Jersey. Existe un acuerdo entre esta
 
 | Marca | Estados que junta |
 |---|---|
-| WSOP.com | Nevada + **Nueva Jersey** + Míchigan + Pensilvania |
+| WSOP Online | Nevada + **Nueva Jersey** + Míchigan + Pensilvania |
 | BetMGM · Borgata · partypoker | **Nueva Jersey** + Míchigan + Pensilvania |
 | PokerStars (FanDuel) | **Nueva Jersey** + Míchigan + Pensilvania |
 | DraftKings | **Nueva Jersey** + Míchigan + Pensilvania |
@@ -159,7 +159,7 @@ A. Sí, siempre que estés físicamente dentro de Nueva Jersey mientras juegas. 
 
 **Q. ¿Qué apps tienen póker de verdad en Nueva Jersey?**
 
-A. Hay cuatro redes completas: la de Borgata (que incluye BetMGM y partypoker), WSOP.com, y PokerStars —que desde 2026 comparte mesa con FanDuel—. DraftKings llegó en julio de 2026 pero solo con "Electric Poker", un formato exprés de tres jugadores sin mesas de cash. BetRivers opera en el estado, pero solo con casino.
+A. Hay cuatro redes completas: la de Borgata (que incluye BetMGM y partypoker), WSOP Online (antes WSOP.com), y PokerStars —que desde 2026 comparte mesa con FanDuel—. DraftKings llegó en julio de 2026 pero solo con "Electric Poker", un formato exprés de tres jugadores sin mesas de cash. BetRivers opera en el estado, pero solo con casino.
 
 **Q. ¿Puedo abrir cuenta sin Seguro Social?**
 
