@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Apa itu bad beat di poker? Saat jadi favorit saja tak cukup",
   seoTitle: "Anda 80% menang — tapi kalah. Apa itu bad beat?",
   desc: "Bad beat adalah kalah sebagai favorit besar saat lawan beruntung. Bedanya dengan cooler, bad beat jackpot, dan kenapa diam-diam itu bagus untuk Anda.",
-  tldr: "Bad beat adalah saat uang Anda masuk sebagai favorit berat — biasanya 80% atau lebih — dan Anda kalah karena lawan menangkap kartu beruntung untuk 'suck out' pada Anda. Berbeda dengan cooler, Anda unggul sepanjang tangan; hanya di akhir kartu berkhianat. Perih, tapi bad beat sebenarnya tanda Anda bermain di permainan yang menguntungkan.",
+  tldr: "Bad beat adalah saat uang Anda masuk sebagai favorit berat — biasanya 80% atau lebih — dan Anda kalah karena lawan menangkap kartu beruntung untuk 'suck out' pada Anda. Berbeda dengan cooler, Anda unggul saat uang masuk; hanya di akhir kartu berkhianat. Perih, tapi bad beat sebenarnya tanda Anda bermain di permainan yang menguntungkan.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-13",
-  masterUpdated: "2026-09-13",
+  updated: "2026-09-21",
+  masterUpdated: "2026-09-21",
   keepImagesInBody: true,
   readTime: "11 mnt",
   emoji: "💔",
@@ -26,7 +26,7 @@ Sebuah **bad beat** adalah saat chip Anda masuk sebagai favorit statistik berat 
 ### Bad beat sekilas
 
 :::stripe
-Unggul sepanjang tangan | Posisi Anda saat uang masuk
+Unggul saat masuk | Posisi Anda saat itu, bukan bagaimana tangan berakhir
 80%+ | Seberapa besar favorit yang biasanya dibutuhkan
 Suckout | Kartu beruntung yang membalikkannya
 Diam-diam bagus | Artinya bagi profit jangka panjang Anda
@@ -104,7 +104,7 @@ Yang paling ikonik adalah **aces dihancurkan set.** Anda dapat pocket aces all-i
 
 ## Apa Itu Bad Beat Jackpot?
 
-Beberapa cardroom mengubah rasa sakit menjadi hadiah. Sebuah **bad beat jackpot** adalah pot progresif — dibangun dari drop kecil yang diambil dari tangan-tangan yang memenuhi syarat — yang membayar saat tangan sangat kuat kalah di showdown. Idenya adalah mengganjar pemain yang menderita kekalahan spektakuler, dan bayarannya sering mengubah hidup.
+Beberapa cardroom mengubah rasa sakit menjadi hadiah. Sebuah **bad beat jackpot** adalah pot progresif — dibangun dari drop kecil tambahan yang diambil dari pot-pot sepanjang permainan — yang membayar saat tangan sangat kuat kalah di showdown. Idenya adalah mengganjar pemain yang menderita kekalahan spektakuler, dan bayarannya sering mengubah hidup.
 
 Aturannya **bervariasi per ruangan**, tapi struktur umumnya terlihat seperti ini:
 
@@ -197,7 +197,7 @@ A. Terima tangan itu sebagai variance, waspadai keras terhadap tilt, dan lindung
 
 **Q. Apakah bad beat sama dengan bermain buruk?**
 
-A. Tidak — keduanya berlawanan. Bad beat berarti Anda membuat keputusan yang *benar* dan memasukkan uang sebagai favorit, lalu kalah karena keberuntungan. Kalah karena *Anda* membuat call buruk atau permainan longgar bukan bad beat, itu kesalahan. Pemain jujur berhati-hati agar tidak mengarsipkan kesalahan mereka sendiri di bawah "bad beat," karena begitulah leak tak pernah diperbaiki.
+A. Tidak — di hampir semua kasus keduanya berlawanan. Bad beat berarti uang Anda masuk sebagai favorit — biasanya karena Anda membuat keputusan yang *benar* — lalu keberuntungan mengalahkan Anda. Menjadi favorit saja bukan bukti yang berdiri sendiri: sizing yang buruk, atau spot ICM di mana pot itu tak layak diperebutkan, tetap bisa membuat keputusan memasukkan chip sebagai favorit menjadi kesalahan. Kalah karena *Anda* membuat call buruk atau permainan longgar bukan bad beat, itu kesalahan. Pemain jujur berhati-hati agar tidak mengarsipkan kesalahan mereka sendiri di bawah "bad beat," karena begitulah leak tak pernah diperbaiki.
 
 ---
 
@@ -205,7 +205,7 @@ A. Tidak — keduanya berlawanan. Bad beat berarti Anda membuat keputusan yang *
 
 1. **Bad beat adalah kalah sebagai favorit besar ke suckout beruntung** — Anda unggul saat uang masuk, memainkannya benar, dan di-outdraw. Itu variance, bukan kesalahan.
 2. **Itu kebalikan dari cooler.** Bad beat butuh suckout (underdog membaik); cooler tidak (pemimpin unggul sepanjang jalan). Jika lawan Anda harus improve untuk menang, itu bad beat.
-3. **Bad beat diam-diam bagus untuk Anda.** Artinya lawan memasukkan uang saat tertinggal dan beruntung — keputusan kalah yang membayar Anda jauh lebih sering daripada membakar Anda. Masukkan uang saat unggul, abaikan bad beat-nya, dan biarkan variance meratakan diri.
+3. **Bad beat diam-diam bagus untuk Anda.** Artinya lawan memasukkan uang saat tertinggal dan beruntung — sebagian besar waktu, keputusan kalah yang membayar Anda jauh lebih sering daripada membakar Anda. Masukkan uang saat unggul, abaikan bad beat-nya, dan biarkan variance meratakan diri.
 
 Bad beat adalah pajak yang Anda bayar untuk memainkan permainan yang menang. Pemain terbaik menerima persis sebanyak orang lain — mereka hanya belajar mencatatnya sebagai variance, melindungi tangan berikutnya dari tilt, dan kembali [mengungguli meja](/id/blog/holdem-fish). Masukkan uang saat unggul cukup sering, dan kekejaman dek menjadi profit Anda.
 

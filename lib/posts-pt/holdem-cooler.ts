@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Cooler é uma mão em que você perde um pote grande com uma mão fortíssima que jamais poderia foldar corretamente — como um par de reis esbarrando em ases, ou uma trinca perdendo para uma trinca maior. Diferente de um bad beat, você estava atrás o caminho inteiro e nenhuma carta de sorte te \"sugou\": você jogou certo e mesmo assim perdeu. É o tipo de desastre mais honesto do poker.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-21",
+  masterUpdated: "2026-09-21",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🧊",
@@ -75,18 +75,18 @@ Aqui estão os mesmos jogadores mostrando os dois, para a ficha cair. **Bad beat
 
 ![Dois jogadores empurrando seus stacks inteiros para o meio do feltro verde, a colisão em que nenhuma das mãos consegue foldar](/images/holdem-cooler-stacks-collide.webp "Coolers acontecem quando os dois jogadores têm mãos fortes demais para foldar — o dinheiro entra e o segundo melhor monstro paga")
 
-Coolers vêm numa família reconhecível. Em todos, *ambas* as mãos são fortes o bastante para que foldar seja uma jogada perdedora no longo prazo — que é exatamente por que são inevitáveis:
+Coolers vêm numa família reconhecível. Em quase todos, *ambas* as mãos são fortes o bastante para que foldar seja uma jogada perdedora no longo prazo — que é exatamente por que são inevitáveis. A linha do straight pede uma ressalva, e é a tabela que dá essa ressalva:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Cooler | O confronto | Por que você não pode foldar |
 |:---|:---|:---|
-| **Reis vs Ases** | KK all-in no preflop contra AA | KK é azarão de ~4,5:1 contra AA, mas você nunca folda reis no preflop |
+| **Reis vs Ases** | KK all-in no preflop contra AA | KK é azarão de ~4,5:1 contra AA, e você quase nunca folda reis no preflop |
 | **Set over set** | Sua trinca flopada vs uma trinca flopada maior | Uma trinca flopada quase nunca é foldada; a trinca menor está praticamente morta |
 | **Flush over flush** | Seu flush de K vs um flush de A | Um flush de rei parece enorme — você raramente coloca o cara no nut flush exato |
 | **Full over full** | Seu full house vs um full house maior | Um full house é um monstro; abrir mão de um é quase impossível |
 | **Full house vs quadra** | Seus ases full vs uma quadra | O cooler supremo — um full house perdendo para uma quadra |
-| **Straight over straight** | Sua sequência vs uma sequência mais alta | Uma sequência feita numa mesa conectada é muito difícil de abrir mão |
+| **Straight over straight** | Sua sequência vs uma sequência mais alta | Uma sequência perto dos nuts é forte demais pra largar — mas a ponta baixa (o "idiot end") costuma ser fold, não cooler |
 
 </div>
 
@@ -100,7 +100,7 @@ Essas três formas de falar do mesmo desastre confundem muitos jogadores, então
 
 - **Setup** — sinônimo informal de cooler. Enfatiza a sensação de *estar preso* — como se o baralho tivesse sido "armado" para você perder o stack inteiro com uma mão da qual não conseguia escapar. Se alguém diz "aquilo foi um setup total", quer dizer cooler.
 - **Coolerado / levar um cooler (verbo)** — estar do lado perdedor de um cooler. "Levei um cooler" significa que você perdeu um pote grande com uma mão forte demais para foldar. Por definição, dizer isso corretamente é admitir que você *fez a jogada certa* e ainda assim perdeu.
-- **Cold deck** — um termo antigo relacionado, para uma sequência de mãos perdedoras inevitáveis; historicamente também se referia a uma trapaça (trocar por um baralho "frio" pré-arranjado), mas casualmente só significa que as cartas estão vindo brutalmente contra você.
+- **Cold deck** — um termo antigo relacionado. No dicionário ele nomeia **aquela única mão perdedora inevitável** em si; na mesa as pessoas o usam sobretudo para uma fase em que as cartas vêm brutalmente contra você. Historicamente também se referia a uma trapaça: trocar por um baralho "frio" pré-arranjado.
 
 Um mito importante para matar: **um cooler não precisa ser all-in.** A característica definidora é a colisão de duas mãos fortes demais para foldar, não o tamanho dos stacks. Você pode levar um cooler por um pote grande sem nunca colocar sua última ficha — é sobre as mãos, não sobre o all-in.
 
@@ -164,7 +164,7 @@ A. Sim — "setup" é um sinônimo informal de cooler. Enfatiza a sensação de 
 
 **Q. Par de reis vs par de ases é um cooler?**
 
-A. Sim — é o cooler mais clássico de todos. Reis são azarão de aproximadamente 4,5 para 1 contra ases no preflop, mas nenhum jogador razoável folda um par de reis antes do flop. Então o dinheiro entra, você fica atrás o caminho inteiro, e perde uma mão da qual jamais poderia ter escapado.
+A. Sim — é o cooler mais clássico de todos. Reis são azarão de aproximadamente 4,5 para 1 contra ases no preflop, e quase nenhum jogador razoável folda um par de reis antes do flop — só uma leitura que grita ases torna o fold defensável, e no pré-flop essa leitura quase nunca aparece. Então o dinheiro entra, você fica atrás o caminho inteiro, e perde uma mão da qual era quase impossível escapar.
 
 **Q. Com que frequência acontece set over set?**
 

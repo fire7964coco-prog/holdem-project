@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "What Is a Bad Beat in Poker? When Being the Favorite Isn't Enough",
   seoTitle: "You Were 80% to Win — and Lost. What Is a Bad Beat?",
   desc: "A bad beat is losing as a big favorite when your opponent gets lucky. How it differs from a cooler, the bad beat jackpot, and why it's secretly good for you.",
-  tldr: "A bad beat is when you get your money in as a heavy favorite — usually 80% or more — and lose because your opponent hits a lucky card to 'suck out' on you. Unlike a cooler, you were ahead the whole way; the deck just betrayed you at the end. It stings, but bad beats are actually a sign you're playing in a profitable game.",
+  tldr: "A bad beat is when you get your money in as a heavy favorite — usually 80% or more — and lose because your opponent hits a lucky card to 'suck out' on you. Unlike a cooler, you were ahead when the money went in; the deck just betrayed you at the end. It stings, but bad beats are actually a sign you're playing in a profitable game.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-13",
+  updated: "2026-09-21",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "💔",
@@ -25,7 +25,7 @@ A **bad beat** is when you get your chips in as a heavy statistical favorite and
 ### The bad beat, at a glance
 
 :::stripe
-Ahead the whole way | Where you stood when the money went in
+Ahead going in | Where you stood at that moment, not how it finished
 80%+ | How big a favorite it usually takes
 The suckout | The lucky card that flips it
 Secretly good | What it means for your long-term profit
@@ -37,7 +37,7 @@ Secretly good | What it means for your long-term profit
 
 **A bad beat is a hand you lose despite being a strong statistical favorite when the chips went in, because your opponent hit an unlikely card to overtake you.** You played it correctly — you got your money in "good," ahead in the math — and the deck simply produced the one runout that beats you. The loss isn't your fault; it's variance doing its worst.
 
-The mechanism is always a **suckout**: a card — on the flop, turn or river — that arrives after the money goes in and turns a losing hand into a winning one. Your aces were crushing their pocket fives until that third five appeared. Your top pair had their flush draw dead until the last heart fell. That moment — the favorite getting run down by a draw that had no business getting there — is the beating heart of the term. Understanding it is also the first step to not letting it wreck your session, the same emotional discipline that separates a pro from a [fish](/en/blog/holdem-fish).
+The mechanism is always a **suckout**: a card — on the flop, turn or river — that arrives after the money goes in and turns a losing hand into a winning one. Your aces were crushing their pocket fives until that third five appeared. Your top pair was ahead of their flush draw until the last heart fell. That moment — the favorite getting run down by a draw that had no business getting there — is the beating heart of the term. Understanding it is also the first step to not letting it wreck your session, the same emotional discipline that separates a pro from a [fish](/en/blog/holdem-fish).
 
 ---
 
@@ -103,7 +103,7 @@ The most iconic is **aces cracked by a set.** You get pocket aces all in preflop
 
 ## What Is a Bad Beat Jackpot?
 
-Some cardrooms turn the pain into a prize. A **bad beat jackpot** is a progressive pot — built from a small drop taken out of qualifying hands — that pays out when a very strong hand loses at showdown. The idea is to reward the player who suffers a spectacular beat, and the payout is often life-changing.
+Some cardrooms turn the pain into a prize. A **bad beat jackpot** is a progressive pot — built from a small extra drop taken out of pots as they're played — that pays out when a very strong hand loses at showdown. The idea is to reward the player who suffers a spectacular beat, and the payout is often life-changing.
 
 The rules **vary by room**, but the common structure looks like this:
 
@@ -196,7 +196,7 @@ A. Accept the hand as variance, watch hard for tilt, and protect your next few d
 
 **Q. Is a bad beat the same as playing badly?**
 
-A. No — they're opposites. A bad beat means you made the *correct* decision and got your money in as a favorite, then lost to luck. Losing because *you* made a bad call or a loose play isn't a bad beat, it's a mistake. Honest players are careful not to file their own errors under "bad beat," because that's how leaks go unfixed.
+A. No — in almost every case they're opposites. A bad beat means your money went in as the favorite — usually because you made the *correct* decision — and then luck beat you. Being the favorite isn't proof on its own that the decision was right: a bad sizing, or an ICM spot where the pot wasn't worth contesting, can still make getting those chips in a mistake. Losing because *you* made a bad call or a loose play isn't a bad beat, it's a mistake. Honest players are careful not to file their own errors under "bad beat," because that's how leaks go unfixed.
 
 ---
 
@@ -204,7 +204,7 @@ A. No — they're opposites. A bad beat means you made the *correct* decision an
 
 1. **A bad beat is losing as a big favorite to a lucky suckout** — you were ahead when the money went in, played it right, and got outdrawn. It's variance, not a mistake.
 2. **It's the opposite of a cooler.** A bad beat needs a suckout (the underdog improves); a cooler doesn't (the leader led all along). If your opponent had to improve to win, it was a bad beat.
-3. **Bad beats are secretly good for you.** They mean opponents are putting money in behind and getting lucky — losing decisions that pay you off far more often than they burn you. Get it in good, shrug off the beat, and let variance even out.
+3. **Bad beats are secretly good for you.** They mean opponents are putting money in behind and getting lucky — most of the time, losing decisions that pay you off far more often than they burn you. Get it in good, shrug off the beat, and let variance even out.
 
 Bad beats are the tax you pay for playing a winning game. The best players take exactly as many as everyone else — they've just learned to log them as variance, protect the next hand from tilt, and get back to [out-playing the table](/en/blog/holdem-fish). Get your money in good often enough, and the deck's cruelty becomes your profit.
 

@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "O que é um bad beat no poker? Quando ser o favorito não basta",
   seoTitle: "Você tinha 80% e perdeu — o que é um bad beat?",
   desc: "Bad beat é perder como grande favorito quando o adversário dá sorte. A diferença para o cooler, o bad beat jackpot e por que ele é secretamente bom pra você.",
-  tldr: "Um bad beat é quando você coloca suas fichas como favorito pesado — geralmente 80% ou mais — e perde porque o adversário pega uma carta de sorte pra dar um 'suckout' em você. Diferente de um cooler, você estava na frente o tempo todo; o baralho só te traiu no fim. Dói, mas bad beats são na verdade um sinal de que você está jogando num jogo lucrativo.",
+  tldr: "Um bad beat é quando você coloca suas fichas como favorito pesado — geralmente 80% ou mais — e perde porque o adversário pega uma carta de sorte pra dar um 'suckout' em você. Diferente de um cooler, você estava na frente quando o dinheiro entrou; o baralho só te traiu no fim. Dói, mas bad beats são na verdade um sinal de que você está jogando num jogo lucrativo.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-13",
-  masterUpdated: "2026-09-13",
+  updated: "2026-09-21",
+  masterUpdated: "2026-09-21",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "💔",
@@ -26,7 +26,7 @@ Um **bad beat** é quando você coloca suas fichas como favorito estatístico pe
 ### O bad beat, num relance
 
 :::stripe
-Na frente o tempo todo | Onde você estava quando o dinheiro entrou
+Na frente ao entrar | Onde você estava naquele momento, não como a mão terminou
 80%+ | Que tamanho de favorito costuma ser necessário
 O suckout | A carta de sorte que vira tudo
 Secretamente bom | O que isso significa pro seu lucro no longo prazo
@@ -38,7 +38,7 @@ Secretamente bom | O que isso significa pro seu lucro no longo prazo
 
 **Um bad beat é uma mão que você perde apesar de ser favorito estatístico forte quando as fichas entraram, porque o adversário pegou uma carta improvável pra te ultrapassar.** Você jogou certo — colocou seu dinheiro "bem", na frente na matemática — e o baralho simplesmente produziu o único runout que te bate. A derrota não é culpa sua; é a variância fazendo o seu pior.
 
-O mecanismo é sempre um **suckout**: uma carta — no flop, no turn ou no river — que chega depois de o dinheiro entrar e transforma uma mão perdedora numa vencedora. Seus ases estavam esmagando o par de cincos dele até aquele terceiro cinco aparecer. Seu top pair estava bem na frente do flush draw dele até a última copas cair. Esse momento — o favorito atropelado por um projeto que não tinha nada a ver com aquilo — é o coração do termo. Entender isso também é o primeiro passo pra não deixar que ele destrua sua sessão, a mesma disciplina emocional que separa um profissional de um [fish](/pt/blog/holdem-fish).
+O mecanismo é sempre um **suckout**: uma carta — no flop, no turn ou no river — que chega depois de o dinheiro entrar e transforma uma mão perdedora numa vencedora. Seus ases estavam esmagando o par de cincos dele até aquele terceiro cinco aparecer. Seu top pair estava na frente do flush draw dele até a última copas cair. Esse momento — o favorito atropelado por um projeto que não tinha nada a ver com aquilo — é o coração do termo. Entender isso também é o primeiro passo pra não deixar que ele destrua sua sessão, a mesma disciplina emocional que separa um profissional de um [fish](/pt/blog/holdem-fish).
 
 ---
 
@@ -197,7 +197,7 @@ A. Aceite a mão como variância, fique bem atento ao tilt, e proteja as suas pr
 
 **Q. Um bad beat é o mesmo que jogar mal?**
 
-A. Não — são opostos. Um bad beat significa que você tomou a decisão *correta* e colocou o seu dinheiro como favorito, e então perdeu pra sorte. Perder porque *você* fez um call ruim ou uma jogada frouxa não é um bad beat, é um erro. Jogadores honestos têm cuidado pra não arquivar os próprios erros como "bad beat", porque é assim que os leaks ficam sem conserto.
+A. Não — em quase todos os casos são opostos. Um bad beat significa que o seu dinheiro entrou como favorito — quase sempre porque você tomou a decisão *correta* — e então a sorte te venceu. Ser favorito não prova, sozinho, que a decisão foi correta: um sizing ruim, ou um spot de ICM em que o pote não valia a pena, podem transformar em erro colocar as fichas como favorito. Perder porque *você* fez um call ruim ou uma jogada frouxa não é um bad beat, é um erro. Jogadores honestos têm cuidado pra não arquivar os próprios erros como "bad beat", porque é assim que os leaks ficam sem conserto.
 
 ---
 
@@ -205,7 +205,7 @@ A. Não — são opostos. Um bad beat significa que você tomou a decisão *corr
 
 1. **Um bad beat é perder como grande favorito pra um suckout de sorte** — você estava na frente quando o dinheiro entrou, jogou certo, e foi outdrawn. É variância, não erro.
 2. **É o oposto de um cooler.** Um bad beat precisa de um suckout (o azarão melhora); um cooler não (o líder liderou o tempo todo). Se o seu adversário teve que melhorar pra ganhar, foi um bad beat.
-3. **Bad beats são secretamente bons pra você.** Eles significam que os adversários estão colocando dinheiro atrás e dando sorte — decisões perdedoras que te pagam muito mais vezes do que te queimam. Coloque bem, dê de ombros pra batida, e deixe a variância se equilibrar.
+3. **Bad beats são secretamente bons pra você.** Eles significam que os adversários estão colocando dinheiro atrás e dando sorte — na maior parte das vezes, decisões perdedoras que te pagam muito mais vezes do que te queimam. Coloque bem, dê de ombros pra batida, e deixe a variância se equilibrar.
 
 Bad beats são o imposto que você paga por jogar um jogo vencedor. Os melhores jogadores levam exatamente tantos quanto todo mundo — eles só aprenderam a registrá-los como variância, proteger a próxima mão do tilt, e voltar a [jogar melhor que a mesa](/pt/blog/holdem-fish). Coloque o seu dinheiro bem com frequência suficiente, e a crueldade do baralho vira o seu lucro.
 

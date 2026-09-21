@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Cooler adalah tangan di mana Anda kalah pot besar dengan holding sangat kuat yang tak pernah bisa Anda fold dengan benar — seperti pocket kings bertemu aces, atau sebuah set kalah oleh set yang lebih besar. Berbeda dari bad beat, Anda tertinggal sepanjang jalan dan tak ada kartu keberuntungan yang 'suckout' pada Anda: Anda memainkannya dengan benar dan tetap kalah. Inilah jenis bencana poker yang paling jujur.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-21",
+  masterUpdated: "2026-09-21",
   keepImagesInBody: true,
   readTime: "10 mnt",
   emoji: "🧊",
@@ -75,18 +75,18 @@ Berikut pemain yang sama menunjukkan keduanya, supaya perbedaannya benar-benar t
 
 ![Dua pemain mendorong seluruh tumpukan chip mereka ke tengah felt hijau — tabrakan di mana tak satu pun tangan bisa fold](/images/holdem-cooler-stacks-collide.webp "Cooler terjadi saat kedua pemain memegang tangan yang jauh terlalu kuat untuk fold — chip masuk dan monster kedua-terbaik membayar")
 
-Cooler datang dalam satu keluarga yang mudah dikenali. Di setiap kasusnya, *kedua* tangan cukup kuat sehingga fold akan menjadi permainan yang merugi dalam jangka panjang — itulah persisnya kenapa mereka tak terhindarkan:
+Cooler datang dalam satu keluarga yang mudah dikenali. Di hampir setiap kasusnya, *kedua* tangan cukup kuat sehingga fold akan menjadi permainan yang merugi dalam jangka panjang — itulah persisnya kenapa mereka tak terhindarkan. Baris straight butuh satu catatan, dan tabel di bawah memberikannya:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Cooler | Tabrakannya | Kenapa Anda tak bisa fold |
 |:---|:---|:---|
-| **Kings vs Aces** | KK all-in preflop melawan AA | KK adalah underdog ~4,5:1 terhadap AA, tapi Anda tak pernah fold kings preflop |
+| **Kings vs Aces** | KK all-in preflop melawan AA | KK adalah underdog ~4,5:1 terhadap AA, dan Anda hampir tak pernah fold kings preflop |
 | **Set over set** | Flopped set Anda vs flopped set lebih besar | Sebuah flopped set nyaris tak pernah di-fold; set lebih rendah nyaris drawing dead |
 | **Flush over flush** | K-high flush Anda vs A-high flush | King-high flush terlihat luar biasa besar — Anda jarang membaca lawan tepat memegang nut flush |
 | **Full house over full house** | Full house Anda vs full house lebih besar | Sebuah boat adalah monster; melepasnya nyaris mustahil |
 | **Boat vs quads** | Aces full Anda vs four of a kind | Cooler puncak — sebuah full house kalah oleh quads |
-| **Straight over straight** | Straight Anda vs straight lebih tinggi | Sebuah made straight di board tersambung sangat sulit dilepas |
+| **Straight over straight** | Straight Anda vs straight lebih tinggi | Straight yang dekat nuts terlalu kuat untuk dilepas — tapi ujung bawah (si "idiot end") biasanya fold, bukan cooler |
 
 </div>
 
@@ -100,7 +100,7 @@ Tiga cara membicarakan bencana yang sama ini membingungkan banyak pemain, jadi c
 
 - **Setup** — sinonim informal untuk cooler. Ia menekankan perasaan *terjebak* — seolah deck "disusun" agar Anda kehilangan seluruh stack dengan tangan yang tak bisa Anda hindari. Jika seseorang berkata "itu setup total," maksudnya adalah cooler.
 - **Coolered (kata kerja)** — berada di pihak yang kalah dalam sebuah cooler. "Saya kena cooler" berarti Anda kalah pot besar dengan tangan yang terlalu kuat untuk fold. Menurut definisinya, mengatakannya dengan benar adalah pengakuan bahwa Anda *melakukan permainan yang benar* dan tetap kalah.
-- **Cold deck** — istilah aliran lama terkait untuk rentetan tangan kalah tak terhindarkan; secara historis ia juga merujuk pada gerakan curang (menukar masuk deck "dingin" yang telah diatur), tapi secara santai ia sekadar berarti kartu berjalan brutal melawan Anda.
+- **Cold deck** — istilah aliran lama terkait. Di kamus ia menamai **satu tangan kalah tak terhindarkan** itu sendiri; di meja orang memakainya untuk periode saat kartu berjalan brutal melawan Anda. Secara historis ia juga merujuk pada gerakan curang: menukar masuk deck "dingin" yang telah diatur.
 
 Satu mitos penting untuk dibunuh: **cooler tak harus all-in.** Ciri penentunya adalah tabrakan dua tangan yang terlalu-kuat-untuk-fold, bukan ukuran stack. Anda bisa kena cooler di pot besar tanpa pernah memasukkan chip terakhir Anda — ini tentang tangan, bukan tentang all-in.
 
@@ -164,7 +164,7 @@ A. Ya — "setup" adalah sinonim informal untuk cooler. Ia menekankan perasaan b
 
 **Q. Apakah pocket kings vs pocket aces adalah cooler?**
 
-A. Ya — itu cooler paling klasik dari semuanya. Kings kira-kira underdog 4,5:1 terhadap aces preflop, tapi tak ada pemain masuk akal yang fold pocket kings sebelum flop. Jadi chip masuk, Anda tertinggal sepanjang jalan, dan Anda kalah tangan yang tak pernah bisa Anda hindari.
+A. Ya — itu cooler paling klasik dari semuanya. Kings kira-kira underdog 4,5:1 terhadap aces preflop, dan hampir tak ada pemain masuk akal yang fold pocket kings sebelum flop — hanya read yang menjerit aces membuatnya layak dilepas, dan di preflop read itu nyaris tak pernah datang. Jadi chip masuk, Anda tertinggal sepanjang jalan, dan Anda kalah tangan yang hampir mustahil Anda hindari.
 
 **Q. Seberapa sering set over set terjadi?**
 
