@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Kwenda all-in maana yake ni kuweka dau la chipsi zote ulizonazo mbele yako. Unaweza kushinda tu kiasi ulichokilingana kutoka kwa kila mpinzani (main pot); chipsi za ziada za wale wenye stack kubwa hutengeneza side pot ambayo huwezi kuigusa. All-in ya chini ya raise kamili HAIfungui tena dau kwa wale walioshacheza.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-08-10",
+  updated: "2026-09-21",
   masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -251,7 +251,7 @@ A. Table stakes maana yake unaweza kuweka dau tu la chipsi zilizokuwa mbele yako
 
 **Q. Kama wachezaji wawili wanaenda all-in kwa viasi tofauti, nani anaonyesha kwanza?**
 
-A. All-in ya mwisho iliyokuwa bet au raise ndiyo kitendo cha ukali cha mwisho, na inaonyesha kwanza. All-in inayo-call tu kwa kiasi kidogo si ya ukali — mwenye kuweka dau wa awali bado ndiye anayeonyesha kwanza. Kwenye cash, kama ilikuwa all-in iliyo-call-iwa bila kitendo zaidi, aliye-call anaweza kutupa karata zake kama akipoteza baada ya kuona mkono wa mchezaji wa all-in (kwenye tournament mikono yote iliyohusika inabaki uso juu).
+A. All-in ya mwisho iliyokuwa bet au raise ndiyo kitendo cha ukali cha mwisho, na inaonyesha kwanza. All-in inayo-call tu kwa kiasi kidogo si ya ukali — kwenye cash, mwenye kuweka dau wa awali bado ndiye anayeonyesha kwanza. ==r:Kwenye tournament hakuna mpangilio wowote wa nani anaonyesha kwanza== — mara tu dau la all-in linapokwisha, mikono yote iliyohusika inafunuliwa kwa wakati mmoja (TDA Rule 16). Kwenye cash, kama ilikuwa all-in iliyo-call-iwa bila kitendo zaidi, aliye-call anaweza kutupa karata zake kama akipoteza baada ya kuona mkono wa mchezaji wa all-in (kwenye tournament mikono yote iliyohusika inabaki uso juu).
 
 **Q. Je, sheria za all-in ni tofauti kwenye tournament dhidi ya michezo ya cash?**
 

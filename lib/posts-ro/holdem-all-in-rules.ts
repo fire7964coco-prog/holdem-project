@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Să dai all-in înseamnă să pariezi toate jetoanele din fața ta. De la fiecare adversar poți câștiga doar cât ai egalat (potul principal); jetoanele în plus ale stack-urilor mari formează un side pot pe care nu-l poți lua. Un all-in mai mic decât o mărire completă NU redeschide pariurile pentru cine a acționat deja.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-08-10",
+  updated: "2026-09-21",
   masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -256,7 +256,7 @@ A. Table stakes înseamnă că poți paria doar jetoanele pe care le aveai în f
 
 **Q. Dacă doi jucători dau all-in pentru sume diferite, cine arată primul?**
 
-A. Ultimul all-in care a fost un pariu sau o mărire contează ca ultima acțiune agresivă și arată primul. Un all-in care doar plătește (call) pentru mai puțin nu este agresiv — atunci arată primul cel care a pariat inițial. La cash game, dacă a fost un all-in plătit fără acțiune ulterioară, cel care a plătit poate arunca cărțile dacă pierde după ce a văzut mâna jucătorului all-in (în turnee toate mâinile implicate rămân cu fața în sus).
+A. Ultimul all-in care a fost un pariu sau o mărire contează ca ultima acțiune agresivă și arată primul. Un all-in care doar plătește (call) pentru mai puțin nu este agresiv — la cash game arată primul cel care a pariat inițial. ==r:La turnee nu există aici nicio ordine la showdown== — de îndată ce pariurile all-in-ului s-au încheiat, toate mâinile implicate sunt întoarse în același timp (regula TDA 16). La cash game, dacă a fost un all-in plătit fără acțiune ulterioară, cel care a plătit poate arunca cărțile dacă pierde după ce a văzut mâna jucătorului all-in (în turnee toate mâinile implicate rămân cu fața în sus).
 
 **Q. Regulile all-in diferă între turnee și cash game?**
 

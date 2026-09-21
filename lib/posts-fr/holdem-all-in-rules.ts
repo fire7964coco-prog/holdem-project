@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Faire tapis, c'est miser tous les jetons que tu as devant toi. Tu ne peux gagner de chaque adversaire que ce que tu as suivi (le pot principal) ; les jetons en trop des gros tapis forment un side pot auquel tu n'as pas droit. Un tapis inférieur à une relance complète NE rouvre PAS les enchères pour ceux qui ont déjà parlé.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-08-10",
+  updated: "2026-09-21",
   masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -256,7 +256,7 @@ A. R. Le table stakes signifie que tu ne peux miser que les jetons que tu avais 
 
 **Q. Si deux joueurs font tapis pour des montants différents, qui montre en premier ?**
 
-A. R. Le dernier tapis qui était une mise ou une relance constitue la dernière action agressive et montre en premier. Un tapis qui ne fait que suivre pour moins n'est pas agressif — c'est alors le miseur initial qui montre en premier. En cash, si c'était un tapis suivi sans autre action, celui qui a suivi peut jeter ses cartes s'il perd après avoir vu la main du joueur à tapis (en tournoi, toutes les mains impliquées restent face visible).
+A. R. Le dernier tapis qui était une mise ou une relance constitue la dernière action agressive et montre en premier. Un tapis qui ne fait que suivre pour moins n'est pas agressif — en cash, c'est alors le miseur initial qui montre en premier. ==r:En tournoi, il n'y a tout simplement pas d'ordre d'abattage ici== : dès que les enchères du tapis sont terminées, toutes les mains impliquées sont retournées en même temps (Règle 16 de la TDA). En cash, si c'était un tapis suivi sans autre action, celui qui a suivi peut jeter ses cartes s'il perd après avoir vu la main du joueur à tapis (en tournoi, toutes les mains impliquées restent face visible).
 
 **Q. Les règles du tapis sont-elles différentes en tournoi et en cash ?**
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "All-in bermaksud mempertaruhkan semua cip yang anda ada. Anda hanya boleh menang jumlah yang anda samai daripada setiap lawan (pot utama). Pertaruhan lebihan daripada stack yang lebih besar membentuk side pot yang anda tidak boleh menangi. All-in yang kurang daripada satu raise penuh TIDAK membuka semula pertaruhan bagi pemain yang sudah bertindak.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-08-10",
+  updated: "2026-09-21",
   masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "10 minit",
@@ -256,7 +256,7 @@ A. Table stakes bermaksud anda hanya boleh mempertaruhkan cip yang ada di hadapa
 
 **Q. Kalau dua pemain all-in dengan jumlah berbeza, siapa tunjuk dahulu?**
 
-A. All-in terakhir yang merupakan bet atau raise dikira sebagai tindakan agresif terakhir dan menunjukkan kad dahulu. All-in yang sekadar call dengan jumlah lebih kecil bukan tindakan agresif — pemain yang membuat bet asal tetap menunjukkan dahulu. Dalam cash game, jika ia all-in yang di-call tanpa tindakan lanjut, pemain yang call boleh membuang kad jika kalah selepas melihat hand pemain all-in (dalam tournament semua hand yang terlibat kekal terbuka).
+A. All-in terakhir yang merupakan bet atau raise dikira sebagai tindakan agresif terakhir dan menunjukkan kad dahulu. All-in yang sekadar call dengan jumlah lebih kecil bukan tindakan agresif — dalam cash game, pemain yang membuat bet asal tetap menunjukkan dahulu. ==r:Dalam tournament, di sini langsung tiada susunan siapa membuka kad dahulu== — sebaik pertaruhan all-in selesai, semua hand yang terlibat dibuka serentak (Peraturan TDA 16). Dalam cash game, jika ia all-in yang di-call tanpa tindakan lanjut, pemain yang call boleh membuang kad jika kalah selepas melihat hand pemain all-in (dalam tournament semua hand yang terlibat kekal terbuka).
 
 **Q. Adakah peraturan all-in berbeza antara tournament dan cash game?**
 

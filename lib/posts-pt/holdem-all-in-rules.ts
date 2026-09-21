@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ir de all-in é apostar todas as fichas que você tem. Você só pode ganhar de cada adversário o valor que igualou (o pote principal). O que os stacks maiores apostam além disso vira um pote paralelo (side pot) que só os jogadores que cobriram esse valor podem ganhar. Um all-in menor que um aumento completo NÃO reabre a aposta para quem já agiu.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-21",
+  masterUpdated: "2026-09-21",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "♠",
@@ -50,7 +50,7 @@ A base é a regra de **table stakes**: você só pode apostar as fichas que esta
 
 </div>
 
-==g:Depois que você está de all-in, tem garantia de ver todas as cartas comunitárias restantes.== Ninguém pode te tirar da mão com um blefe. Suas cartas seguem vivas até o river.
+==g:Depois que você vai de all-in e é pago, tem garantia de ver todas as cartas comunitárias restantes.== Ninguém pode te tirar da mão com um blefe. Suas cartas seguem vivas até o river.
 
 ---
 
@@ -60,17 +60,17 @@ Duas formas válidas:
 
 **1. Declaração verbal** — Diga "all-in" com clareza, para o dealer e os adversários ouvirem. É o jeito mais seguro. Depois que falou, está valendo.
 
-**2. Empurrar todas as fichas** — Deslize o stack inteiro para o centro em um único movimento. Empurrar fichas aos poucos pode parecer string bet, então mova tudo de uma vez.
+**2. Empurrar todas as fichas** — Deslize o stack inteiro para o centro em um único movimento. Empurrar fichas aos poucos pode parecer string bet, então mova tudo de uma vez. ==r:Só empurrar nem sempre basta: se há uma aposta à sua frente e cada ficha sua é necessária apenas para pagar, o empurrão silencioso é julgado como call, não como all-in (regra 45-A da TDA, regra 92 do regulamento de torneio da WSOP).== Em qualquer outra situação, empurrar suas últimas fichas **é** um all-in (regra 45-B da TDA).
 
 ![Showdown de all-in no Texas Hold'em — board K♠ 10♣ 7♦ 4♥ 2♣ com as fichas separadas em pote principal e pote paralelo identificados](/images/holdem-all-in-declare.webp)
 
-==r:Nunca empurre uma única ficha sem dizer nada — se houver uma aposta à sua frente, o dealer conta como call — e, se não houver aposta pendente, apenas o valor daquela ficha. Nunca o seu stack inteiro.== Sempre declare "all-in" em voz alta, ou mova o stack completo de uma vez.
+==r:Nunca empurre uma única ficha sem dizer nada — se houver uma aposta à sua frente, o dealer conta como call — e, se não houver aposta pendente, apenas o valor daquela ficha. Nunca o seu stack inteiro.== Sempre declare "all-in" em voz alta: é o único método que nunca é relido como outra coisa.
 
 ---
 
 ## Como funcionam os side pots (potes paralelos)? — Por que o jogador de all-in fica limitado
 
-O jogador de all-in só pode ganhar o valor que colocou mais o valor igualado de cada jogador que ainda está no pote. Qualquer ficha apostada além disso forma um **pote paralelo (side pot)** que pertence exclusivamente aos jogadores que o financiaram.
+O jogador de all-in só pode ganhar o valor que colocou mais o valor igualado de cada jogador que ainda está no pote. As fichas apostadas além disso vão para um **pote paralelo (side pot)** que pertence exclusivamente aos jogadores que o financiaram — mas só se dois ou mais colocarem. Se acima do teto sobrar um único jogador, não há quem dispute o pote paralelo e o excedente volta direto para ele como aposta não paga.
 
 ![Pote paralelo em all-in no Texas Hold'em — dealer separando as fichas em pote principal e pote paralelo enquanto o Jogador A fica limitado](/images/holdem-all-in-side-pot.webp)
 
@@ -132,7 +132,7 @@ Blinds de $1/$2. Quatro jogadores veem o flop.
 O que acontece com o Jogador A e com o Jogador C, que ainda não agiu?
 
 - O Jogador A já agiu (apostou $10) e agora enfrenta apenas um aumento incompleto. Como o all-in de $14 de B é **menor que um aumento completo**, a ação NÃO reabre para o Jogador A. ==A só pode pagar ou foldar — não pode aumentar de novo.==
-- O Jogador C ainda não agiu — **C continua podendo aumentar normalmente**.
+- O Jogador C ainda não agiu — **C continua podendo aumentar**. O limite de reabertura nunca alcança quem ainda não agiu. Repare no tamanho, porém: **se C aumentar**, o mínimo é um **total** igual ao all-in de B mais a última aposta completa — $14 + $10 = **$24**, e não os $20 que teriam sido um aumento completo sobre A (regra 176 das WSOP Live Action Rules). C ainda pode ir de all-in por menos: o mínimo nunca prende quem vai de all-in (regra 174 das Live Action Rules).
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -183,7 +183,7 @@ O mínimo de aumento é sempre a *última aposta ou aumento completo válido* �
 | Um all-in ≥ aumento completo | ✅ Sim — todos podem aumentar de novo |
 | Vários all-ins curtos, soma < aumento completo | ❌ Não |
 | Vários all-ins curtos, soma ≥ aumento completo | ✅ Sim — para cada jogador que agora tem à frente pelo menos um aumento completo acima da própria última ação |
-| Jogador que ainda NÃO agiu | ✅ Sempre pode aumentar (em qualquer caso) |
+| Jogador que ainda NÃO agiu | ✅ O limite de reabertura nunca se aplica a ele — pode aumentar até onde as próprias fichas permitirem (e, num jogo de limit, o teto de aumentos da casa — regra 48 da TDA) |
 
 </div>
 
@@ -193,7 +193,7 @@ O mínimo de aumento é sempre a *última aposta ou aumento completo válido* �
 
 Quando todas as apostas terminam e há um jogador de all-in, o showdown funciona assim:
 
-1. **As cartas são viradas para cima.** Em torneios, todas as mãos envolvidas no all-in costumam ser abertas assim que as apostas terminam. Em cash games depende de quando a aposta terminou: se terminou antes do river, quem foi de all-in vira primeiro (regra 149 das WSOP Live Action Rules); se houve aposta no river, vale a [regra padrão do último agressor no showdown](/pt/blog/holdem-showdown-rules).
+1. **As cartas são viradas para cima.** Em torneios, todas as mãos envolvidas no all-in costumam ser abertas assim que as apostas terminam. Em cash games de no-limit depende de quando a aposta terminou: se terminou antes do river, quem foi de all-in vira primeiro (regra 149 das WSOP Live Action Rules); se houve aposta no river, vale a [regra padrão do último agressor no showdown](/pt/blog/holdem-showdown-rules).
 2. **Os potes paralelos são pagos primeiro.** O dealer resolve o pote paralelo criado por último e vai voltando até o pote principal.
 3. **As cartas falam.** A melhor mão ganha cada pote pelo qual concorre — independentemente do que os jogadores digam que têm.
 4. **Pode haver mais de um vencedor.** O Jogador A pode ganhar o pote principal e o Jogador B, o pote paralelo. Nenhum dos dois leva tudo só porque ganhou "o seu" pote.
@@ -210,7 +210,7 @@ Quando todas as apostas terminam e há um jogador de all-in, o showdown funciona
 Não pode. Uma vez que o jogador de all-in está limitado, qualquer ficha extra apostada pelos stacks maiores pertence a um pote sobre o qual ele não tem nenhum direito.
 
 ### Erro 2: não conhecer a regra de reabertura do re-raise
-Um all-in parcial não dá segunda chance de aumentar a quem **já agiu** naquela rodada — quem ainda não agiu pode aumentar normalmente. Saber isso de cor encerra a discussão antes de ela começar.
+Um all-in parcial não dá segunda chance de aumentar a quem **já agiu** naquela rodada — a não ser que vários all-ins curtos se somem a ponto de deixar algum deles diante de pelo menos um aumento completo quando a ação volta. Quem ainda não agiu pode aumentar, pelo total mínimo indicado acima. Saber isso de cor encerra a discussão antes de ela começar.
 
 ### Erro 3: adicionar fichas do bolso no meio da mão
 Table stakes. O que está na mesa é tudo o que você pode apostar. Se você está de all-in por $80 e o pote é de $400, você só pode ganhar $80 de cada pagador.
@@ -240,11 +240,11 @@ A. Você leva o pote principal (o que igualou de cada jogador) e o outro jogador
 
 **Q. Ir de all-in obriga a mostrar a mão?**
 
-A. Em torneios, sim — quando as apostas terminam com um all-in, todas as mãos envolvidas costumam ser abertas. Em cash games ao vivo, valem as regras normais de showdown — o último agressor mostra primeiro, e os demais mostram ou dão muck —, a não ser que a aposta tenha terminado antes do river: nesse caso quem foi de all-in vira primeiro (regra 149 das WSOP Live Action Rules).
+A. Em torneios, sim — quando as apostas terminam com um all-in, todas as mãos envolvidas costumam ser abertas. Em cash games ao vivo, valem as regras normais de showdown — o último agressor mostra primeiro, e os demais mostram ou dão muck —, a não ser que seja um jogo de no-limit e a aposta tenha terminado antes do river: nesse caso quem foi de all-in vira primeiro (regra 149 das WSOP Live Action Rules).
 
 **Q. Pode fazer run it twice num all-in de poker?**
 
-A. O run it twice (distribuir as cartas comunitárias restantes duas vezes e dividir o pote) é permitido em muitos cash games se os dois jogadores concordarem após o all-in. Em torneios, geralmente não é permitido. O acordo precisa acontecer antes de as cartas comunitárias restantes serem abertas.
+A. O run it twice (distribuir as cartas comunitárias restantes duas vezes e dividir o pote) é permitido em muitos cash games se todos os que seguem no pote concordarem após o all-in, e não apenas dois deles (regra 210 das WSOP Live Action Rules). Em torneios, geralmente não é permitido. O acordo precisa acontecer antes de as cartas comunitárias restantes serem abertas.
 
 **Q. O que é exatamente a regra de "table stakes"?**
 
@@ -252,11 +252,11 @@ A. Table stakes significa que você só pode apostar as fichas que estavam na su
 
 **Q. Se dois jogadores vão de all-in por valores diferentes, quem mostra primeiro?**
 
-A. O último all-in que foi uma aposta ou aumento é a última ação agressiva e mostra primeiro. Um all-in que apenas paga (call) por menos não é agressivo — em torneio, quem apostou originalmente mostra primeiro; no cash, as WSOP Live Action Rules vão por pote: quem está no pote paralelo mostra antes do jogador que está all-in só pelo pote principal (regra 149). Em cash games, se foi um all-in pago sem mais ação, quem pagou pode dar muck se perder depois de ver a mão do jogador de all-in (em torneios, todas as mãos envolvidas ficam abertas).
+A. O último all-in que foi uma aposta ou aumento é a última ação agressiva e mostra primeiro. Um all-in que apenas paga (call) por menos não é agressivo — no cash, quem apostou originalmente mostra primeiro, e daí em diante as WSOP Live Action Rules vão por pote: quem está no pote paralelo mostra antes do jogador que está all-in só pelo pote principal (regra 149). ==r:Em torneio não existe ordem de mostrar aqui== — assim que a aposta do all-in termina, todas as mãos envolvidas são viradas ao mesmo tempo (Regra 16 da TDA); a regra que fixa uma ordem, a 17 da TDA, só cobre showdowns sem all-in. Em cash games, se foi um all-in pago sem mais ação, quem pagou pode dar muck se perder depois de ver a mão do jogador de all-in (em torneios, todas as mãos envolvidas ficam abertas).
 
 **Q. As regras de all-in mudam entre torneio e cash game?**
 
-A. As regras centrais são as mesmas, mas há duas diferenças práticas. Primeiro, em torneios todas as mãos envolvidas num all-in são abertas assim que as apostas terminam (Regra 16 da TDA) — não dá para dar muck antes do showdown. Em cash games, vale a ordem normal de showdown — a não ser que a aposta tenha terminado antes do river, quando quem foi de all-in vira primeiro (regra 149 das Live Action Rules) — e os jogadores podem dar muck. Segundo, o run it twice é comum em cash games (se os dois concordarem), mas geralmente não é permitido em torneios.
+A. As regras centrais são as mesmas, mas há duas diferenças práticas. Primeiro, em torneios todas as mãos envolvidas num all-in são abertas assim que as apostas terminam (Regra 16 da TDA) — não dá para dar muck antes do showdown. Em cash games, vale a ordem normal de showdown — a não ser que seja um jogo de no-limit e a aposta tenha terminado antes do river, quando quem foi de all-in vira primeiro (regra 149 das Live Action Rules) — e os jogadores podem dar muck. Segundo, o run it twice é comum em cash games (se todos os que seguem no pote concordarem), mas geralmente não é permitido em torneios.
 
 ---
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ir all-in es apostar todas las fichas que tienes delante. Solo puedes ganar de cada rival lo que hayas igualado (el bote principal); las fichas extra de los stacks más grandes forman un side pot que solo pueden ganar los jugadores que las cubrieron. Un all-in menor que una subida completa NO reabre la apuesta para quienes ya actuaron.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-21",
+  masterUpdated: "2026-09-21",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "♠",
@@ -49,7 +49,7 @@ La base es la regla de **table stakes**: solo puedes apostar las fichas que ten�
 
 </div>
 
-==g:Una vez estás all-in, tienes garantizado ver todas las cartas comunitarias que quedan.== Nadie puede echarte de la mano con un farol. Tus cartas siguen vivas hasta el river.
+==g:Una vez estás all-in y te pagan, tienes garantizado ver todas las cartas comunitarias que quedan.== Nadie puede echarte de la mano con un farol. Tus cartas siguen vivas hasta el river.
 
 ---
 
@@ -59,17 +59,17 @@ Hay dos formas válidas:
 
 **1. Declaración verbal** — Di "all-in" alto y claro, que lo oigan el dealer y los rivales. Es el método más seguro. En cuanto lo dices, estás comprometido.
 
-**2. Empujar todas las fichas** — Desliza todo tu stack hacia el centro en un solo movimiento limpio. Mover las fichas en varias tandas puede parecer un string bet, así que muévelo todo de una vez.
+**2. Empujar todas las fichas** — Desliza todo tu stack hacia el centro en un solo movimiento limpio. Mover las fichas en varias tandas puede parecer un string bet, así que muévelo todo de una vez. ==r:Empujar solo no siempre basta: si tienes una apuesta por delante y necesitas hasta la última ficha para igualarla, empujar sin decir nada se juzga como call, no como all-in (regla 45-A de la TDA, regla 92 del reglamento de torneo de las WSOP).== En cualquier otro caso, empujar tus últimas fichas **sí** es un all-in (regla 45-B de la TDA).
 
 ![Showdown de un all-in en Texas Hold'em — una mesa con K♠ 10♣ 7♦ 4♥ 2♣ y las fichas separadas en bote principal y side pot etiquetados](/images/holdem-all-in-declare.webp)
 
-==r:Nunca empujes una sola ficha sobredimensionada sin decir nada — si hay una apuesta por delante, el dealer la cuenta como un call (y si no hay apuesta pendiente, solo por el valor de esa ficha), nunca como tu stack completo.== Declara siempre "all-in" en voz alta o mueve todo el stack de una vez.
+==r:Nunca empujes una sola ficha sobredimensionada sin decir nada — si hay una apuesta por delante, el dealer la cuenta como un call (y si no hay apuesta pendiente, solo por el valor de esa ficha), nunca como tu stack completo.== Declara siempre "all-in" en voz alta: es el único método que nunca se relee como otra cosa.
 
 ---
 
 ## ¿Cómo funcionan los side pots en el póker? (Por qué el jugador all-in queda capado)
 
-El jugador all-in solo puede ganar lo que puso más la cantidad igualada de cada rival que sigue en el bote. Todas las fichas apostadas por encima forman un **side pot** que pertenece en exclusiva a los jugadores que lo alimentaron.
+El jugador all-in solo puede ganar lo que puso más la cantidad igualada de cada rival que sigue en el bote. Las fichas apostadas por encima van a un **side pot** que pertenece en exclusiva a los jugadores que lo alimentaron — pero solo si las ponen dos o más. Si por encima del tope queda un único jugador, no hay nadie que le dispute ese side pot y el exceso vuelve directamente a su stack como apuesta no igualada.
 
 ![Side pot tras un all-in en Texas Hold'em — el dealer separa las fichas en bote principal y side pot mientras el Jugador A queda capado](/images/holdem-all-in-side-pot.webp)
 
@@ -131,7 +131,7 @@ Ciegas $1/$2. Cuatro jugadores ven el flop.
 ¿Qué pasa con el Jugador A y con el Jugador C, que aún no ha actuado?
 
 - El Jugador A ya actuó (apostó $10) y ahora se enfrenta solo a una subida incompleta. Como el all-in de B por $14 es **menos que una subida completa**, la acción NO se reabre para el Jugador A. ==A solo puede pagar o retirarse — no puede resubir.==
-- El Jugador C todavía no ha actuado — **el Jugador C sí puede subir con normalidad**.
+- El Jugador C todavía no ha actuado — **el Jugador C sí puede subir**. El límite de reapertura nunca afecta a quien aún no ha actuado. Ojo al tamaño, eso sí: **si C sube**, el mínimo es un **total** igual al all-in de B más la última apuesta completa — $14 + $10 = **$24**, no los $20 que habrían sido una subida completa sobre A (regla 176 de las WSOP Live Action Rules). C igual puede irse all-in por menos: el mínimo nunca obliga a quien va all-in (regla 174 de las Live Action Rules).
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -182,7 +182,7 @@ El umbral de subida mínima es siempre la *última apuesta o subida completa vá
 | Un solo all-in ≥ subida completa | ✅ Sí — todos pueden resubir |
 | Varios all-ins cortos, suma < subida completa | ❌ No |
 | Varios all-ins cortos, suma ≥ subida completa | ✅ Sí — para cada jugador que ahora tenga delante al menos una subida completa por encima de su última acción |
-| Jugador que AÚN no ha actuado | ✅ Siempre puede subir (pase lo que pase) |
+| Jugador que AÚN no ha actuado | ✅ El límite de reapertura nunca le afecta: puede subir hasta donde le alcancen sus propias fichas (y, en una partida con límite, el tope de subidas de la casa — regla 48 de la TDA) |
 
 </div>
 
@@ -192,7 +192,7 @@ El umbral de subida mínima es siempre la *última apuesta o subida completa vá
 
 Cuando la apuesta se cierra y hay un jugador all-in, esto es lo que ocurre en el showdown:
 
-1. **Las cartas se ponen boca arriba.** En torneos, todas las manos implicadas en el all-in se muestran en cuanto termina la apuesta. En cash depende de cuándo terminó la apuesta: si terminó antes del river, el que fue all-in da la vuelta primero (regla 149 de las WSOP Live Action Rules); si se apostó en el river, aplica la [regla del último agresor en el showdown](/es/blog/holdem-showdown-rules).
+1. **Las cartas se ponen boca arriba.** En torneos, todas las manos implicadas en el all-in se muestran en cuanto termina la apuesta. En cash sin límite depende de cuándo terminó la apuesta: si terminó antes del river, el que fue all-in da la vuelta primero (regla 149 de las WSOP Live Action Rules); si se apostó en el river, aplica la [regla del último agresor en el showdown](/es/blog/holdem-showdown-rules).
 2. **Los side pots se reparten primero.** El dealer resuelve primero el side pot creado más recientemente y va hacia atrás hasta el bote principal.
 3. **Hablan las cartas.** La mejor mano gana cada bote al que tiene derecho — dé igual lo que los jugadores digan que llevan.
 4. **Puede haber varios ganadores.** El Jugador A puede ganar el bote principal y el Jugador B el side pot. Ninguno se lo lleva todo solo por haber ganado "su" bote.
@@ -211,7 +211,7 @@ No puede. Una vez el jugador all-in queda capado, cualquier ficha extra apostada
 
 ### Error 2: no saberse la regla de quién puede resubir
 
-Un all-in parcial no le da una segunda oportunidad de resubir a quien **ya actuó** en esa ronda — quien todavía no ha actuado sí puede subir con normalidad. Sabértelo de memoria corta las discusiones antes de que empiecen.
+Un all-in parcial no le da una segunda oportunidad de resubir a quien **ya actuó** en esa ronda — salvo que varios all-in cortos se acumulen hasta dejar a alguno frente a una subida completa cuando la acción vuelve a él. Quien todavía no ha actuado sí puede subir, por el total mínimo indicado arriba. Sabértelo de memoria corta las discusiones antes de que empiecen.
 
 ### Error 3: añadir fichas del bolsillo a mitad de mano
 
@@ -244,11 +244,11 @@ A. Te llevas el bote principal (lo que igualaste de cada jugador) y el otro juga
 
 **Q. ¿Ir all-in te obliga a enseñar la mano?**
 
-A. En torneos, sí — en cuanto se cierra la apuesta con un all-in, todas las manos implicadas se ponen boca arriba. En cash en vivo aplican las reglas normales del showdown — el último agresor enseña primero y el resto enseña o tira sus cartas —, salvo que la apuesta haya terminado antes del river: entonces el que fue all-in da la vuelta primero (regla 149 de las WSOP Live Action Rules).
+A. En torneos, sí — en cuanto se cierra la apuesta con un all-in, todas las manos implicadas se ponen boca arriba. En cash en vivo aplican las reglas normales del showdown — el último agresor enseña primero y el resto enseña o tira sus cartas —, salvo que sea una partida sin límite y la apuesta haya terminado antes del river: entonces el que fue all-in da la vuelta primero (regla 149 de las WSOP Live Action Rules).
 
 **Q. ¿Se puede hacer "run it twice" en un all-in de póker?**
 
-A. Repartir dos veces las cartas comunitarias restantes y dividir el bote (run it twice) se permite en muchas partidas de cash si ambos jugadores están de acuerdo tras el all-in. En torneos, por lo general, no se permite. Hay que acordarlo antes de repartir las cartas que faltan.
+A. Repartir dos veces las cartas comunitarias restantes y dividir el bote (run it twice) se permite en muchas partidas de cash si están de acuerdo todos los que siguen en el bote tras el all-in, no solo dos de ellos (regla 210 de las WSOP Live Action Rules). En torneos, por lo general, no se permite. Hay que acordarlo antes de repartir las cartas que faltan.
 
 **Q. ¿En qué consiste exactamente la regla de "table stakes"?**
 
@@ -256,11 +256,11 @@ A. Table stakes significa que solo puedes apostar las fichas que tenías delante
 
 **Q. Si dos jugadores van all-in por cantidades distintas, ¿quién enseña primero?**
 
-A. El último all-in que fue una **apuesta o subida** es la última acción agresiva y enseña primero. Un all-in que solo **iguala** (por menos) no es agresivo — en torneo enseña primero el apostador original; en cash, las WSOP Live Action Rules van por botes: quien está en el side pot enseña antes que el jugador que solo está all-in por el bote principal (regla 149). En cash, si fue un all-in pagado sin más acción, quien pagó puede tirar sus cartas si pierde tras ver la mano del jugador all-in (en torneos todas las manos implicadas quedan boca arriba).
+A. El último all-in que fue una **apuesta o subida** es la última acción agresiva y enseña primero. Un all-in que solo **iguala** (por menos) no es agresivo — en cash enseña primero el apostador original, y a partir de ahí las WSOP Live Action Rules van por botes: quien está en el side pot enseña antes que el jugador que solo está all-in por el bote principal (regla 149). ==r:En torneo aquí no hay ningún orden de mostrar== — en cuanto se cierra la apuesta del all-in, todas las manos implicadas se ponen boca arriba a la vez (Regla 16 de la TDA); la regla que fija un orden, la 17 de la TDA, solo cubre los showdowns sin all-in. En cash, si fue un all-in pagado sin más acción, quien pagó puede tirar sus cartas si pierde tras ver la mano del jugador all-in (en torneos todas las manos implicadas quedan boca arriba).
 
 **Q. ¿Las reglas del all-in cambian entre torneos y cash?**
 
-A. El núcleo es el mismo, con dos diferencias prácticas. Primera: en torneos, todas las manos implicadas en un all-in se ponen boca arriba en cuanto se cierra la apuesta (Regla 16 de la TDA) — no puedes tirar tus cartas antes del showdown. En cash aplica el orden normal del showdown — salvo que la apuesta haya terminado antes del river, cuando el que fue all-in da la vuelta primero (regla 149 de las Live Action Rules) — y sí se puede. Segunda: el run it twice es habitual en cash (si ambos jugadores aceptan), pero en torneos generalmente no se permite.
+A. El núcleo es el mismo, con dos diferencias prácticas. Primera: en torneos, todas las manos implicadas en un all-in se ponen boca arriba en cuanto se cierra la apuesta (Regla 16 de la TDA) — no puedes tirar tus cartas antes del showdown. En cash aplica el orden normal del showdown — salvo que sea una partida sin límite y la apuesta haya terminado antes del river, cuando el que fue all-in da la vuelta primero (regla 149 de las Live Action Rules) — y sí se puede. Segunda: el run it twice es habitual en cash (si aceptan todos los que siguen en el bote), pero en torneos generalmente no se permite.
 
 **Q. ¿Qué significa "ir all-in"? ¿Qué es un all-in?**
 

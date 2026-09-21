@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ang all-in ay pagtaya ng lahat ng chips mo. Ang kaya mo lang panalunan ay ang na-match mo sa bawat kalaban (ang main pot). Ang sobrang taya ng mas malalaking stack ay bumubuo ng side pot na hindi mo makukuha. Ang all-in na kulang sa full raise ay HINDI nagbubukas ulit ng betting para sa mga nakakilos na.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-08-10",
+  updated: "2026-09-21",
   masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -251,7 +251,7 @@ A. Ang table stakes ay ibig sabihin ang kaya mo lang itaya ay ang chips na nasa 
 
 **Q. Kung dalawang player ang nag-all-in sa magkaibang halaga, sino ang mauuna magpakita?**
 
-A. Ang huling all-in na isang bet o raise ang huling aggressive action at siyang unang magpapakita. Ang all-in na basta lang nag-call ng mas mababang halaga ay hindi aggressive — ang orihinal na nag-bet pa rin ang unang magpapakita. Sa cash game, kung ito ay called all-in na walang karagdagang aksyon, puwedeng mag-muck ang nag-call kung matalo siya pagkatapos makita ang hand ng all-in player (sa tournament nananatiling nakaharap ang lahat ng sangkot na hand).
+A. Ang huling all-in na isang bet o raise ang huling aggressive action at siyang unang magpapakita. Ang all-in na basta lang nag-call ng mas mababang halaga ay hindi aggressive — sa cash game, ang orihinal na nag-bet pa rin ang unang magpapakita. ==r:Sa tournament, wala talagang pagkakasunod-sunod ng pagpapakita dito== — pagkatapos ng betting sa all-in, sabay-sabay na binubuksan ang lahat ng hand na sangkot (TDA Rule 16). Sa cash game, kung ito ay called all-in na walang karagdagang aksyon, puwedeng mag-muck ang nag-call kung matalo siya pagkatapos makita ang hand ng all-in player (sa tournament nananatiling nakaharap ang lahat ng sangkot na hand).
 
 **Q. Iba ba ang all-in rules sa tournament kumpara sa cash game?**
 

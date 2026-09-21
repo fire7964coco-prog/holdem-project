@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "All-in nghĩa là cược toàn bộ chip bạn đang có. Bạn chỉ thắng được từ mỗi đối thủ đúng phần mình đã theo kịp (pot chính). Phần cược dư của những stack lớn hơn tạo thành pot phụ (side pot) mà bạn không được đụng tới. Một cú all-in nhỏ hơn một nước tố đủ mức KHÔNG mở lại vòng cược cho những người đã hành động.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-08-10",
+  updated: "2026-09-21",
   masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "10 phút",
@@ -256,7 +256,7 @@ A. Table stakes nghĩa là bạn chỉ được cược số chip có trước m
 
 **Q. Hai người all-in với số chip khác nhau, ai lật bài trước?**
 
-A. Cú all-in sau cùng mà là một nước cược hoặc tố mới chính là hành động tấn công cuối và lật trước. Một cú all-in chỉ là theo (call) với số ít hơn thì không phải hành động tấn công — người cược ban đầu vẫn lật trước. Trong cash game, nếu đó là cú all-in được theo mà không còn hành động nào nữa, người theo có thể úp bài bỏ nếu thua sau khi xem bài của người all-in (trong giải đấu, mọi tay bài liên quan đều phải lật ngửa).
+A. Cú all-in sau cùng mà là một nước cược hoặc tố mới chính là hành động tấn công cuối và lật trước. Một cú all-in chỉ là theo (call) với số ít hơn thì không phải hành động tấn công — ở cash game, người cược ban đầu vẫn lật trước. ==r:Còn ở giải đấu thì không hề có thứ tự lật trước== — ngay khi vòng cược của cú all-in kết thúc, mọi tay bài liên quan đều được lật ngửa cùng lúc (Luật 16 của TDA). Trong cash game, nếu đó là cú all-in được theo mà không còn hành động nào nữa, người theo có thể úp bài bỏ nếu thua sau khi xem bài của người all-in (trong giải đấu, mọi tay bài liên quan đều phải lật ngửa).
 
 **Q. Luật all-in ở giải đấu và cash game có khác nhau không?**
 

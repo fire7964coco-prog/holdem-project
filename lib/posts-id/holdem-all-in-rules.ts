@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "All-in artinya mempertaruhkan seluruh chip yang Anda punya. Anda hanya bisa memenangkan jumlah yang Anda samakan dari tiap lawan (pot utama). Taruhan ekstra dari stack yang lebih besar membentuk side pot yang hanya bisa dimenangkan pemain yang menyamai taruhan itu. All-in yang kurang dari satu raise penuh TIDAK membuka kembali taruhan bagi pemain yang sudah beraksi.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-21",
+  masterUpdated: "2026-09-21",
   keepImagesInBody: true,
   readTime: "10 menit",
   emoji: "♠",
@@ -49,7 +49,7 @@ Dasarnya adalah aturan **table stakes**: Anda hanya boleh mempertaruhkan chip ya
 
 </div>
 
-==g:Begitu Anda all-in, Anda dijamin melihat semua kartu bersama yang tersisa.== Tidak ada yang bisa menggertak Anda keluar dari hand. Kartu Anda tetap hidup sampai river.
+==g:Begitu Anda all-in dan di-call, Anda dijamin melihat semua kartu bersama yang tersisa.== Tidak ada yang bisa menggertak Anda keluar dari hand. Kartu Anda tetap hidup sampai river.
 
 ---
 
@@ -59,17 +59,17 @@ Ada dua cara yang sah:
 
 **1. Deklarasi verbal** — Ucapkan "all-in" dengan jelas sampai dealer dan lawan mendengarnya. Ini cara paling aman. Begitu Anda mengucapkannya, Anda terikat.
 
-**2. Dorong semua chip ke depan** — Geser seluruh stack Anda ke tengah dalam satu gerakan bersih. Mendorong chip sebagian-sebagian bisa terlihat seperti string bet, jadi pindahkan semuanya sekaligus.
+**2. Dorong semua chip ke depan** — Geser seluruh stack Anda ke tengah dalam satu gerakan bersih. Mendorong chip sebagian-sebagian bisa terlihat seperti string bet, jadi pindahkan semuanya sekaligus. ==r:Mendorong saja tidak selalu cukup: kalau Anda menghadapi bet dan setiap chip Anda dibutuhkan hanya untuk call, dorongan tanpa suara dinilai sebagai call, bukan all-in (TDA Rule 45-A, WSOP Tournament Rule 92).== Di luar itu, mendorong chip terakhir Anda **memang** all-in (TDA Rule 45-B).
 
 ![Showdown all-in Texas Hold'em — board K♠ 10♣ 7♦ 4♥ 2♣ dengan chip yang dipisahkan menjadi pot utama dan side pot berlabel](/images/holdem-all-in-declare.webp)
 
-==r:Jangan pernah mendorong satu chip besar ke depan tanpa mengatakan apa pun. Kalau ada taruhan di depan Anda, dealer menghitungnya sebagai call; kalau tidak ada taruhan berjalan, chip itu dihitung sebagai bet sebesar nilainya — bukan seluruh stack Anda.== Selalu ucapkan "all-in" dengan lantang, atau pindahkan seluruh stack sekaligus.
+==r:Jangan pernah mendorong satu chip besar ke depan tanpa mengatakan apa pun. Kalau ada taruhan di depan Anda, dealer menghitungnya sebagai call; kalau tidak ada taruhan berjalan, chip itu dihitung sebagai bet sebesar nilainya — bukan seluruh stack Anda.== Selalu ucapkan "all-in" dengan lantang — hanya cara ini yang tidak pernah dibaca ulang sebagai sesuatu yang lain.
 
 ---
 
 ## Bagaimana Cara Kerja Side Pot di Poker? (Kenapa Pemain All-In Dibatasi)
 
-Pemain yang all-in hanya bisa memenangkan taruhannya sendiri ditambah jumlah yang sama dari tiap pemain lain yang masih di pot. Chip apa pun yang dipertaruhkan di atas jumlah itu membentuk **side pot** yang menjadi milik eksklusif para pemain yang mengisinya.
+Pemain yang all-in hanya bisa memenangkan taruhannya sendiri ditambah jumlah yang sama dari tiap pemain lain yang masih di pot. Chip yang dipertaruhkan di atas jumlah itu masuk ke **side pot** yang menjadi milik eksklusif para pemain yang mengisinya — tapi hanya kalau yang mengisi dua orang atau lebih. Kalau di atas batas itu hanya tersisa satu pemain, tidak ada yang memperebutkan side pot dan kelebihannya langsung kembali kepadanya sebagai bet yang tidak di-call.
 
 ![Side pot all-in Texas Hold'em — dealer memisahkan chip menjadi pot utama dan side pot sementara Pemain A dibatasi](/images/holdem-all-in-side-pot.webp)
 
@@ -131,7 +131,7 @@ Blinds $1/$2. Empat pemain melihat flop.
 Apa yang terjadi pada Pemain A, dan pada Pemain C yang belum beraksi?
 
 - Pemain A sudah beraksi (bet $10) dan sekarang hanya menghadapi raise yang tidak lengkap. Karena all-in B sebesar $14 **kurang dari satu raise penuh**, aksi TIDAK terbuka kembali untuk Pemain A. ==A hanya bisa call atau fold — dia tidak boleh re-raise.==
-- Pemain C belum beraksi — **Pemain C tetap boleh raise seperti biasa**.
+- Pemain C belum beraksi — **Pemain C tetap boleh raise**. Batas pembukaan kembali tidak pernah mengenai pemain yang belum beraksi. Perhatikan ukurannya: **kalau C raise**, minimumnya adalah **total** all-in B ditambah bet penuh terakhir — $14 + $10 = **$24**, bukan $20 yang tadinya menjadi raise penuh atas A (WSOP Live Action Rule 176). C tetap boleh all-in dengan jumlah lebih kecil: batas minimum tidak pernah mengikat pemain yang all-in (Live Action Rule 174).
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -182,7 +182,7 @@ Ambang raise minimum selalu berdasarkan *bet atau raise penuh terakhir yang sah*
 | Satu all-in ≥ raise penuh | ✅ Ya — semua boleh re-raise |
 | Beberapa all-in pendek, gabungan < raise penuh | ❌ Tidak |
 | Beberapa all-in pendek, gabungan ≥ raise penuh | ✅ Ya — bagi tiap pemain yang kini menghadapi setidaknya satu raise penuh di atas aksi terakhirnya sendiri |
-| Pemain yang BELUM beraksi | ✅ Selalu boleh raise (apa pun kondisinya) |
+| Pemain yang BELUM beraksi | ✅ Batas pembukaan kembali tidak pernah berlaku untuk dia — dia tetap boleh raise sejauh chip miliknya mengizinkan (dan, di permainan limit, batas raise rumah — TDA Rule 48) |
 
 </div>
 
@@ -192,7 +192,7 @@ Ambang raise minimum selalu berdasarkan *bet atau raise penuh terakhir yang sah*
 
 Ketika semua taruhan selesai dan ada pemain yang all-in, inilah yang terjadi di showdown:
 
-1. **Kartu dibuka menghadap ke atas.** Di turnamen, semua kartu yang terlibat dalam all-in biasanya dibuka begitu taruhan selesai. Di cash game tergantung kapan taruhan berakhir: kalau berakhir sebelum river, pemain yang all-in membuka duluan (WSOP Live Action Rule 149); kalau ada taruhan di river, [aturan showdown agresor terakhir](/id/blog/holdem-showdown-rules) yang standar berlaku.
+1. **Kartu dibuka menghadap ke atas.** Di turnamen, semua kartu yang terlibat dalam all-in biasanya dibuka begitu taruhan selesai. Di cash game no-limit tergantung kapan taruhan berakhir: kalau berakhir sebelum river, pemain yang all-in membuka duluan (WSOP Live Action Rule 149); kalau ada taruhan di river, [aturan showdown agresor terakhir](/id/blog/holdem-showdown-rules) yang standar berlaku.
 2. **Side pot dibagikan lebih dulu.** Dealer menyelesaikan side pot yang paling terakhir dibuat, lalu mundur sampai ke pot utama.
 3. **Cards speak.** Kartu terbaik memenangkan setiap pot yang menjadi haknya — apa pun yang diucapkan para pemain soal kartu mereka.
 4. **Pemenangnya bisa lebih dari satu.** Pemain A bisa memenangkan pot utama. Pemain B bisa memenangkan side pot. Tidak ada yang mengambil semuanya hanya karena menang di pot "miliknya".
@@ -213,7 +213,7 @@ Tidak bisa. Begitu pemain all-in dibatasi, chip tambahan apa pun yang dipertaruh
 
 ### Kesalahan 2: Tidak tahu aturan hak re-raise
 
-All-in parsial tidak memberi kesempatan kedua untuk re-raise kepada pemain yang **sudah beraksi** di ronde itu — yang belum beraksi tetap boleh raise seperti biasa. Hafal aturan ini di luar kepala dan perdebatan selesai sebelum dimulai.
+All-in parsial tidak memberi kesempatan kedua untuk re-raise kepada pemain yang **sudah beraksi** di ronde itu — kecuali beberapa all-in pendek menumpuk sampai salah satunya menghadapi minimal satu raise penuh ketika aksi kembali kepadanya. Yang belum beraksi tetap boleh raise, dengan total minimum seperti di atas. Hafal aturan ini di luar kepala dan perdebatan selesai sebelum dimulai.
 
 ### Kesalahan 3: Menambah chip dari kantong di tengah hand
 
@@ -246,11 +246,11 @@ A. Anda mengambil pot utama (jumlah yang Anda samakan dari tiap pemain) dan pema
 
 **Q. Apakah all-in mengharuskan kartu Anda dibuka?**
 
-A. Di turnamen, ya — begitu semua taruhan selesai dengan sebuah all-in, semua kartu yang terlibat biasanya dibuka. Di cash game live, aturan showdown standar berlaku — agresor terakhir membuka duluan, lalu yang lain membuka atau muck — kecuali taruhan berakhir sebelum river: kalau begitu, pemain yang all-in membuka duluan (WSOP Live Action Rule 149).
+A. Di turnamen, ya — begitu semua taruhan selesai dengan sebuah all-in, semua kartu yang terlibat biasanya dibuka. Di cash game live, aturan showdown standar berlaku — agresor terakhir membuka duluan, lalu yang lain membuka atau muck — kecuali permainannya no-limit dan taruhan berakhir sebelum river: kalau begitu, pemain yang all-in membuka duluan (WSOP Live Action Rule 149).
 
 **Q. Boleh "run it twice" di all-in poker?**
 
-A. Run it twice (membagikan sisa kartu bersama dua kali dan membagi pot) diperbolehkan di banyak cash game kalau kedua pemain setuju setelah all-in. Di turnamen umumnya tidak diperbolehkan. Opsinya harus disepakati sebelum sisa kartu bersama dibagikan.
+A. Run it twice (membagikan sisa kartu bersama dua kali dan membagi pot) diperbolehkan di banyak cash game kalau semua yang masih di pot setuju setelah all-in, bukan cuma dua orang (WSOP Live Action Rule 210). Di turnamen umumnya tidak diperbolehkan. Opsinya harus disepakati sebelum sisa kartu bersama dibagikan.
 
 **Q. Apa sebenarnya aturan "table stakes" itu?**
 
@@ -258,11 +258,11 @@ A. Table stakes artinya Anda hanya boleh mempertaruhkan chip yang ada di depan A
 
 **Q. Kalau dua pemain all-in dengan jumlah berbeda, siapa yang membuka kartu duluan?**
 
-A. All-in terakhir yang berupa bet atau raise adalah aksi agresif terakhir dan membuka kartu duluan. All-in yang cuma call untuk jumlah lebih kecil bukan aksi agresif — di turnamen yang tetap membuka duluan adalah si pembuat bet semula, sedangkan di cash game WSOP Live Action Rules berjalan per pot: siapa pun yang ada di side pot membuka sebelum pemain yang all-in hanya untuk pot utama (Rule 149). Di cash game, kalau itu all-in yang di-call tanpa aksi lanjutan, pemain yang call boleh muck kalau kalah setelah melihat kartu si pemain all-in (di turnamen semua kartu yang terlibat tetap terbuka).
+A. All-in terakhir yang berupa bet atau raise adalah aksi agresif terakhir dan membuka kartu duluan. All-in yang cuma call untuk jumlah lebih kecil bukan aksi agresif — di cash game yang tetap membuka duluan adalah si pembuat bet semula, dan selanjutnya WSOP Live Action Rules berjalan per pot: siapa pun yang ada di side pot membuka sebelum pemain yang all-in hanya untuk pot utama (Rule 149). ==r:Di turnamen tidak ada urutan membuka sama sekali di sini== — begitu taruhan all-in selesai, semua kartu yang terlibat dibuka bersamaan (TDA Rule 16); aturan yang menetapkan urutan, TDA Rule 17, hanya mengatur showdown tanpa all-in. Di cash game, kalau itu all-in yang di-call tanpa aksi lanjutan, pemain yang call boleh muck kalau kalah setelah melihat kartu si pemain all-in (di turnamen semua kartu yang terlibat tetap terbuka).
 
 **Q. Apakah aturan all-in berbeda antara turnamen dan cash game?**
 
-A. Aturan intinya sama, tapi ada dua perbedaan praktis. Pertama, di turnamen semua kartu yang terlibat dalam all-in dibuka begitu semua taruhan selesai (TDA Rule 16) — Anda tidak boleh muck sebelum showdown. Di cash game, urutan showdown standar berlaku — kecuali taruhan berakhir sebelum river, saat pemain all-in membuka duluan (Live Action Rule 149) — dan pemain boleh muck. Kedua, run it twice umum di cash game (kalau kedua pemain setuju) tapi umumnya tidak diizinkan di turnamen.
+A. Aturan intinya sama, tapi ada dua perbedaan praktis. Pertama, di turnamen semua kartu yang terlibat dalam all-in dibuka begitu semua taruhan selesai (TDA Rule 16) — Anda tidak boleh muck sebelum showdown. Di cash game, urutan showdown standar berlaku — kecuali permainannya no-limit dan taruhan berakhir sebelum river, saat pemain all-in membuka duluan (Live Action Rule 149) — dan pemain boleh muck. Kedua, run it twice umum di cash game (kalau semua yang masih di pot setuju) tapi umumnya tidak diizinkan di turnamen.
 
 ---
 

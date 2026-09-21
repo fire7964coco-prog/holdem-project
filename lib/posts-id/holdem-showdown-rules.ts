@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Saat showdown, pemain terakhir yang bet atau raise buka kartu duluan. Kalau river di-cek habis, pemain aktif pertama di kiri tombol dealer yang buka duluan. Anda boleh muck tanpa menunjukkan kartu kalau kalah, tapi pemain yang meng-call bet river boleh minta melihat hand si pembuat bet.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-21",
+  masterUpdated: "2026-09-21",
   keepImagesInBody: true,
   readTime: "10 menit",
   emoji: "🃏",
@@ -39,9 +39,9 @@ Aturannya tergantung bagaimana ronde taruhan terakhir berakhir (untuk urutan len
 
 | Aksi di street terakhir | Siapa yang buka duluan |
 |--------------------|-----------------|
-| Ada yang bet atau raise di river | ==Pemain terakhir yang bet atau raise== buka duluan |
+| Ada yang bet atau raise di river | ==Pemain terakhir yang bet atau raise== buka duluan — kecuali itu all-in di turnamen (lihat di bawah) |
 | Semua orang cek di river | Pemain aktif pertama di kiri tombol dealer buka duluan |
-| All-in di street sebelumnya (tidak ada taruhan di river) | Turnamen: semua hand dibuka tanpa ditunda begitu seluruh aksi taruhan selesai (TDA Rule 16). Cash game: pemain yang all-in membuka duluan — kalau ada side pot, pemain side pot membuka lebih dulu (Live Action Rule 149) |
+| All-in di street sebelumnya (tidak ada taruhan di river) | Turnamen: semua hand dibuka tanpa ditunda begitu seluruh aksi taruhan selesai (TDA Rule 16). Cash game: kalau ada side pot, pemain side pot membuka lebih dulu; dan di permainan no-limit, pemain yang all-in membuka duluan (Live Action Rule 149) |
 
 </div>
 
@@ -57,11 +57,11 @@ Boleh — **kalau Anda kalah**.
 
 Begitu agresor terakhir membuka hand-nya, pemain lain bisa memilih:
 - **Buka hand** kalau merasa menang
-- **Muck menghadap ke bawah** kalau sudah jelas kalah — tidak perlu memperlihatkan kartu Anda. Ini hanya berlaku selama tidak ada yang all-in: di turnamen, begitu seorang pemain all-in, TDA Rule 16 mewajibkan semua hand di pot itu dibuka dan tidak seorang pun boleh muck (cash game mengikuti house rule masing-masing, dan kebanyakan cardroom membolehkan pemain yang call untuk muck)
+- **Muck menghadap ke bawah** kalau sudah jelas kalah — tidak perlu memperlihatkan kartu Anda. Ini hanya berlaku selama tidak ada yang all-in: di turnamen, begitu seorang pemain all-in **dan seluruh aksi taruhan pemain lain selesai**, TDA Rule 16 mewajibkan semua hand di pot itu dibuka dan tidak seorang pun boleh muck. Selama pemain lain masih punya chip dan bisa bertaruh, semuanya tetap tertutup (cash game mengikuti house rule masing-masing, dan kebanyakan cardroom membolehkan pemain yang call untuk muck)
 
-==r:Tapi ada satu pengecualian penting:== kalau bet river Anda di-call, pemain yang call sudah membayar harga penuh untuk melihat hand Anda. Aturan **"I want to see that hand"** inilah yang memungkinkan ia meminta dealer membuka hand yang sudah di-muck. Di turnamen, ==TDA Rule 18== membatasinya ketat: siapa pun yang di showdown sudah tidak memegang kartu, atau sudah muck tertutup, kehilangan hak untuk memintanya. Hak yang tak bisa diganggu gugat hanya milik pemain yang meng-call bet river dan membuka atau masih memegang kartunya — dan hanya atas hand ==agresor terakhir==, yaitu hand yang ia bayar untuk dilihat. Sisanya adalah kewenangan direktur turnamen; di cash game banyak cardroom lebih longgar. (Jangan tertukar dengan "show one, show all", yang artinya kalau Anda sukarela memperlihatkan kartu ke satu pemain, semua orang di meja berhak melihatnya.)
+==r:Tapi ada satu pengecualian penting:== kalau bet river Anda di-call, pemain yang call sudah membayar harga penuh untuk melihat hand Anda. Aturan **"I want to see that hand"** inilah yang memungkinkan ia meminta dealer membuka hand yang sudah di-muck. Di turnamen, ==TDA Rule 18== membatasinya ketat: siapa pun yang di showdown sudah tidak memegang kartu, atau sudah muck tertutup, kehilangan hak untuk memintanya. Hak yang tak bisa diganggu gugat hanya milik pemain yang meng-call bet river dan membuka atau masih memegang kartunya — dan hanya atas hand ==agresor terakhir==, yaitu hand yang ia bayar untuk dilihat. Sisanya adalah kewenangan direktur turnamen. Cash game mengikuti house rule, dan itu tidak otomatis lebih longgar: menurut WSOP Live Action Rules, permintaan melihat hand yang belum terbuka menuntut adanya dugaan kolusi **dan** kehadiran floor person (==Live Action Rule 147==). (Jangan tertukar dengan "show one, show all", yang artinya kalau Anda sukarela memperlihatkan kartu ke satu pemain, semua orang di meja berhak melihatnya.)
 
-Aturan praktisnya: ==sebagai agresor terakhir Andalah yang membuka kartu — termasuk gertakan yang di-call.== Muck tertutup itu pilihan pemain yang call, setelah ia melihat hand si pembuat bet. Kalau Anda yang bet lalu buru-buru muck, Anda rugi dua kali: pemain yang call tetap boleh meminta melihat hand Anda, dan karena cards speak, banyak pot melayang gara-gara pemain yang ace-high-nya sebenarnya unggul malah ikut muck.
+Aturan praktisnya: ==sebagai agresor terakhir Andalah yang membuka kartu — termasuk gertakan yang di-call.== Muck tertutup itu pilihan pemain yang call, setelah ia melihat hand si pembuat bet. Kalau Anda yang bet lalu buru-buru muck, Anda rugi dua kali: di turnamen, pemain yang call dan sudah membayar untuk melihatnya tetap boleh meminta hand Anda (==TDA Rule 18==) — di cash game WSOP ia tidak boleh, kecuali ada dugaan kolusi dan floor person hadir (Live Action Rule 147) — dan karena cards speak, banyak pot melayang gara-gara pemain yang ace-high-nya sebenarnya unggul malah ikut muck.
 
 ---
 
@@ -77,14 +77,14 @@ Contoh: Button, small blind, dan big blind sampai ke river. SB cek, BB cek, Butt
 
 ## Aturan Showdown All-In — Apakah Pemain yang All-In Buka Duluan?
 
-Di **turnamen**, ketika seorang pemain all-in dan tidak ada taruhan lagi yang mungkin, sisa kartu dibagikan dengan **semua hand terbuka menghadap ke atas** (==TDA Rule 16==). Ini menjaga integritas permainan — tidak boleh ada pemain yang bisa muck secara strategis dalam situasi all-in. **Cash game mengikuti house rule**, dan WSOP Live Action Rules justru membaliknya: kalau taruhan berakhir sebelum river, pemain yang all-in bertanggung jawab membuka duluan, dan kalau ada side pot, pemain yang memperebutkannya membuka sebelum siapa pun yang all-in hanya untuk pot utama (==Live Action Rule 149==).
+Di **turnamen**, ketika seorang pemain all-in dan tidak ada taruhan lagi yang mungkin, sisa kartu dibagikan dengan **semua hand terbuka menghadap ke atas** (==TDA Rule 16==). Ini menjaga integritas permainan — tidak boleh ada pemain yang bisa muck secara strategis dalam situasi all-in. **Cash game mengikuti house rule**, dan WSOP Live Action Rules justru membaliknya: **di permainan no-limit**, kalau taruhan berakhir sebelum river, pemain yang all-in bertanggung jawab membuka duluan; dan di cash game mana pun, kalau ada side pot, pemain yang memperebutkannya membuka sebelum siapa pun yang all-in hanya untuk pot utama (==Live Action Rule 149==).
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Skenario all-in | Aturan showdown |
 |----------------|---------------|
-| Pemain all-in di street sebelumnya, yang lain call, tidak ada taruhan lagi | Turnamen: semua hand dibuka tanpa ditunda begitu seluruh aksi taruhan selesai (TDA Rule 16). Cash game: pemain all-in membuka duluan — kalau ada side pot, pemain side pot membuka lebih dulu (Live Action Rule 149) |
-| Bet all-in di river di-call | Pemain yang all-in buka duluan sebagai agresor terakhir — tapi di turnamen ==r:tidak ada yang boleh muck==: menurut TDA Rule 16 pemain yang call pun wajib membuka hand-nya |
+| Pemain all-in di street sebelumnya, yang lain call, tidak ada taruhan lagi | Turnamen: semua hand dibuka tanpa ditunda begitu seluruh aksi taruhan selesai (TDA Rule 16). Cash game: kalau ada side pot, pemain side pot membuka lebih dulu; dan di permainan no-limit, pemain all-in membuka duluan (Live Action Rule 149) |
+| Bet all-in di river di-call | Cash game: pemain yang all-in buka duluan sebagai agresor terakhir. Turnamen: tidak ada urutan membuka sama sekali — menurut TDA Rule 16 semua hand dibuka bersamaan dan ==r:tidak ada yang boleh muck== |
 | Beberapa all-in menciptakan beberapa side pot | Setiap pot diselesaikan terpisah; semua hand yang terlibat dibuka |
 
 </div>
@@ -143,11 +143,11 @@ Anda bet di river. Ada yang call. Anda diam menunggu dia buka. Itu terbalik. ==A
 
 ### Kesalahan 2: Muck sebelum dealer membaca hand
 
-Anda cukup yakin kalah. Anda menggeser kartu menghadap ke bawah ke arah muck. Dealer menariknya. Ternyata hand Anda pemenangnya. Hand sudah mati — pot hilang. ==Jangan pernah muck sebelum benar-benar yakin.== Biarkan dealer membaca kedua hand.
+Anda cukup yakin kalah. Anda menggeser kartu menghadap ke bawah ke arah muck. Dealer menariknya. Ternyata hand Anda pemenangnya. Menurut ==TDA Rule 14== hand mati begitu dealer mendorongnya ke muck, dan pot hampir pasti hilang — tapi panggil dulu floor sebelum menyerah: aturan turnamen WSOP membolehkan manajemen mengambil kembali hand yang masih jelas bisa dikenali, dan menyebut upaya ekstra kalau muck itu **disebabkan** kesalahan dealer atau informasi yang keliru (WSOP Tournament Rules 109 dan 110). ==Jangan pernah muck sebelum benar-benar yakin.== Biarkan dealer membaca kedua hand.
 
 ### Kesalahan 3: Menuntut melihat setiap hand yang di-call
 
-Di kebanyakan cardroom Anda boleh minta dealer membuka hand yang di-muck — tapi hanya hand yang di-call dan sampai ke showdown. Hand yang di-fold sudah mati begitu masuk muck, dan hanya hand yang masih jelas bisa dikenali yang boleh diambil kembali (WSOP Tournament Rule 109). Aturan permintaan ini ada untuk mencegah kolusi, bukan memuaskan rasa penasaran, dan menyalahgunakannya dianggap tidak sopan. Pakai seperlunya saja.
+Di kebanyakan cardroom Anda boleh minta dealer membuka hand yang di-muck. Di turnamen haknya sempit: hanya kalau Anda membuka kartu sendiri atau masih memegangnya — pemain yang muck menghadap ke bawah kehilangan hak itu sepenuhnya (==TDA Rule 18-A==). Di luar itu, yang dijamin hanya satu permintaan: hand agresor terakhir, hand yang seseorang bayar untuk dilihat. Sisanya — termasuk hand yang tidak pernah di-call, atau river tanpa bet — ditentukan direktur, dan itu bukan berarti otomatis ditolak (==TDA Rule 18-B==). Hand yang di-fold sudah mati begitu masuk muck, dan hanya hand yang masih jelas bisa dikenali yang boleh diambil kembali (WSOP Tournament Rule 109). Aturan permintaan ini ada untuk mencegah kolusi, bukan memuaskan rasa penasaran, dan menyalahgunakannya dianggap tidak sopan. Pakai seperlunya saja.
 
 ### Kesalahan 4: Tidak tahu Anda boleh buka lebih awal
 
@@ -168,7 +168,7 @@ A. Pemain terakhir yang melakukan aksi agresif (bet atau raise) di ronde taruhan
 
 **Q. Apakah Anda wajib menunjukkan kartu kalau di-call saat showdown?**
 
-A. Ya — kalau Anda pemain terakhir yang bet atau raise di river, Anda wajib buka duluan saat di-call. Kalau Anda yang call bet orang lain, Anda boleh muck menghadap ke bawah setelah melihat hand-nya kalau Anda kalah. Pengecualiannya all-in di turnamen: menurut TDA Rule 16 pemain yang call pun wajib membuka kartunya. Dan di turnamen, hak yang dijamin untuk meminta ada pada pemain yang **call bet river** — asalkan ia sudah membuka atau masih memegang kartunya — dan hanya mencakup hand agresor terakhir, hand yang ia bayar untuk dilihat (==TDA Rule 18==). Pemain yang sudah muck menghadap ke bawah tidak berhak meminta apa pun, dan permintaan lainnya ditentukan oleh tournament director.
+A. Ya — kalau Anda pemain terakhir yang bet atau raise di river, Anda wajib buka duluan saat di-call. Kalau Anda yang call bet orang lain, Anda boleh muck menghadap ke bawah setelah melihat hand-nya kalau Anda kalah. Pengecualiannya all-in di turnamen: menurut TDA Rule 16 pemain yang call pun wajib membuka kartunya. Dan di turnamen, hak yang dijamin untuk meminta ada pada pemain yang **call bet river** — asalkan ia sudah membuka atau masih memegang kartunya — dan hanya mencakup hand agresor terakhir, hand yang ia bayar untuk dilihat (==TDA Rule 18==). Pemain yang sudah muck menghadap ke bawah tidak berhak meminta apa pun, dan permintaan lainnya ditentukan oleh tournament director — yang bukan berarti otomatis ditolak (==TDA Rule 18-B==). Di cash game berlaku house rule: menurut WSOP Live Action Rules perlu dugaan kolusi dan floor person yang hadir (Rule 147).
 
 **Q. Boleh muck saat showdown tanpa menunjukkan kartu?**
 
@@ -180,7 +180,7 @@ A. Slow roll adalah sengaja menunda membuka hand pemenang yang Anda sudah tahu p
 
 **Q. Dalam situasi all-in, siapa yang buka kartu duluan?**
 
-A. Di turnamen, ketika seorang pemain all-in dan tidak ada taruhan lagi yang mungkin, semua hand yang terlibat di pot itu dibuka tanpa ditunda begitu seluruh aksi taruhan selesai — sebelum sisa kartu komunitas dibagikan (TDA Rule 16). Kalau ada side pot, side pot dibagikan lebih dulu dan pot utama sesudahnya — tapi kartu pemain yang all-in sudah terbuka jauh sebelum itu. Di cash game, WSOP Live Action Rules membuat pemain yang all-in membuka duluan, dan pemain side pot membuka sebelum siapa pun yang all-in hanya untuk pot utama (Rule 149). Selama pemain lain masih punya chip dan masih bisa bertaruh, semua kartu tetap tertutup.
+A. Di turnamen, ketika seorang pemain all-in dan tidak ada taruhan lagi yang mungkin, semua hand yang terlibat di pot itu dibuka tanpa ditunda begitu seluruh aksi taruhan selesai — sebelum sisa kartu komunitas dibagikan (TDA Rule 16). Kalau ada side pot, side pot dibagikan lebih dulu dan pot utama sesudahnya — tapi kartu pemain yang all-in sudah terbuka jauh sebelum itu. Di cash game no-limit, WSOP Live Action Rules membuat pemain yang all-in membuka duluan; di cash game mana pun, pemain side pot membuka sebelum siapa pun yang all-in hanya untuk pot utama (Rule 149). Selama pemain lain masih punya chip dan masih bisa bertaruh, semua kartu tetap tertutup.
 
 **Q. Apa arti "cards speak" dalam poker?**
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Andare all-in significa puntare tutte le fiches che hai davanti. Da ogni avversario puoi vincere solo quello che hai pareggiato (il piatto principale); le fiches in più degli stack più grandi formano un side pot che non puoi toccare. Un all-in inferiore a un rilancio completo NON riapre le puntate per chi ha già agito.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-08-10",
+  updated: "2026-09-21",
   masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -256,7 +256,7 @@ A. Table stakes significa che puoi puntare solo le fiches che avevi davanti all'
 
 **Q. Se due giocatori vanno all-in per importi diversi, chi mostra per primo?**
 
-A. L'ultimo all-in che è stato una puntata o un rilancio conta come l'ultima azione aggressiva e mostra per primo. Un all-in che si limita a chiamare per meno non è aggressivo — mostra comunque per primo chi aveva puntato inizialmente. Nei cash game, se è stato un all-in chiamato senza ulteriore azione, chi ha chiamato può gettare le carte se perde dopo aver visto la mano del giocatore all-in (nei tornei tutte le mani coinvolte restano scoperte).
+A. L'ultimo all-in che è stato una puntata o un rilancio conta come l'ultima azione aggressiva e mostra per primo. Un all-in che si limita a chiamare per meno non è aggressivo — nei cash game mostra comunque per primo chi aveva puntato inizialmente. ==r:Nei tornei qui non esiste alcun ordine dello showdown== — appena le puntate dell'all-in sono concluse, tutte le mani coinvolte vengono girate contemporaneamente (Regola 16 della TDA). Nei cash game, se è stato un all-in chiamato senza ulteriore azione, chi ha chiamato può gettare le carte se perde dopo aver visto la mano del giocatore all-in (nei tornei tutte le mani coinvolte restano scoperte).
 
 **Q. Le regole dell'all-in cambiano tra tornei e cash game?**
 

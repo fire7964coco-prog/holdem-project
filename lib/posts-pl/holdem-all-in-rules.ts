@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "All-in to postawienie wszystkich żetonów, jakie masz przed sobą. Od każdego rywala możesz wygrać tylko tyle, ile wyrównałeś (główna pula) — nadwyżka od większych stacków tworzy pulę boczną, której nie tkniesz. All-in mniejszy niż pełne przebicie NIE otwiera na nowo licytacji dla graczy, którzy już zagrali.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-08-10",
+  updated: "2026-09-21",
   masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -256,7 +256,7 @@ A. Table stakes oznacza, że możesz obstawiać tylko te żetony, które miałe�
 
 **Q. Jeśli dwaj gracze wejdą all-in za różne kwoty, kto pokazuje pierwszy?**
 
-A. Ostatni all-in, który był zakładem lub przebiciem, jest ostatnią agresywną akcją i pokazuje pierwszy. All-in, który jedynie sprawdza za mniejszą kwotę, nie jest agresją — wtedy pierwszy pokazuje ten, kto pierwotnie postawił zakład. W cashu, jeśli był to sprawdzony all-in bez dalszej akcji, sprawdzający może wyrzucić karty, jeśli przegrywa po zobaczeniu układu gracza all-in (w turniejach wszystkie zaangażowane układy zostają awersem do góry).
+A. Ostatni all-in, który był zakładem lub przebiciem, jest ostatnią agresywną akcją i pokazuje pierwszy. All-in, który jedynie sprawdza za mniejszą kwotę, nie jest agresją — w cashu pierwszy pokazuje wtedy ten, kto pierwotnie postawił zakład. ==r:W turnieju nie ma tu żadnej kolejności pokazywania== — gdy tylko licytacja all-ina się kończy, wszystkie zaangażowane układy odkrywane są jednocześnie (Reguła 16 TDA). W cashu, jeśli był to sprawdzony all-in bez dalszej akcji, sprawdzający może wyrzucić karty, jeśli przegrywa po zobaczeniu układu gracza all-in (w turniejach wszystkie zaangażowane układy zostają awersem do góry).
 
 **Q. Czy zasady all-in różnią się w turniejach i w cashu?**
 

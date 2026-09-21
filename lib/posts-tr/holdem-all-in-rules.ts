@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "All-in gitmek, önündeki tüm çipleri ortaya sürmektir. Her rakipten sadece eşlediğin kadarını kazanabilirsin (ana pot); büyük stack'lerin fazladan koyduğu çipler dokunamayacağın bir yan pot oluşturur. Tam bir yükseltmeden az olan bir all-in, zaten aksiyon almış oyuncular için bahsi YENİDEN açmaz.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-08-10",
+  updated: "2026-09-21",
   masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "10 dk",
@@ -256,7 +256,7 @@ A. Table stakes, sadece el başladığında önünde duran çiplerle bahis yapab
 
 **Q. İki oyuncu farklı miktarlarda all-in giderse önce kim gösterir?**
 
-A. Bahis ya da yükseltme olan son all-in, son agresif aksiyondur ve önce gösterir. Sadece görmek için (daha az miktara) gidilen bir all-in agresif değildir — bu durumda ilk bahsi yapan oyuncu yine önce gösterir. Cash oyunlarında, başka aksiyon olmadan görülen bir all-in ise, gören oyuncu all-in oyuncunun elini gördükten sonra kaybederse kartlarını atabilir (turnuvalarda karışan tüm eller yüzü açık kalır).
+A. Bahis ya da yükseltme olan son all-in, son agresif aksiyondur ve önce gösterir. Sadece görmek için (daha az miktara) gidilen bir all-in agresif değildir — cash oyunlarında bu durumda ilk bahsi yapan oyuncu yine önce gösterir. ==r:Turnuvada ise burada bir gösterme sırası hiç yoktur== — all-in bahisleri tamamlanır tamamlanmaz, işin içindeki bütün eller aynı anda açılır (TDA Kural 16). Cash oyunlarında, başka aksiyon olmadan görülen bir all-in ise, gören oyuncu all-in oyuncunun elini gördükten sonra kaybederse kartlarını atabilir (turnuvalarda karışan tüm eller yüzü açık kalır).
 
 **Q. All-in kuralları turnuvalarda ve cash oyunlarında farklı mı?**
 
