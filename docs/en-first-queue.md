@@ -84,8 +84,7 @@ EN 12편 정정 → 7로케일(de·es·id·ja·pt·zh·zh-hant) 전파 완료. 1
 | 무엇 | 어디서 |
 |---|---|
 | **ar 5편 · fr 5편 미전파**(사장님 지시 2026-09-11 「경화·검수 안 한 두 언어는 제외」) — `check:drift` 🔴 핵심 5 = ar. 각 언어 경화 트랙의 A 구간이 EN diff(`git log --since=2026-09-11 -- lib/posts-en/holdem-{all-in-rules,showdown-rules,game-order,betting-actions,blind-meaning}.ts`)로 받는다 | ar·fr 경화 트랙 |
-| **꼬리 15로케일(bn fa fil he hi it ms pl ro ru sw th tr uk vi) §13급 3건 미전파** — showdown-rules «올인 후 전원 페이스업» 토너먼트 한정(TDA §16 ↔ LA §149) · all-in-rules 누적 재개방 «플레이어별»(TDA §47A) · cards-speak FAQ «머크=권리 없음»(TDA §14). 판정 ⓒ(꼬리는 §13급만) 대상. 무자격 「WSOP Rule 117」도 17로케일에 남아 있다 | 꼬리 §13급 전파 회차 |
-| 딜러 렌즈 #16 — LA §149 「올인자 먼저」는 원문이 **No Limit 한정**. 사이트 전체가 NLHE라 한정어를 안 붙였다(기록만) | — |
+| **꼬리 15로케일(bn fa fil he hi it ms pl ro ru sw th tr uk vi) §13급 3건 미전파** — showdown-rules «올인 후 전원 페이스업» 토너먼트 한정(TDA §16 ↔ LA §149) · all-in-rules 누적 재개방 «플레이어별»(TDA §47A) · cards-speak FAQ «머크=권리 없음»(TDA §14). 판정 ⓒ(꼬리는 §13급만) 대상. 무자격 「WSOP Rule 117」도 17로케일에 남아 있다. 🆕 🔴 **09-21 Q12-a가 꼬리 16에 ⓐ(올인 쇼다운 동시 공개 · TDA 16)를 `holdem-all-in-rules`에만 넣었다** — 꼬리의 `holdem-showdown-rules`는 **아예 열지 않았고**(fr·it·ru 표본 3편 전부 옛 문면 「전 국면에서 올인자가 먼저」) 그래서 **«두 글이 반대로 말하는» 교차 모순이 잠재한다.** 🔴 **열 때는 all-in·showdown을 한 묶음으로**(정본 `settled-decisions` §3-M) | 꼬리 §13급 전파 회차 |
 | 라틴 렌즈 #22 — EN `holdem-tournament` H2 「…Freezeout, PKO, Satellite, Deepstack & More」에 Turbo·Mystery Bounty 미반영 — §17 「노출 붙은 제목 단독 교체 금지」라 GSC 실측 후 | GSC 확인 후 |
 | zh-hant `holdem-short-stack` 내부링크 11개(다른 로케일 10) — 이번 diff 이전부터의 차이(라틴 렌즈 발견) | zh-hant 레인 |
 

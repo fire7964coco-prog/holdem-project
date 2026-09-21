@@ -1,7 +1,7 @@
 # 다음 세션 알림장
 
 > «다음 할 일 + 미결»만 담는다. 경위 = `WORKLOG.md`(slug로 grep) · 규칙 = 정본 MD · 시한 = `docs/update-calendar.md`.
-> 마지막 갱신 **2026-09-21** · HEAD = **`ca6cc11d`+** · **미커밋 0 · 배포·라이브 확인·IndexNow 200 완료.**
+> 마지막 갱신 **2026-09-21** · HEAD = **`2ac9fe95`** · **미커밋 0 · 배포·라이브 확인·IndexNow 200 완료.**
 >
 > **최근 회차(전부 종결 — 경위는 WORKLOG, 되묻지 말 것)**
 > · **09-20 (2)** (not set) 유실 = **GA4 세션 타임아웃 재개**(결함 아님 · 조치 불요) → `docs/ga-notset-diagnosis-2026-09-20.md`
@@ -12,6 +12,8 @@
 > · **09-21 (4)** **검수장 MA 5건 처리**(`685c152a` → `4c30a66c` · 회신 **MB-072**) — MA-158·159·163 이행 완료, MA-147·148은 «미이행» 실측 후 **Q12~Q14 등재**. 정본 승격 `settled-decisions` **§3-I·§3-J·§3-K**.
 > · **09-21 (5)** **queue Q11 머지**(`495ccc07` → `cd82740`) — 계산기 «원천↔사본» 게이트. 헤드가 회귀 증명을 **직접 재현**했다(`51d79100~1`에 현 게이트를 얹으니 **47건** — 옛 게이트는 0건으로 통과시킨 자리).
 >
+> · **09-21 (6)** **queue Q12-a 머지**(`a5a8c78b` → `2ac9fe95` · 회신 **MB-073**) — MA-147 ① all-in·showdown 21자리 · EN + 24로케일 34파일. 🔴 **진행 파일에 내가 적어 둔 「ⓒ는 이미 닫혔다」가 거짓이었다**(4곳 중 3곳만 고친 것을 «닫았다»로 기록) → 정본 승격 `settled-decisions` **§3-L·§3-M**.
+>
 > 🔴 **되살리기 금지 여섯**: ① (not set)은 구조적 동작이다 — «유실»로 되돌리지 마라(보정 ② 유지 · `RULES_VERSION` 1)
 > ② `components/seo.tsx`는 og를 건드리지 않는다(그 주석에 반증 조건이 있다) ③ 폴백 티어 근거는 콤보 산술이다
 > ④ WSOP 참가 요건·「WSOP Online」 명칭 = `settled-decisions` **§3-G**(「21세만」 금지 · 브랜드 ≠ 도메인)
@@ -21,13 +23,14 @@
 > ⑧ **폴백 티어 = 654콤보 49.32%**(「50%」로 적지 마라) · **«BTN 58%+»는 재현 불가로 철회**(최대 확장도 55.66%) — 정본 `settled-decisions` **§3-I**
 > ⑨ **대회 강조는 날짜 파생이다** — `hot`·`highlight`를 손으로 박지 마라(사본 셋 · `isHighlighted()`) · `end`/`endDate` 누락은 «★로 남는 게» 아니라 **양쪽 다 false로 사라진다**. 정본 **§3-J**
 > ⑩ 트로피는 **샤드(Shard)** — 「스페이드」로 되돌리지 마라(독일어 매체의 «Spade»는 관용구다). 정본 **§3-K**
+> ⑫ **LA Rule 149의 노리밋 한정은 «올인자 먼저» 절에만 걸린다** — 사이드팟 공개 순서 절에 붙이면 맞던 절이 틀려진다 · **TDA 17은 「Non All-In」 전용**이라 올인 쇼다운엔 순서가 없다(TDA 16 = 「at once») · 사이드팟 초과분 반환에 **「Rule 108」을 다시 달지 마라**(그 조는 「Protect Your Hand」). 정본 **§3-L**
 > ⑪ **Q11 게이트를 「사본끼리」 검사로 되돌리지 마라** — H·I는 «원천↔사본»이다(티어 순회 1~4로 축소 · `ALL_TARGETS` 손복사 · `prebuild`/`build:vercel` 한쪽만 · `parseHandTable` throw 완화 전부 금지 · 진행 파일 §3). 🪶 이 게이트는 **09-20 이전 판을 소급 재생 못 한다**(`fallbackTier` 도입 전이라 I항이 설계대로 throw).
 
 ## ▶ 다음 할 일 (사장님이 고른다)
 
 1. **🧰 queue 다음 회차 — 사장님이 번호를 고른다.** 레인 창 첫 마디 = 「`HARDEN.md` 읽고 회차 Q<번호> 시작해」 · 회차 표 = `docs/harden-queue-진행.md` §1.
-   🔴 **새로 등재됐다 — 검수장 MA-147·148 이행 3회차**(09-21 실측: 앵커 62개 중 **60개가 현 HEAD에 그대로**다):
-   **Q12** MA-147 ① EN-먼저 rules 묶음(23자리 × EN + 7~8로케일 · **2세션으로 갈라라**) ·
+   🔴 **검수장 MA-147·148 이행 — Q12-a ✅ 종결(09-21 (6)), 남은 셋**:
+   **Q12-b** MA-147 ① **ⓓ ⓖ 보편 단정 묶음**(`holdem-game-order`·`holdem-betting-actions`·`holdem-blind-meaning` · B 155~165 · A 87·88.d.1 · Q12-a와 겹치는 자리 0) — 🔴 **착수 전 진행 파일 §2 「Q12-a가 남긴 것」을 먼저 읽어라** ·
    **Q13** MA-147 ②③ glossary 묶음(21자리 · 6편 × 8로케일 + es 고유 3 · `holdem-fish` 「izquierda→derecha」는 **WRONG**) ·
    **Q14** MA-148 zh+zh-hant 정정 13 + EN-먼저 4(c-bet 직답 「四到五成」→「約 30–45%」는 **5로케일**).
    그 밖 후보 ⓑ **Q8-a** pt 용어·문체 분열 소급 ⓒ **Q8-b** id·de 분열(es LATAM은 열지 않는다).
@@ -46,6 +49,7 @@
 - **zh·zh-hant 판정 요청 1건 대기**(Q4b-4 · re-entry 행 제목 「重买/重買」 → 「再入场/重新進場」 후보 · 거울쌍으로 같이) — 두 로케일 진행 파일 §5 말미. 레인 회차 없음 유지, 사장님이 열 때.
 - **de 형제 글 3건(낮음 · 포스트 수정이라 posting.mdc 절차 · MB-063 ⓒⓓ)**: ① `holdem-equity` FAQ 「Brauche ich einen Equity-Rechner?」와 `holdem-icm` FAQ 「In der Praxis nutzt du **einen** ICM-Rechner」가 계산기를 말하면서 **링크를 안 준다**(부정관사가 경쟁사로 가는 문) ② `holdem-bubble`이 계산기를 3번 가리키는데 계산기는 버블 글을 0번 가리킨다(related 8은 EN parity라 본문 링크로) ③ `holdem-short-stack` M 존 표가 경계를 겹쳐 적는다(「10–20 / 6–10」 ↔ 계산기 「10–19 / 6–9」 — 계산기 쪽이 정본). 🟢 `/de/solver` 누수는 0건.
 - **fr 포스트 1건(낮음 · posting.mdc 절차 · MB-064 ⓓ)**: `lib/posts-fr/texas-holdem-rules-for-beginners.ts:444` — **fr 유일의 인바운드**인데 앵커가 09-18에 교체한 «calculatrice de probabilités poker»다(현 페이지 이름 = «Calculateur poker»). 같은 줄의 `/hand-chart`는 09-19 (5)에서 `/en/hand-chart`로 해소.
+- 🆕 **Q12-a가 남긴 것 3건**(상세 = `docs/harden-queue-진행.md` §2 「Q12-a가 남긴 것」): ⓐ 🟠 **꼬리 16로케일은 all-in만 받고 showdown은 안 열었다** → «두 글이 반대로 말하는» 교차 모순 잠재. 열 때 **한 묶음으로**(`en-first-queue` §2-A 꼬리 행에 주석) ⓑ 🟠 `lib/posts-fr/holdem-all-in-rules.ts` **FAQ 답 7개가 `A. R. `로 시작**(`A.` + `R.(Réponse)` 접두 중복 · 렌더에 그대로 나온다 · ①원본 유래 · fr 전용) ⓒ 🟠 **EN showdown `tldr`이 「마지막 어그레서가 먼저」를 무조건으로 말한다**(L8) — 고치면 `check:seo-sync` 축이 열려 9로케일 메타를 같이 움직여야 하므로 별건.
 - 장기 미결 = `docs/harden-queue-진행.md` §2 · `docs/pending-work.md` · `docs/en-first-queue.md` §3(EN counterfeiting 조건 누락 등).
 
 ## 🕒 시한 (정본 `docs/update-calendar.md` — 요약만)

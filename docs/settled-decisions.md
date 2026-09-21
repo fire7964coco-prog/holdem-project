@@ -445,6 +445,25 @@ APPT 코리아 2026 우승 트로피를 독일어 매체의 *"eine **Spade**-Tro
 - **규율**: 고유명사(트로피·상·대회 명칭)는 **현장 취재원 또는 공식**에서 가져온다. 번역 매체의 낱말은 **그 매체 안에서 같은 낱말이 관용구로 쓰이는지** 먼저 본다.
 - 짝 규율: **기각 선언과 본문 사용이 갈리는지 같이 봐라** — 같은 회차에 출처란에서 공개 기각한 매체(PokerNews)의 문장을 **본문에서 무출처로** 쓰고 있었다.
 
+### 3-L. 🔴 조문의 «한정어»는 조문이 아니라 **절**에 걸린다 (2026-09-21 · queue Q12-a에서 승격 · 재론 금지)
+
+WSOP Live Action **Rule 149** 안에서 **두 절의 적용 범위가 다르다**(`docs/sources/wsop-2026-live-action-rules.txt` L705–709):
+
+- 「If there is a side pot, participants involved in the side pot should show their hands before anyone who is all-in for only the main pot.」 = **한정 없음**(모든 캐시)
+- 「**In a No Limit poker game** if betting has ended on a round prior to the river, the participant who pushed all-in is responsible for turning his/her hand over first.」 = **노리밋 한정**
+
+- **규율**: 한정어를 **조문 머리에 통째로** 붙이지 마라. 붙이는 순간 **맞던 절이 틀려진다**(사이드팟 절까지 노리밋 전용으로 좁아진다). 8로케일 전부 두 절을 갈라 옮겼다.
+- **짝 규율 — «제목이 한정어다»**: **TDA 17은 제목부터 「Non All-In Showdowns and Showdown Order」**라 올인 국면에 **적용되지 않는다.** 올인 쇼다운은 TDA 16 Addendum 축어 「all downcards of all players will be turned up **at once**」 = **순서가 없다.** WSOP Rule 72도 「where **no Participants are all-in**」으로 같은 한정을 건다. 🔴 「토너먼트에서 올인 쇼다운에 «먼저 보여주는 순서»가 있다」로 되돌리지 마라.
+- **짝 규율 — 인용 번호는 조문 «제목»까지 확인한다**: 사이드팟 초과분 반환에 달려 있던 **「WSOP Tournament Rule 108」은 「Protect Your Hand」**이고, 그 안의 언콜드-벳 문장은 «미보호 패가 킬·파울됐을 때» 한정이었다. **두 룰북 전수 grep 결과 일반 명제를 담은 번호 조문은 없다** → 명제가 참이면 **문면은 두고 인용만 뺀다**(없는 근거를 다는 것이 명제를 틀리게 하는 것보다 고치기 어렵다).
+
+### 3-M. 🔴 «국면 분리» 수리는 한 글에서 **네 자리**를 센다 — 표 · 본문 · 직답 블록 · FAQ (2026-09-21 · queue Q12-a에서 승격)
+
+[[completion-count-the-copies-first]]의 «파일 안 사본» 확장. Q12-a에서 **2차 교열이 잡은 🔴 3건이 전부 이 유형**이었다 — 1차 수리가 표만 고치고 5줄 위 직답 블록을 남겨 **한 글이 자기 표를 부정**했고(zh·zh-hant), ar은 표 행이 수리를 못 받아 **ar all-in ↔ ar showdown이 정면 모순**했다(한 로케일이 두 글에서 반대로 말함).
+
+- **규율**: 국면(토너먼트↔캐시 · 노리밋↔리밋)을 가르는 수리는 **자리를 고치기 전에 `grep -c`로 사본 수부터 센다.** 세는 자리 = **표 · 본문 · 직답 블록 · FAQ**, 그리고 **형제 글**(한 명제가 두 글에 걸쳐 있으면 둘을 한 묶음으로 연다).
+- **실증**: 같은 명제(#72)의 네 번째 자리(showdown 표 L86)는 **원장에 등재조차 없었다** — 검수장 앵커가 한 명제에 하나뿐이면 나머지 사본이 «이행»으로 읽힌다.
+- **선례 — 「닫혔다」는 기록을 믿지 마라**: 진행 파일이 「ⓒ는 `522b57f8`이 이미 닫았다」고 적어 둔 자리가 **열려 있었다**(그 커밋은 4곳 중 3곳만 고쳤다). 🔴 **«닫혔다» 판정의 단위는 «명제»가 아니라 «자리 수»다.**
+
 ## 4. 1차 출처·인용 규율
 
 - **1차 출처 확보 경로(재조사 금지)**: WSOP 룰북·IRS Pub 515 = `pdftotext -layout`(WinGet Poppler) ·
