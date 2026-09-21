@@ -127,6 +127,21 @@ const bareCode = (s) => bare(s.replace(CODE_FRAME, ''));
 const COMMENT_LINE = /^\s*(?:\/\/|\/\*|\*\/)/;
 
 /**
+ * 🔴 **링크 재조준** — 내부 링크의 «로케일 접두»만 다르다 (2026-09-21 사장님 결재 · queue Q12-b가 올린 판정).
+ *    실례 = 커밋 `64c0fd9a`(09-17 계산기 랜딩 10로케일 신설)가 22파일에서 한 일은
+ *    `/calculator` → `/zh/calculator` **href 교체뿐이고 산문은 바이트 동일**이었다. 그 22건이 매 회차 🔴로 떴다.
+ *    근거 = `settled-decisions` §1-C의 **목적 축어** 「날짜를 보고 업데이트 할지 말지 결정을 하지」 = `updated`는
+ *    **노후도 신호**인데, 링크를 로케일판으로 돌리는 것은 그 글의 노후도를 바꾸지 않는다.
+ *    🔴 **좁게 유지하라 — 지우는 것은 «알려진 로케일 접두» 한 마디뿐이다.**
+ *    `/blog/a` → `/blog/b`(다른 글로 보냄)는 `bare()`에서 단어가 달라져 **여전히 «실질»이다.**
+ *    앵커 텍스트가 한 글자라도 바뀌면 그것도 «실질»이다. 이 목록을 «경로 일반»으로 넓히지 마라 —
+ *    넓히는 순간 «독자를 다른 곳으로 보내는» 변경이 조용히 통과한다.
+ */
+const LOCALE_SEG = 'en|ja|zh-hant|zh|es|pt|de|fr|id|ms|hi|ar|vi|tr|it|pl|ro|ru|sw|th|uk|he|fa|fil|bn';
+const LOCALE_PREFIX = new RegExp(`(?<=[\\"'(\[=\s])/(?:${LOCALE_SEG})/`, 'g');
+const bareLink = (s) => bare(s.replace(LOCALE_PREFIX, '/'));
+
+/**
  * 🔴 **§13 안전벨트 — 무늬가 든 줄은 «가벼운» 부류로 내리지 않는다** (2026-09-13 · 렌즈 2·4 수렴).
  *    첫 판의 `COMMENT_LINE`은 끝에 홑별표 `*`가 붙어 있어 **본문 마크다운을 JS 주석으로 읽었다** —
  *    `**굵게`로 여는 문단과 `**Q.` FAQ 줄이 이 레포의 표준이라 적중률이 높았다(창 7일 26건 중 **25건이 오분류** ·
@@ -139,7 +154,7 @@ const HAS_SUIT = /[♠♥♦♣]/;
 /**
  * 한 커밋이 한 파일에 가한 변경의 «무게»를 판정한다.
  * @param lines 그 파일 hunk의 +/- 본문 줄 (접두 부호 포함)
- * @returns 'stamp' | 'cosmetic' | 'code' | 'comment' | 'meta' | 'substantive'
+ * @returns 'stamp' | 'cosmetic' | 'code' | 'relink' | 'comment' | 'meta' | 'substantive'
  */
 export function classify(lines) {
   const body = lines.filter((l) => /^[-+]/.test(l) && !/^([-+])\1\1/.test(l));
@@ -151,6 +166,7 @@ export function classify(lines) {
   // 🔴 §13 안전벨트 — 무늬가 한 글자라도 있으면 아래 «가벼운» 부류로 내리지 않는다
   const suited = kept.some((l) => HAS_SUIT.test(l));
   if (!suited && bareCode(minus) === bareCode(plus)) return 'code';
+  if (!suited && bareLink(minus) === bareLink(plus)) return 'relink';
   if (!suited && kept.every((l) => COMMENT_LINE.test(l.slice(1)))) return 'comment';
   const fields = kept.map((l) => (l.slice(1).match(FIELD_LINE) || [])[1]).filter(Boolean);
   if (!suited && fields.length === kept.length && !fields.some((f) => READER_FIELDS.includes(f))) return 'meta';
@@ -303,6 +319,37 @@ function selftest() {
     '+  body: `본문`,',
   ]) !== 'code');
 
+  // ── 링크 재조준 (2026-09-21 사장님 결재 · 좁게 유지한다) ───────────────
+  one('링크 재조준 — 마크다운 링크에 로케일 접두가 붙었다(64c0fd9a 유형)', classify([
+    '-3. **나눠 갖기 전에 네 숫자를 알아라.** 먼저 [계산기](/calculator)를 한 번 돌려라.',
+    '+3. **나눠 갖기 전에 네 숫자를 알아라.** 먼저 [계산기](/ja/calculator)를 한 번 돌려라.',
+  ]) === 'relink');
+  one('링크 재조준 — 생 href에 로케일 접두', classify([
+    '-  <a href="/calculator" style="display:block">',
+    '+  <a href="/zh/calculator" style="display:block">',
+  ]) === 'relink');
+  one('링크 재조준 — 로케일이 서로 바뀐 것도 같은 부류(09-19 /hand-chart 유형)', classify([
+    '-See the [hand chart](/hand-chart) for the full grid.',
+    '+See the [hand chart](/en/hand-chart) for the full grid.',
+  ]) === 'relink');
+  // 🔴 여기서부터가 «넓히면 안 되는» 경계다
+  one('🔴 실질 — 다른 글로 보내면 재조준이 아니다', classify([
+    '-See the [pot odds guide](/en/blog/holdem-pot-odds).',
+    '+See the [pot odds guide](/en/blog/holdem-equity).',
+  ]) === 'substantive');
+  one('🔴 실질 — 앵커 텍스트가 바뀌면 재조준이 아니다', classify([
+    '-Run the [calculator](/calculator) first.',
+    '+Run the [ICM calculator](/en/calculator) first.',
+  ]) === 'substantive');
+  one('🔴 실질 — 로케일 접두를 지웠더니 경로가 다르다', classify([
+    '-Open the [chart](/ja/hand-chart).',
+    '+Open the [chart](/ja/range-chart).',
+  ]) === 'substantive');
+  one('🔴 §13 안전벨트 — 무늬가 섞이면 재조준으로 내리지 않는다', classify([
+    '-보드 A♠K♠ — 자세히는 [차트](/hand-chart).',
+    '+보드 A♥K♥ — 자세히는 [차트](/ko/hand-chart).',
+  ]) === 'substantive');
+
   one('주석만 — 동결 지시 재작성 + masterUpdated(f38a4b14 de 유형)', classify([
     '-  // 🔴 masterUpdated는 07-12 그대로 둔다 – 보류분이다.',
     '-  masterUpdated: "2026-09-11",',
@@ -382,7 +429,7 @@ function main() {
    *    첫 판은 마지막 `else` 분기에서만 셌고, 그래서 「스탬프만 28건」이라고 찍는데
    *    실측은 198건이었다(2026-09-12 렌즈 실측 · 7배). 창 안 커밋을 통째로 먼저 센다.
    */
-  const tally = { stamp: 0, cosmetic: 0, code: 0, comment: 0, meta: 0, substantive: 0 };
+  const tally = { stamp: 0, cosmetic: 0, code: 0, relink: 0, comment: 0, meta: 0, substantive: 0 };
   for (const [rel, commits] of win) {
     if (onlyLocale && localeOf(rel) !== onlyLocale) continue;
     for (const c of commits) tally[c.weight] = (tally[c.weight] || 0) + 1;
@@ -428,7 +475,7 @@ function main() {
 
   console.log('\n── 커버리지 (0건이 «검증»으로 오독되지 않게) ──');
   console.log(`   판정 대상 파일 ${files.length}개 · 창 안에서 움직인 파일 ${inWindow}개`);
-  console.log(`   🪶 창 안 커밋×파일 ${tally.stamp + tally.cosmetic + tally.code + tally.comment + tally.meta + tally.substantive}건 = 스탬프만 ${tally.stamp} · 구두점·장식만 ${tally.cosmetic} · 코드 골격만 ${tally.code} · 주석만 ${tally.comment} · 메타 ${tally.meta} · 실질 ${tally.substantive}`);
+  console.log(`   🪶 창 안 커밋×파일 ${tally.stamp + tally.cosmetic + tally.code + tally.relink + tally.comment + tally.meta + tally.substantive}건 = 스탬프만 ${tally.stamp} · 구두점·장식만 ${tally.cosmetic} · 코드 골격만 ${tally.code} · 링크 재조준만 ${tally.relink} · 주석만 ${tally.comment} · 메타 ${tally.meta} · 실질 ${tally.substantive}`);
   console.log(`   🪶 창 밖 과소 ${outside}건 — 계수만 한다(과거 발굴 금지 · 메모리 audit-recent-window-not-history)`);
   console.log(`   ⚠ 미판정: lib/posts.ts(LEGACY 다중 포스트 한 파일 — 파일 단위 스탬프가 성립하지 않는다) · updated 필드 없는 파일 ${noStamp}개`);
 

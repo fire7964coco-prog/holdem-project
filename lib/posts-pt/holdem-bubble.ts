@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A bolha é o momento logo antes do dinheiro, onde mais uma eliminação paga todo mundo. Como quebrar significa não ganhar nada, sobreviver vale mais que as fichas que você ganharia — então os ranges de call apertam muito enquanto os shoves continuam largos. Big stacks atacam, médios são os mais presos (não os short stacks), e numa bolha de satélite de várias vagas você folda tudo, até ases, assim que sua vaga está garantida.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-09-13",
+  updated: "2026-09-17",
   masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "13 min",
