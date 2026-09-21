@@ -118,6 +118,17 @@ EN 12편 정정 → 7로케일(de·es·id·ja·pt·zh·zh-hant) 전파 완료. 1
 - **H-2**(🔴 높음) **아웃츠 탭 상단 카드가 「Rule of 4 / Rule of 2」 캡션 바로 아래 «정확값»을 찍는다**(9아웃츠에서 화면 35.0% ↔ 9×4 = 36). **딜러 밖 두 렌즈(수학·교열)가 독립 수렴**했고, Q10 ⑥이 닫은 `exactNote`와 **같은 축**이다. 선결 판정 = 「캡션이 **스트리트 라벨**인가 **값 라벨**인가」 · 걸린 것 = 12로케일 문자열.
 - **H-3**(🟠 **사장님 판단 자리**) **폴백 T5 56타입 중 50타입(600콤보)이 T4 최약체 `32s`보다 세다**(K8o 56.0% ↔ 32s 36.1% · 겹침 19.8pp). 🔴 **09-20 기각안(수티드에 «작은 쪽» 바닥)을 되살리는 게 아니다** — 남은 방향은 **오프수트 줄을 넓히는 쪽**이고, 콤보 산술상 **23번째 타입이 정확히 `K8o`**(276콤보 = 666 · 22타입 654보다 663에 가깝다).
 
+### 2-I. queue 회차 Q12-b가 올린 것 (2026-09-21 · 머지 `7263564a` · **원장 미등재 신규 재료** · ①원본 = 딜러 렌즈)
+
+> 한 묶음이다 — **`holdem-straddle` 프레이밍 3자리가 버튼 스트래들·리스트래들을 모른다.** **EN-먼저 → 8로케일 전파.**
+> 1차 출처 축어 = `docs/sources/wsop-2026-live-action-rules.txt` **B 165**(L798–807), 헤드 재확인 완료:
+> 「A straddle may be posted from **either Under the Gun (UTG) or the Button**, with the **Button straddle taking precedence**.」 ·
+> 「In 5-5-10 and above: One additional straddle is permitted. (e.g. … **a re-straddle, from any position**, allowed up to a maximum of $40.)」
+
+- **I-1**(🔴 높음) `game-order`·`betting-actions`의 「a live straddle … they act **last** preflop」 — **리스트래들이 서면 최초 스트래들러는 마지막이 아니다.** 🪶 Q12-b가 이 문장을 **그대로 두고** 옆 자리만 고쳤으므로, 고칠 때 §3-N의 정관사 기준 문면과 **같은 문단**임을 유의.
+- **I-2**(🔴 높음) `blind-meaning` L121 「posted **from the seat left of the big blind**」 — UTG만 말하고 **버튼 스트래들을 빠뜨린다**(B 165는 버튼 쪽이 **우선**이라고까지 적는다).
+- **I-3**(🟠 중간) 같은 글 L127 「It's **the one time the button pays a blind**」 — 같은 글이 스트래들을 「a **voluntary extra blind**」로 정의하고 버튼 스트래들도 허용되므로 **자기모순**이다. I-2와 한 편집으로.
+
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - 🟠 **EN `paired-board-strategy` — 22 counterfeiting의 리버 조건 누락**(HI GTO 독립 전략·수학 검수, 2026-09-15). 원문 `a running three counterfeits it into playing the board`를 한정된 런아웃으로 명확히 할 필요가 있다. `22/6633K`는 보드 Two Pair를 플레이하지만 `22/66332`는 홀카드 22로 Full House를 만든다. HI 초안의 별도 오역(`66333`을 Two Pair로 분류)은 HI에서 고쳐 카드 재검산까지 종결했다. EN·기발행 형제 언어의 적용은 이 회차에서 하지 않았으며, 후속 회차는 실제 해당 문장을 확인한 뒤 최소 수정한다. 원본/도입 결함 구분과 증거 정본 = [HI 원문 계약](hi-gto-source-contract.md#hi-독립-검수에서-구체화한-런아웃-조건).
