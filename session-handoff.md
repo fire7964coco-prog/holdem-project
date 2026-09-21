@@ -10,6 +10,7 @@
 > · **09-21 · 09-21 (2)** queue **Q10 등재 → 머지**(`51d79100` → `3448be03`) — 계산기 권고 비대칭·티어 역전 + 로케일 전파. 🔴 **회차를 열기 전 재료를 실측해 후보 ⓐ를 소멸시켰다**(이미 끝난 트랙이었다).
 > · **09-21 (3)** **KO 정정 회차**(`ca6cc11d`) — 헤즈업 매치업 표 §13 전수 재검산 + 하이카드 키커 1+4 + WSOP 명칭. 🔴 **교차검수가 내 수정의 회귀 4건을 잡았다**(무늬 1조합만 돌리고 「전수」라 적음) → 정본 승격 `settled-decisions` §3-F.
 > · **09-21 (4)** **검수장 MA 5건 처리**(`685c152a` → `4c30a66c` · 회신 **MB-072**) — MA-158·159·163 이행 완료, MA-147·148은 «미이행» 실측 후 **Q12~Q14 등재**. 정본 승격 `settled-decisions` **§3-I·§3-J·§3-K**.
+> · **09-21 (5)** **queue Q11 머지**(`495ccc07` → `cd82740`) — 계산기 «원천↔사본» 게이트. 헤드가 회귀 증명을 **직접 재현**했다(`51d79100~1`에 현 게이트를 얹으니 **47건** — 옛 게이트는 0건으로 통과시킨 자리).
 >
 > 🔴 **되살리기 금지 여섯**: ① (not set)은 구조적 동작이다 — «유실»로 되돌리지 마라(보정 ② 유지 · `RULES_VERSION` 1)
 > ② `components/seo.tsx`는 og를 건드리지 않는다(그 주석에 반증 조건이 있다) ③ 폴백 티어 근거는 콤보 산술이다
@@ -20,6 +21,7 @@
 > ⑧ **폴백 티어 = 654콤보 49.32%**(「50%」로 적지 마라) · **«BTN 58%+»는 재현 불가로 철회**(최대 확장도 55.66%) — 정본 `settled-decisions` **§3-I**
 > ⑨ **대회 강조는 날짜 파생이다** — `hot`·`highlight`를 손으로 박지 마라(사본 셋 · `isHighlighted()`) · `end`/`endDate` 누락은 «★로 남는 게» 아니라 **양쪽 다 false로 사라진다**. 정본 **§3-J**
 > ⑩ 트로피는 **샤드(Shard)** — 「스페이드」로 되돌리지 마라(독일어 매체의 «Spade»는 관용구다). 정본 **§3-K**
+> ⑪ **Q11 게이트를 「사본끼리」 검사로 되돌리지 마라** — H·I는 «원천↔사본»이다(티어 순회 1~4로 축소 · `ALL_TARGETS` 손복사 · `prebuild`/`build:vercel` 한쪽만 · `parseHandTable` throw 완화 전부 금지 · 진행 파일 §3). 🪶 이 게이트는 **09-20 이전 판을 소급 재생 못 한다**(`fallbackTier` 도입 전이라 I항이 설계대로 throw).
 
 ## ▶ 다음 할 일 (사장님이 고른다)
 
@@ -28,7 +30,7 @@
    **Q12** MA-147 ① EN-먼저 rules 묶음(23자리 × EN + 7~8로케일 · **2세션으로 갈라라**) ·
    **Q13** MA-147 ②③ glossary 묶음(21자리 · 6편 × 8로케일 + es 고유 3 · `holdem-fish` 「izquierda→derecha」는 **WRONG**) ·
    **Q14** MA-148 zh+zh-hant 정정 13 + EN-먼저 4(c-bet 직답 「四到五成」→「約 30–45%」는 **5로케일**).
-   그 밖 후보 ⓐ **Q11 게이트 III**(재료 실측 완료 · 바로 열 수 있다): `check:calc-parity`는 `starting.summary`의 **행 개수만** 보고 행이 드는 **핸드 코드는 아무도 안 본다**(그래서 12사본 동시 오류가 통과했다) · 🔴 **«ko를 순회에 넣어라»는 한 줄로 안 된다** — ko는 사전 파일 자체가 없어(`calculator-client.tsx` 안 배열) **전용 추출기**가 필요하다 · 🪶 `seo.description` ≤160은 10/10 통과라 **부채가 아니다** ⓑ **Q8-a** pt 용어·문체 분열 소급 ⓒ **Q8-b** id·de 분열(es LATAM은 열지 않는다).
+   그 밖 후보 ⓑ **Q8-a** pt 용어·문체 분열 소급 ⓒ **Q8-b** id·de 분열(es LATAM은 열지 않는다).
    🔴 **«계산기 랜딩 SEO 재조준»은 소멸했다 — 되살리지 마라**(브리프 §0 기준 11/11 종결). 🪶 같은 유형이 **es·ja·pt·zh·zh-hant `solver-client`에 5곳** 남았다(브리프 §5 말미).
 2. **🟠 GA 계측 판정 2건**(09-20 (2) 규명 회차가 남긴 것 · 정리 `docs/ga-notset-diagnosis-2026-09-20.md` §6) — ⓐ **Vercel Analytics·Speed Insights가 꺼져 있다**: 레이아웃에 `<Analytics />`·`<SpeedInsights />`가 렌더되고 패키지도 깔렸는데 라이브 요청 0건(`web_analytics_not_enabled`). **켜거나(대시보드 토글 = 사장님 몫) 컴포넌트를 빼거나** 둘 중 하나 — 지금은 둘 다 아니다. 켜면 GA4가 못 보는 유실을 독립 측정할 유일한 수단이 생긴다. ⓑ **GA `lazyOnload` 유지/변경**: 느린 회선에서 page_view가 7~8초까지 밀려 그 전 이탈자가 집계에 아예 없다. 단 `afterInteractive`로 얻는 건 **1.25초뿐**(병목이 대역폭 경합) → **ⓐ를 먼저 켜서 규모를 재고 판정하는 순서를 권한다.**
 3. **10/14 이후 — 배치 효과 4주 비교**(캘린더 등재됨). 기준선 `docs/post-placement-analysis-2026-09-16.md` §2 · 같은 창(`npm run analytics` + `ga-fetch --pages --days 28`). 모바일 홈 36.7%(60세션)는 09-16 배포 전 값 — 그때 재측정. 같은 창에서 `/ja/calculator`·`/zh/calculator`·`/zh-hant/calculator`·`/es/calculator`·`/pt/calculator`·`/de/calculator`·`/fr/calculator` GSC 쿼리 첫 판독(일곱 다 신설 직후 0 · pt는 «calculadora poker»·«calculadora odds poker»·«icm calculator» 축 · es는 «calculadora de poker»·«icm calculator» 축 · zh-hant는 「德州撲克勝率計算器」 260·「icm計算機」 70 축을 본다 · de는 «poker rechner» 260·«poker wahrscheinlichkeiten rechner» 210·«poker odds calculator»(영문 590) 축을 본다 · fr은 «calculateur poker» 390·«icm poker» 480·«équité poker» 110·«tableau push or fold» 70 축을 본다 · **ms는 쿼리 단위로도 볼 게 없다** — 말레이어 축이 통째로 null이라 «poker calculator»·«poker odds calculator»(각 90 · 조준 안 한 영어 축)에 노출이 붙는지만 기록한다 · **id는 «kalkulator poker» 10 하나만 본다** — 🔴 인니어 축이 통째로 10 단위라 **쿼리 단위로 내려가야 보인다**(페이지 합계로는 0으로 보인다) · 영어 «poker calculator»·«poker odds calculator» 각 90은 **조준 안 한 축**이라 노출이 붙으면 그것대로 기록해 둘 것 · 🆕 **hi는 «데바나가리 쿼리에 노출이 붙는가»만 본다** — 조준한 영어 축 `poker odds calculator` 390은 SERP 19/19라 노출이 붙기 어렵고 힌디어 축은 볼륨 자체가 null이다. **붙으면 §3-B의 «힌디어 SERP 공백» 판정이 맞은 것**이라 그 자체가 결과다).
