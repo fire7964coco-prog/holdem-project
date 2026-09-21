@@ -16,13 +16,15 @@
 
 ## ▶ 다음 할 일 (사장님이 고른다)
 
-1. **🧰 queue 다음 회차 — 사장님이 번호를 고른다.** 레인 창 첫 마디 = 「`HARDEN.md` 읽고 회차 Q<번호> 시작해」(HARDEN.md 통지 부착 완료 · 회차 표 = `docs/harden-queue-진행.md` §1).
-   후보 ⓐ **계산기 랜딩 10로케일 SEO 재조준**(09-17 (3) 통지 · 로케일별 키워드 실측·SERP — 지금 판은 «코퍼스 용어 기반 1판») + 낡은 주석 3곳(`app/ja/solver/page.tsx:35`·`solver-client.tsx:64`·`app/de/solver/faq.ts` 머리·`docs/keyword-bank/de-gto-solver.md` §4) ⓑ **Q8-a** pt 용어·문체 분열 소급 ⓒ **Q8-b** id·de 분열(es LATAM은 열지 않는다) ⓓ **▶4의 EN 계산기 후속**(88/77 비대칭 등 · 집필 구간이 있어 Fable).
+1. **🧰 queue 회차 Q10이 열려 있다**(09-21 등재 · 재료 7건 전건 원문 실측). 레인 창 첫 마디 = 「`HARDEN.md` 읽고 회차 Q10 시작해」 · 재료 = `docs/harden-queue-진행.md` §1 Q10 행(정본은 브리프 §5 + 아래 ▶4).
+   🔴 **후보 ⓐ(계산기 랜딩 SEO 재조준)는 소멸했다 — 되살리지 마라.** 그 트랙은 브리프 §0 기준 **11/11 종결**(09-17~09-19)이고, 낡은 주석 3곳 중 **ja 2곳은 09-20에 이미 정정**됐다. 남은 de 2곳은 Q10 ⑦로 들어갔다.
+   **다음 후보**(Q10 다음) ⓑ **Q8-a** pt 용어·문체 분열 소급 ⓒ **Q8-b** id·de 분열(es LATAM은 열지 않는다).
    ✅ **Q4-c(es 동형 명제 + WSOP Online 명칭)는 09-17에 끝나 09-20에 머지됐다** — 🔴 그때 「형제 글」로 세 번 올라온 es 3편(`poker-en-las-vegas`·`nueva-jersey`·`dinero-real`)은 **07-27 발행 중단된 미발행 파일**이었다(index 미등록 · 라이브 영향 0). **같은 자리를 다시 올리지 마라** — 규율 정본 `settled-decisions` §3-G.
 2. **🟠 GA 계측 판정 2건**(09-20 (2) 규명 회차가 남긴 것 · 정리 `docs/ga-notset-diagnosis-2026-09-20.md` §6) — ⓐ **Vercel Analytics·Speed Insights가 꺼져 있다**: 레이아웃에 `<Analytics />`·`<SpeedInsights />`가 렌더되고 패키지도 깔렸는데 라이브 요청 0건(`web_analytics_not_enabled`). **켜거나(대시보드 토글 = 사장님 몫) 컴포넌트를 빼거나** 둘 중 하나 — 지금은 둘 다 아니다. 켜면 GA4가 못 보는 유실을 독립 측정할 유일한 수단이 생긴다. ⓑ **GA `lazyOnload` 유지/변경**: 느린 회선에서 page_view가 7~8초까지 밀려 그 전 이탈자가 집계에 아예 없다. 단 `afterInteractive`로 얻는 건 **1.25초뿐**(병목이 대역폭 경합) → **ⓐ를 먼저 켜서 규모를 재고 판정하는 순서를 권한다.**
 3. **10/14 이후 — 배치 효과 4주 비교**(캘린더 등재됨). 기준선 `docs/post-placement-analysis-2026-09-16.md` §2 · 같은 창(`npm run analytics` + `ga-fetch --pages --days 28`). 모바일 홈 36.7%(60세션)는 09-16 배포 전 값 — 그때 재측정. 같은 창에서 `/ja/calculator`·`/zh/calculator`·`/zh-hant/calculator`·`/es/calculator`·`/pt/calculator`·`/de/calculator`·`/fr/calculator` GSC 쿼리 첫 판독(일곱 다 신설 직후 0 · pt는 «calculadora poker»·«calculadora odds poker»·«icm calculator» 축 · es는 «calculadora de poker»·«icm calculator» 축 · zh-hant는 「德州撲克勝率計算器」 260·「icm計算機」 70 축을 본다 · de는 «poker rechner» 260·«poker wahrscheinlichkeiten rechner» 210·«poker odds calculator»(영문 590) 축을 본다 · fr은 «calculateur poker» 390·«icm poker» 480·«équité poker» 110·«tableau push or fold» 70 축을 본다 · **ms는 쿼리 단위로도 볼 게 없다** — 말레이어 축이 통째로 null이라 «poker calculator»·«poker odds calculator»(각 90 · 조준 안 한 영어 축)에 노출이 붙는지만 기록한다 · **id는 «kalkulator poker» 10 하나만 본다** — 🔴 인니어 축이 통째로 10 단위라 **쿼리 단위로 내려가야 보인다**(페이지 합계로는 0으로 보인다) · 영어 «poker calculator»·«poker odds calculator» 각 90은 **조준 안 한 축**이라 노출이 붙으면 그것대로 기록해 둘 것 · 🆕 **hi는 «데바나가리 쿼리에 노출이 붙는가»만 본다** — 조준한 영어 축 `poker odds calculator` 390은 SERP 19/19라 노출이 붙기 어렵고 힌디어 축은 볼륨 자체가 null이다. **붙으면 §3-B의 «힌디어 SERP 공백» 판정이 맞은 것**이라 그 자체가 결과다).
 4. 🪶 **계산기 EN 후속**(브리프 §5) — 🔴 폴백 티어·오픈 림프는 09-20에, **4-A 7건은 09-20 (3)에 닫혔다**
-   (og 카드 20/20 · images · x-default · 오버카드 · times-2 · A3s · exactNote → `docs/og-meta-audit-2026-09-20.md`). **남은 것**:
+   (og 카드 20/20 · images · x-default · 오버카드 · times-2 · A3s · exactNote → `docs/og-meta-audit-2026-09-20.md`).
+   🔴 **아래 「남은 것」은 09-21에 전건 실측되어 회차 Q10으로 묶였다**(▶1) — **여기서 따로 집지 마라.** Q10이 닫으면 이 절을 지운다. **남은 것**:
    🟠 EN `88`이 `77`보다 좁다(«consider calling» vs «call» — 88이 더 센데 권고가 더 좁다 · 12로케일이 이 비대칭을 충실히 옮겼다) ·
    🟠 88·77의 «EP 첫 진입» 미정의(「Raise LP」만 읽으면 EP 첫 진입에 할 게 없어 림프로 빠진다 · AJs·55는 그 자리를 닫아 뒀다) ·
    🟠 `44`(T5)가 `43s`(T4)보다 아래(페어 승격은 `summary` 5행 「44–22 weak offsuit hands」를 13자리에서 같이 고쳐야 한다) ·
