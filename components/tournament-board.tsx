@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Calendar, MapPin, ExternalLink, Star, ChevronRight } from "lucide-react";
-import { TOURNAMENTS, computeStatus, type TournamentStatus } from "@/lib/tournaments";
+import { TOURNAMENTS, computeStatus, isHighlighted, type TournamentStatus } from "@/lib/tournaments";
 import {
   BOARD_STRINGS,
   HOME_COUNTRY,
@@ -179,7 +179,7 @@ export default function TournamentBoard({
               <article
                 key={t.id}
                 className={`bg-card border rounded-2xl p-5 flex flex-col gap-3 ${
-                  t.highlight ? "border-yellow-500/40" : "border-border"
+                  isHighlighted(t, todayISO) ? "border-yellow-500/40" : "border-border"
                 }`}
               >
                 <div className="flex items-start justify-between gap-2">
