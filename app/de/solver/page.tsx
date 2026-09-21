@@ -43,7 +43,8 @@ import { SOLVER_FAQ_DE } from "./faq";
  *   · **`poker strategie` 1,300 = `de/holdem-strategy` 소유**(seoTitle+태그).
  *     ⚠ 그 글이 `gto poker`·`poker range` 태그도 달고 있으나 **본문 H2 14개 중 GTO 축 0** —
  *     명목 태그다(ja `holdem-strategy`와 동형). 랜딩이 **도구·포스트플랍 축**을 가져간다.
- *   · `poker rechner` 260 = 계산기 축 — de에 도구 페이지가 없다. 앱 내 Equity-Rechner 언급으로만.
+ *   · `poker rechner` 260 = 계산기 축 — 🔴 `/de/calculator`(2026-09-17 신설)가 소유한다.
+ *     이 랜딩은 앱 내 Equity-Rechner 언급으로만 건드린다.
  *   🟢 미소유 확인: `poker solver`·`gto solver`·`flop turn river`·`poker trainer` 0편.
  *
  * 🔴 **`poker simulator`(390)·`poker ohne anmeldung`(320)을 조준하지 마라** — SERP 실측에서

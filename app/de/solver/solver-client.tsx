@@ -66,7 +66,8 @@ const SOLVER_URL = "https://solver.holdemmaster.com/?lang=de";
  *     `gto poker`·`poker range` **태그도** 달고 있으나 본문 H2 14개 중 GTO 축 0 — **명목 태그**다
  *     (ja `holdem-strategy`와 동형). 랜딩은 **도구·포스트플랍 축**을 가져가고, 순수 정의는
  *     짧게 두고 glossary·strategy로 넘긴다.
- *   · `poker rechner` 260 = 계산기 축. de에 도구 페이지가 없다 — 앱 내 Equity-Rechner 언급으로만.
+ *   · `poker rechner` 260 = 계산기 축. 🔴 `/de/calculator`(2026-09-17 신설)가 소유한다 —
+ *     이 랜딩은 앱 내 Equity-Rechner 언급으로만.
  *
  * ❌ **`poker simulator`(390)·`poker ohne anmeldung`(320)을 조준하지 마라** — SERP 실측
  *   의도가 «무료 게임»이다(6/10 · 10/10). FAQ가 «게임이 아니라 계산 도구»로 갈라 준다.
@@ -141,8 +142,8 @@ const SPEC: [string, string][] = [
 
 /**
  * 「무엇을 원하나 → 어디로」 — 내부 역할 분리를 표로 못박아 카니발을 막는다.
- * 🔴 EN판은 `/en/hand-chart`·`/en/calculator`로 보내지만 **de에는 그 도구 페이지가 없다.**
- *    de 블로그 글과 앱 내장 기능으로 보낸다(대상 실존 확인 완료).
+ * 🔴 EN판은 `/en/hand-chart`·`/en/calculator`로 보낸다. de는 **`/de/calculator`가 있고(2026-09-17 신설)
+ *    `/de/hand-chart`는 없다** — 차트 축만 de 블로그 글과 앱 내장 기능으로 보낸다(대상 실존 확인 완료).
  */
 const PICK_TOOL: readonly [string, string, string | null][] = [
   ["Einen konkreten Spot nach dem Flop durchrechnen", "Der Solver auf dieser Seite", null],
@@ -840,7 +841,7 @@ export default function SolverClientDe() {
         </p>
       </section>
 
-      {/* ── 함께 읽으면 좋은 글 (⚠ de엔 도구 페이지가 없다 — 전부 블로그) ── */}
+      {/* ── 함께 읽으면 좋은 글 (⚠ de엔 `/de/hand-chart`가 없다 — 이 카드는 전부 블로그) ── */}
       <section className="mt-12">
         <h2 className="text-xl font-bold">Zum Weiterlesen</h2>
         <ul className="mt-4 list-disc space-y-2 pl-6">

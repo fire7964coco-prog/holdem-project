@@ -93,7 +93,7 @@ null 실측: `gto poker tabelle`·`gto tabelle(n)`·`gto poker kostenlos`·`was 
 | `poker charts` | 390 | 프리플랍 차트 의도 → `holdem-starting-hands-chart` 방면 |
 | `poker simulator` | 390 | 게임 의도(§1-④) |
 | `poker ohne anmeldung` | 320 | 게임 의도(§1-④) |
-| `poker rechner` | 260 | 계산기 축 — de에 도구 페이지 없음. 앱 내 Equity-Rechner 언급으로만 |
+| `poker rechner` | 260 | 계산기 축 — 🔴 **`/de/calculator`(2026-09-17 신설)가 소유**. 솔버 쪽은 앱 내 Equity-Rechner 언급으로만 |
 | `preflop charts` · `poker range chart` · `poker preflop tabelle` | 110 · 50 · 10 | 🔴 프리플랍 → chart 소유 |
 | `poker software` | 90 | 추세 급락(480→30) + HUD/트래커 의도 혼재 |
 | `poker bot` · `rta poker` | 170 · 40 | 🔴 부정행위 축(§1-⑤) |

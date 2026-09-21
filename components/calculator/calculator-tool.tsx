@@ -166,7 +166,11 @@ const HAND_TABLE: TierEntry[] = [
   [4, "KJo"], [4, "QJo"], [4, "98s"], [4, "87s"], [4, "76s"],
   // K10o·Q10o·J10o는 Tier 4다 — 폴백이 계산한 K9o·Q9o·J9o가 Tier 4인데 이들이 Tier 5면
   // 「더 센 핸드가 더 약하게」 뜬다(09-20 딜러 렌즈). 세 핸드 다 BTN 표준 오픈이다.
-  [5, "44"], [5, "33"], [5, "22"], [4, "K10o"], [4, "Q10o"], [4, "J10o"],
+  // 🔴 2026-09-21 — 44·33·22도 Tier 4다. 아래 fallbackTier의 콤보 모델이 「78 pairs」 = 13개 페어
+  //    **전부**를 버튼 레인지 안으로 세는데, 표만 이 셋을 T5로 찍어 미등재 43s·32s(수티드 → T4)가
+  //    44보다 한 단계 위로 떴다. 해법은 수티드에 바닥을 두는 것이 아니라(09-20 기각) 페어 승격이다.
+  //    🔴 배지만 올렸다 — action 문구(「~15× 뒤에 남았을 때만 콜」·「멀티웨이 딥스택만」)는 그대로다.
+  [4, "44"], [4, "33"], [4, "22"], [4, "K10o"], [4, "Q10o"], [4, "J10o"],
   [3, "Q10s"], [4, "A10o"], [4, "65s"], [4, "54s"],
 ];
 
@@ -186,8 +190,11 @@ function lookupHand(name: string): TierEntry | null {
 // "🚫 Weak" right next to "open from the cutoff/button". Mirrors the branches of
 // dict.starting.unknownAction, so every locale is corrected by this one function.
 // rank is an index into RANKS: 1 = "3", 7 = "9", 12 = "A".
-// A ~50% button range is 663 combos: 78 pairs + 312 suited leaves 273 for offsuit, i.e. ~22 hand
-// types — every ace (12) + K9o+ (4) + Q9o+ (3) + J9o+ (2) + 10-9o. That is the offsuit line below.
+// A ~50% button range is 663 combos: 78 pairs + 312 suited leaves 273 for offsuit. Offsuit types
+// cost 12 combos each, so 273 is not reachable — the line below takes the 22 types under it
+// (264 combos): every ace (12) + K9o+ (4) + Q9o+ (3) + J9o+ (2) + 10-9o. Tiers 1-4 therefore hold
+// 78 + 312 + 264 = 654 combos = 49.3%, the conservative side of 50%. 23 types (276) would overshoot.
+// 🔴 The matching table in app/calculator/calculator-client.tsx must stay identical — never fix one side only.
 // Every suited hand fits inside the 312, so the button opens all of them; the cutoff limit lives
 // in the prose, not here, because the badge is one tier either way.
 function fallbackTier(hi: Card, lo: Card): 4 | 5 {

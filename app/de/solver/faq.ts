@@ -44,7 +44,8 @@
  * 🔴 카니발 — 이 FAQ가 **답하지 않는 것 셋**(뱅크 §4):
  *   ① 프리플랍 표·차트 → `de/holdem-starting-hands-chart`(태그 `gto preflop charts`)가 갖는다.
  *   ② 「poker strategie」 일반 → `de/holdem-strategy`(seoTitle+태그)가 소유.
- *   ③ 계산기(`poker rechner` 260) → de에 도구 페이지가 없고 앱 내 Equity-Rechner 언급으로만.
+ *   ③ 계산기(`poker rechner` 260) → 🔴 `/de/calculator`(2026-09-17 신설)가 소유한다.
+ *      솔버 쪽은 앱 내 Equity-Rechner 언급으로만 두고(라벨은 solver-client.tsx) 여기서 되찾지 마라.
  *   **되찾아 오지 마라.**
  */
 export interface FaqItem { q: string; a: string; }
