@@ -1,3 +1,12 @@
+## 2026-09-21 — 🧰 queue 회차 Q10 등재 + 후보 ⓐ 소멸 판정 (`550b4b49` · 헤드 Opus · 코드 변경 0)
+
+- 사장님 「1 진행하자」 → 핸드오프 ▶1 후보 ⓐ(계산기 랜딩 10로케일 SEO 재조준)를 열려고 재료를 실측했더니 **이미 끝난 트랙**이었다. 브리프 `calculator-landing-rewrite.md` §0 = **11/11 종결**(en·ja·zh·zh-hant·es·pt·de·fr·id·ms·hi · 09-17~09-19)이고, 딸린 「낡은 주석 3곳」 중 **ja 2곳(`app/ja/solver/{page,solver-client}.tsx`)은 09-20에 이미 정정**돼 있었다(주석 안에 「2026-09-17에 신설됐다 — 낡은 서술 정정」이 박혀 있다). 남은 de 2곳만 Q10 ⑦로 흡수. → 핸드오프 ▶1에 **«소멸했다 · 되살리지 마라»**로 박았다.
+- 🔴 **교훈(같은 실수의 재발)**: 핸드오프 ▶1의 후보 목록은 09-17 (3)에 적힌 뒤 **그 트랙이 09-19에 끝났는데도 갱신되지 않았다.** 09-20 (4)의 「`lane:status`는 머지 대기를 원리상 못 본다」와 **같은 형태**다 — 상태를 적은 자리와 상태를 바꾸는 자리가 다르면 낡는다. 회차를 열기 전 **재료부터 실측**하는 순서가 한 세션을 살렸다(메모리 `stale-freeze-notes-verify-worklog`·`absence-may-be-the-standard`).
+- **Q10 등재**(회차 표 = `docs/harden-queue-진행.md` §1). 재료 7건은 **전건 원문 실측으로 현존 확인**(가설 아님): ① EN `88`(dict.ts:557 «in EP consider calling») ↔ `77`(:565 «in EP call») = 88이 더 센데 권고가 더 좁다 ② 같은 두 항목 **EP 첫 진입 미정의**(D유형 — 림프로 빠진다) ③ `calculator-tool.tsx:168` `[5,"44"]` ↔ 미등재 `43s`가 `fallbackTier`(:193 수티드=4)로 **T4** = 역전 ④ `87s`·`65s`·`54s` 「Call LP」 ↔ 같은 T4 `76s`만 «raise first in» ⑤ 🔴 **F유형** `outs.exactNote` **11로케일이 «값의 크기»로 옮겼다**(de `große Zahl`·ja `大きい数字`·zh·zh-hant `那個大數字`·id `Angka besar`·ms `Nombor besar`·hi `बड़े अंकों`·fr `Le grand chiffre`·es `El número grande`·pt `O número grande`) — EN은 09-20 (3)에 «The figure in large type»로 고쳤다 ⑥ 🔴 **F유형** `A3s` — EN `:575`는 «a notch above A2s»인데 **로케일 9 + ko**가 폐기된 거짓 문구(«수티드 에이스의 바닥») 보유 ⑦ 곁 = de 낡은 주석 2곳(`app/de/solver/faq.ts:47` · `docs/keyword-bank/de-gto-solver.md:96`).
+- 🔴 **사본 수를 먼저 셌다**(메모리 `completion-count-the-copies-first`): ko는 별도 클라이언트(`app/calculator/calculator-client.tsx`)라 ①③⑥에 사본이 있고(`:97`·`:105`·`:114`·`:121`·`:625` + **자체 `fallbackTier`(:153)에 「한쪽만 고치지 마라」 주석**) ⑤는 ko에 없다(outs 탭 미이식). ③의 `summary` 「44–22」는 **13자리**(12로케일 + ko `:625` 「44~22」).
+- **모델 재조정**: 핸드오프는 «Fable(집필 구간)»으로 적었으나 실측하면 EN 신규 문장은 표 `action` 4자리(각 10단어 미만)뿐이고 나머지는 판정·티어 산술·12로케일 전파(번역 QA) → **Opus 전 구간 · 1세션 · 렌즈 4종(딜러 포함) Opus 서브**. Q4-a·Q5-a·Q5-b와 같은 사유(`settled-decisions` §5-A-3).
+- 게이트: `check:handoff` ✅ 11KB·58행 · 코드 변경 0이라 빌드 불요 · push · `lane:sync` 4레인 ff(`550b4b49`). 레인 첫 마디 = 「`HARDEN.md` 읽고 회차 Q10 시작해」.
+
 ## 2026-09-20 (4) — queue 회차 Q4-c 머지 + «3일 늦은 머지» 경위 (본체 · 헤드 Opus)
 
 사장님 지시 = 「레인창작업이 필요한듯한데 지시서 올려줘」 → **지시서를 쓰다가 전제가 뒤집혔다.**
