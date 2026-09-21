@@ -190,10 +190,20 @@ function lookupHand(name: string): TierEntry | null {
 // "🚫 Weak" right next to "open from the cutoff/button". Mirrors the branches of
 // dict.starting.unknownAction, so every locale is corrected by this one function.
 // rank is an index into RANKS: 1 = "3", 7 = "9", 12 = "A".
-// A ~50% button range is 663 combos: 78 pairs + 312 suited leaves 273 for offsuit. Offsuit types
-// cost 12 combos each, so 273 is not reachable — the line below takes the 22 types under it
-// (264 combos): every ace (12) + K9o+ (4) + Q9o+ (3) + J9o+ (2) + 10-9o. Tiers 1-4 therefore hold
-// 78 + 312 + 264 = 654 combos = 49.3%, the conservative side of 50%. 23 types (276) would overshoot.
+//
+// Where the offsuit line comes from. Conditions assumed: 9-handed, ~100bb, folded to the button.
+// 🔴 The total does NOT derive the composition — it only fixes the COUNT. Two premises are
+// modelling choices taken from mainstream button-opening charts, not consequences of "~50%":
+//   (1) all 13 pairs are in (78 combos) and (2) all 78 suited hands are in (312 combos).
+// Granted those, 50% of 1,326 = 663 leaves 273 combos for offsuit. Offsuit types cost 12 combos
+// each, so 273 is not reachable: 22 types = 264 (total 654 = 49.32%) and 23 types = 276
+// (total 666 = 50.23%) bracket it. We take the 22 under the line — every ace (12) + K9o+ (4)
+// + Q9o+ (3) + J9o+ (2) + 10-9o — ranking offsuit types by strength, which is again a choice the
+// total cannot make for us. 🔴 Do not write this as "50%": Tiers 1-4 hold 654 combos = 49.32%.
+// 🔴 The rejected wider reading (K5o+/Q8o+/J8o+/98o = 29 types) is 738 = 55.66%, NOT "58%+" —
+// that figure was unreproducible and was withdrawn on 2026-09-21 (MA-159 ③). Reading those four
+// as exactly four added types is 26 types = 702 = 52.94%. Widening is a judgment call, not
+// arithmetic: see docs/en-first-queue.md §2-H H-3.
 // 🔴 The matching table in app/calculator/calculator-client.tsx must stay identical — never fix one side only.
 // Every suited hand fits inside the 312, so the button opens all of them; the cutoff limit lives
 // in the prose, not here, because the badge is one tier either way.

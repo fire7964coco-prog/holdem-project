@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "APT 제주 2026 가을은 9/25~10/7 제주 신화월드 LES A 카지노에서 135개 트로피 이벤트로 열립니다. 메인이벤트(#19)는 바이인 270만원·보장 22억원이며, 시리즈 전체 보장은 $350만 이상이고 타이베이 APT 챔피언십 시트가 12석 걸려 있습니다. Natural8 $3.50 스텝 위성으로 시트에 도전할 수 있지만, LES A는 외국인 전용 카지노라 대한민국 국적자는 입장할 수 없습니다.",
   category: "토너먼트",
   date: "2026-06-17",
-  updated: "2026-09-10",
+  updated: "2026-09-21",
   readTime: "12분",
   emoji: "🌊",
   layout: "tournament-guide",
@@ -431,8 +431,8 @@ A. **시리즈 전체 보장 상금이 $350만 이상**입니다. 단일 이벤�
   </a>
   <a href="/blog/appt-korea-2026-guide" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">시리즈 2편</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">APPT 코리아 2026 참가 가이드</div>
-    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">PokerStars Power Path · 9월 3~14일</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">APPT 코리아 2026 결과</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">9월 3~14일 종료 · 우승자와 상금</div>
   </a>
   <a href="/tournaments" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">필라</div>

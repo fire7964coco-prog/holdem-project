@@ -9,6 +9,7 @@ import { Trophy, Globe, MapPin, Calendar, Users, DollarSign, ChevronRight, Star,
 import {
   TOURNAMENTS,
   computeStatus,
+  isHighlighted,
   formatDateRange,
   formatMonthBadge,
   buildEventSchemas,
@@ -251,6 +252,19 @@ const STRATEGY_TIPS = [
   },
 ];
 
+/**
+ * 도시별 허브 카드.
+ *
+ * 🔴 2026-09-21 MA-158 ② — ★ 강조(`hot`)를 «손으로 박는 불리언»에서 «종료일 파생»으로 바꿨다.
+ *    검수장 지적은 3건(APT 인천·APPT 코리아·제5회 HPT)이었으나 실측하니 `hot: true` **5개가 전부
+ *    끝난 대회**였다(1~2월 APT 제주 클래식·3~4월 Triton 포함). 즉 ★가 「지금 주목할 대회」를
+ *    한 개도 안 가리키고 있었다 — 손으로 박는 값은 반드시 썩는다.
+ *    이 페이지는 `todayISO`를 **서버(빌드 시점)에서 이미 prop으로 받고 있다**(app/tournaments/page.tsx).
+ *    ★와 «종료» 라벨을 거기서 계산하므로 배포할 때마다 자동으로 맞는다 — 배열은 다시 손대지 않는다.
+ * 🔴 `end`는 대회 종료일(KST·포함). 새 대회를 넣을 때 반드시 같이 적는다 —
+ *    빼먹으면 **★ 후보에서도 «종료»에서도 영영 빠진다**(문자열↔undefined 비교는 양쪽 다 false다).
+ *    TS 추론이 누락을 컴파일 에러로 잡아 주니 이 배열의 타입을 느슨하게 만들지 마라.
+ */
 const KOREA_HUB_2026 = [
   {
     city: "제주",
@@ -258,11 +272,11 @@ const KOREA_HUB_2026 = [
     venue: "신화월드 리조트 (외국인 전용 카지노 · 내국인 참가 불가)",
     color: "bg-blue-500/15 text-blue-800 border-blue-500/30",
     events: [
-      { name: "KPC x LPT Series", date: "1.03~1.18" },
-      { name: "APT 제주 클래식", date: "1.30~2.08", hot: true },
-      { name: "Triton Poker (ONE+SHR)", date: "3.05~4.01", hot: true },
-      { name: "APT 제주 (가을)", date: "9.25~10.07" },
-      { name: "GOP 제주 (Olympus Return)", date: "12.04~12.13" },
+      { name: "KPC x LPT Series", date: "1.03~1.18", end: "2026-01-18" },
+      { name: "APT 제주 클래식", date: "1.30~2.08", end: "2026-02-08" },
+      { name: "Triton Poker (ONE+SHR)", date: "3.05~4.01", end: "2026-04-01" },
+      { name: "APT 제주 (가을)", date: "9.25~10.07", end: "2026-10-07" },
+      { name: "GOP 제주 (Olympus Return)", date: "12.04~12.13", end: "2026-12-13" },
     ],
   },
   {
@@ -279,10 +293,10 @@ const KOREA_HUB_2026 = [
     //    🔴 되돌리지 마라: 베뉴 라벨의 「외국인 전용 카지노 · 내국인 참가 불가」는 Paradise City 4행에는 맞다(APPT Korea 공식
     //    「24/7 foreigner-exclusive casino」). 문제는 배지가 아니라 «베뉴가 다른 행이 같은 배지 밑에 있는 것»이었다.
     events: [
-      { name: "GOP 인천 (Prophecy)", date: "5.15~5.24" },
-      { name: "APT 인천", date: "8.07~8.16", hot: true },
-      { name: "APPT 코리아", date: "9.03~9.14", hot: true },
-      { name: "GOP 인천 II (Labyrinth)", date: "10.30~11.08" },
+      { name: "GOP 인천 (Prophecy)", date: "5.15~5.24", end: "2026-05-24" },
+      { name: "APT 인천", date: "8.07~8.16", end: "2026-08-16" },
+      { name: "APPT 코리아", date: "9.03~9.14", end: "2026-09-14" },
+      { name: "GOP 인천 II (Labyrinth)", date: "10.30~11.08", end: "2026-11-08" },
     ],
   },
   {
@@ -291,8 +305,8 @@ const KOREA_HUB_2026 = [
     venue: "호텔 컨벤션 · 시내 베뉴 (내국인 참가 가능)",
     color: "bg-emerald-500/15 text-emerald-800 border-emerald-500/30",
     events: [
-      { name: "제5회 HPT (스위스 그랜드 호텔)", date: "9.11~9.13", hot: true },
-      { name: "APL 서울 Winter Prelims · Circuit I", date: "10.23~10.25" },
+      { name: "제5회 HPT (스위스 그랜드 호텔)", date: "9.11~9.13", end: "2026-09-13" },
+      { name: "APL 서울 Winter Prelims · Circuit I", date: "10.23~10.25", end: "2026-10-25" },
     ],
   },
 ];
@@ -515,9 +529,9 @@ function ScheduleSection({
             initial={false}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: i * 0.04 }}
-            className={`bg-card border rounded-2xl p-5 ${visibleIds.has(t.id) ? "flex" : "hidden"} flex-col gap-3 relative overflow-hidden scroll-mt-28 ${"highlight" in t && t.highlight ? "border-primary/40 shadow-sm" : "border-border"}`}
+            className={`bg-card border rounded-2xl p-5 ${visibleIds.has(t.id) ? "flex" : "hidden"} flex-col gap-3 relative overflow-hidden scroll-mt-28 ${isHighlighted(t, todayISO) ? "border-primary/40 shadow-sm" : "border-border"}`}
           >
-            {"highlight" in t && t.highlight && (
+            {isHighlighted(t, todayISO) && (
               <div className="absolute top-0 right-0 bg-yellow-500/20 text-yellow-800 text-[10px] font-bold px-2.5 py-1 rounded-bl-xl">
                 {t.type === "domestic" ? "⭐ 추천" : "⭐ 세계 최대"}
               </div>
@@ -768,7 +782,7 @@ export default function Tournaments({
           <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1 mb-3">
             <h3 className="text-sm font-bold text-foreground">도시별 주요 대회</h3>
             <span className="text-xs text-muted-foreground">
-              도시별 주요 대회만 추린 목록입니다 — 2026년 한국 대회 {KR_2026}개 전체는 위 <strong className="text-foreground/80">2026 홀덤 대회 일정표</strong>에서 볼 수 있습니다.
+              도시별 주요 대회만 추린 목록입니다 — 2026년 한국 대회 {KR_2026}개 전체는 위 <strong className="text-foreground/80">2026 홀덤 대회 일정표</strong>에서 볼 수 있습니다. <strong className="text-foreground/80">★ = 그 도시의 다음 대회</strong>
             </span>
           </div>
 
@@ -785,16 +799,31 @@ export default function Tournaments({
                   </div>
                 </div>
                 <ul className="space-y-1.5">
-                  {hub.events.map((ev) => (
-                    <li key={ev.name} className="flex items-center justify-between gap-2 text-xs">
-                      <span className="flex items-center gap-1.5 text-muted-foreground">
-                        {ev.hot && <Star className="w-3 h-3 text-primary-ink flex-shrink-0" />}
-                        {!ev.hot && <ChevronRight className="w-3 h-3 text-muted-foreground/50 flex-shrink-0" />}
-                        <span className={ev.hot ? "text-foreground font-semibold" : ""}>{ev.name}</span>
-                      </span>
-                      <span className="text-muted-foreground tabular-nums flex-shrink-0">{ev.date}</span>
-                    </li>
-                  ))}
+                  {(() => {
+                    // ★는 «아직 안 끝난 대회 중 가장 가까운 하나»에만 — 종료분은 회색 + «종료» 라벨.
+                    // 🔴 이름이 아니라 «인덱스»로 고른다 — 한 도시에 동명 대회가 둘이면(같은 투어 연 2회)
+                    //    이름 비교는 둘 다 ★를 달고, key 중복까지 같이 터진다.
+                    const leadIdx = hub.events.findIndex((ev) => todayISO <= ev.end);
+                    return hub.events.map((ev, i) => {
+                      const ended = todayISO > ev.end;
+                      const isLead = i === leadIdx;
+                      return (
+                        <li key={ev.name} className="flex items-center justify-between gap-2 text-xs">
+                          <span className="flex items-center gap-1.5 text-muted-foreground">
+                            {isLead && <Star aria-label="다음 대회" className="w-3 h-3 text-primary-ink flex-shrink-0" />}
+                            {!isLead && <ChevronRight className="w-3 h-3 text-muted-foreground/50 flex-shrink-0" />}
+                            <span className={isLead ? "text-foreground font-semibold" : ended ? "text-muted-foreground/70" : ""}>
+                              {ev.name}
+                            </span>
+                          </span>
+                          <span className="text-muted-foreground tabular-nums flex-shrink-0">
+                            {ev.date}
+                            {ended && <span className="ml-1.5 text-[10px] font-semibold text-muted-foreground/70">종료</span>}
+                          </span>
+                        </li>
+                      );
+                    });
+                  })()}
                 </ul>
               </div>
             ))}

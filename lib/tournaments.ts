@@ -91,6 +91,22 @@ export const STATUS_LABEL: Record<TournamentStatus, string> = {
   ended: "종료",
 };
 
+/**
+ * ⭐ 배지(「추천」·「세계 최대」)를 띄울지.
+ *
+ * 🔴 2026-09-21 — `highlight`는 손으로 박는 값이라 반드시 썩는다. 실측 시점에 **12건 중 6건이
+ *    이미 끝난 대회**였고(제7회 홀덤 마스터스 8/2 · 제57회 WSOP 8/5 · K Poker Cup 8/10 ·
+ *    APT 인천 8/16 · 제5회 HPT 9/13 · APPT 코리아 9/14), 그 카드들은 **「⭐ 추천」과 「종료」를
+ *    한 장에 같이** 달고 있었다. 바로 위 `computeStatus`가 날짜에서 상태를 뽑는데 배지만 정적이었던 것.
+ *    → 배지도 날짜를 타게 한다. 데이터의 `highlight`는 «추천 후보»라는 뜻이고,
+ *      «지금 추천할 만한가»는 여기서 계산한다. 끝난 대회의 `highlight`는 지우지 않아도 된다.
+ *    같은 사고가 `app/tournaments/tournaments-client.tsx`의 `KOREA_HUB_2026` ★에도 있었다(같은 날 해소).
+ */
+export function isHighlighted(t: Tournament, todayISO: string): boolean {
+  if (!("highlight" in t) || !t.highlight) return false;
+  return computeStatus(t, todayISO) !== "ended";
+}
+
 /** '2026.08.07~08.16' 형태로 표시 문자열 생성 */
 export function formatDateRange(t: Tournament): string {
   if (t.dateLabelOverride) return t.dateLabelOverride;

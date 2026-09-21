@@ -2,13 +2,13 @@
 
 export const POST: Post = {
   slug: "ggpoker-wsop-express-satellite-guide",
-  title: "GGPoker WSOP Express 위성 단계별 완전 가이드 — $0.50으로 $30,000 패스까지",
-  seoTitle: "출구가 3개다 — GGPoker WSOP Express 위성",
-  desc: "$10,000 시트만 있는 게 아닙니다. WSOP Express는 Super($30,000)·Bracelet($10,000)·Ring($5,000) 3종 패스로 갈리고, 지금 노릴 것은 12월 WSOP Paradise입니다.",
+  title: "GGPoker WSOP Express 위성 — 3종 패스 가이드",
+  seoTitle: "출구가 셋 — GGPoker WSOP Express 위성",
+  desc: "$10,000 시트만 있는 게 아닙니다. Super·Bracelet·Ring 3종 패스로 갈리는 WSOP Express 구조와 12월 파라다이스 노선을 정리했습니다.",
   tldr: "GGPoker WSOP Express는 Step 0(무료)→Step 1($0.50)→Step 2($2)→Step 3($10)→Step 4($150 MTT) 사다리이며, 2025년 7월 출시된 상시 시스템입니다. 도착지는 하나가 아니라 셋 — Super Pass($30,000, 12월 WSOP Paradise) · Bracelet Pass($10,000, 베가스 메인이벤트) · Ring Pass($5,000, 온라인 슈퍼 서킷)로 갈립니다. 2026 베가스 시리즈는 7월 15일에 끝났으므로, 지금 시작한다면 목표는 12월 1~18일 바하마입니다.",
   category: "토너먼트",
   date: "2026-06-17",
-  updated: "2026-07-28",
+  updated: "2026-09-21",
   readTime: "13분",
   emoji: "🎰",
   layout: "tournament-guide",
@@ -274,7 +274,7 @@ $3,500 슈퍼 서킷 메인이벤트 엔트리 + $3,500 Last Longer 참가권입
 
 :::readnext[이어서 읽기]
 /blog/wsop-2026-tournament-guide | WSOP 2026 완전 가이드 | /images/wsop-2026-tournament-guide-hero.webp
-/blog/appt-korea-2026-guide | APPT 코리아 2026 참가 완전 가이드 | /images/appt-korea-2026-guide-hero.webp
+/blog/appt-korea-2026-guide | APPT 코리아 2026 결과 | /images/appt-korea-2026-guide-hero.webp
 :::
 
 ## FAQ — 자주 묻는 질문
@@ -330,7 +330,7 @@ A. 2026년에는 **3월 31일~4월 12일 프라하 힐튼**에서 열렸고 이�
 ## 관련 글
 
 - [WSOP 2026 완전 가이드 — 일정·메인이벤트·참가 방법](/blog/wsop-2026-tournament-guide)
-- [APPT 코리아 2026 참가 완전 가이드 — PokerStars 위성부터 현장까지](/blog/appt-korea-2026-guide)
+- [APPT 코리아 2026 결과 — 우승자와 대회 기록](/blog/appt-korea-2026-guide)
 - [홀덤 대회 참가 방법 — 온라인 무료부터 WSOP까지](/blog/holdem-tournament-how-to-enter)
 - [홀덤 대회 바이인·참가비 — 초보는 얼마짜리부터?](/blog/holdem-tournament-buy-in-cost)
 `.trim(),

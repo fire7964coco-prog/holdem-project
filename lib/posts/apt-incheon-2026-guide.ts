@@ -23,7 +23,7 @@ export const POST: Post = {
   tldr: "APT 인천 2026 메인이벤트(#20)는 홍콩의 스티븐 팡(Stephen Pang)이 우승해 상금 4억 1,118만원(3인 ICM 딜)과 24K 골드 라이언 트로피를 가져갔습니다. 총 1,393엔트리로 역대 한국 최대 기록을 새로 썼고 상금풀은 30억 888만원이었습니다. 준우승은 중국 Shoumin Zhang(3억 6,650만원), 3위는 미국 Yifu He(2억 5,700만원)이며 톱3는 11월 타이베이 APT 챔피언십 메인이벤트 시트($10,000 상당)도 받았습니다. 단 파라다이스 시티는 외국인 전용 카지노라 국내 거주 대한민국 국적자는 입장 자체가 불가합니다.",
   category: "토너먼트",
   date: "2026-06-16",
-  updated: "2026-08-28",
+  updated: "2026-09-21",
   readTime: "13분",
   emoji: "🎯",
   layout: "tournament-guide",
@@ -448,7 +448,7 @@ Natural8은 시트 외에 **Country Exclusives(국가별 독점 예선)** 도 �
 
 :::readnext[이어서 읽기]
 /blog/apt-jeju-2026-fall-guide | APT 제주 2026 가을 참가 완전 가이드 | /images/apt-jeju-2026-fall-guide-hero.webp
-/blog/appt-korea-2026-guide | APPT 코리아 2026 참가 완전 가이드 | /images/appt-korea-2026-guide-hero.webp
+/blog/appt-korea-2026-guide | APPT 코리아 2026 결과 | /images/appt-korea-2026-guide-hero.webp
 :::
 
 ## FAQ
@@ -483,7 +483,7 @@ A. **2026 인천분 온라인 위성은 전부 끝났습니다.** $35 메가 위
 
 **Q. APT 인천 말고 한국에서 열리는 다른 포커 대회도 있나요?**
 
-A. 있습니다. 같은 시기 전후로 [APT 제주 2026 가이드](/blog/apt-jeju-2026-fall-guide)와 [APPT 코리아 2026 가이드](/blog/appt-korea-2026-guide)도 함께 참고하세요. 국내외 20개+ 대회 일정은 [2026 홀덤 대회 일정](/tournaments)에서 한눈에 확인할 수 있습니다. (모두 외국인 전용 카지노 개최라 입장 조건은 동일합니다.)
+A. 있습니다. 같은 시기 전후로 [APT 제주 2026 가이드](/blog/apt-jeju-2026-fall-guide)와 [APPT 코리아 2026 결과](/blog/appt-korea-2026-guide)도 함께 참고하세요. 국내외 20개+ 대회 일정은 [2026 홀덤 대회 일정](/tournaments)에서 한눈에 확인할 수 있습니다. (모두 외국인 전용 카지노 개최라 입장 조건은 동일합니다.)
 
 **Q. 메인이벤트에서 상금을 타면 세금은 어떻게 되나요?**
 

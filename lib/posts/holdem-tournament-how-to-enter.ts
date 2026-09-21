@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "홀덤 대회 참가는 ① 온라인 무료 대회 → ② 홀덤펍 리그 → ③ 위성(새틀라이트)으로 시트 확보 → ④ 국내 대형(WPL·HPT 등) → ⑤ 해외(WSOP) 순으로 단계를 밟으면 됩니다. 카지노에서 열리는 국내 대회(APT·APPT)는 한국 여권으로는 입장이 안 됩니다. 현장은 신분증 + 회원카드 + 바이인만 있으면 등록할 수 있습니다.",
   category: "토너먼트",
   date: "2026-06-12",
-  updated: "2026-09-17",
+  updated: "2026-09-21",
   hideSummaryImageSlot: true,
   readTime: "17분",
   emoji: "🎫",
@@ -177,7 +177,7 @@ export const POST: Post = {
 | 대회 | 시기·장소 | 참가 방법 | 한국 여권 |
 |------|-----------|-----------|:---:|
 | [APT 인천 2026](/blog/apt-incheon-2026-guide) | 8월 7~16일 개최 — **종료** (파라다이스 시티) | 현장 등록 또는 Natural8 위성 | ❌ |
-| [APPT 코리아 2026](/blog/appt-korea-2026-guide) | 9월 3~14일, 파라다이스 시티 | 현장 등록 / PokerStars 온라인 예선 | ❌ |
+| [APPT 코리아 2026](/blog/appt-korea-2026-guide) | 9월 3~14일 개최 — **종료** (파라다이스 시티) | 현장 등록 / PokerStars 온라인 예선 | ❌ |
 | [APT 제주 (가을)](/blog/apt-jeju-2026-fall-guide) | 9~10월, 신화월드 | 현장 등록 또는 위성 | ❌ |
 | KPC x LPT | 연초 개최 — 2026년 회차는 1월 종료 (제주 LES A) | 현장 등록 또는 위성 | ❌ |
 
