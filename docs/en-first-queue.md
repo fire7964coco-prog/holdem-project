@@ -111,6 +111,14 @@ EN 12편 정정 → 7로케일(de·es·id·ja·pt·zh·zh-hant) 전파 완료. 1
 
 - **G-1**(낮음) `holdem-tournament` L179 「Set up an account on the event's platform (e.g., the WSOP LIVE app for WSOP, …)» — WSOP는 **계정 2개**(WSOP LIVE + Caesars Rewards · 룰북 Rule 4 L66~68 「Registration for both accounts is required to participate in any WSOP Event» · Rule 10). 예시를 「the WSOP LIVE app plus a Caesars Rewards account for WSOP»로. es는 Q4-c에서 「—más Caesars Rewards—»로 앞섰다(`lib/posts-es/holdem-tournament.ts:180`) · L302 체크리스트 「loyalty card if required»도 같은 자리(es L307 「en el WSOP es obligatoria: Caesars Rewards»). EN 정정 시 ar·de·id·ja·pt·zh·zh-hant 전파(fr는 EN 미러 여부 확인).
 
+### 2-H. queue 회차 Q10이 올린 것 (2026-09-21 · 머지 `51d79100` · **판정만 하고 안 고친 3건** · 전부 ①원본)
+
+> 자리 = **계산기 도구**(`components/calculator/` + 12사본 + ko 클라이언트)이지 포스트가 아니다. 근거 전문 = `docs/harden-queue-진행.md` §5 Q10-4.
+
+- **H-1**(🔴 높음) **`K9s`·`Q9s`·`J9s`(폴백 T4)가 `10-9s`(표 T3)를 엄격 지배** — 09-20이 닫은 `K10o < K9o`와 **같은 종**이다. 처방도 그때와 같이 **표에 T3으로 등재**하는 것인데, 등재하면 `desc`·`action`이 **12자리 × 3핸드** 새로 필요해 Q10 범위 밖이었다(브리프 `calculator-landing-rewrite.md` §5 「미등재 수티드 커넥터·K9s·Q9s 항목 보강 후보」와 같은 자리 — **같이 닫아라**).
+- **H-2**(🔴 높음) **아웃츠 탭 상단 카드가 「Rule of 4 / Rule of 2」 캡션 바로 아래 «정확값»을 찍는다**(9아웃츠에서 화면 35.0% ↔ 9×4 = 36). **딜러 밖 두 렌즈(수학·교열)가 독립 수렴**했고, Q10 ⑥이 닫은 `exactNote`와 **같은 축**이다. 선결 판정 = 「캡션이 **스트리트 라벨**인가 **값 라벨**인가」 · 걸린 것 = 12로케일 문자열.
+- **H-3**(🟠 **사장님 판단 자리**) **폴백 T5 56타입 중 50타입(600콤보)이 T4 최약체 `32s`보다 세다**(K8o 56.0% ↔ 32s 36.1% · 겹침 19.8pp). 🔴 **09-20 기각안(수티드에 «작은 쪽» 바닥)을 되살리는 게 아니다** — 남은 방향은 **오프수트 줄을 넓히는 쪽**이고, 콤보 산술상 **23번째 타입이 정확히 `K8o`**(276콤보 = 666 · 22타입 654보다 663에 가깝다).
+
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - 🟠 **EN `paired-board-strategy` — 22 counterfeiting의 리버 조건 누락**(HI GTO 독립 전략·수학 검수, 2026-09-15). 원문 `a running three counterfeits it into playing the board`를 한정된 런아웃으로 명확히 할 필요가 있다. `22/6633K`는 보드 Two Pair를 플레이하지만 `22/66332`는 홀카드 22로 Full House를 만든다. HI 초안의 별도 오역(`66333`을 Two Pair로 분류)은 HI에서 고쳐 카드 재검산까지 종결했다. EN·기발행 형제 언어의 적용은 이 회차에서 하지 않았으며, 후속 회차는 실제 해당 문장을 확인한 뒤 최소 수정한다. 원본/도입 결함 구분과 증거 정본 = [HI 원문 계약](hi-gto-source-contract.md#hi-독립-검수에서-구체화한-런아웃-조건).

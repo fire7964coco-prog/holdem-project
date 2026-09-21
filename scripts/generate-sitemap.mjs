@@ -283,6 +283,15 @@ function sourcesFor(path) {
   if (ROUTE_SOURCES[path]) return ROUTE_SOURCES[path];
   // 동적 라우트 [region] — 자기 템플릿과 데이터만 본다(인덱스 변경에 딸려 오르지 않게).
   if (path.startsWith("/pub/")) return ["app/pub/[region]", "lib/pubs.ts"];
+  // 🔴 2026-09-21 — 계산기 랜딩 11개(en + 10로케일)는 «로케일 사전 + 공용 도구 컴포넌트»다.
+  //    사전만 보면 도구 본체가 바뀐 회차에 lastmod가 안 오른다 — 실측: 09-21 Q10에서
+  //    `/en/calculator`만 09-20에 멈춰 있었고(EN 사전이 공용 쪽에 산다), 09-19 조판 회차는
+  //    공용 컴포넌트만 고쳐서 **12개 전부** 안 올랐다. `/pub` 건과 반대다: 저기선 인덱스가
+  //    하위 페이지 내용이 아니었지만, 여기선 공용 컴포넌트가 **11개 페이지에 실제로 렌더된다.**
+  //    🔴 ko `/calculator`는 넣지 않는다 — 별도 클라이언트라 공용 컴포넌트를 안 쓴다.
+  if (/^\/[a-z-]+\/calculator$/.test(path)) {
+    return [`app${path}`, "components/calculator"];
+  }
   const dir = `app${path}`;
   if (existsSync(join(root, dir))) return [dir];
   // /en/calculator 처럼 로케일 하위가 별도 디렉터리로 없으면 한 단계 위로
@@ -351,7 +360,15 @@ const tournamentAlts = [
 // ⚠ 로케일은 동적 `[locale]`이 아니라 **언어별 실제 디렉터리**다(app/en · app/ja …).
 //   처음에 `app/[locale]`로 짰다가 경로가 없어 25개가 전부 폴백(=빌드일)으로 떨어졌다.
 const localeHomeEntries = SECONDARY_LOCALES.map((l) =>
-  entry(`${SITE}/${l}`, gitLastModified([`app/${l}/page.tsx`, `app/${l}`], siteToday), "daily", "0.8", localeHomeAlts)
+  // 🔴 2026-09-21 — `app/${l}`(디렉터리 전체)를 **뺐다.** 하위 `blog`·`calculator`·`solver`·
+  //    `tournaments`가 바뀔 때마다 홈 10개가 같이 lastmod를 올렸다(홈 내용은 그대로 · `/pub`
+  //    09-20 건과 같은 종 · 이 파일 머리 주석이 경고하는 바로 그 경우). 실측 = Q10 계산기 회차에
+  //    /de /es /fr /hi /id /ja /ms /pt /zh /zh-hant 홈 10개가 딸려 올랐다.
+  //    🔴 이 경로는 `sourcesFor()`를 **안 거친다** — 정적 라우트와 따로 산다.
+  //    🪶 공용 커뮤니티 피드(`app/community/community-home.tsx`)는 **일부러 안 넣었다**:
+  //       넣으면 09-16 커밋 하나로 홈 **25개가 한꺼번에** 08-25 → 09-16으로 뛴다(실측).
+  //       홈의 «틀»은 page·layout이고, 피드 본문의 신선도는 `changefreq: daily`가 말한다.
+  entry(`${SITE}/${l}`, gitLastModified([`app/${l}/page.tsx`, `app/${l}/layout.tsx`], siteToday), "daily", "0.8", localeHomeAlts)
 );
 
 const tournamentEntries = TOURNAMENT_LOCALES.map((l) =>
