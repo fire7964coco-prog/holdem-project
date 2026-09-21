@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Rozdanie Texas Hold'em przebiega tak: wpłata blindów → dwie karty zakryte dla każdego → preflop → flop (3 karty) → turn (1 karta) → river (1 karta) → showdown, w sumie cztery rundy licytacji.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-07-13",
+  updated: "2026-09-21",
   masterUpdated: "2026-07-02",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -306,7 +306,7 @@ Im bliżej buttona jesteś, tym lepiej — mówienie ostatnim pozwala ci zobaczy
 
 ### 3. Ślepe gonienie projektów
 
-Projekt koloru czy strita nie oznacza automatycznego sprawdzenia. Musisz zważyć **pot odds** — cenę sprawdzenia w stosunku do wielkości puli. Jeśli pula wynosi 100 000, a musisz sprawdzić 50 000, twój projekt musi się domykać przynajmniej w około 33% przypadków, żeby się to opłacało.
+Projekt koloru czy strita nie oznacza automatycznego sprawdzenia. Musisz zważyć **pot odds** — cenę sprawdzenia w stosunku do wielkości puli. Jeśli pula wynosi 100 000 — łącznie z zakładem przeciwnika — a musisz sprawdzić 50 000, musisz wygrywać przynajmniej w około 33% przypadków, żeby się to opłacało — wygrywać, a nie tylko domykać projekt.
 
 ### 4. Blefowanie na riverze słabą ręką znikąd
 

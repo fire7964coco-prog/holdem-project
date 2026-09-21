@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Một ván Texas Hold'em diễn ra: đặt mù → chia hai lá bài tẩy → preflop → flop (3 lá) → turn (1 lá) → river (1 lá) → lật bài, tổng cộng bốn vòng cược.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-08-10",
+  updated: "2026-09-21",
   masterUpdated: "2026-07-02",
   keepImagesInBody: true,
   readTime: "16 phút",
@@ -306,7 +306,7 @@ Càng gần nút càng tốt — hành động sau cùng cho phép bạn thấy 
 
 ### 3. Đuổi cửa chờ một cách mù quáng
 
-Một cửa chờ Thùng hay Sảnh không có nghĩa là tự động theo. Bạn phải cân **tỷ lệ pot (pot odds)** — giá của cú theo so với kích thước pot. Nếu pot là 100.000 và bạn phải theo 50.000, cửa chờ của bạn cần hoàn tất ít nhất khoảng 33% số lần thì mới đáng.
+Một cửa chờ Thùng hay Sảnh không có nghĩa là tự động theo. Bạn phải cân **tỷ lệ pot (pot odds)** — giá của cú theo so với kích thước pot. Nếu pot là 100.000 — đã tính cả cược của đối thủ — và bạn phải theo 50.000, bạn cần thắng ít nhất khoảng 33% số lần thì cú theo mới đáng — thắng, chứ không chỉ là hoàn tất cửa chờ.
 
 ### 4. Bluff river với bài yếu một cách bất ngờ
 

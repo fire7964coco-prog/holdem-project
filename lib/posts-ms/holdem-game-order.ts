@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Satu tangan Texas Hold'em berjalan begini: letak blinds → terima dua kad pemula → preflop → flop (3 kad) → turn (1 kad) → river (1 kad) → showdown, dengan empat pusingan pertaruhan kesemuanya.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-09-15",
+  updated: "2026-09-21",
   masterUpdated: "2026-07-02",
   keepImagesInBody: true,
   readTime: "16 minit",
@@ -308,7 +308,7 @@ Semakin dekat anda dengan butang, semakin bagus — bertindak paling akhir membo
 
 ### 3. Mengejar draw secara membuta tuli
 
-Draw Flush atau Straight tak bermakna call automatik. Anda kena timbang **pot odds** — harga untuk call berbanding saiz pot. Kalau pot 100,000 dan anda perlu call 50,000, draw anda perlu lengkap sekurang-kurangnya kira-kira 33% daripada masa untuk berbaloi.
+Draw Flush atau Straight tak bermakna call automatik. Anda kena timbang **pot odds** — harga untuk call berbanding saiz pot. Kalau pot 100,000 termasuk taruhan lawan dan anda perlu call 50,000, anda perlu menang sekurang-kurangnya kira-kira 33% daripada masa untuk call itu berbaloi — menang, bukan sekadar draw itu jadi.
 
 ### 4. Bluff mengejut di river dengan tangan lemah
 

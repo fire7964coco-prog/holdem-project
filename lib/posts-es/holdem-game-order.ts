@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Una mano de Texas Hold'em sigue este orden: se ponen las ciegas → se reparten dos cartas propias → preflop → flop (3 cartas) → turn (1 carta) → river (1 carta) → showdown, con cuatro rondas de apuestas en total. En el preflop habla primero el jugador a la izquierda de la ciega grande; a partir del flop, el primero a la izquierda del botón. Al final gana la mejor mano de cinco cartas entre tus dos cartas propias y las cinco comunitarias.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-21",
+  masterUpdated: "2026-09-21",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎬",
@@ -259,11 +259,11 @@ Aquí tienes todas las acciones disponibles en la mesa — la parte que más con
 | Bet (apostar) | Haces la primera apuesta de la ronda | Cuando nadie ha apostado todavía |
 | Raise (subir) | Aumentas por encima de la apuesta actual | Cuando hay una apuesta delante |
 | Re-raise (3-bet) | Subes por encima de una subida | Cuando hay una subida delante |
-| All-in | Metes todas tus fichas | En cualquier calle — en tu turno, como apuesta o subida |
+| All-in | Metes todas tus fichas | En cualquier calle — en tu turno, como apuesta, pago o subida |
 
 </div>
 
-==r:**Importante:** en el preflop no puedes pasar — salvo que tu propia ciega o straddle ya sea la apuesta viva.== La ciega grande es una apuesta viva, así que todos los demás tienen que pagar, subir o retirarse. ==La ciega grande puede pasar si nadie ha subido — y también quien puso un straddle vivo, porque esa apuesta es su apertura y actúa el último en el preflop (reglas 159 y 165 del reglamento Live Action de la WSOP); para el resto, pasar empieza en el flop.==
+==r:**Importante:** en el preflop no puedes pasar — salvo que tu propia ciega o straddle ya sea la apuesta viva.== La ciega grande es una apuesta viva, así que toda posición cuya propia apuesta no sea ya la apuesta viva tiene que pagar, subir o retirarse. ==La ciega grande puede pasar si nadie ha subido ni puesto un straddle — y también quien puso un straddle vivo, porque esa apuesta es su apertura y actúa el último en el preflop (reglas 159 y 165 del reglamento Live Action de la WSOP); para el resto, pasar empieza en el flop.==
 
 Para una guía de decisión más profunda sobre cuándo usar cada movimiento — con una tabla de decisión check-call-raise-fold — mira las [acciones de apuesta explicadas](/es/blog/holdem-betting-actions).
 
@@ -308,7 +308,7 @@ Cuanto más cerca estés del botón, mejor — hablar el último te deja ver lo 
 
 ### 3. Perseguir proyectos a ciegas
 
-Un proyecto de color o de escalera no significa pagar en automático. Tienes que sopesar las **pot odds** — el precio de pagar frente al tamaño del bote. Si el bote — con la apuesta de tu rival ya dentro — es de 100,000 y tienes que pagar 50,000, tu proyecto necesita completarse al menos alrededor de un 33% de las veces para que compense.
+Un proyecto de color o de escalera no significa pagar en automático. Tienes que sopesar las **pot odds** — el precio de pagar frente al tamaño del bote. Si el bote — con la apuesta de tu rival ya dentro — es de 100,000 y tienes que pagar 50,000, necesitas ganar al menos alrededor de un 33% de las veces para que el pago compense — ganar, no solo completar el proyecto.
 
 ### 4. Tirarte un farol en el river con una mano floja de la nada
 

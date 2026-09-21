@@ -15,7 +15,7 @@ export const POST: Post = {
   tldr: "Preflop, the player to the left of the big blind bets first. On the flop, turn and river it is the first live player to the left of the button — usually the small blind. (Heads-up flips this.) The hand itself runs blinds → hole cards → preflop → flop → turn → river → showdown, with four betting rounds.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-09-11",
+  updated: "2026-09-21",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎬",
@@ -136,7 +136,7 @@ The river is where you settle the whole hand. Weigh your hand strength, your opp
 
 If two or more players are still in after the river betting, the hand goes to **showdown**.
 
-![Poker showdown infographic — on a 10♣ 7♥ J♦ 4♠ 9♣ board, pocket aces A♥ A♦ beat pocket kings K♥ K♣](/images/blog-holdem-showdown.webp "At showdown the surviving players reveal their cards — here the higher pair, aces over kings, takes the pot")
+![Poker showdown infographic — on a 10♣ 7♥ J♦ 4♠ 9♣ board, pocket aces A♥ A♦ beat pocket kings K♥ K♣](/images/blog-holdem-showdown.webp "At showdown the surviving players reveal their cards — here a pair of aces beats a pair of kings and takes the pot")
 
 Showdown rules:
 
@@ -266,11 +266,11 @@ Here is every action available at the table — the part beginners mix up most.
 | Bet | Make the first wager of a round | When no one has bet yet |
 | Raise | Increase over the current bet | When there's a bet to you |
 | Re-raise (3-bet) | Raise over a raise | When there's a raise to you |
-| All-in | Push all your chips in | Any street — in turn, as a bet or raise |
+| All-in | Push all your chips in | Any street — in turn, as a bet, a call, or a raise |
 
 </div>
 
-==r:**Important:** preflop you can't check — unless your own post is already the live bet.== The big blind is a live bet, so everyone else must call, raise, or fold. ==The big blind may check if no one has raised — and so may a player who posted a live straddle, since that post is their opening bet and they act last preflop (WSOP Live Action Rules 159 · 165); for everyone else, checking begins on the flop.==
+==r:**Important:** preflop you can't check — unless your own post is already the live bet.== The big blind is a live bet, so every position whose own post isn't already the live bet must call, raise, or fold. ==The big blind may check if no one has raised or straddled — and so may a player who posted a live straddle, since that post is their opening bet and they act last preflop (WSOP Live Action Rules 159 · 165); for everyone else, checking begins on the flop.==
 
 For a deeper decision guide on when to use each move — with a check-call-raise-fold decision table — see [betting actions explained](/en/blog/holdem-betting-actions).
 
@@ -315,7 +315,7 @@ The closer you are to the button, the better — acting last lets you see what e
 
 ### 3. Chasing draws blindly
 
-A flush or straight draw doesn't mean an automatic call. You have to weigh **pot odds** — the price of the call against the size of the pot. If the pot — with your opponent's bet already in it — is 100,000 and you must call 50,000, your draw needs to complete at least about 33% of the time to be worth it.
+A flush or straight draw doesn't mean an automatic call. You have to weigh **pot odds** — the price of the call against the size of the pot. If the pot — with your opponent's bet already in it — is 100,000 and you must call 50,000, you need to **win** at least about 33% of the time for the call to be worth it — win, not merely complete the draw.
 
 ### 4. Bluffing the river with a weak hand out of nowhere
 
@@ -353,7 +353,7 @@ A. Post blinds → deal two hole cards → preflop betting → reveal the flop (
 
 **Q. Who goes first in poker?**
 
-A. It depends which "first" you mean, and that is exactly why the question trips people up. Three different moments claim the word in a single hand: first to *post* (the small blind), first to *act* preflop (UTG, immediately left of the big blind), and first to act once the flop is out (back to the small blind). So the answer flips mid-hand — UTG opens the preflop round, then the small blind opens every round after it. (Heads-up is the lone exception — see the next question.)
+A. It depends which "first" you mean, and that is exactly why the question trips people up. Three different moments claim the word in a single hand: first to *post* (the small blind), first to *act* preflop (UTG, immediately left of the big blind), and first to act once the flop is out (back to the small blind). So the answer flips mid-hand — UTG opens the preflop round, then the small blind opens every round after it. (Heads-up flips this — see the next question.)
 
 **Q. Who bets first after the flop?**
 

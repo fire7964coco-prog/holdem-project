@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Mkono mmoja wa Texas Hold'em huenda hivi: weka blinds → gawa karata mbili za mkononi → preflop → flop (karata 3) → turn (karata 1) → river (karata 1) → showdown, ukiwa na raundi nne za kuweka dau kwa jumla.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-07-13",
+  updated: "2026-09-21",
   masterUpdated: "2026-07-02",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -306,7 +306,7 @@ Kadiri ulivyo karibu na button, ndivyo bora — kucheza mwisho kunakuruhusu kuon
 
 ### 3. Kufuata draws bila kufikiri
 
-Draw ya flush au straight haimaanishi call ya kiotomatiki. Lazima upime **pot odds** — bei ya call dhidi ya ukubwa wa pot. Kama pot ni 100,000 na lazima u-call 50,000, draw yako inahitaji kukamilika angalau karibu 33% ya wakati ili istahili.
+Draw ya flush au straight haimaanishi call ya kiotomatiki. Lazima upime **pot odds** — bei ya call dhidi ya ukubwa wa pot. Kama pot ni 100,000 ikijumuisha dau la mpinzani na lazima u-call 50,000, unahitaji kushinda angalau karibu 33% ya wakati ili call istahili — kushinda, si kukamilisha draw tu.
 
 ### 4. Ku-bluff river na mkono dhaifu ghafla
 

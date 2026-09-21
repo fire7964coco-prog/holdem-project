@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Texas Hold'em kennt 5 Setz-Aktionen: Check (kostenlos schieben), Bet (die Runde eröffnen), Call (einen Einsatz mitgehen), Raise (erhöhen – der Mindest-Raise entspricht dem vorherigen Bet oder Raise) und Fold. Checken darfst du nur, solange vor dir kein offener Einsatz steht – preflop also normalerweise nur als Big Blind (oder wer einen Live Straddle gepostet hat).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-21",
+  masterUpdated: "2026-09-21",
   keepImagesInBody: true,
   readTime: "9 Min.",
   emoji: "🃏",
@@ -226,7 +226,7 @@ A. Reden ja – über die laufende Hand nein. Die offiziellen WSOP-Turnierregeln
 
 **Q. Darf man Preflop checken?**
 
-A. Nur wenn dein eigener Post die aktive Bet ist und niemand erhöht hat – normalerweise der Big Blind, aber auch ein Live Straddle (WSOP Live Action Rules 159 · 165): Der Post gilt als deine Eröffnungsbet, darum darfst du checken und den Flop gratis sehen. Jede andere Position muss Preflop callen, raisen oder folden.
+A. Nur wenn dein eigener Post die aktive Bet ist und niemand erhöht hat – normalerweise der Big Blind, aber auch ein Live Straddle (WSOP Live Action Rules 159 · 165): Der Post gilt als deine Eröffnungsbet, darum darfst du checken und den Flop gratis sehen. Jede Position, deren eigener Post nicht die aktive Bet ist, muss Preflop callen, raisen oder folden.
 
 **Q. Darf man raisen, nachdem jemand All-in gegangen ist?**
 

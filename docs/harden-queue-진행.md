@@ -35,7 +35,7 @@
 | **Q11** | **게이트 신설 III — 계산기 «원천↔사본» + ko 순회** | 🔴 **Q10이 실증한 사각을 코드로 막는다**(정본 = §5 Q10-3 · 규율 = `settled-decisions` **§3-H**). 🔴 **헤드 09-21 실측으로 재료 셋 중 둘의 전제가 바뀌었다 — 아래가 정본이다**: ⓐ **`check:calc-parity`에 «요약 ↔ 코드» 항 신설**(실측 ✅ 없다 — `scripts/calc-dict-parity.ts:96`은 `cnt("starting.summary", …)`로 **EN↔로케일 «행 개수»만** 본다. 행이 드는 **핸드 코드**는 아무도 안 본다) → `starting.summary` 행의 핸드 코드 집합 ↔ `HAND_TABLE` 티어별 집합 대조(범위 표기 `66–22`·`A8s–A2s`·`A10o–J10o`·`98s–54s`와 **ko의 물결표 `~` 판본**을 함께 전개). **12사본 동시 오류를 잡는 유일한 축이다** ⓑ 🔴 **«ko를 순회에 넣어라»는 한 줄로 안 된다**(실측 정정): 게이트는 `app/<locale>/calculator/dict.ts`를 읽는데 **ko는 그 파일이 아예 없다**(`app/calculator/calculator-client.tsx` 한 파일 안에 배열 리터럴로 산다) → **ko 전용 추출기**가 필요하다(`HAND_TABLE`·`summary` 배열을 소스에서 파싱). Q10에서 ko `66`의 EN 이탈(F유형)이 게이트 밖이었던 이유가 이것이다 ⓒ 🪶 **`seo.description` ≤160 항은 «부채»가 아니다**(실측 정정): 10로케일 **전부 통과**(최장 fr 158 · de 157 · es 155 · ms 154 · pt 154 · id 149 · hi 143 · zh 126 · ja 109 · zh-hant 107) → 신설하더라도 **재발 방지용**이고 우선순위는 ⓐⓑ 아래다 | **Opus · 1세션** · 🔴 게이트마다 `--selftest` 먼저 + 첫 실행 전건 원문 판정([[gate-tuning-loop-is-the-work]]). ⓐ가 본체 · ⓑ는 추출기라 분량이 있다 — 한 세션에 닫았다(갈라지 않음) | ✅ | (아래 §1-Q11) | 렌즈 3종 = 지적 20 · 반영 20 · 기각 0 (1차 2종 18 → **2차 교열이 «내 수리가 만든» 7건 추가**) | 09-21 |
 
 | **Q12-a** | **MA-147 ① 이행 (1/2) — all-in · showdown** | 원문 = `~/Downloads/홀덤검수/mailbox/out-검수장.md` **MA-147 ①** · 원장 = `홀덤검수/ledger/en/{holdem-all-in-rules,holdem-showdown-rules}.md` · 브리프 = `docs/harden-brief/queue-Q12-a-rules-allin-showdown.md`. **ⓐ ⓑ ⓒ ⓔ ⓕ = TDA 16/17/18 · B 149 · A 92/96/108/109 계열 21자리.** 🔴 **«조문»으로 갈랐다 — 파일로 가르면 ⓑ(B 149 노리밋 한정) 7자리가 두 세션에 쪼개지고 all-in FAQ 한 줄의 ⓐ·ⓑ·ⓔ 겹침을 못 가른다**(브리프 §0) | **Opus 전 구간 · 1세션** | ✅ | (아래 §1-Q12-a) | 렌즈 4종 = 지적 33 · 반영 27 · 기각 4 · 기록 2 / **2차 교열 = 지적 12 · 반영 10 · 기각 2** | 09-21 |
-| **Q12-b** | **MA-147 ① 이행 (2/2) — 보편 단정 묶음** | 같은 MA-147 ① 중 **ⓓ ⓖ** = `holdem-game-order`(ⓓ L299 「complete」→「win」 · ⓖ L273·L356·L139 캡션·L269) · `holdem-betting-actions`(ⓖ L221) · `holdem-blind-meaning`(ⓖ L30·L68·L68·L170·L162). 조문 계열 = B 155~165 · A 87·88.d.1(Q12-a의 TDA/149 계열과 겹치는 자리 0). 🔴 **Q12-a가 남긴 것 = §2 미결 「Q12-a가 남긴 것」 절을 먼저 읽어라** | **Opus 전 구간 · 1세션** | ⏳ | | | |
+| **Q12-b** | **MA-147 ① 이행 (2/2) — 보편 단정 묶음** | 같은 MA-147 ① 중 **ⓓ ⓖ** = `holdem-game-order`(ⓓ L299 「complete」→「win」 · ⓖ L273·L356·L139 캡션·L269) · `holdem-betting-actions`(ⓖ L221) · `holdem-blind-meaning`(ⓖ L30·L68·L68·L170·L162). 조문 계열 = B 155~165 · A 87·88.d.1(Q12-a의 TDA/149 계열과 겹치는 자리 0). 브리프 = `docs/harden-brief/queue-Q12-b-보편단정.md`. 🔴 **Q12-a가 남긴 것 = §2 미결 「Q12-a가 남긴 것」 절을 먼저 읽어라** | **Opus 전 구간 · 1세션** | ✅ | (아래 §1-Q12-b) | 렌즈 4종 = 지적 47(raw · 렌즈 간 중복 8 제거 후 **39**) · 반영 31 · 기각 5 · 등재 3 / **2차 교열 = 지적 9 · 반영 8 · 기각 1** | 09-21 |
 | **Q13** | **MA-147 ②③ 이행 — EN-먼저 glossary 묶음 + es 정정 3** | **MA-147 ②**(es 회차 6 ↔ id 회차 5 **독립 수렴** · id 단독 결함 0) + **③ es 고유 3**. 🔴 **헤드 09-21 실측: 앵커 21개 중 «고쳐진 것 0»**(2a2는 표머리가 「In every case」가 아니라 **「In every one」**이라 앵커만 빗나간 것이고 결함은 그대로 열려 있다 — 앵커 축어를 그대로 믿지 마라). 대상 6편 = `holdem-cooler` 4 · `holdem-bad-beat` 4 · `holdem-glossary` 3 · `holdem-rake` 4 · `holdem-straddle` 5 · `holdem-fish` 1. es 3 = fish 「a su izquierda」→「derecha」(**WRONG** · 액션 시계방향) · rake FAQ 「Solo se cobra…」 · cooler FAQ 「~75%」 삭제 | **Opus 전 구간 · 1세션** | ⏳ | | | |
 | **Q14** | **MA-148 이행 — zh+zh-hant 정정 13 + EN-먼저 신규 4** | **MA-148 ①~④**(보고서 §D · 원장 `ledger/zh/`·`ledger/zh-hant/` 16편 1,958행). 🔴 **헤드 09-21 실측: 17개 앵커 중 «고쳐진 것 1»**(④ `3-bet-or-fold from the SB` «vs a raise»는 표 L179·본문 L222~224가 이미 닫혔고 **요약 L297·FAQ L273 두 자리만 남았다** — 검수장 지적이 이 둘을 정확히 가리킨다). ① zh+zh-hant 공통 c-bet 직답 「四到五成」→「約 30–45%」(+ pt·de·ja 옛 값 인용 = **5로케일**) ② zh 4 ③ zh-hant 8 ④ EN-먼저 4(`position-play` 「necessarily above 100%」 = 자사 캡처 5/13 스팟 반례 · `3bet` 「position leverage」 · SB 2자리 · `limping` tldr 토너 전제). 🟠 요청 = `.solver-captures/data-zh.json` 13스팟 **IP 측 `actions` 빈 배열** → 「IP 65–75% c-bet」 4행 대조 불가(UNV) | **Opus 전 구간 · 1세션** | ⏳ | | | |
 
@@ -786,6 +786,50 @@ B 176 축어 예시(100 벳 + 140 올인 → **240**)·A 96.a(1,700 + 500 → **
 `check:hygiene` 0(🔴 4 = 내 zh 편집의 `「」` 혼입 → 정본 `“ ”`로 교정) · `check:faq-schema` 0 · `check:cjk`·`check:hangul` 0 ·
 `check:answer-echo` 🟠 47 → **44**(zh 블록 3개가 선재 규격 위반이었는데 148→117 · 141→127로 같이 교정) · `build` 70 + 577.
 
+### §1-Q12-b (2026-09-21 · MA-147 ① 2/2 · 보편 단정 — game-order · betting-actions · blind-meaning)
+
+**대상** = 3편 · EN + 24로케일 + KO(`lib/posts.ts`) · **44파일**
+**EN 11자리** = ⓓ 1 · ⓖ 10(게임오더 4 · 베팅액션 1 · 블라인드 5) + **KO 사본 2**
+
+🔴 **브리프의 «없다»가 세 번 틀렸다 — 전부 내 grep이 표기를 놓친 것이다.** 이 회차의 가장 큰 교훈이다.
+- §1 #7 「de·zh-hant에는 «유일한 예외» 괄호가 없다」 → **둘 다 있었다**(de L45 `Die eine Ausnahme` 대문자 · zh-hant L41 `唯一的例外是死按鈕`). 내 패턴은 `dead button`·`死盲`·`死鈕`였다.
+- §1 #11 「ar에는 그 FAQ가 없다」 → **있었다**(ar L183 `ويمكنك بدلاً من ذلك الانتظار…`). 내 패턴은 `أو يمكنك الانتظار`였다.
+- §1 #2 캡션 열거가 **25 중 15만** 덮어 10로케일이 판정 밖이었다 → 수학 렌즈가 **bn 하나가 영어 축어 `aces over kings`를 그대로 들고 있음**을 찾아냈다.
+🪶 세 건 모두 [[review-mechanize-not-repeat]]의 「**«없다» 보고 전에 탐지 방법부터 의심하라**」 그대로다. **로케일 스윕은 «한 낱말 패턴»이 아니라 «자리 전수 열거»로 하라**(§3 승격).
+
+**🔴 렌즈가 잡은 내 회귀 1건(가장 값어치 있는 지적)** — 원장 #68이 처방한 문면을 그대로 썼는데 그 처방이 **덜 정확했다**:
+「every position **without a live post of its own**」은 **SB와 «스트래들에 눌린 BB»까지 면제**한다(B L753–754 「Blinds are part of a participant's bet unless … A blind other than the big blind may be treated as dead」 = 평시 SB의 포스트는 **live**다 · TDA L466 「dead SB」가 별조건으로 존재하는 것이 방증).
+→ **정관사 판으로 교체**: 「every position **whose own post isn't already the live bet**」. 같은 문단 앞 절이 이미 쓰던 잣대(`unless your own post is already the live bet`)다.
+🔴 **수학 렌즈는 이 자리를 «논리 완결 ✅»로 통과시켰다** — 면제되어야 할 넷만 검사하고 «포함되어야 할 둘»을 안 봤기 때문이다. **한 렌즈만 잡은 항목이 값을 낸다**([[adversarial-review-lens-diversity]]).
+
+**로케일 범위(결재 40 2등급 · 자리마다 적용)**
+- **ⓓ(팟오즈 문턱 «완성률→승률») = §13급 → 25 전부 + KO.** 25편이 **전부** 「완성/성사」로 틀려 있었다. 값(33%)은 26자리 전건 무변경.
+- **ⓖ 문안 = 핵심 9**(자리마다 보유 로케일이 다르다 — 브리프 §1 표).
+- **캡션 관용구 = en·bn·ro 3편만.** de·pl은 **1차 출처로 기각**(네이티브 렌즈 Playwright 실측: 독일어 풀하우스는 `Asse **mit** Siebenen` · 폴란드어는 `full asy **na** królach` → `über`/`nad`는 서열 의미뿐). **ro만 진짜 관용구였다**(888poker.ro 축어 「full house cu **ași peste regi**」 = A풀하우스의 이름) → `ași contra regi`.
+- **ar은 «스트래들 절»을 받지 않는다**(2차 판정 · 아래 「되돌리지 마라」).
+
+**§13 손검산** — 캡션 1자리. 보드 `10♣ 7♥ J♦ 4♠ 9♣` · A측 베스트5 `A♥ A♦ J♦ 10♣ 9♣`(원페어 A) / K측 `K♥ K♣ J♦ 10♣ 9♣`(원페어 K).
+스트레이트 불가(**8이 없다** · A측은 K·Q 부재 · K측은 Q 부재) · 플러시 불가(♣3 최대) · **키커 J-10-9가 양쪽 동일** → 페어 랭크만으로 갈린다 = **원페어 A 단독 승**.
+→ 「the higher pair」는 참이고 **「aces over kings」라는 명명만 거짓**이다(투페어/A풀 관용구). 산수 = 50,000 ÷ 150,000 = **33.3%**, 26자리 전건 무변경(de 프레이밍 50k+50k도 같은 값).
+
+**1차 렌즈 4종(Opus 병렬) 지적 47 · 중복 8 제거 후 39 · 반영 31 · 기각 5 · 등재 3**
+1. 🔴 **딜러**: 위 회귀(「live post」→「the live bet」) · 본문↔FAQ 헤지 불일치 · 「Two exceptions」가 개수로 다시 닫음(B 158 buy-the-button이 세 번째 포스터) · 「in a cash game」 한정이 **토너먼트 독자에게 구멍**을 남김(A 36 「blind bets will be removed from an absent Participant's stack」)
+2. 🔴 **수학**: bn 캡션 미처리 · de가 `==…==` **앵커 내부**를 바꿈 · 「팟 100,000」이 같은 글 FAQ(「팟 100,000 + 벳 20,000 = 120,000 · 6:1」)와 **반대 관행** → 16꼬리+KO에 «상대 벳 포함» 한정어 이식
+3. 🔴 **네이티브**: ro 관용구 확정 · de·zh-hant 「유일한 예외」 실재 · zh 직답에 「离席也躲不掉」 잔존 · zh-hant 직답↔표 모순 · zh 「活跨注」 신조어(코퍼스는 `live straddle`) · de 「wo der **Raum**」(=공간) · ar 「العودة」 중복 · ar stripe 「بلا استثناء」
+4. 🔴 **교열**: 사본 세기 표 · de·zh-hant 스코핑 오류 · ja 직답 한정어 누락 · zh·zh-hant 본절 「才能」 배타 · zh-hant 「就能/才能」 강도 변경
+
+**🔴 2차 교열 지적 9 · 반영 8** — 프로토콜 §5-⑤가 또 값을 냈다. **1차 수리가 만든 것이 6건**:
+- 🔴 **R1이 고친 기준을 바로 옆 문장이 되돌렸다** — 「BB는 아무도 **레이즈하지 않았으면** 체크할 수 있다」는 **스트래들 팟에서 거짓**이다(BB가 1BB를 더 내야 한다) → 8로케일 「raised **or straddled**」로.
+- 🔴 **KO 팟오즈 정의를 반대 방향으로 고쳤다** — 「콜 금액 대비 팟 크기」(= 팟÷콜)로 썼는데 33%는 콜÷팟이고 같은 글 FAQ도 그쪽이다 → 「팟 크기 대비 콜 금액」으로 되돌림.
+- 🔴 **ar FAQ 세 번째 경로 누락**(브리프 실측 오류 ③) · zh-hant 직답 2곳 헤지 누락 · zh-hant 괄호의 **부착 대상 오류**(「매 핸드 강제주 2개」에 헤즈업은 예외가 아니다 — 바뀌는 건 «누가 내는가»뿐) · bn에 EN이 기각한 분사구를 넣음.
+→ 교훈: **«수리»도 사본이다.** 한 자리를 고치면 그 자리의 **이웃 문장·역방향 정의·같은 글 FAQ**를 같이 센다.
+
+**게이트** — `audit:hard` 9로케일 🔴 0(🟠 3 = es·zh·zh-hant **선재** C2 표 쌍) · KO 두 슬러그 🔴 0(🟠 2 = 선재 `blind-meaning↔small-blind-role`) ·
+`check:drift` **신규 0**(🔴 6 = 전부 ar 선재 · 꼬리 100 무변동) · `check:structure` 핵심 결손 0 · 링크 개수 결손 0 ·
+`check:answer-echo` **🔴 1 · 🟠 44 = 착수 전과 동일**(🔴 1 = `ko/appt-korea-2026-guide` **선재** · 커밋 `685c152a` · 이 회차 무관) ·
+`check:hygiene` 0 · `check:cjk` 0 · `check:hangul` 0 · `check:seo-sync` 0 · `check:faq-schema` 575/575 🔴 0 · `check:directives` 0 · `build` **70 + 577**.
+🪶 **회차 중 자기 수리 2건**: ja 직답이 178자(규격 90~170) + 본문과 축어 겹침 🔴 → 재작성해 164자·echo 0으로. **게이트가 내 수리를 되받아쳤다.**
+
 ## 2. 미결 (해결될 때까지 유지)
 
 - ✅ ~~`lib/render-markdown.ts:200`이 모든 이미지에 `width="1200" height="630"`~~ → **Q7-a에서 닫았다.** 파일별 실제 치수표
@@ -883,6 +927,15 @@ B 176 축어 예시(100 벳 + 140 올인 → **240**)·A 96.a(1,700 + 500 → **
   - 🟠 **EN showdown `tldr`이 「마지막 어그레서가 먼저」를 무조건으로 말한다**(L8). 표 1행에는 이번에 «토너먼트 올인 예외» 예고를 넣었지만
     tldr은 안 건드렸다 — **desc·tldr을 고치면 `check:seo-sync` 축이 열리고 9로케일 메타를 같이 움직여야 한다**. 별건으로.
   - 🟠 **zh `holdem-all-in-rules` 직답 블록 L209가 131자**(규격 60~130 · 선재 부채 · 이 회차 무변경). 다른 세 블록은 이번에 규격 안으로 되돌렸다.
+
+- 🆕 🟠 **Q12-b가 남긴 것**(2026-09-21):
+  - 🔴 **ar은 EN 09-11 델타(라이브 스트래들 절)를 여전히 안 받았다** — 이번에 ar 두 편에 그 절을 이식했다가 **되돌렸다**(2차 판정): ar `betting-actions`의 tldr·표·불릿이 전부 「프리플랍 체크는 BB뿐」이라 **FAQ만 앞서가면 파일 안 모순**이 된다. 기준 문구(「자기 포스트가 그 라이브 벳인가」)만 남겼고 ar은 스트래들 없는 프레임으로 **일관**한다. 그 델타 이식은 **ar drift 회차 몫**(Q12-a가 남긴 ar showdown 149 소급과 한 묶음).
+  - 🟠 **꼬리 16로케일은 ⓖ를 안 받았다**(결재 40 ② · 문안은 핵심 9까지). 받은 것은 ⓓ(25 전부)와 캡션(bn·ro)뿐. 꼬리 `game-order`의 All-in 표 셀이 아직 「Anytime / في أي وقت / 항상」(= `522b57f8` 이전 판)인 것도 같은 부채다 — **ar 포함 17편**.
+  - 🟠 **KO `lib/posts.ts`의 `holdem-odds-calculator`가 «완성 확률»을 「승률/내 승리 확률」이라 부른다**(L1309 tldr · L1343 바로 답 · L1467 표 헤더). 수학 렌즈 검산: 9아웃 `9÷46 = 19.57%` · 4아웃 `8.70%` · 8아웃 `17.39%` — **산수는 전부 맞고 라벨만 틀렸다.** 그 글은 「내 확률 > 팟 오즈 → 콜」(L1473)을 가르치는데 좌변에 넣으라고 준 값이 완성률이다 = **이 회차가 25로케일에서 지운 혼동의 네 번째 사본.** EN `holdem-pot-odds`는 전건 「chance of winning/equity」로 **이미 옳다** → **KO 단독 · KO 정정 회차 몫.**
+  - 🟠 **`holdem-straddle` 프레이밍 3자리가 버튼 스트래들·리스트래들을 모른다**(딜러 렌즈 ①원본 · **EN-먼저**): ⓐ `game-order`·`betting-actions`의 「a live straddle … they act **last** preflop」 ↔ B 165 「**In 5-5-10 and above: One additional straddle is permitted** … **re-straddle, from any position**」(리스트래들이 서면 최초 스트래들러는 마지막이 아니다) ⓑ `blind-meaning` L121 「posted **from the seat left of the big blind**」 ↔ B 165 「either **Under the Gun (UTG) or the Button**, with the **Button straddle taking precedence**」 ⓒ 같은 글 L127 「It's **the one time the button pays a blind**」 ↔ 같은 글이 스트래들을 「a **voluntary extra blind**」로 정의 + 버튼 스트래들 허용 = 자기모순. → `en-first-queue` 등재 요청(§5).
+  - 🟠 **「Heads-up is the exception」이 6로케일 × 2자리(12)에 남아 있다**(en 172·360 등). 교열 렌즈 판정 = **고치지 않는 쪽 권고**(그 두 자리는 «행동 순서 규칙»에 명시 한정돼 있고 `==g:…==`는 로케일 패리티 앵커다). **판정 완료 · 다시 파지 마라.**
+  - 🟠 **8로케일 `betting-actions` FAQ가 기준과 그 여집합을 축어로 두 번 말한다**(대우 구조). 2차 교열 확신 **낮음**·스타일. 「everyone else」로 되돌리면 **B 160·B 158 포스터가 다시 빠지므로** 되돌리지 않는다 — 판정 완료.
+  - 🟠 **tr `game-order` 캡션이 상대를 언급하지 않는다**(「daha yüksek çift, As As, potu alır」 · 나머지 24로케일과 구조가 다르다). 거짓은 아니다 — 기록만.
 
 ## 3. 되돌리지 마라
 
@@ -1101,6 +1154,22 @@ B 176 축어 예시(100 벳 + 140 올인 → **240**)·A 96.a(1,700 + 500 → **
   - zh `holdem-strategy` VPIP 15–22% · zh-hant shc 「AK 約 47%」 문장은 **이 회차가 일부러 안 고쳤다**(전자 = zh 회차 4 «되돌리지 마라» · 후자 = EN-먼저 §5).
   - ja `holdem-straddle` 「ハウスルール」 마무리 · ja `holdem-positions` 블록의 9석 나열 — 유지.
   - zh·zh-hant CITY 사전의 Seefeld·Velden은 **일부러 라틴**이다(관용 음차 미확정 · 추측 금지).
+
+### Q12-b — 다시 열지 마라 (2026-09-21)
+
+1. 🔴 **프리플랍 체크 기준은 «정관사»다 — 「a live post of its own」으로 되돌리지 마라.**
+   원장 `en/holdem-betting-actions` #68이 제안한 두 문면 중 **「without a live post of its own」 쪽은 덜 정확하다**:
+   평시 SB의 포스트도 **live**이고(B L753–754 「Blinds are part of a participant's bet unless … **A blind other than the big blind may be treated as dead**」 · TDA L466이 「dead SB」를 별조건으로 든다), 스트래들 팟의 BB도 live post를 갖는다 → 둘 다 «체크해도 된다»로 새어 나간다.
+   정본 = **「every position whose own post isn't (already) the live bet」**(같은 문단 앞 절의 잣대와 동일). 로케일 8종도 한정 구조로 옮겼다(de `deren eigener Post` · es/pt `cuya/cuja própria` · ja `自分の投入額が…なっていない` · zh `自己贴出的注…不是` · zh-hant `自己下的那筆注…不是` · id `yang taruhannya sendiri bukan` · ar `ليس رهانه هو الرهان القائم`).
+2. 🔴 **「The big blind may check if no one has raised **or straddled**」의 «or straddled»를 빼지 마라**(8로케일). 스트래들은 레이즈가 아니라서, 빼면 스트래들 팟의 BB가 «체크 가능»으로 읽힌다(B 165).
+3. 🔴 **ar 두 편에 라이브 스트래들 절을 도로 넣지 마라** — ar은 09-11 델타 이전 판이라 tldr·표·불릿이 「BB뿐」이고, FAQ만 앞서가면 파일 안 모순이 된다(§2). **델타 전체를 ar drift 회차에서 한 번에.**
+4. 🔴 **「aces over kings」 처방을 de·pl에 적용하지 마라** — 1차 출처 실측으로 **기각**됐다(독일어 풀하우스 = `Asse **mit** Siebenen` · 폴란드어 = `full asy **na** królach` · 루마니아어만 `ași **peste** regi`가 A풀하우스의 이름이다 · 888poker.ro 축어). de 캡션의 `Asse schlagen Könige`는 **격·가독 때문**이지 관용구 때문이 아니다 — 커밋 사유를 바꿔 적으면 다음 세션이 pl·ro 판정을 되살린다.
+5. 🔴 **KO 팟오즈 정의는 「팟 크기 대비 콜 금액」이다**(= 콜÷팟). 「콜 금액 대비 팟 크기」로 뒤집지 마라 — 33%도, 같은 글 FAQ(L2298)도, EN 마스터(`the price of the call against the size of the pot`)도 전부 콜÷팟이다. 2차 교열이 이 방향을 한 번 되돌렸다.
+6. 🔴 **「Two/두 예외」를 다시 «개수로» 닫지 마라** — `common/häufige/habituales/常見的` 같은 완화어를 유지한다. B 158(buy-the-button = BB + 데드 SB)과 B 160(미스드 블라인드 포스트)이 **세 번째 포스터**를 만든다.
+7. 🔴 **「in a cash game」 한정을 지우지 마라 · 토너먼트 절도 지우지 마라.** A 36 축어 「If a registered Participant is **not present** … **all forced antes and blind bets will be removed from an absent Participant's stack**」 — 캐시의 post/wait/straddle 세 갈래는 **토너먼트에 없다.**
+8. 🔴 **세 번째 경로(UTG 라이브 스트래들)의 「허용하는 룸에 한해」 헤지를 빼지 마라.** B 160은 WSOP 하우스룰이고 B 165가 곧바로 게임별 한도를 단다(「In 1-2-5 games: One live straddle is permitted, **capped at $10**」).
+9. 🔴 **zh의 스트래들 역어는 `live straddle`(라틴)이다** — 「活跨注」를 다시 만들지 마라(zh 3편 전체가 라틴 표기로 통일돼 있다). **zh-hant는 `活盲抓`가 정본**이다(대만 표준 · 7자리 정착).
+10. 🔴 **로케일 스윕은 «한 낱말 패턴»이 아니라 «자리 전수 열거»로 하라.** 이 회차 브리프의 「없다」가 **세 번 틀렸다**(de `Die eine Ausnahme` 대문자 · zh-hant `死按鈕` 표기 · ar FAQ 어순). 셋 다 grep 패턴이 표기를 못 맞춘 것이지 자리가 없던 게 아니다. **25로케일 스윕은 «자리별 1행» 표를 만들어 25/25를 채워라**([[review-mechanize-not-repeat]] 「«없다» 보고 전 탐지방법부터 의심」).
 
 ### Q12-a — 다시 열지 마라 (2026-09-21)
 
@@ -1815,6 +1884,31 @@ pdf-page 19 · number-format 24 · image-dims 8). 전 게이트에 «못 보는 
 - 🟠 **Q12a-7 `docs/update-calendar.md` 요청 없음.**
 - 🪶 **Q12a-8 sitemap** — `updated`를 올린 파일 **34개**(EN 2 + 로케일 32). 배포 후 IndexNow는 그 34 URL만.
 
+### Q12-b (2026-09-21 · MA-147 ① 2/2 — 보편 단정 묶음)
+
+- 🟠 **Q12b-1 MB 통지 초안**(검수장 발신 · **EN 변경 커밋이라 MA-123 요청 1에 따라 필수**):
+  「**MA-147 ① 중 ⓓ ⓖ(= `holdem-game-order`·`holdem-betting-actions`·`holdem-blind-meaning` 11자리) 이행 완료** — EN + 24로케일 + KO **44파일**.
+  ⓓ(팟오즈 문턱을 «완성률»로)는 **§13급으로 판정해 25로케일 전부 + KO** 전파했다 — 25편이 **전부** 「완성/성사」로 틀려 있었다(값 33%는 26자리 무변경).
+  🔴 **원장 #68의 처방 문면 두 개 중 하나가 덜 정확했다**: 「every position **without a live post of its own**」은 **평시 SB와 스트래들 팟의 BB까지 면제**한다(B L753–754 · TDA L466 「dead SB」가 별조건). 정본은 **정관사 판** 「every position **whose own post isn't already the live bet**」다 — 원장 #68 근거란을 그렇게 갱신해 달라.
+  🔴 **원장 #24(「aces over kings」)의 전파 처분**: 관용구가 **살아 있는 로케일은 en·bn·ro 셋뿐**이다. **de `Asse über Könige`·pl `asy nad królami`는 관용구가 아니다**(1차 출처: PokerStrategy.de `Asse **mit** Siebenen` · PokerStrategy PL `full asy **na** królach`). **ro만 진짜다** — 888poker.ro 축어 「full house cu **ași peste regi**」.
+  🔴 **되돌리지 마라** = 진행 파일 §3 「Q12-b」 10항.
+  🟠 **ar은 이번에도 «스트래들 절»을 안 받았다**(파일 안 모순 회피 · ar drift 회차 몫) · **꼬리 16은 ⓖ 대상 아님**(결재 40 ②).」
+- 🟠 **Q12b-2 §6-0 통지 필요**(헤드가 머지 때 붙인다) — 이 회차가 **ja·zh·zh-hant 파일 6개**를 만졌다:
+  `lib/posts-ja/{holdem-game-order,holdem-betting-actions,holdem-blind-meaning}.ts` · `lib/posts-zh/…` 3편 · `lib/posts-zh-hant/…` 3편(합 9편).
+  통지 내용 = 「§3 「Q12-b」 10항 · **zh 스트래들 역어는 `live straddle`(라틴), zh-hant는 `活盲抓`** · zh-hant `blind-meaning` L41 괄호는 «부착 대상»이 강제주 2개가 아니라 «누가 내는가»다」.
+  🪶 착수 시점 세 워크트리 **전부 clean**(`git -C ../Holdem-<loc> status --porcelain -- lib/posts-<loc>/` 0건) — 겹침 없음.
+- 🟠 **Q12b-3 `settled-decisions` 승격 후보 2**:
+  ⓐ 🔴 **「프리플랍 체크 면제 기준은 «자기 포스트가 **그** 라이브 벳인가»다」** — 부정관사 판(「a live post of its own」)은 SB·스트래들 팟 BB를 샌다. §3-F(카드·범위어) 계열로. **원장 처방도 실측해야 한다는 실증**이기도 하다.
+  ⓑ 🔴 **「로케일 스윕의 «없다»는 탐지 방법부터 의심한다 — «한 낱말 패턴»이 아니라 «자리별 25행 표»로 센다」** — 이 회차에서 **세 번** 틀렸다(대문자 · 이형 표기 · 어순). [[review-mechanize-not-repeat]] 확장.
+- 🟠 **Q12b-4 `docs/en-first-queue.md` 등재 요청 1** — **`holdem-straddle` 프레이밍 3자리**(§2 「Q12-b가 남긴 것」 4번째 불릿 · B 165 축어 동봉 · **EN-먼저 · 8로케일 전파**).
+- 🟠 **Q12b-5 핸드오프 ▶1 갱신 요청** — 「Q12-a ✅ 종결 · 다음은 Q12-b」를 **「Q12-a·Q12-b 둘 다 ✅ 종결(MA-147 ① 전건 이행) · 다음은 Q13(MA-147 ②③) 또는 Q14(MA-148)」**로.
+- 🟢 **Q12b-6 `locale-intentional-diffs` 등재 0** — 이 회차가 만든 «일부러 다른» 자리는 없다. ar의 스트래들 부재는 «편차»가 아니라 **미소급 부채**(§2).
+- 🟠 **Q12b-7 `docs/update-calendar.md` 요청 없음.**
+- 🟠 **Q12b-8 선재 🔴 1건 보고** — `check:answer-echo` 🔴 echo 1 = **`ko/appt-korea-2026-guide` L10 머리말**(「14일 인천 파라다이스 시티에서」가 본문과 축어 겹침 · 커밋 `685c152a` 유래 · **이 회차 무관 · 워크트리에서 미변경 확인**). KO 정정 회차 재료로.
+- 🔴 **Q12b-10 `check:stamp` 🔴 24건은 전부 선재이고 «헤드 결정»이다** — 24건 중 **22건이 커밋 `64c0fd9a`**(09-17 계산기 랜딩 10로케일 신설 · 헤드 통지 (3) 축어 「본문 계산기 링크 66곳 재조준(29파일 · `updated` **안 올림**)」) · 나머지 2건은 `abdc7a21`(Q5-c 레인). **이 회차 파일은 0건**(내 44파일 전부 `updated: 2026-09-21`).
+  🔴 판정이 필요하다: 링크 재조준을 «기계적 변경»으로 보아 `settled-decisions` §1-C에 등재해 닫을지, 아니면 그 29파일의 `updated`를 올릴지. **닫지 않으면 게이트가 매 회차 🔴 24를 띄우고 다음 세션이 또 판다.**
+- 🪶 **Q12b-9 sitemap** — `updated`를 올린 파일 **44개**(EN 3 + 로케일 40 + KO 1 = `lib/posts.ts` 안 2슬러그). 배포 후 IndexNow는 그 URL만(KO는 `/blog/holdem-game-order`·`/blog/holdem-blind-meaning`).
+
 ## 6. 자산 축적 체크 (매 회차 마감 3종)
 
 ① 키워드뱅크 — 해당 회차만 ② 편차 판정 → §5 ③ 판정 정본 승격 → §5
@@ -1878,3 +1972,16 @@ pdf-page 19 · number-format 24 · image-dims 8). 전 게이트에 «못 보는 
 (A 108은 실재하지만 「Protect Your Hand」다 — 원장이 처방한 인용을 렌즈가 원문 대조로 뒤집었다).
 ⑤ 🪶 **교훈 2**: «**«국면 분리» 수리는 한 글에서 네 자리를 센다 — 표·본문·직답 블록·FAQ.**»
 2차 교열이 잡은 🔴 3건이 전부 «표만 고치고 직답 블록을 남긴» 유형이었고, 그중 하나(ar)는 **한 로케일이 두 글에서 반대로 말하는** 상태였다.
+
+**Q12-b**: ① 키워드뱅크 — **해당 없음**(조문·한정어 정정 회차 · seoTitle·desc·tags·H2 골격 변경 0)
+② 편차 판정 → §5 **Q12b-6**(등재 0)
+③ 판정 정본 승격 → §3 「Q12-b — 다시 열지 마라」 10항 + §5 **Q12b-3**(`settled-decisions` 후보 2)
+④ 🪶 **교훈(정본 후보)**: «**원장이 준 처방 문면도 실측 대상이다**» — 원장 #68이 제안한 두 문면 중
+「without a live post of its own」(부정관사)은 **평시 SB와 스트래들 팟의 BB까지 면제**한다. 처방을 그대로 옮겨 적고
+나서야 딜러 렌즈가 잡았다. **«정본이 있으니 창작 불요»는 «검산 불요»가 아니다.**
+⑤ 🪶 **교훈 2**: «**로케일 스윕의 «없다»는 탐지 방법부터 의심한다**» — 이 회차 브리프의 「그 자리가 없다」가
+**세 번 틀렸다**(de `Die eine Ausnahme` 대문자 · zh-hant `死按鈕` 이형 표기 · ar FAQ 어순). 셋 다 자리는 있었고
+**내 grep 패턴이 못 맞춘 것**이다. 25로케일 스윕은 «자리별 25행 표»를 만들어 25/25를 채워라.
+⑥ 🪶 **교훈 3**: «**«수리»도 사본이다**» — 2차 교열이 잡은 8건 중 6건이 1차 수리가 만든 것이었고,
+그중 🔴 2건은 «내가 고친 기준을 **바로 옆 문장**이 되돌린 것»(스트래들 팟의 BB)과 «**정의를 반대 방향으로** 고친 것»(KO 팟오즈)이다.
+한 자리를 고치면 **그 자리의 이웃 문장·역방향 정의·같은 글 FAQ**를 같이 센다.

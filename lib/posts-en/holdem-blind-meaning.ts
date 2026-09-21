@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Blinds are forced bets posted before cards are dealt. The small blind sits left of the dealer button and the big blind to their left; the big blind — usually double the small blind — is the table's betting unit.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-09-13",
+  updated: "2026-09-21",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "💰",
@@ -39,7 +39,7 @@ Blinds are ==the engine that keeps poker moving== — the first piece of the [ru
 
 ## What Is a Blind in Poker — and Why Does It Exist?
 
-A **blind** is a bet you're forced to make *before* your cards arrive — you're betting "blind," sight unseen. Two players post them on every normal hand: the small blind and the big blind, the two seats immediately left of the dealer button. (The one exception is a dead button, which can leave the small blind unposted for a hand.)
+A **blind** is a bet you're forced to make *before* your cards arrive — you're betting "blind," sight unseen. Two players post them on every normal hand: the small blind and the big blind, the two seats immediately left of the dealer button. (Two common exceptions: a dead button, which can leave the small blind unposted for a hand, and heads-up play, where the button itself posts the small blind — see below.)
 
 Why force anyone to pay? To keep the game alive. ==r:Without blinds, every player could fold and wait endlessly for premium hands==; pots would be empty, bluffing would be pointless, and the game would stall. ==g:Two forced bets every hand guarantee there's always something to fight for.==
 
@@ -77,7 +77,7 @@ Understand the big blind and the game's number-talk — raise sizes, stack depth
 
 ## Small Blind and Big Blind Rules: Who Posts Them, and When
 
-Both blinds are posted **before the deal**, and the dealer button moves one seat clockwise after every hand — so the blind seats rotate with it and ==everyone pays both blinds once per orbit==. Nobody gets to skip their turn by sitting out — step away and you either post the blinds you missed or wait for the big blind to reach you again.
+Both blinds are posted **before the deal**, and the dealer button moves one seat clockwise after every hand — so the blind seats rotate with it and, in normal rotation, ==everyone pays both blinds once per orbit==. Step away and what happens next depends on the format: in a cash game you post the blinds you missed when you return, wait for the big blind to reach you again, or — where the house allows it — take the under-the-gun live straddle instead; in a tournament the blinds and antes come out of your stack whether you are in your seat or not.
 
 | | Small Blind | Big Blind |
 |------|-------------|-------------|
@@ -171,7 +171,7 @@ A. Yes — that's the big blind's "option." If everyone only calls, the big blin
 
 **Q. Can you fold after posting a blind?**
 
-A. Yes. On your turn you can fold like anyone else; the small blind can give up rather than complete to the big blind, but posted blinds are never refunded.
+A. Yes. On your turn you can fold like anyone else; the small blind can give up rather than complete to the big blind, but you never get a posted blind back by folding.
 
 **Q. Who posts the blinds in heads-up poker?**
 
@@ -179,7 +179,7 @@ A. With only two players, the rule flips: the dealer button posts the small blin
 
 **Q. What happens if you miss your blind?**
 
-A. In most card rooms you post the missed blinds when you return — the big blind plays as a live bet and the small blind is a dead chip added to the pot. Alternatively, you can wait until the big blind naturally reaches your seat.
+A. In most card rooms you post the missed blinds when you return — the big blind plays as a live bet and the small blind is a dead chip added to the pot. Alternatively, you can wait until the big blind naturally reaches your seat — or, in rooms that allow it, come back in as the under-the-gun live straddle.
 
 **Q. Is "the big blind" the same as "the blinds"?**
 

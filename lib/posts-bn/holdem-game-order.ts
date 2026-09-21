@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "টেক্সাস হোল্ডেমের একটা হ্যান্ড এভাবে চলে: blind দিন → 2টা hole কার্ড বিলি করুন → preflop → flop (3 কার্ড) → turn (1 কার্ড) → river (1 কার্ড) → showdown, মোট 4টা betting রাউন্ড নিয়ে।",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-07-13",
+  updated: "2026-09-21",
   masterUpdated: "2026-07-02",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -129,7 +129,7 @@ River সেই জায়গা যেখানে আপনি পুরো 
 
 River-এর betting-এর পরেও দুই বা তার বেশি খেলোয়াড় টিকে থাকলে, হ্যান্ড **showdown**-এ যায়।
 
-![পোকার showdown ইনফোগ্রাফিক — 10♣ 7♥ J♦ 4♠ 9♣ বোর্ডে pocket aces A♥ A♦ pocket kings K♥ K♣-কে হারায়](/images/blog-holdem-showdown.webp "Showdown-এ টিকে থাকা খেলোয়াড়রা কার্ড দেখান — এখানে বড় pair, aces over kings, pot নিয়ে যায়")
+![পোকার showdown ইনফোগ্রাফিক — 10♣ 7♥ J♦ 4♠ 9♣ বোর্ডে pocket aces A♥ A♦ pocket kings K♥ K♣-কে হারায়](/images/blog-holdem-showdown.webp "Showdown-এ টিকে থাকা খেলোয়াড়রা কার্ড দেখান — এখানে বড় pair, aces vs kings, pot নিয়ে যায়")
 
 Showdown-এর নিয়ম:
 
@@ -306,7 +306,7 @@ button-এর যত কাছে, তত ভালো — শেষে অ্�
 
 ### 3. চোখ বুজে draw-এর পেছনে ছোটা
 
-Flush বা straight draw থাকার মানে এই নয় যে call করতেই হবে। আপনাকে **pot odds** ওজন করতে হবে — call-এর দাম বনাম pot-এর আকার। যদি pot 100,000 হয় আর আপনাকে 50,000 call করতে হয়, তাহলে আপনার draw অন্তত প্রায় 33% বার পূর্ণ হওয়া উচিত যাতে এটা লাভজনক হয়।
+Flush বা straight draw থাকার মানে এই নয় যে call করতেই হবে। আপনাকে **pot odds** ওজন করতে হবে — call-এর দাম বনাম pot-এর আকার। যদি প্রতিপক্ষের বাজি ধরে pot 100,000 হয় আর আপনাকে 50,000 call করতে হয়, তাহলে আপনাকে অন্তত প্রায় 33% বার জিততে হবে যাতে এটা লাভজনক হয় — জিততে হবে, শুধু draw পূর্ণ হলেই নয়।
 
 ### 4. দুর্বল হ্যান্ড নিয়ে হঠাৎ river-এ bluff করা
 

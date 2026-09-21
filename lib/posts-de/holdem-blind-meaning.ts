@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Blinds sind Zwangseinsätze, die vor dem Austeilen der Karten gesetzt werden. Der Small Blind sitzt direkt links vom Dealer-Button, der Big Blind links daneben; der Big Blind – meist das Doppelte des Small Blinds – ist die Setzeinheit des Tischs.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-09-12",
-  masterUpdated: "2026-09-13",
+  updated: "2026-09-21",
+  masterUpdated: "2026-09-21",
   keepImagesInBody: true,
   readTime: "9 Min.",
   emoji: "💰",
@@ -42,7 +42,7 @@ Blinds sind ==der Motor, der Poker am Laufen hält== – das erste Stück der [T
 
 ## Was sind Blinds beim Poker – und warum gibt es sie?
 
-Ein **Blind** ist ein Einsatz, den du bringen musst, *bevor* deine Karten ankommen – du setzt „blind“, ohne etwas gesehen zu haben. Zwei Spieler setzen ihn in jeder normalen Hand: der Small Blind und der Big Blind, die beiden Sitze direkt links vom Dealer-Button. (Die eine Ausnahme ist der Dead Button, bei dem der Small Blind in einer Hand ausfallen kann.)
+Ein **Blind** ist ein Einsatz, den du bringen musst, *bevor* deine Karten ankommen – du setzt „blind“, ohne etwas gesehen zu haben. Zwei Spieler setzen ihn in jeder normalen Hand: der Small Blind und der Big Blind, die beiden Sitze direkt links vom Dealer-Button. (Zwei häufige Ausnahmen: der Dead Button, bei dem der Small Blind in einer Hand ausfallen kann, und das Heads-up, wo der Button selbst den Small Blind setzt – siehe unten.)
 
 Warum überhaupt jemanden zum Zahlen zwingen? Damit das Spiel lebt. ==r:Ohne Blinds könnte jeder Spieler endlos folden und auf Premiumhände warten==; die Pots wären leer, Bluffen wäre sinnlos, und das Spiel käme zum Stillstand. ==g:Zwei Zwangseinsätze pro Hand garantieren, dass es immer etwas zu holen gibt.==
 
@@ -80,7 +80,7 @@ Verstehst du den Big Blind, erschließt sich das gesamte Zahlen-Vokabular des Sp
 
 ## Small-Blind- und Big-Blind-Regeln: Wer setzt sie – und wann?
 
-Beide Blinds werden **vor dem Austeilen** gesetzt, und der Dealer-Button wandert nach jeder Hand einen Sitz im Uhrzeigersinn weiter – die Blind-Sitze rotieren mit, und ==jeder zahlt beide Blinds einmal pro Runde (Orbit)==. Durch Aussetzen drückt sich niemand davor – stehst du auf, setzt du die verpassten Blinds bei der Rückkehr nach oder wartest, bis der Big Blind wieder zu dir kommt.
+Beide Blinds werden **vor dem Austeilen** gesetzt, und der Dealer-Button wandert nach jeder Hand einen Sitz im Uhrzeigersinn weiter – die Blind-Sitze rotieren mit, und ==jeder zahlt beide Blinds in der normalen Rotation einmal pro Runde (Orbit)==. Was dann passiert, hängt vom Format ab: Im Cashgame setzt du die verpassten Blinds bei der Rückkehr nach, wartest, bis der Big Blind wieder zu dir kommt, oder steigst – wo der Kartenraum es zulässt – als Under-the-Gun-Live-Straddle wieder ein; im Turnier werden Blinds und Antes von deinem Stack abgezogen, ob du am Platz sitzt oder nicht.
 
 | | Small Blind | Big Blind |
 |------|-------------|-------------|
@@ -174,15 +174,15 @@ A. Ja – das ist die „Option“ des Big Blinds. Callen alle nur, kann der Big
 
 **Q. Kann man nach dem Setzen eines Blinds noch folden?**
 
-A. Ja. Wenn du an der Reihe bist, kannst du wie jeder andere folden; der Small Blind kann aufgeben, statt zum Big Blind aufzufüllen. Gesetzte Blinds gibt es aber nie zurück.
+A. Ja. Wenn du an der Reihe bist, kannst du wie jeder andere folden; der Small Blind kann aufgeben, statt zum Big Blind aufzufüllen. Einen gesetzten Blind bekommst du durch Folden aber nie zurück.
 
 **Q. Wie oft zahlt man beim Poker Blinds?**
 
-A. Genau zweimal pro Orbit – einmal den Small Blind, einmal den Big Blind. Der Button rückt nach jeder Hand einen Sitz weiter und die Blind-Sitze wandern mit, also trifft es jeden gleich oft; drücken kann sich niemand. In einer typischen Struktur kostet dich eine volle Runde damit rund 1,5 Big Blinds, bevor du überhaupt eine Karte gespielt hast – genau deshalb kannst du aus den Blinds nicht einfach alles wegfolden.
+A. Genau zweimal pro Orbit – einmal den Small Blind, einmal den Big Blind. Der Button rückt nach jeder Hand einen Sitz weiter und die Blind-Sitze wandern mit, also trifft es in der normalen Rotation jeden gleich oft. In einer typischen Struktur kostet dich eine volle Runde damit rund 1,5 Big Blinds, bevor du überhaupt eine Karte gespielt hast – genau deshalb kannst du aus den Blinds nicht einfach alles wegfolden.
 
 **Q. Was passiert, wenn du deinen Blind verpasst?**
 
-A. In den meisten Kartenräumen setzt du die verpassten Blinds bei der Rückkehr nach – der Big Blind zählt als lebender Einsatz, der Small Blind kommt als toter Chip in den Pot. Alternativ wartest du, bis der Big Blind von selbst deinen Sitz erreicht.
+A. In den meisten Kartenräumen setzt du die verpassten Blinds bei der Rückkehr nach – der Big Blind zählt als lebender Einsatz, der Small Blind kommt als toter Chip in den Pot. Alternativ wartest du, bis der Big Blind von selbst deinen Sitz erreicht – oder du steigst, sofern die Hausregeln es erlauben, als Under-the-Gun-Live-Straddle wieder ein.
 
 **Q. Ist „der Big Blind“ dasselbe wie „die Blinds“?**
 

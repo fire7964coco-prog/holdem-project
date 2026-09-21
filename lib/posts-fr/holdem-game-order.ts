@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Une main de Texas Hold'em se déroule ainsi : on pose les blindes → deux cartes fermées par joueur → préflop → flop (3 cartes) → turn (1 carte) → river (1 carte) → abattage, avec quatre tours d'enchères au total.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-08-10",
+  updated: "2026-09-21",
   masterUpdated: "2026-07-02",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -306,7 +306,7 @@ Plus tu es proche du bouton, mieux c'est — parler en dernier te laisse voir ce
 
 ### 3. Courir après les tirages à l'aveugle
 
-Un tirage couleur ou quinte ne veut pas dire suivre en automatique. Tu dois peser les **cotes du pot (pot odds)** — le prix de suivre face à la taille du pot. Si le pot fait 100 000 et que tu dois suivre 50 000, ton tirage doit se compléter au moins 33 % du temps environ pour que ça vaille le coup.
+Un tirage couleur ou quinte ne veut pas dire suivre en automatique. Tu dois peser les **cotes du pot (pot odds)** — le prix de suivre face à la taille du pot. Si le pot fait 100 000 — mise de l'adversaire comprise — et que tu dois suivre 50 000, tu dois gagner au moins 33 % du temps environ pour que ça vaille le coup — gagner, pas seulement compléter le tirage.
 
 ### 4. Bluffer la river avec une main faible, sorti de nulle part
 

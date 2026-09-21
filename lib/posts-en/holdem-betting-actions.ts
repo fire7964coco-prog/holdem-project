@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Texas Hold'em has 5 betting actions: check (pass for free), bet (open the round), call (match a bet), raise (increase it — the minimum raise equals the previous bet or raise), and fold. You can only check when there is no live bet in front of you — preflop that normally means only the big blind (or whoever posted a live straddle).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-09-11",
+  updated: "2026-09-21",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "🃏",
@@ -218,7 +218,7 @@ A. You shouldn't. Action must proceed clockwise in order, and an out-of-turn fol
 
 **Q. Can you check on the preflop?**
 
-A. Only if your own post is the live bet and no one raised — normally the big blind, but also a live straddle (WSOP Live Action Rules 159 · 165): the post counts as your opening bet, so you may check to see the flop for free. Every other position preflop must call, raise, or fold.
+A. Only if your own post is the live bet and no one raised — normally the big blind, but also a live straddle (WSOP Live Action Rules 159 · 165): the post counts as your opening bet, so you may check to see the flop for free. Every position whose own post isn't the live bet must call, raise, or fold preflop.
 
 **Q. Can you raise after someone goes all-in?**
 

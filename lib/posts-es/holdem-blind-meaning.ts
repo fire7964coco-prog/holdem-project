@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Las ciegas son apuestas obligatorias que se ponen antes de repartir las cartas. La ciega pequeña se sienta a la izquierda del botón y la ciega grande a su izquierda; la ciega grande — normalmente el doble de la pequeña — es la unidad de apuesta de la mesa.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-09-13",
-  masterUpdated: "2026-09-13",
+  updated: "2026-09-21",
+  masterUpdated: "2026-09-21",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "💰",
@@ -40,7 +40,7 @@ Las ciegas son ==el motor que mantiene vivo el póker== — la primera pieza de 
 
 ## Qué es una ciega en el póker — y por qué existe
 
-Una **ciega** es una apuesta que estás obligado a hacer *antes* de recibir tus cartas — apuestas "a ciegas", sin haber visto nada. Dos jugadores la ponen en cada mano normal: la ciega pequeña y la ciega grande, los dos asientos inmediatamente a la izquierda del botón del dealer. (La única excepción es el botón muerto, que puede dejar una mano sin ciega pequeña.)
+Una **ciega** es una apuesta que estás obligado a hacer *antes* de recibir tus cartas — apuestas "a ciegas", sin haber visto nada. Dos jugadores la ponen en cada mano normal: la ciega pequeña y la ciega grande, los dos asientos inmediatamente a la izquierda del botón del dealer. (Dos excepciones habituales: el botón muerto, que puede dejar una mano sin ciega pequeña, y el heads-up, donde el propio botón pone la ciega pequeña — lo verás más abajo.)
 
 ¿Por qué obligar a alguien a pagar? Para que el juego no muera. ==r:Sin ciegas, todos podrían tirar sus cartas y esperar eternamente a las manos premium==; los botes estarían vacíos, farolear no tendría sentido y la partida se pararía. ==g:Dos apuestas obligatorias en cada mano garantizan que siempre haya algo por lo que pelear.==
 
@@ -78,7 +78,7 @@ En cuanto entiendes la ciega grande, toda la jerga numérica del juego — tama�
 
 ## Reglas de la ciega pequeña y la ciega grande: quién las pone y cuándo
 
-Las dos ciegas se ponen **antes del reparto**, y el botón del dealer avanza un asiento en el sentido de las agujas del reloj tras cada mano — así que los asientos de las ciegas rotan con él y ==todos pagan ambas ciegas una vez por órbita==. Ausentarte no te libra: si te levantas, al volver pones las ciegas que te saltaste o esperas a que la ciega grande llegue a tu asiento.
+Las dos ciegas se ponen **antes del reparto**, y el botón del dealer avanza un asiento en el sentido de las agujas del reloj tras cada mano — así que los asientos de las ciegas rotan con él y, en la rotación normal, ==todos pagan ambas ciegas una vez por órbita==. Lo que pase después depende del formato: en una partida de cash, al volver pones las ciegas que te saltaste, esperas a que la ciega grande llegue a tu asiento o —donde la sala lo permita— vuelves a entrar con un straddle vivo desde UTG; en un torneo las ciegas y los antes salen de tu stack estés sentado o no.
 
 | | Ciega pequeña | Ciega grande |
 |------|-------------|-------------|
@@ -172,7 +172,7 @@ A. Sí — es la "opción" de la ciega grande. Si todos se limitan a pagar, la c
 
 **Q. ¿Puedes tirarte después de poner la ciega?**
 
-A. Sí. En tu turno puedes retirarte como cualquiera; la ciega pequeña puede rendirse en vez de completar hasta la ciega grande, pero las ciegas ya puestas nunca se devuelven.
+A. Sí. En tu turno puedes retirarte como cualquiera; la ciega pequeña puede rendirse en vez de completar hasta la ciega grande, pero retirarse nunca devuelve una ciega ya puesta.
 
 **Q. ¿Quién pone las ciegas en el heads-up?**
 
@@ -180,7 +180,7 @@ A. Con solo dos jugadores la regla se invierte: el botón pone la ciega pequeña
 
 **Q. ¿Qué pasa si te saltas tu ciega?**
 
-A. En la mayoría de salas pones las ciegas pendientes al volver — la ciega grande juega como apuesta viva y la pequeña es una ficha muerta que va al bote. También puedes esperar a que la ciega grande llegue de forma natural a tu asiento.
+A. En la mayoría de salas pones las ciegas pendientes al volver — la ciega grande juega como apuesta viva y la pequeña es una ficha muerta que va al bote. También puedes esperar a que la ciega grande llegue de forma natural a tu asiento — o, si el reglamento de la sala lo admite, volver a entrar con un straddle vivo desde UTG.
 
 **Q. ¿"La ciega grande" es lo mismo que "las ciegas"?**
 

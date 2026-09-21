@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Texas Hold'em punya 5 aksi taruhan: check (lewat gratis), bet (membuka ronde), call (menyamai taruhan), raise (menaikkannya — raise minimum sama dengan bet atau raise sebelumnya), dan fold. Anda hanya boleh check kalau tidak ada taruhan aktif di depan Anda — di preflop itu biasanya cuma terjadi kalau Anda big blind (atau memasang live straddle).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-21",
+  masterUpdated: "2026-09-21",
   keepImagesInBody: true,
   readTime: "9 menit",
   emoji: "🃏",
@@ -219,7 +219,7 @@ A. Sebaiknya jangan. Aksi harus berjalan berurutan searah jarum jam, dan fold di
 
 **Q. Bisakah check saat preflop?**
 
-A. Hanya kalau taruhan yang Anda pasang sendiri adalah taruhan hidup dan tidak ada yang raise — biasanya big blind, tapi juga live straddle (WSOP Live Action Rules 159 · 165): taruhan yang Anda pasang itu dihitung sebagai taruhan pembuka Anda, jadi Anda boleh check dan melihat flop gratis. Posisi lain saat preflop wajib call, raise, atau fold.
+A. Hanya kalau taruhan yang Anda pasang sendiri adalah taruhan hidup dan tidak ada yang raise — biasanya big blind, tapi juga live straddle (WSOP Live Action Rules 159 · 165): taruhan yang Anda pasang itu dihitung sebagai taruhan pembuka Anda, jadi Anda boleh check dan melihat flop gratis. Setiap posisi yang taruhannya sendiri bukan taruhan hidup wajib call, raise, atau fold saat preflop.
 
 **Q. Bisakah raise setelah ada yang all-in?**
 

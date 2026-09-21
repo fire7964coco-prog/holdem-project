@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Satu hand Texas Hold'em berjalan begini: pasang blinds → bagikan dua kartu tertutup → preflop → flop (3 kartu) → turn (1 kartu) → river (1 kartu) → showdown, dengan total empat ronde taruhan.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-21",
+  masterUpdated: "2026-09-21",
   keepImagesInBody: true,
   readTime: "16 menit",
   emoji: "🎬",
@@ -257,11 +257,11 @@ Ini semua aksi yang tersedia di meja — bagian yang paling sering bikin pemula 
 | Bet | Memasang taruhan pertama di satu ronde | Saat belum ada yang bertaruh |
 | Raise | Menaikkan di atas taruhan yang berjalan | Saat ada taruhan ke arah Anda |
 | Re-raise (3-bet) | Raise di atas sebuah raise | Saat ada raise ke arah Anda |
-| All-in | Mendorong semua chip Anda ke tengah | Street mana pun — saat giliran Anda, sebagai bet atau raise |
+| All-in | Mendorong semua chip Anda ke tengah | Street mana pun — saat giliran Anda, sebagai bet, call, atau raise |
 
 </div>
 
-==r:**Penting:** di preflop Anda tidak bisa cek — kecuali taruhan yang Anda pasang sendiri sudah menjadi taruhan hidup.== Big blind adalah taruhan hidup, jadi semua orang selain dia harus call, raise, atau fold. ==Big blind boleh cek kalau tidak ada yang raise — begitu pula pemain yang memasang live straddle, karena taruhan yang ia pasang itu adalah taruhan pembukanya dan ia bertindak terakhir di preflop (WSOP Live Action Rules 159 · 165); bagi semua pemain lain, cek baru dimulai di flop.==
+==r:**Penting:** di preflop Anda tidak bisa cek — kecuali taruhan yang Anda pasang sendiri sudah menjadi taruhan hidup.== Big blind adalah taruhan hidup, jadi setiap posisi yang taruhannya sendiri belum menjadi taruhan hidup harus call, raise, atau fold. ==Big blind boleh cek kalau tidak ada yang raise atau memasang straddle — begitu pula pemain yang memasang live straddle, karena taruhan yang ia pasang itu adalah taruhan pembukanya dan ia bertindak terakhir di preflop (WSOP Live Action Rules 159 · 165); bagi semua pemain lain, cek baru dimulai di flop.==
 
 Untuk panduan keputusan yang lebih dalam soal kapan memakai tiap langkah — lengkap dengan tabel keputusan cek-call-raise-fold — lihat [penjelasan aksi taruhan](/id/blog/holdem-betting-actions).
 
@@ -306,7 +306,7 @@ Makin dekat Anda ke button, makin bagus — bertindak terakhir membuat Anda bisa
 
 ### 3. Mengejar draw membabi buta
 
-Draw Flush atau Straight bukan berarti call otomatis. Anda harus menimbang **pot odds** — harga call dibanding ukuran pot. Kalau pot sudah berisi 100.000 — termasuk taruhan lawan Anda — dan Anda harus call 50.000, peluang draw Anda jadi harus minimal sekitar 33% supaya call-nya sepadan.
+Draw Flush atau Straight bukan berarti call otomatis. Anda harus menimbang **pot odds** — harga call dibanding ukuran pot. Kalau pot sudah berisi 100.000 — termasuk taruhan lawan Anda — dan Anda harus call 50.000, peluang Anda menang harus minimal sekitar 33% supaya call-nya sepadan — menang, bukan sekadar draw-nya jadi.
 
 ### 4. Bluff dadakan di river dengan kartu lemah
 
@@ -344,7 +344,7 @@ A. Pasang blinds → bagikan dua kartu tertutup → taruhan preflop → buka flo
 
 **Q. Siapa yang duluan di poker?**
 
-A. Tergantung "duluan" yang mana Anda maksud, dan justru itulah yang membuat pertanyaan ini membingungkan. Dalam satu hand ada tiga momen yang sama-sama mengklaim kata itu: yang pertama *memasang* (small blind), yang pertama *bertindak* di preflop (UTG, tepat di kiri big blind), dan yang pertama bertindak setelah flop terbuka (kembali ke small blind). Jadi jawabannya berbalik di tengah hand — UTG membuka ronde preflop, lalu small blind membuka setiap ronde sesudahnya. (Heads-up satu-satunya pengecualian — lihat pertanyaan berikutnya.)
+A. Tergantung "duluan" yang mana Anda maksud, dan justru itulah yang membuat pertanyaan ini membingungkan. Dalam satu hand ada tiga momen yang sama-sama mengklaim kata itu: yang pertama *memasang* (small blind), yang pertama *bertindak* di preflop (UTG, tepat di kiri big blind), dan yang pertama bertindak setelah flop terbuka (kembali ke small blind). Jadi jawabannya berbalik di tengah hand — UTG membuka ronde preflop, lalu small blind membuka setiap ronde sesudahnya. (Di heads-up urutannya berbalik — lihat pertanyaan berikutnya.)
 
 **Q. Siapa yang bertaruh duluan setelah flop?**
 

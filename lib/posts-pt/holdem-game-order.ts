@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Uma mão de Texas Hold'em segue esta ordem: postar os blinds → receber duas cartas fechadas → pré-flop → flop (3 cartas) → turn (1 carta) → river (1 carta) → showdown, com quatro rodadas de apostas no total.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-21",
+  masterUpdated: "2026-09-21",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎬",
@@ -257,11 +257,11 @@ Aqui está tudo o que você pode fazer na mesa — a parte que os iniciantes mai
 | Bet | Faz a primeira aposta da rodada | Quando ninguém apostou ainda |
 | Raise | Aumenta por cima da aposta atual | Quando há uma aposta para você |
 | Re-raise (3-bet) | Aumenta por cima de um aumento | Quando há um aumento para você |
-| All-in | Empurra todas as suas fichas | Em qualquer street — na sua vez, como aposta ou aumento |
+| All-in | Empurra todas as suas fichas | Em qualquer street — na sua vez, como aposta, call ou aumento |
 
 </div>
 
-==r:**Importante:** no pré-flop não dá para dar check — a menos que a sua própria aposta postada já seja a aposta viva.== O big blind é uma aposta viva, então todos os outros precisam pagar, aumentar ou foldar. ==O big blind pode dar check se ninguém tiver aumentado — e também quem postou um straddle vivo, porque essa aposta postada é a abertura dele e ele age por último no pré-flop (regras 159 e 165 do regulamento Live Action da WSOP); para todos os demais, o check só passa a existir do flop em diante.==
+==r:**Importante:** no pré-flop não dá para dar check — a menos que a sua própria aposta postada já seja a aposta viva.== O big blind é uma aposta viva, então toda posição cuja própria aposta ainda não seja a aposta viva precisa pagar, aumentar ou foldar. ==O big blind pode dar check se ninguém tiver aumentado nem postado straddle — e também quem postou um straddle vivo, porque essa aposta postada é a abertura dele e ele age por último no pré-flop (regras 159 e 165 do regulamento Live Action da WSOP); para todos os demais, o check só passa a existir do flop em diante.==
 
 Para um guia de decisão mais profundo sobre quando usar cada jogada — com uma tabela de decisão check-call-raise-fold — veja as [ações de aposta explicadas](/pt/blog/holdem-betting-actions).
 
@@ -306,7 +306,7 @@ Quanto mais perto do botão, melhor — agir por último deixa você ver o que t
 
 ### 3. Perseguir draws às cegas
 
-Um draw de flush ou sequência não é um call automático. Você precisa pesar as **pot odds** — o preço do call contra o tamanho do pote. Se o pote — já com a aposta do adversário dentro — tem 100.000 e você precisa pagar 50.000, seu draw tem que completar pelo menos uns 33% das vezes para valer a pena.
+Um draw de flush ou sequência não é um call automático. Você precisa pesar as **pot odds** — o preço do call contra o tamanho do pote. Se o pote — já com a aposta do adversário dentro — tem 100.000 e você precisa pagar 50.000, você tem que vencer pelo menos uns 33% das vezes para o call valer a pena — vencer, não apenas completar o draw.
 
 ### 4. Blefar o river do nada com uma mão fraca
 
@@ -344,7 +344,7 @@ A. Postar os blinds → distribuir duas cartas fechadas → apostas do pré-flop
 
 **Q. Quem age primeiro no poker?**
 
-A. Depende de qual "primeiro" você quer dizer, e é exatamente por isso que a pergunta confunde. Três momentos diferentes disputam a palavra numa mesma mão: o primeiro a *postar* (o small blind), o primeiro a *agir* no pré-flop (o UTG, logo à esquerda do big blind) e o primeiro a agir depois que o flop abre (de volta ao small blind). Ou seja, a resposta muda no meio da mão — o UTG abre a rodada pré-flop, e o small blind abre todas as rodadas seguintes. (O heads-up é a única exceção — veja a pergunta seguinte.)
+A. Depende de qual "primeiro" você quer dizer, e é exatamente por isso que a pergunta confunde. Três momentos diferentes disputam a palavra numa mesma mão: o primeiro a *postar* (o small blind), o primeiro a *agir* no pré-flop (o UTG, logo à esquerda do big blind) e o primeiro a agir depois que o flop abre (de volta ao small blind). Ou seja, a resposta muda no meio da mão — o UTG abre a rodada pré-flop, e o small blind abre todas as rodadas seguintes. (No heads-up isso se inverte — veja a pergunta seguinte.)
 
 **Q. Quem aposta primeiro depois do flop?**
 

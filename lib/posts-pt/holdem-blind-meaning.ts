@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Blinds são apostas obrigatórias pagas antes de as cartas serem distribuídas. O small blind fica à esquerda do botão do dealer e o big blind à esquerda dele; o big blind — normalmente o dobro do small blind — é a unidade de aposta da mesa.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-09-13",
-  masterUpdated: "2026-09-13",
+  updated: "2026-09-21",
+  masterUpdated: "2026-09-21",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "💰",
@@ -40,7 +40,7 @@ Os blinds são ==o motor que mantém o poker andando== — a primeira parte das 
 
 ## O que é um blind no poker — e por que ele existe?
 
-Um **blind** é uma aposta que você é obrigado a fazer *antes* de as suas cartas chegarem — você aposta "no escuro", sem ver nada. Dois jogadores pagam em toda mão normal: o small blind e o big blind, os dois assentos imediatamente à esquerda do botão do dealer. (A única exceção é o botão morto, que pode deixar uma mão sem small blind.)
+Um **blind** é uma aposta que você é obrigado a fazer *antes* de as suas cartas chegarem — você aposta "no escuro", sem ver nada. Dois jogadores pagam em toda mão normal: o small blind e o big blind, os dois assentos imediatamente à esquerda do botão do dealer. (Duas exceções comuns: o botão morto, que pode deixar uma mão sem small blind, e o heads-up, em que o próprio botão paga o small blind — veja mais abaixo.)
 
 Por que obrigar alguém a pagar? Para manter o jogo vivo. ==r:Sem blinds, todo mundo poderia foldar e esperar eternamente por mãos premium==; os potes ficariam vazios, blefar não teria sentido e o jogo travaria. ==g:Duas apostas obrigatórias em cada mão garantem que sempre exista algo pelo que brigar.==
 
@@ -78,7 +78,7 @@ Entenda o big blind, e toda a conversa numérica do jogo — tamanhos de raise, 
 
 ## Regras do small blind e do big blind: quem paga, e quando
 
-Os dois blinds são pagos **antes da distribuição das cartas**, e o botão do dealer avança um assento no sentido horário a cada mão — os assentos dos blinds giram junto e ==todo mundo paga os dois blinds uma vez a cada volta completa do botão==. Ninguém pula a vez saindo da mesa — se você se levantar, paga os blinds perdidos quando voltar ou espera o big blind chegar até o seu assento.
+Os dois blinds são pagos **antes da distribuição das cartas**, e o botão do dealer avança um assento no sentido horário a cada mão — os assentos dos blinds giram junto e, na rotação normal, ==todo mundo paga os dois blinds uma vez a cada volta completa do botão==. O que acontece depois depende do formato: num cash game você paga os blinds perdidos quando voltar, espera o big blind chegar até o seu assento ou — nas salas que permitem — volta a entrar como live straddle no UTG; num torneio os blinds e antes saem do seu stack, esteja você sentado ou não.
 
 | | Small Blind | Big Blind |
 |------|-------------|-------------|
@@ -172,7 +172,7 @@ A. Sim — é a "option" do big blind. Se todo mundo apenas pagar, o big blind p
 
 **Q. Dá para foldar depois de pagar o blind?**
 
-A. Sim. Na sua vez, você pode foldar como qualquer outro; o small blind pode desistir em vez de completar até o big blind, mas os blinds já pagos nunca são devolvidos.
+A. Sim. Na sua vez, você pode foldar como qualquer outro; o small blind pode desistir em vez de completar até o big blind, mas foldar nunca devolve um blind já pago.
 
 **Q. Quem paga os blinds no heads-up?**
 
@@ -180,7 +180,7 @@ A. Com só dois jogadores, a regra se inverte: o botão do dealer paga o small b
 
 **Q. O que acontece se você perder seu blind?**
 
-A. Na maioria das salas, você paga os blinds perdidos quando volta — o big blind vale como aposta viva e o small blind é uma ficha morta adicionada ao pote. Alternativamente, dá para esperar o big blind chegar naturalmente ao seu assento.
+A. Na maioria das salas, você paga os blinds perdidos quando volta — o big blind vale como aposta viva e o small blind é uma ficha morta adicionada ao pote. Alternativamente, dá para esperar o big blind chegar naturalmente ao seu assento — ou, se o regulamento da sala admitir, voltar a entrar como live straddle no UTG.
 
 **Q. "Big blind" é a mesma coisa que "os blinds"?**
 

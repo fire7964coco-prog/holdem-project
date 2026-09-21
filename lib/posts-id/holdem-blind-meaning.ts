@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Blinds adalah taruhan wajib yang dipasang sebelum kartu dibagikan. Small Blind duduk di kiri tombol dealer dan Big Blind di kirinya lagi; Big Blind — biasanya dua kali lipat Small Blind — adalah satuan taruhan di meja.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-09-12",
-  masterUpdated: "2026-09-13",
+  updated: "2026-09-21",
+  masterUpdated: "2026-09-21",
   keepImagesInBody: true,
   readTime: "9 menit",
   emoji: "💰",
@@ -40,7 +40,7 @@ Blinds adalah ==mesin yang membuat poker terus bergerak== — bagian pertama dar
 
 ## Apa Itu Blind di Poker — dan Kenapa Harus Ada?
 
-**Blind** adalah taruhan yang wajib Anda pasang *sebelum* kartu Anda datang — Anda bertaruh "buta", tanpa melihat apa pun. Dua pemain memasangnya di setiap hand normal: Small Blind dan Big Blind, dua kursi tepat di kiri tombol dealer. (Satu-satunya pengecualian adalah dead button, yang bisa membuat small blind tidak terpasang untuk satu hand.)
+**Blind** adalah taruhan yang wajib Anda pasang *sebelum* kartu Anda datang — Anda bertaruh "buta", tanpa melihat apa pun. Dua pemain memasangnya di setiap hand normal: Small Blind dan Big Blind, dua kursi tepat di kiri tombol dealer. (Ada dua pengecualian yang umum: dead button, yang bisa membuat small blind tidak terpasang untuk satu hand, dan heads-up, di mana tombol itu sendiri yang memasang small blind — lihat di bawah.)
 
 Kenapa harus ada yang dipaksa bayar? Supaya game tetap hidup. ==r:Tanpa blinds, setiap pemain bisa fold terus dan menunggu kartu premium tanpa batas==; pot bakal kosong, bluff jadi percuma, dan permainan macet. ==g:Dua taruhan wajib di setiap hand menjamin selalu ada sesuatu yang diperebutkan.==
 
@@ -78,7 +78,7 @@ Pahami Big Blind, dan semua obrolan angka di game ini — ukuran raise, kedalama
 
 ## Aturan Small Blind dan Big Blind: Siapa yang Memasang, dan Kapan
 
-Kedua blind dipasang **sebelum kartu dibagikan**, dan tombol dealer bergeser satu kursi searah jarum jam setelah setiap hand — jadi kursi blind ikut berputar dan ==semua orang membayar kedua blind sekali per putaran==. Meninggalkan meja pun tidak membuat Anda lolos — blind yang terlewat itu Anda pasang saat kembali, atau Anda menunggu big blind sampai ke kursi Anda.
+Kedua blind dipasang **sebelum kartu dibagikan**, dan tombol dealer bergeser satu kursi searah jarum jam setelah setiap hand — jadi kursi blind ikut berputar dan, dalam rotasi normal, ==semua orang membayar kedua blind sekali per putaran==. Apa yang terjadi berikutnya tergantung formatnya: di cash game, saat kembali Anda memasang blind yang terlewat, menunggu big blind sampai ke kursi Anda, atau — kalau cardroom-nya mengizinkan — masuk lagi sebagai live straddle dari UTG; di turnamen, blind dan ante ditarik dari stack Anda entah Anda duduk di kursi atau tidak.
 
 | | Small Blind | Big Blind |
 |------|-------------|-------------|
@@ -172,7 +172,7 @@ A. Boleh — itulah "option" milik Big Blind. Kalau semua hanya call, Big Blind 
 
 **Q. Boleh fold setelah memasang blind?**
 
-A. Boleh. Di giliran Anda, Anda bisa fold seperti pemain lain; Small Blind boleh menyerah alih-alih melengkapi sampai Big Blind, tapi blind yang sudah dipasang tidak pernah dikembalikan.
+A. Boleh. Di giliran Anda, Anda bisa fold seperti pemain lain; Small Blind boleh menyerah alih-alih melengkapi sampai Big Blind, tapi blind yang sudah dipasang tidak pernah kembali lewat fold.
 
 **Q. Siapa yang memasang blinds di poker heads-up?**
 
@@ -180,7 +180,7 @@ A. Dengan hanya dua pemain, aturannya terbalik: tombol dealer memasang Small Bli
 
 **Q. Apa yang terjadi kalau Anda melewatkan blind?**
 
-A. Di kebanyakan cardroom Anda memasang blind yang terlewat saat kembali — Big Blind berlaku sebagai taruhan hidup dan Small Blind menjadi chip mati yang masuk pot. Atau Anda bisa menunggu sampai Big Blind secara alami tiba di kursi Anda.
+A. Di kebanyakan cardroom Anda memasang blind yang terlewat saat kembali — Big Blind berlaku sebagai taruhan hidup dan Small Blind menjadi chip mati yang masuk pot. Atau Anda bisa menunggu sampai Big Blind secara alami tiba di kursi Anda — atau, kalau aturan cardroom-nya membolehkan, masuk lagi sebagai live straddle dari UTG.
 
 **Q. Apakah "big blind" sama dengan "blinds"?**
 

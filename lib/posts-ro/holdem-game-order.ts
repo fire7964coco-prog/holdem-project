@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "O mână de Texas Hold'em se desfășoară astfel: se pun blind-urile → se împart două cărți din mână → preflop → flop (3 cărți) → turn (1 carte) → river (1 carte) → showdown, cu patru runde de pariere în total.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-07-13",
+  updated: "2026-09-21",
   masterUpdated: "2026-07-02",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -129,7 +129,7 @@ River-ul e locul unde se închide toată mâna. Cântărește forța mâinii tal
 
 Dacă după pariurile de pe river rămân doi sau mai mulți jucători, mâna merge la **showdown** (arătarea cărților).
 
-![Infografic cu showdown-ul la poker — pe un board 10♣ 7♥ J♦ 4♠ 9♣, perechea de ași A♥ A♦ bate perechea de regi K♥ K♣](/images/blog-holdem-showdown.webp "La showdown jucătorii rămași își arată cărțile — aici perechea mai mare, ași peste regi, ia potul")
+![Infografic cu showdown-ul la poker — pe un board 10♣ 7♥ J♦ 4♠ 9♣, perechea de ași A♥ A♦ bate perechea de regi K♥ K♣](/images/blog-holdem-showdown.webp "La showdown jucătorii rămași își arată cărțile — aici perechea mai mare, ași contra regi, ia potul")
 
 Regulile showdown-ului:
 
@@ -306,7 +306,7 @@ Cu cât ești mai aproape de buton, cu atât mai bine — să vorbești ultimul 
 
 ### 3. A urmări proiectele orbește
 
-Un proiect de culoare sau de chintă nu înseamnă call automat. Trebuie să cântărești **pot odds**-urile — prețul call-ului față de mărimea potului. Dacă potul e de 100.000 și trebuie să plătești 50.000, proiectul tău trebuie să se completeze în cel puțin vreo 33% din cazuri ca să merite.
+Un proiect de culoare sau de chintă nu înseamnă call automat. Trebuie să cântărești **pot odds**-urile — prețul call-ului față de mărimea potului. Dacă potul e de 100.000 — cu pariul adversarului deja inclus — și trebuie să plătești 50.000, trebuie să câștigi în cel puțin vreo 33% din cazuri ca să merite — să câștigi, nu doar să completezi proiectul.
 
 ### 4. A bluffa pe river cu o mână slabă, din senin
 

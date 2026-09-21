@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Eine Texas-Hold'em-Hand läuft so ab: Blinds setzen → zwei Hole Cards erhalten → Preflop → Flop (3 Karten) → Turn (1 Karte) → River (1 Karte) → Showdown – mit insgesamt vier Setzrunden.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-21",
+  masterUpdated: "2026-09-21",
   keepImagesInBody: true,
   readTime: "16 Min.",
   emoji: "🎬",
@@ -129,7 +129,7 @@ Am River wird die ganze Hand abgerechnet. Wäge deine Handstärke, das Setzmuste
 
 Sind nach der Setzrunde am River noch zwei oder mehr Spieler dabei, geht die Hand in den **Showdown**.
 
-![Poker-Showdown-Infografik – auf dem Board 10♣ 7♥ J♦ 4♠ 9♣ schlagen die Pocket-Asse A♥ A♦ die Pocket-Könige K♥ K♣](/images/blog-holdem-showdown.webp "Im Showdown decken die verbliebenen Spieler ihre Karten auf – hier gewinnt das höhere Paar, Asse über Könige")
+![Poker-Showdown-Infografik – auf dem Board 10♣ 7♥ J♦ 4♠ 9♣ schlagen die Pocket-Asse A♥ A♦ die Pocket-Könige K♥ K♣](/images/blog-holdem-showdown.webp "Im Showdown decken die verbliebenen Spieler ihre Karten auf – hier gewinnt das höhere Paar: Asse schlagen Könige")
 
 Die Showdown-Regeln:
 
@@ -257,11 +257,11 @@ Hier ist jede Aktion, die dir am Tisch zur Verfügung steht – der Teil, den An
 | Bet | Den ersten Einsatz einer Runde machen | Wenn noch niemand gesetzt hat |
 | Raise | Über den aktuellen Einsatz erhöhen | Wenn eine Bet vor dir liegt |
 | Re-Raise (3-Bet) | Über einen Raise erhöhen | Wenn ein Raise vor dir liegt |
-| All-in | Alle eigenen Chips setzen | Jede Street – wenn du an der Reihe bist, als Bet oder Raise |
+| All-in | Alle eigenen Chips setzen | Jede Street – wenn du an der Reihe bist, als Bet, Call oder Raise |
 
 </div>
 
-==r:**Wichtig:** Preflop kannst du nicht checken – es sei denn, dein eigener Einsatz ist schon die aktive Bet.== Der Big Blind ist eine aktive Bet, also müssen alle anderen callen, raisen oder folden. ==Der Big Blind darf checken, wenn niemand erhöht hat – und ebenso, wer einen Live Straddle gepostet hat, denn dieser Post ist seine Eröffnungsbet und er handelt Preflop als Letzter (WSOP Live Action Rules 159 · 165); für alle anderen beginnt das Checken erst am Flop.==
+==r:**Wichtig:** Preflop kannst du nicht checken – es sei denn, dein eigener Einsatz ist schon die aktive Bet.== Der Big Blind ist eine aktive Bet, also muss jede Position, deren eigener Post nicht schon die aktive Bet ist, callen, raisen oder folden. ==Der Big Blind darf checken, wenn niemand erhöht oder gestraddelt hat – und ebenso, wer einen Live Straddle gepostet hat, denn dieser Post ist seine Eröffnungsbet und er handelt Preflop als Letzter (WSOP Live Action Rules 159 · 165); für alle anderen beginnt das Checken erst am Flop.==
 
 Einen tieferen Entscheidungs-Guide dazu, wann welcher Zug der richtige ist – inklusive Check-Call-Raise-Fold-Entscheidungstabelle – findest du unter [Setzaktionen im Poker erklärt](/de/blog/holdem-betting-actions).
 
@@ -306,7 +306,7 @@ Je näher du am Button sitzt, desto besser – wer als Letzter handelt, sieht er
 
 ### 3. Draws blind hinterherjagen
 
-Ein Flush- oder Straßen-Draw ist kein automatischer Call. Du musst die **Pot Odds** abwägen – den Preis des Calls gegen die Größe des Pots. Setzt ein Gegner 50.000 in einen Pot von 50.000, musst du 50.000 callen – dein Draw muss dann mindestens rund 33% der Zeit ankommen, damit sich der Call lohnt.
+Ein Flush- oder Straßen-Draw ist kein automatischer Call. Du musst die **Pot Odds** abwägen – den Preis des Calls gegen die Größe des Pots. Setzt ein Gegner 50.000 in einen Pot von 50.000, musst du 50.000 callen – du musst dann mindestens rund 33% der Zeit gewinnen, damit sich der Call lohnt – gewinnen, nicht bloß den Draw treffen.
 
 ### 4. Aus dem Nichts den River bluffen
 
@@ -344,7 +344,7 @@ A. Blinds setzen → zwei Hole Cards erhalten → Preflop-Setzrunde → Flop auf
 
 **Q. Wer ist im Poker als Erster dran?**
 
-A. Es kommt darauf an, welches „zuerst“ du meinst – und genau daran scheitert die Frage. Drei verschiedene Momente beanspruchen das Wort in einer einzigen Hand: zuerst *setzen* (der Small Blind), zuerst *handeln* preflop (UTG, direkt links vom Big Blind) und zuerst handeln, sobald der Flop liegt (wieder der Small Blind). Die Antwort kippt also mitten in der Hand: UTG eröffnet die Preflop-Runde, danach eröffnet der Small Blind jede weitere Runde. (Heads-up ist die einzige Ausnahme – siehe die nächste Frage.)
+A. Es kommt darauf an, welches „zuerst“ du meinst – und genau daran scheitert die Frage. Drei verschiedene Momente beanspruchen das Wort in einer einzigen Hand: zuerst *setzen* (der Small Blind), zuerst *handeln* preflop (UTG, direkt links vom Big Blind) und zuerst handeln, sobald der Flop liegt (wieder der Small Blind). Die Antwort kippt also mitten in der Hand: UTG eröffnet die Preflop-Runde, danach eröffnet der Small Blind jede weitere Runde. (Im Heads-up gilt das nicht – siehe die nächste Frage.)
 
 **Q. Wer setzt nach dem Flop zuerst?**
 

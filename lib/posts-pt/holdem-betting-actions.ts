@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "O Texas Hold'em tem 5 ações de aposta: check (passar de graça), apostar (abrir a rodada), pagar/call (igualar uma aposta), aumentar/raise (o aumento mínimo é igual à aposta ou ao raise anterior) e foldar. Você só pode dar check quando não há aposta viva à sua frente — no pré-flop, isso normalmente só acontece sendo o big blind (ou quem postou um straddle vivo).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-21",
+  masterUpdated: "2026-09-21",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "🃏",
@@ -220,7 +220,7 @@ A. Não deveria. A ação precisa seguir em sentido horário, na ordem, e um fol
 
 **Q. Pode dar check no pré-flop?**
 
-A. Só se a aposta que você mesmo postou for a aposta viva e ninguém tiver aumentado — normalmente o big blind, mas também um straddle vivo (regras 159 e 165 do regulamento Live Action da WSOP): essa aposta postada conta como sua abertura, então você pode dar check e ver o flop de graça. Todas as outras posições no pré-flop precisam pagar, aumentar ou foldar.
+A. Só se a aposta que você mesmo postou for a aposta viva e ninguém tiver aumentado — normalmente o big blind, mas também um straddle vivo (regras 159 e 165 do regulamento Live Action da WSOP): essa aposta postada conta como sua abertura, então você pode dar check e ver o flop de graça. Toda posição cuja própria aposta não seja a aposta viva precisa pagar, aumentar ou foldar no pré-flop.
 
 **Q. Pode aumentar depois que alguém vai de all-in?**
 

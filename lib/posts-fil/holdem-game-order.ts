@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ang isang hand ng Texas Hold'em ay ganito: mag-post ng blinds → i-deal ang dalawang hole cards → preflop → flop (3 cards) → turn (1 card) → river (1 card) → showdown, na may apat na betting rounds lahat-lahat.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-07-13",
+  updated: "2026-09-21",
   masterUpdated: "2026-07-02",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -129,7 +129,7 @@ Sa river mo tinatapos ang buong hand. Timbangin ang lakas ng hand mo, ang bettin
 
 Kung dalawa o higit pang players ang natira pagkatapos ng river betting, pupunta ang hand sa **showdown**.
 
-![Showdown infographic ng poker — sa board na 10♣ 7♥ J♦ 4♠ 9♣, ang pocket aces A♥ A♦ ay nanalo laban sa pocket kings K♥ K♣](/images/blog-holdem-showdown.webp "Sa showdown ibinubunyag ng natirang players ang cards nila — dito ang mas mataas na pair, aces over kings, ang kumuha ng pot")
+![Showdown infographic ng poker — sa board na 10♣ 7♥ J♦ 4♠ 9♣, ang pocket aces A♥ A♦ ay nanalo laban sa pocket kings K♥ K♣](/images/blog-holdem-showdown.webp "Sa showdown ibinubunyag ng natirang players ang cards nila — dito ang mas mataas na pair, aces laban sa kings, ang kumuha ng pot")
 
 Rules ng showdown:
 
@@ -306,7 +306,7 @@ Habang mas malapit ka sa button, mas maganda — ang huling mag-act ay nagbibiga
 
 ### 3. Pagha-chase ng draws nang bulag
 
-Ang flush o straight draw ay hindi ibig sabihin ay automatic na call. Kailangan mong timbangin ang **pot odds** — ang presyo ng call laban sa laki ng pot. Kung ang pot ay 100,000 at kailangan mong mag-call ng 50,000, kailangang ma-complete ang draw mo nang hindi bababa sa mga 33% ng oras para sulit ito.
+Ang flush o straight draw ay hindi ibig sabihin ay automatic na call. Kailangan mong timbangin ang **pot odds** — ang presyo ng call laban sa laki ng pot. Kung ang pot ay 100,000 — kasama na ang taya ng kalaban — at kailangan mong mag-call ng 50,000, kailangan kang manalo nang hindi bababa sa mga 33% ng oras para sulit ito — manalo, hindi basta ma-complete ang draw.
 
 ### 4. Pag-bluff sa river gamit ang mahinang hand nang wala sa oras
 

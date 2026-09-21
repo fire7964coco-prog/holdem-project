@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Una mano di Texas Hold'em segue quest'ordine: si mettono i bui → si distribuiscono due carte personali → preflop → flop (3 carte) → turn (1 carta) → river (1 carta) → showdown, con quattro giri di puntate in tutto.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-07-13",
+  updated: "2026-09-21",
   masterUpdated: "2026-07-02",
   keepImagesInBody: true,
   readTime: "16 min",
@@ -306,7 +306,7 @@ Più sei vicino al bottone, meglio è — parlare per ultimo ti fa vedere cosa f
 
 ### 3. Inseguire i progetti alla cieca
 
-Un progetto di colore o di scala non significa chiamare in automatico. Devi pesare le **pot odds** — il prezzo della chiamata rispetto alla dimensione del piatto. Se il piatto è di 100.000 e devi chiamare 50.000, il tuo progetto deve completarsi almeno circa il 33% delle volte perché convenga.
+Un progetto di colore o di scala non significa chiamare in automatico. Devi pesare le **pot odds** — il prezzo della chiamata rispetto alla dimensione del piatto. Se il piatto è di 100.000 — puntata dell'avversario inclusa — e devi chiamare 50.000, devi vincere almeno circa il 33% delle volte perché il call convenga — vincere, non solo completare il progetto.
 
 ### 4. Bluffare al river con una mano debole all'improvviso
 

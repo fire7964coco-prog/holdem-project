@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Bir Texas Hold'em eli şöyle ilerler: blind koy → 2 kapalı kart dağıt → preflop → flop (3 kart) → turn (1 kart) → river (1 kart) → showdown, toplam 4 bahis turuyla.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-08-10",
+  updated: "2026-09-21",
   masterUpdated: "2026-07-02",
   keepImagesInBody: true,
   readTime: "16 dk",
@@ -306,7 +306,7 @@ Butona ne kadar yakınsan o kadar iyi — son konuşmak, karar vermeden önce he
 
 ### 3. Çekişlerin (draw) peşinden körü körüne gitmek
 
-Floş ya da kent çekişin olması otomatik call demek değildir. **Pot oranını (pot odds)** tartmalısın — görmenin bedeli, potun büyüklüğüne karşı. Pot 100.000 ve görmek için 50.000 koyman gerekiyorsa, çekişinin değmesi için en az yaklaşık %33 ihtimalle tamamlanması gerekir.
+Floş ya da kent çekişin olması otomatik call demek değildir. **Pot oranını (pot odds)** tartmalısın — görmenin bedeli, potun büyüklüğüne karşı. Pot — rakibin bahsi dahil — 100.000 ve görmek için 50.000 koyman gerekiyorsa, call'un değmesi için en az yaklaşık %33 ihtimalle kazanman gerekir — kazanman, sadece çekişin tamamlanması değil.
 
 ### 4. River'da zayıf elle durup dururken blöf yapmak
 
