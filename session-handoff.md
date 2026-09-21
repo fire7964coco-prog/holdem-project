@@ -1,19 +1,21 @@
 # 다음 세션 알림장
 
 > «다음 할 일 + 미결»만 담는다. 경위 = `WORKLOG.md`(slug로 grep) · 규칙 = 정본 MD · 시한 = `docs/update-calendar.md`.
-> 마지막 갱신 **2026-09-21** · HEAD = **`3448be03`+** · **미커밋 0 · 배포·라이브 확인(12/12)·IndexNow 200 완료.**
+> 마지막 갱신 **2026-09-21** · HEAD = **`ca6cc11d`+** · **미커밋 0 · 배포·라이브 확인·IndexNow 200 완료.**
 >
 > **최근 회차(전부 종결 — 경위는 WORKLOG, 되묻지 말 것)**
 > · **09-20 (2)** (not set) 유실 = **GA4 세션 타임아웃 재개**(결함 아님 · 조치 불요) → `docs/ga-notset-diagnosis-2026-09-20.md`
 > · **09-20 (3)** **OG 카드 20/20 교정** — og는 서버 전용(`lib/page-metadata.ts`) → `docs/og-meta-audit-2026-09-20.md`
 > · **09-20 (4)** queue **Q4-c 머지** — 🔴 그 회차는 09-17에 끝나 있었고 **머지가 3일 늦었다**. `lane:status`는 «레인→main»을 **원리상 못 본다** → 세션 시작에 `git log main..harden-<l>`.
 > · **09-21 · 09-21 (2)** queue **Q10 등재 → 머지**(`51d79100` → `3448be03`) — 계산기 권고 비대칭·티어 역전 + 로케일 전파. 🔴 **회차를 열기 전 재료를 실측해 후보 ⓐ를 소멸시켰다**(이미 끝난 트랙이었다).
+> · **09-21 (3)** **KO 정정 회차**(`ca6cc11d`) — 헤즈업 매치업 표 §13 전수 재검산 + 하이카드 키커 1+4 + WSOP 명칭. 🔴 **교차검수가 내 수정의 회귀 4건을 잡았다**(무늬 1조합만 돌리고 「전수」라 적음) → 정본 승격 `settled-decisions` §3-F.
 >
 > 🔴 **되살리기 금지 여섯**: ① (not set)은 구조적 동작이다 — «유실»로 되돌리지 마라(보정 ② 유지 · `RULES_VERSION` 1)
 > ② `components/seo.tsx`는 og를 건드리지 않는다(그 주석에 반증 조건이 있다) ③ 폴백 티어 근거는 콤보 산술이다
 > ④ WSOP 참가 요건·「WSOP Online」 명칭 = `settled-decisions` **§3-G**(「21세만」 금지 · 브랜드 ≠ 도메인)
 > ⑤ **`44`·`33`·`22`를 Tier 5로 되돌리지 마라** · `outs.exactNote`를 «큰 **값**»으로 되옮기지 마라(«활자가 큰 쪽»이다 — 대소는 6↔7 아웃츠에서 뒤집힌다) · 수티드에 «작은 쪽» 바닥을 두는 안은 09-20 기각
-> ⑥ **sitemap**: 계산기 11개는 `components/calculator`를 같이 보고, **로케일 홈은 `app/<loc>` 디렉터리를 보지 않는다**(하위 변경에 딸려 오르던 가짜 bump — `/de`·`/ja` 등 10개가 09-20 → 08-25로 내려온 건 교정이다).
+> ⑥ **sitemap**: 계산기 11개는 `components/calculator`를 같이 보고, **로케일 홈은 `app/<loc>` 디렉터리를 보지 않는다**(하위 변경에 딸려 오르던 가짜 bump — `/de`·`/ja` 등 10개가 09-20 → 08-25로 내려온 건 교정이다)
+> ⑦ **`AA vs KK` = 82(81.95)** — 83으로 올리지 마라(계산기 12로케일이 `81.9%`를 띄운다) · 하이카드 키커는 **1+4** · 「AA는 **어떤** 핸드에도 77% 이상」은 거짓(`AA vs AA` 50%). 정본 = `settled-decisions` **§3-F**.
 
 ## ▶ 다음 할 일 (사장님이 고른다)
 
@@ -31,8 +33,6 @@
 - **「홀덤 족보」 634노출·클릭 2** — 611노출이 noindex인 `/hands`에 남아 있다(반영 지연). 조치 없이 다음 28일 창에서 /hands 노출 0·필라 순위 상승 확인. 재제출·되살리기 금지.
 - **「포커 홀덤 차이」 계열 188노출·r9~11 · 전용 글 없음**(7포커 글은 다른 의도) — 롱테일 후보. 채택 전 SERP 실측. 근거 `docs/seo-report-2026-09-16.md` §4.
 - 우편함 미처리는 전부 «→검수장»(MB-033~062 + S-022·023). 본체 몫 0. 검수장 회신이 오면 MA 요청부터 판정. 🔴 MB-054는 **MB-053 ②(상금풀 $87,568,080)를 뒤집는 통지** · MB-055는 **계산기 랜딩 10로케일 검수 청구**(ja·en·zh·zh-hant·es·pt 몫은 MB-057~062 해시로 대체) · 🪶 `check:mailbox`의 기존 흠 둘(둘 다 미수정): «MB-054 파이프 9» 🔴(09-17 확인) · 🆕 «MB-067 열 결손» 🟠(ms 회차가 «포인터·확인» 두 열을 안 채웠다 — hi 회차 09-19에 발견 · 남의 회차 행이라 손대지 않았다). 🆕 **MB-068~071 발신**(hi 계산기 · 폴백 티어 · Q4-c es 동형 명제+WSOP Online · 🆕 **MB-071 = Q10 계산기 12사본 변경 통지** · 전부 →검수장).
-- **KO 정정 회차 재료 3건(낮음)** — ① 🆕 `lib/posts.ts:3154` 「WSOP Online/WSOP.com」 슬래시 병기 → 「WSOP Online(구 WSOP.com)」(LEGACY `wsop-2025-tournament-guide` · **그 파일은 기존 `audit:hard` 🔴 2 부채**(desc 114자 · emoji 공백)라 같이 닫는다 · Q4c-5) + 아래 2건:
-- **KO 판정 2건(낮음 · Q5-c 렌즈가 남김 · `docs/harden-queue-진행.md` §5 Q5c-7)**: ① `lib/posts.ts` probability 표 「AA vs AK(수티드) 87%」 = 승률(에퀴티 87.9) — «승률 vs 에퀴티» 표기 규약 정본화 여부 ② KO `holdem-tiebreak-rules` 하이카드 「0장 + 키커 5장」 모델링(EN·8로케일은 1+4) + L985↔L991 자기모순. KO 정정 회차 몫.
 - **zh·zh-hant 판정 요청 1건 대기**(Q4b-4 · re-entry 행 제목 「重买/重買」 → 「再入场/重新進場」 후보 · 거울쌍으로 같이) — 두 로케일 진행 파일 §5 말미. 레인 회차 없음 유지, 사장님이 열 때.
 - **de 형제 글 3건(낮음 · 포스트 수정이라 posting.mdc 절차 · MB-063 ⓒⓓ)**: ① `holdem-equity` FAQ 「Brauche ich einen Equity-Rechner?」와 `holdem-icm` FAQ 「In der Praxis nutzt du **einen** ICM-Rechner」가 계산기를 말하면서 **링크를 안 준다**(부정관사가 경쟁사로 가는 문) ② `holdem-bubble`이 계산기를 3번 가리키는데 계산기는 버블 글을 0번 가리킨다(related 8은 EN parity라 본문 링크로) ③ `holdem-short-stack` M 존 표가 경계를 겹쳐 적는다(「10–20 / 6–10」 ↔ 계산기 「10–19 / 6–9」 — 계산기 쪽이 정본). 🟢 `/de/solver` 누수는 0건.
 - **fr 포스트 1건(낮음 · posting.mdc 절차 · MB-064 ⓓ)**: `lib/posts-fr/texas-holdem-rules-for-beginners.ts:444` — **fr 유일의 인바운드**인데 앵커가 09-18에 교체한 «calculatrice de probabilités poker»다(현 페이지 이름 = «Calculateur poker»). 같은 줄의 `/hand-chart`는 09-19 (5)에서 `/en/hand-chart`로 해소.
