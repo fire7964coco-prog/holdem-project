@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Uma continuation bet (c-bet) é uma aposta no flop feita por quem deu raise no pré-flop. A regra moderna não é 'c-bet em todo flop' — é apostar pequeno e com frequência nos flops que favorecem o seu range (boards altos e dry como K-7-2) e dar check nos que favorecem o adversário (boards baixos e conectados como 7-6-5). Aposte pequeno — cerca de um terço do pote — em dry boards, grande — dois terços ou mais — nos wet, dê c-bet menos fora de posição quando você foi o único raiser (como 3-bettor fora de posição, inverte para quase sempre) e bem menos multiway.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-15",
+  updated: "2026-09-22",
   // 2026-09-15: PT GTO 예제 발행으로 보류됐던 A72·QT7 해설 역링크를 연결했다.
   // masterUpdated는 본문의 기존 EN 동기화 기준을 유지한다.
   masterUpdated: "2026-09-11",
@@ -54,7 +54,7 @@ Se as [ações de aposta](/pt/blog/holdem-betting-actions) básicas de check, be
 
 ## O conselho antigo de "c-bet em todo flop" está errado — o que mudou
 
-Se você aprendeu poker antes dos solvers, ensinaram você a dar c-bet de cerca de dois terços do pote na *maioria* dos flops. Funcionou por um tempo porque os adversários davam fold demais. Aí todo mundo aprendeu a revidar — dando float, check-raise e call até o fim — e a c-bet indiscriminada virou um vazamento.
+Se você aprendeu poker antes dos solvers, ensinaram você a dar c-bet de cerca de dois terços do pote na *maioria* dos flops. Funcionou por um tempo porque os adversários davam fold demais. Aí todo mundo aprendeu a revidar — dando float, check-raise e call até o fim — e a c-bet indiscriminada virou um leak.
 
 Aqui está o ponto crucial que a estratégia moderna realmente diz, porque é fácil entender errado: **NÃO é "c-bet menos em todo lugar".** É uma *divisão*:
 
@@ -95,7 +95,7 @@ A parte sutil: dá para ter um sem o outro. Num A‑8‑3 você tem muito mais t
 
 ## Com que frequência você deve dar c-bet? (Frequência)
 
-Não existe uma única porcentagem "correta" de c-bet — quem te dá um número só está te vendendo um vazamento. A frequência varia com a posição, o board e quantos jogadores estão no pote. Aqui está a referência rápida:
+Não existe uma única porcentagem "correta" de c-bet — quem te dá um número só está te ensinando um leak. A frequência varia com a posição, o board e quantos jogadores estão no pote. Aqui está a referência rápida:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

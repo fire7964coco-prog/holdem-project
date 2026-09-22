@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Odds implícitas são as fichas extras que você espera ganhar nas próximas streets quando o seu projeto acerta. Elas deixam você pagar com lucro um projeto que só as pot odds mandariam foldar — mas só se os stacks forem profundos e o adversário realmente for pagar você.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-13",
+  updated: "2026-09-22",
   masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "11 min",
@@ -125,7 +125,7 @@ Como você erra ==r:sete vezes em cada oito==, a matemática é brutal a não se
 Aqui vai a explicação honesta que a maioria dos artigos pula:
 
 - **O empate puro é 7,5 para 1.** Num mundo de fantasia em que você ganha o stack *inteiro* do adversário toda vez que flopa um set, você só precisaria de cerca de 7,5× atrás.
-- **A vida real exige 15–20×.** Você nem sempre vai ganhar o stack inteiro, às vezes vai flopar um set e *mesmo assim perder* (set contra set, ou o adversário completa uma mão maior), e a posição importa. O colchão extra cobre esses vazamentos.
+- **A vida real exige 15–20×.** Você nem sempre vai ganhar o stack inteiro, às vezes vai flopar um set e *mesmo assim perder* (set contra set, ou o adversário completa uma mão maior), e a posição importa. O colchão extra compensa essas perdas.
 - Então ==b:7,5 para 1 é o piso teórico; 15–20× é a regra prática.== Não confunda os dois — usar o número 7,5 como seu guia de mesa real é um leak lento.
 
 A matemática exata de flopar um set e todo outro número de "odds de flopar X" vivem em [odds de projetos](/pt/blog/holdem-drawing-odds "thumb:/images/holdem-drawing-odds-hero.webp"); a conclusão aqui é que pares pequenos são ouro quando os stacks são profundos e lixo quando são curtos — o par não mudou, as odds implícitas mudaram.

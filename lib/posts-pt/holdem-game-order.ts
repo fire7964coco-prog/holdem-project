@@ -298,7 +298,7 @@ Você pode decorar a ordem do jogo e ainda assim sangrar fichas se cometer estes
 
 ### 1. Jogar quase todas as mãos
 
-"Vou só ver um flop" é prejuízo garantido no longo prazo — é o vazamento mais comum que eu vejo na primeira mesa de um jogador novo. Jogadores fortes jogam só 15% a 25% das mãos e foldam o resto sem hesitar. Se você está pagando o pré-flop com quaisquer duas cartas, está pagando para perder.
+"Vou só ver um flop" é prejuízo garantido no longo prazo — é o leak mais comum que eu vejo na primeira mesa de um jogador novo. Jogadores fortes jogam só 15% a 25% das mãos e foldam o resto sem hesitar. Se você está pagando o pré-flop com quaisquer duas cartas, está pagando para perder.
 
 ### 2. Ignorar a posição
 
