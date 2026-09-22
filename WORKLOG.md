@@ -1,3 +1,59 @@
+## 2026-09-22 (1) — 🧰 queue 회차 **Q13-a** 머지 (MA-147 ②③ 1/2 · cooler·bad-beat·fish)
+
+머지 `471b03c5` · 브랜치 `harden-queue` 1커밋(`9850035c`) · **8로케일 24파일**(en de es id ja pt zh zh-hant).
+🔴 **이 3편은 꼬리 17로케일에도 KO에도 없다**(실측 0건) — 결재 40 ②의 꼬리 부채가 이 회차엔 생기지 않는다.
+
+### 무엇을 고쳤나
+
+C1 표머리 「In every one」 → 「In almost every one」 · **C2 스트레이트 행(아래)** · C3 KK 「never folding」 → 「almost never」 2자리 ·
+C4 cold deck 정의를 세 뜻으로 분리 · B1 「ahead the whole way」 → 「ahead when the money went in」(tldr·스트라이프) ·
+B2 「losing decisions」·FAQ 무한정 완화 + 「favorite ≠ 옳은 결정」 한 구 · B3 「flush draw **dead**」 → 「ahead of their flush draw」 ·
+B4 잭팟 **재원↔지급조건** 분리 · F1 「in the first orbit」 → 「in an orbit or two」 ·
+es 고유 2 = fish 「izquierda」 → **「derecha」**(WRONG 정정) · cooler FAQ 「~75%」 **삭제**.
+
+### 🔴 이 회차의 핵심 — 원장이 «정본»으로 든 문면이 공집합을 가리켰다
+
+1차안 「Only the **top end** is a true cooler」는 **아무것도 가리키지 않는다.** 헤드 독립 검산(보드 `Q♠J♦T♥`):
+가능한 스트레이트는 `A-K`(A-K-Q-J-T **너츠**) · `K-9`(K-Q-J-T-9 **중간**) · `9-8`(Q-J-T-9-8 **idiot end**) 셋뿐이고,
+straight-over-straight로 **지는 쪽은 언제나 중간 또는 하단**이다. 그 문면대로면 K-9 보유자가 정당한 스택오프를 **오버폴드**한다 = **D유형**.
+🔴 **같은 범주 오류가 검수장 원장이 인용한 de `fc404ca8` 96행에 있었다** — 처방을 그대로 이식했다면 D유형이 8로케일에 퍼졌다.
+→ de 포함 8/8 전부 「너츠에 **가까운** 스트레이트는 강해서 못 접는다 — 단 하단(idiot end)은 **대개** 폴드지 쿨러가 아니다」.
+한정어(대개·meist·suele·biasanya·たいてい·costuma·多半)는 **8/8 유지**(2차 교열이 de 원래 「meist」 소실을 되돌렸다).
+→ 정본 승격 **`settled-decisions` §3-P**.
+
+### 헤드 독립 검산 (게이트가 원리상 못 본 자리)
+
+🔴 **`audit:hard`가 `holdem-cooler`를 «미검사»로 흘렸다**(카드 문단 2개를 시나리오로 못 잡음) → §13 손검산:
+- 캡션 보드 `K♠7♦2♣8♥3♠` — A♠A♦ 베스트5 `A-A-K-8-7` / K♥K♦ `K-K-K-8-7`(♠ 3장뿐 = 플러시 불가 · 보드 무페어) → **K측 세트 단독 승** ✔
+- 세트오버세트 보드 `J♦7♥2♣5♠Q♦` — 7♣7♦ `7-7-7-Q-J` / J♠J♥ `J-J-J-Q-7` ✔. 「탈출구는 남은 7 한 장뿐」도 참(보드가 페어되면 상대가 더 큰 풀하우스) ✔
+- **「AA vs 77 = ~4-to-1(about 80%)」을 전 36무늬 조합 가중 전수 계산으로 검증 = 80.31% · 4.15:1** ✔ (메모리 `equity-weight-all-suit-combos`)
+- 기계 대조: 백틱 신규 유입 **0** · **수치·카드 토큰 다중집합 24파일 대조 = es cooler `75%` 삭제 1건만 차이**(의도된 C5)
+
+🔴 **레인이 자기 브리프를 어긴 쪽이 옳았다 — 브리프 §4-8 「`masterUpdated`를 올리지 마라」가 이 회차엔 틀렸다.**
+실측: 회차 **전에 21/21 로케일이 EN과 동기**(cooler 09-11 · bad-beat 09-13 · fish 08-30 전부 일치)였고 같은 회차에 같은 델타를 받았으므로
+미대조 델타가 **0** → **올리는 쪽이 정직한 주장**이다. 「금지」는 **로케일이 EN보다 뒤처졌을 때**의 규율(ar 선례).
+→ **`settled-decisions` §1-C에 조건부로 명문화.**
+
+🔴 **진행 파일 표 파손 1건 복구** — `Q14` 행이 `Q13-b` 행에 붙어 있었다(줄바꿈 손실 · 커밋 `471b03c5`에서 분리).
+
+🪶 **라이브 확인에서 내 탐지 방법이 틀렸다** — es cooler 신규 문면이 `innerText`에 안 잡혀 실패로 떴는데,
+**FAQ가 접힌 `<details>` 안**이라 그런 것이고 HTML엔 있었다(`75%`는 사라짐 확인). 메모리 `review-mechanize-not-repeat` 「«없다» 보고 전 탐지방법부터 의심」의 재실증.
+
+### 게이트·배포
+
+`audit:hard` 24조합 **🔴 0 · 🟠 0** · `check:drift` **신규 0**(핵심 🔴 6은 전부 ar 선재 부채 · 이 3편은 ar에 없다) ·
+`check:mirror-pair` 3편 **갈림 0** · `check:stamp` **0** · `check:answer-echo` 내 파일 🔴 0(🔴 echo 1 = 선재 `ko/appt-korea-2026-guide`) ·
+`check:structure` 핵심 0 · `check:meta` 초과 0 · `check:cjk`·`check:hygiene` 0 · `check:mailbox` 내 행 통과(선재 흠 2건은 남의 회차 행) ·
+**빌드 70 + intl 577** · **sitemap lastmod 24 = 편집 24파일 일치** · 라이브 8페이지 «신규 있음 + 구 문면 사라짐» 양쪽 확인 · **IndexNow 24 URL 200**.
+
+### 마감 처리
+
+MB-075 발신(검수장 · 이견 2 + 신설 결함 2 + 앵커 갱신 요청) · `settled-decisions` **§3-P·§3-Q + §1-C 조건부 명문화** ·
+`en-first-queue` **§2-J**(J-1 쿨러 「behind the whole way」 약 40자리 · J-2 정의문 16자리 — 둘 다 EN-먼저 8로케일) ·
+세 레인(ja·zh·zh-hant) **HARDEN.md §6-0 통지** · `locale-intentional-diffs` 등재 **0** · `update-calendar` 요청 **없음**.
+
+---
+
 ## 2026-09-21 (8) — 🟠 `check:stamp` 🔴 24 결재·이행 (사장님 결재 ⓐ · 게이트 분류 ⑦ `relink` 신설)
 
 레인 Q12-b가 헤드 판정으로 넘긴 것. **24 → 5 → 0건.**

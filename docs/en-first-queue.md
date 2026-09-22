@@ -129,6 +129,16 @@ EN 12편 정정 → 7로케일(de·es·id·ja·pt·zh·zh-hant) 전파 완료. 1
 - **I-2**(🔴 높음) `blind-meaning` L121 「posted **from the seat left of the big blind**」 — UTG만 말하고 **버튼 스트래들을 빠뜨린다**(B 165는 버튼 쪽이 **우선**이라고까지 적는다).
 - **I-3**(🟠 중간) 같은 글 L127 「It's **the one time the button pays a blind**」 — 같은 글이 스트래들을 「a **voluntary extra blind**」로 정의하고 버튼 스트래들도 허용되므로 **자기모순**이다. I-2와 한 편집으로.
 
+### §2-J. queue Q13-a가 올린 것 (2026-09-22 · MA-147 ②③ 1/2 머지)
+
+> 둘 다 **`holdem-cooler` 한 글** 안이고 **EN-먼저 + 8로케일**이다. 🔴 이 3편은 꼬리 17로케일에도 KO에도 **없다**(실측) — 전파 범위는 `en de es id ja pt zh zh-hant` 여덟뿐.
+
+- **J-1**(🟠 중간 · 약 40자리) **쿨러 글의 「behind the whole way」 계열이 그대로다**(tldr · 스트라이프 값 · FAQ 2 · 요약 = **8로케일 × 약 5자리**).
+  Q13-a가 **짝 글 `holdem-bad-beat`에서 고친 «라벨↔값 어긋남»**(값 「whole way」 ↔ 라벨 「when the money went in」)이 **쿨러에 거울상으로 남았다**(딜러 렌즈 5).
+  🔴 **명제 자체는 정의상 참이다** — 쿨러는 서크아웃이 없으니 머니인 시점부터 리버까지 계속 뒤진다. **결함은 «라벨 정합»뿐**이라 사실 정정이 아니라 **문면 수렴 회차**다. 열 때 §3-Q(값 칸은 스탯이다)를 같이 읽어라.
+- **J-2**(🟠 중간 · 16자리) **쿨러 «정의문» 「could never correctly fold」가 무조건형이다**(tldr + FAQ① = 8로케일 × 2자리 · **es만 `:151`에 이미 헤지 보유**).
+  🔴 Q13-a는 **«정의라서 유지»로 판정했다**(§1-Q13-a 기각 ⓐ — 같은 글이 「Can You Actually Avoid Coolers?」에서 이미 별표를 달았다). **다시 열려면** 그 판정을 뒤집는 근거가 먼저다: 교열 렌즈 근거 = 「KK 예시가 **같은 문장에** 붙어 있어 정의문이 아니라 주장문으로 읽힌다」. **판정부터, 편집은 그다음.**
+
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - 🟠 **EN `paired-board-strategy` — 22 counterfeiting의 리버 조건 누락**(HI GTO 독립 전략·수학 검수, 2026-09-15). 원문 `a running three counterfeits it into playing the board`를 한정된 런아웃으로 명확히 할 필요가 있다. `22/6633K`는 보드 Two Pair를 플레이하지만 `22/66332`는 홀카드 22로 Full House를 만든다. HI 초안의 별도 오역(`66333`을 Two Pair로 분류)은 HI에서 고쳐 카드 재검산까지 종결했다. EN·기발행 형제 언어의 적용은 이 회차에서 하지 않았으며, 후속 회차는 실제 해당 문장을 확인한 뒤 최소 수정한다. 원본/도입 결함 구분과 증거 정본 = [HI 원문 계약](hi-gto-source-contract.md#hi-독립-검수에서-구체화한-런아웃-조건).
