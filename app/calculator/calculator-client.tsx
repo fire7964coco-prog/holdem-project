@@ -263,11 +263,11 @@ function CardPicker({ selected, max, onToggle, onClear, disabled = [], label }: 
 // ─────────────────────────────────────────────
 const DRAW_PRESETS = [
   { label: "직접 입력", outs: 0, custom: true },
-  { label: "너트 플러시 드로우", outs: 9, desc: "동일 수트 카드 4장 → 5번째 필요" },
+  { label: "플러시 드로우", outs: 9, desc: "동일 수트 카드 4장 → 5번째 필요 (너트 여부와 무관하게 9아웃츠)" },
   { label: "양방 스트레이트 (OESD)", outs: 8, desc: "예: 5-6-7-8, 4 또는 9 필요" },
   { label: "플러시 + 거트샷 콤보", outs: 12, desc: "플러시 9 + 거트샷 3 (중복 제외)" },
   { label: "거트샷 스트레이트", outs: 4, desc: "예: 5-6-8-9, 7 하나만 필요" },
-  { label: "오버카드 2장", outs: 6, desc: "보드에 없는 하이카드 2종 × 3장" },
+  { label: "오버카드 2장", outs: 6, desc: "보드의 모든 카드보다 높은 두 랭크 × 3장 — 메이드 핸드 상대에선 맞아도 질 수 있어 할인" },
   { label: "투페어 → 풀하우스", outs: 4, desc: "예: A-K 보유·보드 A-K-x → 남은 A 2장, K 2장" },
   { label: "원페어 → 트리플", outs: 2, desc: "같은 랭크 카드 2장 남음" },
   { label: "플러시 + OESD (최강)", outs: 15, desc: "9개 플러시 + 8개 스트레이트 (중복 2)" },
@@ -281,17 +281,25 @@ function ec(n: number, out: boolean) {
 function rule(n: number, m: 4|2) { return Math.min(n*m,100); }
 function pcolor(p: number) { return p>=35?"text-green-400":p>=20?"text-yellow-400":"text-red-400"; }
 function pbg(p: number) { return p>=35?"bg-green-400":p>=20?"bg-yellow-400":"bg-red-400"; }
-function plabel(p: number) { return p>=45?"매우 유리 🔥":p>=35?"유리 ✅":p>=25?"보통 ⚠️":p>=15?"불리 ❌":"매우 불리 💀"; }
+function plabel(p: number) { return p>=45?"매우 높음 🔥":p>=35?"높음 ✅":p>=25?"보통 ⚠️":p>=15?"낮음 ❌":"매우 낮음 💀"; }
 
 function OutsCalc() {
   const [sel, setSel] = useState(1);
   const [custom, setCustom] = useState(9);
-  const [stage, setStage] = useState<"flop"|"turn">("flop");
+  const [stage, setStage] = useState<"flop"|"flop1"|"turn">("flop");
   const preset = DRAW_PRESETS[sel];
   const outs = preset.custom ? custom : preset.outs;
   const flop = ec(outs, true);
+  const flop1 = Math.round((outs / 47) * 1000) / 10;
   const turn = ec(outs, false);
-  const pct = stage === "flop" ? flop : turn;
+  const pct = stage === "flop" ? flop : stage === "flop1" ? flop1 : turn;
+  const ruleN: 4|2 = stage === "flop" ? 4 : 2;
+  const stages = ["flop","flop1","turn"] as const;
+  const cards: ["flop"|"flop1"|"turn", number, string, string][] = [
+    ["flop", flop, "플랍→리버", "Rule of 4"],
+    ["flop1", flop1, "플랍→턴", "Rule of 2"],
+    ["turn", turn, "턴→리버", "Rule of 2"],
+  ];
   return (
     <div className="space-y-4 sm:space-y-6">
       <div className="grid md:grid-cols-2 gap-4">
@@ -309,11 +317,11 @@ function OutsCalc() {
         </div>
         <div>
           <label className="block text-xs font-bold text-muted-foreground mb-1.5 sm:mb-2 uppercase tracking-wide">게임 단계</label>
-          <div className="grid grid-cols-2 gap-2">
-            {(["flop","turn"] as const).map(s => (
+          <div className="grid grid-cols-3 gap-2">
+            {stages.map(s => (
               <button key={s} onClick={() => setStage(s)} aria-pressed={stage === s}
-                className={`py-2.5 sm:py-3 rounded-xl text-sm font-bold border transition-all ${stage===s ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border text-muted-foreground hover:border-primary/50"}`}>
-                {s==="flop" ? "🃏 플랍 이후" : "🔄 턴 이후"}
+                className={`py-2.5 sm:py-3 rounded-xl text-xs sm:text-sm font-bold border transition-all ${stage===s ? "bg-primary text-primary-foreground border-primary" : "bg-card border-border text-muted-foreground hover:border-primary/50"}`}>
+                {s==="flop" ? "🃏 플랍→리버" : s==="flop1" ? "🎯 플랍→턴" : "🔄 턴→리버"}
               </button>
             ))}
           </div>
@@ -329,25 +337,25 @@ function OutsCalc() {
           <div className="flex justify-between text-xs text-muted-foreground mt-1"><span>1</span><span>5</span><span>10</span><span>15</span><span>20</span></div>
         </div>
       )}
-      <div className="grid grid-cols-2 gap-3">
-        {[["flop", flop, "플랍 이후", "Rule of 4"], ["turn", turn, "턴 이후", "Rule of 2"]].map(([k, val, lbl, rule]) => (
-          <div key={String(k)} className={`rounded-xl p-4 border text-center transition-all ${stage===k ? "border-primary/60 bg-primary/5" : "border-border bg-card"}`}>
+      <div className="grid grid-cols-3 gap-3">
+        {cards.map(([k, val, lbl, ruleLabel]) => (
+          <div key={String(k)} className={`rounded-xl p-2 sm:p-4 border text-center transition-all ${stage===k ? "border-primary/60 bg-primary/5" : "border-border bg-card"}`}>
             <p className="text-xs text-muted-foreground mb-1">{String(lbl)}</p>
-            <p className="text-xs text-muted-foreground/60 mb-2">{String(rule)}</p>
-            <p className={`text-3xl font-black ${pcolor(Number(val))}`}>{val}%</p>
+            <p className="text-xs text-muted-foreground/60 mb-2">{ruleLabel}</p>
+            <p className={`text-2xl sm:text-3xl font-black ${pcolor(Number(val))}`}>{val}%</p>
           </div>
         ))}
       </div>
       <div className="rounded-2xl bg-card border border-border p-5">
         <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between mb-4">
           <div>
-            <p className="text-xs text-muted-foreground mb-1">{stage==="flop" ? "플랍 이후 완성 확률" : "턴 이후 완성 확률"} (정밀)</p>
+            <p className="text-xs text-muted-foreground mb-1">{stage==="flop" ? "플랍→리버 완성 확률 (두 장 관측 확정)" : stage==="flop1" ? "플랍→턴 적중 확률" : "턴→리버 완성 확률"} (정밀)</p>
             <p className={`text-5xl sm:text-6xl font-black tabular-nums ${pcolor(pct)}`}>{pct}%</p>
             <p className={`text-sm font-bold mt-1 ${pcolor(pct)}`}>{plabel(pct)}</p>
           </div>
           <div className="text-right text-xs text-muted-foreground space-y-1">
-            <p>암산법 Rule of {stage==="flop"?4:2}:</p>
-            <p className="text-foreground font-bold text-base">{outs} × {stage==="flop"?4:2} = ~{rule(outs, stage==="flop"?4:2)}%</p>
+            <p>암산법 Rule of {ruleN}:</p>
+            <p className="text-foreground font-bold text-base">{outs} × {ruleN} = ~{rule(outs, ruleN)}%</p>
             <p className="text-primary/70 text-[10px]">큰 글씨 쪽이 정밀 계산값</p>
           </div>
         </div>
@@ -661,11 +669,11 @@ function SPRCalc() {
 
   const zone = spr <= 0 ? null
     : spr < 4   ? { label:"낮은 SPR (커밋 구간)", color:"text-red-400", bg:"bg-red-400/10 border-red-400/40",
-        desc:"팟의 상당 부분을 이미 베팅했습니다. TPTK 이상이면 올인을 고려하세요. 폴드는 손해일 수 있습니다.",
+        desc:"드라이 플랍에서는 TPTK 이상으로 남은 스택을 넣을 계획을 세울 수 있습니다. 페어드·3플러시·3스트레이트 보드나 셋·스트레이트급 액션 앞에서는 원페어가 여전히 원페어입니다.",
         actions:[["TPTK+","올인 고려","text-red-400"],["드로우","팟 오즈 계산 필수","text-yellow-400"],["약한 핸드","신중하게 폴드","text-muted-foreground"]] }
     : spr < 8   ? { label:"중간 SPR (유연 구간)", color:"text-yellow-400", bg:"bg-yellow-400/10 border-yellow-400/40",
         desc:"투페어 이상의 강한 핸드로 플레이하는 게 유리한 구간입니다. 스택 보호가 중요해집니다.",
-        actions:[["투페어+","밸류 베팅","text-green-400"],["원페어","상황 봐서","text-yellow-400"],["드로우","위험 대비 수익 계산","text-muted-foreground"]] }
+        actions:[["투페어+","밸류 베팅","text-green-400"],["원페어","1~2스트리트 후 팟 컨트롤","text-yellow-400"],["드로우","폴드 에쿼티 있을 때 세미블러프","text-muted-foreground"]] }
     : spr < 15  ? { label:"높은 SPR (딥스택 시작)", color:"text-blue-400", bg:"bg-blue-400/10 border-blue-400/40",
         desc:"스택이 깊어지는 구간입니다. 드로우와 강한 메이드 핸드의 상대 가치가 높아집니다.",
         actions:[["셋+","강하게 플레이","text-green-400"],["드로우","임플라이드 오즈 상승","text-blue-400"],["원페어/TPTK","신중하게","text-yellow-400"]] }
@@ -677,7 +685,7 @@ function SPRCalc() {
     <div className="space-y-4 sm:space-y-6">
       <div className="grid md:grid-cols-2 gap-4">
         <div>
-          <label htmlFor="spr-stack" className="block text-xs font-bold text-muted-foreground mb-1.5 sm:mb-2 uppercase tracking-wide">유효 스택 (내 스택)</label>
+          <label htmlFor="spr-stack" className="block text-xs font-bold text-muted-foreground mb-1.5 sm:mb-2 uppercase tracking-wide">유효 스택 (두 스택 중 작은 쪽)</label>
           <div className="relative">
             <input id="spr-stack" type="number" value={stack} onChange={e => setStack(Math.max(0,Number(e.target.value)))}
               className="w-full px-4 py-3 pr-14 rounded-xl bg-card border border-border text-foreground text-sm focus-visible:outline-2 focus-visible:outline-primary focus-visible:outline-offset-2 focus:border-primary" step={5000} />
@@ -1018,9 +1026,9 @@ function ICMCalc() {
   return (
     <div className="space-y-3 sm:space-y-4">
       <div className="bg-primary/8 border border-primary/20 rounded-xl p-3 text-[13px] text-foreground/80 leading-relaxed">
-        <strong className="text-primary">ICM(Independent Chip Model)</strong>이란 토너먼트 칩의 실제 상금 가치를 계산하는 방법입니다.
-        칩 리더라도 ICM 가치는 칩 비율보다 낮고, 반대로 숏스택은 칩 비율보다 높습니다.
-        파이널 테이블·버블에서 콜/폴드 결정에 활용하세요.
+        <strong className="text-primary">ICM(Independent Chip Model)</strong>은 토너먼트 칩을 실제 상금 가치로 환산합니다.
+        2명 이상 입상하는 구조에서는 칩 리더의 ICM 비율이 보통 칩 비율보다 낮고, 짧은 스택은 더 높습니다.
+        콜/폴드는 승리·무승부·패배 뒤 ICM 가치를 실제 확률로 가중한 값과 폴드했을 때의 가치를 비교하세요.
       </div>
 
       <div className="grid grid-cols-2 gap-3">
@@ -1107,7 +1115,7 @@ function ICMCalc() {
         <motion.div initial={false} animate={{ opacity: 1, y: 0 }}>
           <div className="text-xs text-muted-foreground mb-2 font-bold uppercase tracking-wider">ICM 계산 결과</div>
           <div className="overflow-x-auto rounded-xl border border-border">
-            <table className="w-full text-xs">
+            <table className="w-full min-w-[560px] text-xs">
               <thead>
                 <tr className="bg-background/50 border-b border-border">
                   <th className="px-3 py-1.5 text-left text-muted-foreground font-bold">플레이어</th>
@@ -1115,7 +1123,8 @@ function ICMCalc() {
                   <th className="px-3 py-1.5 text-right text-muted-foreground font-bold hidden sm:table-cell">칩 %</th>
                   <th className="px-3 py-1.5 text-right text-primary font-bold">ICM 가치</th>
                   <th className="px-3 py-1.5 text-right text-muted-foreground font-bold">ICM %</th>
-                  <th className="px-3 py-1.5 text-right text-muted-foreground font-bold">차이</th>
+                  <th className="px-3 py-1.5 text-right text-muted-foreground font-bold whitespace-nowrap">원시 칩찹</th>
+                  <th className="px-3 py-1.5 text-right text-muted-foreground font-bold">차이(%p)</th>
                 </tr>
               </thead>
               <tbody>
@@ -1130,8 +1139,9 @@ function ICMCalc() {
                       <td className="px-3 py-1.5 text-right font-mono text-muted-foreground hidden sm:table-cell">{chipPct.toFixed(1)}%</td>
                       <td className="px-3 py-1.5 text-right font-mono font-bold text-primary">{Math.round(equity).toLocaleString()}원</td>
                       <td className="px-3 py-1.5 text-right font-mono">{icmPct.toFixed(1)}%</td>
+                      <td className="px-3 py-1.5 text-right font-mono text-muted-foreground">{Math.round((stacks[i] / totalChips) * totalPrize).toLocaleString()}원</td>
                       <td className={`px-3 py-1.5 text-right font-mono font-bold ${diff > 0.1 ? "text-green-400" : diff < -0.1 ? "text-red-400" : "text-muted-foreground"}`}>
-                        {diff > 0 ? "+" : ""}{diff.toFixed(1)}%
+                        {diff > 0 ? "+" : ""}{diff.toFixed(1)}%p
                       </td>
                     </tr>
                   );
@@ -1142,13 +1152,16 @@ function ICMCalc() {
           <div className="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-2 text-[11px] text-muted-foreground">
             <div className="flex items-start gap-1.5 bg-card border border-border rounded-lg px-3 py-2">
               <span className="text-green-400 font-bold flex-shrink-0">+차이</span>
-              <span>칩보다 ICM 가치가 높음 → 숏스택 보호 구간, 코인플립 자제</span>
+              <span>현재 상금 풀에서 차지하는 ICM 비율이 칩 비율보다 높음</span>
             </div>
             <div className="flex items-start gap-1.5 bg-card border border-border rounded-lg px-3 py-2">
               <span className="text-red-400 font-bold flex-shrink-0">−차이</span>
-              <span>칩보다 ICM 가치가 낮음 → 칩 리더의 공격적 플레이가 더 유리</span>
+              <span>현재 상금 풀에서 차지하는 ICM 비율이 칩 비율보다 낮음</span>
             </div>
           </div>
+          <p className="mt-2 text-[11px] text-muted-foreground">
+            차이의 부호만으로 콜·폴드가 정해지지는 않습니다. 보통 버블의 미들스택이 가장 타이트하고, 블라인드에 먹힐 극숏은 보호할 가치가 적은 예외입니다.
+          </p>
         </motion.div>
       ) : (
         <div className="text-center py-6 text-muted-foreground text-sm">
@@ -1519,7 +1532,7 @@ export default function CalculatorPage() {
             </table>
           </div>
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mt-5 max-w-3xl">
-            핵심은 <strong className="text-foreground">칩 리더의 ICM 가치(33.3%)가 칩 비율(40%)보다 6.7%p 낮다</strong>는 점입니다. 1등을 해도 1등 상금만 받기 때문에 리더가 코인플립으로 얻는 상금 가치는 생각보다 적습니다. 그래서 버블에서 칩 리더는 <strong className="text-foreground">숏스택을 압박</strong>하는 것이 정답이고, 반대로 숏스택(칩 13.3% → ICM 16.6%)은 칩보다 가치가 높아 <strong className="text-foreground">불필요한 올인 콜을 피해</strong> 생존 가치를 지켜야 합니다. 개념이 더 궁금하면 <a href="/blog/icm-poker-meaning" className="text-primary-ink font-semibold underline underline-offset-2">ICM이란</a> · <a href="/blog/holdem-bubble-strategy" className="text-primary-ink font-semibold underline underline-offset-2">버블 생존 전략</a>을 참고하세요.
+            핵심은 <strong className="text-foreground">칩 리더의 ICM 가치(33.3%)가 칩 비율(40%)보다 6.7%p 낮다</strong>는 점입니다. 1등을 해도 1등 상금만 받기 때문에 리더가 코인플립으로 얻는 상금 가치는 생각보다 적습니다. 그래서 버블에서 칩 리더는 특히 탈락을 피해야 하는 <strong className="text-foreground">미들스택을 압박</strong>할 수 있습니다. 반대로 숏스택(칩 13.3% → ICM 16.6%)은 무리한 올인 콜을 피하되, 블라인드에 먹히기 전에는 선제 올인 기회도 잡아야 합니다. 개념이 더 궁금하면 <a href="/blog/icm-poker-meaning" className="text-primary-ink font-semibold underline underline-offset-2">ICM이란</a> · <a href="/blog/holdem-bubble-strategy" className="text-primary-ink font-semibold underline underline-offset-2">버블 생존 전략</a>을 참고하세요.
           </p>
         </div>
 
@@ -1528,7 +1541,7 @@ export default function CalculatorPage() {
           <p className="mb-3"><span className="badge-gold">상금 분배</span></p>
           <h2 className="text-xl sm:text-2xl font-black text-foreground mb-3">ICM 딜 vs 칩찹 — 파이널 테이블 상금 분배</h2>
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-5 max-w-3xl">
-            3명이 남아 딜(deal)을 논의한다고 합시다. 스택 비율이 50% / 30% / 20%이고 남은 상금 합계가 150만원일 때, 두 가지 분배 방식은 아래처럼 크게 갈립니다.
+            3명이 남아 딜(deal)을 논의한다고 합시다. 스택 비율은 50% / 30% / 20%이고, 남은 상금 150만원은 1위 90만원 / 2위 40만원 / 3위 20만원입니다. 이 지급 구조를 위 계산기에 입력하면 두 분배 방식은 아래처럼 갈립니다.
           </p>
           <div className="overflow-x-auto rounded-xl border border-border">
             <table className="w-full text-sm">
@@ -1557,7 +1570,7 @@ export default function CalculatorPage() {
             </table>
           </div>
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mt-5 max-w-3xl">
-            칩찹은 칩 비율 그대로 나눠 <strong className="text-foreground">칩 리더에게 유리</strong>하고, ICM 딜은 순위 확정 확률을 반영해 <strong className="text-foreground">숏스택에게 더 공정</strong>합니다. 위 숏스택은 칩찹이면 30만원이지만 ICM 딜이면 약 39.7만원 — <strong className="text-foreground">9.7만원을 더 받습니다</strong>. 숏스택이라면 ICM 딜을, 칩 리더라면 칩찹을 제안하는 게 이득입니다.
+            원시 칩찹은 칩 비율 그대로 나눠 <strong className="text-foreground">칩 리더에게 유리</strong>하고, ICM 딜은 각 순위에 도달할 확률을 반영해 <strong className="text-foreground">짧은 스택의 생존 가치</strong>를 더 인정합니다. 위 숏스택은 칩찹 30만원보다 ICM 딜에서 약 39.7만원으로, 약 9.7만원 높습니다. 다만 현장에서 말하는 칩찹은 각자 다음 확정 상금(이 예에서는 3위 20만원)을 먼저 떼고 나머지만 칩 비율로 나누는 세이브 앤드 칩찹일 수도 있습니다. ICM도 동등 실력을 가정하고 다음 블라인드 위치를 반영하지 않으므로, 표는 협상의 기준점으로 쓰세요.
           </p>
         </div>
 
@@ -1597,42 +1610,59 @@ export default function CalculatorPage() {
         {/* 빠른 참조표 — 아웃츠·SPR·M값 (인터랙티브 도구 데이터의 정적 요약, 색인용) */}
         <div>
           <p className="mb-3"><span className="badge-gold">빠른 참조</span></p>
-          <h2 className="text-xl sm:text-2xl font-black text-foreground mb-3">아웃츠별 완성 확률표 — Rule of 4 · 2</h2>
+          <h2 className="text-xl sm:text-2xl font-black text-foreground mb-3">아웃츠 계산표 — 플랍·턴 정확 확률과 Rule of 4 · 2</h2>
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-5 max-w-3xl">
-            드로우 완성 확률은 <strong className="text-foreground">아웃츠</strong>(내 패를 완성시키는 남은 카드) 수로 정해집니다. 플랍에서 리버까지 두 장을 볼 때는 <strong className="text-foreground">아웃츠 × 4</strong>, 턴에서 한 장만 볼 때는 <strong className="text-foreground">아웃츠 × 2</strong>가 빠른 암산값이고, 아래는 정확한 계산값입니다.
+            드로우 완성 확률은 <strong className="text-foreground">아웃츠</strong>(내 패를 개선해 이기게 하는 남은 카드) 수로 정해집니다. 플랍→리버 두 장, 플랍→턴 다음 한 장, 턴→리버 한 장의 정확값과 Rule of 4 · 2 암산값을 함께 비교하세요.
           </p>
           <div className="overflow-x-auto rounded-xl border border-border">
-            <table className="w-full text-sm">
+            <table className="w-full min-w-[720px] text-sm">
               <thead>
                 <tr className="bg-card border-b border-border">
-                  <th className="px-3 py-2.5 text-left font-bold text-muted-foreground">드로우 예시</th>
-                  <th className="px-3 py-2.5 text-right font-bold text-muted-foreground">아웃츠</th>
-                  <th className="px-3 py-2.5 text-right font-bold text-primary-ink">플랍→리버 (2장)</th>
-                  <th className="px-3 py-2.5 text-right font-bold text-muted-foreground">턴→리버 (1장)</th>
+                  <th className="px-3 py-2.5 text-left font-bold text-muted-foreground">아웃츠</th>
+                  <th className="px-3 py-2.5 text-left font-bold text-muted-foreground">대표 드로우</th>
+                  <th className="px-3 py-2.5 text-right font-bold text-primary-ink whitespace-nowrap">플랍→리버</th>
+                  <th className="px-3 py-2.5 text-right font-bold text-muted-foreground whitespace-nowrap">플랍→턴</th>
+                  <th className="px-3 py-2.5 text-right font-bold text-muted-foreground whitespace-nowrap">턴→리버</th>
+                  <th className="px-3 py-2.5 text-right font-bold text-muted-foreground whitespace-nowrap">Rule 4 · 2</th>
                 </tr>
               </thead>
               <tbody>
                 {([
-                  ["원페어 → 트리플", "2", "8.4%", "4.3%"],
-                  ["거트샷 스트레이트", "4", "16.5%", "8.7%"],
-                  ["오버카드 2장", "6", "24.1%", "13.0%"],
-                  ["양방 스트레이트 (OESD)", "8", "31.5%", "17.4%"],
-                  ["플러시 드로우", "9", "35.0%", "19.6%"],
-                  ["플러시 + 거트샷", "12", "45.0%", "26.1%"],
-                  ["플러시 + 양방 (최강)", "15", "54.1%", "32.6%"],
-                ] as [string, string, string, string][]).map(([d, o, f, t]) => (
-                  <tr key={d} className="border-b border-border/60 last:border-0">
-                    <td className="px-3 py-2.5 font-bold text-foreground">{d}</td>
-                    <td className="px-3 py-2.5 text-right font-mono text-muted-foreground">{o}</td>
-                    <td className="px-3 py-2.5 text-right font-mono font-bold text-foreground">{f}</td>
-                    <td className="px-3 py-2.5 text-right font-mono text-muted-foreground">{t}</td>
+                  ["1", "—", "4.3%", "2.1%", "2.2%", "4% · 2%"],
+                  ["2", "포켓페어 → 셋", "8.4%", "4.3%", "4.3%", "8% · 4%"],
+                  ["3", "오버카드 1장", "12.5%", "6.4%", "6.5%", "12% · 6%"],
+                  ["4", "거트샷 스트레이트", "16.5%", "8.5%", "8.7%", "16% · 8%"],
+                  ["5", "원페어 → 투페어 또는 트립스", "20.4%", "10.6%", "10.9%", "20% · 10%"],
+                  ["6", "오버카드 2장", "24.1%", "12.8%", "13.0%", "24% · 12%"],
+                  ["7", "—", "27.8%", "14.9%", "15.2%", "28% · 14%"],
+                  ["8", "양방 스트레이트", "31.5%", "17.0%", "17.4%", "32% · 16%"],
+                  ["9", "플러시 드로우", "35.0%", "19.1%", "19.6%", "36% · 18%"],
+                  ["10", "거트샷 + 오버카드 2장", "38.4%", "21.3%", "21.7%", "40% · 20%"],
+                  ["11", "양방 + 오버카드 1장", "41.7%", "23.4%", "23.9%", "44% · 22%"],
+                  ["12", "플러시 + 거트샷", "45.0%", "25.5%", "26.1%", "48% · 24%"],
+                  ["13", "—", "48.1%", "27.7%", "28.3%", "52% · 26%"],
+                  ["14", "양방 + 오버카드 2장", "51.2%", "29.8%", "30.4%", "56% · 28%"],
+                  ["15", "플러시 + 양방", "54.1%", "31.9%", "32.6%", "60% · 30%"],
+                  ["16", "—", "57.0%", "34.0%", "34.8%", "64% · 32%"],
+                  ["17", "—", "59.8%", "36.2%", "37.0%", "68% · 34%"],
+                  ["18", "—", "62.4%", "38.3%", "39.1%", "72% · 36%"],
+                  ["19", "—", "65.0%", "40.4%", "41.3%", "76% · 38%"],
+                  ["20", "—", "67.5%", "42.6%", "43.5%", "80% · 40%"],
+                ] as [string, string, string, string, string, string][]).map(([o, d, fr, ft, tr, r]) => (
+                  <tr key={o} className="border-b border-border/60 last:border-0">
+                    <td className="px-3 py-2.5 font-mono font-bold text-foreground">{o}</td>
+                    <td className="px-3 py-2.5 text-foreground">{d}</td>
+                    <td className="px-3 py-2.5 text-right font-mono font-bold text-foreground">{fr}</td>
+                    <td className="px-3 py-2.5 text-right font-mono text-muted-foreground">{ft}</td>
+                    <td className="px-3 py-2.5 text-right font-mono text-muted-foreground">{tr}</td>
+                    <td className="px-3 py-2.5 text-right font-mono text-muted-foreground">{r}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mt-5 max-w-3xl">
-            다른 아웃츠 수와 정밀값은 위 <strong className="text-foreground">아웃츠 계산기</strong>에서 바로 확인할 수 있고, 아웃츠 세는 법은 <a href="/blog/holdem-outs-calculation" className="text-primary-ink font-semibold underline underline-offset-2">아웃츠 세는 법</a>에서 자세히 다룹니다.
+            플랍→리버 값은 두 장을 모두 보게 확정된 상황(예: 올인)에 씁니다. 상대 올인이 아니고 턴에 다시 비용이 들 수 있다면 플랍→턴 열을 보세요(9아웃츠 19.1%). 오버카드는 메이드 핸드 상대에서 맞아도 질 수 있으므로 크게 할인해야 합니다. 중복 없이 아웃츠를 세는 법은 <a href="/blog/holdem-outs-calculation" className="text-primary-ink font-semibold underline underline-offset-2">아웃츠 세는 법</a>에서 자세히 다룹니다.
           </p>
         </div>
 
@@ -1641,7 +1671,7 @@ export default function CalculatorPage() {
           <p className="mb-3"><span className="badge-gold">빠른 참조</span></p>
           <h2 className="text-xl sm:text-2xl font-black text-foreground mb-3">SPR(스택-팟 비율) 구간별 전략</h2>
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-5 max-w-3xl">
-            SPR은 <strong className="text-foreground">유효 스택 ÷ 현재 팟</strong>입니다. 값이 낮을수록 이미 팟에 커밋된 상태라 탑페어급으로도 올인이 정당화되고, 높을수록 셋·너트급 핸드가 필요합니다.
+            SPR은 <strong className="text-foreground">유효 스택(두 스택 중 작은 쪽) ÷ 현재 팟</strong>입니다. 값이 낮을수록 스택오프에 필요한 핸드 강도는 낮아지지만, 보드가 젖거나 페어드라면 낮은 SPR에서도 원페어를 자동 올인 핸드로 보지 않습니다.
           </p>
           <div className="overflow-x-auto rounded-xl border border-border">
             <table className="w-full text-sm">
@@ -1654,8 +1684,8 @@ export default function CalculatorPage() {
               </thead>
               <tbody>
                 {([
-                  ["SPR < 4", "커밋 구간", "TPTK(탑페어 탑키커) 이상이면 올인 고려 — 폴드가 오히려 손해일 수 있음"],
-                  ["4 ≤ SPR < 8", "유연 구간", "투페어 이상으로 밸류 베팅, 스택 보호가 중요"],
+                  ["SPR < 4", "커밋 구간", "드라이 플랍의 TPTK 이상은 스택오프 계획 — 젖거나 페어드 보드·셋/스트레이트급 액션은 예외"],
+                  ["4 ≤ SPR < 8", "유연 구간", "투페어 이상은 밸류, 원페어는 1~2스트리트 뒤 팟 컨트롤"],
                   ["8 ≤ SPR < 15", "딥스택 시작", "셋 이상은 강하게, 드로우는 임플라이드 오즈 상승"],
                   ["SPR ≥ 15", "딥스택", "너트급으로만 큰 팟 — 약한 메이드는 블러핑에 취약"],
                 ] as [string, string, string][]).map(([r, c, a]) => (
