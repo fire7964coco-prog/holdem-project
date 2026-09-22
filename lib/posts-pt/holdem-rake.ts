@@ -4,12 +4,12 @@ export const POST: Post = {
   slug: "holdem-rake",
   title: "O que é rake no poker? Como a casa é paga — e quanto você realmente paga",
   seoTitle: "A taxa que come seus lucros em silêncio — o que é rake?",
-  desc: "O rake é a taxa que a casa tira de cada pote no cash game. Veja como funcionam o rake do pote, o time charge e a taxa de torneio — e quanto você paga mesmo.",
-  tldr: "O rake é a pequena fatia que a sala de poker tira de cada pote para sediar o jogo — geralmente 2,5–10% até um cap de alguns dólares. A maioria das salas não tira nada se todo mundo folda antes do flop ('no flop, no drop'). Ele pesa mais para quem joga stakes baixos e short-handed, e o rakeback devolve uma parte dele aos regulares.",
+  desc: "O rake é a taxa que a casa tira da maioria dos potes no cash game. Como funcionam o rake do pote, o time charge e a taxa de torneio — e quanto você paga mesmo.",
+  tldr: "O rake é a pequena fatia que a sala de poker tira da maioria dos potes para sediar o jogo — geralmente 2,5–10% até um cap de alguns dólares. A maioria das salas não tira nada se todo mundo folda antes do flop ('no flop, no drop'). Ele pesa mais para quem joga stakes baixos e short-handed, e o rakeback devolve uma parte dele aos regulares.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-09-13",
-  masterUpdated: "2026-09-13",
+  updated: "2026-09-22",
+  masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🏦",
@@ -52,10 +52,10 @@ Não existe só um tipo de rake. Como a casa recolhe seu dinheiro depende dos st
 
 | Tipo | Como é tirado | Valor típico | Onde você vai ver |
 |:---|:---|:---:|:---|
-| **Rake do pote (escalonado)** | % de cada pote, até um cap | 2,5–10%, cap $1–$6 | Maioria dos cash games low/mid, online |
+| **Rake do pote (escalonado)** | % dos potes sujeitos a rake, até um cap | 2,5–10%, cap $1–$6 | Maioria dos cash games low/mid, online |
 | **Time charge** | Taxa fixa por jogador, a cada 30 min | ~$10–$15 por hora | High-stakes ao vivo ($10/$20+), e qualquer stake onde o rake do pote não seja possível |
 | **Dead drop** | O botão paga um rake fixo por mão | Fixo por mão | Algumas salas ao vivo |
-| **Taxa de torneio** | Somada ao buy-in lá no começo | ~5–20% do buy-in | Todo torneio |
+| **Taxa de torneio** | Cobrada com o buy-in lá no começo | ~5–20% do buy-in | Quase todo torneio |
 
 </div>
 
@@ -108,7 +108,7 @@ Para um jogador casual, o rakeback é um bônus menor. Para um regular de alto v
 
 ## Torneios têm rake?
 
-Sim — só que não do tipo do pote: você ainda paga uma taxa, e ela está escondida à vista de todos. Um buy-in de torneio é dividido em duas partes, mostradas com um **sinal de "+"**:
+Sim — só que não do tipo do pote: você ainda paga uma taxa, e ela está escondida à vista de todos. O preço de entrada pode mostrar a contribuição para a premiação e a taxa separadas por um **sinal de "+"**. Algumas séries, como a WSOP, anunciam um buy-in total que já inclui a taxa. Um exemplo da notação separada:
 
 :::pull
 Um torneio de **$100 + $9** significa que $100 vão para a premiação e **$9 são a taxa da casa.**
@@ -138,7 +138,7 @@ A lição: nunca julgue o rake só pela porcentagem. O que importa é a porcenta
 
 **Q. O que é rake no poker?**
 
-A. O rake é a taxa que uma sala de poker tira de um cash game por sediá-lo — normalmente uma pequena porcentagem de cada pote (2,5–10%) até um máximo com cap. Como a casa não joga, o rake é a principal fonte de receita dela. Os torneios cobram uma taxa equivalente embutida no buy-in em vez disso.
+A. O rake é a taxa que uma sala de poker tira de um cash game por sediá-lo — normalmente uma pequena porcentagem dos potes sujeitos a rake (2,5–10%) até um máximo com cap. Como a casa não joga, o rake é a principal fonte de receita dela. Os torneios cobram uma taxa equivalente embutida no buy-in em vez disso.
 
 **Q. Como o rake é calculado?**
 
@@ -166,7 +166,7 @@ A. Você não escapa do rake num jogo com rake, mas dá pra encolhê-lo: consiga
 
 **Q. Torneios de poker têm rake?**
 
-A. Sim, mas não do pote. A taxa é somada ao seu buy-in e mostrada com um "+" — um torneio de $100 + $9 manda $100 para a premiação e $9 para a casa. Essa taxa (o "juice" ou "vig") é tipicamente 5–20% do buy-in e é paga independentemente de como você termine.
+A. Sim, mas não do pote. O preço de entrada pode separar a contribuição para a premiação e a taxa com um "+" — um torneio de $100 + $9 manda $100 para a premiação e $9 para a casa. Algumas séries, como a WSOP, anunciam um buy-in total que já inclui a taxa. Essa taxa (o "juice" ou "vig") é tipicamente 5–20% do buy-in e é paga independentemente de como você termine.
 
 **Q. Como o rake afeta o seu win rate?**
 
@@ -180,7 +180,7 @@ A. O rake ao vivo é uma porcentagem mais alta com um cap mais alto, mas você j
 
 ## As 3 coisas para lembrar
 
-1. **O rake é a fatia da casa por sediar o jogo** — geralmente 2,5–10% de cada pote até um cap pequeno, e é separado do que você ganha ou perde para os adversários.
+1. **O rake é a fatia da casa por sediar o jogo** — geralmente 2,5–10% dos potes sujeitos a rake até um cap pequeno, e é separado do que você ganha ou perde para os adversários.
 2. **Ele pesa mais em stakes baixos.** O cap quase não se move conforme você desce, então proporcionalmente você paga mais rake lá embaixo — a "armadilha do rake" que torna os micro-stakes tão difíceis de bater.
 3. **Rakeback e estrutura importam.** Receber 20–40% do seu rake de volta, e escolher salas com caps amigáveis ao jogador, pode virar o seu resultado no longo prazo — meça tudo *depois* do rake.
 

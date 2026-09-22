@@ -4,11 +4,11 @@ export const POST: Post = {
   slug: "holdem-rake",
   title: "What Is Rake in Poker? How the House Gets Paid — and How Much You Really Pay",
   seoTitle: "The Fee Quietly Eating Your Winnings — What Is Poker Rake?",
-  desc: "Rake is the fee the house takes from every cash-game pot. How pot rake, time charges and tournament fees work, what you really pay, and what rakeback returns.",
-  tldr: "Rake is the small cut the cardroom takes from each pot to host the game — usually 2.5–10% up to a cap of a few dollars. Most rooms take nothing if everyone folds before the flop ('no flop, no drop'). It hits low-stakes and short-handed players hardest, and rakeback returns a slice of it to regulars.",
+  desc: "Rake is the fee the house takes from most cash-game pots. How pot rake, time charges and tournament fees work, what you really pay, and what rakeback returns.",
+  tldr: "Rake is the small cut the cardroom takes from most pots to host the game — usually 2.5–10% up to a cap of a few dollars. Most rooms take nothing if everyone folds before the flop ('no flop, no drop'). It hits low-stakes and short-handed players hardest, and rakeback returns a slice of it to regulars.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-09-13",
+  updated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🏦",
@@ -51,10 +51,10 @@ There isn't just one kind of rake. How the house collects its money depends on t
 
 | Type | How it's taken | Typical amount | Where you'll see it |
 |:---|:---|:---:|:---|
-| **Pot rake (scaled)** | % of each pot, up to a cap | 2.5–10%, capped $1–$6 | Most low/mid cash games, online |
+| **Pot rake (scaled)** | % of eligible pots, up to a cap | 2.5–10%, capped $1–$6 | Most low/mid cash games, online |
 | **Time charge** | Flat fee per player, every 30 min | ~$10–$15 per hour | High-stakes live ($10/$20+), and every stake where pot rake isn't an option |
 | **Dead drop** | Button pays a set rake each hand | Fixed per hand | Some live rooms |
-| **Tournament fee** | Added to the buy-in up front | ~5–20% of buy-in | Every tournament |
+| **Tournament fee** | Charged with the buy-in up front | ~5–20% of buy-in | Almost every tournament |
 
 </div>
 
@@ -107,7 +107,7 @@ For a casual player, rakeback is a minor perk. For a high-volume regular it's en
 
 ## Do Tournaments Have Rake?
 
-Not the pot kind — but you still pay a fee, and it's hiding in plain sight. A tournament buy-in is split into two parts, shown with a **"+" sign**:
+Not the pot kind — but you still pay a fee, and it's hiding in plain sight. A tournament entry price may show the prize-pool contribution and fee separately with a **"+" sign**; some series, including the WSOP, quote a single buy-in with the fee already included. In the split format:
 
 :::pull
 A **$100 + $9** tournament means $100 goes into the prize pool and **$9 is the house's fee.**
@@ -137,7 +137,7 @@ The lesson: never judge rake by the percentage alone. What matters is the percen
 
 **Q. What is a rake in poker?**
 
-A. Rake is the fee a cardroom takes from a cash game for hosting it — normally a small percentage of each pot (2.5–10%) up to a capped maximum. Because the house doesn't play, the rake is its main source of revenue. Tournaments charge an equivalent fee built into the buy-in instead.
+A. Rake is the fee a cardroom takes from a cash game for hosting it — normally a small percentage of eligible pots (2.5–10%) up to a capped maximum. Because the house doesn't play, the rake is its main source of revenue. Tournaments charge an equivalent fee built into the buy-in instead.
 
 **Q. How is rake calculated?**
 
@@ -161,7 +161,7 @@ A. Rakeback returns a percentage of the rake you personally pay — often 20–4
 
 **Q. How can you pay less rake in poker?**
 
-A. You can't escape rake entirely in a raked game, but you can shrink it. Get the best rakeback deal you can, and choose rooms with player-friendly caps. Moving up in stakes shrinks rake too, since a fixed cap is a smaller share of each pot — but only take that step once your bankroll covers the swings *and* you still hold an edge over the tougher field, or the players will take far more than the rake ever did. Playing fewer, bigger pots rather than a flood of small ones lowers it too: the cap only kicks in on big pots, while small pots pay the full percentage. The same goes for avoiding very short-handed tables — where you play far more hands per hour and post blinds far more often, so you're in many more raked pots — and preferring high-stakes time-charge games. On pure cost, a home game with no rake is the cheapest poker there is — nothing is skimmed from the pot.
+A. You can't escape rake entirely in a raked game, but you can shrink it. Get the best rakeback deal you can, and choose rooms with player-friendly caps. Moving up in stakes shrinks rake too, since a fixed cap is a smaller share of each pot — but only take that step once your bankroll covers the swings *and* you still hold an edge over the tougher field, or the players will take far more than the rake ever did. Playing fewer, bigger pots rather than a flood of small ones lowers it too: the cap only kicks in on big pots, while small pots pay the full percentage. The same goes for avoiding very short-handed tables — where you play far more hands per hour and post blinds far more often, so you're in many more raked pots — and preferring high-stakes time-charge games — but moving to those games requires the same bankroll cushion and an edge over the field. On pure cost, a home game with no rake is the cheapest poker there is — nothing is skimmed from the pot.
 
 **Q. Is taking a rake illegal? Why is taking a rake in poker illegal?**
 
@@ -169,7 +169,7 @@ A. Charging a fee to host the game is the entire business model of a licensed ca
 
 **Q. Do poker tournaments have rake?**
 
-A. Yes, but not from the pot. The fee is added to your buy-in and shown with a "+" — a $100 + $9 tournament sends $100 to the prize pool and $9 to the house. That fee (the "juice" or "vig") is typically 5–20% of the buy-in and is paid regardless of how you finish.
+A. Yes, but not from the pot. The fee is collected with your entry payment. A split price such as $100 + $9 sends $100 to the prize pool and $9 to the house; series such as the WSOP instead quote one buy-in with the fee already included. That fee (the "juice" or "vig") is typically 5–20% of the buy-in and is paid regardless of how you finish.
 
 **Q. How does rake affect your win rate?**
 
@@ -183,7 +183,7 @@ A. Live rake is a higher percentage with a higher cap, but you play far fewer ha
 
 ## The 3 Things to Remember
 
-1. **Rake is the house's cut for hosting the game** — usually 2.5–10% of each pot up to a small cap, and it's separate from what you win or lose to opponents.
+1. **Rake is the house's cut for hosting the game** — usually 2.5–10% of eligible pots up to a small cap, and it's separate from what you win or lose to opponents.
 2. **It hits low stakes hardest.** The cap barely moves as you drop down, so proportionally you pay the most rake at the bottom — the "rake trap" that makes micro-stakes so hard to beat.
 3. **Rakeback and structure matter.** Getting 20–40% of your rake back, and choosing rooms with player-friendly caps, can flip your long-term result — measure everything *after* the rake.
 

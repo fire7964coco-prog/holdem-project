@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "O que é straddle no poker? Regras, tipos e se você deveria",
   seoTitle: "A aposta que dobra os blinds — o que é straddle no poker?",
   desc: "O straddle é uma aposta voluntária que dobra os blinds antes das cartas. Veja as regras, cada tipo de straddle, quem age primeiro e se straddar dá lucro.",
-  tldr: "O straddle é uma aposta de blind opcional — normalmente o dobro do big blind — postada antes de as cartas serem distribuídas. Ela compra pro straddler a última ação e a opção de aumentar no pré-flop, dobrando os blinds do jogo. Em quase todo caso é uma jogada -EV, e na prática só existe em cash games, conforme as regras da casa.",
+  tldr: "O straddle é uma aposta de blind opcional — normalmente o dobro do big blind — postada antes de as cartas serem distribuídas. Ela compra pro straddler a última ação no pré-flop e a opção de aumentar, dobrando os blinds do jogo. Em quase todo caso é uma jogada -EV, e na prática só existe em cash games, conforme as regras da casa.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-09-12",
-  masterUpdated: "2026-09-12",
+  updated: "2026-09-22",
+  masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "💰",
@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Um jogador under the gun postando uma aposta de blind extra de duas fichas na frente do big blind antes de as cartas serem distribuídas",
   tags: ["straddle", "o que é straddle no poker", "regras do straddle no poker", "mississippi straddle", "button straddle", "sleeper straddle", "straddle dá lucro", "utg straddle"],
   content: `
-Na primeira vez que alguém deu um straddle na minha mesa de $1/$2, eu não fazia ideia de por que o cara under the gun jogou $4 antes de as cartas virem — e por que o dealer de repente começou a action uma cadeira adiante. Chamei aquilo de "a aposta do rico" por uns bons trinta dias antes de aprender o que ela realmente faz: um straddle ==dobra os blinds e compra pra um jogador a última palavra==, tudo antes de qualquer um ter olhado uma carta.
+Na primeira vez que alguém deu um straddle na minha mesa de $1/$2, eu não fazia ideia de por que o cara under the gun jogou $4 antes de as cartas virem — e por que o dealer de repente começou a action uma cadeira adiante. Chamei aquilo de "a aposta do rico" por uns bons trinta dias antes de aprender o que ela realmente faz: um straddle ==dobra os blinds e compra pra um jogador a última palavra antes do flop==, tudo antes de qualquer um ter olhado uma carta.
 
 Se você já viu um jogo ao vivo em que um blind extra aparece do nada, é esse o termo que você procura. É uma das entradas mais mal entendidas de todo o [glossário de poker](/pt/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp"), então vamos acertar em cheio. Abaixo está exatamente o que é um **straddle**, cada tipo que você vai encontrar, quem age primeiro quando ele é postado, e a resposta honesta pra única pergunta que importa: ==g:você deveria mesmo fazer isso?==
 
@@ -125,16 +125,16 @@ A resposta honesta, e a que os solvers concordam: **pra quase todo mundo, não.*
 :::card
 🎯 | Você compromete às cegas | O dinheiro entra antes de você ver suas cartas, então você está jogando um pote inchado sem informação — a mesma desvantagem que faz dos blinds as piores cadeiras da mesa. E ainda corta pela metade a sua profundidade efetiva: num $1/$2, um stack de $200 são 100 big blinds, mas com um straddle de $4 na mesa o mesmo stack joga como 50
 📉 | Encolhe sua vantagem posicional | Dobrar o blind incha o pote inicial e deixa mais jogadores ainda pra agir quando você está nas suas melhores cadeiras de roubo. Contra a intuição, os solvers respondem abrindo **menos** mãos em potes com straddle — cerca de 15–20% menos no button, segundo as [simulações de potes com straddle do GTO Wizard](https://blog.gtowizard.com/preflop-strategy-in-straddled-pots/) — não mais
-💸 | Incha o rake | Potes maiores significam mais [rake](/pt/blog/holdem-rake) tirado deles, um imposto escondido em cada mão com straddle num cash game com rake
+💸 | Pode aumentar o rake do pote | Nos potes sujeitos a [rake](/pt/blog/holdem-rake), um pote maior pode pagar mais até atingir o cap. Esse aumento não se aplica a potes pré-flop sob a regra no flop, no drop, a jogos com time charge nem a potes que já atingiram o cap
 :::
 
-Então quando *é* defensável? Só em spots específicos, e nunca como pura jogada de lucro:
+Então quando *é* defensável? Só em spots específicos, e quase nunca como pura jogada de lucro:
 
 - **Uma mesa loose-passive** onde os adversários pagam o blind maior com lixo e jogam fit-or-fold depois do flop — você pode ocasionalmente explorar isso, idealmente dando straddle de posição tardia.
-- **Um jogo onde todo mundo já dá straddle** — se o straddle é universal, você não perde nenhuma posição *relativa* ao entrar na dança (embora a mesa toda estivesse melhor sem fazer isso).
+- **Um jogo onde todos dão straddle por turnos e nas mesmas condições** — assim os stakes sobem sem colocar você em desvantagem relativa aos adversários. Segundo o GTO Wizard, isso geralmente favorece quem está entre os melhores jogadores da mesa, embora a menor profundidade efetiva possa reduzir essa vantagem.
 - **Jogos de action / sociais** onde você está ali pra se divertir, não pelo EV máximo — um motivo perfeitamente válido, só seja honesto que está te custando dinheiro.
 
-O que o straddle *não* vai fazer é "criar uma imagem loose" que compensa — você está pagando um preço real e mensurável por uma vantagem de imagem que raramente se concretiza. Se seu objetivo é ganhar, a jogada que de fato constrói vantagem é a [posição](/pt/blog/holdem-position-play), não um blind extra. Dê straddle por diversão se quiser; não dê straddle pra ganhar dinheiro.
+O que o straddle *não* vai fazer é "criar uma imagem loose" que compensa — você está pagando um preço real e mensurável por uma vantagem de imagem que raramente se concretiza. Se seu objetivo é ganhar, a jogada que de fato constrói vantagem é a [posição](/pt/blog/holdem-position-play), não um blind extra. Dê straddle por diversão se quiser; em geral, não espere que seja uma forma confiável de aumentar seu lucro.
 
 ---
 
@@ -179,7 +179,7 @@ A. Quase nunca. Torneios dependem de uma estrutura fixa de blinds que precisa se
 
 **Q. Straddle dá lucro? Você deveria straddar?**
 
-A. Pra maioria dos jogadores, não — é uma jogada -EV. Você compromete dinheiro às cegas, encolhe sua vantagem posicional (os solvers abrem *menos* mãos em potes com straddle, não mais) e infla o rake. Só é defensável em mesas loose-passive, em jogos onde todo mundo já dá straddle, ou puramente por diversão — nunca como um jeito de ganhar dinheiro.
+A. Pra maioria dos jogadores, não — é uma jogada -EV. Você compromete dinheiro às cegas, encolhe sua vantagem posicional (os solvers abrem *menos* mãos em potes com straddle, não mais) e pode pagar mais rake. Só é defensável em mesas loose-passive, em jogos onde todos dão straddle por turnos e nas mesmas condições, ou puramente por diversão — quase nunca como um jeito de ganhar dinheiro. Se todos participam por turnos e nas mesmas condições, o GTO Wizard observa que esses stakes maiores podem favorecer os melhores jogadores da mesa.
 
 ---
 
@@ -187,7 +187,7 @@ A. Pra maioria dos jogadores, não — é uma jogada -EV. Você compromete dinhe
 
 1. **Um straddle é um terceiro blind opcional, geralmente 2× o big blind,** postado antes das cartas — ele dobra os blinds e compra a última ação no pré-flop.
 2. **A cadeira decide a posição, não o nome do straddle.** Um straddle UTG é o último só no pré-flop. O único que também é o último depois do flop é o postado ==a partir do button== — porque no pós-flop a ordem sempre segue o button. Tudo depende das regras da casa.
-3. **É -EV pra quase todo mundo.** Comprometer às cegas, inchar o pote fora de posição e alimentar o rake pesam mais que a diversão. Dê straddle pela imagem na mesa ou pelo entretenimento, não pelo lucro.
+3. **É -EV pra quase todo mundo.** Comprometer às cegas, inchar o pote fora de posição e possivelmente pagar mais rake pesam mais que a diversão. Como regra geral, dê straddle pelo entretenimento, não pela imagem na mesa nem pelo lucro.
 
 Agora que você conhece o blind extra, aperte os fundamentos que ele distorce: [o que os blinds realmente fazem](/pt/blog/holdem-blind-meaning), [por que a posição ganha dinheiro](/pt/blog/holdem-position-play) e [como as ações de aposta e os aumentos funcionam](/pt/blog/holdem-betting-actions) depois que o straddle reseta o preço.
 

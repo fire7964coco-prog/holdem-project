@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Este es un glosario en lenguaje llano de los términos de póker que de verdad salen en una partida de Texas Hold'em, agrupados según cómo te los vas a encontrar: acciones de apuesta, posiciones, manos y mesa, tipos de jugador, dinero y situaciones de mesa. Empieza por los términos que más se confunden (pasar vs igualar, trío/set vs trips, cooler vs bad beat) y luego navega por categoría. Los términos con una guía más completa enlazan directamente a ella.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-17",
-  masterUpdated: "2026-09-17",
+  updated: "2026-09-22",
+  masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "📖",
@@ -42,7 +42,7 @@ Si solo vas a aclarar una docena de términos, que sean estos: son los que causa
 
 | Estos se confunden | La diferencia |
 |:---|:---|
-| **Pasar (check) vs Igualar (call)** | Pasar no arriesga **ninguna ficha** (solo cuando no hay apuesta viva); igualar **paga** una apuesta ya hecha. |
+| **Pasar (check) vs Igualar (call)** | Pasar no arriesga **ninguna ficha** (solo cuando no te queda ninguna apuesta por igualar); igualar **paga** una apuesta ya hecha. |
 | **Ciega (blind) vs Ante** | Las ciegas son apuestas forzadas **posicionales** (SB/BB); el ante engorda el bote y sale de **todos** (en los torneos de hoy, normalmente vía big blind ante). |
 | **Set vs Trips** | Ambos son trío — un **set** usa un par servido; los **trips** usan una carta de mano + una pareja en la mesa. |
 | **Cooler vs Bad Beat** | Un [cooler](/es/blog/holdem-cooler) = ibas por detrás y no podías foldear; un [bad beat](/es/blog/holdem-bad-beat) = ibas por delante y te cazaron con carta. |
@@ -65,7 +65,7 @@ Todo lo que puedes hacer físicamente en tu turno. Si acabas de empezar, arranca
 
 | Término | Significado |
 |:---|:---|
-| **Pasar (check)** | Ceder la acción sin apostar — solo posible cuando nadie ha apostado en esta ronda. |
+| **Pasar (check)** | Ceder la acción sin apostar — solo posible cuando no te queda ninguna apuesta por igualar. |
 | **Apostar (bet)** | Ser el primero en meter fichas en el bote en una ronda de apuestas. |
 | **Igualar (call)** | Pagar la apuesta actual para seguir en la mano. |
 | **Subir (raise)** | Aumentar la apuesta actual, obligando a los demás a pagar más o retirarse. |
@@ -99,7 +99,7 @@ Dónde te sientas decide cuándo actúas — y actuar el último es una ventaja 
 | Término | Significado |
 |:---|:---|
 | **Botón (BTN)** | La posición del repartidor; actúa el **último** postflop — el mejor asiento de la mesa. |
-| **Ciega pequeña (SB)** | Apuesta forzada a la izquierda del botón; actúa primero postflop (el peor asiento postflop). |
+| **Ciega pequeña (SB)** | Con tres o más jugadores, apuesta forzada a la izquierda del botón; actúa primero postflop (el peor asiento postflop). En heads-up, la ciega pequeña está en el botón y actúa última después del flop. |
 | **Ciega grande (BB)** | La mayor de las dos ciegas; los niveles se nombran por el tamaño de las ciegas ($1/$2), y una ciega grande es la unidad estándar para medir stacks. |
 | **UTG (under the gun)** | El primero en actuar preflop — necesita el rango de apertura más cerrado. |
 | **Cutoff (CO)** | A la derecha del botón; segundo mejor asiento, ideal para robar ciegas. |
@@ -197,11 +197,11 @@ Fichas, límites y los dos formatos. La gran bifurcación es [cash game vs torne
 | **Stack** | Las fichas que tiene un jugador delante. |
 | **Bankroll** | El dinero reservado para el póker en general — no las fichas de la mesa. |
 | **Buy-in** | La cantidad necesaria para entrar en una partida o torneo. |
-| **Rake** | La comisión que se lleva la sala de cada bote — [guía completa](/es/blog/holdem-rake). |
+| **Rake** | La comisión que se lleva la sala de la mayoría de los botes — [guía completa](/es/blog/holdem-rake). |
 | **Rakeback** | Una devolución que reintegra parte del rake que has pagado. |
 | **Straddle** | Una ciega opcional (normalmente 2× BB) que compra la última acción preflop — [guía completa](/es/blog/holdem-straddle). |
 | **Cash game** | Fichas con valor real, entras o sales cuando quieres, ciegas fijas. |
-| **Sin límite (NLH) / Límite fijo** | El sin límite te deja apostar lo que quieras hasta todo tu stack; el límite fijo topa cada apuesta a un tamaño fijo. El Hold'em casi siempre es sin límite. |
+| **Sin límite (NLH) / Límite fijo** | En sin límite, la apuesta mínima de apertura es una ciega grande (salvo un all-in con menos fichas) y la máxima es todo tu stack; el límite fijo topa cada apuesta a un tamaño fijo. El Hold'em casi siempre es sin límite; en pot-limit, el formato del PLO, el máximo de cada apuesta o subida lo marca el tamaño del bote. |
 | **PLO** | Pot-Limit Omaha — una variante popular en la que recibes cuatro cartas de mano y debes usar exactamente dos (no es el mismo juego, pero lo oirás nombrar). |
 | **Torneo** | Buy-in fijo, ciegas crecientes, juegas hasta bustear o ganar. |
 | **Freezeout** | Un torneo sin recompras — fuera es fuera. |
@@ -267,7 +267,7 @@ A. UTG es el asiento inmediatamente a la izquierda de la ciega grande, así que 
 
 **Q. ¿Cuál es la diferencia entre pasar (check) e igualar (call)?**
 
-A. Pasar cede la acción sin meter ninguna ficha, y solo se permite cuando nadie ha apostado aún en esa ronda. Igualar paga una apuesta que alguien ya ha hecho. Pasar es gratis; igualar te cuesta el importe de la apuesta actual. Confundir las dos es el error de principiante más común de todos.
+A. Pasar cede la acción sin meter ninguna ficha, y solo se permite cuando no te queda ninguna apuesta por igualar. Igualar paga una apuesta que alguien ya ha hecho. Pasar es gratis; igualar te cuesta lo que aún te falta para completar la apuesta actual. Confundir las dos es el error de principiante más común de todos.
 
 **Q. ¿Cuál es la diferencia entre un set y unos trips?**
 

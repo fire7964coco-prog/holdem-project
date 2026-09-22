@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Apa Itu Straddle di Poker? Aturan, Jenis, dan Perlukah Anda",
   seoTitle: "Taruhan yang Menggandakan Taruhan — Apa Itu Straddle Poker?",
   desc: "Straddle adalah blind sukarela yang menggandakan taruhan sebelum kartu dibagi. Aturannya, setiap jenis, siapa beraksi lebih dulu, dan apakah straddle profit.",
-  tldr: "Straddle adalah taruhan blind opsional — biasanya dua kali big blind — yang dipasang sebelum kartu dibagi. Ia membeli aksi terakhir bagi si straddler dan opsi untuk raise preflop, menggandakan taruhan. Dalam hampir semua kasus ini adalah play -EV, dan dalam praktiknya hanya ada di cash game sesuai aturan rumah.",
+  tldr: "Straddle adalah taruhan blind opsional — biasanya dua kali big blind — yang dipasang sebelum kartu dibagi. Ia membeli aksi terakhir di preflop bagi si straddler dan opsi untuk raise, menggandakan taruhan. Dalam hampir semua kasus ini adalah play -EV, dan dalam praktiknya hanya ada di cash game sesuai aturan rumah.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-09-12",
-  masterUpdated: "2026-09-12",
+  updated: "2026-09-22",
+  masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "10 mnt",
   emoji: "💰",
@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Seorang pemain under-the-gun memasang taruhan blind ekstra dua chip di depan big blind sebelum kartu dibagi",
   tags: ["straddle poker", "apa itu straddle di poker", "aturan straddle poker", "mississippi straddle", "button straddle", "sleeper straddle", "apakah straddle profit", "utg straddle"],
   content: `
-Pertama kali seseorang straddle di meja $1/$2 saya, saya tak tahu kenapa orang di under the gun melempar $4 sebelum kartu keluar — dan kenapa dealer tiba-tiba memulai aksi satu kursi lebih jauh. Saya menyebutnya "taruhan orang kaya" selama sekitar sebulan sebelum akhirnya paham apa fungsinya: sebuah straddle ==menggandakan taruhan dan memberi satu pemain hak bicara terakhir==, semua sebelum siapa pun melihat kartu.
+Pertama kali seseorang straddle di meja $1/$2 saya, saya tak tahu kenapa orang di under the gun melempar $4 sebelum kartu keluar — dan kenapa dealer tiba-tiba memulai aksi satu kursi lebih jauh. Saya menyebutnya "taruhan orang kaya" selama sekitar sebulan sebelum akhirnya paham apa fungsinya: sebuah straddle ==menggandakan taruhan dan memberi satu pemain hak bicara terakhir sebelum flop==, semua sebelum siapa pun melihat kartu.
 
 Jika Anda pernah melihat game live di mana sebuah blind ekstra muncul entah dari mana, inilah istilah yang Anda cari. Ini salah satu entri yang paling sering disalahpahami di seluruh [istilah poker](/id/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp"), jadi mari kita luruskan dengan tepat. Di bawah ini persisnya apa itu **straddle**, setiap jenis yang akan Anda temui, siapa yang beraksi lebih dulu saat satu dipasang, dan jawaban jujur atas satu-satunya pertanyaan yang penting: ==g:apakah Anda benar-benar harus melakukannya?==
 
@@ -125,16 +125,16 @@ Jawaban jujurnya, dan yang disepakati para solver: **untuk hampir semua orang, t
 :::card
 🎯 | Anda mengeluarkan uang secara buta | Uang masuk sebelum Anda melihat kartu, jadi Anda memainkan pot yang menggembung tanpa informasi — kerugian yang sama yang membuat blind menjadi kursi terburuk di meja. Ia juga memangkas kedalaman efektif Anda jadi separuh: di $1/$2 sebuah stack $200 setara 100 big blind, tapi dengan straddle $4 aktif, stack yang sama bermain seperti 50
 📉 | Ia mengecilkan keunggulan posisi Anda | Menggandakan blind menggelembungkan pot awal dan menyisakan lebih banyak pemain yang masih harus beraksi saat Anda berada di kursi steal terbaik. Berlawanan dengan intuisi, solver merespons dengan membuka **lebih sedikit** tangan di pot yang di-straddle — sekitar 15–20% lebih sedikit di button, menurut [simulasi pot straddle GTO Wizard](https://blog.gtowizard.com/preflop-strategy-in-straddled-pots/) — bukan lebih banyak
-💸 | Ia menggembungkan rake | Pot lebih besar berarti lebih banyak [rake](/id/blog/holdem-rake) yang dikeruk darinya, pajak tersembunyi pada setiap tangan yang di-straddle di cash game ber-rake
+💸 | Ia bisa menaikkan pot rake | Pada pot yang dikenai [rake](/id/blog/holdem-rake), pot lebih besar bisa berarti biaya lebih tinggi sampai cap tercapai. Kenaikan ini tidak berlaku pada pot preflop dengan aturan no flop, no drop, game time-charge, atau pot yang sudah mencapai cap
 :::
 
-Jadi kapan straddle *bisa* dibela? Hanya di spot tertentu, dan tak pernah sebagai play murni untuk profit:
+Jadi kapan straddle *bisa* dibela? Hanya di spot tertentu, dan hampir tak pernah sebagai play murni untuk profit:
 
 - **Meja loose-passive** di mana lawan call blind lebih besar dengan tangan sampah dan bermain fit-or-fold setelah flop — Anda kadang bisa mengeksploitasi itu, idealnya straddle dari posisi belakang.
-- **Game di mana semua orang sudah straddle** — jika straddle universal, Anda tak kehilangan posisi *relatif* dengan ikut serta (walau seluruh meja akan lebih baik jika tak melakukannya).
+- **Game di mana semua pemain bergiliran straddle dengan ketentuan yang sama** — taruhan naik tanpa menempatkan Anda pada kerugian tambahan relatif terhadap lawan. Menurut GTO Wizard, ini umumnya menguntungkan jika Anda termasuk pemain terbaik di meja, meski kedalaman stack efektif yang lebih kecil bisa mengurangi keunggulan Anda.
 - **Game aksi / sosial** di mana Anda ada untuk bersenang-senang, bukan EV maksimal — alasan yang sepenuhnya sah, cukup jujur saja bahwa itu ada biayanya.
 
-Yang *tak akan* dilakukan straddle adalah "menciptakan image longgar" yang membuahkan hasil — Anda membayar harga nyata dan terukur untuk keunggulan image yang jarang terwujud. Jika tujuan Anda menang, play yang benar-benar membangun keunggulan adalah [posisi](/id/blog/holdem-position-play), bukan blind ekstra. Straddle untuk bersenang-senang jika Anda mau; jangan straddle untuk menghasilkan uang.
+Yang *tak akan* dilakukan straddle adalah "menciptakan image longgar" yang membuahkan hasil — Anda membayar harga nyata dan terukur untuk keunggulan image yang jarang terwujud. Jika tujuan Anda menang, play yang benar-benar membangun keunggulan adalah [posisi](/id/blog/holdem-position-play), bukan blind ekstra. Straddle untuk bersenang-senang jika Anda mau; secara umum, jangan mengharapkannya sebagai cara yang andal untuk meningkatkan keuntungan.
 
 ---
 
@@ -179,7 +179,7 @@ A. Hampir tak pernah. Turnamen bergantung pada struktur blind tetap yang harus i
 
 **Q. Apakah straddle profit? Perlukah Anda straddle?**
 
-A. Untuk sebagian besar pemain, tidak — ini play -EV. Anda mengeluarkan uang secara buta, Anda mengecilkan keunggulan posisi Anda (solver membuka *lebih sedikit* tangan di pot yang di-straddle, bukan lebih banyak), dan Anda menggembungkan rake. Ia hanya bisa dibela di meja loose-passive, di game di mana semua orang sudah straddle, atau murni untuk bersenang-senang — tak pernah sebagai cara menghasilkan uang.
+A. Untuk sebagian besar pemain, tidak — ini play -EV. Anda mengeluarkan uang secara buta, Anda mengecilkan keunggulan posisi Anda (solver membuka *lebih sedikit* tangan di pot yang di-straddle, bukan lebih banyak), dan Anda bisa membayar lebih banyak rake. Ia hanya bisa dibela di meja loose-passive, di game di mana semua pemain bergiliran straddle dengan ketentuan yang sama, atau murni untuk bersenang-senang — hampir tak pernah sebagai cara menghasilkan uang. Jika semua pemain mendapat giliran yang sama, GTO Wizard mencatat bahwa taruhan yang lebih tinggi ini bisa menguntungkan pemain terbaik di meja.
 
 ---
 
@@ -187,7 +187,7 @@ A. Untuk sebagian besar pemain, tidak — ini play -EV. Anda mengeluarkan uang s
 
 1. **Straddle adalah blind ketiga opsional, biasanya 2× big blind,** yang dipasang sebelum kartu — ia menggandakan taruhan dan membeli aksi terakhir preflop.
 2. **Kursinya yang menentukan posisi, bukan nama straddle-nya.** UTG straddle terakhir hanya di preflop. Satu-satunya straddle yang juga terakhir setelah flop adalah yang dipasang ==dari button== — sebab setelah flop urutan selalu mengikuti button. Semuanya tergantung aturan rumah.
-3. **Ia -EV untuk hampir semua orang.** Mengeluarkan uang secara buta, menggembungkan pot out of position, dan memberi makan rake mengalahkan kesenangannya. Straddle untuk image meja atau hiburan, bukan untuk profit.
+3. **Ia -EV untuk hampir semua orang.** Mengeluarkan uang secara buta, menggembungkan pot out of position, dan kemungkinan membayar lebih banyak rake mengalahkan kesenangannya. Sebagai aturan umum, straddle untuk hiburan, bukan untuk image meja atau profit.
 
 Kini setelah Anda tahu tentang blind ekstra ini, perkuat fundamental yang ia distorsi: [apa yang sebenarnya dilakukan blind](/id/blog/holdem-blind-meaning), [kenapa posisi memenangkan uang](/id/blog/holdem-position-play), dan [bagaimana aksi taruhan dan raise bekerja](/id/blog/holdem-betting-actions) begitu straddle mereset harga.
 

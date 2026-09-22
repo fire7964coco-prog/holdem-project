@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "What Is a Straddle in Poker? Rules, Types, and Whether You Should",
   seoTitle: "The Bet That Doubles the Stakes — What Is a Poker Straddle?",
   desc: "A straddle is a voluntary blind that doubles the stakes before cards are dealt. The rules, every straddle type, who acts first, and whether it's profitable.",
-  tldr: "A straddle is an optional blind bet — usually twice the big blind — posted before the cards are dealt. It buys the straddler the last action and the option to raise preflop, doubling the stakes. In almost every case it's a -EV play, and outside cash games it's almost never allowed.",
+  tldr: "A straddle is an optional blind bet — usually twice the big blind — posted before the cards are dealt. It buys the straddler the last action preflop and the option to raise, doubling the stakes. In almost every case it's a -EV play, and outside cash games it's almost never allowed.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-09-12",
+  updated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "💰",
@@ -16,7 +16,7 @@ export const POST: Post = {
   imageAlt: "An under-the-gun player posting an extra blind bet of two chips in front of the big blind before the cards are dealt",
   tags: ["straddle", "what is a straddle in poker", "poker straddle rules", "mississippi straddle", "button straddle", "sleeper straddle", "is straddling profitable", "utg straddle"],
   content: `
-The first time someone straddled at my $1/$2 table, I had no idea why the guy under the gun tossed out $4 before the cards came — and why the dealer suddenly started the action one seat further along. I called it "the rich-guy bet" for about a month before I learned what it actually does: a straddle ==doubles the stakes and buys one player the last word==, all before anyone has looked at a card.
+The first time someone straddled at my $1/$2 table, I had no idea why the guy under the gun tossed out $4 before the cards came — and why the dealer suddenly started the action one seat further along. I called it "the rich-guy bet" for about a month before I learned what it actually does: a straddle ==doubles the stakes and buys one player the last word before the flop==, all before anyone has looked at a card.
 
 If you've seen a live game where an extra blind appears out of nowhere, this is the term you're looking for. It's one of the most misunderstood entries in the whole [poker glossary](/en/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp"), so let's get it exactly right. Below is exactly what a **straddle** is, every type you'll run into, who acts first when one is posted, and the honest answer to the only question that matters: ==g:should you actually do it?==
 
@@ -124,16 +124,16 @@ The honest answer, and the one the solvers agree on: **for almost everyone, no.*
 :::card
 🎯 | You commit blind | Money goes in before you see your cards, so you're playing a bloated pot with no information — the same disadvantage that makes the blinds the worst seats at the table. It also halves your effective depth: at $1/$2 a $200 stack is 100 big blinds, but with a $4 straddle on, the same stack plays like 50
 📉 | It shrinks your positional edge | Doubling the blind bloats the starting pot and leaves more players still to act when you're in your best stealing seats. Counterintuitively, solvers respond by opening **fewer** hands in straddled pots — around 15–20% fewer on the button, per [GTO Wizard's straddled-pot sims](https://blog.gtowizard.com/preflop-strategy-in-straddled-pots/) — not more
-💸 | It bloats the rake | Bigger pots mean more [rake](/en/blog/holdem-rake) skimmed out of them, a hidden tax on every straddled hand in a raked cash game
+💸 | It can increase pot rake | In pots eligible for [rake](/en/blog/holdem-rake), a bigger pot can mean a bigger charge until the cap is reached. That increase does not apply to preflop pots under no-flop-no-drop rules, time-charge games, or pots already at the cap
 :::
 
-So when *is* it defensible? Only in specific spots, and never as a pure profit play:
+So when *is* it defensible? Only in specific spots, and almost never as a pure profit play:
 
 - **A loose-passive table** where opponents call the bigger blind with junk and play fit-or-fold after the flop — you can occasionally exploit that, ideally straddling from late position.
-- **A game where everyone already straddles** — if the straddle is universal, you lose no *relative* position by joining in (though the table would all be better off not doing it).
+- **A game where everyone already straddles** — if everyone takes turns straddling on equal terms, the stakes rise without giving one player a relative disadvantage. GTO Wizard notes that this can generally favor the stronger players at the table, though the shallower effective stacks can reduce their edge.
 - **Action / social games** where you're there for fun, not maximum EV — a perfectly valid reason, just be honest that it's costing you.
 
-What straddling *won't* do is "create a loose image" that pays off — you're paying a real, measurable price for an image edge that rarely materializes. If your goal is winning, the play that actually builds an edge is [position](/en/blog/holdem-position-play), not an extra blind. Straddle for fun if you like; don't straddle to make money.
+What straddling *won't* do is "create a loose image" that pays off — you're paying a real, measurable price for an image edge that rarely materializes. If your goal is winning, the play that actually builds an edge is [position](/en/blog/holdem-position-play), not an extra blind. Straddle for fun if you like; don't expect it to be a reliable way to improve your profits.
 
 ---
 
@@ -178,7 +178,7 @@ A. Almost never. Tournaments rely on a fixed blind structure that must be identi
 
 **Q. Is straddling profitable? Should you straddle?**
 
-A. For most players, no — it's a -EV play. You commit money blind, you shrink your positional edge (solvers open *fewer* hands in straddled pots, not more), and you inflate the rake. It's defensible only at loose-passive tables, in games where everyone already straddles, or purely for fun — never as a way to make money.
+A. For most players, no — it's a -EV play. You commit money blind, you shrink your positional edge (solvers open *fewer* hands in straddled pots, not more), and you may pay more rake. It's defensible only at loose-passive tables, in games where everyone already straddles, or purely for fun — almost never as a way to make money. When everyone takes turns straddling on equal terms, the higher stakes can favor the stronger players.
 
 ---
 
@@ -186,7 +186,7 @@ A. For most players, no — it's a -EV play. You commit money blind, you shrink 
 
 1. **A straddle is an optional third blind, usually 2× the big blind,** posted before the cards — it doubles the stakes and buys the last action preflop.
 2. **The seat decides the position, not the name of the straddle.** A UTG straddle is last preflop only. The only straddle that is also last after the flop is one posted ==from the button== — because postflop the order always follows the button. Everything is house-rules dependent.
-3. **It's -EV for almost everyone.** Committing blind, bloating the pot out of position, and feeding the rake outweigh the fun. Straddle for the table image or the entertainment, not the profit.
+3. **It's -EV for almost everyone.** Committing blind, bloating the pot out of position, and potentially paying more rake outweigh the fun. As a general rule, straddle for the entertainment, not the image or the profit.
 
 Now that you know the extra blind, tighten up the fundamentals it distorts: [what the blinds actually do](/en/blog/holdem-blind-meaning), [why position wins money](/en/blog/holdem-position-play), and [how betting actions and raises work](/en/blog/holdem-betting-actions) once the straddle resets the price.
 

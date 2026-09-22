@@ -152,3 +152,18 @@ MA-147 ②는 **앵커 21개**로 적혀 있다. 그 21개를 8로케일에 전�
 `audit:hard --slug=<slug> --locale=<loc>`(손댄 8로케일 전부) · `check:drift`(EN을 고치므로 같은 회차에 8로케일 전파해 0으로) ·
 `check:structure` · `check:answer-echo`(직답 블록을 고치는 자리 C1·C3c·C4b) · `check:meta`(desc) · `check:cjk` · `check:hygiene` ·
 `check:mirror-pair --slug=<slug>`(zh↔zh-hant) · `check:stamp`(커밋 뒤) · `npm run build`.
+
+## §6. Q13-b A 재실측 (2026-09-22 · Codex 현재 모델)
+
+- 사용자 지시로 A/B/C 모두 현재 Codex 모델로 진행한다. Claude 모델 전환은 하지 않는다. 독립 렌즈와 2차 교열은 유지한다.
+- 시작 상태 = harden-queue clean. git merge main = Already up to date. ja·zh·zh-hant 워크트리 해당 포스트 미커밋 0 확인.
+- 회차 전 EN updated = glossary 09-17 / rake 09-13 / straddle 09-12. 21개 번역본 masterUpdated 전부 대응 날짜와 일치. 마지막 EN 델타 실물 = abdc7a21(glossary 혼동 묶음), 33acbaa1(rake cap 밴드), b311d693(straddle 버튼 포지션). 델타와 전파 원문을 대조한다.
+- §4-8의 무조건 금지는 적용하지 않는다. 정본 docs/settled-decisions.md §1-C의 09-22 조건부 규율에 따라, 이전 동기+이번 동일 델타를 확인한 파일은 masterUpdated를 새 EN 날짜로 올린다.
+- G1 FAQ의 콜 비용도 잔액 기준으로 맞춘다. 이미 낸 블라인드를 다시 내는 것으로 읽히지 않도록 「현재 베팅까지 부족한 금액」이라고 쓴다. G2 예외는 SB의 버튼 왼쪽 위치와 첫 포스트플랍 액션 모두에 건다.
+- G3는 최소 「오픈 베팅」=BB와 부족한 스택의 올인 예외를 구별한다. PL은 베팅·레이즈 상한이 팟 크기인 구조다.
+- R1/R2 동형은 glossary Rake 표행·직답과 rake 정의/요약에도 있다. 해당 명제 사본만 함께 정정한다. 개인 경험담의 every는 보편 규칙 진술이 아니므로 보존한다.
+- R3는 +가 보편 또는 통계상 다수라는 새 주장을 만들지 않는다. 분리 표기의 예와 fee 포함 총액 표기를 구별한다. WSOP A 5조 원문 재확인.
+- R4는 de에도 동형 권고가 있다(§1의 부재 추정 정정). 시드 문자열 유무가 아니라 FAQ 원문으로 전수 판정한다.
+- S3는 전원이 동일하게 순환하여 스트래들하는 조건에서의 상대적 이익이다. 「테이블 전원이 안 하는 것이 낫다」는 기존 괄호도 같이 제거한다. 본문 마무리/직답/FAQ/요약에 남은 동형 단정까지 정합.
+- 출처 재열람: docs/sources/wsop-2026-tournament-rules.txt A 5·87·SECTION VIII, wsop-2026-live-action-rules.txt B 156·159·165. GTO Wizard https://blog.gtowizard.com/preflop-strategy-in-straddled-pots/ 「Should You Straddle?」 원문 09-22 재확인(전원 참여 시 상대적 불이익 없음, 강자에게 유리할 수 있음, 유효 스택 감소 단서).
+- 사전 EN audit:hard 🔴0. 다만 --locale와 --slug를 함께 주면 해당 로케일 전체를 검사하며 세 편은 형제 CLUSTERS 밖이다. 0건을 세 편의 규칙·전략 문면까지 자동 검증했다는 뜻으로 보고하지 않는다.

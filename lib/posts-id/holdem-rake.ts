@@ -4,12 +4,12 @@ export const POST: Post = {
   slug: "holdem-rake",
   title: "Apa Itu Rake di Poker? Bagaimana House Dibayar — dan Berapa yang Sebenarnya Anda Bayar",
   seoTitle: "Biaya yang Menggerogoti Kemenangan — Apa Itu Rake Poker?",
-  desc: "Rake adalah biaya yang diambil house dari tiap pot cash game. Cara kerja pot rake, time charge, biaya turnamen, berapa yang Anda bayar per sesi, plus rakeback.",
-  tldr: "Rake adalah potongan kecil yang diambil cardroom dari setiap pot untuk menyelenggarakan permainan — biasanya 2,5–10% hingga cap beberapa dolar. Sebagian besar room tidak mengambil apa pun jika semua fold sebelum flop ('no flop, no drop'). Ia paling memukul pemain stake rendah dan short-handed, dan rakeback mengembalikan sebagian kepada regular.",
+  desc: "Rake adalah biaya yang diambil house dari sebagian besar pot cash game. Pahami pot rake, time charge, biaya turnamen, biaya per sesi, dan rakeback.",
+  tldr: "Rake adalah potongan kecil yang diambil cardroom dari sebagian besar pot untuk menyelenggarakan permainan — biasanya 2,5–10% hingga cap beberapa dolar. Sebagian besar room tidak mengambil apa pun jika semua fold sebelum flop ('no flop, no drop'). Ia paling memukul pemain stake rendah dan short-handed, dan rakeback mengembalikan sebagian kepada regular.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-09-13",
-  masterUpdated: "2026-09-13",
+  updated: "2026-09-22",
+  masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "11 mnt",
   emoji: "🏦",
@@ -52,10 +52,10 @@ Rake bukan hanya satu jenis. Bagaimana house mengumpulkan uangnya tergantung pad
 
 | Jenis | Cara diambil | Jumlah umum | Di mana Anda melihatnya |
 |:---|:---|:---:|:---|
-| **Pot rake (berskala)** | % dari tiap pot, hingga cap | 2,5–10%, cap $1–$6 | Sebagian besar cash game low/mid, online |
+| **Pot rake (berskala)** | % dari pot yang dikenai rake, hingga cap | 2,5–10%, cap $1–$6 | Sebagian besar cash game low/mid, online |
 | **Time charge** | Biaya tetap per pemain, tiap 30 mnt | ~$10–$15 per jam | Live stake tinggi ($10/$20+), dan semua stake di mana pot rake tidak memungkinkan |
 | **Dead drop** | Button membayar rake tetap tiap tangan | Tetap per tangan | Beberapa room live |
-| **Biaya turnamen** | Ditambahkan ke buy-in di muka | ~5–20% dari buy-in | Setiap turnamen |
+| **Biaya turnamen** | Dibayar bersama buy-in di muka | ~5–20% dari buy-in | Hampir setiap turnamen |
 
 </div>
 
@@ -108,7 +108,7 @@ Bagi pemain kasual, rakeback adalah perk kecil. Bagi regular bervolume tinggi ia
 
 ## Apakah Turnamen Punya Rake?
 
-Bukan jenis pot — tapi Anda tetap membayar biaya, dan ia bersembunyi di depan mata. Buy-in turnamen dibagi menjadi dua bagian, ditampilkan dengan **tanda "+"**:
+Bukan jenis pot — tapi Anda tetap membayar biaya, dan ia bersembunyi di depan mata. Harga masuk dapat menampilkan kontribusi prize pool dan biaya secara terpisah dengan **tanda "+"**. Beberapa seri, termasuk WSOP, mencantumkan satu total buy-in yang sudah termasuk biaya. Contoh notasi terpisah:
 
 :::pull
 Turnamen **$100 + $9** berarti $100 masuk prize pool dan **$9 adalah biaya house.**
@@ -138,7 +138,7 @@ Pelajarannya: jangan pernah menilai rake dari persentase saja. Yang penting adal
 
 **Q. Apa itu rake di poker?**
 
-A. Rake adalah biaya yang diambil cardroom dari sebuah cash game karena menyelenggarakannya — normalnya persentase kecil dari tiap pot (2,5–10%) hingga maksimum ter-cap. Karena house tak bermain, rake adalah sumber pendapatan utamanya. Turnamen mengenakan biaya setara yang dibangun ke dalam buy-in.
+A. Rake adalah biaya yang diambil cardroom dari sebuah cash game karena menyelenggarakannya — normalnya persentase kecil dari pot yang dikenai rake (2,5–10%) hingga maksimum ter-cap. Karena house tak bermain, rake adalah sumber pendapatan utamanya. Turnamen mengenakan biaya setara yang dibangun ke dalam buy-in.
 
 **Q. Bagaimana rake dihitung?**
 
@@ -162,7 +162,7 @@ A. Rakeback mengembalikan persentase dari rake yang Anda bayar secara pribadi �
 
 **Q. Bagaimana cara membayar rake lebih sedikit di poker?**
 
-A. Anda tak bisa lolos sepenuhnya dari rake di permainan ber-rake, tapi Anda bisa mengecilkannya: ambil deal rakeback terbaik yang bisa Anda dapat, dan pilih room dengan cap yang ramah pemain. Naik stake juga mengecilkan rake, karena cap tetap menjadi porsi yang lebih kecil dari tiap pot — tapi ambil langkah itu hanya jika bankroll Anda menanggung ayunannya *dan* Anda masih unggul atas lapangan yang lebih keras; kalau tidak, para pemain akan mengambil jauh lebih banyak daripada yang pernah diambil rake. Memainkan pot yang lebih sedikit tapi lebih besar ketimbang banjir pot kecil juga menurunkannya: cap hanya mulai bekerja di pot besar, sementara pot kecil membayar persentase penuh. Begitu juga menghindari meja yang sangat short-handed — di sana Anda memainkan jauh lebih banyak tangan per jam dan memasang blind jauh lebih sering, jadi Anda ada di lebih banyak pot ber-rake — dan memilih game time-charge stake tinggi. Dari sisi biaya murni, home game tanpa rake adalah poker termurah yang ada — tak ada yang disaring dari pot.
+A. Anda tak bisa lolos sepenuhnya dari rake di permainan ber-rake, tapi Anda bisa mengecilkannya: ambil deal rakeback terbaik yang bisa Anda dapat, dan pilih room dengan cap yang ramah pemain. Naik stake juga mengecilkan rake, karena cap tetap menjadi porsi yang lebih kecil dari tiap pot — tapi ambil langkah itu hanya jika bankroll Anda menanggung ayunannya *dan* Anda masih unggul atas lapangan yang lebih keras; kalau tidak, para pemain akan mengambil jauh lebih banyak daripada yang pernah diambil rake. Memainkan pot yang lebih sedikit tapi lebih besar ketimbang banjir pot kecil juga menurunkannya: cap hanya mulai bekerja di pot besar, sementara pot kecil membayar persentase penuh. Begitu juga menghindari meja yang sangat short-handed — di sana Anda memainkan jauh lebih banyak tangan per jam dan memasang blind jauh lebih sering, jadi Anda ada di lebih banyak pot ber-rake — dan memilih game time-charge stake tinggi, tetapi hanya jika bankroll Anda memadai dan Anda tetap unggul atas lawan di stake tersebut. Dari sisi biaya murni, home game tanpa rake adalah poker termurah yang ada — tak ada yang disaring dari pot.
 
 **Q. Apakah mengambil rake itu ilegal?**
 
@@ -170,7 +170,7 @@ A. Menarik biaya untuk menyelenggarakan permainan adalah model bisnis inti cardr
 
 **Q. Apakah turnamen poker punya rake?**
 
-A. Ya, tapi bukan dari pot. Biayanya ditambahkan ke buy-in Anda dan ditampilkan dengan "+" — turnamen $100 + $9 mengirim $100 ke prize pool dan $9 ke house. Biaya itu (si "juice" atau "vig") biasanya 5–20% dari buy-in dan dibayar terlepas dari bagaimana Anda finis.
+A. Ya, tapi bukan dari pot. Harga masuk dapat memisahkan kontribusi prize pool dan biaya dengan "+" — turnamen $100 + $9 mengirim $100 ke prize pool dan $9 ke house. Beberapa seri, termasuk WSOP, mencantumkan satu total buy-in yang sudah termasuk biaya. Biaya itu (si "juice" atau "vig") biasanya 5–20% dari buy-in dan dibayar terlepas dari bagaimana Anda finis.
 
 **Q. Bagaimana rake memengaruhi win rate Anda?**
 
@@ -184,7 +184,7 @@ A. Rake live persentase lebih tinggi dengan cap lebih tinggi, tapi Anda memainka
 
 ## 3 Hal yang Harus Diingat
 
-1. **Rake adalah potongan house untuk menyelenggarakan permainan** — biasanya 2,5–10% dari tiap pot hingga cap kecil, dan terpisah dari apa yang Anda menangkan atau kalahkan ke lawan.
+1. **Rake adalah potongan house untuk menyelenggarakan permainan** — biasanya 2,5–10% dari pot yang dikenai rake hingga cap kecil, dan terpisah dari apa yang Anda menangkan atau kalahkan ke lawan.
 2. **Ia paling memukul stake rendah.** Cap nyaris tak bergerak saat Anda turun, jadi secara proporsional Anda membayar rake paling banyak di dasar — "jebakan rake" yang membuat mikro-stake begitu sulit dikalahkan.
 3. **Rakeback dan struktur penting.** Mendapat 20–40% rake Anda kembali, dan memilih room dengan cap yang ramah pemain, bisa membalik hasil jangka panjang Anda — ukur segalanya *setelah* rake.
 

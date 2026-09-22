@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Was ist der Rake beim Poker? Wie das Haus kassiert – und wie viel du wirklich zahlst",
   seoTitle: "Was ist der Rake beim Poker? Die stille Gebühr",
   desc: "Der Rake ist die Gebühr, die das Haus aus den meisten Cashgame-Pots nimmt. So funktionieren Pot Rake, Time Charge und Turniergebühr – und was Rakeback bringt.",
-  tldr: "Der Rake ist der kleine Anteil, den der Cardroom aus jedem Pot nimmt, um das Spiel auszurichten – meist 2,5–10% bis zu einem Cap – in deutschen Spielbanken €10 bis €20. Die meisten Räume nehmen nichts, wenn vor dem Flop alle folden („no flop, no drop“). Er trifft Low-Stakes- und Short-handed-Spieler am härtesten, und Rakeback gibt Stammspielern einen Teil zurück.",
+  tldr: "Der Rake ist der kleine Anteil, den der Cardroom aus den meisten Pots nimmt, um das Spiel auszurichten – meist 2,5–10% bis zu einem Cap – in deutschen Spielbanken €10 bis €20. Die meisten Räume nehmen nichts, wenn vor dem Flop alle folden („no flop, no drop“). Er trifft Low-Stakes- und Short-handed-Spieler am härtesten, und Rakeback gibt Stammspielern einen Teil zurück.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-09-13",
-  masterUpdated: "2026-09-13",
+  updated: "2026-09-22",
+  masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "🏦",
@@ -37,7 +37,7 @@ No flop, no drop | Meist kein Rake, wenn alle preflop folden
 ## Was ist der Rake beim Poker?
 
 > **Kurze Antwort**
-> Der Rake ist die Provision, die ein Cardroom aus einem Cashgame nimmt, weil er es ausrichtet – üblicherweise 2,5–10% jedes Pots bis zu einem Cap – in deutschen Spielbanken €10 bis €20. Da Poker Spieler gegen Spieler gespielt wird und das Haus nie selbst setzt, ist der Rake seine eigentliche Einnahmequelle: eine Servicegebühr für Dealer, Tisch, Chips und Security.
+> Der Rake ist die Provision, die ein Cardroom aus einem Cashgame nimmt, weil er es ausrichtet – üblicherweise 2,5–10% jedes rakepflichtigen Pots bis zu einem Cap – in deutschen Spielbanken €10 bis €20. Da Poker Spieler gegen Spieler gespielt wird und das Haus nie selbst setzt, ist der Rake seine eigentliche Einnahmequelle: eine Servicegebühr für Dealer, Tisch, Chips und Security.
 
 Abgeschöpft wird er nach und nach, Pot für Pot – und genau deshalb merkt man ihn so selten.
 
@@ -48,7 +48,7 @@ In einem Cashgame wird er meist direkt aus dem Pot genommen: ein kleiner Prozent
 ## Wie wird der Rake genommen? Pot Rake, Time Charge & Dead Drop
 
 > **Kurze Antwort**
-> Beim **Pot Rake** zieht der Dealer einen Prozentsatz aus jedem Pot, bis zu einem Cap. Bei der **Time Charge** zahlt jeder Spieler stattdessen eine Pauschale pro halbe Stunde. Der **Dead Drop** nimmt einen festen Betrag vom Button, bevor die Karten kommen. Im Turnier steckt die Gebühr von vornherein im Buy-in. Und in Räumen mit Bad Beat Jackpot läuft ==zusätzlich== ein eigener Jackpot-Drop.
+> Beim **Pot Rake** zieht der Dealer einen Prozentsatz aus jedem rakepflichtigen Pot, bis zu einem Cap. Bei der **Time Charge** zahlt jeder Spieler stattdessen eine Pauschale pro halbe Stunde. Der **Dead Drop** nimmt einen festen Betrag vom Button, bevor die Karten kommen. Im Turnier steckt die Gebühr von vornherein im Buy-in. Und in Räumen mit Bad Beat Jackpot läuft ==zusätzlich== ein eigener Jackpot-Drop.
 
 ![Ein Dealer fegt ein paar Chips aus der Mitte des Pots in den Rake-Schlitz des Tisches, bevor er den Rest zum Gewinner schiebt](/images/holdem-rake-drop.webp "Pot Rake: ein kleiner Prozentsatz wird aus dem Pot abgeschöpft und gedroppt, bevor der Gewinner ausgezahlt wird")
 
@@ -58,10 +58,10 @@ Welcher Weg gilt, hängt von den Stakes und vom Raum ab, und die Unterschiede si
 
 | Art | Wie sie genommen wird | Typischer Betrag | Wo du sie siehst |
 |:---|:---|:---:|:---|
-| **Pot Rake (skaliert)** | % jedes Pots, bis zu einem Cap | Online 2,5–10%, gecappt $1–$3 · live in DE eine Staffel mit Cap €10–€20 | Die meisten Low-/Mid-Cashgames |
+| **Pot Rake (skaliert)** | % jedes rakepflichtigen Pots, bis zu einem Cap | Online 2,5–10%, gecappt $1–$3 · live in DE eine Staffel mit Cap €10–€20 | Die meisten Low-/Mid-Cashgames |
 | **Time Charge** | Pauschalgebühr pro Spieler, alle 30 Min. | ~$10–$15 pro Stunde | High-Stakes live ($10/$20+) – und jedes Limit, in dem Pot-Rake nicht möglich ist |
 | **Dead Drop** | Der Button zahlt jede Hand einen festen Rake | Fix pro Hand | Manche Live-Räume |
-| **Turniergebühr** | Vorab aufs Buy-in aufgeschlagen | ~5–20% des Buy-ins | Jedes Turnier |
+| **Turniergebühr** | Vorab mit dem Buy-in erhoben | ~5–20% des Buy-ins | Fast jedes Turnier |
 | **Jackpot Drop** | Fester Zusatzbetrag aus fast jedem Pot ab einer Mindestgröße | Meist $1 pro Hand | Räume mit [Bad Beat Jackpot](/de/blog/holdem-bad-beat) |
 
 </div>
@@ -122,9 +122,9 @@ Für einen Gelegenheitsspieler ist Rakeback ein kleiner Bonus. Für einen High-V
 ## Haben Turniere einen Rake?
 
 > **Kurze Antwort**
-> Nicht die Pot-Variante – aber eine Gebühr zahlst du trotzdem, und sie versteckt sich in aller Öffentlichkeit. Beim Turnier ist sie vorab ins Buy-in eingebaut und wird mit einem „+“ ausgewiesen. Sie fällt genau einmal an, egal ob du als Erster bustest oder das Turnier gewinnst – anders als im Cashgame, wo du bei jedem Pot neu zahlst.
+> Nicht die Pot-Variante – aber eine Gebühr zahlst du trotzdem. Der Eintrittspreis kann Preispool-Anteil und Gebühr mit einem „+“ getrennt ausweisen; Serien wie die WSOP nennen dagegen ein Gesamt-Buy-in inklusive Gebühr. Sie fällt vorab an, egal ob du als Erster bustest oder das Turnier gewinnst – anders als im Cashgame, wo sie aus den rakepflichtigen Pots genommen wird.
 
-Ein Turnier-Buy-in ist also in zwei Teile gesplittet:
+Bei getrennter Angabe von Preispool-Anteil und Gebühr sieht der Eintrittspreis zum Beispiel so aus:
 
 :::pull
 Ein **$100 + $9**-Turnier bedeutet, dass $100 in den Preispool gehen und **$9 die Gebühr des Hauses sind.**
@@ -157,7 +157,7 @@ Die Lektion: Beurteile den Rake nie allein am Prozentsatz. Was zählt, ist der P
 
 **Q. Was ist der Rake beim Poker?**
 
-A. Der Rake ist die Gebühr, die ein Cardroom aus einem Cashgame dafür nimmt, dass er das Spiel ausrichtet – normalerweise ein kleiner Prozentsatz jedes Pots (2,5–10%) bis zu einem gedeckelten Maximum. Weil das Haus selbst nicht mitspielt, ist der Rake seine Haupteinnahmequelle. Turniere verlangen stattdessen eine gleichwertige Gebühr, die im Buy-in steckt.
+A. Der Rake ist die Gebühr, die ein Cardroom aus einem Cashgame dafür nimmt, dass er das Spiel ausrichtet – normalerweise ein kleiner Prozentsatz jedes rakepflichtigen Pots (2,5–10%) bis zu einem gedeckelten Maximum. Weil das Haus selbst nicht mitspielt, ist der Rake seine Haupteinnahmequelle. Turniere verlangen stattdessen eine gleichwertige Gebühr, die im Buy-in steckt.
 
 **Q. Wie wird der Rake berechnet?**
 
@@ -185,11 +185,11 @@ A. Die übliche Spanne liegt bei 20–40%, und höher ist nicht automatisch bess
 
 **Q. Was bedeutet das „+“ im Turnier-Buy-in?**
 
-A. Es trennt den Preispool von der Gebühr des Hauses. Bei einem $100 + $9-Turnier gehen $100 in den Preispool, den die Spieler unter sich ausspielen, und $9 gehen ans Casino oder an den Room. Diese Gebühr – „Juice“ oder „Vig“ – liegt typischerweise bei 5–20% des Buy-ins und wird gezahlt, egal wie du abschneidest. Bei niedrigen Buy-ins ist der Anteil am größten.
+A. Wenn diese Schreibweise verwendet wird, trennt das „+“ den Preispool-Anteil von der Gebühr des Hauses. Serien wie die WSOP nennen stattdessen ein Gesamt-Buy-in, das die Gebühr bereits enthält. Bei einem $100 + $9-Turnier gehen $100 in den Preispool, den die Spieler unter sich ausspielen, und $9 gehen ans Casino oder an den Room. Diese Gebühr – „Juice“ oder „Vig“ – liegt typischerweise bei 5–20% des Buy-ins und wird gezahlt, egal wie du abschneidest. Bei niedrigen Buy-ins ist der Anteil am größten.
 
 **Q. Wie zahlst du weniger Rake?**
 
-A. Ganz entkommen kannst du ihm in einem gerakten Spiel nicht, kleiner machen schon. Sichere dir den besten Rakeback-Deal, den du bekommst, und wähle Räume mit spielerfreundlichen Caps. Höhere Stakes senken den Rake ebenfalls, weil ein festes Cap dort ein kleinerer Anteil jedes Pots ist – diesen Schritt aber erst, wenn deine Bankroll die Schwankungen trägt *und* du gegen das härtere Feld noch einen Vorsprung hast, sonst nehmen dir die Gegner weit mehr ab als der Rake je könnte. Auch wenige, größere Pots statt einer Flut kleiner drücken ihn: Das Cap greift nur bei großen Pots, während kleine den vollen Prozentsatz zahlen. Genauso hilft es, online nicht ohne Grund sehr short-handed zu spielen (derselbe Rake pro Pot verteilt sich dort auf weniger Spieler, dein Anteil pro Hand steigt also) und bei hohen Stakes Time-Charge-Games zu bevorzugen. **Live gilt das oft nicht** – viele Räume senken dort das Cap, und ein kurzes Spiel ist meist das weichste im Raum. Rechne Rake immer gegen Spielqualität, nie isoliert – all das drückt deinen effektiven Rake. Am billigsten ist rein von den Kosten her die private Pokerrunde: Da wird gar nichts aus dem Pot genommen.
+A. Ganz entkommen kannst du ihm in einem gerakten Spiel nicht, kleiner machen schon. Sichere dir den besten Rakeback-Deal, den du bekommst, und wähle Räume mit spielerfreundlichen Caps. Höhere Stakes senken den Rake ebenfalls, weil ein festes Cap dort ein kleinerer Anteil jedes Pots ist – diesen Schritt aber erst, wenn deine Bankroll die Schwankungen trägt *und* du gegen das härtere Feld noch einen Vorsprung hast, sonst nehmen dir die Gegner weit mehr ab als der Rake je könnte. Auch wenige, größere Pots statt einer Flut kleiner drücken ihn: Das Cap greift nur bei großen Pots, während kleine den vollen Prozentsatz zahlen. Genauso hilft es, online nicht ohne Grund sehr short-handed zu spielen (derselbe Rake pro Pot verteilt sich dort auf weniger Spieler, dein Anteil pro Hand steigt also) und bei hohen Stakes Time-Charge-Games zu bevorzugen – auch dafür müssen deine Bankroll und dein Vorsprung gegenüber dem stärkeren Feld ausreichen. **Live gilt das oft nicht** – viele Räume senken dort das Cap, und ein kurzes Spiel ist meist das weichste im Raum. Rechne Rake immer gegen Spielqualität, nie isoliert – all das drückt deinen effektiven Rake. Am billigsten ist rein von den Kosten her die private Pokerrunde: Da wird gar nichts aus dem Pot genommen.
 
 **Q. Wie wirkt sich der Rake auf deine Winrate aus?**
 
@@ -207,7 +207,7 @@ A. Vier Angaben genügen, und alle vier stehen in den Tischinformationen deines 
 
 ## Die 3 Dinge zum Merken
 
-1. **Der Rake ist der Anteil des Hauses fürs Ausrichten des Spiels** – meist 2,5–10% jedes Pots bis zu einem Cap, das in deutschen Spielbanken bei €10 bis €20 liegt, und er ist getrennt von dem, was du gegen Gegner gewinnst oder verlierst.
+1. **Der Rake ist der Anteil des Hauses fürs Ausrichten des Spiels** – meist 2,5–10% jedes rakepflichtigen Pots bis zu einem Cap, das in deutschen Spielbanken bei €10 bis €20 liegt, und er ist getrennt von dem, was du gegen Gegner gewinnst oder verlierst.
 2. **Er trifft Low Stakes am härtesten.** Das Cap bewegt sich kaum, wenn du runtergehst, also zahlst du proportional den meisten Rake ganz unten – die „Rake-Falle“, die Micro-Stakes so schwer schlagbar macht.
 3. **Rakeback und Struktur zählen.** 20–40% deines Rakes zurückzubekommen und Räume mit spielerfreundlichen Caps zu wählen kann dein langfristiges Ergebnis kippen – miss alles *nach* dem Rake.
 

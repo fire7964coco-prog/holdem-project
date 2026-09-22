@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Das ist ein Poker-Lexikon in einfachem Deutsch mit den Begriffen, die in einem Texas-Hold'em-Spiel wirklich vorkommen, gruppiert danach, wie du ihnen begegnest – Setzaktionen, Positionen, Hände und Board, Spielertypen, Geld, Tischsituationen und die Turnier- und Online-Abkürzungen. Beginn mit den „am häufigsten verwechselten“ Begriffen unten (Check vs. Call, Set vs. Trips, Cooler vs. Bad Beat), dann stöber nach Kategorie. Begriffe mit einem tieferen Guide verlinken direkt darauf.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-17",
-  masterUpdated: "2026-09-17",
+  updated: "2026-09-22",
+  masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "12 Min.",
   emoji: "📖",
@@ -43,7 +43,7 @@ Poker hat sein eigenes Vokabular, und es zu kennen bringt zwei Dinge: Es verhind
 
 | Diese werden verwechselt | Der Unterschied |
 |:---|:---|
-| **Check vs. Call** | Ein Check riskiert **keine Chips** – möglich nur, solange keine Bet läuft; ein Call **gleicht** eine bestehende Bet aus. |
+| **Check vs. Call** | Ein Check riskiert **keine Chips** – möglich nur, wenn du keinen Einsatz mehr ausgleichen musst; ein Call **gleicht** eine bestehende Bet aus. |
 | **Blind vs. Ante** | Blinds sind **positionale** Pflichteinsätze (SB/BB); Antes füttern den Pot und kommen von **allen** (im modernen Turnier meist als Big Blind Ante). |
 | **Set vs. Trips** | Beide sind ein Drilling – ein **Set** nutzt ein Pocket Pair; **Trips** nutzt eine Hole Card + ein Paar auf dem Board. |
 | **Cooler vs. Bad Beat** | Ein [Cooler](/de/blog/holdem-cooler) = du lagst hinten und konntest nicht folden; ein [Bad Beat](/de/blog/holdem-bad-beat) = du lagst vorn und wurdest outgedrawt. |
@@ -61,7 +61,7 @@ Poker hat sein eigenes Vokabular, und es zu kennen bringt zwei Dinge: Es verhind
 ## Was bedeuten die Setzaktionen: Check, Bet, Call, Raise und Fold?
 
 > **Kurze Antwort**
-> Wie viele Optionen du hast, hängt davon ab, ob schon eine Bet läuft. Ist die Setzrunde noch offen, kannst du **checken** (nichts setzen) oder **betten**. Liegt bereits eine Bet, bleiben dir **callen**, **raisen** oder **folden**. Alles andere – 3-Bet, C-Bet, Check-Raise, Shove – sind nur Namen für bestimmte Kombinationen dieser fünf Grundaktionen.
+> Du kannst **checken**, wenn du keinen Einsatz mehr ausgleichen musst – auch im Big Blind, wenn vor dir niemand erhöht oder gestraddelt hat. Ohne bestehende Bet kannst du **betten**; musst du noch Chips nachzahlen, kannst du **callen**, **raisen** oder **folden**. Alles andere – 3-Bet, C-Bet, Check-Raise, Shove – sind nur Namen für bestimmte Kombinationen dieser fünf Grundaktionen.
 
 Die genaue Reihenfolge, in der sie am Tisch fallen, steht in der [Reihenfolge der Setzaktionen](/de/blog/holdem-betting-actions "thumb:/images/holdem-betting-actions-hero.webp").
 
@@ -69,7 +69,7 @@ Die genaue Reihenfolge, in der sie am Tisch fallen, steht in der [Reihenfolge de
 
 | Begriff | Bedeutung |
 |:---|:---|
-| **Check** | Die Aktion weitergeben, ohne zu setzen – nur möglich, wenn in dieser Runde noch keine Bet erfolgt ist. |
+| **Check** | Die Aktion weitergeben, ohne zu setzen – nur möglich, wenn du keinen Einsatz mehr ausgleichen musst. |
 | **Bet** | Als Erster in einer Setzrunde Chips in den Pot legen. |
 | **Call** | Die aktuelle Bet ausgleichen, um in der Hand zu bleiben. |
 | **Raise** | Die aktuelle Bet erhöhen und andere zwingen, mehr mitzugehen oder zu folden. |
@@ -106,7 +106,7 @@ Wie du diesen Vorteil wirklich in Chips umsetzt, zeigt das [Positionsspiel](/de/
 | Begriff | Bedeutung |
 |:---|:---|
 | **Button (BTN)** | Die Dealer-Position; handelt postflop **zuletzt** – der beste Platz am Tisch. |
-| **Small Blind (SB)** | Pflichteinsatz links vom Button; handelt postflop zuerst (schlechtester Postflop-Platz). |
+| **Small Blind (SB)** | Bei drei oder mehr Spielern: Pflichteinsatz links vom Button; handelt postflop zuerst (schlechtester Postflop-Platz). Im Heads-up sitzt der Small Blind auf dem Button und handelt postflop zuletzt. |
 | **Big Blind (BB)** | Der größere der beiden Blinds; die Stakes werden nach den Blind-Größen benannt (€1/€2), und ein Big Blind ist die Standardeinheit zum Messen von Stacks. |
 | **UTG (Under the Gun)** | Handelt preflop als Erster – braucht die engste Opening-Range. |
 | **Cutoff (CO)** | Rechts vom Button; zweitbester Platz, super zum Blindstehlen. |
@@ -195,7 +195,7 @@ Die vollständige Aufschlüsselung findest du im [Fish-Guide](/de/blog/holdem-fi
 ## Was bedeuten Blinds, Buy-in, Rake und Bankroll?
 
 > **Kurze Antwort**
-> Das sind die Geld-Begriffe. **Blinds** sind die Pflichteinsätze, die die Action starten und dem Spiel seinen Namen geben (€1/€2). Der **Buy-in** ist der Betrag, mit dem du einsteigst, der **Stack** das, was vor dir liegt, und die **Bankroll** dein gesamtes Pokergeld abseits des Tisches. Der **Rake** ist der Anteil, den das Haus aus jedem Pot nimmt.
+> Das sind die Geld-Begriffe. **Blinds** sind die Pflichteinsätze, die die Action starten und dem Spiel seinen Namen geben (€1/€2). Der **Buy-in** ist der Betrag, mit dem du einsteigst, der **Stack** das, was vor dir liegt, und die **Bankroll** dein gesamtes Pokergeld abseits des Tisches. Der **Rake** ist der Anteil, den das Haus aus den meisten Pots nimmt.
 
 Die große Gabelung dahinter ist [Cash Game vs. Turnier](/de/blog/holdem-tournament-vs-cash-game "thumb:/images/tournament-table-action.webp").
 
@@ -210,7 +210,7 @@ Die große Gabelung dahinter ist [Cash Game vs. Turnier](/de/blog/holdem-tournam
 | **Stack** | Die Chips vor einem Spieler. |
 | **Bankroll** | Das Geld, das insgesamt fürs Poker beiseitegelegt ist – nicht die Chips auf dem Tisch. |
 | **Buy-in** | Der Betrag, der nötig ist, um in ein Spiel oder Turnier einzusteigen. |
-| **Rake** | Der Anteil des Hauses an jedem Pot – [ganzer Guide](/de/blog/holdem-rake). |
+| **Rake** | Der Anteil des Hauses an den meisten Pots – [ganzer Guide](/de/blog/holdem-rake). |
 | **Rakeback** | Eine Rückvergütung, die einen Teil des gezahlten Rakes zurückgibt. |
 | **Straddle** | Ein optionaler Blind (meist 2× BB), der die letzte Preflop-Action kauft – [ganzer Guide](/de/blog/holdem-straddle). |
 | **Cash Game** | Chips mit echtem Wert, jederzeit ein-/aussteigen, feste Blinds. |
@@ -308,7 +308,7 @@ A. UTG ist der Platz direkt links vom Big Blind, also handelt dieser Spieler vor
 
 **Q. Was ist der Unterschied zwischen einem Check und einem Call?**
 
-A. Ein Check gibt die Action weiter, ohne Chips einzusetzen, und ist nur erlaubt, wenn in dieser Runde noch niemand gebettet hat. Ein Call gleicht eine Bet aus, die jemand bereits gemacht hat. Checken ist gratis; Callen kostet dich den Betrag der aktuellen Bet. Die beiden zu verwechseln ist der mit Abstand häufigste Anfängerfehler.
+A. Ein Check gibt die Action weiter, ohne Chips einzusetzen, und ist nur erlaubt, wenn du keinen Einsatz mehr ausgleichen musst. Ein Call gleicht eine Bet aus, die jemand bereits gemacht hat. Checken ist gratis; beim Call zahlst du den noch fehlenden Betrag zur aktuellen Bet. Die beiden zu verwechseln ist der mit Abstand häufigste Anfängerfehler.
 
 **Q. Was ist der Unterschied zwischen einem Set und Trips?**
 

@@ -37,7 +37,7 @@
 | **Q12-a** | **MA-147 ① 이행 (1/2) — all-in · showdown** | 원문 = `~/Downloads/홀덤검수/mailbox/out-검수장.md` **MA-147 ①** · 원장 = `홀덤검수/ledger/en/{holdem-all-in-rules,holdem-showdown-rules}.md` · 브리프 = `docs/harden-brief/queue-Q12-a-rules-allin-showdown.md`. **ⓐ ⓑ ⓒ ⓔ ⓕ = TDA 16/17/18 · B 149 · A 92/96/108/109 계열 21자리.** 🔴 **«조문»으로 갈랐다 — 파일로 가르면 ⓑ(B 149 노리밋 한정) 7자리가 두 세션에 쪼개지고 all-in FAQ 한 줄의 ⓐ·ⓑ·ⓔ 겹침을 못 가른다**(브리프 §0) | **Opus 전 구간 · 1세션** | ✅ | (아래 §1-Q12-a) | 렌즈 4종 = 지적 33 · 반영 27 · 기각 4 · 기록 2 / **2차 교열 = 지적 12 · 반영 10 · 기각 2** | 09-21 |
 | **Q12-b** | **MA-147 ① 이행 (2/2) — 보편 단정 묶음** | 같은 MA-147 ① 중 **ⓓ ⓖ** = `holdem-game-order`(ⓓ L299 「complete」→「win」 · ⓖ L273·L356·L139 캡션·L269) · `holdem-betting-actions`(ⓖ L221) · `holdem-blind-meaning`(ⓖ L30·L68·L68·L170·L162). 조문 계열 = B 155~165 · A 87·88.d.1(Q12-a의 TDA/149 계열과 겹치는 자리 0). 브리프 = `docs/harden-brief/queue-Q12-b-보편단정.md`. 🔴 **Q12-a가 남긴 것 = §2 미결 「Q12-a가 남긴 것」 절을 먼저 읽어라** | **Opus 전 구간 · 1세션** | ✅ | (아래 §1-Q12-b) | 렌즈 4종 = 지적 47(raw · 렌즈 간 중복 8 제거 후 **39**) · 반영 31 · 기각 5 · 등재 3 / **2차 교열 = 지적 9 · 반영 8 · 기각 1** | 09-21 |
 | **Q13-a** | **MA-147 ②③ (1/2) — cooler · bad-beat · fish** | 브리프 = `docs/harden-brief/queue-Q13-용어클러스터.md`(§0 분할 근거 · §1 자리 표 · §2 1차 출처 축어). 앵커 C1~C5 · B1~B4 · F1~F2 · es 고유 2(fish 「izquierda」→「derecha」 **WRONG** · cooler FAQ 「~75%」 삭제) | **Opus 전 구간 · 1세션** | ✅ | (아래 §1-Q13-a) | 1차 렌즈 5종 지적 **54**(렌즈 간 중복 9 제거 후 **45**) · 반영 **38** · 기각·판정유지 **5** · 등재만 **2** / **2차 교열 지적 10 · 반영 8 · 기록 2** | 09-21 |
-| **Q13-b** | **MA-147 ②③ (2/2) — glossary · rake · straddle** | 같은 브리프 §1 「Q13-b」 표(G1~G3 · R1~R5 · S1~S4 · 약 110자리) + §3 처방 문면. 🔴 **Q13-a가 남긴 것 = §2 「Q13-a가 남긴 것」 절을 먼저 읽어라** | **Opus 전 구간 · 1세션** | ⏳ | | | |
+| **Q13-b** | **MA-147 ②③ (2/2) — glossary · rake · straddle** | 같은 브리프 §1 「Q13-b」 표(G1~G3 · R1~R5 · S1~S4 · 약 110자리) + §3 처방 문면. 🔴 **Q13-a가 남긴 것 = §2 「Q13-a가 남긴 것」 절을 먼저 읽어라** | **Codex 현재 모델 A/B/C · 1세션** | ✅ | (아래 §1-Q13-b) | 독립 4렌즈 + 2차 교열 · 통합 쟁점 10종: 반영 7 · 이관 2 · 기각 1 | 09-22 |
 | **Q14** | **MA-148 이행 — zh+zh-hant 정정 13 + EN-먼저 신규 4** | **MA-148 ①~④**(보고서 §D · 원장 `ledger/zh/`·`ledger/zh-hant/` 16편 1,958행). 🔴 **헤드 09-21 실측: 17개 앵커 중 «고쳐진 것 1»**(④ `3-bet-or-fold from the SB` «vs a raise»는 표 L179·본문 L222~224가 이미 닫혔고 **요약 L297·FAQ L273 두 자리만 남았다** — 검수장 지적이 이 둘을 정확히 가리킨다). ① zh+zh-hant 공통 c-bet 직답 「四到五成」→「約 30–45%」(+ pt·de·ja 옛 값 인용 = **5로케일**) ② zh 4 ③ zh-hant 8 ④ EN-먼저 4(`position-play` 「necessarily above 100%」 = 자사 캡처 5/13 스팟 반례 · `3bet` 「position leverage」 · SB 2자리 · `limping` tldr 토너 전제). 🟠 요청 = `.solver-captures/data-zh.json` 13스팟 **IP 측 `actions` 빈 배열** → 「IP 65–75% c-bet」 4행 대조 불가(UNV) | **Opus 전 구간 · 1세션** | ⏳ | | | |
 
 ### §1-Q1. 회차 Q1 판정 — 결재 1(shc #13) · 결재 6·소품 5건 (2026-09-11)
@@ -743,6 +743,27 @@ T1 **7/7** · T2 **8/8** · T3 **9/9**(`Q10s` 포함) · T4 **23/23**(`66–22` 
 
 🔴 **환경 사고 1건 — `node_modules` 정션이 풀렸다(보고)**: `npm install -D tsx`가 이 워크트리의 `node_modules` **정션을 지우고 실디렉터리로 교체**했다(`npm warn reify Removing non-directory …`). **원본은 무사하다** — 본체 `Holdem_Project/node_modules`는 149개·8/1 그대로이고 본체 `git status`도 clean. 지금 상태로 빌드·게이트 전부 정상이다. 다시 정션으로 묶을지는 §5 Q11-5.
 
+### §1-Q13-b (2026-09-22 · MA-147 ②③ 2/2 — glossary · rake · straddle)
+
+**완료 범위**: 3편 × 8로케일(en·de·es·id·ja·pt·zh·zh-hant) = **24포스트** + 이 진행 파일 + 같은 회차 브리프. 포스트 diff는 **252행 교체 = 내용 207행 + 날짜 45행**(updated 24 + masterUpdated 21). 한 행의 여러 앵커를 중복 세지 않은 행 수이며 브리프의 «약 110자리»와 집계 단위가 다르다. KO·꼬리 로케일에 세 편 없음. Q13-a 미결·Q14 착수 없음.
+
+**A 전제 실측**: AGENTS·CLAUDE·session-handoff 전문 및 지정 정본·Q13-a 잔여를 읽음. 시작 clean, 시작과 C 직전 각각 git merge main → Already up to date. ja·zh·zh-hant 포스트 미커밋 0을 확인하고 각 3파일 전파. 사용자 지시대로 **Codex 현재 모델로 A/B/C**, 독립 에이전트 검수 유지; Claude 모델 전환 없음. 병렬 슬롯 한도 안에서 4렌즈를 순차 착수해 중첩 실행했다.
+- 스탬프: 회차 전 21/21 masterUpdated가 EN(glossary 09-17/rake 09-13/straddle 09-12)과 일치. 마지막 EN 델타 abdc7a21·33acbaa1·b311d693 실물과 기존 전파, 이번 21사본 전파 확인. **settled-decisions §1-C**에 따라 모두 09-22로 갱신. 브리프 §4-8의 무조건 금지는 §6에서 정정.
+- G1 체크=추가로 맞출 금액 없음, 콜=이미 낸 금액을 뺀 잔액. G2 SB 위치·포스트플랍 순서에 헤즈업 예외. G3 NL 최소 오픈 BB·부족한 올인 예외·PL 팟 상한 구분.
+- R1/R2 every→대상 팟/대부분, glossary Rake 사본까지. R3 분리 표기와 fee 포함 총액을 병렬 설명. R4 높은 레이트 시간제는 bankroll+edge 양쪽 조건; **de에도 권고가 있어 함께 수정**(브리프 부재 추정 반증). R5 8−5=3 / 8−8=0 / 8−9=−1 정합.
+- S1 추가 액션+레이즈 옵션, S2 마지막 액션=프리플랍, S3 동일 조건 순환 시 상대적 불이익 없음·강자 이점과 유효 스택 감소 단서, S4 이미지·수익 목적의 일반 권고 삭제. 레이크 카드/직답/FAQ/요약의 무조건 증가도 cap·no-flop-no-drop·시간제 조건으로 정합.
+
+**독립 검수**: 딜러·TD/수학(24편), 네이티브(21번역+EN), SEO/GEO(자기가 쓰지 않은 glossary/rake 16편+EN straddle), diff 교열(24편)의 4렌즈. SEO가 작성했던 7 straddle은 나머지 독립 렌즈가 검사했다. 1차 통합 신규 쟁점 6종 중 5 반영·1 이관; 추가 원본 후보 판정 2종 중 1 이관·1 기각; **2차 교열 신규 2종 모두 반영**, 마지막 재검수 추가 0. 합계 **10종 = 반영 7 · 이관 2 · 기각 1**(기지 길이 부채 재확인·렌즈 간 중복은 제외).
+- 반영 7종: ① ja glossary fee추가 단정 ② ja rake 동형 ③ 8로케일 straddle rake 단정(카드8·FAQ8·요약8·직답4=28자리) ④ zh-hant straddle stakes→pot 두 배 오역 6자리 ⑤ **이번 편집 유래** EN same turn 어색함 2자리 → takes turns … on equal terms ⑥ 2차 zh rake 시간당 $100 단정 → 바쁜 테이블·가능성 ⑦ 2차 zh-hant rake 모든 flop팟 단정 → 팟 레이크·징수 대상 조건.
+- 이관 2종: zh glossary c-bet=raise 분류(:81), 50% 최소레이즈 기준(:68). 기각 1종: :67 베팅을 마주하고 잘못 check 선언 시 raise 불가 = **WSOP A90.b.1과 일치**, «영구 상실»이라는 원문은 없다. 상세 §2·§5.
+- 변경 CJK 직답 모두 규격 내. 마지막 zh rake :82 **95자**, zh-hant rake :40 **106자**. 선재 zh glossary 첫 직답 :42 **137자**는 무변경 부채.
+
+**§13 필수 검산**(3편 원문 및 24사본): BB 2납부/live2→check, SB1/live2·BB2/live4→콜잔액, straddler4/live4→check. WSOP A87 HU SB=BTN·포스트플랍 마지막; B174/175 최소오픈 BB·부족한 올인/PL 상한. $100+$9=$109, $0.30/$3=10%, 8−5=3·8−8=0·8−9=−1, 30hand×$5=$150(시간당 $100+은 조건부), zh 예시 $3/$60=5%·$3/$30=10%. Straddle 2×2=4·2×5=10, $4+$4=$8 최소레이즈, 4/8/16 restraddle, $200/$2=100BB·$200/$4=50, 초기팟 $3→$7은 **7/3배**, 두 배가 아님. Gutshot4/openender8, 8♥9♥ 동수트 연속, Broadway 최고·wheel 최저, set/trips 정의 대조. **완전한 7장 승패 사례는 없어 임의 보충하지 않음**. 카드 토큰 24/24 불변; 통화·확률·핸드값 불변(ja의 3인 조건 추가·열거용 2/3 삭제는 구조어).
+
+**검증**: 최종 audit 8로케일 대상24편 **0err/0warn**, meta/cjk/hangul/hygiene/seo-sync 신규 0·structure 핵심0. FAQ source 게이트 **24/24**. drift 대상21/21 동기·전역 핵심6은 기존 ar. answer-echo 대상 신규0(기존 ko/appt-korea-2026-guide 머리말 echo1, zh glossary137자 유지). number-format 대상0·기존 es 대회글2편 혼용 유지. 거울쌍 출력은 **3편 5토큰 차이**이며 §4대로 전건 기존 정상 차이 판정; 신규0. 이미지·링크·slug·title·seoTitle·FAQ개수 불변. **최종 npm run build 성공: 70 blog + 577 intl · 773페이지**, pre/postbuild 게이트 통과. 실제 24 HTML에서 FAQPage **246문항**이 원문과 일치, 마지막 zh·zh-hant 직답2개의 새문면 존재·구문면 소멸 확인. audit --schema(KO) exit0. 커밋 뒤 check:stamp 결과는 최종 보고에 덧붙인다.
+
+**게이트 한계**: audit에 --locale와 --slug를 함께 주면 locale 전부를 검사하며, 세 슬러그는 CLUSTERS 밖이라 형제 대조 미실행. --uncovered도 locale 전체 출력이며 대상에 완전한 핸드 시나리오 없음. audit --schema는 KO 전용이므로 다국어는 check-faq-schema 및 실제 24 HTML로 별도 검증한다. exit0만으로 위 전역 선재 부채를 0이라 보고하지 않는다.
+
 ### §1-Q13-a (2026-09-21 · MA-147 ②③ 1/2 — cooler · bad-beat · fish)
 
 > 🔵 **헤드 처리 (2026-09-22 (1) · 머지 `471b03c5` · 빌드 70 + 577 · sitemap lastmod **24 = 편집 24파일** · 라이브 8페이지 «신규 + 구 문면 소멸» 양쪽 실측 · IndexNow **24 URL** 200)** — **Q13a-1 = MB-075 발신** ✅ · **Q13a-2 = 세 레인 §6-0 통지** ✅(ja·zh·zh-hant 각 3파일 · 착수 시 워크트리 clean · `main..harden-<l>` 0커밋 실측) · **Q13a-3 = `settled-decisions` §3-P·§3-Q 승격** ✅ · **Q13a-4 = `en-first-queue` §2-J 등재**(J-1·J-2) ✅ · **Q13a-5 = 핸드오프 ▶1 갱신 + 「21자리」 수치 삭제** ✅ · **Q13a-6·7 확인**(등재 0 · 캘린더 요청 없음) · **Q13a-8 = IndexNow 24** ✅ · **Q13a-9 선재 보고 수용**.
@@ -978,6 +999,8 @@ B 176 축어 예시(100 벳 + 140 올인 → **240**)·A 96.a(1,700 + 500 → **
   - 🟠 **배드비트 tldr ↔ 요약① 축어 겹침이 이 회차로 «늘었다»**(en 38자 · pt 47자 · es 40 · de 29 · id 28 · zh 10 · ja·zh-hant는 갈려 있어 무해). 편집 전에는 tldr이 「ahead the whole way」라 겹침 0이었다 — 「돈이 들어간 시점」으로 수렴시킨 대가다. **2차 교열 판정 = 수정 불요**(tldr↔요약 중복은 구조상 자연스럽다) · 기록만.
   - 🟠 **zh `holdem-bad-beat` L193 직답 블록 141자**(규격 zh 60~130 · **선재 부채** · 이 회차 무변경 · `git diff`로 확인). zh `holdem-fish` **제목**의 「一眼认出」도 본문 「一两圈」과 어긋나지만 **CTR 훅이라 §17상 교체 금지** — 기록만.
   - 🟠 **es 쿨러 FAQ L159에 스페인 2인칭 복수 「teníais」가 남아 있다**(①원본 · es는 LATAM 기준). 이번 회차 명제와 무관해 손대지 않았다 — es LATAM 트랙 몫.
+
+- 🆕 **Q13-b가 남긴 것**(09-22, 둘 다 원본 유래·이번 무편집): zh holdem-glossary **:68** 「推的钱不到上一个下注额的一半…」는 밀어낸 총액이 아니라 콜 초과분/필요 최소레이즈 증가분으로 50%를 판단해야 한다. 100오픈에70은 언더콜(A93.f.2), 최소레이즈200 강제 아님(A95·B140·B183). **:81** 「3bet、4bet、c-bet 则是加注在不同时机的叫法」는 c-bet도 raise로 묶으나 :100의 지속 bet 정의와 모순. §5 Q13b-4로 헤드 이관. 선재 첫 직답 :42 137자도 유지. Q13-a 미결은 그대로다.
 
 ## 3. 되돌리지 마라
 
@@ -1256,6 +1279,17 @@ B 176 축어 예시(100 벳 + 140 올인 → **240**)·A 96.a(1,700 + 500 → **
   (fr `Règle 16 de la TDA` · it `Regola 16 della TDA` · ms `Peraturan TDA 16` · pl `Reguła 16 TDA` · th `กติกา TDA ข้อ 16` · vi `Luật 16 của TDA` · fa `قاعده‌ی TDA شماره 16`).
 - 🪶 **«국면 분리» 수리는 한 글에서 네 자리를 센다 — 표 · 본문 · 직답 블록 · FAQ.** 2차 교열이 잡은 🔴 3건이 전부 «표만 고치고 블록을 남긴» 유형이었다.
 
+### Q13-b — 다시 열지 마라 (2026-09-22)
+
+1. 체크는 이전 베팅의 존재가 아니라 **자신의 미납액 0**이 기준이다. 이미 낸 BB/straddle 옵션과 정상 체크레이즈를 혼동하지 마라.
+2. SB의 버튼 왼쪽/첫 포스트플랍 액션은 3인 이상. 헤즈업 SB=버튼·마지막 포스트플랍.
+3. NL/PL/Limit을 구별하며 최소오픈 BB보다 작은 부족한 올인은 허용. raise 최솟값과 open-bet 최솟값은 다른 문장이다.
+4. 레이크는 every pot/매 straddle hand가 아니다. 팟 레이크 징수조건·cap·no-flop-no-drop·시간제를 구별한다. 개인 경험담의 every는 보편 규칙이 아니다.
+5. 토너 fee는 +로 분리할 수도 총액에 포함할 수도 있다. +표기가 통계상 다수라는 새 주장을 넣지 마라. 높은 레이트 시간제 권고는 bankroll과 edge 둘 다 필요.
+6. 전원 동일 조건 순환 straddle은 상대적 불이익을 만들지 않으며 강자에게 유리할 수 있지만, 유효 스택 감소가 edge를 줄일 수 있다. 일반적인 이미지/수익 목적 권고로 되돌리지 마라.
+7. 스트래들 $1/$2+$4는 초기팟 $3→$7이다. stakes/콜기준2배를 pot2배로 번역하지 마라. BTN 잠금 각주와 zh 最后一句话/zh-hant 最後一句話, es glossary 헤드워드 순서는 보존했다.
+8. masterUpdated는 사전21/21동기+마지막EN델타와이번델타반영을 확인해09-22로갱신했다. §1-C의 조건부 규율을 따르며 «무조건 보존»으로 복구하지 마라.
+
 ## 4. 거울쌍 갈림
 
 로케일 레인이 아니라 **양쪽을 직접 고친다**. Q6-a 판정:
@@ -1269,6 +1303,8 @@ B 176 축어 예시(100 벳 + 140 올인 → **240**)·A 96.a(1,700 + 500 → **
 - 🆕 **ja 단독 이상치 1자리**: `wsop-2026-tournament-guide`의 `==g:"Qualify for as Little as $0.50"==`가 **ja만 직선**이다(zh·zh-hant는 자기 인용부호). → **ja 레인 판정**(§5-Q6b-5).
 
 - 🆕 **Q5-c: `check:mirror-pair` 갈림 4편 전건 판정 = 전부 «기존 구조 차이»(고칠 것 0)**: shc(zh만 34.5%·82% = zh 추가 문단) · kicker(zh만 8♠8♦10♦J♥2♦ = Q6-c 예시 교체) · glossary(zh-hant만 1bb) · probability(zh-hant만 AK FAQ — zh는 그 FAQ 자체가 없다 · `locale-intentional-diffs` 09-16 행). 이번 회차가 새로 만든 갈림 0.
+
+- **Q13-b**: check:mirror-pair 3편 **5토큰 차이**, 신규0. glossary=zh-hant만 1bb(09-09 intentional-diffs 등재). rake=zh만 $60·$30(:112 비율 설명, $3/$60=5%·$3/$30=10%로 정확; 원본부터 존재). straddle=zh 100bb·50bb ↔ zh-hant 100個大盲·50個大盲의 표기 차이. 둘 다 같은 금액/유효 스택이며 수정 불필요. raw «갈림0»으로 기록하지 않는다.
 
 ## 5. 헤드 요청 (헤드가 처리하면 ✅)
 
@@ -1914,6 +1950,17 @@ pdf-page 19 · number-format 24 · image-dims 8). 전 게이트에 «못 보는 
   길이 규격엔 이미 면제가 있다(판정 13-ⓑ 「직답이 표 대용」). echo 19자리 중 **5자리가 그 부류**다(공항 셔틀·비자·마감일 · ja·zh `apt` · ja `ept` · zh `marathon` 2).
   면제로 가면 19 → **14**. 🔴 **고치기 전에 판정부터** — 안 그러면 다음 회차가 «표 대용»을 지우는 편집을 한다.
 
+### Q13-b (2026-09-22 · MA-147 ②③ 2/2)
+
+- 🟠 **Q13b-1 MB 통지 초안** — 「MA-147 ②③ 잔여 glossary/rake/straddle, G1~G3·R1~R5·S1~S4를 EN+7로케일 24파일에 반영. 체크=미납액0, HU SB예외, NL/PL 구별, 레이크 대상팟/토너fee포함표시/시간제 bankroll+edge, straddle 프리플랍범위·동일조건순환예외·이미지목적권고기각. 브리프 약110자리보다 동형 사본이 많아 최종내용207행 교체(45stamp제외). de 시간제 권고는 실제 있었고, ja 수수료 직답2·straddle 레이크28·번체 팟배수6·중문 rake직답2도 정정. **원장 앵커 갱신 필요**, 아래 §3 Q13-b8항을 되돌리지 말 것. 미결 zh glossary :68/:81은 별도 이관. 변경일과 21번역 masterUpdated=09-22는 settled-decisions §1-C의 사전동기 조건을 충족한다.」 발신·번호 부여는 헤드가 한다.
+- 🟠 **Q13b-2 세 레인 §6-0 통지** — lib/posts-{ja,zh,zh-hant}/holdem-{glossary,rake,straddle}.ts **9파일**. 시작 시 해당 워크트리 미커밋0 확인. 머지 후 HARDEN.md 통지·lane:sync는 헤드 담당.
+- 🟠 **Q13b-3 정본 승격 후보** — settled-decisions: ① 체크는 직전 베팅 존재가 아니라 미납액 ② stakes배수와 초기팟배수 구별($3→$7) ③ fee «+별도/총액포함» 양립·rake 대상팟 조건. 이미 있는 항과 합쳐 중복 없이 승격할 것. 브리프의 masterUpdated무조건금지·de R4부재 추정은 §6에서 정정 완료.
+- 🟠 **Q13b-4 대기열 등재 요청** — zh glossary :68 50% 레이즈 기준(총액→콜 초과 증가분, WSOP A93.f.2/A95/B140/B183; singlechip·multichip·shortallin구분), :81 c-bet을raise와묶은분류. 두 건 모두 원본 유래, 이번 범위밖이라 미편집. :67 지적은 A90.b.1에 따라 기각했으므로 등재하지 말 것. 첫 직답137자도 기존부채 유지.
+- 🟠 **Q13b-5 WORKLOG·핸드오프 갱신** — Q13-a/b 완료, Q14는 미착수·다음 사용자지시 대상. 본체 마감 시 이 회차 결과 링크만 넣고 누적 상세 복사 금지. 이 레인은 헤드 소유 파일 미편집.
+- 🟠 **Q13b-6 편차 판정** — 새 의도적 편차0. 기존 zh rake $60/$30 비율예시와 straddle BB표기 차이는 §4의 원문·검산 근거로 등재 필요 여부 판단. glossary 1bb는 이미09-09등재.
+- 🟠 **Q13b-7 배포 후 sitemap·IndexNow** — updated24파일이므로 대상 **24URL**. head merge/build 시 lastmod와 접힌FAQ 포함 page.content()의 새문면·구문면소멸 확인. 이 레인은 build부산물 sitemap을복구하고 push·배포·IndexNow하지않는다. update-calendar요청없음.
+- 🟠 **Q13b-8 선재 게이트 부채** — drift core6(ar), ko/appt-korea-2026-guide echo1, zh glossary137자, number-format es apt-incheon-2026-guide·wsop-2026-tournament-guide2편 혼용. 대상신규0과전역0을구별할것.
+
 ### Q13-a (2026-09-21 · MA-147 ②③ 1/2 — cooler · bad-beat · fish)
 
 - 🟠 **Q13a-1 MB 통지 초안**(검수장 발신 · **EN 변경 커밋이라 MA-123 요청 1에 따라 필수**):
@@ -1996,6 +2043,8 @@ pdf-page 19 · number-format 24 · image-dims 8). 전 게이트에 «못 보는 
 ## 6. 자산 축적 체크 (매 회차 마감 3종)
 
 ① 키워드뱅크 — 해당 회차만 ② 편차 판정 → §5 ③ 판정 정본 승격 → §5
+
+**Q13-b**: ① 키워드뱅크 해당없음(기존 원장 사실/범위어 정정, 키워드축 불변; desc수정은 rake8+zh-hant straddle 사실정합). ② 새편차0·기존거울쌍판정은 §4/§5 Q13b-6. ③ 정본승격 후보는 §5 Q13b-3. 교훈: 같은 명제는 다른 편의 정의/직답에도 남는다(glossary의수수료·straddle의레이크). 레이크 조건을 고칠 때 관련 세 편의 문장까지 확인할 것.
 
 **Q13-a**: ① 키워드뱅크 — **해당 없음**(원장 이행·한정어 회차 · 키워드 축을 안 건드렸다 · desc 변경은 zh·zh-hant fish 2건뿐이고 본문 정합 목적)
 ② 편차 판정 → §5 **Q13a-6**(등재 0)

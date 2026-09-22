@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Este é um glossário direto dos termos de poker que realmente aparecem numa mesa de Texas Hold'em, agrupados pela forma como você vai encontrá-los — ações de aposta, posições, mãos e board, tipos de jogador, dinheiro e situações de mesa. Comece pelos termos 'mais confundidos' logo abaixo (check vs call, set vs trips, cooler vs bad beat) e depois navegue por categoria. Os termos com um guia mais completo linkam direto pra ele.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-17",
-  masterUpdated: "2026-09-17",
+  updated: "2026-09-22",
+  masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "📖",
@@ -42,7 +42,7 @@ Se você só for esclarecer uma dúzia de termos, que sejam estes — são os qu
 
 | A galera confunde | A diferença |
 |:---|:---|
-| **Check vs Call** | Um check não arrisca **nenhuma ficha** (só quando não há aposta ativa); um call **iguala** uma aposta que já existe. |
+| **Check vs Call** | Um check não arrisca **nenhuma ficha** (só quando não falta nenhuma quantia para você igualar a aposta); um call **iguala** uma aposta que já existe. |
 | **Blind vs Ante** | Blinds são apostas forçadas **posicionais** (SB/BB); o ante alimenta o pote e vem de **todo mundo** (hoje, em torneios, geralmente via big blind ante). |
 | **Set vs Trips** | Ambos são uma trinca — um **set** usa um par de bolso; **trips** usa uma carta da mão + um par no board. |
 | **Cooler vs Bad Beat** | Um [cooler](/pt/blog/holdem-cooler) = você estava atrás e não tinha como largar; um [bad beat](/pt/blog/holdem-bad-beat) = você estava na frente e foi ultrapassado. |
@@ -65,7 +65,7 @@ Tudo o que você pode fazer fisicamente na sua vez. Se você é totalmente novat
 
 | Termo | Significado |
 |:---|:---|
-| **Check** | Passar a vez sem apostar — só possível quando ninguém apostou nesta rodada. |
+| **Check** | Passar a vez sem apostar — só possível quando não falta nenhuma quantia para você igualar a aposta. |
 | **Bet** | Ser o primeiro a colocar fichas no pote numa rodada de apostas. |
 | **Call** | Igualar a aposta atual pra continuar na mão (pagar). |
 | **Raise** | Aumentar a aposta atual, forçando os outros a igualar mais ou largar. |
@@ -99,7 +99,7 @@ Onde você senta decide quando você age — e agir por último é uma vantagem 
 | Termo | Significado |
 |:---|:---|
 | **Button (BTN)** | A posição do dealer; age **por último** no pós-flop — o melhor lugar da mesa. |
-| **Small blind (SB)** | Aposta forçada à esquerda do button; age primeiro no pós-flop (o pior lugar pós-flop). |
+| **Small blind (SB)** | Com três ou mais jogadores, aposta forçada à esquerda do button; age primeiro no pós-flop (o pior lugar pós-flop). No heads-up, o small blind fica no button e age por último depois do flop. |
 | **Big blind (BB)** | O maior dos dois blinds; os stakes recebem o nome dos tamanhos dos blinds ($1/$2), e um big blind é a unidade padrão pra medir stacks. |
 | **UTG (under the gun)** | Primeiro a agir no pré-flop — precisa do range de abertura mais fechado. |
 | **Cutoff (CO)** | À direita do button; o segundo melhor lugar, ótimo pra roubar blinds. |
@@ -198,11 +198,11 @@ Fichas, stakes e os dois formatos. A grande bifurcação é [cash game vs tornei
 | **Stack** | As fichas na frente de um jogador. |
 | **Bankroll** | O dinheiro reservado pro poker no geral — não as fichas na mesa. |
 | **Buy-in** | O valor necessário pra entrar num jogo ou torneio. |
-| **Rake** | A parte que a casa tira de cada pote — [guia completo](/pt/blog/holdem-rake). |
+| **Rake** | A parte que a casa tira da maioria dos potes — [guia completo](/pt/blog/holdem-rake). |
 | **Rakeback** | Uma devolução que retorna parte do rake que você pagou. |
 | **Straddle** | Um blind opcional (em geral 2× BB) que compra a última ação pré-flop — [guia completo](/pt/blog/holdem-straddle). |
 | **Cash game** | Fichas de valor real, entra ou sai a qualquer hora, blinds fixos. |
-| **No-limit (NLH) / Limit** | Num jogo no-limit você pode apostar qualquer valor até o stack inteiro; no limit cada aposta tem tamanho fixo. O Hold'em é quase sempre no-limit (no pot-limit, o formato do PLO, o teto de cada aposta é o tamanho do pote). |
+| **No-limit (NLH) / Limit** | Num jogo no-limit, a aposta inicial vai de um big blind até o stack inteiro (salvo all-in com menos fichas); no limit cada aposta tem tamanho fixo. O Hold'em é quase sempre no-limit (no pot-limit, o formato do PLO, o teto de cada aposta ou aumento é o tamanho do pote). |
 | **PLO** | Pot-Limit Omaha — uma variante popular em que você recebe quatro hole cards e precisa usar exatamente duas (não é o mesmo jogo, mas você vai ouvir o nome). |
 | **Tournament** | Buy-in fixo, blinds subindo, joga até quebrar ou vencer. |
 | **Freezeout** | Um torneio sem rebuys — quebrou, acabou. |
@@ -271,7 +271,7 @@ A. UTG é o assento imediatamente à esquerda do big blind, então esse jogador 
 
 **Q. Qual é a diferença entre um check e um call?**
 
-A. Um check passa a ação sem colocar nenhuma ficha, e só é permitido quando ninguém apostou ainda nesta rodada. Um call iguala uma aposta que alguém já fez. Dar check é de graça; pagar te custa o valor da aposta atual. Confundir os dois é o erro de iniciante mais comum que existe.
+A. Um check passa a ação sem colocar nenhuma ficha, e só é permitido quando não falta nenhuma quantia para você igualar a aposta. Um call iguala uma aposta que alguém já fez. Dar check é de graça; pagar custa o que ainda falta para igualar a aposta atual. Confundir os dois é o erro de iniciante mais comum que existe.
 
 **Q. Qual é a diferença entre um set e trips?**
 

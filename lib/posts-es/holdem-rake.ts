@@ -4,12 +4,12 @@ export const POST: Post = {
   slug: "holdem-rake",
   title: "¿Qué es el rake en póker? Cómo cobra la sala — y cuánto pagas de verdad",
   seoTitle: "La comisión que se come tus ganancias — ¿qué es el rake?",
-  desc: "El rake es la comisión que la sala se lleva de cada bote en cash game. Aquí verás cómo funciona, cuánto pagas por sesión y qué te devuelve el rakeback.",
-  tldr: "El rake es la pequeña tajada que la sala se lleva de cada bote por montar la partida — normalmente entre 2.5 y 10% hasta un tope de unos pocos dólares. La mayoría de salas no cobra nada si todos foldean antes del flop ('no flop, no drop'). Golpea más fuerte a los límites bajos y a las mesas cortas, y el rakeback devuelve una parte a los regulares.",
+  desc: "El rake es la comisión que la sala se lleva de la mayoría de botes en cash game. Cómo funciona, cuánto pagas por sesión y qué te devuelve el rakeback.",
+  tldr: "El rake es la pequeña tajada que la sala se lleva de la mayoría de botes por montar la partida — normalmente entre 2.5 y 10% hasta un tope de unos pocos dólares. La mayoría de salas no cobra nada si todos foldean antes del flop ('no flop, no drop'). Golpea más fuerte a los límites bajos y a las mesas cortas, y el rakeback devuelve una parte a los regulares.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-09-13",
-  masterUpdated: "2026-09-13",
+  updated: "2026-09-22",
+  masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🏦",
@@ -52,10 +52,10 @@ No existe un único tipo de rake. Cómo cobra la casa su dinero depende de los l
 
 | Tipo | Cómo se cobra | Cantidad típica | Dónde lo verás |
 |:---|:---|:---:|:---|
-| **Rake por bote (escalado)** | % de cada bote, hasta un tope | 2.5–10%, con tope de $1–$6 | La mayoría de cash de límites bajos/medios, online |
+| **Rake por bote (escalado)** | % de los botes sujetos a rake, hasta un tope | 2.5–10%, con tope de $1–$6 | La mayoría de cash de límites bajos/medios, online |
 | **Rake por tiempo** | Tarifa fija por jugador, cada 30 min | ~$10–$15 por hora | Límites altos en vivo ($10/$20+), y cualquier límite donde el rake por bote no sea posible |
 | **Dead drop** | El botón paga un rake fijo cada mano | Fijo por mano | Algunas salas en vivo |
-| **Comisión de torneo** | Añadida al buy-in por adelantado | ~5–20% del buy-in | Todos los torneos |
+| **Comisión de torneo** | Cobrada con el buy-in por adelantado | ~5–20% del buy-in | Casi todos los torneos |
 
 </div>
 
@@ -110,7 +110,7 @@ Para un jugador casual, el rakeback es un extra menor. Para un regular de mucho 
 
 ## ¿Los torneos tienen rake?
 
-Del tipo por bote no — pero aun así pagas una comisión, y está a la vista de todos. Un buy-in de torneo se divide en dos partes, mostradas con un **signo "+"**:
+Del tipo por bote no — pero aun así pagas una comisión, y está a la vista de todos. El precio de entrada puede mostrar por separado el aporte al bote de premios y la comisión con un **signo "+"**. Algunas series, como la WSOP, anuncian un buy-in total que ya incluye la comisión. Un ejemplo de la notación separada:
 
 :::pull
 Un torneo de **$100 + $9** significa que $100 van al bote de premios y **$9 son la comisión de la casa.**
@@ -142,11 +142,11 @@ La lección: nunca juzgues el rake solo por el porcentaje. Lo que importa es el 
 
 **Q. ¿Qué es el rake en póker?**
 
-A. El rake es la comisión que una sala se lleva de un cash game por montarlo — normalmente un pequeño porcentaje de cada bote (2.5–10%) hasta un tope máximo. Como la casa no juega, el rake es su principal fuente de ingresos. Los torneos cobran una comisión equivalente incluida en el buy-in en su lugar.
+A. El rake es la comisión que una sala se lleva de un cash game por montarlo — normalmente un pequeño porcentaje de los botes sujetos a rake (2.5–10%) hasta un tope máximo. Como la casa no juega, el rake es su principal fuente de ingresos. Los torneos cobran una comisión equivalente incluida en el buy-in en su lugar.
 
 **Q. ¿Cómo se calcula el rake?**
 
-A. En la mayoría de cash games es un porcentaje del bote (habitualmente 2.5–10%), depositado antes de pagar al ganador, hasta un tope de unos pocos dólares. Solo se cobra si la mano llega al flop: si todos foldean antes, no hay rake. El porcentaje y el tope varían según la sala y los límites, y el tope a menudo se reduce cuando reparten a menos jugadores. En límites altos, las salas pueden cobrar una tarifa fija por tiempo por jugador en su lugar.
+A. En la mayoría de cash games es un porcentaje del bote (habitualmente 2.5–10%), depositado antes de pagar al ganador, hasta un tope de unos pocos dólares. En la mayoría de salas solo se cobra si la mano llega al flop; no es universal, pues algunas, como GGPoker, cobran rake en ciertos botes preflop. El porcentaje y el tope varían según la sala y los límites, y el tope a menudo se reduce cuando reparten a menos jugadores. En límites altos, las salas pueden cobrar una tarifa fija por tiempo por jugador en su lugar.
 
 **Q. ¿Quién paga el rake en póker?**
 
@@ -174,7 +174,7 @@ A. Varía según la sala, los límites y el formato, así que siempre conviene m
 
 **Q. ¿Cómo puedes pagar menos rake en póker?**
 
-A. No puedes escapar del rake por completo en una partida rakeada, pero sí reducirlo. Consigue el mejor acuerdo de rakeback que puedas y elige salas con topes amables para el jugador. Subir de límites también rebaja el rake, porque un tope fijo es una parte menor de cada bote — pero da ese paso solo cuando tu bankroll aguante las rachas *y* sigas teniendo ventaja sobre un campo más duro; si no, los rivales te quitarán mucho más de lo que te quitaba el rake. Jugar menos botes pero más grandes en lugar de una avalancha de botes pequeños también lo rebaja: el tope solo entra en los botes grandes, mientras que los pequeños pagan el porcentaje entero. Lo mismo con evitar las mesas muy cortas — donde juegas muchas más manos por hora y pagas ciegas mucho más a menudo, así que entras en muchos más botes rakeados — y con preferir las partidas de límites altos con rake por tiempo. En puro coste, una partida casera sin rake es el póker más barato que existe: no se recorta nada del bote.
+A. No puedes escapar del rake por completo en una partida rakeada, pero sí reducirlo. Consigue el mejor acuerdo de rakeback que puedas y elige salas con topes amables para el jugador. Subir de límites también rebaja el rake, porque un tope fijo es una parte menor de cada bote — pero da ese paso solo cuando tu bankroll aguante las rachas *y* sigas teniendo ventaja sobre un campo más duro; si no, los rivales te quitarán mucho más de lo que te quitaba el rake. Jugar menos botes pero más grandes en lugar de una avalancha de botes pequeños también lo rebaja: el tope solo entra en los botes grandes, mientras que los pequeños pagan el porcentaje entero. Lo mismo con evitar las mesas muy cortas — donde juegas muchas más manos por hora y pagas ciegas mucho más a menudo, así que entras en muchos más botes rakeados — y con preferir las partidas de límites altos con rake por tiempo, siempre que tu bankroll y tu ventaja frente a los rivales también permitan jugar esos límites. En puro coste, una partida casera sin rake es el póker más barato que existe: no se recorta nada del bote.
 
 **Q. ¿Es ilegal cobrar rake?**
 
@@ -182,7 +182,7 @@ A. Cobrar una comisión por montar la partida es todo el modelo de negocio de un
 
 **Q. ¿Los torneos de póker tienen rake?**
 
-A. Sí, pero no del bote. La comisión se añade a tu buy-in y se muestra con un "+" — un torneo de $100 + $9 envía $100 al bote de premios y $9 a la casa. Esa comisión (el "juice" o "vig") suele ser el 5–20% del buy-in y se paga sin importar cómo termines.
+A. Sí, pero no del bote. El precio de entrada puede separar el aporte al bote de premios y la comisión con un "+" — un torneo de $100 + $9 envía $100 al bote de premios y $9 a la casa. Algunas series, como la WSOP, anuncian un buy-in total con la comisión ya incluida. Esa comisión (el "juice" o "vig") suele ser el 5–20% del buy-in y se paga sin importar cómo termines.
 
 **Q. ¿Cómo afecta el rake a tu win rate?**
 
@@ -196,7 +196,7 @@ A. El rake en vivo es un porcentaje más alto con un tope mayor, pero juegas muc
 
 ## Las 3 cosas que debes recordar
 
-1. **El rake es la tajada de la casa por montar la partida** — normalmente el 2.5–10% de cada bote hasta un pequeño tope, y es independiente de lo que ganes o pierdas contra los rivales.
+1. **El rake es la tajada de la casa por montar la partida** — normalmente el 2.5–10% de los botes sujetos a rake hasta un pequeño tope, y es independiente de lo que ganes o pierdas contra los rivales.
 2. **Golpea más fuerte a los límites bajos.** El tope apenas se mueve conforme bajas, así que en proporción pagas el máximo rake en la base — la "trampa del rake" que hace tan difíciles de batir los micro-límites.
 3. **El rakeback y la estructura importan.** Recuperar el 20–40% de tu rake, y elegir salas con topes amables para el jugador, puede darle la vuelta a tu resultado a largo plazo — mide todo *después* del rake.
 

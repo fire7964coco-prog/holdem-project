@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ini glosarium bahasa sederhana untuk istilah poker yang benar-benar muncul di permainan Texas Hold'em, dikelompokkan berdasarkan cara Anda menemuinya — aksi taruhan, posisi, tangan dan board, tipe pemain, uang, dan situasi meja. Mulai dari istilah yang paling sering tertukar di bawah (check vs call, set vs trips, cooler vs bad beat), lalu jelajahi per kategori. Istilah dengan panduan mendalam langsung tertaut ke sana.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-17",
-  masterUpdated: "2026-09-17",
+  updated: "2026-09-22",
+  masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "📖",
@@ -42,7 +42,7 @@ Kalau Anda hanya sempat memperjelas selusin istilah, jadikan yang ini — inilah
 
 | Yang sering tertukar | Bedanya |
 |:---|:---|
-| **Check vs Call** | Check tidak mempertaruhkan **chip apa pun** (hanya saat belum ada taruhan aktif); call **menyamai** taruhan yang sudah ada. |
+| **Check vs Call** | Check tidak mempertaruhkan **chip apa pun** (hanya saat tidak ada lagi jumlah taruhan yang perlu Anda samai); call **menyamai** taruhan yang sudah ada. |
 | **Blind vs Ante** | Blind adalah taruhan wajib berdasarkan **posisi** (SB/BB); ante mengisi pot dan datang dari **semua orang** (di turnamen masa kini biasanya lewat big blind ante). |
 | **Set vs Trips** | Keduanya three of a kind — **set** memakai pocket pair; **trips** memakai satu kartu tertutup + pair di board. |
 | **Cooler vs Bad Beat** | [Cooler](/id/blog/holdem-cooler) = Anda tertinggal dan tak bisa fold; [bad beat](/id/blog/holdem-bad-beat) = Anda unggul lalu tersalip. |
@@ -65,7 +65,7 @@ Segala hal yang bisa Anda lakukan secara fisik pada giliran Anda. Jika Anda bena
 
 | Istilah | Arti |
 |:---|:---|
-| **Check** | Melewatkan giliran tanpa bertaruh — hanya mungkin saat belum ada taruhan pada ronde ini. |
+| **Check** | Melewatkan giliran tanpa bertaruh — hanya mungkin saat tidak ada lagi jumlah taruhan yang perlu Anda samai. |
 | **Bet** | Menjadi orang pertama yang memasukkan chip ke pot pada suatu ronde taruhan. |
 | **Call** | Menyamai taruhan saat ini untuk tetap dalam tangan. |
 | **Raise** | Menaikkan taruhan saat ini, memaksa lawan menyamai lebih banyak atau fold. |
@@ -99,7 +99,7 @@ Tempat Anda duduk menentukan kapan Anda beraksi — dan beraksi terakhir adalah 
 | Istilah | Arti |
 |:---|:---|
 | **Button (BTN)** | Posisi dealer; beraksi **terakhir** postflop — kursi terbaik di meja. |
-| **Small blind (SB)** | Taruhan wajib di kiri button; beraksi pertama postflop (kursi postflop terburuk). |
+| **Small blind (SB)** | Dengan tiga pemain atau lebih, taruhan wajib di kiri button; beraksi pertama postflop (kursi postflop terburuk). Dalam heads-up, small blind berada di button dan beraksi terakhir setelah flop. |
 | **Big blind (BB)** | Blind terbesar dari dua blind wajib; level stake dinamai berdasarkan ukuran blind ($1/$2), dan satu big blind adalah satuan standar untuk mengukur stack. |
 | **UTG (under the gun)** | Beraksi pertama preflop — butuh opening range paling ketat. |
 | **Cutoff (CO)** | Di kanan button; kursi terbaik kedua, bagus untuk mencuri blind. |
@@ -197,11 +197,11 @@ Chip, stake, dan dua format. Percabangan besarnya adalah [cash game vs turnamen]
 | **Stack** | Chip yang ada di depan seorang pemain. |
 | **Bankroll** | Uang yang disisihkan untuk poker secara keseluruhan — bukan chip di atas meja. |
 | **Buy-in** | Jumlah yang dibutuhkan untuk masuk ke permainan atau turnamen. |
-| **Rake** | Potongan rumah dari setiap pot — [panduan lengkap](/id/blog/holdem-rake). |
+| **Rake** | Potongan rumah dari sebagian besar pot — [panduan lengkap](/id/blog/holdem-rake). |
 | **Rakeback** | Pengembalian sebagian dari rake yang telah Anda bayar. |
 | **Straddle** | Blind opsional (biasanya 2× BB) yang membeli aksi preflop terakhir — [panduan lengkap](/id/blog/holdem-straddle). |
 | **Cash game** | Chip bernilai riil, bergabung atau keluar kapan saja, blind tetap. |
-| **No-limit (NLH) / Limit** | No-limit membolehkan Anda bertaruh berapa pun sampai seluruh stack; limit membatasi tiap taruhan pada ukuran tetap. Hold'em hampir selalu no-limit. |
+| **No-limit (NLH) / Limit** | Dalam no-limit, taruhan pembuka minimal sebesar big blind (kecuali all-in dengan chip kurang dari itu) dan maksimal seluruh stack; limit membatasi tiap taruhan pada ukuran tetap. Hold'em hampir selalu no-limit; pot-limit, format PLO, membatasi bet dan raise maksimal sebesar pot. |
 | **PLO** | Pot-Limit Omaha — varian populer dengan empat kartu tertutup dan wajib memakai tepat dua (bukan permainan yang sama, tapi namanya akan sering Anda dengar). |
 | **Tournament** | Buy-in tetap, blind naik, main sampai bust atau menang. |
 | **Freezeout** | Turnamen tanpa rebuy — keluar berarti keluar. |
@@ -267,7 +267,7 @@ A. UTG adalah kursi tepat di kiri big blind, jadi pemain itu beraksi pertama seb
 
 **Q. Apa perbedaan antara check dan call?**
 
-A. Check melewatkan giliran tanpa memasukkan chip apa pun, dan hanya boleh dilakukan saat belum ada yang bertaruh pada ronde ini. Call menyamai taruhan yang sudah dibuat seseorang. Check itu gratis; call membebani Anda sebesar taruhan saat ini. Menukar keduanya adalah kesalahan pemula yang paling umum.
+A. Check melewatkan giliran tanpa memasukkan chip apa pun, dan hanya boleh dilakukan saat tidak ada lagi jumlah taruhan yang perlu Anda samai. Call menyamai taruhan yang sudah dibuat seseorang. Check itu gratis; call membayar jumlah yang masih kurang untuk menyamai taruhan saat ini. Menukar keduanya adalah kesalahan pemula yang paling umum.
 
 **Q. Apa perbedaan antara set dan trips?**
 

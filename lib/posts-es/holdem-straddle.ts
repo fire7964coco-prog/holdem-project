@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "¿Qué es un straddle en póker? Reglas, tipos y si deberías ponerlo",
   seoTitle: "La apuesta que dobla la mesa — ¿qué es un straddle?",
   desc: "El straddle es una ciega voluntaria que dobla la apuesta antes de repartir. Reglas, tipos de straddle, quién actúa primero y si straddlear es rentable.",
-  tldr: "Un straddle es una apuesta ciega voluntaria — normalmente el doble de la ciega grande (2× BB) — que un jugador pone antes de repartir las cartas, casi siempre desde UTG; en España se le llama 'matar la ciega'. Le compra al que lo pone la última acción y la opción de subir en preflop, doblando la apuesta de la mano. Para casi todo el mundo es una jugada -EV, y casi siempre queda restringido a los cash games según las reglas de la casa (prácticamente nunca en torneos).",
+  tldr: "Un straddle es una apuesta ciega voluntaria — normalmente el doble de la ciega grande (2× BB) — que un jugador pone antes de repartir las cartas, casi siempre desde UTG; en España se le llama 'matar la ciega'. Le compra al que lo pone la última acción preflop y la opción de subir, doblando la apuesta de la mano. Para casi todo el mundo es una jugada -EV, y casi siempre queda restringido a los cash games según las reglas de la casa (prácticamente nunca en torneos).",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-09-12",
-  masterUpdated: "2026-09-12",
+  updated: "2026-09-22",
+  masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "💰",
@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Un jugador en UTG poniendo una apuesta ciega extra de dos fichas delante de la ciega grande antes de que se repartan las cartas",
   tags: ["straddle", "qué es un straddle en poker", "reglas del straddle poker", "mississippi straddle", "button straddle", "sleeper straddle", "straddle es rentable", "straddle utg"],
   content: `
-La primera vez que alguien puso un straddle en mi mesa de $1/$2, no tenía ni idea de por qué el jugador en UTG soltó $4 antes de que salieran las cartas — ni de por qué el repartidor de repente empezó la acción un asiento más allá. Durante un mes lo llamé "la apuesta del rico" hasta que aprendí lo que hace de verdad: un straddle ==dobla la apuesta y le compra a un jugador la última palabra==, todo antes de que nadie haya mirado una sola carta.
+La primera vez que alguien puso un straddle en mi mesa de $1/$2, no tenía ni idea de por qué el jugador en UTG soltó $4 antes de que salieran las cartas — ni de por qué el repartidor de repente empezó la acción un asiento más allá. Durante un mes lo llamé "la apuesta del rico" hasta que aprendí lo que hace de verdad: un straddle ==dobla la apuesta y le compra a un jugador la última palabra antes del flop==, todo antes de que nadie haya mirado una sola carta.
 
 Si has visto una partida en vivo donde aparece una ciega extra de la nada, este es el término que buscas. Es una de las entradas peor entendidas de todo el [glosario de póker](/es/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp"). Abajo tienes exactamente qué es un **straddle**, cada tipo con el que te vas a encontrar, quién actúa primero cuando se pone uno, y la respuesta honesta a la única pregunta que importa: ==g:¿deberías ponerlo de verdad?==
 
@@ -125,16 +125,16 @@ La respuesta honesta, y la que comparten los solvers: **para casi todo el mundo,
 :::card
 🎯 | Te comprometes a ciegas | El dinero entra antes de ver tus cartas, así que juegas un bote inflado sin información — la misma desventaja que hace de las ciegas los peores asientos de la mesa. Además te parte por la mitad la profundidad efectiva: en $1/$2 un stack de $200 son 100 ciegas grandes, pero con un straddle de $4 puesto ese mismo stack juega como 50
 📉 | Reduce tu ventaja posicional | Doblar la ciega infla el bote inicial y deja a más jugadores por actuar cuando estás en tus mejores asientos para robar. Curiosamente, los solvers responden abriendo **menos** manos en botes con straddle — alrededor de un 15–20% menos en el botón, según las [simulaciones de botes con straddle de GTO Wizard](https://blog.gtowizard.com/preflop-strategy-in-straddled-pots/) — no más
-💸 | Infla el rake | Botes más grandes significan más [rake](/es/blog/holdem-rake) que se llevan de ellos, un impuesto oculto sobre cada mano con straddle en un cash game con rake
+💸 | Puede aumentar el rake por bote | En los botes sujetos a [rake](/es/blog/holdem-rake), un bote mayor puede pagar más hasta alcanzar el tope. Ese aumento no se aplica a botes preflop bajo la regla no flop, no drop, a partidas con cobro por tiempo ni a botes que ya alcanzaron el tope
 :::
 
-Entonces, ¿cuándo *sí* es defendible? Solo en situaciones concretas, y nunca como jugada de puro beneficio:
+Entonces, ¿cuándo *sí* es defendible? Solo en situaciones concretas, y casi nunca como jugada de puro beneficio:
 
 - **Una mesa loose-passive** donde los rivales igualan la ciega mayor con basura y juegan fit-or-fold tras el flop — a veces puedes explotar eso, idealmente straddleando desde posición tardía.
-- **Una partida donde ya todos straddlean** — si el straddle es universal, no pierdes posición *relativa* al sumarte (aunque a la mesa entera le iría mejor no hacerlo).
+- **Una partida donde todos straddlean por turnos y en las mismas condiciones** — así suben los niveles de apuesta sin ponerte en desventaja respecto a tus rivales. Según GTO Wizard, esto suele favorecerte si estás entre los mejores jugadores de la mesa, aunque la menor profundidad efectiva puede reducir tu ventaja.
 - **Partidas de acción / sociales** donde estás por diversión, no por máximo EV — una razón perfectamente válida, solo sé honesto en que te está costando dinero.
 
-Lo que el straddle *no* hará es "crear una imagen loose" que compense — estás pagando un precio real y medible por una ventaja de imagen que rara vez se materializa. Si tu objetivo es ganar, la jugada que de verdad construye ventaja es la [posición](/es/blog/holdem-position-play), no una ciega extra. Straddlea por diversión si te apetece; no straddlees para ganar dinero.
+Lo que el straddle *no* hará es "crear una imagen loose" que compense — estás pagando un precio real y medible por una ventaja de imagen que rara vez se materializa. Si tu objetivo es ganar, la jugada que de verdad construye ventaja es la [posición](/es/blog/holdem-position-play), no una ciega extra. Straddlea por diversión si te apetece; en general, no esperes que sea una forma fiable de aumentar tus ganancias.
 
 ---
 
@@ -183,7 +183,7 @@ A. Casi nunca. Los torneos dependen de una estructura fija de ciegas que debe se
 
 **Q. ¿Es rentable el straddle? ¿Deberías ponerlo?**
 
-A. Para la mayoría de jugadores, no — es una jugada -EV. Comprometes dinero a ciegas, encoges tu ventaja posicional (los solvers abren *menos* manos en botes con straddle, no más) e inflas el rake. Solo es defendible en mesas loose-passive, en partidas donde ya todos straddlean, o puramente por diversión — nunca como forma de ganar dinero.
+A. Para la mayoría de jugadores, no — es una jugada -EV. Comprometes dinero a ciegas, encoges tu ventaja posicional (los solvers abren *menos* manos en botes con straddle, no más) y puedes pagar más rake. Solo es defendible en mesas loose-passive, en partidas donde todos straddlean por turnos y en las mismas condiciones, o puramente por diversión — casi nunca como forma de ganar dinero. Si todos participan por turnos y en igualdad de condiciones, GTO Wizard señala que subir así los niveles de apuesta puede favorecer a los mejores jugadores de la mesa.
 
 ---
 
@@ -191,7 +191,7 @@ A. Para la mayoría de jugadores, no — es una jugada -EV. Comprometes dinero a
 
 1. **Un straddle es una tercera ciega opcional, normalmente 2× la ciega grande,** puesta antes de las cartas — dobla la apuesta y compra la última acción en preflop.
 2. **El asiento decide la posición, no el nombre del straddle.** Un straddle UTG es el último solo en preflop. El único que además es el último tras el flop es el que se pone ==desde el botón==, porque en postflop el orden siempre sigue al botón. Todo depende de las reglas de la casa.
-3. **Es -EV para casi todo el mundo.** Comprometerte a ciegas, inflar el bote fuera de posición y alimentar el rake pesan más que la diversión. Straddlea por la imagen en la mesa o por el entretenimiento, no por el beneficio.
+3. **Es -EV para casi todo el mundo.** Comprometerte a ciegas, inflar el bote fuera de posición y posiblemente pagar más rake pesan más que la diversión. Como regla general, straddlea por entretenimiento, no por la imagen en la mesa ni por el beneficio.
 
 Ahora que conoces la ciega extra, afina los fundamentos que distorsiona: [qué hacen de verdad las ciegas](/es/blog/holdem-blind-meaning), [por qué la posición gana dinero](/es/blog/holdem-position-play), y [cómo funcionan las acciones de apuesta y las subidas](/es/blog/holdem-betting-actions) una vez que el straddle resetea el precio.
 

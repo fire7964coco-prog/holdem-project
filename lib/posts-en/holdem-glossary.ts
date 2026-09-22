@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "This is a plain-English glossary of the poker terms that actually come up in a Texas Hold'em game, grouped by how you'll meet them — betting actions, positions, hands and board, player types, money, and table situations. Start with the 'most confused' terms below (check vs call, set vs trips, cooler vs bad beat), then browse by category. Terms with a deeper guide link straight to it.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-17",
+  updated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "📖",
@@ -41,7 +41,7 @@ If you only clear up a dozen terms, make it these — they're the ones that caus
 
 | These get mixed up | The difference |
 |:---|:---|
-| **Check vs Call** | A check risks **no chips** (only when no bet is live); a call **matches** an existing bet. |
+| **Check vs Call** | A check risks **no chips** (only when you have no outstanding bet to match); a call **matches** an existing bet. |
 | **Blind vs Ante** | Blinds are **positional** forced bets (SB/BB); antes seed the pot and come from **everyone** (in tournaments today, usually via a big blind ante). |
 | **Set vs Trips** | Both are three of a kind — a **set** uses a pocket pair; **trips** uses one hole card + a board pair. |
 | **Cooler vs Bad Beat** | A [cooler](/en/blog/holdem-cooler) = you were behind and couldn't fold; a [bad beat](/en/blog/holdem-bad-beat) = you were ahead and got outdrawn. |
@@ -64,7 +64,7 @@ Everything you can physically do on your turn. If you're brand new, start with t
 
 | Term | Meaning |
 |:---|:---|
-| **Check** | Pass the action without betting — only possible when no bet has been made this round. |
+| **Check** | Pass the action without betting — only when you have no outstanding bet to match. |
 | **Bet** | Be the first to put chips in the pot on a betting round. |
 | **Call** | Match the current bet to stay in the hand. |
 | **Raise** | Increase the current bet, forcing others to match more or fold. |
@@ -98,7 +98,7 @@ Where you sit decides when you act — and acting last is a permanent edge. For 
 | Term | Meaning |
 |:---|:---|
 | **Button (BTN)** | The dealer position; acts **last** postflop — the best seat at the table. |
-| **Small blind (SB)** | Forced bet left of the button; acts first postflop (worst postflop seat). |
+| **Small blind (SB)** | With three or more players, the forced bet left of the button; acts first postflop (worst postflop seat). Heads-up, the SB is on the button and acts last postflop. |
 | **Big blind (BB)** | The larger of the two blinds; stakes are named by the blind sizes ($1/$2), and one big blind is the standard unit for measuring stacks. |
 | **UTG (under the gun)** | First to act preflop — needs the tightest opening range. |
 | **Cutoff (CO)** | Right of the button; second-best seat, great for stealing blinds. |
@@ -196,11 +196,11 @@ Chips, stakes, and the two formats. The big fork is [cash game vs tournament](/e
 | **Stack** | The chips in front of a player. |
 | **Bankroll** | The money set aside for poker overall — not the chips on the table. |
 | **Buy-in** | The amount needed to enter a game or tournament. |
-| **Rake** | The house's cut of each pot — [full guide](/en/blog/holdem-rake). |
+| **Rake** | The house's cut of most cash-game pots — [full guide](/en/blog/holdem-rake). |
 | **Rakeback** | A rebate returning part of the rake you've paid. |
 | **Straddle** | An optional blind (usually 2× BB) buying last preflop action — [full guide](/en/blog/holdem-straddle). |
 | **Cash game** | Real-value chips, join or leave anytime, fixed blinds. |
-| **No-limit (NLH) / Limit** | No-limit lets you bet anything up to your whole stack; limit caps each bet at a fixed size. Hold'em is almost always no-limit. |
+| **No-limit (NLH) / Limit** | In no-limit, an opening bet can range from one big blind to your whole stack (a smaller all-in is allowed); limit uses fixed bet sizes. Pot-limit, the PLO format, caps bets and raises at the pot size. Hold'em is almost always no-limit. |
 | **PLO** | Pot-Limit Omaha — a popular variant where you get four hole cards and must use exactly two (not the same game, but you'll hear it named). |
 | **Tournament** | Fixed buy-in, rising blinds, play until you bust or win. |
 | **Freezeout** | A tournament with no rebuys — out means out. |
@@ -266,7 +266,7 @@ A. UTG is the seat immediately to the left of the big blind, so that player is f
 
 **Q. What is the difference between a check and a call?**
 
-A. A check passes the action without putting any chips in, and is only allowed when no one has bet yet this round. A call matches a bet someone has already made. Checking is free; calling costs you the amount of the current bet. Confusing the two is the single most common beginner mistake.
+A. A check passes the action without putting any chips in, and is only allowed when you have no outstanding bet to match. A call matches a bet someone has already made. Checking adds no chips; calling pays the amount you still owe toward the current bet. Confusing the two is the single most common beginner mistake.
 
 **Q. What is the difference between a set and trips?**
 
