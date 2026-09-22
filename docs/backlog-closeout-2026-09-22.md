@@ -4,14 +4,14 @@
 
 | 순서 | 묶음 | 담당/범위 | 상태 |
 |---|---|---|---|
-| 1 병렬 | Q14 MA-148 | 기존 queue CLI, 포스트 수정 | 3cfabdc6 완료·머지전 검수 |
+| 1 병렬 | Q14 MA-148 | 기존 queue CLI, 포스트 수정 | 603deb7a 머지·086161eb push, 라이브 마감 미완료 |
 | 1 병렬 | CALC-SHARED-2 | harden-calc-ko, 공용 후속8건+H-2 중복 통합 | 4849f3c8 머지·679f854a 배포/라이브 완료 |
 | 1 병렬 | 대기열 최신화 | 본체, 완료중복/실제미결/보류/시한 대조 | 실사 완료·원문 보존 |
-| 2 | Q8-a → Q8-b | Q14 머지 후 pt → id/de, 실제 미결 먼저 확인 | 대기 |
-| 2 | CALC-H1 | K9s/Q9s/J9s 티어 보강, 공용8건 머지 후 | c9be34bb 구현·검증 완료, 본체 머지 대기 |
-| 3 | 사실 오류 잔여 | EN-먼저·ar 동기화·KO/중문 개별 오류; 실사로 정확 파일 고정 | 대기 |
-| 4 | 표현·구조 잔여 | EN 확률 직답/FAQ·이미지 정합, 언어별 잔여; 기각판정 유지 | 대기 |
-| 5 | 통합 마감 | main 순차 머지·검증·배포·정확 URL IndexNow·문서·lane sync | 대기 |
+| 2 | Q8-a → Q8-b | PT → ID/DE | PT 0c74affa 머지·미배포; ID 준비만/DE 미착수 |
+| 2 | CALC-H1 | K9s/Q9s/J9s 티어 보강, 공용8건 머지 후 | 45177757 머지·push, 라이브 UI 마감 미완료 |
+| 3 | 사실 오류 잔여 | EN-먼저·ar 동기화·KO/중문 개별 오류 | 일부 push; 규칙21편/EN7 미커밋 초안, 세부 아래 |
+| 4 | 표현·구조 잔여 | EN 확률 직답/FAQ·이미지 정합, 언어별 잔여 | PDF/ES push; EN7 초안/나머지 미착수 |
+| 5 | 통합 마감 | main 순차 머지·검증·배포·정확 URL IndexNow·문서·lane sync | round1 완료, round2 라이브 이후 미완료·이관 중단 |
 
 ## 실행 경계
 
@@ -47,3 +47,78 @@
 우편함 MB-054/067 형식 복구 완료: ID77개 보존, 파손0·열결손0. 기존 본문 주장과 수신확인 상태는 바꾸지 않았다.
 
 소품 마감: KO odds 라벨/APPT echo, fr FAQ접두7/계산기앵커1은 e897bae4·679f854a 배포/라이브 완료(MB-078). 나머지 동형 규칙·다국어 범위까지 완료했다는 뜻이 아니다.
+
+## 새 세션 이관 체크포인트 — 2026-09-22
+
+**최신 지시: “정리해줘 새새션에서 작업하게”. 기존 일괄 실행을 여기서 중단했다.** 위 실사표는 당시 목록이며 아래 현재 상태를 우선한다. 부분 완료를 전체 완료로 바꾸지 않는다. 새 세션은 한 묶음만 정하고 나머지는 보존한다.
+
+### 1. 완료·검증·배포를 분리한 현재 상태
+
+| 묶음 | 코드 상태 | 아직 남은 마감 |
+|---|---|---|
+| CALC-SHARED-2 + KO odds/APPT + FR 접두/앵커 | 4849f3c8/e897bae4/679f854a, 라이브 확인·IndexNow·MB-078 완료 | 재작업 금지 |
+| H1 K9s/Q9s/J9s T3 | c9be34bb → 45177757 머지; 086161eb에 포함하여 push | 라이브 H1 실제 선택/UI 최종 확인 |
+| Q14 | 3cfabdc6 + 독립검수 수정8bfcd35c → 603deb7a 머지; push됨 | round2 라이브·IndexNow·최종 통지 |
+| core/ar 규칙 38편 | 4834860d, 독립검수/게이트 후 push | round2 라이브·마감 |
+| zh glossary/zh-hant rake | 64b8cf65, 독립검수 후 push | round2 라이브·마감 |
+| 공통 PDF 카드 크롬 | 05e4cfd2, 26언어35글37카드 HTML 변환 대조; push | 일부 화면 육안검사/round2 라이브·마감 |
+| ES APT/WSOP 숫자 구분자 | 7275c934, 값 보존·독립검수 후 push | round2 라이브·마감; 기계적 수정이라 updated 미변경 |
+| KO 위치/EQR·BB FAQ | 649c2f0c, 실제 slug position-is-everything-in-holdem; push | round2 라이브·마감 |
+| Q8-a PT 8편21자리 | a5def6b7 → 0c74affa 머지, 독립 diff/게이트 통과 | **아직 main 통합 빌드·push·라이브 없음** |
+| 규칙 tail/core 요약 | main 미커밋 포스트21 + 브리프; 아래 참조 | 자체검사·독립검수·미착수20편 모두 남음 |
+| EN 확률7 | calc 워크트리 미커밋 포스트7 + 브리프 | 본체 독립검수부터; 번역·이미지·빌드 없음 |
+| Q8-b ID/DE | ID A 준비만, DE 미착수 | 새 회차 범위로 별도 선택 |
+
+H1은 T3 타입9→12(콤보54→66), T4 타입89→86(510→498), 상위1–4 합계654/1326=49.3213% 불변. 나머지166타입 불변. 계산기 독립 테스트·parity 통과. H3 확장과 구별한다.
+Q14는 30포스트+이미지/템플릿/문서. 검수 때 Hant 중복 직답·브리프 분자/분모·cbet sizing 별명 선행어 3건을 수정한 뒤 머지했다. 990runout=341승/0무/649패(34.4444%); 13캡처의 IP actions는 비어 있어 IP65–75 근거로 사용하지 않았다.
+
+### 2. 실제 배포 확인 재개 지점
+
+- 마지막 push **086161eb**. main의 콘텐츠 HEAD **0c74affa**는 그 뒤 PT 머지를 포함하므로 아직 배포 버전이 아니다. 문서 마감 커밋도 뒤에 붙을 수 있다.
+- 보존된 **.next는 603deb7a 콘텐츠 + 생성 sitemap69**로 빌드한 round2 산출물이다. 소스에는 그 뒤 PT 및 미커밋 규칙 초안이 있으므로 **현재 main에서 먼저 rebuild하면 검증 기준이 바뀐다**. 먼저 보존 산출물/배포 버전을 확인한다. 산출물이 없으면 별도 안전한 작업 위치에서 정확 커밋을 재현하고 초안을 건드리지 않는다.
+- build773 통과. 로컬 검증 **118URL=106포스트+12계산기**, FAQ1325 일치, article106 일치, HTTP200·390px overflow0·pageerror0. 증거 **tmp/closeout-round2/local.json** (인계 시 재확인).
+- ru/tr beginners의 FAQ는 원래 없음: 2개만 예외 처리했다. 모든 URL에 FAQ가 있다고 주장하지 않는다.
+- 라이브 첫 시도는 /ar/blog/holdem-all-in-rules FAQ mismatch로 종료(구 배포 응답). **live.json 없음, 라이브 전체 성공 미확인**. 오래 걸린다고 성공으로 간주하지 않는다.
+- 재개용 검증 스크립트 **tmp/closeout-round2-verify.mjs**: 인수로 사이트 base를 받으며 frozen118경로와 .next HTML을 비교한다. 예: node tmp/closeout-round2-verify.mjs https://www.holdemmaster.com . 먼저 코드/기준 산출물 확인. tmp는 git ignored이지만 현재 같은 PC에 보존됨.
+- 로컬 서버3113(session32710)는 인계 시 Ctrl+C로 종료했다. 필요할 때만 재기동.
+- sitemap69 URL 날짜만 변경(추가/삭제/비블로그0). FAQ나 본문을 바꾸지 않은 ES2 및 이미 당일 날짜인 zh2 때문에 수정 포스트 수와 lastmod 수는 다르다.
+- **IndexNow round2 미실행**. 성공 후 실제 변경 경로를 docs/search-engine-registration.md 절차로 확정한다. 앞선 round1에 계산기12 및 FR beginners 등 제출된 URL이 있으므로 중복 제외. '103개 추정'을 확정 목록으로 쓰지 않는다.
+- 화면 증거: tmp/screen/closeout-round2 및 closeout-pdf-full. KO390 새 요약/직답, AR390 cash/tournament 표, Q14 실제 webp는 본체 육안 확인. Hant positions 원본 세그먼트 및 DE/AR PDF 카드 전체 육안 확인은 덜 끝났다. PDF selector crop 명령2회 실패는 제품 실패가 아니라 검사 미완료이며 성공으로 보고하지 않는다. 콘솔 Vercel 로컬404/GA요청 실패는 pageerror와 분리했다.
+
+### 3. 미커밋 작업 소유권 — 그대로 보존
+
+**main / Holdem_Project**
+- core showdown tldr9: en/ar/de/es/id/ja/pt/zh/zh-hant.
+- tail fr/it/ro/pl/ru/uk × all-in/showdown =12. 합계 **21포스트 초안**.
+- ID showdown의 action check 7줄/9토큰 범위는 이 초안에 포함(새 tldr1+본문6); Q8-b에서 또 수정하지 않는다.
+- 남은 tail **bn/fa/fil/he/hi/ms/sw/th/tr/vi ×2 =20포스트** 미착수. TR 시도는 사용자 중단 지시 후 실행되지 않았고 우회하지 않았다.
+- 날짜 마감/AST 보존/audit/독립검수/빌드 **모두 미완료**. 전체41편 완료로 읽지 않는다. 소유 브리프 docs/harden-brief/rules-closeout-tail.md의 최신 이관 절 우선.
+
+**../Holdem-calc-ko / harden-calc-ko, HEAD603deb7a**
+- EN holdem-probability / holdem-pot-odds / holdem-outs / holdem-drawing-odds / holdem-equity / holdem-implied-odds / holdem-card-counting 7개 + docs/harden-brief/probability-closeout.md §7.
+- 자체 검증: 새 직답27개47–56words, 표/카드/이미지 줄/FAQ질문 보존; 산술·링크·FAQ 게이트 통과. EN answer-echo의 length27 경고는 게이트 단위 mismatch 보고이며 코드 미수정. cross-table 매칭0은 검사 통과가 아니라 커버리지 없음.
+- 본체가 odds4 diff를 일부 읽었으나 **독립검수 승인 전**. 특히 pot-odds 새 ratio 직답의 '첫 숫자+1의 역수'는 **x:1로 정규화된 비율에만 성립**하므로 문맥/조건을 확인할 후보(아직 확정 수정 지시/반영 없음). equity/implied/card-counting diff 독립검수도 남음.
+- EN만 수정. core7 번역, pot-odds 잘못 연결된 이미지8 교체, ja 지역조건, build/UI 전부 미실행. premium 이미지 자산 자체를 덮어쓰지 말 것(다른 글 정상 사용).
+- 이 워크트리의 §7은 main 브리프에 아직 없으므로 파일 경로를 혼동하지 않는다. git add -A/강제동기화 금지.
+
+**../Holdem-queue / harden-queue, HEADa5def6b7 clean**
+- Q8-a main 머지 완료. Q8-b ID A만 준비했으며 파일쓰기0.
+- 준비범위25파일179소스줄: action check31줄37토큰, 한 판 hand70줄106토큰, board79줄111토큰(positions:167 중첩1). showdown7줄9토큰은 위 main 소유로 제외.
+- SHC176/180의 보유패 tangan, equity42/position-play102/positions32/strategy22·193/tvc303의 혼합 의미, hand-rankings197의 물리적 meja는 보존. inspection cek/papan도 유지. title/seoTitle/desc/tags·카드·숫자·링크목적지·이미지경로 동결. 본문 alt/caption·FAQ질문·링크표시명 일부와 tldr2는 대상에 포함되므로 무조건 메타 불변이라고 주장하지 않는다.
+- 수정 재개 전 docs/harden-brief/queue-Q8-b-id-de-잔여.md 및 docs/keyword-bank/id-posting-reference.md §5/5A. DE는 별도 회차, 미착수.
+
+### 4. 남겨 둔 기존 미결 / 마감 문서 부채
+
+- 다음 사실 묶음(미착수): EN/core SHC77/88 첫 탈락 페어, tournament WSOP 계정2개(LIVE+Caesars), EN paired-board의 22 counterfeit 리버조건, flush-vs-straight 반복 설명. 정확 범위는 en-first 정본에서 고정 후 착수.
+- 표현/연결(미착수): cooler J1 라벨수렴(정의상 참인 명제 자체를 오류라고 부르지 않음), EN hand-rankings short-deck 중복, DE 용어/M존/계산기링크. M존은 연속값 10≤M<20/6≤M<10/1≤M<6; 무조건 정수10–19로 바꾸지 않는다.
+- DE calculator related8은 EN parity라 bubble 링크 때문에9개로 늘리지 않는다. FR 앵커/FAQ접두는 이미 round1 완료; 다시 열지 않는다.
+- KO 블로그 내 Rule4 캡션과 exact 값 동형 잔여, APT90+46 분류는 별도 미결이며 이번 공용계산기/개막전135 작업과 동일시하지 않는다.
+- **TDA 판본 부채**: 2026 v1.1(9/21)에서 번호가 바뀌었다. 이번 core/tail의 새 구번호 인용은 2024판을 명시했지만 기존 전역 무판본 인용을 전부 이행한 것은 아니다. 전체 번호 교체는 새 별도 작업. 현행 출처/대조는 규칙 브리프에 보존.
+- round2 **MB 발신, Q14 진행표/각 로케일 HARDEN 통지, H1 완료 대기열 표기, 확정 결정 정본 승격 필요성 검토, IndexNow, lane sync** 미완료. MB-078까지 완료한 round1과 혼동하지 않는다. 뒤늦게 배포완료로 날짜를 소급하지 않는다.
+- ja/zh/zh-hant 기존 worktree HEAD7c9f25a9. 이관 중 lane:sync 적용 안 함. 다음 세션에서 dirty 보호/원래 소유권 확인 후 프로토콜에 따라 동기화한다.
+- 기존 장기 미결은 원래 대기열을 보존: re-entry zh/zh-hant 용어 판정, /hands noindex 반영 관측, 포커·홀덤 차이 신규 글 후보, solver-client5 SEO 표현, es LATAM, 우편함 회신 대기. 자동 착수 대상 아님. 시한은 update-calendar 정본.
+- tmp/closeout-shared-verify.mjs 및 closeout-round2-verify.mjs는 미완료 배포검증 인계를 위해 보존. 증거JSON/이미지도 보존. 실제 해당 회차 완료 후 스크립트만 정확 경로로 정리한다(폴더 일괄삭제 금지).
+
+### 5. 새 세션 운영 제안
+
+첫 회차는 **086161eb 배포 검증·마감만**. 이후 사용자 선택에 따라 규칙 초안 또는 EN7만 한 묶음씩. 실제 사실오류/번역누락/표현개선/자기회귀를 따로 분류하고, 검사 자리·수정 파일 수를 결함 수로 보고하지 않는다. 새 세션을 핑계로 완료 글 전체를 다시 훑지 않는다. 새 레인/대규모 후속 자동 착수 없이 끝나는 경계를 먼저 정한다.

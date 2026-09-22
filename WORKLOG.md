@@ -1,3 +1,17 @@
+## 2026-09-22 (6) — 잔여 마감 부분 진행 후 사용자 요청으로 새 세션 이관
+
+사용자 “정리해줘 새새션에서 작업하게”에 따라 신규 구현/배포를 중단하고 현재 초안을 보존했다. **전체 잔여 완료 아님**. 사실 오류·번역 누락과 용어/직답/중복 개선을 묶어 보고해 범위가 불분명했던 점을 설명했고, 다음 세션은 한 묶음씩 끝내도록 인계했다.
+
+- round2 코드: H1 c9be34bb→45177757, 중문64b8cf65, PDF/Q8b브리프05e4cfd2, core/ar38편4834860d, ES숫자7275c934, KO EQR/BB649c2f0c, Q14 3cfabdc6+8bfcd35c→603deb7a. sitemap69 086161eb까지 push. 개별 검증/보존 조건은 실행표 및 소유 브리프에 기록.
+- Q14 독립검수3건(중복직답·브리프341/990·Hant cbet sizing 별명) 수정 후 머지. H1의 K9s/Q9s/J9s를 T3에 넣되 top1–4 합계654콤보49.3213% 및 나머지166타입 보존. core/ar 신규 TDA 구번호는2024판 명시, 전역 판본 이행은 별도 미결.
+- build773 통과. 로컬118경로(106포스트+12계산기), FAQ1325/본문106 일치·HTTP200·390px overflow0/pageerror0. 인계 시 local.json 직접 재확인. ru/tr beginners FAQ없음2개는 선재 예외. **라이브 첫 시도 FAQ mismatch로 중단; 성공 증거/live.json 없음. IndexNow round2도 미실행**.
+- 실제 본체 화면 육안확인은 KO390 새요약/직답, AR390 규칙표, Q14 webp까지. Hant/PDF 일부 원본 세그먼트 미완료. PDF selector 캡처 실패2회를 성공으로 세지 않음. 로컬계측404/GA요청 실패와 제품pageerror 분리.
+- Q8-a PT8편21자리 a5def6b7 본체 독립 diff/게이트 통과, 0c74affa 머지. 아직 main 통합build/push/UI 미완료. Q8-b ID는25파일179줄 준비만, 수정0; DE미착수. ID showdown은 main 규칙 초안 소유로 제외.
+- main 미커밋: core showdown tldr9 + fr/it/ro/pl/ru/uk all-in/showdown12 =21편 초안. 목표41편 중20편 미착수. 날짜/AST/audit/독립검수/빌드 전. 중단 뒤 TR패치가 실행되지 않았으며 우회하지 않았다. 에이전트 소유 브리프 최신 이관 절 참조.
+- calc worktree HEAD603deb7a: EN 확률7 + probability-closeout §7 총8파일 미커밋. 자체검사만 완료; 본체 독립검수·번역·이미지·build/UI 전. EN직답27개47–56words, 게이트length27은 문자/단어 단위 불일치 보고. 표교차검사 매칭0을 검산완료로 세지 않음. pot-odds ratio 새직답의 x:1 정규화 전제는 다음 독립검수 후보.
+- round2 우편함/HARDEN 통지·진행표·정본 승격 검토·lane:sync 미완료. 이관 때는 새 영구 규율을 확정하지 않았고 미완료 문서 마감으로 분리했다. main/계산기 초안을 보존하기 위해 자동 동기화/일괄 커밋하지 않음.
+- 이전 핸드오프 전문은 docs/handoff-archive/2026-09-22-before-session-transfer.md로 보존. 짧은 session-handoff와 docs/backlog-closeout-2026-09-22.md 최신 체크포인트로 현재 상태를 분리. 옛 정본 대기열 일괄 삭제 없음. 검증 재개용 tmp스크립트/증거는 미완료 인계 때문에 보존, 소유 로컬서버3113은 종료.
+
 ## 2026-09-22 (5) — CALC-SHARED-2 및 KO/fr 소품 배포
 
 계산기 `4849f3c8` FF 머지, KO/fr 4포스트 `e897bae4`, sitemap/생성기 `679f854a` 배포 완료. 전체 잔여 마감은 계속 진행 중.
