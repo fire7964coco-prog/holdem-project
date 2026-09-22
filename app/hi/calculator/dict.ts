@@ -201,7 +201,7 @@ export const CALC_DICT_HI: CalcDict = {
     summary: [
       { hands: "AA KK QQ JJ 10-10 AKs AKo", action: "हमेशा raise" },
       { hands: "AQs AJs A10s KQs KJs 99 88 AQo", action: "ज़्यादातर positions से raise" },
-      { hands: "AJo KQo K10s Q10s QJs J10s 10-9s 77 A9s", action: "Late position से raise" },
+      { hands: "AJo KQo K10s Q10s QJs J10s 10-9s 77 A9s K9s Q9s J9s", action: "Late position से raise" },
       { hands: "66–22 A8s–A2s KJo QJo A10o–J10o 98s–54s", action: "LP में चुनकर खेलें" },
       { hands: "कमज़ोर offsuit हैंड (J2o, 93o, 72o)", action: "आम तौर पर fold" },
     ],
@@ -232,6 +232,9 @@ export const CALC_DICT_HI: CalcDict = {
       "109s": { desc: "मज़बूत suited connector", action: "First in हों तो LP से raise; position के साथ एक raise पर call" },
       "77": { desc: "Set-mining हैंड, overcards से सावधान", action: "LP में raise; EP में सामने raise हो तो call, और first in हों तो raise या fold — open limp नहीं" },
       A9s: { desc: "Flush की संभावना वाला suited ace", action: "LP में raise" },
+      K9s: { desc: "Suited king; king की pair भी dominated हो सकती है", action: "आपसे पहले सब fold करें तो CO/BTN से open-raise करें; raise का सामना हो तो position, कीमत और effective stacks को ध्यान में रखें" },
+      Q9s: { desc: "Straight की संभावना वाली suited queen; बेहतर kicker वाली queens से सावधान", action: "आपसे पहले सब fold करें तो CO/BTN से open-raise करें; raise का सामना हो तो position, कीमत और effective stacks को ध्यान में रखें" },
+      J9s: { desc: "Straight और flush की संभावना वाला suited one-gapper", action: "आपसे पहले सब fold करें तो CO/BTN से open-raise करें; raise का सामना हो तो position, कीमत और effective stacks को ध्यान में रखें" },
       "66": { desc: "Set-mining; implied odds चाहिए", action: "Raise पर call तब, जब आप दोनों के पास call की रकम का ~15× पीछे बचा हो; LP में raise" },
       // 🪶 ✅ 2026-09-21(회차 Q10) 해소 — EN 55에도 «~15×»가 들어갔다. hi는 그 전부터 66 문형을 승계해 두고 있었다.
       "55": { desc: "Set के बिना कम कीमत", action: "First in हों तो LP से raise; LP में एक raise पर call तब, जब आप दोनों के पास call की रकम का ~15× पीछे बचा हो" },

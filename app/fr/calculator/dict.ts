@@ -200,7 +200,7 @@ export const CALC_DICT_FR: CalcDict = {
     summary: [
       { hands: "AA KK QQ JJ 10-10 AKs AKo", action: "Toujours relancer" },
       { hands: "AQs AJs A10s KQs KJs 99 88 AQo", action: "Relancer depuis la plupart des positions" },
-      { hands: "AJo KQo K10s Q10s QJs J10s 10-9s 77 A9s", action: "Relancer en position tardive" },
+      { hands: "AJo KQo K10s Q10s QJs J10s 10-9s 77 A9s K9s Q9s J9s", action: "Relancer en position tardive" },
       { hands: "66–22 A8s–A2s KJo QJo A10o–J10o 98s–54s", action: "Sélectif en LP" },
       { hands: "mains dépareillées faibles (J2o, 93o, 72o)", action: "Se coucher en général" },
     ],
@@ -234,6 +234,9 @@ export const CALC_DICT_FR: CalcDict = {
       "109s": { desc: "Connecteur assorti solide", action: "Relancer si tu ouvres le coup depuis la LP ; payer une seule relance avec la position" },
       "77": { desc: "Main à chercher le brelan, attention aux overcards", action: "Relancer en LP ; en EP, payer une relance, et relancer ou se coucher si tu ouvres le coup — jamais d'open-limp" },
       A9s: { desc: "As assorti avec potentiel couleur", action: "Relancer en LP" },
+      K9s: { desc: "Roi assorti ; une paire de rois peut être dominée", action: "Ouvre en relançant au CO/BTN si tout le monde s’est couché avant toi ; face à une relance, évalue la position, le prix et les tapis effectifs" },
+      Q9s: { desc: "Dame assortie avec potentiel de quinte ; attention aux dames mieux accompagnées", action: "Ouvre en relançant au CO/BTN si tout le monde s’est couché avant toi ; face à une relance, évalue la position, le prix et les tapis effectifs" },
+      J9s: { desc: "Main assortie à un trou, avec potentiel de quinte et de couleur", action: "Ouvre en relançant au CO/BTN si tout le monde s’est couché avant toi ; face à une relance, évalue la position, le prix et les tapis effectifs" },
       // 🔴 EN 09-17: «누구의» 스택인지 명시(pt 렌즈) — 양쪽 유효 스택이다
       "66": { desc: "Chercher le brelan — il faut les cotes implicites", action: "Ne payer une relance que si toi et le relanceur avez au moins ~15× le call derrière ; relancer en LP" },
       "55": { desc: "Peu de valeur sans brelan", action: "Relancer si tu ouvres le coup depuis la LP ; ne payer une seule relance en LP que si toi et le relanceur avez au moins ~15× le call derrière" },

@@ -538,7 +538,7 @@ export const CALC_DICT_EN: CalcDict = {
     summary: [
       { hands: "AA KK QQ JJ 10-10 AKs AKo", action: "Always raise" },
       { hands: "AQs AJs A10s KQs KJs 99 88 AQo", action: "Raise most positions" },
-      { hands: "AJo KQo K10s Q10s QJs J10s 10-9s 77 A9s", action: "Raise late position" },
+      { hands: "AJo KQo K10s Q10s QJs J10s 10-9s 77 A9s K9s Q9s J9s", action: "Raise late position" },
       { hands: "66–22 A8s–A2s KJo QJo A10o–J10o 98s–54s", action: "Selective in LP" },
       { hands: "weak offsuit hands (J2o, 93o, 72o)", action: "Usually fold" },
     ],
@@ -569,6 +569,9 @@ export const CALC_DICT_EN: CalcDict = {
       "109s": { desc: "Strong suited connector", action: "Raise first in from LP; call a single raise with position" },
       "77": { desc: "Set-mining hand, watch overcards", action: "Raise LP; in EP call a raise, and raise or fold when first in — never open-limp" },
       A9s: { desc: "Suited ace with flush potential", action: "Raise in LP" },
+      K9s: { desc: "Suited king; a paired king can be dominated", action: "Open-raise CO/BTN when folded to you; facing a raise, weigh position, price and effective stacks" },
+      Q9s: { desc: "Suited queen with straight potential; beware stronger queens", action: "Open-raise CO/BTN when folded to you; facing a raise, weigh position, price and effective stacks" },
+      J9s: { desc: "Suited one-gapper with straight and flush potential", action: "Open-raise CO/BTN when folded to you; facing a raise, weigh position, price and effective stacks" },
       "66": { desc: "Set-mining — needs implied odds", action: "Raise first in from LP; call a raise when you and the raiser each have at least ~15× the call behind" },
       "55": { desc: "Little value without a set", action: "Raise first in from LP; call a single raise in LP when you and the raiser each have at least ~15× the call behind" },
       A8s: { desc: "Medium suited ace", action: "Play LP, fold EP" },
