@@ -188,7 +188,7 @@ export const CALC_DICT_DE: CalcDict = {
     summary: [
       { hands: "AA KK QQ JJ 10-10 AKs AKo", action: "Immer raisen" },
       { hands: "AQs AJs A10s KQs KJs 99 88 AQo", action: "Aus den meisten Positionen raisen" },
-      { hands: "AJo KQo K10s Q10s QJs J10s 10-9s 77 A9s", action: "Aus später Position raisen" },
+      { hands: "AJo KQo K10s Q10s QJs J10s 10-9s 77 A9s K9s Q9s J9s", action: "Aus später Position raisen" },
       { hands: "66–22 A8s–A2s KJo QJo A10o–J10o 98s–54s", action: "Selektiv in später Position" },
       { hands: "schwache Offsuit-Hände (J2o, 93o, 72o)", action: "Meist folden" },
     ],
@@ -216,6 +216,9 @@ export const CALC_DICT_DE: CalcDict = {
       "109s": { desc: "Starker Suited Connector", action: "Spät first-in raisen; einen einzelnen Raise in Position callen" },
       "77": { desc: "Set-Mining-Hand, auf Overcards achten", action: "Spät raisen; früh einen Raise callen, first-in raisen oder folden – niemals open-limpen" },
       A9s: { desc: "Suited Ace mit Flush-Potenzial", action: "Spät raisen" },
+      K9s: { desc: "Suited König; ein Königspaar kann dominiert sein", action: "CO/BTN open-raisen, wenn vor dir alle gefoldet haben; gegen einen Raise Position, Preis und effektive Stacks abwägen" },
+      Q9s: { desc: "Suited Dame mit Straßenpotenzial; Vorsicht vor stärkeren Damen-Händen", action: "CO/BTN open-raisen, wenn vor dir alle gefoldet haben; gegen einen Raise Position, Preis und effektive Stacks abwägen" },
+      J9s: { desc: "Suited One-Gapper mit Straßen- und Flushpotenzial", action: "CO/BTN open-raisen, wenn vor dir alle gefoldet haben; gegen einen Raise Position, Preis und effektive Stacks abwägen" },
       "66": { desc: "Set-Mining – braucht Implied Odds", action: "Spät raisen; einen Raise callen, wenn du und der Raiser je ~15× den Call hinter euch habt" },
       "55": { desc: "Ohne Set wenig Wert", action: "Spät first-in raisen; einen einzelnen Raise spät callen, wenn du und der Raiser je ~15× den Call hinter euch habt" },
       A8s: { desc: "Mittleres Suited Ace", action: "Spät spielen, früh folden" },

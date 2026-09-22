@@ -186,7 +186,7 @@ export const CALC_DICT_ZH_HANT: CalcDict = {
     summary: [
       { hands: "AA KK QQ JJ 10-10 AKs AKo", action: "任何位置都加注" },
       { hands: "AQs AJs A10s KQs KJs 99 88 AQo", action: "多數位置加注" },
-      { hands: "AJo KQo K10s Q10s QJs J10s 10-9s 77 A9s", action: "後位加注" },
+      { hands: "AJo KQo K10s Q10s QJs J10s 10-9s 77 A9s K9s Q9s J9s", action: "後位加注" },
       { hands: "66–22 A8s–A2s KJo QJo A10o–J10o 98s–54s", action: "後位挑著打" },
       { hands: "弱的不同花牌（J2o、93o、72o）", action: "通常蓋牌" },
     ],
@@ -216,6 +216,9 @@ export const CALC_DICT_ZH_HANT: CalcDict = {
       "109s": { desc: "強的同花連張", action: "後位搶第一個進池時加注；跟一次加注只在有位置時" },
       "77": { desc: "摸暗三條的牌，提防高張", action: "後位加注；前位跟一次加注，若沒人進池就加注或蓋牌——不要開池平跟" },
       A9s: { desc: "同花 A，有成同花的潛力", action: "後位加注" },
+      K9s: { desc: "同花 K；配成 K 對仍可能被更強的踢腳壓制", action: "前面所有人都蓋牌時，從 CO/BTN 開池加注；面對加注時，衡量位置、跟注成本與有效籌碼" },
+      Q9s: { desc: "同花 Q，有順子潛力；小心踢腳更強的 Q", action: "前面所有人都蓋牌時，從 CO/BTN 開池加注；面對加注時，衡量位置、跟注成本與有效籌碼" },
+      J9s: { desc: "同花隔張，有順子與同花潛力", action: "前面所有人都蓋牌時，從 CO/BTN 開池加注；面對加注時，衡量位置、跟注成本與有效籌碼" },
       "66": { desc: "摸暗三條；需要隱含賠率", action: "後位搶第一個進池時加注；你和加注者身後都還有至少約 15 倍跟注額時跟加注" },
       "55": { desc: "沒中暗三條就沒什麼價值", action: "後位搶第一個進池時加注；你和加注者身後都還有至少約 15 倍跟注額時在後位跟一次加注" },
       A8s: { desc: "中等的同花 A", action: "後位可打，前位蓋牌" },

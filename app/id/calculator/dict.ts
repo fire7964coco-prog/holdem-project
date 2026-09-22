@@ -185,7 +185,7 @@ export const CALC_DICT_ID: CalcDict = {
     summary: [
       { hands: "AA KK QQ JJ 10-10 AKs AKo", action: "Selalu raise" },
       { hands: "AQs AJs A10s KQs KJs 99 88 AQo", action: "Raise dari hampir semua posisi" },
-      { hands: "AJo KQo K10s Q10s QJs J10s 10-9s 77 A9s", action: "Raise dari posisi akhir" },
+      { hands: "AJo KQo K10s Q10s QJs J10s 10-9s 77 A9s K9s Q9s J9s", action: "Raise dari posisi akhir" },
       { hands: "66–22 A8s–A2s KJo QJo A10o–J10o 98s–54s", action: "Selektif di posisi akhir" },
       { hands: "hand offsuit lemah (J2o, 93o, 72o)", action: "Biasanya fold" },
     ],
@@ -217,6 +217,9 @@ export const CALC_DICT_ID: CalcDict = {
       "109s": { desc: "Suited connector yang kuat", action: "Raise first in dari posisi akhir; call raise kalau in position" },
       "77": { desc: "Hand set mining, waspadai overcard", action: "Raise di posisi akhir; di posisi awal call raise, dan kalau first in raise atau fold — jangan open-limp" },
       A9s: { desc: "Suited ace dengan potensi flush", action: "Raise di posisi akhir" },
+      K9s: { desc: "Suited king; pair K bisa didominasi", action: "Open-raise dari CO/BTN jika semua pemain sebelum Anda fold; menghadapi raise, pertimbangkan posisi, harga, dan effective stack" },
+      Q9s: { desc: "Suited queen dengan potensi straight; waspadai Q dengan kicker lebih kuat", action: "Open-raise dari CO/BTN jika semua pemain sebelum Anda fold; menghadapi raise, pertimbangkan posisi, harga, dan effective stack" },
+      J9s: { desc: "Suited one-gapper dengan potensi straight dan flush", action: "Open-raise dari CO/BTN jika semua pemain sebelum Anda fold; menghadapi raise, pertimbangkan posisi, harga, dan effective stack" },
       "66": { desc: "Set mining — butuh implied odds", action: "Raise first in dari posisi akhir; call raise kalau Anda dan pemain yang raise sama-sama punya sisa minimal ~15× jumlah call di belakang" },
       "55": { desc: "Nilainya kecil tanpa set", action: "Raise first in dari posisi akhir; di posisi akhir call satu raise kalau Anda dan pemain yang raise sama-sama punya sisa minimal ~15× jumlah call di belakang" },
       A8s: { desc: "Suited ace menengah", action: "Mainkan di posisi akhir, fold di posisi awal" },

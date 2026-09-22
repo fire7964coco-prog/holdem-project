@@ -187,7 +187,7 @@ export const CALC_DICT_PT: CalcDict = {
     summary: [
       { hands: "AA KK QQ JJ 10-10 AKs AKo", action: "Sempre aumente" },
       { hands: "AQs AJs A10s KQs KJs 99 88 AQo", action: "Aumente da maioria das posições" },
-      { hands: "AJo KQo K10s Q10s QJs J10s 10-9s 77 A9s", action: "Aumente de posição tardia" },
+      { hands: "AJo KQo K10s Q10s QJs J10s 10-9s 77 A9s K9s Q9s J9s", action: "Aumente de posição tardia" },
       { hands: "66–22 A8s–A2s KJo QJo A10o–J10o 98s–54s", action: "Jogue seletivo em posição tardia" },
       { hands: "mãos offsuit fracas (J2o, 93o, 72o)", action: "Geralmente folde" },
     ],
@@ -219,6 +219,9 @@ export const CALC_DICT_PT: CalcDict = {
       "109s": { desc: "Suited connector forte", action: "Se ninguém entrou, aumente de posição tardia; pague um único aumento com posição" },
       "77": { desc: "Mão de set mining, cuidado com overcards", action: "Aumente em posição tardia; em posição inicial pague um aumento e, se ninguém entrou, aumente ou folde — não dê open-limp" },
       A9s: { desc: "Ás suited com potencial de flush", action: "Aumente em posição tardia" },
+      K9s: { desc: "Rei suited; mesmo ao formar um par de reis, você pode estar dominado", action: "Abra com um aumento do CO/BTN se todos antes de você foldaram; diante de um aumento, avalie a posição, o preço e os stacks efetivos" },
+      Q9s: { desc: "Dama suited com potencial de sequência; cuidado com damas de kicker melhor", action: "Abra com um aumento do CO/BTN se todos antes de você foldaram; diante de um aumento, avalie a posição, o preço e os stacks efetivos" },
+      J9s: { desc: "Suited one-gapper com potencial de sequência e flush", action: "Abra com um aumento do CO/BTN se todos antes de você foldaram; diante de um aumento, avalie a posição, o preço e os stacks efetivos" },
       "66": { desc: "Set mining; precisa de odds implícitas", action: "Pague um aumento se você e quem aumentou tiverem, cada um, pelo menos 15× o valor do call atrás; em posição tardia, se ninguém entrou, aumente" },
       "55": { desc: "Pouco valor sem acertar o set", action: "Se ninguém entrou, aumente de posição tardia; pague um único aumento só se os dois tiverem pelo menos 15× o valor do call atrás" },
       A8s: { desc: "Ás suited médio", action: "Jogue em posição tardia, folde em posição inicial" },

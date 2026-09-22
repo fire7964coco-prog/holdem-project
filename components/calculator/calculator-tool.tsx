@@ -162,6 +162,7 @@ const HAND_TABLE: TierEntry[] = [
   [1, "AA"], [1, "KK"], [1, "QQ"], [1, "JJ"], [1, "1010"], [1, "AKs"], [1, "AKo"],
   [2, "AQs"], [2, "AJs"], [2, "A10s"], [2, "KQs"], [2, "KJs"], [2, "99"], [2, "88"], [2, "AQo"],
   [3, "AJo"], [3, "KQo"], [3, "K10s"], [3, "QJs"], [3, "J10s"], [3, "109s"], [3, "77"], [3, "A9s"],
+  [3, "K9s"], [3, "Q9s"], [3, "J9s"],
   [4, "66"], [4, "55"], [4, "A8s"], [4, "A7s"], [4, "A6s"], [4, "A5s"], [4, "A4s"], [4, "A3s"], [4, "A2s"],
   [4, "KJo"], [4, "QJo"], [4, "98s"], [4, "87s"], [4, "76s"],
   // K10o·Q10o·J10o는 Tier 4다 — 폴백이 계산한 K9o·Q9o·J9o가 Tier 4인데 이들이 Tier 5면
@@ -185,8 +186,8 @@ function lookupHand(name: string): TierEntry | null {
   return HAND_TABLE.find(([, h]) => h === name) || null;
 }
 
-// The 122 hands outside HAND_TABLE share one fallback string, but they are not equally
-// weak — K9s and A9o are steal opens while 72o is a fold. Badging all of them Tier 5 put
+// The 119 hands outside HAND_TABLE share one fallback string, but they are not equally
+// weak — K8s and A9o are steal opens while 72o is a fold. Badging all of them Tier 5 put
 // "🚫 Weak" right next to "open from the cutoff/button". Mirrors the branches of
 // dict.starting.unknownAction, so every locale is corrected by this one function.
 // rank is an index into RANKS: 1 = "3", 7 = "9", 12 = "A".

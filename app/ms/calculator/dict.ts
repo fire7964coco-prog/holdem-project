@@ -175,7 +175,7 @@ export const CALC_DICT_MS: CalcDict = {
     summary: [
       { hands: "AA KK QQ JJ 10-10 AKs AKo", action: "Sentiasa raise" },
       { hands: "AQs AJs A10s KQs KJs 99 88 AQo", action: "Raise dari kebanyakan posisi" },
-      { hands: "AJo KQo K10s Q10s QJs J10s 10-9s 77 A9s", action: "Raise dari posisi lewat" },
+      { hands: "AJo KQo K10s Q10s QJs J10s 10-9s 77 A9s K9s Q9s J9s", action: "Raise dari posisi lewat" },
       { hands: "66–22 A8s–A2s KJo QJo A10o–J10o 98s–54s", action: "Pilih-pilih di posisi lewat" },
       { hands: "tangan offsuit yang lemah (J2o, 93o, 72o)", action: "Biasanya fold" },
     ],
@@ -209,6 +209,9 @@ export const CALC_DICT_MS: CalcDict = {
       "109s": { desc: "Suited connector yang kuat", action: "Raise first in dari posisi lewat; call satu raise dengan posisi" },
       "77": { desc: "Tangan untuk cari set, berjaga-jaga dengan overcard", action: "Raise di posisi lewat; di posisi awal call raise, dan jika anda first in, raise atau fold — jangan open-limp" },
       A9s: { desc: "Suited ace dengan potensi flush", action: "Raise di posisi lewat" },
+      K9s: { desc: "Suited king; pasangan K boleh didominasi", action: "Open-raise dari CO/BTN jika semua pemain sebelum anda fold; apabila berdepan raise, timbang posisi, harga dan stack efektif" },
+      Q9s: { desc: "Suited queen dengan potensi straight; berhati-hati dengan Q yang mempunyai kicker lebih kuat", action: "Open-raise dari CO/BTN jika semua pemain sebelum anda fold; apabila berdepan raise, timbang posisi, harga dan stack efektif" },
+      J9s: { desc: "Suited one-gapper dengan potensi straight dan flush", action: "Open-raise dari CO/BTN jika semua pemain sebelum anda fold; apabila berdepan raise, timbang posisi, harga dan stack efektif" },
       "66": { desc: "Cari set; perlukan implied odds", action: "Raise first in dari posisi lewat; call raise apabila anda dan pemain yang raise itu masing-masing ada sekurang-kurangnya ~15× saiz call di belakang" },
       "55": { desc: "Kurang nilai tanpa set", action: "Raise first in dari posisi lewat; call satu raise di posisi lewat apabila anda dan pemain yang raise itu masing-masing ada sekurang-kurangnya ~15× saiz call di belakang" },
       A8s: { desc: "Suited ace sederhana", action: "Main di posisi lewat, fold di posisi awal" },

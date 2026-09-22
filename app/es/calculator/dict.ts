@@ -187,7 +187,7 @@ export const CALC_DICT_ES: CalcDict = {
     summary: [
       { hands: "AA KK QQ JJ 10-10 AKs AKo", action: "Subir siempre" },
       { hands: "AQs AJs A10s KQs KJs 99 88 AQo", action: "Subir desde casi cualquier posición" },
-      { hands: "AJo KQo K10s Q10s QJs J10s 10-9s 77 A9s", action: "Subir en posición tardía" },
+      { hands: "AJo KQo K10s Q10s QJs J10s 10-9s 77 A9s K9s Q9s J9s", action: "Subir en posición tardía" },
       { hands: "66–22 A8s–A2s KJo QJo A10o–J10o 98s–54s", action: "Con selección en posición tardía" },
       { hands: "manos débiles de distinto palo (J2o, 93o, 72o)", action: "Normalmente fold" },
     ],
@@ -219,6 +219,9 @@ export const CALC_DICT_ES: CalcDict = {
       "109s": { desc: "Conector del mismo palo fuerte", action: "Si nadie ha entrado, sube desde tardía; paga una sola subida con posición" },
       "77": { desc: "Mano para buscar set, vigila las sobrecartas", action: "Subir en tardía; en temprana paga una subida y, si nadie ha entrado, sube o foldea — no hagas open-limp" },
       A9s: { desc: "As del mismo palo con potencial de color", action: "Subir en posición tardía" },
+      K9s: { desc: "Rey del mismo palo; al ligar pareja de reyes puedes estar dominado", action: "Abre con una subida desde CO/BTN si todos han foldeado; ante una subida, valora la posición, el precio y los stacks efectivos" },
+      Q9s: { desc: "Dama del mismo palo con potencial de escalera; cuidado con damas mejor acompañadas", action: "Abre con una subida desde CO/BTN si todos han foldeado; ante una subida, valora la posición, el precio y los stacks efectivos" },
+      J9s: { desc: "Mano del mismo palo con un hueco, con potencial de escalera y color", action: "Abre con una subida desde CO/BTN si todos han foldeado; ante una subida, valora la posición, el precio y los stacks efectivos" },
       "66": { desc: "Set mining; necesita odds implícitas", action: "Si nadie ha entrado, sube desde tardía; paga una subida si tú y quien subió tienen cada uno al menos unas 15 veces lo que pagas detrás" },
       "55": { desc: "Poco valor sin ligar set", action: "Si nadie ha entrado, sube desde tardía; paga una sola subida en tardía si tú y quien subió tienen cada uno al menos unas 15 veces lo que pagas detrás" },
       A8s: { desc: "As medio del mismo palo", action: "Jugar en tardía, fold en temprana" },
