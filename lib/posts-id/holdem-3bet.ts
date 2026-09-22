@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "3-bet adalah re-raise pertama sebelum flop — disebut 3-bet karena big blind adalah taruhan pertama, open-raise yang kedua, dan re-raise Anda yang ketiga. Value-3-bet inti yang ketat (QQ+, AK) plus beberapa bluff blocker suited seperti A5s, ukur sekitar 3x dari open in position dan 4x out of position, dan jaga frekuensi 3-bet keseluruhan Anda dekat 6–10%. Saat Andalah yang menghadapi 3-bet, 4-bet tangan premium Anda, call tangan yang bermain baik, dan fold sisanya — fold lebih banyak daripada 'balanced' melawan pemain stake rendah yang tak pernah bluff.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-15",
-  masterUpdated: "2026-09-13",
+  updated: "2026-09-22",
+  masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "16 mnt",
   emoji: "♦️",
@@ -54,7 +54,7 @@ Meng-call open-raise (disebut **flatting**) menjaga Anda tetap di pot, tapi 3-be
 
 1. **3-bet sering langsung memenangkan pot.** Cukup sering, raiser fold dan Anda menyapu pot sebelum flop tanpa showdown. Flat tak pernah melakukan ini.
 2. **Taruhan ini membangun pot besar dengan tangan terbaik Anda.** Saat Anda memegang aces atau kings, flatting membiarkan tiga pemain lain masuk dengan murah. 3-betting mengisolasi raiser dan memasukkan uang selagi Anda favorit besar.
-3. **3-bet merebut inisiatif dan leverage posisi.** Anda menjadi agresor dengan pimpinan taruhan di setiap street — dan melawan opener yang lebar, tekanan itu mencetak uang.
+3. **3-bet merebut inisiatif taruhan.** Anda menjadi agresor dengan pimpinan taruhan di setiap street — dan melawan opener yang lebar, tekanan itu mencetak uang.
 4. **3-bet memangkas equity dan informasi lawan.** Sebuah raise menagih lawan untuk lanjut alih-alih membiarkan mereka melihat flop murah dengan tangan yang mungkin menghancurkan Anda.
 
 Jebakannya: karena 3-bet itu ampuh, melakukannya *salah* itu mahal. Terlalu banyak pemain yang hanya pernah meng-3-bet monster mereka, yang membuat mereka sepenuhnya terbaca. Sisa panduan ini adalah tentang melakukannya dengan benar.
@@ -188,7 +188,7 @@ Seberapa banyak Anda harus lanjut? Baseline teoretisnya adalah **Minimum Defense
 
 </div>
 
-Sekarang kembali ke kursi Anda. MDF mengasumsikan lawan yang *balanced*. Di stake rendah dan game live, pemain sangat **under-bluff** 3-bet mereka — jadi saat pemain pasif tiba-tiba re-raise, percayai mereka dan **fold lebih banyak daripada yang dikatakan MDF.** Anda tak berutang pertahanan "balanced" pada seorang nit.
+Sekarang kembali ke kursi Anda. MDF mengasumsikan lawan yang *balanced*. Di stake rendah dan game live, pemain sangat **under-bluff** 3-bet mereka — jadi saat pemain pasif tiba-tiba re-raise, percayai mereka dan **bertahan lebih sedikit daripada baseline MDF; dengan kata lain, fold lebih banyak daripada 1−MDF.** Anda tak berutang pertahanan "balanced" pada seorang nit.
 
 ---
 
@@ -215,7 +215,7 @@ Sekarang balik: seandainya saya meng-3-bet tangan **ringan** seperti A5s di sana
 | **Tak pernah bluff-3-bet sama sekali** | Meninggalkan uang di meja vs steal lebar; flat Anda jadi terlalu lemah | Seimbangkan value dengan beberapa light 3-bet |
 | **3-betting merged vs nit** | "Value" Anda terdominasi oleh range mereka yang hanya premium | Jadikan polarized atau cukup fold vs nit sejati |
 | **Bluff-3-bet sampah (Q7o)** | Blocker-nya lemah dan equity cadangannya tipis — Anda harus fold ke tiap 4-bet | Pilih hanya tangan blocker/playability |
-| **Flatting terlalu banyak dari small blind** | Realisasi equity buruk OOP; range lemah yang mudah di-cap | 3-bet-atau-fold dari SB; simpan flat yang lebar untuk big blind |
+| **Flatting terlalu banyak dari small blind** | Realisasi equity buruk OOP; range lemah yang mudah di-cap | Saat menghadapi raise, 3-bet-atau-fold dari SB; simpan flat yang lebar untuk big blind |
 
 </div>
 
@@ -297,7 +297,7 @@ A. Saat stack makin pendek — kira-kira 10–25 big blind — banyak tangan ber
 1. **3-bet adalah re-raise pre-flop pertama** — taruhan ketiga dalam urutan, karena blind dihitung sebagai taruhan satu.
 2. **Bangun dua range:** inti value (QQ+, AK) yang Anda ingin di-call, dan bluff blocker suited (A5s dan kawan-kawan) yang dipilih karena blocker dan playability.
 3. **Ukur ~3x in position, ~4x out** — dan jangan pernah kecil out of position.
-4. **Cocokkan bentuk dengan spot:** linear vs open lebar/lemah (dan dari small blind), polarized vs open ketat dan dari big blind.
+4. **Cocokkan bentuk dengan spot:** linear vs open lebar/lemah (dan dari small blind saat menghadapi raise), polarized vs open ketat dan dari big blind.
 5. **Menghadapi 3-bet, sebagian besar tangan fold** — 4-bet premium, call yang bisa dimainkan, dan fold lebih banyak daripada "balanced" melawan lawan yang tak pernah bluff.
 6. **Lalu flop pun datang.** Pot 3-bet sama sekali tidak dimainkan seperti pot single-raised — dengan angka artikel ini (open 3bb, 3-bet 9bb, 100bb deep) pot-nya kira-kira 2,6× lebih besar (19,5bb dibanding 7,5bb yang dibangun sebuah flat heads-up; 3-bet out of position yang lebih besar mendorongnya mendekati 3,5×) dan SPR turun ke sekitar 4,7. Pihak yang meng-3-bet tetap sering bertaruh dengan [seluruh range-nya di flop](/id/blog/3bet-pot-cbet) — karena bentuk range-nya, bukan karena stack-nya dangkal.
 

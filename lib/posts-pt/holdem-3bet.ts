@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Um 3-bet é o primeiro re-raise antes do flop — chamado de 3-bet porque o big blind é a primeira aposta, o open-raise a segunda, e o seu re-raise a terceira. Dê 3-bet por valor com um núcleo apertado (QQ+, AK) mais alguns blefes de bloqueio suited como A5s, dimensione em torno de 3x o open in position e 4x out of position, e mantenha sua frequência geral de 3-bet perto de 6–10%. Quando você é quem enfrenta um 3-bet, 4-bete suas mãos premium, pague as mãos que jogam bem, e folde o resto — foldando mais que o \"balanceado\" contra jogadores de stakes baixos que nunca blefam.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-15",
-  masterUpdated: "2026-09-13",
+  updated: "2026-09-22",
+  masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "♦️",
@@ -54,7 +54,7 @@ Pagar um open-raise (chamado de **flatting**) te mantém no pote, mas um 3-bet f
 
 1. **Ganha o pote na hora, com frequência.** Boa parte das vezes, o raiser folda e você fica com o pote antes do flop sem showdown. Um flat nunca faz isso.
 2. **Constrói um pote grande com suas melhores mãos.** Quando você tem ases ou reis, flatar deixa três outros jogadores entrarem barato. Dar 3-bet isola o raiser e coloca dinheiro enquanto você é um favoritão.
-3. **Toma a iniciativa e a alavancagem de posição.** Você vira o agressor com a liderança da aposta em cada street — e contra um opener aberto, essa pressão imprime dinheiro.
+3. **Toma a iniciativa das apostas.** Você vira o agressor com a liderança da aposta em cada street — e contra um opener aberto, essa pressão imprime dinheiro.
 4. **Nega equity e informação.** Um aumento cobra dos adversários para continuar em vez de deixá-los ver um flop barato com uma mão que pode te quebrar.
 
 O detalhe: como um 3-bet é poderoso, fazê-lo *errado* é caro. Muitos jogadores só dão 3-bet com seus monstros, o que os deixa completamente legíveis. O resto deste guia é sobre fazer certo.
@@ -188,7 +188,7 @@ Quanto você deve continuar? A referência teórica é a **Frequência Mínima d
 
 </div>
 
-Agora volte para a sua cadeira. A MDF assume um adversário *balanceado*. Em stakes baixos e jogos live, os jogadores **sub-blefam** feio seus 3-bets — então quando um jogador passivo de repente dá re-raise, acredite nele e **folde mais do que a MDF manda.** Você não deve a um nit uma defesa "balanceada".
+Agora volte para a sua cadeira. A MDF assume um adversário *balanceado*. Em stakes baixos e jogos live, os jogadores **sub-blefam** feio seus 3-bets — então quando um jogador passivo de repente dá re-raise, acredite nele e **defenda menos do que indica a MDF; em outras palavras, folde mais que 1−MDF.** Você não deve a um nit uma defesa "balanceada".
 
 ---
 
@@ -215,7 +215,7 @@ Agora inverta: se eu tivesse dado 3-bet numa mão **light** tipo A5s ali e o cut
 | **Nunca blefar de 3-bet** | Deixa dinheiro na mesa vs steals abertos; seus flats ficam fracos demais | Balanceie valor com alguns 3-bets light |
 | **3-bet merged vs um nit** | Seu "valor" está dominado pelo range só-premium dele | Vá polarizado ou simplesmente folde vs um nit de verdade |
 | **Blefar de 3-bet com lixo (Q7o)** | Blockers fracos e pouca equity de reserva — você tem que foldar a todo 4-bet | Escolha só mãos de blocker/jogabilidade |
-| **Flatar demais do small blind** | Realização de equity ruim OOP; um range fraco e capado | 3-bet-ou-fold do SB; guarde os flats abertos para o big blind |
+| **Flatar demais do small blind** | Realização de equity ruim OOP; um range fraco e capado | Contra um aumento, 3-bet-ou-fold do SB; guarde os flats abertos para o big blind |
 
 </div>
 
@@ -297,7 +297,7 @@ A. Conforme os stacks ficam curtos — em torno de 10–25 big blinds — muitas
 1. **Um 3-bet é o primeiro re-raise pré-flop** — terceira aposta na sequência, porque o blind conta como aposta um.
 2. **Construa dois ranges:** um núcleo de valor (QQ+, AK) que você quer que paguem, e blefes de bloqueio suited (A5s e companhia) escolhidos por blockers e jogabilidade.
 3. **Dimensione ~3x in position, ~4x out** — e nunca pequeno out of position.
-4. **Case o formato ao spot:** linear vs opens abertos/fracos (e quando você está no small blind), polarizado vs opens apertados e quando você está no big blind.
+4. **Case o formato ao spot:** linear vs opens abertos/fracos (e quando você está no small blind diante de um aumento), polarizado vs opens apertados e quando você está no big blind.
 5. **Enfrentando um 3-bet, a maioria das mãos folda** — 4-bete as premium, pague as jogáveis, e folde mais que o "balanceado" contra adversários que nunca blefam.
 6. **E então vem o flop.** Um pote de 3-bet não se joga nada como um de um aumento só — com os números deste artigo (open de 3bb, 3-bet de 9bb, 100bb de profundidade) o pote fica cerca de 2,6× maior (19,5bb contra os 7,5bb que um flat heads-up construiria; um 3-bet maior fora de posição empurra isso para perto de 3,5×) e o SPR cai para cerca de 4,7. Mesmo assim, quem deu o 3-bet frequentemente aposta o [range inteiro no flop](/pt/blog/3bet-pot-cbet) — por causa do formato do range, não porque o stack está curto.
 
