@@ -223,4 +223,9 @@ EN 의미 정본은 다음 조건을 짧게 보존한다: non-all-in tournament�
 
 ### 8-4. 발행 상태
 
-브리프·WORKLOG·session-handoff와 생성된 sitemap을 함께 로컬 커밋한다. push·배포·IndexNow·라이브 URL 검증은 수행하지 않는다. 앞선 `0c74affa`도 미배포 상태이므로 사용자의 별도 명시적 확인 전에는 원격으로 올리지 않는다.
+사용자의 명시적 배포 승인 뒤 미배포 5커밋(`086161eb..1c22b5c6`, 앞선 PT `0c74affa` 포함)을 `origin/main`에 push했다. Vercel 프로덕션 배포 `dpl_8ErKhGhM2T4xJPVF9mJ3eGVyihoG`가 Ready이고 `www.holdemmaster.com` 별칭에 연결된 것을 확인했다.
+
+- 규칙 대상 41편은 라이브에서 HTTP200·canonical·dateModified 2026-09-22·FAQ 293/293·390px overflow0·마크업 누출0·히어로 존재를 확인했다. core9는 현재 tldr 축어, tail32는 TDA 2024/B149 및 showdown Rule117·all-in Rule47 문면을 대조했다.
+- MS/TH/TR/VI 모바일 상단을 직접 열어 제목·히어로·태그·Quick Answer 배치를 확인했다. VI 첫 캡처에서 히어로가 안 보인 것은 디코딩 전 캡처였고, 재검사에서 naturalWidth389·표시 358×201로 정상임을 확인했다.
+- 함께 배포된 PT 9편도 새 문면·HTTP200·canonical·dateModified·FAQ 97/97·390px overflow0으로 9/9 통과했다.
+- IndexNow는 당일 다른 URL의 중복 제출을 피하려 `--since`를 쓰지 않았다. 이번 push의 변경 포스트만 계산한 고유 49 URL을 한 번 제출해 HTTP200을 받았다. 이는 색인 완료가 아니다. GSC 수동 요청은 기존 사용자 보류 결정을 유지했다.

@@ -1,3 +1,12 @@
+## 2026-09-22 (9) — all-in/showdown 41편 + PT 9편 배포·라이브 마감
+
+사용자 배포 승인 뒤 미배포 5커밋(`086161eb..1c22b5c6`)을 `origin/main`에 push했다. 앞 회차가 멈춘 이유는 핸드오프의 「별도 명시적 확인 뒤에만 push」 경계였으며, 승인 전에는 배포하지 않았다.
+
+- **Vercel:** 프로덕션 배포 `dpl_8ErKhGhM2T4xJPVF9mJ3eGVyihoG` Ready, `www.holdemmaster.com` 별칭 연결 확인. 새 MS 규칙 문면·PT `leak` 문면·사이트맵 2026-09-22가 라이브에 반영됐다.
+- **규칙 41편 라이브:** 전부 HTTP200·canonical·dateModified 2026-09-22·FAQ **293/293**·모바일 390px overflow0·마크업 누출0·히어로 존재. core9는 현재 tldr 축어, tail32는 TDA 2024/B149 및 showdown Rule117·all-in Rule47 문면을 확인했다. MS/TH/TR/VI 모바일 화면을 열어 봤고, VI 첫 캡처의 히어로 미표시는 디코딩 전 타이밍으로 재검사 시 358×201 정상 표시였다.
+- **동반 PT 9편 라이브:** 새 문면·HTTP200·canonical·dateModified·FAQ **97/97**·390px overflow0, **9/9 통과**.
+- **IndexNow:** `--since`는 당일 기접수 URL까지 145개를 재전송하므로 쓰지 않았다. 이번 push의 변경 포스트만 `086161eb..1c22b5c6`에서 계산해 규칙41+PT9 중 중복 PT showdown1을 뺀 **고유49 URL**을 한 번 제출, HTTP200 접수. 접수는 색인 완료가 아니며 GSC 수동 요청은 기존 사용자 보류 결정을 유지했다.
+
 ## 2026-09-22 (8) — 41편 all-in/showdown 규칙 전파 마감 (로컬 커밋·미배포)
 
 사용자 지시로 남아 있던 th/tr/vi showdown을 완성하고, core showdown tldr 9편 + tail all-in/showdown 32편 = **41편** 규칙 전파 묶음을 통합 마감했다. push·배포·IndexNow·라이브 검증은 하지 않았다.
