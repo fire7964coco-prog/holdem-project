@@ -226,9 +226,8 @@ export function renderMarkdown(content: string, locale?: string): string {
         `<span class="flex items-start gap-4">` +
         `<span class="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl border border-primary/40 bg-primary/20 text-2xl shadow-inner">📄</span>` +
         `<span>` +
-        `<span class="mb-1 block text-[11px] font-bold uppercase tracking-[0.18em] text-primary/90">PDF Cheat Sheet</span>` +
+        `<span class="mb-1 block text-[11px] font-bold uppercase tracking-[0.18em] text-primary/90">PDF</span>` +
         `<span class="block text-lg font-black leading-snug text-foreground">${label}</span>` +
-        `<span class="mt-1 block text-sm leading-relaxed text-muted-foreground">Printable PDF · quick table reference</span>` +
         `</span>` +
         `</span>` +
         `<span class="inline-flex shrink-0 items-center justify-center rounded-full bg-primary px-5 py-3 text-sm font-black text-black transition-transform group-hover:scale-105">PDF ↓</span>` +
