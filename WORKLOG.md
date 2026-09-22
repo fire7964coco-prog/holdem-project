@@ -1,3 +1,13 @@
+## 2026-09-22 (5) — CALC-SHARED-2 및 KO/fr 소품 배포
+
+계산기 `4849f3c8` FF 머지, KO/fr 4포스트 `e897bae4`, sitemap/생성기 `679f854a` 배포 완료. 전체 잔여 마감은 계속 진행 중.
+
+- 공용8건+H-2를 12개 계산기에 반영. 본체 코드/문면 독립검토·20아웃츠60칸/ICM4케이스 재계산, 레인156검사·parity12/selftest59·통합build773 통과. 별도 전체 tsc는 기존 계산기 밖649오류로 실패(계산기 변경 파일0); 전역 타입검사 통과로 보고하지 않음.
+- KO odds는 완성률/승률 라벨6자리와 요약 사본 정합·표의 단순모델 조건, APPT는 어순회피안 반려 후 서두 중복 날짜/장소를 제거해 echo0. fr FAQ 중복 R.7개 제거·계산기 앵커1개 정정, 독립교열 신규0. 대상 audit·FAQ·stamp 통과(미검사 커버리지 별도 확인).
+- 로컬/라이브16URL HTTP200, page.content 기준 포스트본문4/4·FAQ237/237 빌드와 일치, 모바일overflow/pageerror0. 4포스트390/1440 화면 캡처, 변경 문면/줄바꿈 확인. 로컬Vercel계측404·GA요청실패는 별도환경문제로 분리. 증거 tmp/closeout-shared 및 tmp/screen/closeout-posts.
+- sitemap 신규일자15URL와 /ranking 날짜교정1. ranking은 lib/posts.ts를 읽지 않아 가짜의존 제거, 실제 app/ranking 커밋일09-20으로 환원. 페이지내용 변경없으므로 IndexNow 제외. 당일기접수 KO/calculator 제외한15URL HTTP200 접수.
+- MB-078·settled §3-S·실행표 반영. Q14 `3cfabdc6` 머지전 독립검수, H1 `c9be34bb` 머지 대기.
+
 ## 2026-09-22 (4) — 잔여 마감 승인·실사 및 우편함 형식 복구
 
 사용자 「추천순서대로 해줘」로 기존 Q14와 CALC-SHARED-2 병렬, 이후 Q8-a/b·H-1·기존 사실/표현 잔여의 순차 마감 승인. 실행판 = `docs/backlog-closeout-2026-09-22.md`. 아직 실행 중이며 전체 완료·배포를 뜻하지 않는다.
