@@ -1,3 +1,13 @@
+## 2026-09-22 (2) — queue Q13-b 머지·배포 마감
+
+사용자 지시로 `harden-queue`의 `b4a4b6f3`를 main에 fast-forward 머지. glossary/rake/straddle × 8로케일 = 24포스트, 진행 파일·브리프 포함26파일. sitemap 커밋 `487f9e99` push. 상세 변경·근거 = `docs/harden-queue-진행.md` §1-Q13-b/§3, Q13 브리프.
+
+- **헤드 검증**: 독립 Codex 검수2(규칙·산수 / 24파일 전파·이웃 문장) 신규 차단0. 24파일 AST 대조: slug/title/seoTitle/image/imageAlt·카드토큰 불변, desc 규격 통과, FAQ246개 유지. 21번역 사전 EN동기 확인, updated24/masterUpdated21=09-22 정직. 룰/산수: 체크 미납액 0·SB/HU, fee100+9=109, $3→$7=7/3배, $200 스택100→50BB, $3/$60=5%·$3/$30=10% 검산. 완전한 7카드 시나리오는 이 세 편에 없음(게이트0을 §13 검산으로 오독하지 않음).
+- **게이트**: audit 대상24=0err/0warn; stamp0·structure핵심0(꼬리40 선재)·hygiene0·FAQ스키마575/575. build773(70blog+577intl), hreflang0·directive0·meta-lang0, calc parity12/12. sitemap lastmod변경24=편집24, 누락/가짜bump0.
+- **라이브**: Playwright `page.content()` 24 URL HTTP200. article 전체 텍스트(접힌 내용 포함)와 로컬 빌드 일치24/24, JSON-LD FAQ246개 정확 일치. EN glossary 구문면 소멸/새문면 존재 별도 확인. 검증 도구 초판의 FAQ0은 @graph 미탐지였고 사이트 결함 아님; DOM 텍스트로 배포 이미지 속성 차이도 분리. **IndexNow 정확24 URL HTTP200 접수**(색인 완료 뜻 아님).
+- **후속 처리**: MB-076 발신, settled §3-N 보강·§3-R 승격, intentional-diffs 기존 rake 비율/straddle BB표기2행 등재. ja/zh/zh-hant HARDEN에 각3파일 §6-0 통지. Q13-b §5 8요청 처리. zh glossary2건·137자 기존 미결 유지; 헤드가 찾은 zh-hant rake :40 전원 이익 문면도 원본 유래라 §2에 이관. ar drift6·KO APPT echo1·es number-format2·MB-054/067 기존 흠은 신규와 분리.
+- **진행권**: Q13-a/b 완료, **다음 Q14는 사용자가 직접 지시**. 별도 `Holdem-calc-ko`/`harden-calc-ko`의 CALC-KO-1(SPR/outs/ICM)은 독립 레인, 본체에서 수정·머지하지 않음. 회차 마지막 lane:sync 대상은 이 레인 포함5개.
+
 ## 2026-09-22 (1) — 🧰 queue 회차 **Q13-a** 머지 (MA-147 ②③ 1/2 · cooler·bad-beat·fish)
 
 머지 `471b03c5` · 브랜치 `harden-queue` 1커밋(`9850035c`) · **8로케일 24파일**(en de es id ja pt zh zh-hant).
