@@ -277,7 +277,9 @@ const ROUTE_SOURCES = {
   //    이 파일 머리 주석이 경고하는 «내용이 안 바뀌었는데 바뀌었다고 말하는» 바로 그 경우다.
   //    실제로 09-20 og 카드 회차에서 인덱스에 socialMeta를 붙이자 11개가 같이 떴다.
   "/pub": ["app/pub/page.tsx", "app/pub/pub-index-client.tsx", "lib/pubs.ts"],
-  "/ranking": ["app/ranking", "lib/posts.ts"],
+  // Ranking renders its own data and fixed guide links, not the post catalogue.
+  // A LEGACY post correction must not claim that this page was updated.
+  "/ranking": ["app/ranking"],
 };
 function sourcesFor(path) {
   if (ROUTE_SOURCES[path]) return ROUTE_SOURCES[path];
