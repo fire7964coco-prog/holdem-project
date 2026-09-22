@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Fish adalah slang poker untuk pemain lemah yang kalah, sumber uang yang dikeruk pemain kuat (shark). Fish memainkan terlalu banyak tangan, terlalu banyak call, dan tak bisa fold — dan kalimat terkenal itu memperingatkan: kalau Anda tak bisa mengenali fish di meja Anda, Anda-lah fish-nya. Ini read paling penting dalam permainan: temukan fish, atau jadilah fish.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-10",
-  masterUpdated: "2026-08-30",
+  updated: "2026-09-21",
+  masterUpdated: "2026-09-21",
   keepImagesInBody: true,
   readTime: "10 mnt",
   emoji: "🐟",
@@ -19,7 +19,7 @@ export const POST: Post = {
   content: `
 Pertama kali seseorang di meja kasino diam-diam menyebut saya fish, saya bahkan tak sadar sedang dihina. Saya kira saya bermain baik-baik saja — saya melihat banyak flop, call untuk "menjaga mereka tetap jujur," mengejar setiap draw karena ==siapa yang tahu==. Enam bulan dan banyak buy-in yang hilang kemudian, saya paham: saya *memang* fish-nya. Semua orang di meja sudah tahu itu sebelum saya duduk.
 
-Sebuah **fish** adalah slang poker untuk pemain lemah yang kalah — orang yang chip-nya diam-diam dikeruk pemain yang lebih kuat. Ini label paling penting dalam permainan, karena setiap sesi yang profit dimulai dengan pertanyaan yang sama: *siapa fish-nya di sini?* Berikut ini persisnya apa arti kata itu, ==g:cara mengenali fish== dalam orbit pertama, seluruh kebun binatang slang tipe pemain (shark, whale, nit, donkey), kebenaran di balik kalimat terkenal "spot the sucker" — dan pemeriksaan diri yang jujur agar fish itu tak pernah Anda. Ini kata pertama yang dipelajari kebanyakan pemain dari [istilah poker](/id/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp") yang lebih luas, dan inilah semua yang ada di baliknya.
+Sebuah **fish** adalah slang poker untuk pemain lemah yang kalah — orang yang chip-nya diam-diam dikeruk pemain yang lebih kuat. Ini label paling penting dalam permainan, karena setiap sesi yang profit dimulai dengan pertanyaan yang sama: *siapa fish-nya di sini?* Berikut ini persisnya apa arti kata itu, ==g:cara mengenali fish== dalam satu atau dua orbit, seluruh kebun binatang slang tipe pemain (shark, whale, nit, donkey), kebenaran di balik kalimat terkenal "spot the sucker" — dan pemeriksaan diri yang jujur agar fish itu tak pernah Anda. Ini kata pertama yang dipelajari kebanyakan pemain dari [istilah poker](/id/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp") yang lebih luas, dan inilah semua yang ada di baliknya.
 
 ---
 

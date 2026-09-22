@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un cooler es una mano en la que pierdes un bote grande con una mano muy fuerte que jamás podrías foldear correctamente — como una pareja de reyes que choca con ases, o un trío que pierde ante un trío mayor. A diferencia de un bad beat, ibas por detrás desde el principio y ninguna carta afortunada te 'cazó': jugaste bien y aun así perdiste. Es el desastre más honesto del póker.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-21",
+  masterUpdated: "2026-09-21",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🧊",
@@ -75,18 +75,18 @@ Aquí están los mismos jugadores enseñando ambos casos, para que te encaje. **
 
 ![Dos jugadores empujan sus stacks completos al centro del tapete verde, la colisión en la que ninguna mano puede foldear](/images/holdem-cooler-stacks-collide.webp "Los coolers pasan cuando ambos jugadores tienen manos demasiado fuertes para foldear — el dinero entra y el segundo mejor monstruo paga")
 
-Los coolers vienen en una familia reconocible. En todos ellos, *ambas* manos son lo bastante fuertes como para que foldear fuese una jugada perdedora a largo plazo — que es justo por lo que son inevitables:
+Los coolers vienen en una familia reconocible. En casi todos ellos, *ambas* manos son lo bastante fuertes como para que foldear fuese una jugada perdedora a largo plazo — que es justo por lo que son inevitables. La escalera pide un matiz, y la tabla lo da:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Cooler | El choque | Por qué no puedes foldear |
 |:---|:---|:---|
-| **Reyes vs ases** | KK all-in preflop contra AA | KK es un underdog de ~4.5:1 ante AA, pero jamás vas a foldear reyes preflop |
+| **Reyes vs ases** | KK all-in preflop contra AA | KK es un underdog de ~4.5:1 ante AA, y casi nunca vas a foldear reyes preflop |
 | **Set over set (trío contra trío)** | Tu trío ligado en el flop vs un trío mayor ligado en el flop | Un trío ligado en el flop casi nunca se foldea; el trío menor va casi muerto |
 | **Color sobre color** | Tu color a rey vs un color a as | Un color a rey parece enorme — rara vez le pones el color al as clavado |
 | **Full sobre full** | Tu full vs un full mayor | Un full es un monstruo; tirarlo es casi imposible |
 | **Full vs póker** | Tu full de ases vs cuatro iguales | El cooler definitivo — un full que pierde ante un póker |
-| **Escalera sobre escalera** | Tu escalera vs una escalera mayor | Una escalera hecha en un board conectado es muy difícil de soltar |
+| **Escalera sobre escalera** | Tu escalera vs una escalera mayor | Una escalera cerca de los nuts es demasiado fuerte para soltarla — pero el extremo bajo (el "idiot end") suele ser un fold, no un cooler |
 
 </div>
 
@@ -100,7 +100,7 @@ Estas tres maneras de hablar del mismo desastre confunden a muchos jugadores, as
 
 - **Setup** — un sinónimo informal de cooler. Recalca la sensación de *estar atrapado* — como si la baraja estuviera "preparada" para que perdieras todo tu stack con una mano de la que no podías escapar. Si alguien dice "eso fue un setup total", se refiere a un cooler.
 - **Comerse un cooler (verbo)** — estar en el lado perdedor de un cooler. "Me comí un cooler" significa que perdiste un bote grande con una mano demasiado fuerte para foldear. Por definición, decirlo correctamente es admitir que *hiciste la jugada correcta* y aun así perdiste.
-- **Cold deck** — un término clásico emparentado, para una racha de manos perdedoras inevitables; históricamente también aludía a una jugada de tramposo (colar una baraja "fría" ya preparada), pero de forma coloquial solo significa que las cartas te vienen brutalmente en contra.
+- **Cold deck** — un término clásico emparentado. En el diccionario nombra **esa única mano perdedora inevitable** en sí; en la mesa la gente lo usa sobre todo para una racha en la que las cartas te vienen brutalmente en contra. Históricamente también aludía a una jugada de tramposo: colar una baraja "fría" ya preparada.
 
 Un mito importante que hay que matar: **un cooler no tiene por qué ser all-in.** El rasgo definitorio es el choque de dos manos demasiado fuertes para foldear, no el tamaño de los stacks. Puedes comerte un cooler por un bote grande sin llegar a meter tu última ficha — va de las manos, no del all-in.
 
@@ -156,7 +156,7 @@ A. Porque te "enfría" (de *to cool*, enfriar): tu mano estaba caliente y de gol
 
 **Q. ¿Cuál es la diferencia entre un cooler y un bad beat?**
 
-A. El momento y los suckouts. En un cooler ibas **por detrás** todo el rato y perdiste ante una mano mayor — ninguna carta afortunada cambió nada, y ambos teníais un monstruo. En un [bad beat](/es/blog/holdem-bad-beat) ibas **por delante** (normalmente favorito claro, ~75% o más) y tu rival cazó una carta improbable en el turn o el river para adelantarte. Cooler: "nunca tuve opción". Bad beat: "esa la tenía que haber ganado".
+A. El momento y los suckouts. En un cooler ibas **por detrás** todo el rato y perdiste ante una mano mayor — ninguna carta afortunada cambió nada, y ambos teníais un monstruo. En un [bad beat](/es/blog/holdem-bad-beat) ibas **por delante** (normalmente favorito claro) y tu rival cazó una carta improbable en el turn o el river para adelantarte. Cooler: "nunca tuve opción". Bad beat: "esa la tenía que haber ganado".
 
 **Q. ¿Un cooler es mala suerte o mala jugada?**
 
@@ -168,7 +168,7 @@ A. Sí — "setup" es un sinónimo informal de cooler. Recalca la sensación de 
 
 **Q. ¿Una pareja de reyes contra una de ases es un cooler?**
 
-A. Sí — es el cooler más clásico de todos. Los reyes son más o menos un underdog de 4.5 a 1 ante los ases preflop, pero ningún jugador razonable foldea una pareja de reyes antes del flop. Así que el dinero entra, vas por detrás todo el rato, y pierdes una mano de la que nunca podrías haberte escapado.
+A. Sí — es el cooler más clásico de todos. Los reyes son más o menos un underdog de 4.5 a 1 ante los ases preflop, y casi ningún jugador razonable foldea una pareja de reyes antes del flop — solo una lectura que grita ases lo hace foldeable, y preflop esa lectura casi nunca aparece. Así que el dinero entra, vas por detrás todo el rato, y pierdes una mano de la que era casi imposible escapar.
 
 **Q. ¿Con qué frecuencia ocurre un set over set (trío contra trío)?**
 

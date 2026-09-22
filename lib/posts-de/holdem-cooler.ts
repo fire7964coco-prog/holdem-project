@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ein Cooler ist eine Hand, bei der du einen großen Pot mit einer sehr starken Holding verlierst, die du niemals korrekt folden könntest – wie Pocket Kings, die auf Asse treffen, oder ein Set, das gegen ein größeres Set verliert. Anders als beim Bad Beat lagst du die ganze Zeit hinten und keine Glückskarte hat dich „ausgesaugt“: Du hast alles richtig gemacht und trotzdem verloren. Es ist die ehrlichste Art von Poker-Katastrophe.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-21",
+  masterUpdated: "2026-09-21",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "🧊",
@@ -80,7 +80,7 @@ Hier zeigen dieselben Spieler beides, damit es klick macht. **Bad Beat:** Du hä
 ![Zwei Spieler schieben ihre kompletten Stacks in die Mitte des grünen Filzes – die Kollision, bei der keine Hand folden kann](/images/holdem-cooler-stacks-collide.webp "Cooler passieren, wenn beide Spieler Hände halten, die viel zu stark zum Folden sind – das Geld geht rein und das zweitbeste Monster bezahlt")
 
 > **Kurze Antwort**
-> Sechs Zusammenstöße machen fast alle Cooler aus: **Kings gegen Asse**, **Set über Set**, **Flush über Flush**, **Full House über Full House**, **Full House gegen Vierling** und **Straße über Straße**. Das Muster ist immer dasselbe – beide Hände sind so stark, dass Folden auf lange Sicht Geld verlieren würde. Genau deshalb sind sie unvermeidbar und nicht dein Fehler.
+> Sechs Zusammenstöße machen fast alle Cooler aus: **Kings gegen Asse**, **Set über Set**, **Flush über Flush**, **Full House über Full House**, **Full House gegen Vierling** und **Straße über Straße**. Das Muster ist fast immer dasselbe – beide Hände sind so stark, dass Folden auf lange Sicht Geld verlieren würde. Genau deshalb sind sie unvermeidbar und nicht dein Fehler. Die Ausnahme ist die Straße: Das untere Ende ist meist ein Leak, kein Cooler.
 
 Cooler kommen in einer erkennbaren Familie:
 
@@ -88,12 +88,12 @@ Cooler kommen in einer erkennbaren Familie:
 
 | Cooler | Der Zusammenstoß | Warum du nicht folden kannst |
 |:---|:---|:---|
-| **Kings vs. Asse** | KK all-in preflop gegen AA | KK ist ein ~4,5:1-Underdog gegen AA, aber du foldest Kings niemals preflop |
+| **Kings vs. Asse** | KK all-in preflop gegen AA | KK ist ein ~4,5:1-Underdog gegen AA, und du foldest Kings so gut wie nie preflop |
 | **Set over set** | Dein geflopptes Set vs. ein größeres geflopptes Set | Ein geflopptes Set wird fast nie gefoldet; das niedrigere Set ist so gut wie drawing dead |
 | **Flush over flush** | Dein K‑hoher Flush vs. ein A‑hoher Flush | Ein King-High-Flush sieht riesig aus – du setzt sie selten auf genau den Nut Flush |
 | **Full House over full house** | Dein Full House vs. ein größeres Full House | Ein Full House ist ein Monster; eines wegzulegen ist nahezu unmöglich |
 | **Full House vs. Vierling** | Dein „Asse voll“ vs. einen Vierling | Der ultimative Cooler – ein Full House, das gegen einen Vierling verliert |
-| **Straße über Straße** | Deine Straße vs. eine höhere Straße | Nur die **obere** Straße ist ein echter Cooler. Mit dem unteren Ende („idiot end“) abzustacken ist meist ein Leak, kein Cooler |
+| **Straße über Straße** | Deine Straße vs. eine höhere Straße | Eine Straße nahe den Nuts ist zu stark zum Folden – mit dem unteren Ende („idiot end“) abzustacken ist dagegen meist ein Leak, kein Cooler |
 
 </div>
 
@@ -183,7 +183,7 @@ A. Im Wörterbuch meint der ältere Begriff die einzelne unvermeidbare Verlustha
 
 **Q. Ist Pocket Kings vs. Pocket Asse ein Cooler?**
 
-A. Ja – es ist der klassischste Cooler überhaupt. Kings sind preflop grob ein 4,5:1-Underdog gegen Asse, aber kein vernünftiger Spieler foldet Pocket Kings vor dem Flop. Also geht das Geld rein, du liegst die ganze Zeit hinten und verlierst eine Hand, von der du niemals hättest wegkommen können.
+A. Ja – es ist der klassischste Cooler überhaupt. Kings sind preflop grob ein 4,5:1-Underdog gegen Asse, und so gut wie kein vernünftiger Spieler foldet Pocket Kings vor dem Flop – nur ein Read, der förmlich nach Assen schreit, macht den Fold vertretbar – und preflop kommt dieser Read so gut wie nie. Also geht das Geld rein, du liegst die ganze Zeit hinten und verlierst eine Hand, von der du kaum hättest wegkommen können.
 
 **Q. Was bedeutet es, „gecoolert“ zu werden?**
 

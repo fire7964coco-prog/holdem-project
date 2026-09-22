@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A cooler is a hand where you lose a big pot with a very strong holding you could never correctly fold — like pocket kings running into aces, or a set losing to a bigger set. Unlike a bad beat, you were behind the whole way and no lucky card 'sucked out' on you: you played it right and still lost. It's poker's most honest kind of disaster.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-11",
+  updated: "2026-09-21",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🧊",
@@ -74,18 +74,18 @@ Here's the same players showing both, so it clicks. **Bad beat:** you hold A♠A
 
 ![Two players pushing their full chip stacks into the middle of the green felt, the collision where neither hand can fold](/images/holdem-cooler-stacks-collide.webp "Coolers happen when both players hold hands far too strong to fold — the money goes in and the second-best monster pays off")
 
-Coolers come in a recognizable family. In every one, *both* hands are strong enough that folding would be a losing play over the long run — which is exactly why they're unavoidable:
+Coolers come in a recognizable family. In almost every one, *both* hands are strong enough that folding would be a losing play over the long run — which is exactly why they're unavoidable. The straight row needs one caveat, and the table gives it:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Cooler | The clash | Why you can't fold |
 |:---|:---|:---|
-| **Kings vs Aces** | KK all-in preflop against AA | KK is a ~4.5:1 dog to AA, but you're never folding kings preflop |
+| **Kings vs Aces** | KK all-in preflop against AA | KK is a ~4.5:1 dog to AA, and you're almost never folding kings preflop |
 | **Set over set** | Your flopped set vs a bigger flopped set | A flopped set is almost never folded; the lower set is drawing nearly dead |
 | **Flush over flush** | Your K‑high flush vs an A‑high flush | A king-high flush looks enormous — you rarely put them on the exact nut flush |
 | **Full house over full house** | Your full house vs a bigger full house | A boat is a monster; laying one down is nearly impossible |
 | **Boat vs quads** | Your aces full vs four of a kind | The ultimate cooler — a full house losing to quads |
-| **Straight over straight** | Your straight vs a higher straight | A made straight on a connected board is very hard to release |
+| **Straight over straight** | Your straight vs a higher straight | A straight near the nuts is too strong to release — but the bottom end (the "idiot end") is usually a fold, not a cooler |
 
 </div>
 
@@ -99,7 +99,7 @@ These three ways of talking about the same disaster trip up a lot of players, so
 
 - **Setup** — an informal synonym for a cooler. It stresses the *trapped* feeling — as if the deck were "set up" so you'd lose your whole stack with a hand you couldn't get away from. If someone says "that was a total setup," they mean a cooler.
 - **Coolered (verb)** — to be on the losing end of a cooler. "I got coolered" means you lost a big pot with a hand too strong to fold. By definition, saying it correctly is an admission that you *made the right play* and still lost.
-- **Cold deck** — a related old-school term for a run of unavoidable losing hands; historically it also referred to a cheating move (swapping in a pre-arranged "cold" deck), but casually it just means the cards are running brutally against you.
+- **Cold deck** — a related old-school term. In the dictionary it names the single unavoidable losing hand itself; at the table people mostly use it for a stretch where the cards run brutally against you. Historically it also referred to a cheating move: swapping in a pre-arranged "cold" deck.
 
 One important myth to kill: **a cooler does not have to be all-in.** The defining feature is the collision of two too-strong-to-fold hands, not the size of the stacks. You can get coolered for a big pot without ever putting your last chip in — it's about the hands, not the all-in.
 
@@ -163,7 +163,7 @@ A. Yes — "setup" is an informal synonym for a cooler. It emphasizes the feelin
 
 **Q. Is pocket kings vs pocket aces a cooler?**
 
-A. Yes — it's the most classic cooler of all. Kings are roughly a 4.5-to-1 underdog to aces preflop, but no reasonable player folds pocket kings before the flop. So the money goes in, you're behind the whole way, and you lose a hand you could never have gotten away from.
+A. Yes — it's the most classic cooler of all. Kings are roughly a 4.5-to-1 underdog to aces preflop, and almost no reasonable player folds pocket kings before the flop — only a read that screams aces makes it foldable, and preflop that read almost never arrives. So the money goes in, you're behind the whole way, and you lose a hand you were almost never getting away from.
 
 **Q. How often does set over set happen?**
 

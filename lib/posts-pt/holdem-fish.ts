@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "\"Fish\" é a gíria do poker para um jogador fraco e perdedor, aquele com quem os jogadores mais fortes (\"sharks\") faturam. Fish jogam mãos demais, pagam demais e não conseguem dar fold — e a frase famosa avisa: se você não consegue identificar o fish na sua mesa, o fish é você. É a leitura mais importante do jogo: ache o fish, ou vire um.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-10",
-  masterUpdated: "2026-08-30",
+  updated: "2026-09-21",
+  masterUpdated: "2026-09-21",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🐟",
@@ -19,7 +19,7 @@ export const POST: Post = {
   content: `
 A primeira vez que alguém numa mesa de clube me chamou de fish baixinho, eu nem percebi que tinha sido ofendido. Achava que estava jogando bem — via um monte de flops, pagava para "manter todo mundo honesto", corria atrás de todo projeto porque ==sabe como é==. Seis meses e vários buy-ins perdidos depois, entendi: eu *era* o fish. Todo mundo na mesa já sabia disso antes de eu sentar.
 
-Um **fish** é a gíria do poker para um jogador fraco e perdedor — aquele com quem os jogadores mais fortes faturam em silêncio. É o rótulo mais importante do jogo, porque toda sessão lucrativa começa com a mesma pergunta: *quem é o fish aqui?* Abaixo está exatamente o que a palavra significa, ==g:como identificar um fish== na primeira volta de mesa, todo o zoológico de gírias de tipos de jogador (shark, whale, nit, donkey), a verdade por trás da famosa frase do "ache o otário" — e um autoexame honesto para que o fish nunca seja você. É a primeira palavra que a maioria aprende do [vocabulário de mesa](/pt/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp") do poker, e aqui está tudo por trás dela.
+Um **fish** é a gíria do poker para um jogador fraco e perdedor — aquele com quem os jogadores mais fortes faturam em silêncio. É o rótulo mais importante do jogo, porque toda sessão lucrativa começa com a mesma pergunta: *quem é o fish aqui?* Abaixo está exatamente o que a palavra significa, ==g:como identificar um fish== em uma ou duas voltas de mesa, todo o zoológico de gírias de tipos de jogador (shark, whale, nit, donkey), a verdade por trás da famosa frase do "ache o otário" — e um autoexame honesto para que o fish nunca seja você. É a primeira palavra que a maioria aprende do [vocabulário de mesa](/pt/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp") do poker, e aqui está tudo por trás dela.
 
 ---
 

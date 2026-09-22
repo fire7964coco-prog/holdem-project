@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un 'fish' (pez) es la jerga del póker para el jugador débil y perdedor del que los jugadores fuertes (los 'tiburones') sacan su dinero. El pez juega demasiadas manos, iguala demasiado y no sabe foldear — y la famosa frase avisa: si no ves al pez en tu mesa, el pez eres tú. Es la lectura más importante del juego: encuentra al pez, o conviértete en uno.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-08-30",
-  masterUpdated: "2026-08-30",
+  updated: "2026-09-21",
+  masterUpdated: "2026-09-21",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🐟",
@@ -19,7 +19,7 @@ export const POST: Post = {
   content: `
 La primera vez que alguien en una mesa de casino me llamó pez por lo bajo, ni siquiera me di cuenta de que me habían insultado. Pensaba que jugaba bien — veía un montón de flops, igualaba para "mantenerlos honestos", perseguía cada proyecto porque ==nunca se sabe==. Seis meses y muchos buy-ins perdidos después lo entendí: yo *era* el pez. Todos en la mesa lo sabían antes de que me sentara.
 
-Un **fish** (pez) es la jerga del póker para un jugador débil y perdedor — ese del que los jugadores más fuertes sacan su dinero en silencio. Es la etiqueta más importante del juego, porque toda sesión rentable empieza con la misma pregunta: *¿quién es el pez aquí?* Abajo tienes exactamente qué significa la palabra, ==g:cómo detectar a un fish== en la primera órbita, todo el zoo de jerga de tipos de jugador (tiburón, ballena, nit, donk), la verdad detrás de la famosa frase del "detecta al primo" — y una autoevaluación honesta para que el pez nunca seas tú. Es la primera palabra que la mayoría aprende del [vocabulario de mesa del póker](/es/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp").
+Un **fish** (pez) es la jerga del póker para un jugador débil y perdedor — ese del que los jugadores más fuertes sacan su dinero en silencio. Es la etiqueta más importante del juego, porque toda sesión rentable empieza con la misma pregunta: *¿quién es el pez aquí?* Abajo tienes exactamente qué significa la palabra, ==g:cómo detectar a un fish== en una o dos órbitas, todo el zoo de jerga de tipos de jugador (tiburón, ballena, nit, donk), la verdad detrás de la famosa frase del "detecta al primo" — y una autoevaluación honesta para que el pez nunca seas tú. Es la primera palabra que la mayoría aprende del [vocabulario de mesa del póker](/es/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp").
 
 ---
 
@@ -36,7 +36,7 @@ Tiburón (shark) | Lo contrario — el jugador ganador
 
 ## ¿Qué significa "fish" en el póker?
 
-**Un fish es un jugador débil, inexperto o perdedor — la fuente de dinero que todos los demás en la mesa intentan ganar.** En español conviven las dos formas: el anglicismo **fish** y su traducción viva, **pez** (algunos también dicen "pescado"). Es el término paraguas para un mal jugador, y se define enteramente por su opuesto: el **shark** (tiburón), el jugador fuerte y formado que "se alimenta" de peces. Si los tiburones son los depredadores, los peces son lo que hay en el menú — y en lo más alto de esa cadena está la **ballena** (whale), el pez de bankroll gigante que todos quieren tener sentado a su izquierda.
+**Un fish es un jugador débil, inexperto o perdedor — la fuente de dinero que todos los demás en la mesa intentan ganar.** En español conviven las dos formas: el anglicismo **fish** y su traducción viva, **pez** (algunos también dicen "pescado"). Es el término paraguas para un mal jugador, y se define enteramente por su opuesto: el **shark** (tiburón), el jugador fuerte y formado que "se alimenta" de peces. Si los tiburones son los depredadores, los peces son lo que hay en el menú — y en lo más alto de esa cadena está la **ballena** (whale), el pez de bankroll gigante que todos quieren tener sentado a su **derecha**, para actuar después de él en la mayoría de las manos.
 
 La palabra no va de lo *simpático* que sea alguien ni de cuánto disfruta el juego — muchos peces son la gente más divertida de la mesa. Va puramente de resultados y decisiones: un pez toma jugadas perdedoras de forma constante y, con el tiempo, entrega sus fichas a jugadores mejores. Y algo clave: un pez rara vez sabe que es un pez. Ese punto ciego es la esencia del término, y es la razón por la que el concepto importa mucho más de lo que parece al principio.
 

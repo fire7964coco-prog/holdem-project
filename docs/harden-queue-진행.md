@@ -36,8 +36,8 @@
 
 | **Q12-a** | **MA-147 ① 이행 (1/2) — all-in · showdown** | 원문 = `~/Downloads/홀덤검수/mailbox/out-검수장.md` **MA-147 ①** · 원장 = `홀덤검수/ledger/en/{holdem-all-in-rules,holdem-showdown-rules}.md` · 브리프 = `docs/harden-brief/queue-Q12-a-rules-allin-showdown.md`. **ⓐ ⓑ ⓒ ⓔ ⓕ = TDA 16/17/18 · B 149 · A 92/96/108/109 계열 21자리.** 🔴 **«조문»으로 갈랐다 — 파일로 가르면 ⓑ(B 149 노리밋 한정) 7자리가 두 세션에 쪼개지고 all-in FAQ 한 줄의 ⓐ·ⓑ·ⓔ 겹침을 못 가른다**(브리프 §0) | **Opus 전 구간 · 1세션** | ✅ | (아래 §1-Q12-a) | 렌즈 4종 = 지적 33 · 반영 27 · 기각 4 · 기록 2 / **2차 교열 = 지적 12 · 반영 10 · 기각 2** | 09-21 |
 | **Q12-b** | **MA-147 ① 이행 (2/2) — 보편 단정 묶음** | 같은 MA-147 ① 중 **ⓓ ⓖ** = `holdem-game-order`(ⓓ L299 「complete」→「win」 · ⓖ L273·L356·L139 캡션·L269) · `holdem-betting-actions`(ⓖ L221) · `holdem-blind-meaning`(ⓖ L30·L68·L68·L170·L162). 조문 계열 = B 155~165 · A 87·88.d.1(Q12-a의 TDA/149 계열과 겹치는 자리 0). 브리프 = `docs/harden-brief/queue-Q12-b-보편단정.md`. 🔴 **Q12-a가 남긴 것 = §2 미결 「Q12-a가 남긴 것」 절을 먼저 읽어라** | **Opus 전 구간 · 1세션** | ✅ | (아래 §1-Q12-b) | 렌즈 4종 = 지적 47(raw · 렌즈 간 중복 8 제거 후 **39**) · 반영 31 · 기각 5 · 등재 3 / **2차 교열 = 지적 9 · 반영 8 · 기각 1** | 09-21 |
-| **Q13** | **MA-147 ②③ 이행 — EN-먼저 glossary 묶음 + es 정정 3** | **MA-147 ②**(es 회차 6 ↔ id 회차 5 **독립 수렴** · id 단독 결함 0) + **③ es 고유 3**. 🔴 **헤드 09-21 실측: 앵커 21개 중 «고쳐진 것 0»**(2a2는 표머리가 「In every case」가 아니라 **「In every one」**이라 앵커만 빗나간 것이고 결함은 그대로 열려 있다 — 앵커 축어를 그대로 믿지 마라). 대상 6편 = `holdem-cooler` 4 · `holdem-bad-beat` 4 · `holdem-glossary` 3 · `holdem-rake` 4 · `holdem-straddle` 5 · `holdem-fish` 1. es 3 = fish 「a su izquierda」→「derecha」(**WRONG** · 액션 시계방향) · rake FAQ 「Solo se cobra…」 · cooler FAQ 「~75%」 삭제 | **Opus 전 구간 · 1세션** | ⏳ | | | |
-| **Q14** | **MA-148 이행 — zh+zh-hant 정정 13 + EN-먼저 신규 4** | **MA-148 ①~④**(보고서 §D · 원장 `ledger/zh/`·`ledger/zh-hant/` 16편 1,958행). 🔴 **헤드 09-21 실측: 17개 앵커 중 «고쳐진 것 1»**(④ `3-bet-or-fold from the SB` «vs a raise»는 표 L179·본문 L222~224가 이미 닫혔고 **요약 L297·FAQ L273 두 자리만 남았다** — 검수장 지적이 이 둘을 정확히 가리킨다). ① zh+zh-hant 공통 c-bet 직답 「四到五成」→「約 30–45%」(+ pt·de·ja 옛 값 인용 = **5로케일**) ② zh 4 ③ zh-hant 8 ④ EN-먼저 4(`position-play` 「necessarily above 100%」 = 자사 캡처 5/13 스팟 반례 · `3bet` 「position leverage」 · SB 2자리 · `limping` tldr 토너 전제). 🟠 요청 = `.solver-captures/data-zh.json` 13스팟 **IP 측 `actions` 빈 배열** → 「IP 65–75% c-bet」 4행 대조 불가(UNV) | **Opus 전 구간 · 1세션** | ⏳ | | | |
+| **Q13-a** | **MA-147 ②③ (1/2) — cooler · bad-beat · fish** | 브리프 = `docs/harden-brief/queue-Q13-용어클러스터.md`(§0 분할 근거 · §1 자리 표 · §2 1차 출처 축어). 앵커 C1~C5 · B1~B4 · F1~F2 · es 고유 2(fish 「izquierda」→「derecha」 **WRONG** · cooler FAQ 「~75%」 삭제) | **Opus 전 구간 · 1세션** | ✅ | (아래 §1-Q13-a) | 1차 렌즈 5종 지적 **54**(렌즈 간 중복 9 제거 후 **45**) · 반영 **38** · 기각·판정유지 **5** · 등재만 **2** / **2차 교열 지적 10 · 반영 8 · 기록 2** | 09-21 |
+| **Q13-b** | **MA-147 ②③ (2/2) — glossary · rake · straddle** | 같은 브리프 §1 「Q13-b」 표(G1~G3 · R1~R5 · S1~S4 · 약 110자리) + §3 처방 문면. 🔴 **Q13-a가 남긴 것 = §2 「Q13-a가 남긴 것」 절을 먼저 읽어라** | **Opus 전 구간 · 1세션** | ⏳ | | | || **Q14** | **MA-148 이행 — zh+zh-hant 정정 13 + EN-먼저 신규 4** | **MA-148 ①~④**(보고서 §D · 원장 `ledger/zh/`·`ledger/zh-hant/` 16편 1,958행). 🔴 **헤드 09-21 실측: 17개 앵커 중 «고쳐진 것 1»**(④ `3-bet-or-fold from the SB` «vs a raise»는 표 L179·본문 L222~224가 이미 닫혔고 **요약 L297·FAQ L273 두 자리만 남았다** — 검수장 지적이 이 둘을 정확히 가리킨다). ① zh+zh-hant 공통 c-bet 직답 「四到五成」→「約 30–45%」(+ pt·de·ja 옛 값 인용 = **5로케일**) ② zh 4 ③ zh-hant 8 ④ EN-먼저 4(`position-play` 「necessarily above 100%」 = 자사 캡처 5/13 스팟 반례 · `3bet` 「position leverage」 · SB 2자리 · `limping` tldr 토너 전제). 🟠 요청 = `.solver-captures/data-zh.json` 13스팟 **IP 측 `actions` 빈 배열** → 「IP 65–75% c-bet」 4행 대조 불가(UNV) | **Opus 전 구간 · 1세션** | ⏳ | | | |
 
 ### §1-Q1. 회차 Q1 판정 — 결재 1(shc #13) · 결재 6·소품 5건 (2026-09-11)
 
@@ -742,6 +742,36 @@ T1 **7/7** · T2 **8/8** · T3 **9/9**(`Q10s` 포함) · T4 **23/23**(`66–22` 
 
 🔴 **환경 사고 1건 — `node_modules` 정션이 풀렸다(보고)**: `npm install -D tsx`가 이 워크트리의 `node_modules` **정션을 지우고 실디렉터리로 교체**했다(`npm warn reify Removing non-directory …`). **원본은 무사하다** — 본체 `Holdem_Project/node_modules`는 149개·8/1 그대로이고 본체 `git status`도 clean. 지금 상태로 빌드·게이트 전부 정상이다. 다시 정션으로 묶을지는 §5 Q11-5.
 
+### §1-Q13-a (2026-09-21 · MA-147 ②③ 1/2 — cooler · bad-beat · fish)
+
+**대상** = 3편 × **8로케일 = 24파일**(en de es id ja pt zh zh-hant). 🔴 **이 6편은 꼬리 17로케일에도 KO에도 없다**(`lib/posts/`·`lib/posts.ts` 각각 0건) — 결재 40 ②의 «꼬리 부채»가 이 회차엔 생기지 않는다.
+
+**§0-B 전제 실측 — MA의 로케일 개수가 실제보다 작았다**(브리프 §0-B가 정본):
+`In every case`→실제 문면은 **`In every one`** · `flush draw dead` en·es→**en·es·zh·zh-hant** · 잭팟 재원 en·es·id→**+ja·zh·zh-hant** · 「losing decisions」 5로케일→**8/8** · 「+」 표기 「de·zh-hant 0」→**zh-hant는 전각 `＋`** · 「첫 오빗」 en·es→**8/8 + zh는 desc까지**.
+🪶 **앵커 축어를 그대로 믿지 마라 · 로케일 스윕은 «자리별 1행 표»로**([[review-mechanize-not-repeat]] · §3 「Q12-b」 10항의 세 번째 실증).
+
+**🔴 이 회차의 최대 수확 = 1차안이 만든 D유형을 딜러 렌즈가 잡았다.**
+1차안 「Only the **top end** is a true cooler」는 **공집합을 가리킨다** — top end = 그 보드의 너츠라 «지는 쪽»이 될 수 없다. 실제 straight-over-straight 쿨러는 **중간 스트레이트**(보드 Q-J-T에서 K9 vs AK)인데, 그 문장대로면 K9 보유자가 「나는 top end가 아니니 리크」로 읽고 **정당한 스택오프를 오버폴드**한다.
+🔴 **같은 범주 오류가 검수장이 «정본»으로 제시한 de 문면**(`fc404ca8` 96행 「Nur die **obere** Straße ist ein echter Cooler」)**에도 있었다** → de 포함 8로케일 전부 **「너츠에 가까운 스트레이트는 강해서 못 접는다 — 단 하단(idiot end)은 **대개** 폴드지 쿨러가 아니다」**로 교체(2차 교열이 de의 원래 한정어 「meist」 소실을 잡아 전 로케일에 한정어 복원).
+
+**렌즈가 잡은 것 중 «내 수리가 만든» 것**(= 2차 교열 필수 규율의 다섯 번째 실증):
+① ja 직답↔불릿 축어 중복(cold deck) ② ja·zh-hant 직답 블록 길이 초과 3건 ③ 「스트레이트 행이 **유일한** 예외」라는 새 보편 단정(플러시·풀하우스 2등 스택오프도 같은 리크군) ④ es 「en cada mano」·EN 「is a fold」 새 보편 단정 ⑤ 스트라이프 값 칸을 «스탯»에서 «문장»으로(렌더 실측: 값 칸 27px·900·4분할 · 레포 1,810개 중앙값 4자인데 es·pt가 34자 → 첫 칸만 4줄) ⑥ de 한정어 「meist」 소실 ⑦ zh-hant 콜아웃↔FAQ 축어 겹침 69자.
+
+**1차 렌즈 5종**(딜러·수학 / CJK 네이티브 / 라틴 네이티브 / SEO·GEO / 교열 · 전부 Opus 서브):
+지적 54 · 렌즈 간 중복 9 제거 후 45 · **반영 38** · 기각·판정유지 5 · 등재만 2.
+**2차 교열**: 지적 10 · **반영 8** · 기록 2.
+
+**렌즈만 잡은 자리**(게이트가 원리상 못 보는 것):
+· **딜러** = top end 공집합(D유형) · 표 열머리(「왜 못 접는가」)와 셀이 반대 방향 · 「well ahead」가 그 글의 80% 기준과 어긋남
+· **CJK 네이티브** = ja 「リード」는 이 코퍼스에서 **리드벳**(=read로 쓰면 «AA라고 외치는 돈크벳»으로 읽힌다) · zh 「下注尺度」 ↔ 정본 「下注尺寸」(코퍼스 56 대 3)
+· **라틴 네이티브** = es 「no valía la pelea」·pt 「não valia a disputa」는 코퍼스에 없는 직역(es `vale la pena` 28:1 · pt 18:1) · **pt만 스트레이트 양끝이 정본에서 이탈**(`ponta baixa/alta`가 정본) · de 접속법 II 소실 · id 「bukan buktinya」 ↔ 정본 「bukti yang berdiri sendiri」
+· **SEO/GEO** = FAQ 오프너 「No — they're opposites」가 내가 붙인 단서와 충돌 · **ja 「イディオットエンド」는 자동완성 제안 0건**(`idiot end` 10건) → 라틴 표기 복귀 · zh-hant fish `desc` 「一眼」 ↔ 본문 「一兩圈」
+· **교열** = 파일 안 사본 누락 2(zh 쿨러 직답의 cold deck 옛 정의 · zh-hant 배드비트 콜아웃)
+
+**판정 유지(기각) 5건**: ⓐ 쿨러 **정의문** 「could never correctly fold」 16자리 = **정의라서 유지**(같은 글이 「Can You Actually Avoid Coolers?」에서 이미 별표를 달았다) ⓑ 배드비트 요약① 「It's variance, not a mistake」 = 같은 문장이 「played it right」를 전제로 달고 있어 자기완결 ⓒ es 쿨러 FAQ 수치는 **80% 교체가 아니라 삭제**(EN 쿨러엔 수치 없음 · 형제 es 배드비트가 이미 80%) ⓓ 쿨러 스트라이프 「Behind the whole way」는 쿨러 정의상 참 → **§2로 이관** ⓔ zh 쿨러 직답의 cold deck는 「随口用时」 한정이 이미 있어 결함 아님(블록 길이 여유 0).
+
+**게이트** = `audit:hard` 8로케일 **🔴 0**(es·zh·zh-hant 🟠 1씩은 선재 C2 행 키 불일치) · `check:drift` **신규 0**(핵심 🔴 6은 ar 선재 부채 · 이 6편은 ar에 없다) · `check:mirror-pair` **갈림 0**(3편) · `check:answer-echo` 내 파일 **🔴 0 · 길이 초과 0**(🔴 echo 1 = 선재 `ko/appt-korea-2026-guide` 머리말) · `check:structure` 핵심 0 · `check:meta` 초과 0 · `check:cjk`·`check:hangul`·`check:hygiene` 0 · `npm run build` ✅ 70 + intl 577.
+
 ### §1-Q12-a (2026-09-21 · MA-147 ① 1/2 · all-in + showdown)
 
 **대상** = `holdem-all-in-rules` · `holdem-showdown-rules` · EN + 24로케일 · **34파일**
@@ -936,6 +966,13 @@ B 176 축어 예시(100 벳 + 140 올인 → **240**)·A 96.a(1,700 + 500 → **
   - 🟠 **「Heads-up is the exception」이 6로케일 × 2자리(12)에 남아 있다**(en 172·360 등). 교열 렌즈 판정 = **고치지 않는 쪽 권고**(그 두 자리는 «행동 순서 규칙»에 명시 한정돼 있고 `==g:…==`는 로케일 패리티 앵커다). **판정 완료 · 다시 파지 마라.**
   - 🟠 **8로케일 `betting-actions` FAQ가 기준과 그 여집합을 축어로 두 번 말한다**(대우 구조). 2차 교열 확신 **낮음**·스타일. 「everyone else」로 되돌리면 **B 160·B 158 포스터가 다시 빠지므로** 되돌리지 않는다 — 판정 완료.
   - 🟠 **tr `game-order` 캡션이 상대를 언급하지 않는다**(「daha yüksek çift, As As, potu alır」 · 나머지 24로케일과 구조가 다르다). 거짓은 아니다 — 기록만.
+
+- 🆕 🟠 **Q13-a가 남긴 것**(2026-09-21):
+  - 🟠 **쿨러 글의 「behind the whole way」 계열이 그대로다**(tldr · 스트라이프 값 · FAQ 2 · 요약 = **8로케일 × 약 5자리**). 배드비트에서 고친 «라벨↔값 어긋남»(「whole way」 값 ↔ 「when the money went in」 라벨)이 **짝 글에 거울상으로 남았다**(딜러 렌즈 5). 🔴 다만 **쿨러 쪽 명제는 정의상 참**이다(서크아웃이 없으니 머니인 시점부터 리버까지 계속 뒤진다) — 결함은 «라벨 정합»뿐이라 **40자리를 여는 회차로 따로** 잡아라. EN-먼저.
+  - 🟠 **쿨러 «정의문» 「could never correctly fold」가 무조건형이다**(tldr + FAQ① = 8로케일 16자리 · es만 `:151`에 이미 헤지 보유). 이번 회차는 **정의라서 유지**로 판정했다(§1-Q13-a 기각 ⓐ) — 다시 열려면 **EN-먼저 + 16자리**이고, 「KK 예시가 같은 문장에 붙어 있다」는 교열 렌즈 근거를 같이 읽어라.
+  - 🟠 **배드비트 tldr ↔ 요약① 축어 겹침이 이 회차로 «늘었다»**(en 38자 · pt 47자 · es 40 · de 29 · id 28 · zh 10 · ja·zh-hant는 갈려 있어 무해). 편집 전에는 tldr이 「ahead the whole way」라 겹침 0이었다 — 「돈이 들어간 시점」으로 수렴시킨 대가다. **2차 교열 판정 = 수정 불요**(tldr↔요약 중복은 구조상 자연스럽다) · 기록만.
+  - 🟠 **zh `holdem-bad-beat` L193 직답 블록 141자**(규격 zh 60~130 · **선재 부채** · 이 회차 무변경 · `git diff`로 확인). zh `holdem-fish` **제목**의 「一眼认出」도 본문 「一两圈」과 어긋나지만 **CTR 훅이라 §17상 교체 금지** — 기록만.
+  - 🟠 **es 쿨러 FAQ L159에 스페인 2인칭 복수 「teníais」가 남아 있다**(①원본 · es는 LATAM 기준). 이번 회차 명제와 무관해 손대지 않았다 — es LATAM 트랙 몫.
 
 ## 3. 되돌리지 마라
 
@@ -1154,6 +1191,24 @@ B 176 축어 예시(100 벳 + 140 올인 → **240**)·A 96.a(1,700 + 500 → **
   - zh `holdem-strategy` VPIP 15–22% · zh-hant shc 「AK 約 47%」 문장은 **이 회차가 일부러 안 고쳤다**(전자 = zh 회차 4 «되돌리지 마라» · 후자 = EN-먼저 §5).
   - ja `holdem-straddle` 「ハウスルール」 마무리 · ja `holdem-positions` 블록의 9석 나열 — 유지.
   - zh·zh-hant CITY 사전의 Seefeld·Velden은 **일부러 라틴**이다(관용 음차 미확정 · 추측 금지).
+
+### Q13-a — 다시 열지 마라 (2026-09-21)
+
+1. 🔴 **「Only the top end is a true cooler」로 되돌리지 마라 — 그 문장은 공집합을 가리킨다.** top end = 그 보드의 **너츠**라 지는 쪽이 될 수 없다(보드 `Q♠J♦T♥`: A-K = 너츠 · K-9 = 중간 · 9-8 = idiot end). 실제 쿨러는 **중간 스트레이트**이고, 그 문면대로면 K9 보유자가 정당한 스택오프를 오버폴드한다(**D유형**). 정본 = 「너츠에 가까운 스트레이트는 강해서 못 접는다 — 단 하단(idiot end)은 **대개** 폴드지 쿨러가 아니다」.
+   🔴 **검수장 원장이 «정본»으로 든 de 문면**(`fc404ca8` 96행 「Nur die obere Straße ist ein echter Cooler」)**도 같은 오류였다** — de도 고쳤다. 원장 #14 근거란 정정 요청은 §5.
+2. 🔴 **하단(idiot end) 쪽 한정어(「대개/meist/usually/多半」)를 빼지 마라** — 숏스택·헤즈업·넓은 레인지에서는 하단 스택오프가 맞는 자리가 있다. de는 원래 「meist」를 갖고 있었고 1차안이 그것을 지웠다(2차 교열이 되돌렸다).
+3. 🔴 **「스트레이트 행이 «유일한» 예외」로 되돌리지 마라** — 플러시 오버 플러시(논넛 플러시 스택오프)·풀 오버 풀도 같은 리크군이다. 정본은 「그 행이 **단서 하나**를 요구한다」.
+4. 🔴 **「well ahead / claramente / 大きく / 明显」로 되돌리지 마라**(플러시 드로우 자리). 그 매치업은 같은 글이 **~63%**로 값매김하는데 같은 글의 배드비트 기준선은 **80%**다 — 중립 「앞서 있었다」가 정본. **id는 원래부터 「unggul atas」**였다.
+5. 🔴 **ja에서 「read」를 「リード」로 옮기지 마라** — 이 코퍼스에서 「リード」는 **리드벳**이다(`a-high-board-cbet:80` 외). 정본 = 「相手のアクション」·「読み」.
+6. 🔴 **ja 「イディオットエンド」를 되살리지 마라** — 구글 자동완성 hl=ja 실측 **제안 0건**(`idiot end` 10건). 표기는 **라틴 `idiot end`** + ja 코퍼스 정본 **「ダミーエンド」**(`holdem-implied-odds:168`) 병기.
+7. 🔴 **zh 「下注尺度」로 되돌리지 마라** — 정본은 **「下注尺寸」**(zh 코퍼스 56 대 3).
+8. 🔴 **pt 스트레이트 양끝은 「ponta alta / ponta baixa」다**(`holdem-implied-odds:149·199`) — 「ponta de cima/de baixo」로 되돌리지 마라.
+9. 🔴 **es 「no valía la pelea」 · pt 「não valia a disputa」를 되살리지 마라** — 코퍼스에 없는 직역이다(es `vale la pena` 28 · pt `vale a pena` 18).
+10. 🔴 **배드비트 스트라이프 «값 칸»에 문장을 넣지 마라** — 렌더러가 값 칸을 **27px · font-weight 900 · flex 4분할**로 찍는다(`render-markdown.ts:152-154`). 레포 값 칸 1,810개 **중앙값 4자 · p95 17자**인데 34자를 넣으면 첫 칸만 4줄이 되어 라벨 베이스라인이 어긋난다. 설명은 **11.5px 라벨 칸**으로.
+11. 🔴 **es 고래는 「a su derecha」다**(액션 시계방향 → 오른쪽 사람이 먼저 행동 → 내가 뒤에 행동). 「izquierda」로 되돌리지 마라. 꼬리말은 **「en la mayoría de las manos」** — 「en cada mano」는 거짓이다(고래가 버튼·내가 SB인 핸드는 포스트플랍에서 내가 먼저).
+12. 🔴 **es 쿨러 FAQ에 「~75%」도 「~80%」도 다시 넣지 마라** — EN 쿨러엔 수치가 없고 형제 es 배드비트가 이미 80%를 말한다(수치 삭제가 정본).
+13. 🔴 **cold deck 정의는 두 뜻을 갈라 쓴다** — 「사전 = 피할 수 없는 **그 한 판** 자체(Wiktionary 뜻1) / 卓 = 카드가 안 풀리는 시기」. 「a run of unavoidable losing hands」 한 뜻으로 되돌리지 마라.
+14. 🔴 **배드비트 잭팟 재원을 「qualifying hands에서 뗀다」로 되돌리지 마라** — 재원(누가 내나)과 지급조건(언제 나가나)이 섞인다. 정본 = 「플레이되는 팟에서 조금씩 추가로」(de·pt가 원래 그랬다).
 
 ### Q12-b — 다시 열지 마라 (2026-09-21)
 
@@ -1854,6 +1909,30 @@ pdf-page 19 · number-format 24 · image-dims 8). 전 게이트에 «못 보는 
   길이 규격엔 이미 면제가 있다(판정 13-ⓑ 「직답이 표 대용」). echo 19자리 중 **5자리가 그 부류**다(공항 셔틀·비자·마감일 · ja·zh `apt` · ja `ept` · zh `marathon` 2).
   면제로 가면 19 → **14**. 🔴 **고치기 전에 판정부터** — 안 그러면 다음 회차가 «표 대용»을 지우는 편집을 한다.
 
+### Q13-a (2026-09-21 · MA-147 ②③ 1/2 — cooler · bad-beat · fish)
+
+- 🟠 **Q13a-1 MB 통지 초안**(검수장 발신 · **EN 변경 커밋이라 MA-123 요청 1에 따라 필수**):
+  「**MA-147 ② 중 ⓐ ⓑ ⓕ + ③ 중 2건 이행 완료** — `holdem-cooler`·`holdem-bad-beat`·`holdem-fish` × **8로케일 24파일**(이 6편은 꼬리 17로케일·KO에 없다).
+  🔴 **이견 1 — 원장이 «정본»으로 제시한 de 문면이 범주 오류다**: `ledger/es/holdem-cooler` #24가 인용한 de `fc404ca8` 96행 「**Nur die obere Straße** ist ein echter Cooler … 'idiot end' … ist meist ein Leak」에서 «상단/obere»는 **그 보드의 너츠**라 지는 쪽이 될 수 없다(보드 `Q♠J♦T♥`: A-K 너츠 · K-9 중간 · 9-8 idiot end). 실제 straight-over-straight 쿨러는 **중간 스트레이트**이고, 그 문면대로면 K9 보유자가 정당한 스택오프를 «리크»로 읽어 **오버폴드**한다(D유형). → 8로케일 전부 **「너츠에 가까운 스트레이트는 강해서 못 접는다 — 단 하단(idiot end)은 대개 폴드지 쿨러가 아니다」**로 갔다. **원장 #24 근거란(de 정본 인용) 정정 요청.**
+  🔴 **이견 2 — MA-147 ②ⓑ 「flush draw dead」의 로케일 수가 en·es가 아니라 4다**: zh 「毫无希望」·zh-hant 「毫無指望」가 같은 명제였다. 같은 유형으로 **잭팟 재원(ⓑ 넷째)은 3 → 6로케일**, **「losing decisions」(ⓑ 둘째)은 5 → 8로케일**, **fish 「첫 오빗」(ⓕ)은 2 → 8로케일 + zh는 desc까지**였다. **앵커 축어 grep이 표기를 못 맞춘 자리**다(ASCII `+`가 zh-hant 전각 `＋`를 못 잡은 것과 같은 유형).
+  🔴 **원장에 없던 결함 2건을 렌즈가 신설로 잡았다**: ① **ja 「イディオットエンド」는 검색되지 않는 표기**(구글 자동완성 hl=ja 제안 **0건** ↔ `idiot end` 10건) ② **zh-hant `holdem-bad-beat` 상단 콜아웃이 FAQ를 전방참조하면서 무조건형**이었다(「這一點在文末 FAQ 會再講一次」인데 FAQ는 한정을 «추가»한다).
+  🔴 **앵커 갱신 필요** — 아래 자리의 축어가 바뀌었다: cooler en L77·L83·L88·L102·L166 / bad-beat en L8·L28·L40·L106·L199·L207 / fish en L21(+ 8로케일 대응 자리).
+  🔴 **되돌리지 마라** = 진행 파일 §3 「Q13-a」 14항.
+  **이미지·slug·desc 변경 0**(단 zh·zh-hant `holdem-fish` desc는 본문 「한두 오빗」과 어긋나 같이 고쳤다).」
+- 🟠 **Q13a-2 §6-0 통지 필요**(헤드가 머지 때 붙인다) — 이 회차가 **ja·zh·zh-hant 파일 9개**를 만졌다: `lib/posts-{ja,zh,zh-hant}/holdem-{cooler,bad-beat,fish}.ts`.
+  🪶 착수 시 세 워크트리 `git status --porcelain -- lib/posts-<loc>/` **전부 clean** · `main..harden-{ja,zh,zh-hant}` 전부 **0커밋** = 겹침 없음을 실측했다.
+  통지 내용 = 「§3 「Q13-a」 14항 · **ja 「リード」는 리드벳이니 read 역어로 쓰지 말 것** · **ja 「ダミーエンド」+라틴 `idiot end` 병기가 정본** · **zh 「下注尺寸」**(「下注尺度」 아님)」.
+- 🟠 **Q13a-3 `settled-decisions` 승격 후보 2**:
+  ⓐ 🔴 **「«상단/top end»는 너츠라 지는 쪽이 될 수 없다 — 스트레이트 쿨러의 주인공은 «중간»이다」** — 원장이 정본으로 든 문면조차 이 범주 오류를 갖고 있었다. §3-F(카드·범위어·클래스) 계열로.
+  ⓑ 🔴 **「스트라이프 «값 칸»은 스탯이지 문장이 아니다」** — 렌더러가 27px·900·flex 4분할로 찍는다(`render-markdown.ts:152-154`). 코퍼스 1,810개 **중앙값 4자·p95 17자**가 실측 기준선. 설명은 11.5px 라벨 칸으로.
+- 🟠 **Q13a-4 `docs/en-first-queue.md` 등재 요청 2** — ⓐ **쿨러 「behind the whole way」 계열 8로케일 × 약 5자리**(배드비트에서 고친 라벨↔값 어긋남의 거울상 · §2) ⓑ **쿨러 정의문 「could never correctly fold」 8로케일 16자리**(이번엔 «정의라서 유지»로 판정 · 근거 동봉).
+- 🟠 **Q13a-5 핸드오프 ▶1 갱신 요청** — 「다음은 Q13(MA-147 ②③) 또는 Q14」를 **「Q13-a ✅ 종결 · 다음은 Q13-b(glossary·rake·straddle · 같은 브리프 §1 「Q13-b」 표) 또는 Q14(MA-148)」**로.
+  🔴 그리고 **「대상 6편 = 21자리」라는 수를 지워라** — 8로케일 전수 대조하면 **약 210자리**다(그래서 두 세션으로 갈랐다). 남기면 다음 세션이 또 한 세션으로 잡는다.
+- 🟢 **Q13a-6 `locale-intentional-diffs` 등재 0** — 이 회차가 만든 «일부러 다른» 자리는 없다. de·pt·id가 일부 앵커를 이미 갖고 있던 것은 «편차»가 아니라 **선행 회차의 정본**이다.
+- 🟠 **Q13a-7 `docs/update-calendar.md` 요청 없음.**
+- 🪶 **Q13a-8 sitemap** — `updated`를 올린 파일 **24개**(EN 3 + 로케일 21). 배포 후 IndexNow는 그 24 URL만.
+- 🟠 **Q13a-9 선재 🔴·🟠 보고**(이 회차 무관 · 워크트리에서 미변경 확인): `check:answer-echo` 🔴 echo 1 = `ko/appt-korea-2026-guide` L10 머리말(Q12b-8과 같은 건) · 🟠 length = `zh/holdem-bad-beat` L193 141자 · `audit:hard` 🟠 = es·zh·zh-hant C2 행 키 불일치 1씩 · `check:drift` 핵심 🔴 6 = ar(이 6편은 ar에 **없다**).
+
 ### Q12-a (2026-09-21 · MA-147 ① 1/2 — all-in · showdown)
 
 - 🟠 **Q12a-1 MB 통지 초안**(검수장 발신 · **EN 변경 커밋이라 MA-123 요청 1에 따라 필수**):
@@ -1912,6 +1991,11 @@ pdf-page 19 · number-format 24 · image-dims 8). 전 게이트에 «못 보는 
 ## 6. 자산 축적 체크 (매 회차 마감 3종)
 
 ① 키워드뱅크 — 해당 회차만 ② 편차 판정 → §5 ③ 판정 정본 승격 → §5
+
+**Q13-a**: ① 키워드뱅크 — **해당 없음**(원장 이행·한정어 회차 · 키워드 축을 안 건드렸다 · desc 변경은 zh·zh-hant fish 2건뿐이고 본문 정합 목적)
+② 편차 판정 → §5 **Q13a-6**(등재 0)
+③ 판정 정본 승격 → §3 「Q13-a — 다시 열지 마라」 14항 + §5 **Q13a-3**(`settled-decisions` 후보 2)
+④ 🪶 **교훈(정본 후보)**: «**한정어를 다는 수리가 «없는 범주»를 만든다** — 「top end만 진짜 쿨러」는 문장으로는 자연스러운데 포커적으로는 공집합이었다(너츠는 지지 않는다). **보편 단정을 좁힐 때는 «좁힌 뒤 남는 집합이 실재하나»를 먼저 세라.**» + «**원장이 «정본»으로 제시한 형제 문면도 실측 대상이다** — 검수장 처방을 그대로 이식했다면 D유형이 8로케일에 퍼졌다([[absence-may-be-the-standard]] 계열 · Q12-b의 «원장 처방도 실측해야 한다»의 두 번째 실증).»
 
 **Q4-c**: ① 키워드뱅크 — **해당 없음**(사실 정정·명칭 회차 · 키워드·메타 축 안 건드림 · desc 변경 0 · 「WSOP.com」 검색어는 병기로 보존)
 ② 편차 판정 → §5 **Q4c-6**(등재 0 · es 정밀화는 EN-먼저 Q4c-4로)
