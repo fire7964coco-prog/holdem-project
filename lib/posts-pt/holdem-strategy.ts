@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Toda decisão vencedora no Texas Hold'em se resume a cinco perguntas que se repetem: onde estou sentado (posição), essa mão vale a pena jogar, eu aumento ou foldo (nunca dou limp), continuo apostando no flop, e quando eu largo a mão? Um jogador tight-aggressive que responde bem a essas cinco folda ~80% das mãos no pré-flop, joga com agressividade quando entra, e ganha de quase todo jogo casual — sem lista de dicas decorada.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-14",
+  updated: "2026-09-22",
   masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -74,7 +74,7 @@ A regra prática que sai disso: **jogue mais mãos em posição tardia e menos e
 
 ## Decisão 2 — Essa mão vale a pena jogar? (Seleção de mãos)
 
-O maior vazamento do poker é jogar mãos demais. Iniciantes pagam com qualquer ás, quaisquer duas figuras, quaisquer duas cartas do mesmo naipe — e depois passam o resto da mão em apuros. A correção é a habilidade menos glamourosa do jogo e a mais lucrativa: **folde a maior parte do que te deram.**
+O maior leak do poker é jogar mãos demais. Iniciantes pagam com qualquer ás, quaisquer duas figuras, quaisquer duas cartas do mesmo naipe — e depois passam o resto da mão em apuros. A correção é a habilidade menos glamourosa do jogo e a mais lucrativa: **folde a maior parte do que te deram.**
 
 Quanto é "a maior parte"? Um bom iniciante [tight-aggressive](/pt/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") folda **cerca de 80% das mãos antes do flop.** Isso soa absurdamente apertado até você internalizar o motivo: as mãos que você *de fato* joga são, na média, mais fortes que as dos adversários, então você ganha os potes que importam e pula os spots marginais que sangram fichas em silêncio.
 
@@ -137,17 +137,17 @@ Você não precisa ser matemático, mas dois números sustentam metade das suas 
 
 **Pot odds** te dizem se um call é lucrativo: compare o preço do call com o tamanho do pote, depois com a sua chance de acertar. Se o pote te oferece 4 para 1 e seu projeto fecha cerca de 1 em 5, pagar fica mais ou menos no empate; melhor que isso, é lucro. Esse é o motor por trás de todo spot de "eu persigo esse projeto?" — e o [guia de pot odds](/pt/blog/holdem-pot-odds) transforma isso numa leitura de tabela de 10 segundos.
 
-**Odds de set-mining** explicam por que pares pequenos são especulativos. Pague um aumento com um par de cincos na esperança de flopar um set (ou melhor) e você vai conectar só cerca de **11,8% das vezes, mais ou menos 1 em 8,5.** Quando funciona é lindo: flopar ==5♣ K♠ 2♦== com ==5♠5♦== e você tem uma trinca escondida que estaca um overpair. Mas como você erra ~88% dos flops, set-mining só é lucrativo quando os stacks efetivos são profundos o bastante para te pagar quando você acerta — um guia grosseiro é **pelo menos ~15–20× o tamanho do call.** Stacks curtos? Aquele call especulativo vira um vazamento. A [tabela completa de odds e probabilidade](/pt/blog/holdem-probability) tem todo número que você um dia vai precisar.
+**Odds de set-mining** explicam por que pares pequenos são especulativos. Pague um aumento com um par de cincos na esperança de flopar um set (ou melhor) e você vai conectar só cerca de **11,8% das vezes, mais ou menos 1 em 8,5.** Quando funciona é lindo: flopar ==5♣ K♠ 2♦== com ==5♠5♦== e você tem uma trinca escondida que estaca um overpair. Mas como você erra ~88% dos flops, set-mining só é lucrativo quando os stacks efetivos são profundos o bastante para te pagar quando você acerta — um guia grosseiro é **pelo menos ~15–20× o tamanho do call.** Stacks curtos? Aquele call especulativo vira um leak. A [tabela completa de odds e probabilidade](/pt/blog/holdem-probability) tem todo número que você um dia vai precisar.
 
 ---
 
-## Os 6 vazamentos que mais custam aos iniciantes — e a correção
+## Os 6 leaks que mais custam aos iniciantes — e a correção
 
 Se você reduzir a estratégia ao que de fato faz iniciantes perderem dinheiro, é a mesma listinha toda vez. Corrija esses seis e você fez 90% do trabalho:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| O vazamento | Por que sangra fichas | A correção |
+| O leak | Por que sangra fichas | A correção |
 |:---|:---|:---|
 | **Jogar mãos demais** | Mãos iniciais fracas flopam mãos feitas fracas que te custam pós-flop | Folde ~80% no pré-flop (Decisão 2) |
 | **Pagar demais** | Um call não tem fold equity: ninguém folda, então você precisa acertar ou chegar ao showdown na frente | Aumente ou folde; pare de "pagar para ver" (Decisão 3) |
@@ -158,7 +158,7 @@ Se você reduzir a estratégia ao que de fato faz iniciantes perderem dinheiro, 
 
 </div>
 
-Repare que cinco dos seis mapeiam diretamente nas cinco decisões. O framework não é abstrato — é literalmente a lista de vazamentos, virada do lado certo.
+Repare que cinco dos seis mapeiam diretamente nas cinco decisões. O framework não é abstrato — é literalmente a lista de leaks, virada do lado certo.
 
 ---
 
@@ -169,7 +169,7 @@ Se as cinco decisões são o *o quê*, **tight-aggressive (TAG)** é o *como* �
 - **Tight** — você joga poucas mãos (Decisão 2). Você folda e folda e folda, e espera spots em que provavelmente está na frente.
 - **Aggressive** — mas quando você *de fato* joga, você entra aumentando e apostando (Decisões 3 e 4), não pagando. Você coloca os adversários em decisões, em vez do contrário.
 
-TAG funciona porque ataca os dois maiores vazamentos de iniciante de uma vez — jogar demais e jogar passivo demais — com a curva de aprendizado mais suave entre os estilos vencedores. Não é o *ótimo* teórico; jogadores modernos fortes abrem para ranges mais agressivos (LAG) e balanceados. Mas como base com a qual você bate quase qualquer jogo casual, nada chega perto. Domine tight-aggressive primeiro, depois solte deliberadamente quando as cinco decisões forem segunda natureza.
+TAG funciona porque ataca os dois maiores leaks de iniciante de uma vez — jogar demais e jogar passivo demais — com a curva de aprendizado mais suave entre os estilos vencedores. Não é o *ótimo* teórico; jogadores modernos fortes abrem para ranges mais agressivos (LAG) e balanceados. Mas como base com a qual você bate quase qualquer jogo casual, nada chega perto. Domine tight-aggressive primeiro, depois solte deliberadamente quando as cinco decisões forem segunda natureza.
 
 ---
 
@@ -201,7 +201,7 @@ A. Jogue um estilo tight-aggressive construído em torno de cinco decisões que 
 
 **Q. Qual a melhor estratégia de poker para iniciantes?**
 
-A. Tight-aggressive (TAG). Jogue poucas mãos, mas jogue com agressividade — aumente em vez de pagar, e folde rápido quando erra. Corrige diretamente os dois vazamentos mais comuns de iniciante (jogar mãos demais e jogar passivo demais) e tem a curva de aprendizado mais suave entre os estilos vencedores. Comece por aí antes de experimentar abordagens mais soltas e avançadas.
+A. Tight-aggressive (TAG). Jogue poucas mãos, mas jogue com agressividade — aumente em vez de pagar, e folde rápido quando erra. Corrige diretamente os dois leaks mais comuns de iniciante (jogar mãos demais e jogar passivo demais) e tem a curva de aprendizado mais suave entre os estilos vencedores. Comece por aí antes de experimentar abordagens mais soltas e avançadas.
 
 **Q. Como se ganha no Texas Hold'em?**
 
@@ -249,7 +249,7 @@ A. Não há um número único — depende da posição, do board e de quantos ad
 
 **Q. Como você melhora no poker?**
 
-A. Estude longe da mesa e aperte o jogo nela. Os ganhos mais rápidos para a maioria dos jogadores: foldar mais mãos no pré-flop (a regra dos ~80%), aumentar ou foldar em vez de limpar, e revisar depois as suas maiores mãos perdidas para achar o vazamento. Acrescente um conceito de cada vez — posição, depois pot odds, depois c-bet — em vez de tudo de uma vez. Volume mais revisão honesta ganha de qualquer "dica" isolada.
+A. Estude longe da mesa e aperte o jogo nela. Os ganhos mais rápidos para a maioria dos jogadores: foldar mais mãos no pré-flop (a regra dos ~80%), aumentar ou foldar em vez de limpar, e revisar depois as suas maiores mãos perdidas para achar o leak. Acrescente um conceito de cada vez — posição, depois pot odds, depois c-bet — em vez de tudo de uma vez. Volume mais revisão honesta ganha de qualquer "dica" isolada.
 
 ---
 

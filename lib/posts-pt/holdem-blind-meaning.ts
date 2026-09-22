@@ -141,7 +141,7 @@ Ao sentar em um cash game ao vivo, normalmente você não joga de graça: na mai
 
 É nos blinds que eu mais vejo iniciante sangrar fichas sem perceber — não em um pote grande, mas um pouquinho a cada volta do botão. Dois hábitos nos blinds resolvem a maior parte disso — e um terceiro movimento, da posição final, recupera parte do que sai:
 
-- **Small blind: simplifique.** Penúltimo no pré-flop mas **primeiro a agir** depois do flop — a linha limpa para iniciante é **aumentar ou foldar**, não pagar. Dar limp e levar pressão fora de posição é um vazamento constante de fichas.
+- **Small blind: simplifique.** Penúltimo no pré-flop mas **primeiro a agir** depois do flop — a linha limpa para iniciante é **aumentar ou foldar**, não pagar. Dar limp e levar pressão fora de posição é um leak que custa fichas continuamente.
 - **Big blind: defenda com as odds.** Você já pôs uma aposta completa, então pode pagar aumentos com um range mais largo do que qualquer outro assento — com lucro. Contra um open de 2,5 BB (com o small blind foldando), você paga 1,5 BB para um pote de 4 BB — cerca de 2,7 para 1, ou seja, aproximadamente 27% de equity já empata o call. Essa matemática são as [pot odds](/pt/blog/holdem-pot-odds), e é por isso que existe a "defesa de big blind".
 - **Posição final: o roubo.** Quando todo mundo folda até o botão ou o cutoff, um aumento cujo objetivo é levar só os dois blinds é um **roubo de blinds (blind steal)** — e re-aumentar de volta é um **re-steal**. Tamanhos de steal, ranges por assento e quão largo defender são tópicos de estratégia, cobertos a fundo no [guia de jogo em posição vs fora de posição](/pt/blog/holdem-position-play).
 

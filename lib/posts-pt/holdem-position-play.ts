@@ -91,7 +91,7 @@ Esses rótulos são uma regra prática, não uma lei. A posição cria uma vanta
 
 Pega um 8♥7♥ num flop K♥4♠2♥. In position, seu flush draw joga lindamente: paga uma aposta barato, pega uma carta grátis quando te dão check, ou blefa quando ele mostra fraqueza duas vezes. Out of position, o mesmo projeto vaza: aposta e leva um aumento, ou dá check e vê ele te cobrar o máximo — ou pior, dá check e folda logo antes da carta que teria fechado a sua mão. Os mesmos nove outs, um preço bem diferente.
 
-Ao longo de milhares de mãos, esse vazamento vira a maior diferença isolada entre jogadores vencedores e perdedores do mesmo nível de habilidade. ==g:Jogadores vencedores não jogam só cartas boas — jogam cartas boas em boas posições.==
+Ao longo de milhares de mãos, esse leak vira a maior diferença isolada entre jogadores vencedores e perdedores do mesmo nível de habilidade. ==g:Jogadores vencedores não jogam só cartas boas — jogam cartas boas em boas posições.==
 
 ---
 
@@ -144,7 +144,7 @@ O open limp falha em três frentes no UTG:
 2. **Limita o seu range percebido** — jogadores atentos atacam limpers sem dó, e você vai enfrentar aumentos contra os quais não dá para continuar confortável.
 3. **Não ganha nada no pré-flop.** Um aumento pode levar os blinds de cara; um limp nunca leva.
 
-Existe uma exceção estreita em jogos ao vivo bem passivos — limpar atrás de outros limpers com pares pequenos e suited connectors para ver um flop multiway barato — mas *abrir* com limp no UTG é um vazamento em basicamente qualquer mesa. O argumento completo, incluindo quando limpar atrás é de fato tranquilo, está no [guia de limping](/pt/blog/holdem-limping).
+Existe uma exceção estreita em jogos ao vivo bem passivos — limpar atrás de outros limpers com pares pequenos e suited connectors para ver um flop multiway barato — mas *abrir* com limp no UTG é um leak em basicamente qualquer mesa. O argumento completo, incluindo quando limpar atrás é de fato tranquilo, está no [guia de limping](/pt/blog/holdem-limping).
 
 ---
 
@@ -236,9 +236,9 @@ Para a mecânica dos próprios blinds — por que existem e como as apostas for�
 
 ## 6-max vs full ring — e torneios vs cash
 
-**O 6-max comprime o mapa.** Com três cadeiras de early removidas, o primeiro a agir no 6-max enfrenta só cinco adversários — então ==**o UTG de 6-max joga como o lojack de full ring, abrindo em torno de ~17%**== em vez dos ~13% do UTG de full ring. Toda outra cadeira alarga na mesma proporção, roubos aparecem mais vezes e 3-bets ficam mais frequentes no geral. O vazamento mais comum ao trocar de formato é carregar o aperto do 9-max para o 6-max — você acaba foldando até sumir da mesa.
+**O 6-max comprime o mapa.** Com três cadeiras de early removidas, o primeiro a agir no 6-max enfrenta só cinco adversários — então ==**o UTG de 6-max joga como o lojack de full ring, abrindo em torno de ~17%**== em vez dos ~13% do UTG de full ring. Toda outra cadeira alarga na mesma proporção, roubos aparecem mais vezes e 3-bets ficam mais frequentes no geral. O leak mais comum ao trocar de formato é carregar o aperto do 9-max para o 6-max — você acaba foldando até sumir da mesa.
 
-**Torneios mantêm a mesma mecânica com apostas diferentes em cada decisão.** Em cash games, vantagens posicionais se acumulam com calma ao longo de horas e os rebuys tornam os vazamentos recuperáveis. Em torneios, stacks encolhendo mudam a textura: abaixo de ~15 big blinds, o jogo colapsa para push/fold, onde a nuance posicional importa menos, enquanto em 20–30 BB o roubo de late position vira o motor da sobrevivência — até que o ICM da bolha torne alguns roubos matematicamente corretos em suicídio de torneio. A comparação completa está no [guia de torneio vs cash game](/pt/blog/holdem-tournament-vs-cash-game).
+**Torneios mantêm a mesma mecânica com apostas diferentes em cada decisão.** Em cash games, vantagens posicionais se acumulam com calma ao longo de horas e os rebuys permitem repor as fichas perdidas com esses leaks. Em torneios, stacks encolhendo mudam a textura: abaixo de ~15 big blinds, o jogo colapsa para push/fold, onde a nuance posicional importa menos, enquanto em 20–30 BB o roubo de late position vira o motor da sobrevivência — até que o ICM da bolha torne alguns roubos matematicamente corretos em suicídio de torneio. A comparação completa está no [guia de torneio vs cash game](/pt/blog/holdem-tournament-vs-cash-game).
 
 ---
 
@@ -283,7 +283,7 @@ A. Do UTG num jogo full ring, abra mais ou menos as ~13% melhores mãos — pare
 
 **Q. Como a posição afeta a frequência de c-bet?**
 
-A. In position (button ou cutoff), solvers dão c-bet em cerca de 65–75% dos flops — você age por último em toda street seguinte, então apostar largo, incluindo ar, é seguro. Out of position, num pote de um aumento só, isso cai para cerca de 30–45%, porque um check-raise pode encerrar o seu bluff e um call te deixa adivinhando primeiro no turn e no river (como 3-bettor fora de posição a história é outra — a vantagem de range deixa você dar c-bet em quase todo flop nos boards que rodamos). Dar c-bet na mesma frequência OOP e IP é um dos vazamentos mais comuns e mais caros.
+A. In position (button ou cutoff), solvers dão c-bet em cerca de 65–75% dos flops — você age por último em toda street seguinte, então apostar largo, incluindo ar, é seguro. Out of position, num pote de um aumento só, isso cai para cerca de 30–45%, porque um check-raise pode encerrar o seu bluff e um call te deixa adivinhando primeiro no turn e no river (como 3-bettor fora de posição a história é outra — a vantagem de range deixa você dar c-bet em quase todo flop nos boards que rodamos). Dar c-bet na mesma frequência OOP e IP é um dos leaks mais comuns e mais caros.
 
 **Q. Você deveria sempre dar 3-bet do small blind?**
 

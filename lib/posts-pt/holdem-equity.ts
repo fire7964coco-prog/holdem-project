@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Equity é sua fatia do pote — a fatia que cabe à sua mão em média quando todas as cartas são distribuídas, com os empates contando proporcionalmente. Você paga quando sua equity supera as pot odds, mas posição e apostas fazem você raramente ficar com toda a sua equity — e a fold equity deixa você ganhar potes mesmo quando sua mão está atrás.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-10",
+  updated: "2026-09-22",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "12 min",
@@ -171,7 +171,7 @@ Some a fold equity | Se você está apostando, com que frequência o vilão fold
 Compare com o preço | Vai pagar? Equity realizada vs suas pot odds. Vai apostar? Quantas vezes o vilão folda vs a taxa de fold de equilíbrio, aposta ÷ (pote + aposta) → pagar, apostar ou foldar
 :::
 
-Naquela noite que mencionei lá no começo, eu estava fazendo o passo um e parando — contando minha equity bruta e ignorando que, fora de posição, contra um bom jogador, eu nunca a realizaria. Assim que comecei a descontar pela posição e a pensar nos folds *deles* em vez de só nas minhas cartas, os vazamentos se fecharam. Equity não é um número que você consulta; é uma lente pela qual você passa toda decisão.
+Naquela noite que mencionei lá no começo, eu estava fazendo o passo um e parando — contando minha equity bruta e ignorando que, fora de posição, contra um bom jogador, eu nunca a realizaria. Assim que comecei a descontar pela posição e a pensar nos folds *deles* em vez de só nas minhas cartas, comecei a corrigir esses leaks. Equity não é um número que você consulta; é uma lente pela qual você passa toda decisão.
 
 ---
 
