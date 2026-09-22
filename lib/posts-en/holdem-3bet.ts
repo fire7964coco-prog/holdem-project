@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A 3-bet is the first re-raise before the flop — called a 3-bet because the big blind is the first bet, the open-raise the second, and your re-raise the third. Value-3-bet a tight core (QQ+, AK) plus a few suited blocker bluffs like A5s, size it around 3x the open in position and 4x out of position, and keep your overall 3-bet frequency near 6–10%. When you're the one facing a 3-bet, 4-bet your premiums, call the hands that play well, and fold the rest — folding more than 'balanced' against low-stakes players who never bluff.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-13",
+  updated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "♦️",
@@ -53,7 +53,7 @@ Calling an open-raise (called **flatting**) keeps you in the pot, but a 3-bet do
 
 1. **It wins the pot immediately, often.** A good chunk of the time, the raiser folds and you scoop the pot before the flop with no showdown. A flat never does this.
 2. **It builds a big pot with your best hands.** When you hold aces or kings, flatting lets three other players in cheaply. 3-betting isolates the raiser and gets money in while you're a huge favorite.
-3. **It seizes initiative and position leverage.** You become the aggressor with the betting lead on every street — and against a wide opener, that pressure prints money.
+3. **It seizes the betting initiative.** You become the aggressor with the betting lead on every street — and against a wide opener, that pressure prints money.
 4. **It denies equity and information.** A raise charges opponents to continue instead of letting them see a cheap flop with a hand that might crack you.
 
 The catch: because a 3-bet is powerful, doing it *wrong* is expensive. Too many players only ever 3-bet their monsters, which makes them completely readable. The rest of this guide is about doing it right.
@@ -187,7 +187,7 @@ How much should you continue? The theoretical baseline is **Minimum Defense Freq
 
 </div>
 
-Now swap back. MDF assumes a *balanced* opponent. At low stakes and in live games, players badly **under-bluff** their 3-bets — so when a passive player suddenly re-raises, believe them and **fold more than MDF says.** You don't owe a nit a "balanced" defense.
+Now swap back. MDF assumes a *balanced* opponent. At low stakes and in live games, players badly **under-bluff** their 3-bets — so when a passive player suddenly re-raises, believe them and **defend less than the MDF baseline; in other words, fold more than 1−MDF.** You don't owe a nit a "balanced" defense.
 
 ---
 
@@ -214,7 +214,7 @@ Now flip it: if I'd 3-bet a **light** hand like A5s there and the cutoff had **4
 | **Never 3-bet bluffing at all** | Leaves money on the table vs wide steals; your flats get too weak | Balance value with a few light 3-bets |
 | **3-betting merged vs a nit** | Your "value" is dominated by their premium-only range | Go polarized or just fold vs a true nit |
 | **Bluff-3-betting junk (Q7o)** | Weak blockers and little backup equity — you must fold to every 4-bet | Pick blocker/playability hands only |
-| **Flatting too much from the small blind** | Poor equity realization OOP; a weak, cappable range | 3-bet-or-fold from the SB; save the wide flats for the big blind |
+| **Flatting too much from the small blind** | Poor equity realization OOP; a weak, cappable range | Facing a raise, 3-bet-or-fold from the SB; save the wide flats for the big blind |
 
 </div>
 
@@ -296,7 +296,7 @@ A. As stacks get short — roughly 10–25 big blinds — many hands play best a
 1. **A 3-bet is the first pre-flop re-raise** — third bet in the sequence, because the blind counts as bet one.
 2. **Build two ranges:** a value core (QQ+, AK) you want called, and suited blocker bluffs (A5s and friends) chosen for blockers and playability.
 3. **Size it ~3x in position, ~4x out** — and never small out of position.
-4. **Match shape to spot:** linear vs wide/weak opens (and from the small blind), polarized vs tight opens and from the big blind.
+4. **Match shape to spot:** linear vs wide/weak opens (and from the small blind when facing a raise), polarized vs tight opens and from the big blind.
 5. **Facing a 3-bet, most hands fold** — 4-bet premiums, call the playable ones, and fold more than "balanced" against opponents who never bluff.
 6. **Then the flop arrives.** A 3-bet pot plays nothing like a single-raised one — on this article's numbers (3bb open, 9bb 3-bet, 100bb deep) the pot is roughly 2.6× bigger (19.5bb vs the 7.5bb a heads-up flat would build; a larger out-of-position 3-bet pushes it toward 3.5×) and the SPR drops to about 4.7. The three-bettor still often bets its [entire range on the flop](/en/blog/3bet-pot-cbet) — because of the shape of its range, not because the stack is shallow.
 

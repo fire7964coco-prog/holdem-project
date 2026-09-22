@@ -38,7 +38,7 @@
 | **Q12-b** | **MA-147 ① 이행 (2/2) — 보편 단정 묶음** | 같은 MA-147 ① 중 **ⓓ ⓖ** = `holdem-game-order`(ⓓ L299 「complete」→「win」 · ⓖ L273·L356·L139 캡션·L269) · `holdem-betting-actions`(ⓖ L221) · `holdem-blind-meaning`(ⓖ L30·L68·L68·L170·L162). 조문 계열 = B 155~165 · A 87·88.d.1(Q12-a의 TDA/149 계열과 겹치는 자리 0). 브리프 = `docs/harden-brief/queue-Q12-b-보편단정.md`. 🔴 **Q12-a가 남긴 것 = §2 미결 「Q12-a가 남긴 것」 절을 먼저 읽어라** | **Opus 전 구간 · 1세션** | ✅ | (아래 §1-Q12-b) | 렌즈 4종 = 지적 47(raw · 렌즈 간 중복 8 제거 후 **39**) · 반영 31 · 기각 5 · 등재 3 / **2차 교열 = 지적 9 · 반영 8 · 기각 1** | 09-21 |
 | **Q13-a** | **MA-147 ②③ (1/2) — cooler · bad-beat · fish** | 브리프 = `docs/harden-brief/queue-Q13-용어클러스터.md`(§0 분할 근거 · §1 자리 표 · §2 1차 출처 축어). 앵커 C1~C5 · B1~B4 · F1~F2 · es 고유 2(fish 「izquierda」→「derecha」 **WRONG** · cooler FAQ 「~75%」 삭제) | **Opus 전 구간 · 1세션** | ✅ | (아래 §1-Q13-a) | 1차 렌즈 5종 지적 **54**(렌즈 간 중복 9 제거 후 **45**) · 반영 **38** · 기각·판정유지 **5** · 등재만 **2** / **2차 교열 지적 10 · 반영 8 · 기록 2** | 09-21 |
 | **Q13-b** | **MA-147 ②③ (2/2) — glossary · rake · straddle** | 같은 브리프 §1 「Q13-b」 표(G1~G3 · R1~R5 · S1~S4 · 약 110자리) + §3 처방 문면. 🔴 **Q13-a가 남긴 것 = §2 「Q13-a가 남긴 것」 절을 먼저 읽어라** | **Codex 현재 모델 A/B/C · 1세션** | ✅ | (아래 §1-Q13-b) | 독립 4렌즈 + 2차 교열 · 통합 쟁점 10종: 반영 7 · 이관 2 · 기각 1 | 09-22 |
-| **Q14** | **MA-148 이행 — zh+zh-hant 정정 13 + EN-먼저 신규 4** | **MA-148 ①~④**(보고서 §D · 원장 `ledger/zh/`·`ledger/zh-hant/` 16편 1,958행). 🔴 **헤드 09-21 실측: 17개 앵커 중 «고쳐진 것 1»**(④ `3-bet-or-fold from the SB` «vs a raise»는 표 L179·본문 L222~224가 이미 닫혔고 **요약 L297·FAQ L273 두 자리만 남았다** — 검수장 지적이 이 둘을 정확히 가리킨다). ① zh+zh-hant 공통 c-bet 직답 「四到五成」→「約 30–45%」(+ pt·de·ja 옛 값 인용 = **5로케일**) ② zh 4 ③ zh-hant 8 ④ EN-먼저 4(`position-play` 「necessarily above 100%」 = 자사 캡처 5/13 스팟 반례 · `3bet` 「position leverage」 · SB 2자리 · `limping` tldr 토너 전제). 🟠 요청 = `.solver-captures/data-zh.json` 13스팟 **IP 측 `actions` 빈 배열** → 「IP 65–75% c-bet」 4행 대조 불가(UNV) | **Opus 전 구간 · 1세션** | ⏳ | | | |
+| **Q14** | **MA-148 이행 — zh+zh-hant 정정 13 + EN-먼저 신규 4** | **MA-148 ①~④**(보고서 §D · 원장 `ledger/zh/`·`ledger/zh-hant/` 16편 1,958행). 🔴 **헤드 09-21 실측: 17개 앵커 중 «고쳐진 것 1»**(④ `3-bet-or-fold from the SB` «vs a raise»는 표 L179·본문 L222~224가 이미 닫혔고 **요약 L297·FAQ L273 두 자리만 남았다** — 검수장 지적이 이 둘을 정확히 가리킨다). ① zh+zh-hant 공통 c-bet 직답 「四到五成」→「約 30–45%」(+ pt·de·ja 옛 값 인용 = **5로케일**) ② zh 4 ③ zh-hant 8 ④ EN-먼저 4(`position-play` 「necessarily above 100%」 = 자사 캡처 5/13 스팟 반례 · `3bet` 「position leverage」 · SB 2자리 · `limping` tldr 토너 전제). 🟠 요청 = `.solver-captures/data-zh.json` 13스팟 **IP 측 `actions` 빈 배열** → 「IP 65–75% c-bet」 4행 대조 불가(UNV) | **Opus 전 구간 · 1세션** | ✅ | (아래 §1-Q14) | 독립 4렌즈 + 2차 교열 · 신규 **5종 반영** · 범위 밖 **2종 이관** | 09-22 |
 
 ### §1-Q1. 회차 Q1 판정 — 결재 1(shc #13) · 결재 6·소품 5건 (2026-09-11)
 
@@ -743,6 +743,20 @@ T1 **7/7** · T2 **8/8** · T3 **9/9**(`Q10s` 포함) · T4 **23/23**(`66–22` 
 
 🔴 **환경 사고 1건 — `node_modules` 정션이 풀렸다(보고)**: `npm install -D tsx`가 이 워크트리의 `node_modules` **정션을 지우고 실디렉터리로 교체**했다(`npm warn reify Removing non-directory …`). **원본은 무사하다** — 본체 `Holdem_Project/node_modules`는 149개·8/1 그대로이고 본체 `git status`도 clean. 지금 상태로 빌드·게이트 전부 정상이다. 다시 정션으로 묶을지는 §5 Q11-5.
 
+### §1-Q14 (2026-09-22 · MA-148 — zh·zh-hant 정정 13 + EN-먼저 4)
+
+**완료 범위**: `holdem-position-play`·`holdem-3bet`·`holdem-limping` core 8 = 24포스트, zh 고유 2포스트, zh-hant 고유 4포스트로 **30포스트**. 공용 `holdem-position-play-ip-vs-oop.webp`와 생성 원본 1개씩, 브리프·이 진행 파일을 함께 갱신했다. KO·꼬리 로케일은 이번 범위 밖이다.
+
+**A 전제 실측**: MA의 c-bet 옛값은 zh·zh-hant 2자리만 남았고 de·ja·pt는 이미 `30–45%`였다. SB `3-bet-or-fold`는 표·요약 두 자리만 `vs a raise`가 빠졌다. 시작 clean·`main` 동기. C 시작에 `7c9f25a9→4849f3c8`, 커밋 훅 직전에 다시 전진한 main을 `4849f3c8→679f854a`로 각각 fast-forward했고 Q14 파일 충돌 0. core 7 번역은 편집 전 EN과 동기라 `masterUpdated` 21파일을 09-22로 올렸고, 로케일 고유 6파일은 유지했다.
+
+**반영**: c-bet SRP/OOP 조건, zh limper·starting range·SB complete·push/fold, zh-hant blocker·조건부 EV·위치 중요도·생존 좌석·`1−MDF`·풀하우스/포카드·barrel 표현을 정정했다. EN-먼저는 EQR 고정 밴드/필연 명제를 core 8의 tldr·직답·표·FAQ·요약·이미지 alt와 공용 도표에서 제거하고, 3bet의 position leverage→betting initiative, SB의 raise 한정, limping의 tournament short-stack 전제를 전파했다.
+
+**독립 4렌즈 + 2차 교열**: 1차 신규 쟁점 4종 전부 반영 — ① 표 직후 남은 EQR 보편 단정 8로케일 ② 3bet의 `fold more than MDF` 단위 혼동 8로케일(zh·zh-hant 직답 사본 포함) ③ 손댄 중문 직답 길이·echo ④ 도표 takeaway/wordmark 겹침. 수리 3종 이상이라 필수 2차 교열을 했고 5로케일 MDF 직역투 1종을 반영, 재검수 추가 0. 통합 **5종 반영 · 범위 밖 2종 이관**(KO 사본·solver 캡처).
+
+**§13 검산**: 9♥5♥2♥ / 9♠9♣ vs A♥K♥에서 알려진 7장 뒤 남은 runout은 `C(45,2)=990`, 승리 341 → **341/990 = 34.444…%**. 즉시 7 outs는 남은 9 한 장=포카드, 5·2 각 3장=풀하우스이며 runner-runner 보드 페어도 포함한다. MDF는 continue 빈도이므로 fold 기준은 `1−MDF`; 두 개념을 전 로케일에서 분리했다.
+
+**검증**: audit 8로케일 전편 **0err**(es·zh·zh-hant C2 각 1은 선재 행 키 경고), 대상 core drift 0. structure 핵심0, meta 초과0, cjk/hangul/hygiene/seo-sync/FAQ schema/image/image-dims/intl-links/diff-check 통과. answer-echo는 Q14 대상 echo0·수정 직답 길이0. `number-format`의 es 대회글 2편과 전역 drift 핵심 ar 6은 선재·Q14 밖. 공용 WebP **1200×675·34KB**, DOM 경계는 1200×675·요소 overflow 0·하단 요소 분리 확인. `view_image` 보조기와 브라우저 `file://` 육안 열기는 환경/보안 정책으로 불가해 픽셀 육안은 못 했고, 기존 Playwright q82 렌더 + 치수/DOM/이미지 게이트로 검증했다. 최종 `npm run build` 성공(**70 blog + 577 intl · 773페이지**, pre/postbuild 전부 통과). 빌드 생성 sitemap은 커밋에서 복구했다. push·배포·IndexNow 없음.
+
 ### §1-Q13-b (2026-09-22 · MA-147 ②③ 2/2 — glossary · rake · straddle)
 
 **완료 범위**: 3편 × 8로케일(en·de·es·id·ja·pt·zh·zh-hant) = **24포스트** + 이 진행 파일 + 같은 회차 브리프. 포스트 diff는 **252행 교체 = 내용 207행 + 날짜 45행**(updated 24 + masterUpdated 21). 한 행의 여러 앵커를 중복 세지 않은 행 수이며 브리프의 «약 110자리»와 집계 단위가 다르다. KO·꼬리 로케일에 세 편 없음. Q13-a 미결·Q14 착수 없음.
@@ -1310,6 +1324,15 @@ B 176 축어 예시(100 벳 + 140 올인 → **240**)·A 96.a(1,700 + 500 → **
 ## 5. 헤드 요청 (헤드가 처리하면 ✅)
 
 > 회차마다 여기에 쌓는다: ① MB 통지 초안(EN 변경 슬러그·자리·되돌리지 마라·앵커 갱신) ② ja·zh·zh-hant 파일 목록(§6-0 통지용) ③ `locale-intentional-diffs`·`settled-decisions` 승격 ④ 정본(en-first-queue·핸드오프)에서 지울 항목.
+
+### Q14 (2026-09-22 · MA-148 이행 — 30포스트 + 공용 도표)
+
+- 🟠 **Q14-1 MB 통지 초안**: 「MA-148 ①~④ 이행. EN 변경 슬러그는 `holdem-position-play`·`holdem-3bet`·`holdem-limping`. EQR은 위치가 평균 우위일 뿐 IP/OOP 어느 쪽도 100% 위·아래에 고정되지 않으며 range·board·action이 구체값을 정하는 문면으로 core 8과 공용 도표까지 교체. 3bet은 `position leverage` 삭제·betting initiative로, SB 3-bet-or-fold는 **facing a raise** 한정, limp short-stack은 **tournament** 한정. 렌즈 추가로 `fold more than MDF`를 **defend less than MDF = fold more than 1−MDF**로 core 8에서 정정. zh·zh-hant 로컬 13앵커도 이행. `40–50%/四到五成/三到四成`, `necessarily above 100%`, 고정 `60–85%` 도표로 되돌리지 마라.」
+- 🔴 **Q14-2 세 레인 §6-0 통지**(착수 전 각 워크트리 clean 재확인): ja = `holdem-position-play`·`holdem-3bet`·`holdem-limping`; zh = `holdem-continuation-bet`·`holdem-3bet`·`holdem-starting-hands-chart`·`holdem-limping`·`holdem-position-play`; zh-hant = `holdem-continuation-bet`·`holdem-3bet`·`holdem-strategy`·`holdem-positions`·`holdem-when-to-fold`·`holdem-limping`·`holdem-position-play`.
+- 🔴 **Q14-3 KO 후속 정정**: `lib/posts.ts`의 `holdem-position-play`에 같은 EQR 필연 명제와 여기서 파생한 BB 방어 **37–52%** 계산이 남았다. 숫자만 바꾸지 말고 명제·계산·주변 문단을 한 판으로 재작성한 뒤 공용 도표와 맞춰라. 이번 core 8 커밋에 섞지 않았다.
+- 🟠 **Q14-4 solver 캡처 보강 요청**: `.solver-captures/data-zh.json` 13스팟의 IP 측 `actions`가 빈 배열이라 「IP 65–75% c-bet」 4행은 대조 불가(UNV). 실제 캡처가 생기기 전 추정값으로 채우지 마라.
+- 🟠 **Q14-5 정본 승격 후보**: `settled-decisions`에 「equity realization은 상대적·spot-dependent라 위치만으로 IP>100/OOP<100을 강제하지 않는다. EQR 수정은 tldr·직답·표·FAQ·요약·imageAlt·공용 이미지 사본을 함께 센다」를 추가. 이번에 표 직후 한 문장이 1차 수리 뒤에도 살아남아 `completion-count-the-copies-first`를 재실증했다.
+- 🟠 **Q14-6 본체 마감**: MA-148/Q14 완료로 핸드오프 갱신. 새 intentional diff·update-calendar 요청은 0. 머지 뒤 sitemap **30 post URL** lastmod 재생성, 해당 30페이지의 새문면/구문면소멸과 공용 이미지 확인 후 IndexNow 30 URL. 이 레인은 sitemap·push·배포·IndexNow를 하지 않았다.
 
 ### Q11 (2026-09-21 · 게이트 신설 III — 계산기 «원천↔사본»)
 

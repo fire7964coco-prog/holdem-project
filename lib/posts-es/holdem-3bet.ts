@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un 3-bet es la primera resubida antes del flop — se llama 3-bet porque la ciega grande es la primera apuesta, la subida de apertura la segunda y tu resubida la tercera. Haz un 3-bet de valor con un núcleo cerrado (QQ+, AK) más unos pocos faroles con bloqueadores del mismo palo como A5s, dale un tamaño de unas 3x la apertura en posición y 4x fuera de posición, y mantén tu frecuencia global de 3-bet cerca del 6–10%. Cuando eres tú quien se enfrenta a un 3-bet, resube con un 4-bet tus manos premium, iguala las que se juegan bien y foldea el resto — foldeando más de lo 'balanceado' contra jugadores de stakes bajos que nunca farolean.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-13",
-  masterUpdated: "2026-09-13",
+  updated: "2026-09-22",
+  masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "♦️",
@@ -54,7 +54,7 @@ Igualar una subida de apertura (lo que se llama **flat** o entrar pagando) te ma
 
 1. **Se lleva el bote de inmediato, a menudo.** Buena parte de las veces, el subidor foldea y te llevas el bote antes del flop sin showdown. Un flat nunca hace esto.
 2. **Construye un bote grande con tus mejores manos.** Cuando tienes ases o reyes, hacer flat deja entrar barato a otros tres jugadores. El 3-bet aísla al subidor y mete fichas mientras eres un enorme favorito.
-3. **Se apodera de la iniciativa y de la ventaja posicional.** Te conviertes en el agresor con el mando de las apuestas en cada calle — y contra un subidor con rango amplio, esa presión imprime dinero.
+3. **Se apodera de la iniciativa de apuestas.** Te conviertes en el agresor con el mando de las apuestas en cada calle — y contra un subidor con rango amplio, esa presión imprime dinero.
 4. **Niega equity e información.** Una subida les cobra a los rivales por continuar en lugar de dejarles ver un flop barato con una mano que podría reventarte.
 
 El problema: como un 3-bet es potente, hacerlo *mal* sale caro. Demasiados jugadores solo 3-betean sus monstruos, lo que los deja completamente leíbles. El resto de esta guía va sobre hacerlo bien.
@@ -188,7 +188,7 @@ Aquí tienes la mitad del 3-bet que casi todos los artículos se saltan: **estar
 
 </div>
 
-Ahora vuelve a tu silla. La MDF asume un rival *balanceado*. En stakes bajos y en juego en vivo, los jugadores **farolean de menos** sus 3-bets — así que cuando un jugador pasivo resube de repente, créetelo y **foldea más de lo que dice la MDF.** No le debes una defensa "balanceada" a un nit.
+Ahora vuelve a tu silla. La MDF asume un rival *balanceado*. En stakes bajos y en juego en vivo, los jugadores **farolean de menos** sus 3-bets — así que cuando un jugador pasivo resube de repente, créetelo y **defiende menos de lo que marca la MDF; dicho de otro modo, foldea más que 1−MDF.** No le debes una defensa "balanceada" a un nit.
 
 ---
 
@@ -215,7 +215,7 @@ Ahora dale la vuelta: si hubiera hecho un 3-bet con una mano **light** como A5s 
 | **No 3-betear de farol nunca** | Dejas dinero sobre la mesa vs robos amplios; tus flats quedan demasiado débiles | Balancea el valor con unos pocos 3-bets light |
 | **3-betear merged vs un nit** | Tu "valor" está dominado por su rango solo-premium | Ve polarizado o simplemente foldea vs un nit de verdad |
 | **Farolear 3-bet con basura (Q7o)** | Bloqueadores flojos y poca equity de respaldo — debes foldear a todo 4-bet | Elige solo manos con bloqueadores/jugabilidad |
-| **Hacer demasiado flat desde la ciega pequeña** | Mala realización de equity OOP; un rango débil y con techo | 3-bet-o-fold desde la ciega pequeña; guarda los flats amplios para la ciega grande |
+| **Hacer demasiado flat desde la ciega pequeña** | Mala realización de equity OOP; un rango débil y con techo | Ante una subida, 3-bet-o-fold desde la ciega pequeña; guarda los flats amplios para la ciega grande |
 
 </div>
 
@@ -301,7 +301,7 @@ A. A medida que los stacks se acortan — más o menos 10–25 ciegas grandes �
 1. **Un 3-bet es la primera resubida preflop** — tercera apuesta de la secuencia, porque la ciega cuenta como apuesta uno.
 2. **Construye dos rangos:** un núcleo de valor (QQ+, AK) con el que quieres que te paguen, y faroles con bloqueadores del mismo palo (A5s y compañía) elegidos por sus bloqueadores y su jugabilidad.
 3. **Dale un tamaño de ~3x en posición, ~4x fuera** — y nunca pequeño fuera de posición.
-4. **Ajusta la forma a la situación:** lineal vs aperturas amplias/débiles (y desde la ciega pequeña), polarizado vs aperturas cerradas y desde la ciega grande.
+4. **Ajusta la forma a la situación:** lineal vs aperturas amplias/débiles (y desde la ciega pequeña ante una subida), polarizado vs aperturas cerradas y desde la ciega grande.
 5. **Enfrentando un 3-bet, la mayoría de las manos foldean** — 4-bet con las premium, iguala las jugables y foldea más de lo "balanceado" contra rivales que nunca farolean.
 6. **Y entonces llega el flop.** Un bote de 3-bet no se juega en nada como uno de subida simple — con los números de este artículo (apertura de 3bb, 3-bet de 9bb, 100bb de profundidad) el bote es unas 2.6× más grande (19.5bb frente a los 7.5bb que construiría un flat mano a mano; un 3-bet más grande fuera de posición lo empuja hacia 3.5×) y el SPR baja hasta cerca de 4.7. Aun así, quien hizo el 3-bet a menudo [apuesta todo su rango en el flop](/es/blog/3bet-pot-cbet) — por la forma de ese rango, no porque el stack sea corto.
 

@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Positions-Strategie: In Position vs Out of Position",
   seoTitle: "Position im Poker: warum sie Karten schlägt (IP vs OOP)",
   desc: "Zwei Spieler, gleiche Karten, gegensätzliche Ergebnisse – der Sitz hat's gemacht. In vs out of Position, warum Position zählt und Open-Ranges von UTG bis BTN.",
-  tldr: "In Position zu sein bedeutet, dass du zuletzt handelst – du siehst jede Entscheidung deiner Gegner, bevor du einen Chip ausgibst. Solver- und Datenbank-Studien legen nahe, dass Out-of-Position-Spieler nur etwa 60–85% ihrer Equity mitnehmen – in Position liegst du dann zwangsläufig über 100%. Deshalb öffnet UTG ~13% der Hände und der Button ~43% – und deshalb schreibt Position postflop jede C-Bet, jeden Bluff und jede Pot-Control-Entscheidung neu.",
+  tldr: "In Position zu sein bedeutet, dass du zuletzt handelst – du siehst jede Entscheidung deiner Gegner, bevor du einen Chip ausgibst. Solver-Beispiele zeigen, dass Position die Equity-Realisierung meist verbessert. Doch kein Sitz liegt zwangsläufig über oder unter 100%: Ranges, Board und Action können das übliche Muster umkehren. Deshalb öffnet UTG ~13% der Hände und der Button ~43% – und deshalb schreibt Position postflop jede C-Bet, jeden Bluff und jede Pot-Control-Entscheidung neu.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-22",
+  masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "16 Min.",
   emoji: "🎯",
@@ -35,7 +35,7 @@ Eine Stunde später, dieselben K♥Q♥, diesmal am Button. Ich raiste, der Big 
 ---
 
 > **Kurze Antwort**
-> **In Position (IP)** bedeutet, dass du zuletzt handelst; **out of Position (OOP)** bedeutet, dass du zuerst handelst. Solver- und Datenbank-Studien legen nahe, dass OOP-Spieler nur etwa ==r:60–85%== ihrer Equity mitnehmen; in Position liegst du dann zwangsläufig ==g:**über 100%**==. Das ist kein Widerspruch, sondern Arithmetik: Der Pot wächst nicht, also gleicht die Über-Realisation der einen Seite genau das aus, was die andere liegen lässt – eine Lücke, die aus Information entsteht, nicht aus Karten. Deshalb öffnet UTG ~13% der Hände, der Button ~43%, und deshalb ändert sich jede C-Bet, jeder Bluff und jede Pot-Control-Entscheidung mit deinem Sitz.
+> **In Position (IP)** bedeutet, dass du zuletzt handelst; **out of Position (OOP)** bedeutet, dass du zuerst handelst. Position verbessert die Equity-Realisierung meist, weil du zuletzt mehr Informationen hast. Doch kein Sitz liegt zwangsläufig über oder unter 100%: Ranges, Board und Action können das übliche Muster umkehren. Deshalb öffnet UTG ~13% der Hände, der Button ~43%, und deshalb ändert sich jede C-Bet, jeder Bluff und jede Pot-Control-Entscheidung mit deinem Sitz.
 
 ---
 
@@ -82,12 +82,12 @@ Weil Position dieselben Karten in mehr Geld verwandelt. Am klarsten sieht man es
 
 | Situation | Realisierte Equity (ca.) | Warum |
 |:---|:---:|:---|
-| **In Position** | ==g:**über 100%**== | Zuletzt handeln → alles sehen → Value-Bets und Bluffs zum richtigen Moment |
-| **Out of Position** | ==r:~60–85%== | Zuerst handeln → Gewinner folden, Verlierer bezahlen, Free Cards herschenken |
+| **In Position** | ==g:**Meist höher – spotabhängig**== | Zuletzt handeln → alles sehen → Value-Bets und Bluffs zum richtigen Moment |
+| **Out of Position** | ==r:**Meist niedriger – kann über 100% liegen**== | Zuerst handeln → Gewinner folden, Verlierer bezahlen, Free Cards herschenken |
 
-Diese Zahlen sind ungefähr – Solver-Outputs und Datenbank-Studien variieren mit Stack-Tiefe und Matchup – aber die Richtung ist universell: ==**der In-Position-Spieler über-realisiert systematisch, der Out-of-Position-Spieler unter-realisiert systematisch.**==
+Diese Einordnung ist eine Faustregel, kein Gesetz. Position schafft im Schnitt einen Vorteil, doch Ranges, Board und Action bestimmen, welcher Sitz in einem konkreten Spot über- oder unter-realisiert.
 
-![IP vs OOP Vergleich – Button (IP) handelt zuletzt und realisiert über 100% seiner Equity; UTG (OOP) handelt zuerst und realisiert nur etwa 60–85% Equity](/images/holdem-position-play-ip-vs-oop.webp)
+![IP vs OOP Vergleich – der Button (IP) handelt zuletzt; Ranges, Board und Action bestimmen die genaue Equity-Realisierung beider Sitze](/images/holdem-position-play-ip-vs-oop.webp)
 
 Nimm 8♥7♥ auf einem K♥4♠2♥-Flop. In Position spielt sich dein Flushdraw wunderbar: eine Bet billig callen, eine Free Card nehmen, wenn zu dir gecheckt wird, oder bluffen, wenn er zweimal Schwäche zeigt. Out of Position leckt derselbe Draw: du bettest und bekommst einen Raise, oder du checkst und siehst zu, wie er dich maximal zur Kasse bittet – oder schlimmer, du checkst und foldest genau die Karte, die dich komplettiert hätte. Dieselben neun Outs, ein sehr unterschiedlicher Preis.
 
@@ -265,7 +265,7 @@ A. Das hängt von der Street ab. *Preflop* handelt der Small Blind vor dem Big B
 
 **Q. Warum zählt Position im Poker so sehr?**
 
-A. Weil zuletzt zu handeln dieselben Karten in mehr Geld verwandelt. Solver- und Datenbank-Studien legen nahe, dass Out-of-Position-Spieler nur etwa 60–85% ihrer theoretischen Equity mitnehmen; in Position liegst du dann zwangsläufig über 100% – der In-Position-Spieler sieht jede Gegner-Entscheidung, bevor er seine eigene trifft, sodass er mit identischen Holdings zu besseren Momenten Value-bettet, blufft und foldet.
+A. Weil zuletzt zu handeln dieselben Karten in mehr Geld verwandelt. Es verbessert die Equity-Realisierung meist, zwingt den In-Position-Sitz aber nicht über 100% und den Out-of-Position-Sitz nicht darunter; Ranges, Board und Action können das Muster umkehren. Der In-Position-Spieler sieht trotzdem jede Gegner-Entscheidung vor der eigenen und kann mit identischen Holdings zu besseren Momenten Value-betten, bluffen und folden.
 
 **Q. Was ist die profitabelste Position im Poker?**
 
@@ -299,7 +299,7 @@ A. Wenn du in einen geraisten Pot einsteigst, meistens ja – der moderne Standa
 
 ## Die wichtigsten Erkenntnisse
 
-1. **Position = Equity-Realization.** ==g:In Position nimmst du über 100% deiner Equity mit==; ==r:out of Position laut Studien nur etwa 60–85%.== Die Lücke kommt vom Zuletzt-Handeln, nicht von besseren Karten.
+1. **Position verbessert die Equity-Realisierung im Schnitt.** Kein Sitz ist fest über oder unter 100%; Ranges, Board und Action bestimmen den Wert. Der übliche Vorteil kommt vom Zuletzt-Handeln, nicht von besseren Karten.
 2. **Ranges gleiten mit der Position.** UTG öffnet ~13%, der Button ==g:~43%== – und jeder Sitz dazwischen bekommt eine Stufe auf der Leiter. ==r:Button-Hände aus UTG zu spielen blutet Chips.==
 3. **Der Button ist der beste Sitz; die Blinds sind die schlechtesten.** Der BB verliert die meisten reinen Chips (Pflichteinsatz); der SB ist der schlechteste Sitz, um tatsächlich zu spielen (auf jeder Street zuerst dran). Beschütze deinen Button und 3-bet-or-folde deinen Small Blind.
 4. **OOP ist nicht hoffnungslos – es ist diszipliniert.** Check-Raise als Equalizer, Sizing hoch beim Betten, Pots mit mittleren Händen kontrollieren und River öfter folden, als sich natürlich anfühlt.
