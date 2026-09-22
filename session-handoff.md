@@ -1,7 +1,7 @@
 # 다음 세션 알림장
 
 > «다음 할 일 + 미결»만 담는다. 경위 = `WORKLOG.md`(slug로 grep) · 규칙 = 정본 MD · 시한 = `docs/update-calendar.md`.
-> 마지막 갱신 **2026-09-22** · 콘텐츠 머지 **`b4a4b6f3`** · 배포 **`487f9e99`** · Q13-b 빌드·라이브24/FAQ246·IndexNow24 HTTP200 완료.
+> 마지막 갱신 **2026-09-22** · CALC-KO-1 머지 **`10590ab3`** · 배포 **`db667c60`** · 빌드·라이브 모바일/PC 검증 완료. Q13-a/b도 완료(경위 WORKLOG).
 > 최근 완료: **Q13-a/b 종결**. 경위 = WORKLOG 09-22 (1)/(2), 정본 = settled-decisions §3-N/P/Q/R.
 > 🔴 **되살리기 금지 열여섯**: ① (not set)은 구조적 동작이다 — «유실»로 되돌리지 마라(보정 ② 유지 · `RULES_VERSION` 1)
 > ② `components/seo.tsx`는 og를 건드리지 않는다(그 주석에 반증 조건이 있다) ③ 폴백 티어 근거는 콤보 산술이다
@@ -22,15 +22,15 @@
 ## ▶ 다음 할 일 (사장님이 고른다)
 
 1. **🧰 queue 다음 회차 — 사장님이 번호를 고른다.** 레인 창 첫 마디 = 「`HARDEN.md` 읽고 회차 Q<번호> 시작해」 · 회차 표 = `docs/harden-queue-진행.md` §1.
-   **Q13-a/b 머지·배포 완료. queue 다음 = Q14(MA-148 ①~④)** — zh+zh-hant 정정13 + EN-먼저4, c-bet 직답 수치 전파는 pt·de·ja 포함5로케일. 상세 = 진행 파일 §1 Q14. **자동 착수 금지, 다음 지시는 사용자가 직접 한다.**
-   queue Codex 창은 Q13-b 완료 후 대기. 계산기 레인은 아래4번.
+   **Q13-a/b 완료, Q14(MA-148 ①~④)는 사용자 지시로 진행 중.** zh+zh-hant 정정13 + EN-먼저4, c-bet 수치 전파5로케일. 상세 = 진행 파일 §1 Q14. 완료 뒤 사용자가 본체에 머지 지시한다.
+   queue Codex 창은 Q14 작업 중. 계산기 레인 CALC-KO-1은 머지 완료 후 대기(아래4번). 다음 회차 자동 지시 금지.
    머지 절차 정본 = hardening-protocol §6·7-F. 독립 검산→빌드→sitemap 실제 변경 URL 대조→push→page.content 새문면/구문면 확인→정확 URL IndexNow→MB·정본·WORKLOG→lane:sync.
    그 밖 후보 ⓑ **Q8-a** pt 용어·문체 분열 소급 ⓒ **Q8-b** id·de 분열(es LATAM은 열지 않는다).
    🔴 **«계산기 랜딩 SEO 재조준»은 소멸했다 — 되살리지 마라**(브리프 §0 기준 11/11 종결). 🪶 같은 유형이 **es·ja·pt·zh·zh-hant `solver-client`에 5곳** 남았다(브리프 §5 말미).
 2. **🟠 GA 계측 판정 2건**(09-20 (2) 규명 회차가 남긴 것 · 정리 `docs/ga-notset-diagnosis-2026-09-20.md` §6) — ⓐ **Vercel Analytics·Speed Insights가 꺼져 있다**: 레이아웃에 `<Analytics />`·`<SpeedInsights />`가 렌더되고 패키지도 깔렸는데 라이브 요청 0건(`web_analytics_not_enabled`). **켜거나(대시보드 토글 = 사장님 몫) 컴포넌트를 빼거나** 둘 중 하나 — 지금은 둘 다 아니다. 켜면 GA4가 못 보는 유실을 독립 측정할 유일한 수단이 생긴다. ⓑ **GA `lazyOnload` 유지/변경**: 느린 회선에서 page_view가 7~8초까지 밀려 그 전 이탈자가 집계에 아예 없다. 단 `afterInteractive`로 얻는 건 **1.25초뿐**(병목이 대역폭 경합) → **ⓐ를 먼저 켜서 규모를 재고 판정하는 순서를 권한다.**
 3. **10/14 이후 — 배치 효과 4주 비교**(캘린더 등재됨). 기준선 `docs/post-placement-analysis-2026-09-16.md` §2 · 같은 창(`npm run analytics` + `ga-fetch --pages --days 28`). 모바일 홈 36.7%(60세션)는 09-16 배포 전 값 — 그때 재측정. 같은 창에서 `/ja/calculator`·`/zh/calculator`·`/zh-hant/calculator`·`/es/calculator`·`/pt/calculator`·`/de/calculator`·`/fr/calculator` GSC 쿼리 첫 판독(일곱 다 신설 직후 0 · pt는 «calculadora poker»·«calculadora odds poker»·«icm calculator» 축 · es는 «calculadora de poker»·«icm calculator» 축 · zh-hant는 「德州撲克勝率計算器」 260·「icm計算機」 70 축을 본다 · de는 «poker rechner» 260·«poker wahrscheinlichkeiten rechner» 210·«poker odds calculator»(영문 590) 축을 본다 · fr은 «calculateur poker» 390·«icm poker» 480·«équité poker» 110·«tableau push or fold» 70 축을 본다 · **ms는 쿼리 단위로도 볼 게 없다** — 말레이어 축이 통째로 null이라 «poker calculator»·«poker odds calculator»(각 90 · 조준 안 한 영어 축)에 노출이 붙는지만 기록한다 · **id는 «kalkulator poker» 10 하나만 본다** — 🔴 인니어 축이 통째로 10 단위라 **쿼리 단위로 내려가야 보인다**(페이지 합계로는 0으로 보인다) · 영어 «poker calculator»·«poker odds calculator» 각 90은 **조준 안 한 축**이라 노출이 붙으면 그것대로 기록해 둘 것 · 🆕 **hi는 «데바나가리 쿼리에 노출이 붙는가»만 본다** — 조준한 영어 축 `poker odds calculator` 390은 SERP 19/19라 노출이 붙기 어렵고 힌디어 축은 볼륨 자체가 null이다. **붙으면 §3-B의 «힌디어 SERP 공백» 판정이 맞은 것**이라 그 자체가 결과다).
 4. 🪶 **계산기 잔여** — 🔴 **Q10(09-21)이 «남은 것» 7건을 전건 닫았다.** 판정만 하고 안 고친 3건은 `docs/en-first-queue.md` **§2-H**로, 새 재료 6건은 브리프 `calculator-landing-rewrite.md` **§5**(「Q10 회차가 §5에 더한 것」)로 갔다 — **여기서 다시 집지 마라.** 남은 것은 둘뿐:
-   **KO SPR/outs/ICM 대조는 CALC-KO-1 별도 레인 진행** — `Holdem-calc-ko` / `harden-calc-ko`, 첫 지시 전달 완료. 결과 `docs/harden-calc-ko-진행.md`·`docs/harden-brief/calc-ko-1.md`. 시작 티어/H-3·글로벌 H1/H2·포스트·SEO는 범위 밖. 완료 후 사용자 머지 지시를 받는다.
+   **CALC-KO-1(KO SPR/outs/ICM) 머지·배포 완료.** 계산기 레인 `Holdem-calc-ko` / `harden-calc-ko`는 다음 사용자 지시 대기. **EN·공용 후속8건** 정본 = `docs/harden-calc-ko-진행.md` §5(SPR 경계 반올림, 아웃츠 예시·근사 라벨, ICM 가중·설명·입력·표식·%p). 이번 완료를 전체 계산기 잔여0으로 읽지 마라.
    🟠 **사장님 판단 1건**(en-first §2-H H-3): 폴백 T5 56타입 중 **50타입(600콤보)이 T4 최약체 `32s`보다 세다**(K8o 56.0% ↔ 32s 36.1%). 🔴 09-20 기각안(수티드에 «작은 쪽» 바닥)을 되살리는 게 아니라 **오프수트 줄을 넓히는** 방향이고, 콤보 산술상 23번째 타입이 정확히 **`K8o`**(276콤보 = 666 · 663에 가장 가깝다). 열지 말지 = 사장님.
 
 ## 🔵 미결 (해결되면 WORKLOG에 적고 지운다)
@@ -38,7 +38,7 @@
 - **「홀덤 족보」 634노출·클릭 2** — 611노출이 noindex인 `/hands`에 남아 있다(반영 지연). 조치 없이 다음 28일 창에서 /hands 노출 0·필라 순위 상승 확인. 재제출·되살리기 금지.
 - **「포커 홀덤 차이」 계열 188노출·r9~11 · 전용 글 없음**(7포커 글은 다른 의도) — 롱테일 후보. 채택 전 SERP 실측. 근거 `docs/seo-report-2026-09-16.md` §4.
 - 🆕 **Q13-a가 남긴 것 4건**(상세 = `docs/harden-queue-진행.md` §2 「Q13-a가 남긴 것」): ⓐ 🟠 **쿨러 「behind the whole way」 계열 8로케일 × 약 5자리** — 짝 글 bad-beat에서 고친 «라벨↔값 어긋남»의 거울상. 🔴 **명제는 정의상 참**이라 사실 정정이 아니라 **문면 수렴 회차**(EN-먼저 · `en-first-queue` §2-J J-1) ⓑ 🟠 **쿨러 정의문 「could never correctly fold」 16자리** — 이번엔 «정의라서 유지»로 판정했다. **다시 열려면 판정부터**(J-2) ⓒ 🟠 **zh `holdem-bad-beat` L193 직답 141자**(규격 60~130 · 선재 부채) · zh `holdem-fish` 제목 「一眼认出」은 **CTR 훅이라 §17상 교체 금지**(기록만) ⓓ 🟠 **es 쿨러 FAQ L159에 스페인 2인칭 복수 「teníais」**(①원본 · es는 LATAM 기준) → es LATAM 트랙 몫.
-- **우편함 — 회신 대기 중**: **MB-076**(Q13-b 완료·앵커 갱신·선재 중문 미결 통지), **MB-075**(09-22 · Q13-a · **이견 2**: ⓐ 원장 #24가 정본으로 든 de 문면이 **공집합 처방**이라 근거란 정정 요청 ⓑ MA-147 ②의 **로케일 개수가 여섯 축에서 작다**(앵커 축어 grep이 표기를 못 맞춤) · **신설 결함 2**(ja 「イディオットエンド」 검색 0건 · zh-hant 콜아웃 전방참조 무조건형) · **앵커 갱신 요청**) · **MB-072**(09-21 · MA-158·159·163 이행 + MA-147·148 미이행 통지 · **요청 3**: ⓐ ms 66 «정밀형» 오판 정정 + 원장에 «분배 표지» 축 신설 ⓑ ⭐배지↔종료 공존 0 회귀 앵커 ⓒ 147-②ⓐ 앵커를 「In every one」으로 수정). 그 밖 미처리는 «→검수장»(MB-033~062 + S-022·023). 🔴 MB-054는 **MB-053 ②(상금풀 $87,568,080)를 뒤집는 통지**. 🪶 `check:mailbox` 기존 흠 둘(미수정): «MB-054 파이프 9» 🔴 · «MB-067 열 결손» 🟠(남의 회차 행이라 손대지 않았다).
+- **우편함 — 회신 대기 중**: **MB-077**(CALC-KO-1 머지·공용8건 분리 통지), **MB-076**(Q13-b 완료·앵커 갱신·선재 중문 미결 통지), **MB-075**(09-22 · Q13-a · **이견 2**: ⓐ 원장 #24가 정본으로 든 de 문면이 **공집합 처방**이라 근거란 정정 요청 ⓑ MA-147 ②의 **로케일 개수가 여섯 축에서 작다**(앵커 축어 grep이 표기를 못 맞춤) · **신설 결함 2**(ja 「イディオットエンド」 검색 0건 · zh-hant 콜아웃 전방참조 무조건형) · **앵커 갱신 요청**) · **MB-072**(09-21 · MA-158·159·163 이행 + MA-147·148 미이행 통지 · **요청 3**: ⓐ ms 66 «정밀형» 오판 정정 + 원장에 «분배 표지» 축 신설 ⓑ ⭐배지↔종료 공존 0 회귀 앵커 ⓒ 147-②ⓐ 앵커를 「In every one」으로 수정). 그 밖 미처리는 «→검수장»(MB-033~062 + S-022·023). 🔴 MB-054는 **MB-053 ②(상금풀 $87,568,080)를 뒤집는 통지**. 🪶 `check:mailbox` 기존 흠 둘(미수정): «MB-054 파이프 9» 🔴 · «MB-067 열 결손» 🟠(남의 회차 행이라 손대지 않았다).
 - **zh·zh-hant 판정 요청 1건 대기**(Q4b-4 · re-entry 행 제목 「重买/重買」 → 「再入场/重新進場」 후보 · 거울쌍으로 같이) — 두 로케일 진행 파일 §5 말미. 레인 회차 없음 유지, 사장님이 열 때.
 - **de 형제 글 3건(낮음 · 포스트 수정이라 posting.mdc 절차 · MB-063 ⓒⓓ)**: ① `holdem-equity` FAQ 「Brauche ich einen Equity-Rechner?」와 `holdem-icm` FAQ 「In der Praxis nutzt du **einen** ICM-Rechner」가 계산기를 말하면서 **링크를 안 준다**(부정관사가 경쟁사로 가는 문) ② `holdem-bubble`이 계산기를 3번 가리키는데 계산기는 버블 글을 0번 가리킨다(related 8은 EN parity라 본문 링크로) ③ `holdem-short-stack` M 존 표가 경계를 겹쳐 적는다(「10–20 / 6–10」 ↔ 계산기 「10–19 / 6–9」 — 계산기 쪽이 정본). 🟢 `/de/solver` 누수는 0건.
 - **fr 포스트 1건(낮음 · posting.mdc 절차 · MB-064 ⓓ)**: `lib/posts-fr/texas-holdem-rules-for-beginners.ts:444` — **fr 유일의 인바운드**인데 앵커가 09-18에 교체한 «calculatrice de probabilités poker»다(현 페이지 이름 = «Calculateur poker»). 같은 줄의 `/hand-chart`는 09-19 (5)에서 `/en/hand-chart`로 해소.

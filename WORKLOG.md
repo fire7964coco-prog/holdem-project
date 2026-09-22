@@ -1,3 +1,12 @@
+## 2026-09-22 (3) — CALC-KO-1 본체 머지·배포
+
+사용자 머지 지시. `harden-calc-ko`의 `10590ab3` fast-forward, 코드2+문서2파일. KO SPR/아웃츠/ICM 잔여 정정, 티어·EN·공용·포스트는 무변경. sitemap `/calculator` 하나만09-21→09-22, `db667c60` push·라이브 확인.
+
+- 본체 확률 공식 검산20행/60칸 일치, 독립 검수자 조합열거로 재확인. ICM 순열 재귀: 버블332634/272405/228698/166263원, 3인딜617857/485000/397143원 일치. 신규 blocker0.
+- 본체 build773·pre/postbuild 통과, calc parity12/12. 의미 검산은 KO 게이트의 H/I/desc 커버리지 밖이라 별도 수행.
+- 라이브 page.content FAQ10개와 빌드 정확 일치, 구 단정 소멸. 390/1440px 양쪽 outs35/19.1/19.6%·한장탭, SPR3.9/4/7.9/8/14.9/15, ICM4인 입력/원시 칩찹/%p 통과. overflow0·pageerror0. IndexNow 정확 `/calculator` 1URL 접수.
+- MB-077, 진행 파일 머지 마감·핸드오프 갱신. **공용8건은 진행 §5에 남김**; 새 영구 규율 신설 없음. Q14는 사용자 지시로 별도 진행 중, 계산기 다음 회차 자동 착수 없음. 마지막 lane:sync로5레인에 main 동기화.
+
 ## 2026-09-22 (2) — queue Q13-b 머지·배포 마감
 
 사용자 지시로 `harden-queue`의 `b4a4b6f3`를 main에 fast-forward 머지. glossary/rake/straddle × 8로케일 = 24포스트, 진행 파일·브리프 포함26파일. sitemap 커밋 `487f9e99` push. 상세 변경·근거 = `docs/harden-queue-진행.md` §1-Q13-b/§3, Q13 브리프.

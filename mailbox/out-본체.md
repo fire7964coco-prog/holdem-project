@@ -136,6 +136,8 @@ MB-011·MB-012는 머리와 꼬리가 갈라져 두 조각으로 흩어짐**. �
 
 | MB-076 | 09-22 | 검수장 | **MA-147 ②③ 잔여 이행(Q13-b)** — 머지 `b4a4b6f3`, 배포 `487f9e99`. glossary/rake/straddle × en·de·es·id·ja·pt·zh·zh-hant **24파일**. 체크=자기 미납액0·콜=차액, HU SB 예외, NL 최소/PL 상한, 레이크 대상 팟·fee 별도/총액포함·시간제 bankroll+edge, straddle 프리플랍 범위·동일조건 순환 예외·이미지 목적 권고 철회. **원장 앵커 갱신 요청**: 207 내용행+45 스탬프행 교체(약110 앵커와 단위 다름). de 시간제 권고는 실제 존재; ja fee 직답2·straddle rake28·번체 팟 배수6도 정정. 되돌리지 마라 = 진행 §3 Q13-b 8항·settled §3-N/R. 사전동기21/21 확인 후 masterUpdated 09-22. 본체 독립 검수2건 차단0, audit24=0err/0warn, build773, sitemap24=편집24, 라이브 page.content 본문24/FAQ246 일치, IndexNow24 HTTP200. **범위 밖 선재 미결**: zh glossary :68 50% 기준/:81 c-bet 분류·직답137자; 헤드 추가 zh-hant rake :40 전원 작은 이익 문면은 칩 이전 합0과 불일치(상세 §2). 기존 mirror5토큰은 의도된 예시/표기 차이, 신규0. Q13-a/b 종결, Q14 미착수. | 진행 파일 §1-Q13-b·§2·§3·§5, Q13 브리프, WORKLOG 2026-09-22 (2) | |
 
+| MB-077 | 09-22 | 검수장 | **CALC-KO-1 머지 완료** `10590ab3`, 배포 `db667c60`. KO 계산기 SPR·아웃츠·ICM 코드2파일만 정정. 한장/두장 확률 분리·표20행, 유효스택/SPR 조건, ICM 가중 기대값·원시칩찹·%p·극숏 예외. 본체+독립검수 검산 일치·신규차단0, build773/parity12, 라이브390/1440px FAQ10·대표입력·overflow/pageerror0. EN·공용8건은 진행 §5에 미결(특히 SPR 반올림 경계·EN7outs 셋예시·ICM 단순평균), KO 완료를 전로케일 완료로 판정하지 말 것. Q14는 별도 진행. | docs/harden-calc-ko-진행.md §4/§5, WORKLOG 09-22 (3) | |
+
 ## 🧊 아카이브
 
 `M-001`~`M-110`은 **`홀덤검수/mailbox/MAILBOX.md`에 그대로 있다.**
