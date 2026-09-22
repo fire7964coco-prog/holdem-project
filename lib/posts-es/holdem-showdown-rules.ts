@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "En el showdown, el último jugador que apostó o subió enseña primero. Si en el river todos pasaron, enseña primero el primer jugador activo a la izquierda del botón. Puedes tirar tus cartas sin enseñarlas si has perdido, pero los rivales pueden pedir ver una mano que fue pagada.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-21",
-  masterUpdated: "2026-09-21",
+  updated: "2026-09-22",
+  masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -188,7 +188,7 @@ A. El slow roll es retrasar a propósito enseñar una mano ganadora que ya sabes
 
 **Q. En una situación de all-in, ¿quién enseña primero?**
 
-A. En torneo, cuando un jugador va all-in y no son posibles más apuestas, todas las manos implicadas en ese bote se muestran sin demora en cuanto termina toda la acción de apuestas — antes de repartir las cartas comunitarias restantes (regla 16 de la TDA). Si hay side pot, se adjudica primero y el bote principal después — pero las cartas del all-in ya están boca arriba mucho antes. En cash sin límite, las WSOP Live Action Rules hacen que el que fue all-in dé la vuelta primero; en cualquier partida de cash, los del side pot enseñan antes que quien solo está all-in por el bote principal (regla 149).
+A. En torneo, cuando un jugador va all-in y no son posibles más apuestas, todas las manos implicadas en ese bote se muestran sin demora en cuanto termina toda la acción de apuestas — antes de repartir las cartas comunitarias restantes (regla 16 de la TDA). Si hay side pot, se adjudica primero y el bote principal después — pero las cartas del all-in ya están boca arriba mucho antes. En cash sin límite, si las apuestas terminaron antes del river, las WSOP Live Action Rules hacen que el que fue all-in dé la vuelta primero; en cualquier partida de cash, los del side pot enseñan antes que quien solo está all-in por el bote principal (regla 149).
 
 **Q. ¿Qué significa "cards speak" en el póker?**
 

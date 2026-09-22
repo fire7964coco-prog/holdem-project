@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "En Texas Hold'em hay 5 acciones de apuesta: pasar (check, gratis), apostar (abrir la ronda), igualar (call, pagar la apuesta), subir (raise — la subida mínima iguala la apuesta o subida anterior) y retirarse (fold). Solo puedes pasar cuando no tienes una apuesta viva por delante — preflop, eso normalmente solo pasa siendo la ciega grande (o quien puso un straddle vivo).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-09-21",
-  masterUpdated: "2026-09-21",
+  updated: "2026-09-22",
+  masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "🃏",
@@ -75,7 +75,7 @@ Pasar no es rendirse. Conservas tus cartas, conservas todas tus opciones y no ha
 Puedes pasar en dos tipos de situación:
 
 - **Nadie ha apostado todavía** en la calle actual (flop, turn o river)
-- **Eres la ciega grande en el preflop y nadie ha subido** — tu ciega ya cuenta como apuesta viva, así que puedes pasar y ver el flop gratis (lo mismo vale para quien puso un straddle vivo)
+- **Eres la ciega grande en el preflop y nadie ha subido ni puesto un straddle** — tu ciega ya cuenta como apuesta viva, así que puedes pasar y ver el flop gratis (lo mismo vale para quien puso un straddle vivo si después nadie subió ni puso un re-straddle)
 
 Si alguien apuesta después de tu check, te toca una decisión nueva: retirarte, igualar o subir. Pasar primero y subir cuando un rival apuesta se llama ==check-raise== — es completamente legal en Texas Hold'em y un arma estándar del juego, no una jugarreta.
 
@@ -227,7 +227,7 @@ A. Depende del tamaño del all-in. Si el all-in es una subida legal completa, la
 
 **Q. ¿Qué es un string bet en el póker?**
 
-A. Intentar apostar o subir en varios movimientos — volviendo a tu stack por el camino — sin haber anunciado "subo" primero (==regla 103==). El segundo movimiento nunca cuenta — solo valen las fichas del primero: un call si no llegan a la mitad de una subida mínima, y una subida mínima completa obligatoria si llegan a la mitad o más (regla 43-A de la TDA). La misma regla también prohíbe un gesto engañoso para provocar acción fuera de turno antes de que tu propia acción termine. Decir "pago" y luego añadir no es un string bet sino una declaración vinculante (==regla 90.d==) — mismo efecto. Anuncia tu acción en voz alta o mueve todas las fichas en un solo movimiento.
+A. Intentar apostar o subir en varios movimientos — volviendo a tu stack por el camino — sin haber anunciado "subo" primero (==regla 103==). El segundo movimiento nunca cuenta — solo valen las primeras fichas, aplicando primero las reglas de call con una o varias fichas (reglas 44–45 de la TDA, edición de 2024). Cuando corresponde el umbral de la mitad de la regla 43-A, se mide el incremento por encima del call, no el total: menos de la mitad de la mayor apuesta o incremento de subida completos anteriores es call; la mitad o más obliga a completar la subida mínima. Una declaración previa de subida o un all-in se rigen por sus reglas propias. La misma regla también prohíbe un gesto engañoso para provocar acción fuera de turno antes de que tu propia acción termine. Decir "pago" y luego añadir no es un string bet sino una declaración vinculante (==regla 90.d==) — mismo efecto. Anuncia tu acción en voz alta o mueve todas las fichas en un solo movimiento.
 
 **Q. ¿Qué significa limpear en el póker?**
 

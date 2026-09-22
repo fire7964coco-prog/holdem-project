@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "O Texas Hold'em tem 5 ações de aposta: check (passar de graça), apostar (abrir a rodada), pagar/call (igualar uma aposta), aumentar/raise (o aumento mínimo é igual à aposta ou ao raise anterior) e foldar. Você só pode dar check quando não há aposta viva à sua frente — no pré-flop, isso normalmente só acontece sendo o big blind (ou quem postou um straddle vivo).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-09-21",
-  masterUpdated: "2026-09-21",
+  updated: "2026-09-22",
+  masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "🃏",
@@ -76,7 +76,7 @@ Dar check não é se render. Você mantém suas cartas, mantém todas as opçõe
 Você pode dar check em dois tipos de situação:
 
 - **Ninguém apostou ainda** na street atual (flop, turn ou river)
-- **Você é o big blind no pré-flop e ninguém aumentou** — seu blind já conta como aposta viva, então você pode dar check e ver o flop de graça (o mesmo vale para quem postou um straddle vivo)
+- **Você é o big blind no pré-flop e ninguém aumentou nem postou straddle** — seu blind já conta como aposta viva, então você pode dar check e ver o flop de graça (o mesmo vale para quem postou um straddle vivo se ninguém aumentou nem fez re-straddle depois)
 
 Se alguém apostar depois do seu check, você enfrenta uma decisão nova: foldar, pagar ou aumentar. Dar check primeiro e aumentar quando o adversário aposta se chama ==check-raise== — é totalmente legal no Texas Hold'em e uma arma padrão do jogo, não uma sacanagem.
 
@@ -228,7 +228,7 @@ A. Depende do tamanho do all-in. Se o all-in for um raise completo e legal, a a�
 
 **Q. O que é string bet no poker?**
 
-A. É tentar apostar ou aumentar em vários movimentos — voltando ao seu stack no meio, sem ter anunciado "raise" (==regra 103==). O segundo movimento nunca conta — só valem as fichas do primeiro: um call se ficarem abaixo de metade de um min-raise, e um min-raise completo obrigatório se chegarem à metade ou mais (regra 43-A da TDA). A mesma regra também proíbe um gesto enganoso para provocar ação fora de vez antes de a sua própria ação terminar. Dizer "call" e depois acrescentar não é string bet, mas uma declaração vinculante (==regra 90.d==) — mesmo efeito. Anuncie sua ação em voz alta ou mova todas as fichas em um único movimento.
+A. É tentar apostar ou aumentar em vários movimentos — voltando ao seu stack no meio, sem ter anunciado "raise" (==regra 103==). O segundo movimento nunca conta — só valem as primeiras fichas, avaliadas primeiro pelas regras de call com uma ou várias fichas (regras 44–45 da TDA, edição de 2024). Quando se aplica o limite de metade da regra 43-A, mede-se o acréscimo acima do call, não o total: abaixo de metade da maior aposta completa ou do maior incremento de raise completo anterior é call; metade ou mais obriga a completar o min-raise. Uma declaração prévia de raise ou um all-in seguem suas próprias regras. A mesma regra também proíbe um gesto enganoso para provocar ação fora de vez antes de a sua própria ação terminar. Dizer "call" e depois acrescentar não é string bet, mas uma declaração vinculante (==regra 90.d==) — mesmo efeito. Anuncie sua ação em voz alta ou mova todas as fichas em um único movimento.
 
 **Q. O que significa dar limp no poker?**
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Blinds adalah taruhan wajib yang dipasang sebelum kartu dibagikan. Small Blind duduk di kiri tombol dealer dan Big Blind di kirinya lagi; Big Blind — biasanya dua kali lipat Small Blind — adalah satuan taruhan di meja.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-09-21",
-  masterUpdated: "2026-09-21",
+  updated: "2026-09-22",
+  masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "9 menit",
   emoji: "💰",
@@ -119,13 +119,13 @@ Stakes ditulis **SB/BB**. Game "$1/$2" berarti Small Blind $1 dan Big Blind $2; 
 
 Mulai dari level awal atau menengah, kebanyakan turnamen menambahkan **ante** — taruhan wajib ekstra kecil yang dikumpulkan setiap hand di atas blinds, yang menggemukkan pot dan menghargai agresi. Versi modern yang umum adalah **big blind ante**: alih-alih semua orang melempar chip, ==Big Blind memasang satu ante — biasanya senilai satu Big Blind — untuk seluruh meja==, sehingga permainan tetap cepat dan rapi. Kapan dan bagaimana ante mulai berlaku adalah bagian dari [struktur blind turnamen](/id/blog/holdem-tournament).
 
-Masih satu keluarga dengan blind, ada satu taruhan lagi yang akan Anda lihat di cash game: **straddle** — blind ekstra yang *sukarela* (biasanya 2x BB) dipasang dari kursi di kiri Big Blind, yang menaikkan stakes untuk hand itu sementara. Straddle punya aturan, jenis, dan urutan aksinya sendiri — pembahasan lengkapnya ada di [apa itu straddle dan apakah Anda perlu memasangnya](/id/blog/holdem-straddle "thumb:/images/holdem-straddle-hero.webp").
+Masih satu keluarga dengan blind, ada satu taruhan lagi yang akan Anda lihat di cash game: **straddle** — blind ekstra yang *sukarela* (biasanya 2x BB) dipasang dari UTG (kursi di kiri Big Blind) atau, jika diizinkan, dari button, yang menaikkan stakes untuk hand itu sementara. Menurut aturan WSOP, straddle dari button mendapat prioritas dan tidak diizinkan dalam permainan limit. Straddle punya aturan, jenis, dan urutan aksinya sendiri — pembahasan lengkapnya ada di [apa itu straddle dan apakah Anda perlu memasangnya](/id/blog/holdem-straddle "thumb:/images/holdem-straddle-hero.webp").
 
 ---
 
 ## Siapa yang Memasang Blinds di Poker Heads-Up?
 
-Ketika hanya tersisa dua pemain (atau di match heads-up), aturan biasanya ==r:terbalik==. **Tombol dealer memasang Small Blind** dan bertindak ==**paling awal**== sebelum flop, sementara pemain satunya memasang Big Blind dan bertindak ==**paling akhir**== di preflop — lalu paling awal di setiap street berikutnya. Ini satu-satunya saat tombol membayar blind, dan hampir semua orang tertipu saat pertama kali mengalaminya.
+Ketika hanya tersisa dua pemain (atau di match heads-up), aturan biasanya ==r:terbalik==. **Tombol dealer memasang Small Blind** dan bertindak ==**paling awal**== sebelum flop, sementara pemain satunya memasang Big Blind dan bertindak ==**paling akhir**== di preflop — lalu paling awal di setiap street berikutnya.
 
 ---
 
@@ -176,7 +176,7 @@ A. Boleh. Di giliran Anda, Anda bisa fold seperti pemain lain; Small Blind boleh
 
 **Q. Siapa yang memasang blinds di poker heads-up?**
 
-A. Dengan hanya dua pemain, aturannya terbalik: tombol dealer memasang Small Blind dan bertindak pertama sebelum flop, sementara pemain satunya memasang Big Blind dan bertindak terakhir di preflop. Ini satu-satunya saat tombol membayar blind.
+A. Dengan hanya dua pemain, aturannya terbalik: tombol dealer memasang Small Blind dan bertindak pertama sebelum flop, sementara pemain satunya memasang Big Blind dan bertindak terakhir di preflop.
 
 **Q. Apa yang terjadi kalau Anda melewatkan blind?**
 

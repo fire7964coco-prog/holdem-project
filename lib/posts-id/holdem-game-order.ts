@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Satu hand Texas Hold'em berjalan begini: pasang blinds → bagikan dua kartu tertutup → preflop → flop (3 kartu) → turn (1 kartu) → river (1 kartu) → showdown, dengan total empat ronde taruhan.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-09-21",
-  masterUpdated: "2026-09-21",
+  updated: "2026-09-22",
+  masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "16 menit",
   emoji: "🎬",
@@ -261,7 +261,7 @@ Ini semua aksi yang tersedia di meja — bagian yang paling sering bikin pemula 
 
 </div>
 
-==r:**Penting:** di preflop Anda tidak bisa cek — kecuali taruhan yang Anda pasang sendiri sudah menjadi taruhan hidup.== Big blind adalah taruhan hidup, jadi setiap posisi yang taruhannya sendiri belum menjadi taruhan hidup harus call, raise, atau fold. ==Big blind boleh cek kalau tidak ada yang raise atau memasang straddle — begitu pula pemain yang memasang live straddle, karena taruhan yang ia pasang itu adalah taruhan pembukanya dan ia bertindak terakhir di preflop (WSOP Live Action Rules 159 · 165); bagi semua pemain lain, cek baru dimulai di flop.==
+==r:**Penting:** di preflop Anda tidak bisa cek — kecuali taruhan yang Anda pasang sendiri sudah menjadi taruhan hidup.== Big blind adalah taruhan hidup, jadi setiap posisi yang taruhannya sendiri belum menjadi taruhan hidup harus call, raise, atau fold. ==Big blind boleh cek kalau tidak ada yang raise atau memasang straddle — begitu pula pemain yang memasang live straddle, asalkan setelahnya tidak ada raise atau re-straddle, karena taruhan yang ia pasang itu adalah taruhan pembukanya dan ia bertindak terakhir di preflop (WSOP Live Action Rules 159 · 165); bagi semua pemain lain, cek baru dimulai di flop.==
 
 Untuk panduan keputusan yang lebih dalam soal kapan memakai tiap langkah — lengkap dengan tabel keputusan cek-call-raise-fold — lihat [penjelasan aksi taruhan](/id/blog/holdem-betting-actions).
 

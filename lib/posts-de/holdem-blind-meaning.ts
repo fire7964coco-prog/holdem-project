@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Blinds sind Zwangseinsätze, die vor dem Austeilen der Karten gesetzt werden. Der Small Blind sitzt direkt links vom Dealer-Button, der Big Blind links daneben; der Big Blind – meist das Doppelte des Small Blinds – ist die Setzeinheit des Tischs.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-09-21",
-  masterUpdated: "2026-09-21",
+  updated: "2026-09-22",
+  masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "9 Min.",
   emoji: "💰",
@@ -121,13 +121,13 @@ Stakes werden als **SB/BB** geschrieben. Ein „€1/€2“-Game bedeutet: €1
 
 Ab der frühen oder mittleren Phase der meisten Turniere kommt eine **Ante** dazu – ein kleiner zusätzlicher Zwangseinsatz, der in jeder Hand zusätzlich zu den Blinds eingesammelt wird. Sie füttert den Pot und belohnt Aggression. Die moderne Standardvariante ist die **Big Blind Ante**: Statt dass jeder Spieler Chips hineinwirft, ==setzt der Big Blind eine Ante – üblicherweise in Höhe eines Big Blinds – für den ganzen Tisch==. Das hält das Spiel schnell und sauber. Wann und wie Antes einsetzen, regelt [die Blind-Struktur des Turniers](/de/blog/holdem-tournament).
 
-Einen weiteren Verwandten der Zwangseinsätze siehst du in Cash Games: den **Straddle** – ein *freiwilliger* zusätzlicher Blind (meist das Doppelte des BB), gesetzt vom Sitz links vom Big Blind, der die Stakes für diese eine Hand vorübergehend anhebt. Er hat eigene Regeln, Varianten und eine eigene Action-Reihenfolge – die komplette Aufschlüsselung findest du unter [was ein Straddle ist und ob du einen setzen solltest](/de/blog/holdem-straddle "thumb:/images/holdem-straddle-hero.webp").
+Einen weiteren Verwandten der Zwangseinsätze siehst du in Cash Games: den **Straddle** – ein *freiwilliger* zusätzlicher Blind (meist das Doppelte des BB), gesetzt von UTG (links vom Big Blind) oder, wo erlaubt, vom Button; er hebt die Stakes für diese eine Hand vorübergehend an. Nach WSOP-Regeln hat der Button-Straddle Vorrang und ist in Limit-Spielen nicht erlaubt. Er hat eigene Regeln, Varianten und eine eigene Action-Reihenfolge – die komplette Aufschlüsselung findest du unter [was ein Straddle ist und ob du einen setzen solltest](/de/blog/holdem-straddle "thumb:/images/holdem-straddle-hero.webp").
 
 ---
 
 ## Wer setzt die Blinds beim Heads-up (Poker zu zweit)?
 
-Sind nur noch zwei Spieler übrig – beim **Poker zu zweit** also von der ersten Hand an –, ==r:dreht sich== die übliche Regel um. Der **Dealer-Button setzt den Small Blind** und handelt vor dem Flop ==als **Erster**==, während der andere Spieler den Big Blind setzt und preflop ==als **Letzter**== handelt – auf allen späteren Streets dann als Erster. Es ist das einzige Mal, dass der Button einen Blind zahlt, und es erwischt beim ersten Mal fast jeden.
+Sind nur noch zwei Spieler übrig – beim **Poker zu zweit** also von der ersten Hand an –, ==r:dreht sich== die übliche Regel um. Der **Dealer-Button setzt den Small Blind** und handelt vor dem Flop ==als **Erster**==, während der andere Spieler den Big Blind setzt und preflop ==als **Letzter**== handelt – auf allen späteren Streets dann als Erster.
 
 ---
 

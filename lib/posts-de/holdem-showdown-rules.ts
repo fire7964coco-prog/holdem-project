@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Beim Showdown zeigt zuerst, wer als Letzter gesetzt oder erhöht hat. Wurde der River durchgecheckt, zeigt der erste aktive Spieler links vom Button zuerst. Verlierst du, darfst du verdeckt mucken – aber wer die River-Bet gecallt hat, darf die Hand des Bettors sehen.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-21",
-  masterUpdated: "2026-09-21",
+  updated: "2026-09-22",
+  masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "🃏",
@@ -180,7 +180,7 @@ A. Nein – verboten ist es nicht, aber überall verhasst. Slow Rolling bedeutet
 
 **Q. Werden die Karten beim All-in sofort aufgedeckt?**
 
-A. Im Turnier gilt: Geht ein Spieler All-in und sind keine weiteren Bets möglich, werden alle an diesem Pot beteiligten Hände unverzüglich offen hingelegt, sobald das Setzen komplett abgeschlossen ist – noch bevor die restlichen Gemeinschaftskarten ausgeteilt werden (TDA-Regel 16). Gibt es einen Side Pot, wird dieser zuerst vergeben und danach der Hauptpot – die Karten des All-in-Spielers liegen zu diesem Zeitpunkt aber längst offen. Im No-Limit-Cashgame lassen die WSOP Live Action Rules den Spieler, der All-in gegangen ist, zuerst umdrehen; in jedem Cashgame zeigen die Side-Pot-Spieler vor jedem, der nur im Main Pot All-in ist (Rule 149). Solange die anderen noch Chips haben und setzen können, bleibt dagegen alles verdeckt.
+A. Im Turnier gilt: Geht ein Spieler All-in und sind keine weiteren Bets möglich, werden alle an diesem Pot beteiligten Hände unverzüglich offen hingelegt, sobald das Setzen komplett abgeschlossen ist – noch bevor die restlichen Gemeinschaftskarten ausgeteilt werden (TDA-Regel 16). Gibt es einen Side Pot, wird dieser zuerst vergeben und danach der Hauptpot – die Karten des All-in-Spielers liegen zu diesem Zeitpunkt aber längst offen. Im No-Limit-Cashgame lassen, wenn das Setzen vor dem River endete, die WSOP Live Action Rules den Spieler, der All-in gegangen ist, zuerst umdrehen; in jedem Cashgame zeigen die Side-Pot-Spieler vor jedem, der nur im Main Pot All-in ist (Rule 149). Solange die anderen noch Chips haben und setzen können, bleibt dagegen alles verdeckt.
 
 **Q. Kann ich gewinnen, wenn ich meine Hand falsch ansage?**
 

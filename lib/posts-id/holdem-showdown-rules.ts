@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Saat showdown, pemain terakhir yang bet atau raise buka kartu duluan. Kalau river di-cek habis, pemain aktif pertama di kiri tombol dealer yang buka duluan. Anda boleh muck tanpa menunjukkan kartu kalau kalah, tapi pemain yang meng-call bet river boleh minta melihat hand si pembuat bet.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-21",
-  masterUpdated: "2026-09-21",
+  updated: "2026-09-22",
+  masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "10 menit",
   emoji: "🃏",
@@ -180,7 +180,7 @@ A. Slow roll adalah sengaja menunda membuka hand pemenang yang Anda sudah tahu p
 
 **Q. Dalam situasi all-in, siapa yang buka kartu duluan?**
 
-A. Di turnamen, ketika seorang pemain all-in dan tidak ada taruhan lagi yang mungkin, semua hand yang terlibat di pot itu dibuka tanpa ditunda begitu seluruh aksi taruhan selesai — sebelum sisa kartu komunitas dibagikan (TDA Rule 16). Kalau ada side pot, side pot dibagikan lebih dulu dan pot utama sesudahnya — tapi kartu pemain yang all-in sudah terbuka jauh sebelum itu. Di cash game no-limit, WSOP Live Action Rules membuat pemain yang all-in membuka duluan; di cash game mana pun, pemain side pot membuka sebelum siapa pun yang all-in hanya untuk pot utama (Rule 149). Selama pemain lain masih punya chip dan masih bisa bertaruh, semua kartu tetap tertutup.
+A. Di turnamen, ketika seorang pemain all-in dan tidak ada taruhan lagi yang mungkin, semua hand yang terlibat di pot itu dibuka tanpa ditunda begitu seluruh aksi taruhan selesai — sebelum sisa kartu komunitas dibagikan (TDA Rule 16). Kalau ada side pot, side pot dibagikan lebih dulu dan pot utama sesudahnya — tapi kartu pemain yang all-in sudah terbuka jauh sebelum itu. Di cash game no-limit, jika taruhan sudah selesai sebelum river, WSOP Live Action Rules membuat pemain yang all-in membuka duluan; di cash game mana pun, pemain side pot membuka sebelum siapa pun yang all-in hanya untuk pot utama (Rule 149). Selama pemain lain masih punya chip dan masih bisa bertaruh, semua kartu tetap tertutup.
 
 **Q. Apa arti "cards speak" dalam poker?**
 

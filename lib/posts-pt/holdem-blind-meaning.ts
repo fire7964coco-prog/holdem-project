@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Blinds são apostas obrigatórias pagas antes de as cartas serem distribuídas. O small blind fica à esquerda do botão do dealer e o big blind à esquerda dele; o big blind — normalmente o dobro do small blind — é a unidade de aposta da mesa.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-09-21",
-  masterUpdated: "2026-09-21",
+  updated: "2026-09-22",
+  masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "💰",
@@ -119,13 +119,13 @@ Os stakes se escrevem **SB/BB**. Uma mesa "$1/$2" significa small blind de $1 e 
 
 A partir dos estágios iniciais ou intermediários da maioria dos torneios, entra o **ante** — uma pequena aposta obrigatória extra, cobrada em toda mão além dos blinds, que engorda o pote e recompensa a agressão. A versão moderna mais comum é o **big blind ante**: em vez de todo mundo jogar fichas, ==o big blind paga um ante — normalmente igual a um big blind — pela mesa inteira==, o que mantém o jogo rápido e organizado. Quando e como os antes entram faz parte da [estrutura de blinds do torneio](/pt/blog/holdem-tournament).
 
-Mais um primo das apostas obrigatórias que você vai ver em cash games: o **straddle** — um blind extra *voluntário* (normalmente 2x o BB), pago pelo assento à esquerda do big blind, que aumenta temporariamente os stakes daquela mão. Ele tem regras, tipos e ordem de ação próprios — o detalhamento completo fica em [o que é um straddle e se vale a pena pagar um](/pt/blog/holdem-straddle "thumb:/images/holdem-straddle-hero.webp").
+Mais um primo das apostas obrigatórias que você vai ver em cash games: o **straddle** — um blind extra *voluntário* (normalmente 2x o BB), pago pelo UTG (à esquerda do big blind) ou, onde for permitido, pelo botão, que aumenta temporariamente os stakes daquela mão. Pelas regras da WSOP, o straddle do botão tem prioridade e não é permitido em jogos limit. Ele tem regras, tipos e ordem de ação próprios — o detalhamento completo fica em [o que é um straddle e se vale a pena pagar um](/pt/blog/holdem-straddle "thumb:/images/holdem-straddle-hero.webp").
 
 ---
 
 ## Quem paga os blinds no heads-up?
 
-Quando sobram só dois jogadores (ou em um duelo heads-up), a regra de sempre ==r:se inverte==. O **botão do dealer paga o small blind** e age ==**primeiro**== antes do flop, enquanto o outro jogador paga o big blind e age ==**por último**== no pré-flop — e depois primeiro em todas as streets seguintes. É a única vez em que o botão paga blind, e pega quase todo mundo de surpresa na primeira vez.
+Quando sobram só dois jogadores (ou em um duelo heads-up), a regra de sempre ==r:se inverte==. O **botão do dealer paga o small blind** e age ==**primeiro**== antes do flop, enquanto o outro jogador paga o big blind e age ==**por último**== no pré-flop — e depois primeiro em todas as streets seguintes.
 
 ---
 
@@ -176,7 +176,7 @@ A. Sim. Na sua vez, você pode foldar como qualquer outro; o small blind pode de
 
 **Q. Quem paga os blinds no heads-up?**
 
-A. Com só dois jogadores, a regra se inverte: o botão do dealer paga o small blind e age primeiro antes do flop, enquanto o outro jogador paga o big blind e age por último no pré-flop. É a única vez em que o botão paga blind.
+A. Com só dois jogadores, a regra se inverte: o botão do dealer paga o small blind e age primeiro antes do flop, enquanto o outro jogador paga o big blind e age por último no pré-flop.
 
 **Q. O que acontece se você perder seu blind?**
 

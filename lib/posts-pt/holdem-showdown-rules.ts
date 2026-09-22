@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "No showdown, o último jogador que apostou ou aumentou mostra primeiro. Se todos deram check no river, o primeiro jogador ativo à esquerda do botão abre o jogo. Quem perdeu pode dar muck sem mostrar, mas quem pagou a aposta do river pode pedir para ver a mão de quem apostou.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-21",
-  masterUpdated: "2026-09-21",
+  updated: "2026-09-22",
+  masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -181,7 +181,7 @@ A. Slow roll é atrasar de propósito a exibição de uma mão vencedora que voc
 
 **Q. Em um all-in, quem mostra as cartas primeiro?**
 
-A. Em torneio, quando um jogador vai de all-in e não há mais apostas possíveis, todas as mãos envolvidas naquele pote são viradas para cima sem demora assim que toda a ação de apostas terminou — antes de as cartas comunitárias restantes serem distribuídas (regra 16 da TDA). Se existe um side pot, ele é pago primeiro e o pote principal depois — mas as cartas de quem está all-in já estão abertas muito antes disso. No cash de no-limit, as WSOP Live Action Rules fazem quem foi de all-in virar primeiro; em qualquer cash game, os do pote paralelo mostram antes de qualquer um que esteja all-in só pelo pote principal (regra 149). Enquanto os outros ainda têm fichas e podem apostar, tudo continua virado para baixo.
+A. Em torneio, quando um jogador vai de all-in e não há mais apostas possíveis, todas as mãos envolvidas naquele pote são viradas para cima sem demora assim que toda a ação de apostas terminou — antes de as cartas comunitárias restantes serem distribuídas (regra 16 da TDA). Se existe um side pot, ele é pago primeiro e o pote principal depois — mas as cartas de quem está all-in já estão abertas muito antes disso. No cash de no-limit, se as apostas terminaram antes do river, as WSOP Live Action Rules fazem quem foi de all-in virar primeiro; em qualquer cash game, os do pote paralelo mostram antes de qualquer um que esteja all-in só pelo pote principal (regra 149). Enquanto os outros ainda têm fichas e podem apostar, tudo continua virado para baixo.
 
 **Q. O que significa "cards speak" no poker?**
 

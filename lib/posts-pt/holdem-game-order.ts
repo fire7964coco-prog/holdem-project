@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Uma mão de Texas Hold'em segue esta ordem: postar os blinds → receber duas cartas fechadas → pré-flop → flop (3 cartas) → turn (1 carta) → river (1 carta) → showdown, com quatro rodadas de apostas no total.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-09-21",
-  masterUpdated: "2026-09-21",
+  updated: "2026-09-22",
+  masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎬",
@@ -261,7 +261,7 @@ Aqui está tudo o que você pode fazer na mesa — a parte que os iniciantes mai
 
 </div>
 
-==r:**Importante:** no pré-flop não dá para dar check — a menos que a sua própria aposta postada já seja a aposta viva.== O big blind é uma aposta viva, então toda posição cuja própria aposta ainda não seja a aposta viva precisa pagar, aumentar ou foldar. ==O big blind pode dar check se ninguém tiver aumentado nem postado straddle — e também quem postou um straddle vivo, porque essa aposta postada é a abertura dele e ele age por último no pré-flop (regras 159 e 165 do regulamento Live Action da WSOP); para todos os demais, o check só passa a existir do flop em diante.==
+==r:**Importante:** no pré-flop não dá para dar check — a menos que a sua própria aposta postada já seja a aposta viva.== O big blind é uma aposta viva, então toda posição cuja própria aposta ainda não seja a aposta viva precisa pagar, aumentar ou foldar. ==O big blind pode dar check se ninguém tiver aumentado nem postado straddle — e também quem postou um straddle vivo, desde que ninguém tenha aumentado nem feito re-straddle depois, porque essa aposta postada é a abertura dele e ele age por último no pré-flop (regras 159 e 165 do regulamento Live Action da WSOP); para todos os demais, o check só passa a existir do flop em diante.==
 
 Para um guia de decisão mais profundo sobre quando usar cada jogada — com uma tabela de decisão check-call-raise-fold — veja as [ações de aposta explicadas](/pt/blog/holdem-betting-actions).
 

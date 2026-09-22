@@ -15,7 +15,7 @@ export const POST: Post = {
   tldr: "Preflop, the player to the left of the big blind bets first. On the flop, turn and river it is the first live player to the left of the button — usually the small blind. (Heads-up flips this.) The hand itself runs blinds → hole cards → preflop → flop → turn → river → showdown, with four betting rounds.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-09-21",
+  updated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎬",
@@ -270,7 +270,7 @@ Here is every action available at the table — the part beginners mix up most.
 
 </div>
 
-==r:**Important:** preflop you can't check — unless your own post is already the live bet.== The big blind is a live bet, so every position whose own post isn't already the live bet must call, raise, or fold. ==The big blind may check if no one has raised or straddled — and so may a player who posted a live straddle, since that post is their opening bet and they act last preflop (WSOP Live Action Rules 159 · 165); for everyone else, checking begins on the flop.==
+==r:**Important:** preflop you can't check — unless your own post is already the live bet.== The big blind is a live bet, so every position whose own post isn't already the live bet must call, raise, or fold. ==The big blind may check if no one has raised or straddled — and so may a player whose live straddle has not been raised or re-straddled, since that post is their opening bet and they act last preflop (WSOP Live Action Rules 159 · 165); for everyone else, checking begins on the flop.==
 
 For a deeper decision guide on when to use each move — with a check-call-raise-fold decision table — see [betting actions explained](/en/blog/holdem-betting-actions).
 

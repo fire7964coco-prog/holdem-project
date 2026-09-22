@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Blinds are forced bets posted before cards are dealt. The small blind sits left of the dealer button and the big blind to their left; the big blind — usually double the small blind — is the table's betting unit.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-09-21",
+  updated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "💰",
@@ -118,13 +118,13 @@ Stakes are written **SB/BB**. A "$1/$2" game means a $1 small blind and a $2 big
 
 From the early or middle stages of most tournaments, an **ante** is added — a small extra forced bet collected every hand on top of the blinds, which builds the pot and rewards aggression. The common modern version is the **big blind ante**: instead of everyone tossing in chips, ==the big blind posts one ante — typically equal to one big blind — for the whole table==, which keeps the game fast and clean. When and how antes kick in is part of [the tournament blind structure](/en/blog/holdem-tournament).
 
-One more forced-bet cousin you'll see in cash games: the **straddle** — a *voluntary* extra blind (usually 2x the BB) posted from the seat left of the big blind, which temporarily raises the stakes for that hand. It has its own rules, types, and action order — the full breakdown is in [what a straddle is and whether you should post one](/en/blog/holdem-straddle "thumb:/images/holdem-straddle-hero.webp").
+One more forced-bet cousin you'll see in cash games: the **straddle** — a *voluntary* extra blind (usually 2x the BB) posted from UTG (left of the big blind) or, where allowed, the button, which temporarily raises the stakes for that hand. Under WSOP rules the button straddle takes precedence and is not allowed in limit games. It has its own rules, types, and action order — the full breakdown is in [what a straddle is and whether you should post one](/en/blog/holdem-straddle "thumb:/images/holdem-straddle-hero.webp").
 
 ---
 
 ## Who Posts the Blinds in Heads-Up Poker?
 
-When only two players are left (or in a heads-up match), the usual rule ==r:flips==. The **dealer button posts the small blind** and acts ==**first**== before the flop, while the other player posts the big blind and acts ==**last**== preflop — then first on every later street. It's the one time the button pays a blind, and it catches almost everyone the first time.
+When only two players are left (or in a heads-up match), the usual rule ==r:flips==. The **dealer button posts the small blind** and acts ==**first**== before the flop, while the other player posts the big blind and acts ==**last**== preflop — then first on every later street.
 
 ---
 
@@ -175,7 +175,7 @@ A. Yes. On your turn you can fold like anyone else; the small blind can give up 
 
 **Q. Who posts the blinds in heads-up poker?**
 
-A. With only two players, the rule flips: the dealer button posts the small blind and acts first before the flop, while the other player posts the big blind and acts last preflop. It is the only time the button pays a blind.
+A. With only two players, the rule flips: the dealer button posts the small blind and acts first before the flop, while the other player posts the big blind and acts last preflop.
 
 **Q. What happens if you miss your blind?**
 

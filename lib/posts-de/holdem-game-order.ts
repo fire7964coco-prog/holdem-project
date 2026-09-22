@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Eine Texas-Hold'em-Hand läuft so ab: Blinds setzen → zwei Hole Cards erhalten → Preflop → Flop (3 Karten) → Turn (1 Karte) → River (1 Karte) → Showdown – mit insgesamt vier Setzrunden.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-09-21",
-  masterUpdated: "2026-09-21",
+  updated: "2026-09-22",
+  masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "16 Min.",
   emoji: "🎬",
@@ -261,7 +261,7 @@ Hier ist jede Aktion, die dir am Tisch zur Verfügung steht – der Teil, den An
 
 </div>
 
-==r:**Wichtig:** Preflop kannst du nicht checken – es sei denn, dein eigener Einsatz ist schon die aktive Bet.== Der Big Blind ist eine aktive Bet, also muss jede Position, deren eigener Post nicht schon die aktive Bet ist, callen, raisen oder folden. ==Der Big Blind darf checken, wenn niemand erhöht oder gestraddelt hat – und ebenso, wer einen Live Straddle gepostet hat, denn dieser Post ist seine Eröffnungsbet und er handelt Preflop als Letzter (WSOP Live Action Rules 159 · 165); für alle anderen beginnt das Checken erst am Flop.==
+==r:**Wichtig:** Preflop kannst du nicht checken – es sei denn, dein eigener Einsatz ist schon die aktive Bet.== Der Big Blind ist eine aktive Bet, also muss jede Position, deren eigener Post nicht schon die aktive Bet ist, callen, raisen oder folden. ==Der Big Blind darf checken, wenn niemand erhöht oder gestraddelt hat – und ebenso, wer einen Live Straddle gepostet hat, sofern danach weder geraist noch re-straddelt wurde, denn dieser Post ist seine Eröffnungsbet und er handelt Preflop als Letzter (WSOP Live Action Rules 159 · 165); für alle anderen beginnt das Checken erst am Flop.==
 
 Einen tieferen Entscheidungs-Guide dazu, wann welcher Zug der richtige ist – inklusive Check-Call-Raise-Fold-Entscheidungstabelle – findest du unter [Setzaktionen im Poker erklärt](/de/blog/holdem-betting-actions).
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Texas Hold'em kennt 5 Setz-Aktionen: Check (kostenlos schieben), Bet (die Runde eröffnen), Call (einen Einsatz mitgehen), Raise (erhöhen – der Mindest-Raise entspricht dem vorherigen Bet oder Raise) und Fold. Checken darfst du nur, solange vor dir kein offener Einsatz steht – preflop also normalerweise nur als Big Blind (oder wer einen Live Straddle gepostet hat).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-09-21",
-  masterUpdated: "2026-09-21",
+  updated: "2026-09-22",
+  masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "9 Min.",
   emoji: "🃏",
@@ -76,7 +76,7 @@ Checken ist kein Aufgeben. Du behältst deine Karten, du behältst jede Option, 
 Checken ist in zwei Arten von Situationen möglich:
 
 - **Noch niemand hat gesetzt** auf der aktuellen Street (Flop, Turn oder River)
-- **Du bist Preflop der Big Blind und niemand hat erhöht** – dein Blind zählt bereits als aktiver Einsatz, also darfst du checken und den Flop gratis sehen (dasselbe gilt für einen Spieler, der einen Live Straddle gepostet hat)
+- **Du bist Preflop der Big Blind und niemand hat erhöht oder gestraddelt** – dein Blind zählt bereits als aktiver Einsatz, also darfst du checken und den Flop gratis sehen (dasselbe gilt für einen Live-Straddler, sofern danach weder geraist noch re-straddelt wurde)
 
 Setzt jemand, nachdem du gecheckt hast, stehst du vor einer frischen Entscheidung: folden, callen oder raisen. Erst zu checken und dann zu raisen, wenn ein Gegner setzt, nennt sich ==Check-Raise== – das ist im Texas Hold'em völlig legal und eine Standardwaffe, kein Angle-Shooting.
 
@@ -234,7 +234,7 @@ A. Das hängt von der Größe des All-ins ab. Ist das All-in ein voller, legaler
 
 **Q. Was ist ein String Bet beim Poker?**
 
-A. Der Versuch, in mehreren Bewegungen zu setzen oder zu erhöhen – zwischendurch zurück zum eigenen Stack –, ohne vorher „Raise“ anzusagen (==Rule 103==). Die zweite Bewegung zählt nie – nur die Chips der ersten Bewegung gelten: ein Call, wenn sie unter der Hälfte eines Min-Raise liegen, ein erzwungener voller Min-Raise, wenn sie die Hälfte erreichen (TDA-Regel 43-A). Dieselbe Regel verbietet auch eine täuschende Geste, die Action außer der Reihe provozieren soll, bevor die eigene Aktion abgeschlossen ist. Sagst du dagegen erst „Call“ und legst dann nach, ist das kein String Bet, sondern eine bindende Ansage (==Rule 90.d==) – der Effekt ist derselbe. Sag deine Aktion laut an oder beweg alle Chips in einer Bewegung.
+A. Der Versuch, in mehreren Bewegungen zu setzen oder zu erhöhen – zwischendurch zurück zum eigenen Stack –, ohne vorher „Raise“ anzusagen (==Rule 103==). Die zweite Bewegung zählt nie – nur die ersten Chips gelten, zunächst beurteilt nach den Call-Regeln für einen oder mehrere Chips (TDA-Regeln 44–45, Ausgabe 2024). Wo die Halb-Minimum-Schwelle aus Regel 43-A greift, zählt der Betrag über dem Call, nicht die gesamte Chipsumme: Unter der Hälfte der größten vorherigen vollen Bet oder Raise-Erhöhung ist es ein Call, ab der Hälfte muss auf den vollen Min-Raise ergänzt werden. Eine vorherige Raise-Ansage oder ein All-in wird nach den jeweils eigenen Regeln behandelt. Dieselbe Regel verbietet auch eine täuschende Geste, die Action außer der Reihe provozieren soll, bevor die eigene Aktion abgeschlossen ist. Sagst du dagegen erst „Call“ und legst dann nach, ist das kein String Bet, sondern eine bindende Ansage (==Rule 90.d==) – der Effekt ist derselbe. Sag deine Aktion laut an oder beweg alle Chips in einer Bewegung.
 
 **Q. Was bedeutet Limpen beim Poker?**
 

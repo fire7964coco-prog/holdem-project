@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "At showdown, the last player to bet or raise shows first. If the river was checked through, the first active player left of the button shows first. You can muck without showing if you lose, but whoever called the river bet can ask to see the bettor's hand.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-21",
+  updated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -179,7 +179,7 @@ A. Slow rolling is deliberately delaying showing a winning hand you already know
 
 **Q. In an all-in situation, who shows their cards first?**
 
-A. In a tournament, when a player goes all-in and no further betting is possible, all hands involved in that pot are tabled without delay once all betting action is complete — before the remaining community cards are dealt (TDA Rule 16). If there is a side pot, it is awarded first and the main pot after it — but the all-in player's cards are face-up long before that. In a no-limit cash game the WSOP Live Action rules have the player who pushed all-in turn over first; in any cash game, side-pot players show before anyone who is all-in for only the main pot (Rule 149). While the others still have chips and can bet, everything stays face-down.
+A. In a tournament, when a player goes all-in and no further betting is possible, all hands involved in that pot are tabled without delay once all betting action is complete — before the remaining community cards are dealt (TDA Rule 16). If there is a side pot, it is awarded first and the main pot after it — but the all-in player's cards are face-up long before that. In a no-limit cash game, if betting ended before the river, the WSOP Live Action rules have the player who pushed all-in turn over first; in any cash game, side-pot players show before anyone who is all-in for only the main pot (Rule 149). While the others still have chips and can bet, everything stays face-down.
 
 **Q. What does "cards speak" mean in poker?**
 

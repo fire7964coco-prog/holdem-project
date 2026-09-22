@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Las ciegas son apuestas obligatorias que se ponen antes de repartir las cartas. La ciega pequeña se sienta a la izquierda del botón y la ciega grande a su izquierda; la ciega grande — normalmente el doble de la pequeña — es la unidad de apuesta de la mesa.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-09-21",
-  masterUpdated: "2026-09-21",
+  updated: "2026-09-22",
+  masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "💰",
@@ -119,13 +119,13 @@ Los niveles se escriben **SB/BB**. Una partida "$1/$2" significa ciega pequeña 
 
 Desde las fases tempranas o medias de la mayoría de torneos se añade un **ante** — una pequeña apuesta obligatoria extra que se recauda en cada mano además de las ciegas, que engorda el bote y premia la agresividad. La versión moderna más extendida es el **big blind ante**: en lugar de que cada jugador eche fichas, ==la ciega grande pone un solo ante — normalmente igual a una ciega grande — por toda la mesa==, lo que mantiene el juego rápido y limpio. Cuándo y cómo entran los antes forma parte de [la estructura de ciegas del torneo](/es/blog/holdem-tournament).
 
-Hay otra prima de las apuestas obligatorias que verás en cash: el **straddle** — una ciega extra *voluntaria* (normalmente 2x la BB) que se pone desde el asiento a la izquierda de la ciega grande y que sube temporalmente los niveles de esa mano. Tiene sus propias reglas, variantes y orden de acción — el desglose completo está en [qué es un straddle y si te conviene ponerlo](/es/blog/holdem-straddle "thumb:/images/holdem-straddle-hero.webp").
+Hay otra prima de las apuestas obligatorias que verás en cash: el **straddle** — una ciega extra *voluntaria* (normalmente 2x la BB) que se pone desde UTG (a la izquierda de la ciega grande) o, donde se permita, desde el botón y que sube temporalmente los niveles de esa mano. Según las reglas de la WSOP, el straddle del botón tiene prioridad y no se permite en partidas limit. Tiene sus propias reglas, variantes y orden de acción — el desglose completo está en [qué es un straddle y si te conviene ponerlo](/es/blog/holdem-straddle "thumb:/images/holdem-straddle-hero.webp").
 
 ---
 
 ## ¿Quién pone las ciegas en el heads-up?
 
-Cuando solo quedan dos jugadores (o en un duelo heads-up), la regla habitual ==r:se invierte==. El **botón pone la ciega pequeña** y habla ==**primero**== antes del flop, mientras que el otro jugador pone la ciega grande y habla ==**el último**== preflop — y luego primero en todas las calles siguientes. Es la única situación en la que el botón paga una ciega, y pilla a casi todo el mundo la primera vez.
+Cuando solo quedan dos jugadores (o en un duelo heads-up), la regla habitual ==r:se invierte==. El **botón pone la ciega pequeña** y habla ==**primero**== antes del flop, mientras que el otro jugador pone la ciega grande y habla ==**el último**== preflop — y luego primero en todas las calles siguientes.
 
 ---
 
@@ -176,7 +176,7 @@ A. Sí. En tu turno puedes retirarte como cualquiera; la ciega pequeña puede re
 
 **Q. ¿Quién pone las ciegas en el heads-up?**
 
-A. Con solo dos jugadores la regla se invierte: el botón pone la ciega pequeña y habla primero antes del flop, mientras el otro jugador pone la ciega grande y habla el último preflop. Es la única vez que el botón paga una ciega.
+A. Con solo dos jugadores la regla se invierte: el botón pone la ciega pequeña y habla primero antes del flop, mientras el otro jugador pone la ciega grande y habla el último preflop.
 
 **Q. ¿Qué pasa si te saltas tu ciega?**
 
