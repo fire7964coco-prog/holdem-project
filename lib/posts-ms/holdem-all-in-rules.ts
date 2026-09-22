@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "All-in bermaksud mempertaruhkan semua cip yang anda ada. Anda hanya boleh menang jumlah yang anda samai daripada setiap lawan (pot utama). Pertaruhan lebihan daripada stack yang lebih besar membentuk side pot yang anda tidak boleh menangi. All-in yang kurang daripada satu raise penuh TIDAK membuka semula pertaruhan bagi pemain yang sudah bertindak.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-21",
+  updated: "2026-09-22",
   masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "10 minit",
@@ -146,9 +146,9 @@ Kenapa peraturan ini wujud? Ia melindungi pemain daripada dipaksa menghadapi rai
 
 ### Kes Lanjutan: Bagaimana Jika Beberapa Pemain All-In Pendek?
 
-Inilah versi yang mengelirukan pemain tetap sekalipun. Beberapa all-in pendek boleh **terkumpul** menjadi satu raise penuh — dan jika inkremen gabungan mereka mencapai ambang, pertaruhan dibuka semula untuk pemain yang sudah bertindak.
+Inilah situasi yang mengelirukan pemain tetap sekalipun. Beberapa all-in pendek boleh **terkumpul**, tetapi pembukaan semula dinilai secara berasingan untuk setiap pemain, bermula daripada tindakan terakhir pemain itu. Hak untuk raise kembali hanya jika jumlah kenaikan yang dihadapinya mencapai bet atau raise penuh terakhir.
 
-Ini peraturan rasmi TDA "re-opening the bet", dan kebanyakan card room mengikutinya.
+Ini ialah Peraturan 47-A TDA 2024 bagi "re-opening the bet" dalam No-Limit dan Pot-Limit. Untuk cash game, semak house rule dahulu.
 
 **Contoh (Blind $1/$2, di flop):**
 
@@ -158,7 +158,7 @@ Ini peraturan rasmi TDA "re-opening the bet", dan kebanyakan card room mengikuti
 
 Inkremen gabungan: $4 + $7 = **$11** — mencapai ambang raise minimum $10.
 
-**Keputusan: pertaruhan DIBUKA SEMULA untuk Pemain A.** A boleh fold, call, atau re-raise, walaupun B mahupun C tidak membuat raise penuh secara berasingan.
+**Keputusan: pertaruhan DIBUKA SEMULA untuk Pemain A.** A kini menghadapi $21, iaitu kenaikan $11 daripada tindakan terakhirnya pada $10—cukup untuk raise penuh $10. Namun pemain yang call $14 di antara B dan C hanya menghadapi kenaikan $7, jadi pertaruhan tidak dibuka semula untuk pemain itu.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -181,7 +181,7 @@ Ambang raise minimum sentiasa merujuk kepada *bet atau raise penuh sah yang tera
 | Satu all-in < raise penuh | ❌ Tidak — call atau fold sahaja |
 | Satu all-in ≥ raise penuh | ✅ Ya — semua boleh re-raise |
 | Beberapa all-in pendek, gabungan < raise penuh | ❌ Tidak |
-| Beberapa all-in pendek, gabungan ≥ raise penuh | ✅ Ya |
+| Beberapa all-in pendek; kenaikan sejak tindakan terakhir pemain ≥ bet/raise penuh | ✅ Ya — untuk pemain itu sahaja |
 | Pemain yang BELUM bertindak | ✅ Sentiasa boleh raise (walau apa pun) |
 
 </div>
@@ -192,7 +192,7 @@ Ambang raise minimum sentiasa merujuk kepada *bet atau raise penuh sah yang tera
 
 Apabila semua pertaruhan selesai dan ada pemain yang all-in, inilah yang berlaku di showdown:
 
-1. **Kad dibuka menghadap ke atas.** Dalam tournament, semua hand yang terlibat dalam all-in biasanya dibuka sebaik sahaja pertaruhan selesai. Dalam cash game, [peraturan showdown penyerang terakhir](/ms/blog/holdem-showdown-rules) digunakan dahulu, kemudian pemain all-in menunjukkan kad.
+1. **Kad dibuka menghadap ke atas.** Dalam tournament, apabila seorang pemain all-in dan semua pertaruhan selesai, semua hand yang masih hidup mesti segera ditunjukkan—tiada muck (Peraturan 16 TDA 2024). Dalam cash game, house rule terpakai; menurut WSOP 2026 B149, pemain side pot menunjukkan dahulu sebelum pemain yang hanya layak untuk main pot. Dalam No-Limit, jika pertaruhan tamat sebelum river, pemain all-in menunjukkan dahulu; jika tidak, penyerang terakhir di river bermula, atau pemain aktif pertama di kiri button jika river di-check hingga habis. Lihat [peraturan showdown](/ms/blog/holdem-showdown-rules).
 2. **Side pot diagihkan dahulu.** Pengedar menyelesaikan side pot yang paling baharu dibentuk dahulu, kemudian bergerak ke belakang sehingga pot utama.
 3. **Kad yang bercakap.** Hand terbaik memenangi setiap pot yang dia layak — tidak kira apa yang pemain kata mereka pegang.
 4. **Pemenang boleh lebih daripada seorang.** Pemain A boleh menang pot utama. Pemain B boleh menang side pot. Tiada siapa mengambil semuanya semata-mata kerana menang pot "miliknya".
@@ -244,7 +244,7 @@ A. Anda mengambil pot utama (jumlah yang anda samai daripada setiap pemain) dan 
 
 **Q. Adakah all-in mendedahkan hand anda?**
 
-A. Dalam tournament, ya — sebaik sahaja semua pertaruhan selesai dengan all-in, semua hand yang terlibat biasanya dibuka menghadap ke atas. Dalam cash game live, peraturan showdown biasa digunakan: penyerang terakhir menunjukkan dahulu, kemudian yang lain menunjukkan atau membuang kad.
+A. Dalam tournament, ya—apabila seorang pemain all-in dan semua pertaruhan selesai, semua hand yang masih hidup mesti segera ditunjukkan dan tidak boleh muck (Peraturan 16 TDA 2024). Dalam cash game, house rule terpakai. Menurut WSOP 2026 B149, pemain side pot menunjukkan dahulu; dalam No-Limit, jika pertaruhan tamat sebelum river, pemain all-in menunjukkan dahulu.
 
 **Q. Boleh ke buat "run it twice" dalam all-in poker?**
 
@@ -256,11 +256,11 @@ A. Table stakes bermaksud anda hanya boleh mempertaruhkan cip yang ada di hadapa
 
 **Q. Kalau dua pemain all-in dengan jumlah berbeza, siapa tunjuk dahulu?**
 
-A. All-in terakhir yang merupakan bet atau raise dikira sebagai tindakan agresif terakhir dan menunjukkan kad dahulu. All-in yang sekadar call dengan jumlah lebih kecil bukan tindakan agresif — dalam cash game, pemain yang membuat bet asal tetap menunjukkan dahulu. ==r:Dalam tournament, di sini langsung tiada susunan siapa membuka kad dahulu== — sebaik pertaruhan all-in selesai, semua hand yang terlibat dibuka serentak (Peraturan TDA 16). Dalam cash game, jika ia all-in yang di-call tanpa tindakan lanjut, pemain yang call boleh membuang kad jika kalah selepas melihat hand pemain all-in (dalam tournament semua hand yang terlibat kekal terbuka).
+A. ==r:Dalam tournament, tiada susunan "siapa menunjukkan dahulu"==—apabila seorang pemain all-in dan pertaruhan selesai, semua hand yang masih hidup mesti segera ditunjukkan (Peraturan 16 TDA 2024). Dalam cash game, house rule terpakai; menurut WSOP 2026 B149, pemain side pot menunjukkan dahulu, dan dalam No-Limit yang tamat sebelum river, pemain all-in menunjukkan dahulu. Jumlah all-in sahaja tidak menentukan siapa yang bermula.
 
 **Q. Adakah peraturan all-in berbeza antara tournament dan cash game?**
 
-A. Peraturan terasnya sama, tetapi ada dua perbezaan praktikal. Pertama, dalam tournament semua hand yang terlibat dalam all-in dibuka menghadap ke atas sebaik sahaja semua pertaruhan selesai (Peraturan TDA 16) — anda tidak boleh membuang kad sebelum showdown. Dalam cash game, susunan showdown biasa digunakan dan pemain boleh membuang kad. Kedua, run it twice biasa dalam cash game (jika kedua-dua pemain bersetuju) tetapi lazimnya tidak dibenarkan dalam tournament.
+A. Dalam tournament, apabila seorang pemain all-in dan pertaruhan selesai, semua hand yang masih hidup mesti segera ditunjukkan dan tidak boleh muck (Peraturan 16 TDA 2024). Dalam cash game, house rule serta susunan khusus bilik seperti WSOP 2026 B149 terpakai, jadi peluang untuk muck juga bergantung pada house rule. Run it twice lazim dalam banyak cash game dengan persetujuan, tetapi biasanya tidak dibenarkan dalam tournament.
 
 ---
 

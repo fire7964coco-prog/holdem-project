@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Sheria za Showdown Texas Hold'em: Nani Aonyeshe Kwanza, Muck na Slow Roll",
   seoTitle: "Nani Aonyeshe Kwanza? Sheria za Showdown na Muck",
   desc: "Nani aonyeshe karata kwanza kwenye showdown? Waweza ku-muck bila kuonyesha? Last aggressor, cards speak, slow roll na all-in — sheria zote wazi.",
-  tldr: "Kwenye showdown, mchezaji wa mwisho aliye-bet au ku-raise anaonyesha kwanza. Kama river ilipita kwa check kutoka kwa wote, mchezaji wa kwanza aliye hai upande wa kushoto wa button anaonyesha kwanza. Waweza ku-muck bila kuonyesha kama umeshinda kushindwa, lakini wapinzani wanaweza kuomba kuona mkono uliolipwa (called).",
+  tldr: "Katika showdown ya tournament isiyo all-in, last river aggressor anaonyesha kwanza; river iki-checkiwa na wote, mchezaji active wa kwanza kushoto kwa button. Mchezaji akiwa all-in na betting yote imekamilika, mikono yote iliyobaki lazima iwekwe wazi mara moja. River caller ambaye bado ana karata au amezionyesha anaweza kuomba mkono wa last aggressor. Cash game hufuata house rule.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-08-09",
+  updated: "2026-09-22",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -39,15 +39,15 @@ Sheria inategemea jinsi raundi ya mwisho ya kuweka dau ilivyoisha (kwa mfululizo
 
 | Hatua ya street ya mwisho | Nani anaonyesha kwanza |
 |--------------------|-----------------|
-| Mtu ali-bet au ku-raise kwenye river | ==Mchezaji wa mwisho aliye-bet au ku-raise== anaonyesha kwanza |
+| Tournament isiyo all-in; mtu ali-bet au ku-raise kwenye river | ==Mchezaji wa mwisho aliye-bet au ku-raise== anaonyesha kwanza |
 | Kila mtu ali-check river | Mchezaji wa kwanza aliye hai upande wa kushoto wa button anaonyesha kwanza |
-| All-in kwenye street ya awali (hakuna bet ya river) | Mikono yote inawekwa wazi (face-up) kabla/wakati wa runout |
+| Tournament; kuna all-in na betting yote imekamilika | Mikono yote iliyobaki inawekwa wazi mara moja kabla ya runout; hakuna muck |
 
 </div>
 
 ![Infographic ya mpangilio wa showdown Texas Hold'em — nani anaonyesha kwanza kwenye bodi J♥ 9♠ 4♦ 2♠ K♥](/images/holdem-showdown-who-shows-first.webp)
 
-==g:Neno muhimu ni "last aggressor" (mchezaji wa mwisho aliyeshambulia).== Kama uli-bet river ukapewa call, wewe unaonyesha kwanza — si yule aliyeita. Yule aliye-call anapata kuona mkono wako kabla ya kuamua kuonyesha au ku-muck mkono wake.
+==g:Katika tournament isiyo all-in, neno muhimu ni "last aggressor".== Uki-bet river ukapewa call, wewe unaonyesha kwanza. River caller ambaye bado ana karata au amezionyesha anaweza kuomba mkono wa last aggressor; cash game hufuata house rule.
 
 ---
 
@@ -57,11 +57,11 @@ Ndiyo — **kama umeshindwa**.
 
 Mara tu last aggressor anapoonyesha mkono wake, wachezaji wengine wanaweza:
 - **Kuonyesha mkono wao** kama wanadhani wanashinda
-- **Ku-muck karata chali (face-down)** kama wanaona wameshindwa — hakuna haja ya kufichua karata zako. Lakini hii inatumika tu ilimradi hakuna aliye all-in: kwenye mashindano, mara mchezaji anapokuwa all-in, TDA Rule 16 inataka mikono yote iliyo kwenye pot ionyeshwe, na hakuna anayeruhusiwa ku-muck (cash game zinafuata house rules, na cardroom nyingi zinamruhusu aliye-call ku-muck)
+- **Ku-muck karata chali (face-down)** kama wameshindwa wazi—lakini huenda kukawa na ombi halali la kuona mkono. Kwenye tournament, mchezaji akiwa all-in na betting yote imekamilika, mikono yote iliyobaki lazima iwekwe wazi mara moja na hakuna muck (TDA 2024 Rule 16). Cash game hufuata house rule.
 
-==r:Lakini kuna kanuni moja muhimu ya kipekee:== kama bet yako ya river ilipewa call, yule aliye-call alilipa bei kamili ili kuona mkono wako. Kumwomba dila ageuze mkono uliokwisha pigwa muck — hiyo ndiyo kanuni ya **"I want to see that hand"**. Kwenye mashindano, ==TDA Rule 18== inaichora kwa mipaka finyu: yeyote ambaye wakati wa showdown hana tena karata mkononi, au ali-muck karata zake chali, anapoteza haki ya kuomba. Haki hiyo haiwezi kunyimwa kwa yule tu aliye-call bet ya river na akaonyesha au akashikilia karata zake — na hata hapo, ni kwa mkono wa ==last aggressor== pekee, mkono aliolipia kuuona. Mengine yote ni uamuzi wa mkurugenzi wa mashindano; kwenye cash game cardroom nyingi hulegeza zaidi. (Usiichanganye na "show one, show all", inayomaanisha kwamba kama utaonyesha karata zako kwa hiari kwa mchezaji mmoja, kila mtu mezani anapata kuziona.)
+==r:Kipekee muhimu:== kwa TDA 2024 Rule 18, river caller ambaye bado ana karata au amezionyesha ana haki isiyoweza kunyimwa ya kuona mkono wa last aggressor. Maombi mengine ni uamuzi wa floor; ku-muck chali kunafuta haki hiyo. Kwenye cash game, house rule inatumika na floor huzingatia mazingira ya collusion. Hii ni tofauti na "show one, show all".
 
-Kanuni ya kivitendo: ==ukiwa last aggressor wewe ndiye unayegeuza karata — hata bluff iliyopewa call.== Ku-muck karata zikiwa chini ni chaguo la aliye-call, baada ya kuona mkono wa aliyeweka bet. Ukiweka bet kisha uka-muck haraka unapoteza mara mbili: aliye-call bado anaweza kudai kuona mkono wako, na kwa kuwa karata ndizo huamua, pot nyingi zimetupwa na wachezaji ambao ace-high yao ilikuwa mbele.
+Kanuni ya kivitendo: kwenye tournament isiyo all-in, ==last aggressor anaonyesha—hata bluff iliyopewa call.== River caller ambaye bado ana karata au amezionyesha anaweza kuomba mkono huo. Kwenye cash game, fuata house rule na usi-muck kabla ya kuhakikisha umeshindwa.
 
 ---
 
@@ -77,19 +77,19 @@ Mfano: Button, small blind na big blind wanafika river. SB ana-check, BB ana-che
 
 ## Sheria za Showdown ya All-In — Je, Mchezaji wa All-In Anaonyesha Kwanza?
 
-Wakati mchezaji anaenda all-in na hakuna bet zaidi zinazowezekana, kwa kawaida karata zote za pamoja (community cards) zilizobaki hutolewa huku **mikono yote ikiwa wazi (face-up)**. Hii inalinda uadilifu wa mkono — hakuna mchezaji anayepaswa kuweza ku-muck kimkakati kwenye hali ya all-in.
+Kwenye tournament, mchezaji akiwa all-in na betting yote imekamilika, mikono yote iliyobaki lazima **iwekwe wazi mara moja** kabla ya board kuendelea (TDA 2024 Rule 16). Kwenye cash game, house rule inatumika na WSOP 2026 B149 ina mpangilio tofauti.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Hali ya all-in | Sheria ya showdown |
 |----------------|---------------|
-| Mchezaji anaenda all-in, wengine wana-call, hakuna bet zaidi zinazowezekana | Mikono yote wazi (face-up) kabla au wakati wa runout |
-| Bet ya all-in kwenye river inapewa call | Aliye all-in anaonyesha kwanza kama last aggressor — lakini kwenye mashindano ==r:hakuna anayeruhusiwa ku-muck==: kwa mujibu wa TDA Rule 16 hata aliye-call lazima aonyeshe mkono wake |
-| All-in nyingi zinazounda side pot nyingi | Kila pot inasuluhishwa peke yake; mikono yote inayohusika inaonyeshwa |
+| Tournament; mchezaji all-in, wengine wana-call, betting imekamilika | Mikono yote iliyobaki inawekwa wazi mara moja kabla ya runout; hakuna muck |
+| Tournament; bet ya all-in kwenye river inapewa call | Mikono yote iliyobaki inawekwa wazi mara moja; usisubiri mpangilio wa nani anaonyesha kwanza |
+| All-in na side pot nyingi, betting yote imekamilika | Mikono yote iliyobaki inawekwa wazi; kila pot inasuluhishwa peke yake |
 
 </div>
 
-Jambo la kuzingatia: kama kuna **side pot** (wachezaji wengine bado wana chipsi na wanaendelea ku-bet), side pot inalipwa kwanza, kisha pot kuu. Huo ni **mpangilio wa malipo**, hauhusiani na wakati wa kugeuza karata: mkono wa mchezaji wa all-in tayari uko wazi tangu dakika ambayo hakuna bet inayowezekana tena. Mfano wa TDA kwa Rule 16 unasema wazi — usisubiri side pot igawanywe ndipo ugeuze mkono wa aliye all-in.
+Jambo la kuzingatia: **side pot inalipwa** kwanza, lakini mpangilio wa malipo ni tofauti na mpangilio wa kuonyesha. Kwenye tournament, mikono yote iliyobaki inawekwa wazi betting yote inapokamilika. Kwenye cash game ya WSOP 2026 B149, wachezaji wa side pot huonyesha kwanza; katika No-Limit iliyomalizika kabla ya river, mchezaji wa all-in huonyesha kwanza.
 
 Kwa jinsi side pot inavyojengwa na kulipwa wachezaji wanapokuwa all-in, angalia [sheria za all-in na side pots](/sw/blog/holdem-all-in-rules); kwa pot zilizogawanywa, angalia sheria za split pot na chop.
 
@@ -103,7 +103,7 @@ Kwa jinsi side pot inavyojengwa na kulipwa wachezaji wanapokuwa all-in, angalia 
 
 Kama mchezaji anasoma mkono wake vibaya na kusema "nina pair," lakini kwa kweli ana straight — straight inashinda. Dila anasoma karata na kutoa pot kwa mkono bora ulioonyeshwa.
 
-Hii inafanya kazi pande zote mbili. Kama unadhani umeshindwa ukapiga muck bila kuonyesha, lakini mkono wako ungekuwa mshindi — ==r:pot imekwenda==. Mkono wako hufa pale tu dila anapouingiza kwenye muck na usiweze tena kutambulika waziwazi — karata zilizowekwa chini hazifi zenyewe (TDA Rule 14). Hata hivyo, usiitegemee kamwe hali hiyo. Kama huna uhakika wa asilimia 100 kwamba umeshindwa, muache dila daima asome mkono wako kabla ya ku-muck.
+Karata zilizowekwa chali hazifi moja kwa moja. Kwa TDA 2024 Rule 14, floor anaweza kuuweka mkono wazi kama karata zake zinaweza kutambuliwa na kurejeshwa kwa uhakika wa 100%; mkono unakufa tu baada ya dila kuzichanganya na muck au utambulisho na urejeshaji wake kutokuwa na uhakika. Muache dila asome mkono wako kabla ya ku-muck.
 
 Hali halisi: unashikilia J♥ 10♥ kwenye bodi ya Q♥ 9♥ 8♥ 2♣ 5♦. Una straight flush ya queen-high (Q-J-10-9-8 za hearts). Mpinzani anaonyesha K♣ Q♦ (pair moja ya queens). Unashinda kwa mbali kabisa. Usi-muck tu kwa sababu umeona queen yake.
 
@@ -141,15 +141,15 @@ Uli-bet river. Mtu ana-call. Unaganda na kusubiri yeye aonyeshe. Hilo ni kinyume
 
 ### Kosa la 2: Ku-muck kabla dila hajasoma mkono
 
-Una uhakika kiasi kwamba umeshindwa. Unateleza karata zako chali (face-down) kuelekea muck. Dila anazivuta ndani. Inatokea ulikuwa na mshindi. Mkono umekufa — pot imepotea. ==Usi-muck kamwe hadi uwe na uhakika.== Muache dila asome mikono yote miwili.
+Umesukuma karata zako chali. Kama kosa linaonekana kabla dila hajazichukua, au wakati bado zinaweza kutambuliwa na kurejeshwa kwa uhakika wa 100%, floor anaweza kuuweka mkono wazi. Zikishachanganyika na muck au utambulisho na urejeshaji wake kutokuwa tena na uhakika, mkono unakufa. ==Usi-muck hadi uwe na uhakika.==
 
 ### Kosa la 3: Kudai kuona kila mkono uliolipwa (called)
 
-Katika cardroom nyingi waweza kumwomba dila afichue mkono uliopigwa muck — lakini mkono tu uliopewa call na kufika showdown. Mikono iliyo-fold imekufa na haiwezi kurudishwa kamwe. Kanuni ya kuomba ipo ili kulinda dhidi ya njama (collusion), si kutosheleza udadisi, na kuitumia vibaya kunachukuliwa kama ukorofi. Itumie kwa nadra.
+Kwenye tournament, river caller ambaye bado ana karata au amezionyesha anaweza kuomba mkono wa last aggressor (TDA 2024 Rule 18); maombi mengine ni uamuzi wa floor. Haki hiyo isiyoweza kunyimwa hupotea baada ya muck ya chali. Kwenye cash game, house rule inatumika; WSOP 2026 B147 inaweka ombi hilo katika mazingira ya uamuzi wa floor na collusion.
 
 ### Kosa la 4: Kutojua kwamba waweza kuonyesha mapema
 
-Kwenye showdown — yaani baada ya kila bet kufungwa — hakuna kanuni inayozuia kugeuza mkono wako kabla ya zamu yako rasmi. Lakini mradi mkono bado unaendelea na kuna hatua iliyosalia, ni kinyume chake: kuonyesha karata kunagharimu adhabu chini ya ==WSOP Rule 117==. ==g:Kama una nuts au mkono wenye nguvu sana, onyesha mara moja.== Wachezaji wengine wanashukuru. Inaharakisha mchezo. Na ni kinyume kabisa cha slow rolling.
+Betting ikikamilika, unaweza kuonyesha karata mapema kwenye showdown. Lakini kuonyesha wakati action bado ipo huleta adhabu chini ya ==WSOP Tournament Rules 2026 Rule 117==; hakufanyi mkono kuwa dead moja kwa moja. Hakikisha betting imekamilika kabla ya kuonyesha.
 
 ---
 
@@ -162,15 +162,15 @@ Kwenye showdown — yaani baada ya kila bet kufungwa — hakuna kanuni inayozuia
 
 **Q. Nani anaonyesha karata kwanza kwenye showdown ya poker?**
 
-A. Mchezaji wa mwisho aliyefanya hatua ya kushambulia (bet au raise) kwenye raundi ya mwisho ya kuweka dau lazima aonyeshe kwanza. Kama raundi ya mwisho ilipita kwa check kutoka kwa wachezaji wote, mchezaji wa kwanza aliye hai upande wa kushoto wa button anaonyesha kwanza, na zamu inaendelea kwa mwelekeo wa saa (clockwise).
+A. Kwenye tournament isiyo all-in, last aggressor wa raundi ya mwisho anaonyesha kwanza; wote wakicheck, mchezaji active wa kwanza kushoto kwa button. Kwenye tournament all-in, mikono yote iliyobaki inawekwa wazi mara betting inapokamilika. Cash game hufuata house rule na mpangilio wa WSOP 2026 B149.
 
 **Q. Je, lazima uonyeshe karata zako ukipewa call kwenye showdown?**
 
-A. Ndiyo — kama ulikuwa wa mwisho ku-bet au ku-raise kwenye river, lazima uonyeshe kwanza unapopewa call. Kama uli-call bet ya mtu mwingine, waweza ku-muck karata zako chali (face-down) baada ya kuona mkono wake kama umeshindwa. Kipekee ni all-in kwenye mashindano: kwa mujibu wa TDA Rule 16 hata aliye-call lazima aonyeshe karata zake. Na kwenye mashindano, anayeweza kuomba kuona mkono ni yule tu ambaye bado ana karata au ameshazionyesha — bila kupingwa, kwa mkono wa last aggressor pekee.
+A. Kwenye tournament isiyo all-in, last river aggressor anaonyesha kwanza baada ya kupewa call. River caller ambaye bado ana karata au amezionyesha anaweza kuomba mkono huo (TDA 2024 Rule 18); haki hiyo hupotea baada ya muck ya chali. Sheria za all-in na cash game ni tofauti.
 
 **Q. Waweza ku-muck kwenye showdown bila kuonyesha?**
 
-A. Ndiyo, lakini tu kama umeshindwa wazi. Mara tu mkono wa mshindi unapoonyeshwa, wachezaji wanaoshindwa wanaweza ku-muck chali (face-down). Kanuni ya kipekee ni kama mkono wako ulipewa call — wapinzani wanaweza kuomba kuuona. Usi-muck kamwe kabla dila hajasoma mikono yote miwili kama kuna shaka lolote kuhusu nani ameshinda.
+A. Kwenye showdown isiyo all-in, unaweza ku-muck kama umeshindwa wazi, lakini huenda kukawa na ombi halali la kuona mkono. Kwenye tournament yenye all-in na betting yote imekamilika, mikono yote iliyobaki lazima iwekwe wazi. Usi-muck kabla dila hajasoma mkono kama kuna shaka.
 
 **Q. Slow rolling katika poker ni nini na kwa nini ni jambo baya?**
 
@@ -178,11 +178,11 @@ A. Slow rolling ni kuchelewesha kwa makusudi kuonyesha mkono ulioshinda ambao ta
 
 **Q. Katika hali ya all-in, nani anaonyesha karata zake kwanza?**
 
-A. Wakati mchezaji anaenda all-in na hakuna bet zaidi zinazowezekana, mikono yote inayohusika kwenye pot hiyo kwa kawaida inaonyeshwa wazi (face-up) kabla au wakati wa runout ya community cards. Kama kuna side pot yenye bet zinazoendelea, last aggressor kati ya wachezaji hao anaonyesha kwanza kwa side pot. Mkono wa mchezaji wa all-in unaonyeshwa peke yake kwa pot kuu.
+A. Kwenye tournament, mikono yote haionyeshwi mara moja kama betting ya side pot bado inaendelea; betting yote ikikamilika, mikono yote iliyobaki inawekwa wazi mara moja. Kwenye cash game ya WSOP 2026 B149, wachezaji wa side pot huonyesha kwanza; katika No-Limit iliyomalizika kabla ya river, mchezaji wa all-in huonyesha kwanza, vinginevyo mpangilio wa river hutumika.
 
 **Q. "Cards speak" inamaanisha nini katika poker?**
 
-A. Cards speak inamaanisha mkono bora unashinda kulingana na kile karata zinaonyesha kwa kweli — si kulingana na kile wachezaji wanasema. Mchezaji anayesoma mkono wake vibaya na kutangaza mkono usio sahihi bado anashinda kama karata zake kwa kweli ndio mkono bora. Kinyume chake, mchezaji anayepiga muck bila kuthibitisha kwamba ameshindwa hana haki yoyote kwenye pot, hata kama mkono wake ungeshinda.
+A. Cards speak inamaanisha karata zilizowekwa wazi ndizo zinazoamua mkono. Karata chali hazifi moja kwa moja; zikiweza kutambuliwa na kurejeshwa kwa uhakika wa 100%, floor anaweza kuuweka mkono wazi. Zikichanganyika na muck au utambulisho na urejeshaji wake kutokuwa na uhakika, mkono unakufa—kwa hiyo usi-muck kabla dila hajausoma.
 
 **Q. Je, lazima uonyeshe karata zako ukishinda bila showdown?**
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Să dai all-in înseamnă să pariezi toate jetoanele din fața ta. De la fiecare adversar poți câștiga doar cât ai egalat (potul principal); jetoanele în plus ale stack-urilor mari formează un side pot pe care nu-l poți lua. Un all-in mai mic decât o mărire completă NU redeschide pariurile pentru cine a acționat deja.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-21",
+  updated: "2026-09-22",
   masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -146,9 +146,9 @@ De ce există regula asta? Îi protejează pe jucători să nu fie împinși în
 
 ### Caz avansat: dacă mai mulți jucători dau all-in scurt?
 
-Asta e versiunea care îi încurcă până și pe regulari. Mai multe all-in-uri scurte se pot **aduna** până la o mărire completă — și dacă incrementele lor combinate ating pragul, pariurile se redeschid pentru cine a acționat deja.
+Asta e versiunea care îi încurcă până și pe regulari. Mai multe all-in-uri scurte se pot **aduna** pentru a redeschide pariurile, dar pragul se verifică **pentru fiecare jucător, de la ultima lui acțiune**: creșterea pe care o înfruntă trebuie să atingă ultimul pariu sau ultima mărire completă.
 
-Este regula oficială TDA privind redeschiderea pariurilor („re-opening the bet"), iar majoritatea sălilor o aplică.
+Este regula 47-A TDA, ediția 2024, pentru No-Limit și Pot-Limit; la cash verifică regulile casei.
 
 **Exemplu (blind-uri $1/$2, la flop):**
 
@@ -158,7 +158,7 @@ Este regula oficială TDA privind redeschiderea pariurilor („re-opening the be
 
 Incremente combinate: $4 + $7 = **$11** — atinge pragul măririi minime de $10.
 
-**Rezultat: pariurile SE REDESCHID pentru Jucătorul A.** A poate renunța, plăti sau mări, chiar dacă nici B, nici C nu au făcut singuri o mărire completă.
+**Rezultat: pariurile SE REDESCHID pentru Jucătorul A.** A poate renunța, plăti sau mări, chiar dacă nici B, nici C nu au făcut singuri o mărire completă. A înfruntă $21 − $10 = $11. Un jucător care ar fi plătit $14 între B și C ar avea de plătit doar încă $7: pentru el pariurile nu s-ar redeschide.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -181,7 +181,7 @@ Pragul măririi minime este mereu *ultimul pariu sau ultima mărire completă va
 | Un singur all-in < mărire completă | ❌ Nu — doar plătești sau renunți |
 | Un singur all-in ≥ mărire completă | ✅ Da — toți pot mări |
 | Mai multe all-in-uri scurte, suma < mărire completă | ❌ Nu |
-| Mai multe all-in-uri scurte, suma ≥ mărire completă | ✅ Da |
+| Mai multe all-in-uri scurte, creșterea de la ultima acțiune a jucătorului ≥ pariu sau mărire completă | ✅ Da, pentru acel jucător |
 | Jucător care NU a acționat încă | ✅ Poate mări mereu (în orice caz) |
 
 </div>
@@ -192,7 +192,7 @@ Pragul măririi minime este mereu *ultimul pariu sau ultima mărire completă va
 
 Când pariurile s-au încheiat și există un jucător all-in, iată ce se întâmplă la showdown:
 
-1. **Cărțile se întorc cu fața în sus.** În turnee, toate mâinile implicate în all-in se arată de regulă imediat ce pariurile s-au încheiat. La cash game se aplică mai întâi [regula ultimului agresor la showdown](/ro/blog/holdem-showdown-rules), apoi arată jucătorii all-in.
+1. **Cărțile se întorc cu fața în sus.** În turneu, când există un all-in și toate pariurile s-au încheiat, toate mâinile rămase în joc trebuie arătate imediat, fără muck (TDA 2024, regula 16). La cash WSOP 2026 (B149), jucătorii din potul secundar arată înaintea celor care dispută doar potul principal. În No-Limit, dacă pariurile s-au încheiat înainte de river, arată primul cel care a mers all-in; altfel începe ultimul agresor de la river sau primul jucător activ din stânga butonului dacă toți au dat check. Vezi [regulile de showdown](/ro/blog/holdem-showdown-rules).
 2. **Side pot-urile se acordă primele.** Dealerul rezolvă mai întâi side pot-ul creat cel mai recent și merge înapoi până la potul principal.
 3. **Vorbesc cărțile.** Cea mai bună mână câștigă fiecare pot la care are dreptul — indiferent de ce spun jucătorii că au.
 4. **Pot exista mai mulți câștigători.** Jucătorul A poate câștiga potul principal, iar Jucătorul B side pot-ul. Nimeni nu ia tot doar pentru că a câștigat „potul lui".
@@ -244,7 +244,7 @@ A. Iei potul principal (cât ai egalat de la fiecare jucător), iar celălalt ju
 
 **Q. All-in-ul te obligă să-ți arăți mâna?**
 
-A. În turnee, da — imediat ce pariurile s-au încheiat cu un all-in, toate mâinile implicate se întorc cu fața în sus. La cash game live se aplică regulile normale de showdown: ultimul agresor arată primul, apoi ceilalți arată sau aruncă cărțile.
+A. În turneu, când există un all-in și toate pariurile s-au încheiat, toate mâinile rămase în joc trebuie arătate imediat, fără muck (TDA 2024, regula 16). La cash WSOP 2026 (B149), jucătorii din potul secundar arată înaintea celor care dispută doar potul principal. În No-Limit, dacă pariurile s-au încheiat înainte de river, arată primul cel care a mers all-in; altfel începe ultimul agresor de la river sau primul jucător activ din stânga butonului dacă toți au dat check. Posibilitatea de a face muck la cash depinde de regulile casei.
 
 **Q. Poți face „run it twice" la un all-in de poker?**
 
@@ -256,11 +256,11 @@ A. Table stakes înseamnă că poți paria doar jetoanele pe care le aveai în f
 
 **Q. Dacă doi jucători dau all-in pentru sume diferite, cine arată primul?**
 
-A. Ultimul all-in care a fost un pariu sau o mărire contează ca ultima acțiune agresivă și arată primul. Un all-in care doar plătește (call) pentru mai puțin nu este agresiv — la cash game arată primul cel care a pariat inițial. ==r:La turnee nu există aici nicio ordine la showdown== — de îndată ce pariurile all-in-ului s-au încheiat, toate mâinile implicate sunt întoarse în același timp (regula TDA 16). La cash game, dacă a fost un all-in plătit fără acțiune ulterioară, cel care a plătit poate arunca cărțile dacă pierde după ce a văzut mâna jucătorului all-in (în turnee toate mâinile implicate rămân cu fața în sus).
+A. ==r:În turneu nu se așteaptă rândul pentru a arăta==: În turneu, când există un all-in și toate pariurile s-au încheiat, toate mâinile rămase în joc trebuie arătate imediat, fără muck (TDA 2024, regula 16). La cash WSOP 2026 (B149), jucătorii din potul secundar arată înaintea celor care dispută doar potul principal. În No-Limit, dacă pariurile s-au încheiat înainte de river, arată primul cel care a mers all-in; altfel începe ultimul agresor de la river sau primul jucător activ din stânga butonului dacă toți au dat check. Sumele all-in-urilor nu stabilesc, singure, cine arată primul.
 
 **Q. Regulile all-in diferă între turnee și cash game?**
 
-A. Nucleul e același, cu două diferențe practice. Prima: în turnee toate mâinile implicate într-un all-in se întorc cu fața în sus imediat ce pariurile s-au încheiat (Regula 16 TDA) — nu poți arunca cărțile înainte de showdown. La cash game se aplică ordinea normală de showdown și poți arunca. A doua: run it twice e comun la cash game (dacă ambii jucători sunt de acord), dar în turnee de regulă nu se permite.
+A. Nucleul e același, cu două diferențe practice. Prima: În turneu, când există un all-in și toate pariurile s-au încheiat, toate mâinile rămase în joc trebuie arătate imediat, fără muck (TDA 2024, regula 16). La cash ordinea respectă regulile casei, inclusiv condițiile B149 la WSOP, iar muck-ul nu este interzis în general. A doua: run it twice e comun la cash game (dacă ambii jucători sunt de acord), dar în turnee de regulă nu se permite.
 
 ---
 

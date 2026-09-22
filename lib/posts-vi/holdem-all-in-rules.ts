@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "All-in nghĩa là cược toàn bộ chip bạn đang có. Bạn chỉ thắng được từ mỗi đối thủ đúng phần mình đã theo kịp (pot chính). Phần cược dư của những stack lớn hơn tạo thành pot phụ (side pot) mà bạn không được đụng tới. Một cú all-in nhỏ hơn một nước tố đủ mức KHÔNG mở lại vòng cược cho những người đã hành động.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-21",
+  updated: "2026-09-22",
   masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "10 phút",
@@ -146,9 +146,9 @@ Vì sao có luật này? Nó bảo vệ người chơi khỏi bị ép vào nh�
 
 ### Trường hợp nâng cao: nhiều người cùng all-in ngắn thì sao?
 
-Đây là phiên bản khiến cả những người chơi lâu năm cũng vấp. Nhiều cú all-in ngắn có thể **cộng dồn** thành một nước tố đủ mức — và nếu tổng phần tăng của chúng chạm ngưỡng, vòng cược mở lại cho những người đã hành động.
+Đây là tình huống khiến cả người chơi lâu năm cũng dễ nhầm. Nhiều cú all-in ngắn có thể **cộng dồn**, nhưng việc mở lại vòng cược được xét riêng cho từng người chơi, tính từ hành động gần nhất của chính họ. Quyền tố chỉ trở lại khi tổng mức tăng mà người đó phải đối mặt đạt một lần cược hoặc tố đủ mức gần nhất.
 
-Đây là luật "re-opening the bet" chính thức của TDA, và hầu hết các phòng bài đều áp dụng.
+Đây là Luật 47-A của TDA 2024 về "re-opening the bet" trong No-Limit và Pot-Limit. Với cash game, hãy kiểm tra luật nhà trước.
 
 **Ví dụ (blind $1/$2, ở flop):**
 
@@ -158,7 +158,7 @@ Vì sao có luật này? Nó bảo vệ người chơi khỏi bị ép vào nh�
 
 Tổng phần tăng: $4 + $7 = **$11** — chạm ngưỡng tố tối thiểu $10.
 
-**Kết quả: vòng cược MỞ LẠI cho Người chơi A.** A có thể bỏ bài, theo hoặc tố lại, dù cả B lẫn C đều không tự mình tạo ra một nước tố đủ mức.
+**Kết quả: vòng cược MỞ LẠI cho Người chơi A.** A đang phải đối mặt với $21, tức tăng $11 so với hành động $10 gần nhất—đủ một lần tố $10. Nhưng người đã theo $14 giữa B và C chỉ phải đối mặt với mức tăng $7, nên vòng cược không mở lại cho người đó.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -181,7 +181,7 @@ Ngưỡng tố tối thiểu luôn là *nước cược hoặc nước tố đ�
 | Một cú all-in < nước tố đủ mức | ❌ Không — chỉ theo hoặc bỏ bài |
 | Một cú all-in ≥ nước tố đủ mức | ✅ Có — tất cả được tố lại |
 | Nhiều all-in ngắn, tổng < nước tố đủ mức | ❌ Không |
-| Nhiều all-in ngắn, tổng ≥ nước tố đủ mức | ✅ Có |
+| Nhiều all-in ngắn; mức tăng từ hành động gần nhất của người chơi ≥ cược/tố đủ mức | ✅ Có — chỉ với người chơi đó |
 | Người CHƯA hành động | ✅ Luôn được tố (bất kể trường hợp nào) |
 
 </div>
@@ -192,7 +192,7 @@ Ngưỡng tố tối thiểu luôn là *nước cược hoặc nước tố đ�
 
 Khi mọi vòng cược kết thúc và có người đang all-in, showdown diễn ra như sau:
 
-1. **Bài được lật ngửa.** Trong giải đấu (tournament), mọi tay bài liên quan tới cú all-in thường được lật ngay khi vòng cược khép lại. Trong cash game, [luật showdown người tấn công cuối](/vi/blog/holdem-showdown-rules) áp dụng trước, rồi những người all-in lật bài.
+1. **Bài được lật ngửa.** Trong giải đấu, khi có người all-in và mọi vòng cược đã hoàn tất, tất cả tay bài còn sống phải được lật ngay—không được úp bài bỏ (TDA 2024, Luật 16). Trong cash game, luật nhà được áp dụng; theo WSOP 2026 B149, người chơi side pot lật trước người chỉ có quyền ở pot chính. Ở No-Limit, nếu cược kết thúc trước river thì người all-in lật trước; nếu không, người tấn công cuối ở river lật trước, hoặc người còn bài đầu tiên bên trái button nếu river check hết. Xem [luật showdown](/vi/blog/holdem-showdown-rules).
 2. **Pot phụ được chia trước.** Dealer xử lý pot phụ được tạo gần nhất trước, rồi lùi dần về pot chính.
 3. **Bài tự nói.** Tay bài mạnh nhất thắng từng pot mà nó có quyền tranh — bất kể người chơi nói mình có gì.
 4. **Có thể có nhiều người thắng.** Người chơi A có thể thắng pot chính. Người chơi B có thể thắng pot phụ. Không ai ôm trọn tất cả chỉ vì thắng "pot của mình".
@@ -244,7 +244,7 @@ A. Bạn nhận pot chính (phần bạn đã theo kịp từ mỗi người ch�
 
 **Q. All-in có bắt buộc phải lật bài không?**
 
-A. Trong giải đấu, có — khi vòng cược khép lại với một cú all-in, mọi tay bài liên quan thường được lật ngửa. Trong cash game trực tiếp, luật showdown thông thường áp dụng: người tấn công cuối lật trước, những người khác lật hoặc úp bài bỏ.
+A. Trong giải đấu, có—khi có người all-in và mọi vòng cược đã hoàn tất, tất cả tay bài còn sống phải được lật ngay và không được úp bài bỏ (TDA 2024, Luật 16). Trong cash game, luật nhà được áp dụng. Theo WSOP 2026 B149, người chơi side pot lật trước; ở No-Limit, nếu cược kết thúc trước river thì người all-in lật trước.
 
 **Q. Có được "run it twice" trong một cú all-in poker không?**
 
@@ -256,11 +256,11 @@ A. Table stakes nghĩa là bạn chỉ được cược số chip có trước m
 
 **Q. Hai người all-in với số chip khác nhau, ai lật bài trước?**
 
-A. Cú all-in sau cùng mà là một nước cược hoặc tố mới chính là hành động tấn công cuối và lật trước. Một cú all-in chỉ là theo (call) với số ít hơn thì không phải hành động tấn công — ở cash game, người cược ban đầu vẫn lật trước. ==r:Còn ở giải đấu thì không hề có thứ tự lật trước== — ngay khi vòng cược của cú all-in kết thúc, mọi tay bài liên quan đều được lật ngửa cùng lúc (Luật 16 của TDA). Trong cash game, nếu đó là cú all-in được theo mà không còn hành động nào nữa, người theo có thể úp bài bỏ nếu thua sau khi xem bài của người all-in (trong giải đấu, mọi tay bài liên quan đều phải lật ngửa).
+A. ==r:Trong giải đấu không có thứ tự "ai lật trước"==—khi có người all-in và vòng cược hoàn tất, tất cả tay bài còn sống phải được lật ngay (TDA 2024, Luật 16). Trong cash game, luật nhà được áp dụng; theo WSOP 2026 B149, người chơi side pot lật trước, và ở No-Limit kết thúc cược trước river, người all-in lật trước. Riêng số tiền all-in lớn hay nhỏ không quyết định ai lật đầu tiên.
 
 **Q. Luật all-in ở giải đấu và cash game có khác nhau không?**
 
-A. Luật cốt lõi giống nhau, nhưng có hai khác biệt thực tế. Thứ nhất, ở giải đấu mọi tay bài liên quan tới cú all-in được lật ngửa ngay khi vòng cược khép lại (Luật 16 của TDA) — bạn không được úp bài bỏ trước showdown. Ở cash game, thứ tự showdown thông thường áp dụng và người chơi được phép úp bài. Thứ hai, run it twice phổ biến ở cash game (nếu cả hai đồng ý) nhưng ở giải đấu thường không được phép.
+A. Trong giải đấu, khi có người all-in và vòng cược hoàn tất, tất cả tay bài còn sống phải được lật ngay và không được úp bài bỏ (TDA 2024, Luật 16). Trong cash game, luật nhà và thứ tự riêng của phòng như WSOP 2026 B149 được áp dụng, nên quyền úp bài bỏ cũng tùy luật nhà. Run it twice phổ biến ở nhiều cash game khi các bên đồng ý, nhưng thường không được phép trong giải đấu.
 
 ---
 

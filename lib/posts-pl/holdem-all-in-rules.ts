@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "All-in to postawienie wszystkich żetonów, jakie masz przed sobą. Od każdego rywala możesz wygrać tylko tyle, ile wyrównałeś (główna pula) — nadwyżka od większych stacków tworzy pulę boczną, której nie tkniesz. All-in mniejszy niż pełne przebicie NIE otwiera na nowo licytacji dla graczy, którzy już zagrali.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-21",
+  updated: "2026-09-22",
   masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -146,9 +146,9 @@ Po co ta reguła istnieje? Chroni graczy przed zmuszeniem do większych przebić
 
 ### Przypadek zaawansowany: co, jeśli kilku graczy wejdzie all-in krótko?
 
-To wersja, na której potyka się nawet wyjadaczy. Kilka krótkich all-inów może **zsumować się** do pełnego przebicia — i jeśli ich łączne przyrosty osiągną próg, licytacja otwiera się na nowo dla tych, którzy już zagrali.
+To wersja, na której potykają się nawet wyjadacze. Kilka krótkich all-inów może **zsumować się** i ponownie otworzyć licytację, ale próg sprawdza się **osobno dla każdego gracza, od jego ostatniej akcji**: przyrost, z którym się mierzy, musi osiągnąć ostatni pełny zakład lub przebicie.
 
-To oficjalna reguła TDA o ponownym otwarciu licytacji ("re-opening the bet") i stosuje ją większość kasyn oraz pokojów kartowych.
+To zasada 47-A TDA, wydanie 2024, dla No-Limit i Pot-Limit; w cashu sprawdź zasady pokoju.
 
 **Przykład (blindy $1/$2, na flopie):**
 
@@ -158,7 +158,7 @@ To oficjalna reguła TDA o ponownym otwarciu licytacji ("re-opening the bet") i 
 
 Łączne przyrosty: $4 + $7 = **$11** — osiągają próg minimalnego przebicia $10.
 
-**Wynik: licytacja OTWIERA SIĘ na nowo dla Gracza A.** A może spasować, sprawdzić albo przebić, mimo że ani B, ani C nie wykonali pełnego przebicia z osobna.
+**Wynik: licytacja OTWIERA SIĘ na nowo dla Gracza A.** A może spasować, sprawdzić albo przebić, mimo że ani B, ani C nie wykonali pełnego przebicia z osobna. A mierzy się z $21 − $10 = $11. Gracz, który sprawdziłby $14 między B a C, musiałby jednak dołożyć tylko $7: dla niego licytacja nie otworzyłaby się ponownie.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -181,7 +181,7 @@ Próg minimalnego przebicia to zawsze *ostatni pełny prawidłowy zakład lub pr
 | Pojedynczy all-in < pełne przebicie | ❌ Nie — tylko sprawdzić lub spasować |
 | Pojedynczy all-in ≥ pełne przebicie | ✅ Tak — wszyscy mogą przebić |
 | Kilka krótkich all-inów, suma < pełne przebicie | ❌ Nie |
-| Kilka krótkich all-inów, suma ≥ pełne przebicie | ✅ Tak |
+| Kilka krótkich all-inów, przyrost od ostatniej akcji gracza ≥ pełny zakład lub przebicie | ✅ Tak, dla tego gracza |
 | Gracz, który JESZCZE nie zagrał | ✅ Zawsze może przebić (niezależnie od reszty) |
 
 </div>
@@ -192,7 +192,7 @@ Próg minimalnego przebicia to zawsze *ostatni pełny prawidłowy zakład lub pr
 
 Kiedy licytacja jest zamknięta, a gracz jest all-in, oto co dzieje się w showdownie:
 
-1. **Karty odkrywa się awersem do góry.** W turniejach wszystkie układy zaangażowane w all-in zwykle wykłada się, gdy tylko licytacja się zakończy. W cashu najpierw obowiązuje standardowa [reguła ostatniego agresora w showdownie](/pl/blog/holdem-showdown-rules), a potem pokazują gracze all-in.
+1. **Karty odkrywa się awersem do góry.** W turnieju, gdy jest all-in i cała licytacja się zakończyła, wszystkie pozostałe w grze ręce trzeba natychmiast odsłonić, bez muckowania (TDA 2024, zasada 16). W cashu WSOP 2026 (B149) gracze puli bocznej pokazują przed graczami walczącymi tylko o pulę główną. W No-Limit, jeśli licytacja zakończyła się przed riverem, pierwszy pokazuje gracz, który zagrał all-in; w pozostałych przypadkach zaczyna ostatni agresor rivera albo pierwszy aktywny gracz na lewo od buttona, jeśli wszyscy czekali. Zobacz [zasady showdownu](/pl/blog/holdem-showdown-rules).
 2. **Pule boczne rozstrzyga się najpierw.** Rozdający najpierw rozwiązuje najpóźniej utworzoną pulę boczną, a potem cofa się aż do głównej puli.
 3. **Karty mówią za siebie.** Najlepszy układ wygrywa każdą pulę, do której ma prawo — niezależnie od tego, co gracze twierdzą, że mają.
 4. **Zwycięzców może być kilku.** Gracz A może wygrać główną pulę, a Gracz B pulę boczną. Żaden nie bierze wszystkiego tylko dlatego, że wygrał "swoją" pulę.
@@ -244,7 +244,7 @@ A. Zgarniasz główną pulę (to, co wyrównałeś od każdego gracza), a drugi 
 
 **Q. Czy wejście all-in zmusza cię do pokazania układu?**
 
-A. W turniejach tak — gdy tylko licytacja z all-inem się zamknie, wszystkie zaangażowane układy wykłada się awersem do góry. W cashu na żywo obowiązują normalne zasady showdownu: ostatni agresor pokazuje pierwszy, a reszta pokazuje albo wyrzuca karty.
+A. W turnieju, gdy jest all-in i cała licytacja się zakończyła, wszystkie pozostałe w grze ręce trzeba natychmiast odsłonić, bez muckowania (TDA 2024, zasada 16). W cashu WSOP 2026 (B149) gracze puli bocznej pokazują przed graczami walczącymi tylko o pulę główną. W No-Limit, jeśli licytacja zakończyła się przed riverem, pierwszy pokazuje gracz, który zagrał all-in; w pozostałych przypadkach zaczyna ostatni agresor rivera albo pierwszy aktywny gracz na lewo od buttona, jeśli wszyscy czekali. Możliwość muckowania w cashu zależy od zasad pokoju.
 
 **Q. Czy przy all-inie można zrobić "run it twice"?**
 
@@ -256,11 +256,11 @@ A. Table stakes oznacza, że możesz obstawiać tylko te żetony, które miałe�
 
 **Q. Jeśli dwaj gracze wejdą all-in za różne kwoty, kto pokazuje pierwszy?**
 
-A. Ostatni all-in, który był zakładem lub przebiciem, jest ostatnią agresywną akcją i pokazuje pierwszy. All-in, który jedynie sprawdza za mniejszą kwotę, nie jest agresją — w cashu pierwszy pokazuje wtedy ten, kto pierwotnie postawił zakład. ==r:W turnieju nie ma tu żadnej kolejności pokazywania== — gdy tylko licytacja all-ina się kończy, wszystkie zaangażowane układy odkrywane są jednocześnie (Reguła 16 TDA). W cashu, jeśli był to sprawdzony all-in bez dalszej akcji, sprawdzający może wyrzucić karty, jeśli przegrywa po zobaczeniu układu gracza all-in (w turniejach wszystkie zaangażowane układy zostają awersem do góry).
+A. ==r:W turnieju nie czeka się na swoją kolej pokazywania==: W turnieju, gdy jest all-in i cała licytacja się zakończyła, wszystkie pozostałe w grze ręce trzeba natychmiast odsłonić, bez muckowania (TDA 2024, zasada 16). W cashu WSOP 2026 (B149) gracze puli bocznej pokazują przed graczami walczącymi tylko o pulę główną. W No-Limit, jeśli licytacja zakończyła się przed riverem, pierwszy pokazuje gracz, który zagrał all-in; w pozostałych przypadkach zaczyna ostatni agresor rivera albo pierwszy aktywny gracz na lewo od buttona, jeśli wszyscy czekali. Same kwoty all-inów nie określają więc, kto pokazuje pierwszy.
 
 **Q. Czy zasady all-in różnią się w turniejach i w cashu?**
 
-A. Rdzeń jest ten sam, z dwiema praktycznymi różnicami. Pierwsza: w turniejach wszystkie układy zaangażowane w all-in wykłada się awersem do góry, gdy tylko licytacja się zamknie (Reguła 16 TDA) — nie możesz wyrzucić kart przed showdownem. W cashu obowiązuje normalna kolejność showdownu i można to zrobić. Druga: run it twice jest częsty w cashu (jeśli obaj gracze się zgodzą), ale w turniejach zwykle jest niedozwolony.
+A. Rdzeń jest ten sam, z dwiema praktycznymi różnicami. Pierwsza: W turnieju, gdy jest all-in i cała licytacja się zakończyła, wszystkie pozostałe w grze ręce trzeba natychmiast odsłonić, bez muckowania (TDA 2024, zasada 16). W cashu kolejność określają zasady pokoju, w tym warunki B149 na WSOP, a muck nie jest ogólnie zakazany. Druga: run it twice jest częsty w cashu (jeśli obaj gracze się zgodzą), ale w turniejach zwykle jest niedozwolony.
 
 ---
 

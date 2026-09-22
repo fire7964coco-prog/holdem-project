@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Texas Hold'em Showdown Rules: Who Shows First, Mucking, and Slow Rolling",
   seoTitle: "Who Flips First? Texas Hold'em Showdown Rules & Mucking",
   desc: "Who shows cards first at showdown? Can you muck without showing? Hold'em showdown rules — last aggressor, cards speak, slow roll, and all-in rules explained.",
-  tldr: "At showdown, the last player to bet or raise shows first. If the river was checked through, the first active player left of the button shows first. You can muck without showing if you lose, but whoever called the river bet can ask to see the bettor's hand.",
+  tldr: "In a non-all-in tournament showdown, the last river aggressor shows first; if the river checks through, the first active player left of the button does. With an all-in, all remaining hands must be shown once betting is complete. A river caller who retains or tables their cards can request the last aggressor's hand. Cash games follow house rules for showing and mucking.",
   category: "rules",
   date: "2026-06-15",
   updated: "2026-09-22",

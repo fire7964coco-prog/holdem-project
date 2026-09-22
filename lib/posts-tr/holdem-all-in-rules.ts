@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "All-in gitmek, önündeki tüm çipleri ortaya sürmektir. Her rakipten sadece eşlediğin kadarını kazanabilirsin (ana pot); büyük stack'lerin fazladan koyduğu çipler dokunamayacağın bir yan pot oluşturur. Tam bir yükseltmeden az olan bir all-in, zaten aksiyon almış oyuncular için bahsi YENİDEN açmaz.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-21",
+  updated: "2026-09-22",
   masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "10 dk",
@@ -146,9 +146,9 @@ Bu kural neden var? Oyuncuları, kısmi all-in'ler yüzünden daha büyük yüks
 
 ### İleri düzey durum: Birden fazla oyuncu kısa all-in giderse ne olur?
 
-Bu, düzenli oyuncuları bile takan versiyon. Birden fazla kısa all-in, **toplanarak** tam bir yükseltme oluşturabilir — ve birleşik artışları eşiğe ulaşırsa, zaten aksiyon almış oyuncular için bahis yeniden açılır.
+Bu, düzenli oyuncuları bile zorlayan durumdur. Birden fazla kısa all-in **toplanabilir**, ancak bahsin yeniden açılıp açılmadığı her oyuncu için son aksiyonundan itibaren ayrı ayrı ölçülür. Oyuncunun karşı karşıya kaldığı toplam artış son tam bahis veya yükseltmeye ulaştığında yeniden yükseltme hakkı doğar.
 
-Bu, TDA'nın resmi "bahsi yeniden açma" kuralıdır ve çoğu casino ve poker salonu bunu uygular.
+Bu, No-Limit ve Pot-Limit için TDA 2024 Kural 47-A'daki resmi "bahsi yeniden açma" kuralıdır. Cash oyununda önce ev kuralını kontrol et.
 
 **Örnek (blind'lar $1/$2, flop'ta):**
 
@@ -158,7 +158,7 @@ Bu, TDA'nın resmi "bahsi yeniden açma" kuralıdır ve çoğu casino ve poker s
 
 Birleşik artışlar: $4 + $7 = **$11** — $10'luk minimum yükseltme eşiğini karşılıyor.
 
-**Sonuç: bahis A Oyuncusu için YENİDEN AÇILIR.** A pas geçebilir, görebilir veya yeniden yükseltebilir; B ya da C tek başına tam bir yükseltme yapmamış olsa bile.
+**Sonuç: bahis A Oyuncusu için YENİDEN AÇILIR.** A artık $21 ile karşı karşıyadır; son $10 aksiyonundan bu yana artış $11'dir ve tam $10 yükseltme için yeterlidir. Ancak B ile C arasında $14 gören bir oyuncunun karşısındaki artış yalnızca $7'dir; bahis o oyuncu için yeniden açılmaz.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -181,7 +181,7 @@ Minimum yükseltme eşiği her zaman *son geçerli tam bahis veya yükseltmedir*
 | Tek all-in < tam yükseltme | ❌ Hayır — sadece gör ya da pas geç |
 | Tek all-in ≥ tam yükseltme | ✅ Evet — herkes yeniden yükseltebilir |
 | Birden fazla kısa all-in, toplam < tam yükseltme | ❌ Hayır |
-| Birden fazla kısa all-in, toplam ≥ tam yükseltme | ✅ Evet |
+| Birden fazla kısa all-in; oyuncunun son aksiyonundan beri artış ≥ tam bahis/yükseltme | ✅ Evet — yalnızca o oyuncu için |
 | Henüz aksiyon ALMAMIŞ oyuncu | ✅ Her zaman yükseltebilir (ne olursa olsun) |
 
 </div>
@@ -192,7 +192,7 @@ Minimum yükseltme eşiği her zaman *son geçerli tam bahis veya yükseltmedir*
 
 Bahis kapandığında ve bir oyuncu all-in olduğunda, showdown'da olanlar şöyledir:
 
-1. **Kartlar yüzü açık çevrilir.** Turnuvalarda, all-in'e karışan tüm eller bahis kapanır kapanmaz genellikle açılır. Cash oyunlarında önce standart [son agresörün gösterdiği showdown kuralı](/tr/blog/holdem-showdown-rules) uygulanır, sonra all-in oyuncular gösterir.
+1. **Kartlar yüzü açık çevrilir.** Turnuvada bir oyuncu all-in olduğunda ve tüm bahis tamamlandığında kalan bütün eller hemen açılmalıdır; muck yoktur (TDA 2024 Kural 16). Cash oyununda ev kuralı geçerlidir; WSOP 2026 B149'a göre yan pot oyuncuları yalnızca ana potta olanlardan önce gösterir. No-Limit'te bahis river'dan önce bittiyse all-in oyuncusu önce gösterir; aksi halde river'ın son agresörü, river herkesçe check geçildiyse button'ın solundaki ilk aktif oyuncu başlar. Ayrıntılar [showdown kurallarında](/tr/blog/holdem-showdown-rules).
 2. **Yan potlar önce dağıtılır.** Krupiye en son oluşturulan yan potu ilk çözer, sonra geriye doğru ana pota kadar ilerler.
 3. **Kartlar konuşur.** En iyi el, hak kazandığı her potu kazanır — oyuncular ne dediklerini söylerse söylesin.
 4. **Birden fazla kazanan olabilir.** A Oyuncusu ana potu, B Oyuncusu yan potu kazanabilir. Kimse "kendi" potunu kazandı diye her şeyi almaz.
@@ -244,7 +244,7 @@ A. Ana potu (her oyuncudan eşlediğin miktarı) sen alırsın, yan potu diğer 
 
 **Q. All-in gitmek elini açmaya zorlar mı?**
 
-A. Turnuvalarda evet — all-in ile bahis kapanır kapanmaz, karışan tüm eller yüzü açık masaya konur. Canlı cash oyunlarında standart showdown kuralları geçerlidir: son agresör önce gösterir, diğerleri gösterir ya da kartlarını atar.
+A. Turnuvada evet—bir oyuncu all-in olduğunda ve tüm bahis tamamlandığında kalan bütün eller hemen açılmalı, hiçbiri muck edilmemelidir (TDA 2024 Kural 16). Cash oyununda ev kuralı geçerlidir. WSOP 2026 B149'a göre yan pot oyuncuları önce gösterir; No-Limit'te bahis river'dan önce bittiyse all-in oyuncusu önce gösterir.
 
 **Q. Poker all-in'inde "run it twice" yapılabilir mi?**
 
@@ -256,11 +256,11 @@ A. Table stakes, sadece el başladığında önünde duran çiplerle bahis yapab
 
 **Q. İki oyuncu farklı miktarlarda all-in giderse önce kim gösterir?**
 
-A. Bahis ya da yükseltme olan son all-in, son agresif aksiyondur ve önce gösterir. Sadece görmek için (daha az miktara) gidilen bir all-in agresif değildir — cash oyunlarında bu durumda ilk bahsi yapan oyuncu yine önce gösterir. ==r:Turnuvada ise burada bir gösterme sırası hiç yoktur== — all-in bahisleri tamamlanır tamamlanmaz, işin içindeki bütün eller aynı anda açılır (TDA Kural 16). Cash oyunlarında, başka aksiyon olmadan görülen bir all-in ise, gören oyuncu all-in oyuncunun elini gördükten sonra kaybederse kartlarını atabilir (turnuvalarda karışan tüm eller yüzü açık kalır).
+A. ==r:Turnuvada "kim önce gösterir" sırası yoktur==—bir oyuncu all-in olduğunda ve bahis tamamlandığında kalan bütün eller hemen açılmalıdır (TDA 2024 Kural 16). Cash oyununda ev kuralı geçerlidir; WSOP 2026 B149'a göre yan pot oyuncuları önce gösterir ve No-Limit'te bahis river'dan önce bittiyse all-in oyuncusu önce gösterir. All-in miktarı tek başına kimin başlayacağını belirlemez.
 
 **Q. All-in kuralları turnuvalarda ve cash oyunlarında farklı mı?**
 
-A. Temel kurallar aynı, ama iki pratik fark var. Birincisi: turnuvalarda all-in'e karışan tüm eller, bahis kapanır kapanmaz yüzü açık masaya konur (TDA Kural 16) — showdown'dan önce kartlarını atamazsın. Cash oyunlarında standart showdown sırası geçerlidir ve atabilirsin. İkincisi: run it twice cash oyunlarında yaygındır (iki oyuncu da kabul ederse), ama turnuvalarda genellikle izin verilmez.
+A. Turnuvada bir oyuncu all-in olduğunda ve bahis tamamlandığında kalan bütün eller hemen açılmalı, hiçbiri muck edilmemelidir (TDA 2024 Kural 16). Cash oyununda ev kuralı ve WSOP 2026 B149 gibi salona özgü sıralar geçerlidir; muck imkânı da ev kuralına bağlıdır. Run it twice anlaşmayla birçok cash oyununda yaygındır, ancak turnuvada genellikle izin verilmez.
 
 ---
 

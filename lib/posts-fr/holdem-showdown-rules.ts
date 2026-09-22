@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Règles de l'abattage au Texas Hold'em : qui montre en premier, jeter ses cartes et le slow roll",
   seoTitle: "Qui montre en premier ? Règles de l'abattage au poker",
   desc: "Qui montre ses cartes en premier à l'abattage ? Peux-tu jeter sans montrer ? Dernier relanceur, cards speak, slow roll et all-in, sans prise de tête.",
-  tldr: "À l'abattage, le dernier joueur à avoir misé ou relancé montre en premier. Si tout le monde a checké à la rivière, c'est le premier joueur actif à gauche du bouton qui montre en premier. Tu peux jeter tes cartes sans les montrer si tu as perdu, mais les adversaires peuvent demander à voir une main qui a été payée.",
+  tldr: "En tournoi sans tapis, le dernier agresseur de la rivière montre en premier ; si tous ont checké, c'est le premier joueur actif à gauche du bouton. Avec un tapis, toutes les mains restantes doivent être révélées dès la fin des enchères. Celui qui a payé la rivière et gardé ou étalé ses cartes peut demander la main du dernier agresseur. En cash, montrer ou jeter dépend des règles de la maison.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-08-09",
+  updated: "2026-09-22",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -39,15 +39,15 @@ La règle dépend de la façon dont s'est terminé le dernier tour d'enchères (
 
 | Action au dernier tour | Qui montre en premier |
 |--------------------|-----------------|
-| Quelqu'un a misé ou relancé à la rivière | ==Le dernier joueur à avoir misé ou relancé== montre en premier |
+| Sans tapis en tournoi, quelqu'un a misé ou relancé à la rivière | ==Le dernier joueur à avoir misé ou relancé== montre en premier |
 | Tout le monde a checké à la rivière | Le premier joueur actif à gauche du bouton montre en premier |
-| All-in à un tour précédent (pas de mise à la rivière) | Toutes les mains sont étalées face visible avant/pendant le déroulement du tableau |
+| All-in à un tour précédent (pas de mise à la rivière) | En tournoi, toutes les mains restantes sont immédiatement étalées dès la fin de toutes les enchères, avant les cartes communes restantes ; en cash, règles de la maison |
 
 </div>
 
 ![Infographie de l'ordre d'abattage au Texas Hold'em — qui montre en premier sur un tableau J♥ 9♠ 4♦ 2♠ K♥](/images/holdem-showdown-who-shows-first.webp)
 
-==g:La formule clé, c'est « dernier relanceur ».== Si tu as misé la rivière et qu'on t'a payé, c'est toi qui montres en premier — pas celui qui a suivi. Celui qui paie a le droit de voir ta main avant de décider s'il montre la sienne ou s'il la jette.
+==g:Sans tapis en tournoi, le dernier agresseur de la rivière montre en premier.== Si tu as misé et qu'on t'a payé, tu montres avant celui qui a suivi. En tournoi, celui qui a payé la mise de la rivière et conservé ou étalé ses cartes peut exiger de voir la main du dernier agresseur (TDA 2024, règle 18). Les autres demandes relèvent du directeur ; en cash, des règles de la maison.
 
 ---
 
@@ -57,11 +57,11 @@ Oui — **si tu as perdu**.
 
 Une fois que le dernier relanceur a montré sa main, les autres joueurs peuvent :
 - **Montrer leur main** s'ils pensent gagner
-- **La jeter face cachée au muck** s'ils voient qu'ils ont perdu — pas besoin de dévoiler tes cartes. Cela ne vaut toutefois que si personne n'était à tapis : en tournoi, dès qu'un joueur est all-in, la règle 16 de la TDA impose d'étaler toutes les mains du pot et plus personne ne peut jeter (en cash game, ce sont les règles de la maison qui s'appliquent, et la plupart des cardrooms laissent celui qui paie jeter ses cartes)
+- **La jeter face cachée au muck** s'ils voient qu'ils ont perdu, sous réserve des demandes autorisées de voir la main. Exception : En tournoi, dès qu'un joueur est à tapis et que toutes les enchères sont terminées, toutes les mains encore en jeu sont immédiatement étalées, sans muck (TDA 2024, règle 16). En cash, les règles de la maison s'appliquent.
 
-==r:Mais il y a une exception importante :== si ta mise à la rivière a été payée, celui qui a suivi a mis le prix fort pour voir ta main. Demander au donneur de retourner une main jetée au muck, c'est la règle du **« I want to see that hand »**. En tournoi, la règle 18 de la TDA la resserre : celui qui n'a plus de cartes à l'abattage, ou qui a jeté face cachée, perd le droit de le demander ; ce droit n'est inaliénable que pour celui qui a payé la mise de la rivière et qui a étalé ou conservé ses cartes, et seulement sur la main du dernier relanceur. Le reste relève du directeur de tournoi, et en cash game beaucoup de cardrooms sont plus souples. (Ne la confonds pas avec « show one, show all » : si tu montres volontairement tes cartes à un joueur, toute la table a le droit de les voir.)
+==r:Mais il y a une exception importante :== si ta mise à la rivière a été payée, celui qui a suivi a mis le prix fort pour voir ta main. Demander au donneur de retourner une main jetée au muck, c'est la règle du **« I want to see that hand »**. En tournoi, la règle 18 de la TDA, édition 2024, la resserre : celui qui n'a plus de cartes à l'abattage, ou qui a jeté face cachée, perd le droit de le demander ; ce droit n'est inaliénable que pour celui qui a payé la mise de la rivière et qui a étalé ou conservé ses cartes, et seulement sur la main du dernier relanceur. Le reste relève du directeur de tournoi, et en cash game les règles de la maison déterminent les demandes autorisées. (Ne la confonds pas avec « show one, show all » : si tu montres volontairement tes cartes à un joueur, toute la table a le droit de les voir.)
 
-Règle pratique : ==en tant que dernier relanceur, c'est toi qui retournes — même sur un bluff payé.== Jeter face cachée, c'est l'option de celui qui paie, une fois qu'il a vu la main du mieur. Si tu as misé et que tu jettes vite, tu perds deux fois : celui qui a payé peut exiger ta main de toute façon et, puisque ce sont les cartes qui parlent, plus d'un pot a été jeté avec un as hauteur qui était devant.
+Règle pratique : ==sans tapis en tournoi, le dernier agresseur de la rivière montre en premier, même sur un bluff payé.== En tournoi, celui qui a payé la mise de la rivière et conservé ou étalé ses cartes peut exiger de voir la main du dernier agresseur (TDA 2024, règle 18). Les autres demandes relèvent du directeur ; en cash, des règles de la maison. Ne jette pas précipitamment une main qui pourrait gagner ; l'exception de muck ne s'applique pas à l'all-in de tournoi une fois les enchères terminées.
 
 ---
 
@@ -77,19 +77,19 @@ Exemple : le bouton, la petite blinde et la grosse blinde voient la rivière. La
 
 ## Règles d'abattage avec all-in — le joueur à tapis montre-t-il en premier ?
 
-Quand un joueur fait tapis et qu'aucune mise n'est plus possible, on déroule en général les cartes communes restantes avec **toutes les mains face visible**. Cela protège l'intégrité du coup — aucun joueur ne devrait pouvoir jeter ses cartes de façon stratégique dans une situation d'all-in.
+En tournoi, dès qu'un joueur est à tapis et que toutes les enchères sont terminées, toutes les mains encore en jeu sont immédiatement étalées, sans muck (TDA 2024, règle 16). Cela protège l'intégrité du coup : aucun joueur ne peut jeter sa main pour cacher le résultat. En cash WSOP 2026 (B149), les joueurs du pot annexe montrent avant ceux du seul pot principal. En No-Limit, si les enchères se sont terminées avant la rivière, le joueur qui a fait tapis montre en premier ; sinon, le dernier agresseur de la rivière commence, ou le premier joueur actif à gauche du bouton si tous ont checké.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Scénario d'all-in | Règle d'abattage |
 |----------------|---------------|
-| Un joueur fait tapis, les autres suivent, plus aucune mise possible | Toutes les mains face visible avant ou pendant le déroulement |
-| Une mise all-in à la rivière est payée | Le joueur à tapis montre en premier comme dernier relanceur — et en tournoi ==r:personne ne peut jeter ici== : selon la règle 16 de la TDA, celui qui paie doit lui aussi étaler sa main |
-| Plusieurs all-ins créant plusieurs pots annexes | Chaque pot se résout séparément ; toutes les mains impliquées sont montrées |
+| Un joueur fait tapis, les autres suivent, plus aucune mise possible | En tournoi, toutes les mains restantes sont immédiatement étalées avant les cartes communes restantes ; en cash, règles de la maison |
+| Une mise all-in à la rivière est payée | En tournoi, dès la fin de toutes les enchères, toutes les mains sont étalées sans attendre leur tour ; en cash WSOP, B149 fait montrer les joueurs du pot annexe avant ceux du seul pot principal, puis le dernier agresseur de la rivière commence dans le groupe qui doit montrer |
+| Plusieurs all-ins créant plusieurs pots annexes | Chaque pot se résout séparément ; en tournoi, toutes les mains restantes sont étalées dès la fin de toutes les enchères |
 
 </div>
 
-Une nuance : s'il y a un **pot annexe** (d'autres joueurs ont encore des jetons et continuent de miser), le pot annexe est attribué en premier, puis le pot principal. C'est l'**ordre de paiement** : il n'a rien à voir avec le moment où les cartes sont retournées. La main du joueur à tapis est déjà face visible dès l'instant où plus aucune mise n'est possible. L'illustration de la TDA à la règle 16 le dit mot pour mot : on n'attend pas que le pot annexe soit réparti pour retourner la main du joueur à tapis.
+Une nuance : le **pot annexe** est attribué avant le pot principal. Cet **ordre de paiement** ne retarde pas la révélation en tournoi : dès la fin de toutes les enchères, toutes les mains restantes sont étalées (TDA 2024, règle 16 et son illustration). Tant que les mises du pot annexe continuent, cette obligation ne s'applique pas encore. En cash WSOP, B149 prévoit en revanche que les joueurs du pot annexe montrent avant ceux qui ne jouent que le pot principal.
 
 Pour voir comment les pots annexes se forment et se paient quand des joueurs sont à tapis, vois [les règles de l'all-in et des pots annexes](/fr/blog/holdem-all-in-rules) ; pour les pots partagés, il y a les règles du partage du pot.
 
@@ -103,7 +103,7 @@ Pour voir comment les pots annexes se forment et se paient quand des joueurs son
 
 Si un joueur lit mal sa main et annonce « j'ai une paire » alors qu'il a en fait une quinte — c'est la quinte qui gagne. Le donneur lit les cartes et attribue le pot à la meilleure main montrée.
 
-Et ça marche dans les deux sens. Si tu crois avoir perdu et que tu jettes sans montrer, alors que ta main était gagnante — ==r:le pot est perdu==. Ta main n'est morte que lorsque le donneur l'a poussée dans le muck et qu'elle n'est plus clairement identifiable — des cartes posées face cachée ne sont pas automatiquement mortes (règle 14 de la TDA). N'y compte jamais pour autant. Si tu n'es pas sûr à 100 % d'avoir perdu, laisse toujours le donneur lire ta main avant de la jeter.
+Si tu crois avoir perdu et que tu jettes sans montrer une main gagnante, ==r:tu risques de perdre le pot==. Des cartes posées face cachée ne sont pas automatiquement mortes : si elles restent identifiables à 100 % et récupérables, elles peuvent être étalées. La main est morte si le donneur l'a poussée dans le muck ou si elle n'est plus identifiable et récupérable (TDA 2024, règle 14). N'y compte jamais pour autant. Si tu n'es pas sûr à 100 % d'avoir perdu, laisse toujours le donneur lire ta main avant de la jeter.
 
 Situation réelle : tu as J♥ 10♥ sur un tableau Q♥ 9♥ 8♥ 2♣ 5♦. Tu tiens une quinte flush à la dame (Q-J-10-9-8 à cœur). L'adversaire montre K♣ Q♦ (une paire de dames). Tu gagnes haut la main. Ne jette surtout pas juste parce que tu vois sa dame.
 
@@ -141,15 +141,15 @@ Tu mises la rivière. Quelqu'un te paie. Tu te figes et tu attends qu'il montre.
 
 ### Erreur 2 : jeter ses cartes avant que le donneur lise la main
 
-Tu es à peu près sûr d'avoir perdu. Tu glisses tes cartes face cachée vers le muck. Le donneur les ramasse. Il s'avère que tu tenais la gagnante. La main est morte — pot perdu. ==Ne jette jamais tant que tu n'es pas certain.== Laisse le donneur lire les deux mains.
+Tu es à peu près sûr d'avoir perdu. Tu glisses tes cartes face cachée vers le muck. Le donneur les ramasse. Il s'avère que tu tenais la gagnante. Si la main est morte selon les règles applicables, le pot est perdu ; ne suppose pas qu'elle sera récupérable. ==Ne jette jamais tant que tu n'es pas certain.== Laisse le donneur lire les deux mains.
 
 ### Erreur 3 : exiger de voir toutes les mains payées
 
-Dans la plupart des cardrooms, tu peux demander au donneur d'exposer une main jetée au muck — mais uniquement une main qui a été payée et qui a atteint l'abattage. Les mains couchées sont mortes et ne peuvent jamais être récupérées. Cette règle existe pour se prémunir contre la collusion, pas pour satisfaire la curiosité, et en abuser est considéré comme impoli. Utilise-la avec parcimonie.
+En tournoi, celui qui a payé la mise de la rivière et conservé ou étalé ses cartes peut exiger de voir la main du dernier agresseur (TDA 2024, règle 18). Les autres demandes relèvent du directeur ; en cash, des règles de la maison. Une main simplement posée face cachée à l'abattage n'est pas forcément morte : sa récupération dépend de son identification et de la décision du responsable (TDA 2024, règle 14 ; WSOP Tournament 2026, règles 109–110). Cela ne permet pas d'annuler un fold valable pendant les enchères. Les demandes en cash visent notamment à prévenir la collusion, pas à satisfaire la curiosité ; n'en abuse pas.
 
 ### Erreur 4 : ne pas savoir qu'on peut montrer plus tôt
 
-À l'abattage — c'est-à-dire une fois toutes les mises terminées — aucune règle n'interdit de retourner ta main avant que ce soit officiellement ton tour. Tant que le coup est encore en cours et qu'une action reste en attente, c'est l'inverse : montrer ses cartes coûte une pénalité selon la ==règle 117 de la WSOP==. ==g:Si tu tiens les nuts ou une main très forte, montre-la immédiatement.== Les autres joueurs apprécient. Ça accélère la partie. Et c'est tout le contraire du slow roll.
+À l'abattage — c'est-à-dire une fois toutes les mises terminées — aucune règle n'interdit de retourner ta main avant que ce soit officiellement ton tour. Tant que le coup est encore en cours et qu'une action reste en attente, c'est l'inverse : en tournoi, montrer ses cartes entraîne une pénalité sans tuer automatiquement la main (==WSOP Tournament 2026, règle 117==). ==g:Si tu tiens les nuts ou une main très forte, montre-la immédiatement.== Les autres joueurs apprécient. Ça accélère la partie. Et c'est tout le contraire du slow roll.
 
 ---
 
@@ -162,15 +162,15 @@ Dans la plupart des cardrooms, tu peux demander au donneur d'exposer une main je
 
 **Q. Qui montre ses cartes en premier à l'abattage au poker ?**
 
-A. Le dernier joueur à avoir fait une action agressive (miser ou relancer) au dernier tour d'enchères doit montrer en premier. Si tout le monde a checké au dernier tour, c'est le premier joueur actif à gauche du bouton qui montre en premier, puis l'action se poursuit dans le sens des aiguilles d'une montre.
+A. Sans tapis en tournoi, le dernier joueur à avoir misé ou relancé à la rivière montre en premier. Si tout le monde y a checké, c'est le premier joueur actif à gauche du bouton, puis dans le sens des aiguilles d'une montre. En tournoi, dès qu'un joueur est à tapis et que toutes les enchères sont terminées, toutes les mains encore en jeu sont immédiatement étalées, sans muck (TDA 2024, règle 16). En cash, les règles de la maison déterminent l'ordre.
 
 **Q. Es-tu obligé de montrer tes cartes si on te paie à l'abattage ?**
 
-A. Oui — si tu étais le dernier à miser ou relancer à la rivière, tu dois montrer en premier quand on te paie. Si tu as payé la mise d'un autre, tu peux jeter tes cartes face cachée après avoir vu sa main si tu as perdu. L'exception, c'est le tapis en tournoi : selon la règle 16 de la TDA, celui qui paie doit lui aussi étaler sa main. Et en tournoi, seul un joueur qui a encore ses cartes ou les a étalées peut demander à voir une main — de façon inaliénable, uniquement celle du dernier relanceur.
+A. Sans tapis en tournoi, le dernier agresseur de la rivière montre en premier quand sa mise est payée. En tournoi, celui qui a payé la mise de la rivière et conservé ou étalé ses cartes peut exiger de voir la main du dernier agresseur (TDA 2024, règle 18). Les autres demandes relèvent du directeur ; en cash, des règles de la maison. En tournoi, dès qu'un joueur est à tapis et que toutes les enchères sont terminées, toutes les mains encore en jeu sont immédiatement étalées, sans muck (TDA 2024, règle 16).
 
 **Q. Peux-tu jeter tes cartes à l'abattage sans les montrer ?**
 
-A. Oui, mais seulement si tu as clairement perdu. Une fois la main gagnante montrée, les joueurs qui perdent peuvent jeter leurs cartes face cachée. L'exception : si ta main a été payée, les adversaires peuvent demander à la voir. En cas de moindre doute sur le gagnant, ne jette jamais avant que le donneur ait lu les deux mains.
+A. Hors de l'obligation de révéler un all-in en tournoi, une main perdante peut être jetée, sous réserve d'une demande autorisée de la voir. En tournoi, dès qu'un joueur est à tapis et que toutes les enchères sont terminées, toutes les mains encore en jeu sont immédiatement étalées, sans muck (TDA 2024, règle 16). En tournoi, celui qui a payé la mise de la rivière et conservé ou étalé ses cartes peut exiger de voir la main du dernier agresseur (TDA 2024, règle 18). Les autres demandes relèvent du directeur ; en cash, des règles de la maison. En cas de doute sur le gagnant, laisse le donneur lire les deux mains.
 
 **Q. C'est quoi un slow roll au poker et pourquoi c'est mal vu ?**
 
@@ -178,11 +178,11 @@ A. Le slow roll consiste à retarder exprès la révélation d'une main gagnante
 
 **Q. Dans une situation d'all-in, qui montre ses cartes en premier ?**
 
-A. Quand un joueur fait tapis et qu'aucune mise supplémentaire n'est possible, toutes les mains impliquées dans ce pot sont en général étalées face visible avant ou pendant le déroulement des cartes communes restantes. S'il y a un pot annexe avec des mises en cours, le dernier relanceur parmi ces joueurs montre en premier pour le pot annexe. La main du joueur à tapis est montrée à part pour le pot principal.
+A. En tournoi, dès qu'un joueur est à tapis et que toutes les enchères sont terminées, toutes les mains encore en jeu sont immédiatement étalées, sans muck (TDA 2024, règle 16). Si des joueurs misent encore dans le pot annexe, cette obligation ne s'applique pas encore ; une fois toutes les mises terminées, on ne diffère pas la révélation jusqu'au paiement de ce pot. En cash WSOP 2026 (B149), les joueurs du pot annexe montrent avant ceux du seul pot principal. En No-Limit, si les enchères se sont terminées avant la rivière, le joueur qui a fait tapis montre en premier ; sinon, le dernier agresseur de la rivière commence, ou le premier joueur actif à gauche du bouton si tous ont checké.
 
 **Q. Que signifie « cards speak » au poker ?**
 
-A. « Cards speak » (les cartes parlent) signifie que la meilleure main gagne selon ce que montrent réellement les cartes — pas selon ce que disent les joueurs. Un joueur qui lit mal sa main et annonce une mauvaise main gagne quand même si ses cartes forment en réalité la meilleure main. Et inversement : celui qui jette ses cartes sans vérifier qu'il a perdu n'a aucun droit sur le pot, même si sa main aurait gagné.
+A. « Cards speak » (les cartes parlent) signifie que la meilleure main montrée gagne selon les cartes, pas selon ce que le joueur annonce. Une main mal annoncée peut donc gagner. Des cartes posées face cachée ne sont pas automatiquement mortes : si elles restent identifiables à 100 % et récupérables, elles peuvent être étalées. La main est morte si le donneur l'a poussée dans le muck ou si elle n'est plus identifiable et récupérable (TDA 2024, règle 14). Ne jette pas une main avant de l'avoir vérifiée.
 
 **Q. Es-tu obligé de montrer tes cartes si tu gagnes sans abattage ?**
 

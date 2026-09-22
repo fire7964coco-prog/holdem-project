@@ -164,3 +164,63 @@ EN 의미 정본은 다음 조건을 짧게 보존한다: non-all-in tournament�
 3. 미착수 bn/fa/fil/he/hi/ms/sw/th/tr/vi 20편을 해당 언어 규칙을 읽고 진행한다. 재개 순서는 이미 읽은 tr/ms부터 가능하나 사용자 재개 승인 전에는 쓰지 않는다. TR 직전 패치는 거절되어 파일에 없으므로 적용됐다고 가정하지 않는다. MS는 손패=tangan, 카드=kad, 액션=check 등 영어, 문중 anda가 정본이다.
 4. 41편 구현 후 날짜 마감, AST/URL/카드/FAQ·메타 보존, 숫자 델타, audit 및 자기 교열을 수행한다. 예: node scripts/audit-hardening.mjs --locale=fr --slug=holdem-all-in-rules 및 showdown, 각 실제 수정 언어/slug별 반복. 시나리오 미검사·기존 경고는 분리해서 보고한다.
 5. 독립 검수 결과와 실제 게이트를 이 브리프에 기록해 본체에 인계한다. build/commit/push는 본체 담당이며, 현재 브리프가 있다는 이유만으로 발행 승인으로 간주하지 않는다.
+
+## 7. 2026-09-22 두 번째 이관 체크포인트
+
+§6의 “21편만 초안·20편 미착수” 상태에서 작업을 이어 갔으며, 아래 상태가 최신이다. §6의 과거 파일 수와 TR 미실행 설명은 경위로만 남기고 현재 상태 판단에는 이 절을 우선한다.
+
+### 7-1. 현재 반영 범위
+
+- git status 기준 포스트 **38편 수정**, diff stat 439 insertions / 439 deletions. sitemap은 수정되지 않았다.
+- 기존 21편은 보존했다.
+  - core showdown tldr 9편: en/ar/de/es/id/ja/pt/zh/zh-hant.
+  - tail 12편: fr/it/pl/ro/ru/uk의 all-in·showdown.
+- all-in 10편 bn/fa/fil/he/hi/ms/sw/th/tr/vi는 A1~A8과 updated 2026-09-22를 반영했다.
+- showdown 7편 bn/fa/fil/hi/he/ms/sw는 S1~S21과 updated 2026-09-22를 반영했다.
+- th/tr/vi showdown 3편은 아직 미착수다.
+
+### 7-2. 검증 상태와 품질 주의
+
+- 이번 추가 문안은 언어별 용어 정본을 읽고 직접 작성했지만 **자기 번역 초안**이다. 독립 검수나 현지 인간 감수로 표시하지 않는다.
+- 전체 41편 audit, AST/메타·FAQ·URL·카드 보존 대조, 숫자 델타 검사, 전체 diff 교열, build는 아직 실행하지 않았다.
+- 이번 세션의 he/ms/sw showdown 3편만 대상 줄 재독, `git diff --check`, 22 additions/22 deletions 확인, 고정 메타·tags·FAQ 질문 7개·heading·로케일 URL·이미지 경로·카드 보존 자동 대조를 통과했다. 이는 전체 게이트나 독립 검수를 대신하지 않는다.
+- 기존 §6의 날짜 미결도 남아 있다. it/ro/pl/ru/uk all-in이 2026-09-21이면 최종 내용 게이트 뒤 2026-09-22로 변경한다.
+- 새 문안은 source distinction을 명시하도록 작성했다: tournament all-in 즉시 공개는 모든 betting 종료 후, cash는 house rule/WSOP 2026 B149, river caller 요청권은 카드 보유/table 조건, face-down hand는 identifiable/retrievable 조건, Rule 117은 penalty이지 자동 dead가 아니다.
+- 패치 과정에서 Windows apply_patch 샌드박스 오류가 있어 codex apply-patch 실행 파일에 UTF-8 patch argument를 직접 전달했다. 모든 호출은 Success를 반환했지만 이것은 내용 검증을 대신하지 않는다.
+
+### 7-3. 재개 순서
+
+1. th/tr/vi showdown 각 21자리와 updated를 완성한다.
+2. 41편 파일 경계와 보존 필드, 날짜·판본·산술·조건을 기계 대조한다.
+3. 각 locale/slug audit와 최종 문면 교열을 하고, 오류를 사실 오류·번역 누락·용어/구조·자기회귀로 나눠 기록한다.
+4. build 후 브리프·WORKLOG·handoff를 마감하고 로컬 커밋한다. 0c74affa가 아직 미배포이므로 push는 별도 사용자 확인 없이 하지 않는다.
+
+## 8. 2026-09-22 최종 마감
+
+§7의 미착수 th/tr/vi showdown 3편까지 완성해 계획한 **41편**을 모두 구현했다. core showdown tldr 9편, tail all-in 16편, tail showdown 16편이며 실제 내용이 바뀐 모든 대상의 `updated`는 2026-09-22다. tail `masterUpdated`는 all-in 2026-08-12, showdown 2026-07-12로 유지했다.
+
+### 8-1. 최종 교정
+
+- th/tr/vi는 언어 정본에 맞춰 last aggressor, betting complete, river caller, button/Dealer 표현을 교정했다.
+- 독립 규칙 검수에서 rich tail 6언어(fr/it/pl/ro/ru/uk)의 B149 표가 “side pot 다음 river aggressor”라는 직렬 순서로 오기된 것을 확인했다. **side-pot 참가자 → main-pot-only 참가자**가 1차 그룹 순서이고, 공개 중인 각 그룹 안에서 final-round last aggressor가 먼저라는 계층으로 전부 수정했다.
+- Rule 117의 `will incur a penalty`를 가능형으로 약화한 13언어(bn/fa/fil/fr/he/hi/it/ms/pl/ro/ru/sw/uk)를 확정형으로 수정했다. hand가 자동 dead가 아니라는 조건은 그대로 보존했다.
+- 최종 독립 재검수에서 16개 tail showdown의 B149/Rule 117 잔여 문제 0, th/tr/vi 자연어·용어·caller 조건 잔여 문제 0을 확인했다.
+
+### 8-2. 보존 및 의미 검산
+
+- 41파일 경계, slug/title/seoTitle/desc/category/date/masterUpdated/keepImagesInBody/readTime/emoji/tags/image/imageAlt, FAQ 질문·개수, heading, URL, 이미지, 카드, template literal, plain tldr를 HEAD와 자동 대조했다. heading 차이는 승인된 ID `Cek`→`Check`만 허용했고 전부 통과했다.
+- 변경량은 core showdown 1/1(ID 7/7), tail all-in 9/9(fr 8/8), tail showdown 22/22로 계획과 일치했다.
+- showdown 예시는 자동 감사기가 시나리오를 파싱하지 못해 직접 검산했다. Hero J♥10♥ + board Q♥9♥8♥2♣5♦는 Q♥J♥10♥9♥8♥의 queen-high straight flush이고, Villain K♣Q♦의 Q-Q-K-9-8 one pair를 이긴다.
+- 사이트맵의 대상 41 URL은 모두 2026-09-22다. diff 36개 중 대상은 31개, 나머지 대상 10개는 이미 최신이었다. 범위 밖 5개는 앞선 미배포 PT 커밋 `0c74affa`의 생성기 반영이다.
+
+### 8-3. 게이트
+
+- 25로케일 hard audit: 전부 exit 0, 빨강 0, 주황 0. showdown이 CLUSTERS에 없어 형제 대조를 시도하지 않은 점과 카드 예시 자동 미검사 범위는 별도 확인했다.
+- 보존 검사: 41/41 통과. `git diff --check` 통과.
+- 정적 검사: intl-links, meta, structure, hangul, number-format, hygiene, directives 통과. FAQ schema 575/575.
+- 전역 진단의 선재 비차단 출력은 분리했다: structure tail 결손 40, answer-echo 기타 40, mirror-pair 갈림 28.
+- `npm run build` 성공: 773 static pages. sitemap 70 blog + 577 intl + 81 static + 25 locale homes. postbuild hreflang 0, directive 0, meta-lang 0.
+
+### 8-4. 발행 상태
+
+브리프·WORKLOG·session-handoff와 생성된 sitemap을 함께 로컬 커밋한다. push·배포·IndexNow·라이브 URL 검증은 수행하지 않는다. 앞선 `0c74affa`도 미배포 상태이므로 사용자의 별도 명시적 확인 전에는 원격으로 올리지 않는다.

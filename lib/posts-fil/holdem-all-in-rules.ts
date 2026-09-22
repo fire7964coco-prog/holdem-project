@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ang all-in ay pagtaya ng lahat ng chips mo. Ang kaya mo lang panalunan ay ang na-match mo sa bawat kalaban (ang main pot). Ang sobrang taya ng mas malalaking stack ay bumubuo ng side pot na hindi mo makukuha. Ang all-in na kulang sa full raise ay HINDI nagbubukas ulit ng betting para sa mga nakakilos na.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-21",
+  updated: "2026-09-22",
   masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -146,9 +146,9 @@ Bakit umiiral ito? Pinoprotektahan nito ang mga player mula sa pagkakapilit sa m
 
 ### Advanced na Kaso: Paano Kung Maraming Player ang Nag-All-In nang Maliit?
 
-Ito ang bersyon na nakakalito kahit sa mga regular. Maraming maliliit na all-in ay puwedeng **magsama-sama** hanggang umabot sa full raise — at kung ang combined increments nila ay umabot sa threshold, nagbubukas ulit ang betting para sa mga nakakilos na.
+Ito ang bersyon na nakakalito kahit sa mga regular. Puwedeng **magsama-sama** ang ilang short all-in, pero player-by-player ang pag-test kung muling bubukas ang betting, mula sa huling action ng bawat player. Babalik lang ang karapatang mag-raise kung ang kabuuang increase na kaharap niya ay umabot sa huling full bet o raise.
 
-Ito ang official TDA "re-opening the bet" rule, at sinusunod ito ng karamihan sa mga card room.
+Ito ang official TDA 2024 Rule 47-A para sa "re-opening the bet" sa No-Limit at Pot-Limit. Sa cash game, i-check muna ang house rule.
 
 **Halimbawa (Blinds $1/$2, sa flop):**
 
@@ -158,7 +158,7 @@ Ito ang official TDA "re-opening the bet" rule, at sinusunod ito ng karamihan sa
 
 Combined increments: $4 + $7 = **$11** — umaabot ito sa $10 minimum raise threshold.
 
-**Resulta: NAGBUBUKAS ulit ang betting para kay Player A.** Puwede si A na mag-fold, mag-call, o mag-re-raise, kahit walang isa man kina B o C ang gumawa ng full raise.
+**Resulta: NAGBUBUKAS ulit ang betting para kay Player A.** $21 na ang kaharap ni A, kaya $11 ang increase mula sa huli niyang $10 action—sapat para sa full $10 raise. Pero ang player na nag-call ng $14 sa pagitan nina B at C ay $7 lang ang kaharap na increase, kaya hindi muling bubukas ang betting para sa kanya.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -181,7 +181,7 @@ Ang minimum raise threshold ay palaging ang *huling full valid bet o raise* — 
 | Iisang all-in < full raise | ❌ Hindi — call o fold lang |
 | Iisang all-in ≥ full raise | ✅ Oo — lahat puwedeng mag-re-raise |
 | Maraming maliliit na all-in, combined < full raise | ❌ Hindi |
-| Maraming maliliit na all-in, combined ≥ full raise | ✅ Oo |
+| Maraming short all-in; increase mula sa huling action ng player ≥ full bet/raise | ✅ Oo — para lang sa player na iyon |
 | Player na HINDI PA nakakilos | ✅ Laging puwedeng mag-raise (kahit ano pa) |
 
 </div>
@@ -192,7 +192,7 @@ Ang minimum raise threshold ay palaging ang *huling full valid bet o raise* — 
 
 Kapag kumpleto na ang lahat ng betting at may all-in na player, ganito ang nangyayari sa showdown:
 
-1. **Binubuksan ang cards na nakaharap.** Sa tournament, karaniwang itinatabla ang lahat ng hand na sangkot sa all-in kapag kumpleto na ang betting. Sa cash game, ang standard [last-aggressor showdown rule](/fil/blog/holdem-showdown-rules) muna ang gumagana, tapos magpapakita ang all-in players.
+1. **Binubuksan ang cards na nakaharap.** Sa tournament, kapag may all-in at tapos na ang lahat ng betting, kailangang i-table agad ang lahat ng natitirang hand—walang muck (TDA 2024 Rule 16). Sa cash game, house rule ang masusunod; sa WSOP 2026 B149, unang nagpapakita ang mga player sa side pot bago ang mga nasa main pot lang. Sa No-Limit, kung natapos ang betting bago ang river, unang nagpapakita ang all-in player; kung hindi, ang last river aggressor ang una, o ang unang active player sa kaliwa ng button kapag nag-check through ang river. Tingnan ang [showdown rules](/fil/blog/holdem-showdown-rules).
 2. **Ang side pot muna ang binibigay.** Ni-resolve muna ng dealer ang pinaka-huling nabuong side pot, tapos babalik nang paurong hanggang main pot.
 3. **Cards speak.** Ang pinakamalakas na hand ang mananalo sa bawat pot na eligible sila — kahit ano pa ang sabihin ng mga player na hawak nila.
 4. **Posible ang maraming panalo.** Puwedeng manalo si Player A ng main pot. Puwedeng manalo si Player B ng side pot. Walang kukuha ng lahat dahil lang nanalo sila ng "kanilang" pot.
@@ -239,7 +239,7 @@ A. Kukunin mo ang main pot (ang na-match mo sa bawat player) at kukunin ng ibang
 
 **Q. Nagpapakita ba ang pag-all-in ng hand mo?**
 
-A. Sa tournament, oo — kapag tapos na ang lahat ng betting na may all-in, karaniwang itinatabla nang nakaharap ang lahat ng sangkot na hand. Sa live cash game, standard showdown rules ang gumagana: unang magpapakita ang last aggressor, tapos ang iba ay magpapakita o mag-muck.
+A. Sa tournament, oo—kapag may all-in at tapos na ang lahat ng betting, kailangang i-table agad ang lahat ng natitirang hand at walang muck (TDA 2024 Rule 16). Sa cash game, house rule ang masusunod. Sa WSOP 2026 B149, unang nagpapakita ang mga nasa side pot; sa No-Limit, kung natapos ang betting bago ang river, unang nagpapakita ang all-in player.
 
 **Q. Puwede bang mag-run it twice sa isang poker all-in?**
 
@@ -251,11 +251,11 @@ A. Ang table stakes ay ibig sabihin ang kaya mo lang itaya ay ang chips na nasa 
 
 **Q. Kung dalawang player ang nag-all-in sa magkaibang halaga, sino ang mauuna magpakita?**
 
-A. Ang huling all-in na isang bet o raise ang huling aggressive action at siyang unang magpapakita. Ang all-in na basta lang nag-call ng mas mababang halaga ay hindi aggressive — sa cash game, ang orihinal na nag-bet pa rin ang unang magpapakita. ==r:Sa tournament, wala talagang pagkakasunod-sunod ng pagpapakita dito== — pagkatapos ng betting sa all-in, sabay-sabay na binubuksan ang lahat ng hand na sangkot (TDA Rule 16). Sa cash game, kung ito ay called all-in na walang karagdagang aksyon, puwedeng mag-muck ang nag-call kung matalo siya pagkatapos makita ang hand ng all-in player (sa tournament nananatiling nakaharap ang lahat ng sangkot na hand).
+A. ==r:Sa tournament, walang "sino ang unang magpapakita"==—kapag may all-in at tapos na ang betting, kailangang i-table agad ang lahat ng natitirang hand (TDA 2024 Rule 16). Sa cash game, house rule ang masusunod; sa WSOP 2026 B149, unang nagpapakita ang mga nasa side pot, at sa No-Limit na natapos ang betting bago ang river, all-in player ang una. Hindi ang laki ng all-in lang ang nagtatakda kung sino ang mauuna.
 
 **Q. Iba ba ang all-in rules sa tournament kumpara sa cash game?**
 
-A. Pareho ang core rules, pero may dalawang praktikal na pagkakaiba. Una, sa tournament ang lahat ng hand na sangkot sa all-in ay itinatabla nang nakaharap sa sandaling kumpleto ang lahat ng betting (TDA Rule 16) — hindi ka puwedeng mag-muck hanggang showdown. Sa cash game, standard showdown order ang gumagana at puwedeng mag-muck ang mga player. Pangalawa, ang run it twice ay karaniwan sa cash game (kung magkasundo ang dalawang player) pero karaniwang hindi pinapayagan sa tournament.
+A. Sa tournament, kapag may all-in at tapos na ang betting, kailangang i-table agad ang lahat ng natitirang hand at walang muck (TDA 2024 Rule 16). Sa cash game, house rule at room-specific order gaya ng WSOP 2026 B149 ang masusunod, kaya nakadepende rin sa house rule ang muck. Karaniwan ang run it twice sa cash game kapag may kasunduan, pero kadalasan ay hindi ito pinapayagan sa tournament.
 
 ---
 

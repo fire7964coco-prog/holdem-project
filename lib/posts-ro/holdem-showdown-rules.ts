@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Regulile showdown-ului la Texas Hold'em: cine arată primul, muck-ul și slow roll-ul",
   seoTitle: "Cine arată primul? Regulile showdown-ului la Hold'em",
   desc: "Cine arată cărțile primul la showdown? Poți face muck fără să arăți? Ultimul agresor, cards speak, slow roll și regulile all-in-ului, explicate pe scurt.",
-  tldr: "La showdown, arată primul ultimul jucător care a pariat sau a mărit. Dacă la river toată lumea a dat check, arată primul primul jucător activ din stânga butonului. Dacă ai pierdut, poți face muck fără să arăți, dar adversarii pot cere să vadă o mână care a fost plătită.",
+  tldr: "În turneu, fără all-in, arată primul ultimul agresor de la river; dacă toți dau check, începe primul jucător activ din stânga butonului. Cu un all-in, toate mâinile rămase se arată imediat după încheierea pariurilor. Cine a plătit la river și și-a păstrat sau arătat cărțile poate cere mâna ultimului agresor. La cash, arătarea cărților și muck-ul depind de regulile casei.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-08-09",
+  updated: "2026-09-22",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -39,15 +39,15 @@ Regula depinde de cum s-a încheiat ultima rundă de pariere (pentru secvența c
 
 | Acțiunea pe ultima stradă | Cine arată primul |
 |--------------------|-----------------|
-| Cineva a pariat sau a mărit la river | ==Ultimul jucător care a pariat sau a mărit== arată primul |
+| În turneu fără all-in, cineva a pariat sau a mărit la river | ==Ultimul jucător care a pariat sau a mărit== arată primul |
 | Toată lumea a dat check la river | Primul jucător activ din stânga butonului dealerului arată primul |
-| All-in pe o stradă anterioară (fără pariere la river) | Toate mâinile se întorc cu fața în sus înainte sau în timpul distribuirii cărților rămase |
+| All-in pe o stradă anterioară (fără pariere la river) | În turneu, toate mâinile rămase se arată imediat după încheierea tuturor pariurilor, înaintea cărților comune rămase; la cash se aplică regulile casei |
 
 </div>
 
 ![Infografic cu ordinea showdown-ului la Texas Hold'em — cine arată primul pe un board J♥ 9♠ 4♦ 2♠ K♥](/images/holdem-showdown-who-shows-first.webp)
 
-==g:Sintagma-cheie este „ultimul agresor".== Dacă ai pariat la river și ai fost plătit, arăți tu primul — nu cel care a plătit. Cel care plătește are dreptul să-ți vadă mâna înainte să decidă dacă arată sau face muck la a lui.
+==g:În turneu fără all-in, ultimul agresor de la river arată primul.== Dacă ai pariat și ai fost plătit, arăți înaintea celui care a plătit. În turneu, cel care a plătit pariul de la river și și-a păstrat sau arătat cărțile poate cere mâna ultimului agresor (TDA 2024, regula 18). Celelalte cereri țin de director; la cash se aplică regulile casei.
 
 ---
 
@@ -57,11 +57,11 @@ Da — **dacă ai pierdut**.
 
 Odată ce ultimul agresor își arată mâna, ceilalți jucători pot fie:
 - **Să-și arate mâna** dacă cred că au câștigat
-- **Să facă muck cu fața în jos** dacă văd că au pierdut — nu e nevoie să-ți dezvălui cărțile. Asta e valabil doar cât timp nimeni nu a fost all-in: în turneu, din clipa în care un jucător e all-in, regula 16 TDA cere ca toate mâinile din pot să fie arătate și nimeni nu mai poate face muck (la cash se aplică regulile casei, iar majoritatea sălilor îl lasă pe cel care a plătit să facă muck)
+- **Să facă muck cu fața în jos** dacă văd că au pierdut, sub rezerva unei cereri permise de a vedea mâna. Excepție: În turneu, când există un all-in și toate pariurile s-au încheiat, toate mâinile rămase în joc trebuie arătate imediat, fără muck (TDA 2024, regula 16). La cash se aplică regulile casei.
 
-==r:Dar există o excepție importantă:== dacă pariul tău de la river a fost plătit, cel care a plătit a dat prețul întreg ca să-ți vadă mâna. Să-i ceri dealerului să întoarcă o mână ajunsă în muck este regula **„I want to see that hand"**. În turneu, regula 18 TDA o îngustează: cine nu mai are cărți la showdown, sau le-a dat cu fața în jos, pierde dreptul de a cere; dreptul e de neatins doar pentru cel care a plătit pariul de la river și și-a arătat sau păstrat cărțile, și doar asupra mâinii ultimului agresor. Restul rămâne la latitudinea directorului de turneu, iar la cash multe săli sunt mai permisive. (Să nu o confunzi cu „show one, show all", care înseamnă că, dacă îți arăți cărțile de bunăvoie unui jucător, toată masa are dreptul să le vadă.)
+==r:Dar există o excepție importantă:== dacă pariul tău de la river a fost plătit, cel care a plătit a dat prețul întreg ca să-ți vadă mâna. Să-i ceri dealerului să întoarcă o mână ajunsă în muck este regula **„I want to see that hand"**. În turneu, regula 18 TDA, ediția 2024, o îngustează: cine nu mai are cărți la showdown, sau le-a dat cu fața în jos, pierde dreptul de a cere; dreptul e de neatins doar pentru cel care a plătit pariul de la river și și-a arătat sau păstrat cărțile, și doar asupra mâinii ultimului agresor. Restul rămâne la latitudinea directorului de turneu, iar la cash cererile permise depind de regulile casei. (Să nu o confunzi cu „show one, show all", care înseamnă că, dacă îți arăți cărțile de bunăvoie unui jucător, toată masa are dreptul să le vadă.)
 
-Regulă practică: ==ca ultim agresor tu întorci cărțile, inclusiv la cacealmaua plătită.== Muck-ul cu fața în jos e opțiunea celui care plătește, după ce a văzut mâna celui care a pariat. Dacă ai pariat și faci muck repede pierzi de două ori: cel care a plătit îți poate cere mâna oricum și, pentru că vorbesc cărțile, destule poturi au fost aruncate cu un as mare care era în față.
+Regulă practică: ==în turneu fără all-in, ultimul agresor de la river arată primul, chiar și cu o cacealma plătită.== În turneu, cel care a plătit pariul de la river și și-a păstrat sau arătat cărțile poate cere mâna ultimului agresor (TDA 2024, regula 18). Celelalte cereri țin de director; la cash se aplică regulile casei. Nu arunca în grabă o mână care ar putea câștiga; cu un all-in în turneu, după încheierea pariurilor nu se poate face muck.
 
 ---
 
@@ -77,19 +77,19 @@ Exemplu: butonul, small blind-ul (SB) și big blind-ul (BB) ajung la river. SB d
 
 ## Regulile showdown-ului cu all-in — arată primul cel care merge all-in?
 
-Când un jucător merge all-in și nu mai sunt posibile pariuri, de obicei se distribuie cărțile comune rămase cu **toate mâinile întoarse cu fața în sus**. Asta protejează integritatea mâinii — nimeni n-ar trebui să poată face muck strategic într-o situație de all-in.
+În turneu, când există un all-in și toate pariurile s-au încheiat, toate mâinile rămase în joc trebuie arătate imediat, fără muck (TDA 2024, regula 16). Asta protejează integritatea mâinii: nimeni nu poate face muck pentru a ascunde rezultatul. La cash WSOP 2026 (B149), jucătorii din potul secundar arată înaintea celor care dispută doar potul principal. În No-Limit, dacă pariurile s-au încheiat înainte de river, arată primul cel care a mers all-in; altfel începe ultimul agresor de la river sau primul jucător activ din stânga butonului dacă toți au dat check.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Scenariu de all-in | Regula de showdown |
 |----------------|---------------|
-| Un jucător merge all-in, ceilalți plătesc, nu mai e posibil niciun pariu | Toate mâinile se arată cu fața în sus înainte sau în timpul distribuirii |
-| Un pariu all-in la river este plătit | Cel care a mers all-in arată primul, ca ultim agresor — iar în turneu ==r:aici nu poate face muck nimeni==: conform regulii 16 TDA și cel care plătește trebuie să arate |
-| Mai multe all-in-uri care creează mai multe side pot-uri | Fiecare pot se rezolvă separat; se arată toate mâinile implicate |
+| Un jucător merge all-in, ceilalți plătesc, nu mai e posibil niciun pariu | În turneu, toate mâinile rămase se arată imediat, înaintea cărților comune rămase; la cash se aplică regulile casei |
+| Un pariu all-in la river este plătit | În turneu, după încheierea tuturor pariurilor, se arată toate mâinile fără a aștepta rândul; la cash WSOP, B149 cere jucătorilor din potul secundar să arate înaintea celor care dispută doar potul principal, iar în grupul care arată începe ultimul agresor de la river |
+| Mai multe all-in-uri care creează mai multe side pot-uri | Fiecare pot se rezolvă separat; în turneu toate mâinile rămase se arată după încheierea tuturor pariurilor |
 
 </div>
 
-O nuanță: dacă există un **side pot** (alți jucători mai au jetoane și continuă să parieze), side pot-ul se acordă primul, apoi potul principal. Asta e **ordinea plății** și nu are legătură cu momentul întoarcerii cărților: mâna celui all-in este descoperită din clipa în care nu mai e posibil niciun pariu. Ilustrația TDA la regula 16 o spune textual — nu se așteaptă împărțirea side pot-ului ca să fie întoarsă mâna celui all-in.
+O nuanță: **potul secundar** se acordă înaintea potului principal. Această **ordine a plății** nu amână arătarea în turneu: când toate pariurile se termină, se arată toate mâinile rămase (TDA 2024, regula 16 și ilustrația ei). Cât timp se mai pariază în potul secundar, obligația nu se aplică încă. La cash WSOP, B149 cere însă ca jucătorii din potul secundar să arate înaintea celor care dispută doar potul principal.
 
 Pentru cum se formează și se plătesc side pot-urile când jucătorii sunt all-in, vezi [regulile all-in-ului și side pot-urile](/ro/blog/holdem-all-in-rules); pentru poturile împărțite se aplică regulile de split pot.
 
@@ -103,7 +103,7 @@ Pentru cum se formează și se plătesc side pot-urile când jucătorii sunt all
 
 Dacă un jucător își citește greșit mâna și zice „am o pereche", dar în realitate are o chintă — câștigă chinta. Dealerul citește cărțile și împinge potul spre cea mai bună mână arătată.
 
-Și e valabil în ambele sensuri. Dacă crezi că ai pierdut și faci muck fără să arăți, dar mâna ta era cea câștigătoare — ==r:potul e pierdut==. Mâna ta moare abia când dealerul a împins-o în muck și nu mai poate fi identificată clar — cărțile puse cu fața în jos nu sunt automat moarte (regula 14 TDA). Nu te baza totuși niciodată pe asta. Dacă nu ești sigur 100% că ai pierdut, lasă întotdeauna dealerul să-ți citească mâna înainte să o dai la muck.
+Dacă crezi că ai pierdut și faci muck fără să arăți o mână câștigătoare, ==r:riști să pierzi potul==. Cărțile puse cu fața în jos nu sunt automat moarte: dacă sunt identificabile 100% și recuperabile, pot fi arătate. Mâna este moartă dacă dealerul a împins-o în muck sau dacă nu mai poate fi identificată și recuperată (TDA 2024, regula 14). Nu te baza pe recuperare. Dacă nu ești sigur 100% că ai pierdut, lasă dealerul să citească mâna înainte să o arunci.
 
 Situație reală: ai J♥ 10♥ pe un board Q♥ 9♥ 8♥ 2♣ 5♦. Ai o chintă de culoare la damă (Q-J-10-9-8 de cupă). Adversarul arată K♣ Q♦ (o pereche de dame). Câștigi la mare distanță. Nu da cărțile la muck doar pentru că îi vezi dama.
 
@@ -141,15 +141,15 @@ Pariezi la river. Cineva te plătește. Rămâi nemișcat, așteptând să înto
 
 ### Greșeala 2: să faci muck înainte ca dealerul să citească mâna
 
-Ești aproape sigur că ai pierdut. Îți împingi cărțile cu fața în jos spre muck. Dealerul le trage la el. Se dovedește că aveai mâna câștigătoare. Mâna e moartă — potul, pierdut. ==Nu face muck niciodată până nu ești sigur.== Lasă dealerul să citească ambele mâini.
+Ești aproape sigur că ai pierdut. Împingi cărțile cu fața în jos spre muck, iar dealerul le strânge. Aveai mâna câștigătoare. Dacă mâna este moartă potrivit regulilor aplicabile, potul e pierdut; nu presupune că o vei putea recupera. ==Nu face muck până nu ești sigur.== Lasă dealerul să citească ambele mâini.
 
 ### Greșeala 3: să pretinzi să vezi fiecare mână plătită
 
-În majoritatea sălilor poți cere dealerului să expună o mână ajunsă în muck — dar doar o mână care a fost plătită și a ajuns la showdown. Mâinile foldate sunt moarte și nu mai pot fi recuperate niciodată. Regula asta există ca să protejeze împotriva coluziunii, nu ca să-ți satisfacă curiozitatea, iar abuzul de ea e considerat nepoliticos. Folosește-o cu măsură.
+În turneu, cel care a plătit pariul de la river și și-a păstrat sau arătat cărțile poate cere mâna ultimului agresor (TDA 2024, regula 18). Celelalte cereri țin de director; la cash se aplică regulile casei. O mână doar pusă cu fața în jos la showdown nu este neapărat moartă: recuperarea depinde de identificare și de decizia responsabilului (TDA 2024, regula 14; WSOP Tournament 2026, regulile 109–110). Asta nu anulează un fold valid din timpul pariurilor. Cererile la cash urmăresc și prevenirea coluziunii, nu satisfacerea curiozității; nu abuza de ele.
 
 ### Greșeala 4: să nu știi că poți arăta mai devreme
 
-La showdown — adică după ce toate pariurile s-au încheiat — nu există nicio regulă care să interzică să-ți întorci mâna înainte să-ți vină oficial rândul. Cât timp mâna e încă în joc și mai există o acțiune în așteptare e exact invers: arătarea cărților costă o penalizare conform ==regulii 117 WSOP==. ==g:Dacă ai nuts-ul sau o mână foarte puternică, arat-o imediat.== Ceilalți jucători apreciază asta. Grăbește partida. Și e exact opusul slow roll-ului.
+La showdown — adică după ce toate pariurile s-au încheiat — nu există nicio regulă care să interzică să-ți întorci mâna înainte să-ți vină oficial rândul. Cât timp mâna e încă în joc și mai există o acțiune în așteptare e exact invers: în turneu, arătarea cărților atrage o penalizare fără a omorî automat mâna (==WSOP Tournament 2026, regula 117==). ==g:Dacă ai nuts-ul sau o mână foarte puternică, arat-o imediat.== Ceilalți jucători apreciază asta. Grăbește partida. Și e exact opusul slow roll-ului.
 
 ---
 
@@ -162,15 +162,15 @@ La showdown — adică după ce toate pariurile s-au încheiat — nu există ni
 
 **Q. Cine arată cărțile primul la showdown-ul din poker?**
 
-A. Ultimul jucător care a făcut o acțiune agresivă (a pariat sau a mărit) în ultima rundă de pariere trebuie să arate primul. Dacă în ultima rundă au dat toți check, arată primul primul jucător activ din stânga butonului dealerului, iar acțiunea continuă în sensul acelor de ceasornic.
+A. În turneu fără all-in, arată primul ultimul jucător care a pariat sau a mărit la river. Dacă toți au dat check, începe primul jucător activ din stânga butonului, apoi se continuă în sensul acelor de ceasornic. În turneu, când există un all-in și toate pariurile s-au încheiat, toate mâinile rămase în joc trebuie arătate imediat, fără muck (TDA 2024, regula 16). La cash, ordinea depinde de regulile casei.
 
 **Q. Trebuie să-ți arăți cărțile dacă ești plătit la showdown?**
 
-A. Da — dacă ai fost ultimul care a pariat sau a mărit la river, trebuie să arăți primul când ești plătit. Dacă tu ai plătit pariul altcuiva, poți face muck cu fața în jos după ce i-ai văzut mâna, dacă ai pierdut. Excepția e all-in-ul în turneu: conform regulii 16 TDA și cel care plătește trebuie să arate. Iar în turneu poate cere să vadă o mână doar cine mai are cărți sau le-a arătat — de neatins, numai mâna ultimului agresor.
+A. În turneu fără all-in, ultimul agresor de la river arată primul când este plătit. În turneu, cel care a plătit pariul de la river și și-a păstrat sau arătat cărțile poate cere mâna ultimului agresor (TDA 2024, regula 18). Celelalte cereri țin de director; la cash se aplică regulile casei. În turneu, când există un all-in și toate pariurile s-au încheiat, toate mâinile rămase în joc trebuie arătate imediat, fără muck (TDA 2024, regula 16).
 
 **Q. Poți face muck la showdown fără să arăți?**
 
-A. Da, dar numai dacă ai pierdut clar. Odată ce mâna câștigătoare a fost arătată, jucătorii care pierd pot face muck cu fața în jos. Excepția e când mâna ta a fost plătită — adversarii pot cere să o vadă. Dacă există orice dubiu despre cine a câștigat, nu face muck niciodată înainte ca dealerul să citească ambele mâini.
+A. În afara obligației de a arăta la un all-in de turneu, o mână pierzătoare poate fi aruncată, sub rezerva unei cereri permise de a o vedea. În turneu, când există un all-in și toate pariurile s-au încheiat, toate mâinile rămase în joc trebuie arătate imediat, fără muck (TDA 2024, regula 16). În turneu, cel care a plătit pariul de la river și și-a păstrat sau arătat cărțile poate cere mâna ultimului agresor (TDA 2024, regula 18). Celelalte cereri țin de director; la cash se aplică regulile casei. Dacă ai dubii asupra câștigătorului, lasă dealerul să citească ambele mâini.
 
 **Q. Ce este slow roll-ul în poker și de ce e văzut prost?**
 
@@ -178,11 +178,11 @@ A. Slow roll-ul înseamnă să întârzii intenționat să arăți o mână câ�
 
 **Q. Într-o situație de all-in, cine arată cărțile primul?**
 
-A. Când un jucător merge all-in și nu mai sunt posibile alte pariuri, toate mâinile implicate în acel pot se arată de regulă cu fața în sus înainte sau în timpul distribuirii cărților comune rămase. Dacă există un side pot cu pariere în continuare, arată primul ultimul agresor dintre acei jucători, pentru side pot. Mâna jucătorului all-in se arată separat, pentru potul principal.
+A. În turneu, când există un all-in și toate pariurile s-au încheiat, toate mâinile rămase în joc trebuie arătate imediat, fără muck (TDA 2024, regula 16). Dacă se mai pariază în potul secundar, obligația nu se aplică încă; după încheierea tuturor pariurilor, nu se așteaptă plata acelui pot pentru a arăta mâinile. La cash WSOP 2026 (B149), jucătorii din potul secundar arată înaintea celor care dispută doar potul principal. În No-Limit, dacă pariurile s-au încheiat înainte de river, arată primul cel care a mers all-in; altfel începe ultimul agresor de la river sau primul jucător activ din stânga butonului dacă toți au dat check.
 
 **Q. Ce înseamnă „cards speak" în poker?**
 
-A. Cards speak („cărțile vorbesc") înseamnă că cea mai bună mână câștigă în funcție de ce arată de fapt cărțile — nu în funcție de ce spun jucătorii. Un jucător care își citește greșit mâna și anunță o mână greșită tot câștigă dacă, în realitate, cărțile lui sunt cea mai bună mână. Și invers: cine face muck fără să verifice că a pierdut nu are niciun drept asupra potului, chiar dacă mâna lui ar fi câștigat.
+A. Cards speak („cărțile vorbesc”) înseamnă că cea mai bună mână arătată câștigă potrivit cărților, nu declarației jucătorului. O mână anunțată greșit poate deci câștiga. Cărțile puse cu fața în jos nu sunt automat moarte: dacă sunt identificabile 100% și recuperabile, pot fi arătate. Mâna este moartă dacă dealerul a împins-o în muck sau dacă nu mai poate fi identificată și recuperată (TDA 2024, regula 14). Verifică mâna înainte de a o arunca.
 
 **Q. Trebuie să-ți arăți cărțile dacă câștigi fără showdown?**
 

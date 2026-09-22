@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Andare all-in significa puntare tutte le fiches che hai davanti. Da ogni avversario puoi vincere solo quello che hai pareggiato (il piatto principale); le fiches in più degli stack più grandi formano un side pot che non puoi toccare. Un all-in inferiore a un rilancio completo NON riapre le puntate per chi ha già agito.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-21",
+  updated: "2026-09-22",
   masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -146,9 +146,9 @@ Perché esiste questa regola? Protegge i giocatori dall'essere costretti a rilan
 
 ### Caso avanzato: e se più giocatori vanno all-in corti?
 
-Questa è la versione che fa inciampare persino i regular. Più all-in corti possono **sommarsi** fino a un rilancio completo — e se i loro incrementi combinati raggiungono la soglia, le puntate si riaprono per chi ha già agito.
+Questa è la versione che fa inciampare persino i regular. Più all-in corti possono **sommarsi** per riaprire le puntate, ma la soglia si valuta **per ogni giocatore, dalla sua ultima azione**: l'aumento che deve affrontare deve raggiungere l'ultima puntata o l'ultimo rilancio completo.
 
-È la regola ufficiale TDA sulla riapertura delle puntate ("re-opening the bet"), e la maggior parte delle sale la applica.
+È la regola 47-A della TDA, edizione 2024, per No-Limit e Pot-Limit; nel cash verifica le regole della casa.
 
 **Esempio (bui $1/$2, al flop):**
 
@@ -158,7 +158,7 @@ Questa è la versione che fa inciampare persino i regular. Più all-in corti pos
 
 Incrementi combinati: $4 + $7 = **$11** — raggiunge la soglia del rilancio minimo di $10.
 
-**Risultato: le puntate SI RIAPRONO per il Giocatore A.** A può passare, chiamare o rilanciare, anche se né B né C hanno fatto un rilancio completo da soli.
+**Risultato: le puntate SI RIAPRONO per il Giocatore A.** A può passare, chiamare o rilanciare, anche se né B né C hanno fatto un rilancio completo da soli. A affronta $21 − $10 = $11. Un giocatore che avesse chiamato $14 tra B e C affronterebbe invece solo altri $7: per lui le puntate non si riaprirebbero.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -181,7 +181,7 @@ La soglia del rilancio minimo è sempre l'*ultima puntata o rilancio completo va
 | Un solo all-in < rilancio completo | ❌ No — solo chiamare o passare |
 | Un solo all-in ≥ rilancio completo | ✅ Sì — tutti possono rilanciare |
 | Più all-in corti, somma < rilancio completo | ❌ No |
-| Più all-in corti, somma ≥ rilancio completo | ✅ Sì |
+| Più all-in corti, aumento dall'ultima azione del giocatore ≥ puntata o rilancio completo | ✅ Sì, per quel giocatore |
 | Giocatore che NON ha ancora agito | ✅ Può sempre rilanciare (in ogni caso) |
 
 </div>
@@ -192,7 +192,7 @@ La soglia del rilancio minimo è sempre l'*ultima puntata o rilancio completo va
 
 Quando le puntate sono chiuse e c'è un giocatore all-in, ecco cosa succede allo showdown:
 
-1. **Le carte si girano scoperte.** Nei tornei, tutte le mani coinvolte nell'all-in vengono di norma mostrate non appena le puntate sono chiuse. Nei cash game si applica prima la [regola dell'ultimo aggressore allo showdown](/it/blog/holdem-showdown-rules), poi mostrano i giocatori all-in.
+1. **Le carte si girano scoperte.** Nei tornei, quando c'è un all-in e tutte le puntate sono terminate, tutte le mani ancora in gioco devono essere mostrate subito, senza muck (TDA 2024, regola 16). Nel cash WSOP 2026 (B149), i giocatori del side pot mostrano prima di chi disputa solo il piatto principale. Nel No-Limit, se le puntate sono terminate prima del river, mostra per primo chi è andato all-in; altrimenti inizia l'ultimo aggressore del river, o il primo giocatore attivo a sinistra del bottone se tutti hanno fatto check. Vedi le [regole dello showdown](/it/blog/holdem-showdown-rules).
 2. **I side pot si assegnano per primi.** Il dealer risolve prima il side pot creato più di recente e procede a ritroso fino al piatto principale.
 3. **Parlano le carte.** La mano migliore vince ogni piatto a cui ha diritto — a prescindere da cosa i giocatori dicano di avere.
 4. **Ci possono essere più vincitori.** Il Giocatore A può vincere il piatto principale e il Giocatore B il side pot. Nessuno prende tutto solo perché ha vinto "il suo" piatto.
@@ -244,7 +244,7 @@ A. Ti prendi il piatto principale (quello che hai pareggiato da ogni giocatore) 
 
 **Q. Andare all-in ti obbliga a mostrare la mano?**
 
-A. Nei tornei sì — non appena le puntate si chiudono con un all-in, tutte le mani coinvolte vengono girate scoperte. Nei cash game dal vivo valgono le regole normali dello showdown: l'ultimo aggressore mostra per primo e gli altri mostrano o gettano le carte.
+A. Nei tornei, quando c'è un all-in e tutte le puntate sono terminate, tutte le mani ancora in gioco devono essere mostrate subito, senza muck (TDA 2024, regola 16). Nel cash WSOP 2026 (B149), i giocatori del side pot mostrano prima di chi disputa solo il piatto principale. Nel No-Limit, se le puntate sono terminate prima del river, mostra per primo chi è andato all-in; altrimenti inizia l'ultimo aggressore del river, o il primo giocatore attivo a sinistra del bottone se tutti hanno fatto check. La possibilità di fare muck nel cash dipende dalle regole della casa.
 
 **Q. Si può fare "run it twice" in un all-in a poker?**
 
@@ -256,11 +256,11 @@ A. Table stakes significa che puoi puntare solo le fiches che avevi davanti all'
 
 **Q. Se due giocatori vanno all-in per importi diversi, chi mostra per primo?**
 
-A. L'ultimo all-in che è stato una puntata o un rilancio conta come l'ultima azione aggressiva e mostra per primo. Un all-in che si limita a chiamare per meno non è aggressivo — nei cash game mostra comunque per primo chi aveva puntato inizialmente. ==r:Nei tornei qui non esiste alcun ordine dello showdown== — appena le puntate dell'all-in sono concluse, tutte le mani coinvolte vengono girate contemporaneamente (Regola 16 della TDA). Nei cash game, se è stato un all-in chiamato senza ulteriore azione, chi ha chiamato può gettare le carte se perde dopo aver visto la mano del giocatore all-in (nei tornei tutte le mani coinvolte restano scoperte).
+A. ==r:In torneo non si aspetta il proprio turno per mostrare==: Nei tornei, quando c'è un all-in e tutte le puntate sono terminate, tutte le mani ancora in gioco devono essere mostrate subito, senza muck (TDA 2024, regola 16). Nel cash WSOP 2026 (B149), i giocatori del side pot mostrano prima di chi disputa solo il piatto principale. Nel No-Limit, se le puntate sono terminate prima del river, mostra per primo chi è andato all-in; altrimenti inizia l'ultimo aggressore del river, o il primo giocatore attivo a sinistra del bottone se tutti hanno fatto check. Gli importi degli all-in, da soli, non determinano quindi chi mostra per primo.
 
 **Q. Le regole dell'all-in cambiano tra tornei e cash game?**
 
-A. Il nucleo è lo stesso, con due differenze pratiche. Prima: nei tornei tutte le mani coinvolte in un all-in vengono girate scoperte non appena le puntate si chiudono (Regola 16 della TDA) — non puoi gettare le carte prima dello showdown. Nei cash game vale l'ordine normale dello showdown e puoi farlo. Seconda: il run it twice è comune nei cash game (se entrambi i giocatori sono d'accordo) ma nei tornei di norma non è permesso.
+A. Il nucleo è lo stesso, con due differenze pratiche. Prima: Nei tornei, quando c'è un all-in e tutte le puntate sono terminate, tutte le mani ancora in gioco devono essere mostrate subito, senza muck (TDA 2024, regola 16). Nel cash l'ordine segue le regole della casa, comprese le condizioni B149 alle WSOP, e il muck non è vietato in generale. Seconda: il run it twice è comune nei cash game (se entrambi i giocatori sono d'accordo) ma nei tornei di norma non è permesso.
 
 ---
 

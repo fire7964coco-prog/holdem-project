@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Luật lật bài (showdown) trong Texas Hold'em: ai lật trước, muck và slow roll",
   seoTitle: "Ai lật bài trước? Luật showdown & muck trong Poker",
   desc: "Ai phải lật bài trước khi showdown? Có được muck không lật? Luật showdown Hold'em — người cược cuối, bài tự nói, slow roll và all-in, giải thích rõ ràng.",
-  tldr: "Khi lật bài (showdown), người cược hoặc tố cuối cùng phải lật trước. Nếu vòng river tất cả đều check, người còn chơi đầu tiên bên trái nút Dealer lật trước. Bạn được bỏ bài úp (muck) không cần lật nếu thua, nhưng đối thủ có quyền yêu cầu xem một tay bài đã bị theo (call).",
+  tldr: "Ở showdown của một giải đấu không có all-in, người chủ động cuối ở river lật trước; nếu river check hết, người còn bài đầu tiên bên trái nút Dealer lật trước. Khi có all-in, mọi tay bài còn sống phải lật ngay sau khi toàn bộ cược kết thúc. Người đã theo cú cược ở river và còn giữ hoặc đã ngửa bài có quyền yêu cầu xem bài của người chủ động cuối. Cash game áp dụng luật nhà về lật và muck.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-08-09",
+  updated: "2026-09-22",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 phút",
@@ -39,15 +39,15 @@ Luật phụ thuộc vào cách vòng cược cuối cùng kết thúc (để xe
 
 | Diễn biến vòng cược cuối | Ai lật bài trước |
 |--------------------|-----------------|
-| Có người cược hoặc tố (raise) ở river | ==Người cược hoặc tố cuối cùng== lật trước |
+| Trong giải đấu không có all-in, có người cược hoặc tố ở river | ==Người cược hoặc tố cuối cùng== lật trước |
 | Tất cả đều check ở river | Người còn chơi đầu tiên bên trái nút Dealer lật trước |
-| All-in từ vòng trước đó (river không còn cược) | Mọi tay bài được lật ngửa trước hoặc trong lúc chia nốt bài chung |
+| All-in từ vòng trước đó (river không còn cược) | Trong giải đấu, mọi tay bài còn sống được lật ngay sau khi toàn bộ cược kết thúc, trước khi chia nốt bài chung; cash game theo luật nhà |
 
 </div>
 
 ![Infographic thứ tự lật bài trong Texas Hold'em — ai lật trước trên board J♥ 9♠ 4♦ 2♠ K♥](/images/holdem-showdown-who-shows-first.webp)
 
-==g:Cụm từ mấu chốt là "người chủ động cuối cùng" (last aggressor).== Nếu bạn cược ở river và bị theo, bạn lật trước — không phải người theo. Người theo có quyền xem bài của bạn trước khi quyết định lật hay bỏ bài úp (muck).
+==g:Trong giải đấu không có all-in, người chủ động cuối ở river lật trước.== Nếu bạn cược và bị theo, bạn lật trước người theo. Trong giải đấu, người đã theo cú cược ở river và còn giữ hoặc đã ngửa bài có quyền yêu cầu xem bài của người chủ động cuối (TDA 2024, Luật 18). Yêu cầu khác do giám đốc giải quyết; cash game theo luật nhà.
 
 ---
 
@@ -57,11 +57,11 @@ Luật phụ thuộc vào cách vòng cược cuối cùng kết thúc (để xe
 
 Sau khi người chủ động cuối cùng lật bài, những người còn lại có thể:
 - **Lật bài của mình** nếu nghĩ rằng mình thắng
-- **Bỏ bài úp vào muck** nếu thấy mình đã thua — không cần để lộ bài. Nhưng điều này chỉ đúng khi chưa ai all-in: trong giải đấu, ngay khi có người all-in, TDA Rule 16 buộc mọi tay bài trong pot phải ngửa và không ai được muck (cash game theo luật riêng của từng phòng bài, và đa số cho phép người theo được muck)
+- **Bỏ bài úp vào muck** nếu thấy mình đã thua, với điều kiện vẫn tuân theo các yêu cầu xem bài được phép. Ngoại lệ: trong giải đấu, khi có người all-in và toàn bộ cược đã hoàn tất, tất cả tay bài còn sống phải lật ngay và không được muck (TDA 2024, Luật 16). Cash game theo luật nhà.
 
-==r:Nhưng có một ngoại lệ quan trọng:== nếu cú cược river của bạn bị theo, người theo đã trả đủ giá để được xem bài bạn. Yêu cầu Dealer lật một tay bài đã bỏ úp — đó chính là luật **"I want to see that hand" (tôi muốn xem tay bài đó)**. Trong giải đấu, ==TDA Rule 18== khoanh rất hẹp: ai không còn cầm bài lúc showdown, hoặc đã muck úp, thì mất quyền yêu cầu. Quyền này chỉ bất khả xâm phạm với người đã theo cú cược river và đã ngửa hoặc còn giữ bài của mình — và cũng chỉ với tay bài của ==người chủ động cuối cùng==, tay bài mà anh ta đã trả tiền để xem. Phần còn lại do giám đốc giải quyết định; ở cash game nhiều phòng bài áp dụng thoáng hơn. (Đừng nhầm với luật "show one, show all" — cho một người xem thì cho cả bàn xem: nếu bạn tự nguyện cho một người xem bài, cả bàn đều có quyền xem.)
+==r:Nhưng có một ngoại lệ quan trọng:== nếu cú cược river của bạn bị theo, người theo đã trả đủ giá để được xem bài bạn. Yêu cầu Dealer lật một tay bài đã bỏ úp — đó chính là luật **"I want to see that hand" (tôi muốn xem tay bài đó)**. Trong giải đấu, ==TDA 2024, Luật 18== khoanh rất hẹp: ai không còn cầm bài lúc showdown, hoặc đã muck úp, thì mất quyền yêu cầu. Quyền này chỉ bất khả xâm phạm với người đã theo cú cược river và đã ngửa hoặc còn giữ bài của mình — và cũng chỉ với tay bài của ==người chủ động cuối cùng==. Phần còn lại theo quyết định của giám đốc giải đấu; ở cash game, luật nhà quyết định yêu cầu nào được chấp nhận. (Đừng nhầm với luật "show one, show all" — cho một người xem thì cho cả bàn xem: nếu bạn tự nguyện cho một người xem bài, cả bàn đều có quyền xem.)
 
-Quy tắc thực chiến: ==là người chủ động cuối cùng thì bạn lật bài — kể cả cú bluff đã bị theo.== Muck úp là lựa chọn của người theo, sau khi đã nhìn bài của người cược. Bạn cược rồi vội muck là thiệt hai lần: người theo vẫn có quyền yêu cầu xem bài bạn, và vì bài mới là thứ quyết định, không ít pot đã bị vứt đi bởi người có ách cao thực ra đang dẫn.
+Quy tắc thực chiến: ==trong giải đấu không có all-in, người chủ động cuối ở river lật trước, kể cả cú bluff đã bị theo.== Người đã theo cú cược ở river và còn giữ hoặc đã ngửa bài có quyền yêu cầu xem bài của người chủ động cuối (TDA 2024, Luật 18). Yêu cầu khác do giám đốc giải quyết; cash game theo luật nhà. Đừng vội muck một tay bài có thể thắng; khi có all-in trong giải đấu và toàn bộ cược đã xong, không có ngoại lệ muck.
 
 ---
 
@@ -77,19 +77,19 @@ Ví dụ: nút Dealer (BTN), mù nhỏ (SB) và mù lớn (BB) cùng vào river.
 
 ## Luật showdown khi all-in — người all-in có phải lật trước không?
 
-Khi một người all-in và không còn khả năng cược thêm, thông lệ là chia nốt các lá bài chung với **mọi tay bài lật ngửa**. Điều này bảo vệ tính minh bạch của ván bài — không ai được phép muck "chiến thuật" trong tình huống all-in.
+Trong giải đấu, khi có người all-in và toàn bộ cược đã hoàn tất, tất cả tay bài còn sống phải lật ngay và không được muck (TDA 2024, Luật 16). Điều này bảo vệ tính minh bạch của ván bài. Ở cash game WSOP 2026, B149 cho người chơi side pot lật trước người chỉ có quyền ở pot chính. Trong No-Limit, nếu cược kết thúc trước river thì người all-in lật trước; nếu không, người chủ động cuối ở river lật trước, hoặc người còn bài đầu tiên bên trái nút Dealer nếu river check hết.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Tình huống all-in | Luật showdown |
 |----------------|---------------|
-| Một người all-in, những người khác theo, không còn cược được nữa | Mọi tay bài lật ngửa trước hoặc trong lúc chia nốt bài |
-| Cú all-in ở river bị theo | Người all-in lật trước với tư cách người chủ động cuối cùng — nhưng trong giải đấu, ==r:ở đây không ai được muck==: theo TDA Rule 16, người theo cũng phải ngửa bài |
-| Nhiều cú all-in tạo ra nhiều side pot | Mỗi pot được phân xử riêng; mọi tay bài liên quan đều phải lật |
+| Một người all-in, những người khác theo, không còn cược được nữa | Trong giải đấu, mọi tay bài còn sống lật ngay trước khi chia nốt bài chung; cash game theo luật nhà |
+| Cú all-in ở river bị theo | Trong giải đấu, ngay khi toàn bộ cược kết thúc, mọi tay bài phải được lật ngay không chờ thứ tự; cash WSOP B149 quy định người chơi side pot lật trước người chỉ có quyền ở pot chính, và trong nhóm đang lật, người chủ động cuối ở river lật trước |
+| Nhiều cú all-in tạo ra nhiều side pot | Mỗi pot được phân xử riêng; trong giải đấu, mọi tay bài còn sống lật ngay khi toàn bộ cược kết thúc |
 
 </div>
 
-Một điểm tinh tế: nếu có **side pot (pot phụ)** — tức những người khác vẫn còn chip và tiếp tục cược — thì side pot được chia trước, rồi mới đến pot chính (main pot). Đó là **thứ tự chi trả**, không liên quan gì đến lúc lật bài: bài của người all-in đã ngửa từ khoảnh khắc không còn cược được nữa. Phần minh họa của TDA cho Rule 16 nói thẳng — đừng đợi chia xong side pot rồi mới lật bài người all-in.
+Một điểm tinh tế: **side pot (pot phụ)** được chia trước pot chính. Đó là **thứ tự chi trả**, không trì hoãn việc lật bài trong giải đấu: ngay khi toàn bộ cược kết thúc, mọi tay bài còn sống phải lật (TDA 2024, Luật 16 và phụ lục). Nếu side pot vẫn còn cược, nghĩa vụ này chưa bắt đầu. Trong cash WSOP, B149 lại quy định người chơi side pot lật trước người chỉ có quyền ở pot chính.
 
 Để hiểu side pot được hình thành và chia thế nào khi có người all-in, xem [luật all-in và side pot](/vi/blog/holdem-all-in-rules); còn khi pot bị chia đôi thì có luật split pot (chia pot).
 
@@ -103,7 +103,7 @@ Một điểm tinh tế: nếu có **side pot (pot phụ)** — tức những ng
 
 Nếu một người đọc nhầm bài của mình và hô "tôi có một đôi", nhưng thực ra họ có Sảnh (straight) — thì Sảnh thắng. Dealer đọc bài và trao pot cho tay bài mạnh nhất đã được lật.
 
-Luật này có hai mặt. Nếu bạn tưởng mình thua và muck không lật, nhưng tay bài của bạn lẽ ra thắng — ==r:pot coi như mất==. Bài của bạn chỉ chết khi Dealer đã đẩy nó vào muck và không còn nhận dạng rõ được nữa — bài chỉ mới úp xuống thì chưa tự động chết (TDA Rule 14). Dù vậy, đừng bao giờ trông cậy vào điều đó. Nếu chưa chắc chắn 100% mình thua, hãy luôn để Dealer đọc bài của bạn trước khi muck.
+Nếu bạn tưởng mình thua rồi muck một tay bài thắng, ==r:bạn có thể mất pot==. Bài chỉ úp xuống chưa tự động chết: nếu vẫn nhận dạng được 100% và có thể lấy lại, bài có thể được lật. Tay bài chết khi Dealer đẩy vào muck hoặc khi không còn nhận dạng và lấy lại được nữa (TDA 2024, Luật 14). Dù vậy, đừng trông cậy vào điều đó. Nếu chưa chắc chắn 100% mình thua, hãy để Dealer đọc bài trước khi muck.
 
 Tình huống thật: bạn cầm J♥ 10♥ trên board Q♥ 9♥ 8♥ 2♣ 5♦. Bạn có Thùng Phá Sảnh (straight flush) đỉnh Q — Q-J-10-9-8 đồng chất cơ. Đối thủ lật K♣ Q♦ (một đôi Q). Bạn thắng tuyệt đối. Đừng muck chỉ vì thấy họ có con Q.
 
@@ -141,15 +141,15 @@ Bạn cược ở river. Có người theo. Bạn đứng hình chờ họ lật
 
 ### Lỗi 2: Muck trước khi Dealer đọc bài
 
-Bạn khá chắc mình thua. Bạn đẩy bài úp về phía muck. Dealer kéo bài vào. Hóa ra bạn cầm tay bài thắng. Bài đã chết — pot mất. ==Đừng bao giờ muck khi chưa chắc chắn.== Hãy để Dealer đọc cả hai tay bài.
+Bạn khá chắc mình thua. Bạn đẩy bài úp về phía muck. Dealer kéo bài vào. Hóa ra bạn cầm tay bài thắng. Nếu tay bài đã chết theo luật áp dụng, pot sẽ mất; đừng mặc định có thể lấy bài lại. ==Đừng bao giờ muck khi chưa chắc chắn.== Hãy để Dealer đọc cả hai tay bài.
 
 ### Lỗi 3: Đòi xem mọi tay bài bị theo
 
-Ở đa số phòng bài, bạn có thể yêu cầu Dealer lật một tay bài đã bỏ úp — nhưng chỉ với tay bài từng bị theo và đi đến showdown. Bài đã fold là bài chết, không bao giờ lấy lại được. Luật yêu cầu này tồn tại để chống thông đồng, không phải để thỏa mãn tò mò, và lạm dụng nó bị xem là bất lịch sự. Hãy dùng thật tiết chế.
+Trong giải đấu, người đã theo cú cược ở river và còn giữ hoặc đã ngửa bài có quyền yêu cầu xem bài của người chủ động cuối (TDA 2024, Luật 18). Yêu cầu khác do giám đốc giải quyết; cash game theo luật nhà. Một tay bài chỉ đặt úp ở showdown chưa chắc đã chết: việc lấy lại phụ thuộc vào khả năng nhận dạng và quyết định của floor (TDA 2024, Luật 14; WSOP Tournament 2026, Luật 109–110). Điều này không đảo ngược một lần fold hợp lệ khi cược còn diễn ra. Yêu cầu trong cash game nhằm chống thông đồng, không phải thỏa mãn tò mò; đừng lạm dụng.
 
 ### Lỗi 4: Không biết mình được lật sớm
 
-Ở showdown — tức là khi mọi vòng cược đã khép lại — không có luật nào cấm bạn lật bài trước khi chính thức đến lượt. Còn khi ván vẫn đang chạy và đâu đó còn hành động chưa xong thì ngược lại: để lộ bài sẽ bị phạt theo ==WSOP Rule 117==. ==g:Nếu bạn cầm nuts hoặc một tay bài rất mạnh, hãy lật ngay.== Những người chơi khác sẽ cảm kích. Ván bài nhanh hơn. Và đó là điều ngược lại hoàn toàn với slow roll.
+Ở showdown — tức là khi mọi vòng cược đã khép lại — không có luật nào cấm bạn lật bài trước khi chính thức đến lượt. Còn khi ván vẫn đang chạy và đâu đó còn hành động chưa xong thì ngược lại: trong giải đấu, để lộ bài sẽ bị phạt nhưng không tự động làm tay bài chết (==WSOP Tournament 2026, Luật 117==). ==g:Nếu bạn cầm nuts hoặc một tay bài rất mạnh, hãy lật ngay.== Những người chơi khác sẽ cảm kích. Ván bài nhanh hơn. Và đó là điều ngược lại hoàn toàn với slow roll.
 
 ---
 
@@ -162,15 +162,15 @@ Bạn khá chắc mình thua. Bạn đẩy bài úp về phía muck. Dealer kéo
 
 **Q. Ai lật bài trước khi showdown trong poker?**
 
-A. Người thực hiện hành động chủ động cuối cùng (cược hoặc tố) trong vòng cược cuối phải lật trước. Nếu vòng cuối tất cả đều check, người còn chơi đầu tiên bên trái nút Dealer lật trước, và lượt tiếp tục theo chiều kim đồng hồ.
+A. Trong giải đấu không có all-in, người chủ động cuối ở river lật trước. Nếu river check hết, người còn bài đầu tiên bên trái nút Dealer lật trước rồi tiếp tục theo chiều kim đồng hồ. Khi có all-in và toàn bộ cược đã hoàn tất, tất cả tay bài còn sống phải lật ngay, không được muck (TDA 2024, Luật 16). Cash game dùng luật nhà để xác định thứ tự.
 
 **Q. Bị theo (call) khi showdown thì có bắt buộc lật bài không?**
 
-A. Có — nếu bạn là người cược hoặc tố cuối cùng ở river, bạn phải lật trước khi bị theo. Nếu bạn là người theo cược của người khác, bạn được bỏ bài úp sau khi xem bài họ nếu bạn thua. Ngoại lệ là all-in trong giải đấu: theo TDA Rule 16, người theo cũng phải ngửa bài. Cũng trong giải đấu, chỉ người còn cầm bài hoặc đã ngửa bài mới được yêu cầu xem một tay bài — bất khả xâm phạm, chỉ với tay bài của người chủ động cuối cùng.
+A. Trong giải đấu không có all-in, người chủ động cuối ở river lật trước khi bị theo. Người đã theo cú cược ở river và còn giữ hoặc đã ngửa bài có quyền yêu cầu xem bài của người chủ động cuối (TDA 2024, Luật 18). Yêu cầu khác do giám đốc giải quyết; cash game theo luật nhà. Khi có all-in trong giải đấu và toàn bộ cược đã hoàn tất, tất cả tay bài còn sống phải lật ngay, không được muck (TDA 2024, Luật 16).
 
 **Q. Có được muck khi showdown mà không lật bài không?**
 
-A. Được, nhưng chỉ khi bạn thua rõ ràng. Sau khi tay bài thắng được lật, những người thua có thể bỏ bài úp. Ngoại lệ là khi tay bài của bạn từng bị theo — đối thủ có quyền yêu cầu xem. Nếu còn bất kỳ nghi ngờ nào về người thắng, đừng bao giờ muck trước khi Dealer đọc cả hai tay bài.
+A. Ngoài nghĩa vụ lật bài khi all-in trong giải đấu, tay bài thua có thể muck nhưng vẫn phải tuân theo yêu cầu xem bài được phép. Khi có all-in và toàn bộ cược đã hoàn tất, tất cả tay bài còn sống phải lật ngay, không được muck (TDA 2024, Luật 16). Người đã theo cú cược ở river và còn giữ hoặc đã ngửa bài có quyền yêu cầu xem bài của người chủ động cuối (TDA 2024, Luật 18). Yêu cầu khác do giám đốc giải quyết; cash game theo luật nhà. Nếu chưa chắc ai thắng, hãy để Dealer đọc cả hai tay bài.
 
 **Q. Slow roll trong poker là gì và vì sao bị ghét?**
 
@@ -178,11 +178,11 @@ A. Slow roll là cố tình trì hoãn lật một tay bài thắng mà bạn đ
 
 **Q. Trong tình huống all-in, ai lật bài trước?**
 
-A. Khi một người all-in và không còn khả năng cược thêm, mọi tay bài liên quan đến pot đó thường được lật ngửa trước hoặc trong lúc chia nốt bài chung. Nếu có side pot với cược vẫn tiếp diễn, người chủ động cuối cùng trong nhóm đó lật trước cho side pot. Tay bài của người all-in được lật riêng cho pot chính.
+A. Trong giải đấu, khi có người all-in và toàn bộ cược đã hoàn tất, tất cả tay bài còn sống phải lật ngay và không được muck (TDA 2024, Luật 16). Nếu side pot vẫn còn cược, nghĩa vụ này chưa bắt đầu; khi cược kết thúc, không chờ chia side pot mới lật. Trong cash WSOP 2026, B149 cho người chơi side pot lật trước người chỉ có quyền ở pot chính. Ở No-Limit, nếu cược kết thúc trước river thì người all-in lật trước; nếu không, áp dụng thứ tự river.
 
 **Q. "Cards speak" (bài tự nói) nghĩa là gì trong poker?**
 
-A. Cards speak nghĩa là tay bài mạnh nhất thắng dựa trên những gì lá bài thực sự thể hiện — không dựa trên lời người chơi nói. Người đọc nhầm bài và hô sai tay bài vẫn thắng nếu bài của họ thực sự mạnh nhất. Ngược lại, người muck mà không kiểm chứng mình thua sẽ mất mọi quyền với pot, kể cả khi tay bài của họ lẽ ra thắng.
+A. Cards speak nghĩa là tay bài mạnh nhất đã được lật ngửa sẽ thắng theo đúng giá trị của các lá bài, không theo lời tuyên bố; tay bài bị đọc sai vẫn có thể thắng. Bài chỉ úp xuống chưa tự động chết: nếu vẫn nhận dạng được 100% và có thể lấy lại, bài có thể được lật. Tay bài chết khi Dealer đẩy vào muck hoặc khi không còn nhận dạng và lấy lại được nữa (TDA 2024, Luật 14). Đừng muck trước khi kiểm tra bài.
 
 **Q. Thắng mà không có showdown thì có phải lật bài không?**
 

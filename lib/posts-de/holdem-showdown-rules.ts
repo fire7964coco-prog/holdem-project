@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Showdown-Regeln beim Texas Hold'em: Wer zeigt zuerst, Mucken und Slow Rolling",
   seoTitle: "Wer dreht zuerst um? Showdown-Regeln & Mucken beim Hold'em",
   desc: "Wer zeigt beim Showdown zuerst die Karten? Darf man verdeckt mucken? Showdown-Regeln beim Hold'em – letzter Aggressor, Cards Speak, Slow Roll und All-in.",
-  tldr: "Beim Showdown zeigt zuerst, wer als Letzter gesetzt oder erhöht hat. Wurde der River durchgecheckt, zeigt der erste aktive Spieler links vom Button zuerst. Verlierst du, darfst du verdeckt mucken – aber wer die River-Bet gecallt hat, darf die Hand des Bettors sehen.",
+  tldr: "Im Turnier zeigt ohne All-in der letzte River-Aggressor zuerst; nach einem durchgecheckten River beginnt der erste aktive Spieler links vom Button. Bei einem All-in müssen nach Abschluss aller Einsätze sofort alle verbliebenen Hände offenliegen. Wer die River-Bet gecallt und seine Karten behalten oder aufgedeckt hat, darf die Hand des letzten Aggressors verlangen. Im Cashgame gelten fürs Zeigen und Mucken die Hausregeln.",
   category: "rules",
   date: "2026-06-15",
   updated: "2026-09-22",

@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Showdown Rules sa Texas Hold'em: Sino ang Unang Magpapakita, Mucking, at Slow Rolling",
   seoTitle: "Sino ang Unang Magpapakita? Showdown Rules & Mucking",
   desc: "Sino ang unang magpapakita ng cards sa showdown? Pwede ka bang mag-muck? Hold'em showdown rules — last aggressor, cards speak, slow roll, all-in explained.",
-  tldr: "Sa showdown, ang huling nag-bet o nag-raise ang unang magpapakita. Kung na-check-through ang river, ang unang aktibong player sa kaliwa ng button ang mauuna. Pwede kang mag-muck nang hindi nagpapakita kung talo ka, pero pwedeng hilingin ng kalaban na makita ang called hand.",
+  tldr: "Sa non-all-in tournament showdown, last river aggressor ang unang magpapakita; kapag nag-check through ang river, unang active player sa kaliwa ng button. Kapag may all-in at tapos na ang betting, lahat ng live hand ay dapat i-table. Puwedeng hingin ng river caller na hawak o naka-table pa ang cards ang hand ng last aggressor. House rule ang masusunod sa cash game.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-08-09",
+  updated: "2026-09-22",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -39,15 +39,15 @@ Depende ang rule sa kung paano natapos ang final betting round (para sa buong st
 
 | Final street action | Sino ang unang magpapakita |
 |--------------------|-----------------|
-| May nag-bet o nag-raise sa river | ==Ang huling nag-bet o nag-raise== ang unang magpapakita |
+| Non-all-in tournament; may nag-bet o nag-raise sa river | ==Ang huling nag-bet o nag-raise== ang unang magpapakita |
 | Lahat nag-check sa river | Ang unang aktibong player sa kaliwa ng dealer button ang mauuna |
-| All-in sa naunang street (walang river betting) | Lahat ng hands nakatable face-up bago/habang naglalabas ng runout |
+| Tournament; may all-in at tapos na ang lahat ng betting | I-table agad ang lahat ng live hand bago ang runout; walang muck |
 
 </div>
 
 ![Infographic ng showdown order sa Texas Hold'em — sino ang unang magpapakita sa J♥ 9♠ 4♦ 2♠ K♥ board](/images/holdem-showdown-who-shows-first.webp)
 
-==g:Ang key phrase dito ay "last aggressor."== Kung ikaw ang nag-bet sa river at na-call ka, ikaw ang unang magpapakita — hindi ang caller. Makikita muna ng caller ang hand mo bago siya magdesisyon kung magpapakita o mag-muck ng sa kanya.
+==g:Sa non-all-in tournament, "last aggressor" ang susi.== Kung nag-bet ka sa river at na-call, ikaw ang unang magpapakita. Puwedeng hingin ng river caller na hawak o naka-table pa ang cards ang hand ng last aggressor; sa cash game, house rule ang nasusunod.
 
 ---
 
@@ -57,11 +57,11 @@ Oo — **kung talo ka**.
 
 Pagkatapos magpakita ng last aggressor ng hand niya, ang ibang players ay pwedeng:
 - **Magpakita ng hand nila** kung sa tingin nila panalo sila
-- **Mag-muck face-down** kung nakita nilang talo sila — hindi na kailangang ipakita ang cards mo. Umiiral lang ito habang walang nag-all-in: sa tournament, sa sandaling may all-in, iniuutos ng TDA Rule 16 na ibuka ang lahat ng hand sa pot na iyon at walang sinumang pwedeng mag-muck (sa cash game, house rules ang masusunod, at sa karamihan ng cardroom pwedeng mag-muck ang caller)
+- **Mag-muck face-down** kung tiyak na talo—pero maaaring may authorized hand-viewing request. Sa tournament, kapag may all-in at tapos na ang betting, lahat ng live hand ay dapat agad i-table at walang muck (TDA 2024 Rule 16). House rule ang masusunod sa cash game.
 
-==r:Pero may isang mahalagang exception:== kung na-call ang river bet mo, ang caller ay nagbayad ng buong presyo para makita ang hand mo. Ang paghiling sa dealer na buksan ang isang mucked hand — iyon ang **"I want to see that hand"** rule. Sa tournament, mahigpit ang guhit ng ==TDA Rule 18==: sinumang wala nang hawak na cards sa showdown, o nag-muck nang nakataob, ay nawawalan ng karapatang humiling. Hindi maaalis ang karapatang iyon sa nag-call lang ng river bet at nagbukas o may hawak pa ng sarili niyang cards — at para lang sa hand ng ==last aggressor==, ang hand na binayaran niyang makita. Ang iba ay nasa pasya ng tournament director; sa cash game mas maluwag ang maraming cardroom. (Huwag itong ipagkamali sa "show one, show all," na ang ibig sabihin ay kung kusa kang magpakita ng cards mo sa isang player, lahat sa mesa ay makikita rin ang mga ito.)
+==r:May mahalagang exception:== sa TDA 2024 Rule 18, may hindi maaalis na karapatan ang river caller na hawak o naka-table pa ang cards na makita ang hand ng last aggressor. Iba pang request ay nasa pasya ng tournament director; nawawala ang karapatang ito kapag nag-muck face-down ang caller. Sa cash game, house rule at floor/collusion context ang masusunod. Iba ito sa "show one, show all."
 
-Praktikal na rule: ==bilang last aggressor ikaw ang magbubukas — pati ang bluff na na-call.== Ang pag-muck nang nakataob ay opsyon ng caller, matapos niyang makita ang hand ng nag-bet. Kung ikaw ang nag-bet at mabilis kang nag-muck, doble ang talo mo: puwede pa rin hingin ng caller na makita ang hand mo, at dahil cards speak, marami nang pot ang naitapon ng may ace-high na nangunguna pala.
+Praktikal na rule: sa non-all-in tournament, ==last aggressor ang magbubukas—pati called bluff.== Puwedeng hingin ng river caller na hawak o naka-table pa ang cards ang hand mo. Sa cash game, sundin ang house rule; huwag mag-muck hangga't hindi tiyak na talo.
 
 ---
 
@@ -77,19 +77,19 @@ Halimbawa: Button, small blind, at big blind ang nakaabot sa river. Nag-check an
 
 ## All-In Showdown Rules — Unang Magpapakita ba ang All-In Player?
 
-Kapag nag-all-in ang isang player at wala nang posibleng betting, karaniwang inilalabas ang lahat ng natitirang cards nang **nakabukas (face-up) ang lahat ng hands**. Pinoprotektahan nito ang integridad ng hand — walang player na dapat makapag-muck nang strategically sa isang all-in situation.
+Sa tournament, kapag may all-in at tapos na ang lahat ng betting, kailangang **i-table agad** ang lahat ng live hand bago ituloy ang board (TDA 2024 Rule 16). Sa cash game, house rule ang masusunod at may hiwalay na order ang WSOP 2026 B149.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | All-in scenario | Showdown rule |
 |----------------|---------------|
-| Nag-all-in ang player, nag-call ang iba, wala nang posibleng betting | Lahat ng hands nakabukas face-up bago o habang runout |
-| Na-call ang all-in bet sa river | Unang magpapakita ang all-in bettor bilang last aggressor — pero sa tournament ==r:walang puwedeng mag-muck dito==: sa ilalim ng TDA Rule 16 kailangan ding ibuka ng caller ang hand niya |
-| Maraming all-ins na gumagawa ng maraming side pots | Bawat pot hiwalay na nireresolba; ipinapakita ang lahat ng involved hands |
+| Tournament; may all-in, nag-call ang iba, tapos na ang betting | I-table agad ang lahat ng live hand bago ang runout; walang muck |
+| Tournament; na-call ang river all-in | I-table agad ang lahat ng live hand; huwag hintayin ang first-show order |
+| Maraming all-in at side pot, tapos na ang betting | I-table lahat ng live hand; hiwalay na iresolba ang bawat pot |
 
 </div>
 
-Isang nuance: kung may **side pot** (may chips pa ang ibang players at patuloy na nagbe-bet), ang side pot ang unang igagawad, tapos ang main pot. Iyon ang **pagkakasunod-sunod ng bayad** — walang kinalaman iyon sa kung kailan binubuksan ang cards: nakaharap na pataas ang hand ng all-in player mula pa sa sandaling wala nang posibleng taya. Tahasang sinasabi ng ilustrasyon ng TDA sa Rule 16 — huwag hintaying mahati ang side pot bago buksan ang hand ng all-in.
+Nuance: side pot ang unang **binabayaran**, pero iba ang reveal order. Sa tournament, kapag tapos na ang lahat ng betting, agad na ita-table ang lahat ng live hand. Sa WSOP 2026 cash B149, side-pot players ang mauunang magpakita; sa No-Limit na natapos bago ang river, all-in player ang una.
 
 Para sa kung paano itinatayo at binabayaran ang side pots kapag all-in ang players, tingnan ang [all-in rules at side pots](/fil/blog/holdem-all-in-rules); para sa chopped pots, tingnan ang split pot at chop rules.
 
@@ -103,7 +103,7 @@ Ang ibig sabihin ng "cards speak" ay ==panalo ang best hand kahit ano pa ang sab
 
 Kung mali ang pagbasa ng player sa hand niya at sinabing "may pair ako," pero straight pala talaga ang meron siya — panalo ang straight. Binabasa ng dealer ang cards at ibinibigay ang pot sa best hand na ipinakita.
 
-Dalawang-panig ito. Kung akala mong talo ka at nag-muck ka nang hindi nagpapakita, pero ang hand mo pala ang panalo — ==r:wala na ang pot==. Patay lang ang hand mo kapag naitulak na ito ng dealer sa muck at hindi na malinaw na matukoy — hindi awtomatikong patay ang cards na inilapag nang nakataob (TDA Rule 14). Huwag pa rin itong asahan kailanman. Kung hindi ka 100% sigurado na talo ka, palaging hayaang basahin muna ng dealer ang hand mo bago mag-muck.
+Hindi awtomatikong dead ang face-down cards. Sa TDA 2024 Rule 14, maaaring i-table ng floor ang hand kung 100% identifiable at retrievable ito; dead lang kapag naitulak at nahalo sa muck o hindi na tiyak na makilala at mabawi. Hayaang basahin muna ng dealer ang hand mo.
 
 Real na sitwasyon: hawak mo ang J♥ 10♥ sa board na Q♥ 9♥ 8♥ 2♣ 5♦. May queen-high straight flush ka (Q-J-10-9-8 of hearts). Nagpakita ang kalaban ng K♣ Q♦ (one pair of queens). Panalo ka nang malayo. Huwag kang mag-muck dahil lang nakita mo ang queen niya.
 
@@ -141,15 +141,15 @@ Nag-bet ka sa river. May nag-call sa iyo. Nag-freeze ka at hinintay silang magpa
 
 ### Mistake 2: Pag-muck bago basahin ng dealer ang hand
 
-Medyo sigurado kang talo ka. Isinusulong mo ang cards mo nang face-down papuntang muck. Hinatak ito ng dealer. Lumabas na ikaw pala ang panalo. Patay na ang hand — wala na ang pot. ==Huwag mag-muck hangga't hindi ka sigurado.== Hayaang basahin ng dealer ang parehong hands.
+Itinulak mo ang cards face-down. Kung mapansin ang mali bago kunin ng dealer, o habang 100% identifiable at retrievable pa, maaaring i-table ng floor ang hand. Kapag nahalo na sa muck o hindi na tiyak ang pagkakakilanlan, dead ang hand. ==Huwag mag-muck hangga't hindi sigurado.==
 
 ### Mistake 3: Panghihingi na makita ang bawat called hand
 
-Sa karamihan ng cardrooms pwede mong hilingin sa dealer na buksan ang mucked hand — pero yung hand lang na na-call at umabot sa showdown. Patay na ang folded hands at hindi na kailanman mababawi. Umiiral ang request rule para protektahan laban sa collusion, hindi para pawiin ang curiosity, at ang pag-abuso rito ay itinuturing na bastos. Gamitin ito nang matipid.
+Sa tournament, puwedeng hingin ng river caller na hawak o naka-table pa ang cards ang hand ng last aggressor (TDA 2024 Rule 18); iba pang request ay floor decision. Nawawala ang hindi maaalis na karapatan kapag nag-muck face-down. Sa cash game, house rule; inilalagay ng WSOP 2026 B147 ang request sa floor/collusion context.
 
 ### Mistake 4: Hindi alam na pwede kang magpakita nang maaga
 
-Sa showdown — ibig sabihin, kapag tapos na ang lahat ng taya — walang rule na nagbabawal na ibukas ang hand mo bago pa opisyal ang turn mo. Habang buhay pa ang hand at may nakabinbing aksyon, kabaligtaran ang umiiral: may parusa ang pagpapakita ng cards sa ilalim ng ==WSOP Rule 117==. ==g:Kung hawak mo ang nuts o napakalakas na hand, ipakita agad.== Napapasalamatan ito ng ibang players. Napapabilis nito ang laro. At ito ang kabaligtaran ng slow rolling.
+Kapag tapos na ang betting, puwedeng maagang mag-table sa showdown. Pero ang paglantad habang may action pa ay papatawan ng penalty sa ilalim ng ==WSOP Tournament Rules 2026 Rule 117==; hindi nito awtomatikong pinapatay ang hand. Tiyaking tapos na ang betting bago magpakita.
 
 ---
 
@@ -162,15 +162,15 @@ Sa showdown — ibig sabihin, kapag tapos na ang lahat ng taya — walang rule n
 
 **Q. Sino ang unang magpapakita ng cards sa poker showdown?**
 
-A. Ang huling player na gumawa ng aggressive action (bet o raise) sa final betting round ang dapat unang magpakita. Kung na-check-through ng lahat ang final round, ang unang aktibong player sa kaliwa ng dealer button ang mauuna, at magpapatuloy ang action nang clockwise.
+A. Sa non-all-in tournament, last aggressor ng final round ang una; kapag nag-check through, unang active player sa kaliwa ng button. Sa tournament all-in, ita-table agad lahat kapag tapos na ang betting. Sa cash game, house rule at WSOP 2026 B149 order ang masusunod.
 
 **Q. Kailangan mo bang ipakita ang cards mo kung na-call ka sa showdown?**
 
-A. Oo — kung ikaw ang huling nag-bet o nag-raise sa river, dapat kang unang magpakita kapag na-call. Kung ikaw ang nag-call sa bet ng iba, pwede kang mag-muck face-down pagkatapos makita ang hand niya kung talo ka. Ang exception ay all-in sa tournament: sa ilalim ng TDA Rule 16 kailangan ding ibuka ng caller ang hand niya. At sa tournament, ang makakahiling lang na makita ang isang hand ay ang may hawak pa ng cards o nagbukas na nito — at hindi maaalis, para lang sa hand ng last aggressor.
+A. Sa non-all-in tournament, last river aggressor ang unang magpapakita kapag na-call. Puwedeng hingin ng river caller na hawak o naka-table pa ang cards ang hand niya (TDA 2024 Rule 18); nawawala ito sa face-down muck. Hiwalay ang all-in at cash-game rules.
 
 **Q. Pwede ka bang mag-muck sa showdown nang hindi nagpapakita?**
 
-A. Oo, pero kung malinaw na talo ka lang. Sa sandaling maipakita ang winning hand, pwedeng mag-muck face-down ang mga natalong player. Ang exception ay kung na-call ang hand mo — pwedeng hilingin ng kalaban na makita ito. Huwag mag-muck bago basahin ng dealer ang parehong hands kung may kahit kaunting duda kung sino ang nanalo.
+A. Sa non-all-in showdown, puwedeng mag-muck kung tiyak na talo, pero maaaring may authorized hand-viewing request. Sa tournament na may all-in at tapos na ang betting, kailangang i-table lahat ng live hand. Huwag mag-muck bago basahin ng dealer kung may duda.
 
 **Q. Ano ang slow rolling sa poker at bakit ito masama?**
 
@@ -178,11 +178,11 @@ A. Ang slow rolling ay sinadyang pag-antala sa pagpapakita ng winning hand na al
 
 **Q. Sa all-in situation, sino ang unang magpapakita ng cards?**
 
-A. Kapag nag-all-in ang isang player at wala nang posibleng betting, karaniwang ipinapakita ang lahat ng hands na kasangkot sa pot na iyon nang face-up bago o habang naglalabas ng community cards. Kung may side pot na may patuloy na betting, ang last aggressor sa mga player na iyon ang unang magpapakita para sa side pot. Ipinapakita nang hiwalay ang hand ng all-in player para sa main pot.
+A. Sa tournament, hindi pa agad binubuksan lahat kung may patuloy na betting sa side pot; kapag tapos na lahat ng betting, ita-table agad ang lahat ng live hand. Sa WSOP 2026 cash B149, side-pot players ang una; sa No-Limit na natapos bago river, all-in player ang una, kung hindi river order.
 
 **Q. Ano ang ibig sabihin ng "cards speak" sa poker?**
 
-A. Ang cards speak ay nangangahulugang panalo ang best hand base sa kung ano talaga ang ipinapakita ng cards — hindi base sa sinasabi ng players. Ang player na mali ang pagbasa sa hand niya at nagdeklara ng maling hand ay panalo pa rin kung ang totoong cards niya ang best hand. Kabaligtaran, ang player na nag-muck nang hindi bineberipika na talo siya ay walang karapatan sa pot, kahit na sana panalo ang hand niya.
+A. Cards speak: tabled cards ang nagtatakda ng hand. Hindi awtomatikong dead ang face-down cards; kung 100% identifiable at retrievable, maaaring i-table ng floor. Kapag nahalo sa muck o hindi na tiyak na makilala/mabawi, dead ang hand—kaya huwag mag-muck bago basahin ng dealer.
 
 **Q. Kailangan mo bang ipakita ang cards mo kung panalo ka nang walang showdown?**
 

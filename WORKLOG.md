@@ -1,3 +1,12 @@
+## 2026-09-22 (8) — 41편 all-in/showdown 규칙 전파 마감 (로컬 커밋·미배포)
+
+사용자 지시로 남아 있던 th/tr/vi showdown을 완성하고, core showdown tldr 9편 + tail all-in/showdown 32편 = **41편** 규칙 전파 묶음을 통합 마감했다. push·배포·IndexNow·라이브 검증은 하지 않았다.
+
+- **규칙 정합:** tournament all-in 공개 시점을 모든 betting 종료 뒤로 고정하고, cash house rule/WSOP 2026 B149, river caller의 카드 보유/table 조건, identifiable/retrievable face-down hand, Rule 117 penalty-not-automatic-death를 언어별로 반영했다. 독립 검수에서 B149 그룹 계층 오기 6개 언어와 Rule 117 가능형 약화 13개 언어를 찾아 전부 수정했으며 th/tr/vi 자연어·용어 재검수도 통과했다.
+- **보존·감사:** 41파일의 메타·tags·FAQ 질문/개수·heading(ID 승인 Cek→Check만 예외)·URL·이미지·카드·변경 줄 수·plain tldr 보존 검사 통과. 25로케일 hard audit 빨강0/주황0. 자동 파서가 못 잡은 showdown 카드 예시는 직접 검산해 Q-high straight flush > one pair를 확인했다.
+- **통합 게이트:** intl-links·meta·structure·hangul·number-format·hygiene·directives·FAQ schema 575/575 통과. build 773 성공, sitemap 70 blog+577 intl+81 static+25 locale homes, hreflang/directive/meta-lang 0. 전역 진단의 선재 비차단 항목(structure tail40, answer-echo 기타40, mirror-pair 갈림28)은 신규 결함과 분리했다.
+- **사이트맵:** 대상41 모두 lastmod 2026-09-22. 실제 diff는 대상31(10은 이미 최신) + 앞선 미배포 PT `0c74affa` 5개 자동 갱신이다. 로컬 커밋만 만들고, `0c74affa`와 함께 사용자 확인 전에는 push하지 않는다.
+
 ## 2026-09-22 (7) — `086161eb` 배포 최종 확인·round2 마감
 
 사용자 지시 「핸드오프 읽고 현재 변경을 보존해. 먼저 이미 푸시한 086161eb의 배포 확인·마감만 진행해. 다른 묶음이나 전체 재검수는 시작하지 마」에 따라 배포 마감만 수행했다. main의 미커밋 포스트 21편과 calc EN7 초안, Q8-b 등은 열지 않았고 `0c74affa` 이후 로컬 커밋도 push하지 않았다.

@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Showdown w Texas Hold'em: kto odkrywa pierwszy, mucking i slow roll",
   seoTitle: "Kto odkrywa karty pierwszy? Showdown w Hold'em",
   desc: "Kto pokazuje karty pierwszy przy odkryciu? Czy możesz spasować bez pokazania? Zasady showdownu w Hold'em — ostatni agresor, cards speak, slow roll i all-in.",
-  tldr: "Przy showdownie karty odkrywa najpierw ten, kto ostatni postawił lub przebił. Jeśli na riverze wszyscy sprawdzili czekiem, pierwszy odkrywa aktywny gracz na lewo od buttona. Możesz zrzucić karty do muck bez pokazywania, gdy przegrałeś, ale rywale mogą poprosić o pokazanie sprawdzonego układu.",
+  tldr: "W turnieju bez all-ina pierwszy pokazuje ostatni agresor rivera; po samych czekach zaczyna pierwszy aktywny gracz na lewo od buttona. Przy all-inie wszystkie pozostałe ręce trzeba odsłonić natychmiast po zakończeniu licytacji. Kto sprawdził na riverze i zachował lub odsłonił swoje karty, może zażądać ręki ostatniego agresora. W cashu pokazywanie i muckowanie zależą od zasad pokoju.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-08-09",
+  updated: "2026-09-22",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -39,15 +39,15 @@ Reguła zależy od tego, jak zakończyła się ostatnia runda betowania (pełną
 
 | Akcja na ostatniej ulicy | Kto odkrywa pierwszy |
 |--------------------|-----------------|
-| Ktoś postawił lub przebił na riverze | ==Ostatni gracz, który postawił lub przebił== odkrywa pierwszy |
+| W turnieju bez all-ina ktoś postawił lub przebił na riverze | ==Ostatni gracz, który postawił lub przebił== odkrywa pierwszy |
 | Wszyscy sprawdzili czekiem na riverze | Pierwszy aktywny gracz na lewo od buttona odkrywa pierwszy |
-| All-in na wcześniejszej ulicy (bez betowania na riverze) | Wszystkie układy leżą odkryte przed dobiciem kart lub w jego trakcie |
+| All-in na wcześniejszej ulicy (bez betowania na riverze) | W turnieju wszystkie pozostałe ręce odsłania się zaraz po zakończeniu całej licytacji, przed pozostałymi kartami wspólnymi; w cashu obowiązują zasady pokoju |
 
 </div>
 
 ![Infografika kolejności showdownu w Texas Hold'em — kto odkrywa pierwszy na stole J♥ 9♠ 4♦ 2♠ K♥](/images/holdem-showdown-who-shows-first.webp)
 
-==g:Kluczowe pojęcie to „ostatni agresor".== Jeśli postawiłeś na riverze i cię sprawdzono, to ty odkrywasz pierwszy — nie ten, kto sprawdził. Sprawdzający ma prawo zobaczyć twój układ, zanim zdecyduje, czy pokazać swój, czy go zrzucić.
+==g:W turnieju bez all-ina pierwszy pokazuje ostatni agresor rivera.== Jeśli postawiłeś i zostałeś sprawdzony, pokazujesz przed sprawdzającym. W turnieju gracz, który sprawdził zakład na riverze i zachował lub odsłonił swoje karty, może zażądać ręki ostatniego agresora (TDA 2024, zasada 18). O innych prośbach decyduje dyrektor; w cashu obowiązują zasady pokoju.
 
 ---
 
@@ -57,11 +57,11 @@ Tak — **jeśli przegrałeś**.
 
 Kiedy ostatni agresor pokaże swój układ, reszta graczy może:
 - **Pokazać swój układ**, jeśli myślą, że wygrywają
-- **Zrzucić karty zakryte do muck**, jeśli widzą, że przegrali — nie trzeba odsłaniać swoich kart. Dotyczy to jednak tylko sytuacji, gdy nikt nie był all-in: w turnieju, gdy któryś gracz jest all-in, zasada 16 TDA nakazuje odsłonić wszystkie układy w puli i nikt nie może zrzucić (w grach cash obowiązują zasady pokoju, a większość pokojów pozwala sprawdzającemu zrzucić karty)
+- **Zrzucić karty zakryte do mucka**, jeśli widzą, że przegrali, z zastrzeżeniem dozwolonego żądania pokazania ręki. Wyjątek: W turnieju, gdy jest all-in i cała licytacja się zakończyła, wszystkie pozostałe w grze ręce trzeba natychmiast odsłonić, bez muckowania (TDA 2024, zasada 16). W cashu obowiązują zasady pokoju.
 
-==r:Jest jednak jeden ważny wyjątek:== jeśli twój zakład na riverze został sprawdzony, sprawdzający zapłacił pełną cenę za obejrzenie twojego układu. Prośba, by rozdający odwrócił zrzucony układ, to zasada **„I want to see that hand"**. W turnieju zasada 18 TDA mocno ją zawęża: kto na showdownie nie ma już kart albo zrzucił je zakryte, traci prawo do takiej prośby; nienaruszalne jest ono tylko dla gracza, który sprawdził zakład na riverze i odsłonił lub zachował swoje karty — i tylko wobec układu ostatniego agresora. O reszcie decyduje dyrektor turnieju, a w grach cash wiele pokojów podchodzi do tego swobodniej. (Nie myl jej z „show one, show all", która mówi, że jeśli dobrowolnie pokażesz karty jednemu graczowi, cały stół ma prawo je zobaczyć.)
+==r:Jest jednak jeden ważny wyjątek:== jeśli twój zakład na riverze został sprawdzony, sprawdzający zapłacił pełną cenę za obejrzenie twojego układu. Prośba, by rozdający odwrócił zrzucony układ, to zasada **„I want to see that hand"**. W turnieju zasada 18 TDA, wydanie 2024, mocno ją zawęża: kto na showdownie nie ma już kart albo zrzucił je zakryte, traci prawo do takiej prośby; nienaruszalne jest ono tylko dla gracza, który sprawdził zakład na riverze i odsłonił lub zachował swoje karty — i tylko wobec układu ostatniego agresora. O reszcie decyduje dyrektor turnieju, a w grach cash dopuszczalne prośby określają zasady pokoju. (Nie myl jej z „show one, show all", która mówi, że jeśli dobrowolnie pokażesz karty jednemu graczowi, cały stół ma prawo je zobaczyć.)
 
-Zasada praktyczna: ==jako ostatni agresor to ty odkrywasz — także zblefowany układ, który sprawdzono.== Zrzucenie kart zakrytych to opcja sprawdzającego, już po obejrzeniu układu betującego. Jeśli betowałeś i szybko zrzucasz, tracisz podwójnie: sprawdzający i tak może zażądać twoich kart, a ponieważ liczą się karty, niejedna pula poszła do kosza z asem wysokim, który prowadził.
+Zasada praktyczna: ==w turnieju bez all-ina ostatni agresor rivera pokazuje pierwszy, także po sprawdzonym blefie.== W turnieju gracz, który sprawdził zakład na riverze i zachował lub odsłonił swoje karty, może zażądać ręki ostatniego agresora (TDA 2024, zasada 18). O innych prośbach decyduje dyrektor; w cashu obowiązują zasady pokoju. Nie wyrzucaj pochopnie ręki, która może wygrać; przy all-inie w turnieju po zakończeniu licytacji muckowanie jest niedozwolone.
 
 ---
 
@@ -77,19 +77,19 @@ Przykład: button, mały blind i duży blind dochodzą do rivera. SB sprawdza cz
 
 ## Zasady showdownu przy all-inie — czy gracz all-in odkrywa pierwszy?
 
-Kiedy gracz idzie all-in i nie ma już możliwości dalszego betowania, zwykle dobija się pozostałe karty wspólne z **wszystkimi układami odkrytymi**. Chroni to uczciwość rozdania — nikt nie powinien móc taktycznie zrzucić kart w sytuacji all-in.
+W turnieju, gdy jest all-in i cała licytacja się zakończyła, wszystkie pozostałe w grze ręce trzeba natychmiast odsłonić, bez muckowania (TDA 2024, zasada 16). Chroni to uczciwość rozdania: nikt nie może muckować, aby ukryć wynik. W cashu WSOP 2026 (B149) gracze puli bocznej pokazują przed graczami walczącymi tylko o pulę główną. W No-Limit, jeśli licytacja zakończyła się przed riverem, pierwszy pokazuje gracz, który zagrał all-in; w pozostałych przypadkach zaczyna ostatni agresor rivera albo pierwszy aktywny gracz na lewo od buttona, jeśli wszyscy czekali.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Scenariusz all-in | Zasada showdownu |
 |----------------|---------------|
-| Gracz idzie all-in, inni sprawdzają, nie ma już betowania | Wszystkie układy odkryte przed dobiciem lub w jego trakcie |
-| Zakład all-in na riverze zostaje sprawdzony | Grający all-in odkrywa pierwszy jako ostatni agresor — ale w turnieju ==r:nikt nie może zrzucić==: według zasady 16 TDA sprawdzający też musi odsłonić karty |
-| Kilka all-inów tworzących kilka pul bocznych | Każda pula rozstrzygana osobno; odkrywane wszystkie zaangażowane układy |
+| Gracz idzie all-in, inni sprawdzają, nie ma już betowania | W turnieju wszystkie pozostałe ręce odkrywa się natychmiast, przed pozostałymi kartami wspólnymi; w cashu obowiązują zasady pokoju |
+| Zakład all-in na riverze zostaje sprawdzony | W turnieju po zakończeniu całej licytacji wszyscy odkrywają bez czekania na kolej; w cashu WSOP B149 każe graczom puli bocznej pokazać przed graczami walczącymi tylko o pulę główną, a w pokazującej grupie zaczyna ostatni agresor rivera |
+| Kilka all-inów tworzących kilka pul bocznych | Każdą pulę rozstrzyga się osobno; w turnieju wszystkie pozostałe ręce odkrywa się po zakończeniu całej licytacji |
 
 </div>
 
-Jeden niuans: jeśli jest **pula boczna** (inni gracze wciąż mają żetony i dalej betują), pula boczna przyznawana jest pierwsza, a potem główna. To **kolejność wypłaty** i nie ma nic wspólnego z momentem odkrycia kart: układ gracza all-in leży odkryty od chwili, gdy żaden zakład nie jest już możliwy. Ilustracja TDA do zasady 16 mówi to wprost — nie czeka się z odwróceniem układu all-ina na podział puli bocznej.
+Jeden niuans: **pulę boczną** przyznaje się przed pulą główną. Ta **kolejność wypłaty** nie opóźnia odkrywania kart w turnieju: po zakończeniu całej licytacji odkrywa się wszystkie pozostałe ręce (TDA 2024, zasada 16 i jej ilustracja). Dopóki trwa licytacja puli bocznej, obowiązek jeszcze nie powstaje. W cashu WSOP B149 wymaga natomiast, by gracze puli bocznej pokazali przed graczami walczącymi tylko o pulę główną.
 
 Jak buduje się i wypłaca pule boczne, gdy gracze są all-in, znajdziesz w [zasadach all-in i pul bocznych](/pl/blog/holdem-all-in-rules); w sprawie dzielonych pul obowiązują zasady split pot.
 
@@ -103,7 +103,7 @@ Jak buduje się i wypłaca pule boczne, gdy gracze są all-in, znajdziesz w [zas
 
 Jeśli gracz źle odczyta swój układ i powie „mam parę", a naprawdę ma strita — wygrywa strit. Rozdający odczytuje karty i przyznaje pulę najlepszemu pokazanemu układowi.
 
-To działa w obie strony. Jeśli myślisz, że przegrałeś, i zrzucasz bez pokazywania, a twój układ był wygrywający — ==r:pula przepadła==. Twój układ jest martwy dopiero wtedy, gdy rozdający wepchnie go do mucka i nie da się go już jednoznacznie zidentyfikować — karty położone zakryte nie są automatycznie martwe (zasada 14 TDA). Mimo to nigdy na tym nie polegaj. Jeśli nie jesteś w 100% pewien, że przegrałeś, zawsze pozwól rozdającemu odczytać twój układ, zanim go zrzucisz.
+Jeśli sądzisz, że przegrałeś, i zrzucasz zwycięską rękę bez pokazywania, ==r:ryzykujesz utratę puli==. Karty położone zakryte nie są automatycznie martwe: jeśli można je w 100% zidentyfikować i odzyskać, można je odsłonić. Ręka jest martwa, gdy rozdający wepchnął ją do mucka lub gdy nie można jej już zidentyfikować i odzyskać (TDA 2024, zasada 14). Nigdy nie licz na odzyskanie kart. Jeśli nie jesteś w 100% pewien przegranej, pozwól rozdającemu odczytać rękę, zanim ją zrzucisz.
 
 Realna sytuacja: trzymasz J♥ 10♥ na stole Q♥ 9♥ 8♥ 2♣ 5♦. Masz Pokera (straight flush) do damy — Q-J-10-9-8 w kierach. Rywal pokazuje K♣ Q♦ (para dam). Wygrywasz na spacer. Nie zrzucaj kart tylko dlatego, że widzisz u niego damę.
 
@@ -141,15 +141,15 @@ Postawiłeś na riverze. Ktoś cię sprawdził. Zamierasz i czekasz, aż to on p
 
 ### Błąd 2: zrzucanie kart, zanim rozdający odczyta układ
 
-Jesteś prawie pewien, że przegrałeś. Wsuwasz karty zakryte w stronę muck. Rozdający je zgarnia. Okazuje się, że miałeś wygrywający układ. Układ jest martwy — pula przepadła. ==Nigdy nie zrzucaj, dopóki nie masz pewności.== Pozwól rozdającemu odczytać oba układy.
+Jesteś prawie pewien przegranej. Wsuwasz zakryte karty w stronę mucka, a rozdający je zbiera. Miałeś wygrywającą rękę. Jeśli według obowiązujących zasad ręka jest martwa, pula przepada; nie zakładaj, że karty uda się odzyskać. ==Nie zrzucaj, dopóki nie masz pewności.== Pozwól rozdającemu odczytać obie ręce.
 
 ### Błąd 3: żądanie pokazania każdego sprawdzonego układu
 
-W większości pokojów pokerowych możesz poprosić rozdającego, by odsłonił układ zrzucony do muck — ale tylko taki, który został sprawdzony i doszedł do showdownu. Spasowane układy są martwe i nigdy nie da się ich odzyskać. Ta zasada istnieje po to, by chronić przed zmową, a nie żeby zaspokajać ciekawość, i nadużywanie jej uchodzi za nieuprzejme. Korzystaj z niej z umiarem.
+W turnieju gracz, który sprawdził zakład na riverze i zachował lub odsłonił swoje karty, może zażądać ręki ostatniego agresora (TDA 2024, zasada 18). O innych prośbach decyduje dyrektor; w cashu obowiązują zasady pokoju. Ręka tylko położona zakryta przy showdownie nie musi być martwa: odzyskanie zależy od identyfikacji i decyzji obsługi (TDA 2024, zasada 14; WSOP Tournament 2026, zasady 109–110). Nie unieważnia to prawidłowego pasa podczas licytacji. Prośby w cashu służą między innymi ochronie przed zmową, nie zaspokajaniu ciekawości; nie nadużywaj ich.
 
 ### Błąd 4: brak wiedzy, że możesz pokazać wcześniej
 
-Na showdownie — czyli gdy wszystkie zakłady są już zamknięte — nie ma żadnej reguły, która zabraniałaby odwrócić karty, zanim oficjalnie przyjdzie twoja kolej. Dopóki rozdanie trwa i gdzieś czeka jeszcze akcja, obowiązuje odwrotność: pokazanie kart kosztuje karę według ==zasady 117 WSOP==. ==g:Jeśli masz nutsa albo bardzo silny układ, pokaż go natychmiast.== Reszta graczy to docenia. Przyspiesza grę. I jest dokładnym przeciwieństwem slow rolla.
+Na showdownie — czyli gdy wszystkie zakłady są już zamknięte — nie ma żadnej reguły, która zabraniałaby odwrócić karty, zanim oficjalnie przyjdzie twoja kolej. Dopóki rozdanie trwa i gdzieś czeka jeszcze akcja, obowiązuje odwrotność: w turnieju pokazanie kart podlega karze, ale nie powoduje automatycznie śmierci ręki (==WSOP Tournament 2026, zasada 117==). ==g:Jeśli masz nutsa albo bardzo silny układ, pokaż go natychmiast.== Reszta graczy to docenia. Przyspiesza grę. I jest dokładnym przeciwieństwem slow rolla.
 
 ---
 
@@ -162,15 +162,15 @@ Na showdownie — czyli gdy wszystkie zakłady są już zamknięte — nie ma ż
 
 **Q. Kto pokazuje karty pierwszy przy showdownie w pokerze?**
 
-A. Karty musi odkryć najpierw ten gracz, który jako ostatni wykonał akcję agresywną (postawił lub przebił) w ostatniej rundzie betowania. Jeśli w ostatniej rundzie wszyscy sprawdzili czekiem, pierwszy odkrywa pierwszy aktywny gracz na lewo od buttona, a akcja idzie zgodnie z ruchem wskazówek zegara.
+A. W turnieju bez all-ina pierwszy pokazuje gracz, który ostatni postawił lub przebił na riverze. Po samych czekach zaczyna pierwszy aktywny gracz na lewo od buttona, potem kolejka idzie zgodnie z ruchem wskazówek zegara. W turnieju, gdy jest all-in i cała licytacja się zakończyła, wszystkie pozostałe w grze ręce trzeba natychmiast odsłonić, bez muckowania (TDA 2024, zasada 16). W cashu kolejność zależy od zasad pokoju.
 
 **Q. Czy musisz pokazać karty, jeśli zostałeś sprawdzony przy showdownie?**
 
-A. Tak — jeśli byłeś ostatnim, który postawił lub przebił na riverze, musisz odkryć pierwszy, gdy cię sprawdzą. Jeśli sam sprawdziłeś zakład kogoś innego, możesz zrzucić karty zakryte do muck po zobaczeniu jego układu, o ile przegrałeś. Wyjątkiem jest all-in w turnieju: według zasady 16 TDA sprawdzający również musi odsłonić karty. A w turnieju o pokazanie układu może poprosić tylko ten, kto wciąż ma karty albo je odsłonił — nienaruszalnie wyłącznie o układ ostatniego agresora.
+A. W turnieju bez all-ina ostatni agresor rivera pokazuje pierwszy, gdy zostaje sprawdzony. W turnieju gracz, który sprawdził zakład na riverze i zachował lub odsłonił swoje karty, może zażądać ręki ostatniego agresora (TDA 2024, zasada 18). O innych prośbach decyduje dyrektor; w cashu obowiązują zasady pokoju. W turnieju, gdy jest all-in i cała licytacja się zakończyła, wszystkie pozostałe w grze ręce trzeba natychmiast odsłonić, bez muckowania (TDA 2024, zasada 16).
 
 **Q. Czy możesz zrzucić karty przy showdownie bez pokazywania?**
 
-A. Tak, ale tylko jeśli wyraźnie przegrałeś. Gdy zwycięski układ zostanie pokazany, przegrywający gracze mogą zrzucić karty zakryte do muck. Wyjątkiem jest sytuacja, gdy twój układ był sprawdzony — rywale mogą poprosić o jego obejrzenie. Jeśli jest jakakolwiek wątpliwość, kto wygrał, nigdy nie zrzucaj, zanim rozdający odczyta oba układy.
+A. Poza obowiązkowym odkrywaniem przy all-inie w turnieju przegrywającą rękę można zrzucić, z zastrzeżeniem dozwolonego żądania jej pokazania. W turnieju, gdy jest all-in i cała licytacja się zakończyła, wszystkie pozostałe w grze ręce trzeba natychmiast odsłonić, bez muckowania (TDA 2024, zasada 16). W turnieju gracz, który sprawdził zakład na riverze i zachował lub odsłonił swoje karty, może zażądać ręki ostatniego agresora (TDA 2024, zasada 18). O innych prośbach decyduje dyrektor; w cashu obowiązują zasady pokoju. Jeśli masz wątpliwości, kto wygrał, pozwól rozdającemu odczytać obie ręce.
 
 **Q. Czym jest slow roll w pokerze i dlaczego jest źle widziany?**
 
@@ -178,11 +178,11 @@ A. Slow roll to celowe zwlekanie z pokazaniem wygrywającego układu, o którym 
 
 **Q. W sytuacji all-in kto pokazuje karty pierwszy?**
 
-A. Kiedy gracz idzie all-in i nie ma już możliwości betowania, wszystkie układy zaangażowane w tę pulę zwykle kładzie się odkryte przed dobiciem pozostałych kart wspólnych lub w jego trakcie. Jeśli jest pula boczna, w której trwa betowanie, dla puli bocznej pierwszy odkrywa ostatni agresor wśród tych graczy. Układ gracza all-in pokazywany jest osobno dla głównej puli.
+A. W turnieju, gdy jest all-in i cała licytacja się zakończyła, wszystkie pozostałe w grze ręce trzeba natychmiast odsłonić, bez muckowania (TDA 2024, zasada 16). Jeśli licytacja w puli bocznej jeszcze trwa, obowiązek jeszcze nie powstaje; po zakończeniu całej licytacji nie czeka się z odkrywaniem na wypłatę tej puli. W cashu WSOP 2026 (B149) gracze puli bocznej pokazują przed graczami walczącymi tylko o pulę główną. W No-Limit, jeśli licytacja zakończyła się przed riverem, pierwszy pokazuje gracz, który zagrał all-in; w pozostałych przypadkach zaczyna ostatni agresor rivera albo pierwszy aktywny gracz na lewo od buttona, jeśli wszyscy czekali.
 
 **Q. Co znaczy „cards speak" w pokerze?**
 
-A. Cards speak („karty mówią") znaczy, że wygrywa najlepszy układ według tego, co karty faktycznie pokazują — a nie według tego, co mówią gracze. Gracz, który źle odczyta swój układ i zadeklaruje niewłaściwy, i tak wygrywa, jeśli jego karty tworzą najlepszy układ. I odwrotnie: kto zrzuci karty bez sprawdzenia, że przegrał, nie ma żadnego prawa do puli, nawet gdyby jego układ wygrywał.
+A. Cards speak („karty mówią”) oznacza, że wygrywa najlepsza pokazana ręka według kart, nie deklaracji gracza. Błędnie nazwany układ może więc wygrać. Karty położone zakryte nie są automatycznie martwe: jeśli można je w 100% zidentyfikować i odzyskać, można je odsłonić. Ręka jest martwa, gdy rozdający wepchnął ją do mucka lub gdy nie można jej już zidentyfikować i odzyskać (TDA 2024, zasada 14). Sprawdź rękę przed jej zrzuceniem.
 
 **Q. Czy musisz pokazać karty, jeśli wygrywasz bez showdownu?**
 

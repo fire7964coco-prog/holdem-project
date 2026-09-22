@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Texas Hold'em showdown kuralları: kartı önce kim açar, muck ve slow roll",
   seoTitle: "Kartı önce kim açar? Showdown ve muck kuralları",
   desc: "Showdown'da kartları önce kim gösterir? Göstermeden muck yapabilir misin? Son agresör, cards speak, slow roll ve all-in — Hold'em showdown kuralları netçe.",
-  tldr: "Showdown'da son bahis yapan ya da yükselten oyuncu kartını önce açar. River'da herkes check dediyse, buton'un solundaki ilk aktif oyuncu önce gösterir. Kaybettiysen göstermeden muck yapabilirsin, ama rakipler call edilmiş bir eli görmeyi isteyebilir.",
+  tldr: "All-in olmayan bir turnuva showdown'ında river'ın son agresörü önce gösterir; river check geçildiyse butonun solundaki ilk aktif oyuncu başlar. Bir oyuncu all-in olduğunda, tüm bahis aksiyonu tamamlanınca kalan bütün eller hemen açılır. River bahsini call eden ve kartlarını elinde tutan ya da masaya açan oyuncu son agresörün elini isteyebilir. Cash oyununda gösterme ve muck ev kuralına bağlıdır.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-08-09",
+  updated: "2026-09-22",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 dk",
@@ -39,15 +39,15 @@ Kural, son bahis turunun nasıl bittiğine bağlı (buraya kadar gelen sokak sok
 
 | Son sokaktaki aksiyon | Önce kim gösterir |
 |--------------------|-----------------|
-| River'da biri bahis yaptı ya da yükseltti | ==Son bahis yapan ya da yükselten oyuncu== önce gösterir |
+| All-in olmayan turnuvada river'da biri bahis yaptı ya da yükseltti | ==Son bahis yapan ya da yükselten oyuncu== önce gösterir |
 | River'da herkes check dedi | Buton'un solundaki ilk aktif oyuncu önce gösterir |
-| Önceki bir sokakta all-in (river'da bahis yok) | Tüm eller kalan kartlar açılmadan önce/açılırken yüzü açık masaya konur |
+| Önceki bir sokakta all-in (river'da bahis yok) | Turnuvada, tüm bahis aksiyonu tamamlanınca kalan bütün eller ortak kartlar açılmadan hemen gösterilir; cash oyununda ev kuralı geçerlidir |
 
 </div>
 
 ![Texas Hold'em'de showdown sırası infografiği — J♥ 9♠ 4♦ 2♠ K♥ board'unda önce kim gösterir](/images/holdem-showdown-who-shows-first.webp)
 
-==g:Anahtar ifade "son agresör".== River'da bahis yaptın ve call edildin mi, önce sen gösterirsin — call eden değil. Call eden, kendi elini gösterip göstermeyeceğine karar vermeden önce senin elini görme hakkını kazanır.
+==g:All-in olmayan turnuvada river'ın son agresörü önce gösterir.== Bahis yaptın ve call edildin mi, call edenden önce sen gösterirsin. Turnuvada river bahsini call eden ve kartlarını elinde tutan ya da masaya açan oyuncu son agresörün elini isteyebilir (TDA 2024 Kural 18). Diğer istekler turnuva direktörüne; cash oyunları ev kuralına bağlıdır.
 
 ---
 
@@ -57,11 +57,11 @@ Evet — **kaybettiysen**.
 
 Son agresör elini gösterdikten sonra, diğer oyuncular şunlardan birini yapabilir:
 - **Elini gösterir** — kazandığını düşünüyorsa
-- **Yüzü kapalı muck'a atar** — kaybettiğini görüyorsa, kartlarını açmasına gerek yok. Ama bu yalnızca kimse all-in değilken geçerlidir: turnuvada bir oyuncu all-in olduğu anda TDA 16. kural potdaki bütün ellerin açılmasını şart koşar ve kimse muck yapamaz (cash oyunlarda salon kuralları geçerlidir ve çoğu salon call eden oyuncunun muck yapmasına izin verir)
+- **Yüzü kapalı muck'a atar** — kaybettiğini görüyorsa, izin verilen eli görme talepleri saklı kalmak üzere kartlarını açmasına gerek yoktur. İstisna: Turnuvada bir oyuncu all-in olduğunda ve tüm bahis aksiyonu tamamlandığında kalan bütün eller hemen açılır; muck yoktur (TDA 2024 Kural 16). Cash oyununda ev kuralı geçerlidir.
 
-==r:Ama önemli bir istisna var:== river'daki bahsin call edildiyse, call eden senin elini görmek için tam bedeli ödedi. Muck'a atılmış bir eli krupiyeye açtırmayı istemek, işte bu **"o eli görmek istiyorum"** kuralıdır. Turnuvada ==TDA 18. kural== sınırı dar çizer: showdown'da elinde kart kalmayan ya da kapalı muck yapan kişi isteme hakkını yitirir. Bu hak yalnızca river bahsini call eden ve kartlarını açan ya da elinde tutan oyuncu için dokunulmazdır, o da sadece parasını ödediği ==son agresörün== eli için. Gerisi turnuva direktörünün takdirindedir; cash oyunlarda birçok salon kuralı daha geniş uygular. (Bunu "birine göster, herkese göster" kuralıyla karıştırma — o kural, kartlarını gönüllü olarak bir oyuncuya gösterirsen masadaki herkesin de görme hakkı kazanması demektir.)
+==r:Ama önemli bir istisna var:== river'daki bahsin call edildiyse, call eden senin elini görmek için tam bedeli ödedi. Muck'a atılmış bir eli krupiyeye açtırmayı istemek, işte bu **"o eli görmek istiyorum"** kuralıdır. Turnuvada ==TDA 2024 Kural 18== sınırı dar çizer: showdown'da elinde kart kalmayan ya da kapalı muck yapan kişi isteme hakkını yitirir. Bu hak yalnızca river bahsini call eden ve kartlarını açan ya da elinde tutan oyuncu için dokunulmazdır, o da sadece ==son agresörün== eli için. Gerisi turnuva direktörünün takdirindedir; cash oyununda hangi isteklere izin verileceğini ev kuralı belirler. (Bunu "birine göster, herkese göster" kuralıyla karıştırma — o kural, kartlarını gönüllü olarak bir oyuncuya gösterirsen masadaki herkesin de görme hakkı kazanması demektir.)
 
-Pratik kural: ==son agresörsen kartları sen çevirirsin — call edilen blöfte de.== Kapalı muck, bahisçinin elini gördükten sonra call edenin seçeneğidir. Bahsi sen yapıp hızlıca muck edersen iki kez kaybedersin: call eden zaten elini görmeyi talep edebilir ve kartlar konuştuğu için, as yükseği aslında önde olan nice pot çöpe atılmıştır.
+Pratik kural: ==All-in olmayan turnuvada river'ın son agresörü önce gösterir — call edilen blöfte de.== River bahsini call eden ve kartlarını elinde tutan ya da masaya açan oyuncu son agresörün elini isteyebilir (TDA 2024 Kural 18). Diğer istekler turnuva direktörüne; cash oyunları ev kuralına bağlıdır. Kazanabilecek bir eli aceleyle muck etme; turnuvada all-in ve tüm bahis aksiyonu tamamlandıysa muck istisnası yoktur.
 
 ---
 
@@ -77,19 +77,19 @@ River'da kimse bahis yapmadıysa (herkes check dedi), showdown **buton'un solund
 
 ## All-in showdown kuralları — all-in olan oyuncu önce mi gösterir?
 
-Bir oyuncu all-in gittiğinde ve artık bahis yapmak mümkün olmadığında, kalan kartlar genellikle **tüm eller yüzü açık** olacak şekilde açılır. Bu, elin dürüstlüğünü korur — kimse bir all-in durumunda stratejik olarak muck yapamamalı.
+Turnuvada bir oyuncu all-in olduğunda ve tüm bahis aksiyonu tamamlandığında kalan bütün eller hemen açılmalıdır; muck yoktur (TDA 2024 Kural 16). Bu, elin bütünlüğünü korur. WSOP 2026 cash oyunlarında B149'a göre yan pot oyuncuları yalnızca ana potta olanlardan önce gösterir. No-Limit'te bahis river'dan önce bittiyse all-in oyuncusu önce gösterir; aksi halde river'ın son agresörü, river check geçildiyse butonun solundaki ilk aktif oyuncu başlar.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | All-in senaryosu | Showdown kuralı |
 |----------------|---------------|
-| Bir oyuncu all-in gider, diğerleri call eder, artık bahis mümkün değil | Tüm eller kartlar açılmadan önce/açılırken yüzü açık konur |
-| River'da all-in bahsi call edilir | All-in giden son agresör olarak önce gösterir — ama turnuvada ==r:kimse muck yapamaz==: TDA 16. kurala göre call eden de elini açmak zorundadır |
-| Birden fazla side pot yaratan çoklu all-in | Her pot ayrı ayrı çözülür; dahil olan tüm eller gösterilir |
+| Bir oyuncu all-in gider, diğerleri call eder, artık bahis mümkün değil | Turnuvada kalan bütün eller ortak kartlar açılmadan hemen gösterilir; cash oyununda ev kuralı geçerlidir |
+| River'da all-in bahsi call edilir | Turnuvada tüm bahis aksiyonu tamamlanır tamamlanmaz bütün eller sıra beklemeden açılır; WSOP cash oyununda B149'a göre yan pot oyuncuları yalnızca ana potta olanlardan önce gösterir ve sırası gelen grubun içinde river'ın son agresörü başlar |
+| Birden fazla side pot yaratan çoklu all-in | Her pot ayrı ayrı çözülür; turnuvada tüm bahis aksiyonu tamamlanınca kalan bütün eller hemen açılır |
 
 </div>
 
-Bir ince nokta: eğer bir **yan pot (side pot)** varsa (diğer oyuncuların hâlâ çipi var ve bahse devam ediyorlar), önce yan pot, sonra ana pot dağıtılır. Bu **ödeme sırasıdır** ve kartların ne zaman açıldığıyla ilgisi yoktur: all-in oyuncunun eli, artık bahis mümkün olmadığı andan itibaren zaten açıktır. TDA'nın 16. kurala ilişkin örneği bunu açıkça söyler — all-in oyuncunun elini çevirmek için yan potun paylaşılmasını bekleme.
+Bir ince nokta: **yan pot**, ana pottan önce dağıtılır. Bu **ödeme sırası**, turnuvadaki açılışı geciktirmez: tüm bahis aksiyonu tamamlanınca kalan bütün eller hemen gösterilir (TDA 2024 Kural 16 ve eki). Yan potta bahis sürüyorsa bu açma zorunluluğu henüz başlamaz. WSOP cash oyununda ise B149, yan pot oyuncularının yalnızca ana potta olanlardan önce göstermesini ister.
 
 Oyuncular all-in olduğunda yan potların nasıl oluşup nasıl ödendiği için [all-in kuralları ve yan potlar](/tr/blog/holdem-all-in-rules) yazısına bak; bölünen potlar içinse split pot ve chop kurallarına.
 
@@ -103,7 +103,7 @@ Oyuncular all-in olduğunda yan potların nasıl oluşup nasıl ödendiği için
 
 Bir oyuncu elini yanlış okuyup "çiftim var" derse ama aslında kenti varsa — kent kazanır. Krupiye kartları okur ve potu gösterilen en iyi ele iter.
 
-Bu iki yönlü işler. Kaybettiğini sanıp göstermeden muck yaparsan ama elin aslında kazanan olsaydı — ==r:pot gitti==. Elin ancak krupiye onu muck'a ittiğinde ve artık net olarak seçilemediğinde ölür — kapalı bırakılan kartlar kendiliğinden ölmez (TDA 14. kural). Yine de buna asla güvenme. Kaybettiğinden %100 emin değilsen, muck yapmadan önce her zaman krupiyenin elini okumasına izin ver.
+Kaybettiğini sanıp kazanan bir eli göstermeden muck edersen ==r:potu kaybedebilirsin==. Yüzü kapalı duran kartlar otomatik olarak ölü değildir: %100 tanımlanabilir ve geri alınabilir durumdaysa masaya açılabilir. Krupiye eli muck'a ittiğinde ya da el artık tanımlanıp geri alınamadığında ölür (TDA 2024 Kural 14). Yine de buna güvenme. Kaybettiğinden %100 emin değilsen, muck etmeden önce krupiyenin elini okumasına izin ver.
 
 Gerçek durum: elinde **J♥ 10♥** var, board **Q♥ 9♥ 8♥ 2♣ 5♦**. Kız yüksek bir straight flush'ın var (kupa Q-J-10-9-8). Rakip **K♣ Q♦** gösteriyor (bir kız çifti). Farkla kazanırsın. Sırf onun kızını gördün diye muck yapma.
 
@@ -141,15 +141,15 @@ River'da bahis yaptın. Biri seni call etti. Donup kalıyorsun ve onun gösterme
 
 ### Hata 2: Krupiye eli okumadan muck yapmak
 
-Kaybettiğinden neredeyse eminsin. Kartlarını yüzü kapalı muck'a doğru itiyorsun. Krupiye içeri çekiyor. Meğer kazanan sendeymiş. El öldü — pot gitti. ==Emin olmadan asla muck yapma.== Krupiyenin iki eli de okumasına izin ver.
+Kaybettiğinden neredeyse eminsin. Kartlarını yüzü kapalı muck'a doğru itiyorsun. Krupiye içeri çekiyor. Meğer kazanan sendeymiş. El geçerli kurala göre öldüyse pot gider; geri alınacağını varsayma. ==Emin olmadan asla muck yapma.== Krupiyenin iki eli de okumasına izin ver.
 
 ### Hata 3: Her call edilen eli görmeyi dayatmak
 
-Çoğu casinoda krupiyeye muck'a atılmış bir eli açtırmasını isteyebilirsin — ama yalnızca call edilip showdown'a ulaşmış bir eli. Fold edilen eller ölüdür ve asla geri getirilemez. Bu talep kuralı işbirliğine (collusion) karşı korumak için vardır, merakı gidermek için değil; onu kötüye kullanmak kaba sayılır. Nadiren kullan.
+Turnuvada river bahsini call eden ve kartlarını elinde tutan ya da masaya açan oyuncu son agresörün elini isteyebilir (TDA 2024 Kural 18). Diğer istekler direktöre; cash oyunları ev kuralına bağlıdır. Showdown'da yalnızca yüzü kapalı duran bir el otomatik olarak ölü değildir: geri alınması tanımlanabilirliğine ve floor kararına bağlıdır (TDA 2024 Kural 14; WSOP Tournament 2026 Kurallar 109–110). Bu, bahis sürerken yapılmış geçerli bir fold'u geri almaz. Cash oyunundaki istekler merakı değil, olası işbirliğini denetlemeyi amaçlar; kötüye kullanma.
 
 ### Hata 4: Erken gösterebileceğini bilmemek
 
-Showdown'da — yani bütün bahisler kapandıktan sonra — resmî sıran gelmeden elini çevirmeni yasaklayan bir kural yok. El hâlâ sürüyorsa ve bekleyen bir aksiyon varsa tam tersi geçerlidir: kart göstermek ==WSOP 117. kural== uyarınca ceza getirir. ==g:Elinde nuts ya da çok güçlü bir el varsa, hemen göster.== Diğer oyuncular bundan memnun olur. Oyunu hızlandırır. Ve slow roll'un tam tersidir.
+Showdown'da — yani bütün bahisler kapandıktan sonra — resmî sıran gelmeden elini çevirmeni yasaklayan bir kural yok. El hâlâ sürüyorsa ve bekleyen bir aksiyon varsa tam tersi geçerlidir: turnuvada kart göstermek ceza getirir, ama eli otomatik olarak öldürmez (==WSOP Tournament 2026 Kural 117==). ==g:Elinde nuts ya da çok güçlü bir el varsa, hemen göster.== Diğer oyuncular bundan memnun olur. Oyunu hızlandırır. Ve slow roll'un tam tersidir.
 
 ---
 
@@ -162,15 +162,15 @@ Showdown'da — yani bütün bahisler kapandıktan sonra — resmî sıran gelme
 
 **Q. Poker showdown'ında kartları önce kim gösterir?**
 
-A. Son bahis turunda agresif aksiyon yapan (bahis ya da yükseltme) son oyuncu önce göstermek zorundadır. Son turda herkes check dediyse, buton'un solundaki ilk aktif oyuncu önce gösterir ve aksiyon saat yönünde ilerler.
+A. All-in olmayan turnuvada river'ın son agresörü önce gösterir. River check geçildiyse butonun solundaki ilk aktif oyuncu başlar ve sıra saat yönünde ilerler. Turnuvada bir oyuncu all-in olduğunda ve tüm bahis aksiyonu tamamlandığında kalan bütün eller hemen açılır; muck yoktur (TDA 2024 Kural 16). Cash oyununda sırayı ev kuralı belirler.
 
 **Q. Showdown'da call edilirsen kartlarını göstermek zorunda mısın?**
 
-A. Evet — river'da son bahis yapan ya da yükselten sensen, call edildiğinde önce sen göstermek zorundasın. Başkasının bahsini call ettiysen, elini gördükten sonra kaybettiysen yüzü kapalı muck yapabilirsin. İstisna turnuvadaki all-in'dir: TDA 16. kurala göre call eden de elini açmak zorundadır. Turnuvada ise bir eli görmeyi yalnızca hâlâ kartı olan ya da kartlarını açmış oyuncu isteyebilir — dokunulmaz biçimde, sadece son agresörün eli için.
+A. All-in olmayan turnuvada river'ın son agresörü, bahsi call edildiğinde önce gösterir. River bahsini call eden ve kartlarını elinde tutan ya da masaya açan oyuncu son agresörün elini isteyebilir (TDA 2024 Kural 18). Diğer istekler direktöre; cash oyunları ev kuralına bağlıdır. Turnuvada bir oyuncu all-in olduğunda ve tüm bahis aksiyonu tamamlandığında kalan bütün eller hemen açılır; muck yoktur (TDA 2024 Kural 16).
 
 **Q. Showdown'da göstermeden muck yapabilir misin?**
 
-A. Evet, ama yalnızca açıkça kaybettiysen. Kazanan el gösterildikten sonra, kaybeden oyuncular yüzü kapalı muck yapabilir. İstisna, elinin call edilmiş olması — rakipler onu görmeyi isteyebilir. Kimin kazandığına dair en ufak şüphe varsa, krupiye iki eli de okumadan asla muck yapma.
+A. Turnuvadaki all-in açma zorunluluğu dışında kaybeden el, izin verilen eli görme talepleri saklı kalmak üzere muck edilebilir. Turnuvada bir oyuncu all-in olduğunda ve tüm bahis aksiyonu tamamlandığında kalan bütün eller hemen açılır; muck yoktur (TDA 2024 Kural 16). River bahsini call eden ve kartlarını elinde tutan ya da masaya açan oyuncu son agresörün elini isteyebilir (TDA 2024 Kural 18). Diğer istekler direktöre; cash oyunları ev kuralına bağlıdır. Kazanandan şüphe ediyorsan iki eli de krupiyeye okut.
 
 **Q. Pokerde slow roll nedir ve neden kötü?**
 
@@ -178,11 +178,11 @@ A. Slow roll, en iyisi olduğunu zaten bildiğin kazanan bir eli göstermeyi bil
 
 **Q. All-in durumunda kartları önce kim gösterir?**
 
-A. Bir oyuncu all-in gittiğinde ve başka bahis mümkün olmadığında, o pota dahil olan tüm eller genellikle ortak kartlar açılmadan önce ya da açılırken yüzü açık gösterilir. Bahsin sürdüğü bir yan pot varsa, o oyuncular arasındaki son agresör yan pot için önce gösterir. All-in oyuncunun eli ana pot için ayrıca gösterilir.
+A. Turnuvada bir oyuncu all-in olduğunda ve tüm bahis aksiyonu tamamlandığında kalan bütün eller hemen açılır; muck yoktur (TDA 2024 Kural 16). Yan potta bahis sürüyorsa bu zorunluluk henüz başlamaz; tüm bahis aksiyonu tamamlanınca açılış yan potun dağıtımına kadar ertelenmez. WSOP 2026 cash oyunlarında B149'a göre yan pot oyuncuları yalnızca ana potta olanlardan önce gösterir. No-Limit'te bahis river'dan önce bittiyse all-in oyuncusu; aksi halde river sırası başlar.
 
 **Q. Pokerde "cards speak" ne demek?**
 
-A. Cards speak (kartlar konuşur), oyuncular ne derse desin, kartların gerçekten gösterdiğine göre en iyi elin kazandığı anlamına gelir. Elini yanlış okuyup yanlış el ilan eden bir oyuncu, kartları aslında en iyi else yine de kazanır. Tersine, kaybettiğini doğrulamadan muck yapan bir oyuncunun, eli kazanacak olsa bile pot üzerinde hiçbir hakkı kalmaz.
+A. Cards speak, oyuncunun ilanına değil masaya açılan kartlara göre en iyi elin kazandığı anlamına gelir; yanlış ilan edilen el de kazanabilir. Yüzü kapalı duran kartlar otomatik olarak ölü değildir: %100 tanımlanabilir ve geri alınabilir durumdaysa masaya açılabilir. Krupiye eli muck'a ittiğinde ya da el artık tanımlanıp geri alınamadığında ölür (TDA 2024 Kural 14). Elini doğrulamadan muck etme.
 
 **Q. Showdown olmadan kazanırsan kartlarını göstermek zorunda mısın?**
 

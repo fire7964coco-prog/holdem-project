@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Reglas del showdown en Texas Hold'em: quién enseña primero, el muck y el slow roll",
   seoTitle: "¿Quién enseña primero? Reglas del showdown y del muck",
   desc: "¿Quién muestra las cartas primero en el showdown? ¿Puedes tirarlas sin enseñarlas? Último agresor, cards speak, slow roll y all-in — todas las reglas.",
-  tldr: "En el showdown, el último jugador que apostó o subió enseña primero. Si en el river todos pasaron, enseña primero el primer jugador activo a la izquierda del botón. Puedes tirar tus cartas sin enseñarlas si has perdido, pero los rivales pueden pedir ver una mano que fue pagada.",
+  tldr: "En torneos, sin all-in, enseña primero el último agresor del river; si todos pasan, empieza el primer jugador activo a la izquierda del botón. Con all-in, todas las manos restantes se muestran en cuanto terminan las apuestas. Quien pagó en el river y conserva o ya mostró sus cartas puede pedir ver la mano del último agresor. En cash, la sala fija las reglas para mostrar y hacer muck.",
   category: "rules",
   date: "2026-06-15",
   updated: "2026-09-22",

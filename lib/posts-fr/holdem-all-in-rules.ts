@@ -146,9 +146,9 @@ Pourquoi cette règle existe-t-elle ? Elle protège les joueurs contre le fait d
 
 ### Cas avancé : et si plusieurs joueurs font tapis court ?
 
-C'est la version qui fait trébucher même les réguliers. Plusieurs tapis courts peuvent **s'additionner** pour former une relance complète — et si leurs incréments combinés atteignent le seuil, les enchères se rouvrent pour ceux qui ont déjà parlé.
+C'est la version qui fait trébucher même les réguliers. Plusieurs tapis courts peuvent **s'additionner** pour rouvrir les enchères, mais le seuil se vérifie **pour chaque joueur, depuis sa dernière action** : l'augmentation à laquelle il fait face doit atteindre la dernière mise ou relance complète.
 
-C'est la règle officielle de la TDA sur la réouverture des enchères (« re-opening the bet »), et la plupart des cardrooms l'appliquent.
+C'est la règle 47-A de la TDA, édition 2024, pour le No-Limit et le Pot-Limit ; vérifie les règles de la maison en cash.
 
 **Exemple (blindes $1/$2, au flop) :**
 
@@ -158,7 +158,7 @@ C'est la règle officielle de la TDA sur la réouverture des enchères (« re-op
 
 Incréments combinés : $4 + $7 = **$11** — ça atteint le seuil de relance minimale de $10.
 
-**Résultat : les enchères SE ROUVRENT pour le Joueur A.** A peut se coucher, suivre ou relancer, même si ni B ni C n'ont fait de relance complète individuellement.
+**Résultat : les enchères SE ROUVRENT pour le Joueur A.** A peut se coucher, suivre ou relancer, même si ni B ni C n'ont fait de relance complète individuellement. A fait face à $21 − $10 = $11. En revanche, un joueur ayant suivi à $14 entre B et C ne fait face qu'à $7 supplémentaires : les enchères ne se rouvrent pas pour lui.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -181,7 +181,7 @@ Le seuil de relance minimale est toujours la *dernière mise ou relance complèt
 | Un seul tapis < relance complète | ❌ Non — seulement suivre ou se coucher |
 | Un seul tapis ≥ relance complète | ✅ Oui — tout le monde peut relancer |
 | Plusieurs tapis courts, somme < relance complète | ❌ Non |
-| Plusieurs tapis courts, somme ≥ relance complète | ✅ Oui |
+| Plusieurs tapis courts, augmentation depuis la dernière action du joueur ≥ mise ou relance complète | ✅ Oui, pour ce joueur |
 | Joueur qui n'a PAS encore parlé | ✅ Peut toujours relancer (quoi qu'il arrive) |
 
 </div>
@@ -192,7 +192,7 @@ Le seuil de relance minimale est toujours la *dernière mise ou relance complèt
 
 Quand les enchères sont closes et qu'un joueur est à tapis, voici ce qui se passe à l'abattage :
 
-1. **Les cartes sont retournées face visible.** En tournoi, toutes les mains impliquées dans le tapis sont en général montrées dès que les enchères sont terminées. En cash, c'est d'abord la [règle du dernier agresseur à l'abattage](/fr/blog/holdem-showdown-rules) qui s'applique, puis les joueurs à tapis montrent.
+1. **Les cartes sont retournées face visible.** En tournoi, dès qu'un joueur est à tapis et que toutes les enchères sont terminées, toutes les mains encore en jeu sont immédiatement étalées, sans muck (TDA 2024, règle 16). En cash WSOP 2026 (B149), les joueurs du pot annexe montrent avant ceux du seul pot principal. En No-Limit, si les enchères se sont terminées avant la rivière, le joueur qui a fait tapis montre en premier ; sinon, le dernier agresseur de la rivière commence, ou le premier joueur actif à gauche du bouton si tous ont checké. Voir les [règles de l'abattage](/fr/blog/holdem-showdown-rules).
 2. **Les side pots sont attribués en premier.** Le donneur résout d'abord le side pot créé le plus récemment, puis remonte jusqu'au pot principal.
 3. **Les cartes parlent.** La meilleure main gagne chaque pot auquel elle a droit — peu importe ce que les joueurs annoncent avoir.
 4. **Il peut y avoir plusieurs gagnants.** Le Joueur A peut gagner le pot principal et le Joueur B le side pot. Aucun ne rafle tout juste parce qu'il a gagné « son » pot.
@@ -244,7 +244,7 @@ A. Tu empoches le pot principal (ce que tu as suivi de chaque joueur) et l'autre
 
 **Q. Faire tapis oblige-t-il à montrer sa main ?**
 
-A. En tournoi, oui — dès que les enchères sont closes avec un tapis, toutes les mains impliquées sont mises face visible. En cash live, les règles normales de l'abattage s'appliquent : le dernier agresseur montre en premier, puis les autres montrent ou jettent leurs cartes.
+A. En tournoi, dès qu'un joueur est à tapis et que toutes les enchères sont terminées, toutes les mains encore en jeu sont immédiatement étalées, sans muck (TDA 2024, règle 16). En cash WSOP 2026 (B149), les joueurs du pot annexe montrent avant ceux du seul pot principal. En No-Limit, si les enchères se sont terminées avant la rivière, le joueur qui a fait tapis montre en premier ; sinon, le dernier agresseur de la rivière commence, ou le premier joueur actif à gauche du bouton si tous ont checké. La possibilité de jeter en cash dépend des règles de la maison.
 
 **Q. Peut-on faire un « run it twice » sur un tapis au poker ?**
 
@@ -256,11 +256,11 @@ A. Le table stakes signifie que tu ne peux miser que les jetons que tu avais dev
 
 **Q. Si deux joueurs font tapis pour des montants différents, qui montre en premier ?**
 
-A. Le dernier tapis qui était une mise ou une relance constitue la dernière action agressive et montre en premier. Un tapis qui ne fait que suivre pour moins n'est pas agressif — en cash, c'est alors le miseur initial qui montre en premier. ==r:En tournoi, il n'y a tout simplement pas d'ordre d'abattage ici== : dès que les enchères du tapis sont terminées, toutes les mains impliquées sont retournées en même temps (Règle 16 de la TDA). En cash, si c'était un tapis suivi sans autre action, celui qui a suivi peut jeter ses cartes s'il perd après avoir vu la main du joueur à tapis (en tournoi, toutes les mains impliquées restent face visible).
+A. ==r:En tournoi, il n'y a pas d'ordre d'attente entre les mains== : En tournoi, dès qu'un joueur est à tapis et que toutes les enchères sont terminées, toutes les mains encore en jeu sont immédiatement étalées, sans muck (TDA 2024, règle 16). En cash WSOP 2026 (B149), les joueurs du pot annexe montrent avant ceux du seul pot principal. En No-Limit, si les enchères se sont terminées avant la rivière, le joueur qui a fait tapis montre en premier ; sinon, le dernier agresseur de la rivière commence, ou le premier joueur actif à gauche du bouton si tous ont checké. Les montants des tapis ne déterminent donc pas à eux seuls qui montre en premier.
 
 **Q. Les règles du tapis sont-elles différentes en tournoi et en cash ?**
 
-A. Le cœur est le même, avec deux différences pratiques. Un : en tournoi, toutes les mains impliquées dans un tapis sont mises face visible dès que les enchères sont closes (Règle 16 de la TDA) — tu ne peux pas jeter tes cartes avant l'abattage. En cash, l'ordre normal de l'abattage s'applique et tu peux le faire. Deux : le run it twice est courant en cash (si les deux joueurs acceptent) mais généralement interdit en tournoi.
+A. Le cœur est le même, avec deux différences pratiques. Un : En tournoi, dès qu'un joueur est à tapis et que toutes les enchères sont terminées, toutes les mains encore en jeu sont immédiatement étalées, sans muck (TDA 2024, règle 16). En cash, l'ordre de révélation suit les règles de la maison, notamment les conditions de B149 à la WSOP, et jeter n'est pas interdit de façon générale. Deux : le run it twice est courant en cash (si les deux joueurs acceptent) mais généralement interdit en tournoi.
 
 ---
 

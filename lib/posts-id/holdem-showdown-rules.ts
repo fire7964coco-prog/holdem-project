@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Aturan Showdown Texas Hold'em: Siapa Buka Kartu Duluan, Muck, dan Slow Roll",
   seoTitle: "Siapa Buka Kartu Duluan? Aturan Showdown & Muck Poker",
   desc: "Siapa yang buka kartu duluan saat showdown? Boleh muck tanpa buka? Aturan showdown Hold'em — agresor terakhir, cards speak, slow roll, dan all-in.",
-  tldr: "Saat showdown, pemain terakhir yang bet atau raise buka kartu duluan. Kalau river di-cek habis, pemain aktif pertama di kiri tombol dealer yang buka duluan. Anda boleh muck tanpa menunjukkan kartu kalau kalah, tapi pemain yang meng-call bet river boleh minta melihat hand si pembuat bet.",
+  tldr: "Dalam turnamen tanpa all-in, agresor terakhir di river membuka kartu lebih dulu; jika semua check, giliran pemain aktif pertama di kiri tombol dealer. Jika ada all-in, semua hand yang tersisa wajib langsung dibuka setelah seluruh betting selesai. Caller river yang masih memegang atau sudah membuka kartunya berhak meminta melihat hand agresor terakhir. Dalam cash game, aturan membuka kartu dan muck mengikuti aturan room.",
   category: "rules",
   date: "2026-06-15",
   updated: "2026-09-22",
@@ -29,7 +29,7 @@ Tidak ada yang bergerak.
 
 Dealer menoleh ke kiri dan ke kanan. Pemain lain di meja menghela napas.
 
-==Momen saling tunggu persis seperti ini terjadi hampir di setiap meja live== — karena kebanyakan pemula tidak pernah belajar siapa yang sebenarnya wajib buka kartu duluan. Panduan ini membahas setiap situasi showdown: hand normal, river yang di-cek habis, all-in, dan kenapa slow roll bikin Anda dipelototi sepanjang sesi.
+==Momen saling tunggu persis seperti ini terjadi hampir di setiap meja live== — karena kebanyakan pemula tidak pernah belajar siapa yang sebenarnya wajib buka kartu duluan. Panduan ini membahas setiap situasi showdown: hand normal, river yang di-check habis, all-in, dan kenapa slow roll bikin Anda dipelototi sepanjang sesi.
 
 ## Siapa yang Wajib Buka Kartu Duluan Saat Showdown?
 
@@ -40,7 +40,7 @@ Aturannya tergantung bagaimana ronde taruhan terakhir berakhir (untuk urutan len
 | Aksi di street terakhir | Siapa yang buka duluan |
 |--------------------|-----------------|
 | Ada yang bet atau raise di river | ==Pemain terakhir yang bet atau raise== buka duluan — kecuali itu all-in di turnamen (lihat di bawah) |
-| Semua orang cek di river | Pemain aktif pertama di kiri tombol dealer buka duluan |
+| Semua orang check di river | Pemain aktif pertama di kiri tombol dealer buka duluan |
 | All-in di street sebelumnya (tidak ada taruhan di river) | Turnamen: semua hand dibuka tanpa ditunda begitu seluruh aksi taruhan selesai (TDA Rule 16). Cash game: kalau ada side pot, pemain side pot membuka lebih dulu; dan di permainan no-limit, pemain yang all-in membuka duluan (Live Action Rule 149) |
 
 </div>
@@ -65,11 +65,11 @@ Aturan praktisnya: ==sebagai agresor terakhir Andalah yang membuka kartu — ter
 
 ---
 
-## Urutan Showdown Kalau Semua Orang Cek di River
+## Urutan Showdown Kalau Semua Orang Check di River
 
-Kalau tidak ada yang bet di river (semua cek), showdown dimulai dari **pemain aktif pertama di kiri tombol dealer** dan berlanjut searah jarum jam.
+Kalau tidak ada yang bet di river (semua check), showdown dimulai dari **pemain aktif pertama di kiri tombol dealer** dan berlanjut searah jarum jam.
 
-Contoh: Button, small blind, dan big blind sampai ke river. SB cek, BB cek, Button cek. Showdown dimulai dari SB (pemain aktif pertama di kiri button). SB boleh buka atau muck. Lalu BB. Terakhir baru button.
+Contoh: Button, small blind, dan big blind sampai ke river. SB check, BB check, Button check. Showdown dimulai dari SB (pemain aktif pertama di kiri button). SB boleh buka atau muck. Lalu BB. Terakhir baru button.
 
 ==g:Dalam kasus ini, button buka paling akhir== — dan itu justru keuntungan. Button bisa melihat apakah ada yang mengalahkannya sebelum memutuskan mau buka atau tidak.
 
@@ -164,7 +164,7 @@ Di showdown — yaitu setelah semua taruhan ditutup — tidak ada aturan yang me
 
 **Q. Siapa yang buka kartu duluan saat showdown poker?**
 
-A. Pemain terakhir yang melakukan aksi agresif (bet atau raise) di ronde taruhan terakhir wajib buka duluan. Kalau ronde terakhir di-cek habis oleh semua pemain, pemain aktif pertama di kiri tombol dealer buka duluan, lalu berlanjut searah jarum jam.
+A. Pemain terakhir yang melakukan aksi agresif (bet atau raise) di ronde taruhan terakhir wajib buka duluan. Kalau ronde terakhir di-check habis oleh semua pemain, pemain aktif pertama di kiri tombol dealer buka duluan, lalu berlanjut searah jarum jam.
 
 **Q. Apakah Anda wajib menunjukkan kartu kalau di-call saat showdown?**
 

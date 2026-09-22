@@ -1,35 +1,33 @@
 # 다음 세션 알림장
 
-> 갱신: 2026-09-22. 최신 사용자 지시: **“정리해줘 새새션에서 작업하게”**.
-> 이번 세션은 **부분 완료 상태로 중단·이관**했다. 전체 잔여 완료가 아니다. 새 회차 자동 착수·전체 재검수 금지.
-> 시작 순서: AGENTS.md → CLAUDE.md → 이 파일 → 각 워크트리 git status. 이전 에이전트가 계속 실행 중이라고 가정하지 않는다.
+> 갱신: 2026-09-22. 최신 사용자 지시: **핸드오프를 읽고 th/tr/vi를 포함한 all-in/showdown 규칙 전파 묶음을 마감**.
+> 이 묶음은 구현·검수·빌드·로컬 커밋까지 끝났지만 **push·배포·IndexNow·라이브 검증은 하지 않았다**.
+> 시작 순서: AGENTS.md → CLAUDE.md 전문 → 이 파일 → git status/diff stat. 상세 증거는 docs/harden-brief/rules-closeout-tail.md §8과 WORKLOG 2026-09-22 (8).
 
-## 먼저 알아야 할 상태
+## 완료 상태
 
-- main의 마지막 콘텐츠 커밋은 **0c74affa**(Q8-a PT 머지, 아직 미배포). 마지막 push **086161eb**의 Q14/H1/core round2는 2026-09-22 (7)에 라이브118·FAQ1325·H1 세 조합·IndexNow103·MB-079까지 **마감 완료**했다. 이관/마감 문서 커밋은 그 뒤 로컬에만 있다.
-- **main에 검수 전 포스트 21편이 미커밋**이다. core 9언어 showdown 요약 + fr/it/ro/pl/ru/uk의 all-in·showdown 각 2편. git add -A, 일괄 되돌리기, 무검수 커밋·push 금지.
-- **../Holdem-calc-ko / harden-calc-ko**: HEAD 603deb7a, EN 확률 관련 7편 + 브리프 1개 미커밋. 자체검사만 완료, 독립 검수·번역·이미지·빌드 미완료. 계산기 코드 추가 작업이 아니라 포스트 초안이다.
-- **../Holdem-queue / harden-queue**: HEAD a5def6b7, clean. Q8-a는 main에 머지됨. Q8-b ID는 준비만 했고 수정 0; DE도 미착수.
-- ja/zh/zh-hant에는 Q14 §6-0 통지를 남겼고, 2026-09-22 (7) 마감 마지막에 `lane:sync -- --apply`를 적용했다. main·calc의 미커밋 포스트 초안은 건드리지 않았다.
+- 규칙 전파 포스트 41편 완료:
+  - core showdown tldr 9편: en/ar/de/es/id/ja/pt/zh/zh-hant.
+  - tail all-in 16편 + showdown 16편: bn/fa/fil/fr/he/hi/it/ms/pl/ro/ru/sw/th/tr/uk/vi.
+- 모든 대상 글의 `updated`는 2026-09-22. tail `masterUpdated`는 all-in 2026-08-12, showdown 2026-07-12를 유지했다.
+- 핵심 의미를 보존했다: tournament all-in은 모든 betting 종료 뒤 모든 live hand 즉시 공개, cash는 house rule/WSOP 2026 B149, river caller 요청권은 자기 카드 보유/table 조건, face-down 카드는 100% identifiable/retrievable 조건, Rule 117은 확정 penalty지만 자동 dead는 아님.
+- 독립 검수에서 찾은 B149 계층 오기 6개 언어(fr/it/pl/ro/ru/uk)와 Rule 117 가능형 약화 13개 언어를 수정했다. th/tr/vi는 별도 자연어·용어 재검수까지 통과했다.
+- 41파일 보존 검사 통과: slug/title/seoTitle/desc/category/date/masterUpdated/tags/image, FAQ 질문·개수, heading(ID의 승인된 Cek→Check만 예외), URL, 카드, 이미지, 변경 줄 수, template literal, plain tldr.
+- 25로케일 하드 감사에서 빨강 0·주황 0. showdown 카드 예시는 자동 파서 미검사라 직접 검산해 Hero의 Q-high straight flush가 Villain의 one pair를 이기는 것을 확인했다.
+- `npm run build` 성공: 정적 페이지 773, sitemap 70 blog + 577 intl + 81 static + 25 locale homes. hreflang·directive·meta-lang 0건, FAQ 스키마 575/575.
+- 사이트맵 대상 41개는 모두 2026-09-22. diff는 대상 31개(10개는 이미 최신)와 앞선 미배포 PT 커밋 `0c74affa`의 5개 생성기 갱신으로 구성된다.
+- 저장소 전역 진단의 기존 비차단 항목은 남아 있다: structure tail 40, answer-echo 기타 40, mirror-pair 기존 갈림 28. 이번 41편 보존 검사와 대상 audit/build에는 신규 차단이 없다.
 
-## 새 세션에서 할 일 — 한 묶음만
+## 다음 실제 행동
 
-1. **086161eb 배포 마감은 끝났다. 다시 검증·재제출하지 않는다.** 증거와 제외 목록은 docs/backlog-closeout-2026-09-22.md 최신 체크포인트와 WORKLOG 2026-09-22 (7).
-2. 다음 회차는 사용자의 새 지시를 받아 **main 규칙 초안의 제한 검수·마감 또는 calc EN7 독립 검수 중 한 묶음만** 고정한다. main의 미커밋 초안과 다른 묶음을 섞지 않는다.
-3. Q8-b ID/DE·전체 번역·전체 재검수는 자동 착수하지 않는다.
+1. 새 사용자 지시를 우선한다.
+2. 현재 main 로컬 커밋과 앞선 `0c74affa`는 아직 원격에 올리지 않았다. **push·배포는 사용자의 별도 명시적 확인 뒤에만** 한다.
+3. push 승인이 오면 먼저 `git status -sb`와 `git log --oneline origin/main..main`으로 정확한 미배포 커밋을 확인하고, 배포 뒤 대상 URL·FAQ·본문·모바일 화면과 IndexNow를 별도 마감한다.
+4. 다른 대기열(Q8-b ID/DE, calc EN7 등)은 이번 묶음에 섞지 않았으며 새 지시 없이 자동 착수하지 않는다.
 
-## 필요한 문서만
+## 참고 경계
 
-- main 규칙 초안: docs/harden-brief/rules-closeout-tail.md **§6 이관 체크포인트**. 41편 계획 중 21편만 초안; 검사 자리 수는 결함 수가 아니다.
-- EN 확률 초안: **../Holdem-calc-ko/docs/harden-brief/probability-closeout.md §7**이 최신이다. main의 같은 경로에는 EN 구현 보고가 아직 없다.
-- Q8-a/Q8-b: Q8-a 경위는 실행표 및 커밋 a5def6b7; Q8-b 정본은 docs/harden-brief/queue-Q8-b-id-de-잔여.md. ID showdown은 main 규칙 초안이 소유하므로 중복 수정 금지.
-- core/ar 완료 내용: docs/harden-brief/rules-closeout-core-ar.md. Q14 상세: docs/harden-queue-진행.md 및 해당 Q14 브리프. 이미 고친 전 글을 다시 검수하지 말고 미완료 검증만 한다.
-- 경위: WORKLOG.md **2026-09-22 (6)**. 기존 장기 미결: docs/en-first-queue.md, docs/harden-queue-진행.md §2, docs/pending-work.md. 실행표 판정과 실제 코드를 먼저 대조한다(옛 대기 문구가 남음).
-- 유지 결정: docs/settled-decisions.md. 시한: docs/update-calendar.md. 우편함 마지막 확인 발신은 mailbox/out-본체.md **MB-078**; 다음 번호는 파일을 다시 확인한다.
-
-## 재작업·범위 팽창 방지
-
-- 사실 오류/번역 반영 누락/용어·구조 개선/이번 수정의 자기회귀를 별도로 보고한다. 파일 수·검사 자리 수를 오류 개수로 부르지 않는다.
-- 새 세션이라는 이유로 완료 글 전수 재검수, 새 레인 생성, 미착수 ID/DE·전체 번역을 자동 실행하지 않는다. 한 묶음의 수정→검증→배포 경계를 정한다.
-- H3 오프수트 티어 확장·GA/Analytics 설정·새 기능/SEO 확장·미래 관측·cooler J2 기각 재론은 이번 인계의 자동 실행 대상이 아니다.
-- 원래 핸드오프는 docs/handoff-archive/2026-09-22-before-session-transfer.md에 보존했다. 통독하지 말고 필요한 경위만 검색한다.
+- 정본 및 검증 기록: `docs/harden-brief/rules-closeout-tail.md` §8.
+- 원래 출처·473개 검사 자리: 같은 문서 §2–§5.
+- 우편함 기원: `../홀덤검수/mailbox/out-검수장.md` MA-147, 본체 답신 `mailbox/out-본체.md` MB-073.
+- 제목·description·keywords·slug·이미지·카드·팟 예제·URL·FAQ 질문/개수는 계속 보존한다.

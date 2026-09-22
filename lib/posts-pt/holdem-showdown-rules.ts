@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Regras de showdown no Texas Hold'em: quem mostra primeiro, muck e slow roll",
   seoTitle: "Quem mostra primeiro no showdown? Regras e muck no poker",
   desc: "Pagou o river e ninguém vira as cartas? Veja quem mostra primeiro no showdown, quando dá para dar muck sem mostrar e por que slow roll pega mal no poker.",
-  tldr: "No showdown, o último jogador que apostou ou aumentou mostra primeiro. Se todos deram check no river, o primeiro jogador ativo à esquerda do botão abre o jogo. Quem perdeu pode dar muck sem mostrar, mas quem pagou a aposta do river pode pedir para ver a mão de quem apostou.",
+  tldr: "Em torneios, sem all-in, o último agressor do river mostra primeiro; se todos deram check, começa o primeiro jogador ativo à esquerda do botão. Com all-in, todas as mãos restantes devem ser abertas assim que as apostas terminam. Quem pagou no river e mantém ou já abriu suas cartas pode pedir para ver a mão do último agressor. No cash, as regras da casa definem a abertura e o muck.",
   category: "rules",
   date: "2026-06-15",
   updated: "2026-09-22",

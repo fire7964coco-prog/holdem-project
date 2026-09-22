@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "All-in যাওয়া মানে নিজের সামনে থাকা প্রতিটি chip বাজি ধরা। প্রতিটি প্রতিপক্ষের কাছ থেকে আপনি ঠিক ততটাই জিততে পারেন যতটা আপনি match করেছেন (অর্থাৎ main pot)। বড় stack-এর অতিরিক্ত বাজি একটা side pot তৈরি করে, যেটা আপনি জিততে পারেন না। একটা full raise-এর কম all-in সেই খেলোয়াড়দের জন্য betting আবার খোলে না, যারা আগেই act করে ফেলেছেন।",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-21",
+  updated: "2026-09-22",
   masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -146,9 +146,9 @@ Player A আর Player C-র কী হবে, যে এখনও act করে
 
 ### Advanced কেস: একাধিক খেলোয়াড় ছোট all-in গেলে কী?
 
-এটাই সেই version যেটা regulars-দেরও টলিয়ে দেয়। একাধিক ছোট all-in মিলে একটা full raise-এর সমান **যোগ হতে পারে** — আর যদি তাদের combined increments সেই threshold-এ পৌঁছে যায়, তাহলে যারা আগেই act করেছে তাদের জন্য betting আবার খুলে যায়।
+একাধিক ছোট all-in মিলে একটা full raise-এর সমান **যোগ হতে পারে**, তবে betting আবার খোলে কি না তা প্রতিটি খেলোয়াড়ের জন্য আলাদাভাবে, তার শেষ action-এর পর থেকে মাপা হয়। সেই খেলোয়াড়ের সামনে আসা মোট বৃদ্ধি শেষ full bet বা raise-এর সমান হলে তবেই তার raise-এর অধিকার ফিরে আসে।
 
-এটাই অফিসিয়াল TDA "re-opening the bet" নিয়ম, আর বেশিরভাগ card room এটা মেনে চলে।
+No-Limit ও Pot-Limit-এর জন্য এটাই TDA 2024 Rule 47-A-এর অফিসিয়াল "re-opening the bet" নিয়ম। Cash game-এ house rule আগে নিশ্চিত করুন।
 
 **উদাহরণ (Blinds $1/$2, flop-এ):**
 
@@ -158,7 +158,7 @@ Player A আর Player C-র কী হবে, যে এখনও act করে
 
 Combined increments: $4 + $7 = **$11** — এটা $10-এর minimum raise threshold পূরণ করে দেয়।
 
-**ফলাফল: Player A-র জন্য betting আবার খুলে যায়।** A fold, call, বা re-raise করতে পারে, যদিও একা না B না C কেউই full raise করেনি।
+**ফলাফল: Player A-র জন্য betting আবার খুলে যায়।** A এখন $21-এর মুখোমুখি, তাই তার শেষ $10 action থেকে বৃদ্ধি $11 — full $10 raise-এর যথেষ্ট। কিন্তু B ও C-র মাঝখানে $14 call করা কোনো খেলোয়াড়ের সামনে বৃদ্ধি মাত্র $7, তাই তার জন্য betting আবার খোলে না।
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -181,7 +181,7 @@ Minimum raise threshold সবসময় *শেষ full valid bet বা rais
 | একা all-in < full raise | ❌ না — কেবল call বা fold |
 | একা all-in ≥ full raise | ✅ হ্যাঁ — সবাই re-raise করতে পারে |
 | একাধিক ছোট all-in, combined < full raise | ❌ না |
-| একাধিক ছোট all-in, combined ≥ full raise | ✅ হ্যাঁ |
+| একাধিক ছোট all-in; খেলোয়াড়ের শেষ action থেকে মোট বৃদ্ধি ≥ full bet/raise | ✅ হ্যাঁ — শুধু সেই খেলোয়াড়ের জন্য |
 | যে খেলোয়াড় এখনও act করেনি | ✅ সবসময় raise করতে পারে (যা-ই হোক না কেন) |
 
 </div>
@@ -192,7 +192,7 @@ Minimum raise threshold সবসময় *শেষ full valid bet বা rais
 
 যখন সব betting শেষ হয়ে যায় এবং কোনো খেলোয়াড় all-in থাকে, তখন showdown-এ যা হয়:
 
-1. **কার্ড face-up করে দেওয়া হয়।** টুর্নামেন্টে, all-in-এ জড়িত সব হ্যান্ড সাধারণত betting শেষ হওয়ামাত্র টেবিলে খুলে দেওয়া হয়। Cash game-এ প্রথমে স্ট্যান্ডার্ড [last-aggressor showdown নিয়ম](/bn/blog/holdem-showdown-rules) প্রযোজ্য হয়, তারপর all-in খেলোয়াড়রা কার্ড দেখান।
+1. **কার্ড face-up করে দেওয়া হয়।** টুর্নামেন্টে, কোনো খেলোয়াড় all-in এবং সব betting শেষ হলে বাকি সব হ্যান্ড অবিলম্বে table করতে হয়—muck করা যায় না (TDA 2024 Rule 16)। Cash game-এ house rule প্রযোজ্য; WSOP 2026 B149 অনুযায়ী side pot-এর খেলোয়াড়রা main-pot-only খেলোয়াড়দের আগে দেখান। No-Limit-এ river-এর আগে betting শেষ হলে all-in খেলোয়াড় আগে দেখান; নইলে river-এর last aggressor আগে, আর river check through হলে button-এর বাঁ দিকের প্রথম active খেলোয়াড় আগে দেখান। বিস্তারিত [showdown নিয়মে](/bn/blog/holdem-showdown-rules)।
 2. **Side pot আগে বণ্টন হয়।** Dealer সবচেয়ে সাম্প্রতিক তৈরি হওয়া side pot আগে মেটান, তারপর পেছনের দিকে এগিয়ে main pot পর্যন্ত যান।
 3. **কার্ড কথা বলে (cards speak)।** প্রতিটা pot সেই-ই পায় যার সেরা হ্যান্ড এবং যে ওটার জন্য eligible — খেলোয়াড় মুখে যা-ই বলুক না কেন।
 4. **একাধিক বিজয়ী সম্ভব।** Player A main pot জিততে পারে। Player B side pot জিততে পারে। শুধু "নিজের" pot জিতে নেওয়া মানেই কেউ সব কিছু নিয়ে যায় না।
@@ -239,7 +239,7 @@ A. আপনি main pot নিয়ে নেন (প্রতিটা খে
 
 **Q. all-in যাওয়ায় কি আপনার হ্যান্ড খুলে যায়?**
 
-A. টুর্নামেন্টে, হ্যাঁ — all-in-এর সাথে সব betting শেষ হওয়ামাত্র জড়িত সব হ্যান্ড সাধারণত টেবিলে face-up করে দেওয়া হয়। Live cash game-এ স্ট্যান্ডার্ড showdown নিয়ম প্রযোজ্য: last aggressor আগে দেখায়, তারপর বাকিরা দেখায় বা muck করে।
+A. টুর্নামেন্টে, হ্যাঁ—কেউ all-in এবং সব betting শেষ হলে বাকি সব হ্যান্ড অবিলম্বে table করতে হয়; muck করা যায় না (TDA 2024 Rule 16)। Cash game-এ house rule প্রযোজ্য। WSOP 2026 B149-এ side pot-এর খেলোয়াড়রা আগে দেখান; No-Limit-এ betting river-এর আগে শেষ হলে all-in খেলোয়াড় আগে দেখান, নইলে river action অনুযায়ী ক্রম ঠিক হয়।
 
 **Q. পোকার all-in-এ কি "run it twice" করা যায়?**
 
@@ -251,11 +251,11 @@ A. Table stakes মানে হলো, হ্যান্ড শুরু হ�
 
 **Q. দুই খেলোয়াড় আলাদা আলাদা পরিমাণে all-in গেলে, আগে কে দেখায়?**
 
-A. যে শেষ all-in একটা bet বা raise ছিল, সেটাই শেষ আগ্রাসী action, আর সে-ই আগে দেখায়। যে all-in শুধু কম টাকায় call করে, সেটা আগ্রাসী নয় — cash game-এ তখনও মূল bet করা খেলোয়াড়ই আগে দেখায়। ==r:টুর্নামেন্টে এখানে আগে-দেখানোর কোনো ক্রমই নেই== — all-in-এর betting শেষ হওয়ামাত্র জড়িত প্রতিটি হ্যান্ড একসঙ্গে face-up করা হয় (TDA Rule 16)। Cash game-এ, যদি সেটা আর কোনো action ছাড়া call করা all-in হয়, তাহলে call করা খেলোয়াড় all-in খেলোয়াড়ের হ্যান্ড দেখার পর হারলে muck করতে পারে (টুর্নামেন্টে জড়িত সব হ্যান্ড face-up থাকে)।
+A. ==r:টুর্নামেন্টে আগে-দেখানোর ক্রম নেই==—কেউ all-in এবং betting শেষ হলে বাকি সব হ্যান্ড অবিলম্বে table করতে হয় (TDA 2024 Rule 16)। Cash game-এ house rule প্রযোজ্য; WSOP 2026 B149-এ side pot-এর খেলোয়াড়রা আগে দেখান, এবং No-Limit-এ betting river-এর আগে শেষ হলে all-in খেলোয়াড় আগে দেখান। শুধু all-in-এর পরিমাণ বড় বা ছোট হওয়া প্রথমে কে দেখাবে তা ঠিক করে না।
 
 **Q. টুর্নামেন্ট আর cash game-এ কি all-in নিয়ম আলাদা হয়?**
 
-A. মূল নিয়ম একই, তবে দুটো ব্যবহারিক পার্থক্য আছে। প্রথম: টুর্নামেন্টে, all-in-এ জড়িত সব হ্যান্ড betting শেষ হওয়ামাত্র face-up করে দেওয়া হয় (TDA Rule 16) — আপনি showdown-এর আগে muck করতে পারবেন না। Cash game-এ স্ট্যান্ডার্ড showdown ক্রম প্রযোজ্য এবং খেলোয়াড়রা muck করতে পারে। দ্বিতীয়: run it twice cash game-এ সাধারণ (যদি দুই খেলোয়াড় রাজি হন) কিন্তু টুর্নামেন্টে সাধারণত অনুমোদিত নয়।
+A. টুর্নামেন্টে, কেউ all-in এবং betting শেষ হলে বাকি সব হ্যান্ড অবিলম্বে face-up table করতে হয়; muck করা যায় না (TDA 2024 Rule 16)। Cash game-এ house rule ও WSOP 2026 B149-এর মতো room-specific ক্রম প্রযোজ্য, তাই muck-এর সুযোগও house rule-নির্ভর। Run it twice অনেক cash game-এ সম্মতিতে হয়, কিন্তু টুর্নামেন্টে সাধারণত অনুমোদিত নয়।
 
 ---
 
