@@ -745,6 +745,8 @@ T1 **7/7** · T2 **8/8** · T3 **9/9**(`Q10s` 포함) · T4 **23/23**(`66–22` 
 
 ### §1-Q14 (2026-09-22 · MA-148 — zh·zh-hant 정정 13 + EN-먼저 4)
 
+> 🔵 **헤드 처리 (2026-09-22 (7) · Q14 `3cfabdc6` + 독립검수 수정 `8bfcd35c` → 머지 `603deb7a` · 배포 `086161eb`)** — Q14-1=MB-079 발신 · Q14-2=ja·zh·zh-hant HARDEN §6-0 통지 · Q14-3=KO 후속 `649c2f0c` · Q14-4=solver 캡처 IP actions 빈 배열은 미검증으로 유지 · Q14-5=`settled-decisions` §3-T 승격 · Q14-6=round2 라이브 118URL/FAQ1325/본문106 일치, IndexNow 신규103 HTTP200, WORKLOG·핸드오프 갱신. 새 intentional diff·update-calendar 요청 0. 전체 재검수나 별도 잔여 묶음은 열지 않았다.
+
 **완료 범위**: `holdem-position-play`·`holdem-3bet`·`holdem-limping` core 8 = 24포스트, zh 고유 2포스트, zh-hant 고유 4포스트로 **30포스트**. 공용 `holdem-position-play-ip-vs-oop.webp`와 생성 원본 1개씩, 브리프·이 진행 파일을 함께 갱신했다. KO·꼬리 로케일은 이번 범위 밖이다.
 
 **A 전제 실측**: MA의 c-bet 옛값은 zh·zh-hant 2자리만 남았고 de·ja·pt는 이미 `30–45%`였다. SB `3-bet-or-fold`는 표·요약 두 자리만 `vs a raise`가 빠졌다. 시작 clean·`main` 동기. C 시작에 `7c9f25a9→4849f3c8`, 커밋 훅 직전에 다시 전진한 main을 `4849f3c8→679f854a`로 각각 fast-forward했고 Q14 파일 충돌 0. core 7 번역은 편집 전 EN과 동기라 `masterUpdated` 21파일을 09-22로 올렸고, 로케일 고유 6파일은 유지했다.
@@ -1333,6 +1335,8 @@ B 176 축어 예시(100 벳 + 140 올인 → **240**)·A 96.a(1,700 + 500 → **
 - 🟠 **Q14-4 solver 캡처 보강 요청**: `.solver-captures/data-zh.json` 13스팟의 IP 측 `actions`가 빈 배열이라 「IP 65–75% c-bet」 4행은 대조 불가(UNV). 실제 캡처가 생기기 전 추정값으로 채우지 마라.
 - 🟠 **Q14-5 정본 승격 후보**: `settled-decisions`에 「equity realization은 상대적·spot-dependent라 위치만으로 IP>100/OOP<100을 강제하지 않는다. EQR 수정은 tldr·직답·표·FAQ·요약·imageAlt·공용 이미지 사본을 함께 센다」를 추가. 이번에 표 직후 한 문장이 1차 수리 뒤에도 살아남아 `completion-count-the-copies-first`를 재실증했다.
 - 🟠 **Q14-6 본체 마감**: MA-148/Q14 완료로 핸드오프 갱신. 새 intentional diff·update-calendar 요청은 0. 머지 뒤 sitemap **30 post URL** lastmod 재생성, 해당 30페이지의 새문면/구문면소멸과 공용 이미지 확인 후 IndexNow 30 URL. 이 레인은 sitemap·push·배포·IndexNow를 하지 않았다.
+
+> ✅ **Q14 헤드 마감**: 위 §1-Q14 헤드 처리 블록과 MB-079가 정본이다. round2는 Q14 외 core/ar·PDF·ES·KO·H1이 함께 배포되어 고정118 URL로 검증했고, 당일 기접수 URL을 제외한 실제 신규103 URL만 IndexNow에 보냈다. Q14-4의 빈 캡처는 성공으로 바꾸지 않았다.
 
 ### Q11 (2026-09-21 · 게이트 신설 III — 계산기 «원천↔사본»)
 

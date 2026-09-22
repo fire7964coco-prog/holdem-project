@@ -4,14 +4,14 @@
 
 | 순서 | 묶음 | 담당/범위 | 상태 |
 |---|---|---|---|
-| 1 병렬 | Q14 MA-148 | 기존 queue CLI, 포스트 수정 | 603deb7a 머지·086161eb push, 라이브 마감 미완료 |
+| 1 병렬 | Q14 MA-148 | 기존 queue CLI, 포스트 수정 | 603deb7a 머지·086161eb 배포, 라이브·IndexNow·MB-079 마감 완료 |
 | 1 병렬 | CALC-SHARED-2 | harden-calc-ko, 공용 후속8건+H-2 중복 통합 | 4849f3c8 머지·679f854a 배포/라이브 완료 |
 | 1 병렬 | 대기열 최신화 | 본체, 완료중복/실제미결/보류/시한 대조 | 실사 완료·원문 보존 |
 | 2 | Q8-a → Q8-b | PT → ID/DE | PT 0c74affa 머지·미배포; ID 준비만/DE 미착수 |
-| 2 | CALC-H1 | K9s/Q9s/J9s 티어 보강, 공용8건 머지 후 | 45177757 머지·push, 라이브 UI 마감 미완료 |
+| 2 | CALC-H1 | K9s/Q9s/J9s 티어 보강, 공용8건 머지 후 | 45177757 머지·086161eb 배포, 라이브 실제 선택 확인 완료 |
 | 3 | 사실 오류 잔여 | EN-먼저·ar 동기화·KO/중문 개별 오류 | 일부 push; 규칙21편/EN7 미커밋 초안, 세부 아래 |
 | 4 | 표현·구조 잔여 | EN 확률 직답/FAQ·이미지 정합, 언어별 잔여 | PDF/ES push; EN7 초안/나머지 미착수 |
-| 5 | 통합 마감 | main 순차 머지·검증·배포·정확 URL IndexNow·문서·lane sync | round1 완료, round2 라이브 이후 미완료·이관 중단 |
+| 5 | 통합 마감 | main 순차 머지·검증·배포·정확 URL IndexNow·문서·lane sync | round1·round2 완료. 후속 묶음은 사용자 새 지시 대기 |
 
 ## 실행 경계
 
@@ -57,13 +57,13 @@
 | 묶음 | 코드 상태 | 아직 남은 마감 |
 |---|---|---|
 | CALC-SHARED-2 + KO odds/APPT + FR 접두/앵커 | 4849f3c8/e897bae4/679f854a, 라이브 확인·IndexNow·MB-078 완료 | 재작업 금지 |
-| H1 K9s/Q9s/J9s T3 | c9be34bb → 45177757 머지; 086161eb에 포함하여 push | 라이브 H1 실제 선택/UI 최종 확인 |
-| Q14 | 3cfabdc6 + 독립검수 수정8bfcd35c → 603deb7a 머지; push됨 | round2 라이브·IndexNow·최종 통지 |
-| core/ar 규칙 38편 | 4834860d, 독립검수/게이트 후 push | round2 라이브·마감 |
-| zh glossary/zh-hant rake | 64b8cf65, 독립검수 후 push | round2 라이브·마감 |
-| 공통 PDF 카드 크롬 | 05e4cfd2, 26언어35글37카드 HTML 변환 대조; push | 일부 화면 육안검사/round2 라이브·마감 |
-| ES APT/WSOP 숫자 구분자 | 7275c934, 값 보존·독립검수 후 push | round2 라이브·마감; 기계적 수정이라 updated 미변경 |
-| KO 위치/EQR·BB FAQ | 649c2f0c, 실제 slug position-is-everything-in-holdem; push | round2 라이브·마감 |
+| H1 K9s/Q9s/J9s T3 | c9be34bb → 45177757 머지; 086161eb에 포함하여 push | ✅ 공개 UI 세 조합 T3·조건부 권고 확인 |
+| Q14 | 3cfabdc6 + 독립검수 수정8bfcd35c → 603deb7a 머지; push됨 | ✅ round2 라이브·IndexNow·MB-079 완료 |
+| core/ar 규칙 38편 | 4834860d, 독립검수/게이트 후 push | ✅ round2 라이브·마감 완료 |
+| zh glossary/zh-hant rake | 64b8cf65, 독립검수 후 push | ✅ round2 라이브 마감. 당일 IndexNow 기접수라 중복 제외 |
+| 공통 PDF 카드 크롬 | 05e4cfd2, 26언어35글37카드 HTML 변환 대조; push | ✅ round2 라이브 콘텐츠 마감. 이전에 남긴 일부 픽셀 육안 미검사는 전체 재검수로 열지 않음 |
+| ES APT/WSOP 숫자 구분자 | 7275c934, 값 보존·독립검수 후 push | ✅ round2 라이브·마감 완료; 기계적 수정이라 updated 미변경 |
+| KO 위치/EQR·BB FAQ | 649c2f0c, 실제 slug position-is-everything-in-holdem; push | ✅ round2 라이브·마감 완료 |
 | Q8-a PT 8편21자리 | a5def6b7 → 0c74affa 머지, 독립 diff/게이트 통과 | **아직 main 통합 빌드·push·라이브 없음** |
 | 규칙 tail/core 요약 | main 미커밋 포스트21 + 브리프; 아래 참조 | 자체검사·독립검수·미착수20편 모두 남음 |
 | EN 확률7 | calc 워크트리 미커밋 포스트7 + 브리프 | 본체 독립검수부터; 번역·이미지·빌드 없음 |
@@ -78,11 +78,11 @@ Q14는 30포스트+이미지/템플릿/문서. 검수 때 Hant 중복 직답·�
 - 보존된 **.next는 603deb7a 콘텐츠 + 생성 sitemap69**로 빌드한 round2 산출물이다. 소스에는 그 뒤 PT 및 미커밋 규칙 초안이 있으므로 **현재 main에서 먼저 rebuild하면 검증 기준이 바뀐다**. 먼저 보존 산출물/배포 버전을 확인한다. 산출물이 없으면 별도 안전한 작업 위치에서 정확 커밋을 재현하고 초안을 건드리지 않는다.
 - build773 통과. 로컬 검증 **118URL=106포스트+12계산기**, FAQ1325 일치, article106 일치, HTTP200·390px overflow0·pageerror0. 증거 **tmp/closeout-round2/local.json** (인계 시 재확인).
 - ru/tr beginners의 FAQ는 원래 없음: 2개만 예외 처리했다. 모든 URL에 FAQ가 있다고 주장하지 않는다.
-- 라이브 첫 시도는 /ar/blog/holdem-all-in-rules FAQ mismatch로 종료(구 배포 응답). **live.json 없음, 라이브 전체 성공 미확인**. 오래 걸린다고 성공으로 간주하지 않는다.
+- 첫 시도는 구 배포 응답으로 중단됐지만 2026-09-22 (7) 재실행에서 **118 URL 전건 통과**했다. 증거 `tmp/closeout-round2/live.json`: FAQ1325·본문106 일치, HTTP200·390px overflow0·pageerror0.
 - 재개용 검증 스크립트 **tmp/closeout-round2-verify.mjs**: 인수로 사이트 base를 받으며 frozen118경로와 .next HTML을 비교한다. 예: node tmp/closeout-round2-verify.mjs https://www.holdemmaster.com . 먼저 코드/기준 산출물 확인. tmp는 git ignored이지만 현재 같은 PC에 보존됨.
 - 로컬 서버3113(session32710)는 인계 시 Ctrl+C로 종료했다. 필요할 때만 재기동.
 - sitemap69 URL 날짜만 변경(추가/삭제/비블로그0). FAQ나 본문을 바꾸지 않은 ES2 및 이미 당일 날짜인 zh2 때문에 수정 포스트 수와 lastmod 수는 다르다.
-- **IndexNow round2 미실행**. 성공 후 실제 변경 경로를 docs/search-engine-registration.md 절차로 확정한다. 앞선 round1에 계산기12 및 FR beginners 등 제출된 URL이 있으므로 중복 제외. '103개 추정'을 확정 목록으로 쓰지 않는다.
+- **IndexNow round2 완료**. 고정118에서 계산기12와 당일 기접수 포스트3(FR beginners·ZH glossary·ZH-Hant rake)을 집합 제외해 **고유103**을 dry-run으로 재계수한 뒤 HTTP200 접수. 접수≠색인.
 - 화면 증거: tmp/screen/closeout-round2 및 closeout-pdf-full. KO390 새 요약/직답, AR390 cash/tournament 표, Q14 실제 webp는 본체 육안 확인. Hant positions 원본 세그먼트 및 DE/AR PDF 카드 전체 육안 확인은 덜 끝났다. PDF selector crop 명령2회 실패는 제품 실패가 아니라 검사 미완료이며 성공으로 보고하지 않는다. 콘솔 Vercel 로컬404/GA요청 실패는 pageerror와 분리했다.
 
 ### 3. 미커밋 작업 소유권 — 그대로 보존
@@ -114,11 +114,11 @@ Q14는 30포스트+이미지/템플릿/문서. 검수 때 Hant 중복 직답·�
 - DE calculator related8은 EN parity라 bubble 링크 때문에9개로 늘리지 않는다. FR 앵커/FAQ접두는 이미 round1 완료; 다시 열지 않는다.
 - KO 블로그 내 Rule4 캡션과 exact 값 동형 잔여, APT90+46 분류는 별도 미결이며 이번 공용계산기/개막전135 작업과 동일시하지 않는다.
 - **TDA 판본 부채**: 2026 v1.1(9/21)에서 번호가 바뀌었다. 이번 core/tail의 새 구번호 인용은 2024판을 명시했지만 기존 전역 무판본 인용을 전부 이행한 것은 아니다. 전체 번호 교체는 새 별도 작업. 현행 출처/대조는 규칙 브리프에 보존.
-- round2 **MB 발신, Q14 진행표/각 로케일 HARDEN 통지, H1 완료 대기열 표기, 확정 결정 정본 승격 필요성 검토, IndexNow, lane sync** 미완료. MB-078까지 완료한 round1과 혼동하지 않는다. 뒤늦게 배포완료로 날짜를 소급하지 않는다.
-- ja/zh/zh-hant 기존 worktree HEAD7c9f25a9. 이관 중 lane:sync 적용 안 함. 다음 세션에서 dirty 보호/원래 소유권 확인 후 프로토콜에 따라 동기화한다.
+- round2 **MB-079, Q14 진행표/각 로케일 HARDEN 통지, H1 완료 표기, `settled-decisions` §3-T, IndexNow103, lane sync** 완료. Q14 solver 캡처 IP actions 빈 배열은 미검증 상태를 유지한다.
+- ja/zh/zh-hant에는 Q14 §6-0 통지를 남겼고, `lane:status` BLOCKED0 확인 뒤 회차 마지막에 `lane:sync -- --apply`를 적용했다. 다음 세션은 이 완료 회차를 다시 동기화하지 않는다.
 - 기존 장기 미결은 원래 대기열을 보존: re-entry zh/zh-hant 용어 판정, /hands noindex 반영 관측, 포커·홀덤 차이 신규 글 후보, solver-client5 SEO 표현, es LATAM, 우편함 회신 대기. 자동 착수 대상 아님. 시한은 update-calendar 정본.
-- tmp/closeout-shared-verify.mjs 및 closeout-round2-verify.mjs는 미완료 배포검증 인계를 위해 보존. 증거JSON/이미지도 보존. 실제 해당 회차 완료 후 스크립트만 정확 경로로 정리한다(폴더 일괄삭제 금지).
+- round2 완료 뒤 `tmp/closeout-round2-verify.mjs`만 정확히 제거했다. 증거 `local.json`·`live.json`과 화면 이미지는 보존했다. round1의 `tmp/closeout-shared-verify.mjs`는 이 회차 범위 밖이라 건드리지 않았다.
 
 ### 5. 새 세션 운영 제안
 
-첫 회차는 **086161eb 배포 검증·마감만**. 이후 사용자 선택에 따라 규칙 초안 또는 EN7만 한 묶음씩. 실제 사실오류/번역누락/표현개선/자기회귀를 따로 분류하고, 검사 자리·수정 파일 수를 결함 수로 보고하지 않는다. 새 세션을 핑계로 완료 글 전체를 다시 훑지 않는다. 새 레인/대규모 후속 자동 착수 없이 끝나는 경계를 먼저 정한다.
+**086161eb 배포 검증·마감은 완료했다.** 다음은 사용자 선택에 따라 규칙 초안 또는 EN7만 한 묶음씩 연다. 실제 사실오류/번역누락/표현개선/자기회귀를 따로 분류하고, 검사 자리·수정 파일 수를 결함 수로 보고하지 않는다. 완료 글 전체 재검수·새 레인·대규모 후속은 자동 착수하지 않는다.
