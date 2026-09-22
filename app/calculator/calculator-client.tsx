@@ -341,7 +341,7 @@ function OutsCalc() {
         {cards.map(([k, val, lbl, ruleLabel]) => (
           <div key={String(k)} className={`rounded-xl p-2 sm:p-4 border text-center transition-all ${stage===k ? "border-primary/60 bg-primary/5" : "border-border bg-card"}`}>
             <p className="text-xs text-muted-foreground mb-1">{String(lbl)}</p>
-            <p className="text-xs text-muted-foreground/60 mb-2">{ruleLabel}</p>
+            <p className="text-xs text-muted-foreground/60 mb-2">정확값</p>
             <p className={`text-2xl sm:text-3xl font-black ${pcolor(Number(val))}`}>{val}%</p>
           </div>
         ))}
@@ -665,7 +665,10 @@ function StartingHandCalc() {
 function SPRCalc() {
   const [stack, setStack] = useState(50000);
   const [pot, setPot] = useState(10000);
-  const spr = pot > 0 ? Math.round(stack / pot * 10) / 10 : 0;
+  const spr = pot > 0 ? stack / pot : 0;
+  // Classify before rounding; a rounded boundary must not look like an exact ratio.
+  const displayBoundary = [4, 8, 15].find(n => spr < n && Math.round(spr * 10) / 10 >= n);
+  const sprDisplay = displayBoundary ? `< ${displayBoundary}` : spr.toLocaleString("ko-KR", { maximumFractionDigits: 1 });
 
   const zone = spr <= 0 ? null
     : spr < 4   ? { label:"낮은 SPR (커밋 구간)", color:"text-red-400", bg:"bg-red-400/10 border-red-400/40",
@@ -705,10 +708,10 @@ function SPRCalc() {
       <div className="rounded-2xl bg-card border border-border p-5">
         <p className="text-xs text-muted-foreground mb-1">SPR (Stack-to-Pot Ratio)</p>
         <div className="flex items-end gap-3">
-          <p className={`text-5xl sm:text-6xl font-black tabular-nums ${zone?.color || "text-foreground"}`}>{spr}</p>
+          <p className={`text-5xl sm:text-6xl font-black tabular-nums ${zone?.color || "text-foreground"}`}>{sprDisplay}</p>
           <p className="text-sm text-muted-foreground mb-2">스택 ÷ 팟</p>
         </div>
-        <p className="text-xs font-mono text-muted-foreground mt-1">{stack.toLocaleString()} ÷ {pot.toLocaleString()} = {spr}</p>
+        <p className="text-xs font-mono text-muted-foreground mt-1">{stack.toLocaleString()} ÷ {pot.toLocaleString()} {displayBoundary ? sprDisplay : `≈ ${sprDisplay}`}</p>
       </div>
 
       {zone && (
@@ -1002,7 +1005,7 @@ function ICMCalc() {
   const icmResult = useMemo(() => {
     const s = stacks.slice(0, numPlayers);
     const p = prizes.slice(0, numPrizes);
-    if (s.some(v => v <= 0) || p.some(v => v <= 0)) return null;
+    if (s.some(v => !Number.isFinite(v) || v <= 0) || p.some((v, i) => !Number.isFinite(v) || v <= 0 || (i > 0 && v > p[i - 1]))) return null;
     return computeICM(s, p);
   }, [stacks, numPlayers, prizes, numPrizes]);
 
@@ -1029,6 +1032,7 @@ function ICMCalc() {
         <strong className="text-primary">ICM(Independent Chip Model)</strong>은 토너먼트 칩을 실제 상금 가치로 환산합니다.
         2명 이상 입상하는 구조에서는 칩 리더의 ICM 비율이 보통 칩 비율보다 낮고, 짧은 스택은 더 높습니다.
         콜/폴드는 승리·무승부·패배 뒤 ICM 가치를 실제 확률로 가중한 값과 폴드했을 때의 가치를 비교하세요.
+        탈락했을 때는 실제 받는 상금을 반영하며, 자동으로 0원으로 계산하지 않습니다.
       </div>
 
       <div className="grid grid-cols-2 gap-3">
@@ -1067,7 +1071,7 @@ function ICMCalc() {
           <div className="space-y-1.5">
             {Array.from({ length: numPlayers }, (_, i) => (
               <div key={i} className="flex items-center gap-2">
-                <span className="text-xs font-bold text-muted-foreground w-10 flex-shrink-0 text-center">{MEDALS[i]}</span>
+                <span className="text-xs font-bold text-muted-foreground w-10 flex-shrink-0 text-center">P{i + 1}</span>
                 <button aria-label={`플레이어 ${i + 1} 스택 줄이기`} onClick={() => updateStack(i, stacks[i] - 1000)}
                   className="w-7 h-7 rounded-md bg-background border border-border text-muted-foreground hover:border-primary/50 flex-shrink-0 text-xs font-bold">−</button>
                 <input
@@ -1134,11 +1138,11 @@ function ICMCalc() {
                   const diff = icmPct - chipPct;
                   return (
                     <tr key={i} className="border-b border-border/50 last:border-0 hover:bg-primary/5 transition-colors">
-                      <td className="px-3 py-1.5 font-bold text-foreground">{MEDALS[i]} P{i+1}<span className="block sm:hidden text-[10px] font-mono font-normal text-muted-foreground mt-0.5">{stacks[i].toLocaleString()} · {chipPct.toFixed(1)}%</span></td>
+                      <td className="px-3 py-1.5 font-bold text-foreground">P{i+1}<span className="block sm:hidden text-[10px] font-mono font-normal text-muted-foreground mt-0.5">{stacks[i].toLocaleString()} · {chipPct.toFixed(1)}%</span></td>
                       <td className="px-3 py-1.5 text-right font-mono text-muted-foreground hidden sm:table-cell">{stacks[i].toLocaleString()}</td>
                       <td className="px-3 py-1.5 text-right font-mono text-muted-foreground hidden sm:table-cell">{chipPct.toFixed(1)}%</td>
                       <td className="px-3 py-1.5 text-right font-mono font-bold text-primary">{Math.round(equity).toLocaleString()}원</td>
-                      <td className="px-3 py-1.5 text-right font-mono">{icmPct.toFixed(1)}%</td>
+                      <td className="px-3 py-1.5 text-right font-mono text-foreground">{icmPct.toFixed(1)}%</td>
                       <td className="px-3 py-1.5 text-right font-mono text-muted-foreground">{Math.round((stacks[i] / totalChips) * totalPrize).toLocaleString()}원</td>
                       <td className={`px-3 py-1.5 text-right font-mono font-bold ${diff > 0.1 ? "text-green-400" : diff < -0.1 ? "text-red-400" : "text-muted-foreground"}`}>
                         {diff > 0 ? "+" : ""}{diff.toFixed(1)}%p
@@ -1165,7 +1169,7 @@ function ICMCalc() {
         </motion.div>
       ) : (
         <div className="text-center py-6 text-muted-foreground text-sm">
-          스택과 상금을 0보다 크게 설정하면 ICM 계산 결과가 표시됩니다.
+          스택과 상금은 0보다 크게, 상금은 높은 순위부터 내림차순으로 입력하세요. 같은 금액의 상금은 허용됩니다.
         </div>
       )}
     </div>
@@ -1532,7 +1536,7 @@ export default function CalculatorPage() {
             </table>
           </div>
           <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mt-5 max-w-3xl">
-            핵심은 <strong className="text-foreground">칩 리더의 ICM 가치(33.3%)가 칩 비율(40%)보다 6.7%p 낮다</strong>는 점입니다. 1등을 해도 1등 상금만 받기 때문에 리더가 코인플립으로 얻는 상금 가치는 생각보다 적습니다. 그래서 버블에서 칩 리더는 특히 탈락을 피해야 하는 <strong className="text-foreground">미들스택을 압박</strong>할 수 있습니다. 반대로 숏스택(칩 13.3% → ICM 16.6%)은 무리한 올인 콜을 피하되, 블라인드에 먹히기 전에는 선제 올인 기회도 잡아야 합니다. 개념이 더 궁금하면 <a href="/blog/icm-poker-meaning" className="text-primary-ink font-semibold underline underline-offset-2">ICM이란</a> · <a href="/blog/holdem-bubble-strategy" className="text-primary-ink font-semibold underline underline-offset-2">버블 생존 전략</a>을 참고하세요.
+            표에서는 <strong className="text-foreground">칩 리더의 ICM 비율(33.3%)이 칩 비율(40%)보다 6.7%p 낮습니다.</strong> 이는 현재 분배 가치의 차이지, 특정 콜의 손익이나 요구 승률이 아닙니다. 미들스택은 보통 리스크 프리미엄이 가장 크므로, 이들을 커버하는 리더는 상대 콜 레인지가 허용할 때 <strong className="text-foreground">미들스택을 압박</strong>할 수 있습니다. 숏스택도 콜을 신중하게 선택하되, 블라인드에 먹힐 극숏은 예외입니다. 행동은 부호가 아니라 스택·상금·상대 범위와 결과별 확률을 함께 보고 정하세요. 개념이 더 궁금하면 <a href="/blog/icm-poker-meaning" className="text-primary-ink font-semibold underline underline-offset-2">ICM이란</a> · <a href="/blog/holdem-bubble-strategy" className="text-primary-ink font-semibold underline underline-offset-2">버블 생존 전략</a>을 참고하세요.
           </p>
         </div>
 

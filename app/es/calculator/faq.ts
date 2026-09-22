@@ -57,11 +57,11 @@ export const CALCULATOR_FAQ_ES: { q: string; a: string }[] = [
   },
   {
     q: "¿Cómo se usa la calculadora de ICM?",
-    a: "Escribe el número de jugadores, el stack de cada uno y la estructura de premios (del 1.º al 6.º). La calculadora te muestra al instante cuánto vale de verdad cada stack en dinero de premios, junto a lo que pagaría un chip chop. Para decidir call o fold, úsala dos veces — una con los stacks que tendrías si ganas la mano y otra con los que tendrías si te eliminan — y compara el promedio, ponderado por tu probabilidad de ganar la mano, con tu valor si simplemente foldeas.",
+    a: "Introduce el número de jugadores, los stacks y los premios de los puestos 1–6. Para decidir call o fold, multiplica tu valor después de cada resultado posible (ganar, empatar o perder) por su probabilidad real y compara la suma con tu valor después de foldear. Si te eliminan, cuenta el premio que cobras realmente, no cero automáticamente.",
   },
   {
     q: "¿Qué significa el «valor ICM» de esta calculadora?",
-    a: "Tu valor real en dinero de premios: la parte de la bolsa que queda que se espera que cobre tu stack, según la probabilidad de cada jugador de terminar en cada puesto. No es tu porcentaje de fichas: cuando se paga más de un puesto, doblar tus fichas nunca dobla tu valor ICM, y por eso el valor ICM del líder en fichas queda por debajo de su porcentaje de fichas.",
+    a: "El valor ICM es el dinero de premios esperado de tu stack, calculado según la probabilidad de terminar en cada puesto. No es un premio garantizado ni tiene que coincidir con tu porcentaje de fichas.",
   },
   {
     q: "¿Cuándo conviene usar la calculadora de ICM?",
@@ -69,11 +69,11 @@ export const CALCULATOR_FAQ_ES: { q: string; a: string }[] = [
   },
   {
     q: "¿Por qué un call rentable en fichas puede perder dinero en premios?",
-    a: "Porque el chip EV cuenta fichas y el ICM cuenta dinero de premios — no son lo mismo. Ganar la mano te suma fichas, pero bustear te quita todos los premios a los que todavía podías llegar, así que el call puede ganar en fichas y perder equity en premios. Cerca de la burbuja y en las mesas finales es donde más se separan, y por eso los rangos por ICM son más cerrados que los de chip EV.",
+    a: "El chip EV cuenta fichas; el ICM valora premios. Un call puede ganar fichas en promedio y perder valor esperado en premios. Al quedar eliminado se cuenta el premio realmente recibido: los premios ya asegurados no desaparecen.",
   },
   {
     q: "¿Por qué el líder en fichas tiene un valor ICM menor que su porcentaje de fichas?",
-    a: "Porque ganar sigue pagando solo el premio del 1.º, no toda la bolsa, mientras que bustear le quita todos los premios por debajo. En el ejemplo de burbuja de arriba, el líder tiene el 40% de las fichas pero solo el 33.3% del dinero de premios, y el stack más corto vale más que su porcentaje de fichas.",
+    a: "Ganar paga el premio del primer puesto, no toda la bolsa. Por eso el porcentaje de premios del líder puede ser menor que su porcentaje de fichas. En el ejemplo de burbuja son 40% de las fichas y 33.3% de los premios; no es una regla para cualquier estructura.",
   },
   {
     q: "¿Cómo se calcula un acuerdo por ICM en la mesa final?",
@@ -85,7 +85,7 @@ export const CALCULATOR_FAQ_ES: { q: string; a: string }[] = [
   },
   {
     q: "¿Por qué el ICM te hace foldear más en la burbuja?",
-    a: "En la burbuja, el dinero de premios que pierdes al bustear es mayor que el que ganas al llevarte el bote, como muestra el ejemplo de burbuja de arriba, así que un call rentable en fichas puede ser perdedor en EV de premios. Los stacks medios — y los cortos que no están a punto de quedarse sin fichas por las ciegas — deberían evitar los coin flips pagando. La otra cara: todos los demás también están foldeando, así que como agresor abre y resube all-in con un rango más amplio, aunque pagues con uno más cerrado.",
+    a: "Un call puede ser rentable en fichas y perder valor esperado en premios en la burbuja. Compara los valores de todos los resultados, ponderados por sus probabilidades reales, con el valor de foldear; la tabla por sí sola no hace esa comparación. Los stacks medios suelen afrontar el mayor risk premium, salvo casos como un stack a punto de agotarse por las ciegas. Ampliar opens o re-shoves depende de quién cubre a quién y de los rangos de call rivales; no es automático.",
   },
   {
     q: "¿Se puede usar una calculadora de poker en la mesa?",

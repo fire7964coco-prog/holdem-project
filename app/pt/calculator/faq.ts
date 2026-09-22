@@ -64,11 +64,11 @@ export const CALCULATOR_FAQ_PT: { q: string; a: string }[] = [
   },
   {
     q: "Como usar a calculadora de ICM?",
-    a: "Informe o número de jogadores, o stack de cada um e a estrutura de premiação (do 1º ao 6º). A calculadora mostra na hora quanto cada stack vale de verdade em dinheiro de premiação, ao lado do que um chip chop pagaria. Para decidir entre pagar e foldar, use duas vezes — uma com os stacks que você teria se ganhasse a mão e outra com os que teria se fosse eliminado — e compare a média, ponderada pela sua chance de ganhar a mão, com o seu valor se simplesmente foldar.",
+    a: "Informe o número de jogadores, os stacks e os prêmios do 1º ao 6º lugar. Para decidir entre pagar e foldar, multiplique o seu valor após cada resultado possível (vitória, empate ou derrota) pela probabilidade real desse resultado e compare a soma com o valor após foldar. Na eliminação, conte o prêmio realmente recebido, não zero automaticamente.",
   },
   {
     q: "O que significa o «valor de ICM» desta calculadora?",
-    a: "O seu valor real em dinheiro de premiação: a parte da premiação restante que o seu stack deve receber, conforme a probabilidade de cada jogador terminar em cada posição. Não é a sua fatia de fichas: quando mais de uma posição é paga, dobrar as suas fichas nunca dobra o seu valor de ICM, e por isso o valor de ICM do chip leader fica abaixo da fatia de fichas dele.",
+    a: "O valor de ICM é a premiação esperada do seu stack, calculada pelas probabilidades de terminar em cada posição. Não é um prêmio garantido e não precisa coincidir com sua fatia de fichas.",
   },
   {
     q: "Quando vale a pena usar a calculadora de ICM?",
@@ -76,11 +76,11 @@ export const CALCULATOR_FAQ_PT: { q: string; a: string }[] = [
   },
   {
     q: "Por que um call lucrativo em fichas pode perder dinheiro na premiação?",
-    a: "Porque o chip EV conta fichas e o ICM conta dinheiro de premiação — não são a mesma coisa. Ganhar a mão soma fichas, mas ser eliminado tira todos os prêmios que você ainda podia alcançar, então o call pode ganhar em fichas e perder equity de premiação. É perto da bolha e nas final tables que os dois mais se separam, e por isso os ranges por ICM são mais fechados que os de chip EV.",
+    a: "O chip EV conta fichas; o ICM avalia premiação. Um call pode ganhar fichas em média e perder valor esperado em prêmios. Na eliminação, conte o prêmio realmente recebido: prêmios já garantidos não desaparecem.",
   },
   {
     q: "Quanto a calculadora de ICM tira do chip leader na bolha?",
-    a: "No exemplo de bolha acima, o chip leader tem 40% das fichas mas só 33,3% do dinheiro de premiação — 6,7 pontos a menos —, e o menor stack vale mais do que a fatia de fichas dele. O motivo: o máximo que o chip leader pode levar é o prêmio do 1º lugar, e não a premiação inteira, enquanto ser eliminado tira dele todos os prêmios que ainda podia alcançar.",
+    a: "No exemplo da bolha, o chip leader tem 40% das fichas e 33,3% da premiação, 6,7 pontos percentuais a menos. Vencer paga o prêmio do 1º lugar, não toda a premiação. Isso explica a diferença neste exemplo, mas não estabelece uma regra para qualquer estrutura de prêmios.",
   },
   {
     q: "Que números colocar na calculadora para um ICM deal?",
@@ -92,7 +92,7 @@ export const CALCULATOR_FAQ_PT: { q: string; a: string }[] = [
   },
   {
     q: "Como a calculadora de ICM mostra quando foldar na bolha?",
-    a: "Coloque na calculadora de ICM os stacks que você teria se ganhasse a mão e se fosse eliminado: na bolha, o dinheiro de premiação que você perde ao ser eliminado é maior do que o que ganha ao levar o pote, como mostra o exemplo de bolha acima, então um call lucrativo em fichas pode ser perdedor em EV de premiação. Os stacks médios — e os curtos que não estão prestes a ser engolidos pelos blinds — devem evitar pagar all-ins em situações de coin flip. O outro lado: todo mundo também está foldando, então, como agressor, abra e dê re-shove com um range mais largo, e pague shoves com um range mais fechado.",
+    a: "Na bolha, um call lucrativo em fichas pode perder valor esperado em prêmios. Compare os valores de todos os resultados, ponderados pelas probabilidades reais, com o valor de foldar; a tabela sozinha não faz essa comparação. Os stacks médios costumam ter o maior risk premium; um stack prestes a ser engolido pelos blinds é uma exceção. Ampliar opens ou re-shoves depende de quem cobre quem e dos ranges de call dos adversários, não de uma regra automática.",
   },
   {
     q: "Posso usar uma calculadora de poker na mesa?",

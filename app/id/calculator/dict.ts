@@ -297,7 +297,7 @@ export const CALC_DICT_ID: CalcDict = {
 
   icm: {
     introStrong: "ICM (Independent Chip Model)",
-    introRest: " adalah cara menghitung nilai uang hadiah yang sebenarnya dari chip turnamen Anda. Saat lebih dari satu posisi dibayar, nilai ICM chip leader pun lebih rendah daripada persentase chipnya, sedangkan short stack bernilai lebih dari persentase chipnya. Untuk keputusan call/fold, bandingkan nilai ICM Anda setelah menang dan setelah bust dengan nilai Anda kalau fold.",
+    introRest: " mengubah stack turnamen menjadi perkiraan uang hadiah menurut ICM. Untuk memilih call atau fold, kalikan nilai Anda setelah tiap hasil yang mungkin (menang, seri, atau kalah) dengan peluang sebenarnya, lalu bandingkan jumlahnya dengan nilai setelah fold. Saat bust, hitung hadiah yang benar-benar diterima, bukan otomatis nol.",
     numPlayers: "Jumlah pemain",
     paidPlaces: "Posisi yang dibayar",
     stacksTitle: "Stack chip pemain",
@@ -315,10 +315,11 @@ export const CALC_DICT_ID: CalcDict = {
     playerCell: "{medal} P{n}",
     diffPlus: "+selisih",
     // 🔴 딜러 렌즈(EN 09-17): «short stack 보호 구역»이 아니라 «risk premium이 높다 + 블라인드에 먹힐 만큼 짧으면 예외».
-    diffPlusNote: "Nilai ICM di atas persentase chip → risk premium Anda tinggi; stack menengahlah yang harus paling ketat. Pengecualiannya stack yang sudah pendek sampai bisa dihabisi blind — yang dilindungi lebih sedikit",
+    diffPlusNote: "Bagian prize pool Anda menurut ICM lebih besar daripada bagian chip Anda. Tanda selisih saja tidak menentukan apakah Anda sebaiknya call atau fold.",
     diffMinus: "−selisih",
-    diffMinusNote: "Nilai ICM di bawah persentase chip → agresi chip leader lebih menguntungkan",
-    empty: "Isi stack dan hadiah di atas nol untuk melihat hasil ICM.",
+    diffMinusNote: "Bagian prize pool Anda menurut ICM lebih kecil daripada bagian chip Anda. Tanda selisih saja tidak menentukan apakah agresi menguntungkan.",
+    diffUnit: "pp",
+    empty: "Gunakan stack dan hadiah positif, dengan hadiah diurutkan dari terbesar ke terkecil; hadiah yang sama diperbolehkan.",
   },
 
   pushfold: {
@@ -383,11 +384,11 @@ export const CALC_DICT_ID: CalcDict = {
         { player: "Ke-4 (short stack)", chip: "13,3%", icm: "16,6%", diff: "+3,3 poin", up: true },
       ],
       keyPoint: {
-        text: "Intinya: {b1} sebesar 6,7 poin. Karena menang hanya membayar hadiah juara 1, nilai hadiah yang didapat leader dari sebuah coin flip lebih kecil daripada yang ditunjukkan jumlah chipnya. Jadi di bubble, leader sebaiknya {b2}, sedangkan short stack (13,3% chip → 16,6% ICM) bernilai lebih dari chipnya dan sebaiknya {b3} untuk melindungi nilai bertahan itu.",
+        text: "Tabel menunjukkan {b1}, dengan selisih 6,7 poin persentase; ini bukan ambang call/fold. Stack menengah sering menanggung risk premium terbesar, sehingga leader yang mencakup stack mereka dapat {b2} jika range memungkinkan. Short stack sebaiknya {b3}. Keputusan bergantung pada stack, hadiah, dan lawan, bukan tanda selisih saja.",
         b1: "nilai ICM chip leader (33,3%) lebih rendah daripada persentase chipnya (40%)",
-        b2: "menekan short stack",
+        b2: "menekan stack menengah",
         // 🔴 EN 09-17 + zh 2차 교열: 조건절(«블라인드에 먹히기 직전이면 예외»)을 목적절 앞에 둔다.
-        b3: "memilih spot ketimbang asal call all-in — kecuali blind sudah hampir menghabisinya",
+        b3: "memilih call dengan cermat, kecuali stack yang hampir dihabisi blind",
       },
     },
     deal: {
@@ -477,7 +478,7 @@ export const CALC_DICT_ID: CalcDict = {
         ["4", "Gutshot straight", "16,5%", "8,5%", "8,7%", "16% · 8%"],
         ["5", "Pair → two pair atau trips", "20,4%", "10,6%", "10,9%", "20% · 10%"],
         ["6", "Dua overcard", "24,1%", "12,8%", "13,0%", "24% · 12%"],
-        ["7", "Set → full house atau quads", "27,8%", "14,9%", "15,2%", "28% · 14%"],
+        ["7", "–", "27,8%", "14,9%", "15,2%", "28% · 14%"],
         ["8", "Open-ended straight", "31,5%", "17,0%", "17,4%", "32% · 16%"],
         ["9", "Flush draw", "35,0%", "19,1%", "19,6%", "36% · 18%"],
         ["10", "Gutshot + dua overcard", "38,4%", "21,3%", "21,7%", "40% · 20%"],

@@ -299,7 +299,7 @@ export const CALC_DICT_ES: CalcDict = {
   icm: {
     introStrong: "El ICM (Independent Chip Model)",
     // 딜러 렌즈(EN): «premio a más de un puesto» 조건 + call/fold는 «ganar vs bustear vs foldear» 비교. 🔴 스페인어라 선행 공백 유지(EN 타입 주석)
-    introRest: " convierte tus fichas de torneo en su valor real en dinero de premios. Cuando se paga más de un puesto, hasta el valor ICM del líder en fichas es menor que su porcentaje de fichas, mientras que los stacks cortos valen más que su propio porcentaje de fichas. Para decidir call o fold, compara tu valor ICM si ganas la mano y si te eliminan con tu valor si foldeas.",
+    introRest: " convierte los stacks de torneo en dinero de premios esperado según ICM. Para decidir call o fold, multiplica tu valor después de cada resultado posible (ganar, empatar o perder) por su probabilidad real y compara la suma con tu valor después de foldear. Si te eliminan, cuenta el premio que cobras realmente, no cero automáticamente.",
     numPlayers: "Número de jugadores",
     paidPlaces: "Puestos pagados",
     stacksTitle: "Stacks de los jugadores",
@@ -318,10 +318,11 @@ export const CALC_DICT_ES: CalcDict = {
     playerCell: "{medal} J{n}",
     diffPlus: "+dif.",
     // 딜러 렌즈(EN): 가장 타이트해야 하는 것은 숏스택이 아니라 미들스택 · 블라인드에 죽을 숏은 예외
-    diffPlusNote: "Valor ICM por encima del % de fichas → tu risk premium es alto; los stacks medios son los que más deben cerrar su rango. La excepción es un stack tan corto que las ciegas se lo van a comer: tiene menos que proteger",
+    diffPlusNote: "Tu porcentaje de la bolsa según ICM supera tu porcentaje de fichas. El signo por sí solo no indica si debes pagar o foldear.",
     diffMinus: "−dif.",
-    diffMinusNote: "Valor ICM por debajo del % de fichas → la agresión del líder en fichas rinde más",
-    empty: "Pon stacks y premios mayores que cero para ver el resultado ICM.",
+    diffMinusNote: "Tu porcentaje de la bolsa según ICM es menor que tu porcentaje de fichas. El signo por sí solo no indica si la agresión es rentable.",
+    diffUnit: "pp",
+    empty: "Usa stacks y premios positivos, con los premios de mayor a menor; se permiten importes iguales.",
   },
 
   pushfold: {
@@ -388,10 +389,10 @@ export const CALC_DICT_ES: CalcDict = {
       keyPoint: {
         // 딜러 렌즈(EN): «evitar calls all-in» → 자리를 고른다 · 블라인드에 먹히기 직전은 예외.
         //   조건절은 text 쪽에(브리프 §3-B · zh 2차 교열 §5 — EN b3 조건절 위치 문제를 여기서는 피했다).
-        text: "La clave: {b1} en 6.7 puntos. Como ganar solo paga el premio del 1.º, el líder gana menos valor en premios con un coin flip de lo que sugiere su cantidad de fichas. Por eso en la burbuja el líder debería {b2}, mientras que el stack corto (13.3% de fichas → 16.6% ICM) vale más que sus fichas y — salvo que las ciegas estén a punto de comérselo — debería {b3}: así protege ese valor de supervivencia.",
+        text: "La tabla muestra que {b1}, por 6.7 puntos porcentuales; no es un umbral para pagar o foldear. Los stacks medios suelen afrontar el mayor risk premium, por lo que un líder que los cubre puede {b2} si los rangos lo permiten. Los stacks cortos deben {b3}. La decisión depende de stacks, premios y rivales, no solo del signo.",
         b1: "el valor ICM del líder en fichas (33.3%) queda por debajo de su porcentaje de fichas (40%)",
-        b2: "presionar a los stacks cortos",
-        b3: "elegir sus spots en vez de jugarse el torneo pagando",
+        b2: "presionar a los stacks medios",
+        b3: "elegir cuidadosamente sus calls, salvo cuando están a punto de quedarse sin fichas por las ciegas",
       },
     },
     deal: {
@@ -483,7 +484,7 @@ export const CALC_DICT_ES: CalcDict = {
         ["4", "Gutshot", "16.5%", "8.5%", "8.7%", "16% · 8%"],
         ["5", "Pareja → doble pareja o trío", "20.4%", "10.6%", "10.9%", "20% · 10%"],
         ["6", "Dos sobrecartas", "24.1%", "12.8%", "13.0%", "24% · 12%"],
-        ["7", "Set → full o póker", "27.8%", "14.9%", "15.2%", "28% · 14%"],
+        ["7", "–", "27.8%", "14.9%", "15.2%", "28% · 14%"],
         ["8", "Escalera abierta", "31.5%", "17.0%", "17.4%", "32% · 16%"],
         ["9", "Proyecto de color", "35.0%", "19.1%", "19.6%", "36% · 18%"],
         ["10", "Gutshot + dos sobrecartas", "38.4%", "21.3%", "21.7%", "40% · 20%"],

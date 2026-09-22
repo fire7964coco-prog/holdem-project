@@ -293,7 +293,7 @@ export const CALC_DICT_DE: CalcDict = {
 
   icm: {
     introStrong: "ICM (Independent Chip Model)",
-    introRest: " rechnet deine Turnierchips in echten Preisgeldwert um. Sobald mehr als ein Platz bezahlt wird, liegt sogar der ICM-Wert des Chipleaders unter seinem Chipanteil, während Short Stacks mehr wert sind, als ihr Chipanteil vermuten lässt. Für eine Call/Fold-Entscheidung vergleichst du deinen ICM-Wert nach einem Sieg und nach dem Bust mit deinem Wert, wenn du einfach foldest.",
+    introRest: " rechnet Turnierstacks in erwartetes Preisgeld nach ICM um. Für Call oder Fold gewichtest du deinen Wert nach jedem möglichen Ausgang (Sieg, Split oder Niederlage) mit dessen tatsächlicher Wahrscheinlichkeit und vergleichst die Summe mit deinem Wert nach einem Fold. Bei einem Bust zählt das tatsächlich ausgezahlte Preisgeld, nicht automatisch null.",
     numPlayers: "Anzahl Spieler",
     paidPlaces: "Bezahlte Plätze",
     stacksTitle: "Chipstacks der Spieler",
@@ -312,10 +312,11 @@ export const CALC_DICT_DE: CalcDict = {
     diffPlus: "+Diff.",
     // ★딜러 렌즈: «Short Stack은 무조건 조심»이 아니다 — 리스크 프리미엄이 가장 큰 쪽은 **미들 스택**이고,
     //   블라인드에 먹힐 만큼 짧은 스택은 오히려 지킬 게 적다(EN diffPlusNote 정정 동형).
-    diffPlusNote: "ICM-Wert über Chipanteil → deine Risikoprämie ist hoch; am engsten sollten die Mittelstacks spielen. Ausnahme ist ein Stack, der ohnehin gleich weggeblindet wird – der hat weniger zu schützen",
+    diffPlusNote: "Dein ICM-Anteil am Preispool liegt über deinem Chipanteil. Das Vorzeichen allein sagt nicht, ob du callen oder folden solltest.",
     diffMinus: "−Diff.",
-    diffMinusNote: "ICM-Wert unter Chipanteil → die Aggression des Chipleaders zahlt sich stärker aus",
-    empty: "Setze Stacks und Preisgelder über null, um das ICM-Ergebnis zu sehen.",
+    diffMinusNote: "Dein ICM-Anteil am Preispool liegt unter deinem Chipanteil. Das Vorzeichen allein sagt nicht, ob Aggression profitabel ist.",
+    diffUnit: "pp",
+    empty: "Stacks und Preisgelder müssen positiv sein. Ordne die Auszahlungen absteigend; gleiche Beträge sind erlaubt.",
   },
 
   pushfold: {
@@ -382,10 +383,10 @@ export const CALC_DICT_DE: CalcDict = {
       // ★브리프 §5 회灌: EN b3 끝의 조건절(「unless the blinds are about to eat it」)이 뒤의 목적절과 어긋나게 읽힌다
       //   → 조건절을 text 쪽으로 앞당기고 볼드는 술어로 끝내지 않는다(§3-B 「{b3}는 술어로 끝내지 마라」).
       keyPoint: {
-        text: "Der springende Punkt: {b1} – um 6,7 Punkte. Weil der Sieg nur das Preisgeld für Platz 1 bringt, gewinnt der Leader mit einem Coinflip weniger Preisgeldwert, als der Chipstand vermuten lässt. Auf der Bubble sollte der Leader also {b2}, während der Short Stack (13,3% Chips → 16,6% ICM) mehr wert ist als seine Chips: solange die Blinds ihn nicht gleich auffressen, sollte er {b3}, statt seinen Stack leichtfertig zu callen.",
+        text: "Die Tabelle zeigt: {b1}, um 6,7 Prozentpunkte. Das ist keine Call/Fold-Schwelle. Mittelstacks tragen oft die höchste Risikoprämie; ein Leader, der sie covert, kann {b2}, wenn die Ranges es erlauben. Short Stacks sollten {b3}. Entscheidend sind Stacks, Auszahlungen und Gegner, nicht das Vorzeichen allein.",
         b1: "der ICM-Wert des Chipleaders (33,3%) liegt unter seinem Chipanteil (40%)",
-        b2: "Druck auf die Short Stacks machen",
-        b3: "sich seine Spots aussuchen",
+        b2: "Druck auf Mittelstacks ausüben",
+        b3: "Calls sorgfältig wählen; ein Stack kurz vor dem Wegblinden ist eine Ausnahme",
       },
     },
     // ★2026-09-18 재조준 — 옛 예시(50/30/20 · $1.500 · 618/485/397)는 `lib/posts-de/holdem-icm.ts`
@@ -477,7 +478,7 @@ export const CALC_DICT_DE: CalcDict = {
         ["4", "Gutshot", "16,5%", "8,5%", "8,7%", "16% · 8%"],
         ["5", "Paar → Zwei Paare oder Drilling", "20,4%", "10,6%", "10,9%", "20% · 10%"],
         ["6", "Zwei Overcards", "24,1%", "12,8%", "13,0%", "24% · 12%"],
-        ["7", "Set → Full House oder Vierling", "27,8%", "14,9%", "15,2%", "28% · 14%"],
+        ["7", "–", "27,8%", "14,9%", "15,2%", "28% · 14%"],
         ["8", "Open-Ended Straßendraw", "31,5%", "17,0%", "17,4%", "32% · 16%"],
         ["9", "Flushdraw", "35,0%", "19,1%", "19,6%", "36% · 18%"],
         ["10", "Gutshot + zwei Overcards", "38,4%", "21,3%", "21,7%", "40% · 20%"],

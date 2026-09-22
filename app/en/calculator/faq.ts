@@ -45,11 +45,11 @@ export const CALCULATOR_FAQ_EN: { q: string; a: string }[] = [
   },
   {
     q: "How do I use the ICM calculator?",
-    a: "Enter the number of players, each player's chip stack, and the payout structure (1st–6th). The calculator instantly shows how much each stack is actually worth in prize money, next to what a chip chop would pay. For a call/fold decision, run it twice — once with the stacks you would have after winning, once after busting — and compare the average against your value if you just fold.",
+    a: "Enter the remaining players, positive stacks and payouts from highest to lowest (equal prizes are allowed). For a call/fold decision, calculate your value after each possible outcome — win, tie or loss — multiply each by its actual probability, and add them. Compare that weighted value with your value after folding, using the resulting stacks and remaining prizes in each scenario. If you bust, use the prize you actually receive, which may be zero on the bubble. This stack calculator does not supply the hand-outcome probabilities.",
   },
   {
     q: "What does the “ICM value” in this calculator mean?",
-    a: "Your real prize-money value: the share of the remaining prize pool your stack is expected to collect, given every player's chance of finishing in each place. It is not your chip share: with more than one place paid, doubling your chips never doubles your ICM value, which is why the chip leader's ICM value sits below their chip share.",
+    a: "The prize money your stack is expected to collect under ICM, given the stacks and payouts. It is a model value, not a guaranteed payment. With multiple paid places, chips generally have diminishing marginal prize value, so doubling your chips need not double your ICM value. The exact relationship depends on the payout structure and all remaining stacks.",
   },
   {
     q: "When should you use the ICM calculator?",
@@ -57,11 +57,11 @@ export const CALCULATOR_FAQ_EN: { q: string; a: string }[] = [
   },
   {
     q: "Is ICM the same as chip EV?",
-    a: "No. Chip EV counts chips; ICM counts prize money. A call can be profitable in chips yet lose prize equity, because busting costs you every payout you were still in line for. Near the bubble and at final tables the two diverge most, which is why ICM ranges are tighter than chip-EV ranges.",
+    a: "No. Chip EV counts chips; ICM counts expected prize money. A call can gain chips in expectation yet lose prize value, because losing removes your chance at higher payouts while doubling up does not usually double your prize value. Busting still pays any prize already secured. ICM often tightens all-in calling ranges, but the effect depends on stacks and payouts rather than applying to every action equally.",
   },
   {
     q: "I'm the chip leader — why is my ICM value lower than my chip share?",
-    a: "Because winning still pays only 1st-place money, not the whole prize pool, while busting costs you every payout below it. In the bubble example above the leader holds 40% of the chips but only 33.3% of the prize money, and the shortest stack is worth more than its chip share.",
+    a: "First place pays only its listed prize, not the whole pool, while smaller stacks still have a chance to collect the other prizes. In the bubble example above the leader holds 40% of the chips but 33.3% of the prize value, and the shortest stack's prize share is higher than its chip share. The difference describes that payout distribution; it is not itself a measure of a particular call's risk premium.",
   },
   {
     q: "How do I calculate an ICM (final-table) deal?",
@@ -73,6 +73,6 @@ export const CALCULATOR_FAQ_EN: { q: string; a: string }[] = [
   },
   {
     q: "Why should I fold more on the bubble?",
-    a: "On the bubble the prize money you lose by busting is larger than what you gain by winning, as the bubble example above shows, so a call that is profitable in chips can be losing in prize EV. Medium stacks — and short stacks that are not about to be blinded out — should avoid coin flips when calling off. The flip side is that everyone else is folding too, so open and re-shove wider as the aggressor even while you call tighter.",
+    a: "A chip-profitable call can lose prize value when elimination costs more than a double-up gains. Medium stacks often face the largest risk premium, especially when covered and smaller stacks can bust first. An extremely short stack about to be blinded out has less survival value to protect. Do not fold or shove by stack label alone: compare the actual ranges, coverage, payouts and probabilities. A covering stack can sometimes exploit tighter calling ranges, but wider aggression is not automatic.",
   },
 ];

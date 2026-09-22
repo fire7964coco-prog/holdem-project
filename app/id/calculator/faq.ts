@@ -64,11 +64,11 @@ export const CALCULATOR_FAQ_ID: { q: string; a: string }[] = [
   },
   {
     q: "Input apa saja yang dibutuhkan kalkulator ICM?",
-    a: "Masukkan jumlah pemain, stack chip tiap pemain, dan struktur pembayaran (posisi 1–6). Kalkulator langsung menunjukkan berapa nilai tiap stack dalam uang hadiah yang sebenarnya, bersebelahan dengan jumlah yang akan dibayar chip chop. Untuk keputusan call/fold, jalankan dua kali — sekali dengan stack Anda seandainya menang, sekali seandainya bust — lalu bandingkan rata-rata keduanya, ditimbang dengan peluang menang Anda, terhadap nilai Anda kalau fold saja.",
+    a: "Masukkan jumlah pemain, stack, dan hadiah untuk posisi 1–6. Untuk memilih call atau fold, kalikan nilai Anda setelah tiap hasil yang mungkin (menang, seri, atau kalah) dengan peluang sebenarnya, lalu bandingkan jumlahnya dengan nilai setelah fold. Saat bust, hitung hadiah yang benar-benar diterima, bukan otomatis nol.",
   },
   {
     q: "“Nilai ICM” di kalkulator ini maksudnya apa?",
-    a: "Nilai uang hadiah Anda yang sebenarnya: bagian dari sisa prize pool yang diperkirakan akan dikumpulkan stack Anda, dihitung dari peluang tiap pemain finis di tiap posisi. Itu bukan persentase chip Anda — saat lebih dari satu posisi dibayar, menggandakan chip tidak pernah menggandakan nilai ICM Anda.",
+    a: "Nilai ICM adalah perkiraan uang hadiah dari stack Anda berdasarkan peluang finis di setiap posisi. Nilai ini bukan hadiah yang dijamin dan tidak harus sama dengan bagian chip Anda.",
   },
   {
     q: "Kapan sebaiknya memakai kalkulator ICM?",
@@ -76,11 +76,11 @@ export const CALCULATOR_FAQ_ID: { q: string; a: string }[] = [
   },
   {
     q: "Apakah ICM sama saja dengan chip EV?",
-    a: "Tidak. Chip EV menghitung chip; ICM menghitung uang hadiah. Sebuah call bisa menguntungkan dalam chip tetapi merugikan equity hadiah, karena bust membuat Anda kehilangan seluruh pembayaran yang tadinya masih Anda antre. Menjelang bubble dan di meja final keduanya paling jauh menyimpang — itu sebabnya range ICM lebih ketat daripada range chip EV.",
+    a: "Chip EV menghitung chip; ICM menilai uang hadiah. Sebuah call bisa menghasilkan chip rata-rata tetapi kehilangan nilai hadiah yang diharapkan. Saat bust, hitung hadiah yang benar-benar diterima: hadiah yang sudah dijamin tidak hilang.",
   },
   {
     q: "Saya chip leader — kenapa nilai ICM saya lebih rendah daripada persentase chip saya?",
-    a: "Karena menang tetap hanya membayar hadiah juara 1, bukan seluruh prize pool, sementara bust membuat Anda kehilangan semua pembayaran di bawahnya. Dalam contoh bubble di atas, leader memegang 40% chip tetapi hanya 33,3% uang hadiah, dan stack terpendek justru bernilai lebih dari persentase chipnya.",
+    a: "Juara hanya mendapat hadiah pertama, bukan seluruh prize pool. Karena itu bagian hadiah leader bisa lebih kecil daripada bagian chipnya. Dalam contoh bubble, angkanya 40% chip dan 33,3% hadiah; ini bukan aturan untuk setiap struktur hadiah.",
   },
   {
     q: "Bagaimana cara menghitung ICM deal (deal meja final)?",
@@ -92,7 +92,7 @@ export const CALCULATOR_FAQ_ID: { q: string; a: string }[] = [
   },
   {
     q: "Kenapa saya harus lebih sering fold di bubble?",
-    a: "Di bubble, uang hadiah yang hilang saat Anda bust lebih besar daripada yang Anda dapat saat menang — seperti yang diperlihatkan contoh bubble di atas — jadi call yang menguntungkan dalam chip bisa merugi dalam EV hadiah. Stack menengah, dan short stack yang belum akan dihabisi blind, sebaiknya menghindari coin flip saat harus call all-in. Sisi sebaliknya: semua orang juga sedang lebih sering fold, jadi sebagai pihak yang agresif Anda boleh open dan re-shove lebih lebar — tapi itu terutama untuk chip leader dan stack terpendek; stack menengah justru yang paling banyak rugi kalau melebarkan re-shove-nya.",
+    a: "Call yang menguntungkan dalam chip bisa kehilangan nilai hadiah di bubble. Bandingkan nilai semua hasil, dibobot dengan peluang sebenarnya, terhadap nilai fold; tabel saja tidak melakukan perbandingan itu. Stack menengah sering menanggung risk premium terbesar; stack yang hampir dihabisi blind menjadi pengecualian. Memperlebar open atau re-shove bergantung pada siapa yang mencakup stack siapa dan range call lawan, bukan aturan otomatis.",
   },
   {
     // ★id 고유 1문항(EN 17 + 1) — 근거는 뱅크 §3·§4. 게이트 C항이 «EN 17 + 고유 1»까지만 허용한다.

@@ -298,7 +298,7 @@ export const CALC_DICT_PT: CalcDict = {
   icm: {
     introStrong: "O ICM (Independent Chip Model)",
     // 딜러 렌즈(EN): «mais de uma posição paga» 조건 + call/fold는 «ganhar vs bustar vs foldar» 비교. 🔴 라틴 문자라 선행 공백 유지(EN 타입 주석)
-    introRest: " converte as suas fichas de torneio no valor real delas em dinheiro de premiação. Quando mais de uma posição é paga, até o valor de ICM do chip leader fica abaixo da fatia de fichas dele, enquanto os short stacks valem mais do que a fatia deles. Para decidir entre pagar e foldar, calcule o seu valor de ICM nos dois cenários — ganhar a mão ou ser eliminado —, tire a média ponderada pela sua chance de ganhar e compare com o seu valor se foldar.",
+    introRest: " converte stacks de torneio em dinheiro de premiação esperado segundo o ICM. Para decidir entre pagar e foldar, multiplique o seu valor após cada resultado possível (vitória, empate ou derrota) pela probabilidade real desse resultado e compare a soma com o valor após foldar. Na eliminação, conte o prêmio realmente recebido, não zero automaticamente.",
     numPlayers: "Número de jogadores",
     paidPlaces: "Posições pagas",
     stacksTitle: "Stacks dos jogadores",
@@ -317,10 +317,11 @@ export const CALC_DICT_PT: CalcDict = {
     playerCell: "{medal} J{n}",
     diffPlus: "+dif.",
     // 딜러 렌즈(EN): 가장 타이트해야 하는 것은 숏스택이 아니라 미들스택 · 블라인드에 죽을 숏은 예외
-    diffPlusNote: "Valor de ICM acima da fatia de fichas → o seu risk premium é alto; os stacks médios são os que mais devem fechar o range. A exceção é um stack tão curto que os blinds vão engoli-lo: ele tem menos a proteger",
+    diffPlusNote: "Sua parte da premiação pelo ICM é maior que sua fatia de fichas. O sinal sozinho não diz se você deve pagar ou foldar.",
     diffMinus: "−dif.",
-    diffMinusNote: "Valor de ICM abaixo da fatia de fichas → a agressão do chip leader rende mais",
-    empty: "Defina stacks e prêmios acima de zero para ver o resultado do ICM.",
+    diffMinusNote: "Sua parte da premiação pelo ICM é menor que sua fatia de fichas. O sinal sozinho não diz se a agressão é lucrativa.",
+    diffUnit: "pp",
+    empty: "Use stacks e prêmios positivos, com os prêmios do maior para o menor; valores iguais são permitidos.",
   },
 
   pushfold: {
@@ -388,10 +389,10 @@ export const CALC_DICT_PT: CalcDict = {
       keyPoint: {
         // 딜러 렌즈(EN): «evitar calls de all-in» → 자리를 고른다 · 블라인드에 먹히기 직전은 예외.
         //   조건절은 text 쪽에(브리프 §3-B · EN b3 조건절 위치 문제를 피한 zh·es 구조).
-        text: "O ponto central: {b1} em 6,7 pontos. Como o máximo que o chip leader pode levar é o prêmio do 1º lugar, ele ganha menos valor em premiação num coin flip do que a contagem de fichas sugere. Por isso, na bolha, o chip leader deve {b2}, enquanto o short stack (13,3% das fichas → 16,6% de ICM) vale mais do que as próprias fichas e — a não ser que os blinds estejam prestes a engoli-lo — deve {b3}. É assim que ele protege esse valor de sobrevivência.",
+        text: "A tabela mostra que {b1}, por 6,7 pontos percentuais; isso não é um limite para pagar ou foldar. Os stacks médios costumam enfrentar o maior risk premium, então um líder que os cobre pode {b2} quando os ranges permitem. Os short stacks devem {b3}. A decisão depende de stacks, prêmios e adversários, não só do sinal da diferença.",
         b1: "o valor de ICM do chip leader (33,3%) fica abaixo da fatia de fichas dele (40%)",
-        b2: "pressionar os short stacks",
-        b3: "escolher bem os spots em vez de arriscar o torneio pagando all-ins",
+        b2: "pressionar os stacks médios",
+        b3: "escolher os calls com cuidado, com exceção dos stacks prestes a ser engolidos pelos blinds",
       },
     },
     deal: {
@@ -484,7 +485,7 @@ export const CALC_DICT_PT: CalcDict = {
         ["4", "Gutshot", "16,5%", "8,5%", "8,7%", "16% · 8%"],
         ["5", "Par → dois pares ou trinca", "20,4%", "10,6%", "10,9%", "20% · 10%"],
         ["6", "Duas overcards", "24,1%", "12,8%", "13,0%", "24% · 12%"],
-        ["7", "Set → full house ou quadra", "27,8%", "14,9%", "15,2%", "28% · 14%"],
+        ["7", "–", "27,8%", "14,9%", "15,2%", "28% · 14%"],
         ["8", "Sequência aberta", "31,5%", "17,0%", "17,4%", "32% · 16%"],
         ["9", "Flush draw", "35,0%", "19,1%", "19,6%", "36% · 18%"],
         ["10", "Gutshot + duas overcards", "38,4%", "21,3%", "21,7%", "40% · 20%"],

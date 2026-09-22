@@ -314,7 +314,7 @@ export const CALC_DICT_HI: CalcDict = {
 
   icm: {
     introStrong: "ICM (Independent Chip Model)",
-    introRest: " आपके tournament chips को असली prize money की कीमत में बदलने का तरीका है। एक से ज़्यादा स्थान को prize मिलता हो, तो chip leader की ICM value भी उसके chip share से कम होती है, जबकि short stacks की कीमत उनके chips से ज़्यादा होती है। Call/fold के फ़ैसले में जीतने के बाद और bust होने के बाद की अपनी ICM value की तुलना fold करने की value से करें।",
+    introRest: " tournament stacks को ICM के अनुसार अपेक्षित prize money में बदलता है। Call या fold तय करने के लिए हर संभावित नतीजे (जीत, tie या हार) के बाद की value को उसकी वास्तविक संभावना से गुणा करें और कुल की तुलना fold के बाद की value से करें। Bust होने पर वास्तव में मिलने वाला prize गिनें, अपने-आप शून्य नहीं।",
     numPlayers: "खिलाड़ियों की संख्या",
     paidPlaces: "Paid places (ITM)",
     stacksTitle: "खिलाड़ियों के chip stacks",
@@ -333,10 +333,11 @@ export const CALC_DICT_HI: CalcDict = {
     diffPlus: "+अंतर",
     // ★딜러 렌즈 — «short-stack बचाव ज़ोन, coin flip से बचें»는 틀렸다: risk premium이 가장 큰 쪽은 **중간 stack**이고,
     //   blind에 먹힐 만큼 짧은 stack은 예외다(EN 정본).
-    diffPlusNote: "ICM value chip share से ऊपर → आपका risk premium ऊँचा है; बीच वाले stacks को सबसे tight खेलना चाहिए। जो stack इतना छोटा है कि blinds उसे ख़त्म कर देंगे, वह अपवाद है — उसके पास बचाने को कम है",
+    diffPlusNote: "ICM के अनुसार prize pool में आपका हिस्सा आपके chip share से अधिक है। सिर्फ़ यह चिन्ह नहीं बताता कि call करना चाहिए या fold।",
     diffMinus: "−अंतर",
-    diffMinusNote: "ICM value chip share से नीचे → chip leader की तरह आक्रामक खेलना ज़्यादा फ़ायदा देता है",
-    empty: "ICM परिणाम देखने के लिए stacks और prizes शून्य से ऊपर रखें।",
+    diffMinusNote: "ICM के अनुसार prize pool में आपका हिस्सा आपके chip share से कम है। सिर्फ़ यह चिन्ह नहीं बताता कि आक्रामक खेलना फ़ायदेमंद है।",
+    diffUnit: "pp",
+    empty: "Stacks और prizes शून्य से अधिक रखें। Prizes बड़े से छोटे क्रम में हों; बराबर prizes भी स्वीकार हैं।",
   },
 
   pushfold: {
@@ -403,10 +404,10 @@ export const CALC_DICT_HI: CalcDict = {
       keyPoint: {
         // 🔴 शर्त वाला हिस्सा (blinds निगल जाने वाले) `text` में आगे रखा गया है, ताकि «survival value बचाने» वाले
         //    मक़सद से टकराकर न पढ़ा जाए (브리프 §5 · zh·ja가 푼 형).
-        text: "अहम बात: {b1}, यानी 6.7 अंक कम। जीतने पर भी सिर्फ़ पहले स्थान का prize मिलता है, इसलिए coin flip से leader को उतनी prize value नहीं मिलती जितनी chip count से लगती है। इसलिए bubble पर leader को {b2}, जबकि short stack (13.3% chips → 16.6% ICM) की कीमत उसके chips से ज़्यादा है — और जब तक blinds उसे ख़त्म करने ही वाले न हों, survival की इस कीमत को बचाने के लिए उसे {b3}।",
+        text: "तालिका दिखाती है कि {b1}, यानी 6.7 प्रतिशत अंक का अंतर; यह call/fold की सीमा नहीं है। बीच वाले stacks का risk premium अक्सर सबसे अधिक होता है, इसलिए उन्हें cover करने वाला leader {b2}, अगर ranges इसकी अनुमति दें। Short stacks को {b3}। फ़ैसला stacks, prizes और विरोधियों पर निर्भर है, सिर्फ़ अंतर के चिन्ह पर नहीं।",
         b1: "chip leader की ICM value (33.3%) उसके chip share (40%) से कम है",
-        b2: "short stacks पर दबाव बनाना चाहिए",
-        b3: "call करने के बजाय अपने स्पॉट चुनने चाहिए",
+        b2: "बीच वाले stacks पर दबाव डाल सकता है",
+        b3: "calls ध्यान से चुनने चाहिए; blinds से ख़त्म होने वाले बहुत छोटे stacks अपवाद हैं",
       },
     },
     deal: {
@@ -500,7 +501,7 @@ export const CALC_DICT_HI: CalcDict = {
         ["4", "Gutshot straight", "16.5%", "8.5%", "8.7%", "16% · 8%"],
         ["5", "Pair → two pair या trips", "20.4%", "10.6%", "10.9%", "20% · 10%"],
         ["6", "दो overcards", "24.1%", "12.8%", "13.0%", "24% · 12%"],
-        ["7", "Set → full house या quads", "27.8%", "14.9%", "15.2%", "28% · 14%"],
+        ["7", "–", "27.8%", "14.9%", "15.2%", "28% · 14%"],
         ["8", "Open-ended straight", "31.5%", "17.0%", "17.4%", "32% · 16%"],
         ["9", "Flush draw", "35.0%", "19.1%", "19.6%", "36% · 18%"],
         ["10", "Gutshot + दो overcards", "38.4%", "21.3%", "21.7%", "40% · 20%"],

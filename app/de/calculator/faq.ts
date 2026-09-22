@@ -59,11 +59,11 @@ export const CALCULATOR_FAQ_DE: { q: string; a: string }[] = [
   },
   {
     q: "Wie benutze ich den ICM-Rechner?",
-    a: "Gib die Anzahl der Spieler, den Chipstack jedes Spielers und die Auszahlungsstruktur (Platz 1–6) ein. Der Rechner zeigt sofort, wie viel jeder Stack tatsächlich in Preisgeld wert ist – daneben, was ein Chip Chop zahlen würde. Für eine Call/Fold-Entscheidung lässt du ihn zweimal laufen, einmal mit den Stacks nach einem Sieg und einmal nach dem Bust, und vergleichst den mit deiner Gewinnwahrscheinlichkeit gewichteten Mittelwert mit deinem Wert, wenn du einfach foldest.",
+    a: "Gib Spielerzahl, Stacks und die Auszahlungen für Platz 1–6 ein. Für Call oder Fold gewichtest du deinen Wert nach jedem möglichen Ausgang (Sieg, Split oder Niederlage) mit dessen tatsächlicher Wahrscheinlichkeit und vergleichst die Summe mit deinem Wert nach einem Fold. Bei einem Bust zählt das tatsächlich ausgezahlte Preisgeld, nicht automatisch null.",
   },
   {
     q: "Was bedeutet der „ICM-Wert“ in diesem Rechner?",
-    a: "Deinen echten Preisgeldwert: den Anteil am verbleibenden Preispool, den dein Stack im Schnitt einsammeln wird, gerechnet über die Chance jedes Spielers, auf jedem Platz zu landen. Das ist nicht dein Chipanteil: Sobald mehr als ein Platz bezahlt wird, verdoppelt doppeltes Chipvolumen nie deinen ICM-Wert – genau deshalb liegt der ICM-Wert des Chipleaders unter seinem Chipanteil.",
+    a: "Der ICM-Wert ist dein erwarteter Anteil am verbleibenden Preisgeld, berechnet aus den Wahrscheinlichkeiten der möglichen Platzierungen. Er ist kein garantierter Gewinn und muss nicht deinem Chipanteil entsprechen.",
   },
   {
     q: "Wann sollte man den ICM-Rechner benutzen?",
@@ -73,11 +73,11 @@ export const CALCULATOR_FAQ_DE: { q: string; a: string }[] = [
     // ★SEO 렌즈 09-18: 「Ist ICM dasselbe wie Chip-EV?」는 `holdem-icm` FAQ 「Was ist der Unterschied zwischen
     //   ICM und Chip EV?」 + H2 L107의 긍정/부정 반전형이었다 → «이 도구가 무엇을 세는가»로 튼다.
     q: "Rechnet dieser Rechner in Chips oder in Preisgeld?",
-    a: "In Preisgeld. Die Spalte „ICM-Wert“ gibt aus, was dein Stack im verbleibenden Preispool wert ist, nicht, wie viele Chips er umfasst – die Chipzahl steht zum Vergleich in der Spalte daneben. Deshalb kann ein Call, den du in Chips gewinnst, hier trotzdem als Verlust erscheinen: Ein Bust kostet dich jede Auszahlung, auf die du noch Anspruch hattest. Nahe der Bubble und an Final Tables laufen die beiden Spalten am weitesten auseinander.",
+    a: "ICM bewertet Preisgeld, Chip-EV dagegen Chips. Ein Call kann in Chips profitabel sein und trotzdem erwartetes Preisgeld verlieren. Bei einem Bust zählt das tatsächlich erhaltene Preisgeld; bereits gesicherte Auszahlungen verschwinden nicht.",
   },
   {
     q: "Ich bin Chipleader – warum liegt mein ICM-Wert unter meinem Chipanteil?",
-    a: "Weil der Sieg trotzdem nur das Preisgeld für Platz 1 bringt, nicht den ganzen Preispool, während dich ein Bust jede Auszahlung darunter kostet. Im Bubble-Beispiel oben hält der Leader 40% der Chips, aber nur 33,3% des Preisgeldes, und der kürzeste Stack ist mehr wert als sein Chipanteil.",
+    a: "Der Sieger erhält nur den ersten Preis, nicht den ganzen Preispool. Dadurch kann der Preisgeldanteil des Leaders kleiner als sein Chipanteil sein. Im Bubble-Beispiel sind es 40% der Chips und 33,3% des Preisgeldes. Das ist keine Regel für jede Auszahlungsstruktur.",
   },
   {
     q: "Wie berechne ich einen ICM-Deal am Final Table?",
@@ -95,7 +95,7 @@ export const CALCULATOR_FAQ_DE: { q: string; a: string }[] = [
     //   「Solltest du an der Bubble folden?」와 같은 의도였다(우리 쪽이 «왜»라 오히려 더 개념형) →
     //   «이 도구로 그걸 어떻게 보이나»로 튼다. 절차 축어는 FAQ 10이 갖고 여기서는 결과만 말한다.
     q: "Wie sehe ich im Rechner, dass ein Call an der Bubble verliert?",
-    a: "Gib den Spot zweimal ein – einmal mit den Stacks nach einem gewonnenen All-in, einmal mit deinem Stack auf null – und lies beide Male deinen „ICM-Wert“ ab. An der Bubble fällt der Verlust größer aus als der Gewinn, weil ein Bust dich jede Auszahlung kostet; deshalb kann ein Call, der in Chips profitabel ist, hier im Minus landen. Die Kehrseite steht nicht im Rechner: Weil alle anderen ebenfalls enger callen, bleiben deine eigenen Opens und Re-Shoves breit.",
+    a: "Ein Call kann an der Bubble in Chips gewinnen und trotzdem erwartetes Preisgeld kosten. Vergleiche die mit den tatsächlichen Wahrscheinlichkeiten gewichteten Werte aller Ausgänge mit dem Fold-Wert; die Tabelle allein zeigt diesen Vergleich nicht. Mittelstacks tragen oft die höchste Risikoprämie, während ein Stack kurz vor dem Wegblinden eine Ausnahme ist. Opens und Re-Shoves nur nach Stackabdeckung und gegnerischen Call-Ranges erweitern, nicht automatisch.",
   },
   {
     q: "Darf man am Pokertisch einen Rechner benutzen?",

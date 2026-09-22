@@ -48,11 +48,11 @@ export const CALCULATOR_FAQ_MS: { q: string; a: string }[] = [
     // ★끝문장 「Purata mentah…50%」는 EN·id·fr에 없는 ms 추가다 — EN의 «compare the average»는 승/버스트 단순 평균이라
     //   승률 50%를 가정한다(es 네이티브 렌즈 09-17 · 브리프 §5). 가중 서술 + 그 이유를 같이 적었다.
     q: "Bagaimanakah cara menggunakan kalkulator ICM?",
-    a: "Masukkan bilangan pemain, stack cip setiap pemain, dan struktur pembayaran (tempat 1–6). Kalkulator terus menunjukkan berapa nilai sebenar setiap stack dalam wang hadiah, bersebelahan dengan apa yang akan dibayar oleh chip chop. Untuk keputusan call/fold, jalankannya dua kali — sekali dengan stack anda selepas menang, sekali selepas bust — kemudian timbang kedua-dua nilai itu mengikut peluang anda menang dan kalah, dan bandingkan hasilnya dengan nilai anda jika anda sekadar fold. Purata mentah kedua-duanya mengandaikan peluang menang 50%.",
+    a: "Masukkan bilangan pemain, stack dan hadiah untuk tempat 1–6. Untuk memilih call atau fold, darab nilai anda selepas setiap hasil yang mungkin (menang, seri atau kalah) dengan kebarangkalian sebenarnya, kemudian bandingkan jumlahnya dengan nilai selepas fold. Apabila bust, kira hadiah yang benar-benar diterima, bukan secara automatik sifar.",
   },
   {
     q: "Apakah maksud “Nilai ICM” dalam kalkulator ini?",
-    a: "Nilai wang hadiah anda yang sebenar: bahagian baki prize pool yang dijangka dikutip oleh stack anda, mengambil kira peluang setiap pemain menamatkan permainan di setiap kedudukan. Ia bukan bahagian cip anda: apabila lebih daripada satu kedudukan dibayar, menggandakan cip anda tidak pernah menggandakan nilai ICM anda.",
+    a: "Nilai ICM ialah jangkaan wang hadiah bagi stack anda berdasarkan kebarangkalian menamatkan permainan di setiap kedudukan. Ia bukan hadiah terjamin dan tidak semestinya sama dengan bahagian cip anda.",
   },
   {
     q: "Bilakah saya patut menggunakan kalkulator ICM?",
@@ -60,11 +60,11 @@ export const CALCULATOR_FAQ_MS: { q: string; a: string }[] = [
   },
   {
     q: "Adakah ICM sama dengan chip EV?",
-    a: "Tidak. Chip EV mengira cip; ICM mengira wang hadiah. Satu call boleh menguntungkan dari segi cip tetapi merugikan equity hadiah, kerana bust menghilangkan setiap pembayaran yang masih dalam barisan anda. Berhampiran bubble dan di final table kedua-duanya paling jauh menyimpang, dan itulah sebabnya range ICM lebih ketat daripada range chip-EV.",
+    a: "Chip EV mengira cip; ICM menilai wang hadiah. Call boleh menambah cip secara purata tetapi mengurangkan jangkaan wang hadiah. Apabila bust, kira hadiah yang benar-benar diterima: hadiah yang sudah dijamin tidak hilang.",
   },
   {
     q: "Saya chip leader — mengapa nilai ICM saya lebih rendah daripada bahagian cip saya?",
-    a: "Kerana menang tetap hanya membayar wang tempat pertama, bukan keseluruhan prize pool, sementara bust menghilangkan setiap pembayaran di bawahnya. Dalam contoh bubble di atas, chip leader memegang 40% cip tetapi hanya 33.3% wang hadiah, dan stack terpendek pula bernilai lebih daripada bahagian cipnya.",
+    a: "Pemenang menerima hadiah pertama sahaja, bukan seluruh prize pool. Oleh itu, bahagian hadiah leader boleh lebih kecil daripada bahagian cipnya. Dalam contoh bubble, nilainya 40% cip dan 33.3% hadiah; ini bukan peraturan untuk setiap struktur hadiah.",
   },
   {
     q: "Bagaimanakah cara mengira deal ICM (final table)?",
@@ -78,7 +78,7 @@ export const CALCULATOR_FAQ_MS: { q: string; a: string }[] = [
     // ★re-shove를 open과 분리한 것은 ms 추가다 — EN 「open and re-shove wider as the aggressor」는 스택 구분이 없어
     //   중간 스택의 리슈브 확장을 권하게 된다(fr 딜러 렌즈 09-18 · 브리프 §5 fr ⓑ). id는 둘을 묶었다.
     q: "Mengapakah saya patut lebih banyak fold di bubble?",
-    a: "Di bubble, wang hadiah yang anda hilang apabila bust lebih besar daripada yang anda perolehi apabila menang, seperti yang ditunjukkan contoh bubble di atas, jadi call yang menguntungkan dari segi cip boleh merugikan dari segi EV hadiah. Stack sederhana — dan short stack yang belum hampir dihabiskan blind — patut mengelakkan coin flip apabila call all-in. Sebaliknya pula, semua orang lain pun sedang fold, jadi sebagai pihak yang menyerang anda boleh open lebih luas. Untuk re-shove, ini bergantung pada stack: chip leader dan stack yang sangat pendek boleh melebarkannya, tetapi stack sederhana yang melebar re-shove justeru rugi dari segi ICM, kerana ia yang paling banyak kehilangan apabila kalah.",
+    a: "Call yang menguntungkan dalam cip boleh merugikan jangkaan hadiah di bubble. Bandingkan nilai semua hasil, diberatkan dengan kebarangkalian sebenarnya, dengan nilai fold; jadual sahaja tidak membuat perbandingan ini. Stack sederhana sering menanggung risk premium tertinggi; stack yang hampir dihabiskan blind ialah pengecualian. Meluaskan open atau re-shove bergantung pada siapa meliputi stack siapa dan range call lawan, bukan peraturan automatik.",
   },
   {
     // ★ms 고유 1문항(EN 17 + 고유 1) — 근거 = TDA 2024 원문 `docs/sources/tda-2024-rules-v1.txt` Rule 5-D(도구·차트·타인의

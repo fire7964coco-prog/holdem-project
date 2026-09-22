@@ -574,7 +574,7 @@ function OutsCalc() {
         {cards.map(([k, val, lbl, ruleLbl]) => (
           <div key={String(k)} className={`rounded-xl p-4 border text-center transition-all ${stage===k ? "border-primary/60 bg-primary/5" : "border-border bg-card"}`}>
             <p className="text-xs text-muted-foreground mb-1">{String(lbl)}</p>
-            <p className="text-xs text-muted-foreground/60 mb-2">{String(ruleLbl)}</p>
+            <p className="text-xs text-muted-foreground/60 mb-2">{D.exact.trim()}</p>
             <p className={`text-3xl font-black ${pcolor(Number(val))}`}>{pf(Number(val))}</p>
           </div>
         ))}
@@ -902,7 +902,10 @@ function SPRCalc() {
   const D = dict.spr;
   const [stack, setStack] = useState(500);
   const [pot, setPot] = useState(100);
-  const spr = pot > 0 ? Math.round(stack / pot * 10) / 10 : 0;
+  const spr = pot > 0 ? stack / pot : 0;
+  // Classify the raw ratio. If display rounding crosses a boundary, show the bound honestly.
+  const displayBoundary = [4, 8, 15].find(n => spr < n && Math.round(spr * 10) / 10 >= n);
+  const sprDisplay = displayBoundary ? `< ${nd(displayBoundary)}` : nd(spr);
 
   const zoneKey = spr <= 0 ? null : spr < 4 ? "low" : spr < 8 ? "mid" : spr < 15 ? "high" : "deep";
   const zone = zoneKey ? { ...SPR_ZONE_STYLE[zoneKey], ...D.zones[zoneKey] } : null;
@@ -925,10 +928,10 @@ function SPRCalc() {
       <div className="rounded-2xl bg-card border border-border p-5">
         <p className="text-xs text-muted-foreground mb-1">{D.caption}</p>
         <div className="flex items-end gap-3">
-          <p className={`text-5xl sm:text-6xl font-black tabular-nums ${zone?.color || "text-foreground"}`}>{nd(spr)}</p>
+          <p className={`text-5xl sm:text-6xl font-black tabular-nums ${zone?.color || "text-foreground"}`}>{sprDisplay}</p>
           <p className="text-sm text-muted-foreground mb-2">{D.stackDivPot}</p>
         </div>
-        <p className="text-xs font-mono text-muted-foreground mt-1">{nf(stack)} ÷ {nf(pot)} = {nd(spr)}</p>
+        <p className="text-xs font-mono text-muted-foreground mt-1">{nf(stack)} ÷ {nf(pot)} {displayBoundary ? sprDisplay : `≈ ${sprDisplay}`}</p>
       </div>
 
       {zone && (
@@ -1109,7 +1112,7 @@ function ICMCalc() {
   const icmResult = useMemo(() => {
     const s = stacks.slice(0, numPlayers);
     const p = prizes.slice(0, numPrizes);
-    if (s.some(v => v <= 0) || p.some(v => v <= 0)) return null;
+    if (s.some(v => !Number.isFinite(v) || v <= 0) || p.some((v, i) => !Number.isFinite(v) || v <= 0 || (i > 0 && v > p[i - 1]))) return null;
     return computeICM(s, p);
   }, [stacks, numPlayers, prizes, numPrizes]);
 
@@ -1172,7 +1175,7 @@ function ICMCalc() {
           <div className="space-y-2">
             {Array.from({ length: numPlayers }, (_, i) => (
               <div key={i} className="flex items-center gap-2">
-                <span className="text-xs font-bold text-muted-foreground w-10 flex-shrink-0 text-center">{MEDALS[i]}</span>
+                <span className="text-xs font-bold text-muted-foreground w-10 flex-shrink-0 text-center">{fmtNodes(D.playerCell, { medal: "", n: i + 1 })}</span>
                 <button aria-label={fmt(D.decStack, { n: i + 1 })} onClick={() => updateStack(i, stacks[i] - 1000)}
                   className="w-8 h-8 rounded-md bg-background border border-border text-muted-foreground hover:border-primary/50 flex-shrink-0 text-xs font-bold">−</button>
                 <input
@@ -1239,15 +1242,15 @@ function ICMCalc() {
                   const diff = icmPct - chipPct;
                   return (
                     <tr key={i} className="border-b border-border/50 last:border-0 hover:bg-primary/5 transition-colors">
-                      <td className="px-3 py-2.5 font-bold text-foreground">{fmtNodes(D.playerCell, { medal: MEDALS[i], n: i+1 })}<span className="block sm:hidden text-[10px] font-mono font-normal text-muted-foreground mt-0.5">{nf(stacks[i])} · {pf(chipPct, 1)}</span></td>
+                      <td className="px-3 py-2.5 font-bold text-foreground">{fmtNodes(D.playerCell, { medal: "", n: i+1 })}<span className="block sm:hidden text-[10px] font-mono font-normal text-muted-foreground mt-0.5">{nf(stacks[i])} · {pf(chipPct, 1)}</span></td>
                       <td className="px-3 py-2.5 text-right font-mono text-muted-foreground hidden sm:table-cell">{nf(stacks[i])}</td>
                       <td className="px-3 py-2.5 text-right font-mono text-muted-foreground hidden sm:table-cell">{pf(chipPct, 1)}</td>
                       <td className="px-3 py-2.5 text-right font-mono font-bold text-primary">{nf(Math.round(equity))}</td>
-                      <td className="px-3 py-2.5 text-right font-mono">{pf(icmPct, 1)}</td>
+                      <td className="px-3 py-2.5 text-right font-mono text-foreground">{pf(icmPct, 1)}</td>
                       {/* ★2026-09-17 chip chop = chip share × remaining prize pool — optional column (dict.icm.th.chop) */}
                       {D.th.chop && <td className="px-3 py-2.5 text-right font-mono text-muted-foreground">{nf(Math.round((stacks[i] / totalChips) * totalPrize))}</td>}
-                      <td className={`px-3 py-2.5 text-right font-mono font-bold ${diff > 0.1 ? "text-green-400" : diff < -0.1 ? "text-red-400" : "text-muted-foreground"}`}>
-                        {diff > 0 ? "+" : ""}{pf(diff, 1)}
+                      <td className={`px-3 py-2.5 text-right font-mono font-bold whitespace-nowrap ${diff > 0.1 ? "text-green-400" : diff < -0.1 ? "text-red-400" : "text-muted-foreground"}`}>
+                        {diff > 0 ? "+" : ""}{nd(diff, 1)} {D.diffUnit}
                       </td>
                     </tr>
                   );

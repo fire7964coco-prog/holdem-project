@@ -320,7 +320,7 @@ export const CALC_DICT_FR: CalcDict = {
   icm: {
     introStrong: "L'ICM (Independent Chip Model)",
     // 🔴 EN 09-17 개정문 — 옛 문장은 «table finale et bulle에 쓰라»로 끝나 «어떻게»가 없었다.
-    introRest: " convertit tes jetons de tournoi en valeur réelle, en argent. Dès que plus d'une place est payée, même le chip leader a une valeur ICM inférieure à sa part de jetons, alors que les petits tapis valent plus que la leur. Pour une décision suivre / se coucher, compare la moyenne de tes valeurs ICM après une victoire et après une élimination, pondérée par ta probabilité de gagner le coup, avec ta valeur si tu te couches.",
+    introRest: " convertit les tapis de tournoi en gains attendus selon l’ICM. Pour suivre ou se coucher, pondère ta valeur après chaque issue possible (victoire, partage ou défaite) par sa probabilité réelle, puis compare la somme à ta valeur après un fold. En cas d’élimination, compte le gain réellement reçu, pas automatiquement zéro.",
     numPlayers: "Nombre de joueurs",
     paidPlaces: "Places payées",
     stacksTitle: "Tapis des joueurs",
@@ -342,10 +342,11 @@ export const CALC_DICT_FR: CalcDict = {
     diffPlus: "+écart",
     // 🔴 EN 09-17 정정: «petit tapis 보호 구역»이라는 옛 문장은 틀렸다 — 리스크 프리미엄이 가장 높은 것은 «중간 스택»이고,
     //    블라인드에 먹힐 만큼 짧은 스택은 오히려 예외다.
-    diffPlusNote: "Valeur ICM au-dessus de la part de jetons → ta prime de risque est élevée ; ce sont les tapis moyens qui doivent être les plus serrés. Le tapis assez court pour être mangé par les blindes fait exception — il a moins à protéger",
+    diffPlusNote: "Ta part des gains selon l’ICM dépasse ta part de jetons. Le signe seul ne dit pas si tu dois suivre ou te coucher.",
     diffMinus: "−écart",
-    diffMinusNote: "Valeur ICM en dessous de la part de jetons → l'agression du chip leader rapporte davantage",
-    empty: "Renseigne des tapis et des gains supérieurs à zéro pour voir le résultat ICM.",
+    diffMinusNote: "Ta part des gains selon l’ICM est inférieure à ta part de jetons. Le signe seul ne dit pas si l’agression est rentable.",
+    diffUnit: "pp",
+    empty: "Saisis des tapis et des gains positifs, avec les gains du plus élevé au plus faible ; les montants égaux sont acceptés.",
   },
 
   pushfold: {
@@ -415,10 +416,10 @@ export const CALC_DICT_FR: CalcDict = {
       keyPoint: {
         // 🔴 EN 09-17 개정: b3의 «단, 블라인드에 먹히기 직전이면 얘기가 다르다» 조건절을 «text» 쪽으로 옮겼다
         //    (zh 2차 교열 렌즈 — 볼드 조각이 조건절로 끝나면 뒤의 목적절과 어긋나게 읽힌다 · 브리프 §3-B).
-        text: "Le point clé : {b1} de 6,7 points. Comme gagner ne rapporte que le prix de la 1re place, le leader gagne moins de valeur en gains sur un coin flip que ne le suggère son nombre de jetons. À la bulle, le leader doit donc {b2}, tandis que le petit tapis (13,3 % des jetons → 16,6 % ICM) vaut plus que ses jetons et doit {b3} pour protéger cette valeur de survie — sauf si les blindes sont sur le point de l'avaler.",
+        text: "Le tableau montre que {b1}, de 6,7 points de pourcentage ; ce n’est pas un seuil pour suivre ou se coucher. Les tapis moyens subissent souvent la plus forte prime de risque : un leader qui les couvre peut {b2} si les ranges le permettent. Les petits tapis doivent {b3}. La décision dépend des tapis, des gains et des adversaires, pas du signe seul.",
         b1: "la valeur ICM du chip leader (33,3 %) est inférieure à sa part de jetons (40 %)",
-        b2: "mettre la pression sur les petits tapis",
-        b3: "choisir ses spots plutôt que payer un tapis",
+        b2: "mettre la pression sur les tapis moyens",
+        b3: "choisir leurs calls avec soin, sauf s’ils sont sur le point d’être absorbés par les blindes",
       },
     },
     deal: {
@@ -510,7 +511,7 @@ export const CALC_DICT_FR: CalcDict = {
         ["4", "Quinte ventrale", "16,5 %", "8,5 %", "8,7 %", "16 % · 8 %"],
         ["5", "Paire → double paire ou brelan", "20,4 %", "10,6 %", "10,9 %", "20 % · 10 %"],
         ["6", "Deux overcards", "24,1 %", "12,8 %", "13,0 %", "24 % · 12 %"],
-        ["7", "Brelan → full ou carré", "27,8 %", "14,9 %", "15,2 %", "28 % · 14 %"],
+        ["7", "–", "27,8 %", "14,9 %", "15,2 %", "28 % · 14 %"],
         ["8", "Quinte bilatérale", "31,5 %", "17,0 %", "17,4 %", "32 % · 16 %"],
         ["9", "Tirage couleur", "35,0 %", "19,1 %", "19,6 %", "36 % · 18 %"],
         ["10", "Ventrale + deux overcards", "38,4 %", "21,3 %", "21,7 %", "40 % · 20 %"],

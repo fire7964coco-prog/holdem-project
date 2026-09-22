@@ -286,7 +286,7 @@ export const CALC_DICT_MS: CalcDict = {
 
   icm: {
     introStrong: "ICM (Independent Chip Model)",
-    introRest: " menukar cip kejohanan anda kepada nilai wang hadiah yang sebenar. Apabila lebih daripada satu kedudukan dibayar, nilai ICM chip leader pun lebih rendah daripada bahagian cipnya, manakala short stack bernilai lebih daripada bahagiannya. Untuk keputusan call/fold, bandingkan nilai ICM anda selepas menang dan selepas bust dengan nilai anda jika anda fold.",
+    introRest: " menukar stack kejohanan kepada jangkaan wang hadiah mengikut ICM. Untuk memilih call atau fold, darab nilai anda selepas setiap hasil yang mungkin (menang, seri atau kalah) dengan kebarangkalian sebenarnya, kemudian bandingkan jumlahnya dengan nilai selepas fold. Apabila bust, kira hadiah yang benar-benar diterima, bukan secara automatik sifar.",
     numPlayers: "Bilangan pemain",
     paidPlaces: "Kedudukan yang dibayar",
     stacksTitle: "Stack cip pemain",
@@ -303,10 +303,11 @@ export const CALC_DICT_MS: CalcDict = {
     th: { player: "Pemain", chips: "Cip", chipPct: "Cip %", icmValue: "Nilai ICM", icmPct: "ICM %", diff: "Beza", chop: "Chip chop" },
     playerCell: "{medal} P{n}",
     diffPlus: "+beza",
-    diffPlusNote: "Nilai ICM melebihi bahagian cip → risk premium anda tinggi; stack sederhanalah yang patut paling ketat. Stack yang sudah cukup pendek untuk dihabiskan blind ialah pengecualian — ia kurang mempunyai perkara yang perlu dilindungi",
+    diffPlusNote: "Bahagian prize pool anda mengikut ICM lebih tinggi daripada bahagian cip anda. Tanda perbezaan sahaja tidak menentukan sama ada anda patut call atau fold.",
     diffMinus: "−beza",
-    diffMinusNote: "Nilai ICM di bawah bahagian cip → tekanan agresif chip leader lebih berbaloi",
-    empty: "Tetapkan stack dan hadiah melebihi sifar untuk melihat hasil ICM.",
+    diffMinusNote: "Bahagian prize pool anda mengikut ICM lebih rendah daripada bahagian cip anda. Tanda perbezaan sahaja tidak menentukan sama ada agresi menguntungkan.",
+    diffUnit: "pp",
+    empty: "Gunakan stack dan hadiah positif, dengan hadiah disusun daripada tertinggi ke terendah; hadiah sama dibenarkan.",
   },
 
   pushfold: {
@@ -372,10 +373,10 @@ export const CALC_DICT_MS: CalcDict = {
       ],
       // ★2026-09-19 조건절을 text로 앞당겼다 — EN은 b3 끝에 「unless the blinds…」가 붙어 뒤의 목적절과 어긋난다(브리프 §5).
       keyPoint: {
-        text: "Perkara utama: {b1} sebanyak 6.7 mata peratusan. Kerana menang hanya membayar wang tempat pertama, nilai hadiah yang diperoleh chip leader daripada satu coin flip lebih kecil daripada yang dicadangkan oleh bilangan cipnya. Jadi di bubble, chip leader patut {b2}, manakala short stack (13.3% cip → 16.6% ICM) bernilai lebih daripada cipnya dan patut {b3} untuk melindungi nilai survival itu — melainkan blind sudah hampir menghabiskan stack itu.",
+        text: "Jadual menunjukkan {b1}, dengan perbezaan 6.7 mata peratusan; ini bukan ambang call/fold. Stack sederhana sering menanggung risk premium tertinggi, jadi leader yang meliputi stack mereka boleh {b2} jika range membenarkannya. Short stack patut {b3}. Keputusan bergantung pada stack, hadiah dan lawan, bukan tanda perbezaan sahaja.",
         b1: "nilai ICM chip leader (33.3%) lebih rendah daripada bahagian cipnya (40%)",
-        b2: "menekan short stack",
-        b3: "memilih spotnya dan bukan call all-in sembarangan",
+        b2: "menekan stack sederhana",
+        b3: "memilih call dengan teliti, kecuali stack yang hampir dihabiskan blind",
       },
     },
     deal: {
@@ -464,7 +465,7 @@ export const CALC_DICT_MS: CalcDict = {
         ["4", "Gutshot straight", "16.5%", "8.5%", "8.7%", "16% · 8%"],
         ["5", "Pair → two pair atau trips", "20.4%", "10.6%", "10.9%", "20% · 10%"],
         ["6", "Dua overcard", "24.1%", "12.8%", "13.0%", "24% · 12%"],
-        ["7", "Set → full house atau quads", "27.8%", "14.9%", "15.2%", "28% · 14%"],
+        ["7", "–", "27.8%", "14.9%", "15.2%", "28% · 14%"],
         ["8", "Open-ended straight", "31.5%", "17.0%", "17.4%", "32% · 16%"],
         ["9", "Flush draw", "35.0%", "19.1%", "19.6%", "36% · 18%"],
         ["10", "Gutshot + dua overcard", "38.4%", "21.3%", "21.7%", "40% · 20%"],

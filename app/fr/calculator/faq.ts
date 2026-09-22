@@ -66,11 +66,11 @@ export const CALCULATOR_FAQ_FR: { q: string; a: string }[] = [
   },
   {
     q: "Comment utiliser le calculateur ICM ?",
-    a: "Saisis le nombre de joueurs, le tapis de chacun et la structure des gains (1re à 6e place). Le calculateur montre aussitôt ce que chaque tapis vaut réellement en argent, à côté de ce que paierait un chip chop. Pour une décision suivre / se coucher, lance-le deux fois — une fois avec les tapis que tu aurais après avoir gagné, une fois après avoir sauté — puis compare la moyenne de ces deux valeurs, pondérée par ta probabilité de gagner le coup, à ta valeur si tu te couches.",
+    a: "Saisis le nombre de joueurs, les tapis et les gains des places 1–6. Pour suivre ou se coucher, pondère ta valeur après chaque issue possible (victoire, partage ou défaite) par sa probabilité réelle, puis compare la somme à ta valeur après un fold. En cas d’élimination, compte le gain réellement reçu, pas automatiquement zéro.",
   },
   {
     q: "Que veut dire la « Valeur ICM » affichée par ce calculateur ?",
-    a: "Ta valeur réelle en gains : la part des gains restants que ton tapis peut espérer encaisser, compte tenu de la probabilité qu'a chaque joueur de finir à chaque place. Ce n'est pas ta part de jetons : dès que plus d'une place est payée, doubler tes jetons ne double jamais ta valeur ICM — c'est pour ça que la valeur ICM du chip leader passe sous sa part de jetons.",
+    a: "La valeur ICM est le gain attendu de ton tapis, calculé selon les probabilités de finir à chaque place. Ce n’est ni un gain garanti ni nécessairement ta part de jetons.",
   },
   {
     q: "Quand faut-il se servir du calculateur ICM ?",
@@ -78,11 +78,11 @@ export const CALCULATOR_FAQ_FR: { q: string; a: string }[] = [
   },
   {
     q: "L'ICM, est-ce la même chose que l'EV en jetons ?",
-    a: "Non. L'EV en jetons compte des jetons, l'ICM compte de l'argent. Un call peut être rentable en jetons et pourtant perdre de l'équité en gains, parce que sauter te coûte tous les paliers de paiement auxquels tu pouvais encore prétendre. C'est près de la bulle et en table finale que les deux divergent le plus — et c'est pourquoi les ranges ICM sont plus serrées que les ranges en EV jetons.",
+    a: "L’EV en jetons compte les jetons ; l’ICM évalue les gains. Un call peut gagner des jetons en moyenne et perdre de la valeur attendue en argent. À l’élimination, compte le gain réellement reçu : les gains déjà assurés ne disparaissent pas.",
   },
   {
     q: "Je suis chip leader — pourquoi ma valeur ICM est-elle inférieure à ma part de jetons ?",
-    a: "Parce que gagner ne rapporte toujours que le prix de la 1re place, pas la totalité des gains, alors que sauter te coûte tous les paliers en dessous. Dans l'exemple de bulle ci-dessus, le leader détient 40 % des jetons mais seulement 33,3 % de l'argent, et le plus petit tapis vaut plus que sa part de jetons.",
+    a: "La victoire paie le premier prix, pas tous les gains. La part du leader en gains peut donc être inférieure à sa part de jetons. Dans l’exemple de bulle, il a 40 % des jetons et 33,3 % des gains ; ce n’est pas une règle valable pour toute structure.",
   },
   {
     q: "Comment calculer un deal ICM en table finale ?",
@@ -94,7 +94,7 @@ export const CALCULATOR_FAQ_FR: { q: string; a: string }[] = [
   },
   {
     q: "Pourquoi faut-il se coucher davantage à la bulle ?",
-    a: "À la bulle, l'argent que tu perds en sautant est plus grand que ce que tu gagnes en remportant le coup, comme le montre l'exemple de bulle ci-dessus : un call rentable en jetons peut être perdant en EV gains. Les tapis moyens — et les petits tapis qui ne sont pas sur le point d'être mangés par les blindes — doivent éviter les coin flips quand ils paient un tapis. Le revers, c'est que tout le monde se couche aussi : en tant qu'agresseur, ouvre et re-shove plus large même si tu paies plus serré.",
+    a: "À la bulle, un call rentable en jetons peut perdre des gains attendus. Compare les valeurs de toutes les issues, pondérées par leurs probabilités réelles, à la valeur du fold ; le tableau seul ne fait pas cette comparaison. Les tapis moyens subissent souvent la plus forte prime de risque ; un tapis sur le point d’être absorbé par les blindes fait exception. Élargir les opens ou les re-shoves dépend de qui couvre qui et des ranges de call adverses, jamais d’une règle automatique.",
   },
   {
     q: "Peut-on utiliser un calculateur de poker à la table ?",

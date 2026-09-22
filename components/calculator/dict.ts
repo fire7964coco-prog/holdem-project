@@ -236,6 +236,8 @@ export type CalcDict = {
     diffPlusNote: string;
     diffMinus: string;
     diffMinusNote: string;
+    /** Percentage-point unit, not a percent change. */
+    diffUnit: string;
     empty: string;
   };
 
@@ -643,7 +645,7 @@ export const CALC_DICT_EN: CalcDict = {
 
   icm: {
     introStrong: "ICM (Independent Chip Model)",
-    introRest: " converts your tournament chips into real prize-money value. With more than one place paid, even the chip leader's ICM value is lower than their chip share, while short stacks are worth more than theirs. For a call/fold decision, compare your ICM value after winning and after busting with your value if you fold.",
+    introRest: " converts tournament stacks into expected prize money under ICM. For a call/fold decision, weight your value after each possible outcome (win, tie or loss) by its actual probability, then compare that sum with your value after folding. A bust-out is worth the payout actually received, not automatically zero.",
     numPlayers: "Number of players",
     paidPlaces: "Paid places",
     stacksTitle: "Player chip stacks",
@@ -660,10 +662,11 @@ export const CALC_DICT_EN: CalcDict = {
     th: { player: "Player", chips: "Chips", chipPct: "Chip %", icmValue: "ICM value", icmPct: "ICM %", diff: "Diff", chop: "Chip chop" },
     playerCell: "{medal} P{n}",
     diffPlus: "+diff",
-    diffPlusNote: "ICM value above chip share → your risk premium is high; the medium stacks should be tightest. A stack short enough to be blinded out is the exception — it has less to protect",
+    diffPlusNote: "Your share of the prize pool under ICM is higher than your chip share. The sign alone does not tell you whether to call or fold.",
     diffMinus: "−diff",
-    diffMinusNote: "ICM value below chip share → the chip leader's aggression pays off more",
-    empty: "Set stacks and prizes above zero to see the ICM result.",
+    diffMinusNote: "Your share of the prize pool under ICM is lower than your chip share. The sign alone does not tell you whether aggression is profitable.",
+    diffUnit: "pp",
+    empty: "Use positive stacks and prizes, with payouts ordered highest to lowest (equal payouts are allowed).",
   },
 
   pushfold: {
@@ -728,10 +731,10 @@ export const CALC_DICT_EN: CalcDict = {
         { player: "4th (short stack)", chip: "13.3%", icm: "16.6%", diff: "+3.3pts", up: true },
       ],
       keyPoint: {
-        text: "The key point: {b1} by 6.7 points. Because winning only pays 1st-place money, the leader gains less prize value from a coin flip than the chip count suggests. So on the bubble the leader should {b2}, while the short stack (13.3% chips → 16.6% ICM) is worth more than its chips and should {b3} to protect that survival value.",
+        text: "The table shows {b1} by 6.7 percentage points; this is not a call/fold threshold. Medium stacks often face the greatest risk premium, so a covering leader can {b2} when their ranges allow it. Short stacks should {b3}. Decisions depend on stacks, payouts and opponents, not the sign of the difference alone.",
         b1: "the chip leader's ICM value (33.3%) is lower than their chip share (40%)",
-        b2: "apply pressure to short stacks",
-        b3: "pick its spots rather than call off — unless the blinds are about to eat it",
+        b2: "pressure medium stacks",
+        b3: "choose calls carefully, with an exception for stacks about to be blinded out",
       },
     },
     deal: {
@@ -819,7 +822,7 @@ export const CALC_DICT_EN: CalcDict = {
         ["4", "Gutshot straight", "16.5%", "8.5%", "8.7%", "16% · 8%"],
         ["5", "Pair → two pair or trips", "20.4%", "10.6%", "10.9%", "20% · 10%"],
         ["6", "Two overcards", "24.1%", "12.8%", "13.0%", "24% · 12%"],
-        ["7", "Set → full house or quads", "27.8%", "14.9%", "15.2%", "28% · 14%"],
+        ["7", "–", "27.8%", "14.9%", "15.2%", "28% · 14%"],
         ["8", "Open-ended straight", "31.5%", "17.0%", "17.4%", "32% · 16%"],
         ["9", "Flush draw", "35.0%", "19.1%", "19.6%", "36% · 18%"],
         ["10", "Gutshot + two overcards", "38.4%", "21.3%", "21.7%", "40% · 20%"],
