@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Faire tapis, c'est miser tous les jetons que tu as devant toi. Tu ne peux gagner de chaque adversaire que ce que tu as suivi (le pot principal) ; les jetons en trop des gros tapis forment un side pot auquel tu n'as pas droit. Un tapis inférieur à une relance complète NE rouvre PAS les enchères pour ceux qui ont déjà parlé.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-21",
+  updated: "2026-09-22",
   masterUpdated: "2026-08-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -236,31 +236,31 @@ Le tapis est le coup le plus puissant de la table. Il force les adversaires à u
 
 **Q. Peut-on faire tapis pour moins que la grosse blinde ?**
 
-A. R. Oui. S'il te reste moins de jetons que la grosse blinde, tu es automatiquement à tapis pour ce que tu as quand c'est ton tour de la poster. Les autres joueurs paient quand même la grosse blinde complète — tout ce qui dépasse ta contribution part dans un side pot.
+A. Oui. S'il te reste moins de jetons que la grosse blinde, tu es automatiquement à tapis pour ce que tu as quand c'est ton tour de la poster. Les autres joueurs paient quand même la grosse blinde complète — tout ce qui dépasse ta contribution part dans un side pot.
 
 **Q. Que se passe-t-il si tu gagnes le tapis mais perds le side pot ?**
 
-A. R. Tu empoches le pot principal (ce que tu as suivi de chaque joueur) et l'autre joueur empoche le side pot. Chacun gagne la part à laquelle il avait droit.
+A. Tu empoches le pot principal (ce que tu as suivi de chaque joueur) et l'autre joueur empoche le side pot. Chacun gagne la part à laquelle il avait droit.
 
 **Q. Faire tapis oblige-t-il à montrer sa main ?**
 
-A. R. En tournoi, oui — dès que les enchères sont closes avec un tapis, toutes les mains impliquées sont mises face visible. En cash live, les règles normales de l'abattage s'appliquent : le dernier agresseur montre en premier, puis les autres montrent ou jettent leurs cartes.
+A. En tournoi, oui — dès que les enchères sont closes avec un tapis, toutes les mains impliquées sont mises face visible. En cash live, les règles normales de l'abattage s'appliquent : le dernier agresseur montre en premier, puis les autres montrent ou jettent leurs cartes.
 
 **Q. Peut-on faire un « run it twice » sur un tapis au poker ?**
 
-A. R. Distribuer deux fois les cartes communes restantes et partager le pot (run it twice) est autorisé dans beaucoup de cash games si les deux joueurs sont d'accord après le tapis. En tournoi, c'est en général interdit. Il faut se mettre d'accord avant de dérouler les cartes qui restent.
+A. Distribuer deux fois les cartes communes restantes et partager le pot (run it twice) est autorisé dans beaucoup de cash games si les deux joueurs sont d'accord après le tapis. En tournoi, c'est en général interdit. Il faut se mettre d'accord avant de dérouler les cartes qui restent.
 
 **Q. En quoi consiste exactement la règle du « table stakes » ?**
 
-A. R. Le table stakes signifie que tu ne peux miser que les jetons que tu avais devant toi au début du coup. Tu ne peux pas ajouter d'argent une fois le coup en cours. Ça protège les deux camps : on ne peut jamais te forcer à risquer plus que ton tapis, et l'adversaire ne peut pas miser d'un coup plus que ce que tu peux couvrir.
+A. Le table stakes signifie que tu ne peux miser que les jetons que tu avais devant toi au début du coup. Tu ne peux pas ajouter d'argent une fois le coup en cours. Ça protège les deux camps : on ne peut jamais te forcer à risquer plus que ton tapis, et l'adversaire ne peut pas miser d'un coup plus que ce que tu peux couvrir.
 
 **Q. Si deux joueurs font tapis pour des montants différents, qui montre en premier ?**
 
-A. R. Le dernier tapis qui était une mise ou une relance constitue la dernière action agressive et montre en premier. Un tapis qui ne fait que suivre pour moins n'est pas agressif — en cash, c'est alors le miseur initial qui montre en premier. ==r:En tournoi, il n'y a tout simplement pas d'ordre d'abattage ici== : dès que les enchères du tapis sont terminées, toutes les mains impliquées sont retournées en même temps (Règle 16 de la TDA). En cash, si c'était un tapis suivi sans autre action, celui qui a suivi peut jeter ses cartes s'il perd après avoir vu la main du joueur à tapis (en tournoi, toutes les mains impliquées restent face visible).
+A. Le dernier tapis qui était une mise ou une relance constitue la dernière action agressive et montre en premier. Un tapis qui ne fait que suivre pour moins n'est pas agressif — en cash, c'est alors le miseur initial qui montre en premier. ==r:En tournoi, il n'y a tout simplement pas d'ordre d'abattage ici== : dès que les enchères du tapis sont terminées, toutes les mains impliquées sont retournées en même temps (Règle 16 de la TDA). En cash, si c'était un tapis suivi sans autre action, celui qui a suivi peut jeter ses cartes s'il perd après avoir vu la main du joueur à tapis (en tournoi, toutes les mains impliquées restent face visible).
 
 **Q. Les règles du tapis sont-elles différentes en tournoi et en cash ?**
 
-A. R. Le cœur est le même, avec deux différences pratiques. Un : en tournoi, toutes les mains impliquées dans un tapis sont mises face visible dès que les enchères sont closes (Règle 16 de la TDA) — tu ne peux pas jeter tes cartes avant l'abattage. En cash, l'ordre normal de l'abattage s'applique et tu peux le faire. Deux : le run it twice est courant en cash (si les deux joueurs acceptent) mais généralement interdit en tournoi.
+A. Le cœur est le même, avec deux différences pratiques. Un : en tournoi, toutes les mains impliquées dans un tapis sont mises face visible dès que les enchères sont closes (Règle 16 de la TDA) — tu ne peux pas jeter tes cartes avant l'abattage. En cash, l'ordre normal de l'abattage s'applique et tu peux le faire. Deux : le run it twice est courant en cash (si les deux joueurs acceptent) mais généralement interdit en tournoi.
 
 ---
 
