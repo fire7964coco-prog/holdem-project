@@ -2,10 +2,10 @@ import type { Post } from "../posts";
 
 export const POST: Post = {
   slug: "wsop-2026-tournament-guide",
-  seoTitle: "Un joyero de Cancún, US$449.067 y el brazalete: la WSOP 2026",
+  seoTitle: "Un joyero de Cancún, US$449,067 y el brazalete: la WSOP 2026",
   title: "WSOP 2026 — guía completa: los brazaletes latinos, la visa desde México y cómo inscribirse",
-  desc: "Ganó Lucas Jumalon (US$10.000.000); el mejor hispanohablante, Antonio Galiana, 12.º. Brazaletes hispanos, visa desde México y cómo clasificar desde US$0,50.",
-  tldr: "El Main Event de la 57.ª WSOP se resolvió el 5 de agosto: ganó Lucas Jumalon, estadounidense de 22 años, por US$10.000.000. El mejor clasificado de habla hispana fue Antonio Galiana (España) en el puesto 12.º, con US$510.000 — no hubo hispanohablantes en la mesa final. La serie dejó 251.899 entradas —récord histórico— y US$469.975.059 repartidos en 35.157 puestos pagados, con tres brazaletes hispanohablantes: Ciro González (México, US$449.067), Adrian Mateos (España, US$4.334.411) y Juan Rodriguez (Perú, según la crónica oficial; US$673.011). Ojo con el papeleo: México no está en el Visa Waiver Program, así que con pasaporte mexicano hace falta visa y el ESTA no aplica.",
+  desc: "Ganó Lucas Jumalon (US$10,000,000); el mejor hispanohablante, Antonio Galiana, 12.º. Brazaletes hispanos, visa desde México y cómo clasificar desde US$0.50.",
+  tldr: "El Main Event de la 57.ª WSOP se resolvió el 5 de agosto: ganó Lucas Jumalon, estadounidense de 22 años, por US$10,000,000. El mejor clasificado de habla hispana fue Antonio Galiana (España) en el puesto 12.º, con US$510,000 — no hubo hispanohablantes en la mesa final. La serie dejó 251,899 entradas —récord histórico— y US$469,975,059 repartidos en 35,157 puestos pagados, con tres brazaletes hispanohablantes: Ciro González (México, US$449,067), Adrian Mateos (España, US$4,334,411) y Juan Rodriguez (Perú, según la crónica oficial; US$673,011). Ojo con el papeleo: México no está en el Visa Waiver Program, así que con pasaporte mexicano hace falta visa y el ESTA no aplica.",
   category: "tournament",
   date: "2026-06-16",
   updated: "2026-09-16",
@@ -14,7 +14,7 @@ export const POST: Post = {
   readTime: "12 min",
   emoji: "🏆",
   image: "/images/wsop-2026-tournament-guide-hero.webp",
-  imageAlt: "Tarjeta resumen de la WSOP 2026 en Las Vegas: 251.899 entradas, 100 eventos de brazalete y un pozo de US$85,6 millones en el Main Event",
+  imageAlt: "Tarjeta resumen de la WSOP 2026 en Las Vegas: 251,899 entradas, 100 eventos de brazalete y un pozo de US$85.6 millones en el Main Event",
   tags: [
     "WSOP 2026",
     "brazalete WSOP mexicano",
@@ -28,9 +28,9 @@ export const POST: Post = {
     "impuestos premios póker México",
   ],
   content: `
-Ciro González viajó a Las Vegas con un amigo para celebrar sus 60 años. El plan era jugar el Evento #61, el $1.000 Super Seniors, y poco más. Cayó en el Día 2.
+Ciro González viajó a Las Vegas con un amigo para celebrar sus 60 años. El plan era jugar el Evento #61, el $1,000 Super Seniors, y poco más. Cayó en el Día 2.
 
-Su amigo insistió en que se inscribiera en otro torneo, el Evento #65: $1.500 Freezeout No-Limit Hold'em. ==g:Se llevó US$449.067 y un brazalete.== Joyero, de Cancún, y hasta esa semana ==r:jamás había cobrado una cifra de cinco dígitos==.
+Su amigo insistió en que se inscribiera en otro torneo, el Evento #65: $1,500 Freezeout No-Limit Hold'em. ==g:Se llevó US$449,067 y un brazalete.== Joyero, de Cancún, y hasta esa semana ==r:jamás había cobrado una cifra de cinco dígitos==.
 
 Esa es, para nosotros, la portada de la 57.ª World Series of Poker. Y no fue la única historia hispana del verano.
 
@@ -39,36 +39,36 @@ Esa es, para nosotros, la portada de la 57.ª World Series of Poker. Y no fue la
 ---
 
 > **Respuesta rápida**
-> Los eventos de brazalete de la 57.ª WSOP se jugaron del ==**26 de mayo al 15 de julio de 2026**== en el Horseshoe y el Paris de Las Vegas, y la mesa final del Main Event se disputó tres semanas después, del 3 al 5 de agosto. ==**251.899 entradas**== (récord histórico) y ==**US$469.975.059**== repartidos en 35.157 puestos pagados. Tres brazaletes hispanohablantes: ==g:Ciro González (México), Adrian Mateos (España) y Juan Rodriguez (Perú, según la crónica oficial)==. El Main Event lo ganó ==**Lucas Jumalon**== el ==**5 de agosto**== (US$10.000.000) y el mejor de habla hispana fue ==r:**Antonio Galiana (España), 12.º**==. ==r:Con pasaporte mexicano necesitas visa: México no está en el Visa Waiver Program.==
+> Los eventos de brazalete de la 57.ª WSOP se jugaron del ==**26 de mayo al 15 de julio de 2026**== en el Horseshoe y el Paris de Las Vegas, y la mesa final del Main Event se disputó tres semanas después, del 3 al 5 de agosto. ==**251,899 entradas**== (récord histórico) y ==**US$469,975,059**== repartidos en 35,157 puestos pagados. Tres brazaletes hispanohablantes: ==g:Ciro González (México), Adrian Mateos (España) y Juan Rodriguez (Perú, según la crónica oficial)==. El Main Event lo ganó ==**Lucas Jumalon**== el ==**5 de agosto**== (US$10,000,000) y el mejor de habla hispana fue ==r:**Antonio Galiana (España), 12.º**==. ==r:Con pasaporte mexicano necesitas visa: México no está en el Visa Waiver Program.==
 
 ---
 
 ## México suma una página dorada: el brazalete de Ciro González
 
-El Evento #65 ($1.500 Freezeout No-Limit Hold'em) juntó ==**2.617 entradas**== y un pozo de premios de ==**US$3.474.067**==. Freezeout: sin recompras, una bala y a casa.
+El Evento #65 ($1,500 Freezeout No-Limit Hold'em) juntó ==**2,617 entradas**== y un pozo de premios de ==**US$3,474,067**==. Freezeout: sin recompras, una bala y a casa.
 
-González llegó a la mesa final y se llevó el primer brazalete de su carrera, además de ==g:US$449.067==. Según **Poker Noticias**, es ==**el sexto brazalete en la historia de México**==.
+González llegó a la mesa final y se llevó el primer brazalete de su carrera, además de ==g:US$449,067==. Según **Poker Noticias**, es ==**el sexto brazalete en la historia de México**==.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Puesto | Jugador | País | Premio |
 |:---:|:---|:---|---:|
-| ==**1.º**== | ==g:**Ciro González**== | ==g:**México**== | ==g:**US$449.067**== |
-| 2.º | Kyle Lin | EE. UU. | US$299.218 |
-| 4.º | **Octavio Borra** | **Argentina** | US$163.838 |
-| 9.º | **Leonardo Alves** | **Brasil** | US$42.801 |
+| ==**1.º**== | ==g:**Ciro González**== | ==g:**México**== | ==g:**US$449,067**== |
+| 2.º | Kyle Lin | EE. UU. | US$299,218 |
+| 4.º | **Octavio Borra** | **Argentina** | US$163,838 |
+| 9.º | **Leonardo Alves** | **Brasil** | US$42,801 |
 
 </div>
 
-Tres banderas de La Armada Latina en la misma mesa final — México arriba, Argentina en el cuarto puesto y Brasil abriendo el reparto. No es un dato menor: en un field de 2.617 entradas, llegar a las últimas nueve sillas ya es un logro estadístico enorme, y ahí es donde el [ICM](/es/blog/holdem-icm "thumb:/images/holdem-icm-hero.webp") empieza a mandar más que las cartas.
+Tres banderas de La Armada Latina en la misma mesa final — México arriba, Argentina en el cuarto puesto y Brasil abriendo el reparto. No es un dato menor: en un field de 2,617 entradas, llegar a las últimas nueve sillas ya es un logro estadístico enorme, y ahí es donde el [ICM](/es/blog/holdem-icm "thumb:/images/holdem-icm-hero.webp") empieza a mandar más que las cartas.
 
 ---
 
 ## Mateos entra en el club de los seis, y lo hace más joven que nadie
 
-La otra gran historia hispana del verano llevó el Evento #41: $250.000 Super High Roller No-Limit Hold'em. Solo ==**56 entradas**== y un pozo de premios de ==**US$13.720.000**==.
+La otra gran historia hispana del verano llevó el Evento #41: $250,000 Super High Roller No-Limit Hold'em. Solo ==**56 entradas**== y un pozo de premios de ==**US$13,720,000**==.
 
-**Adrian Mateos**, jugador del Winamax Team Pro, se llevó ==g:US$4.334.411== y su ==**sexto brazalete**==. Es ==g:**el jugador más joven de la historia en llegar a seis**==.
+**Adrian Mateos**, jugador del Winamax Team Pro, se llevó ==g:US$4,334,411== y su ==**sexto brazalete**==. Es ==g:**el jugador más joven de la historia en llegar a seis**==.
 
 Basta con leer la mesa final para entender el tamaño del asunto:
 
@@ -76,22 +76,22 @@ Basta con leer la mesa final para entender el tamaño del asunto:
 
 | Puesto | Jugador | Premio |
 |:---:|:---|---:|
-| ==**1.º**== | ==g:**Adrian Mateos**== | ==g:**US$4.334.411**== |
-| 2.º | Bryn Kenney | US$2.776.634 |
-| 3.º | David Einhorn | US$1.862.941 |
-| 4.º | Sean Winter | US$1.312.037 |
-| 5.º | Jason Koon | US$972.375 |
-| 8.º | Phil Ivey | US$553.270 |
+| ==**1.º**== | ==g:**Adrian Mateos**== | ==g:**US$4,334,411**== |
+| 2.º | Bryn Kenney | US$2,776,634 |
+| 3.º | David Einhorn | US$1,862,941 |
+| 4.º | Sean Winter | US$1,312,037 |
+| 5.º | Jason Koon | US$972,375 |
+| 8.º | Phil Ivey | US$553,270 |
 
 </div>
 
-Dejó atrás a **Phil Ivey**, a **Jason Koon**, a **Sean Winter** y a **David Einhorn**, y cerró el mano a mano contra **Bryn Kenney**. ==r:No hay campo más duro en toda la serie que un Super High Roller de US$250.000==, y ahí es donde Mateos firmó el sexto.
+Dejó atrás a **Phil Ivey**, a **Jason Koon**, a **Sean Winter** y a **David Einhorn**, y cerró el mano a mano contra **Bryn Kenney**. ==r:No hay campo más duro en toda la serie que un Super High Roller de US$250,000==, y ahí es donde Mateos firmó el sexto.
 
 ---
 
 ## Un tercer brazalete hispano: Juan Rodriguez en el Seniors High Roller
 
-**Juan Rodriguez** ganó el Evento #39: $5.000 Seniors High Roller No-Limit Hold'em, por ==g:US$673.011==. La crónica oficial de la WSOP lo presenta como peruano, pero en la tabla de resultados de la misma web aparece con país «Argentina». Sea de donde sea, el brazalete se lo llevó un jugador de habla hispana.
+**Juan Rodriguez** ganó el Evento #39: $5,000 Seniors High Roller No-Limit Hold'em, por ==g:US$673,011==. La crónica oficial de la WSOP lo presenta como peruano, pero en la tabla de resultados de la misma web aparece con país «Argentina». Sea de donde sea, el brazalete se lo llevó un jugador de habla hispana.
 
 Con él se cierra la cuenta del verano: ==**tres brazaletes hispanohablantes en 2026**==, los de Ciro González (México), Adrian Mateos (España) y Juan Rodriguez.
 
@@ -99,9 +99,9 @@ Con él se cierra la cuenta del verano: ==**tres brazaletes hispanohablantes en 
 
 | Evento | Campeón | País | Premio |
 |:---|:---|:---|---:|
-| #41 — $250.000 Super High Roller NLH | Adrian Mateos | España | ==g:US$4.334.411== |
-| #39 — $5.000 Seniors High Roller NLH | Juan Rodriguez | Perú o Argentina (ver arriba) | ==g:US$673.011== |
-| #65 — $1.500 Freezeout NLH | Ciro González | México | ==g:US$449.067== |
+| #41 — $250,000 Super High Roller NLH | Adrian Mateos | España | ==g:US$4,334,411== |
+| #39 — $5,000 Seniors High Roller NLH | Juan Rodriguez | Perú o Argentina (ver arriba) | ==g:US$673,011== |
+| #65 — $1,500 Freezeout NLH | Ciro González | México | ==g:US$449,067== |
 
 </div>
 
@@ -119,32 +119,32 @@ La serie se jugó entre el **Horseshoe Las Vegas** y el **Paris Las Vegas**, con
 | Fechas | ==**26 mayo – 15 julio 2026**== |
 | Sedes | Horseshoe Las Vegas + Paris Las Vegas |
 | Eventos | 100 (**los 100 brazaletes entregados**) |
-| Entradas totales | ==g:**251.899**== (récord histórico) |
-| Premios repartidos | ==**US$469.975.059**== |
-| Puestos pagados | **35.157** |
-| Récord de premios | ==r:sigue siendo 2025: **US$481.761.879**== |
-| Evento con más gente | #63 $1.000 Mystery Millions — ==**22.811 entradas**== |
-| Ladies Championship | 1.475 entradas |
+| Entradas totales | ==g:**251,899**== (récord histórico) |
+| Premios repartidos | ==**US$469,975,059**== |
+| Puestos pagados | **35,157** |
+| Récord de premios | ==r:sigue siendo 2025: **US$481,761,879**== |
+| Evento con más gente | #63 $1,000 Mystery Millions — ==**22,811 entradas**== |
+| Ladies Championship | 1,475 entradas |
 
 </div>
 
-Fíjate en el matiz, porque es el titular que casi todo el mundo se come: ==**la WSOP 2026 batió el récord de entradas, no el de dinero repartido**==. Las 251.899 entradas son la marca más alta de la historia, pero los US$469.975.059 se quedaron por debajo de los US$481.761.879 de 2025. Más gente, más torneos baratos, más volumen — y aun así el pico de premios sigue en el año anterior.
+Fíjate en el matiz, porque es el titular que casi todo el mundo se come: ==**la WSOP 2026 batió el récord de entradas, no el de dinero repartido**==. Las 251,899 entradas son la marca más alta de la historia, pero los US$469,975,059 se quedaron por debajo de los US$481,761,879 de 2025. Más gente, más torneos baratos, más volumen — y aun así el pico de premios sigue en el año anterior.
 
 ---
 
 ## Un Main Event con 111 países y casi cuatro de cada diez jugadores de fuera
 
-El Evento #82, el **$10.000 No-Limit Hold'em World Championship**, reunió ==**9.208 entradas**== y un pozo de premios de ==g:**US$85.634.400**==.
+El Evento #82, el **$10,000 No-Limit Hold'em World Championship**, reunió ==**9,208 entradas**== y un pozo de premios de ==g:**US$85,634,400**==.
 
 ![Calendario de los vuelos del Día 1 del Main Event de la WSOP 2026, del 2 al 5 de julio, con las horas de inicio de cada jornada de salida](/images/wsop-2026-main-event-schedule.webp "Los vuelos del Día 1 del Main Event 2026 se repartieron entre el 2 y el 5 de julio")
 
-Los **vuelos** del Día 1 se repartieron entre el **2 y el 5 de julio**. Y el dato que más nos interesa desde este lado del mapa: ==**111 países representados, récord de la historia del torneo**==, con ==g:**3.574 jugadores no estadounidenses (38,8 %)**==.
+Los **vuelos** del Día 1 se repartieron entre el **2 y el 5 de julio**. Y el dato que más nos interesa desde este lado del mapa: ==**111 países representados, récord de la historia del torneo**==, con ==g:**3,574 jugadores no estadounidenses (38.8 %)**==.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | # | País | Entradas |
 |:---:|:---|---:|
-| 1 | EE. UU. | 5.634 |
+| 1 | EE. UU. | 5,634 |
 | 2 | Canadá | 371 |
 | 3 | Reino Unido | 356 |
 | 4 | Francia | 296 |
@@ -161,7 +161,7 @@ Los **vuelos** del Día 1 se repartieron entre el **2 y el 5 de julio**. Y el da
 
 ### La estructura, en corto
 
-- Stack inicial: ==**60.000**== fichas
+- Stack inicial: ==**60,000**== fichas
 - Niveles de ==**120 minutos**==
 - ==r:**Freezeout**== — no hay recompras
 - Edad mínima: ==**21 años**==
@@ -170,25 +170,25 @@ Si vas a jugar un torneo con niveles de dos horas, conviene tener el [ranking de
 
 ## ¿Quién ganó el Main Event de la WSOP 2026?
 
-**Lo ganó Lucas Jumalon, estadounidense de 22 años, por US$10.000.000.** La mesa final se jugó del 3 al 5 de agosto y se resolvió el día 5. Ahí se entregó el brazalete número 100 de la serie.
+**Lo ganó Lucas Jumalon, estadounidense de 22 años, por US$10,000,000.** La mesa final se jugó del 3 al 5 de agosto y se resolvió el día 5. Ahí se entregó el brazalete número 100 de la serie.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Puesto | Jugador | País | Premio |
 |:---:|:---|:---|---:|
-| 🏆 1.º | ==**Lucas Jumalon**== | EE. UU. | ==g:**US$10.000.000**== |
-| 2.º | Lauri Saaskilahti | Finlandia | US$6.000.000 |
-| 3.º | Gregor Mueller | Canadá | US$3.750.000 |
-| 4.º | Michael Gagliano | EE. UU. | US$2.750.000 |
-| 5.º | Hanming Feng | EE. UU. | US$2.250.000 |
-| 6.º | Rami Hammoud | Canadá | US$1.750.000 |
-| 7.º | Jamie Shaevel | EE. UU. | US$1.500.000 |
-| 8.º | Mario Boos | Francia | US$1.250.000 |
-| 9.º | Evagoras Evagorou | Chipre | ==**US$1.000.000**== |
+| 🏆 1.º | ==**Lucas Jumalon**== | EE. UU. | ==g:**US$10,000,000**== |
+| 2.º | Lauri Saaskilahti | Finlandia | US$6,000,000 |
+| 3.º | Gregor Mueller | Canadá | US$3,750,000 |
+| 4.º | Michael Gagliano | EE. UU. | US$2,750,000 |
+| 5.º | Hanming Feng | EE. UU. | US$2,250,000 |
+| 6.º | Rami Hammoud | Canadá | US$1,750,000 |
+| 7.º | Jamie Shaevel | EE. UU. | US$1,500,000 |
+| 8.º | Mario Boos | Francia | US$1,250,000 |
+| 9.º | Evagoras Evagorou | Chipre | ==**US$1,000,000**== |
 
 </div>
 
-**Sin hispanohablantes en la mesa final.** Revisamos directamente la columna *Country* de los puestos 1 al 50 en la página oficial de resultados: el mejor clasificado de habla hispana fue ==g:**Antonio Galiana (España), 12.º, con US$510.000**==. Ni México, ni Brasil, ni ningún país sudamericano aparece entre los 50 primeros (fecha de consulta: 6 de agosto de 2026; de los puestos 51 en adelante no revisamos país por país).
+**Sin hispanohablantes en la mesa final.** Revisamos directamente la columna *Country* de los puestos 1 al 50 en la página oficial de resultados: el mejor clasificado de habla hispana fue ==g:**Antonio Galiana (España), 12.º, con US$510,000**==. Ni México, ni Brasil, ni ningún país sudamericano aparece entre los 50 primeros (fecha de consulta: 6 de agosto de 2026; de los puestos 51 en adelante no revisamos país por país).
 
 Duele un poco leerlo junto al conteo de entradas de arriba: Brasil metió 172 jugadores y España 148, y ninguno de los dos puso una bandera en la mesa final. Galiana se quedó a tres puestos de las últimas nueve sillas. El torneo se sigue decidiendo donde hay más volumen.
 
@@ -234,7 +234,7 @@ Lo mismo aplica a ==r:**Argentina, Brasil, Colombia y Perú**==: tampoco están 
 
 ### Si te toca ESTA (Chile, España)
 
-- Coste: ==**US$40,27**==
+- Coste: ==**US$40.27**==
 - Estancia de hasta **90 días**
 - Hace falta pasaporte de un país del VWP
 - Se paga con MasterCard, VISA, American Express, Discover (solo las marcas JCB y Diners Club) o PayPal
@@ -274,7 +274,7 @@ El listado completo de documentos y el paso a paso del registro los tienes en [c
 
 ---
 
-## Dos cuentas, una fila y un tope de US$10.000: cómo se inscribe uno en el Horseshoe
+## Dos cuentas, una fila y un tope de US$10,000: cómo se inscribe uno en el Horseshoe
 
 Aquí es donde se atasca el que llega por primera vez. Si buscas el procedimiento completo, está en [cómo entrar al WSOP](/es/blog/como-entrar-al-wsop); lo que sigue es el resumen y, sobre todo, las cifras de comisión que suelen pillar por sorpresa. El reglamento pide ==**dos cuentas**==, no una:
 
@@ -291,20 +291,20 @@ Llega una hora antes, pero solo la primera vez | La organización recomienda ese
 
 | Método | Límite / condición | ¿Para no residentes? |
 |:---|:---|:---:|
-| Tarjeta de crédito | ==r:**2 %** de comisión== · máx. US$10.000 por transacción | ✅ |
+| Tarjeta de crédito | ==r:**2 %** de comisión== · máx. US$10,000 por transacción | ✅ |
 | ==g:**Tarjeta de débito**== | ==g:**sin comisión**== · mismo tope por transacción | ✅ |
 | PayPal | ==r:**2 %** de comisión== (igual que el crédito) | ✅ |
 | **Luxon Pay** | — | ✅ |
 | ACH | ==r:solo residentes en EE. UU.== | ❌ |
-| Transferencia bancaria | desde **US$100.000**, con aprobación previa | ✅ |
+| Transferencia bancaria | desde **US$100,000**, con aprobación previa | ✅ |
 | Cheque de caja | con aprobación previa | ✅ |
 | Cuenta de torneo (TA) | se abre en el Paris con efectivo o fichas | ✅ |
 
 </div>
 
-Haz la cuenta del Main Event: la entrada de US$10.000 con **tarjeta de crédito o PayPal** lleva un **2 % de comisión**, así que ==r:**salen US$10.200**==. Con ==g:**tarjeta de débito no hay comisión**==: US$10.000 exactos. Es la diferencia más barata de este artículo — US$200 por elegir bien el plástico. 🪶 Un detalle: las tarjetas de débito llevan **límite diario de consumo** puesto por tu banco, así que un cargo único de US$10.000 puede rebotar. Súbelo antes de viajar.
+Haz la cuenta del Main Event: la entrada de US$10,000 con **tarjeta de crédito o PayPal** lleva un **2 % de comisión**, así que ==r:**salen US$10,200**==. Con ==g:**tarjeta de débito no hay comisión**==: US$10,000 exactos. Es la diferencia más barata de este artículo — US$200 por elegir bien el plástico. 🪶 Un detalle: las tarjetas de débito llevan **límite diario de consumo** puesto por tu banco, así que un cargo único de US$10,000 puede rebotar. Súbelo antes de viajar.
 
-Y el tope de US$10.000 por transacción ==g:**se mide sobre el buy-in del evento, no sobre lo que acabas pagando**==: el reglamento pone de ejemplo que con una misma tarjeta puedes inscribirte al Main Event de US$10.000 **y además** al Monster Stack de US$1.500, pero no a un evento de US$50.000. Es decir, el 2 % no te deja fuera del tope. ⚠️ **La página de inscripción sigue publicando «3 %»** — aquí manda el reglamento de la temporada, pero él mismo avisa de que las comisiones pueden cambiar: mira el importe final en la pantalla de pago.
+Y el tope de US$10,000 por transacción ==g:**se mide sobre el buy-in del evento, no sobre lo que acabas pagando**==: el reglamento pone de ejemplo que con una misma tarjeta puedes inscribirte al Main Event de US$10,000 **y además** al Monster Stack de US$1,500, pero no a un evento de US$50,000. Es decir, el 2 % no te deja fuera del tope. ⚠️ **La página de inscripción sigue publicando «3 %»** — aquí manda el reglamento de la temporada, pero él mismo avisa de que las comisiones pueden cambiar: mira el importe final en la pantalla de pago.
 
 Tres reglas más que cuestan disgustos:
 
@@ -346,26 +346,26 @@ Y el detalle que quita el miedo escénico: ==g:**no hace falta cantar tu mano en
 
 ---
 
-## De US$0,50 al Main Event: la escalera de clasificatorios
+## De US$0.50 al Main Event: la escalera de clasificatorios
 
 La propia web de la WSOP lo anuncia así: ==g:**"Qualify for as Little as $0.50"**==. El socio online oficial a nivel internacional es **GGPoker**, y el camino es una escalera de pasos.
 
-![Escalera de clasificatorios de GGPoker para la WSOP 2026, desde el paso gratuito y el de US$0,50 hasta el Bracelet Pass de US$10.000](/images/wsop-2026-ggpoker-satellite.webp "La escalera de satélites de GGPoker: de US$0,50 al Bracelet Pass de US$10.000")
+![Escalera de clasificatorios de GGPoker para la WSOP 2026, desde el paso gratuito y el de US$0.50 hasta el Bracelet Pass de US$10,000](/images/wsop-2026-ggpoker-satellite.webp "La escalera de satélites de GGPoker: de US$0.50 al Bracelet Pass de US$10,000")
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Paso | Formato | Entrada |
 |:---|:---|:---:|
 | Step 0 | Gratis, entrando cada día | ==g:**US$0**== |
-| Step 1 | SNG de 4 jugadores, all-in or fold | **US$0,50** |
+| Step 1 | SNG de 4 jugadores, all-in or fold | **US$0.50** |
 | Step 2 | Spin & Gold | **US$2** |
 | Step 3 | Target Stack Turbo | **US$10** |
 | Step 4 | MTT normal | **US$150** |
-| Premio | ==**Bracelet Pass**== | ==g:**US$10.000**== |
+| Premio | ==**Bracelet Pass**== | ==g:**US$10,000**== |
 
 </div>
 
-También hay atajos: se puede entrar **directo al Step 4 por US$150**, o pasar por el **Bracelet Step de US$1.000** o el **Super Step de US$2.500**.
+También hay atajos: se puede entrar **directo al Step 4 por US$150**, o pasar por el **Bracelet Step de US$1,000** o el **Super Step de US$2,500**.
 
 > ⚠️ ==r:El número de plazas cambia cada temporada.== Consúltalo en la web oficial antes de sentarte a grindear la escalera.
 
@@ -377,14 +377,14 @@ Si ya estás en Las Vegas, la otra vía es el satélite en vivo:
 
 | Satélite | Entrada | Hora | Stack objetivo |
 |:---|:---:|:---|:---:|
-| Turbo Landmark (escalón) | US$150 | 8:00 | 100.000 |
-| Landmark Satellite | US$585 | 10:00 y 16:00 | 200.000 |
-| Turbo Satellite (2–7 de julio) | US$1.100 | 8:00 | 150.000 |
-| Landmark Satellite | US$2.200 | 19:00 | 100.000 |
+| Turbo Landmark (escalón) | US$150 | 8:00 | 100,000 |
+| Landmark Satellite | US$585 | 10:00 y 16:00 | 200,000 |
+| Turbo Satellite (2–7 de julio) | US$1,100 | 8:00 | 150,000 |
+| Landmark Satellite | US$2,200 | 19:00 | 100,000 |
 
 </div>
 
-En los de US$585, US$1.100 y US$2.200, al alcanzar el stack objetivo eliges: ==g:**asiento en un evento de US$10.000 (por ejemplo, el Main Event) o US$10.000 en fichas**==. La segunda opción existe, y en más casos de los que parece es la buena — solo ten en cuenta que, según las reglas de los satélites, cobrar en efectivo más de US$5.000 (ya descontada la entrada) se reporta al fisco, y si no vives en EE. UU. conviene saber cuánto te retienen antes de elegir. El Turbo de US$150 es solo un escalón: lo que ganas al llegar al objetivo es **la entrada a un satélite de US$1.100 del Main Event**, no el asiento de US$10.000.
+En los de US$585, US$1,100 y US$2,200, al alcanzar el stack objetivo eliges: ==g:**asiento en un evento de US$10,000 (por ejemplo, el Main Event) o US$10,000 en fichas**==. La segunda opción existe, y en más casos de los que parece es la buena — solo ten en cuenta que, según las reglas de los satélites, cobrar en efectivo más de US$5,000 (ya descontada la entrada) se reporta al fisco, y si no vives en EE. UU. conviene saber cuánto te retienen antes de elegir. El Turbo de US$150 es solo un escalón: lo que ganas al llegar al objetivo es **la entrada a un satélite de US$1,100 del Main Event**, no el asiento de US$10,000.
 
 ---
 
@@ -421,7 +421,7 @@ A. Sí. El reglamento oficial acepta ==g:"Consular ID or Matrícula Consular Car
 
 **Q. ¿Cuánto cuesta de verdad inscribirse al Main Event con tarjeta?**
 
-A. Depende del plástico. Con **tarjeta de crédito o PayPal** la casa cobra un **2 %**, así que son ==r:**US$10.200**== (la página de inscripción todavía dice 3 %: revisa el monto final en la pantalla de pago); con ==g:**tarjeta de débito no hay comisión**== y pagas US$10.000 exactos. Hay un tope de **US$10.000 por transacción**, medido sobre el buy-in del evento y no sobre el total cobrado — el reglamento pone de ejemplo que una misma tarjeta cubre el Main Event de US$10.000 **y** el Monster Stack de US$1.500, pero no un evento de US$50.000. Y ==r:no aceptan tarjetas virtuales ni digitales==: el nombre de la tarjeta debe coincidir con el de tu documento.
+A. Depende del plástico. Con **tarjeta de crédito o PayPal** la casa cobra un **2 %**, así que son ==r:**US$10,200**== (la página de inscripción todavía dice 3 %: revisa el monto final en la pantalla de pago); con ==g:**tarjeta de débito no hay comisión**== y pagas US$10,000 exactos. Hay un tope de **US$10,000 por transacción**, medido sobre el buy-in del evento y no sobre el total cobrado — el reglamento pone de ejemplo que una misma tarjeta cubre el Main Event de US$10,000 **y** el Monster Stack de US$1,500, pero no un evento de US$50,000. Y ==r:no aceptan tarjetas virtuales ni digitales==: el nombre de la tarjeta debe coincidir con el de tu documento.
 
 **Q. No hablo inglés. ¿Puedo jugar igual?**
 
@@ -429,7 +429,7 @@ A. Sí. Mientras hay manos en juego solo se habla inglés en las mesas, pero el 
 
 **Q. ¿Cuál es la vía más barata para llegar al Main Event?**
 
-A. La escalera de GGPoker, que arranca en un ==g:Step 0 gratuito== (entrando cada día) y sigue con pasos de US$0,50, US$2, US$10 y US$150 hasta el **Bracelet Pass de US$10.000**. Y si ya estás en Las Vegas, los satélites presenciales del 1 al 7 de julio, desde US$150 (ese primero es un escalón hacia el satélite de US$1.100).
+A. La escalera de GGPoker, que arranca en un ==g:Step 0 gratuito== (entrando cada día) y sigue con pasos de US$0.50, US$2, US$10 y US$150 hasta el **Bracelet Pass de US$10,000**. Y si ya estás en Las Vegas, los satélites presenciales del 1 al 7 de julio, desde US$150 (ese primero es un escalón hacia el satélite de US$1,100).
 
 **Q. ¿Dónde se puede ver la WSOP ahora que PokerGO no emite en directo?**
 
@@ -439,7 +439,7 @@ A. ==g:99 eventos se ven gratis en el canal oficial de YouTube de la WSOP.== La 
 
 ## Fuentes y aviso
 
-- **★Resultado final del Main Event (Evento #82)** *(consultado el 6 de agosto de 2026; pozo y End Date revisados de nuevo el 16 de septiembre de 2026)*: [wsop.com/tournaments/result/619](https://www.wsop.com/tournaments/result/619/) — campeón Lucas Jumalon (EE. UU.) US$10.000.000, los nueve puestos con país y premio, **mejor hispanohablante: Antonio Galiana (España), 12.º, US$510.000** (columna *Country* de los puestos 1 al 50 revisada directamente), fecha de cierre 5 de agosto (campo End Date de la página oficial), 9.208 entradas, 1.383 puestos pagados, **pozo US$85.634.400**. El 6 de agosto esta página mostraba US$87.568.080; hoy muestra US$85.634.400, que es exactamente 9.208 × US$9.300 y la misma cifra que publicó ESPN
+- **★Resultado final del Main Event (Evento #82)** *(consultado el 6 de agosto de 2026; pozo y End Date revisados de nuevo el 16 de septiembre de 2026)*: [wsop.com/tournaments/result/619](https://www.wsop.com/tournaments/result/619/) — campeón Lucas Jumalon (EE. UU.) US$10,000,000, los nueve puestos con país y premio, **mejor hispanohablante: Antonio Galiana (España), 12.º, US$510,000** (columna *Country* de los puestos 1 al 50 revisada directamente), fecha de cierre 5 de agosto (campo End Date de la página oficial), 9,208 entradas, 1,383 puestos pagados, **pozo US$85,634,400**. El 6 de agosto esta página mostraba US$87,568,080; hoy muestra US$85,634,400, que es exactamente 9,208 × US$9,300 y la misma cifra que publicó ESPN
 - **★Los 100 brazaletes entregados** *(consultado el 6 de agosto de 2026)*: [calendario oficial de la WSOP 2026](https://www.wsop.com/tournaments/2026-57th-annual-world-series-of-poker/) — se revisó la columna *Winner* de los eventos #1 al #100: **los 100 tienen campeón**, sin huecos
 - Reglamento de inscripción, formas de pago e identificación: [wsop.com/registration](https://www.wsop.com/registration/)
 - **★Reglamento oficial 2026 en PDF — la fuente de la comisión y de la identificación (cita textual, Regla 9)** *(consultado el 15 de agosto de 2026; Regla 9 cotejada de nuevo el 16 de septiembre de 2026)*: [2026-WSOP-Tournament-Rules.pdf](https://wsop.gg-global-cdn.com/wsop/pdfs/2026-WSOP-Tournament-Rules.pdf) · Regla 5, textual: **2 % de comisión** con Visa, Mastercard, Discover, American Express **o PayPal**, **sin comisión en tarjeta de débito**, y "Fees are subject to change". ⚠️ **La página de inscripción sigue publicando «3 %» y no menciona PayPal ni débito** — tomamos el reglamento de la temporada como fuente. Comprueba el importe final en la pantalla de pago

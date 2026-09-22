@@ -105,28 +105,28 @@ Y para el visitante internacional: ==g:la mayoría de los pasaportes occidentale
 
 ## ¿Cuánto valen los asientos al APT Championship?
 
-En todo el festival se reparten **nueve asientos al APT Championship (APTC) Taipéi 2026**, cada uno valorado en **$10.000**. Casi toda la cobertura menciona solo "tres asientos en el Main Event". Está incompleto, y la diferencia importa a la hora de elegir en qué torneos entrar.
+En todo el festival se reparten **nueve asientos al APT Championship (APTC) Taipéi 2026**, cada uno valorado en **$10,000**. Casi toda la cobertura menciona solo "tres asientos en el Main Event". Está incompleto, y la diferencia importa a la hora de elegir en qué torneos entrar.
 
 <div style="overflow-x:auto;margin:20px 0">
 
 | Torneo | Buy-in (USD) | Asientos APTC |
 |:---|:---:|:---:|
-| **APT Main Event** | ~$1.703 | **3** (los tres primeros) |
-| APT Super High Roller | ~$10.200 | 1 |
-| APT High Roller | ~$3.400 | 1 |
-| Superstar Challenge | ~$23.800 | 1 |
-| High Roller – Ultra Stack | ~$3.066 | 1 |
+| **APT Main Event** | ~$1,703 | **3** (los tres primeros) |
+| APT Super High Roller | ~$10,200 | 1 |
+| APT High Roller | ~$3,400 | 1 |
+| Superstar Challenge | ~$23,800 | 1 |
+| High Roller – Ultra Stack | ~$3,066 | 1 |
 | **Mini Main Event** | **~$610** | **1** |
-| Zodiac Classic | ~$2.000 | 1 |
+| Zodiac Classic | ~$2,000 | 1 |
 | **Total** | | **9** |
 
 </div>
 
-==g:Fíjate en la fila más barata.== El **Mini Main Event de ~$610** lleva un asiento completo de $10.000. Ganar ese torneo no se parece en nada a terminar entre los tres primeros de un Main Event con más de mil entradas — y el ticket que te llevas es el mismo. De los nueve asientos, **esta es la puerta más barata**.
+==g:Fíjate en la fila más barata.== El **Mini Main Event de ~$610** lleva un asiento completo de $10,000. Ganar ese torneo no se parece en nada a terminar entre los tres primeros de un Main Event con más de mil entradas — y el ticket que te llevas es el mismo. De los nueve asientos, **esta es la puerta más barata**.
 
-> ⚠️ **Dos torneos con nombre parecido: no los confundas.** El asiento lo da el **#37 High Roller – Ultra Stack (KRW 4,5M, 10–11 de agosto)**. El **#90 Ultra Stack (KRW 700K, 15–16 de agosto)** que aparece en el calendario de arriba **no da asiento**. Los nombres se solapan; los buy-ins se diferencian en más de seis veces.
+> ⚠️ **Dos torneos con nombre parecido: no los confundas.** El asiento lo da el **#37 High Roller – Ultra Stack (KRW 4.5M, 10–11 de agosto)**. El **#90 Ultra Stack (KRW 700K, 15–16 de agosto)** que aparece en el calendario de arriba **no da asiento**. Los nombres se solapan; los buy-ins se diferencian en más de seis veces.
 
-**A dónde te lleva ese ticket:** el APT Championship 2026 se juega del **13 al 29 de noviembre en Red Space, Taipéi**. El Main Event del Championship es del **23 al 27 de noviembre, un freezeout de $10.000 con $5.000.000 garantizados** — el evento más grande del año del APT. Y Taipéi, a diferencia de Paradise City, **no tiene restricción de nacionalidad para entrar**.
+**A dónde te lleva ese ticket:** el APT Championship 2026 se juega del **13 al 29 de noviembre en Red Space, Taipéi**. El Main Event del Championship es del **23 al 27 de noviembre, un freezeout de $10,000 con $5,000,000 garantizados** — el evento más grande del año del APT. Y Taipéi, a diferencia de Paradise City, **no tiene restricción de nacionalidad para entrar**.
 
 ## Cómo se clasificó la gente por Natural8 — y cuándo cerró cada satélite
 
@@ -165,16 +165,16 @@ Antes de comprar el vuelo conviene saber en qué mesa te vas a sentar. APT publi
 
 | # | País | Entradas | Cuota |
 |:---:|:---|---:|:---:|
-| 1 | **Japón** | 484 | 37,8% |
-| 2 | **China** | 299 | 23,3% |
-| 3 | Tailandia | 107 | 8,4% |
-| 4 | Hong Kong | 106 | 8,3% |
-| 5 | Taiwán | 49 | 3,8% |
-| 6 | Rusia | 40 | 3,1% |
-| 7 | Singapur | 37 | 2,9% |
-| 8 | Vietnam | 29 | 2,3% |
-| 9 | Estados Unidos | 26 | 2,0% |
-| 10 | Malasia | 21 | 1,6% |
+| 1 | **Japón** | 484 | 37.8% |
+| 2 | **China** | 299 | 23.3% |
+| 3 | Tailandia | 107 | 8.4% |
+| 4 | Hong Kong | 106 | 8.3% |
+| 5 | Taiwán | 49 | 3.8% |
+| 6 | Rusia | 40 | 3.1% |
+| 7 | Singapur | 37 | 2.9% |
+| 8 | Vietnam | 29 | 2.3% |
+| 9 | Estados Unidos | 26 | 2.0% |
+| 10 | Malasia | 21 | 1.6% |
 
 </div>
 
@@ -182,9 +182,9 @@ Antes de comprar el vuelo conviene saber en qué mesa te vas a sentar. APT publi
 
 En la práctica eso significa dos cosas. Primera: en la mesa se habla más japonés y mandarín que inglés, y el floor lo gestiona con total normalidad. Segunda — y esta juega a tu favor — **nadie va a tener reads previos sobre ti**. Llegas sin historial en un circuito donde muchos regulares se conocen entre ellos.
 
-**Los números de 2025:** 1.281 entradas de **754 jugadores únicos** (el resto fueron re-entradas), con un prize pool de **KRW 2.766.960.000 (~$2,0M)** — el Main Event más grande que APT había montado en Corea hasta entonces. Ganó el chino **Junjie He** por ₩380.520.000 (~$275.140) más un asiento al APT Championship, tras un deal por ICM a tres manos con Kouki Okumiya y Kuroda Kiyoto.
+**Los números de 2025:** 1,281 entradas de **754 jugadores únicos** (el resto fueron re-entradas), con un prize pool de **KRW 2,766,960,000 (~$2.0M)** — el Main Event más grande que APT había montado en Corea hasta entonces. Ganó el chino **Junjie He** por ₩380,520,000 (~$275,140) más un asiento al APT Championship, tras un deal por ICM a tres manos con Kouki Okumiya y Kuroda Kiyoto.
 
-> **Lee bien el número de entradas.** "1.281 entradas" no son 1.281 personas: son 754 jugadores más re-entries. Un field con re-entry siempre se ve más grande de lo que son.
+> **Lee bien el número de entradas.** "1,281 entradas" no son 1,281 personas: son 754 jugadores más re-entries. Un field con re-entry siempre se ve más grande de lo que son.
 
 ---
 
@@ -417,11 +417,11 @@ A. Ambos funcionan, pero ==g:se recomienda llegar 2–3 días antes==. Te recupe
 Todas las cifras se contrastaron con fuentes primarias. **Verificado: 17 de agosto de 2026.**
 
 - **Página oficial de la serie** — [APT — Incheon, South Korea 2026](https://www.theasianpokertour.com/series/apt-incheon-south-korea-2026) · fechas, buy-in y garantizado del Main Event #20, estructura de flights
-- **Preview oficial** — [APT Incheon 2026: The Preview](https://www.theasianpokertour.com/news/apt-incheon-2026-the-preview) · garantizado total, stack inicial de 40.000, **los nueve asientos APTC Taipéi y cómo se reparten**
-- **APT Championship 2026** — [Full APTC 2026 Schedule](https://www.theasianpokertour.com/news/apt-announces-full-aptc2026-schedule) · 13–29 de noviembre, Taipéi; Main Event 23–27 nov, $10.000, $5.000.000 GTD
+- **Preview oficial** — [APT Incheon 2026: The Preview](https://www.theasianpokertour.com/news/apt-incheon-2026-the-preview) · garantizado total, stack inicial de 40,000, **los nueve asientos APTC Taipéi y cómo se reparten**
+- **APT Championship 2026** — [Full APTC 2026 Schedule](https://www.theasianpokertour.com/news/apt-announces-full-aptc2026-schedule) · 13–29 de noviembre, Taipéi; Main Event 23–27 nov, $10,000, $5,000,000 GTD
 - **20º aniversario** — [APT Gets Ready to Celebrate 20 Years](https://www.theasianpokertour.com/news/apt-2026-schedule)
 - **Satélites y paquetes** — [Natural8 — Journey to APT Incheon 2026](https://www.natural8.com/en/blog/journey-to-apt-incheon-2026) · [Country Exclusives 2026](https://www.natural8.com/en/poker/tournaments/apt-incheon-country-exclusives-2026)
-- **Field y resultado 2025 (reporte oficial del organizador)** — [APT — China's Junjie He Wins APT's Largest Korean Main Event](https://www.theasianpokertour.com/news/china-s-junjie-he-wins-apt-s-largest-korean-main-event-for-krw-380-5-m-usd-275-k-plus-apt-championship-seat-worth-krw-13-8-m-usd-10-k) · 1.281 entradas de 754 jugadores únicos · prize pool KRW 2.766.960.000 · desglose por país
+- **Field y resultado 2025 (reporte oficial del organizador)** — [APT — China's Junjie He Wins APT's Largest Korean Main Event](https://www.theasianpokertour.com/news/china-s-junjie-he-wins-apt-s-largest-korean-main-event-for-krw-380-5-m-usd-275-k-plus-apt-championship-seat-worth-krw-13-8-m-usd-10-k) · 1,281 entradas de 754 jugadores únicos · prize pool KRW 2,766,960,000 · desglose por país
 - **Normas de acceso al casino** — [Paradise City oficial](https://www.p-city.com/front/contents/casino/casinoInfo)
 
 > ⚠️ **Este festival terminó el 16 de agosto de 2026.** El calendario, el registro y los horarios de shuttle de arriba son el registro de la edición 2026 — consulta la página oficial de APT para las condiciones de la próxima temporada.
