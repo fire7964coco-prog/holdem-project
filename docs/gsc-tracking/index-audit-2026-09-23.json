@@ -1,0 +1,218 @@
+{
+  "site": "sc-domain:holdemmaster.com",
+  "total": 23,
+  "byCoverage": {
+    "Submitted and indexed": 19,
+    "URL is unknown to Google": 1,
+    "Discovered - currently not indexed": 3
+  },
+  "rows": [
+    {
+      "url": "https://www.holdemmaster.com/calculator",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastCrawl": "2026-09-07T19:47:07Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/calculator",
+      "userCanonical": "https://www.holdemmaster.com/calculator"
+    },
+    {
+      "url": "https://www.holdemmaster.com/quiz",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastCrawl": "2026-09-02T03:07:12Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/quiz",
+      "userCanonical": "https://www.holdemmaster.com/quiz"
+    },
+    {
+      "url": "https://www.holdemmaster.com/win-rate-quiz",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastCrawl": "2026-08-28T19:50:23Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/win-rate-quiz",
+      "userCanonical": "https://www.holdemmaster.com/win-rate-quiz"
+    },
+    {
+      "url": "https://www.holdemmaster.com/hand-chart",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastCrawl": "2026-09-13T04:20:42Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/hand-chart",
+      "userCanonical": "https://www.holdemmaster.com/hand-chart"
+    },
+    {
+      "url": "https://www.holdemmaster.com/glossary",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastCrawl": "2026-09-21T20:30:52Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/glossary",
+      "userCanonical": "https://www.holdemmaster.com/glossary"
+    },
+    {
+      "url": "https://www.holdemmaster.com/rules",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastCrawl": "2026-09-06T22:39:34Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/rules",
+      "userCanonical": "https://www.holdemmaster.com/rules"
+    },
+    {
+      "url": "https://www.holdemmaster.com/rules/omaha",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastCrawl": "2026-07-06T09:37:27Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/rules/omaha",
+      "userCanonical": "https://www.holdemmaster.com/rules/omaha"
+    },
+    {
+      "url": "https://www.holdemmaster.com/rules/seven-card-stud",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastCrawl": "2026-07-26T11:45:07Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/rules/seven-card-stud",
+      "userCanonical": "https://www.holdemmaster.com/rules/seven-card-stud"
+    },
+    {
+      "url": "https://www.holdemmaster.com/strategy",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastCrawl": "2026-07-26T23:42:06Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/strategy",
+      "userCanonical": "https://www.holdemmaster.com/strategy"
+    },
+    {
+      "url": "https://www.holdemmaster.com/ranking",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastCrawl": "2026-09-21T18:38:56Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/ranking",
+      "userCanonical": "https://www.holdemmaster.com/ranking"
+    },
+    {
+      "url": "https://www.holdemmaster.com/tournaments",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastCrawl": "2026-09-17T07:17:16Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/tournaments",
+      "userCanonical": "https://www.holdemmaster.com/tournaments"
+    },
+    {
+      "url": "https://www.holdemmaster.com/pub",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastCrawl": "2026-09-13T07:58:41Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/pub",
+      "userCanonical": "https://www.holdemmaster.com/pub"
+    },
+    {
+      "url": "https://www.holdemmaster.com/pub/gangnam",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastCrawl": "2026-09-02T07:30:14Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/pub/gangnam",
+      "userCanonical": "https://www.holdemmaster.com/pub/gangnam"
+    },
+    {
+      "url": "https://www.holdemmaster.com/pub/hongdae",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastCrawl": "2026-08-24T20:08:23Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/pub/hongdae",
+      "userCanonical": "https://www.holdemmaster.com/pub/hongdae"
+    },
+    {
+      "url": "https://www.holdemmaster.com/pub/ilsan",
+      "verdict": "NEUTRAL",
+      "coverage": "URL is unknown to Google",
+      "lastCrawl": null,
+      "indexing": "INDEXING_STATE_UNSPECIFIED",
+      "googleCanonical": null,
+      "userCanonical": null
+    },
+    {
+      "url": "https://www.holdemmaster.com/pub/suwon",
+      "verdict": "NEUTRAL",
+      "coverage": "Discovered - currently not indexed",
+      "lastCrawl": null,
+      "indexing": "INDEXING_STATE_UNSPECIFIED",
+      "googleCanonical": null,
+      "userCanonical": null
+    },
+    {
+      "url": "https://www.holdemmaster.com/pub/incheon",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastCrawl": "2026-09-02T09:50:29Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/pub/incheon",
+      "userCanonical": "https://www.holdemmaster.com/pub/incheon"
+    },
+    {
+      "url": "https://www.holdemmaster.com/pub/bundang",
+      "verdict": "NEUTRAL",
+      "coverage": "Discovered - currently not indexed",
+      "lastCrawl": null,
+      "indexing": "INDEXING_STATE_UNSPECIFIED",
+      "googleCanonical": null,
+      "userCanonical": null
+    },
+    {
+      "url": "https://www.holdemmaster.com/pub/busan",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastCrawl": "2026-08-16T06:53:23Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/pub/busan",
+      "userCanonical": "https://www.holdemmaster.com/pub/busan"
+    },
+    {
+      "url": "https://www.holdemmaster.com/pub/daegu",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastCrawl": "2026-08-29T02:18:52Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/pub/daegu",
+      "userCanonical": "https://www.holdemmaster.com/pub/daegu"
+    },
+    {
+      "url": "https://www.holdemmaster.com/pub/kondae",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastCrawl": "2026-08-24T17:31:04Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/pub/kondae",
+      "userCanonical": "https://www.holdemmaster.com/pub/kondae"
+    },
+    {
+      "url": "https://www.holdemmaster.com/pub/sinchon",
+      "verdict": "PASS",
+      "coverage": "Submitted and indexed",
+      "lastCrawl": "2026-08-16T15:10:31Z",
+      "indexing": "INDEXING_ALLOWED",
+      "googleCanonical": "https://www.holdemmaster.com/pub/sinchon",
+      "userCanonical": "https://www.holdemmaster.com/pub/sinchon"
+    },
+    {
+      "url": "https://www.holdemmaster.com/holdem-practice",
+      "verdict": "NEUTRAL",
+      "coverage": "Discovered - currently not indexed",
+      "lastCrawl": null,
+      "indexing": "INDEXING_STATE_UNSPECIFIED",
+      "googleCanonical": null,
+      "userCanonical": null
+    }
+  ]
+}
