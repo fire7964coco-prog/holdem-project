@@ -1,3 +1,13 @@
+## 2026-09-23 (4) — KO 대회 가이드 3편 발행 (APL 서울 · WPT 서울 · GOP 인천 II)
+
+사장님 결재(1.5) + 지시 「무한검수 말고 서치 먼저, 한 번에 잘 쓰자」.
+- **서치 먼저**: 4갈래 병렬 조사(대회별 1차 출처 3 + 키워드/SERP 1) → 사실 시트 `docs/tournament-factsheets/2026-10-kr-apl-wpt-gop.md` → 본체가 핵심값 원문 재대조(1차 20/20 + 2차 WPT Global·셔틀·호텔·GOP 메인·1회차). 대조에서 뺀 값: WPT 셔틀 시각(리조트→공항 방향이었다) · WPT Global KYC 11/1·19세(본문에서 못 찾음) · WPT KRW 결제/송금 불가(재확인 실패).
+- **판정**: 키워드는 브랜드별 스파이크(apt incheon 720 · gods of poker 260 · apl 포커 880), «영종도·10월» 통합 어구는 전부 null → 3편 분리 + «같은 주 다른 대회» 상호 링크. APL은 09-06 이후 장소(G Stadium Guro 3F)·획득처(제휴 홀덤펍 59곳)·이벤트 DB가 공개돼 보류하지 않음.
+- **발견·정정**: WPT 이벤트 수 46 → **45**(공식 사이트·가이드 두 판·번호 #1~#45) — `tournaments.ts` 2곳 + i18n 11곳 정정 · WPT 서울은 WPT 정규 투어 아님(POY 없음) · «한국 첫 WPT» 아님(제주 WPT Korea 3회) · GOP 이벤트 수 공식 자기모순(헤더 73 vs 번호 #76) 병기 · APL `venue`·note·`verifiedAt` 갱신(6로케일 note).
+- **글**: 3편 + HTML 정보카드 히어로 3장(q82 · 27~29KB) + `blogLink` 3 + 역링크 3(apt-incheon→GOP · appt-korea→WPT · how-to-enter→APL).
+- **검수 1회**: audit:hard 3편 무결 · 렌즈 4종 1회(사실 · 플레이어 · SEO · 교열) → 채택: WPT 월드챔피언십 참가권은 **1위 상금에 포함(상금풀 차감)** · 자격 기준은 «국내 거주»가 아니라 해외이주 서류(해외 거주 무서류자 오독 방지) · «외국 여권 소지자» → «외국인» · 패키지도 입장 자격 필요 · Khartes 라이선스·WPT Korea 첫해·스태프 fee 공제 방식 등 추정 문구 제거 · APL 티켓/SEAT 용어 분리(zh·zh-hant note 포함) · 볼드 뒤 조사 공백 · 제목에 «Gods of Poker»·«WPT Seoul». 기각: KYC 11/1(원문 미확인) · APL «네» 단정 · WPT 연령.
+- 빌드 **73 blog posts** · FAQ 6×3 · Event 스키마 3 · 390/1440 넘침 0.
+
 ## 2026-09-23 (3) — 분석 보고서 처방 2회차 ③ AI 유입 솔버 랜딩: 계측부터
 
 - **GA 재조회(08-26~09-22)**: chatgpt → /en/solver 121세션(모바일 63 참여 28.6% · 데스크톱 56 · 44.6%) · 이벤트 page_view 189 · user_engagement 56 · scroll 5 · 주간 27→64→70→74. 인용 «질문»은 GA에 없다(리퍼러에 프롬프트 없음 · manualTerm (not set)).

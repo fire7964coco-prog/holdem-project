@@ -29,6 +29,14 @@
 - **기준선**: `docs/post-placement-analysis-2026-09-16.md` §2 표(창 2026-08-17~09-13) · 검증 기록 `docs/post-placement-verification-2026-09-16.md`
 - **함께**: 10/5(WPL 제8회)·10/7(APT 제주) 종료 뒤 `EVENT_UNTIL`이 자동 강등했는지 홈 상단 육안 확인.
 
+### 10/9 · 10/20경 — APL 서울 가이드 미공개 항목 재확인 (발행 2026-09-23)
+- **글**: `apl-seoul-2026-guide` · 정본 `docs/tournament-factsheets/2026-10-kr-apl-wpt-gop.md` §A
+- **볼 것**: acepokerleague.com 이벤트 DB(series_id=31)·제휴파트너 목록 — ① 장소 상세 주소 ② 티켓 가격·티켓→SEAT 교환 비율 ③ 레이트 등록 마감·페이아웃 ④ 제휴 매장 수(59 → ?) ⑤ 11월·12월 대회 날짜. 공지되면 시트 → 글 순서로 고치고 «미공개» 문구를 지운다.
+
+### 10/25 · 11/8 · 11/9 이후 — 가이드 3편 결과 아카이브 전환
+- APL 서울(10/25 종료) · GOP 인천 II(11/8) · WPT 서울(11/9) — 선례 `apt-incheon-2026-guide`처럼 우승자·엔트리·상금풀을 1차 출처로 확인해 훅을 «결과»로 전환. WPT 온라인 예선 절(10/25 마감)은 종료 후 과거형으로.
+- WPT: 10/25 이후 온라인 퀄리파이어 종료 문구 반영.
+
 ### 10/7경 — AI 유입 솔버 랜딩 `solver_open` 2주 판독 (계측 배포 2026-09-23)
 - **배경**: 솔버 앱은 같은 루트 도메인이라 GA4 outbound click이 안 남는다 → /en/solver AI 유입 «절반 10초 이탈»에 «앱으로 넘어간 사람»이 섞여 판정 불가였다. 09-23 `app/layout.tsx`에 `solver_open` 이벤트를 달았다.
 - **볼 것**: GA4 eventName=`solver_open` × landingPage × sessionSource(chatgpt) × deviceCategory. 비율 = solver_open 세션 ÷ 랜딩 세션.

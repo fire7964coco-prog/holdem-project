@@ -618,17 +618,20 @@ const RAW_TOURNAMENTS: Tournament[] = [
     type: "domestic",
     startDate: "2026-10-23",
     endDate: "2026-10-25",
-    location: "서울 (장소 추후 공개)",
+    location: "서울 (G Stadium Guro 3F)",
     city: "Seoul",
     country: "KR",
-    venue: "장소 추후 공개",
+    venue: "G Stadium Guro 3F",
     buyin: "참가권(SEAT) 전용",
     emoji: "🇰🇷",
     color: "bg-emerald-500/15 text-emerald-400 border-emerald-500/30",
-    note: "Circuit I ₩400,000,000 GTD · APL Winter Series 총 ₩2,300,000,000 GTD · 2년 만의 서울 복귀 · 전 이벤트 참가권(SEAT) 방식 — 획득처 추후 공지 · 주최 사단법인 대한홀덤경기협회",
+    note: "Circuit I ₩400,000,000 GTD · APL Winter Series 총 ₩2,300,000,000 GTD · 2년 만의 서울 복귀 · 전 이벤트 참가권(SEAT) 방식 — 티켓은 APL 공식 제휴 홀덤펍에서 · 주최 사단법인 대한홀덤경기협회",
+    // 🔴 2026-09-23 — 장소(G Stadium Guro 3F · 공식 시리즈 카드)와 획득처(09-14 「APL OFFICIAL PARTNERS LIST」)가 공개됐다.
+    //    상세 주소는 여전히 미공개. 사실 정본 docs/tournament-factsheets/2026-10-kr-apl-wpt-gop.md §A.
+    blogLink: "/blog/apl-seoul-2026-guide",
     sourceUrl: "https://acepokerleague.com/apl-winter-series-2026-winter-prelims-circuit-i/",
     sourceTier: "A",
-    verifiedAt: "2026-09-04",
+    verifiedAt: "2026-09-23",
   },
   {
     /**
@@ -756,6 +759,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     emoji: "⚡",
     color: "bg-violet-500/15 text-violet-400 border-violet-500/30",
     note: "같은 기간 영종도에서 WPT Seoul도 동시 개최 (베뉴 다름)",
+    blogLink: "/blog/gop-incheon-2026-ii-guide",
     /**
      * 🔴 sourceUrl을 `/series/incheon-2026-ii` → `/series`로 바꿨다(2026-08-31).
      *   그 URL은 **`/news/gods-of-poker-incheon`으로 리다이렉트**되는데 그 기사(1/4 게시)에는
@@ -783,8 +787,11 @@ const RAW_TOURNAMENTS: Tournament[] = [
     buyin: "₩30만~₩800만",
     emoji: "🌟",
     color: "bg-fuchsia-500/15 text-fuchsia-400 border-fuchsia-500/30",
-    note: "46개 이벤트 · 메인 11/5~9 (₩175만, 10억 GTD) · 70테이블 신설 포커룸",
+    note: "45개 이벤트 · 메인 11/5~9 (₩175만, 10억 GTD) · 70테이블 신설 포커룸",
     highlight: true,
+    blogLink: "/blog/wpt-seoul-2026-guide",
+    // 🔴 2026-09-23 이벤트 수 46 → 45: wptseoul.com 「11 days, 45 events」·선수 가이드 두 판·일정표 번호 #1~#45 결번 0.
+    //    46은 7월 보도자료 값(docs/tournament-factsheets/2026-10-kr-apl-wpt-gop.md §B).
     // ⚠️ worldpokertour.com은 Cloudflare 403이라 독자도 못 열 수 있음
     //    → INSPIRE 공식 보도자료를 정본으로 승격 (docs/tournament-spine.md §2-1)
     sourceUrl: "https://prtimes.jp/main/html/rd/p/000000091.000128436.html",
@@ -792,7 +799,7 @@ const RAW_TOURNAMENTS: Tournament[] = [
     verifiedAt: "2026-08-31",
     organizer: { name: "World Poker Tour", url: "https://www.worldpokertour.com" },
     schemaDescription:
-      "WPT가 INSPIRE 엔터테인먼트 리조트에서 처음 개최하는 대회. 46개 이벤트, 메인이벤트 ₩10억 보장.",
+      "WPT가 INSPIRE 엔터테인먼트 리조트에서 처음 개최하는 대회. 45개 이벤트, 메인이벤트 ₩10억 보장.",
   },
   {
     id: "apt-championship",

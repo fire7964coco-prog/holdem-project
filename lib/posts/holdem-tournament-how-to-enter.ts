@@ -316,6 +316,7 @@ A. 혼자 오는 참가자가 기본입니다. 좌석은 무작위로 배정돼�
 | [한국 선수 WSOP 참가 가이드](/blog/wsop-2025-tournament-guide) | 해외 메이저 대회 참가 절차·위성 |
 | [APT 제주 클래식 2026 후기](/blog/apt-jeju-classic-2026-guide) | 국내 대형 대회 규모·위성 진출 사례 |
 | [홀덤펍 처음 가는 법](/blog/holdem-pub-first-visit-guide) | 첫 오프라인 방문 전 확인할 규칙과 매너 |
+| [APL 서울 2026 참가 가이드](/blog/apl-seoul-2026-guide) | 홀덤펍에서 티켓을 모아 SEAT로 나가는 국내 대회 |
 | [홀덤 버블 전략](/blog/holdem-bubble-strategy) | 상금권 직전 스택별 대응법 |
 `.trim(),
 };

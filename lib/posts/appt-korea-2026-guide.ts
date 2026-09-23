@@ -485,6 +485,11 @@ A. PokerStars Live 현장 문의: +82-10-4194-6121 / 이메일: manila@pokerstar
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">홀덤 대회 참가 방법</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">온라인 무료 → WSOP 단계별</div>
   </a>
+  <a href="/blog/wpt-seoul-2026-guide" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">다음 영종도 대회</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">WPT 서울 2026 가이드</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">10월 30일~11월 9일 · 인스파이어 · 메인 10억 보장</div>
+  </a>
 </div>
 `.trim(),
 };

@@ -1128,7 +1128,7 @@ const SCHEMA_DESC_ZH: Record<string, string> = {
   "apt-jeju-fall":
     "APT的2026年济州秋季站。135场赛事，主赛事保证22亿韩元。",
   "wpt-seoul":
-    "WPT首次在INSPIRE娱乐度假村举办的赛事。46场比赛，主赛事保证10亿韩元。",
+    "WPT首次在INSPIRE娱乐度假村举办的赛事。45场比赛，主赛事保证10亿韩元。",
   "appt-manila":
     "PokerStars APPT的2026年马尼拉站，在Okada Manila举行，系列赛总保底约1.32亿菲律宾比索。",
 };
@@ -1226,7 +1226,7 @@ const SCHEMA_DESC_HANT: Record<string, string> = {
   "apt-jeju-fall":
     "APT的2026年濟州秋季站。135場賽事，主賽事保證22億韓元。",
   "wpt-seoul":
-    "WPT首次在INSPIRE娛樂度假村舉辦的賽事。46場比賽，主賽事保證10億韓元。",
+    "WPT首次在INSPIRE娛樂度假村舉辦的賽事。45場比賽，主賽事保證10億韓元。",
   "appt-manila":
     "PokerStars APPT的2026年馬尼拉站，在Okada Manila舉行，系列賽總保底約1.32億披索。",
 };
@@ -1373,7 +1373,7 @@ const SCHEMA_DESC_ES: Record<string, string> = {
   "apt-jeju-fall":
     "Parada de otoño de 2026 del Asian Poker Tour en Jeju: 135 eventos con 2.200 millones de KRW garantizados en el Main Event.",
   "wpt-seoul":
-    "Primer evento del World Poker Tour en el INSPIRE Entertainment Resort: 46 eventos con 1.000 millones de KRW garantizados en el Main Event.",
+    "Primer evento del World Poker Tour en el INSPIRE Entertainment Resort: 45 eventos con 1.000 millones de KRW garantizados en el Main Event.",
   "appt-manila":
     "Parada de Manila 2026 del APPT de PokerStars, en Okada Manila, con ₱132 millones garantizados en la serie.",
 };
@@ -1500,7 +1500,7 @@ const SCHEMA_DESC_DE: Record<string, string> = {
   "apt-jeju-fall":
     "Herbst-Stop 2026 des Asian Poker Tour auf Jeju: 135 Events mit 2,2 Mrd. KRW Garantie im Main Event.",
   "wpt-seoul":
-    "Erstes Event des World Poker Tour im INSPIRE Entertainment Resort: 46 Events mit 1 Mrd. KRW Garantie im Main Event.",
+    "Erstes Event des World Poker Tour im INSPIRE Entertainment Resort: 45 Events mit 1 Mrd. KRW Garantie im Main Event.",
   "appt-manila":
     "Manila-Stop 2026 der PokerStars APPT im Okada Manila, mit ₱132 Mio. Gesamtgarantie.",
 };
@@ -1540,7 +1540,7 @@ const NOTE_EN: Record<string, string> = {
   // 2026-09-03 M-082 ② 추가 13건
   "hpt-5": "₩1.6B total prize · online satellites on Hangame Royal Hold'em → live Main Event (Day 1 Sep 11–12 · Day 2 Sep 13) · open to Korean nationals",
   // 2026-09-04 M-086 ⑤: ko note가 「2년 만의 서울 복귀」를 되찾고 SEAT·주최를 얻었다 → EN도 같은 내용으로 맞춘다.
-  "apl-seoul-winter-circuit-1": "Circuit I ₩400,000,000 GTD · APL Winter Series ₩2,300,000,000 GTD total · Seoul returns after two years · every event is seat (ticket) entry, no cash buy-in — where to get them TBA · organised by the Korea Holdem Sports Association",
+  "apl-seoul-winter-circuit-1": "Circuit I ₩400,000,000 GTD · APL Winter Series ₩2,300,000,000 GTD total · Seoul returns after two years · every event is seat (ticket) entry, no cash buy-in — tickets from APL official partner holdem pubs · organised by the Korea Holdem Sports Association",
   "wpt-bestbet-scramble": "Main Event $5,000 / $1,000,000 GTD",
   "wpt-prime-lodge": "Main Event $1,100 / $1,000,000 GTD",
   "wpt-prime-cyprus": "Main Event $1,100 / $1,000,000 GTD",
@@ -1581,7 +1581,7 @@ const NOTE_EN: Record<string, string> = {
   "triton-jeju-2": "14 high rollers · no satellites, referral only · $200K Invitational Sep 12–14",
   "apt-jeju-fall": "135 events · Main Event ₩2.2bn GTD · 12 APTC seats",
   "gop-incheon-2": "WPT Seoul runs on Yeongjong Island at the same time, at a different venue",
-  "wpt-seoul": "46 events · Main Nov 5–9 (₩1.75M, ₩1bn GTD) · a new 70-table poker room",
+  "wpt-seoul": "45 events · Main Nov 5–9 (₩1.75M, ₩1bn GTD) · a new 70-table poker room",
   "apt-championship": "210 trophy events · Main #14 TWD 311.9K / USD 5,000,000 GTD (≈TWD 155M, page conversion) (from Nov 23) · Nov 12 is industry-only; general entry opens Nov 13",
   "wsop-paradise": "Moved from Atlantis to Baha Mar · detailed schedule not published yet",
   "ept-prague": "Dual festival — PokerStars Open ME €1,100 (Dec 2–7) → EPT ME €5,300 (Dec 7–13) · Cup €825 · HR €10,300",
@@ -1649,7 +1649,7 @@ const NOTE_JA: Record<string, string> = {
   "triton-jeju-2": "ハイローラー14種 · サテライトなし（推薦制）· $200K Invitationalは9/12〜14",
   "apt-jeju-fall": "135イベント · メインイベント22億ウォンGTD · APTCシート12席",
   "gop-incheon-2": "同時期に永宗島でWPT Seoulも開催（会場は別）",
-  "wpt-seoul": "46イベント · メイン11/5〜9（175万ウォン、10億ウォンGTD）· 70卓の新設ポーカールーム",
+  "wpt-seoul": "45イベント · メイン11/5〜9（175万ウォン、10億ウォンGTD）· 70卓の新設ポーカールーム",
   "apt-championship": "トロフィーイベント210種 · メイン#14 TWD 311.9K／USD 5,000,000 GTD（約TWD 155M・ページ換算）（11/23〜）· 11/12は業界関係者専用で、一般参加は11/13から",
   "wsop-paradise": "AtlantisからBaha Marへ移転 · 詳細日程は未発表",
   "ept-prague": "デュアルフェスティバル — PokerStars Open ME €1,100（12/2〜7）→ EPT ME €5,300（12/7〜13）· Cup €825 · HR €10,300",
@@ -1688,7 +1688,7 @@ const NOTE_JA: Record<string, string> = {
   "wpt-world-championship": "2026年の日程は未発表 — 会場（Wynn）の公式ポーカーページにもWPTの記載がない",
   // ── 2026-09-06 M-091 ⑤: 4로케일 공통 미등재 14건(EN 축어 기준 · 수치 불변) ──
   "hpt-5": "賞金総額16億ウォン · Hangame Royal Hold'emのオンラインサテライト → ライブのメインイベント（Day 1: 9/11〜12、Day 2: 9/13）· 韓国籍のプレイヤーも参加可能",
-  "apl-seoul-winter-circuit-1": "Circuit I 4億ウォンGTD · APL Winter Series総額23億ウォンGTD · 2年ぶりのソウル開催 · 全イベントが参加権（シート）制で現金バイインなし — 入手先は後日発表 · Korea Holdem Sports Association主催",
+  "apl-seoul-winter-circuit-1": "Circuit I 4億ウォンGTD · APL Winter Series総額23億ウォンGTD · 2年ぶりのソウル開催 · 全イベントが参加権（シート）制で現金バイインなし — チケットはAPL公式提携ホールデムパブで入手 · Korea Holdem Sports Association主催",
   "wpt-bestbet-scramble": "メインイベント$5,000／$1,000,000 GTD",
   "wpt-prime-lodge": "メインイベント$1,100／$1,000,000 GTD",
   "wpt-prime-cyprus": "メインイベント$1,100／$1,000,000 GTD",
@@ -1732,7 +1732,7 @@ const NOTE_ZH: Record<string, string> = {
   "triton-jeju-2": "14场豪客赛 · 无卫星赛（推荐制）· $200K Invitational为9月12〜14日",
   "apt-jeju-fall": "135场赛事 · 主赛事22亿韩元GTD · 12个APTC席位",
   "gop-incheon-2": "同期在永宗岛还有WPT Seoul（场馆不同）",
-  "wpt-seoul": "46场赛事 · 主赛11月5〜9日（175万韩元，10亿韩元GTD）· 新建70桌扑克室",
+  "wpt-seoul": "45场赛事 · 主赛11月5〜9日（175万韩元，10亿韩元GTD）· 新建70桌扑克室",
   "apt-championship": "210场奖杯赛事 · 主赛#14 TWD 311.9K／USD 5,000,000 GTD（约TWD 155M·页面换算）（11月23日起）· 11月12日仅限业内人士，普通玩家自11月13日起",
   "wsop-paradise": "从Atlantis迁至Baha Mar · 详细日程尚未公布",
   "ept-prague": "双赛事节——PokerStars Open主赛€1,100（12月2〜7日）→ EPT主赛€5,300（12月7〜13日）· Cup €825 · HR €10,300",
@@ -1769,7 +1769,7 @@ const NOTE_ZH: Record<string, string> = {
   "wpt-world-championship": "2026年日程未公布——场馆（Wynn）官方扑克页面也没有提到WPT",
   // ── 2026-09-06 M-091 ⑤: 4로케일 공통 미등재 14건(EN 축어 기준 · 수치 불변) ──
   "hpt-5": "总奖金16亿韩元 · Hangame Royal Hold'em线上卫星赛 → 线下主赛事（Day 1 9月11〜12日 · Day 2 9月13日）· 韩国籍玩家亦可参加",
-  "apl-seoul-winter-circuit-1": "Circuit I 4亿韩元GTD · APL Winter Series总额23亿韩元GTD · 时隔两年重返首尔 · 所有赛事均不设现金买入，仅凭席位（参赛券）入场——获取途径待公布 · 由Korea Holdem Sports Association主办",
+  "apl-seoul-winter-circuit-1": "Circuit I 4亿韩元GTD · APL Winter Series总额23亿韩元GTD · 时隔两年重返首尔 · 所有赛事均不设现金买入，仅凭席位（参赛券）入场——门票可在APL官方合作德州扑克酒吧获取 · 由Korea Holdem Sports Association主办",
   "wpt-bestbet-scramble": "主赛事$5,000／$1,000,000 GTD",
   "wpt-prime-lodge": "主赛事$1,100／$1,000,000 GTD",
   "wpt-prime-cyprus": "主赛事$1,100／$1,000,000 GTD",
@@ -1821,7 +1821,7 @@ const NOTE_HANT: Record<string, string> = {
   "triton-jeju-2": "14場豪客賽 · 無衛星賽（推薦制）· $200K Invitational為9月12〜14日",
   "apt-jeju-fall": "135場賽事 · 主賽事22億韓元GTD · 12個APTC席位",
   "gop-incheon-2": "同期在永宗島還有WPT Seoul（場館不同）",
-  "wpt-seoul": "46場賽事 · 主賽11月5〜9日（175萬韓元，10億韓元GTD）· 新建70桌撲克室",
+  "wpt-seoul": "45場賽事 · 主賽11月5〜9日（175萬韓元，10億韓元GTD）· 新建70桌撲克室",
   "apt-championship": "210場獎盃賽事 · 主賽#14 TWD 311.9K／USD 5,000,000 GTD（約TWD 155M·頁面換算）（11月23日起）· 11月12日僅限業內人士，一般玩家自11月13日起",
   "wsop-paradise": "從Atlantis遷至Baha Mar · 詳細賽程尚未公布",
   "ept-prague": "雙賽事節——PokerStars Open主賽€1,100（12月2〜7日）→ EPT主賽€5,300（12月7〜13日）· Cup €825 · HR €10,300",
@@ -1858,7 +1858,7 @@ const NOTE_HANT: Record<string, string> = {
   "wpt-world-championship": "2026年賽程未公布——場館（Wynn）官方撲克頁面也沒有提到WPT",
   // ── 2026-09-06 M-091 ⑤: 4로케일 공통 미등재 14건(EN 축어 기준 · 수치 불변) ──
   "hpt-5": "總獎金16億韓元 · Hangame Royal Hold'em線上衛星賽 → 實體主賽事（Day 1 9月11〜12日 · Day 2 9月13日）· 韓國籍玩家亦可參加",
-  "apl-seoul-winter-circuit-1": "Circuit I 4億韓元GTD · APL Winter Series總額23億韓元GTD · 時隔兩年重返首爾 · 所有賽事均不設現金買入，僅憑席位（參賽券）入場——取得途徑待公布 · 由Korea Holdem Sports Association主辦",
+  "apl-seoul-winter-circuit-1": "Circuit I 4億韓元GTD · APL Winter Series總額23億韓元GTD · 時隔兩年重返首爾 · 所有賽事均不設現金買入，僅憑席位（參賽券）入場——門票可在APL官方合作德州撲克酒吧取得 · 由Korea Holdem Sports Association主辦",
   "wpt-bestbet-scramble": "主賽事$5,000／$1,000,000 GTD",
   "wpt-prime-lodge": "主賽事$1,100／$1,000,000 GTD",
   "wpt-prime-cyprus": "主賽事$1,100／$1,000,000 GTD",
@@ -1904,7 +1904,7 @@ const NOTE_ES: Record<string, string> = {
   "triton-jeju-2": "14 high rollers · sin satélites, solo por recomendación · $200K Invitational del 12 al 14 de sep",
   "apt-jeju-fall": "135 eventos · Main Event 2.200 millones de KRW GTD · 12 asientos para el APTC",
   "gop-incheon-2": "El WPT Seoul se juega a la vez en la isla de Yeongjong, en otra sede",
-  "wpt-seoul": "46 eventos · Main del 5 al 9 de nov (1,75 M KRW, 1.000 millones GTD) · sala de poker nueva de 70 mesas",
+  "wpt-seoul": "45 eventos · Main del 5 al 9 de nov (1,75 M KRW, 1.000 millones GTD) · sala de poker nueva de 70 mesas",
   "apt-championship": "210 eventos con trofeo · Main #14 TWD 311,9 mil / USD 5.000.000 GTD (≈TWD 155M, conversión de la página) (desde el 23 de nov) · el 12 de nov es solo para la industria; el público entra desde el 13",
   "wsop-paradise": "Se muda del Atlantis al Baha Mar · programa detallado aún sin publicar",
   "ept-prague": "Festival doble: ME del PokerStars Open €1.100 (2–7 dic) → ME del EPT €5.300 (7–13 dic) · Cup €825 · HR €10.300",
@@ -1941,7 +1941,7 @@ const NOTE_ES: Record<string, string> = {
   "wpt-world-championship": "Fechas de 2026 sin anunciar: la propia página de poker del Wynn tampoco menciona el WPT",
   // ── 2026-09-06 M-091 ⑤: 4로케일 공통 미등재 14건(EN 축어 기준 · 수치 불변) ──
   "hpt-5": "1.600 millones de KRW en premios · satélites online en Hangame Royal Hold'em → Main Event en vivo (Día 1: 11–12 sep · Día 2: 13 sep) · abierto también a ciudadanos coreanos",
-  "apl-seoul-winter-circuit-1": "Circuit I 400 millones de KRW GTD · APL Winter Series 2.300 millones GTD en total · Seúl vuelve después de dos años · en todos los eventos se entra solo con ticket de asiento (sin buy-in en efectivo): dónde conseguirlos, por anunciar · organiza la Korea Holdem Sports Association",
+  "apl-seoul-winter-circuit-1": "Circuit I 400 millones de KRW GTD · APL Winter Series 2.300 millones GTD en total · Seúl vuelve después de dos años · en todos los eventos se entra solo con ticket de asiento (sin buy-in en efectivo): los tickets se consiguen en los pubs de hold'em socios oficiales de APL · organiza la Korea Holdem Sports Association",
   "wpt-bestbet-scramble": "Main Event US$5.000 / US$1.000.000 GTD",
   "wpt-prime-lodge": "Main Event US$1.100 / US$1.000.000 GTD",
   "wpt-prime-cyprus": "Main Event US$1.100 / US$1.000.000 GTD",
@@ -2051,7 +2051,7 @@ const SCHEMA_DESC_EN: Record<string, string> = {
   "apt-jeju-fall":
     "The Asian Poker Tour's autumn 2026 Jeju stop: 135 events with ₩2.2bn guaranteed on the Main Event.",
   "wpt-seoul":
-    "The World Poker Tour's first event at the INSPIRE Entertainment Resort — 46 events with ₩1bn guaranteed on the Main Event.",
+    "The World Poker Tour's first event at the INSPIRE Entertainment Resort — 45 events with ₩1bn guaranteed on the Main Event.",
   "appt-manila":
     "The 2026 Manila stop of the PokerStars APPT, held at Okada Manila with ₱132M guaranteed across the series.",
 };
@@ -2076,7 +2076,7 @@ const SCHEMA_DESC_JA: Record<string, string> = {
   "apt-jeju-fall":
     "APTの2026年秋の済州ストップ。135イベント、メインイベントは22億ウォン保証。",
   "wpt-seoul":
-    "WPTがINSPIREエンターテインメントリゾートで初開催する大会。46イベント、メインイベントは10億ウォン保証。",
+    "WPTがINSPIREエンターテインメントリゾートで初開催する大会。45イベント、メインイベントは10億ウォン保証。",
   "appt-manila":
     "PokerStars APPTの2026年マニラストップ。Okada Manila開催で、シリーズ全体₱132M保証。",
 };

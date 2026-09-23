@@ -1522,7 +1522,7 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.holdemmaster.com/en/tournaments" />
   </url>
 
-  <!-- 블로그 포스트 (70편) -->
+  <!-- 블로그 포스트 (73편) -->
 
   <url>
     <loc>https://www.holdemmaster.com/blog/3bet-pot-bet-sizing</loc>
@@ -1617,6 +1617,13 @@
   <url>
     <loc>https://www.holdemmaster.com/blog/ak-offsuit-strategy</loc>
     <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.holdemmaster.com/blog/apl-seoul-2026-guide</loc>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1741,6 +1748,13 @@
   <url>
     <loc>https://www.holdemmaster.com/blog/ggpoker-wsop-express-satellite-guide</loc>
     <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.holdemmaster.com/blog/gop-incheon-2026-ii-guide</loc>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -2320,6 +2334,13 @@
   <url>
     <loc>https://www.holdemmaster.com/blog/when-to-fold-preflop-holdem</loc>
     <lastmod>2026-08-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.holdemmaster.com/blog/wpt-seoul-2026-guide</loc>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
