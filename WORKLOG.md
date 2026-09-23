@@ -1,3 +1,11 @@
+## 2026-09-23 (3) — 분석 보고서 처방 2회차 ③ AI 유입 솔버 랜딩: 계측부터
+
+- **GA 재조회(08-26~09-22)**: chatgpt → /en/solver 121세션(모바일 63 참여 28.6% · 데스크톱 56 · 44.6%) · 이벤트 page_view 189 · user_engagement 56 · scroll 5 · 주간 27→64→70→74. 인용 «질문»은 GA에 없다(리퍼러에 프롬프트 없음 · manualTerm (not set)).
+- **발견**: GA4 click 이벤트 linkDomain에 `solver.holdemmaster.com` **0건** — 같은 루트 도메인이라 outbound로 안 센다. 즉 «10초 이탈»에 앱 진입자가 섞여 판정 불가였다.
+- **화면(라이브 390·1440, screen-review)**: 첫 뷰포트에 h1 + 직답 단락 + 「Open the solver →」 CTA 이미 있음 · overflow 0 · 콘솔 에러 0. 보고서 처방의 «첫 화면에 답+앱 진입»은 이미 충족.
+- **조치**: `app/layout.tsx`에 `solver_open` 이벤트(afterInteractive · 캡처 단계 위임 · dataLayer 큐라 gtag.js lazyOnload 전 클릭도 보존). 로컬 `next start`에서 gtag 로드 전 클릭 → collect 요청 `en=solver_open` 1건 실측.
+- 판독 10/7경 → `docs/update-calendar.md` 10월. 그 전엔 랜딩 문안 무변경. fr·pt·es·de 전파도 판독 후.
+
 ## 2026-09-23 (2) — 분석 보고서 처방 1회차 (①②④⑤) 이행
 
 사장님 착수 지시. 보고서 `docs/seo-report-2026-09-23.md` §7-1.

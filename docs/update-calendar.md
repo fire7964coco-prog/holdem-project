@@ -29,6 +29,12 @@
 - **기준선**: `docs/post-placement-analysis-2026-09-16.md` §2 표(창 2026-08-17~09-13) · 검증 기록 `docs/post-placement-verification-2026-09-16.md`
 - **함께**: 10/5(WPL 제8회)·10/7(APT 제주) 종료 뒤 `EVENT_UNTIL`이 자동 강등했는지 홈 상단 육안 확인.
 
+### 10/7경 — AI 유입 솔버 랜딩 `solver_open` 2주 판독 (계측 배포 2026-09-23)
+- **배경**: 솔버 앱은 같은 루트 도메인이라 GA4 outbound click이 안 남는다 → /en/solver AI 유입 «절반 10초 이탈»에 «앱으로 넘어간 사람»이 섞여 판정 불가였다. 09-23 `app/layout.tsx`에 `solver_open` 이벤트를 달았다.
+- **볼 것**: GA4 eventName=`solver_open` × landingPage × sessionSource(chatgpt) × deviceCategory. 비율 = solver_open 세션 ÷ 랜딩 세션.
+- **판정**: 앱 진입이 높으면 랜딩은 제 몫을 한다(무조치). 낮으면 → 모바일부터(AI 유입 /en/solver 모바일 63세션·참여 28.6% vs 데스크톱 56·44.6% — 첫 화면의 «Desktop Chrome recommended» 안내가 모바일을 밀어내는지) 처방.
+- **기준선(08-26~09-22)**: chatgpt → /en/solver 121세션 · 참여 44 · scroll 5 · 주간 27→64→70→74.
+
 ---
 
 ## 🟢 9월 — 검색엔진 등록 후속 관측 (2026-09-12 신설)

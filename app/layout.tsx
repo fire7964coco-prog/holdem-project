@@ -269,6 +269,25 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             gtag('config', 'G-CHSBJJDC14', { send_page_view: true });
           `}
         </Script>
+        {/*
+         * 🔴 2026-09-23 — 솔버 앱 진입 클릭 계측(`solver_open`).
+         * solver.holdemmaster.com은 같은 루트 도메인이라 GA4 향상된 측정의 outbound click이
+         * «내부 링크»로 보고 **아무것도 안 남긴다**(09-23 실측: click 이벤트 linkDomain에 solver 0건).
+         * 그래서 AI 유입 /en/solver의 «10초 이탈»에 «앱으로 넘어간 사람»이 섞여 구분이 안 됐다.
+         * afterInteractive + dataLayer 큐 — gtag.js(lazyOnload)가 늦게 와도 큐에 남는다.
+         * 솔버 링크는 전부 target=_blank라 페이지가 살아 있어 전송이 끊기지 않는다.
+         */}
+        <Script id="ga4-solver-open" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function solverGtag(){ window.dataLayer.push(arguments); }
+            document.addEventListener('click', function (e) {
+              var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+              if (!a || a.hostname !== 'solver.holdemmaster.com') return;
+              solverGtag('event', 'solver_open', { link_url: a.href, link_text: (a.textContent || '').trim().slice(0, 60) });
+            }, true);
+          `}
+        </Script>
 
         {/*
          * Vercel Speed Insights — 실사용자(RUM) Core Web Vitals

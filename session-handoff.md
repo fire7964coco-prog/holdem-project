@@ -12,7 +12,7 @@
 | 회차 | 항목 | 상태 |
 |---|---|---|
 | 1 | ②①④⑤ — 대회 점검 · 족보 필라 헤드텀 정렬 · 롱테일 FAQ 흡수 · 버튼포지션 판정 | ✅ `9f128346` 배포·라이브 3/3·IndexNow 3 (WORKLOG 09-23 (2)) |
-| **2 (다음)** | **③ AI 유입 /en/solver 랜딩** — ChatGPT가 인용하는 질문 실측(무료·설치 없음 축 추정) → 첫 화면에 그 답 + 앱 진입. 기준선: AI 282세션/28일, /en/solver 126 · 스크롤 5/126 · 절반 10초 내 이탈. 그다음 fr·pt·es·de solver 전파. 본체 = `docs/solver-landing-playbook.md` | 대기 |
+| 2 | ③ AI 유입 /en/solver — 첫 화면(390·1440)에 직답+CTA **이미 있음**(처방 전제 충족). 공백은 계측: 솔버 앱 클릭이 GA에 0 → `solver_open` 이벤트 배포. **판독 10/7경**(`docs/update-calendar.md` 10월) 전엔 랜딩 문안 손대지 않는다 | ✅ 계측 배포 (WORKLOG 09-23 (3)) |
 | 1.5 | 🔴 **결재 필요** — WPT 서울·GOP 인천 II(10-30)·APL 서울(10-23) **KO 가이드 글 없음**(`lib/tournaments.ts`에 `blogLink` 없음). 신규 발행이라 사장님 판단. 효과를 보려면 개막 2주 전(10/9~16)까지 · 함께: ja `japan-poker-tournaments-guide` 9/23·9/24 만료 항목(AJPC·JOPT 札幌 종료 → 서술 갱신, `docs/update-calendar.md` 9월 절) | 결재 대기 |
 | 3+ | ⑦ 번역 반응 순(ja·id 우선) — 레인 세션 몫 | 대기 |
 | 관측 | ⑥ 규칙 축(10월 중순) · ⑧ 모바일 홈(10/14) · 족보·흡수 효과(10/14 7일창 → 10/21 28일창) → `docs/update-calendar.md` · 기준선 `docs/keyword-bank/ko-longtail-absorb.md` | — |
