@@ -1,34 +1,36 @@
 # 다음 세션 알림장
 
-> 갱신: 2026-09-23. 최신 사용자 지시: **GA4·GSC 28일 분석 보고서**(보정 후 현재 위치·장단점·개선안) → `docs/seo-report-2026-09-23.md` 완료.
-> 배포·라이브 검증·IndexNow까지 완료했다. 시작 순서: AGENTS.md → CLAUDE.md 전문 → 이 파일 → git status/diff stat.
+> 갱신: 2026-09-23 (Claude 세션 마감). 시작 순서: AGENTS.md → CLAUDE.md 전문 → 이 파일 → `git status` + **워크트리 3곳 status**(아래).
+> 🔴 **작업 주체가 바뀐다**: 09-22까지는 **GPT(커서/Codex)로 이 폴더를 열어 작업**했다(커밋 트레일러 없음·영어 커밋 메시지 = GPT분). 09-23 GA·GSC 보고서와 처방 1회차는 Claude. **한도 리셋 후 다시 Claude 본체로 간다.** GPT가 남긴 미결은 아래 «B. 이월 대기열»에 모았다 — 정본은 `docs/backlog-closeout-2026-09-22.md` §3·§4(GPT가 쓴 체크포인트. 그 뒤 **규칙 41편·Q8-a PT·086161eb는 09-22에 배포·마감 완료**라 그 표의 해당 «남음» 칸은 낡았다).
 
-## 완료 상태
+## 사장님이 정한 순서 (09-23)
 
-- **09-23 분석 보고서** `docs/seo-report-2026-09-23.md` 완료(스냅샷 09-21 · kpi-log 1행 · 색인 감사 · 캘린더 10/14 항목). 처방은 결재 대기.
-- 미배포 5커밋(`086161eb..1c22b5c6`)을 `origin/main`에 push했다. Vercel 프로덕션 배포 `dpl_8ErKhGhM2T4xJPVF9mJ3eGVyihoG` Ready 및 `www.holdemmaster.com` 연결 확인.
-- 규칙 41편 라이브 검증 완료: HTTP200, canonical, dateModified 2026-09-22, FAQ 293/293, 모바일 390px overflow0, 마크업 누출0, 히어로 정상. core9 tldr와 tail32의 TDA 2024/B149/Rule117/Rule47 문면을 확인했다.
-- 함께 배포된 PT 9편도 새 문면·FAQ 97/97·모바일 overflow0으로 9/9 통과했다.
-- 이번 push에서 실제 변경된 고유 49 URL만 IndexNow에 한 번 제출해 HTTP200을 받았다. 접수는 색인 완료가 아니다. GSC 수동 요청은 기존 사용자 보류 결정을 유지했다.
-- 상세 증거: `docs/harden-brief/rules-closeout-tail.md` §8-4, `WORKLOG.md` 2026-09-22 (9). 실행 보고는 무시되는 `tmp/rules-live-2026-09-22/`에 있다.
+**① GA 개선작업 마무리 → ② 기존 핸드오프(GPT 이월) 작업 이어서.** 한 세션 한 묶음, 끝나면 이 파일에서 그 행을 지운다.
 
-## 다음 실제 행동
+## A. GA·GSC 보고서 개선작업 (`docs/seo-report-2026-09-23.md` §7-1 · 사장님 착수 지시 09-23)
 
-1. 새 사용자 지시를 우선한다.
-2. 분석 보고서 처방(`docs/seo-report-2026-09-23.md` §7-1) — 사장님 착수 지시(09-23). **1회차(①②④⑤) 완료·배포**(WORKLOG 09-23 (2)). 남은 것은 아래 회차 표. 시한 항목(10/14 배치 재측정 · 10/21 족보·흡수 재측정 · 10월 중순 규칙 축)은 `docs/update-calendar.md`.
-3. 09-22 배포 묶음에는 남은 필수 행동이 없다.
-4. 다른 대기열(Q8-b ID/DE, calc EN7 등)은 이번 묶음에 포함하지 않았으며 새 지시 없이 자동 착수하지 않는다.
-
-## 🆕 09-23 보고서 개선작업 회차 계획 (사장님 착수 지시 · 회차 끝나면 해당 행 지운다)
-
-| 회차 | 항목 (보고서 §7-1 번호) | 상태 |
+| 회차 | 항목 | 상태 |
 |---|---|---|
-| 1.5 | 🔴 **결재 대기** — WPT 서울·GOP 인천 II(10-30)·APL 서울(10-23) **KO 가이드 글 없음**(1회차 ② 발견). 신규 발행이라 사장님 판단. 개막 2주 전 = 10/9~16 · ja `japan-poker-tournaments-guide` 9/23·9/24 만료 항목(AJPC·JOPT 札幌 종료)도 미처리 → `docs/update-calendar.md` 9월 | 대기 |
-| 2 | ③ AI 유입 /en/solver 랜딩 점검(ChatGPT 인용 질문 실측 → 첫 화면) + fr·pt·es·de solver 전파 | 대기 |
-| 3+ | ⑦ 번역 회차 ja·id 우선 (레인 세션 몫) | 대기 |
-| 관측만 | ⑥ 규칙 축 10월 중순 · ⑧ 모바일 홈 10/14 → `docs/update-calendar.md` | — |
+| 1 | ②①④⑤ — 대회 점검 · 족보 필라 헤드텀 정렬 · 롱테일 FAQ 흡수 · 버튼포지션 판정 | ✅ `9f128346` 배포·라이브 3/3·IndexNow 3 (WORKLOG 09-23 (2)) |
+| **2 (다음)** | **③ AI 유입 /en/solver 랜딩** — ChatGPT가 인용하는 질문 실측(무료·설치 없음 축 추정) → 첫 화면에 그 답 + 앱 진입. 기준선: AI 282세션/28일, /en/solver 126 · 스크롤 5/126 · 절반 10초 내 이탈. 그다음 fr·pt·es·de solver 전파. 본체 = `docs/solver-landing-playbook.md` | 대기 |
+| 1.5 | 🔴 **결재 필요** — WPT 서울·GOP 인천 II(10-30)·APL 서울(10-23) **KO 가이드 글 없음**(`lib/tournaments.ts`에 `blogLink` 없음). 신규 발행이라 사장님 판단. 효과를 보려면 개막 2주 전(10/9~16)까지 · 함께: ja `japan-poker-tournaments-guide` 9/23·9/24 만료 항목(AJPC·JOPT 札幌 종료 → 서술 갱신, `docs/update-calendar.md` 9월 절) | 결재 대기 |
+| 3+ | ⑦ 번역 반응 순(ja·id 우선) — 레인 세션 몫 | 대기 |
+| 관측 | ⑥ 규칙 축(10월 중순) · ⑧ 모바일 홈(10/14) · 족보·흡수 효과(10/14 7일창 → 10/21 28일창) → `docs/update-calendar.md` · 기준선 `docs/keyword-bank/ko-longtail-absorb.md` | — |
+
+## B. 이월 대기열 (GPT 작업분 · A 끝난 뒤 · 한 번에 하나만)
+
+| 순 | 묶음 | 위치·상태 | 재개 문서 |
+|---|---|---|---|
+| B1 | **EN 확률 7편 초안** (probability·pot-odds·outs·drawing-odds·equity·implied-odds·card-counting) | 🔴 **`../Holdem-calc-ko` 워크트리에 미커밋**(포스트 7 + 브리프). 자체검사만 끝, **독립검수·번역·이미지·빌드 전부 미실행**. 쟁점: pot-odds 새 직답 「첫 숫자+1의 역수」는 **x:1 정규화 비율에만 성립** → 조건 확인 후보. pot-odds 잘못 연결된 이미지 8 교체(premium 자산 덮어쓰기 금지) | 그 워크트리의 `docs/harden-brief/probability-closeout.md` §7 (main에는 없다) |
+| B2 | **Q8-b ID** 용어 정리 | `../Holdem-queue` clean · 준비만(25파일 179줄 범위 확정, 쓰기 0). ID showdown은 규칙 41편에서 이미 처리 → 중복 수정 금지 | `docs/harden-brief/queue-Q8-b-id-de-잔여.md` · `docs/keyword-bank/id-posting-reference.md` §5/5A |
+| B3 | **Q8-b DE** | 미착수 · 별도 회차 | 같은 브리프 |
+| B4 | 사실 묶음(미착수): SHC77/88 첫 탈락 페어 · WSOP 계정 2개(LIVE+Caesars) · paired-board 22 counterfeit 리버조건 · flush-vs-straight 반복 설명 / 표현: cooler J1 라벨 · EN hand-rankings short-deck 중복 · DE M존(연속값 유지) / **TDA 판본 부채**(2026 v1.1 번호 변경 — 전역 교체는 별건) | 범위는 `docs/en-first-queue.md` 정본에서 고정 후 | `docs/backlog-closeout-2026-09-22.md` §4 |
+
+- 워크트리 확인: `git worktree list` — calc-ko·ja·queue·zh·zh-hant 모두 HEAD `8f65168a`. **calc-ko의 미커밋 초안을 `git add -A`·강제동기화·reset으로 날리지 마라.**
+- 장기 미결(자동 착수 대상 아님): re-entry zh/zh-hant 용어 판정 · solver-client5 SEO 표현 · es LATAM · 우편함 회신 대기(마지막 발신 MB-079 — 번호는 파일 재확인). 시한은 `docs/update-calendar.md`.
 
 ## 참고 경계
 
-- 원래 출처·규칙·검증 기록: `docs/harden-brief/rules-closeout-tail.md` §2–§8.
-- 제목·description·keywords·slug·이미지·카드·팟 예제·URL·FAQ 질문/개수는 계속 보존한다.
+- 새 세션이라는 이유로 완료 글 전수 재검수·새 레인 생성·ID/DE 자동 착수 금지(GPT 체크포인트 §5와 같은 규율).
+- 사실 오류 / 번역 누락 / 표현 개선 / 이번 수정의 자기회귀를 따로 분류해 보고. 검사 자리 수를 결함 수로 부르지 않는다.
+- 09-22 규칙 배포 증거: `docs/harden-brief/rules-closeout-tail.md` §8-4 · WORKLOG 09-22 (9).
