@@ -8,6 +8,7 @@
 - 덤: implied-odds L87 em dash → Halbgeviertstrich(de-style 기존 1err 해소, 손댄 파일이라).
 - 네이티브 렌즈(서브 1): 바뀐 자리 전건 OK · 잔여 0 · 새 불일치 0(참고: probability131 «Open-Ended-Straßendraw» 표기 변이 — 둘 다 정상, 범위 밖).
 - 게이트: audit:hard de 🔴0(전후 동일) · de-style 기존 부채 6편 전후 동일(implied-odds는 0으로) · structure 핵심 결손 0 · answer-echo·hygiene·number-format·seo-sync·intl-links·faq-schema·directives 통과 · diff --check · 빌드 73+577. updated 09-24(limping·position-play·strategy·blind-meaning·short-stack·icm 갱신, 나머지 이미 09-24) · masterUpdated 불변.
+- 배포: push `d0b422de` → 라이브 Playwright 3/3(outs «Zähle dirty Outs nicht voll» · strategy «Die 6 größten Leaks» · short-stack «6 bis unter 10») · IndexNow 85 URL HTTP 200.
 
 ## 2026-09-24 (8) — B2: Q8-b ID 용어 정리 (25편 · `75adfe2f`)
 
