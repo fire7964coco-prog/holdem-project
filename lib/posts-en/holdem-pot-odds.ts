@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "To calculate pot odds, divide the amount you must call by the total pot after your call. Calling $50 into a $150 pot = 50 ÷ 200 = 25% — so you need at least 25% equity to make the call profitable.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-09",
+  updated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🧮",
@@ -46,7 +46,8 @@ That "how often you need to win" number is the whole point. Getting 3-to-1 means
 
 ## How to Calculate Pot Odds (Step by Step)
 
-Forget ratios for a second — the fastest usable form is a **percentage**, because you compare it directly to your chance of winning.
+> **Quick answer**
+> Calculate the final pot first, including the bet you face and your own call, then divide the call by that total. The result is a break-even equity percentage. Keep the pot's timing consistent: money already included in the current pot must not be added a second time.
 
 :::steps
 Add up the final pot | Current pot + the bet + your call. Example: $100 pot + $50 bet + your $50 call = $200
@@ -64,7 +65,8 @@ That's it. **Required equity = your call ÷ the final pot.** If your real chance
 
 ## Pot Odds as a Ratio vs. Percentage
 
-Old-school players talk in ratios ("I'm getting 4-to-1"); modern players think in percentages ("I need 20%"). You should be able to flip between them instantly, because the ratio is what you *see* (pot vs. bet) and the percentage is what you *use* (vs. your equity).
+> **Quick answer**
+> A pot-odds ratio compares the money you can win with the call you risk; a percentage expresses how often that risk must succeed. Getting 3-to-1, you risk one unit to win three, so you must win one time in four: 25%. A bigger reward for the same call lowers the break-even percentage.
 
 The conversion is one step: a ratio of **X-to-1** means you need **1 ÷ (X + 1)** as a percentage.
 
@@ -84,9 +86,12 @@ The pattern is intuitive: the more the pot dwarfs the call, the smaller the slic
 
 ## How Much Equity Do You Need to Call?
 
+> **Quick answer**
+> A half-pot bet requires 25% equity to call; a pot-sized bet requires 33%, and a double-pot bet requires 40%. The target depends on the bet's size relative to the pot, not its dollar amount. Work out that target first, then judge your hand against the range offering you that price.
+
 ![Premium hole cards on green felt — deciding whether the price is right to continue](/images/holdem-starting-hands-premium.webp "The required equity depends entirely on the size of the bet you face")
 
-Here's the shortcut that lives in your head at the table. Your required equity depends **only on the size of the bet relative to the pot** — so memorize these seven anchors and you'll never need a calculator.
+Memorize these seven anchors so you can price the call before deciding whether your hand is strong enough:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -108,7 +113,10 @@ Even a massive **2×-pot overbet only asks for 40% equity**. You almost never ne
 
 ## Pot Odds Chart: Which Draws Beat Which Bets
 
-Now connect the price to your hand. [Count your **outs**](/en/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp") (cards that make your hand), convert them to equity, and check it against the bet. These are the draws you'll face most:
+> **Quick answer**
+> Whether a draw meets the price depends on both its clean outs and the number of cards this call buys. A flush draw's two-card chance is much higher than its one-card chance. Use the column for the actual decision, and do not treat merely making a pair or flush as a guaranteed win.
+
+[Count your **outs**](/en/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp") before using the chart. The six-out overcard row assumes either pair wins; discount pair-making cards that still lose to the opponent's likely hands.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -128,7 +136,8 @@ Read it against the bet-size table above. Facing a ==half-pot bet (need 25%)==: 
 
 ## Pot Odds vs. Equity vs. Implied Odds
 
-These three get blended together constantly, and the confusion costs money. Here's the clean split:
+> **Quick answer**
+> Pot odds set the price, equity measures your expected share, and implied odds estimate additional money won later. Start with the first two. Only count a future payoff if there are chips left to win and an opponent likely to pay; completing a second-best hand can instead cost more.
 
 :::compare
 Term | What it means
@@ -145,7 +154,8 @@ The dark mirror is **reverse implied odds** — the chips you'll *lose* when you
 
 ## The Rule of 4 and 2: Turning Outs Into Odds Fast
 
-You can't stop to compute exact equity mid-hand, so use the **Rule of 4 and 2**:
+> **Quick answer**
+> Use the Rule of 4 and 2 to estimate whether a draw is near the price of a call. Four times your outs approximates two cards, while twice your outs approximates one. Before choosing the multiplier, ask whether the present call gets you to the river without another payment; a close decision deserves the exact table.
 
 - **On the flop, with two cards still to come:** multiply your outs by **4**.
 - **On the turn, with one card to come:** multiply your outs by **2**.
@@ -159,6 +169,9 @@ Full derivations for every draw and made hand live in the [probability chart](/e
 ---
 
 ## Common Pot Odds Mistakes Beginners Make
+
+> **Quick answer**
+> The costly pot-odds mistakes are using the wrong final pot, counting cards that still lose, and buying one card with a two-card estimate. Future money can also be imaginary: deep stacks do not guarantee payment. Check the price, clean outs, and remaining betting separately before calling a draw.
 
 I made every one of these before they made me broke. Watch for them:
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "By the river you'll make one pair 43.8% of the time, two pair 23.5%, a flush 3.0%, and a full house 2.6% — while a royal flush shows up just once in about 31,000 hands.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-13",
+  updated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🎲",
@@ -36,7 +36,8 @@ Poker isn't a guessing game. Every call, fold, and shove is a ==probability ques
 
 ## Poker Hand Odds Chart: The Probability of Every Hand
 
-Here's the master chart. The trick most sites skip: there are ==two different numbers== for every hand, and confusing them is why people argue about how rare a royal flush "really" is.
+> **Quick answer**
+> A poker hand's probability depends on how many cards you get to use. In Hold'em, the best five of seven produce one pair 43.8% of the time and two pair 23.5%. Those river frequencies differ from a random five-card deal; choose the matching column before comparing how rare two hands are.
 
 - **5-card odds** = the chance a single random five-card hand *is* that hand (the classic textbook number).
 - **Hold'em (by the river)** = the chance you *end up* with that hand after seeing all seven cards (your two hole cards + five community cards). This is the number that actually matters at the table.
@@ -69,6 +70,9 @@ The ranking follows the **five-card column**: the rarer a hand is among five ran
 
 ## What Are the Odds of Being Dealt Each Starting Hand?
 
+> **Quick answer**
+> Pocket aces arrive about once per 221 deals, but any pocket pair appears about once per 17. The difference is the number of combinations: there are 1,326 possible two-card deals, and a particular pair is only six of them. Any two suited cards arrive 23.5% of the time, while A-K suited specifically is just 0.30%.
+
 ![Pocket aces — the ace of spades and ace of hearts freshly dealt on green felt beside poker chips](/images/holdem-probability-starting-hands.webp "Pocket aces: the best starting hand, dealt just once in 221 hands")
 
 Before any flop, there are exactly **1,326 possible two-card starting hands**. Here's how often the ones people ask about show up.
@@ -87,7 +91,8 @@ So the next time someone says "I never get aces," they're roughly right — you'
 
 ## What Are the Odds of Flopping Each Hand?
 
-This is the table most odds pages bury or split across a dozen articles. These are the odds of the flop *making* your hand, given the hole cards in the left column.
+> **Quick answer**
+> With a pocket pair, you flop a set or better 11.8% of the time. With two suited cards, a made flush is only 0.84%, while a flush draw is 10.9%. These are conditional odds: start with the hole cards shown in the table, not the frequency of that hand across every random deal.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -103,13 +108,14 @@ This is the table most odds pages bury or split across a dozen articles. These a
 
 </div>
 
-The one to memorize is the top row: ==**you flop a set about 12% of the time**, or roughly 1 in 8.5==. That single number decides whether calling a raise to "set-mine" a small pair is profitable — you need the pot (and your opponent's likely stack) to pay you off more than 7.5 to 1 when you hit. That's the bridge to [pot odds](#pot-odds), below. For the full derivation of every row here — plus the set-mining stack rule and the made-vs-draw-vs-complete flush split — see the deep dive on [drawing odds and the odds of flopping each hand](/en/blog/holdem-drawing-odds "thumb:/images/holdem-drawing-odds-hero.webp").
+For set mining, ==7.5 to 1 is a theoretical break-even payoff, not a sufficient stack rule==: it assumes every hit wins and gets paid. In practice, the usual 15–20× effective-stack guideline allows for missed value and losing sets; even that is a heuristic, not an automatic call. That's the bridge to [pot odds](#pot-odds), below. For the full derivation of every row here — plus the set-mining stack rule and the made-vs-draw-vs-complete flush split — see the deep dive on [drawing odds and the odds of flopping each hand](/en/blog/holdem-drawing-odds "thumb:/images/holdem-drawing-odds-hero.webp").
 
 ---
 
 ## Drawing Odds: Hitting Your Flush or Straight by the River
 
-You have a draw on the flop. How often do you complete it? It all comes down to **outs** — the cards left in the deck that make your hand. Count your outs, then read across.
+> **Quick answer**
+> A nine-out flush draw completes about 35% of the time over the turn and river, compared with 19.6% on the river alone after a missed turn. An eight-out straight draw is slightly less likely. These are completion probabilities, not guaranteed wins: first discount cards that improve your hand but leave an opponent ahead.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -126,25 +132,28 @@ You have a draw on the flop. How often do you complete it? It all comes down to 
 
 </div>
 
+The six-out overcard row assumes pairing either rank wins. Against two pair, a set, or a stronger draw, some or all of those pair-making cards may be dirty — discount them rather than treating six as guaranteed winning outs.
+
 The classic spot: you flop a **flush draw** (nine outs). You'll get there ==35% of the time by the river== — better than one in three. An **open-ended straight draw** (eight outs) hits 31.5%. Note the two columns: once the turn bricks you have one card to come instead of two, so your odds roughly halve — 35% becomes 19.6% for the flush draw — which is exactly why draws get more expensive to chase street by street.
 
 ---
 
 ## How to Calculate Poker Odds: Counting Outs and the Rule of 2 and 4
 
-You can't carry that table in your head — but you don't need to. The **Rule of 2 and 4** gets you within a percent or two in one second:
+> **Quick answer**
+> The Rule of 2 and 4 estimates a draw's completion percentage: use twice the outs for one remaining card and four times the outs for the turn and river together. The two-card estimate can price a flop call only if no further payment is needed to see both cards. It is a shortcut, not exact equity.
 
 :::steps
 Count your outs | The unseen cards that complete your hand (flush draw = 9)
-On the flop (2 cards to come) | Multiply outs × 4 → your approximate % to hit by the river
+On the flop, if you'll see both cards without paying again | Multiply outs × 4 → your approximate % to hit by the river
 On the turn (1 card to come) | Multiply outs × 2 → your approximate % to hit on the river
 :::
 
 **Worked example.** You have four cards to a flush after the flop. That's ==9 outs== (13 of your suit − 4 you can see). On the flop: 9 × 4 = **36%** — the true figure is 35.0%, so you're spot on. On the turn if you missed: 9 × 2 = **18%** (true: 19.6%).
 
-:::tip[The rule slightly *over*-estimates once you have more than about 9 outs. With a 15-out monster, "×4" says 60% but the real number is 54% — shade it down a few points for big draws.]:::
+:::tip[The ×4 estimate is already slightly high at 7 outs; the gap becomes more important with bigger draws. With a 15-out monster, "×4" says 60% but the real number is 54% — shade it down a few points for big draws.]:::
 
-That's the entire trick. Outs → times four on the flop → your [equity](/en/blog/holdem-equity "thumb:/images/holdem-equity-hero.webp"). Everything else is just knowing what to do with that number. The one skill this rule assumes you've mastered is the count itself — for combo draws, overlapping outs, and the "dirty" outs that shouldn't count, see the full guide to [counting outs in poker](/en/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp").
+That's the shortcut: clean outs → the multiplier for the cards you'll see → a draw estimate to use alongside your [equity](/en/blog/holdem-equity "thumb:/images/holdem-equity-hero.webp"). Everything else is just knowing what to do with that number. The one skill this rule assumes you've mastered is the count itself — for combo draws, overlapping outs, and the "dirty" outs that shouldn't count, see the full guide to [counting outs in poker](/en/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp").
 
 ---
 
@@ -152,9 +161,10 @@ That's the entire trick. Outs → times four on the flop → your [equity](/en/b
 
 ## Pot Odds: Turning Your Odds Into a Call or Fold
 
-![Pot odds infographic — a $100 pot and a $25 call, so 25 ÷ 125 means you need 20% equity](/images/holdem-probability-pot-odds.webp "A $25 call into a $100 pot: 25 ÷ 125 = 20% equity needed to break even")
+> **Quick answer**
+> Pot odds turn a call into a break-even target: divide the call by the pot after adding it. Compare that price with your chance of winning over the cards the call actually buys. A two-card flush figure cannot justify paying for only the turn when another bet may follow; future payoffs need a separate estimate.
 
-Knowing you'll hit 35% of the time is useless until you compare it to the **price**. Pot odds are simply: *what fraction of the final pot am I paying to call?* If your chance of winning is bigger than that fraction, you call.
+![Pot odds infographic — a $100 pot and a $25 call, so 25 ÷ 125 means you need 20% equity](/images/holdem-probability-pot-odds.webp "A $25 call into a $100 pot: 25 ÷ 125 = 20% equity needed to break even")
 
 **Worked example.** The pot is $100. Your opponent bets $50, making it $150. You must call $50 to win that $150.
 
@@ -172,9 +182,10 @@ That's the moment all the numbers pay off — but **match the number to the stre
 
 ## How Rare Is a Royal Flush? (And a Straight Flush)
 
-![Infographic of a royal flush in hearts — A♥ K♥ in hand completing A-K-Q-J-10 of hearts on a 10♥ J♥ Q♥ board](/images/holdem-probability-royal-flush.webp "A royal flush in hearts: the rarest hand in poker, about 1 in 30,940 by the river")
+> **Quick answer**
+> A royal flush appears roughly once in 30,940 random seven-card Hold'em hands, far more often than in a five-card deal. A non-royal straight flush is about 1 in 3,590 by the river — less rare, but still exceptional. Neither figure describes your chance from a particular draw: once hole cards and a flop are known, the calculation is conditional on those cards.
 
-The two rarest hands are the ones players brag about for years — with good reason.
+![Infographic of a royal flush in hearts — A♥ K♥ in hand completing A-K-Q-J-10 of hearts on a 10♥ J♥ Q♥ board](/images/holdem-probability-royal-flush.webp "A royal flush in hearts: the rarest hand in poker, about 1 in 30,940 by the river")
 
 - **Royal flush:** as a dealt five-card hand, ==1 in 649,740==. Playing Hold'em to the river, it improves to about 1 in 30,940 because you're choosing your best five from seven cards. Either way, most players go *years* between them.
 - **Straight flush:** about 1 in 72,193 as a five-card hand (about 1 in 3,590 by the river in Hold'em). Still a once-a-year sighting for most.
@@ -189,7 +200,8 @@ A common myth: "a royal flush beats everything, so it can be *tied*." The pot ca
 
 ## Long-Shot Odds: Coolers, Quads, and Bad Beats
 
-Some numbers exist mostly to explain the worst night of your poker life.
+> **Quick answer**
+> Long-shot poker odds need a starting condition. Flopping quads with a pocket pair is about one in 408; being dealt aces is one in 221 before you see any cards. These events explain rare outcomes, but a rare loss alone does not show whether the preceding decision was correct.
 
 | Long shot | Odds |
 |:---|:---:|
@@ -231,7 +243,7 @@ A. If you flop a flush draw (nine outs), you'll complete it about 35% of the tim
 
 **Q. What are the odds of flopping a set?**
 
-A. About 11.8%, or roughly 1 in 8.5, when you hold a pocket pair. That "7.5 to 1 against" figure is the basis for deciding whether set-mining a small pair is profitable.
+A. About 11.8%, or roughly 1 in 8.5, when you hold a pocket pair. The equivalent 7.5-to-1 odds describe misses versus hits, not a recommended stack depth. A set-mining call also needs realistic future payment; the practical 15–20× guideline leaves room for sets that get no action or lose.
 
 **Q. What are the odds of flopping a royal flush?**
 
@@ -243,7 +255,7 @@ A. 1 in 221 (0.45%) for aces specifically. Any pocket pair, though, comes around
 
 **Q. What is the Rule of 2 and 4 in poker?**
 
-A. A shortcut for draw odds — also called the "4-2 rule": multiply your outs by 4 on the flop (two cards to come) or by 2 on the turn (one card to come) to estimate your percentage chance of hitting. It's accurate to within a point or two up to about nine outs. Use ×4 only when you'll see both cards without more betting.
+A. The Rule of 2 and 4 (also called the "4-2 rule") estimates draw odds: multiply your outs by 4 on the flop for the turn and river together, or by 2 on the turn for the river alone. Nine outs give 36% over two cards by ×4, versus 35.0% exactly; ×2 gives 18% for the river card, versus 19.6%. Check the exact table when the price is close, and reserve the two-card figure for seeing both cards without more betting.
 
 **Q. How do you calculate pot odds?**
 
@@ -273,9 +285,9 @@ A. There's no single number — the nuts (the best possible hand on a given boar
 
 ## The 3 Numbers to Burn Into Memory
 
-1. **Flop a set: ~12% (1 in 8.5).** Decides every set-mining call.
+1. **Flop a set: ~12% (1 in 8.5).** The hit rate starts the set-mining calculation; stack depth and likely payment decide whether the call pays.
 2. **Flush draw by the river: 35%.** Nine outs, Rule of 4 → 9 × 4 = 36%.
-3. **Pot odds beat gut feeling.** If your chance to hit is bigger than the price of the call, you call — every time.
+3. **Pot odds beat gut feeling.** Match the probability to the cards this call buys, then compare the price with your chance to win — completing a draw is not always enough.
 
 Poker rewards the players who've made these automatic. Learn the chart, drill the Rule of 2 and 4, and start asking "what are the odds?" *before* you act instead of after. Next, put the math to work by learning [which starting hands to play from each position](/en/blog/holdem-starting-hands-chart), or brush up on [why a flush beats a straight](/en/blog/holdem-flush-vs-straight) so you always know what your outs are worth.
 

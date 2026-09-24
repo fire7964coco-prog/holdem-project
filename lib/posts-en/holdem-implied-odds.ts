@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Implied odds are the extra chips you expect to win on later streets when your draw hits. They let you profitably call a draw that pot odds alone say to fold — but only if stacks are deep and your opponent will actually pay you off.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-13",
+  updated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "💰",
@@ -179,7 +179,7 @@ I lost more chips to imaginary implied odds than to any bad beat. The fix is a s
 
 **Q. What are implied odds in poker?**
 
-A. Implied odds are the extra chips you expect to win on later streets if your draw completes, added to the chips already in the pot. They let you profitably call some draws that pot odds alone say to fold — as long as the stacks are deep enough to pay you off when you hit.
+A. Implied odds are the extra chips you expect to win on later streets if your draw completes — the future-payoff part of a drawing decision. A call that falls short on the current price may recover the difference after you hit, but only if an opponent has chips left and will pay. Treat that payment as an estimate, not as money already in the middle.
 
 **Q. How do you calculate implied odds?**
 
@@ -187,7 +187,7 @@ A. Use: extra needed = (your call ÷ your hit chance) − (the current pot + you
 
 **Q. What is the difference between pot odds and implied odds?**
 
-A. Pot odds count only the money in the pot right now and can be calculated exactly. Implied odds add the money you expect to win on later streets, which is an estimate. Pot odds tell you if a call pays for itself today; implied odds tell you if it pays off across the whole hand.
+A. The difference between pot odds and implied odds is certainty: the present pot and call amount are visible; later payment depends on what happens next. Check the immediate price first, then ask how much extra a hit must earn. A deep stack makes that money available, but does not guarantee that your opponent will put it in.
 
 **Q. When should you use implied odds?**
 
@@ -195,7 +195,7 @@ A. Start with pot odds. If your equity already beats the immediate price, just c
 
 **Q. What are reverse implied odds?**
 
-A. Reverse implied odds are the chips you lose when you complete your draw but it's still second best — like making a low flush against a higher one, or the low end of a straight against a bigger one. They make non-nut draws worth less than their outs suggest, so you need a better immediate price to call.
+A. Reverse implied odds are the extra chips a completed draw costs you when it is still second best: a small flush or low straight can encourage you to invest more while another hand remains ahead. A draw with this risk needs a more cautious payoff estimate than a draw to the nuts; counting the same number of completing cards does not make them equally valuable.
 
 **Q. What are good implied odds — how much do you need?**
 

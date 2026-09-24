@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "You flop a set with a pocket pair 11.8% of the time (7.5-to-1 against), flop a flush with two suited cards just 0.84%, and complete a flopped flush draw by the river 35% of the time. Every number below is derived from the deck, not guessed.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-09-13",
+  updated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🎲",
@@ -35,7 +35,8 @@ That's what drawing odds really are: not luck, but the ==fixed math of a 52-card
 
 ## The Flop Lifecycle: One Table Every Odds Page Splits Up
 
-Here's the table nobody builds in one place. Most sites tell you the odds of *flopping* a hand on one page and the odds of *completing a draw* on another — but at the table it's one continuous story. You get dealt two cards, you flop something made **or** a draw, and if it's a draw you either complete it or you don't.
+> **Quick answer**
+> Flopping a hand and completing a draw are different events. Two suited hole cards make a flush immediately only 0.84% of the time; once you have flopped a flush draw, its two-card completion chance is 35%. Read each column from its stated starting point rather than treating every percentage as a preflop chance.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -55,11 +56,12 @@ Read across a row and you see the whole lifecycle of a hand. Two suited cards al
 
 ## Odds of Flopping a Set (and the Set-Mining Math)
 
+> **Quick answer**
+> A pocket pair flops a set or better 11.8% of the time — about 1 in 8.5, or 7.5-to-1 against — but that hit rate alone does not justify a call. For set mining (calling a raise with a small pair mainly to flop three of a kind), the practical guideline is roughly 15–20 times the call in effective stacks. You still need an opponent likely to pay, because some sets win little or lose.
+
 ![Infographic of a pocket pair's two outs highlighted in gold inside the deck, an arrow to three face-down flop cards, and a bar split twelve percent gold against eighty-eight percent grey](/images/holdem-drawing-odds-set-mining.webp "Three cards off the top of the deck settle a set-mining call — and most of the time they settle it against you")
 
-**You flop a set (or better) with a pocket pair 11.8% of the time — about 1 in 8.5, or 7.5-to-1 against.** This is the most important drawing number in the game, because it's the entire basis for *set mining*: calling a raise with a small pair purely to flop three of a kind.
-
-Where does 11.8% come from? Hold a pocket pair and there are two cards left in the deck that pair you. The flop is three cards drawn from the 50 you can't see. The clean way to count it is backwards — the chance you **miss** all three:
+That 11.8% starts with the two matching cards left after you receive a pocket pair. The flop is three cards drawn from the 50 you can't see, so count the opposite event first — the chance you **miss** both matching cards:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -89,9 +91,12 @@ Two related numbers people ask about:
 
 ## Flush Odds: Made vs Draw vs Complete
 
+> **Quick answer**
+> Two suited cards can flop a made flush, flop a draw, or miss both. The first two chances are 0.84% and 10.9%; only after the draw exists does the 35% river-completion figure apply. That last number covers both remaining cards, so it cannot price a call that buys only the turn.
+
 ![Ace-king of hearts with a queen-seven of hearts flop on green felt, a flopped nine-out flush draw beside a short stack of chips](/images/holdem-drawing-odds-flush-draw.webp "Two hearts in hand, two on the flop — a flush draw, not a made flush: 10.9% to flop, 35% to complete by the river")
 
-This is where competitors blur three completely different numbers. With two suited cards in your hand, there are **three separate questions**, and they're an order of magnitude apart:
+The three calculations use different known cards and different remaining draws:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -117,12 +122,15 @@ A **backdoor** (runner-runner) flush — you flop just *one* extra card of your 
 
 ## Straight Odds: Flopping One vs Drawing to One
 
+> **Quick answer**
+> Mid-ranked connectors flop a made straight about 1.3% of the time; hands near either end of the ranks have fewer possible runs. After a draw forms, an open-ender has eight completing cards and a gutshot has four. Their by-the-river chances count two cards, while the next-card chances below count only flop to turn.
+
 ![Two straight-draw panels side by side — a run open at both ends with a green 8 in a circle, and a run with a single inside gap and a gold 4](/images/holdem-drawing-odds-oesd-vs-gutshot.webp "An open-ender is worth double a gutshot — two open ends against one inside gap")
 
 Connectors like 8♠7♠ have their own lifecycle. You'll **flop a made straight only 1.3%** of the time (76-to-1) — rarer than most players assume. That figure holds for 54s through JTs, the connectors that can fill a straight from either end; hands at the edge of the deck have fewer runs, down to 0.33% for A-K. Far more often you flop a **draw**:
 
-- **Open-ended straight draw (OESD):** ~10% of flops with connectors. Eight outs, completes **31.5%** by the river — 1 − C(39,2)/C(47,2) — or 17% on any single card.
-- **Gutshot (inside) straight draw:** four outs, completes **16.5%** by the river, 8.5% on one card. Half the equity of an open-ender, which is why the same connectors play so differently depending on the flop.
+- **Open-ended straight draw (OESD):** ~10% of flops with connectors. Eight outs, completes **31.5%** by the river — 1 − C(39,2)/C(47,2) — or 17% from flop to turn.
+- **Gutshot (inside) straight draw:** four outs, completes **16.5%** by the river, 8.5% from flop to turn. Half the equity of an open-ender, which is why the same connectors play so differently depending on the flop.
 
 Notice the OESD (31.5%) and the flush draw (35%) are close — both are "one big draw," both roughly a third to hit by the river. That's the shortcut worth internalizing: a normal big draw is about ==**one in three**== to complete by the river, and it drops to about one in five to six on a single street.
 
@@ -130,7 +138,8 @@ Notice the OESD (31.5%) and the flush draw (35%) are close — both are "one big
 
 ## Rare Flops: Quads, Trips, Full Houses & Straight Flushes
 
-These are the numbers behind the best (and worst) nights of your poker life. Each is a clean combinatorics problem on the 19,600 possible flops:
+> **Quick answer**
+> With a pocket pair, flopping quads is 0.245% and flopping a full house is 0.98%. With two unpaired cards, flopping trips is 1.35%, a different route from a set. Every row below specifies the holding first, then counts the qualifying flops out of the same 19,600 possibilities.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -153,7 +162,8 @@ The full house figure counts every way the flop hands you a boat with a pocket p
 
 ## Odds of Being Dealt Your Hand
 
-Before any of the above, there's the deal. With **1,326 possible two-card combinations**, here's how often the hands people ask about arrive:
+> **Quick answer**
+> A specific pocket pair has six combinations among the 1,326 possible deals, while any pocket pair has 78. A-K suited has only four. These are chances before seeing your cards; once you hold a hand, questions about an opponent receiving the same ranks must account for the cards you have removed.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

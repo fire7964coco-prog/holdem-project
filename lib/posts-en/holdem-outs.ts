@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "An out is any card left in the deck that improves your hand to a likely winner. Count them, then convert: multiply outs by 4 on the flop or by 2 on the turn to get your rough % to hit. A flush draw is 9 outs ≈ 36% by the river.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-13",
+  updated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🎯",
@@ -44,6 +44,9 @@ Everything downstream — your equity, your [pot odds](/en/blog/holdem-pot-odds)
 
 ## How to Count Your Outs (Step by Step)
 
+> **Quick answer**
+> Count the unseen cards that reach your target hand, then remove candidates that would still leave you beaten. Start from the suit or rank total and subtract the cards already visible. Keep each physical card in the count only once, even when it completes two different draws.
+
 ![A player holds the ace and king of spades and studies a low three-card flop on green felt, counting overcard outs before acting](/images/holdem-outs-counting.webp "A-K on a low flop is a textbook counting spot — six overcard outs, plus the backdoors")
 
 Counting outs is a three-step routine you run on every draw until it's automatic:
@@ -62,9 +65,12 @@ The counting only uses cards you can see. You don't subtract your opponent's unk
 
 ## Poker Outs Chart: Every Common Draw
 
+> **Quick answer**
+> The standard starting counts are nine for a flush draw, eight for an open-ended straight draw, and four for a gutshot. Combined draws need an overlap deduction. Overcards and non-nut draws need another check: these counts describe cards that improve your hand, and only the ones likely to win deserve full value.
+
 ![Two draw counts side by side — thirteen spades with four struck through beside a large 9, and an open-ended run marked at both ends beside a large 8](/images/holdem-outs-nine-and-eight.webp "Left, the flush draw; right, the open-ender — the two out counts every other draw is measured against")
 
-Memorize these and you'll recognize your out count on sight. This is the chart every winning player has burned into memory:
+Use these raw counts as a starting point, then apply the dirty-out checks below:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -88,7 +94,8 @@ The two combo draws at the top are where players fumble the arithmetic, so they 
 
 ## Outs to Odds: The Conversion Chart
 
-Counting outs is only useful once you turn them into a percentage you can compare to the price you're being offered. Here's the master table — the odds of hitting by the river, plus the one-card odds for the very next card off the flop:
+> **Quick answer**
+> Nine outs hit the next card from the flop 19.1% of the time, or at least once by the river 35.0% of the time. The second figure includes two chances. Select the one-card column when pricing only the turn; the two-card column assumes you will see the full runout.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -112,7 +119,8 @@ Notice the 15-out monster: with two cards to come it's actually a **favorite** (
 
 ## The Rule of 4 and 2: Outs → Odds in Your Head
 
-You can't carry that table to the table, so use the shortcut every player relies on:
+> **Quick answer**
+> Once you have a clean out count, multiplying by four estimates the chance of hitting across two cards; multiplying by two estimates one card. These shortcuts get less reliable as a draw grows. They estimate completion, so counting a card that still loses cannot be fixed by choosing the right multiplier.
 
 - **On the flop (two cards to come):** outs ×4 ≈ your % to hit by the river.
 - **On the turn (one card to come):** outs ×2 ≈ your % to hit on the river.
@@ -121,7 +129,7 @@ A flush draw is 9 outs. On the flop: 9 × 4 = **36%** (true value 35.0% — dead
 
 :::tip[The ×4 shortcut quietly assumes you'll see *both* cards with no more betting — only true when you're already all-in. If there's a bet in front of you, use the ×2 (one-card) number for the street you're actually on.]:::
 
-There's one place the rule lies: **high out counts on the flop.** Because ×4 double-counts the small chance of hitting on *both* streets, it overshoots once you're past ~8 outs.
+The main weakness is **high out counts on the flop**. The exact two-card calculation accounts for hitting on either street without counting a double hit twice. The ×4 estimate starts running slightly high at 7 outs, but the gap grows with bigger draws; the usual correction below is used for more than 8 outs.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -140,7 +148,8 @@ The tidy fix for big draws: for **more than 8 outs on the flop**, multiply by 4 
 
 ## Combo Draws: Why 9 + 8 Isn't 17
 
-The big draws trip people up because you can't just add the two out counts — some cards do double duty, and counting them twice inflates your equity.
+> **Quick answer**
+> A flush draw plus an open-ended straight draw has 15 distinct completing cards, not 17: two straight cards already belong to the flush suit. A flush draw plus a gutshot has 12 because one card overlaps. Count the union of the draws, then separately discount any cards that would still lose.
 
 Say you hold ==b:J♠ T♠== on a ==9♠ 8♣ 2♠== flop. You have two draws stacked: a flush draw (spades) and an open-ended straight draw (any Q or 7 makes the straight). Add them naively and you get 9 + 8 = 17. But the **Q♠ and 7♠** each complete *both* the flush and the straight — they're already inside the 9 flush outs. Count them once:
 
@@ -154,9 +163,10 @@ Same logic on a **flush + gutshot**: 9 flush outs + 4 gutshot cards, but one of 
 
 ## Dirty Outs: The Cards That Only Look Like Wins
 
-![Infographic of a paired 10♠ 8♥ 4♠ 4♣ 6♦ board separating clean outs from dirty outs](/images/holdem-outs-dirty-outs.webp "On a paired board some of your outs are dirty — hitting the flush can still pay off a full house")
+> **Quick answer**
+> A dirty out improves your hand without reliably putting it ahead. Flush cards on paired boards, low flushes against higher flush draws, and overcards against strong made hands all need scrutiny. Start with the raw count, then reduce it according to the opponent's plausible holdings rather than paying for every improvement as a win.
 
-This is the section most guides skip, and it's the one that actually saves money. A **dirty out** (or "tainted" out) is a card that completes your hand but can still lose — so counting it at full value overstates your equity. Winning players count raw outs, then *discount* the dirty ones before reaching for the Rule of 4 and 2.
+![Infographic of a paired 10♠ 8♥ 4♠ 4♣ 6♦ board separating clean outs from dirty outs](/images/holdem-outs-dirty-outs.webp "On a paired board some of your outs are dirty — hitting the flush can still pay off a full house")
 
 Three situations to train your eye for:
 

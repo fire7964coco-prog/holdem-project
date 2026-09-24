@@ -121,3 +121,61 @@ FAQ 개수(de·pt 등), ja/pt의 없는 추가질문, zh probability의 없는 �
 - §14의 직답↔본문↔FAQ 반복을 직접 읽고, 4렌즈 및 2차 교열은 실제 수행 주체/범위로 기록한다. 자동 게이트 통과를 네이티브 검수라 부르지 않는다.
 - 구현 후 모바일/desktop 렌더를 screen-review 절차로 검수하고 root와 빌드 자원 조율. 이 브리프 단계에서는 **빌드/화면/렌즈 수행 완료를 주장하지 않는다**.
 - A4가 남으면 “확률 전부 종결”이라고 닫지 않는다. 완료목록과 승인대기/별도후속을 분리해 원래 대기열에 본체가 기록한다.
+
+## 7. EN 구현 초안 — 2026-09-22, 독립 검수 전
+
+이 절이 현재 실행 상태다. 위 재고조사 당시의 승인대기 표시는 경위로 남긴다. 본체가 A1+A2+A4를 승인했으며, **EN 7편만 구현했다. core7 번역·이미지 연결·빌드·화면 검수는 아직 미실행**이다.
+
+- 작업 위치: `Holdem-calc-ko / harden-calc-ko`, main `603deb7a`를 clean 상태에서 FF한 뒤 시작.
+- 파일: EN probability/pot-odds/outs/drawing-odds/equity/implied-odds/card-counting + 이 브리프만 소유.
+- A1: probability 무조건 콜을 현재 콜이 사는 카드 범위·깨끗한 outs 조건으로 변경. equity half-pot에 이번 콜로 올인/추가 지출 없이 두 장 조건과 9/47 비교. FAQ 64%는 상대 3명으로 교정.
+- A2: odds4에 27개 직답(8+7+6+6), 기존 정의 2개 유지. 이미지 선행 10곳은 직답 다음으로 배치하되 이미지 문자열 자체는 그대로. probability Rule FAQ는 근사 대 정확값의 역할로 분리했으며, 보호된 pot-odds 하단 FAQ는 수정하지 않았다.
+- A4: 두 표 옆 overcard 할인 전제, ×4 literal 과대평가 시작 7 outs와 Solomon >8 조건 분리, set-mining 이론 하한과 15–20x 실무 조건 구별. equity에 heads-up·두 장 무추가비용 세미블러프 및 순수블러프 전제를 명시하고 EQR 포지션 절대단정을 경향/범위/보드 조건으로 제한. fold frequency 용어와 equity/implied FAQ의 본문 반복을 줄였다.
+- card-counting: 정신적 계산·게임 무결성·플랫폼 도구정책을 구별. 전세계 합법/절대 퇴장 불가 단정 대신 행사/룸 규칙을 명시했다. 룸의 입장권한을 보장하지 않으며 새 형사·법률 판단은 넣지 않았다.
+- ja의 rake 현지화는 EN 문구 확정만으로 완료 처리하지 않는다. core7 실제 전파에서는 현행 대상 지역/의도편차를 다시 판정해야 한다.
+- 자체 교열 중 생긴 이미지 앞 빈 줄 10곳, “이미 올인인데 콜” 시간 표현, 법률범주를 불필요하게 언급한 메타 문장은 독립 검수 요청 전에 교정했다. 원본 문제와 이번 초안의 자기회귀를 구별한다.
+
+### 7-A. 최신 1차 자료
+
+- TDA 공식 [현행 규칙 페이지](https://www.pokertda.com/poker-tda-rules/)의 Dropbox 폴더에서 **`2026 Poker TDA Rules DOCX Longform Vers 1.1 final.docx`**를 직접 추출해 읽었다. 머리글은 **Version 1.1, September 21, 2026**. HTML `view-poker-tda-rules`의 v1.0 September 7만 근거로 삼지 않았다.
+- [공식 Dropbox ZIP](https://www.dropbox.com/scl/fo/mta1wai9r2u8rcierocz3/ANbe4au_y0Pl2kowJe0dnXA?dl=1&rlkey=z6fqvd49e1w4rwf2d39s04b1d&st=gjgodgb7) → 해당 DOCX → `word/document.xml`을 메모리에서 직접 확인. 파일/보고서 생성 없음.
+- 직접 확인한 Rule 5C는 live hand 중 전자/통신기기 조작 금지, 5D는 베팅 앱·차트·전략도구를 **테이블에서** 쓰지 않는다는 더 넓은 조건이다. 5D를 live hand에만 한정하지 않았다. TDA 적용 토너먼트로 범위 제한.
+- [PokerStars 공식 도구 정책](https://www.pokerstars.com/poker/room/prohibited/)도 직접 읽음. 실시간 액션 조언 금지와 client open 중 solver 제한을 인용했고, 온라인에서 모든 정적 차트/기본 계산기가 금지된다는 문장은 넣지 않았다.
+
+### 7-B. 시행한 검증과 한계
+
+| 검사 | 실제 결과 |
+|---|---|
+| EN 7편 전체 diff 직접 교열 | 수학/시간범위, 인원, 규칙 적용범위, 직답↔본문↔FAQ 관점으로 자체 재독. **독립 4인 검수나 네이티브 검수로 세지 않음** |
+| 파싱된 POST 객체 HEAD 대비 | 7편 모두 updated 외 메타, H2, 표 전체 행, 카드 토큰, 이미지 전체 줄, FAQ 질문 불변 |
+| FAQ 수 | probability15/pot11/outs9/drawing11/equity11/implied10/card8 유지 |
+| 새 직답 단어 수 | 27개 전부 47–56단어, EN 40–75 규격 통과 |
+| `check:answer-echo --locale=en --slug=...` 7개별 strict | 모두 exit0, echo/place/count/pointer 결함0. **length27은 기존 게이트가 EN에 기본 90–170문자 규격을 적용하는 단위 불일치**. 해당 스크립트121행 주석은 EN을 문자로 재지 않는다고 적지만 lenSpec은 fallback 적용. 문안을 문자규격으로 줄이지 않았고 게이트 코드는 소유범위 밖이라 미수정 |
+| `audit:hard --locale=en` 및 7개 slug별 | EN56/56 오류0·경고0. 단, 확률 cross-table 일부 수집6에도 실제 매칭 쌍0이며 나머지 slug는 cluster 외. **표 교차검산 완료로 부르지 않음** |
+| `check:faq-schema --locale=en` | 파싱/렌더러 계약56/56 통과. 최종 HTML 화면 검증은 아님 |
+| `check:intl-links` | 577편/25언어 통과 |
+| `check:meta` | 641편 상한 초과0. 기존 숫자 종결 경고20은 이번 7편 메타 변경과 무관 |
+| UTF-8/간격/`git diff --check` | U+FFFD0, 새 직답↔이미지 붙음0, 공백 오류0. Git LF→CRLF 안내만 있음 |
+| 빌드·화면·번역 대조 | 미실행: EN 확정 후 본체와 소유권/자원 조율. EN-only 상태에서 번역 parity 완료로 보고하지 않음 |
+
+추가 직접 산술: C(52,2)=1326, C(50,3)=19600, 셋 이상11.7551%, suited flop flush0.84184%, flop flush draw10.94388%, quads0.24490%, pocket-pair full house0.97959%, 중간 커넥터 straight1.30612%, 7장 royal 1/30940. §6의 9-outs·×4 경계·+$52 검산과 일치했다.
+
+숫자 토큰 전체가 불변인 것은 아니다. 기존 FAQ의 중복 $100/60%/$60 및 EQR 40%/75%/30% 예시를 삭제했고, 본문 조건 설명/직답에는 기존 표의 값과 7-outs 경계·9/47을 재사용했다. **표·카드·보호된 수치 예제는 불변**이다. 기각 원문의 `19.6%` 턴 fold, `19.1%` next-card, 올바른 표 열 이름, `starting pot`, `The bigger the bet`, 하단 Rule4/2 계수 선택은 직접 재확인했다.
+
+다음 단계: 본체 독립 diff 검수 → EN 확정 → core7 파일 소유 조율 및 실제 잔여만 전파 → 본체 이미지 연결 → 통합 게이트/모바일·desktop·빌드. 지금은 “확률 묶음 전체 완료” 상태가 아니다.
+
+### 7-C. 본체 독립 검수 — 2026-09-24 (Claude) · EN 확정
+
+- 본체 직접 diff 교열 + 렌즈 4종(Agent 병렬: 수학 검산관·현역 딜러·EN SEO/GEO·diff 교열). **수학 오류 0**(검산관·딜러가 전 수치 python 재계산, 본체 손검산 일치). 전략 유해 조언 0.
+- 1차 출처 재확인: TDA 2026 **v1.1(Sept 21, 2026) DOCX** 공식 Dropbox ZIP에서 본체가 직접 추출 — Rule 5C·5D 원문이 본문 서술과 일치. PokerStars prohibited 페이지 원문(bot=real-time advice·GTO/solver 도구) 일치.
+- 반영(모두 ② 이번 초안 유래, 원본 결함 아님):
+  - pot-odds 비율 직답 「첫 숫자+1의 역수」 일반화 → 3-to-1 예시로 한정(본문 X-to-1 공식과 축어 중복도 제거)
+  - FAQ 정의문 소실 복구(GEO 퇴행): probability Rule 2/4 · implied · reverse implied · equity · equity realization(공식 복구, 예시는 계속 뺌) · fold equity(숫자를 앞으로)
+  - card-counting: 「Is … illegal?」에 **No** 직답 복구, 입장 보장 부인 문구 2곳 삭제(방어적 톤 = 합법성 톤 원칙 위반) — 기기·외부조언 경계와 TDA/PokerStars 인용은 유지
+  - equity 마무리 「position is the biggest factor」 ↔ 새 EQR 문장 충돌 해소
+  - drawing-odds: set 직답에 11.8%·7.5-to-1·set mining 정의 복구, 본문 중복 제거 / rare flops 직답의 모호 문장 → trips 1.35% / straight 「by-the-river」
+  - probability: royal 직답에 SF 1 in 3,590, long-shot 필러 1문장 삭제, steps 라벨 교열, 시작핸드 직답 수치화(23.5%·0.30%)
+  - updated 7편 → 2026-09-24
+- **기각·보류**: ×4 조건 표현 불일치(「without another payment」 신규 vs outs130·outs114·drawing115·pot-odds181의 「all-in」 기존) — all-in은 조건의 충분 사례라 오류 아님, 기존 문장은 보호/범위 밖 → **A4 잔여 후보**. Quick answer 추상 표현 일부(딜러 렌즈 중간 확신) — 수치 정확·직답 요건 충족이라 보류.
+- 게이트: audit:hard --locale=en 56/56 🔴0·🟠0 · answer-echo 7편 echo 0(🟠 length는 EN 문자규격 오적용, 기존) · check:faq-schema en 56/56 · 백틱 0. §13 커버리지상 7편의 카드 문단은 이번 편집 무관(카드 토큰 불변)이라 미검사 상태 그대로다.
+- 남은 것: core7 전파(§3-B 실제 공백만) · pot-odds 이미지 8곳(A3, 새 asset 필요) · ja rake 판정.

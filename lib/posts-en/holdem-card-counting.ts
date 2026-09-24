@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Not the way you do in blackjack — the deck reshuffles every hand and too few cards are exposed, so tracking high and low cards gives you no edge. But poker has its own legal counting: counting outs, using blockers, and tracking dead cards to read what your opponent can't have.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-13",
+  updated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🧮",
@@ -99,12 +99,14 @@ Every card you can see removes possibilities. In Hold'em an out can't be sitting
 
 ## Is Counting Cards Illegal in Poker?
 
-**No — counting outs, calculating odds, and using blockers is 100% legal in poker, because it's nothing but mental math.** No rule anywhere forbids thinking. It's the definition of skill.
+**No — counting outs and using blockers in your head is legal, ordinary poker skill, not outside assistance.** The line to watch is devices and advice from others during play, and each room or event sets its own rules for those.
 
-Here's the part people confuse: card counting isn't illegal in *blackjack* either — it's not a crime, just mental arithmetic. But in most jurisdictions a casino is a private business that can bar or refuse a suspected counter, because a counter costs *the house* money. Poker flips that completely: you're playing ==other players==, and the house only takes the rake no matter who wins. Nobody has any reason to stop you from counting your outs — the "getting kicked out" problem that shadows blackjack doesn't arise from counting here. (A cardroom keeps the right to refuse anyone for other reasons; doing arithmetic on your own draw isn't one of them.)
+The blackjack comparison is about whom you play against. At a poker table, you compete with ==other players==; the room charges for running the game rather than playing a hand against you. Mental out-counting is part of that game, not a reason by itself to treat you as a blackjack-style counter.
 
 :::note
-The line to never cross is physical or informational cheating — marked cards, collusion, sharing hole-card info, or real-time solver software online. That's not "counting," it's fraud. Doing math in your head is always fair game.
+Keep mental arithmetic separate from marked cards, collusion, or shared hole-card information. Online software has its own rules: for example, [PokerStars' tool policy](https://www.pokerstars.com/poker/room/prohibited/) prohibits real-time action advice and restricts solver use while its client is open. Check the relevant platform's permissions rather than treating every tool as equivalent to mental arithmetic.
+
+At tournaments using the [2026 Poker TDA rules](https://www.pokertda.com/poker-tda-rules/), Rule 5C bars operating electronic or communication devices with a live hand. Rule 5D goes further: betting apps, charts, and other strategy tools are not for use at the table, and outside strategy data is not permitted. Study with tools away from play; make the table decision yourself.
 :::
 
 ---
@@ -144,7 +146,7 @@ A. No. Blackjack counting tracks the high-low balance of a shoe played down over
 
 **Q. Is counting cards illegal in poker?**
 
-A. No. Counting outs, calculating odds, and using blockers is 100% legal — it's just mental math, and it's the core of good play. (Card counting isn't technically illegal in blackjack either; casinos just bar suspected counters. In poker you play other players, not the house, so that never happens.)
+A. No. Calculating your own outs and blockers in your head is legal and a normal part of poker. What rooms and platforms restrict is outside help during play: devices, charts, and advice from others.
 
 **Q. Does card counting work in Texas Hold'em?**
 
@@ -164,7 +166,7 @@ A. Yes — much more than in Hold'em. In Stud, several of each player's cards ar
 
 **Q. Will you get kicked out of a poker room for counting cards?**
 
-A. No. Counting outs and using blockers is expected, skillful play, and the house only earns the rake regardless of who wins — so there's no reason to stop you. This is a key difference from blackjack, where casinos can bar counters.
+A. No, not for counting your own outs or using blockers in your head. Those are normal skills in a game against other players, and the room takes its rake whoever wins, unlike a blackjack count aimed at the house.
 
 **Q. Is counting outs the same as counting cards?**
 
@@ -176,7 +178,7 @@ A. It's poker's version of it. You're not tracking the whole deck like a blackja
 
 1. **Blackjack counting is dead in poker.** The deck reshuffles every hand, too few cards show, and you play opponents, not the house — so tracking high and low cards earns you nothing.
 2. **Poker counting is outs, blockers, and dead cards.** All mental math, all legal, and all far more valuable than a running count would be.
-3. **It's a skill, not a secret.** Nobody bars you for it. Count your outs, ask what you block, and subtract the dead cards you've seen — every hand.
+3. **It's a skill, not a secret.** Do the counting yourself and keep outside tools for study. Count your outs, ask what you block, and subtract the dead cards you've seen — every hand.
 
 Start with the number that decides most hands: your outs. See the full method in the [guide to counting outs](/en/blog/holdem-outs), then turn those counts into profitable calls with [pot odds](/en/blog/holdem-pot-odds).
 

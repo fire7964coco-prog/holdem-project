@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Equity is your share of the pot — the slice your hand is owed on average once all the cards are dealt, with split pots counted pro rata. You call when your equity beats the pot odds, but position and betting mean you rarely keep your full equity — and fold equity lets you win pots even when your hand is behind.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-09",
+  updated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🥧",
@@ -83,7 +83,7 @@ Two things trip people up here. A pair against two overcards (QQ vs AK) is ==r:n
 
 **Call when your equity is bigger than your pot odds — that single comparison decides almost every call in poker.** [Pot odds](/en/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") tell you the equity you *need* to break even; equity tells you what you *have*. If you have more than you need, calling makes money.
 
-Facing a half-pot bet, your pot odds require ==25%== to call. A flush draw with two cards to come has ~35% equity — 35 beats 25, so it's a profitable call. That's the entire decision, stripped of guesswork.
+Facing a half-pot bet, your pot odds require ==25%== to call. If this call puts you all-in on the flop or lets you see both remaining cards without another payment, a clean flush draw's ~35% clears that price. If another bet can follow on the turn, the call buys only one card: 9 ÷ 47 = 19.1%, below 25% on the draw alone.
 
 But here's the catch almost every guide skips: **"your equity equals your pot share" is only true when there's no more betting.** The moment more money can go in on later streets, a raw 35% doesn't automatically translate to 35% of the final pot — you might get blown off your draw, or pay off when you hit second-best. That gap is exactly where [implied odds](/en/blog/holdem-implied-odds "thumb:/images/holdem-implied-odds-hero.webp") (money you'll win later) and equity realization (below) come in. Equity is where the math *starts*, not where it ends.
 
@@ -100,9 +100,9 @@ They call and you hit → you win | You hit → you win
 ==g:Two ways to win== | ==r:One way to win==
 :::
 
-For a ==pure bluff== with no chance to improve, the break-even is simple: you need your opponent to fold often enough to cover the risk. Betting $50 into a $100 pot, your break-even fold rate is ==bet ÷ (pot + bet) = 50 ÷ 150 = 33%==. If they fold more than a third of the time, betting profits — even with the worst hand at the table.
+Heads-up, for a ==pure bluff== with no chance to win when called and no further betting, the break-even is simple: you need your opponent to fold often enough to cover the risk. Betting $50 into a $100 pot, your break-even fold rate is ==bet ÷ (pot + bet) = 50 ÷ 150 = 33%==. If they fold more than a third of the time, betting profits — even with the worst hand at the table.
 
-Now add a draw, and it gets much better. Here's the full picture as a ==g:semi-bluff==: pot is $100, you bet $50 with a flush draw, your opponent folds 40% of the time, and when they call you still have 35% equity to hit by the river.
+Now add a draw. In this heads-up ==g:semi-bluff== example, the pot is $100 and you shove your last $50 on the flop. Your opponent folds 40% of the time; when called, assume your clean flush draw has 35% equity. Both cards will be dealt with no further betting, so that two-card figure fits the calculation.
 
 :::note
 EV = (fold% × pot) + (call% × [equity × (pot + bet) − (miss% × bet)])
@@ -110,7 +110,7 @@ EV = (0.40 × $100) + (0.60 × [0.35 × $150 − 0.65 × $50])
 EV = $40 + (0.60 × [$52.50 − $32.50]) = $40 + $12 = ==g:+$52==
 :::
 
-Betting that flush draw is worth ==+$52== versus check-folding it — and most of that value comes from the times they fold, not the times you hit. That's fold equity: the reason aggression beats passivity, and why a draw is worth far more as a bet than as a call.
+The shove is worth ==+$52== relative to giving up the pot, with $40 of that expectation coming from folds. This isolates fold equity's contribution; it does not compare the shove with every possible checking or calling line. Change the opponent's fold frequency or calling range and the EV changes too.
 
 ---
 
@@ -125,12 +125,12 @@ A hand with 40% raw equity that only realizes 75% of it is really worth ==0.75 �
 What moves your realization up or down:
 
 :::card
-🪑 | Position | In position you realize *more* than your raw equity (you see free cards, control the pot); out of position you realize less. This is the biggest factor
+🪑 | Position | Acting last often helps you realize equity through information and pot control, but neither position guarantees a result above or below 100%. The ranges and board matter too
 🎯 | Playability | Suited connectors and hands that flop draws realize well; offsuit clunkers realize badly even with decent raw equity
 📚 | Stack depth & skill | Deeper stacks and tougher opponents make marginal equity harder to realize
 :::
 
-This is the single most important idea most beginner guides leave out, and it's why the [same hand plays completely differently by position](/en/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp"). Raw equity is the starting point — what you'd bank if the chips went in right now; realization is what you actually take home, and position decides whether that's more or less.
+This is the single most important idea most beginner guides leave out, and it's why the [same hand plays completely differently by position](/en/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp"). Raw equity is the starting point — what you'd bank if the chips went in right now; realization is what you actually take home. Position influences that gap alongside ranges, board texture, stack depth, and the way the hand is played.
 
 ---
 
@@ -183,7 +183,7 @@ The night I mentioned at the top, I was making step one and stopping — countin
 
 **Q. What is equity in poker?**
 
-A. Equity is your share of the pot — the slice your hand is owed on average if the hand goes to showdown, with split pots counted pro rata. If the pot is $100 and 60% of it is owed to you, your equity is worth $60. It's the core number you compare against the price of a call to decide whether to continue.
+A. Poker equity is your share of the pot — the percentage of the showdown payout your hand is owed, including your share of ties rather than wins alone. Equity answers what your cards are worth against the other holdings or ranges if the remaining board is dealt. Betting decisions still need a price and, when play continues, an estimate of what you can realize.
 
 **Q. How do you calculate equity in poker?**
 
@@ -203,11 +203,11 @@ A. It means a fifth of the pot belongs to your hand in the long run — so in a 
 
 **Q. How much fold equity do I need to bluff profitably?**
 
-A. For a pure bluff, you need your opponent to fold at least bet ÷ (pot + bet) of the time. Betting $50 into $100 means 50 ÷ 150 = 33%. If you also have a draw (a semi-bluff), you need them to fold even less often, because you can still win when called. That's why semi-bluffing draws is so profitable.
+A. For a heads-up pure bluff with no chance to win when called and no further betting, your opponent must fold at least bet ÷ (pot + bet) of the time: $50 into $100 needs 33% folds. That threshold is a **fold frequency**, not an equity percentage; showdown equity in a semi-bluff lowers it.
 
 **Q. What is equity realization?**
 
-A. Equity realization is how much of your raw equity you actually collect. Realized equity = raw equity × realization%. A hand with 40% raw equity that realizes 75% is really worth 30%. Position is the biggest driver — in position you realize more, out of position less — which is why the same hand is worth more on the button than in the blinds.
+A. Equity realization is how much of your raw equity you actually collect: realized equity = raw equity × realization%. Being forced to fold lowers it; extracting bets or winning folds can raise it. Acting last often helps, but ranges and board texture decide whether a hand in or out of position ends above or below 100%.
 
 **Q. What is all-in equity?**
 
@@ -215,7 +215,7 @@ A. All-in equity is simply your raw equity — your share of the pot, splits cou
 
 **Q. Why does my equity drop in multiway pots?**
 
-A. Because the same 100% pot is now split among more hands — pocket aces at ~85% heads-up fall to ~64% against three players and ~56% against four. Multiway also cuts your fold equity (everyone has to fold, not just one player) and your realization (more players means more ways to get outdrawn), so both your raw share and what you keep of it shrink.
+A. Because the same 100% pot is now split among more hands — pocket aces at ~85% heads-up fall to ~64% against three opponents and ~56% against four opponents. Multiway also cuts your fold equity (everyone has to fold, not just one player) and your realization (more players means more ways to get outdrawn), so both your raw share and what you keep of it shrink.
 
 **Q. What is EV (expected value) in poker?**
 
@@ -230,7 +230,7 @@ A. Equity is your share of *this* pot if the hand is played out (a percentage); 
 ## The 3 Things to Remember
 
 1. **Equity is your share of the pot** — equity% × pot size. Call when it beats your pot odds. That comparison is the backbone of every decision.
-2. **You rarely keep all of it.** Realized equity = raw × realization%, and position is the biggest factor. Raw equity is the starting point, not the payout.
+2. **You rarely keep all of it.** Realized equity = raw × realization%, and position, ranges, and board texture all move it. Raw equity is the starting point, not the payout.
 3. **Aggression manufactures equity.** Fold equity lets a bet win pots your hand would lose — but it collapses multiway, where you need everyone to fold.
 
 Master this and the rest of poker math clicks into place. From here, turn equity into correct calls with the [pot odds guide](/en/blog/holdem-pot-odds), or see how deep stacks change the picture with [implied odds](/en/blog/holdem-implied-odds).
