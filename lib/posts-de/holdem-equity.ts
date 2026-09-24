@@ -58,7 +58,7 @@ Das ist der ganze Grund, warum die Equity zählt: sie verwandelt „liege ich vo
 | Flush + Open-Ender | 15 | 54,1% |
 | Flushdraw | 9 | 35,0% |
 | Beidseitig offener Straßendraw | 8 | 31,5% |
-| Gutshot-Straße | 4 | 16,5% |
+| Gutshot-Straßendraw | 4 | 16,5% |
 
 </div>
 
@@ -196,7 +196,7 @@ A. Die Equity ist dein Anteil an *diesem* Pot, wenn die Hand ausgespielt wird. D
 
 **Q. Brauche ich einen Equity-Rechner?**
 
-A. Nicht am Tisch. Dort schätzt du mit Outs × 4 bzw. × 2 und den auswendig gelernten Preflop-Matchups; das reicht bis etwa neun Outs auf ein bis zwei Prozentpunkte genau. Equity-Rechner sind Werkzeuge fürs Studieren zwischen den Sessions – dort rechnest du ganze Ranges durch statt einzelner Hände.
+A. Nicht am Tisch. Dort schätzt du mit Outs × 4 bzw. × 2 und den auswendig gelernten Preflop-Matchups; das reicht bis etwa neun Outs auf ein bis zwei Prozentpunkte genau. Equity-Rechner sind Werkzeuge fürs Studieren zwischen den Sessions – dort rechnest du ganze Ranges durch statt einzelner Hände. Einzelne Matchups Hand gegen Hand prüfst du im Equity-Tab unseres [Poker-Rechners](/de/calculator) – ganze Ranges rechnet er nicht.
 
 **Q. Was ist der Unterschied zwischen Equity und Pot Odds?**
 

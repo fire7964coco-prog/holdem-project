@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In Position zu sein bedeutet, dass du zuletzt handelst – du siehst jede Entscheidung deiner Gegner, bevor du einen Chip ausgibst. Solver-Beispiele zeigen, dass Position die Equity-Realisierung meist verbessert. Doch kein Sitz liegt zwangsläufig über oder unter 100%: Ranges, Board und Action können das übliche Muster umkehren. Deshalb öffnet UTG ~13% der Hände und der Button ~43% – und deshalb schreibt Position postflop jede C-Bet, jeden Bluff und jede Pot-Control-Entscheidung neu.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-09-22",
+  updated: "2026-09-24",
   masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "16 Min.",
@@ -89,9 +89,9 @@ Diese Einordnung ist eine Faustregel, kein Gesetz. Position schafft im Schnitt e
 
 ![IP vs OOP Vergleich – der Button (IP) handelt zuletzt; Ranges, Board und Action bestimmen die genaue Equity-Realisierung beider Sitze](/images/holdem-position-play-ip-vs-oop.webp)
 
-Nimm 8♥7♥ auf einem K♥4♠2♥-Flop. In Position spielt sich dein Flushdraw wunderbar: eine Bet billig callen, eine Free Card nehmen, wenn zu dir gecheckt wird, oder bluffen, wenn er zweimal Schwäche zeigt. Out of Position leckt derselbe Draw: du bettest und bekommst einen Raise, oder du checkst und siehst zu, wie er dich maximal zur Kasse bittet – oder schlimmer, du checkst und foldest genau die Karte, die dich komplettiert hätte. Dieselben neun Outs, ein sehr unterschiedlicher Preis.
+Nimm 8♥7♥ auf einem K♥4♠2♥-Flop. In Position spielt sich dein Flushdraw wunderbar: eine Bet billig callen, eine Free Card nehmen, wenn zu dir gecheckt wird, oder bluffen, wenn er zweimal Schwäche zeigt. Out of Position verliert derselbe Draw an Wert: du bettest und bekommst einen Raise, oder du checkst und siehst zu, wie er dich maximal zur Kasse bittet – oder schlimmer, du checkst und foldest genau die Karte, die dich komplettiert hätte. Dieselben neun Outs, ein sehr unterschiedlicher Preis.
 
-Über Tausende von Händen verdichtet sich dieses Leck zum größten Einzelunterschied zwischen gewinnenden und verlierenden Spielern desselben Könnensniveaus. ==g:Gewinnende Spieler spielen nicht nur gute Karten – sie spielen gute Karten in guten Positionen.==
+Über Tausende von Händen verdichtet sich dieses Leak zum größten Einzelunterschied zwischen gewinnenden und verlierenden Spielern desselben Könnensniveaus. ==g:Gewinnende Spieler spielen nicht nur gute Karten – sie spielen gute Karten in guten Positionen.==
 
 ---
 
@@ -117,7 +117,7 @@ Der **Cutoff** ist aus einem Grund zweitbester: nur der Button handelt hinter di
 | **Small Blind** | Negativ – der ==r:**strukturell schlechteste Sitz, um eine Hand zu spielen**== | Zuerst dran auf jeder Postflop-Street, ein halber Blind bereits tot |
 | **Big Blind** | ==r:**Der größte reine bb/100-Verlierer**== | Postet jede Runde einen vollen Blind – selbst perfektes Spiel verkleinert den Verlust nur |
 
-Die Unterscheidung zählt: der **Big Blind verliert die meisten reinen Chips pro 100 Hände** einfach deshalb, weil er gezwungen ist, jede einzelne Runde einen vollen Blind einzuzahlen – keine Strategie macht einen Pflichteinsatz gratis. Aber der **Small Blind ist der schlechteste Sitz, um tatsächlich zu spielen**, weil du auf jeder Postflop-Street zuerst handelst, ohne einen ausgleichenden Rabatt, der den Aufwand wert wäre. Genaue bb/100-Zahlen variieren mit Stake und Spielerpool, also behandle jede konkrete Zahl eher als typisches Datenbank-Ergebnis denn als Gesetz – das *Ranking* aber ist bemerkenswert konsistent.
+Die Unterscheidung zählt: der **Big Blind verliert die meisten reinen Chips pro 100 Hände** einfach deshalb, weil er gezwungen ist, jede einzelne Runde einen vollen Blind einzuzahlen – keine Strategie macht einen Pflichteinsatz gratis. Aber der **Small Blind ist der schlechteste Sitz, um tatsächlich zu spielen**, weil du auf jeder Postflop-Street zuerst handelst, ohne dass der halb bezahlte Einsatz das ausgleichen würde. Genaue bb/100-Zahlen variieren mit Stake und Spielerpool, also behandle jede konkrete Zahl eher als typisches Datenbank-Ergebnis denn als Gesetz – das *Ranking* aber ist bemerkenswert konsistent.
 
 > **Live-Game-Tipp:** In einem 1/2-Live-Spiel limpen Spieler regelmäßig den Button, weil „ich keine tolle Hand habe“. Das lässt die wertvollste Immobilie im Poker ungenutzt. Am Button: open-raisen oder folden – die positionelle Prämie ist zu wertvoll, um sie wegzulimpen.
 
@@ -147,7 +147,7 @@ Der Open-Limp scheitert aus UTG an drei Punkten:
 2. **Er cappt deine wahrgenommene Range** – aufmerksame Spieler attackieren Limper unerbittlich, und du wirst Raises gegenüberstehen, gegen die du nicht bequem weiterspielen kannst.
 3. **Er gewinnt preflop nichts.** Ein Raise kann die Blinds direkt nehmen; ein Limp nie.
 
-Es gibt eine schmale Ausnahme in sehr passiven Live-Spielen – hinter anderen Limpern zu limpen mit kleinen Paaren und Suited Connectors, um einen billigen Multiway-Flop zu sehen – aber *Open*-Limpen aus UTG ist in praktisch jedem Lineup ein Leck. Das komplette Argument, inklusive wann Hinterher-Limpen tatsächlich in Ordnung ist, steht im [Limping-Leitfaden](/de/blog/holdem-limping).
+Es gibt eine schmale Ausnahme in sehr passiven Live-Spielen – hinter anderen Limpern zu limpen mit kleinen Paaren und Suited Connectors, um einen billigen Multiway-Flop zu sehen – aber *Open*-Limpen aus UTG ist in praktisch jedem Lineup ein Leak. Das komplette Argument, inklusive wann Hinterher-Limpen tatsächlich in Ordnung ist, steht im [Limping-Leitfaden](/de/blog/holdem-limping).
 
 ---
 
@@ -233,7 +233,7 @@ Der Small Blind sieht billig aus – ein halber Blind ist schon drin – und spi
 Aus dem SB zu flat-callen bringt dich in eine gecappte, durchschaubare Range, OOP, mit dem Big Blind noch hinter dir und den Odds, um zu squeezen. Stattdessen:
 
 - **3-bette** deine Value-Hände und eine Schicht Blocker-Bluffs (A5s, A4s sind die Klassiker).
-- **Folde** alles, was ein „billiger“ Call gewesen wäre – der Rabatt deckt die positionelle Steuer nicht.
+- **Folde** alles, was ein „billiger“ Call gewesen wäre – der günstige Preis wiegt die positionelle Steuer nicht auf.
 - **Sizing hoch auf ~4× den Open** (vs. ~3× beim 3-Betten IP): da du keinen Postflop-Vorteil haben wirst, verlange preflop mehr und beende mehr Hände direkt dort.
 
 Für die Mechanik der Blinds selbst – warum es sie gibt und wie die Pflichteinsätze das Spiel formen – siehe den [Small-Blind- und Big-Blind-Leitfaden](/de/blog/holdem-blind-meaning).
@@ -242,9 +242,9 @@ Für die Mechanik der Blinds selbst – warum es sie gibt und wie die Pflichtein
 
 ## Was ändert sich zwischen 6-Max und Full Ring – und zwischen Turnier und Cash?
 
-**6-Max staucht die Karte zusammen.** Mit drei entfernten frühen Sitzen steht der erste Spieler in 6-Max nur fünf Gegnern gegenüber – also ==**spielt 6-Max-UTG wie Full-Ring-Lojack und öffnet um die ~17%**== statt der ~13% von Full-Ring-UTG. Jeder andere Sitz verbreitert sich ähnlich, Steals kommen öfter, und 3-Bets sind insgesamt häufiger. Das häufigste Leck beim Formatwechsel ist, 9-max-Enge in 6-Max mitzuschleppen – du foldest dich vom Tisch.
+**6-Max staucht die Karte zusammen.** Mit drei entfernten frühen Sitzen steht der erste Spieler in 6-Max nur fünf Gegnern gegenüber – also ==**spielt 6-Max-UTG wie Full-Ring-Lojack und öffnet um die ~17%**== statt der ~13% von Full-Ring-UTG. Jeder andere Sitz verbreitert sich ähnlich, Steals kommen öfter, und 3-Bets sind insgesamt häufiger. Das häufigste Leak beim Formatwechsel ist, 9-max-Enge in 6-Max mitzuschleppen – du foldest dich vom Tisch.
 
-**Turniere behalten dieselbe Mechanik mit anderen Einsätzen bei jeder Entscheidung.** In Cash Games verdichten sich positionelle Vorteile ruhig über Stunden und Rebuys machen Lecks aufholbar. In Turnieren ändern schrumpfende Stacks die Textur: unter ~15 Big Blinds kollabiert das Spiel Richtung Push/Fold, wo positionelle Nuancen weniger zählen, während bei 20–30 BB das Stehlen aus später Position zum Überlebensmotor wird – bis Bubble-ICM manche mathematisch feinen Steals zum Turnierselbstmord macht. Der komplette Vergleich steht im [Turnier-vs-Cash-Game-Leitfaden](/de/blog/holdem-tournament-vs-cash-game).
+**Turniere behalten dieselbe Mechanik mit anderen Einsätzen bei jeder Entscheidung.** In Cash Games verdichten sich positionelle Vorteile ruhig über Stunden und Rebuys machen Verluste durch Leaks aufholbar. In Turnieren ändern schrumpfende Stacks die Textur: unter ~15 Big Blinds kollabiert das Spiel Richtung Push/Fold, wo positionelle Nuancen weniger zählen, während bei 20–30 BB das Stehlen aus später Position zum Überlebensmotor wird – bis Bubble-ICM manche mathematisch feinen Steals zum Turnierselbstmord macht. Der komplette Vergleich steht im [Turnier-vs-Cash-Game-Leitfaden](/de/blog/holdem-tournament-vs-cash-game).
 
 ---
 
@@ -289,7 +289,7 @@ A. Aus UTG in einem Full-Ring-Spiel öffnest du grob die besten ~13% der Hände 
 
 **Q. Wie beeinflusst Position die C-Bet-Frequenz?**
 
-A. In Position (Button oder Cutoff) c-betten Solver rund 65–75% der Flops – du handelst auf jeder späteren Street zuletzt, sodass weites Betten inklusive Air sicher ist. Out of Position im Single-Raised Pot fällt das auf etwa 30–45%, weil ein Check-Raise deinen Bluff beenden kann und ein Call dich am Turn und River zuerst rätseln lässt. OOP dieselbe Frequenz wie IP zu c-betten ist eines der häufigsten und teuersten Lecks. (Als 3-Better out of Position sieht es anders aus – dort erlaubt dir der Range-Vorteil, auf den von uns gerechneten Boards fast jeden Flop zu c-betten.)
+A. In Position (Button oder Cutoff) c-betten Solver rund 65–75% der Flops – du handelst auf jeder späteren Street zuletzt, sodass weites Betten inklusive Air sicher ist. Out of Position im Single-Raised Pot fällt das auf etwa 30–45%, weil ein Check-Raise deinen Bluff beenden kann und ein Call dich am Turn und River zuerst rätseln lässt. OOP dieselbe Frequenz wie IP zu c-betten ist eines der häufigsten und teuersten Leaks. (Als 3-Better out of Position sieht es anders aus – dort erlaubt dir der Range-Vorteil, auf den von uns gerechneten Boards fast jeden Flop zu c-betten.)
 
 **Q. Sollte man aus dem Small Blind immer 3-betten?**
 
@@ -306,7 +306,7 @@ A. Wenn du in einen geraisten Pot einsteigst, meistens ja – der moderne Standa
 5. **Raisen oder folden under the Gun.** Open-Limpen aus UTG kombiniert den schlechtesten Preflop-Sitz mit der schwächsten Linie.
 6. **6-Max staucht die Karte.** 6-Max-UTG spielt wie Full-Ring-Lojack (~17%) – kalibriere neu, wenn du die Formate wechselst.
 
-Für jeden Sitznamen und die komplette Tischkarte siehe den [Leitfaden zu Poker-Sitznamen und Positionen](/de/blog/holdem-positions). Für welche exakten Hände jede Range füllen, nutze den [Starthände-Chart nach Position](/de/blog/holdem-starting-hands-chart). Und dafür, warum die „rabattierten“ Sitze dich am meisten kosten, deckt der [Small-Blind- und Big-Blind-Leitfaden](/de/blog/holdem-blind-meaning) die Pflichteinsatz-Mathematik im Detail ab.
+Für jeden Sitznamen und die komplette Tischkarte siehe den [Leitfaden zu Poker-Sitznamen und Positionen](/de/blog/holdem-positions). Für welche exakten Hände jede Range füllen, nutze den [Starthände-Chart nach Position](/de/blog/holdem-starting-hands-chart). Und dafür, warum die „billigen“ Sitze dich am meisten kosten, deckt der [Small-Blind- und Big-Blind-Leitfaden](/de/blog/holdem-blind-meaning) die Pflichteinsatz-Mathematik im Detail ab.
 
 ---
 
@@ -326,7 +326,7 @@ Für jeden Sitznamen und die komplette Tischkarte siehe den [Leitfaden zu Poker-
   <a href="/de/blog/holdem-blind-meaning" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Blinds</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Small-Blind- & Big-Blind-Strategie</div>
-    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Warum die rabattierten Sitze am schwersten profitabel sind</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Warum die „billigen“ Sitze am schwersten profitabel sind</div>
   </a>
   <a href="/de/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Turnier</div>

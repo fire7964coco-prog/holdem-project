@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Jede gewinnende Texas-Hold'em-Entscheidung reduziert sich auf fünf wiederholbare Fragen: Wo sitze ich (Position), ist diese Hand spielenswert, raise oder fold ich (nie limpen), bette ich auf dem Flop weiter, und wann lasse ich los? Ein Tight-Aggressive-Spieler, der diese fünf gut beantwortet, foldet ~80% der Hände preflop, spielt sie aggressiv, wenn er sie spielt, und schlägt fast jedes Freizeitspiel – ohne auswendig gelernte Tippliste.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-11",
+  updated: "2026-09-24",
   masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "14 Min.",
@@ -19,7 +19,7 @@ export const POST: Post = {
   content: `
 In meinen ersten beiden Jahren machte ich, was jeder macht: Ich las die Tipplisten. „Zehn schnelle Tipps.“ „Neun essenzielle Regeln.“ Ich konnte sie alle aufsagen – spiele weniger Hände, sei aggressiv, respektiere die Position – und ich verlor *trotzdem*. Das Problem war nicht, dass die Tipps falsch waren. Es war, dass sie ein Haufen zusammenhangloser Regeln waren, ohne irgendetwas, das sie verband, sodass ich am Tisch, im entscheidenden Moment, keine Ahnung hatte, welche gerade galt.
 
-Was mich schließlich zu einem gewinnenden Spieler machte, war keine längere Liste. Es war die Erkenntnis, dass **jede Hand Texas Hold'em dieselben fünf Entscheidungen sind, immer und immer wieder gestellt** – wo sitze ich, ist diese Hand spielenswert, raise oder fold ich, bette ich weiter, und wann lasse ich los. Beantworte diese fünf richtig und du schlägst fast jedes Freizeitspiel, an dem du sitzt. Das ist das ==komplette **Texas-Hold'em-Strategie**-Framework== darum herum gebaut, mit Links zum Deep-Dive für jede einzelne, damit du genau dort üben kannst, wo du leckst.
+Was mich schließlich zu einem gewinnenden Spieler machte, war keine längere Liste. Es war die Erkenntnis, dass **jede Hand Texas Hold'em dieselben fünf Entscheidungen sind, immer und immer wieder gestellt** – wo sitze ich, ist diese Hand spielenswert, raise oder fold ich, bette ich weiter, und wann lasse ich los. Beantworte diese fünf richtig und du schlägst fast jedes Freizeitspiel, an dem du sitzt. Das ist das ==komplette **Texas-Hold'em-Strategie**-Framework== darum herum gebaut, mit Links zum Deep-Dive für jede einzelne, damit du genau dort üben kannst, wo dein Spiel Schwächen hat.
 
 ---
 
@@ -83,7 +83,7 @@ Die praktische Regel, die daraus folgt: **spiele mehr Hände in später Position
 > **Kurze Antwort**
 > Weit weniger, als sich natürlich anfühlt. Ein solider Anfänger legt rund **80% seiner Starthände vor dem Flop weg** und steigt vor allem mit großen Paaren, A-K und starken suited Broadways ein – aus später Position deutlich freier als aus früher. Der Gewinn liegt nicht in den Händen, die du spielst, sondern in den marginalen Spots, die du dir dadurch erspart.
 
-Das mit Abstand größte Leck im Poker ist, zu viele Hände zu spielen. Neue Spieler callen mit jedem Ass, je zwei Bildkarten, je zwei suited Karten – und verbringen dann den Rest der Hand in Schwierigkeiten. Die Korrektur ist die unglamouröseste Fähigkeit im Spiel und die profitabelste: **folde das meiste, was du bekommst.**
+Das mit Abstand größte Leak im Poker ist, zu viele Hände zu spielen. Neue Spieler callen mit jedem Ass, je zwei Bildkarten, je zwei suited Karten – und verbringen dann den Rest der Hand in Schwierigkeiten. Die Korrektur ist die unglamouröseste Fähigkeit im Spiel und die profitabelste: **folde das meiste, was du bekommst.**
 
 Wie viel ist „das meiste“? Ein solider [tight-aggressiver](/de/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") Anfänger foldet **rund 80% seiner Hände vor dem Flop.** Das klingt absurd tight, bis du verinnerlichst, warum: Die Hände, die du *doch* spielst, sind im Schnitt stärker als die deiner Gegner, also gewinnst du die Pots, die zählen, und lässt die marginalen Spots aus, die still Chips ausbluten.
 
@@ -103,7 +103,7 @@ Die [Starthände-Tabelle](/de/blog/holdem-starting-hands-chart) verwandelt das i
 > **Kurze Antwort**
 > Weil ein Limp den Pot vor dem Flop **nie** gewinnen kann. Ein First-in-Raise gewinnt die Blinds sofort, wenn alle folden; ein Limp wirft genau diesen Weg weg, gibt die Initiative ab und lädt starke Spieler ein, dich zu isolieren. Echte Ausnahmen von dieser Raise-oder-Fold-Grundregel gibt es – Over-Limpen in Position, die BB-Defense und Set-Mining bei tiefen Stacks –, aber bei allen dreien geht es um den **Preis**, nicht um Bequemlichkeit.
 
-![Drei nummerierte Kacheln unter der Überschrift RAISE / FOLD – OVER-LIMP mit Chips und Sitzmarkierung, BIG BLIND mit 1,5 ÷ 5,5 und 27%, SET-MINING mit einem Fünfer-Paar und 11,8%](/images/holdem-strategy-raise-or-fold.webp "Als Erster im Pot gilt raise oder fold – die einzigen Rabatte sind Over-Limpen in Position, eine 27%-BB-Defense und Set-Mining")
+![Drei nummerierte Kacheln unter der Überschrift RAISE / FOLD – OVER-LIMP mit Chips und Sitzmarkierung, BIG BLIND mit 1,5 ÷ 5,5 und 27%, SET-MINING mit einem Fünfer-Paar und 11,8%](/images/holdem-strategy-raise-or-fold.webp "Als Erster im Pot gilt raise oder fold – die einzigen Ausnahmen sind billige Einstiege: Over-Limpen in Position, eine 27%-BB-Defense und Set-Mining")
 
 Sobald du entschieden hast, dass eine Hand spielenswert ist, gibt es eine zweite Entscheidung, die die meisten Anfänger falsch machen: *wie* du in den Pot einsteigst. Die Antwort ist fast immer: **raise – nicht limpen.**
 
@@ -113,7 +113,7 @@ Zu [limpen](/de/blog/holdem-limping) heißt, den Big Blind nur zu callen, statt 
 2. **Du gibst die Initiative ab.** Der Preflop-Raiser darf auf dem Flop weiter eine Geschichte erzählen (Entscheidung 4). Limp, und du überreichst diese Geschichte jemand anderem.
 3. **Du malst dir ein Ziel auf den Rücken.** Starke Spieler raisen groß hinter einem Limper, um ihn zu isolieren, und überspielen ihn dann in Position die ganze Hand. Ein Open-Limp verkündet „schwacher, passiver Spieler hier“.
 
-Der Standard, der das behebt, ist unmissverständlich: **ist eine Hand gut genug zum Spielen, ist sie gut genug zum Raisen; ist sie es nicht, folde.** Und wenn jemand *anderes* bereits geraist hat, ist erneut zu raisen – eine [3-Bet](/de/blog/holdem-3bet "thumb:/images/holdem-3bet-hero.webp") – der Weg, weite Opens zu bestrafen und Pots mit deinen besten Händen aufzubauen. Die Ausnahmen sind echt, und bei jeder geht es um den **Preis**. Das *Over*-Limpen – *hinter* jemandem callen, der bereits gelimpt hat, in Position, mit einer spekulativen Hand wie einem kleinen Pair – kauft dir einen billigen Platz im Multiway-Pot. Die größere ist die **BB-Defense**: gegen ein 2,5bb-Open hast du ==1bb bereits gepostet==, callst also 1,5bb in einen 4bb-Pot und brauchst nur ==1,5 ÷ 5,5 = 27%== Equity – und du agierst als Letzter, dein Call beendet die Runde. Deshalb callt ein breiter Teil der BB-Range flat, statt zu 3-betten oder zu folden. Die dritte ist **Set-Mining** mit einem kleinen Pair gegen einen Raise bei tiefen Stacks (die Mathematik steht unten). Das sind Rabatte, keine Strategien – außerhalb solcher Spots gilt: Raise oder fold.
+Der Standard, der das behebt, ist unmissverständlich: **ist eine Hand gut genug zum Spielen, ist sie gut genug zum Raisen; ist sie es nicht, folde.** Und wenn jemand *anderes* bereits geraist hat, ist erneut zu raisen – eine [3-Bet](/de/blog/holdem-3bet "thumb:/images/holdem-3bet-hero.webp") – der Weg, weite Opens zu bestrafen und Pots mit deinen besten Händen aufzubauen. Die Ausnahmen sind echt, und bei jeder geht es um den **Preis**. Das *Over*-Limpen – *hinter* jemandem callen, der bereits gelimpt hat, in Position, mit einer spekulativen Hand wie einem kleinen Pair – kauft dir einen billigen Platz im Multiway-Pot. Die größere ist die **BB-Defense**: gegen ein 2,5bb-Open hast du ==1bb bereits gepostet==, callst also 1,5bb in einen 4bb-Pot und brauchst nur ==1,5 ÷ 5,5 = 27%== Equity – und du agierst als Letzter, dein Call beendet die Runde. Deshalb callt ein breiter Teil der BB-Range flat, statt zu 3-betten oder zu folden. Die dritte ist **Set-Mining** mit einem kleinen Pair gegen einen Raise bei tiefen Stacks (die Mathematik steht unten). Das sind Ausnahmen wegen des Preises, keine Strategien – außerhalb solcher Spots gilt: Raise oder fold.
 
 ---
 
@@ -158,11 +158,11 @@ Beide lassen sich am Tisch in wenigen Sekunden anwenden – hier ist, was jede v
 
 **Pot Odds** sagen dir, ob ein Call profitabel ist: vergleiche den Preis des Calls mit der Größe des Pots, dann mit deiner Chance zu treffen. Wenn der Pot dir 4:1 legt und dein Draw etwa 1 zu 5 trifft, ist Callen grob Break-even; besser als das, ist es Profit. Das ist der Motor hinter jedem „jage ich diesen Draw?“-Spot – und der [Pot-Odds-Guide](/de/blog/holdem-pot-odds) verwandelt ihn in einen 10-Sekunden-Tabellenblick.
 
-**Set-Mining-Odds** erklären, warum kleine Pairs spekulativ sind. Calle einen Raise mit Pocket Fives in der Hoffnung, ein Set zu floppen – Three of a Kind – und du verbindest dich nur etwa **11,8% der Zeit, rund 1 von 8,5.** Wenn es klappt, ist es wunderschön: Flop ==5♣ K♠ 2♦== mit ==5♠5♦== und du hast ein verstecktes Set, das ein Overpair stackt. Aber weil du ~88% der Flops verfehlst, ist Set-Mining nur profitabel, wenn die effektiven Stacks tief genug sind, um dich beim Treffen auszuzahlen – eine grobe Richtschnur ist **mindestens ~15–20× die Größe des Calls.** Flache Stacks? Dann wird dieser spekulative Call zum Leck. Die vollständige [Odds- und Wahrscheinlichkeitstabelle](/de/blog/holdem-probability) hat jede Zahl, die du je brauchen wirst.
+**Set-Mining-Odds** erklären, warum kleine Pairs spekulativ sind. Calle einen Raise mit Pocket Fives in der Hoffnung, ein Set zu floppen – Three of a Kind – und du verbindest dich nur etwa **11,8% der Zeit, rund 1 von 8,5.** Wenn es klappt, ist es wunderschön: Flop ==5♣ K♠ 2♦== mit ==5♠5♦== und du hast ein verstecktes Set, das ein Overpair stackt. Aber weil du ~88% der Flops verfehlst, ist Set-Mining nur profitabel, wenn die effektiven Stacks tief genug sind, um dich beim Treffen auszuzahlen – eine grobe Richtschnur ist **mindestens ~15–20× die Größe des Calls.** Flache Stacks? Dann wird dieser spekulative Call zum Leak. Die vollständige [Odds- und Wahrscheinlichkeitstabelle](/de/blog/holdem-probability) hat jede Zahl, die du je brauchen wirst.
 
 ---
 
-## Welche Fehler kosten Anfänger am meisten? Die 6 größten Lecks
+## Welche Fehler kosten Anfänger am meisten? Die 6 größten Leaks
 
 > **Kurze Antwort**
 > Sechs Gewohnheiten fressen fast das gesamte Geld neuer Spieler: zu viele Hände spielen, zu viel callen, zu passiv sein, die Position ignorieren, Draws ohne Odds jagen und auf Tilt weiterspielen. Das teuerste davon ist das erste: zu viele Starthände. Wer diese sechs abstellt, braucht keine fortgeschrittenen **Poker-Tipps** mehr, um ein Freizeitspiel zu schlagen.
@@ -171,7 +171,7 @@ Wenn du Strategie auf das herunterbrichst, was neue Spieler wirklich Geld kostet
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Das Leck | Warum es Chips ausblutet | Die Korrektur |
+| Das Leak | Warum es Chips ausblutet | Die Korrektur |
 |:---|:---|:---|
 | **Zu viele Hände spielen** | Schwache Starthände floppen schwache Made Hands, die dich postflop kosten | Folde ~80% preflop (Entscheidung 2) |
 | **Zu viel callen** | Ein Call gewinnt nur am Showdown – er foldet nie jemanden raus | Raise oder fold; hör auf, „zum Sehen zu callen“ (Entscheidung 3) |
@@ -182,7 +182,7 @@ Wenn du Strategie auf das herunterbrichst, was neue Spieler wirklich Geld kostet
 
 </div>
 
-Beachte, dass fünf der sechs direkt auf die fünf Entscheidungen abbilden. Das Framework ist nicht abstrakt – es ist buchstäblich die Liste der Lecks, richtig herum gedreht.
+Beachte, dass fünf der sechs direkt auf die fünf Entscheidungen abbilden. Das Framework ist nicht abstrakt – es ist buchstäblich die Liste der Leaks, richtig herum gedreht.
 
 ---
 
@@ -196,7 +196,7 @@ Wenn die fünf Entscheidungen das *Was* sind, ist **Tight-Aggressive (TAG)** das
 - **Tight** – du spielst wenige Hände (Entscheidung 2). Du foldest und foldest und foldest und wartest auf Spots, in denen du wahrscheinlich vorne liegst.
 - **Aggressive** – aber wenn du *doch* spielst, kommst du raisend und bettend rein (Entscheidungen 3 und 4), nicht callend. Du stellst Gegner vor Entscheidungen statt umgekehrt.
 
-TAG funktioniert, weil es die zwei größten Anfänger-Lecks auf einmal angreift – zu viel spielen und zu passiv spielen – mit der flachsten Lernkurve jedes gewinnenden Stils. Es ist nicht das theoretische *Optimum*; starke moderne Spieler weiten in aggressivere (LAG) und balancierte Ranges. Aber als Fundament, mit dem du fast jedes Freizeitspiel schlagen kannst, kommt nichts anderes nahe heran. Meistere zuerst Tight-Aggressive, dann lockere gezielt, sobald die fünf Entscheidungen in Fleisch und Blut übergegangen sind.
+TAG funktioniert, weil es die zwei größten Anfänger-Leaks auf einmal angreift – zu viel spielen und zu passiv spielen – mit der flachsten Lernkurve jedes gewinnenden Stils. Es ist nicht das theoretische *Optimum*; starke moderne Spieler weiten in aggressivere (LAG) und balancierte Ranges. Aber als Fundament, mit dem du fast jedes Freizeitspiel schlagen kannst, kommt nichts anderes nahe heran. Meistere zuerst Tight-Aggressive, dann lockere gezielt, sobald die fünf Entscheidungen in Fleisch und Blut übergegangen sind.
 
 ---
 
@@ -226,7 +226,7 @@ A. Spiele einen tight-aggressiven Stil, der um fünf sich wiederholende Entschei
 
 **Q. Was ist die beste Poker-Strategie für Anfänger?**
 
-A. Tight-Aggressive (TAG). Spiele wenige Hände, aber spiele sie aggressiv – raise statt zu callen, und folde schnell, wenn du verfehlst. Es behebt direkt die zwei häufigsten Anfänger-Lecks (zu viele Hände spielen und zu passiv spielen) und hat die flachste Lernkurve jedes gewinnenden Stils. Starte dort, bevor du mit looseren, fortgeschritteneren Ansätzen experimentierst.
+A. Tight-Aggressive (TAG). Spiele wenige Hände, aber spiele sie aggressiv – raise statt zu callen, und folde schnell, wenn du verfehlst. Es behebt direkt die zwei häufigsten Anfänger-Leaks (zu viele Hände spielen und zu passiv spielen) und hat die flachste Lernkurve jedes gewinnenden Stils. Starte dort, bevor du mit looseren, fortgeschritteneren Ansätzen experimentierst.
 
 **Q. Wie gewinnt man bei Texas Hold'em?**
 

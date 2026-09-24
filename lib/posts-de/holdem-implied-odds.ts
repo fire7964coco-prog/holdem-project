@@ -84,7 +84,7 @@ Rechnen wir die Zahlen durch, damit die Formel aufhört, abstrakt zu sein.
 
 Du hältst ==b:A♥ K♥== auf einem ==Q♥ 7♥ 2♣ 3♠== Board – den Nut-Flushdraw, 9 Outs, mit einer Karte, die noch kommt. Der Pot ist $100 und dein Gegner bettet $50 am Turn, also liegen ==$150 in der Mitte== und es kostet dich $50.
 
-- **Zuerst die Pot Odds:** Du bekommst 150:50, also 3:1, du brauchst also **25%** Equity. Dein Flush trifft am River nur in ==r:19,6%== der Fälle (9 Outs ÷ 46 ungesehene Karten — wir zählen bewusst nur die Flush-Outs; dein Ass oder deinen König zu paaren reicht nicht sicher zum Sieg, die Overcards sind also keine sauberen Outs). 19,6% ist weniger als 25%, der sofortige Preis sagt also ==r:Fold.==
+- **Zuerst die Pot Odds:** Du bekommst 150:50, also 3:1, du brauchst also **25%** Equity. Dein Flush trifft am River nur in ==r:19,6%== der Fälle (9 Outs ÷ 46 ungesehene Karten – wir zählen bewusst nur die Flush-Outs; dein Ass oder deinen König zu paaren reicht nicht sicher zum Sieg, die Overcards sind also keine sauberen Outs). 19,6% ist weniger als 25%, der sofortige Preis sagt also ==r:Fold.==
 - **Jetzt die Implied Odds:** x = (Call ÷ Trefferquote) − (Pot + Call) = (50 ÷ 0,196) − (150 + 50) = 255 − 200 = ==g:etwa $55.== Das ist das Extra, das du am River gewinnen musst, wenn dein Flush ankommt.
 
 Die Frage lautet also nicht „sollte ich $50 callen?“ Sie lautet: „**wenn ein Herz trifft, kann ich mindestens $55 mehr gewinnen?**“ Gegen einen tiefen Gegner, der eine River-Bet mit Top Pair oder einem Set auszahlt, ist das leicht – du callst. Gegen jemanden mit nur noch $40 hinter sich, oder auf einem Board, wo ein viertes Herz seine Action tötet, kannst du nicht – also foldest du.
@@ -104,9 +104,9 @@ Derselbe $50-Call, gegensätzliche Entscheidungen – und die Karten haben sich 
 | Draw | Outs | Treffer % (nächste Karte) | Nötiger Stack dahinter |
 |:---|:---:|:---:|:---:|
 | Flushdraw | 9 | 19,6% (Turn → River) | ~8–10× den Call |
-| Open-Ended-Straße | 8 | 17,4% (Turn → River) | ~8–10× den Call |
+| Beidseitig offener Straßendraw | 8 | 17,4% (Turn → River) | ~8–10× den Call |
 | Set (Pocket Pair) | 2→Set | ~11,8% – ⚠ über den ganzen Flop, nicht über eine Karte | ~15–20× den Call |
-| Gutshot-Straße | 4 | 8,7% (Turn → River) | ~20×+ (selten lohnend) |
+| Gutshot-Straßendraw | 4 | 8,7% (Turn → River) | ~20×+ (selten lohnend) |
 
 </div>
 
@@ -125,8 +125,8 @@ Weil du ==r:sieben von acht Malen verfehlst==, ist die Mathematik brutal, es sei
 Hier die ehrliche Aufschlüsselung, die die meisten Artikel überspringen:
 
 - **Der reine Break-even liegt bei 7,5:1.** In einer Fantasie, in der du jedes Mal den *gesamten* Stack deines Gegners gewinnst, wenn du ein Set floppst, bräuchtest du nur etwa 7,5× dahinter.
-- **Das echte Leben verlangt 15–20×.** Du bekommst nicht immer den ganzen Stack, du floppst manchmal ein Set und *verlierst trotzdem* (Set-over-Set, oder er füllt eine größere Hand), und die Position zählt. Der Extra-Puffer deckt diese Lecks.
-- Also ==b:7,5:1 ist der theoretische Boden; 15–20× ist die praktische Regel.== Verwechsle die beiden nicht – die 7,5er-Zahl als deine Regel am echten Tisch zu nutzen, ist ein langsames Leck.
+- **Das echte Leben verlangt 15–20×.** Du bekommst nicht immer den ganzen Stack, du floppst manchmal ein Set und *verlierst trotzdem* (Set-over-Set, oder er füllt eine größere Hand), und die Position zählt. Der Extra-Puffer deckt diese Verluste.
+- Also ==b:7,5:1 ist der theoretische Boden; 15–20× ist die praktische Regel.== Verwechsle die beiden nicht – die 7,5er-Zahl als deine Regel am echten Tisch zu nutzen, ist ein schleichendes Leak.
 
 Die genaue Set-floppen-Mathematik und jede andere „Odds, X zu floppen“-Zahl leben in den [Drawing Odds](/de/blog/holdem-drawing-odds "thumb:/images/holdem-drawing-odds-hero.webp"); die Kernaussage hier ist, dass kleine Paare Gold sind, wenn die Stacks tief sind, und Müll, wenn sie kurz sind: Das Paar hat sich nicht geändert – die Implied Odds schon.
 
@@ -157,7 +157,7 @@ Die Lektion: Ein Draw zu den ==g:Nuts== ist weit mehr wert als derselbe Draw zu 
 
 **Heads-up sind deine Implied Odds in dem Moment exakt null, in dem dein Gegner all-in ist – von ihm ist kein Geld mehr zu gewinnen, also bist du zurück bei reinen Pot Odds.** (Multiway kann ein dritter Spieler mit Chips einen Side Pot am Leben halten – aber der All-in-Spieler kann dir nie wieder einen Cent zahlen.) Das ist das am meisten missbrauchte Konzept im Poker: „Ich hatte doch Implied Odds“ ist die Ausrede, zu der Spieler nach einem Call greifen, der nie gerechtfertigt war.
 
-Achte auf diese Lecks:
+Achte auf diese Leaks:
 
 :::card
 🚫 | Villain ist all-in | Keine zukünftigen Streets heißt kein zukünftiges Geld von ihm. Heads-up: Implied Odds = 0 – nutze nur Pot Odds

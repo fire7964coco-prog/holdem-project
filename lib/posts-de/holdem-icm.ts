@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "ICM (Independent Chip Model) rechnet deinen Turnier-Chipstack in seinen echten Preisgeldwert um, anhand der Payouts und aller Stacks. Weil du nur ein einziges erstes Preisgeld gewinnst, verdoppelt das Verdoppeln deiner Chips nie dein Geld – deshalb ist der Stack des Chipleaders weniger wert als sein Chipanteil, und Short Stacks sind mehr wert. Diese Lücke ist der Grund, warum du an der Bubble Hände foldest, die im Cash Game leichte Calls wären.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-09-10",
+  updated: "2026-09-24",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "13 Min.",
@@ -220,7 +220,7 @@ A. ICM (das Independent Chip Model) ist eine Formel, die deinen Turnier-Chipstac
 
 **Q. Wie wird ICM berechnet?**
 
-A. Es ordnet jedem Spieler eine Wahrscheinlichkeit zu, auf jeder bezahlten Position zu landen, basierend auf seinem Chipanteil (deine Chance, Erster zu werden = dein Stack ÷ Gesamtchips, dann rekursiv für tiefere Plätze), und multipliziert dann diese Wahrscheinlichkeiten mit den Payouts. Die Summe ist der Dollarwert deines Stacks. In der Praxis nutzt du einen ICM-Rechner; der Punkt ist, zu verstehen, was er tut.
+A. Es ordnet jedem Spieler eine Wahrscheinlichkeit zu, auf jeder bezahlten Position zu landen, basierend auf seinem Chipanteil (deine Chance, Erster zu werden = dein Stack ÷ Gesamtchips, dann rekursiv für tiefere Plätze), und multipliziert dann diese Wahrscheinlichkeiten mit den Payouts. Die Summe ist der Dollarwert deines Stacks. In der Praxis nutzt du einen [ICM-Rechner](/de/calculator); der Punkt ist, zu verstehen, was er tut.
 
 **Q. Was ist der Unterschied zwischen ICM und Chip EV?**
 

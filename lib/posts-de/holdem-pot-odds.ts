@@ -120,9 +120,9 @@ Jetzt verbinde den Preis mit deiner Hand. [Zähle deine **Outs**](/de/blog/holde
 |:---|:---:|:---:|:---:|
 | Flush + Open-Ender | 15 | 32,6% | 54,1% |
 | Flushdraw | 9 | 19,6% | 35,0% |
-| Open-Ended Straße | 8 | 17,4% | 31,5% |
+| Beidseitig offener Straßendraw | 8 | 17,4% | 31,5% |
 | Zwei Overcards | 6 | 13,0% | 24,1% |
-| Gutshot-Straße | 4 | 8,7% | 16,5% |
+| Gutshot-Straßendraw | 4 | 8,7% | 16,5% |
 
 </div>
 

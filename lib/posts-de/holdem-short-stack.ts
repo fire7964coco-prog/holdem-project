@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ein Short Stack (grob unter 20–25 Big Blinds) kann kein normales Postflop-Poker mehr spielen, und ab rund 15 Big Blinds abwärts wechselt er zu Push/Fold: geh first-in all-in, um deine Fold Equity zu behalten, und open-limpe oder min-raise-fold fast nie, wenn du first-in bist. Shove von Late Position weiter, halte deine Calling-Range enger als deine Shoving-Range, und blinde nicht auf null herunter, während du „auf eine Hand wartest“ – deine Fold Equity ist die Waffe, und unter etwa 8 Big Blinds schwindet sie rapide.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-09-11",
+  updated: "2026-09-24",
   masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "13 Min.",
@@ -85,9 +85,9 @@ Der Name stammt von Paul Magriel, bekannt gemacht hat die Kennzahl Dan Harringto
 | Zone | M-Ratio | Grob (ohne Antes) | Spielweise |
 |:--|:--:|:--:|:--|
 | 🟢 Grün | 20+ | ~30bb+ | Volles Arsenal, spiel normales Poker |
-| 🟡 Gelb | 10–20 | ~15–30bb | Zieh dich zusammen, halte nach Shoves Ausschau |
-| 🟠 Orange | 6–10 | ~9–15bb | Push/Fold; first-in Aggression, stiehl Blinds |
-| ⚠ Rot | 1–5 | ~1,5–8bb | Shove-or-Fold jede vernünftige Hand |
+| 🟡 Gelb | 10 bis unter 20 | ~15–30bb | Zieh dich zusammen, halte nach Shoves Ausschau |
+| 🟠 Orange | 6 bis unter 10 | ~9–15bb | Push/Fold; first-in Aggression, stiehl Blinds |
+| ⚠ Rot | 1 bis unter 6 | ~1,5–9bb | Shove-or-Fold jede vernünftige Hand |
 | ⚫ Tot | unter 1 | unter ~1,5bb | Shove any two cards, nächster spielbarer Spot |
 
 </div>
@@ -209,7 +209,7 @@ A. Als Anfänger-Default nein – min-raise-then-Fold ist ein klassischer Leak. 
 
 **Q. Was ist die M-Ratio im Poker?**
 
-A. Die M-Ratio ist dein Stack geteilt durch die Kosten eines Orbits (Small Blind + Big Blind + Antes) – wie viele Runden du durch Folden überleben kannst. Harringtons Zonen sind Grün (20+), Gelb (10–20), Orange (6–10), Rot (1–5) und Tot (unter 1). Je niedriger dein M, desto mehr Shove-or-Fold-Spots musst du nehmen. Ohne Antes ist M grob deine Big Blinds ÷ 1,5.
+A. Die M-Ratio ist dein Stack geteilt durch die Kosten eines Orbits (Small Blind + Big Blind + Antes) – wie viele Runden du durch Folden überleben kannst. Harringtons Zonen sind Grün (20+), Gelb (10 bis unter 20), Orange (6 bis unter 10), Rot (1 bis unter 6) und Tot (unter 1). Je niedriger dein M, desto mehr Shove-or-Fold-Spots musst du nehmen. Ohne Antes ist M grob deine Big Blinds ÷ 1,5.
 
 **Q. Was ist Fold Equity und warum schrumpft sie?**
 

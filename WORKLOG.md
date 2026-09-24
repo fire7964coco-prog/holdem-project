@@ -1,3 +1,14 @@
+## 2026-09-24 (9) — B3: Q8-b DE 용어 정리 + 소품 (10편)
+
+- 본체에서 직접(main) · 의미별 문장 처방 스크립트(각 치환 원문 1회 일치 단언, 파일 전역 치환 아님). 앵커 줄번호는 B1로 밀려 전건 재검색.
+- **Rabatt 15 → 0**: outs 7(«rabattieren» → «ziehen dann etwas ab» · «nicht voll zählen» · «Abschlag») · limping 3(«kommst billig in einen Multiway-Pot» · SB complete «der Preis ist so günstig, dass die Raise-oder-Fold-Regel hier nicht greift») · position-play 4(«halb bezahlte Einsatz» · «günstige Preis wiegt … nicht auf» · «„billigen“ Sitze» ×2) · strategy 2(«Ausnahmen wegen des Preises» · 캡션 «billige Einstiege»).
+- **Leck → Leak**: 앵커(복수 8 + leckst 1) + 같은 글 단수 동의 자리까지 확장(PT Q8-a 선례 — 단복수 전부). 관사 «das Leak»(형제 when-to-fold «Das größte Leak im Poker»와 같은 문장). 예외: implied128 «diese Verluste»(손실 요인) · strategy22 «wo dein Spiel Schwächen hat» · pp92 «verliert derselbe Draw an Wert» · pp247 «Verluste durch Leaks aufholbar» · «Chip-Leck» 2 → 풀어씀. blinder Fleck 2는 무관.
+- **드로 라벨**: 표에서 완성 스트레이트로 읽히던 «Gutshot-Straße»·«Open-Ended(-)Straße» → «Gutshot-Straßendraw»·«Beidseitig offener Straßendraw»(equity·implied 2·pot-odds 2) · outs «Flush + beidseitig offene Straße» → «Flush + Open-Ender»(형제 표와 동일).
+- **소품**: short-stack M존 겹침(10–20/6–10/1–5) → «10 bis unter 20 / 6 bis unter 10 / 1 bis unter 6»(표+FAQ) · Rot bb열 ~1,5–8 → ~1,5–9bb(M≈bb÷1,5 → M6≈9bb, 산수 검산). 🪶 EN도 같은 겹침 표기지만 이번 범위 밖 · equity FAQ «Brauche ich einen Equity-Rechner?»에 계산기 링크(Equity 탭=Hand gegen Hand, «ganze Ranges rechnet er nicht» 명시) · ICM FAQ «ICM-Rechner» → /de/calculator 링크. 계산기→bubble 링크는 EN related 패리티·코드 소유 조율 건이라 미착수.
+- 덤: implied-odds L87 em dash → Halbgeviertstrich(de-style 기존 1err 해소, 손댄 파일이라).
+- 네이티브 렌즈(서브 1): 바뀐 자리 전건 OK · 잔여 0 · 새 불일치 0(참고: probability131 «Open-Ended-Straßendraw» 표기 변이 — 둘 다 정상, 범위 밖).
+- 게이트: audit:hard de 🔴0(전후 동일) · de-style 기존 부채 6편 전후 동일(implied-odds는 0으로) · structure 핵심 결손 0 · answer-echo·hygiene·number-format·seo-sync·intl-links·faq-schema·directives 통과 · diff --check · 빌드 73+577. updated 09-24(limping·position-play·strategy·blind-meaning·short-stack·icm 갱신, 나머지 이미 09-24) · masterUpdated 불변.
+
 ## 2026-09-24 (8) — B2: Q8-b ID 용어 정리 (25편 · `75adfe2f`)
 
 - queue 워크트리(main ff) → 줄 단위 의미 처방 스크립트(각 줄 보호구 명시, 파일 전역 치환 아님) → 본체 ff 머지.

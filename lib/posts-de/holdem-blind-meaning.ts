@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Blinds sind Zwangseinsätze, die vor dem Austeilen der Karten gesetzt werden. Der Small Blind sitzt direkt links vom Dealer-Button, der Big Blind links daneben; der Big Blind – meist das Doppelte des Small Blinds – ist die Setzeinheit des Tischs.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-09-22",
+  updated: "2026-09-24",
   masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "9 Min.",
@@ -143,7 +143,7 @@ Setzt du dich an ein Live-Cash-Game, spielst du in der Regel nicht gratis mit: I
 
 In den Blinds sehe ich Anfänger am leisesten Chips verlieren – nicht in einem großen Pot, sondern jede Runde ein bisschen. Zwei Gewohnheiten in den Blinds beheben das meiste davon, ein dritter Zug holt es aus später Position zurück:
 
-- **Small Blind: Halt es simpel.** Preflop Vorletzter, aber nach dem Flop **als Erster dran** – der saubere Anfängeransatz lautet **raisen oder folden**, nicht callen. Zu limpen und dann out of position angespielt zu werden, ist ein stetiges Chip-Leck.
+- **Small Blind: Halt es simpel.** Preflop Vorletzter, aber nach dem Flop **als Erster dran** – der saubere Anfängeransatz lautet **raisen oder folden**, nicht callen. Zu limpen und dann out of position angespielt zu werden, ist ein Leak, das dich stetig Chips kostet.
 - **Big Blind: Verteidige mit den Odds.** Du hast bereits einen vollen Einsatz gebracht, deshalb kannst du Raises profitabel weiter callen als jeder andere Sitz. Gegen einen Open-Raise auf 2,5 BB (der Small Blind foldet) callst du 1,5 BB in einen 4-BB-Pot – etwa 2,7:1. Heißt: Rund 27% Equity reichen, damit der Call break-even ist. Diese Mathematik nennt sich [Pot Odds](/de/blog/holdem-pot-odds) – und sie ist der Grund, warum es „Big Blind Defense“ überhaupt gibt.
 - **Late Position: der Steal.** Folden alle bis zum Button oder Cutoff, ist ein Raise, der nur die beiden Blinds abgreifen soll, ein **Blind Steal** – und der Re-Raise dagegen ein **Re-Steal**. Steal-Größen, Ranges je Sitz und wie weit du verteidigen solltest, sind Strategie-Themen und werden ausführlich im [Strategie-Guide zu In Position vs. Out of Position](/de/blog/holdem-position-play) behandelt.
 

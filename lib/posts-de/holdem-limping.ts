@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Limpen bedeutet, preflop in einen Pot einzusteigen, indem du nur den Big Blind callst, statt zu raisen oder zu folden. Open-Limpen (als Erster reinzugehen) ist fast immer ein Fehler – du kannst den Pot preflop nicht kampflos gewinnen, gibst die Initiative ab und gute Spieler bestrafen dich. Aber Limpen ist nicht immer falsch: den Small Blind zu completen, spekulative Hände hinter anderen Limpern zu over-limpen sowie einige Live-Spots und Short-Stack-Turniersituationen sind legitime Ausnahmen.",
   category: "strategy",
   date: "2026-07-05",
-  updated: "2026-09-22",
+  updated: "2026-09-24",
   masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "11 Min.",
@@ -51,7 +51,7 @@ Bevor wir Limpen bewerten, teile es in zwei Varianten – denn eine ist deutlich
 | | Open-Limp | Over-Limp (hinterher limpen) |
 |:---|:---|:---|
 | **Wann** | Du bist der **erste** Spieler im Pot | Du callst, **nachdem** schon jemand gelimpt hat |
-| **Das Problem** | Du hättest raisen können, um ihn sofort zu gewinnen – und hast es nicht | Weniger schlimm: Du bekommst einen Rabatt in einen Multiway-Pot |
+| **Das Problem** | Du hättest raisen können, um ihn sofort zu gewinnen – und hast es nicht | Weniger schlimm: Du kommst billig in einen Multiway-Pot |
 | **Fazit** | Fast immer ein Fehler | Situativ okay mit den richtigen Händen |
 
 </div>
@@ -97,7 +97,7 @@ Hier geht das Dogma zu weit. Limpen ist *nicht* immer falsch – die ehrliche, m
 
 | Situation | Warum Limpen hier okay ist |
 |:---|:---|
-| **Den Small Blind completen (ungeraister Pot)** | Niemand hat geraist, dein Geld ist schon halb drin und nur der Big Blind handelt hinter dir – die Raise-oder-Fold-Regel bricht zum Rabatt zusammen. Gegen einen Raise ist es eine andere Frage: 3-betten oder folden. |
+| **Den Small Blind completen (ungeraister Pot)** | Niemand hat geraist, dein Geld ist schon halb drin und nur der Big Blind handelt hinter dir – der Preis ist so günstig, dass die Raise-oder-Fold-Regel hier nicht greift. Gegen einen Raise ist es eine andere Frage: 3-betten oder folden. |
 | **Spekulative Hände over-limpen** | Hinter anderen Limpern mit kleinen Paaren oder Suited Connectors bekommst du starke Odds, im Multiway-Pot ein Monster zu floppen. |
 | **Sehr passives Live-Low-Stakes** | Wenn Gegner nur Monster raisen und Limper nie bestrafen, kannst du billige Flops mit spekulativen Händen sehen und Equity realisieren. |
 | **Short-stacked späte Position (Turniere)** | Bei kurzen Turnier-Stacks – deutlich unter den 100bb eines normalen Cashgames – entwickeln moderne Solver Button-Open-Limp-Ranges, wo ein Raise wenig bringt und Limpen deine Kosten senkt. |
@@ -162,7 +162,7 @@ A. Ja, in konkreten Situationen. Aus dem Small Blind zu completen, spekulative H
 
 **Q. Was ist der Unterschied zwischen Open-Limpen und Over-Limpen?**
 
-A. Open-Limpen ist, wenn du der erste Spieler bist, der in den Pot einsteigt, und du nur den Big Blind callst – fast immer ein Fehler, weil du hättest raisen können, um ihn direkt zu gewinnen. Over-Limpen (oder hinterher limpen) ist das Callen, nachdem schon jemand gelimpt hat; es ist vertretbarer, weil du einen Rabatt in einen Multiway-Pot bekommst, was Set-Mining-Händen entgegenkommt.
+A. Open-Limpen ist, wenn du der erste Spieler bist, der in den Pot einsteigt, und du nur den Big Blind callst – fast immer ein Fehler, weil du hättest raisen können, um ihn direkt zu gewinnen. Over-Limpen (oder hinterher limpen) ist das Callen, nachdem schon jemand gelimpt hat; es ist vertretbarer, weil du billig in einen Multiway-Pot kommst, was Set-Mining-Händen entgegenkommt.
 
 **Q. Wie oft funktioniert ein Limp-Reraise wirklich?**
 
@@ -192,7 +192,7 @@ A. Meist „Fish“ – der allgemeine Begriff für einen schwachen, verlierende
 2. **Aber es ist nicht *immer* falsch.** Den Small Blind zu completen, spekulative Hände hinter anderen Limpern zu over-limpen sowie passive Live- oder short-stacked Turniersituationen sind legitime Ausnahmen. Das dogmatische „Limpe niemals“ ist eine Übertreibung.
 3. **Standard = raisen oder folden.** Behalte Limpen für jene konkreten Situationen vor, und du hörst auf, starken Spielern Gratischancen zu geben, dich zu isolieren und auszubeuten.
 
-Dein Limpen zu beheben ist eines der schnellsten Upgrades im Poker – es kostet nichts zu lernen und stoppt sofort das Chip-Leck als leichteste Beute des Tisches. Kombiniere „raisen oder folden“ mit einer soliden [Starthand-Range](/de/blog/holdem-starting-hands-chart) und echtem [Positions](/de/blog/holdem-position-play)-Bewusstsein, und du bist leise aus der Gruppe herausgewachsen, die alle anderen zu schlagen versuchen.
+Dein Limpen zu beheben ist eines der schnellsten Upgrades im Poker – es kostet nichts zu lernen und stopft sofort das Leak, die leichteste Beute des Tisches zu sein. Kombiniere „raisen oder folden“ mit einer soliden [Starthand-Range](/de/blog/holdem-starting-hands-chart) und echtem [Positions](/de/blog/holdem-position-play)-Bewusstsein, und du bist leise aus der Gruppe herausgewachsen, die alle anderen zu schlagen versuchen.
 
 ---
 

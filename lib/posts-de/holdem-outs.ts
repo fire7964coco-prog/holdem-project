@@ -76,7 +76,7 @@ Nimm diese rohen Zahlen als Ausgangspunkt und wende danach die Dirty-Out-Prüfun
 
 | Dein Draw | Outs | Warum |
 |:---|:---:|:---|
-| Flush + beidseitig offene Straße | 15 | 9 Flush + 8 Straße − 2 geteilte Karten – das Monster |
+| Flush + Open-Ender | 15 | 9 Flush + 8 Straße − 2 geteilte Karten – das Monster |
 | Flush + Gutshot | 12 | 9 Flush + 4 Gutshot − 1 geteilte Karte |
 | Flushdraw | 9 | 13 einer Farbe − 4 sichtbare |
 | Beidseitig offener Straßendraw | 8 | Vier Karten an jedem Ende |
@@ -170,17 +170,17 @@ Ein **dirty Out** ist eine Karte, die deine Hand vervollständigt und dich trotz
 
 ![Infografik eines gepaarten 10♠ 8♥ 4♠ 4♣ 6♦ Boards, das saubere Outs von dirty Outs trennt](/images/holdem-outs-dirty-outs.webp "Auf einem gepaarten Board sind manche deiner Outs dirty – der Flush zu treffen kann trotzdem ein Full House bezahlen")
 
-Das ist der Abschnitt, den die meisten Guides überspringen, und der, der tatsächlich Geld spart. Ein dirty Out (ein „unsauberes“ Out) zum vollen Wert zu zählen überschätzt deine Equity – erfolgreiche Spieler zählen erst die rohen Outs und *rabattieren* dann, bevor sie zur Faustregel greifen.
+Das ist der Abschnitt, den die meisten Guides überspringen, und der, der tatsächlich Geld spart. Ein dirty Out (ein „unsauberes“ Out) zum vollen Wert zu zählen überschätzt deine Equity – erfolgreiche Spieler zählen erst die rohen Outs und *ziehen dann etwas ab*, bevor sie zur Faustregel greifen.
 
 Drei Situationen, für die du dein Auge trainierst:
 
 :::card
-♠ | Der Nicht-Nut-Flush | Hältst du 8♠7♠ auf K♠9♠2♣, hast du 9 Pik-„Outs“ – aber wenn ein Pik kommt und ein Gegner mit einem höheren Pik auf denselben Flush gedrawt hat, machst du einen Flush und verlierst trotzdem. Rabattiere deine Outs, wenn du nicht auf den Nut-Flush drawst
+♠ | Der Nicht-Nut-Flush | Hältst du 8♠7♠ auf K♠9♠2♣, hast du 9 Pik-„Outs“ – aber wenn ein Pik kommt und ein Gegner mit einem höheren Pik auf denselben Flush gedrawt hat, machst du einen Flush und verlierst trotzdem. Zähle deine Outs nicht voll, wenn du nicht auf den Nut-Flush drawst
 🂮 | Das gepaarte Board | Ein Flushdraw auf einem Board wie J♥8♥8♣ sieht aus wie 9 saubere Outs, aber das Board ist schon gepaart – ein fertiges Full House könnte lauern, also kommen manche deiner Flushes an und sind trotzdem wertlos
 🃁 | Overcards gegen Stärke | Zwei Overcards (A-K auf Q-8-3) zählen auf dem Papier als 6 Outs, aber wenn ein großer Raise nach einem Set oder Zwei Paaren schreit, ist dein Ass zu paaren oft nicht gut – zähle 3, vielleicht 4, nicht 6
 :::
 
-Du kennst den exakten Rabatt selten, und das ist okay. Die Richtung stimmt aber immer: wenn das Board oder die Action dir sagt, dass ein Out vielleicht nicht gewinnt, kürze die Zahl *nach unten*, bevor du umrechnest. Ein Spieler, der 9 Outs auf einem gepaarten Board zählt und eine Pot-Size-Bet callt, zahlt vollen Preis für einen Draw, der still nur sechs wert ist. Zu lesen, welche Outs sauber sind, ist eine Board-Textur-Fähigkeit – baue sie mit [das Board lesen](/de/blog/holdem-reading-the-board) auf.
+Den exakten Abschlag kennst du selten, und das ist okay. Die Richtung stimmt aber immer: wenn das Board oder die Action dir sagt, dass ein Out vielleicht nicht gewinnt, kürze die Zahl *nach unten*, bevor du umrechnest. Ein Spieler, der 9 Outs auf einem gepaarten Board zählt und eine Pot-Size-Bet callt, zahlt vollen Preis für einen Draw, der still nur sechs wert ist. Zu lesen, welche Outs sauber sind, ist eine Board-Textur-Fähigkeit – baue sie mit [das Board lesen](/de/blog/holdem-reading-the-board) auf.
 
 ---
 
@@ -221,7 +221,7 @@ A. Eine Abkürzung, die aus Outs einen Prozentwert macht: am Flop Outs × 4 für
 
 **Q. Was sind dirty Outs?**
 
-A. Karten, die deine Hand vervollständigen und dich trotzdem verlieren lassen können – eine Flushkarte, wenn ein höherer Flush möglich ist; eine Straßenkarte, die jemandem die höhere Straße gibt; oder Overcards gegen ein wahrscheinliches Set. Rabattiere dirty Outs, bevor du in Odds umrechnest – oder zähle sie gar nicht erst mit –, sonst überschätzt du deine Equity.
+A. Karten, die deine Hand vervollständigen und dich trotzdem verlieren lassen können – eine Flushkarte, wenn ein höherer Flush möglich ist; eine Straßenkarte, die jemandem die höhere Straße gibt; oder Overcards gegen ein wahrscheinliches Set. Nimm bei dirty Outs einen Abschlag vor, bevor du in Odds umrechnest – oder zähle sie gar nicht erst mit –, sonst überschätzt du deine Equity.
 
 **Q. Wie viele Outs sind Flushdraw plus Straßendraw?**
 
@@ -229,7 +229,7 @@ A. 15, nicht 17. Ein Flushdraw sind 9 Outs und ein beidseitig offener Straßendr
 
 **Q. Ändern sich meine Outs, wenn mehrere Gegner im Pot sind?**
 
-A. Die Zahl bleibt gleich, ihr Wert nicht. Je mehr Gegner mitgehen, desto größer die Chance, dass eines deiner Outs jemandem eine bessere Hand gibt – dein kleiner Flush trifft dann auf den höheren. Multiway zählst du dieselben Outs, aber du rabattierst stärker und willst zu den Nuts drawen.
+A. Die Zahl bleibt gleich, ihr Wert nicht. Je mehr Gegner mitgehen, desto größer die Chance, dass eines deiner Outs jemandem eine bessere Hand gibt – dein kleiner Flush trifft dann auf den höheren. Multiway zählst du dieselben Outs, aber der Abschlag fällt größer aus, und du willst zu den Nuts drawen.
 
 **Q. Wie viele Outs hat ein Gutshot?**
 
@@ -245,7 +245,7 @@ A. Nein. Du ziehst nur Karten ab, die du tatsächlich sehen kannst – deine Hol
 
 1. **Zähle, was gewinnt, nicht was verbessert.** Ein Out muss die *beste* Hand machen, nicht bloß eine bessere. Ziehe nur die Karten ab, die du sehen kannst.
 2. **Rechne mit 4 und 2 um.** Outs × 4 am Flop, × 2 am Turn. Trimme die Schätzung für große Draws (über 8 Outs), indem du *(Outs − 8)* abziehst.
-3. **Rabattiere die dirty Outs.** Nicht-Nut-Flushes, gepaarte Boards und Overcards gegen Stärke schrumpfen alle deine echte Out-Zahl. Im Zweifel zähle weniger.
+3. **Zähle dirty Outs nicht voll.** Nicht-Nut-Flushes, gepaarte Boards und Overcards gegen Stärke schrumpfen alle deine echte Out-Zahl. Im Zweifel zähle weniger.
 
 Stimmt die Zahl, fügt sich der Rest der Poker-Mathematik von selbst zusammen. Nimm deine Out-Zahl direkt mit in [Pot Odds berechnen](/de/blog/holdem-pot-odds), um zu sehen, ob der Preis stimmt, oder geh zurück zur vollständigen [Poker-Odds- und Wahrscheinlichkeitstabelle](/de/blog/holdem-probability) für die exakte Zahl hinter jedem Draw.
 
