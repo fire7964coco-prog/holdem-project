@@ -13,7 +13,9 @@
 | 참가 방식 | 전 이벤트 「Buy-In: Seat」. **현금 바이인 경로 없음(미확인 아님 — 공지된 모든 행이 Seat)** | 이벤트 DB 16페이지(event_id 781~796) |
 | SEAT 획득처 | APL 공식 제휴파트너(홀덤펍) — 「APL 티켓은 APL 공식 제휴파트너에서 상시 획득 가능합니다.」「제휴파트너는 확정되는 대로 추가 업데이트될 예정입니다.」 | /ko/apl-official-partners-list/ (페이지 날짜 2026-09-14) |
 | 제휴 매장 수 | 59곳·15개 브랜드(09-23 DOM) — 서울 23 · 경기 22 · 인천 1 · 부산 5 · 울산 7 · 경남 1. 잭펍 19 · ES스튜디오 10 · 포커스온&플레이온 13 | 같은 페이지. 🔴 «상시 업데이트» — 글에는 «09-23 기준» 붙인다 |
-| 미공개 | 티켓 가격 · 티켓 몇 장 = SEAT 1개 · 온라인 경로 · 레이트 등록 마감 · 페이아웃 · 장소 주소 | — |
+| 미공개 | 티켓 가격 · 티켓 몇 장 = SEAT 1개 · 온라인 경로 · 레이트 등록 마감 · 장소 주소 | — |
+| 페이아웃 | 🆕 09-24 확인 — 이벤트 상세에 순위표 공개. 메인(781~783) 1위 40,000,000 … 57~72위 800,000 · 72명 입상 · 합계 = 2억(보장액). #2 Freezeout(793) 1위 7,200,000 … 16~18위 · #5 Monster(795) 1위 12,000,000 … 18~23위 | /ko/event-detail/?event_id=781 등. 09-23 시트의 «미공개»는 누락이었다(외부 검수 지적) |
+| 레벨 전환 | #2 Freezeout Lv1–8 25분 → **Lv9부터 20분** · #5 Monster Stack Lv1–9 25분 → **Lv10부터 20분** | /ko/event-blind/?event_id=793 · 795 (09-24 표 원문 재확인 — 외부 검수의 «출처 없음»은 오판) |
 | 이벤트 | #1 APLC Main ₩2억(1A 10/23 12:00·30분 / 1B 17:30·25분 / 1C 22:00·15분 · 스택 30,000 · Day2 10/24 12:00 · Final 10/25 12:00) · #2 Freezeout ₩3천만(10/24 14:00 · 25,000) · #3 High-Roller ₩8천만(D1 10/24 16:00 · 50,000 · 40분 · D2 10/25 13:00) · #4 Deepstack Turbo [200 CAP] ₩2천만(10/24 18:00 · 20,000 · 15분) · #5 Monster Stack ₩5천만(10/25 12:30 · 40,000) · #6 Closer [200 CAP] ₩2천만(10/25 17:00 · 20,000 · 15분) | 이벤트 DB. 🔢 2+0.3+0.8+0.2+0.5+0.2 = 4억 ✅ |
 | 현장 새틀 | S-1 Main Sat 10/23 11:00 「5 SEAT GTD [11 TO 1]」 · S-2 Main Milestone 10/23 15:00 「5 SEATS GTD [WIN @ 55,000]」 · S-3 HR Sat 10/24 11:00 「5 SEATS GTD [11 TO 1]」 · S-4 HR Milestone 10/24 19:30 「5 SEATS GTD [WIN @ 110,000]」 · S-5 Monster Milestone 10/25 11:00 「5 SEATS GTD [WIN @ 90,000]」 — 전부 스택 10,000, 바이인도 Seat | 이벤트 DB |
 | 시리즈 | 「APL SEOUL SERIES 2,300,000,000 GTD」 — 「2026년 10월 - 4억 GTD」「2026년 11월 - 4억 GTD」「2026년 12월 - 15억 GTD」「자세한 일정은 추후 공개됩니다.」 | 08-06 게시 이미지 KakaoTalk_20260806_200424113.jpg. 11·12월 날짜 미공개 |
@@ -36,7 +38,7 @@
 | 입장 서류 | 외국인 여권 · 해외이주자 = 영주권 증명 + 7일 내 주민등록표초본(재외국민·현지이주말소·이민출국말소 표기) | inspireresorts.com/ko/page/identification-documents-for-foreigners-and-overseas-emigrants |
 | 법 근거(출처 섹션에만) | 관광진흥법 제28조 1항 4호 「내국인(「해외이주법」 제2조에 따른 해외이주자는 제외한다)을 입장하게 하는 행위」 금지 | law.go.kr |
 | 연령 | 19세 이상 — WPT Global 프로모션 약관에만 명시 | wptglobal.com/poker/promotions/wpt-seoul-2026 |
-| 온라인 예선 | WPT Global: $1.10 Step → $8.80 → $88 Qualifier → $1,500 패키지 · 「3 x $1,500 packages GTD in $88 Qualifiers every Sunday at 12:05 UTC」 · 스텝 매일 8/9~10/25 · 퀄리파이어 일요일 8/16~10/25 · 패키지 = Day1A 참가 + $250 경비 + 호텔 4박(선착 30명) · 「Players must complete KYC verification by November 1, 2026」 | wptglobal.com |
+| 온라인 예선 | WPT Global: $1.10 Step → $8.80 → $88 Qualifier → $1,500 패키지 · 「3 x $1,500 packages GTD in $88 Qualifiers every Sunday at 12:05 UTC」 · 스텝 매일 8/9~10/25 · 퀄리파이어 일요일 8/16~10/25 · 패키지 = Day1A 참가 + $250 경비 + 호텔 4박(선착 30명) · 호텔 「Stay dates from November 4–8, 2026」「cannot be changed」「must confirm their intention to use it by 28 October, 2026」 · 「Players must complete KYC verification by November 1, 2026」 | wptglobal.com |
 | 현장 새틀 | 「WYS at 50K Milestone」 ₩400,000(11/1·3·4 두 번·5·6) · High Roller Satellite ₩600,000(11/8) · 미스터리/서바이버 바운티 새틀 ₩300,000 | 일정 JSON |
 | 등록·결제 | 온라인 사전등록(여권 정보) · 「All buy-ins must be paid in KRW. … Wire transfers are not accepted」 · 「handled directly at the casino cage」 | wptseoul.com/registration · /terms |
 | 주소·교통 | 인천광역시 영종구 공항문화로 127 · 032-580-9000 · 무료 셔틀 T1 1층 2C/14C 08:00~22:20(평일 1시간·주말 30분) · T2 1층 8A 07:30~22:50(1시간) | inspireresorts.com |
