@@ -24,7 +24,7 @@
 
 | 순 | 묶음 | 위치·상태 | 재개 문서 |
 |---|---|---|---|
-| B1 | **확률 7편** — ✅ EN 확정(09-24 (4)) · ✅ ① core7 전파(09-24 (5), §7-D). **남음**: ② pot-odds «required equity» 절 이미지 8로케일(A3 — 새 목적별 asset 제작, premium 덮어쓰기 금지) ③ ja card-counting rake 판정 ④ ×4 조건 «all-in» 기존 표현 통일 여부(EN 4곳 + core7 동형). 부수 별건: answer-echo LABELS에 de·es·id·pt 없음(미검사) · §7-D «남긴 것» | `docs/harden-brief/probability-closeout.md` §7-C·§7-D |
+| B1 | **확률 7편** — ✅ EN 확정(09-24 (4)) · ✅ ① core7 전파(09-24 (5), §7-D) · ✅ ② pot-odds 이미지 8로케일(09-24 (6)). **남음**: ③ ja card-counting rake 판정 ④ ×4 조건 «all-in» 기존 표현 통일 여부(EN 4곳 + core7 동형). 부수 별건: answer-echo LABELS에 de·es·id·pt 없음(미검사) · §7-D «남긴 것» | `docs/harden-brief/probability-closeout.md` §7-C·§7-D |
 | B2 | **Q8-b ID** 용어 정리 | `../Holdem-queue` clean · 준비만(25파일 179줄 범위 확정, 쓰기 0). ID showdown은 규칙 41편에서 이미 처리 → 중복 수정 금지 | `docs/harden-brief/queue-Q8-b-id-de-잔여.md` · `docs/keyword-bank/id-posting-reference.md` §5/5A |
 | B3 | **Q8-b DE** | 미착수 · 별도 회차 | 같은 브리프 |
 | B4 | 사실 묶음(미착수): SHC77/88 첫 탈락 페어 · WSOP 계정 2개(LIVE+Caesars) · paired-board 22 counterfeit 리버조건 · flush-vs-straight 반복 설명 / 표현: cooler J1 라벨 · EN hand-rankings short-deck 중복 · DE M존(연속값 유지) / **TDA 판본 부채**(2026 v1.1 번호 변경 — 전역 교체는 별건) | 범위는 `docs/en-first-queue.md` 정본에서 고정 후 | `docs/backlog-closeout-2026-09-22.md` §4 |

@@ -90,7 +90,7 @@ El patrón es intuitivo: cuanto más empequeñece el bote al call, menor es la p
 > **Respuesta rápida**
 > Una apuesta de medio bote exige un 25% de equity para pagar; una del tamaño del bote, un 33%, y una de 2× el bote, un 40%. El objetivo depende del tamaño de la apuesta respecto al bote, no de su cantidad en dólares. Calcula primero ese objetivo y luego valora tu mano frente al rango que te ofrece ese precio.
 
-![Cartas premium sobre el tapete verde — decidiendo si el precio es el adecuado para continuar](/images/holdem-starting-hands-premium.webp "La equity necesaria depende por completo del tamaño de la apuesta a la que te enfrentas")
+![Tres barras reparten el bote final entre bote, apuesta y tu call: ½ del bote exige 25% de equity, un bote completo 33% y 2× el bote 40%](/images/holdem-pot-odds-required-equity.webp "La equity necesaria depende por completo del tamaño de la apuesta a la que te enfrentas")
 
 Memoriza estos siete anclajes para ponerle precio al call antes de decidir si tu mano es lo bastante fuerte:
 

@@ -70,6 +70,8 @@ A1 확정 고유 파일은 probability 8 + equity 8 = **16개**다. 다만 equit
 
 ## 4. A3 — 이미지 (본체 소유)
 
+> ✅ **완료 2026-09-24 (B1②)** — 새 asset `holdem-pot-odds-required-equity.webp`(POT·BET·YOUR CALL 막대 3줄 · 25/33/40%) · 8곳 경로+alt 교체, 캡션 유지 · premium 원본 무변경. WORKLOG 09-24 (6).
+
 `holdem-pot-odds.ts` “required equity / bet size” 절은 **8개 전부** premium starting-hands 이미지를 참조한다: en87/de90/es88/id88/ja100/pt88/zh98/zh-hant98.
 현재 경로 `/images/holdem-starting-hands-premium.webp`는 프리미엄 홀카드 의미여서 해당 절의 가격·베팅 비율 설명과 어긋나는 후보다.
 

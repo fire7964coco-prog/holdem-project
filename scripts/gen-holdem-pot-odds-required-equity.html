@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#0B1F17; }
+.stage {
+  position:relative; width:1200px; height:675px; overflow:hidden;
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -10%, rgba(46,125,70,0.26), rgba(46,125,70,0) 65%),
+    linear-gradient(160deg,#0B1F17 0%,#13291D 100%);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.suits { position:absolute; top:36px; left:0; width:100%; text-align:center; color:#C9A227; font-size:18px; letter-spacing:.5em; opacity:.5; }
+
+.legend { position:absolute; top:92px; left:0; width:100%; display:flex; justify-content:center; gap:44px; color:#F2EEE3; font-size:22px; font-weight:800; letter-spacing:.08em; }
+.legend span { display:flex; align-items:center; gap:12px; opacity:.9; }
+.legend i { display:inline-block; width:26px; height:26px; border-radius:6px; }
+
+.rows { position:absolute; top:172px; left:70px; width:1060px; display:flex; flex-direction:column; gap:44px; }
+.row { display:flex; align-items:center; height:108px; }
+.lab { width:190px; color:#F2EEE3; font-size:38px; font-weight:900; letter-spacing:.02em; }
+.bar { display:flex; width:640px; height:88px; border-radius:12px; overflow:hidden; box-shadow:0 8px 22px rgba(0,0,0,.45); }
+.bar div { height:100%; border-right:3px solid #0B1F17; }
+.bar div:last-child { border-right:0; }
+.pot, .legend .pot { background:rgba(242,238,227,.22); }
+.bet, .legend .bet { background:#8C7424; }
+.call, .legend .call { background:#39C46A; }
+.pct { margin-left:44px; width:186px; text-align:right; color:#39FF6A; font-size:96px; font-weight:900; line-height:1; text-shadow:0 6px 24px rgba(0,0,0,.5); }
+
+.wordmark { position:absolute; right:44px; bottom:20px; color:#C9A227; font-size:15px; font-weight:800; letter-spacing:.03em; opacity:.9; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="suits">&#9824; &#9829; &#9830; &#9827;</div>
+  <div class="legend">
+    <span><i class="pot"></i>POT</span>
+    <span><i class="bet"></i>BET</span>
+    <span><i class="call"></i>YOUR CALL</span>
+  </div>
+
+  <div class="rows">
+    <!-- 1/2 pot: pot 2 + bet 1 + call 1 = 4 -> call 1/4 = 25% -->
+    <div class="row">
+      <div class="lab">&#189; POT</div>
+      <div class="bar"><div class="pot" style="width:50%"></div><div class="bet" style="width:25%"></div><div class="call" style="width:25%"></div></div>
+      <div class="pct">25%</div>
+    </div>
+    <!-- pot: pot 1 + bet 1 + call 1 = 3 -> 1/3 = 33% -->
+    <div class="row">
+      <div class="lab">POT</div>
+      <div class="bar"><div class="pot" style="width:33.333%"></div><div class="bet" style="width:33.333%"></div><div class="call" style="width:33.334%"></div></div>
+      <div class="pct">33%</div>
+    </div>
+    <!-- 2x pot: pot 1 + bet 2 + call 2 = 5 -> 2/5 = 40% -->
+    <div class="row">
+      <div class="lab">2&#215; POT</div>
+      <div class="bar"><div class="pot" style="width:20%"></div><div class="bet" style="width:40%"></div><div class="call" style="width:40%"></div></div>
+      <div class="pct">40%</div>
+    </div>
+  </div>
+  <div class="wordmark">&#9824; holdemmaster.com</div>
+</div>
+</body>
+</html>

@@ -89,7 +89,7 @@ The pattern is intuitive: the more the pot dwarfs the call, the smaller the slic
 > **Quick answer**
 > A half-pot bet requires 25% equity to call; a pot-sized bet requires 33%, and a double-pot bet requires 40%. The target depends on the bet's size relative to the pot, not its dollar amount. Work out that target first, then judge your hand against the range offering you that price.
 
-![Premium hole cards on green felt — deciding whether the price is right to continue](/images/holdem-starting-hands-premium.webp "The required equity depends entirely on the size of the bet you face")
+![Three bars splitting the final pot into pot, bet and your call — a half-pot bet needs 25% equity, a pot-size bet 33%, a 2× pot bet 40%](/images/holdem-pot-odds-required-equity.webp "The required equity depends entirely on the size of the bet you face")
 
 Memorize these seven anchors so you can price the call before deciding whether your hand is strong enough:
 

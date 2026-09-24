@@ -90,7 +90,7 @@ Polanya intuitif: makin pot mengerdilkan call, makin kecil bagian kue yang Anda 
 > **Jawaban singkat**
 > Taruhan setengah pot menuntut 25% equity untuk call; taruhan sebesar pot menuntut 33%, dan taruhan 2× pot menuntut 40%. Targetnya bergantung pada ukuran taruhan relatif terhadap pot, bukan jumlah dolarnya. Tentukan target itu dulu, lalu nilai tangan Anda terhadap range yang menawarkan harga tersebut.
 
-![Kartu tertutup premium di meja felt hijau — memutuskan apakah harganya pas untuk lanjut](/images/holdem-starting-hands-premium.webp "Equity yang dibutuhkan sepenuhnya tergantung pada ukuran taruhan yang Anda hadapi")
+![Tiga batang membagi pot akhir menjadi pot, bet lawan, dan call Anda — bet ½ pot butuh equity 25%, pot penuh 33%, 2× pot 40%](/images/holdem-pot-odds-required-equity.webp "Equity yang dibutuhkan sepenuhnya tergantung pada ukuran taruhan yang Anda hadapi")
 
 Hafalkan tujuh patokan ini agar Anda bisa menghitung harga call sebelum memutuskan apakah tangan Anda cukup kuat:
 

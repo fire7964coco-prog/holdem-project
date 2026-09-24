@@ -88,7 +88,7 @@ Das Muster ist intuitiv: je stärker der Pot den Call überragt, desto kleiner d
 
 Gegen eine **Half-Pot-Bet** brauchst du 25%, gegen eine **Pot-Size-Bet** 33%, gegen ein 2×-Pot-Overbet 40%. Deine benötigte Equity hängt **nur von der Größe der Bet im Verhältnis zum Pot** ab – nicht davon, wie viel Geld schon drin liegt und auch nicht davon, wer bettet. Sieben Ankerpunkte reichen, und du brauchst nie wieder einen Taschenrechner.
 
-![Premium-Hole-Cards auf grünem Filz – die Entscheidung, ob der Preis zum Weiterspielen stimmt](/images/holdem-starting-hands-premium.webp "Die benötigte Equity hängt allein von der Größe der Bet im Verhältnis zum Pot ab")
+![Drei Balken teilen den Endpot in Pot, Bet und deinen Call – ½ Pot verlangt 25% Equity, Pot-Size 33%, 2× Pot 40%](/images/holdem-pot-odds-required-equity.webp "Die benötigte Equity hängt allein von der Größe der Bet im Verhältnis zum Pot ab")
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

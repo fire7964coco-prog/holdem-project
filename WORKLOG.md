@@ -1,3 +1,11 @@
+## 2026-09-24 (6) — B1②: pot-odds «required equity» 절 이미지 8로케일 (A3)
+
+- 프리미엄 홀카드 사진(`holdem-starting-hands-premium.webp`, starting-hands 전용 의미)이 가격 절에 붙어 있던 것 → 목적별 새 인포 `holdem-pot-odds-required-equity.webp`(HTML `scripts/gen-…html` → render-gen-final q82 · 19KB). premium 원본은 덮어쓰지 않음(starting-hands 8곳 그대로).
+- 그림 = 최종 팟을 POT·BET·YOUR CALL로 나눈 막대 3줄: ½팟 2:1:1 → 25% · 팟 1:1:1 → 33% · 2×팟 1:2:2 → 40%(직답·표 수치와 동일, 산수 검산). 카드 0 · 통화 0(§3-A). 스펠링 육안 확인.
+- en·de·es·id·ja·pt·zh·zh-hant 8곳 경로+alt 교체, 캡션은 그대로(이미 «베팅 크기가 요구 에퀴티를 정한다»라 그림과 일치). updated는 이미 09-24.
+- 게이트: check:images ✅ · image-reuse 🔴0 · audit:hard 8로케일 🔴0 · 빌드 73+577 · 산출 HTML 8로케일 premium 0.
+- B1 남음: ③ ja rake 판정 · ④ ×4 «all-in» 표현 통일 여부.
+
 ## 2026-09-24 (5) — B1①: 확률 7편 core7 전파 (de·es·id·ja·pt·zh·zh-hant × probability·pot-odds·outs·drawing-odds·equity·implied-odds·card-counting)
 
 - 로케일 7레인(Opus 서브) 병렬 → 본체 교열 → Fable 교차 렌즈 3 → 반영. 49파일. 판정·경위 전문 = `docs/harden-brief/probability-closeout.md` §7-D.

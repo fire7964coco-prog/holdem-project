@@ -90,7 +90,7 @@ O padrão é intuitivo: quanto mais o pote encobre o call, menor a fatia do bolo
 > **Resposta rápida**
 > Uma aposta de meio pote pede 25% de equity para pagar; uma do tamanho do pote pede 33%, e uma de 2× o pote pede 40%. O alvo depende do tamanho da aposta em relação ao pote, não do valor em dólares. Descubra esse alvo primeiro e só então avalie a sua mão contra o range que está te oferecendo esse preço.
 
-![Cartas premium na mão sobre o feltro verde — decidindo se o preço é justo para continuar](/images/holdem-starting-hands-premium.webp "A equity necessária depende inteiramente do tamanho da aposta que você enfrenta")
+![Três barras dividem o pote final em pote, aposta e o seu call — ½ do pote exige 25% de equity, pote inteiro 33% e 2× o pote 40%](/images/holdem-pot-odds-required-equity.webp "A equity necessária depende inteiramente do tamanho da aposta que você enfrenta")
 
 Memorize estas sete âncoras para precificar o call antes de decidir se a sua mão é forte o bastante:
 
