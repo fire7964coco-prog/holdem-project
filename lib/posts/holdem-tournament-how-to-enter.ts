@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "홀덤 대회 참가는 ① 온라인 무료 대회 → ② 홀덤펍 리그 → ③ 위성(새틀라이트)으로 시트 확보 → ④ 국내 대형(WPL·HPT 등) → ⑤ 해외(WSOP) 순으로 단계를 밟으면 됩니다. 카지노에서 열리는 국내 대회(APT·APPT)는 한국 여권으로는 입장이 안 됩니다. 현장은 신분증 + 회원카드 + 바이인만 있으면 등록할 수 있습니다.",
   category: "토너먼트",
   date: "2026-06-12",
-  updated: "2026-09-21",
+  updated: "2026-09-23",
   hideSummaryImageSlot: true,
   readTime: "17분",
   emoji: "🎫",
