@@ -12,7 +12,8 @@
 - 스탬프: 내용 편집 40파일 `updated` 09-24 · `masterUpdated`는 회차 전 EN과 동기였던 파일만 09-24(대조 결과 «이미 맞음/해당 없음» 10파일은 masterUpdated만 — settled §1-C·Q13-a 규율).
 - 렌즈 2종(딜러·교열 diff): 사실 오류 0 · 반영 = id·ms paired-board 정렬(①원본) · zh-hant FAQ 구간 누락 · zh-hant «非同花»→파일 관행 «不同花» · ja·zh·zh-hant 쿨러 값 라벨 반복 → «投入時は劣勢/投入时已落后/投入時已落後» · EN «above» 중복 · DE 동사 반복 · ko «보드 투 페어» 중복(전부 ②이번 편집).
 - 게이트: audit:hard en·de·es·id·ja·pt·zh·zh-hant·ms·hi 🔴0(🟠 es·zh·zh-hant 각 1 = 기존 C2 game-order↔flush-vs-straight 표) · ko paired-board 🔴0 · structure 핵심 결손 0 · stamp 과소 0 · drift 핵심 0 · hygiene·hangul·number-format·seo-sync·intl-links·directives·cjk 통과 · answer-echo 🔴1은 기존 ko `apt-incheon-2026-guide`(범위 밖) · diff --check · 빌드 73+577.
-- 정본: en-first-queue에서 ㊹·ⓐ·§2-G·J-1·§3 paired-board·§3 hand-rankings 항목 삭제(J-2 잔존).
+- 정본: en-first-queue에서 ㊹·ⓐ·§2-G·J-1·§3 paired-board·§3 hand-rankings 항목 삭제(J-2 잔존). 검수장 통지 MB-080.
+- 배포: push `814133ae` → 라이브 Playwright 4/4(en paired-board «only a deuce on the other street» · en short-stack «1 to under 6» · ja cooler «投入時は劣勢» · ko paired-board «보드 다섯 장을 그대로») · IndexNow 122 URL HTTP 200.
 
 ## 2026-09-24 (9) — B3: Q8-b DE 용어 정리 + 소품 (10편)
 
