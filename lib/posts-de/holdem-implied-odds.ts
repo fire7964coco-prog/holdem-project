@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Implied Odds sind die zusätzlichen Chips, die du auf späteren Streets zu gewinnen erwartest, wenn dein Draw ankommt. Sie erlauben dir, einen Draw profitabel zu callen, den die Pot Odds allein zum Fold verurteilen – aber nur, wenn die Stacks tief sind und dein Gegner dich wirklich auszahlt.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-13",
-  masterUpdated: "2026-09-13",
+  updated: "2026-09-24",
+  masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "💰",
@@ -180,7 +180,7 @@ Ich habe mehr Chips an eingebildete Implied Odds verloren als an alle Bad Beats 
 
 **Q. Was sind Implied Odds im Poker?**
 
-A. Implied Odds sind die zusätzlichen Chips, die du auf späteren Streets zu gewinnen erwartest, wenn dein Draw ankommt – dazugerechnet zu den Chips, die schon im Pot liegen. Sie erlauben dir, manche Draws profitabel zu callen, die die Pot Odds allein als Fold ausweisen – solange die Stacks tief genug sind, um dich beim Treffer auszuzahlen.
+A. Implied Odds sind die zusätzlichen Chips, die du auf späteren Streets zu gewinnen erwartest, wenn dein Draw ankommt – der Teil einer Draw-Entscheidung, der in der Zukunft liegt. Ein Call, der am aktuellen Preis nicht aufgeht, kann die Differenz nach dem Treffer zurückholen, aber nur, wenn ein Gegner noch Chips hat und auch zahlt. Behandle diese Zahlung als Schätzung, nicht als Geld, das schon in der Mitte liegt.
 
 **Q. Gelten Implied Odds auch am River?**
 
@@ -192,7 +192,7 @@ A. Bei einem $50-Call in einen $150-Pot am Turn, mit einem Flushdraw, der am Riv
 
 **Q. Was ist der Unterschied zwischen Pot Odds und Implied Odds?**
 
-A. Pot Odds zählen nur das Geld, das gerade jetzt im Pot liegt, und lassen sich exakt berechnen. Implied Odds addieren das Geld, das du auf späteren Streets zu gewinnen erwartest, was eine Schätzung ist. Pot Odds sagen dir, ob ein Call sich heute selbst bezahlt; Implied Odds sagen dir, ob er sich über die ganze Hand auszahlt.
+A. Der Unterschied zwischen Pot Odds und Implied Odds ist die Gewissheit: Den aktuellen Pot und den Call-Betrag siehst du; spätere Zahlungen hängen davon ab, was als Nächstes passiert. Prüfe zuerst den sofortigen Preis, dann, wie viel ein Treffer zusätzlich einbringen muss. Ein tiefer Stack macht dieses Geld verfügbar, garantiert aber nicht, dass dein Gegner es auch reinstellt.
 
 **Q. Wann solltest du mit Implied Odds rechnen?**
 
@@ -200,7 +200,7 @@ A. Fang mit den Pot Odds an. Schlägt deine Equity den sofortigen Preis bereits,
 
 **Q. Was sind Reverse Implied Odds?**
 
-A. Reverse Implied Odds sind die Chips, die du verlierst, wenn du deinen Draw komplettierst, er aber nur die zweitbeste Hand ist – etwa einen kleinen Flush gegen einen höheren zu machen, oder das untere Ende einer Straße gegen ein größeres. Sie machen Non-Nut-Draws weniger wert, als ihre Outs vermuten lassen, du brauchst also einen besseren sofortigen Preis, um zu callen.
+A. Reverse Implied Odds sind die zusätzlichen Chips, die dich ein komplettierter Draw kostet, wenn er trotzdem nur die zweitbeste Hand ist: Ein kleiner Flush oder eine niedrige Straße verleitet dich, mehr zu investieren, während eine andere Hand weiter vorne liegt. Ein Draw mit diesem Risiko braucht eine vorsichtigere Payoff-Schätzung als ein Draw auf die Nuts – dieselbe Zahl an Karten, die ihn komplettieren, macht sie nicht gleich wertvoll.
 
 **Q. Was sind gute Implied Odds – wie viel brauchst du?**
 

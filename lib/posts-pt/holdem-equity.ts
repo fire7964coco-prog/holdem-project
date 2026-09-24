@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Equity é sua fatia do pote — a fatia que cabe à sua mão em média quando todas as cartas são distribuídas, com os empates contando proporcionalmente. Você paga quando sua equity supera as pot odds, mas posição e apostas fazem você raramente ficar com toda a sua equity — e a fold equity deixa você ganhar potes mesmo quando sua mão está atrás.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-22",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-24",
+  masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🥧",
@@ -101,9 +101,9 @@ Eles pagam e você acerta → você ganha | Você acerta → você ganha
 ==g:Duas formas de ganhar== | ==r:Uma forma de ganhar==
 :::
 
-Para um ==blefe puro== sem chance de melhorar, o ponto de equilíbrio é simples: você precisa que seu adversário folde com frequência suficiente para cobrir o risco. Apostando $50 num pote de $100, sua taxa de fold de equilíbrio é ==aposta ÷ (pote + aposta) = 50 ÷ 150 = 33%==. Se eles foldam mais de um terço das vezes, apostar dá lucro — mesmo com a pior mão da mesa.
+Em heads-up, para um ==blefe puro== sem chance de ganhar quando pago e sem mais apostas, o ponto de equilíbrio é simples: você precisa que seu adversário folde com frequência suficiente para cobrir o risco. Apostando $50 num pote de $100, sua taxa de fold de equilíbrio é ==aposta ÷ (pote + aposta) = 50 ÷ 150 = 33%==. Se eles foldam mais de um terço das vezes, apostar dá lucro — mesmo com a pior mão da mesa.
 
-Agora acrescente um projeto, e fica muito melhor. Aqui está o quadro completo como um ==g:semi-blefe==: o pote é $100, você aposta $50 com um projeto de flush, seu adversário folda 40% das vezes, e quando ele paga você ainda tem 35% de equity para acertar até o river.
+Agora acrescente um projeto. Neste exemplo de ==g:semi-blefe== em heads-up, o pote é $100 e você empurra seus últimos $50 no flop. Seu adversário folda 40% das vezes; quando ele paga, considere que seu projeto de flush limpo tem 35% de equity. As duas cartas vão sair sem mais apostas, então o número de duas cartas serve para a conta.
 
 :::note
 EV = (fold% × pote) + (pagar% × [equity × (pote + aposta) − (erro% × aposta)])
@@ -111,7 +111,7 @@ EV = (0,40 × $100) + (0,60 × [0,35 × $150 − 0,65 × $50])
 EV = $40 + (0,60 × [$52,50 − $32,50]) = $40 + $12 = ==g:+$52==
 :::
 
-Apostar aquele projeto de flush vale ==+$52== versus dar check-fold — e a maior parte desse valor vem das vezes em que eles foldam, não das vezes em que você acerta. (Com um projeto desse tamanho, check-call também pode ser lucrativo — seja por implied odds, com um adversário que paga quando você acerta, seja porque ele dá check no turn e te deixa ver a carta de graça; a comparação com check-fold mostra o *teto* do que a agressão acrescenta, não a única alternativa.) Isso é fold equity: a razão de a agressão vencer a passividade, e por que um projeto vale muito mais como aposta do que como call.
+O shove vale ==+$52== em relação a abrir mão do pote, e $40 dessa expectativa vêm dos folds. Isso isola a contribuição da fold equity; não compara o shove com todas as linhas possíveis de check ou de call. Mude a frequência de fold do adversário ou o range com que ele paga, e o EV muda junto.
 
 ---
 
@@ -126,12 +126,12 @@ Uma mão com 40% de equity bruta que só realiza 75% dela vale de verdade ==0,75
 O que move sua realização para cima ou para baixo:
 
 :::card
-🪑 | Posição | Em posição você realiza *mais* que sua equity bruta (vê cartas de graça, controla o pote); fora de posição você realiza menos. Este é o maior fator
+🪑 | Posição | Agir por último costuma ajudar você a realizar equity, pela informação e pelo controle do pote, mas nenhuma posição garante um resultado acima ou abaixo de 100%. Os ranges e a mesa também pesam
 🎯 | Jogabilidade | Suited connectors e mãos que flopam projetos realizam bem; mãos desconexas offsuit realizam mal mesmo com equity bruta decente
 📚 | Profundidade de stack e habilidade | Stacks mais profundos e adversários mais fortes deixam a equity marginal mais difícil de realizar
 :::
 
-Esta é a ideia mais importante que a maioria dos guias para iniciantes deixa de fora, e é por isso que a [mesma mão joga de forma completamente diferente conforme a posição](/pt/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp"). Equity bruta é o ponto de partida — o que você embolsaria se as fichas entrassem agora; realização é o que você de fato leva para casa, e a posição decide se isso é mais ou menos.
+Esta é a ideia mais importante que a maioria dos guias para iniciantes deixa de fora, e é por isso que a [mesma mão joga de forma completamente diferente conforme a posição](/pt/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp"). Equity bruta é o ponto de partida — o que você embolsaria se as fichas entrassem agora; realização é o que você de fato leva para casa. A posição influencia essa diferença junto com os ranges, a textura da mesa, a profundidade dos stacks e a forma como a mão é jogada.
 
 ---
 
@@ -184,7 +184,7 @@ Naquela noite que mencionei lá no começo, eu estava fazendo o passo um e paran
 
 **Q. O que é equity no poker?**
 
-A. Equity é sua fatia do pote — a fatia que cabe à sua mão em média se ela vai ao showdown, com os empates contando proporcionalmente. Se o pote é $100 e 60% dele cabem a você, sua equity vale $60. É o número central que você compara com o preço de um call para decidir se continua.
+A. Equity no poker é sua fatia do pote — a porcentagem do pagamento no showdown que cabe à sua mão, contando a sua parte dos empates, e não só as vitórias. A equity responde quanto valem suas cartas contra as outras mãos ou ranges se o resto da mesa for distribuído. Decisões de aposta ainda precisam de um preço e, quando o jogo continua, de uma estimativa do que você consegue realizar.
 
 **Q. Como calcular equity no poker?**
 
@@ -204,11 +204,11 @@ A. Significa que um quinto do pote pertence à sua mão no longo prazo — num p
 
 **Q. De quanta fold equity eu preciso para blefar com lucro?**
 
-A. Para um blefe puro, você precisa que seu adversário folde ao menos aposta ÷ (pote + aposta) das vezes. Apostar $50 em $100 dá 50 ÷ 150 = 33%. Se você também tem um projeto (um semi-blefe), precisa que eles foldem menos ainda, porque você ainda pode ganhar quando pago. É por isso que semi-blefar projetos é tão lucrativo.
+A. Num blefe puro em heads-up, sem chance de ganhar quando pago e sem mais apostas, seu adversário precisa foldar ao menos aposta ÷ (pote + aposta) das vezes: $50 em $100 pede 33% de folds. Esse limite é uma **frequência de fold**, não uma porcentagem de equity; a equity de showdown de um semi-blefe o reduz.
 
 **Q. O que é realização de equity?**
 
-A. Realização de equity é quanto da sua equity bruta você de fato coleta. Equity realizada = equity bruta × realização%. Uma mão com 40% de equity bruta que realiza 75% vale de verdade 30%. Posição é o maior motor — em posição você realiza mais, fora de posição menos — e é por isso que a mesma mão vale mais no button do que nos blinds.
+A. Realização de equity é quanto da sua equity bruta você de fato coleta: equity realizada = equity bruta × realização%. Ser forçado a foldar a reduz; extrair apostas ou ganhar folds pode aumentá-la. Agir por último costuma ajudar, mas são os ranges e a textura da mesa que decidem se uma mão, em posição ou fora dela, termina acima ou abaixo de 100%.
 
 **Q. O que é equity no all-in?**
 
@@ -216,7 +216,7 @@ A. Equity no all-in é simplesmente sua equity bruta — sua fatia do pote, com 
 
 **Q. Por que minha equity cai em potes multiway?**
 
-A. Porque o mesmo pote de 100% agora é dividido entre mais mãos — um par de ases a ~85% heads-up cai para ~64% contra três jogadores e ~56% contra quatro. Multiway também corta sua fold equity (todo mundo tem que foldar, não só um jogador) e sua realização (mais jogadores significam mais formas de tomar outdraw), então tanto sua fatia bruta quanto o que você fica dela encolhem.
+A. Porque o mesmo pote de 100% agora é dividido entre mais mãos — um par de ases a ~85% heads-up cai para ~64% contra três adversários e ~56% contra quatro adversários. Multiway também corta sua fold equity (todo mundo tem que foldar, não só um jogador) e sua realização (mais jogadores significam mais formas de tomar outdraw), então tanto sua fatia bruta quanto o que você fica dela encolhem.
 
 **Q. O que é EV (valor esperado) no poker?**
 
@@ -231,7 +231,7 @@ A. Equity é sua fatia *deste* pote se a mão for até o fim (uma porcentagem); 
 ## As 3 coisas para lembrar
 
 1. **Equity é sua fatia do pote** — equity% × tamanho do pote. Pague quando ela supera suas pot odds. Essa comparação é a espinha dorsal de toda decisão.
-2. **Você raramente fica com tudo.** Equity realizada = bruta × realização%, e posição é o maior fator. Equity bruta é o ponto de partida, não o que você embolsa.
+2. **Você raramente fica com tudo.** Equity realizada = bruta × realização%, e posição, ranges e textura da mesa, tudo isso a move. Equity bruta é o ponto de partida, não o que você embolsa.
 3. **Agressão fabrica equity.** Fold equity deixa uma aposta ganhar potes que sua mão perderia — mas ela desaba multiway, onde você precisa que todo mundo folde.
 
 Domine isso e o resto da matemática do poker se encaixa. Daqui, transforme equity em calls corretos com o [guia de pot odds](/pt/blog/holdem-pot-odds), ou veja como stacks profundos mudam o quadro com as [implied odds](/pt/blog/holdem-implied-odds).

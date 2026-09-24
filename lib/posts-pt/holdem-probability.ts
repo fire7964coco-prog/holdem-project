@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Até o river você faz um par 43,8% das vezes, dois pares 23,5%, um flush 3,0% e um full house 2,6% — enquanto um royal flush aparece só uma vez a cada 31.000 mãos.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-13",
-  masterUpdated: "2026-09-13",
+  updated: "2026-09-24",
+  masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🎲",
@@ -37,7 +37,8 @@ Poker não é jogo de adivinhação. Cada call, fold e shove é uma ==pergunta d
 
 ## Tabela de probabilidade do poker: as odds de cada mão
 
-Aqui está a tabela mestra com a probabilidade das mãos do poker. O truque que a maioria dos sites pula: existem ==dois números diferentes== para cada mão, e confundir os dois é o motivo de as pessoas discutirem o quão raro um royal flush "realmente" é.
+> **Resposta rápida**
+> A probabilidade das mãos do poker depende de quantas cartas você usa. No Hold'em, as melhores cinco entre sete cartas dão um par 43,8% das vezes e dois pares 23,5%. Essas frequências até o river não são as de uma mão de cinco cartas distribuída ao acaso; escolha a coluna certa antes de comparar o quão rara uma mão é em relação a outra.
 
 - **Odds de 5 cartas** = a chance de uma única mão aleatória de cinco cartas *ser* aquela mão (o número clássico dos livros).
 - **Hold'em (até o river)** = a chance de você *terminar* com aquela mão depois de ver todas as sete cartas (suas 2 cartas na mão + 5 comunitárias). É esse o número que realmente importa na mesa.
@@ -70,6 +71,9 @@ A ordem do ranking segue a **coluna de cinco cartas**: quanto mais rara uma mão
 
 ## Odds de receber cada mão inicial
 
+> **Resposta rápida**
+> Um par de ases chega mais ou menos uma vez a cada 221 mãos, mas qualquer par na mão aparece cerca de uma vez a cada 17. A diferença está nas combinações: das 1.326 combinações de duas cartas, um par específico ocupa só seis. Quaisquer duas cartas do mesmo naipe saem 23,5% das vezes; já A-K do mesmo naipe, especificamente, só 0,30%.
+
 ![Par de ases — o ás de espadas e o ás de copas recém-distribuídos no feltro verde ao lado de fichas de poker](/images/holdem-probability-starting-hands.webp "Par de ases: a melhor mão inicial, distribuída só uma vez a cada 221 mãos")
 
 Antes de qualquer flop, existem exatamente **1.326 mãos iniciais de duas cartas possíveis**. Veja com que frequência aparecem as que as pessoas mais perguntam.
@@ -88,7 +92,8 @@ Então, da próxima vez que alguém disser "eu nunca pego ases", está mais ou m
 
 ## Odds de flopar cada mão
 
-Esta é a tabela que a maioria das páginas de odds enterra ou espalha por uma dúzia de artigos. São as odds de o flop *fazer* sua mão, dadas as cartas na mão da coluna da esquerda.
+> **Resposta rápida**
+> Com um par na mão, você flopa trinca ou melhor 11,8% das vezes. Com duas cartas do mesmo naipe, o flush já feito sai só 0,84%, enquanto o projeto de flush sai 10,9%. São odds condicionais: partem das cartas na mão mostradas na tabela, não da frequência daquela mão em qualquer distribuição aleatória.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -104,13 +109,14 @@ Esta é a tabela que a maioria das páginas de odds enterra ou espalha por uma d
 
 </div>
 
-A que vale memorizar é a primeira linha: ==**você flopa uma trinca cerca de 12% das vezes**, ou mais ou menos 1 em 8,5==. É esse único número que decide se pagar um raise para "fazer set mining" com um par pequeno é lucrativo — você precisa que o pote (e o stack provável do adversário) te pague mais de 7,5 para 1 quando você acerta. É essa a ponte para [pot odds](#pot-odds), logo abaixo. Para a derivação completa de cada linha aqui — mais a regra de stack do set mining e a divisão entre flush feito, projeto e completo — veja o mergulho fundo em [drawing odds e as odds de flopar cada mão](/pt/blog/holdem-drawing-odds "thumb:/images/holdem-drawing-odds-hero.webp").
+Para set mining, ==7,5 para 1 é o retorno teórico de equilíbrio, não uma regra de stack suficiente==: pressupõe que toda trinca ganha e é paga. Na prática, a referência usual de 15–20× o stack efetivo deixa margem para o valor que não vem e para as trincas que perdem; mesmo isso é uma heurística, não um call automático. É essa a ponte para [pot odds](#pot-odds), logo abaixo. Para a derivação completa de cada linha aqui — mais a regra de stack do set mining e a divisão entre flush feito, projeto e completo — veja o mergulho fundo em [drawing odds e as odds de flopar cada mão](/pt/blog/holdem-drawing-odds "thumb:/images/holdem-drawing-odds-hero.webp").
 
 ---
 
 ## Drawing odds: acertando seu flush ou sequência até o river
 
-Você tem um projeto no flop. Com que frequência você o completa? Tudo se resume a **outs** — as cartas que sobraram no baralho e que fazem sua mão. Conte seus outs, depois leia na horizontal.
+> **Resposta rápida**
+> Um projeto de flush de nove outs se completa cerca de 35% das vezes somando turn e river, contra 19,6% só no river depois de um turn que não ajudou. Um projeto de sequência de oito outs acerta um pouco menos. São probabilidades de completar a mão, não vitórias garantidas: antes, desconte as cartas que melhoram sua mão mas deixam o adversário na frente.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -127,25 +133,28 @@ Você tem um projeto no flop. Com que frequência você o completa? Tudo se resu
 
 </div>
 
+A linha das duas overcards pressupõe que parear qualquer uma delas ganha. Contra dois pares, uma trinca ou um projeto mais forte, parte dessas cartas — ou todas — pode estar suja: desconte-as em vez de tratar os seis como outs vencedores garantidos.
+
 O caso clássico: você flopa um **projeto de flush** (nove outs). Você chega lá ==35% das vezes até o river== — melhor que uma em três. Um **projeto de sequência aberta** (oito outs) acerta 31,5%. Repare nas duas colunas: quando o turn é um brick você passa a ter uma carta por vir em vez de duas, então suas odds praticamente caem pela metade — os 35% do projeto de flush viram 19,6% —, e é exatamente por isso que os projetos ficam mais caros de perseguir street após street.
 
 ---
 
 ## Como calcular odds no poker: contando outs e a regra do 2 e 4
 
-Você não consegue carregar aquela tabela na cabeça — mas nem precisa. A **regra do 2 e 4** te deixa dentro de um ponto percentual ou dois em um segundo:
+> **Resposta rápida**
+> A regra do 2 e 4 estima a porcentagem de completar um projeto: use o dobro dos outs para uma carta por vir e quatro vezes os outs para turn e river juntos. A estimativa de duas cartas só serve para precificar um call no flop se você não precisar pagar de novo para ver as duas. É um atalho, não a equity exata.
 
 :::steps
 Conte seus outs | As cartas ainda não vistas que completam sua mão (projeto de flush = 9)
-No flop (2 cartas por vir) | Multiplique outs × 4 → sua % aproximada de acertar até o river
+No flop, se você vai ver as duas cartas sem pagar de novo | Multiplique outs × 4 → sua % aproximada de acertar até o river
 No turn (1 carta por vir) | Multiplique outs × 2 → sua % aproximada de acertar no river
 :::
 
 **Exemplo resolvido.** Você tem quatro cartas para um flush depois do flop. São ==9 outs== (13 do seu naipe − 4 que você consegue ver). No flop: 9 × 4 = **36%** — o número real é 35,0%, então você está certeiro. No turn, se você errou: 9 × 2 = **18%** (real: 19,6%).
 
-:::tip[A regra *super*estima um pouco quando você tem mais de uns 9 outs. Com um monstro de 15 outs, "×4" diz 60% mas o número real é 54% — desconte alguns pontos para projetos grandes.]:::
+:::tip[A estimativa do ×4 já fica um pouco alta com 7 outs; a diferença pesa mais em projetos maiores. Com um monstro de 15 outs, "×4" diz 60% mas o número real é 54% — desconte alguns pontos para projetos grandes.]:::
 
-É esse o truque inteiro. Outs → vezes quatro no flop → sua [equity](/pt/blog/holdem-equity "thumb:/images/holdem-equity-hero.webp"). Todo o resto é só saber o que fazer com esse número. A única habilidade que essa regra assume que você já dominou é a própria contagem — para projetos combinados, outs sobrepostos e os outs "sujos" que não deveriam contar, veja o guia completo de [como contar outs no poker](/pt/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp").
+É esse o atalho: outs limpos → o multiplicador das cartas que você vai ver → uma estimativa do projeto para usar junto com sua [equity](/pt/blog/holdem-equity "thumb:/images/holdem-equity-hero.webp"). Todo o resto é só saber o que fazer com esse número. A única habilidade que essa regra assume que você já dominou é a própria contagem — para projetos combinados, outs sobrepostos e os outs "sujos" que não deveriam contar, veja o guia completo de [como contar outs no poker](/pt/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp").
 
 ---
 
@@ -153,9 +162,10 @@ No turn (1 carta por vir) | Multiplique outs × 2 → sua % aproximada de acerta
 
 ## Pot odds: transformando suas odds em call ou fold
 
-![Infográfico de pot odds — um pote de $100 e um call de $25, então 25 ÷ 125 significa que você precisa de 20% de equity](/images/holdem-probability-pot-odds.webp "Um call de $25 num pote de $100: 25 ÷ 125 = 20% de equity necessária para empatar")
+> **Resposta rápida**
+> Pot odds transformam um call num alvo de equilíbrio: divida o call pelo pote já somado a ele. Compare esse preço com sua chance de ganhar nas cartas que o call realmente compra. O número de flush de duas cartas não justifica pagar só pelo turn quando outra aposta pode vir; os ganhos futuros pedem uma estimativa à parte.
 
-Saber que você vai acertar 35% das vezes é inútil até comparar com o **preço**. Pot odds são simplesmente: *que fração do pote final estou pagando para dar call?* Se sua chance de ganhar for maior que essa fração, você paga.
+![Infográfico de pot odds — um pote de $100 e um call de $25, então 25 ÷ 125 significa que você precisa de 20% de equity](/images/holdem-probability-pot-odds.webp "Um call de $25 num pote de $100: 25 ÷ 125 = 20% de equity necessária para empatar")
 
 **Exemplo resolvido.** O pote é $100. Seu adversário aposta $50, deixando-o em $150. Você precisa pagar $50 para ganhar esses $150.
 
@@ -173,9 +183,10 @@ Decisão | Com duas cartas por vir: 35% > 25% → um ==g:call== claramente lucra
 
 ## Odds de royal flush e straight flush (e por que são tão raros)
 
-![Infográfico de um royal flush de copas — A♥ K♥ na mão completando A-K-Q-J-10 de copas num board 10♥ J♥ Q♥](/images/holdem-probability-royal-flush.webp "Um royal flush de copas: a mão mais rara do poker, cerca de 1 em 30.940 até o river")
+> **Resposta rápida**
+> Um royal flush aparece cerca de uma vez a cada 30.940 mãos aleatórias de sete cartas no Hold'em, muito mais que numa mão de cinco cartas. Um straight flush que não é royal sai perto de 1 em 3.590 até o river — menos raro, mas ainda excepcional. Nenhum dos dois mede sua chance a partir de um projeto específico: com as cartas na mão e o flop conhecidos, a conta passa a ser condicional.
 
-As duas mãos mais raras são as que os jogadores se gabam por anos — com razão.
+![Infográfico de um royal flush de copas — A♥ K♥ na mão completando A-K-Q-J-10 de copas num board 10♥ J♥ Q♥](/images/holdem-probability-royal-flush.webp "Um royal flush de copas: a mão mais rara do poker, cerca de 1 em 30.940 até o river")
 
 - **Royal flush:** como uma mão distribuída de cinco cartas, ==1 em 649.740==. Jogando Hold'em até o river, melhora para cerca de 1 em 30.940 porque você escolhe suas melhores cinco entre sete cartas. De qualquer forma, a maioria dos jogadores passa *anos* entre um e outro.
 - **Straight flush:** cerca de 1 em 72.193 como mão de cinco cartas, ou perto de 1 em 3.590 até o river no Hold'em. Ainda uma aparição de uma vez por ano para a maioria.
@@ -190,7 +201,8 @@ Um mito comum: "um royal flush ganha de tudo, então pode dar *empate*". O pote 
 
 ## Odds improváveis: coolers, quadras e bad beats
 
-Alguns números existem principalmente para explicar a pior noite da sua vida no poker.
+> **Resposta rápida**
+> Odds improváveis precisam de um ponto de partida. Flopar quadra com um par na mão sai cerca de uma vez em 408; receber um par de ases é uma em 221 antes de você ver qualquer carta. Esses eventos explicam resultados raros, mas uma derrota rara, sozinha, não mostra se a decisão anterior estava certa ou errada.
 
 | Improvável | Odds |
 |:---|:---:|
@@ -224,7 +236,7 @@ A. Se você flopa um projeto de flush (nove outs), você o completa cerca de 35%
 
 **Q. Quais são as odds de flopar uma trinca?**
 
-A. Cerca de 11,8%, ou mais ou menos 1 em 8,5, quando você segura um par na mão. Aquele número de "7,5 para 1 contra" é a base para decidir se fazer set mining com um par pequeno é lucrativo.
+A. Cerca de 11,8%, ou mais ou menos 1 em 8,5, quando você segura um par na mão. As odds equivalentes de 7,5 para 1 descrevem erros contra acertos, não uma profundidade de stack recomendada. Um call de set mining também precisa de pagamento futuro realista; a referência prática de 15–20× deixa margem para trincas que não recebem ação ou que perdem.
 
 **Q. Quais são as odds de flopar um royal flush?**
 
@@ -252,7 +264,7 @@ A. 2,60% até o river — cerca de 1 em 39 mãos. Em cinco cartas distribuídas,
 
 **Q. O que é a regra do 2 e 4 no poker?**
 
-A. Um atalho para as odds de projeto: multiplique seus outs por 4 no flop (duas cartas por vir) ou por 2 no turn (uma carta por vir) para estimar sua chance em porcentagem de acertar. É preciso dentro de um ponto ou dois até uns nove outs. Use o ×4 só quando for ver as duas cartas sem mais aposta.
+A. A regra do 2 e 4 estima as odds de projeto: multiplique seus outs por 4 no flop para turn e river juntos, ou por 2 no turn só para o river. Nove outs dão 36% em duas cartas pelo ×4, contra 35,0% exatos; o ×2 dá 18% para a carta do river, contra 19,6%. Confira a tabela exata quando o preço estiver apertado e reserve o número de duas cartas para quando você vê as duas sem mais aposta.
 
 **Q. Como calcular pot odds?**
 
@@ -278,9 +290,9 @@ A. Não existe número único — os nuts (a melhor mão possível naquela mesa)
 
 ## Os 3 números para gravar na memória
 
-1. **Flopar uma trinca: ~12% (1 em 8,5).** Decide todo call de set mining.
+1. **Flopar uma trinca: ~12% (1 em 8,5).** A frequência de acerto abre a conta do set mining; a profundidade dos stacks e o pagamento provável decidem se o call compensa.
 2. **Projeto de flush até o river: 35%.** Nove outs, regra do 4 → 9 × 4 = 36%.
-3. **Pot odds ganham do feeling.** Se sua chance de acertar for maior que o preço do call, você paga — toda vez.
+3. **Pot odds ganham do feeling.** Use a probabilidade das cartas que este call compra e compare o preço com sua chance de ganhar — completar o projeto nem sempre basta.
 
 O poker recompensa os jogadores que tornaram isso automático. Aprenda a tabela, treine a regra do 2 e 4, e comece a perguntar "quais são as odds?" *antes* de agir, em vez de depois. Em seguida, ponha a matemática para trabalhar aprendendo [quais mãos iniciais jogar de cada posição](/pt/blog/holdem-starting-hands-chart), ou revise [por que um flush ganha de uma sequência](/pt/blog/holdem-flush-vs-straight) para sempre saber o quanto seus outs valem.
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Anda flop set dengan pocket pair 11,8% dari waktu (7,5:1 melawan), flop flush dengan dua kartu suited hanya 0,84%, dan menyelesaikan flush draw yang di-flop hingga river 35% dari waktu. Setiap angka di bawah diturunkan dari deck, bukan ditebak.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-09-12",
-  masterUpdated: "2026-09-13",
+  updated: "2026-09-24",
+  masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "🎲",
@@ -36,7 +36,8 @@ Itulah drawing odds sebenarnya: bukan keberuntungan, melainkan ==matematika teta
 
 ## Siklus hidup flop: satu tabel yang dipecah setiap halaman odds
 
-Inilah tabel yang tak dibuat siapa pun di satu tempat. Kebanyakan situs memberi tahu peluang *flop* sebuah tangan di satu halaman dan peluang *menyelesaikan draw* di halaman lain — tapi di meja itu satu cerita yang berkesinambungan. Anda dibagikan dua kartu, Anda flop sesuatu yang jadi **atau** sebuah draw, dan kalau itu draw Anda menyelesaikannya atau tidak.
+> **Jawaban singkat**
+> Flop sebuah tangan dan menyelesaikan draw adalah dua kejadian yang berbeda. Dua kartu hole suited langsung membuat flush di flop hanya 0,84% dari waktu; begitu Anda flop flush draw, peluang dua kartunya untuk selesai adalah 35%. Baca tiap kolom dari titik awal yang tertulis, alih-alih menganggap setiap persentase sebagai peluang preflop.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -56,11 +57,12 @@ Ikuti satu baris dari kiri ke kanan, dan Anda melihat seluruh siklus hidup sebua
 
 ## Peluang flop set (dan matematika set mining)
 
+> **Jawaban singkat**
+> Pocket pair flop set atau lebih baik 11,8% dari waktu — kira-kira 1 dari 8,5, atau 7,5:1 melawan — tapi peluang kena itu sendiri tidak membenarkan call. Untuk set mining (call sebuah raise dengan pair kecil terutama untuk flop three of a kind), patokan praktisnya kira-kira effective stack 15–20 kali call. Anda tetap butuh lawan yang mungkin membayar, karena sebagian set menang sedikit atau malah kalah.
+
 ![Infografik: dua out dari sebuah pocket pair disorot emas di dalam deck, panah menuju tiga kartu flop tertutup, dan batang yang terbagi dua belas persen emas melawan delapan puluh delapan persen abu-abu](/images/holdem-drawing-odds-set-mining.webp "Tiga kartu dari atas deck yang memutuskan sebuah call set mining — dan sebagian besar waktu keputusannya melawan Anda")
 
-**Anda flop set (atau lebih baik) dengan pocket pair 11,8% dari waktu — kira-kira 1 dari 8,5, atau 7,5:1 melawan.** Ini angka drawing terpenting dalam permainan, karena inilah seluruh dasar *set mining*: call sebuah raise dengan pair kecil murni untuk flop three of a kind.
-
-Dari mana 11,8% berasal? Pegang pocket pair dan ada dua kartu tersisa di deck yang memasangkan Anda. Flop adalah tiga kartu ditarik dari 50 yang tak bisa Anda lihat. Cara bersih menghitungnya adalah mundur — peluang Anda **meleset** dari ketiganya:
+Angka 11,8% itu bermula dari dua kartu cocok yang tersisa di deck setelah Anda menerima pocket pair. Flop adalah tiga kartu ditarik dari 50 yang tak bisa Anda lihat, jadi hitung kejadian kebalikannya dulu — peluang Anda **meleset** dari kedua kartu cocok itu:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -90,9 +92,12 @@ Dua angka terkait yang sering ditanyakan:
 
 ## Peluang flush: jadi vs draw vs selesai
 
+> **Jawaban singkat**
+> Dua kartu suited bisa flop flush jadi, flop draw, atau meleset dari keduanya. Dua peluang pertama adalah 0,84% dan 10,9%; baru setelah draw-nya ada, angka penyelesaian 35% hingga river berlaku. Angka terakhir itu mencakup kedua kartu tersisa, jadi tak bisa dipakai untuk menilai harga call yang hanya membeli turn.
+
 ![Ace-king hati dengan flop queen-seven hati di atas felt hijau, sebuah flush draw sembilan-out yang di-flop di samping tumpukan chip pendek](/images/holdem-drawing-odds-flush-draw.webp "Dua hati di tangan, dua di flop — sebuah flush draw, bukan flush jadi: 10,9% untuk flop, 35% untuk selesai hingga river")
 
-Di sinilah para pesaing mengaburkan tiga angka yang sama sekali berbeda. Dengan dua kartu suited di tangan Anda, ada **tiga pertanyaan terpisah**, dan ketiganya berselisih satu orde besaran:
+Ketiga hitungan ini memakai kartu yang diketahui dan sisa tarikan yang berbeda:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -118,12 +123,15 @@ Sebuah flush **backdoor** (runner-runner) — Anda flop hanya *satu* kartu ekstr
 
 ## Peluang straight: flop satu vs draw ke satu
 
+> **Jawaban singkat**
+> Connector peringkat tengah flop straight jadi sekitar 1,3% dari waktu; tangan di dekat salah satu ujung urutan rank punya lebih sedikit rangkaian. Setelah draw terbentuk, open-ender punya delapan kartu pelengkap dan gutshot punya empat. Peluang hingga river keduanya menghitung dua kartu, sedangkan peluang kartu berikutnya di bawah hanya menghitung flop ke turn.
+
 ![Dua panel straight draw berdampingan — rangkaian yang terbuka di kedua ujung dengan angka 8 hijau dalam lingkaran, dan rangkaian berlubang di tengah dengan angka 4 emas](/images/holdem-drawing-odds-oesd-vs-gutshot.webp "Open-ender bernilai dua kali lipat gutshot — dua ujung terbuka melawan satu lubang di tengah")
 
 Connector seperti 8♠7♠ punya siklus hidupnya sendiri. Anda akan **flop straight jadi hanya 1,3%** dari waktu (76:1) — lebih langka dari dugaan kebanyakan pemain. Angka itu berlaku untuk 54s sampai JTs, connector yang bisa mengisi straight dari kedua ujung; tangan di pinggir dek punya lebih sedikit rangkaian, turun sampai 0,33% untuk A-K. Jauh lebih sering Anda flop sebuah **draw**:
 
-- **Open-ended straight draw (OESD):** ~10% dari flop dengan connectors. Delapan outs, selesai **31,5%** hingga river — 1 − C(39,2)/C(47,2) — atau 17% pada satu kartu mana pun.
-- **Gutshot (inside) straight draw:** empat outs, selesai **16,5%** hingga river, 8,5% pada satu kartu. Setengah equity dari open-ender, itulah mengapa connectors yang sama bermain sangat berbeda tergantung flop.
+- **Open-ended straight draw (OESD):** ~10% dari flop dengan connectors. Delapan outs, selesai **31,5%** hingga river — 1 − C(39,2)/C(47,2) — atau 17% dari flop ke turn.
+- **Gutshot (inside) straight draw:** empat outs, selesai **16,5%** hingga river, 8,5% dari flop ke turn. Setengah equity dari open-ender, itulah mengapa connectors yang sama bermain sangat berbeda tergantung flop.
 
 Perhatikan OESD (31,5%) dan flush draw (35%) berdekatan — keduanya "satu draw besar", keduanya kira-kira sepertiga untuk kena hingga river. Itulah jalan pintas yang layak dihafal: sebuah draw besar normal kira-kira ==**satu dari tiga**== untuk selesai hingga river, dan itu terbelah jadi kira-kira satu dari lima sampai enam pada satu street.
 
@@ -131,7 +139,8 @@ Perhatikan OESD (31,5%) dan flush draw (35%) berdekatan — keduanya "satu draw 
 
 ## Flop langka: quads, trips, full house & straight flush
 
-Inilah angka di balik malam terbaik (dan terburuk) hidup poker Anda. Masing-masing adalah soal kombinatorika bersih atas 19.600 flop yang mungkin:
+> **Jawaban singkat**
+> Dengan pocket pair, flop quads 0,245% dan flop full house 0,98%. Dengan dua kartu unpaired, flop trips 1,35% — jalur yang berbeda dari set. Setiap baris di bawah menyebut pegangannya dulu, lalu menghitung flop yang memenuhi syarat dari 19.600 kemungkinan yang sama.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -154,7 +163,8 @@ Angka full house menghitung setiap cara flop memberi Anda full house dengan pock
 
 ## Peluang dibagikan tangan Anda
 
-Sebelum semua di atas, ada pembagiannya. Dengan **1.326 kombinasi dua-kartu yang mungkin**, inilah seberapa sering tangan yang orang tanyakan datang:
+> **Jawaban singkat**
+> Pocket pair spesifik punya enam kombinasi di antara 1.326 kemungkinan pembagian, sedangkan pocket pair apa pun punya 78. A-K suited hanya punya empat. Ini peluang sebelum Anda melihat kartu; begitu Anda memegang sebuah tangan, pertanyaan soal lawan yang menerima rank yang sama harus memperhitungkan kartu yang sudah Anda keluarkan dari deck.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

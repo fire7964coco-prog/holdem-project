@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Para el river ligarás pareja el 43.8% de las veces, doble pareja el 23.5%, color el 3.0% y full el 2.6% — mientras que una escalera real aparece solo una vez cada 31,000 manos.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-13",
-  masterUpdated: "2026-09-13",
+  updated: "2026-09-24",
+  masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🎲",
@@ -37,7 +37,8 @@ El póker no es un juego de adivinar. Cada call, cada fold y cada shove es una =
 
 ## Tabla de probabilidades del póker: la probabilidad de cada mano
 
-Aquí tienes la tabla maestra. El truco que casi todas las webs se saltan: hay ==dos números distintos== para cada mano, y confundirlos es la razón por la que la gente discute sobre lo "rara" que es en realidad una escalera real.
+> **Respuesta rápida**
+> La probabilidad de una mano de póker depende de cuántas cartas puedes usar. En Hold'em, las mejores cinco de siete dan pareja el 43.8% de las veces y doble pareja el 23.5%. Esas frecuencias al river no son las de un reparto aleatorio de cinco cartas: elige la columna que corresponde antes de comparar lo rara que es cada mano.
 
 - **Odds a 5 cartas** = la probabilidad de que una única mano aleatoria de cinco cartas *sea* esa mano (el número clásico de manual).
 - **Hold'em (para el river)** = la probabilidad de que *acabes* con esa mano tras ver las siete cartas (tus dos cartas propias + cinco comunitarias). Este es el número que de verdad importa en la mesa.
@@ -70,6 +71,9 @@ El orden de la jerarquía sigue la **columna de cinco cartas**: cuanto más rara
 
 ## Probabilidad de recibir cada mano inicial
 
+> **Respuesta rápida**
+> Los ases llegan más o menos una vez cada 221 repartos, pero cualquier pareja aparece alrededor de una vez cada 17. La diferencia está en las combinaciones: hay 1,326 manos posibles de dos cartas y una pareja concreta ocupa solo seis de ellas. Dos cartas cualesquiera del mismo palo llegan el 23.5% de las veces; A-K del mismo palo en concreto, apenas el 0.30%.
+
 ![Pareja de ases — el as de picas y el as de corazones recién repartidos sobre el tapete verde junto a fichas de póker](/images/holdem-probability-starting-hands.webp "Pareja de ases: la mejor mano inicial, repartida solo una vez cada 221 manos")
 
 Antes de cualquier flop, hay exactamente **1,326 manos iniciales posibles de dos cartas**. Así de a menudo aparecen las que la gente pregunta.
@@ -88,7 +92,8 @@ Así que la próxima vez que alguien diga "nunca me llegan ases", tiene más o m
 
 ## Probabilidad de ligar cada mano en el flop
 
-Esta es la tabla que la mayoría de páginas de odds entierran o reparten entre una docena de artículos. Estas son las probabilidades de que el flop *ligue* tu mano, según las cartas propias de la columna izquierda.
+> **Respuesta rápida**
+> Con una pareja servida ligas set o mejor el 11.8% de las veces. Con dos cartas del mismo palo, un color ya hecho en el flop es solo el 0.84%, mientras que un proyecto de color sale el 10.9%. Son probabilidades condicionadas: parten de las cartas propias que muestra la tabla, no de la frecuencia de esa mano en cualquier reparto al azar.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -104,13 +109,14 @@ Esta es la tabla que la mayoría de páginas de odds entierran o reparten entre 
 
 </div>
 
-La que hay que memorizar es la primera fila: ==**ligas un set alrededor del 12% de las veces**, o más o menos 1 entre 8.5==. Ese único número decide si pagar una subida para "hacer set mining" con una pareja pequeña es rentable — necesitas que el bote (y el stack probable de tu rival) te pague más de 7.5 a 1 cuando ligues. Ese es el puente hacia las [pot odds](#pot-odds), más abajo. Para la derivación completa de cada fila de aquí — más la regla de stack del set mining y el desglose de color hecho vs proyecto vs completo — mira el análisis a fondo sobre [las odds de proyecto y de ligar cada mano en el flop](/es/blog/holdem-drawing-odds "thumb:/images/holdem-drawing-odds-hero.webp").
+Para el set mining, ==7.5 a 1 es el pago de equilibrio teórico, no una regla de stack suficiente==: supone que cada vez que ligas, ganas y te pagan. En la práctica, la pauta habitual de 15–20 veces el stack efectivo deja margen para el valor que no llegas a cobrar y para los sets que pierden; incluso esa pauta es una heurística, no un call automático. Ese es el puente hacia las [pot odds](#pot-odds), más abajo. Para la derivación completa de cada fila de aquí — más la regla de stack del set mining y el desglose de color hecho vs proyecto vs completo — mira el análisis a fondo sobre [las odds de proyecto y de ligar cada mano en el flop](/es/blog/holdem-drawing-odds "thumb:/images/holdem-drawing-odds-hero.webp").
 
 ---
 
 ## Odds de proyecto: ligar tu color o escalera para el river
 
-Tienes un proyecto en el flop. ¿Con qué frecuencia lo completas? Todo se reduce a los **outs** — las cartas que quedan en la baraja que ligan tu mano. Cuenta tus outs y lee la fila.
+> **Respuesta rápida**
+> Un proyecto de color de nueve outs se completa alrededor del 35% de las veces entre turn y river, frente al 19.6% solo en el river tras fallar el turn. Un proyecto de escalera de ocho outs es algo menos probable. Son probabilidades de completar el proyecto, no victorias garantizadas: primero descuenta las cartas que mejoran tu mano pero dejan a un rival por delante.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -127,25 +133,28 @@ Tienes un proyecto en el flop. ¿Con qué frecuencia lo completas? Todo se reduc
 
 </div>
 
+La fila de dos sobrecartas con seis outs supone que emparejar cualquiera de las dos sobrecartas gana. Contra doble pareja, un set o un proyecto más fuerte, parte o todas esas cartas pueden ser outs sucias: descuéntalas en vez de tratar las seis como outs ganadoras seguras.
+
 El caso clásico: ligas un **proyecto de color** (nueve outs). Lo completarás ==el 35% de las veces para el river== — mejor que una de cada tres. Un **proyecto de escalera abierto** (ocho outs) liga el 31.5%. Fíjate en las dos columnas: en cuanto el turn no ayuda te queda una carta en lugar de dos, así que tus odds se reducen más o menos a la mitad — el 35% pasa a ser 19.6% en el proyecto de color —, y por eso perseguir proyectos sale más caro calle a calle.
 
 ---
 
 ## Cómo calcular las probabilidades: contar outs y la regla del 2 y 4
 
-No puedes llevar esa tabla en la cabeza — pero no lo necesitas. La **regla del 2 y 4** te deja a un punto o dos en un segundo:
+> **Respuesta rápida**
+> La regla del 2 y 4 estima el porcentaje de completar un proyecto: el doble de tus outs cuando queda una carta y cuatro veces tus outs para turn y river juntos. La estimación a dos cartas solo sirve para valorar un call en el flop si no hay que volver a pagar para ver ambas cartas. Es un atajo, no la equity exacta.
 
 :::steps
 Cuenta tus outs | Las cartas no vistas que completan tu mano (proyecto de color = 9)
-En el flop (faltan 2 cartas) | Multiplica outs × 4 → tu % aproximado de ligar para el river
+En el flop, si verás las dos cartas sin volver a pagar | Multiplica outs × 4 → tu % aproximado de ligar para el river
 En el turn (falta 1 carta) | Multiplica outs × 2 → tu % aproximado de ligar en el river
 :::
 
 **Ejemplo resuelto.** Tienes cuatro cartas para un color tras el flop. Eso son ==9 outs== (13 de tu palo − 4 que ves). En el flop: 9 × 4 = **36%** — la cifra real es 35.0%, así que clavado. En el turn si fallaste: 9 × 2 = **18%** (real: 19.6%).
 
-:::tip[La regla *sobre*-estima un poco cuando tienes más de unos 9 outs. Con un monstruo de 15 outs, el "×4" dice 60% pero el número real es 54% — bájalo unos puntos para los proyectos grandes.]:::
+:::tip[El ×4 ya sale un poco alto con 7 outs; la diferencia pesa más cuanto mayor es el proyecto. Con un monstruo de 15 outs, el "×4" dice 60% pero el número real es 54% — bájalo unos puntos para los proyectos grandes.]:::
 
-Ese es todo el truco. Outs → por cuatro en el flop → tu [equity](/es/blog/holdem-equity "thumb:/images/holdem-equity-hero.webp"). Todo lo demás es saber qué hacer con ese número. La única destreza que esta regla da por sentada es el propio conteo — para proyectos combinados, outs solapados y las "outs sucias" que no deberían contar, mira la guía completa de [cómo contar outs en el póker](/es/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp").
+Ese es el atajo: outs limpias → el multiplicador de las cartas que vas a ver → una estimación del proyecto para usar junto a tu [equity](/es/blog/holdem-equity "thumb:/images/holdem-equity-hero.webp"). Todo lo demás es saber qué hacer con ese número. La única destreza que esta regla da por sentada es el propio conteo — para proyectos combinados, outs solapados y las "outs sucias" que no deberían contar, mira la guía completa de [cómo contar outs en el póker](/es/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp").
 
 ---
 
@@ -153,9 +162,10 @@ Ese es todo el truco. Outs → por cuatro en el flop → tu [equity](/es/blog/ho
 
 ## Pot odds: convertir tus odds en un call o un fold
 
-![Infografía de pot odds — un bote de $100 y un call de $25, así que 25 ÷ 125 significa que necesitas 20% de equity](/images/holdem-probability-pot-odds.webp "Un call de $25 a un bote de $100: 25 ÷ 125 = 20% de equity necesaria para empatar")
+> **Respuesta rápida**
+> Las pot odds convierten un call en un objetivo de equilibrio: divide lo que pagas entre el bote después de sumar tu call. Compara ese precio con tu probabilidad de ganar en las cartas que ese call te compra de verdad. Una cifra de color a dos cartas no justifica pagar solo por el turn si puede llegar otra apuesta; los pagos futuros necesitan una estimación aparte.
 
-Saber que ligarás el 35% de las veces no sirve de nada hasta que lo comparas con el **precio**. Las pot odds son simplemente: *¿qué fracción del bote final estoy pagando por igualar?* Si tu probabilidad de ganar es mayor que esa fracción, pagas.
+![Infografía de pot odds — un bote de $100 y un call de $25, así que 25 ÷ 125 significa que necesitas 20% de equity](/images/holdem-probability-pot-odds.webp "Un call de $25 a un bote de $100: 25 ÷ 125 = 20% de equity necesaria para empatar")
 
 **Ejemplo resuelto.** El bote es $100. Tu rival apuesta $50, dejándolo en $150. Debes igualar $50 para ganar esos $150.
 
@@ -173,9 +183,10 @@ Ese es el momento en que todos los números dan sus frutos — pero **usa el nú
 
 ## Odds de escalera real y de color (y por qué son tan raras)
 
-![Infografía de una escalera real de corazones — A♥ K♥ en mano completando A-K-Q-J-10 de corazones sobre una mesa 10♥ J♥ Q♥](/images/holdem-probability-royal-flush.webp "Una escalera real de corazones: la mano más rara del póker, alrededor de 1 entre 30,940 para el river")
+> **Respuesta rápida**
+> Una escalera real aparece más o menos una vez cada 30,940 manos de Hold'em de siete cartas al azar, mucho más a menudo que en un reparto de cinco. Una escalera de color no real ronda 1 entre 3,590 al river: menos rara, pero aun así excepcional. Ninguna de las dos cifras mide tu opción desde un proyecto concreto: con cartas propias y flop conocidos, el cálculo queda condicionado a esas cartas.
 
-Las dos manos más raras son de las que los jugadores presumen durante años — con razón.
+![Infografía de una escalera real de corazones — A♥ K♥ en mano completando A-K-Q-J-10 de corazones sobre una mesa 10♥ J♥ Q♥](/images/holdem-probability-royal-flush.webp "Una escalera real de corazones: la mano más rara del póker, alrededor de 1 entre 30,940 para el river")
 
 - **Escalera real:** como mano servida de cinco cartas, ==1 entre 649,740==. Jugando Hold'em hasta el river, mejora a alrededor de 1 entre 30,940 porque eliges tus mejores cinco de siete cartas. En cualquier caso, la mayoría de los jugadores pasan *años* entre una y otra.
 - **Escalera de color:** alrededor de 1 entre 72,193 como mano de cinco cartas (cerca de 1 entre 3,590 para el river en Hold'em). Aun así, para casi todos, un avistamiento de una vez al año.
@@ -190,7 +201,8 @@ Un mito común: "una escalera real gana a todo, así que puede *empatar*". El bo
 
 ## Odds de tiro largo: coolers, pókers y bad beats
 
-Algunos números existen sobre todo para explicar la peor noche de tu vida como jugador.
+> **Respuesta rápida**
+> Las odds de tiro largo necesitan una condición de partida. Con una pareja servida, el póker en el flop sale más o menos 1 de cada 408 veces; recibir ases es 1 entre 221 antes de ver ninguna carta. Estos sucesos explican resultados raros, pero una derrota rara, por sí sola, no demuestra si la decisión previa fue correcta.
 
 | Tiro largo | Odds |
 |:---|:---:|
@@ -236,7 +248,7 @@ A. Si ligas un proyecto de color en el flop (nueve outs), lo completarás alrede
 
 **Q. ¿Cuál es la probabilidad de ligar un set en el flop?**
 
-A. Alrededor del 11.8% en el flop, o más o menos 1 entre 8.5, cuando tienes una pareja servida. Esa cifra de "7.5 a 1 en contra" es la base para decidir si hacer set mining con una pareja pequeña es rentable.
+A. Alrededor del 11.8% en el flop, o más o menos 1 entre 8.5, cuando tienes una pareja servida. Las odds equivalentes de 7.5 a 1 describen fallos frente a aciertos, no una profundidad de stack recomendada. Un call de set mining también necesita un pago futuro realista; la pauta práctica de 15–20 veces deja margen para los sets que no reciben acción o que pierden.
 
 **Q. ¿Cuál es la probabilidad de recibir pareja de ases?**
 
@@ -244,11 +256,11 @@ A. 1 entre 221 (0.45%) para los ases en concreto. Cualquier pareja, en cambio, l
 
 **Q. ¿Qué es la regla del 2 y 4 en el póker?**
 
-A. Un atajo para las odds de proyecto — también llamada "regla del 4 y 2": multiplica tus outs por 4 en el flop (faltan dos cartas) o por 2 en el turn (falta una carta) para estimar tu porcentaje de ligar. Es precisa a un punto o dos hasta unos nueve outs. Usa el ×4 solo cuando vayas a ver ambas cartas sin más apuestas.
+A. La regla del 2 y 4 (también llamada "regla del 4 y 2") estima las odds de proyecto: multiplica tus outs por 4 en el flop para turn y river juntos, o por 2 en el turn solo para el river. Nueve outs dan 36% a dos cartas con el ×4, frente al 35.0% exacto; el ×2 da 18% para la carta del river, frente al 19.6%. Consulta la tabla exacta cuando el precio esté ajustado y reserva la cifra a dos cartas para ver ambas sin más apuestas.
 
 **Q. ¿Cómo se calculan las probabilidades en el póker?**
 
-A. Empiezas contando tus outs — las cartas no vistas que completan tu mano — y aplicas la regla del 2 y 4: outs × 4 en el flop, outs × 2 en el turn te dan tu porcentaje aproximado de ligar. Un proyecto de color son 9 outs, así que 9 × 4 = 36% (real: 35.0%). Luego comparas ese porcentaje con tus pot odds para decidir si pagar es rentable.
+A. Empiezas contando tus outs — las cartas no vistas que completan tu mano — y aplicas la regla del 2 y 4: outs × 4 en el flop, outs × 2 en el turn te dan tu porcentaje aproximado de ligar. Un proyecto de color son 9 outs, así que 9 × 4 = 36% (real: 35.0%). Luego comparas ese porcentaje con tus pot odds para decidir si pagar es rentable, usando la cifra del ×4 solo si vas a ver las dos cartas sin volver a pagar.
 
 **Q. ¿Qué es la "regla 80/20" en el póker?**
 
@@ -286,9 +298,9 @@ A. No hay un número único — los nuts (la mejor mano posible en una mesa dada
 
 ## Los 3 números para grabar a fuego
 
-1. **Ligar un set: ~12% (1 entre 8.5).** Decide cada call de set mining.
+1. **Ligar un set: ~12% (1 entre 8.5).** La frecuencia de acierto abre el cálculo del set mining; la profundidad de stack y el pago probable deciden si el call es rentable.
 2. **Proyecto de color para el river: 35%.** Nueve outs, regla del 4 → 9 × 4 = 36%.
-3. **Las pot odds ganan a la corazonada.** Si tu probabilidad de ligar es mayor que el precio del call, pagas — siempre.
+3. **Las pot odds ganan a la corazonada.** Ajusta la probabilidad a las cartas que te compra este call y compara el precio con tu probabilidad de ganar — completar el proyecto no siempre basta.
 
 El póker premia a los jugadores que han hecho esto automático. Aprende la tabla, ejercita la regla del 2 y 4 y empieza a preguntarte "¿qué probabilidad hay?" *antes* de actuar en lugar de después. A continuación, pon la matemática a trabajar aprendiendo [qué manos iniciales jugar desde cada posición](/es/blog/holdem-starting-hands-chart), o repasa [por qué el color gana a la escalera](/es/blog/holdem-flush-vs-straight) para que siempre sepas cuánto valen tus outs.
 

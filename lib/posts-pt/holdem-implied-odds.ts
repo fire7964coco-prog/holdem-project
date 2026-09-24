@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Odds implícitas são as fichas extras que você espera ganhar nas próximas streets quando o seu projeto acerta. Elas deixam você pagar com lucro um projeto que só as pot odds mandariam foldar — mas só se os stacks forem profundos e o adversário realmente for pagar você.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-22",
-  masterUpdated: "2026-09-13",
+  updated: "2026-09-24",
+  masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "💰",
@@ -180,7 +180,7 @@ Perdi mais fichas para odds implícitas imaginárias do que para qualquer bad be
 
 **Q. O que são odds implícitas no poker?**
 
-A. Odds implícitas são as fichas extras que você espera ganhar nas próximas streets se o seu projeto completar, somadas às fichas que já estão no pote. Elas deixam você pagar com lucro alguns projetos que só as pot odds mandariam foldar — desde que os stacks sejam profundos o suficiente para te pagar quando você acerta.
+A. Odds implícitas são as fichas extras que você espera ganhar nas próximas streets se o seu projeto completar — a parte de pagamento futuro de uma decisão de projeto. Um call que fica abaixo do preço atual pode recuperar a diferença depois que você acerta, mas só se um adversário ainda tiver fichas e estiver disposto a pagar. Trate esse pagamento como uma estimativa, não como dinheiro que já está no meio.
 
 **Q. Como se calculam as odds implícitas?**
 
@@ -188,7 +188,7 @@ A. Use: extra necessário = (seu call ÷ sua chance de acertar) − (o pote atua
 
 **Q. Qual é a diferença entre pot odds e odds implícitas?**
 
-A. As pot odds contam só o dinheiro que está no pote agora e podem ser calculadas com exatidão. As odds implícitas somam o dinheiro que você espera ganhar nas próximas streets, que é uma estimativa. As pot odds dizem se um call se paga hoje; as odds implícitas dizem se ele compensa ao longo da mão inteira.
+A. A diferença entre pot odds e odds implícitas é a certeza: o pote atual e o valor do call estão à vista; o pagamento posterior depende do que acontece a seguir. Confira primeiro o preço imediato e depois pergunte quanto um acerto precisa render a mais. Um stack profundo deixa esse dinheiro disponível, mas não garante que o adversário vá colocá-lo no pote.
 
 **Q. Quando você deve usar as odds implícitas?**
 
@@ -196,7 +196,7 @@ A. Comece pelas pot odds. Se a sua equity já supera o preço imediato, é só p
 
 **Q. O que são reverse implied odds?**
 
-A. As reverse implied odds são as fichas que você perde quando completa seu projeto mas ele ainda é a segunda melhor mão — como fazer um flush baixo contra um mais alto, ou a ponta baixa de uma sequência contra uma maior. Elas fazem projetos que não são para os nuts valerem menos do que seus outs sugerem, então você precisa de um preço imediato melhor para pagar.
+A. As reverse implied odds são as fichas extras que um projeto completo te custa quando ele ainda é a segunda melhor mão: um flush baixo ou a ponta baixa de uma sequência pode te levar a investir mais enquanto outra mão continua na frente. Um projeto com esse risco pede uma estimativa de pagamento mais cautelosa do que um projeto para os nuts; ter o mesmo número de cartas que completam não torna essas cartas igualmente valiosas.
 
 **Q. O que são boas odds implícitas — quanto você precisa?**
 

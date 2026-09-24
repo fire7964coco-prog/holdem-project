@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Para calcular las pot odds, divide lo que tienes que igualar entre el bote total después de tu call. Igualar $50 en un bote de $150 = 50 ÷ 200 = 25% — necesitas al menos un 25% de equity para que el call sea rentable.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-24",
+  masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🧮",
@@ -47,7 +47,8 @@ Ese número de "cuántas veces necesitas ganar" es lo que importa. Recibir 3 a 1
 
 ## Cómo calcular las pot odds (paso a paso)
 
-Olvídate de los ratios por un momento — la forma más rápida y útil es un **porcentaje**, porque lo comparas directamente con tu probabilidad de ganar.
+> **Respuesta rápida**
+> Calcula primero el bote final, con la apuesta a la que te enfrentas y tu propio call incluidos, y divide el call entre ese total. El resultado es tu equity de equilibrio: con ella ni ganas ni pierdes a la larga. Mantén coherente el momento del bote: el dinero que ya está dentro del bote actual no se vuelve a sumar.
 
 :::steps
 Suma el bote final | Bote actual + la apuesta + tu call. Ejemplo: bote de $100 + apuesta de $50 + tu call de $50 = $200
@@ -65,7 +66,8 @@ Eso es todo. **Equity necesaria = tu call ÷ el bote final.** Si tu probabilidad
 
 ## Pot odds como ratio vs. porcentaje
 
-Los jugadores de la vieja escuela hablan en ratios ("estoy recibiendo 4 a 1"); los modernos piensan en porcentajes ("necesito un 20%"). Deberías saber pasar de uno a otro al instante, porque el ratio es lo que *ves* (bote vs. apuesta) y el porcentaje es lo que *usas* (frente a tu equity).
+> **Respuesta rápida**
+> Un ratio de pot odds compara el dinero que puedes ganar con el call que arriesgas; un porcentaje expresa con qué frecuencia tiene que salirte bien ese riesgo. A 4 a 1 arriesgas una unidad para ganar cuatro, así que debes ganar una vez de cada cinco: el 20%. Una recompensa mayor por el mismo call baja el porcentaje de equilibrio.
 
 La conversión es un solo paso: un ratio de **X a 1** significa que necesitas **1 ÷ (X + 1)** como porcentaje.
 
@@ -85,9 +87,12 @@ El patrón es intuitivo: cuanto más empequeñece el bote al call, menor es la p
 
 ## ¿Cuánta equity necesitas para pagar?
 
+> **Respuesta rápida**
+> Una apuesta de medio bote exige un 25% de equity para pagar; una del tamaño del bote, un 33%, y una de 2× el bote, un 40%. El objetivo depende del tamaño de la apuesta respecto al bote, no de su cantidad en dólares. Calcula primero ese objetivo y luego valora tu mano frente al rango que te ofrece ese precio.
+
 ![Cartas premium sobre el tapete verde — decidiendo si el precio es el adecuado para continuar](/images/holdem-starting-hands-premium.webp "La equity necesaria depende por completo del tamaño de la apuesta a la que te enfrentas")
 
-Aquí tienes el atajo que vive en tu cabeza en la mesa. Tu equity necesaria depende **solo del tamaño de la apuesta respecto al bote** — así que memoriza estos siete anclajes y nunca necesitarás una calculadora.
+Memoriza estos siete anclajes para ponerle precio al call antes de decidir si tu mano es lo bastante fuerte:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -109,7 +114,10 @@ Incluso un enorme **overbet de 2× el bote solo pide un 40% de equity**. Casi nu
 
 ## Chuleta de pot odds: qué proyectos superan a qué apuestas
 
-Ahora conecta el precio con tu mano. [Cuenta tus **outs**](/es/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp") (cartas que completan tu mano), conviértelos en equity y compáralo con la apuesta. Estos son los proyectos con los que más te encontrarás:
+> **Respuesta rápida**
+> Que un proyecto cumpla el precio depende tanto de sus outs limpios como del número de cartas que te compra este call. La probabilidad a dos cartas de un proyecto de color es mucho mayor que la de una sola. Usa la columna de la decisión real, y no trates el simple hecho de ligar una pareja o un color como una victoria garantizada.
+
+[Cuenta tus **outs**](/es/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp") antes de usar la chuleta. La fila de dos sobrecartas con seis outs supone que cualquiera de las dos parejas gana; descuenta las cartas que te emparejan pero siguen perdiendo contra las manos probables del rival.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -129,7 +137,8 @@ Léelo frente a la tabla de tamaños de apuesta de arriba. Frente a una ==apuest
 
 ## Pot odds vs. equity vs. odds implícitas
 
-Estas tres se mezclan constantemente, y la confusión cuesta dinero. Aquí tienes la separación limpia:
+> **Respuesta rápida**
+> Las pot odds fijan el precio, la equity mide la parte del bote que te corresponde en promedio y las odds implícitas estiman el dinero extra que ganarás más adelante. Empieza por las dos primeras. Cuenta un pago futuro solo si quedan fichas por ganar y un rival dispuesto a pagarlas; completar una segunda mejor mano puede, en cambio, costarte más.
 
 :::compare
 Término | Qué significa
@@ -146,7 +155,8 @@ La otra cara son las **reverse implied odds** — las fichas que *perderás* cua
 
 ## La regla del 2 y 4: convertir outs en odds rápido
 
-No puedes pararte a calcular la equity exacta en mitad de una mano, así que usa la **regla del 2 y 4**:
+> **Respuesta rápida**
+> Usa la regla del 2 y 4 para estimar si un proyecto está cerca del precio de un call. Cuatro veces tus outs aproxima dos cartas; el doble de tus outs, una. Antes de elegir el multiplicador, pregúntate si este call te lleva al river sin otro pago; una decisión ajustada merece la tabla exacta.
 
 - **En el flop, con dos cartas todavía por venir:** multiplica tus outs por **4**.
 - **En el turn, con una carta por venir:** multiplica tus outs por **2**.
@@ -160,6 +170,9 @@ Las derivaciones completas de cada proyecto y mano hecha están en la [tabla de 
 ---
 
 ## Errores comunes con las pot odds que cometen los principiantes
+
+> **Respuesta rápida**
+> Los errores caros con las pot odds son usar un bote final equivocado, contar cartas que siguen perdiendo y comprar una sola carta con una estimación de dos. El dinero futuro también puede ser imaginario: los stacks profundos no garantizan que te paguen. Revisa por separado el precio, los outs limpios y las apuestas que quedan antes de pagar un proyecto.
 
 Cometí todos y cada uno de estos antes de que me dejaran sin fichas. Estate atento:
 

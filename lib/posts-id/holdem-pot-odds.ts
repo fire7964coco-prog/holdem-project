@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Untuk menghitung pot odds, bagi jumlah yang harus Anda call dengan total pot setelah call Anda. Call $50 ke pot $150 = 50 ÷ 200 = 25% — jadi Anda butuh minimal 25% equity agar call ini profit.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-24",
+  masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "🧮",
@@ -47,7 +47,8 @@ Angka "seberapa sering Anda perlu menang" itulah intinya. Mendapat 3:1 berarti c
 
 ## Cara Menghitung Pot Odds (Langkah demi Langkah)
 
-Lupakan rasio sejenak — bentuk tercepat yang bisa dipakai adalah **persentase**, karena Anda membandingkannya langsung dengan peluang menang Anda.
+> **Jawaban singkat**
+> Hitung pot akhir dulu — termasuk taruhan yang Anda hadapi dan call Anda sendiri — lalu bagi call dengan total itu. Hasilnya adalah persentase equity impas. Jaga agar titik hitung pot tetap konsisten: uang yang sudah termasuk dalam pot saat ini tidak boleh ditambahkan untuk kedua kalinya.
 
 :::steps
 Jumlahkan pot akhir | Pot saat ini + taruhan + call Anda. Contoh: pot $100 + taruhan $50 + call $50 Anda = $200
@@ -65,7 +66,8 @@ Itu saja. **Equity yang dibutuhkan = call Anda ÷ pot akhir.** Jika peluang mena
 
 ## Pot Odds sebagai Rasio vs. Persentase
 
-Pemain aliran lama bicara dalam rasio ("saya dapat 4:1"); pemain modern berpikir dalam persentase ("saya butuh 20%"). Anda harus bisa berpindah di antara keduanya secara instan, karena rasio adalah yang Anda *lihat* (pot vs. taruhan) dan persentase adalah yang Anda *pakai* (vs. equity Anda).
+> **Jawaban singkat**
+> Rasio pot odds membandingkan uang yang bisa Anda menangkan dengan call yang Anda pertaruhkan; persentase menyatakan seberapa sering risiko itu harus berhasil. Pada 4:1, Anda mempertaruhkan satu unit untuk menang empat, jadi Anda harus menang satu dari lima kali: 20%. Imbalan yang lebih besar untuk call yang sama menurunkan persentase impasnya.
 
 Konversinya satu langkah: rasio **X:1** berarti Anda butuh **1 ÷ (X + 1)** sebagai persentase.
 
@@ -85,9 +87,12 @@ Polanya intuitif: makin pot mengerdilkan call, makin kecil bagian kue yang Anda 
 
 ## Berapa Banyak Equity yang Anda Butuhkan untuk Call?
 
+> **Jawaban singkat**
+> Taruhan setengah pot menuntut 25% equity untuk call; taruhan sebesar pot menuntut 33%, dan taruhan 2× pot menuntut 40%. Targetnya bergantung pada ukuran taruhan relatif terhadap pot, bukan jumlah dolarnya. Tentukan target itu dulu, lalu nilai tangan Anda terhadap range yang menawarkan harga tersebut.
+
 ![Kartu tertutup premium di meja felt hijau — memutuskan apakah harganya pas untuk lanjut](/images/holdem-starting-hands-premium.webp "Equity yang dibutuhkan sepenuhnya tergantung pada ukuran taruhan yang Anda hadapi")
 
-Inilah jalan pintas yang tinggal di kepala Anda di meja. Equity yang Anda butuhkan tergantung **hanya pada ukuran taruhan relatif terhadap pot** — jadi hafalkan tujuh patokan ini dan Anda tak akan pernah butuh kalkulator.
+Hafalkan tujuh patokan ini agar Anda bisa menghitung harga call sebelum memutuskan apakah tangan Anda cukup kuat:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -109,7 +114,10 @@ Bahkan **overbet 2× pot yang masif hanya meminta 40% equity**. Anda hampir tak 
 
 ## Tabel Pot Odds: Draw Mana Mengalahkan Taruhan Mana
 
-Sekarang hubungkan harga dengan tangan Anda. [Hitung **outs** Anda](/id/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp") (kartu yang menjadikan tangan Anda), ubah menjadi equity, dan cek terhadap taruhan. Inilah draw yang paling sering Anda hadapi:
+> **Jawaban singkat**
+> Apakah sebuah draw memenuhi harganya bergantung pada outs bersihnya dan jumlah kartu yang dibeli call ini. Peluang dua kartu sebuah flush draw jauh lebih tinggi daripada peluang satu kartunya. Pakai kolom yang sesuai dengan keputusan sebenarnya, dan jangan anggap sekadar membuat pair atau flush sebagai kemenangan pasti.
+
+[Hitung **outs** Anda](/id/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp") sebelum memakai tabel ini. Baris dua overcard dengan enam outs mengandaikan pair mana pun dari keduanya menang; diskon kartu pembuat pair yang tetap kalah dari tangan lawan yang mungkin.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -129,7 +137,8 @@ Bandingkan dengan tabel ukuran taruhan di atas. Menghadapi ==taruhan setengah po
 
 ## Pot Odds vs. Equity vs. Implied Odds
 
-Ketiga ini terus-menerus dicampuradukkan, dan kebingungannya makan uang. Inilah pemisahan yang bersih:
+> **Jawaban singkat**
+> Pot odds menetapkan harga, equity mengukur bagian pot yang diharapkan menjadi milik Anda, dan implied odds memperkirakan uang tambahan yang dimenangkan nanti. Mulailah dari dua yang pertama. Hitung bayaran di masa depan hanya jika masih ada chip untuk dimenangkan dan lawan yang mungkin membayar; menyempurnakan tangan peringkat kedua justru bisa lebih mahal.
 
 :::compare
 Istilah | Apa artinya
@@ -146,7 +155,8 @@ Cermin gelapnya adalah **reverse implied odds** — chip yang akan Anda *kehilan
 
 ## Rule of 4 and 2: Mengubah Outs Menjadi Odds dengan Cepat
 
-Anda tak bisa berhenti untuk menghitung equity persis di tengah tangan, jadi gunakan **Rule of 4 and 2**:
+> **Jawaban singkat**
+> Pakai Rule of 4 and 2 untuk memperkirakan apakah sebuah draw mendekati harga call. Empat kali outs Anda mendekati peluang dua kartu, sedangkan dua kali outs mendekati satu kartu. Sebelum memilih pengali, tanyakan apakah call saat ini membawa Anda sampai river tanpa bayaran lagi; keputusan yang tipis layak dicek dengan tabel angka persis.
 
 - **Di flop, dengan dua kartu masih tersisa:** kalikan outs Anda dengan **4**.
 - **Di turn, dengan satu kartu tersisa:** kalikan outs Anda dengan **2**.
@@ -160,6 +170,9 @@ Penurunan lengkap untuk setiap draw dan tangan jadi ada di [bagan probabilitas](
 ---
 
 ## Kesalahan Pot Odds Umum yang Dibuat Pemula
+
+> **Jawaban singkat**
+> Kesalahan pot odds yang mahal adalah memakai pot akhir yang salah, menghitung kartu yang tetap kalah, dan membeli satu kartu dengan perkiraan dua kartu. Uang di masa depan juga bisa khayalan: stack dalam tidak menjamin bayaran. Cek harga, outs bersih, dan sisa putaran taruhan secara terpisah sebelum call sebuah draw.
 
 Saya membuat setiap kesalahan ini sebelum kesalahan-kesalahan itu membuat saya bangkrut. Waspadai:
 

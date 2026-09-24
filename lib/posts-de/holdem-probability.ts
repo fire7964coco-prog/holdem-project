@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Bis zum River endest du mit einem Paar in 43,8% der Fälle, mit zwei Paaren in 23,5%, mit einem Flush in 3,0% und mit einem Full House in 2,6% – während ein Royal Flush nur etwa einmal in 31.000 Händen auftaucht.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-14",
-  masterUpdated: "2026-09-13",
+  updated: "2026-09-24",
+  masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "13 Min.",
   emoji: "🎲",
@@ -111,7 +111,7 @@ Das ist die Tabelle, die die meisten Odds-Seiten vergraben oder auf ein Dutzend 
 
 </div>
 
-Die Zeile zum Merken ist die oberste – ==**1 zu 8,5** für das Set==. Diese eine Zahl entscheidet, ob es profitabel ist, einen Raise zu callen, um ein kleines Paar zu „set-minen“ – du brauchst den Pot (und den wahrscheinlichen Stack deines Gegners), um dich bei einem Treffer mit mehr als 7,5:1 auszuzahlen. Das ist die Brücke zu den [Pot Odds](#pot-odds) weiter unten. Für die vollständige Herleitung jeder Zeile hier – plus die Set-Mining-Stack-Regel und die Aufteilung in fertigen Flush, Flushdraw und komplettierten Draw – siehe die Tiefenanalyse zu [Drawing Odds und den Odds, jede Hand zu floppen](/de/blog/holdem-drawing-odds "thumb:/images/holdem-drawing-odds-hero.webp").
+Die Zeile zum Merken ist die oberste – ==**1 zu 8,5** für das Set==. Beim Set-Mining ist ==7,5:1 aber nur der theoretische Break-even-Payoff, keine ausreichende Stack-Regel==: Die Zahl unterstellt, dass jedes getroffene Set gewinnt und voll ausgezahlt wird. In der Praxis lässt die übliche Richtlinie von etwa dem 15- bis 20-Fachen deines Calls in effektiven Stacks Luft für Sets, die keine Action bekommen oder verlieren – und auch das ist eine Faustregel, kein automatischer Call. Das ist die Brücke zu den [Pot Odds](#pot-odds) weiter unten. Für die vollständige Herleitung jeder Zeile hier – plus die Set-Mining-Stack-Regel und die Aufteilung in fertigen Flush, Flushdraw und komplettierten Draw – siehe die Tiefenanalyse zu [Drawing Odds und den Odds, jede Hand zu floppen](/de/blog/holdem-drawing-odds "thumb:/images/holdem-drawing-odds-hero.webp").
 
 ---
 
@@ -136,6 +136,8 @@ Alles hängt an den **Outs** – den Karten, die im Deck übrig sind und deine H
 
 </div>
 
+Die Zeile mit den zwei Overcards (6 Outs) setzt voraus, dass dir das Paaren eines der beiden Ränge den Pot bringt. Gegen zwei Paare, ein Set oder einen stärkeren Draw sind manche oder alle dieser Paar-Karten dirty – rechne sie herunter, statt sechs Outs als sichere Gewinner zu behandeln.
+
 Beachte die zwei Spalten – und nimm die, die zu deiner Situation passt. Die linke gilt nur, wenn du wirklich ==beide== Karten siehst (all-in, oder der Turn wird durchgecheckt). Bettet dein Gegner am Turn erneut, hast du mit dem Flop-Call nur ==eine== Karte gekauft. Wer die linke Spalte benutzt und in Wahrheit die rechte bezahlt, überschätzt jeden Draw – der häufigste Rechenfehler am Tisch.
 
 ---
@@ -146,15 +148,15 @@ Die **Faustregel** (auch „Regel der 2 und 4“ genannt) ersetzt am Tisch jede 
 
 :::steps
 Zähle deine Outs | Die ungesehenen Karten, die deine Hand komplettieren (Flushdraw = 9)
-Am Flop (2 Karten kommen noch) | Multipliziere Outs × 4 → dein ungefährer %-Wert, bis zum River zu treffen
+Am Flop, wenn du beide Karten ohne weitere Zahlung siehst | Multipliziere Outs × 4 → dein ungefährer %-Wert, bis zum River zu treffen
 Am Turn (1 Karte kommt noch) | Multipliziere Outs × 2 → dein ungefährer %-Wert, am River zu treffen
 :::
 
 **Durchgerechnetes Beispiel.** Vier Karten zu einem Flush nach dem Flop: 13 Karten deiner Farbe minus die vier, die du siehst, macht ==9 Outs==. Am Turn kommst du noch näher heran, wenn du einen Punkt addierst – 9 × 2 + 1 = **19%** statt 18%, gegen einen echten Wert von 19,6%.
 
-:::tip[Die Faustregel *über*schätzt leicht, sobald du mehr als etwa 9 Outs hast. Bei einem 15-Out-Monster sagt „×4“ 60%, aber die echte Zahl ist 54,1% – zieh bei großen Draws ein paar Punkte ab.]:::
+:::tip[Die ×4-Schätzung liegt schon ab 7 Outs leicht zu hoch; mit größeren Draws wird die Lücke spürbar. Bei einem 15-Out-Monster sagt „×4“ 60%, aber die echte Zahl ist 54,1% – zieh bei großen Draws ein paar Punkte ab.]:::
 
-Das ist der ganze Trick. Outs → mal vier am Flop → deine [Equity](/de/blog/holdem-equity "thumb:/images/holdem-equity-hero.webp"). Alles andere ist nur zu wissen, was man mit dieser Zahl anfängt. Die eine Fertigkeit, die diese Regel voraussetzt, ist das Zählen selbst – für Combo-Draws, überlappende Outs und die „schmutzigen“ Outs, die nicht zählen sollten, siehe den kompletten Leitfaden zum [Outs zählen im Poker](/de/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp").
+Das ist die Abkürzung: saubere Outs → der Multiplikator für die Karten, die du wirklich siehst → eine Draw-Schätzung, die du neben deine [Equity](/de/blog/holdem-equity "thumb:/images/holdem-equity-hero.webp") legst. Alles andere ist nur zu wissen, was man mit dieser Zahl anfängt. Die eine Fertigkeit, die diese Regel voraussetzt, ist das Zählen selbst – für Combo-Draws, überlappende Outs und die „schmutzigen“ Outs, die nicht zählen sollten, siehe den kompletten Leitfaden zum [Outs zählen im Poker](/de/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp").
 
 ---
 
@@ -238,7 +240,7 @@ A. Wenn du einen Flushdraw floppst (neun Outs), komplettierst du ihn etwa 35% de
 
 **Q. Wie stehen die Odds, ein Set zu floppen?**
 
-A. Etwa 11,8%, oder grob 1 zu 8,5, wenn du ein Pocket Pair hältst. Diese Zahl „7,5:1 dagegen“ ist die Grundlage, um zu entscheiden, ob das Set-Mining eines kleinen Paars profitabel ist.
+A. Etwa 11,8%, oder grob 1 zu 8,5, wenn du ein Pocket Pair hältst. Die gleichwertigen Odds von 7,5:1 beschreiben Verfehlen gegen Treffen, keine empfohlene Stacktiefe. Ein Set-Mining-Call braucht zusätzlich realistische Auszahlungen später in der Hand; die praktische Richtlinie von etwa dem 15- bis 20-Fachen lässt Raum für Sets, die keine Action bekommen oder verlieren.
 
 **Q. Wie hoch ist die Chance, einen Royal Flush zu floppen?**
 
@@ -250,7 +252,7 @@ A. 1 zu 221 (0,45%) speziell für Asse. Irgendein Pocket Pair kommt allerdings w
 
 **Q. Wie genau ist die Faustregel bei vielen Outs?**
 
-A. Bis etwa neun Outs liegt sie ein bis zwei Punkte daneben – für jede Entscheidung am Tisch genug. Darüber überschätzt sie: Bei 15 Outs sagt sie 60%, echt sind es 54,1%. Faustregel für die Faustregel: Ab zehn Outs ein paar Punkte abziehen.
+A. Bis etwa neun Outs liegt sie höchstens ein bis zwei Punkte daneben – für jede Entscheidung am Tisch genug, auch wenn ×4 schon ab sieben Outs leicht zu hoch liegt. Mit mehr Outs wächst die Lücke: Bei 15 Outs sagt sie 60%, echt sind es 54,1%. Faustregel für die Faustregel: Ab zehn Outs ein paar Punkte abziehen.
 
 **Q. Wie berechnet man Pot Odds?**
 
@@ -280,9 +282,9 @@ A. Es gibt keine einzelne Zahl – die Nuts (die bestmögliche Hand auf einem ge
 
 ## Die 3 Zahlen, die du dir einbrennen solltest
 
-1. **Ein Set floppen: ~12% (1 zu 8,5).** Entscheidet jeden Set-Mining-Call.
+1. **Ein Set floppen: ~12% (1 zu 8,5).** Die Trefferquote ist der Startpunkt der Set-Mining-Rechnung; ob sich der Call lohnt, entscheiden Stacktiefe und wahrscheinliche Auszahlung.
 2. **Flushdraw bis zum River: 35%.** Neun Outs, Faustregel → 9 × 4 = 36%.
-3. **Pot Odds schlagen das Bauchgefühl.** Ist deine Trefferchance größer als der Preis des Calls, callst du – jedes Mal.
+3. **Pot Odds schlagen das Bauchgefühl.** Nimm die Wahrscheinlichkeit für die Karten, die dieser Call wirklich kauft, und vergleiche den Preis mit deiner Gewinnchance – einen Draw zu komplettieren reicht nicht immer.
 
 Poker belohnt die Spieler, die das automatisiert haben. Lerne die Tabelle, drille die Faustregel und fang an, „Wie stehen die Odds?“ *vor* deiner Aktion zu fragen statt danach. Als Nächstes bring die Mathematik zur Anwendung, indem du lernst, [welche Starthände du aus jeder Position spielst](/de/blog/holdem-starting-hands-chart), oder frisch auf, [warum ein Flush eine Straße schlägt](/de/blog/holdem-flush-vs-straight), damit du immer weißt, was deine Outs wert sind.
 

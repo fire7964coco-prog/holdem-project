@@ -179,3 +179,14 @@ FAQ 개수(de·pt 등), ja/pt의 없는 추가질문, zh probability의 없는 �
 - **기각·보류**: ×4 조건 표현 불일치(「without another payment」 신규 vs outs130·outs114·drawing115·pot-odds181의 「all-in」 기존) — all-in은 조건의 충분 사례라 오류 아님, 기존 문장은 보호/범위 밖 → **A4 잔여 후보**. Quick answer 추상 표현 일부(딜러 렌즈 중간 확신) — 수치 정확·직답 요건 충족이라 보류.
 - 게이트: audit:hard --locale=en 56/56 🔴0·🟠0 · answer-echo 7편 echo 0(🟠 length는 EN 문자규격 오적용, 기존) · check:faq-schema en 56/56 · 백틱 0. §13 커버리지상 7편의 카드 문단은 이번 편집 무관(카드 토큰 불변)이라 미검사 상태 그대로다.
 - 남은 것: core7 전파(§3-B 실제 공백만) · pot-odds 이미지 8곳(A3, 새 asset 필요) · ja rake 판정.
+
+### 7-D. core7 전파 — 2026-09-24 (Claude 본체 · B1①)
+
+- 레인 7개(Opus 서브, 로케일당 1)가 EN 델타 `e6e6aa9b~1..5c596982`의 명제마다 (a)이식/(b)이미있음/(c)대응없음/(d)보호로 판정 → 본체 diff 교열 → **교차 렌즈 3개(Fable: es+pt · de+id · ja+zh+zh-hant, 네이티브 편집자 + EN 대조 검산관)** → 반영.
+- 직답 신설: es 27 · pt 27 · id 27(Rule2/4 절은 본체가 추가 — «Rumus Poker» H2는 EN Rule2/4 H2의 제목 교체였다. 브리프 오기) · de 6(pot-odds 1 · outs 1 · drawing 4, set 재배치 포함) · zh 2 · ja·zh-hant 0.
+- A1 전 로케일 반영(무조건 콜 · half-pot 조건 — id·pt는 기존 완료 · FAQ 상대 인원 — ja·zh-hant는 기존 완료). A4 동형 결함(set-mining 7.5:1 단정 · ×4 7 vs >8 · overcard 할인 · heads-up 전제 · EQR 경향화 · fold 빈도 용어 · card-counting 절대단정·TDA 5C/5D·PokerStars)은 있는 자리만.
+- 본체 추가 판정: ja equity 직답 2·probability 직답 1 / zh-hant probability 직답 2(TDA «第 5D 條 · 牌桌上» · long-shot «한 번의 패배로 결정의 옳고 그름을 알 수 없다») — 기존 직답이지만 EN이 고친 결함과 같은 명제라 최소 문구 수정. de steps ×4 라벨 조건.
+- 렌즈 반영: 상 2(es «rangos»=range false friend → sobrecartas · zh «那一成»=10% 오독 → 那一份) + zh 표 라벨 «两张超对牌»(超对=overpair) → «两张高牌»(pot-odds 표기와 통일) + 표현 17.
+- 게이트: audit:hard 7로케일 🔴0 · check:structure 핵심 결손 0 · faq-schema 🔴0 · intl-links 통과 · 백틱 0 · 빌드 73+577. 스탬프 = 내용 바꾼 파일 updated·masterUpdated 09-24(ja implied-odds만 masterUpdated).
+- 🔴 **게이트 공백 발견**: `check-answer-echo.mjs` LABELS에 de·es·id·pt 라벨이 없어 이 4로케일 직답은 기계 검사 0이다. 이번 회차는 레인이 `inspect()`에 라벨을 넘겨 수동 확인(echo 0). 라벨 추가 시 코퍼스 전체 신규 경고가 뜰 것 → 별건.
+- 남긴 것(자동 착수 아님): ja implied FAQ 3·equity FAQ 정의의 «리드 반복 줄이기»(EN 교열성 변경) 미전파 · ja/zh/zh-hant 기존 도입문의 과장 단정 잔여(«계산기 필요 없음»·«승자 전원이 외운 표» 등, 사실오류 아님) · zh-hant outs ×4 «이중계산» 옛 설명 · ×4 «all-in» 조건 표현(A4 잔여, 전 로케일 동형).

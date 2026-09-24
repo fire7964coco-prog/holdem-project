@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Não do jeito que você faz no blackjack — o baralho é reembaralhado toda mão e poucas cartas ficam expostas, então rastrear cartas altas e baixas não te dá vantagem nenhuma. Mas o poker tem a sua própria contagem legal: contar outs, usar blockers e rastrear cartas mortas para ler o que o seu adversário não pode ter.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-13",
+  updated: "2026-09-24",
+  masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🧮",
@@ -100,12 +100,14 @@ Toda carta que você enxerga remove possibilidades. Você já usou isso ao conta
 
 ## Contar cartas é ilegal no poker?
 
-**Não — contar outs, calcular odds e usar blockers é 100% legal no poker, porque não passa de matemática de cabeça.** Nenhuma regra em lugar nenhum proíbe pensar. É a definição de habilidade.
+**Não — contar outs e usar blockers de cabeça é habilidade de poker legal e comum, não ajuda externa.** A linha a observar são os aparelhos e os conselhos de terceiros durante o jogo, e cada sala ou evento define as próprias regras para isso.
 
-Aqui está a parte que as pessoas confundem: contar cartas também não é ilegal no *blackjack* — não é crime, só aritmética mental. Mas, na maioria das jurisdições, um cassino é um negócio privado e pode barrar ou recusar um suspeito de contar, porque um contador custa dinheiro à *casa*. O poker inverte isso por completo: você está jogando contra ==outros jogadores==, e a casa só leva o rake não importa quem ganhe. Ninguém tem qualquer motivo para te impedir de contar os seus outs — o problema de "ser expulso" que persegue o blackjack não nasce da contagem aqui. (Uma sala de poker mantém o direito de recusar qualquer pessoa por outros motivos; fazer conta com o seu próprio projeto não é um deles.)
+A comparação com o blackjack é sobre contra quem você joga. Numa mesa de poker, você compete com ==outros jogadores==; a sala cobra para organizar o jogo, em vez de jogar uma mão contra você. Contar outs de cabeça faz parte desse jogo, e não é, por si só, motivo para te tratarem como um contador de blackjack.
 
 :::note
-A linha que você nunca deve cruzar é a trapaça física ou informacional — cartas marcadas, conluio, compartilhar info das hole cards ou software de solver em tempo real online. Isso não é "contagem", é fraude. Fazer contas de cabeça sempre vale.
+Separe a aritmética mental de cartas marcadas, conluio ou troca de informação sobre hole cards. Software online tem regras próprias: por exemplo, a [política de ferramentas da PokerStars](https://www.pokerstars.com/poker/room/prohibited/) proíbe conselhos de ação em tempo real e restringe o uso de solver enquanto o cliente dela está aberto. Confira as permissões da plataforma em questão, em vez de tratar toda ferramenta como equivalente a fazer conta de cabeça.
+
+Em torneios que usam as [regras da Poker TDA de 2026](https://www.pokertda.com/poker-tda-rules/), a Regra 5C proíbe operar aparelhos eletrônicos ou de comunicação com uma mão viva. A Regra 5D vai além: aplicativos de apoio a apostas, tabelas e outras ferramentas de estratégia não são para usar na mesa, e dados de estratégia vindos de fora não são permitidos. Estude com ferramentas longe do jogo; a decisão na mesa é sua.
 :::
 
 ---
@@ -145,7 +147,7 @@ A. Não. A contagem de blackjack rastreia o equilíbrio de altas e baixas de um 
 
 **Q. Contar cartas é ilegal no poker?**
 
-A. Não. Contar outs, calcular odds e usar blockers é 100% legal — é só matemática de cabeça, e é o núcleo do bom jogo. (Contar cartas também não é tecnicamente ilegal no blackjack; os cassinos apenas barram suspeitos de contar. No poker você joga contra outros jogadores, não contra a casa, então isso nunca acontece.)
+A. Não. Calcular os seus próprios outs e blockers de cabeça é legal e uma parte normal do poker. O que salas e plataformas restringem é a ajuda externa durante o jogo: aparelhos, tabelas e conselhos de outras pessoas.
 
 **Q. A contagem de cartas funciona no Texas Hold'em?**
 
@@ -165,7 +167,7 @@ A. Sim — muito mais do que no Hold'em. No Stud, várias cartas de cada jogador
 
 **Q. Você vai ser expulso de uma sala de poker por contar cartas?**
 
-A. Não. Contar outs e usar blockers é jogo esperado e habilidoso, e a casa só ganha o rake não importa quem vença — então não há motivo para te impedir. Essa é uma diferença chave em relação ao blackjack, onde os cassinos podem barrar contadores.
+A. Não, não por contar os seus próprios outs ou usar blockers de cabeça. São habilidades normais num jogo contra outros jogadores, e a sala fica com o rake seja quem for o vencedor — ao contrário de uma contagem de blackjack, que mira a casa.
 
 **Q. Contar outs é a mesma coisa que contar cartas?**
 
@@ -177,7 +179,7 @@ A. É a versão do poker disso. Você não está rastreando o baralho inteiro co
 
 1. **A contagem de blackjack está morta no poker.** O baralho é reembaralhado toda mão, poucas cartas aparecem, e você joga contra adversários, não contra a casa — então rastrear cartas altas e baixas não te rende nada.
 2. **A contagem do poker são outs, blockers e cartas mortas.** Tudo matemática de cabeça, tudo legal, e tudo muito mais valioso do que um running count seria.
-3. **É uma habilidade, não um segredo.** Ninguém te barra por isso. Conte os seus outs, pergunte o que você bloqueia e subtraia as cartas mortas que você viu — em toda mão.
+3. **É uma habilidade, não um segredo.** Faça a contagem você mesmo e deixe as ferramentas externas para o estudo. Conte os seus outs, pergunte o que você bloqueia e subtraia as cartas mortas que você viu — em toda mão.
 
 Comece pelo número que decide a maioria das mãos: os seus outs. Veja o método completo no [guia de como contar outs](/pt/blog/holdem-outs), depois transforme essas contagens em calls lucrativos com [pot odds](/pt/blog/holdem-pot-odds).
 

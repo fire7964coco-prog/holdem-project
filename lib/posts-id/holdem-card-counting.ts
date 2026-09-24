@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Tidak seperti di blackjack — dek diacak ulang setiap tangan dan terlalu sedikit kartu terlihat, jadi melacak kartu tinggi dan rendah tak memberi keunggulan. Tapi poker punya penghitungan legalnya sendiri: menghitung outs, memakai blocker, dan melacak dead card untuk membaca apa yang tak mungkin dipegang lawan.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-13",
+  updated: "2026-09-24",
+  masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "10 mnt",
   emoji: "🧮",
@@ -100,12 +100,14 @@ Setiap kartu yang bisa Anda lihat menghapus kemungkinan. Di Hold'em sebuah out t
 
 ## Apakah Menghitung Kartu Ilegal di Poker?
 
-**Tidak — menghitung outs, menghitung peluang, dan memakai blocker 100% legal di poker, karena itu tak lain adalah matematika mental.** Tak ada aturan di mana pun yang melarang berpikir. Itu justru definisi keterampilan.
+**Tidak — menghitung outs dan memakai blocker di kepala Anda adalah keterampilan poker biasa yang legal, bukan bantuan dari luar.** Garis yang perlu diperhatikan adalah perangkat dan saran dari orang lain selama permainan, dan setiap room atau event menetapkan aturannya sendiri untuk keduanya.
 
-Inilah bagian yang membingungkan orang: card counting juga tidak ilegal di *blackjack* — itu bukan kejahatan, hanya aritmetika mental. Tapi di kebanyakan yurisdiksi, kasino adalah bisnis swasta yang bisa melarang atau menolak orang yang dicurigai menghitung, karena penghitung menghabiskan uang *bandar*. Poker membalik itu sepenuhnya: Anda main lawan ==pemain lain,== dan bandar hanya mengambil rake tak peduli siapa yang menang. Tak ada seorang pun punya alasan menghentikan Anda menghitung outs — masalah "diusir keluar" yang membayangi blackjack tidak muncul dari menghitung di sini. (Sebuah poker room tetap berhak menolak siapa pun karena alasan lain; mengerjakan aritmetika atas draw Anda sendiri bukan salah satunya.)
+Perbandingan dengan blackjack sebenarnya soal siapa lawan Anda. Di meja poker, Anda bersaing dengan ==pemain lain==, dan room memungut biaya untuk menjalankan permainan, bukan ikut memainkan tangan melawan Anda. Menghitung outs di kepala adalah bagian dari permainan itu, bukan alasan dengan sendirinya untuk memperlakukan Anda seperti penghitung kartu ala blackjack.
 
 :::note
-Garis yang tak boleh dilanggar adalah kecurangan fisik atau informasi — kartu bertanda, kolusi, berbagi info kartu tertutup, atau software solver real-time saat online. Itu bukan "menghitung," itu penipuan. Melakukan matematika di kepala Anda selalu sah.
+Pisahkan aritmetika mental dari kartu bertanda, kolusi, atau berbagi info kartu tertutup. Software online punya aturannya sendiri: misalnya, [kebijakan alat PokerStars](https://www.pokerstars.com/poker/room/prohibited/) melarang saran aksi real-time dan membatasi pemakaian solver selama client-nya terbuka. Cek izin platform yang bersangkutan alih-alih menganggap setiap alat setara dengan aritmetika mental.
+
+Di turnamen yang memakai [aturan Poker TDA 2026](https://www.pokertda.com/poker-tda-rules/), Rule 5C melarang mengoperasikan perangkat elektronik atau komunikasi saat Anda masih memegang tangan hidup. Rule 5D melangkah lebih jauh: aplikasi taruhan, chart, dan alat strategi lain tidak untuk dipakai di meja, dan data strategi dari luar tidak diizinkan. Belajarlah dengan alat di luar permainan; buat keputusan di meja sendiri.
 :::
 
 ---
@@ -145,7 +147,7 @@ A. Tidak. Card counting blackjack melacak keseimbangan tinggi-rendah sebuah shoe
 
 **Q. Apakah menghitung kartu ilegal di poker?**
 
-A. Tidak. Menghitung outs, menghitung peluang, dan memakai blocker 100% legal — itu hanya matematika mental, dan itu inti dari permainan bagus. (Card counting secara teknis juga tidak ilegal di blackjack; kasino hanya melarang orang yang dicurigai menghitung. Di poker Anda main lawan pemain lain, bukan bandar, jadi itu tak pernah terjadi.)
+A. Tidak. Menghitung outs dan blocker Anda sendiri di kepala adalah legal dan bagian normal dari poker. Yang dibatasi room dan platform adalah bantuan dari luar selama permainan: perangkat, chart, dan saran dari orang lain.
 
 **Q. Apakah card counting bekerja di Texas Hold'em?**
 
@@ -165,7 +167,7 @@ A. Ya — jauh lebih banyak daripada di Hold'em. Di Stud, beberapa kartu setiap 
 
 **Q. Apakah Anda akan diusir dari poker room karena menghitung kartu?**
 
-A. Tidak. Menghitung outs dan memakai blocker adalah permainan terampil yang diharapkan, dan bandar hanya mendapat rake tak peduli siapa yang menang — jadi tak ada alasan menghentikan Anda. Ini perbedaan kunci dari blackjack, di mana kasino bisa melarang penghitung.
+A. Tidak, tidak karena menghitung outs Anda sendiri atau memakai blocker di kepala. Itu keterampilan normal dalam permainan melawan pemain lain, dan room mengambil rake siapa pun yang menang — berbeda dengan count blackjack yang diarahkan melawan bandar.
 
 **Q. Apakah menghitung outs sama dengan menghitung kartu?**
 
@@ -177,7 +179,7 @@ A. Itu versi poker-nya. Anda tak melacak seluruh dek seperti penghitung blackjac
 
 1. **Card counting blackjack mati di poker.** Dek diacak ulang setiap tangan, terlalu sedikit kartu terlihat, dan Anda main lawan pemain, bukan bandar — jadi melacak kartu tinggi dan rendah tak menghasilkan apa-apa.
 2. **Penghitungan poker adalah outs, blocker, dan dead card.** Semua matematika mental, semua legal, dan semua jauh lebih berharga daripada running count.
-3. **Ini keterampilan, bukan rahasia.** Tak ada yang melarang Anda karenanya. Hitung outs Anda, tanyakan apa yang Anda blokir, dan kurangi dead card yang sudah Anda lihat — setiap tangan.
+3. **Ini keterampilan, bukan rahasia.** Lakukan penghitungannya sendiri dan simpan alat bantu luar untuk belajar. Hitung outs Anda, tanyakan apa yang Anda blokir, dan kurangi dead card yang sudah Anda lihat — setiap tangan.
 
 Mulailah dengan angka yang menentukan sebagian besar tangan: outs Anda. Lihat metode lengkapnya di [panduan menghitung outs](/id/blog/holdem-outs), lalu ubah penghitungan itu menjadi call yang profit dengan [pot odds](/id/blog/holdem-pot-odds).
 

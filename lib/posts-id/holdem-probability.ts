@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "odds",
   date: "2026-07-03",
   updated: "2026-09-24",
-  masterUpdated: "2026-09-13",
+  masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "13 mnt",
   emoji: "🎲",
@@ -37,7 +37,8 @@ Poker bukan permainan tebak-tebakan. Setiap call, fold, dan shove adalah ==perta
 
 ## Bagan Odds Tangan Poker: Probabilitas Setiap Tangan
 
-Inilah bagan utamanya. Trik yang dilewatkan kebanyakan situs: ada ==dua angka berbeda== untuk tiap tangan, dan mengacaukannya adalah alasan orang berdebat soal seberapa langka royal flush "sebenarnya".
+> **Jawaban singkat**
+> Peluang sebuah tangan poker bergantung pada berapa kartu yang boleh Anda pakai. Di Hold'em, lima terbaik dari tujuh kartu menghasilkan one pair 43,8% dari waktu dan two pair 23,5%. Frekuensi hingga river itu berbeda dari pembagian lima kartu acak; pilih kolom yang sesuai sebelum membandingkan seberapa langka dua tangan.
 
 - **Odds 5-kartu** = kemungkinan satu tangan lima-kartu acak *adalah* tangan itu (angka klasik dari buku teks).
 - **Hold'em (hingga river)** = kemungkinan Anda *berakhir* dengan tangan itu setelah melihat ketujuh kartu (dua kartu tertutup Anda + lima kartu bersama). Inilah angka yang benar-benar penting di meja.
@@ -70,6 +71,9 @@ Urutan peringkat mengikuti **kolom lima kartu**: makin langka suatu tangan di an
 
 ## Odds Dibagikan Tiap Tangan Awal
 
+> **Jawaban singkat**
+> Pocket aces datang sekitar sekali tiap 221 pembagian, tetapi sembarang pocket pair muncul kira-kira sekali tiap 17. Bedanya ada di jumlah kombinasi: dari 1.326 kemungkinan pembagian dua kartu, satu pasangan tertentu hanya mengisi enam. Dua kartu suited apa pun datang 23,5% dari waktu, sedangkan A-K suited secara spesifik hanya 0,30%.
+
 ![Pocket aces — as sekop dan as hati yang baru dibagikan di atas felt hijau di samping chip poker](/images/holdem-probability-starting-hands.webp "Pocket aces: tangan awal terbaik, dibagikan hanya sekali dalam 221 tangan")
 
 Sebelum flop apa pun, ada tepat **1.326 kemungkinan tangan awal dua-kartu**. Inilah seberapa sering yang orang tanyakan itu muncul.
@@ -88,7 +92,8 @@ Jadi lain kali seseorang berkata "saya tak pernah dapat aces," mereka kira-kira 
 
 ## Odds Nge-flop Tiap Tangan
 
-Inilah tabel yang biasanya dikubur, atau dipecah-pecah oleh kebanyakan halaman odds menjadi belasan artikel. Ini adalah odds flop *membuat* tangan Anda, dengan kartu tertutup di kolom kiri.
+> **Jawaban singkat**
+> Dengan pocket pair, Anda nge-flop set atau lebih baik 11,8% dari waktu. Dengan dua kartu suited, flush yang langsung jadi di flop hanya 0,84%, sedangkan flush draw 10,9%. Ini odds bersyarat: mulailah dari kartu tertutup yang tertera di tabel, bukan dari frekuensi tangan itu di seluruh pembagian acak.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -104,13 +109,14 @@ Inilah tabel yang biasanya dikubur, atau dipecah-pecah oleh kebanyakan halaman o
 
 </div>
 
-Yang harus dihafal adalah baris teratas: ==**Anda nge-flop set sekitar 12% dari waktu**, atau kira-kira 1 dari 8,5==. Angka tunggal itu menentukan apakah call sebuah raise untuk "set-mine" pasangan kecil itu menguntungkan — Anda butuh pot (dan stack lawan yang mungkin) membayar Anda lebih dari 7,5:1 saat Anda hit. Itulah jembatan ke [pot odds](#pot-odds), di bawah. Untuk penurunan lengkap tiap baris di sini — plus aturan stack set-mining dan pemisahan flush made-vs-draw-vs-lengkap — lihat bahasan mendalam [drawing odds dan odds nge-flop tiap tangan](/id/blog/holdem-drawing-odds "thumb:/images/holdem-drawing-odds-hero.webp").
+Untuk set-mining, ==7,5:1 adalah bayaran impas teoretis, bukan aturan stack yang memadai==: angka itu mengandaikan setiap set yang jadi menang dan dibayar. Dalam praktik, patokan umum 15–20× stack efektif memberi ruang untuk value yang tak terbayar dan set yang tetap kalah; itu pun heuristik, bukan call otomatis. Itulah jembatan ke [pot odds](#pot-odds), di bawah. Untuk penurunan lengkap tiap baris di sini — plus aturan stack set-mining dan pemisahan flush made-vs-draw-vs-lengkap — lihat bahasan mendalam [drawing odds dan odds nge-flop tiap tangan](/id/blog/holdem-drawing-odds "thumb:/images/holdem-drawing-odds-hero.webp").
 
 ---
 
 ## Drawing Odds: Menyempurnakan Flush atau Straight Anda hingga River
 
-Anda punya draw di flop. Seberapa sering Anda menyempurnakannya? Semuanya bermuara pada **outs** — kartu tersisa di deck yang membuat tangan Anda. Hitung outs Anda, lalu lihat baris yang sesuai.
+> **Jawaban singkat**
+> Flush draw sembilan outs jadi sekitar 35% dari waktu sepanjang turn dan river, dibanding 19,6% di river saja setelah turn meleset. Straight draw delapan outs sedikit lebih kecil peluangnya. Ini peluang jadi, bukan jaminan menang: kurangi dulu kartu yang memperbaiki tangan Anda tetapi tetap membiarkan lawan di depan.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -127,25 +133,30 @@ Anda punya draw di flop. Seberapa sering Anda menyempurnakannya? Semuanya bermua
 
 </div>
 
+Baris dua overcard dengan enam outs mengandaikan pair dari rank mana pun di antara keduanya akan menang. Melawan two pair, set, atau draw yang lebih kuat, sebagian atau semua kartu pembuat pair itu bisa jadi outs kotor — diskon kartu-kartu itu, jangan perlakukan enam sebagai outs menang yang pasti.
+
 Situasi klasik: Anda nge-flop **flush draw** (sembilan outs). Anda akan sampai di sana ==35% dari waktu hingga river== — lebih baik dari satu banding tiga. Sebuah **open-ended straight draw** (delapan outs) hit 31,5%. Perhatikan dua kolomnya: begitu turn keluar kartu mati, Anda tinggal punya satu kartu tersisa alih-alih dua, jadi odds Anda kira-kira separuh — 35% menjadi 19,6% untuk flush draw — itulah persis kenapa draw jadi lebih mahal dikejar street demi street.
 
 ---
 
 ## Rumus Poker: Cara Menghitung Peluang dengan Outs dan Aturan 2 dan 4
 
-Anda tak bisa membawa tabel itu di kepala — tapi Anda tak perlu. Kalau Anda mencari satu ==rumus poker== yang benar-benar dipakai di meja, inilah dia: **Aturan 2 dan 4** membawa Anda dalam sekitar satu-dua persen dalam satu detik:
+> **Jawaban singkat**
+> Aturan 2 dan 4 memperkirakan persentase jadinya sebuah draw: kalikan outs dengan dua untuk satu kartu tersisa, dan dengan empat untuk turn dan river sekaligus. Angka dua kartu hanya bisa dipakai menilai call di flop jika Anda tak perlu membayar lagi untuk melihat kedua kartu. Ini jalan pintas, bukan equity yang pasti.
+
+Anda tak bisa membawa tabel itu di kepala. Kalau Anda mencari satu ==rumus poker== yang benar-benar dipakai di meja, inilah dia: **Aturan 2 dan 4** membawa Anda dalam sekitar satu-dua persen dalam satu detik:
 
 :::steps
 Hitung outs Anda | Kartu tak terlihat yang menyempurnakan tangan Anda (flush draw = 9)
-Di flop (2 kartu akan datang) | Kalikan outs × 4 → perkiraan % Anda untuk hit hingga river
+Di flop, jika Anda akan melihat kedua kartu tanpa membayar lagi | Kalikan outs × 4 → perkiraan % Anda untuk hit hingga river
 Di turn (1 kartu akan datang) | Kalikan outs × 2 → perkiraan % Anda untuk hit di river
 :::
 
 **Contoh terpecahkan.** Anda punya empat kartu menuju flush setelah flop. Itu ==9 outs== (13 dari jenis Anda − 4 yang bisa Anda lihat). Di flop: 9 × 4 = **36%** — angka sebenarnya 35,0%, jadi Anda tepat. Di turn jika Anda meleset: 9 × 2 = **18%** (sebenarnya: 19,6%).
 
-:::tip[Aturan ini sedikit *melebih-lebihkan* begitu Anda punya lebih dari sekitar 9 outs. Dengan monster 15-out, "×4" bilang 60% tapi angka nyatanya 54% — turunkan beberapa poin untuk draw besar.]:::
+:::tip[Perkiraan ×4 sudah sedikit *terlalu tinggi* sejak 7 outs; selisihnya makin berarti pada draw yang lebih besar. Dengan monster 15-out, "×4" bilang 60% tapi angka nyatanya 54% — turunkan beberapa poin untuk draw besar.]:::
 
-Itulah seluruh triknya. Outs → kali empat di flop → [equity](/id/blog/holdem-equity "thumb:/images/holdem-equity-hero.webp") Anda. Sisanya hanya tahu apa yang harus dilakukan dengan angka itu. Satu keahlian yang diandaikan aturan ini sudah Anda kuasai adalah penghitungannya sendiri — untuk combo draw, outs yang tumpang tindih, dan outs "kotor" yang tak seharusnya dihitung, lihat panduan lengkap [menghitung outs di poker](/id/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp").
+Itulah jalan pintasnya: outs bersih → pengali untuk jumlah kartu yang akan Anda lihat → perkiraan draw yang dipakai berdampingan dengan [equity](/id/blog/holdem-equity "thumb:/images/holdem-equity-hero.webp") Anda. Sisanya hanya tahu apa yang harus dilakukan dengan angka itu. Satu keahlian yang diandaikan aturan ini sudah Anda kuasai adalah penghitungannya sendiri — untuk combo draw, outs yang tumpang tindih, dan outs "kotor" yang tak seharusnya dihitung, lihat panduan lengkap [menghitung outs di poker](/id/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp").
 
 ---
 
@@ -153,9 +164,10 @@ Itulah seluruh triknya. Outs → kali empat di flop → [equity](/id/blog/holdem
 
 ## Pot Odds: Mengubah Odds Anda Menjadi Call atau Fold
 
-![Infografis pot odds — pot $100 dan call $25, jadi 25 ÷ 125 berarti Anda butuh 20% equity](/images/holdem-probability-pot-odds.webp "Call $25 ke pot $100: 25 ÷ 125 = 20% equity dibutuhkan untuk impas")
+> **Jawaban singkat**
+> Pot odds mengubah sebuah call menjadi target impas: bagi jumlah call dengan pot setelah call itu ditambahkan. Bandingkan harga itu dengan peluang menang Anda pada kartu yang benar-benar dibeli oleh call tersebut. Angka flush dua kartu tak bisa membenarkan bayaran untuk turn saja bila taruhan lain masih bisa menyusul; bayaran di street berikutnya butuh perkiraan tersendiri.
 
-Tahu Anda akan hit 35% dari waktu itu percuma sampai Anda membandingkannya dengan **harga**. Pot odds sederhananya: *berapa fraksi dari pot akhir yang saya bayar untuk call?* Jika peluang Anda menang lebih besar dari fraksi itu, Anda call.
+![Infografis pot odds — pot $100 dan call $25, jadi 25 ÷ 125 berarti Anda butuh 20% equity](/images/holdem-probability-pot-odds.webp "Call $25 ke pot $100: 25 ÷ 125 = 20% equity dibutuhkan untuk impas")
 
 **Contoh terpecahkan.** Pot-nya $100. Lawan Anda bertaruh $50, menjadikannya $150. Anda harus call $50 untuk memenangkan $150 itu.
 
@@ -173,9 +185,10 @@ Itulah momen semua angka membuahkan hasil — tapi **pakai angka untuk street ya
 
 ## Odds Royal Flush & Straight Flush (dan Kenapa Begitu Langka)
 
-![Infografis royal flush hati — A♥ K♥ di tangan menyempurnakan A-K-Q-J-10 hati di board 10♥ J♥ Q♥](/images/holdem-probability-royal-flush.webp "Royal flush hati: tangan paling langka di poker, sekitar 1 dari 30.940 hingga river")
+> **Jawaban singkat**
+> Royal flush muncul kira-kira sekali dalam 30.940 tangan Hold'em tujuh kartu acak, jauh lebih sering daripada di pembagian lima kartu. Straight flush non-royal sekitar 1 dari 3.590 hingga river — kurang langka, tapi tetap istimewa. Kedua angka itu bukan peluang Anda dari draw tertentu: begitu kartu tertutup dan flop diketahui, hitungannya bersyarat pada kartu-kartu itu.
 
-Dua tangan paling langka adalah yang dibanggakan pemain bertahun-tahun — dengan alasan bagus.
+![Infografis royal flush hati — A♥ K♥ di tangan menyempurnakan A-K-Q-J-10 hati di board 10♥ J♥ Q♥](/images/holdem-probability-royal-flush.webp "Royal flush hati: tangan paling langka di poker, sekitar 1 dari 30.940 hingga river")
 
 - **Royal flush:** sebagai tangan lima-kartu yang dibagikan, ==1 dari 649.740==. Bermain Hold'em hingga river, peluangnya naik menjadi sekitar 1 dari 30.940 karena Anda memilih lima terbaik dari tujuh kartu. Bagaimanapun, kebanyakan pemain menunggu *bertahun-tahun* di antaranya.
 - **Straight flush:** sekitar 1 dari 72.193 sebagai tangan lima-kartu, atau sekitar 1 dari 3.590 hingga river di Hold'em. Bagi kebanyakan pemain, ini tetap penampakan sekali setahun.
@@ -190,7 +203,8 @@ Mitos umum: "royal flush mengalahkan segalanya, jadi ia bisa *seri*." Pot memang
 
 ## Odds Peluang Tipis: Cooler, Quads, dan Bad Beat
 
-Beberapa angka ada terutama untuk menjelaskan malam terburuk hidup poker Anda.
+> **Jawaban singkat**
+> Odds peluang tipis di poker selalu butuh titik awal. Nge-flop quads dengan pocket pair sekitar satu dari 408; dibagikan aces satu dari 221 sebelum Anda melihat kartu apa pun. Kejadian seperti ini menjelaskan hasil yang langka, tetapi satu kekalahan langka saja tidak menunjukkan apakah keputusan sebelumnya benar.
 
 | Peluang tipis | Odds |
 |:---|:---:|
@@ -232,7 +246,7 @@ A. Jika Anda nge-flop flush draw (sembilan outs), Anda akan menyempurnakannya se
 
 **Q. Berapa odds nge-flop set?**
 
-A. Sekitar 11,8%, atau kira-kira 1 dari 8,5, saat Anda memegang pocket pair. Angka "7,5:1 melawan" itu adalah dasar untuk memutuskan apakah set-mining pasangan kecil itu menguntungkan.
+A. Sekitar 11,8%, atau kira-kira 1 dari 8,5, saat Anda memegang pocket pair. Odds setara 7,5:1 itu menggambarkan perbandingan meleset lawan kena, bukan kedalaman stack yang dianjurkan. Call set-mining juga butuh bayaran realistis di street berikutnya; patokan praktis 15–20× memberi ruang untuk set yang tak dibayar atau kalah.
 
 **Q. Berapa odds nge-flop royal flush?**
 
@@ -244,11 +258,11 @@ A. 1 dari 221 (0,45%) untuk aces secara spesifik. Sembarang pocket pair, meski b
 
 **Q. Apa rumus poker untuk menghitung peluang?**
 
-A. Ada dua rumus. Rumus kombinasi menghitung seberapa langka sebuah tangan: dari 52 kartu ada C(52,5) = 2.598.960 tangan lima-kartu, dan hanya 4 di antaranya royal flush — jadi peluangnya 4 ÷ 2.598.960 = 1 dari 649.740. Dua kartu tertutup punya C(52,2) = 1.326 kemungkinan. Rumus yang dipakai di meja adalah Aturan 2 dan 4: outs × 4 di flop, outs × 2 di turn.
+A. Ada dua rumus. Rumus kombinasi menghitung seberapa langka sebuah tangan: dari 52 kartu ada C(52,5) = 2.598.960 tangan lima-kartu, dan hanya 4 di antaranya royal flush — jadi peluangnya 4 ÷ 2.598.960 = 1 dari 649.740. Dua kartu tertutup punya C(52,2) = 1.326 kemungkinan. Rumus yang dipakai di meja adalah Aturan 2 dan 4: outs × 4 di flop bila Anda akan melihat turn dan river tanpa membayar lagi, outs × 2 di turn.
 
 **Q. Apa itu Aturan 2 dan 4 di poker?**
 
-A. Jalan pintas untuk odds draw — juga disebut "aturan 4-2": kalikan outs Anda dengan 4 di flop (dua kartu akan datang) atau dengan 2 di turn (satu kartu akan datang) untuk memperkirakan persentase peluang hit Anda. Ia akurat dalam satu-dua poin hingga sekitar sembilan outs. Pakai ×4 hanya saat Anda akan melihat kedua kartu tanpa taruhan lagi.
+A. Aturan 2 dan 4 (juga disebut "aturan 4-2") adalah jalan pintas untuk memperkirakan odds draw: kalikan outs Anda dengan 4 di flop untuk turn dan river sekaligus, atau dengan 2 di turn untuk river saja. Sembilan outs memberi 36% untuk dua kartu lewat ×4, dibanding persisnya 35,0%; ×2 memberi 18% untuk kartu river, dibanding 19,6%. Cek tabel angka persis saat harganya tipis, dan pakai angka dua kartu hanya saat Anda melihat kedua kartu tanpa taruhan lagi.
 
 **Q. Bagaimana cara menghitung pot odds?**
 
@@ -278,9 +292,9 @@ A. Tak ada angka tunggal — nuts (tangan terbaik yang mungkin di board tertentu
 
 ## 3 Angka yang Harus Ditanam di Ingatan
 
-1. **Nge-flop set: ~12% (1 dari 8,5).** Menentukan tiap call set-mining.
+1. **Nge-flop set: ~12% (1 dari 8,5).** Peluang kena ini memulai hitungan set-mining; kedalaman stack dan bayaran yang mungkin menentukan apakah call itu untung.
 2. **Flush draw hingga river: 35%.** Sembilan outs, Aturan 4 → 9 × 4 = 36%.
-3. **Pot odds mengalahkan firasat.** Jika peluang Anda hit lebih besar dari harga call, Anda call — setiap kali.
+3. **Pot odds mengalahkan firasat.** Cocokkan peluangnya dengan kartu yang dibeli call ini, lalu bandingkan harganya dengan peluang Anda menang — menyempurnakan draw tidak selalu cukup.
 
 Poker memberi imbalan pada pemain yang telah menjadikan ini otomatis. Pelajari bagannya, latih Aturan 2 dan 4, dan mulai bertanya "berapa odds-nya?" *sebelum* Anda bertindak alih-alih sesudahnya. Selanjutnya, terapkan matematika ini dengan mempelajari [tangan awal mana yang dimainkan dari tiap posisi](/id/blog/holdem-starting-hands-chart), atau perbarui pemahaman [kenapa flush mengalahkan straight](/id/blog/holdem-flush-vs-straight) agar Anda selalu tahu nilai outs Anda.
 

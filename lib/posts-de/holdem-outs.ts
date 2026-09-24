@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ein Out ist jede Karte im Deck, die deine Hand zu einem wahrscheinlichen Gewinner verbessert. Zähle sie, dann rechne um: multipliziere die Outs am Flop mit 4 oder am Turn mit 2 für deinen groben Prozentwert. Ein Flushdraw sind 9 Outs ≈ 36% bis zum River.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-13",
-  masterUpdated: "2026-09-13",
+  updated: "2026-09-24",
+  masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "🎯",
@@ -65,9 +65,12 @@ Das Zählen nutzt nur Karten, die du sehen kannst. Du ziehst die unbekannten Kar
 
 ## Poker-Outs-Tabelle: Jeder gängige Draw
 
+> **Kurze Antwort**
+> Die Standard-Startwerte sind neun Outs für einen Flushdraw, acht für einen beidseitig offenen Straßendraw und vier für einen Gutshot. Kombinierte Draws brauchen einen Abzug für die Überschneidung. Overcards und Draws, die nicht auf die Nuts gehen, brauchen eine zweite Prüfung: Die Zahlen zählen Karten, die deine Hand verbessern – vollen Wert verdienen nur die, die wahrscheinlich auch gewinnen.
+
 ![Zwei Draw-Zählungen nebeneinander – dreizehn Pik, vier davon durchgestrichen, neben einer großen 9, und eine beidseitig offene Reihe mit markierten Enden neben einer großen 8](/images/holdem-outs-nine-and-eight.webp "Links der Flushdraw, rechts der beidseitig offene Draw – die zwei Out-Zahlen, an denen jeder andere Draw gemessen wird")
 
-Präge dir diese ein und du erkennst deine Out-Zahl auf einen Blick. Das ist die Tabelle, die sich jeder erfolgreiche Spieler eingeprägt hat:
+Nimm diese rohen Zahlen als Ausgangspunkt und wende danach die Dirty-Out-Prüfung weiter unten an:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -117,7 +120,7 @@ Beachte das 15-Outs-Monster: mit zwei kommenden Karten ist es tatsächlich ein *
 
 ## Outs im Kopf umrechnen: die Faustregel
 
-Die **Faustregel** (auch „Regel der 2 und 4“) macht aus deiner Out-Zahl in einer Sekunde einen Prozentwert: am Flop Outs × **4**, am Turn Outs × **2**. Bis acht Outs liegt die ×4-Regel weniger als einen Punkt daneben, darüber überschätzt sie – und genau das ist der Grund, warum große Draws sich am Tisch besser anfühlen, als sie sind. Die ×2-Regel am Turn geht in die andere Richtung: Sie unterschätzt ab sechs Outs um gut einen Punkt (bei acht Outs sagt sie 16%, richtig sind 17,4%).
+Die **Faustregel** (auch „Regel der 2 und 4“) macht aus deiner Out-Zahl in einer Sekunde einen Prozentwert: am Flop Outs × **4**, am Turn Outs × **2**. Bis acht Outs liegt die ×4-Regel weniger als einen Punkt daneben, darüber überschätzt sie deutlicher – und genau das ist der Grund, warum große Draws sich am Tisch besser anfühlen, als sie sind. Die ×2-Regel am Turn geht in die andere Richtung: Sie unterschätzt ab sechs Outs um gut einen Punkt (bei acht Outs sagt sie 16%, richtig sind 17,4%).
 
 Du kannst diese Tabelle nicht mit an den Tisch nehmen, also nutze die Abkürzung, auf die sich jeder Spieler verlässt:
 
@@ -128,7 +131,7 @@ Ein Flushdraw sind 9 Outs. Am Flop: 9 × 4 = **36%** (wahrer Wert 35,0% – eine
 
 :::tip[Die ×4-Abkürzung setzt still voraus, dass du *beide* Karten ohne weiteres Setzen siehst – nur wahr, wenn du schon all-in bist. Liegt eine Bet vor dir, nutze die ×2-Zahl (eine Karte) für die Street, auf der du wirklich bist.]:::
 
-An einer Stelle lügt die Regel: **hohe Out-Zahlen am Flop.** Weil ×4 die kleine Chance, auf *beiden* Streets zu treffen, doppelt zählt, schießt sie über, sobald du über ~8 Outs bist.
+Die größte Schwäche der Regel: **hohe Out-Zahlen am Flop.** Die exakte Zwei-Karten-Rechnung erfasst einen Treffer auf Turn *oder* River, ohne einen doppelten Treffer zweimal zu zählen. Die ×4-Schätzung liegt schon ab 7 Outs leicht zu hoch, die Lücke wächst aber mit größeren Draws; die übliche Korrektur unten gilt für mehr als 8 Outs.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

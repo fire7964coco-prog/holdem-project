@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Implied odds adalah chip tambahan yang Anda harapkan menang di street berikutnya saat draw Anda jadi. Ia membuat Anda bisa call sebuah draw yang menurut pot odds saja harus di-fold — tapi hanya jika stack dalam dan lawan benar-benar akan membayar Anda.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-13",
+  updated: "2026-09-24",
+  masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "11 mnt",
   emoji: "💰",
@@ -180,7 +180,7 @@ Saya kehilangan lebih banyak chip pada implied odds khayalan daripada pada bad b
 
 **Q. Apa itu implied odds di poker?**
 
-A. Implied odds adalah chip tambahan yang Anda harapkan menang di street berikutnya jika draw Anda jadi, ditambahkan ke chip yang sudah ada di pot. Ia membuat Anda bisa call dengan untung sebagian draw yang menurut pot odds saja harus di-fold — selama stack cukup dalam untuk membayar Anda saat Anda jadi.
+A. Implied odds adalah chip tambahan yang Anda harapkan menang di street berikutnya jika draw Anda jadi — bagian bayaran masa depan dari sebuah keputusan drawing. Call yang kurang dari harga saat ini bisa menutup selisihnya setelah Anda kena, tapi hanya jika lawan masih punya chip dan mau membayar. Perlakukan bayaran itu sebagai perkiraan, bukan uang yang sudah ada di tengah.
 
 **Q. Bagaimana cara menghitung implied odds?**
 
@@ -188,7 +188,7 @@ A. Pakai: ekstra dibutuhkan = (call Anda ÷ peluang jadi Anda) − (pot saat ini
 
 **Q. Apa perbedaan antara pot odds dan implied odds?**
 
-A. Pot odds hanya menghitung uang yang ada di pot sekarang dan bisa dihitung persis. Implied odds menambahkan uang yang Anda harapkan menang di street berikutnya, yang merupakan perkiraan. Pot odds memberi tahu apakah sebuah call membayar dirinya sendiri hari ini; implied odds memberi tahu apakah ia terbayar sepanjang seluruh tangan.
+A. Perbedaan pot odds dan implied odds ada pada kepastiannya: pot saat ini dan jumlah call terlihat jelas, sedangkan bayaran nanti bergantung pada apa yang terjadi berikutnya. Cek harga langsung dulu, lalu tanyakan berapa tambahan yang harus dihasilkan saat Anda kena. Stack dalam membuat uang itu tersedia, tapi tidak menjamin lawan akan memasukkannya.
 
 **Q. Kapan sebaiknya Anda memakai implied odds?**
 
@@ -196,7 +196,7 @@ A. Mulailah dari pot odds. Jika equity Anda sudah mengalahkan harga langsungnya,
 
 **Q. Apa itu reverse implied odds?**
 
-A. Reverse implied odds adalah chip yang Anda kalah saat Anda menyelesaikan draw tapi hasilnya tetap terbaik kedua — seperti membuat flush rendah melawan yang lebih tinggi, atau ujung bawah sebuah straight melawan yang lebih besar. Reverse implied odds membuat draw non-nut bernilai kurang dari yang disiratkan outs-nya, jadi Anda butuh harga langsung yang lebih baik untuk call.
+A. Reverse implied odds adalah chip tambahan yang hilang saat draw Anda jadi tapi tetap terbaik kedua: flush kecil atau straight rendah bisa mendorong Anda memasukkan lebih banyak uang sementara tangan lain masih unggul. Draw dengan risiko ini butuh perkiraan bayaran yang lebih hati-hati dibanding draw ke nut; jumlah kartu pelengkap yang sama tidak membuat nilainya sama.
 
 **Q. Apa itu implied odds yang bagus — berapa banyak yang Anda butuhkan?**
 

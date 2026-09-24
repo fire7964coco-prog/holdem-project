@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Nicht so wie im Blackjack – das Deck wird jede Hand neu gemischt und zu wenige Karten liegen offen, also bringt dir das Tracken hoher und niedriger Karten keinen Edge. Aber Poker hat sein eigenes legales Zählen: Outs zählen, Blocker nutzen und tote Karten tracken, um zu lesen, was dein Gegner nicht haben kann.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-13",
-  masterUpdated: "2026-09-13",
+  updated: "2026-09-24",
+  masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "🧮",
@@ -100,12 +100,14 @@ Jede Karte, die du sehen kannst, entfernt Möglichkeiten. Im Hold'em kann ein Ou
 
 ## Ist Kartenzählen beim Poker illegal?
 
-**Nein – Outs zählen, Odds berechnen und Blocker nutzen ist im Poker 100% legal, weil es nichts als Kopfrechnen ist.** Keine Regel irgendwo verbietet das Denken. Es ist die Definition von Können.
+**Nein – Outs zählen und Blocker im Kopf nutzen ist legal und gewöhnliches Poker-Können, keine Hilfe von außen.** Die Grenze, auf die du achten musst, sind Geräte und Ratschläge anderer während des Spiels – und dafür legt jeder Cardroom und jedes Event seine eigenen Regeln fest.
 
-Hier ist der Teil, den die Leute verwechseln: Kartenzählen ist auch im *Blackjack* nicht illegal – es ist kein Verbrechen, nur Kopfrechnen. Aber in den meisten Rechtsordnungen ist ein Casino ein privates Unternehmen, das einen vermuteten Zähler aussperren oder abweisen kann, weil ein Zähler *das Haus* Geld kostet. Poker dreht das komplett um: du spielst gegen ==andere Spieler==, und das Haus nimmt nur den Rake, egal wer gewinnt. Niemand hat einen Grund, dich vom Zählen deiner Outs abzuhalten – das „Rausgeschmissen-werden“-Problem, das im Blackjack mitläuft, entsteht hier durch das Zählen nicht. (Ein Cardroom darf jemanden aus anderen Gründen abweisen; Kopfrechnen am eigenen Draw gehört nicht dazu.)
+Beim Vergleich mit Blackjack geht es darum, gegen wen du spielst. Am Pokertisch trittst du gegen ==andere Spieler== an; der Cardroom kassiert dafür, dass er das Spiel veranstaltet, und spielt selbst keine Hand gegen dich. Outs im Kopf zu zählen gehört zu diesem Spiel und ist für sich allein kein Grund, dich wie einen Blackjack-Zähler zu behandeln.
 
 :::note
-Die Linie, die du nie überschreiten darfst, ist physisches oder informationelles Betrügen – markierte Karten, Kollusion, das Teilen von Hole-Card-Infos oder Echtzeit-Solver-Software online. Das ist kein „Zählen“, das ist Betrug. Im Kopf zu rechnen ist immer fair.
+Halte Kopfrechnen getrennt von markierten Karten, Kollusion oder geteilten Hole-Card-Infos. Online-Software hat eigene Regeln: Die [Tool-Richtlinie von PokerStars](https://www.pokerstars.com/poker/room/prohibited/) etwa verbietet Handlungsempfehlungen in Echtzeit und schränkt die Nutzung von Solvern ein, solange der Client geöffnet ist. Prüfe die Erlaubnisse der jeweiligen Plattform, statt jedes Tool mit Kopfrechnen gleichzusetzen.
+
+Bei Turnieren nach den [Poker-TDA-Regeln 2026](https://www.pokertda.com/poker-tda-rules/) untersagt Regel 5C, während einer laufenden Hand elektronische Geräte oder Kommunikationsgeräte zu bedienen. Regel 5D geht weiter: Bet-Sizing-Apps, Charts und andere Strategie-Tools sind am Tisch nicht zu benutzen, und Strategiedaten von außen sind nicht erlaubt. Lerne mit Tools abseits des Spiels; die Entscheidung am Tisch triffst du selbst.
 :::
 
 ---
@@ -145,7 +147,7 @@ A. Nein. Blackjack-Zählen trackt die Hoch-Tief-Balance eines Schuhs, der über 
 
 **Q. Ist Kartenzählen beim Poker illegal?**
 
-A. Nein. Outs zählen, Odds berechnen und Blocker nutzen ist 100% legal – es ist nur Kopfrechnen und der Kern von gutem Spiel. (Kartenzählen ist technisch gesehen auch im Blackjack nicht illegal; Casinos sperren nur vermutete Zähler aus. Im Poker spielst du gegen andere Spieler, nicht gegen das Haus, also passiert das nie.)
+A. Nein. Deine eigenen Outs und Blocker im Kopf zu berechnen ist legal und ein normaler Teil des Pokers. Was Cardrooms und Plattformen einschränken, ist Hilfe von außen während des Spiels: Geräte, Charts und Ratschläge anderer.
 
 **Q. Funktioniert Kartenzählen bei Texas Hold'em?**
 
@@ -165,7 +167,7 @@ A. Ja – viel mehr als im Hold'em. Bei Stud werden mehrere Karten jedes Spieler
 
 **Q. Wird man aus einem Pokerraum geworfen, weil man Karten zählt?**
 
-A. Nein. Outs zählen und Blocker nutzen ist erwartetes, gekonntes Spiel, und das Haus verdient nur den Rake, egal wer gewinnt – also gibt es keinen Grund, dich aufzuhalten. Das ist ein zentraler Unterschied zum Blackjack, wo Casinos Zähler aussperren können.
+A. Nein, nicht dafür, dass du deine eigenen Outs zählst oder Blocker im Kopf nutzt. Das sind normale Fähigkeiten in einem Spiel gegen andere Spieler, und der Cardroom nimmt seinen Rake, egal wer gewinnt – anders als beim Blackjack, wo sich das Zählen gegen das Haus richtet.
 
 **Q. Ist Outs zählen dasselbe wie Kartenzählen?**
 
@@ -177,7 +179,7 @@ A. Es ist Pokers Version davon. Du trackst nicht das ganze Deck wie ein Blackjac
 
 1. **Blackjack-Zählen ist im Poker tot.** Das Deck wird jede Hand neu gemischt, zu wenige Karten liegen offen, und du spielst gegen Gegner, nicht gegen das Haus – also bringt dir das Tracken hoher und niedriger Karten nichts.
 2. **Poker-Zählen ist Outs, Blocker und tote Karten.** Alles Kopfrechnen, alles legal und alles weit wertvoller als ein Running Count je wäre.
-3. **Es ist eine Fähigkeit, kein Geheimnis.** Niemand sperrt dich dafür aus. Zähle deine Outs, frage, was du blockst, und ziehe die toten Karten ab, die du gesehen hast – jede Hand.
+3. **Es ist eine Fähigkeit, kein Geheimnis.** Zähle selbst und heb dir Tools von außen fürs Lernen auf. Zähle deine Outs, frage, was du blockst, und ziehe die toten Karten ab, die du gesehen hast – jede Hand.
 
 Beginne mit der Zahl, die die meisten Hände entscheidet: deine Outs. Sieh dir die vollständige Methode im [Guide zum Outs-Zählen](/de/blog/holdem-outs) an, und verwandle diese Zählungen dann mit [Pot Odds](/de/blog/holdem-pot-odds) in profitable Calls.
 

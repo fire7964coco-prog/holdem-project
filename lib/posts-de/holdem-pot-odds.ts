@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Um die Pot Odds zu berechnen, teilst du den Betrag, den du callen musst, durch den gesamten Pot nach deinem Call. Ein $50-Call in einen $150-Pot = 50 ÷ 200 = 25% – du brauchst also mindestens 25% Equity, damit der Call profitabel ist.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-10",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-24",
+  masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "12 Min.",
   emoji: "🧮",
@@ -47,7 +47,8 @@ Diese Zahl – „wie oft du gewinnen musst“ – ist der ganze Punkt. 3:1 zu b
 
 ## Pot Odds berechnen (Schritt für Schritt)
 
-Vergiss die Verhältnisse für einen Moment – die schnellste brauchbare Form ist ein **Prozentwert**, weil du ihn direkt mit deiner Gewinnchance vergleichst.
+> **Kurze Antwort**
+> Rechne zuerst den finalen Pot aus – inklusive der Bet, der du gegenüberstehst, und deines eigenen Calls – und teile dann deinen Call durch diese Summe. Heraus kommt ein Break-even-Prozentwert für deine Equity, den du direkt mit deiner Gewinnchance vergleichst. Achte auf den Zeitpunkt: Geld, das schon im aktuellen Pot steckt, darfst du nicht ein zweites Mal addieren.
 
 :::steps
 Zähle den finalen Pot zusammen | Aktueller Pot + die Bet + dein Call. Beispiel: $100 Pot + $50 Bet + dein $50 Call = $200
@@ -111,7 +112,7 @@ Selbst ein massiver **2×-Pot-Overbet verlangt nur 40% Equity**. Du musst fast n
 
 Ein Flushdraw (35% mit zwei Karten) schlägt jede Bet bis zur Pot-Size. Ein Open-Ender (31,5%) hält bis knapp darunter mit. Ein Gutshot (16,5% mit zwei Karten, 8,7% mit einer) verfehlt dagegen sogar die kleinste Bet der Tabelle – ¼ Pot verlangt 16,7%. Genau diese Gegenüberstellung – Draw gegen Bet-Größe – ist die ganze Entscheidung.
 
-Jetzt verbinde den Preis mit deiner Hand. [Zähle deine **Outs**](/de/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp") (Karten, die deine Hand vervollständigen), rechne sie in Equity um und prüfe sie gegen die Bet. Das sind die Draws, denen du am häufigsten begegnest:
+Jetzt verbinde den Preis mit deiner Hand. [Zähle deine **Outs**](/de/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp") (Karten, die deine Hand vervollständigen), rechne sie in Equity um und prüfe sie gegen die Bet. Die Zeile mit den zwei Overcards (6 Outs) setzt voraus, dass ein Paar mit einer der beiden Overcards gewinnt – rechne Paar-Karten herunter, die gegen die wahrscheinlichen Hände deines Gegners trotzdem verlieren. Das sind die Draws, denen du am häufigsten begegnest:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

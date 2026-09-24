@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Sebuah out adalah kartu mana pun yang tersisa di deck yang mengubah tangan Anda menjadi kemungkinan pemenang. Hitung, lalu konversi: kalikan outs dengan 4 di flop atau dengan 2 di turn untuk mendapat persen kasar Anda. Flush draw punya 9 outs ≈ 36% hingga river.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-12",
-  masterUpdated: "2026-09-13",
+  updated: "2026-09-24",
+  masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "11 mnt",
   emoji: "🎯",
@@ -45,6 +45,9 @@ Semua yang mengalir setelahnya — equity Anda, [pot odds](/id/blog/holdem-pot-o
 
 ## Cara Menghitung Outs Anda (Langkah demi Langkah)
 
+> **Jawaban singkat**
+> Hitung kartu tak terlihat yang membawa Anda ke tangan target, lalu buang kandidat yang tetap membuat Anda kalah. Mulailah dari total jenis atau nilai kartunya dan kurangi kartu yang sudah terlihat. Setiap kartu fisik hanya dihitung sekali, meski ia melengkapi dua draw sekaligus.
+
 ![Seorang pemain memegang ace dan king sekop dan mempelajari flop tiga kartu rendah di atas kain hijau, menghitung outs overcard sebelum beraksi](/images/holdem-outs-counting.webp "A-K di flop rendah adalah spot menghitung klasik — enam overcard outs, plus backdoor")
 
 Menghitung outs adalah rutinitas tiga langkah yang Anda jalankan pada setiap draw sampai jadi otomatis:
@@ -63,9 +66,12 @@ Perhitungan hanya memakai kartu yang bisa Anda lihat. Anda tidak mengurangi kart
 
 ## Chart Outs Poker: Setiap Draw Umum
 
+> **Jawaban singkat**
+> Hitungan awal yang standar adalah sembilan untuk flush draw, delapan untuk open-ended straight draw, dan empat untuk gutshot. Draw gabungan butuh pengurangan tumpang tindih. Overcard dan draw bukan-nut butuh pengecekan lagi: hitungan ini menggambarkan kartu yang memperbaiki tangan Anda, dan hanya yang kemungkinan menang layak dinilai penuh.
+
 ![Dua hitungan outs berdampingan — tiga belas sekop dengan empat dicoret di samping angka 9 besar, dan rangkaian open-ended dengan kedua ujung ditandai di samping angka 8 besar](/images/holdem-outs-nine-and-eight.webp "Kiri flush draw, kanan open-ended draw — dua hitungan outs yang menjadi patokan semua draw lain")
 
-Hafalkan ini dan Anda akan mengenali jumlah out Anda sekilas. Inilah chart yang tertanam di ingatan setiap pemain menang:
+Pakai hitungan mentah ini sebagai titik awal, lalu terapkan pengecekan outs kotor di bawah:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -89,7 +95,8 @@ Dua combo draw di atas adalah tempat pemain gagal berhitung, jadi keduanya menda
 
 ## Outs ke Odds: Chart Konversi
 
-Menghitung outs baru berguna setelah Anda mengubahnya menjadi persentase yang bisa dibandingkan dengan harga yang ditawarkan. Inilah tabel utamanya — odds untuk hit hingga river, plus odds satu-kartu untuk kartu berikutnya setelah flop:
+> **Jawaban singkat**
+> Sembilan outs kena di kartu berikutnya dari flop 19,1% dari waktu, atau setidaknya sekali hingga river 35,0% dari waktu. Angka kedua mencakup dua kesempatan. Pilih kolom satu kartu saat Anda hanya menilai harga turn; kolom dua kartu mengandaikan Anda akan melihat seluruh runout.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -113,7 +120,8 @@ Perhatikan monster 15-out: dengan dua kartu yang akan datang ia sebenarnya **fav
 
 ## Aturan 4 dan 2: Outs → Odds di Kepala Anda
 
-Anda tak bisa membawa tabel itu ke meja, jadi pakai jalan pintas yang diandalkan setiap pemain:
+> **Jawaban singkat**
+> Setelah hitungan outs Anda bersih, mengalikan dengan empat memperkirakan peluang kena sepanjang dua kartu; mengalikan dengan dua memperkirakan satu kartu. Jalan pintas ini makin kurang andal seiring draw makin besar. Keduanya memperkirakan peluang jadi, jadi kartu yang tetap kalah tidak bisa diperbaiki dengan memilih pengali yang tepat.
 
 - **Di flop (dua kartu akan datang):** outs ×4 ≈ persen Anda untuk hit hingga river.
 - **Di turn (satu kartu akan datang):** outs ×2 ≈ persen Anda untuk hit di river.
@@ -122,7 +130,7 @@ Flush draw punya 9 outs. Di flop: 9 × 4 = **36%** (nilai sebenarnya 35,0% — p
 
 :::tip[Jalan pintas ×4 diam-diam mengasumsikan Anda akan melihat *kedua* kartu tanpa taruhan lagi — hanya benar saat Anda sudah all-in. Jika ada taruhan di depan Anda, pakai angka ×2 (satu-kartu) untuk street yang benar-benar sedang Anda jalani.]:::
 
-Ada satu titik saat aturan itu berbohong: **jumlah out tinggi di flop.** Karena ×4 menghitung ganda peluang kecil untuk hit di *kedua* street, ia melebih-lebihkan begitu Anda melewati ~8 outs.
+Kelemahan utamanya ada di **jumlah out tinggi di flop.** Hitungan dua kartu yang persis memperhitungkan kena di street mana pun tanpa menghitung dua kali saat kedua kartu sama-sama kena. Perkiraan ×4 mulai sedikit terlalu tinggi sejak 7 outs, tapi selisihnya membesar pada draw yang lebih besar; koreksi umum di bawah dipakai untuk lebih dari 8 outs.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -141,7 +149,8 @@ Perbaikan rapi untuk draw besar: untuk **lebih dari 8 outs di flop**, kalikan de
 
 ## Combo Draw: Kenapa 9 + 8 Bukan 17
 
-Draw besar membingungkan orang karena Anda tak bisa sekadar menjumlahkan kedua jumlah out — beberapa kartu bekerja ganda, dan menghitungnya dua kali menggelembungkan equity Anda.
+> **Jawaban singkat**
+> Flush draw plus open-ended straight draw punya 15 kartu pelengkap yang berbeda, bukan 17: dua kartu straight sudah termasuk jenis flush. Flush draw plus gutshot punya 12 karena satu kartu tumpang tindih. Hitung gabungan kedua draw, lalu diskon secara terpisah setiap kartu yang tetap kalah.
 
 Katakanlah Anda memegang ==b:J♠ 10♠== di flop ==9♠ 8♣ 2♠==. Anda punya dua draw bertumpuk: flush draw (sekop) dan open-ended straight draw (Q atau 7 mana pun membuat straight). Jumlahkan mentah-mentah dan Anda dapat 9 + 8 = 17. Tapi **Q♠ dan 7♠** masing-masing melengkapi *kedua* flush dan straight — keduanya sudah termasuk dalam 9 flush outs. Hitung sekali:
 
@@ -155,9 +164,10 @@ Logika sama pada **flush + gutshot**: 9 flush outs + 4 kartu gutshot, tapi satu 
 
 ## Outs Kotor: Kartu yang Hanya Terlihat Seperti Kemenangan
 
-![Infografik meja berpasangan 10♠ 8♥ 4♠ 4♣ 6♦ yang memisahkan outs bersih dari outs kotor](/images/holdem-outs-dirty-outs.webp "Di meja berpasangan, sebagian outs Anda kotor — hit flush bisa tetap membayari full house")
+> **Jawaban singkat**
+> Out kotor (atau out "tercemar") memperbaiki tangan Anda tanpa bisa diandalkan untuk membawa Anda unggul. Kartu flush di meja berpasangan, flush rendah melawan flush draw yang lebih tinggi, dan overcard melawan tangan jadi yang kuat semuanya perlu dicermati. Mulailah dari hitungan mentah, lalu kurangi sesuai tangan lawan yang masuk akal alih-alih membayar setiap perbaikan seolah itu kemenangan.
 
-Inilah bagian yang dilewati kebanyakan panduan, dan justru inilah yang benar-benar menghemat uang. Sebuah **out kotor** (atau out "tercemar") adalah kartu yang melengkapi tangan Anda tapi masih bisa kalah — jadi menghitungnya dengan nilai penuh melebih-lebihkan equity Anda. Pemain menang menghitung outs mentah, lalu *memangkas* yang kotor sebelum meraih Aturan 4 dan 2.
+![Infografik meja berpasangan 10♠ 8♥ 4♠ 4♣ 6♦ yang memisahkan outs bersih dari outs kotor](/images/holdem-outs-dirty-outs.webp "Di meja berpasangan, sebagian outs Anda kotor — hit flush bisa tetap membayari full house")
 
 Tiga situasi untuk melatih mata Anda:
 

@@ -1,3 +1,12 @@
+## 2026-09-24 (5) — B1①: 확률 7편 core7 전파 (de·es·id·ja·pt·zh·zh-hant × probability·pot-odds·outs·drawing-odds·equity·implied-odds·card-counting)
+
+- 로케일 7레인(Opus 서브) 병렬 → 본체 교열 → Fable 교차 렌즈 3 → 반영. 49파일. 판정·경위 전문 = `docs/harden-brief/probability-closeout.md` §7-D.
+- 직답 신설 es·pt·id 27 · de 6 · zh 2 · ja·zh-hant 0(기존 보존, 결함 명제만 최소 수정). A1 전 로케일 · A4 동형 결함 있는 자리만.
+- 렌즈 상 2: es «rangos»(=range 오독) · zh «那一成»(=10% 오독). zh 표 라벨 «两张超对牌»(overpair) → «两张高牌».
+- id «Rumus Poker» H2 = EN Rule2/4 H2 제목 교체였음 → 직답 추가 · intentional-diffs 행 정정.
+- 게이트 audit:hard 7로케일 🔴0 · structure 핵심 0 · faq-schema 🔴0 · intl-links · 빌드 73+577. 🔴 answer-echo가 de·es·id·pt 라벨을 몰라 미검사 → 별건.
+- 남음: B1② pot-odds 이미지(A3) · ③ ja rake 판정 · ④ ×4 «all-in» 표현 통일 여부.
+
 ## 2026-09-24 (4) — B1: EN 확률 7편 독립검수·확정·배포 (probability·pot-odds·outs·drawing-odds·equity·implied-odds·card-counting)
 
 - GPT 초안(calc-ko 워크트리 미커밋)을 main `73d0818d`로 ff 동기화(diff 바이트 동일 확인) 후 본체 검수. 경위·판정 전문 = `docs/harden-brief/probability-closeout.md` §7-C.

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ligas un set en el flop con una pareja servida el 11.8% de las veces (7.5 a 1 en contra), ligas un color en el flop con dos cartas del mismo palo apenas un 0.84%, y completas un proyecto de color del flop al river el 35% de las veces. Cada número de abajo sale de la baraja, no se adivina.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-09-13",
-  masterUpdated: "2026-09-13",
+  updated: "2026-09-24",
+  masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🎲",
@@ -36,7 +36,8 @@ Eso es en realidad la probabilidad de proyecto: no es suerte, sino la ==matemát
 
 ## El ciclo de vida del flop: una tabla que toda web de odds parte en dos
 
-Esta es la tabla que nadie construye en un solo sitio. La mayoría de las webs te dan la probabilidad de *ligar* una mano en una página y la de *completar un proyecto* en otra — pero en la mesa es una sola historia continua. Recibes dos cartas, ligas algo hecho **o** un proyecto, y si es un proyecto, o lo completas o no.
+> **Respuesta rápida**
+> Ligar una mano en el flop y completar un proyecto son sucesos distintos. Dos cartas propias del mismo palo hacen color de inmediato solo el 0.84% de las veces; una vez que has ligado un proyecto de color, su probabilidad de completarse en dos cartas es del 35%. Lee cada columna desde el punto de partida que indica, en vez de tratar cada porcentaje como una probabilidad preflop.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -56,11 +57,12 @@ Lee una fila de izquierda a derecha y ves el ciclo de vida completo de una mano.
 
 ## Probabilidad de ligar un set (y la matemática del set mining)
 
+> **Respuesta rápida**
+> Una pareja servida liga set o mejor en el flop el 11.8% de las veces (7.5 a 1 en contra), pero esa frecuencia sola no justifica un call. Para el set mining (pagar una subida con una pareja pequeña sobre todo para ligar trío), la pauta práctica ronda 15–20 veces el call en stacks efectivos, y aun así necesitas un rival dispuesto a pagar: algunos sets ganan poco o pierden.
+
 ![Infografía: los dos outs de una pareja servida resaltados en dorado dentro de la baraja, una flecha hacia tres cartas de flop boca abajo y una barra dividida en doce por ciento dorado y ochenta y ocho por ciento gris](/images/holdem-drawing-odds-set-mining.webp "Tres cartas de lo alto de la baraja deciden un call de set mining — y la mayoría de las veces lo deciden en tu contra")
 
-**Ligas un set (o mejor) en el flop con una pareja servida el 11.8% de las veces — más o menos 1 de cada 8.5, o 7.5 a 1 en contra.** Este es el número de proyecto más importante del juego, porque es toda la base del *set mining*: pagar una subida con una pareja pequeña solo para ligar trío en el flop.
-
-¿De dónde sale el 11.8%? Con una pareja servida quedan dos cartas en la baraja que te emparejan. El flop son tres cartas sacadas de las 50 que no ves. La forma limpia de contarlo es al revés — la probabilidad de que **falles** las tres:
+Ese 11.8% parte de las dos cartas iguales que quedan en la baraja cuando recibes una pareja servida. El flop son tres cartas sacadas de las 50 que no ves, así que cuenta primero el suceso contrario — la probabilidad de que **falles** las dos cartas que te emparejan:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -90,9 +92,12 @@ Dos números relacionados que la gente pregunta:
 
 ## Odds de color: hecho vs proyecto vs completado
 
+> **Respuesta rápida**
+> Dos cartas del mismo palo pueden ligar un color hecho en el flop, ligar un proyecto o fallar ambas cosas. Las dos primeras probabilidades son 0.84% y 10.9%; solo cuando ya existe el proyecto se aplica la cifra del 35% de completarlo al river. Ese último número cubre las dos cartas restantes, así que no sirve para poner precio a un call que solo compra el turn.
+
 ![As-rey de corazones con un flop de reina-siete de corazones sobre el tapete verde, un proyecto de color de nueve outs ligado en el flop junto a una torre corta de fichas](/images/holdem-drawing-odds-flush-draw.webp "Dos corazones en mano, dos en el flop — un proyecto de color, no un color hecho: 10.9% de ligarlo, 35% de completarlo al river")
 
-Aquí es donde la competencia mezcla tres números completamente distintos. Con dos cartas del mismo palo en tu mano, hay **tres preguntas separadas**, y difieren en un orden de magnitud:
+Los tres cálculos parten de cartas conocidas distintas y de cartas por repartir distintas:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -118,12 +123,15 @@ Un color por **puerta trasera** (backdoor, runner-runner) — ligas solo *una* c
 
 ## Odds de escalera: ligarla vs tener proyecto a ella
 
+> **Respuesta rápida**
+> Las conectoras de valor medio completan escalera directamente en el flop alrededor del 1.3% de las veces; las manos cercanas a los extremos de la escala tienen menos secuencias posibles. Una vez formado el proyecto, un abierto tiene ocho cartas que lo completan y un gutshot, cuatro. Sus probabilidades al river cuentan dos cartas, mientras que las de la siguiente carta, más abajo, cuentan solo del flop al turn.
+
 ![Dos paneles de proyecto de escalera uno al lado del otro — una serie abierta por ambos extremos con un 8 verde en un círculo, y otra con un hueco interior y un 4 dorado](/images/holdem-drawing-odds-oesd-vs-gutshot.webp "Un proyecto abierto vale el doble que un gutshot — dos extremos abiertos frente a un hueco interior")
 
 Las conectoras como 8♠7♠ tienen su propio ciclo de vida. **Ligarás una escalera hecha en el flop solo el 1.3%** de las veces (76 a 1) — más raro de lo que asume la mayoría. Esa cifra vale de 54s a JTs, las conectoras que pueden cerrar la escalera por los dos extremos; las manos del borde de la baraja tienen menos secuencias posibles, hasta el 0.33% del A-K. Mucho más a menudo ligas un **proyecto**:
 
-- **Proyecto de escalera abierto (de dos puntas):** ~10% de los flops con conectoras. Ocho outs, se completa el **31.5%** al river — 1 − C(39,2)/C(47,2) — o un 17% con una sola carta.
-- **Proyecto interior (gutshot):** cuatro outs, se completa el **16.5%** al river, 8.5% con una carta. La mitad de la equity de un abierto, y por eso las mismas conectoras se juegan tan distinto según el flop.
+- **Proyecto de escalera abierto (de dos puntas):** ~10% de los flops con conectoras. Ocho outs, se completa el **31.5%** al river — 1 − C(39,2)/C(47,2) — o un 17% del flop al turn.
+- **Proyecto interior (gutshot):** cuatro outs, se completa el **16.5%** al river, 8.5% del flop al turn. La mitad de la equity de un abierto, y por eso las mismas conectoras se juegan tan distinto según el flop.
 
 Fíjate en que el proyecto abierto (31.5%) y el proyecto de color (35%) están cerca — ambos son "un proyecto grande", ambos alrededor de un tercio de ligar al river. Ese es el atajo que vale la pena interiorizar: un proyecto grande normal es de ==**uno de cada tres**== de completarse al river, y baja a más o menos uno de cada cinco o seis en una sola calle.
 
@@ -131,7 +139,8 @@ Fíjate en que el proyecto abierto (31.5%) y el proyecto de color (35%) están c
 
 ## Flops raros: póker, trips, fulls y escaleras de color
 
-Estos son los números detrás de las mejores (y peores) noches de tu vida en el póker. Cada uno es un problema de combinatoria limpio sobre los 19,600 flops posibles:
+> **Respuesta rápida**
+> Con una pareja servida, ligar póker en el flop es un 0.245% y ligar full, un 0.98%. Con dos cartas sin emparejar, ligar trips es un 1.35%, una vía distinta a la del set. Cada fila de abajo indica primero la mano con la que juegas y luego cuenta los flops que cumplen sobre las mismas 19,600 posibilidades.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -154,7 +163,8 @@ La cifra del full cuenta todas las formas en que el flop te sirve un full con un
 
 ## Probabilidad de recibir tu mano
 
-Antes de todo lo anterior, está el reparto. Con **1,326 combinaciones posibles de dos cartas**, así de a menudo llegan las manos que la gente pregunta:
+> **Respuesta rápida**
+> Una pareja concreta tiene seis combinaciones entre los 1,326 repartos posibles, mientras que cualquier pareja servida tiene 78. A-K del mismo palo tiene solo cuatro. Son probabilidades antes de ver tus cartas; una vez que tienes una mano, la probabilidad de que un rival reciba los mismos valores debe descontar las cartas que tú ya retiraste de la baraja.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

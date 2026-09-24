@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Você flopa um set com um par na mão 11,8% das vezes (7,5 para 1 contra), flopa um flush com duas cartas do mesmo naipe apenas 0,84%, e completa um flush draw flopado até o river 35% das vezes. Cada número abaixo vem do baralho, não de chute.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-09-13",
-  masterUpdated: "2026-09-13",
+  updated: "2026-09-24",
+  masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🎲",
@@ -36,7 +36,8 @@ A mão que me fez aprender isso de cor: eu paguei um aumento com um par de cinco
 
 ## O ciclo de vida do flop: uma tabela que toda página de odds separa
 
-Aqui está a tabela que ninguém monta num lugar só. A maioria dos sites te conta as odds de *flopar* uma mão numa página e as odds de *completar um projeto* em outra — mas na mesa é uma história só, contínua. Você recebe duas cartas, você flopa algo feito **ou** um projeto, e se é projeto você completa ou não.
+> **Resposta rápida**
+> Flopar uma mão e completar um projeto são eventos diferentes. Duas cartas do mesmo naipe fazem um flush direto no flop só 0,84% das vezes; depois que você flopou um flush draw, a chance de completá-lo em duas cartas é 35%. Leia cada coluna a partir do ponto de partida indicado, em vez de tratar toda porcentagem como uma chance do preflop.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -56,11 +57,12 @@ Leia ao longo de uma linha e você vê o ciclo de vida inteiro de uma mão. Duas
 
 ## Odds de flopar um set (e a matemática do set mining)
 
+> **Resposta rápida**
+> Um par na mão flopa set ou melhor 11,8% das vezes — cerca de 1 em 8,5, ou 7,5 para 1 contra —, mas essa taxa sozinha não justifica um call. Pro set mining (pagar um aumento com um par pequeno principalmente pra flopar trinca), a referência prática é uns 15 a 20 vezes o call em stacks efetivos. Ainda é preciso um adversário propenso a pagar, porque alguns sets ganham pouco ou perdem.
+
 ![Infográfico: os dois outs de um par na mão destacados em dourado dentro do baralho, uma seta para três cartas de flop viradas pra baixo e uma barra dividida em doze por cento dourado contra oitenta e oito por cento cinza](/images/holdem-drawing-odds-set-mining.webp "Três cartas do topo do baralho decidem um call de set mining — e na maioria das vezes decidem contra você")
 
-**Você flopa um set (ou melhor) com um par na mão 11,8% das vezes — cerca de 1 em 8,5, ou 7,5 para 1 contra.** Esse é o número de projeto mais importante do jogo, porque é a base inteira do *set mining*: pagar um aumento com um par pequeno puramente pra flopar trinca.
-
-De onde vem 11,8%? Segure um par na mão e sobram duas cartas no baralho que te pareiam. O flop são três cartas tiradas das 50 que você não vê. O jeito limpo de contar é ao contrário — a chance de você **errar** todas as três:
+Esses 11,8% partem das duas cartas iguais que sobram no baralho depois que você recebe um par na mão. O flop são três cartas tiradas das 50 que você não vê, então conte primeiro o evento oposto — a chance de **nenhuma** das duas cartas iguais cair:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -90,9 +92,12 @@ Dois números relacionados que as pessoas perguntam:
 
 ## Odds de flush: feito vs projeto vs completar
 
+> **Resposta rápida**
+> Duas cartas do mesmo naipe podem flopar um flush feito, flopar um projeto ou errar as duas coisas. As duas primeiras chances são 0,84% e 10,9%; só depois que o projeto existe vale o número de 35% de completar até o river. Esse último cobre as duas cartas restantes, então não serve pra precificar um call que compra só o turn.
+
 ![Ás-rei de copas com um flop dama-sete de copas no feltro verde, um flush draw de nove outs flopado ao lado de uma pilha curta de fichas](/images/holdem-drawing-odds-flush-draw.webp "Duas copas na mão, duas no flop — um flush draw, não um flush feito: 10,9% pra flopar, 35% pra completar até o river")
 
-É aqui que outros guias borram três números completamente diferentes. Com duas cartas do mesmo naipe na mão, existem **três perguntas separadas**, e elas estão a uma ordem de grandeza de distância:
+Os três cálculos partem de cartas conhecidas diferentes e de cartas restantes diferentes:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -118,12 +123,15 @@ Um flush **backdoor** (runner-runner) — você flopa só *uma* carta extra do s
 
 ## Odds de sequência: flopar uma vs ter projeto de uma
 
+> **Resposta rápida**
+> Conectores médios flopam uma sequência feita cerca de 1,3% das vezes; mãos perto das pontas entram em menos sequências possíveis. Depois que o projeto se forma, um open-ended tem oito cartas que completam e um gutshot tem quatro. As chances até o river contam duas cartas, enquanto as chances da próxima carta, logo abaixo, contam só do flop pro turn.
+
 ![Dois painéis de projeto de sequência lado a lado — uma sequência aberta nas duas pontas com um 8 verde num círculo, e outra com um buraco no meio e um 4 dourado](/images/holdem-drawing-odds-oesd-vs-gutshot.webp "Um projeto aberto vale o dobro de um gutshot — duas pontas abertas contra um buraco no meio")
 
 Conectores como 8♠7♠ têm o próprio ciclo de vida. Você vai **flopar uma sequência feita só 1,3%** das vezes (76 para 1) — mais raro do que a maioria dos jogadores imagina. Esse número vale de 54s até JTs, os conectores que fecham sequência pelas duas pontas; mãos na borda do baralho entram em menos sequências, caindo até 0,33% no A-K. Bem mais frequente é flopar um **projeto**:
 
-- **Open-ended straight draw (OESD):** ~10% dos flops com conectores. Oito outs, completa **31,5%** até o river — 1 − C(39,2)/C(47,2) — ou 17% em qualquer carta única.
-- **Gutshot (projeto de sequência por dentro):** quatro outs, completa **16,5%** até o river, 8,5% numa carta. Metade da equity de um open-ended, e é por isso que os mesmos conectores jogam tão diferente dependendo do flop.
+- **Open-ended straight draw (OESD):** ~10% dos flops com conectores. Oito outs, completa **31,5%** até o river — 1 − C(39,2)/C(47,2) — ou 17% do flop pro turn.
+- **Gutshot (projeto de sequência por dentro):** quatro outs, completa **16,5%** até o river, 8,5% do flop pro turn. Metade da equity de um open-ended, e é por isso que os mesmos conectores jogam tão diferente dependendo do flop.
 
 Repare que o OESD (31,5%) e o flush draw (35%) estão perto — os dois são "um projeto grande", os dois mais ou menos um terço pra acertar até o river. Esse é o atalho que vale internalizar: um projeto grande normal é cerca de ==**um em três**== pra completar até o river, e cai pra mais ou menos um em cinco ou seis numa street só.
 
@@ -131,7 +139,8 @@ Repare que o OESD (31,5%) e o flush draw (35%) estão perto — os dois são "um
 
 ## Flops raros: quadra, trinca, full house e straight flush
 
-Esses são os números por trás das melhores (e piores) noites da sua vida no poker. Cada um é um problema limpo de combinatória sobre os 19.600 flops possíveis:
+> **Resposta rápida**
+> Com um par na mão, flopar quadra sai 0,245% e flopar full house, 0,98%. Com duas cartas despareadas, flopar trinca sai 1,35%, um caminho diferente do set. Cada linha abaixo define primeiro a mão e depois conta os flops que servem dentro das mesmas 19.600 possibilidades.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -154,7 +163,8 @@ O número do full house conta cada jeito de o flop te dar um boat com um par na 
 
 ## Odds de receber sua mão
 
-Antes de tudo isso, tem a distribuição. Com **1.326 combinações possíveis de duas cartas**, aqui está com que frequência as mãos que as pessoas perguntam aparecem:
+> **Resposta rápida**
+> Um par específico na mão tem seis combinações entre as 1.326 distribuições possíveis, enquanto qualquer par tem 78. A-K do mesmo naipe tem só quatro. Essas são chances antes de ver suas cartas; depois que você já tem uma mão, perguntas sobre um adversário receber os mesmos valores precisam descontar as cartas que você tirou do baralho.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

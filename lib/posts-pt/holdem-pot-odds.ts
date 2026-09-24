@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Para calcular pot odds, divida o valor que você precisa pagar pelo pote total depois do seu call. Pagar $50 num pote de $150 = 50 ÷ 200 = 25% — então você precisa de pelo menos 25% de equity para o call ser lucrativo.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-10",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-24",
+  masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🧮",
@@ -47,7 +47,8 @@ Esse número de "quantas vezes você precisa ganhar" é o ponto central. Receber
 
 ## Como calcular pot odds (passo a passo)
 
-Esqueça as razões por um instante — a forma mais rápida de usar é a **porcentagem**, porque você a compara diretamente com a sua chance de ganhar.
+> **Resposta rápida**
+> Calcule primeiro o pote final, somando a aposta que você enfrenta e o seu próprio call, e depois divida o call por esse total. O resultado é a porcentagem de equity de equilíbrio. Mantenha o momento do pote coerente: o dinheiro que já está dentro do pote atual não pode ser somado duas vezes.
 
 :::steps
 Some o pote final | Pote atual + a aposta + o seu call. Exemplo: pote de $100 + aposta de $50 + seu call de $50 = $200
@@ -65,7 +66,8 @@ Compare com a sua equity real | Flush draw ≈ 35% de fechar com duas cartas por
 
 ## Pot odds como razão vs. porcentagem
 
-Jogadores da velha guarda falam em razões ("estou recebendo 4 para 1"); jogadores modernos pensam em porcentagens ("preciso de 20%"). Você deveria conseguir alternar entre elas na hora, porque a razão é o que você *vê* (pote vs. aposta) e a porcentagem é o que você *usa* (contra a sua equity).
+> **Resposta rápida**
+> Uma razão de pot odds compara o dinheiro que você pode ganhar com o call que você arrisca; a porcentagem diz com que frequência esse risco precisa dar certo. Recebendo 4 para 1, você arrisca uma unidade para ganhar quatro, então precisa ganhar uma vez em cada cinco: 20%. Uma recompensa maior pelo mesmo call baixa a porcentagem de equilíbrio.
 
 A conversão é um passo só: uma razão de **X para 1** significa que você precisa de **1 ÷ (X + 1)** como porcentagem.
 
@@ -85,9 +87,12 @@ O padrão é intuitivo: quanto mais o pote encobre o call, menor a fatia do bolo
 
 ## Quanta equity você precisa para pagar?
 
+> **Resposta rápida**
+> Uma aposta de meio pote pede 25% de equity para pagar; uma do tamanho do pote pede 33%, e uma de 2× o pote pede 40%. O alvo depende do tamanho da aposta em relação ao pote, não do valor em dólares. Descubra esse alvo primeiro e só então avalie a sua mão contra o range que está te oferecendo esse preço.
+
 ![Cartas premium na mão sobre o feltro verde — decidindo se o preço é justo para continuar](/images/holdem-starting-hands-premium.webp "A equity necessária depende inteiramente do tamanho da aposta que você enfrenta")
 
-Aqui está o atalho que vive na sua cabeça na mesa. A sua equity necessária depende **apenas do tamanho da aposta em relação ao pote** — então memorize estas sete âncoras e você nunca mais vai precisar de calculadora.
+Memorize estas sete âncoras para precificar o call antes de decidir se a sua mão é forte o bastante:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -109,7 +114,10 @@ Até um enorme **overbet de 2× o pote pede só 40% de equity**. Você quase nun
 
 ## Tabela de pot odds: quais projetos vencem quais apostas
 
-Agora conecte o preço à sua mão. [Conte os seus **outs**](/pt/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp") (cartas que fazem a sua mão), converta em equity, e confira contra a aposta. Estes são os projetos que você vai enfrentar com mais frequência:
+> **Resposta rápida**
+> Se um projeto paga o preço depende dos outs limpos e de quantas cartas este call compra. A chance de um flush draw em duas cartas é bem maior do que em uma só. Use a coluna da decisão real e não trate o simples fato de fazer um par ou um flush como vitória garantida.
+
+[Conte os seus **outs**](/pt/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp") antes de usar a tabela. A linha das duas overcards pressupõe que qualquer um dos dois pares ganha; desconte as cartas que fazem par mas ainda perdem para as mãos prováveis do adversário.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -129,7 +137,8 @@ Leia contra a tabela por tamanho de aposta acima. Enfrentando uma ==aposta de me
 
 ## Pot odds vs. equity vs. implied odds
 
-Esses três se misturam o tempo todo, e a confusão custa dinheiro. Aqui está a separação limpa:
+> **Resposta rápida**
+> As pot odds fixam o preço, a equity mede a sua parte esperada do pote e as implied odds estimam o dinheiro extra ganho depois. Comece pelas duas primeiras. Só conte um ganho futuro se ainda houver fichas para ganhar e um adversário propenso a pagar; completar a segunda melhor mão pode, em vez disso, custar mais.
 
 :::compare
 Termo | O que significa
@@ -146,7 +155,8 @@ O reverso da moeda são as **reverse implied odds** — as fichas que você vai 
 
 ## A regra do 2 e 4: transformando outs em odds rápido
 
-Você não consegue parar para calcular a equity exata no meio da mão, então use a **regra do 2 e 4**:
+> **Resposta rápida**
+> Use a regra do 2 e 4 para estimar se um projeto está perto do preço de um call. Quatro vezes os outs aproxima duas cartas; duas vezes os outs aproxima uma. Antes de escolher o multiplicador, pergunte se o call de agora te leva até o river sem outro pagamento; uma decisão apertada merece a tabela exata.
 
 - **No flop, com duas cartas ainda por vir:** multiplique seus outs por **4**.
 - **No turn, com uma carta por vir:** multiplique seus outs por **2**.
@@ -160,6 +170,9 @@ As derivações completas de cada projeto e mão feita estão na [tabela de prob
 ---
 
 ## Erros comuns de pot odds que iniciantes cometem
+
+> **Resposta rápida**
+> Os erros de pot odds que custam caro são usar o pote final errado, contar cartas que ainda perdem e comprar uma carta com a estimativa de duas. O dinheiro futuro também pode ser imaginário: stacks profundos não garantem pagamento. Confira o preço, os outs limpos e as apostas que faltam, cada um separadamente, antes de pagar um projeto.
 
 Cometi cada um deles antes que me quebrassem. Fique de olho:
 

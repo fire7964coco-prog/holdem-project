@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Mit einem Pocket Pair floppst du in 11,8% der Fälle ein Set (7,5:1 dagegen), mit zwei suited Karten nur 0,84% einen Flush, und einen gefloppten Flushdraw komplettierst du bis zum River in 35% der Fälle. Jede Zahl unten stammt aus dem Deck, nicht aus dem Bauch.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-09-13",
-  masterUpdated: "2026-09-13",
+  updated: "2026-09-24",
+  masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "12 Min.",
   emoji: "🎲",
@@ -58,11 +58,12 @@ Lies eine Zeile quer und du siehst den ganzen Lebenszyklus einer Hand: Zwei suit
 
 ## Wie hoch ist die Chance, mit einem Pocket Pair ein Set zu floppen?
 
+> **Kurze Antwort**
+> Mit einem Pocket Pair floppst du in 11,8% der Fälle ein Set oder besser – etwa 1 von 8,5, also 7,5:1 dagegen. Diese Trefferquote allein rechtfertigt keinen Call. Für *Set Mining* – einen Raise mit einem kleinen Paar vor allem deshalb zu callen, um einen Drilling zu floppen – gilt in der Praxis etwa das 15- bis 20-Fache des Calls in effektiven Stacks. Dazu brauchst du einen zahlenden Gegner, denn manche Sets gewinnen wenig oder verlieren.
+
 ![Infografik: die zwei Outs eines Pocket Pairs golden hervorgehoben im Deck, ein Pfeil auf drei verdeckte Flopkarten und ein Balken, der sich in zwölf Prozent Gold und achtundachtzig Prozent Grau teilt](/images/holdem-drawing-odds-set-mining.webp "Drei Karten von oben aus dem Deck entscheiden einen Set-Mining-Call – und meistens entscheiden sie ihn gegen dich")
 
-**Mit einem Pocket Pair floppst du in 11,8% der Fälle ein Set (oder besser) – etwa 1 von 8,5, oder 7,5:1 dagegen.** Das ist die wichtigste Drawing-Zahl im Spiel, denn sie ist die gesamte Grundlage für *Set Mining*: einen Raise mit einem kleinen Paar rein deshalb zu callen, um ein Set zu floppen.
-
-Woher kommt 11,8%? Halte ein Pocket Pair und es sind zwei Karten im Deck übrig, die dich paaren. Der Flop sind drei Karten, gezogen aus den 50, die du nicht sehen kannst. Der saubere Weg zu zählen ist rückwärts – die Chance, dass du alle drei **verfehlst**:
+Die 11,8% beginnen mit den zwei passenden Karten, die nach deinem Pocket Pair noch im Deck stecken. Der Flop sind drei Karten aus den 50, die du nicht sehen kannst – also zählst du zuerst das Gegenereignis: die Chance, dass du **beide** passenden Karten verfehlst:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -92,9 +93,12 @@ Zwei verwandte Zahlen, nach denen Leute fragen:
 
 ## Wie wahrscheinlich ist ein Flush – gefloppt, als Draw, komplettiert?
 
+> **Kurze Antwort**
+> Zwei suited Karten können einen fertigen Flush floppen, einen Flushdraw floppen oder beides verfehlen. Die ersten beiden Chancen liegen bei 0,84% und 10,9%; erst wenn der Draw existiert, gilt die Komplettierungsquote von 35% bis zum River. Diese letzte Zahl umfasst beide noch kommenden Karten – für einen Call, der nur den Turn kauft, taugt sie nicht als Maßstab.
+
 ![Ass-König in Herz mit einem Dame-Sieben-Herz-Flop auf grünem Filz, ein gefloppter Neun-Out-Flushdraw neben einem kurzen Chipstack](/images/holdem-drawing-odds-flush-draw.webp "Zwei Herz in der Hand, zwei auf dem Flop – ein Flushdraw, kein fertiger Flush: 10,9% zu floppen, 35% bis zum River zu komplettieren")
 
-Hier verwischen andere Seiten drei komplett verschiedene Zahlen. Mit zwei suited Karten in deiner Hand gibt es **drei separate Fragen**, und sie liegen eine Größenordnung auseinander:
+Die drei Rechnungen gehen von unterschiedlichen bekannten Karten und unterschiedlich vielen noch kommenden Karten aus:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -120,12 +124,15 @@ Ein **Backdoor** (Runner-Runner) Flush – du floppst nur *eine* zusätzliche Ka
 
 ## Wie oft floppst du eine Straße – und wie oft nur den Draw?
 
+> **Kurze Antwort**
+> Connectors aus der Mitte floppen in etwa 1,3% der Fälle eine fertige Straße; Hände nahe an einem der beiden Enden der Rangfolge haben weniger mögliche Sequenzen. Ist ein Draw entstanden, hat ein Open-Ender acht Karten, die ihn komplettieren, ein Gutshot vier. Die Werte bis zum River zählen zwei Karten, die Werte für die nächste Karte unten nur Flop zu Turn.
+
 ![Zwei Straight-Draw-Felder nebeneinander – eine Reihe, an beiden Enden offen, mit einer grünen 8 im Kreis, und eine Reihe mit einer Lücke in der Mitte und einer goldenen 4](/images/holdem-drawing-odds-oesd-vs-gutshot.webp "Ein Open-Ender ist doppelt so viel wert wie ein Gutshot – zwei offene Enden gegen eine Lücke in der Mitte")
 
 Connectors wie 8♠7♠ haben ihren eigenen Lebenszyklus. Du **floppst nur in 1,3%** der Fälle eine fertige Straße (76:1) – seltener, als die meisten Spieler annehmen. Dieser Wert gilt für 54s bis JTs, also die Connectors, die eine Straße von beiden Enden füllen können; Hände am Rand des Decks haben weniger Sequenzen, bis hinunter zu 0,33% für A-K. Weit häufiger floppst du einen **Draw**:
 
-- **Open-Ended Straight Draw (OESD):** ~10% der Flops mit Connectors. Acht Outs, komplettiert **31,5%** bis zum River – 1 − C(39,2)/C(47,2) – oder 17% auf jede einzelne Karte.
-- **Gutshot (Inside) Straight Draw:** vier Outs, komplettiert **16,5%** bis zum River, 8,5% auf eine Karte. Die halbe Equity eines Open-Enders, weshalb sich dieselben Connectors je nach Flop so unterschiedlich spielen.
+- **Open-Ended Straight Draw (OESD):** ~10% der Flops mit Connectors. Acht Outs, komplettiert **31,5%** bis zum River – 1 − C(39,2)/C(47,2) – oder 17% vom Flop zum Turn.
+- **Gutshot (Inside) Straight Draw:** vier Outs, komplettiert **16,5%** bis zum River, 8,5% vom Flop zum Turn. Die halbe Equity eines Open-Enders, weshalb sich dieselben Connectors je nach Flop so unterschiedlich spielen.
 
 Beachte, dass der OESD (31,5%) und der Flushdraw (35%) nah beieinanderliegen – beide sind „ein großer Draw“, beide ungefähr ein Drittel, bis zum River zu treffen. Das ist die Abkürzung, die es sich zu verinnerlichen lohnt: ein normaler großer Draw ist etwa ==**einer von drei**== bis zum River zu komplettieren, und auf einer einzelnen Street sinkt er auf etwa einen von fünf bis sechs.
 
@@ -133,7 +140,8 @@ Beachte, dass der OESD (31,5%) und der Flushdraw (35%) nah beieinanderliegen –
 
 ## Seltene Flops: Quads, Drilling, Full Houses & Straight Flushes
 
-Das sind die Zahlen hinter den besten (und schlimmsten) Nächten deines Poker-Lebens. Jede ist ein sauberes Kombinatorik-Problem auf den 19.600 möglichen Flops:
+> **Kurze Antwort**
+> Mit einem Pocket Pair floppst du Quads in 0,245% und ein Full House in 0,98% der Fälle. Mit zwei ungepaarten Karten floppst du Trips in 1,35% – ein anderer Weg als ein Set. Jede Zeile unten nennt zuerst das Holding und zählt dann die passenden Flops aus denselben 19.600 Möglichkeiten.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

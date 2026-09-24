@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "El equity es tu parte del bote: la parte que le corresponde a tu mano en promedio cuando se reparten todas las cartas, contando los empates en su parte proporcional. Igualas cuando tu equity supera a tus pot odds, pero la posición y las apuestas hacen que casi nunca te quedes con todo tu equity — y el fold equity te deja ganar botes incluso cuando tu mano va por detrás.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-24",
+  masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🥧",
@@ -84,7 +84,7 @@ Aquí hay dos cosas que confunden a la gente. Una pareja contra dos sobrecartas 
 
 **Iguala cuando tu equity es mayor que tus pot odds — esa única comparación decide casi todos los calls del póker.** Las [pot odds](/es/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") te dicen el equity que *necesitas* para no perder ni ganar; el equity te dice el que *tienes*. Si tienes más del que necesitas, igualar gana dinero.
 
-Frente a una apuesta de medio bote, tus pot odds exigen ==25%== para igualar. Un proyecto de color con dos cartas por venir tiene ~35% de equity — 35 supera a 25, así que es un call rentable. Esa es toda la decisión, sin adivinanzas.
+Frente a una apuesta de medio bote, tus pot odds exigen ==25%== para igualar. Si este call te deja all-in en el flop o te permite ver las dos cartas restantes sin volver a pagar, el ~35% de un proyecto de color limpio supera ese precio. Si puede llegar otra apuesta en el turn, el call solo te compra una carta: 9 ÷ 47 = 19.1%, por debajo del 25% con el proyecto por sí solo.
 
 Pero aquí está la trampa que casi todas las guías se saltan: **"tu equity equivale a tu parte del bote" solo es cierto cuando no queda más apuesta.** En el momento en que puede entrar más dinero en calles posteriores, un 35% en bruto no se traduce automáticamente en el 35% del bote final — pueden echarte de tu proyecto, o pagar cuando ligas la segunda mejor mano. Esa diferencia es exactamente donde entran las [odds implícitas](/es/blog/holdem-implied-odds "thumb:/images/holdem-implied-odds-hero.webp") (dinero que ganarás después) y la realización de equity (más abajo). El equity es donde la matemática *empieza*, no donde termina.
 
@@ -101,9 +101,9 @@ Igualan y ligas → ganas | Ligas → ganas
 ==g:Dos formas de ganar== | ==r:Una forma de ganar==
 :::
 
-Para un ==farol puro== sin opción de mejorar, el punto de equilibrio es sencillo: necesitas que tu rival se retire lo bastante a menudo para cubrir el riesgo. Apostando $50 a un bote de $100, tu tasa de fold de equilibrio es ==apuesta ÷ (bote + apuesta) = 50 ÷ 150 = 33%==. Si se retiran más de un tercio de las veces, apostar es rentable — incluso con la peor mano de la mesa.
+Mano a mano, para un ==farol puro== sin opción de ganar si te igualan y sin más apuestas, el punto de equilibrio es sencillo: necesitas que tu rival se retire lo bastante a menudo para cubrir el riesgo. Apostando $50 a un bote de $100, tu tasa de fold de equilibrio es ==apuesta ÷ (bote + apuesta) = 50 ÷ 150 = 33%==. Si se retiran más de un tercio de las veces, apostar es rentable — incluso con la peor mano de la mesa.
 
-Ahora añade un proyecto y la cosa mejora muchísimo. Aquí tienes el cuadro completo como ==g:semi-farol==: el bote es de $100, apuestas $50 con un proyecto de color, tu rival se retira el 40% de las veces, y cuando iguala todavía tienes un 35% de equity de ligar en el river.
+Ahora añade un proyecto. En este ejemplo de ==g:semi-farol== mano a mano, el bote es de $100 y empujas tus últimos $50 en el flop. Tu rival se retira el 40% de las veces; cuando iguala, supón que tu proyecto de color limpio tiene un 35% de equity. Las dos cartas se reparten sin más apuestas, así que esa cifra a dos cartas encaja en el cálculo.
 
 :::note
 EV = (%fold × bote) + (%call × [equity × (bote + apuesta) − (%fallo × apuesta)])
@@ -111,7 +111,7 @@ EV = (0.40 × $100) + (0.60 × [0.35 × $150 − 0.65 × $50])
 EV = $40 + (0.60 × [$52.50 − $32.50]) = $40 + $12 = ==g:+$52==
 :::
 
-Apostar ese proyecto de color vale ==+$52== frente a hacer check-fold — y la mayor parte de ese valor viene de las veces que se retiran, no de las que ligas. Eso es el fold equity: la razón por la que la agresión gana a la pasividad, y por la que un proyecto vale mucho más como apuesta que como call.
+El empujón vale ==+$52== frente a renunciar al bote, y $40 de esa expectativa vienen de los folds. Esto aísla la aportación del fold equity; no compara el empujón con todas las líneas posibles de check o de call. Cambia la frecuencia de fold del rival o su rango de call, y el EV cambia también.
 
 ---
 
@@ -126,12 +126,12 @@ Una mano con un 40% de equity bruta que solo realiza el 75% vale en realidad ==0
 Lo que sube o baja tu realización:
 
 :::card
-🪑 | Posición | En posición realizas *más* que tu equity bruta (ves cartas gratis, controlas el bote); fuera de posición realizas menos. Este es el mayor factor
+🪑 | Posición | Actuar el último suele ayudarte a realizar equity gracias a la información y al control del bote, pero ninguna posición garantiza un resultado por encima o por debajo del 100%. También cuentan los rangos y la mesa
 🎯 | Jugabilidad | Los conectores suited y las manos que ligan proyectos realizan bien; los trastos offsuit realizan mal aunque tengan equity bruta decente
 📚 | Profundidad de stack y nivel | Stacks más profundos y rivales más duros hacen más difícil realizar el equity marginal
 :::
 
-Esta es la idea más importante que la mayoría de guías para principiantes deja fuera, y es la razón por la que la [misma mano se juega completamente distinta según la posición](/es/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp"). El equity bruto es el punto de partida — lo que embolsarías si las fichas entraran ahora mismo; la realización es lo que de verdad te llevas a casa, y la posición decide si es más o menos.
+Esta es la idea más importante que la mayoría de guías para principiantes deja fuera, y es la razón por la que la [misma mano se juega completamente distinta según la posición](/es/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp"). El equity bruto es el punto de partida — lo que embolsarías si las fichas entraran ahora mismo; la realización es lo que de verdad te llevas a casa. La posición influye en esa diferencia junto con los rangos, la textura de la mesa, la profundidad de stack y la forma en que se juega la mano.
 
 ---
 
@@ -184,7 +184,7 @@ La noche que mencioné al principio, me quedaba en el paso uno y paraba — cont
 
 **Q. ¿Qué es el equity en el póker?**
 
-A. El equity es tu parte del bote: la parte que le corresponde a tu mano en promedio si llega al showdown, contando los empates en su parte proporcional. Si el bote es de $100 y te corresponde un 60% de él, tu equity vale $60. Es el número clave que comparas con el precio de un call para decidir si continúas.
+A. El equity en el póker es tu parte del bote: el porcentaje del pago en el showdown que le corresponde a tu mano, incluida tu parte de los empates y no solo las victorias. El equity responde cuánto valen tus cartas frente a otras manos o rangos si se reparte el resto de la mesa. Las decisiones de apuesta siguen necesitando un precio y, cuando el juego continúa, una estimación de lo que puedes realizar.
 
 **Q. ¿Cómo se calcula el equity en el póker?**
 
@@ -212,11 +212,11 @@ A. Necesitas un 33% de equity para igualar una apuesta del tamaño del bote. La 
 
 **Q. ¿Cuánto fold equity necesito para farolear con beneficio?**
 
-A. Para un farol puro, necesitas que tu rival se retire al menos apuesta ÷ (bote + apuesta) de las veces. Apostar $50 a un bote de $100 significa 50 ÷ 150 = 33%. Si además tienes un proyecto (un semi-farol), necesitas que se retiren aún menos, porque todavía puedes ganar cuando te igualan. Por eso semi-farolear con proyectos es tan rentable.
+A. En un farol puro mano a mano, sin opción de ganar si te igualan y sin más apuestas, tu rival tiene que retirarse al menos apuesta ÷ (bote + apuesta) de las veces: $50 a un bote de $100 necesita un 33% de folds. Ese umbral es una **frecuencia de fold**, no un porcentaje de equity; la equity de showdown de un semi-farol lo rebaja.
 
 **Q. ¿Qué es la realización de equity?**
 
-A. La realización de equity es cuánto de tu equity bruta cobras de verdad. Equity realizada = equity bruta × %realización. Una mano con un 40% de equity bruta que realiza el 75% vale en realidad un 30%. La posición es el mayor factor — en posición realizas más, fuera de posición menos — que es por lo que la misma mano vale más en el botón que en las ciegas.
+A. La realización de equity es cuánto de tu equity bruta cobras de verdad: equity realizada = equity bruta × %realización. Verte obligado a retirarte la baja; sacar apuestas o ganar botes con folds puede subirla. Actuar el último suele ayudar, pero los rangos y la textura de la mesa deciden si una mano en posición o fuera de posición termina por encima o por debajo del 100%.
 
 **Q. ¿Qué es el equity all-in?**
 
@@ -224,7 +224,7 @@ A. El equity all-in es simplemente tu equity bruta — tu parte del bote, con lo
 
 **Q. ¿Por qué baja mi equity en botes multiway?**
 
-A. Porque el mismo bote del 100% ahora se reparte entre más manos — un par de ases al ~85% mano a mano cae al ~64% contra tres jugadores y al ~56% contra cuatro. El multiway también recorta tu fold equity (todos tienen que retirarse, no solo un jugador) y tu realización (más jugadores significan más formas de que te superen ligando), así que se encogen tanto tu parte bruta como lo que te quedas de ella.
+A. Porque el mismo bote del 100% ahora se reparte entre más manos — un par de ases al ~85% mano a mano cae al ~64% contra tres rivales y al ~56% contra cuatro rivales. El multiway también recorta tu fold equity (todos tienen que retirarse, no solo un jugador) y tu realización (más jugadores significan más formas de que te superen ligando), así que se encogen tanto tu parte bruta como lo que te quedas de ella.
 
 **Q. ¿Qué es el EV (valor esperado) en el póker?**
 
@@ -239,7 +239,7 @@ A. El equity es tu parte de *este* bote si la mano se juega hasta el final (un p
 ## Las 3 cosas que debes recordar
 
 1. **El equity es tu parte del bote** — %equity × tamaño del bote. Iguala cuando supera a tus pot odds. Esa comparación es la columna vertebral de cada decisión.
-2. **Rara vez te quedas con todo.** Equity realizada = bruta × %realización, y la posición es el mayor factor. El equity bruto es el punto de partida, no el pago.
+2. **Rara vez te quedas con todo.** Equity realizada = bruta × %realización, y la posición, los rangos y la textura de la mesa la mueven. El equity bruto es el punto de partida, no el pago.
 3. **La agresión fabrica equity.** El fold equity permite que una apuesta gane botes que tu mano perdería — pero se derrumba en multiway, donde necesitas que todos se retiren.
 
 Domina esto y el resto de la matemática del póker encaja en su sitio. A partir de aquí, convierte el equity en calls correctos con la [guía de pot odds](/es/blog/holdem-pot-odds), o mira cómo cambian el cuadro los stacks profundos con las [odds implícitas](/es/blog/holdem-implied-odds).

@@ -1,6 +1,6 @@
 # 다음 세션 알림장
 
-> 갱신: 2026-09-23 (Claude 세션 마감). 시작 순서: AGENTS.md → CLAUDE.md 전문 → 이 파일 → `git status` + **워크트리 3곳 status**(아래).
+> 갱신: 2026-09-24 (B1① 마감). 시작 순서: AGENTS.md → CLAUDE.md 전문 → 이 파일 → `git status` + **워크트리 3곳 status**(아래).
 > 🔴 **작업 주체가 바뀐다**: 09-22까지는 **GPT(커서/Codex)로 이 폴더를 열어 작업**했다(커밋 트레일러 없음·영어 커밋 메시지 = GPT분). 09-23 GA·GSC 보고서와 처방 1회차는 Claude. **한도 리셋 후 다시 Claude 본체로 간다.** GPT가 남긴 미결은 아래 «B. 이월 대기열»에 모았다 — 정본은 `docs/backlog-closeout-2026-09-22.md` §3·§4(GPT가 쓴 체크포인트. 그 뒤 **규칙 41편·Q8-a PT·086161eb는 09-22에 배포·마감 완료**라 그 표의 해당 «남음» 칸은 낡았다).
 
 ## 사장님이 정한 순서 (09-23)
@@ -24,7 +24,7 @@
 
 | 순 | 묶음 | 위치·상태 | 재개 문서 |
 |---|---|---|---|
-| B1 | **EN 확률 7편** — ✅ EN 확정·배포(09-24, WORKLOG (4)). **남음**: ① core7 전파(§3-B «실제 공백만», ja/zh/zh-hant 기존 블록 갈아엎기 금지) ② pot-odds «required equity» 절 이미지 8로케일(A3 — 새 목적별 asset 제작, premium 덮어쓰기 금지) ③ ja card-counting rake 판정 ④ A4 잔여: ×4 조건 「all-in」 기존 4곳 표현 통일 여부 | `docs/harden-brief/probability-closeout.md` §7-C (이제 main에 있다) |
+| B1 | **확률 7편** — ✅ EN 확정(09-24 (4)) · ✅ ① core7 전파(09-24 (5), §7-D). **남음**: ② pot-odds «required equity» 절 이미지 8로케일(A3 — 새 목적별 asset 제작, premium 덮어쓰기 금지) ③ ja card-counting rake 판정 ④ ×4 조건 «all-in» 기존 표현 통일 여부(EN 4곳 + core7 동형). 부수 별건: answer-echo LABELS에 de·es·id·pt 없음(미검사) · §7-D «남긴 것» | `docs/harden-brief/probability-closeout.md` §7-C·§7-D |
 | B2 | **Q8-b ID** 용어 정리 | `../Holdem-queue` clean · 준비만(25파일 179줄 범위 확정, 쓰기 0). ID showdown은 규칙 41편에서 이미 처리 → 중복 수정 금지 | `docs/harden-brief/queue-Q8-b-id-de-잔여.md` · `docs/keyword-bank/id-posting-reference.md` §5/5A |
 | B3 | **Q8-b DE** | 미착수 · 별도 회차 | 같은 브리프 |
 | B4 | 사실 묶음(미착수): SHC77/88 첫 탈락 페어 · WSOP 계정 2개(LIVE+Caesars) · paired-board 22 counterfeit 리버조건 · flush-vs-straight 반복 설명 / 표현: cooler J1 라벨 · EN hand-rankings short-deck 중복 · DE M존(연속값 유지) / **TDA 판본 부채**(2026 v1.1 번호 변경 — 전역 교체는 별건) | 범위는 `docs/en-first-queue.md` 정본에서 고정 후 | `docs/backlog-closeout-2026-09-22.md` §4 |

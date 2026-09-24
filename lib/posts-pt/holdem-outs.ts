@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Um out é qualquer carta que sobrou no baralho e melhora sua mão para uma provável vencedora. Conte-os e converta: multiplique os outs por 4 no flop ou por 2 no turn para a % aproximada de acertar. Um projeto de flush são 9 outs ≈ 36% até o river.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-13",
-  masterUpdated: "2026-09-13",
+  updated: "2026-09-24",
+  masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🎯",
@@ -45,6 +45,9 @@ Tudo daí para frente — sua equity, suas [pot odds](/pt/blog/holdem-pot-odds),
 
 ## Como contar seus outs (passo a passo)
 
+> **Resposta rápida**
+> Conte as cartas não vistas que levam você à mão-alvo e depois tire os candidatos que ainda te deixariam perdendo. Parta do total do naipe ou do valor e subtraia as cartas já visíveis. Cada carta física entra na conta uma única vez, mesmo quando completa dois projetos diferentes.
+
 ![Um jogador com o ás e o rei de espadas estuda um flop baixo de três cartas no feltro verde, contando outs de overcard antes de agir](/images/holdem-outs-counting.webp "A-K num flop baixo é um spot clássico de contagem — seis outs de overcard, mais os backdoors")
 
 Contar outs é uma rotina de três passos que você roda em todo projeto até virar automático:
@@ -63,9 +66,12 @@ A contagem só usa cartas que você consegue ver. Você não subtrai as cartas d
 
 ## Tabela de outs no poker: todo projeto comum
 
+> **Resposta rápida**
+> As contagens de partida padrão são nove para um projeto de flush, oito para um projeto aberto de sequência e quatro para um gutshot. Projetos combinados pedem o desconto da sobreposição. Overcards e projetos que não são para os nuts pedem outra checagem: essas contagens descrevem cartas que melhoram sua mão, e só as que provavelmente vencem merecem valor cheio.
+
 ![Duas contagens de outs lado a lado — treze espadas com quatro riscadas ao lado de um 9 grande, e uma sequência aberta com as duas pontas marcadas ao lado de um 8 grande](/images/holdem-outs-nine-and-eight.webp "À esquerda o projeto de flush, à direita o projeto aberto — as duas contagens de outs que servem de referência para todas as outras")
 
-Memorize estas e você reconhecerá sua contagem de outs de bate-pronto. Esta é a tabela que todo jogador vencedor tem gravada na memória:
+Use estas contagens brutas como ponto de partida e depois aplique as checagens de outs sujos mais abaixo:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -89,7 +95,8 @@ Os dois projetos combinados no topo são onde os jogadores erram a conta, então
 
 ## Outs para odds: a tabela de conversão
 
-Contar outs só é útil depois que você as transforma em uma porcentagem que dá para comparar com o preço que está sendo oferecido. Aqui está a tabela mestra — as odds de acertar até o river, mais as odds de uma carta para a próxima carta depois do flop:
+> **Resposta rápida**
+> Nove outs acertam a próxima carta depois do flop 19,1% das vezes, ou pelo menos uma vez até o river 35,0% das vezes. O segundo número inclui duas chances. Escolha a coluna de uma carta quando estiver precificando só o turn; a de duas cartas pressupõe que você verá o runout inteiro.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -113,7 +120,8 @@ Repare no monstro de 15 outs: com duas cartas por vir ele é na verdade **favori
 
 ## A regra do 2 e 4: outs → odds de cabeça
 
-Você não consegue levar aquela tabela para a mesa, então use o atalho em que todo jogador se apoia:
+> **Resposta rápida**
+> Com uma contagem de outs limpa, multiplicar por quatro estima a chance de acertar em duas cartas; multiplicar por dois estima uma carta. Esses atalhos ficam menos confiáveis conforme o projeto cresce. Eles estimam a chance de completar a mão, então contar uma carta que ainda perde não se corrige escolhendo o multiplicador certo.
 
 - **No flop (duas cartas por vir):** outs ×4 ≈ sua % de acertar até o river.
 - **No turn (uma carta por vir):** outs ×2 ≈ sua % de acertar no river.
@@ -122,7 +130,7 @@ Um projeto de flush são 9 outs. No flop: 9 × 4 = **36%** (valor real 35,0% —
 
 :::tip[O atalho do ×4 assume em silêncio que você verá *as duas* cartas sem mais aposta — só verdade quando você já está all-in. Se há uma aposta na sua frente, use o número do ×2 (uma carta) para a street em que você realmente está.]:::
 
-Há um lugar em que a regra mente: **contagens altas de outs no flop.** Como o ×4 conta em dobro a pequena chance de acertar nas *duas* streets, ele estoura assim que você passa de ~8 outs.
+O ponto fraco principal são as **contagens altas de outs no flop**. O cálculo exato de duas cartas considera acertar em qualquer uma das streets sem contar duas vezes o acerto duplo. A estimativa do ×4 começa a ficar um pouco alta já com 7 outs, mas a diferença cresce com projetos maiores; a correção usual abaixo é usada para mais de 8 outs.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -141,7 +149,8 @@ O conserto certeiro para projetos grandes: para **mais de 8 outs no flop**, mult
 
 ## Projetos combinados: por que 9 + 8 não é 17
 
-Os projetos grandes confundem as pessoas porque você não pode simplesmente somar as duas contagens de outs — algumas cartas fazem serviço duplo, e contá-las duas vezes infla sua equity.
+> **Resposta rápida**
+> Um projeto de flush mais um projeto aberto de sequência tem 15 cartas distintas que completam a mão, não 17: duas cartas da sequência já pertencem ao naipe do flush. Um flush mais gutshot tem 12, porque uma carta se sobrepõe. Conte a união dos projetos e, à parte, desconte as cartas que ainda perderiam.
 
 Digamos que você tenha ==b:J♠ 10♠== num flop ==9♠ 8♣ 2♠==. Você tem dois projetos empilhados: um projeto de flush (espadas) e um projeto aberto de sequência (qualquer Q ou 7 faz a sequência). Some ingenuamente e dá 9 + 8 = 17. Mas o **Q♠ e o 7♠** completam cada um *os dois* — o flush e a sequência — eles já estão dentro das 9 outs de flush. Conte-os uma vez:
 
@@ -155,9 +164,10 @@ Mesma lógica num **flush + gutshot**: 9 outs de flush + 4 cartas de gutshot, ma
 
 ## Outs sujos: as cartas que só parecem vitórias
 
-![Infográfico de um board pareado 10♠ 8♥ 4♠ 4♣ 6♦ separando outs limpos de outs sujos](/images/holdem-outs-dirty-outs.webp "Num board pareado alguns dos seus outs são sujos — acertar o flush ainda pode pagar um full house")
+> **Resposta rápida**
+> Um out sujo (ou "contaminado") melhora sua mão sem colocá-la na frente de forma confiável. Cartas de flush em boards pareados, flushes baixos contra projetos de flush maiores e overcards contra mãos feitas fortes pedem, todas, um olhar crítico. Comece pela contagem bruta e reduza-a conforme as mãos plausíveis do adversário, em vez de pagar por toda melhora como se fosse vitória.
 
-Esta é a seção que a maioria dos guias pula, e é a que de fato economiza dinheiro. Um **out sujo** (ou "contaminado") é uma carta que completa sua mão mas ainda pode perder — então contá-lo no valor cheio superestima sua equity. Jogadores vencedores contam os outs brutos, depois *descontam* os sujos antes de recorrer à regra do 2 e 4.
+![Infográfico de um board pareado 10♠ 8♥ 4♠ 4♣ 6♦ separando outs limpos de outs sujos](/images/holdem-outs-dirty-outs.webp "Num board pareado alguns dos seus outs são sujos — acertar o flush ainda pode pagar um full house")
 
 Três situações para treinar seu olho:
 

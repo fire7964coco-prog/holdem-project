@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un out es cualquier carta que queda en la baraja y convierte tu mano en una probable ganadora. Cuéntalos y conviértelos: multiplica los outs por 4 en el flop o por 2 en el turn para tu % aproximado de ligar. Un proyecto de color son 9 outs ≈ 36% para el river.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-13",
-  masterUpdated: "2026-09-13",
+  updated: "2026-09-24",
+  masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🎯",
@@ -45,6 +45,9 @@ Todo lo que viene después — tu equity, tus [pot odds](/es/blog/holdem-pot-odd
 
 ## Cómo contar tus outs (paso a paso)
 
+> **Respuesta rápida**
+> Cuenta las cartas no vistas que llevan a tu mano objetivo y luego quita las candidatas que te dejarían igualmente por detrás. Parte del total del palo o del valor y resta las cartas que ya están a la vista. Cada carta física entra en el conteo una sola vez, aunque complete dos proyectos distintos.
+
 ![Un jugador tiene el as y el rey de picas y estudia un flop bajo de tres cartas sobre el tapete verde, contando outs de sobrecarta antes de actuar](/images/holdem-outs-counting.webp "A-K en un flop bajo es una situación de conteo de manual — seis outs de sobrecarta, más los backdoors")
 
 Contar outs es una rutina de tres pasos que aplicas en cada proyecto hasta que sale sola:
@@ -63,9 +66,12 @@ El conteo solo usa cartas que puedes ver. No restas las cartas desconocidas de t
 
 ## Tabla de outs del póker: todos los proyectos comunes
 
+> **Respuesta rápida**
+> Los conteos de partida estándar son nueve para un proyecto de color, ocho para un proyecto de escalera abierto y cuatro para un gutshot. Los proyectos combinados exigen restar el solapamiento. Las sobrecartas y los proyectos que no van al máximo necesitan otra revisión: estos conteos describen cartas que mejoran tu mano, y solo las que probablemente ganan merecen valor completo.
+
 ![Dos conteos de outs uno al lado del otro — trece picas con cuatro tachadas junto a un 9 grande, y una escalera abierta con ambos extremos marcados junto a un 8 grande](/images/holdem-outs-nine-and-eight.webp "A la izquierda el proyecto de color, a la derecha el proyecto abierto — los dos conteos de outs con los que se mide todo lo demás")
 
-Memoriza esto y reconocerás tu número de outs a simple vista. Esta es la tabla que todo jugador ganador tiene grabada en la memoria:
+Usa estos conteos en bruto como punto de partida y luego aplica la revisión de outs muertas de más abajo:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -89,7 +95,8 @@ Los dos proyectos combinados de arriba son donde los jugadores se equivocan con 
 
 ## De outs a odds: la tabla de conversión
 
-Contar outs solo sirve cuando lo conviertes en un porcentaje que puedas comparar con el precio que te ofrecen. Aquí tienes la tabla maestra — las odds de ligar para el river, más las odds a una carta para la siguiente carta después del flop:
+> **Respuesta rápida**
+> Nueve outs ligan en la siguiente carta desde el flop el 19.1% de las veces, o al menos una vez para el river el 35.0%. La segunda cifra incluye dos oportunidades. Elige la columna de una carta cuando le pongas precio solo al turn; la de dos cartas supone que verás todas las cartas hasta el river.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -113,7 +120,8 @@ Fíjate en el monstruo de 15 outs: con dos cartas por venir es en realidad **fav
 
 ## La regla del 2 y 4: outs → odds en la cabeza
 
-No puedes llevar esa tabla a la mesa, así que usa el atajo en el que confía todo jugador:
+> **Respuesta rápida**
+> Con un conteo de outs limpio, multiplicar por cuatro estima la probabilidad de ligar en dos cartas; multiplicar por dos, en una. Estos atajos pierden fiabilidad a medida que el proyecto crece. Estiman la probabilidad de completar, así que contar una carta que sigue perdiendo no se arregla eligiendo el multiplicador correcto.
 
 - **En el flop (dos cartas por venir):** outs ×4 ≈ tu % de ligar para el river.
 - **En el turn (una carta por venir):** outs ×2 ≈ tu % de ligar en el river.
@@ -122,7 +130,7 @@ Un proyecto de color son 9 outs. En el flop: 9 × 4 = **36%** (valor real 35.0% 
 
 :::tip[El atajo ×4 asume en silencio que verás *ambas* cartas sin más apuestas — solo cierto cuando ya estás all-in. Si hay una apuesta delante de ti, usa el número ×2 (una carta) para la calle en la que realmente estás.]:::
 
-Hay un sitio donde la regla miente: **conteos altos de outs en el flop.** Como el ×4 cuenta dos veces la pequeña probabilidad de ligar en *ambas* calles, se pasa una vez superas los ~8 outs.
+El punto débil principal son los **conteos altos de outs en el flop**. El cálculo exacto a dos cartas recoge el acierto en cualquiera de las dos calles sin contar dos veces el caso en que ligas en ambas. La estimación ×4 empieza a salir un poco alta ya con 7 outs, pero la diferencia crece con los proyectos grandes; el ajuste habitual de abajo se usa para más de 8 outs.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -141,7 +149,8 @@ El ajuste limpio para proyectos grandes: para **más de 8 outs en el flop**, mul
 
 ## Proyectos combinados: por qué 9 + 8 no es 17
 
-Los proyectos grandes hacen tropezar a la gente porque no puedes sumar sin más los dos conteos — algunas cartas hacen doble función, y contarlas dos veces infla tu equity.
+> **Respuesta rápida**
+> Un proyecto de color más un proyecto de escalera abierto tiene 15 cartas distintas que lo completan, no 17: dos de las cartas de escalera ya son del palo del color. Un color más gutshot tiene 12 porque una carta se solapa. Cuenta la unión de los proyectos y, por separado, descuenta las cartas que seguirían perdiendo.
 
 Digamos que tienes ==b:J♠ 10♠== en un flop ==9♠ 8♣ 2♠==. Tienes dos proyectos apilados: un proyecto de color (picas) y un proyecto de escalera abierto (cualquier Q o 7 hace la escalera). Súmalos ingenuamente y sale 9 + 8 = 17. Pero la **Q♠ y la 7♠** completan cada una *tanto* el color como la escalera — ya están dentro de los 9 outs de color. Cuéntalas una sola vez:
 
@@ -155,9 +164,10 @@ La misma lógica en un **color + gutshot**: 9 outs de color + 4 cartas de gutsho
 
 ## Outs muertas: las cartas que solo parecen victorias
 
-![Infografía de una mesa emparejada 10♠ 8♥ 4♠ 4♣ 6♦ separando las outs limpias de las outs muertas](/images/holdem-outs-dirty-outs.webp "En una mesa emparejada algunas de tus outs están muertas — ligar el color puede pagar igualmente un full")
+> **Respuesta rápida**
+> Una out muerta (u out "sucia") mejora tu mano sin ponerla por delante de forma fiable. Las cartas de color en mesas emparejadas, los colores bajos frente a proyectos de color más altos y las sobrecartas contra manos hechas fuertes necesitan un examen. Empieza por el conteo bruto y redúcelo según las manos plausibles del rival, en lugar de pagar cada mejora como si fuera una victoria.
 
-Esta es la sección que la mayoría de las guías se salta, y es la que de verdad ahorra dinero. Una **out muerta** (u out "sucia") es una carta que completa tu mano pero aun así puede perder — así que contarla a valor pleno sobreestima tu equity. Los jugadores ganadores cuentan los outs brutos y luego *descuentan* los sucios antes de echar mano de la regla del 2 y 4.
+![Infografía de una mesa emparejada 10♠ 8♥ 4♠ 4♣ 6♦ separando las outs limpias de las outs muertas](/images/holdem-outs-dirty-outs.webp "En una mesa emparejada algunas de tus outs están muertas — ligar el color puede pagar igualmente un full")
 
 Tres situaciones para entrenar el ojo:
 
