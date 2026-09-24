@@ -128,7 +128,7 @@ Repare no monstro de 15 outs: com duas cartas por vir ele é na verdade **favori
 
 Um projeto de flush são 9 outs. No flop: 9 × 4 = **36%** (valor real 35,0% — na mosca). No turn: 9 × 2 = **18%** (real 19,6% — perto o suficiente para agir).
 
-:::tip[O atalho do ×4 assume em silêncio que você verá *as duas* cartas sem mais aposta — só verdade quando você já está all-in. Se há uma aposta na sua frente, use o número do ×2 (uma carta) para a street em que você realmente está.]:::
+:::tip[O atalho do ×4 assume em silêncio que você verá *as duas* cartas sem mais aposta — só garantido quando você já está all-in. Se há uma aposta na sua frente, use o número do ×2 (uma carta) para a street em que você realmente está.]:::
 
 O ponto fraco principal são as **contagens altas de outs no flop**. O cálculo exato de duas cartas considera acertar em qualquer uma das streets sem contar duas vezes o acerto duplo. A estimativa do ×4 começa a ficar um pouco alta já com 7 outs, mas a diferença cresce com projetos maiores; a correção usual abaixo é usada para mais de 8 outs.
 

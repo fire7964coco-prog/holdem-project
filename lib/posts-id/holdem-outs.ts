@@ -128,7 +128,7 @@ Perhatikan monster 15-out: dengan dua kartu yang akan datang ia sebenarnya **fav
 
 Flush draw punya 9 outs. Di flop: 9 × 4 = **36%** (nilai sebenarnya 35,0% — pas). Di turn: 9 × 2 = **18%** (sebenarnya 19,6% — cukup dekat untuk beraksi).
 
-:::tip[Jalan pintas ×4 diam-diam mengasumsikan Anda akan melihat *kedua* kartu tanpa taruhan lagi — hanya benar saat Anda sudah all-in. Jika ada taruhan di depan Anda, pakai angka ×2 (satu-kartu) untuk street yang benar-benar sedang Anda jalani.]:::
+:::tip[Jalan pintas ×4 diam-diam mengasumsikan Anda akan melihat *kedua* kartu tanpa taruhan lagi — hanya terjamin saat Anda sudah all-in. Jika ada taruhan di depan Anda, pakai angka ×2 (satu-kartu) untuk street yang benar-benar sedang Anda jalani.]:::
 
 Kelemahan utamanya ada di **jumlah out tinggi di flop.** Hitungan dua kartu yang persis memperhitungkan kena di street mana pun tanpa menghitung dua kali saat kedua kartu sama-sama kena. Perkiraan ×4 mulai sedikit terlalu tinggi sejak 7 outs, tapi selisihnya membesar pada draw yang lebih besar; koreksi umum di bawah dipakai untuk lebih dari 8 outs.
 

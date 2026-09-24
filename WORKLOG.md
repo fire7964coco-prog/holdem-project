@@ -1,3 +1,10 @@
+## 2026-09-24 (7) — B1③④: ja rake 판정 종결 · ×4 «all-in» 표현 판정 (B1 마감)
+
+- ③ ja card-counting 레이크: `locale-intentional-diffs` 55행 = 사장님 결재 12(09-10) «ja 업태 3편은 EN 기준 유지, 열지 않는다»가 이미 닫은 건. ja 189행 = EN 169행 동일 명제 → **수정 0**.
+- ④ ×4 조건 표현: **통일하지 않는다.** «all-in» 문장(outs114 · drawing115 · pot-odds181)은 «결정 시점에 두 장이 보장되는 유일한 경우»라는 콜 규칙으로 맞다. 엄밀히 틀린 것은 outs 팁 «only **true** when you're already all-in» 하나(턴이 체크로 돌아도 두 장을 본다) → 같은 팁의 pot-odds판 축어 «only **guaranteed**»로 8로케일 한 단어씩 교체(en·de·es·id·ja·pt·zh·zh-hant, 각 로케일 pot-odds 팁 표현 그대로). updated 이미 09-24.
+- 게이트: audit:hard 8로케일 🔴0(🟠 es·zh·zh-hant 각 1 = 기존 C2 형제표 행키 불일치, 이번 파일 무관 · es probability↔drawing-odds 수치는 손대조 일치) · 빌드 73+577.
+- B1 종결. 남긴 별건: answer-echo LABELS de·es·id·pt 미등록 · §7-D «남긴 것».
+
 ## 2026-09-24 (6) — B1②: pot-odds «required equity» 절 이미지 8로케일 (A3)
 
 - 프리미엄 홀카드 사진(`holdem-starting-hands-premium.webp`, starting-hands 전용 의미)이 가격 절에 붙어 있던 것 → 목적별 새 인포 `holdem-pot-odds-required-equity.webp`(HTML `scripts/gen-…html` → render-gen-final q82 · 19KB). premium 원본은 덮어쓰지 않음(starting-hands 8곳 그대로).

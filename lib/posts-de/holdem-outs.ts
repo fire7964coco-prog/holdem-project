@@ -129,7 +129,7 @@ Du kannst diese Tabelle nicht mit an den Tisch nehmen, also nutze die Abkürzung
 
 Ein Flushdraw sind 9 Outs. Am Flop: 9 × 4 = **36%** (wahrer Wert 35,0% – einen Punkt daneben, also brauchbar). Am Turn: 9 × 2 = **18%** (wahr 19,6% – nah genug, um zu handeln).
 
-:::tip[Die ×4-Abkürzung setzt still voraus, dass du *beide* Karten ohne weiteres Setzen siehst – nur wahr, wenn du schon all-in bist. Liegt eine Bet vor dir, nutze die ×2-Zahl (eine Karte) für die Street, auf der du wirklich bist.]:::
+:::tip[Die ×4-Abkürzung setzt still voraus, dass du *beide* Karten ohne weiteres Setzen siehst – nur garantiert, wenn du schon all-in bist. Liegt eine Bet vor dir, nutze die ×2-Zahl (eine Karte) für die Street, auf der du wirklich bist.]:::
 
 Die größte Schwäche der Regel: **hohe Out-Zahlen am Flop.** Die exakte Zwei-Karten-Rechnung erfasst einen Treffer auf Turn *oder* River, ohne einen doppelten Treffer zweimal zu zählen. Die ×4-Schätzung liegt schon ab 7 Outs leicht zu hoch, die Lücke wächst aber mit größeren Draws; die übliche Korrektur unten gilt für mehr als 8 Outs.
 

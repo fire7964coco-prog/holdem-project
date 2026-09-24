@@ -128,7 +128,7 @@ Fíjate en el monstruo de 15 outs: con dos cartas por venir es en realidad **fav
 
 Un proyecto de color son 9 outs. En el flop: 9 × 4 = **36%** (valor real 35.0% — clavado). En el turn: 9 × 2 = **18%** (real 19.6% — bastante cerca para actuar).
 
-:::tip[El atajo ×4 asume en silencio que verás *ambas* cartas sin más apuestas — solo cierto cuando ya estás all-in. Si hay una apuesta delante de ti, usa el número ×2 (una carta) para la calle en la que realmente estás.]:::
+:::tip[El atajo ×4 asume en silencio que verás *ambas* cartas sin más apuestas — solo garantizado cuando ya estás all-in. Si hay una apuesta delante de ti, usa el número ×2 (una carta) para la calle en la que realmente estás.]:::
 
 El punto débil principal son los **conteos altos de outs en el flop**. El cálculo exacto a dos cartas recoge el acierto en cualquiera de las dos calles sin contar dos veces el caso en que ligas en ambas. La estimación ×4 empieza a salir un poco alta ya con 7 outs, pero la diferencia crece con los proyectos grandes; el ajuste habitual de abajo se usa para más de 8 outs.
 

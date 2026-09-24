@@ -192,3 +192,8 @@ FAQ 개수(de·pt 등), ja/pt의 없는 추가질문, zh probability의 없는 �
 - 게이트: audit:hard 7로케일 🔴0 · check:structure 핵심 결손 0 · faq-schema 🔴0 · intl-links 통과 · 백틱 0 · 빌드 73+577. 스탬프 = 내용 바꾼 파일 updated·masterUpdated 09-24(ja implied-odds만 masterUpdated).
 - 🔴 **게이트 공백 발견**: `check-answer-echo.mjs` LABELS에 de·es·id·pt 라벨이 없어 이 4로케일 직답은 기계 검사 0이다. 이번 회차는 레인이 `inspect()`에 라벨을 넘겨 수동 확인(echo 0). 라벨 추가 시 코퍼스 전체 신규 경고가 뜰 것 → 별건.
 - 남긴 것(자동 착수 아님): ja implied FAQ 3·equity FAQ 정의의 «리드 반복 줄이기»(EN 교열성 변경) 미전파 · ja/zh/zh-hant 기존 도입문의 과장 단정 잔여(«계산기 필요 없음»·«승자 전원이 외운 표» 등, 사실오류 아님) · zh-hant outs ×4 «이중계산» 옛 설명 · ×4 «all-in» 조건 표현(A4 잔여, 전 로케일 동형).
+
+### 7-E. B1③④ 종결 — 2026-09-24 (Claude 본체)
+
+- ③ ja rake: `locale-intentional-diffs` 55행(사장님 결재 12, 09-10 «열지 않는다»)이 이미 닫은 건. ja card-counting 189 = EN 169 동일 명제 → 수정 0.
+- ④ ×4 «all-in»: 통일하지 않는다 — all-in은 «결정 시점에 두 장이 보장되는 유일한 경우»라 콜 규칙으로 맞다. 엄밀 거짓 1자리(outs 팁 «only true») → 같은 팁 pot-odds판 «only guaranteed» 축어로 8로케일 교체. WORKLOG 09-24 (7).

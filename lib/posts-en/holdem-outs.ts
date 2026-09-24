@@ -127,7 +127,7 @@ Notice the 15-out monster: with two cards to come it's actually a **favorite** (
 
 A flush draw is 9 outs. On the flop: 9 × 4 = **36%** (true value 35.0% — dead on). On the turn: 9 × 2 = **18%** (true 19.6% — close enough to act).
 
-:::tip[The ×4 shortcut quietly assumes you'll see *both* cards with no more betting — only true when you're already all-in. If there's a bet in front of you, use the ×2 (one-card) number for the street you're actually on.]:::
+:::tip[The ×4 shortcut quietly assumes you'll see *both* cards with no more betting — only guaranteed when you're already all-in. If there's a bet in front of you, use the ×2 (one-card) number for the street you're actually on.]:::
 
 The main weakness is **high out counts on the flop**. The exact two-card calculation accounts for hitting on either street without counting a double hit twice. The ×4 estimate starts running slightly high at 7 outs, but the gap grows with bigger draws; the usual correction below is used for more than 8 outs.
 
