@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ini glosarium bahasa sederhana untuk istilah poker yang benar-benar muncul di permainan Texas Hold'em, dikelompokkan berdasarkan cara Anda menemuinya — aksi taruhan, posisi, tangan dan board, tipe pemain, uang, dan situasi meja. Mulai dari istilah yang paling sering tertukar di bawah (check vs call, set vs trips, cooler vs bad beat), lalu jelajahi per kategori. Istilah dengan panduan mendalam langsung tertaut ke sana.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-22",
+  updated: "2026-09-24",
   masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "12 mnt",
@@ -206,7 +206,7 @@ Chip, stake, dan dua format. Percabangan besarnya adalah [cash game vs turnamen]
 | **Tournament** | Buy-in tetap, blind naik, main sampai bust atau menang. |
 | **Freezeout** | Turnamen tanpa rebuy — keluar berarti keluar. |
 | **GTD (guaranteed)** | Prize pool minimum yang dijanjikan sebuah turnamen, tetap dibayar meski jumlah entri kurang. |
-| **Hand-for-hand** | Menjelang money bubble, setiap meja memainkan satu tangan pada waktu yang sama supaya tak ada yang bisa mengulur waktu demi masuk ke zona hadiah. |
+| **Hand-for-hand** | Menjelang money bubble, setiap meja memainkan satu hand pada waktu yang sama supaya tak ada yang bisa mengulur waktu demi masuk ke zona hadiah. |
 | **Bounty (knockout)** | Turnamen yang membayar hadiah untuk setiap pemain yang Anda eliminasi. |
 | **Sit & Go (SNG)** | Turnamen kecil yang dimulai begitu terisi penuh. |
 | **MTT** | Turnamen multi-meja yang menggabungkan meja saat pemain bust. |

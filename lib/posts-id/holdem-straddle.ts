@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Straddle adalah taruhan blind opsional — biasanya dua kali big blind — yang dipasang sebelum kartu dibagi. Ia membeli aksi terakhir di preflop bagi si straddler dan opsi untuk raise, menggandakan taruhan. Dalam hampir semua kasus ini adalah play -EV, dan dalam praktiknya hanya ada di cash game sesuai aturan rumah.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-09-22",
+  updated: "2026-09-24",
   masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "10 mnt",
@@ -36,7 +36,7 @@ Cash saja | Hampir tak pernah diizinkan di turnamen
 
 ## Apa Itu Straddle di Poker?
 
-**Straddle adalah taruhan blind sukarela — biasanya dua kali big blind — yang dipasang sebelum kartu dibagi.** Di game $1/$2, pemain under-the-gun (tepat di kiri big blind) bisa menaruh $4 "sebagai straddle," dan game itu langsung dimainkan seperti meja $1/$2/$4 untuk tangan tersebut.
+**Straddle adalah taruhan blind sukarela — biasanya dua kali big blind — yang dipasang sebelum kartu dibagi.** Di game $1/$2, pemain under-the-gun (tepat di kiri big blind) bisa menaruh $4 "sebagai straddle," dan game itu langsung dimainkan seperti meja $1/$2/$4 untuk hand tersebut.
 
 Dua hal membuatnya lebih dari sekadar uang ekstra di pot:
 
@@ -101,10 +101,10 @@ Straddle standar adalah **tepat 2× big blind** — $4 di game $1/$2, $10 di gam
 
 Beberapa ruangan no-limit mengizinkan lebih:
 
-- **Straddle tanpa batas / all-in** — beberapa ruangan membiarkan si straddler memasang jumlah berapa pun, hingga seluruh stack-nya, sebagai taruhan blind. Sebuah blind straddle besar bisa mengubah game kecil menjadi sangat besar untuk satu tangan.
+- **Straddle tanpa batas / all-in** — beberapa ruangan membiarkan si straddler memasang jumlah berapa pun, hingga seluruh stack-nya, sebagai taruhan blind. Sebuah blind straddle besar bisa mengubah game kecil menjadi sangat besar untuk satu hand.
 - **Progresi re-straddle** — di mana re-straddle diizinkan, masing-masing minimal dua kali yang terakhir: $4, lalu $8, lalu $16, dan seterusnya. Game di mana seluruh meja straddle dan re-straddle bisa menggelembungkan taruhan efektif hingga beberapa kali lipat.
 
-Jika Anda call ke dalam pot yang di-straddle, ingat [pot odds](/id/blog/holdem-pot-odds) Anda kini diukur terhadap blind yang lebih besar — harga untuk memainkan setiap tangan telah berlipat ganda, yang diam-diam menghukum call yang longgar.
+Jika Anda call ke dalam pot yang di-straddle, ingat [pot odds](/id/blog/holdem-pot-odds) Anda kini diukur terhadap blind yang lebih besar — harga untuk memainkan setiap hand telah berlipat ganda, yang diam-diam menghukum call yang longgar.
 
 ---
 

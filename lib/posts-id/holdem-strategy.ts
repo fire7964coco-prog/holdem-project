@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Setiap keputusan Texas Hold'em yang menang menyusut menjadi lima pertanyaan berulang: di mana saya duduk (position), apakah tangan ini layak dimainkan, apakah saya raise atau fold (jangan pernah limp), apakah saya terus bertaruh di flop, dan kapan saya melepasnya? Pemain tight-aggressive yang menjawab lima ini dengan baik akan fold ~80% tangan preflop, memainkannya secara agresif saat main, dan mengalahkan hampir setiap permainan santai — tanpa perlu daftar tips hafalan.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-11",
+  updated: "2026-09-24",
   masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "14 mnt",
@@ -19,14 +19,14 @@ export const POST: Post = {
   content: `
 Selama dua tahun pertama saya melakukan apa yang semua orang lakukan: saya membaca daftar tips. "Sepuluh tips cepat." "Sembilan aturan penting." Saya bisa melafalkan semuanya — mainkan lebih sedikit tangan, jadilah agresif, hormati position — dan saya *tetap* kalah. Masalahnya bukan bahwa tips itu salah. Masalahnya, semua itu adalah tumpukan aturan terpisah tanpa apa pun yang mengikatnya, jadi di meja, pada saat itu juga, saya tak tahu mana yang berlaku.
 
-Yang akhirnya menjadikan saya pemain yang menang bukanlah daftar yang lebih panjang. Yang menjadikannya adalah kesadaran bahwa **setiap tangan Texas Hold'em adalah lima keputusan yang sama, ditanyakan berulang-ulang** — di mana saya duduk, apakah tangan ini layak dimainkan, apakah saya raise atau fold, apakah saya terus bertaruh, dan kapan saya melepasnya. Kuasai lima ini dan Anda mengalahkan hampir setiap permainan santai yang Anda ikuti. Inilah kerangka ==**strategi Texas Hold'em** lengkap== yang dibangun di sekitar lima keputusan itu, dengan tautan ke pembahasan mendalam masing-masing sehingga Anda bisa berlatih di mana pun kebocoran Anda berada.
+Yang akhirnya menjadikan saya pemain yang menang bukanlah daftar yang lebih panjang. Yang menjadikannya adalah kesadaran bahwa **setiap hand Texas Hold'em adalah lima keputusan yang sama, ditanyakan berulang-ulang** — di mana saya duduk, apakah tangan ini layak dimainkan, apakah saya raise atau fold, apakah saya terus bertaruh, dan kapan saya melepasnya. Kuasai lima ini dan Anda mengalahkan hampir setiap permainan santai yang Anda ikuti. Inilah kerangka ==**strategi Texas Hold'em** lengkap== yang dibangun di sekitar lima keputusan itu, dengan tautan ke pembahasan mendalam masing-masing sehingga Anda bisa berlatih di mana pun kebocoran Anda berada.
 
 ---
 
 ### Apa yang sebenarnya memisahkan pemenang dari yang lain
 
 :::stripe
-5 | Keputusan yang berulang di setiap tangan
+5 | Keputusan yang berulang di setiap hand
 ~80% | Tangan yang di-fold pemain tight-aggressive di preflop
 11,8% | Peluang sebuah pocket pair flop menjadi set (≈1 dari 8,5)
 0% | Peluang sebuah limp memenangkan pot sebelum flop
@@ -38,7 +38,7 @@ Yang akhirnya menjadikan saya pemain yang menang bukanlah daftar yang lebih panj
 
 Buka artikel "strategi poker pemula" mana pun dan Anda mendapat daftar bernomor: sepuluh tips, sembilan aturan, tujuh kebiasaan. Semuanya tak *salah* — tapi daftar adalah cara terburuk untuk belajar, karena permainan tak menyodorkan menu bernomor kepada Anda. Ia menyodorkan sebuah kursi, dua kartu, dan sebuah taruhan untuk direspons.
 
-Jadi alih-alih daftar, gunakan **tulang punggung keputusan**. Setiap tangan yang Anda mainkan melewati lima pertanyaan yang sama dalam urutan yang sama. Masing-masing punya buku panduan tersendiri di situs ini — hub ini adalah peta yang menghubungkannya:
+Jadi alih-alih daftar, gunakan **tulang punggung keputusan**. Setiap hand yang Anda mainkan melewati lima pertanyaan yang sama dalam urutan yang sama. Masing-masing punya buku panduan tersendiri di situs ini — hub ini adalah peta yang menghubungkannya:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -64,8 +64,8 @@ Bahkan sebelum Anda melihat kartu, informasi terpenting sudah tetap: **kursi And
 
 Beraksi terakhir memungkinkan Anda melakukan tiga hal yang tak bisa dilakukan siapa pun di early position:
 
-- **Mengumpulkan informasi** — Anda menyaksikan semua orang cek, bet, atau fold sebelum memutuskan, jadi Anda tak pernah menebak dalam gelap.
-- **Mengendalikan pot** — Anda bisa cek di belakang untuk menjaganya kecil dengan tangan marginal, atau bet untuk membangunnya dengan tangan kuat.
+- **Mengumpulkan informasi** — Anda menyaksikan semua orang check, bet, atau fold sebelum memutuskan, jadi Anda tak pernah menebak dalam gelap.
+- **Mengendalikan pot** — Anda bisa check behind untuk menjaganya kecil dengan tangan marginal, atau bet untuk membangunnya dengan tangan kuat.
 - **Lebih banyak mencuri** — sebuah bet dari late position lebih meyakinkan dan lolos jauh lebih sering.
 
 Aturan praktis yang muncul darinya: **mainkan lebih banyak tangan di late position dan lebih sedikit di early position.** Sebuah tangan seperti K‑J adalah fold di under the gun tapi raise mudah di button. Jika Anda hanya mengingat satu hal tentang position, jadikan itu. Rincian kursi demi kursi lengkap — UTG, middle, cutoff, button, dan [blinds](/id/blog/holdem-blind-meaning) — ada di buku panduan position.
@@ -115,7 +115,7 @@ C-bet bekerja karena *Anda*-lah yang merepresentasikan kekuatan di preflop, jadi
 - **Tekstur board** — board kering yang meleset dari lawan menguntungkan bertaruh; board basah dan terhubung (9‑8‑7 dengan dua kartu sejenis) yang mengenai range call menuntut kehati-hatian.
 - **Jumlah lawan** — heads-up Anda bisa bet bebas; menghadapi dua caller atau lebih, c-bet **kurang dari separuh** waktu, karena seseorang terhubung dengan *sesuatu*.
 
-Soal ukuran, bet kecil **25–35% dari pot** cocok saat Anda bertaruh dengan range lebar di board kering; bet lebih besar **65%+** cocok untuk range value-dan-bluff yang terpolarisasi di board yang lebih basah. Jika Anda di-**raise** dan Anda tak punya apa-apa, ini langsung mengalir ke Keputusan 5. Mekanik [cek, bet, dan raise](/id/blog/holdem-betting-actions) dibahas di panduan aksi bertaruh.
+Soal ukuran, bet kecil **25–35% dari pot** cocok saat Anda bertaruh dengan range lebar di board kering; bet lebih besar **65%+** cocok untuk range value-dan-bluff yang terpolarisasi di board yang lebih basah. Jika Anda di-**raise** dan Anda tak punya apa-apa, ini langsung mengalir ke Keputusan 5. Mekanik [check, bet, dan raise](/id/blog/holdem-betting-actions) dibahas di panduan aksi bertaruh.
 
 ---
 
@@ -190,15 +190,15 @@ A. Tight-aggressive (TAG). Mainkan sedikit tangan, tapi mainkan secara agresif �
 
 **Q. Bagaimana cara menang di Texas Hold'em?**
 
-A. Anda tak menang dengan memainkan lebih banyak tangan — Anda menang dengan membuat keputusan lebih baik di lima spot yang sama setiap tangan: position, seleksi tangan, raise-atau-fold, c-bet, dan fold. Pemenang lebih banyak fold, lebih banyak raise, dan lebih sedikit call daripada pecundang. Seiring waktu, starting hand yang lebih ketat dan fold yang disiplin berarti Anda memenangkan pot besar dan hanya kalah pot kecil — dan itulah seluruh permainannya.
+A. Anda tak menang dengan memainkan lebih banyak tangan — Anda menang dengan membuat keputusan lebih baik di lima spot yang sama setiap hand: position, seleksi tangan, raise-atau-fold, c-bet, dan fold. Pemenang lebih banyak fold, lebih banyak raise, dan lebih sedikit call daripada pecundang. Seiring waktu, starting hand yang lebih ketat dan fold yang disiplin berarti Anda memenangkan pot besar dan hanya kalah pot kecil — dan itulah seluruh permainannya.
 
 **Q. Kapan Anda harus fold di poker?**
 
 A. Fold ketika kisah yang diceritakan lawan mengalahkan tangan yang sebenarnya Anda pegang dan Anda tak punya pot odds untuk terus draw. Konkretnya: fold tangan lemah sebelum flop, fold saat Anda meleset dan menghadapi agresi nyata, dan fold draw saat harganya salah. Fold tangan yang baik-tapi-kalah terasa seperti kalah tapi merupakan kebiasaan tunggal paling menguntungkan di poker.
 
-**Q. Kapan Anda harus bet vs. cek di poker?**
+**Q. Kapan Anda harus bet vs. check di poker?**
 
-A. Bet saat Anda punya tangan yang layak untuk membangun pot, atau spot bluff bagus di mana lawan bisa fold — bet menang dengan dua cara (mereka fold, atau Anda punya tangan terbaik). Cek saat tangan Anda marginal dan Anda lebih ingin menjaga pot tetap kecil, saat Anda di luar position tanpa rencana jelas, atau saat cek memungkinkan Anda menjebak tangan kuat. Sebagai preflop raiser, sebuah continuation bet di flop sering menjadi default Anda.
+A. Bet saat Anda punya tangan yang layak untuk membangun pot, atau spot bluff bagus di mana lawan bisa fold — bet menang dengan dua cara (mereka fold, atau Anda punya tangan terbaik). Check saat tangan Anda marginal dan Anda lebih ingin menjaga pot tetap kecil, saat Anda di luar position tanpa rencana jelas, atau saat check memungkinkan Anda menjebak tangan kuat. Sebagai preflop raiser, sebuah continuation bet di flop sering menjadi default Anda.
 
 **Q. Kapan Anda harus bluff di poker?**
 
@@ -226,7 +226,7 @@ A. Tak ada satu angka — ia tergantung pada position, board, dan berapa banyak 
 
 **Q. Poker itu permainan skill atau keberuntungan?**
 
-A. Dua-duanya — tapi skill yang menang seiring waktu. Satu tangan mana pun sarat unsur keberuntungan, dan itulah kenapa seorang pemula bisa mengalahkan pemain pro dalam satu sesi. Namun sepanjang ribuan tangan, keunggulan si pengambil keputusan yang lebih baik mendominasi dan variansinya saling meniadakan — persis itulah kenapa nama-nama yang sama terus masuk posisi uang. Poker adalah permainan skill yang dimainkan dengan setumpuk kartu keberuntungan.
+A. Dua-duanya — tapi skill yang menang seiring waktu. Satu hand mana pun sarat unsur keberuntungan, dan itulah kenapa seorang pemula bisa mengalahkan pemain pro dalam satu sesi. Namun sepanjang ribuan hand, keunggulan si pengambil keputusan yang lebih baik mendominasi dan variansinya saling meniadakan — persis itulah kenapa nama-nama yang sama terus masuk posisi uang. Poker adalah permainan skill yang dimainkan dengan setumpuk kartu keberuntungan.
 
 **Q. Apa itu GTO poker?**
 
@@ -246,7 +246,7 @@ A. Belajar di luar meja, dan main lebih ketat di meja. Perbaikan tercepat bagi k
 4. **Kelanjutan** — c-bet saat Anda punya inisiatif, tapi sesuaikan dengan board, position, dan lawan.
 5. **Disiplin** — fold tangan yang kalah dan draw tanpa odds; itu langkah yang paling banyak menghemat uang.
 
-Itulah seluruh kerangkanya. Bukan sepuluh tips untuk dihafal — lima pertanyaan untuk ditanyakan, dalam urutan, di setiap tangan. Kuasai menjawabnya dan Anda akan diam-diam melewati pemain yang masih memburu daftar yang lebih panjang. Mulailah dari [starting hands chart](/id/blog/holdem-starting-hands-chart) dan kesadaran [position](/id/blog/holdem-position-play) yang nyata, lapisi dengan [pot odds](/id/blog/holdem-pot-odds), dan Anda telah membangun permainan yang mengalahkan hampir setiap meja yang Anda duduki.
+Itulah seluruh kerangkanya. Bukan sepuluh tips untuk dihafal — lima pertanyaan untuk ditanyakan, dalam urutan, di setiap hand. Kuasai menjawabnya dan Anda akan diam-diam melewati pemain yang masih memburu daftar yang lebih panjang. Mulailah dari [starting hands chart](/id/blog/holdem-starting-hands-chart) dan kesadaran [position](/id/blog/holdem-position-play) yang nyata, lapisi dengan [pot odds](/id/blog/holdem-pot-odds), dan Anda telah membangun permainan yang mengalahkan hampir setiap meja yang Anda duduki.
 
 ---
 

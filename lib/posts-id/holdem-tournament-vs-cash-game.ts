@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Di cash game, chip adalah uang nyata dan blind tetap. Di turnamen, chip adalah ekuitas bertahan, blind naik, dan hadiah bergantung pada posisi finis Anda.",
   category: "tournament",
   date: "2026-06-11",
-  updated: "2026-09-13",
+  updated: "2026-09-24",
   masterUpdated: "2026-09-13",
   hideSummaryImageSlot: true,
   readTime: "18 mnt",
@@ -83,7 +83,7 @@ Kalau Anda memahami tabel ini, ==g:Anda sudah memahami fondasi seluruh perbandin
 
 **Chip adalah uang setiap saat.** Menangi sebuah pot dan uang itu langsung milik Anda — tidak ada "masuk hadiah" seperti di turnamen. Ini juga sebabnya keputusan cash game dinilai murni dari apakah ia menghasilkan uang dalam jangka panjang.
 
-**Blind tetap.** Permainan $1/$2 tetap $1/$2 lima jam kemudian. Dua taruhan paksa hanya berputar mengelilingi meja setiap tangan. Jika small blind, big blind, atau "option" masih membingungkan Anda — atau Anda ingin aturan missed blind dan straddle — [apa sebenarnya blind di poker](/id/blog/holdem-blind-meaning) membahas semua itu di satu tempat.
+**Blind tetap.** Permainan $1/$2 tetap $1/$2 lima jam kemudian. Dua taruhan paksa hanya berputar mengelilingi meja setiap hand. Jika small blind, big blind, atau "option" masih membingungkan Anda — atau Anda ingin aturan missed blind dan straddle — [apa sebenarnya blind di poker](/id/blog/holdem-blind-meaning) membahas semua itu di satu tempat.
 
 **Anda bisa reload dan keluar dengan bebas.** Kehilangan stack dan Anda bisa membeli chip lagi di tempat (sampai batas maksimum meja). Perlu pergi? Rapikan chip Anda dan uangkan — tanpa perlu izin.
 
@@ -124,7 +124,7 @@ Cash game dan turnamen juga terasa berbeda karena blind bergerak dengan cara ber
 
 Dalam cash game $1/$2, blind tetap $1/$2. Satu jam kemudian, masih $1/$2. Tiga jam kemudian, masih $1/$2. Anda bisa menunggu spot lebih baik, reload jika perlu, dan terus bermain dengan stack dalam.
 
-Dalam turnamen, blind naik sesuai jadwal. Stack yang di awal 100 big blind bisa menjadi 25 big blind kemudian tanpa kalah satu tangan pun. Lalu bisa menjadi 12 big blind. Pada akhirnya, menunggu menjadi mahal.
+Dalam turnamen, blind naik sesuai jadwal. Stack yang di awal 100 big blind bisa menjadi 25 big blind kemudian tanpa kalah satu hand pun. Lalu bisa menjadi 12 big blind. Pada akhirnya, menunggu menjadi mahal.
 
 | Tahap | Cash game | Turnamen |
 |------|------|------|
@@ -300,7 +300,7 @@ Turnamen tetap bisa bagus untuk pemula jika Anda menikmati kompetisi dan sanggup
 | Main sesi pendek | Cash game |
 | Belajar ICM dan tekanan bubble | Turnamen |
 
-Jika Anda benar-benar baru, pelajari dulu [cara kerja satu tangan Texas Hold'em](/id/blog/holdem-game-order) dan [peringkat tangan poker](/id/blog/holdem-hand-rankings). Memilih format jauh lebih mudah setelah aturan dasar menjadi otomatis — dan jika Anda condong ke turnamen, lihat [cara kerja turnamen poker](/id/blog/holdem-tournament "thumb:/images/holdem-tournament-hero.webp") untuk buy-in, level blind, dan alur Day-1.
+Jika Anda benar-benar baru, pelajari dulu [cara kerja satu hand Texas Hold'em](/id/blog/holdem-game-order) dan [peringkat tangan poker](/id/blog/holdem-hand-rankings). Memilih format jauh lebih mudah setelah aturan dasar menjadi otomatis — dan jika Anda condong ke turnamen, lihat [cara kerja turnamen poker](/id/blog/holdem-tournament "thumb:/images/holdem-tournament-hero.webp") untuk buy-in, level blind, dan alur Day-1.
 
 ### Kerangka keputusan pemula
 

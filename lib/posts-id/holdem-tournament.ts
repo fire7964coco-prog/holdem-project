@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Di turnamen poker Anda membayar buy-in tetap untuk mendapat chip, blind naik mengikuti timer sampai satu pemain memegang semua chip. 10–15% pemain teratas ITM. Formatnya meliputi freezeout, PKO, satellite, dan deepstack — masuk lewat buy-in langsung, satellite, atau pra-registrasi online.",
   category: "tournament",
   date: "2026-06-16",
-  updated: "2026-09-13",
+  updated: "2026-09-24",
   masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "14 mnt",
@@ -93,7 +93,7 @@ Perhatikan: **Anda tidak kehilangan satu chip pun** antara Level 1 dan Level 9. 
 
 Saat Anda sampai di sana, range shove persisnya ada di [short-stack strategy — kapan push atau fold](/id/blog/holdem-short-stack).
 
-**Apa itu ante?** Setelah level-level awal, kebanyakan turnamen menambahkan "ante" — taruhan paksa ekstra yang dikumpulkan setiap tangan di atas blind. Di kebanyakan event live modern ini berupa "big blind ante" tunggal yang setara satu big blind, dibayar oleh pemain big-blind atas nama seluruh meja (itulah kenapa kolom ante di atas cocok dengan big blind). Ini memperbesar ukuran pot dan mempercepat permainan. Saat ante mulai berlaku, chip Anda menyusut lebih cepat lagi.
+**Apa itu ante?** Setelah level-level awal, kebanyakan turnamen menambahkan "ante" — taruhan paksa ekstra yang dikumpulkan setiap hand di atas blind. Di kebanyakan event live modern ini berupa "big blind ante" tunggal yang setara satu big blind, dibayar oleh pemain big-blind atas nama seluruh meja (itulah kenapa kolom ante di atas cocok dengan big blind). Ini memperbesar ukuran pot dan mempercepat permainan. Saat ante mulai berlaku, chip Anda menyusut lebih cepat lagi.
 
 Belum paham blind sama sekali? Mulai dari [apa sebenarnya small blind dan big blind itu](/id/blog/holdem-blind-meaning) — itu membuat setiap angka "BB" di atas jadi masuk akal.
 
@@ -278,7 +278,7 @@ Jadwal payout bisa dicek sebelum turnamen mulai, tapi jumlah akhir posisi yang d
 |------|--------------|
 | **ITM** | In The Money — Anda telah mencapai posisi yang dibayar |
 | **Bubble** | Tahap tepat sebelum ITM — satu eliminasi lagi sampai semua orang cash |
-| **Hand-for-hand** | Semua meja bermain satu tangan dalam satu waktu selama bubble untuk mencegah stalling |
+| **Hand-for-hand** | Semua meja bermain satu hand dalam satu waktu selama bubble untuk mencegah stalling |
 | **Structure sheet** | Dokumen resmi yang memuat blind level, ante, dan jadwal payout |
 | **Chip leader** | Pemain dengan chip terbanyak |
 | **Short stack** | Pemain dengan chip sangat sedikit relatif terhadap blind |
@@ -312,7 +312,7 @@ Jadwal payout bisa dicek sebelum turnamen mulai, tapi jumlah akhir posisi yang d
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span>Tiba 30–45 mnt sebelum mulai. Antrean registrasi bisa panjang.</span></div>
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span>Hitung chip awal Anda sebelum memainkan tangan pertama. Beri tahu dealer segera jika kurang.</span></div>
 <div style="display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)"><span style="width:18px;height:18px;border-radius:4px;background:rgba(34,197,94,0.12);border:1.5px solid rgba(34,197,94,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#22c55e">✓</span><span>Minta structure sheet — ketahui kapan ante mulai berlaku dan kapan dinner break.</span></div>
-<div style="display:flex;align-items:center;gap:10px;padding:7px 0"><span style="width:18px;height:18px;border-radius:4px;background:rgba(255,150,0,0.12);border:1.5px solid rgba(255,150,0,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#ff9600">!</span><span><strong>Tanpa ponsel di meja saat tangan sedang berjalan</strong> — kebanyakan card room memberi penalti untuk ini.</span></div>
+<div style="display:flex;align-items:center;gap:10px;padding:7px 0"><span style="width:18px;height:18px;border-radius:4px;background:rgba(255,150,0,0.12);border:1.5px solid rgba(255,150,0,0.4);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#ff9600">!</span><span><strong>Tanpa ponsel di meja saat hand sedang berjalan</strong> — kebanyakan card room memberi penalti untuk ini.</span></div>
 </div>
 </div>
 

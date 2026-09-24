@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Bisakah Menghitung Kartu di Poker? Card Counting vs Blackjack",
   seoTitle: "Bisa Hitung Kartu di Poker? Ya — Tak Seperti Blackjack",
   desc: "Card counting ala blackjack mati di poker — tapi ada versi poker-nya. Kenapa tak berpindah, apakah legal, dan bagaimana outs & blocker menggantinya.",
-  tldr: "Tidak seperti di blackjack — dek diacak ulang setiap tangan dan terlalu sedikit kartu terlihat, jadi melacak kartu tinggi dan rendah tak memberi keunggulan. Tapi poker punya penghitungan legalnya sendiri: menghitung outs, memakai blocker, dan melacak dead card untuk membaca apa yang tak mungkin dipegang lawan.",
+  tldr: "Tidak seperti di blackjack — dek diacak ulang setiap hand dan terlalu sedikit kartu terlihat, jadi melacak kartu tinggi dan rendah tak memberi keunggulan. Tapi poker punya penghitungan legalnya sendiri: menghitung outs, memakai blocker, dan melacak dead card untuk membaca apa yang tak mungkin dipegang lawan.",
   category: "odds",
   date: "2026-07-08",
   updated: "2026-09-24",
@@ -45,10 +45,10 @@ Jika Anda membayangkan running high-low count seperti di film, buang itu — ia 
 
 ## Kenapa Card Counting Blackjack Tak Bekerja di Poker
 
-**Card counting blackjack hanya bekerja karena sebuah shoe dimainkan habis sepanjang banyak tangan sementara Anda mencoba mengalahkan dealer yang terikat aturan baku — poker melanggar ketiga syarat itu.** Inilah persis kenapa metodenya tak berpindah:
+**Card counting blackjack hanya bekerja karena sebuah shoe dimainkan habis sepanjang banyak hand sementara Anda mencoba mengalahkan dealer yang terikat aturan baku — poker melanggar ketiga syarat itu.** Inilah persis kenapa metodenya tak berpindah:
 
 :::card
-🔀 | Dek reset setiap tangan | Card counting blackjack butuh shoe yang dibagikan habis sepanjang puluhan tangan sehingga informasi menumpuk. Di poker, dek diacak ulang setiap tangan, jadi tak ada yang terbawa — setiap tangan dimulai dari dek penuh yang acak
+🔀 | Dek reset setiap hand | Card counting blackjack butuh shoe yang dibagikan habis sepanjang puluhan hand sehingga informasi menumpuk. Di poker, dek diacak ulang setiap hand, jadi tak ada yang terbawa — setiap hand dimulai dari dek penuh yang acak
 🙈 | Terlalu sedikit kartu terlihat | Kartu tertutup setiap pemain menghadap ke bawah. Anda hanya pernah melihat board bersama — segelintir kartu — tak pernah cukup untuk melacak komposisi dek
 👥 | Anda main lawan pemain, bukan bandar | Tak ada dealer yang terikat aturan baku untuk direbut keunggulannya. "Dek kaya kartu tinggi" tak berarti apa-apa saat pocket aces tetap premium — Anda menang dengan tangan lebih baik atau keputusan lebih baik, bukan dengan count yang menguntungkan
 :::
@@ -64,8 +64,8 @@ Di blackjack, dek yang penuh kartu tinggi secara matematis menguntungkan Anda, j
 :::compare
 Blackjack | Poker
 Anda vs bandar, aturan tetap | Anda vs pemain lain
-Satu shoe sepanjang banyak tangan | Diacak ulang setiap tangan
-Lacak keseimbangan tinggi/rendah dek | Tak ada yang dilacak antar tangan
+Satu shoe sepanjang banyak hand | Diacak ulang setiap hand
+Lacak keseimbangan tinggi/rendah dek | Tak ada yang dilacak dari hand ke hand
 Bertaruh besar saat dek menguntungkan Anda | Tak ada "dek menguntungkan"
 Menghitung bisa membuat Anda dilarang masuk | Menghitung diharapkan dan legal
 :::
@@ -130,7 +130,7 @@ Tanyakan apa yang tangan Anda blokir | Sebelum Anda bluff, cek apakah Anda pegan
 Sesuaikan dengan dead card | Kurangi out mana pun yang sudah Anda lihat terbuka di luar board — kartu yang tak sengaja terlihat, tangan yang ditunjukkan, fold yang kebetulan Anda lihat. Kartu yang bisa Anda lihat adalah kartu yang tak mungkin dipegang lawan — tapi hanya kalau terlihat karena kebetulan: sengaja berusaha melihat kartu pemain lain bukan bagian dari metode ini — hanya paparan yang tak disengaja
 :::
 
-Lakukan ini beberapa sesi dan ia menjadi otomatis — Anda akan "menghitung kartu" setiap tangan, hanya saja dengan cara poker. Langkah berikutnya adalah mengubah penghitungan itu menjadi call dan fold dengan [pot odds](/id/blog/holdem-pot-odds), matematika yang memberitahu apakah outs Anda sepadan dengan harganya.
+Lakukan ini beberapa sesi dan ia menjadi otomatis — Anda akan "menghitung kartu" setiap hand, hanya saja dengan cara poker. Langkah berikutnya adalah mengubah penghitungan itu menjadi call dan fold dengan [pot odds](/id/blog/holdem-pot-odds), matematika yang memberitahu apakah outs Anda sepadan dengan harganya.
 
 ---
 
@@ -143,7 +143,7 @@ Lakukan ini beberapa sesi dan ia menjadi otomatis — Anda akan "menghitung kart
 
 **Q. Bisakah menghitung kartu di poker seperti di blackjack?**
 
-A. Tidak. Card counting blackjack melacak keseimbangan tinggi-rendah sebuah shoe yang dimainkan habis sepanjang banyak tangan, tapi di poker dek diacak ulang setiap tangan dan kartu tertutup tetap menghadap ke bawah, jadi tak ada yang dilacak antar tangan. Poker punya penghitungannya sendiri — outs, blocker, dan dead card.
+A. Tidak. Card counting blackjack melacak keseimbangan tinggi-rendah sebuah shoe yang dimainkan habis sepanjang banyak hand, tapi di poker dek diacak ulang setiap hand dan kartu tertutup tetap menghadap ke bawah, jadi tak ada yang dilacak dari hand ke hand. Poker punya penghitungannya sendiri — outs, blocker, dan dead card.
 
 **Q. Apakah menghitung kartu ilegal di poker?**
 
@@ -151,11 +151,11 @@ A. Tidak. Menghitung outs dan blocker Anda sendiri di kepala adalah legal dan ba
 
 **Q. Apakah card counting bekerja di Texas Hold'em?**
 
-A. Penghitungan dek ala blackjack tidak — dek reset setiap tangan dan terlalu sedikit kartu terlihat. Tapi bentuk penghitungan poker pasti bekerja di Hold'em: menghitung outs Anda, mengenali blocker, dan menyesuaikan dengan dead card yang sudah Anda lihat adalah keterampilan esensial.
+A. Penghitungan dek ala blackjack tidak — dek reset setiap hand dan terlalu sedikit kartu terlihat. Tapi bentuk penghitungan poker pasti bekerja di Hold'em: menghitung outs Anda, mengenali blocker, dan menyesuaikan dengan dead card yang sudah Anda lihat adalah keterampilan esensial.
 
 **Q. Kenapa card counting bekerja di blackjack tapi tidak di poker?**
 
-A. Blackjack adalah Anda melawan dealer yang terikat aturan baku yang memakai satu shoe sepanjang banyak tangan, jadi dek kaya kartu tinggi secara matematis menguntungkan Anda dan Anda bertaruh sesuai itu. Di poker dek diacak ulang setiap tangan dan Anda diadu dengan pemain lain, jadi tak ada "dek menguntungkan" untuk dilacak — keunggulan datang dari membaca lawan.
+A. Blackjack adalah Anda melawan dealer yang terikat aturan baku yang memakai satu shoe sepanjang banyak hand, jadi dek kaya kartu tinggi secara matematis menguntungkan Anda dan Anda bertaruh sesuai itu. Di poker dek diacak ulang setiap hand dan Anda diadu dengan pemain lain, jadi tak ada "dek menguntungkan" untuk dilacak — keunggulan datang dari membaca lawan.
 
 **Q. Apa padanan card counting di poker?**
 
@@ -177,9 +177,9 @@ A. Itu versi poker-nya. Anda tak melacak seluruh dek seperti penghitung blackjac
 
 ## 3 Hal yang Harus Diingat
 
-1. **Card counting blackjack mati di poker.** Dek diacak ulang setiap tangan, terlalu sedikit kartu terlihat, dan Anda main lawan pemain, bukan bandar — jadi melacak kartu tinggi dan rendah tak menghasilkan apa-apa.
+1. **Card counting blackjack mati di poker.** Dek diacak ulang setiap hand, terlalu sedikit kartu terlihat, dan Anda main lawan pemain, bukan bandar — jadi melacak kartu tinggi dan rendah tak menghasilkan apa-apa.
 2. **Penghitungan poker adalah outs, blocker, dan dead card.** Semua matematika mental, semua legal, dan semua jauh lebih berharga daripada running count.
-3. **Ini keterampilan, bukan rahasia.** Lakukan penghitungannya sendiri dan simpan alat bantu luar untuk belajar. Hitung outs Anda, tanyakan apa yang Anda blokir, dan kurangi dead card yang sudah Anda lihat — setiap tangan.
+3. **Ini keterampilan, bukan rahasia.** Lakukan penghitungannya sendiri dan simpan alat bantu luar untuk belajar. Hitung outs Anda, tanyakan apa yang Anda blokir, dan kurangi dead card yang sudah Anda lihat — setiap hand.
 
 Mulailah dengan angka yang menentukan sebagian besar tangan: outs Anda. Lihat metode lengkapnya di [panduan menghitung outs](/id/blog/holdem-outs), lalu ubah penghitungan itu menjadi call yang profit dengan [pot odds](/id/blog/holdem-pot-odds).
 

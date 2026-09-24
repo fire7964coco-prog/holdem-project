@@ -149,7 +149,7 @@ Implied odds | Chip *tambahan* yang Anda harapkan menang di street berikutnya ji
 
 **Pot odds vs. [equity](/id/blog/holdem-equity "thumb:/images/holdem-equity-hero.webp")** adalah keputusan inti: call saat equity Anda mengalahkan pot odds Anda. [**Implied odds**](/id/blog/holdem-implied-odds "thumb:/images/holdem-implied-odds-hero.webp") adalah penentu untuk draw yang meleset tipis dari harganya. Jika flush draw Anda butuh 25% tapi hanya punya 19,6% di kartu river, Anda tetap bisa call *jika* Anda akan menarik cukup taruhan tambahan saat jadi untuk menutup selisihnya. Itulah kenapa Anda bisa call taruhan flop secara profit dengan sebuah draw, dan kenapa stack dalam membuat draw lebih berharga.
 
-Cermin gelapnya adalah **reverse implied odds** — chip yang akan Anda *kehilangan* saat draw Anda jadi tapi tetap kalah di tangan itu (flush Anda lengkap, tapi meja berpasangan dan seseorang punya full house). Draw peringkat kedua diam-diam menguras uang, itulah kenapa [nut flush draw jauh lebih berharga daripada draw kecil](/id/blog/holdem-starting-hands-chart).
+Cermin gelapnya adalah **reverse implied odds** — chip yang akan Anda *kehilangan* saat draw Anda jadi tapi tetap kalah di tangan itu (flush Anda lengkap, tapi board berpasangan dan seseorang punya full house). Draw peringkat kedua diam-diam menguras uang, itulah kenapa [nut flush draw jauh lebih berharga daripada draw kecil](/id/blog/holdem-starting-hands-chart).
 
 ---
 
@@ -178,7 +178,7 @@ Saya membuat setiap kesalahan ini sebelum kesalahan-kesalahan itu membuat saya b
 
 :::card
 🧮 | Lupa menyertakan call | Equity yang dibutuhkan adalah call ÷ pot *akhir* — hitung chip Anda sendiri yang masuk, atau Anda akan melebih-lebihkan equity yang Anda butuhkan dan mem-fold call yang seharusnya Anda ambil
-🃏 | Menghitung outs yang tercemar | Sebuah flush out yang juga membuat meja berpasangan bisa memberi seseorang full house. Kurangi outs "kotor" sebelum memercayai angkanya
+🃏 | Menghitung outs yang tercemar | Sebuah flush out yang juga membuat board berpasangan bisa memberi seseorang full house. Kurangi outs "kotor" sebelum memercayai angkanya
 🚀 | Salah pakai Rule of 4 | ×4 hanya berlaku saat Anda akan melihat kedua kartu gratis (all-in). Menghadapi taruhan turn, itu ×2 — pakai ×4 membujuk Anda ke call yang merugi
 💸 | Mengabaikan implied & reverse implied odds | Stack dalam menguntungkan tangan draw; draw non-nut yang jadi melawan tangan lebih besar adalah jebakan, bukan hari gajian
 🎯 | Call karena harapan | "Mungkin jadi" bukan alasan. Jika equity Anda tak mengalahkan pot odds Anda (plus implied odds), itu fold
@@ -270,8 +270,8 @@ Lakukan ini beberapa ratus kali dan ia berhenti menjadi matematika dan menjadi i
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Masuk pot dengan tangan yang layak di-draw</div>
   </a>
   <a href="/id/blog/holdem-reading-the-board" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Membaca Meja</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Cara Membaca Meja di Hold'em</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Membaca Board</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Cara Membaca Board di Hold'em</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Hitung outs Anda dengan mengenali setiap draw</div>
   </a>
   <a href="/id/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">

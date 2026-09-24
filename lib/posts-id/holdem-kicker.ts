@@ -8,16 +8,16 @@ export const POST: Post = {
   tldr: "Kicker adalah kartu samping tertinggi yang bukan bagian dari tangan utama Anda — ia memecah seri saat dua pemain punya nilai tangan yang sama. High card pakai 4 kicker, one pair 3, two pair 1, trips 2; straight, flush, full house, dan straight flush tidak punya. Inilah kenapa AK menang atas AQ saat meja memasangkan sebuah ace.",
   category: "hand-rankings",
   date: "2026-07-08",
-  updated: "2026-09-17",
+  updated: "2026-09-24",
   masterUpdated: "2026-09-17",
   keepImagesInBody: true,
   readTime: "10 mnt",
   emoji: "🃏",
   image: "/images/holdem-kicker-hero.webp",
-  imageAlt: "Dua pemain membalik A-K dan A-Q saat showdown dengan sebuah ace di meja — kicker king yang menentukan siapa pemenang pot",
+  imageAlt: "Dua pemain membalik A-K dan A-Q saat showdown dengan sebuah ace di board — kicker king yang menentukan siapa pemenang pot",
   tags: ["kicker poker", "apa itu kicker di poker", "aturan kicker", "apakah flush punya kicker", "playing the board", "dominated ace", "kartu kicker", "apakah four of a kind punya kicker"],
   content: `
-Tangan yang akhirnya mengajari saya apa itu kicker membuat saya kehilangan satu buy-in penuh. Saya pegang ==b:A♠ 9♣==, meja memasangkan ace saya, dan saya shove yakin top pair sudah emas. Lawan membalik ==b:A♥ K♦== — sepasang ace yang sama, tapi king-nya mengalahkan kicker saya, dan pot pun meluncur ke sisinya. Saya tidak kalah dari *tangan* yang lebih baik; saya kalah dari ==kartu samping== yang lebih baik. Kartu samping itulah kicker, dan ia menentukan lebih banyak pot daripada yang disadari pemula.
+Tangan yang akhirnya mengajari saya apa itu kicker membuat saya kehilangan satu buy-in penuh. Saya pegang ==b:A♠ 9♣==, board memasangkan ace saya, dan saya shove yakin top pair sudah emas. Lawan membalik ==b:A♥ K♦== — sepasang ace yang sama, tapi king-nya mengalahkan kicker saya, dan pot pun meluncur ke sisinya. Saya tidak kalah dari *tangan* yang lebih baik; saya kalah dari ==kartu samping== yang lebih baik. Kartu samping itulah kicker, dan ia menentukan lebih banyak pot daripada yang disadari pemula.
 
 ==Kicker adalah pemecah seri yang sudah tertanam di poker itu sendiri — saat dua pemain punya nilai tangan yang sama, kartu sisa tertinggi yang menang.== Kebanyakan panduan hanya memberi definisi satu baris dan contoh AK-vs-AQ. Yang ini memberi Anda gambaran utuh: persisnya tangan mana yang punya kicker (dan berapa banyak), satu pengecualian yang salah dipahami semua orang, dan kenapa "playing the board" berarti kicker Anda tiba-tiba tidak berarti sama sekali.
 
@@ -103,7 +103,7 @@ Mejanya ==b:A♣ 9♦ 5♠ 2♥ 7♣==. Anda pegang ==b:A♠ K♠==, lawan pegan
 
 Pair yang sama, jadi bandingkan kicker dari atas: ==g:K Anda menang atas Q mereka.== Anda menang, A-A-K-9-7 atas A-A-Q-9-7. Si 9 dan 7 bahkan tak ikut bermain — kicker pertama sudah menentukannya.
 
-:::note[Perhatikan kedua tangan berbagi 9 dan 7 dari meja. Kicker bisa datang dari meja juga: kalau kartu samping tertinggi adalah kartu komunitas, ia mengisi tangan *kedua* pemain dan kartu berikutnya yang menentukan. Kartu tertutup Anda baru jadi kicker kalau ia mengalahkan apa yang sudah ada di meja.]:::
+:::note[Perhatikan kedua tangan berbagi 9 dan 7 dari board. Kicker bisa datang dari board juga: kalau kartu samping tertinggi adalah kartu komunitas, ia mengisi tangan *kedua* pemain dan kartu berikutnya yang menentukan. Kartu tertutup Anda baru jadi kicker kalau ia mengalahkan apa yang sudah ada di board.]:::
 
 ---
 
@@ -113,10 +113,10 @@ Pair yang sama, jadi bandingkan kicker dari atas: ==g:K Anda menang atas Q merek
 
 Mejanya ==b:10♠ J♦ Q♣ K♥ A♠== — sebuah straight ten-sampai-ace jadi (Broadway), dalam jenis campuran sehingga flush tidak mungkin.
 
-- Anda pegang ==b:2♣ 3♦==. Lima terbaik Anda adalah straight meja; si 2 dan 3 tak menambah apa pun.
-- Lawan pegang ==b:4♥ 5♦==. Sama saja — straight meja juga lima terbaik mereka.
+- Anda pegang ==b:2♣ 3♦==. Lima terbaik Anda adalah straight di board; si 2 dan 3 tak menambah apa pun.
+- Lawan pegang ==b:4♥ 5♦==. Sama saja — straight di board juga lima terbaik mereka.
 
-Tak satu pun dari kalian bisa lebih tinggi dari ace, jadi kalian berdua "playing the board" dan ==g:membagi pot== — tapi hanya jika kalian membuka kartu tertutup; kalau di-muck, Anda tak dapat apa-apa, bahkan di sini (TDA Rule 19). Straight tak punya kicker, jadi kartu tertutup itu cuma beban mati. Saat Anda dengar "the board plays", inilah maksudnya — dan ini satu-satunya tempat kartu tertutup yang tampak kuat bernilai persis nol. (Selengkapnya soal mengenali runout seperti ini di [membaca meja](/id/blog/holdem-reading-the-board).)
+Tak satu pun dari kalian bisa lebih tinggi dari ace, jadi kalian berdua "playing the board" dan ==g:membagi pot== — tapi hanya jika kalian membuka kartu tertutup; kalau di-muck, Anda tak dapat apa-apa, bahkan di sini (TDA Rule 19). Straight tak punya kicker, jadi kartu tertutup itu cuma beban mati. Saat Anda dengar "the board plays", inilah maksudnya — dan ini satu-satunya tempat kartu tertutup yang tampak kuat bernilai persis nol. (Selengkapnya soal mengenali runout seperti ini di [membaca board](/id/blog/holdem-reading-the-board).)
 
 ---
 
@@ -126,20 +126,20 @@ Tak satu pun dari kalian bisa lebih tinggi dari ace, jadi kalian berdua "playing
 
 ![Dua starting hand berdampingan di atas felt hijau — A-K di sebelah A-9 — memperlihatkan bagaimana ace yang sama dengan kicker lebih lemah menjadi jebakan terdominasi](/images/holdem-kicker-dominated.webp "Ace yang sama, nasib berbeda: kicker-lah yang memisahkan tangan premium dari yang terdominasi")
 
-Kembali ke buy-in saya. Meja ==b:A♦ 7♣ 2♥ Q♠ 4♦==, tak ada straight atau flush di sana.
+Kembali ke buy-in saya. Board ==b:A♦ 7♣ 2♥ Q♠ 4♦==, tak ada straight atau flush di sana.
 
 - **A9:** A♠ 9♣ → sepasang ace, lima terbaik ==A♠ A♦ Q♠ 9♣ 7♣==.
 - **AK:** A♥ K♦ → sepasang ace, lima terbaik ==g:A♥ A♦ K♦ Q♠ 7♣==.
 
-Pair yang sama lagi — dan 9 saya bahkan tak dapat suara. Ia terdorong ke kicker kedua oleh queen di meja, dan perbandingan diputuskan di kicker pertama: K-nya atas Q di meja — jadi sejauh yang berpengaruh, "kicker" saya sudah ==r:mati== sebelum tangan dimulai. Itulah dominasi: saat Anda nyambung dengan ace Anda, sering kali Anda cuma membayari ace yang lebih besar. Inilah seluruh alasan kenapa [chart starting hands](/id/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") memperlakukan A9 offsuit jauh lebih hati-hati daripada AK — kicker adalah beda antara tangan premium dan jebakan.
+Pair yang sama lagi — dan 9 saya bahkan tak dapat suara. Ia terdorong ke kicker kedua oleh queen di board, dan perbandingan diputuskan di kicker pertama: K-nya atas Q di board — jadi sejauh yang berpengaruh, "kicker" saya sudah ==r:mati== sebelum hand dimulai. Itulah dominasi: saat Anda nyambung dengan ace Anda, sering kali Anda cuma membayari ace yang lebih besar. Inilah seluruh alasan kenapa [chart starting hands](/id/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") memperlakukan A9 offsuit jauh lebih hati-hati daripada AK — kicker adalah beda antara tangan premium dan jebakan.
 
 ---
 
 ## Apakah Four of a Kind Punya Kicker?
 
-**Ya — four of a kind punya kicker satu-kartu, tapi ia hampir tak pernah menentukan tangan di Hold'em: itu butuh dua pemain seri di quads yang sama, dan itu mengharuskan keempat kartunya ada di meja — runout yang langka.** Inilah pengecualian yang paling sering diselewengkan banyak panduan dengan menggabungkan quads ke "tangan lima-kartu yang tak punya kicker".
+**Ya — four of a kind punya kicker satu-kartu, tapi ia hampir tak pernah menentukan tangan di Hold'em: itu butuh dua pemain seri di quads yang sama, dan itu mengharuskan keempat kartunya ada di board — runout yang langka.** Inilah pengecualian yang paling sering diselewengkan banyak panduan dengan menggabungkan quads ke "tangan lima-kartu yang tak punya kicker".
 
-Matematikanya jelas: empat kartu membentuk quad, satu kartu adalah kicker. Ia baru penting saat dua pemain entah bagaimana seri di four of a kind yang *sama* — yang di Hold'em mengharuskan keempatnya ada di meja (karena tiap nilai cuma ada empat). Kalau mejanya ==b:5♠ 5♥ 5♦ 5♣ K♦==, semua orang punya quad five, dan kartu kelima adalah kicker: pemain yang pegang sebuah ace memainkan ==g:5-5-5-5-A== dan mengalahkan pemain yang mengambil ==5-5-5-5-K== dari meja. Langka, tapi nyata — dan benar soal kasus langka seperti inilah yang memisahkan panduan tepercaya dari yang asal-asalan.
+Matematikanya jelas: empat kartu membentuk quad, satu kartu adalah kicker. Ia baru penting saat dua pemain entah bagaimana seri di four of a kind yang *sama* — yang di Hold'em mengharuskan keempatnya ada di board (karena tiap nilai cuma ada empat). Kalau board-nya ==b:5♠ 5♥ 5♦ 5♣ K♦==, semua orang punya quad five, dan kartu kelima adalah kicker: pemain yang pegang sebuah ace memainkan ==g:5-5-5-5-A== dan mengalahkan pemain yang mengambil ==5-5-5-5-K== dari board. Langka, tapi nyata — dan benar soal kasus langka seperti inilah yang memisahkan panduan tepercaya dari yang asal-asalan.
 
 ---
 
@@ -168,19 +168,19 @@ A. Tidak. Full house adalah three of a kind plus sepasang — kelima kartu. Seri
 
 **Q. Apakah four of a kind punya kicker?**
 
-A. Ya, four of a kind punya kicker satu-kartu, tapi jarang berpengaruh di Hold'em. Ia baru menentukan tangan saat dua pemain seri di quads yang persis sama — yang mengharuskan keempat kartu ada di meja — dan kemudian kartu kelima tertinggi yang menang.
+A. Ya, four of a kind punya kicker satu-kartu, tapi jarang berpengaruh di Hold'em. Ia baru menentukan tangan saat dua pemain seri di quads yang persis sama — yang mengharuskan keempat kartu ada di board — dan kemudian kartu kelima tertinggi yang menang.
 
 **Q. Apakah kicker penting untuk three of a kind?**
 
-A. Ya. Three of a kind memakai dua kicker, jadi saat dua pemain membentuk trips yang sama, dua kartu tertinggi berikutnya yang memecah seri — di meja K♣ K♥ 7♦ 5♣ 2♠, pemain dengan K♠ A♠ memainkan K-K-K-A-7 dan menang atas K-K-K-Q-7 milik K♦ Q♦, karena ace mengungguli queen. (*Set* asli dari pocket pair hampir tak pernah seri, karena hanya satu pemain yang bisa pegang pasangan itu.)
+A. Ya. Three of a kind memakai dua kicker, jadi saat dua pemain membentuk trips yang sama, dua kartu tertinggi berikutnya yang memecah seri — di board K♣ K♥ 7♦ 5♣ 2♠, pemain dengan K♠ A♠ memainkan K-K-K-A-7 dan menang atas K-K-K-Q-7 milik K♦ Q♦, karena ace mengungguli queen. (*Set* asli dari pocket pair hampir tak pernah seri, karena hanya satu pemain yang bisa pegang pasangan itu.)
 
 **Q. Apakah two pair punya kicker?**
 
-A. Ya — two pair memakai satu kicker. Kalau Anda pegang K♥ Q♦ dan lawan pegang J♠ Q♥ di meja Q♣ 7♠ 7♦ 4♥ 2♣, kalian sama-sama punya two pair Q dan 7, tapi kicker king Anda mengalahkan jack mereka (Q-Q-7-7-K vs Q-Q-7-7-J). Kicker baru ikut main saat kedua pemain pegang two pair yang identik.
+A. Ya — two pair memakai satu kicker. Kalau Anda pegang K♥ Q♦ dan lawan pegang J♠ Q♥ di board Q♣ 7♠ 7♦ 4♥ 2♣, Anda berdua sama-sama punya two pair Q dan 7, tapi kicker king Anda mengalahkan jack mereka (Q-Q-7-7-K vs Q-Q-7-7-J). Kicker baru ikut main saat kedua pemain pegang two pair yang identik.
 
 **Q. Apakah kicker harus dari kartu tertutup Anda?**
 
-A. Tidak. Kicker bisa berupa kartu komunitas. Poker selalu membentuk lima terbaik dari tujuh kartu, jadi kalau kartu meja lebih tinggi dari kartu tertutup Anda, kartu meja itulah yang jadi kicker bersama dan kartu berikutnya yang menentukan. Kartu tertutup Anda baru berperan sebagai kicker kalau ia lebih tinggi dari kartu meja yang ia gantikan.
+A. Tidak. Kicker bisa berupa kartu komunitas. Poker selalu membentuk lima terbaik dari tujuh kartu, jadi kalau kartu board lebih tinggi dari kartu tertutup Anda, kartu board itulah yang jadi kicker bersama dan kartu berikutnya yang menentukan. Kartu tertutup Anda baru berperan sebagai kicker kalau ia lebih tinggi dari kartu board yang ia gantikan.
 
 **Q. Berapa banyak kicker dalam satu tangan poker?**
 
@@ -233,8 +233,8 @@ Pahami kicker dengan benar dan seluruh kategori tangan "kok saya bisa kalah?" be
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Kenapa ace ber-kicker lemah di-fold</div>
   </a>
   <a href="/id/blog/holdem-reading-the-board" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Membaca Meja</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Cara Membaca Meja</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Membaca Board</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Cara Membaca Board</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Kenali kapan Anda sedang playing the board</div>
   </a>
 </div>

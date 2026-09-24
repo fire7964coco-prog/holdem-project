@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Posisi Poker: Nama Setiap Kursi & Bagan",
   seoTitle: "Kursi Anda Berganti Nama Tiap Tangan — Bagan Posisi Poker",
   desc: "Namanya bergerak mengikuti button, bukan kursinya. Setiap nama posisi poker — UTG, hijack, cutoff, button — plus nomor kursi, peta 6-max, dan siapa aksi dulu.",
-  tldr: "Posisi poker adalah nama kursi yang diukur dari tombol dealer — UTG, lojack, hijack, cutoff, button, dan blind — dan semuanya bergerak satu kursi searah jarum jam setiap tangan. Preflop, UTG aksi lebih dulu dan big blind terakhir; postflop, small blind aksi lebih dulu dan button terakhir. Nomor kursi fisik tak pernah berpindah; posisi berpindah.",
+  tldr: "Posisi poker adalah nama kursi yang diukur dari tombol dealer — UTG, lojack, hijack, cutoff, button, dan blind — dan semuanya bergerak satu kursi searah jarum jam setiap hand. Preflop, UTG aksi lebih dulu dan big blind terakhir; postflop, small blind aksi lebih dulu dan button terakhir. Nomor kursi fisik tak pernah berpindah; posisi berpindah.",
   category: "strategy",
   date: "2026-06-13",
-  updated: "2026-09-13",
+  updated: "2026-09-24",
   masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "12 mnt",
@@ -29,18 +29,18 @@ Cash game live pertama saya, saya duduk di kursi yang belakangan saya tahu berna
 
 Tiga hand kemudian saya di button dengan J♥ J♠ yang sama. Saya raise. Semua orang fold. Saya menang $14 tanpa pernah melihat flop.
 
-Tangan yang sama. Hasil yang sepenuhnya berbeda. Satu-satunya yang berubah hanyalah kursi saya — dan malam itu saya sadar saya sebenarnya tak tahu kursi-kursi itu *disebut* apa, apalagi apa artinya. Jika Anda masih belajar bagaimana satu tangan penuh mengalir dari deal sampai showdown, mulailah dari [panduan aturan Texas Hold'em](/id/blog/texas-holdem-rules-for-beginners); artikel ini adalah peta kursi yang diasumsikan sudah Anda ketahui oleh panduan itu.
+Tangan yang sama. Hasil yang sepenuhnya berbeda. Satu-satunya yang berubah hanyalah kursi saya — dan malam itu saya sadar saya sebenarnya tak tahu kursi-kursi itu *disebut* apa, apalagi apa artinya. Jika Anda masih belajar bagaimana satu hand penuh mengalir dari deal sampai showdown, mulailah dari [panduan aturan Texas Hold'em](/id/blog/texas-holdem-rules-for-beginners); artikel ini adalah peta kursi yang diasumsikan sudah Anda ketahui oleh panduan itu.
 
 ---
 
 > **Jawaban singkat**
-> Posisi poker adalah ==kursi bernama yang diukur dari tombol dealer== — UTG, lojack, hijack, cutoff, button, small blind, big blind — dan semuanya ==bergerak satu kursi searah jarum jam setiap tangan== seiring button berpindah. Preflop, UTG aksi lebih dulu dan big blind aksi terakhir. Postflop, small blind aksi lebih dulu dan button aksi terakhir.
+> Posisi poker adalah ==kursi bernama yang diukur dari tombol dealer== — UTG, lojack, hijack, cutoff, button, small blind, big blind — dan semuanya ==bergerak satu kursi searah jarum jam setiap hand== seiring button berpindah. Preflop, UTG aksi lebih dulu dan big blind aksi terakhir. Postflop, small blind aksi lebih dulu dan button aksi terakhir.
 
 ---
 
 ## Apa Saja Posisi di Meja Poker? (Peta Kursi Lengkap)
 
-Posisi bukanlah kursi — ia adalah **nama untuk tempat Anda duduk relatif terhadap tombol dealer**, dan ia menentukan ==kapan Anda aksi di setiap street==. Karena button berpindah satu kursi searah jarum jam setelah setiap tangan, setiap pemain di meja menyandang nama yang berbeda di setiap tangan.
+Posisi bukanlah kursi — ia adalah **nama untuk tempat Anda duduk relatif terhadap tombol dealer**, dan ia menentukan ==kapan Anda aksi di setiap street==. Karena button berpindah satu kursi searah jarum jam setelah setiap hand, setiap pemain di meja menyandang nama yang berbeda di setiap hand.
 
 Berikut bagan posisi 9-max lengkap — setiap nama kursi, singkatannya, zonanya, dan persis kapan ia aksi sebelum dan sesudah flop:
 
@@ -60,7 +60,7 @@ Berikut bagan posisi 9-max lengkap — setiap nama kursi, singkatannya, zonanya,
 
 Perhatikan pembalikannya: ==blind aksi terakhir preflop tapi pertama postflop==, sementara button aksi terakhir di setiap street postflop. Urutan itulah — bukan kartunya — yang membuat sebagian kursi secara struktural lebih baik daripada yang lain.
 
-> **Catatan meja live:** button adalah cakram fisik yang berpindah satu kursi searah jarum jam setiap tangan. "UTG" adalah siapa pun yang duduk tiga kursi di kiri button pada saat itu — bukan kursi tetap.
+> **Catatan meja live:** button adalah cakram fisik yang berpindah satu kursi searah jarum jam setiap hand. "UTG" adalah siapa pun yang duduk tiga kursi di kiri button pada saat itu — bukan kursi tetap.
 
 ---
 
@@ -91,17 +91,17 @@ Ini membingungkan hampir setiap pemain live pemula: ketika petugas memanggil **"
 
 Di sebagian besar card room, kursi fisik dinomori dari sisi kiri langsung dealer — ==Kursi 1 secara konvensi adalah kursi pertama di kiri dealer==, dihitung searah jarum jam sampai Kursi 9 atau 10 di kanan dealer. Angka-angka itu terpaku pada kursinya. Staf memakainya untuk logistik: menempatkan pemain baru, mengantar chip, memanggil waktu.
 
-Posisi justru sebaliknya — ia ==berputar satu kursi searah jarum jam setiap tangan== mengikuti button. Kursi 5 mungkin menjadi button di tangan ini, cutoff di tangan berikutnya, dan hijack di tangan setelahnya.
+Posisi justru sebaliknya — ia ==berputar satu kursi searah jarum jam setiap hand== mengikuti button. Kursi 5 mungkin menjadi button di hand ini, cutoff di hand berikutnya, dan hijack di hand setelahnya.
 
 :::compare
 Nomor kursi (fisik) | Posisi (poker)
-Tetap pada kursi — Kursi 1 biasanya di kiri langsung dealer | Berpindah mengikuti tombol dealer setiap tangan
+Tetap pada kursi — Kursi 1 biasanya di kiri langsung dealer | Berpindah mengikuti tombol dealer setiap hand
 Dipakai staf: "Kursi 5, chip datang" | Dipakai strategi: "cutoff open"
-Tak pernah berubah selama satu sesi | Berubah setiap tangan, satu kursi searah jarum jam
+Tak pernah berubah selama satu sesi | Berubah setiap hand, satu kursi searah jarum jam
 Memberi tahu DI MANA Anda duduk | Memberi tahu KAPAN Anda aksi
 :::
 
-Jadi "apa itu Kursi 1 di poker?" punya jawaban yang membosankan — ia sebuah kursi — dan justru itulah intinya. ==Nomor kursi adalah alamat; posisi adalah pekerjaan==, dan pekerjaan itu ditugaskan ulang setiap tangan.
+Jadi "apa itu Kursi 1 di poker?" punya jawaban yang membosankan — ia sebuah kursi — dan justru itulah intinya. ==Nomor kursi adalah alamat; posisi adalah pekerjaan==, dan pekerjaan itu ditugaskan ulang setiap hand.
 
 ---
 
@@ -157,14 +157,14 @@ Pertanyaan paling sering ditanyakan tentang posisi, dijawab dalam satu tabel:
 
 | Street | Pertama aksi | Terakhir aksi |
 |:---|:---|:---|
-| **Preflop** | **UTG** — kursi pertama di kiri big blind | **Big blind** — boleh cek atau raise |
+| **Preflop** | **UTG** — kursi pertama di kiri big blind | **Big blind** — boleh check atau raise |
 | **Flop / Turn / River** | **Small blind** — atau kursi aktif pertama di kiri button | **Button** — atau kursi aktif terdekat sebelumnya |
 
 Jadi — **apakah blind aksi lebih dulu?** ==Preflop, tidak. Postflop, ya.== Sebelum flop, blind sudah memasukkan uang, jadi aksi dimulai dari UTG dan berputar kembali ke mereka terakhir — big blind aksi terakhir dari semua orang. Setelah flop, urutan direset searah jarum jam dari button: small blind bicara lebih dulu, big blind kedua, dan button selalu terakhir.
 
 Dan di antara kedua blind: ==small blind aksi sebelum big blind di setiap street==, baik preflop maupun postflop — dengan satu pengecualian, heads-up, dibahas di bawah.
 
-Satu pertanyaan tetangga yang layak sebaris: pada **showdown**, defaultnya adalah pemain terakhir yang bertaruh atau raise menunjukkan kartu lebih dulu (jika river di-cek sampai habis, kursi aktif pertama di kiri button menunjukkan) — etiket lengkapnya ada di [panduan aturan showdown](/id/blog/holdem-showdown-rules). Untuk urutan lengkap street demi street dalam satu tangan, lihat [urutan permainan](/id/blog/holdem-game-order).
+Satu pertanyaan tetangga yang layak sebaris: pada **showdown**, defaultnya adalah pemain terakhir yang bertaruh atau raise menunjukkan kartu lebih dulu (jika river di-check habis, kursi aktif pertama di kiri button menunjukkan) — etiket lengkapnya ada di [panduan aturan showdown](/id/blog/holdem-showdown-rules). Untuk urutan lengkap street demi street dalam satu hand, lihat [urutan permainan](/id/blog/holdem-game-order).
 
 ---
 
@@ -211,27 +211,27 @@ A. Lojack (LJ) adalah kursi tiga langkah di kanan button — yang lebih awal dar
 
 **Q. Siapa yang aksi lebih dulu, small blind atau big blind?**
 
-A. Small blind aksi sebelum big blind di setiap street. Preflop, kedua blind aksi terakhir (big blind paling akhir, dengan opsi cek atau raise); postflop, small blind adalah kursi pertama yang aksi di meja. Satu pengecualian adalah heads-up, di mana button memasang small blind dan big blind aksi pertama postflop.
+A. Small blind aksi sebelum big blind di setiap street. Preflop, kedua blind aksi terakhir (big blind paling akhir, dengan opsi check atau raise); postflop, small blind adalah kursi pertama yang aksi di meja. Satu pengecualian adalah heads-up, di mana button memasang small blind dan big blind aksi pertama postflop.
 
 **Q. Ada berapa posisi di poker 6-max?**
 
 A. Enam: UTG (juga disebut lojack), hijack, cutoff, button, small blind, dan big blind. Dibandingkan meja 9-max, tiga kursi awal (UTG, UTG+1, dan UTG+2) memang hilang dan lojack mewarisi nama UTG — nama dihapus dari posisi awal lebih dulu, jadi kedua kursi tengah tetap ada. Setiap kursi yang mempertahankan namanya sendiri — hijack, cutoff, button, dan kedua blind — punya jumlah pemain di belakang yang sama dengan kursi senama di full ring, tapi karena kursi-kursi awal hilang Anda jauh lebih sering duduk di blind dan di posisi akhir, jadi rata-rata range jadi lebih lebar.
 
-**Q. Apakah posisi poker berubah setiap tangan?**
+**Q. Apakah posisi poker berubah setiap hand?**
 
-A. Ya. Tombol dealer berpindah satu kursi searah jarum jam setelah setiap tangan, dan karena semua posisi dinamai berdasarkan jaraknya dari button, posisi setiap pemain bergeser satu kursi setiap tangan. Sepanjang satu orbit penuh Anda akan memegang setiap posisi di meja tepat sekali.
+A. Ya. Tombol dealer berpindah satu kursi searah jarum jam setelah setiap hand, dan karena semua posisi dinamai berdasarkan jaraknya dari button, posisi setiap pemain bergeser satu kursi setiap hand. Sepanjang satu orbit penuh Anda akan memegang setiap posisi di meja tepat sekali.
 
 **Q. Apa itu Kursi 1 di poker?**
 
-A. Kursi 1 adalah kursi fisik, bukan posisi — di sebagian besar card room ia adalah kursi pertama di kiri langsung dealer, dengan nomor berjalan searah jarum jam sampai Kursi 9 atau 10. Staf memakai nomor kursi untuk penempatan dan logistik. Posisi poker (UTG, button, blind) berputar sendiri setiap tangan, jadi Kursi 1 bisa menjadi posisi mana pun.
+A. Kursi 1 adalah kursi fisik, bukan posisi — di sebagian besar card room ia adalah kursi pertama di kiri langsung dealer, dengan nomor berjalan searah jarum jam sampai Kursi 9 atau 10. Staf memakai nomor kursi untuk penempatan dan logistik. Posisi poker (UTG, button, blind) berputar sendiri setiap hand, jadi Kursi 1 bisa menjadi posisi mana pun.
 
 ---
 
 ## Poin Penting
 
-1. **Posisi adalah nama, bukan kursi.** Setiap kursi dinamai berdasarkan jaraknya dari tombol dealer, dan setiap nama berpindah satu kursi searah jarum jam setiap tangan.
+1. **Posisi adalah nama, bukan kursi.** Setiap kursi dinamai berdasarkan jaraknya dari tombol dealer, dan setiap nama berpindah satu kursi searah jarum jam setiap hand.
 2. **Bagan dalam satu baris:** UTG → UTG+1 → UTG+2 → LJ → HJ → CO → BTN → SB → BB. Preflop dimulai dari UTG dan berakhir di big blind; postflop dimulai dari small blind dan berakhir di button.
-3. **Nomor kursi ≠ posisi.** Kursi 1 secara konvensi adalah kiri langsung dealer dan tak pernah berpindah; posisi berputar setiap tangan. Yang satu adalah alamat, yang lain adalah pekerjaan.
+3. **Nomor kursi ≠ posisi.** Kursi 1 secara konvensi adalah kiri langsung dealer dan tak pernah berpindah; posisi berputar setiap hand. Yang satu adalah alamat, yang lain adalah pekerjaan.
 4. **Ukuran meja mengurangi dari depan.** 6-max membuang kursi-kursi awal; heads-up menyatukan button dengan small blind — pertama aksi preflop, terakhir aksi postflop.
 
 Begitu namanya jadi refleks, keunggulan sesungguhnya datang dari apa yang Anda lakukan dengannya — [cara memainkan setiap posisi](/id/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp"), dari opening range sampai permainan in-position versus out-of-position, adalah bacaan berikutnya. Dari sana, [bagan starting hands](/id/blog/holdem-starting-hands-chart) memetakan tangan persis ke kursi persis, dan [panduan peringkat kartu](/id/blog/holdem-hand-rankings) memutuskan apa yang sebenarnya menang di showdown.
@@ -244,7 +244,7 @@ Begitu namanya jadi refleks, keunggulan sesungguhnya datang dari apa yang Anda l
   <a href="/id/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Panduan Pemula</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Aturan Texas Hold'em untuk Pemula</div>
-    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Bagaimana satu tangan penuh berjalan dari deal sampai showdown</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Bagaimana satu hand penuh berjalan dari deal sampai showdown</div>
   </a>
   <a href="/id/blog/holdem-position-play" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Strategi Posisi</div>

@@ -18,11 +18,11 @@ export const POST: Post = {
   emoji: "🃏",
   tags: ["urutan kartu poker", "urutan kartu poker tertinggi", "susunan kartu poker", "kombinasi kartu poker", "urutan kartu remi poker", "kartu poker tertinggi", "peringkat kartu poker", "tingkatan kartu poker", "urutan kartu poker dari tertinggi sampai terendah"],
   content: `
-Anda heads-up di river. Flush Anda jadi, Anda yakin itu yang terbaik — lalu dealer mendorong pot ke sisi lawan. Meja sudah berpasangan, lawan punya full house, dan Anda sama sekali tak menyangka.
+Anda heads-up di river. Flush Anda jadi, Anda yakin itu yang terbaik — lalu dealer mendorong pot ke sisi lawan. Board sudah berpasangan, lawan punya full house, dan Anda sama sekali tak menyangka.
 
-Hampir setiap momen "saya kira menang" berujung pada hal yang sama: tidak membaca **urutan kartu poker** cukup cepat. Urutannya bisa dihafal dalam lima menit. Yang sulit adalah membacanya langsung, di bawah tekanan, dengan meja yang berpasangan atau terhubung — dan itu jarang dijelaskan dengan baik.
+Hampir setiap momen "saya kira menang" berujung pada hal yang sama: tidak membaca **urutan kartu poker** cukup cepat. Urutannya bisa dihafal dalam lima menit. Yang sulit adalah membacanya langsung, di bawah tekanan, dengan board yang berpasangan atau terhubung — dan itu jarang dijelaskan dengan baik.
 
-Panduan ini menyelesaikan keduanya. Anda akan mendapat urutan lengkap dengan peluang nyata, semua aturan seri, tiga soal meja sungguhan untuk melatih "temukan lima kartu terbaikmu", dan rutinitas 1 detik untuk membaca meja apa pun.
+Panduan ini menyelesaikan keduanya. Anda akan mendapat urutan lengkap dengan peluang nyata, semua aturan seri, tiga soal board sungguhan untuk melatih "temukan lima kartu terbaikmu", dan rutinitas 1 detik untuk membaca board apa pun.
 
 ---
 
@@ -74,7 +74,7 @@ Di Texas Hold'em standar, **tidak ada jenis yang mengalahkan jenis lain**. Sekop
 
 **A♠ K♠ Q♠ J♠ 10♠** — straight flush tertinggi dan tangan terbaik di poker.
 
-Tak bisa dikalahkan; satu-satunya seri yang mungkin adalah royal flush yang seluruhnya ada di meja untuk dipakai bersama semua pemain, sehingga pot dibagi. Muncul kira-kira sekali tiap 31.000 tangan, jadi banyak pemain bertahun-tahun tak pernah mendapatkannya. Saat dapat, satu-satunya tugas Anda adalah memasukkan chip sebanyak mungkin.
+Tak bisa dikalahkan; satu-satunya seri yang mungkin adalah royal flush yang seluruhnya ada di board untuk dipakai bersama semua pemain, sehingga pot dibagi. Muncul kira-kira sekali tiap 31.000 tangan, jadi banyak pemain bertahun-tahun tak pernah mendapatkannya. Saat dapat, satu-satunya tugas Anda adalah memasukkan chip sebanyak mungkin.
 
 ### #2 — Straight Flush
 
@@ -101,7 +101,7 @@ Antara dua four of a kind, nilai lebih tinggi menang. Jika keempatnya ada *di me
 Bandingkan **three of a kind dulu**: QQQ55 menang atas JJJ99 karena Q di atas J, berapa pun besar pasangannya. Pasangan baru dibandingkan kalau three of a kind seri.
 
 > **"Cooler" paling umum**
-> Setiap kali meja berpasangan, cari full house sebelum yakin dengan flush atau straight. "Flush tertinggiku kalah dari full house" adalah bad beat paling sering di Hold'em.
+> Setiap kali board berpasangan, cari full house sebelum yakin dengan flush atau straight. "Flush tertinggiku kalah dari full house" adalah bad beat paling sering di Hold'em.
 
 ### #5 — Flush
 
@@ -131,8 +131,8 @@ Antara dua straight, yang kartu tertingginya menang.
 
 Ada dua cara membentuknya, dan bedanya penting:
 
-- **Set:** sepasang di tangan plus satu kartu meja (mis. Anda pegang J♣ J♠ lalu keluar J♥). Tersembunyi dan berbahaya.
-- **Trips:** sepasang di meja plus satu kartu Anda. Lebih mudah dibaca lawan dan lebih sering dibagi.
+- **Set:** sepasang di tangan plus satu kartu board (mis. Anda pegang J♣ J♠ lalu keluar J♥). Tersembunyi dan berbahaya.
+- **Trips:** sepasang di board plus satu kartu Anda. Lebih mudah dibaca lawan dan lebih sering dibagi.
 
 Set meraup lebih banyak chip karena tak ada yang menyangka.
 
@@ -194,33 +194,33 @@ Sebuah **kicker** hanyalah kartu yang bukan bagian dari tangan jadi tapi memecah
 
 ## Baca meja: 3 soal nyata
 
-![Meja K-K-K-A-2 di meja poker — bisakah Anda menemukan full house sebelum dealer?](/images/holdem-hand-rankings-board-puzzle.webp "Soal membaca meja poker — temukan lima kartu terbaik Anda")
+![Board K-K-K-A-2 di meja poker — bisakah Anda menemukan full house sebelum dealer?](/images/holdem-hand-rankings-board-puzzle.webp "Soal membaca board poker — temukan lima kartu terbaik Anda")
 
 Tahu urutan tidak sama dengan membacanya cepat. Berikut tiga situasi nyata. Tutup jawabannya, temukan lima kartu terbaik dari tujuh, lalu cek.
 
 ### Soal 1 — Full house tersembunyi
 
-:::hand[A♠,A♦,K♥,K♣,Q♠] Meja (5 kartu):::
+:::hand[A♠,A♦,K♥,K♣,Q♠] Board (5 kartu):::
 
 Anda pegang **Q♥ Q♦**. Apa tangan terbaik Anda?
 
-→ Meja sudah memperlihatkan two pair (A-A dan K-K). Dua Q Anda plus Q♠ di meja membentuk **three of a kind Q**, dan bersama pasangan As di meja Anda dapat **full house — QQQ + AA**. Itu lima kartu terbaik Anda. Pemula tersangkut di "bukankah AAKK + Q itu cuma two pair?" — bukan. Begitu Anda punya three of a kind, Anda pakai full house-nya. **Full house menang atas two pair.**
+→ Board sudah memperlihatkan two pair (A-A dan K-K). Dua Q Anda plus Q♠ di board membentuk **three of a kind Q**, dan bersama pasangan As di board Anda dapat **full house — QQQ + AA**. Itu lima kartu terbaik Anda. Pemula tersangkut di "bukankah AAKK + Q itu cuma two pair?" — bukan. Begitu Anda punya three of a kind, Anda pakai full house-nya. **Full house menang atas two pair.**
 
 ### Soal 2 — Flush yang ternyata lebih kuat
 
-:::hand[7♥,8♥,9♥,10♥,J♠] Meja (5 kartu):::
+:::hand[7♥,8♥,9♥,10♥,J♠] Board (5 kartu):::
 
-Anda pegang **6♥ 2♣**. Meja punya empat hati.
+Anda pegang **6♥ 2♣**. Board punya empat hati.
 
 → 6♥ Anda adalah hati kelima, jadi Anda berpikir "flush". Tapi lihat urutannya: **10♥ 9♥ 8♥ 7♥ 6♥** adalah lima hati *berurutan* — sebuah **straight flush ber-10**, tangan #2. (Ganti 6♥ itu dengan K♥ dan kartu hatinya jadi 7-8-9-10-K — tidak lagi terhubung, sehingga turun jadi flush biasa ber-K.) Selalu cek apakah kartu flush Anda juga *berurutan* sebelum mengira itu cuma flush.
 
 ### Soal 3 — Saat harus berbagi
 
-:::hand[K♠,K♦,K♥,A♠,2♠] Meja (5 kartu):::
+:::hand[K♠,K♦,K♥,A♠,2♠] Board (5 kartu):::
 
-Anda pegang **A♥ 3♣**. Meja sudah membawa three of a kind K.
+Anda pegang **A♥ 3♣**. Board sudah membawa three of a kind K.
 
-→ A♥ Anda berpasangan dengan A♠ di meja dan memberi **full house, KKK + AA**. Tapi kalau lawan juga punya satu As — dan bukan K terakhir — ia punya full house yang *sama* dan pot dibagi. Hanya dua hal yang masih mengalahkan Anda: pocket A-A membentuk full house lebih besar (aces full), dan K terakhir (K♣) membentuk **four of a kind K** apa pun kartu keduanya — A♠ di meja sudah jadi kicker-nya. Kalau ia tak punya As maupun K itu, full house Anda menang. Pelajarannya: saat meja yang mengerjakan hampir semuanya, tangan Anda sering hanya bernilai satu kartu ekstra.
+→ A♥ Anda berpasangan dengan A♠ di board dan memberi **full house, KKK + AA**. Tapi kalau lawan juga punya satu As — dan bukan K terakhir — ia punya full house yang *sama* dan pot dibagi. Hanya dua hal yang masih mengalahkan Anda: pocket A-A membentuk full house lebih besar (aces full), dan K terakhir (K♣) membentuk **four of a kind K** apa pun kartu keduanya — A♠ di board sudah jadi kicker-nya. Kalau ia tak punya As maupun K itu, full house Anda menang. Pelajarannya: saat board yang mengerjakan hampir semuanya, tangan Anda sering hanya bernilai satu kartu ekstra.
 
 ---
 
@@ -246,19 +246,19 @@ Ia juga menjelaskan pengecualian besar yang akan Anda temui: di **Short Deck (6+
 
 ---
 
-## Rutinitas 1 detik membaca meja
+## Rutinitas 1 detik membaca board
 
-![Infografik meja komunitas berpasangan 9♥ Q♥ 9♠ 8♣ 7♠ — membaca pasangan dan kemungkinan straight untuk menemukan lima kartu terbaik](/images/holdem-hand-rankings-board-read.webp "Cara membaca meja poker dengan cepat — jenis, straight, pasangan berurutan")
+![Infografik board berpasangan 9♥ Q♥ 9♠ 8♣ 7♠ — membaca pasangan dan kemungkinan straight untuk menemukan lima kartu terbaik](/images/holdem-hand-rankings-board-read.webp "Cara membaca board poker dengan cepat — jenis, straight, pasangan berurutan")
 
-Saat waktu mepet, periksa ini berurutan setiap meja lengkap:
+Saat waktu mepet, periksa ini berurutan setiap board lengkap:
 
-**1. Jenis dulu** — apakah ada tiga kartu atau lebih satu jenis di meja? Jika ya, flush mungkin. Lihat jenis Anda.
+**1. Jenis dulu** — apakah ada tiga kartu atau lebih satu jenis di board? Jika ya, flush mungkin. Lihat jenis Anda.
 
 **2. Lalu koneksi** — apakah ada kartu berdekatan nilainya (seperti 8-9-10)? Jika ya, straight hidup.
 
-**3. Terakhir pasangan** — apakah meja berpasangan? Jika ya, full house dan four of a kind mungkin, dan flush atau straight Anda bisa dalam bahaya.
+**3. Terakhir pasangan** — apakah board berpasangan? Jika ya, full house dan four of a kind mungkin, dan flush atau straight Anda bisa dalam bahaya.
 
-Pemain terlatih membaca meja dengan urutan ini — bahaya dulu (flush/straight di meja), lalu apakah meja berpasangan (yang mengancam segalanya). Bangun kebiasaan ini dan Anda berhenti membayar sembarangan di river.
+Pemain terlatih membaca board dengan urutan ini — bahaya dulu (flush/straight di board), lalu apakah board berpasangan (yang mengancam segalanya). Bangun kebiasaan ini dan Anda berhenti membayar sembarangan di river.
 
 ---
 
@@ -346,11 +346,11 @@ A. Di Hold'em, tidak — Anda membentuk lima terbaik dari kombinasi mana pun dar
 
 **Q. Apa beda set dan trips?**
 
-A. Keduanya three of a kind. *Set* adalah sepasang di tangan plus satu kartu meja (tersembunyi rapi); *trips* adalah sepasang di meja plus satu kartu Anda (lebih mudah dibaca). Set meraup lebih banyak chip.
+A. Keduanya three of a kind. *Set* adalah sepasang di tangan plus satu kartu board (tersembunyi rapi); *trips* adalah sepasang di board plus satu kartu Anda (lebih mudah dibaca). Set meraup lebih banyak chip.
 
 **Q. Apa tangan terbaik di poker?**
 
-A. Royal Flush (A-K-Q-J-10 satu jenis). Tak bisa dikalahkan — satu-satunya "seri" adalah royal flush yang seluruhnya ada di meja untuk dipakai bersama semua pemain, sehingga pot dibagi.
+A. Royal Flush (A-K-Q-J-10 satu jenis). Tak bisa dikalahkan — satu-satunya "seri" adalah royal flush yang seluruhnya ada di board untuk dipakai bersama semua pemain, sehingga pot dibagi.
 
 **Q. Apakah three of a kind lebih baik dari two pair?**
 
@@ -389,10 +389,10 @@ A. Tidak ada. Simbol — di artikel ini disebut jenis kartu — tidak punya urut
 ## 3 hal yang harus diingat
 
 1. **Urutannya:** Royal Flush > Straight Flush > Four of a Kind > Full House > Flush > Straight > Three of a Kind > Two Pair > Pair > High Card.
-2. **Jebakannya:** flush (#5) menang atas straight (#6) — dan meja berpasangan mana pun bisa menyembunyikan full house yang menang atas keduanya.
+2. **Jebakannya:** flush (#5) menang atas straight (#6) — dan board berpasangan mana pun bisa menyembunyikan full house yang menang atas keduanya.
 3. **Kenyataannya:** sebagian besar pot dimenangkan dengan pair atau high card, jadi kicker Anda lebih berharga dari yang Anda kira.
 
-Pelajari urutannya dalam satu sore, latih duel-duel membingungkan, dan jalankan pindaian "flush → straight → pasangan" di tiap meja. Lakukan itu dan Anda tak akan pernah lagi mendorong pot ke sisi yang salah.
+Pelajari urutannya dalam satu sore, latih duel-duel membingungkan, dan jalankan pindaian "flush → straight → pasangan" di tiap board. Lakukan itu dan Anda tak akan pernah lagi mendorong pot ke sisi yang salah.
 
 Setelah tahu peringkatnya, langkah alami berikutnya adalah tahu tangan mana yang layak dimainkan — pakai [tabel starting hands Texas Hold'em berdasarkan posisi](/id/blog/holdem-starting-hands-chart) untuk melihat persis kartu awal mana yang dimainkan dari tiap kursi.
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Blinds adalah taruhan wajib yang dipasang sebelum kartu dibagikan. Small Blind duduk di kiri tombol dealer dan Big Blind di kirinya lagi; Big Blind — biasanya dua kali lipat Small Blind — adalah satuan taruhan di meja.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-09-22",
+  updated: "2026-09-24",
   masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "9 menit",
@@ -56,7 +56,7 @@ Kursi ini juga terkenal sebagai kursi paling sulit di meja: Anda sudah membayar 
 
 ## Apa Itu Big Blind?
 
-**Big Blind (BB)** adalah **taruhan dasar penuh**, dipasang oleh pemain tepat **di kiri Small Blind**. Di game $1/$2, Big Blind-nya $2. Kalau tidak ada yang raise sebelum flop, Big Blind mendapat keistimewaan khusus — **"option"** untuk [cek dan melihat flop gratis](/id/blog/holdem-betting-actions).
+**Big Blind (BB)** adalah **taruhan dasar penuh**, dipasang oleh pemain tepat **di kiri Small Blind**. Di game $1/$2, Big Blind-nya $2. Kalau tidak ada yang raise sebelum flop, Big Blind mendapat keistimewaan khusus — **"option"** untuk [check dan melihat flop gratis](/id/blog/holdem-betting-actions).
 
 Orang mencari "big blind" secara terpisah bukan tanpa alasan: dia bukan sekadar kursi, dia adalah ==**tolok ukur** untuk seluruh permainan==.
 
@@ -166,9 +166,9 @@ A. Sebelum flop, Small Blind bertindak kedua dari terakhir dan Big Blind paling 
 
 A. Biasanya iya, tapi tidak selalu — beberapa struktur (seperti $1/$3 atau $2/$5) tidak terbagi rata, jadi selalu cek stakes sebelum Anda duduk.
 
-**Q. Kalau tidak ada yang raise, apakah Big Blind boleh langsung cek?**
+**Q. Kalau tidak ada yang raise, apakah Big Blind boleh langsung check?**
 
-A. Boleh — itulah "option" milik Big Blind. Kalau semua hanya call, Big Blind bisa cek dan melihat flop gratis, atau raise kalau kartunya kuat.
+A. Boleh — itulah "option" milik Big Blind. Kalau semua hanya call, Big Blind bisa check dan melihat flop gratis, atau raise kalau kartunya kuat.
 
 **Q. Boleh fold setelah memasang blind?**
 

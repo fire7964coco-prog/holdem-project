@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Dari 169 tipe starting hand, hanya irisan atas kecil — sekitar 15–20% kartu yang Anda terima — yang profit untuk pemula. Pair besar (AA–TT) dan AK raise dari kursi mana pun; makin belakang Anda beraksi, makin lebar Anda open — dari ~13% di under the gun hingga ~43% di button (lebih lebar lagi di 6-max). Mulai dengan chart sederhana, tambahkan chart preflop GTO setelah raise-or-fold jadi otomatis.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-09-19",
+  updated: "2026-09-24",
   masterUpdated: "2026-09-17",
   keepImagesInBody: true,
   readTime: "10 mnt",
@@ -129,7 +129,7 @@ Tangan yang terlihat kuat tapi jadi fold atau marginal dari UTG:
 
 ### Posisi belakang (cutoff dan button): range paling lebar
 
-Button adalah kursi terbaik di poker. ==g:Anda beraksi terakhir di flop, turn, dan river setiap tangan.== Keunggulan itu membuat Anda bisa menambahkan secara profit:
+Button adalah kursi terbaik di poker. ==g:Anda beraksi terakhir di flop, turn, dan river setiap hand.== Keunggulan itu membuat Anda bisa menambahkan secara profit:
 
 - **Pocket pair kecil (22–66)** — berharap flop sebuah set
 - **Suited ace apa pun (A2s–A9s)** — potensi nut flush draw
@@ -213,7 +213,7 @@ Chart hanya berguna jika ada di depan Anda saat penting. Untuk home game dan ses
 
 **[Unduh chart starting hands poker gratis yang bisa dicetak (PDF)](/downloads/poker-starting-hands-chart.pdf)** — satu halaman: chart open 9-max lengkap plus penyesuaian 6-max satu baris, format cheat-sheet. Cetak, atau biarkan terbuka di ponsel Anda di antara tangan.
 
-Lalu benar-benar pakai chart itu di setiap tangan, untuk 20+ sesi pertama Anda:
+Lalu benar-benar pakai chart itu di setiap hand, untuk 20+ sesi pertama Anda:
 
 :::steps
 Cek posisi Anda dulu | Sebelum melihat kartu Anda, catat di mana Anda duduk relatif terhadap button

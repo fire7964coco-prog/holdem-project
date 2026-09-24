@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Flush (lima kartu satu jenis — sekitar 0,197% dari pembagian lima kartu) selalu mengalahkan straight (lima kartu berurutan, sekitar 0,392%) di Texas Hold'em — karena flush lebih langka: sepanjang tujuh kartu sampai river, 3,03% berbanding 4,62% untuk straight.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-11",
+  updated: "2026-09-24",
   masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "11 mnt",
@@ -78,19 +78,19 @@ Straight hanya butuh lima rank berurutan, dan ==**jenisnya tidak penting**==. Ke
 
 ## 3 Situasi Meja yang Masih Mengecoh Pemain
 
-![Meja menunjukkan 8♥ 7♥ 6♥ 5♠ A♣ — tiga hati di meja berarti flush hidup meski Anda pegang straight](/images/holdem-flush-vs-straight-board.webp "Tiga kartu satu jenis di meja — flush draw hidup melawan straight Anda")
+![Board menunjukkan 8♥ 7♥ 6♥ 5♠ A♣ — tiga hati di board berarti flush hidup meski Anda pegang straight](/images/holdem-flush-vs-straight-board.webp "Tiga kartu satu jenis di board — flush draw hidup melawan straight Anda")
 
-Tahu aturannya tidak sama dengan membacanya secara live — keterampilan itulah yang dilatih oleh [membaca meja](/id/blog/holdem-reading-the-board). Inilah tiga situasi di mana kesalahan itu benar-benar terjadi.
+Tahu aturannya tidak sama dengan membacanya secara live — keterampilan itulah yang dilatih oleh [membaca board](/id/blog/holdem-reading-the-board). Inilah tiga situasi di mana kesalahan itu benar-benar terjadi.
 
-### Situasi 1 — Anda membentuk straight, tapi meja punya tiga kartu sejenis
+### Situasi 1 — Anda membentuk straight, tapi board punya tiga kartu sejenis
 
-:::hand[8♥,7♥,6♥,5♠,A♣] Meja (5 kartu):::
+:::hand[8♥,7♥,6♥,5♠,A♣] Board (5 kartu):::
 
-Anda pegang **9♠ 10♠** untuk **straight 6-7-8-9-10** yang bersih. Terasa kuat — tapi meja menunjukkan **tiga hati**. Kalau lawan Anda pegang dua hati, mereka punya flush, dan **flush mengalahkan straight**. Setiap kali ada tiga kartu atau lebih satu jenis di meja, flush itu hidup; sesuaikan taruhan dan call Anda dengan itu.
+Anda pegang **9♠ 10♠** untuk **straight 6-7-8-9-10** yang bersih. Terasa kuat — tapi board menunjukkan **tiga hati**. Kalau lawan Anda pegang dua hati, mereka punya flush, dan **flush mengalahkan straight**. Setiap kali ada tiga kartu atau lebih satu jenis di board, flush itu hidup; sesuaikan taruhan dan call Anda dengan itu.
 
 ### Situasi 2 — Straight yang sudah jadi dengan flush draw di atasnya
 
-:::hand[8♥,7♥,6♠,2♣] Meja (4 kartu, turn):::
+:::hand[8♥,7♥,6♠,2♣] Board (4 kartu, turn):::
 
 Anda pegang **9♥ 5♥**. Anda sudah punya **straight 5-6-7-8-9** — jadi kenapa masih mengincar hati? Karena Anda juga pegang **empat kartu menuju flush** (9♥ 8♥ 7♥ 5♥): hati apa pun di river meng-upgrade straight Anda jadi flush, dan **6♥ secara spesifik** menyempurnakan **straight flush 5-6-7-8-9 (#2)** yang menghancurkan segalanya. Ketika Anda bisa menarik ke tangan lebih besar secara gratis, mainkan dengan upgrade itu dalam pikiran.
 
@@ -98,7 +98,7 @@ Anda pegang **9♥ 5♥**. Anda sudah punya **straight 5-6-7-8-9** — jadi kena
 
 ### Situasi 3 — Anda punya flush, mereka membuka straight
 
-:::hand[J♠,9♠,7♠,4♣,2♦] Meja (5 kartu):::
+:::hand[J♠,9♠,7♠,4♣,2♦] Board (5 kartu):::
 
 Anda pegang **A♠ 6♠** → **A♠ J♠ 9♠ 7♠ 6♠**, sebuah flush ber-As. Lawan Anda menunjukkan **10♥ 8♦** untuk straight 7-8-9-10-J dan mengumumkannya dengan percaya diri. Jangan ragu: flush Anda lebih tinggi. Flush di atas straight, selalu.
 
@@ -117,11 +117,11 @@ Royal flush (#1) | One pair & high card (#9–#10)
 Flush yang lebih tinggi | Flush mana pun yang lebih rendah
 :::
 
-Duel yang paling sering diperdebatkan orang setelah flush vs straight adalah **flush vs full house** — dan full house-nya yang menang. Tanda bahayanya adalah **meja yang berpasangan**. Perhatikan yang ini:
+Duel yang paling sering diperdebatkan orang setelah flush vs straight adalah **flush vs full house** — dan full house-nya yang menang. Tanda bahayanya adalah **board yang berpasangan**. Perhatikan yang ini:
 
-:::hand[K♠,9♠,9♥,4♠,2♦] Meja (5 kartu):::
+:::hand[K♠,9♠,9♥,4♠,2♦] Board (5 kartu):::
 
-Anda pegang **A♠ 5♠** untuk nut flush: **A♠ K♠ 9♠ 5♠ 4♠**. Lawan Anda pegang **K♦ 9♦** dan membuka **9♦ 9♠ 9♥ K♦ K♠** — nines full of kings. ==r:Full house mengalahkan flush==, dan tak ada flush yang selamat dari itu. Di meja yang tidak berpasangan, flush ber-As Anda hanya kalah dari straight flush; begitu meja berpasangan, full house dan four of a kind masuk ke gambaran.
+Anda pegang **A♠ 5♠** untuk nut flush: **A♠ K♠ 9♠ 5♠ 4♠**. Lawan Anda pegang **K♦ 9♦** dan membuka **9♦ 9♠ 9♥ K♦ K♠** — nines full of kings. ==r:Full house mengalahkan flush==, dan tak ada flush yang selamat dari itu. Di board yang tidak berpasangan, flush ber-As Anda hanya kalah dari straight flush; begitu board berpasangan, full house dan four of a kind masuk ke gambaran.
 
 Ketika dua pemain punya *jenis tangan yang sama*, pemenangnya ditentukan lewat perbandingan kartu demi kartu — sistem lengkapnya ada di [aturan seri dan kicker poker](/id/blog/holdem-tiebreak-rules).
 
@@ -129,14 +129,14 @@ Ketika dua pemain punya *jenis tangan yang sama*, pemenangnya ditentukan lewat p
 
 ## Flush vs Flush, Straight vs Straight — Siapa yang Menang Serinya?
 
-Ya, satu flush benar-benar bisa lebih tinggi dari flush lain. **Jenis kartu tidak relevan** — bandingkan kelima kartu dari atas ke bawah, tertinggi dulu. Di meja **J♠ 9♠ 6♠ 2♠ 7♦**, Pemain A pegang A♠ dan Pemain B pegang K♠:
+Ya, satu flush benar-benar bisa lebih tinggi dari flush lain. **Jenis kartu tidak relevan** — bandingkan kelima kartu dari atas ke bawah, tertinggi dulu. Di board **J♠ 9♠ 6♠ 2♠ 7♦**, Pemain A pegang A♠ dan Pemain B pegang K♠:
 
 | Pemain | Flush | Hasil |
 |--------|------|------|
 | A (dengan A♠) | A♠ J♠ 9♠ 6♠ 2♠ | **Menang** |
 | B (dengan K♠) | K♠ J♠ 9♠ 6♠ 2♠ | Kalah |
 
-As Pemain A mengalahkan king Pemain B di kartu pertama, jadi A menang. Perhatikan: kedua flush memakai empat sekop yang sama dari meja — di Hold'em, flush yang saling berhadapan selalu satu jenis, karena meja tak punya ruang untuk dua jenis dengan tiga kartu masing-masing. Dan bahkan di permainan yang memungkinkan flush beda jenis, sekop tidak mengalahkan hati: hanya nilai yang menentukan.
+As Pemain A mengalahkan king Pemain B di kartu pertama, jadi A menang. Perhatikan: kedua flush memakai empat sekop yang sama dari board — di Hold'em, flush yang saling berhadapan selalu satu jenis, karena board tak punya ruang untuk dua jenis dengan tiga kartu masing-masing. Dan bahkan di permainan yang memungkinkan flush beda jenis, sekop tidak mengalahkan hati: hanya nilai yang menentukan.
 
 Straight bahkan lebih sederhana: bandingkan **kartu tertinggi** saja — tak ada kicker.
 
@@ -158,7 +158,7 @@ Queen mengalahkan jack, jadi A menang. Kalau lima kartu terbaik kedua pemain ide
 
 Sebuah **straight flush** adalah lima kartu *berurutan* dari *satu jenis* — seperti 9♥ 8♥ 7♥ 6♥ 5♥. Ini adalah **tangan #2 di poker**, hanya bisa dikalahkan oleh royal flush (yang sebenarnya hanyalah straight flush ber-As, A-K-Q-J-10 satu jenis). Dengan hanya **36 kombinasi** dari 2.598.960 tangan lima-kartu (~0,00139%; sampai river di Hold'em, sekitar 0,028%), straight flush lebih langka dari segalanya kecuali royal itu sendiri.
 
-Jebakannya: ==*lima kartu yang sama* harus sekaligus satu jenis dan berurutan==. Perhatikan bedanya di meja **8♥ 7♥ 6♥ Q♠ 3♦**:
+Jebakannya: ==*lima kartu yang sama* harus sekaligus satu jenis dan berurutan==. Perhatikan bedanya di board **8♥ 7♥ 6♥ Q♠ 3♦**:
 
 - Pegang **K♥ 2♥** → lima hati Anda adalah K-8-7-6-2. Tidak berurutan — itu ==flush biasa, bukan straight flush==.
 - Pegang **10♥ 9♥** → lima hati Anda adalah 10-9-8-7-6. Berurutan *dan* satu jenis — ==g:straight flush 10-high==.
@@ -206,7 +206,7 @@ A. Ya. Dua flush dibandingkan kartu demi kartu dari atas ke bawah, jadi flush be
 
 **Q. Apakah jenis flush penting?**
 
-A. Tidak. Texas Hold'em tidak punya peringkat jenis. Jenis hanya penting untuk *membentuk* flush, tak pernah untuk membandingkan tangan — ketika dua flush bertabrakan (selalu jenis yang sama di Hold'em, karena berbagi kartu meja), hanya rank yang menentukan, dan rank yang identik membagi pot.
+A. Tidak. Texas Hold'em tidak punya peringkat jenis. Jenis hanya penting untuk *membentuk* flush, tak pernah untuk membandingkan tangan — ketika dua flush bertabrakan (selalu jenis yang sama di Hold'em, karena berbagi kartu board), hanya rank yang menentukan, dan rank yang identik membagi pot.
 
 **Q. Bisakah flush dan straight seri atau membagi pot?**
 
@@ -226,7 +226,7 @@ A. Royal flush artinya straight flush tertinggi: A-K-Q-J-10 dalam satu jenis. In
 
 1. **Flush (#5) mengalahkan straight (#6)** — tanpa pengecualian di Hold'em standar.
 2. Ia menang karena lebih langka: **5.108** kombinasi flush berbanding **10.200** kombinasi straight di antara tangan lima-kartu — dan 3,03% berbanding 4,62% sepanjang tujuh kartu sampai river.
-3. Perhatikan meja: **tiga kartu satu jenis** berarti flush hidup, **meja yang berpasangan** berarti full house bisa mengalahkan flush Anda, dan satu jenis *plus* berurutan adalah straight flush.
+3. Perhatikan board: **tiga kartu satu jenis** berarti flush hidup, **board yang berpasangan** berarti full house bisa mengalahkan flush Anda, dan satu jenis *plus* berurutan adalah straight flush.
 
 Kunci urutan lengkapnya dengan [urutan kartu poker lengkap](/id/blog/holdem-hand-rankings), pelajari bagaimana tangan-tangan berdekatan diputuskan di [panduan seri dan kicker](/id/blog/holdem-tiebreak-rules), dan kalau Anda benar-benar baru, [panduan pemula aturan Texas Hold'em](/id/blog/texas-holdem-rules-for-beginners) merangkai semuanya jadi satu.
 

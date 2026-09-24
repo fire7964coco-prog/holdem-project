@@ -39,7 +39,7 @@ bet ÷ (pot + bet) | Persen fold yang dibutuhkan bluff murni
 
 **Equity adalah bagian Anda dari pot — porsi yang rata-rata jatuh ke tangan Anda jika tangan dimainkan sampai showdown, dengan pot seri dihitung proporsional.** Jika pot $100 dan 60% darinya menjadi hak Anda, tangan Anda bernilai ==$60 saat ini==, meski chip belum didorong ke mana pun.
 
-Bayangkan sebagai potongan kue Anda. Setiap tangan yang masih hidup punya potongan; potongan-potongan itu selalu berjumlah 100%. Saat Anda heads-up dan 70% untuk menang pot $200, ==g:$140 di antaranya "milik Anda"== dalam jangka panjang — di satu tangan Anda menang seluruhnya atau kalah seluruhnya, bukan membawa pulang 70% dari pot ini; tapi di seribu situasi identik, itulah bagian yang Anda kumpulkan.
+Bayangkan sebagai potongan kue Anda. Setiap tangan yang masih hidup punya potongan; potongan-potongan itu selalu berjumlah 100%. Saat Anda heads-up dan 70% untuk menang pot $200, ==g:$140 di antaranya "milik Anda"== dalam jangka panjang — di satu hand Anda menang seluruhnya atau kalah seluruhnya, bukan membawa pulang 70% dari pot ini; tapi di seribu situasi identik, itulah bagian yang Anda kumpulkan.
 
 Itulah alasan equity penting: ia mengubah "apakah saya unggul?" menjadi "berapa bagian pot ini yang saya miliki?" — dan itulah angka yang Anda bandingkan dengan harga sebuah call.
 
@@ -92,11 +92,11 @@ Tapi inilah jebakan yang hampir setiap panduan lewatkan: **"equity Anda sama den
 
 ## Fold Equity: Cara Memenangkan Pot Saat Tangan Anda Tertinggal
 
-**Fold equity adalah equity tambahan yang Anda dapat dari kemungkinan lawan fold — itulah kenapa sebuah taruhan bisa memenangkan pot yang tangan Anda sendiri akan kalah.** Saat Anda bertaruh, Anda punya dua cara menang: lawan fold sekarang, atau mereka call dan Anda menang di showdown. Cek hanya memberi Anda cara kedua.
+**Fold equity adalah equity tambahan yang Anda dapat dari kemungkinan lawan fold — itulah kenapa sebuah taruhan bisa memenangkan pot yang tangan Anda sendiri akan kalah.** Saat Anda bertaruh, Anda punya dua cara menang: lawan fold sekarang, atau mereka call dan Anda menang di showdown. Check hanya memberi Anda cara kedua.
 
 :::compare
-Bertaruh (agresi) | Cek atau call (pasif)
-Mereka fold sekarang → Anda menang pot | Tanpa fold equity — tak ada yang fold pada cek
+Bertaruh (agresi) | Check atau call (pasif)
+Mereka fold sekarang → Anda menang pot | Tanpa fold equity — tak ada yang fold pada check
 Mereka call dan Anda kena → Anda menang | Anda kena → Anda menang
 ==g:Dua cara menang== | ==r:Satu cara menang==
 :::

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Di Texas Hold'em, setiap pemain menerima 2 hole cards, ada 5 kartu bersama di tengah meja, dan tangan poker 5 kartu terbaik menang setelah empat ronde taruhan.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-19",
+  updated: "2026-09-24",
   masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "14 menit",
@@ -56,7 +56,7 @@ Fakta kunci:
 
 Aturan dasar Texas Hold'em itu sederhana begitu Anda melihat urutan jalannya di meja.
 
-Setiap tangan dimulai dengan tombol dealer. Dua pemain di kiri tombol memasang taruhan wajib yang disebut **small blind** dan **big blind** — kalau ini terasa membingungkan, baca [apa itu blind dan cara kerja small blind dan big blind](/id/blog/holdem-blind-meaning). Setelah itu, setiap pemain menerima dua kartu tertutup. Inilah hole cards Anda.
+Setiap hand dimulai dengan tombol dealer. Dua pemain di kiri tombol memasang taruhan wajib yang disebut **small blind** dan **big blind** — kalau ini terasa membingungkan, baca [apa itu blind dan cara kerja small blind dan big blind](/id/blog/holdem-blind-meaning). Setelah itu, setiap pemain menerima dua kartu tertutup. Inilah hole cards Anda.
 
 Berikutnya, dealer membuka lima kartu bersama di tengah meja:
 
@@ -90,7 +90,7 @@ Kalau peringkat kartu poker masih terasa asing, buka dulu [peringkat kartu Texas
 
 Cara main poker Texas Hold'em pada dasarnya begini: setiap pemain menerima 2 hole cards, dua pemain memasang blind lebih dulu, lalu 5 kartu bersama dibuka bertahap (3, lalu 1, lalu 1) dengan satu ronde taruhan setelah tiap tahap — dan kombinasi 5 kartu terbaik menang di showdown.
 
-Artikel ini memberi Anda **versi pemula dari alur permainan** supaya Anda bisa duduk di meja tanpa panik. Kalau Anda mau panduan lebih dalam street demi street dengan satu tangan lengkap, urutan taruhan, dan contoh, lanjutkan ke [urutan main Texas Hold'em](/id/blog/holdem-game-order "thumb:/images/blog-holdem-game-flow.webp").
+Artikel ini memberi Anda **versi pemula dari alur permainan** supaya Anda bisa duduk di meja tanpa panik. Kalau Anda mau panduan lebih dalam street demi street dengan satu hand lengkap, urutan taruhan, dan contoh, lanjutkan ke [urutan main Texas Hold'em](/id/blog/holdem-game-order "thumb:/images/blog-holdem-game-flow.webp").
 
 | Urutan | Tahap | Yang perlu diingat pemula |
 |------:|-------|--------------------------------|
@@ -446,9 +446,9 @@ A. Satu dek 52 kartu untuk seluruh meja, dan setiap pemain hanya memegang 2 kart
 
 A. No-Limit berarti taruhan Anda di ronde taruhan mana pun bisa dari sebesar big blind sampai seluruh chip Anda — batas atasnya adalah gerakan "all-in". Ini format default dan paling populer, termasuk di Main Event WSOP. Limit Hold'em membatasi tiap taruhan ke ukuran tetap, dan Pot-Limit membatasi taruhan Anda ke ukuran pot saat itu.
 
-**Q. Berapa lama satu tangan Texas Hold'em berlangsung?**
+**Q. Berapa lama satu hand Texas Hold'em berlangsung?**
 
-A. Di meja live, satu tangan biasanya memakan waktu sekitar 30 detik sampai 2 menit, meskipun pot besar dengan banyak pemain dan keputusan sulit bisa berjalan beberapa menit. Sesi santai di rumah selama beberapa jam bisa memainkan puluhan tangan, jadi tidak ada yang harus menghabiskan semalaman untuk satu pembagian kartu.
+A. Di meja live, satu hand biasanya memakan waktu sekitar 30 detik sampai 2 menit, meskipun pot besar dengan banyak pemain dan keputusan sulit bisa berjalan beberapa menit. Sesi santai di rumah selama beberapa jam bisa memainkan puluhan hand, jadi tidak ada yang harus menghabiskan semalaman untuk satu pembagian kartu.
 
 ---
 

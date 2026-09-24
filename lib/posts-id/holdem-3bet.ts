@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "3-bet adalah re-raise pertama sebelum flop — disebut 3-bet karena big blind adalah taruhan pertama, open-raise yang kedua, dan re-raise Anda yang ketiga. Value-3-bet inti yang ketat (QQ+, AK) plus beberapa bluff blocker suited seperti A5s, ukur sekitar 3x dari open in position dan 4x out of position, dan jaga frekuensi 3-bet keseluruhan Anda dekat 6–10%. Saat Andalah yang menghadapi 3-bet, 4-bet tangan premium Anda, call tangan yang bermain baik, dan fold sisanya — fold lebih banyak daripada 'balanced' melawan pemain stake rendah yang tak pernah bluff.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-22",
+  updated: "2026-09-24",
   masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "16 mnt",
@@ -44,7 +44,7 @@ Jadi kenapa disebut *tiga*-bet padahal itu baru raise kedua? Karena namanya meng
 - **5-bet** — re-raise di atas 4-bet. Pada 100 big blind ini biasanya all-in.
 - **Cold 4-bet** — 4-bet dari seseorang yang belum raise sebelumnya (mis. UTG membuka, Anda 3-bet, button meng-4-bet "cold"). Ia meneriakkan kekuatan.
 
-Itulah seluruh tangganya. Segala hal lain di panduan ini adalah tentang anak tangga pertama — kapan memanjatinya, seberapa jauh, dan apa yang harus dilakukan saat seseorang memanjatnya pada Anda. Jika [aksi taruhan](/id/blog/holdem-betting-actions) dasar cek, call, dan raise masih kabur, mulai dari sana dan kembali lagi.
+Itulah seluruh tangganya. Segala hal lain di panduan ini adalah tentang anak tangga pertama — kapan memanjatinya, seberapa jauh, dan apa yang harus dilakukan saat seseorang memanjatnya pada Anda. Jika [aksi taruhan](/id/blog/holdem-betting-actions) dasar check, call, dan raise masih kabur, mulai dari sana dan kembali lagi.
 
 ---
 

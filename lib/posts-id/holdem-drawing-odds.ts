@@ -109,7 +109,7 @@ Ketiga hitungan ini memakai kartu yang diketahui dan sisa tarikan yang berbeda:
 
 </div>
 
-Jadi kalimat jujurnya: dua kartu suited flop **draw** jauh lebih sering daripada flush jadi, dan draw itu 35% untuk sampai di sana — 1,9:1 melawan, jadi lebih dekat ke satu dari tiga daripada ke lempar koin. Mengejar setiap tangan suited "demi flush" mengabaikan bahwa Anda akan flop flush jadi kurang dari sekali per 100 tangan.
+Jadi kalimat jujurnya: dua kartu suited flop **draw** jauh lebih sering daripada flush jadi, dan draw itu 35% untuk sampai di sana — 1,9:1 melawan, jadi lebih dekat ke satu dari tiga daripada ke lempar koin. Mengejar setiap tangan suited "demi flush" mengabaikan bahwa Anda akan flop flush jadi kurang dari sekali per 100 hand.
 
 Angka penyelesaian terpecah per street, yang penting begitu masih ada taruhan tersisa:
 
@@ -173,7 +173,7 @@ Angka full house menghitung setiap cara flop memberi Anda full house dengan pock
 | Pocket aces (pair spesifik) | 220:1 · 0,45% | 6 ÷ 1.326 |
 | Pocket pair apa pun | 16:1 · 5,9% | 78 ÷ 1.326 |
 | A-K suited | 331:1 · 0,3% | 4 ÷ 1.326 |
-| Dua kartu suited | 3,25:1 · 23,5% | hampir setiap tangan ke-4 |
+| Dua kartu suited | 3,25:1 · 23,5% | kira-kira 1 dari 4 hand |
 
 </div>
 

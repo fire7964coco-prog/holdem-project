@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Satu hand Texas Hold'em berjalan begini: pasang blinds → bagikan dua kartu tertutup → preflop → flop (3 kartu) → turn (1 kartu) → river (1 kartu) → showdown, dengan total empat ronde taruhan.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-09-22",
+  updated: "2026-09-24",
   masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "16 menit",
@@ -44,7 +44,7 @@ Sebelum satu kartu pun keluar, dua hal mengatur meja: **tombol dealer (button)**
 
 **Tombol dealer (si "button", ditandai huruf D)** adalah cakram bundar yang menandai siapa yang "giliran membagi" di hand itu. Meskipun ada dealer khusus (house dealer), button-lah yang menentukan urutan taruhan, dan button itu bergeser satu kursi searah jarum jam setiap selesai satu hand.
 
-**Blinds** adalah taruhan wajib yang dipasang sebelum kartu dibagikan. Tanpa blinds, semua orang bisa cek dan fold gratis; ==g:blinds menaruh uang di tengah dan memberi pemain alasan untuk bertarung==. (Masih asing? Lihat persisnya [cara kerja small blind dan big blind](/id/blog/holdem-blind-meaning).)
+**Blinds** adalah taruhan wajib yang dipasang sebelum kartu dibagikan. Tanpa blinds, semua orang bisa check dan fold gratis; ==g:blinds menaruh uang di tengah dan memberi pemain alasan untuk bertarung==. (Masih asing? Lihat persisnya [cara kerja small blind dan big blind](/id/blog/holdem-blind-meaning).)
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -93,7 +93,7 @@ Sekarang Anda sudah bisa membaca kombinasi lima kartu sungguhan: dua kartu tertu
 
 ![Infografis tiga ronde di Texas Hold'em — flop K♥ 7♦ 2♣, turn 9♠, dan river Q♥](/images/blog-holdem-card-stages.webp "Rondenya: tiga kartu di flop, lalu satu di turn dan satu di river")
 
-Flop juga membuka opsi baru: **cek (check)**. Kalau belum ada yang bertaruh, Anda bisa cek untuk melewatkan giliran tanpa memasukkan chip. Tapi kalau lawan bertaruh setelah Anda cek, Anda harus call, raise, atau fold.
+Flop juga membuka opsi baru: **check**. Kalau belum ada yang bertaruh, Anda bisa check untuk melewatkan giliran tanpa memasukkan chip. Tapi kalau lawan bertaruh setelah Anda check, Anda harus call, raise, atau fold.
 
 ---
 
@@ -107,7 +107,7 @@ Turn adalah ronde dengan bobot strategi yang berat:
 - Apa kata aksi lawan Anda di preflop dan flop soal range kartunya?
 - Apakah hand ini layak dibawa sampai river?
 
-==r:Kalau Anda cek pasif di turn lalu tiba-tiba melepas taruhan besar di river, lawan yang jeli akan membacanya sebagai kelemahan.== ==g:**Dengan kartu kuat, bertaruhlah di turn untuk membesarkan pot**== selagi lawan Anda masih mau call.
+==r:Kalau Anda check pasif di turn lalu tiba-tiba melepas taruhan besar di river, lawan yang jeli akan membacanya sebagai kelemahan.== ==g:**Dengan kartu kuat, bertaruhlah di turn untuk membesarkan pot**== selagi lawan Anda masih mau call.
 
 ---
 
@@ -118,7 +118,7 @@ Setelah ronde taruhan turn, kartu bersama kelima sekaligus terakhir dibuka — *
 Kesalahan klasik di river:
 
 - **Call sampai habis dengan kartu lemah** — jebakan "ya sudah, tanggung sudah sejauh ini".
-- **Cek pasif dengan kartu kuat** — memberi lawan showdown gratis.
+- **Check pasif dengan kartu kuat** — memberi lawan showdown gratis.
 - **Coba-coba bluff dadakan di river** — kalau Anda pasif di semua ronde sebelumnya, taruhan besar di river jarang menceritakan kisah yang bisa dipercaya.
 
 River adalah tempat seluruh hand diselesaikan. Timbang kekuatan kartu Anda, pola taruhan lawan, dan board lengkapnya, lalu ambil keputusan terakhir Anda.
@@ -135,7 +135,7 @@ Aturan showdown:
 
 - Setiap pemain membentuk **kombinasi lima kartu terbaik** dari dua kartu tertutupnya dan lima kartu bersama.
 - Anda tidak wajib memakai kedua kartu tertutup Anda — boleh pakai satu, atau bahkan main board saja (nol kartu) kalau itu lima kartu terbaik Anda.
-- Pemain yang melakukan aksi agresif terakhir (bet atau raise) buka kartu duluan; kalau di river semua cek, yang buka duluan adalah pemain aktif pertama di kiri button.
+- Pemain yang melakukan aksi agresif terakhir (bet atau raise) buka kartu duluan; kalau di river semua check, yang buka duluan adalah pemain aktif pertama di kiri button.
 - Pemain yang kalah boleh langsung **muck** (fold tanpa memperlihatkan kartu) — kecuali pada all-in di turnamen: begitu seorang pemain all-in dan taruhan selesai, semua hand dibuka menghadap ke atas (TDA Rule 16 · WSOP Tournament Rule 70).
 - Kombinasi yang sama persis **membagi pot** ("split") sama rata.
 
@@ -210,7 +210,7 @@ A raise ke **6.000** dengan Big Slick-nya. B call dengan pocket nines.
 - **A:** top pair, top kicker (sepasang King). Kelihatan kuat.
 - **B:** tiga kartu 9 — sebuah **set**. Sudah monster sejak awal.
 
-B cek, A bertaruh **8.000**, B call.
+B check, A bertaruh **8.000**, B call.
 **Pot: 28.000**
 
 ### Turn: 2♣
@@ -218,12 +218,12 @@ B cek, A bertaruh **8.000**, B call.
 - **A:** tidak ada perubahan, masih top pair.
 - **B:** masih set, tidak perlu membaik lagi.
 
-B cek, A bertaruh **15.000** (sekitar setengah pot), B call.
+B check, A bertaruh **15.000** (sekitar setengah pot), B call.
 **Pot: 58.000**
 
 ### River: A♥
 
-- **B:** cek.
+- **B:** check.
 - **A:** kartu As-nya berpasangan — sekarang **two pair, As dan King**. Merasa di atas angin, bertaruh **30.000**.
 - **B:** set tetap menggilas two pair. Check-raise ke **70.000**.
 - **A:** yakin two pair-nya menang, call.
@@ -243,7 +243,7 @@ Pelajarannya: ==r:saat river membuat kartu Pemain A jadi two pair, *rasanya* sep
 
 ## 7 Pilihan di Giliran Anda, Dijelaskan Tuntas
 
-![Aksi-aksi taruhan poker — cek, call, fold, bet, raise, re-raise, all-in](/images/holdem-betting-options-guide.webp "Semua aksi taruhan yang bisa Anda lakukan di Texas Hold'em")
+![Aksi-aksi taruhan poker — check, call, fold, bet, raise, re-raise, all-in](/images/holdem-betting-options-guide.webp "Semua aksi taruhan yang bisa Anda lakukan di Texas Hold'em")
 
 Ini semua aksi yang tersedia di meja — bagian yang paling sering bikin pemula keliru.
 
@@ -252,7 +252,7 @@ Ini semua aksi yang tersedia di meja — bagian yang paling sering bikin pemula 
 | Aksi | Apa fungsinya | Kapan tersedia |
 |------|------|------|
 | Fold | Menyerah, membuang kartu Anda | Street mana pun — saat giliran Anda |
-| Cek (check) | Melewatkan giliran tanpa bertaruh | Hanya saat tidak ada taruhan ke arah Anda |
+| Check | Melewatkan giliran tanpa bertaruh | Hanya saat tidak ada taruhan ke arah Anda |
 | Call | Menyamai taruhan yang berjalan | Saat ada taruhan ke arah Anda |
 | Bet | Memasang taruhan pertama di satu ronde | Saat belum ada yang bertaruh |
 | Raise | Menaikkan di atas taruhan yang berjalan | Saat ada taruhan ke arah Anda |
@@ -261,9 +261,9 @@ Ini semua aksi yang tersedia di meja — bagian yang paling sering bikin pemula 
 
 </div>
 
-==r:**Penting:** di preflop Anda tidak bisa cek — kecuali taruhan yang Anda pasang sendiri sudah menjadi taruhan hidup.== Big blind adalah taruhan hidup, jadi setiap posisi yang taruhannya sendiri belum menjadi taruhan hidup harus call, raise, atau fold. ==Big blind boleh cek kalau tidak ada yang raise atau memasang straddle — begitu pula pemain yang memasang live straddle, asalkan setelahnya tidak ada raise atau re-straddle, karena taruhan yang ia pasang itu adalah taruhan pembukanya dan ia bertindak terakhir di preflop (WSOP Live Action Rules 159 · 165); bagi semua pemain lain, cek baru dimulai di flop.==
+==r:**Penting:** di preflop Anda tidak bisa check — kecuali taruhan yang Anda pasang sendiri sudah menjadi taruhan hidup.== Big blind adalah taruhan hidup, jadi setiap posisi yang taruhannya sendiri belum menjadi taruhan hidup harus call, raise, atau fold. ==Big blind boleh check kalau tidak ada yang raise atau memasang straddle — begitu pula pemain yang memasang live straddle, asalkan setelahnya tidak ada raise atau re-straddle, karena taruhan yang ia pasang itu adalah taruhan pembukanya dan ia bertindak terakhir di preflop (WSOP Live Action Rules 159 · 165); bagi semua pemain lain, check baru dimulai di flop.==
 
-Untuk panduan keputusan yang lebih dalam soal kapan memakai tiap langkah — lengkap dengan tabel keputusan cek-call-raise-fold — lihat [penjelasan aksi taruhan](/id/blog/holdem-betting-actions).
+Untuk panduan keputusan yang lebih dalam soal kapan memakai tiap langkah — lengkap dengan tabel keputusan check-call-raise-fold — lihat [penjelasan aksi taruhan](/id/blog/holdem-betting-actions).
 
 ---
 
@@ -310,7 +310,7 @@ Draw Flush atau Straight bukan berarti call otomatis. Anda harus menimbang **pot
 
 ### 4. Bluff dadakan di river dengan kartu lemah
 
-Kalau Anda cek pasif sepanjang jalan lalu tiba-tiba dorong semua di river, lawan langsung bisa membacanya. Sebuah bluff butuh cerita yang konsisten sejak ronde pertama.
+Kalau Anda check pasif sepanjang jalan lalu tiba-tiba dorong semua di river, lawan langsung bisa membacanya. Sebuah bluff butuh cerita yang konsisten sejak ronde pertama.
 
 ### 5. Salah membaca kartu Anda sendiri di showdown
 
@@ -352,15 +352,15 @@ A. Pemain aktif pertama di kiri button — di meja penuh itu adalah small blind.
 
 **Q. Siapa yang membuka kartu duluan saat showdown?**
 
-A. Siapa pun yang melakukan aksi agresif terakhir — bet atau raise terakhir di river — wajib membuka duluan. Jika di river semua orang cek tanpa ada taruhan sama sekali, pemain aktif pertama di kiri button yang membuka duluan, lalu diikuti yang lain searah jarum jam. Pemain yang tahu dirinya sudah kalah boleh **muck** alih-alih memperlihatkan kartunya — kecuali ada yang all-in di turnamen, di mana semua hand dibuka (TDA Rule 16).
+A. Siapa pun yang melakukan aksi agresif terakhir — bet atau raise terakhir di river — wajib membuka duluan. Jika di river semua orang check tanpa ada taruhan sama sekali, pemain aktif pertama di kiri button yang membuka duluan, lalu diikuti yang lain searah jarum jam. Pemain yang tahu dirinya sudah kalah boleh **muck** alih-alih memperlihatkan kartunya — kecuali ada yang all-in di turnamen, di mana semua hand dibuka (TDA Rule 16).
 
 **Q. Apa bedanya preflop dan flop?**
 
 A. Preflop adalah sebelum satu pun kartu bersama terbuka — Anda memutuskan hanya berdasarkan dua kartu tertutup Anda. Flop adalah setelah tiga kartu bersama dibuka, saat Anda membaca kartu Anda sekarang sekaligus potensi draw Anda.
 
-**Q. Apa bedanya cek dan call?**
+**Q. Apa bedanya check dan call?**
 
-A. Cek melewatkan giliran tanpa bertaruh, dan hanya mungkin kalau tidak ada taruhan di depan Anda. Call menyamai taruhan lawan. Kalau ada yang sudah bertaruh, Anda tidak bisa cek — Anda harus call, raise, atau fold.
+A. Check melewatkan giliran tanpa bertaruh, dan hanya mungkin kalau tidak ada taruhan di depan Anda. Call menyamai taruhan lawan. Kalau ada yang sudah bertaruh, Anda tidak bisa check — Anda harus call, raise, atau fold.
 
 **Q. Apakah saya wajib memakai kedua kartu tertutup saya di showdown?**
 

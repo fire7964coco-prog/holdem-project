@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Berada in position berarti Anda beraksi terakhir — Anda melihat setiap keputusan lawan sebelum mengeluarkan satu chip pun. Contoh solver menunjukkan posisi biasanya meningkatkan realisasi equity, tetapi tak ada kursi yang otomatis terkunci di atas atau di bawah 100%: range, board, dan action bisa membalik pola umumnya. Itulah kenapa UTG membuka ~13% tangan dan button ~43% — dan kenapa posisi menulis ulang setiap keputusan c-bet, bluff, dan pot control di postflop.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-09-22",
+  updated: "2026-09-24",
   masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "16 mnt",
@@ -99,7 +99,7 @@ Selama ribuan tangan, kebocoran itu berlipat menjadi satu perbedaan terbesar ant
 
 **Posisi terbaik di poker adalah button.** Ini satu-satunya kursi yang dijamin beraksi ==**terakhir di setiap street postflop**== — flop, turn, dan river, tak peduli siapa yang raise preflop. Jaminan itulah kenapa button bisa membuka ~43% tangan secara profit sementara UTG hanya mampu ~13%: posisi, bukan kekuatan kartu, yang mendanai selisihnya.
 
-Inilah keunggulan button dalam satu tangan konkret. Anda membuka A♦9♦ di button, big blind call, dan flop datang **K♦7♠2♥** — board kering yang nyaris tak mengenai siapa pun. Big blind check — yang di sini nyaris tidak memberi tahu apa pun, karena di board ini dia check dengan hampir seluruh range-nya. Informasinya ada di tempat lain: kartu K jauh lebih sering mengenai open range Anda daripada calling range dia. ==g:Sebuah bet di sini menang jauh lebih sering daripada kalah==, dan ketika dia fold, ace-high mengambil pot tanpa showdown. Sekarang balik kursinya: OOP dengan A♦9♦ yang sama, Anda check, dia bet, dan cukup sering Anda justru fold tangan terbaik. Kartu sama; kursi yang melakukan semua pekerjaan.
+Inilah keunggulan button dalam satu hand konkret. Anda membuka A♦9♦ di button, big blind call, dan flop datang **K♦7♠2♥** — board kering yang nyaris tak mengenai siapa pun. Big blind check — yang di sini nyaris tidak memberi tahu apa pun, karena di board ini dia check dengan hampir seluruh range-nya. Informasinya ada di tempat lain: kartu K jauh lebih sering mengenai open range Anda daripada calling range dia. ==g:Sebuah bet di sini menang jauh lebih sering daripada kalah==, dan ketika dia fold, ace-high mengambil pot tanpa showdown. Sekarang balik kursinya: OOP dengan A♦9♦ yang sama, Anda check, dia bet, dan cukup sering Anda justru fold tangan terbaik. Kartu sama; kursi yang melakukan semua pekerjaan.
 
 **Cutoff** adalah kedua terbaik karena satu alasan: hanya button yang beraksi di belakang Anda, dan ketika button fold — yang sering terjadi — Anda mewarisi aksi terakhir untuk sisa tangan.
 

@@ -37,7 +37,7 @@ Kebiasaan itu disebut menghitung **outs** — [jawaban nyata poker untuk "menghi
 
 **Sebuah out adalah kartu mana pun yang masih ada di deck yang mengubah tangan Anda menjadi kemungkinan pemenang.** Jika Anda memegang flush draw, setiap kartu tersisa dengan jenis Anda adalah out — dapatkan satu dan Anda punya flush.
 
-Kata "kemungkinan" di situ bekerja diam-diam. Sebuah out sejati harus benar-benar *memenangkan* tangan, bukan sekadar memperbaiki kartu Anda. Memasangkan angka sepuluh Anda saat flush sudah ada di meja bukanlah out — Anda memperbaiki, tapi tetap kalah. Belajar menghitung outs sebenarnya adalah belajar menghitung kartu yang menang, dan mengabaikan yang hanya *terlihat* membantu.
+Kata "kemungkinan" di situ bekerja diam-diam. Sebuah out sejati harus benar-benar *memenangkan* tangan, bukan sekadar memperbaiki kartu Anda. Memasangkan angka sepuluh Anda saat flush sudah ada di board bukanlah out — Anda memperbaiki, tapi tetap kalah. Belajar menghitung outs sebenarnya adalah belajar menghitung kartu yang menang, dan mengabaikan yang hanya *terlihat* membantu.
 
 Semua yang mengalir setelahnya — equity Anda, [pot odds](/id/blog/holdem-pot-odds) Anda, keputusan call-atau-fold — bermula dari satu angka ini. Kalau jumlah out-nya salah, semua kalkulasi setelahnya ikut salah. Dan setelah Anda tahu jumlahnya, [drawing odds](/id/blog/holdem-drawing-odds "thumb:/images/holdem-drawing-odds-hero.webp") memberi tahu Anda persis seberapa sering tiap draw benar-benar tercapai.
 
@@ -54,11 +54,11 @@ Menghitung outs adalah rutinitas tiga langkah yang Anda jalankan pada setiap dra
 
 :::steps
 Sebutkan draw Anda | Tangan apa yang Anda kejar? Flush, straight, pair lebih besar, set — spesifik soal targetnya
-Hitung kartu yang melengkapinya | Ada 13 kartu tiap jenis dan 4 kartu tiap nilai. Kurangi yang sudah bisa Anda lihat (kartu Anda + meja)
-Buang yang palsu | Coret setiap "out" yang melengkapi tangan Anda tapi tetap kalah — kartu flush yang memasangkan meja, straight yang memberi orang lain straight lebih tinggi
+Hitung kartu yang melengkapinya | Ada 13 kartu tiap jenis dan 4 kartu tiap nilai. Kurangi yang sudah bisa Anda lihat (kartu Anda + board)
+Buang yang palsu | Coret setiap "out" yang melengkapi tangan Anda tapi tetap kalah — kartu flush yang memasangkan board, straight yang memberi orang lain straight lebih tinggi
 :::
 
-Ambil flush draw: ada 13 kartu dengan jenis Anda, Anda bisa melihat **empat** di antaranya (dua di tangan, dua di meja), jadi ==g:13 − 4 = 9 outs==. Pengurangan itu — menghitung kartu yang *tidak bisa* Anda dapatkan karena sudah Anda pegang — di situlah pemula tergelincir.
+Ambil flush draw: ada 13 kartu dengan jenis Anda, Anda bisa melihat **empat** di antaranya (dua di tangan, dua di board), jadi ==g:13 − 4 = 9 outs==. Pengurangan itu — menghitung kartu yang *tidak bisa* Anda dapatkan karena sudah Anda pegang — di situlah pemula tergelincir.
 
 Perhitungan hanya memakai kartu yang bisa Anda lihat. Anda tidak mengurangi kartu lawan yang tak terlihat; Anda menganggap setiap kartu yang tak terlihat masih hidup. Itu sebabnya jumlah out standar di bawah ini tetap berlaku terlepas dari apa yang dipegang orang lain.
 
@@ -165,19 +165,19 @@ Logika sama pada **flush + gutshot**: 9 flush outs + 4 kartu gutshot, tapi satu 
 ## Outs Kotor: Kartu yang Hanya Terlihat Seperti Kemenangan
 
 > **Jawaban singkat**
-> Out kotor (atau out "tercemar") memperbaiki tangan Anda tanpa bisa diandalkan untuk membawa Anda unggul. Kartu flush di meja berpasangan, flush rendah melawan flush draw yang lebih tinggi, dan overcard melawan tangan jadi yang kuat semuanya perlu dicermati. Mulailah dari hitungan mentah, lalu kurangi sesuai tangan lawan yang masuk akal alih-alih membayar setiap perbaikan seolah itu kemenangan.
+> Out kotor (atau out "tercemar") memperbaiki tangan Anda tanpa bisa diandalkan untuk membawa Anda unggul. Kartu flush di board berpasangan, flush rendah melawan flush draw yang lebih tinggi, dan overcard melawan tangan jadi yang kuat semuanya perlu dicermati. Mulailah dari hitungan mentah, lalu kurangi sesuai tangan lawan yang masuk akal alih-alih membayar setiap perbaikan seolah itu kemenangan.
 
-![Infografik meja berpasangan 10♠ 8♥ 4♠ 4♣ 6♦ yang memisahkan outs bersih dari outs kotor](/images/holdem-outs-dirty-outs.webp "Di meja berpasangan, sebagian outs Anda kotor — hit flush bisa tetap membayari full house")
+![Infografik board berpasangan 10♠ 8♥ 4♠ 4♣ 6♦ yang memisahkan outs bersih dari outs kotor](/images/holdem-outs-dirty-outs.webp "Di board berpasangan, sebagian outs Anda kotor — hit flush bisa tetap membayari full house")
 
 Tiga situasi untuk melatih mata Anda:
 
 :::card
 ♠ | Flush bukan-nut | Memegang 8♠7♠ di K♠9♠2♣, Anda punya 9 "outs" sekop — tapi jika sekop datang dan lawan ternyata mengejar flush yang sama dengan sekop lebih tinggi, Anda membuat flush tapi tetap kalah. Kurangi hitungan outs Anda saat Anda tidak drawing ke nut flush
-🂮 | Meja berpasangan | Flush draw di meja seperti J♥8♥8♣ terlihat seperti 9 outs bersih, tapi meja sudah berpasangan — full house jadi mungkin menunggu, jadi sebagian flush Anda mati sejak awal
+🂮 | Board berpasangan | Flush draw di board seperti J♥8♥8♣ terlihat seperti 9 outs bersih, tapi board sudah berpasangan — full house jadi mungkin menunggu, jadi sebagian flush Anda mati sejak awal
 🃁 | Overcard melawan kekuatan | Dua overcard (A-K di Q-8-3) terhitung 6 outs di atas kertas, tapi jika raise besar meneriakkan set atau two pair, memasangkan ace Anda sering tidak cukup baik — hitung 3, mungkin 4, bukan 6
 :::
 
-Anda jarang tahu seberapa besar pangkasannya, dan itu tak apa. Langkahnya bersifat arah: saat meja atau aksi memberi tahu bahwa suatu out mungkin tak menang, pangkas hitungannya *ke bawah* sebelum Anda mengonversi. Pemain yang menghitung 9 outs di meja berpasangan lalu call pot membayar harga penuh untuk draw yang diam-diam bernilai enam. Membaca out mana yang bersih adalah keterampilan tekstur meja — bangun dengan [cara membaca meja](/id/blog/holdem-reading-the-board).
+Anda jarang tahu seberapa besar pangkasannya, dan itu tak apa. Langkahnya bersifat arah: saat board atau aksi memberi tahu bahwa suatu out mungkin tak menang, pangkas hitungannya *ke bawah* sebelum Anda mengonversi. Pemain yang menghitung 9 outs di board berpasangan lalu call pot membayar harga penuh untuk draw yang diam-diam bernilai enam. Membaca out mana yang bersih adalah keterampilan tekstur board — bangun dengan [cara membaca board](/id/blog/holdem-reading-the-board).
 
 ---
 
@@ -198,11 +198,11 @@ A. Artinya sembilan kartu yang tersisa di deck bisa melengkapi tangan Anda — p
 
 **Q. Bagaimana cara menghitung outs di poker?**
 
-A. Sebutkan tangan yang Anda kejar, hitung berapa kartu yang melengkapinya (13 tiap jenis, 4 tiap nilai), kurangi yang sudah bisa Anda lihat di tangan dan di meja, lalu coret setiap out "kotor" yang tetap akan kalah. Flush draw adalah 13 − 4 = 9.
+A. Sebutkan tangan yang Anda kejar, hitung berapa kartu yang melengkapinya (13 tiap jenis, 4 tiap nilai), kurangi yang sudah bisa Anda lihat di tangan dan di board, lalu coret setiap out "kotor" yang tetap akan kalah. Flush draw adalah 13 − 4 = 9.
 
 **Q. Berapa outs yang dimiliki flush draw?**
 
-A. Sembilan. Ada 13 kartu tiap jenis; dengan dua di tangan dan dua di meja Anda bisa melihat empat, menyisakan 9 kartu tak terlihat yang melengkapi flush Anda. Itu kira-kira 35% untuk hit hingga river dari flop, atau 19,1% pada kartu berikutnya saja kalau masih ada taruhan yang menanti.
+A. Sembilan. Ada 13 kartu tiap jenis; dengan dua di tangan dan dua di board Anda bisa melihat empat, menyisakan 9 kartu tak terlihat yang melengkapi flush Anda. Itu kira-kira 35% untuk hit hingga river dari flop, atau 19,1% pada kartu berikutnya saja kalau masih ada taruhan yang menanti.
 
 **Q. Berapa outs yang dimiliki open-ended straight draw?**
 
@@ -222,7 +222,7 @@ A. 15, bukan 17. Flush draw adalah 9 outs dan open-ended straight adalah 8, tapi
 
 **Q. Apakah Anda menghitung kartu lawan saat menghitung outs?**
 
-A. Tidak. Anda hanya mengurangi kartu yang benar-benar bisa Anda lihat — kartu tertutup Anda dan meja komunitas. Setiap kartu lain yang tak terlihat dianggap hidup, itu sebabnya jumlah out standar (9 untuk flush, 8 untuk open-ender) tetap berlaku apa pun yang dipegang lawan.
+A. Tidak. Anda hanya mengurangi kartu yang benar-benar bisa Anda lihat — kartu tertutup Anda dan board. Setiap kartu lain yang tak terlihat dianggap hidup, itu sebabnya jumlah out standar (9 untuk flush, 8 untuk open-ender) tetap berlaku apa pun yang dipegang lawan.
 
 ---
 
@@ -230,7 +230,7 @@ A. Tidak. Anda hanya mengurangi kartu yang benar-benar bisa Anda lihat — kartu
 
 1. **Hitung yang menang, bukan yang memperbaiki.** Sebuah out harus membuat tangan *terbaik*, bukan sekadar lebih baik. Kurangi hanya kartu yang bisa Anda lihat.
 2. **Konversi dengan 4 dan 2.** Outs × 4 di flop, × 2 di turn. Pangkas perkiraan untuk draw besar (lebih dari 8 outs) dengan mengurangi *(outs − 8)*.
-3. **Pangkas yang kotor.** Flush bukan-nut, meja berpasangan, dan overcard melawan kekuatan semuanya menyusutkan jumlah out nyata Anda. Kalau ragu, hitung lebih sedikit.
+3. **Pangkas yang kotor.** Flush bukan-nut, board berpasangan, dan overcard melawan kekuatan semuanya menyusutkan jumlah out nyata Anda. Kalau ragu, hitung lebih sedikit.
 
 Kuasai hitungannya dan sisa matematika poker jatuh pada tempatnya. Bawa jumlah out Anda langsung ke [cara menghitung pot odds](/id/blog/holdem-pot-odds) untuk melihat apakah harganya tepat, atau kembali ke [bagan odds dan probabilitas poker](/id/blog/holdem-probability) lengkap untuk angka persis di balik setiap draw.
 
@@ -250,8 +250,8 @@ Kuasai hitungannya dan sisa matematika poker jatuh pada tempatnya. Bawa jumlah o
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Referensi lengkap di balik setiap draw</div>
   </a>
   <a href="/id/blog/holdem-reading-the-board" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Membaca Meja</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Cara Membaca Meja</div>
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Membaca Board</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Cara Membaca Board</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Kenali setiap draw agar Anda menghitung outs bersih</div>
   </a>
   <a href="/id/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">

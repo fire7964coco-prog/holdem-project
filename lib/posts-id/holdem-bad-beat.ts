@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Bad beat adalah saat uang Anda masuk sebagai favorit berat — biasanya 80% atau lebih — dan Anda kalah karena lawan menangkap kartu beruntung untuk 'suck out' pada Anda. Berbeda dengan cooler, Anda unggul saat uang masuk; hanya di akhir kartu berkhianat. Perih, tapi bad beat sebenarnya tanda Anda bermain di permainan yang menguntungkan.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-21",
+  updated: "2026-09-24",
   masterUpdated: "2026-09-21",
   keepImagesInBody: true,
   readTime: "11 mnt",
@@ -98,7 +98,7 @@ Setiap bad beat punya bentuk yang sama: Anda favorit, underdog butuh bantuan, da
 
 *Menurut ambang di bagian sebelumnya, overpair vs flush draw adalah kasus batas dalam daftar ini: pada ~63%, kasus itu lebih tepat disebut variance ketimbang bad beat "sejati" — tapi begitulah meja tetap menyebutnya.*
 
-Yang paling ikonik adalah **aces dihancurkan set.** Anda dapat pocket aces all-in preflop melawan pocket sevens — Anda kira-kira favorit 80%, kunci 4:1 di pihak Anda. Tapi ada dua seven lagi di dek, dan jika salah satunya kena board — dan tak ada ace ikut datang — three-of-a-kind mereka mengalahkan pair Anda. Empat dari lima kali Anda menyapu pot; kali kelima, Anda punya cerita bad beat yang tak ingin didengar siapa pun. Matematikanya tak pernah salah — Anda sekadar mendarat di sisi yang salah darinya, dan justru itulah kenapa satu tangan tidak memberi tahu Anda [apa pun tentang apakah Anda bermain baik](/id/blog/holdem-cooler).
+Yang paling ikonik adalah **aces dihancurkan set.** Anda dapat pocket aces all-in preflop melawan pocket sevens — Anda kira-kira favorit 80%, kunci 4:1 di pihak Anda. Tapi ada dua seven lagi di dek, dan jika salah satunya kena board — dan tak ada ace ikut datang — three-of-a-kind mereka mengalahkan pair Anda. Empat dari lima kali Anda menyapu pot; kali kelima, Anda punya cerita bad beat yang tak ingin didengar siapa pun. Matematikanya tak pernah salah — Anda sekadar mendarat di sisi yang salah darinya, dan justru itulah kenapa satu hand tidak memberi tahu Anda [apa pun tentang apakah Anda bermain baik](/id/blog/holdem-cooler).
 
 ---
 
@@ -154,9 +154,9 @@ Karena sebuah bad beat tak membawa pelajaran soal permainan Anda, satu-satunya b
 
 1. **Terima dengan lantang.** Sebuah "Uang saya masuk good, tak ada yang bisa saya perbuat" lebih baik daripada memendam dalam diam. Menamainya sebagai variance menutup berkasnya.
 2. **Waspadai tilt.** Pot itu sudah lenyap; tiga tangan gegabah yang Anda mainkan mencoba merebutnya kembali itulah biaya sebenarnya dari bad beat. Jika Anda merasa darah mulai mendidih, itu isyarat untuk memperlambat.
-3. **Lewati satu orbit.** Sit out sebentar, minum air, menjauh selama lima menit. Itu asuransi termurah di poker melawan mengubah satu tangan yang kalah menjadi satu sesi yang kalah.
+3. **Lewati satu orbit.** Sit out sebentar, minum air, menjauh selama lima menit. Itu asuransi termurah di poker melawan mengubah satu hand yang kalah menjadi satu sesi yang kalah.
 4. **Percayai bankroll Anda.** Bad beat adalah alasan Anda menjaga bankroll yang dibangun untuk menyerap variance. Satu kekalahan hanyalah kesalahan pembulatan di antara puluhan ribu tangan — itu hanya melukai hasil Anda jika Anda membiarkannya mengubah cara bermain Anda.
-5. **Lewati cerita bad beat.** Tak ada yang ingin mendengarnya, dan menceritakannya lagi hanya membuat Anda mengalami ulang tilt-nya. Tanda seorang pro bukan tak pernah kena bad beat — melainkan melupakannya pada tangan berikutnya.
+5. **Lewati cerita bad beat.** Tak ada yang ingin mendengarnya, dan menceritakannya lagi hanya membuat Anda mengalami ulang tilt-nya. Tanda seorang pro bukan tak pernah kena bad beat — melainkan melupakannya pada hand berikutnya.
 
 ---
 
@@ -189,7 +189,7 @@ A. Yang paling terkenal berasal dari 2008 WSOP Main Event: Motoyuki Mabuchi memb
 
 **Q. Apakah bad beat lebih sering terjadi online?**
 
-A. Bisa terasa begitu, tapi itu sebagian besar ilusi volume. Online Anda memainkan jauh lebih banyak tangan per jam — sering di beberapa meja sekaligus — jadi Anda sekadar *melihat* lebih banyak bad beat dalam waktu yang sama. Kartu dibagikan secara acak; Anda tidak lebih sial online, Anda hanya melewati jauh lebih banyak tangan, dan lebih banyak tangan berarti lebih banyak suckout ke dua arah.
+A. Bisa terasa begitu, tapi itu sebagian besar ilusi volume. Online Anda memainkan jauh lebih banyak hand per jam — sering di beberapa meja sekaligus — jadi Anda sekadar *melihat* lebih banyak bad beat dalam waktu yang sama. Kartu dibagikan secara acak; Anda tidak lebih sial online, Anda hanya melewati jauh lebih banyak hand, dan lebih banyak hand berarti lebih banyak suckout ke dua arah.
 
 **Q. Bagaimana cara menghadapi bad beat di poker?**
 
@@ -207,7 +207,7 @@ A. Tidak — di hampir semua kasus keduanya berlawanan. Bad beat berarti uang An
 2. **Itu kebalikan dari cooler.** Bad beat butuh suckout (underdog membaik); cooler tidak (pemimpin unggul sepanjang jalan). Jika lawan Anda harus improve untuk menang, itu bad beat.
 3. **Bad beat diam-diam bagus untuk Anda.** Artinya lawan memasukkan uang saat tertinggal dan beruntung — sebagian besar waktu, keputusan kalah yang membayar Anda jauh lebih sering daripada membakar Anda. Masukkan uang saat unggul, abaikan bad beat-nya, dan biarkan variance meratakan diri.
 
-Bad beat adalah pajak yang Anda bayar untuk memainkan permainan yang menang. Pemain terbaik menerima persis sebanyak orang lain — mereka hanya belajar mencatatnya sebagai variance, melindungi tangan berikutnya dari tilt, dan kembali [mengungguli meja](/id/blog/holdem-fish). Masukkan uang saat unggul cukup sering, dan kekejaman dek menjadi profit Anda.
+Bad beat adalah pajak yang Anda bayar untuk memainkan permainan yang menang. Pemain terbaik menerima persis sebanyak orang lain — mereka hanya belajar mencatatnya sebagai variance, melindungi hand berikutnya dari tilt, dan kembali [mengungguli meja](/id/blog/holdem-fish). Masukkan uang saat unggul cukup sering, dan kekejaman dek menjadi profit Anda.
 
 ---
 

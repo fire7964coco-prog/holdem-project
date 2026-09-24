@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Rake adalah potongan kecil yang diambil cardroom dari sebagian besar pot untuk menyelenggarakan permainan — biasanya 2,5–10% hingga cap beberapa dolar. Sebagian besar room tidak mengambil apa pun jika semua fold sebelum flop ('no flop, no drop'). Ia paling memukul pemain stake rendah dan short-handed, dan rakeback mengembalikan sebagian kepada regular.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-09-22",
+  updated: "2026-09-24",
   masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "11 mnt",
@@ -19,7 +19,7 @@ export const POST: Post = {
   content: `
 Saya butuh sebulan penuh sesi "impas" yang menyedihkan sebelum sadar ke mana uang saya sebenarnya pergi. Saya tidak kalah dari pemain lain — saya mengalahkan mereka, sedikit. Saya kalah dari ==potongan house pada setiap pot yang saya menangkan.== Biaya yang diam-diam itu disebut **rake**, dan sampai Anda memahaminya, Anda bisa menjadi pemain menang di atas kertas tapi kalah di kasir.
 
-Rake adalah cara cardroom menghasilkan uang dari permainan yang di dalamnya ia sendiri tak memainkan satu tangan pun. Di bawah ini persis apa itu rake, setiap cara ia dikumpulkan, matematika jujur soal ==g:berapa yang sebenarnya Anda bayar per sesi==, dan bagaimana rakeback menarik kembali sebagian. Ini adalah biaya yang menentukan apakah mengalahkan poker stake kecil bahkan mungkin — dan salah satu [istilah poker](/id/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp") yang paling mahal untuk disalahpahami.
+Rake adalah cara cardroom menghasilkan uang dari permainan yang di dalamnya ia sendiri tak memainkan satu hand pun. Di bawah ini persis apa itu rake, setiap cara ia dikumpulkan, matematika jujur soal ==g:berapa yang sebenarnya Anda bayar per sesi==, dan bagaimana rakeback menarik kembali sebagian. Ini adalah biaya yang menentukan apakah mengalahkan poker stake kecil bahkan mungkin — dan salah satu [istilah poker](/id/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp") yang paling mahal untuk disalahpahami.
 
 ---
 
@@ -54,7 +54,7 @@ Rake bukan hanya satu jenis. Bagaimana house mengumpulkan uangnya tergantung pad
 |:---|:---|:---:|:---|
 | **Pot rake (berskala)** | % dari pot yang dikenai rake, hingga cap | 2,5–10%, cap $1–$6 | Sebagian besar cash game low/mid, online |
 | **Time charge** | Biaya tetap per pemain, tiap 30 mnt | ~$10–$15 per jam | Live stake tinggi ($10/$20+), dan semua stake di mana pot rake tidak memungkinkan |
-| **Dead drop** | Button membayar rake tetap tiap tangan | Tetap per tangan | Beberapa room live |
+| **Dead drop** | Button membayar rake tetap tiap hand | Tetap per hand | Beberapa room live |
 | **Biaya turnamen** | Dibayar bersama buy-in di muka | ~5–20% dari buy-in | Hampir setiap turnamen |
 
 </div>
@@ -70,13 +70,13 @@ Beberapa aturan mengatur bagaimana pot rake sebenarnya disaring:
 
 ## Berapa Rake yang Sebenarnya Anda Bayar?
 
-![Pot chip yang sederhana di felt dengan beberapa dolar sudah disisihkan sebagai rake, menunjukkan berapa biaya diam-diam satu tangan](/images/holdem-rake-lowstakes.webp "Dalam permainan stake rendah cap nyaris tak bergerak saat pot membesar, jadi pot kecil paling berat di-rake secara proporsional")
+![Pot chip yang sederhana di felt dengan beberapa dolar sudah disisihkan sebagai rake, menunjukkan berapa biaya diam-diam satu hand](/images/holdem-rake-lowstakes.webp "Dalam permainan stake rendah cap nyaris tak bergerak saat pot membesar, jadi pot kecil paling berat di-rake secara proporsional")
 
 Inilah bagian yang mengubah cara saya memandang permainan. Persentasenya terdengar mungil — 5%, cap beberapa dolar — tapi Anda membayarnya pada nyaris setiap pot yang Anda menangkan, selama berjam-jam.
 
 **Sebuah live game $1/$2.** Dengan rake 10% cap $5 dan kira-kira 30 tangan dibagikan per jam, sebagian besar pot yang diperebutkan mengenai atau mendekati cap. Satu meja sibuk saja bisa membayar **$100+ per jam** ke dalam drop di antara semua pemain. Uang itu keluar langsung dari kemenangan kolektif — itulah alasan sebuah meja penuh pemain yang kurang lebih setara perlahan menguras chip ke house.
 
-**"Jebakan rake" stake rendah.** Inilah intinya yang harus didengar setiap pemula. Karena cap nyaris tak ikut turun saat Anda turun stake, makin *rendah* Anda bermain, makin *besar* gigitan yang diambil rake secara proporsional. Berikut contoh terhitung di NL50 online (ilustratif — angka persisnya bergerak mengikuti berapa banyak pot yang Anda perebutkan dan bagaimana room menerapkan cap-nya, bukan berapa banyak tangan yang Anda mainkan). Dari dua cap di bawah, satu ada di dalam rentang online yang biasa dan satu di atasnya: $2 di dalam kisaran $1–$3 yang dipasang kebanyakan room, $4 di atasnya.
+**"Jebakan rake" stake rendah.** Inilah intinya yang harus didengar setiap pemula. Karena cap nyaris tak ikut turun saat Anda turun stake, makin *rendah* Anda bermain, makin *besar* gigitan yang diambil rake secara proporsional. Berikut contoh terhitung di NL50 online (ilustratif — angka persisnya bergerak mengikuti berapa banyak pot yang Anda perebutkan dan bagaimana room menerapkan cap-nya, bukan berapa banyak hand yang Anda mainkan). Dari dua cap di bawah, satu ada di dalam rentang online yang biasa dan satu di atasnya: $2 di dalam kisaran $1–$3 yang dipasang kebanyakan room, $4 di atasnya.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -162,7 +162,7 @@ A. Rakeback mengembalikan persentase dari rake yang Anda bayar secara pribadi �
 
 **Q. Bagaimana cara membayar rake lebih sedikit di poker?**
 
-A. Anda tak bisa lolos sepenuhnya dari rake di permainan ber-rake, tapi Anda bisa mengecilkannya: ambil deal rakeback terbaik yang bisa Anda dapat, dan pilih room dengan cap yang ramah pemain. Naik stake juga mengecilkan rake, karena cap tetap menjadi porsi yang lebih kecil dari tiap pot — tapi ambil langkah itu hanya jika bankroll Anda menanggung ayunannya *dan* Anda masih unggul atas lapangan yang lebih keras; kalau tidak, para pemain akan mengambil jauh lebih banyak daripada yang pernah diambil rake. Memainkan pot yang lebih sedikit tapi lebih besar ketimbang banjir pot kecil juga menurunkannya: cap hanya mulai bekerja di pot besar, sementara pot kecil membayar persentase penuh. Begitu juga menghindari meja yang sangat short-handed — di sana Anda memainkan jauh lebih banyak tangan per jam dan memasang blind jauh lebih sering, jadi Anda ada di lebih banyak pot ber-rake — dan memilih game time-charge stake tinggi, tetapi hanya jika bankroll Anda memadai dan Anda tetap unggul atas lawan di stake tersebut. Dari sisi biaya murni, home game tanpa rake adalah poker termurah yang ada — tak ada yang disaring dari pot.
+A. Anda tak bisa lolos sepenuhnya dari rake di permainan ber-rake, tapi Anda bisa mengecilkannya: ambil deal rakeback terbaik yang bisa Anda dapat, dan pilih room dengan cap yang ramah pemain. Naik stake juga mengecilkan rake, karena cap tetap menjadi porsi yang lebih kecil dari tiap pot — tapi ambil langkah itu hanya jika bankroll Anda menanggung ayunannya *dan* Anda masih unggul atas lapangan yang lebih keras; kalau tidak, para pemain akan mengambil jauh lebih banyak daripada yang pernah diambil rake. Memainkan pot yang lebih sedikit tapi lebih besar ketimbang banjir pot kecil juga menurunkannya: cap hanya mulai bekerja di pot besar, sementara pot kecil membayar persentase penuh. Begitu juga menghindari meja yang sangat short-handed — di sana Anda memainkan jauh lebih banyak hand per jam dan memasang blind jauh lebih sering, jadi Anda ada di lebih banyak pot ber-rake — dan memilih game time-charge stake tinggi, tetapi hanya jika bankroll Anda memadai dan Anda tetap unggul atas lawan di stake tersebut. Dari sisi biaya murni, home game tanpa rake adalah poker termurah yang ada — tak ada yang disaring dari pot.
 
 **Q. Apakah mengambil rake itu ilegal?**
 
@@ -174,11 +174,11 @@ A. Ya, tapi bukan dari pot. Harga masuk dapat memisahkan kontribusi prize pool d
 
 **Q. Bagaimana rake memengaruhi win rate Anda?**
 
-A. Signifikan — paling terasa pada stake rendah, di mana cap tak ikut turun bersama stake. Short-handed menambah efek kedua yang tak ada hubungannya dengan cap: rake yang sama per pot dipikul lebih sedikit pemain, dan Anda membayar blind jauh lebih sering per 100 tangan — jadi porsi Anda per tangan naik. (Per *jam* Anda memang juga membayar lebih, karena lebih banyak tangan berjalan, tetapi itu pertanyaan yang berbeda dari bb/100.) Rake bisa mengubah pemenang kecil menjadi pecundang: pemain +8 bb/100 yang sama bisa berakhir sedikit negatif hanya dengan pindah ke room dengan cap rake lebih tinggi. Selalu ukur win rate Anda setelah rake.
+A. Signifikan — paling terasa pada stake rendah, di mana cap tak ikut turun bersama stake. Short-handed menambah efek kedua yang tak ada hubungannya dengan cap: rake yang sama per pot dipikul lebih sedikit pemain, dan Anda membayar blind jauh lebih sering per 100 hand — jadi porsi Anda per hand naik. (Per *jam* Anda memang juga membayar lebih, karena lebih banyak hand berjalan, tetapi itu pertanyaan yang berbeda dari bb/100.) Rake bisa mengubah pemenang kecil menjadi pecundang: pemain +8 bb/100 yang sama bisa berakhir sedikit negatif hanya dengan pindah ke room dengan cap rake lebih tinggi. Selalu ukur win rate Anda setelah rake.
 
 **Q. Rake poker online atau live lebih tinggi?**
 
-A. Rake live persentase lebih tinggi dengan cap lebih tinggi, tapi Anda memainkan jauh lebih sedikit tangan per jam. Rake online persentase lebih rendah dengan cap lebih kecil, tapi multi-tabling berarti Anda membayarnya pada jauh lebih banyak tangan — jadi grinder bervolume bisa membayar rake lebih banyak per jam secara online. Nilai rake dari tarif dikali frekuensi, bukan tarif saja.
+A. Rake live persentase lebih tinggi dengan cap lebih tinggi, tapi Anda memainkan jauh lebih sedikit hand per jam. Rake online persentase lebih rendah dengan cap lebih kecil, tapi multi-tabling berarti Anda membayarnya pada jauh lebih banyak hand — jadi grinder bervolume bisa membayar rake lebih banyak per jam secara online. Nilai rake dari tarif dikali frekuensi, bukan tarif saja.
 
 ---
 

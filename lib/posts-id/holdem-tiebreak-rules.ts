@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Seri dipecahkan dalam urutan tetap: jenis tangan dulu, lalu kartu pembentuk tangan, lalu kicker dari tertinggi ke terendah. Pair sama → kicker pertama tertinggi menang; lima kartu identik → pot dibagi. Jenis kartu tak pernah menentukan seri.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-11",
+  updated: "2026-09-24",
   masterUpdated: "2026-09-12",
   keepImagesInBody: true,
   readTime: "12 mnt",
@@ -73,7 +73,7 @@ Ambil tangan di foto atas:
 
 Sepasang As yang sama, jadi kicker bertarung berurutan: ==g:K mengalahkan Q — selesai.== Angka 9 milik B masih *ada* di tangan sebagai kicker kedua, tapi perbandingan tak pernah sejauh itu.
 
-Perhatikan kicker teratas B adalah Q **milik meja**, bukan angka 9 yang ia pegang. ==r:Sebuah kicker hanya dihitung jika benar-benar masuk ke lima kartu terbaik Anda== — kartu meja yang lebih tinggi menggeser kartu tertutup Anda ke bawah daftar. Itu juga alasan kartu kedua yang Anda mulai sama pentingnya dengan As itu sendiri: A-K dan A-9 sama-sama "sepasang As" di sini, dan hanya satu yang menang ([chart starting hands](/id/blog/holdem-starting-hands-chart)).
+Perhatikan kicker teratas B adalah Q **milik board**, bukan angka 9 yang ia pegang. ==r:Sebuah kicker hanya dihitung jika benar-benar masuk ke lima kartu terbaik Anda== — kartu board yang lebih tinggi menggeser kartu tertutup Anda ke bawah daftar. Itu juga alasan kartu kedua yang Anda mulai sama pentingnya dengan As itu sendiri: A-K dan A-9 sama-sama "sepasang As" di sini, dan hanya satu yang menang ([chart starting hands](/id/blog/holdem-starting-hands-chart)).
 
 ---
 
@@ -98,7 +98,7 @@ Tiga baris yang paling memicu perdebatan di meja:
 
 - **Trips memakai dua kicker, yang teratas dulu.** Di meja A♣ A♥ 7♦ 5♣ 2♠, pemain dengan A♠ J♠ membentuk A-A-A-==g:J==-7 dan mengalahkan A-A-A-==r:10==-7 milik A♦ 10♦ — jack di atas ten, dan angka 7 bersama tak pernah dicek.
 - **Full house tak punya kicker.** Nilai trio dibandingkan dulu, lalu pasangannya: K-K-K-A-A mengalahkan K-K-K-Q-Q pada pasangannya.
-- **Flush membandingkan kelima kartu — ==r:tak pernah jenis kartu==.** Flush ber-As mengalahkan flush ber-K; nilai identik dibagi. Pertarungan lengkapnya (dan meja yang mengecoh orang) ada di [apakah flush mengalahkan straight](/id/blog/holdem-flush-vs-straight).
+- **Flush membandingkan kelima kartu — ==r:tak pernah jenis kartu==.** Flush ber-As mengalahkan flush ber-K; nilai identik dibagi. Pertarungan lengkapnya (dan board yang mengecoh orang) ada di [apakah flush mengalahkan straight](/id/blog/holdem-flush-vs-straight).
 
 ---
 
@@ -143,7 +143,7 @@ Dua hal yang *tidak* bisa dilakukan wheel: As tak bisa berputar lewat tengah (Q-
 
 Meja **A♥ K♣ Q♦ 4♣ 2♥**, dan pertarungannya A♠ 8♠ melawan A♦ 7♦. Keduanya punya sepasang As. Kicker pertama: K milik meja — seri. Kicker kedua: Q milik meja — seri. Kicker ketiga: ==g:8 mengalahkan 7.== Kartu kelima tangan itu secara harfiah baru saja menentukan segala hal di atasnya.
 
-Logika yang sama berlaku pada pot dengan quads di meja: semua orang berbagi empat kartu, jadi yang kelima adalah seluruh showdown. Dan berlaku pada seri high-card dan flush, di mana setiap kartu hingga yang terakhir dibandingkan. Kartu kelima baru berhenti penting saat meja mengungguli nilainya — yang merupakan kepingan puzzle terakhir.
+Logika yang sama berlaku pada pot dengan quads di board: semua orang berbagi empat kartu, jadi yang kelima adalah seluruh showdown. Dan berlaku pada seri high-card dan flush, di mana setiap kartu hingga yang terakhir dibandingkan. Kartu kelima baru berhenti penting saat board mengungguli nilainya — yang merupakan kepingan puzzle terakhir.
 
 ---
 
@@ -161,15 +161,15 @@ Satu hal lagi yang layak diketahui: di Hold'em dua flush selalu dari jenis kartu
 
 ## Saat kicker Anda tak main — dan pot dibagi
 
-![Infografik: meja A-K-Q-J-10 adalah lima terbaik untuk semua orang, jadi tangan 9-7 tak bisa mengalahkannya dan pot dibagi](/images/holdem-tiebreak-best5.webp "Lima terbaik dari tujuh: saat meja sudah jadi tangan terbaik, kartu tertutup Anda gugur darinya")
+![Infografik: board A-K-Q-J-10 adalah lima terbaik untuk semua orang, jadi tangan 9-7 tak bisa mengalahkannya dan pot dibagi](/images/holdem-tiebreak-best5.webp "Lima terbaik dari tujuh: saat board sudah jadi tangan terbaik, kartu tertutup Anda gugur darinya")
 
-**Jika kartu tertutup Anda tak bisa menembus lima terbaik milik meja itu sendiri, kartu itu tak main — dan saat itu berlaku untuk semua orang, pot dibagi.**
+**Jika kartu tertutup Anda tak bisa menembus lima terbaik milik board itu sendiri, kartu itu tak main — dan saat itu berlaku untuk semua orang, pot dibagi.**
 
-Ambil meja di atas: A♠ K♥ Q♣ J♦ 10♠, Broadway sudah lengkap. Kartu 9♥ 7♠ Anda *memang* membentuk straight — K-Q-J-10-9 — tapi **lebih rendah** dari straight ace-high yang tergeletak di felt, jadi lima terbaik Anda adalah meja itu sendiri. Begitu pula milik semua orang.
+Ambil board di atas: A♠ K♥ Q♣ J♦ 10♠, Broadway sudah lengkap. Kartu 9♥ 7♠ Anda *memang* membentuk straight — K-Q-J-10-9 — tapi **lebih rendah** dari straight ace-high yang tergeletak di felt, jadi lima terbaik Anda adalah board itu sendiri. Begitu pula milik semua orang.
 
 Versi yang lebih halus adalah saat tangan Anda main tapi kicker Anda tidak. Meja A♥ K♣ Q♦ J♠ 9♥: A♠ 3♠ melawan A♦ 2♦. Keduanya memasangkan As, dan ketiga slot kicker terisi dari meja — A-A-K-Q-J untuk masing-masing pemain. Angka 3 dan 2 adalah beban mati; lima terbaik identik, ==g:chop.==
 
-![Infografik: di meja A-K-Q-J-9, A-3 dan A-2 sama-sama main A-A-K-Q-J, jadi tangan identik membagi pot](/images/holdem-tiebreak-split.webp "Saat lima terbaik cocok nilai per nilai, pot dibagi — jenis kartu tak pernah memecah seri")
+![Infografik: di board A-K-Q-J-9, A-3 dan A-2 sama-sama main A-A-K-Q-J, jadi tangan identik membagi pot](/images/holdem-tiebreak-split.webp "Saat lima terbaik cocok nilai per nilai, pot dibagi — jenis kartu tak pernah memecah seri")
 
 Mengenali runout ini sebelum taruhan river adalah keahlian tersendiri — itulah [membaca board](/id/blog/holdem-reading-the-board). Dan apa yang terjadi pada chip begitu tangan seri — bagian sama rata, chip ganjil, chop tiga arah, side pot all-in — semuanya ada di [panduan aturan split pot](/id/blog/holdem-split-pot-rules "thumb:/images/holdem-split-pot-hero.webp").
 
@@ -196,11 +196,11 @@ A. Bandingkan pasangan lebih tinggi dulu, lalu pasangan lebih rendah, lalu kicke
 
 **Q. Siapa yang menang jika dua pemain punya three of a kind yang sama?**
 
-A. Dua kartu tertinggi berikutnya — dua kicker-nya — yang memecah seri, dibandingkan dari atas. Trips yang sama praktis hanya terjadi lewat pasangan di meja; set dari pocket pair tak bisa dimiliki dua pemain sekaligus. Kalau kedua kicker juga sama, pot dibagi.
+A. Dua kartu tertinggi berikutnya — dua kicker-nya — yang memecah seri, dibandingkan dari atas. Trips yang sama praktis hanya terjadi lewat pasangan di board; set dari pocket pair tak bisa dimiliki dua pemain sekaligus. Kalau kedua kicker juga sama, pot dibagi.
 
 **Q. Apakah kartu kelima penting di poker?**
 
-A. Ya. Saat empat kartu pertama kedua tangan identik, kartu kelima menentukan seluruh pot — kicker ketiga sebuah pair, kicker tunggal sebuah two pair, kartu terendah sebuah flush, dan kartu samping di sebelah quads yang duduk di meja. Ia baru berhenti penting saat kartu meja sendiri mengungguli kartu samping yang Anda pegang — kadang karena seluruh board yang bermain dan kartu tertutup Anda gugur sepenuhnya, kadang karena satu kartu tertutup ikut bermain sementara yang lain tak pernah terhitung: A♠ 3♠ melawan A♦ 2♦ di A♥ K♣ Q♦ J♠ 9♥ adalah chop, keduanya memainkan A-A-K-Q-J.
+A. Ya. Saat empat kartu pertama kedua tangan identik, kartu kelima menentukan seluruh pot — kicker ketiga sebuah pair, kicker tunggal sebuah two pair, kartu terendah sebuah flush, dan kartu samping di sebelah quads yang duduk di board. Ia baru berhenti penting saat kartu board sendiri mengungguli kartu samping yang Anda pegang — kadang karena seluruh board yang bermain dan kartu tertutup Anda gugur sepenuhnya, kadang karena satu kartu tertutup ikut bermain sementara yang lain tak pernah terhitung: A♠ 3♠ melawan A♦ 2♦ di A♥ K♣ Q♦ J♠ 9♥ adalah chop, keduanya memainkan A-A-K-Q-J.
 
 **Q. Bisakah As dipakai sebagai angka 1 di poker?**
 
@@ -212,7 +212,7 @@ A. Bisa — straight diperingkat murni oleh kartu teratasnya, jadi 6-5-4-3-2 men
 
 **Q. Siapa yang menang jika dua pemain punya straight yang sama?**
 
-A. Tidak ada yang menang — straight dengan kartu teratas sama adalah tangan identik, jadi pot dibagi. Straight tak punya kicker, sehingga kartu tertutup sisa tak berpengaruh. Ini salah satu chop paling umum di Hold'em, biasanya saat straight-nya terbentang di meja.
+A. Tidak ada yang menang — straight dengan kartu teratas sama adalah tangan identik, jadi pot dibagi. Straight tak punya kicker, sehingga kartu tertutup sisa tak berpengaruh. Ini salah satu chop paling umum di Hold'em, biasanya saat straight-nya terbentang di board.
 
 **Q. Siapa yang menang jika dua pemain sama-sama punya flush?**
 
@@ -220,11 +220,11 @@ A. Bandingkan kelima kartu dari tertinggi ke terendah — perbedaan pertama mene
 
 **Q. Siapa yang menang jika dua pemain punya full house yang sama?**
 
-A. Full house dibandingkan trio-nya dulu, baru pasangannya: K-K-K-2-2 mengalahkan Q-Q-Q-A-A, meski pasangan As tampak lebih besar. Pasangan baru menentukan jika trio-nya seri, dan jika trio dan pasangan kedua pemain sama persis — biasanya karena sebagian besar terbentang di meja — pot dibagi. Full house tak punya kicker.
+A. Full house dibandingkan trio-nya dulu, baru pasangannya: K-K-K-2-2 mengalahkan Q-Q-Q-A-A, meski pasangan As tampak lebih besar. Pasangan baru menentukan jika trio-nya seri, dan jika trio dan pasangan kedua pemain sama persis — biasanya karena sebagian besar terbentang di board — pot dibagi. Full house tak punya kicker.
 
 **Q. Apa yang terjadi jika dua pemain sama-sama punya straight flush?**
 
-A. Kartu teratas lebih tinggi yang menang, persis seperti straight biasa. Dua straight flush dengan kartu teratas sama membagi pot — dan di Hold'em itu praktis berarti kelima kartunya ada di meja. Royal flush adalah kasus khususnya: tak terkalahkan, dan hanya "seri" jika seluruhnya kartu komunitas.
+A. Kartu teratas lebih tinggi yang menang, persis seperti straight biasa. Dua straight flush dengan kartu teratas sama membagi pot — dan di Hold'em itu praktis berarti kelima kartunya ada di board. Royal flush adalah kasus khususnya: tak terkalahkan, dan hanya "seri" jika seluruhnya kartu komunitas.
 
 **Q. Apakah jenis kartu pernah memecah seri di Texas Hold'em?**
 
@@ -243,7 +243,7 @@ A. Mungkin, tetapi tidak sering. Seri sejati hanya terjadi ketika lima kartu ter
 ## Poin-poin penting
 
 1. Setiap seri menjalankan prosedur yang sama: ==**jenis tangan → kartu pembentuk → kicker → dibagi**== — tanpa pengecualian, tanpa jenis kartu.
-2. Sebuah kicker hanya dihitung jika ia ==g:masuk lima terbaik Anda== — kartu meja bisa menggantikannya, dan meja dengan dua pasang bisa meng-counterfeit two pair Anda sepenuhnya.
+2. Sebuah kicker hanya dihitung jika ia ==g:masuk lima terbaik Anda== — kartu board bisa menggantikannya, dan board dengan dua pasang bisa meng-counterfeit two pair Anda sepenuhnya.
 3. Straight diperingkat oleh kartu teratasnya (wheel yang terendah), flush membandingkan kelimanya — dan saat tak ada yang memisahkan kedua tangan, pot di-chop.
 
 Kunci urutan lengkapnya dengan [urutan kartu poker lengkap](/id/blog/holdem-hand-rankings), pahami kartu samping itu sendiri di [apa itu kicker](/id/blog/holdem-kicker), dan lihat persis bagaimana pot seri dibagi di [panduan split pot](/id/blog/holdem-split-pot-rules).

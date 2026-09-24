@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Cooler adalah tangan di mana Anda kalah pot besar dengan holding sangat kuat yang tak pernah bisa Anda fold dengan benar — seperti pocket kings bertemu aces, atau sebuah set kalah oleh set yang lebih besar. Berbeda dari bad beat, Anda tertinggal sepanjang jalan dan tak ada kartu keberuntungan yang 'suckout' pada Anda: Anda memainkannya dengan benar dan tetap kalah. Inilah jenis bencana poker yang paling jujur.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-21",
+  updated: "2026-09-24",
   masterUpdated: "2026-09-21",
   keepImagesInBody: true,
   readTime: "10 mnt",
@@ -100,7 +100,7 @@ Tiga cara membicarakan bencana yang sama ini membingungkan banyak pemain, jadi c
 
 - **Setup** — sinonim informal untuk cooler. Ia menekankan perasaan *terjebak* — seolah deck "disusun" agar Anda kehilangan seluruh stack dengan tangan yang tak bisa Anda hindari. Jika seseorang berkata "itu setup total," maksudnya adalah cooler.
 - **Coolered (kata kerja)** — berada di pihak yang kalah dalam sebuah cooler. "Saya kena cooler" berarti Anda kalah pot besar dengan tangan yang terlalu kuat untuk fold. Menurut definisinya, mengatakannya dengan benar adalah pengakuan bahwa Anda *melakukan permainan yang benar* dan tetap kalah.
-- **Cold deck** — istilah aliran lama terkait. Di kamus ia menamai **satu tangan kalah tak terhindarkan** itu sendiri; di meja orang memakainya untuk periode saat kartu berjalan brutal melawan Anda. Secara historis ia juga merujuk pada gerakan curang: menukar masuk deck "dingin" yang telah diatur.
+- **Cold deck** — istilah aliran lama terkait. Di kamus ia menamai **satu hand kalah tak terhindarkan** itu sendiri; di meja orang memakainya untuk periode saat kartu berjalan brutal melawan Anda. Secara historis ia juga merujuk pada gerakan curang: menukar masuk deck "dingin" yang telah diatur.
 
 Satu mitos penting untuk dibunuh: **cooler tak harus all-in.** Ciri penentunya adalah tabrakan dua tangan yang terlalu-kuat-untuk-fold, bukan ukuran stack. Anda bisa kena cooler di pot besar tanpa pernah memasukkan chip terakhir Anda — ini tentang tangan, bukan tentang all-in.
 
@@ -135,7 +135,7 @@ Karena cooler tak membawa pelajaran, satu-satunya kerusakan nyata yang bisa ia t
 1. **Namai dan lepaskan.** Konfirmasi dengan tes lakmus bahwa itu benar-benar tak terhindarkan, lalu biarkan pergi — tak ada yang perlu dipelajari, jadi jangan mengulanginya.
 2. **Waspadai tilt.** Hal termahal soal cooler bukanlah pot yang Anda hilangkan; melainkan tiga tangan buruk yang Anda mainkan setelahnya untuk mencoba memenangkannya kembali. Kenali dorongan itu dan pelan-pelan.
 3. **Percayai bankroll Anda.** Cooler adalah alasan Anda menjaga bankroll cukup besar untuk menyerap variance. Satu cooler adalah kesalahan pembulatan dalam puluhan ribu tangan — ia hanya menyakiti jika Anda membiarkannya mengubah cara Anda bermain.
-4. **Tarik napas, atau berjalan.** Jika cooler besar mengguncang Anda, menjauh selama lima menit lebih murah daripada bertahan dan spewing. Tangan itu sudah selesai; keunggulan Anda ada di setiap tangan yang masih akan datang.
+4. **Tarik napas, atau berjalan.** Jika cooler besar mengguncang Anda, menjauh selama lima menit lebih murah daripada bertahan dan spewing. Hand itu sudah selesai; keunggulan Anda ada di setiap hand yang masih akan datang.
 
 ---
 
