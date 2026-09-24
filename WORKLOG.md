@@ -1,3 +1,11 @@
+## 2026-09-24 (4) — B1: EN 확률 7편 독립검수·확정·배포 (probability·pot-odds·outs·drawing-odds·equity·implied-odds·card-counting)
+
+- GPT 초안(calc-ko 워크트리 미커밋)을 main `73d0818d`로 ff 동기화(diff 바이트 동일 확인) 후 본체 검수. 경위·판정 전문 = `docs/harden-brief/probability-closeout.md` §7-C.
+- 렌즈 4종: **수학 오류 0 · 유해 조언 0**. TDA 2026 v1.1 DOCX(공식 Dropbox)와 PokerStars prohibited 원문 직접 대조 → 일치.
+- 반영: pot-odds 비율 직답 일반화 정정(X-to-1 한정 → 4-to-1 예시) · FAQ 정의문 복구 6(GEO 퇴행) · card-counting 「No」 직답 복구·입장 부인 문구 삭제 · equity 요약 충돌 해소 · set 직답 11.8%/set mining 정의 복구 등 20건. 보류: ×4 조건 「all-in」 기존 문장 4곳 → A4 잔여.
+- 게이트 audit:hard en 56/56 🔴0 · echo 0 ×7 · faq-schema 56/56 · 빌드 73 · updated 09-24.
+- 남음: core7 전파 · pot-odds 이미지 8곳(A3) · ja rake 판정.
+
 ## 2026-09-24 (3) — ms 단건 경화 2편: `holdem-hand-rankings` · `holdem-tournament-vs-cash-game`
 
 사장님 지시 「히어로이미지도 없고 부실 — 경화 프로세서대로 꼼꼼히」. 절차 = `hardening-protocol` A→B→C.

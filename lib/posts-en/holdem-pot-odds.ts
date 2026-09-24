@@ -66,7 +66,7 @@ That's it. **Required equity = your call ÷ the final pot.** If your real chance
 ## Pot Odds as a Ratio vs. Percentage
 
 > **Quick answer**
-> A pot-odds ratio compares the money you can win with the call you risk; a percentage expresses how often that risk must succeed. Getting 3-to-1, you risk one unit to win three, so you must win one time in four: 25%. A bigger reward for the same call lowers the break-even percentage.
+> A pot-odds ratio compares the money you can win with the call you risk; a percentage expresses how often that risk must succeed. At 4-to-1, you risk one unit to win four, so you must win one time in five: 20%. A bigger reward for the same call lowers the break-even percentage.
 
 The conversion is one step: a ratio of **X-to-1** means you need **1 ÷ (X + 1)** as a percentage.
 

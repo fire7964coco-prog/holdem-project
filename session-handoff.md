@@ -24,12 +24,12 @@
 
 | 순 | 묶음 | 위치·상태 | 재개 문서 |
 |---|---|---|---|
-| B1 | **EN 확률 7편 초안** (probability·pot-odds·outs·drawing-odds·equity·implied-odds·card-counting) | 🔴 **`../Holdem-calc-ko` 워크트리에 미커밋**(포스트 7 + 브리프). 자체검사만 끝, **독립검수·번역·이미지·빌드 전부 미실행**. 쟁점: pot-odds 새 직답 「첫 숫자+1의 역수」는 **x:1 정규화 비율에만 성립** → 조건 확인 후보. pot-odds 잘못 연결된 이미지 8 교체(premium 자산 덮어쓰기 금지) | 그 워크트리의 `docs/harden-brief/probability-closeout.md` §7 (main에는 없다) |
+| B1 | **EN 확률 7편** — ✅ EN 확정·배포(09-24, WORKLOG (4)). **남음**: ① core7 전파(§3-B «실제 공백만», ja/zh/zh-hant 기존 블록 갈아엎기 금지) ② pot-odds «required equity» 절 이미지 8로케일(A3 — 새 목적별 asset 제작, premium 덮어쓰기 금지) ③ ja card-counting rake 판정 ④ A4 잔여: ×4 조건 「all-in」 기존 4곳 표현 통일 여부 | `docs/harden-brief/probability-closeout.md` §7-C (이제 main에 있다) |
 | B2 | **Q8-b ID** 용어 정리 | `../Holdem-queue` clean · 준비만(25파일 179줄 범위 확정, 쓰기 0). ID showdown은 규칙 41편에서 이미 처리 → 중복 수정 금지 | `docs/harden-brief/queue-Q8-b-id-de-잔여.md` · `docs/keyword-bank/id-posting-reference.md` §5/5A |
 | B3 | **Q8-b DE** | 미착수 · 별도 회차 | 같은 브리프 |
 | B4 | 사실 묶음(미착수): SHC77/88 첫 탈락 페어 · WSOP 계정 2개(LIVE+Caesars) · paired-board 22 counterfeit 리버조건 · flush-vs-straight 반복 설명 / 표현: cooler J1 라벨 · EN hand-rankings short-deck 중복 · DE M존(연속값 유지) / **TDA 판본 부채**(2026 v1.1 번호 변경 — 전역 교체는 별건) | 범위는 `docs/en-first-queue.md` 정본에서 고정 후 | `docs/backlog-closeout-2026-09-22.md` §4 |
 
-- 워크트리 확인: `git worktree list` — calc-ko·ja·queue·zh·zh-hant 모두 HEAD `8f65168a`. **calc-ko의 미커밋 초안을 `git add -A`·강제동기화·reset으로 날리지 마라.**
+- 워크트리 확인: `git worktree list` — calc-ko·ja·queue·zh·zh-hant 모두 09-24에 main `73d0818d`로 ff 동기화(calc-ko 초안 diff 보존 확인). **calc-ko의 미커밋 초안을 `git add -A`·강제동기화·reset으로 날리지 마라.**
 - 장기 미결(자동 착수 대상 아님): re-entry zh/zh-hant 용어 판정 · solver-client5 SEO 표현 · es LATAM · 우편함 회신 대기(마지막 발신 MB-079 — 번호는 파일 재확인). 시한은 `docs/update-calendar.md`.
 
 ## 참고 경계
