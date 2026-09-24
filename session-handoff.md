@@ -20,6 +20,8 @@
 
 ## B. 이월 대기열 (GPT 작업분 · A 끝난 뒤 · 한 번에 하나만)
 
+▶ **다음 세션 = B1부터**(사장님 09-24 지정). 09-24 ms 단건 경화 2편이 낳은 EN-먼저 11건은 `docs/en-first-queue.md` §2-K(자동 착수 대상 아님).
+
 | 순 | 묶음 | 위치·상태 | 재개 문서 |
 |---|---|---|---|
 | B1 | **EN 확률 7편 초안** (probability·pot-odds·outs·drawing-odds·equity·implied-odds·card-counting) | 🔴 **`../Holdem-calc-ko` 워크트리에 미커밋**(포스트 7 + 브리프). 자체검사만 끝, **독립검수·번역·이미지·빌드 전부 미실행**. 쟁점: pot-odds 새 직답 「첫 숫자+1의 역수」는 **x:1 정규화 비율에만 성립** → 조건 확인 후보. pot-odds 잘못 연결된 이미지 8 교체(premium 자산 덮어쓰기 금지) | 그 워크트리의 `docs/harden-brief/probability-closeout.md` §7 (main에는 없다) |

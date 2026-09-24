@@ -139,6 +139,24 @@ EN 12편 정정 → 7로케일(de·es·id·ja·pt·zh·zh-hant) 전파 완료. 1
 - **J-2**(🟠 중간 · 16자리) **쿨러 «정의문» 「could never correctly fold」가 무조건형이다**(tldr + FAQ① = 8로케일 × 2자리 · **es만 `:151`에 이미 헤지 보유**).
   🔴 Q13-a는 **«정의라서 유지»로 판정했다**(§1-Q13-a 기각 ⓐ — 같은 글이 「Can You Actually Avoid Coolers?」에서 이미 별표를 달았다). **다시 열려면** 그 판정을 뒤집는 근거가 먼저다: 교열 렌즈 근거 = 「KK 예시가 **같은 문장에** 붙어 있어 정의문이 아니라 주장문으로 읽힌다」. **판정부터, 편집은 그다음.**
 
+### 2-K. ms 단건 경화(hand-rankings · tournament-vs-cash)가 올린 것 (2026-09-24 · 본체 · 렌즈 4종 · 전부 ①EN 원문 유래)
+
+ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 ms 포함 전 로케일 전파.
+
+| # | EN 파일·자리(축어) | 쟁점 | 렌즈·확신도 |
+|---|---|---|---|
+| K1 | hand-rankings 퍼즐 1 「make **trip queens**」 | 같은 글 #7 정의상 포켓 QQ + 보드 Q = **set**(trips 아님) — 자기모순 | 교열 · 높음 |
+| K2 | hand-rankings 퍼즐 2 끝 「before you assume a **straight flush**」 | 퍼즐 교훈(«그냥 flush로 과소평가하지 마라»)과 결론이 반대 방향 | 교열 · 중상 |
+| K3 | hand-rankings #6 「**The nuts:** A-K-Q-J-10 ("Broadway") is the highest straight」 | nuts ≠ 최고 스트레이트(보드에 따라 너츠가 아님) — 라벨 «Highest:» | 교열 · 중 |
+| K4 | hand-rankings L29 「by the river a lone high card is actually rarer than two pair」 | 7장 기준 high card(17.4%)는 **pair(43.8%)보다도** 드물다 — 불완전 | 교열 · 낮중 |
+| K5 | hand-rankings flush FAQ 2곳 「the highest card wins」/「the higher top card wins」 | 맨 위 카드가 같으면 다음 카드로 — 본문 #5·tiebreak 표와 결이 다름 | SEO · 중 |
+| K6 | hand-rankings 「Are … Same in Every Game?」 Short Deck 행 | 다수 숏덱(Triton 등)은 **trips > straight**도 바뀐다 — «main exception»이라 오류는 아니나 누락 | 딜러 · 낮중 |
+| K7 | hand-rankings 「90% of beginner mistakes」 · 「the same probabilities every poker solver … uses」 | 출처 없는 정밀 통계 · 솔버는 빈도표를 쓰지 않는다 | 수학·딜러 · 낮 |
+| K8 | tournament-vs-cash 세금 FAQ 「In most countries, yes」 | 영국·호주·EU 다수는 오락 도박 소득 비과세 — «many countries»로 완화 (합법성 판정 금지 범위 안에서) | 딜러·교열 · 중 |
+| K9 | tournament-vs-cash 표 「Play short scheduled events → Tournament」 | 글 전체(토너 = 긴 세션)와 모순 · 바로 아래 「Play short sessions → Cash game」 | 교열 · 높음 |
+| K10 | tournament-vs-cash 「Player situation / Better fit」·「Your situation / Start with」 표 + 불릿 2목록 | 「짧은 세션 → 캐시」가 4회 반복 — 표 하나로 통합 | 교열 · 중 |
+| K11 | tournament-vs-cash H2 「Tournament Chips Are Not Money」·「Fixed Blinds vs Rising Blinds」 첫 문장 | 직답이 아니라 도입 문장 — 직답이 둘째 단락에 있다(GEO) | SEO · 중 |
+
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - 🟠 **EN `paired-board-strategy` — 22 counterfeiting의 리버 조건 누락**(HI GTO 독립 전략·수학 검수, 2026-09-15). 원문 `a running three counterfeits it into playing the board`를 한정된 런아웃으로 명확히 할 필요가 있다. `22/6633K`는 보드 Two Pair를 플레이하지만 `22/66332`는 홀카드 22로 Full House를 만든다. HI 초안의 별도 오역(`66333`을 Two Pair로 분류)은 HI에서 고쳐 카드 재검산까지 종결했다. EN·기발행 형제 언어의 적용은 이 회차에서 하지 않았으며, 후속 회차는 실제 해당 문장을 확인한 뒤 최소 수정한다. 원본/도입 결함 구분과 증거 정본 = [HI 원문 계약](hi-gto-source-contract.md#hi-독립-검수에서-구체화한-런아웃-조건).

@@ -1,3 +1,11 @@
+## 2026-09-24 (3) — ms 단건 경화 2편: `holdem-hand-rankings` · `holdem-tournament-vs-cash-game`
+
+사장님 지시 「히어로이미지도 없고 부실 — 경화 프로세서대로 꼼꼼히」. 절차 = `hardening-protocol` A→B→C.
+- **A 준비(Opus)**: ms 정본(`ms-posting-reference`)·용어 브리프·posting.mdc 다국어·GEO 절 통독 · EN 대비 결손 실측(hr FAQ 8/20·이미지 2 누락 · tvc 06-11 판 그대로 = EN 9커밋 미반영 · 두 편 모두 `image` 필드 없음) · 키워드 DFS 2458/ms: **«susunan kad poker» 140**(기존 seoTitle «susunan tangan poker»는 null) · SERP 1페이지에 말레이어 전문 글 0 · tvc 말레이어 수요 ≈0(완결성이 목표) · GSC 90일 11/0 → 뱅크 `docs/keyword-bank/ms-core-volumes.md` · 브리프 `docs/harden-brief/ms-hand-rankings-tvc.md`.
+- **B 재저작(Fable 서브 2 병렬)**: EN 현행판 전 구조 이식(hr H2 13·FAQ 20·이미지 4 / tvc H2 15·H3 5·FAQ 10·이미지 3) · 히어로 신설 · ms 미실존 글 링크 제거·문장 보존 · readnext·Related를 ms 실존 글로 · masterUpdated hr 09-17 / tvc 09-13.
+- **C 마감(Opus)**: 게이트 전건 0 · 카드·%·금액 토큰 EN과 전부 일치(스크립트) · 퍼즐 3개 7장→베스트5 손검산 · 렌즈 4종(수학 0결함 · 딜러 유해조언 0 · 네이티브 교열 · SEO) → **ms 채택 26 · EN-먼저 11(`en-first-queue` §2-K — 퍼즐1 «trip queens»↔set 정의 · «The nuts:» 라벨 · tvc «short scheduled events» 모순 등)** · 2차 교열 → 새 결함 4(대시 공백·볼드 공백·중복 주어·제목 대소문자) 반영.
+- 빌드 73 · updated 09-24.
+
 ## 2026-09-24 (2) — 분석 처방 ⑦ 번역 반응 순: id 쿼리 맞춤 2편 (ja 보류)
 
 - GSC(08-24~09-21) ja·id 페이지를 대회/토너먼트 일반/일반으로 분해: ja 7일 노출 1,379 중 일반 글 1,138 · 일반 글 대부분 28일=7일(지난주 첫 노출) → **ja 급증은 대회 효과가 아니라 09-07~11 경화분이 이제 잡힌 것.** 사장님 판정: ja는 막 노출돼 수정 의미 작음 → 보류. 우선순위 = 번역·신규 발행.
