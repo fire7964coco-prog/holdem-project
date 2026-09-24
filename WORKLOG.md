@@ -1,3 +1,10 @@
+## 2026-09-24 (2) — 분석 처방 ⑦ 번역 반응 순: id 쿼리 맞춤 2편 (ja 보류)
+
+- GSC(08-24~09-21) ja·id 페이지를 대회/토너먼트 일반/일반으로 분해: ja 7일 노출 1,379 중 일반 글 1,138 · 일반 글 대부분 28일=7일(지난주 첫 노출) → **ja 급증은 대회 효과가 아니라 09-07~11 경화분이 이제 잡힌 것.** 사장님 판정: ja는 막 노출돼 수정 의미 작음 → 보류. 우선순위 = 번역·신규 발행.
+- id 11편 쿼리 전수(56일) + DFS 볼륨·SERP(id): 실볼륨은 3개뿐 — urutan kartu poker tertinggi 1,600(r9.6 · SERP 상위 대부분 구글번역 영문 페이지) · tingkatan kartu poker 390 · rumus poker 390(r9.3 · 의도 = 조합·확률 공식). 나머지(PKO·mystery bounty·istilah·outs) ≈10/월.
+- 반영: `holdem-hand-rankings` 본문 1문·태그 «tingkatan kartu poker» · `holdem-probability` H2 → «Rumus Poker: Cara Menghitung Peluang…» + FAQ «Apa rumus poker…»(C(52,5)=2.598.960 · 1/649.740 · C(52,2)=1.326 node 검산). updated 09-24 · masterUpdated 유지 · 편차 등재. audit id 55/55 · answer-echo·seo-sync·number-format 0 · 빌드 73.
+- 판독 10/21 → `docs/update-calendar.md`.
+
 ## 2026-09-24 — KO 대회 가이드 외부 검수(커서 보고서) 판정·반영
 
 보고서 `../홀덤검수/국내대회3편_APL_WPT_GOP_검수보고서_2026-09-23.md` 3건을 1차 출처(curl 원문 표 파싱)로 판정.

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Urutan kartu poker dari tertinggi sampai terendah: Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, Pair, dan High Card. As adalah kartu tertinggi; simbol (sekop, hati) tidak punya peringkat.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-09-17",
+  updated: "2026-09-24",
 
   masterUpdated: "2026-09-17",
   image: "/images/holdem-hand-rankings-hero.webp",
@@ -16,7 +16,7 @@ export const POST: Post = {
   keepImagesInBody: true,
   readTime: "14 mnt",
   emoji: "🃏",
-  tags: ["urutan kartu poker", "urutan kartu poker tertinggi", "susunan kartu poker", "kombinasi kartu poker", "urutan kartu remi poker", "kartu poker tertinggi", "peringkat kartu poker", "urutan kartu poker dari tertinggi sampai terendah"],
+  tags: ["urutan kartu poker", "urutan kartu poker tertinggi", "susunan kartu poker", "kombinasi kartu poker", "urutan kartu remi poker", "kartu poker tertinggi", "peringkat kartu poker", "tingkatan kartu poker", "urutan kartu poker dari tertinggi sampai terendah"],
   content: `
 Anda heads-up di river. Flush Anda jadi, Anda yakin itu yang terbaik — lalu dealer mendorong pot ke sisi lawan. Meja sudah berpasangan, lawan punya full house, dan Anda sama sekali tak menyangka.
 
@@ -28,7 +28,7 @@ Panduan ini menyelesaikan keduanya. Anda akan mendapat urutan lengkap dengan pel
 
 ## Urutan kartu poker dari tertinggi sampai terendah
 
-Mulai dari sini. Inilah urutan kartu poker lengkap — susunan (kombinasi) dari tertinggi sampai terendah, dengan peluang kira-kira menjadikan tiap tangan hingga river di Texas Hold'em.
+Mulai dari sini. Inilah urutan kartu poker lengkap — susunan (kombinasi) dan tingkatan kartu poker dari tertinggi sampai terendah, dengan peluang kira-kira menjadikan tiap tangan hingga river di Texas Hold'em.
 
 | # | Tangan | Disebut juga | Apa itu | Peluang (hingga river) |
 |------|------|------|------|------|

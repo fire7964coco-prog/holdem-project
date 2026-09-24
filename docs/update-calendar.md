@@ -37,6 +37,12 @@
 - APL 서울(10/25 종료) · GOP 인천 II(11/8) · WPT 서울(11/9) — 선례 `apt-incheon-2026-guide`처럼 우승자·엔트리·상금풀을 1차 출처로 확인해 훅을 «결과»로 전환. WPT 온라인 예선 절(10/25 마감)은 종료 후 과거형으로.
 - WPT: 10/25 이후 온라인 퀄리파이어 종료 문구 반영.
 
+### 10/21경 — id 쿼리 맞춤 2편 효과 (배포 2026-09-24)
+
+- 기준선(GSC 09-24 조회 · 56일): `/id/blog/holdem-hand-rankings` 「urutan kartu poker tertinggi」 r9.6 · `/id/blog/holdem-probability` 「rumus poker」 r9.3 · 28일 페이지 hand-rankings 161노출/1클릭 r8.9 · probability 86/0 r14.8.
+- 볼륨(DFS id 09-24): urutan kartu poker tertinggi 1,600(8월 2,900) · tingkatan kartu poker 390 · rumus poker 390. 근거 = `docs/locale-intentional-diffs.md` 2026-09-24 행.
+- 재기 = `npm run gsc:page -- id/blog/<slug> --days 28`. 좋아졌으면 같은 방식(검색어 표현 일치)을 다른 로케일에 쓸지 판단, 아니면 권위 문제로 닫는다.
+
 ### 10/7경 — AI 유입 솔버 랜딩 `solver_open` 2주 판독 (계측 배포 2026-09-23)
 - **배경**: 솔버 앱은 같은 루트 도메인이라 GA4 outbound click이 안 남는다 → /en/solver AI 유입 «절반 10초 이탈»에 «앱으로 넘어간 사람»이 섞여 판정 불가였다. 09-23 `app/layout.tsx`에 `solver_open` 이벤트를 달았다.
 - **볼 것**: GA4 eventName=`solver_open` × landingPage × sessionSource(chatgpt) × deviceCategory. 비율 = solver_open 세션 ÷ 랜딩 세션.

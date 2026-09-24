@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Hingga river Anda akan membuat one pair 43,8% dari waktu, two pair 23,5%, flush 3,0%, dan full house 2,6% — sementara royal flush hanya muncul sekali dalam sekitar 31.000 tangan.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-13",
+  updated: "2026-09-24",
   masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "13 mnt",
@@ -131,7 +131,7 @@ Situasi klasik: Anda nge-flop **flush draw** (sembilan outs). Anda akan sampai d
 
 ---
 
-## Cara Menghitung Odds Poker: Menghitung Outs dan Aturan 2 dan 4
+## Rumus Poker: Cara Menghitung Peluang dengan Outs dan Aturan 2 dan 4
 
 Anda tak bisa membawa tabel itu di kepala — tapi Anda tak perlu. Kalau Anda mencari satu ==rumus poker== yang benar-benar dipakai di meja, inilah dia: **Aturan 2 dan 4** membawa Anda dalam sekitar satu-dua persen dalam satu detik:
 
@@ -241,6 +241,10 @@ A. Sangat kecil. Bahkan saat Anda sudah memegang dua dari lima kartunya suited �
 **Q. Berapa odds dibagikan pocket aces?**
 
 A. 1 dari 221 (0,45%) untuk aces secara spesifik. Sembarang pocket pair, meski begitu, datang jauh lebih sering — sekitar 1 dari 17 tangan (5,9%).
+
+**Q. Apa rumus poker untuk menghitung peluang?**
+
+A. Ada dua rumus. Rumus kombinasi menghitung seberapa langka sebuah tangan: dari 52 kartu ada C(52,5) = 2.598.960 tangan lima-kartu, dan hanya 4 di antaranya royal flush — jadi peluangnya 4 ÷ 2.598.960 = 1 dari 649.740. Dua kartu tertutup punya C(52,2) = 1.326 kemungkinan. Rumus yang dipakai di meja adalah Aturan 2 dan 4: outs × 4 di flop, outs × 2 di turn.
 
 **Q. Apa itu Aturan 2 dan 4 di poker?**
 
