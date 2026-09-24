@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Of the 169 starting hand types, only a small top slice — about 15–20% of the hands you're dealt — is profitable for a beginner. Big pairs (AA–TT) and AK raise from any seat; the later you act, the wider you open — from ~13% under the gun to ~43% on the button (wider again in 6-max). Start with a simplified chart, add GTO preflop charts once raise-or-fold is automatic.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-09-17",
+  updated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🂡",
@@ -123,7 +123,7 @@ The core of the UTG range (a full ~13% range widens to mid pairs like 77–99, m
 Hands that look strong but are folds or marginal from UTG:
 
 - **KJo, QJo, KTo** — too many dominated scenarios against the players who call a UTG open
-- **77, 88** — fine from the button; from UTG they sit at the outer edge of the full ~13% range above, so they're the first pairs to drop when the table is tough
+- **77, 88** — fine from the button; from UTG they sit at the outer edge of the full ~13% range above, so they're the first pairs to drop when the table is tough (the dominated offsuit hands just listed go before them)
 - **Weak suited aces (A2s–A7s)** — save these for late position
 
 ### Late position (cutoff and button): the widest range

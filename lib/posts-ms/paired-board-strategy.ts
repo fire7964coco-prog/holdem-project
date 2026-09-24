@@ -9,8 +9,8 @@ export const POST: Post = {
   tldr: "Pada flop berpasangan rendah 6♣6♦3♥, BB check 97.0% walaupun mempunyai lebih banyak trips: 26 kombo 6x berbanding BTN 20. Hanya 18.4% range BB mempunyai sesuatu melebihi pair pada board; baki 81.6% banyak bergantung pada kad tinggi, dan BTN lebih kuat pada bahagian itu. Pocket pair melebihi enam pula meningkat nilainya: equity TT ialah 76.0%.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-15",
-  masterUpdated: "2026-09-02",
+  updated: "2026-09-24",
+  masterUpdated: "2026-09-24",
   readTime: "10 minit",
   emoji: "👯",
   image: "/images/gto-srp-paired-oop-ms.webp",
@@ -145,7 +145,7 @@ Jurang **30.8 mata** hampir sama dengan 29.1 mata pada [board A-high kering](/ms
 
 **Tetapi hujung bawahnya merosot dengan ketara.** 44 merealisasikan hampir seluruh bahagian equity — EQR 100.5% — dan masih memperoleh EV 3.42 bb berbanding purata range 2.17 bb. Ia bukan tangan yang sekadar cukup baik. Yang merosot ialah 22: equity 50.4%, EQR 66.0%, EV 1.83 bb.
 
-**Garis pemisahnya ialah tiga, bukan enam.** 55 dan 44 kedua-duanya lebih rendah daripada enam tetapi masih merealisasikan bahagian penuh. Dua berada di bawah *kedua-dua* rank board: ia kalah kepada 33 dan setiap tangan yang mempunyai tiga. Jika tiga muncul pada kedua-dua street seterusnya, pair dua dicounterfeit sehingga bermain board. Prinsipnya bukan "semua pair kecil bagus pada board rendah", tetapi **"pair melebihi tiga masih baik — pair dua yang terjejas."**
+**Garis pemisahnya ialah tiga, bukan enam.** 55 dan 44 kedua-duanya lebih rendah daripada enam tetapi masih merealisasikan bahagian penuh. Dua berada di bawah *kedua-dua* rank board: ia kalah kepada 33 dan setiap tangan yang mempunyai tiga. Jika tiga kedua muncul pada turn atau river, pair dua dicounterfeit sehingga bermain board — pada 6-6-3-3-K, 22 hanya two pair milik board (hanya kad 2 pada street yang satu lagi menyelamatkannya). Prinsipnya bukan "semua pair kecil bagus pada board rendah", tetapi **"pair melebihi tiga masih baik — pair dua yang terjejas."**
 
 Satu lagi kumpulan mudah terlepas pandang: **mana-mana tangan yang mempunyai tiga** juga menjadi two pair. A3 bermain sebagai enam dan tiga dengan kicker Ace — menewaskan 22 tetapi kalah kepada setiap pocket pair melebihi tiga.
 

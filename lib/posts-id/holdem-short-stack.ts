@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Short stack (kira-kira di bawah 20–25 big blind) tak bisa main poker postflop normal, dan dari sekitar 15 big blind ke bawah ia beralih ke push/fold: masuk all-in first-in untuk menjaga fold equity Anda, dan jangan pernah open-limp atau min-raise-lalu-fold. Shove lebih lebar dari posisi akhir, jaga calling range lebih ketat daripada shoving range Anda, dan jangan blind down sampai habis 'menunggu tangan bagus' — fold equity adalah senjata Anda, dan di bawah sekitar 8 big blind ia memudar dengan cepat.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-24",
+  masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "13 mnt",
   emoji: "📉",
@@ -76,9 +76,9 @@ Jebakannya adalah fold equity ==meluruh saat stack Anda menyusut==. Di 12–15 b
 | Zona | M-ratio | Kira-kira (tanpa ante) | Cara bermain |
 |:--|:--:|:--:|:--|
 | 🟢 Hijau | 20+ | ~30bb+ | Persenjataan penuh, main poker normal |
-| 🟡 Kuning | 10–20 | ~15–30bb | Ketatkan, mulai cari peluang shove |
-| 🟠 Oranye | 6–10 | ~9–15bb | Push/fold; agresi first-in, curi blind |
-| ⚠ Merah | 1–5 | ~1,5–8bb | Shove-atau-fold tangan yang masuk akal apa pun |
+| 🟡 Kuning | 10 hingga di bawah 20 | ~15–30bb | Ketatkan, mulai cari peluang shove |
+| 🟠 Oranye | 6 hingga di bawah 10 | ~9–15bb | Push/fold; agresi first-in, curi blind |
+| ⚠ Merah | 1 hingga di bawah 6 | ~1,5–9bb | Shove-atau-fold tangan yang masuk akal apa pun |
 | ⚫ Mati | di bawah 1 | di bawah ~1,5bb | Shove dua kartu apa pun, spot playable berikutnya |
 
 </div>
@@ -188,7 +188,7 @@ A. Sebagai default pemula, tidak — min-raise-lalu-fold adalah leak klasik. Seb
 
 **Q. Apa itu M-ratio di poker?**
 
-A. M-ratio adalah stack Anda dibagi biaya satu orbit (small blind + big blind + ante) — berapa banyak putaran yang bisa Anda bertahan dengan fold. Zona Harrington adalah Hijau (20+), Kuning (10–20), Oranye (6–10), Merah (1–5), dan Mati (di bawah 1). Makin rendah M Anda, makin banyak spot shove-atau-fold yang harus Anda ambil. Tanpa ante, M kira-kira big blind Anda ÷ 1,5.
+A. M-ratio adalah stack Anda dibagi biaya satu orbit (small blind + big blind + ante) — berapa banyak putaran yang bisa Anda bertahan dengan fold. Zona Harrington adalah Hijau (20+), Kuning (10 hingga di bawah 20), Oranye (6 hingga di bawah 10), Merah (1 hingga di bawah 6), dan Mati (di bawah 1). Makin rendah M Anda, makin banyak spot shove-atau-fold yang harus Anda ambil. Tanpa ante, M kira-kira big blind Anda ÷ 1,5.
 
 **Q. Apa itu fold equity dan kenapa bisa menyusut?**
 

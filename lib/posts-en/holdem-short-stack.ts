@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A short stack (roughly under 20–25 big blinds) can't play normal postflop poker, and from about 15 big blinds down it switches to push/fold: move all-in first-in to keep your fold equity, and never open-limp or min-raise-then-fold. Shove wider from late position, keep your calling range tighter than your shoving range, and don't blind down to nothing 'waiting for a hand' — your fold equity is the weapon, and it fades hard below about 8 big blinds.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-09-11",
+  updated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "📉",
@@ -75,9 +75,9 @@ The catch is that fold equity ==decays as your stack shrinks==. At 12–15 big b
 | Zone | M-ratio | Roughly (no antes) | How to play |
 |:--|:--:|:--:|:--|
 | 🟢 Green | 20+ | ~30bb+ | Full arsenal, play normal poker |
-| 🟡 Yellow | 10–20 | ~15–30bb | Tighten up, start looking for shoves |
-| 🟠 Orange | 6–10 | ~9–15bb | Push/fold; first-in aggression, steal blinds |
-| ⚠ Red | 1–5 | ~1.5–8bb | Shove-or-fold any reasonable hand |
+| 🟡 Yellow | 10 to under 20 | ~15–30bb | Tighten up, start looking for shoves |
+| 🟠 Orange | 6 to under 10 | ~9–15bb | Push/fold; first-in aggression, steal blinds |
+| ⚠ Red | 1 to under 6 | ~1.5–9bb | Shove-or-fold any reasonable hand |
 | ⚫ Dead | under 1 | under ~1.5bb | Shove any two cards, next playable spot |
 
 </div>
@@ -187,7 +187,7 @@ A. As a beginner default, no — min-raise-then-fold is a classic leak. As an ad
 
 **Q. What is the M-ratio in poker?**
 
-A. The M-ratio is your stack divided by the cost of one orbit (small blind + big blind + antes) — how many rounds you can survive folding. Harrington's zones are Green (20+), Yellow (10–20), Orange (6–10), Red (1–5), and Dead (under 1). The lower your M, the more you must take shove-or-fold spots. With no antes, M is roughly your big blinds ÷ 1.5.
+A. The M-ratio is your stack divided by the cost of one orbit (small blind + big blind + antes) — how many rounds you can survive folding. Harrington's zones are Green (20+), Yellow (10 to under 20), Orange (6 to under 10), Red (1 to under 6), and Dead (under 1). The lower your M, the more you must take shove-or-fold spots. With no antes, M is roughly your big blinds ÷ 1.5.
 
 **Q. What is fold equity and why does it shrink?**
 

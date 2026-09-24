@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un cooler es una mano en la que pierdes un bote grande con una mano muy fuerte que jamás podrías foldear correctamente — como una pareja de reyes que choca con ases, o un trío que pierde ante un trío mayor. A diferencia de un bad beat, ibas por detrás desde el principio y ninguna carta afortunada te 'cazó': jugaste bien y aun así perdiste. Es el desastre más honesto del póker.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-21",
-  masterUpdated: "2026-09-21",
+  updated: "2026-09-24",
+  masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🧊",
@@ -26,7 +26,7 @@ Un **cooler** es una mano en la que ligas algo muy fuerte, pierdes un bote grand
 ### El cooler, de un vistazo
 
 :::stripe
-Por detrás todo el rato | Dónde estabas cuando entró el dinero
+Por detrás al entrar | Dónde estabas cuando entró el dinero
 Sin suckout | El ganador iba delante de principio a fin
 Demasiado fuerte para foldear | Por qué lo pagaste
 No es culpa tuya | La única derrota por la que no deberías tiltearte

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A cooler is a hand where you lose a big pot with a very strong holding you could never correctly fold — like pocket kings running into aces, or a set losing to a bigger set. Unlike a bad beat, you were behind the whole way and no lucky card 'sucked out' on you: you played it right and still lost. It's poker's most honest kind of disaster.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-21",
+  updated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🧊",
@@ -25,7 +25,7 @@ A **cooler** is a hand where you make a very strong holding, lose a big pot, and
 ### The cooler, at a glance
 
 :::stripe
-Behind the whole way | Where you stood when the money went in
+Behind going in | Where you stood when the money went in
 No suckout | The winner led start to finish
 Too strong to fold | Why you paid it off
 Not your fault | The one loss you shouldn't tilt over

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Von den 169 Starthand-Typen ist nur eine kleine Spitzengruppe – etwa 15–20% der Hände, die du bekommst – für einen Anfänger profitabel. Große Paare (AA–TT) und AK raist du aus jeder Position; je später du agierst, desto weiter öffnest du – von ~13% unter der Gun bis ~43% am Button (im 6-Max nochmals weiter). Starte mit einem vereinfachten Chart, füge GTO-Preflop-Charts hinzu, sobald Raise-or-Fold automatisch sitzt.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-09-19",
-  masterUpdated: "2026-09-17",
+  updated: "2026-09-24",
+  masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "🂡",
@@ -130,7 +130,7 @@ Der Kern der UTG-Range (eine volle ~13%-Range weitet sich zu Mid Pairs wie 77–
 Hände, die stark aussehen, von UTG aber Folds oder Grenzfälle sind:
 
 - **KJo, QJo, KTo** – zu viele dominierte Szenarien gegen die Spieler, die einen UTG-Open callen
-- **77, 88** – vom Button okay; von UTG sitzen sie am äußeren Rand der vollen ~13%-Range von oben und fliegen deshalb als erste Paare raus, wenn der Tisch hart ist
+- **77, 88** – vom Button okay; von UTG sitzen sie am äußeren Rand der vollen ~13%-Range von oben und fliegen deshalb als erste Paare raus, wenn der Tisch hart ist (die dominierten Offsuit-Hände darüber gehen noch vor ihnen)
 - **Schwache Suited Aces (A2s–A7s)** – heb dir die für späte Position auf
 
 ### Späte Position (Cutoff und Button): die weiteste Range

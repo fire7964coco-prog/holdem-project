@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "cooler 就是你握着一手极强的牌、却输掉一个大底池，而且这手牌你根本不可能正确地弃掉——比如口袋 KK 撞上 AA，或者暗三条输给更大的暗三条。跟 bad beat 不一样：你自始至终都落后，没有哪张幸运牌把你“翻盘”；你打得完全正确，却还是输了。这是扑克里最诚实的一种灾难。",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-21",
-  masterUpdated: "2026-09-21",
+  updated: "2026-09-24",
+  masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "10 分钟",
   emoji: "🧊",
@@ -26,7 +26,7 @@ export const POST: Post = {
 ### 一眼看懂 cooler
 
 :::stripe
-自始至终落后 | 筹码进池时你所处的位置
+投入时已落后 | 筹码进池时你所处的位置
 没有翻盘 | 赢家从头领到尾
 太强，弃不掉 | 你为什么付了这笔钱
 不怪你 | 唯一一种你不该上头的失败

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "De los 169 tipos de mano inicial, solo una pequeña franja superior — cerca del 15–20% de las manos que te reparten — es rentable para un principiante. Los pares grandes (AA–TT) y AK suben desde cualquier asiento; cuanto más tarde actúas, más abres tu rango — desde ~13% en UTG hasta ~43% en el botón (más amplio aún en 6-max). Empieza con una tabla simplificada y añade las tablas preflop GTO cuando el subir-o-foldear ya te salga automático.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-09-19",
-  masterUpdated: "2026-09-17",
+  updated: "2026-09-24",
+  masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🂡",
@@ -126,7 +126,7 @@ El núcleo del rango de UTG (un rango completo de ~13% se ensancha con parejas m
 Manos que parecen fuertes pero desde UTG son fold o marginales:
 
 - **KJo, QJo, KTo** — demasiados escenarios dominados frente a los jugadores que igualan una apertura de UTG
-- **77, 88** — bien desde el botón; desde UTG quedan en el borde exterior del rango completo de ~13% de arriba, así que son las primeras parejas que caen cuando la mesa es dura
+- **77, 88** — bien desde el botón; desde UTG quedan en el borde exterior del rango completo de ~13% de arriba, así que son las primeras parejas que caen cuando la mesa es dura (las manos offsuit dominadas de arriba caen antes que ellas)
 - **Ases débiles del mismo palo (A2s–A7s)** — guárdalos para posición tardía
 
 ### Posición tardía (cutoff y botón): el rango más amplio

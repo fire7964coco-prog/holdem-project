@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un short stack (más o menos por debajo de 20–25 ciegas grandes) no puede jugar póker postflop normal, y desde unas 15 ciegas grandes hacia abajo cambia al push/fold: vas all-in siendo el primero en entrar para conservar tu fold equity, y nunca haces open-limp ni min-raise para luego foldear. Vas de shove más amplio desde posición tardía, mantienes tu rango de igualar más cerrado que tu rango de shove, y no te dejas fundir hasta nada 'esperando una mano': tu fold equity es el arma, y por debajo de unas 8 ciegas grandes se apaga a toda velocidad.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-24",
+  masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "📉",
@@ -76,9 +76,9 @@ La trampa es que la fold equity ==decae a medida que tu stack encoge==. Con 12�
 | Zona | La M | Aprox. (sin antes) | Cómo jugar |
 |:--|:--:|:--:|:--|
 | 🟢 Verde | 20+ | ~30bb+ | Arsenal completo, juega póker normal |
-| 🟡 Amarilla | 10–20 | ~15–30bb | Cierra el rango, empieza a buscar shoves |
-| 🟠 Naranja | 6–10 | ~9–15bb | Push/fold; agresión siendo primero, roba ciegas |
-| ⚠ Roja | 1–5 | ~1.5–8bb | Shove o foldear cualquier mano razonable |
+| 🟡 Amarilla | 10 a menos de 20 | ~15–30bb | Cierra el rango, empieza a buscar shoves |
+| 🟠 Naranja | 6 a menos de 10 | ~9–15bb | Push/fold; agresión siendo primero, roba ciegas |
+| ⚠ Roja | 1 a menos de 6 | ~1.5–9bb | Shove o foldear cualquier mano razonable |
 | ⚫ Muerta | menos de 1 | menos de ~1.5bb | Shove con dos cartas cualesquiera, en el próximo spot jugable |
 
 </div>
@@ -188,7 +188,7 @@ A. Como default de principiante, no — el min-raise para luego foldear es un le
 
 **Q. ¿Qué es la M en póker?**
 
-A. La M es tu stack dividido por el coste de una órbita (ciega pequeña + ciega grande + antes) — cuántas rondas puedes sobrevivir foldeando. Las zonas de Harrington son Verde (20+), Amarilla (10–20), Naranja (6–10), Roja (1–5) y Muerta (menos de 1). Cuanto más baja tu M, más tienes que tomar spots de shove o foldear. Sin antes, la M es más o menos tus ciegas grandes ÷ 1.5.
+A. La M es tu stack dividido por el coste de una órbita (ciega pequeña + ciega grande + antes) — cuántas rondas puedes sobrevivir foldeando. Las zonas de Harrington son Verde (20+), Amarilla (10 a menos de 20), Naranja (6 a menos de 10), Roja (1 a menos de 6) y Muerta (menos de 1). Cuanto más baja tu M, más tienes que tomar spots de shove o foldear. Sin antes, la M es más o menos tus ciegas grandes ÷ 1.5.
 
 **Q. ¿Qué es el equilibrio de Nash / los rangos Nash?**
 

@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "strategy",
   date: "2026-06-14",
   updated: "2026-09-24",
-  masterUpdated: "2026-09-17",
+  masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "10 mnt",
   emoji: "🂡",
@@ -124,7 +124,7 @@ Inti dari range UTG (range penuh ~13% melebar ke pair menengah seperti 77–99, 
 Tangan yang terlihat kuat tapi jadi fold atau marginal dari UTG:
 
 - **KJo, QJo, KTo** — terlalu banyak skenario terdominasi melawan pemain yang call open UTG
-- **77, 88** — bagus dari button; dari UTG keduanya duduk di tepi terluar range ~13% penuh di atas, jadi merekalah pair pertama yang dilepas saat mejanya keras
+- **77, 88** — bagus dari button; dari UTG keduanya duduk di tepi terluar range ~13% penuh di atas, jadi merekalah pair pertama yang dilepas saat mejanya keras (hand offsuit terdominasi di atas dilepas lebih dulu)
 - **Suited ace lemah (A2s–A7s)** — simpan ini untuk posisi belakang
 
 ### Posisi belakang (cutoff dan button): range paling lebar

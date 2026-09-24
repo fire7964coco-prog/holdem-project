@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ein Cooler ist eine Hand, bei der du einen großen Pot mit einer sehr starken Holding verlierst, die du niemals korrekt folden könntest – wie Pocket Kings, die auf Asse treffen, oder ein Set, das gegen ein größeres Set verliert. Anders als beim Bad Beat lagst du die ganze Zeit hinten und keine Glückskarte hat dich „ausgesaugt“: Du hast alles richtig gemacht und trotzdem verloren. Es ist die ehrlichste Art von Poker-Katastrophe.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-21",
-  masterUpdated: "2026-09-21",
+  updated: "2026-09-24",
+  masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "🧊",
@@ -26,7 +26,7 @@ Ein **Cooler** ist eine Hand, bei der du eine sehr starke Holding baust, einen g
 ### Der Cooler auf einen Blick
 
 :::stripe
-Die ganze Zeit hinten | Wo du standest, als das Geld reinging
+Hinten beim Reingehen | Wo du standest, als das Geld reinging
 Kein Suckout | Der Gewinner führte von Anfang bis Ende
 Zu stark zum Folden | Warum du bezahlt hast
 Nicht deine Schuld | Der eine Verlust, über den du nicht tilten solltest

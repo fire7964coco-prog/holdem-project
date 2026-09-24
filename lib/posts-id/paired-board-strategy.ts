@@ -9,8 +9,8 @@ export const POST: Post = {
   tldr: "Pada 6♣6♦3♥, big blind check 97,0% meski memiliki 26 combo trips, lebih banyak daripada 20 milik button. Trips hanya sebagian kecil range: 18,4% range BB memiliki hand di atas pair bawaan board, sementara 81,6% sisanya mengandalkan high card. Pocket pair yang lebih tinggi dari enam menjadi kuat; TT memiliki equity 76,0% dalam contoh ini.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-15",
-  masterUpdated: "2026-09-02",
+  updated: "2026-09-24",
+  masterUpdated: "2026-09-24",
   readTime: "10 mnt",
   emoji: "👯",
   image: "/images/gto-srp-paired-oop-id.webp",
@@ -145,7 +145,7 @@ Angka merupakan rata-rata enam combo setiap pocket pair; combo individual dapat 
 
 Perbedaan besar muncul di bagian bawah. **44 masih merealisasikan hampir seluruh bagian equity-nya**, dengan EQR 100,5% dan EV 3,42bb, di atas rata-rata range 2,17bb. EQR 100% bukan tanda impas. Yang tertinggal adalah 22: equity 50,4%, EQR 66,0%, dan EV 1,83bb.
 
-**Batas pentingnya angka tiga, bukan enam.** 55 dan 44 sama-sama di bawah enam, tetapi tetap merealisasikan seluruh bagian equity. Pocket 22 berada di bawah kedua rank board, kalah dari 33 serta setiap hand yang memegang angka tiga. Jika turn dan river sama-sama tiga, board dapat meng-counterfeit 22 sehingga pocket pair itu tak lagi digunakan. Jadi, kesimpulannya bukan “semua pair kecil bagus di board rendah”, melainkan **pair di atas tiga masih bekerja baik pada contoh ini, sementara 22 tertinggal**.
+**Batas pentingnya angka tiga, bukan enam.** 55 dan 44 sama-sama di bawah enam, tetapi tetap merealisasikan seluruh bagian equity. Pocket 22 berada di bawah kedua rank board, kalah dari 33 serta setiap hand yang memegang angka tiga. Jika angka tiga kedua muncul di turn atau river, board meng-counterfeit 22 sehingga pocket pair itu tak lagi digunakan — di 6-6-3-3-K, 22 hanya memainkan two pair milik board (hanya kartu 2 di street lainnya yang menyelamatkannya). Jadi, kesimpulannya bukan “semua pair kecil bagus di board rendah”, melainkan **pair di atas tiga masih bekerja baik pada contoh ini, sementara 22 tertinggal**.
 
 Ada satu kelompok two pair yang mudah terlewat: **hand yang memiliki angka tiga**. A3 memainkan pair enam dan pair tiga dengan kicker As. Hand itu mengalahkan 22, tetapi kalah dari pocket pair di atas tiga.
 

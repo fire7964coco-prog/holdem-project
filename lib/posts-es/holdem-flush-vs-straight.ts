@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "En el Texas Hold'em, un color (cinco cartas del mismo palo) siempre gana a una escalera (cinco cartas en secuencia), sin excepciones. La razón es pura frecuencia: hay unas 5,108 formas de ligar un color frente a 10,200 de armar una escalera, así que el color es casi el doble de raro entre las manos de cinco cartas; sobre las siete cartas hasta el river son 3.03% frente a 4.62%. Al color solo le ganan el full, el póker, la escalera de color, la escalera real y un color más alto.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-13",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-24",
+  masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "⚡",
@@ -136,7 +136,7 @@ Sí, un color puede ser perfectamente más alto que otro. **Los palos son irrele
 | A | A♠ J♠ 9♠ 6♠ 2♠ | **Gana** |
 | B | K♥ Q♥ 10♥ 8♥ 3♥ | Pierde |
 
-El As del Jugador A supera al rey del Jugador B en la primera carta, así que gana A. Un color de picas **no** gana a un color de corazones — solo cuentan los valores. (En una mano real de Hold'em los dos colores son siempre del *mismo* palo, porque ambos se arman con las cartas comunitarias compartidas; este ejemplo abstracto solo sirve para dejar claro que lo que decide un color son los valores, nunca el palo.)
+El As del Jugador A supera al rey del Jugador B en la primera carta, así que gana A. Un color de picas **no** gana a un color de corazones — solo cuentan los valores. (En una mano real de Hold'em los dos colores son siempre del *mismo* palo, porque ambos se arman con las cartas comunitarias compartidas; los palos distintos de este ejemplo son solo ilustrativos.)
 
 Las escaleras son aún más simples: compara **solo la carta más alta** — no hay kicker.
 

@@ -39,7 +39,6 @@
 | ㉗ | ✅ **종결(queue Q1 `16e8a9ac` · 09-11)** — 콤보 실측 58/112/172 · 13% 유지 · 목록 «지위» 문단 신설 EN+7로케일 · 판정표 `harden-queue-진행` §1-Q1 |
 | ㉙ | 🟢 **거의 종결** — 남은 것은 **이미지 1장 제작**뿐(`holdem-starting-hands-premium`·`weak-ace-trap` 쌍 중 1장) |
 | ㊲ | ⛔ **대상 부재(queue Q5-b 실측 · 09-13)** — 「It works precisely because tanking is free」류 문구가 **전 로케일 0건**이다. 🔴 «재론 절차 필요»가 아니라 **고칠 것이 없다** — 다시 파지 마라 |
-| ㊹ | 🆕(queue Q1-11 · 09-11) EN `holdem-starting-hands-chart:126` 「77·88이 테이블이 셀 때 **가장 먼저** 떨어지는 페어」 — 실전 순서 반대(셋마이닝 플랜 있는 77·88보다 지배당하는 오프수트·얇은 수딧 브로드웨이가 먼저 나간다). 8로케일 동형 · m089 §2-C #17·#24·#25(77/88/99 배치)와 같은 자리 |
 | ㊺ | 🆕(queue Q1-11) `lib/render-markdown.ts:213,215` PDF 카드 크롬 영어 하드코딩 — `locale` 인자가 있는데 안 쓴다. 전 로케일 노출(코드 1곳) |
 
 | ㊻ | 🆕(queue Q4-7 ① · 09-12) 🔴 EN `holdem-tiebreak-rules` 「The only suit order in the tournament rulebook belongs to stud and razz」는 **틀렸다** — 같은 룰북 용어집 `DEALER BUTTON` 축어 «the highest card by rank and suit to determine the initial position of the Dealer Button» = 스터드·라즈 밖에서 무늬 서열을 쓴다. 같은 문단이 바로 앞에서 그 드로를 설명해 **자기모순**이기도 하다. 8로케일 동형 |
@@ -47,7 +46,6 @@
 
 | ㊽ | 🆕(queue Q2c-2 ① · 09-12) 🟠 **§14-A 직답 공백** — `holdem-limping` 「4가지 이유」 절과 `holdem-drawing-odds` 셋마이닝 절에 직답 블록이 **de·ja·zh·zh-hant에만 있고 en·es·id·pt엔 없다**(교열 렌즈 실측). Q2-c의 이미지 삭제로 그 절이 H2 → 본문 직행이 돼 더 드러난다 |
 | ㊾ | 🟢 **종결(queue Q7-a · 2026-09-12)** — `render-markdown`의 `height="630"`을 **파일별 치수표**(`lib/image-dims.ts`)로 교체했다. «675로 바꾸면 비-675가 어긋난다»는 딜레마를 «한 값으로 고정하지 않는 것»으로 풀었다. 산출물 실측 = 본문 `<img>` **1,417개 전부 실제 치수**(그 전엔 1,364개가 틀린 자리 예약 = CLS) · 게이트 `check:image-dims`가 `prebuild`에 물려 있다 |
-| ⓐ | 🆕(queue Q5a-7 · 09-13) 🟠 **EN `holdem-flush-vs-straight:138` 한 문단 안 동어반복** — 「only the ranks matter. (… ranks, never suits, decide a flush.)」. es에 이식한 괄호절이 같은 구조를 복제했는데 **EN 원본이 그렇다**(교열 렌즈). 고치려면 EN부터 · 8로케일 동형 |
 🪶 ㉜㉝㉞(인포그래픽 alt 3건)는 ✅ 종결(`781301e4`).
 
 ---
@@ -106,10 +104,6 @@ EN 12편 정정 → 7로케일(de·es·id·ja·pt·zh·zh-hant) 전파 완료. 1
 
 - Q6c#1 AK vs 포켓페어(전수 열거 밴드 · EN + 7로케일 + zh-hant probability) · #2 kicker High card 행(1+4 · 8로케일 × 8자리) · #3 glossary 「pairs」→「terms」 · #4 Short Deck 「often」→ 규칙(WSOP Rule 366 · 13로케일). 되돌리지 마라 = `docs/harden-queue-진행.md` §3 「Q5-c」 6항 · 정본 승격 = `settled-decisions` §3-F.
 
-### 2-G. queue 회차 Q4-c가 올린 것 (2026-09-17 · 레인 직접 등재)
-
-- **G-1**(낮음) `holdem-tournament` L179 「Set up an account on the event's platform (e.g., the WSOP LIVE app for WSOP, …)» — WSOP는 **계정 2개**(WSOP LIVE + Caesars Rewards · 룰북 Rule 4 L66~68 「Registration for both accounts is required to participate in any WSOP Event» · Rule 10). 예시를 「the WSOP LIVE app plus a Caesars Rewards account for WSOP»로. es는 Q4-c에서 「—más Caesars Rewards—»로 앞섰다(`lib/posts-es/holdem-tournament.ts:180`) · L302 체크리스트 「loyalty card if required»도 같은 자리(es L307 「en el WSOP es obligatoria: Caesars Rewards»). EN 정정 시 ar·de·id·ja·pt·zh·zh-hant 전파(fr는 EN 미러 여부 확인).
-
 ### 2-H. queue 회차 Q10이 올린 것 (2026-09-21 · 머지 `51d79100` · **판정만 하고 안 고친 3건** · 전부 ①원본)
 
 > 자리 = **계산기 도구**(`components/calculator/` + 12사본 + ko 클라이언트)이지 포스트가 아니다. 근거 전문 = `docs/harden-queue-진행.md` §5 Q10-4.
@@ -133,9 +127,6 @@ EN 12편 정정 → 7로케일(de·es·id·ja·pt·zh·zh-hant) 전파 완료. 1
 
 > 둘 다 **`holdem-cooler` 한 글** 안이고 **EN-먼저 + 8로케일**이다. 🔴 이 3편은 꼬리 17로케일에도 KO에도 **없다**(실측) — 전파 범위는 `en de es id ja pt zh zh-hant` 여덟뿐.
 
-- **J-1**(🟠 중간 · 약 40자리) **쿨러 글의 「behind the whole way」 계열이 그대로다**(tldr · 스트라이프 값 · FAQ 2 · 요약 = **8로케일 × 약 5자리**).
-  Q13-a가 **짝 글 `holdem-bad-beat`에서 고친 «라벨↔값 어긋남»**(값 「whole way」 ↔ 라벨 「when the money went in」)이 **쿨러에 거울상으로 남았다**(딜러 렌즈 5).
-  🔴 **명제 자체는 정의상 참이다** — 쿨러는 서크아웃이 없으니 머니인 시점부터 리버까지 계속 뒤진다. **결함은 «라벨 정합»뿐**이라 사실 정정이 아니라 **문면 수렴 회차**다. 열 때 §3-Q(값 칸은 스탯이다)를 같이 읽어라.
 - **J-2**(🟠 중간 · 16자리) **쿨러 «정의문» 「could never correctly fold」가 무조건형이다**(tldr + FAQ① = 8로케일 × 2자리 · **es만 `:151`에 이미 헤지 보유**).
   🔴 Q13-a는 **«정의라서 유지»로 판정했다**(§1-Q13-a 기각 ⓐ — 같은 글이 「Can You Actually Avoid Coolers?」에서 이미 별표를 달았다). **다시 열려면** 그 판정을 뒤집는 근거가 먼저다: 교열 렌즈 근거 = 「KK 예시가 **같은 문장에** 붙어 있어 정의문이 아니라 주장문으로 읽힌다」. **판정부터, 편집은 그다음.**
 
@@ -159,15 +150,8 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
-- 🟠 **EN `paired-board-strategy` — 22 counterfeiting의 리버 조건 누락**(HI GTO 독립 전략·수학 검수, 2026-09-15). 원문 `a running three counterfeits it into playing the board`를 한정된 런아웃으로 명확히 할 필요가 있다. `22/6633K`는 보드 Two Pair를 플레이하지만 `22/66332`는 홀카드 22로 Full House를 만든다. HI 초안의 별도 오역(`66333`을 Two Pair로 분류)은 HI에서 고쳐 카드 재검산까지 종결했다. EN·기발행 형제 언어의 적용은 이 회차에서 하지 않았으며, 후속 회차는 실제 해당 문장을 확인한 뒤 최소 수정한다. 원본/도입 결함 구분과 증거 정본 = [HI 원문 계약](hi-gto-source-contract.md#hi-독립-검수에서-구체화한-런아웃-조건).
-
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.
 - ✅ **종결(queue Q4-a · 2026-09-12)** — EN 경쟁 페이지 배타 주장 제거(`rake`·`tournament`·`3bet`·`straddle`·`ept`). 🔴 단 「most guides / almost every article」류 **완화형은 유지가 판정**이다(차별점 서술 · E-E-A-T 목소리 — 다시 지우자고 하지 마라).
 - ✅ **종결(queue Q4-a 실측 · 2026-09-12)** — EN↔pt FAQ 개수 드리프트는 **실측 0**이었다(bubble·short-stack·tournament·icm).
 - ✅ **종결(낡은 항목 · queue Q4-a 확인)** — en `holdem-game-order`의 seoTitle은 **이미 「who bets first」 축**이다(`updated: 2026-09-11`).
 - 🟠 EN 제목 보강 3편(`holdem-3bet`·`holdem-continuation-bet`·`holdem-pot-odds` — 제목에 poker/hold'em 없음) 🔴 **GSC 먼저**(노출 붙었으면 교체 순간 측정이 끊긴다) · 사장님 결재 대기
-- 🆕 🟠 **EN `holdem-hand-rankings` — 리드 산문 ↔ 같은 절 비교표 셀이 축어 중복**(queue Q7-b · 2026-09-13 · 렌즈 3 재검).
-  자리 = 「Short Deck … a flush beats a full house … **A-6-7-8-9 counts as a straight**」가 **산문과 표 셀에 두 번** 나온다.
-  ja가 그 구조를 직답 블록으로 승계해 `check:answer-echo`에 잡혔는데(ja 「A-6-7-8-9をストレート扱いすることも」) **뿌리는 EN**이다.
-  🔴 **EN엔 직답 블록이 없어 이 게이트가 원리상 EN을 못 본다** — 로케일 쪽만 고치면 다음 번역이 같은 구조를 다시 들여온다. **EN부터.**
-  🪶 «표 셀과 산문의 중복»은 §14-A 직답 축과 다른 축이다 — 표를 지우는 게 아니라 **산문 쪽을 한정**하는 것이 처방이다.

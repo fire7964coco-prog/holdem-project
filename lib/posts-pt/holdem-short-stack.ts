@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Um short stack (grosso modo abaixo de 20–25 big blinds) não consegue jogar poker pós-flop normal, e de uns 15 big blinds para baixo ele troca para push/fold: vai de all-in first-in para manter a fold equity, e nunca faz open-limp nem min-raise-depois-fold. Dê shove com mais mãos da late position, mantenha seu range de pagar mais fechado que o de shove, e não fique blindando até o zero 'esperando uma mão' — a fold equity é a arma, e abaixo de uns 8 big blinds ela some rápido.",
   category: "tournament",
   date: "2026-07-09",
-  updated: "2026-09-17",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-24",
+  masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "📉",
@@ -76,9 +76,9 @@ O detalhe é que a fold equity ==decai conforme seu stack encolhe==. Com 12–15
 | Zona | M-ratio | Grosso modo (sem antes) | Como jogar |
 |:--|:--:|:--:|:--|
 | 🟢 Verde | 20+ | ~30bb+ | Arsenal completo, jogue poker normal |
-| 🟡 Amarelo | 10–20 | ~15–30bb | Feche o jogo, comece a procurar shoves |
-| 🟠 Laranja | 6–10 | ~9–15bb | Push/fold; agressão first-in, roube blinds |
-| ⚠ Vermelho | 1–5 | ~1,5–8bb | Shove-ou-folda qualquer mão razoável |
+| 🟡 Amarelo | 10 a menos de 20 | ~15–30bb | Feche o jogo, comece a procurar shoves |
+| 🟠 Laranja | 6 a menos de 10 | ~9–15bb | Push/fold; agressão first-in, roube blinds |
+| ⚠ Vermelho | 1 a menos de 6 | ~1,5–9bb | Shove-ou-folda qualquer mão razoável |
 | ⚫ Morto | abaixo de 1 | abaixo de ~1,5bb | Dê shove com quaisquer duas cartas, no próximo spot jogável |
 
 </div>
@@ -188,7 +188,7 @@ A. Como padrão de iniciante, não — min-raise-depois-fold é um leak clássic
 
 **Q. O que é o M-ratio no poker?**
 
-A. O M-ratio é seu stack dividido pelo custo de uma órbita (small blind + big blind + antes) — quantas voltas você consegue sobreviver foldando. As zonas de Harrington são Verde (20+), Amarelo (10–20), Laranja (6–10), Vermelho (1–5) e Morto (abaixo de 1). Quanto menor seu M, mais você precisa pegar spots de shove-ou-fold. Sem antes, o M é aproximadamente seus big blinds ÷ 1,5.
+A. O M-ratio é seu stack dividido pelo custo de uma órbita (small blind + big blind + antes) — quantas voltas você consegue sobreviver foldando. As zonas de Harrington são Verde (20+), Amarelo (10 a menos de 20), Laranja (6 a menos de 10), Vermelho (1 a menos de 6) e Morto (abaixo de 1). Quanto menor seu M, mais você precisa pegar spots de shove-ou-fold. Sem antes, o M é aproximadamente seus big blinds ÷ 1,5.
 
 **Q. O que é fold equity e por que ela encolhe?**
 

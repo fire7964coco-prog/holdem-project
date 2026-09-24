@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "tournament",
   date: "2026-06-16",
   updated: "2026-09-24",
-  masterUpdated: "2026-09-13",
+  masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "14 mnt",
   emoji: "🏆",
@@ -179,7 +179,7 @@ Alih-alih mengeluarkan $10.000, Anda berkompetisi di turnamen $500 melawan 19 pe
 
 ### Opsi B: Pra-Registrasi Online
 Kebanyakan festival live besar memungkinkan Anda mendaftar online lebih awal:
-- Buat akun di platform event (mis. aplikasi WSOP LIVE untuk WSOP, tab "Events" dan "Live" di lobi PokerStars untuk event EPT/APPT)
+- Buat akun di platform event (mis. aplikasi WSOP LIVE plus akun Caesars Rewards untuk WSOP, tab "Events" dan "Live" di lobi PokerStars untuk event EPT/APPT)
 - Bayar buy-in secara online
 - Tiba di venue → verifikasi ID → cetak kartu kursi di kios atau ambil di meja
 - Melewati antrean registrasi — layak dilakukan untuk event besar

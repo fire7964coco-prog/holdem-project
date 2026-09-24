@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "glossary",
   date: "2026-07-05",
   updated: "2026-09-24",
-  masterUpdated: "2026-09-21",
+  masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "10 mnt",
   emoji: "🧊",
@@ -26,7 +26,7 @@ Saya masih ingat tangan yang mengajarkan saya istilah ini. Saya flop set of king
 ### Cooler, sekilas
 
 :::stripe
-Tertinggal sepanjang jalan | Posisi Anda saat chip masuk
+Tertinggal saat masuk | Posisi Anda saat chip masuk
 Tanpa suckout | Pemenang memimpin dari awal sampai akhir
 Terlalu kuat untuk fold | Kenapa Anda membayarnya
 Bukan salah Anda | Satu kekalahan yang tak seharusnya membuat Anda tilt

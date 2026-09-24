@@ -1,6 +1,6 @@
 # 다음 세션 알림장
 
-> 갱신: 2026-09-24 (B3 종결). 시작 순서: AGENTS.md → CLAUDE.md 전문 → 이 파일 → `git status` + **워크트리 3곳 status**(아래).
+> 갱신: 2026-09-24 (B4 종결 · B 대기열 소진). 시작 순서: AGENTS.md → CLAUDE.md 전문 → 이 파일 → `git status` + **워크트리 3곳 status**(아래).
 > 🔴 **작업 주체가 바뀐다**: 09-22까지는 **GPT(커서/Codex)로 이 폴더를 열어 작업**했다(커밋 트레일러 없음·영어 커밋 메시지 = GPT분). 09-23 GA·GSC 보고서와 처방 1회차는 Claude. **한도 리셋 후 다시 Claude 본체로 간다.** GPT가 남긴 미결은 아래 «B. 이월 대기열»에 모았다 — 정본은 `docs/backlog-closeout-2026-09-22.md` §3·§4(GPT가 쓴 체크포인트. 그 뒤 **규칙 41편·Q8-a PT·086161eb는 09-22에 배포·마감 완료**라 그 표의 해당 «남음» 칸은 낡았다).
 
 ## 사장님이 정한 순서 (09-23)
@@ -20,11 +20,7 @@
 
 ## B. 이월 대기열 (GPT 작업분 · A 끝난 뒤 · 한 번에 하나만)
 
-▶ **다음 세션 = B4** (B1 확률 7편 09-24 (4)~(7) · B2 ID 용어 09-24 (8) · B3 DE 용어 09-24 (9) 종결). 09-24 ms 단건 경화 2편이 낳은 EN-먼저 11건은 `docs/en-first-queue.md` §2-K(자동 착수 대상 아님). B3가 남긴 것: DE 계산기→bubble 링크(EN related 패리티·코드 조율 건) · EN short-stack M존도 같은 겹침 표기(10–20/6–10/1–5) — B4 표현 묶음에서 판정.
-
-| 순 | 묶음 | 위치·상태 | 재개 문서 |
-|---|---|---|---|
-| B4 | 사실 묶음(미착수): SHC77/88 첫 탈락 페어 · WSOP 계정 2개(LIVE+Caesars) · paired-board 22 counterfeit 리버조건 · flush-vs-straight 반복 설명 / 표현: cooler J1 라벨 · EN hand-rankings short-deck 중복 / **TDA 판본 부채**(2026 v1.1 번호 변경 — 전역 교체는 별건) | 범위는 `docs/en-first-queue.md` 정본에서 고정 후 | `docs/backlog-closeout-2026-09-22.md` §4 |
+▶ **B 대기열 소진** (B1 확률 09-24 (4)~(7) · B2 ID 용어 (8) · B3 DE 용어 (9) · B4 EN-먼저 사실·표현 (10) 종결). **다음 세션 = 사장님 09-24 우선순위(언어별 번역작업 · 신규 포스팅) 중 지시 대기** — 자동 착수 금지. B4가 남긴 것: J-2 cooler «could never correctly fold» 판정(판정 선행 · en-first-queue §2-J) · TDA 판본 부채(별건) · §2-K 11건(자동 착수 대상 아님). DE 계산기→bubble 링크는 EN related 패리티로 **하지 않는다**(backlog §4 확정).
 
 - 워크트리 확인: `git worktree list` — calc-ko·ja·queue·zh·zh-hant 모두 09-24에 main `73d0818d`로 ff 동기화(calc-ko 초안 diff 보존 확인). **calc-ko의 미커밋 초안을 `git add -A`·강제동기화·reset으로 날리지 마라.**
 - 장기 미결(자동 착수 대상 아님): 확률 묶음 잔여(answer-echo LABELS de·es·id·pt 미등록 · ja/zh 기존 도입문 과장 단정 등 = `docs/harden-brief/probability-closeout.md` §7-D «남긴 것») · re-entry zh/zh-hant 용어 판정 · solver-client5 SEO 표현 · es LATAM · 우편함 회신 대기(마지막 발신 MB-079 — 번호는 파일 재확인). 시한은 `docs/update-calendar.md`.

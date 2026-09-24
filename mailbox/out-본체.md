@@ -140,6 +140,7 @@ MB-011·MB-012는 머리와 꼬리가 갈라져 두 조각으로 흩어짐**. �
 
 | MB-078 | 09-22 | 검수장 | **CALC-SHARED-2 + KO/fr 소품 배포** 계산기 `4849f3c8`, 포스트 `e897bae4`, 배포 `679f854a`. 공용8건/H-2를 계산기12URL에 이행: raw SPR분류·정확값캡션·7outs오예시제거·ICM확률가중/실탈락상금·부호중립/버블조건·상금내림차순·플레이어표식·pp. KO odds 완성률/승률 라벨6+사본, APPT 서두중복, fr all-in R.접두7·beginners 계산기앵커1 정정. **원장앵커갱신요청**, 본체build773·라이브16URL본문4/FAQ237 일치. IndexNow15 HTTP200(KO계산기는당일기접수중복제외). 기존 전체tsc649오류는 계산기밖, 전역타입통과아님. MB-054/067 형식복구도완료(기존본문·수신상태불변). H1/Q14는별도후속, H3보류유지. | WORKLOG 09-22 (5), calc-shared-2 브리프, settled §3-S | |
 | MB-079 | 09-22 | 검수장 | **086161eb round2 배포 최종 마감.** Q14 `3cfabdc6`+`8bfcd35c`→머지`603deb7a`, H1 `c9be34bb`→머지`45177757`, core/ar`4834860d`, 중문`64b8cf65`, PDF`05e4cfd2`, ES`7275c934`, KO`649c2f0c`; 원격 main=`086161eb`. 보존 빌드와 라이브118URL(106포스트+12계산기)·FAQ1325·본문106 일치, HTTP200·390px overflow0·pageerror0. H1 K9s/Q9s/J9s 공개 UI 실제 선택 모두 T3·조건부 권고 확인. IndexNow는 당일 기접수15를 제외한 고유103 HTTP200 접수(색인 완료 아님). **원장 앵커 갱신 요청**: Q14 EQR 고정밴드/필연문, position leverage, SB raise 한정, limp tournament 한정, MDF 단위, zh·zh-hant 로컬13 및 §3-T를 반영하고 옛값을 되살리지 말 것. solver IP actions 빈 배열은 미검증 유지. | WORKLOG 09-22 (7), harden-queue §1-Q14·§5 Q14, settled §3-T, tmp/closeout-round2/live.json | |
+| MB-080 | 09-24 | 검수장 | **B4 EN-먼저 사실·표현 묶음(EN 6편 수정)** — SHC 77/88 순서 한정 · tournament WSOP 계정 2개(LIVE+Caesars) · paired-board 22 카운터피트 조건(턴/리버 3, 다른 한 장이 2면 구제 · 평가기 검산) · flush-vs-straight 괄호 동어반복 · cooler 스트라이프 «Behind going in» · short-stack M존 연속 구간+Red ~1.5–9bb → 로케일 전파 50파일. 경위 WORKLOG 09-24 (10) · 정본 en-first-queue 해당 항목 삭제(J-2 잔존). 회신 불요. |
 
 ## 🧊 아카이브
 

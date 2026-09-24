@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "冤家牌（Cooler，又稱冷牌組）＝你拿著一手強到不可能蓋掉的牌，卻正好撞上更大的一手，輸掉大底池。像 KK 撞 AA，或暗三條撞更大的暗三條。跟爆冷門（Bad Beat）不同的是，你從頭到尾都落後、沒有任何一張幸運牌反超你——你打得完全正確，還是輸了。這是撲克裡最誠實的一種災難。",
   category: "glossary",
   date: "2026-07-23",
-  updated: "2026-09-21",
-  masterUpdated: "2026-09-21",
+  updated: "2026-09-24",
+  masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "10 分鐘",
   emoji: "🧊",
@@ -26,7 +26,7 @@ export const POST: Post = {
 ### 冤家牌速覽
 
 :::stripe
-全程落後 | 籌碼進池時你站在哪一邊
+投入時已落後 | 籌碼進池時你站在哪一邊
 沒有反超 | 贏家從頭領到尾
 強到蓋不掉 | 你為什麼還是付了錢
 不是你的錯 | 唯一一種你不該上頭的輸法

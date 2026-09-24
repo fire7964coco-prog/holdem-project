@@ -27,8 +27,8 @@ export const POST: Post = {
   tldr: "En el board pareado bajo 6♣6♦3♥ la ciega grande hace check el 97.0%. Lo raro es que tiene más trips que el botón: 26 combos con un seis contra 20. Hace check igual, porque solo el 18.4% de su rango tiene algo más allá de la pareja del board, y el otro 81.6% es una pelea de cartas altas que gana el botón. Lo que sí gana valor es cualquier par servido por encima del seis — TT tiene un 76.0% de equity aquí.",
   category: "strategy",
   date: "2026-09-02",
-  updated: "2026-09-02",
-  masterUpdated: "2026-09-02",
+  updated: "2026-09-24",
+  masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "👯",
@@ -172,7 +172,7 @@ La diferencia de **30.8 puntos** es casi exactamente los 29.1 puntos del [board 
 
 **Pero abajo se cae el piso.** 44 realiza exactamente su parte de equity — EQR 100.5% — y aun así hace 3.42bb contra los 2.17bb de media del rango, así que no es una mano marginal. La que se rompe es 22: 50.4% de equity, EQR 66.0%, 1.83bb.
 
-**La línea divisoria es el tres, no el seis.** 55 y 44 están las dos por debajo del seis y aun así realizan su parte completa. Un dos está por debajo de *las dos* cartas del board, así que pierde contra 33, contra cualquier mano con un tres, y si sale un tres en el turn o el river, la mano queda anulada (counterfeited) y acaba jugando el board. La regla que se sostiene de verdad no es "las parejas pequeñas están bien en boards bajos" sino **"cualquier pareja por encima del tres está bien — los doses son los únicos que se rompen."**
+**La línea divisoria es el tres, no el seis.** 55 y 44 están las dos por debajo del seis y aun así realizan su parte completa. Un dos está por debajo de *las dos* cartas del board, así que pierde contra 33, contra cualquier mano con un tres, y si sale un segundo tres en el turn o el river, la mano queda anulada (counterfeited) y acaba jugando el board: en 6-6-3-3-K, el 22 no es más que la doble pareja del board (solo un dos en la otra calle lo salva). La regla que se sostiene de verdad no es "las parejas pequeñas están bien en boards bajos" sino **"cualquier pareja por encima del tres está bien — los doses son los únicos que se rompen."**
 
 Hay otro grupo que cuenta como doble pareja y es fácil pasarlo por alto: **cualquier mano con un tres.** A3 juega como seises y treses con un as — que le gana a 22 y pierde contra cualquier pareja por encima del tres.
 

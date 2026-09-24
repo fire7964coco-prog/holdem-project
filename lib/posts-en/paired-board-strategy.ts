@@ -94,7 +94,7 @@ export const POST: Post = {
   tldr: "On the low paired flop 6♣6♦3♥ the big blind checks 97.0%. The odd part is that it holds more trips than the button: 26 six-x combos against 20. It checks anyway, because only 18.4% of its range has anything beyond the board's pair, and the other 81.6% is a high-card contest the button wins. What does gain value is any pocket pair above a six — TT is 76.0% equity here.",
   category: "strategy",
   date: "2026-08-20",
-  updated: "2026-09-02",
+  updated: "2026-09-24",
   readTime: "10 min",
   emoji: "👯",
   image: "/images/gto-srp-paired-oop-en.webp",
@@ -237,7 +237,7 @@ The **30.8-point** gap is almost exactly the 29.1 points of the [dry ace-high bo
 
 **But the bottom drops out.** 44 realizes exactly its equity share — EQR 100.5% — and still makes 3.42bb against the range's 2.17bb average, so it is not a marginal hand. 22 is the one that breaks: 50.4% equity, EQR 66.0%, 1.83bb.
 
-**The dividing line is the three, not the six.** 55 and 44 both sit below the six and still realize their full share. A deuce is under *both* board ranks, so it loses to 33, to every hand holding a three, and a running three counterfeits it into playing the board. The rule that actually holds is not "small pairs are fine on low boards" but **"any pair above the three is fine — the deuces are the only ones that break."**
+**The dividing line is the three, not the six.** 55 and 44 both sit below the six and still realize their full share. A deuce is under *both* board ranks, so it loses to 33, to every hand holding a three, and a second three on the turn or river counterfeits it into playing the board — on 6-6-3-3-K, 22 is just the board's two pair (only a deuce on the other street saves it). The rule that actually holds is not "small pairs are fine on low boards" but **"any pair above the three is fine — the deuces are the only ones that break."**
 
 One more group counts as two pair, and it is easy to miss: **any hand with a three.** A3 plays as sixes and threes with an ace — which beats 22 and loses to every pair above the three.
 
