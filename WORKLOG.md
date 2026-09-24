@@ -6,6 +6,7 @@
 - 네이티브 렌즈(서브 1): 바뀐 자리 오류 0 · 같은 글 누락 12곳(meja 10·tangan 2) 제시 → 원문 확인 후 전건 반영.
 - 게이트: audit:hard id 55/55 🔴0(전후 동일 · board 인식으로 쇼다운 커버리지 1→2) · answer-echo·seo-sync·intl-links·hangul·number-format·structure·hygiene 전후 동일 · diff --check · 빌드 73+577 · 산출 HTML 디렉티브 누수 0. updated 09-24(19편 갱신) · masterUpdated 불변.
 - 정본 승격: `id-posting-reference.md` §5 board 분열 ⚠ → 정리 완료로.
+- 배포: push `2c56ed02` → 라이브 Playwright 3/3(flush-vs-straight «Board (5 kartu)» · game-order check · positions hand) · IndexNow 79 URL HTTP 200.
 
 ## 2026-09-24 (7) — B1③④: ja rake 판정 종결 · ×4 «all-in» 표현 판정 (B1 마감)
 
