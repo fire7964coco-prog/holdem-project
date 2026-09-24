@@ -20,12 +20,11 @@
 
 ## B. 이월 대기열 (GPT 작업분 · A 끝난 뒤 · 한 번에 하나만)
 
-▶ **다음 세션 = B2부터** (B1 확률 7편은 09-24 (4)~(7)로 종결). 09-24 ms 단건 경화 2편이 낳은 EN-먼저 11건은 `docs/en-first-queue.md` §2-K(자동 착수 대상 아님).
+▶ **다음 세션 = B3부터** (B1 확률 7편 09-24 (4)~(7) · B2 ID 용어 09-24 (8) 종결). 09-24 ms 단건 경화 2편이 낳은 EN-먼저 11건은 `docs/en-first-queue.md` §2-K(자동 착수 대상 아님).
 
 | 순 | 묶음 | 위치·상태 | 재개 문서 |
 |---|---|---|---|
-| B2 | **Q8-b ID** 용어 정리 | `../Holdem-queue` clean · 준비만(25파일 179줄 범위 확정, 쓰기 0). ID showdown은 규칙 41편에서 이미 처리 → 중복 수정 금지 | `docs/harden-brief/queue-Q8-b-id-de-잔여.md` · `docs/keyword-bank/id-posting-reference.md` §5/5A |
-| B3 | **Q8-b DE** | 미착수 · 별도 회차 | 같은 브리프 |
+| B3 | **Q8-b DE** (Rabatt·Lecks·드로 라벨 + 별도 소품 M존·equity FAQ 링크) | 미착수 · `../Holdem-queue`는 main `75adfe2f`와 동기 | `docs/harden-brief/queue-Q8-b-id-de-잔여.md` «DE 고정 앵커» · 🔴 줄번호는 B1로 밀렸을 수 있다 → 재검색 |
 | B4 | 사실 묶음(미착수): SHC77/88 첫 탈락 페어 · WSOP 계정 2개(LIVE+Caesars) · paired-board 22 counterfeit 리버조건 · flush-vs-straight 반복 설명 / 표현: cooler J1 라벨 · EN hand-rankings short-deck 중복 · DE M존(연속값 유지) / **TDA 판본 부채**(2026 v1.1 번호 변경 — 전역 교체는 별건) | 범위는 `docs/en-first-queue.md` 정본에서 고정 후 | `docs/backlog-closeout-2026-09-22.md` §4 |
 
 - 워크트리 확인: `git worktree list` — calc-ko·ja·queue·zh·zh-hant 모두 09-24에 main `73d0818d`로 ff 동기화(calc-ko 초안 diff 보존 확인). **calc-ko의 미커밋 초안을 `git add -A`·강제동기화·reset으로 날리지 마라.**

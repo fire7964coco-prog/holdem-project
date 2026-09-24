@@ -1,3 +1,12 @@
+## 2026-09-24 (8) — B2: Q8-b ID 용어 정리 (25편 · `75adfe2f`)
+
+- queue 워크트리(main ff) → 줄 단위 의미 처방 스크립트(각 줄 보호구 명시, 파일 전역 치환 아님) → 본체 ff 머지.
+- 액션 cek→check 31줄(확인 뜻 cek 유지: blind109·167 · strategy156 · pot-odds «Cek harga» · reading 76–78 등) · «판» tangan→hand(보유패 tangan 유지: equity42 «Setiap tangan yang masih hidup» · strategy «seleksi tangan» · starting-hands «per tangan»=핸드 조합 등) · board 뜻 meja→board(물리 테이블 «di meja poker» 등 유지 · cooler70 모호해 유지). 특수형: «river di-check habis» · «check behind» · «dari hand ke hand» · «Board (5 kartu)» 라벨 · 관련카드 «Membaca Board».
+- 앵커 줄번호는 B1 확률 커밋으로 outs·pot-odds·card-counting·drawing-odds가 밀려 전건 재검색. 앵커 밖 추가: drawing-odds «per 100 hand»·«kira-kira 1 dari 4 hand» · outs61 · kicker «kalian»→«Anda berdua».
+- 네이티브 렌즈(서브 1): 바뀐 자리 오류 0 · 같은 글 누락 12곳(meja 10·tangan 2) 제시 → 원문 확인 후 전건 반영.
+- 게이트: audit:hard id 55/55 🔴0(전후 동일 · board 인식으로 쇼다운 커버리지 1→2) · answer-echo·seo-sync·intl-links·hangul·number-format·structure·hygiene 전후 동일 · diff --check · 빌드 73+577 · 산출 HTML 디렉티브 누수 0. updated 09-24(19편 갱신) · masterUpdated 불변.
+- 정본 승격: `id-posting-reference.md` §5 board 분열 ⚠ → 정리 완료로.
+
 ## 2026-09-24 (7) — B1③④: ja rake 판정 종결 · ×4 «all-in» 표현 판정 (B1 마감)
 
 - ③ ja card-counting 레이크: `locale-intentional-diffs` 55행 = 사장님 결재 12(09-10) «ja 업태 3편은 EN 기준 유지, 열지 않는다»가 이미 닫은 건. ja 189행 = EN 169행 동일 명제 → **수정 0**.

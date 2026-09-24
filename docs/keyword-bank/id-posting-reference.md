@@ -87,8 +87,9 @@ kicker·tiebreak·split-pot·reading 4편은 id 검색축이 없다 — 이 4편
 - **영어 용어 통용**: flush·straight·kicker·chop·straddle·buy-in·bubble은 영어 그대로 —
   과번역이 오히려 결함. 커뮤니티 실사용 기준.
 - **보드 = board**: 현지 커뮤니티는 커뮤니티 카드를 board라 부른다. `meja`는 «테이블(자리)» —
-  `meja berpasangan`(테이블이 페어됐다)류는 어색. ⚠ 기존 코퍼스는 meja 우세 4편·board 우세
-  2편으로 분열(핸드오프 미결 — 통일 판정 대기). **신규 글은 board로 써라.**
+  `meja berpasangan`(테이블이 페어됐다)류는 어색. ✅ 기존 코퍼스 분열은 **2026-09-24 Q8-b에서 정리**
+  (board 뜻 meja → board · 물리 테이블 meja 유지 · cooler «kena di meja»는 모호해 유지). **신규 글은 board로 써라.**
+  같은 회차에 액션 cek → check(«확인» 뜻 cek 유지) · «판» 뜻 tangan → hand(보유패 tangan 유지)도 정리. 경위 WORKLOG 09-24 (8).
 - **어형**: 반전 훅엔 `ternyata`(«Kira menang, ternyata kalah?») · 복수형 영어 -s + id 접속
   혼종 금지(«kings dan nines» ✗ → «dua pair K dan 9») · 서수는 id로(«first kicker» ✗ →
   «kicker pertama») · «edge case» 직역(kasus tepi) ✗ → kasus langka/khusus.
