@@ -435,7 +435,7 @@ function PotOddsCalc() {
         <input id="pot-equity" type="range" min={1} max={85} value={eq} onChange={e => setEq(Number(e.target.value))}
           className="w-full accent-primary h-2 rounded-full" />
         <div className="flex justify-between text-xs text-muted-foreground mt-1">
-          <span>1%</span><span>거트샷 8.7%</span><span>플러시 19%</span><span>85%</span>
+          <span>1%</span><span>거트샷(턴) 8.7%</span><span>플러시(턴) 19.6%</span><span>85%</span>
         </div>
       </div>
 
@@ -1377,7 +1377,7 @@ function PushFoldCalc() {
         {table === "hu" ? (
           <>
             <strong className="text-primary">헤즈업(SB vs BB) 내시 균형</strong> 기준 차트입니다. SB는 올인 또는 폴드만 한다고 가정하며,
-            앤티 ON은 플레이어당 0.125bb(빅블라인드 앤티 환산 ≈ 12.5%)를 반영합니다. 스택이 짧을수록 푸시·콜 범위가 넓어지고,
+            앤티 ON은 플레이어당 0.125bb(빅블라인드의 12.5% — 8인 테이블 빅블라인드 앤티를 인원수로 나눈 값이라, 헤즈업에서는 합계 0.25bb뿐)를 반영합니다. 스택이 짧을수록 푸시·콜 범위가 넓어지고,
             3~4bb 이하에서는 팟 오즈 때문에 BB 콜 범위가 SB 푸시보다 오히려 넓어지는 게 수학적으로 정확합니다.
           </>
         ) : (
@@ -1386,7 +1386,7 @@ function PushFoldCalc() {
             올인 또는 폴드만 한다고 가정한 <strong>순수 칩EV</strong> 내시 균형이며, 뒤 플레이어들의 올인 콜 레인지도 함께 수렴시켜 계산했습니다.
             콜이 나온 팟은 첫 번째 콜러와의 헤즈업 에퀴티로 단순화(2명 이상 콜 무시)한 표준 근사 모델입니다.
             뒤에 남은 인원이 적을수록 — 즉 UTG에서 버튼·SB로 갈수록 — 올인 범위가 넓어지고, 스택이 짧을수록·앤티(플레이어당 0.125bb) ON일수록 더 넓어집니다.
-            순수 칩EV 기준이라 콜러가 많은 얼리 포지션(UTG·MP)의 10bb 범위는 통설보다 타이트하게 나옵니다(소형 페어가 폴드).
+            순수 칩EV 기준이라 콜러가 많은 얼리 포지션(UTG·MP)의 10bb 범위는 통설보다 타이트하게 나옵니다(앤티 OFF면 소형 페어가 폴드).
             실전에서는 ICM·상대 성향에 따라 조정하세요.
           </>
         )}

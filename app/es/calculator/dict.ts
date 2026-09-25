@@ -139,9 +139,9 @@ export const CALC_DICT_ES: CalcDict = {
     potOddsCaption: "Pot odds (equity mínima necesaria)",
     orHigher: "— con más equity, el call es rentable",
     equityLabel: "Equity de tu mano: {v}",
-    sliderGutshot: "Gutshot 8.7%",
+    sliderGutshot: "Gutshot (turn) 8.7%",
     // 딜러 렌즈(EN): 19% → 19.6%(9/46 · turn → river)
-    sliderFlush: "Proyecto de color 19.6%",
+    sliderFlush: "Proyecto de color (turn) 19.6%",
     impliedToggle: "Odds implícitas {toggle}",
     close: "Cerrar ▲",
     add: "Agregar ▼",
@@ -362,7 +362,7 @@ export const CALC_DICT_ES: CalcDict = {
     cell: { push: "push", call: "call", fold: "fold" },
     huNote: {
       strong: "Equilibrio de Nash, mano a mano (SB vs BB)",
-      p1: ": se asume que la SB solo hace shove o fold. La opción de ante suma 0.125bb por jugador (equivalente a un big blind ante, ≈12.5%). Los rangos se amplían cuanto más cortos son los stacks — y por debajo de ~3–4bb la BB paga correctamente con un rango ",
+      p1: ": se asume que la SB solo hace shove o fold. La opción de ante suma 0.125bb por jugador (12.5% de la ciega grande por jugador — lo que da un big blind ante en una mesa de 8; en heads-up son solo 0.25bb en total). Los rangos se amplían cuanto más cortos son los stacks — y por debajo de ~3–4bb la BB paga correctamente con un rango ",
       em: "más amplio",
       p2: " que el que la SB usa para el shove, por las pot odds.",
     },
@@ -370,7 +370,7 @@ export const CALC_DICT_ES: CalcDict = {
       strong: "Tabla de shove first-in en mesa {table}-max",
       p1: ": todos los de delante han foldeado y tú haces shove o fold. Es un equilibrio tipo Nash de ",
       strong2: "chip EV puro",
-      p2: " — los rangos de call de los jugadores que quedan detrás se resuelven a la vez — con la aproximación estándar de que un bote pagado se resuelve mano a mano contra el primero que paga (se ignoran los botes con varios calls). Los rangos se amplían cuantos menos jugadores quedan detrás de ti (UTG → BTN → SB), cuanto más cortos son los stacks y con los antes activados (0.125bb por jugador). Como es chip EV puro, los rangos de 10bb desde posición temprana (UTG/MP) salen más cerrados que las reglas populares (los pares bajos foldean) — en la práctica, ajusta por ICM y por los rivales.",
+      p2: " — los rangos de call de los jugadores que quedan detrás se resuelven a la vez — con la aproximación estándar de que un bote pagado se resuelve mano a mano contra el primero que paga (se ignoran los botes con varios calls). Los rangos se amplían cuantos menos jugadores quedan detrás de ti (UTG → BTN → SB), cuanto más cortos son los stacks y con los antes activados (0.125bb por jugador). Como es chip EV puro, los rangos de 10bb desde posición temprana (UTG/MP) salen más cerrados que las reglas populares (sin ante, los pares bajos foldean) — en la práctica, ajusta por ICM y por los rivales.",
     },
     readMore: "Para los fundamentos del juego con stack corto, lee nuestra",
     shortStackLink: { slug: "holdem-short-stack", text: "guía de estrategia short stack" },
@@ -431,7 +431,7 @@ export const CALC_DICT_ES: CalcDict = {
     {
       badge: "Referencia rápida",
       h2: "Calculadora de equity: all-in preflop mano contra mano",
-      intro: "La equity de dos manos que van all-in preflop, promediada sobre todas las combinaciones de palos de cada enfrentamiento (calculada de antemano: los 1,712,304 boards posibles de cada uno). Una combinación concreta puede variar alrededor de un punto — mete las cartas exactas en la pestaña «Equity» de arriba.",
+      intro: "La equity de dos manos que van all-in preflop, promediada sobre todas las combinaciones de palos de cada enfrentamiento (calculada de antemano: los 1,712,304 boards posibles de cada uno). Una combinación de palos concreta puede variar más de dos puntos (A♠K♠ contra Q♠J♠: 66.0%) — mete las cartas exactas en la pestaña «Equity» de arriba.",
       th: ["Enfrentamiento", "Mano A", "Mano B", "Empate"],
       align: ["left", "right", "right", "right"],
       emphasis: 1,
@@ -579,7 +579,7 @@ export const CALC_DICT_ES: CalcDict = {
       { icon: "📐", title: "SPR (Stack-to-Pot Ratio)", body: "La relación entre stack y bote te dice cuánta mano necesitas. Cuanto más bajo el SPR, más favorece comprometerse con una mano fuerte." },
       { icon: "🏆", title: "M de torneo", body: "La M de Harrington mide la presión sobre tu stack de torneo. Tu estrategia cambia por completo entre las zonas verde, amarilla, naranja, roja y muerta." },
       { icon: "📈", title: "Calculadora de ICM", body: "El Independent Chip Model convierte las fichas de torneo en valor real en premios, con una columna de chip chop al lado — los números detrás de las decisiones de burbuja y de los acuerdos en la mesa final." },
-      { icon: "⚡", title: "Tabla push/fold de Nash", body: "Una tabla 13×13 de Nash para heads-up, 6-max y 9-max: con qué manos hacer open-shove y con cuáles pagar de 1 a 25bb. Imprescindible en las fases finales de un torneo." },
+      { icon: "⚡", title: "Tabla push/fold de Nash", body: "Una tabla 13×13 de Nash para heads-up, 6-max y 9-max: con qué manos hacer open-shove de 1 a 25bb (y, en heads-up, con cuáles pagar). Imprescindible en las fases finales de un torneo." },
     ],
   },
 

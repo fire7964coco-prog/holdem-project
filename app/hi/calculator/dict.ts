@@ -133,9 +133,9 @@ export const CALC_DICT_HI: CalcDict = {
     potOddsCaption: "Pot odds (कम से कम ज़रूरी equity)",
     orHigher: "इससे ज़्यादा equity हो तो call फ़ायदेमंद है",
     equityLabel: "आपके हैंड की equity: {v}",
-    sliderGutshot: "Gutshot 8.7%",
+    sliderGutshot: "Gutshot (turn) 8.7%",
     // ★딜러 렌즈 — 9 outs का turn → river का सटीक आँकड़ा 19.6% है (19% नहीं).
-    sliderFlush: "Flush 19.6%",
+    sliderFlush: "Flush (turn) 19.6%",
     impliedToggle: "Implied odds {toggle}",
     close: "बंद करें ▲",
     add: "जोड़ें ▼",
@@ -377,7 +377,7 @@ export const CALC_DICT_HI: CalcDict = {
     cell: { push: "push", call: "call", fold: "fold" },
     huNote: {
       strong: "Nash equilibrium, heads-up (SB बनाम BB)",
-      p1: ": माना गया है कि SB या तो shove करता है या fold। Ante सेटिंग हर खिलाड़ी के लिए 0.125bb जोड़ती है (big-blind ante के बराबर, ≈12.5%)। Stack जितना छोटा, ranges उतनी चौड़ी — और ~3-4bb से नीचे BB सही तौर पर SB के shove से ",
+      p1: ": माना गया है कि SB या तो shove करता है या fold। Ante सेटिंग हर खिलाड़ी के लिए 0.125bb जोड़ती है (हर खिलाड़ी से big blind का 12.5% — 8 खिलाड़ियों की टेबल पर big-blind ante इतना ही बैठता है; heads-up में यह कुल सिर्फ़ 0.25bb है)। Stack जितना छोटा, ranges उतनी चौड़ी — और ~3-4bb से नीचे BB सही तौर पर SB के shove से ",
       em: "ज़्यादा चौड़ी",
       p2: " range से call करता है, pot odds की वजह से।",
     },
@@ -385,7 +385,7 @@ export const CALC_DICT_HI: CalcDict = {
       strong: "{table}-max first-in shove चार्ट",
       p1: ": आपके सामने सब fold कर चुके हैं और आप या तो shove करते हैं या fold। यह ",
       strong2: "शुद्ध chip-EV",
-      p2: " वाला Nash-शैली का equilibrium है — पीछे बैठे खिलाड़ियों की calling ranges एक साथ solve होती हैं — इस मानक अनुमान के साथ कि call हुआ pot पहले caller के साथ heads-up तय होता है (कई callers वाले pot नहीं गिने जाते)। आपके पीछे जितने कम खिलाड़ी बचते हैं (UTG → BTN → SB), stack जितना छोटा होता है और ante ON (हर खिलाड़ी 0.125bb) होने पर ranges चौड़ी होती हैं। शुद्ध chip-EV होने से early position (UTG/MP) की 10bb ranges आम तौर पर चलने वाले नियमों से tight निकलती हैं (छोटे pairs fold) — असल खेल में ICM और विरोधियों के हिसाब से समायोजन करें।",
+      p2: " वाला Nash-शैली का equilibrium है — पीछे बैठे खिलाड़ियों की calling ranges एक साथ solve होती हैं — इस मानक अनुमान के साथ कि call हुआ pot पहले caller के साथ heads-up तय होता है (कई callers वाले pot नहीं गिने जाते)। आपके पीछे जितने कम खिलाड़ी बचते हैं (UTG → BTN → SB), stack जितना छोटा होता है और ante ON (हर खिलाड़ी 0.125bb) होने पर ranges चौड़ी होती हैं। शुद्ध chip-EV होने से early position (UTG/MP) की 10bb ranges आम तौर पर चलने वाले नियमों से tight निकलती हैं (ante OFF हो तो छोटे pairs fold) — असल खेल में ICM और विरोधियों के हिसाब से समायोजन करें।",
     },
     readMore: "Tournament में stack के दबाव और ICM की बुनियाद के लिए हमारी",
     shortStackLink: { slug: "holdem-tournament-vs-cash-game", text: "tournament बनाम cash game गाइड" },
@@ -450,7 +450,7 @@ export const CALC_DICT_HI: CalcDict = {
     {
       badge: "झटपट संदर्भ",
       h2: "Equity कैलकुलेटर संदर्भ — preflop all-in मैचअप",
-      intro: "जब दो हैंड preflop all-in जाते हैं तब की equity, मैचअप के हर suit संयोजन का औसत लेकर (पहले से गणना की गई: हर एक के लिए पूरे 1,712,304 बोर्ड)। कोई एक ख़ास संयोजन लगभग एक अंक तक अलग हो सकता है — सटीक कार्ड ऊपर equity कैलकुलेटर में भरें।",
+      intro: "जब दो हैंड preflop all-in जाते हैं तब की equity, मैचअप के हर suit संयोजन का औसत लेकर (पहले से गणना की गई: हर एक के लिए पूरे 1,712,304 बोर्ड)। कोई एक ख़ास suit संयोजन दो अंक से भी ज़्यादा अलग हो सकता है (A♠K♠ बनाम Q♠J♠: 66.0%) — सटीक कार्ड ऊपर equity कैलकुलेटर में भरें।",
       th: ["मैचअप", "हैंड A", "हैंड B", "बराबरी"],
       align: ["left", "right", "right", "right"],
       emphasis: 1,
@@ -595,7 +595,7 @@ export const CALC_DICT_HI: CalcDict = {
       { icon: "📐", title: "SPR (Stack-to-Pot Ratio)", body: "Stack और pot का अनुपात बताता है कि आपको कितना मज़बूत हैंड चाहिए। SPR जितना कम, मज़बूत हैंड से commit होना उतना सही।" },
       { icon: "🏆", title: "Tournament M value", body: "Harrington का M आपके tournament stack पर दबाव मापता है। Green/yellow/orange/red/dead ज़ोन के साथ आपकी रणनीति पूरी तरह बदल जाती है।" },
       { icon: "📈", title: "ICM कैलकुलेटर", body: "Independent Chip Model tournament chips को असली prize money की कीमत में बदलता है, और बग़ल में chip chop का कॉलम भी रखता है — bubble के फ़ैसलों और final-table deal की बातचीत के पीछे यही आँकड़े होते हैं।" },
-      { icon: "⚡", title: "Nash push/fold चार्ट", body: "Heads-up, 6-max और 9-max के लिए 13×13 Nash चार्ट: 1–25bb पर किन हैंड से open-shove करें और किनसे call। Tournament के आख़िरी चरण के लिए ज़रूरी।" },
+      { icon: "⚡", title: "Nash push/fold चार्ट", body: "Heads-up, 6-max और 9-max के लिए 13×13 Nash चार्ट: 1–25bb पर किन हैंड से open-shove करें (और heads-up में किनसे call)। Tournament के आख़िरी चरण के लिए ज़रूरी।" },
     ],
   },
 

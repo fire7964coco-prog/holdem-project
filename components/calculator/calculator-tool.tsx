@@ -660,8 +660,9 @@ function PotOddsCalc() {
         </div>
         <input id="pot-equity" type="range" min={1} max={85} value={eq} onChange={e => setEq(Number(e.target.value))}
           className="w-full accent-primary h-2 rounded-full" />
-        <div className="flex justify-between text-xs text-muted-foreground mt-1">
-          <span>{pf(1)}</span><span>{D.sliderGutshot}</span><span>{D.sliderFlush}</span><span>{pf(85)}</span>
+        {/* 09-25: 라벨에 국면 «(turn)»이 붙어 ja·es·fr 390px에서 두 줄로 꺾인다 — 끝 눈금과 붙지 않게 gap, 꺾이면 가운데로 */}
+        <div className="flex justify-between gap-2 text-xs leading-tight text-muted-foreground mt-1">
+          <span className="shrink-0">{pf(1)}</span><span className="text-center">{D.sliderGutshot}</span><span className="text-center">{D.sliderFlush}</span><span className="shrink-0">{pf(85)}</span>
         </div>
       </div>
 

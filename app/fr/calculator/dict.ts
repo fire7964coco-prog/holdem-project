@@ -151,9 +151,9 @@ export const CALC_DICT_FR: CalcDict = {
     // 🔴 EN 09-17 정정 + es 렌즈: «ou plus»면 정확히 같을 때(EV 0)와 어긋난다 → «au-dessus»
     orHigher: "— au-dessus de ce seuil, le call devient rentable",
     equityLabel: "Équité de ta main : {v}",
-    sliderGutshot: "Ventrale 8,7 %",
+    sliderGutshot: "Ventrale (turn) 8,7 %",
     // 🔴 EN 09-17 정정: 19 % → 19,6 %(턴→리버 실제값)
-    sliderFlush: "Couleur 19,6 %",
+    sliderFlush: "Tirage couleur (turn) 19,6 %",
     impliedToggle: "Cotes implicites {toggle}",
     close: "Fermer ▲",
     add: "Ajouter ▼",
@@ -388,7 +388,7 @@ export const CALC_DICT_FR: CalcDict = {
     cell: { push: "push", call: "call", fold: "fold" },
     huNote: {
       strong: "Équilibre de Nash, heads-up (SB contre BB)",
-      p1: " : on suppose que la SB fait tapis ou se couche. Le réglage ante ajoute 0,125bb par joueur (l'équivalent d'un big blind ante, ≈12,5 %). Les ranges s'élargissent quand les tapis raccourcissent — et sous ~3-4bb, la BB paie correctement ",
+      p1: " : on suppose que la SB fait tapis ou se couche. Le réglage ante ajoute 0,125bb par joueur (12,5 % de la big blind par joueur — ce que donne un big blind ante à une table de 8 ; en heads-up, cela ne fait que 0,25bb au total). Les ranges s'élargissent quand les tapis raccourcissent — et sous ~3-4bb, la BB paie correctement ",
       em: "plus large",
       p2: " que la SB ne pousse, à cause des cotes du pot.",
     },
@@ -396,7 +396,7 @@ export const CALC_DICT_FR: CalcDict = {
       strong: "Tableau de tapis first-in {table}-max",
       p1: " : tout le monde s'est couché devant toi et tu fais tapis ou tu te couches. C'est un équilibre de type Nash en ",
       strong2: "pur EV jetons",
-      p2: " — les ranges de call des joueurs derrière sont résolues simultanément — avec l'approximation standard qu'un tapis payé se joue en heads-up contre le premier caller (les pots à plusieurs callers sont ignorés). Les ranges s'élargissent quand il reste moins de joueurs derrière toi (UTG → BTN → SB), quand les tapis raccourcissent et avec les antes ON (0,125bb par joueur). Comme c'est du pur EV jetons, les ranges 10bb en position précoce (UTG/MP) ressortent plus serrées que les règles empiriques courantes (les petites paires se couchent) — en pratique, ajuste selon l'ICM et tes adversaires.",
+      p2: " — les ranges de call des joueurs derrière sont résolues simultanément — avec l'approximation standard qu'un tapis payé se joue en heads-up contre le premier caller (les pots à plusieurs callers sont ignorés). Les ranges s'élargissent quand il reste moins de joueurs derrière toi (UTG → BTN → SB), quand les tapis raccourcissent et avec les antes ON (0,125bb par joueur). Comme c'est du pur EV jetons, les ranges 10bb en position précoce (UTG/MP) ressortent plus serrées que les règles empiriques courantes (sans ante, les petites paires se couchent) — en pratique, ajuste selon l'ICM et tes adversaires.",
     },
     // 🔴 fr 코퍼스에 holdem-short-stack이 없다 → 실존하는 tapis 규칙 글로 대체(게이트 F항이 실존을 본다)
     readMore: "Pour le fonctionnement du tapis et des side pots, lis notre",
@@ -459,7 +459,7 @@ export const CALC_DICT_FR: CalcDict = {
     {
       badge: "Référence rapide",
       h2: "Référence du calculateur d'équité — confrontations à tapis préflop",
-      intro: "L'équité quand deux mains font tapis préflop, moyennée sur toutes les combinaisons d'enseignes de la confrontation (précalcul hors ligne : les 1 712 304 boards de chaque ligne). Une combinaison précise peut s'écarter d'environ un point — saisis les cartes exactes dans l'onglet « Équité » ci-dessus.",
+      intro: "L'équité quand deux mains font tapis préflop, moyennée sur toutes les combinaisons d'enseignes de la confrontation (précalcul hors ligne : les 1 712 304 boards de chaque ligne). Une combinaison d'enseignes précise peut s'écarter de plus de deux points (A♠K♠ contre Q♠J♠ : 66,0 %) — saisis les cartes exactes dans l'onglet « Équité » ci-dessus.",
       th: ["Confrontation", "Main A", "Main B", "Égalité"],
       align: ["left", "right", "right", "right"],
       emphasis: 1,
@@ -599,7 +599,7 @@ export const CALC_DICT_FR: CalcDict = {
       { icon: "📈", title: "Calculateur ICM", body: "L'Independent Chip Model convertit les jetons de tournoi en valeur réelle en gains, avec une colonne chip chop juste à côté — les chiffres derrière les décisions de bulle et les négociations de deal en table finale." },
       // 🔴 SEO 렌즈 09-18(中高): «tableau push or fold»(70 · 자동완성 9/9)의 연속 문자열을 «de Nash»가 끊고 있었다.
       //   탭 sub는 «Tableau de Nash» 그대로 둔다(«tableau nash push or fold» 자동완성도 살아 있다).
-      { icon: "⚡", title: "Tableau push or fold (Nash)", body: "Un tableau de Nash 13×13 pour le heads-up, le 6-max et le 9-max : avec quelles mains faire tapis en premier et avec lesquelles payer un tapis, de 1 à 25bb. Incontournable en fin de tournoi." },
+      { icon: "⚡", title: "Tableau push or fold (Nash)", body: "Un tableau de Nash 13×13 pour le heads-up, le 6-max et le 9-max : avec quelles mains faire tapis en premier de 1 à 25bb (et, en heads-up, avec lesquelles payer un tapis). Incontournable en fin de tournoi." },
     ],
   },
 

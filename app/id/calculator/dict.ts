@@ -132,9 +132,9 @@ export const CALC_DICT_ID: CalcDict = {
     potOddsCaption: "Pot odds (equity minimum yang dibutuhkan)",
     orHigher: "di atas angka ini, call jadi menguntungkan",
     equityLabel: "Equity hand Anda: {v}",
-    sliderGutshot: "Gutshot 8,7%",
+    sliderGutshot: "Gutshot (turn) 8,7%",
     // 🔴 딜러 렌즈: 턴→리버 플러시 draw는 19,6%(19%가 아니다 · quickRef 아웃츠 표 9 outs 행과 일치).
-    sliderFlush: "Flush 19,6%",
+    sliderFlush: "Flush (turn) 19,6%",
     impliedToggle: "Implied odds {toggle}",
     close: "Tutup ▲",
     add: "Tambah ▼",
@@ -257,7 +257,7 @@ export const CALC_DICT_ID: CalcDict = {
       low: {
         label: "SPR rendah (committed)",
         // 🔴 EN 끝문장이 09-17판에서 통째로 빠져 있었다 → 젖은 보드에서도 TPTK 스택오프 조언이 됐다.
-        desc: "Sebagian besar pot sudah masuk. Dengan top pair top kicker atau lebih baik di flop kering, rencanakan memasukkan sisanya — di kedalaman ini justru fold yang sering jadi kesalahan lebih besar. Di board yang berpasangan, tiga kartu sejenis, atau tiga kartu berurutan, atau saat menghadapi aksi yang hanya masuk akal dari set atau straight, one pair tetaplah one pair.",
+        desc: "Bagian yang cukup besar dari stack sudah masuk ke pot. Dengan top pair top kicker atau lebih baik di flop kering, rencanakan memasukkan sisanya — di kedalaman ini justru fold yang sering jadi kesalahan lebih besar. Di board yang berpasangan, tiga kartu sejenis, atau tiga kartu berurutan, atau saat menghadapi aksi yang hanya masuk akal dari set atau straight, one pair tetaplah one pair.",
         actions: [["TPTK+", "Pertimbangkan all-in di flop kering"], ["Draw", "Pot odds wajib dihitung"], ["Hand lemah", "Fold dengan hati-hati"]],
       },
       mid: {
@@ -359,7 +359,7 @@ export const CALC_DICT_ID: CalcDict = {
     cell: { push: "push", call: "call", fold: "fold" },
     huNote: {
       strong: "Keseimbangan Nash, heads-up (SB vs BB)",
-      p1: ": SB diasumsikan hanya shove atau fold. Pengaturan ante menambah 0,125bb per pemain (setara big blind ante, ≈12,5%). Range melebar saat stack makin pendek — dan di bawah ~3-4bb BB justru benar call ",
+      p1: ": SB diasumsikan hanya shove atau fold. Pengaturan ante menambah 0,125bb per pemain (12,5% big blind per pemain — sebesar big blind ante di meja 8 orang; di heads-up totalnya hanya 0,25bb). Range melebar saat stack makin pendek — dan di bawah ~3-4bb BB justru benar call ",
       em: "lebih lebar",
       p2: " daripada range shove SB, karena pot odds.",
     },
@@ -367,7 +367,7 @@ export const CALC_DICT_ID: CalcDict = {
       strong: "Chart shove first-in {table}-max",
       p1: ": semua pemain di depan sudah fold dan Anda hanya shove atau fold. Ini keseimbangan ala Nash ",
       strong2: "murni chip-EV",
-      p2: " — range call para pemain di belakang dihitung serentak — dengan pendekatan standar bahwa pot yang di-call diselesaikan heads-up melawan caller pertama (pot dengan lebih dari satu caller diabaikan). Range melebar saat pemain di belakang Anda makin sedikit (UTG → BTN → SB), saat stack makin pendek, dan saat ante ON (0,125bb per pemain). Karena murni chip-EV, range 10bb dari posisi awal (UTG/MP) keluar lebih ketat daripada patokan umum (pair kecil fold) — sesuaikan dengan ICM dan lawan dalam praktik.",
+      p2: " — range call para pemain di belakang dihitung serentak — dengan pendekatan standar bahwa pot yang di-call diselesaikan heads-up melawan caller pertama (pot dengan lebih dari satu caller diabaikan). Range melebar saat pemain di belakang Anda makin sedikit (UTG → BTN → SB), saat stack makin pendek, dan saat ante ON (0,125bb per pemain). Karena murni chip-EV, range 10bb dari posisi awal (UTG/MP) keluar lebih ketat daripada patokan umum (tanpa ante, pair kecil fold) — sesuaikan dengan ICM dan lawan dalam praktik.",
     },
     readMore: "Untuk dasar-dasar short stack, baca",
     shortStackLink: { slug: "holdem-short-stack", text: "panduan strategi short stack" },
@@ -425,7 +425,7 @@ export const CALC_DICT_ID: CalcDict = {
     {
       badge: "Referensi cepat",
       h2: "Referensi kalkulator equity — matchup all-in preflop",
-      intro: "Equity saat dua hand all-in preflop, dirata-ratakan dari semua kombinasi jenis kartu pada matchup itu (dihitung offline: seluruh 1.712.304 board untuk masing-masing). Kombinasi tertentu bisa meleset sekitar satu poin — masukkan kartu persisnya di kalkulator equity di atas.",
+      intro: "Equity saat dua hand all-in preflop, dirata-ratakan dari semua kombinasi jenis kartu pada matchup itu (dihitung offline: seluruh 1.712.304 board untuk masing-masing). Kombinasi jenis kartu tertentu bisa meleset lebih dari dua poin (A♠K♠ vs Q♠J♠: 66,0%) — masukkan kartu persisnya di kalkulator equity di atas.",
       th: ["Matchup", "Hand A", "Hand B", "Seri"],
       align: ["left", "right", "right", "right"],
       emphasis: 1,
@@ -573,7 +573,7 @@ export const CALC_DICT_ID: CalcDict = {
       { icon: "📐", title: "SPR (Stack-to-Pot Ratio)", body: "Rasio stack terhadap pot memberi tahu seberapa kuat hand yang Anda butuhkan. Makin rendah SPR, makin masuk akal untuk memasukkan seluruh stack dengan hand kuat." },
       { icon: "🏆", title: "Nilai M turnamen", body: "M Harrington mengukur tekanan pada stack turnamen Anda. Strategi Anda berubah total di zona hijau/kuning/oranye/merah/mati." },
       { icon: "📈", title: "Kalkulator ICM", body: "Independent Chip Model mengubah chip turnamen menjadi nilai hadiah sebenarnya, dengan kolom chip chop di sebelahnya — angka di balik keputusan bubble dan perundingan deal meja final." },
-      { icon: "⚡", title: "Chart push/fold Nash", body: "Chart Nash 13×13 untuk heads-up, 6-max, dan 9-max: hand mana yang di-open-shove dan hand mana yang dipakai untuk call pada 1–25bb. Perlengkapan wajib untuk fase akhir turnamen." },
+      { icon: "⚡", title: "Chart push/fold Nash", body: "Chart Nash 13×13 untuk heads-up, 6-max, dan 9-max: hand mana yang di-open-shove pada 1–25bb (dan, di heads-up, hand mana yang dipakai untuk call). Perlengkapan wajib untuk fase akhir turnamen." },
     ],
   },
 
