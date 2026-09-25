@@ -552,14 +552,14 @@ export const CALC_DICT_EN: CalcDict = {
       AKo: { desc: "Weaker than AKs but still premium", action: "Always raise; can call a re-raise" },
       AQs: { desc: "Strong hand; more valuable in position", action: "Raise from most positions" },
       AJs: { desc: "Great on BTN/CO, weak from UTG", action: "Raise mid/late; from UTG raise or fold — never limp" },
-      A10s: { desc: "One of the top suited aces", action: "Raise in LP; fold from EP unless the table is passive" },
+      A10s: { desc: "One of the top suited aces", action: "Raise mid/late; from UTG raise or fold — never limp" },
       KQs: { desc: "High flush + straight draw potential", action: "Raise from most positions" },
       KJs: { desc: "Strong drawing hand", action: "Raise in LP; fold or raise from EP — never limp" },
       "99": { desc: "Medium pair, watch overcard flops", action: "Raise most positions; careful deep" },
-      // 🔴 2026-09-21 — 88과 77의 EP 문구는 **같아야 한다.** 구판은 88이 «consider calling», 77이 «call»이라
-      //    **더 센 핸드가 더 좁게** 읽혔다. 강약은 티어 배지(T2 ↔ T3)와 desc가 말한다.
-      //    «raise or fold when first in»은 EP 첫 진입이 비어 있던 자리를 닫은 것이다(AJs·KJs·KQo와 같은 어휘).
-      "88": { desc: "Pocket pair with good set potential", action: "Raise LP; in EP call a raise, and raise or fold when first in — never open-limp" },
+      // 🔴 2026-09-25 — 88은 요약행(T2 «Raise most positions»)·99와 같은 급이다. 09-21의 «88 = 77 동문»은
+      //    T2 배지 옆에 T3 문구가 뜨는 설계라 폐기했다(MA-153~157). 원칙 = 단조성: 지배하는 핸드가
+      //    지배당하는 핸드보다 좁게 권고되지 않는다(99 ≥ 88 ≥ 77). 검산 = 169핸드 지배 쌍 역전 0.
+      "88": { desc: "Pocket pair with good set potential", action: "Raise most positions; call a raise — never open-limp" },
       AQo: { desc: "Weaker offsuit; position matters", action: "Raise in mid/late position" },
       AJo: { desc: "Weak in EP, strong in LP", action: "Raise CO/BTN, careful in EP" },
       KQo: { desc: "Top offsuit connector", action: "Raise in LP; in EP raise or fold when nobody has entered, and usually fold facing a raise" },
@@ -580,8 +580,9 @@ export const CALC_DICT_EN: CalcDict = {
       A5s: { desc: "Wheel + ace-blocker value; a favorite 3-bet bluff", action: "LP only; implied odds matter" },
       A4s: { desc: "Suited ace with a wheel draw", action: "LP only" },
       // 🔴 2026-09-20 — 구 문구 «Bottom of the suited aces»는 **같은 표에 A2s가 있어 거짓**이었다.
-      A3s: { desc: "Nut flush draw with a wheel card, a notch above A2s", action: "BTN/SB only" },
-      A2s: { desc: "Wheel + nut flush, but weak", action: "BTN only" },
+      A3s: { desc: "Nut flush draw with a wheel card, a notch above A2s", action: "LP only" },
+      // 🔴 2026-09-25 — A3s·A2s «BTN only»는 폴백의 «cutoff: suited kings»(K3s·K2s)보다 좁았다 — A가 K를 지배하는데 역전.
+      A2s: { desc: "Wheel + nut flush, but weak", action: "LP only" },
       KJo: { desc: "Domination risk; LP only", action: "Raise CO/BTN, fold to a re-raise" },
       QJo: { desc: "Moderate connectivity; needs position", action: "LP only" },
       "98s": { desc: "Strong suited connector", action: "Raise first in from LP; call a raise with position" },
@@ -590,9 +591,11 @@ export const CALC_DICT_EN: CalcDict = {
       "44": { desc: "Almost no value without a set", action: "Raise first in from LP; call a single raise in LP when you and the raiser each have at least ~15× the call behind" },
       "33": { desc: "Needs to set-mine; speculative", action: "Raise first in from LP; otherwise multiway pots with deep stacks only" },
       "22": { desc: "Lowest pocket pair", action: "Raise first in from LP; otherwise multiway pots with deep stacks only" },
-      K10o: { desc: "K-10 offsuit, weak", action: "Occasionally from BTN" },
+      // 🔴 2026-09-25 — K10o «Occasionally from BTN»은 Q10o «BTN only»·폴백 K9o(버튼 오픈)보다 좁았다.
+      //    K10o = KJo와 같은 CO/BTN · J10o = Q10o·폴백 J9o와 같은 BTN. 폴백 오프수트 분기는 그대로다(콤보 모델 49.32%).
+      K10o: { desc: "K-10 offsuit, weak", action: "Open-raise CO/BTN when folded to you" },
       Q10o: { desc: "Low-connectivity offsuit", action: "BTN only" },
-      J10o: { desc: "Decent offsuit but vulnerable", action: "Occasionally from BTN" },
+      J10o: { desc: "Decent offsuit but vulnerable", action: "BTN only" },
       Q10s: { desc: "Strong suited broadway, plays well in position", action: "Raise LP; fold from EP" },
       A10o: { desc: "Marginal offsuit ace, domination-prone", action: "LP only" },
       "65s": { desc: "Suited connector; wants multiway/implied odds", action: "Raise first in from LP; call a raise only with position and deep stacks" },
