@@ -148,6 +148,18 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 | K10 | tournament-vs-cash 「Player situation / Better fit」·「Your situation / Start with」 표 + 불릿 2목록 | 「짧은 세션 → 캐시」가 4회 반복 — 표 하나로 통합 | 교열 · 중 |
 | K11 | tournament-vs-cash H2 「Tournament Chips Are Not Money」·「Fixed Blinds vs Rising Blinds」 첫 문장 | 직답이 아니라 도입 문장 — 직답이 둘째 단락에 있다(GEO) | SEO · 중 |
 
+### 2-L. 우편함 수신분 — MA-144 · 153~157 · 167 · 174~178 (2026-09-25 · 회신 MB-083)
+
+> 본체: `docs/harden-brief/mailbox-intake-2026-09-25.md`(HEAD `326728ed` 실측 · 항목별 좌표). 여기엔 묶음만.
+
+| 묶음 | 상태 | 규모 |
+|---|---|---|
+| **L-1 로케일 고유**(es·zh·zh-hant · EN 무관 · 정답형 같은 글 안) | ✅ 채택 · **착수 가능** | es ~20 · zh ~25 · zh-hant ~30자리 |
+| **L-2 EN-먼저**(MA-144 ⓐⓑⓒ · 167 fish · 174 paired 13%·monotone 74s·history · 175~178 통지) | ⏸ **MA-172 최종 MA와 한 묶음** — 검수장 EN 재검증(`03d2046`) 결과 도착 후 | EN ~50항목 · 🔴 paired-board는 **ko 원본(23%)도** 13.0%로 |
+| **L-3 계산기**: 문구 5종(A55·A81·A85·B22·B111) + orHigher 3 · spr.low 3 | ✅ 채택 | EN dict → 10로케일 |
+| **L-3 계산기 레인지 3건**(K10o↔Q10o 역전 · A10s · 88) | ⏸ **사장님 결정** | 11사본 |
+| **L-4 판단 필요**(cooler 인접 2 · outs spade · id melepas) | ⏸ | — |
+
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
 - ✅ **종결(2026-09-11 (11) 실측)** — EN 56편 `updated` 전수 대조. 결과 = 57파일 중 «마지막 커밋 > `updated`» 6 · **창(09-08 이후) 1 = `holdem-icm`**(구두점만 · 판정 완료) · 창 밖 5 = CSS 수리(`8d2aba44`) 2 · tldr 별표 제거(`a069430a`) 2 · `index.ts` → 전부 §1-C «기계적 변경은 안 올린다». 예전 「이미 잡힌 6건」(probability·short-stack·kpm 외 3)은 `fd8cafc0`로 닫혀 현재 어긋남 0. 재현 셸은 `docs/harden-queue-진행.md` Q3 행 · 게이트화 = queue **Q7-a** `check:stamp`.
