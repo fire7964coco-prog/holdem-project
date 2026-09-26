@@ -1,6 +1,6 @@
 # 다음 세션 알림장
 
-> 갱신: 2026-09-24 (B4 종결 · B 대기열 소진). 시작 순서: AGENTS.md → CLAUDE.md 전문 → 이 파일 → `git status` + **워크트리 3곳 status**(아래).
+> 갱신: 2026-09-26 (L-1 es 종결) · 이전 2026-09-24 (B4 종결 · B 대기열 소진). 시작 순서: AGENTS.md → CLAUDE.md 전문 → 이 파일 → `git status` + **워크트리 3곳 status**(아래).
 > 🔴 **작업 주체가 바뀐다**: 09-22까지는 **GPT(커서/Codex)로 이 폴더를 열어 작업**했다(커밋 트레일러 없음·영어 커밋 메시지 = GPT분). 09-23 GA·GSC 보고서와 처방 1회차는 Claude. **한도 리셋 후 다시 Claude 본체로 간다.** GPT가 남긴 미결은 아래 «B. 이월 대기열»에 모았다 — 정본은 `docs/backlog-closeout-2026-09-22.md` §3·§4(GPT가 쓴 체크포인트. 그 뒤 **규칙 41편·Q8-a PT·086161eb는 09-22에 배포·마감 완료**라 그 표의 해당 «남음» 칸은 낡았다).
 
 ## 사장님이 정한 순서 (09-23)
@@ -23,7 +23,7 @@
 ▶ **B 대기열 소진** (B1 확률 09-24 (4)~(7) · B2 ID 용어 (8) · B3 DE 용어 (9) · B4 EN-먼저 사실·표현 (10) 종결). **다음 세션 = 사장님 09-24 우선순위(언어별 번역작업 · 신규 포스팅) 중 지시 대기** — 자동 착수 금지. B4가 남긴 것: J-2 cooler «could never correctly fold» 판정(판정 선행 · en-first-queue §2-J) · TDA 판본 부채(별건) · §2-K 11건(자동 착수 대상 아님). DE 계산기→bubble 링크는 EN related 패리티로 **하지 않는다**(backlog §4 확정).
 
 - 워크트리 확인: `git worktree list` — calc-ko·ja·queue·zh·zh-hant 모두 09-24에 main `73d0818d`로 ff 동기화(calc-ko 초안 diff 보존 확인). **calc-ko의 미커밋 초안을 `git add -A`·강제동기화·reset으로 날리지 마라.**
-- 장기 미결(자동 착수 대상 아님): 확률 묶음 잔여(answer-echo LABELS de·es·id·pt 미등록 · ja/zh 기존 도입문 과장 단정 등 = `docs/harden-brief/probability-closeout.md` §7-D «남긴 것») · re-entry zh/zh-hant 용어 판정 · solver-client5 SEO 표현 · es LATAM · 우편함(09-25 정리 · 본체 앞 미회신 = **MA-172 하나**, 의도적 보류): 수신 11건은 `docs/en-first-queue.md` §2-L로 등재·MB-083 회신. 착수 가능 = **L-1 로케일 고유**(es·zh·zh-hant ~75자리 · 한 언어씩 · 새 세션 권장). 계산기 L-3은 09-25 종결(`104fac47`·`0932f093` · MB-084). 보류 = EN-먼저 전부(검수장 EN 재검증 최종 MA와 합침) · cooler 인접 2건(검수장 회신 대기 · MB-083 요청 1). 🔴 세션 시작 시 우편함 점검(CLAUDE.md 세션 시작 4). 시한은 `docs/update-calendar.md`.
+- 장기 미결(자동 착수 대상 아님): 확률 묶음 잔여(answer-echo LABELS de·es·id·pt 미등록 · ja/zh 기존 도입문 과장 단정 등 = `docs/harden-brief/probability-closeout.md` §7-D «남긴 것») · re-entry zh/zh-hant 용어 판정 · solver-client5 SEO 표현 · es LATAM · 우편함(09-25 정리 · 본체 앞 미회신 = **MA-172 하나** — L-2 착수 때 MA-179와 함께 회신): 수신 11건은 `docs/en-first-queue.md` §2-L로 등재·MB-083 회신. 착수 가능 = **L-1 로케일 고유 다음 zh → zh-hant**(es ✅ `14845d6f` 09-26 · MB-085 · 한 언어씩) · **L-2 EN-먼저도 착수 조건 충족**(최종 MA = MA-179 · 09-26 ACK · 착수 전 MA-172를 MA-179 철회·강등으로 걸러 intake부터). 계산기 L-3은 09-25 종결(`104fac47`·`0932f093` · MB-084). 보류 = EN-먼저 전부(검수장 EN 재검증 최종 MA와 합침) · cooler 인접 2건(검수장 회신 대기 · MB-083 요청 1). 🔴 세션 시작 시 우편함 점검(CLAUDE.md 세션 시작 4). 시한은 `docs/update-calendar.md`.
 
 ## 참고 경계
 

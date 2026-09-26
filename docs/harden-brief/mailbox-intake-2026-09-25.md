@@ -16,7 +16,7 @@
 
 ## 1. L-1 로케일 고유 — 채택(착수 가능)
 
-**es** (MA-144 ② · MA-174 ② · MA-176 ①)
+**es** (MA-144 ② · MA-174 ② · MA-176 ①) — ✅ **es 고유 10자리 이행 `14845d6f`(09-26 · MB-085)**. EN 동형(drawing L100·표 4행 · probability L214 · card-counting L119 · betting L230 · equity L144·L171 · implied L195 · flush L69·L157·L159)은 **L-2로 이월** — EN 원장이 같은 결함을 잡고 있다(EN implied L194 «all-in or short-stacked» · equity L170 등)
 - strategy L138 «pagar es más o menos rentable» → 손익분기
 - continuation-bet FAQ L265 «fuera de posición bajas al 30–45%» → 같은 글 L229 한정
 - starting-hands-chart L199 «Hacen pareja de segundas» · FAQ L287 11.8% «en el flop»

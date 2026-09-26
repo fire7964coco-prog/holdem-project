@@ -1,3 +1,10 @@
+## 2026-09-26 (1) — L-1 es 로케일 고유 정정 (MB-085)
+
+- `14845d6f` es 9편 10자리: strategy 손익분기 · c-bet FAQ OOP 30–45% 한정 · SHC 약한 A 둘째 페어·11.8% 플랍 · 3bet-pot-cbet desc «servidos»(159자) · showdown FAQ 보드 카드 동점(WRONG) · flush FAQ 더 높은 SF(WRONG) · hand-rankings tldr 5장 · all-in FAQ 언콜드 반환 · card-counting 노출 카드. 정답형은 전부 같은 글 문면에서.
+- 판정: intake §1의 es 목록 중 **EN에도 같은 결함이 있는 자리**(EN 원장 대응 행 RISKY/WRONG 또는 EN 문면 동형 grep 확인)는 L-2로 이월 — es만 먼저 고치면 EN과 갈린다(intake 🪶 원칙). implied L195·equity L171은 intake가 es 고유로 분류했으나 EN L194·L170 동형이라 이월.
+- audit:hard es 60편 0err · 빌드 ✅ 73 posts · sitemap 커밋.
+- 우편함: MA-179(EN 재검증 최종 MA)·180·181 ACK = MB-085 → L-2 착수 조건 충족(대기열 §2-L 갱신).
+
 ## 2026-09-25 (4) — 계산기 L-3 종결: 레인지 단조성 + 문구 5종 (MB-084)
 
 - `104fac47` 레인지: 169핸드 지배 쌍(한 장 공유+다른 장 우위 · 커넥터 예외 · 페어 서열 · 수티드>오프) 1,168개 검산 — 역전 5(K10o×2·J10o·A3s·A2s) → 0. EN+10로케일+ko 12파일, 로케일 문구는 같은 파일 기존 문구 축어 재사용(AJs·A4s·Q10o·K9s·99 첫 절).
