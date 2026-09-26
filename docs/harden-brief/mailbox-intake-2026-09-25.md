@@ -28,7 +28,7 @@
 - probability L214 varianza · card-counting L119 «accidente» · L130 · flush L69 «toda la jerarquía» · betting FAQ L230 «La misma regla» (→ A 103 명시)
 - 🪶 L119·L214·L100·L230은 EN 동형도 있다(§2) — es만 먼저 고치면 EN과 갈린다. **EN 정정 때 같이**가 원칙, es 고유 문면만 먼저.
 
-**zh** (MA-144 ③ · MA-175 · MA-177 · MA-178)
+**zh** (MA-144 ③ · MA-175 · MA-177 · MA-178) — ✅ **25자리 이행 `b19932db`(09-26 · MB-086)** · equity L187 벳 문턱만 EN L170 동형이라 L-2 이월
 - implied steps «减掉已经在那里的底池» (WRONG) · implied 직답 L172 «短筹码…不存在»
 - card-counting 직답 L89 A♠ 조건 · L114 «牌房只抽水»
 - drawing L124 «后门顺子大约 4.4%» · outs tldr L8 «转牌单张 19.1%» · probability tldr L8 ×4 전제 · pot-odds 직답 L52·L123

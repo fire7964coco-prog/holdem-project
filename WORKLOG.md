@@ -1,3 +1,9 @@
+## 2026-09-26 (2) — L-1 zh 로케일 고유 정정 (MB-086)
+
+- `b19932db` zh 17편 25자리(WRONG 3 = implied steps 底池+跟注 · tiebreak 零头 버튼 기준 · reading K-9-4 A-K를 이기는 31콤보). 정답형은 같은 글 문면 또는 EN·zh-hant 사본(game-order 순서 · pot-odds 正确弃牌 근거 EN L191).
+- §13: reading K♠9♦4♣ vs A-K — KK 1·99 3·44 3·AA 3·K9 6·K4 6·94 9 = 31 확인. game-order는 EN·zh-hant 목록과 일치.
+- equity 벳 문턱(L187)은 EN L170 동형 → L-2. audit:hard zh 56편 0err · 빌드 ✅.
+
 ## 2026-09-26 (1) — L-1 es 로케일 고유 정정 (MB-085)
 
 - `14845d6f` es 9편 10자리: strategy 손익분기 · c-bet FAQ OOP 30–45% 한정 · SHC 약한 A 둘째 페어·11.8% 플랍 · 3bet-pot-cbet desc «servidos»(159자) · showdown FAQ 보드 카드 동점(WRONG) · flush FAQ 더 높은 SF(WRONG) · hand-rankings tldr 5장 · all-in FAQ 언콜드 반환 · card-counting 노출 카드. 정답형은 전부 같은 글 문면에서.
