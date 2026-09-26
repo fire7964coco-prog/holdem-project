@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Texas Hold'em Strategy: The 5 Decisions Behind Every Winning Hand",
   seoTitle: "Why Poker 'Tips' Never Stuck — Texas Holdem Strategy in 5 Decisions",
   desc: "Winning poker isn't ten disconnected tips — it's the same five decisions every hand: position, hand selection, raise-or-fold, c-betting, and when to let go.",
-  tldr: "Every winning Texas Hold'em decision reduces to five repeatable questions: where am I sitting (position), is this hand worth playing, do I raise or fold (never limp), do I keep betting on the flop, and when do I let go? A tight-aggressive player who answers those five well folds ~80% of hands preflop, plays them aggressively when they do, and beats almost every casual game — no memorized tip list required.",
+  tldr: "Every winning Texas Hold'em decision reduces to five repeatable questions: where am I sitting (position), is this hand worth playing, do I raise or fold (never open-limp), do I keep betting on the flop, and when do I let go? A tight-aggressive player who answers those five well folds ~80% of hands preflop, plays them aggressively when they do, and beats almost every casual game — no memorized tip list required.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-11",
+  updated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
@@ -45,7 +45,7 @@ So instead of a list, use a **decision spine**. Every hand you play walks throug
 |:---:|:---|:---|:---|
 | **1** | **Position** | Where am I sitting, and who acts after me? | [Position play](/en/blog/holdem-position-play) |
 | **2** | **Hand selection** | Is this hand even worth entering the pot? | [Starting hands](/en/blog/holdem-starting-hands-chart) |
-| **3** | **Preflop aggression** | Do I raise or fold — never just limp? | [Why limping costs you](/en/blog/holdem-limping) |
+| **3** | **Preflop aggression** | Do I raise or fold — never open-limp? | [Why limping costs you](/en/blog/holdem-limping) |
 | **4** | **Continuation** | Do I keep betting on the flop, or shut down? | [Betting actions](/en/blog/holdem-betting-actions) |
 | **5** | **Discipline** | When do I let a hand go? | [Pot odds & folding](/en/blog/holdem-pot-odds) |
 
@@ -100,7 +100,7 @@ To [limp](/en/blog/holdem-limping) is to just call the big blind instead of rais
 2. **You surrender initiative.** The preflop raiser gets to keep telling a story on the flop (Decision 4). Limp, and you hand that story to someone else.
 3. **You paint a target on yourself.** Strong players raise big behind a limper to isolate them, then out-play them in position all hand. An open-limp announces "weak, passive player here."
 
-The default that fixes it is blunt: **if a hand is good enough to play, it's good enough to raise; if it isn't, fold.** And when someone *else* has already raised, raising again — a [3-bet](/en/blog/holdem-3bet "thumb:/images/holdem-3bet-hero.webp") — is how you punish wide opens and build pots with your best hands. The exceptions to that raise-or-fold default are real, and every one of them is about **price**. *Over*-limping — calling *behind* someone who already limped, in position, with a speculative hand like a small pair — buys a cheap seat in a multiway pot. **Defending your big blind** is the bigger one: against a 2.5bb open you have ==1bb already posted==, so you're calling 1.5bb into a 4bb pot and need only ==1.5 ÷ 5.5 = 27%== equity — and your call *closes* the action, so a wide slice of the BB range flat-calls rather than 3-bets or folds. **Set-mining** a small pair against a raise with deep stacks is the third (the math is below). Those are discounts, not strategies — outside spots like them, raise or fold.
+The default that fixes it is blunt: **if a hand is good enough to play, it's good enough to raise; if it isn't, fold.** And when someone *else* has already raised, raising again — a [3-bet](/en/blog/holdem-3bet "thumb:/images/holdem-3bet-hero.webp") — is how you punish wide opens and build pots with your best hands. The exceptions to that raise-or-fold default are real, and every one of them is about **price**. *Over*-limping — calling *behind* someone who already limped, in position, with a speculative hand like a small pair — buys a cheap seat in a multiway pot. **Defending your big blind** is the bigger one: against a 2.5bb open (heads-up, small blind folded, no antes) you have ==1bb already posted==, so you're calling 1.5bb into a 4bb pot and need only ==1.5 ÷ 5.5 = 27%== equity on paper. You'll realize less than your raw equity out of position, so treat 27% as the floor, not the finish line. And because your call *closes* the action, a wide slice of the BB range flat-calls rather than 3-bets or folds. **Set-mining** a small pair against a raise with deep stacks is the third (the math is below). Those are discounts, not strategies — outside spots like them, raise or fold.
 
 ---
 
@@ -209,7 +209,7 @@ A. 3-bet (re-raise a preflop raiser) for value with your strongest hands — big
 
 **Q. When should you raise vs. call?**
 
-A. Prefer raising to calling whenever you have a hand worth continuing with. Raising wins pots two ways (fold equity plus the best hand) and seizes initiative; calling has no fold equity — nobody folds to a call — and lets others in cheaply. Call when your hand is strong enough to continue but not to build a big pot, when you're set-mining a small pair, or when you want to keep a weaker player's bluffs in.
+A. In most spots, prefer raising to calling when you have a hand worth continuing with. Raising wins pots two ways (fold equity plus the best hand) and seizes initiative; calling has no fold equity — nobody folds to a call — and lets others in cheaply. Call when your hand is strong enough to continue but not to build a big pot, when you're set-mining a small pair, or when you want to keep a weaker player's bluffs in.
 
 **Q. How many hands should you play in Texas Hold'em?**
 

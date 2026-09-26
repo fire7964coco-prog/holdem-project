@@ -243,7 +243,7 @@ bad beat 是你为参与一个能赢的牌局所交的税。最好的玩家遭�
   <a href="/zh/blog/holdem-cooler" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">术语</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">什么是 cooler？</div>
-    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">没有 suckout 的那种输——也就不是 bad beat</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">没有 suckout 的那种输——严格意义上不是 bad beat</div>
   </a>
   <a href="/zh/blog/holdem-fish" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">术语</div>

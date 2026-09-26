@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Poker Positions: Every Seat Name & Chart",
   seoTitle: "Your Seat Changes Names Every Hand — Poker Positions Chart",
   desc: "The names move with the button, not the chairs. Every poker position name — UTG, hijack, cutoff, button — plus seat numbers, 6-max map, and who acts first.",
-  tldr: "Poker positions are seat names measured from the dealer button — UTG, lojack, hijack, cutoff, button, and the blinds — and they move one seat clockwise every hand. Preflop, UTG acts first and the big blind last; postflop, the small blind acts first and the button last. Physical seat numbers never move; positions do.",
+  tldr: "Poker positions are seat names measured from the dealer button — UTG, lojack, hijack, cutoff, button, and the blinds — and they normally move one seat clockwise every hand. Preflop, UTG acts first and the big blind last; postflop, the small blind acts first and the button last. Physical seat numbers never move; positions do.",
   category: "strategy",
   date: "2026-06-13",
-  updated: "2026-09-13",
+  updated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🎯",
@@ -33,13 +33,13 @@ Same hand. Completely different result. The only thing that changed was my seat 
 ---
 
 > **Quick answer**
-> Poker positions are the ==named seats measured from the dealer button== — UTG, lojack, hijack, cutoff, button, small blind, big blind — and they ==move one seat clockwise every hand== as the button moves. Preflop, UTG acts first and the big blind acts last. Postflop, the small blind acts first and the button acts last.
+> Poker positions are the ==named seats measured from the dealer button== — UTG, lojack, hijack, cutoff, button, small blind, big blind — and they ==normally move one seat clockwise every hand== as the button moves. Preflop, UTG acts first and the big blind acts last. Postflop, the small blind acts first and the button acts last.
 
 ---
 
 ## What Are the Positions at a Poker Table? (Full Seat Map)
 
-A position is not a chair — it's a **name for where you sit relative to the dealer button**, and it determines ==when you act on every street==. Because the button moves one seat clockwise after every hand, every player at the table wears a different name every single hand.
+A position is not a chair — it's a **name for where you sit relative to the dealer button**, and it determines ==when you act on every street==. In a normal game the button moves one seat clockwise after every hand, so every player at the table wears a different name from one hand to the next.
 
 Here is the full 9-max positions chart — every seat name, its abbreviation, its zone, and exactly when it acts before and after the flop:
 
@@ -90,13 +90,13 @@ This trips up almost every first-time live player: when the floor calls **"Table
 
 In most card rooms, physical seats are numbered from the dealer's immediate left — ==Seat 1 is conventionally the first chair to the dealer's left==, counting clockwise around to Seat 9 or 10 at the dealer's right. Those numbers are bolted to the chairs. Staff use them for logistics: seating new players, delivering chips, calling time.
 
-Positions are the opposite — they ==rotate one seat clockwise every single hand== with the button. Seat 5 might be the button this hand, the cutoff the next, and the hijack the hand after that.
+Positions are the opposite — they ==rotate one seat clockwise with the button, normally every hand==. Seat 5 might be the button this hand, the cutoff the next, and the hijack the hand after that.
 
 :::compare
 Seat numbers (physical) | Positions (poker)
 Fixed to the chair — Seat 1 is usually the dealer's immediate left | Move with the dealer button every hand
 Used by staff: "Seat 5, chips coming" | Used by strategy: "the cutoff opens"
-Never change during a session | Change every single hand, one seat clockwise
+Never change during a session | Normally change every hand, one seat clockwise
 Tell you WHERE you sit | Tell you WHEN you act
 :::
 
@@ -156,7 +156,7 @@ The single most-asked question about positions, answered in one table:
 
 | Street | First to act | Last to act |
 |:---|:---|:---|
-| **Preflop** | **UTG** — first seat left of the big blind | **Big blind** — may check or raise |
+| **Preflop** | **UTG** — first seat left of the big blind | **Big blind** — may check or raise if no one has raised |
 | **Flop / Turn / River** | **Small blind** — or the first still-active seat to the button's left | **Button** — or the closest active seat before it |
 
 So — **do the blinds go first?** ==Preflop, no. Postflop, yes.== Before the flop the blinds have already put money in, so the action starts with UTG and comes back around to them last — the big blind acts last of everyone. After the flop the order resets clockwise from the button: the small blind speaks first, the big blind second, and the button always last.
@@ -183,7 +183,7 @@ The position names don't change with table size — ==they peel off from early p
 
 **Heads-up is the one that breaks everyone's intuition.** With only two players, ==the button posts the small blind== — the same seat is BTN and SB at once. That means the button acts ==**first** preflop== (the big blind acts last, as always) but still acts ==**last** on every postflop street==, while the big blind acts first postflop. Every other table size follows the normal pattern; heads-up alone fuses the best seat with a blind.
 
-**6-max vs full ring** is purely subtraction: the three early seats (UTG, UTG+1, and UTG+2) drop out and the lojack inherits the UTG name, so 6-max runs UTG → HJ → CO → BTN → SB → BB. The practical consequence is not that a seat plays "later" — a cutoff has the same three players behind it either way. It's that ==with the early seats gone, you sit in the blinds and in late position far more often, and fewer players open in front of you== — 6-max UTG faces five opponents, not eight — which is why ranges widen across the board in short-handed games. The seat-by-seat numbers live in the [position strategy guide](/en/blog/holdem-position-play), and the exact hands that fill each range are mapped in the [starting hands chart](/en/blog/holdem-starting-hands-chart).
+**6-max vs full ring** is purely subtraction: the three early seats (UTG, UTG+1, and UTG+2) drop out and the lojack inherits the UTG name, so 6-max runs UTG → HJ → CO → BTN → SB → BB. The practical consequence is not that a seat plays "later" — a cutoff has the same three players behind it either way. It's that ==with the early seats gone, you sit in the blinds and in late position far more often, and fewer players open in front of you== — 6-max UTG faces five opponents, not eight — which is why the first seat opens wider and you play more hands overall in short-handed games, even though a cutoff's range barely changes. The seat-by-seat numbers live in the [position strategy guide](/en/blog/holdem-position-play), and the exact hands that fill each range are mapped in the [starting hands chart](/en/blog/holdem-starting-hands-chart).
 
 > **Naming caveat:** some sites and rooms label the first 6-max seat "LJ" or "MP" instead of UTG, and 10-handed middle seats sometimes appear as "MP1/MP2". Labels vary; the acting order never does.
 
@@ -210,7 +210,7 @@ A. The lojack (LJ) is the seat three to the right of the button — the earlier 
 
 **Q. Who goes first, the small blind or the big blind?**
 
-A. The small blind acts before the big blind on every street. Preflop, both blinds act last (the big blind last of all, with the option to check or raise); postflop, the small blind is the first seat to act at the table. The one exception is heads-up, where the button posts the small blind and the big blind acts first postflop.
+A. The small blind acts before the big blind on every street. Preflop, both blinds act last (the big blind last of all — with the option to check or raise if no one has raised); postflop, the small blind is the first seat to act at the table. The one exception is heads-up, where the button posts the small blind and the big blind acts first postflop.
 
 **Q. How many positions are there in 6-max poker?**
 
@@ -218,7 +218,7 @@ A. Six: UTG (also called lojack), hijack, cutoff, button, small blind, and big b
 
 **Q. Do poker positions change every hand?**
 
-A. Yes. The dealer button moves one seat clockwise after every hand, and since all positions are named by their distance from the button, every player's position shifts by one seat each hand. Over a full orbit you'll hold every position at the table exactly once.
+A. Yes. The dealer button moves one seat clockwise after every hand, and since all positions are named by their distance from the button, every player's position normally shifts by one seat each hand. Over a full orbit at a stable table you'll hold every position exactly once — the exceptions come when a player busts or leaves and the table plays a dead button (the same player can then act last on two hands in a row), or when players join, tables break, or the game goes heads-up.
 
 **Q. What is Seat 1 in poker?**
 
@@ -228,7 +228,7 @@ A. Seat 1 is a physical chair, not a position — in most card rooms it's the fi
 
 ## The Takeaways
 
-1. **Positions are names, not chairs.** Every seat is named by its distance from the dealer button, and every name moves one seat clockwise each hand.
+1. **Positions are names, not chairs.** Every seat is named by its distance from the dealer button, and every name normally moves one seat clockwise each hand.
 2. **The chart in one line:** UTG → UTG+1 → UTG+2 → LJ → HJ → CO → BTN → SB → BB. Preflop starts at UTG and ends at the big blind; postflop starts at the small blind and ends at the button.
 3. **Seat numbers ≠ positions.** Seat 1 is conventionally the dealer's immediate left and never moves; positions rotate every hand. One is an address, the other is a job.
 4. **Table size subtracts from the front.** 6-max drops the early seats; heads-up fuses the button with the small blind — first to act preflop, last to act postflop.

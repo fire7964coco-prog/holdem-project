@@ -10,7 +10,7 @@ export const POST: Post = {
   date: "2026-07-06",
   // 2026-08-19: range advantage 절에 `a-high-board-cbet` 역링크 한 문단 추가(EN·KO 전용 자산이라
   //   7개 번역본에는 전파하지 않는다 — 의도적 차이. `docs/locale-intentional-diffs.md`에 기록).
-  updated: "2026-09-11",
+  updated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "15 min",
   emoji: "🔥",
@@ -39,7 +39,7 @@ Check | Often the best play, not weakness
 
 **A continuation bet is a bet made on the flop by the player who was the aggressor before the flop** — the last person to raise. You "continue" telling the story of strength you started preflop. Crucially, ==you don't need to have hit the flop to c-bet==; a large share of good c-bets are made with hands that completely missed.
 
-The reason it works is one simple statistic: **a hand misses the flop — makes no pair or better — about two-thirds of the time.** So when you bet, your opponent usually has nothing either, and folds. You're not betting because you're strong; you're betting because *they're probably weak* and you were the one who claimed the lead.
+The reason it works is one simple statistic: **two unpaired hole cards fail to pair on the flop about two-thirds of the time (67.6%).** So when you bet, your opponent has often missed too — and a lot of those hands fold. You're not betting because you're strong; you're betting because *they're probably weak* and you were the one who claimed the lead.
 
 Once you know the flop c-bet, the rest of the "barreling" ladder follows:
 
@@ -62,7 +62,7 @@ Here's the crucial thing modern strategy actually says, because it's easy to get
 
 The concept underneath is ==range advantage==: whose overall range is stronger on this particular flop. As the preflop raiser, you hold more big cards and overpairs, so **high, dry boards belong to you** — and boards full of medium connected cards belong to the player who called. Master that one idea and you're ahead of every "just c-bet" player at the table.
 
-And range advantage isn't the whole story — add position on top of it and the effect gets extreme. On A-7-2 rainbow a solver has the caller checking 98.2% of its range, top pair included, even though equity is nearly even. The full breakdown is in [top pair, still checking](/en/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-en.webp").
+And range advantage isn't the whole story — add position on top of it and the effect gets extreme. On A-7-2 rainbow a solver has the caller checking 98.2% of its range, top pair included — its range equity trails only 45.1% to 54.9%, yet being out of position turns that modest gap into an almost total check. The full breakdown is in [top pair, still checking](/en/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-en.webp").
 
 ---
 
@@ -102,7 +102,7 @@ There is no single "correct" c-bet percentage — anyone who gives you one numbe
 |:---|:---:|:---|
 | **In position, heads-up, dry board** | **70–100%** (small) | Classic "range bet" — bet nearly everything, tiny |
 | **In position, heads-up, wet board** | **~50–60%** | More polarized — value and draws bet, air checks |
-| **Out of position, heads-up (single-raised pot, you were the raiser)** | **~30–45%** | Check far more to protect your checking range. As the OOP *3-bettor* it flips — over 97% on the two boards we solved, almost all of it at the two-thirds-pot size (the one-third size got under 1%), see the [position guide](/en/blog/holdem-position-play) |
+| **Out of position, heads-up (single-raised pot, you were the raiser)** | **~30–45%** | Check far more to protect your checking range. As the OOP *3-bettor* it flips: over 97% on all three boards we solved, almost all of it at two-thirds pot on Q♥T♥7♠ and 8♦5♣2♠ but mostly at one-third pot on A♦K♠2♥ (57.8%); see the [position guide](/en/blog/holdem-position-play) |
 | **Multiway (2 opponents)** | **~50% or less** | Someone likely connected — tighten up |
 | **Multiway (3+ opponents)** | **Strong hands & good draws only** | Fold equity is basically gone |
 
@@ -155,7 +155,7 @@ Checking the flop isn't the end of the hand. A **delayed c-bet** — checking th
 
 - The **flop favored your opponent** (a low, connected board), so betting was bad — but the **turn changes the picture** (an overcard, or a card that brings your equity up).
 - You **checked back a decent hand** in position and want to bet a street of value now that the board is safer.
-- You want to **catch floats**: players who planned to bluff-raise your flop c-bet get no bet to attack, and then face your turn bet instead.
+- You want to **take away the flop raise**: players who planned to bluff-raise your flop c-bet get no bet to attack, and then face your turn bet instead.
 
 Delaying turns a spot where an automatic c-bet would have bled chips into a controlled, informed bet one street later.
 
@@ -165,7 +165,7 @@ Delaying turns a spot where an automatic c-bet would have bled chips into a cont
 
 Let's make the "don't" explicit, because it's where the money is saved:
 
-- **The board smashed your opponent's range.** A 7‑6‑5 or 9‑8‑7 flop hits the hands that call a raise far harder than it hits yours. Betting here just donates chips — check.
+- **The board smashed your opponent's range.** A 7‑6‑5 or 9‑8‑7 flop hits the hands that call a raise far harder than it hits yours. Betting here with most of your range just donates chips — check far more often, and when you do bet, go big and selective.
 - **You're out of position on a dynamic board** with a marginal hand. Acting first with no information, keep the pot small and check.
 - **You're multiway with air.** Covered above — no fold equity, no bet.
 - **Your hand wants to protect a checking range.** Sometimes you check a strong hand on purpose so your checks aren't automatically weak.
@@ -196,7 +196,7 @@ Same preflop raise, opposite flops, opposite correct plays. That's the whole les
 | **Betting big with a wide range** | Wide ranges want small sizing, not big | Small on dry, big only when polarized |
 | **C-betting light multiway** | Fold equity collapses with more players | Value & draws only vs 2+ |
 | **C-betting OOP too often** | You can't realize equity acting first | Check more, build a checking range |
-| **Betting into a board that hit them** | 7‑6‑5 smashed their range, not yours | Check and give up |
+| **Betting into a board that hit them** | 7‑6‑5 smashed their range, not yours | Check more; bet big and selectively when you do |
 | **"One-and-done" barreling** | C-bet flop, always give up turn = easy to float | Have a turn plan before you fire |
 | **Triple-barreling with no equity** | Bluffing off a stack with no outs or blockers | Bluff with backup equity or good blockers |
 
@@ -247,7 +247,7 @@ A. A delayed c-bet is when the preflop raiser checks the flop and then bets the 
 
 **Q. When should you NOT c-bet?**
 
-A. Don't c-bet when the board smashed your opponent's range (low connected boards), when you're out of position with a marginal hand on a dynamic board, when you're multiway with air, or when your hand prefers to protect a checking range. Checking in these spots isn't weakness — it saves chips and makes your future bets more credible.
+A. Don't c-bet by default when the board smashed your opponent's range (low connected boards — check more, and bet big and selectively when you do), when you're out of position with a marginal hand on a dynamic board, when you're multiway with air, or when your hand prefers to protect a checking range. Checking in these spots isn't weakness — it saves chips and makes your future bets more credible.
 
 **Q. Is a c-bet a bluff?**
 
@@ -267,7 +267,7 @@ A. Around 55–70% for flop c-bet is a healthy, balanced band. Over about 85% si
 
 1. **A c-bet is a flop bet by the preflop raiser** — and it works because hands miss the flop about two-thirds of the time.
 2. **The board decides.** Bet high, dry boards that favor your range; check low, connected boards that favor your opponent's.
-3. **Range advantage sets frequency; nut advantage sets size.** Bet often on boards you dominate; bet big only when you hold more of the nuts.
+3. **Range advantage sets frequency; nut advantage sets size.** Bet often on boards you dominate; bet big when you hold more of the nuts or need to charge draws on wet boards.
 4. **Small (⅓) on dry, big (⅔+) on wet.** C-bet less out of position as the single raiser (as the OOP 3-bettor it flips to almost always), and much less multiway.
 5. **Checking is a weapon.** The best players check often and on purpose — the c-bet is a scalpel, not a hammer.
 

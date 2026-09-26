@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Of the 169 starting hand types, only a small top slice — about 15–20% of the hands you're dealt — is profitable for a beginner. Big pairs (AA–TT) and AK raise from any seat; the later you act, the wider you open — from ~13% under the gun to ~43% on the button (wider again in 6-max). Start with a simplified chart, add GTO preflop charts once raise-or-fold is automatic.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-09-24",
+  updated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🂡",
@@ -78,7 +78,7 @@ Sorted into tiers, good starting hands in poker look like this:
 |------|----------|----------------|
 | Premium | AA, KK, QQ, JJ, AKs, AKo | Raise from any position, re-raise aggressively |
 | Strong | TT–88, AQ, AJs, ATs, KQs | Raise from most positions, slow down vs. heavy 3-bets |
-| Speculative | Small pairs (77–22), suited connectors (JTs, T9s, 98s), suited aces (A2s–A9s) | Late position only — they need cheap flops and position |
+| Speculative | Small pairs (77–22), suited connectors (JTs, T9s, 98s), suited aces (A2s–A9s) | Mostly late position — they need cheap flops and position (a full UTG range keeps 77) |
 | ==r:Trash== | Weak offsuit aces (A4o), king-rag (K3o), low offsuit junk | ==r:Fold preflop — these cost chips every session== |
 
 :::tip[The tier is only half the answer. A speculative hand is "good" on the button and bad under the gun — which is why the real chart is organized by position, not by hand.]:::
@@ -135,13 +135,13 @@ The button is the best seat in poker. ==g:You act last on the flop, turn, and ri
 - **Suited connectors (T9s, 98s, 87s)** — cheap, high-implied-odds hands
 - **Weaker broadway offsuit (KTo, QJo)** — only in late position, never early
 
-Key rule: ==these speculative hands need position to be profitable==. If a UTG player raises in front of you, most of them go straight into the muck — their edge disappears without position.
+Key rule: ==these speculative hands need position to be profitable==. If a UTG player raises in front of you, most of them go straight into the muck — you'd be paying a raise to play a speculative hand against a strong range, and the cheap flop they need is gone.
 
 ---
 
 ## 6-Max Starting Hands: How the Chart Changes
 
-Most online cash games are 6-max, and the chart shifts in one direction: ==wider==. Remove the three tightest seats from a 9-max table and every remaining position effectively "moves up." The first player to act in 6-max is opening into five opponents, not eight — so ==g:UTG in 6-max plays roughly like MP in 9-max== (~15–17% instead of ~13%).
+Most online cash games are 6-max, and the chart shifts in one direction: ==wider==. Remove the three tightest seats from a 9-max table and the new first seat effectively "moves up" — the later seats keep the same players behind them, but the table as a whole plays wider. The first player to act in 6-max is opening into five opponents, not eight — so ==g:UTG in 6-max plays roughly like MP in 9-max== (~15–17% instead of ~13%).
 
 :::compare
 9-Max (Full Ring) | 6-Max
@@ -202,7 +202,7 @@ The worst starting hands in poker aren't random junk like 7-2 — nobody needs a
 
 The ==r:most expensive mistake beginners make is calling raises with weak aces== like the A♣ 4♦ from the intro. When you finally hit your pair of aces, you're often second-best to A♠ K♦ or A♥ Q♦ — and you lose a big pot convinced you have top pair. You do. So do they, with a better kicker.
 
-(And the actual worst hand in poker? 7-2 offsuit — more on that, and the famous "7-2 rule," in the FAQ below.)
+(And the hand usually called the worst in poker? 7-2 offsuit, though by raw equity against a random hand 3-2 offsuit is slightly weaker, about 32% vs 35%. More on 7-2, and the famous "7-2 rule," in the FAQ below.)
 
 ---
 
@@ -265,7 +265,7 @@ A. There are 169 distinct starting hand types (13 pairs, 78 suited, 78 offsuit) 
 
 **Q. What is the 7-2 rule in poker?**
 
-A. The 7-2 rule is a house side game, not an official poker rule: if a player wins a pot with 7-2 offsuit — the worst hand — every other player pays them a small bounty. It exists purely to spice up home games and pub games by rewarding an outrageous bluff.
+A. The 7-2 rule is a house side game, not an official poker rule: if a player wins a pot with 7-2 offsuit — the hand most players call the worst — every other player pays them a small bounty. It exists purely to spice up home games and pub games by rewarding an outrageous bluff.
 
 **Q. What is the worst starting hand in poker?**
 

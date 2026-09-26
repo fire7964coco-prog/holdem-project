@@ -46,7 +46,7 @@ Poker hat sein eigenes Vokabular, und es zu kennen bringt zwei Dinge: Es verhind
 | **Check vs. Call** | Ein Check riskiert **keine Chips** – möglich nur, wenn du keinen Einsatz mehr ausgleichen musst; ein Call **gleicht** eine bestehende Bet aus. |
 | **Blind vs. Ante** | Blinds sind **positionale** Pflichteinsätze (SB/BB); Antes füttern den Pot und kommen von **allen** (im modernen Turnier meist als Big Blind Ante). |
 | **Set vs. Trips** | Beide sind ein Drilling – ein **Set** nutzt ein Pocket Pair; **Trips** nutzt eine Hole Card + ein Paar auf dem Board. |
-| **Cooler vs. Bad Beat** | Ein [Cooler](/de/blog/holdem-cooler) = eine Hand, zu stark zum Folden, trifft auf eine größere (im engeren Sinn: du lagst schon beim Reingehen hinten); ein [Bad Beat](/de/blog/holdem-bad-beat) = du lagst vorn und wurdest outgedrawt. |
+| **Cooler vs. Bad Beat** | Ein [Cooler](/de/blog/holdem-cooler) = eine Hand, zu stark zum Folden, trifft auf eine größere (im engeren Sinn: du lagst schon beim Reingehen hinten); ein [Bad Beat](/de/blog/holdem-bad-beat) = du lagst beim Reingehen als großer Favorit vorn und wurdest outgedrawt. |
 | **Value Bet vs. Bluff** | Eine Value Bet will einen **Call von einer schwächeren Hand**; ein Bluff will, dass **bessere Hände folden**. |
 | **Pot Odds vs. Implied Odds** | [Pot Odds](/de/blog/holdem-pot-odds) zählen nur die Chips, die **jetzt im Pot** sind; Implied Odds addieren, was du **später gewinnst**. |
 | **VPIP vs. PFR** | VPIP = wie oft du **spielst**; PFR = wie oft du **raist**. PFR kann VPIP nie übersteigen. |

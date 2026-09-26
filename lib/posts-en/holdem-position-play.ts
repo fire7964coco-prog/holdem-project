@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Being in position means you act last — you see every opponent's decision before spending a chip. Solver examples show that position usually improves equity realization, but neither seat is mechanically locked above or below 100%: ranges, board, and action can reverse the usual pattern. That's why UTG opens ~13% of hands and the button ~43% — and why position rewrites every c-bet, bluff, and pot-control decision postflop.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-09-22",
+  updated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎯",
@@ -176,7 +176,7 @@ Every seat gets its own opening range because **the number of players still to a
 | Hijack | ~20% | Steal opportunities begin |
 | **Cutoff** | **~27%** | Only the button behind — prime steal seat |
 | **Button** | ==g:**~43%**== | Guaranteed last action postflop — widest open |
-| Small blind | ~40% when folded to (vs a raise: 3-bet or fold) | Wide when folded to — raise by default, though completing is a defensible [limp](/en/blog/holdem-limping) in an unraised pot; facing a raise, 3-bet or fold — don't flat-call |
+| Small blind | ~40% when folded to (vs a raise: 3-bet or fold) | Wide when folded to — raise by default, though completing is a defensible [limp](/en/blog/holdem-limping) in an unraised pot; facing a raise, 3-bet or fold — almost never flat-call |
 | Big blind | Defends wide vs steals | Closing action + pot odds, not opens |
 
 ![9-handed poker table showing opening ranges widening from UTG (~13%, tight red) to the Button (~43%, wide green)](/images/holdem-position-play-opening-range.webp "Opening range by position — UTG opens ~13%, the button ~43%")
@@ -193,11 +193,11 @@ Most guides stop at "avoid playing OOP." Fine — but you're in the blinds twice
 
 **1. [Check-raise](/en/blog/low-board-check-raise) is your equalizer.** It's the one weapon OOP has that IP doesn't: because they expect to bet when checked to, ==g:a check-raise turns their positional autopilot against them.== Build the range honestly — strong hands (sets, two pair) plus draws with real equity (open-enders, flush draws) — so it's never all-bluff or all-value.
 
-**2. Bet bigger when you do bet.** OOP bets need to end hands sooner. A larger sizing (think two-thirds to three-quarters pot rather than a third) denies the free cards and cheap floats that position would otherwise let your opponent take. Playing small-ball OOP just extends the hand — and every extra street favors the player acting last.
+**2. Give every bet a job — and size it for the spot.** There is no single out-of-position size. In the single-raised pots we solved, the OOP player who bet mostly chose about a third of the pot (79.6% of the small blind's range took that size on A♠A♥6♦, a paired-ace board that heavily favors the raiser). In 3-bet pots the OOP 3-bettor still preferred the small size on A♦K♠2♥ (57.8%) but switched to two-thirds pot on Q♥T♥7♠ and 8♦5♣2♠. The bigger size is for denying the free cards and cheap floats that position would otherwise let your opponent take; the small one lets you bet a wide range cheaply. What loses is betting without a plan — every extra street you drift through favors the player acting last.
 
 **3. Pot control means checking more, calling more, and folding earlier.** Medium-strength hands OOP want cheap showdowns. Check-call lines get there; bet-and-get-raised lines don't. And when the third barrel arrives and your hand hasn't improved, remember what marginal hands OOP actually are: ==r:bluff-catchers that under-realize.== Folding the river OOP more often than feels natural is usually correct.
 
-**4. Lead (donk-bet) rarely and specifically.** Betting into the preflop raiser works only on boards that favor your range — low, connected flops that smash a blind-defend range and miss a raiser's. As a default line it's readable and exploitable; as a scalpel on the right boards, it's fine.
+**4. Lead (donk-bet) rarely and specifically.** Betting into the preflop raiser works best on boards that favor your range — low, connected flops that smash a blind-defend range and miss a raiser's. As a default line it's readable and exploitable; as a scalpel on the right boards, it's fine.
 
 **5. Best of all: don't get there.** Flat-calling raises from the small blind, cold-calling in middle position with dominated hands, defending the big blind against early-position opens with junk — most OOP misery is self-inflicted at the preflop decision.
 
@@ -210,10 +210,10 @@ Massively. The continuation bet is fundamentally an information play, and inform
 | Situation | Typical solver c-bet frequency (flop) |
 |---|---|
 | **IP (BTN/CO vs blind defense)** | **~65–75%** of boards |
-| OOP as the 3-bettor (3-bet pots from the blinds) | Very high — in our solver runs the big blind c-bets over 97% of the time on both Q♥T♥7♠ and 8♦5♣2♠ — at the two-thirds-pot size; the one-third size got under 1% |
+| OOP as the 3-bettor (3-bet pots from the blinds) | Very high — in our solver runs the big blind c-bets over 97% of the time on both Q♥T♥7♠ and 8♦5♣2♠ — at the two-thirds-pot size; the one-third size got under 1% (on A♦K♠2♥ the one-third size led instead, 57.8%) |
 | OOP raiser vs IP caller (single-raised pot) | ~30–45% — most selective |
 
-In position, you can c-bet a wide range — including air and backdoor draws — because your opponent must respond without knowing your next move, and when called you still act last on the turn. Out of position, the same bet is riskier: a check-raise ends your bluff, and a call leaves you guessing first on every remaining street. That's why blindly c-betting 100% "because you raised preflop" burns money OOP in a single-raised pot — the near-100% row above belongs to the 3-bettor, whose range advantage licenses it.
+In position, you can c-bet a wide range — including air and backdoor draws — because your opponent must respond without knowing your next move, and when called you still act last on the turn. Out of position, the same bet is riskier: a raise ends your bluff, and a call leaves you guessing first on every remaining street. That's why blindly c-betting 100% "because you raised preflop" burns money OOP in a single-raised pot — the near-100% row above belongs to the 3-bettor, whose range advantage licenses it.
 
 The full sizing and board-texture framework is in the [continuation bet guide](/en/blog/holdem-continuation-bet).
 
@@ -235,7 +235,7 @@ For the mechanics of the blinds themselves — why they exist and how the forced
 
 ## 6-Max vs Full Ring — and Tournaments vs Cash
 
-**6-max compresses the map.** With three early seats removed, the first player to act in 6-max faces only five opponents — so ==**6-max UTG plays like full-ring lojack, opening around ~17%**== rather than full ring UTG's ~13%. Every other seat widens similarly, steals come more often, and 3-bets are more frequent overall. The most common leak when switching formats is carrying 9-max tightness into 6-max — you end up folded off the table.
+**6-max compresses the map.** With three early seats removed, the first player to act in 6-max faces only five opponents — so ==**6-max UTG plays like full-ring lojack, opening around ~17%**== rather than full ring UTG's ~13%. The later seats keep the same number of players behind them, so their ranges barely change — but you sit in them more often, steals are more common, and 3-bets are more frequent overall. The most common leak when switching formats is carrying 9-max tightness into 6-max — you end up folded off the table.
 
 **Tournaments keep the same mechanics with different stakes on each decision.** In cash games, positional edges compound calmly across hours and rebuys make leaks recoverable. In tournaments, shrinking stacks change the texture: below ~15 big blinds, play collapses toward push/fold where positional nuance matters less, while at 20–30 BB late-position stealing becomes the engine of survival — until bubble ICM makes some mathematically fine steals tournament suicide. The full comparison is in the [tournament vs cash game guide](/en/blog/holdem-tournament-vs-cash-game).
 
@@ -250,7 +250,7 @@ For the mechanics of the blinds themselves — why they exist and how the forced
 
 **Q. What does out of position mean in poker?**
 
-A. Out of position (OOP) means you must act before your opponent on the postflop streets — flop, turn, and river. You commit chips without knowing what they'll do, can't take free cards, and struggle to control the pot size. The blinds are OOP against every other seat; the button is never OOP against anyone.
+A. Out of position (OOP) means you must act before your opponent on the postflop streets — flop, turn, and river. You commit chips without knowing what they'll do, can't take free cards, and struggle to control the pot size. The blinds are OOP against every non-blind seat (and the small blind is OOP against the big blind too); the button is never OOP against anyone.
 
 **Q. Who acts first — the small blind or the big blind?**
 
@@ -270,11 +270,11 @@ A. Two answers, depending on the question. The small blind is the structurally w
 
 **Q. Is the small blind an early position?**
 
-A. No — the small blind is a blind, not an "early position" seat. Early-position players (UTG and the seats beside it) open tight because the whole table acts behind them — and postflop they at least act *after* the blinds. The small blind is actually the worst seat to play from: it posts half a blind and then acts first on every postflop street. Don't treat it like early position — the modern default from the small blind is to 3-bet or fold.
+A. No — the small blind is a blind, not an "early position" seat. Early-position players (UTG and the seats beside it) open tight because the whole table acts behind them — and postflop they at least act *after* the blinds. The small blind is actually the worst seat to play from: it posts half a blind and then acts first on every postflop street. Don't treat it like early position — facing a raise, the modern default from the small blind is to 3-bet or fold, almost never flat-call; when it's folded to you, raise most of the time.
 
 **Q. Is it better to limp or raise from UTG?**
 
-A. Raise or fold — don't open-limp. A hand strong enough to play from the worst preflop seat is strong enough to raise; limping invites multiway pots you'll play out of position, caps your perceived range, and never wins the blinds outright. The rare exception is limping behind existing limpers in passive live games with small pairs and suited connectors.
+A. Raise or fold — don't open-limp. A hand strong enough to play from the worst preflop seat is strong enough to raise; limping invites multiway pots you'll play out of position, caps your perceived range, and never wins the blinds outright. UTG has no one in front to limp behind, so the usual exception — over-limping behind existing limpers in passive live games with small pairs and suited connectors — belongs to later seats.
 
 **Q. How wide should I open from UTG vs the button?**
 
@@ -282,7 +282,7 @@ A. From UTG in a full ring game, open roughly the top ~13% of hands — strong p
 
 **Q. How does position affect c-bet frequency?**
 
-A. In position (button or cutoff), solvers c-bet roughly 65–75% of flops — you act last on every later street, so wide betting including air is safe. Out of position in a single-raised pot that drops to roughly 30–45%, because a check-raise can end your bluff and a call leaves you guessing first on the turn and river (as the 3-bettor out of position it's a different story — the range advantage lets you c-bet almost every flop on the boards we ran). C-betting the same frequency OOP as IP is one of the most common and costly leaks.
+A. In position (button or cutoff), solvers c-bet roughly 65–75% of flops — you act last on every later street, so wide betting including air is safe. Out of position in a single-raised pot that drops to roughly 30–45%, because a raise can end your bluff and a call leaves you guessing first on the turn and river (as the 3-bettor out of position it's a different story — the range advantage lets you c-bet almost every flop on the boards we ran). C-betting the same frequency OOP as IP is one of the most common and costly leaks.
 
 **Q. Should you always 3-bet from the small blind?**
 
@@ -294,8 +294,8 @@ A. When you enter a raised pot, mostly yes — the modern default from the SB is
 
 1. **Position improves equity realization on average.** Neither seat is fixed above or below 100%; ranges, board, and action set the number. The usual edge comes from acting last, not from better cards.
 2. **Ranges slide with position.** UTG opens ~13%, the button ==g:~43%== — and every seat between gets a step on the ladder. ==r:Playing button hands from UTG bleeds chips.==
-3. **The button is the best seat; the blinds are the worst.** The BB loses the most raw chips (forced bet); the SB is the worst seat to actually play (first to act every street). Protect your button, and 3-bet-or-fold your small blind.
-4. **OOP isn't hopeless — it's disciplined.** Check-raise as your equalizer, size up when betting, control pots with medium hands, and fold rivers more than feels natural.
+3. **The button is the best seat; the blinds are the worst.** The BB loses the most raw chips (forced bet); the SB is the worst seat to actually play (first to act every street). Protect your button, and facing a raise from the small blind, 3-bet or fold almost every time.
+4. **OOP isn't hopeless — it's disciplined.** Check-raise as your equalizer, size your bets for the board and pot type, control pots with medium hands, and fold rivers more than feels natural.
 5. **Raise or fold under the gun.** Open-limping UTG combines the worst preflop seat with the weakest line.
 6. **6-max compresses the map.** 6-max UTG plays like full-ring lojack (~17%) — recalibrate when you switch formats.
 

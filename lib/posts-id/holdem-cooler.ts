@@ -57,7 +57,7 @@ Cara paling bersih untuk membedakannya:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| | Cooler | Bad Beat |
+| | Cooler (arti ketat) | Bad Beat |
 |:---|:---|:---|
 | **Siapa memimpin saat chip masuk** | Anda **tertinggal** | Anda **unggul** (favorit) |
 | **Apakah terjadi suckout?** | Tidak — pemenang memimpin sepanjang jalan | Ya — sebuah draw keberuntungan kena |
@@ -156,7 +156,7 @@ A. Timing dan suckout, setidaknya dalam arti ketat. Dalam cooler Anda sudah tert
 
 **Q. Apakah cooler itu nasib buruk atau permainan buruk?**
 
-A. Cooler sejati adalah murni nasib buruk — Anda bermain dengan benar dan tetap kalah karena dua tangan premium bertabrakan. Jebakannya, "cooler" sering disalahgunakan untuk membenarkan sebuah kesalahan nyata. Tesnya: akankah Anda membuat permainan yang sama lagi dengan informasi yang sama? Jika tidak, itu salah main yang bisa Anda pelajari. Jika ya, itu nasib buruk — cooler jika Anda tertinggal saat chip masuk, bad beat jika Anda unggul lalu tersalip.
+A. Cooler sejati adalah murni nasib buruk — Anda bermain dengan benar dan tetap kalah karena dua tangan premium bertabrakan. Jebakannya, "cooler" sering disalahgunakan untuk membenarkan sebuah kesalahan nyata. Tesnya: akankah Anda membuat permainan yang sama lagi dengan informasi yang sama — range, harga, dan kedalaman stack, bukan sekadar firasat? Jika tidak, itu salah main yang bisa Anda pelajari. Jika ya, itu nasib buruk — dalam arti ketat, cooler jika Anda tertinggal saat chip masuk, bad beat jika Anda unggul lalu tersalip.
 
 **Q. Apakah setup sama dengan cooler?**
 

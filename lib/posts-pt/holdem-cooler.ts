@@ -57,7 +57,7 @@ A forma mais limpa de não confundir:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| | Cooler | Bad Beat |
+| | Cooler (sentido estrito) | Bad Beat |
 |:---|:---|:---|
 | **Quem liderava quando as fichas entraram** | Você estava **atrás** | Você estava **na frente** (favorito) |
 | **Aconteceu um suckout?** | Não — o vencedor liderou o tempo todo | Sim — um projeto de sorte fechou |
@@ -156,7 +156,7 @@ A. Timing e suckouts, pelo menos no sentido estrito. Num cooler você estava atr
 
 **Q. Cooler é azar ou jogada ruim?**
 
-A. Um cooler de verdade é puro azar — você jogou corretamente e mesmo assim perdeu porque duas mãos premium colidiram. O detalhe é que "cooler" é frequentemente mal usado para desculpar um erro real. O teste: você faria a mesma jogada de novo com a mesma informação? Se não, foi uma jogada ruim da qual você pode aprender. Se sim, foi azar — um cooler se você estava atrás quando o dinheiro entrou, um bad beat se estava na frente e foi superado.
+A. Um cooler de verdade é puro azar — você jogou corretamente e mesmo assim perdeu porque duas mãos premium colidiram. O detalhe é que "cooler" é frequentemente mal usado para desculpar um erro real. O teste: você faria a mesma jogada de novo com a mesma informação — ranges, preço e profundidade de stack, não só o feeling? Se não, foi uma jogada ruim da qual você pode aprender. Se sim, foi azar — em sentido estrito, um cooler se você estava atrás quando o dinheiro entrou, um bad beat se estava na frente e foi superado.
 
 **Q. Setup é a mesma coisa que cooler?**
 

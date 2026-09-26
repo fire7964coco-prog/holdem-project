@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A 3-bet is the first re-raise before the flop — called a 3-bet because the big blind is the first bet, the open-raise the second, and your re-raise the third. Value-3-bet a tight core (QQ+, AK) plus a few suited blocker bluffs like A5s, size it around 3x the open in position and 4x out of position, and keep your overall 3-bet frequency near 6–10%. When you're the one facing a 3-bet, 4-bet your premiums, call the hands that play well, and fold the rest — folding more than 'balanced' against low-stakes players who never bluff.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-22",
+  updated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "♦️",
@@ -127,7 +127,7 @@ The math is deliberately visible because it's where beginners leak: **3 × 3bb =
 - **Never 3-bet tiny out of position.** A small OOP 3-bet lays your opponent a great price to call and outplay you with position — the exact thing you're trying to avoid. Use the full 4x+.
 - **Sizing isn't a law.** Size *down* against players who over-fold (you're bluffing cheaper) and size *up* and go pure-value against calling stations who never fold. Rake and stack depth shift it too.
 
-In tournaments with shallow stacks, the whole calculus changes: at roughly **10–25 big blinds**, many hands become a **3-bet all-in (a "shove")** rather than a small re-raise, because there isn't room to raise-and-fold. Stop min-3-betting and start jamming as you get short.
+In tournaments with shallow stacks, the whole calculus changes: at roughly **10–25 big blinds**, many hands become a **3-bet all-in (a "shove")** rather than a small re-raise, because there isn't room to raise-and-fold. Shift from min-3-betting toward jamming as you get short — though against strong fields, keep some small non-all-in 3-bets in the mix.
 
 ---
 
@@ -158,7 +158,7 @@ The big takeaway: **flatting is legitimate in position** — modern solvers keep
 A **squeeze play** is a 3-bet made after there's already been an open-raise *and* at least one caller. It's called a squeeze because you put both opponents in a vice: the original raiser now has to worry about the caller behind, and the caller — who just showed a hand not strong enough to re-raise — rarely wants to continue against your aggression.
 
 Two things make the squeeze special:
-- **There's more dead money.** The pot already holds the raise and the call, so a successful squeeze wins more, meaning your bluffs need to work *less* often to profit.
+- **There's more dead money.** The pot already holds the raise and the call, so a successful squeeze wins more. Because you also size up for the caller, that doesn't always lower the fold rate your bluffs need — from the blinds it drops a little, from the button it stays about the same — but every fold now collects more chips.
 - **Size it bigger.** Add roughly one extra open-raise for each caller. Against a 3bb open plus one caller, a squeeze to about **15–16.5bb** is standard — the extra size is what pushes both players out.
 
 Good squeeze bluffs are the same suited blocker hands (A5s and friends) that make good 3-bet bluffs, because you still want to fold out the raiser's medium hands and have equity when called.
@@ -171,7 +171,7 @@ Good squeeze bluffs are the same suited blocker hands (A5s and friends) that mak
 
 Here's the half of 3-betting that almost every article skips: **you'll be on the receiving end about as often as you 3-bet yourself.** When you open and get re-raised, you have three responses:
 
-- **4-bet** — for value with your premiums (QQ+, AK), plus the occasional blocker bluff (an A5s-type hand). A 4-bet says "I'm not going anywhere."
+- **4-bet** — for value with your premiums (QQ+, AK), plus the occasional blocker bluff (an A5s-type hand). A value 4-bet says "I'm not going anywhere" — a blocker-bluff 4-bet still folds to a 5-bet.
 - **Call** — with hands that flop well and have the equity or position to continue: pocket pairs looking to set-mine, suited broadways, and strong hands that don't want to bloat the pot into a 4-bet war.
 - **Fold** — everything else. Most of your opening range should simply give up to a 3-bet; that's normal, not weakness.
 
@@ -181,7 +181,7 @@ How much should you continue? The theoretical baseline is **Minimum Defense Freq
 
 | Villain's fold-to-3-bet stat | What it tells you | Your adjustment |
 |:---:|:---|:---|
-| **~35% (rarely folds)** | A calling station — they call with almost anything, so a bluff has no fold equity | 3-bet them **for value only**, stop bluffing, and value-bet relentlessly |
+| **~35% (rarely folds)** | A calling station — they call with almost anything, so a bluff rarely gets enough folds to profit | 3-bet them **for value only**, stop bluffing, and value-bet relentlessly |
 | **~55% (balanced)** | A thinking regular | Play close to GTO — mix value and blocker bluffs |
 | **~70%+ (folds too much)** | An exploitable nit | 3-bet them **light far more often** — they hand you the pot |
 
@@ -214,7 +214,7 @@ Now flip it: if I'd 3-bet a **light** hand like A5s there and the cutoff had **4
 | **Never 3-bet bluffing at all** | Leaves money on the table vs wide steals; your flats get too weak | Balance value with a few light 3-bets |
 | **3-betting merged vs a nit** | Your "value" is dominated by their premium-only range | Go polarized or just fold vs a true nit |
 | **Bluff-3-betting junk (Q7o)** | Weak blockers and little backup equity — you must fold to every 4-bet | Pick blocker/playability hands only |
-| **Flatting too much from the small blind** | Poor equity realization OOP; a weak, cappable range | Facing a raise, 3-bet-or-fold from the SB; save the wide flats for the big blind |
+| **Flatting too much from the small blind** | Poor equity realization OOP; a weak, cappable range | Facing a raise, mostly 3-bet-or-fold from the SB; save the wide flats for the big blind |
 
 </div>
 
@@ -283,7 +283,7 @@ A. You have three options: 4-bet your premiums (QQ+, AK) plus the occasional blo
 
 **Q. What is a good fold-to-3-bet percentage?**
 
-A. Around 55% is a reasonable, roughly balanced baseline — you continue with the top of your range and let the rest go. That's wider than the pure-math MDF, which against a big 3-bet would have you defend only about a third — in other words, fold no more than about 66.6%. Treat that number as a ceiling, not a target. MDF assumes the bluffs have zero equity, but a real 3-bet bluff like A5s carries roughly 30% equity against your continuing range, which pushes the break-even fold frequency well below that vacuum ceiling. So 55% is a practical baseline rather than a guarantee: a light 3-bet with real equity can still show a profit against it. Folding much more than 55% makes you exploitable by light 3-bets; folding far less means you're calling or 4-betting too wide. Adjust to the opponent: fold more against players who never bluff-3-bet.
+A. Around 55% is a reasonable, roughly balanced baseline — you continue with the top of your range and let the rest go. That's wider than the pure-math MDF, which against a typical 3x 3-bet in position would have you defend only about a third — in other words, fold no more than about 66.7%. Treat that number as a ceiling, not a target. MDF assumes the bluffs have zero equity, but a real 3-bet bluff like A5s carries roughly 30% equity against your continuing range, which pushes the break-even fold frequency well below that vacuum ceiling. So 55% is a practical baseline rather than a guarantee: a light 3-bet with real equity can still show a profit against it. Folding much more than 55% makes you exploitable by light 3-bets; folding far less means you're calling or 4-betting too wide. Adjust to the opponent: fold more against players who never bluff-3-bet.
 
 **Q. Should you 3-bet or 4-bet all-in with a short stack in a tournament?**
 

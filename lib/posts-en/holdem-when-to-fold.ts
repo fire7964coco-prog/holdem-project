@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Folding is the most underrated skill in poker — a fold's worst outcome is zero, while a losing call bleeds chips every time. A solid player folds around 75–85% of hands before the flop, releases missed hands and weak draws that don't meet their pot odds after it, and — hardest of all — lays down strong-but-beaten hands when a passive opponent's line screams value. Most players don't call too much because they can't read hands; they call because the chips already in the pot feel like theirs. They aren't.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-13",
+  updated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🛡️",
@@ -37,7 +37,7 @@ Math > fear | The only reason to fold, or not
 
 Facing a bet, you have three options: fold, call, or raise. With no bet in front of you, you have two: check or bet. Folding means surrendering the pot and putting no more chips at risk. New players treat it as losing. Winners treat it as ==refusing to lose more.==
 
-Here's the idea that reframes everything: **a fold's expected value, from that decision forward, is zero.** When you're genuinely beaten, every other option is *negative* — calling costs you the call, raising costs you more. Zero beats negative. Folding doesn't win the pot, but it wins the long game by not donating chips to spots you're behind in.
+Here's the idea that reframes everything: **a fold's expected value, from that decision forward, is zero.** When you're genuinely beaten (behind now, without the odds to catch up or the fold equity to push them off it), every other option is *negative*: calling costs you the call, raising costs you more. Zero beats negative. Folding doesn't win the pot, but it wins the long game by not donating chips to spots you're behind in.
 
 One precise caveat, because it matters: folding is *not free.* The chips already in the pot are gone the moment you put them there — folding just stops you from throwing *good money after bad.* That distinction is the entire psychology of folding, and we'll come back to it. First, the mechanics.
 

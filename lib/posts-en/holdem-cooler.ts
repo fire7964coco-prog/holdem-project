@@ -155,7 +155,7 @@ A. Timing and suckouts, at least in the strict sense. In a cooler you were behin
 
 **Q. Is a cooler bad luck or bad play?**
 
-A. A true cooler is pure bad luck — you played correctly and still lost because two premium hands collided. The catch is that "cooler" is often misused to excuse an actual mistake. The test: would you make the same play again with the same information? If no, it was a misplay you can learn from. If yes, it was bad luck — a cooler if you were behind going in, a bad beat if you were ahead and got outdrawn.
+A. A true cooler is pure bad luck — you played correctly and still lost because two premium hands collided. The catch is that "cooler" is often misused to excuse an actual mistake. The test: would you make the same play again with the same information — ranges, price and stack depth, not just gut feel? If no, it was a misplay you can learn from. If yes, it was bad luck — in the strict sense, a cooler if you were behind going in, a bad beat if you were ahead and got outdrawn.
 
 **Q. Is a setup the same as a cooler?**
 

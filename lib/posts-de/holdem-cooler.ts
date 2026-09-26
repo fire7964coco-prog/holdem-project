@@ -175,7 +175,7 @@ A. Ja, und das ist der Grund, warum die beiden Begriffe so oft verwechselt werde
 
 **Q. Ist ein Cooler Pech oder schlechtes Play?**
 
-A. Ein echter Cooler ist reines Pech – du hast korrekt gespielt und trotzdem verloren, weil zwei Premiumhände kollidiert sind. Der Haken ist, dass „Cooler“ oft missbraucht wird, um einen echten Fehler zu entschuldigen. Der Test: Würdest du dasselbe Play mit denselben Informationen noch einmal machen? Wenn nein, war es ein Fehlspiel, aus dem du lernen kannst. Wenn ja, war es Pech – ein Cooler, wenn du beim Reingehen hinten lagst, ein Bad Beat, wenn du vorn lagst und ausgedrawt wurdest.
+A. Ein echter Cooler ist reines Pech – du hast korrekt gespielt und trotzdem verloren, weil zwei Premiumhände kollidiert sind. Der Haken ist, dass „Cooler“ oft missbraucht wird, um einen echten Fehler zu entschuldigen. Der Test: Würdest du dasselbe Play mit denselben Informationen noch einmal machen – Ranges, Preis und Stacktiefe, nicht nur Bauchgefühl? Wenn nein, war es ein Fehlspiel, aus dem du lernen kannst. Wenn ja, war es Pech – im engeren Sinn ein Cooler, wenn du beim Reingehen hinten lagst, ein Bad Beat, wenn du vorn lagst und ausgedrawt wurdest.
 
 **Q. Was ist ein „Cold Deck“?**
 
