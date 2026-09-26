@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "To calculate pot odds, divide the amount you must call by the total pot after your call. Calling $50 into a $150 pot = 50 ÷ 200 = 25% — so you need at least 25% equity to make the call profitable.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-24",
+  updated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🧮",
@@ -16,7 +16,7 @@ export const POST: Post = {
   imageAlt: "A player's hand pushing chips toward the center pot on green felt — the moment a pot-odds decision is made",
   tags: ["pot odds", "how to calculate pot odds", "poker pot odds", "pot odds chart", "implied odds", "pot odds vs equity", "rule of 4 and 2", "required equity to call"],
   content: `
-The most expensive word in poker is "hope." I spent my first year calling river bets because my flush draw *might* get there, and I bled chips doing it. The night it finally clicked was a $50 call into a $150 pot — I did the math for once, realized I needed just 25% to break even, and never looked at a call the same way again.
+The most expensive word in poker is "hope." I spent my first year calling turn bets because my flush draw *might* get there on the river, and I bled chips doing it. The night it finally clicked was a $50 call into a $150 pot — I did the math for once, realized I needed just 25% to break even, and never looked at a call the same way again.
 
 ==Pot odds are the single piece of math that separates calling on a feeling from calling for a reason.== They take five minutes to learn and a few sessions to make automatic. This guide gives you the ==g:10-second method==, a bet-size cheat sheet you can picture at the table, and the one thing most players get wrong: how pot odds, equity, and implied odds actually fit together.
 
@@ -120,7 +120,7 @@ Even a massive **2×-pot overbet only asks for 40% equity**. You almost never ne
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Your draw | Outs | Equity, 1 card (turn → river) | Equity, 2 cards (flop → river) |
+| Your draw | Outs | Chance to hit, 1 card (turn → river) | Chance to hit, 2 cards (flop → river) |
 |:---|:---:|:---:|:---:|
 | Flush + open-ender | 15 | 32.6% | 54.1% |
 | Flush draw | 9 | 19.6% | 35.0% |
@@ -142,7 +142,7 @@ Read it against the bet-size table above. Facing a ==half-pot bet (need 25%)==: 
 :::compare
 Term | What it means
 Pot odds | The price: call ÷ final pot = the equity you *need*
-Equity | Your actual chance of winning the hand right now
+Equity | Your expected share of the pot right now — the hands you win plus your share of ties
 Implied odds | The *extra* chips you expect to win on later streets if you hit
 :::
 
@@ -162,7 +162,7 @@ The dark mirror is **reverse implied odds** — the chips you'll *lose* when you
 
 A flush draw is 9 outs. On the flop: 9 × 4 = **36%** (true value 35.0% — spot on). On the turn: 9 × 2 = **18%** (true value 19.6% — close enough to decide).
 
-:::tip[The ×4 version quietly assumes you'll see *both* remaining cards with no more betting — which is only guaranteed when you're already all-in. If there's more betting to come, lean on the ×2 (one-card) number for the street in front of you, and let implied odds justify the rest.]:::
+:::tip[The ×4 version quietly assumes you'll see *both* remaining cards with no more betting — which is only guaranteed when no more betting can happen (you're all-in, or you've called an all-in). If there's more betting to come, lean on the ×2 (one-card) number for the street in front of you, and let implied odds justify the rest.]:::
 
 Full derivations for every draw and made hand live in the [probability chart](/en/blog/holdem-probability). Here, the shortcut is all you need.
 
@@ -233,23 +233,23 @@ A. Bet sizing is the flip side of pot odds — your bet sets the price your oppo
 
 **Q. What is the Rule of 4 and 2?**
 
-A. A shortcut to turn outs into equity: multiply outs by 4 on the flop (two cards to come) or by 2 on the turn (one card to come). Nine flush outs ≈ 36% on the flop, 18% on the turn. Use ×4 only when you'll see both cards without more betting.
+A. A shortcut to turn clean outs into your chance of hitting the draw: multiply outs by 4 on the flop (two cards to come) or by 2 on the turn (one card to come). Nine flush outs ≈ 36% on the flop, 18% on the turn. Use ×4 only when you'll see both cards without more betting.
 
 **Q. How much equity do I need to call a bet?**
 
-A. Exactly your pot odds as a percentage: call ÷ final pot. Against a half-pot bet you need 25%; against a pot-sized bet, 33%. Count your outs, convert with the Rule of 4 and 2, and call when your equity clears the bar.
+A. Exactly your pot odds as a percentage: call ÷ final pot. Against a half-pot bet you need 25%; against a pot-sized bet, 33%. For a draw, count your clean outs, convert with the Rule of 4 and 2 for the cards this call actually buys, and call when that chance clears the bar — or when implied odds cover the gap.
 
 **Q. Should your equity be higher or lower than your pot odds?**
 
-A. Higher. Your pot odds give the equity you *need* to call (call ÷ final pot); your equity is how often you'll actually win. You call when your equity is *higher* than that required number and fold when it's lower. If a half-pot bet needs 25% and your flush draw has 35% (with two cards to come — you'll see the turn and river with no more betting), then 35% > 25% → a profitable call.
+A. Higher. Your pot odds give the equity you *need* to call (call ÷ final pot); your equity is your expected share of the pot. You call when your equity is *higher* than that required number and fold when it's lower. If a half-pot bet needs 25% and your flush draw has 35% (with two cards to come — you'll see the turn and river with no more betting), then 35% > 25% → a profitable call.
 
 ---
 
 ## The 3 Things to Remember
 
 1. **The formula:** required equity = your call ÷ the final pot (with your call included). Half-pot = 25%, pot-size = 33%.
-2. **The comparison:** call when your equity (outs × 4 or × 2) beats your pot odds. That's the entire decision.
-3. **The tie-breaker:** implied odds rescue draws that just miss the price — but only when stacks are deep and your draw is to the nuts.
+2. **The comparison:** call when your equity beats your pot odds. For a draw, outs × 4 or × 2 estimates it — count clean outs only, and use ×2 when more betting is coming.
+3. **The tie-breaker:** implied odds rescue draws that just miss the price — but only when there are chips behind to win and an opponent likely to pay them off; drawing to the nuts makes that payoff safer.
 
 Do this a few hundred times and it stops being math and becomes instinct. You'll fold the hopeless calls, make the profitable ones, and stop paying the "hope" tax. From here, sharpen the raw numbers behind every draw in the [poker odds and probability chart](/en/blog/holdem-probability), or make sure you're entering pots with hands worth drawing to using the [starting hands chart by position](/en/blog/holdem-starting-hands-chart).
 

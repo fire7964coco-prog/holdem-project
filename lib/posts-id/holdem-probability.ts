@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Hingga river Anda akan membuat one pair 43,8% dari waktu, two pair 23,5%, flush 3,0%, dan full house 2,6% — sementara royal flush hanya muncul sekali dalam sekitar 31.000 tangan.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-24",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "13 mnt",
@@ -129,7 +129,7 @@ Untuk set-mining, ==7,5:1 adalah bayaran impas teoretis, bukan aturan stack yang
 | Dua overcard | 6 | 24,1% | 13,0% |
 | Gutshot (dalam) straight | 4 | 16,5% | 8,7% |
 | Pair → set | 2 | 8,4% | 4,3% |
-| Set → full house | 7 (flop) / 10 (turn) | 33,4% | 21,7% |
+| Set → full house atau quads | 7 (flop) / 10 (turn) | 33,4% | 21,7% |
 
 </div>
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Not the way you do in blackjack — the deck reshuffles every hand and too few cards are exposed, so tracking high and low cards gives you no edge. But poker has its own legal counting: counting outs, using blockers, and tracking dead cards to read what your opponent can't have.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-24",
+  updated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🧮",
@@ -48,11 +48,11 @@ If you're picturing a running high-low count from the movies, drop it — it die
 
 :::card
 🔀 | The deck resets every hand | Blackjack counting needs a shoe dealt down over dozens of hands so information accumulates. Poker reshuffles every single hand, so nothing carries over — each hand starts from a full, random deck
-🙈 | Too few cards are exposed | Every player's hole cards are face down. You only ever see the shared board — a handful of cards — never enough to track the deck's composition
+🙈 | Too few cards are exposed | Every player's hole cards are face down. You see your own two cards, the shared board and whatever gets shown down — a handful of cards — never enough to track the deck's composition
 👥 | You play opponents, not the house | There's no fixed dealer to gain an edge over. A "deck rich in high cards" means nothing when pocket aces are premium regardless — you win by having a better hand or making a better decision, not by a favorable count
 :::
 
-In blackjack, a high-card-heavy deck mathematically favors you, so you bet big when the count is good. In poker there is no equivalent "favorable deck" — the edge comes entirely from playing the *players*.
+In blackjack, a high-card-heavy deck mathematically favors you, so you bet big when the count is good. In poker there is no equivalent "favorable deck" — the edge comes from playing the *players* and the cards you can see right now: outs, blockers, the board.
 
 ---
 
@@ -66,7 +66,7 @@ You vs the house, fixed rules | You vs other players
 One shoe across many hands | Reshuffled every hand
 Track the deck's high/low balance | Nothing to track across hands
 Bet big when the deck favors you | No "favorable deck" exists
-Counting can get you barred | Counting is expected and legal
+Counting can get you barred | Counting outs in your head is ordinary play
 :::
 
 Blackjack rewards memory of what's already gone; poker rewards reading what you can see *right now* — the board, the action, and the cards your own hand removes from your opponent's range.
@@ -81,7 +81,7 @@ Blackjack rewards memory of what's already gone; poker rewards reading what you 
 
 An ==out== is any unseen card that improves your hand into a likely winner. A flush draw has ==9 outs== (13 of a suit minus the 4 you can see) — the suited board cards are already subtracted in that 9, so don't cross them off a second time as "dead cards". Convert outs to a rough win chance with the ==Rule of 4 and 2==: multiply by 4 with two cards to come, by 2 with one.
 
-A 9-out flush draw hits by the river about ==g:35%== of the time (9 × 4 = 36% as a quick estimate — the true figure is 35.0%). That figure counts both remaining cards, so it settles the call only when you'll actually see both — you're all-in on the flop with nothing left to bet. Facing a flop bet you'll have to pay again on the turn, count only the next card: ==9 ÷ 47 = 19.1%==. The full method — dirty outs, combo draws, exact percentages — is in the [guide to counting outs](/en/blog/holdem-outs), and the odds behind every draw live in the [probability chart](/en/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
+A 9-out flush draw hits by the river about ==g:35%== of the time (9 × 4 = 36% as a quick estimate — the true figure is 35.0%). That figure counts both remaining cards, so it settles the call only when you'll actually see both — no more betting to come, as when you're all-in or have called an all-in. Facing a flop bet you'll have to pay again on the turn, count only the next card: ==9 ÷ 47 = 19.1%==. The full method — dirty outs, combo draws, exact percentages — is in the [guide to counting outs](/en/blog/holdem-outs), and the odds behind every draw live in the [probability chart](/en/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
 ### Blockers (card removal)
 
@@ -89,11 +89,11 @@ A ==blocker== is a card in your hand that reduces the combinations your opponent
 
 ![Infographic of A♠ J♦ on an all-spade K♠ 9♠ 4♠ flop — holding the ace of spades blocks the nut flush](/images/holdem-card-counting-blocker.webp "Holding the A♠ on a three-spade board means no opponent can have the nut flush — that's card removal at work")
 
-Blockers also work partially. On a ==b:Q-J-9== board, the nut straight is K-10. There are normally 16 ways to hold K-10 (4 kings × 4 tens); if you hold one king or one ten yourself, you knock that down to ==12 combinations==, so the nut straight is 25% less likely in their range. This is the core of modern bluff selection — more in the [guide to 3-betting and blockers](/en/blog/holdem-3bet).
+Blockers also work partially. On a ==b:Q-J-9== board, the nut straight is K-10. There are normally 16 ways to hold K-10 (4 kings × 4 tens); if you hold one king or one ten yourself, you knock that down to ==12 combinations==, so their range holds 25% fewer nut-straight combinations. This is the core of modern bluff selection — more in the [guide to 3-betting and blockers](/en/blog/holdem-3bet).
 
 ### Card removal & dead cards
 
-Every card you can see removes possibilities. In Hold'em an out can't be sitting on the board — if it were, your hand would already be made — so the ==dead cards== to track are the ones exposed *off* the board: a card flashed by mistake, a hand shown before it hit the muck, a neighbor's fold you happened to see. Each one you've seen is an out you no longer have. Adjusting for them is a constant, quiet habit good players keep on every street. It's counting, just not the kind that needs a running total.
+Every card you can see removes possibilities. In Hold'em an out can't be sitting on the board — if it were, your hand would already be made — so the ==dead cards== to track are the ones exposed *off* the board: a card flashed by mistake, a hand shown before it hit the muck, a neighbor's fold you happened to see. Each out among them is one you no longer have; any other exposed card just shrinks the unseen deck. Adjusting for them is a constant, quiet habit good players keep on every street. It's counting, just not the kind that needs a running total.
 
 ---
 
@@ -115,7 +115,7 @@ At tournaments using the [2026 Poker TDA rules](https://www.pokertda.com/poker-t
 
 **In Seven Card Stud, a big chunk of every player's cards are dealt face up — so you genuinely can count the deck the old-fashioned way.** If you need a specific card to complete your hand, you can look around the table and literally count how many of your outs are already showing in opponents' up-cards. Every one you spot is a dead out.
 
-In Hold'em the only cards dealt face-up are the five shared community cards — anything else you see is an accident (a flashed card, a hand shown on the fold), so there is little to track. But Stud — and its relatives Razz and Stud Hi-Lo, which deal the same face-up cards — rewards exactly the kind of card-tracking that blackjack counters are good at. It's the closest poker gets to the movie version.
+In Hold'em the only cards dealt face-up are the five shared community cards — everything else stays face-down unless it's shown at showdown, tabled in an all-in, or exposed by accident (a flashed card, a hand shown on the fold), so there is little to track. But Stud — and its relatives Razz and Stud Hi-Lo, which deal the same face-up cards — rewards exactly the kind of card-tracking that blackjack counters are good at. It's the closest poker gets to the movie version.
 
 ---
 
@@ -124,7 +124,7 @@ In Hold'em the only cards dealt face-up are the five shared community cards — 
 **You don't need a system — just three habits that turn visible cards into better decisions.**
 
 :::steps
-Count your outs on every draw | The moment you have a draw, count the cards that complete it and multiply — ×4 only when both cards are coming (you're all-in, or both the turn and the river are free), otherwise ×2 for the next card alone. Call when that chance beats the price
+Count your outs on every draw | The moment you have a draw, count the cards that complete it and multiply — ×4 only when both cards are coming (you're all-in, or both the turn and the river are free), otherwise ×2 for the next card alone. Call when that chance — clean outs only — beats the price, or implied odds cover the gap
 Ask what your hand blocks | Before you bluff, check whether you hold a card that makes their strongest calling hand impossible or less likely
 Adjust for dead cards | Subtract any out you've seen exposed off the board — a flashed card, a shown hand, a fold you glimpsed. Cards you can see are cards your opponent can't have — but glimpsed by accident only: deliberately trying to see another player's cards is not part of this method — accidental exposure only
 :::
@@ -154,7 +154,7 @@ A. Blackjack-style deck counting does not — the deck resets each hand and too 
 
 **Q. Why does card counting work in blackjack but not poker?**
 
-A. Blackjack is you versus a fixed-rules dealer using one shoe across many hands, so a high-card-rich deck mathematically favors you and you bet accordingly. Poker reshuffles every hand and pits you against other players, so there's no "favorable deck" to track — the edge comes from reading opponents.
+A. Blackjack is you versus a fixed-rules dealer using one shoe across many hands, so a high-card-rich deck mathematically favors you and you bet accordingly. Poker reshuffles every hand and pits you against other players, so there's no "favorable deck" to track — the edge comes from reading opponents and the cards you can see: outs, blockers, the board.
 
 **Q. What is the poker equivalent of card counting?**
 

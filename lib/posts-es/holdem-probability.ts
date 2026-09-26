@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Para el river ligarás pareja el 43.8% de las veces, doble pareja el 23.5%, color el 3.0% y full el 2.6% — mientras que una escalera real aparece solo una vez cada 31,000 manos.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-24",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "13 min",
@@ -129,7 +129,7 @@ Para el set mining, ==7.5 a 1 es el pago de equilibrio teórico, no una regla de
 | Dos sobrecartas | 6 | 24.1% | 13.0% |
 | Escalera interior (gutshot) | 4 | 16.5% | 8.7% |
 | Pareja → set | 2 | 8.4% | 4.3% |
-| Set → full | 7 (flop) / 10 (turn) | 33.4% | 21.7% |
+| Set → full o póker | 7 (flop) / 10 (turn) | 33.4% | 21.7% |
 
 </div>
 
@@ -211,7 +211,7 @@ Un mito común: "una escalera real gana a todo, así que puede *empatar*". El bo
 | Ligar escalera de color en el flop (conectores del mismo palo) | ~1 en 4,900 |
 | Ligar una escalera real para el river | 1 en 30,940 |
 
-**Set sobre set** — ligas un set y pierdes contra un set mayor — es el cooler definitivo. No hay un número limpio único porque depende de cuántos jugadores tengan parejas, pero el ancla es esta: *tú* ligas un set solo el 11.8% de las veces, y que un rival haga lo mismo en la misma mesa es lo bastante raro como para que casi todos recuerden cada uno. Cuando pasa, es varianza, no un error — la matemática estuvo de tu lado todo el rato. Si quieres ver exactamente cómo se resuelven esos showdowns, las [reglas de kicker y desempate](/es/blog/holdem-tiebreak-rules) cubren cada caso límite.
+**Set sobre set** — ligas un set y pierdes contra un set mayor — es el cooler definitivo. No hay un número limpio único porque depende de cuántos jugadores tengan parejas, pero el ancla es esta: *tú* ligas un set solo el 11.8% de las veces, y que un rival haga lo mismo en la misma mesa es lo bastante raro como para que casi todos recuerden cada uno. Cuando pasa, la derrota por sí sola no demuestra que el call fuera un error — ni un acierto; júzgalo por el precio y la profundidad de stacks que tenías en ese momento, no por el showdown. Si quieres ver exactamente cómo se resuelven esos showdowns, las [reglas de kicker y desempate](/es/blog/holdem-tiebreak-rules) cubren cada caso límite.
 
 ---
 

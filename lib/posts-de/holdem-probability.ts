@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Bis zum River endest du mit einem Paar in 43,8% der Fälle, mit zwei Paaren in 23,5%, mit einem Flush in 3,0% und mit einem Full House in 2,6% – während ein Royal Flush nur etwa einmal in 31.000 Händen auftaucht.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-24",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "13 Min.",
@@ -132,7 +132,7 @@ Alles hängt an den **Outs** – den Karten, die im Deck übrig sind und deine H
 | Zwei Overcards | 6 | 24,1% | 13,0% |
 | Gutshot (Inside) Straße | 4 | 16,5% | 8,7% |
 | Paar → Set | 2 | 8,4% | 4,3% |
-| Set → Full House | 7 (Flop) / 10 (Turn) | 33,4% | 21,7% |
+| Set → Full House oder Quads | 7 (Flop) / 10 (Turn) | 33,4% | 21,7% |
 
 </div>
 

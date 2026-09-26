@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "You flop a set with a pocket pair 11.8% of the time (7.5-to-1 against), flop a flush with two suited cards just 0.84%, and complete a flopped flush draw by the river 35% of the time. Every number below is derived from the deck, not guessed.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-09-24",
+  updated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🎲",
@@ -42,9 +42,9 @@ That's what drawing odds really are: not luck, but the ==fixed math of a 52-card
 
 | Holding | Flop it made | Flop the draw | Complete draw by river |
 |:---|:---:|:---|:---|
-| Pocket pair → set | 11.8% (7.5-to-1) | — | set→boat 33% by river |
+| Pocket pair → set | 11.8% (7.5-to-1) | — | set→boat or quads 33.4% by river |
 | Two suited → flush | 0.84% (118-to-1) | 10.9% flush draw | 35% (9 outs) |
-| Connectors → straight | 1.3% (76-to-1) | ~10% OESD | 31.5% (8 outs) |
+| Connectors 54–JT → straight | 1.3% (76-to-1) | ~10% OESD | 31.5% (8 outs) |
 | Two unpaired → pair | ~32% | — | — |
 | Pocket pair → quads | 0.245% (407-to-1) | — | — |
 
@@ -85,7 +85,7 @@ Set mining is the purest [implied odds](/en/blog/holdem-implied-odds "thumb:/ima
 Two related numbers people ask about:
 
 - **Hitting a set by the river** (from preflop, seeing all five board cards) is ==**19.2%**== — 1 − C(48,5)/C(50,5). Higher than the flop figure because you get two more cards, but you can't count on reaching the river cheaply, which is why the flop number rules set-mining.
-- **Set over set** — two players with pocket pairs flop a set on the same hand, and the smaller one loses to the bigger — has no single fixed figure because it depends on how many opponents hold pairs, but with two players both holding pairs, *both* flopping a set lands near ~1%. It's the classic cooler: the math was on your side the whole way.
+- **Set over set** — two players with pocket pairs flop a set on the same hand, and the smaller one loses to the bigger — has no single fixed figure because it depends on how many opponents hold pairs, but with two players both holding pairs, *both* flopping a set lands near ~1%. It's the classic cooler — and the loss alone doesn't tell you whether the set-mining call was right; the price and the stacks do.
 
 ---
 
@@ -112,7 +112,7 @@ So the honest sentence is: two suited cards flop a **draw** far more than a made
 
 The completion figure splits by street, which matters the moment there's betting left:
 
-- **Flop → river (both cards):** 35.0% — use this only when you're all-in on the flop.
+- **Flop → river (both cards):** 35.0% — use this only when you'll see both cards with no more betting (you're all-in, or you've called an all-in).
 - **Flop → turn (one card):** 9 ÷ 47 = 19.1%.
 - **Turn → river (one card):** 9 ÷ 46 = 19.6%.
 
@@ -148,7 +148,7 @@ Notice the OESD (31.5%) and the flush draw (35%) are close — both are "one big
 | **Quads** | A pocket pair | 0.245% · 407-to-1 | 48 ÷ 19,600 |
 | **Full house** | A pocket pair | 0.98% · 101-to-1 | 192 ÷ 19,600 |
 | **Trips** | Two unpaired cards | 1.35% · 73-to-1 | 264 ÷ 19,600 |
-| **Straight flush** | Suited connectors | 0.02% · ~4,900-to-1 | 4 ÷ 19,600 |
+| **Straight flush** | Suited connectors 54s–JTs | 0.02% · ~4,900-to-1 | 4 ÷ 19,600 |
 
 </div>
 
@@ -189,7 +189,7 @@ The one that surprises people: if **you** hold aces at a 10-handed table, the ch
 
 **Q. What are the odds of flopping a set?**
 
-A. About 11.8%, or 1 in 8.5, when you hold a pocket pair — usually quoted as "7.5-to-1 against." It comes from 1 − C(48,3)/C(50,3): of the 19,600 possible flops, 17,296 miss your pair. That number is the entire basis for whether set-mining a small pair is profitable.
+A. About 11.8%, or 1 in 8.5, when you hold a pocket pair — usually quoted as "7.5-to-1 against." It comes from 1 − C(48,3)/C(50,3): of the 19,600 possible flops, 17,296 miss your pair. That number is the starting point for set-mining a small pair — whether the call is profitable also depends on how much you can win when you hit.
 
 **Q. Why do people say 7.5-to-1 but also 1 in 8?**
 
@@ -221,21 +221,21 @@ A. A straight draw is four cards toward a straight. An open-ended straight draw 
 
 **Q. What are the odds of flopping quads?**
 
-A. 0.245%, or 407-to-1, holding a pocket pair — there are exactly 48 flops (your last two matching cards plus any third card, C(48,1)) out of 19,600. Flopping a straight flush is even rarer at about 1 in 4,900.
+A. 0.245%, or 407-to-1, holding a pocket pair — there are exactly 48 flops (your last two matching cards plus any third card, C(48,1)) out of 19,600. Flopping a straight flush with suited connectors from 54s to JTs is even rarer at about 1 in 4,900.
 
 **Q. What are the odds of being dealt pocket aces?**
 
-A. 220-to-1 (0.45%) for aces specifically — 6 of the 1,326 starting combinations. Any pocket pair is far more common at 16-to-1 (5.9%). And if you have aces at a full table, another player also holding aces is about 1 in 136.
+A. 220-to-1 (0.45%) for aces specifically — 6 of the 1,326 starting combinations. Any pocket pair is far more common at 16-to-1 (5.9%). And if you have aces at a 10-handed table, another player also holding aces is about 1 in 136 (about 1 in 153 nine-handed).
 
 **Q. What are the odds of set over set?**
 
-A. There's no single fixed number — it depends on how many opponents hold pocket pairs — but when two players both have pairs and both flop sets it's roughly 1%. It's the ultimate cooler: you flop a set only 11.8% of the time to begin with, so two of you doing it on the same board is a story, not a mistake.
+A. There's no single fixed number — it depends on how many opponents hold pocket pairs — but when two players both have pairs and both flop sets it's roughly 1%. It's the ultimate cooler: you flop a set only 11.8% of the time to begin with, so two of you doing it on the same board is rare — and the result alone doesn't show whether either call was a mistake.
 
 ---
 
 ## The 3 Things to Remember
 
-1. **Flop a set: 11.8% (7.5-to-1).** The number that decides every set-mining call — only call deep enough to be paid 15× or more when you hit.
+1. **Flop a set: 11.8% (7.5-to-1).** The starting point for every set-mining call — stack depth and an opponent likely to pay decide whether it's profitable, so aim to win 15× or more when you hit.
 2. **Made vs draw vs complete are different numbers.** Two suited cards flop a made flush 0.84%, a flush draw 10.9%, and complete that draw 35%. Never quote the wrong one.
 3. **A big draw is about one in three by the river.** Flush draw 35%, open-ender 31.5% — and roughly one in five to six on a single street.
 

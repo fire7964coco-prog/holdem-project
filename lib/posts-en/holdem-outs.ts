@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "An out is any card left in the deck that improves your hand to a likely winner. Count them, then convert: multiply outs by 4 on the flop or by 2 on the turn to get your rough % to hit. A flush draw is 9 outs ≈ 36% by the river.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-24",
+  updated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🎯",
@@ -34,7 +34,7 @@ That habit is called counting **outs** — [poker's real answer to "counting car
 
 ## What Are Outs in Poker?
 
-**An out is any card still in the deck that turns your hand into a likely winner.** If you hold a flush draw, every remaining card of your suit is an out — catch one and you have a flush.
+**An out is any card still in the deck that turns your hand into a likely winner.** If you hold a flush draw, every remaining card of your suit completes it — and each one is an out as long as that flush would actually win.
 
 The word "likely" is doing quiet work there. A true out has to actually *win* the hand, not just improve your cards. Pairing your ten when a flush is already on the board isn't an out — you improved, but you're still losing. Learning to count outs is really learning to count the cards that win, and to ignore the ones that only *look* helpful.
 
@@ -59,7 +59,7 @@ Strip out the fakes | Cross off any "out" that completes your hand but still los
 
 Take a flush draw: 13 cards of your suit exist, you can see **four** of them (two in your hand, two on the board), so ==g:13 − 4 = 9 outs==. That subtraction — counting the ones you *can't* catch because you're already holding them — is where beginners slip.
 
-The counting only uses cards you can see. You don't subtract your opponent's unknown cards; you treat every unseen card as still live. That's why the standard out counts below hold up regardless of what anyone else is holding.
+The counting only uses cards you can see. You don't subtract your opponent's unknown cards; you treat every unseen card as still live. That's why the raw counts below are the same whatever anyone else holds — they're the starting point, before you cross off the dirty outs further down.
 
 ---
 
@@ -111,9 +111,9 @@ The two combo draws at the top are where players fumble the arithmetic, so they 
 
 </div>
 
-Two numbers matter for every draw. **"By the river"** counts both remaining cards and applies when you're all-in on the flop with nothing left to bet. **"Flop → turn"** counts just the next card (9 ÷ 47 = 19.1%; from the turn to the river it becomes 9 ÷ 46 = 19.6%) — use this the moment there's more betting to come, because you're only guaranteed to see one card at a time. Beginners quote the fat "by the river" number while facing a turn bet, talk themselves into a call, and pay for it.
+Two numbers matter for every draw. **"By the river"** counts both remaining cards and applies when no more betting can happen — you're all-in, or you've called an all-in. **"Flop → turn"** counts just the next card (9 ÷ 47 = 19.1%; from the turn to the river it becomes 9 ÷ 46 = 19.6%) — use this the moment there's more betting to come, because you're only guaranteed to see one card at a time. Beginners quote the fat "by the river" number while facing a turn bet, talk themselves into a call, and pay for it.
 
-Notice the 15-out monster: with two cards to come it's actually a **favorite** (54.1%), the rare draw you can happily get all-in with on the flop.
+Notice the 15-out monster: with two cards to come it completes 54.1% of the time — against a single pair that usually makes it a **favorite**, the rare draw you can happily get all-in with on the flop. Against a set it isn't: the board can pair and fill up the set — the J♠ T♠ on 9♠ 8♣ 2♠ example below is only about 40% against pocket nines.
 
 ---
 
@@ -127,7 +127,7 @@ Notice the 15-out monster: with two cards to come it's actually a **favorite** (
 
 A flush draw is 9 outs. On the flop: 9 × 4 = **36%** (true value 35.0% — dead on). On the turn: 9 × 2 = **18%** (true 19.6% — close enough to act).
 
-:::tip[The ×4 shortcut quietly assumes you'll see *both* cards with no more betting — only guaranteed when you're already all-in. If there's a bet in front of you, use the ×2 (one-card) number for the street you're actually on.]:::
+:::tip[The ×4 shortcut quietly assumes you'll see *both* cards with no more betting — only guaranteed when no more betting can happen (you're all-in, or you've called an all-in). If there's a bet in front of you, use the ×2 (one-card) number for the street you're actually on.]:::
 
 The main weakness is **high out counts on the flop**. The exact two-card calculation accounts for hitting on either street without counting a double hit twice. The ×4 estimate starts running slightly high at 7 outs, but the gap grows with bigger draws; the usual correction below is used for more than 8 outs.
 
@@ -221,14 +221,14 @@ A. 15, not 17. A flush draw is 9 outs and an open-ended straight is 8, but two o
 
 **Q. Do you count your opponent's cards when counting outs?**
 
-A. No. You only subtract cards you can actually see — your hole cards and the community board. Every other unseen card is treated as live, which is why the standard out counts (9 for a flush, 8 for an open-ender) hold no matter what your opponents hold.
+A. No. You only subtract cards you can actually see — your hole cards and the community board. Every other unseen card is treated as live, which is why the raw counts (9 for a flush, 8 for an open-ender) stay the same whatever your opponents hold. Whether each of those cards actually wins still depends on their hand — that's the dirty-outs check.
 
 ---
 
 ## The 3 Things to Remember
 
 1. **Count what wins, not what improves.** An out has to make the *best* hand, not just a better one. Subtract only the cards you can see.
-2. **Convert with 4 and 2.** Outs × 4 on the flop, × 2 on the turn. Trim the estimate for big draws (over 8 outs) by subtracting *(outs − 8)*.
+2. **Convert with 4 and 2.** Outs × 4 on the flop, × 2 on the turn. On the flop, trim the ×4 estimate for big draws (over 8 outs) by subtracting *(outs − 8)*.
 3. **Discount the dirty ones.** Non-nut flushes, paired boards, and overcards into strength all shrink your real out count. When in doubt, count fewer.
 
 Nail the count and the rest of poker math falls into place. Take your out count straight into [how to calculate pot odds](/en/blog/holdem-pot-odds) to see if the price is right, or back up to the full [poker odds and probability chart](/en/blog/holdem-probability) for the exact number behind every draw.

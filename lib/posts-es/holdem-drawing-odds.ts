@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ligas un set en el flop con una pareja servida el 11.8% de las veces (7.5 a 1 en contra), ligas un color en el flop con dos cartas del mismo palo apenas un 0.84%, y completas un proyecto de color del flop al river el 35% de las veces. Cada número de abajo sale de la baraja, no se adivina.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-09-24",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "13 min",
@@ -43,9 +43,9 @@ Eso es en realidad la probabilidad de proyecto: no es suerte, sino la ==matemát
 
 | Con lo que juegas | Ligarlo hecho | Ligar el proyecto | Completar el proyecto al river |
 |:---|:---:|:---|:---|
-| Pareja servida → set | 11.8% (7.5 a 1) | — | set→full 33% al river |
+| Pareja servida → set | 11.8% (7.5 a 1) | — | set→full o póker 33% al river |
 | Dos del mismo palo → color | 0.84% (118 a 1) | 10.9% proyecto de color | 35% (9 outs) |
-| Conectoras → escalera | 1.3% (76 a 1) | ~10% proyecto abierto | 31.5% (8 outs) |
+| Conectoras 54–JT → escalera | 1.3% (76 a 1) | ~10% proyecto abierto | 31.5% (8 outs) |
 | Dos sin emparejar → pareja | ~32% | — | — |
 | Pareja servida → póker | 0.245% (407 a 1) | — | — |
 
@@ -113,7 +113,7 @@ Así que la frase honesta es: dos cartas del mismo palo ligan un **proyecto** mu
 
 La cifra de completar se reparte por calle, lo que importa en cuanto queda apuesta por delante:
 
-- **Flop → river (las dos cartas):** 35.0% — usa esto solo cuando estás all-in en el flop.
+- **Flop → river (las dos cartas):** 35.0% — usa esto solo cuando verás las dos cartas sin más apuestas (estás all-in o has pagado un all-in).
 - **Flop → turn (una carta):** 9 ÷ 47 = 19.1%.
 - **Turn → river (una carta):** 9 ÷ 46 = 19.6%.
 
@@ -149,7 +149,7 @@ Fíjate en que el proyecto abierto (31.5%) y el proyecto de color (35%) están c
 | **Póker** | Una pareja servida | 0.245% · 407 a 1 | 48 ÷ 19,600 |
 | **Full** | Una pareja servida | 0.98% · 101 a 1 | 192 ÷ 19,600 |
 | **Trips** | Dos cartas sin emparejar | 1.35% · 73 a 1 | 264 ÷ 19,600 |
-| **Escalera de color** | Conectoras del mismo palo | 0.02% · ~4,900 a 1 | 4 ÷ 19,600 |
+| **Escalera de color** | Conectoras del mismo palo 54s–JTs | 0.02% · ~4,900 a 1 | 4 ÷ 19,600 |
 
 </div>
 

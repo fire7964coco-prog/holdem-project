@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Até o river você faz um par 43,8% das vezes, dois pares 23,5%, um flush 3,0% e um full house 2,6% — enquanto um royal flush aparece só uma vez a cada 31.000 mãos.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-24",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "13 min",
@@ -129,7 +129,7 @@ Para set mining, ==7,5 para 1 é o retorno teórico de equilíbrio, não uma reg
 | Duas overcards | 6 | 24,1% | 13,0% |
 | Sequência de dentro (gutshot) | 4 | 16,5% | 8,7% |
 | Par → trinca | 2 | 8,4% | 4,3% |
-| Trinca → full house | 7 (flop) / 10 (turn) | 33,4% | 21,7% |
+| Trinca → full house ou quadra | 7 (flop) / 10 (turn) | 33,4% | 21,7% |
 
 </div>
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Você flopa um set com um par na mão 11,8% das vezes (7,5 para 1 contra), flopa um flush com duas cartas do mesmo naipe apenas 0,84%, e completa um flush draw flopado até o river 35% das vezes. Cada número abaixo vem do baralho, não de chute.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-09-24",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "12 min",
@@ -43,7 +43,7 @@ A mão que me fez aprender isso de cor: eu paguei um aumento com um par de cinco
 
 | Mão | Flopar feito | Flopar o projeto | Completar até o river |
 |:---|:---:|:---|:---|
-| Par na mão → set | 11,8% (7,5 para 1) | — | set→boat 33% até o river |
+| Par na mão → set | 11,8% (7,5 para 1) | — | set→boat ou quadra 33% até o river |
 | Duas do naipe → flush | 0,84% (118 para 1) | 10,9% flush draw | 35% (9 outs) |
 | Conectores → sequência | 1,3% (76 para 1) | ~10% OESD | 31,5% (8 outs) |
 | Duas despareadas → par | ~32% | — | — |

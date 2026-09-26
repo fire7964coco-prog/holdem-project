@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "By the river you'll make one pair 43.8% of the time, two pair 23.5%, a flush 3.0%, and a full house 2.6% — while a royal flush shows up just once in about 31,000 hands.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-24",
+  updated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🎲",
@@ -128,11 +128,11 @@ For set mining, ==7.5 to 1 is a theoretical break-even payoff, not a sufficient 
 | Two overcards | 6 | 24.1% | 13.0% |
 | Gutshot (inside) straight | 4 | 16.5% | 8.7% |
 | Pair → set | 2 | 8.4% | 4.3% |
-| Set → full house | 7 (flop) / 10 (turn) | 33.4% | 21.7% |
+| Set → full house or quads | 7 (flop) / 10 (turn) | 33.4% | 21.7% |
 
 </div>
 
-The six-out overcard row assumes pairing either rank wins. Against two pair, a set, or a stronger draw, some or all of those pair-making cards may be dirty — discount them rather than treating six as guaranteed winning outs.
+The six-out overcard row assumes pairing either rank wins. Against two pair, a set, or a stronger draw, some or all of those pair-making cards may be dirty — discount them rather than treating six as guaranteed winning outs. The set row counts the fourth card of your rank too: a full house alone is about 29.1% from the flop and 19.6% on the turn.
 
 The classic spot: you flop a **flush draw** (nine outs). You'll get there ==35% of the time by the river== — better than one in three. An **open-ended straight draw** (eight outs) hits 31.5%. Note the two columns: once the turn bricks you have one card to come instead of two, so your odds roughly halve — 35% becomes 19.6% for the flush draw — which is exactly why draws get more expensive to chase street by street.
 
@@ -207,10 +207,10 @@ A common myth: "a royal flush beats everything, so it can be *tied*." The pot ca
 |:---|:---:|
 | Being dealt pocket aces | 1 in 221 |
 | Flopping quads with a pocket pair | 1 in 408 |
-| Flopping a straight flush (suited connectors) | ~1 in 4,900 |
+| Flopping a straight flush (suited connectors 54s–JTs) | ~1 in 4,900 |
 | Making a royal flush by the river | 1 in 30,940 |
 
-**Set over set** — you flop a set and lose to a bigger set — is the ultimate cooler. There's no clean single number because it depends on how many players hold pairs, but the anchor is this: *you* flop a set only 11.8% of the time, and an opponent doing the same on the same board is rare enough that most players remember every one. When it happens, it's variance, not a mistake — the math was on your side the whole way. If you want to see exactly how those showdowns are scored, the [kicker and tie-breaker rules](/en/blog/holdem-tiebreak-rules) cover every edge case.
+**Set over set** — you flop a set and lose to a bigger set — is the ultimate cooler. There's no clean single number because it depends on how many players hold pairs, but the anchor is this: *you* flop a set only 11.8% of the time, and an opponent doing the same on the same board is rare enough that most players remember every one. When it happens, the loss alone doesn't prove the call was a mistake — or that it was right; judge it by the price and stack depth you had at the time, not by the showdown. If you want to see exactly how those showdowns are scored, the [kicker and tie-breaker rules](/en/blog/holdem-tiebreak-rules) cover every edge case.
 
 ---
 

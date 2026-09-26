@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Equity is your share of the pot — the slice your hand is owed on average once all the cards are dealt, with split pots counted pro rata. You call when your equity beats the pot odds, but position and betting mean you rarely keep your full equity — and fold equity lets you win pots even when your hand is behind.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-24",
+  updated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🥧",
@@ -38,7 +38,7 @@ bet ÷ (pot + bet) | The fold % a pure bluff needs
 
 **Equity is your share of the pot — the slice your hand is owed on average when the hand is played all the way to showdown, with split pots counted pro rata.** If the pot is $100 and 60% of it is owed to you, your hand is worth ==$60 right now==, even though the chips haven't been pushed yet.
 
-Think of it as your slice of the pie. Every hand still live has a slice; the slices always add up to 100%. When you're heads-up and 70% to win a $200 pot, ==g:$140 of it is "yours"== in the long run — you won't win *this* pot 70% of the time and lose the rest, but across a thousand identical spots, that's the share you collect.
+Think of it as your slice of the pie. Every hand still live has a slice; the slices always add up to 100%. When you're heads-up with 70% equity in a $200 pot, ==g:$140 of it is "yours"== in the long run — you won't win *this* pot 70% of the time and lose the rest, but across a thousand identical spots, that's the share you collect.
 
 That's the whole reason equity matters: it turns "am I ahead?" into "how much of this pot do I own?" — and that's the number you compare against the price of a call.
 
@@ -46,13 +46,13 @@ That's the whole reason equity matters: it turns "am I ahead?" into "how much of
 
 ## How to Estimate Your Equity Fast
 
-**On a draw, multiply your outs by 4 on the flop or by 2 on the turn; preflop, memorize the handful of matchups that come up again and again.** You'll almost never compute exact equity at the table — you estimate, and these two shortcuts cover 90% of spots.
+**On a draw, multiply your clean outs by 4 on the flop (if you'll see both cards) or by 2 on the turn — that's your chance to hit, a fair stand-in for equity when hitting wins and missing loses; preflop, memorize the handful of matchups that come up again and again.** You'll almost never compute exact equity at the table — you estimate, and these two shortcuts cover 90% of spots.
 
 **Draws (the Rule of 4 and 2):** count your [outs](/en/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp"), then multiply. A flush draw is 9 outs → ==9 × 4 = 36%== on the flop (true value 35%). The exact numbers for every draw live in [drawing odds](/en/blog/holdem-drawing-odds); here's the quick reference:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Draw | Outs | Equity (2 cards) |
+| Draw | Outs | Chance to hit (2 cards) |
 |:---|:---:|:---:|
 | Flush + open-ender | 15 | 54.1% |
 | Flush draw | 9 | 35.0% |
@@ -136,11 +136,11 @@ This is the single most important idea most beginner guides leave out, and it's 
 
 ## All-In Equity: When Raw Equity Is All That Matters
 
-**When you're all-in, there are no more decisions — so you realize 100% of your equity, and raw equity becomes the final word.** Every complication above (position, folding, getting bet off) disappears, because no more betting can happen. Whatever your raw equity is — your share of the pot, splits counted pro rata — that's exactly what you'll collect over time.
+**Once no more betting can happen — you're all-in or have called an all-in heads-up, or everyone else left in the hand is all-in — you realize 100% of your equity, and raw equity becomes the final word.** Every complication above (position, folding, getting bet off) disappears, because no more betting can happen. Whatever your raw equity is — your share of the pot, splits counted pro rata — that's exactly what you'll collect over time.
 
 This is why preflop all-in equities matter so much: AA all-in against KK banks its full ==82%== — no realization tax, no fold equity, just the raw number playing out. It's also why a "coin flip" (22 vs AK at ~52/48) is a genuine near-tossup all-in, even though the same two hands played postflop would diverge wildly based on the board and who has position.
 
-All-in is the one spot in poker where, with cards still to come, the pie is sliced exactly as the math says — which is both its appeal and its danger.
+An all-in with no betting left is the one spot in poker where, with cards still to come, the pie is sliced exactly as the math says — which is both its appeal and its danger.
 
 ---
 
@@ -167,7 +167,7 @@ The practical takeaway: hands that want a multiway pot are the ones that make th
 Estimate raw equity | Outs × 4 or × 2 for draws; recall the matchup preflop
 Discount for realization | Out of position or hard to play? Shave it down — 40% raw might be 30% real
 Add fold equity | If you're betting, how often does villain fold? That's extra equity your hand alone doesn't have
-Compare to the price | Calling? Realized equity vs your pot odds. Betting? How often villain folds vs the break-even fold rate, bet ÷ (pot + bet) → call, bet, or fold
+Compare to the price | Calling? Realized equity vs your pot odds. Betting? How often villain folds vs the break-even fold rate — bet ÷ (pot + bet) for a pure bluff, lower when your hand still has equity if called → call, bet, or fold
 :::
 
 The night I mentioned at the top, I was making step one and stopping — counting my raw equity and ignoring that out of position, against a good player, I'd never realize it. Once I started discounting for position and thinking about *their* folds instead of just my cards, the leaks closed. Equity isn't a number you look up; it's a lens you run every decision through.
@@ -187,7 +187,7 @@ A. Poker equity is your share of the pot — the percentage of the showdown payo
 
 **Q. How do you calculate equity in poker?**
 
-A. For draws, use the Rule of 4 and 2: multiply your outs by 4 on the flop (two cards to come) or by 2 on the turn. Nine flush outs ≈ 36% on the flop. Preflop, memorize common matchups (AA vs KK is 82/18). For exact numbers, players use equity calculators away from the table to study — you estimate while playing.
+A. For draws, use the Rule of 4 and 2: multiply your clean outs by 4 on the flop (when you'll see both cards) or by 2 on the turn to estimate your chance to hit. Nine flush outs ≈ 36% on the flop — close to your equity when a hit wins and a miss loses. Preflop, memorize common matchups (AA vs KK is 82/18). For exact numbers, players use equity calculators away from the table to study — you estimate while playing.
 
 **Q. What's the difference between equity and pot odds?**
 

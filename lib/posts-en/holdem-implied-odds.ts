@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Implied odds are the extra chips you expect to win on later streets when your draw hits. They let you profitably call a draw that pot odds alone say to fold — but only if stacks are deep and your opponent will actually pay you off.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-24",
+  updated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "💰",
@@ -86,7 +86,7 @@ You hold ==b:A♥ K♥== on a ==Q♥ 7♥ 2♣ 3♠== board — the nut flush dr
 - **Pot odds first:** you're getting 150-to-50, or 3-to-1, so you need **25%** equity. Your flush hits on the river just ==r:19.6%== of the time (9 outs ÷ 46 unseen cards — we count flush outs only; pairing the ace or king is not enough to be sure you are ahead, so the overcards are not clean outs). 19.6% is less than 25%, so the immediate price says ==r:fold.==
 - **Now the implied odds:** x = (call ÷ hit%) − (pot + call) = (50 ÷ 0.196) − (150 + 50) = 255 − 200 = ==g:about $55.== That's the extra you must win on the river when your flush lands.
 
-So the question isn't "should I call $50?" It's "**when a heart hits, can I win at least $55 more?**" Against a deep opponent who'll pay off a river bet with top pair or a set, that's easy — you call. Against someone with $40 left behind, or on a board where a fourth heart kills their action, you can't — so you fold.
+So the question isn't "should I call $50?" It's "**when a heart hits, can I win at least $55 more?**" Against a deep opponent who'll pay off a river bet with top pair, that's easy — you call. Against someone with $40 left behind, or someone who shuts down the moment a third heart hits the board, you can't — so you fold. (Against a set it's harder still: the 2♥ and 3♥ pair the board and can fill up the set, leaving 7 clean outs and an x of about $129.)
 
 :::note
 Same $50 call, opposite decisions — and the cards never changed. What changed is how much money is left to win. That's implied odds in one sentence.
@@ -109,7 +109,7 @@ Same $50 call, opposite decisions — and the cards never changed. What changed 
 
 </div>
 
-Two forces set the number. **Frequency:** a gutshot hits half as often as a flush draw, so it needs the payoff to be roughly twice as big to break even. **Disguise:** a hidden set gets paid far more than an obvious flush on a monotone board, because your opponent can't put you on it — which is why sets tolerate their low hit rate. The [nut flush draw is worth far more than a baby one](/en/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") for the same reason: it gets paid *and* it doesn't lose when it hits.
+Two forces set the number. **Frequency:** a gutshot hits half as often as a flush draw, so it needs the payoff to be roughly twice as big to break even. **Disguise:** a hidden set gets paid far more than an obvious flush on a monotone board, because your opponent can't put you on it — which is why sets tolerate their low hit rate. The [nut flush draw is worth far more than a baby one](/en/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") for the same reason: it gets paid *and* it never loses to a higher flush when it hits.
 
 ---
 
@@ -144,7 +144,7 @@ Raises a draw's value | Lowers a draw's value
 
 Three classic reverse-implied spots:
 
-- **The baby flush.** You hold ==b:7♦ 6♦== and the board brings a third diamond. You make your flush — and pay off a stack to the guy holding ==b:A♦== for the nut flush. Your "winning" card cost you money.
+- **The baby flush.** You hold ==b:7♦ 6♦== and the board brings a third diamond. You make your flush — and pay off a stack to the guy holding ==b:A♦== with a second diamond — the nut flush. Your "winning" card cost you money.
 - **The dummy end of a straight.** You hold ==b:6♦ 5♦== on ==b:9♥ 8♣ 2♠==, and a 7 on the turn makes your 5-6-7-8-9. But it's the *low* end — anyone holding J-10 now has 7-8-9-10-==g:J==, a higher straight, and the very card you needed pays them off.
 - **The dominated top pair.** You pair your king with a weak kicker and keep calling — straight into someone's A-K.
 
@@ -160,9 +160,9 @@ Watch for these leaks:
 
 :::card
 🚫 | Villain is all-in | No future streets means no future money from them. Heads-up, implied odds = 0 — use pot odds only
-📉 | Short stacks behind | If there's only half a pot left to win, "I'll get paid on the river" is a fantasy
+📉 | Short stacks behind | If what's left behind is smaller than the x you need, "I'll get paid on the river" is a fantasy
 🙅 | A "no-pay" opponent | A nit who only bets the nuts won't pay off your flush. Your implied odds live and die on their willingness to call
-🃏 | A scary board | If the card that completes your draw also freezes the action (four to a flush, paired board), nobody pays you
+🃏 | A scary board | If the card that completes your draw also freezes the action (four to a flush, paired board), fewer hands pay you — and the ones that do may beat you
 🎣 | Assuming stacks off | "It might get there and they might stack off" is two guesses stacked on a fold. Estimate conservatively
 :::
 
@@ -191,7 +191,7 @@ A. The difference between pot odds and implied odds is certainty: the present po
 
 **Q. When should you use implied odds?**
 
-A. Start with pot odds. If your equity already beats the immediate price, just call — no implied odds needed. Reach for implied odds only when your draw *just misses* that price and the stacks behind are deep enough that hitting wins you a lot more — ideally a strong, disguised, or nut draw against an opponent who'll pay off. If the draw misses the price by a mile, or your opponent is all-in or short-stacked, implied odds can't rescue the call.
+A. Start with pot odds. If your equity already beats the immediate price, just call — no implied odds needed. Reach for implied odds when your draw misses that price and the stacks behind are deep enough that hitting wins you more than the x from the formula — the further the draw misses, the bigger x gets. Ideally that's a strong, disguised, or nut draw against an opponent who'll pay off. If the stacks behind can't cover x — a heads-up opponent who is all-in or short-stacked, for example — implied odds can't rescue the call.
 
 **Q. What are reverse implied odds?**
 
@@ -199,7 +199,7 @@ A. Reverse implied odds are the extra chips a completed draw costs you when it i
 
 **Q. What are good implied odds — how much do you need?**
 
-A. It depends on your draw. Flush and open-ended straight draws need roughly 8–10× the call behind in stacks; set mining needs about 15–20× (the "5% rule"). The harder the draw is to hit, the deeper the stacks must be to justify the call.
+A. It depends on your draw. Flush and open-ended straight draws need roughly 8–10× the call behind in stacks; set mining needs about 15–20× as a practical range, and the stricter "5% rule" asks for 20×. The harder the draw is to hit, the deeper the stacks must be to justify the call.
 
 **Q. Do implied odds apply when your opponent is all-in?**
 

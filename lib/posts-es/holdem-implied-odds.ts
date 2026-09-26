@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Las odds implícitas son las fichas extra que esperas ganar en las calles siguientes cuando ligas tu proyecto. Te permiten pagar de forma rentable un proyecto que las pot odds por sí solas dirían foldear — pero solo si los stacks son profundos y tu rival de verdad va a pagarte.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-24",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "12 min",
@@ -192,7 +192,7 @@ A. La diferencia entre pot odds y odds implícitas es la certeza: el bote actual
 
 **Q. ¿Cuándo se deben usar las odds implícitas?**
 
-A. Empieza siempre por las pot odds. Si tu equity ya supera el precio inmediato, paga sin más — no hacen falta las odds implícitas. Recurre a ellas solo cuando tu proyecto *se queda justo corto* de ese precio y los stacks detrás son lo bastante profundos para que ligar te haga ganar mucho más — idealmente un proyecto fuerte, escondido o al nut contra un rival que va a pagarte. Si el proyecto falla el precio por mucho, o tu rival está all-in o corto de fichas, las odds implícitas no pueden rescatar el call.
+A. Empieza siempre por las pot odds. Si tu equity ya supera el precio inmediato, paga sin más — no hacen falta las odds implícitas. Recurre a ellas cuando tu proyecto no llega a ese precio y los stacks detrás son lo bastante profundos para que ligar te haga ganar más que la x de la fórmula — cuanto más lejos del precio, más grande es esa x. Lo ideal es un proyecto fuerte, escondido o al nut contra un rival que va a pagarte. Si los stacks detrás no cubren esa x — por ejemplo, un rival mano a mano que está all-in o corto de fichas —, las odds implícitas no pueden rescatar el call.
 
 **Q. ¿Qué son las reverse implied odds?**
 

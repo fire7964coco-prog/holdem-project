@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "El equity es tu parte del bote: la parte que le corresponde a tu mano en promedio cuando se reparten todas las cartas, contando los empates en su parte proporcional. Igualas cuando tu equity supera a tus pot odds, pero la posición y las apuestas hacen que casi nunca te quedes con todo tu equity — y el fold equity te deja ganar botes incluso cuando tu mano va por detrás.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-24",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "13 min",
@@ -137,11 +137,11 @@ Esta es la idea más importante que la mayoría de guías para principiantes dej
 
 ## Equity all-in: cuando el equity bruto es lo único que importa
 
-**Cuando estás all-in ya no hay más decisiones — así que realizas el 100% de tu equity, y el equity bruto tiene la última palabra.** Cada complicación de antes (posición, retirarse, que te echen de la mano) desaparece, porque no puede haber más apuestas. Sea cual sea tu equity bruto — tu parte del bote, con los empates en su parte proporcional —, eso es exactamente lo que cobrarás a largo plazo.
+**Cuando ya no puede haber más apuestas — estás all-in o has pagado un all-in mano a mano, o todos los demás que siguen en la mano están all-in — realizas el 100% de tu equity, y el equity bruto tiene la última palabra.** Cada complicación de antes (posición, retirarse, que te echen de la mano) desaparece, porque no puede haber más apuestas. Sea cual sea tu equity bruto — tu parte del bote, con los empates en su parte proporcional —, eso es exactamente lo que cobrarás a largo plazo.
 
 Por eso los equities de all-in preflop importan tanto: AA all-in contra KK cobra su ==82%== íntegro — sin impuesto de realización, sin fold equity, solo el número bruto desplegándose. También es la razón por la que un "coin flip" (22 vs AK a ~52/48) es un all-in genuinamente al filo, aunque esas mismas dos manos jugadas postflop divergirían muchísimo según la mesa y quién tenga posición.
 
-El all-in es el único punto del póker donde, con cartas por venir, la tarta se corta exactamente como dice la matemática — que es a la vez su atractivo y su peligro.
+Un all-in sin más apuestas posibles es el único punto del póker donde, con cartas por venir, la tarta se corta exactamente como dice la matemática — que es a la vez su atractivo y su peligro.
 
 ---
 
@@ -168,7 +168,7 @@ La conclusión práctica: las manos que quieren un bote multiway son las que lig
 Estima el equity bruto | Outs × 4 o × 2 con proyectos; recuerda el enfrentamiento preflop
 Descuenta por realización | ¿Fuera de posición o difícil de jugar? Recórtalo — un 40% bruto puede ser un 30% real
 Suma el fold equity | Si vas a apostar, ¿con qué frecuencia se retira el villano? Ese es equity extra que tu mano sola no tiene
-Compara con el precio | ¿Igualas? Equity realizada vs tus pot odds. ¿Apuestas? Cuántas veces foldea el rival vs el porcentaje de folds de break-even, apuesta ÷ (bote + apuesta) → iguala, apuesta o retírate
+Compara con el precio | ¿Igualas? Equity realizada vs tus pot odds. ¿Apuestas? Cuántas veces foldea el rival vs el porcentaje de folds de break-even — apuesta ÷ (bote + apuesta) en un farol puro, menos si tu mano aún tiene equity cuando te pagan → iguala, apuesta o retírate
 :::
 
 La noche que mencioné al principio, me quedaba en el paso uno y paraba — contaba mi equity bruta e ignoraba que fuera de posición, contra un buen jugador, nunca lo realizaría. En cuanto empecé a descontar por posición y a pensar en *sus* folds en vez de solo en mis cartas, se cerraron las fugas. El equity no es un número que consultas; es una lente por la que pasas cada decisión.

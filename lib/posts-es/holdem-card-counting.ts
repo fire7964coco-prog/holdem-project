@@ -116,7 +116,7 @@ En los torneos que aplican las [reglas TDA de 2026](https://www.pokertda.com/pok
 
 **En Seven Card Stud, buena parte de las cartas de cada jugador se reparten boca arriba — así que de verdad puedes contar la baraja a la vieja usanza.** Si necesitas una carta concreta para completar tu mano, puedes mirar alrededor de la mesa y contar literalmente cuántas de tus outs ya están a la vista en las cartas descubiertas de los rivales. Cada una que detectas es una out muerta.
 
-En el Hold'em las únicas cartas que se reparten boca arriba son las cinco cartas comunitarias compartidas — cualquier otra cosa que veas es un accidente (una carta enseñada por error, una mano mostrada al foldear), así que hay poco que rastrear. Pero el Stud — y sus parientes, el Razz y el Stud Hi-Lo, que reparten las mismas cartas boca arriba — premia justo el tipo de rastreo de cartas en el que los contadores de blackjack son buenos. Es lo más cerca que el póker llega a la versión de película.
+En el Hold'em las únicas cartas que se reparten boca arriba son las cinco cartas comunitarias compartidas — todo lo demás queda boca abajo salvo que se muestre en el showdown, se enseñe en un all-in o quede expuesto por accidente (una carta enseñada por error, una mano mostrada al foldear), así que hay poco que rastrear. Pero el Stud — y sus parientes, el Razz y el Stud Hi-Lo, que reparten las mismas cartas boca arriba — premia justo el tipo de rastreo de cartas en el que los contadores de blackjack son buenos. Es lo más cerca que el póker llega a la versión de película.
 
 ---
 

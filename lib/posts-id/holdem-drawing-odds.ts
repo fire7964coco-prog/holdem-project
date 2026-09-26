@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Anda flop set dengan pocket pair 11,8% dari waktu (7,5:1 melawan), flop flush dengan dua kartu suited hanya 0,84%, dan menyelesaikan flush draw yang di-flop hingga river 35% dari waktu. Setiap angka di bawah diturunkan dari deck, bukan ditebak.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-09-24",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "12 mnt",
@@ -43,7 +43,7 @@ Itulah drawing odds sebenarnya: bukan keberuntungan, melainkan ==matematika teta
 
 | Pegangan | Flop jadi | Flop draw-nya | Selesaikan draw hingga river |
 |:---|:---:|:---|:---|
-| Pocket pair → set | 11,8% (7,5:1) | — | set→full house 33% hingga river |
+| Pocket pair → set | 11,8% (7,5:1) | — | set→full house atau quads 33% hingga river |
 | Dua suited → flush | 0,84% (118:1) | 10,9% flush draw | 35% (9 outs) |
 | Connectors → straight | 1,3% (76:1) | ~10% OESD | 31,5% (8 outs) |
 | Dua unpaired → pair | ~32% | — | — |
