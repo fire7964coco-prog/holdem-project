@@ -148,17 +148,18 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 | K10 | tournament-vs-cash 「Player situation / Better fit」·「Your situation / Start with」 표 + 불릿 2목록 | 「짧은 세션 → 캐시」가 4회 반복 — 표 하나로 통합 | 교열 · 중 |
 | K11 | tournament-vs-cash H2 「Tournament Chips Are Not Money」·「Fixed Blinds vs Rising Blinds」 첫 문장 | 직답이 아니라 도입 문장 — 직답이 둘째 단락에 있다(GEO) | SEO · 중 |
 
-### 2-L. 우편함 수신분 — MA-144 · 153~157 · 167 · 174~178 (2026-09-25 · 회신 MB-083)
+### 2-L. 우편함 수신분 — MA-144 · 153~157 · 167 · 174~178 · 172·179 · 182·183 (2026-09-25~26 · 회신 MB-083 · MB-088)
 
 > 본체: `docs/harden-brief/mailbox-intake-2026-09-25.md`(HEAD `326728ed` 실측 · 항목별 좌표). 여기엔 묶음만.
 
 | 묶음 | 상태 | 규모 |
 |---|---|---|
 | **L-1 로케일 고유**(es·zh·zh-hant) | ✅ **종결 09-26** — es `14845d6f`(10) · zh `b19932db`(25) · zh-hant `9a991e37`(31) · EN 동형 이월분(es ~10 · zh·zh-hant equity 벳 문턱)은 L-2에 합침 | — |
-| **L-2 EN-먼저**(MA-144 ⓐⓑⓒ · 167 fish · 174 paired 13%·monotone 74s·history · 175~178 통지 · L-1 es 이월분) | ⏸ → **착수 가능 조건 충족**: 최종 MA = **MA-179**(09-25 · MA-180 확인). 착수 전 MA-172를 MA-179 ① 철회·② 강등으로 걸러 intake 작성 · 요청 1 cooler 한정절(EN 8+bad-beat 4+glossary 2+7로케일 41행) · 요청 2 신설 WRONG/RISKY · 요청 3 TDA 2026 번호 | EN ~50항목 · 🔴 paired-board는 **ko 원본(23%)도** 13.0%로 |
+| **L-2 EN-먼저**(MA-144 ⓐⓑⓒ · 167 fish · 174 paired 13%·monotone 74s·history · 175~178 통지 · L-1 es 이월분) | ▶ **착수 09-26**(착수 공지 MB-088) — intake = `docs/harden-brief/l2-en-first-intake-2026-09-26.md`(범위 = 현행 EN 원장 미결 **262행** · MA-179 철회분은 원장에서 이미 OK) · 회차 L-2a 용어 → b GTO → c 전략 → d 확률 → e 족보·규칙 → f 계산기 AQo↔KQo(MA-183) → g 로케일 전파 | 262행 · 🔴 paired-board는 **ko 원본(23%)도** 13.0%로 |
 | **L-3 계산기**: 문구 5종(A55·A81·A85·B22·B111) + orHigher 3 · spr.low 3 | ✅ **종결 `0932f093`**(09-25 · ko 동형 3자리 포함) · 남긴 것: 푸시/폴드 토글 «BB ante ON» 라벨(A81 인접 · intake 채택 범위 밖) | — |
 | **L-3 계산기 레인지 3건**(K10o↔Q10o 역전 · A10s · 88) | ✅ **종결 `104fac47`**(09-25 · 169핸드 지배 쌍 1,168 역전 5→0 · A3s·A2s 역전 추가 발견·정정 · 권고안 수정 2자리는 intake §3) | — |
-| **L-4 판단 필요**(cooler 인접 2 · outs spade · id melepas) | ⏸ | — |
+| **L-4 판단 필요**(cooler 인접 2 · outs spade · id melepas) | ⏸ — cooler 인접 2는 MA-180 ⓒ «본체 진행 · 한정절 자리와 겹치면 한 커밋» → L-2a에서 | — |
+| **L-5 de 고유**(MA-182 ① · 6자리: outs FAQ «zu treffen» · limping Kurze Antwort · cooler Kurze Antwort 3문장 · position-play «schlechteste Sitz» · c-bet «Immer dann» · card-counting #24) | ⏸ 채택 — cooler 3문장은 L-2a와 한 커밋 · 나머지는 de 로케일 회차(EN 무관 · 같은 글 정답 자리 참조) | 6 |
 
 ## 3. EN 자체 정합 회차 (로케일 전파 전에 EN을 먼저 재야 한다)
 
