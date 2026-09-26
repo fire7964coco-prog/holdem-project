@@ -60,7 +60,29 @@ const OWNED = {
     'docs/harden-brief/queue-',
     'docs/en-first-queue.md',
   ],
+  // 🇲🇾 ms 신규 번역 5레인(2026-09-26 · docs/ms-translation-lanes.md §0) — 한 폴더(lib/posts-ms/)를 «슬러그 파일» 단위로 나눠 갖는다.
+  //   lib/posts-ms/index.ts 는 다섯 레인 공용(칸 분할)이라 어느 레인 것도 아니다(null).
+  ...msLanes({
+    'ms-rank': ['holdem-flush-vs-straight', 'holdem-kicker', 'holdem-tiebreak-rules', 'holdem-split-pot-rules', 'holdem-reading-the-board'],
+    'ms-prob': ['holdem-probability', 'holdem-pot-odds', 'holdem-outs', 'holdem-drawing-odds', 'holdem-implied-odds', 'holdem-equity', 'holdem-card-counting'],
+    'ms-strat': ['holdem-strategy', 'holdem-positions', 'holdem-position-play', 'holdem-starting-hands-chart', 'holdem-limping', 'holdem-3bet', 'holdem-continuation-bet', 'holdem-when-to-fold'],
+    'ms-tour': ['holdem-tournament', 'holdem-icm', 'holdem-bubble', 'holdem-short-stack'],
+    'ms-gloss': ['holdem-glossary', 'holdem-bad-beat', 'holdem-cooler', 'holdem-fish', 'holdem-rake', 'holdem-straddle'],
+  }),
 };
+
+function msLanes(map) {
+  const out = {};
+  for (const [lane, slugs] of Object.entries(map)) {
+    const id = lane.slice(3);
+    out[lane] = [
+      ...slugs.map((s) => `lib/posts-ms/${s}.ts`),
+      `docs/ms-lanes/${id}-`,
+      `docs/keyword-bank/ms-${id}.md`,
+    ];
+  }
+  return out;
+}
 
 /** 🔴 접두 충돌 — `zh` 의 자리가 `zh-hant` 를 삼키면 안 된다. 긴 로케일부터 본다. */
 const LOCALES_LONGEST_FIRST = Object.keys(OWNED).sort((a, b) => b.length - a.length);
@@ -126,6 +148,18 @@ function selftest() {
     ['WORKLOG.md', null],
     ['session-handoff.md', null],
     ['mailbox/out-본체.md', null],
+    ['lib/posts-ms/holdem-kicker.ts', 'ms-rank'],
+    ['lib/posts-ms/holdem-position-play.ts', 'ms-strat'],
+    ['lib/posts-ms/holdem-positions.ts', 'ms-strat'],
+    ['lib/posts-ms/holdem-tournament.ts', 'ms-tour'],
+    ['lib/posts-ms/holdem-tournament-vs-cash-game.ts', null],
+    ['lib/posts-ms/index.ts', null],
+    ['lib/posts-ms/holdem-hand-rankings.ts', null],
+    ['docs/ms-lanes/prob-진행.md', 'ms-prob'],
+    ['docs/ms-lanes/gloss-brief.md', 'ms-gloss'],
+    ['docs/keyword-bank/ms-strat.md', 'ms-strat'],
+    ['docs/keyword-bank/ms-posting-reference.md', null],
+    ['docs/ms-translation-lanes.md', null],
   ];
   let bad = 0;
   for (const [p, want] of cases) {

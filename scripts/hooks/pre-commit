@@ -35,6 +35,8 @@ loc=${branch#harden-}
 # 🧰 queue 레인(프로토콜 §7-F)의 «자기 자리»는 로케일 레인 셋을 뺀 나머지 포스트 + 이미지다
 case "$loc" in
   queue) paths="lib/posts-en/ lib/posts-ar/ lib/posts-de/ lib/posts-es/ lib/posts-fr/ lib/posts-id/ lib/posts-pt/ public/images/" ;;
+  # 🇲🇾 ms 5레인(docs/ms-translation-lanes.md)은 lib/posts-ms/ 를 나눠 쓴다 — 다른 ms 레인이 머지되면 index.ts 칸이 바뀌므로 먼저 받게 한다
+  ms-*) paths="lib/posts-ms/" ;;
   *) paths="lib/posts-$loc/" ;;
 esac
 # shellcheck disable=SC2086
