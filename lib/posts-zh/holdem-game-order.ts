@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "翻前由大盲注左边的玩家先下注。翻牌、转牌、河牌则换成按钮左边第一个还在牌局里的玩家先动 —— 满桌通常就是小盲位，单挑时是大盲位。牌局本身的流程是：下盲注 → 每人发两张底牌 → 翻前 → 翻牌 → 转牌 → 河牌 → 摊牌，全程共四轮下注。",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-09-22",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "16 分钟",
@@ -84,8 +84,8 @@ export const POST: Post = {
 ### 适合新手的扎实起手牌
 
 - **顶级：** A♠A♥（口袋 A 对）、K♠K♥、Q♠Q♥、J♠J♥
-- **强牌：** A♠K♥（“Big Slick”）、A♠Q♥、A♠J♥、10♠10♥
-- **视情况而定：** 9♠9♥、8♠8♥、K♠Q♥、K♠J♥
+- **强牌：** A♠K♥（“Big Slick”）、A♠Q♥、10♠10♥、9♠9♥
+- **视情况而定：** A♠J♥、8♠8♥、K♠Q♥、K♠J♥
 
 这些牌里哪些真的能开局加注，取决于你坐的位置。想深入研究，可以查[按位置拆分的德州扑克 169 种起手牌完整表格](/zh/blog/holdem-starting-hands-chart)。
 

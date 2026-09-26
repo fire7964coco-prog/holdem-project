@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "能——扑克牌是可以打平的。当两名或更多玩家摊牌时亮出完全相同的最佳五张牌，底池就会平分（chop）。花色永远不能决定胜负，任何剩下的单数筹码归庄家按钮位左边第一个平局玩家。",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-14",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "12 分钟",
@@ -41,7 +41,7 @@ export const POST: Post = {
 ## 什么是平分底池？（“Chop”是同一回事吗？）
 
 > **快速回答**
-> split pot 和 chop 是同一件事：规则书里写 split pot，牌手嘴上说 chop（“我们 chop 吧”）。指的都是摊牌时两手牌分不出高下，荷官把筹码在他们之间均等分开。两个词大家都在搜，所以你会看到它们混着用。
+> 在摊牌这个场合，split pot 和 chop 是同一件事（锦标赛里谈拢分奖池的 chop 是另一回事，见文末 FAQ）：规则书里写 split pot，牌手嘴上说 chop（“我们 chop 吧”）。指的都是摊牌时两手牌分不出高下，荷官把筹码在他们之间均等分开。两个词大家都在搜，所以你会看到它们混着用。
 
 基础在于：你的牌永远是七张里的 ==**最佳五张**==——你的两张底牌加上牌面的五张。每种五张牌型的高低排在哪里，[完整的德州扑克牌型大小](/zh/blog/holdem-hand-rankings "thumb:/images/holdem-hand-rankings-hero.webp")里都讲了。==r:当两名玩家的最佳五张在牌力上完全相同，谁都不算“更”赢==——底池平分，就这么简单。
 
