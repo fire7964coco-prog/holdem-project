@@ -69,74 +69,74 @@
 
 | 글 | # | 판정 | 원문(앞 110자) | 처리 |
 |---|---:|---|---|---|
-| 3bet-pot-bet-sizing | 5 | WRONG | It takes runner-runner hearts | |
-| 3bet-pot-bet-sizing | 8 | RISKY | two thirds prices out 38. | |
-| 3bet-pot-bet-sizing | 13 | WRONG | holding a pair below both of them. | |
-| 3bet-pot-bet-sizing | 16 | RISKY | it is a ceiling derived from treating the bet as a pure bluff with no equity | |
-| 3bet-pot-bet-sizing | 17 | RISKY | every flush draw on this board clears that with room to spare. | |
-| 3bet-pot-bet-sizing | 22 | RISKY | Two thirds of the pot is the price that breaks 38 of 40 draws. | |
-| 3bet-pot-bet-sizing | 24 | RISKY | of the button's 40 draw combos only two still clear it | |
-| 3bet-pot-bet-sizing | 68 | WRONG | a king and a nine, or an ace and a king | |
-| 3bet-pot-bet-sizing | 92 | WRONG | neither solve reports a per-hand frequency for it | |
-| 3bet-pot-bet-sizing | 101 | WRONG | needing runner-runner hearts and completing about 4.2% of the time | |
-| 3bet-pot-bet-sizing | 105 | RISKY | only two of its 40 draw combos get there — K♥J♥ and 9♥8♥, which hold fifteen outs and 31.9% | |
-| 3bet-pot-cbet | 3 | WRONG | nothing is hiding under the rounding. | |
-| 3bet-pot-cbet | 10 | RISKY | Against a bet with no pure bluffs in it there is no bluff to make indifferent | |
-| 3bet-pot-cbet | 12 | RISKY | those 130 combos are what a theoretically correct defense looks like. | |
-| 3bet-pot-cbet | 17 | RISKY | In this 3-bet pot the solver never checks — all 63 combos bet. | |
-| 3bet-pot-cbet | 21 | RISKY | all 63 combos, every single time | |
-| 3bet-pot-cbet | 63 | RISKY | That the small size prices those 60 combos in is separately true | |
-| 3bet-pot-cbet | 83 | RISKY | Betting 66% of the pot each street runs 14.9 → 34.5 → 39.6bb, exactly the 89bb stack. | |
-| 3bet-pot-low-board | 11 | RISKY | when one side rises the other must fall. | |
-| 3bet-pot-low-board | 12 | RISKY | A-K has neither a pair nor a draw | |
-| 3bet-pot-low-board | 14 | RISKY | The moment you bet the flop, whether you are going all the way is effectively already decided. | |
-| 3bet-pot-low-board | 17 | RISKY | 36 combos of overpairs and 40 combos of ace-high with nothing in between | |
-| 3bet-pot-low-board | 18 | RISKY | No pair, no draw. | |
-| 3bet-pot-low-board | 76 | WRONG | Your history stays in your own browser. | |
-| a-high-board-cbet | 7 | WRONG | the button's opening range keeps AK, AQ and AJ while the big blind's calling range does not | |
-| a-high-board-cbet | 9 | RISKY | a lead invites a raise from exactly the hands it cannot continue against. | |
-| ace-paired-board-strategy | 11 | RISKY | That is how large a share a single bet can fold out. | |
-| ace-paired-board-strategy | 12 | RISKY | the pot stays small enough that the 97bb behind is never at risk. | |
-| ace-paired-board-strategy | 15 | RISKY | it decides the betting frequency of the whole range. | |
-| ace-paired-board-strategy | 61 | RISKY | fold out the opponent's 51.5% and that alone is profit | |
-| ace-paired-board-strategy | 81 | WRONG | no node after a check is solved anywhere in the series | |
-| ace-paired-board-strategy | 82 | WRONG | Your history stays in your own browser. | |
-| ace-paired-board-strategy | 87 | RISKY | With 51.5% of the opponent's range having missed, the bet earns its keep | |
-| blind-battle-cbet | 4 | RISKY | That is a *necessary* condition, not a sufficient one | |
-| blind-battle-cbet | 5 | RISKY | Whether you bet first is decided not by position | |
-| blind-battle-cbet | 18 | RISKY | SB bets 67.4% — the first single-raised pot where the out-of-position player leads | |
-| blind-battle-cbet | 71 | WRONG | Your history stays in your own browser. | |
-| blind-battle-connected-board | 4 | WRONG | Because the combinations that connect with 5-6-7 survive only in the big blind's calling range. | |
-| blind-battle-connected-board | 10 | RISKY | none of the top three individual combos does both | |
-| blind-battle-connected-board | 12 | WRONG | on this board the best it does is pair up. | |
-| blind-battle-connected-board | 13 | RISKY | checking and then answering the opponent's bet with calls and check-raises beats leading with thin value an… | |
-| blind-battle-connected-board | 62 | RISKY | it is that leading with thin value and then facing a raise costs far more than it makes | |
-| blind-battle-connected-board | 69 | RISKY | The opponent's draws, when they hit, are straights | |
-| blind-battle-connected-board | 72 | WRONG | Your history stays in your own browser. | |
-| broadway-board-strategy | 8 | WRONG | the straights, sets and overpairs are all on one side | |
-| broadway-board-strategy | 28 | RISKY | one player can never get raised off a big bet and the other can never make one | |
-| broadway-board-strategy | 38 | RISKY | Same "top pair", roughly six times the risk. On top of that, 68.7% of the opponent's range keeps drawing at… | |
-| broadway-board-strategy | 53 | RISKY | where the big blind leads instead of checking | |
-| donk-bet-strategy | 5 | WRONG | every other row belongs to the big blind. | |
-| donk-bet-strategy | 10 | RISKY | you hold more of the nuts | |
-| k-high-board-cbet | 7 | WRONG | The same AQ in the big blind is worth less | |
-| k-high-board-cbet | 8 | RISKY | so a third of the range folds immediately. | |
-| low-board-check-raise | 8 | RISKY | 190 iterations, exploitability 0.16, which is 0.29% of the pot. | |
-| low-board-check-raise | 16 | WRONG | turns all of it into one action. | |
-| low-board-check-raise | 18 | RISKY | Legal everywhere | |
-| monotone-board-strategy | 5 | WRONG | whoever holds the A♠ | |
-| monotone-board-strategy | 6 | WRONG | against a made nut flush it is drawing at nothing. | |
-| monotone-board-strategy | 7 | WRONG | a hand with one spade that does come along is drawing at nothing against a made nut flush | |
-| monotone-board-strategy | 8 | WRONG | Low kickers block none of them | |
-| monotone-board-strategy | 9 | WRONG | hands like J5s, 85s and 74s get called from the big blind | |
-| monotone-board-strategy | 11 | RISKY | about 3.4% of 474 | |
-| monotone-board-strategy | 13 | RISKY | A big bet only gets called by flushes | |
-| monotone-board-strategy | 53 | WRONG | defends cheap suited hands like J5s, 85s and 74s | |
-| paired-board-strategy | 10 | WRONG | so holding one removes none of the button's trips. | |
-| paired-board-strategy | 11 | WRONG | the sixes are 26 of 486 combos, roughly a quarter of the large-bet total of about 9.7 combos. | |
-| paired-board-strategy | 16 | WRONG | second is 6♥6♣ on the | |
-| paired-board-strategy | 57 | WRONG | K6 and Q6 are hands the button also holds, so taking one out of the deck thins the very range that would call. | |
-| paired-board-strategy | 63 | WRONG | The sixes lead more than any other class here, and they still check nine times out of ten. | |
+| 3bet-pot-bet-sizing | 5 | WRONG | It takes runner-runner hearts | 채택 `1bbe1bfe` · 로케일 L-2g |
+| 3bet-pot-bet-sizing | 8 | RISKY | two thirds prices out 38. | 채택 `1bbe1bfe` · 로케일 L-2g |
+| 3bet-pot-bet-sizing | 13 | WRONG | holding a pair below both of them. | 채택 `1bbe1bfe` · 로케일 L-2g |
+| 3bet-pot-bet-sizing | 16 | RISKY | it is a ceiling derived from treating the bet as a pure bluff with no equity | 채택 `1bbe1bfe` · 로케일 L-2g |
+| 3bet-pot-bet-sizing | 17 | RISKY | every flush draw on this board clears that with room to spare. | 채택 `1bbe1bfe` · 로케일 L-2g |
+| 3bet-pot-bet-sizing | 22 | RISKY | Two thirds of the pot is the price that breaks 38 of 40 draws. | 채택 `1bbe1bfe` · 로케일 L-2g |
+| 3bet-pot-bet-sizing | 24 | RISKY | of the button's 40 draw combos only two still clear it | 채택 `1bbe1bfe` · 로케일 L-2g |
+| 3bet-pot-bet-sizing | 68 | WRONG | a king and a nine, or an ace and a king | 채택 `1bbe1bfe` · 로케일 L-2g |
+| 3bet-pot-bet-sizing | 92 | WRONG | neither solve reports a per-hand frequency for it | 채택 `1bbe1bfe` · 로케일 L-2g |
+| 3bet-pot-bet-sizing | 101 | WRONG | needing runner-runner hearts and completing about 4.2% of the time | 채택 `1bbe1bfe` · 로케일 L-2g |
+| 3bet-pot-bet-sizing | 105 | RISKY | only two of its 40 draw combos get there — K♥J♥ and 9♥8♥, which hold fifteen outs and 31.9% | 채택 `1bbe1bfe` · 로케일 L-2g |
+| 3bet-pot-cbet | 3 | WRONG | nothing is hiding under the rounding. | 채택 `1bbe1bfe` · 로케일 L-2g |
+| 3bet-pot-cbet | 10 | RISKY | Against a bet with no pure bluffs in it there is no bluff to make indifferent | 채택 `1bbe1bfe` · 로케일 L-2g |
+| 3bet-pot-cbet | 12 | RISKY | those 130 combos are what a theoretically correct defense looks like. | 채택 `1bbe1bfe` · 로케일 L-2g |
+| 3bet-pot-cbet | 17 | RISKY | In this 3-bet pot the solver never checks — all 63 combos bet. | 채택 `1bbe1bfe` · 로케일 L-2g |
+| 3bet-pot-cbet | 21 | RISKY | all 63 combos, every single time | 채택 `1bbe1bfe` · 로케일 L-2g |
+| 3bet-pot-cbet | 63 | RISKY | That the small size prices those 60 combos in is separately true | 채택 `1bbe1bfe` · 로케일 L-2g |
+| 3bet-pot-cbet | 83 | RISKY | Betting 66% of the pot each street runs 14.9 → 34.5 → 39.6bb, exactly the 89bb stack. | 채택 `1bbe1bfe` · 로케일 L-2g |
+| 3bet-pot-low-board | 11 | RISKY | when one side rises the other must fall. | 채택 `1bbe1bfe` · 로케일 L-2g |
+| 3bet-pot-low-board | 12 | RISKY | A-K has neither a pair nor a draw | 채택 `1bbe1bfe` · 로케일 L-2g |
+| 3bet-pot-low-board | 14 | RISKY | The moment you bet the flop, whether you are going all the way is effectively already decided. | 채택 `1bbe1bfe` · 로케일 L-2g |
+| 3bet-pot-low-board | 17 | RISKY | 36 combos of overpairs and 40 combos of ace-high with nothing in between | 채택 `1bbe1bfe` · 로케일 L-2g |
+| 3bet-pot-low-board | 18 | RISKY | No pair, no draw. | 채택 `1bbe1bfe` · 로케일 L-2g |
+| 3bet-pot-low-board | 76 | WRONG | Your history stays in your own browser. | 채택 `1bbe1bfe` · ko+8로케일 동반 |
+| a-high-board-cbet | 7 | WRONG | the button's opening range keeps AK, AQ and AJ while the big blind's calling range does not | 채택 `1bbe1bfe` · 로케일 L-2g |
+| a-high-board-cbet | 9 | RISKY | a lead invites a raise from exactly the hands it cannot continue against. | 채택 `1bbe1bfe` · 로케일 L-2g |
+| ace-paired-board-strategy | 11 | RISKY | That is how large a share a single bet can fold out. | 채택 `1bbe1bfe` · 로케일 L-2g |
+| ace-paired-board-strategy | 12 | RISKY | the pot stays small enough that the 97bb behind is never at risk. | 채택 `1bbe1bfe` · 로케일 L-2g |
+| ace-paired-board-strategy | 15 | RISKY | it decides the betting frequency of the whole range. | 채택 `1bbe1bfe` · 로케일 L-2g |
+| ace-paired-board-strategy | 61 | RISKY | fold out the opponent's 51.5% and that alone is profit | 채택 `1bbe1bfe` · 로케일 L-2g |
+| ace-paired-board-strategy | 81 | WRONG | no node after a check is solved anywhere in the series | 채택 `1bbe1bfe` · 로케일 L-2g |
+| ace-paired-board-strategy | 82 | WRONG | Your history stays in your own browser. | 채택 `1bbe1bfe` · ko+8로케일 동반 |
+| ace-paired-board-strategy | 87 | RISKY | With 51.5% of the opponent's range having missed, the bet earns its keep | 채택 `1bbe1bfe` · 로케일 L-2g |
+| blind-battle-cbet | 4 | RISKY | That is a *necessary* condition, not a sufficient one | 채택 `1bbe1bfe` · 로케일 L-2g |
+| blind-battle-cbet | 5 | RISKY | Whether you bet first is decided not by position | 채택 `1bbe1bfe` · 로케일 L-2g |
+| blind-battle-cbet | 18 | RISKY | SB bets 67.4% — the first single-raised pot where the out-of-position player leads | 채택 `1bbe1bfe` · 로케일 L-2g |
+| blind-battle-cbet | 71 | WRONG | Your history stays in your own browser. | 채택 `1bbe1bfe` · ko+8로케일 동반 |
+| blind-battle-connected-board | 4 | WRONG | Because the combinations that connect with 5-6-7 survive only in the big blind's calling range. | 채택 `1bbe1bfe` · 로케일 L-2g |
+| blind-battle-connected-board | 10 | RISKY | none of the top three individual combos does both | 채택 `1bbe1bfe` · 로케일 L-2g |
+| blind-battle-connected-board | 12 | WRONG | on this board the best it does is pair up. | 채택 `1bbe1bfe` · 로케일 L-2g |
+| blind-battle-connected-board | 13 | RISKY | checking and then answering the opponent's bet with calls and check-raises beats leading with thin value an… | 채택 `1bbe1bfe` · 로케일 L-2g |
+| blind-battle-connected-board | 62 | RISKY | it is that leading with thin value and then facing a raise costs far more than it makes | 채택 `1bbe1bfe` · 로케일 L-2g |
+| blind-battle-connected-board | 69 | RISKY | The opponent's draws, when they hit, are straights | 채택 `1bbe1bfe` · 로케일 L-2g |
+| blind-battle-connected-board | 72 | WRONG | Your history stays in your own browser. | 채택 `1bbe1bfe` · ko+8로케일 동반 |
+| broadway-board-strategy | 8 | WRONG | the straights, sets and overpairs are all on one side | 채택 `1bbe1bfe` · 로케일 L-2g |
+| broadway-board-strategy | 28 | RISKY | one player can never get raised off a big bet and the other can never make one | 채택 `1bbe1bfe` · 로케일 L-2g |
+| broadway-board-strategy | 38 | RISKY | Same "top pair", roughly six times the risk. On top of that, 68.7% of the opponent's range keeps drawing at… | 채택 `1bbe1bfe` · 로케일 L-2g |
+| broadway-board-strategy | 53 | RISKY | where the big blind leads instead of checking | 채택 `1bbe1bfe` · 로케일 L-2g |
+| donk-bet-strategy | 5 | WRONG | every other row belongs to the big blind. | 채택 `1bbe1bfe` · 로케일 L-2g |
+| donk-bet-strategy | 10 | RISKY | you hold more of the nuts | 채택 `1bbe1bfe` · 로케일 L-2g |
+| k-high-board-cbet | 7 | WRONG | The same AQ in the big blind is worth less | 채택 `1bbe1bfe` · 로케일 L-2g |
+| k-high-board-cbet | 8 | RISKY | so a third of the range folds immediately. | 채택 `1bbe1bfe` · 로케일 L-2g |
+| low-board-check-raise | 8 | RISKY | 190 iterations, exploitability 0.16, which is 0.29% of the pot. | 채택 `1bbe1bfe` · 로케일 L-2g |
+| low-board-check-raise | 16 | WRONG | turns all of it into one action. | 채택 `1bbe1bfe` · 로케일 L-2g |
+| low-board-check-raise | 18 | RISKY | Legal everywhere | 채택 `1bbe1bfe` · 로케일 L-2g |
+| monotone-board-strategy | 5 | WRONG | whoever holds the A♠ | 채택 `1bbe1bfe` · 로케일 L-2g |
+| monotone-board-strategy | 6 | WRONG | against a made nut flush it is drawing at nothing. | 채택 `1bbe1bfe` · 로케일 L-2g |
+| monotone-board-strategy | 7 | WRONG | a hand with one spade that does come along is drawing at nothing against a made nut flush | 채택 `1bbe1bfe` · 로케일 L-2g |
+| monotone-board-strategy | 8 | WRONG | Low kickers block none of them | 채택 `1bbe1bfe` · 로케일 L-2g |
+| monotone-board-strategy | 9 | WRONG | hands like J5s, 85s and 74s get called from the big blind | 채택 `1bbe1bfe` · ko+8로케일 동반 |
+| monotone-board-strategy | 11 | RISKY | about 3.4% of 474 | 채택 `1bbe1bfe` · 로케일 L-2g |
+| monotone-board-strategy | 13 | RISKY | A big bet only gets called by flushes | 채택 `1bbe1bfe` · 로케일 L-2g |
+| monotone-board-strategy | 53 | WRONG | defends cheap suited hands like J5s, 85s and 74s | 채택 `1bbe1bfe` · ko+8로케일 동반 |
+| paired-board-strategy | 10 | WRONG | so holding one removes none of the button's trips. | 채택 `1bbe1bfe` · ko+8로케일 동반 |
+| paired-board-strategy | 11 | WRONG | the sixes are 26 of 486 combos, roughly a quarter of the large-bet total of about 9.7 combos. | 채택 `1bbe1bfe` · ko+8로케일 동반 |
+| paired-board-strategy | 16 | WRONG | second is 6♥6♣ on the | 채택 `1bbe1bfe` · ko+8로케일 동반 |
+| paired-board-strategy | 57 | WRONG | K6 and Q6 are hands the button also holds, so taking one out of the deck thins the very range that would call. | 채택 `1bbe1bfe` · ko+8로케일 동반 |
+| paired-board-strategy | 63 | WRONG | The sixes lead more than any other class here, and they still check nine times out of ten. | 채택 `1bbe1bfe` · ko+8로케일 동반 |
 
 ## L-2c 전략 8 — 56행 (WRONG 0 · RISKY 56)
 

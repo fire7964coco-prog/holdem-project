@@ -1,3 +1,12 @@
+## 2026-09-26 (5) — L-2b GTO 13편 배포 · MA-185 이행 (MB-090)
+
+- `1bbe1bfe` EN 13편 원장 미결 68행 전건(WRONG 29 · RISKY 39 · 기각 0). 새 수치는 솔버 원시 `preset-results` 디코딩(rank c>>2 · suit c&3 · strategy[a*N+h])으로 전부 재검산 — paired 6x 큰 벳 기여 13.0% · monotone 차단 수·74s 부재 · bet-sizing 38 중 30콤보 28.5% 초과 · cbet 체크 잔여 0.0087콤보 · 9-8-7 스트레이트 24/20.
+- 렌즈(교열·딜러) 1회 → 결함 6 + 사소 4 전부 반영(AK «drift toward a check»가 새 수치와 자기모순 · «6 없는 핸드» ↔ 33 모순 · 4♠ 차단 2 · 빈도 «합» → 평균 · AK 백도어 휠 · FAQ «losing price» ↔ «charge»).
+- ko 원본 6편: EN과 같은 뿌리의 결함 동반 정정(paired «약 23%»·블로커·리드 순위·EQR 2위 · monotone 74s·drawing dead·블로커·428 분모 · history 4편). 소스 주석에 재정정 경위(옛 «2.2콤보(23%)»·«74s» 되살리기 방지).
+- 8로케일(es·id·ja·pt·zh·zh-hant·hi·ms): 레인 에이전트 4개 병렬 — paired A1~A4 · monotone 74s · history 4편. 동반 밖 EN 변경의 로케일 전파는 L-2g(작업판 표시).
+- MA-185 요청 1(zh card-counting «只收抽水» · reading-the-board «退一步») 이행 · MA-186 수신.
+- audit:hard 0err · check:stamp 0 · build 73+577 · masterUpdated 미상향(부분 전파).
+
 ## 2026-09-26 (4) — L-2 EN-먼저 착수 · L-2a 용어 6편 배포 (MB-088 · MB-089)
 
 - 착수: MA-172를 MA-179로 거르는 대신 **현행 EN 원장 미결 262행**을 범위로 삼았다(원장이 철회·강등을 이미 반영 — 철회 표본 10문구 미결 0 · 강등 8행 RISKY 실측). intake `docs/harden-brief/l2-en-first-intake-2026-09-26.md` · 작업판 `l2-en-open-rows-2026-09-26.md` · 착수 공지 MB-088(MA-182·183 등재 포함) `c6a0f995`.
