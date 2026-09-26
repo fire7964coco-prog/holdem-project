@@ -186,7 +186,7 @@ Jika anda bermain cash game kecil di rumah, pilih buy-in yang semua orang selesa
 
 ==r:Jangan mula dengan taruhan yang buat orang gementar.== Pemula yang gementar tidak belajar lebih cepat. Mereka cuma fold terlalu banyak, call ikut emosi, atau bertengkar pasal peraturan.
 
-Perhatikan bahawa buy-in **pertandingan (tournament)** berfungsi berbeza daripada cash game: anda bayar satu yuran masuk tetap, terima stack cip yang tidak boleh ditunaikan, dan bermain sehingga seorang pemain memiliki semuanya. Jika anda tidak pasti mana satu yang anda mahu, baca [cash game vs pertandingan](/ms/blog/holdem-tournament-vs-cash-game) dahulu.
+Perhatikan bahawa buy-in **pertandingan (tournament)** berfungsi berbeza daripada cash game: anda bayar yuran masuk tetap, terima stack cip yang tidak boleh ditunaikan, dan bermain sehingga seorang pemain memiliki semuanya (acara re-entry membenarkan anda membeli masuk semula selepas tersingkir). Jika anda tidak pasti mana satu yang anda mahu, baca [cash game vs pertandingan](/ms/blog/holdem-tournament-vs-cash-game) dahulu.
 
 Untuk latihan dalam talian, gunakan meja percuma sehingga anda boleh menerangkan urutan giliran tanpa berfikir. Kemudian naik taraf perlahan-lahan.
 
@@ -194,7 +194,7 @@ Untuk latihan dalam talian, gunakan meja percuma sehingga anda boleh menerangkan
 
 ## No-Limit, Limit, atau Pot-Limit? Texas Hold'em Mana Yang Anda Main?
 
-Bila orang sebut "Texas Hold'em", mereka hampir selalu maksudkan **No-Limit Hold'em (NLHE)** — format yang digunakan dalam WSOP Main Event dan hampir semua permainan rumah. Cara edar, blinds dan kedudukan tangan adalah sama dalam ketiga-tiga format. Satu-satunya yang berubah ialah **berapa banyak anda dibenarkan bertaruh.**
+Bila orang sebut "Texas Hold'em", mereka hampir selalu maksudkan **No-Limit Hold'em (NLHE)** — format yang digunakan dalam WSOP Main Event dan hampir semua permainan rumah. Cara edar dan kedudukan tangan adalah sama dalam ketiga-tiga format. Perkara utama yang berubah ialah **berapa banyak anda dibenarkan bertaruh** — dan Fixed-Limit biasanya turut mengehadkan bilangan raise dalam satu pusingan (di WSOP, satu pertaruhan dan empat raise).
 
 | Format | Berapa banyak boleh bertaruh? | Di mana anda akan jumpa |
 |--------|-----------------------|---------------------|
@@ -299,7 +299,7 @@ Pot odds anda ialah **$120 kepada $20**, iaitu **6 kepada 1**. Bermakna anda per
 
 ### Peraturan 2 dan 4 — jalan pintas kebarangkalian segera
 
-Bila anda memegang tangan draw (contohnya empat kad ke arah Flush), kira **outs** anda — kad-kad yang akan melengkapkan tangan anda.
+Bila anda memegang tangan draw (contohnya empat kad ke arah Flush), kira **outs** anda — kad-kad yang akan menjadikan draw anda tangan yang berkemungkinan besar menang.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

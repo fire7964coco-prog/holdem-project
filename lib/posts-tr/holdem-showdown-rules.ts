@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "All-in olmayan bir turnuva showdown'ında river'ın son agresörü önce gösterir; river check geçildiyse butonun solundaki ilk aktif oyuncu başlar. Bir oyuncu all-in olduğunda, tüm bahis aksiyonu tamamlanınca kalan bütün eller hemen açılır. River bahsini call eden ve kartlarını elinde tutan ya da masaya açan oyuncu son agresörün elini isteyebilir. Cash oyununda gösterme ve muck ev kuralına bağlıdır.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-22",
+  updated: "2026-09-26",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 dk",
@@ -170,7 +170,7 @@ A. All-in olmayan turnuvada river'ın son agresörü, bahsi call edildiğinde ö
 
 **Q. Showdown'da göstermeden muck yapabilir misin?**
 
-A. Turnuvadaki all-in açma zorunluluğu dışında kaybeden el, izin verilen eli görme talepleri saklı kalmak üzere muck edilebilir. Turnuvada bir oyuncu all-in olduğunda ve tüm bahis aksiyonu tamamlandığında kalan bütün eller hemen açılır; muck yoktur (TDA 2024 Kural 16). River bahsini call eden ve kartlarını elinde tutan ya da masaya açan oyuncu son agresörün elini isteyebilir (TDA 2024 Kural 18). Diğer istekler direktöre; cash oyunları ev kuralına bağlıdır. Kazanandan şüphe ediyorsan iki eli de krupiyeye okut.
+A. Turnuvadaki all-in açma zorunluluğu dışında kaybeden el, izin verilen eli görme talepleri saklı kalmak üzere muck edilebilir. Turnuvada bir oyuncu all-in olduğunda ve tüm bahis aksiyonu tamamlandığında kalan bütün eller hemen açılır; muck yoktur (TDA 2024 Kural 16). Turnuvada river bahsini call eden ve kartlarını elinde tutan ya da masaya açan oyuncu son agresörün elini isteyebilir (TDA 2024 Kural 18). Diğer istekler direktöre; cash oyunları ev kuralına bağlıdır. Kazanandan şüphe ediyorsan iki eli de krupiyeye okut.
 
 **Q. Pokerde slow roll nedir ve neden kötü?**
 

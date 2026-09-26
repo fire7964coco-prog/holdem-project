@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Non-all-in टूर्नामेंट showdown में river का last aggressor पहले दिखाता है; river check through हो तो button के बाएँ पहला active खिलाड़ी। कोई all-in हो और betting पूरी हो जाए तो सभी live हैंड दिखानी होती हैं। अपने कार्ड रखे या table किए river caller को last aggressor की हैंड माँगने का हक़ है। Cash game में house rule लागू होता है।",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-22",
+  updated: "2026-09-26",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -170,7 +170,7 @@ A. non-all-in टूर्नामेंट में river last aggressor call
 
 **Q. क्या showdown पर बिना दिखाए muck कर सकते हैं?**
 
-A. non-all-in showdown में हार पक्की हो तो muck कर सकते हैं, पर authorized hand-viewing request हो सकती है। टूर्नामेंट all-in में betting पूरी होने पर सभी live हैंड table होती हैं। संदेह हो तो dealer पढ़ने से पहले muck न करें।
+A. non-all-in showdown में हार पक्की हो तो muck कर सकते हैं। अपवाद टूर्नामेंट नियम हैं: river पर आख़िरी bet आपने की और call मिला, तो पैसे देकर देखने वाला caller आपकी हैंड माँग सकता है (TDA 2024 Rule 18-B; WSOP cash game में collusion के संदेह के बिना नहीं)। टूर्नामेंट all-in में betting पूरी होने पर सभी live हैंड table होती हैं। संदेह हो तो dealer पढ़ने से पहले muck न करें।
 
 **Q. पोकर में slow rolling क्या है और यह बुरी बात क्यों है?**
 

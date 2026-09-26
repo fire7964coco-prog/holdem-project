@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ya — tangan poker bisa seri. Pot dibagi (split pot) ketika dua pemain atau lebih menunjukkan lima kartu terbaik yang identik saat showdown. Jenis kartu tak pernah memecah seri, dan sisa odd chip diberikan kepada pemain seri pertama di kiri tombol dealer.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-10",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "🃏",
@@ -114,7 +114,7 @@ Board 9♠ 8♦ 7♣ 6♥ 5♠ — sebuah straight jadi. Anda pegang A♠ K♦; 
 
 ## Siapa yang Dapat Chip Ekstra? Aturan Odd Chip
 
-Kadang sebuah pot tak bisa dibagi rata — pot 101 chip antara dua pemain adalah 50 masing-masing dengan satu chip tersisa, dan tak ada setengah-chip. Sebelum chip terakhir itu diberikan ke siapa pun, dealer memecahnya ke denominasi chip terkecil yang dipakai (TDA Rule 20): kalau chip 5 adalah yang terkecil di meja, satu chip 25 menjadi lima chip 5 yang dibagi lagi, dan hanya chip yang tetap tak bisa dibagi yang menjadi "odd chip". Setelah itu, aturan standarnya:
+Kadang sebuah pot tak bisa dibagi rata — pot 101 chip antara dua pemain adalah 50 masing-masing dengan satu chip tersisa, dan tak ada setengah-chip. Sebelum chip terakhir itu diberikan ke siapa pun, dealer memecahnya ke denominasi chip terkecil yang dipakai (TDA 2024 Rule 20): kalau chip 5 adalah yang terkecil di meja, satu chip 25 menjadi lima chip 5 yang dibagi lagi, dan hanya chip yang tetap tak bisa dibagi yang menjadi "odd chip". Setelah itu, aturan standarnya:
 
 > ==Sisa odd chip diberikan kepada pemain seri pertama **di kiri tombol dealer**== (kursi menang paling awal searah jarum jam dari tombol).
 

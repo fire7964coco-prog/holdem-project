@@ -6,11 +6,11 @@ export const POST: Post = {
   title: "BB Langsung Tidak Check pada AK2",
   seoTitle: "BB Tidak Check — C-Bet Poker GTO dalam Pot 3-Bet",
   desc: "Pada A♦K♠2♥, semua 63 kombo BB bet. Lihat bagaimana range preflop dan SPR 4 mengubah c-bet, tanpa menyamakan bet dengan komitmen seluruh stack.",
-  tldr: "Pada A♦K♠2♥ dalam pot 3-bet, BB bet 100%: check 0.0%, tanpa satu pun kombo daripada 63. Dalam tujuh spot sebelumnya, BB check antara 76.2% dengan 99.9%. Perubahan utama ialah BB melakukan 3-bet, jadi ia mengekalkan AA dan KK yang tiada dalam range call BTN. SPR 4.0 pula mengecilkan ruang untuk menangguhkan pembinaan pot; ia tidak bermakna turn dan river tiada.",
+  tldr: "Pada A♦K♠2♥ dalam pot 3-bet, BB bet dengan seluruh range: check dibundarkan kepada 0.0%, dan tiada satu pun daripada 63 kombo check walau 0.1% daripada masa. Dalam tujuh spot sebelumnya, BB check antara 76.2% dengan 99.9%. Perubahan utama ialah BB melakukan 3-bet, jadi ia mengekalkan AA dan KK yang tiada dalam range call BTN. SPR 4.0 pula mengecilkan ruang untuk menangguhkan pembinaan pot; ia tidak bermakna turn dan river tiada.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-15",
-  masterUpdated: "2026-09-02",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   readTime: "12 minit",
   emoji: "🔥",
   image: "/images/gto-3bp-ace-king-oop-ms.webp",
@@ -20,7 +20,7 @@ export const POST: Post = {
   content: `
 Dalam tujuh spot sebelumnya, jawapan BB hampir sentiasa check. Pada [flop 9-8-7](/ms/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-ms.webp"), tempat lead paling ketara sekalipun, BB bet hanya 23.7%. Pada spot lain, kekerapan check antara 88.8% dengan 99.9%.
 
-Di sini keadaannya terbalik: **BB bet seluruh range (julat tangan)** — kesemua 63 kombo, setiap kali.
+Di sini keadaannya terbalik: **BB bet seluruh range (julat tangan)** — kesemua 63 kombo, setiap satunya sekurang-kurangnya 99.9% daripada masa.
 
 Perubahan utama berlaku pada preflop: BB **melakukan 3-bet**, bukannya call. Pot kini 22.5 bb berbanding 5.5 bb. (⚠ Board, iaitu kad komuniti, turut berubah: spot ① menggunakan A♥7♦2♣, manakala ini A♦K♠2♥. Maka ini bukan perbandingan terkawal yang hanya menukar tindakan preflop.) Gabungan itu mengubah cara seluruh flop dimainkan. Semua angka di bawah datang daripada [solver GTO percuma](/ms/solver) HoldemMaster.
 
@@ -54,7 +54,7 @@ Pot 22.5 bb ialah ==11 daripada 3-bet + 11 daripada call + 0.5 small blind yang 
 
 ## Adakah kekerapan check benar-benar 0%?
 
-**0.0%.** Lajur kombo juga menunjukkan 0.0. Tiada satu pun daripada 63 kombo check; ini bukan angka kecil yang tersembunyi oleh pembundaran. Sebaliknya, 57.8% memilih 7.4 bb dan 42.2% memilih 14.9 bb. Dalam ketujuh-tujuh single-raised pot sebelum ini, kecenderungan BB adalah sebaliknya.
+**0.0% pada paparan.** Output mentah masih menyimpan sisa: 41 daripada 63 kombo membawa sedikit check, paling besar K♥K♦ pada 0.09%, dan jumlahnya kurang daripada satu perseratus kombo. Itu hingar solver, bukan strategi, jadi bacalah sebagai sifar. Sebaliknya, 57.8% memilih 7.4 bb dan 42.2% memilih 14.9 bb. Dalam ketujuh-tujuh single-raised pot sebelum ini, kecenderungan BB adalah sebaliknya.
 
 | Tindakan pertama BB | Kekerapan | Kombo |
 |---|---|---|
@@ -130,7 +130,7 @@ Petunjuknya ialah **kiraan kombo bukan nombor bulat**: 26.4 besar dan 36.6 kecil
 
 Underpair membentuk 46.2%, atau 60 kombo: QQ hingga 33, sepuluh pocket pair dengan enam kombo setiap satu. Kumpulan ini sukar menahan dua barrel pada tekstur tersebut.
 
-Satu had perlu diingat: 130 kombo itu menggambarkan **range pertahanan model contoh ini**. Sesetengah lawan sebenar fold pocket pair pertengahan tetapi call dengan A-Q, A-J dan K-Q. Terhadap pemain begitu, bahagian 46.2% itu tidak sama. Kenal pasti apa yang benar-benar dibawa oleh lawan melalui call sebelum menggunakan angka ini dalam permainan.
+Satu had perlu diingat: 130 kombo itu ialah **range call yang diberikan kepada solve ini** — tetapan preflop yang ditulis dalam tree, bukan pertahanan yang dikira oleh solver. Sesetengah lawan sebenar fold pocket pair pertengahan tetapi call dengan A-Q, A-J dan K-Q. Terhadap pemain begitu, bahagian 46.2% itu tidak sama. Kenal pasti apa yang benar-benar dibawa oleh lawan melalui call sebelum menggunakan angka ini dalam permainan.
 
 ## Bagaimanakah BTN menghadapi c-bet satu pertiga pot?
 
@@ -140,7 +140,7 @@ Satu had perlu diingat: 130 kombo itu menggambarkan **range pertahanan model con
 
 Menghadapi 7.4 bb ke dalam 22.5 bb, menghalang keuntungan automatik bagi pure bluff memerlukan rujukan ==22.5 ÷ (22.5 + 7.4) = 75.3%== range — **minimum defense frequency**. Namun tangan BTN yang mengenai A-K-2 hanya berjumlah ==20.8 + 11.5 + 6.9 + 2.3 = 41.5%==. 🪶 Set 2.3% itu ialah **22**, yang mengenai dua, bukannya Ace atau King. Jika mengira hanya tangan yang mengenai Ace atau King, jumlahnya **39.2%**.
 
-⚠ **Andaian MDF tidak menggambarkan spot ini dengan tepat.** MDF membuat **pure bluff ber-equity sifar** tidak mendapat keuntungan automatik, tetapi range bet BB mempunyai **0.0% Tiada made hand**, tanpa satu kombo pun. Jika bet benar-benar tiada pure bluff, tiada bluff sifar-equity yang perlu dineutralkan, jadi arah tafsirannya boleh menuju lebih banyak fold, bukan kewajipan defend lebih luas. ⚠ Dua syarat penting: ① "0% Tiada made hand" bukan "0% bluff" — underpair lemah boleh berfungsi sebagai bluff atau protection bet; ② nod respons BTN tiada dalam solve ini, jadi kekerapan pertahanan optimum sebenar belum disahkan. Maka 41.5% tidak bermakna "wajib tambah pocket pair pertengahan untuk call". Bet kecil memang memberi harga lebih murah kepada 60 kombo itu, tetapi sebab utama saiz kecil ialah **bentuk range** yang diterangkan tadi; harga call itu kesan sampingan.
+⚠ **Andaian MDF berdiri di atas asas yang lemah dalam spot ini.** MDF membuat **pure bluff ber-equity sifar** tidak mendapat keuntungan automatik, tetapi range bet BB mempunyai **0.0% Tiada made hand**, tanpa satu kombo pun. Range tanpa tangan yang belum berpasangan hanya menyisakan sedikit pure bluff seperti yang diandaikan MDF, jadi arah tafsirannya boleh menuju lebih banyak fold, bukan kewajipan defend lebih luas. ⚠ Dua syarat penting: ① "0% Tiada made hand" bukan "0% bluff" — underpair lemah boleh berfungsi sebagai bluff atau protection bet; ② nod respons BTN tiada dalam solve ini, jadi kekerapan pertahanan optimum sebenar belum disahkan. Maka 41.5% tidak bermakna "wajib tambah pocket pair pertengahan untuk call". Sama ada bet kecil benar-benar memberi harga yang cukup kepada 60 kombo itu pun diragui: terhadap seluruh range BB, hanya QQ dan JJ memegang lebih daripada 19.8% yang diminta, manakala 99 hingga 33 berada pada 7.6–9.2%. Walau bagaimanapun, sebab utama saiz kecil ialah **bentuk range** yang diterangkan tadi; harga call itu kesan sampingan.
 
 :::note[⚠ MDF memudahkan bet kepada pure bluff dengan equity sifar. Pada flop, range yang semuanya pair atau lebih baik tidak memenuhi gambaran ringkas itu; namun tangan lemah yang sudah mempunyai pair masih boleh digunakan sebagai bluff. Angka MDF ialah rujukan sahaja. Nilai juga keupayaan tangan bertahan dan merealisasikan equity pada street berikutnya.]:::
 

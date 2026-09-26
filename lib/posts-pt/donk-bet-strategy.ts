@@ -10,8 +10,8 @@ export const POST: Post = {
   tldr: "No 9♥8♥7♣, depois de uma abertura do botão e um call do big blind, o big blind dá check em 76,2% e sai apostando em 23,7%. É o primeiro spot da série em que o lead tem peso real na estratégia. A vantagem de range não mudou de lado: a equity continua em 48,5% contra 51,5%. O que mudou foi a diferença entre os ranges e onde se concentram as mãos fortes de cada jogador.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-15",
-  masterUpdated: "2026-09-02",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   readTime: "9 min",
   emoji: "🎯",
   image: "/images/gto-srp-middle-connected-oop-pt.webp",
@@ -150,7 +150,7 @@ Duas mudanças ajudam a explicar isso.
 
 **Segundo, a força do botão está em categorias vulneráveis.** As únicas duas em que ele tem maior proporção são overpairs (6,4%) e A-high (30,5%), e uma delas nem é uma mão forte pronta. As mãos A-high não formam par aqui. Quando têm draw, o big blind também possui draws, então esse recurso existe dos dois lados e não cria uma vantagem exclusiva. A vulnerabilidade dos overpairs está explicada na próxima seção. Já a diferença a favor do big blind aparece em mãos que **já estão prontas**.
 
-Um lead pode fazer sentido quando, além da força média, **a distribuição das mãos fortes favorece a aposta e o adversário não consegue apostar com confiança**. As duas condições aparecem aqui: o big blind tem mais sequências prontas, e o botão, com 30,5% de A-high, não pode sair disparando com um range amplo. O lead ocupa essa oportunidade de aposta.
+Um lead pode fazer sentido quando, além da força média, **a distribuição das mãos fortes favorece a aposta e o adversário não consegue apostar com confiança**. As duas condições parecem atendidas aqui: o big blind tem mais sequências prontas (24 combos contra 20, enquanto o nuts, J-T, tem 16 de cada lado), e o botão, com 30,5% de A-high, teria dificuldade para sair disparando com um range amplo — uma leitura da composição dos ranges, já que o nó de aposta do próprio botão não está nesta resolução. O lead ocupa essa oportunidade de aposta.
 
 ## Por que os overpairs do botão são vulneráveis?
 

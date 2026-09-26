@@ -28,12 +28,12 @@ export const POST: Post = {
   title: "Nadie hace check en este flop",
   seoTitle: "Nadie hace check en este flop — qué hace el SPR 4 en poker",
   // 153자
-  desc: "En este bote de 3-bet el solver nunca hace check: apuestan los 63 combos. No por la fuerza del rango, sino porque al rival no le quedan ases ni reyes servidos.",
-  tldr: "En A♦K♠2♥, en un bote de 3-bet, la ciega grande apuesta el 100% de las veces. El check es 0.0% — ni un combo de 63. En los siete spots anteriores su opción por defecto era hacer check, entre el 76.2% y el 99.9% del tiempo. Lo que cambió es sobre todo la acción preflop: la ciega grande hizo 3-bet en lugar de pagar, así que es dueña de la parte alta de este flop mientras el botón se deshizo de sus ases y reyes servidos con el 4-bet. Y con un SPR de 4.0 no hay calle posterior a la que aplazar nada.",
+  desc: "En este bote de 3-bet apuestan todos y cada uno de los 63 combos. No por la fuerza del rango, sino porque al rival no le quedan ases ni reyes servidos.",
+  tldr: "En A♦K♠2♥, en un bote de 3-bet, la ciega grande apuesta su rango entero: el check redondea a 0.0%, y ninguno de los 63 combos hace check ni siquiera el 0.1% de las veces. En los siete spots anteriores su opción por defecto era hacer check, entre el 76.2% y el 99.9% del tiempo. Lo que cambió es sobre todo la acción preflop: la ciega grande hizo 3-bet en lugar de pagar, así que es dueña de la parte alta de este flop mientras el botón se deshizo de sus ases y reyes servidos con el 4-bet. Y con un SPR de 4.0 no hay calle posterior a la que aplazar nada.",
   category: "strategy",
   date: "2026-09-02",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-02",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🔥",
@@ -51,7 +51,7 @@ export const POST: Post = {
   content: `
 En los siete spots anteriores a este, la respuesta de la ciega grande era casi siempre hacer check. Incluso en el [flop 9-8-7](/es/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-es.webp"), donde apostar primero importaba más que en ningún otro, solo apostaba el 23.7% de las veces. En todos los demás hacía check entre el 88.8% y el 99.9%.
 
-Aquí hace lo contrario: **la ciega grande apuesta su rango entero** — los 63 combos, todas las veces.
+Aquí hace lo contrario: **la ciega grande apuesta su rango entero** — los 63 combos, cada uno al menos el 99.9% de las veces.
 
 Lo que cambió es sobre todo la acción preflop: la ciega grande hizo **3-bet** en lugar de pagar, así que el bote es de 22.5bb en vez de 5.5bb. (⚠ El board también cambió — el spot ① era A♥7♦2♣ y este es A♦K♠2♥ — así que no es una comparación controlada con el preflop como única variable.) Esa diferencia le da la vuelta al flop entero. Todas las cifras de abajo salen del [solver GTO gratuito](/es/solver) de HoldemMaster.
 
@@ -86,7 +86,7 @@ El bote de 22.5bb es ==11 del 3-bet + 11 del call + 0.5 de ciega pequeña muerta
 
 ## ¿De verdad la frecuencia de check es 0%?
 
-**0.0%.** La columna de combos también marca 0.0, así que ninguno de los 63 combos hace check — no hay nada escondido bajo el redondeo. La apuesta se reparte entre dos tamaños: el 57.8% toma el pequeño de 7.4bb y el 42.2% el grande de 14.9bb. En los siete botes de subida simple anteriores, la opción por defecto de la ciega grande era la contraria en todos y cada uno.
+**0.0% en pantalla.** La salida en bruto sí guarda un residuo — 41 de los 63 combos llevan una pizca de check, el mayor K♥K♦ con 0.09%, y entre todos no llegan a una centésima de combo. Eso es ruido del solver, no una estrategia, así que léelo como cero. La apuesta se reparte entre dos tamaños: el 57.8% toma el pequeño de 7.4bb y el 42.2% el grande de 14.9bb. En los siete botes de subida simple anteriores, la opción por defecto de la ciega grande era la contraria en todos y cada uno.
 
 | Primera acción de la ciega grande | Frecuencia | Combos |
 |---|---|---|
@@ -162,7 +162,7 @@ La pista es que **los conteos de combos no son números enteros**: 26.4 al tama�
 
 Los underpairs son el 46.2%, o 60 combos: de QQ hasta 33, diez parejas de seis combos cada una. No pueden pagar dos barriles en esta textura.
 
-Una advertencia que conviene nombrar: esos 130 combos son lo que parece una defensa **teóricamente correcta**. Los rivales reales foldean los pares servidos medianos y pagan con A-Q, A-J y K-Q en su lugar. Contra ese jugador el 46.2% no está — así que mira con qué pagó de verdad tu rival antes de llevarte estos números a una partida en vivo.
+Una advertencia que conviene nombrar: esos 130 combos son el **rango de call que se le dio a este solve** — un ajuste preflop escrito en el árbol, no una defensa que haya calculado el solver. Los rivales reales foldean los pares servidos medianos y pagan con A-Q, A-J y K-Q en su lugar. Contra ese jugador el 46.2% no está — así que mira con qué pagó de verdad tu rival antes de llevarte estos números a una partida en vivo.
 
 ## ¿Cómo responde el botón a una c-bet de un tercio del bote?
 
@@ -172,7 +172,7 @@ Una advertencia que conviene nombrar: esos 130 combos son lo que parece una defe
 
 Ante 7.4bb a un bote de 22.5bb, negarle beneficio a un farol puro exige aproximadamente el ==22.5 ÷ (22.5 + 7.4) = 75.3%== del rango — la **frecuencia mínima de defensa**. Pero las manos del botón que de verdad conectaron con A-K-2 suman apenas ==20.8 + 11.5 + 6.9 + 2.3 = 41.5%==. 🪶 Fíjate en que ese 2.3% de sets es **22** — ligó el dos, no el as ni el rey. Contando solo las manos que ligaron un as o un rey queda el **39.2%**.
 
-⚠ **En este spot, sin embargo, la premisa detrás de la MDF no se sostiene.** La MDF es la frecuencia que deja indiferente a un **farol puro con equity cero** — y el rango que apuesta de la ciega grande contiene **0.0% de sin jugada, ni un solo combo.** Contra una apuesta que no lleva faroles puros dentro no hay farol al que dejar indiferente, así que la inclinación es a foldear **más**, no menos. ⚠ Dos matices mantienen eso honesto: ① "0% de sin jugada" no es "0% de faroles" — un underpair débil dentro del rango que apuesta puede estar haciendo el trabajo de un farol o de una apuesta de protección; ② el nodo de respuesta del botón no está en este solve, así que la frecuencia de defensa óptima real no se puede confirmar aquí. Así que no leas el 41.5% como "entonces hay que continuar con pares servidos medianos". Que el tamaño pequeño les dé precio a esos 60 combos es cierto por separado, pero la razón del tamaño es la **forma del rango** de la sección anterior; esto es un efecto colateral.
+⚠ **En este spot, sin embargo, la premisa detrás de la MDF pisa terreno débil.** La MDF es la frecuencia que deja indiferente a un **farol puro con equity cero** — y el rango que apuesta de la ciega grande contiene **0.0% de sin jugada, ni un solo combo.** Un rango sin manos sin pareja deja poco del farol puro que la MDF supone, así que la inclinación es a foldear **más**, no menos. ⚠ Dos matices mantienen eso honesto: ① "0% de sin jugada" no es "0% de faroles" — un underpair débil dentro del rango que apuesta puede estar haciendo el trabajo de un farol o de una apuesta de protección; ② el nodo de respuesta del botón no está en este solve, así que la frecuencia de defensa óptima real no se puede confirmar aquí. Así que no leas el 41.5% como "entonces hay que continuar con pares servidos medianos". Que el tamaño pequeño siquiera les dé precio a esos 60 combos es dudoso: contra todo el rango de la ciega grande solo QQ y JJ superan el 19.8% que pide, mientras que de 99 a 33 se quedan en 7.6–9.2%. En cualquier caso, la razón del tamaño es la **forma del rango** de la sección anterior; esto es un efecto colateral.
 
 :::note[⚠ La MDF simplifica la apuesta a un farol puro. Solo significa algo cuando el rival de verdad tiene faroles — donde el rango que apuesta es pareja o mejor de arriba abajo, como aquí, el supuesto del farol puro se rompe y la cifra es apenas una guía aproximada. En la práctica pesa también qué tan bien aguanta una mano en las calles siguientes.]:::
 
@@ -222,7 +222,7 @@ A. Es la sigla de stack-to-pot ratio. Lo que mide en la práctica es cuántas ap
 
 **Q. ¿Cuántas apuestas puedes hacer con un SPR de 4?**
 
-A. Tres, y la tercera es all-in. Apostando el 66% del bote en cada calle sale 14.9 → 34.5 → 39.6bb, exactamente el stack de 89bb. Párate después de dos y llevas 49.4bb metidas — poco más de la mitad. Elige un tamaño mayor y llegas en dos — que es justo el punto: el tamaño que eliges decide cuántas decisiones te quedan.
+A. Tres, y la tercera es all-in. Dos tercios del bote en el flop y en el turn dan 14.9 → 34.5bb, y los 39.6bb que quedan son cerca de un tercio del bote del river — así que la tercera apuesta es exactamente el resto del stack de 89bb. Párate después de dos y llevas 49.4bb metidas — poco más de la mitad. Elige un tamaño mayor y llegas en dos — que es justo el punto: el tamaño que eliges decide cuántas decisiones te quedan.
 
 **Q. ¿El que hace 3-bet debería hacer siempre c-bet?**
 

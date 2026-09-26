@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "strategy",
   date: "2026-09-15",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-02",
+  masterUpdated: "2026-09-26",
   readTime: "10 mnt",
   emoji: "🎲",
   image: "/images/gto-3bp-low-oop-id.webp",
@@ -121,7 +121,7 @@ Sembilan combo BTN berasal dari 88, 55, dan 22, masing-masing tiga. Satu kartu d
 
 ## Mengapa caller merealisasikan lebih banyak equity daripada pada dua contoh sebelumnya?
 
-**Realisasi equity BTN naik menjadi 90,3% dalam struktur pot 3-bet yang sama.** Pada dua contoh sebelumnya, angkanya 78,7% dan 75,1%. ⚠ Perubahan ini terkait dengan bagian BB: kedua EV berjumlah sebesar pot, sehingga kenaikan bagian satu pemain berarti penurunan bagian lawannya. EQR BB turun dari 117,8% menjadi 106,9%. Keduanya menggambarkan pembagian hasil yang sama dari dua sisi.
+**Realisasi equity BTN naik menjadi 90,3% dalam struktur pot 3-bet yang sama.** Pada dua contoh sebelumnya, angkanya 78,7% dan 75,1%. ⚠ Perubahan ini terkait dengan bagian BB: kedua EV berjumlah sebesar pot, sehingga **jika equity tetap**, kenaikan realisasi satu pemain berarti penurunan realisasi lawannya. Antarboard, equity juga bergerak, jadi hubungan itu tidak otomatis. Namun di sini memang itu yang terjadi: EQR BB turun dari 117,8% menjadi 106,9%. Setidaknya pada contoh ini, keduanya menggambarkan pembagian hasil yang sama dari dua sisi.
 
 | Metrik | BB (OOP) | BTN (IP) |
 |---|---|---|

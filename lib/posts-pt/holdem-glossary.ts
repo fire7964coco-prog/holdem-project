@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "glossary",
   date: "2026-07-05",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-22",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "📖",
@@ -43,9 +43,9 @@ Se você só for esclarecer uma dúzia de termos, que sejam estes — são os qu
 | A galera confunde | A diferença |
 |:---|:---|
 | **Check vs Call** | Um check não arrisca **nenhuma ficha** (só quando não falta nenhuma quantia para você igualar a aposta); um call **iguala** uma aposta que já existe. |
-| **Blind vs Ante** | Blinds são apostas forçadas **posicionais** (SB/BB); o ante alimenta o pote e vem de **todo mundo** (hoje, em torneios, geralmente via big blind ante). |
+| **Blind vs Ante** | Blinds são apostas forçadas **posicionais** (SB/BB); o ante alimenta o pote — tradicionalmente vindo de **todo mundo**, embora hoje a maioria dos torneios use um big blind ante pago por um só assento. |
 | **Set vs Trips** | Ambos são uma trinca — um **set** usa um par de bolso; **trips** usa uma carta da mão + um par no board. |
-| **Cooler vs Bad Beat** | Um [cooler](/pt/blog/holdem-cooler) = uma mão forte demais pra largar esbarra numa maior (no sentido estrito, você entrou atrás); um [bad beat](/pt/blog/holdem-bad-beat) = você estava na frente e foi ultrapassado. |
+| **Cooler vs Bad Beat** | Um [cooler](/pt/blog/holdem-cooler) = uma mão forte demais pra largar esbarra numa maior (no sentido estrito, você entrou atrás); um [bad beat](/pt/blog/holdem-bad-beat) = você entrou como grande favorito e foi ultrapassado. |
 | **Value bet vs Bluff** | Uma value bet quer um **call de mão pior**; um bluff quer que **mãos melhores desistam**. |
 | **Pot odds vs Implied odds** | [Pot odds](/pt/blog/holdem-pot-odds) contam só as fichas que **já estão no pote agora**; implied odds somam o que você vai **ganhar depois**. |
 | **VPIP vs PFR** | VPIP = com que frequência você **joga**; PFR = com que frequência você **aumenta**. PFR nunca pode passar o VPIP. |
@@ -81,7 +81,7 @@ Tudo o que você pode fazer fisicamente na sua vez. Se você é totalmente novat
 | **Bluff / Semi-bluff** | Um bluff aposta uma mão fraca pra fazer as melhores largarem; um semi-bluff faz isso com um draw que ainda pode melhorar. |
 | **Check-raise** | Dar check e depois aumentar depois que o oponente aposta — uma linha forte e enganosa (permitida nas salas modernas). |
 | **Min-raise** | O menor aumento legal. |
-| **String bet** | Voltar pra buscar mais fichas sem anunciar — só vale o que saiu no primeiro movimento (na prática, quase sempre vira call). Declarar "raise" em voz alta antes protege a jogada. |
+| **String bet** | Voltar pra buscar mais fichas sem anunciar — só vale o que saiu no primeiro movimento (na prática, quase sempre vira call). Declarar antes o valor total do raise protege a jogada; alguns regulamentos (WSOP) aceitam só "raise", enquanto as regras da TDA pedem o valor declarado ou as fichas empurradas num movimento só. |
 | **Jam / Shove** | Ir de all-in. |
 | **Snap call** | Um call instantâneo, sem hesitação. |
 | **Hero call** | Pagar com uma mão fraca porque você leu que o oponente está blefando. |
@@ -175,7 +175,7 @@ O zoológico de apelidos pras pessoas do outro lado do feltro. A análise comple
 | **Calling station** | Um jogador passivo que paga demais e raramente larga ou aumenta. |
 | **Reg** | Um "regular" — um jogador habitual, em geral competente, numa stake. |
 | **Grinder** | Um jogador que lucra por volume constante e disciplina. |
-| **LAG / TAG** | Loose-aggressive / tight-aggressive — dois estilos agressivos vencedores. |
+| **LAG / TAG** | Loose-aggressive / tight-aggressive — dois estilos agressivos sobre os quais a maioria dos jogadores vencedores se apoia (o estilo sozinho não faz ninguém vencer). |
 | **Maniac** | Um jogador hiperagressivo que aumenta e blefa sem controle. |
 | **Mark** | O jogador fraco de quem a mesa está tentando ganhar dinheiro. |
 

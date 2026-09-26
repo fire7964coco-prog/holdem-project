@@ -186,7 +186,7 @@ Ikiwa unacheza cash game ndogo ya nyumbani, chagua buy-in ambayo kila mtu yuko t
 
 ==r:Usianze na dau linalowafanya watu wawe na wasiwasi.== Waanzilishi wenye wasiwasi hawajifunzi haraka zaidi. Wao hu-fold mno tu, hu-call kwa hisia mno, au hubishana kuhusu sheria.
 
-Kumbuka kwamba buy-in ya **tournament** inafanya kazi tofauti na cash game: unalipa ada moja iliyowekwa, unapata stack ya chipsi zisizoweza kubadilishwa kuwa pesa, na unacheza hadi mchezaji mmoja awe nazo zote. Ikiwa huna uhakika unataka ipi, soma kwanza kuhusu cash game dhidi ya tournament.
+Kumbuka kwamba buy-in ya **tournament** inafanya kazi tofauti na cash game: unalipa ada iliyowekwa, unapata stack ya chipsi zisizoweza kubadilishwa kuwa pesa, na unacheza hadi mchezaji mmoja awe nazo zote (kwenye mashindano ya re-entry unaweza kununua kuingia tena baada ya kutolewa). Ikiwa huna uhakika unataka ipi, soma kwanza kuhusu cash game dhidi ya tournament.
 
 Kwa mazoezi ya mtandaoni, tumia meza za bure hadi uweze kueleza mpangilio wa zamu bila kufikiri. Kisha panda taratibu.
 
@@ -194,7 +194,7 @@ Kwa mazoezi ya mtandaoni, tumia meza za bure hadi uweze kueleza mpangilio wa zam
 
 ## No-Limit, Limit, au Pot-Limit? Unacheza Texas Hold'em Ipi?
 
-Watu wanaposema "Texas Hold'em," karibu kila mara wanamaanisha **No-Limit Hold'em (NLHE)** — muundo unaotumika katika WSOP Main Event na karibu kila mchezo wa nyumbani. Kugawa karata, blinds, na madaraja ya mikono ni sawa kabisa katika miundo yote mitatu. Kinachobadilika pekee ni **kiasi gani unaruhusiwa kuweka dau.**
+Watu wanaposema "Texas Hold'em," karibu kila mara wanamaanisha **No-Limit Hold'em (NLHE)** — muundo unaotumika katika WSOP Main Event na karibu kila mchezo wa nyumbani. Kugawa karata na madaraja ya mikono ni sawa kabisa katika miundo yote mitatu. Kinachobadilika hasa ni **kiasi gani unaruhusiwa kuweka dau** — na Fixed-Limit kwa kawaida pia huweka kikomo cha idadi ya raise kwa kila raundi (kwenye WSOP, bet moja na raise nne).
 
 | Muundo | Unaweza kuweka dau kiasi gani? | Utakapouona |
 |--------|-----------------------|---------------------|
@@ -299,7 +299,7 @@ Pot odds zako ni **$120 kwa $20**, au **6 kwa 1**. Hilo linamaanisha unahitaji k
 
 ### Kanuni ya 2 na 4 — njia ya mkato ya papo hapo ya uwezekano
 
-Unapokuwa na mkono wa draw (mfano, karata nne za flush), hesabu **outs** zako — karata zitakazokamilisha mkono wako.
+Unapokuwa na mkono wa draw (mfano, karata nne za flush), hesabu **outs** zako — karata zitakazogeuza draw yako kuwa mkono unaoelekea kushinda.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

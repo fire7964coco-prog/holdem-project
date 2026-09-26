@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Straddle adalah taruhan blind opsional — biasanya dua kali big blind — yang dipasang sebelum kartu dibagi. Ia membeli aksi terakhir di preflop bagi si straddler dan opsi untuk raise, menggandakan taruhan. Dalam hampir semua kasus ini adalah play -EV, dan dalam praktiknya hanya ada di cash game sesuai aturan rumah.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-09-24",
-  masterUpdated: "2026-09-22",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 mnt",
   emoji: "💰",
@@ -79,7 +79,7 @@ Tak semua straddle sama — dan perbedaannya semuanya soal **di mana aksi dimula
 | **Mississippi** | Kursi mana pun (sering button/CO) | Kiri si straddler | Preflop — postflop hanya dari button* | Ya |
 | **Button** | Button | Small blind | Pre + postflop | Ya |
 | **Sleeper** | Kursi non-UTG | Normal (UTG) | Tidak | Aturan rumah |
-| **Re-straddle** | Kiri seorang straddler | Kiri si re-straddler | Preflop saja | Ya |
+| **Re-straddle** | Kiri seorang straddler (sebagian ruangan mengizinkan kursi mana pun) | Kiri si re-straddler | Preflop saja | Ya |
 
 </div>
 
@@ -124,7 +124,7 @@ Jawaban jujurnya, dan yang disepakati para solver: **untuk hampir semua orang, t
 
 :::card
 🎯 | Anda mengeluarkan uang secara buta | Uang masuk sebelum Anda melihat kartu, jadi Anda memainkan pot yang menggembung tanpa informasi — kerugian yang sama yang membuat blind menjadi kursi terburuk di meja. Ia juga memangkas kedalaman efektif Anda jadi separuh: di $1/$2 sebuah stack $200 setara 100 big blind, tapi dengan straddle $4 aktif, stack yang sama bermain seperti 50
-📉 | Ia mengecilkan keunggulan posisi Anda | Menggandakan blind menggelembungkan pot awal dan menyisakan lebih banyak pemain yang masih harus beraksi saat Anda berada di kursi steal terbaik. Berlawanan dengan intuisi, solver merespons dengan membuka **lebih sedikit** tangan di pot yang di-straddle — sekitar 15–20% lebih sedikit di button, menurut [simulasi pot straddle GTO Wizard](https://blog.gtowizard.com/preflop-strategy-in-straddled-pots/) — bukan lebih banyak
+📉 | Ia mengecilkan keunggulan posisi Anda | Menggandakan blind menggelembungkan pot awal dan menyisakan lebih banyak pemain yang masih harus beraksi saat Anda berada di kursi steal terbaik. Berlawanan dengan intuisi, solver merespons dengan membuka **lebih sedikit** tangan dari button di pot yang di-straddle — sekitar 15–20% lebih sedikit, menurut [simulasi pot straddle GTO Wizard](https://blog.gtowizard.com/preflop-strategy-in-straddled-pots/) — bukan lebih banyak
 💸 | Ia bisa menaikkan pot rake | Pada pot yang dikenai [rake](/id/blog/holdem-rake), pot lebih besar bisa berarti biaya lebih tinggi sampai cap tercapai. Kenaikan ini tidak berlaku pada pot preflop dengan aturan no flop, no drop, game time-charge, atau pot yang sudah mencapai cap
 :::
 
@@ -179,7 +179,7 @@ A. Hampir tak pernah. Turnamen bergantung pada struktur blind tetap yang harus i
 
 **Q. Apakah straddle profit? Perlukah Anda straddle?**
 
-A. Untuk sebagian besar pemain, tidak — ini play -EV. Anda mengeluarkan uang secara buta, Anda mengecilkan keunggulan posisi Anda (solver membuka *lebih sedikit* tangan di pot yang di-straddle, bukan lebih banyak), dan Anda bisa membayar lebih banyak rake. Ia hanya bisa dibela di meja loose-passive, di game di mana semua pemain bergiliran straddle dengan ketentuan yang sama, atau murni untuk bersenang-senang — hampir tak pernah sebagai cara menghasilkan uang. Jika semua pemain mendapat giliran yang sama, GTO Wizard mencatat bahwa taruhan yang lebih tinggi ini bisa menguntungkan pemain terbaik di meja.
+A. Untuk sebagian besar pemain, tidak — ini play -EV. Anda mengeluarkan uang secara buta, Anda mengecilkan keunggulan posisi Anda (solver membuka *lebih sedikit* tangan dari button di pot yang di-straddle, bukan lebih banyak), dan Anda bisa membayar lebih banyak rake. Ia hanya bisa dibela di meja loose-passive, di game di mana semua pemain bergiliran straddle dengan ketentuan yang sama, atau murni untuk bersenang-senang — hampir tak pernah sebagai cara menghasilkan uang. Jika semua pemain mendapat giliran yang sama, GTO Wizard mencatat bahwa taruhan yang lebih tinggi ini bisa menguntungkan pemain terbaik di meja.
 
 ---
 

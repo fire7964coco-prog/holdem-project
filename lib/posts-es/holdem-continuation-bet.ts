@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "strategy",
   date: "2026-07-06",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-11",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "15 min",
   emoji: "🔥",
@@ -38,7 +38,7 @@ Pasar | A menudo la mejor jugada, no debilidad
 
 **Una apuesta de continuación es una apuesta hecha en el flop por el jugador que fue el agresor antes del flop** — el último en subir. "Continúas" contando la historia de fuerza que empezaste en el preflop. Y algo clave: ==no necesitas haber ligado el flop para cbetear==; una gran parte de las buenas c-bets se hacen con manos que fallaron por completo.
 
-La razón de que funcione es una simple estadística: **una mano falla el flop — no hace ni pareja ni nada mejor — cerca de dos tercios de las veces.** Así que cuando apuestas, tu rival normalmente tampoco tiene nada, y se retira. No apuestas porque seas fuerte; apuestas porque *él probablemente es débil* y tú fuiste quien reclamó la iniciativa.
+La razón de que funcione es una simple estadística: **dos cartas propias sin pareja no emparejan en el flop cerca de dos tercios de las veces (67.6%).** Así que cuando apuestas, tu rival a menudo también ha fallado — y muchas de esas manos se retiran. No apuestas porque seas fuerte; apuestas porque *él probablemente es débil* y tú fuiste quien reclamó la iniciativa.
 
 Una vez conoces la c-bet del flop, el resto de la escalera de "barrels" viene solo:
 
@@ -87,7 +87,7 @@ Dos ideas relacionadas hacen todo el trabajo aquí:
 
 La parte sutil: puedes tener una sin la otra. En A‑8‑3 tienes muchos más top pairs (ventaja de rango) pero casi nadie tiene un set, así que **apuestas a menudo pero pequeño**. En un board donde tienes muchos más sets y sobrepares, **apuestas grande**. Ten claras estas dos palancas y el tamaño de la c-bet deja de ser una adivinanza.
 
-Y la ventaja de rango no es toda la historia — súmale la posición encima y el efecto se vuelve extremo. En A-7-2 arcoíris un solver hace que quien pagó pase el ==98.2%== de su rango, top pair incluido, aunque la equity esté prácticamente igualada. El desglose completo está en [top pair, y aun así pasa](/es/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-en.webp").
+Y la ventaja de rango no es toda la historia — súmale la posición encima y el efecto se vuelve extremo. En A-7-2 arcoíris un solver hace que quien pagó pase el ==98.2%== de su rango, top pair incluido — su rango solo va por detrás en equity por 45.1% a 54.9%, pero estar fuera de posición convierte esa diferencia modesta en un check casi total. El desglose completo está en [top pair, y aun así pasa](/es/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-en.webp").
 
 ---
 
@@ -101,7 +101,7 @@ No hay un único porcentaje "correcto" de c-bet — quien te dé un solo número
 |:---|:---:|:---|
 | **En posición, mano a mano, board seco** | **70–100%** (pequeño) | El clásico "range bet" — apuesta casi todo, mínimo |
 | **En posición, mano a mano, board húmedo** | **~50–60%** | Más polarizado — valor y proyectos apuestan, el aire pasa |
-| **Fuera de posición, mano a mano (bote de subida simple, tú eras el agresor)** | **~30–45%** | Pasa mucho más para proteger tu rango de check. Como *3-bettor* fuera de posición se invierte — más del 97% en los dos boards que resolvimos, casi todo con el tamaño de dos tercios del bote (el tamaño de un tercio quedó por debajo del 1%), mira el [juego posicional](/es/blog/holdem-position-play) |
+| **Fuera de posición, mano a mano (bote de subida simple, tú eras el agresor)** | **~30–45%** | Pasa mucho más para proteger tu rango de check. Como *3-bettor* fuera de posición se invierte: más del 97% en los tres boards que resolvimos, casi todo con dos tercios del bote en Q♥T♥7♠ y 8♦5♣2♠, pero sobre todo con un tercio del bote en A♦K♠2♥ (57.8%); mira el [juego posicional](/es/blog/holdem-position-play) |
 | **Multiway (2 rivales)** | **~50% o menos** | Alguien seguramente ligó — aprieta |
 | **Multiway (3+ rivales)** | **Solo manos fuertes y buenos proyectos** | El fold equity básicamente desapareció |
 
@@ -154,7 +154,7 @@ Pasar el flop no es el final de la mano. Una **c-bet retrasada** — pasar el fl
 
 - El **flop favoreció a tu rival** (un board bajo y conectado), así que apostar era malo — pero el **turn cambia el panorama** (una sobrecarta, o una carta que sube tu equity).
 - **Pasaste una mano decente** en posición y ahora quieres apostar una calle por valor ya que el board es más seguro.
-- Quieres **atrapar floats**: los jugadores que planeaban hacer bluff-raise a tu c-bet del flop no tienen apuesta que atacar, y luego se enfrentan a tu apuesta del turn.
+- Quieres **quitarles el raise del flop**: los jugadores que planeaban hacer bluff-raise a tu c-bet del flop no tienen apuesta que atacar, y luego se enfrentan a tu apuesta del turn.
 
 Retrasar convierte un sitio donde una c-bet automática habría sangrado fichas en una apuesta controlada e informada una calle después.
 
@@ -164,7 +164,7 @@ Retrasar convierte un sitio donde una c-bet automática habría sangrado fichas 
 
 Hagamos el "no" explícito, porque es donde se ahorra el dinero:
 
-- **El board machacó el rango de tu rival.** Un flop 7‑6‑5 o 9‑8‑7 liga con las manos que pagan una subida mucho más fuerte de lo que liga con las tuyas. Apostar aquí solo dona fichas — pasa.
+- **El board machacó el rango de tu rival.** Un flop 7‑6‑5 o 9‑8‑7 liga con las manos que pagan una subida mucho más fuerte de lo que liga con las tuyas. Apostar aquí con la mayor parte de tu rango solo dona fichas — pasa mucho más a menudo, y cuando apuestes, hazlo grande y selectivo.
 - **Estás fuera de posición en un board dinámico** con una mano marginal. Actuando primero sin información, mantén el bote pequeño y pasa.
 - **Estás multiway con aire.** Cubierto arriba — sin fold equity, no hay apuesta.
 - **Tu mano quiere proteger un rango de check.** A veces pasas una mano fuerte a propósito para que tus checks no sean automáticamente débiles.
@@ -195,7 +195,7 @@ Misma subida preflop, flops opuestos, jugadas correctas opuestas. Esa es toda la
 | **Apostar grande con un rango amplio** | Los rangos amplios quieren tamaño pequeño, no grande | Pequeño en seco, grande solo cuando polarizas |
 | **Cbetear de farol en multiway** | El fold equity se derrumba con más jugadores | Solo valor y proyectos contra 2+ |
 | **Cbetear OOP demasiado a menudo** | No puedes realizar equity actuando primero | Pasa más, construye un rango de check |
-| **Apostar contra un board que les ligó** | 7‑6‑5 machacó su rango, no el tuyo | Pasa y ríndete |
+| **Apostar contra un board que les ligó** | 7‑6‑5 machacó su rango, no el tuyo | Pasa más; cuando apuestes, grande y selectivo |
 | **Barrel de "uno y listo"** | C-bet en el flop, siempre te rindes en el turn = fácil de flotar | Ten un plan de turn antes de disparar |
 | **Triple barrel sin equity** | Farolear un stack sin outs ni bloqueadores | Farolea con equity de respaldo o buenos bloqueadores |
 
@@ -246,7 +246,7 @@ A. Una c-bet retrasada es cuando el agresor del preflop pasa el flop y luego apu
 
 **Q. ¿Cuándo NO deberías cbetear?**
 
-A. No cbetees cuando el board machacó el rango de tu rival (boards bajos y conectados), cuando estás fuera de posición con una mano marginal en un board dinámico, cuando estás multiway con aire, o cuando tu mano prefiere proteger un rango de check. Pasar en estos sitios no es debilidad — ahorra fichas y hace tus apuestas futuras más creíbles.
+A. No cbetees por defecto cuando el board machacó el rango de tu rival (boards bajos y conectados — pasa más, y cuando apuestes, grande y selectivo), cuando estás fuera de posición con una mano marginal en un board dinámico, cuando estás multiway con aire, o cuando tu mano prefiere proteger un rango de check. Pasar en estos sitios no es debilidad — ahorra fichas y hace tus apuestas futuras más creíbles.
 
 **Q. ¿Es la c-bet un farol?**
 
@@ -266,7 +266,7 @@ A. Una banda sana y equilibrada de c-bet en el flop está cerca del 55–70% agr
 
 **Q. ¿Cuándo NO hacer c-bet?**
 
-A. No cbetees cuando el board machacó el rango de tu rival — boards bajos y conectados como 7‑6‑5 o 9‑8‑7 ligan con las manos que pagan una subida mucho más fuerte que con las tuyas. Tampoco cuando estás multiway con aire: cada rival extra derrumba tu fold equity, así que en boards húmedos con varios jugadores solo apuestas valor y buenos proyectos. Añade a la lista estar fuera de posición con una mano marginal en un board dinámico. En todos estos casos pasar ahorra fichas y hace tus apuestas futuras más creíbles.
+A. No cbetees por defecto cuando el board machacó el rango de tu rival — boards bajos y conectados como 7‑6‑5 o 9‑8‑7 ligan con las manos que pagan una subida mucho más fuerte que con las tuyas; ahí pasa más, y cuando apuestes, hazlo grande y selectivo. Tampoco cuando estás multiway con aire: cada rival extra derrumba tu fold equity, así que en boards húmedos con varios jugadores solo apuestas valor y buenos proyectos. Añade a la lista estar fuera de posición con una mano marginal en un board dinámico. En todos estos casos pasar ahorra fichas y hace tus apuestas futuras más creíbles.
 
 **Q. ¿Qué es un buen porcentaje de c-bet en un HUD de póker?**
 
@@ -278,7 +278,7 @@ A. Alrededor del 55–70% para c-bet en el flop es una banda sana y equilibrada.
 
 1. **Una c-bet es una apuesta en el flop del agresor del preflop** — y funciona porque las manos fallan el flop cerca de dos tercios de las veces.
 2. **El board decide.** Apuesta los boards altos y secos que favorecen a tu rango; pasa los boards bajos y conectados que favorecen al de tu rival.
-3. **La ventaja de rango marca la frecuencia; la ventaja de nuts marca el tamaño.** Apuesta a menudo en los boards que dominas; apuesta grande solo cuando tienes más de las nuts.
+3. **La ventaja de rango marca la frecuencia; la ventaja de nuts marca el tamaño.** Apuesta a menudo en los boards que dominas; apuesta grande cuando tienes más de las nuts o necesitas cobrarles a los proyectos en boards húmedos.
 4. **Pequeño (⅓) en seco, grande (⅔+) en húmedo.** Cbetea menos fuera de posición cuando eras el agresor de un bote de subida simple (como 3-bettor fuera de posición se invierte: casi siempre), y mucho menos multiway.
 5. **Pasar es un arma.** Los mejores jugadores pasan a menudo y a propósito — la c-bet es un bisturí, no un martillo.
 

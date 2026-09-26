@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "glossary",
   date: "2026-07-05",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-22",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 Min.",
   emoji: "📖",
@@ -44,7 +44,7 @@ Poker hat sein eigenes Vokabular, und es zu kennen bringt zwei Dinge: Es verhind
 | Diese werden verwechselt | Der Unterschied |
 |:---|:---|
 | **Check vs. Call** | Ein Check riskiert **keine Chips** – möglich nur, wenn du keinen Einsatz mehr ausgleichen musst; ein Call **gleicht** eine bestehende Bet aus. |
-| **Blind vs. Ante** | Blinds sind **positionale** Pflichteinsätze (SB/BB); Antes füttern den Pot und kommen von **allen** (im modernen Turnier meist als Big Blind Ante). |
+| **Blind vs. Ante** | Blinds sind **positionale** Pflichteinsätze (SB/BB); Antes füttern den Pot – traditionell von **allen**, die meisten Turniere nutzen heute aber eine Big Blind Ante, die ein einziger Platz zahlt. |
 | **Set vs. Trips** | Beide sind ein Drilling – ein **Set** nutzt ein Pocket Pair; **Trips** nutzt eine Hole Card + ein Paar auf dem Board. |
 | **Cooler vs. Bad Beat** | Ein [Cooler](/de/blog/holdem-cooler) = eine Hand, zu stark zum Folden, trifft auf eine größere (im engeren Sinn: du lagst schon beim Reingehen hinten); ein [Bad Beat](/de/blog/holdem-bad-beat) = du lagst beim Reingehen als großer Favorit vorn und wurdest outgedrawt. |
 | **Value Bet vs. Bluff** | Eine Value Bet will einen **Call von einer schwächeren Hand**; ein Bluff will, dass **bessere Hände folden**. |
@@ -85,7 +85,7 @@ Die genaue Reihenfolge, in der sie am Tisch fallen, steht in der [Reihenfolge de
 | **Bluff / Semi-Bluff** | Ein Bluff bettet eine schwache Hand, um bessere zum Folden zu bewegen; ein Semi-Bluff tut das mit einem Draw, der sich noch verbessern kann. |
 | **Check-Raise** | Checken, dann raisen, nachdem ein Gegner bettet – eine starke, täuschende Linie (in modernen Cardrooms erlaubt). |
 | **Min-Raise** | Der kleinste legale Raise. |
-| **String Bet** | Ein nicht angesagter Einsatz in mehreren Bewegungen. Es gilt nur der Betrag der **ersten Bewegung** – meist ist das ein Call. Vermeidbar, indem du vorher „Raise“ ansagst. |
+| **String Bet** | Ein nicht angesagter Einsatz in mehreren Bewegungen. Es gilt nur der Betrag der **ersten Bewegung** – meist ist das ein Call. Vermeidbar, indem du vorher den vollen Raise-Betrag ansagst; manche Regelwerke (WSOP) akzeptieren ein bloßes „Raise“, die TDA-Regeln wollen den Betrag angesagt oder in einer Bewegung reingeschoben sehen. |
 | **Jam / Shove** | All-in gehen. |
 | **Snap Call** | Ein sofortiger Call ohne jedes Zögern. |
 | **Hero Call** | Mit einer schwachen Hand callen, weil du den Gegner als Bluffer gelesen hast. |
@@ -184,7 +184,7 @@ Die vollständige Aufschlüsselung findest du im [Fish-Guide](/de/blog/holdem-fi
 | **Calling Station** | Ein passiver Spieler, der viel zu oft callt und selten foldet oder raist. |
 | **Reg** | Ein „Regular“ – ein gewohnheitsmäßiger, meist kompetenter Spieler an einem Stake. |
 | **Grinder** | Ein Spieler, der durch stetiges Volumen und Disziplin Profit macht. |
-| **LAG / TAG** | Loose-Aggressive / Tight-Aggressive – zwei gewinnende aggressive Stile. |
+| **LAG / TAG** | Loose-Aggressive / Tight-Aggressive – zwei aggressive Stile, auf denen die meisten Gewinner aufbauen (der Stil allein macht noch niemanden zum Gewinner). |
 | **Maniac** | Ein hyperaggressiver Spieler, der wild raist und blufft. |
 | **Mark** | Der schwache Spieler, dem der Tisch Geld abnehmen will. |
 

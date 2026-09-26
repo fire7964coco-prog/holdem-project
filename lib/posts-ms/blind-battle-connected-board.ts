@@ -10,7 +10,7 @@ export const POST: Post = {
   category: "strategy",
   date: "2026-09-15",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-02",
+  masterUpdated: "2026-09-26",
   readTime: "10 minit",
   emoji: "🪜",
   image: "/images/gto-sb-connected-oop-ms.webp",
@@ -100,7 +100,7 @@ Artikel sebelumnya menyebut bahawa check kembali menjadi pilihan apabila board s
 
 ## Mengapa board ini memihak kepada BB?
 
-**BB menyimpan beberapa kombinasi tambahan yang bersambung dengan 567 dan tiada pada SB.** Bukan semua tangan yang mengenai board hanya milik BB; kedua-duanya mempunyai straight, set dan two pair. Namun daripada lima kelas teratas berikut, SB hanya mempunyai lebih banyak overpair.
+**Range call BB menambah tangan yang tidak pernah dibuka oleh SB tetapi mengenai 765 — antaranya T7o, 97o, 87o, 76o, 74s dan 43s.** Bukan semua tangan yang mengenai board hanya milik BB; kedua-duanya mempunyai straight, set dan two pair. Namun daripada lima kelas teratas berikut, SB hanya mempunyai lebih banyak overpair.
 
 ![Perbandingan kelas tangan SB dan BB pada flop 7-6-5 two-tone](/images/gto-sb-connected-ranges-ms.webp "765 blind lawan blind · top pair 6.8% berbanding 11.2% memihak kepada BB")
 
@@ -182,7 +182,7 @@ Tiga jenis tangan mempunyai jalur bet yang lebih jelas. Angka berikut ialah pura
 
 Bet 9.6% mencampurkan sedikit value dengan draw terpilih. 88 mendahului purata kelas kerana satu tangan melakukan dua tugas. ⚠ Namun itu bukan kriteria tunggal. **Tiga contoh kombo individu** menunjukkan sebab berbeza: Q♠4♠ pada 54.7% ialah draw, A♣7♣ pada 54.4% ialah value nipis dengan blocker, dan T♣9♣ pada 52.2% ialah gutshot. Ini bukan tiga kombo teratas yang eksklusif, kerana Q♥4♥ turut terikat pada 54.7%. Kombo 88 dengan bet tertinggi, 8♦8♣, lebih rendah pada 47.1%.
 
-**Check 90.4% tidak bermakna menyerah.** Banyak value nipis sukar mendapat keuntungan daripada lead apabila terdedah kepada raise. ⚠ Pot 6 bb, stack 97 bb dan SPR 16.2 tidak menerangkan perubahan kekerapan, kerana ketiga-tiganya **sama** pada [⑪ KT6](/ms/blog/blind-battle-cbet "thumb:/images/gto-sb-king-mid-oop-ms.webp") dan [AA6](/ms/blog/ace-paired-board-strategy "thumb:/images/gto-sb-paired-ace-oop-ms.webp"), tempat SB bet 67.4% dan 80.1%. Tiga kad board yang mengubah keputusan.
+**Check 90.4% tidak bermakna menyerah.** Bagi value nipis seperti A♣7♣ dan K♣7♣, bet dan check berbeza dalam lingkungan 0.03 bb sahaja, jadi check hampir tidak mengorbankan apa-apa. ⚠ Pot 6 bb, stack 97 bb dan SPR 16.2 tidak menerangkan perubahan kekerapan, kerana ketiga-tiganya **sama** pada [⑪ KT6](/ms/blog/blind-battle-cbet "thumb:/images/gto-sb-king-mid-oop-ms.webp") dan [AA6](/ms/blog/ace-paired-board-strategy "thumb:/images/gto-sb-paired-ace-oop-ms.webp"), tempat SB bet 67.4% dan 80.1%. Tiga kad board yang mengubah keputusan.
 
 :::note[⚠ Contoh ini hanya menawarkan satu saiz, satu pertiga pot. Menambah saiz besar boleh mengubah 9.6% itu. Bacalah hasilnya sebagai “dalam syarat ini, sedikit sahaja range yang mahu lead, walaupun kecil”.]:::
 
@@ -210,7 +210,7 @@ A. Range tertumpu pada jenis kad tertentu. SB mempunyai banyak ace, king, queen 
 
 **Q. Anda open dari SB dan flop rendah bersambung. Apa seterusnya?**
 
-A. Dalam contoh 7♦6♦5♣ ini, check ialah pilihan utama pada 90.4%. Bet 9.6% tersebar pada 88 yang juga OESD (purata kelas 39.5%, tertinggi), A7s/K7s dan suited four K4s/Q4s. Check bukan menyerah; range masih perlu mempertimbangkan call dan check-raise terhadap bet lawan. Namun respons tersebut belum dikira dalam contoh ini.
+A. Dalam contoh 7♦6♦5♣ ini, check ialah pilihan utama pada 90.4%. Bet 9.6% tersebar pada 88 yang juga OESD (purata kelas 39.5%, tertinggi), A7s/K7s dan suited four K4s/Q4s. Check bukan menyerah: bagi tangan value nipis, check bernilai hampir sama dengan bet (beza dalam 0.03 bb), dan range masih perlu mempertimbangkan call dan check-raise terhadap bet lawan. Namun respons tersebut belum dikira dalam contoh ini.
 
 **Q. SB mempunyai lebih daripada tiga kali ganda kombo overpair berbanding BB. Mengapa bet hanya 9.6%?**
 

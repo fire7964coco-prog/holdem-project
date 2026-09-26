@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "odds",
   date: "2026-07-03",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-24",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "13 Min.",
   emoji: "🎲",
@@ -136,7 +136,7 @@ Alles hängt an den **Outs** – den Karten, die im Deck übrig sind und deine H
 
 </div>
 
-Die Zeile mit den zwei Overcards (6 Outs) setzt voraus, dass dir das Paaren eines der beiden Ränge den Pot bringt. Gegen zwei Paare, ein Set oder einen stärkeren Draw sind manche oder alle dieser Paar-Karten dirty – rechne sie herunter, statt sechs Outs als sichere Gewinner zu behandeln.
+Die Zeile mit den zwei Overcards (6 Outs) setzt voraus, dass dir das Paaren eines der beiden Ränge den Pot bringt. Gegen zwei Paare, ein Set oder einen stärkeren Draw sind manche oder alle dieser Paar-Karten dirty – rechne sie herunter, statt sechs Outs als sichere Gewinner zu behandeln. Die Set-Zeile zählt auch die vierte Karte deines Rangs mit: Ein Full House allein kommt vom Flop aus auf etwa 29,1% und am Turn auf 19,6%.
 
 Beachte die zwei Spalten – und nimm die, die zu deiner Situation passt. Die linke gilt nur, wenn du wirklich ==beide== Karten siehst (all-in, oder der Turn wird durchgecheckt). Bettet dein Gegner am Turn erneut, hast du mit dem Flop-Call nur ==eine== Karte gekauft. Wer die linke Spalte benutzt und in Wahrheit die rechte bezahlt, überschätzt jeden Draw – der häufigste Rechenfehler am Tisch.
 
@@ -198,16 +198,16 @@ Ein häufiger Mythos: „Ein Royal Flush schlägt alles, also kann er *unentschi
 
 ## Wie selten sind Quads, Cooler und Bad Beats wirklich?
 
-Mit einem Pocket Pair floppst du Quads **1 zu 408** – rechnest du ein, dass du überhaupt erst alle 17 Hände ein Paar bekommst, sind das rund **einmal alle 6.900 Hände**. Einen Straight Flush zu floppen steht mit Suited Connectors ~1 zu 4.900, ein Royal Flush bis zum River 1 zu 30.940. Manche Zahlen existieren eben vor allem, um die schlimmste Nacht deines Pokerlebens zu erklären.
+Mit einem Pocket Pair floppst du Quads **1 zu 408** – rechnest du ein, dass du überhaupt erst alle 17 Hände ein Paar bekommst, sind das rund **einmal alle 6.900 Hände**. Einen Straight Flush zu floppen steht mit Suited Connectors (54s–JTs) ~1 zu 4.900, ein Royal Flush bis zum River 1 zu 30.940. Manche Zahlen existieren eben vor allem, um die schlimmste Nacht deines Pokerlebens zu erklären.
 
 | Long Shot | Odds |
 |:---|:---:|
 | Pocket-Asse ausgeteilt bekommen | 1 zu 221 |
 | Quads mit einem Pocket Pair floppen | 1 zu 408 |
-| Einen Straight Flush floppen (Suited Connectors) | ~1 zu 4.900 |
+| Einen Straight Flush floppen (Suited Connectors 54s–JTs) | ~1 zu 4.900 |
 | Einen Royal Flush bis zum River treffen | 1 zu 30.940 |
 
-**Set over Set** – du floppst ein Set und verlierst gegen ein größeres Set – ist der ultimative Cooler. Es gibt keine saubere einzelne Zahl, weil es davon abhängt, wie viele Spieler Paare halten, aber der Anker ist dieser: *du* floppst ein Set nur 11,8% der Fälle, und dass ein Gegner dasselbe auf demselben Board tut, ist selten genug, dass sich die meisten Spieler an jeden einzelnen erinnern. Wenn es passiert, ist es Varianz, kein Fehler – die Mathematik war die ganze Zeit auf deiner Seite. Wenn du genau sehen willst, wie solche Showdowns gewertet werden, decken die [Kicker- und Tiebreaker-Regeln](/de/blog/holdem-tiebreak-rules) jeden Grenzfall ab.
+**Set over Set** – du floppst ein Set und verlierst gegen ein größeres Set – ist der ultimative Cooler. Es gibt keine saubere einzelne Zahl, weil es davon abhängt, wie viele Spieler Paare halten, aber der Anker ist dieser: *du* floppst ein Set nur 11,8% der Fälle, und dass ein Gegner dasselbe auf demselben Board tut, ist selten genug, dass sich die meisten Spieler an jeden einzelnen erinnern. Wenn es passiert, beweist der Verlust allein nicht, dass der Call ein Fehler war – oder dass er richtig war. Beurteile ihn nach dem Preis und der Stacktiefe, die du in dem Moment hattest, nicht nach dem Showdown. Wenn du genau sehen willst, wie solche Showdowns gewertet werden, decken die [Kicker- und Tiebreaker-Regeln](/de/blog/holdem-tiebreak-rules) jeden Grenzfall ab.
 
 ---
 

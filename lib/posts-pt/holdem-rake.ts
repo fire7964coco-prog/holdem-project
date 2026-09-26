@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "O rake é a pequena fatia que a sala de poker tira da maioria dos potes para sediar o jogo — geralmente 2,5–10% até um cap de alguns dólares. A maioria das salas não tira nada se todo mundo folda antes do flop ('no flop, no drop'). Ele pesa mais para quem joga stakes baixos e short-handed, e o rakeback devolve uma parte dele aos regulares.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-09-22",
-  masterUpdated: "2026-09-22",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🏦",
@@ -125,7 +125,7 @@ Essa taxa — também chamada de **juice** ou **vig** — é o equivalente do ra
 - **O rake ao vivo** tende a ser uma **porcentagem mais alta (frequentemente 10%) com um cap mais alto ($3–$6)** — mas você só joga ~30 mãos por hora, então paga menos vezes.
 - **O rake online** geralmente é uma **porcentagem mais baixa (3–5%) com um cap menor ($1–$3)** — mas você pode ver 250+ mãos por hora em várias mesas, então um grinder de volume pode pagar *mais* rake por hora do que um jogador ao vivo apesar da taxa menor.
 
-A lição: nunca julgue o rake só pela porcentagem. O que importa é a porcentagem **vezes quantas vezes você paga.** Um jogo online "barato" de 5% que você joga em quatro mesas pode te custar mais do que um jogo ao vivo "caro" de 10% — que é exatamente por que o rakeback e a seleção de mesa importam mais online.
+A lição: nunca julgue o rake só pela porcentagem. O que importa é quanto você realmente paga por pote — a porcentagem, até o cap — **vezes quantas vezes você paga.** Um jogo online "barato" de 5% que você joga em quatro mesas pode te custar mais do que um jogo ao vivo "caro" de 10% — que é exatamente por que o rakeback e a seleção de mesa importam mais online.
 
 ---
 
@@ -162,7 +162,7 @@ A. O rakeback devolve uma porcentagem do rake que você paga pessoalmente — fr
 
 **Q. Como pagar menos rake no poker?**
 
-A. Você não escapa do rake num jogo com rake, mas dá pra encolhê-lo: consiga o melhor deal de rakeback possível, escolha salas com caps amigáveis ao jogador. Jogar menos potes, e maiores, em vez de uma enxurrada de potes pequenos também reduz o rake: o cap só entra nos potes grandes, enquanto os pequenos pagam a porcentagem cheia. O mesmo vale para evitar mesas muito short-handed — ali você joga muito mais mãos por hora e paga blinds com mais frequência, então entra em muito mais potes com rake. Subir de stakes também encolhe o rake proporcionalmente, mas só dê o passo quando o bankroll e a sua vantagem sobre o campo mais duro acompanharem.
+A. Você não escapa do rake num jogo com rake, mas dá pra encolhê-lo: consiga o melhor deal de rakeback possível, escolha salas com caps amigáveis ao jogador. Jogar menos potes, e maiores, em vez de uma enxurrada de potes pequenos também reduz o rake: o cap só entra nos potes grandes, enquanto os pequenos pagam a porcentagem cheia. O mesmo vale para evitar mesas muito short-handed — ali você joga muito mais mãos por hora e paga blinds com mais frequência, então entra em muito mais potes com rake por hora (mesmo onde o cap cai quando menos jogadores recebem cartas). Subir de stakes também encolhe o rake proporcionalmente, mas só dê o passo quando o bankroll e a sua vantagem sobre o campo mais duro acompanharem.
 
 **Q. Torneios de poker têm rake?**
 

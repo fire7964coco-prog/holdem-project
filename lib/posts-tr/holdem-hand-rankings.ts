@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Poker el sıralaması en güçlüden en zayıfa şöyledir: Royal Flush, Straight Flush, Four of a Kind (Kare), Full House, Flush, Straight (Kent), Three of a Kind (Üçlü), Two Pair (İki Çift), Pair (Çift) ve High Card (Yüksek Kart).",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-09-17",
+  updated: "2026-09-26",
 
   masterUpdated: "2026-09-07",
   keepImagesInBody: true,
@@ -127,10 +127,11 @@ Onu yalnızca daha yüksek bir straight flush veya royal flush yener. En düşü
 
 **J♣ J♠ J♥ A♦ 4♠** — aynı değerdeki üç kart.
 
-Onu oluşturmanın iki yolu vardır ve fark önemlidir:
+Onu oluşturmanın üç yolu vardır ve fark önemlidir:
 
 - **Set:** elindeki bir çift artı bir board kartı (örneğin J♣ J♠ tutarsın ve board J♥ getirir). Gizli ve tehlikeli.
 - **Trips:** board'daki bir çift artı senin bir kartın. Rakip için okuması daha kolay ve daha çok paylaşılır.
+- **Board'da üçlü:** üç kartın üçü de board'dadır (örneğin ortada J♣ J♠ J♥). Herkes paylaşır; biri full house'a ya da kareye yükselmedikçe sizi yalnızca kicker'lar ayırır.
 
 Set daha çok çip kazandırır çünkü kimse onu görmez.
 
@@ -200,7 +201,7 @@ Sıralamayı bilmek, onu hızlı okumakla aynı şey değil. İşte üç gerçek
 
 Elinde **Q♥ Q♦** var. En iyi elin ne?
 
-→ Board zaten iki çift gösteriyor (A-A ve K-K). İki kızın ve board'daki Q♠ bir **kız üçlüsü** yapar, board'daki As'larla birlikte bir **full house — QQQ + AA** olur. En iyi beşin bunlar. Yeni başlayanlar "AAKK + Q sadece iki çift değil mi?" diye takılır — hayır. Üçlün olduğu anda full house'u alırsın. **Full house iki çifti yener.**
+→ Board zaten iki çift gösteriyor (A-A ve K-K). İki kızın ve board'daki Q♠ bir **kız üçlüsü** yapar, board'daki As'larla birlikte bir **full house — QQQ + AA** olur. En iyi beşin bunlar. Yeni başlayanlar "AAKK + Q sadece iki çift değil mi?" diye takılır — hayır. Üçlün olduğu ve board da kendi başına bir çift eklediği anda full house'u alırsın. **Full house iki çifti yener.**
 
 ### Soru 2 — Aslında daha güçlü olan flush
 
@@ -236,7 +237,7 @@ Elinde **A♥ 3♣** var. Board'da zaten papaz üçlüsü var.
 
 ## Sıralama neden böyle
 
-Sıralama keyfî değil — saf olasılık. **Bir eli yapmak ne kadar zorsa, o kadar yukarıdadır.** 52 kartlık destede, aynı türden beş kart yapmanın yolları, herhangi bir türden beş ardışık yapmaktan daha azdır — bu yüzden flush, kentin üstündedir. Bu tek ilke tüm sıralamayı açıklar.
+Sıralama keyfî değil — saf olasılık. **Bir eli beş karttan yapmak ne kadar zorsa, o kadar yukarıdadır.** 52 kartlık destede, aynı türden beş kart yapmanın yolları, herhangi bir türden beş ardışık yapmaktan daha azdır — bu yüzden flush, kentin üstündedir. Bu tek ilke tüm sıralamayı açıklar.
 
 Karşılaşacağın büyük istisnayı da açıklar: 2'den 5'e kadar kartların çıkarıldığı **Short Deck (6+) Hold'em**'de flush'lar full house'lardan daha zor olur — bu yüzden o formatta **flush, full house'u yener**. Matematik değişti, sıralama değişti. Varyantlara göre farklar aşağıda.
 

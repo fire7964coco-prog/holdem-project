@@ -6,11 +6,11 @@ export const POST: Post = {
   title: "BB Tidak Check di A-K-2: Mengapa?",
   seoTitle: "BB Bet 100% — C-Bet Pot 3-Bet di A-K-2",
   desc: "Di pot 3-bet A-K-2, BB bet 100% range. Lihat peran range preflop, SPR 4,0, dan dua ukuran taruhan tanpa menganggap semua flop harus dibet.",
-  tldr: "Pada A♦K♠2♥ dalam pot 3-bet, BB bet 100% range: semua 63 combo, dengan check 0,0%. Pada tujuh contoh sebelumnya BB check 76,2%–99,9%. Peran preflop kini berbalik: BB melakukan 3-bet, sementara BTN call tanpa AA dan KK karena keduanya masuk range 4-bet. BB memiliki set tertinggi, dan SPR 4,0 memperkecil ruang untuk menunda pembangunan pot.",
+  tldr: "Pada A♦K♠2♥ dalam pot 3-bet, BB bet seluruh range: check dibulatkan menjadi 0,0%, dan tidak ada satu pun dari 63 combo yang check sampai 0,1%. Pada tujuh contoh sebelumnya BB check 76,2%–99,9%. Peran preflop kini berbalik: BB melakukan 3-bet, sementara BTN call tanpa AA dan KK karena keduanya masuk range 4-bet. BB memiliki set tertinggi, dan SPR 4,0 memperkecil ruang untuk menunda pembangunan pot.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-15",
-  masterUpdated: "2026-09-02",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   readTime: "12 mnt",
   emoji: "🔥",
   image: "/images/gto-3bp-ace-king-oop-id.webp",
@@ -20,7 +20,7 @@ export const POST: Post = {
   content: `
 Pada tujuh spot sebelumnya, BB hampir selalu memulai dengan check. Bahkan di [flop 9-8-7](/id/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-id.webp"), tempat lead paling sering muncul, BB hanya bet 23,7%. Pada board lainnya, check berkisar antara 88,8% dan 99,9%.
 
-Kali ini kebalikannya: **BB bet seluruh range, yaitu semua 63 combo**.
+Kali ini kebalikannya: **BB bet seluruh range, yaitu semua 63 combo, masing-masing sedikitnya 99,9% dari waktu**.
 
 Perubahan utama ada pada preflop. BB **melakukan 3-bet**, bukan call, sehingga pot menjadi 22,5bb alih-alih 5,5bb. Board juga berubah: contoh ① menggunakan A♥7♦2♣, sedangkan ini A♦K♠2♥. Jadi, ini bukan eksperimen yang hanya mengubah aksi preflop. Semua angka berikut berasal dari [solver GTO gratis](/id/solver) HoldemMaster.
 
@@ -54,7 +54,7 @@ Pot 22,5bb berasal dari ==11 untuk 3-bet + 11 call + 0,5 small blind yang fold==
 
 ## Benarkah frekuensi check tepat 0%?
 
-**Layar menunjukkan 0,0%, dengan bobot combo juga 0,0.** Semua 63 combo aktif dialokasikan ke bet, terbagi antara 57,8% untuk ukuran kecil dan 42,2% untuk ukuran besar. Tidak ada bagian range check yang ditampilkan pada solusi ini. Ini berlawanan dengan semua tujuh single-raised pot sebelumnya, ketika check selalu menjadi pilihan utama BB.
+**Layar menunjukkan 0,0%, dengan bobot combo juga 0,0.** Output mentah masih menyimpan sisa kecil: 41 dari 63 combo membawa sedikit check, terbesar K♥K♦ sebesar 0,09%, dan jumlah seluruhnya kurang dari seperseratus combo. Itu noise solver, bukan strategi, jadi baca sebagai nol. Bet terbagi antara 57,8% untuk ukuran kecil dan 42,2% untuk ukuran besar. Ini berlawanan dengan semua tujuh single-raised pot sebelumnya, ketika check selalu menjadi pilihan utama BB.
 
 | Aksi pertama BB | Frekuensi | Combo |
 |---|---|---|
@@ -66,7 +66,7 @@ Persentase dan bobot combo memakai penggabungan yang berbeda sehingga pembagian 
 
 Check 0,0% bukan larangan. Artinya, **strategi hasil perhitungan ini tidak memakai check** pada range dan pohon tersebut. Frekuensi saja tidak membuktikan bahwa EV check setiap combo lebih rendah secara ketat daripada EV bet; untuk itu diperlukan perbandingan EV tindakan.
 
-Pada beberapa contoh sebelumnya, tindakan yang sangat jarang masih muncul dengan frekuensi 0,2% atau 0,1%. Di sini, check tidak memperoleh alokasi sekecil itu pun.
+Pada beberapa contoh sebelumnya, tindakan yang sangat jarang masih muncul dengan frekuensi 0,2% atau 0,1%. Di sini, tidak ada satu combo pun yang check sampai 0,1%.
 
 ## Mengapa tidak ada combo yang memilih check?
 
@@ -130,7 +130,7 @@ Petunjuknya ialah bobot combo yang tidak bulat: **26,4 bet besar dan 36,6 bet ke
 
 Underpair BTN berjumlah 60 combo: QQ sampai 33, sepuluh pocket pair dengan enam combo masing-masing. Kelompok ini sulit melanjutkan menghadapi beberapa barrel pada tekstur tersebut.
 
-Namun, 130 combo BTN adalah **range call yang ditetapkan dalam contoh teori**, bukan hasil pengamatan semua lawan. Sebagian pemain nyata lebih sering fold pocket pair menengah dan call dengan A-Q, A-J, atau K-Q. Melawan mereka, porsi 46,2% tadi berubah. Kenali range yang benar-benar dipakai lawan sebelum menerapkan angka contoh.
+Namun, 130 combo BTN adalah **range call yang diberikan kepada solve ini**: pengaturan preflop yang dimasukkan ke tree, bukan pertahanan yang dihitung solver, apalagi hasil pengamatan semua lawan. Sebagian pemain nyata lebih sering fold pocket pair menengah dan call dengan A-Q, A-J, atau K-Q. Melawan mereka, porsi 46,2% tadi berubah. Kenali range yang benar-benar dipakai lawan sebelum menerapkan angka contoh.
 
 ## Bagaimana BTN menghadapi c-bet sepertiga pot?
 
@@ -142,7 +142,7 @@ MDF terhadap bet 7,4bb ke pot 22,5bb ialah sekitar ==22,5 ÷ (22,5 + 7,4) = 75,3
 
 **Asumsi pure bluff dengan equity nol dalam MDF tidak cocok diterapkan mentah-mentah di sini.** BB memiliki **Belum jadi 0,0%, tanpa satu combo pun**. Tidak ada dasar untuk memperlakukan semua bagian lemah range bet sebagai bluff yang sama sekali tidak memiliki equity. Ini memberi alasan untuk mempertimbangkan pertahanan lebih ketat daripada penerapan MDF secara otomatis.
 
-Dua batas penting tetap berlaku. Pertama, **0% Belum jadi bukan berarti 0% bluff**: underpair lemah dapat dipakai sebagai bluff atau taruhan proteksi. Kedua, respons BTN belum dihitung dalam contoh, sehingga frekuensi bertahan optimalnya tidak dapat dipastikan. Angka 41,5% bukan perintah menambah seluruh pocket pair menengah agar mencapai MDF. Bet kecil memang memberi harga lebih murah kepada 60 combo tersebut, tetapi alasan sizing harus tetap dibaca melalui bentuk range.
+Dua batas penting tetap berlaku. Pertama, **0% Belum jadi bukan berarti 0% bluff**: underpair lemah dapat dipakai sebagai bluff atau taruhan proteksi. Kedua, respons BTN belum dihitung dalam contoh, sehingga frekuensi bertahan optimalnya tidak dapat dipastikan. Angka 41,5% bukan perintah menambah seluruh pocket pair menengah agar mencapai MDF. Apakah bet kecil pun memberi harga yang cukup bagi 60 combo tersebut juga meragukan: melawan seluruh range BB, hanya QQ dan JJ yang memiliki lebih dari 19,8% yang dituntut, sedangkan 99 sampai 33 berada di 7,6–9,2%. Bagaimanapun, alasan sizing harus tetap dibaca melalui bentuk range.
 
 :::note[MDF menyederhanakan taruhan lawan menjadi pure bluff dengan equity nol. Pada range yang seluruhnya memiliki pair atau lebih baik, asumsi tersebut tidak menggambarkan situasi dengan baik. Angkanya hanya acuan; pertimbangkan juga equity hand lemah, bluff yang mungkin ada, dan kemampuan bertahan pada street berikutnya.]:::
 

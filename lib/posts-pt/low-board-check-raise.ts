@@ -9,8 +9,8 @@ export const POST: Post = {
   tldr: "No flop baixo rainbow 6♠5♥2♦, o big blind dá check em 96,8% e sai apostando em apenas 3,2%, embora sua equity de 48,3% seja a segunda maior dos sete spots em que ele defende. Só 4-3 forma sequência neste flop, e nenhum dos ranges contém essa mão. Nenhum dos ranges tem vantagem no topo, então o BB quase nunca sai apostando fora de posição. A agressividade aparece depois: numa resolução separada da mesma árvore, que permite consultar as decisões seguintes, o BB dá check-raise contra 1,8bb em 14,9%, num range de aumento formado quase todo por draws.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-15",
-  masterUpdated: "2026-09-02",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   readTime: "11 min",
   emoji: "🌊",
   image: "/images/gto-srp-low-rainbow-oop-pt.webp",
@@ -199,7 +199,7 @@ Observe também quanto desse range é valor. Sets e dois pares juntos somam **2,
 | Backdoor FD | **20,5%** | 18,5% |
 | Sem draw | 60,2% | **66,8%** |
 
-**Gutshots: 18,5% contra 13,9%.** Com sets empatados em 1,8% e overpairs em 4,9% contra 9,5%, a linha de gutshots fornece boa parte das mãos para aumentar: o solver usa o grupo mais presente no BB como matéria-prima do check-raise.
+**Gutshots: 18,5% contra 13,9%.** Com sets empatados em 1,8% e overpairs em 4,9% contra 9,5%, a linha de gutshots fornece a maior parte das mãos para aumentar: o solver se apoia no grupo mais presente no BB, mas não aumenta com todo ele. 18,5% de 487 são cerca de 90 combos de gutshot, mais que os 69,7 combos de aumento no total, e mesmo J4s e Q4s, perto do topo da lista, aumentam só em 67–90% das vezes.
 
 ## O 6-5-2 é um board com muitos draws ou um board seco?
 
@@ -253,7 +253,7 @@ A. Com os nove combos de set (66, 55 e 22), os dois combos de 65 do mesmo naipe 
 
 **Q. Check-raise é permitido? É falta de etiqueta?**
 
-A. É uma ação permitida pelas regras do poker, explicadas no guia de [ações de aposta](/pt/blog/holdem-betting-actions). A preocupação com etiqueta vem de jogos caseiros antigos que proibiam check-raise por regra da casa; a má fama durou mais que a regra. No poker atual, é uma ferramenta normal, e os números acima mostram sua importância: retirar o check-raise do jogo do BB neste flop elimina a ação usada por 14,9% do range, sem substituto equivalente.
+A. É permitido em quase todos os cassinos e nos jogos online padrão — só um jogo caseiro ainda pode ter sua própria regra da casa. As regras estão explicadas no guia de [ações de aposta](/pt/blog/holdem-betting-actions). A preocupação com etiqueta vem de jogos caseiros antigos que proibiam check-raise por regra da casa; a má fama durou mais que a regra. No poker atual, é uma ferramenta normal, e os números acima mostram sua importância: retirar o check-raise do jogo do BB neste flop elimina a ação usada por 14,9% do range, sem substituto equivalente.
 
 **Q. Esses números valem para o limite em que jogo?**
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Um 3-bet é o primeiro re-raise antes do flop — chamado de 3-bet porque o big blind é a primeira aposta, o open-raise a segunda, e o seu re-raise a terceira. Dê 3-bet por valor com um núcleo apertado (QQ+, AK) mais alguns blefes de bloqueio suited como A5s, dimensione em torno de 3x o open in position e 4x out of position, e mantenha sua frequência geral de 3-bet perto de 6–10%. Quando você é quem enfrenta um 3-bet, 4-bete suas mãos premium, pague as mãos que jogam bem, e folde o resto — foldando mais que o \"balanceado\" contra jogadores de stakes baixos que nunca blefam.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-22",
-  masterUpdated: "2026-09-22",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "♦️",
@@ -128,7 +128,7 @@ A matemática está deliberadamente visível porque é onde iniciantes vazam: **
 - **Nunca dê um 3-bet minúsculo out of position.** Um 3-bet OOP pequeno oferece um ótimo preço ao seu adversário para pagar e te superjogar com posição — exatamente o que você tenta evitar. Use o 4x+ completo.
 - **Sizing não é lei.** Diminua o size *contra* jogadores que foldam demais (você blefa mais barato) e aumente o size e vá de puro valor contra calling stations que nunca foldam. Rake e profundidade de stack também mexem nisso.
 
-Em torneios com stacks curtos, todo o cálculo muda: em torno de **10–25 big blinds**, muitas mãos viram um **3-bet all-in (um "shove")** em vez de um re-raise pequeno, porque não há espaço para aumentar-e-foldar. Pare de dar min-3-bet e comece a jammar conforme fica curto.
+Em torneios com stacks curtos, todo o cálculo muda: em torno de **10–25 big blinds**, muitas mãos viram um **3-bet all-in (um "shove")** em vez de um re-raise pequeno, porque não há espaço para aumentar-e-foldar. Troque o min-3-bet pelo jam conforme fica curto — embora, contra fields fortes, valha manter alguns 3-bets pequenos que não são all-in no mix.
 
 ---
 
@@ -159,7 +159,7 @@ A grande lição: **flatar é legítimo in position** — solvers modernos mant�
 Um **squeeze play** é um 3-bet feito depois que já houve um open-raise *e* pelo menos um caller. Chama-se squeeze porque você coloca os dois adversários numa prensa: o raiser original agora tem que se preocupar com o caller atrás, e o caller — que acabou de mostrar uma mão não forte o suficiente para re-raise — raramente quer continuar contra a sua agressão.
 
 Duas coisas tornam o squeeze especial:
-- **Há mais dinheiro morto.** O pote já contém o aumento e o call, então um squeeze bem-sucedido ganha mais, o que significa que seus blefes precisam funcionar *menos* vezes para dar lucro.
+- **Há mais dinheiro morto.** O pote já contém o aumento e o call, então um squeeze bem-sucedido ganha mais. Como você também aumenta o size por causa do caller, isso nem sempre reduz a taxa de fold de que seus blefes precisam — dos blinds ela cai um pouco, do button fica mais ou menos igual —, mas cada fold agora recolhe mais fichas.
 - **Dimensione maior.** Some grosso modo um open-raise extra para cada caller. Contra um open de 3bb mais um caller, um squeeze para cerca de **15–16,5bb** é padrão — o size extra é o que empurra os dois jogadores para fora.
 
 Bons blefes de squeeze são as mesmas mãos de bloqueio suited (A5s e companhia) que fazem bons blefes de 3-bet, porque você ainda quer foldar as mãos médias do raiser e ter equity quando pago.
@@ -172,17 +172,17 @@ Bons blefes de squeeze são as mesmas mãos de bloqueio suited (A5s e companhia)
 
 Aqui está a metade do 3-bet que quase todo artigo pula: **você vai estar do lado que recebe o 3-bet mais ou menos tantas vezes quanto do lado que dá.** Quando você dá open e leva re-raise, você tem três respostas:
 
-- **4-bet** — por valor com suas premium (QQ+, AK), mais o blefe de bloqueio ocasional (uma mão tipo A5s). Um 4-bet diz "eu não vou a lugar nenhum".
+- **4-bet** — por valor com suas premium (QQ+, AK), mais o blefe de bloqueio ocasional (uma mão tipo A5s). Um 4-bet de valor diz "eu não vou a lugar nenhum" — um 4-bet de blefe de bloqueio ainda folda para um 5-bet.
 - **Pagar** — com mãos que flopam bem e têm a equity ou posição para continuar: pares para set-mine, broadways suited, e mãos fortes que não querem inflar o pote numa guerra de 4-bet.
 - **Foldar** — todo o resto. A maior parte do seu range de open deveria simplesmente entregar a um 3-bet; isso é normal, não fraqueza.
 
-Quanto você deve continuar? A referência teórica é a **Frequência Mínima de Defesa (MDF)** — a fatia do seu range que você precisa continuar para que o 3-bettor não possa lucrar blefando com duas cartas quaisquer. É ==pote ÷ (pote + aposta)== — onde *pote* é o que está no meio antes do 3-bet e *aposta* é o que o 3-bettor está **acrescentando** (de um blind, é o aumento menos as fichas que ele já postou) — o que, contra sizes típicos de 3-bet, dá em torno de **um terço do seu range** no vácuo (um 3-bet de 3x do button: 4,5bb de pote ÷ (4,5bb + 9bb) ≈ 33%). Continuar um terço quer dizer foldar no máximo uns 66,6% nesse spot isolado — um teto, não um alvo; os ~55% de fold da tabela abaixo são uma referência prática, não uma garantia (veja o FAQ). Mas aqui está o exploit que ganha dinheiro em mesas reais. Ele se lê melhor da outra cadeira, então, só para a tabela abaixo, troque de cadeira: o número abaixo é com que frequência **eles** foldam quando **você** dá o 3-bet.
+Quanto você deve continuar? A referência teórica é a **Frequência Mínima de Defesa (MDF)** — a fatia do seu range que você precisa continuar para que o 3-bettor não possa lucrar blefando com duas cartas quaisquer. É ==pote ÷ (pote + aposta)== — onde *pote* é o que está no meio antes do 3-bet e *aposta* é o que o 3-bettor está **acrescentando** (de um blind, é o aumento menos as fichas que ele já postou) — o que, contra sizes típicos de 3-bet, dá em torno de **um terço do seu range** no vácuo (um 3-bet de 3x do button: 4,5bb de pote ÷ (4,5bb + 9bb) ≈ 33%). Continuar um terço quer dizer foldar no máximo uns 66,7% nesse spot isolado — um teto, não um alvo; os ~55% de fold da tabela abaixo são uma referência prática, não uma garantia (veja o FAQ). Mas aqui está o exploit que ganha dinheiro em mesas reais. Ele se lê melhor da outra cadeira, então, só para a tabela abaixo, troque de cadeira: o número abaixo é com que frequência **eles** foldam quando **você** dá o 3-bet.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Stat de fold-to-3-bet do vilão | O que te diz | Seu ajuste |
 |:---:|:---|:---|
-| **~35% (raramente folda)** | Um calling station — ele paga com quase tudo, então um blefe não tem fold equity | 3-bete ele **só por valor**, pare de blefar, e value-bete sem dó |
+| **~35% (raramente folda)** | Um calling station — ele paga com quase tudo, então um blefe raramente consegue folds suficientes para dar lucro | 3-bete ele **só por valor**, pare de blefar, e value-bete sem dó |
 | **~55% (balanceado)** | Um regular que pensa | Jogue perto do GTO — misture valor e blefes de bloqueio |
 | **~70%+ (folda demais)** | Um nit explorável | 3-bete ele **light muito mais vezes** — ele te entrega o pote |
 
@@ -215,7 +215,7 @@ Agora inverta: se eu tivesse dado 3-bet numa mão **light** tipo A5s ali e o cut
 | **Nunca blefar de 3-bet** | Deixa dinheiro na mesa vs steals abertos; seus flats ficam fracos demais | Balanceie valor com alguns 3-bets light |
 | **3-bet merged vs um nit** | Seu "valor" está dominado pelo range só-premium dele | Vá polarizado ou simplesmente folde vs um nit de verdade |
 | **Blefar de 3-bet com lixo (Q7o)** | Blockers fracos e pouca equity de reserva — você tem que foldar a todo 4-bet | Escolha só mãos de blocker/jogabilidade |
-| **Flatar demais do small blind** | Realização de equity ruim OOP; um range fraco e capado | Contra um aumento, 3-bet-ou-fold do SB; guarde os flats abertos para o big blind |
+| **Flatar demais do small blind** | Realização de equity ruim OOP; um range fraco e capado | Contra um aumento, sobretudo 3-bet-ou-fold do SB; guarde os flats abertos para o big blind |
 
 </div>
 
@@ -284,7 +284,7 @@ A. Você tem três opções: dar 4-bet nas suas premium (QQ+, AK) mais o blefe d
 
 **Q. Qual é uma boa porcentagem de fold-to-3-bet?**
 
-A. Em torno de 55% é uma referência razoável e mais ou menos balanceada — você continua com o topo do seu range e deixa o resto ir. Isso é mais aberto que a MDF pura, que contra um 3-bet grande mandaria você defender só cerca de um terço — ou seja, foldar no máximo uns 66,6%. Trate esse número como um teto, não como um alvo. A MDF assume que os blefes têm equity zero, mas um blefe de 3-bet de verdade como A5s carrega uns 30% de equity contra o seu range de continuação, o que empurra a frequência de fold de equilíbrio bem abaixo desse teto calculado no vácuo. Então 55% é uma referência prática, não uma garantia: um 3-bet light com equity de verdade ainda pode dar lucro contra ela. Foldar muito mais que isso te deixa explorável por 3-bets light; foldar muito menos significa que você está pagando ou dando 4-bet aberto demais. Ajuste ao adversário: folde mais contra jogadores que nunca blefam de 3-bet.
+A. Em torno de 55% é uma referência razoável e mais ou menos balanceada — você continua com o topo do seu range e deixa o resto ir. Isso é mais aberto que a MDF pura, que contra um 3-bet típico de 3x in position mandaria você defender só cerca de um terço — ou seja, foldar no máximo uns 66,7%. Trate esse número como um teto, não como um alvo. A MDF assume que os blefes têm equity zero, mas um blefe de 3-bet de verdade como A5s carrega uns 30% de equity contra o seu range de continuação, o que empurra a frequência de fold de equilíbrio bem abaixo desse teto calculado no vácuo. Então 55% é uma referência prática, não uma garantia: um 3-bet light com equity de verdade ainda pode dar lucro contra ela. Foldar muito mais que isso te deixa explorável por 3-bets light; foldar muito menos significa que você está pagando ou dando 4-bet aberto demais. Ajuste ao adversário: folde mais contra jogadores que nunca blefam de 3-bet.
 
 **Q. Você deve dar 3-bet ou 4-bet all-in com um stack curto num torneio?**
 

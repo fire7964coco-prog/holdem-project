@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "rules",
   date: "2026-06-15",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-21",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "♠",
@@ -60,7 +60,7 @@ Duas formas válidas:
 
 **1. Declaração verbal** — Diga "all-in" com clareza, para o dealer e os adversários ouvirem. É o jeito mais seguro. Depois que falou, está valendo.
 
-**2. Empurrar todas as fichas** — Deslize o stack inteiro para o centro em um único movimento. Empurrar fichas aos poucos pode parecer string bet, então mova tudo de uma vez. ==r:Só empurrar nem sempre basta: se há uma aposta à sua frente e cada ficha sua é necessária apenas para pagar, o empurrão silencioso é julgado como call, não como all-in (regra 45-A da TDA, regra 92 do regulamento de torneio da WSOP).== Em qualquer outra situação, empurrar suas últimas fichas **é** um all-in (regra 45-B da TDA).
+**2. Empurrar todas as fichas** — Deslize o stack inteiro para o centro em um único movimento. Empurrar fichas aos poucos pode parecer string bet, então mova tudo de uma vez. ==r:Só empurrar nem sempre basta: se há uma aposta à sua frente e cada ficha sua é necessária apenas para pagar, o empurrão silencioso é julgado como call, não como all-in (regra 45-A da TDA, edição de 2024; regra 92 do regulamento de torneio da WSOP).== Em qualquer outra situação, empurrar suas últimas fichas **é** um all-in (regra 45-B da TDA, edição de 2024) — a única exceção é uma única ficha grande demais, a última, empurrada em silêncio diante de uma aposta, que vale só como call (regra 44 da TDA, edição de 2024).
 
 ![Showdown de all-in no Texas Hold'em — board K♠ 10♣ 7♦ 4♥ 2♣ com as fichas separadas em pote principal e pote paralelo identificados](/images/holdem-all-in-declare.webp)
 
@@ -147,7 +147,7 @@ Por que essa regra existe? Ela protege os jogadores de serem forçados a aumento
 
 ### Caso avançado: e se vários jogadores forem de all-in curto?
 
-Essa é a versão que derruba até os regulares. Vários all-ins curtos podem **se somar** até um aumento completo — e se os incrementos combinados atingirem o mínimo, a aposta reabre para um jogador que já agiu. ==r:O teste é feito jogador por jogador, não uma vez só para a mesa:== ela reabre apenas para quem, **quando a ação volta para ele, tem à frente pelo menos um aumento completo acima do que já colocou** (==regra 47 da TDA==).
+Essa é a versão que derruba até os regulares. Vários all-ins curtos podem **se somar** até um aumento completo — e se os incrementos combinados atingirem o mínimo, a aposta reabre para um jogador que já agiu. ==r:O teste é feito jogador por jogador, não uma vez só para a mesa:== ela reabre apenas para quem, **quando a ação volta para ele, tem à frente pelo menos um aumento completo acima do que já colocou** (==regra 47 da TDA, edição de 2024==).
 
 Essa é a regra oficial de "re-opening the bet" da TDA, e a maioria dos clubes de poker a segue.
 
@@ -183,7 +183,7 @@ O mínimo de aumento é sempre a *última aposta ou aumento completo válido* �
 | Um all-in ≥ aumento completo | ✅ Sim — todos podem aumentar de novo |
 | Vários all-ins curtos, soma < aumento completo | ❌ Não |
 | Vários all-ins curtos, soma ≥ aumento completo | ✅ Sim — para cada jogador que agora tem à frente pelo menos um aumento completo acima da própria última ação |
-| Jogador que ainda NÃO agiu | ✅ O limite de reabertura nunca se aplica a ele — pode aumentar até onde as próprias fichas permitirem (e, num jogo de limit, o teto de aumentos da casa — regra 48 da TDA) |
+| Jogador que ainda NÃO agiu | ✅ O limite de reabertura nunca se aplica a ele — pode aumentar até onde as próprias fichas permitirem (e, num jogo de limit, o teto de aumentos da casa — regra 48 da TDA, edição de 2024) |
 
 </div>
 
@@ -216,7 +216,7 @@ Um all-in parcial não dá segunda chance de aumentar a quem **já agiu** naquel
 Table stakes. O que está na mesa é tudo o que você pode apostar. Se você está de all-in por $80 e o pote é de $400, você só pode ganhar $80 de cada pagador.
 
 ### Erro 4: dar muck a mão rápido demais
-Você está de all-in pelo pote principal. Dois outros jogadores brigam pelo pote paralelo. Em torneio isso se resolve sozinho — quando a aposta deles termina, a ==regra 16 da TDA== manda mostrar todas as mãos, a sua inclusive. No cash não é assim — não dê muck — sua mão continua viva pelo pote principal. ==Sempre espere o dealer resolver todos os potes antes de tocar nas suas cartas.==
+Você está de all-in pelo pote principal. Dois outros jogadores brigam pelo pote paralelo. Em torneio isso se resolve sozinho — quando a aposta deles termina, a ==regra 16 da TDA (edição de 2024)== manda mostrar todas as mãos, a sua inclusive. No cash não é assim — não dê muck — sua mão continua viva pelo pote principal. ==Sempre espere o dealer resolver todos os potes antes de tocar nas suas cartas.==
 
 ### Erro 5: ir de all-in por frustração
 O all-in é a jogada mais poderosa da mesa. Ele força os adversários a decisões de tudo ou nada. Esse poder some quando você shova de qualquer jeito. Use no momento certo — pressão de stack curto, mãos de valor que você quer que paguem, blefes com fold equity de verdade.
@@ -252,11 +252,11 @@ A. Table stakes significa que você só pode apostar as fichas que estavam na su
 
 **Q. Se dois jogadores vão de all-in por valores diferentes, quem mostra primeiro?**
 
-A. O último all-in que foi uma aposta ou aumento é a última ação agressiva e mostra primeiro. Um all-in que apenas paga (call) por menos não é agressivo — no cash, quem apostou originalmente mostra primeiro, e daí em diante as WSOP Live Action Rules vão por pote: quem está no pote paralelo mostra antes do jogador que está all-in só pelo pote principal (regra 149). ==r:Em torneio não existe ordem de mostrar aqui== — assim que a aposta do all-in termina, todas as mãos envolvidas são viradas ao mesmo tempo (Regra 16 da TDA); a regra que fixa uma ordem, a 17 da TDA, só cobre showdowns sem all-in. Em cash games, se foi um all-in pago sem mais ação, quem pagou pode dar muck se perder depois de ver a mão do jogador de all-in (em torneios, todas as mãos envolvidas ficam abertas).
+A. O último all-in que foi uma aposta ou aumento é a última ação agressiva e mostra primeiro. Um all-in que apenas paga (call) por menos não é agressivo — no cash, quem apostou originalmente mostra primeiro, e daí em diante as WSOP Live Action Rules vão por pote: quem está no pote paralelo mostra antes do jogador que está all-in só pelo pote principal (regra 149). ==r:Em torneio não existe ordem de mostrar aqui== — assim que a aposta do all-in termina, todas as mãos envolvidas são viradas ao mesmo tempo (regra 16 da TDA, edição de 2024); a regra que fixa uma ordem, a 17 da TDA de 2024, só cobre showdowns sem all-in. Em cash games, se foi um all-in pago sem mais ação, quem pagou pode dar muck se perder depois de ver a mão do jogador de all-in (em torneios, todas as mãos envolvidas ficam abertas).
 
 **Q. As regras de all-in mudam entre torneio e cash game?**
 
-A. As regras centrais são as mesmas, mas há duas diferenças práticas. Primeiro, em torneios todas as mãos envolvidas num all-in são abertas assim que as apostas terminam (Regra 16 da TDA) — não dá para dar muck antes do showdown. Em cash games, vale a ordem normal de showdown — a não ser que seja um jogo de no-limit e a aposta tenha terminado antes do river, quando quem foi de all-in vira primeiro (regra 149 das Live Action Rules) — e os jogadores podem dar muck. Segundo, o run it twice é comum em cash games (se todos os que seguem no pote concordarem), mas geralmente não é permitido em torneios.
+A. As regras centrais são as mesmas, mas há duas diferenças práticas. Primeiro, em torneios todas as mãos envolvidas num all-in são abertas assim que as apostas terminam (regra 16 da TDA, edição de 2024) — não dá para dar muck antes do showdown. Em cash games, vale a ordem normal de showdown — a não ser que seja um jogo de no-limit e a aposta tenha terminado antes do river, quando quem foi de all-in vira primeiro (regra 149 das Live Action Rules) — e os jogadores podem dar muck. Segundo, o run it twice é comum em cash games (se todos os que seguem no pote concordarem), mas geralmente não é permitido em torneios.
 
 ---
 

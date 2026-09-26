@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "glossary",
   date: "2026-07-05",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-24",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 mnt",
   emoji: "🧊",
@@ -48,7 +48,7 @@ Istilahnya melukiskan gambarannya: Anda "didinginkan" — tangan panas Anda menj
 
 ![Infografis A♠ A♦ melawan K♥ K♦ pada runout K♠ 7♦ 2♣ 8♥ 3♠ — tabrakan yang sama dilihat dari kedua sisi](/images/holdem-cooler-vs-badbeat.webp "Satu tabrakan, dua label: preflop, kings melawan aces adalah cooler klasik bagi si kings — dan saat king muncul, tangan yang sama persis menjadi bad beat bagi si aces")
 
-Inilah pembeda yang menentukan pemahaman Anda akan istilah ini — dan hampir setiap pemain kasual mengaburkannya. Keduanya terasa mengerikan, dan tak ada satu definisi resmi — tapi dalam arti ketat yang dipakai panduan ini, keduanya berlawanan:
+Inilah pembeda yang menentukan pemahaman Anda akan istilah ini — dan hampir setiap pemain kasual memakai kedua kata ini secara bergantian. Keduanya terasa mengerikan, dan tak ada satu definisi resmi — tapi dalam arti ketat yang dipakai panduan ini, keduanya berlawanan:
 
 - **Cooler** — Anda **tertinggal** saat chip masuk dan **tetap tertinggal.** Tak ada kartu keberuntungan yang menyelamatkan siapa pun; pemenang unggul sepanjang jalan. Anda kalah karena tangan raksasa Anda bertemu yang lebih besar.
 - **Bad beat** — Anda **unggul** (sering kali favorit besar) saat chip masuk, dan lawan Anda **suckout** — mengenai kartu keberuntungan di flop, turn, atau river untuk menyalip Anda.
@@ -132,9 +132,9 @@ Cooler sejati berarti Anda bermain dengan benar dengan tangan kuat dan bertemu t
 
 Karena cooler tak membawa pelajaran, satu-satunya kerusakan nyata yang bisa ia timbulkan adalah pada keputusan *berikutnya* Anda. Lindungilah itu:
 
-1. **Namai dan lepaskan.** Konfirmasi dengan tes lakmus bahwa itu benar-benar tak terhindarkan, lalu biarkan pergi — tak ada yang perlu dipelajari, jadi jangan mengulanginya.
+1. **Namai dan lepaskan.** Tinjau sekali dengan tes lakmus — range, sizing, kedalaman stack. Jika hasilnya tetap benar-benar tak terhindarkan, biarkan pergi; memutarnya ulang berkali-kali tak mengajarkan apa pun.
 2. **Waspadai tilt.** Hal termahal soal cooler bukanlah pot yang Anda hilangkan; melainkan tiga tangan buruk yang Anda mainkan setelahnya untuk mencoba memenangkannya kembali. Kenali dorongan itu dan pelan-pelan.
-3. **Percayai bankroll Anda.** Cooler adalah alasan Anda menjaga bankroll cukup besar untuk menyerap variance. Satu cooler adalah kesalahan pembulatan dalam puluhan ribu tangan — ia hanya menyakiti jika Anda membiarkannya mengubah cara Anda bermain.
+3. **Percayai bankroll Anda.** Cooler adalah alasan Anda menjaga bankroll cukup besar untuk menyerap variance. Di cash game, satu cooler adalah kesalahan pembulatan dalam puluhan ribu tangan — kerusakan yang bertahan datang dari membiarkannya mengubah cara Anda bermain. Di turnamen, ia bisa mengakhiri perjalanan Anda saat itu juga; itulah variance yang Anda terima saat mendaftar, bukan alasan untuk bermain berbeda.
 4. **Tarik napas, atau berjalan.** Jika cooler besar mengguncang Anda, menjauh selama lima menit lebih murah daripada bertahan dan spewing. Hand itu sudah selesai; keunggulan Anda ada di setiap hand yang masih akan datang.
 
 ---

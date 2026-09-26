@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "odds",
   date: "2026-07-03",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-24",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "13 mnt",
   emoji: "🎲",
@@ -133,7 +133,7 @@ Untuk set-mining, ==7,5:1 adalah bayaran impas teoretis, bukan aturan stack yang
 
 </div>
 
-Baris dua overcard dengan enam outs mengandaikan pair dari rank mana pun di antara keduanya akan menang. Melawan two pair, set, atau draw yang lebih kuat, sebagian atau semua kartu pembuat pair itu bisa jadi outs kotor — diskon kartu-kartu itu, jangan perlakukan enam sebagai outs menang yang pasti.
+Baris dua overcard dengan enam outs mengandaikan pair dari rank mana pun di antara keduanya akan menang. Melawan two pair, set, atau draw yang lebih kuat, sebagian atau semua kartu pembuat pair itu bisa jadi outs kotor — diskon kartu-kartu itu, jangan perlakukan enam sebagai outs menang yang pasti. Baris set juga menghitung kartu keempat dari rank Anda: full house saja kira-kira 29,1% dari flop dan 19,6% di turn.
 
 Situasi klasik: Anda nge-flop **flush draw** (sembilan outs). Anda akan sampai di sana ==35% dari waktu hingga river== — lebih baik dari satu banding tiga. Sebuah **open-ended straight draw** (delapan outs) hit 31,5%. Perhatikan dua kolomnya: begitu turn keluar kartu mati, Anda tinggal punya satu kartu tersisa alih-alih dua, jadi odds Anda kira-kira separuh — 35% menjadi 19,6% untuk flush draw — itulah persis kenapa draw jadi lebih mahal dikejar street demi street.
 
@@ -210,10 +210,10 @@ Mitos umum: "royal flush mengalahkan segalanya, jadi ia bisa *seri*." Pot memang
 |:---|:---:|
 | Dibagikan pocket aces | 1 dari 221 |
 | Nge-flop quads dengan pocket pair | 1 dari 408 |
-| Nge-flop straight flush (suited connector) | ~1 dari 4.900 |
+| Nge-flop straight flush (suited connector 54s–JTs) | ~1 dari 4.900 |
 | Membuat royal flush hingga river | 1 dari 30.940 |
 
-**Set over set** — Anda nge-flop set dan kalah dari set lebih besar — adalah cooler pamungkas. Tak ada angka tunggal yang bersih karena bergantung berapa pemain memegang pasangan, tapi jangkarnya begini: *Anda* nge-flop set hanya 11,8% dari waktu, dan lawan melakukan hal sama di board yang sama cukup langka sehingga kebanyakan pemain mengingat setiap kejadiannya. Saat itu terjadi, itu varians, bukan kesalahan — matematika berpihak pada Anda sepanjang jalan. Jika Anda ingin melihat persis bagaimana showdown itu dinilai, [aturan kicker dan tie-breaker](/id/blog/holdem-tiebreak-rules) mencakup semua kasus pelik.
+**Set over set** — Anda nge-flop set dan kalah dari set lebih besar — adalah cooler pamungkas. Tak ada angka tunggal yang bersih karena bergantung berapa pemain memegang pasangan, tapi jangkarnya begini: *Anda* nge-flop set hanya 11,8% dari waktu, dan lawan melakukan hal sama di board yang sama cukup langka sehingga kebanyakan pemain mengingat setiap kejadiannya. Saat itu terjadi, kekalahannya saja tak membuktikan call itu sebuah kesalahan — atau bahwa call itu benar; nilailah dari harga dan kedalaman stack yang Anda punya saat itu, bukan dari showdown-nya. Jika Anda ingin melihat persis bagaimana showdown itu dinilai, [aturan kicker dan tie-breaker](/id/blog/holdem-tiebreak-rules) mencakup semua kasus pelik.
 
 ---
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Berada in position berarti Anda beraksi terakhir — Anda melihat setiap keputusan lawan sebelum mengeluarkan satu chip pun. Contoh solver menunjukkan posisi biasanya meningkatkan realisasi equity, tetapi tak ada kursi yang otomatis terkunci di atas atau di bawah 100%: range, board, dan action bisa membalik pola umumnya. Itulah kenapa UTG membuka ~13% tangan dan button ~43% — dan kenapa posisi menulis ulang setiap keputusan c-bet, bluff, dan pot control di postflop.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-09-24",
-  masterUpdated: "2026-09-22",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "16 mnt",
   emoji: "🎯",
@@ -177,7 +177,7 @@ Setiap kursi mendapat opening range-nya sendiri karena **jumlah pemain yang masi
 | Hijack | ~20% | Peluang steal dimulai |
 | **Cutoff** | **~27%** | Hanya button di belakang — kursi steal utama |
 | **Button** | ==g:**~43%**== | Aksi terakhir dijamin di postflop — open terlebar |
-| Small blind | ~40% saat di-fold ke Anda (menghadapi raise: 3-bet atau fold) | Lebar saat di-fold ke Anda — raise sebagai default, meski melengkapi blind adalah [limp](/id/blog/holdem-limping) yang bisa dibenarkan di pot yang tak di-raise; menghadapi raise, 3-bet atau fold — jangan flat-call |
+| Small blind | ~40% saat di-fold ke Anda (menghadapi raise: 3-bet atau fold) | Lebar saat di-fold ke Anda — raise sebagai default, meski melengkapi blind adalah [limp](/id/blog/holdem-limping) yang bisa dibenarkan di pot yang tak di-raise; menghadapi raise, 3-bet atau fold — nyaris tak pernah flat-call |
 | Big blind | Bertahan lebar vs steal | Menutup aksi + pot odds, bukan open |
 
 ![Meja poker 9 pemain menunjukkan opening range yang melebar dari UTG (~13%, merah ketat) ke Button (~43%, hijau lebar)](/images/holdem-position-play-opening-range.webp "Opening range menurut posisi — UTG membuka ~13%, button ~43%")
@@ -194,11 +194,11 @@ Sebagian besar panduan berhenti di "hindari bermain OOP." Baik — tapi Anda ada
 
 **1. [Check-raise](/id/blog/low-board-check-raise) adalah penyeimbang Anda.** Ini satu-satunya senjata yang dimiliki OOP dan tidak dimiliki IP: karena mereka berharap bisa bet saat di-check kepada mereka, ==g:sebuah check-raise membalikkan autopilot posisi mereka melawan mereka sendiri.== Bangun range-nya dengan jujur — tangan kuat (set, two pair) plus draw dengan equity nyata (open-ender, flush draw) — jadi ia tak pernah semua-bluff atau semua-value.
 
-**2. Bet lebih besar ketika Anda memang bet.** Bet OOP perlu mengakhiri tangan lebih cepat. Sizing yang lebih besar (bayangkan dua-pertiga hingga tiga-perempat pot ketimbang sepertiga) menolak kartu gratis dan float murah yang, tanpa itu, akan diambil lawan Anda berkat posisinya. Bermain small-ball OOP hanya memperpanjang tangan — dan setiap street ekstra menguntungkan pemain yang beraksi terakhir.
+**2. Beri setiap bet sebuah tugas — dan sesuaikan ukurannya dengan spot.** Tidak ada satu ukuran tunggal untuk out of position. Di pot single-raised yang kami solve, pemain OOP yang bet sebagian besar memilih sekitar sepertiga pot (79,6% range small blind memakai ukuran itu di A♠A♥6♦, board ace berpasangan yang sangat menguntungkan raiser). Di pot 3-bet, 3-bettor OOP tetap lebih memilih ukuran kecil di A♦K♠2♥ (57,8%), tapi beralih ke dua pertiga pot di Q♥T♥7♠ dan 8♦5♣2♠. Ukuran besar dipakai untuk menolak kartu gratis dan float murah yang, tanpa itu, akan diambil lawan Anda berkat posisinya; ukuran kecil membiarkan Anda bet dengan range lebar secara murah. Yang merugi adalah bet tanpa rencana — setiap street ekstra yang Anda lalui tanpa arah menguntungkan pemain yang beraksi terakhir.
 
 **3. Pot control berarti lebih banyak check, lebih banyak call, dan fold lebih awal.** Tangan kekuatan sedang OOP menginginkan showdown murah. Lini check-call sampai ke sana; lini bet-lalu-di-raise tidak. Dan ketika barel ketiga tiba dan tangan Anda tak membaik, ingat apa sebenarnya tangan marginal OOP: ==r:bluff-catcher yang under-realize.== Fold river OOP lebih sering daripada yang terasa alami biasanya benar.
 
-**4. Lead (donk-bet) jarang dan spesifik.** Bet ke arah raiser preflop hanya berhasil di board yang menguntungkan range Anda — flop rendah dan terkoneksi yang menghantam range blind-defend dan meleset dari range raiser. Sebagai lini default ia terbaca dan bisa dieksploitasi; sebagai pisau bedah di board yang tepat, ia baik.
+**4. Lead (donk-bet) jarang dan spesifik.** Bet ke arah raiser preflop paling berhasil di board yang menguntungkan range Anda — flop rendah dan terkoneksi yang menghantam range blind-defend dan meleset dari range raiser. Sebagai lini default ia terbaca dan bisa dieksploitasi; sebagai pisau bedah di board yang tepat, ia baik.
 
 **5. Terbaik dari semuanya: jangan sampai ke sana.** Flat-call raise dari small blind, cold-call di middle position dengan tangan terdominasi, bertahan big blind melawan open early-position dengan sampah — sebagian besar penderitaan OOP dibuat sendiri di keputusan preflop.
 
@@ -211,10 +211,10 @@ Sangat besar. Continuation bet pada dasarnya adalah permainan informasi, dan inf
 | Situasi | Frekuensi c-bet solver umum (flop) |
 |---|---|
 | **IP (BTN/CO vs pertahanan blind)** | **~65–75%** board |
-| OOP sebagai pihak yang 3-bet (pot 3-bet dari blind) | Sangat tinggi — di run solver kami big blind c-bet lebih dari 97% dari waktu, baik di Q♥T♥7♠ maupun di 8♦5♣2♠ — dengan ukuran dua pertiga pot; ukuran sepertiga hanya di bawah 1% |
+| OOP sebagai pihak yang 3-bet (pot 3-bet dari blind) | Sangat tinggi — di run solver kami big blind c-bet lebih dari 97% dari waktu, baik di Q♥T♥7♠ maupun di 8♦5♣2♠ — dengan ukuran dua pertiga pot; ukuran sepertiga hanya di bawah 1% (di A♦K♠2♥ justru ukuran sepertiga yang memimpin, 57,8%) |
 | Raiser OOP vs caller IP (pot single-raised) | ~30–45% — paling selektif |
 
-In position, Anda bisa c-bet range lebar — termasuk tangan kosong dan backdoor draw — karena lawan Anda harus merespons tanpa tahu gerakan Anda berikutnya, dan saat di-call Anda tetap beraksi terakhir di turn. Out of position, bet yang sama lebih berisiko: sebuah check-raise mengakhiri bluff Anda, dan sebuah call membuat Anda menebak lebih dulu di setiap street tersisa. Itulah kenapa c-bet buta 100% "karena Anda raise preflop" membakar uang saat OOP di pot single-raised — baris nyaris-100% di atas itu milik pihak yang 3-bet, yang keunggulan range-nya memang mengizinkannya.
+In position, Anda bisa c-bet range lebar — termasuk tangan kosong dan backdoor draw — karena lawan Anda harus merespons tanpa tahu gerakan Anda berikutnya, dan saat di-call Anda tetap beraksi terakhir di turn. Out of position, bet yang sama lebih berisiko: sebuah raise mengakhiri bluff Anda, dan sebuah call membuat Anda menebak lebih dulu di setiap street tersisa. Itulah kenapa c-bet buta 100% "karena Anda raise preflop" membakar uang saat OOP di pot single-raised — baris nyaris-100% di atas itu milik pihak yang 3-bet, yang keunggulan range-nya memang mengizinkannya.
 
 Kerangka sizing dan tekstur board lengkap ada di [panduan continuation bet](/id/blog/holdem-continuation-bet).
 
@@ -236,7 +236,7 @@ Untuk mekanik blind itu sendiri — kenapa mereka ada dan bagaimana taruhan paks
 
 ## 6-Max vs Full Ring — dan Turnamen vs Cash
 
-**6-max memadatkan peta.** Dengan tiga kursi early dihapus, pemain pertama yang beraksi di 6-max hanya menghadapi lima lawan — jadi ==**UTG 6-max bermain seperti lojack full-ring, membuka sekitar ~17%**== ketimbang ~13% UTG full ring. Setiap kursi lain melebar serupa, steal datang lebih sering, dan 3-bet lebih sering secara keseluruhan. Kebocoran paling umum saat berpindah format adalah membawa keketatan 9-max ke 6-max — Anda bakal terus-terusan fold dan pelan-pelan digerus blind.
+**6-max memadatkan peta.** Dengan tiga kursi early dihapus, pemain pertama yang beraksi di 6-max hanya menghadapi lima lawan — jadi ==**UTG 6-max bermain seperti lojack full-ring, membuka sekitar ~17%**== ketimbang ~13% UTG full ring. Kursi-kursi belakang tetap punya jumlah pemain yang sama di belakangnya, jadi range-nya nyaris tak berubah — tapi Anda lebih sering duduk di sana, steal lebih umum, dan 3-bet lebih sering secara keseluruhan. Kebocoran paling umum saat berpindah format adalah membawa keketatan 9-max ke 6-max — Anda bakal terus-terusan fold dan pelan-pelan digerus blind.
 
 **Turnamen mempertahankan mekanik sama dengan taruhan berbeda pada setiap keputusan.** Di cash game, keunggulan posisi berlipat dengan tenang sepanjang jam dan rebuy membuat kebocoran bisa dipulihkan. Di turnamen, stack yang menyusut mengubah teksturnya: di bawah ~15 big blind, permainan runtuh ke arah push/fold di mana nuansa posisi kurang penting, sementara di 20–30 BB steal late-position menjadi mesin bertahan hidup — sampai ICM bubble membuat sebagian steal yang secara matematis baik menjadi bunuh diri turnamen. Perbandingan lengkapnya ada di [panduan turnamen vs cash game](/id/blog/holdem-tournament-vs-cash-game).
 
@@ -251,7 +251,7 @@ Untuk mekanik blind itu sendiri — kenapa mereka ada dan bagaimana taruhan paks
 
 **Q. Apa arti out of position di poker?**
 
-A. Out of position (OOP) berarti Anda harus beraksi sebelum lawan di street postflop — flop, turn, dan river. Anda mengeluarkan chip tanpa tahu apa yang akan mereka lakukan, tak bisa mengambil kartu gratis, dan kesulitan mengendalikan ukuran pot. Blind OOP melawan setiap kursi lain; button tak pernah OOP melawan siapa pun.
+A. Out of position (OOP) berarti Anda harus beraksi sebelum lawan di street postflop — flop, turn, dan river. Anda mengeluarkan chip tanpa tahu apa yang akan mereka lakukan, tak bisa mengambil kartu gratis, dan kesulitan mengendalikan ukuran pot. Blind OOP melawan setiap kursi non-blind (dan small blind juga OOP melawan big blind); button tak pernah OOP melawan siapa pun.
 
 **Q. Siapa yang beraksi lebih dulu — small blind atau big blind?**
 
@@ -271,11 +271,11 @@ A. Dua jawaban, tergantung pertanyaannya. Small blind adalah kursi terburuk seca
 
 **Q. Apakah small blind termasuk early position?**
 
-A. Bukan — small blind adalah blind, bukan kursi "early position". Pemain early position (UTG dan kursi-kursi di sebelahnya) membuka ketat karena seluruh meja beraksi setelah mereka — dan di postflop mereka setidaknya masih beraksi *setelah* blind. Small blind justru kursi yang paling sulit dimainkan: setengah blind sudah terpasang, dan begitu flop keluar dialah yang bicara pertama. Jangan perlakukan kursi ini seperti early position — default modern dari small blind adalah 3-bet atau fold.
+A. Bukan — small blind adalah blind, bukan kursi "early position". Pemain early position (UTG dan kursi-kursi di sebelahnya) membuka ketat karena seluruh meja beraksi setelah mereka — dan di postflop mereka setidaknya masih beraksi *setelah* blind. Small blind justru kursi yang paling sulit dimainkan: setengah blind sudah terpasang, dan begitu flop keluar dialah yang bicara pertama. Jangan perlakukan kursi ini seperti early position — saat menghadapi raise, default modern dari small blind adalah 3-bet atau fold, nyaris tak pernah flat-call; saat di-fold ke Anda, raise hampir setiap kali.
 
 **Q. Lebih baik limp atau raise dari UTG?**
 
-A. Raise atau fold — jangan open-limp. Tangan yang cukup kuat untuk dimainkan dari kursi preflop terburuk cukup kuat untuk raise; limp mengundang pot multiway yang akan Anda mainkan out of position, membatasi persepsi range Anda, dan tak pernah memenangkan blind secara langsung. Pengecualian langka adalah limp behind di belakang limper yang sudah ada di game live pasif dengan pair kecil dan suited connector.
+A. Raise atau fold — jangan open-limp. Tangan yang cukup kuat untuk dimainkan dari kursi preflop terburuk cukup kuat untuk raise; limp mengundang pot multiway yang akan Anda mainkan out of position, membatasi persepsi range Anda, dan tak pernah memenangkan blind secara langsung. UTG tak punya siapa pun di depannya untuk di-limp behind, jadi pengecualian yang biasa — over-limp di belakang limper yang sudah ada di game live pasif dengan pair kecil dan suited connector — milik kursi-kursi yang lebih belakang.
 
 **Q. Seberapa lebar saya harus open dari UTG vs button?**
 
@@ -283,7 +283,7 @@ A. Dari UTG di game full ring, buka kira-kira top ~13% tangan — pair kuat, AK/
 
 **Q. Bagaimana posisi memengaruhi frekuensi c-bet?**
 
-A. In position (button atau cutoff), solver c-bet kira-kira 65–75% flop — Anda beraksi terakhir di setiap street berikutnya, jadi bet lebar, termasuk dengan tangan kosong, tetap aman. Out of position di pot single-raised itu turun ke kira-kira 30–45%, karena check-raise bisa mengakhiri bluff Anda dan sebuah call membuat Anda menebak lebih dulu di turn dan river (sebagai pihak yang 3-bet dari out of position ceritanya lain — keunggulan range membuat Anda bisa c-bet nyaris setiap flop di board yang kami uji). C-bet dengan frekuensi sama OOP seperti IP adalah salah satu kebocoran paling umum dan mahal.
+A. In position (button atau cutoff), solver c-bet kira-kira 65–75% flop — Anda beraksi terakhir di setiap street berikutnya, jadi bet lebar, termasuk dengan tangan kosong, tetap aman. Out of position di pot single-raised itu turun ke kira-kira 30–45%, karena raise bisa mengakhiri bluff Anda dan sebuah call membuat Anda menebak lebih dulu di turn dan river (sebagai pihak yang 3-bet dari out of position ceritanya lain — keunggulan range membuat Anda bisa c-bet nyaris setiap flop di board yang kami uji). C-bet dengan frekuensi sama OOP seperti IP adalah salah satu kebocoran paling umum dan mahal.
 
 **Q. Apakah Anda harus selalu 3-bet dari small blind?**
 
@@ -295,8 +295,8 @@ A. Ketika Anda masuk ke pot yang sudah di-raise, sebagian besar ya — default m
 
 1. **Posisi meningkatkan equity realization secara rata-rata.** Tak ada kursi yang tetap di atas atau di bawah 100%; range, board, dan action menentukan angkanya. Keunggulan umumnya datang dari beraksi terakhir, bukan dari kartu lebih baik.
 2. **Range bergeser bersama posisi.** UTG membuka ~13%, button ==g:~43%== — dan setiap kursi di antaranya mendapat satu anak tangga. ==r:Memainkan tangan button dari UTG menguras chip.==
-3. **Button adalah kursi terbaik; blind adalah yang terburuk.** BB kehilangan chip mentah terbanyak (taruhan paksa); SB adalah kursi terburuk untuk benar-benar dimainkan (pertama beraksi setiap street). Lindungi button Anda, dan 3-bet-atau-fold small blind Anda.
-4. **OOP bukan tanpa harapan — ia soal disiplin.** Check-raise sebagai penyeimbang Anda, perbesar sizing saat bet, kendalikan pot dengan tangan sedang, dan fold river lebih sering daripada yang terasa alami.
+3. **Button adalah kursi terbaik; blind adalah yang terburuk.** BB kehilangan chip mentah terbanyak (taruhan paksa); SB adalah kursi terburuk untuk benar-benar dimainkan (pertama beraksi setiap street). Lindungi button Anda, dan saat menghadapi raise dari small blind, 3-bet atau fold hampir setiap kali.
+4. **OOP bukan tanpa harapan — ia soal disiplin.** Check-raise sebagai penyeimbang Anda, sesuaikan sizing bet dengan board dan jenis pot, kendalikan pot dengan tangan sedang, dan fold river lebih sering daripada yang terasa alami.
 5. **Raise atau fold under the gun.** Open-limp UTG menggabungkan kursi preflop terburuk dengan lini terlemah.
 6. **6-max memadatkan peta.** UTG 6-max bermain seperti lojack full-ring (~17%) — kalibrasi ulang saat Anda berpindah format.
 

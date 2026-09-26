@@ -9,8 +9,8 @@ export const POST: Post = {
   tldr: "Pada A♥7♦2♣ selepas BTN open dan BB call, BB check 98.2% daripada seluruh range, termasuk top pair, two pair dan set. Equity ialah 45.1% berbanding 54.9%; jurang yang lebih ketara ialah realisasi equity: 84.0% untuk BB yang bertindak dahulu, berbanding 113.1% untuk BTN.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-15",
-  masterUpdated: "2026-09-02",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   readTime: "9 minit",
   emoji: "🅰️",
   image: "/images/gto-srp-dry-ace-oop-ms.webp",
@@ -66,7 +66,7 @@ Daripada 464 kombo, kira-kira lapan kombo bet. Jumlah kedua-dua saiz ialah 1.9% 
 
 Check membolehkan tangan ini dimainkan dalam pot yang lebih sesuai. Lead dengan satu pair, tanpa posisi, terhadap pemain yang raise preflop membesarkan pot sebelum anda mengetahui tindak balasnya. Untuk tangan yang selesa mencapai showdown tetapi tidak mahu menghadapi tekanan besar, itu boleh menjadi cara bermain yang mahal.
 
-Ada tiga sebab utama. Pertama, **EQR (realisasi equity)**: BB merealisasikan 84.0% daripada equity, BTN 113.1%. Membesarkan pot ketika OOP meningkatkan kesan jurang itu. Kedua, pada tekstur ini BTN lazimnya mempunyai alasan untuk c-bet dengan luas: **check mengekalkan bluff BTN**, sedangkan lead boleh membuat bluff itu fold tanpa membayar apa-apa. Ketiga, bahagian terkuat range BB terhad: AA, AK dan AQ tiada dalam range call contoh ini, lalu lead mendedahkan BB kepada raise daripada tangan yang sangat kuat.
+Ada tiga sebab utama. Pertama, **EQR (realisasi equity)**: BB merealisasikan 84.0% daripada equity, BTN 113.1%. Membesarkan pot ketika OOP meningkatkan kesan jurang itu. Kedua, pada tekstur ini BTN lazimnya mempunyai alasan untuk c-bet dengan luas: **check mengekalkan bluff BTN**, sedangkan lead boleh membuat bluff itu fold tanpa membayar apa-apa. Ketiga, bahagian terkuat range BB terhad: AA, AK dan AQ tiada dalam range call contoh ini, lalu lead mendedahkan BB kepada raise daripada ace kuat, dan kebanyakan range BB tidak dapat meneruskan terhadapnya — hanya 24 kombo mampu bertahan menghadapi raise (set 77 dan 22, two pair A7 dan A2). (Nod raise tidak dikira dalam contoh ini.)
 
 Masalahnya **bukan** semua tangan lebih lemah akan fold. Range open BTN masih mengandungi setiap Ax hingga A2, di samping underpair dan pair tujuh. Banyak tangan yang lebih lemah boleh call. Yang perlu dinilai ialah saiz pot yang anda bina dan betapa sukarnya memainkan pot itu kemudian.
 

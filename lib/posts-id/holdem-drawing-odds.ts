@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "odds",
   date: "2026-07-04",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-24",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "🎲",
@@ -43,9 +43,9 @@ Itulah drawing odds sebenarnya: bukan keberuntungan, melainkan ==matematika teta
 
 | Pegangan | Flop jadi | Flop draw-nya | Selesaikan draw hingga river |
 |:---|:---:|:---|:---|
-| Pocket pair → set | 11,8% (7,5:1) | — | set→full house atau quads 33% hingga river |
+| Pocket pair → set | 11,8% (7,5:1) | — | set→full house atau quads 33,4% hingga river |
 | Dua suited → flush | 0,84% (118:1) | 10,9% flush draw | 35% (9 outs) |
-| Connectors → straight | 1,3% (76:1) | ~10% OESD | 31,5% (8 outs) |
+| Connectors 54–JT → straight | 1,3% (76:1) | ~10% OESD | 31,5% (8 outs) |
 | Dua unpaired → pair | ~32% | — | — |
 | Pocket pair → quads | 0,245% (407:1) | — | — |
 
@@ -86,7 +86,7 @@ Set mining adalah play [implied odds](/id/blog/holdem-implied-odds "thumb:/image
 Dua angka terkait yang sering ditanyakan:
 
 - **Kena set hingga river** (dari preflop, melihat kelima kartu board) adalah ==**19,2%**== — 1 − C(48,5)/C(50,5). Lebih tinggi dari angka flop karena Anda mendapat dua kartu lagi, tapi Anda tak bisa mengandalkan mencapai river dengan murah, itulah mengapa angka flop yang menentukan set mining.
-- **Set over set** — dua pemain dengan pocket pair sama-sama flop set di tangan yang sama, dan yang lebih kecil kalah — tak punya satu angka tetap karena tergantung berapa banyak lawan pegang pair, tapi dengan dua pemain sama-sama pegang pair, peluang *keduanya* flop set mendarat dekat ~1%. Inilah cooler klasik: matematika ada di pihak Anda sepanjang jalan.
+- **Set over set** — dua pemain dengan pocket pair sama-sama flop set di tangan yang sama, dan yang lebih kecil kalah — tak punya satu angka tetap karena tergantung berapa banyak lawan pegang pair, tapi dengan dua pemain sama-sama pegang pair, peluang *keduanya* flop set mendarat dekat ~1%. Inilah cooler klasik — dan kekalahannya saja tak memberi tahu Anda apakah call set mining itu benar; harga dan stack-lah yang menentukan.
 
 ---
 
@@ -113,7 +113,7 @@ Jadi kalimat jujurnya: dua kartu suited flop **draw** jauh lebih sering daripada
 
 Angka penyelesaian terpecah per street, yang penting begitu masih ada taruhan tersisa:
 
-- **Flop → river (kedua kartu):** 35,0% — pakai ini hanya saat Anda all-in di flop.
+- **Flop → river (kedua kartu):** 35,0% — pakai ini hanya saat Anda akan melihat kedua kartu tanpa taruhan lagi (Anda all-in, atau Anda sudah call sebuah all-in).
 - **Flop → turn (satu kartu):** 9 ÷ 47 = 19,1%.
 - **Turn → river (satu kartu):** 9 ÷ 46 = 19,6%.
 
@@ -149,7 +149,7 @@ Perhatikan OESD (31,5%) dan flush draw (35%) berdekatan — keduanya "satu draw 
 | **Quads** | Pocket pair | 0,245% · 407:1 | 48 ÷ 19.600 |
 | **Full house** | Pocket pair | 0,98% · 101:1 | 192 ÷ 19.600 |
 | **Trips** | Dua kartu unpaired | 1,35% · 73:1 | 264 ÷ 19.600 |
-| **Straight flush** | Suited connectors | 0,02% · ~4.900:1 | 4 ÷ 19.600 |
+| **Straight flush** | Suited connectors 54s–JTs | 0,02% · ~4.900:1 | 4 ÷ 19.600 |
 
 </div>
 
@@ -190,7 +190,7 @@ Yang satu ini mengejutkan orang: kalau **Anda** pegang aces di meja 10-handed, p
 
 **Q. Berapa peluang flop set?**
 
-A. Sekitar 11,8%, atau 1 dari 8,5, saat Anda pegang pocket pair — biasanya dikutip sebagai "7,5:1 melawan". Ia berasal dari 1 − C(48,3)/C(50,3): dari 19.600 flop yang mungkin, 17.296 meleset dari pair Anda. Angka itu adalah seluruh dasar apakah set mining sebuah pair kecil menguntungkan.
+A. Sekitar 11,8%, atau 1 dari 8,5, saat Anda pegang pocket pair — biasanya dikutip sebagai "7,5:1 melawan". Ia berasal dari 1 − C(48,3)/C(50,3): dari 19.600 flop yang mungkin, 17.296 meleset dari pair Anda. Angka itu adalah titik awal untuk set mining sebuah pair kecil — apakah call-nya menguntungkan juga tergantung seberapa banyak yang bisa Anda menangkan saat kena.
 
 **Q. Mengapa orang bilang 7,5:1 tapi juga 1 dari 8?**
 
@@ -222,21 +222,21 @@ A. Straight draw adalah empat kartu menuju straight. Open-ended straight draw (s
 
 **Q. Berapa peluang flop quads?**
 
-A. 0,245%, atau 407:1, memegang pocket pair — ada tepat 48 flop (dua kartu terakhir Anda yang cocok plus kartu ketiga apa pun, C(48,1)) dari 19.600. Flop straight flush bahkan lebih langka pada kira-kira 1 dari 4.900.
+A. 0,245%, atau 407:1, memegang pocket pair — ada tepat 48 flop (dua kartu terakhir Anda yang cocok plus kartu ketiga apa pun, C(48,1)) dari 19.600. Flop straight flush dengan suited connector dari 54s sampai JTs bahkan lebih langka pada kira-kira 1 dari 4.900.
 
 **Q. Berapa peluang dibagikan pocket aces?**
 
-A. 220:1 (0,45%) untuk aces spesifik — 6 dari 1.326 kombinasi awal. Pocket pair apa pun jauh lebih umum pada 16:1 (5,9%). Dan kalau Anda pegang aces di meja penuh, pemain lain yang juga pegang aces kira-kira 1 dari 136.
+A. 220:1 (0,45%) untuk aces spesifik — 6 dari 1.326 kombinasi awal. Pocket pair apa pun jauh lebih umum pada 16:1 (5,9%). Dan kalau Anda pegang aces di meja 10-handed, pemain lain yang juga pegang aces kira-kira 1 dari 136 (sekitar 1 dari 153 di meja 9-handed).
 
 **Q. Berapa peluang set over set?**
 
-A. Tak ada satu angka tetap — tergantung berapa banyak lawan pegang pocket pair — tapi saat dua pemain sama-sama punya pair dan sama-sama flop set, itu kira-kira 1%. Inilah cooler pamungkas: Anda flop set hanya 11,8% dari waktu sejak awal, jadi dua di antara Anda melakukannya di board yang sama adalah cerita, bukan kesalahan.
+A. Tak ada satu angka tetap — tergantung berapa banyak lawan pegang pocket pair — tapi saat dua pemain sama-sama punya pair dan sama-sama flop set, itu kira-kira 1%. Inilah cooler pamungkas: Anda flop set hanya 11,8% dari waktu sejak awal, jadi dua di antara Anda melakukannya di board yang sama itu langka — dan hasilnya saja tak menunjukkan apakah salah satu call itu sebuah kesalahan.
 
 ---
 
 ## 3 Hal yang Harus Diingat
 
-1. **Flop set: 11,8% (7,5:1).** Angka yang menentukan setiap call set mining — hanya call cukup dalam agar dibayar 15× atau lebih saat Anda kena.
+1. **Flop set: 11,8% (7,5:1).** Titik awal untuk setiap call set mining — kedalaman stack dan lawan yang cenderung membayar menentukan apakah itu menguntungkan, jadi targetkan menang 15× atau lebih saat Anda kena.
 2. **Jadi vs draw vs selesai adalah angka berbeda.** Dua kartu suited flop flush jadi 0,84%, flush draw 10,9%, dan menyelesaikan draw itu 35%. Jangan pernah mengutip yang keliru.
 3. **Sebuah draw besar kira-kira satu dari tiga hingga river.** Flush draw 35%, open-ender 31,5% — dan kira-kira satu dari lima sampai enam pada satu street.
 

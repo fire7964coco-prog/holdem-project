@@ -30,7 +30,7 @@ export const POST: Post = {
   category: "strategy",
   date: "2026-09-02",
   updated: "2026-09-26",
-  masterUpdated: "2026-08-21",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🅰️",
@@ -147,7 +147,7 @@ Tres líneas son todo el spot.
 
 - **Los trips de la ciega grande no llevan ni A-K ni A-Q.** Esas hacen 3-bet contra una apertura de 3bb de la ciega pequeña en lugar de pagarse. Los trips altos que solo tiene la ciega pequeña son ==8 combos de A-K + 8 de A-Q + 6 de A-J de distinto palo = 22 combos==. Los mismos trips, y la pelea de kickers ya está decidida.
 - **Los quads son solo de la ciega pequeña.** Con A♠ y A♥ en el board, los únicos ases que quedan son A♦ y A♣, así que AA es **exactamente un combo**. La ciega grande hace 3-bet con AA y tiene cero.
-- **Más de la mitad del rango de la ciega grande no es nada.** 260 combos (51.5%) no ligaron. Esa es la porción que una sola apuesta puede hacer foldear.
+- **Más de la mitad del rango de la ciega grande no es nada.** 260 combos (51.5%) no ligaron. Esa es la bolsa sobre la que presiona una apuesta, no una tasa de fold: frente a un tercio del bote, la MDF dice que hay que conservar cerca del 75% del rango, así que un rival equilibrado foldea más bien una cuarta parte. (La respuesta de la ciega grande no está en este solve.)
 
 Lo único exactamente igualado son los full: las dos tienen ==3 combos de 66 + 6 combos de A-6 = 9==. **Quita esa única casilla y todas las clases de arriba se inclinan hacia la ciega pequeña, mientras que solo el fondo — las manos que fallaron — pesa 11.7 puntos más para la ciega grande.**
 
@@ -169,7 +169,7 @@ El bote es de 6bb, así que la parte de la ciega pequeña es ==6 × 56.2% = 3.37
 
 Los botes de 3-bet eran lo contrario. En el [board bajo 8-5-2](/es/blog/3bet-pot-low-board "thumb:/images/gto-3bp-low-oop-es.webp") la ciega grande usaba dos tercios del bote el 97.8% de las veces, porque ese rango se partía casi por la mitad en **sobrepares (overpairs) o A-high** — una forma polarizada. Un rango estirado hacia los extremos pide un tamaño grande.
 
-Este spot no es eso. El rango de la ciega pequeña corre **de forma continua** — trips 17.5%, doble pareja 18.5%, K-high 22.3%, fallos 39.8%. Con esa forma, empujar todo el rango con un tamaño pequeño vale más: haces foldear el 51.5% del rival y eso ya es beneficio, y cuando no foldean el bote se queda lo bastante pequeño como para que los 97bb de detrás nunca corran peligro.
+Este spot no es eso. El rango de la ciega pequeña corre **de forma continua** — trips 17.5%, doble pareja 18.5%, K-high 22.3%, fallos 39.8%. Con esa forma, empujar todo el rango con un tamaño pequeño vale más: el 51.5% de fallos del rival es sobre lo que presiona una apuesta pequeña (un farol de 2bb en un bote de 6bb solo necesita un 25% de folds para no perder), y la apuesta en sí arriesga ahora solo 2bb, aunque los 97bb de detrás todavía pueden entrar en juego en el turn y el river.
 
 :::note[⚠ Este spot de estudio se resolvió con dos tamaños candidatos, 33% y 75%. Añade uno más pequeño — un quinto o un cuarto del bote — y ese 79.6% podría migrar allí. Léelo como "el pequeño de los tamaños ofrecidos", no como "el 33% es la respuesta".]:::
 
@@ -186,7 +186,7 @@ La razón está en **quién te paga.** KK hace doble pareja con los ases del boa
 - **No conviertas en regla lo de "board pareado, así que check".** Es 3.0% en 6-6-3 y 80.1% en A-A-6. La prueba no es si el board viene pareado, y **tampoco cuántos combos de ese valor tienes** — en 6-6-3 la ciega grande tenía los seises más cargados (5.3% contra 4.0%) y aun así apostó solo un 3.0%. La prueba es **si tu rango *en conjunto* es mejor que el suyo.** Aquí la apuesta llegó al 80% porque la parte alta y el resto se inclinaron **hacia el mismo lado**.
 - **Con dos ases fuera, no des por hecho que tu as no vale nada.** Si el rival hace 3-bet con A-K y A-Q, la pelea de kickers ya se inclina de tu lado. **Eso sí, se apoya en que él haga 3-bet** — contra una mesa que solo paga con A-K y A-Q la premisa se cae, así que con unos trips de kicker flojo apuesta pero mantente fuera de una guerra de subidas.
 - **Tamaño pequeño, frecuencia alta.** Cuando el rango corre de forma continua, empujar ancho con un tercio del bote es mejor. El tamaño grande es la herramienta para [un rango partido en fuerte y débil](/es/blog/3bet-pot-low-board) — aunque incluso dentro de los botes de 3-bet la razón cambia en [un board cargado de proyectos](/es/blog/3bet-pot-bet-sizing "thumb:/images/gto-3bp-dynamic-oop-es.webp"), donde una apuesta grande sirve para mantener al rival a mal precio. **Ten en cuenta además que el 80.1% es un cálculo mano a mano** — con más de un rival dentro, recorta mucho las apuestas de las manos falladas y estrecha hacia trips y doble pareja.
-- **No apuestes KK y QQ "porque son fuertes".** En este board les cuesta que las paguen manos peores. Hacer check para atrapar los faroles del rival es mejor. ⚠ Eso es **un juicio sacado de la composición de rangos**, no un valor que esta serie haya medido — el spot de estudio solo enseña la frecuencia de la primera acción del flop, y en ninguna parte de la serie hay resuelto un nodo posterior al check. **También asume que el rival mezcla faroles** — contra alguien que casi nunca lo hace, una apuesta que llega después de tu check suele ser un as, y foldear gana más que atrincherarse.
+- **No apuestes KK y QQ "porque son fuertes".** En este board les cuesta que las paguen manos peores. Hacer check para atrapar los faroles del rival es mejor. ⚠ Eso es **un juicio sacado de la composición de rangos**, no un valor que esta serie haya medido — el spot de estudio solo enseña la frecuencia de la primera acción del flop, y para este spot no hay resuelto ningún nodo posterior al check (el único nodo de check y luego apuesta de la serie es el re-solve del [board bajo rainbow](/es/blog/low-board-check-raise)). **También asume que el rival mezcla faroles** — contra alguien que casi nunca lo hace, una apuesta que llega después de tu check suele ser un as, y foldear gana más que atrincherarse.
 
 :::readnext[Sigue leyendo]
 /es/blog/blind-battle-connected-board | Mismo asiento, mismo stack — y la apuesta cae del 67% al 9.6% | /images/gto-sb-connected-oop-es.webp
@@ -205,7 +205,7 @@ A. Los trips se hacen cuando el board enseña dos cartas del mismo valor y tú l
 
 **Q. Si también apuestas con manos que fallaron, ¿eso no es farolear?**
 
-A. Mano por mano, sí. Pero en GTO **farolear no es "estoy engañando con esta mano" — es "qué porcentaje de faroles hay en mi rango".** El solver no decide si una mano es farol; decide **la frecuencia de apuesta de todo el rango.** Con el 51.5% del rango rival fallado, la apuesta se paga sola, y cuando no los hace foldear, los 88 combos de trips de la ciega pequeña recogen. El valor y el farol salen con el mismo tamaño, así que el rival no puede distinguirlos.
+A. Mano por mano, sí. Pero en GTO **farolear no es "estoy engañando con esta mano" — es "qué porcentaje de faroles hay en mi rango".** El solver no etiqueta una mano como farol; fija **una frecuencia para cada mano**, y la frecuencia de apuesta del rango es simplemente la media de esas frecuencias sobre sus combos. Con el 51.5% del rango rival fallado, una apuesta pequeña tiene mucho sobre lo que presionar, y cuando no los hace foldear, los 88 combos de trips de la ciega pequeña recogen. El valor y el farol salen con el mismo tamaño, así que el rival no puede distinguirlos.
 
 **Q. En un board como A-A-6, ¿qué probabilidad hay de que el rival tenga un as?**
 

@@ -23,7 +23,7 @@ export const POST: Post = {
   category: "strategy",
   date: "2026-09-03",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-02",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 分鐘",
   emoji: "⚔️",
@@ -49,7 +49,7 @@ export const POST: Post = {
 局面 | SB 開池 3bb → BB 跟注（盲位對戰）
 翻牌 | K♥ 10♦ 6♠（彩虹）
 底池 · 籌碼量 | 底池 6bb · 有效籌碼 97bb · **籌碼與底池比（SPR） 16.2**
-結果 | SB 下注 **67.4%**——第一個由不利位置一方領頭的單加注底池
+結果 | SB 下注 **67.4%**——第一個由不利位置一方領頭過半的單加注底池
 :::
 
 > **快速解答**
@@ -101,7 +101,7 @@ export const POST: Post = {
 
 ## 不利位置的一方為什麼會先下注？
 
-**因為這是翻前攻擊者同時在翻牌圈先動作的那個座位。** ⚠ 那是一個*必要*條件，不是充分條件——同樣的結構在 [⑫](/zh-hant/blog/blind-battle-connected-board "thumb:/images/gto-sb-connected-oop-zh-hant.webp") 產生 **9.6%**，在 [⑬](/zh-hant/blog/ace-paired-board-strategy "thumb:/images/gto-sb-paired-ace-oop-zh-hant.webp") 產生 **80.1%**。座位只是把門打開；牌面決定你走進去多遠。
+**因為這是翻前攻擊者同時在翻牌圈先動作的那個座位。** ⚠ 在這個系列裡，每一個過半的領打都來自這個座位，但座位什麼都保證不了，而跟注方也照樣可以有一部分時候領打（④ 是 23.7%）。同樣的結構在 [⑫](/zh-hant/blog/blind-battle-connected-board "thumb:/images/gto-sb-connected-oop-zh-hant.webp") 產生 **9.6%**，在 [⑬](/zh-hant/blog/ace-paired-board-strategy "thumb:/images/gto-sb-paired-ace-oop-zh-hant.webp") 產生 **80.1%**。座位只是把門打開；牌面決定你走進去多遠。
 
 在一手普通的牌裡，這兩件事是分開的。按鈕位開池、大盲位跟注時，**攻擊者是按鈕位，但第一個動作的是大盲位。** 那就是「先過牌再吃持續下注（c-bet）」這個結構的來源，也是 ① 到 ⑦ 的樣子。
 
@@ -117,7 +117,7 @@ export const POST: Post = {
 
 勝率（equity）給這個優勢一個數字。**SB 55.3% 對 BB 44.7%。** 在 ① 到 ⑦ 裡，不利位置那一方落在 45.1%–48.5%，永遠不到一半——方向正好相反。
 
-:::pull[要不要先下注，決定的不是位置，而是你的範圍在這個特定牌面上有多強。]:::
+:::pull[位置不利，決定不了你要不要先下注——大部分的工作，是你的範圍和這個特定牌面怎麼對上在做。]:::
 
 位置不利這件事，①–⑦ 的大盲位和這裡的小盲位是一樣的。把兩者分開的是**範圍和牌面之間的關係**——⚠ 而且你不能把它化約成「範圍」兩個字。在 [7-6-5 的牌面](/zh-hant/blog/blind-battle-connected-board)上，範圍是*一模一樣*的，過牌卻跑到 90.4%。
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "SB के open और BB के call के बाद K♥T♦6♠ पर पहला action 67.4% bet और 32.6% check है। पहले सात single-raised pots में OOP खिलाड़ी केवल 0.1% से 23.7% bet करता था। यहाँ दो बातें बदलीं: OOP अब caller की जगह raiser है, और बोर्ड उसकी range को सूट करता है। दोनों मिलकर OOP का EQR 103.1% तक पहुँचाते हैं।",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-15",
-  masterUpdated: "2026-09-02",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   readTime: "10 मिनट",
   emoji: "⚔️",
   image: "/images/gto-sb-king-mid-oop-hi.webp",
@@ -79,7 +79,7 @@ Pot · stack | Pot 6 bb · प्रभावी stack 97 bb · **SPR 16.2**
 
 ## OOP खिलाड़ी यहाँ पहले bet क्यों करता है?
 
-**यहाँ preflop aggressor ही flop पर पहले action करता है।** ⚠ इस c-bet वाली संरचना के लिए यह ज़रूरी है, पर अपने-आप पर्याप्त नहीं। वही बनावट [⑫ पर](/hi/blog/blind-battle-connected-board "thumb:/images/gto-sb-connected-oop-hi.webp") **9.6%** और [⑬ पर](/hi/blog/ace-paired-board-strategy "thumb:/images/gto-sb-paired-ace-oop-hi.webp") **80.1%** देती है। भूमिका आधार बनाती है; कितना bet होगा, बोर्ड तय करने में मदद करता है।
+**यहाँ preflop aggressor ही flop पर पहले action करता है।** ⚠ इस सीरीज़ में आधे से अधिक lead वाले सभी उदाहरण इसी सीट से आते हैं, पर सीट कुछ गारंटी नहीं देती, और caller भी कुछ हद तक lead कर सकता है (④ पर 23.7%)। वही बनावट [⑫ पर](/hi/blog/blind-battle-connected-board "thumb:/images/gto-sb-connected-oop-hi.webp") **9.6%** और [⑬ पर](/hi/blog/ace-paired-board-strategy "thumb:/images/gto-sb-paired-ace-oop-hi.webp") **80.1%** देती है। भूमिका आधार बनाती है; कितना bet होगा, बोर्ड तय करने में मदद करता है।
 
 BTN open और BB call में दोनों भूमिकाएँ बँटती हैं: **aggressor BTN है, पर पहले action BB करता है**। यही check के बाद c-bet की संरचना बनाता है; ①–⑦ में हमने यही देखा।
 
@@ -95,7 +95,7 @@ Blind battle में दोनों एक हो जाती हैं। S
 
 Equity इस बढ़त को संख्या देती है: **SB 55.3%, BB 44.7%**। ①–⑦ में OOP 45.1%–48.5% था, हर बार आधे से कम। यहाँ दिशा उलटी है।
 
-:::pull[पहले bet करने का निर्णय केवल position से नहीं, इस बोर्ड पर आपकी पूरी range की ताक़त से करें।]:::
+:::pull[पहले bet करना है या नहीं, यह position की कमी तय नहीं करती; ज़्यादातर काम इस बात का है कि आपकी range इस बोर्ड से कैसे जुड़ती है।]:::
 
 Position की कमी ①–⑦ के BB और यहाँ के SB, दोनों में है। फ़र्क़ **range और बोर्ड के संबंध** का है। ⚠ केवल “range” कहना भी अधूरा है: [7-6-5](/hi/blog/blind-battle-connected-board) पर range *बिल्कुल वही* है, पर check 90.4% तक जाता है।
 

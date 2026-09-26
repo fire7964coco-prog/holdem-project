@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "6♠5♥2♦ पर BB 96.8% check और 3.2% lead करता है, जबकि equity 48.3% है। Straight सिर्फ 43 से बनेगा और वह किसी range में नहीं है; दोनों के पास बराबर Sets हैं। इसलिए BB को सबसे ऊँचे हैंडों में अलग बढ़त नहीं मिलती। 2026-08-20 के अलग solve में, BTN की 1.8 bb bet के बाद BB 14.9% check-raise करता है। इस प्रतिक्रिया को पहले से गणना किए root परिणाम से अलग पढ़ें।",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-15",
-  masterUpdated: "2026-09-02",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   readTime: "11 मिनट",
   emoji: "🌊",
   image: "/images/gto-srp-low-rainbow-oop-hi.webp",
@@ -198,7 +198,7 @@ Value का हिस्सा भी देखें। Sets और Two Pair �
 | Backdoor Flush | **20.5%** | 18.5% |
 | Draw नहीं | 60.2% | **66.8%** |
 
-**Gutshots 18.5% बनाम 13.9% हैं।** Sets दोनों में 1.8%, Overpairs 4.9% बनाम 9.5% होने के बीच यही Gutshot समूह raising range का अहम स्रोत है। BB जिस वर्ग में अधिक हैंड रखता है, सॉल्वर उसी से कई raise उम्मीदवार चुनता है। हर Gutshot का हर बार raise होना इससे नहीं निकलता।
+**Gutshots 18.5% बनाम 13.9% हैं।** Sets दोनों में 1.8%, Overpairs 4.9% बनाम 9.5% होने के बीच यही Gutshot समूह raising range का अहम स्रोत है। BB जिस वर्ग में अधिक हैंड रखता है, सॉल्वर उसी से कई raise उम्मीदवार चुनता है। हर Gutshot का हर बार raise होना इससे नहीं निकलता: 487 का 18.5% लगभग 90 Gutshot कॉम्बो है, जो कुल 69.7 raising कॉम्बो से भी अधिक है, और सूची में ऊपर के J4s तथा Q4s भी केवल 67–90% raise करते हैं।
 
 ## 6-5-2 wet board है या dry?
 
@@ -252,7 +252,7 @@ A. उद्धृत अलग solve में नौ Set कॉम्बो (6
 
 **Q. क्या check-raise खेल के नियमों में ठीक है? क्या यह बुरा व्यवहार है?**
 
-A. सामान्य Hold'em में check के बाद सामने bet आए तो उसी round में raise करना मान्य action है; क्रम [betting actions](/hi/blog/holdem-betting-actions) में समझाया गया है। पुराने कुछ home games में इसे house rule से रोका जाता था, इसलिए शिष्टाचार को लेकर शंका बची है। आधुनिक रणनीति में यह सामान्य action है। इस स्पॉट के ऐतिहासिक solve से check-raise हटाएँ तो 14.9% वाली रणनीति को दोबारा समायोजित करना पड़ेगा।
+A. लगभग हर casino और सामान्य online games में check के बाद सामने bet आए तो उसी round में raise करना मान्य action है; केवल किसी निजी home game का अपना house rule अलग हो सकता है। नियम का क्रम [betting actions](/hi/blog/holdem-betting-actions) में समझाया गया है। पुराने कुछ home games में इसे house rule से रोका जाता था, इसलिए शिष्टाचार को लेकर शंका बची है। आधुनिक रणनीति में यह सामान्य action है। इस स्पॉट के ऐतिहासिक solve से check-raise हटाएँ तो 14.9% वाली रणनीति को दोबारा समायोजित करना पड़ेगा।
 
 **Q. क्या यही frequencies मेरे stakes पर भी लागू होंगी?**
 

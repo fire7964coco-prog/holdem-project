@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Foldar é a habilidade mais subestimada do poker — o pior resultado de um fold é zero, enquanto um call perdedor sangra fichas toda vez. Um bom jogador folda cerca de 75–85% das mãos antes do flop, larga mãos que erraram e projetos fracos que não batem suas pot odds depois dele e — o mais difícil de tudo — abre mão de mãos fortes mas derrotadas quando a linha de um adversário passivo grita valor. A maioria não paga demais porque não sabe ler mãos; paga porque as fichas que já estão no pote parecem suas. Não são.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-22",
-  masterUpdated: "2026-09-13",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🛡️",
@@ -38,7 +38,7 @@ Matemática > medo | O único motivo para foldar, ou não
 
 Diante de uma aposta você tem três opções: foldar, pagar ou aumentar. Sem aposta na sua frente, são duas: dar check ou apostar. Foldar significa entregar o pote e não arriscar mais nenhuma ficha. Jogadores novos encaram isso como perder. Os vencedores encaram como ==recusar-se a perder mais.==
 
-Aqui está a ideia que reformula tudo: **o valor esperado de um fold, daquela decisão em diante, é zero.** Quando você está genuinamente derrotado, toda outra opção é *negativa* — pagar te custa o call, aumentar te custa mais. Zero vence negativo. Foldar não ganha o pote, mas ganha o jogo de longo prazo ao não doar fichas em spots nos quais você está atrás.
+Aqui está a ideia que reformula tudo: **o valor esperado de um fold, daquela decisão em diante, é zero.** Quando você está genuinamente derrotado (atrás agora, sem odds para alcançar nem fold equity para tirá-lo da mão), toda outra opção é *negativa*: pagar te custa o call, aumentar te custa mais. Zero vence negativo. Foldar não ganha o pote, mas ganha o jogo de longo prazo ao não doar fichas em spots nos quais você está atrás.
 
 Uma ressalva precisa, porque importa: foldar *não é de graça.* As fichas que já estão no pote se foram no instante em que você as colocou ali — foldar só te impede de jogar *dinheiro bom atrás de dinheiro ruim.* Essa distinção é toda a psicologia do fold, e vamos voltar a ela. Primeiro, a mecânica.
 

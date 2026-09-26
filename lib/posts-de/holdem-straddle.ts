@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ein Straddle ist ein optionaler Blind-Einsatz – meist das Doppelte des Big Blinds – der gesetzt wird, bevor die Karten ausgeteilt werden. Er kauft dem Straddler die letzte Action preflop und die Option zu raisen, und verdoppelt so den Einsatz. In nahezu jedem Fall ist es ein -EV-Spielzug und fast immer auf Cashgames nach Hausregeln beschränkt.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-09-22",
-  masterUpdated: "2026-09-22",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "💰",
@@ -86,7 +86,7 @@ Nicht alle Straddles sind gleich – und die Unterschiede drehen sich alle darum
 | **Mississippi** | Jeder Platz (oft Button/CO) | Links vom Straddler | Preflop – postflop nur vom Button* | Ja |
 | **Button** | Der Button | Small Blind | Pre + postflop | Ja |
 | **Sleeper** | Ein Nicht-UTG-Platz | Normal (UTG) | Nein | Hausregelsache |
-| **Re-Straddle** | Links von einem Straddler | Links vom Re-Straddler | Nur preflop | Ja |
+| **Re-Straddle** | Links von einem Straddler (manche Räume erlauben jeden Platz) | Links vom Re-Straddler | Nur preflop | Ja |
 
 </div>
 
@@ -136,7 +136,7 @@ Die Solver sind sich hier ungewöhnlich einig, und die Analyse von GTO Wizard sa
 
 :::card
 🎯 | Du committest blind | Geld geht rein, bevor du deine Karten siehst, also spielst du einen aufgeblähten Pot ohne jede Information – genau der Nachteil, der die Blinds zu den schlechtesten Plätzen am Tisch macht. Er halbiert außerdem deine effektive Stacktiefe: Bei €1/€2 sind €200 genau 100 Big Blinds, mit einem €4-Straddle spielt derselbe Stack wie 50
-📉 | Er schrumpft deinen positionellen Vorteil | Den Blind zu verdoppeln bläht den Startpot auf und drückt zugleich alle Stacks – in Big Blinds gerechnet – zusammen. Wider Erwarten reagieren Solver, indem sie in gestraddelten Pots **weniger** Hände öffnen – rund 15–20% weniger am Button, laut [GTO Wizards Sims zu gestraddelten Pots](https://blog.gtowizard.com/preflop-strategy-in-straddled-pots/) – nicht mehr
+📉 | Er schrumpft deinen positionellen Vorteil | Den Blind zu verdoppeln bläht den Startpot auf und drückt zugleich alle Stacks – in Big Blinds gerechnet – zusammen. Wider Erwarten reagieren Solver, indem sie in gestraddelten Pots vom Button **weniger** Hände öffnen – rund 15–20% weniger, laut [GTO Wizards Sims zu gestraddelten Pots](https://blog.gtowizard.com/preflop-strategy-in-straddled-pots/) – nicht mehr
 💸 | Er kann den Pot-Rake erhöhen | Bei rakepflichtigen Pots kann ein größerer Pot mehr [Rake](/de/blog/holdem-rake) bedeuten, bis das Cap erreicht ist. Das gilt nicht für Preflop-Pots unter No-flop-no-drop-Regeln, Time-Charge-Spiele oder Pots, die das Cap bereits erreicht haben
 :::
 
@@ -211,7 +211,7 @@ A. Vom **Button**, sofern der Room es erlaubt. Das ist der einzige Straddle, bei
 
 **Q. Lohnt sich Straddeln – solltest du straddeln?**
 
-A. Für die meisten Spieler nein – es ist ein -EV-Move. Du legst Geld blind hin, du verkleinerst deinen positionellen Vorteil (Solver öffnen in gestraddelten Pots *weniger* Hände, nicht mehr) und du zahlst möglicherweise mehr Rake. Vertretbar ist es nur an loose-passiven Tischen, in Spielen, in denen alle unter denselben Bedingungen reihum straddeln, oder rein zum Spaß – fast nie als Weg, Geld zu verdienen. Wenn alle gleichberechtigt reihum straddeln, können die höheren Einsätze laut GTO Wizard den stärksten Spielern am Tisch zugutekommen.
+A. Für die meisten Spieler nein – es ist ein -EV-Move. Du legst Geld blind hin, du verkleinerst deinen positionellen Vorteil (Solver öffnen in gestraddelten Pots vom Button *weniger* Hände, nicht mehr) und du zahlst möglicherweise mehr Rake. Vertretbar ist es nur an loose-passiven Tischen, in Spielen, in denen alle unter denselben Bedingungen reihum straddeln, oder rein zum Spaß – fast nie als Weg, Geld zu verdienen. Wenn alle gleichberechtigt reihum straddeln, können die höheren Einsätze laut GTO Wizard den stärksten Spielern am Tisch zugutekommen.
 
 ---
 

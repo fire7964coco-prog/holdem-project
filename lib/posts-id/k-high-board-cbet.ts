@@ -10,8 +10,8 @@ export const POST: Post = {
   category: "strategy",
   tags: ["c-bet", "flop K-high", "range check", "check-back range", "delayed c-bet", "realisasi equity", "solver GTO"],
   date: "2026-09-15",
-  updated: "2026-09-15",
-  masterUpdated: "2026-09-02",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   readTime: "9 mnt",
   emoji: "👑",
   image: "/images/gto-srp-dry-king-oop-id.webp",
@@ -135,7 +135,7 @@ Yang tersisa adalah backdoor. **Backdoor flush draw** dalam tabel membutuhkan tu
 
 ## Haruskah Anda selalu c-bet di flop K-high?
 
-**Sering dengan ukuran kecil, tetapi ada satu kelompok hand yang perlu dipertimbangkan.** Sebanyak 35,4% range big blind termasuk Belum jadi, sehingga bagian sekitar sepertiga range itu rentan fold. Selain itu, **72,2% seluruh range tidak memiliki draw**. Perhatikan penyebutnya: angka ini mencakup seluruh range, termasuk top pair 12,7%, second pair 10,8%, dan set. Angka tersebut bukan bagian dari kategori Belum jadi. Artinya, komposisi kekuatan hand cenderung tidak banyak berubah pada street berikutnya. Bet sekitar sepertiga pot dengan sebagian besar range menjadi patokan umum.
+**Sering dengan ukuran kecil, tetapi ada satu kelompok hand yang perlu dipertimbangkan.** Sebanyak 35,4% range big blind termasuk Belum jadi, yaitu sekitar sepertiga range yang paling mungkin fold. Namun, tidak semuanya bisa fold: menghadapi bet sepertiga pot, pertahanan seimbang mempertahankan sekitar 75% range (MDF), jadi sebagian hand itu tetap melanjutkan. Respons big blind tidak dihitung dalam contoh ini. Selain itu, **72,2% seluruh range tidak memiliki draw**. Perhatikan penyebutnya: angka ini mencakup seluruh range, termasuk top pair 12,7%, second pair 10,8%, dan set. Angka tersebut bukan bagian dari kategori Belum jadi. Artinya, komposisi kekuatan hand cenderung tidak banyak berubah pada street berikutnya. Bet sekitar sepertiga pot dengan sebagian besar range menjadi patokan umum.
 
 Saran umum untuk check back dengan ace-high yang memiliki nilai showdown hanya **sebagian benar** di sini. AQ dan AJ juga dapat mencampurkan bet kecil untuk membuat hand seperti QJ, JT, dan T9 fold sebelum sempat membaik. Tidak semua kartu lawan merupakan out yang bersih: QJ melawan AQ, misalnya, tidak otomatis menang jika Q muncul. As pada street berikutnya juga memberi AQ atau AJ pair tertinggi di board. Di sisi lain, check tidak banyak mengorbankan nilai, sehingga ace-high membentuk sebagian besar **check-back range**. Pilihannya berupa campuran frekuensi, bukan kewajiban untuk selalu mengambil satu aksi.
 

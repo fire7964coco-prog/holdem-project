@@ -10,7 +10,7 @@ export const POST: Post = {
   category: "strategy",
   date: "2026-09-15",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-02",
+  masterUpdated: "2026-09-26",
   readTime: "10 min",
   emoji: "♠️",
   image: "/images/gto-srp-monotone-oop-pt.webp",
@@ -70,7 +70,7 @@ Nesse cenário, apostas grandes ficam menos atraentes para os dois lados.
 
 :::compare
 Se você tem flush | Se você não tem flush
-Uma aposta grande faz a maioria das mãos sem flush foldar | Uma aposta grande concentra os calls em flushes
+Uma aposta grande faz a maioria das mãos sem flush foldar | Uma aposta grande recebe call sobretudo de flushes e draws de espadas
 Uma aposta pequena mantém mãos de um par no pote | Uma aposta pequena custa pouco, mas não faz um par foldar
 :::
 
@@ -95,11 +95,11 @@ Uma aposta pequena mantém mãos de um par no pote | Uma aposta pequena custa po
 
 Por que só oito combos? Três combinações de ás com outra carta do mesmo naipe são impossíveis porque **Q♠, 9♠ e 2♠ já estão no board.** Das nove que restam, A♠K♠ dá 3-bet antes do flop e não chega neste range de call. Sobram oito.
 
-O motivo do check está no que você pode ganhar ao longo da mão. Uma aposta grande faz a maioria dos pares e das cartas altas foldar; uma mão com uma espada pode pagar, mas não tem como completar um flush que vença o nut flush. De qualquer forma, parte do dinheiro que poderia entrar depois deixa de entrar. Ao dar check, você permite que o adversário aposte com seu próprio par ou blefe, criando oportunidades de receber mais no turn e no river.
+O motivo do check está no que você pode ganhar ao longo da mão. Uma aposta grande faz a maioria dos pares e das cartas altas foldar; uma mão com uma espada pode pagar, mas nunca completa um flush maior que o nut flush e precisa de ajuda runner-runner, como um full house, para ganhar. De qualquer forma, parte do dinheiro que poderia entrar depois deixa de entrar. Ao dar check, você permite que o adversário aposte com seu próprio par ou blefe, criando oportunidades de receber mais no turn e no river.
 
 Os números deixam isso claro: **realização de equity (EQR) de 230%**, mais que o dobro da parcela do pote correspondente à equity. O pote tem 5,5bb e A♠J♠ tem valor esperado (EV) de ==12,36bb==. O que ainda pode entrar vale mais que o dinheiro já no centro.
 
-Os blockers aparecem na mesma tabela. **A♠J♠ e A♠T♠ dão check em mais de 80%, enquanto A♠7♠ a A♠4♠ caem para 52–64% e apostam muito mais.** Segurar J♠ ou T♠ bloqueia **os flushes abaixo do nut flush que contêm essas cartas**. ⚠ Não existe “flush de valete” neste board: Q♠ já está na mesa, então qualquer flush pronto tem pelo menos dama como carta mais alta, e o segundo maior flush é o de rei. J♠ e T♠ ocupam uma **posição de kicker** nesses flushes, como K♠J♠ e J♠T♠. São justamente mãos que poderiam *pagar* sua aposta. Retirá-las do baralho reduz o range de call, torna a aposta menos valiosa e aumenta a preferência pelo check. Kickers baixos não bloqueiam esses combos, deixando mais mãos que podem pagar; por isso, apostar diretamente fica mais atraente. (A♠3♠ voltar a 79,7% lembra que isso é uma tendência, não uma regra.)
+Os blockers aparecem na mesma tabela. **A♠J♠ e A♠T♠ dão check em mais de 80%, enquanto A♠7♠ a A♠4♠ caem para 52–64% e apostam muito mais.** Segurar J♠ ou T♠ bloqueia **os flushes abaixo do nut flush que contêm essas cartas**. ⚠ Não existe “flush de valete” neste board: Q♠ já está na mesa, então qualquer flush pronto tem pelo menos dama como carta mais alta, e o segundo maior flush é o de rei. J♠ e T♠ ocupam uma **posição de kicker** nesses flushes, como K♠J♠ e J♠T♠. Mas os blockers não explicam sozinhos essa divisão. Conte os 18 flushes do botão abaixo do nut flush: J♠ e T♠ retiram 4 cada um, enquanto 7♠ retira 6, 8♠ e 6♠ retiram 5 cada, 5♠ retira 4 e 4♠, só 2. E A♠7♠, o maior blocker do grupo, ainda aposta em 44,0% das vezes, atrás apenas de A♠4♠ (47,3%), que bloqueia só 2. Apenas 3♠ não bloqueia nenhum, e A♠3♠ dá check em 79,7%. Em todos os combos de nut flush, as três ações ficam a menos de 0,05bb umas das outras; leia a coluna como uma mistura entre opções quase equivalentes, não como uma regra de blockers.
 
 ## Os flushes abaixo do nut flush jogam diferente?
 
@@ -138,7 +138,7 @@ Em compensação, o botão tem muito mais **Ax e Kx de naipes diferentes com uma
 
 **O mesmo top pair vira outra mão dependendo de ter ou não uma espada.**
 
-Considere Q♥J♦: top pair, sem espada. Já perde para **12,0%** do range do botão (flushes em 5,7%, overpairs em 2,5%, mais sets e dois pares). Também perde no kicker para **AQ e KQ**: Q♠ está no board e Q♥ está na sua mão, então restam duas damas, formando 8 combos de AQ e 8 de KQ. São **cerca de 3,4%** de 474, levando a parcela que já está à frente a aproximadamente **15,4%**. Além disso, outros **29,2%** podem ultrapassá-la com uma carta. ⚠ Quatro daqueles 16 combos de kicker também têm uma espada e já entram nos 29,2%; não basta somar os dois valores. Essa não é uma mão para extrair valor em três streets: ela pode pagar uma aposta para pegar um blefe.
+Considere Q♥J♦: top pair, sem espada. Já perde para **12,0%** do range completo do botão, de 474 combos (flushes em 5,7%, overpairs em 2,5%, mais sets e dois pares). Também perde no kicker para **AQ e KQ**: Q♠ está no board e Q♥ está na sua mão, então restam duas damas, formando 8 combos de AQ e 8 de KQ. São 16 dos 428 combos que o botão ainda pode ter depois de retirados seus Q♥ e J♦, **cerca de 3,7%**. Contando da mesma forma, tudo o que já está à sua frente soma 68 de 428, aproximadamente **15,9%**. Além disso, outros **29,2%** podem ultrapassá-la com uma carta. ⚠ Quatro daqueles 16 combos de kicker também têm uma espada e já entram nos 29,2%; não basta somar os dois valores. Essa não é uma mão para extrair valor em três streets: ela pode pagar uma aposta para pegar um blefe.
 
 Agora considere 9♥8♠: segundo par com uma espada. Pode ganhar agora ou melhorar depois, o que dá flexibilidade para apostar ou pagar.
 
@@ -186,7 +186,7 @@ A. É um flop com as três cartas do mesmo naipe, como Q♠ 9♠ 2♠. Duas cart
 
 **Q. Devo sempre apostar um flush pronto num flop monotone?**
 
-A. Não. Nesta resolução, os oito combos de nut flush dão check entre 52,7% e 84,2%, com média de 69,9%; os demais flushes dão check em 81,4%. Uma aposta grande faz a maioria dos pares e das cartas altas foldar, e uma mão com uma espada que pague não consegue completar um flush maior que o nut flush. Dar check para induzir uma aposta e receber mais ao longo do turn e do river pode render mais no total.
+A. Não. Nesta resolução, os oito combos de nut flush dão check entre 52,7% e 84,2%, com média de 69,9%; os demais flushes dão check em 81,4%. Uma aposta grande faz a maioria dos pares e das cartas altas foldar, e uma mão com uma espada que pague nunca completa um flush maior que o nut flush, precisando de ajuda runner-runner, como um full house, para ganhar. Dar check para induzir uma aposta e receber mais ao longo do turn e do river pode render mais no total.
 
 **Q. Por que o big blind tem mais flushes que o botão?**
 

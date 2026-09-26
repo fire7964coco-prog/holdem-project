@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "En Texas Hold'em siempre juegas la mejor mano de 5 cartas entre 7 (2 cartas propias + 5 cartas comunitarias) — usando las dos, una, o ninguna (jugar con la mesa). Repasa las 7 cartas en un orden fijo: color → escalera → parejas → carta alta.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-09-13",
-  masterUpdated: "2026-09-13",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🃏",
@@ -172,7 +172,7 @@ Fíjate en la última fila: ==incluso sin nada, la pareja de la mesa forma parte
 Puedes TENER los dos — nunca puedes JUGAR los dos. ==Una mano de póker son exactamente 5 cartas, así que las combinaciones que se solapan no se acumulan; simplemente juegas la más fuerte.==
 
 - Tienes A♠ K♠ en Q♠ 7♠ 2♠ K♦ 3♣. Has formado pareja de reyes Y cinco picas. Tu mano es el ==color máximo (nut flush), A♠ K♠ Q♠ 7♠ 2♠== — la pareja de reyes simplemente no cuenta.
-- Tienes 8♥ 8♦ en 7♣ 6♦ 5♠ 4♥ K♦. Pareja de ochos Y 8-7-6-5-4. Tu mano es la ==escalera al 8== — no "una pareja con una escalera". En el showdown no hace falta cantarla: las cartas hablan y el dealer lee la mano (regla 12 de la TDA). Lo que sí tienes que hacer es poner las dos cartas boca arriba — las cartas solo hablan por una mano bien enseñada (regla 13-A) — y si el dealer la lee mal, dilo antes de que empuje el bote.
+- Tienes 8♥ 8♦ en 7♣ 6♦ 5♠ 4♥ K♦. Pareja de ochos Y 8-7-6-5-4. Tu mano es la ==escalera al 8== — no "una pareja con una escalera". En el showdown no hace falta cantarla: las cartas hablan y el dealer lee la mano (regla 12 de la TDA 2024). Lo que sí tienes que hacer es poner las dos cartas boca arriba — las cartas solo hablan por una mano bien enseñada (regla 13-A de la TDA 2024). Y si el dealer la lee mal, dilo en el acto: una lectura se puede disputar hasta que empieza la mano siguiente (regla 22 de la TDA 2024), pero es mucho más fácil corregirla antes de que empuje el bote.
 
 La misma lógica responde a "¿se pueden tener tres parejas?" — puedes tener tres valores emparejados en tus 7 cartas, pero solo las dos mejores caben en 5 cartas (cubierto en la [guía de jerarquía de manos](/es/blog/holdem-hand-rankings)).
 
@@ -205,7 +205,7 @@ La pareja alta es una mano de verdad fuerte | La pareja alta es frágil — much
 
 ![Mesa seca vs mesa peligrosa en Texas Hold'em — K-7-2 de tres palos (seca) vs J-10-8 de dos palos (peligrosa) con flechas de proyecto de color y de escalera](/images/holdem-reading-dry-vs-wet-board.webp)
 
-En J♥ 10♥ 8♣, cualquier corazón, cualquier 9, cualquier 7 y cualquier Q cambia quién va ganando. En K♠ 7♦ 2♣, casi nada lo hace. ==La misma pareja, una presión completamente distinta== — por eso el hábito del orden de repaso (color → escalera → parejas) hace también de radar de peligro.
+En J♥ 10♥ 8♣, cualquier corazón, cualquier 9, cualquier 7 y cualquier Q pueden cambiar quién va ganando. En K♠ 7♦ 2♣, casi nada lo hace. ==La misma pareja, una presión completamente distinta== — por eso el hábito del orden de repaso (color → escalera → parejas) hace también de radar de peligro.
 
 ---
 
@@ -225,7 +225,7 @@ Los principiantes se retiran ante "seguro que tiene un trébol" en una mesa de t
 
 ### Error 4 — Ignorar el full en una mesa emparejada
 
-Ligas color en el river, la mesa muestra dos reinas, y nunca te haces la pregunta. Cualquier Q-x tiene trío; cualquier pareja servida que empareje con la mesa tiene un full — y ==el full gana al color==. Mesa emparejada + apuesta grande = busca fulls antes de celebrar.
+Ligas color en el river, la mesa muestra dos reinas, y nunca te haces la pregunta. Cualquier mano con una reina tiene al menos trío; una pareja servida que empareje con otra carta de la mesa hace full, y una pareja de reinas servida hace póker — y ==el full gana al color==. Mesa emparejada + apuesta grande = busca fulls antes de celebrar.
 
 ---
 
@@ -254,7 +254,7 @@ A. Las cartas comunitarias son las 5 cartas que se reparten boca arriba en el ce
 
 **Q. ¿Qué significa "jugar con la mesa" en Texas Hold'em?**
 
-A. Significa que las 5 cartas comunitarias ya son tu mejor mano posible de 5 cartas — ninguna carta propia las mejora. Como la mesa es compartida, todos los jugadores pueden reclamar esa misma mano, así que jugar con la mesa suele acabar en bote dividido, salvo que las cartas propias de un rival mejoren la mesa. Hay una formalidad que aun así cuesta botes: aunque juegues con la mesa **tienes que enseñar tus dos cartas** para llevarte tu parte (==regla 75 del reglamento de torneos de la WSOP==, regla 19 de la TDA) — si las tiras al muck sin mostrarlas, no te llevas nada.
+A. Significa que las 5 cartas comunitarias ya son tu mejor mano posible de 5 cartas — ninguna carta propia las mejora. Como la mesa es compartida, todos los jugadores pueden reclamar esa misma mano, así que jugar con la mesa suele acabar en bote dividido, salvo que las cartas propias de un rival mejoren la mesa. Hay una formalidad que aun así cuesta botes: aunque juegues con la mesa **tienes que enseñar tus dos cartas** para llevarte tu parte (==regla 75 del reglamento de torneos de la WSOP==, regla 19 de la TDA 2024) — si las tiras al muck sin mostrarlas, no te llevas nada.
 
 **Q. ¿Puede la mesa ser la mejor mano para todos?**
 
@@ -290,7 +290,7 @@ A. La función de las cartas comunitarias es dar a todos una base compartida sob
 
 **Q. ¿Cuenta una pareja en la mesa como parte de tu mano?**
 
-A. Sí — las cartas comunitarias forman parte de la mano de todos los jugadores. Una pareja en la mesa cuenta para tus mejores 5 aunque tus cartas propias no liguen nada. También significa que los rivales pueden tener trío o full, así que reevalúa las manos de una pareja en cualquier mesa emparejada.
+A. Sí — las cartas comunitarias forman parte de la mano de todos los jugadores. Si tus cartas propias no ligan nada, la pareja de la mesa sigue siendo tu pareja. (Eso sí, no queda fija: si tus cartas propias hacen escalera o color, juega esa mano mayor.) También significa que los rivales pueden tener trío o full, así que reevalúa las manos de una pareja en cualquier mesa emparejada.
 
 ---
 

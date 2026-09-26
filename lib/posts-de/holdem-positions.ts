@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Poker Positionen: Jeder Sitzname & Chart",
   seoTitle: "Position Poker erklärt – jeder Sitzname & Chart",
   desc: "Die Namen wandern mit dem Button, nicht mit den Stühlen. Jede Poker-Position – UTG, Hijack, Cutoff, Button – plus Sitznummern, 6-Max-Map und wer zuerst handelt.",
-  tldr: "Poker-Positionen sind Sitznamen, gemessen vom Dealer-Button – UTG, Lojack, Hijack, Cutoff, Button und die Blinds – und sie wandern jede Hand einen Sitz im Uhrzeigersinn. Preflop handelt UTG zuerst und der Big Blind zuletzt; postflop handelt der Small Blind zuerst und der Button zuletzt. Physische Sitznummern bewegen sich nie; Positionen schon.",
+  tldr: "Poker-Positionen sind Sitznamen, gemessen vom Dealer-Button – UTG, Lojack, Hijack, Cutoff, Button und die Blinds – und sie wandern normalerweise jede Hand einen Sitz im Uhrzeigersinn. Preflop handelt UTG zuerst und der Big Blind zuletzt; postflop handelt der Small Blind zuerst und der Button zuletzt. Physische Sitznummern bewegen sich nie; Positionen schon.",
   category: "strategy",
   date: "2026-06-13",
-  updated: "2026-09-13",
-  masterUpdated: "2026-09-13",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 Min.",
   emoji: "🎯",
@@ -34,13 +34,13 @@ Dieselbe Hand. Völlig anderes Ergebnis. Das Einzige, was sich änderte, war mei
 ---
 
 > **Kurze Antwort**
-> Poker-Positionen sind die ==benannten Sitze, gemessen vom Dealer-Button== – UTG, Lojack, Hijack, Cutoff, Button, Small Blind, Big Blind – und sie ==wandern jede Hand einen Sitz im Uhrzeigersinn==, wenn der Button weiterrückt. Preflop handelt UTG zuerst und der Big Blind zuletzt. Postflop handelt der Small Blind zuerst und der Button zuletzt.
+> Poker-Positionen sind die ==benannten Sitze, gemessen vom Dealer-Button== – UTG, Lojack, Hijack, Cutoff, Button, Small Blind, Big Blind – und sie ==wandern normalerweise jede Hand einen Sitz im Uhrzeigersinn==, wenn der Button weiterrückt. Preflop handelt UTG zuerst und der Big Blind zuletzt. Postflop handelt der Small Blind zuerst und der Button zuletzt.
 
 ---
 
 ## Welche Positionen gibt es am Pokertisch? (Komplette Sitz-Map)
 
-Eine Position ist kein Stuhl – sie ist ein **Name dafür, wo du relativ zum Dealer-Button sitzt**, und sie bestimmt, ==wann du auf jeder Street handelst==. Weil der Button nach jeder Hand einen Sitz im Uhrzeigersinn weiterrückt, trägt jeder Spieler am Tisch in jeder einzelnen Hand einen anderen Namen.
+Eine Position ist kein Stuhl – sie ist ein **Name dafür, wo du relativ zum Dealer-Button sitzt**, und sie bestimmt, ==wann du auf jeder Street handelst==. In einem normalen Spiel rückt der Button nach jeder Hand einen Sitz im Uhrzeigersinn weiter, also trägt jeder Spieler am Tisch von einer Hand zur nächsten einen anderen Namen.
 
 Hier ist der komplette 9-Max-Positionen-Chart – jeder Sitzname, seine Abkürzung, seine Zone und genau, wann er vor und nach dem Flop handelt:
 
@@ -94,13 +94,13 @@ Das bringt fast jeden Live-Neuling durcheinander: Wenn der Floor **„Tisch 12, 
 
 In den meisten Card Rooms sind die physischen Sitze von der direkten Linken des Dealers durchnummeriert – ==Sitz 1 ist üblicherweise der erste Stuhl links vom Dealer==, im Uhrzeigersinn bis zu Sitz 9 oder 10 rechts vom Dealer. Diese Nummern sind an die Stühle geschraubt. Das Personal nutzt sie für die Logistik: neue Spieler platzieren, Chips bringen, die Zeit ausrufen.
 
-Positionen sind das Gegenteil – sie ==rotieren jede einzelne Hand einen Sitz im Uhrzeigersinn== mit dem Button. Sitz 5 kann diese Hand der Button sein, die nächste der Cutoff und die Hand danach der Hijack.
+Positionen sind das Gegenteil – sie ==rotieren mit dem Button einen Sitz im Uhrzeigersinn, normalerweise jede Hand==. Sitz 5 kann diese Hand der Button sein, die nächste der Cutoff und die Hand danach der Hijack.
 
 :::compare
 Sitznummern (physisch) | Positionen (Poker)
 Am Stuhl fixiert – Sitz 1 ist meist direkt links vom Dealer | Wandern jede Hand mit dem Dealer-Button
 Vom Personal genutzt: „Sitz 5, Chips kommen“ | Von der Strategie genutzt: „der Cutoff opent“
-Ändern sich während einer Session nie | Ändern sich jede einzelne Hand, einen Sitz im Uhrzeigersinn
+Ändern sich während einer Session nie | Ändern sich normalerweise jede Hand, einen Sitz im Uhrzeigersinn
 Sagen dir, WO du sitzt | Sagen dir, WANN du handelst
 :::
 
@@ -163,7 +163,7 @@ Die meistgestellte Frage zu Positionen, in einer Tabelle beantwortet:
 
 | Street | Handelt zuerst | Handelt zuletzt |
 |:---|:---|:---|
-| **Preflop** | **UTG** – erster Sitz links vom Big Blind | **Big Blind** – darf checken oder raisen |
+| **Preflop** | **UTG** – erster Sitz links vom Big Blind | **Big Blind** – darf checken oder raisen, wenn niemand geraist hat |
 | **Flop / Turn / River** | **Small Blind** – oder der erste noch aktive Sitz links vom Button | **Button** – oder der nächste aktive Sitz davor |
 
 Also – **handeln die Blinds zuerst?** ==Preflop nein. Postflop ja.== Vor dem Flop haben die Blinds bereits Geld eingezahlt, also startet die Aktion mit UTG und kommt zuletzt zu ihnen zurück – der Big Blind handelt von allen zuletzt. Nach dem Flop setzt sich die Reihenfolge im Uhrzeigersinn vom Button aus zurück: Der Small Blind spricht zuerst, der Big Blind als zweiter und der Button immer zuletzt.
@@ -190,7 +190,7 @@ Die Positionsnamen ändern sich nicht mit der Tischgröße – ==sie fallen zuer
 
 **Heads-up ist das, was jedermanns Intuition bricht.** Mit nur zwei Spielern ==setzt der Button den Small Blind== – derselbe Sitz ist BTN und SB zugleich. Das bedeutet, der Button handelt ==preflop **zuerst**== (der Big Blind handelt zuletzt, wie immer), aber immer noch ==auf jeder Postflop-Street **zuletzt**==, während der Big Blind postflop zuerst handelt. Jede andere Tischgröße folgt dem normalen Muster; einzig Heads-up verschmilzt den besten Sitz mit einem Blind.
 
-**6-Max vs. Full Ring** ist reine Subtraktion: Die drei Early-Sitze (UTG, UTG+1 und UTG+2) fallen weg und der Lojack erbt den Namen UTG, also läuft 6-Max UTG → HJ → CO → BTN → SB → BB. Die praktische Konsequenz ist, dass ==du häufiger in den Blinds und in Late Position sitzt und seltener jemanden vor dir eröffnen siehst== – 6-Max-UTG hat fünf Gegner, nicht acht – weshalb sich die Ranges in Short-handed-Spielen auf ganzer Linie weiten. Die Sitz-für-Sitz-Zahlen stehen im [Positionsstrategie-Leitfaden](/de/blog/holdem-position-play), und die genauen Hände, die jede Range füllen, sind im [Starthände-Chart](/de/blog/holdem-starting-hands-chart) abgebildet.
+**6-Max vs. Full Ring** ist reine Subtraktion: Die drei Early-Sitze (UTG, UTG+1 und UTG+2) fallen weg und der Lojack erbt den Namen UTG, also läuft 6-Max UTG → HJ → CO → BTN → SB → BB. Die praktische Konsequenz ist nicht, dass ein Sitz „später“ spielt – ein Cutoff hat so oder so dieselben drei Spieler hinter sich. Sondern: ==Ohne die Early-Sitze sitzt du viel häufiger in den Blinds und in Late Position, und weniger Spieler eröffnen vor dir== – 6-Max-UTG hat fünf Gegner, nicht acht. Deshalb öffnet der erste Sitz in Short-handed-Spielen weiter und du spielst insgesamt mehr Hände, auch wenn sich die Range eines Cutoffs kaum ändert. Die Sitz-für-Sitz-Zahlen stehen im [Positionsstrategie-Leitfaden](/de/blog/holdem-position-play), und die genauen Hände, die jede Range füllen, sind im [Starthände-Chart](/de/blog/holdem-starting-hands-chart) abgebildet.
 
 > **Benennungs-Vorbehalt:** Manche Seiten und Card Rooms labeln den ersten 6-Max-Sitz als „LJ“ oder „MP“ statt UTG, und 10-händige Middle-Sitze erscheinen manchmal als „MP1/MP2“. Labels variieren; die Handlungsreihenfolge nie.
 
@@ -217,7 +217,7 @@ A. Der Lojack (LJ) ist der Sitz drei rechts vom Button – der frühere der beid
 
 **Q. Wer geht zuerst, der Small Blind oder der Big Blind?**
 
-A. Der Small Blind handelt auf jeder Street vor dem Big Blind. Preflop handeln beide Blinds zuletzt (der Big Blind ganz zuletzt, mit der Option zu checken oder zu raisen); postflop ist der Small Blind der erste Sitz, der am Tisch handelt. Die eine Ausnahme ist Heads-up, wo der Button den Small Blind setzt und der Big Blind postflop zuerst handelt.
+A. Der Small Blind handelt auf jeder Street vor dem Big Blind. Preflop handeln beide Blinds zuletzt (der Big Blind ganz zuletzt – mit der Option zu checken oder zu raisen, wenn niemand geraist hat); postflop ist der Small Blind der erste Sitz, der am Tisch handelt. Die eine Ausnahme ist Heads-up, wo der Button den Small Blind setzt und der Big Blind postflop zuerst handelt.
 
 **Q. Wie viele Positionen gibt es beim 6-Max-Poker?**
 
@@ -225,7 +225,7 @@ A. Sechs: UTG (auch Lojack genannt), Hijack, Cutoff, Button, Small Blind und Big
 
 **Q. Ändern sich Poker-Positionen jede Hand?**
 
-A. Ja. Der Dealer-Button rückt nach jeder Hand einen Sitz im Uhrzeigersinn weiter, und da alle Positionen nach ihrem Abstand zum Button benannt sind, verschiebt sich die Position jedes Spielers pro Hand um einen Sitz. Über einen vollen Orbit hältst du jede Position am Tisch genau einmal.
+A. Ja. Der Dealer-Button rückt nach jeder Hand einen Sitz im Uhrzeigersinn weiter, und da alle Positionen nach ihrem Abstand zum Button benannt sind, verschiebt sich die Position jedes Spielers normalerweise pro Hand um einen Sitz. Über einen vollen Orbit an einem stabilen Tisch hältst du jede Position genau einmal – Ausnahmen gibt es, wenn ein Spieler ausscheidet oder geht und der Tisch mit Dead Button spielt (dann kann derselbe Spieler zwei Hände hintereinander zuletzt handeln), oder wenn Spieler dazukommen, Tische aufgelöst werden oder das Spiel heads-up geht.
 
 **Q. Was ist Sitz 1 beim Poker?**
 
@@ -235,7 +235,7 @@ A. Sitz 1 ist ein physischer Stuhl, keine Position – in den meisten Card Rooms
 
 ## Die wichtigsten Erkenntnisse
 
-1. **Positionen sind Namen, keine Stühle.** Jeder Sitz wird nach seinem Abstand zum Dealer-Button benannt, und jeder Name wandert jede Hand einen Sitz im Uhrzeigersinn.
+1. **Positionen sind Namen, keine Stühle.** Jeder Sitz wird nach seinem Abstand zum Dealer-Button benannt, und jeder Name wandert normalerweise jede Hand einen Sitz im Uhrzeigersinn.
 2. **Der Chart in einer Zeile:** UTG → UTG+1 → UTG+2 → LJ → HJ → CO → BTN → SB → BB. Preflop startet bei UTG und endet beim Big Blind; postflop startet beim Small Blind und endet beim Button.
 3. **Sitznummern ≠ Positionen.** Sitz 1 ist üblicherweise direkt links vom Dealer und bewegt sich nie; Positionen rotieren jede Hand. Das eine ist eine Adresse, das andere ein Job.
 4. **Die Tischgröße subtrahiert von vorne.** 6-Max lässt die frühen Sitze fallen; Heads-up verschmilzt den Button mit dem Small Blind – zuerst dran preflop, zuletzt dran postflop.

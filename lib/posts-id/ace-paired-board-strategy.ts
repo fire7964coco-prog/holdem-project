@@ -10,7 +10,7 @@ export const POST: Post = {
   category: "strategy",
   date: "2026-09-15",
   updated: "2026-09-26",
-  masterUpdated: "2026-08-21",
+  masterUpdated: "2026-09-26",
   readTime: "10 mnt",
   emoji: "🅰️",
   image: "/images/gto-sb-paired-ace-oop-id.webp",
@@ -119,7 +119,7 @@ Tiga hal berikut menjelaskan inti spot ini.
 
 - **Trips big blind tidak mencakup A-K dan A-Q.** Saat menghadapi open 3bb dari small blind, hand tersebut melakukan 3-bet, bukan call. Trips dengan kicker tinggi yang hanya dimiliki small blind adalah ==8 combo A-K + 8 A-Q + 6 A-J offsuit = 22 combo==. Keduanya bisa memiliki trips As, tetapi hand ini sudah unggul dalam perbandingan kicker.
 - **Quads hanya dimiliki small blind.** A♠ dan A♥ ada di board, sehingga As yang tersisa hanya A♦ dan A♣. A-A menjadi **tepat satu combo**. Big blind melakukan 3-bet dengan A-A, sehingga tidak memilikinya dalam range call.
-- **Lebih dari separuh range big blind belum menambah kekuatan pada board.** Jumlahnya 260 combo (51,5%). Bagian ini memberi peluang untuk bluff, tetapi **51,5% bukan frekuensi fold yang dihitung solver**; respons terhadap bet tidak tersedia dalam contoh ini.
+- **Lebih dari separuh range big blind belum menambah kekuatan pada board.** Jumlahnya 260 combo (51,5%). Bagian ini adalah wilayah yang ditekan oleh bet, tetapi **51,5% bukan frekuensi fold**. Menghadapi bet sepertiga pot, MDF menyarankan mempertahankan sekitar 75% range, sehingga lawan yang seimbang fold mendekati seperempat saja. Respons big blind terhadap bet tidak tersedia dalam contoh ini.
 
 Hanya full house yang sama banyak: kedua pemain memiliki ==3 combo 6-6 + 6 combo A-6 = 9==. **Di luar baris itu, setiap kategori yang lebih tinggi secara proporsi menguntungkan small blind. Hanya bagian terbawah, hand yang belum jadi, yang lebih banyak 11,7 poin persentase pada big blind.**
 
@@ -141,7 +141,7 @@ Pot berjumlah 6bb, sehingga bagian berdasarkan equity mentah small blind adalah 
 
 Pot 3-bet menunjukkan keadaan sebaliknya. Di [board rendah 8-5-2](/id/blog/3bet-pot-low-board "thumb:/images/gto-3bp-low-oop-id.webp"), big blind memakai dua pertiga pot dengan frekuensi 97,8%. Range-nya terbagi menjadi dua bagian yang hampir sama besar: **overpair dan A-high**, bentuk yang terpolarisasi. Range yang terkumpul pada dua tingkat kekuatan berbeda mendukung bet besar.
 
-Distribusi di sini **berkesinambungan**: trips 17,5%, Two Pair 18,5%, King-High 22,3%, dan hand yang belum jadi 39,8%. Dengan bentuk ini, solver memakai bet kecil untuk banyak hand. Sebanyak 51,5% range lawan yang belum jadi menyediakan peluang memenangkan pot lewat fold, **tanpa berarti 51,5% pasti fold**. Ketika lawan call, ukuran kecil menjaga pot tetap lebih kecil dan tidak langsung mempertaruhkan seluruh sisa stack 97bb; risiko raise dan taruhan pada street berikutnya tetap ada.
+Distribusi di sini **berkesinambungan**: trips 17,5%, Two Pair 18,5%, King-High 22,3%, dan hand yang belum jadi 39,8%. Dengan bentuk ini, solver memakai bet kecil untuk banyak hand. Sebanyak 51,5% range lawan yang belum jadi adalah bagian yang ditekan oleh bet kecil, **tanpa berarti 51,5% pasti fold**: bluff 2bb ke pot 6bb hanya membutuhkan fold 25% untuk impas. Bet itu sendiri kini hanya mempertaruhkan 2bb, meski sisa stack 97bb tetap bisa ikut masuk pada turn dan river.
 
 :::note[⚠ Contoh ini dihitung dengan dua pilihan ukuran: 33% dan 75%. Jika Anda menambahkan ukuran lebih kecil, seperti seperlima atau seperempat pot, frekuensi 79,6% bisa berpindah ke sana. Bacalah sebagai "ukuran terkecil yang tersedia", bukan "33% selalu menjadi jawabannya".]:::
 

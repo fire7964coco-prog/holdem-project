@@ -186,7 +186,7 @@ Dacă joci un cash game mic de acasă, alege un buy-in pe care toată lumea e ok
 
 ==r:Nu începe cu mize care îi fac pe oameni nervoși.== Începătorii nervoși nu învață mai repede. Doar renunță prea mult, plătesc prea emoțional sau se ceartă pe reguli.
 
-Ține minte că un buy-in de **turneu** funcționează altfel decât un cash game: plătești o singură taxă fixă de intrare, primești un stack fix de jetoane care nu se schimbă în bani și joci până când un jucător le are pe toate.
+Ține minte că un buy-in de **turneu** funcționează altfel decât un cash game: plătești o taxă fixă de intrare, primești un stack fix de jetoane care nu se schimbă în bani și joci până când un jucător le are pe toate (la turneele cu re-entry poți intra din nou după ce ai fost eliminat).
 
 Pentru exersat online, folosește mese gratuite până poți explica ordinea acțiunii fără să te gândești. Apoi urci încet.
 
@@ -194,7 +194,7 @@ Pentru exersat online, folosește mese gratuite până poți explica ordinea ac�
 
 ## No-Limit, Limit sau Pot-Limit? Ce fel de Texas Hold'em joci?
 
-Când lumea zice „Texas Hold'em", aproape mereu se referă la **No-Limit Hold'em (NLHE)** — formatul folosit la WSOP Main Event și în aproape orice joc de acasă. Împărțirea cărților, blind-urile și clasamentul mâinilor sunt identice la toate cele trei formate. Singurul lucru care se schimbă e **cât ai voie să pariezi.**
+Când lumea zice „Texas Hold'em", aproape mereu se referă la **No-Limit Hold'em (NLHE)** — formatul folosit la WSOP Main Event și în aproape orice joc de acasă. Împărțirea cărților și clasamentul mâinilor sunt identice la toate cele trei formate. Principalul lucru care se schimbă e **cât ai voie să pariezi** — iar Fixed-Limit limitează de obicei și numărul de raise-uri dintr-o rundă (la WSOP: un pariu și patru raise-uri).
 
 | Format | Cât poți paria? | Unde îl vei vedea |
 |--------|-----------------------|---------------------|
@@ -299,7 +299,7 @@ Pot odds-ul tău e **$120 la $20**, adică **6 la 1**. Asta înseamnă că trebu
 
 ### Regula lui 2 și 4 — scurtătura instant pentru probabilitate
 
-Când ai o mână de draw (de ex. patru cărți spre o Culoare), numără-ți **outurile** — cărțile care îți completează mâna.
+Când ai o mână de draw (de ex. patru cărți spre o Culoare), numără-ți **outurile** — cărțile care îți transformă draw-ul într-o mână care probabil câștigă.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

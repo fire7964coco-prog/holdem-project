@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "strategy",
   date: "2026-06-14",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-24",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🂡",
@@ -81,7 +81,7 @@ Ordenadas por niveles, las buenas manos iniciales del póker se ven así:
 |------|----------|----------------|
 | Premium | AA, KK, QQ, JJ, AKs, AKo | Sube desde cualquier posición, resube con agresividad |
 | Fuertes | TT–88, AQ, AJs, ATs, KQs | Sube desde casi todas las posiciones, frena ante 3-bets grandes |
-| Especulativas | Pares bajos (77–22), conectores del mismo palo (JTs, T9s, 98s), ases del mismo palo (A2s–A9s) | Solo en posición tardía — necesitan flops baratos y posición |
+| Especulativas | Pares bajos (77–22), conectores del mismo palo (JTs, T9s, 98s), ases del mismo palo (A2s–A9s) | Sobre todo en posición tardía — necesitan flops baratos y posición (un rango completo de UTG conserva el 77) |
 | ==r:Basura== | Ases débiles de distinto palo (A4o), rey-basura (K3o), morralla baja de distinto palo | ==r:Foldea en preflop — te cuestan fichas cada sesión== |
 
 :::tip[El nivel es solo la mitad de la respuesta. Una mano especulativa es "buena" en el botón y mala en UTG — por eso la tabla de verdad se organiza por posición, no por mano.]:::
@@ -138,13 +138,13 @@ El botón es el mejor asiento del póker. ==g:Actúas último en el flop, el tur
 - **Conectores del mismo palo (T9s, 98s, 87s)** — manos baratas y con altas odds implícitas
 - **Broadways más flojos de distinto palo (KTo, QJo)** — solo en posición tardía, nunca temprana
 
-Regla clave: ==estas manos especulativas necesitan posición para ser rentables==. Si un jugador en UTG sube por delante de ti, la mayoría van derechas al muck — su ventaja se esfuma sin posición.
+Regla clave: ==estas manos especulativas necesitan posición para ser rentables==. Si un jugador en UTG sube por delante de ti, la mayoría van derechas al muck — pagarías una subida para jugar una mano especulativa contra un rango fuerte, y el flop barato que necesitan ya no existe.
 
 ---
 
 ## Manos iniciales en 6-max: cómo cambia la tabla
 
-La mayoría de las cash games online son 6-max, y la tabla se desplaza en una dirección: ==más amplia==. Quita los tres asientos más cerrados de una mesa de 9-max y cada posición restante "sube" un puesto en la práctica. El primer jugador en actuar en 6-max abre contra cinco rivales, no ocho — así que ==g:UTG en 6-max se juega más o menos como MP en 9-max== (~15–17% en vez de ~13%).
+La mayoría de las cash games online son 6-max, y la tabla se desplaza en una dirección: ==más amplia==. Quita los tres asientos más cerrados de una mesa de 9-max y el nuevo primer asiento "sube" un puesto en la práctica — los asientos tardíos conservan los mismos jugadores detrás, pero la mesa en conjunto juega más amplio. El primer jugador en actuar en 6-max abre contra cinco rivales, no ocho — así que ==g:UTG en 6-max se juega más o menos como MP en 9-max== (~15–17% en vez de ~13%).
 
 :::compare
 9-Max (mesa completa) | 6-Max
@@ -205,7 +205,7 @@ Las peores manos iniciales del póker no son morralla al azar como 7-2 — nadie
 
 El ==r:error más caro que cometen los principiantes es igualar subidas con ases débiles== como el A♣ 4♦ de la intro. Cuando por fin ligas tu pareja de ases, muchas veces vas de segundas frente a A♠ K♦ o A♥ Q♦ — y pierdes un bote grande convencido de que tienes pareja máxima. La tienes. Ellos también, con mejor kicker.
 
-(¿Y la peor mano de verdad del póker? 7-2 de distinto palo — más sobre eso, y sobre la famosa "regla del 7-2", en las preguntas frecuentes de abajo.)
+(¿Y la mano que se suele llamar la peor del póker? El 7-2 de distinto palo, aunque por equity bruta contra una mano aleatoria el 3-2 de distinto palo es algo más débil, alrededor del 32% frente al 35%. Más sobre el 7-2, y sobre la famosa "regla del 7-2", en las preguntas frecuentes de abajo.)
 
 ---
 
@@ -268,7 +268,7 @@ A. Hay 169 tipos distintos de mano inicial (13 pares, 78 del mismo palo, 78 de d
 
 **Q. ¿Qué es la regla del 7-2 en el póker?**
 
-A. La regla del 7-2 es un juego paralelo de la casa, no una regla oficial del póker: si un jugador gana un bote con 7-2 de distinto palo — la peor mano — todos los demás jugadores le pagan una pequeña recompensa. Existe solo para animar las partidas caseras y de pub premiando un farol descarado.
+A. La regla del 7-2 es un juego paralelo de la casa, no una regla oficial del póker: si un jugador gana un bote con 7-2 de distinto palo — la mano que la mayoría llama la peor — todos los demás jugadores le pagan una pequeña recompensa. Existe solo para animar las partidas caseras y de pub premiando un farol descarado.
 
 **Q. ¿Cuál es la peor mano inicial del póker?**
 
@@ -296,7 +296,7 @@ A. Cuanto más tarde actúas, más ancho es tu rango. En una mesa de 9-max: UTG 
 
 **Q. ¿Es 7-2 la peor mano inicial?**
 
-A. Sí. El 7-2 de distinto palo se considera la peor mano inicial del póker: las cartas están demasiado separadas para hacer una escalera juntas y son demasiado bajas para ganar sin mejorar. De ahí sale la "regla del 7-2", un juego paralelo de la casa que premia a quien se atreva a ganar un bote con ella de farol.
+A. En general, sí. El 7-2 de distinto palo se considera la peor mano inicial del póker (aunque por equity bruta contra una mano aleatoria el 3-2 de distinto palo es algo más débil, alrededor del 32% frente al 35%): las cartas están demasiado separadas para hacer una escalera juntas y son demasiado bajas para ganar sin mejorar. De ahí sale la "regla del 7-2", un juego paralelo de la casa que premia a quien se atreva a ganar un bote con ella de farol.
 
 ---
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Texas Hold'em punya 5 aksi taruhan: check (lewat gratis), bet (membuka ronde), call (menyamai taruhan), raise (menaikkannya — raise minimum sama dengan bet atau raise sebelumnya), dan fold. Anda hanya boleh check kalau tidak ada taruhan aktif di depan Anda — di preflop itu biasanya cuma terjadi kalau Anda big blind (atau memasang live straddle).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-09-22",
-  masterUpdated: "2026-09-22",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "9 menit",
   emoji: "🃏",
@@ -227,7 +227,7 @@ A. Tergantung ukuran all-in-nya. Kalau all-in itu merupakan raise penuh yang sah
 
 **Q. Apa itu string bet di poker?**
 
-A. Mencoba bet atau raise dalam beberapa gerakan — kembali ke stack Anda di tengah jalan — tanpa mengucapkan "raise" lebih dulu (==Rule 103==). Gerakan kedua tidak pernah dihitung — hanya chip pertama yang berlaku, dengan aturan call satu chip dan beberapa chip diterapkan lebih dulu (TDA Rules 44–45, edisi 2024). Jika ambang setengah minimum dalam Rule 43-A berlaku, yang diukur adalah tambahan di atas call, bukan total chip: kurang dari setengah bet penuh atau kenaikan raise penuh terbesar sebelumnya berarti call; setengah atau lebih wajib dilengkapi menjadi min-raise penuh. Deklarasi raise sebelumnya atau all-in mengikuti aturannya sendiri. Aturan yang sama juga melarang gerakan tipuan untuk memancing aksi di luar giliran sebelum aksi Anda sendiri selesai. Bilang "call" lalu menambahkan chip bukan string bet, melainkan deklarasi yang mengikat (==Rule 90.d==) — hasil akhirnya sama: tetap dihitung call. Ucapkan aksi Anda dengan jelas atau gerakkan semua chip dalam satu gerakan.
+A. Mencoba bet atau raise dalam beberapa gerakan — kembali ke stack Anda di tengah jalan — tanpa mengucapkan "raise" lebih dulu (==Rule 103==). Gerakan kedua tidak pernah dihitung — hanya chip pertama yang berlaku, dengan aturan call satu chip dan beberapa chip diterapkan lebih dulu (TDA Rules 44–45, edisi 2024). Jika ambang setengah minimum dalam Rule 43-A berlaku, yang diukur adalah tambahan di atas call, bukan total chip: kurang dari setengah bet penuh atau kenaikan raise penuh terbesar sebelumnya berarti call; setengah atau lebih wajib dilengkapi menjadi min-raise penuh. Deklarasi raise sebelumnya atau all-in mengikuti aturannya sendiri. Rule 103 juga melarang gerakan tipuan untuk memancing aksi di luar giliran sebelum aksi Anda sendiri selesai. Bilang "call" lalu menambahkan chip bukan string bet, melainkan deklarasi yang mengikat (==Rule 90.d==) — hasil akhirnya sama: tetap dihitung call. Ucapkan aksi Anda dengan jelas atau gerakkan semua chip dalam satu gerakan.
 
 **Q. Apa arti limp di poker?**
 

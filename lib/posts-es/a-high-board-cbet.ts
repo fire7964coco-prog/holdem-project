@@ -24,8 +24,8 @@ export const POST: Post = {
   tldr: "En A♥7♦2♣, después de una apertura del botón y un pago de la ciega grande, la ciega grande hace check el 98.2% de su rango — top pair, doble pareja y sets incluidos. La equity está casi igualada, 45.1% contra 54.9%; lo que separa a los dos asientos es la realización de equity, 84.0% fuera de posición contra 113.1% en posición.",
   category: "strategy",
   date: "2026-09-02",
-  updated: "2026-09-02",
-  masterUpdated: "2026-09-02",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "🅰️",
@@ -90,7 +90,7 @@ De 464 combos, unos ocho apuestan — 1.9% entre los dos tamaños, redondeado. E
 
 Porque el bote se gana más fácil haciendo check que apostando. Liderar con una pareja, fuera de posición y contra el jugador que tomó la iniciativa preflop, es la forma cara de jugar una mano con la que te conformas con llegar al showdown.
 
-Hay tres cosas en contra del lead. Primera, la **realización de equity**: los números de más abajo muestran a la ciega grande cobrando el 84.0% de su equity y al botón el 113.1%. Construir un bote más grande fuera de posición hace que esa diferencia cueste más, no menos. Segunda, el botón cbetea este flop con frecuencia alta — **hacer check mantiene sus faroles dentro del bote**, mientras que liderar les deja retirarse sin pagar nada. Tercera, el rango de la ciega grande está capado: sin AA, AK ni AQ dentro, un lead invita a una subida justo de las manos contra las que no puede continuar.
+Hay tres cosas en contra del lead. Primera, la **realización de equity**: los números de más abajo muestran a la ciega grande cobrando el 84.0% de su equity y al botón el 113.1%. Construir un bote más grande fuera de posición hace que esa diferencia cueste más, no menos. Segunda, el botón cbetea este flop con frecuencia alta — **hacer check mantiene sus faroles dentro del bote**, mientras que liderar les deja retirarse sin pagar nada. Tercera, el rango de la ciega grande está capado: sin AA, AK ni AQ dentro, un lead invita a subidas de los ases fuertes, y la mayor parte del rango de la ciega grande no puede continuar contra ellas — solo 24 combos aguantan una subida (los sets de 77 y 22, las dobles parejas A7 y A2). (Aquí no hay ningún nodo de subida resuelto.)
 
 Lo que un lead **no** hace es sacar del bote manos mejores. El rango de apertura del botón conserva todos los ases hasta A2, más los underpairs y los sietes, así que muchas manos peores pagarían — ese no es el problema. El problema es el bote que estás construyendo para ganarlo.
 
@@ -100,7 +100,7 @@ También importa que "un as" no es un único tipo de mano. A9 pierde la guerra d
 
 ## ¿Qué es un board seco y por qué este favorece al que subió?
 
-Un board seco es el que no tiene proyecto de color y casi ningún proyecto de escalera — tres cartas sin conexión en tres palos distintos, como A♥ 7♦ 2♣. Casi nada persigue nada: **el 71.3% del rango de la ciega grande no tiene proyecto**, y casi todo el resto es un proyecto backdoor de color. Favorece al que subió porque el rango de apertura del botón conserva AK, AQ y AJ mientras que el rango de pago de la ciega grande no — los ases están apilados de un solo lado, y no hay proyectos que igualen las cosas más adelante.
+Un board seco es el que no tiene proyecto de color y casi ningún proyecto de escalera — tres cartas sin conexión en tres palos distintos, como A♥ 7♦ 2♣. Casi nada persigue nada: **el 71.3% del rango de la ciega grande no tiene proyecto**, y casi todo el resto es un proyecto backdoor de color. Favorece al que subió porque el rango de apertura del botón conserva AK y AQ mientras que el rango de pago de la ciega grande llega como mucho a AJ — los ases están apilados de un solo lado, y no hay proyectos que igualen las cosas más adelante.
 
 ![Infografía de composición de rango que compara las categorías de mano de la ciega grande y del botón en un board seco A-high, barras verdes y doradas en paralelo](/images/gto-srp-dry-ace-ranges-es.webp "A♥7♦2♣ · reparto por categorías — el botón tiene más top pair, la ciega grande más aire")
 

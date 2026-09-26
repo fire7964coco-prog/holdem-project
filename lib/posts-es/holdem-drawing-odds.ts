@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "odds",
   date: "2026-07-04",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-24",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🎲",
@@ -43,7 +43,7 @@ Eso es en realidad la probabilidad de proyecto: no es suerte, sino la ==matemát
 
 | Con lo que juegas | Ligarlo hecho | Ligar el proyecto | Completar el proyecto al river |
 |:---|:---:|:---|:---|
-| Pareja servida → set | 11.8% (7.5 a 1) | — | set→full o póker 33% al river |
+| Pareja servida → set | 11.8% (7.5 a 1) | — | set→full o póker 33.4% al river |
 | Dos del mismo palo → color | 0.84% (118 a 1) | 10.9% proyecto de color | 35% (9 outs) |
 | Conectoras 54–JT → escalera | 1.3% (76 a 1) | ~10% proyecto abierto | 31.5% (8 outs) |
 | Dos sin emparejar → pareja | ~32% | — | — |
@@ -86,7 +86,7 @@ El set mining es la jugada de [odds implícitas](/es/blog/holdem-implied-odds "t
 Dos números relacionados que la gente pregunta:
 
 - **Ligar un set para el river** (desde el preflop, viendo las cinco cartas de la mesa) es un ==**19.2%**== — 1 − C(48,5)/C(50,5). Más alto que la cifra del flop porque tienes dos cartas más, pero no puedes contar con llegar al river barato, y por eso el número del flop manda en el set mining.
-- **Set contra set** — dos jugadores con parejas servidas ligan set en la misma mano y el menor pierde contra el mayor — no tiene una cifra única fija porque depende de cuántos rivales tengan parejas, pero con dos jugadores que ambos tienen pareja, que *los dos* liguen set ronda el ~1%. Es el cooler clásico: la matemática estuvo de tu lado todo el camino.
+- **Set contra set** — dos jugadores con parejas servidas ligan set en la misma mano y el menor pierde contra el mayor — no tiene una cifra única fija porque depende de cuántos rivales tengan parejas, pero con dos jugadores que ambos tienen pareja, que *los dos* liguen set ronda el ~1%. Es el cooler clásico — y la derrota por sí sola no te dice si el call de set mining fue correcto; eso lo dicen el precio y los stacks.
 
 ---
 
@@ -190,7 +190,7 @@ La que sorprende a la gente: si **tú** tienes ases en una mesa de 10 jugadores,
 
 **Q. ¿Qué probabilidad hay de ligar un set?**
 
-A. Alrededor del 11.8% en el flop, o 1 de cada 8.5, cuando tienes una pareja servida — se suele citar como "7.5 a 1 en contra". Sale de 1 − C(48,3)/C(50,3): de los 19,600 flops posibles, 17,296 fallan tu pareja. Ese número es toda la base para saber si hacer set mining con una pareja pequeña es rentable.
+A. Alrededor del 11.8% en el flop, o 1 de cada 8.5, cuando tienes una pareja servida — se suele citar como "7.5 a 1 en contra". Sale de 1 − C(48,3)/C(50,3): de los 19,600 flops posibles, 17,296 fallan tu pareja. Ese número es el punto de partida del set mining con una pareja pequeña — que el call sea rentable depende también de cuánto puedes ganar cuando aciertas.
 
 **Q. ¿Por qué se dice 7.5 a 1 pero también 1 de cada 8?**
 
@@ -226,21 +226,21 @@ A. La regla es sencilla: compara tu probabilidad de ligar con las pot odds que t
 
 **Q. ¿Qué probabilidad hay de ligar un póker?**
 
-A. 0.245%, o 407 a 1, con una pareja servida — hay exactamente 48 flops (tus dos últimas cartas iguales más cualquier tercera carta, C(48,1)) de los 19,600. Ligar una escalera de color es aún más raro, alrededor de 1 de cada 4,900.
+A. 0.245%, o 407 a 1, con una pareja servida — hay exactamente 48 flops (tus dos últimas cartas iguales más cualquier tercera carta, C(48,1)) de los 19,600. Ligar una escalera de color con conectoras del mismo palo de 54s a JTs es aún más raro, alrededor de 1 de cada 4,900.
 
 **Q. ¿Qué probabilidad hay de recibir ases servidos?**
 
-A. 220 a 1 (0.45%) para los ases en concreto — 6 de las 1,326 combinaciones iniciales. Cualquier pareja servida es mucho más común, a 16 a 1 (5.9%). Y si tienes ases en una mesa llena, que otro jugador también los tenga es de más o menos 1 de cada 136.
+A. 220 a 1 (0.45%) para los ases en concreto — 6 de las 1,326 combinaciones iniciales. Cualquier pareja servida es mucho más común, a 16 a 1 (5.9%). Y si tienes ases en una mesa de 10 jugadores, que otro jugador también los tenga es de más o menos 1 de cada 136 (cerca de 1 de cada 153 con nueve jugadores).
 
 **Q. ¿Qué probabilidad hay de set contra set?**
 
-A. No hay un número único fijo — depende de cuántos rivales tengan parejas servidas — pero cuando dos jugadores tienen ambos pareja y ambos ligan set, ronda el 1%. Es el cooler definitivo: ligas un set solo el 11.8% de las veces para empezar, así que que dos de vosotros lo hagáis en la misma mesa es una historia, no un error.
+A. No hay un número único fijo — depende de cuántos rivales tengan parejas servidas — pero cuando dos jugadores tienen ambos pareja y ambos ligan set, ronda el 1%. Es el cooler definitivo: ligas un set solo el 11.8% de las veces para empezar, así que que dos de vosotros lo hagáis en la misma mesa es raro — y el resultado por sí solo no demuestra si alguno de los dos calls fue un error.
 
 ---
 
 ## Las 3 cosas que debes recordar
 
-1. **Ligar un set: 11.8% (7.5 a 1).** El número que decide cada call de set mining — solo paga con stacks lo bastante profundos para cobrar 15× o más cuando aciertes.
+1. **Ligar un set: 11.8% (7.5 a 1).** El punto de partida de cada call de set mining — la profundidad de los stacks y un rival con pinta de pagar deciden si es rentable, así que apunta a ganar 15× o más cuando aciertes.
 2. **Hecho vs proyecto vs completado son números distintos.** Dos cartas del mismo palo ligan un color hecho un 0.84%, un proyecto de color un 10.9%, y completan ese proyecto un 35%. Nunca cites el equivocado.
 3. **Un proyecto grande es más o menos uno de cada tres al river.** Proyecto de color 35%, abierto 31.5% — y más o menos uno de cada cinco o seis en una sola calle.
 

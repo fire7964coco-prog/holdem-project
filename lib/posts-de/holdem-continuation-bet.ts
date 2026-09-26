@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Eine Continuation Bet (C-Bet) ist ein Einsatz am Flop vom Spieler, der preflop geraist hat. Die moderne Regel ist nicht 'jeden Flop c-betten' – sondern die Flops zu setzen, die deine Range favorisieren (hohe, trockene Boards wie K-7-2) klein und oft, und die zu checken, die deinen Gegner favorisieren (niedrige, verbundene Boards wie 7-6-5). Setze klein – etwa ein Drittel Pot – auf trockenen Boards, groß – zwei Drittel oder mehr – auf wet Boards, c-bette weniger out of Position, wenn du der alleinige Raiser warst (als 3-Better out of Position kippt es zu fast immer), und deutlich weniger multiway.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "15 Min.",
   emoji: "🔥",
@@ -38,7 +38,7 @@ Check | Oft der beste Zug, kein Zeichen von Schwäche
 
 **Eine Continuation Bet ist ein Einsatz am Flop von dem Spieler, der vor dem Flop der Aggressor war** – die letzte Person, die geraist hat. Du „setzt“ die Story von Stärke fort, die du preflop begonnen hast. Entscheidend: ==du musst den Flop nicht getroffen haben, um zu c-betten==; ein großer Anteil guter C-Bets wird mit Händen gemacht, die den Flop komplett verfehlt haben.
 
-Der Grund, warum es funktioniert, ist eine simple Statistik: **eine Hand verfehlt den Flop – macht kein Paar oder besser – etwa zwei Drittel der Zeit.** Wenn du also bettest, hat dein Gegner meist auch nichts und foldet. Du bettest nicht, weil du stark bist; du bettest, weil *er wahrscheinlich schwach ist* und du derjenige warst, der die Führung beansprucht hat.
+Der Grund, warum es funktioniert, ist eine simple Statistik: **zwei ungepaarte Hole Cards paaren sich am Flop etwa zwei Drittel der Zeit nicht (67,6%).** Wenn du also bettest, hat dein Gegner oft ebenfalls verfehlt – und viele dieser Hände folden. Du bettest nicht, weil du stark bist; du bettest, weil *er wahrscheinlich schwach ist* und du derjenige warst, der die Führung beansprucht hat.
 
 Sobald du die Flop-C-Bet kennst, folgt der Rest der „Barreling“-Leiter:
 
@@ -105,7 +105,7 @@ Es gibt keinen einzelnen „korrekten“ C-Bet-Prozentsatz – wer dir eine Zahl
 |:---|:---:|:---|
 | **In Position, heads-up, trockenes Board** | **70–100%** (klein) | Klassische „Range-Bet“ – bette fast alles, winzig |
 | **In Position, heads-up, wet Board** | **~50–60%** | Polarisierter – Value und Draws betten, Air checkt |
-| **Out of Position, heads-up (Single-Raised Pot, du warst der Raiser)** | **~30–45%** | Checke weit öfter, um deine Checking-Range zu schützen. Als OOP-*3-Better* dreht es sich um – über 97% auf den beiden Boards, die wir gelöst haben, fast alles davon mit der Zwei-Drittel-Pot-Größe (die Ein-Drittel-Größe bekam unter 1%), siehe das [Positions-Playbook](/de/blog/holdem-position-play) |
+| **Out of Position, heads-up (Single-Raised Pot, du warst der Raiser)** | **~30–45%** | Checke weit öfter, um deine Checking-Range zu schützen. Als OOP-*3-Better* dreht es sich um: über 97% auf allen drei Boards, die wir gelöst haben – auf Q♥T♥7♠ und 8♦5♣2♠ fast alles mit zwei Drittel Pot, auf A♦K♠2♥ aber überwiegend mit einem Drittel Pot (57,8%); siehe das [Positions-Playbook](/de/blog/holdem-position-play) |
 | **Multiway (2 Gegner)** | **~50% oder weniger** | Wahrscheinlich hat jemand getroffen – zieh zusammen |
 | **Multiway (3+ Gegner)** | **Nur starke Hände & gute Draws** | Fold Equity ist im Grunde weg |
 
@@ -156,7 +156,7 @@ Den Flop zu checken ist nicht das Ende der Hand. Eine **Delayed C-Bet** – als 
 
 - Der **Flop deinen Gegner favorisierte** (ein niedriges, verbundenes Board), Betten also schlecht war – der **Turn aber das Bild ändert** (eine Overcard oder eine Karte, die deine Equity anhebt).
 - Du **eine anständige Hand in Position durchgecheckt hast** und jetzt eine Street Value setzen willst, da das Board sicherer ist.
-- Du **Floats fangen willst**: Spieler, die planten, deine Flop-C-Bet zu bluff-raisen, bekommen keinen Einsatz zum Angreifen und sehen sich stattdessen deiner Turn-Bet gegenüber.
+- Du **dem Flop-Raise die Grundlage nehmen willst**: Spieler, die planten, deine Flop-C-Bet zu bluff-raisen, bekommen keinen Einsatz zum Angreifen und sehen sich stattdessen deiner Turn-Bet gegenüber.
 
 Verzögern verwandelt einen Spot, in dem eine automatische C-Bet Chips verblutet hätte, in einen kontrollierten, informierten Einsatz eine Street später.
 
@@ -169,7 +169,7 @@ Verzögern verwandelt einen Spot, in dem eine automatische C-Bet Chips verblutet
 
 Machen wir das „Nicht“ explizit, denn hier wird das Geld gespart:
 
-- **Das Board hat die Range deines Gegners zerlegt.** Ein 7‑6‑5- oder 9‑8‑7-Flop trifft die Hände, die einen Raise callen, weit härter als deine. Hier zu betten verschenkt nur Chips – checke.
+- **Das Board hat die Range deines Gegners zerlegt.** Ein 7‑6‑5- oder 9‑8‑7-Flop trifft die Hände, die einen Raise callen, weit härter als deine. Hier mit dem Großteil deiner Range zu betten verschenkt nur Chips – checke weit öfter, und wenn du bettest, dann groß und selektiv.
 - **Du bist out of Position auf einem dynamischen Board** mit einer marginalen Hand. Als Erster ohne Information handelnd, halt den Pot klein und checke.
 - **Du bist multiway mit Air.** Oben behandelt – keine Fold Equity, kein Einsatz.
 - **Deine Hand will eine Checking-Range schützen.** Manchmal checkst du eine starke Hand absichtlich, damit deine Checks nicht automatisch schwach sind.
@@ -200,7 +200,7 @@ Gleicher Preflop-Raise, entgegengesetzte Flops, entgegengesetzte richtige Züge.
 | **Groß betten mit einer weiten Range** | Weite Ranges wollen kleines Sizing, nicht großes | Klein auf trocken, groß nur wenn polarisiert |
 | **Multiway light c-betten** | Fold Equity kollabiert mit mehr Spielern | Nur Value & Draws gegen 2+ |
 | **Zu oft OOP c-betten** | Du kannst als Erster deine Equity nicht so gut realisieren | Checke öfter, bau eine Checking-Range auf |
-| **In ein Board betten, das sie getroffen hat** | 7‑6‑5 zerlegte ihre Range, nicht deine | Checke und gib auf |
+| **In ein Board betten, das sie getroffen hat** | 7‑6‑5 zerlegte ihre Range, nicht deine | Checke öfter; wenn du bettest, dann groß und selektiv |
 | **„One-and-done“-Barreling** | Flop c-betten, Turn immer aufgeben = leicht zu floaten | Hab einen Turn-Plan, bevor du feuerst |
 | **Triple-Barrel ohne Equity** | Einen Stack verbluffen ohne Outs oder Blocker | Bluffe mit Backup-Equity oder guten Blockern |
 
@@ -251,7 +251,7 @@ A. Eine Delayed C-Bet ist, wenn der Preflop-Raiser den Flop checkt und dann den 
 
 **Q. Wann solltest du NICHT c-betten?**
 
-A. C-bette nicht, wenn das Board die Range deines Gegners zerlegt hat (niedrige verbundene Boards), wenn du out of Position mit einer marginalen Hand auf einem dynamischen Board bist, wenn du multiway mit Air bist oder wenn deine Hand lieber eine Checking-Range schützt. Checken in diesen Spots ist keine Schwäche – es spart Chips und macht deine zukünftigen Einsätze glaubwürdiger.
+A. C-bette nicht standardmäßig, wenn das Board die Range deines Gegners zerlegt hat (niedrige verbundene Boards – checke öfter, und wenn du bettest, dann groß und selektiv), wenn du out of Position mit einer marginalen Hand auf einem dynamischen Board bist, wenn du multiway mit Air bist oder wenn deine Hand lieber eine Checking-Range schützt. Checken in diesen Spots ist keine Schwäche – es spart Chips und macht deine zukünftigen Einsätze glaubwürdiger.
 
 **Q. Ist eine C-Bet ein Bluff?**
 
@@ -271,7 +271,7 @@ A. Etwa 55–70% für Flop-C-Bet ist ein gesundes, ausbalanciertes Band. Über e
 
 1. **Eine C-Bet ist ein Flop-Einsatz vom Preflop-Raiser** – und sie funktioniert, weil Hände den Flop etwa zwei Drittel der Zeit verfehlen.
 2. **Das Board entscheidet.** Bette hohe, trockene Boards, die deine Range favorisieren; checke niedrige, verbundene Boards, die die Range deines Gegners favorisieren.
-3. **Range Advantage bestimmt die Frequenz; Nut Advantage bestimmt die Größe.** Bette oft auf Boards, die du dominierst; bette groß nur, wenn du mehr der Nuts hältst.
+3. **Range Advantage bestimmt die Frequenz; Nut Advantage bestimmt die Größe.** Bette oft auf Boards, die du dominierst; bette groß, wenn du mehr der Nuts hältst oder auf wet Boards Draws abkassieren musst.
 4. **Klein (⅓) auf trocken, groß (⅔+) auf wet.** C-bette weniger out of Position, wenn du der alleinige Raiser warst (als 3-Better out of Position kippt es zu fast immer), und deutlich weniger multiway.
 5. **Checken ist eine Waffe.** Die besten Spieler checken oft und mit Absicht – die C-Bet ist ein Skalpell, kein Hammer.
 

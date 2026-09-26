@@ -186,7 +186,7 @@ Si tu joues un petit cash game à la maison, choisis une cave que tout le monde 
 
 ==r:Ne commence pas avec des enjeux qui rendent les gens nerveux.== Un débutant tendu n'apprend pas plus vite. Il se couche trop, suit sous le coup de l'émotion, ou discute les règles.
 
-Note que la cave d'un **tournoi** fonctionne autrement que celle d'un cash game : tu payes une entrée fixe, tu reçois un tapis fixe de jetons non convertibles en argent, et tu joues jusqu'à ce qu'un seul joueur les ait tous.
+Note que la cave d'un **tournoi** fonctionne autrement que celle d'un cash game : tu payes une entrée fixe, tu reçois un tapis fixe de jetons non convertibles en argent, et tu joues jusqu'à ce qu'un seul joueur les ait tous (dans les tournois à re-entry, tu peux te racheter après avoir été éliminé).
 
 Pour t'entraîner en ligne, reste sur des tables gratuites jusqu'à pouvoir expliquer l'ordre de l'action sans réfléchir. Ensuite, monte de niveau doucement.
 
@@ -194,7 +194,7 @@ Pour t'entraîner en ligne, reste sur des tables gratuites jusqu'à pouvoir expl
 
 ## No-Limit, Limit ou Pot-Limit ? À quel Texas Hold'em joues-tu ?
 
-Quand les gens disent « Texas Hold'em », ils parlent presque toujours du **No-Limit Hold'em (NLHE)** — le format du Main Event des WSOP et de quasiment toutes les parties maison. La distribution, les blindes et le classement des mains sont identiques dans les trois formats. La seule chose qui change, c'est **le montant que tu as le droit de miser.**
+Quand les gens disent « Texas Hold'em », ils parlent presque toujours du **No-Limit Hold'em (NLHE)** — le format du Main Event des WSOP et de quasiment toutes les parties maison. La distribution et le classement des mains sont identiques dans les trois formats. Ce qui change avant tout, c'est **le montant que tu as le droit de miser** — et le Fixed-Limit plafonne aussi, en général, le nombre de relances par tour (aux WSOP : une mise plus quatre relances).
 
 | Format | Combien peux-tu miser ? | Où tu le verras |
 |--------|-----------------------|---------------------|
@@ -299,7 +299,7 @@ Tes pot odds sont de **$120 contre $20**, soit **6 contre 1**. Ça veut dire que
 
 ### La règle du 2 et du 4 — le raccourci de probabilité instantané
 
-Quand tu as un tirage (par ex. quatre cartes vers une couleur), compte tes **outs** — les cartes qui complètent ta main.
+Quand tu as un tirage (par ex. quatre cartes vers une couleur), compte tes **outs** — les cartes qui transforment ton tirage en main probablement gagnante.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

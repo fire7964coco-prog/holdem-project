@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Estar en posición significa que hablas último — ves la decisión de cada rival antes de gastar una ficha. Los ejemplos de solver muestran que la posición suele mejorar la realización de equity, pero ningún asiento queda necesariamente por encima o por debajo del 100%: los rangos, el board y la acción pueden invertir el patrón habitual. Por eso UTG abre ~13% de las manos y el botón ~43% — y por eso la posición reescribe cada c-bet, cada farol y cada decisión de control del bote en el postflop.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-09-22",
-  masterUpdated: "2026-09-22",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎯",
@@ -177,7 +177,7 @@ Cada asiento tiene su propio rango de apertura porque **el número de jugadores 
 | Hijack | ~20% | Empiezan las oportunidades de robo |
 | **Cutoff** | **~27%** | Solo el botón detrás — asiento de robo por excelencia |
 | **Botón** | ==g:**~43%**== | Última acción garantizada en el postflop — la apertura más amplia |
-| Ciega pequeña | ~40% cuando llega foldeado (frente a una subida: 3-bet o fold) | Amplio cuando llega foldeado — sube por defecto, aunque completar es un [limp](/es/blog/holdem-limping) defendible en un bote sin subir; frente a una subida, 3-bet o fold — no iguales |
+| Ciega pequeña | ~40% cuando llega foldeado (frente a una subida: 3-bet o fold) | Amplio cuando llega foldeado — sube por defecto, aunque completar es un [limp](/es/blog/holdem-limping) defendible en un bote sin subir; frente a una subida, 3-bet o fold — casi nunca iguales |
 | Ciega grande | Defiende amplio vs robos | Cierra la acción + pot odds, no aperturas |
 
 ![Mesa de póker de 9 jugadores mostrando cómo los rangos de apertura se abren desde UTG (~13%, rojo cerrado) hasta el botón (~43%, verde amplio)](/images/holdem-position-play-opening-range.webp "Rango de apertura por posición — UTG abre ~13%, el botón ~43%")
@@ -194,11 +194,11 @@ La mayoría de las guías se quedan en «evita jugar OOP». Vale — pero estás
 
 **1. [El check-raise](/es/blog/low-board-check-raise) es tu igualador.** Es el arma que tiene OOP y que IP no tiene: como esperan apostar cuando les pasan, ==g:un check-raise vuelve su piloto automático posicional en su contra.== Construye el rango con honestidad — manos fuertes (tríos, doble pareja) más proyectos con equity real (escaleras abiertas, proyectos de color) — para que nunca sea todo farol ni todo valor.
 
-**2. Apuesta más grande cuando apuestes.** Las apuestas OOP tienen que cerrar manos antes. Un sizing mayor (piensa en dos tercios o tres cuartos del bote en vez de un tercio) niega las cartas gratis y las igualadas especulativas baratas que la posición le dejaría tomar a tu rival. Jugar al small-ball OOP solo alarga la mano — y cada calle extra favorece al que actúa último.
+**2. Dale un trabajo a cada apuesta — y ajusta el tamaño a la situación.** No existe un único tamaño fuera de posición. En los botes de una sola subida que resolvimos, el jugador OOP que apostaba eligió sobre todo más o menos un tercio del bote (el 79.6% del rango de la ciega pequeña tomó ese tamaño en A♠A♥6♦, una mesa de ases emparejados que favorece de lleno a quien subió). En los botes de 3-bet, quien mete el 3-bet OOP siguió prefiriendo el tamaño pequeño en A♦K♠2♥ (57.8%), pero pasó a dos tercios del bote en Q♥T♥7♠ y 8♦5♣2♠. El tamaño grande sirve para negar las cartas gratis y las igualadas especulativas baratas que la posición le dejaría tomar a tu rival; el pequeño te deja apostar un rango amplio barato. Lo que pierde es apostar sin plan — cada calle extra que dejas pasar a la deriva favorece al que actúa último.
 
 **3. Controlar el bote significa pasar más, igualar más y foldear antes.** Las manos de fuerza media OOP quieren showdowns baratos. Las líneas de pasar-igualar llegan; las de apostar-y-que-te-suban, no. Y cuando llega el tercer barril y tu mano no ha mejorado, recuerda lo que son de verdad las manos marginales OOP: ==r:bluff-catchers que infra-realizan.== Foldear el river OOP más a menudo de lo que parece natural suele ser lo correcto.
 
-**4. Salir apostando (donk-bet) pocas veces y de forma concreta.** Apostar contra el que subió en el preflop funciona solo en mesas que favorecen tu rango — flops bajos y conectados que le pegan a un rango de defensa de ciega y fallan al de quien sube. Como línea por defecto es legible y explotable; como bisturí en las mesas adecuadas, está bien.
+**4. Salir apostando (donk-bet) pocas veces y de forma concreta.** Apostar contra el que subió en el preflop funciona mejor en mesas que favorecen tu rango — flops bajos y conectados que le pegan a un rango de defensa de ciega y fallan al de quien sube. Como línea por defecto es legible y explotable; como bisturí en las mesas adecuadas, está bien.
 
 **5. Lo mejor de todo: no llegar ahí.** Igualar subidas desde la ciega pequeña, hacer cold-call en posición media con manos dominadas, defender la ciega grande contra aperturas de posición temprana con basura — casi toda la miseria OOP es autoinfligida en la decisión del preflop.
 
@@ -211,10 +211,10 @@ Muchísimo. La apuesta de continuación es en el fondo una jugada de informació
 | Situación | Frecuencia típica de c-bet del solver (flop) |
 |---|---|
 | **IP (BTN/CO vs defensa de ciega)** | **~65–75%** de las mesas |
-| OOP como quien mete el 3-bet (botes de 3-bet desde las ciegas) | Altísima — en nuestras corridas de solver la ciega grande cbetea más del 97% de las veces tanto en Q♥T♥7♠ como en 8♦5♣2♠ — con el tamaño de dos tercios del bote; el de un tercio quedó por debajo del 1% |
+| OOP como quien mete el 3-bet (botes de 3-bet desde las ciegas) | Altísima — en nuestras corridas de solver la ciega grande cbetea más del 97% de las veces tanto en Q♥T♥7♠ como en 8♦5♣2♠ — con el tamaño de dos tercios del bote; el de un tercio quedó por debajo del 1% (en A♦K♠2♥ mandó en cambio el de un tercio, 57.8%) |
 | Quien subió OOP vs quien iguala IP (bote de una sola subida) | ~30–45% — el más selectivo |
 
-En posición, puedes cbetear un rango amplio — incluido aire y proyectos backdoor — porque tu rival tiene que responder sin saber tu siguiente movimiento, y cuando iguala tú sigues actuando último en el turn. Fuera de posición, la misma apuesta es más arriesgada: un check-raise termina tu farol, y un call te deja adivinando primero en cada calle que queda. Por eso cbetear a ciegas el 100% «porque subiste en el preflop» quema dinero OOP en un bote de una sola subida — la fila de casi el 100% de arriba es la de quien mete el 3-bet, a quien su ventaja de rango se lo permite.
+En posición, puedes cbetear un rango amplio — incluido aire y proyectos backdoor — porque tu rival tiene que responder sin saber tu siguiente movimiento, y cuando iguala tú sigues actuando último en el turn. Fuera de posición, la misma apuesta es más arriesgada: una subida termina tu farol, y un call te deja adivinando primero en cada calle que queda. Por eso cbetear a ciegas el 100% «porque subiste en el preflop» quema dinero OOP en un bote de una sola subida — la fila de casi el 100% de arriba es la de quien mete el 3-bet, a quien su ventaja de rango se lo permite.
 
 El marco completo de sizing y textura de mesa está en la [guía de la apuesta de continuación](/es/blog/holdem-continuation-bet).
 
@@ -236,7 +236,7 @@ Para la mecánica de las ciegas en sí — por qué existen y cómo las apuestas
 
 ## 6-max vs full ring — y torneo vs cash
 
-**El 6-max comprime el mapa.** Al quitar tres asientos tempranos, el primero en actuar en 6-max se enfrenta solo a cinco rivales — así que ==**UTG en 6-max se juega como el lojack de full ring, abriendo alrededor del ~17%**== en vez del ~13% de UTG en full ring. Todos los demás asientos se abren de forma similar, los robos vienen más a menudo y los 3-bets son más frecuentes en general. La fuga más común al cambiar de formato es arrastrar la rigidez del 9-max al 6-max — acabas foldeado fuera de la mesa.
+**El 6-max comprime el mapa.** Al quitar tres asientos tempranos, el primero en actuar en 6-max se enfrenta solo a cinco rivales — así que ==**UTG en 6-max se juega como el lojack de full ring, abriendo alrededor del ~17%**== en vez del ~13% de UTG en full ring. Los asientos tardíos conservan el mismo número de jugadores detrás, así que sus rangos apenas cambian — pero te sientas en ellos más a menudo, los robos son más comunes y los 3-bets son más frecuentes en general. La fuga más común al cambiar de formato es arrastrar la rigidez del 9-max al 6-max — acabas foldeado fuera de la mesa.
 
 **Los torneos mantienen la misma mecánica con distintas apuestas en cada decisión.** En cash, las ventajas posicionales se acumulan con calma a lo largo de horas y los rebuys hacen recuperables las fugas. En torneo, los stacks que menguan cambian la textura: por debajo de ~15 ciegas grandes, el juego colapsa hacia push/fold, donde el matiz posicional importa menos, mientras que con 20–30 BB el robo desde posición tardía se convierte en el motor de la supervivencia — hasta que el ICM de la burbuja hace que algunos robos matemáticamente correctos sean un suicidio en torneo. La comparación completa está en la [guía de torneo vs cash game](/es/blog/holdem-tournament-vs-cash-game).
 
@@ -251,7 +251,7 @@ Para la mecánica de las ciegas en sí — por qué existen y cómo las apuestas
 
 **Q. ¿Qué significa fuera de posición en el póker?**
 
-A. Fuera de posición (OOP) significa que tienes que actuar antes que tu rival en las calles del postflop — flop, turn y river. Comprometes fichas sin saber qué hará él, no puedes tomar cartas gratis y te cuesta controlar el tamaño del bote. Las ciegas están OOP contra todos los demás asientos (entre las dos, la ciega pequeña actúa primero — así que la ciega grande en realidad tiene posición sobre la ciega pequeña); el botón nunca está OOP contra nadie.
+A. Fuera de posición (OOP) significa que tienes que actuar antes que tu rival en las calles del postflop — flop, turn y river. Comprometes fichas sin saber qué hará él, no puedes tomar cartas gratis y te cuesta controlar el tamaño del bote. Las ciegas están OOP contra todos los asientos que no son ciegas (y la ciega pequeña también lo está contra la ciega grande: entre las dos, la ciega pequeña actúa primero, así que la ciega grande tiene posición sobre ella); el botón nunca está OOP contra nadie.
 
 **Q. ¿Quién habla primero, la ciega pequeña o la ciega grande?**
 
@@ -279,15 +279,15 @@ A. Dos respuestas, según la pregunta. La ciega pequeña es el peor asiento estr
 
 **Q. ¿Es la ciega pequeña una posición temprana?**
 
-A. No — la ciega pequeña es una ciega, no un asiento de «posición temprana». Los jugadores de posición temprana (UTG y los asientos de al lado) abren cerrado porque toda la mesa actúa detrás de ellos — y en el postflop al menos hablan *después* de las ciegas. La ciega pequeña es en realidad el peor asiento para jugar: pone media ciega y luego actúa primero en cada calle del postflop. No la trates como posición temprana — el estándar moderno desde la ciega pequeña es 3-bet o fold.
+A. No — la ciega pequeña es una ciega, no un asiento de «posición temprana». Los jugadores de posición temprana (UTG y los asientos de al lado) abren cerrado porque toda la mesa actúa detrás de ellos — y en el postflop al menos hablan *después* de las ciegas. La ciega pequeña es en realidad el peor asiento para jugar: pone media ciega y luego actúa primero en cada calle del postflop. No la trates como posición temprana — frente a una subida, el estándar moderno desde la ciega pequeña es 3-bet o fold, casi nunca igualar; cuando te llega foldeado, sube la mayoría de las veces.
 
 **Q. ¿Cómo se juega fuera de posición (OOP)?**
 
-A. Pierde lo mínimo con disciplina. El check-raise es tu igualador: como el rival espera apostar cuando le pasas, un check-raise vuelve su piloto automático en su contra. Cuando apuestes, sube el tamaño (dos tercios o tres cuartos del bote) para negar cartas gratis. Controla el bote con las manos medias — pasa, iguala barato y foldea el river más de lo que parece natural, porque OOP tus manos marginales son bluff-catchers que infra-realizan. Y lo mejor: evita meterte OOP con basura desde las ciegas.
+A. Pierde lo mínimo con disciplina. El check-raise es tu igualador: como el rival espera apostar cuando le pasas, un check-raise vuelve su piloto automático en su contra. Cuando apuestes, ajusta el tamaño a la mesa y al tipo de bote: grande para negar cartas gratis, pequeño para apostar un rango amplio barato. Controla el bote con las manos medias — pasa, iguala barato y foldea el river más de lo que parece natural, porque OOP tus manos marginales son bluff-catchers que infra-realizan. Y lo mejor: evita meterte OOP con basura desde las ciegas.
 
 **Q. ¿Es mejor limpear o subir desde UTG?**
 
-A. Subir o foldear — no hagas open-limp. Una mano lo bastante fuerte como para jugarla desde el peor asiento del preflop es lo bastante fuerte como para subir; limpear invita a botes multiway que jugarás fuera de posición, encasilla tu rango percibido y nunca gana las ciegas directamente. La rara excepción es limpear detrás de otros que ya limpearon, en partidas en vivo pasivas, con pares pequeños y conectores del mismo palo.
+A. Subir o foldear — no hagas open-limp. Una mano lo bastante fuerte como para jugarla desde el peor asiento del preflop es lo bastante fuerte como para subir; limpear invita a botes multiway que jugarás fuera de posición, encasilla tu rango percibido y nunca gana las ciegas directamente. UTG no tiene a nadie delante detrás de quien limpear, así que la excepción habitual — el over-limp detrás de otros que ya limpearon, en partidas en vivo pasivas, con pares pequeños y conectores del mismo palo — es cosa de asientos más tardíos.
 
 **Q. ¿Con qué amplitud debo abrir desde UTG vs desde el botón?**
 
@@ -295,7 +295,7 @@ A. Desde UTG en full ring, abre más o menos el ~13% superior de las manos — p
 
 **Q. ¿Cómo afecta la posición a la frecuencia de c-bet?**
 
-A. En posición (botón o cutoff), los solvers hacen c-bet más o menos en el 65–75% de los flops — actúas último en cada calle posterior, así que apostar amplio incluido aire es seguro. Fuera de posición en un bote de una sola subida eso baja a más o menos el 30–45%, porque un check-raise puede terminar tu farol y un call te deja adivinando primero en el turn y el river (como quien mete el 3-bet fuera de posición la historia es otra — la ventaja de rango te deja cbetear casi todos los flops en las mesas que analizamos). Cbetear la misma frecuencia OOP que IP es una de las fugas más comunes y costosas.
+A. En posición (botón o cutoff), los solvers hacen c-bet más o menos en el 65–75% de los flops — actúas último en cada calle posterior, así que apostar amplio incluido aire es seguro. Fuera de posición en un bote de una sola subida eso baja a más o menos el 30–45%, porque una subida puede terminar tu farol y un call te deja adivinando primero en el turn y el river (como quien mete el 3-bet fuera de posición la historia es otra — la ventaja de rango te deja cbetear casi todos los flops en las mesas que analizamos). Cbetear la misma frecuencia OOP que IP es una de las fugas más comunes y costosas.
 
 **Q. ¿Hay que hacer siempre 3-bet desde la ciega pequeña?**
 
@@ -307,8 +307,8 @@ A. Cuando entras a un bote ya subido, casi siempre sí — el estándar moderno 
 
 1. **La posición mejora la realización de equity en promedio.** Ningún asiento queda fijo por encima o por debajo del 100%; los rangos, el board y la acción determinan el valor. La ventaja habitual viene de hablar último, no de mejores cartas.
 2. **Los rangos se deslizan con la posición.** UTG abre ~13%, el botón ==g:~43%== — y cada asiento intermedio sube un peldaño en la escalera. ==r:Jugar manos de botón desde UTG sangra fichas.==
-3. **El botón es el mejor asiento; las ciegas son las peores.** La BB pierde más fichas brutas (apuesta obligada); la SB es el peor asiento para jugar de verdad (primero en actuar en cada calle). Protege tu botón, y haz 3-bet-o-fold con tu ciega pequeña.
-4. **OOP no es una causa perdida — es disciplina.** El check-raise como igualador, sube el tamaño al apostar, controla botes con manos medias y foldea rivers más de lo que parece natural.
+3. **El botón es el mejor asiento; las ciegas son las peores.** La BB pierde más fichas brutas (apuesta obligada); la SB es el peor asiento para jugar de verdad (primero en actuar en cada calle). Protege tu botón, y frente a una subida desde la ciega pequeña, haz 3-bet o fold casi siempre.
+4. **OOP no es una causa perdida — es disciplina.** El check-raise como igualador, ajusta el tamaño de tus apuestas a la mesa y al tipo de bote, controla botes con manos medias y foldea rivers más de lo que parece natural.
 5. **Subir o foldear under the gun.** Hacer open-limp desde UTG combina el peor asiento del preflop con la línea más débil.
 6. **El 6-max comprime el mapa.** UTG en 6-max se juega como el lojack de full ring (~17%) — recalibra cuando cambies de formato.
 

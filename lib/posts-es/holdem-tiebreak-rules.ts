@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Los empates se rompen en un orden fijo: primero el tipo de mano, luego las cartas que la forman y por último los kickers de mayor a menor. Misma pareja → gana el primer kicker más alto; cinco cartas idénticas → bote dividido. Los palos nunca deciden un empate.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-12",
-  masterUpdated: "2026-09-12",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "⚖️",
@@ -153,7 +153,7 @@ La misma lógica gobierna los botes con póker en la mesa: todos comparten cuatr
 
 **No — no para decidir quién gana. Los palos hacen exactamente un trabajo en Texas Hold'em: cinco del mismo palo forman un color. Más allá de eso no tienen jerarquía, así que dos manos que coinciden valor por valor siempre dividen el bote, y ninguna carta supera a otra por su palo.**
 
-La pregunta vuelve una y otra vez porque el orden de palos sí existe en el póker — solo que no en este juego. El stud y el razz lo usan para decidir quién pone el bring-in y quién se lleva una ficha indivisible. El Hold'em no lo usa para ninguna de las dos cosas.
+La pregunta vuelve una y otra vez porque el orden de palos sí existe en el póker — solo que en este juego nunca sirve para ordenar manos. El stud y el razz lo usan para decidir quién pone el bring-in y quién se lleva una ficha indivisible. El Hold'em no lo usa para ninguna de las dos cosas.
 
 La prueba más limpia es la única ficha que *no* se puede dividir. El reglamento de torneos de la WSOP 2026 dice ==g:*"In button games with 2 or more high or low hands, the odd chip goes to the first seat left of the button"*== (regla 73): la ficha sobrante va al primer asiento a la izquierda del botón. Incluso cuando un bote físicamente no se reparte en partes iguales, la regla acude **al asiento**, no al palo — y el método por palos de la segunda mitad de esa misma regla está escrito solo para stud y razz.
 
@@ -194,7 +194,7 @@ A. El kicker más alto — pero comprueba primero cuáles de tus cartas llegan d
 
 **Q. ¿Quién gana si ambos jugadores tienen doble pareja?**
 
-A. Primero la pareja alta, luego la baja y por último el único kicker — así que ases y treses gana a reyes y reinas aunque la segunda pareja sea mucho más pequeña. El caso que atrapa a la gente es una mesa con doble pareja, como K-K-9-9-5: salvo que alguien lleve una K, un 9, una pareja de cincos de mano o una pareja de mano por encima del 9, todos tienen la misma doble pareja, así que la mano se reduce a un solo kicker y se la lleva la mejor carta privada de todos los jugadores — y si ninguna carta privada supera el 5 de la mesa, todos juegan la mesa y el bote se divide. La doble pareja lleva exactamente un kicker, nunca dos.
+A. Primero la pareja alta, luego la baja y por último el único kicker — así que ases y treses gana a reyes y reinas aunque la segunda pareja sea mucho más pequeña. El caso que atrapa a la gente es una mesa con doble pareja, como K-K-9-9-5 sin tres cartas de un mismo palo, de modo que nadie puede hacer color: salvo que alguien lleve una K, un 9, una pareja de cincos de mano o una pareja de mano por encima del 9, todos tienen la misma doble pareja, así que la mano se reduce a un solo kicker y se la lleva la mejor carta privada de todos los jugadores — y si ninguna carta privada supera el 5 de la mesa, todos juegan la mesa y el bote se divide. La doble pareja lleva exactamente un kicker, nunca dos.
 
 **Q. ¿Quién gana si dos jugadores tienen el mismo trío?**
 
@@ -230,7 +230,7 @@ A. Gana la escalera de color más alta, decidida por su carta más alta — una 
 
 **Q. ¿Los palos rompen alguna vez un empate en Texas Hold'em?**
 
-A. No — pero hay un sitio en una mesa de Hold'em donde sí se usan los palos, y no es el bote. En las mesas de cash, y en la mayoría de las reglas de la casa, cada jugador saca una carta para decidir dónde arranca el botón, y si dos cartas empatan en valor, el orden de palos lo resuelve. (Los torneos de la WSOP se saltan el sorteo: la ==regla 85 del reglamento de torneos== coloca el botón en el primer stack a la derecha del dealer y solo vuelve a sortear cuando quedan tres, dos y una mesa — sin palos de por medio.) En cualquier caso eso elige un *asiento*, nunca una mano. El único orden de palos del reglamento de torneos pertenece al stud y al razz. Si dos mejores manos de cinco coinciden valor por valor, el bote se divide sin importar los palos.
+A. No — pero hay un sitio en una mesa de Hold'em donde sí se usan los palos, y no es el bote. En las mesas de cash, y en la mayoría de las reglas de la casa, cada jugador saca una carta para decidir dónde arranca el botón, y si dos cartas empatan en valor, el orden de palos lo resuelve. (Los torneos de la WSOP se saltan el sorteo inicial: la ==regla 85 del reglamento de torneos== coloca el botón en el primer stack a la derecha del dealer y solo hace un sorteo para el botón cuando quedan tres, dos y una mesa.) En cualquier caso eso elige un *asiento*, nunca una mano. Aparte del sorteo del botón — que el glosario del reglamento de la WSOP resuelve por "valor y palo" —, el único orden de palos del reglamento de torneos pertenece al stud y al razz. Si dos mejores manos de cinco coinciden valor por valor, el bote se divide sin importar los palos.
 
 **Q. ¿Qué pasa si ambos jugadores tienen exactamente la misma mano?**
 

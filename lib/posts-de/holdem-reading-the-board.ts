@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "hand-rankings",
   date: "2026-06-15",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-13",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "🃏",
@@ -172,7 +172,7 @@ Beachte die letzte Zeile: ==selbst mit nichts ist das Paar des Boards Teil deine
 Du kannst beide HALTEN – du kannst nie beide SPIELEN. ==Eine Pokerhand besteht aus genau 5 Karten, also stapeln sich überlappende Kombinationen nicht; du spielst einfach die stärkere.==
 
 - Du hältst A♠ K♠ auf Q♠ 7♠ 2♠ K♦ 3♣. Du hast ein Paar Könige UND fünf Pik gemacht. Deine Hand ist der ==Nut Flush, A♠ K♠ Q♠ 7♠ 2♠== – das Paar Könige kommt einfach nie zum Tragen.
-- Du hältst 8♥ 8♦ auf 7♣ 6♦ 5♠ 4♥ K♦. Paar Achten UND 8-7-6-5-4. Deine Hand ist die ==Acht-hohe Straße== – nicht „ein Paar mit einer Straße“. Im Showdown musst du sie nicht ansagen: Die Karten sprechen, der Dealer liest die Hand (TDA-2024-Regel 12). Was du tun musst: beide Karten offen hinlegen – die Karten sprechen nur für eine sauber aufgedeckte Hand (TDA-2024-Regel 13-A) – und wenn der Dealer sie falsch liest, sag es, bevor der Pot geschoben wird.
+- Du hältst 8♥ 8♦ auf 7♣ 6♦ 5♠ 4♥ K♦. Paar Achten UND 8-7-6-5-4. Deine Hand ist die ==Acht-hohe Straße== – nicht „ein Paar mit einer Straße“. Im Showdown musst du sie nicht ansagen: Die Karten sprechen, der Dealer liest die Hand (TDA-2024-Regel 12). Was du tun musst: beide Karten offen hinlegen – die Karten sprechen nur für eine sauber aufgedeckte Hand (TDA-2024-Regel 13-A). Und wenn der Dealer sie falsch liest, sag sofort etwas: Eine Lesung kann bis zum Beginn der nächsten Hand angefochten werden (TDA-2024-Regel 22), aber korrigieren lässt sie sich viel leichter, bevor der Pot geschoben wird.
 
 Dieselbe Logik beantwortet „kann man drei Paare haben?“ – du hältst vielleicht drei gepaarte Ränge über 7 Karten, aber nur die besten zwei passen in 5 Karten (behandelt im [Leitfaden zur Pokerhände-Reihenfolge](/de/blog/holdem-hand-rankings)).
 
@@ -205,7 +205,7 @@ Top Pair ist eine echt starke Hand | Top Pair ist fragil – viele River schlage
 
 ![Dry Board vs Wet Board im Texas Hold'em – K72 Rainbow (dry) vs JT8 Two-Tone (wet) mit Flush- und Straßendraw-Pfeilen](/images/holdem-reading-dry-vs-wet-board.webp "Dry vs Wet: K-7-2 rainbow lässt kaum Draws zu, J-10-8 two-tone bedroht dich mit Flush und Straße")
 
-Auf J♥ 10♥ 8♣ ändert jedes Herz, jede 9, jede 7 und jede Q, wer gewinnt. Auf K♠ 7♦ 2♣ ändert fast nichts etwas. ==Dasselbe Paar, völlig anderer Druck== – deshalb funktioniert die Scan-Reihenfolge (Flush → Straße → Paare) doppelt als dein Gefahren-Radar.
+Auf J♥ 10♥ 8♣ kann jedes Herz, jede 9, jede 7 und jede Q ändern, wer gewinnt. Auf K♠ 7♦ 2♣ ändert fast nichts etwas. ==Dasselbe Paar, völlig anderer Druck== – deshalb funktioniert die Scan-Reihenfolge (Flush → Straße → Paare) doppelt als dein Gefahren-Radar.
 
 ---
 
@@ -225,7 +225,7 @@ Anfänger folden zu „er muss ein Kreuz haben“ an einem Drei-Kreuz-Board – 
 
 ### Fehler 4 – das Boat an einem gepaarten Board ignorieren
 
-Du triffst am River einen Flush, das Board zeigt zwei Damen, und du stellst die Frage nie. Jedes Q-x hat einen Drilling; jedes Pocket Pair, das zum Board passt, hat ein Full House – und ==Full House schlägt Flush==. Gepaartes Board + große Bet = auf Boats prüfen, bevor du feierst.
+Du triffst am River einen Flush, das Board zeigt zwei Damen, und du stellst die Frage nie. Jede Hand mit einer Dame hat mindestens einen Drilling; ein Pocket Pair, das zu einer anderen Board-Karte passt, macht ein Full House, und Pocket-Damen machen Quads – und ==Full House schlägt Flush==. Gepaartes Board + große Bet = auf Boats prüfen, bevor du feierst.
 
 ---
 
@@ -278,7 +278,7 @@ A. Nein. Du baust deine besten fünf Karten aus jeder beliebigen Kombination dei
 
 **Q. Zählt ein Paar auf dem Board als Teil deiner Hand?**
 
-A. Ja – Gemeinschaftskarten gehören zur Hand jedes Spielers. Ein Paar auf dem Board zählt zu deinen besten 5, selbst wenn deine Hole Cards komplett verfehlen. Es bedeutet auch, dass Gegner Drillinge oder Full Houses halten können, also bewerte Ein-Paar-Hände an jedem gepaarten Board neu.
+A. Ja – Gemeinschaftskarten gehören zur Hand jedes Spielers. Verfehlen deine Hole Cards komplett, ist das Paar auf dem Board trotzdem dein Paar. (Fest verankert ist es aber nicht: Machen deine Hole Cards eine Straße oder einen Flush, spielt stattdessen diese größere Hand.) Es bedeutet auch, dass Gegner Drillinge oder Full Houses halten können, also bewerte Ein-Paar-Hände an jedem gepaarten Board neu.
 
 ---
 

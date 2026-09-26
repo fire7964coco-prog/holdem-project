@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "odds",
   date: "2026-07-03",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-24",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🎲",
@@ -109,7 +109,7 @@ Así que la próxima vez que alguien diga "nunca me llegan ases", tiene más o m
 
 </div>
 
-Para el set mining, ==7.5 a 1 es el pago de equilibrio teórico, no una regla de stack suficiente==: supone que cada vez que ligas, ganas y te pagan. En la práctica, la pauta habitual de 15–20 veces el stack efectivo deja margen para el valor que no llegas a cobrar y para los sets que pierden; incluso esa pauta es una heurística, no un call automático. Ese es el puente hacia las [pot odds](#pot-odds), más abajo. Para la derivación completa de cada fila de aquí — más la regla de stack del set mining y el desglose de color hecho vs proyecto vs completo — mira el análisis a fondo sobre [las odds de proyecto y de ligar cada mano en el flop](/es/blog/holdem-drawing-odds "thumb:/images/holdem-drawing-odds-hero.webp").
+Para el set mining, ==7.5 a 1 es el pago de equilibrio teórico, no una regla de stack suficiente==: supone que cada vez que ligas, ganas y te pagan. En la práctica, la pauta habitual de un stack efectivo de 15–20 veces el call deja margen para el valor que no llegas a cobrar y para los sets que pierden; incluso esa pauta es una heurística, no un call automático. Ese es el puente hacia las [pot odds](#pot-odds), más abajo. Para la derivación completa de cada fila de aquí — más la regla de stack del set mining y el desglose de color hecho vs proyecto vs completo — mira el análisis a fondo sobre [las odds de proyecto y de ligar cada mano en el flop](/es/blog/holdem-drawing-odds "thumb:/images/holdem-drawing-odds-hero.webp").
 
 ---
 
@@ -133,7 +133,7 @@ Para el set mining, ==7.5 a 1 es el pago de equilibrio teórico, no una regla de
 
 </div>
 
-La fila de dos sobrecartas con seis outs supone que emparejar cualquiera de las dos sobrecartas gana. Contra doble pareja, un set o un proyecto más fuerte, parte o todas esas cartas pueden ser outs sucias: descuéntalas en vez de tratar las seis como outs ganadoras seguras.
+La fila de dos sobrecartas con seis outs supone que emparejar cualquiera de las dos sobrecartas gana. Contra doble pareja, un set o un proyecto más fuerte, parte o todas esas cartas pueden ser outs sucias: descuéntalas en vez de tratar las seis como outs ganadoras seguras. La fila del set cuenta también la cuarta carta de tu número: el full por sí solo ronda el 29.1% desde el flop y el 19.6% en el turn.
 
 El caso clásico: ligas un **proyecto de color** (nueve outs). Lo completarás ==el 35% de las veces para el river== — mejor que una de cada tres. Un **proyecto de escalera abierto** (ocho outs) liga el 31.5%. Fíjate en las dos columnas: en cuanto el turn no ayuda te queda una carta en lugar de dos, así que tus odds se reducen más o menos a la mitad — el 35% pasa a ser 19.6% en el proyecto de color —, y por eso perseguir proyectos sale más caro calle a calle.
 
@@ -208,7 +208,7 @@ Un mito común: "una escalera real gana a todo, así que puede *empatar*". El bo
 |:---|:---:|
 | Recibir pareja de ases | 1 en 221 |
 | Ligar póker en el flop con una pareja servida | 1 en 408 |
-| Ligar escalera de color en el flop (conectores del mismo palo) | ~1 en 4,900 |
+| Ligar escalera de color en el flop (conectores del mismo palo 54s–JTs) | ~1 en 4,900 |
 | Ligar una escalera real para el river | 1 en 30,940 |
 
 **Set sobre set** — ligas un set y pierdes contra un set mayor — es el cooler definitivo. No hay un número limpio único porque depende de cuántos jugadores tengan parejas, pero el ancla es esta: *tú* ligas un set solo el 11.8% de las veces, y que un rival haga lo mismo en la misma mesa es lo bastante raro como para que casi todos recuerden cada uno. Cuando pasa, la derrota por sí sola no demuestra que el call fuera un error — ni un acierto; júzgalo por el precio y la profundidad de stacks que tenías en ese momento, no por el showdown. Si quieres ver exactamente cómo se resuelven esos showdowns, las [reglas de kicker y desempate](/es/blog/holdem-tiebreak-rules) cubren cada caso límite.

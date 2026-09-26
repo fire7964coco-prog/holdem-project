@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Nicht so wie im Blackjack – das Deck wird jede Hand neu gemischt und zu wenige Karten liegen offen, also bringt dir das Tracken hoher und niedriger Karten keinen Edge. Aber Poker hat sein eigenes legales Zählen: Outs zählen, Blocker nutzen und tote Karten tracken, um zu lesen, was dein Gegner nicht haben kann.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-24",
-  masterUpdated: "2026-09-24",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "🧮",
@@ -49,11 +49,11 @@ Wenn du dir einen Running High-Low-Count aus den Filmen vorstellst, lass ihn fal
 
 :::card
 🔀 | Das Deck wird jede Hand neu gesetzt | Blackjack-Zählen braucht einen Schuh, der über Dutzende Hände heruntergespielt wird, damit sich Information anhäuft. Poker mischt jede einzelne Hand neu, also trägt sich nichts weiter – jede Hand beginnt mit einem vollen, zufälligen Deck
-🙈 | Zu wenige Karten liegen offen | Die Hole Cards jedes Spielers liegen verdeckt. Du siehst immer nur das gemeinsame Board – eine Handvoll Karten – nie genug, um die Zusammensetzung des Decks zu tracken
+🙈 | Zu wenige Karten liegen offen | Die Hole Cards jedes Spielers liegen verdeckt. Du siehst deine eigenen zwei Karten, das gemeinsame Board und was im Showdown aufgedeckt wird – eine Handvoll Karten – nie genug, um die Zusammensetzung des Decks zu tracken
 👥 | Du spielst gegen Gegner, nicht gegen das Haus | Es gibt keinen festen Dealer, gegen den man einen Edge gewinnen kann. Ein „Deck reich an hohen Karten“ bedeutet nichts, wenn Pocket Aces ohnehin premium sind – du gewinnst, indem du die bessere Hand hast oder die bessere Entscheidung triffst, nicht durch einen günstigen Count
 :::
 
-Im Blackjack begünstigt dich ein Deck mit vielen hohen Karten mathematisch, also setzt du groß, wenn der Count gut ist. Im Poker gibt es kein Äquivalent zum „günstigen Deck“ – der Edge kommt komplett daher, gegen die *Spieler* zu spielen.
+Im Blackjack begünstigt dich ein Deck mit vielen hohen Karten mathematisch, also setzt du groß, wenn der Count gut ist. Im Poker gibt es kein Äquivalent zum „günstigen Deck“ – der Edge kommt daher, gegen die *Spieler* zu spielen und die Karten zu nutzen, die du jetzt gerade siehst: Outs, Blocker, das Board.
 
 ---
 
@@ -67,7 +67,7 @@ Du gegen das Haus, feste Regeln | Du gegen andere Spieler
 Ein Schuh über viele Hände | Jede Hand neu gemischt
 Die Hoch/Tief-Balance des Decks tracken | Nichts über Hände hinweg zu tracken
 Setze groß, wenn das Deck dich begünstigt | Kein „günstiges Deck“ existiert
-Zählen kann dir Hausverbot einbringen | Zählen wird erwartet und ist legal
+Zählen kann dir Hausverbot einbringen | Outs im Kopf zu zählen ist ganz normales Spiel
 :::
 
 Blackjack belohnt das Gedächtnis für das, was schon weg ist; Poker belohnt das Lesen dessen, was du *gerade jetzt* sehen kannst – das Board, die Action und die Karten, die deine eigene Hand aus der Range deines Gegners entfernt.
@@ -82,7 +82,7 @@ Blackjack belohnt das Gedächtnis für das, was schon weg ist; Poker belohnt das
 
 Ein ==Out== ist jede unsichtbare Karte, die deine Hand zu einem wahrscheinlichen Gewinner verbessert. Ein Flushdraw hat ==9 Outs== (13 einer Farbe minus die 4, die du sehen kannst) – die Karten dieser Farbe auf dem Board sind in diesen 9 bereits abgezogen, streich sie also nicht ein zweites Mal als „tote Karten“ weg. Rechne Outs mit der ==Regel der 4 und 2== in eine grobe Gewinnchance um: multipliziere mit 4 bei zwei kommenden Karten, mit 2 bei einer.
 
-Ein Flushdraw mit 9 Outs trifft bis zum River etwa ==g:35%== der Zeit (9 × 4 = 36% als schnelle Schätzung – der wahre Wert ist 35,0%). Diese Zahl rechnet beide verbleibenden Karten – sie entscheidet den Call also nur, wenn du beide wirklich siehst: du bist am Flop all-in und hast nichts mehr zu setzen. Liegt eine Bet vor dir, die du am Turn erneut bezahlen musst, rechne nur die nächste Karte: ==9 ÷ 47 = 19,1%==. Die vollständige Methode – dirty Outs, Combo-Draws, exakte Prozentwerte – steht im [Guide zum Outs-Zählen](/de/blog/holdem-outs), und die Odds hinter jedem Draw findest du in der [Wahrscheinlichkeitstabelle](/de/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
+Ein Flushdraw mit 9 Outs trifft bis zum River etwa ==g:35%== der Zeit (9 × 4 = 36% als schnelle Schätzung – der wahre Wert ist 35,0%). Diese Zahl rechnet beide verbleibenden Karten – sie entscheidet den Call also nur, wenn du beide wirklich siehst – ohne weiteres Setzen, etwa weil du all-in bist oder ein All-in gecallt hast. Liegt eine Bet vor dir, die du am Turn erneut bezahlen musst, rechne nur die nächste Karte: ==9 ÷ 47 = 19,1%==. Die vollständige Methode – dirty Outs, Combo-Draws, exakte Prozentwerte – steht im [Guide zum Outs-Zählen](/de/blog/holdem-outs), und die Odds hinter jedem Draw findest du in der [Wahrscheinlichkeitstabelle](/de/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
 ### Blocker (Card Removal)
 
@@ -90,11 +90,11 @@ Ein ==Blocker== ist eine Karte in deiner Hand, die die Kombinationen reduziert, 
 
 ![Infografik von A♠ J♦ auf einem reinen Pik-Flop K♠ 9♠ 4♠ – das Halten des Pik-Asses blockt den Nut-Flush](/images/holdem-card-counting-blocker.webp "Das A♠ auf einem Board mit drei Piks zu halten bedeutet, dass kein Gegner den Nut-Flush haben kann – das ist Card Removal in Aktion")
 
-Blocker wirken auch teilweise. Auf einem ==b:Q-J-9== Board ist die Nut-Straße K-10. Es gibt normalerweise 16 Wege, K-10 zu halten (4 Könige × 4 Zehnen); wenn du selbst einen König oder eine Zehn hältst, senkst du das auf ==12 Kombinationen==, also ist die Nut-Straße 25% unwahrscheinlicher in ihrer Range. Das ist der Kern moderner Bluff-Auswahl – mehr im [Guide zu 3-Betting und Blockern](/de/blog/holdem-3bet).
+Blocker wirken auch teilweise. Auf einem ==b:Q-J-9== Board ist die Nut-Straße K-10. Es gibt normalerweise 16 Wege, K-10 zu halten (4 Könige × 4 Zehnen); wenn du selbst einen König oder eine Zehn hältst, senkst du das auf ==12 Kombinationen==, ihre Range enthält also 25% weniger Nut-Straßen-Kombinationen. Das ist der Kern moderner Bluff-Auswahl – mehr im [Guide zu 3-Betting und Blockern](/de/blog/holdem-3bet).
 
 ### Card Removal & tote Karten
 
-Jede Karte, die du sehen kannst, entfernt Möglichkeiten. Im Hold'em kann ein Out aber nicht auf dem Board liegen – läge es dort, stünde deine Hand ja bereits. Die ==toten Karten==, die du trackst, sind deshalb die, die *neben* dem Board sichtbar wurden: eine Karte, die versehentlich aufblitzt, eine Hand, die vor dem Muck gezeigt wird, ein Fold des Nachbarn, den du zufällig siehst. Jede davon ist ein Out, das du nicht mehr hast. Diese Anpassung ist eine ständige, stille Gewohnheit, die gute Spieler auf jeder Street pflegen. Es ist Zählen, nur nicht die Art, die einen Running Total braucht.
+Jede Karte, die du sehen kannst, entfernt Möglichkeiten. Im Hold'em kann ein Out aber nicht auf dem Board liegen – läge es dort, stünde deine Hand ja bereits. Die ==toten Karten==, die du trackst, sind deshalb die, die *neben* dem Board sichtbar wurden: eine Karte, die versehentlich aufblitzt, eine Hand, die vor dem Muck gezeigt wird, ein Fold des Nachbarn, den du zufällig siehst. Jedes Out darunter ist eines, das du nicht mehr hast; jede andere sichtbare Karte verkleinert nur das ungesehene Deck. Diese Anpassung ist eine ständige, stille Gewohnheit, die gute Spieler auf jeder Street pflegen. Es ist Zählen, nur nicht die Art, die einen Running Total braucht.
 
 ---
 
@@ -116,7 +116,7 @@ Bei Turnieren nach den [Poker-TDA-Regeln 2026](https://www.pokertda.com/poker-td
 
 **Bei Seven Card Stud wird ein großer Teil der Karten jedes Spielers offen ausgeteilt – also kannst du das Deck tatsächlich auf die altmodische Art zählen.** Wenn du eine bestimmte Karte brauchst, um deine Hand zu vervollständigen, kannst du dich am Tisch umsehen und buchstäblich zählen, wie viele deiner Outs bereits offen in den Up-Cards der Gegner liegen. Jedes, das du entdeckst, ist ein totes Out.
 
-Beim Hold'em werden als einzige Karten die fünf gemeinsamen Community Cards offen ausgeteilt – alles andere, was du zu sehen bekommst, ist ein Versehen (eine aufgeblitzte Karte, eine beim Folden gezeigte Hand), also gibt es kaum etwas zu tracken. Aber Stud – und seine Verwandten Razz und Stud Hi-Lo, die genauso offen austeilen – belohnt genau die Art von Karten-Tracking, in der Blackjack-Zähler gut sind. Das ist das, was der Filmversion am nächsten kommt, was Poker bietet.
+Beim Hold'em werden als einzige Karten die fünf gemeinsamen Community Cards offen ausgeteilt – alles andere bleibt verdeckt, sofern es nicht im Showdown gezeigt, bei einem All-in aufgedeckt oder durch ein Versehen sichtbar wird (eine aufgeblitzte Karte, eine beim Folden gezeigte Hand), also gibt es kaum etwas zu tracken. Aber Stud – und seine Verwandten Razz und Stud Hi-Lo, die genauso offen austeilen – belohnt genau die Art von Karten-Tracking, in der Blackjack-Zähler gut sind. Das ist das, was der Filmversion am nächsten kommt, was Poker bietet.
 
 ---
 
@@ -125,7 +125,7 @@ Beim Hold'em werden als einzige Karten die fünf gemeinsamen Community Cards off
 **Du brauchst kein System – nur drei Gewohnheiten, die sichtbare Karten in bessere Entscheidungen verwandeln.**
 
 :::steps
-Zähle deine Outs bei jedem Draw | Sobald du einen Draw hast, zähle die Karten, die ihn vervollständigen, und multipliziere – ×4 nur, wenn beide Karten kommen (du bist all-in, oder Turn und River kosten beide nichts mehr), sonst ×2 nur für die nächste Karte. Calle, wenn diese Chance den Preis schlägt
+Zähle deine Outs bei jedem Draw | Sobald du einen Draw hast, zähle die Karten, die ihn vervollständigen, und multipliziere – ×4 nur, wenn beide Karten kommen (du bist all-in, oder Turn und River kosten beide nichts mehr), sonst ×2 nur für die nächste Karte. Calle, wenn diese Chance – nur saubere Outs – den Preis schlägt oder Implied Odds die Lücke decken
 Frage, was deine Hand blockt | Bevor du bluffst, prüfe, ob du eine Karte hältst, die ihre stärkste Calling-Hand unmöglich oder unwahrscheinlicher macht
 Passe an tote Karten an | Ziehe jedes Out ab, das du abseits vom Board gesehen hast – eine aufgeblitzte Karte, eine gezeigte Hand, ein Fold, den du zufällig gesehen hast. Karten, die du sehen kannst, sind Karten, die dein Gegner nicht haben kann – aber nur zufällig erhascht: gezielt zu versuchen, die Karten eines anderen Spielers zu sehen, ist nicht Teil dieser Methode – es zählen nur versehentliche Aufdeckungen
 :::
@@ -155,7 +155,7 @@ A. Deck-Zählen im Blackjack-Stil nicht – das Deck wird jede Hand neu gesetzt 
 
 **Q. Warum funktioniert Kartenzählen im Blackjack, aber nicht im Poker?**
 
-A. Blackjack ist du gegen einen Dealer mit festen Regeln, der einen Schuh über viele Hände nutzt, also begünstigt dich ein Deck reich an hohen Karten mathematisch und du setzt entsprechend. Poker mischt jede Hand neu und stellt dich gegen andere Spieler, also gibt es kein „günstiges Deck“ zu tracken – der Edge kommt vom Lesen der Gegner.
+A. Blackjack ist du gegen einen Dealer mit festen Regeln, der einen Schuh über viele Hände nutzt, also begünstigt dich ein Deck reich an hohen Karten mathematisch und du setzt entsprechend. Poker mischt jede Hand neu und stellt dich gegen andere Spieler, also gibt es kein „günstiges Deck“ zu tracken – der Edge kommt vom Lesen der Gegner und der Karten, die du sehen kannst: Outs, Blocker, das Board.
 
 **Q. Was ist das Poker-Äquivalent zum Kartenzählen?**
 

@@ -8,9 +8,9 @@ export const POST: Post = {
   tldr: "Urutan kartu poker dari tertinggi sampai terendah: Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, Pair, dan High Card. As adalah kartu tertinggi; simbol (sekop, hati) tidak punya peringkat.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-09-24",
+  updated: "2026-09-26",
 
-  masterUpdated: "2026-09-17",
+  masterUpdated: "2026-09-26",
   image: "/images/holdem-hand-rankings-hero.webp",
   imageAlt: "Royal Flush — 10 J Q K A sekop di meja poker dengan tumpukan chip dan tombol dealer",
   keepImagesInBody: true,
@@ -129,10 +129,11 @@ Antara dua straight, yang kartu tertingginya menang.
 
 **J♣ J♠ J♥ A♦ 4♠** — tiga kartu bernilai sama.
 
-Ada dua cara membentuknya, dan bedanya penting:
+Ada tiga cara membentuknya, dan bedanya penting:
 
 - **Set:** sepasang di tangan plus satu kartu board (mis. Anda pegang J♣ J♠ lalu keluar J♥). Tersembunyi dan berbahaya.
 - **Trips:** sepasang di board plus satu kartu Anda. Lebih mudah dibaca lawan dan lebih sering dibagi.
+- **Trips di board:** ketiganya ada di board (mis. J♣ J♠ J♥ di tengah). Semua orang berbagi kartu itu, jadi kecuali ada yang naik ke full house atau quads, hanya kicker yang membedakan Anda.
 
 Set meraup lebih banyak chip karena tak ada yang menyangka.
 
@@ -204,7 +205,7 @@ Tahu urutan tidak sama dengan membacanya cepat. Berikut tiga situasi nyata. Tutu
 
 Anda pegang **Q♥ Q♦**. Apa tangan terbaik Anda?
 
-→ Board sudah memperlihatkan two pair (A-A dan K-K). Dua Q Anda plus Q♠ di board membentuk **three of a kind Q**, dan bersama pasangan As di board Anda dapat **full house — QQQ + AA**. Itu lima kartu terbaik Anda. Pemula tersangkut di "bukankah AAKK + Q itu cuma two pair?" — bukan. Begitu Anda punya three of a kind, Anda pakai full house-nya. **Full house menang atas two pair.**
+→ Board sudah memperlihatkan two pair (A-A dan K-K). Dua Q Anda plus Q♠ di board membentuk **three of a kind Q**, dan bersama pasangan As di board Anda dapat **full house — QQQ + AA**. Itu lima kartu terbaik Anda. Pemula tersangkut di "bukankah AAKK + Q itu cuma two pair?" — bukan. Begitu Anda punya three of a kind dan board menambahkan pasangannya sendiri, Anda pakai full house-nya. **Full house menang atas two pair.**
 
 ### Soal 2 — Flush yang ternyata lebih kuat
 
@@ -240,7 +241,7 @@ Anda pegang **A♥ 3♣**. Board sudah membawa three of a kind K.
 
 ## Kenapa urutannya begini
 
-Peringkat ini bukan sembarangan — ini murni peluang. **Makin sulit suatu tangan dibentuk, makin tinggi posisinya.** Dalam satu deck 52 kartu, ada lebih sedikit cara membuat lima kartu satu jenis dibanding lima berurutan jenis apa pun — karena itu flush di atas straight. Satu prinsip ini menjelaskan seluruh peringkat — lihat angka pastinya di [tabel peluang dan probabilitas poker](/id/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
+Peringkat ini bukan sembarangan — ini murni peluang. **Makin sulit suatu tangan dibentuk dari lima kartu, makin tinggi posisinya.** Dalam satu deck 52 kartu, ada lebih sedikit cara membuat lima kartu satu jenis dibanding lima berurutan jenis apa pun — karena itu flush di atas straight. Satu prinsip ini menjelaskan seluruh peringkat — lihat angka pastinya di [tabel peluang dan probabilitas poker](/id/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
 Ia juga menjelaskan pengecualian besar yang akan Anda temui: di **Short Deck (6+) Hold'em**, di mana kartu 2 sampai 5 dibuang, flush jadi lebih sulit daripada full house — jadi di format itu **flush menang atas full house**. Matematikanya berubah, urutannya berubah. Lebih lanjut soal perbedaan tiap varian di bawah.
 
@@ -358,7 +359,7 @@ A. Ya. Three of a kind adalah #7 dan two pair #8, jadi three of a kind menang. T
 
 **Q. Apakah straight flush mengalahkan four of a kind?**
 
-A. Ya. Straight flush (#2) mengalahkan four of a kind (#3) — lima kartu berurutan dengan jenis sama berada di atas quads. Satu-satunya yang lebih tinggi dari straight flush adalah royal flush, yang sebenarnya hanya versi ber-As tertinggi dari straight flush itu sendiri.
+A. Ya. Straight flush (#2) mengalahkan four of a kind (#3) — lima kartu berurutan dengan jenis sama berada di atas quads. Satu-satunya tangan yang lebih tinggi dari straight flush adalah straight flush yang lebih tinggi dan royal flush, yang sebenarnya hanya versi ber-As tertinggi dari straight flush itu sendiri.
 
 **Q. Apa tangan terendah (terburuk) di poker?**
 

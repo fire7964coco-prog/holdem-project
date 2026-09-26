@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un out es cualquier carta que queda en la baraja y convierte tu mano en una probable ganadora. Cuéntalos y conviértelos: multiplica los outs por 4 en el flop o por 2 en el turn para tu % aproximado de ligar. Un proyecto de color son 9 outs ≈ 36% para el river.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-24",
-  masterUpdated: "2026-09-24",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🎯",
@@ -35,7 +35,7 @@ Ese hábito se llama contar **outs** — [la respuesta real del póker a "contar
 
 ## ¿Qué son los outs en el póker?
 
-**Un out es cualquier carta que sigue en la baraja y convierte tu mano en una probable ganadora.** Si tienes un proyecto de color, cada carta restante de tu palo es un out — liga una y tienes color.
+**Un out es cualquier carta que sigue en la baraja y convierte tu mano en una probable ganadora.** Si tienes un proyecto de color, cada carta restante de tu palo lo completa — y cada una es un out siempre que ese color vaya a ganar de verdad.
 
 La palabra "probable" ahí no está de adorno. Un out de verdad tiene que *ganar* la mano, no solo mejorar tus cartas. Emparejar tu diez cuando ya hay un color en la mesa no es un out — mejoraste, pero sigues perdiendo. Aprender a contar outs es en realidad aprender a contar las cartas que ganan, e ignorar las que solo *parecen* útiles.
 
@@ -60,7 +60,7 @@ Descarta las falsas | Tacha cualquier "out" que complete tu mano pero aun así p
 
 Toma un proyecto de color: existen 13 cartas de tu palo, puedes ver **cuatro** de ellas (dos en tu mano, dos en la mesa), así que ==g:13 − 4 = 9 outs==. Esa resta — contar las que *no* puedes ligar porque ya las tienes — es donde resbalan los principiantes.
 
-El conteo solo usa cartas que puedes ver. No restas las cartas desconocidas de tu rival; tratas cada carta no vista como todavía viva. Por eso los conteos de outs estándar de abajo se sostienen sin importar lo que tenga el otro.
+El conteo solo usa cartas que puedes ver. No restas las cartas desconocidas de tu rival; tratas cada carta no vista como todavía viva. Por eso los conteos brutos de abajo son los mismos tenga lo que tenga el otro — son el punto de partida, antes de tachar las outs sucias más abajo.
 
 ---
 
@@ -112,9 +112,9 @@ Los dos proyectos combinados de arriba son donde los jugadores se equivocan con 
 
 </div>
 
-Dos números importan en cada proyecto. **"Para el river"** cuenta ambas cartas restantes y aplica cuando estás all-in en el flop sin nada más que apostar. **"Flop → turn"** cuenta solo la siguiente carta (9 ÷ 47 = 19.1%; del turn al river pasa a ser 9 ÷ 46 = 19.6%) — úsalo en cuanto quede más apuesta por venir, porque solo tienes garantizado ver una carta cada vez. Los principiantes citan el número gordo de "para el river" mientras afrontan una apuesta en el turn, se convencen de igualar, y lo pagan.
+Dos números importan en cada proyecto. **"Para el river"** cuenta ambas cartas restantes y aplica cuando ya no puede haber más apuestas — estás all-in o has pagado un all-in. **"Flop → turn"** cuenta solo la siguiente carta (9 ÷ 47 = 19.1%; del turn al river pasa a ser 9 ÷ 46 = 19.6%) — úsalo en cuanto quede más apuesta por venir, porque solo tienes garantizado ver una carta cada vez. Los principiantes citan el número gordo de "para el river" mientras afrontan una apuesta en el turn, se convencen de igualar, y lo pagan.
 
-Fíjate en el monstruo de 15 outs: con dos cartas por venir es en realidad **favorito** (54.1%), el raro proyecto con el que puedes irte all-in feliz en el flop.
+Fíjate en el monstruo de 15 outs: con dos cartas por venir se completa el 54.1% de las veces — contra una sola pareja eso suele hacerlo **favorito**, el raro proyecto con el que puedes irte all-in feliz en el flop. Contra un set no lo es: la mesa puede emparejarse y darle full al set — el ejemplo de J♠ 10♠ en 9♠ 8♣ 2♠ de más abajo solo tiene alrededor del 40% contra una pareja de nueves.
 
 ---
 
@@ -128,7 +128,7 @@ Fíjate en el monstruo de 15 outs: con dos cartas por venir es en realidad **fav
 
 Un proyecto de color son 9 outs. En el flop: 9 × 4 = **36%** (valor real 35.0% — clavado). En el turn: 9 × 2 = **18%** (real 19.6% — bastante cerca para actuar).
 
-:::tip[El atajo ×4 asume en silencio que verás *ambas* cartas sin más apuestas — solo garantizado cuando ya estás all-in. Si hay una apuesta delante de ti, usa el número ×2 (una carta) para la calle en la que realmente estás.]:::
+:::tip[El atajo ×4 asume en silencio que verás *ambas* cartas sin más apuestas — solo garantizado cuando ya no puede haber más apuestas (estás all-in o has pagado un all-in). Si hay una apuesta delante de ti, usa el número ×2 (una carta) para la calle en la que realmente estás.]:::
 
 El punto débil principal son los **conteos altos de outs en el flop**. El cálculo exacto a dos cartas recoge el acierto en cualquiera de las dos calles sin contar dos veces el caso en que ligas en ambas. La estimación ×4 empieza a salir un poco alta ya con 7 outs, pero la diferencia crece con los proyectos grandes; el ajuste habitual de abajo se usa para más de 8 outs.
 
@@ -222,7 +222,7 @@ A. 15, no 17. Un proyecto de color son 9 outs y una escalera abierta son 8, pero
 
 **Q. ¿Se cuentan las cartas del rival al contar outs?**
 
-A. No. Solo restas las cartas que puedes ver de verdad — tus cartas y la mesa comunitaria. Cualquier otra carta no vista se trata como viva, y por eso los conteos de outs estándar (9 de color, 8 de una escalera abierta) se sostienen sin importar lo que tenga el rival.
+A. No. Solo restas las cartas que puedes ver de verdad — tus cartas y la mesa comunitaria. Cualquier otra carta no vista se trata como viva, y por eso los conteos brutos (9 de color, 8 de una escalera abierta) son los mismos tenga lo que tenga el rival. Que cada una de esas cartas gane de verdad sigue dependiendo de su mano — esa es la comprobación de outs sucias.
 
 **Q. ¿Cómo se calculan o cuentan los outs rápidamente?**
 
@@ -237,7 +237,7 @@ A. Son las dos mitades de la misma decisión. Los outs son las cartas que comple
 ## Las 3 cosas que debes recordar
 
 1. **Cuenta lo que gana, no lo que mejora.** Un out tiene que hacer la *mejor* mano, no solo una mejor. Resta solo las cartas que puedes ver.
-2. **Convierte con el 4 y el 2.** Outs × 4 en el flop, × 2 en el turn. Recorta la estimación en proyectos grandes (más de 8 outs) restando *(outs − 8)*.
+2. **Convierte con el 4 y el 2.** Outs × 4 en el flop, × 2 en el turn. En el flop, recorta la estimación ×4 en proyectos grandes (más de 8 outs) restando *(outs − 8)*.
 3. **Descuenta las muertas.** Los colores que no son máximos, las mesas emparejadas y las sobrecartas contra fuerza reducen tu número real de outs. En la duda, cuenta menos.
 
 Clava el conteo y el resto de la matemática del póker encaja sola. Lleva tu número de outs directo a [cómo calcular las pot odds](/es/blog/holdem-pot-odds) para ver si el precio es justo, o vuelve a la [tabla completa de odds y probabilidades del póker](/es/blog/holdem-probability) para el número exacto detrás de cada proyecto.

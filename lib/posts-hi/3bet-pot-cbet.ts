@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "इस flop पर BB check क्यों नहीं करता?",
   seoTitle: "3-bet pot में छोटी bet क्यों? — पोकर GTO C-bet",
   desc: "A-K-2 पर BB के सभी 63 कॉम्बो bet करते हैं। 12 मिनट में जानें कि 3-bet pot, SPR 4 और BTN की range से sizing कैसे बदलती है।",
-  tldr: "A♦K♠2♥ वाले इस 3-bet pot में BB पूरी range से bet करता है: 63 में एक भी कॉम्बो check नहीं, frequency 0.0%। पहले के single-raised उदाहरणों में उसका check 76.2% से 99.9% था। यहाँ BB ने preflop 3-bet किया और सबसे ऊँचे Sets उसी के पास हैं; BTN की calling range में AA और KK नहीं हैं। SPR 4.0 पर pot बढ़ाने का फैसला बहुत देर टालने की गुंजाइश भी कम है।",
+  tldr: "A♦K♠2♥ वाले इस 3-bet pot में BB पूरी range से bet करता है: check rounding में 0.0% है, और 63 में से कोई भी कॉम्बो 0.1% बार भी check नहीं करता। पहले के single-raised उदाहरणों में उसका check 76.2% से 99.9% था। यहाँ BB ने preflop 3-bet किया और सबसे ऊँचे Sets उसी के पास हैं; BTN की calling range में AA और KK नहीं हैं। SPR 4.0 पर pot बढ़ाने का फैसला बहुत देर टालने की गुंजाइश भी कम है।",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-15",
-  masterUpdated: "2026-09-02",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   readTime: "12 मिनट",
   emoji: "🔥",
   image: "/images/gto-3bp-ace-king-oop-hi.webp",
@@ -19,7 +19,7 @@ export const POST: Post = {
   content: `
 पिछले सात स्पॉट में BB का जवाब अधिकतर check था। [9-8-7 flop](/hi/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-hi.webp") पर lead सबसे अधिक थी, तब भी bet सिर्फ 23.7% थी। बाकी में check 88.8% से 99.9% के बीच रहा।
 
-यहाँ उलटा है: **BB पूरी range से bet करता है** — सभी 63 कॉम्बो, हर बार।
+यहाँ उलटा है: **BB पूरी range से bet करता है** — सभी 63 कॉम्बो, हर एक कम से कम 99.9% बार।
 
 मुख्य बदलाव preflop action है। BB ने call करने के बजाय **3-bet** किया, इसलिए pot 5.5 bb से 22.5 bb हो गया। बोर्ड भी अलग है: ① में A♥7♦2♣ था, यहाँ A♦K♠2♥। इसलिए इसे केवल preflop बदलकर किया गया नियंत्रित प्रयोग न मानें। इन बदलावों से flop की रणनीति बदल जाती है। नीचे के सभी आँकड़े HoldemMaster के [मुफ़्त GTO सॉल्वर](/hi/solver) से हैं।
 
@@ -53,7 +53,7 @@ Pot · stack | Pot 22.5 bb · बचा effective stack 89 bb · **SPR 4.0**
 
 ## क्या check की frequency सचमुच 0% है?
 
-**0.0%।** कॉम्बो कॉलम भी 0.0 है। इन 63 कॉम्बो में कोई check नहीं करता; सिर्फ प्रतिशत के rounding के पीछे check नहीं छिपा। Betting दो sizes में बँटी है: 7.4 bb की छोटी bet 57.8%, 14.9 bb की बड़ी bet 42.2%। पिछले सात single-raised pots में BB का सामान्य व्यवहार इसके उलट था।
+**स्क्रीन पर 0.0%।** Raw output में थोड़ा अवशेष ज़रूर है: 63 में से 41 कॉम्बो में check का बहुत छोटा अंश है, सबसे बड़ा K♥K♦ में 0.09%, और सब मिलाकर एक कॉम्बो के सौवें हिस्से से भी कम। यह सॉल्वर का noise है, रणनीति नहीं, इसलिए इसे शून्य ही पढ़ें। Betting दो sizes में बँटी है: 7.4 bb की छोटी bet 57.8%, 14.9 bb की बड़ी bet 42.2%। पिछले सात single-raised pots में BB का सामान्य व्यवहार इसके उलट था।
 
 | BB का पहला action | आवृत्ति | कॉम्बो |
 |---|---|---|
@@ -129,7 +129,7 @@ A-K-2 rainbow बहुत कम सीधे draws देता है, इस
 
 Underpairs 46.2%, यानी 60 कॉम्बो हैं: QQ से 33, दस pocket pairs के छह-छह कॉम्बो। इस बोर्ड पर उनसे लगातार दो barrels call करना कठिन है।
 
-एक जरूरी सीमा: ये 130 कॉम्बो इस उदाहरण की **मानक सैद्धांतिक defending range का अनुमान** हैं। वास्तविक प्रतिद्वंद्वी middle pairs fold करके अधिक A-Q, A-J और K-Q call कर सकता है। उस खिलाड़ी के सामने 46.2% वही नहीं रहेगा। इसलिए live खेल में इन frequencies से पहले देखें कि उसने सचमुच किन हैंडों से preflop call किया होगा।
+एक जरूरी सीमा: ये 130 कॉम्बो **इस solve को दी गई calling range** हैं: tree में लिखी गई preflop सेटिंग, सॉल्वर द्वारा निकाला गया defense नहीं। वास्तविक प्रतिद्वंद्वी middle pairs fold करके अधिक A-Q, A-J और K-Q call कर सकता है। उस खिलाड़ी के सामने 46.2% वही नहीं रहेगा। इसलिए live खेल में इन frequencies से पहले देखें कि उसने सचमुच किन हैंडों से preflop call किया होगा।
 
 ## एक-तिहाई pot c-bet पर BTN कैसे प्रतिक्रिया दे?
 
@@ -139,7 +139,7 @@ Underpairs 46.2%, यानी 60 कॉम्बो हैं: QQ से 33, �
 
 22.5 bb pot में 7.4 bb के खिलाफ शून्य-equity pure bluff को तुरंत लाभ न देने वाला **MDF** है ==22.5 ÷ (22.5 + 7.4) = 75.3%==। मगर A-K-2 से जुड़े BTN के हैंड जोड़ें तो सिर्फ ==20.8 + 11.5 + 6.9 + 2.3 = 41.5%==। इसमें 2.3% Sets **22** हैं: उनका pair deuce से बना, Ace या King से नहीं। सिर्फ Ace या King से जुड़े हैंड **39.2%** हैं।
 
-**यहाँ MDF की सरल धारणा से सीधा optimal defense नहीं मिलता।** MDF शून्य equity वाले **pure bluff** को indifferent करने का संदर्भ है। BB की betting range में **0.0% “बना हुआ हैंड नहीं”**, एक भी ऐसा कॉम्बो नहीं है। इस पूरी range को शून्य-equity bluff मानना गलत होगा और उसी सूत्र से बहुत call करने का आदेश नहीं निकलता। दो सीमाएँ याद रखें: ① “0% no-made-hand” का अर्थ “0% bluffs” नहीं — कमजोर Underpair bluff या protection bet का काम कर सकता है; ② BTN का response node इस solve में नहीं है, इसलिए सही defense frequency यहाँ पक्की नहीं की जा सकती। 41.5% देखकर “बाकी middle pairs भी जरूरी call हैं” न निकालें। छोटी size उन 60 कॉम्बो को कम तत्काल कीमत देती है, लेकिन size की वजह पिछला range-shape तर्क है; यह उसका एक असर है।
+**यहाँ MDF की सरल धारणा से सीधा optimal defense नहीं मिलता।** MDF शून्य equity वाले **pure bluff** को indifferent करने का संदर्भ है। BB की betting range में **0.0% “बना हुआ हैंड नहीं”**, एक भी ऐसा कॉम्बो नहीं है। इस पूरी range को शून्य-equity bluff मानना गलत होगा और उसी सूत्र से बहुत call करने का आदेश नहीं निकलता। दो सीमाएँ याद रखें: ① “0% no-made-hand” का अर्थ “0% bluffs” नहीं — कमजोर Underpair bluff या protection bet का काम कर सकता है; ② BTN का response node इस solve में नहीं है, इसलिए सही defense frequency यहाँ पक्की नहीं की जा सकती। 41.5% देखकर “बाकी middle pairs भी जरूरी call हैं” न निकालें। छोटी size उन 60 कॉम्बो को call लायक कीमत देती भी है या नहीं, यह संदिग्ध है: BB की पूरी range के सामने केवल QQ और JJ के पास उसकी माँगी 19.8% से अधिक equity है, जबकि 99 से 33 तक 7.6–9.2% पर हैं। जो भी हो, size की वजह पिछला range-shape तर्क है; यह उसका एक असर है।
 
 :::note[MDF, bet को शून्य-equity pure bluff मानकर सरल करता है। यहाँ पूरी betting range Pair या बेहतर है, इसलिए उस धारणा को वास्तविक flop defense की निश्चित सीमा न समझें। बने हुए कमजोर हैंड bluff हो सकते हैं; उनकी equity और आगे की streets पर हैंड कितना टिकेगा, दोनों देखें।]:::
 

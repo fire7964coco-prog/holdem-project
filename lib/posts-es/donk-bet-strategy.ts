@@ -26,8 +26,8 @@ export const POST: Post = {
   tldr: "En 9♥8♥7♣, tras una apertura del botón y un pago de la ciega grande, la ciega grande hace check el 76.2% y lidera el 23.7% — el primer spot de esta serie donde el lead es una estrategia de verdad y no un residuo de redondeo. La ventaja de rango no cambió de manos: la equity sigue siendo 48.5% contra 51.5%. Lo que cambió es la diferencia y dónde está la fuerza de cada lado.",
   category: "strategy",
   date: "2026-09-02",
-  updated: "2026-09-02",
-  masterUpdated: "2026-09-02",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "🎯",
@@ -144,7 +144,7 @@ También funciona al revés. Los sobrepares son del botón.
 
 (Las columnas suman 99.9 y 100.1 — eso es redondeo.)
 
-**Solo dos filas favorecen al botón**: los sobrepares, 6.4% contra 1.3%, y el A-high, 30.5% contra 24.2%. La doble pareja está exactamente igualada en 2.8%, y todas las demás filas son de la ciega grande.
+**Solo dos filas favorecen al botón**: los sobrepares, 6.4% contra 1.3%, y el A-high, 30.5% contra 24.2%. La doble pareja está exactamente igualada en 2.8% y los sets en 1.9%, y todas las demás filas son de la ciega grande.
 
 Los proyectos hay que leerlos junto a esa tabla.
 
@@ -175,7 +175,7 @@ Dos cosas cambiaron para que eso pasara.
 
 **Segunda, la fuerza del botón está en sitios vulnerables.** Las dos únicas categorías en las que gana son sobrepares (6.4%) y A-high (30.5%) — y una de las dos no es fuerza en absoluto. Casi todo ese A-high no tiene pareja aquí — y donde sí lleva proyecto, la ciega grande también, así que los proyectos se cancelan en lugar de favorecer a nadie. Los sobrepares son frágiles por la razón de la sección siguiente. La ventaja de la ciega grande, en cambio, está en manos que **ya están hechas**.
 
-Un lead se vuelve correcto no por fuerza promedio, sino cuando **tienes más de las nuts y tu rival no puede apostar con confianza.** Aquí se cumplen las dos condiciones: la ciega grande tiene más escaleras, y con un 30.5% de su rango en A-high el botón no puede disparar ancho. Ese espacio sin reclamar es lo que se lleva el lead.
+Un lead se vuelve correcto no por fuerza promedio, sino cuando **tienes más de las manos más fuertes y tu rival no puede apostar con confianza.** Aquí parecen cumplirse las dos condiciones: la ciega grande tiene más escaleras (24 combos contra 20, mientras que la escalera nuts, J-10, son 16 para cada uno), y con un 30.5% de su rango en A-high al botón le costaría disparar ancho — una lectura sacada de la composición de rangos, porque el nodo de apuesta del propio botón no está en este solve. Ese espacio sin reclamar es lo que se lleva el lead.
 
 ## ¿Por qué los sobrepares del botón (BTN) son vulnerables?
 
@@ -210,7 +210,7 @@ Las cartas altas **de distinto palo** que fallan, como AKo y AQo, son check back
 
 ## ¿Qué cambia en la mesa?
 
-- **Los leads viven en boards conectados medios después de una apertura ancha de posición tardía.** El board monotone del spot siguiente también anda por el 11%, mientras que los flops secos A-high y K-high son cero a efectos prácticos. ⚠ Eso sí, el único board conectado medio que esta serie resuelve de verdad es 9-8-7, y la condición no es la textura sola sino **qué rango tiene más nuts sobre ella.** La prueba está dentro de la propia serie: el [flop 6-5-2](/es/blog/low-board-check-raise "thumb:/images/gto-srp-low-rainbow-oop-es.webp") es el mismo bote de subida simple de botón contra ciega grande y allí la ciega grande lidera apenas el **3.2%**, porque la única mano que hace escalera es 4-3 y ninguno de los dos rangos la lleva. Bajo y conectado por sí solo no produce un lead.
+- **Los leads viven en boards conectados medios después de una apertura ancha de posición tardía.** El board monotone del spot siguiente también anda por el 11%, mientras que los flops secos A-high y K-high son cero a efectos prácticos. ⚠ Eso sí, el único board conectado medio que esta serie resuelve de verdad es 9-8-7, y la condición no es la textura sola sino **qué rango tiene más de las manos más fuertes sobre ella.** La prueba está dentro de la propia serie: el [flop 6-5-2](/es/blog/low-board-check-raise "thumb:/images/gto-srp-low-rainbow-oop-es.webp") es el mismo bote de subida simple de botón contra ciega grande y allí la ciega grande lidera apenas el **3.2%**, porque la única mano que hace escalera es 4-3 y ninguno de los dos rangos la lleva. Bajo y conectado por sí solo no produce un lead.
 - **Aun así haces check tres cuartas partes de las veces.** Cuando sí lideres: pequeño, y con más que tus mejores manos — un rango que solo lidera escaleras se lee de inmediato, así que el top pair y los proyectos van en el mismo tamaño. Pero no pierdas de vista el total: **el lead entero es 23.7%, y 16.8 de eso al tamaño pequeño.** Convertido en "lidera todos los proyectos" se vuelve medio rango e invierte la estrategia. El otro 76.2% hace check.
 - **En el botón, resístete a cbetear en esta textura.** Más de la mitad de tu rango no tiene pareja, y los sobrepares quieren un bote controlado y no uno grande.
 - **Contra un rival que cbetea muchísimo, hacer check puede rendir más que liderar** — y con las escaleras y los top pairs, check-**raise** en lugar de solo check-call. Dejar que te apueste tus manos fuertes vale más que tomar la iniciativa, pero solo si después se lo cobras.

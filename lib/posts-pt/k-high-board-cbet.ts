@@ -10,8 +10,8 @@ export const POST: Post = {
   tldr: "No K♠8♦3♣, depois de uma abertura do botão e um call do big blind, o big blind dá check com 99,8% do range, ainda mais do que os 98,2% no flop com ás alto. Dois fatores explicam isso: o big blind não tem overpair, porque AA dá 3-bet pré-flop, e a realização de equity fica em 80,7% contra 116,7%.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-15",
-  masterUpdated: "2026-09-02",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   readTime: "9 min",
   emoji: "👑",
   image: "/images/gto-srp-dry-king-oop-pt.webp",
@@ -136,7 +136,7 @@ Restam os backdoors. O **backdoor flush** contado na tabela precisa que o turn *
 
 ## Você deve fazer c-bet sempre num flop com rei alto?
 
-**Quase sempre, com tamanho pequeno, mas "sempre" não serve para um grupo de mãos.** O big blind tem 35,4% de mãos sem mão feita, então cerca de um terço do range tende a foldar logo. Além disso, **72,2% do range inteiro não tem draw**. Atenção ao denominador: esse número inclui todo o range, até top pair (12,7%), segundo par (10,8%) e sets. Não é uma parte apenas da categoria "Sem mão feita". Ele indica que a situação tende a mudar pouco nas próximas streets. Apostar cerca de um terço do pote com a maior parte do range é a referência.
+**Quase sempre, com tamanho pequeno, mas "sempre" não serve para um grupo de mãos.** O big blind tem 35,4% de mãos sem mão feita: é o terço do range com mais chance de foldar, mas nem todo ele pode foldar — contra uma aposta de um terço do pote, uma defesa equilibrada mantém cerca de 75% do range (MDF), então parte dessas mãos ainda continua. (A resposta do big blind não está nesta resolução.) Além disso, **72,2% do range inteiro não tem draw**. Atenção ao denominador: esse número inclui todo o range, até top pair (12,7%), segundo par (10,8%) e sets. Não é uma parte apenas da categoria "Sem mão feita". Ele indica que a situação tende a mudar pouco nas próximas streets. Apostar cerca de um terço do pote com a maior parte do range é a referência.
 
 É comum recomendar check atrás com mãos A-high que têm valor de showdown. Neste board, isso está **certo pela metade**. AQ e AJ também misturam apostas pequenas com frequência: fazem mãos como QJ, JT e T9 foldarem, embora elas ainda possam melhorar, mesmo sem par. Além disso, um ás nas próximas streets dá a AQ e AJ o maior par do board. Mas dar check também custa pouco, então boa parte do **range de check atrás** vem dessas mãos. Nem "apostar sempre" nem "dar check sempre" descreve a estratégia; a resposta está na mistura de frequências.
 

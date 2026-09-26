@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Dalam showdown kejohanan bukan all-in, last river aggressor menunjukkan kad dahulu; jika semua pemain cek di river, pemain aktif pertama di kiri butang. Apabila ada all-in dan semua pertaruhan selesai, semua tangan yang masih hidup mesti segera ditunjukkan. River caller yang masih memegang atau sudah menunjukkan kadnya boleh meminta tangan last aggressor. Cash game mengikut house rule.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-22",
+  updated: "2026-09-26",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 minit",
@@ -170,7 +170,7 @@ A. Dalam kejohanan bukan all-in, last river aggressor menunjukkan kad dahulu apa
 
 **Q. Boleh muck semasa showdown tanpa tunjuk kad?**
 
-A. Dalam showdown bukan all-in, anda boleh muck jika jelas kalah, tetapi mungkin ada permintaan sah untuk melihat tangan. Dalam kejohanan yang ada all-in dan semua pertaruhan selesai, semua tangan yang masih hidup mesti ditunjukkan. Jangan muck sebelum pengedar membaca tangan jika ada keraguan.
+A. Dalam showdown bukan all-in, anda boleh muck jika jelas kalah. Pengecualiannya ialah peraturan kejohanan: jika anda membuat bet terakhir di river dan di-call, pemain yang membayar untuk melihat tangan anda boleh menuntutnya (TDA 2024 Rule 18-B — dalam cash game WSOP, dia tidak boleh berbuat demikian tanpa syak collusion). Dalam kejohanan yang ada all-in dan semua pertaruhan selesai, semua tangan yang masih hidup mesti ditunjukkan. Jangan muck sebelum pengedar membaca tangan jika ada keraguan.
 
 **Q. Apa itu slow roll dalam poker dan kenapa ia buruk?**
 

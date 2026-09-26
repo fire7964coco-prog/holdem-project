@@ -9,8 +9,8 @@ export const POST: Post = {
   tldr: "Pada Q♥T♥7♠ dalam pot 3-bet, big blind memilih bet dua pertiga pot (14,9bb) sebanyak 98,4%. Bet kecil mendapat 0,7% dan check 0,8% — bersama-sama hanya sekitar satu combo dari 73. Pada A♦K♠2♥, range preflop yang sama membagi sizing 57,8/42,2. Di sini pembagian itu hampir hilang: draw lawan harus membayar harga lebih tinggi untuk melanjutkan. Angka 98,4% adalah frekuensi bet besar, bukan seluruh bet.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-15",
-  masterUpdated: "2026-09-02",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   readTime: "12 mnt",
   emoji: "💧",
   image: "/images/gto-3bp-dynamic-oop-id.webp",
@@ -99,6 +99,8 @@ Menghadapi bet sepertiga pot sebesar 7,4bb, caller memerlukan ==7,4 ÷ (22,5 + 7
 
 BB memiliki tepat empat hand dengan dua hati: A♥K♥, A♥J♥, A♥5♥, A♥4♥. **Semuanya memegang A♥.** Q♥ sudah di board, sehingga A♥Q♥ dan K♥Q♥ tidak mungkin ada. Flush draw K-high dan 9-high BTN bisa kalah terhadap nut flush BB. Pada SPR 4, hati di turn dapat membuat keputusan melibatkan seluruh stack: inilah bahaya reverse implied odds. Jika ukuran turun ke sepertiga pot, combo yang melewati ambang harga menjadi **empat**, sementara 30 gutshot mendapat harga jauh lebih murah. Hand yang sudah jadi dinilai secara terpisah; kelanjutannya tidak hanya bergantung pada peluang menyelesaikan draw.
 
+⚠ «Tidak memenuhi harga» di sini hanya berarti hitungan satu kartu berikutnya. Melawan seluruh range BB dengan dua kartu tersisa, 30 dari 38 combo itu masih memiliki equity lebih dari 28,5%; gutshot A-K berada di 37,6–42,9% karena overcard-nya ikut dihitung. Bagi sebagian besar draw, ukuran besar membuat mereka membayar mahal, bukan memaksa fold.
+
 ⚠ **Tabel tadi menghitung satu kartu. Peluang sampai river berbeda, dan kartu berikutnya bisa menuntut pembayaran lagi.** Dengan melihat dua kartu, draw 15 outs mencapai ==sekitar 54,1%==, draw 12 outs ==sekitar 45,0%==, OESD 8 outs ==31,5%==, dan gutshot ==16,5%==. Caller juga mempunyai posisi, sisa stack 74,1bb setelah call, serta opsi raise. Harga flop perlu dibaca bersama kemungkinan aksi berikutnya.
 
 Namun, **caller juga tidak bisa begitu saja fold semua hand**. Menghadapi 14,9bb ke pot 22,5bb, frekuensi bertahan yang membuat pure bluff tanpa equity tidak otomatis untung adalah ==22,5 ÷ (22,5 + 14,9) = 60,2%==, atau minimum defense frequency. Hand BTN yang sudah kuat dalam pengelompokan ini hanya **33,9%**: 6,8 set, 20,3 top pair, dan 6,8 second pair.
@@ -145,7 +147,7 @@ Karena itu, harga draw tidak berhenti di flop. Semua peluang sampai river tadi m
 
 Dengan Q dan T di board, **A-K dan A-J mengejar straight A-K-Q-J-T yang sama, tetapi belum memiliki pair**. AK mempunyai dua overcard terhadap Q; AJ hanya memiliki A sebagai overcard, sedangkan J melengkapi bagian lain dari gutshot-nya. Jika lawan fold, pot langsung dimenangkan. Jika dibayar, masih ada peluang membaik.
 
-JJ dan 99 berbeda. **Keduanya tidak memiliki straight draw satu kartu.** JJ bersama Q dan T masih membutuhkan dua kartu, misalnya K dan 9, atau A dan K, untuk membentuk straight. Pair tampak lebih kuat saat ini, tetapi A-K bisa langsung menjadi straight dengan satu kartu berikutnya.
+JJ dan 99 berbeda. **Keduanya tidak memiliki straight draw satu kartu.** JJ bersama Q dan T masih membutuhkan dua kartu, yaitu K dan 9, A dan K, atau 9 dan 8, untuk membentuk straight. Pair tampak lebih kuat saat ini, tetapi A-K bisa langsung menjadi straight dengan satu kartu berikutnya.
 
 ## Apa sebenarnya isi range button?
 
@@ -199,7 +201,7 @@ Bagian ini mengasumsikan **heads-up, pot 3-bet, SPR 4**. Tambahkan cold-caller, 
 
 - **Tentukan ukuran dari board dan range sebelum melihat hand Anda sendiri.** Selalu bet besar saat kuat dan kecil saat lemah membuat pola mudah dibaca. Dalam contoh ini, satu ukuran menampung 98,4% range.
 - **Pada pot 3-bet dengan dua jenis draw, pertimbangkan ukuran besar terlebih dahulu.** Sepertiga pot memberi harga 19,8%, yang dilampaui empat combo flush draw BTN dalam contoh ini. ⚠ Namun, draw bukan syarat wajib untuk bet besar. [Board 8-5-2](/id/blog/3bet-pot-low-board), dengan 78,3% range Tanpa draw, juga memakai ukuran besar 97,8%; penyebabnya adalah **range terpolarisasi**. Baca kepadatan draw bersama bentuk range. Untuk single-raised pot, peran pemainnya berbeda seperti dijelaskan sebelumnya.
-- **Jangan otomatis check A-K hanya karena tidak pair.** Pada Q-T-7, AK memiliki gutshot menuju Broadway. Pada board lain AK bisa lebih sering check, tetapi itu bukan aturan mutlak: pada 8-5-2, AK tetap berada dalam range yang memakai bet besar 97,8%. Kedua hasil agregat ini tidak memberi frekuensi setiap combo AK. Periksa bentuk seluruh range, bukan hanya ada atau tidaknya draw pada hand Anda.
+- **Jangan otomatis check A-K hanya karena tidak pair.** Pada Q-T-7, AK memiliki gutshot menuju Broadway. Namun gutshot itu bukan alasan AK bet: pada 8-5-2, tempat tidak ada kartu yang terhubung dengannya, AK tetap memakai ukuran besar 95,9–97,9% (di Q-T-7 97,8–99,9%). Jadi ada atau tidaknya draw saja tidak menentukan tindakan AK. Periksa bentuk seluruh range, bukan hanya ada atau tidaknya draw pada hand Anda.
 - **★Hasil flop belum merupakan rencana sampai river.** Bet 14,9bb yang dibayar menurunkan SPR turn ke 1,4. Tentukan lebih dulu hand mana yang siap melibatkan stack. **Hati di turn punya dua sisi:** empat combo draw hati BTN membaik, tetapi empat hand dua hati BB juga demikian, dan semuanya memiliki A♥. Saat Anda memegang A♥, dua dari empat combo hati BTN tidak mungkin ada. Untuk As-high tanpa hati, J sebagai out tidak hilang seluruhnya, tetapi J♥ bisa sekaligus melengkapi flush lawan. Satu ukuran flop tidak menjawab semua situasi itu.
 - **★Siapkan respons terhadap raise.** Jika hampir seluruh range bet, hand lemah pun bisa menghadapi raise. Pada SPR 4, raise besar dapat menuntut keputusan mengenai stack. Set dan overpair merupakan kandidat untuk melanjutkan. **As-high tanpa dua hati — 24 dari 28 combo — paling rentan harus fold**, karena gutshot saja hanya punya empat outs. Empat hand dua hati lebih layak dipertimbangkan untuk lanjut; A♥K♥ dan A♥J♥ paling kuat di antaranya karena juga mempunyai gutshot. Top pair memerlukan penilaian tersendiri. Ini panduan membaca range, bukan respons raise yang dihitung oleh contoh flop ini.
 - **★Dari kursi BTN, rencanakan batas kelanjutan pocket pair.** Underpair mengisi 36,1% range call. Jangan memperlakukan **MDF 60,2% sebagai kuota call atau batas atas**: itu acuan berdasarkan pure bluff tanpa equity. Sementara itu, **45,1% range BB sudah set, overpair, atau top pair**: 8,2 + 16,4 + 20,5. Berapa pertahanan optimal yang sebenarnya tidak dijawab oleh solve ini. Bet besar berikutnya pada turn dapat membuat banyak pocket pair harus fold; call flop tanpa rencana itulah yang berisiko membuang chip. Node turn tidak tersedia, sehingga ini pertimbangan praktis, bukan frekuensi terukur.
@@ -229,7 +231,7 @@ A. Periksa apa yang bisa dimiliki dan dibayar lawan pada board itu. Di Q-T-7 den
 
 **Q. Mengapa bet besar berguna pada board dengan banyak draw?**
 
-A. Harga satu kartu berikutnya menjadi lebih mahal. Dua pertiga pot membutuhkan sekitar 28,5% equity. Hanya dua dari 40 combo draw BTN yang melewatinya: K♥J♥ dan 9♥8♥, dengan 15 outs dan peluang 31,9%. Combo draw 12 outs hanya 25,5%. Sepertiga pot menurunkan ambang ke 19,8%, sehingga empat combo melewatinya. Namun, range terpolarisasi pada [board kering 8-5-2](/id/blog/3bet-pot-low-board) juga dapat memakai bet besar 97,8%.
+A. Harga satu kartu berikutnya menjadi lebih mahal. Dua pertiga pot membutuhkan sekitar 28,5% equity. Hanya dua dari 40 combo draw BTN yang melewatinya: K♥J♥ dan 9♥8♥, dengan 15 outs dan peluang 31,9%. Combo draw 12 outs hanya 25,5% untuk satu kartu. Namun dengan dua kartu tersisa, sebagian besar draw itu masih memiliki lebih dari 28,5%, jadi harga ini membuat mereka membayar mahal, bukan memaksa fold. Sepertiga pot menurunkan ambang ke 19,8%, sehingga empat combo melewatinya. Namun, range terpolarisasi pada [board kering 8-5-2](/id/blog/3bet-pot-low-board) juga dapat memakai bet besar 97,8%.
 
 **Q. Apa maksud geometric bet sizing?**
 

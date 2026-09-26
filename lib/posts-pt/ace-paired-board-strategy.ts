@@ -9,8 +9,8 @@ export const POST: Post = {
   tldr: "Depois da abertura do small blind e do call do big blind, o flop A♠A♥6♦ recebe aposta em 80,1%: 79,6% a um terço do pote e 0,5% a três quartos, com check em 19,8%. No board pareado 6♣6♦3♥, a aposta era só 3,0%, mas ali também mudam os papéis e os ranges. O ponto não é apenas o board ter par, e sim qual range ele favorece. Aqui, as trincas com um ás somam 88 combos contra 66; A-K e A-Q, 16 desses combos, não existem no range de call do big blind.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-15",
-  masterUpdated: "2026-08-21",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   readTime: "10 min",
   emoji: "🅰️",
   image: "/images/gto-sb-paired-ace-oop-pt.webp",
@@ -119,7 +119,7 @@ Três pontos resumem o spot.
 
 - **As trips do big blind não incluem A-K nem A-Q.** Contra a abertura de 3bb do small blind, essas mãos dão 3-bet em vez de pagar. As trips superiores que só o small blind tem são ==8 combos de A-K + 8 de A-Q + 6 de A-J offsuit = 22 combos==. Ambos podem ter trinca de ases, mas essas mãos já vencem a disputa de kicker.
 - **A quadra pertence apenas ao small blind.** Com A♠ e A♥ no board, só restam A♦ e A♣: A-A é **exatamente um combo**. O big blind dá 3-bet com A-A e não tem nenhum.
-- **Mais da metade do range do big blind não melhorou o board.** São 260 combos (51,5%). Essa parcela oferece alvos para blefes, mas **51,5% não é uma frequência de fold calculada**; a resposta à aposta não está neste exemplo.
+- **Mais da metade do range do big blind não melhorou o board.** São 260 combos (51,5%). Essa parcela oferece alvos para blefes, mas **51,5% não é uma frequência de fold calculada**: contra um terço do pote, a MDF manda manter cerca de 75% do range, então um adversário equilibrado folda algo mais perto de um quarto. A resposta à aposta não está neste exemplo.
 
 Só os full houses empatam em quantidade: ambos têm ==3 combos de 6-6 + 6 combos de A-6 = 9==. **Fora essa linha, as demais categorias superiores favorecem proporcionalmente o small blind; só a parte de baixo, das mãos que não melhoraram, pesa 11,7 pontos a mais para o big blind.**
 
@@ -141,7 +141,7 @@ O pote é de 6bb, então a parcela bruta do small blind vale ==6 × 56,2% = 3,37
 
 Os potes de 3-bet mostraram o caso oposto. No [board baixo 8-5-2](/pt/blog/3bet-pot-low-board "thumb:/images/gto-3bp-low-oop-pt.webp"), o big blind apostava dois terços do pote em 97,8%, pois o range se dividia em duas parcelas parecidas: **overpairs ou A-high**, um formato polarizado. Um range concentrado nos extremos favorece apostas grandes.
 
-Aqui, a distribuição é **contínua**: trips 17,5%, dois pares 18,5%, K-high 22,3% e mãos que não melhoraram 39,8%. Nesse formato, o solver usa uma aposta pequena com muitas mãos. Os 51,5% do range adversário que não melhoraram oferecem oportunidades para ganhar o pote com folds, **sem que 51,5% seja a frequência de fold medida**. Quando há call, a aposta pequena mantém o pote menor e não compromete de imediato os 97bb restantes; isso não elimina o risco de aumentos ou apostas posteriores.
+Aqui, a distribuição é **contínua**: trips 17,5%, dois pares 18,5%, K-high 22,3% e mãos que não melhoraram 39,8%. Nesse formato, o solver usa uma aposta pequena com muitas mãos. Os 51,5% do range adversário que não melhoraram oferecem oportunidades para ganhar o pote com folds, **sem que 51,5% seja a frequência de fold medida** — um blefe de 2bb num pote de 6bb precisa de apenas 25% de folds para empatar. A aposta arrisca só 2bb agora, mas os 97bb restantes ainda podem entrar em jogo no turn e no river.
 
 :::note[⚠ Este exemplo foi calculado com duas opções de tamanho: 33% e 75%. Se você incluir uma menor, como um quinto ou um quarto do pote, os 79,6% podem migrar para ela. Leia como "o menor dos tamanhos disponíveis", não como "33% é sempre a resposta".]:::
 
@@ -167,7 +167,7 @@ O motivo depende de **quem paga você**. K-K forma dois pares com os ases do boa
 
 ## Como conferir no solver de poker?
 
-Você encontra estes números abrindo o [solver de poker](/pt/solver) e seguindo **Spots de estudo → "Board com A pareado" → [⚡ Ver resultados]**. Para jogar o mesmo spot como exercício, abra o [Treinador GTO](/pt/solver) na barra lateral. Ele distribui uma mão aleatória e, depois que você escolhe a ação, mostra a frequência da estratégia mista e a **perda de EV (bb)** da sua escolha. Sem login, o histórico fica no seu navegador.
+Você encontra estes números abrindo o [solver de poker](/pt/solver) e seguindo **Spots de estudo → "Board com A pareado" → [⚡ Ver resultados]**. Para jogar o mesmo spot como exercício, abra o [Treinador GTO](/pt/solver) na barra lateral. Ele distribui uma mão aleatória e, depois que você escolhe a ação, mostra a frequência da estratégia mista e a **perda de EV (bb)** da sua escolha. Por padrão, o histórico fica neste dispositivo; ao entrar com uma conta HoldemMaster, o histórico de Spots de estudo e do Desafio do dia é sincronizado entre dispositivos.
 
 **Alterne com o board pareado 6-6-3.** Os dois têm par, mas as matrizes mostram cores opostas. A comparação também troca os papéis pré-flop e os ranges; percorrer os exemplos deixa uma conclusão: não basta perguntar **qual é o board**, é preciso perguntar **qual range ele favorece**. É gratuito, sem instalação e sem necessidade de conta.
 

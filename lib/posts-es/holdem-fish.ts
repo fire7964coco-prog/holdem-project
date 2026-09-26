@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un 'fish' (pez) es la jerga del póker para el jugador débil y perdedor del que los jugadores fuertes (los 'tiburones') sacan su dinero. El pez juega demasiadas manos, iguala demasiado y no sabe foldear — y la famosa frase avisa: si no ves al pez en tu mesa, el pez eres tú. Es la lectura más importante del juego: encuentra al pez, o conviértete en uno.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-21",
-  masterUpdated: "2026-09-21",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🐟",
@@ -67,7 +67,7 @@ Llega débil al showdown | Da la vuelta a manos que nunca deberían haber llegad
 Juega emocionalmente | Se tiltea tras un bad beat, persigue pérdidas, juega con miedo cuando va perdiendo
 :::
 
-Ninguna señal por sí sola es prueba — hasta los buenos jugadores limpean de vez en cuando o persiguen un proyecto grande. Pero cuando ves tres o cuatro de estas en el mismo jugador, has encontrado al pez. La lectura individual más fiable es **pasividad más igualar suelto**: un jugador que iguala demasiadas manos pero casi nunca sube es el pez clásico, y el rival más fácil de batir porque puedes apostarle a valor sin descanso y sin miedo a un farol-resubida. Saber qué manos iniciales vale siquiera la pena jugar es lo primero que te separa de él — la [tabla de manos iniciales](/es/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") es donde nace esa diferencia.
+Ninguna señal por sí sola es prueba — hasta los buenos jugadores limpean de vez en cuando o persiguen un proyecto grande. Pero cuando ves tres o cuatro de estas en el mismo jugador, probablemente has encontrado al pez — tómalo como una lectura de trabajo y sigue actualizándola. La lectura individual más fiable es **pasividad más igualar suelto**: un jugador que iguala demasiadas manos pero casi nunca sube es el pez clásico, y el rival más fácil de batir porque puedes apostarle a valor sin descanso y sin miedo a un farol-resubida. Saber qué manos iniciales vale siquiera la pena jugar es lo primero que te separa de él — la [tabla de manos iniciales](/es/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") es donde nace esa diferencia.
 
 ---
 
@@ -89,8 +89,8 @@ Ninguna señal por sí sola es prueba — hasta los buenos jugadores limpean de 
 | **Calling station** | Igualador pasivo compulsivo | Iguala cualquier cosa, nunca sube/foldea | Apuesta a valor sin fin, nunca farolees |
 | **Reg / regular** | Un "habitual" de un límite | Varía — no siempre es ganador | Léelo caso por caso |
 | **Grinder** | Pro/semipro de alto volumen | Sólido, constante, baja varianza | Evítalo; busca al recreativo |
-| **TAG** | Un estilo *ganador* (tight-agresivo) | Rango estrecho, pero lo apuesta y lo sube fuerte | No es fish — respeta sus apuestas |
-| **LAG** | Un estilo *ganador* (loose-agresivo) | Rango amplio, presión sin parar, farolea mucho | No foldear demasiado — amplía tus calls y 3-bets y caza faroles |
+| **TAG** | Un estilo que usan muchos jugadores ganadores (tight-agresivo) | Rango estrecho, pero lo apuesta y lo sube fuerte | Normalmente no es fish — respeta sus apuestas |
+| **LAG** | Un estilo que usan muchos jugadores fuertes (loose-agresivo) | Rango amplio, presión sin parar, farolea mucho | No foldear demasiado — amplía tus calls y 3-bets y caza faroles |
 
 </div>
 
@@ -98,7 +98,7 @@ Tres distinciones que la competencia mezcla sin parar, y que conviene tener clar
 
 - **Fish ≠ ballena.** Una ballena es un *subconjunto* de fish — uno que pierde sumas **grandes**, normalmente adinerado y jugando altos límites de forma suelta. Todas las ballenas son fish; no todos los fish son ballenas. Una ballena en la partida es la razón por la que aparecen los tiburones.
 - **Fish ≠ donk.** Casi sinónimos, pero "donk" recalca las *malas decisiones* y es más despectivo; "fish" recalca la *inexperiencia y las pérdidas*. Llamar a alguien donk es más un insulto.
-- **Un nit no es un fish.** Los nits son *tight* — muchas veces break-even o ligeramente ganadores. Son explotables porque su rango es transparente, pero no están regalando fichas como un fish. Y **LAG/TAG son estilos ganadores**, no etiquetas de jugador débil — solo sus versiones rotas (el imprudente "maniaco", el congelado "TAG fish") son leaks.
+- **Un nit normalmente no es un fish.** Los nits son *tight* — muchas veces break-even o ligeramente ganadores. Son explotables porque su rango es transparente, pero no están regalando fichas como un fish (aunque un nit que foldea de más puede acabar siendo un jugador perdedor). Y **LAG/TAG son estilos que usan muchos jugadores ganadores**, no etiquetas de jugador débil — solo sus versiones rotas (el imprudente "maniaco", el congelado "TAG fish") son leaks.
 
 ---
 
@@ -130,7 +130,7 @@ Aquí viene la parte incómoda. Si has llegado hasta aquí esperando en silencio
 |:---|:---:|:---:|:---|
 | **Jugador sólido** | 15–22% | 12–18% (nunca por encima de su VPIP) | Tight, agresivo, diferencia estrecha |
 | **Fish** | 40–70% | menos del 10% | Suelto y pasivo — jugándolo todo, sin liderar nada |
-| **Nit** | menos del 12% | menos del 8% | Demasiado tight — predecible, no es un fish |
+| **Nit** | menos del 12% | menos del 8% | Demasiado tight — predecible, normalmente no es un fish |
 
 </div>
 
@@ -197,7 +197,7 @@ A. Son casi sinónimos, pero el tono cambia. "Fish" enfatiza la inexperiencia y 
 
 **Q. ¿Cómo saber si alguien es un fish?**
 
-A. Atento a un conjunto de señales: jugar demasiadas manos, limpear en vez de subir, igualar demasiado y rara vez subir, no foldear nunca una pareja, perseguir cada proyecto y un sizing de apuesta errático. Ninguna señal por sí sola es prueba, pero tres o cuatro juntas — sobre todo el igualar suelto combinado con la pasividad — identifican de forma fiable al fish en una o dos órbitas.
+A. Atento a un conjunto de señales: jugar demasiadas manos, limpear en vez de subir, igualar demasiado y rara vez subir, no foldear nunca una pareja, perseguir cada proyecto y un sizing de apuesta errático. Ninguna señal por sí sola es prueba, pero tres o cuatro juntas — sobre todo el igualar suelto combinado con la pasividad — te dan una lectura de trabajo sólida en una o dos órbitas; confírmala a medida que crece la muestra.
 
 **Q. ¿Cómo dejar de ser un fish en el póker?**
 

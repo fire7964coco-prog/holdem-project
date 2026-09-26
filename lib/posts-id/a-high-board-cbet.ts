@@ -10,8 +10,8 @@ export const POST: Post = {
   category: "strategy",
   tags: ["c-bet", "flop A-high", "dry board", "range advantage", "realisasi equity", "solver GTO"],
   date: "2026-09-15",
-  updated: "2026-09-15",
-  masterUpdated: "2026-09-02",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   readTime: "9 mnt",
   emoji: "🅰️",
   image: "/images/gto-srp-dry-ace-oop-id.webp",
@@ -66,7 +66,7 @@ Dari 464 combo, hanya sekitar delapan combo yang bet: total 1,9% dari kedua ukur
 
 Karena check memberi cara yang lebih baik untuk memperebutkan pot. Lead dengan satu pair, saat harus beraksi lebih dulu melawan raiser preflop, membuat Anda membayar lebih mahal untuk memainkan hand yang sebenarnya senang mencapai showdown.
 
-Ada tiga hal yang menghambat lead. Pertama, **realisasi equity**: angka di bawah menunjukkan big blind merealisasikan 84,0% equity-nya, sedangkan button 113,1%. Membesarkan pot tanpa posisi memperbesar dampak selisih tersebut. Kedua, button biasanya sering c-bet di flop ini. **Check mempertahankan bluff-nya di dalam pot**, sementara lead memberinya kesempatan fold tanpa menambah uang. Ketiga, range big blind dibatasi di bagian teratas: tanpa AA, AK, atau AQ, lead membuka peluang raise dari hand yang sulit dilawannya.
+Ada tiga hal yang menghambat lead. Pertama, **realisasi equity**: angka di bawah menunjukkan big blind merealisasikan 84,0% equity-nya, sedangkan button 113,1%. Membesarkan pot tanpa posisi memperbesar dampak selisih tersebut. Kedua, button biasanya sering c-bet di flop ini. **Check mempertahankan bluff-nya di dalam pot**, sementara lead memberinya kesempatan fold tanpa menambah uang. Ketiga, range big blind dibatasi di bagian teratas: tanpa AA, AK, atau AQ, lead membuka peluang raise dari As kuat, dan sebagian besar range big blind tidak bisa melanjutkan melawannya. Hanya 24 combo yang sanggup menghadapi raise: set 77 dan 22, serta two pair A7 dan A2. (Node raise tidak dihitung dalam contoh ini.)
 
 Lead juga tidak membuat hand yang lebih baik fold. Range open button memuat semua As hingga A2, ditambah underpair dan pair tujuh. Jadi, ada banyak hand lebih lemah yang dapat call. Persoalannya bukan ketiadaan caller yang lebih lemah, melainkan besarnya pot yang Anda bangun untuk melawan mereka.
 

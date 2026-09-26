@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "odds",
   date: "2026-07-03",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-24",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🎲",
@@ -133,7 +133,7 @@ Para set mining, ==7,5 para 1 é o retorno teórico de equilíbrio, não uma reg
 
 </div>
 
-A linha das duas overcards pressupõe que parear qualquer uma delas ganha. Contra dois pares, uma trinca ou um projeto mais forte, parte dessas cartas — ou todas — pode estar suja: desconte-as em vez de tratar os seis como outs vencedores garantidos.
+A linha das duas overcards pressupõe que parear qualquer uma delas ganha. Contra dois pares, uma trinca ou um projeto mais forte, parte dessas cartas — ou todas — pode estar suja: desconte-as em vez de tratar os seis como outs vencedores garantidos. A linha da trinca também conta a quarta carta do seu valor: só o full house fica em cerca de 29,1% a partir do flop e 19,6% no turn.
 
 O caso clássico: você flopa um **projeto de flush** (nove outs). Você chega lá ==35% das vezes até o river== — melhor que uma em três. Um **projeto de sequência aberta** (oito outs) acerta 31,5%. Repare nas duas colunas: quando o turn é um brick você passa a ter uma carta por vir em vez de duas, então suas odds praticamente caem pela metade — os 35% do projeto de flush viram 19,6% —, e é exatamente por isso que os projetos ficam mais caros de perseguir street após street.
 
@@ -208,10 +208,10 @@ Um mito comum: "um royal flush ganha de tudo, então pode dar *empate*". O pote 
 |:---|:---:|
 | Receber um par de ases na mão | 1 em 221 |
 | Flopar quadra com um par na mão | 1 em 408 |
-| Flopar um straight flush (conectores do mesmo naipe) | ~1 em 4.900 |
+| Flopar um straight flush (conectores do mesmo naipe 54s–JTs) | ~1 em 4.900 |
 | Fazer um royal flush até o river | 1 em 30.940 |
 
-**Set over set** — você flopa uma trinca e perde para uma trinca maior — é o cooler supremo. Não há um número único e limpo porque depende de quantos jogadores seguram pares, mas a âncora é esta: *você* flopa uma trinca só 11,8% das vezes, e um adversário fazendo o mesmo na mesma mesa é raro o suficiente para a maioria dos jogadores lembrar de cada um. Quando acontece, é variância, não erro — a matemática esteve do seu lado o tempo todo. Se você quer ver exatamente como esses showdowns são pontuados, as [regras de kicker e desempate](/pt/blog/holdem-tiebreak-rules) cobrem cada caso limite.
+**Set over set** — você flopa uma trinca e perde para uma trinca maior — é o cooler supremo. Não há um número único e limpo porque depende de quantos jogadores seguram pares, mas a âncora é esta: *você* flopa uma trinca só 11,8% das vezes, e um adversário fazendo o mesmo na mesma mesa é raro o suficiente para a maioria dos jogadores lembrar de cada um. Quando acontece, a derrota sozinha não prova que o call foi um erro — nem que foi certo; julgue pelo preço e pela profundidade de stack que você tinha naquele momento, não pelo showdown. Se você quer ver exatamente como esses showdowns são pontuados, as [regras de kicker e desempate](/pt/blog/holdem-tiebreak-rules) cobrem cada caso limite.
 
 ---
 

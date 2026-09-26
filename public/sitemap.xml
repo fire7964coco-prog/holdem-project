@@ -40,7 +40,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/calculator</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
@@ -405,7 +405,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/en/calculator</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -503,70 +503,70 @@
 
   <url>
     <loc>https://www.holdemmaster.com/ja/calculator</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://www.holdemmaster.com/es/calculator</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://www.holdemmaster.com/pt/calculator</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://www.holdemmaster.com/de/calculator</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://www.holdemmaster.com/zh/calculator</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://www.holdemmaster.com/zh-hant/calculator</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://www.holdemmaster.com/fr/calculator</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://www.holdemmaster.com/id/calculator</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://www.holdemmaster.com/ms/calculator</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://www.holdemmaster.com/hi/calculator</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1526,7 +1526,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/blog/3bet-pot-bet-sizing</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/3bet-pot-bet-sizing" />
@@ -1544,7 +1544,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/blog/3bet-pot-cbet</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/3bet-pot-cbet" />
@@ -1580,7 +1580,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/blog/a-high-board-cbet</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/a-high-board-cbet" />
@@ -1711,7 +1711,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/blog/broadway-board-strategy</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/broadway-board-strategy" />
@@ -1729,7 +1729,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/blog/donk-bet-strategy</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/donk-bet-strategy" />
@@ -2199,7 +2199,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/blog/k-high-board-cbet</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/k-high-board-cbet" />
@@ -2217,7 +2217,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/blog/low-board-check-raise</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/low-board-check-raise" />
@@ -3414,7 +3414,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/ja/blog/3bet-pot-bet-sizing</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/3bet-pot-bet-sizing" />
@@ -3432,7 +3432,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/ja/blog/3bet-pot-cbet</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/3bet-pot-cbet" />
@@ -3468,7 +3468,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/ja/blog/a-high-board-cbet</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/a-high-board-cbet" />
@@ -3557,7 +3557,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/ja/blog/broadway-board-strategy</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/broadway-board-strategy" />
@@ -3575,7 +3575,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/ja/blog/donk-bet-strategy</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/donk-bet-strategy" />
@@ -3609,7 +3609,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/ja/blog/holdem-3bet</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-3bet" />
@@ -3674,7 +3674,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/ja/blog/holdem-betting-actions</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-betting-actions" />
@@ -3757,7 +3757,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/ja/blog/holdem-card-counting</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-card-counting" />
@@ -3773,7 +3773,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/ja/blog/holdem-continuation-bet</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-continuation-bet" />
@@ -3821,7 +3821,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/ja/blog/holdem-equity</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-equity" />
@@ -3837,7 +3837,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/ja/blog/holdem-fish</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-fish" />
@@ -3853,7 +3853,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/ja/blog/holdem-flush-vs-straight</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-flush-vs-straight" />
@@ -3870,7 +3870,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/ja/blog/holdem-game-order</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-game-order" />
@@ -3920,7 +3920,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/ja/blog/holdem-hand-rankings</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-hand-rankings" />
@@ -3958,7 +3958,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/ja/blog/holdem-implied-odds</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-implied-odds" />
@@ -3975,7 +3975,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/ja/blog/holdem-kicker</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-kicker" />
@@ -3991,7 +3991,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/ja/blog/holdem-limping</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-limping" />
@@ -4007,7 +4007,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/ja/blog/holdem-outs</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-outs" />
@@ -4023,7 +4023,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/ja/blog/holdem-position-play</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-position-play" />
@@ -4039,7 +4039,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/ja/blog/holdem-positions</loc>
-    <lastmod>2026-09-16</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-positions" />
@@ -4055,7 +4055,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/ja/blog/holdem-pot-odds</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-pot-odds" />
@@ -4088,7 +4088,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/ja/blog/holdem-rake</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-rake" />
@@ -4104,7 +4104,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/ja/blog/holdem-reading-the-board</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-reading-the-board" />
@@ -4136,7 +4136,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/ja/blog/holdem-showdown-rules</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-showdown-rules" />
@@ -4169,7 +4169,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/ja/blog/holdem-split-pot-rules</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-split-pot-rules" />
@@ -4186,7 +4186,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/ja/blog/holdem-starting-hands-chart</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-starting-hands-chart" />
@@ -4202,7 +4202,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/ja/blog/holdem-straddle</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-straddle" />
@@ -4218,7 +4218,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/ja/blog/holdem-strategy</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-strategy" />
@@ -4235,7 +4235,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/ja/blog/holdem-tiebreak-rules</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-tiebreak-rules" />
@@ -4290,7 +4290,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/ja/blog/holdem-when-to-fold</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-when-to-fold" />
@@ -4313,7 +4313,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/ja/blog/k-high-board-cbet</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/k-high-board-cbet" />
@@ -4347,7 +4347,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/ja/blog/low-board-check-raise</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/low-board-check-raise" />
@@ -4465,7 +4465,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/es/blog/3bet-pot-bet-sizing</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/3bet-pot-bet-sizing" />
@@ -4519,7 +4519,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/es/blog/a-high-board-cbet</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/a-high-board-cbet" />
@@ -4608,7 +4608,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/es/blog/broadway-board-strategy</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/broadway-board-strategy" />
@@ -4640,7 +4640,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/es/blog/donk-bet-strategy</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/donk-bet-strategy" />
@@ -4674,7 +4674,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/es/blog/holdem-3bet</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-3bet" />
@@ -4902,7 +4902,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/es/blog/holdem-fish</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-fish" />
@@ -4935,7 +4935,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/es/blog/holdem-game-order</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-game-order" />
@@ -5040,7 +5040,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/es/blog/holdem-kicker</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-kicker" />
@@ -5056,7 +5056,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/es/blog/holdem-limping</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-limping" />
@@ -5072,7 +5072,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/es/blog/holdem-outs</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-outs" />
@@ -5088,7 +5088,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/es/blog/holdem-position-play</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-position-play" />
@@ -5104,7 +5104,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/es/blog/holdem-positions</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-positions" />
@@ -5120,7 +5120,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/es/blog/holdem-pot-odds</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-pot-odds" />
@@ -5153,7 +5153,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/es/blog/holdem-rake</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-rake" />
@@ -5169,7 +5169,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/es/blog/holdem-reading-the-board</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-reading-the-board" />
@@ -5234,7 +5234,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/es/blog/holdem-split-pot-rules</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-split-pot-rules" />
@@ -5267,7 +5267,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/es/blog/holdem-straddle</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-straddle" />
@@ -5300,7 +5300,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/es/blog/holdem-tiebreak-rules</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-tiebreak-rules" />
@@ -5355,7 +5355,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/es/blog/holdem-when-to-fold</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-when-to-fold" />
@@ -5371,7 +5371,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/es/blog/k-high-board-cbet</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/k-high-board-cbet" />
@@ -5405,7 +5405,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/es/blog/low-board-check-raise</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/low-board-check-raise" />
@@ -5537,7 +5537,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/zh/blog/3bet-pot-bet-sizing</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/3bet-pot-bet-sizing" />
@@ -5555,7 +5555,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/zh/blog/3bet-pot-cbet</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/3bet-pot-cbet" />
@@ -5591,7 +5591,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/zh/blog/a-high-board-cbet</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/a-high-board-cbet" />
@@ -5680,7 +5680,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/zh/blog/broadway-board-strategy</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/broadway-board-strategy" />
@@ -5698,7 +5698,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/zh/blog/donk-bet-strategy</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/donk-bet-strategy" />
@@ -5732,7 +5732,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/zh/blog/holdem-3bet</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-3bet" />
@@ -5896,7 +5896,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/zh/blog/holdem-continuation-bet</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-continuation-bet" />
@@ -5976,7 +5976,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/zh/blog/holdem-flush-vs-straight</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-flush-vs-straight" />
@@ -6043,7 +6043,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/zh/blog/holdem-hand-rankings</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-hand-rankings" />
@@ -6114,7 +6114,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/zh/blog/holdem-limping</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-limping" />
@@ -6146,7 +6146,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/zh/blog/holdem-position-play</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-position-play" />
@@ -6162,7 +6162,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/zh/blog/holdem-positions</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-positions" />
@@ -6309,7 +6309,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/zh/blog/holdem-starting-hands-chart</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-starting-hands-chart" />
@@ -6341,7 +6341,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/zh/blog/holdem-strategy</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-strategy" />
@@ -6413,7 +6413,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/zh/blog/holdem-when-to-fold</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-when-to-fold" />
@@ -6429,7 +6429,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/zh/blog/k-high-board-cbet</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/k-high-board-cbet" />
@@ -6463,7 +6463,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/zh/blog/low-board-check-raise</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/low-board-check-raise" />
@@ -6581,7 +6581,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/zh-hant/blog/3bet-pot-bet-sizing</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/3bet-pot-bet-sizing" />
@@ -6599,7 +6599,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/zh-hant/blog/3bet-pot-cbet</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/3bet-pot-cbet" />
@@ -6635,7 +6635,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/zh-hant/blog/a-high-board-cbet</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/a-high-board-cbet" />
@@ -6724,7 +6724,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/zh-hant/blog/broadway-board-strategy</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/broadway-board-strategy" />
@@ -6742,7 +6742,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/zh-hant/blog/donk-bet-strategy</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/donk-bet-strategy" />
@@ -6776,7 +6776,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/zh-hant/blog/holdem-3bet</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-3bet" />
@@ -6940,7 +6940,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/zh-hant/blog/holdem-continuation-bet</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-continuation-bet" />
@@ -7020,7 +7020,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/zh-hant/blog/holdem-flush-vs-straight</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-flush-vs-straight" />
@@ -7087,7 +7087,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/zh-hant/blog/holdem-hand-rankings</loc>
-    <lastmod>2026-09-14</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-hand-rankings" />
@@ -7142,7 +7142,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/zh-hant/blog/holdem-kicker</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-kicker" />
@@ -7158,7 +7158,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/zh-hant/blog/holdem-limping</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-limping" />
@@ -7190,7 +7190,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/zh-hant/blog/holdem-position-play</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-position-play" />
@@ -7206,7 +7206,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/zh-hant/blog/holdem-positions</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-positions" />
@@ -7255,7 +7255,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/zh-hant/blog/holdem-rake</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-rake" />
@@ -7353,7 +7353,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/zh-hant/blog/holdem-starting-hands-chart</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-starting-hands-chart" />
@@ -7369,7 +7369,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/zh-hant/blog/holdem-straddle</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-straddle" />
@@ -7385,7 +7385,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/zh-hant/blog/holdem-strategy</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-strategy" />
@@ -7402,7 +7402,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/zh-hant/blog/holdem-tiebreak-rules</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-tiebreak-rules" />
@@ -7457,7 +7457,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/zh-hant/blog/holdem-when-to-fold</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-when-to-fold" />
@@ -7473,7 +7473,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/zh-hant/blog/k-high-board-cbet</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/k-high-board-cbet" />
@@ -7507,7 +7507,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/zh-hant/blog/low-board-check-raise</loc>
-    <lastmod>2026-09-03</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/low-board-check-raise" />
@@ -7665,7 +7665,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/ar/blog/holdem-betting-actions</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-betting-actions" />
@@ -7766,7 +7766,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/ar/blog/holdem-hand-rankings</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-hand-rankings" />
@@ -7788,7 +7788,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/ar/blog/holdem-showdown-rules</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-showdown-rules" />
@@ -7877,7 +7877,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/pt/blog/3bet-pot-bet-sizing</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/3bet-pot-bet-sizing" />
@@ -7895,7 +7895,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/pt/blog/3bet-pot-cbet</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/3bet-pot-cbet" />
@@ -7913,7 +7913,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/pt/blog/3bet-pot-low-board</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/3bet-pot-low-board" />
@@ -7931,7 +7931,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/pt/blog/a-high-board-cbet</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/a-high-board-cbet" />
@@ -7949,7 +7949,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/pt/blog/ace-paired-board-strategy</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/ace-paired-board-strategy" />
@@ -7984,7 +7984,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/pt/blog/blind-battle-cbet</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/blind-battle-cbet" />
@@ -8002,7 +8002,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/pt/blog/blind-battle-connected-board</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/blind-battle-connected-board" />
@@ -8020,7 +8020,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/pt/blog/broadway-board-strategy</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/broadway-board-strategy" />
@@ -8038,7 +8038,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/pt/blog/donk-bet-strategy</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/donk-bet-strategy" />
@@ -8072,7 +8072,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/pt/blog/holdem-3bet</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-3bet" />
@@ -8137,7 +8137,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/pt/blog/holdem-betting-actions</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-betting-actions" />
@@ -8220,7 +8220,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/pt/blog/holdem-card-counting</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-card-counting" />
@@ -8236,7 +8236,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/pt/blog/holdem-continuation-bet</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-continuation-bet" />
@@ -8284,7 +8284,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/pt/blog/holdem-equity</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-equity" />
@@ -8300,7 +8300,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/pt/blog/holdem-fish</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-fish" />
@@ -8316,7 +8316,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/pt/blog/holdem-flush-vs-straight</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-flush-vs-straight" />
@@ -8333,7 +8333,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/pt/blog/holdem-game-order</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-game-order" />
@@ -8383,7 +8383,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/pt/blog/holdem-hand-rankings</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-hand-rankings" />
@@ -8421,7 +8421,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/pt/blog/holdem-implied-odds</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-implied-odds" />
@@ -8438,7 +8438,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/pt/blog/holdem-kicker</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-kicker" />
@@ -8454,7 +8454,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/pt/blog/holdem-limping</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-limping" />
@@ -8470,7 +8470,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/pt/blog/holdem-outs</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-outs" />
@@ -8486,7 +8486,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/pt/blog/holdem-position-play</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-position-play" />
@@ -8502,7 +8502,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/pt/blog/holdem-positions</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-positions" />
@@ -8518,7 +8518,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/pt/blog/holdem-pot-odds</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-pot-odds" />
@@ -8551,7 +8551,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/pt/blog/holdem-rake</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-rake" />
@@ -8567,7 +8567,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/pt/blog/holdem-reading-the-board</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-reading-the-board" />
@@ -8599,7 +8599,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/pt/blog/holdem-showdown-rules</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-showdown-rules" />
@@ -8632,7 +8632,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/pt/blog/holdem-split-pot-rules</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-split-pot-rules" />
@@ -8649,7 +8649,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/pt/blog/holdem-starting-hands-chart</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-starting-hands-chart" />
@@ -8665,7 +8665,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/pt/blog/holdem-straddle</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-straddle" />
@@ -8681,7 +8681,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/pt/blog/holdem-strategy</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-strategy" />
@@ -8698,7 +8698,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/pt/blog/holdem-tiebreak-rules</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-tiebreak-rules" />
@@ -8753,7 +8753,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/pt/blog/holdem-when-to-fold</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-when-to-fold" />
@@ -8769,7 +8769,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/pt/blog/k-high-board-cbet</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/k-high-board-cbet" />
@@ -8803,7 +8803,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/pt/blog/low-board-check-raise</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/low-board-check-raise" />
@@ -8907,7 +8907,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/id/blog/3bet-pot-bet-sizing</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/3bet-pot-bet-sizing" />
@@ -8925,7 +8925,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/id/blog/3bet-pot-cbet</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/3bet-pot-cbet" />
@@ -8961,7 +8961,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/id/blog/a-high-board-cbet</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/a-high-board-cbet" />
@@ -9050,7 +9050,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/id/blog/broadway-board-strategy</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/broadway-board-strategy" />
@@ -9068,7 +9068,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/id/blog/donk-bet-strategy</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/donk-bet-strategy" />
@@ -9102,7 +9102,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/id/blog/holdem-3bet</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-3bet" />
@@ -9167,7 +9167,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/id/blog/holdem-betting-actions</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-betting-actions" />
@@ -9250,7 +9250,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/id/blog/holdem-card-counting</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-card-counting" />
@@ -9266,7 +9266,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/id/blog/holdem-continuation-bet</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-continuation-bet" />
@@ -9314,7 +9314,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/id/blog/holdem-equity</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-equity" />
@@ -9330,7 +9330,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/id/blog/holdem-fish</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-fish" />
@@ -9346,7 +9346,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/id/blog/holdem-flush-vs-straight</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-flush-vs-straight" />
@@ -9363,7 +9363,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/id/blog/holdem-game-order</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-game-order" />
@@ -9413,7 +9413,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/id/blog/holdem-hand-rankings</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-hand-rankings" />
@@ -9451,7 +9451,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/id/blog/holdem-implied-odds</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-implied-odds" />
@@ -9468,7 +9468,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/id/blog/holdem-kicker</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-kicker" />
@@ -9484,7 +9484,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/id/blog/holdem-limping</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-limping" />
@@ -9500,7 +9500,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/id/blog/holdem-outs</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-outs" />
@@ -9516,7 +9516,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/id/blog/holdem-position-play</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-position-play" />
@@ -9532,7 +9532,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/id/blog/holdem-positions</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-positions" />
@@ -9548,7 +9548,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/id/blog/holdem-pot-odds</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-pot-odds" />
@@ -9581,7 +9581,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/id/blog/holdem-rake</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-rake" />
@@ -9597,7 +9597,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/id/blog/holdem-reading-the-board</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-reading-the-board" />
@@ -9629,7 +9629,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/id/blog/holdem-showdown-rules</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-showdown-rules" />
@@ -9662,7 +9662,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/id/blog/holdem-split-pot-rules</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-split-pot-rules" />
@@ -9679,7 +9679,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/id/blog/holdem-starting-hands-chart</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-starting-hands-chart" />
@@ -9695,7 +9695,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/id/blog/holdem-straddle</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-straddle" />
@@ -9711,7 +9711,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/id/blog/holdem-strategy</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-strategy" />
@@ -9728,7 +9728,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/id/blog/holdem-tiebreak-rules</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-tiebreak-rules" />
@@ -9783,7 +9783,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/id/blog/holdem-when-to-fold</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-when-to-fold" />
@@ -9799,7 +9799,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/id/blog/k-high-board-cbet</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/k-high-board-cbet" />
@@ -9833,7 +9833,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/id/blog/low-board-check-raise</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/low-board-check-raise" />
@@ -9937,7 +9937,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/ms/blog/3bet-pot-bet-sizing</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/3bet-pot-bet-sizing" />
@@ -9955,7 +9955,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/ms/blog/3bet-pot-cbet</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/3bet-pot-cbet" />
@@ -9991,7 +9991,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/ms/blog/a-high-board-cbet</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/a-high-board-cbet" />
@@ -10081,7 +10081,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/ms/blog/donk-bet-strategy</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/donk-bet-strategy" />
@@ -10233,7 +10233,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/ms/blog/holdem-hand-rankings</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-hand-rankings" />
@@ -10255,7 +10255,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/ms/blog/holdem-showdown-rules</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-showdown-rules" />
@@ -10550,7 +10550,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/vi/blog/holdem-hand-rankings</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-hand-rankings" />
@@ -10572,7 +10572,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/vi/blog/holdem-showdown-rules</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-showdown-rules" />
@@ -10661,7 +10661,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/hi/blog/3bet-pot-bet-sizing</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/3bet-pot-bet-sizing" />
@@ -10679,7 +10679,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/hi/blog/3bet-pot-cbet</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/3bet-pot-cbet" />
@@ -10697,7 +10697,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/hi/blog/3bet-pot-low-board</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/3bet-pot-low-board" />
@@ -10715,7 +10715,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/hi/blog/a-high-board-cbet</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/a-high-board-cbet" />
@@ -10733,7 +10733,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/hi/blog/ace-paired-board-strategy</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/ace-paired-board-strategy" />
@@ -10751,7 +10751,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/hi/blog/blind-battle-cbet</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/blind-battle-cbet" />
@@ -10769,7 +10769,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/hi/blog/blind-battle-connected-board</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/blind-battle-connected-board" />
@@ -10787,7 +10787,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/hi/blog/broadway-board-strategy</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/broadway-board-strategy" />
@@ -10805,7 +10805,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/hi/blog/donk-bet-strategy</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/donk-bet-strategy" />
@@ -10957,7 +10957,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/hi/blog/holdem-hand-rankings</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-hand-rankings" />
@@ -10979,7 +10979,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/hi/blog/holdem-showdown-rules</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-showdown-rules" />
@@ -11034,7 +11034,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/hi/blog/k-high-board-cbet</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/k-high-board-cbet" />
@@ -11052,7 +11052,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/hi/blog/low-board-check-raise</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/low-board-check-raise" />
@@ -11173,7 +11173,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/de/blog/holdem-3bet</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-3bet" />
@@ -11238,7 +11238,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/de/blog/holdem-betting-actions</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-betting-actions" />
@@ -11321,7 +11321,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/de/blog/holdem-card-counting</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-card-counting" />
@@ -11337,7 +11337,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/de/blog/holdem-continuation-bet</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-continuation-bet" />
@@ -11369,7 +11369,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/de/blog/holdem-drawing-odds</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-drawing-odds" />
@@ -11385,7 +11385,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/de/blog/holdem-equity</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-equity" />
@@ -11401,7 +11401,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/de/blog/holdem-fish</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-fish" />
@@ -11417,7 +11417,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/de/blog/holdem-flush-vs-straight</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-flush-vs-straight" />
@@ -11484,7 +11484,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/de/blog/holdem-hand-rankings</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-hand-rankings" />
@@ -11522,7 +11522,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/de/blog/holdem-implied-odds</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-implied-odds" />
@@ -11555,7 +11555,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/de/blog/holdem-limping</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-limping" />
@@ -11571,7 +11571,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/de/blog/holdem-outs</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-outs" />
@@ -11587,7 +11587,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/de/blog/holdem-position-play</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-position-play" />
@@ -11603,7 +11603,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/de/blog/holdem-positions</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-positions" />
@@ -11619,7 +11619,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/de/blog/holdem-pot-odds</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-pot-odds" />
@@ -11652,7 +11652,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/de/blog/holdem-rake</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-rake" />
@@ -11750,7 +11750,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/de/blog/holdem-starting-hands-chart</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-starting-hands-chart" />
@@ -11766,7 +11766,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/de/blog/holdem-straddle</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-straddle" />
@@ -11782,7 +11782,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/de/blog/holdem-strategy</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-strategy" />
@@ -11799,7 +11799,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/de/blog/holdem-tiebreak-rules</loc>
-    <lastmod>2026-09-11</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-tiebreak-rules" />
@@ -11854,7 +11854,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/de/blog/holdem-when-to-fold</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-when-to-fold" />
@@ -12077,7 +12077,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/tr/blog/holdem-hand-rankings</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/holdem-hand-rankings" />
@@ -12099,7 +12099,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/tr/blog/holdem-showdown-rules</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-showdown-rules" />
@@ -12757,7 +12757,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/it/blog/texas-holdem-rules-for-beginners</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/texas-holdem-rules-for-beginners" />
@@ -13126,7 +13126,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/th/blog/holdem-showdown-rules</loc>
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.holdemmaster.com/en/blog/holdem-showdown-rules" />
@@ -13360,7 +13360,7 @@
 
   <url>
     <loc>https://www.holdemmaster.com/fa/blog/texas-holdem-rules-for-beginners</loc>
-    <lastmod>2026-09-19</lastmod>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://www.holdemmaster.com/blog/texas-holdem-rules-for-beginners" />

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Una mano de Texas Hold'em sigue este orden: se ponen las ciegas → se reparten dos cartas propias → preflop → flop (3 cartas) → turn (1 carta) → river (1 carta) → showdown, con cuatro rondas de apuestas en total. En el preflop habla primero el jugador a la izquierda de la ciega grande; a partir del flop, el primero a la izquierda del botón. Al final gana la mejor mano de cinco cartas entre tus dos cartas propias y las cinco comunitarias.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-09-22",
-  masterUpdated: "2026-09-22",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎬",
@@ -136,7 +136,7 @@ Reglas del showdown:
 - Cada jugador forma su **mejor mano de cinco cartas** con sus dos cartas propias y las cinco comunitarias.
 - No estás obligado a usar tus dos cartas — puedes usar una, o incluso jugar la mesa (cero) si esas son tus mejores cinco.
 - El jugador que hizo la última acción agresiva (apuesta o subida) enseña primero; si en el river todos pasaron, enseña primero el **primer jugador activo a la izquierda del botón**.
-- Un jugador que pierde puede simplemente **tirar sus cartas sin enseñarlas** (hacer "muck") — salvo en un all-in de torneo: cuando un jugador está all-in y la acción ha terminado, todas las manos se ponen boca arriba (regla 16 de la TDA · regla 70 del reglamento de torneos de la WSOP).
+- Un jugador que pierde puede simplemente **tirar sus cartas sin enseñarlas** (hacer "muck") — salvo en un all-in de torneo: cuando un jugador está all-in y la acción ha terminado, todas las manos se ponen boca arriba (regla 16 de la TDA 2024 · regla 70 del reglamento de torneos de la WSOP).
 - Las manos iguales **dividen el bote** ("split") a partes iguales.
 
 Quién tiene que enseñar primero, cuándo puedes tirar sin enseñar y la etiqueta en torno al slow roll están explicados al completo en las [reglas del showdown](/es/blog/holdem-showdown-rules).

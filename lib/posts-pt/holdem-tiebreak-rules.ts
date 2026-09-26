@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "O desempate segue uma ordem fixa: primeiro o tipo de mão, depois as cartas que formam a mão, depois os kickers do mais alto ao mais baixo. Mesmo par → ganha o primeiro kicker mais alto; cinco cartas idênticas → pote dividido. Os naipes nunca desempatam.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-12",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "⚖️",
@@ -151,7 +151,7 @@ A mesma lógica vale em potes de quadra-na-mesa: todos compartilham quatro carta
 
 **Não — não para decidir quem ganha. No Texas Hold'em os naipes têm exatamente uma função: cinco cartas do mesmo naipe formam um flush. Fora isso não têm hierarquia, então duas mãos que coincidem valor a valor sempre dividem o pote, e nenhuma carta supera outra por causa do naipe.**
 
-A pergunta volta sempre porque a ordem de naipes existe mesmo no poker — só que não neste jogo. O stud e o razz a usam para decidir quem paga o bring-in e quem fica com a ficha indivisível. O Hold'em não a usa para nenhuma das duas coisas.
+A pergunta volta sempre porque a ordem de naipes existe mesmo no poker — só que, neste jogo, nunca para ranquear mãos. O stud e o razz a usam para decidir quem paga o bring-in e quem fica com a ficha indivisível. O Hold'em não a usa para nenhuma das duas coisas.
 
 A prova mais limpa é justamente a ficha que *não* dá para dividir. O regulamento de torneios da WSOP 2026 diz ==g:*"In button games with 2 or more high or low hands, the odd chip goes to the first seat left of the button"*== (regra 73): a ficha que sobra vai para o primeiro assento à esquerda do botão. Mesmo quando um pote fisicamente não se divide por igual, a regra recorre ao **assento**, não ao naipe — e o método por naipes da segunda metade dessa mesma regra foi escrito só para stud e razz.
 
@@ -228,7 +228,7 @@ A. Ganha o straight flush mais alto, decidido pela carta de topo — um straight
 
 **Q. Os naipes desempatam alguma vez no Texas Hold'em?**
 
-A. Não — mas existe um lugar numa mesa de Hold'em em que os naipes são usados, e não é o pote. Nos cash games, e pelas regras da casa da maioria dos clubes, cada jogador puxa uma carta para definir onde o botão do dealer começa, e se duas cartas empatam em valor é a ordem de naipes que resolve. (Os torneios da WSOP dispensam esse sorteio: a regra 85 do regulamento de torneios da WSOP coloca o botão no primeiro stack à direita do dealer e só refaz o sorteio quando restam três, duas e uma mesa — sem naipe nenhum.) De um jeito ou de outro, isso escolhe um assento, nunca uma mão. A única ordem de naipes do regulamento de torneios pertence ao stud e ao razz. Se duas melhores mãos de cinco cartas coincidem valor a valor, o pote é dividido, não importam os naipes.
+A. Não — mas existe um lugar numa mesa de Hold'em em que os naipes são usados, e não é o pote. Nos cash games, e pelas regras da casa da maioria dos clubes, cada jogador puxa uma carta para definir onde o botão do dealer começa, e se duas cartas empatam em valor é a ordem de naipes que resolve. (Os torneios da WSOP dispensam esse sorteio inicial: a regra 85 do regulamento de torneios da WSOP coloca o botão no primeiro stack à direita do dealer e só faz um sorteio do botão quando restam três, duas e uma mesa.) De um jeito ou de outro, isso escolhe um assento, nunca uma mão. Fora o sorteio do botão — que o glossário do regulamento da WSOP resolve por "valor e naipe" —, a única ordem de naipes do regulamento de torneios pertence ao stud e ao razz. Se duas melhores mãos de cinco cartas coincidem valor a valor, o pote é dividido, não importam os naipes.
 
 **Q. O que acontece se os dois jogadores têm exatamente a mesma mão?**
 

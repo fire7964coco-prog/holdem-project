@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "SB open और BB call के बाद 7♦6♦5♣ पर पहला action 9.6% bet और 90.4% check है। पिछले K♥T♦6♠ स्पॉट जैसा ही pot, stack, SPR, उपलब्ध size और दोनों preflop ranges हैं। केवल बोर्ड बदला, और high cards की बढ़त मिट गई। Equity 49.6% बनाम 50.4% पर उलटती है तथा SB का EQR 85.3% रह जाता है।",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-15",
-  masterUpdated: "2026-09-02",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   readTime: "10 मिनट",
   emoji: "🪜",
   image: "/images/gto-sb-connected-oop-hi.webp",
@@ -181,7 +181,7 @@ Sets इसका अपवाद हैं। दोनों के पास 
 
 9.6% में पतली value और कुछ draws मिलते हैं। 88 class के औसत में ऊपर है क्योंकि **एक हैंड दोनों काम करता है**। ⚠ लेकिन एक नियम इस पूरे चयन को नहीं समझाता। **उद्धृत तीन अलग कॉम्बो दोनों काम एक साथ नहीं करते**: Q♠4♠ 54.7% पर शुद्ध draw, A♣7♣ 54.4% पर पतली value और blocker, T♣9♣ 52.2% पर gutshot। इन्हें अकेले शीर्ष तीन कॉम्बो न समझें; Q♥4♥ भी 54.7% पर बराबर है। दोनों काम करने वाले 88 का सबसे अधिक bet करने वाला कॉम्बो 8♦8♣ **47.1% पर इनसे नीचे** है। **9.6% का चयन एक ही मानदंड से नहीं हुआ।**
 
-**90.4% check का अर्थ SB का हार मानना भी नहीं है।** पतली value से lead करने के बाद raise झेलना महँगा पड़ सकता है। ⚠ लेकिन अलग नतीजे का कारण 6 bb pot, 97 bb stack या SPR 16.2 को न बताएँ। ये तीनों [⑪ K-T-6](/hi/blog/blind-battle-cbet "thumb:/images/gto-sb-king-mid-oop-hi.webp") और आगे [A-A-6](/hi/blog/ace-paired-board-strategy "thumb:/images/gto-sb-paired-ace-oop-hi.webp") पर **समान** हैं, जहाँ वही SB 67.4% और 80.1% bet करता है। 9.6% तक लाने वाला बदलाव **बोर्ड के तीन कार्ड** हैं।
+**90.4% check का अर्थ SB का हार मानना भी नहीं है।** A♣7♣ और K♣7♣ जैसी पतली value के लिए bet और check का अंतर 0.03 bb के भीतर है, इसलिए check करके लगभग कुछ नहीं छूटता। ⚠ लेकिन अलग नतीजे का कारण 6 bb pot, 97 bb stack या SPR 16.2 को न बताएँ। ये तीनों [⑪ K-T-6](/hi/blog/blind-battle-cbet "thumb:/images/gto-sb-king-mid-oop-hi.webp") और आगे [A-A-6](/hi/blog/ace-paired-board-strategy "thumb:/images/gto-sb-paired-ace-oop-hi.webp") पर **समान** हैं, जहाँ वही SB 67.4% और 80.1% bet करता है। 9.6% तक लाने वाला बदलाव **बोर्ड के तीन कार्ड** हैं।
 
 :::note[⚠ इस अभ्यास स्पॉट में केवल एक-तिहाई pot का bet size था। बड़ा size खोलने पर 9.6% भी बदल सकता है। इसे “इन शर्तों पर छोटे bet में भी बहुत कम range जाती है” समझें।]:::
 
@@ -189,7 +189,7 @@ Sets इसका अपवाद हैं। दोनों के पास 
 
 - **“Blind battle है, तो bet” को नियम न बनाएँ।** पिछले 67.4% और यहाँ 9.6% को बोर्ड ने अलग किया, सीट ने नहीं। SB से open किया हो, फिर भी 5, 6, 7, 8 जैसे low connected बोर्ड caller की range को पहल दे सकते हैं।
 - **Overpair को बड़ा pot बनाने की पर्याप्त वजह न मानें।** SB के 42 overpair कॉम्बो BB से साढ़े तीन गुने हैं, पर प्रतिद्वंद्वी के 42 कॉम्बो उसे पहले ही हराते हैं। यह अपने-आप दो-तीन barrels या stack-off वाला हैंड नहीं बनता। यह एक छोटे bet का सामना करने के बारे में दावा नहीं है; मुद्दा **पूरे stack का फ़ैसला अपने-आप न करना** है। ⚠ Raise आते ही fold भी मत करें। प्रतिद्वंद्वी में 24.9% open-enders, 23.8% gutshots और 3.7% combo draws हैं; raising range में bluffs भी हो सकते हैं। Draw-heavy range के raise पर हर overpair fold करना खुद exploitable है। **Stack-off न करना और fold करना अलग हैं।** Bet के बाद raise वाला node यहाँ नहीं है; उसकी आवृत्ति नहीं मिली। सीरीज़ में यह बात बार-बार आती है कि [connected बोर्ड preflop aggressor की बढ़त कम कर सकता है](/hi/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-hi.webp")।
-- **Ace-high को अपने-आप ताक़त न समझें।** SB की एक-चौथाई range ace-high है। उसके **तत्काल draw-विहीन** हैंड pair बनाकर सुधर सकते हैं, जबकि प्रतिद्वंद्वी के straight draws सीधे straight बना सकते हैं। सुधार की संभावना ही नहीं, **सुधार का मूल्य** भी अलग है। यह सीमा सभी ace-high पर न लगाएँ: A4 और A8 यहाँ open-ended हैं। कुल equity 49.6% इस पूरी बनावट का नतीजा है।
+- **Ace-high को अपने-आप ताक़त न समझें।** SB की एक-चौथाई range ace-high है। उसके **तत्काल draw-विहीन** हैंड pair बनाकर सुधर सकते हैं, जबकि प्रतिद्वंद्वी के straight draws सीधे straight बना सकते हैं। सुधार की संभावना ही नहीं, **सुधार का मूल्य** भी अलग है। यह सीमा सभी ace-high पर न लगाएँ: A4 और A8 यहाँ open-ended हैं, और A♦x♦ हैंडों के पास flush draw है। कुल equity 49.6% इस पूरी बनावट का नतीजा है।
 - **Check के बाद की योजना पहले बनाएँ।** 90.4% check करने के बाद BB के bet पर कौन call और कौन [check-raise](/hi/blog/low-board-check-raise "thumb:/images/gto-srp-low-rainbow-oop-hi.webp") करेगा, अगला प्रश्न है। ⚠ **उसका उत्तर इस गणना में नहीं है।** अभ्यास स्पॉट केवल **flop का पहला action** दिखाता है; BB की bet और SB की check-raise आवृत्ति नहीं। सीरीज़ में low-rainbow उदाहरण के लिए अलग से check-raise solve हुआ था, **पर भूमिकाएँ अलग हैं**: वहाँ BB caller, BTN के विरुद्ध खेलता है।
 
 :::readnext[आगे पढ़ें]
@@ -209,7 +209,7 @@ A. Range में कुछ खास कार्ड अधिक होते
 
 **Q. SB से open किया और low connected flop आया, तो क्या करें?**
 
-A. इस 7♦6♦5♣ उदाहरण में अधिकतर check: 90.4%। Bet का 9.6% हिस्सा भी **88 (overpair और open-ender)**, A7s/K7s के top pair और K4s/Q4s के open-enders में पतला फैला है। 88 का class औसत 39.5%, सबसे ऊँचा है; इसका मतलब उसका हर अलग कॉम्बो सबसे अधिक bet करता है, यह नहीं। Check हार मानना नहीं है; उसके बाद call और check-raise की योजना बनती है। उस response की आवृत्ति यहाँ गणना नहीं हुई।
+A. इस 7♦6♦5♣ उदाहरण में अधिकतर check: 90.4%। Bet का 9.6% हिस्सा भी **88 (overpair और open-ender)**, A7s/K7s के top pair और K4s/Q4s के open-enders में पतला फैला है। 88 का class औसत 39.5%, सबसे ऊँचा है; इसका मतलब उसका हर अलग कॉम्बो सबसे अधिक bet करता है, यह नहीं। Check हार मानना नहीं है: पतली value हैंडों के लिए check का मूल्य लगभग bet जितना ही है (0.03 bb के भीतर)। Check के बाद क्या होता है, call और check-raise सहित, वह इस solve में नहीं है।
 
 **Q. SB के overpairs इतने अधिक हैं, फिर bet केवल 9.6% क्यों?**
 

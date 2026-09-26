@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Dari 169 tipe starting hand, hanya irisan atas kecil — sekitar 15–20% kartu yang Anda terima — yang profit untuk pemula. Pair besar (AA–TT) dan AK raise dari kursi mana pun; makin belakang Anda beraksi, makin lebar Anda open — dari ~13% di under the gun hingga ~43% di button (lebih lebar lagi di 6-max). Mulai dengan chart sederhana, tambahkan chart preflop GTO setelah raise-or-fold jadi otomatis.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-09-24",
-  masterUpdated: "2026-09-24",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 mnt",
   emoji: "🂡",
@@ -79,7 +79,7 @@ Diurutkan ke dalam tier, starting hand yang bagus di poker terlihat seperti ini:
 |------|----------|----------------|
 | Premium | AA, KK, QQ, JJ, AKs, AKo | Raise dari posisi mana pun, re-raise agresif |
 | Strong | TT–88, AQ, AJs, ATs, KQs | Raise dari kebanyakan posisi, perlambat vs. 3-bet berat |
-| Speculative | Pair kecil (77–22), suited connector (JTs, T9s, 98s), suited ace (A2s–A9s) | Posisi belakang saja — butuh flop murah dan posisi |
+| Speculative | Pair kecil (77–22), suited connector (JTs, T9s, 98s), suited ace (A2s–A9s) | Sebagian besar di posisi belakang — butuh flop murah dan posisi (range UTG penuh tetap menyimpan 77) |
 | ==r:Trash== | Ace offsuit lemah (A4o), king-rag (K3o), sampah offsuit rendah | ==r:Fold preflop — ini menguras chip setiap sesi== |
 
 :::tip[Tier hanya separuh jawaban. Sebuah tangan speculative "bagus" di button dan buruk di under the gun — itulah kenapa chart sebenarnya diatur berdasarkan posisi, bukan berdasarkan tangan.]:::
@@ -136,13 +136,13 @@ Button adalah kursi terbaik di poker. ==g:Anda beraksi terakhir di flop, turn, d
 - **Suited connector (T9s, 98s, 87s)** — murah, tangan implied-odds tinggi
 - **Broadway offsuit lebih lemah (KTo, QJo)** — hanya di posisi belakang, jangan pernah di awal
 
-Aturan kunci: ==tangan speculative ini butuh posisi agar profit==. Jika pemain UTG raise di depan Anda, kebanyakan langsung masuk muck — keunggulan mereka lenyap tanpa posisi.
+Aturan kunci: ==tangan speculative ini butuh posisi agar profit==. Jika pemain UTG raise di depan Anda, kebanyakan langsung masuk muck — Anda akan membayar sebuah raise untuk memainkan tangan spekulatif melawan range yang kuat, dan flop murah yang mereka butuhkan sudah hilang.
 
 ---
 
 ## Starting Hands 6-Max: Bagaimana Chart Berubah
 
-Kebanyakan cash game online adalah 6-max, dan chart bergeser ke satu arah: ==lebih lebar==. Hapus tiga kursi paling ketat dari meja 9-max dan setiap posisi tersisa secara efektif "naik". Pemain pertama yang beraksi di 6-max sedang open melawan lima lawan, bukan delapan — jadi ==g:UTG di 6-max bermain kira-kira seperti MP di 9-max== (~15–17% alih-alih ~13%).
+Kebanyakan cash game online adalah 6-max, dan chart bergeser ke satu arah: ==lebih lebar==. Hapus tiga kursi paling ketat dari meja 9-max dan kursi pertama yang baru secara efektif "naik" — kursi-kursi belakang tetap punya jumlah pemain yang sama di belakangnya, tapi meja secara keseluruhan bermain lebih lebar. Pemain pertama yang beraksi di 6-max sedang open melawan lima lawan, bukan delapan — jadi ==g:UTG di 6-max bermain kira-kira seperti MP di 9-max== (~15–17% alih-alih ~13%).
 
 :::compare
 9-Max (Full Ring) | 6-Max
@@ -203,7 +203,7 @@ Starting hand terburuk di poker bukan sampah acak seperti 7-2 — tak ada yang b
 
 ==r:Kesalahan paling mahal yang dibuat pemula adalah call raise dengan ace lemah== seperti A♣ 4♦ dari intro. Saat akhirnya Anda hit pair ace, Anda sering cuma jadi yang terbaik kedua melawan A♠ K♦ atau A♥ Q♦ — dan Anda kehilangan pot besar sambil yakin Anda punya top pair. Anda memang punya. Begitu pula mereka, dengan kicker lebih baik.
 
-(Dan tangan terburuk sebenarnya di poker? 7-2 offsuit — lebih lanjut soal itu, dan "aturan 7-2" yang terkenal, di FAQ di bawah.)
+(Dan tangan yang biasa disebut terburuk di poker? 7-2 offsuit, meski berdasarkan equity mentah melawan tangan acak, 3-2 offsuit sedikit lebih lemah, sekitar 32% vs 35%. Lebih lanjut soal 7-2, dan "aturan 7-2" yang terkenal, di FAQ di bawah.)
 
 ---
 
@@ -266,7 +266,7 @@ A. Ada 169 tipe starting hand berbeda (13 pair, 78 suited, 78 offsuit) dari 1.32
 
 **Q. Apa aturan 7-2 di poker?**
 
-A. Aturan 7-2 adalah game sampingan rumahan, bukan aturan poker resmi: jika seorang pemain memenangkan pot dengan 7-2 offsuit — tangan terburuk — setiap pemain lain membayar bounty kecil kepadanya. Ia ada murni untuk membumbui home game dan pub game dengan menghadiahi bluff yang keterlaluan.
+A. Aturan 7-2 adalah game sampingan rumahan, bukan aturan poker resmi: jika seorang pemain memenangkan pot dengan 7-2 offsuit — tangan yang disebut terburuk oleh kebanyakan pemain — setiap pemain lain membayar bounty kecil kepadanya. Ia ada murni untuk membumbui home game dan pub game dengan menghadiahi bluff yang keterlaluan.
 
 **Q. Apa starting hand terburuk di poker?**
 

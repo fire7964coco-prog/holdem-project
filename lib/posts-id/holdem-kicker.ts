@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Kicker adalah kartu samping tertinggi yang bukan bagian dari tangan utama Anda — ia memecah seri saat dua pemain punya nilai tangan yang sama. High card pakai 4 kicker, one pair 3, two pair 1, trips 2; straight, flush, full house, dan straight flush tidak punya. Inilah kenapa AK menang atas AQ saat meja memasangkan sebuah ace.",
   category: "hand-rankings",
   date: "2026-07-08",
-  updated: "2026-09-24",
-  masterUpdated: "2026-09-17",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 mnt",
   emoji: "🃏",
@@ -116,7 +116,7 @@ Mejanya ==b:10♠ J♦ Q♣ K♥ A♠== — sebuah straight ten-sampai-ace jadi 
 - Anda pegang ==b:2♣ 3♦==. Lima terbaik Anda adalah straight di board; si 2 dan 3 tak menambah apa pun.
 - Lawan pegang ==b:4♥ 5♦==. Sama saja — straight di board juga lima terbaik mereka.
 
-Tak satu pun dari kalian bisa lebih tinggi dari ace, jadi kalian berdua "playing the board" dan ==g:membagi pot== — tapi hanya jika kalian membuka kartu tertutup; kalau di-muck, Anda tak dapat apa-apa, bahkan di sini (TDA Rule 19). Straight tak punya kicker, jadi kartu tertutup itu cuma beban mati. Saat Anda dengar "the board plays", inilah maksudnya — dan ini satu-satunya tempat kartu tertutup yang tampak kuat bernilai persis nol. (Selengkapnya soal mengenali runout seperti ini di [membaca board](/id/blog/holdem-reading-the-board).)
+Tak satu pun dari kalian bisa lebih tinggi dari ace, jadi kalian berdua "playing the board" dan ==g:membagi pot== — tapi hanya jika kalian membuka kartu tertutup; kalau di-muck, Anda tak dapat apa-apa, bahkan di sini (TDA 2024 Rule 19). Straight tak punya kicker, jadi kartu tertutup itu cuma beban mati. Saat Anda dengar "the board plays", inilah maksudnya — dan ini satu-satunya tempat kartu tertutup yang tampak kuat bernilai persis nol. (Selengkapnya soal mengenali runout seperti ini di [membaca board](/id/blog/holdem-reading-the-board).)
 
 ---
 

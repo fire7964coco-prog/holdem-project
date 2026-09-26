@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Susunan kad poker dari tertinggi hingga terendah ialah Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, Pair dan High Card. Semakin sukar sesuatu tangan dibentuk daripada lima kad, semakin tinggi kedudukannya.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-09-24",
-  masterUpdated: "2026-09-17",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "14 minit",
   emoji: "🃏",
@@ -136,10 +136,11 @@ Antara dua straight, kad teratas yang lebih tinggi menang.
 
 **J♣ J♠ J♥ A♦ 4♠** — tiga kad satu nilai.
 
-Ada dua cara membentuknya, dan perbezaannya penting:
+Ada tiga cara membentuknya, dan perbezaannya penting:
 
 - **Set:** pocket pair ditambah satu kad board yang sepadan (cth. anda pegang J♣ J♠, board ada J♥). Tersembunyi dan berbahaya.
 - **Trips:** sepasang di board ditambah satu kad di tangan anda. Lebih mudah dibaca lawan dan lebih mudah dikongsi.
+- **Trips di board:** ketiga-tiga kad berada di board (cth. J♣ J♠ J♥ di tengah meja). Semua pemain berkongsinya, jadi melainkan seseorang meningkat kepada full house atau quads, hanya kicker yang membezakan anda.
 
 Set memenangi lebih banyak cip kerana tiada siapa menyangkanya.
 
@@ -211,7 +212,7 @@ Tahu susunannya tidak sama dengan membacanya dengan pantas. Berikut tiga situasi
 
 Anda pegang **Q♥ Q♦**. Apakah tangan terbaik anda?
 
-→ Board sudah menunjukkan two pair (A-A dan K-K). Dua Q anda bersama Q♠ di board membentuk **trip Q**, dan digabungkan dengan sepasang As di board anda mendapat **full house — QQQ + AA**. Itulah lima kad terbaik anda. Di home game pertama yang saya kendalikan sebagai pengedar, saya melihat dua pemain berbeza muck tangan yang sama ini kerana berfikir "AAKK + Q cuma two pair" — bukan begitu. Sebaik sahaja anda ada trips, anda ambil full house-nya. **Full house menang ke atas two pair.**
+→ Board sudah menunjukkan two pair (A-A dan K-K). Dua Q anda bersama Q♠ di board membentuk **trip Q**, dan digabungkan dengan sepasang As di board anda mendapat **full house — QQQ + AA**. Itulah lima kad terbaik anda. Di home game pertama yang saya kendalikan sebagai pengedar, saya melihat dua pemain berbeza muck tangan yang sama ini kerana berfikir "AAKK + Q cuma two pair" — bukan begitu. Sebaik sahaja anda ada trips dan board menambah sepasang sendiri, anda ambil full house-nya. **Full house menang ke atas two pair.**
 
 ### Teka-teki 2 — Flush yang sebenarnya lebih kuat
 
@@ -253,7 +254,7 @@ Jawapan pendek untuk pertikaian yang meletus di setiap meja: flush menang ke ata
 
 ## Mengapa Flush Menang ke atas Straight?
 
-Flush menang ke atas straight kerana ia lebih sukar dibentuk: dalam dek 52 kad, terdapat lebih sedikit cara mendapat lima kad satu jenis (3.03% daripada tangan tujuh kad menjelang river) berbanding lima berturutan dalam mana-mana jenis (4.62%). Susunan ini bukan sewenang-wenangnya — ia ==kebarangkalian semata-mata==. ==g:**Semakin sukar sesuatu tangan dibentuk, semakin tinggi kedudukannya.**== Satu prinsip itu menjelaskan keseluruhan hierarki — angka tepat setiap tangan ada dalam jadual kebarangkalian di atas.
+Flush menang ke atas straight kerana ia lebih sukar dibentuk: dalam dek 52 kad, terdapat lebih sedikit cara mendapat lima kad satu jenis (3.03% daripada tangan tujuh kad menjelang river) berbanding lima berturutan dalam mana-mana jenis (4.62%). Susunan ini bukan sewenang-wenangnya — ia ==kebarangkalian semata-mata==. ==g:**Semakin sukar sesuatu tangan dibentuk daripada lima kad, semakin tinggi kedudukannya.**== Satu prinsip itu menjelaskan keseluruhan hierarki — angka tepat setiap tangan ada dalam jadual kebarangkalian di atas.
 
 Ia juga menjelaskan satu pengecualian besar yang akan anda temui: dalam **Short Deck (6+) Hold'em**, di mana kad 2 hingga 5 dikeluarkan, flush menjadi lebih sukar daripada full house — jadi dalam format itu ==r:**flush menang ke atas full house**==. Matematiknya berubah, maka susunannya berubah. Lebih lanjut tentang perbezaan setiap permainan di bawah.
 
@@ -377,7 +378,7 @@ A. Ya. Three of a kind ialah #7 dan two pair #8, jadi trips menang. Two pair han
 
 **Q. Adakah straight flush menang ke atas four of a kind?**
 
-A. Ya. Straight flush (#2) menang ke atas four of a kind (#3) — lima kad berturutan satu jenis mengatasi quads. Satu-satunya yang di atas straight flush ialah royal flush, yang sekadar versi ber-As tinggi bagi tangan yang sama.
+A. Ya. Straight flush (#2) menang ke atas four of a kind (#3) — lima kad berturutan satu jenis mengatasi quads. Yang berada di atas straight flush hanyalah straight flush yang lebih tinggi dan royal flush, yang sekadar versi ber-As tinggi bagi tangan yang sama.
 
 **Q. Apakah tangan terendah (paling teruk) dalam poker?**
 

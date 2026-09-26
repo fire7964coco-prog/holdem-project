@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ein „Fish“ ist Poker-Slang für einen schwachen, verlierenden Spieler, an dem die stärkeren Spieler ('Sharks') ihr Geld verdienen. Fische spielen zu viele Hände, callen zu viel und können nicht folden – und der berühmte Spruch warnt: Wenn du den Fish an deinem Tisch nicht erkennst, bist du es. Es ist der wichtigste Read im ganzen Spiel: Finde den Fish, oder werde selbst einer.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-21",
-  masterUpdated: "2026-09-21",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "🐟",
@@ -59,7 +59,7 @@ Es gibt einen Begleitspruch, den du ständig hören wirst: **„Don't tap the gl
 ## Woran erkennst du einen Fish? 8 verräterische Zeichen
 
 > **Kurze Antwort**
-> Du brauchst dafür keine ganze Session – ein Fish verrät sich meist innerhalb von ein, zwei Orbits. Der verlässlichste einzelne Hinweis ist ==loose Callen plus Passivität==: Er spielt viel zu viele Hände, geht immer wieder mit und übernimmt fast nie selbst die Führung. Die folgenden acht Zeichen zusammen machen daraus einen sicheren Read.
+> Du brauchst dafür keine ganze Session – ein Fish verrät sich meist innerhalb von ein, zwei Orbits. Der verlässlichste einzelne Hinweis ist ==loose Callen plus Passivität==: Er spielt viel zu viele Hände, geht immer wieder mit und übernimmt fast nie selbst die Führung. Die folgenden acht Zeichen zusammen machen daraus einen belastbaren Arbeits-Read.
 
 :::stripe
 Spielt zu viele Hände | Sieht Flops mit zwei beliebigen Karten – ein VPIP von 40–70% gegenüber 15–22% bei einem soliden Spieler
@@ -72,7 +72,7 @@ Zeigt schwach am Showdown | Deckt Hände auf, die es nie so weit hätten schaffe
 Spielt emotional | Tiltet nach einem Bad Beat, jagt Verlusten hinterher, spielt ängstlich, wenn er im Minus ist
 :::
 
-Kein einzelnes Zeichen ist ein Beweis – selbst gute Spieler limpen gelegentlich oder jagen einen großen Draw. Aber wenn du drei oder vier davon beim selben Spieler siehst, hast du den Fish gefunden. Und er ist der leichteste Gegner am Tisch, weil du ihn ohne Angst vor einem Bluff-Raise gnadenlos auf Value betten kannst. Zu wissen, welche Starthände überhaupt spielenswert sind, ist das Erste, was ihn von dir trennt – die [Starthände-Tabelle](/de/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") ist der Ort, an dem diese Lücke beginnt.
+Kein einzelnes Zeichen ist ein Beweis – selbst gute Spieler limpen gelegentlich oder jagen einen großen Draw. Aber wenn du drei oder vier davon beim selben Spieler siehst, hast du wahrscheinlich den Fish gefunden – behandle das als Arbeits-Read und aktualisiere ihn laufend. Und er ist der leichteste Gegner am Tisch, weil du ihn ohne Angst vor einem Bluff-Raise gnadenlos auf Value betten kannst. Zu wissen, welche Starthände überhaupt spielenswert sind, ist das Erste, was ihn von dir trennt – die [Starthände-Tabelle](/de/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") ist der Ort, an dem diese Lücke beginnt.
 
 ---
 
@@ -97,8 +97,8 @@ Kein einzelnes Zeichen ist ein Beweis – selbst gute Spieler limpen gelegentlic
 | **Calling Station** | Passiver Over-Caller | Callt alles, raist/foldet nie | Endlos auf Value betten, nie bluffen |
 | **Reg** | Ein „Regular“ an einer Stake | Wechselnd – nicht immer ein Gewinner | Lies sie individuell |
 | **Grinder** | Pro/Semi-Pro mit hohem Volumen | Solide, konstant, geringe Varianz | Meiden; find den Freizeitspieler |
-| **TAG** | Ein *Gewinnstil* (tight-aggressiv) | Enge Range, die er hart bettet und raist | Kein Fish: seine großen Rivers nicht bezahlen – aber seine engen Ranges angreifen (Blinds stehlen, öfter in Position spielen) |
-| **LAG** | Ein *Gewinnstil* (loose-aggressiv) | Weite Range, ständiger Druck, blufft viel | Nicht zu viel folden – Call- und 3-Bet-Range weiten, Bluffs abfangen |
+| **TAG** | Ein Stil, den viele gewinnende Spieler nutzen (tight-aggressiv) | Enge Range, die er hart bettet und raist | Meist kein Fish: seine großen Rivers nicht bezahlen – aber seine engen Ranges angreifen (Blinds stehlen, öfter in Position spielen) |
+| **LAG** | Ein Stil, den viele starke Spieler nutzen (loose-aggressiv) | Weite Range, ständiger Druck, blufft viel | Nicht zu viel folden – Call- und 3-Bet-Range weiten, Bluffs abfangen |
 
 </div>
 
@@ -106,7 +106,7 @@ Drei Unterscheidungen, die Konkurrenten ständig verwischen und die es sich lohn
 
 - **Fish ≠ Whale.** Ein Whale ist eine *Untergruppe* des Fish – einer, der **große** Summen verliert, meist wohlhabend und mit hohen Stakes loose spielend. Alle Whales sind Fische; nicht alle Fische sind Whales. Ein Whale im Spiel ist der Grund, warum die Sharks auftauchen.
 - **Fish ≠ Donkey.** Fast Synonyme, aber „Donkey“ betont *schlechte Entscheidungen* und ist härter; „Fish“ betont *Unerfahrenheit und Verlieren.* Jemanden einen Donk zu nennen, ist eher eine Beleidigung.
-- **Ein Nit ist kein Fish.** Nits sind *tight* – oft break-even oder leicht gewinnend. Sie sind ausbeutbar, weil ihre Range transparent ist, aber sie verpulvern keine Chips wie ein Fish. Und **LAG/TAG sind Gewinnstile**, keine Etiketten für schwache Spieler – nur ihre kaputten Versionen (der rücksichtslose „Maniac“, der eingefrorene „TAG-Fish“) sind Leaks.
+- **Ein Nit ist meist kein Fish.** Nits sind *tight* – oft break-even oder leicht gewinnend. Sie sind ausbeutbar, weil ihre Range transparent ist, aber sie verpulvern keine Chips wie ein Fish (auch wenn ein Nit, der zu viel wegfoldet, trotzdem ein Verlierer sein kann). Und **LAG/TAG sind Stile, die viele Gewinner spielen**, keine Etiketten für schwache Spieler – nur ihre kaputten Versionen (der rücksichtslose „Maniac“, der eingefrorene „TAG-Fish“) sind Leaks.
 
 ---
 
@@ -150,7 +150,7 @@ Jetzt kommt der unangenehme Teil. Wenn du bis hierher gelesen und still gehofft 
 |:---|:---:|:---:|:---|
 | **Solider Spieler** | 15–22% | 12–18% (nie höher als sein VPIP) | Tight, aggressiv, enge Lücke |
 | **Fish** | 40–70% | unter 10% | Loose und passiv – spielt alles, führt nichts an |
-| **Nit** | unter 12% | unter 8% | Zu tight – vorhersehbar, kein Fish |
+| **Nit** | unter 12% | unter 8% | Zu tight – vorhersehbar, meist kein Fish |
 
 </div>
 
@@ -212,7 +212,7 @@ A. Sie sind fast Synonyme, aber der Ton unterscheidet sich. „Fish“ betont Un
 
 **Q. Wie viele Hände brauchst du, um einen Fish zu erkennen?**
 
-A. In der Praxis reichen ein bis zwei Orbits, also ungefähr zehn bis zwanzig Hände. So lange dauert es, bis du gesehen hast, wie oft jemand freiwillig in den Pot geht und ob er dabei jemals selbst raist. Für einen belastbaren Read auf Basis von Tracker-Stats brauchst du deutlich mehr – VPIP und PFR werden erst nach einigen hundert Händen halbwegs stabil. Fürs Tischverhalten am Abend genügt der Kurzcheck trotzdem.
+A. In der Praxis reichen ein bis zwei Orbits, also ungefähr zehn bis zwanzig Hände. So lange dauert es, bis du gesehen hast, wie oft jemand freiwillig in den Pot geht und ob er dabei jemals selbst raist. Für einen belastbaren Read auf Basis von Tracker-Stats brauchst du deutlich mehr – VPIP und PFR werden erst nach einigen hundert Händen halbwegs stabil. Fürs Tischverhalten am Abend genügt der Kurzcheck trotzdem als starker Arbeits-Read – bestätige ihn, während die Stichprobe wächst.
 
 **Q. Welcher Fish-Leak kostet das meiste Geld?**
 

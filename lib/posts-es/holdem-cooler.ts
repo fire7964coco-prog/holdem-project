@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "glossary",
   date: "2026-07-05",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-24",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🧊",
@@ -48,7 +48,7 @@ La palabra pinta la escena: te "enfriaron" — tu mano caliente se quedó fría 
 
 ![Infografía de A♠ A♦ contra K♥ K♦ en un board K♠ 7♦ 2♣ 8♥ 3♠ — la misma colisión vista desde ambos lados](/images/holdem-cooler-vs-badbeat.webp "Una colisión, dos etiquetas: preflop, reyes contra ases es el cooler de manual para los reyes — y cuando cae el rey, la misma jugada es un bad beat para los ases")
 
-Esta es la distinción que hace o rompe tu comprensión del término — y casi todo jugador casual la difumina. Ambos sientan fatal, y no existe una definición oficial única — pero en el sentido estricto que usa esta guía, son opuestos:
+Esta es la distinción que hace o rompe tu comprensión del término — y casi todo jugador casual usa las dos palabras como sinónimos. Ambos sientan fatal, y no existe una definición oficial única — pero en el sentido estricto que usa esta guía, son opuestos:
 
 - **Un cooler** — ibas **por detrás** cuando entró el dinero y **seguiste por detrás.** Ninguna carta afortunada salvó a nadie; el ganador iba delante todo el tiempo. Perdiste porque tu manaza se topó con otra mayor.
 - **Un bad beat** — ibas **por delante** (a menudo gran favorito) cuando entró el dinero, y tu rival hizo un **suckout** — cazó una carta afortunada en el turn o el river para adelantarte.
@@ -132,9 +132,9 @@ Un cooler de verdad significa que jugaste correctamente con una mano fuerte y te
 
 Como un cooler no trae ninguna lección, el único daño real que puede hacer es a tus *próximas* decisiones. Protégelas:
 
-1. **Nómbralo y suéltalo.** Confirma con la prueba de fuego que fue de verdad inevitable, y luego déjalo ir — no hay nada que estudiar, así que no lo revivas.
+1. **Nómbralo y suéltalo.** Repásalo una vez con la prueba de fuego — rangos, tamaños, profundidad de stacks. Si se sostiene como de verdad inevitable, déjalo ir; revivirlo una y otra vez no te enseña nada.
 2. **Ojo con el tilt.** Lo más caro de un cooler no es el bote que perdiste; son las tres manos malas que juegas después intentando recuperarlo. Reconoce ese impulso y baja el ritmo.
-3. **Confía en tu bankroll.** Los coolers son la razón por la que mantienes un bankroll lo bastante grande para absorber la varianza. Un cooler es un error de redondeo a lo largo de decenas de miles de manos — solo duele si dejas que cambie tu forma de jugar.
+3. **Confía en tu bankroll.** Los coolers son la razón por la que mantienes un bankroll lo bastante grande para absorber la varianza. En cash, un cooler es un error de redondeo a lo largo de decenas de miles de manos — el daño duradero viene de dejar que cambie tu forma de jugar. En un torneo puede acabar con tu recorrido en el acto; esa es la varianza que aceptas al inscribirte, no un motivo para jugar distinto.
 4. **Respira, o date un paseo.** Si un cooler grande te dejó tocado, alejarte cinco minutos sale más barato que quedarte y regalar fichas. La mano se acabó; tu ventaja está en cada mano que aún queda por jugar.
 
 ---

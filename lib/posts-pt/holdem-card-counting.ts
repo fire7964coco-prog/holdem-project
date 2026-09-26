@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Não do jeito que você faz no blackjack — o baralho é reembaralhado toda mão e poucas cartas ficam expostas, então rastrear cartas altas e baixas não te dá vantagem nenhuma. Mas o poker tem a sua própria contagem legal: contar outs, usar blockers e rastrear cartas mortas para ler o que o seu adversário não pode ter.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-24",
-  masterUpdated: "2026-09-24",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🧮",
@@ -49,11 +49,11 @@ Se você está imaginando um running count de altas e baixas como nos filmes, es
 
 :::card
 🔀 | O baralho reinicia toda mão | A contagem de blackjack precisa de um shoe jogado ao longo de dezenas de mãos para a informação se acumular. O poker reembaralha a cada mão, então nada é carregado adiante — cada mão começa de um baralho cheio e aleatório
-🙈 | Poucas cartas ficam expostas | As hole cards de cada jogador ficam viradas para baixo. Você só chega a ver o board compartilhado — um punhado de cartas — nunca o suficiente para rastrear a composição do baralho
+🙈 | Poucas cartas ficam expostas | As hole cards de cada jogador ficam viradas para baixo. Você vê as suas duas cartas, o board compartilhado e o que for mostrado no showdown — um punhado de cartas — nunca o suficiente para rastrear a composição do baralho
 👥 | Você joga contra adversários, não contra a casa | Não há um dealer fixo do qual ganhar vantagem. Um "baralho rico em cartas altas" não significa nada quando um par de ases é premium de qualquer jeito — você ganha tendo uma mão melhor ou tomando uma decisão melhor, não por uma contagem favorável
 :::
 
-No blackjack, um baralho carregado de cartas altas te favorece matematicamente, então você aposta grande quando a contagem está boa. No poker não existe um "baralho favorável" equivalente — a vantagem vem inteiramente de jogar contra os *jogadores*.
+No blackjack, um baralho carregado de cartas altas te favorece matematicamente, então você aposta grande quando a contagem está boa. No poker não existe um "baralho favorável" equivalente — a vantagem vem de jogar contra os *jogadores* e com as cartas que você consegue ver agora: outs, blockers, o board.
 
 ---
 
@@ -67,7 +67,7 @@ Você vs a casa, regras fixas | Você vs outros jogadores
 Um shoe ao longo de muitas mãos | Reembaralhado toda mão
 Rastrear o equilíbrio de altas/baixas do baralho | Nada para rastrear entre as mãos
 Apostar grande quando o baralho te favorece | Não existe "baralho favorável"
-A contagem pode te fazer ser barrado | A contagem é esperada e legal
+A contagem pode te fazer ser barrado | Contar outs de cabeça é jogo normal
 :::
 
 O blackjack recompensa a memória do que já saiu; o poker recompensa ler o que você enxerga *agora* — o board, a ação e as cartas que a sua própria mão remove do range do adversário.
@@ -82,7 +82,7 @@ O blackjack recompensa a memória do que já saiu; o poker recompensa ler o que 
 
 Um ==out== é qualquer carta não vista que melhora a sua mão para uma provável vencedora. Um flush draw tem ==9 outs== (13 de um naipe menos as 4 que você enxerga) — as cartas do naipe que estão no board já estão descontadas nesse 9, então não as risque uma segunda vez como "cartas mortas". Converta outs numa chance aproximada de ganhar com a ==regra do 2 e 4==: multiplique por 4 com duas cartas por vir, por 2 com uma.
 
-Um flush draw de 9 outs fecha até o river cerca de ==g:35%== das vezes (9 × 4 = 36% como estimativa rápida — o valor real é 35,0%). Esse número conta as duas cartas restantes, então ele só decide o call quando você realmente vê as duas: você está all-in no flop sem mais nada para apostar. Se há uma aposta no flop que você terá de pagar de novo no turn, conte só a próxima carta: ==9 ÷ 47 = 19,1%==. O método completo — outs sujos, combo draws, porcentagens exatas — está no [guia de como contar outs](/pt/blog/holdem-outs), e as odds por trás de todo projeto estão na [tabela de probabilidade](/pt/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
+Um flush draw de 9 outs fecha até o river cerca de ==g:35%== das vezes (9 × 4 = 36% como estimativa rápida — o valor real é 35,0%). Esse número conta as duas cartas restantes, então ele só decide o call quando você realmente vê as duas — sem mais apostas por vir, como quando você está all-in ou pagou um all-in. Se há uma aposta no flop que você terá de pagar de novo no turn, conte só a próxima carta: ==9 ÷ 47 = 19,1%==. O método completo — outs sujos, combo draws, porcentagens exatas — está no [guia de como contar outs](/pt/blog/holdem-outs), e as odds por trás de todo projeto estão na [tabela de probabilidade](/pt/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
 ### Blockers (card removal)
 
@@ -90,7 +90,7 @@ Um ==blocker== é uma carta na sua mão que reduz as combinações que o seu adv
 
 ![Infográfico de A♠ J♦ num flop todo de espadas K♠ 9♠ 4♠ — segurar o ás de espadas bloqueia o nut flush](/images/holdem-card-counting-blocker.webp "Segurar o A♠ num board de três espadas significa que nenhum adversário pode ter o nut flush — é o card removal em ação")
 
-Blockers também funcionam parcialmente. Num board ==b:Q-J-9==, o nut straight é K-10. Normalmente há 16 maneiras de ter K-10 (4 reis × 4 dez); se você mesmo tem um rei ou um dez, isso cai para ==12 combinações==, então o nut straight fica 25% menos provável no range dele. Esse é o núcleo da seleção de blefes moderna — mais no [guia de 3-bet e blockers](/pt/blog/holdem-3bet).
+Blockers também funcionam parcialmente. Num board ==b:Q-J-9==, o nut straight é K-10. Normalmente há 16 maneiras de ter K-10 (4 reis × 4 dez); se você mesmo tem um rei ou um dez, isso cai para ==12 combinações==, então o range dele tem 25% menos combinações de nut straight. Esse é o núcleo da seleção de blefes moderna — mais no [guia de 3-bet e blockers](/pt/blog/holdem-3bet).
 
 ### Card removal e cartas mortas
 
@@ -116,7 +116,7 @@ Em torneios que usam as [regras da Poker TDA de 2026](https://www.pokertda.com/p
 
 **No Seven Card Stud, uma boa parte das cartas de cada jogador é distribuída virada para cima — então você genuinamente consegue contar o baralho à moda antiga.** Se você precisa de uma carta específica para completar a sua mão, dá para olhar em volta da mesa e literalmente contar quantos dos seus outs já estão aparecendo nas up-cards dos adversários. Cada um que você identifica é um out morto.
 
-No Hold'em, as únicas cartas distribuídas viradas para cima são as cinco cartas comunitárias compartilhadas — qualquer outra coisa que você enxergue é acidente (uma carta virada por engano, uma mão mostrada no fold), então há pouco a rastrear. Mas o Stud — e os seus parentes, o Razz e o Stud Hi-Lo, que distribuem as mesmas cartas viradas para cima — recompensa exatamente o tipo de rastreamento de cartas em que os contadores de blackjack são bons. É o mais perto que o poker chega da versão do filme.
+No Hold'em, as únicas cartas distribuídas viradas para cima são as cinco cartas comunitárias compartilhadas — todo o resto fica virado para baixo, a menos que seja mostrado no showdown, aberto num all-in ou exposto por acidente (uma carta virada por engano, uma mão mostrada no fold), então há pouco a rastrear. Mas o Stud — e os seus parentes, o Razz e o Stud Hi-Lo, que distribuem as mesmas cartas viradas para cima — recompensa exatamente o tipo de rastreamento de cartas em que os contadores de blackjack são bons. É o mais perto que o poker chega da versão do filme.
 
 ---
 
@@ -125,7 +125,7 @@ No Hold'em, as únicas cartas distribuídas viradas para cima são as cinco cart
 **Você não precisa de um sistema — só três hábitos que transformam cartas visíveis em decisões melhores.**
 
 :::steps
-Conte os seus outs em todo projeto | No momento em que você tem um projeto, conte as cartas que o completam e multiplique — ×4 só quando as duas cartas vêm de graça (você está all-in no flop), caso contrário ×2 só pela próxima carta. Pague quando essa chance vencer o preço
+Conte os seus outs em todo projeto | No momento em que você tem um projeto, conte as cartas que o completam e multiplique — ×4 só quando as duas cartas vêm de graça (você está all-in no flop), caso contrário ×2 só pela próxima carta. Pague quando essa chance — só outs limpos — vencer o preço, ou quando as implied odds cobrirem a diferença
 Pergunte o que a sua mão bloqueia | Antes de blefar, veja se você tem uma carta que torna a mão de call mais forte dele impossível ou menos provável
 Ajuste para as cartas mortas | Subtraia qualquer out que você viu exposto fora do board — uma carta que apareceu por engano, uma mão mostrada, um fold que você enxergou. Cartas que você enxerga são cartas que o seu adversário não pode ter — mas só enxergadas por acaso: tentar deliberadamente ver as cartas de outro jogador não faz parte deste método — só exposição acidental
 :::
@@ -155,7 +155,7 @@ A. A contagem de baralho estilo blackjack não — o baralho reinicia a cada mã
 
 **Q. Por que a contagem de cartas funciona no blackjack mas não no poker?**
 
-A. O blackjack é você contra um dealer de regras fixas usando um shoe ao longo de muitas mãos, então um baralho rico em cartas altas te favorece matematicamente e você aposta de acordo. O poker reembaralha toda mão e te coloca contra outros jogadores, então não há "baralho favorável" para rastrear — a vantagem vem de ler os adversários.
+A. O blackjack é você contra um dealer de regras fixas usando um shoe ao longo de muitas mãos, então um baralho rico em cartas altas te favorece matematicamente e você aposta de acordo. O poker reembaralha toda mão e te coloca contra outros jogadores, então não há "baralho favorável" para rastrear — a vantagem vem de ler os adversários e as cartas que você consegue ver: outs, blockers, o board.
 
 **Q. Qual é o equivalente da contagem de cartas no poker?**
 

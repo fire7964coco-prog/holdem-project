@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Posisi Poker: Nama Setiap Kursi & Bagan",
   seoTitle: "Kursi Anda Berganti Nama Tiap Tangan — Bagan Posisi Poker",
   desc: "Namanya bergerak mengikuti button, bukan kursinya. Setiap nama posisi poker — UTG, hijack, cutoff, button — plus nomor kursi, peta 6-max, dan siapa aksi dulu.",
-  tldr: "Posisi poker adalah nama kursi yang diukur dari tombol dealer — UTG, lojack, hijack, cutoff, button, dan blind — dan semuanya bergerak satu kursi searah jarum jam setiap hand. Preflop, UTG aksi lebih dulu dan big blind terakhir; postflop, small blind aksi lebih dulu dan button terakhir. Nomor kursi fisik tak pernah berpindah; posisi berpindah.",
+  tldr: "Posisi poker adalah nama kursi yang diukur dari tombol dealer — UTG, lojack, hijack, cutoff, button, dan blind — dan semuanya normalnya bergerak satu kursi searah jarum jam setiap hand. Preflop, UTG aksi lebih dulu dan big blind terakhir; postflop, small blind aksi lebih dulu dan button terakhir. Nomor kursi fisik tak pernah berpindah; posisi berpindah.",
   category: "strategy",
   date: "2026-06-13",
-  updated: "2026-09-24",
-  masterUpdated: "2026-09-13",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "🎯",
@@ -34,13 +34,13 @@ Tangan yang sama. Hasil yang sepenuhnya berbeda. Satu-satunya yang berubah hanya
 ---
 
 > **Jawaban singkat**
-> Posisi poker adalah ==kursi bernama yang diukur dari tombol dealer== — UTG, lojack, hijack, cutoff, button, small blind, big blind — dan semuanya ==bergerak satu kursi searah jarum jam setiap hand== seiring button berpindah. Preflop, UTG aksi lebih dulu dan big blind aksi terakhir. Postflop, small blind aksi lebih dulu dan button aksi terakhir.
+> Posisi poker adalah ==kursi bernama yang diukur dari tombol dealer== — UTG, lojack, hijack, cutoff, button, small blind, big blind — dan semuanya ==normalnya bergerak satu kursi searah jarum jam setiap hand== seiring button berpindah. Preflop, UTG aksi lebih dulu dan big blind aksi terakhir. Postflop, small blind aksi lebih dulu dan button aksi terakhir.
 
 ---
 
 ## Apa Saja Posisi di Meja Poker? (Peta Kursi Lengkap)
 
-Posisi bukanlah kursi — ia adalah **nama untuk tempat Anda duduk relatif terhadap tombol dealer**, dan ia menentukan ==kapan Anda aksi di setiap street==. Karena button berpindah satu kursi searah jarum jam setelah setiap hand, setiap pemain di meja menyandang nama yang berbeda di setiap hand.
+Posisi bukanlah kursi — ia adalah **nama untuk tempat Anda duduk relatif terhadap tombol dealer**, dan ia menentukan ==kapan Anda aksi di setiap street==. Dalam permainan normal button berpindah satu kursi searah jarum jam setelah setiap hand, sehingga setiap pemain di meja menyandang nama yang berbeda dari satu hand ke hand berikutnya.
 
 Berikut bagan posisi 9-max lengkap — setiap nama kursi, singkatannya, zonanya, dan persis kapan ia aksi sebelum dan sesudah flop:
 
@@ -91,13 +91,13 @@ Ini membingungkan hampir setiap pemain live pemula: ketika petugas memanggil **"
 
 Di sebagian besar card room, kursi fisik dinomori dari sisi kiri langsung dealer — ==Kursi 1 secara konvensi adalah kursi pertama di kiri dealer==, dihitung searah jarum jam sampai Kursi 9 atau 10 di kanan dealer. Angka-angka itu terpaku pada kursinya. Staf memakainya untuk logistik: menempatkan pemain baru, mengantar chip, memanggil waktu.
 
-Posisi justru sebaliknya — ia ==berputar satu kursi searah jarum jam setiap hand== mengikuti button. Kursi 5 mungkin menjadi button di hand ini, cutoff di hand berikutnya, dan hijack di hand setelahnya.
+Posisi justru sebaliknya — ia ==berputar satu kursi searah jarum jam mengikuti button, normalnya setiap hand==. Kursi 5 mungkin menjadi button di hand ini, cutoff di hand berikutnya, dan hijack di hand setelahnya.
 
 :::compare
 Nomor kursi (fisik) | Posisi (poker)
 Tetap pada kursi — Kursi 1 biasanya di kiri langsung dealer | Berpindah mengikuti tombol dealer setiap hand
 Dipakai staf: "Kursi 5, chip datang" | Dipakai strategi: "cutoff open"
-Tak pernah berubah selama satu sesi | Berubah setiap hand, satu kursi searah jarum jam
+Tak pernah berubah selama satu sesi | Normalnya berubah setiap hand, satu kursi searah jarum jam
 Memberi tahu DI MANA Anda duduk | Memberi tahu KAPAN Anda aksi
 :::
 
@@ -157,7 +157,7 @@ Pertanyaan paling sering ditanyakan tentang posisi, dijawab dalam satu tabel:
 
 | Street | Pertama aksi | Terakhir aksi |
 |:---|:---|:---|
-| **Preflop** | **UTG** — kursi pertama di kiri big blind | **Big blind** — boleh check atau raise |
+| **Preflop** | **UTG** — kursi pertama di kiri big blind | **Big blind** — boleh check atau raise jika belum ada yang raise |
 | **Flop / Turn / River** | **Small blind** — atau kursi aktif pertama di kiri button | **Button** — atau kursi aktif terdekat sebelumnya |
 
 Jadi — **apakah blind aksi lebih dulu?** ==Preflop, tidak. Postflop, ya.== Sebelum flop, blind sudah memasukkan uang, jadi aksi dimulai dari UTG dan berputar kembali ke mereka terakhir — big blind aksi terakhir dari semua orang. Setelah flop, urutan direset searah jarum jam dari button: small blind bicara lebih dulu, big blind kedua, dan button selalu terakhir.
@@ -184,7 +184,7 @@ Nama posisi tak berubah menurut ukuran meja — ==nama-nama itu dipangkas mulai 
 
 **Heads-up adalah yang mematahkan intuisi semua orang.** Dengan hanya dua pemain, ==button memasang small blind== — kursi yang sama menjadi BTN dan SB sekaligus. Itu berarti button aksi ==**pertama** preflop== (big blind aksi terakhir, seperti biasa) tapi tetap aksi ==**terakhir** di setiap street postflop==, sementara big blind aksi pertama postflop. Setiap ukuran meja lain mengikuti pola normal; hanya heads-up yang menyatukan kursi terbaik dengan sebuah blind.
 
-**6-max vs full ring** murni pengurangan: tiga kursi awal (UTG, UTG+1, dan UTG+2) hilang dan lojack mewarisi nama UTG, jadi 6-max berjalan UTG → HJ → CO → BTN → SB → BB. Konsekuensi praktisnya bukan bahwa sebuah kursi bermain "lebih akhir" — cutoff punya tiga pemain di belakangnya di kedua meja. Melainkan ==karena kursi-kursi awal hilang, Anda jauh lebih sering duduk di blind dan di posisi akhir, dan lebih sedikit pemain yang open di depan Anda== — UTG 6-max menghadapi lima lawan, bukan delapan — itulah kenapa range melebar menyeluruh dalam permainan short-handed. Angka kursi demi kursi ada di [panduan strategi posisi](/id/blog/holdem-position-play), dan tangan persis yang mengisi setiap range dipetakan di [bagan starting hands](/id/blog/holdem-starting-hands-chart).
+**6-max vs full ring** murni pengurangan: tiga kursi awal (UTG, UTG+1, dan UTG+2) hilang dan lojack mewarisi nama UTG, jadi 6-max berjalan UTG → HJ → CO → BTN → SB → BB. Konsekuensi praktisnya bukan bahwa sebuah kursi bermain "lebih akhir" — cutoff punya tiga pemain di belakangnya di kedua meja. Melainkan ==karena kursi-kursi awal hilang, Anda jauh lebih sering duduk di blind dan di posisi akhir, dan lebih sedikit pemain yang open di depan Anda== — UTG 6-max menghadapi lima lawan, bukan delapan — itulah kenapa kursi pertama open lebih lebar dan Anda memainkan lebih banyak hand secara keseluruhan dalam permainan short-handed, meski range cutoff nyaris tak berubah. Angka kursi demi kursi ada di [panduan strategi posisi](/id/blog/holdem-position-play), dan tangan persis yang mengisi setiap range dipetakan di [bagan starting hands](/id/blog/holdem-starting-hands-chart).
 
 > **Catatan penamaan:** sebagian situs dan card room melabeli kursi 6-max pertama sebagai "LJ" atau "MP" alih-alih UTG, dan kursi tengah 10 pemain kadang muncul sebagai "MP1/MP2". Label bervariasi; urutan aksi tak pernah bervariasi.
 
@@ -211,7 +211,7 @@ A. Lojack (LJ) adalah kursi tiga langkah di kanan button — yang lebih awal dar
 
 **Q. Siapa yang aksi lebih dulu, small blind atau big blind?**
 
-A. Small blind aksi sebelum big blind di setiap street. Preflop, kedua blind aksi terakhir (big blind paling akhir, dengan opsi check atau raise); postflop, small blind adalah kursi pertama yang aksi di meja. Satu pengecualian adalah heads-up, di mana button memasang small blind dan big blind aksi pertama postflop.
+A. Small blind aksi sebelum big blind di setiap street. Preflop, kedua blind aksi terakhir (big blind paling akhir — dengan opsi check atau raise jika belum ada yang raise); postflop, small blind adalah kursi pertama yang aksi di meja. Satu pengecualian adalah heads-up, di mana button memasang small blind dan big blind aksi pertama postflop.
 
 **Q. Ada berapa posisi di poker 6-max?**
 
@@ -219,7 +219,7 @@ A. Enam: UTG (juga disebut lojack), hijack, cutoff, button, small blind, dan big
 
 **Q. Apakah posisi poker berubah setiap hand?**
 
-A. Ya. Tombol dealer berpindah satu kursi searah jarum jam setelah setiap hand, dan karena semua posisi dinamai berdasarkan jaraknya dari button, posisi setiap pemain bergeser satu kursi setiap hand. Sepanjang satu orbit penuh Anda akan memegang setiap posisi di meja tepat sekali.
+A. Ya. Tombol dealer berpindah satu kursi searah jarum jam setelah setiap hand, dan karena semua posisi dinamai berdasarkan jaraknya dari button, posisi setiap pemain normalnya bergeser satu kursi setiap hand. Sepanjang satu orbit penuh di meja yang stabil Anda akan memegang setiap posisi tepat sekali — pengecualiannya muncul saat seorang pemain bust atau pergi dan meja memainkan dead button (pemain yang sama lalu bisa aksi terakhir dua hand berturut-turut), atau saat ada pemain baru bergabung, meja dibubarkan, atau permainan menjadi heads-up.
 
 **Q. Apa itu Kursi 1 di poker?**
 
@@ -229,7 +229,7 @@ A. Kursi 1 adalah kursi fisik, bukan posisi — di sebagian besar card room ia a
 
 ## Poin Penting
 
-1. **Posisi adalah nama, bukan kursi.** Setiap kursi dinamai berdasarkan jaraknya dari tombol dealer, dan setiap nama berpindah satu kursi searah jarum jam setiap hand.
+1. **Posisi adalah nama, bukan kursi.** Setiap kursi dinamai berdasarkan jaraknya dari tombol dealer, dan setiap nama normalnya berpindah satu kursi searah jarum jam setiap hand.
 2. **Bagan dalam satu baris:** UTG → UTG+1 → UTG+2 → LJ → HJ → CO → BTN → SB → BB. Preflop dimulai dari UTG dan berakhir di big blind; postflop dimulai dari small blind dan berakhir di button.
 3. **Nomor kursi ≠ posisi.** Kursi 1 secara konvensi adalah kiri langsung dealer dan tak pernah berpindah; posisi berputar setiap hand. Yang satu adalah alamat, yang lain adalah pekerjaan.
 4. **Ukuran meja mengurangi dari depan.** 6-max membuang kursi-kursi awal; heads-up menyatukan button dengan small blind — pertama aksi preflop, terakhir aksi postflop.

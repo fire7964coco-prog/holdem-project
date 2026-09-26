@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "hand-rankings",
   date: "2026-06-13",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-24",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "⚡",
@@ -66,13 +66,13 @@ Cuenta las 2,598,960 manos posibles de cinco cartas de una baraja de 52 y el ord
 | **Escalera** | **10,200** | **0.392%** | **Pierde contra el color ❌** |
 | Trío | 54,912 | 2.11% | Pierde contra la escalera |
 
-Una escalera tiene aproximadamente ==r:**el doble** de formas de armarse que un color== — 10,200 frente a 5,108 entre las 2,598,960 manos de cinco cartas. Sobre las siete cartas hasta el river la distancia se reduce a ==1.5 veces== (4.62% frente a 3.03%), pero la dirección no cambia: la escalera aparece más a menudo, y eso es justo lo que la convierte en la mano más débil. La misma regla de frecuencia explica toda la jerarquía; los números exactos de cada mano están en la [tabla de probabilidades y odds del póker](/es/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
+Una escalera tiene aproximadamente ==r:**el doble** de formas de armarse que un color== — 10,200 frente a 5,108 entre las 2,598,960 manos de cinco cartas. Sobre las siete cartas hasta el river la distancia se reduce a ==1.5 veces== (4.62% frente a 3.03%), pero la dirección no cambia: la escalera aparece más a menudo, y eso es justo lo que la convierte en la mano más débil. La misma regla de frecuencia sobre cinco cartas explica toda la jerarquía (sobre siete cartas, una carta alta sola es de hecho más rara que la doble pareja, pero el orden se fijó con cinco); los números exactos de cada mano están en la [tabla de probabilidades y odds del póker](/es/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
 ### Por qué esto parece al revés
 
 Una escalera solo necesita cinco valores seguidos, y ==**los palos no importan**==. Esa libertad crea una cantidad enorme de combinaciones. El color es lo contrario: cada una de las cinco cartas tiene que compartir ==**el mismo palo**==, y solo uno de los cuatro palos puede lograrlo a la vez. ==g:Muchas menos formas de llegar significa que el color es más raro — y lo más raro siempre gana.==
 
-:::tip[Si tienes un proyecto de color y tu rival va a la escalera, estás en una posición estupenda — incluso cuando **ambos** proyectos se completan, tu color gana a su escalera en el showdown.]:::
+:::tip[Si tienes un proyecto de color y tu rival va a la escalera, ganas el choque — cuando **ambos** proyectos se completan, tu color gana a su escalera en el showdown. Eso no es lo mismo que ser favorito: si su proyecto de escalera viene con una pareja o con cartas más altas, puede seguir por delante antes del river.]:::
 
 ---
 
@@ -121,7 +121,7 @@ El duelo que más se discute después de color vs escalera es **color vs full** 
 
 :::hand[K♠,9♠,9♥,4♠,2♦] Mesa (5 cartas):::
 
-Tienes **A♠ 5♠** para el color máximo: **A♠ K♠ 9♠ 5♠ 4♠**. Tu rival tiene **K♦ 9♦** y enseña **9♦ 9♠ 9♥ K♦ K♠** — nueves full de reyes. ==r:El full gana al color==, y ningún color sobrevive a eso. En una mesa sin parejas tu color con As solo lo bate una escalera de color; en cuanto la mesa se empareja, los fulls y los pókers entran en escena.
+Tienes **A♠ 5♠** para el color máximo: **A♠ K♠ 9♠ 5♠ 4♠**. Tu rival tiene **K♦ 9♦** y enseña **9♦ 9♠ 9♥ K♦ K♠** — nueves full de reyes. ==r:El full gana al color==, y ningún color sobrevive a eso. En una mesa sin parejas el color máximo solo lo bate una escalera de color; en cuanto la mesa se empareja, los fulls y los pókers entran en escena.
 
 Cuando dos jugadores tienen el *mismo* tipo de mano, el ganador se decide carta por carta — el sistema completo está en las [reglas de desempate y kicker del póker](/es/blog/holdem-tiebreak-rules).
 
@@ -154,9 +154,9 @@ La reina supera a la jota, así que gana A. Si las mejores cinco cartas de ambos
 
 ## ¿Qué es una escalera de color? Cuando ambas se dan a la vez
 
-![9♥ 8♥ 7♥ 6♥ 5♥ — una escalera de color en corazones, la mano #2 del póker](/images/holdem-flush-vs-straight-sf.webp "Escalera de color — cinco corazones en secuencia, solo la bate una escalera real")
+![9♥ 8♥ 7♥ 6♥ 5♥ — una escalera de color en corazones, la mano #2 del póker](/images/holdem-flush-vs-straight-sf.webp "Escalera de color — cinco corazones en secuencia; solo la baten una escalera de color más alta o una escalera real")
 
-Una **escalera de color** son cinco cartas *consecutivas* de *un mismo palo* — como 9♥ 8♥ 7♥ 6♥ 5♥. Es la **mano #2 del póker**, solo la bate una escalera real (que no es más que la escalera de color con As, A-K-Q-J-10 del mismo palo). Con apenas **36 combinaciones** (~0.00139% de las manos de cinco cartas; alrededor del 0.028% para el river en Hold'em), es más rara que todo salvo la propia escalera real.
+Una **escalera de color** son cinco cartas *consecutivas* de *un mismo palo* — como 9♥ 8♥ 7♥ 6♥ 5♥. Es la **mano #2 del póker**: solo la baten una escalera de color más alta o una escalera real (que no es más que la escalera de color con As, A-K-Q-J-10 del mismo palo). Con apenas **36 combinaciones** (~0.00139% de las manos de cinco cartas; alrededor del 0.028% para el river en Hold'em), es más rara que todo salvo la propia escalera real.
 
 El detalle: ==las *mismas cinco cartas* tienen que ser del mismo palo y estar en secuencia a la vez==. Fíjate en la diferencia sobre la mesa **8♥ 7♥ 6♥ Q♠ 3♦**:
 
@@ -182,7 +182,7 @@ En el **Short Deck (6+) Hold'em** se quitan de la baraja los doses hasta los cin
 
 **Q. ¿El color gana a la escalera en el póker?**
 
-A. Sí. El color es la mano #5 y la escalera la #6, así que el color siempre gana en el Texas Hold'em estándar. Cinco cartas del mismo palo son estadísticamente más difíciles de ligar que cinco en secuencia, y la mano más rara siempre está más arriba.
+A. Sí. El color es la mano #5 y la escalera la #6, así que el color siempre gana en el Texas Hold'em estándar. Cinco cartas del mismo palo son estadísticamente más difíciles de ligar que cinco en secuencia, y entre las manos de cinco cartas la más rara siempre está más arriba.
 
 **Q. ¿La escalera gana al color?**
 
@@ -190,7 +190,7 @@ A. No. Una escalera (#6) nunca gana a un color (#5) en el Texas Hold'em estánda
 
 **Q. ¿Por qué el color gana a la escalera?**
 
-A. Matemática pura. Una escalera ignora los palos, así que hay unas 10,200 formas de hacerla, frente a solo 5,108 de hacer un color. Eso hace que el color sea casi el doble de raro entre las manos de cinco cartas; sobre las siete cartas hasta el river queda un factor de aproximadamente 1.5 (3.03% frente a 4.62%). En el póker la mano más rara siempre está más arriba.
+A. Matemática pura. Una escalera ignora los palos, así que hay unas 10,200 formas de hacerla, frente a solo 5,108 de hacer un color. Eso hace que el color sea casi el doble de raro entre las manos de cinco cartas; sobre las siete cartas hasta el river queda un factor de aproximadamente 1.5 (3.03% frente a 4.62%). Contando manos de cinco cartas, que es como se fijó el orden, la mano más rara siempre está más arriba.
 
 **Q. ¿Qué le gana al color en el póker?**
 
@@ -202,7 +202,7 @@ A. Un color, un full, un póker, una escalera de color y una escalera real le ga
 
 **Q. ¿Puedes tener un color más alto que otro jugador?**
 
-A. Sí. Dos colores se comparan carta por carta de arriba abajo, así que un color con As ("máximo") gana a un color con rey. Si las cartas superiores coinciden, decide la segunda más alta, y así con las cinco.
+A. Sí. Dos colores se comparan carta por carta de arriba abajo, así que un color con As gana a un color con rey. Si las cartas superiores coinciden, decide la segunda más alta, y así con las cinco.
 
 **Q. ¿Importa el palo de un color?**
 

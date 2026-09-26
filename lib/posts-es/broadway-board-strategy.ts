@@ -24,8 +24,8 @@ export const POST: Post = {
   tldr: "En Q♠J♦10♠, tras una apertura del botón y un pago de la ciega grande, la ciega grande hace check el 99.9% — aunque el 68.4% de su rango lleve proyecto. La causa es la ventaja de nuts: escaleras 10.5% contra 7.1%, sets 2.0% contra 0.7%, sobrepares 2.6% contra 0%. La realización de equity se reparte 77.9% contra 119.4%, la mayor diferencia de los tres flops de seco a húmedo vistos hasta aquí.",
   category: "strategy",
   date: "2026-09-02",
-  updated: "2026-09-02",
-  masterUpdated: "2026-09-02",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🎴",
@@ -113,7 +113,7 @@ Las combinaciones coinciden exactamente. Solo tres manos hacen escalera aquí: =
 | En Q-J-10 | Casi pareja — 46.7% contra 53.3% | Desequilibrada — escaleras, sets y sobrepares favorecen al botón |
 | Qué decide | Si apuestas o no | **Cuánto apuestas, y quién puede subir** |
 
-La equity promedio dice que este flop es casi un cara o cruz. La parte alta del rango dice que un jugador nunca va a tener que abandonar una apuesta grande ante una subida y el otro nunca puede hacerla. Cuando las dos no coinciden, **la ventaja de nuts decide el tamaño** — y, para el jugador que no la tiene, decide que apostar primero no es una opción.
+La equity promedio dice que este flop es casi un cara o cruz. La parte alta del rango dice que un jugador tiene la mayoría de las manos que aguantan una apuesta grande, y el otro tiene pocas con las que contraatacar. Cuando las dos no coinciden, **la ventaja de nuts decide el tamaño** — y, para el jugador que no la tiene, decide que apostar primero no es una opción.
 
 ## ¿Cuánto de cada rango va con proyecto?
 
@@ -145,7 +145,7 @@ En el flop seco K-high, la misma cuenta daba **3.6%** — sets 1.9%, doble parej
 | Flop seco K-high (K-8-3) | 3.6% |
 | **Flop broadway (Q-J-10)** | **21.0%** |
 
-**El mismo "top pair", unas seis veces el riesgo.** Encima, el 68.7% del rango del rival te sigue persiguiendo con proyecto por el turn y el river. Empujar una pareja durante tres calles en Q-J-10 significa que la acción grande que te llega de vuelta casi nunca es una a la que le ganas. Este es un bote para controlar, no para construir.
+**El mismo "top pair", unas seis veces el riesgo.** Aparte, el 68.7% del rango del rival lleva algún proyecto (un eje distinto que se solapa con las manos hechas que ya van por delante, no un 68.7% extra encima), así que incluso manos a las que hoy les ganas pueden pasarte en el turn y el river. Empujar una pareja durante tres calles en Q-J-10 significa que la acción grande que te llega de vuelta casi nunca es una a la que le ganas. Este es un bote para controlar, no para construir.
 
 ## ¿Por qué el EQR es 78 contra 119 si la equity es 47 contra 53?
 
@@ -171,7 +171,7 @@ Tres spots hacen que parezca *board más movido, diferencia más ancha*. **Esa r
 
 ## ¿Cómo debe apostar el botón (BTN) un board dinámico como este?
 
-**No solo pequeño — aquí el tamaño grande entra en la mezcla.** Con la ventaja de nuts, una apuesta grande es difícil de subir: las escaleras, los sets y los sobrepares están todos de un lado, así que el otro jugador tiene poco con lo que contraatacar.
+**No solo pequeño — aquí el tamaño grande entra en la mezcla.** Con la ventaja de nuts, una apuesta grande es difícil de subir: las escaleras, los sets y los sobrepares están casi todos de un lado (la ciega grande tiene solo 7.1% de escaleras y 0.7% de sets), así que el otro jugador tiene poco con lo que contraatacar.
 
 Eso es lo contrario de la receta del board seco. Allí, pequeño y frecuente funcionaba porque el objetivo era sacar el aire. Aquí, el **68.4%** del rango del rival va con proyecto, así que **los folds salen caros de comprar** — el tamaño pequeño por sí solo no puede hacer el trabajo y el grande tiene que acompañarlo. ⚠ No lleves eso hasta "entonces la frecuencia baja": este spot de estudio resuelve solo la primera acción del flop, así que ni el reparto real de tamaños del botón ni su frecuencia de c-bet entran en este cálculo. La versión board por board está en [estrategia de c-bet](/es/blog/holdem-continuation-bet "thumb:/images/holdem-continuation-bet-hero.webp").
 
@@ -205,7 +205,7 @@ A. Tres: AK para A-K-Q-J-10, K9 para K-Q-J-10-9 y 98 para Q-J-10-9-8. Ninguna de
 
 **Q. ¿Un board húmedo no es el lugar para liderar de semifarol?**
 
-A. No — la cuenta de proyectos por sí sola no lo decide. Hay que pesar juntas la distribución de manos hechas, la ventaja de nuts y los blockers. Aquí los proyectos a dos puntas son 28.7% contra 27.7% — prácticamente idénticos — mientras que las escaleras completadas son 7.1% contra 10.5% a favor del botón. Un lead necesita la parte alta del rango de tu lado, no el promedio, y este flop es justo lo contrario. Hay un board en los spots de estudio donde la condición sí se cumple de verdad — el [conectado medio 9-8-7](/es/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-es.webp"), donde la ciega grande lidera en lugar de hacer check.
+A. No — la cuenta de proyectos por sí sola no lo decide. Hay que pesar juntas la distribución de manos hechas, la ventaja de nuts y los blockers. Aquí los proyectos a dos puntas son 28.7% contra 27.7% — prácticamente idénticos — mientras que las escaleras completadas son 7.1% contra 10.5% a favor del botón. Un lead necesita la parte alta del rango de tu lado, no el promedio, y este flop es justo lo contrario. Hay un board en los spots de estudio donde la condición sí se cumple de verdad — el [conectado medio 9-8-7](/es/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-es.webp"), donde la ciega grande lidera el 23.7% de las veces en lugar de casi nunca.
 
 **Q. ¿Cuál es la diferencia entre ventaja de rango y ventaja de nuts?**
 

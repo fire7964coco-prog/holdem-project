@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "\"Fish\" é a gíria do poker para um jogador fraco e perdedor, aquele com quem os jogadores mais fortes (\"sharks\") faturam. Fish jogam mãos demais, pagam demais e não conseguem dar fold — e a frase famosa avisa: se você não consegue identificar o fish na sua mesa, o fish é você. É a leitura mais importante do jogo: ache o fish, ou vire um.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-21",
-  masterUpdated: "2026-09-21",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🐟",
@@ -67,7 +67,7 @@ Aparece fraco no showdown | Vira mãos que nunca deveriam ter chegado tão longe
 Joga emocionalmente | Dá tilt depois de um bad beat, corre atrás do prejuízo, joga com medo quando está no negativo
 :::
 
-Nenhum sinal isolado é prova — até bons jogadores dão limp de vez em quando ou correm atrás de um projeto grande. Mas quando você vê três ou quatro deles no mesmo jogador, achou o fish. O tell isolado mais confiável é **passividade somada a call frouxo**: um jogador que paga mãos demais mas quase nunca aumenta é o fish clássico, e o adversário mais fácil de bater porque você pode fazer value bet nele sem parar, sem medo de um raise de blefe. Saber quais mãos iniciais valem a pena jogar é a primeira coisa que separa ele de você — a [tabela de mãos iniciais](/pt/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") é onde essa diferença começa.
+Nenhum sinal isolado é prova — até bons jogadores dão limp de vez em quando ou correm atrás de um projeto grande. Mas quando você vê três ou quatro deles no mesmo jogador, provavelmente achou o fish — trate isso como uma leitura de trabalho e continue atualizando. O tell isolado mais confiável é **passividade somada a call frouxo**: um jogador que paga mãos demais mas quase nunca aumenta é o fish clássico, e o adversário mais fácil de bater porque você pode fazer value bet nele sem parar, sem medo de um raise de blefe. Saber quais mãos iniciais valem a pena jogar é a primeira coisa que separa ele de você — a [tabela de mãos iniciais](/pt/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") é onde essa diferença começa.
 
 ---
 
@@ -89,8 +89,8 @@ Nenhum sinal isolado é prova — até bons jogadores dão limp de vez em quando
 | **Calling station** | Pagador passivo em excesso | Paga qualquer coisa, nunca aumenta/folda | Value bet sem parar, nunca blefe |
 | **Reg** | Um "regular" de um stake | Varia — nem sempre um vencedor | Leia cada um individualmente |
 | **Grinder** | Pro/semipro jogando alto volume | Sólido, constante, baixa variância | Evite; ache o jogador recreativo |
-| **TAG** | Um estilo *vencedor* (tight-agressivo) | Range estreito, mas aposta e aumenta forte | Não é fish — respeite as apostas dele |
-| **LAG** | Um estilo *vencedor* (loose-agressivo) | Range amplo, pressão sem parar, blefa muito | Não foldar demais — alargue seu range de call e 3-bet e pegue mais blefes |
+| **TAG** | Um estilo que muitos jogadores vencedores usam (tight-agressivo) | Range estreito, mas aposta e aumenta forte | Normalmente não é fish — respeite as apostas dele |
+| **LAG** | Um estilo que muitos jogadores fortes usam (loose-agressivo) | Range amplo, pressão sem parar, blefa muito | Não foldar demais — alargue seu range de call e 3-bet e pegue mais blefes |
 
 </div>
 
@@ -98,7 +98,7 @@ Três distinções que todo mundo vive embaralhando, que vale a pena acertar:
 
 - **Fish ≠ whale.** Um whale é um *subconjunto* de fish — um que perde quantias **grandes**, geralmente rico e jogando stakes altos de forma frouxa. Todo whale é fish; nem todo fish é whale. Um whale no jogo é o motivo pelo qual os sharks aparecem.
 - **Fish ≠ donkey.** Quase sinônimos, mas "donkey" enfatiza *decisões ruins* e é mais duro; "fish" enfatiza *inexperiência e derrota*. Chamar alguém de donk é mais um insulto.
-- **Um nit não é um fish.** Nits são *tight* — muitas vezes zerados ou levemente vencedores. São exploráveis porque o range deles é transparente, mas não estão esbanjando fichas como um fish. E **LAG/TAG são estilos vencedores**, não rótulos de jogador fraco — só as versões quebradas deles (o imprudente "maniac", o travado "TAG fish") é que são leaks.
+- **Um nit normalmente não é um fish.** Nits são *tight* — muitas vezes zerados ou levemente vencedores. São exploráveis porque o range deles é transparente, mas não estão esbanjando fichas como um fish (embora um nit que folda demais ainda possa ser um jogador perdedor). E **LAG/TAG são estilos que muitos jogadores vencedores usam**, não rótulos de jogador fraco — só as versões quebradas deles (o imprudente "maniac", o travado "TAG fish") é que são leaks.
 
 ---
 
@@ -130,7 +130,7 @@ Aqui vem a parte desconfortável. Se você leu até aqui torcendo baixinho para 
 |:---|:---:|:---:|:---|
 | **Jogador sólido** | 15–22% | 12–18% (nunca maior que o VPIP) | Tight, agressivo, diferença pequena |
 | **Fish** | 40–70% | abaixo de 10% | Frouxo e passivo — joga tudo, lidera nada |
-| **Nit** | abaixo de 12% | abaixo de 8% | Tight demais — previsível, não é fish |
+| **Nit** | abaixo de 12% | abaixo de 8% | Tight demais — previsível, normalmente não é fish |
 
 </div>
 
@@ -189,7 +189,7 @@ A. São quase sinônimos, mas o tom difere. "Fish" enfatiza inexperiência e per
 
 **Q. Como saber se alguém é um fish?**
 
-A. Fique de olho num conjunto de sinais: jogar mãos demais, dar limp em vez de aumentar, pagar demais e raramente aumentar, nunca dar fold num par, correr atrás de todo projeto e sizing de aposta errático. Nenhum tell isolado é prova, mas três ou quatro juntos — especialmente call frouxo combinado com passividade — identificam o fish de forma confiável dentro de uma ou duas voltas de mesa.
+A. Fique de olho num conjunto de sinais: jogar mãos demais, dar limp em vez de aumentar, pagar demais e raramente aumentar, nunca dar fold num par, correr atrás de todo projeto e sizing de aposta errático. Nenhum tell isolado é prova, mas três ou quatro juntos — especialmente call frouxo combinado com passividade — te dão uma leitura de trabalho forte dentro de uma ou duas voltas de mesa; confirme-a conforme a amostra cresce.
 
 **Q. Como parar de ser um fish no poker?**
 

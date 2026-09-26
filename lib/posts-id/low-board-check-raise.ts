@@ -9,8 +9,8 @@ export const POST: Post = {
   tldr: "Pada 6♠5♥2♦, BB check 96,8% dan lead 3,2%, meski equity 48,3% adalah yang tertinggi kedua dari tujuh contoh BTN vs BB. Hanya 4-3 yang membentuk straight, dan hand itu tidak ada dalam kedua range. Kedua pemain sama-sama memiliki set, sehingga BB tidak unggul di puncak range. Dalam perhitungan lanjutan yang terpisah, BB check-raise 14,9% saat menghadapi bet 1,8bb, menggunakan set, two pair, dan banyak straight draw.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-15",
-  masterUpdated: "2026-09-02",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   readTime: "11 mnt",
   emoji: "🌊",
   image: "/images/gto-srp-low-rainbow-oop-id.webp",
@@ -251,7 +251,7 @@ A. Bagian atas daftar meliputi sembilan combo set 66, 55, dan 22; kedua combo 65
 
 **Q. Apakah check-raise diperbolehkan dan dianggap tidak sopan?**
 
-A. Check-raise merupakan tindakan normal dalam aturan poker; mekanismenya dijelaskan pada panduan [aksi taruhan](/id/blog/holdem-betting-actions). Sebagian home game lama pernah membatasinya lewat aturan rumah, yang menjelaskan asal stigma tersebut. Dalam strategi standar yang dibahas di sini, check-raise adalah bagian penting dari respons BB: frekuensinya 14,9% pada node ini, bukan tindakan yang harus dihindari karena etiket.
+A. Check-raise diizinkan di hampir semua kasino dan permainan online standar; hanya home game pribadi yang mungkin masih memiliki aturan rumah sendiri. Mekanismenya dijelaskan pada panduan [aksi taruhan](/id/blog/holdem-betting-actions). Sebagian home game lama pernah melarangnya lewat aturan rumah, dan stigma itu bertahan lebih lama daripada aturannya. Kini hanya sedikit permainan yang masih begitu. Dalam strategi standar yang dibahas di sini, check-raise adalah bagian penting dari respons BB: frekuensinya 14,9% pada node ini, bukan tindakan yang harus dihindari karena etiket.
 
 **Q. Apakah frekuensi ini cocok untuk permainan saya?**
 

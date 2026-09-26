@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "glossary",
   date: "2026-07-05",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-24",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "🧊",
@@ -52,7 +52,7 @@ Das Wort malt das Bild: Du wurdest „abgekühlt“ – deine heiße Hand wurde 
 > **Kurze Antwort**
 > Eine offizielle Definition gibt es nicht – in der strengen Lesart dieses Guides entscheidet, **wer vorn lag, als das Geld reinging**. Beim Bad Beat lagst du vorn – oft als großer Favorit – und wurdest von einer Glückskarte überholt. Beim Cooler im engeren Sinn lagst du schon beim Reingehen hinten, und es kam gar keine Glückskarte: Die größere Hand war schon vorher die größere. Schnelltest: Warst du beim Reingehen klarer Favorit und musste er treffen? Dann Bad Beat. Lag er beim Reingehen schon vorn? Dann Cooler.
 
-Das ist die Unterscheidung, die dein Verständnis des Begriffs macht oder bricht – und fast jeder Freizeitspieler verwischt sie. Beide fühlen sich schrecklich an, und eine einheitliche offizielle Definition gibt es nicht – aber im engeren Sinn, den dieser Guide verwendet, sind sie Gegensätze:
+Das ist die Unterscheidung, die dein Verständnis des Begriffs macht oder bricht – und fast jeder Freizeitspieler benutzt die beiden Wörter austauschbar. Beide fühlen sich schrecklich an, und eine einheitliche offizielle Definition gibt es nicht – aber im engeren Sinn, den dieser Guide verwendet, sind sie Gegensätze:
 
 - **Ein Cooler** – du lagst **hinten**, als das Geld reinging, und **bliebst hinten.** Keine Glückskarte hat irgendjemanden gerettet; der Gewinner lag die ganze Zeit vorne. Du hast verloren, weil deine riesige Hand auf eine größere traf.
 - **Ein Bad Beat** – du lagst **vorne** (oft großer Favorit), als das Geld reinging, und dein Gegner hat **ausgesaugt** – eine Glückskarte am Turn oder River getroffen, um dich zu überholen.
@@ -151,9 +151,9 @@ Ein echter Cooler bedeutet, dass du mit einer starken Hand korrekt gespielt hast
 
 Weil ein Cooler keine Lektion enthält, ist der einzige echte Schaden, den er anrichten kann, an deinen *nächsten* Entscheidungen. Schütze die:
 
-1. **Benenne ihn und lass ihn los.** Bestätige mit dem Lackmustest, dass er wirklich unvermeidbar war, und dann lass ihn ziehen – es gibt nichts zu studieren, also spiel ihn nicht noch mal durch.
+1. **Benenne ihn und lass ihn los.** Geh ihn einmal mit dem Lackmustest durch – Ranges, Sizing, Stacktiefe. Hält er als wirklich unvermeidbar stand, lass ihn ziehen; ihn immer wieder durchzuspielen bringt dir nichts bei.
 2. **Achte auf Tilt.** Das Teuerste an einem Cooler ist nicht der Pot, den du verloren hast; es sind die drei schlechten Hände, die du danach spielst, um ihn zurückzugewinnen. Erkenne diesen Drang und werde langsamer.
-3. **Vertraue deiner Bankroll.** Cooler sind der Grund, warum du eine Bankroll hältst, die groß genug ist, um Varianz aufzufangen. Ein Cooler ist ein Rundungsfehler über Zehntausende von Händen – er tut nur weh, wenn du ihn ändern lässt, wie du spielst.
+3. **Vertraue deiner Bankroll.** Cooler sind der Grund, warum du eine Bankroll hältst, die groß genug ist, um Varianz aufzufangen. Im Cashgame ist ein Cooler ein Rundungsfehler über Zehntausende von Händen – der bleibende Schaden entsteht erst, wenn du ihn ändern lässt, wie du spielst. Im Turnier kann er deinen Run auf der Stelle beenden; das ist die Varianz, die du mit der Anmeldung akzeptierst, kein Grund, anders zu spielen.
 4. **Hol tief Luft, oder mach einen Spaziergang.** Wenn ein großer Cooler dich erschüttert hat, ist fünf Minuten wegzugehen billiger, als zu bleiben und zu spewen. Die Hand ist vorbei; dein Edge liegt in jeder Hand, die noch kommt.
 
 ---
@@ -183,7 +183,7 @@ A. Im Wörterbuch meint der ältere Begriff die einzelne unvermeidbare Verlustha
 
 **Q. Ist Pocket Kings vs. Pocket Asse ein Cooler?**
 
-A. Ja – es ist der klassischste Cooler überhaupt. Kings sind preflop grob ein 4,5:1-Underdog gegen Asse, und so gut wie kein vernünftiger Spieler foldet Pocket Kings vor dem Flop – nur ein Read, der förmlich nach Assen schreit, macht den Fold vertretbar – und preflop kommt dieser Read so gut wie nie. Also geht das Geld rein, du liegst von Anfang an hinten und verlierst eine Hand, von der du kaum hättest wegkommen können.
+A. Ja – es ist der klassischste Cooler überhaupt. Kings sind preflop grob ein 4,5:1-Underdog gegen Asse, und so gut wie kein vernünftiger Spieler foldet Pocket Kings vor dem Flop. Dafür braucht es einen Read, der förmlich nach Assen schreit, oder Turnierdruck wie eine Satelliten-Bubble, auf der ICM selbst Kings zum Fold machen kann – und solche Spots kommen selten. Also geht das Geld rein, du liegst von Anfang an hinten und verlierst eine Hand, von der du kaum hättest wegkommen können.
 
 **Q. Was bedeutet es, „gecoolert“ zu werden?**
 

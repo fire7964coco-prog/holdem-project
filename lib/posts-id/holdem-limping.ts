@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Limping di Poker: Kenapa 'Sekadar Call' Preflop Biasanya Merugikan Anda",
   seoTitle: "Kenapa 'Sekadar Call' Preflop Diam-Diam Merugikan — Limping Poker",
   desc: "Limping berarti sekadar call big blind preflop. Kenapa biasanya keliru, spot di mana ia justru wajar, dan bagaimana pemain bagus menghukum limper.",
-  tldr: "Limping adalah masuk ke pot preflop dengan sekadar call big blind alih-alih raise atau fold. Open-limping (jadi orang pertama yang masuk) hampir selalu keliru — Anda tak bisa memenangkan pot preflop, Anda melepas inisiatif, dan pemain bagus menghukum Anda. Tapi limping tak selalu salah: menyelesaikan small blind, over-limping tangan spekulatif di belakang limper lain, serta beberapa spot live dan turnamen short-stack adalah pengecualian yang sah.",
+  tldr: "Limping adalah masuk ke pot preflop dengan sekadar call big blind alih-alih raise atau fold. Open-limping (jadi orang pertama yang masuk) hampir selalu keliru — sebuah limp tak bisa memenangkan blind tanpa perlawanan, Anda melepas inisiatif, dan pemain bagus menghukum Anda. Tapi limping tak selalu salah: menyelesaikan small blind, over-limping tangan spekulatif di belakang limper lain, serta beberapa spot live dan turnamen short-stack adalah pengecualian yang sah.",
   category: "strategy",
   date: "2026-07-05",
-  updated: "2026-09-22",
-  masterUpdated: "2026-09-22",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "11 mnt",
   emoji: "🚶",
@@ -27,7 +27,7 @@ Sebuah **limp** terjadi saat Anda masuk ke pot sebelum flop dengan sekadar *call
 
 :::stripe
 Call big blind | Apa itu limp (tanpa raise)
-0% | Peluang Anda memenangkan pot preflop
+0% | Peluang sebuah limp memenangkan blind tanpa perlawanan
 Open-limp | Versi yang hampir selalu keliru
 Over-limp / SB | Spot di mana ia justru wajar
 :::
@@ -38,7 +38,7 @@ Over-limp / SB | Spot di mana ia justru wajar
 
 **Limp berarti masuk ke pot preflop dengan call sebesar big blind — tanpa raise.** Anda memasukkan jumlah minimum untuk melihat flop. Yang penting, limping hanya berlaku saat *belum ada yang raise*: jika seseorang sudah raise dan Anda menyamai jumlahnya, itu **call**, bukan limp. Kata ini secara khusus menggambarkan pengambilan jalur pasif dan termurah ke pot yang belum di-raise.
 
-Perlu dipisahkan dua istilah yang sering dicampuradukkan. Seorang **limper** adalah orang yang masuk ke pot yang belum di-raise dengan call big blind. Sebuah **calling station** adalah pemain yang terlalu banyak call *taruhan* postflop, di flop, turn, dan river. Keduanya sering menggambarkan pemain loose-passive yang sama, tapi keduanya kebiasaan yang berbeda — satu soal bagaimana Anda *masuk* pot, satu lagi soal bagaimana Anda *melanjutkan* di dalamnya. Glosarium [istilah poker](/id/blog/holdem-glossary) ini menuntaskan sisa kosakatanya jika ada yang membingungkan Anda.
+Perlu dipisahkan dua istilah yang sering dicampuradukkan. Seorang **limper** adalah orang yang masuk ke pot yang belum di-raise dengan call big blind. Sebuah **calling station** adalah pemain yang terlalu sering call dan jarang raise atau fold — kebiasaan yang paling terlihat di flop, turn, dan river. Keduanya sering menggambarkan pemain loose-passive yang sama, tapi keduanya menekankan kebiasaan yang berbeda — satu soal bagaimana Anda *masuk* pot, satu lagi terutama soal bagaimana Anda *melanjutkan* di dalamnya. Glosarium [istilah poker](/id/blog/holdem-glossary) ini menuntaskan sisa kosakatanya jika ada yang membingungkan Anda.
 
 ---
 
@@ -64,7 +64,7 @@ Perbedaan ini penting karena sebagian besar nasihat "limping itu buruk" sebenarn
 
 Saat Anda open-limp, Anda melepas jauh lebih banyak daripada yang Anda kira. Inilah persisnya:
 
-1. **Anda tak bisa memenangkan pot preflop.** Ini yang paling besar. Saat Anda *raise* first-in, semua orang bisa fold dan Anda menyapu blind tanpa perlawanan — uang gratis, dan itu terjadi cukup sering. Saat Anda limp, angka itu **nol**. Anda menjamin bahwa Anda harus membentuk tangan atau memenangkannya nanti; Anda membuang cara termurah untuk menang.
+1. **Sebuah limp tak bisa memenangkan blind tanpa perlawanan.** Ini yang paling besar. Saat Anda *raise* first-in, semua orang bisa fold dan Anda menyapu blind tanpa perlawanan — uang gratis, dan itu terjadi cukup sering. Saat Anda limp, angka itu **nol**. Anda menjamin bahwa Anda harus membentuk tangan atau memenangkannya nanti; Anda membuang cara termurah untuk menang.
 2. **Anda menyerahkan inisiatif.** Sang preflop raiser adalah "agresor" — mereka bisa melepas [continuation bet](/id/blog/holdem-continuation-bet) di flop dan mewakili tangan kuat, sering merebut pot tanpa apa-apa. Limp, dan Anda telah menyerahkan cerita itu ke orang lain. Kini Anda bereaksi alih-alih memimpin.
 3. **Anda membangun pot multiway yang membengkak — sering di luar posisi.** Limping mengundang lebih banyak caller dan membiarkan big blind masuk dengan murah. Makin banyak pemain melihat flop, makin kecil nilai tangan Anda, dan jika Anda limp dari posisi awal Anda akan *di luar posisi* terhadap hampir seluruh meja di setiap street, tanpa inisiatif. Itu kursi terburuk yang ada.
 4. **Anda membuat diri Anda mudah dibaca — dan dieksploitasi.** Limper kebiasaan muncul dengan range yang terbatas dan transparan. Pemain bagus menyerangnya tanpa henti (lebih lanjut di bawah), jadi Anda berakhir dalam spot sulit di luar posisi berulang kali. Seperti kata pepatah lama, limper kronis "menang pot kecil dan kalah pot besar."
@@ -169,17 +169,17 @@ A. Sering, ya — di pot yang belum di-raise, menyelesaikan small blind adalah s
 
 **Q. Apa perbedaan antara limper dan calling station?**
 
-A. Seorang limper masuk ke pot yang belum di-raise dengan sekadar call big blind sebelum flop — ini soal bagaimana mereka *masuk* pot. Sebuah calling station terlalu banyak call taruhan setelah flop, di turn dan river — ini soal bagaimana mereka *melanjutkan*. Pemain loose-passive yang sama sering melakukan keduanya, tapi istilahnya menggambarkan kebiasaan berbeda dan tak boleh dipakai bergantian.
+A. Seorang limper masuk ke pot yang belum di-raise dengan sekadar call big blind sebelum flop — ini soal bagaimana mereka *masuk* pot. Sebuah calling station terlalu sering call dan jarang raise atau fold, di street mana pun — label ini terutama soal bagaimana mereka *melanjutkan*, khususnya setelah flop. Pemain loose-passive yang sama sering melakukan keduanya, tapi istilahnya menekankan kebiasaan berbeda dan tak boleh dipakai bergantian.
 
 **Q. Pemain yang sering limp disebut apa?**
 
-A. Biasanya "fish" — istilah umum untuk pemain lemah yang kalah — atau "donk" (bermain buruk). ("Calling station" sering disematkan ke orang yang sama, tapi istilah itu soal terlalu banyak call *setelah* flop — bukan soal cara masuk pot.) Open-limping yang jadi kebiasaan adalah salah satu tell paling jelas dari pemain yang belum berpengalaman, dan persis itulah kenapa pemain kuat menyasar limper dengan isolation raise. Kalau Anda tak mau menyandang label itu, jadikan raise-atau-fold sebagai default.
+A. Biasanya "fish" — istilah umum untuk pemain lemah yang kalah — atau "donk" (bermain buruk). ("Calling station" sering disematkan ke orang yang sama, tapi istilah itu mencakup terlalu sering call di street mana pun — bukan khusus kebiasaan open-limping.) Open-limping yang jadi kebiasaan adalah salah satu tell paling jelas dari pemain yang belum berpengalaman, dan persis itulah kenapa pemain kuat menyasar limper dengan isolation raise. Kalau Anda tak mau menyandang label itu, jadikan raise-atau-fold sebagai default.
 
 ---
 
 ## 3 Hal yang Harus Diingat
 
-1. **Limping adalah call big blind alih-alih raise** — dan open-limping, jadi orang pertama yang masuk, hampir selalu keliru: Anda tak bisa memenangkan pot preflop, Anda melepas inisiatif, dan Anda menandai diri sebagai target mudah.
+1. **Limping adalah call big blind alih-alih raise** — dan open-limping, jadi orang pertama yang masuk, hampir selalu keliru: sebuah limp tak bisa memenangkan blind tanpa perlawanan, Anda melepas inisiatif, dan Anda menandai diri sebagai target mudah.
 2. **Tapi ia tak *selalu* salah.** Menyelesaikan small blind, over-limping tangan spekulatif di belakang limper lain, serta spot live pasif atau turnamen dengan stack pendek adalah pengecualian yang sah. "Jangan pernah limp" yang dogmatis adalah pernyataan berlebihan.
 3. **Default ke raise-atau-fold.** Simpan limping untuk spot-spot spesifik itu, dan Anda akan berhenti memberi pemain kuat kesempatan gratis untuk mengisolasi dan mengeksploitasi Anda.
 

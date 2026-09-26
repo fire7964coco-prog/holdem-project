@@ -24,8 +24,8 @@ export const POST: Post = {
   tldr: "En K♠8♦3♣, tras una apertura del botón y un pago de la ciega grande, la ciega grande hace check el 99.8% de su rango — un range check todavía más puro que el 98.2% de un flop A-high. Lo causan dos cosas: aquí la ciega grande no tiene ningún sobrepar, porque AA hace 3-bet preflop, y la realización de equity se reparte 80.7% contra 116.7%.",
   category: "strategy",
   date: "2026-09-02",
-  updated: "2026-09-02",
-  masterUpdated: "2026-09-02",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "👑",
@@ -128,7 +128,7 @@ Léela de arriba abajo. **Todas las categorías de la parte alta del rango — s
 
 Ese grupo es lo que hace interesante este flop. AQ y AJ no tienen pareja y aun así le ganan a todas las manos de la columna "sin jugada" del rival, así que tienen valor de showdown. En el botón no son c-bets automáticas: una parte de las veces hacen check back y se llevan el showdown gratis.
 
-La misma AQ en la ciega grande vale menos, porque llegar al showdown sin posición es más difícil. **Las mismas cartas, distinto valor según el asiento** — que es justo lo que mide la sección siguiente.
+El mejor A-high de la ciega grande aquí es AJ — su AQ hace 3-bet preflop — y esa AJ vale menos de lo que valdría en el botón, porque llegar al showdown sin posición es más difícil. **Cartas parecidas, distinto valor según el asiento** — que es justo lo que mide la sección siguiente.
 
 ## ¿Por qué el EQR es 81 contra 117 si la equity es 46 contra 54?
 
@@ -159,7 +159,7 @@ Lo que queda son los backdoors. El **proyecto backdoor de color** que cuenta la 
 
 ## ¿Hay que cbetear siempre un flop K-high?
 
-**Casi, a un tamaño pequeño, pero "siempre" es la palabra equivocada para un grupo de manos.** La ciega grande tiene un 35.4% de manos sin jugada, así que un tercio del rango se retira de inmediato. Y **el 72.2% del rango entero no tiene proyecto** — fíjate en el denominador: esa cifra cuenta todo el rango, top pair (12.7%), segunda pareja (10.8%) y sets incluidos, así que no es un subconjunto del bloque de sin jugada. Significa que es poco probable que el panorama cambie en las calles siguientes. Apostar alrededor de un tercio del bote con casi todo tu rango es lo estándar.
+**Casi, a un tamaño pequeño, pero "siempre" es la palabra equivocada para un grupo de manos.** La ciega grande tiene un 35.4% de manos sin jugada — el tercio del rango con más probabilidades de foldear, aunque no todo puede hacerlo: frente a una apuesta de un tercio del bote, una defensa equilibrada conserva cerca del 75% del rango (MDF), así que parte de esas manos sigue continuando. (La respuesta de la ciega grande no está en este solve.) Y **el 72.2% del rango entero no tiene proyecto** — fíjate en el denominador: esa cifra cuenta todo el rango, top pair (12.7%), segunda pareja (10.8%) y sets incluidos, así que no es un subconjunto del bloque de sin jugada. Significa que es poco probable que el panorama cambie en las calles siguientes. Apostar alrededor de un tercio del bote con casi todo tu rango es lo estándar.
 
 El consejo habitual dice que las manos A-high con valor de showdown deberían hacer check back. En este board eso es **medio cierto**. A un tamaño pequeño, AQ y AJ mezclan apuestas lo bastante a menudo — hacen foldear a manos como QJ, JT y T9, que tienen dos cartas vivas pero ninguna pareja, y un as en una calle posterior les da la mejor pareja del board. Pero también pierden poco si hacen check, así que de aquí sale buena parte del **rango de check back**. Ni "apostar siempre" ni "hacer siempre check back" es correcto; la respuesta es la frecuencia.
 

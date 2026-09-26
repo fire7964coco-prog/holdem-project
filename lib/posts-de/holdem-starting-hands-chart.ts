@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Von den 169 Starthand-Typen ist nur eine kleine Spitzengruppe – etwa 15–20% der Hände, die du bekommst – für einen Anfänger profitabel. Große Paare (AA–TT) und AK raist du aus jeder Position; je später du agierst, desto weiter öffnest du – von ~13% unter der Gun bis ~43% am Button (im 6-Max nochmals weiter). Starte mit einem vereinfachten Chart, füge GTO-Preflop-Charts hinzu, sobald Raise-or-Fold automatisch sitzt.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-09-24",
-  masterUpdated: "2026-09-24",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "🂡",
@@ -82,7 +82,7 @@ Nach Stufen sortiert sehen gute Starthände im Poker so aus:
 |------|----------|----------------|
 | Premium | AA, KK, QQ, JJ, AKs, AKo | Aus jeder Position raisen, aggressiv re-raisen |
 | Strong | TT–88, AQ, AJs, ATs, KQs | Aus den meisten Positionen raisen, bei schweren 3-Bets abbremsen |
-| Spekulativ | Kleine Paare (77–22), Suited Connectors (JTs, T9s, 98s), Suited Aces (A2s–A9s) | Nur späte Position – sie brauchen billige Flops und Position |
+| Spekulativ | Kleine Paare (77–22), Suited Connectors (JTs, T9s, 98s), Suited Aces (A2s–A9s) | Überwiegend späte Position – sie brauchen billige Flops und Position (eine volle UTG-Range behält 77) |
 | ==r:Trash== | Schwache Offsuit-Asse (A4o), King-Rag (K3o), niedriger Offsuit-Müll | ==r:Preflop folden – sie kosten jede Session Chips== |
 
 :::tip[Die Stufe ist nur die halbe Antwort. Eine spekulative Hand ist am Button „gut“ und unter der Gun schlecht – deshalb ist das echte Chart nach Position organisiert, nicht nach Hand.]:::
@@ -142,13 +142,13 @@ Der Button ist die beste Position im Poker. ==g:Du agierst jede Hand auf Flop, T
 - **Suited Connectors (T9s, 98s, 87s)** – billige Hände mit hohen Implied Odds
 - **Schwächere Broadway-Offsuit (KTo, QJo)** – nur in später Position, niemals früh
 
-Kernregel: ==diese spekulativen Hände brauchen Position, um profitabel zu sein==. Wenn ein UTG-Spieler vor dir raist, wandern die meisten davon direkt in den Muck – ihr Vorteil verschwindet ohne Position.
+Kernregel: ==diese spekulativen Hände brauchen Position, um profitabel zu sein==. Wenn ein UTG-Spieler vor dir raist, wandern die meisten davon direkt in den Muck – du würdest einen Raise bezahlen, um eine spekulative Hand gegen eine starke Range zu spielen, und der billige Flop, den sie braucht, ist weg.
 
 ---
 
 ## Wie ändert sich das Starthände-Chart im 6-Max?
 
-Die meisten Online-Cashgames sind 6-Max, und das Chart verschiebt sich in eine Richtung: ==weiter==. Entferne die drei engsten Plätze von einem 9-Max-Tisch, und jede verbleibende Position „rückt effektiv auf“. Der erste Spieler, der im 6-Max agiert, öffnet gegen fünf Gegner, nicht acht – also ==g:spielt UTG im 6-Max ungefähr wie MP im 9-Max== (~15–17% statt ~13%).
+Die meisten Online-Cashgames sind 6-Max, und das Chart verschiebt sich in eine Richtung: ==weiter==. Entferne die drei engsten Plätze von einem 9-Max-Tisch, und der neue erste Platz „rückt effektiv auf“ – die späteren Plätze haben dieselben Spieler hinter sich wie vorher, aber der Tisch als Ganzes spielt weiter. Der erste Spieler, der im 6-Max agiert, öffnet gegen fünf Gegner, nicht acht – also ==g:spielt UTG im 6-Max ungefähr wie MP im 9-Max== (~15–17% statt ~13%).
 
 :::compare
 9-Max (Full Ring) | 6-Max
@@ -209,7 +209,7 @@ Die schlechtesten Starthände im Poker sind nicht zufälliger Müll wie 7-2 – 
 
 Der ==r:teuerste Fehler, den Anfänger machen, ist Raises mit schwachen Assen zu callen== wie dem A♣ 4♦ aus dem Intro. Wenn du endlich dein Ass-Paar triffst, bist du oft zweitbester gegen A♠ K♦ oder A♥ Q♦ – und du verlierst einen großen Pot, überzeugt, dass du Top Pair hast. Hast du auch. Sie auch, mit einem besseren Kicker.
 
-(Und die tatsächlich schlechteste Hand im Poker? 7-2 offsuit – mehr dazu und zur berühmten „7-2-Regel“ in der FAQ unten.)
+(Und die Hand, die meist als schlechteste im Poker gilt? 7-2 offsuit – nach roher Equity gegen eine zufällige Hand ist 3-2 offsuit allerdings etwas schwächer, etwa 32% gegenüber 35%. Mehr zu 7-2 und zur berühmten „7-2-Regel“ in der FAQ unten.)
 
 ---
 
@@ -272,7 +272,7 @@ A. Es gibt 169 verschiedene Starthand-Typen (13 Paare, 78 suited, 78 offsuit) au
 
 **Q. Was ist die 7-2-Regel im Poker?**
 
-A. Die 7-2-Regel ist ein Haus-Nebenspiel, keine offizielle Poker-Regel: gewinnt ein Spieler einen Pot mit 7-2 offsuit – der schlechtesten Hand – zahlt ihm jeder andere Spieler eine kleine Prämie. Sie existiert rein, um Homegames und Pub-Games aufzupeppen, indem sie einen unverschämten Bluff belohnt.
+A. Die 7-2-Regel ist ein Haus-Nebenspiel, keine offizielle Poker-Regel: gewinnt ein Spieler einen Pot mit 7-2 offsuit – der Hand, die die meisten als schlechteste bezeichnen – zahlt ihm jeder andere Spieler eine kleine Prämie. Sie existiert rein, um Homegames und Pub-Games aufzupeppen, indem sie einen unverschämten Bluff belohnt.
 
 **Q. Was ist die schlechteste Starthand im Poker?**
 

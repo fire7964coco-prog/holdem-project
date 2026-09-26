@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "glossary",
   date: "2026-07-05",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-24",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🧊",
@@ -132,9 +132,9 @@ Um cooler de verdade significa que você jogou corretamente com uma mão forte e
 
 Como um cooler não carrega nenhuma lição, o único dano real que pode causar é às suas *próximas* decisões. Proteja-as:
 
-1. **Nomeie e solte.** Confirme com o teste que foi genuinamente inevitável, e então deixe ir — não há nada para estudar, então não reviva.
+1. **Nomeie e solte.** Revise a mão uma vez com o teste — ranges, sizing, profundidade de stack. Se ela se sustentar como genuinamente inevitável, deixe ir; reviver a mão de novo e de novo não te ensina nada.
 2. **Fique atento ao tilt.** A coisa mais cara de um cooler não é o pote que você perdeu; são as três mãos ruins que você joga depois tentando recuperar. Reconheça esse impulso e desacelere.
-3. **Confie no seu bankroll.** Coolers são o motivo de você manter um bankroll grande o bastante para absorver a variância. Um cooler é um erro de arredondamento ao longo de dezenas de milhares de mãos — só machuca se você deixar mudar como você joga.
+3. **Confie no seu bankroll.** Coolers são o motivo de você manter um bankroll grande o bastante para absorver a variância. Num cash game, um cooler é um erro de arredondamento ao longo de dezenas de milhares de mãos — o estrago duradouro vem de deixar que ele mude como você joga. Num torneio ele pode encerrar a sua campanha na hora; essa é a variância que você aceita ao se inscrever, não um motivo para jogar diferente.
 4. **Respire, ou dê uma volta.** Se um cooler grande te abalou, se afastar por cinco minutos é mais barato do que ficar e vazar fichas. A mão acabou; sua vantagem está em cada mão ainda por vir.
 
 ---
@@ -164,7 +164,7 @@ A. Sim — "setup" é um sinônimo informal de cooler. Enfatiza a sensação de 
 
 **Q. Par de reis vs par de ases é um cooler?**
 
-A. Sim — é o cooler mais clássico de todos. Reis são azarão de aproximadamente 4,5 para 1 contra ases no preflop, e quase nenhum jogador razoável folda um par de reis antes do flop — só uma leitura que grita ases torna o fold defensável, e no pré-flop essa leitura quase nunca aparece. Então o dinheiro entra, você está atrás desde o começo, e perde uma mão da qual era quase impossível escapar.
+A. Sim — é o cooler mais clássico de todos. Reis são azarão de aproximadamente 4,5 para 1 contra ases no preflop, e quase nenhum jogador razoável folda um par de reis antes do flop. É preciso uma leitura que grita ases, ou pressão de torneio como a bolha de um satélite, em que o ICM pode tornar até os reis um fold — e esses spots raramente aparecem. Então o dinheiro entra, você está atrás desde o começo, e perde uma mão da qual era quase impossível escapar.
 
 **Q. Com que frequência acontece set over set?**
 
@@ -190,7 +190,7 @@ A. Não exatamente — a palavra tem um sentido mais antigo no mundo do jogo. No
 
 ## As 3 coisas para lembrar
 
-1. **Cooler é uma derrota inevitável com uma mão forte demais para foldar** — no sentido estrito, você estava atrás quando o dinheiro entrou e nenhum suckout aconteceu, e um bom jogador no seu lugar também teria perdido um pote grande.
+1. **Cooler é uma derrota inevitável com uma mão forte demais para foldar** — no sentido estrito, você estava atrás quando o dinheiro entrou e nenhum suckout aconteceu. De um jeito ou de outro, um bom jogador no seu lugar também teria perdido um pote grande.
 2. **Na definição estrita, é o oposto de um bad beat.** Um bad beat é estar na frente e ser superado; um cooler é entrar atrás, com só uma pequena chance de virar. Saber qual aconteceu te diz se há algo para corrigir.
 3. **Seja honesto sobre a diferença entre um cooler e um erro.** Se você faria a jogada de novo com a mesma informação, dê de ombros. Se não faria, não era um cooler — era um leak disfarçado.
 

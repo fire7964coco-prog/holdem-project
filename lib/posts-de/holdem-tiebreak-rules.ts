@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ties werden in fester Reihenfolge entschieden: zuerst der Handrang, dann die Karten, die die Hand bilden, dann die Kicker von hoch nach niedrig. Gleiches Paar → der höhere erste Kicker gewinnt; identische fünf Karten → geteilter Pot. Farben entscheiden einen Tie niemals.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-12",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 Min.",
   emoji: "⚖️",
@@ -153,7 +153,7 @@ Dieselbe Logik läuft bei Pots mit Vierling auf dem Board: Alle teilen sich vier
 
 **Nein – nicht darüber, wer gewinnt. Farben haben beim Texas Hold'em genau eine Aufgabe: Fünf Karten derselben Farbe ergeben einen Flush. Darüber hinaus haben sie keinen Rang, also teilen zwei Hände, die Rang für Rang übereinstimmen, immer den Pot – und keine Karte schlägt eine andere wegen ihrer Farbe.**
 
-Die Frage kommt immer wieder, weil es eine Farbreihenfolge im Poker tatsächlich gibt – nur nicht in diesem Spiel. Stud und Razz nutzen sie, um zu bestimmen, wer den Bring-in zahlt und wer einen unteilbaren Chip bekommt. Hold'em nutzt sie für keines von beidem.
+Die Frage kommt immer wieder, weil es eine Farbreihenfolge im Poker tatsächlich gibt – nur in diesem Spiel nie zur Bewertung von Händen. Stud und Razz nutzen sie, um zu bestimmen, wer den Bring-in zahlt und wer einen unteilbaren Chip bekommt. Hold'em nutzt sie für keines von beidem.
 
 Der sauberste Beweis ist genau der Chip, der sich *nicht* teilen lässt. Das WSOP-Turnierregelwerk 2026 sagt ==g:*"In button games with 2 or more high or low hands, the odd chip goes to the first seat left of the button"*== (Regel 73): Der überzählige Chip geht an den ersten Sitz links vom Button. Selbst wenn sich ein Pot physisch nicht gleichmäßig aufteilen lässt, richtet sich die Regel nach **dem Sitz**, nicht nach der Farbe – und die farbbasierte Methode in der zweiten Hälfte derselben Regel ist ausschließlich für Stud und Razz geschrieben.
 
@@ -234,7 +234,7 @@ A. Das Wheel, A-2-3-4-5, weil das Ass darin als Eins spielt. Straßen werden rei
 
 **Q. Entscheiden Farben beim Texas Hold'em jemals einen Tie?**
 
-A. Nein – aber es gibt am Hold'em-Tisch eine Stelle, an der Farben eine Rolle spielen, und das ist nicht der Pot. In Cashgames und nach den Hausregeln der meisten Cardrooms zieht jeder Spieler eine Karte, um zu bestimmen, wo der Dealer-Button startet, und haben zwei Karten denselben Rang, entscheidet die Farbreihenfolge. (WSOP-Turniere überspringen dieses Ziehen: ==WSOP-Turnierregel 85== setzt den Button beim ersten Stack rechts vom Dealer an und lost erst bei noch drei, zwei und einem verbleibenden Tisch neu – ganz ohne Farben.) So oder so bestimmt das einen *Platz*, nie eine Hand. Die einzige Farbreihenfolge im Turnier-Regelwerk gehört zu Stud und Razz. Stimmen zwei beste Fünf-Karten-Hände Rang für Rang überein, wird der Pot unabhängig von den Farben geteilt.
+A. Nein – aber es gibt am Hold'em-Tisch eine Stelle, an der Farben eine Rolle spielen, und das ist nicht der Pot. In Cashgames und nach den Hausregeln der meisten Cardrooms zieht jeder Spieler eine Karte, um zu bestimmen, wo der Dealer-Button startet, und haben zwei Karten denselben Rang, entscheidet die Farbreihenfolge. (WSOP-Turniere überspringen das Eröffnungsziehen: ==WSOP-Turnierregel 85== setzt den Button beim ersten Stack rechts vom Dealer an und lässt erst bei noch drei, zwei und einem verbleibenden Tisch um den Button ziehen.) So oder so bestimmt das einen *Platz*, nie eine Hand. Abgesehen von diesem Button-Ziehen – das laut Glossar des WSOP-Regelwerks nach „rank and suit“ entschieden wird – gehört die einzige Farbreihenfolge im Turnier-Regelwerk zu Stud und Razz. Stimmen zwei beste Fünf-Karten-Hände Rang für Rang überein, wird der Pot unabhängig von den Farben geteilt.
 
 **Q. Was passiert, wenn beide Spieler exakt dieselbe Hand haben?**
 

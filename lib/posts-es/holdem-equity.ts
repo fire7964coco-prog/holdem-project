@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "odds",
   date: "2026-07-08",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-24",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🥧",
@@ -39,7 +39,7 @@ apuesta ÷ (bote + apuesta) | El % de fold que necesita un farol puro
 
 **El equity es tu parte del bote: la parte que le corresponde a tu mano en promedio si se juega hasta el showdown, con los empates contando en su parte proporcional.** Si el bote es de $100 y te corresponde un 60% de él, tu mano vale ==$60 ahora mismo==, aunque las fichas todavía no se hayan empujado.
 
-Piénsalo como tu trozo de la tarta. Toda mano aún viva tiene un trozo; los trozos siempre suman 100%. Cuando vas mano a mano y un 70% a ganar un bote de $200, ==g:$140 de ese bote son "tuyos"== a largo plazo — no ganarás *este* bote el 70% de las veces y perderás el resto, pero a lo largo de mil situaciones idénticas, esa es la parte que cobras.
+Piénsalo como tu trozo de la tarta. Toda mano aún viva tiene un trozo; los trozos siempre suman 100%. Cuando vas mano a mano con un 70% de equity en un bote de $200, ==g:$140 de ese bote son "tuyos"== a largo plazo — no ganarás *este* bote el 70% de las veces y perderás el resto, pero a lo largo de mil situaciones idénticas, esa es la parte que cobras.
 
 Esa es toda la razón por la que el equity importa: convierte "¿voy por delante?" en "¿cuánto de este bote poseo?" — y ese es el número que comparas con el precio de un call.
 
@@ -47,13 +47,13 @@ Esa es toda la razón por la que el equity importa: convierte "¿voy por delante
 
 ## Cómo estimar tu equity rápido
 
-**Con un proyecto, multiplica tus outs por 4 en el flop o por 2 en el turn; preflop, memoriza el puñado de enfrentamientos que aparecen una y otra vez.** Casi nunca calcularás el equity exacto en la mesa — lo estimas, y estos dos atajos cubren el 90% de las situaciones.
+**Con un proyecto, multiplica tus outs limpias por 4 en el flop (si vas a ver las dos cartas) o por 2 en el turn — esa es tu probabilidad de ligar, un buen sustituto del equity cuando ligar gana y fallar pierde; preflop, memoriza el puñado de enfrentamientos que aparecen una y otra vez.** Casi nunca calcularás el equity exacto en la mesa — lo estimas, y estos dos atajos cubren el 90% de las situaciones.
 
 **Proyectos (la regla del 4 y el 2):** cuenta tus [outs](/es/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp") y luego multiplica. Un proyecto de color son 9 outs → ==9 × 4 = 36%== en el flop (valor real 35%). Los números exactos de cada proyecto están en las [drawing odds](/es/blog/holdem-drawing-odds); aquí tienes la referencia rápida:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Proyecto | Outs | Equity (2 cartas) |
+| Proyecto | Outs | Probabilidad de ligar (2 cartas) |
 |:---|:---:|:---:|
 | Color + proyecto abierto | 15 | 54.1% |
 | Proyecto de color | 9 | 35.0% |
@@ -188,7 +188,7 @@ A. El equity en el póker es tu parte del bote: el porcentaje del pago en el sho
 
 **Q. ¿Cómo se calcula el equity en el póker?**
 
-A. Con proyectos, usa la regla del 4 y el 2: multiplica tus outs por 4 en el flop (dos cartas por venir) o por 2 en el turn. Nueve outs de color ≈ 36% en el flop. Preflop, memoriza los enfrentamientos comunes (AA vs KK es 82/18). Para números exactos, los jugadores usan calculadoras de equity fuera de la mesa para estudiar — mientras juegas, estimas.
+A. Con proyectos, usa la regla del 4 y el 2: multiplica tus outs limpias por 4 en el flop (cuando vas a ver las dos cartas) o por 2 en el turn para estimar tu probabilidad de ligar. Nueve outs de color ≈ 36% en el flop — cerca de tu equity cuando ligar gana y fallar pierde. Preflop, memoriza los enfrentamientos comunes (AA vs KK es 82/18). Para números exactos, los jugadores usan calculadoras de equity fuera de la mesa para estudiar — mientras juegas, estimas.
 
 **Q. ¿Cuál es la diferencia entre equity y pot odds?**
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Eine 3-Bet ist der erste Re-Raise vor dem Flop – sie heißt 3-Bet, weil der Big Blind die erste Bet ist, der Open-Raise die zweite und dein Re-Raise die dritte. 3-bette auf Value einen engen Kern (QQ+, AK) plus ein paar suited Blocker-Bluffs wie A5s, size sie in Position auf etwa das 3-fache des Opens und out of Position auf das 4-fache, und halte deine gesamte 3-Bet-Frequenz bei 6–10%. Wenn du selbst gegen eine 3-Bet sitzt, 4-bette deine Premiums, calle die Hände, die gut spielen, und folde den Rest – gegen Low-Stakes-Spieler, die nie bluffen, häufiger als „ausgeglichen“.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-22",
-  masterUpdated: "2026-09-22",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "16 Min.",
   emoji: "♦️",
@@ -140,7 +140,7 @@ Die Mathematik ist bewusst sichtbar, weil hier Anfänger leaken: **3 × 3bb = 9b
 - **3-bette out of Position nie winzig.** Eine kleine OOP-3-Bet gibt deinem Gegner einen tollen Preis zum Callen und dich mit Position auszuspielen – genau das, was du vermeiden willst. Nutze die vollen 4x+.
 - **Sizing ist kein Gesetz.** Size *runter* gegen Spieler, die zu viel folden (du bluffst billiger), und size *rauf* und geh pure-Value gegen Calling Stations, die nie folden. Rake und Stack-Tiefe verschieben es ebenfalls.
 
-In Turnieren mit flachen Stacks ändert sich die ganze Rechnung: Bei etwa **10–25 Big Blinds** werden viele Hände zu einem **3-Bet-All-in (einem „Shove“)** statt zu einem kleinen Re-Raise, weil kein Platz zum Raisen-und-Folden ist. Hör auf, Min-3-Bets zu machen, und fang an zu jammen, sobald du short wirst.
+In Turnieren mit flachen Stacks ändert sich die ganze Rechnung: Bei etwa **10–25 Big Blinds** werden viele Hände zu einem **3-Bet-All-in (einem „Shove“)** statt zu einem kleinen Re-Raise, weil kein Platz zum Raisen-und-Folden ist. Verschiebe dich von Min-3-Bets hin zum Jammen, je shorter du wirst – gegen starke Felder behältst du aber ein paar kleine Nicht-All-in-3-Bets im Mix.
 
 ---
 
@@ -174,7 +174,7 @@ Die große Erkenntnis: **Flatten ist in Position legitim** – moderne Solver be
 Ein **Squeeze Play** ist eine 3-Bet, die gemacht wird, nachdem es bereits einen Open-Raise *und* mindestens einen Caller gab. Er heißt Squeeze, weil du beide Gegner in einen Schraubstock nimmst: Der ursprüngliche Raiser muss sich nun um den Caller hinter ihm sorgen, und der Caller – der gerade eine Hand gezeigt hat, die nicht stark genug zum Re-Raisen war – will selten gegen deine Aggression weiterspielen.
 
 Zwei Dinge machen den Squeeze besonders:
-- **Es gibt mehr Dead Money.** Der Pot enthält bereits den Raise und den Call, ein erfolgreicher Squeeze gewinnt also mehr, was bedeutet, dass deine Bluffs *seltener* funktionieren müssen, um profitabel zu sein.
+- **Es gibt mehr Dead Money.** Der Pot enthält bereits den Raise und den Call, ein erfolgreicher Squeeze gewinnt also mehr. Weil du für den Caller aber auch größer sizt, sinkt die Fold-Rate, die deine Bluffs brauchen, nicht immer – aus den Blinds sinkt sie ein wenig, vom Button bleibt sie etwa gleich –, doch jeder Fold bringt dir jetzt mehr Chips.
 - **Size ihn größer.** Füge etwa einen zusätzlichen Open-Raise pro Caller hinzu. Gegen einen 3bb-Open plus einen Caller ist ein Squeeze auf etwa **15–16,5bb** Standard – das extra Size ist es, was beide Spieler rausdrückt.
 
 Gute Squeeze-Bluffs sind dieselben suited Blocker-Hände (A5s und Freunde), die gute 3-Bet-Bluffs abgeben, weil du immer noch die mittleren Hände des Raisers herausfolden und Equity haben willst, wenn du gecallt wirst.
@@ -190,7 +190,7 @@ Gute Squeeze-Bluffs sind dieselben suited Blocker-Hände (A5s und Freunde), die 
 
 Hier die Hälfte des 3-Bettings, die fast jeder Artikel überspringt: **Du wirst ungefähr genauso oft am empfangenden Ende sein, wie du selbst 3-bettest.** Wenn du eröffnest und re-geraist wirst, hast du drei Antworten:
 
-- **4-Bet** – auf Value mit deinen Premiums (QQ+, AK), plus dem gelegentlichen Blocker-Bluff (eine A5s-artige Hand). Eine 4-Bet sagt „Ich gehe nirgendwo hin.“
+- **4-Bet** – auf Value mit deinen Premiums (QQ+, AK), plus dem gelegentlichen Blocker-Bluff (eine A5s-artige Hand). Eine Value-4-Bet sagt „Ich gehe nirgendwo hin.“ – eine Blocker-Bluff-4-Bet foldet gegen eine 5-Bet trotzdem.
 - **Call** – mit Händen, die gut floppen und die Equity oder Position zum Weiterspielen haben: Pocket Pairs zum Set-Minen, suited Broadways und starke Hände, die den Pot nicht in einen 4-Bet-Krieg aufblähen wollen.
 - **Fold** – alles andere. Der Großteil deiner Open-Range sollte einfach gegen eine 3-Bet aufgeben; das ist normal, keine Schwäche.
 
@@ -200,7 +200,7 @@ Wie viel solltest du weiterspielen? Die theoretische Basislinie ist die **Minimu
 
 | Villains Fold-to-3-Bet-Stat | Was sie dir sagt | Deine Anpassung |
 |:---:|:---|:---|
-| **~35% (foldet selten)** | Eine Calling Station – sie callt mit fast allem, ein Bluff hat also keine Fold-Equity | 3-bette sie **nur auf Value**, hör auf zu bluffen und value-bette gnadenlos |
+| **~35% (foldet selten)** | Eine Calling Station – sie callt mit fast allem, ein Bluff bekommt also selten genug Folds, um sich zu lohnen | 3-bette sie **nur auf Value**, hör auf zu bluffen und value-bette gnadenlos |
 | **~55% (ausgeglichen)** | Ein denkender Regular | Spiele nahe an GTO – mische Value und Blocker-Bluffs |
 | **~70%+ (foldet zu viel)** | Ein exploitbarer Nit | 3-bette sie **viel öfter light** – sie schenken dir den Pot |
 
@@ -236,7 +236,7 @@ Jetzt dreh es um: Hätte ich dort eine **light** Hand wie A5s 3-gebettet und der
 | **Nie 3-Bet-Bluffen** | Lässt Geld liegen vs. weite Steals; deine Flats werden zu schwach | Balanciere Value mit ein paar Light-3-Bets |
 | **Merged 3-betten vs. einen Nit** | Deine „Value“ ist von ihrer premium-only Range dominiert | Geh polarisiert oder folde einfach vs. einen echten Nit |
 | **Müll 3-Bet-bluffen (Q7o)** | Schwache Blocker und wenig Backup-Equity – du musst gegen jede 4-Bet folden | Wähle nur Blocker-/Playability-Hände |
-| **Zu viel Flatten aus dem Small Blind** | Schlechte Equity-Realisierung OOP; eine schwache, cappbare Range | Gegen ein Raise: 3-Bet-oder-Fold aus dem Small Blind; die weiten Flats hebst du dir für den Big Blind auf |
+| **Zu viel Flatten aus dem Small Blind** | Schlechte Equity-Realisierung OOP; eine schwache, cappbare Range | Gegen ein Raise: aus dem Small Blind überwiegend 3-Bet-oder-Fold; die weiten Flats hebst du dir für den Big Blind auf |
 
 </div>
 
@@ -305,7 +305,7 @@ A. Du hast drei Optionen: 4-bette deine Premiums (QQ+, AK) plus den gelegentlich
 
 **Q. Was ist eine gute Fold-to-3-Bet-Prozentzahl?**
 
-A. Etwa 55% ist eine vernünftige, grob ausgeglichene Basislinie – du spielst mit dem oberen Teil deiner Range weiter und lässt den Rest gehen. Das ist weiter als die reine MDF-Mathematik, die dich gegen eine große 3-Bet nur etwa ein Drittel verteidigen ließe – anders gesagt: höchstens rund 66,6% folden. Behandle diese Zahl als Obergrenze, nicht als Ziel. MDF unterstellt, dass die Bluffs null Equity haben; ein echter 3-Bet-Bluff wie A5s hat aber rund 30% Equity gegen deine Weiterspiel-Range, was die Break-even-Fold-Frequenz deutlich unter diese Vakuum-Obergrenze drückt. 55% sind deshalb eine praktische Basislinie und keine Garantie: Eine Light-3-Bet mit echter Equity kann auch dagegen Profit machen. Deutlich mehr zu folden macht dich für Light-3-Bets exploitbar; weit weniger bedeutet, dass du zu weit callst oder 4-bettest. Passe dich dem Gegner an: Folde mehr gegen Spieler, die nie 3-Bet-bluffen.
+A. Etwa 55% ist eine vernünftige, grob ausgeglichene Basislinie – du spielst mit dem oberen Teil deiner Range weiter und lässt den Rest gehen. Das ist weiter als die reine MDF-Mathematik, die dich gegen eine typische 3x-3-Bet in Position nur etwa ein Drittel verteidigen ließe – anders gesagt: höchstens rund 66,7% folden. Behandle diese Zahl als Obergrenze, nicht als Ziel. MDF unterstellt, dass die Bluffs null Equity haben; ein echter 3-Bet-Bluff wie A5s hat aber rund 30% Equity gegen deine Weiterspiel-Range, was die Break-even-Fold-Frequenz deutlich unter diese Vakuum-Obergrenze drückt. 55% sind deshalb eine praktische Basislinie und keine Garantie: Eine Light-3-Bet mit echter Equity kann auch dagegen Profit machen. Deutlich mehr zu folden macht dich für Light-3-Bets exploitbar; weit weniger bedeutet, dass du zu weit callst oder 4-bettest. Passe dich dem Gegner an: Folde mehr gegen Spieler, die nie 3-Bet-bluffen.
 
 **Q. Solltest du mit einem Short Stack im Turnier 3-betten oder 4-bet-All-in gehen?**
 

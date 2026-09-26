@@ -186,7 +186,7 @@ Jeśli grasz w mały domowy cash game, wybierz buy-in, który każdy jest w stan
 
 ==r:Nie zaczynaj od stawek, przy których ludzie robią się nerwowi.== Zestresowani początkujący nie uczą się szybciej. Po prostu za dużo pasują, sprawdzają pod wpływem emocji albo kłócą się o zasady.
 
-Pamiętaj, że buy-in do **turnieju** działa inaczej niż w cash game: płacisz jedno stałe wpisowe, dostajesz ustalony stack żetonów bez wartości gotówkowej i grasz, aż jeden gracz zgarnie wszystkie. Jeśli nie wiesz, co wybrać, przeczytaj najpierw o różnicy między cash game a turniejem.
+Pamiętaj, że buy-in do **turnieju** działa inaczej niż w cash game: płacisz stałe wpisowe, dostajesz ustalony stack żetonów bez wartości gotówkowej i grasz, aż jeden gracz zgarnie wszystkie (w turniejach z re-entry po odpadnięciu możesz wykupić się ponownie). Jeśli nie wiesz, co wybrać, przeczytaj najpierw o różnicy między cash game a turniejem.
 
 Do treningu online korzystaj z darmowych stołów, aż będziesz umiał wytłumaczyć kolejność akcji bez zastanowienia. Potem powoli wchodź wyżej.
 
@@ -194,7 +194,7 @@ Do treningu online korzystaj z darmowych stołów, aż będziesz umiał wytłuma
 
 ## No-Limit, Limit czy Pot-Limit? W jaki Texas Hold'em grasz?
 
-Gdy ktoś mówi „Texas Hold'em", niemal zawsze ma na myśli **No-Limit Hold'em (NLHE)** — format z Main Eventu WSOP i z niemal każdej domówki. Rozdawanie, blindy i ranking układów są identyczne we wszystkich trzech formatach. Zmienia się tylko jedno: **ile wolno ci postawić.**
+Gdy ktoś mówi „Texas Hold'em", niemal zawsze ma na myśli **No-Limit Hold'em (NLHE)** — format z Main Eventu WSOP i z niemal każdej domówki. Rozdawanie i ranking układów są identyczne we wszystkich trzech formatach. Zmienia się przede wszystkim to, **ile wolno ci postawić** — a Fixed-Limit zwykle ogranicza też liczbę przebić w jednej rundzie (na WSOP: jeden zakład i cztery przebicia).
 
 | Format | Ile możesz postawić? | Gdzie go spotkasz |
 |--------|-----------------------|---------------------|
@@ -299,7 +299,7 @@ Twoje pot odds to **$120 do $20**, czyli **6 do 1**. To znaczy, że aby ten call
 
 ### Zasada 2 i 4 — błyskawiczny skrót do prawdopodobieństwa
 
-Gdy masz rękę z drawem (np. cztery karty do koloru), policz swoje **outy** — karty, które kończą twój układ.
+Gdy masz rękę z drawem (np. cztery karty do koloru), policz swoje **outy** — karty, które zamieniają twój draw w układ, który najpewniej wygra.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

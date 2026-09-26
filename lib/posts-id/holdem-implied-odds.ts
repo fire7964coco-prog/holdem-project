@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Implied odds adalah chip tambahan yang Anda harapkan menang di street berikutnya saat draw Anda jadi. Ia membuat Anda bisa call sebuah draw yang menurut pot odds saja harus di-fold — tapi hanya jika stack dalam dan lawan benar-benar akan membayar Anda.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-24",
-  masterUpdated: "2026-09-24",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "11 mnt",
   emoji: "💰",
@@ -87,7 +87,7 @@ Anda pegang ==b:A♥ K♥== di board ==Q♥ 7♥ 2♣ 3♠== — nut flush draw,
 - **Pot odds dulu:** Anda mendapat 150:50, atau 3:1, jadi Anda butuh equity **25%**. Flush Anda jadi di river hanya ==r:19,6%== dari waktu (9 outs ÷ 46 kartu tak terlihat — kami sengaja menghitung hanya outs flush; memasangkan ace atau king belum tentu cukup untuk menang, jadi overcard bukan out bersih). 19,6% kurang dari 25%, jadi harga langsung bilang ==r:fold.==
 - **Sekarang implied odds:** x = (call ÷ hit%) − (pot + call) = (50 ÷ 0,196) − (150 + 50) = 255 − 200 = ==g:sekitar $55.== Itulah ekstra yang harus Anda menangkan di river saat flush Anda mendarat.
 
-Jadi pertanyaannya bukan "haruskah saya call $50?" Melainkan "**saat sebuah hati jadi, bisakah saya menang setidaknya $55 lebih?**" Melawan lawan berstack dalam yang akan membayar taruhan river dengan top pair atau set, itu mudah — Anda call. Melawan seseorang yang hanya punya sisa $40, atau di board di mana hati keempat mematikan aksinya, Anda tak bisa — jadi Anda fold.
+Jadi pertanyaannya bukan "haruskah saya call $50?" Melainkan "**saat sebuah hati jadi, bisakah saya menang setidaknya $55 lebih?**" Melawan lawan berstack dalam yang akan membayar taruhan river dengan top pair, itu mudah — Anda call. Melawan seseorang yang hanya punya sisa $40, atau seseorang yang langsung berhenti begitu hati ketiga muncul di board, Anda tak bisa — jadi Anda fold. (Melawan set lebih sulit lagi: 2♥ dan 3♥ memasangkan board dan bisa membuat set itu jadi full house, menyisakan 7 outs bersih dan x sekitar $129.)
 
 :::note
 Call $50 yang sama, keputusan berlawanan — dan kartunya tak pernah berubah. Yang berubah adalah berapa banyak uang yang tersisa untuk dimenangkan. Itulah implied odds dalam satu kalimat.
@@ -110,7 +110,7 @@ Call $50 yang sama, keputusan berlawanan — dan kartunya tak pernah berubah. Ya
 
 </div>
 
-Dua kekuatan menentukan angkanya. **Frekuensi:** gutshot jadi setengah sesering flush draw, jadi ia butuh payoff yang kira-kira dua kali lebih besar agar impas. **Penyamaran:** set yang tersembunyi dibayar jauh lebih banyak daripada flush yang kentara di board monotone, karena lawan tak bisa menebak Anda memegangnya — itulah kenapa set mentoleransi hit rate rendahnya. [Nut flush draw bernilai jauh lebih besar daripada baby flush draw](/id/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") karena alasan yang sama: draw itu dibayar *dan* tak kalah saat jadi.
+Dua kekuatan menentukan angkanya. **Frekuensi:** gutshot jadi setengah sesering flush draw, jadi ia butuh payoff yang kira-kira dua kali lebih besar agar impas. **Penyamaran:** set yang tersembunyi dibayar jauh lebih banyak daripada flush yang kentara di board monotone, karena lawan tak bisa menebak Anda memegangnya — itulah kenapa set mentoleransi hit rate rendahnya. [Nut flush draw bernilai jauh lebih besar daripada baby flush draw](/id/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") karena alasan yang sama: draw itu dibayar *dan* tak pernah kalah dari flush yang lebih tinggi saat jadi.
 
 ---
 
@@ -145,7 +145,7 @@ Menaikkan nilai sebuah draw | Menurunkan nilai sebuah draw
 
 Tiga spot reverse-implied klasik:
 
-- **Baby flush.** Anda pegang ==b:7♦ 6♦== dan board membawa diamond ketiga. Anda mendapat flush Anda — dan membayar sebuah stack ke orang yang memegang ==b:A♦== untuk nut flush. Kartu "kemenangan" Anda justru merugikan Anda.
+- **Baby flush.** Anda pegang ==b:7♦ 6♦== dan board membawa diamond ketiga. Anda mendapat flush Anda — dan membayar sebuah stack ke orang yang memegang ==b:A♦== dengan diamond kedua — nut flush. Kartu "kemenangan" Anda justru merugikan Anda.
 - **Ujung bawah sebuah straight.** Anda pegang ==b:6♦ 5♦== di ==b:9♥ 8♣ 2♠==, dan 7 di turn membuat 5-6-7-8-9 Anda. Tapi itu ujung *rendah* — siapa pun yang memegang J-10 kini punya 7-8-9-10-==g:J==, straight lebih tinggi, dan kartu yang Anda butuhkan justru membayarnya.
 - **Top pair yang terdominasi.** Anda memasangkan king Anda dengan kicker lemah dan terus call — lurus ke A-K seseorang.
 
@@ -161,9 +161,9 @@ Waspadai kebocoran ini:
 
 :::card
 🚫 | Villain all-in | Tak ada street berikutnya berarti tak ada uang berikutnya dari dia. Heads-up, implied odds = 0 — pakai pot odds saja
-📉 | Stack pendek di belakang | Jika hanya ada setengah pot tersisa untuk dimenangkan, "saya akan dibayar di river" adalah fantasi
+📉 | Stack pendek di belakang | Jika yang tersisa di belakang lebih kecil dari x yang Anda butuhkan, "saya akan dibayar di river" adalah fantasi
 🙅 | Lawan yang "tak membayar" | Nit yang hanya bertaruh dengan nuts tak akan membayar flush Anda. Implied odds Anda hidup dan mati pada kesediaannya call
-🃏 | Board menakutkan | Jika kartu yang menyelesaikan draw Anda juga membekukan aksi (empat ke flush, board berpasangan), tak ada yang membayar Anda
+🃏 | Board menakutkan | Jika kartu yang menyelesaikan draw Anda juga membekukan aksi (empat ke flush, board berpasangan), makin sedikit tangan yang membayar Anda — dan yang membayar mungkin mengalahkan Anda
 🎣 | Berasumsi stack habis | "Mungkin jadi dan mereka mungkin stack off" adalah dua tebakan yang ditumpuk untuk menghindari fold yang benar. Perkirakan secara konservatif
 :::
 
@@ -192,7 +192,7 @@ A. Perbedaan pot odds dan implied odds ada pada kepastiannya: pot saat ini dan j
 
 **Q. Kapan sebaiknya Anda memakai implied odds?**
 
-A. Mulailah dari pot odds. Jika equity Anda sudah mengalahkan harga langsungnya, cukup call — implied odds tak diperlukan. Raih implied odds hanya saat draw Anda *meleset tipis* dari harga itu dan stack di belakang cukup dalam sehingga hit memberi Anda jauh lebih banyak — idealnya draw yang kuat, tersamar, atau nut, melawan lawan yang mau membayar. Jika draw meleset jauh dari harga, atau lawan sudah all-in atau short stack, implied odds tak bisa menyelamatkan call itu.
+A. Mulailah dari pot odds. Jika equity Anda sudah mengalahkan harga langsungnya, cukup call — implied odds tak diperlukan. Raih implied odds saat draw Anda meleset dari harga itu dan stack di belakang cukup dalam sehingga hit memberi Anda lebih dari x dari rumusnya — makin jauh draw meleset, makin besar x-nya. Idealnya itu draw yang kuat, tersamar, atau nut, melawan lawan yang mau membayar. Jika stack di belakang tak bisa menutup x — lawan heads-up yang sudah all-in atau short stack, misalnya — implied odds tak bisa menyelamatkan call itu.
 
 **Q. Apa itu reverse implied odds?**
 
@@ -200,7 +200,7 @@ A. Reverse implied odds adalah chip tambahan yang hilang saat draw Anda jadi tap
 
 **Q. Apa itu implied odds yang bagus — berapa banyak yang Anda butuhkan?**
 
-A. Tergantung draw Anda. Flush dan open-ended straight draw butuh kira-kira 8–10× call di belakang dalam stack; set mining butuh sekitar 15–20× (aturan "5%"). Makin sulit draw jadi, makin dalam stack yang harus ada untuk membenarkan call.
+A. Tergantung draw Anda. Flush dan open-ended straight draw butuh kira-kira 8–10× call di belakang dalam stack; set mining butuh sekitar 15–20× sebagai rentang praktis, dan "aturan 5%" yang lebih ketat meminta 20×. Makin sulit draw jadi, makin dalam stack yang harus ada untuk membenarkan call.
 
 **Q. Apakah implied odds berlaku saat lawan Anda all-in?**
 

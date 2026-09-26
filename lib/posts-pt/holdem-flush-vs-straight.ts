@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Um flush (cinco cartas do mesmo naipe — cerca de 0,197% das mãos de cinco cartas) sempre ganha de uma sequência (cinco em sequência, cerca de 0,392%) no Texas Hold'em — porque o flush é mais raro: ao longo das sete cartas até o river, 3,03% contra 4,62% da sequência.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-24",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "⚡",
@@ -66,13 +66,13 @@ Conte as 2.598.960 mãos possíveis de cinco cartas de um baralho de 52 e a orde
 | **Sequência** | **10.200** | **0,392%** | **Perde para o flush ❌** |
 | Trinca | 54.912 | 2,11% | Perde para a sequência |
 
-Uma sequência tem mais ou menos ==r:o **dobro** de formas de se montar do que um flush== — 10.200 contra 5.108 entre as 2.598.960 mãos de cinco cartas. Ao longo das sete cartas até o river a distância encolhe para cerca de ==1,5 vez== (4,62% contra 3,03%), mas a direção não muda: a sequência aparece mais vezes — o que a torna a mão mais fraca. A mesma regra de frequência explica a escada inteira; os números exatos de cada mão estão no [gráfico de odds e probabilidade do poker](/pt/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
+Uma sequência tem mais ou menos ==r:o **dobro** de formas de se montar do que um flush== — 10.200 contra 5.108 entre as 2.598.960 mãos de cinco cartas. Ao longo das sete cartas até o river a distância encolhe para cerca de ==1,5 vez== (4,62% contra 3,03%), mas a direção não muda: a sequência aparece mais vezes — o que a torna a mão mais fraca. A mesma regra de frequência, contada em mãos de cinco cartas, explica a escada inteira (em sete cartas uma carta alta sozinha é até mais rara que dois pares, mas a ordem foi fixada com cinco); os números exatos de cada mão estão no [gráfico de odds e probabilidade do poker](/pt/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
 ### Por que isso parece invertido
 
 Uma sequência só precisa de cinco valores em ordem, e ==**os naipes não importam**==. Essa liberdade cria um número enorme de combinações. O flush é o oposto: cada uma das cinco cartas tem que compartilhar ==**o mesmo naipe**==, e só um dos quatro naipes consegue por vez. ==g:Muito menos formas de chegar lá significa que o flush é mais raro — e o mais raro sempre ganha.==
 
-:::tip[Se você tem um draw de flush e seu adversário está buscando a sequência, você está numa ótima posição — mesmo quando **os dois** draws fecham, seu flush ganha da sequência dele no showdown.]:::
+:::tip[Se você tem um draw de flush e seu adversário está buscando a sequência, você ganha a colisão — quando **os dois** draws fecham, seu flush ganha da sequência dele no showdown. Isso não é o mesmo que ser o favorito: se o draw de sequência dele vem com um par ou com cartas mais altas, ele ainda pode estar na frente antes do river.]:::
 
 ---
 
@@ -121,7 +121,7 @@ O duelo que mais gera discussão depois de flush vs sequência é **flush vs ful
 
 :::hand[K♠,9♠,9♥,4♠,2♦] Board (5 cartas):::
 
-Você tem **A♠ 5♠** para o nut flush: **A♠ K♠ 9♠ 5♠ 4♠**. Seu adversário tem **K♦ 9♦** e mostra **9♦ 9♠ 9♥ K♦ K♠** — noves full de reis. ==r:O full house ganha do flush==, e nenhum flush sobrevive a ele. Numa mesa não pareada, seu flush de Ás alto só é batido por um straight flush; no instante em que a mesa pareia, full houses e quadras entram em cena.
+Você tem **A♠ 5♠** para o nut flush: **A♠ K♠ 9♠ 5♠ 4♠**. Seu adversário tem **K♦ 9♦** e mostra **9♦ 9♠ 9♥ K♦ K♠** — noves full de reis. ==r:O full house ganha do flush==, e nenhum flush sobrevive a ele. Numa mesa não pareada, o nut flush só é batido por um straight flush; no instante em que a mesa pareia, full houses e quadras entram em cena.
 
 Quando dois jogadores têm o *mesmo* tipo de mão, o vencedor sai da comparação carta a carta — o sistema completo está nas [regras de desempate e kicker do poker](/pt/blog/holdem-tiebreak-rules).
 
@@ -154,9 +154,9 @@ A dama supera o valete, então A ganha. Se as melhores cinco cartas dos dois jog
 
 ## O que é um straight flush? Quando os dois acontecem juntos
 
-![9♥ 8♥ 7♥ 6♥ 5♥ — um straight flush de copas, a mão #2 do poker](/images/holdem-flush-vs-straight-sf.webp "Straight flush — cinco copas em sequência, batido só por um royal flush")
+![9♥ 8♥ 7♥ 6♥ 5♥ — um straight flush de copas, a mão #2 do poker](/images/holdem-flush-vs-straight-sf.webp "Straight flush — cinco copas em sequência; só um straight flush mais alto ou um royal flush ganha dele")
 
-Um **straight flush** é cinco cartas *consecutivas* de *um só naipe* — tipo 9♥ 8♥ 7♥ 6♥ 5♥. É a **mão #2 do poker**, batida só por um royal flush (que é simplesmente o straight flush de Ás alto, A-K-Q-J-10 do mesmo naipe). Com apenas **36 combinações** entre as 2.598.960 mãos de cinco cartas (cerca de 0,00139%; até o river no Hold'em, cerca de 0,028%), é mais rara que tudo, exceto o próprio royal.
+Um **straight flush** é cinco cartas *consecutivas* de *um só naipe* — tipo 9♥ 8♥ 7♥ 6♥ 5♥. É a **mão #2 do poker**: só um straight flush mais alto ou um royal flush (que é simplesmente o straight flush de Ás alto, A-K-Q-J-10 do mesmo naipe) ganha dele. Com apenas **36 combinações** entre as 2.598.960 mãos de cinco cartas (cerca de 0,00139%; até o river no Hold'em, cerca de 0,028%), é mais rara que tudo, exceto o próprio royal.
 
 O detalhe: ==as *mesmas cinco cartas* têm que ser do mesmo naipe **e** em sequência==. Veja a diferença no board **8♥ 7♥ 6♥ Q♠ 3♦**:
 
@@ -182,7 +182,7 @@ No **Short Deck (6+) Hold'em**, os 2 até os 5 são retirados do baralho. Com me
 
 **Q. O flush ganha da sequência no poker?**
 
-A. Sim. O flush é a mão #5 e a sequência é a #6, então o flush sempre ganha no Texas Hold'em padrão. Cinco cartas do mesmo naipe são estatisticamente mais difíceis de fechar do que cinco em sequência, e a mão mais rara sempre fica acima.
+A. Sim. O flush é a mão #5 e a sequência é a #6, então o flush sempre ganha no Texas Hold'em padrão. Cinco cartas do mesmo naipe são estatisticamente mais difíceis de fechar do que cinco em sequência, e entre as mãos de cinco cartas a mais rara sempre fica acima.
 
 **Q. A sequência ganha do flush?**
 
@@ -190,7 +190,7 @@ A. Não. Uma sequência (#6) nunca ganha de um flush (#5) no Texas Hold'em padr�
 
 **Q. Por que o flush ganha da sequência?**
 
-A. Matemática pura. A sequência ignora os naipes, então há cerca de 10.200 formas de fechar uma, contra apenas 5.108 formas de fechar um flush. Isso deixa o flush cerca de duas vezes mais raro entre as mãos de cinco cartas; ao longo das sete cartas até o river sobra um fator de aproximadamente 1,5 (3,03% contra 4,62%). No poker a mão mais rara sempre fica acima.
+A. Matemática pura. A sequência ignora os naipes, então há cerca de 10.200 formas de fechar uma, contra apenas 5.108 formas de fechar um flush. Isso deixa o flush cerca de duas vezes mais raro entre as mãos de cinco cartas; ao longo das sete cartas até o river sobra um fator de aproximadamente 1,5 (3,03% contra 4,62%). Contando mãos de cinco cartas, que é como a ordem foi fixada, a mão mais rara sempre fica acima.
 
 **Q. O que ganha do flush no poker?**
 
@@ -202,7 +202,7 @@ A. Flush, full house, quadra, straight flush e royal flush ganham todos da sequ�
 
 **Q. Dá para ter um flush mais alto que o de outro jogador?**
 
-A. Sim. Dois flushes são comparados carta a carta, de cima para baixo, então um flush de Ás alto (o "nut") ganha de um flush de rei alto. Se as cartas de topo empatam, decide a segunda mais alta, e assim por todas as cinco.
+A. Sim. Dois flushes são comparados carta a carta, de cima para baixo, então um flush de Ás alto ganha de um flush de rei alto. Se as cartas de topo empatam, decide a segunda mais alta, e assim por todas as cinco.
 
 **Q. O naipe do flush importa?**
 

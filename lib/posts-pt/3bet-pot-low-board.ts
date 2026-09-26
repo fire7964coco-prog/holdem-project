@@ -6,11 +6,11 @@ export const POST: Post = {
   title: "8-5-2: overpairs mantêm a pressão",
   seoTitle: "Pote de 3-bet no 8-5-2: 97,8% no tamanho grande",
   desc: "No 8-5-2 em pote de 3-bet, o BB aposta dois terços em 97,8% do range. Veja por que overpairs mantêm a pressão sem acertar o flop.",
-  tldr: "Depois de uma 3-bet do big blind e do call do botão, o flop 8♦5♣2♠ recebe uma aposta de dois terços do pote em 97,8% do range. O detalhe: dos 83 combos do big blind, exatamente três fizeram par com este board — os A5s —, e 88, 55 e 22 nem estão no range. A aposta aparece porque a distribuição se concentra em 36 combos de overpairs e 40 de A-high, com quase nada entre eles. Esse formato polarizado favorece o tamanho grande.",
+  tldr: "Depois de uma 3-bet do big blind e do call do botão, o flop 8♦5♣2♠ recebe uma aposta de dois terços do pote em 97,8% do range. O detalhe: dos 83 combos do big blind, exatamente três fizeram par com este board — os A5s —, e 88, 55 e 22 nem estão no range. A aposta aparece porque a distribuição se concentra em 36 combos de overpairs e 40 de A-high, com quase nada entre eles — só os três A5s. Esse formato polarizado favorece o tamanho grande.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-15",
-  masterUpdated: "2026-09-02",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   readTime: "10 min",
   emoji: "🎲",
   image: "/images/gto-3bp-low-oop-pt.webp",
@@ -18,7 +18,7 @@ export const POST: Post = {
   keepImagesInBody: true,
   tags: ["c-bet no flop baixo", "pote de 3-bet no 8-5-2", "range polarizado depois do flop", "overpairs no poker", "board seco"],
   content: `
-O flop vem **8♦ 5♣ 2♠**. Você deu a 3-bet antes do flop, o board é bem seco e sua mão é A-K. Sem par, sem draw imediato. **É o tipo de situação em que dar check parece óbvio.**
+O flop vem **8♦ 5♣ 2♠**. Você deu a 3-bet antes do flop, o board é bem seco e sua mão é A-K. Sem par e nada melhor que backdoor draws. **É o tipo de situação em que dar check parece óbvio.**
 
 O solver faz o contrário. **Aposta 14,9bb — dois terços do pote — em 97,8% do range.** E esse número não é uma frequência específica de A-K. Dos 83 combos do big blind (BB), apenas ==três== realmente fizeram um par com uma carta deste board.
 
@@ -122,7 +122,7 @@ Os nove combos do botão são 88, 55 e 22, três de cada. Como uma carta de cada
 
 ## Por que o botão realiza mais equity aqui do que nos dois exemplos anteriores?
 
-**A realização de equity (EQR) do botão sobe para 90,3%, na mesma estrutura de pote de 3-bet.** Nos dois exemplos anteriores, era 78,7% e 75,1%. ⚠ Não foi uma melhora isolada do botão: os dois valores de EV somam o pote, então **se a parcela de EV de um sobe, a do outro cai**. A EQR do big blind desceu de 117,8% para 106,9%. São dois lados da mudança na distribuição do pote.
+**A realização de equity (EQR) do botão sobe para 90,3%, na mesma estrutura de pote de 3-bet.** Nos dois exemplos anteriores, era 78,7% e 75,1%. ⚠ Não foi uma melhora isolada do botão: os dois valores de EV somam o pote, então, **com as equities fixas, o ganho de realização de um lado é a perda do outro**. Entre boards diferentes as equities também mudam, e essa ligação não é automática — mas aqui foi o que aconteceu: a EQR do big blind desceu de 117,8% para 106,9%. Neste caso, ao menos, são dois lados do mesmo fato.
 
 | Métrica | BB (OOP) | BTN (IP) |
 |---|---|---|
@@ -146,7 +146,7 @@ O motivo está na localização dos sets. **Só o botão pode ter um**, e esses 
 - **Mas não trate um overpair como nuts diante de um aumento.** Os nove combos de set estão do outro lado, e o botão ainda tem 24 combos de QQ até 99. **Seu 99 e seu TT são overpairs que perdem para outros overpairs.**
 - **Contra quem raramente folda, reduza a parte de A-high.** Os 97,8% no tamanho grande partem de uma situação em que boa parte do range adversário não acertou o board. ⚠ De novo: "58,3% não fez par" não significa "58,3% folda". Esta resolução não fornece frequência de fold, e os 36,1% de A-high do botão são da família A-K, A-Q, A-J e A-T, sem ases fracos. 🪶 Contra 14,9bb em 22,5bb, a frequência mínima de defesa (MDF) é **60,2%**, mas é um **ponto de partida, não uma cota de calls**. A MDF trata a aposta como um blefe puro, sem equity; aqui, o range que aposta contém 36 combos de overpairs, então essa premissa não se sustenta. Se a defesa ótima fica abaixo dessa referência é algo que esta resolução não responde. Contra um jogador que paga demais, insistir com A-high por duas ou três apostas transforma a parte de blefe em prejuízo; concentre as apostas de valor nos overpairs.
 - **Do lado do botão, os pares pequenos têm mais valor aqui do que nos outros exemplos da série.** 88, 55 e 22 formam sets; 77, 66, 44 e 33 estão à frente de A-high. É o contrário do [exemplo A-K-2](/pt/blog/3bet-pot-cbet), em que os underpairs tinham pouco a fazer. A construção do range de 3-bet determina essa diferença; veja a [estratégia de 3-bet](/pt/blog/holdem-3bet "thumb:/images/holdem-3bet-hero.webp").
-- **Calcule o SPR antes de apostar.** Com SPR 4, duas apostas de dois terços (14,9 → 34,5) e um all-in de 39,6bb no river completam exatamente 89bb. Ao apostar no flop, você já precisa ter decidido se pretende seguir até o fim.
+- **Calcule o SPR antes de apostar.** Com SPR 4, duas apostas de dois terços (14,9 → 34,5) e um all-in de 39,6bb no river completam exatamente 89bb. Depois da aposta no flop, o resto do stack fica a uma ou duas apostas de distância; então decida, antes dessa primeira aposta, em quais turns e rivers vai continuar apostando. Turn e river não estão nesta resolução, e o runout ou o adversário ainda podem mudar a resposta.
 
 :::readnext[Continue lendo]
 /pt/blog/3bet-pot-bet-sizing | Q-T-7: 98,4% no mesmo tamanho | /images/gto-3bp-dynamic-oop-pt.webp
@@ -155,13 +155,13 @@ O motivo está na localização dos sets. **Só o botão pode ter um**, e esses 
 
 ## Como conferir no solver de poker?
 
-Você encontra estes números abrindo o [solver de poker](/pt/solver) e seguindo **Spots de estudo → "Board baixo e seco" → [⚡ Ver resultados]**. Para jogar o mesmo spot como exercício, abra o [Treinador GTO](/pt/solver) na barra lateral. Ele distribui uma mão aleatória e, depois que você escolhe a ação, mostra a frequência da estratégia mista e a **perda de EV (bb)** da sua escolha. Sem login, o histórico fica no seu navegador.
+Você encontra estes números abrindo o [solver de poker](/pt/solver) e seguindo **Spots de estudo → "Board baixo e seco" → [⚡ Ver resultados]**. Para jogar o mesmo spot como exercício, abra o [Treinador GTO](/pt/solver) na barra lateral. Ele distribui uma mão aleatória e, depois que você escolhe a ação, mostra a frequência da estratégia mista e a **perda de EV (bb)** da sua escolha. Por padrão, o histórico fica neste dispositivo; ao entrar com uma conta HoldemMaster, o histórico de Spots de estudo e do Desafio do dia é sincronizado entre dispositivos.
 
 Procure a **ausência da linha "Set/Trinca"** no painel Mãos. Depois mude Jogador para "IP (BTN (caller))": a linha aparece com 6,3%. Ela resume quem tem o topo deste board. É gratuito, sem instalação e sem necessidade de conta.
 
 **Q. Devo dar c-bet com A-K num flop baixo em pote de 3-bet?**
 
-A. Neste exemplo, A-K participa de um range que aposta quase inteiro: no 8-5-2, o tamanho grande recebe 97,8% do range, apesar de A-K não ter par nem draw imediato. O motivo é o formato **polarizado — overpairs ou A-high, em duas parcelas de tamanho parecido**. Com quase nada no meio, o tamanho cresce e é usado amplamente. Os 58,3% do adversário que não fizeram par ajudam a explicar o contexto, mas não significam "58,3% folda": a resposta à aposta não está nesta resolução.
+A. Neste exemplo, A-K participa de um range que aposta quase inteiro: no 8-5-2, o tamanho grande recebe 97,8% do range, apesar de A-K não ter par nem draw imediato (só backdoor draws: uma wheel runner-runner e, nos três combos do mesmo naipe, um backdoor de flush). O motivo é o formato **polarizado — overpairs ou A-high, em duas parcelas de tamanho parecido**. Com quase nada no meio, o tamanho cresce e é usado amplamente. Os 58,3% do adversário que não fizeram par ajudam a explicar o contexto, mas não significam "58,3% folda": a resposta à aposta não está nesta resolução.
 
 **Q. O que significa um range polarizado?**
 

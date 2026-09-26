@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "odds",
   date: "2026-07-08",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-24",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "💰",
@@ -87,7 +87,7 @@ Tienes ==b:A♥ K♥== en una mesa ==Q♥ 7♥ 2♣ 3♠== — el proyecto de co
 - **Primero las pot odds:** te dan 150 a 50, o 3 a 1, así que necesitas **25%** de equity. Tu color liga en el river solo el ==r:19.6%== de las veces (9 outs ÷ 46 cartas desconocidas — contamos solo los outs de color a propósito; emparejar el as o el rey no basta para estar seguro de ir por delante, así que las sobrecartas no son outs limpios). 19.6% es menos que 25%, así que el precio inmediato dice ==r:fold.==
 - **Ahora las odds implícitas:** x = (call ÷ % de ligar) − (bote + call) = (50 ÷ 0.196) − (150 + 50) = 255 − 200 = ==g:unos $55.== Ese es el extra que debes ganar en el river cuando tu color caiga.
 
-Así que la pregunta no es "¿debería pagar $50?". Es "**cuando caiga un corazón, ¿puedo ganar al menos $55 más?**". Contra un rival profundo que pagará una apuesta en el river con top pair o un set, es fácil — pagas. Contra alguien con $40 detrás, o en una mesa donde un cuarto corazón le mata la acción, no puedes — así que foldeas.
+Así que la pregunta no es "¿debería pagar $50?". Es "**cuando caiga un corazón, ¿puedo ganar al menos $55 más?**". Contra un rival profundo que pagará una apuesta en el river con top pair, es fácil — pagas. Contra alguien con $40 detrás, o contra alguien que se frena en cuanto cae un tercer corazón en la mesa, no puedes — así que foldeas. (Contra un set es aún más difícil: el 2♥ y el 3♥ emparejan la mesa y pueden darle full al set, lo que te deja 7 outs limpios y una x de unos $129.)
 
 :::note
 El mismo call de $50, decisiones opuestas — y las cartas nunca cambiaron. Lo que cambió es cuánto dinero queda por ganar. Eso son las odds implícitas en una frase.
@@ -110,7 +110,7 @@ El mismo call de $50, decisiones opuestas — y las cartas nunca cambiaron. Lo q
 
 </div>
 
-Dos fuerzas fijan el número. **Frecuencia:** un gutshot liga la mitad de veces que un proyecto de color, así que necesita que el pago sea más o menos el doble de grande para quedar en tablas. **Disfraz:** un set escondido cobra mucho más que un color obvio en un board monocolor, porque tu rival no puede ponerte en él — que es la razón por la que los sets toleran su baja probabilidad de ligar. El [proyecto de color al nut vale mucho más que uno bajo](/es/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") por el mismo motivo: cobra *y* no pierde cuando liga.
+Dos fuerzas fijan el número. **Frecuencia:** un gutshot liga la mitad de veces que un proyecto de color, así que necesita que el pago sea más o menos el doble de grande para quedar en tablas. **Disfraz:** un set escondido cobra mucho más que un color obvio en un board monocolor, porque tu rival no puede ponerte en él — que es la razón por la que los sets toleran su baja probabilidad de ligar. El [proyecto de color al nut vale mucho más que uno bajo](/es/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") por el mismo motivo: cobra *y* nunca pierde contra un color más alto cuando liga.
 
 ---
 
@@ -145,7 +145,7 @@ Suben el valor de un proyecto | Bajan el valor de un proyecto
 
 Tres spots clásicos de reverse implied:
 
-- **El color bajo.** Tienes ==b:7♦ 6♦== y la mesa trae un tercer diamante. Ligas tu color — y pagas un stack al tipo que tiene ==b:A♦== para el color al nut. Tu carta "ganadora" te costó dinero.
+- **El color bajo.** Tienes ==b:7♦ 6♦== y la mesa trae un tercer diamante. Ligas tu color — y pagas un stack al tipo que tiene ==b:A♦== con un segundo diamante — el color al nut. Tu carta "ganadora" te costó dinero.
 - **El extremo tonto de una escalera.** Tienes ==b:6♦ 5♦== en ==b:9♥ 8♣ 2♠==, y un 7 en el turn te hace 5-6-7-8-9. Pero es el extremo *bajo* — cualquiera con J-10 tiene ahora 7-8-9-10-==g:J==, una escalera mayor, y la mismísima carta que necesitabas le paga a él.
 - **El top pair dominado.** Emparejas tu rey con un kicker débil y sigues pagando — de cabeza contra un A-K.
 
@@ -161,9 +161,9 @@ Vigila estas fugas:
 
 :::card
 🚫 | El rival está all-in | Sin calles futuras no hay dinero futuro suyo. En mano a mano, odds implícitas = 0 — usa solo pot odds
-📉 | Stacks cortos detrás | Si solo queda medio bote por ganar, "me pagarán en el river" es una fantasía
+📉 | Stacks cortos detrás | Si lo que queda detrás es menos que la x que necesitas, "me pagarán en el river" es una fantasía
 🙅 | Un rival que no paga | Un nit que solo apuesta el nut no pagará tu color. Tus odds implícitas viven y mueren según su disposición a pagar
-🃏 | Una mesa peligrosa | Si la carta que completa tu proyecto también congela la acción (cuatro a color, mesa emparejada), nadie te paga
+🃏 | Una mesa peligrosa | Si la carta que completa tu proyecto también congela la acción (cuatro a color, mesa emparejada), menos manos te pagan — y las que lo hacen pueden ganarte
 🎣 | Dar el stack por hecho | "Puede que caiga y puede que meta todo el stack" son dos suposiciones apiladas sobre un fold. Estima conservador
 :::
 
@@ -200,7 +200,7 @@ A. Las reverse implied odds son las fichas extra que te cuesta un proyecto compl
 
 **Q. ¿Qué son unas buenas odds implícitas — cuánto necesitas?**
 
-A. Depende de tu proyecto. Los proyectos de color y de escalera abierta necesitan alrededor de 8–10× el call en stacks detrás; el set mining necesita unos 15–20× (la "regla del 5%"). Cuanto más difícil es ligar el proyecto, más profundos tienen que ser los stacks para justificar el call.
+A. Depende de tu proyecto. Los proyectos de color y de escalera abierta necesitan alrededor de 8–10× el call en stacks detrás; el set mining necesita unos 15–20× como rango práctico, y la "regla del 5%", más estricta, pide 20×. Cuanto más difícil es ligar el proyecto, más profundos tienen que ser los stacks para justificar el call.
 
 **Q. ¿Se aplican las odds implícitas cuando tu rival está all-in?**
 

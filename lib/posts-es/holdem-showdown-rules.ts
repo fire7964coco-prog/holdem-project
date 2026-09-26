@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "rules",
   date: "2026-06-15",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-22",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -41,7 +41,7 @@ La regla depende de cómo terminó la última ronda de apuestas (para la secuenc
 |--------------------|-----------------|
 | Alguien apostó o subió en el river | ==El último jugador que apostó o subió== enseña primero — salvo que fuera un all-in en torneo (ver abajo) |
 | Todos pasaron en el river | El primer jugador activo a la izquierda del botón enseña primero |
-| All-in en una calle anterior (sin apuestas en el river) | Torneo: todas las manos se muestran sin demora en cuanto termina toda la acción de apuestas (regla 16 de la TDA). Cash: si hay side pot, los del side pot enseñan primero; y en una partida sin límite, el que fue all-in da la vuelta primero (regla 149 de las Live Action Rules) |
+| All-in en una calle anterior (sin apuestas en el river) | Torneo: todas las manos se muestran sin demora en cuanto termina toda la acción de apuestas (regla 16 de la TDA 2024). Cash: si hay side pot, los del side pot enseñan primero; y en una partida sin límite, el que fue all-in da la vuelta primero (regla 149 de las Live Action Rules) |
 
 </div>
 
@@ -57,11 +57,11 @@ Sí — **si has perdido**.
 
 Una vez que el último agresor enseña su mano, el resto de jugadores puede:
 - **Enseñar su mano** si creen que ganan
-- **Tirarla boca abajo al muck** si ven que han perdido — no hace falta revelar tus cartas. Eso solo vale mientras nadie haya ido all-in: en torneo, en cuanto un jugador está all-in **y se ha cerrado toda la acción de apuestas de los demás**, la regla 16 de la TDA obliga a enseñar todas las manos del bote y nadie puede tirar. Mientras los demás conserven fichas y puedan apostar, todo sigue boca abajo (en cash mandan las reglas de la casa, y la mayoría de los casinos deja tirar al que pagó)
+- **Tirarla boca abajo al muck** si ven que han perdido — no hace falta revelar tus cartas. Eso solo vale mientras nadie haya ido all-in: en torneo, en cuanto un jugador está all-in **y se ha cerrado toda la acción de apuestas de los demás**, la regla 16 de la TDA 2024 obliga a enseñar todas las manos del bote y nadie puede tirar. Mientras los demás conserven fichas y puedan apostar, todo sigue boca abajo (en cash mandan las reglas de la casa, y la mayoría de los casinos deja tirar al que pagó)
 
-==r:Pero hay una excepción importante:== si tu apuesta del river fue pagada, el que pagó puso el precio completo por ver tu mano. Pedirle al dealer que dé la vuelta a una mano tirada al muck es la regla de **"I want to see that hand"**. En torneo la regla 18 de la TDA la acota: quien ya no tiene cartas en el showdown, o las tiró boca abajo, pierde el derecho a pedirlo; el derecho es intocable solo para quien pagó la apuesta del river y conserva o ha enseñado sus cartas, y solo sobre la mano del último agresor. Lo demás queda a criterio del director del torneo. En cash mandan las reglas de la casa, y no son automáticamente más laxas: con las WSOP Live Action Rules, pedir ver una mano que no se ha expuesto exige sospecha de colusión **y** la presencia de un floor (==regla 147 de las Live Action Rules==). (No la confundas con "show one, show all", que significa que si enseñas tus cartas voluntariamente a un jugador, toda la mesa tiene derecho a verlas.)
+==r:Pero hay una excepción importante:== si tu apuesta del river fue pagada, el que pagó puso el precio completo por ver tu mano. Pedirle al dealer que dé la vuelta a una mano tirada al muck es la regla de **"I want to see that hand"**. En torneo la regla 18 de la TDA 2024 la acota: quien ya no tiene cartas en el showdown, o las tiró boca abajo, pierde el derecho a pedirlo; el derecho es intocable solo para quien pagó la apuesta del river y conserva o ha enseñado sus cartas, y solo sobre la mano del último agresor. Lo demás queda a criterio del director del torneo. En cash mandan las reglas de la casa, y no son automáticamente más laxas: con las WSOP Live Action Rules, pedir ver una mano que no se ha expuesto exige sospecha de colusión **y** la presencia de un floor (==regla 147 de las Live Action Rules==). (No la confundas con "show one, show all", que significa que si enseñas tus cartas voluntariamente a un jugador, toda la mesa tiene derecho a verlas.)
 
-Regla práctica: ==como último agresor enseñas tú, también con el farol pagado.== Tirar boca abajo es la opción del que paga, después de ver la mano del apostador. Si apuestas y tiras rápido pierdes dos veces: en torneo el que pagó por verla puede exigir tu mano igualmente (==regla 18 de la TDA==) — en un cash de las WSOP no puede, salvo sospecha de colusión y con un floor delante (regla 147 de las Live Action Rules) — y, como mandan las cartas, más de un bote se ha tirado con un as alto que iba ganando.
+Regla práctica: ==como último agresor enseñas tú, también con el farol pagado.== Tirar boca abajo es la opción del que paga, después de ver la mano del apostador. Si apuestas y tiras rápido pierdes dos veces: en torneo el que pagó por verla puede exigir tu mano igualmente (==regla 18 de la TDA 2024==) — en un cash de las WSOP no puede, salvo sospecha de colusión y con un floor delante (regla 147 de las Live Action Rules) — y, como mandan las cartas, más de un bote se ha tirado con un as alto que iba ganando.
 
 ---
 
@@ -77,14 +77,14 @@ Ejemplo: el botón, la ciega pequeña y la ciega grande llegan al river. La SB p
 
 ## Reglas del showdown con all-in — ¿enseña primero el jugador que va all-in?
 
-En **torneo**, cuando un jugador va all-in y ya no hay más apuestas posibles, las cartas comunitarias restantes se reparten con **todas las manos boca arriba** (==regla 16 de la TDA==). Esto protege la integridad de la mano — nadie debería poder tirar sus cartas estratégicamente en una situación de all-in. **En cash mandan las reglas de la casa**, y las WSOP Live Action Rules lo plantean al revés: **en una partida sin límite**, si las apuestas terminaron antes del river, el que fue all-in es el responsable de dar la vuelta primero; y en cualquier partida de cash, si hay side pot, quienes lo disputan enseñan antes que quien solo está all-in por el bote principal (==regla 149 de las Live Action Rules==).
+En **torneo**, cuando un jugador va all-in y ya no hay más apuestas posibles, las cartas comunitarias restantes se reparten con **todas las manos boca arriba** (==regla 16 de la TDA 2024==). Esto protege la integridad de la mano — nadie debería poder tirar sus cartas estratégicamente en una situación de all-in. **En cash mandan las reglas de la casa**, y las WSOP Live Action Rules lo plantean al revés: **en una partida sin límite**, si las apuestas terminaron antes del river, el que fue all-in es el responsable de dar la vuelta primero; y en cualquier partida de cash, si hay side pot, quienes lo disputan enseñan antes que quien solo está all-in por el bote principal (==regla 149 de las Live Action Rules==).
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Escenario de all-in | Regla del showdown |
 |----------------|---------------|
 | Un jugador va all-in en una calle anterior, los demás pagan, no hay más apuestas posibles | Torneo: todas las manos se muestran sin demora en cuanto termina toda la acción de apuestas. Cash: si hay side pot, los del side pot enseñan primero; y en una partida sin límite, el jugador all-in da la vuelta primero (regla 149 de las Live Action Rules) |
-| Una apuesta all-in en el river es pagada | Cash: el que fue all-in enseña primero como último agresor. Torneo: no hay ningún orden de mostrar — por la regla 16 de la TDA todas las manos se ponen boca arriba a la vez y ==r:aquí no puede tirar nadie== |
+| Una apuesta all-in en el river es pagada | Cash: el que fue all-in enseña primero como último agresor. Torneo: no hay ningún orden de mostrar — por la regla 16 de la TDA 2024 todas las manos se ponen boca arriba a la vez y ==r:aquí no puede tirar nadie== |
 | Varios all-ins que crean varios side pots | Cada bote se resuelve por separado; se enseñan todas las manos implicadas |
 
 </div>
@@ -103,7 +103,7 @@ Para ver cómo se forman y se pagan los side pots cuando hay jugadores all-in, m
 
 Si un jugador lee mal su mano y dice "tengo pareja", pero en realidad tiene escalera — gana la escalera. El dealer lee las cartas y empuja el bote hacia la mejor mano enseñada.
 
-Y funciona en los dos sentidos. Si crees que has perdido y tiras sin enseñar, pero tu mano era la ganadora — ==r:el bote se ha ido==. Tu mano está muerta en cuanto el dealer la empuja al muck, o cuando ya no se puede identificar ni recuperar — las cartas puestas boca abajo no mueren automáticamente (regla 14 de la TDA). Aun así, nunca cuentes con ello. Si no estás seguro al 100% de haber perdido, deja siempre que el dealer lea tu mano antes de tirarla.
+Y funciona en los dos sentidos. Si crees que has perdido y tiras sin enseñar, pero tu mano era la ganadora — ==r:el bote se ha ido==. Tu mano está muerta en cuanto el dealer la empuja al muck, o cuando ya no se puede identificar ni recuperar — las cartas puestas boca abajo no mueren automáticamente (regla 14 de la TDA 2024). Aun así, nunca cuentes con ello. Si no estás seguro al 100% de haber perdido, deja siempre que el dealer lea tu mano antes de tirarla.
 
 Situación real: llevas J♥ 10♥ en una mesa Q♥ 9♥ 8♥ 2♣ 5♦. Tienes escalera de color a la reina (Q-J-10-9-8 de corazones). El rival enseña K♣ Q♦ (una pareja de reinas). Ganas de calle. No tires tus cartas solo porque le veas la reina.
 
@@ -143,11 +143,11 @@ Apuestas el river. Alguien te paga. Te quedas quieto esperando a que enseñe él
 
 ### Error 2: tirar las cartas antes de que el dealer lea la mano
 
-Estás casi seguro de que has perdido. Deslizas tus cartas boca abajo hacia el muck. El dealer las recoge. Resulta que llevabas la ganadora. Por la ==regla 14 de la TDA== la mano está muerta en el momento en que el dealer la empuja al muck, y el bote casi seguro perdido — aun así, llama al floor antes de rendirte: el reglamento de torneos de las WSOP permite a la dirección recuperar una mano que siga siendo claramente identificable, y manda hacer un esfuerzo extra si el muck fue **causado** por un error del dealer o por una información equivocada (reglas 109 y 110). ==No tires nunca hasta estar seguro.== Deja que el dealer lea las dos manos.
+Estás casi seguro de que has perdido. Deslizas tus cartas boca abajo hacia el muck. El dealer las recoge. Resulta que llevabas la ganadora. Por la ==regla 14 de la TDA 2024== la mano está muerta en el momento en que el dealer la empuja al muck, y el bote casi seguro perdido — aun así, llama al floor antes de rendirte: el reglamento de torneos de las WSOP permite a la dirección recuperar una mano que siga siendo claramente identificable, y manda hacer un esfuerzo extra si el muck fue **causado** por un error del dealer o por una información equivocada (reglas 109 y 110). ==No tires nunca hasta estar seguro.== Deja que el dealer lea las dos manos.
 
 ### Error 3: exigir ver todas las manos pagadas
 
-En la mayoría de los casinos puedes pedirle al dealer que exponga una mano tirada al muck. En torneo el derecho está muy acotado: solo si enseñaste tus cartas o todavía las tienes — quien tiró boca abajo lo pierde por completo (==regla 18-A de la TDA==). Más allá de eso, solo hay una petición garantizada: la mano del último agresor, la que alguien pagó por ver. Todo lo demás — incluida una mano que nunca se pagó, o un river sin apuesta — queda a criterio del director, que no es lo mismo que denegado (==regla 18-B de la TDA==). Una mano foldeada está muerta en cuanto entra en el muck, y solo una mano que siga siendo claramente identificable puede recuperarse (regla 109 del reglamento de torneos de las WSOP). Esta regla existe para proteger contra el chip dumping (regalar fichas a un cómplice) y la colusión, no para satisfacer la curiosidad, y abusar de ella se considera de mala educación. Úsala con cuentagotas.
+En la mayoría de los casinos puedes pedirle al dealer que exponga una mano tirada al muck. En torneo el derecho está muy acotado: solo si enseñaste tus cartas o todavía las tienes — quien tiró boca abajo lo pierde por completo (==regla 18-A de la TDA 2024==). Más allá de eso, solo hay una petición garantizada: la mano del último agresor, la que alguien pagó por ver. Todo lo demás — incluida una mano que nunca se pagó, o un river sin apuesta — queda a criterio del director, que no es lo mismo que denegado (==regla 18-B de la TDA 2024==). Una mano foldeada está muerta en cuanto entra en el muck, y solo una mano que siga siendo claramente identificable puede recuperarse (regla 109 del reglamento de torneos de las WSOP). Esta regla existe para proteger contra el chip dumping (regalar fichas a un cómplice) y la colusión, no para satisfacer la curiosidad, y abusar de ella se considera de mala educación. Úsala con cuentagotas.
 
 ### Error 4: no saber que puedes enseñar antes de tu turno
 
@@ -176,11 +176,11 @@ A. El último jugador que hizo una acción agresiva (apostar o subir) en la últ
 
 **Q. ¿Tienes que enseñar tus cartas si te pagan en el showdown?**
 
-A. Sí — si fuiste el último en apostar o subir en el river, debes enseñar primero cuando te pagan. Si pagaste la apuesta de otro, puedes tirar tus cartas boca abajo tras ver su mano si has perdido. La excepción es un all-in en torneo: por la regla 16 de la TDA el que paga también tiene que enseñar. Y en torneo el derecho garantizado a pedir es de quien **pagó la apuesta del river** — siempre que haya enseñado o aún conserve sus cartas — y cubre únicamente la mano del último agresor, la que pagó por ver (==regla 18 de la TDA==). Quien tiró sus cartas boca abajo ya no puede pedir nada, y cualquier otra petición queda a criterio del director — lo que no equivale a una negativa automática (==regla 18-B de la TDA==). En cash mandan las reglas de la casa: con las WSOP Live Action Rules hace falta sospecha de colusión y un floor presente (regla 147).
+A. Sí — si fuiste el último en apostar o subir en el river, debes enseñar primero cuando te pagan. Si pagaste la apuesta de otro, puedes tirar tus cartas boca abajo tras ver su mano si has perdido. La excepción es un all-in en torneo: por la regla 16 de la TDA 2024 el que paga también tiene que enseñar. Y en torneo el derecho garantizado a pedir es de quien **pagó la apuesta del river** — siempre que haya enseñado o aún conserve sus cartas — y cubre únicamente la mano del último agresor, la que pagó por ver (==regla 18 de la TDA 2024==). Quien tiró sus cartas boca abajo ya no puede pedir nada, y cualquier otra petición queda a criterio del director — lo que no equivale a una negativa automática (==regla 18-B de la TDA 2024==). En cash mandan las reglas de la casa: con las WSOP Live Action Rules hace falta sospecha de colusión y un floor presente (regla 147).
 
 **Q. ¿Puedes tirar tus cartas en el showdown sin enseñarlas?**
 
-A. Sí, pero solo si has perdido claramente. Una vez enseñada la mano ganadora, los jugadores que pierden pueden tirar sus cartas boca abajo. La excepción es que tu mano haya sido pagada — quien pagó puede pedir verla — y que sea un torneo: en cuanto un jugador está all-in y se ha completado toda la acción de apuestas, hay que enseñar todas las manos del bote principal y de los side pots, así que nadie puede tirar (regla 16 de la TDA). Si hay cualquier duda sobre quién ganó, no tires nunca antes de que el dealer lea las dos manos.
+A. Sí, pero solo si has perdido claramente. Una vez enseñada la mano ganadora, los jugadores que pierden pueden tirar sus cartas boca abajo. Las excepciones son reglas de torneo: si hiciste la última apuesta del river y te pagaron, quien pagó por ver tu mano puede exigirla (regla 18-B de la TDA 2024 — en una partida de cash de la WSOP no puede, salvo sospecha de colusión), y en cuanto un jugador está all-in y se ha completado toda la acción de apuestas, hay que enseñar todas las manos del bote principal y de los side pots, así que nadie puede tirar (regla 16 de la TDA 2024). Si hay cualquier duda sobre quién ganó, no tires nunca antes de que el dealer lea las dos manos.
 
 **Q. ¿Qué es el slow roll en el póker y por qué está mal visto?**
 
@@ -188,11 +188,11 @@ A. El slow roll es retrasar a propósito enseñar una mano ganadora que ya sabes
 
 **Q. En una situación de all-in, ¿quién enseña primero?**
 
-A. En torneo, cuando un jugador va all-in y no son posibles más apuestas, todas las manos implicadas en ese bote se muestran sin demora en cuanto termina toda la acción de apuestas — antes de repartir las cartas comunitarias restantes (regla 16 de la TDA). Si hay side pot, se adjudica primero y el bote principal después — pero las cartas del all-in ya están boca arriba mucho antes. En cash sin límite, si las apuestas terminaron antes del river, las WSOP Live Action Rules hacen que el que fue all-in dé la vuelta primero; en cualquier partida de cash, los del side pot enseñan antes que quien solo está all-in por el bote principal (regla 149).
+A. En torneo, cuando un jugador va all-in y no son posibles más apuestas, todas las manos implicadas en ese bote se muestran sin demora en cuanto termina toda la acción de apuestas — antes de repartir las cartas comunitarias restantes (regla 16 de la TDA 2024). Si hay side pot, se adjudica primero y el bote principal después — pero las cartas del all-in ya están boca arriba mucho antes. En cash sin límite, si las apuestas terminaron antes del river, las WSOP Live Action Rules hacen que el que fue all-in dé la vuelta primero; en cualquier partida de cash, los del side pot enseñan antes que quien solo está all-in por el bote principal (regla 149).
 
 **Q. ¿Qué significa "cards speak" en el póker?**
 
-A. Cards speak («las cartas hablan») significa que gana la mejor mano según lo que muestran realmente las cartas — no según lo que digan los jugadores. Un jugador que lee mal su mano y anuncia una mano equivocada gana igualmente si sus cartas son en realidad la mejor mano. Y al revés: quien tira sus cartas sin verificar que ha perdido casi siempre regala el bote: la mano está muerta en cuanto el dealer la empuja al muck, o en cuanto deja de poder identificarse, aunque hubiera ganado (regla 14 de la TDA — hasta entonces, las cartas boca abajo que siguen siendo 100% identificables y recuperables aún se pueden enseñar, pero nunca cuentes con ello).
+A. Cards speak («las cartas hablan») significa que gana la mejor mano según lo que muestran realmente las cartas — no según lo que digan los jugadores. Un jugador que lee mal su mano y anuncia una mano equivocada gana igualmente si sus cartas son en realidad la mejor mano. Y al revés: quien tira sus cartas sin verificar que ha perdido casi siempre regala el bote: la mano está muerta en cuanto el dealer la empuja al muck, o en cuanto deja de poder identificarse, aunque hubiera ganado (regla 14 de la TDA 2024 — hasta entonces, las cartas boca abajo que siguen siendo 100% identificables y recuperables aún se pueden enseñar, pero nunca cuentes con ello).
 
 **Q. ¿Tienes que enseñar tus cartas si ganas sin showdown?**
 

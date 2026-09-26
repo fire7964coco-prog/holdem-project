@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Nel Texas Hold'em ogni giocatore riceve 2 carte personali, si usano 5 carte comuni e, dopo quattro giri di puntate, vince la migliore mano di 5 carte.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-19",
+  updated: "2026-09-26",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -186,7 +186,7 @@ Se stai facendo un piccolo cash game casalingo, scegli un buy-in che tutti siano
 
 ==r:Non partire con poste che rendono la gente nervosa.== I principianti nervosi non imparano più in fretta. Passano solo troppo, chiamano troppo di pancia o litigano sulle regole.
 
-Nota che il buy-in di un **torneo** funziona in modo diverso da un cash game: paghi un'iscrizione fissa, ricevi uno stack prestabilito di fiches non convertibili in denaro e giochi finché un solo giocatore non le ha tutte. Se non sei sicuro di quale preferisci, leggi prima la differenza tra cash game e torneo.
+Nota che il buy-in di un **torneo** funziona in modo diverso da un cash game: paghi un'iscrizione fissa, ricevi uno stack prestabilito di fiches non convertibili in denaro e giochi finché un solo giocatore non le ha tutte (nei tornei con re-entry puoi ricomprarti dopo essere stato eliminato). Se non sei sicuro di quale preferisci, leggi prima la differenza tra cash game e torneo.
 
 Per allenarti online, usa i tavoli gratuiti finché non riesci a spiegare l'ordine di parola senza pensarci. Poi sali di livello lentamente.
 
@@ -194,7 +194,7 @@ Per allenarti online, usa i tavoli gratuiti finché non riesci a spiegare l'ordi
 
 ## No-Limit, Limit o Pot-Limit? Che Texas Hold'em stai giocando?
 
-Quando si dice "Texas Hold'em", quasi sempre si intende il **No-Limit Hold'em (NLHE)** — il formato usato nel Main Event delle WSOP e in quasi ogni partita casalinga. La distribuzione delle carte, i bui e la classifica dei punti sono identici in tutti e tre i formati. L'unica cosa che cambia è **quanto ti è permesso puntare.**
+Quando si dice "Texas Hold'em", quasi sempre si intende il **No-Limit Hold'em (NLHE)** — il formato usato nel Main Event delle WSOP e in quasi ogni partita casalinga. La distribuzione delle carte e la classifica dei punti sono identiche in tutti e tre i formati. La cosa che cambia davvero è **quanto ti è permesso puntare** — e il Fixed-Limit di solito limita anche il numero di rilanci per giro (alle WSOP: una puntata più quattro rilanci).
 
 | Formato | Quanto puoi puntare? | Dove lo trovi |
 |--------|-----------------------|---------------------|
@@ -299,7 +299,7 @@ Le tue probabilità del piatto sono **$120 contro $20**, ovvero **6 a 1**. Signi
 
 ### La regola del 2 e del 4 — la scorciatoia istantanea per le probabilità
 
-Quando hai una mano in progetto (per esempio quattro carte per un Colore), conta i tuoi **out** — le carte che completano la tua mano.
+Quando hai una mano in progetto (per esempio quattro carte per un Colore), conta i tuoi **out** — le carte che trasformano il tuo progetto in una mano probabilmente vincente.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -414,7 +414,7 @@ A. La versione più semplice: ogni giocatore riceve 2 carte private. Cinque cart
 
 **Q. Regole del Texas Hold'em spiegate facili — cosa significano i bui?**
 
-A. I due giocatori alla sinistra del bottone del mazziere devono mettere puntate obbligate prima che vengano date le carte. Il primo mette il piccolo buio, il secondo il grande buio (di solito il doppio). Queste puntate garantiscono che ci siano sempre soldi nel piatto per cui combattere. Ogni altro giocatore deve almeno pareggiare il grande buio per restare nella mano.
+A. I due giocatori alla sinistra del bottone del mazziere devono mettere puntate obbligate prima che vengano date le carte. Il primo mette il piccolo buio, il secondo il grande buio (di solito il doppio). Queste puntate garantiscono che ci siano sempre soldi nel piatto per cui combattere. Ogni altro giocatore deve almeno pareggiare il grande buio per restare nella mano (oppure andare all-in per meno, se sono tutte le sue fiches).
 
 **Q. Qual è la versione rapida delle regole del Texas Hold'em?**
 

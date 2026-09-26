@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Mit einem Pocket Pair floppst du in 11,8% der Fälle ein Set (7,5:1 dagegen), mit zwei suited Karten nur 0,84% einen Flush, und einen gefloppten Flushdraw komplettierst du bis zum River in 35% der Fälle. Jede Zahl unten stammt aus dem Deck, nicht aus dem Bauch.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-09-24",
-  masterUpdated: "2026-09-24",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 Min.",
   emoji: "🎲",
@@ -44,9 +44,9 @@ Hier ist die Tabelle, die niemand an einem Ort baut. Die meisten Seiten nennen d
 
 | Holding | Fertig gefloppt | Den Draw gefloppt | Draw bis River komplett |
 |:---|:---:|:---|:---|
-| Pocket Pair → Set | 11,8% (7,5:1) | – | Set→Full House oder Quads 33% bis River |
+| Pocket Pair → Set | 11,8% (7,5:1) | – | Set→Full House oder Quads 33,4% bis River |
 | Zwei suited → Flush | 0,84% (118:1) | 10,9% Flushdraw | 35% (9 Outs) |
-| Connectors → Straße | 1,3% (76:1) | ~10% OESD | 31,5% (8 Outs) |
+| Connectors 54–JT → Straße | 1,3% (76:1) | ~10% OESD | 31,5% (8 Outs) |
 | Zwei ungepaart → Paar | ~32% | – | – |
 | Pocket Pair → Quads | 0,245% (407:1) | – | – |
 
@@ -87,7 +87,7 @@ Set Mining ist der pureste [Implied Odds](/de/blog/holdem-implied-odds "thumb:/i
 Zwei verwandte Zahlen, nach denen Leute fragen:
 
 - **Ein Set bis zum River zu treffen** (vom Preflop aus, mit allen fünf Boardkarten) liegt bei ==**19,2%**== – 1 − C(48,5)/C(50,5). Höher als die Flop-Zahl, weil du zwei weitere Karten bekommst, aber du kannst dich nicht darauf verlassen, den River billig zu erreichen, weshalb die Flop-Zahl das Set-Mining bestimmt.
-- **Set over Set** – zwei Spieler mit Pocket Pairs floppen in derselben Hand ein Set, und das kleinere verliert gegen das größere – hat keine einzelne feste Zahl, weil es davon abhängt, wie viele Gegner Paare halten, aber mit zwei Spielern, die beide Paare halten, landet es bei ~1%, dass *beide* ein Set floppen. Es ist der klassische Cooler: die Mathematik war die ganze Zeit auf deiner Seite.
+- **Set over Set** – zwei Spieler mit Pocket Pairs floppen in derselben Hand ein Set, und das kleinere verliert gegen das größere – hat keine einzelne feste Zahl, weil es davon abhängt, wie viele Gegner Paare halten, aber mit zwei Spielern, die beide Paare halten, landet es bei ~1%, dass *beide* ein Set floppen. Es ist der klassische Cooler – und der Verlust allein sagt dir nicht, ob der Set-Mining-Call richtig war; das entscheiden Preis und Stacks.
 
 ---
 
@@ -114,7 +114,7 @@ Der ehrliche Satz lautet also: zwei suited Karten floppen weit häufiger einen *
 
 Die Komplettierungs-Zahl teilt sich nach Street auf, was in dem Moment zählt, in dem noch Setzrunden übrig sind:
 
-- **Flop → River (beide Karten):** 35,0% – nutze das nur, wenn du am Flop All-in bist.
+- **Flop → River (beide Karten):** 35,0% – nutze das nur, wenn du beide Karten ohne weiteres Setzen siehst (du bist All-in oder hast ein All-in gecallt).
 - **Flop → Turn (eine Karte):** 9 ÷ 47 = 19,1%.
 - **Turn → River (eine Karte):** 9 ÷ 46 = 19,6%.
 
@@ -150,7 +150,7 @@ Beachte, dass der OESD (31,5%) und der Flushdraw (35%) nah beieinanderliegen –
 | **Quads** | Ein Pocket Pair | 0,245% · 407:1 | 48 ÷ 19.600 |
 | **Full House** | Ein Pocket Pair | 0,98% · 101:1 | 192 ÷ 19.600 |
 | **Trips** | Zwei ungepaarte Karten | 1,35% · 73:1 | 264 ÷ 19.600 |
-| **Straight Flush** | Suited Connectors | 0,02% · ~4.900:1 | 4 ÷ 19.600 |
+| **Straight Flush** | Suited Connectors 54s–JTs | 0,02% · ~4.900:1 | 4 ÷ 19.600 |
 
 </div>
 
@@ -196,7 +196,7 @@ A. Mit zwei ungepaarten Karten in rund **32%** der Flops – also etwa jede drit
 
 **Q. Wie hoch ist die Chance, ein Set zu floppen?**
 
-A. Etwa 11,8%, oder 1 von 8,5, wenn du ein Pocket Pair hältst – meist zitiert als „7,5:1 dagegen“. Sie kommt aus 1 − C(48,3)/C(50,3): von den 19.600 möglichen Flops verfehlen 17.296 dein Paar. Diese Zahl ist die gesamte Grundlage dafür, ob sich Set-Mining mit einem kleinen Paar lohnt.
+A. Etwa 11,8%, oder 1 von 8,5, wenn du ein Pocket Pair hältst – meist zitiert als „7,5:1 dagegen“. Sie kommt aus 1 − C(48,3)/C(50,3): von den 19.600 möglichen Flops verfehlen 17.296 dein Paar. Diese Zahl ist der Ausgangspunkt fürs Set-Mining mit einem kleinen Paar – ob sich der Call lohnt, hängt zusätzlich davon ab, wie viel du gewinnen kannst, wenn du triffst.
 
 **Q. Warum sagt man 7,5:1, aber auch 1 von 8?**
 
@@ -228,21 +228,21 @@ A. Ein Straight Draw sind vier Karten zu einer Straße. Ein Open-Ended Straight 
 
 **Q. Wie hoch ist die Chance, Quads zu floppen?**
 
-A. 0,245%, oder 407:1, mit einem Pocket Pair – es gibt genau 48 Flops (deine letzten zwei passenden Karten plus irgendeine dritte Karte, C(48,1)) von 19.600. Einen Straight Flush zu floppen ist mit etwa 1 von 4.900 noch seltener.
+A. 0,245%, oder 407:1, mit einem Pocket Pair – es gibt genau 48 Flops (deine letzten zwei passenden Karten plus irgendeine dritte Karte, C(48,1)) von 19.600. Einen Straight Flush mit Suited Connectors von 54s bis JTs zu floppen ist mit etwa 1 von 4.900 noch seltener.
 
 **Q. Wie hoch ist die Chance, Pocket Aces zu bekommen?**
 
-A. 220:1 (0,45%) speziell für Aces – 6 der 1.326 Startkombinationen. Irgendein Pocket Pair ist mit 16:1 (5,9%) weit häufiger. Und wenn du an einem vollen Tisch Aces hast, hält ein anderer Spieler ebenfalls Aces mit etwa 1 zu 136.
+A. 220:1 (0,45%) speziell für Aces – 6 der 1.326 Startkombinationen. Irgendein Pocket Pair ist mit 16:1 (5,9%) weit häufiger. Und wenn du an einem Tisch mit zehn Spielern Aces hast, hält ein anderer Spieler ebenfalls Aces mit etwa 1 zu 136 (bei neun Spielern etwa 1 zu 153).
 
 **Q. Wie hoch ist die Chance auf Set over Set?**
 
-A. Es gibt keine einzelne feste Zahl – sie hängt davon ab, wie viele Gegner Pocket Pairs halten – aber mit zwei Spielern, die beide ein Pocket Pair halten, landet es bei rund 1%. Es ist der ultimative Cooler: du floppst überhaupt nur in 11,8% der Fälle ein Set, also ist es eine Geschichte, kein Fehler, wenn zwei von euch das auf demselben Board tun.
+A. Es gibt keine einzelne feste Zahl – sie hängt davon ab, wie viele Gegner Pocket Pairs halten – aber mit zwei Spielern, die beide ein Pocket Pair halten, landet es bei rund 1%. Es ist der ultimative Cooler: du floppst überhaupt nur in 11,8% der Fälle ein Set, also ist es selten, dass zwei von euch das auf demselben Board tun – und das Ergebnis allein zeigt nicht, ob einer der Calls ein Fehler war.
 
 ---
 
 ## Die 3 Dinge zum Merken
 
-1. **Ein Set floppen: 11,8% (7,5:1).** Die Zahl, die jeden Set-Mining-Call entscheidet – calle nur tief genug, um das 15-Fache oder mehr ausgezahlt zu bekommen, wenn du triffst.
+1. **Ein Set floppen: 11,8% (7,5:1).** Der Ausgangspunkt für jeden Set-Mining-Call – ob er sich lohnt, entscheiden Stacktiefe und ein Gegner, der wahrscheinlich zahlt; ziel also darauf, das 15-Fache oder mehr zu gewinnen, wenn du triffst.
 2. **Fertig vs. Draw vs. Komplett sind verschiedene Zahlen.** Zwei suited Karten floppen einen fertigen Flush 0,84%, einen Flushdraw 10,9% und komplettieren diesen Draw 35%. Nenne nie die falsche.
 3. **Ein großer Draw ist etwa einer von drei bis zum River.** Flushdraw 35%, Open-Ender 31,5% – und rund einer von fünf bis sechs auf einer einzelnen Street.
 

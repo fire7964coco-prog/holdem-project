@@ -10,7 +10,7 @@ export const POST: Post = {
   category: "strategy",
   date: "2026-09-15",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-24",
+  masterUpdated: "2026-09-26",
   readTime: "10 min",
   emoji: "👯",
   image: "/images/gto-srp-paired-oop-pt.webp",
@@ -176,7 +176,7 @@ Trips e quadra às vezes usam o tamanho pequeno: K♠6♠ em 0,3%, Q♥6♥ em 0
 
 A explicação está nas mãos com que o adversário pode pagar. Um seis está perto do topo neste spot, então há interesse em aumentar o pote. Como a maioria dos seis já dá check, **os poucos que apostam têm motivo para escolher um tamanho grande.** Dois pares perdem para qualquer seis e para os três combos de 33, por isso têm menos interesse em um pote grande. O grupo que quer aumentar o pote prefere evitar a aposta pequena; o que quer receber um call mais modesto evita a grande.
 
-⚠ **Não leia isso como “quanto melhor o kicker, maior a aposta”: a tabela mostra o contrário.** A frequência da aposta grande segue K♠6♠ 7,8% < Q♥6♥ 7,9% < **J♥6♥ 9,0%**. O kicker mais fraco aposta mais. Não é possível atribuir essa diferença apenas ao bloqueio de trips pelo kicker: a carta seis na sua mão já elimina os combos suited daquele naipe, e K6o e Q6o não estão no range do botão. A tabela mostra a mistura calculada, mas não isola a causa dessas diferenças.
+⚠ **Não leia isso como “quanto melhor o kicker, maior a aposta”: a tabela mostra o contrário.** A frequência da aposta grande segue K♠6♠ 7,8% < Q♥6♥ 7,9% < **J♥6♥ 9,0%**. O kicker mais fraco aposta mais. Não é possível atribuir essa diferença apenas ao bloqueio de trips pelo kicker: a carta seis na sua mão já elimina os combos suited daquele naipe — K♠6♠, Q♥6♥ e J♥6♥ deixam ao botão exatamente 10 dos seus 20 combos de trips cada um —, e K6o e Q6o não estão no range do botão. A tabela mostra a mistura calculada, mas não isola a causa dessas diferenças.
 
 E os seis não respondem pela maior parte das apostas grandes: são 26 dos 486 combos e contribuem com cerca de 1,2 dos aproximadamente 9,6 combos de aposta grande, algo como um oitavo (13,0%). A maior parte do restante vem de mãos sem nenhum seis.
 

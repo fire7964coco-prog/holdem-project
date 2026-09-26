@@ -14,7 +14,7 @@ export const POST: Post = {
   //    · 522b57f8(09-11)=09-11 · queue Q5-a(09-13)=09-13.
   //    Q5-a는 판정식 «편집 전 masterUpdated ≥ 편집 전 EN updated»를 만족해 올렸다(09-11 ≥ 09-11).
   //    🔴 되돌리려면 EN 07-12~현재 델타를 먼저 실측하라 — 주석만 보고 되돌리지 마라.
-  masterUpdated: "2026-09-13",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "14 Min.",
   emoji: "♠️",
@@ -229,7 +229,7 @@ Wenn ihr ein kleines Heim-Cash-Game spielt, wähle ein Buy-in, dessen Verlust je
 
 ==r:Startet nicht mit Einsätzen, die jemanden nervös machen.== Nervöse Anfänger lernen nicht schneller. Sie folden nur zu viel, callen zu emotional oder streiten über die Regeln.
 
-Beachte, dass ein **Turnier**-Buy-in anders funktioniert als im Cash Game: Du zahlst einmal einen festen Eintritt, bekommst einen festen Stack an nicht auszahlbaren Chips und spielst, bis ein Spieler alle hat. Wenn du unsicher bist, was du willst, lies zuerst [Cash Game vs Turnier](/de/blog/holdem-tournament-vs-cash-game).
+Beachte, dass ein **Turnier**-Buy-in anders funktioniert als im Cash Game: Du zahlst einen festen Eintritt, bekommst einen festen Stack an nicht auszahlbaren Chips und spielst, bis ein Spieler alle hat (bei Re-Entry-Events kannst du dich nach dem Ausscheiden erneut einkaufen). Wenn du unsicher bist, was du willst, lies zuerst [Cash Game vs Turnier](/de/blog/holdem-tournament-vs-cash-game).
 
 Zum Online-Üben nutze Spielgeldtische, bis du die Setzreihenfolge erklären kannst, ohne nachzudenken. Dann steig langsam auf.
 
@@ -237,7 +237,7 @@ Zum Online-Üben nutze Spielgeldtische, bis du die Setzreihenfolge erklären kan
 
 ## No-Limit, Limit oder Pot-Limit? Welches Texas Hold'em spielst du?
 
-Wenn Leute „Texas Hold'em“ sagen, meinen sie fast immer **No-Limit Hold'em (NLHE)** – das Format des WSOP Main Events und praktisch jeder Heimrunde. Kartengeben, Blinds und Handreihenfolge sind in allen drei Formaten identisch. Das Einzige, was sich ändert, ist, **wie viel du setzen darfst.**
+Wenn Leute „Texas Hold'em“ sagen, meinen sie fast immer **No-Limit Hold'em (NLHE)** – das Format des WSOP Main Events und praktisch jeder Heimrunde. Kartengeben und Handreihenfolge sind in allen drei Formaten identisch. Das Wichtigste, was sich ändert, ist, **wie viel du setzen darfst** – und Fixed-Limit begrenzt meist zusätzlich, wie viele Raises eine Setzrunde erlaubt (bei der WSOP eine Bet und vier Raises).
 
 | Format | Wie viel darfst du setzen? | Wo du es antriffst |
 |--------|-----------------------|---------------------|
@@ -342,7 +342,7 @@ Deine Pot Odds sind **$120 zu $20**, also **6:1**. Das heißt: Du musst mindeste
 
 ### Die 2-und-4-Regel – Wahrscheinlichkeiten im Kopf
 
-Wenn du eine Draw-Hand hast (z. B. vier Karten zum Flush), zähle deine **Outs** – die Karten, die deine Hand komplettieren.
+Wenn du eine Draw-Hand hast (z. B. vier Karten zum Flush), zähle deine **Outs** – die Karten, die deinen Draw zu einer wahrscheinlichen Gewinnerhand machen.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "glossary",
   date: "2026-07-05",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-22",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "📖",
@@ -43,9 +43,9 @@ Kalau Anda hanya sempat memperjelas selusin istilah, jadikan yang ini — inilah
 | Yang sering tertukar | Bedanya |
 |:---|:---|
 | **Check vs Call** | Check tidak mempertaruhkan **chip apa pun** (hanya saat tidak ada lagi jumlah taruhan yang perlu Anda samai); call **menyamai** taruhan yang sudah ada. |
-| **Blind vs Ante** | Blind adalah taruhan wajib berdasarkan **posisi** (SB/BB); ante mengisi pot dan datang dari **semua orang** (di turnamen masa kini biasanya lewat big blind ante). |
+| **Blind vs Ante** | Blind adalah taruhan wajib berdasarkan **posisi** (SB/BB); ante mengisi pot — secara tradisional dari **semua orang**, meski sebagian besar turnamen kini memakai big blind ante yang dibayar satu kursi. |
 | **Set vs Trips** | Keduanya three of a kind — **set** memakai pocket pair; **trips** memakai satu kartu tertutup + pair di board. |
-| **Cooler vs Bad Beat** | [Cooler](/id/blog/holdem-cooler) = tangan terlalu kuat untuk fold bertemu tangan lebih besar (dalam arti ketat, Anda sudah tertinggal saat masuk); [bad beat](/id/blog/holdem-bad-beat) = Anda unggul lalu tersalip. |
+| **Cooler vs Bad Beat** | [Cooler](/id/blog/holdem-cooler) = tangan terlalu kuat untuk fold bertemu tangan lebih besar (dalam arti ketat, Anda sudah tertinggal saat masuk); [bad beat](/id/blog/holdem-bad-beat) = Anda favorit besar saat masuk lalu tersalip. |
 | **Value bet vs Bluff** | Value bet ingin **call dari tangan lebih lemah**; bluff ingin **tangan lebih kuat fold**. |
 | **Pot odds vs Implied odds** | [Pot odds](/id/blog/holdem-pot-odds) hanya menghitung chip **yang ada di pot sekarang**; implied odds menambah apa yang akan Anda **menangkan nanti**. |
 | **VPIP vs PFR** | VPIP = seberapa sering Anda **bermain**; PFR = seberapa sering Anda **raise**. PFR tak pernah melebihi VPIP. |
@@ -81,7 +81,7 @@ Segala hal yang bisa Anda lakukan secara fisik pada giliran Anda. Jika Anda bena
 | **Bluff / Semi-bluff** | Bluff bertaruh tangan lemah untuk memaksa tangan lebih baik fold; semi-bluff melakukannya dengan draw yang masih bisa membaik. |
 | **Check-raise** | Check, lalu raise setelah lawan bertaruh — garis kuat dan menipu (legal di room modern). |
 | **Min-raise** | Raise legal terkecil. |
-| **String bet** | Meletakkan chip dalam beberapa gerakan terpisah tanpa mendeklarasikannya — hanya gerakan pertama yang dihitung (biasanya diputuskan sebagai call). Mengucapkan "raise" lebih dulu membuat gerakan bertahap menjadi sah. |
+| **String bet** | Meletakkan chip dalam beberapa gerakan terpisah tanpa mendeklarasikannya — hanya gerakan pertama yang dihitung (biasanya diputuskan sebagai call). Mendeklarasikan jumlah raise penuh lebih dulu membuat gerakan bertahap menjadi sah; sebagian buku aturan (WSOP) menerima ucapan "raise" saja, sementara aturan TDA meminta jumlahnya disebutkan atau didorong dalam satu gerakan. |
 | **Jam / Shove** | Bergerak all-in. |
 | **Snap call** | Call instan tanpa ragu. |
 | **Hero call** | Call dengan tangan lemah karena Anda membaca lawan sedang bluff. |
@@ -174,7 +174,7 @@ Kebun binatang julukan untuk orang-orang di seberang felt. Rinciannya ada di [pa
 | **Calling station** | Pemain pasif yang terlalu banyak call dan jarang fold atau raise. |
 | **Reg** | Seorang "regular" — pemain rutin yang biasanya kompeten di suatu stake. |
 | **Grinder** | Pemain yang untung lewat volume stabil dan disiplin. |
-| **LAG / TAG** | Loose-aggressive / tight-aggressive — dua gaya agresif yang menang. |
+| **LAG / TAG** | Loose-aggressive / tight-aggressive — dua gaya agresif yang menjadi dasar kebanyakan pemain pemenang (gayanya sendiri tidak membuat siapa pun menang). |
 | **Maniac** | Pemain hiper-agresif yang raise dan bluff serampangan. |
 | **Mark** | Pemain lemah yang menjadi incaran seisi meja. |
 

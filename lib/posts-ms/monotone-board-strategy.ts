@@ -10,7 +10,7 @@ export const POST: Post = {
   category: "strategy",
   date: "2026-09-15",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-02",
+  masterUpdated: "2026-09-26",
   readTime: "10 minit",
   emoji: "♠️",
   image: "/images/gto-srp-monotone-oop-ms.webp",
@@ -70,7 +70,7 @@ Apabila keadaan begitu, bet besar menjadi kurang menarik untuk mendapatkan value
 
 :::compare
 Jika anda mempunyai flush | Jika anda tidak mempunyai flush
-Bet besar membuat kebanyakan tangan tanpa flush fold | Bet besar menumpukan tangan yang call kepada flush
+Bet besar membuat kebanyakan tangan tanpa flush fold | Bet besar kebanyakannya hanya di-call oleh flush dan draw spade
 Bet kecil mengekalkan satu pair dalam pot | Bet kecil murah, tetapi satu pair tidak mudah fold kepadanya
 :::
 
@@ -99,7 +99,7 @@ Sebab check bukan jumlah yang boleh dimenangi sekarang, tetapi jumlah keseluruha
 
 Angka itu memperlihatkan kesannya: **EQR sekitar 230%**, lebih dua kali nilai bahagian equity. Pot ialah 5.5 bb, tetapi A♠J♠ mempunyai EV (nilai jangkaan) ==12.36 bb==. Peluang kutipan pada street seterusnya bernilai lebih daripada pot yang sudah tersedia.
 
-Blocker juga kelihatan dalam jadual yang sama. **A♠J♠ dan A♠T♠ check lebih 80%, manakala A♠7♠ hingga A♠4♠ turun kepada 52–64% dan jauh lebih kerap bet.** Memegang J♠ atau T♠ mengurangkan **flush bukan nuts yang mengandungi kad tersebut**. ⚠ Tiada "flush J-high" pada board ini — Q♠ sudah berada di atas meja, jadi setiap flush sekurang-kurangnya Q-high, dan flush kedua terbaik ialah K-high. J♠ atau T♠ mengisi **kedudukan kicker** dalam flush seperti K♠J♠ atau J♠T♠. Tangan itulah yang boleh *call* bet anda. Mengeluarkannya daripada dek mengecilkan range yang boleh membayar, lalu mengurangkan nilai bet dan mendorong check. Kicker rendah tidak menyekat kombinasi tinggi tersebut, jadi lebih banyak tangan masih boleh membayar bet terus. (A♠3♠ yang kembali kepada 79.7% mengingatkan bahawa ini kecenderungan, bukannya peraturan mutlak.)
+Blocker juga kelihatan dalam jadual yang sama. **A♠J♠ dan A♠T♠ check lebih 80%, manakala A♠7♠ hingga A♠4♠ turun kepada 52–64% dan jauh lebih kerap bet.** Memegang J♠ atau T♠ mengurangkan **flush bukan nuts yang mengandungi kad tersebut**. ⚠ Tiada "flush J-high" pada board ini — Q♠ sudah berada di atas meja, jadi setiap flush sekurang-kurangnya Q-high, dan flush kedua terbaik ialah K-high. J♠ atau T♠ mengisi **kedudukan kicker** dalam flush seperti K♠J♠ atau J♠T♠. Namun blocker sahaja tidak menjelaskan pembahagian ini. Kira 18 flush bukan nuts milik BTN: J♠ dan T♠ masing-masing menyekat 4 daripadanya, manakala 7♠ menyekat 6, 8♠ dan 6♠ masing-masing 5, 5♠ menyekat 4 dan 4♠ hanya 2 — dan A♠7♠, blocker terbesar antara semuanya, masih bet 44.0%, kedua hanya selepas A♠4♠ (47.3%) yang menyekat 2 sahaja. Hanya 3♠ tidak menyekat apa-apa, dan A♠3♠ check 79.7%. Bagi setiap kombo nut flush, ketiga-tiga tindakan berada dalam lingkungan 0.05 bb antara satu sama lain, jadi bacalah lajur ini sebagai campuran antara pilihan yang hampir sama nilainya, bukan peraturan blocker.
 
 ## Adakah flush bukan nuts dimainkan secara berbeza?
 
@@ -138,7 +138,7 @@ Sebaliknya, BTN mempunyai jauh lebih banyak **Ace-x dan King-x offsuit dengan sa
 
 **Top pair yang sama menjadi tangan yang berbeza bergantung pada kewujudan spade.**
 
-Ambil Q♥J♦ — top pair tanpa spade. Ia sudah ketinggalan kepada **12.0%** range BTN (flush 5.7 + overpair 2.5, ditambah set dan two pair), serta kalah kicker kepada **AQ dan KQ**. Q♠ berada pada board dan Q♥ di tangan anda, jadi tinggal dua Queen: 8 kombo AQ dan 8 kombo KQ, atau **kira-kira 3.4%** daripada 474. Jumlah tangan yang sudah mendahului menjadi kira-kira **15.4%**. Selain itu, **29.2%** mempunyai draw yang boleh memintas dengan satu kad. (⚠ Empat daripada 16 kombo kicker tadi mempunyai spade dan sudah dikira dalam 29.2%; jangan terus menjumlahkan kedua-dua angka.) Ini bukan tangan untuk tiga street value; lebih sesuai menangkap bluff sekali.
+Ambil Q♥J♦ — top pair tanpa spade. Ia sudah ketinggalan kepada **12.0%** daripada range penuh BTN yang berjumlah 474 kombo (flush 5.7 + overpair 2.5, ditambah set dan two pair), serta kalah kicker kepada **AQ dan KQ**. Q♠ berada pada board dan Q♥ di tangan anda, jadi tinggal dua Queen: 8 kombo AQ dan 8 kombo KQ, iaitu 16 daripada 428 kombo yang masih boleh dipegang BTN selepas Q♥ dan J♦ anda dikeluarkan, **kira-kira 3.7%**. Dikira dengan cara yang sama, semua tangan yang sudah mendahului anda berjumlah 68 daripada 428, kira-kira **15.9%**. Selain itu, **29.2%** mempunyai draw yang boleh memintas dengan satu kad. (⚠ Empat daripada 16 kombo kicker tadi mempunyai spade dan sudah dikira dalam 29.2%; jangan terus menjumlahkan kedua-dua angka.) Ini bukan tangan untuk tiga street value; lebih sesuai menangkap bluff sekali.
 
 Sekarang ambil 9♥8♠ — middle pair dengan satu spade. Ia boleh menang sekarang atau meningkat kemudian, memberikan kelonggaran untuk bet atau call.
 

@@ -27,7 +27,7 @@ export const POST: Post = {
   category: "strategy",
   date: "2026-09-02",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-02",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "⚔️",
@@ -53,7 +53,7 @@ Este no es un bote de 3-bet. Es una mano corriente: la ciega pequeña (SB) abre 
 Spot | La SB abre a 3bb → la BB paga (guerra de ciegas)
 Flop | K♥ 10♦ 6♠ (rainbow)
 Bote · stack | Bote 6bb · stack efectivo 97bb · **SPR 16.2**
-Resultado | La SB apuesta el **67.4%** — el primer bote de subida simple en el que lidera el jugador fuera de posición
+Resultado | La SB apuesta el **67.4%** — el primer bote de subida simple en el que el jugador fuera de posición lidera más veces de las que no
 :::
 
 > **Respuesta rápida**
@@ -105,7 +105,7 @@ Puesto al lado del resto de la serie, la diferencia salta a la vista.
 
 ## ¿Por qué lidera aquí el jugador fuera de posición?
 
-**Porque este es el asiento en el que el agresor preflop es además el primero en hablar en el flop.** ⚠ Es una condición *necesaria*, no suficiente — la misma estructura produce **9.6%** [en ⑫](/es/blog/blind-battle-connected-board "thumb:/images/gto-sb-connected-oop-es.webp") y **80.1%** [en ⑬](/es/blog/ace-paired-board-strategy "thumb:/images/gto-sb-paired-ace-oop-es.webp"). El asiento abre la puerta; el board decide cuánto la cruzas.
+**Porque este es el asiento en el que el agresor preflop es además el primero en hablar en el flop.** ⚠ En esta serie todos los leads mayoritarios salen de ese asiento, pero el asiento no garantiza nada, y el que pagó también puede liderar parte de las veces (23.7% en ④). La misma estructura produce **9.6%** [en ⑫](/es/blog/blind-battle-connected-board "thumb:/images/gto-sb-connected-oop-es.webp") y **80.1%** [en ⑬](/es/blog/ace-paired-board-strategy "thumb:/images/gto-sb-paired-ace-oop-es.webp"). El asiento abre la puerta; el board decide cuánto la cruzas.
 
 En una mano corriente esas dos cosas se separan. Cuando el botón abre y la ciega grande paga, **el agresor es el botón pero la primera en hablar es la ciega grande.** Eso es lo que construye la estructura de check y después c-bet, y es el aspecto que tenían del ① al ⑦.
 
@@ -121,7 +121,7 @@ En guerra de ciegas, las dos se funden en una. Subió la ciega pequeña, y la ci
 
 La equity le pone número a esa ventaja. **SB 55.3% contra BB 44.7%.** Del ① al ⑦ el jugador fuera de posición estaba entre 45.1% y 48.5%, siempre por debajo de la mitad — en la dirección contraria.
 
-:::pull[Que apuestes primero no lo decide la posición, sino lo fuerte que sea tu rango en este board concreto.]:::
+:::pull[Estar fuera de posición no decide si apuestas primero — la mayor parte del trabajo la hace cómo encaja tu rango en este board concreto.]:::
 
 No tener posición es lo mismo para la ciega grande del ① al ⑦ y para la ciega pequeña de aquí. Lo que las separa es **la relación entre rango y board** — ⚠ y eso no se reduce solo al "rango". En [el board 7-6-5](/es/blog/blind-battle-connected-board) el rango es *literalmente idéntico* y el check llega al 90.4%.
 

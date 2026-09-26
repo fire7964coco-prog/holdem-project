@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "rules",
   date: "2026-06-11",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-13",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
@@ -189,7 +189,7 @@ Si juegas un pequeño cash game en casa, elige un buy-in que todos puedan permit
 
 ==r:No empieces con apuestas que pongan nerviosa a la gente.== Los principiantes nerviosos no aprenden más rápido. Solo se retiran demasiado, igualan por impulso o discuten las reglas.
 
-Ten en cuenta que el buy-in de un **torneo** funciona distinto al de un cash game: pagas una entrada fija, recibes un stack fijo de fichas sin valor en efectivo y juegas hasta que un jugador las tiene todas. Si no tienes claro cuál prefieres, lee antes [cash game vs torneo](/es/blog/holdem-tournament-vs-cash-game).
+Ten en cuenta que el buy-in de un **torneo** funciona distinto al de un cash game: pagas una entrada fija, recibes un stack fijo de fichas sin valor en efectivo y juegas hasta que un jugador las tiene todas (en los eventos con re-entry puedes volver a inscribirte después de quedar eliminado). Si no tienes claro cuál prefieres, lee antes [cash game vs torneo](/es/blog/holdem-tournament-vs-cash-game).
 
 Para practicar online, usa mesas gratuitas hasta que puedas explicar el orden de la acción sin pensarlo. Después sube de nivel poco a poco.
 
@@ -197,7 +197,7 @@ Para practicar online, usa mesas gratuitas hasta que puedas explicar el orden de
 
 ## ¿No-Limit, Limit o Pot-Limit? ¿A qué Texas Hold'em estás jugando?
 
-Cuando la gente dice "Texas Hold'em", casi siempre se refiere al **No-Limit Hold'em (NLHE)** — el formato del Main Event de las WSOP y de casi todas las partidas caseras. El reparto, las ciegas y la jerarquía de manos son idénticos en los tres formatos. Lo único que cambia es **cuánto puedes apostar.**
+Cuando la gente dice "Texas Hold'em", casi siempre se refiere al **No-Limit Hold'em (NLHE)** — el formato del Main Event de las WSOP y de casi todas las partidas caseras. El reparto y la jerarquía de manos son idénticos en los tres formatos. Lo principal que cambia es **cuánto puedes apostar** — y el Fixed-Limit además suele limitar cuántas subidas admite cada ronda (en las WSOP, una apuesta y cuatro subidas).
 
 | Formato | ¿Cuánto puedes apostar? | Dónde lo verás |
 |--------|-----------------------|---------------------|
@@ -302,7 +302,7 @@ Tus pot odds son **$120 contra $20**, es decir, **6 contra 1**. Eso significa qu
 
 ### La regla del 2 y el 4 — el atajo instantáneo de probabilidad
 
-Cuando llevas un proyecto (p. ej. cuatro cartas para color), cuenta tus **outs** — las cartas que completan tu mano.
+Cuando llevas un proyecto (p. ej. cuatro cartas para color), cuenta tus **outs** — las cartas que convierten tu proyecto en una probable mano ganadora.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Equity é sua fatia do pote — a fatia que cabe à sua mão em média quando todas as cartas são distribuídas, com os empates contando proporcionalmente. Você paga quando sua equity supera as pot odds, mas posição e apostas fazem você raramente ficar com toda a sua equity — e a fold equity deixa você ganhar potes mesmo quando sua mão está atrás.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-24",
-  masterUpdated: "2026-09-24",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🥧",
@@ -39,7 +39,7 @@ aposta ÷ (pote + aposta) | O % de fold que um blefe puro precisa
 
 **Equity é sua fatia do pote — a fatia que cabe à sua mão em média se ela for jogada até o showdown, com os empates contando proporcionalmente.** Se o pote é $100 e 60% dele cabem a você, sua mão vale ==$60 agora==, mesmo que as fichas ainda não tenham sido empurradas.
 
-Pense nela como sua fatia da pizza. Toda mão ainda viva tem uma fatia; as fatias sempre somam 100%. Quando você está heads-up com 70% de chance de ganhar um pote de $200, ==g:$140 dele são "seus"== no longo prazo — você não vai ganhar *este* pote 70% das vezes e perder o resto, mas ao longo de mil situações idênticas, essa é a fatia que você coleta.
+Pense nela como sua fatia da pizza. Toda mão ainda viva tem uma fatia; as fatias sempre somam 100%. Quando você está heads-up com 70% de equity num pote de $200, ==g:$140 dele são "seus"== no longo prazo — você não vai ganhar *este* pote 70% das vezes e perder o resto, mas ao longo de mil situações idênticas, essa é a fatia que você coleta.
 
 Essa é a razão inteira de a equity importar: ela transforma "estou na frente?" em "quanto deste pote eu possuo?" — e esse é o número que você compara com o preço de um call.
 
@@ -47,13 +47,13 @@ Essa é a razão inteira de a equity importar: ela transforma "estou na frente?"
 
 ## Como estimar sua equity rápido
 
-**Num projeto, multiplique seus outs por 4 no flop ou por 2 no turn; no pré-flop, memorize o punhado de confrontos que aparecem de novo e de novo.** Você quase nunca vai calcular a equity exata na mesa — você estima, e esses dois atalhos cobrem 90% das situações.
+**Num projeto, multiplique seus outs limpos por 4 no flop (se você for ver as duas cartas) ou por 2 no turn — essa é a sua chance de acertar, um bom substituto da equity quando acertar ganha e errar perde; no pré-flop, memorize o punhado de confrontos que aparecem de novo e de novo.** Você quase nunca vai calcular a equity exata na mesa — você estima, e esses dois atalhos cobrem 90% das situações.
 
 **Projetos (a regra do 2 e 4):** conte seus [outs](/pt/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp"), depois multiplique. Um projeto de flush tem 9 outs → ==9 × 4 = 36%== no flop (valor real 35%) — o ×4 vale quando você vê as duas cartas sem mais aposta; com aposta por vir, use o ×2 de uma carta. Os números exatos de cada projeto estão em [odds de projetos](/pt/blog/holdem-drawing-odds); aqui vai a referência rápida:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Projeto | Outs | Equity (2 cartas) |
+| Projeto | Outs | Chance de acertar (2 cartas) |
 |:---|:---:|:---:|
 | Flush + sequência aberta | 15 | 54,1% |
 | Projeto de flush | 9 | 35,0% |
@@ -137,11 +137,11 @@ Esta é a ideia mais importante que a maioria dos guias para iniciantes deixa de
 
 ## Equity no all-in: quando a equity bruta é tudo que importa
 
-**Quando você está all-in, não há mais decisões — então você realiza 100% da sua equity, e a equity bruta vira a palavra final.** Toda complicação acima (posição, foldar, ser expulso da mão) desaparece, porque nenhuma aposta a mais pode acontecer. Seja qual for sua equity bruta — sua fatia do pote, com os empates proporcionais —, é exatamente isso que você vai coletar ao longo do tempo.
+**Quando não pode haver mais apostas — você está all-in ou pagou um all-in em heads-up, ou todos os outros que seguem na mão estão all-in —, você realiza 100% da sua equity, e a equity bruta vira a palavra final.** Toda complicação acima (posição, foldar, ser expulso da mão) desaparece, porque nenhuma aposta a mais pode acontecer. Seja qual for sua equity bruta — sua fatia do pote, com os empates proporcionais —, é exatamente isso que você vai coletar ao longo do tempo.
 
 É por isso que as equities de all-in pré-flop importam tanto: AA all-in contra KK embolsa seus ==82%== inteiros — sem imposto de realização, sem fold equity, só o número bruto se desenrolando. É também por isso que um "coin flip" (22 vs AK a ~52/48) é um verdadeiro cara-ou-coroa no all-in, mesmo que as mesmas duas mãos jogadas no pós-flop divergissem muito conforme a mesa e quem tem posição.
 
-O all-in é o único ponto do poker onde, com cartas ainda por vir, a pizza é fatiada exatamente como a matemática diz — o que é tanto seu apelo quanto seu perigo.
+Um all-in sem mais apostas possíveis é o único ponto do poker onde, com cartas ainda por vir, a pizza é fatiada exatamente como a matemática diz — o que é tanto seu apelo quanto seu perigo.
 
 ---
 
@@ -168,7 +168,7 @@ A lição prática: mãos que querem um pote multiway são as que fazem os nuts 
 Estime a equity bruta | Outs × 4 ou × 2 para projetos; lembre o confronto no pré-flop
 Desconte pela realização | Fora de posição ou difícil de jogar? Corte um pouco — 40% brutos podem ser 30% reais
 Some a fold equity | Se você está apostando, com que frequência o vilão folda? Essa é equity extra que sua mão sozinha não tem
-Compare com o preço | Vai pagar? Equity realizada vs suas pot odds. Vai apostar? Quantas vezes o vilão folda vs a taxa de fold de equilíbrio, aposta ÷ (pote + aposta) → pagar, apostar ou foldar
+Compare com o preço | Vai pagar? Equity realizada vs suas pot odds. Vai apostar? Quantas vezes o vilão folda vs a taxa de fold de equilíbrio — aposta ÷ (pote + aposta) para um blefe puro, menor quando sua mão ainda tem equity se for paga → pagar, apostar ou foldar
 :::
 
 Naquela noite que mencionei lá no começo, eu estava fazendo o passo um e parando — contando minha equity bruta e ignorando que, fora de posição, contra um bom jogador, eu nunca a realizaria. Assim que comecei a descontar pela posição e a pensar nos folds *deles* em vez de só nas minhas cartas, comecei a corrigir esses leaks. Equity não é um número que você consulta; é uma lente pela qual você passa toda decisão.
@@ -188,7 +188,7 @@ A. Equity no poker é sua fatia do pote — a porcentagem do pagamento no showdo
 
 **Q. Como calcular equity no poker?**
 
-A. Num projeto, a conta é outs ×4 com duas cartas por vir, ×2 com uma — nove outs de flush dão perto de 36% no flop. Nos all-ins pré-flop, o que funciona é ter os confrontos clássicos decorados (AA contra KK: 82/18). Para números exatos, estude longe da mesa — a aba **Equity** do [solver do site](/pt/solver) roda o confronto exato no navegador — e estime enquanto joga.
+A. Num projeto, a conta é outs limpos ×4 quando você vai ver as duas cartas, ×2 com uma, para estimar sua chance de acertar — nove outs de flush dão perto de 36% no flop, próximo da sua equity quando acertar ganha e errar perde. Nos all-ins pré-flop, o que funciona é ter os confrontos clássicos decorados (AA contra KK: 82/18). Para números exatos, estude longe da mesa — a aba **Equity** do [solver do site](/pt/solver) roda o confronto exato no navegador — e estime enquanto joga.
 
 **Q. Qual a diferença entre equity e pot odds?**
 

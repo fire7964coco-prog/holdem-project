@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Sí — en el póker se puede empatar. El bote se divide (un \"split\" o \"chop\") cuando dos o más jugadores muestran las mismas mejores cinco cartas en el showdown. El palo nunca rompe el empate, y la ficha impar que sobra va al primer jugador empatado a la izquierda del botón.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-09",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🃏",
@@ -114,7 +114,7 @@ Mesa 9♠ 8♦ 7♣ 6♥ 5♠ — una escalera servida. Tú tienes A♠ K♦; tu
 
 ## ¿Quién se lleva la ficha de más? La regla de la ficha impar
 
-A veces un bote no se divide de forma exacta —un bote de 101 fichas entre dos jugadores son 50 para cada uno con una ficha sobrante, y no hay medias fichas—. Antes de entregar esa última ficha a nadie, el dealer la cambia a la denominación más pequeña en juego (regla 20 de la TDA): si las de 5 son las fichas más pequeñas de la mesa, una sola ficha de 25 se convierte en cinco de 5, que se vuelven a repartir, y solo la ficha que sigue sin poder dividirse es la "ficha impar". Después, la regla estándar:
+A veces un bote no se divide de forma exacta —un bote de 101 fichas entre dos jugadores son 50 para cada uno con una ficha sobrante, y no hay medias fichas—. Antes de entregar esa última ficha a nadie, el dealer la cambia a la denominación más pequeña en juego (regla 20 de la TDA 2024): si las de 5 son las fichas más pequeñas de la mesa, una sola ficha de 25 se convierte en cinco de 5, que se vuelven a repartir, y solo la ficha que sigue sin poder dividirse es la "ficha impar". Después, la regla estándar:
 
 > ==La ficha impar sobrante va al primer jugador empatado **a la izquierda del botón**== (el asiento ganador que está antes en el sentido de las agujas del reloj desde el botón).
 

@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "strategy",
   date: "2026-09-15",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-02",
+  masterUpdated: "2026-09-26",
   readTime: "10 mnt",
   emoji: "⚔️",
   image: "/images/gto-sb-king-mid-oop-id.webp",
@@ -79,7 +79,7 @@ Perbedaannya terlihat jelas jika disejajarkan dengan contoh lain dalam seri.
 
 ## Mengapa pemain tanpa posisi lebih sering bet?
 
-**Di sini, agresor preflop juga mendapat giliran pertama pada flop.** ⚠ Struktur ini membantu menjelaskan hasil, tetapi belum cukup untuk menentukan frekuensinya. Konfigurasi yang sama menghasilkan **9,6%** [pada ⑫](/id/blog/blind-battle-connected-board "thumb:/images/gto-sb-connected-oop-id.webp") dan **80,1%** [pada ⑬](/id/blog/ace-paired-board-strategy "thumb:/images/gto-sb-paired-ace-oop-id.webp"). Kecocokan board tetap menentukan seberapa banyak hand yang bet.
+**Di sini, agresor preflop juga mendapat giliran pertama pada flop.** ⚠ Dalam seri ini, semua lead mayoritas berasal dari kursi ini, tetapi kursi itu tidak menjamin apa pun, dan caller pun masih bisa lead sebagian waktu (23,7% pada ④). Konfigurasi yang sama menghasilkan **9,6%** [pada ⑫](/id/blog/blind-battle-connected-board "thumb:/images/gto-sb-connected-oop-id.webp") dan **80,1%** [pada ⑬](/id/blog/ace-paired-board-strategy "thumb:/images/gto-sb-paired-ace-oop-id.webp"). Kecocokan board tetap menentukan seberapa banyak hand yang bet.
 
 Ketika BTN open dan BB call, kedua peran tersebut terpisah: **BTN adalah agresor, tetapi BB bertindak lebih dulu**. Itulah susunan yang sering menghasilkan check dari BB sebelum keputusan c-bet BTN, seperti pada contoh ①–⑦.
 

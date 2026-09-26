@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "BTN के open और BB के call के बाद 9♥8♥7♣ पर BB 76.2% check और 23.7% lead करता है। सीरीज में पहली बार lead इतनी बड़ी भूमिका निभाती है। Equity अब भी BTN के पक्ष में 48.5% बनाम 51.5% है; बदला है अंतर और दोनों ranges के मजबूत हैंडों का प्रकार।",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-15",
-  masterUpdated: "2026-09-02",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   readTime: "9 मिनट",
   emoji: "🎯",
   image: "/images/gto-srp-middle-connected-oop-hi.webp",
@@ -148,7 +148,7 @@ EV में भी यही तस्वीर है। EQR अब भी BTN
 
 **दूसरा, BTN की बढ़त नाजुक श्रेणियों में है।** वह सिर्फ overpairs (6.4%) और ace-high (30.5%) के अनुपात में आगे है; ace-high बना हुआ pair नहीं है। इस ace-high हिस्से में pair नहीं, और जहाँ draw है, BB के पास भी draws हैं। इसलिए BTN को draws का विशेष एकतरफा फायदा नहीं मिलता। Overpairs क्यों नाजुक हैं, वह अगले भाग में है। इसके मुकाबले BB की खास बढ़त **पहले से बने हुए straights** में है।
 
-Lead सिर्फ औसत मजबूती से नहीं आती। यहाँ **आपके पास ज्यादा बने हुए straights हैं और विरोधी पूरी range से बेफिक्र bet नहीं कर सकता**। दोनों शर्तें मौजूद हैं: BB में अतिरिक्त straights हैं और BTN की 30.5% range ace-high है। यह JT nuts पर BB का एकाधिकार नहीं है। BTN के पास छूटने वाला value और protection का मौका lead ले सकती है।
+Lead सिर्फ औसत मजबूती से नहीं आती। यहाँ **आपके पास ज्यादा बने हुए straights हैं और विरोधी पूरी range से बेफिक्र bet नहीं कर सकता**। दोनों शर्तें यहाँ पूरी होती दिखती हैं: BB में अतिरिक्त straights हैं (24 बनाम 20 कॉम्बो, जबकि nut JT दोनों के पास 16-16) और BTN की 30.5% range ace-high होने से उसके लिए wide bet करना कठिन होगा। यह range की बनावट से निकला अनुमान है, क्योंकि BTN का अपना betting node इस solve में नहीं है। यह JT nuts पर BB का एकाधिकार नहीं है। BTN के पास छूटने वाला value और protection का मौका lead ले सकती है।
 
 ## BTN की overpairs यहाँ नाजुक क्यों हैं?
 

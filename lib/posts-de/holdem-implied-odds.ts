@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Implied Odds sind die zusätzlichen Chips, die du auf späteren Streets zu gewinnen erwartest, wenn dein Draw ankommt. Sie erlauben dir, einen Draw profitabel zu callen, den die Pot Odds allein zum Fold verurteilen – aber nur, wenn die Stacks tief sind und dein Gegner dich wirklich auszahlt.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-24",
-  masterUpdated: "2026-09-24",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "💰",
@@ -87,7 +87,7 @@ Du hältst ==b:A♥ K♥== auf einem ==Q♥ 7♥ 2♣ 3♠== Board – den Nut-F
 - **Zuerst die Pot Odds:** Du bekommst 150:50, also 3:1, du brauchst also **25%** Equity. Dein Flush trifft am River nur in ==r:19,6%== der Fälle (9 Outs ÷ 46 ungesehene Karten – wir zählen bewusst nur die Flush-Outs; dein Ass oder deinen König zu paaren reicht nicht sicher zum Sieg, die Overcards sind also keine sauberen Outs). 19,6% ist weniger als 25%, der sofortige Preis sagt also ==r:Fold.==
 - **Jetzt die Implied Odds:** x = (Call ÷ Trefferquote) − (Pot + Call) = (50 ÷ 0,196) − (150 + 50) = 255 − 200 = ==g:etwa $55.== Das ist das Extra, das du am River gewinnen musst, wenn dein Flush ankommt.
 
-Die Frage lautet also nicht „sollte ich $50 callen?“ Sie lautet: „**wenn ein Herz trifft, kann ich mindestens $55 mehr gewinnen?**“ Gegen einen tiefen Gegner, der eine River-Bet mit Top Pair oder einem Set auszahlt, ist das leicht – du callst. Gegen jemanden mit nur noch $40 hinter sich, oder auf einem Board, wo ein viertes Herz seine Action tötet, kannst du nicht – also foldest du.
+Die Frage lautet also nicht „sollte ich $50 callen?“ Sie lautet: „**wenn ein Herz trifft, kann ich mindestens $55 mehr gewinnen?**“ Gegen einen tiefen Gegner, der eine River-Bet mit Top Pair auszahlt, ist das leicht – du callst. Gegen jemanden mit nur noch $40 hinter sich, oder gegen jemanden, der dichtmacht, sobald ein drittes Herz aufs Board kommt, kannst du nicht – also foldest du. (Gegen ein Set ist es noch schwerer: 2♥ und 3♥ paaren das Board und können das Set zum Full House auffüllen – es bleiben 7 saubere Outs und ein x von etwa $129.)
 
 :::note
 Derselbe $50-Call, gegensätzliche Entscheidungen – und die Karten haben sich nie geändert. Was sich änderte, ist, wie viel Geld noch zu gewinnen ist. Das sind Implied Odds in einem Satz.
@@ -110,7 +110,7 @@ Derselbe $50-Call, gegensätzliche Entscheidungen – und die Karten haben sich 
 
 </div>
 
-Zwei Kräfte bestimmen die Zahl. **Häufigkeit:** Ein Gutshot trifft halb so oft wie ein Flushdraw, er braucht also einen etwa doppelt so großen Payoff, um break-even zu sein. **Tarnung:** Ein verstecktes Set wird weit mehr ausgezahlt als ein offensichtlicher Flush auf einem Monotone-Board, weil dein Gegner dich nicht darauf setzen kann – deshalb tolerieren Sets ihre niedrige Trefferquote. Der [Nut-Flushdraw ist aus demselben Grund weit mehr wert als ein kleiner](/de/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp"): Er wird ausgezahlt *und* er verliert nicht, wenn er trifft.
+Zwei Kräfte bestimmen die Zahl. **Häufigkeit:** Ein Gutshot trifft halb so oft wie ein Flushdraw, er braucht also einen etwa doppelt so großen Payoff, um break-even zu sein. **Tarnung:** Ein verstecktes Set wird weit mehr ausgezahlt als ein offensichtlicher Flush auf einem Monotone-Board, weil dein Gegner dich nicht darauf setzen kann – deshalb tolerieren Sets ihre niedrige Trefferquote. Der [Nut-Flushdraw ist aus demselben Grund weit mehr wert als ein kleiner](/de/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp"): Er wird ausgezahlt *und* er verliert nie gegen einen höheren Flush, wenn er trifft.
 
 ---
 
@@ -145,7 +145,7 @@ Hebt den Wert eines Draws | Senkt den Wert eines Draws
 
 Drei klassische Reverse-Implied-Spots:
 
-- **Der kleine Flush.** Du hältst ==b:7♦ 6♦== und das Board bringt ein drittes Karo. Du machst deinen Flush – und zahlst einen Stack an den Typen, der ==b:A♦== für den Nut-Flush hält. Deine „Gewinner“-Karte hat dich Geld gekostet.
+- **Der kleine Flush.** Du hältst ==b:7♦ 6♦== und das Board bringt ein drittes Karo. Du machst deinen Flush – und zahlst einen Stack an den Typen, der ==b:A♦== mit einem zweiten Karo hält – den Nut-Flush. Deine „Gewinner“-Karte hat dich Geld gekostet.
 - **Das dumme Ende einer Straße.** Du hältst ==b:6♦ 5♦== auf ==b:9♥ 8♣ 2♠==, und eine 7 am Turn macht deine 5-6-7-8-9. Aber es ist das *untere* Ende – jeder mit J-10 hat jetzt 7-8-9-10-==g:J==, eine höhere Straße, und genau die Karte, die du brauchtest, zahlt ihn aus.
 - **Das dominierte Top Pair.** Du paarst deinen König mit einem schwachen Kicker und callst weiter – direkt in jemandes A-K.
 
@@ -161,9 +161,9 @@ Achte auf diese Leaks:
 
 :::card
 🚫 | Villain ist all-in | Keine zukünftigen Streets heißt kein zukünftiges Geld von ihm. Heads-up: Implied Odds = 0 – nutze nur Pot Odds
-📉 | Kurze Stacks dahinter | Wenn nur ein halber Pot zu gewinnen bleibt, ist „ich werde am River ausgezahlt“ eine Fantasie
+📉 | Kurze Stacks dahinter | Wenn das, was dahinter liegt, kleiner ist als das x, das du brauchst, ist „ich werde am River ausgezahlt“ eine Fantasie
 🙅 | Ein „Nicht-Zahler“-Gegner | Ein Nit, der nur die Nuts bettet, zahlt deinen Flush nicht aus. Deine Implied Odds leben und sterben mit seiner Bereitschaft zu callen
-🃏 | Ein gefährliches Board | Wenn die Karte, die deinen Draw komplettiert, auch die Action einfriert (vier zum Flush, gepaartes Board), zahlt dich niemand
+🃏 | Ein gefährliches Board | Wenn die Karte, die deinen Draw komplettiert, auch die Action einfriert (vier zum Flush, gepaartes Board), zahlen dich weniger Hände aus – und die, die zahlen, schlagen dich womöglich
 🎣 | Stack-Off annehmen | „Es könnte ankommen und er könnte seinen Stack reinschieben“ sind zwei Vermutungen, die du übereinanderstapelst, um einen Call zu rechtfertigen. Schätze konservativ
 :::
 
@@ -196,7 +196,7 @@ A. Der Unterschied zwischen Pot Odds und Implied Odds ist die Gewissheit: Den ak
 
 **Q. Wann solltest du mit Implied Odds rechnen?**
 
-A. Fang mit den Pot Odds an. Schlägt deine Equity den sofortigen Preis bereits, callst du einfach – Implied Odds brauchst du dafür nicht. Greif erst dann zu ihnen, wenn dein Draw diesen Preis *knapp* verfehlt und die Stacks dahinter tief genug sind, dass ein Treffer dir deutlich mehr einbringt – idealerweise mit einem starken, versteckten oder Nut-Draw gegen einen Gegner, der auch wirklich zahlt. Verfehlt der Draw den Preis meilenweit, oder ist dein Gegner all-in oder short gestackt, retten Implied Odds den Call nicht mehr.
+A. Fang mit den Pot Odds an. Schlägt deine Equity den sofortigen Preis bereits, callst du einfach – Implied Odds brauchst du dafür nicht. Greif zu ihnen, wenn dein Draw diesen Preis verfehlt und die Stacks dahinter tief genug sind, dass ein Treffer dir mehr einbringt als das x aus der Formel – je weiter der Draw den Preis verfehlt, desto größer wird x. Idealerweise ist das ein starker, versteckter oder Nut-Draw gegen einen Gegner, der auch wirklich zahlt. Können die Stacks dahinter x nicht decken – etwa weil ein Heads-up-Gegner all-in oder short gestackt ist –, retten Implied Odds den Call nicht mehr.
 
 **Q. Was sind Reverse Implied Odds?**
 
@@ -204,7 +204,7 @@ A. Reverse Implied Odds sind die zusätzlichen Chips, die dich ein komplettierte
 
 **Q. Was sind gute Implied Odds – wie viel brauchst du?**
 
-A. Das hängt vom Draw ab. Flushdraws und beidseitig offene Straßendraws brauchen grob das 8- bis 10-Fache deines Calls an Stacks dahinter; Set Mining etwa das 15- bis 20-Fache (die „5%-Regel“). Je schwerer der Draw zu treffen ist, desto tiefer müssen die Stacks sein, damit der Call sich rechtfertigen lässt.
+A. Das hängt vom Draw ab. Flushdraws und beidseitig offene Straßendraws brauchen grob das 8- bis 10-Fache deines Calls an Stacks dahinter; Set Mining etwa das 15- bis 20-Fache als praktische Spanne, und die strengere „5%-Regel“ verlangt das 20-Fache. Je schwerer der Draw zu treffen ist, desto tiefer müssen die Stacks sein, damit der Call sich rechtfertigen lässt.
 
 **Q. Machen Implied Odds einen Gutshot spielbar?**
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Foldear es la habilidad más infravalorada del póker: en el peor de los casos un fold te cuesta cero, mientras que un call perdedor sangra fichas todas las veces. Un jugador sólido foldea entre el 75 y el 85% de sus manos antes del flop, suelta las manos falladas y los proyectos débiles que no cumplen sus pot odds después, y —lo más difícil de todo— tira manos fuertes pero batidas cuando la línea de un rival pasivo grita valor. La mayoría no paga de más porque no sepa leer manos; paga porque las fichas que ya están en el bote las siente suyas. No lo son.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-13",
-  masterUpdated: "2026-09-13",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🛡️",
@@ -38,7 +38,7 @@ Matemática > miedo | La única razón para foldear, o para no hacerlo
 
 Ante una apuesta tienes tres opciones: foldear, igualar o subir. Si no hay apuesta, tienes dos: pasar o apostar. Foldear significa renunciar al bote y no arriesgar ni una ficha más. Los novatos lo viven como perder. Los ganadores lo viven como ==negarse a perder más.==
 
-Aquí está la idea que lo replantea todo: **el valor esperado de un fold, de esa decisión en adelante, es cero.** Cuando estás genuinamente batido, cualquier otra opción es *negativa* — igualar te cuesta el call, subir te cuesta más. Cero le gana a negativo. Foldear no gana el bote, pero gana la partida a largo plazo al no donar fichas a spots en los que vas por detrás.
+Aquí está la idea que lo replantea todo: **el valor esperado de un fold, de esa decisión en adelante, es cero.** Cuando estás genuinamente batido (vas por detrás ahora, sin odds para alcanzarle ni fold equity para sacarle de la mano), cualquier otra opción es *negativa*: igualar te cuesta el call, subir te cuesta más. Cero le gana a negativo. Foldear no gana el bote, pero gana la partida a largo plazo al no donar fichas a spots en los que vas por detrás.
 
 Un matiz preciso, porque importa: foldear *no es gratis.* Las fichas que ya están en el bote se fueron en el momento en que las metiste — foldear solo te impide *echar dinero bueno tras el malo.* Esa distinción es toda la psicología de foldear, y volveremos a ella. Primero, la mecánica.
 

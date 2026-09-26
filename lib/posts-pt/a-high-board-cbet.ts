@@ -10,8 +10,8 @@ export const POST: Post = {
   tldr: "No A♥7♦2♣, depois de uma abertura do botão e um call do big blind, o big blind dá check com 98,2% do range, incluindo top pair, dois pares e sets. A equity fica próxima: 45,1% contra 54,9%. A grande diferença está na realização de equity: 84,0% fora de posição contra 113,1% em posição.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-15",
-  masterUpdated: "2026-09-02",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   readTime: "9 min",
   emoji: "🅰️",
   image: "/images/gto-srp-dry-ace-oop-pt.webp",
@@ -67,7 +67,7 @@ Dos 464 combos, cerca de oito apostam: 1,9% somando os dois tamanhos, com arredo
 
 Porque é mais fácil ganhar esse pote começando com check. Sair apostando com um par, fora de posição e contra quem tomou a iniciativa pré-flop é uma forma cara de jogar uma mão com a qual você gostaria de chegar ao showdown.
 
-Três fatores pesam contra o lead. Primeiro, a **realização de equity**: os números abaixo mostram o big blind realizando 84,0% da sua equity, contra 113,1% do botão. Aumentar o pote fora de posição faz essa diferença custar mais. Segundo, o botão faz c-bet com frequência alta neste flop: **o check mantém os blefes dele no pote**, enquanto o lead permite que essas mãos foldem sem colocar mais fichas. Terceiro, o range do big blind é limitado no topo: sem AA, AK ou AQ, uma aposta inicial abre espaço para um raise justamente das mãos contra as quais ele não consegue continuar.
+Três fatores pesam contra o lead. Primeiro, a **realização de equity**: os números abaixo mostram o big blind realizando 84,0% da sua equity, contra 113,1% do botão. Aumentar o pote fora de posição faz essa diferença custar mais. Segundo, o botão faz c-bet com frequência alta neste flop: **o check mantém os blefes dele no pote**, enquanto o lead permite que essas mãos foldem sem colocar mais fichas. Terceiro, o range do big blind é limitado no topo: sem AA, AK ou AQ, uma aposta inicial abre espaço para raises dos ases fortes, e a maior parte do range do big blind não consegue continuar contra eles — só 24 combos aguentam um raise (os sets 77 e 22 e os dois pares A7 e A2). (Nenhum nó de raise foi resolvido aqui.)
 
 O que um lead **não** faz é tirar mãos melhores do pote. O range de abertura do botão contém todos os ases até A2, além de underpairs e pares de sete. Portanto, várias mãos piores pagariam. Esse não é o problema. O problema é o tamanho do pote que você constrói para tentar ganhá-lo.
 

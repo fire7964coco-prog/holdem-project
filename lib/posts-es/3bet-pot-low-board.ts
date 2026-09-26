@@ -24,11 +24,11 @@ export const POST: Post = {
   title: "Tres combos ligan este flop — y aun así apuesta el 97.8%",
   seoTitle: "Un rango polarizado apuesta 97.8% en un board que falló",
   desc: "En un bote de 3-bet sobre 8-5-2, solo tres combos del rango de la ciega grande ligaron el board — y dispara dos tercios del bote el 97.8% de las veces.",
-  tldr: "Tras un 3-bet de la ciega grande y un call del botón, el flop 8♦5♣2♠ recibe una apuesta de dos tercios del bote el 97.8% de las veces. Lo raro: de los 83 combos de la ciega grande, exactamente tres ligaron pareja con este board — los A5s — y ni 88 ni 55 ni 22 están en el rango. La apuesta entra igual porque el rango se parte en 36 combos de sobrepares y 40 combos de A-high sin nada en medio. Una forma polarizada apuesta grande.",
+  tldr: "Tras un 3-bet de la ciega grande y un call del botón, el flop 8♦5♣2♠ recibe una apuesta de dos tercios del bote el 97.8% de las veces. Lo raro: de los 83 combos de la ciega grande, exactamente tres ligaron pareja con este board — los A5s — y ni 88 ni 55 ni 22 están en el rango. La apuesta entra igual porque el rango se parte en 36 combos de sobrepares y 40 combos de A-high casi sin nada en medio — solo los tres A5s. Una forma polarizada apuesta grande.",
   category: "strategy",
   date: "2026-09-02",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-02",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🎲",
@@ -43,7 +43,7 @@ export const POST: Post = {
     "poker gto",
   ],
   content: `
-El flop viene **8♦ 5♣ 2♠**. Hiciste 3-bet antes del flop, el board es todo lo seco que puede ser y tú llevas A-K. Ni pareja ni proyecto. **Aquí el check parece lo obvio.**
+El flop viene **8♦ 5♣ 2♠**. Hiciste 3-bet antes del flop, el board es todo lo seco que puede ser y tú llevas A-K. Sin pareja, y nada mejor que proyectos backdoor. **Aquí el check parece lo obvio.**
 
 El solver hace lo contrario. **Apuesta 14.9bb — dos tercios del bote — el 97.8% de las veces.** Y esto no es una afirmación sobre A-K. De los 83 combos de la ciega grande (BB), los que de verdad *ligaron pareja* con este board son ==tres==.
 
@@ -148,7 +148,7 @@ Los nueve combos del botón son 88, 55 y 22, tres de cada uno — una carta de c
 
 ## ¿Por qué el caller realiza aquí más equity que en los dos spots anteriores?
 
-**La realización del botón sube a 90.3% dentro de la misma estructura de bote de 3-bet.** Era 78.7% y 75.1% en los dos anteriores. ⚠ No es que el botón subiera por su cuenta — los dos EV suman el bote, así que **cuando un lado sube el otro tiene que bajar.** La ciega grande cayó de 117.8% a 106.9%. No son dos hechos, sino dos caras del mismo.
+**La realización del botón sube a 90.3% dentro de la misma estructura de bote de 3-bet.** Era 78.7% y 75.1% en los dos anteriores. ⚠ No es que el botón subiera por su cuenta — los dos EV suman el bote, así que **con las equities fijas, lo que un lado gana en realización lo pierde el otro.** Entre boards distintos las equities también se mueven, así que ese vínculo no es automático — pero aquí es lo que pasó: la ciega grande cayó de 117.8% a 106.9%. Aquí, al menos, son dos caras de un mismo hecho.
 
 | | BB (OOP) | BTN (IP) |
 |---|---|---|
@@ -172,7 +172,7 @@ La razón es dónde viven los sets. **El botón es el único jugador que puede t
 - **Pero no trates un sobrepar como las nuts cuando llega una subida.** Los nueve combos de set están del otro lado, y el botón tiene además 24 combos de QQ hasta 99. **Tu 99 y tu TT son sobrepares que pierden contra sobrepares.**
 - **Contra alguien que casi nunca foldea, recorta la parte de A-high.** La cifra del 97.8% se apoya en que buena parte del rango rival no ligó. ⚠ Otra vez, "el 58.3% no ligó" no es "el 58.3% foldea" — de este solve no sale ninguna frecuencia de fold, y el 36.1% de A-high del botón es la familia A-K, A-Q, A-J, A-10, sin ases débiles dentro. 🪶 Frente a 14.9bb en un bote de 22.5bb la MDF es del **60.2%**, pero eso es un **punto de partida, no una cuota de call** — la MDF trata la apuesta como un farol puro con equity cero, mientras que el rango que apuesta aquí contiene 36 combos de sobrepar, así que ese supuesto no se sostiene. Si la defensa óptima real queda por debajo es una pregunta que este solve no responde. Contra una calling station, disparar A-high dos y tres veces convierte toda la parte de farol en pérdidas; estrecha hacia los sobrepares por valor.
 - **Desde el botón, los pares servidos pequeños valen aquí más que en ningún otro sitio de esta serie.** 88, 55 y 22 ligan sets, y 77, 66, 44 y 33 van todos por delante del A-high. Es justo lo contrario del [spot A-K-2](/es/blog/3bet-pot-cbet), donde los underpairs estaban indefensos. Esto lo decide cómo esté construido el rango de 3-bet, y eso está en [estrategia de 3-bet](/es/blog/holdem-3bet "thumb:/images/holdem-3bet-hero.webp").
-- **Cuenta el SPR antes de apostar.** Con SPR 4, dos tercios del bote dos veces (14.9 → 34.5) más un shove de 39.6 en el river vacían 89bb exactos. En el momento en que apuestas el flop, ir hasta el final ya está prácticamente decidido.
+- **Cuenta el SPR antes de apostar.** Con SPR 4, dos tercios del bote dos veces (14.9 → 34.5) más un shove de 39.6 en el river vacían 89bb exactos. Una vez que apuestas el flop, el resto del stack está a una o dos apuestas, así que decide antes de esa primera apuesta en qué turns y rivers vas a seguir disparando — el turn y el river no están en este solve, y una carta o un rival todavía pueden cambiar la respuesta.
 
 :::readnext[Sigue leyendo]
 /es/blog/3bet-pot-bet-sizing | Un solo tamaño, el 98.4% de las veces — Q-10-7 en un bote de 3-bet | /images/gto-3bp-dynamic-oop-es.webp
@@ -187,7 +187,7 @@ Busca la **fila de "Trío" que falta** en el panel de Manos. Después cambia el 
 
 **Q. ¿Hay que cbetear A-K en un board bajo dentro de un bote de 3-bet?**
 
-A. Sí. En 8-5-2 A-K no tiene ni pareja ni proyecto, y aun así el solver mete todo el rango en el tamaño grande el 97.8% de las veces. La razón es que el rango de la ciega grande está **polarizado — sobrepares o A-high, partido casi por la mitad** — y cuando el medio está vacío el tamaño sube, con todo el rango usándolo. Que el 58.3% del rango rival no ligara pareja ayuda, pero no lo leas como "el 58.3% foldea"; el nodo de respuesta no está en este solve.
+A. Sí. En 8-5-2 A-K no tiene pareja ni proyecto inmediato (solo proyectos backdoor — una rueda runner-runner, más un color backdoor en los tres combos del mismo palo), y aun así el solver mete todo el rango en el tamaño grande el 97.8% de las veces. La razón es que el rango de la ciega grande está **polarizado — sobrepares o A-high, partido casi por la mitad** — y cuando el medio está vacío el tamaño sube, con todo el rango usándolo. Que el 58.3% del rango rival no ligara pareja ayuda, pero no lo leas como "el 58.3% foldea"; el nodo de respuesta no está en este solve.
 
 **Q. ¿Qué significa un rango polarizado?**
 

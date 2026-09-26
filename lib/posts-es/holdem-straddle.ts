@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un straddle es una apuesta ciega voluntaria — normalmente el doble de la ciega grande (2× BB) — que un jugador pone antes de repartir las cartas, casi siempre desde UTG; en España se le llama 'matar la ciega'. Le compra al que lo pone la última acción preflop y la opción de subir, doblando la apuesta de la mano. Para casi todo el mundo es una jugada -EV, y casi siempre queda restringido a los cash games según las reglas de la casa (prácticamente nunca en torneos).",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-09-22",
-  masterUpdated: "2026-09-22",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "💰",
@@ -79,7 +79,7 @@ No todos los straddles son iguales — y las diferencias tienen que ver con **d�
 | **Mississippi** | Cualquier asiento (a menudo botón/CO) | A la izquierda del que straddlea | Preflop — postflop solo desde el botón* | Sí |
 | **Button** | El botón | Ciega pequeña | Pre + postflop | Sí |
 | **Sleeper** | Un asiento que no es UTG | Normal (UTG) | No | Regla de la casa |
-| **Re-straddle** | A la izquierda de un straddle | A la izquierda del re-straddle | Solo preflop | Sí |
+| **Re-straddle** | A la izquierda de un straddle (algunas salas permiten cualquier asiento) | A la izquierda del re-straddle | Solo preflop | Sí |
 
 </div>
 
@@ -124,7 +124,7 @@ La respuesta honesta, y la que comparten los solvers: **para casi todo el mundo,
 
 :::card
 🎯 | Te comprometes a ciegas | El dinero entra antes de ver tus cartas, así que juegas un bote inflado sin información — la misma desventaja que hace de las ciegas los peores asientos de la mesa. Además te parte por la mitad la profundidad efectiva: en $1/$2 un stack de $200 son 100 ciegas grandes, pero con un straddle de $4 puesto ese mismo stack juega como 50
-📉 | Reduce tu ventaja posicional | Doblar la ciega infla el bote inicial y deja a más jugadores por actuar cuando estás en tus mejores asientos para robar. Curiosamente, los solvers responden abriendo **menos** manos en botes con straddle — alrededor de un 15–20% menos en el botón, según las [simulaciones de botes con straddle de GTO Wizard](https://blog.gtowizard.com/preflop-strategy-in-straddled-pots/) — no más
+📉 | Reduce tu ventaja posicional | Doblar la ciega infla el bote inicial y deja a más jugadores por actuar cuando estás en tus mejores asientos para robar. Curiosamente, los solvers responden abriendo **menos** manos desde el botón en botes con straddle — alrededor de un 15–20% menos, según las [simulaciones de botes con straddle de GTO Wizard](https://blog.gtowizard.com/preflop-strategy-in-straddled-pots/) — no más
 💸 | Puede aumentar el rake por bote | En los botes sujetos a [rake](/es/blog/holdem-rake), un bote mayor puede pagar más hasta alcanzar el tope. Ese aumento no se aplica a botes preflop bajo la regla no flop, no drop, a partidas con cobro por tiempo ni a botes que ya alcanzaron el tope
 :::
 
@@ -183,7 +183,7 @@ A. Casi nunca. Los torneos dependen de una estructura fija de ciegas que debe se
 
 **Q. ¿Es rentable el straddle? ¿Deberías ponerlo?**
 
-A. Para la mayoría de jugadores, no — es una jugada -EV. Comprometes dinero a ciegas, encoges tu ventaja posicional (los solvers abren *menos* manos en botes con straddle, no más) y puedes pagar más rake. Solo es defendible en mesas loose-passive, en partidas donde todos straddlean por turnos y en las mismas condiciones, o puramente por diversión — casi nunca como forma de ganar dinero. Si todos participan por turnos y en igualdad de condiciones, GTO Wizard señala que subir así los niveles de apuesta puede favorecer a los mejores jugadores de la mesa.
+A. Para la mayoría de jugadores, no — es una jugada -EV. Comprometes dinero a ciegas, encoges tu ventaja posicional (los solvers abren *menos* manos desde el botón en botes con straddle, no más) y puedes pagar más rake. Solo es defendible en mesas loose-passive, en partidas donde todos straddlean por turnos y en las mismas condiciones, o puramente por diversión — casi nunca como forma de ganar dinero. Si todos participan por turnos y en igualdad de condiciones, GTO Wizard señala que subir así los niveles de apuesta puede favorecer a los mejores jugadores de la mesa.
 
 ---
 

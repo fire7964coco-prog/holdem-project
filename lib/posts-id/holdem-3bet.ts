@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "3-bet adalah re-raise pertama sebelum flop — disebut 3-bet karena big blind adalah taruhan pertama, open-raise yang kedua, dan re-raise Anda yang ketiga. Value-3-bet inti yang ketat (QQ+, AK) plus beberapa bluff blocker suited seperti A5s, ukur sekitar 3x dari open in position dan 4x out of position, dan jaga frekuensi 3-bet keseluruhan Anda dekat 6–10%. Saat Andalah yang menghadapi 3-bet, 4-bet tangan premium Anda, call tangan yang bermain baik, dan fold sisanya — fold lebih banyak daripada 'balanced' melawan pemain stake rendah yang tak pernah bluff.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-24",
-  masterUpdated: "2026-09-22",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "16 mnt",
   emoji: "♦️",
@@ -128,7 +128,7 @@ Matematikanya sengaja ditampilkan karena di situlah pemula bocor: **3 × 3bb = 9
 - **Jangan pernah 3-bet kecil out of position.** 3-bet OOP yang kecil memberi lawan Anda harga bagus untuk call dan mengalahkan Anda dengan posisi — persis hal yang coba Anda hindari. Pakai 4x+ penuh.
 - **Sizing bukan hukum.** Kecilkan size melawan pemain yang terlalu sering fold (Anda bluff lebih murah) dan besarkan size serta jadikan pure-value melawan calling station yang tak pernah fold. Rake dan kedalaman stack menggesernya juga.
 
-Di turnamen dengan stack dangkal, seluruh kalkulasinya berubah: pada kira-kira **10–25 big blind**, banyak tangan menjadi **3-bet all-in ("shove")** alih-alih re-raise kecil, karena tak ada ruang untuk raise-dan-fold. Berhenti min-3-bet dan mulai jamming saat Anda makin pendek.
+Di turnamen dengan stack dangkal, seluruh kalkulasinya berubah: pada kira-kira **10–25 big blind**, banyak tangan menjadi **3-bet all-in ("shove")** alih-alih re-raise kecil, karena tak ada ruang untuk raise-dan-fold. Geser dari min-3-bet ke arah jamming saat Anda makin pendek — meski melawan field yang kuat, tetap campurkan beberapa 3-bet kecil non-all-in.
 
 ---
 
@@ -159,7 +159,7 @@ Poin besarnya: **flatting itu sah in position** — solver modern menjaga range 
 **Squeeze play** adalah 3-bet yang dibuat setelah sudah ada open-raise *dan* setidaknya satu caller. Ia disebut squeeze karena Anda menaruh kedua lawan dalam jepitan: raiser awal kini harus khawatir tentang caller di belakang, dan caller — yang baru saja menunjukkan tangan yang tak cukup kuat untuk re-raise — jarang ingin lanjut melawan agresi Anda.
 
 Dua hal membuat squeeze istimewa:
-- **Ada lebih banyak dead money.** Pot sudah memuat raise dan call, jadi squeeze yang berhasil menang lebih banyak, artinya bluff Anda perlu berhasil *lebih jarang* untuk profit.
+- **Ada lebih banyak dead money.** Pot sudah memuat raise dan call, jadi squeeze yang berhasil menang lebih banyak. Karena Anda juga menaikkan size untuk si caller, itu tidak selalu menurunkan frekuensi fold yang dibutuhkan bluff Anda — dari blind ia turun sedikit, dari button kira-kira tetap — tapi setiap fold kini mengumpulkan lebih banyak chip.
 - **Ukur lebih besar.** Tambah kira-kira satu open-raise ekstra untuk tiap caller. Melawan open 3bb plus satu caller, squeeze ke sekitar **15–16,5bb** itu standar — size ekstra itulah yang mendorong kedua pemain keluar.
 
 Bluff squeeze yang bagus adalah tangan blocker suited yang sama (A5s dan kawan-kawan) yang membuat bluff 3-bet yang bagus, karena Anda tetap ingin membuat tangan medium si raiser fold dan punya equity saat di-call.
@@ -172,7 +172,7 @@ Bluff squeeze yang bagus adalah tangan blocker suited yang sama (A5s dan kawan-k
 
 Inilah separuh dari 3-betting yang hampir setiap artikel lewati: **Anda akan berada di pihak penerima kira-kira sama seringnya dengan Anda 3-bet sendiri.** Saat Anda membuka dan di-re-raise, Anda punya tiga respons:
 
-- **4-bet** — untuk value dengan premium Anda (QQ+, AK), plus bluff blocker sesekali (tangan tipe A5s). Sebuah 4-bet berkata "Saya tak akan ke mana-mana."
+- **4-bet** — untuk value dengan premium Anda (QQ+, AK), plus bluff blocker sesekali (tangan tipe A5s). Sebuah value 4-bet berkata "Saya tak akan ke mana-mana" — 4-bet bluff blocker tetap fold ke sebuah 5-bet.
 - **Call** — dengan tangan yang mem-flop baik dan punya equity atau posisi untuk lanjut: pocket pair yang ingin set-mine, suited broadway, dan tangan kuat yang tak ingin menggembungkan pot menjadi perang 4-bet.
 - **Fold** — selain itu. Sebagian besar range open Anda harus cukup menyerah ke sebuah 3-bet; itu normal, bukan kelemahan.
 
@@ -182,7 +182,7 @@ Seberapa banyak Anda harus lanjut? Baseline teoretisnya adalah **Minimum Defense
 
 | Stat fold-to-3-bet villain | Apa artinya | Penyesuaian Anda |
 |:---:|:---|:---|
-| **~35% (jarang fold)** | Calling station — mereka call dengan hampir apa saja, jadi bluff tak punya fold equity | 3-bet mereka **hanya untuk value**, berhenti bluff, dan value-bet tanpa henti |
+| **~35% (jarang fold)** | Calling station — mereka call dengan hampir apa saja, jadi bluff jarang mendapat cukup fold untuk profit | 3-bet mereka **hanya untuk value**, berhenti bluff, dan value-bet tanpa henti |
 | **~55% (balanced)** | Regular yang berpikir | Main dekat GTO — campur value dan bluff blocker |
 | **~70%+ (terlalu banyak fold)** | Nit yang bisa dieksploitasi | 3-bet mereka **ringan jauh lebih sering** — mereka menyerahkan pot pada Anda |
 
@@ -215,7 +215,7 @@ Sekarang balik: seandainya saya meng-3-bet tangan **ringan** seperti A5s di sana
 | **Tak pernah bluff-3-bet sama sekali** | Meninggalkan uang di meja vs steal lebar; flat Anda jadi terlalu lemah | Seimbangkan value dengan beberapa light 3-bet |
 | **3-betting merged vs nit** | "Value" Anda terdominasi oleh range mereka yang hanya premium | Jadikan polarized atau cukup fold vs nit sejati |
 | **Bluff-3-bet sampah (Q7o)** | Blocker-nya lemah dan equity cadangannya tipis — Anda harus fold ke tiap 4-bet | Pilih hanya tangan blocker/playability |
-| **Flatting terlalu banyak dari small blind** | Realisasi equity buruk OOP; range lemah yang mudah di-cap | Saat menghadapi raise, 3-bet-atau-fold dari SB; simpan flat yang lebar untuk big blind |
+| **Flatting terlalu banyak dari small blind** | Realisasi equity buruk OOP; range lemah yang mudah di-cap | Saat menghadapi raise, sebagian besar 3-bet-atau-fold dari SB; simpan flat yang lebar untuk big blind |
 
 </div>
 
@@ -284,7 +284,7 @@ A. Anda punya tiga pilihan: 4-bet premium Anda (QQ+, AK) plus bluff blocker sese
 
 **Q. Berapa persentase fold-to-3-bet yang bagus?**
 
-A. Sekitar 55% adalah baseline yang wajar dan kira-kira balanced — Anda lanjut dengan bagian atas range Anda dan biarkan sisanya pergi. Itu lebih lebar daripada MDF matematika murni, yang melawan 3-bet besar hanya menyuruh Anda bertahan sekitar sepertiga range — dengan kata lain, fold tak lebih dari sekitar 66,6%. Perlakukan angka itu sebagai batas atas, bukan target. MDF mengasumsikan bluff-nya punya equity nol, padahal bluff 3-bet sungguhan seperti A5s membawa kira-kira 30% equity melawan range lanjutan Anda, yang mendorong frekuensi fold titik impas jauh di bawah batas vakum itu. Jadi 55% adalah baseline praktis, bukan jaminan: light 3-bet dengan equity nyata tetap bisa profit melawannya. Fold jauh lebih dari 55% membuat Anda bisa dieksploitasi oleh light 3-bet; fold jauh lebih sedikit berarti Anda call atau 4-bet terlalu lebar. Sesuaikan ke lawan: fold lebih banyak melawan pemain yang tak pernah bluff-3-bet.
+A. Sekitar 55% adalah baseline yang wajar dan kira-kira balanced — Anda lanjut dengan bagian atas range Anda dan biarkan sisanya pergi. Itu lebih lebar daripada MDF matematika murni, yang melawan 3-bet 3x tipikal in position hanya menyuruh Anda bertahan sekitar sepertiga range — dengan kata lain, fold tak lebih dari sekitar 66,7%. Perlakukan angka itu sebagai batas atas, bukan target. MDF mengasumsikan bluff-nya punya equity nol, padahal bluff 3-bet sungguhan seperti A5s membawa kira-kira 30% equity melawan range lanjutan Anda, yang mendorong frekuensi fold titik impas jauh di bawah batas vakum itu. Jadi 55% adalah baseline praktis, bukan jaminan: light 3-bet dengan equity nyata tetap bisa profit melawannya. Fold jauh lebih dari 55% membuat Anda bisa dieksploitasi oleh light 3-bet; fold jauh lebih sedikit berarti Anda call atau 4-bet terlalu lebar. Sesuaikan ke lawan: fold lebih banyak melawan pemain yang tak pernah bluff-3-bet.
 
 **Q. Haruskah Anda 3-bet atau 4-bet all-in dengan stack pendek di turnamen?**
 

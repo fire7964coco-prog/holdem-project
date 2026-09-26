@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "rules",
   date: "2026-06-15",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-21",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "♠",
@@ -59,7 +59,7 @@ Zwei gültige Wege:
 
 **1. Mündliche Ansage** – Sag klar und deutlich „All-in“, sodass Dealer und Gegner es hören. Das ist die sicherste Methode. Einmal ausgesprochen, bist du gebunden.
 
-**2. Alle Chips nach vorn schieben** – Schieb deinen kompletten Stack in einer einzigen, sauberen Bewegung Richtung Mitte. Chips häppchenweise nachzuschieben kann wie eine String Bet aussehen, also beweg alles auf einmal. ==r:Schieben allein reicht aber nicht immer: Stehst du vor einer Bet und wird jeder einzelne deiner Chips gebraucht, um sie nur zu callen, gilt das wortlose Schieben als Call und nicht als All-in (TDA-2024-Regel 45-A, WSOP Tournament Rule 92).== Sonst **ist** das Schieben deiner letzten Chips – mehrerer, nicht eines einzelnen Überchips – ein All-in-Einsatz (TDA-2024-Regel 45-B).
+**2. Alle Chips nach vorn schieben** – Schieb deinen kompletten Stack in einer einzigen, sauberen Bewegung Richtung Mitte. Chips häppchenweise nachzuschieben kann wie eine String Bet aussehen, also beweg alles auf einmal. ==r:Schieben allein reicht aber nicht immer: Stehst du vor einer Bet und wird jeder einzelne deiner Chips gebraucht, um sie nur zu callen, gilt das wortlose Schieben als Call und nicht als All-in (TDA-2024-Regel 45-A, WSOP Tournament Rule 92).== Sonst **ist** das Schieben deiner letzten Chips ein All-in-Einsatz (TDA-2024-Regel 45-B) – die eine Ausnahme ist ein einzelner Überchip, den du wortlos in eine Bet schiebst: Das ist nur ein Call (TDA-2024-Regel 44).
 
 ![Texas Hold'em All-in-Showdown – ein Board mit K♠ 10♣ 7♦ 4♥ 2♣, die Chips getrennt in beschrifteten Main Pot und Side Pot](/images/holdem-all-in-declare.webp)
 

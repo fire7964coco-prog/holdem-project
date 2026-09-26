@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "glossary",
   date: "2026-07-22",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-22",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 分鐘",
   emoji: "📖",
@@ -46,9 +46,9 @@ export const POST: Post = {
 | 這些老被搞混 | 區別在哪 |
 |:---|:---|
 | **過牌 vs 跟注（Check vs Call）** | 過牌 **不投一分籌碼**（只有你不需要再補籌碼跟上下注時才行）；跟注是 **跟上**一個已經存在的下注。 |
-| **盲注 vs 底注（Blind vs Ante）** | 盲注是 **按位置**收的強制下注（SB/BB）；底注用來墊底池、由 **每個人**出（現今的錦標賽通常用大盲底注，由一個座位替全桌交）。 |
+| **盲注 vs 底注（Blind vs Ante）** | 盲注是 **按位置**收的強制下注（SB/BB）；底注用來墊底池、傳統上由 **每個人**出（不過現今多數錦標賽用大盲底注，由一個座位替全桌交）。 |
 | **暗三條 vs 明三條（Set vs Trips）** | 兩者都是三條——**暗三條**用的是一對口袋對子；**明三條**用的是一張底牌 + 牌面上的一對。 |
-| **Cooler vs Bad Beat** | [Cooler（冤家牌）](/zh-hant/blog/holdem-cooler)＝強到蓋不掉的牌撞上更大的牌（嚴格意義上還要求進池時你已落後）；Bad Beat（爆冷門）＝你本來領先卻被對手超車。 |
+| **Cooler vs Bad Beat** | [Cooler（冤家牌）](/zh-hant/blog/holdem-cooler)＝強到蓋不掉的牌撞上更大的牌（嚴格意義上還要求進池時你已落後）；Bad Beat（爆冷門）＝進池時你是大熱門，卻被對手超車。 |
 | **價值下注 vs 詐唬（Value bet vs Bluff）** | 價值下注想 **讓更差的牌跟你**；詐唬想 **讓更好的牌蓋掉**。 |
 | **底池賠率 vs 隱含賠率（Pot odds vs Implied odds）** | [底池賠率](/zh-hant/blog/holdem-pot-odds) 只算 **現在池裡**的籌碼；隱含賠率還加上你 **後面會贏到**的部分。 |
 | **VPIP vs PFR** | VPIP＝你多常 **入池玩牌**；PFR＝你多常 **加注**。PFR 永遠不可能超過 VPIP。 |
@@ -87,7 +87,7 @@ export const POST: Post = {
 | **詐唬／半詐唬（Bluff / Semi-bluff）** | 詐唬是拿弱牌下注逼走更好的牌；半詐唬是拿還能成的聽牌去做。 |
 | **過牌加注（Check-raise）** | 先過牌，等對手下注後再加注——強而有欺騙性的一手（現代撲克室合法）。 |
 | **最小加注（Min-raise）** | 規則允許的最小加注。 |
-| **分段下注（String bet）** | 沒宣告就回手再拿籌碼——只有第一個動作算數（通常判為跟注）。先喊「加注」，分次推碼就是合法的。 |
+| **分段下注（String bet）** | 沒宣告就回手再拿籌碼——只有第一個動作算數（通常判為跟注）。先宣告完整的加注金額，分次推碼就是合法的；有些規則書（WSOP）單喊一聲「加注」就接受，TDA 規則則要求報出金額，或一次動作推進去。 |
 | **全下（Jam／Shove）** | 直接推全部籌碼。 |
 | **秒跟（Snap call）** | 毫不猶豫、瞬間就跟。 |
 | **英雄跟注／抓詐（Hero call）** | 拿弱牌跟注，因為你判斷對手在詐唬。 |
@@ -189,7 +189,7 @@ export const POST: Post = {
 | **跟注機器（Calling Station）** | 被動、跟太多、幾乎不蓋不加的玩家。 |
 | **常客（Reg / Regular）** | 某個級別的「常駐」玩家，通常已有一定水準。 |
 | **磨石／穩定盈利型（Grinder）** | 靠穩定的量和紀律慢慢累積利潤的玩家。 |
-| **鬆兇／緊兇（LAG / TAG）** | Loose-Aggressive／Tight-Aggressive——兩種會贏的積極風格。 |
+| **鬆兇／緊兇（LAG / TAG）** | Loose-Aggressive／Tight-Aggressive——多數贏家打法的兩種積極風格基礎（光靠風格本身，不會讓任何人變成贏家）。 |
 | **瘋子／狂人（Maniac）** | 超級積極、亂加亂詐唬的玩家。 |
 | **肥羊／目標（Mark）** | 整桌都想從他身上贏錢的那個弱玩家。 |
 

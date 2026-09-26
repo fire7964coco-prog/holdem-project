@@ -29,7 +29,7 @@ export const POST: Post = {
   category: "strategy",
   date: "2026-09-02",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-02",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "♠️",
@@ -92,13 +92,13 @@ Así que a ninguno de los dos lados le sirve el tamaño grande, y solo a uno le 
 
 ## ¿Por qué desaparece la apuesta grande en un board monotone?
 
-**Porque las nuts quedan fijadas.** Q, 9 y 2 no están conectadas, así que en este flop no hay escalera de color posible. La mejor mano queda clavada: **quien tenga el A♠**. Una sola carta decide la parte de arriba de los dos rangos.
+**Porque las nuts quedan fijadas.** Q, 9 y 2 no están conectadas, así que en este flop no hay escalera de color posible. La mejor mano queda clavada: **quien tenga el A♠ con una segunda pica** (el A♠ solo son cuatro cartas a color). Una sola carta decide la parte de arriba de los dos rangos.
 
 Una vez que eso es cierto, las apuestas grandes dejan de pagarle a nadie.
 
 :::compare
 Si tienes color | Si no tienes color
-Una apuesta grande hace foldear a casi todo lo que no es color | Una apuesta grande solo recibe call de colores
+Una apuesta grande hace foldear a casi todo lo que no es color | Una apuesta grande recibe call sobre todo de colores y proyectos de pica
 Una apuesta pequeña mantiene dentro a una pareja | Una apuesta pequeña es barata, pero una pareja no foldea ante ella
 :::
 
@@ -123,11 +123,11 @@ Una apuesta pequeña mantiene dentro a una pareja | Una apuesta pequeña es bara
 
 ¿Por qué solo ocho combos? Tres de las manos con as del palo son imposibles, porque **Q♠, 9♠ y 2♠ ya están en el board.** De las nueve que quedan, A♠K♠ hace 3-bet preflop y nunca llega, así que quedan ocho.
 
-La razón para hacer check no es lo que ganas ahora sino lo que ganas en total. Apuesta grande y foldean casi todas las parejas y las manos de carta alta; puede aparecer una mano con una sola pica, pero contra un color máximo hecho no tiene con qué mejorar. En cualquiera de los dos casos, el dinero que ibas a cobrar más tarde se corta. Haz check y tu rival apuesta su propia pareja o se tira un farol contra ti — dinero que puedes seguir cobrando en el turn y el river.
+La razón para hacer check no es lo que ganas ahora sino lo que ganas en total. Apuesta grande y foldean casi todas las parejas y las manos de carta alta; puede aparecer una mano con una sola pica, pero contra un color máximo hecho nunca puede hacer un color más alto y necesita ayuda runner-runner, como un full, para ganar. En cualquiera de los dos casos, el dinero que ibas a cobrar más tarde se corta. Haz check y tu rival apuesta su propia pareja o se tira un farol contra ti — dinero que puedes seguir cobrando en el turn y el river.
 
 Los números lo dicen sin rodeos: **EQR 230%**, más del doble de su parte del bote. El bote es de 5.5bb y A♠J♠ tiene un valor esperado de ==12.36bb==. Lo que está por venir vale más que lo que ya está ahí.
 
-Los blockers aparecen en la misma tabla. **A♠J♠ y A♠10♠ hacen check por encima del 80%, mientras que A♠7♠ hasta A♠4♠ bajan al 52–64% y apuestan mucho más.** Tener el J♠ o el 10♠ bloquea **los colores que no son máximos y que llevan esas cartas**. ⚠ En este board no existe un "color con J alta" — el Q♠ ya está en la mesa, así que todo color hecho es de reina para arriba, y el segundo mejor es el de rey. Lo que el J♠ o el 10♠ quitan es el **puesto del kicker** de esos colores (K♠J♠, J♠10♠ y parecidos). Y esas son justo las manos que te habrían *pagado* la apuesta. Sacarlas del mazo adelgaza el rango que paga, así que la apuesta vale menos y la mano se va al check. Los kickers bajos no bloquean ninguna y dejan a alguien que te pague, así que apostar directo es la mejor forma de cobrar. (Que A♠3♠ salte de vuelta al 79.7% nos recuerda que esto es una tendencia, no una regla.)
+Los blockers aparecen en la misma tabla. **A♠J♠ y A♠10♠ hacen check por encima del 80%, mientras que A♠7♠ hasta A♠4♠ bajan al 52–64% y apuestan mucho más.** Tener el J♠ o el 10♠ bloquea **los colores que no son máximos y que llevan esas cartas**. ⚠ En este board no existe un "color con J alta" — el Q♠ ya está en la mesa, así que todo color hecho es de reina para arriba, y el segundo mejor es el de rey. Lo que el J♠ o el 10♠ quitan es el **puesto del kicker** de esos colores (K♠J♠, J♠10♠ y parecidos). Pero los blockers por sí solos no explican el reparto. Cuenta los 18 colores no máximos del botón: el J♠ y el 10♠ quitan 4 cada uno, mientras que el 7♠ quita 6, el 8♠ y el 6♠ 5 cada uno, el 5♠ 4 y el 4♠ solo 2. Solo el 3♠ no bloquea ninguno, y A♠3♠ hace check el 79.7%. En cada combo del color máximo las tres acciones quedan a menos de 0.05bb unas de otras, así que lee esa columna como una mezcla entre opciones casi iguales, no como una regla de blockers.
 
 ## ¿Se juegan distinto los colores que no son máximos?
 
@@ -166,7 +166,7 @@ Lo que el botón tiene en cambio es mucho más **A-x y K-x de distinto palo con 
 
 **El mismo top pair es una mano distinta según lleve pica o no.**
 
-Toma Q♥J♦ — top pair, sin pica. Ya va por detrás del **12.0%** del rango del botón (colores 5.7 + sobrepares (overpairs) 2.5, más los sets y las dobles parejas), y encima pierde por kicker contra **AQ y KQ**: el Q♠ está en el board y el Q♥ en tu mano, así que quedan dos reinas, lo que da 8 combos de AQ y 8 de KQ — **un 3.4% aproximado** de 474, con lo que el total que ya te gana sube a más o menos el **15.4%**. Además de eso, otro **29.2%** te pasa por delante con una sola carta (⚠ cuatro de esos 16 combos de kicker llevan pica y ya están contados dentro de ese 29.2%, así que no sumes las dos cifras sin más). Esa no es una mano para tres calles de valor; es una mano para atrapar un farol una vez.
+Toma Q♥J♦ — top pair, sin pica. Ya va por detrás del **12.0%** del rango completo de 474 combos del botón (colores 5.7 + sobrepares (overpairs) 2.5, más los sets y las dobles parejas), y encima pierde por kicker contra **AQ y KQ**: el Q♠ está en el board y el Q♥ en tu mano, así que quedan dos reinas, lo que da 8 combos de AQ y 8 de KQ — 16 de los 428 combos que el botón todavía puede tener una vez fuera tu Q♥ y tu J♦, **cerca del 3.7%**. Contado de la misma manera, todo lo que ya te gana suma 68 de 428, más o menos el **15.9%**. Además de eso, otro **29.2%** te pasa por delante con una sola carta (⚠ cuatro de esos 16 combos de kicker llevan pica y ya están contados dentro de ese 29.2%, así que no sumes las dos cifras sin más). Esa no es una mano para tres calles de valor; es una mano para atrapar un farol una vez.
 
 Ahora toma 9♥8♠ — segunda pareja con una pica. Puede ganar ahora o mejorar después, y eso le da flexibilidad para apostar o pagar.
 
@@ -214,7 +214,7 @@ A. Un flop en el que las tres cartas son del mismo palo, como Q♠ 9♠ 2♠. Do
 
 **Q. ¿Hay que apostar siempre un color hecho en un board monotone?**
 
-A. No. En este solve los ocho combos del color máximo hacen check entre el 52.7% y el 84.2%, con una media del 69.9%, y los colores que no son máximos hacen check el 81.4%. Una apuesta grande hace foldear a casi todas las parejas y manos de carta alta — y la mano con una pica que sí aparece no tiene con qué mejorar contra un color máximo hecho — así que hacer check para inducir una apuesta y cobrar a lo largo del turn y el river gana más en total.
+A. No. En este solve los ocho combos del color máximo hacen check entre el 52.7% y el 84.2%, con una media del 69.9%, y los colores que no son máximos hacen check el 81.4%. Una apuesta grande hace foldear a casi todas las parejas y manos de carta alta — y la mano con una pica que sí aparece nunca puede hacer un color más alto, y necesita ayuda runner-runner como un full para ganar — así que hacer check para inducir una apuesta y cobrar a lo largo del turn y el river gana más en total.
 
 **Q. ¿Por qué la ciega grande tiene más colores que el botón?**
 

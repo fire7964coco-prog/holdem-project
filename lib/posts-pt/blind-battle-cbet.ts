@@ -9,8 +9,8 @@ export const POST: Post = {
   tldr: "Depois da abertura do small blind e do call do big blind, o flop K♥T♦6♠ recebe aposta em 67,4% e check em 32,6%. Nos sete potes com um único aumento anteriores da série, o jogador fora de posição apostava só 0,1%–23,7%. Duas coisas mudaram: agora ele é quem abriu o pote, não quem pagou, e o board favorece seu range. Juntas, elas levam sua realização de equity a 103,1%, mesmo fora de posição.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-15",
-  masterUpdated: "2026-09-02",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   readTime: "10 min",
   emoji: "⚔️",
   image: "/images/gto-sb-king-mid-oop-pt.webp",
@@ -80,7 +80,7 @@ Comparando com o restante da série, a diferença aparece:
 
 ## Por que o jogador fora de posição aposta primeiro aqui?
 
-**Porque o agressor pré-flop também é o primeiro a agir no flop.** ⚠ Isso permite que sua aposta inicial seja uma c-bet, mas não basta para explicar a frequência: a mesma estrutura produz **9,6%** [no ⑫](/pt/blog/blind-battle-connected-board "thumb:/images/gto-sb-connected-oop-pt.webp") e **80,1%** [no ⑬](/pt/blog/ace-paired-board-strategy "thumb:/images/gto-sb-paired-ace-oop-pt.webp"). O papel abre a possibilidade; o board determina quanto o range pode apostar.
+**Porque o agressor pré-flop também é o primeiro a agir no flop.** ⚠ Nesta série, toda aposta majoritária vem dessa posição, mas ela não garante nada, e quem pagou ainda pode sair apostando parte das vezes (23,7% no ④). A mesma estrutura produz **9,6%** [no ⑫](/pt/blog/blind-battle-connected-board "thumb:/images/gto-sb-connected-oop-pt.webp") e **80,1%** [no ⑬](/pt/blog/ace-paired-board-strategy "thumb:/images/gto-sb-paired-ace-oop-pt.webp"). O papel abre a possibilidade; o board determina quanto o range pode apostar.
 
 Numa mão comum, essas duas funções ficam separadas. Quando o botão abre e o big blind paga, **o agressor é o botão, mas quem age primeiro é o big blind**. Daí vem a sequência de check seguido de c-bet, a estrutura dos exemplos ① a ⑦.
 
@@ -194,7 +194,7 @@ Os 96,1% do big blind são o outro lado do resultado. **Mesmo em posição, ele 
 
 ## Como conferir no solver de poker?
 
-Você encontra estes números abrindo o [solver de poker](/pt/solver) e seguindo **Spots de estudo → "Board K-high com um T" → [⚡ Ver resultados]**. Para jogar o mesmo spot como exercício, abra o [Treinador GTO](/pt/solver) na barra lateral. Ele distribui uma mão aleatória e, depois que você escolhe a ação, mostra a frequência da estratégia mista e a **perda de EV (bb)** da sua escolha. Sem login, o histórico fica no seu navegador.
+Você encontra estes números abrindo o [solver de poker](/pt/solver) e seguindo **Spots de estudo → "Board K-high com um T" → [⚡ Ver resultados]**. Para jogar o mesmo spot como exercício, abra o [Treinador GTO](/pt/solver) na barra lateral. Ele distribui uma mão aleatória e, depois que você escolhe a ação, mostra a frequência da estratégia mista e a **perda de EV (bb)** da sua escolha. Por padrão, o histórico fica neste dispositivo; ao entrar com uma conta HoldemMaster, o histórico de Spots de estudo e do Desafio do dia é sincronizado entre dispositivos.
 
 Confira primeiro o seletor Jogador no alto: **"OOP (SB (open-raiser))"**. A diferença para o "OOP (BB (caller))" dos exemplos anteriores mostra, na própria tela, o que significa a mudança de papel. É gratuito, sem instalação e sem necessidade de conta.
 

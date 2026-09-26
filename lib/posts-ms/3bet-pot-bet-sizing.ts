@@ -9,8 +9,8 @@ export const POST: Post = {
   tldr: "Pada Q♥T♥7♠ dalam pot 3-bet, BB memilih bet dua pertiga pot, 14.9 bb, pada kekerapan 98.4%. Bet kecil mendapat 0.7% dan check 0.8%: kedua-duanya bersama hampir satu kombo daripada 73. Pada A♦K♠2♥, range yang sama membahagikan saiz 57.8/42.2. Perubahan ini berkait dengan harga yang dibayar caller untuk meneruskan draw. Bet kecil memberi harga yang lebih murah pada board yang mempunyai banyak draw.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-15",
-  masterUpdated: "2026-09-02",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   readTime: "12 minit",
   emoji: "💧",
   image: "/images/gto-3bp-dynamic-oop-ms.webp",
@@ -32,7 +32,7 @@ Hasil | Dua pertiga pot 98.4% — pembahagian saiz hampir hilang
 :::
 
 > **Jawapan ringkas**
-> BB melakukan **bet 14.9 bb, dua pertiga pot, pada kekerapan 98.4%**. Saiz kecil 0.7% dan check 0.8% terlalu kecil untuk dijadikan arahan praktikal yang berasingan. Sebab utamanya ialah harga: satu pertiga pot memerlukan kira-kira ==19.8%== equity, yang dilepasi empat kombo BTN dengan flush draw. Dua pertiga memerlukan kira-kira ==28.5%==, dan hanya dua daripada **40 kombo draw BTN** melepasi ambang itu berdasarkan satu kad seterusnya. Combo draw 12 outs yang melepasi harga kecil kini tidak cukup. Pada A-K-2, BB mempunyai 63 kombo yang semuanya pair atau lebih baik; bahagian bawah range sudah terpotong dan tiada flush draw untuk dikenakan harga.
+> BB melakukan **bet 14.9 bb, dua pertiga pot, pada kekerapan 98.4%**. Saiz kecil 0.7% dan check 0.8% terlalu kecil untuk dijadikan arahan praktikal yang berasingan. Sebab utamanya ialah harga: satu pertiga pot memerlukan kira-kira ==19.8%== equity, yang dilepasi empat kombo BTN dengan flush draw. Dua pertiga memerlukan kira-kira ==28.5%==, dan hanya dua daripada **40 kombo draw BTN** melepasi ambang itu berdasarkan satu kad seterusnya. Combo draw 12 outs yang melepasi harga kecil kini tidak cukup jika dikira dengan kad seterusnya sahaja. Pada A-K-2, BB mempunyai 63 kombo yang semuanya pair atau lebih baik; bahagian bawah range sudah terpotong dan tiada flush draw untuk dikenakan harga.
 
 ## Apakah syarat yang menghasilkan angka ini?
 
@@ -99,6 +99,8 @@ Bet satu pertiga pot, 7.4 bb, memberikan harga call ==7.4 ÷ (22.5 + 7.4 + 7.4) 
 
 Flush draw K-high dan 9-high BTN mengejar heart terhadap range yang semua flush lengkapnya akan menjadi nut flush. Pada SPR 4, heart di turn boleh membawa keputusan tentang baki stack: inilah risiko reverse implied odds. Jika harga turun kepada satu pertiga, kombo yang melepasi ambang menjadi **empat**, sementara 30 gutshot lain mendapat harga lebih murah untuk melihat turn. Tangan yang sudah siap perlu dinilai berasingan berdasarkan kekuatan semasanya.
 
+⚠ "Tidak mencapai harga" di sini hanya merujuk kepada kiraan kad seterusnya. Terhadap seluruh range BB dengan turn dan river masih akan dibuka, 30 daripada 38 kombo itu masih memegang equity melebihi 28.5% — gutshot A-K berada pada 37.6–42.9% kerana overcard turut dikira. Kesan bet besar kepada kebanyakan draw ialah mengenakan harga, bukan membuat mereka fold.
+
 ⚠ **Jadual tadi menilai satu kad. Peluang melihat kedua-dua kad ialah soalan lain, dengan kemungkinan kos tambahan.** Dengan turn dan river, draw 15 outs mencapai ==kira-kira 54.1%==, draw 12 outs ==kira-kira 45.0%==, OESD lapan outs ==31.5%== dan gutshot ==16.5%==. Caller juga mempunyai posisi, baki stack 74.1 bb dan pilihan raise. Bet besar mempengaruhi harga untuk menggunakan semua kelebihan ini; odds satu kad sahaja tidak menentukan EV call.
 
 Caller juga tidak boleh dianggap akan fold segala-galanya. Menghadapi 14.9 bb ke dalam 22.5 bb, kekerapan bertahan untuk menafikan keuntungan **pure bluff tanpa equity** ialah ==22.5 ÷ (22.5 + 14.9) = 60.2%==, iaitu minimum defense frequency atau MDF. Tangan BTN daripada set hingga second pair berjumlah **33.9%**: set 6.8, top pair 20.3 dan second pair 6.8.
@@ -145,7 +147,7 @@ Oleh itu, harga flop berkait dengan street seterusnya. Peluang draw menjelang ri
 
 Dengan queen dan ten di board, **AK dan AJ mengejar straight A-K-Q-J-T yang sama tanpa pair ketika ini**. Apabila lawan fold, pot dimenangi terus; apabila di-call, masih ada outs untuk memperbaiki tangan. Inilah sebahagian sebab tangan tersebut boleh menyertai bet.
 
-JJ dan 99 berlainan. **Kedua-duanya tiada draw yang siap dengan satu kad.** JJ bersama queen dan ten masih memerlukan dua kad lagi — contohnya king dan sembilan, atau ace dan king — untuk straight. Pair memang mempunyai nilai semasa, tetapi AK boleh melengkapkan straight dengan satu kad sahaja.
+JJ dan 99 berlainan. **Kedua-duanya tiada draw yang siap dengan satu kad.** JJ bersama queen dan ten masih memerlukan dua kad lagi — king dan sembilan, ace dan king, atau sembilan dan lapan — untuk straight. Pair memang mempunyai nilai semasa, tetapi AK boleh melengkapkan straight dengan satu kad sahaja.
 
 ## Apakah sebenarnya kandungan range BTN?
 
@@ -197,7 +199,7 @@ Semua yang berikut mengandaikan **heads-up, pot 3-bet, SPR 4**. Tambah cold-call
 
 - **Baca board dan range sebelum memilih saiz daripada tangan sendiri.** Bet besar hanya ketika kuat dan kecil ketika lemah menjadikan strategi mudah dibaca. Di sini satu saiz besar menampung 98.4%.
 - **Periksa saiz besar apabila pot 3-bet menawarkan kedua-dua straight dan flush draw.** Harga kecil sekitar 19.8% dilepasi semua empat kombo BTN yang mempunyai flush draw dalam range ini. Namun draw bukan satu-satunya sebab: [board 8-5-2](/ms/blog/3bet-pot-low-board), dengan 78.3% “Tiada draw”, juga memilih saiz besar 97.8% kerana **range terpolarisasi**. Baca kepadatan draw dan bentuk range bersama. Pot single-raised dengan tekstur serupa pula mempunyai peranan berbeza, seperti nota terdahulu.
-- **AK tanpa pair tidak semestinya check.** Pada QT7 ia gutshot ke Broadway. Pada board yang tidak bersambung dengan AK, check mungkin lebih menarik, tetapi itu bukan peraturan: contoh 8-5-2 tadi masih menggunakan saiz besar 97.8% dengan AK dalam range. Ada atau tiada draw sahaja tidak menentukan tindakan. Dua ringkasan ini juga tidak memberikan kekerapan AK secara individu. Baca bentuk seluruh range pada board tersebut.
+- **AK tanpa pair tidak semestinya check.** Pada QT7 ia gutshot ke Broadway, tetapi itu bukan sebab ia bet: pada board 8-5-2 tadi, yang tiada kad bersambung dengan AK, AK masih memilih saiz besar 95.9–97.9% (97.8–99.9% di sini). Jadi ada atau tiada draw sahaja tidak menentukan tindakan AK. Baca bentuk seluruh range pada board tersebut.
 - **★ Keputusan flop belum menjadi rancangan lengkap.** Selepas 14.9 bb di-call, SPR turn 1.4 bermakna bet seterusnya boleh melibatkan stack. Heart di turn mempunyai dua sisi: empat combo draw BTN lengkap, tetapi empat kombo heart BB juga lengkap dan semuanya mengandungi A♥. Jika anda memegang A♥, dua daripada empat kombo BTN itu tidak boleh wujud. Bagi A-high tanpa heart, jack yang dikejar masih ada, tetapi J♥ kini boleh melengkapkan flush lawan. Satu saiz flop tidak menjawab semua keadaan ini.
 - **★ Rancang tindak balas terhadap raise.** Bet hampir seluruh range bererti tangan lemah juga akan berdepan raise. Pada SPR 4, set dan overpair ialah calon untuk meneruskan; **A-high tanpa dua heart, 24 daripada 28 kombo**, ialah calon fold paling jelas. Empat tangan heart ialah calon meneruskan, khususnya A♥K♥ dan A♥J♥ dengan gutshot tambahan. Top pair memerlukan keputusan tersendiri. Ini tafsiran range dan SPR, bukan sempadan jam/call/fold yang dikira oleh contoh flop sahaja.
 - **★ Sebagai BTN, tentukan had middle pair lebih awal.** Underpair meliputi 36.1% range call. MDF 60.2% ialah rujukan berasaskan pure bluff tanpa equity, **bukan siling pertahanan atau kuota call**. Range BB sudah mempunyai 45.1% set, overpair dan top pair (8.2, 16.4, 20.5). Pertahanan optimum sebenar tidak dikira pada node ini. Bet besar kedua di turn boleh menyingkirkan banyak pair tersebut; rancangkan kemungkinan itu sebelum call flop. Node turn tiada, jadi ini pertimbangan strategi, bukan kekerapan terukur.
@@ -225,7 +227,7 @@ A. Mulakan dengan apa yang board berikan kepada range lawan. Pada QT7 dua heart,
 
 **Q. Mengapa bet besar pada board yang banyak draw?**
 
-A. Ia menaikkan harga untuk meneruskan. Dua pertiga memerlukan kira-kira 28.5%; berdasarkan satu kad, hanya dua daripada 40 kombo draw melepasi harga itu: K♥J♥ dan 9♥8♥, dengan 15 outs dan 31.9%. Combo draw 12 outs hanya 25.5%. Satu pertiga menurunkan ambang kepada 19.8%, yang dilepasi empat kombo. Ini perbandingan odds satu kad, bukan keputusan EV call lengkap. Range terpolarisasi juga boleh memilih besar tanpa banyak draw; [board kering 8-5-2](/ms/blog/3bet-pot-low-board) mencapai 97.8% untuk saiz besar.
+A. Ia menaikkan harga untuk meneruskan. Dua pertiga memerlukan kira-kira 28.5%; berdasarkan satu kad, hanya dua daripada 40 kombo draw melepasi harga itu: K♥J♥ dan 9♥8♥, dengan 15 outs dan 31.9%. Combo draw 12 outs hanya 25.5% untuk satu kad — walaupun dengan turn dan river, kebanyakan draw itu masih memegang lebih 28.5%, jadi harga ini mengenakan bayaran kepada mereka, bukan membuat mereka fold. Satu pertiga menurunkan ambang kepada 19.8%, yang dilepasi empat kombo. Ini perbandingan odds satu kad, bukan keputusan EV call lengkap. Range terpolarisasi juga boleh memilih besar tanpa banyak draw; [board kering 8-5-2](/ms/blog/3bet-pot-low-board) mencapai 97.8% untuk saiz besar.
 
 **Q. Apakah geometric bet sizing?**
 

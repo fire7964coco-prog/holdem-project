@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Estrategia de Texas Hold'em: las 5 decisiones detrás de cada mano ganadora",
   seoTitle: "¿Por qué los «tips» nunca te sirvieron? — Estrategia de Texas Holdem",
   desc: "Ganar al póker no son diez tips sueltos: son las mismas cinco decisiones cada mano — posición, selección de manos, subir o foldear, c-bet y cuándo soltar.",
-  tldr: "Cada decisión ganadora en Texas Hold'em se reduce a cinco preguntas repetibles: dónde estoy sentado (posición), ¿vale la pena jugar esta mano?, ¿subo o foldeo? (nunca limpeo), ¿sigo apostando en el flop?, y ¿cuándo suelto la mano? Un jugador tight-aggressive que responde bien esas cinco foldea ~80% de sus manos preflop, las juega con agresividad cuando entra, y le gana a casi cualquier partida casual — sin necesidad de memorizar listas de tips.",
+  tldr: "Cada decisión ganadora en Texas Hold'em se reduce a cinco preguntas repetibles: dónde estoy sentado (posición), ¿vale la pena jugar esta mano?, ¿subo o foldeo? (nunca abro con limp), ¿sigo apostando en el flop?, y ¿cuándo suelto la mano? Un jugador tight-aggressive que responde bien esas cinco foldea ~80% de sus manos preflop, las juega con agresividad cuando entra, y le gana a casi cualquier partida casual — sin necesidad de memorizar listas de tips.",
   category: "strategy",
   date: "2026-07-06",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-11",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
@@ -46,7 +46,7 @@ Así que en vez de una lista, usa una **espina dorsal de decisiones**. Cada mano
 |:---:|:---|:---|:---|
 | **1** | **Posición** | ¿Dónde estoy sentado, y quién actúa después de mí? | [Juego posicional](/es/blog/holdem-position-play) |
 | **2** | **Selección de manos** | ¿Vale la pena siquiera entrar al bote con esta mano? | [Manos iniciales](/es/blog/holdem-starting-hands-chart) |
-| **3** | **Agresión preflop** | ¿Subo o foldeo — nunca solo limpeo? | [Por qué limpear te cuesta caro](/es/blog/holdem-limping) |
+| **3** | **Agresión preflop** | ¿Subo o foldeo — nunca abro con limp? | [Por qué limpear te cuesta caro](/es/blog/holdem-limping) |
 | **4** | **Continuación** | ¿Sigo apostando en el flop, o cierro el grifo? | [Acciones de apuesta](/es/blog/holdem-betting-actions) |
 | **5** | **Disciplina** | ¿Cuándo suelto una mano? | [Pot odds y foldear](/es/blog/holdem-pot-odds) |
 
@@ -101,7 +101,7 @@ Una vez que has decidido que vale la pena jugar una mano, hay una segunda decisi
 2. **Renuncias a la iniciativa.** El que sube preflop puede seguir contando una historia en el flop (Decisión 4). Limpea, y le entregas esa historia a otro.
 3. **Te pintas una diana encima.** Los jugadores fuertes suben grande por detrás de un limper para aislarlo, y luego lo superan jugando en posición toda la mano. Un open-limp anuncia «aquí hay un jugador débil y pasivo».
 
-El default que lo arregla es contundente: **si una mano es lo bastante buena para jugarla, es lo bastante buena para subir; si no lo es, foldea.** Y cuando *otro* ya ha subido, volver a subir — un [3-bet](/es/blog/holdem-3bet "thumb:/images/holdem-3bet-hero.webp") — es como castigas las aperturas amplias y agrandas los botes con tus mejores manos. Las excepciones a ese default de subir-o-foldear son reales, y todas van del **precio**. El *over*-limp — igualar *por detrás* de alguien que ya limpeó, en posición, con una mano especulativa como un par pequeño — te compra un asiento barato en un bote multiway. La mayor es **defender la ciega grande**: contra una apertura de 2.5bb ya tienes ==1bb puesto==, así que igualas 1.5bb a un bote de 4bb y necesitas solo ==1.5 ÷ 5.5 = 27%== de equity — y además actúas último, con lo que tu call cierra la ronda. Por eso buena parte del rango de la ciega grande paga en lugar de subir o foldear. La tercera es el **set-mining** con un par pequeño frente a una subida y con stacks profundos (la matemática está más abajo). Eso son descuentos, no estrategias — fuera de sitios así, sube o foldea.
+El default que lo arregla es contundente: **si una mano es lo bastante buena para jugarla, es lo bastante buena para subir; si no lo es, foldea.** Y cuando *otro* ya ha subido, volver a subir — un [3-bet](/es/blog/holdem-3bet "thumb:/images/holdem-3bet-hero.webp") — es como castigas las aperturas amplias y agrandas los botes con tus mejores manos. Las excepciones a ese default de subir-o-foldear son reales, y todas van del **precio**. El *over*-limp — igualar *por detrás* de alguien que ya limpeó, en posición, con una mano especulativa como un par pequeño — te compra un asiento barato en un bote multiway. La mayor es **defender la ciega grande**: contra una apertura de 2.5bb (mano a mano, con la ciega pequeña foldeada y sin antes) ya tienes ==1bb puesto==, así que igualas 1.5bb a un bote de 4bb y necesitas solo ==1.5 ÷ 5.5 = 27%== de equity sobre el papel. Fuera de posición realizarás menos que tu equity bruta, así que trata ese 27% como el suelo, no como la meta. Y como tu call cierra la ronda, buena parte del rango de la ciega grande paga en lugar de subir o foldear. La tercera es el **set-mining** con un par pequeño frente a una subida y con stacks profundos (la matemática está más abajo). Eso son descuentos, no estrategias — fuera de sitios así, sube o foldea.
 
 ---
 
@@ -210,7 +210,7 @@ A. Haz 3-bet (resubir a quien subió preflop) por valor con tus manos más fuert
 
 **Q. ¿Cuándo deberías subir frente a igualar?**
 
-A. Prefiere subir a igualar siempre que tengas una mano con la que valga la pena continuar. Subir gana botes de dos formas (fold equity más la mejor mano) y toma la iniciativa; igualar no tiene fold equity — nadie foldea ante un call — y deja entrar a otros barato. Iguala cuando tu mano es lo bastante fuerte para continuar pero no para agrandar un bote grande, cuando estás buscando trío con un par pequeño, o cuando quieres mantener dentro los faroles de un jugador más débil.
+A. En la mayoría de los spots, prefiere subir a igualar cuando tengas una mano con la que valga la pena continuar. Subir gana botes de dos formas (fold equity más la mejor mano) y toma la iniciativa; igualar no tiene fold equity — nadie foldea ante un call — y deja entrar a otros barato. Iguala cuando tu mano es lo bastante fuerte para continuar pero no para agrandar un bote grande, cuando estás buscando trío con un par pequeño, o cuando quieres mantener dentro los faroles de un jugador más débil.
 
 **Q. ¿Cuántas manos deberías jugar en Texas Hold'em?**
 

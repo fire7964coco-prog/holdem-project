@@ -10,7 +10,7 @@ export const POST: Post = {
   category: "strategy",
   date: "2026-09-15",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-24",
+  masterUpdated: "2026-09-26",
   readTime: "10 mnt",
   emoji: "👯",
   image: "/images/gto-srp-paired-oop-id.webp",
@@ -176,7 +176,7 @@ Trips masih sesekali bet kecil: K♠6♠ 0,3%, Q♥6♥ 0,7%, dan J♥6♥ 3,3%.
 
 Penjelasannya terkait hand yang bisa membayar. Trips yang kuat dan quads dapat membangun pot lebih besar. Two pair kalah dari setiap trips serta tiga combo 33, sehingga lebih berhati-hati. Meski begitu, jangan menganggap semua trips sama kuat: kicker yang lemah masih dapat didominasi trips lawan.
 
-**Tabel ini juga bukan aturan “kicker lebih tinggi berarti bet lebih besar”.** Frekuensinya justru K♠6♠ 7,8% < Q♥6♥ 7,9% < **J♥6♥ 9,0%**. Perbedaan itu tidak boleh dijelaskan dengan klaim bahwa K atau Q suited memblokir trips lawan lebih banyak. Pada board ini, kartu enam yang Anda pegang sudah menghilangkan kombinasi 6x suited dengan suit tersebut. K6o dan Q6o tidak berada dalam range lawan, sehingga K/Q pendamping tidak menambah blocker trips melalui jalur itu. Nilai output tetap benar; penyebab khusus selisih kecilnya tidak dapat ditetapkan dari tabel ini saja.
+**Tabel ini juga bukan aturan “kicker lebih tinggi berarti bet lebih besar”.** Frekuensinya justru K♠6♠ 7,8% < Q♥6♥ 7,9% < **J♥6♥ 9,0%**. Perbedaan itu tidak boleh dijelaskan dengan klaim bahwa K atau Q suited memblokir trips lawan lebih banyak. Pada board ini, kartu enam yang Anda pegang sudah menghilangkan trips BTN dengan suit tersebut: K♠6♠, Q♥6♥, dan J♥6♥ masing-masing menyisakan tepat 10 dari 20 trips BTN. K6o dan Q6o tidak berada dalam range lawan (BTN hanya open K6 dan Q6 suited), sehingga K/Q pendamping tidak menambah blocker trips melalui jalur itu. Nilai output tetap benar; penyebab khusus selisih kecilnya tidak dapat ditetapkan dari tabel ini saja.
 
 6x juga bukan mayoritas seluruh bet besar. Ada 26 combo dari total 486; kontribusi berbobotnya hanya sekitar 1,2 dari total kira-kira 9,6 combo yang bet besar, atau sekitar seperdelapan (13,0%). Sebagian besar sisanya datang dari hand yang sama sekali tidak memegang enam.
 

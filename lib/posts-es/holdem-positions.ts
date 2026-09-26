@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Posiciones en el póker: nombre de cada asiento y chart",
   seoTitle: "Tu asiento cambia de nombre cada mano — posiciones del póker",
   desc: "Los nombres se mueven con el botón, no con las sillas. Cada posición — UTG, hijack, cutoff, botón — más números de asiento, mapa 6-max y quién actúa primero.",
-  tldr: "Las posiciones del póker son nombres de asiento que se miden desde el botón del repartidor — UTG, lojack, hijack, cutoff, botón y las ciegas — y se mueven un asiento en el sentido de las agujas del reloj cada mano. En el preflop, UTG actúa primero y la ciega grande última; en el postflop, la ciega pequeña actúa primero y el botón último. Los números de asiento físicos nunca se mueven; las posiciones sí.",
+  tldr: "Las posiciones del póker son nombres de asiento que se miden desde el botón del repartidor — UTG, lojack, hijack, cutoff, botón y las ciegas — y normalmente se mueven un asiento en el sentido de las agujas del reloj cada mano. En el preflop, UTG actúa primero y la ciega grande última; en el postflop, la ciega pequeña actúa primero y el botón último. Los números de asiento físicos nunca se mueven; las posiciones sí.",
   category: "strategy",
   date: "2026-06-13",
-  updated: "2026-09-13",
-  masterUpdated: "2026-09-13",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🎯",
@@ -34,13 +34,13 @@ La misma mano. Un resultado completamente distinto. Lo único que cambió fue mi
 ---
 
 > **Respuesta rápida**
-> Las posiciones del póker son los ==asientos con nombre que se miden desde el botón del repartidor== — UTG, lojack, hijack, cutoff, botón, ciega pequeña, ciega grande — y se ==mueven un asiento en el sentido de las agujas del reloj cada mano== conforme se mueve el botón. En el preflop, UTG actúa primero y la ciega grande actúa última. En el postflop, la ciega pequeña actúa primero y el botón actúa último.
+> Las posiciones del póker son los ==asientos con nombre que se miden desde el botón del repartidor== — UTG, lojack, hijack, cutoff, botón, ciega pequeña, ciega grande — y ==normalmente se mueven un asiento en el sentido de las agujas del reloj cada mano== conforme se mueve el botón. En el preflop, UTG actúa primero y la ciega grande actúa última. En el postflop, la ciega pequeña actúa primero y el botón actúa último.
 
 ---
 
 ## ¿Qué son las posiciones en una mesa de póker? (mapa completo de asientos)
 
-Una posición no es una silla — es un **nombre para el lugar donde te sientas respecto al botón del repartidor**, y determina ==cuándo actúas en cada calle==. Como el botón se mueve un asiento en el sentido de las agujas del reloj después de cada mano, cada jugador de la mesa lleva un nombre distinto en cada mano.
+Una posición no es una silla — es un **nombre para el lugar donde te sientas respecto al botón del repartidor**, y determina ==cuándo actúas en cada calle==. En una partida normal el botón se mueve un asiento en el sentido de las agujas del reloj después de cada mano, así que cada jugador de la mesa lleva un nombre distinto de una mano a la siguiente.
 
 Aquí tienes el chart completo de posiciones a 9-max — cada nombre de asiento, su sigla, su zona y exactamente cuándo actúa antes y después del flop:
 
@@ -91,13 +91,13 @@ Esto despista a casi todo jugador en vivo primerizo: cuando el encargado dice **
 
 En la mayoría de las salas, los asientos físicos se numeran desde la izquierda inmediata del repartidor — ==el Asiento 1 es por convención la primera silla a la izquierda del repartidor==, contando en el sentido de las agujas del reloj hasta el Asiento 9 o 10 a la derecha del repartidor. Esos números están atornillados a las sillas. El personal los usa para la logística: sentar jugadores nuevos, entregar fichas, avisar del tiempo.
 
-Las posiciones son lo contrario — ==rotan un asiento en el sentido de las agujas del reloj cada mano== con el botón. El Asiento 5 puede ser el botón esta mano, el cutoff la siguiente y el hijack la mano de después.
+Las posiciones son lo contrario — ==rotan un asiento en el sentido de las agujas del reloj con el botón, normalmente cada mano==. El Asiento 5 puede ser el botón esta mano, el cutoff la siguiente y el hijack la mano de después.
 
 :::compare
 Números de asiento (físico) | Posiciones (póker)
 Fijos a la silla — el Asiento 1 suele ser la izquierda inmediata del repartidor | Se mueven con el botón del repartidor cada mano
 Los usa el personal: "Asiento 5, van fichas" | Los usa la estrategia: "abre el cutoff"
-Nunca cambian durante una sesión | Cambian en cada mano, un asiento en el sentido de las agujas del reloj
+Nunca cambian durante una sesión | Normalmente cambian en cada mano, un asiento en el sentido de las agujas del reloj
 Te dicen DÓNDE te sientas | Te dicen CUÁNDO actúas
 :::
 
@@ -157,7 +157,7 @@ La pregunta más repetida sobre las posiciones, respondida en una tabla:
 
 | Calle | Primero en actuar | Último en actuar |
 |:---|:---|:---|
-| **Preflop** | **UTG** — primer asiento a la izquierda de la ciega grande | **Ciega grande** — puede pasar o subir |
+| **Preflop** | **UTG** — primer asiento a la izquierda de la ciega grande | **Ciega grande** — puede pasar o subir si nadie ha subido |
 | **Flop / Turn / River** | **Ciega pequeña** — o el primer asiento aún activo a la izquierda del botón | **Botón** — o el asiento activo más cercano antes de él |
 
 Entonces — **¿van primero las ciegas?** ==En el preflop, no. En el postflop, sí.== Antes del flop las ciegas ya han puesto dinero, así que la acción empieza con UTG y vuelve hasta ellas al final — la ciega grande actúa última de todos. Después del flop el orden se reinicia en el sentido de las agujas del reloj desde el botón: la ciega pequeña habla primero, la ciega grande segunda, y el botón siempre último.
@@ -184,7 +184,7 @@ Los nombres de las posiciones no cambian con el tamaño de la mesa — ==se van 
 
 **El mano a mano es el que rompe la intuición de todo el mundo.** Con solo dos jugadores, ==el botón pone la ciega pequeña== — el mismo asiento es BTN y SB a la vez. Eso significa que el botón actúa ==**primero** en el preflop== (la ciega grande actúa última, como siempre) pero aun así actúa ==**último** en cada calle postflop==, mientras que la ciega grande actúa primera en el postflop. Cualquier otro tamaño de mesa sigue el patrón normal; solo el mano a mano funde el mejor asiento con una ciega.
 
-**6-max vs. mesa completa** es pura resta: los tres asientos tempranos (UTG, UTG+1 y UTG+2) desaparecen y el lojack hereda el nombre UTG, así que el 6-max va UTG → HJ → CO → BTN → SB → BB. La consecuencia práctica no es que un asiento juegue "más tarde" — el cutoff tiene los mismos tres jugadores por detrás en ambas mesas. Es que ==al desaparecer los asientos tempranos, te sientas en las ciegas y en posición tardía mucho más a menudo, y menos jugadores abren antes que tú== — el UTG de 6-max se enfrenta a cinco rivales, no a ocho — y por eso los rangos se abren en todos los asientos en las partidas de pocos jugadores. Los números asiento por asiento viven en la [guía de juego posicional](/es/blog/holdem-position-play), y las manos exactas que llenan cada rango están mapeadas en la [tabla de manos iniciales](/es/blog/holdem-starting-hands-chart).
+**6-max vs. mesa completa** es pura resta: los tres asientos tempranos (UTG, UTG+1 y UTG+2) desaparecen y el lojack hereda el nombre UTG, así que el 6-max va UTG → HJ → CO → BTN → SB → BB. La consecuencia práctica no es que un asiento juegue "más tarde" — el cutoff tiene los mismos tres jugadores por detrás en ambas mesas. Es que ==al desaparecer los asientos tempranos, te sientas en las ciegas y en posición tardía mucho más a menudo, y menos jugadores abren antes que tú== — el UTG de 6-max se enfrenta a cinco rivales, no a ocho — y por eso el primer asiento abre más amplio y juegas más manos en total en las partidas de pocos jugadores, aunque el rango del cutoff apenas cambie. Los números asiento por asiento viven en la [guía de juego posicional](/es/blog/holdem-position-play), y las manos exactas que llenan cada rango están mapeadas en la [tabla de manos iniciales](/es/blog/holdem-starting-hands-chart).
 
 > **Matiz de nomenclatura:** algunos sitios y salas etiquetan el primer asiento de 6-max como "LJ" o "MP" en vez de UTG, y los asientos medios de 10 jugadores aparecen a veces como "MP1/MP2". Las etiquetas varían; el orden de acción nunca.
 
@@ -211,7 +211,7 @@ A. El lojack (LJ) es el asiento tres a la derecha del botón — el más tempran
 
 **Q. ¿Quién va primero, la ciega pequeña o la ciega grande?**
 
-A. La ciega pequeña actúa antes que la ciega grande en cada calle. En el preflop, ambas ciegas actúan últimas (la ciega grande la última de todas, con la opción de pasar o subir); en el postflop, la ciega pequeña es el primer asiento en actuar en la mesa. La única excepción es el mano a mano, donde el botón pone la ciega pequeña y la ciega grande actúa primero en el postflop.
+A. La ciega pequeña actúa antes que la ciega grande en cada calle. En el preflop, ambas ciegas actúan últimas (la ciega grande la última de todas, con la opción de pasar o subir si nadie ha subido); en el postflop, la ciega pequeña es el primer asiento en actuar en la mesa. La única excepción es el mano a mano, donde el botón pone la ciega pequeña y la ciega grande actúa primero en el postflop.
 
 **Q. ¿Cuántas posiciones hay en el póker 6-max?**
 
@@ -219,7 +219,7 @@ A. Seis: UTG (también llamado lojack), hijack, cutoff, botón, ciega pequeña y
 
 **Q. ¿Cambian las posiciones del póker cada mano?**
 
-A. Sí. El botón del repartidor se mueve un asiento en el sentido de las agujas del reloj después de cada mano, y como todas las posiciones se nombran por su distancia al botón, la posición de cada jugador se desplaza un asiento cada mano. A lo largo de una vuelta completa ocuparás cada posición de la mesa exactamente una vez.
+A. Sí. El botón del repartidor se mueve un asiento en el sentido de las agujas del reloj después de cada mano, y como todas las posiciones se nombran por su distancia al botón, la posición de cada jugador normalmente se desplaza un asiento cada mano. A lo largo de una vuelta completa en una mesa estable ocuparás cada posición exactamente una vez — las excepciones llegan cuando un jugador queda eliminado o se va y la mesa juega con botón muerto (el mismo jugador puede entonces actuar último dos manos seguidas), o cuando se suman jugadores, se rompen mesas o la partida pasa a mano a mano.
 
 **Q. ¿Qué es el Asiento 1 en el póker?**
 
@@ -235,13 +235,13 @@ A. El botón (BTN). Es el único asiento que actúa último en cada calle postfl
 
 **Q. ¿Qué es el 6-max y en qué cambian las posiciones?**
 
-A. Una mesa 6-max tiene seis asientos en vez de nueve: UTG (también llamado lojack), hijack, cutoff, botón, ciega pequeña y ciega grande. Se quitan los tres asientos tempranos (UTG, UTG+1 y UTG+2) y el lojack hereda el nombre UTG. Cada asiento que conserva su propio nombre — hijack, cutoff, botón y las ciegas — mantiene los mismos jugadores por detrás que su homólogo de mesa completa, pero te sientas en las ciegas y en posición tardía mucho más a menudo, así que los rangos se abren en todos los asientos.
+A. Una mesa 6-max tiene seis asientos en vez de nueve: UTG (también llamado lojack), hijack, cutoff, botón, ciega pequeña y ciega grande. Se quitan los tres asientos tempranos (UTG, UTG+1 y UTG+2) y el lojack hereda el nombre UTG. Cada asiento que conserva su propio nombre — hijack, cutoff, botón y las ciegas — mantiene los mismos jugadores por detrás que su homólogo de mesa completa, pero te sientas en las ciegas y en posición tardía mucho más a menudo, así que el primer asiento abre más amplio y juegas más manos en total, aunque el rango del cutoff apenas cambie.
 
 ---
 
 ## Lo que hay que recordar
 
-1. **Las posiciones son nombres, no sillas.** Cada asiento se nombra por su distancia al botón del repartidor, y cada nombre se mueve un asiento en el sentido de las agujas del reloj cada mano.
+1. **Las posiciones son nombres, no sillas.** Cada asiento se nombra por su distancia al botón del repartidor, y cada nombre normalmente se mueve un asiento en el sentido de las agujas del reloj cada mano.
 2. **El chart en una línea:** UTG → UTG+1 → UTG+2 → LJ → HJ → CO → BTN → SB → BB. El preflop empieza en UTG y termina en la ciega grande; el postflop empieza en la ciega pequeña y termina en el botón.
 3. **Números de asiento ≠ posiciones.** El Asiento 1 es por convención la izquierda inmediata del repartidor y nunca se mueve; las posiciones rotan cada mano. Uno es una dirección, la otra es un trabajo.
 4. **El tamaño de la mesa resta por delante.** El 6-max quita los asientos tempranos; el mano a mano funde el botón con la ciega pequeña — primero en actuar en el preflop, último en el postflop.

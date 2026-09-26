@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Seri dipecahkan dalam urutan tetap: jenis tangan dulu, lalu kartu pembentuk tangan, lalu kicker dari tertinggi ke terendah. Pair sama → kicker pertama tertinggi menang; lima kartu identik → pot dibagi. Jenis kartu tak pernah menentukan seri.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-24",
-  masterUpdated: "2026-09-12",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "⚖️",
@@ -151,7 +151,7 @@ Logika yang sama berlaku pada pot dengan quads di board: semua orang berbagi emp
 
 **Tidak — bukan untuk menentukan siapa yang menang. Di Texas Hold'em jenis kartu punya tepat satu tugas: lima kartu sejenis membentuk flush. Di luar itu jenis kartu tak punya peringkat, jadi dua tangan yang sama persis nilainya selalu membagi pot, dan tak ada kartu yang mengalahkan kartu lain karena jenisnya.**
 
-Pertanyaan ini terus muncul karena urutan jenis kartu memang ada di poker — hanya saja bukan di permainan ini. Stud dan razz memakainya untuk menentukan siapa yang membayar bring-in dan siapa yang menerima chip yang tak bisa dibagi. Hold'em tak memakainya untuk satu pun dari keduanya.
+Pertanyaan ini terus muncul karena urutan jenis kartu memang ada di poker — hanya saja tak pernah dipakai untuk meranking tangan di permainan ini. Stud dan razz memakainya untuk menentukan siapa yang membayar bring-in dan siapa yang menerima chip yang tak bisa dibagi. Hold'em tak memakainya untuk satu pun dari keduanya.
 
 Bukti paling gamblang justru ada pada satu chip yang *tak* bisa dibagi. Aturan turnamen WSOP 2026 menyebut ==g:*"In button games with 2 or more high or low hands, the odd chip goes to the first seat left of the button"*== (Aturan 73): chip sisa jatuh ke kursi pertama di kiri button. Bahkan saat sebuah pot secara fisik tak terbagi rata, aturan itu berpegang pada **kursi**, bukan jenis kartu — dan metode berbasis jenis kartu di paruh kedua aturan yang sama ditulis khusus untuk stud dan razz.
 
@@ -228,7 +228,7 @@ A. Kartu teratas lebih tinggi yang menang, persis seperti straight biasa. Dua st
 
 **Q. Apakah jenis kartu pernah memecah seri di Texas Hold'em?**
 
-A. Tidak — tapi ada satu tempat jenis kartu memang dipakai di meja Hold'em, dan itu bukan pot. Di cash game, dan menurut house rule kebanyakan card room, setiap pemain menarik satu kartu untuk menentukan di mana dealer button dimulai, dan kalau dua tarikan seri di nilai, urutan jenis yang memutuskannya. (Turnamen WSOP melewatkan tarikan itu: Aturan turnamen WSOP 85 memulai button dari stack pertama di sebelah kanan dealer dan hanya menarik ulang saat tersisa tiga, dua, dan satu meja — tanpa melibatkan jenis kartu sama sekali.) Bagaimanapun juga itu memilih kursi, bukan tangan. Satu-satunya urutan jenis kartu di buku aturan turnamen itu milik stud dan razz. Jika dua tangan lima-kartu terbaik cocok nilai per nilai, pot dibagi tanpa memandang jenis.
+A. Tidak — tapi ada satu tempat jenis kartu memang dipakai di meja Hold'em, dan itu bukan pot. Di cash game, dan menurut house rule kebanyakan card room, setiap pemain menarik satu kartu untuk menentukan di mana dealer button dimulai, dan kalau dua tarikan seri di nilai, urutan jenis yang memutuskannya. (Turnamen WSOP melewatkan tarikan pembuka itu: Aturan turnamen WSOP 85 memulai button dari stack pertama di sebelah kanan dealer dan baru mengadakan tarikan untuk button saat tersisa tiga, dua, dan satu meja.) Bagaimanapun juga itu memilih kursi, bukan tangan. Selain tarikan button — yang oleh glosarium buku aturan WSOP diputuskan dengan "rank and suit" — satu-satunya urutan jenis kartu di buku aturan turnamen itu milik stud dan razz. Jika dua tangan lima-kartu terbaik cocok nilai per nilai, pot dibagi tanpa memandang jenis.
 
 **Q. Apa yang terjadi jika kedua pemain punya tangan persis sama?**
 

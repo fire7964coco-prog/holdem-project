@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "BTN के open और BB के call के बाद A♥7♦2♣ पर BB अपनी range का 98.2% check करता है—top pair, two pair और sets भी। Equity 45.1% बनाम 54.9% है; बड़ा फर्क उसे EV में बदलने में है: OOP का EQR 84.0%, IP का 113.1%।",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-15",
-  masterUpdated: "2026-09-02",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   readTime: "9 मिनट",
   emoji: "🅰️",
   image: "/images/gto-srp-dry-ace-oop-hi.webp",
@@ -65,7 +65,7 @@ Pot 5.5 bb इसलिए है क्योंकि BTN के 2.5 bb और
 
 क्योंकि यहाँ पहले bet करने के मुकाबले check करके pot जीतना आसान होता है। Preflop पहल करने वाले खिलाड़ी के सामने, OOP रहते हुए, एक pair से lead करना उस हैंड को महँगा बनाता है जिसे आप showdown तक ले जाना चाहते हैं।
 
-Lead के खिलाफ तीन बातें हैं। पहली, **equity realization**: नीचे के आँकड़ों में BB अपनी equity का 84.0% EV में बदलता है, जबकि BTN 113.1%। OOP बड़ा pot बनाने से इस अंतर की कीमत बढ़ती है। दूसरी, BTN इस तरह के flop पर अक्सर C-bet करता है—**check उसके bluffs को pot में रखता है**, जबकि lead करने पर वे fold होकर कुछ नहीं देते। तीसरी, BB की range ऊपर से सीमित है: इसमें AA, AK या AQ नहीं हैं। Lead करने से उन्हीं मजबूत हैंडों से raise का सामना हो सकता है जिनके खिलाफ आगे खेलना मुश्किल है।
+Lead के खिलाफ तीन बातें हैं। पहली, **equity realization**: नीचे के आँकड़ों में BB अपनी equity का 84.0% EV में बदलता है, जबकि BTN 113.1%। OOP बड़ा pot बनाने से इस अंतर की कीमत बढ़ती है। दूसरी, BTN इस तरह के flop पर अक्सर C-bet करता है—**check उसके bluffs को pot में रखता है**, जबकि lead करने पर वे fold होकर कुछ नहीं देते। तीसरी, BB की range ऊपर से सीमित है: इसमें AA, AK या AQ नहीं हैं। Lead करने पर मजबूत aces से raises आते हैं, और BB की range का अधिकांश हिस्सा उनके खिलाफ आगे नहीं खेल सकता: raise झेल सकने वाले केवल 24 कॉम्बो हैं, यानी 77 और 22 के sets तथा A7 और A2 के two pair। (Raise node यहाँ solve नहीं किया गया।)
 
 Lead करने से **बेहतर हैंड fold नहीं होते**। BTN की opening range में A2 तक हर ace, साथ में underpairs और sevens हैं। इसलिए कई कमजोर हैंड call कर सकते हैं—समस्या यह नहीं है। समस्या है वह pot जिसे आप इस तरह बढ़ा रहे हैं।
 

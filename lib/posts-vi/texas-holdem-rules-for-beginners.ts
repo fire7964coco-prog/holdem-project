@@ -186,7 +186,7 @@ Nếu chơi cash game nhỏ ở nhà, hãy chọn mức buy-in mà ai thua cũng
 
 ==r:Đừng bắt đầu với mức cược khiến mọi người căng thẳng.== Người mới mà run thì không học nhanh hơn. Họ chỉ bỏ bài quá nhiều, theo bài theo cảm xúc, hoặc cãi nhau về luật.
 
-Lưu ý rằng buy-in của **giải đấu (tournament)** hoạt động khác cash game: bạn trả một khoản phí vào cửa cố định, nhận một lượng chip không quy đổi tiền, và chơi đến khi một người gom hết chip. Nếu chưa rõ mình muốn chơi kiểu nào, hãy đọc [cash game vs giải đấu](/vi/blog/holdem-tournament-vs-cash-game) trước.
+Lưu ý rằng buy-in của **giải đấu (tournament)** hoạt động khác cash game: bạn trả một khoản phí vào cửa cố định, nhận một lượng chip không quy đổi tiền, và chơi đến khi một người gom hết chip (giải có re-entry cho phép bạn mua vào lại sau khi bị loại). Nếu chưa rõ mình muốn chơi kiểu nào, hãy đọc [cash game vs giải đấu](/vi/blog/holdem-tournament-vs-cash-game) trước.
 
 Khi tập online, hãy dùng bàn miễn phí đến khi bạn giải thích được thứ tự hành động mà không cần nghĩ. Rồi mới nâng mức cược từ từ.
 
@@ -194,7 +194,7 @@ Khi tập online, hãy dùng bàn miễn phí đến khi bạn giải thích đ�
 
 ## No-Limit, Limit hay Pot-Limit? Bạn đang chơi loại Texas Hold'em nào?
 
-Khi người ta nói "Texas Hold'em", họ gần như luôn nói về **No-Limit Hold'em (NLHE)** — thể thức của Main Event WSOP và hầu hết mọi ván chơi tại nhà. Cách chia bài, mù và thứ hạng bài giống hệt nhau ở cả ba thể thức. Điều duy nhất khác biệt là **bạn được phép cược bao nhiêu.**
+Khi người ta nói "Texas Hold'em", họ gần như luôn nói về **No-Limit Hold'em (NLHE)** — thể thức của Main Event WSOP và hầu hết mọi ván chơi tại nhà. Cách chia bài và thứ hạng bài giống hệt nhau ở cả ba thể thức. Điều khác biệt chính là **bạn được phép cược bao nhiêu** — và Fixed-Limit thường còn giới hạn số lần tố trong một vòng (ở WSOP: một khoản cược cộng bốn lần tố).
 
 | Thể thức | Được cược bao nhiêu? | Gặp ở đâu |
 |--------|-----------------------|---------------------|
@@ -299,7 +299,7 @@ Pot odds của bạn là **$120 so với $20**, tức **6:1**. Nghĩa là bạn 
 
 ### Quy tắc 2 và 4 — mẹo tính xác suất tức thì
 
-Khi bạn cầm bài chờ (ví dụ: bốn lá cùng chất chờ Thùng), hãy đếm số **outs** — những lá bài sẽ hoàn thiện tay bài của bạn.
+Khi bạn cầm bài chờ (ví dụ: bốn lá cùng chất chờ Thùng), hãy đếm số **outs** — những lá bài sẽ biến tay bài chờ của bạn thành tay nhiều khả năng thắng.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

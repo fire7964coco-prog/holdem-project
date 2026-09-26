@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Para calcular pot odds, divida o valor que você precisa pagar pelo pote total depois do seu call. Pagar $50 num pote de $150 = 50 ÷ 200 = 25% — então você precisa de pelo menos 25% de equity para o call ser lucrativo.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-24",
-  masterUpdated: "2026-09-24",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🧮",
@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "A mão de um jogador empurrando fichas para o pote central no feltro verde — o momento em que uma decisão de pot odds é tomada",
   tags: ["pot odds", "como calcular pot odds", "pot odds no poker", "tabela de pot odds", "calculadora de probabilidade poker", "pot odds texas holdem", "simulador de probabilidade poker", "equity necessária para pagar"],
   content: `
-A palavra mais cara do poker é "esperança". Passei meu primeiro ano pagando apostas no river porque meu flush draw *talvez* fechasse, e sangrava fichas fazendo isso. A noite em que a ficha finalmente caiu foi um call de $50 num pote de $150 — fiz a conta pela primeira vez, percebi que precisava só de 25% para empatar no longo prazo, e nunca mais olhei para um call do mesmo jeito.
+A palavra mais cara do poker é "esperança". Passei meu primeiro ano pagando apostas no turn porque meu flush draw *talvez* fechasse no river, e sangrava fichas fazendo isso. A noite em que a ficha finalmente caiu foi um call de $50 num pote de $150 — fiz a conta pela primeira vez, percebi que precisava só de 25% para empatar no longo prazo, e nunca mais olhei para um call do mesmo jeito.
 
 ==Pot odds são a única conta que separa pagar por sentimento de pagar por um motivo.== Leva cinco minutos para aprender e algumas sessões para automatizar. Este guia te dá o ==g:método de 10 segundos==, uma tabela por tamanho de aposta que você consegue visualizar na mesa, e a única coisa que a maioria dos jogadores erra: como pot odds, equity e implied odds realmente se encaixam.
 
@@ -121,7 +121,7 @@ Até um enorme **overbet de 2× o pote pede só 40% de equity**. Você quase nun
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Seu projeto | Outs | Equity, 1 carta (turn → river) | Equity, 2 cartas (flop → river) |
+| Seu projeto | Outs | Chance de acertar, 1 carta (turn → river) | Chance de acertar, 2 cartas (flop → river) |
 |:---|:---:|:---:|:---:|
 | Flush + sequência aberta | 15 | 32,6% | 54,1% |
 | Flush draw | 9 | 19,6% | 35,0% |
@@ -143,7 +143,7 @@ Leia contra a tabela por tamanho de aposta acima. Enfrentando uma ==aposta de me
 :::compare
 Termo | O que significa
 Pot odds | O preço: call ÷ pote final = a equity que você *precisa*
-Equity | A sua chance real de ganhar a mão agora
+Equity | A sua fatia esperada do pote agora — as mãos que você ganha mais a sua parte dos empates
 Implied odds | As fichas *extras* que você espera ganhar nas streets seguintes se fechar
 :::
 
@@ -163,7 +163,7 @@ O reverso da moeda são as **reverse implied odds** — as fichas que você vai 
 
 Um flush draw tem 9 outs. No flop: 9 × 4 = **36%** (valor real 35,0% — na mosca). No turn: 9 × 2 = **18%** (valor real 19,6% — perto o suficiente para decidir).
 
-:::tip[A versão ×4 assume silenciosamente que você vai ver *as duas* cartas restantes sem mais apostas — o que só é garantido quando você já está all-in. Se ainda há aposta por vir, apoie-se no número ×2 (uma carta) para a street na sua frente, e deixe as implied odds justificarem o resto.]:::
+:::tip[A versão ×4 assume silenciosamente que você vai ver *as duas* cartas restantes sem mais apostas — o que só é garantido quando não pode haver mais apostas (você está all-in, ou pagou um all-in). Se ainda há aposta por vir, apoie-se no número ×2 (uma carta) para a street na sua frente, e deixe as implied odds justificarem o resto.]:::
 
 As derivações completas de cada projeto e mão feita estão na [tabela de probabilidade](/pt/blog/holdem-probability). Aqui, o atalho é tudo o que você precisa.
 
@@ -238,19 +238,19 @@ A. O sizing da aposta é o outro lado das pot odds — a sua aposta define o pre
 
 **Q. O que é a regra do 2 e 4?**
 
-A. Um atalho para transformar outs em equity: multiplique os outs por 4 no flop (duas cartas por vir) ou por 2 no turn (uma carta por vir). Nove outs de flush ≈ 36% no flop, 18% no turn. Use ×4 só quando você for ver as duas cartas sem mais apostas.
+A. Um atalho para transformar outs limpos na sua chance de completar o projeto: multiplique os outs por 4 no flop (duas cartas por vir) ou por 2 no turn (uma carta por vir). Nove outs de flush ≈ 36% no flop, 18% no turn. Use ×4 só quando você for ver as duas cartas sem mais apostas.
 
 **Q. Quanta equity eu preciso para pagar uma aposta?**
 
-A. Exatamente as suas pot odds em porcentagem: call ÷ pote final. Contra uma aposta de meio pote você precisa de 25%; contra uma aposta do tamanho do pote, 33%. Conte os seus outs, converta com a regra do 2 e 4, e pague quando a sua equity passar da barra.
+A. Exatamente as suas pot odds em porcentagem: call ÷ pote final. Contra uma aposta de meio pote você precisa de 25%; contra uma aposta do tamanho do pote, 33%. Num projeto, conte os seus outs limpos, converta com a regra do 2 e 4 para as cartas que este call realmente compra, e pague quando essa chance passar da barra — ou quando as implied odds cobrirem a diferença.
 
 ---
 
 ## As 3 coisas para lembrar
 
 1. **A fórmula:** equity necessária = seu call ÷ o pote final (com o seu call incluído). Meio pote = 25%, tamanho do pote = 33%.
-2. **A comparação:** pague quando a sua equity (outs × 4 ou × 2) supera as suas pot odds. Essa é a decisão inteira.
-3. **O desempate:** as implied odds salvam projetos que ficam um pouco abaixo do preço — mas só quando os stacks são profundos e o seu projeto é para os nuts.
+2. **A comparação:** pague quando a sua equity supera as suas pot odds. Num projeto, outs × 4 ou × 2 dá a estimativa — conte só outs limpos e use o ×2 quando ainda vier aposta.
+3. **O desempate:** as implied odds salvam projetos que ficam um pouco abaixo do preço — mas só quando há fichas atrás para ganhar e um adversário que provavelmente vai pagá-las; jogar para os nuts torna esse pagamento mais seguro.
 
 Faça isso algumas centenas de vezes e deixa de ser matemática e vira instinto. Você vai foldar os calls sem esperança, fazer os lucrativos, e parar de pagar o imposto da "esperança". Daqui, afie os números crus por trás de cada projeto na [tabela de odds e probabilidade do poker](/pt/blog/holdem-probability), ou garanta que está entrando em potes com mãos que valem a pena projetar usando a [tabela de starting hands por posição](/pt/blog/holdem-starting-hands-chart).
 

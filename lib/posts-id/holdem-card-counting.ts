@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Tidak seperti di blackjack — dek diacak ulang setiap hand dan terlalu sedikit kartu terlihat, jadi melacak kartu tinggi dan rendah tak memberi keunggulan. Tapi poker punya penghitungan legalnya sendiri: menghitung outs, memakai blocker, dan melacak dead card untuk membaca apa yang tak mungkin dipegang lawan.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-24",
-  masterUpdated: "2026-09-24",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 mnt",
   emoji: "🧮",
@@ -49,11 +49,11 @@ Jika Anda membayangkan running high-low count seperti di film, buang itu — ia 
 
 :::card
 🔀 | Dek reset setiap hand | Card counting blackjack butuh shoe yang dibagikan habis sepanjang puluhan hand sehingga informasi menumpuk. Di poker, dek diacak ulang setiap hand, jadi tak ada yang terbawa — setiap hand dimulai dari dek penuh yang acak
-🙈 | Terlalu sedikit kartu terlihat | Kartu tertutup setiap pemain menghadap ke bawah. Anda hanya pernah melihat board bersama — segelintir kartu — tak pernah cukup untuk melacak komposisi dek
+🙈 | Terlalu sedikit kartu terlihat | Kartu tertutup setiap pemain menghadap ke bawah. Anda melihat dua kartu Anda sendiri, board bersama, dan apa pun yang dibuka di showdown — segelintir kartu — tak pernah cukup untuk melacak komposisi dek
 👥 | Anda main lawan pemain, bukan bandar | Tak ada dealer yang terikat aturan baku untuk direbut keunggulannya. "Dek kaya kartu tinggi" tak berarti apa-apa saat pocket aces tetap premium — Anda menang dengan tangan lebih baik atau keputusan lebih baik, bukan dengan count yang menguntungkan
 :::
 
-Di blackjack, dek yang penuh kartu tinggi secara matematis menguntungkan Anda, jadi Anda bertaruh besar saat count-nya bagus. Di poker tak ada "dek menguntungkan" yang setara — keunggulan datang sepenuhnya dari memainkan para *pemain*.
+Di blackjack, dek yang penuh kartu tinggi secara matematis menguntungkan Anda, jadi Anda bertaruh besar saat count-nya bagus. Di poker tak ada "dek menguntungkan" yang setara — keunggulan datang dari memainkan para *pemain* dan kartu yang bisa Anda lihat saat itu juga: outs, blocker, board.
 
 ---
 
@@ -67,7 +67,7 @@ Anda vs bandar, aturan tetap | Anda vs pemain lain
 Satu shoe sepanjang banyak hand | Diacak ulang setiap hand
 Lacak keseimbangan tinggi/rendah dek | Tak ada yang dilacak dari hand ke hand
 Bertaruh besar saat dek menguntungkan Anda | Tak ada "dek menguntungkan"
-Menghitung bisa membuat Anda dilarang masuk | Menghitung diharapkan dan legal
+Menghitung bisa membuat Anda dilarang masuk | Menghitung outs di kepala adalah permainan biasa
 :::
 
 Blackjack memberi imbalan pada ingatan atas apa yang sudah pergi; poker memberi imbalan pada membaca apa yang bisa Anda lihat *sekarang juga* — board, aksi, dan kartu yang tangan Anda sendiri buang dari range lawan.
@@ -82,7 +82,7 @@ Blackjack memberi imbalan pada ingatan atas apa yang sudah pergi; poker memberi 
 
 Sebuah ==out== adalah kartu tak terlihat mana pun yang meningkatkan tangan Anda menjadi kemungkinan pemenang. Sebuah flush draw punya ==9 outs== (13 kartu satu jenis dikurangi 4 yang bisa Anda lihat) — kartu sejenis yang ada di board sudah dikurangkan di dalam angka 9 itu, jadi jangan mencoretnya sekali lagi sebagai "dead card". Ubah outs menjadi peluang menang kasar dengan ==Rule of 4 and 2==: kalikan dengan 4 saat masih dua kartu tersisa, dengan 2 saat satu.
 
-Sebuah flush draw 9 outs jadi pada river sekitar ==g:35%== dari waktu (9 × 4 = 36% sebagai perkiraan cepat — angka sebenarnya 35,0%). Angka itu menghitung kedua kartu tersisa, jadi ia baru menentukan sebuah call kalau Anda memang melihat keduanya: Anda all-in di flop tanpa taruhan lagi. Kalau ada taruhan di flop yang harus Anda bayar lagi di turn, hitung hanya kartu berikutnya: ==9 ÷ 47 = 19,1%==. Metode lengkapnya — outs kotor, combo draw, persentase persis — ada di [panduan menghitung outs](/id/blog/holdem-outs), dan peluang di balik setiap draw ada di [bagan probabilitas](/id/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
+Sebuah flush draw 9 outs jadi pada river sekitar ==g:35%== dari waktu (9 × 4 = 36% sebagai perkiraan cepat — angka sebenarnya 35,0%). Angka itu menghitung kedua kartu tersisa, jadi ia baru menentukan sebuah call kalau Anda memang melihat keduanya — tak ada taruhan lagi yang akan datang, seperti saat Anda all-in atau sudah call sebuah all-in. Kalau ada taruhan di flop yang harus Anda bayar lagi di turn, hitung hanya kartu berikutnya: ==9 ÷ 47 = 19,1%==. Metode lengkapnya — outs kotor, combo draw, persentase persis — ada di [panduan menghitung outs](/id/blog/holdem-outs), dan peluang di balik setiap draw ada di [bagan probabilitas](/id/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
 ### Blocker (card removal)
 
@@ -90,11 +90,11 @@ Sebuah ==blocker== adalah kartu di tangan Anda yang mengurangi kombinasi yang bi
 
 ![Infografik A♠ J♦ di flop full spade K♠ 9♠ 4♠ — memegang ace of spades memblokir nut flush](/images/holdem-card-counting-blocker.webp "Memegang A♠ di board tiga spade berarti tak ada lawan yang bisa punya nut flush — itulah card removal bekerja")
 
-Blocker juga bekerja secara parsial. Pada board ==b:Q-J-9==, nut straight-nya K-10. Normalnya ada 16 cara memegang K-10 (4 king × 4 sepuluh); jika Anda sendiri pegang satu king atau satu sepuluh, itu turun ke ==12 kombinasi==, jadi nut straight 25% lebih kecil kemungkinannya di range mereka. Ini inti dari seleksi bluff modern — selengkapnya di [panduan 3-bet dan blocker](/id/blog/holdem-3bet).
+Blocker juga bekerja secara parsial. Pada board ==b:Q-J-9==, nut straight-nya K-10. Normalnya ada 16 cara memegang K-10 (4 king × 4 sepuluh); jika Anda sendiri pegang satu king atau satu sepuluh, itu turun ke ==12 kombinasi==, jadi range mereka memuat 25% lebih sedikit kombinasi nut straight. Ini inti dari seleksi bluff modern — selengkapnya di [panduan 3-bet dan blocker](/id/blog/holdem-3bet).
 
 ### Card removal & dead card
 
-Setiap kartu yang bisa Anda lihat menghapus kemungkinan. Di Hold'em sebuah out tak mungkin tergeletak di board — kalau begitu, tangan Anda sudah jadi — jadi ==dead card== yang perlu dilacak adalah kartu yang terlihat *di luar* board: kartu yang tersingkap karena kesalahan, tangan yang dibuka sebelum masuk muck, fold tetangga meja yang kebetulan Anda lihat. Setiap satu yang Anda lihat adalah out yang tak lagi Anda punya. Menyesuaikan diri terhadapnya adalah kebiasaan konstan dan senyap yang dijaga pemain bagus di setiap street. Itu menghitung, hanya saja bukan jenis yang butuh running total.
+Setiap kartu yang bisa Anda lihat menghapus kemungkinan. Di Hold'em sebuah out tak mungkin tergeletak di board — kalau begitu, tangan Anda sudah jadi — jadi ==dead card== yang perlu dilacak adalah kartu yang terlihat *di luar* board: kartu yang tersingkap karena kesalahan, tangan yang dibuka sebelum masuk muck, fold tetangga meja yang kebetulan Anda lihat. Setiap out di antara kartu-kartu itu adalah out yang tak lagi Anda punya; kartu terbuka lainnya sekadar memperkecil dek yang tak terlihat. Menyesuaikan diri terhadapnya adalah kebiasaan konstan dan senyap yang dijaga pemain bagus di setiap street. Itu menghitung, hanya saja bukan jenis yang butuh running total.
 
 ---
 
@@ -116,7 +116,7 @@ Di turnamen yang memakai [aturan Poker TDA 2026](https://www.pokertda.com/poker-
 
 **Di Seven Card Stud, sebagian besar kartu setiap pemain dibagikan menghadap ke atas — jadi Anda benar-benar bisa menghitung dek dengan cara kuno.** Jika Anda butuh kartu tertentu untuk melengkapi tangan, Anda bisa memandang sekeliling meja dan secara harfiah menghitung berapa banyak outs Anda yang sudah terlihat di up-card lawan. Setiap yang Anda temukan adalah dead out.
 
-Di Hold'em satu-satunya kartu yang dibagikan menghadap ke atas adalah lima community card bersama — apa pun selain itu yang Anda lihat adalah kecelakaan (kartu yang tersingkap, tangan yang ditunjukkan saat fold), jadi hanya sedikit yang bisa dilacak. Tapi Stud — dan kerabatnya, Razz dan Stud Hi-Lo, yang membagikan kartu terbuka dengan cara yang sama — memberi imbalan tepat pada jenis pelacakan kartu yang dikuasai penghitung blackjack. Inilah yang paling dekat poker mendekati versi film.
+Di Hold'em satu-satunya kartu yang dibagikan menghadap ke atas adalah lima community card bersama — semua kartu lain tetap tertutup kecuali dibuka di showdown, dibuka di atas meja saat all-in, atau tersingkap karena kecelakaan (kartu yang tersingkap, tangan yang ditunjukkan saat fold), jadi hanya sedikit yang bisa dilacak. Tapi Stud — dan kerabatnya, Razz dan Stud Hi-Lo, yang membagikan kartu terbuka dengan cara yang sama — memberi imbalan tepat pada jenis pelacakan kartu yang dikuasai penghitung blackjack. Inilah yang paling dekat poker mendekati versi film.
 
 ---
 
@@ -125,7 +125,7 @@ Di Hold'em satu-satunya kartu yang dibagikan menghadap ke atas adalah lima commu
 **Anda tak butuh sistem — hanya tiga kebiasaan yang mengubah kartu terlihat menjadi keputusan lebih baik.**
 
 :::steps
-Hitung outs Anda di setiap draw | Begitu Anda punya draw, hitung kartu yang melengkapinya dan kalikan — ×4 hanya kalau kedua kartu memang akan datang (Anda all-in, atau turn dan river sama-sama gratis), selain itu ×2 hanya untuk kartu berikutnya. Call saat peluang itu mengalahkan harganya
+Hitung outs Anda di setiap draw | Begitu Anda punya draw, hitung kartu yang melengkapinya dan kalikan — ×4 hanya kalau kedua kartu memang akan datang (Anda all-in, atau turn dan river sama-sama gratis), selain itu ×2 hanya untuk kartu berikutnya. Call saat peluang itu — hanya dengan clean out — mengalahkan harganya, atau saat implied odds menutup selisihnya
 Tanyakan apa yang tangan Anda blokir | Sebelum Anda bluff, cek apakah Anda pegang kartu yang membuat tangan call terkuat mereka mustahil atau lebih kecil kemungkinannya
 Sesuaikan dengan dead card | Kurangi out mana pun yang sudah Anda lihat terbuka di luar board — kartu yang tak sengaja terlihat, tangan yang ditunjukkan, fold yang kebetulan Anda lihat. Kartu yang bisa Anda lihat adalah kartu yang tak mungkin dipegang lawan — tapi hanya kalau terlihat karena kebetulan: sengaja berusaha melihat kartu pemain lain bukan bagian dari metode ini — hanya paparan yang tak disengaja
 :::
@@ -155,7 +155,7 @@ A. Penghitungan dek ala blackjack tidak — dek reset setiap hand dan terlalu se
 
 **Q. Kenapa card counting bekerja di blackjack tapi tidak di poker?**
 
-A. Blackjack adalah Anda melawan dealer yang terikat aturan baku yang memakai satu shoe sepanjang banyak hand, jadi dek kaya kartu tinggi secara matematis menguntungkan Anda dan Anda bertaruh sesuai itu. Di poker dek diacak ulang setiap hand dan Anda diadu dengan pemain lain, jadi tak ada "dek menguntungkan" untuk dilacak — keunggulan datang dari membaca lawan.
+A. Blackjack adalah Anda melawan dealer yang terikat aturan baku yang memakai satu shoe sepanjang banyak hand, jadi dek kaya kartu tinggi secara matematis menguntungkan Anda dan Anda bertaruh sesuai itu. Di poker dek diacak ulang setiap hand dan Anda diadu dengan pemain lain, jadi tak ada "dek menguntungkan" untuk dilacak — keunggulan datang dari membaca lawan dan kartu yang bisa Anda lihat: outs, blocker, board.
 
 **Q. Apa padanan card counting di poker?**
 

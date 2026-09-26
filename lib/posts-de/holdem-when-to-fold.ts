@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Folden ist die am meisten unterschätzte Fähigkeit im Poker – das schlechteste Ergebnis eines Folds ist null, während ein verlorener Call jedes Mal Chips verblutet. Ein solider Spieler foldet rund 75–85% seiner Hände vor dem Flop, legt nach dem Flop verfehlte Hände und schwache Draws ab, die seine Pot Odds nicht erfüllen, und – am schwersten von allem – gibt starke, aber geschlagene Hände auf, wenn die Linie eines passiven Gegners nach Value schreit. Die meisten Spieler callen nicht zu viel, weil sie Hände nicht lesen können; sie callen, weil sich die Chips im Pot bereits wie ihre eigenen anfühlen. Sind sie aber nicht.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-13",
-  masterUpdated: "2026-09-13",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "16 Min.",
   emoji: "🛡️",
@@ -38,7 +38,7 @@ Mathe > Angst | Der einzige Grund zu folden – oder nicht
 
 Steht eine Bet, hast du drei Optionen: folden, callen oder raisen. Steht keine an, hast du zwei: checken oder betten. Folden heißt, den Pot aufzugeben und keine weiteren Chips zu riskieren. Neue Spieler behandeln es als Verlieren. Gewinner behandeln es als ==Weigerung, mehr zu verlieren.==
 
-Hier ist die Idee, die alles neu einordnet: **der Erwartungswert eines Folds ist, ab dieser Entscheidung, null.** Wenn du wirklich geschlagen bist und keine ausreichenden Odds auf eine Verbesserung hast, sind alle anderen Optionen *negativ* – callen kostet dich den Call, raisen kostet dich mehr. Null schlägt negativ. Folden gewinnt nicht den Pot, aber es gewinnt das lange Spiel, indem es keine Chips an Spots verschenkt, in denen du hinten liegst.
+Hier ist die Idee, die alles neu einordnet: **der Erwartungswert eines Folds ist, ab dieser Entscheidung, null.** Wenn du wirklich geschlagen bist – jetzt hinten, ohne ausreichende Odds auf eine Verbesserung und ohne die Fold Equity, um den Gegner aus der Hand zu drängen –, sind alle anderen Optionen *negativ* – callen kostet dich den Call, raisen kostet dich mehr. Null schlägt negativ. Folden gewinnt nicht den Pot, aber es gewinnt das lange Spiel, indem es keine Chips an Spots verschenkt, in denen du hinten liegst.
 
 Ein präziser Vorbehalt, weil er wichtig ist: Folden ist *nicht kostenlos.* Die Chips, die schon im Pot liegen, sind in dem Moment weg, in dem du sie hineingelegt hast – Folden verhindert nur, dass du *gutem Geld schlechtes hinterherwirfst.* Diese Unterscheidung ist die gesamte Psychologie des Foldens, und wir kommen darauf zurück. Zuerst die Mechanik.
 

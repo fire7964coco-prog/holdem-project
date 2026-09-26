@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Para calcular las pot odds, divide lo que tienes que igualar entre el bote total después de tu call. Igualar $50 en un bote de $150 = 50 ÷ 200 = 25% — necesitas al menos un 25% de equity para que el call sea rentable.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-24",
-  masterUpdated: "2026-09-24",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🧮",
@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "La mano de un jugador empujando fichas hacia el bote central sobre el tapete verde — el momento en que se toma una decisión de pot odds",
   tags: ["pot odds", "pot odds poker", "calcular pot odds", "probabilidades del bote", "odds implicitas", "pot odds vs equity", "regla del 2 y 4", "equity necesaria para igualar"],
   content: `
-La palabra más cara del póker es "esperanza". Me pasé mi primer año pagando apuestas en el river porque mi proyecto de color *podía* llegar, y así fue como sangré fichas. La noche en que por fin lo vi claro fue un call de $50 en un bote de $150 — por una vez hice la cuenta, me di cuenta de que solo necesitaba un 25% para no perder, y nunca volví a mirar un call de la misma forma.
+La palabra más cara del póker es "esperanza". Me pasé mi primer año pagando apuestas en el turn porque mi proyecto de color *podía* llegar en el river, y así fue como sangré fichas. La noche en que por fin lo vi claro fue un call de $50 en un bote de $150 — por una vez hice la cuenta, me di cuenta de que solo necesitaba un 25% para no perder, y nunca volví a mirar un call de la misma forma.
 
 ==Las pot odds son la única pieza de matemática que separa pagar por una corazonada de pagar por una razón.== Se aprenden en cinco minutos y en unas cuantas sesiones se vuelven automáticas. Esta guía te da el ==g:método de 10 segundos==, una chuleta por tamaño de apuesta que puedes visualizar en la mesa, y lo que casi todos entienden mal: cómo encajan de verdad las pot odds, la equity y las odds implícitas.
 
@@ -121,7 +121,7 @@ Incluso un enorme **overbet de 2× el bote solo pide un 40% de equity**. Casi nu
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Tu proyecto | Outs | Equity, 1 carta (turn → river) | Equity, 2 cartas (flop → river) |
+| Tu proyecto | Outs | Probabilidad de ligar, 1 carta (turn → river) | Probabilidad de ligar, 2 cartas (flop → river) |
 |:---|:---:|:---:|:---:|
 | Color + escalera abierta | 15 | 32.6% | 54.1% |
 | Proyecto de color | 9 | 19.6% | 35.0% |
@@ -143,7 +143,7 @@ Léelo frente a la tabla de tamaños de apuesta de arriba. Frente a una ==apuest
 :::compare
 Término | Qué significa
 Pot odds | El precio: call ÷ bote final = la equity que *necesitas*
-Equity | Tu probabilidad real de ganar la mano ahora mismo
+Equity | Tu parte esperada del bote ahora mismo — las manos que ganas más tu parte de los empates
 Odds implícitas | Las fichas *extra* que esperas ganar en calles posteriores si ligas
 :::
 
@@ -163,7 +163,7 @@ La otra cara son las **reverse implied odds** — las fichas que *perderás* cua
 
 Un proyecto de color son 9 outs. En el flop: 9 × 4 = **36%** (valor real 35.0% — clavado). En el turn: 9 × 2 = **18%** (valor real 19.6% — lo bastante cerca para decidir).
 
-:::tip[La versión ×4 asume en silencio que verás *ambas* cartas restantes sin más apuestas — algo que solo está garantizado cuando ya estás all-in. Si queda ronda de apuestas, apóyate en el número ×2 (una carta) para la calle que tienes delante, y deja que las odds implícitas justifiquen el resto.]:::
+:::tip[La versión ×4 asume en silencio que verás *ambas* cartas restantes sin más apuestas — algo que solo está garantizado cuando ya no puede haber más apuestas (estás all-in o has pagado un all-in). Si queda ronda de apuestas, apóyate en el número ×2 (una carta) para la calle que tienes delante, y deja que las odds implícitas justifiquen el resto.]:::
 
 Las derivaciones completas de cada proyecto y mano hecha están en la [tabla de probabilidades](/es/blog/holdem-probability). Aquí, el atajo es todo lo que necesitas.
 
@@ -234,11 +234,11 @@ A. Una apuesta del tamaño del bote te da 2 a 1, así que necesitas un 33% de eq
 
 **Q. ¿Qué es la regla del 2 y 4?**
 
-A. Un atajo para convertir outs en equity: multiplica los outs por 4 en el flop (dos cartas por venir) o por 2 en el turn (una carta por venir). Nueve outs de color ≈ 36% en el flop, 18% en el turn. Usa el ×4 solo cuando vayas a ver ambas cartas sin más apuestas.
+A. Un atajo para convertir outs limpios en tu probabilidad de ligar el proyecto: multiplica los outs por 4 en el flop (dos cartas por venir) o por 2 en el turn (una carta por venir). Nueve outs de color ≈ 36% en el flop, 18% en el turn. Usa el ×4 solo cuando vayas a ver ambas cartas sin más apuestas.
 
 **Q. ¿Cuánta equity necesito para pagar una apuesta?**
 
-A. Exactamente tus pot odds en porcentaje: call ÷ bote final. Frente a una apuesta de medio bote necesitas un 25%; frente a una del tamaño del bote, un 33%. Cuenta tus outs, conviértelos con la regla del 2 y 4, y paga cuando tu equity supere el listón.
+A. Exactamente tus pot odds en porcentaje: call ÷ bote final. Frente a una apuesta de medio bote necesitas un 25%; frente a una del tamaño del bote, un 33%. Con un proyecto, cuenta tus outs limpios, conviértelos con la regla del 2 y 4 para las cartas que este call te compra de verdad, y paga cuando esa probabilidad supere el listón — o cuando las odds implícitas cubran la diferencia.
 
 **Q. ¿Qué parte del bote deberías apostar?**
 
@@ -246,7 +246,7 @@ A. El sizing de la apuesta es la otra cara de las pot odds — tu apuesta fija e
 
 **Q. ¿Tu equity debería ser mayor o menor que tus pot odds?**
 
-A. Mayor. Tus pot odds te dan la equity que *necesitas* para pagar (call ÷ bote final); tu equity es cuántas veces vas a ganar de verdad. Pagas cuando tu equity es *mayor* que ese número necesario y foldeas cuando es menor. Si una apuesta de medio bote necesita un 25% y tu proyecto de color tiene un 35% (con dos cartas por venir — verás el turn y el river sin más apuestas), entonces 35% > 25% → un call rentable.
+A. Mayor. Tus pot odds te dan la equity que *necesitas* para pagar (call ÷ bote final); tu equity es tu parte esperada del bote. Pagas cuando tu equity es *mayor* que ese número necesario y foldeas cuando es menor. Si una apuesta de medio bote necesita un 25% y tu proyecto de color tiene un 35% (con dos cartas por venir — verás el turn y el river sin más apuestas), entonces 35% > 25% → un call rentable.
 
 **Q. ¿Qué es el MDF (frecuencia mínima de defensa) en el póker?**
 
@@ -261,8 +261,8 @@ A. Los pot odds son una decisión de *una sola mano*: comparan lo que arriesgas 
 ## Las 3 cosas que debes recordar
 
 1. **La fórmula:** equity necesaria = tu call ÷ el bote final (con tu call incluido). Medio bote = 25%, tamaño del bote = 33%.
-2. **La comparación:** paga cuando tu equity (outs × 4 o × 2) supere a tus pot odds. Esa es toda la decisión.
-3. **El desempate:** las odds implícitas rescatan proyectos que se quedan justo por debajo del precio — pero solo cuando los stacks son profundos y tu proyecto es al nut.
+2. **La comparación:** paga cuando tu equity supere a tus pot odds. Con un proyecto, outs × 4 o × 2 la estiman — cuenta solo outs limpios, y usa el ×2 cuando queden más apuestas por venir.
+3. **El desempate:** las odds implícitas rescatan proyectos que se quedan justo por debajo del precio — pero solo cuando quedan fichas detrás por ganar y un rival con pinta de pagarlas; ir al nut hace ese pago más seguro.
 
 Hazlo unos cientos de veces y dejará de ser matemática para volverse instinto. Tirarás los calls sin remedio, harás los rentables y dejarás de pagar el impuesto de la "esperanza". Desde aquí, afina los números en bruto detrás de cada proyecto en la [tabla de odds y probabilidades del póker](/es/blog/holdem-probability), o asegúrate de entrar en los botes con manos que merezca la pena proyectar usando la [tabla de manos iniciales por posición](/es/blog/holdem-starting-hands-chart).
 

@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "glossary",
   date: "2026-07-05",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-22",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "📖",
@@ -43,9 +43,9 @@ Si solo vas a aclarar una docena de términos, que sean estos: son los que causa
 | Estos se confunden | La diferencia |
 |:---|:---|
 | **Pasar (check) vs Igualar (call)** | Pasar no arriesga **ninguna ficha** (solo cuando no te queda ninguna apuesta por igualar); igualar **paga** una apuesta ya hecha. |
-| **Ciega (blind) vs Ante** | Las ciegas son apuestas forzadas **posicionales** (SB/BB); el ante engorda el bote y sale de **todos** (en los torneos de hoy, normalmente vía big blind ante). |
+| **Ciega (blind) vs Ante** | Las ciegas son apuestas forzadas **posicionales** (SB/BB); el ante engorda el bote — tradicionalmente sale de **todos**, aunque la mayoría de los torneos de hoy usan un big blind ante que paga un solo asiento. |
 | **Set vs Trips** | Ambos son trío — un **set** usa un par servido; los **trips** usan una carta de mano + una pareja en la mesa. |
-| **Cooler vs Bad Beat** | Un [cooler](/es/blog/holdem-cooler) = una mano demasiado fuerte para foldear choca con otra mayor (en sentido estricto, ibas por detrás al entrar las fichas); un [bad beat](/es/blog/holdem-bad-beat) = ibas por delante y te cazaron con carta. |
+| **Cooler vs Bad Beat** | Un [cooler](/es/blog/holdem-cooler) = una mano demasiado fuerte para foldear choca con otra mayor (en sentido estricto, ibas por detrás al entrar las fichas); un [bad beat](/es/blog/holdem-bad-beat) = eras claro favorito al entrar las fichas y te cazaron con carta. |
 | **Apuesta de valor vs Farol (bluff)** | La apuesta de valor busca **que pague una mano peor**; el farol busca **que manos mejores se retiren**. |
 | **Pot odds vs Odds implícitas** | Las [pot odds](/es/blog/holdem-pot-odds) cuentan solo las fichas **que hay ya en el bote**; las implícitas suman lo que **ganarás después**. |
 | **VPIP vs PFR** | VPIP = con qué frecuencia **juegas**; PFR = con qué frecuencia **subes**. El PFR nunca puede superar al VPIP. |
@@ -81,7 +81,7 @@ Todo lo que puedes hacer físicamente en tu turno. Si acabas de empezar, arranca
 | **Farol / Semifarol (bluff)** | Un farol apuesta con mano floja para que manos mejores se retiren; un semifarol lo hace con un proyecto que aún puede mejorar. |
 | **Check-raise** | Pasar y luego subir después de que un rival apueste — una línea fuerte y engañosa (legal en salas modernas). |
 | **Min-raise (subida mínima)** | La subida legal más pequeña. |
-| **String bet** | Volver a por más fichas sin declararlo — solo cuenta el primer movimiento (normalmente se resuelve como call). Anunciar "subo" primero hace legales los movimientos partidos. |
+| **String bet** | Volver a por más fichas sin declararlo — solo cuenta el primer movimiento (normalmente se resuelve como call). Declarar primero la cantidad completa de la subida hace legales los movimientos partidos; algunos reglamentos (WSOP) aceptan un simple "subo", mientras que las reglas TDA piden decir la cantidad o meterla de un solo movimiento. |
 | **Jam / Shove** | Ir all-in. |
 | **Snap call** | Un call instantáneo, sin dudar. |
 | **Hero call** | Pagar con mano floja porque has leído al rival como que va de farol. |
@@ -174,7 +174,7 @@ El zoo de apodos para la gente al otro lado del tapete. El desglose completo est
 | **Calling station** | Un jugador pasivo que iguala demasiado y rara vez se retira o sube. |
 | **Reg** | Un "regular" — un jugador habitual, normalmente competente en un límite. |
 | **Grinder** | Un jugador que gana mediante volumen constante y disciplina. |
-| **LAG / TAG** | Loose-aggressive / tight-aggressive (suelto-agresivo / cerrado-agresivo) — dos estilos agresivos ganadores. |
+| **LAG / TAG** | Loose-aggressive / tight-aggressive (suelto-agresivo / cerrado-agresivo) — dos estilos agresivos sobre los que construye la mayoría de los jugadores ganadores (el estilo por sí solo no convierte a nadie en ganador). |
 | **Maniac** | Un jugador hiperagresivo que sube y farolea sin control. |
 | **Mark** | El jugador flojo al que la mesa intenta quitarle el dinero. |
 

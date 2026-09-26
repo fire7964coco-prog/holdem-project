@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Die Equity ist dein Anteil am Pot – der Anteil, der deiner Hand im Schnitt zufällt, wenn alle Karten ausgeteilt werden (Splits zählen anteilig). Du callst, wenn deine Equity die Pot Odds schlägt, aber Position und Setzen bedeuten, dass du selten deine volle Equity behältst – und die Fold Equity lässt dich Pots gewinnen, selbst wenn deine Hand hinten liegt.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-24",
-  masterUpdated: "2026-09-24",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 Min.",
   emoji: "🥧",
@@ -39,7 +39,7 @@ Bet ÷ (Pot + Bet) | Der Fold%, den ein reiner Bluff braucht
 
 **Die Equity ist dein Anteil am Pot – der Anteil, der deiner Hand im Schnitt zufällt, wenn die Hand bis zum Showdown durchgespielt wird; Splits zählen dabei anteilig.** Wenn der Pot $100 beträgt und dir 60% davon zustehen, ist deine Hand gerade ==$60 wert==, auch wenn die Chips noch nicht geschoben wurden.
 
-Sieh es als dein Stück vom Kuchen. Jede noch lebende Hand hat ein Stück; die Stücke ergeben zusammen immer 100%. Wenn du heads-up zu 70% einen $200-Pot gewinnst, gehören ==g:$140 davon „dir“== auf lange Sicht – du wirst *diesen* Pot nicht zu 70% gewinnen und den Rest verlieren, aber über tausend identische Spots ist das der Anteil, den du einsammelst.
+Sieh es als dein Stück vom Kuchen. Jede noch lebende Hand hat ein Stück; die Stücke ergeben zusammen immer 100%. Wenn du heads-up mit 70% Equity in einem $200-Pot steckst, gehören ==g:$140 davon „dir“== auf lange Sicht – du wirst *diesen* Pot nicht zu 70% gewinnen und den Rest verlieren, aber über tausend identische Spots ist das der Anteil, den du einsammelst.
 
 Das ist der ganze Grund, warum die Equity zählt: sie verwandelt „liege ich vorne?“ in „wie viel dieses Pots besitze ich?“ – und das ist die Zahl, die du gegen den Preis eines Calls vergleichst.
 
@@ -47,13 +47,13 @@ Das ist der ganze Grund, warum die Equity zählt: sie verwandelt „liege ich vo
 
 ## Wie berechnest du deine Equity am Tisch?
 
-**Beim Draw multiplizierst du deine Outs mit 4 auf dem Flop oder mit 2 auf dem Turn; preflop merkst du dir die Handvoll Matchups, die immer wieder vorkommen.** Am Tisch berechnest du fast nie die exakte Equity – du schätzt, und diese zwei Abkürzungen decken 90% der Spots ab.
+**Beim Draw multiplizierst du deine sauberen Outs mit 4 auf dem Flop (wenn du beide Karten siehst) oder mit 2 auf dem Turn – das ist deine Trefferchance, ein brauchbarer Ersatz für die Equity, wenn Treffen gewinnt und Verfehlen verliert; preflop merkst du dir die Handvoll Matchups, die immer wieder vorkommen.** Am Tisch berechnest du fast nie die exakte Equity – du schätzt, und diese zwei Abkürzungen decken 90% der Spots ab.
 
 **Draws (die Faustregel):** zähle deine [Outs](/de/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp"), dann multipliziere. (Den exakten Wert statt der Näherung liefert der [Poker-Rechner](/de/calculator).) Ein Flushdraw hat 9 Outs → ==9 × 4 = 36%== auf dem Flop (echter Wert 35%). Die exakten Zahlen für jeden Draw findest du in den [Draw-Odds](/de/blog/holdem-drawing-odds); hier die Schnellreferenz:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Draw | Outs | Equity (2 Karten) |
+| Draw | Outs | Trefferchance (2 Karten) |
 |:---|:---:|:---:|
 | Flush + Open-Ender | 15 | 54,1% |
 | Flushdraw | 9 | 35,0% |
@@ -137,11 +137,11 @@ Das ist die mit Abstand wichtigste Idee, die die meisten Anfänger-Guides weglas
 
 ## Was ändert sich an deiner Equity, wenn du all-in bist?
 
-**Wenn du all-in bist, gibt es keine weiteren Entscheidungen mehr – also realisierst du 100% deiner Equity, und die rohe Equity wird zum letzten Wort.** Jede Komplikation von oben (Position, Folden, gebettet werden) verschwindet, weil kein weiteres Setzen mehr passieren kann. Was auch immer deine rohe Equity ist – dein Anteil am Pot, Splits anteilig –, das ist genau der Anteil, den du über die Zeit einsammelst.
+**Sobald kein Setzen mehr möglich ist – du bist all-in oder hast heads-up ein All-in gecallt, oder alle anderen noch in der Hand sind all-in –, realisierst du 100% deiner Equity, und die rohe Equity wird zum letzten Wort.** Jede Komplikation von oben (Position, Folden, gebettet werden) verschwindet, weil kein weiteres Setzen mehr passieren kann. Was auch immer deine rohe Equity ist – dein Anteil am Pot, Splits anteilig –, das ist genau der Anteil, den du über die Zeit einsammelst.
 
 Deshalb zählen Preflop-All-in-Equities so viel: AA all-in gegen KK kassiert seine vollen ==82%== – keine Realization-Steuer, keine Fold Equity, nur die rohe Zahl, die sich ausspielt. Es ist auch der Grund, warum ein „Coinflip“ (22 vs. AK bei ~52/48) all-in ein echtes Kopf-an-Kopf-Rennen ist, obwohl dieselben zwei Hände postflop je nach Board und Position wild auseinanderlaufen würden.
 
-All-in ist der eine Spot im Poker, wo der Kuchen – solange noch Karten kommen – genau so geschnitten wird, wie die Mathematik es sagt – was zugleich sein Reiz und seine Gefahr ist.
+Ein All-in ohne verbleibendes Setzen ist der eine Spot im Poker, wo der Kuchen – solange noch Karten kommen – genau so geschnitten wird, wie die Mathematik es sagt – was zugleich sein Reiz und seine Gefahr ist.
 
 ---
 
@@ -168,7 +168,7 @@ Die praktische Erkenntnis: Hände, die einen Multiway-Pot wollen, sind die, die 
 Rohe Equity schätzen | Outs × 4 oder × 2 bei Draws; das Matchup preflop abrufen
 Für Realization abziehen | Out of position oder schwer zu spielen? Kürze es – 40% roh könnten 30% real sein
 Fold Equity addieren | Wenn du bettest, wie oft foldet der Villain? Das ist extra Equity, die deine Hand allein nicht hat
-Mit dem Preis vergleichen | Du callst? Realisierte Equity vs. deine Pot Odds. Du bettest? Wie oft der Gegner foldet vs. die Break-even-Fold-Quote, Bet ÷ (Pot + Bet) → callen, betten oder folden
+Mit dem Preis vergleichen | Du callst? Realisierte Equity vs. deine Pot Odds. Du bettest? Wie oft der Gegner foldet vs. die Break-even-Fold-Quote – Bet ÷ (Pot + Bet) für einen reinen Bluff, niedriger, wenn deine Hand bei einem Call noch Equity hat → callen, betten oder folden
 :::
 
 An dem Abend, den ich oben erwähnte, machte ich Schritt eins und hörte auf – zählte meine rohe Equity und ignorierte, dass ich sie out of position, gegen einen guten Spieler, nie realisieren würde. Sobald ich anfing, für die Position abzuziehen und über *seine* Folds statt nur meine Karten nachzudenken, schlossen sich die Leaks. Die Equity ist keine Zahl, die du nachschlägst; sie ist eine Linse, durch die du jede Entscheidung laufen lässt.

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Satu hand Texas Hold'em berjalan begini: pasang blinds → bagikan dua kartu tertutup → preflop → flop (3 kartu) → turn (1 kartu) → river (1 kartu) → showdown, dengan total empat ronde taruhan.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-09-24",
-  masterUpdated: "2026-09-22",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "16 menit",
   emoji: "🎬",
@@ -136,7 +136,7 @@ Aturan showdown:
 - Setiap pemain membentuk **kombinasi lima kartu terbaik** dari dua kartu tertutupnya dan lima kartu bersama.
 - Anda tidak wajib memakai kedua kartu tertutup Anda — boleh pakai satu, atau bahkan main board saja (nol kartu) kalau itu lima kartu terbaik Anda.
 - Pemain yang melakukan aksi agresif terakhir (bet atau raise) buka kartu duluan; kalau di river semua check, yang buka duluan adalah pemain aktif pertama di kiri button.
-- Pemain yang kalah boleh langsung **muck** (fold tanpa memperlihatkan kartu) — kecuali pada all-in di turnamen: begitu seorang pemain all-in dan taruhan selesai, semua hand dibuka menghadap ke atas (TDA Rule 16 · WSOP Tournament Rule 70).
+- Pemain yang kalah boleh langsung **muck** (fold tanpa memperlihatkan kartu) — kecuali pada all-in di turnamen: begitu seorang pemain all-in dan taruhan selesai, semua hand dibuka menghadap ke atas (TDA 2024 Rule 16 · WSOP Tournament Rule 70).
 - Kombinasi yang sama persis **membagi pot** ("split") sama rata.
 
 Siapa yang wajib buka duluan, kapan Anda boleh muck, dan etika soal slow roll dibahas tuntas di [aturan showdown](/id/blog/holdem-showdown-rules).
@@ -352,7 +352,7 @@ A. Pemain aktif pertama di kiri button — di meja penuh itu adalah small blind.
 
 **Q. Siapa yang membuka kartu duluan saat showdown?**
 
-A. Siapa pun yang melakukan aksi agresif terakhir — bet atau raise terakhir di river — wajib membuka duluan. Jika di river semua orang check tanpa ada taruhan sama sekali, pemain aktif pertama di kiri button yang membuka duluan, lalu diikuti yang lain searah jarum jam. Pemain yang tahu dirinya sudah kalah boleh **muck** alih-alih memperlihatkan kartunya — kecuali ada yang all-in di turnamen, di mana semua hand dibuka (TDA Rule 16).
+A. Siapa pun yang melakukan aksi agresif terakhir — bet atau raise terakhir di river — wajib membuka duluan. Jika di river semua orang check tanpa ada taruhan sama sekali, pemain aktif pertama di kiri button yang membuka duluan, lalu diikuti yang lain searah jarum jam. Pemain yang tahu dirinya sudah kalah boleh **muck** alih-alih memperlihatkan kartunya — kecuali ada yang all-in di turnamen, di mana semua hand dibuka (TDA 2024 Rule 16).
 
 **Q. Apa bedanya preflop dan flop?**
 

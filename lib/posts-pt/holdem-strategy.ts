@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Estratégia de Texas Hold'em: as 5 decisões por trás de toda mão vencedora",
   seoTitle: "Por que dicas de poker não colam — estratégia em 5 decisões",
   desc: "Poker vencedor não são dez dicas soltas — são as mesmas cinco decisões toda mão: posição, seleção de mãos, aumentar ou foldar, c-bet e quando largar.",
-  tldr: "Toda decisão vencedora no Texas Hold'em se resume a cinco perguntas que se repetem: onde estou sentado (posição), essa mão vale a pena jogar, eu aumento ou foldo (nunca dou limp), continuo apostando no flop, e quando eu largo a mão? Um jogador tight-aggressive que responde bem a essas cinco folda ~80% das mãos no pré-flop, joga com agressividade quando entra, e ganha de quase todo jogo casual — sem lista de dicas decorada.",
+  tldr: "Toda decisão vencedora no Texas Hold'em se resume a cinco perguntas que se repetem: onde estou sentado (posição), essa mão vale a pena jogar, eu aumento ou foldo (nunca dou open-limp), continuo apostando no flop, e quando eu largo a mão? Um jogador tight-aggressive que responde bem a essas cinco folda ~80% das mãos no pré-flop, joga com agressividade quando entra, e ganha de quase todo jogo casual — sem lista de dicas decorada.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-22",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
@@ -46,7 +46,7 @@ Então, em vez de uma lista, use uma **espinha dorsal de decisões**. Toda mão 
 |:---:|:---|:---|:---|
 | **1** | **Posição** | Onde estou sentado, e quem age depois de mim? | [Jogar a posição](/pt/blog/holdem-position-play) |
 | **2** | **Seleção de mãos** | Essa mão vale a pena entrar no pote? | [Starting hands](/pt/blog/holdem-starting-hands-chart) |
-| **3** | **Agressão pré-flop** | Eu aumento ou foldo — nunca só dou limp? | [Por que limpar custa caro](/pt/blog/holdem-limping) |
+| **3** | **Agressão pré-flop** | Eu aumento ou foldo — nunca dou open-limp? | [Por que limpar custa caro](/pt/blog/holdem-limping) |
 | **4** | **Continuação** | Continuo apostando no flop, ou desisto? | [Ações de aposta](/pt/blog/holdem-betting-actions) |
 | **5** | **Disciplina** | Quando eu largo uma mão? | [Pot odds e folds](/pt/blog/holdem-pot-odds) |
 
@@ -101,7 +101,7 @@ Dar [limp](/pt/blog/holdem-limping) é só igualar o big blind em vez de aumenta
 2. **Você entrega a iniciativa.** Quem aumentou no pré-flop continua contando uma história no flop (Decisão 4). Dê limp e você entrega essa história para outra pessoa.
 3. **Você pinta um alvo nas suas costas.** Jogadores fortes aumentam grande atrás de um limper para isolá-lo, e depois passam a mão inteira jogando melhor em posição. Um open-limp anuncia "jogador fraco e passivo aqui".
 
-O padrão que corrige isso é direto: **se a mão é boa o suficiente para jogar, é boa o suficiente para aumentar; se não é, folde.** E quando *outra* pessoa já aumentou, aumentar de novo — um [3-bet](/pt/blog/holdem-3bet "thumb:/images/holdem-3bet-hero.webp") — é como você pune aberturas largas e constrói potes com suas melhores mãos. As exceções a esse padrão de aumentar-ou-foldar são reais, e todas elas são sobre **preço**. O *over*-limp — pagar *atrás* de alguém que já deu limp, em posição, com uma mão especulativa como um par pequeno — compra um lugar barato num pote multiway. A maior é **defender o big blind**: contra uma abertura de 2,5bb você já tem ==1bb postado==, então paga 1,5bb num pote de 4bb e precisa de apenas ==1,5 ÷ 5,5 = 27%== de equity — e o seu call fecha a ação. (Na prática a barra é um pouco mais alta: fora de posição você não realiza 100% dessa equity.) Por isso boa parte do range do big blind paga em vez de dar 3-bet ou foldar. A terceira é o **set-mining** de um par pequeno contra um aumento com stacks profundos (a matemática está abaixo). Isso são descontos, não estratégias — fora de spots assim, aumentar ou foldar.
+O padrão que corrige isso é direto: **se a mão é boa o suficiente para jogar, é boa o suficiente para aumentar; se não é, folde.** E quando *outra* pessoa já aumentou, aumentar de novo — um [3-bet](/pt/blog/holdem-3bet "thumb:/images/holdem-3bet-hero.webp") — é como você pune aberturas largas e constrói potes com suas melhores mãos. As exceções a esse padrão de aumentar-ou-foldar são reais, e todas elas são sobre **preço**. O *over*-limp — pagar *atrás* de alguém que já deu limp, em posição, com uma mão especulativa como um par pequeno — compra um lugar barato num pote multiway. A maior é **defender o big blind**: contra uma abertura de 2,5bb (heads-up, small blind já foldou, sem antes) você já tem ==1bb postado==, então paga 1,5bb num pote de 4bb e precisa de apenas ==1,5 ÷ 5,5 = 27%== de equity — e o seu call fecha a ação. (Na prática a barra é um pouco mais alta: fora de posição você não realiza 100% dessa equity.) Por isso boa parte do range do big blind paga em vez de dar 3-bet ou foldar. A terceira é o **set-mining** de um par pequeno contra um aumento com stacks profundos (a matemática está abaixo). Isso são descontos, não estratégias — fora de spots assim, aumentar ou foldar.
 
 ---
 
@@ -225,7 +225,7 @@ A. Dê 3-bet (re-aumentar quem aumentou no pré-flop) por valor com suas mãos m
 
 **Q. Quando você deve aumentar vs. pagar?**
 
-A. Prefira aumentar a pagar sempre que tiver uma mão que vale a pena continuar. Aumentar ganha potes de duas formas (fold equity mais a melhor mão) e toma a iniciativa; pagar não tem fold equity — ninguém folda para um call — e deixa outros entrarem barato. Pague quando sua mão é forte o suficiente para continuar mas não para construir um pote grande, quando está fazendo set-mining com um par pequeno, ou quando quer manter os blefes de um jogador mais fraco na mão.
+A. Na maioria dos spots, prefira aumentar a pagar quando tiver uma mão que vale a pena continuar. Aumentar ganha potes de duas formas (fold equity mais a melhor mão) e toma a iniciativa; pagar não tem fold equity — ninguém folda para um call — e deixa outros entrarem barato. Pague quando sua mão é forte o suficiente para continuar mas não para construir um pote grande, quando está fazendo set-mining com um par pequeno, ou quando quer manter os blefes de um jogador mais fraco na mão.
 
 **Q. Quantas mãos você deve jogar no Texas Hold'em?**
 

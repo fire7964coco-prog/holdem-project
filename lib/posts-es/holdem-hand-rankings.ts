@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "hand-rankings",
   date: "2026-06-09",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-17",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🃏",
@@ -136,10 +136,11 @@ Entre dos escaleras gana la de carta más alta.
 
 **J♣ J♠ J♥ A♦ 4♠** — tres cartas del mismo valor.
 
-Hay dos formas de ligarlo, y la diferencia importa:
+Hay tres formas de ligarlo, y la diferencia importa:
 
 - **Set:** una pareja servida más una carta de la mesa que empareja (p. ej. tienes J♣ J♠ y la mesa trae J♥). Disimulado y peligroso.
 - **Trips:** una pareja en la mesa más una carta tuya. Más fácil de leer para el rival y de compartir.
+- **Trío en la mesa:** las tres cartas están en la mesa (p. ej. J♣ J♠ J♥ en el centro). Lo comparten todos, así que, salvo que alguien mejore a full o a póker, solo os separan los kickers.
 
 El set saca más fichas porque nadie lo ve venir.
 
@@ -211,7 +212,7 @@ Saber el orden no es lo mismo que leerlo rápido. Aquí van tres situaciones rea
 
 Tienes **Q♥ Q♦**. ¿Cuál es tu mejor mano?
 
-→ La mesa ya muestra doble pareja (A-A y K-K). Tus dos reinas más la Q♠ de la mesa hacen **trío de reinas**, y junto con los ases de la mesa tienes un **full — QQQ + AA**. Esas son tus mejores cinco. En la primera partida casera que repartí vi a dos jugadores distintos tirar esta misma mano pensando "AAKK + Q es solo doble pareja" — no lo es. En cuanto tienes trío, te quedas con el full. **El full gana a la doble pareja.**
+→ La mesa ya muestra doble pareja (A-A y K-K). Tus dos reinas más la Q♠ de la mesa hacen **trío de reinas**, y junto con los ases de la mesa tienes un **full — QQQ + AA**. Esas son tus mejores cinco. En la primera partida casera que repartí vi a dos jugadores distintos tirar esta misma mano pensando "AAKK + Q es solo doble pareja" — no lo es. En cuanto tienes trío y la mesa añade una pareja propia, te quedas con el full. **El full gana a la doble pareja.**
 
 ### Problema 2 — El color que en realidad es mejor
 
@@ -251,7 +252,7 @@ Tienes **A♥ 3♣**. La mesa ya trae trío de reyes.
 
 ## ¿Por qué el color gana a la escalera?
 
-El color gana a la escalera simplemente porque es más difícil de ligar: en una baraja de 52 cartas hay menos formas de sacar cinco cartas del mismo palo (3.03% de las manos de siete cartas al river) que cinco en secuencia de cualquier palo (4.62%). La jerarquía no es arbitraria: es ==pura probabilidad==. ==g:**Cuanto más difícil es ligar una mano, más alto está.**== Ese único principio explica toda la jerarquía — puedes ver los números exactos en la [tabla de probabilidades y odds del póker](/es/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
+El color gana a la escalera simplemente porque es más difícil de ligar: en una baraja de 52 cartas hay menos formas de sacar cinco cartas del mismo palo (3.03% de las manos de siete cartas al river) que cinco en secuencia de cualquier palo (4.62%). La jerarquía no es arbitraria: es ==pura probabilidad==. ==g:**Cuanto más difícil es ligar una mano con cinco cartas, más alto está.**== Ese único principio explica toda la jerarquía — puedes ver los números exactos en la [tabla de probabilidades y odds del póker](/es/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
 También explica la gran excepción que verás: en el **Short Deck (6+) Hold'em**, donde se quitan los doses a los cincos, los colores se vuelven más difíciles que los fulls — así que en ese formato un ==r:**color gana a un full**==. Cambió la matemática, cambió el orden. Más sobre las diferencias por modalidad abajo.
 
@@ -375,7 +376,7 @@ A. Sí. El trío es la #7 y la doble pareja la #8, así que gana el trío. La do
 
 **Q. ¿La escalera de color gana al póker?**
 
-A. Sí. La escalera de color (#2) gana al póker (#3) — cinco cartas en secuencia de un mismo palo superan al cuádruple. Lo único por encima de una escalera de color es la escalera real, que no es más que su versión con As alto.
+A. Sí. La escalera de color (#2) gana al póker (#3) — cinco cartas en secuencia de un mismo palo superan al cuádruple. Por encima de una escalera de color solo están una escalera de color más alta y la escalera real, que no es más que su versión con As alto.
 
 **Q. ¿Cuál es la mano más baja (peor) del póker?**
 

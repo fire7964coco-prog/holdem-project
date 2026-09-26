@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "rules",
   date: "2026-06-11",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-13",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
@@ -189,7 +189,7 @@ Se for um cash game caseiro de apostas baixas, escolha um buy-in que todo mundo 
 
 ==r:Não comece com stakes que deixem as pessoas nervosas.== Iniciante nervoso não aprende mais rápido. Só folda demais, paga no emocional ou discute regra.
 
-Note que o buy-in de um **torneio** funciona diferente do cash game: você paga uma entrada fixa, recebe um stack definido de fichas sem valor de troca e joga até um jogador ficar com todas. Se não sabe qual dos dois quer, leia antes [cash game vs torneio](/pt/blog/holdem-tournament-vs-cash-game).
+Note que o buy-in de um **torneio** funciona diferente do cash game: você paga uma entrada fixa, recebe um stack definido de fichas sem valor de troca e joga até um jogador ficar com todas (em eventos com reentrada, dá para comprar de novo depois de quebrar). Se não sabe qual dos dois quer, leia antes [cash game vs torneio](/pt/blog/holdem-tournament-vs-cash-game).
 
 Para praticar online, use mesas gratuitas até conseguir explicar a ordem de ação sem pensar. Depois suba devagar.
 
@@ -197,7 +197,7 @@ Para praticar online, use mesas gratuitas até conseguir explicar a ordem de aç
 
 ## No-Limit, Limit ou Pot-Limit? Qual Texas Hold'em você está jogando?
 
-Quando alguém fala "Texas Hold'em", quase sempre quer dizer **No-Limit Hold'em (NLHE)** — o formato do Main Event da WSOP e de praticamente todo jogo em casa. A distribuição das cartas, os blinds e o ranking de mãos são idênticos nos três formatos. A única coisa que muda é **quanto você pode apostar.**
+Quando alguém fala "Texas Hold'em", quase sempre quer dizer **No-Limit Hold'em (NLHE)** — o formato do Main Event da WSOP e de praticamente todo jogo em casa. A distribuição das cartas e o ranking de mãos são idênticos nos três formatos. A principal coisa que muda é **quanto você pode apostar** — e o Fixed-Limit normalmente também limita quantos aumentos cabem numa rodada (na WSOP, uma aposta e quatro aumentos).
 
 | Formato | Quanto pode apostar? | Onde você vai encontrar |
 |--------|-----------------------|---------------------|
@@ -302,7 +302,7 @@ Suas pot odds são **$120 para $20**, ou seja, **6 para 1**. Isso significa que 
 
 ### A Regra do 2 e do 4 — atalho instantâneo de probabilidade
 
-Quando você tem um draw (por exemplo, quatro cartas para um flush), conte seus **outs** — as cartas que completam sua mão.
+Quando você tem um draw (por exemplo, quatro cartas para um flush), conte seus **outs** — as cartas que transformam seu draw numa provável mão vencedora.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

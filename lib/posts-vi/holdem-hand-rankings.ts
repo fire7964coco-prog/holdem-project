@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Thứ hạng các tay bài poker từ mạnh nhất đến yếu nhất là: Thùng Phá Sảnh Hoàng Gia, Thùng Phá Sảnh, Tứ Quý, Cù Lũ, Thùng, Sảnh, Sám Cô, Hai Đôi, Một Đôi, và Mậu Thầu.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-09-17",
+  updated: "2026-09-26",
 
   masterUpdated: "2026-09-07",
   keepImagesInBody: true,
@@ -127,10 +127,11 @@ Giữa hai Sảnh, tay có lá cao hơn thắng.
 
 **J♣ J♠ J♥ A♦ 4♠** — ba lá cùng giá trị.
 
-Có hai cách tạo thành, và sự khác biệt rất quan trọng:
+Có ba cách tạo thành, và sự khác biệt rất quan trọng:
 
 - **Set:** một đôi trên tay cộng một lá trên bàn (ví dụ bạn cầm J♣ J♠ và bàn ra J♥). Kín đáo và nguy hiểm.
 - **Trips:** một đôi trên bàn cộng một lá của bạn. Dễ bị đối thủ đọc hơn và dễ bị chia hơn.
+- **Sám Cô trên bàn:** cả ba lá đều nằm trên bàn (ví dụ J♣ J♠ J♥ ở giữa). Ai cũng dùng chung, nên trừ khi có người cải thiện lên Cù Lũ hoặc Tứ Quý, chỉ lá kicker mới phân định thắng thua.
 
 Set ăn được nhiều chip hơn vì không ai ngờ tới.
 
@@ -200,7 +201,7 @@ Biết thứ tự không giống với đọc nó nhanh. Đây là ba tình hu�
 
 Bạn cầm **Q♥ Q♦**. Tay bài tốt nhất của bạn là gì?
 
-→ Bàn đã hiện Hai Đôi (A-A và K-K). Hai con Q của bạn cộng Q♠ trên bàn tạo thành **Sám Cô Q**, và cùng với đôi Át trên bàn bạn có **Cù Lũ — QQQ + AA**. Đó là năm lá tốt nhất của bạn. Người mới kẹt ở chỗ "AAKK + Q chẳng phải chỉ là Hai Đôi sao?" — không. Một khi bạn có Sám Cô, bạn lấy Cù Lũ. **Cù Lũ thắng Hai Đôi.**
+→ Bàn đã hiện Hai Đôi (A-A và K-K). Hai con Q của bạn cộng Q♠ trên bàn tạo thành **Sám Cô Q**, và cùng với đôi Át trên bàn bạn có **Cù Lũ — QQQ + AA**. Đó là năm lá tốt nhất của bạn. Người mới kẹt ở chỗ "AAKK + Q chẳng phải chỉ là Hai Đôi sao?" — không. Một khi bạn có Sám Cô và bàn còn có thêm một đôi riêng, bạn lấy Cù Lũ. **Cù Lũ thắng Hai Đôi.**
 
 ### Bài toán 2 — Thùng mà thật ra mạnh hơn
 
@@ -236,7 +237,7 @@ Bạn cầm **A♥ 3♣**. Bàn đã có sẵn Sám Cô K.
 
 ## Vì sao thứ tự lại như vậy
 
-Thứ hạng không tùy tiện — nó thuần túy là xác suất. **Tay càng khó tạo thành thì xếp càng cao.** Trong bộ 52 lá, đơn giản là có ít cách tạo năm lá cùng chất hơn năm lá liên tiếp ở bất kỳ chất nào — nên Thùng đứng trên Sảnh. Chỉ một nguyên tắc này giải thích toàn bộ thứ hạng.
+Thứ hạng không tùy tiện — nó thuần túy là xác suất. **Tay càng khó tạo thành từ năm lá thì xếp càng cao.** Trong bộ 52 lá, đơn giản là có ít cách tạo năm lá cùng chất hơn năm lá liên tiếp ở bất kỳ chất nào — nên Thùng đứng trên Sảnh. Chỉ một nguyên tắc này giải thích toàn bộ thứ hạng.
 
 Nó cũng giải thích ngoại lệ lớn bạn sẽ gặp: trong **Short Deck (6+) Hold'em**, nơi bỏ các lá từ 2 đến 5, Thùng trở nên khó hơn Cù Lũ — nên ở thể thức đó **Thùng thắng Cù Lũ**. Toán học đổi, thứ tự đổi. Chi tiết về khác biệt giữa các thể thức ở bên dưới.
 

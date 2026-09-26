@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Sebuah out adalah kartu mana pun yang tersisa di deck yang mengubah tangan Anda menjadi kemungkinan pemenang. Hitung, lalu konversi: kalikan outs dengan 4 di flop atau dengan 2 di turn untuk mendapat persen kasar Anda. Flush draw punya 9 outs ≈ 36% hingga river.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-24",
-  masterUpdated: "2026-09-24",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "11 mnt",
   emoji: "🎯",
@@ -35,7 +35,7 @@ Kebiasaan itu disebut menghitung **outs** — [jawaban nyata poker untuk "menghi
 
 ## Apa Itu Outs di Poker?
 
-**Sebuah out adalah kartu mana pun yang masih ada di deck yang mengubah tangan Anda menjadi kemungkinan pemenang.** Jika Anda memegang flush draw, setiap kartu tersisa dengan jenis Anda adalah out — dapatkan satu dan Anda punya flush.
+**Sebuah out adalah kartu mana pun yang masih ada di deck yang mengubah tangan Anda menjadi kemungkinan pemenang.** Jika Anda memegang flush draw, setiap kartu tersisa dengan jenis Anda melengkapinya — dan masing-masing adalah out selama flush itu benar-benar menang.
 
 Kata "kemungkinan" di situ bekerja diam-diam. Sebuah out sejati harus benar-benar *memenangkan* tangan, bukan sekadar memperbaiki kartu Anda. Memasangkan angka sepuluh Anda saat flush sudah ada di board bukanlah out — Anda memperbaiki, tapi tetap kalah. Belajar menghitung outs sebenarnya adalah belajar menghitung kartu yang menang, dan mengabaikan yang hanya *terlihat* membantu.
 
@@ -60,7 +60,7 @@ Buang yang palsu | Coret setiap "out" yang melengkapi tangan Anda tapi tetap kal
 
 Ambil flush draw: ada 13 kartu dengan jenis Anda, Anda bisa melihat **empat** di antaranya (dua di tangan, dua di board), jadi ==g:13 − 4 = 9 outs==. Pengurangan itu — menghitung kartu yang *tidak bisa* Anda dapatkan karena sudah Anda pegang — di situlah pemula tergelincir.
 
-Perhitungan hanya memakai kartu yang bisa Anda lihat. Anda tidak mengurangi kartu lawan yang tak terlihat; Anda menganggap setiap kartu yang tak terlihat masih hidup. Itu sebabnya jumlah out standar di bawah ini tetap berlaku terlepas dari apa yang dipegang orang lain.
+Perhitungan hanya memakai kartu yang bisa Anda lihat. Anda tidak mengurangi kartu lawan yang tak terlihat; Anda menganggap setiap kartu yang tak terlihat masih hidup. Itu sebabnya jumlah out mentah di bawah ini sama apa pun yang dipegang orang lain — itulah titik awalnya, sebelum Anda mencoret outs kotor lebih jauh di bawah.
 
 ---
 
@@ -112,9 +112,9 @@ Dua combo draw di atas adalah tempat pemain gagal berhitung, jadi keduanya menda
 
 </div>
 
-Dua angka penting untuk setiap draw. **"Hingga river"** menghitung kedua kartu tersisa dan berlaku saat Anda all-in di flop tanpa taruhan lagi. **"Flop → turn"** menghitung hanya kartu berikutnya (9 ÷ 47 = 19,1%; dari turn ke river menjadi 9 ÷ 46 = 19,6%) — pakai angka satu-kartu begitu masih ada taruhan yang akan datang, karena Anda hanya dijamin melihat satu kartu setiap kali. Pemula mengutip angka "hingga river" yang menggiurkan sambil menghadapi taruhan turn, membujuk diri untuk call, dan membayarnya.
+Dua angka penting untuk setiap draw. **"Hingga river"** menghitung kedua kartu tersisa dan berlaku saat tak ada taruhan lagi yang bisa terjadi — Anda all-in, atau Anda sudah call sebuah all-in. **"Flop → turn"** menghitung hanya kartu berikutnya (9 ÷ 47 = 19,1%; dari turn ke river menjadi 9 ÷ 46 = 19,6%) — pakai angka satu-kartu begitu masih ada taruhan yang akan datang, karena Anda hanya dijamin melihat satu kartu setiap kali. Pemula mengutip angka "hingga river" yang menggiurkan sambil menghadapi taruhan turn, membujuk diri untuk call, dan membayarnya.
 
-Perhatikan monster 15-out: dengan dua kartu yang akan datang ia sebenarnya **favorit** (54,1%), draw langka yang bisa Anda all-in-kan dengan senang hati di flop.
+Perhatikan monster 15-out: dengan dua kartu yang akan datang ia jadi 54,1% dari waktu — melawan satu pair itu biasanya menjadikannya **favorit**, draw langka yang bisa Anda all-in-kan dengan senang hati di flop. Melawan set tidak: board bisa berpasangan dan membuat set itu jadi full house — contoh J♠ 10♠ di 9♠ 8♣ 2♠ di bawah hanya sekitar 40% melawan pocket nines.
 
 ---
 
@@ -128,7 +128,7 @@ Perhatikan monster 15-out: dengan dua kartu yang akan datang ia sebenarnya **fav
 
 Flush draw punya 9 outs. Di flop: 9 × 4 = **36%** (nilai sebenarnya 35,0% — pas). Di turn: 9 × 2 = **18%** (sebenarnya 19,6% — cukup dekat untuk beraksi).
 
-:::tip[Jalan pintas ×4 diam-diam mengasumsikan Anda akan melihat *kedua* kartu tanpa taruhan lagi — hanya terjamin saat Anda sudah all-in. Jika ada taruhan di depan Anda, pakai angka ×2 (satu-kartu) untuk street yang benar-benar sedang Anda jalani.]:::
+:::tip[Jalan pintas ×4 diam-diam mengasumsikan Anda akan melihat *kedua* kartu tanpa taruhan lagi — hanya terjamin saat tak ada taruhan lagi yang bisa terjadi (Anda all-in, atau Anda sudah call sebuah all-in). Jika ada taruhan di depan Anda, pakai angka ×2 (satu-kartu) untuk street yang benar-benar sedang Anda jalani.]:::
 
 Kelemahan utamanya ada di **jumlah out tinggi di flop.** Hitungan dua kartu yang persis memperhitungkan kena di street mana pun tanpa menghitung dua kali saat kedua kartu sama-sama kena. Perkiraan ×4 mulai sedikit terlalu tinggi sejak 7 outs, tapi selisihnya membesar pada draw yang lebih besar; koreksi umum di bawah dipakai untuk lebih dari 8 outs.
 
@@ -222,14 +222,14 @@ A. 15, bukan 17. Flush draw adalah 9 outs dan open-ended straight adalah 8, tapi
 
 **Q. Apakah Anda menghitung kartu lawan saat menghitung outs?**
 
-A. Tidak. Anda hanya mengurangi kartu yang benar-benar bisa Anda lihat — kartu tertutup Anda dan board. Setiap kartu lain yang tak terlihat dianggap hidup, itu sebabnya jumlah out standar (9 untuk flush, 8 untuk open-ender) tetap berlaku apa pun yang dipegang lawan.
+A. Tidak. Anda hanya mengurangi kartu yang benar-benar bisa Anda lihat — kartu tertutup Anda dan board. Setiap kartu lain yang tak terlihat dianggap hidup, itu sebabnya jumlah out mentah (9 untuk flush, 8 untuk open-ender) tetap sama apa pun yang dipegang lawan. Apakah tiap kartu itu benar-benar menang tetap tergantung tangan mereka — itulah pengecekan outs kotor.
 
 ---
 
 ## 3 Hal yang Harus Diingat
 
 1. **Hitung yang menang, bukan yang memperbaiki.** Sebuah out harus membuat tangan *terbaik*, bukan sekadar lebih baik. Kurangi hanya kartu yang bisa Anda lihat.
-2. **Konversi dengan 4 dan 2.** Outs × 4 di flop, × 2 di turn. Pangkas perkiraan untuk draw besar (lebih dari 8 outs) dengan mengurangi *(outs − 8)*.
+2. **Konversi dengan 4 dan 2.** Outs × 4 di flop, × 2 di turn. Di flop, pangkas perkiraan ×4 untuk draw besar (lebih dari 8 outs) dengan mengurangi *(outs − 8)*.
 3. **Pangkas yang kotor.** Flush bukan-nut, board berpasangan, dan overcard melawan kekuatan semuanya menyusutkan jumlah out nyata Anda. Kalau ragu, hitung lebih sedikit.
 
 Kuasai hitungannya dan sisa matematika poker jatuh pada tempatnya. Bawa jumlah out Anda langsung ke [cara menghitung pot odds](/id/blog/holdem-pot-odds) untuk melihat apakah harganya tepat, atau kembali ke [bagan odds dan probabilitas poker](/id/blog/holdem-probability) lengkap untuk angka persis di balik setiap draw.

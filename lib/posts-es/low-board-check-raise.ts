@@ -30,8 +30,8 @@ export const POST: Post = {
   tldr: "En el flop bajo y rainbow 6♠5♥2♦ la ciega grande hace check el 96.8% y apuesta primero apenas el 3.2% — aunque su 48.3% de equity es el segundo más alto de los siete spots en los que defiende. Aquí solo una mano hace escalera, 4-3, y no está en ninguno de los dos rangos. Nadie tiene la parte alta, así que nadie apuesta primero fuera de posición. La acción llega después: al resolver de nuevo el mismo árbol para ver más allá del flop, la ciega grande hace check-raise a una apuesta de 1.8bb el 14.9% de las veces, casi todo con proyectos.",
   category: "strategy",
   date: "2026-09-02",
-  updated: "2026-09-02",
-  masterUpdated: "2026-09-02",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🌊",
@@ -165,7 +165,7 @@ El número contra el que hay que compararlo es el del [flop con as](/es/blog/a-h
 
 **Cuando el botón apuesta — y bastante seguido.** Ante una apuesta de 1.8bb la ciega grande sube el **14.9%** de las veces.
 
-:::note[⚠ **Esta sección viene de un solve distinto.** El spot de estudio publicado en la app es solo de flop — se detiene en la primera decisión y a sus fichas de acción no se les puede hacer clic, así que las respuestas a una apuesta no están dentro. Para obtenerlas reconstruimos el mismo árbol (apuesta 33%, raise 60%, bote 5.5bb, stack 97.5bb) y lo corrimos: **190 iteraciones, explotabilidad 0.16, que es el 0.29% del bote.** Todos los números de las dos tablas de abajo salen de esa corrida, no del spot de estudio.]:::
+:::note[⚠ **Esta sección viene de un solve distinto.** El spot de estudio publicado en la app es solo de flop — se detiene en la primera decisión y a sus fichas de acción no se les puede hacer clic, así que las respuestas a una apuesta no están dentro. Para obtenerlas reconstruimos el mismo árbol (apuesta 33%, raise 60%, bote 5.5bb, stack 97.5bb) y lo corrimos: **190 iteraciones, explotabilidad 0.16 en las unidades internas del motor (décimas de ciega grande) — 0.016bb, o el 0.29% del bote de 5.5bb.** Todos los números de las dos tablas de abajo salen de esa corrida, no del spot de estudio.]:::
 
 Primero, lo que hace el botón cuando la acción le llega en check:
 
@@ -229,7 +229,7 @@ Y los proyectos de escalera son donde el solver decide gastar esa ventaja.
 | Proyecto backdoor | **20.5%** | 18.5% |
 | Sin proyecto | 60.2% | **66.8%** |
 
-**Gutshots: 18.5% contra 13.9%.** Con los sets repartidos por igual en 1.8% y los sobrepares en 4.9% contra 9.5%, la fila de los gutshots es de donde sale el rango que sube — el solver toma el grupo del que la ciega grande tiene más y lo convierte entero en una sola acción.
+**Gutshots: 18.5% contra 13.9%.** Con los sets repartidos por igual en 1.8% y los sobrepares en 4.9% contra 9.5%, la fila de los gutshots es de donde sale la mayor parte del rango que sube — el solver se apoya en el grupo del que la ciega grande tiene más, aunque no lo sube entero: el 18.5% de 487 son unos 90 combos de gutshot, más que los 69.7 combos que suben en total, e incluso J4s y Q4s, cerca de lo alto de la lista, suben solo el 67–90%.
 
 ## ¿6-5-2 es un board húmedo o seco?
 
@@ -283,7 +283,7 @@ A. Con los nueve combos de set (66, 55, 22), con los dos combos de 65 suited, y 
 
 **Q. ¿El check-raise está permitido, y es de mala educación?**
 
-A. Es legal en todas partes, y la regla como tal está cubierta en la guía de [acciones de apuesta](/es/blog/holdem-betting-actions). La preocupación por la etiqueta es un resto del pasado: algunos home games antiguos prohibían el check-raise por regla de la casa, y el estigma sobrevivió a la regla. Ya nadie juega así, y los números de arriba son la razón — quítale el check-raise a la ciega grande en este flop y borras el 14.9% de su rango sin nada con qué reemplazarlo.
+A. Está permitido en casi todos los casinos y en las partidas online estándar (solo una partida privada podría conservar su propia regla de la casa), y la regla como tal está cubierta en la guía de [acciones de apuesta](/es/blog/holdem-betting-actions). La preocupación por la etiqueta es un resto del pasado: algunos home games antiguos prohibían el check-raise por regla de la casa, y el estigma sobrevivió a la regla. Hoy pocas partidas se juegan así, y los números de arriba son la razón — quítale el check-raise a la ciega grande en este flop y borras el 14.9% de su rango sin nada con qué reemplazarlo.
 
 **Q. ¿Estos números aplican a mi nivel?**
 

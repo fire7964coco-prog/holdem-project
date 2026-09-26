@@ -10,8 +10,8 @@ export const POST: Post = {
   tldr: "No Q♠J♦T♠, depois de uma abertura do botão e um call do big blind, o big blind dá check em 99,9%, embora 68,4% do seu range tenha draw. O botão tem vantagem de nuts: sequências em 10,5% contra 7,1%, sets em 2,0% contra 0,7% e overpairs em 2,6% contra 0%. A realização de equity fica em 77,9% contra 119,4%, a maior diferença entre os três flops apresentados até aqui.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-15",
-  masterUpdated: "2026-09-02",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   readTime: "10 min",
   emoji: "🎴",
   image: "/images/gto-srp-broadway-oop-pt.webp",
@@ -122,7 +122,7 @@ No flop seco com rei alto, a mesma conta dava **3,6%**: sets em 1,9%, dois pares
 | Flop seco com rei alto (K-8-3) | 3,6% |
 | **Flop Broadway (Q-J-T)** | **21,0%** |
 
-**O nome "top pair" é o mesmo, mas o risco é cerca de seis vezes maior.** Além disso, 68,7% do range adversário tem draws para continuar melhorando no turn e no river. Apostar por valor nas três streets com um par no Q-J-T faz você enfrentar ação forte que quase nunca consegue vencer. É um pote para controlar, sem tentar inflá-lo.
+**O nome "top pair" é o mesmo, mas o risco é cerca de seis vezes maior.** À parte disso, 68,7% do range adversário tem algum draw — outro eixo, que se sobrepõe às mãos prontas que já estão à sua frente, e não 68,7% a mais somados a elas —, então até mãos que você vence agora podem passar à frente no turn e no river. Apostar por valor nas três streets com um par no Q-J-T faz você enfrentar ação forte que quase nunca consegue vencer. É um pote para controlar, sem tentar inflá-lo.
 
 ## Por que a realização de equity (EQR) é 78 contra 119 se a equity é 47 contra 53?
 
@@ -150,7 +150,7 @@ O que amplia a diferença não é o número de draws, mas **qual range concentra
 
 ## Como o botão deve apostar num board dinâmico como este?
 
-**A estratégia não se limita a apostas pequenas: o tamanho grande passa a fazer parte da mistura.** Com vantagem de nuts, apostar grande dificulta que o adversário responda com um raise. A concentração de sequências, sets e overpairs de um lado deixa menos espaço para o outro reagir com agressividade.
+**A estratégia não se limita a apostas pequenas: o tamanho grande passa a fazer parte da mistura.** Com vantagem de nuts, apostar grande dificulta que o adversário responda com um raise. A concentração de sequências, sets e overpairs, em sua maioria, de um lado (o big blind tem só 7,1% de sequências e 0,7% de sets) deixa menos espaço para o outro reagir com agressividade.
 
 É uma mudança em relação à receita dos boards secos. Neles, apostar pequeno e com frequência funcionava porque o objetivo era fazer mãos sem nada foldarem. Aqui, **68,4%** do range adversário tem draw, então **é mais caro conseguir folds**. Só o tamanho pequeno não resolve, e o grande precisa entrar na estratégia. ⚠ Isso não permite concluir "logo, a frequência diminui": este exemplo resolve apenas a primeira ação no flop, então não informa a distribuição dos tamanhos nem a frequência real de c-bet do botão. A comparação entre texturas está no guia de [estratégia de continuation bet](/pt/blog/holdem-continuation-bet "thumb:/images/holdem-continuation-bet-hero.webp").
 
@@ -184,7 +184,7 @@ A. Três: AK faz A-K-Q-J-T, K9 faz K-Q-J-T-9 e 98 faz Q-J-T-9-8. Nenhuma das car
 
 **Q. Um board molhado não é bom para sair apostando como semiblefe?**
 
-A. A quantidade de draws não decide isso sozinha. É preciso considerar a distribuição das mãos prontas, a vantagem de nuts e os blockers. Aqui, os draws de duas pontas ficam em 28,7% contra 27,7%, praticamente iguais. Já as sequências prontas ficam em 7,1% contra 10,5%, a favor do botão. Para sustentar um lead, o topo do range precisa ajudar você, não apenas a força média. Este flop mostra o cenário contrário. Há um board no conjunto de estudo em que a condição aparece: o [9-8-7 médio conectado](/pt/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-pt.webp"), em que o big blind inclui apostas iniciais.
+A. A quantidade de draws não decide isso sozinha. É preciso considerar a distribuição das mãos prontas, a vantagem de nuts e os blockers. Aqui, os draws de duas pontas ficam em 28,7% contra 27,7%, praticamente iguais. Já as sequências prontas ficam em 7,1% contra 10,5%, a favor do botão. Para sustentar um lead, o topo do range precisa ajudar você, não apenas a força média. Este flop mostra o cenário contrário. Há um board no conjunto de estudo em que a condição aparece: o [9-8-7 médio conectado](/pt/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-pt.webp"), em que o big blind sai apostando em 23,7% das vezes, em vez de quase nunca.
 
 **Q. Vantagem de range e vantagem de nuts são a mesma coisa?**
 

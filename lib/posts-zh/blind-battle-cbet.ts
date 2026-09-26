@@ -29,7 +29,7 @@ export const POST: Post = {
   category: "strategy",
   date: "2026-09-03",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-02",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 分钟",
   emoji: "⚔️",
@@ -55,7 +55,7 @@ export const POST: Post = {
 局面 | SB 开池 3bb → BB 跟注（盲位对战）
 翻牌 | K♥ T♦ 6♠（彩虹）
 底池 · 筹码量 | 底池 6bb · 有效筹码量 97bb · **SPR 16.2**
-结果 | SB 下注 **67.4%**——第一个由无位置一方领打的单加注底池
+结果 | SB 下注 **67.4%**——第一个由无位置一方领打过半的单加注底池
 :::
 
 > **快速回答**
@@ -107,7 +107,7 @@ export const POST: Post = {
 
 ## 无位置的那一方为什么在这里领打？
 
-**因为这个座位上，翻前的进攻方同时也是翻牌先动作的人。**⚠ 这是一个*必要*条件，不是充分条件——同样的结构在 [⑫](/zh/blog/blind-battle-connected-board "thumb:/images/gto-sb-connected-oop-zh.webp") 给出 **9.6%**，在 [⑬](/zh/blog/ace-paired-board-strategy "thumb:/images/gto-sb-paired-ace-oop-zh.webp") 给出 **80.1%**。座位只是把门打开；走多远由牌面决定。
+**因为这个座位上，翻前的进攻方同时也是翻牌先动作的人。**⚠ 在这套案例里，每一个过半的领打都来自这个座位，但座位什么都保证不了，而跟注方也照样可以有一部分时候领打（④ 是 23.7%）。同样的结构在 [⑫](/zh/blog/blind-battle-connected-board "thumb:/images/gto-sb-connected-oop-zh.webp") 给出 **9.6%**，在 [⑬](/zh/blog/ace-paired-board-strategy "thumb:/images/gto-sb-paired-ace-oop-zh.webp") 给出 **80.1%**。座位只是把门打开；走多远由牌面决定。
 
 在普通的一手牌里，这两件事是分开的。按钮位（BTN）开池、大盲位跟注的时候，**进攻方是按钮位，但先动作的是大盲位。**这就搭出了“先过牌、再挨持续下注（c-bet）”的结构，① 到 ⑦ 全是这个样子。
 
@@ -123,7 +123,7 @@ export const POST: Post = {
 
 胜率给这个优势标了个数。**SB 55.3% 对 BB 44.7%。**在 ① 到 ⑦ 里，无位置一方只有 45.1%–48.5%，永远不到一半——方向正好相反。
 
-:::pull[你要不要先下注，不是由位置决定的，是由你的范围在这个具体牌面上有多强决定的。]:::
+:::pull[没有位置，定不了你要不要先下注——大部分的活，是你的范围和这个具体牌面怎么对上在做。]:::
 
 没有位置这件事，对 ①–⑦ 的大盲位和这里的小盲位是一样的。把它们分开的是**范围和牌面之间的关系**——⚠ 而且这件事不能简化成“范围”两个字。在 [7-6-5 牌面](/zh/blog/blind-battle-connected-board)上，范围*字面上完全相同*，过牌却到了 90.4%。
 

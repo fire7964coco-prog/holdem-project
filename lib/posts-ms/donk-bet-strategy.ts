@@ -9,8 +9,8 @@ export const POST: Post = {
   tldr: "Pada 9♥8♥7♣ selepas BTN open dan BB call, BB check 76.2% serta lead 23.7%. Inilah contoh pertama siri ini yang mempunyai lead sebagai bahagian strategi yang ketara. Kelebihan range belum berpindah: equity masih 48.5% berbanding 51.5% memihak BTN. Yang berubah ialah jurang equity dan taburan tangan kuat, dengan lebih banyak straight siap pada BB.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-15",
-  masterUpdated: "2026-09-02",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   readTime: "9 minit",
   emoji: "🎯",
   image: "/images/gto-srp-middle-connected-oop-ms.webp",
@@ -149,7 +149,7 @@ Dua perubahan membantu menjelaskannya.
 
 **Kedua, kelebihan BTN berada pada tangan yang lebih mudah terancam.** Dua kategori yang lebih banyak pada BTN ialah overpair 6.4% dan ace-high 30.5%. Ace-high belum mempunyai pair, walaupun sebahagiannya mempunyai draw. BB juga mempunyai banyak draw, jadi BTN tidak memperoleh kelebihan unik daripada kumpulan itu. Overpair pula terdedah kepada banyak kad turn, seperti yang dijelaskan selepas ini. Kelebihan penting BB datang daripada lebih banyak tangan yang **sudah menjadi straight**.
 
-Lead menjadi munasabah apabila **taburan tangan kuat menyokongnya dan lawan tidak boleh c-bet dengan selesa**. Kedua-dua keadaan itu relevan di sini: BB mempunyai lebih banyak straight siap, sementara banyak ace-high serta overpair yang rentan menyukarkan BTN menekan seluruh range. Ini bukan dakwaan BB mempunyai lebih banyak JT nuts; jumlah JT tetap sama pada kedua-dua pihak.
+Lead menjadi munasabah apabila **taburan tangan kuat menyokongnya dan lawan tidak boleh c-bet dengan selesa**. Kedua-dua keadaan itu relevan di sini: BB mempunyai lebih banyak straight siap, sementara banyak ace-high serta overpair yang rentan menyukarkan BTN menekan seluruh range — ini bacaan daripada komposisi range, kerana nod bet BTN sendiri tiada dalam solve ini. Ini bukan dakwaan BB mempunyai lebih banyak JT nuts; jumlah JT tetap sama pada kedua-dua pihak.
 
 ## Mengapa overpair BTN mudah terancam pada 987?
 

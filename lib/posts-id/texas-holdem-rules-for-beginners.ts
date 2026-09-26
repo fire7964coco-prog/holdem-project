@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "rules",
   date: "2026-06-11",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-13",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "14 menit",
   emoji: "♠️",
@@ -191,7 +191,7 @@ Kalau Anda main cash game kecil di rumah, pilih buy-in yang semua orang rela keh
 
 ==r:Jangan mulai dengan taruhan yang bikin orang gugup.== Pemula yang gugup tidak belajar lebih cepat. Mereka cuma terlalu sering fold, call karena emosi, atau berdebat soal aturan.
 
-Perlu dicatat, buy-in **turnamen** bekerja berbeda dari cash game: Anda membayar satu biaya masuk tetap, mendapat stack chip yang tidak bisa diuangkan, dan main sampai satu pemain memegang semua chip. Kalau belum yakin mau format yang mana, baca dulu [cash game vs turnamen](/id/blog/holdem-tournament-vs-cash-game).
+Perlu dicatat, buy-in **turnamen** bekerja berbeda dari cash game: Anda membayar biaya masuk tetap, mendapat stack chip yang tidak bisa diuangkan, dan main sampai satu pemain memegang semua chip (event re-entry membolehkan Anda buy-in lagi setelah bust). Kalau belum yakin mau format yang mana, baca dulu [cash game vs turnamen](/id/blog/holdem-tournament-vs-cash-game).
 
 Untuk latihan online, pakai meja gratis sampai Anda bisa menjelaskan urutan aksi tanpa berpikir. Setelah itu naik level pelan-pelan.
 
@@ -199,7 +199,7 @@ Untuk latihan online, pakai meja gratis sampai Anda bisa menjelaskan urutan aksi
 
 ## No-Limit, Limit, atau Pot-Limit? Texas Hold'em Mana yang Anda Mainkan?
 
-Ketika orang bilang "Texas Hold'em", hampir selalu maksudnya **No-Limit Hold'em (NLHE)** — format yang dipakai di Main Event WSOP dan hampir semua home game. Pembagian kartu, blind, dan peringkat kartu identik di ketiga format. Satu-satunya yang berbeda adalah **berapa banyak Anda boleh bertaruh.**
+Ketika orang bilang "Texas Hold'em", hampir selalu maksudnya **No-Limit Hold'em (NLHE)** — format yang dipakai di Main Event WSOP dan hampir semua home game. Pembagian kartu dan peringkat kartu identik di ketiga format. Yang terutama berbeda adalah **berapa banyak Anda boleh bertaruh** — dan Fixed-Limit biasanya juga membatasi berapa kali raise boleh terjadi dalam satu ronde (di WSOP, satu bet dan empat raise).
 
 | Format | Berapa yang boleh ditaruhkan? | Di mana Anda menemukannya |
 |--------|-----------------------|---------------------|
@@ -304,7 +304,7 @@ Pot odds Anda adalah **$120 banding $20**, alias **6:1**. Artinya Anda perlu men
 
 ### Aturan 2 dan 4 — jalan pintas probabilitas instan
 
-Saat Anda memegang drawing hand (misalnya empat kartu menuju Flush), hitung **outs** Anda — kartu-kartu yang melengkapi tangan Anda.
+Saat Anda memegang drawing hand (misalnya empat kartu menuju Flush), hitung **outs** Anda — kartu-kartu yang mengubah draw Anda menjadi kemungkinan pemenang.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

@@ -8,10 +8,10 @@ export const POST: Post = {
   tldr: "Uma continuation bet (c-bet) é uma aposta no flop feita por quem deu raise no pré-flop. A regra moderna não é 'c-bet em todo flop' — é apostar pequeno e com frequência nos flops que favorecem o seu range (boards altos e dry como K-7-2) e dar check nos que favorecem o adversário (boards baixos e conectados como 7-6-5). Aposte pequeno — cerca de um terço do pote — em dry boards, grande — dois terços ou mais — nos wet, dê c-bet menos fora de posição quando você foi o único raiser (como 3-bettor fora de posição, inverte para quase sempre) e bem menos multiway.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-22",
+  updated: "2026-09-26",
   // 2026-09-15: PT GTO 예제 발행으로 보류됐던 A72·QT7 해설 역링크를 연결했다.
   // masterUpdated는 본문의 기존 EN 동기화 기준을 유지한다.
-  masterUpdated: "2026-09-11",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "15 min",
   emoji: "🔥",
@@ -40,7 +40,7 @@ Check | Muitas vezes a melhor jogada, não fraqueza
 
 **Uma continuation bet é uma aposta feita no flop por quem foi o agressor antes do flop** — a última pessoa a dar raise. Você "continua" contando a história de força que começou no pré-flop. E o ponto crucial: ==você não precisa ter acertado o flop para dar c-bet==; boa parte das boas c-bets é feita com mãos que erraram completamente.
 
-O motivo de funcionar é uma estatística simples: **uma mão erra o flop — não faz nem um par nem nada melhor — cerca de dois terços das vezes.** Então, quando você aposta, o seu adversário também costuma não ter nada e dá fold. Você não está apostando porque está forte; está apostando porque *ele provavelmente está fraco* e você foi quem tomou a liderança.
+O motivo de funcionar é uma estatística simples: **duas cartas de mão não pareadas não pareiam no flop cerca de dois terços das vezes (67,6%).** Então, quando você aposta, o seu adversário muitas vezes também errou — e boa parte dessas mãos dá fold. Você não está apostando porque está forte; está apostando porque *ele provavelmente está fraco* e você foi quem tomou a liderança.
 
 Depois que você domina a c-bet no flop, o resto da escada de "barreling" vem naturalmente:
 
@@ -63,7 +63,7 @@ Aqui está o ponto crucial que a estratégia moderna realmente diz, porque é f�
 
 O conceito por baixo disso é o ==range advantage==: de quem é o range geral mais forte nesse flop específico. Como quem deu raise no pré-flop, você tem mais cartas altas e overpairs, então **boards altos e dry pertencem a você** — e boards cheios de cartas médias conectadas pertencem a quem pagou. Domine essa única ideia e você já está à frente de todo jogador do tipo "só dar c-bet" na mesa.
 
-A vantagem de range também precisa ser lida junto com a posição. No exemplo A-7-2 rainbow, o BB que pagou a abertura dá check com 98,2% do range, incluindo top pair, embora as equities dos dois jogadores estejam próximas. Veja os números e a diferença de realização de equity na análise de [A-7-2: top pair também dá check](/pt/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-pt.webp").
+A vantagem de range também precisa ser lida junto com a posição. No exemplo A-7-2 rainbow, o BB que pagou a abertura dá check com 98,2% do range, incluindo top pair — a equity do range dele fica atrás só por 45,1% contra 54,9%, mas estar fora de posição transforma essa diferença modesta num check quase total. Veja os números e a diferença de realização de equity na análise de [A-7-2: top pair também dá check](/pt/blog/a-high-board-cbet "thumb:/images/gto-srp-dry-ace-oop-pt.webp").
 
 ---
 
@@ -103,7 +103,7 @@ Não existe uma única porcentagem "correta" de c-bet — quem te dá um número
 |:---|:---:|:---|
 | **Em posição, heads-up, dry board** | **70–100%** (pequeno) | Clássica "range bet" — aposte quase tudo, minúsculo |
 | **Em posição, heads-up, wet board** | **~50–60%** | Mais polarizado — valor e draws apostam, nada dá check |
-| **Fora de posição, heads-up (pote de um aumento só, você foi o raiser)** | **~30–45%** | Dê check bem mais para proteger o seu checking range. Como *3-bettor* fora de posição, inverte — acima de 97% nos dois boards que resolvemos, quase tudo no tamanho de dois terços do pote (o tamanho de um terço ficou abaixo de 1%), veja o [guia de posições](/pt/blog/holdem-position-play) |
+| **Fora de posição, heads-up (pote de um aumento só, você foi o raiser)** | **~30–45%** | Dê check bem mais para proteger o seu checking range. Como *3-bettor* fora de posição, inverte: acima de 97% nos três boards que resolvemos, quase tudo em dois terços do pote no Q♥T♥7♠ e no 8♦5♣2♠, mas sobretudo em um terço do pote no A♦K♠2♥ (57,8%); veja o [guia de posições](/pt/blog/holdem-position-play) |
 | **Multiway (2 adversários)** | **~50% ou menos** | Alguém provavelmente conectou — aperte |
 | **Multiway (3+ adversários)** | **Só mãos fortes e bons draws** | O fold equity basicamente sumiu |
 
@@ -156,7 +156,7 @@ Dar check no flop não é o fim da mão. Uma **delayed c-bet** — dar check no 
 
 - O **flop favoreceu o seu adversário** (um board baixo e conectado), então apostar era ruim — mas o **turn muda o cenário** (uma overcard, ou uma carta que aumenta a sua equity).
 - Você **deu check back com uma mão decente** em posição e quer apostar uma street de valor agora que o board está mais seguro.
-- Você quer **pegar floats**: jogadores que planejavam dar bluff-raise na sua c-bet do flop não têm aposta nenhuma para atacar e aí enfrentam a sua aposta no turn.
+- Você quer **tirar o raise do flop de cena**: jogadores que planejavam dar bluff-raise na sua c-bet do flop não têm aposta nenhuma para atacar e aí enfrentam a sua aposta no turn.
 
 Atrasar transforma uma situação em que uma c-bet automática teria sangrado fichas numa aposta controlada e informada uma street depois.
 
@@ -166,7 +166,7 @@ Atrasar transforma uma situação em que uma c-bet automática teria sangrado fi
 
 Vamos deixar o "não" explícito, porque é onde o dinheiro é economizado:
 
-- **O board acertou em cheio o range do seu adversário.** Um flop 7‑6‑5 ou 9‑8‑7 acerta as mãos que pagam um raise muito mais forte do que acerta as suas. Apostar aqui é só doar fichas — dê check.
+- **O board acertou em cheio o range do seu adversário.** Um flop 7‑6‑5 ou 9‑8‑7 acerta as mãos que pagam um raise muito mais forte do que acerta as suas. Apostar aqui com a maior parte do seu range é só doar fichas — dê check com muito mais frequência e, quando apostar, aposte grande e seletivo.
 - **Seu adversário simplesmente não folda.** Contra quem paga qualquer aposta, o c-bet de blefe vira doação — corte os blefes, e aposte maior por valor quando tiver a mão.
 - **Você está fora de posição num board dinâmico** com uma mão marginal. Agindo primeiro sem informação, mantenha o pote pequeno e dê check.
 - **Você está multiway com nada.** Coberto acima — sem fold equity, sem aposta.
@@ -198,7 +198,7 @@ Mesmo raise no pré-flop, flops opostos, jogadas corretas opostas. Essa é a li�
 | **Apostar grande com um range amplo** | Ranges amplos querem sizing pequeno, não grande | Pequeno no dry, grande só quando polarizado |
 | **Dar c-bet leve multiway** | O fold equity entra em colapso com mais jogadores | Só valor e draws contra 2+ |
 | **Dar c-bet fora de posição com frequência demais** | Você não consegue realizar equity agindo primeiro | Dê check mais, construa um checking range |
-| **Apostar num board que acertou eles** | 7‑6‑5 esmaga o range deles, não o seu | Dê check e desista |
+| **Apostar num board que acertou eles** | 7‑6‑5 esmaga o range deles, não o seu | Dê check mais; aposte grande e seletivo quando apostar |
 | **Barreling "uma e pronto"** | C-bet no flop e sempre desistir no turn = fácil de flotar | Tenha um plano de turn antes de disparar |
 | **Triple-barrel sem equity** | Blefar um stack inteiro sem outs ou blockers | Blefe com equity de reserva ou bons blockers |
 
@@ -249,7 +249,7 @@ A. Uma delayed c-bet é quando quem deu raise no pré-flop dá check no flop e d
 
 **Q. Quando você NÃO deve dar c-bet?**
 
-A. Não dê c-bet quando o board esmagou o range do seu adversário (boards baixos conectados), quando você está fora de posição com uma mão marginal num board dinâmico, quando você está multiway com nada, ou quando a sua mão prefere proteger um checking range. Dar check nessas situações não é fraqueza — economiza fichas e torna as suas apostas futuras mais críveis.
+A. Não dê c-bet por padrão quando o board esmagou o range do seu adversário (boards baixos conectados — dê check mais e, quando apostar, aposte grande e seletivo), quando você está fora de posição com uma mão marginal num board dinâmico, quando você está multiway com nada, ou quando a sua mão prefere proteger um checking range. Dar check nessas situações não é fraqueza — economiza fichas e torna as suas apostas futuras mais críveis.
 
 **Q. Uma c-bet é um bluff?**
 
@@ -269,7 +269,7 @@ A. Em torno de 55–70% para a c-bet no flop é uma faixa saudável e equilibrad
 
 1. **Uma c-bet é uma aposta no flop de quem deu raise no pré-flop** — e funciona porque as mãos erram o flop cerca de dois terços das vezes.
 2. **O board decide.** Aposte em boards altos e dry que favorecem o seu range; dê check em boards baixos e conectados que favorecem o do seu adversário.
-3. **O range advantage define a frequência; o nut advantage define o tamanho.** Aposte com frequência em boards que você domina; aposte grande só quando tiver mais das nuts.
+3. **O range advantage define a frequência; o nut advantage define o tamanho.** Aposte com frequência em boards que você domina; aposte grande quando tiver mais das nuts ou precisar cobrar dos draws em boards wet.
 4. **Pequeno (⅓) no dry, grande (⅔+) no wet.** Dê c-bet menos fora de posição quando você foi o único raiser (como 3-bettor fora de posição, inverte para quase sempre) e bem menos multiway.
 5. **O check é uma arma.** Os melhores jogadores dão check com frequência e de propósito — a c-bet é um bisturi, não um martelo.
 

@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Limpear en el póker: por qué 'solo igualar' preflop casi siempre te cuesta caro",
   seoTitle: "Por qué 'solo igualar' preflop te sangra fichas — Limpear",
   desc: "Limpear es solo igualar la ciega grande preflop. Por qué casi siempre es un error, los pocos casos donde vale, y cómo los buenos castigan al que limpea.",
-  tldr: "Limpear es entrar en un bote preflop solo igualando la ciega grande en lugar de subir o foldear. El open-limp (ser el primero en entrar) casi siempre es un error — no puedes ganar el bote preflop, cedes la iniciativa y los buenos jugadores te castigan. Pero limpear no siempre está mal: completar la ciega pequeña, hacer over-limp con manos especulativas detrás de otros limpers, y algunos casos en vivo y de torneo con stack corto son excepciones legítimas.",
+  tldr: "Limpear es entrar en un bote preflop solo igualando la ciega grande en lugar de subir o foldear. El open-limp (ser el primero en entrar) casi siempre es un error — un limp no puede llevarse las ciegas sin oposición, cedes la iniciativa y los buenos jugadores te castigan. Pero limpear no siempre está mal: completar la ciega pequeña, hacer over-limp con manos especulativas detrás de otros limpers, y algunos casos en vivo y de torneo con stack corto son excepciones legítimas.",
   category: "strategy",
   date: "2026-07-05",
-  updated: "2026-09-22",
-  masterUpdated: "2026-09-22",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🚶",
@@ -27,7 +27,7 @@ Un **limp** es cuando entras en un bote antes del flop solo *igualando* la ciega
 
 :::stripe
 Igualar la ciega grande | Qué es un limp (sin subir)
-0% | Tu opción de ganar el bote preflop
+0% | Opción de que un limp se lleve las ciegas sin oposición
 Open-limp | La versión que casi siempre está mal
 Over-limp / SB | Los casos donde sí está bien
 :::
@@ -38,7 +38,7 @@ Over-limp / SB | Los casos donde sí está bien
 
 **Limpear es entrar en el bote preflop igualando exactamente el importe de la ciega grande — sin subir.** Estás poniendo el mínimo para ver un flop. Y algo clave: limpear solo aplica cuando *nadie ha subido todavía*: si alguien ya ha subido y tú lo igualas, eso es un **call** (pagar), no un limp. La palabra describe específicamente el camino pasivo y más barato para entrar en un bote sin subir.
 
-Conviene separar dos términos que la gente confunde. Un **limper** es quien entra en botes sin subir igualando la ciega grande. Una **calling station** es un jugador que paga demasiadas *apuestas* postflop, en el flop, el turn y el river. A menudo describen al mismo jugador loose-passive, pero son hábitos distintos — uno va de cómo *entras* en los botes, el otro de cómo *continúas* en ellos. Este [glosario de términos de póker](/es/blog/holdem-glossary) aclara el resto del vocabulario si algo te descoloca.
+Conviene separar dos términos que la gente confunde. Un **limper** es quien entra en botes sin subir igualando la ciega grande. Una **calling station** es un jugador que paga demasiado y rara vez sube o foldea — un hábito que se nota sobre todo en el flop, el turn y el river. A menudo describen al mismo jugador loose-passive, pero recalcan hábitos distintos — uno va de cómo *entras* en los botes, el otro sobre todo de cómo *continúas* en ellos. Este [glosario de términos de póker](/es/blog/holdem-glossary) aclara el resto del vocabulario si algo te descoloca.
 
 ---
 
@@ -64,7 +64,7 @@ Esta distinción importa porque casi todo el consejo de "limpear es terrible" va
 
 Cuando haces open-limp, renuncias a una cantidad sorprendente de cosas. Esto es exactamente lo que cedes:
 
-1. **No puedes ganar el bote preflop.** Esta es la grande. Cuando *subes* siendo el primero en entrar, todos pueden foldear y te llevas las ciegas sin oposición — dinero gratis, una buena parte de las veces. Cuando limpeas, ese número es **cero**. Te has garantizado que tienes que ligar una mano o ganarla más tarde; has tirado la forma más limpia de ganar.
+1. **Un limp no puede llevarse las ciegas sin oposición.** Esta es la grande. Cuando *subes* siendo el primero en entrar, todos pueden foldear y te llevas las ciegas sin oposición — dinero gratis, una buena parte de las veces. Cuando limpeas, ese número es **cero**. Te has garantizado que tienes que ligar una mano o ganarla más tarde; has tirado la forma más limpia de ganar.
 2. **Cedes la iniciativa.** El que sube preflop es el "agresor" — es quien lanza una [apuesta de continuación](/es/blog/holdem-continuation-bet) en el flop y representa una mano fuerte, a menudo llevándose el bote sin nada. Limpea, y le has entregado esa historia a otro. Ahora reaccionas en lugar de liderar.
 3. **Construyes un bote hinchado y multiway — a menudo fuera de posición.** Limpear invita a más pagadores y deja entrar barata a la ciega grande. Cuantos más jugadores vean el flop, menos vale tu mano, y si limpeaste desde posición temprana estarás *fuera de posición* frente a casi toda la mesa en cada calle, y sin iniciativa. Ese es el peor asiento de la mesa.
 4. **Te vuelves legible — y explotable.** Los limpers habituales aparecen con un rango limitado y transparente. Los buenos jugadores lo atacan sin descanso (más sobre esto abajo), así que acabas en spots complicados fuera de posición una y otra vez. Como dice el viejo refrán, los limpers crónicos "ganan botes pequeños y pierden los grandes".
@@ -169,7 +169,7 @@ A. A menudo, sí — en un bote sin subir, completar la ciega pequeña es uno de
 
 **Q. ¿Cuál es la diferencia entre un limper y una calling station?**
 
-A. Un limper entra en botes sin subir solo igualando la ciega grande antes del flop — va de cómo *entra* en los botes. Una calling station paga demasiadas apuestas después del flop, en el turn y el river — va de cómo *continúa*. El mismo jugador loose-passive a menudo hace ambas cosas, pero los términos describen hábitos distintos y no deberían usarse de forma intercambiable.
+A. Un limper entra en botes sin subir solo igualando la ciega grande antes del flop — va de cómo *entra* en los botes. Una calling station paga demasiado y rara vez sube o foldea, en cualquier calle — la etiqueta va sobre todo de cómo *continúa*, en especial después del flop. El mismo jugador loose-passive a menudo hace ambas cosas, pero los términos recalcan hábitos distintos y no deberían usarse de forma intercambiable.
 
 **Q. ¿Qué es un over-limp?**
 
@@ -177,13 +177,13 @@ A. Un over-limp es limpear detrás de otro limper: alguien ya ha entrado igualan
 
 **Q. ¿Cómo se llama a un jugador que limpea mucho?**
 
-A. Normalmente "fish" o "pez" — el término general para un jugador débil y perdedor — o un "donk" (juega mal). (A ese mismo jugador muchas veces le cuelgan también la etiqueta de "calling station", pero ese término habla de pagar demasiadas *apuestas postflop* — no de cómo entra en los botes.) El open-limp habitual es una de las señales más claras de un jugador inexperto, y por eso mismo los jugadores más fuertes van a por los limpers con subidas de aislamiento. Si prefieres no llevar esa etiqueta, ve por defecto a subir o foldear.
+A. Normalmente "fish" o "pez" — el término general para un jugador débil y perdedor — o un "donk" (juega mal). (A ese mismo jugador muchas veces le cuelgan también la etiqueta de "calling station", pero ese término abarca pagar demasiado en cualquier calle, no el hábito del open-limp en concreto.) El open-limp habitual es una de las señales más claras de un jugador inexperto, y por eso mismo los jugadores más fuertes van a por los limpers con subidas de aislamiento. Si prefieres no llevar esa etiqueta, ve por defecto a subir o foldear.
 
 ---
 
 ## Las 3 cosas que debes recordar
 
-1. **Limpear es igualar la ciega grande en lugar de subir** — y el open-limp, ser el primero en entrar, casi siempre es un error: no puedes ganar el bote preflop, cedes la iniciativa y te marcas como un objetivo fácil.
+1. **Limpear es igualar la ciega grande en lugar de subir** — y el open-limp, ser el primero en entrar, casi siempre es un error: un limp no puede llevarse las ciegas sin oposición, cedes la iniciativa y te marcas como un objetivo fácil.
 2. **Pero no *siempre* está mal.** Completar la ciega pequeña, hacer over-limp con manos especulativas detrás de otros limpers, y los spots en vivo pasivos o de torneo con stack corto son excepciones legítimas. El dogmático "nunca limpees" es una exageración.
 3. **Por defecto, subir o foldear.** Reserva el limpear para esos casos concretos, y dejarás de regalarles a los jugadores fuertes ocasiones gratis de aislarte y explotarte.
 

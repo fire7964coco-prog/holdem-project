@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Texas Hold'em Strategie: Die 5 Entscheidungen hinter jeder gewonnenen Hand",
   seoTitle: "Warum Poker-'Tipps' nie hängenblieben – Texas Hold'em Strategie",
   desc: "Gutes Poker ist nicht zehn Tipps – es sind dieselben fünf Entscheidungen pro Hand: Position, Handauswahl, Raise-or-Fold, C-Bet und wann du loslässt.",
-  tldr: "Jede gewinnende Texas-Hold'em-Entscheidung reduziert sich auf fünf wiederholbare Fragen: Wo sitze ich (Position), ist diese Hand spielenswert, raise oder fold ich (nie limpen), bette ich auf dem Flop weiter, und wann lasse ich los? Ein Tight-Aggressive-Spieler, der diese fünf gut beantwortet, foldet ~80% der Hände preflop, spielt sie aggressiv, wenn er sie spielt, und schlägt fast jedes Freizeitspiel – ohne auswendig gelernte Tippliste.",
+  tldr: "Jede gewinnende Texas-Hold'em-Entscheidung reduziert sich auf fünf wiederholbare Fragen: Wo sitze ich (Position), ist diese Hand spielenswert, raise oder fold ich (nie open-limpen), bette ich auf dem Flop weiter, und wann lasse ich los? Ein Tight-Aggressive-Spieler, der diese fünf gut beantwortet, foldet ~80% der Hände preflop, spielt sie aggressiv, wenn er sie spielt, und schlägt fast jedes Freizeitspiel – ohne auswendig gelernte Tippliste.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-24",
-  masterUpdated: "2026-09-11",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "14 Min.",
   emoji: "♠️",
@@ -49,7 +49,7 @@ Statt einer Liste nutze also ein **Entscheidungsgerüst**. Jede Hand, die du spi
 |:---:|:---|:---|:---|
 | **1** | **Position** | Wo sitze ich, und wer handelt nach mir? | [Position Play](/de/blog/holdem-position-play) |
 | **2** | **Handauswahl** | Ist diese Hand überhaupt spielenswert? | [Starthände](/de/blog/holdem-starting-hands-chart) |
-| **3** | **Preflop-Aggression** | Raise oder fold ich – nie einfach limpen? | [Warum Limpen dich kostet](/de/blog/holdem-limping) |
+| **3** | **Preflop-Aggression** | Raise oder fold ich – nie open-limpen? | [Warum Limpen dich kostet](/de/blog/holdem-limping) |
 | **4** | **Continuation** | Bette ich auf dem Flop weiter, oder mache ich zu? | [Betting Actions](/de/blog/holdem-betting-actions) |
 | **5** | **Disziplin** | Wann lasse ich eine Hand los? | [Pot Odds & Folden](/de/blog/holdem-pot-odds) |
 
@@ -113,7 +113,7 @@ Zu [limpen](/de/blog/holdem-limping) heißt, den Big Blind nur zu callen, statt 
 2. **Du gibst die Initiative ab.** Der Preflop-Raiser darf auf dem Flop weiter eine Geschichte erzählen (Entscheidung 4). Limp, und du überreichst diese Geschichte jemand anderem.
 3. **Du malst dir ein Ziel auf den Rücken.** Starke Spieler raisen groß hinter einem Limper, um ihn zu isolieren, und überspielen ihn dann in Position die ganze Hand. Ein Open-Limp verkündet „schwacher, passiver Spieler hier“.
 
-Der Standard, der das behebt, ist unmissverständlich: **ist eine Hand gut genug zum Spielen, ist sie gut genug zum Raisen; ist sie es nicht, folde.** Und wenn jemand *anderes* bereits geraist hat, ist erneut zu raisen – eine [3-Bet](/de/blog/holdem-3bet "thumb:/images/holdem-3bet-hero.webp") – der Weg, weite Opens zu bestrafen und Pots mit deinen besten Händen aufzubauen. Die Ausnahmen sind echt, und bei jeder geht es um den **Preis**. Das *Over*-Limpen – *hinter* jemandem callen, der bereits gelimpt hat, in Position, mit einer spekulativen Hand wie einem kleinen Pair – kauft dir einen billigen Platz im Multiway-Pot. Die größere ist die **BB-Defense**: gegen ein 2,5bb-Open hast du ==1bb bereits gepostet==, callst also 1,5bb in einen 4bb-Pot und brauchst nur ==1,5 ÷ 5,5 = 27%== Equity – und du agierst als Letzter, dein Call beendet die Runde. Deshalb callt ein breiter Teil der BB-Range flat, statt zu 3-betten oder zu folden. Die dritte ist **Set-Mining** mit einem kleinen Pair gegen einen Raise bei tiefen Stacks (die Mathematik steht unten). Das sind Ausnahmen wegen des Preises, keine Strategien – außerhalb solcher Spots gilt: Raise oder fold.
+Der Standard, der das behebt, ist unmissverständlich: **ist eine Hand gut genug zum Spielen, ist sie gut genug zum Raisen; ist sie es nicht, folde.** Und wenn jemand *anderes* bereits geraist hat, ist erneut zu raisen – eine [3-Bet](/de/blog/holdem-3bet "thumb:/images/holdem-3bet-hero.webp") – der Weg, weite Opens zu bestrafen und Pots mit deinen besten Händen aufzubauen. Die Ausnahmen sind echt, und bei jeder geht es um den **Preis**. Das *Over*-Limpen – *hinter* jemandem callen, der bereits gelimpt hat, in Position, mit einer spekulativen Hand wie einem kleinen Pair – kauft dir einen billigen Platz im Multiway-Pot. Die größere ist die **BB-Defense**: gegen ein 2,5bb-Open (heads-up, der Small Blind hat gefoldet, keine Antes) hast du ==1bb bereits gepostet==, callst also 1,5bb in einen 4bb-Pot und brauchst auf dem Papier nur ==1,5 ÷ 5,5 = 27%== Equity. Außer Position realisierst du weniger als deine rohe Equity – sieh die 27% also als Untergrenze, nicht als Ziellinie. Und weil du als Letzter agierst und dein Call die Runde beendet, callt ein breiter Teil der BB-Range flat, statt zu 3-betten oder zu folden. Die dritte ist **Set-Mining** mit einem kleinen Pair gegen einen Raise bei tiefen Stacks (die Mathematik steht unten). Das sind Ausnahmen wegen des Preises, keine Strategien – außerhalb solcher Spots gilt: Raise oder fold.
 
 ---
 
@@ -250,7 +250,7 @@ A. 3-bette (re-raise einen Preflop-Raiser) um Value mit deinen stärksten Hände
 
 **Q. Wann sollte man raisen vs. callen?**
 
-A. Ziehe Raisen dem Callen vor, wann immer du eine Hand hast, mit der es sich lohnt weiterzumachen. Raisen gewinnt Pots auf zwei Wegen (Fold Equity plus die beste Hand) und ergreift die Initiative; Callen gewinnt nur am Showdown – entweder liegst du schon vorn, oder du musst dich verbessern – und lässt andere billig rein. Calle, wenn deine Hand stark genug ist, um weiterzumachen, aber nicht, um einen großen Pot aufzubauen, wenn du ein kleines Pair set-minest, oder wenn du die Bluffs eines schwächeren Spielers drinbehalten willst.
+A. In den meisten Spots ziehst du Raisen dem Callen vor, wenn du eine Hand hast, mit der es sich lohnt weiterzumachen. Raisen gewinnt Pots auf zwei Wegen (Fold Equity plus die beste Hand) und ergreift die Initiative; Callen gewinnt nur am Showdown – entweder liegst du schon vorn, oder du musst dich verbessern – und lässt andere billig rein. Calle, wenn deine Hand stark genug ist, um weiterzumachen, aber nicht, um einen großen Pot aufzubauen, wenn du ein kleines Pair set-minest, oder wenn du die Bluffs eines schwächeren Spielers drinbehalten willst.
 
 **Q. Wie viele Hände sollte man bei Texas Hold'em spielen?**
 

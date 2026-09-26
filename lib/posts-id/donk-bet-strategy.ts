@@ -10,8 +10,8 @@ export const POST: Post = {
   category: "strategy",
   tags: ["donk bet", "flop 9-8-7", "range advantage", "straight", "ukuran taruhan", "realisasi equity", "solver GTO"],
   date: "2026-09-15",
-  updated: "2026-09-15",
-  masterUpdated: "2026-09-02",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   readTime: "9 mnt",
   emoji: "🎯",
   image: "/images/gto-srp-middle-connected-oop-id.webp",
@@ -149,7 +149,7 @@ Ada dua perubahan yang mendukungnya.
 
 **Kedua, keunggulan button berada pada kategori yang rentan.** Button hanya lebih banyak memiliki overpair 6,4% dan ace-high 30,5%. Ace-high belum memiliki pair; jika hand itu memiliki draw, big blind juga memiliki banyak draw, sehingga keberadaan draw tidak memberi button keunggulan khusus. Overpair pun rentan karena alasan yang dibahas berikutnya. Sementara itu, keunggulan big blind terletak pada **straight yang sudah jadi**.
 
-Lead didukung oleh lebih dari kekuatan rata-rata: **distribusi hand kuat yang mendukung Anda serta lawan yang sulit bet dengan leluasa**. Kedua kondisi terlihat di sini. Big blind memiliki lebih banyak straight jadi, sedangkan button dengan ace-high sebanyak 30,5% tidak dapat begitu saja bet dengan range luas. Lead mengambil sebagian kesempatan bet yang mungkin dilewatkan button. Ini tidak berarti big blind memiliki lebih banyak combo nuts JT.
+Lead didukung oleh lebih dari kekuatan rata-rata: **distribusi hand kuat yang mendukung Anda serta lawan yang sulit bet dengan leluasa**. Kedua kondisi tampak terpenuhi di sini. Big blind memiliki lebih banyak straight jadi (24 combo berbanding 20, sementara nuts JT sama-sama 16 combo), sedangkan button dengan ace-high sebanyak 30,5% akan kesulitan bet dengan range luas. Bagian terakhir ini adalah bacaan dari komposisi range, karena node bet button sendiri tidak dihitung dalam contoh ini. Lead mengambil sebagian kesempatan bet yang mungkin dilewatkan button. Ini tidak berarti big blind memiliki lebih banyak combo nuts JT.
 
 ## Mengapa overpair button rentan?
 

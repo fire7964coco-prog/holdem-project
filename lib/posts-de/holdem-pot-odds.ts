@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Um die Pot Odds zu berechnen, teilst du den Betrag, den du callen musst, durch den gesamten Pot nach deinem Call. Ein $50-Call in einen $150-Pot = 50 ÷ 200 = 25% – du brauchst also mindestens 25% Equity, damit der Call profitabel ist.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-24",
-  masterUpdated: "2026-09-24",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 Min.",
   emoji: "🧮",
@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Die Hand eines Spielers schiebt Chips in Richtung Pot auf grünem Filz – der Moment einer Pot-Odds-Entscheidung",
   tags: ["pot odds", "pot odds berechnen", "poker pot odds", "pot odds tabelle", "pot odds beispiele", "implied odds", "pot odds vs equity", "poker faustregel", "benötigte equity zum callen"],
   content: `
-Das teuerste Wort im Poker ist „Hoffnung“. In meinem ersten Jahr habe ich River-Bets gecallt, weil mein Flushdraw *vielleicht* ankommt – und dabei Chips verblutet. Der Abend, an dem es endlich klick machte, war ein $50-Call in einen $150-Pot – ausnahmsweise habe ich gerechnet, gemerkt, dass ich nur 25% zum Break-even brauche, und einen Call nie wieder mit denselben Augen gesehen.
+Das teuerste Wort im Poker ist „Hoffnung“. In meinem ersten Jahr habe ich Turn-Bets gecallt, weil mein Flushdraw am River *vielleicht* ankommt – und dabei Chips verblutet. Der Abend, an dem es endlich klick machte, war ein $50-Call in einen $150-Pot – ausnahmsweise habe ich gerechnet, gemerkt, dass ich nur 25% zum Break-even brauche, und einen Call nie wieder mit denselben Augen gesehen.
 
 ==Pot Odds sind das eine Stück Mathematik, das einen Call aus Gefühl von einem Call mit Grund trennt.== Sie sind in fünf Minuten gelernt und nach ein paar Sessions automatisch. Dieser Guide gibt dir die ==g:10-Sekunden-Methode==, einen Bet-Size-Spickzettel, den du dir am Tisch vorstellen kannst, und das eine, was die meisten Spieler falsch machen: wie Pot Odds, Equity und Implied Odds wirklich zusammenpassen.
 
@@ -116,7 +116,7 @@ Jetzt verbinde den Preis mit deiner Hand. [Zähle deine **Outs**](/de/blog/holde
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Dein Draw | Outs | Equity, 1 Karte (Turn → River) | Equity, 2 Karten (Flop → River) |
+| Dein Draw | Outs | Trefferchance, 1 Karte (Turn → River) | Trefferchance, 2 Karten (Flop → River) |
 |:---|:---:|:---:|:---:|
 | Flush + Open-Ender | 15 | 32,6% | 54,1% |
 | Flushdraw | 9 | 19,6% | 35,0% |
@@ -139,7 +139,7 @@ Diese drei werden ständig durcheinandergeworfen, und die Verwirrung kostet Geld
 :::compare
 Begriff | Was er bedeutet
 Pot Odds | Der Preis: Call ÷ finaler Pot = die Equity, die du *brauchst*
-Equity | Deine tatsächliche Chance, die Hand gerade jetzt zu gewinnen
+Equity | Dein erwarteter Anteil am Pot gerade jetzt – die Hände, die du gewinnst, plus dein Anteil an Splits
 Implied Odds | Die *zusätzlichen* Chips, die du auf späteren Streets zu gewinnen erwartest, wenn du triffst
 :::
 
@@ -160,7 +160,7 @@ Du kannst mitten in der Hand nicht die exakte Equity ausrechnen, also rechne so:
 
 Ein Flushdraw hat 9 Outs. Auf dem Flop: 9 × 4 = **36%** (echter Wert 35,0% – einen Punkt daneben, also brauchbar). Auf dem Turn: 9 × 2 = **18%** (echter Wert 19,6% – nah genug zum Entscheiden).
 
-:::tip[Die ×4-Version nimmt stillschweigend an, dass du *beide* verbleibenden Karten ohne weitere Bets siehst – was nur garantiert ist, wenn du bereits all-in bist. Wenn noch Bets kommen, verlass dich auf die ×2-Zahl (eine Karte) für die Street vor dir und lass Implied Odds den Rest rechtfertigen.]:::
+:::tip[Die ×4-Version nimmt stillschweigend an, dass du *beide* verbleibenden Karten ohne weitere Bets siehst – was nur garantiert ist, wenn kein Setzen mehr möglich ist (du bist all-in oder hast ein All-in gecallt). Wenn noch Bets kommen, verlass dich auf die ×2-Zahl (eine Karte) für die Street vor dir und lass Implied Odds den Rest rechtfertigen.]:::
 
 Vollständige Herleitungen für jeden Draw und jede fertige Hand findest du in der [Wahrscheinlichkeitstabelle](/de/blog/holdem-probability). Hier ist die Abkürzung alles, was du brauchst.
 
@@ -228,15 +228,15 @@ A. Bet Sizing ist die Kehrseite der Pot Odds – deine Bet legt den Preis fest, 
 
 **Q. Was ist die Regel der 2 und 4?**
 
-A. Eine Abkürzung, die Outs in Equity verwandelt: Outs × 4 am Flop (zwei Karten kommen noch) oder × 2 am Turn (nur noch eine Karte). Neun Flush-Outs sind also grob 36% am Flop und 18% am Turn. Nutze ×4 nur, wenn du beide Karten ohne weitere Bets siehst.
+A. Eine Abkürzung, die saubere Outs in deine Chance verwandelt, den Draw zu treffen: Outs × 4 am Flop (zwei Karten kommen noch) oder × 2 am Turn (nur noch eine Karte). Neun Flush-Outs sind also grob 36% am Flop und 18% am Turn. Nutze ×4 nur, wenn du beide Karten ohne weitere Bets siehst.
 
 **Q. Wie viel Equity brauche ich, um eine Bet zu callen?**
 
-A. Genau deine Pot Odds als Prozentwert: Call ÷ finaler Pot. Gegen eine Half-Pot-Bet brauchst du 25%, gegen eine Pot-Size-Bet 33%. Zähle deine Outs, rechne sie mit der Regel der 2 und 4 um und calle, wenn deine Equity über der Schwelle liegt.
+A. Genau deine Pot Odds als Prozentwert: Call ÷ finaler Pot. Gegen eine Half-Pot-Bet brauchst du 25%, gegen eine Pot-Size-Bet 33%. Bei einem Draw zählst du deine sauberen Outs, rechnest sie mit der Regel der 2 und 4 für die Karten um, die dieser Call tatsächlich kauft, und callst, wenn diese Chance über der Schwelle liegt – oder wenn Implied Odds die Lücke decken.
 
 **Q. Sollte meine Equity höher oder niedriger sein als meine Pot Odds?**
 
-A. Höher. Die Pot Odds geben die Equity an, die du zum Callen *brauchst* (Call ÷ finaler Pot); deine Equity ist, wie oft du tatsächlich gewinnst. Du callst, wenn deine Equity *über* dieser Schwelle liegt, und foldest, wenn sie darunter liegt. Verlangt eine Half-Pot-Bet 25% und hat dein Flushdraw 35% (mit zwei kommenden Karten – du siehst Turn und River ohne weitere Bets), dann ist 35% > 25% und der Call profitabel.
+A. Höher. Die Pot Odds geben die Equity an, die du zum Callen *brauchst* (Call ÷ finaler Pot); deine Equity ist dein erwarteter Anteil am Pot. Du callst, wenn deine Equity *über* dieser Schwelle liegt, und foldest, wenn sie darunter liegt. Verlangt eine Half-Pot-Bet 25% und hat dein Flushdraw 35% (mit zwei kommenden Karten – du siehst Turn und River ohne weitere Bets), dann ist 35% > 25% und der Call profitabel.
 
 **Q. Gelten Pot Odds auch, wenn noch Spieler hinter mir sitzen?**
 
@@ -251,8 +251,8 @@ A. Ein Gutshot hat 8,7% auf eine Karte und 16,5% auf zwei. Selbst eine ¼-Pot-Be
 ## Die 3 Dinge, die du dir merken solltest
 
 1. **Die Formel:** benötigte Equity = dein Call ÷ der finale Pot (mit deinem Call eingerechnet). Half-Pot = 25%, Pot-Size = 33%.
-2. **Der Vergleich:** calle, wenn deine Equity (Outs × 4 oder × 2) deine Pot Odds schlägt. Das ist die gesamte Entscheidung.
-3. **Der Tie-Breaker:** Implied Odds retten Draws, die den Preis knapp verfehlen – aber nur, wenn die Stacks tief sind und dein Draw zu den Nuts geht.
+2. **Der Vergleich:** calle, wenn deine Equity deine Pot Odds schlägt. Bei einem Draw schätzt du sie mit Outs × 4 oder × 2 – zähl nur saubere Outs, und nimm ×2, wenn noch Bets kommen.
+3. **Der Tie-Breaker:** Implied Odds retten Draws, die den Preis knapp verfehlen – aber nur, wenn dahinter noch Chips zu gewinnen sind und ein Gegner da ist, der sie wahrscheinlich auszahlt; ein Draw zu den Nuts macht diesen Payoff sicherer.
 
 Mach das ein paar hundert Mal und es hört auf, Mathematik zu sein, und wird zum Instinkt. Du foldest die aussichtslosen Calls, machst die profitablen und hörst auf, die „Hoffnungs“-Steuer zu zahlen. Von hier aus schärfe die rohen Zahlen hinter jedem Draw in der [Tabelle für Poker-Odds und Wahrscheinlichkeiten](/de/blog/holdem-probability), oder stelle sicher, dass du Pots mit Händen betrittst, auf die zu ziehen sich lohnt – mit der [Starthände-Tabelle nach Position](/de/blog/holdem-starting-hands-chart).
 

@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "glossary",
   date: "2026-07-05",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-22",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 分钟",
   emoji: "📖",
@@ -48,9 +48,9 @@ export const POST: Post = {
 | 这些老被搞混 | 区别在哪 |
 |:---|:---|
 | **过牌 vs 跟注（Check vs Call）** | 过牌 **不投一分筹码**（只有你不需要再补筹码跟上下注时才行）；跟注是 **跟上** 一个已经存在的下注。 |
-| **盲注 vs 前注（Blind vs Ante）** | 盲注是 **按位置** 收的强制下注（SB/BB）；前注用来起底池、由 **每个人** 出（如今的锦标赛通常用大盲前注，由一个座位代交）。 |
+| **盲注 vs 前注（Blind vs Ante）** | 盲注是 **按位置** 收的强制下注（SB/BB）；前注用来起底池——传统上由 **每个人** 出，不过如今大多数锦标赛用大盲前注，由一个座位代交。 |
 | **set vs trips** | 两者都是三条——**set** 用的是一对口袋对子；**trips** 用的是一张手牌 + 牌面上的一对。 |
-| **cooler vs bad beat** | [cooler](/zh/blog/holdem-cooler) = 强到弃不掉的牌撞上更大的牌（严格意义上还要求进池时你已落后）；[bad beat](/zh/blog/holdem-bad-beat) = 你本来领先却被对手翻盘。 |
+| **cooler vs bad beat** | [cooler](/zh/blog/holdem-cooler) = 强到弃不掉的牌撞上更大的牌（严格意义上还要求进池时你已落后）；[bad beat](/zh/blog/holdem-bad-beat) = 进池时你是大热门，却被对手翻盘。 |
 | **价值下注 vs 诈唬（Value bet vs Bluff）** | 价值下注想 **让更差的牌跟你**；诈唬想 **让更好的牌弃掉**。 |
 | **底池赔率 vs 隐含赔率（Pot odds vs Implied odds）** | [底池赔率](/zh/blog/holdem-pot-odds) 只算 **现在池里** 的筹码；隐含赔率还加上你 **后面会赢到** 的部分。 |
 | **VPIP vs PFR** | VPIP = 你多常 **入池玩牌**；PFR = 你多常 **加注**。PFR 永远不可能超过 VPIP。 |
@@ -103,7 +103,7 @@ export const POST: Post = {
 | **诈唬 / 半诈唬（Bluff / Semi-bluff）** | 诈唬是用弱牌下注逼走更好的牌；半诈唬则是用一手还能变强的听牌来做同样的事。 |
 | **过牌加注（Check-raise）** | 先过牌，等对手下注后再加注——一条强力、有欺骗性的线（现代牌房都合法）。 |
 | **最小加注（Min-raise）** | 规则允许的最小加注。 |
-| **串注（String bet）** | 没声明就回手再取筹码——只有第一个动作算数（通常判为跟注）。先喊“加注”再分次推码就是合法的。 |
+| **串注（String bet）** | 没声明就回手再取筹码——只有第一个动作算数（通常判为跟注）。先报出完整的加注额，再分次推码就是合法的；有些规则（WSOP）只喊一声“加注”也认，TDA 规则则要求报出金额或一次推完。 |
 | **推 / all in（Jam / Shove）** | 全下的意思。 |
 | **秒跟（Snap call）** | 一次毫不犹豫、即刻的跟注。 |
 | **英雄跟注（Hero call）** | 用一手弱牌跟注，因为你读出对手是在诈唬。 |
@@ -205,7 +205,7 @@ export const POST: Post = {
 | **calling station（跟注站）** | 一个被动玩家，跟得太多、几乎不弃牌也不加注。 |
 | **reg（常客）** | 一个“regular”——某个级别上常来、通常有水平的玩家。 |
 | **grinder（磨局玩家）** | 靠稳定的牌量和纪律赚钱的玩家。 |
-| **LAG / TAG** | 松凶 / 紧凶——两种赢钱的激进风格。 |
+| **LAG / TAG** | 松凶 / 紧凶——大多数赢家打法所依托的两种激进风格（光有这种风格，并不会让谁成为赢家）。 |
 | **maniac（疯子）** | 一个超激进的玩家，加注和诈唬都毫无节制。 |
 | **mark（肥羊）** | 全桌想从他身上赢钱的那个弱玩家。 |
 

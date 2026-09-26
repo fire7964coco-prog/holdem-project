@@ -10,8 +10,8 @@ export const POST: Post = {
   category: "strategy",
   tags: ["nut advantage", "range advantage", "flop Broadway", "two-tone board", "draw", "realisasi equity", "solver GTO"],
   date: "2026-09-15",
-  updated: "2026-09-15",
-  masterUpdated: "2026-09-02",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   readTime: "10 mnt",
   emoji: "🎴",
   image: "/images/gto-srp-broadway-oop-id.webp",
@@ -121,7 +121,7 @@ Di flop kering K-high, perhitungan yang sama hanya menghasilkan **3,6%**: set 1,
 | Flop kering K-high (K-8-3) | 3,6% |
 | **Flop Broadway (Q-J-T)** | **21,0%** |
 
-**Sama-sama disebut top pair, tetapi bagian range lawan yang sudah unggul hampir enam kali lebih besar.** Selain itu, 68,7% range lawan masih memiliki draw untuk membaik di turn dan river. Jika Anda memaksakan tiga street value dengan satu pair di Q-J-T, respons besar lawan sering berasal dari hand yang mengalahkan Anda. Top pair lebih membutuhkan kontrol pot di sini.
+**Sama-sama disebut top pair, tetapi bagian range lawan yang sudah unggul hampir enam kali lebih besar.** Secara terpisah, 68,7% range lawan memiliki suatu draw. Ini sumbu yang berbeda dan tumpang tindih dengan hand jadi yang sudah unggul tadi, bukan tambahan 68,7% di atasnya; artinya, hand yang saat ini Anda kalahkan pun bisa menyalip di turn dan river. Jika Anda memaksakan tiga street value dengan satu pair di Q-J-T, respons besar lawan sering berasal dari hand yang mengalahkan Anda. Top pair lebih membutuhkan kontrol pot di sini.
 
 ## Mengapa EQR sekitar 78 lawan 119, padahal equity 47 lawan 53?
 
@@ -183,7 +183,7 @@ A. Ada tiga: AK membentuk A-K-Q-J-T, K9 membentuk K-Q-J-T-9, dan 98 membentuk Q-
 
 **Q. Bukankah wet board cocok untuk lead sebagai semi-bluff?**
 
-A. Jumlah draw saja tidak menentukan keputusan itu. Distribusi hand jadi, nut advantage, dan blocker harus dipertimbangkan bersama. Di sini, OESD hampir sama, 28,7% berbanding 27,7%, sedangkan straight yang sudah jadi lebih banyak pada button, 10,5% dibandingkan 7,1% pada big blind. Dukungan dari bagian teratas range lebih penting daripada sekadar banyak draw. Ada contoh lain dalam Spot belajar yang lebih mendukung lead: [board tengah terhubung 9-8-7](/id/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-id.webp"), tempat big blind lebih sering mengambil inisiatif.
+A. Jumlah draw saja tidak menentukan keputusan itu. Distribusi hand jadi, nut advantage, dan blocker harus dipertimbangkan bersama. Di sini, OESD hampir sama, 28,7% berbanding 27,7%, sedangkan straight yang sudah jadi lebih banyak pada button, 10,5% dibandingkan 7,1% pada big blind. Dukungan dari bagian teratas range lebih penting daripada sekadar banyak draw. Ada contoh lain dalam Spot belajar yang lebih mendukung lead: [board tengah terhubung 9-8-7](/id/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-id.webp"), tempat big blind lead 23,7%, bukan hampir tidak pernah.
 
 **Q. Apa perbedaan range advantage dan nut advantage?**
 

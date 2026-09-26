@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Sim — mãos de poker podem empatar. O pote é dividido (um chop) quando dois ou mais jogadores mostram a mesma melhor mão de cinco cartas no showdown. O naipe nunca desempata, e qualquer ficha ímpar que sobra vai para o primeiro empatado à esquerda do botão do dealer.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-10",
-  masterUpdated: "2026-09-09",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🃏",
@@ -114,7 +114,7 @@ Board 9♠ 8♦ 7♣ 6♥ 5♠ — uma sequência formada. Você tem A♠ K♦; 
 
 ## Quem fica com a ficha extra? A regra da ficha ímpar
 
-Às vezes um pote não divide por igual — um pote de 101 fichas entre dois jogadores dá 50 para cada com uma ficha sobrando, e não existe meia ficha. Antes de entregar essa última ficha a alguém, o dealer a troca pela menor denominação em jogo (regra 20 da TDA): se as de 5 são as menores fichas da mesa, uma única ficha de 25 vira cinco fichas de 5, que são divididas de novo, e só a ficha que ainda assim não divide é a "ficha ímpar". Depois, a regra padrão:
+Às vezes um pote não divide por igual — um pote de 101 fichas entre dois jogadores dá 50 para cada com uma ficha sobrando, e não existe meia ficha. Antes de entregar essa última ficha a alguém, o dealer a troca pela menor denominação em jogo (regra 20 da TDA, edição de 2024): se as de 5 são as menores fichas da mesa, uma única ficha de 25 vira cinco fichas de 5, que são divididas de novo, e só a ficha que ainda assim não divide é a "ficha ímpar". Depois, a regra padrão:
 
 > ==A ficha ímpar que sobra vai para o primeiro empatado **à esquerda do botão do dealer**== (o assento vencedor mais próximo no sentido horário a partir do botão).
 

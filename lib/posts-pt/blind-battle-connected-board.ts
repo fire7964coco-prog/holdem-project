@@ -9,8 +9,8 @@ export const POST: Post = {
   tldr: "Depois da abertura do small blind e do call do big blind, o flop 7♦6♦5♣ recebe aposta em apenas 9,6% e check em 90,4%. Pote, stack, SPR, tamanho da aposta e os dois ranges são idênticos aos do exemplo anterior. Só as três cartas do board mudaram, e a aposta caiu de 67,4% para 9,6%. A vantagem pré-flop estava nas cartas altas; o board baixo e conectado a elimina. A equity se inverte para 49,6% contra 50,4%, e a realização fora de posição cai a 85,3%.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-15",
-  masterUpdated: "2026-09-02",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   readTime: "10 min",
   emoji: "🪜",
   image: "/images/gto-sb-connected-oop-pt.webp",
@@ -100,7 +100,7 @@ O artigo anterior terminou explicando que, *nos boards que favorecem quem pagou,
 
 ## Por que este board favorece o big blind?
 
-**Porque algumas combinações extras que conectam com 5-6-7 permanecem só no range de call do big blind.** As cinco primeiras linhas abaixo mostram as categorias formadas neste board; tirando os overpairs, nenhuma delas tem proporção maior no small blind.
+**Porque o range de call do big blind acrescenta mãos que o small blind nunca abre e que acertam o 7-6-5 — entre elas T7o, 97o, 87o, 76o, 74s e 43s —, além das sequências, sets e dois pares que os dois ranges têm.** As cinco primeiras linhas abaixo mostram as categorias formadas neste board; tirando os overpairs, nenhuma delas tem proporção maior no small blind.
 
 ![Comparação por categoria das mãos do small blind e do big blind no flop 7♦6♦5♣](/images/gto-sb-connected-ranges-pt.webp "7-6-5 entre os blinds · top pair passa de 6,8% no small blind para 11,2% no big blind")
 
@@ -180,7 +180,7 @@ Três tipos de mão têm faixas de aposta visivelmente maiores. As frequências 
 - **A-7 suited e K-7 suited**: top pair de setes. A escolha não vem só da força da mão, mas da combinação de **valor fino com blocker de ás ou rei** — uma carta dessas a menos no range adversário. Em quantidade total de top pair, o small blind está atrás: 39 combos contra 60.
 - **K-4 suited e Q-4 suited**: um quatro suited. Com o 7-6-5, ele forma ==4-5-6-7==, um draw de duas pontas que completa com três ou oito. Pela média da classe, Q-4s aposta 30,9% e K-4s, 27,1%. Mas, **como combos individuais, Q♠4♠ e Q♥4♥ chegam a 54,7%, a maior frequência de todo o spot**.
 
-Os 9,6% misturam um pouco de valor com alguns draws. Oito-oito lidera entre as classes porque **a mesma mão cumpre as duas funções**. ⚠ Isso não é uma regra geral: **os três exemplos de combos individuais mais frequentes citados a seguir não cumprem as duas funções**. Q♠4♠, com 54,7%, é draw puro; A♣7♣, com 54,4%, é valor fino com blocker; T♣9♣, com 52,2%, é gutshot. O combo que mais aposta entre os 88, 8♦8♣, fica *abaixo*, em 47,1%. **Nenhum critério sozinho explica a seleção dos 9,6%.** **E dar check em 90,4% não é desistir deste board**: a interpretação é que sair apostando por valor fino e enfrentar um aumento custa mais do que rende. ⚠ Não procure o motivo no pote de 6bb, no stack de 97bb ou no SPR de 16,2. Os três são **exatamente as mesmas constantes** no [⑪ K-T-6](/pt/blog/blind-battle-cbet "thumb:/images/gto-sb-king-mid-oop-pt.webp") e no [board A-A-6](/pt/blog/ace-paired-board-strategy "thumb:/images/gto-sb-paired-ace-oop-pt.webp"), em que o mesmo small blind aposta 67,4% e 80,1%. Quem produziu os 9,6% foram **as três cartas do board**.
+Os 9,6% misturam um pouco de valor com alguns draws. Oito-oito lidera entre as classes porque **a mesma mão cumpre as duas funções**. ⚠ Isso não é uma regra geral: **nenhum dos combos individuais do topo cumpre as duas funções**. Q♥4♥ e Q♠4♠, com 54,7%, são draws puros; A♣7♣, com 54,4%, é valor fino com blocker; logo depois vem T♣9♣, com 52,2%, um gutshot. O combo que mais aposta entre os 88, 8♦8♣, fica *abaixo*, em 47,1%. **Nenhum critério sozinho explica a seleção dos 9,6%.** **E dar check em 90,4% não é desistir deste board**: para valor fino como A♣7♣ e K♣7♣, apostar e dar check ficam a menos de 0,03bb um do outro, então o check quase não abre mão de nada. ⚠ Não procure o motivo no pote de 6bb, no stack de 97bb ou no SPR de 16,2. Os três são **exatamente as mesmas constantes** no [⑪ K-T-6](/pt/blog/blind-battle-cbet "thumb:/images/gto-sb-king-mid-oop-pt.webp") e no [board A-A-6](/pt/blog/ace-paired-board-strategy "thumb:/images/gto-sb-paired-ace-oop-pt.webp"), em que o mesmo small blind aposta 67,4% e 80,1%. Quem produziu os 9,6% foram **as três cartas do board**.
 
 :::note[⚠ Este exemplo foi calculado com uma única opção de aposta: um terço do pote. Se você permitir um tamanho maior na árvore, os 9,6% podem mudar. Leia o resultado como "sob estas condições, poucas mãos encontram motivo para sair apostando, mesmo pequeno".]:::
 
@@ -188,7 +188,7 @@ Os 9,6% misturam um pouco de valor com alguns draws. Oito-oito lidera entre as c
 
 - **Não transforme "é blind vs blind, então aposto" em regra.** Os 67,4% do exemplo anterior e os 9,6% daqui foram separados pelo board, não pela posição. Mesmo tendo aberto do small blind, quando o flop vem baixo e conectado — com cartas como 5, 6, 7 e 8 —, você precisa reconsiderar a vantagem de iniciativa.
 - **Não use um overpair como motivo automático para aumentar o pote.** O small blind tem 42 combos de overpairs, três vezes e meia a quantidade do big blind. Mas o adversário já tem 42 combos que os vencem: não é uma mão para planejar duas ou três apostas sem reavaliar. Isso não condena uma aposta pequena isolada; o ponto é **não tratá-la como uma mão para comprometer todo o stack**. ⚠ Também não significa "foldar assim que vier um aumento". O adversário tem 24,9% de draws de duas pontas, 23,8% de gutshots e 3,7% de combo draws, portanto seu range de aumento pode conter blefes. Foldar automaticamente um overpair contra um range cheio de draws também é explorável. **Evitar o all-in e foldar são decisões diferentes.** O nó de aposta seguida de aumento não está nesta resolução, então ela não fornece uma frequência para essa resposta. A série volta ao mesmo ponto: [um board conectado reduz a vantagem do agressor pré-flop](/pt/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-pt.webp").
-- **Não confunda A-high com força.** Cerca de um quarto do range do small blind é A-high. Para os A-high sem draw imediato, a principal melhora é formar um par. Os draws de sequência do adversário, quando completam, formam uma sequência: a diferença não está só na chance de melhorar, mas **no valor dessa melhora**. A equity de 49,6% mostra o resultado do conjunto.
+- **Não confunda A-high com força.** Cerca de um quarto do range do small blind é A-high. Neste board, a maior parte deles só pode melhorar formando um par (A4 e A8 ganham draws de duas pontas, e as mãos A♦x♦, um flush draw). Os draws do adversário, quando completam, formam na maioria sequências: a diferença não está só na chance de melhorar, mas **no valor dessa melhora**. A equity de 49,6% mostra o resultado do conjunto.
 - **Decida antes como responder depois do check.** Com 90,4% no check, a próxima questão é quais mãos pagam e quais dão [check-raise](/pt/blog/low-board-check-raise "thumb:/images/gto-srp-low-rainbow-oop-pt.webp") contra a aposta adversária. ⚠ **Essa resposta não está neste cálculo**: o exemplo pré-calculado vai apenas até a **primeira ação no flop**. Os nós após o check — frequência de aposta do big blind e check-raise do small blind — não estão disponíveis. Para estudar um check-raise realmente calculado, o exemplo baixo e rainbow é o único da série com frequências de uma resolução separada. **Mas os papéis são diferentes**: lá, o big blind é quem pagou e enfrenta o botão.
 
 :::readnext[Continue lendo]
@@ -198,7 +198,7 @@ Os 9,6% misturam um pouco de valor com alguns draws. Oito-oito lidera entre as c
 
 ## Como conferir no solver de poker?
 
-Você encontra estes números abrindo o [solver de poker](/pt/solver) e seguindo **Spots de estudo → "Board baixo conectado, two-tone" → [⚡ Ver resultados]**. Para jogar o mesmo spot como exercício, abra o [Treinador GTO](/pt/solver) na barra lateral. Ele distribui uma mão aleatória e, depois que você escolhe a ação, mostra a frequência da estratégia mista e a **perda de EV (bb)** da sua escolha. Sem login, o histórico fica no seu navegador.
+Você encontra estes números abrindo o [solver de poker](/pt/solver) e seguindo **Spots de estudo → "Board baixo conectado, two-tone" → [⚡ Ver resultados]**. Para jogar o mesmo spot como exercício, abra o [Treinador GTO](/pt/solver) na barra lateral. Ele distribui uma mão aleatória e, depois que você escolhe a ação, mostra a frequência da estratégia mista e a **perda de EV (bb)** da sua escolha. Por padrão, o histórico fica neste dispositivo; ao entrar com uma conta HoldemMaster, o histórico de Spots de estudo e do Desafio do dia é sincronizado entre dispositivos.
 
 **Alterne com "Board K-high com um T"**, o exemplo anterior. O seletor Jogador mostra "OOP (SB (open-raiser))" nos dois, e pote e stack são idênticos. Mesmo assim, a matriz muda completamente de cor. É a demonstração mais direta da série do que um board pode mudar. É gratuito, sem instalação e sem necessidade de conta.
 
@@ -208,7 +208,7 @@ A. Porque cada range concentra determinadas cartas. O range de abertura do small
 
 **Q. Abri do small blind e o flop veio baixo e conectado. Como continuo?**
 
-A. Neste exemplo, principalmente com check: o solver dá check em 90,4% no 7♦6♦5♣. Os 9,6% de aposta se espalham por **8-8, overpair que também tem duas pontas** — 39,5% na média da classe, a maior daqui —, top pairs como A-7s e K-7s e quatros suited com duas pontas, K-4s e Q-4s. Isso não é desistir. A interpretação é preservar opções de call e check-raise após o check, em vez de sair apostando por valor fino e enfrentar um aumento; as frequências posteriores não foram calculadas neste exemplo.
+A. Neste exemplo, principalmente com check: o solver dá check em 90,4% no 7♦6♦5♣. Os 9,6% de aposta se espalham por **8-8, overpair que também tem duas pontas** — 39,5% na média da classe, a maior daqui —, top pairs como A-7s e K-7s e quatros suited com duas pontas, K-4s e Q-4s. Isso não é desistir: para as mãos de valor fino, o check vale quase o mesmo que a aposta (diferença de até 0,03bb), e o que acontece depois do check, incluindo calls e check-raises, não está nesta resolução.
 
 **Q. O small blind tem mais de três vezes os overpairs. Por que aposta só 9,6%?**
 

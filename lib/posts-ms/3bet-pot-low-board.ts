@@ -10,7 +10,7 @@ export const POST: Post = {
   category: "strategy",
   date: "2026-09-15",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-02",
+  masterUpdated: "2026-09-26",
   readTime: "10 minit",
   emoji: "🎲",
   image: "/images/gto-3bp-low-oop-ms.webp",
@@ -122,7 +122,7 @@ Sembilan kombo BTN ialah 88, 55 dan 22, tiga setiap satu. Satu kad bagi setiap r
 
 ## Mengapa realisasi equity BTN meningkat berbanding dua contoh sebelumnya?
 
-**EQR BTN meningkat kepada 90.3%** dalam struktur pot 3-bet yang sama, berbanding 78.7% dan 75.1% sebelumnya. EQR ialah realisasi equity, sementara EV ialah nilai jangkaan. Kedua-dua EV berjumlah nilai pot; kenaikan bahagian satu pihak datang bersama penurunan pihak lain. EQR BB turun daripada 117.8% kepada 106.9%, jadi angka kedua-dua pihak perlu dibaca bersama.
+**EQR BTN meningkat kepada 90.3%** dalam struktur pot 3-bet yang sama, berbanding 78.7% dan 75.1% sebelumnya. EQR ialah realisasi equity, sementara EV ialah nilai jangkaan. Kedua-dua EV berjumlah nilai pot; **jika equity kekal sama**, kenaikan realisasi satu pihak ialah penurunan pihak lain. Merentas board berlainan, equity juga bergerak, jadi hubungan itu tidak automatik — tetapi di sini itulah yang berlaku: EQR BB turun daripada 117.8% kepada 106.9%. Sekurang-kurangnya di sini, kedua-dua angka ialah dua sisi satu fakta yang sama.
 
 | Metrik | BB (OOP) | BTN (IP) |
 |---|---|---|

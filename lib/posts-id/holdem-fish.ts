@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Fish adalah slang poker untuk pemain lemah yang kalah, sumber uang yang dikeruk pemain kuat (shark). Fish memainkan terlalu banyak tangan, terlalu banyak call, dan tak bisa fold — dan kalimat terkenal itu memperingatkan: kalau Anda tak bisa mengenali fish di meja Anda, Anda-lah fish-nya. Ini read paling penting dalam permainan: temukan fish, atau jadilah fish.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-21",
-  masterUpdated: "2026-09-21",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 mnt",
   emoji: "🐟",
@@ -67,7 +67,7 @@ Muncul di showdown dengan tangan lemah | Membuka tangan yang seharusnya tak pern
 Bermain secara emosional | Tilt setelah bad beat, mengejar kekalahan, bermain takut saat tekor
 :::
 
-Tak ada satu tanda pun yang menjadi bukti — bahkan pemain bagus sesekali limp atau mengejar draw besar. Tapi ketika Anda melihat tiga atau empat dari tanda ini pada pemain yang sama, Anda telah menemukan fish-nya. Tell tunggal paling andal adalah **kepasifan plus loose calling**: pemain yang call terlalu banyak tangan tapi hampir tak pernah raise adalah fish klasik, dan lawan paling mudah dikalahkan karena Anda bisa value-bet mereka tanpa henti tanpa takut bluff-raise. Mengetahui starting hands mana yang bahkan layak dimainkan adalah hal pertama yang memisahkan mereka dari Anda — [chart starting hands](/id/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") adalah tempat celah itu bermula.
+Tak ada satu tanda pun yang menjadi bukti — bahkan pemain bagus sesekali limp atau mengejar draw besar. Tapi ketika Anda melihat tiga atau empat dari tanda ini pada pemain yang sama, kemungkinan besar Anda telah menemukan fish-nya — anggap itu bacaan kerja dan terus perbarui. Tell tunggal paling andal adalah **kepasifan plus loose calling**: pemain yang call terlalu banyak tangan tapi hampir tak pernah raise adalah fish klasik, dan lawan paling mudah dikalahkan karena Anda bisa value-bet mereka tanpa henti tanpa takut bluff-raise. Mengetahui starting hands mana yang bahkan layak dimainkan adalah hal pertama yang memisahkan mereka dari Anda — [chart starting hands](/id/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") adalah tempat celah itu bermula.
 
 ---
 
@@ -89,8 +89,8 @@ Tak ada satu tanda pun yang menjadi bukti — bahkan pemain bagus sesekali limp 
 | **Calling station** | Over-caller yang pasif | Call apa saja, tak pernah raise/fold | Value-bet tanpa henti, jangan pernah bluff |
 | **Reg** | "Regular" di sebuah stake | Beragam — tak selalu pemenang | Baca mereka satu per satu |
 | **Grinder** | Pro/semi-pro bervolume tinggi | Solid, stabil, variance rendah | Hindari; cari pemain rekreasional |
-| **TAG** | Gaya *menang* (tight-aggressive) | Range sempit, tapi di-bet dan di-raise keras | Bukan fish — hormati taruhan mereka |
-| **LAG** | Gaya *menang* (loose-aggressive) | Range lebar, menekan terus, sering bluff | Jangan fold terlalu banyak — lebarkan call dan 3-bet, tangkap bluff-nya |
+| **TAG** | Gaya yang dipakai banyak pemain pemenang (tight-aggressive) | Range sempit, tapi di-bet dan di-raise keras | Biasanya bukan fish — hormati taruhan mereka |
+| **LAG** | Gaya yang dipakai banyak pemain kuat (loose-aggressive) | Range lebar, menekan terus, sering bluff | Jangan fold terlalu banyak — lebarkan call dan 3-bet, tangkap bluff-nya |
 
 </div>
 
@@ -98,7 +98,7 @@ Tiga pembedaan yang terus dikaburkan kompetitor, layak dibuat benar:
 
 - **Fish ≠ whale.** Whale adalah *subset* dari fish — yang kalah dalam jumlah **besar**, biasanya kaya dan memainkan stakes tinggi secara loose. Semua whale adalah fish; tak semua fish adalah whale. Adanya whale di permainan itulah kenapa shark muncul.
 - **Fish ≠ donkey.** Nyaris sinonim, tapi "donkey" menekankan *keputusan buruk* dan lebih kasar; "fish" menekankan *ketidakberpengalaman dan kekalahan.* Menyebut seseorang donk lebih merupakan hinaan.
-- **Nit bukan fish.** Nit itu *tight* — sering impas atau menang sedikit. Mereka bisa dieksploitasi karena range-nya transparan, tapi mereka tak menyemburkan chip seperti fish. Dan **LAG/TAG adalah gaya menang**, bukan label pemain lemah — hanya versi rusaknya (si "maniac" ceroboh, si "TAG fish" yang beku) yang merupakan leak.
+- **Nit biasanya bukan fish.** Nit itu *tight* — sering impas atau menang sedikit. Mereka bisa dieksploitasi karena range-nya transparan, tapi mereka tak menyemburkan chip seperti fish (meski nit yang terlalu banyak fold tetap bisa menjadi pemain yang kalah). Dan **LAG/TAG adalah gaya yang dipakai banyak pemain pemenang**, bukan label pemain lemah — hanya versi rusaknya (si "maniac" ceroboh, si "TAG fish" yang beku) yang merupakan leak.
 
 ---
 
@@ -130,7 +130,7 @@ Inilah bagian yang tak nyaman. Kalau Anda membaca sejauh ini sambil diam-diam be
 |:---|:---:|:---:|:---|
 | **Pemain solid** | 15–22% | 12–18% (tak pernah lebih tinggi dari VPIP mereka) | Tight, agresif, celah sempit |
 | **Fish** | 40–70% | di bawah 10% | Loose dan pasif — memainkan segalanya, memimpin apa pun tidak |
-| **Nit** | di bawah 12% | di bawah 8% | Terlalu tight — mudah ditebak, bukan fish |
+| **Nit** | di bawah 12% | di bawah 8% | Terlalu tight — mudah ditebak, biasanya bukan fish |
 
 </div>
 
@@ -189,7 +189,7 @@ A. Keduanya nyaris sinonim, tapi nadanya berbeda. "Fish" menekankan ketidakberpe
 
 **Q. Bagaimana cara tahu seseorang adalah fish?**
 
-A. Perhatikan sekumpulan tanda: memainkan terlalu banyak tangan, limp alih-alih raise, terlalu banyak call dan jarang raise, tak pernah fold sepasang, mengejar setiap draw, dan ukuran taruhan yang tak menentu. Tak ada satu tell pun yang menjadi bukti, tapi tiga atau empat sekaligus — terutama loose calling dipadu kepasifan — secara andal mengenali fish dalam satu atau dua orbit.
+A. Perhatikan sekumpulan tanda: memainkan terlalu banyak tangan, limp alih-alih raise, terlalu banyak call dan jarang raise, tak pernah fold sepasang, mengejar setiap draw, dan ukuran taruhan yang tak menentu. Tak ada satu tell pun yang menjadi bukti, tapi tiga atau empat sekaligus — terutama loose calling dipadu kepasifan — memberi Anda bacaan kerja yang kuat dalam satu atau dua orbit; pastikan seiring sampelnya bertambah.
 
 **Q. Bagaimana cara berhenti menjadi fish di poker?**
 

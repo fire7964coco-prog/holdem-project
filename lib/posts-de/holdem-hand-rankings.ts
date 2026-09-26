@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Die Reihenfolge der Pokerhände von der besten zur schlechtesten lautet: Royal Flush, Straight Flush, Vierling, Full House, Flush, Straße, Drilling, Zwei Paare, Paar und High Card.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-09-17",
-  masterUpdated: "2026-09-17",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "14 Min.",
   emoji: "🃏",
@@ -151,10 +151,11 @@ Zwischen zwei Straßen gewinnt die mit der höheren obersten Karte.
 
 **J♣ J♠ J♥ A♦ 4♠** – drei Karten gleichen Werts.
 
-Es gibt zwei Wege, ihn zu bilden, und der Unterschied zählt:
+Es gibt drei Wege, ihn zu bilden, und der Unterschied zählt:
 
 - **Set:** ein Pocket-Paar plus eine passende Board-Karte (z. B. du hältst J♣ J♠, das Board bringt J♥). Versteckt und gefährlich.
 - **Trips:** ein Paar auf dem Board plus eine deiner Karten. Für den Gegner leichter zu lesen und häufiger geteilt.
+- **Board-Trips:** alle drei liegen auf dem Board (z. B. J♣ J♠ J♥ in der Mitte). Alle teilen sie sich – solange sich niemand zum Full House oder zu Quads verbessert, trennen euch nur die Kicker.
 
 Ein Set holt mehr Chips, weil niemand es kommen sieht.
 
@@ -226,7 +227,7 @@ Die Reihenfolge zu kennen ist nicht dasselbe wie sie schnell zu lesen. Hier sind
 
 Du hältst **Q♥ Q♦**. Was ist deine beste Hand?
 
-→ Das Board zeigt bereits zwei Paare (A-A und K-K). Deine zwei Damen plus die Q♠ auf dem Board ergeben einen **Drilling Damen**, und zusammen mit den Assen auf dem Board hast du ein **Full House – QQQ + AA**. Das sind deine besten fünf. Anfänger hängen an „Ist AAKK + Q nicht nur zwei Paare?“ – nein. Sobald du einen Drilling hast, nimmst du das Full House. **Full House schlägt zwei Paare.**
+→ Das Board zeigt bereits zwei Paare (A-A und K-K). Deine zwei Damen plus die Q♠ auf dem Board ergeben einen **Drilling Damen**, und zusammen mit den Assen auf dem Board hast du ein **Full House – QQQ + AA**. Das sind deine besten fünf. Anfänger hängen an „Ist AAKK + Q nicht nur zwei Paare?“ – nein. Sobald du einen Drilling hast und das Board noch ein eigenes Paar dazulegt, nimmst du das Full House. **Full House schlägt zwei Paare.**
 
 ### Aufgabe 2 – Der Flush, der eigentlich besser ist
 
@@ -397,7 +398,7 @@ A. Ja. Ein Drilling ist #7 und zwei Paare sind #8, also gewinnt der Drilling. Zw
 
 **Q. Schlägt ein Straight Flush einen Vierling?**
 
-A. Ja. Ein Straight Flush (#2) schlägt einen Vierling (#3) – fünf Karten in Folge einer Farbe übertreffen Quads. Das Einzige über einem Straight Flush ist ein Royal Flush, der einfach dessen Ass-hoch-Version ist.
+A. Ja. Ein Straight Flush (#2) schlägt einen Vierling (#3) – fünf Karten in Folge einer Farbe übertreffen Quads. Über einem Straight Flush stehen nur ein höherer Straight Flush und der Royal Flush, der einfach dessen Ass-hoch-Version ist.
 
 **Q. Was schlägt vier Asse?**
 

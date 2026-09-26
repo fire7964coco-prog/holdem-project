@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Untuk menghitung pot odds, bagi jumlah yang harus Anda call dengan total pot setelah call Anda. Call $50 ke pot $150 = 50 ÷ 200 = 25% — jadi Anda butuh minimal 25% equity agar call ini profit.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-24",
-  masterUpdated: "2026-09-24",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "🧮",
@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Tangan pemain mendorong chip ke pot di tengah meja felt hijau — saat sebuah keputusan pot odds diambil",
   tags: ["pot odds", "cara menghitung pot odds", "pot odds poker", "tabel pot odds", "implied odds", "pot odds vs equity", "rule of 4 and 2", "equity untuk call"],
   content: `
-Kata paling mahal di poker adalah "harapan." Tahun pertama saya habiskan dengan call taruhan river karena flush draw saya *mungkin* jadi, dan saya kehilangan chip karenanya. Malam saat semuanya akhirnya masuk akal adalah call $50 ke pot $150 — untuk sekali ini saya menghitung, sadar bahwa saya hanya butuh 25% untuk impas, dan sejak itu saya tak pernah lagi memandang sebuah call dengan cara yang sama.
+Kata paling mahal di poker adalah "harapan." Tahun pertama saya habiskan dengan call taruhan turn karena flush draw saya *mungkin* jadi di river, dan saya kehilangan chip karenanya. Malam saat semuanya akhirnya masuk akal adalah call $50 ke pot $150 — untuk sekali ini saya menghitung, sadar bahwa saya hanya butuh 25% untuk impas, dan sejak itu saya tak pernah lagi memandang sebuah call dengan cara yang sama.
 
 ==Pot odds adalah satu-satunya perhitungan yang memisahkan call karena perasaan dari call karena alasan.== Butuh lima menit untuk memahaminya dan beberapa sesi untuk menjadikannya otomatis. Panduan ini memberi Anda ==g:metode 10 detik==, tabel ukuran taruhan yang bisa Anda bayangkan di meja, dan satu hal yang paling sering salah dipahami pemain: bagaimana pot odds, equity, dan implied odds sebenarnya saling berhubungan.
 
@@ -121,7 +121,7 @@ Bahkan **overbet 2× pot yang masif hanya meminta 40% equity**. Anda hampir tak 
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Draw Anda | Outs | Equity, 1 kartu (turn → river) | Equity, 2 kartu (flop → river) |
+| Draw Anda | Outs | Peluang jadi, 1 kartu (turn → river) | Peluang jadi, 2 kartu (flop → river) |
 |:---|:---:|:---:|:---:|
 | Flush + open-ender | 15 | 32,6% | 54,1% |
 | Flush draw | 9 | 19,6% | 35,0% |
@@ -143,7 +143,7 @@ Bandingkan dengan tabel ukuran taruhan di atas. Menghadapi ==taruhan setengah po
 :::compare
 Istilah | Apa artinya
 Pot odds | Harganya: call ÷ pot akhir = equity yang Anda *butuhkan*
-Equity | Peluang Anda yang sebenarnya untuk memenangkan tangan saat ini
+Equity | Bagian pot yang diharapkan menjadi milik Anda saat ini — tangan yang Anda menangkan ditambah bagian Anda dari hasil seri
 Implied odds | Chip *tambahan* yang Anda harapkan menang di street berikutnya jika draw Anda jadi
 :::
 
@@ -163,7 +163,7 @@ Cermin gelapnya adalah **reverse implied odds** — chip yang akan Anda *kehilan
 
 Flush draw itu 9 outs. Di flop: 9 × 4 = **36%** (nilai sebenarnya 35,0% — tepat sasaran). Di turn: 9 × 2 = **18%** (nilai sebenarnya 19,6% — cukup dekat untuk memutuskan).
 
-:::tip[Versi ×4 diam-diam mengasumsikan Anda akan melihat *kedua* kartu tersisa tanpa taruhan lagi — yang hanya terjamin saat Anda sudah all-in. Jika masih ada taruhan, andalkan angka ×2 (satu kartu) untuk street di depan Anda, dan biarkan implied odds membenarkan sisanya.]:::
+:::tip[Versi ×4 diam-diam mengasumsikan Anda akan melihat *kedua* kartu tersisa tanpa taruhan lagi — yang hanya terjamin saat tak mungkin ada taruhan lagi (Anda all-in, atau Anda sudah call sebuah all-in). Jika masih ada taruhan, andalkan angka ×2 (satu kartu) untuk street di depan Anda, dan biarkan implied odds membenarkan sisanya.]:::
 
 Penurunan lengkap untuk setiap draw dan tangan jadi ada di [bagan probabilitas](/id/blog/holdem-probability). Di sini, jalan pintas ini sudah cukup.
 
@@ -234,23 +234,23 @@ A. Ukuran taruhan adalah sisi lain dari pot odds — taruhan Anda menentukan har
 
 **Q. Apa itu Rule of 4 and 2?**
 
-A. Jalan pintas untuk mengubah outs menjadi equity: kalikan outs dengan 4 di flop (dua kartu tersisa) atau dengan 2 di turn (satu kartu tersisa). Sembilan flush outs ≈ 36% di flop, 18% di turn. Pakai ×4 hanya saat Anda akan melihat kedua kartu tanpa taruhan lagi.
+A. Jalan pintas untuk mengubah outs bersih menjadi peluang draw Anda jadi: kalikan outs dengan 4 di flop (dua kartu tersisa) atau dengan 2 di turn (satu kartu tersisa). Sembilan flush outs ≈ 36% di flop, 18% di turn. Pakai ×4 hanya saat Anda akan melihat kedua kartu tanpa taruhan lagi.
 
 **Q. Berapa banyak equity yang saya butuhkan untuk call sebuah taruhan?**
 
-A. Tepat pot odds Anda sebagai persentase: call ÷ pot akhir. Melawan taruhan setengah pot Anda butuh 25%; melawan taruhan sebesar pot, 33%. Hitung outs Anda, ubah dengan Rule of 4 and 2, dan call saat equity Anda melewati batasnya.
+A. Tepat pot odds Anda sebagai persentase: call ÷ pot akhir. Melawan taruhan setengah pot Anda butuh 25%; melawan taruhan sebesar pot, 33%. Untuk sebuah draw, hitung outs bersih Anda, ubah dengan Rule of 4 and 2 sesuai jumlah kartu yang benar-benar dibeli call ini, dan call saat peluang itu melewati batasnya — atau saat implied odds menutup selisihnya.
 
 **Q. Equity Anda harus lebih tinggi atau lebih rendah dari pot odds?**
 
-A. Lebih tinggi. Pot odds memberi tahu equity yang Anda *butuhkan* untuk call (call ÷ pot akhir); equity adalah seberapa sering Anda benar-benar menang. Call saat equity Anda *lebih tinggi* dari angka yang dibutuhkan itu, fold saat lebih rendah. Jika taruhan setengah pot butuh 25% dan flush draw Anda punya 35% (dengan dua kartu tersisa — Anda melihat turn dan river tanpa taruhan lagi), maka 35% > 25% → call yang profit.
+A. Lebih tinggi. Pot odds memberi tahu equity yang Anda *butuhkan* untuk call (call ÷ pot akhir); equity adalah bagian pot yang diharapkan menjadi milik Anda. Call saat equity Anda *lebih tinggi* dari angka yang dibutuhkan itu, fold saat lebih rendah. Jika taruhan setengah pot butuh 25% dan flush draw Anda punya 35% (dengan dua kartu tersisa — Anda melihat turn dan river tanpa taruhan lagi), maka 35% > 25% → call yang profit.
 
 ---
 
 ## 3 Hal yang Harus Diingat
 
 1. **Rumusnya:** equity yang dibutuhkan = call Anda ÷ pot akhir (dengan call Anda disertakan). Setengah pot = 25%, sebesar pot = 33%.
-2. **Perbandingannya:** call saat equity Anda (outs × 4 atau × 2) mengalahkan pot odds Anda. Itulah seluruh keputusannya.
-3. **Penentunya:** implied odds menyelamatkan draw yang meleset tipis dari harganya — tapi hanya saat stack dalam dan draw Anda menuju nut.
+2. **Perbandingannya:** call saat equity Anda mengalahkan pot odds Anda. Untuk sebuah draw, outs × 4 atau × 2 memperkirakannya — hitung hanya outs bersih, dan pakai ×2 saat masih ada taruhan.
+3. **Penentunya:** implied odds menyelamatkan draw yang meleset tipis dari harganya — tapi hanya saat masih ada chip untuk dimenangkan dan lawan yang mungkin membayarnya; draw menuju nut membuat bayaran itu lebih aman.
 
 Lakukan ini beberapa ratus kali dan ia berhenti menjadi matematika dan menjadi insting. Anda akan fold call tanpa harapan, melakukan call yang menguntungkan, dan berhenti membayar pajak "harapan." Dari sini, pertajam angka mentah di balik setiap draw di [bagan peluang dan probabilitas poker](/id/blog/holdem-probability), atau pastikan Anda masuk pot dengan tangan yang layak di-draw memakai [bagan tangan awal per posisi](/id/blog/holdem-starting-hands-chart).
 

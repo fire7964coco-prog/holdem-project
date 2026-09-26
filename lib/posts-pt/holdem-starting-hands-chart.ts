@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Dos 169 tipos de mãos iniciais, só uma pequena fatia do topo — cerca de 15–20% das mãos que você recebe — dá lucro pra um iniciante. Pares grandes (AA–TT) e AK aumentam de qualquer assento; quanto mais tarde você age, mais amplo você abre — de ~13% no under the gun a ~43% no button (ainda mais amplo no 6-max). Comece com uma tabela simplificada e adicione as tabelas GTO de pré-flop quando o aumentar-ou-foldar já for automático.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-09-17",
-  masterUpdated: "2026-09-24",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🂡",
@@ -82,7 +82,7 @@ Organizadas em tiers, as boas mãos iniciais do poker ficam assim:
 |------|----------|----------------|
 | Premium | AA, KK, QQ, JJ, AKs, AKo | Aumente de qualquer posição, re-aumente de forma agressiva |
 | Forte | TT–88, AQ, AJs, ATs, KQs | Aumente da maioria das posições, pise no freio contra 3-bets pesados |
-| Especulativa | Pares pequenos (77–22), suited connectors (JTs, T9s, 98s), ases suited (A2s–A9s) | Só em posição tardia — precisam de flops baratos e de posição |
+| Especulativa | Pares pequenos (77–22), suited connectors (JTs, T9s, 98s), ases suited (A2s–A9s) | Sobretudo em posição tardia — precisam de flops baratos e de posição (um range completo de UTG mantém o 77) |
 | ==r:Lixo== | Ases offsuit fracos (A4o), rei-carta baixa (K3o), tralha offsuit baixa | ==r:Folde no pré-flop — isso custa fichas toda sessão== |
 
 :::tip[O tier é só metade da resposta. Uma mão especulativa é "boa" no button e ruim no under the gun — e é por isso que a tabela de verdade é organizada por posição, não por mão.]:::
@@ -139,13 +139,13 @@ O button é o melhor assento do poker. ==g:Você age por último no flop, no tur
 - **Suited connectors (T9s, 98s, 87s)** — mãos baratas de altas implied odds
 - **Broadway offsuit mais fraco (KTo, QJo)** — só em posição tardia, nunca cedo
 
-Regra-chave: ==essas mãos especulativas precisam de posição pra dar lucro==. Se um jogador do UTG aumenta na sua frente, a maioria delas vai direto pro muck — a vantagem some sem posição.
+Regra-chave: ==essas mãos especulativas precisam de posição pra dar lucro==. Se um jogador do UTG aumenta na sua frente, a maioria delas vai direto pro muck — você estaria pagando um raise pra jogar uma mão especulativa contra um range forte, e o flop barato de que ela precisa já não existe.
 
 ---
 
 ## Mãos iniciais no 6-max: como a tabela muda
 
-A maioria dos cash games online é 6-max, e a tabela desloca numa direção só: ==mais ampla==. Remova os três assentos mais fechados de uma mesa 9-max e cada posição restante efetivamente "sobe". O primeiro jogador a agir no 6-max está abrindo contra cinco adversários, não oito — então ==g:o UTG no 6-max joga mais ou menos como o MP no 9-max== (~15–17% em vez de ~13%).
+A maioria dos cash games online é 6-max, e a tabela desloca numa direção só: ==mais ampla==. Remova os três assentos mais fechados de uma mesa 9-max e o novo primeiro assento efetivamente "sobe" — os assentos finais continuam com os mesmos jogadores atrás deles, mas a mesa como um todo joga mais amplo. O primeiro jogador a agir no 6-max está abrindo contra cinco adversários, não oito — então ==g:o UTG no 6-max joga mais ou menos como o MP no 9-max== (~15–17% em vez de ~13%).
 
 :::compare
 9-Max (Full Ring) | 6-Max
@@ -206,7 +206,7 @@ As piores mãos iniciais do poker não são tralha aleatória como 7-2 — ningu
 
 O ==r:erro mais caro que iniciantes cometem é pagar aumentos com ases fracos== como o A♣ 4♦ da introdução. Quando você finalmente acerta seu par de ases, muitas vezes você é o segundo melhor contra A♠ K♦ ou A♥ Q♦ — e perde um pote grande convencido de que tem top pair. E você tem. Eles também, com um kicker melhor.
 
-(E a mais famosa das piores mãos do poker? 7-2 offsuit — mais sobre isso, e a "regra do 7-2", no FAQ abaixo.)
+(E a mão que costuma ser chamada de pior do poker? 7-2 offsuit, embora pela equity bruta contra uma mão aleatória o 3-2 offsuit seja um pouco mais fraco, cerca de 32% contra 35%. Mais sobre o 7-2, e a "regra do 7-2", no FAQ abaixo.)
 
 ---
 

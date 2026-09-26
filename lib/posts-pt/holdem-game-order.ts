@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Uma mão de Texas Hold'em segue esta ordem: postar os blinds → receber duas cartas fechadas → pré-flop → flop (3 cartas) → turn (1 carta) → river (1 carta) → showdown, com quatro rodadas de apostas no total.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-09-22",
-  masterUpdated: "2026-09-22",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎬",
@@ -136,7 +136,7 @@ Regras do showdown:
 - Cada jogador forma sua **melhor mão de cinco cartas** com as duas cartas fechadas e as cinco comunitárias.
 - Você não é obrigado a usar as duas cartas da mão — pode usar uma só, ou até jogar só com a mesa (zero), se essa for sua melhor combinação.
 - Quem fez a última ação agressiva (aposta ou aumento) mostra primeiro; no river com checks, mostra primeiro o **primeiro jogador ativo** à esquerda do botão.
-- Quem perdeu pode simplesmente dar **muck** (foldar sem mostrar) — exceto num all-in de torneio: quando um jogador está all-in e a ação terminou, todas as mãos são viradas para cima (regra 16 da TDA · regra 70 do regulamento de torneios da WSOP).
+- Quem perdeu pode simplesmente dar **muck** (foldar sem mostrar) — exceto num all-in de torneio: quando um jogador está all-in e a ação terminou, todas as mãos são viradas para cima (regra 16 da TDA, edição de 2024 · regra 70 do regulamento de torneios da WSOP).
 - Mãos idênticas **dividem o pote** ("chop") em partes iguais.
 
 Quem é obrigado a mostrar primeiro, quando você pode dar muck e a etiqueta em torno do slow roll estão explicados por completo nas [regras do showdown](/pt/blog/holdem-showdown-rules).
@@ -352,7 +352,7 @@ A. O primeiro jogador ainda na mão à esquerda do botão — numa mesa cheia, o
 
 **Q. Quem mostra as cartas primeiro no showdown?**
 
-A. Quem fez a última ação agressiva — a última aposta ou aumento no river — tem de mostrar primeiro. Se o river passou em check sem nenhuma aposta, mostra primeiro o jogador ativo mais à esquerda do botão, e os demais seguem em sentido horário. Quem sabe que está batido pode dar muck em vez de mostrar — a menos que alguém esteja all-in num torneio, quando todas as mãos são mostradas (regra 16 da TDA).
+A. Quem fez a última ação agressiva — a última aposta ou aumento no river — tem de mostrar primeiro. Se o river passou em check sem nenhuma aposta, mostra primeiro o jogador ativo mais à esquerda do botão, e os demais seguem em sentido horário. Quem sabe que está batido pode dar muck em vez de mostrar — a menos que alguém esteja all-in num torneio, quando todas as mãos são mostradas (regra 16 da TDA, edição de 2024).
 
 **Q. Qual é a diferença entre pré-flop e flop?**
 

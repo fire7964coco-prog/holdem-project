@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Odds implícitas são as fichas extras que você espera ganhar nas próximas streets quando o seu projeto acerta. Elas deixam você pagar com lucro um projeto que só as pot odds mandariam foldar — mas só se os stacks forem profundos e o adversário realmente for pagar você.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-24",
-  masterUpdated: "2026-09-24",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "💰",
@@ -87,7 +87,7 @@ Você tem ==b:A♥ K♥== num board ==Q♥ 7♥ 2♣ 3♠== — o nut flush draw
 - **Pot odds primeiro:** você está recebendo 150 para 50, ou 3 para 1, então precisa de **25%** de equity. Seu flush acerta no river só ==r:19,6%== das vezes (9 outs ÷ 46 cartas não vistas — contamos de propósito só os outs de flush; emparelhar o ás ou o rei não garante que você esteja na frente, então as overcards não são outs limpos). 19,6% é menos que 25%, então o preço imediato manda ==r:foldar.==
 - **Agora as odds implícitas:** x = (call ÷ hit%) − (pote + call) = (50 ÷ 0,196) − (150 + 50) = 255 − 200 = ==g:cerca de $55.== Esse é o extra que você precisa ganhar no river quando o seu flush entra.
 
-Então a pergunta não é "devo pagar $50?" É "**quando um naipe cai, consigo ganhar pelo menos $55 a mais?**" Contra um adversário com stack profundo que vai pagar uma aposta no river com top pair ou um set, isso é fácil — você paga. Contra alguém com $40 atrás, ou numa mesa em que uma quarta carta do naipe mata a ação dele, você não consegue — então você folda.
+Então a pergunta não é "devo pagar $50?" É "**quando cai uma carta de copas, consigo ganhar pelo menos $55 a mais?**" Contra um adversário com stack profundo que vai pagar uma aposta no river com top pair, isso é fácil — você paga. Contra alguém com $40 atrás, ou alguém que trava no instante em que uma terceira copas cai na mesa, você não consegue — então você folda. (Contra um set é ainda mais difícil: o 2♥ e o 3♥ pareiam a mesa e podem completar o full house do set, o que deixa 7 outs limpos e um x de cerca de $129.)
 
 :::note
 O mesmo call de $50, decisões opostas — e as cartas nunca mudaram. O que mudou foi quanto dinheiro sobra para ganhar. Isso é odds implícitas em uma frase.
@@ -110,7 +110,7 @@ O mesmo call de $50, decisões opostas — e as cartas nunca mudaram. O que mudo
 
 </div>
 
-Duas forças definem o número. **Frequência:** um gutshot acerta metade das vezes de um flush draw, então precisa que o pagamento seja mais ou menos duas vezes maior para empatar. **Disfarce:** um set escondido recebe muito mais que um flush num board monocolor, porque o adversário não consegue te colocar nele — e é por isso que os sets toleram sua baixa taxa de acerto. O [nut flush draw vale muito mais que um baby flush draw](/pt/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") pelo mesmo motivo: ele recebe *e* não perde quando acerta.
+Duas forças definem o número. **Frequência:** um gutshot acerta metade das vezes de um flush draw, então precisa que o pagamento seja mais ou menos duas vezes maior para empatar. **Disfarce:** um set escondido recebe muito mais que um flush num board monocolor, porque o adversário não consegue te colocar nele — e é por isso que os sets toleram sua baixa taxa de acerto. O [nut flush draw vale muito mais que um baby flush draw](/pt/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") pelo mesmo motivo: ele recebe *e* nunca perde para um flush maior quando acerta.
 
 ---
 
@@ -145,7 +145,7 @@ Aumenta o valor de um projeto | Diminui o valor de um projeto
 
 Três spots clássicos de reverse implied:
 
-- **O baby flush.** Você tem ==b:7♦ 6♦== e a mesa traz um terceiro ouros. Você faz seu flush — e paga um stack para o cara que tem ==b:A♦== com o nut flush. Sua carta "vencedora" te custou dinheiro.
+- **O baby flush.** Você tem ==b:7♦ 6♦== e a mesa traz um terceiro ouros. Você faz seu flush — e paga um stack para o cara que tem ==b:A♦== com um segundo ouros — o nut flush. Sua carta "vencedora" te custou dinheiro.
 - **A ponta baixa de uma sequência.** Você tem ==b:6♦ 5♦== num board ==b:9♥ 8♣ 2♠==, e um 7 no turn faz sua 5-6-7-8-9. Mas é a ponta *baixa* — qualquer um com J-10 agora tem 7-8-9-10-==g:J==, uma sequência mais alta, e é justamente a carta que você precisava que paga a mão dele.
 - **O top pair dominado.** Você pareia seu rei com um kicker fraco e continua pagando — direto para o A-K de alguém.
 
@@ -161,9 +161,9 @@ Fique atento a estes leaks:
 
 :::card
 🚫 | Vilão está all-in | Sem próximas streets não há dinheiro futuro vindo dele. No heads-up, odds implícitas = 0 — use só as pot odds
-📉 | Stacks curtos atrás | Se só sobra meio pote para ganhar, "vou receber no river" é fantasia
+📉 | Stacks curtos atrás | Se o que sobra atrás é menor que o x de que você precisa, "vou receber no river" é fantasia
 🙅 | Um adversário "que não paga" | Um nit que só aposta os nuts não vai pagar seu flush. Suas odds implícitas vivem e morrem na disposição dele de pagar
-🃏 | Uma mesa assustadora | Se a carta que completa seu projeto também congela a ação (quatro cartas do mesmo naipe na mesa, mesa pareada), ninguém te paga
+🃏 | Uma mesa assustadora | Se a carta que completa seu projeto também congela a ação (quatro cartas do mesmo naipe na mesa, mesa pareada), menos mãos te pagam — e as que pagam podem te bater
 🎣 | Assumir que vão dar o stack | "Pode entrar e eles podem dar o stack" são dois palpites empilhados em cima de um fold. Estime de forma conservadora
 :::
 
@@ -192,7 +192,7 @@ A. A diferença entre pot odds e odds implícitas é a certeza: o pote atual e o
 
 **Q. Quando você deve usar as odds implícitas?**
 
-A. Comece pelas pot odds. Se a sua equity já supera o preço imediato, é só pagar — não precisa de odds implícitas. Recorra a elas só quando o seu projeto fica *pouco abaixo* daquele preço e os stacks atrás são fundos o bastante para que acertar valha bem mais — de preferência um projeto forte, disfarçado ou de nuts, contra um adversário que paga. Se o projeto está longe do preço, ou se o adversário está all-in ou com stack curto, as odds implícitas não salvam o call.
+A. Comece pelas pot odds. Se a sua equity já supera o preço imediato, é só pagar — não precisa de odds implícitas. Recorra a elas quando o seu projeto fica abaixo daquele preço e os stacks atrás são fundos o bastante para que acertar renda mais que o x da fórmula — quanto mais longe do preço o projeto fica, maior o x. O ideal é um projeto forte, disfarçado ou de nuts, contra um adversário que paga. Se os stacks atrás não cobrem o x — um adversário em heads-up que está all-in ou com stack curto, por exemplo —, as odds implícitas não salvam o call.
 
 **Q. O que são reverse implied odds?**
 
@@ -200,7 +200,7 @@ A. As reverse implied odds são as fichas extras que um projeto completo te cust
 
 **Q. O que são boas odds implícitas — quanto você precisa?**
 
-A. Depende do seu projeto. Flush draws e sequências abertas dos dois lados precisam de mais ou menos 8–10× o call atrás em stacks; set mining precisa de cerca de 15–20× (a "regra dos 5%"). Quanto mais difícil de acertar for o projeto, mais profundos os stacks precisam ser para justificar o call.
+A. Depende do seu projeto. Flush draws e sequências abertas dos dois lados precisam de mais ou menos 8–10× o call atrás em stacks; set mining precisa de cerca de 15–20× como faixa prática, e a "regra dos 5%", mais rígida, pede 20×. Quanto mais difícil de acertar for o projeto, mais profundos os stacks precisam ser para justificar o call.
 
 **Q. As odds implícitas valem quando o adversário está all-in?**
 

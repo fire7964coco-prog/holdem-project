@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "odds",
   date: "2026-07-08",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-24",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🧮",
@@ -49,11 +49,11 @@ Si te imaginas un conteo corrido high-low de las películas, olvídalo — muere
 
 :::card
 🔀 | La baraja se reinicia cada mano | El conteo del blackjack necesita un zapato repartido a lo largo de decenas de manos para que la información se acumule. El póker rebaraja en cada mano, así que nada se arrastra — cada mano arranca desde una baraja completa y aleatoria
-🙈 | Se ven muy pocas cartas | Las cartas tapadas de cada jugador están boca abajo. Solo llegas a ver la mesa compartida — un puñado de cartas — nunca las suficientes para rastrear la composición de la baraja
+🙈 | Se ven muy pocas cartas | Las cartas tapadas de cada jugador están boca abajo. Ves tus dos cartas, la mesa compartida y lo que se enseñe en el showdown — un puñado de cartas — nunca las suficientes para rastrear la composición de la baraja
 👥 | Juegas contra rivales, no contra la casa | No hay un repartidor fijo sobre el que sacar ventaja. Una "baraja rica en cartas altas" no significa nada cuando un par de ases (AA) es premium igualmente — ganas teniendo una mejor mano o tomando una mejor decisión, no por un conteo favorable
 :::
 
-En el blackjack, una baraja cargada de cartas altas te favorece matemáticamente, así que apuestas fuerte cuando el conteo es bueno. En el póker no existe una "baraja favorable" equivalente — la ventaja viene por completo de jugar contra los *jugadores*.
+En el blackjack, una baraja cargada de cartas altas te favorece matemáticamente, así que apuestas fuerte cuando el conteo es bueno. En el póker no existe una "baraja favorable" equivalente — la ventaja viene de jugar contra los *jugadores* y con las cartas que puedes ver ahora mismo: outs, bloqueadores, la mesa.
 
 ---
 
@@ -67,7 +67,7 @@ Tú contra la casa, reglas fijas | Tú contra otros jugadores
 Un zapato a lo largo de muchas manos | Se rebaraja cada mano
 Rastrear el balance alto/bajo de la baraja | Nada que rastrear entre manos
 Apostar fuerte cuando la baraja te favorece | No existe "baraja favorable"
-Contar puede hacer que te veten | Contar se da por hecho y es legal
+Contar puede hacer que te veten | Contar outs de cabeza es juego corriente
 :::
 
 El blackjack premia recordar lo que ya salió; el póker premia leer lo que ves *ahora mismo* — la mesa, la acción y las cartas que tu propia mano le quita al rango del rival.
@@ -82,7 +82,7 @@ El blackjack premia recordar lo que ya salió; el póker premia leer lo que ves 
 
 Un ==out== es cualquier carta no vista que convierte tu mano en una probable ganadora. Un proyecto de color tiene ==9 outs== (13 de un palo menos las 4 que ves) — las cartas de ese palo que hay en la mesa ya están restadas dentro de esos 9, así que no las taches otra vez como "cartas muertas". Convierte los outs en una probabilidad aproximada de ligar con la ==regla del 2 y 4==: multiplica por 4 con dos cartas por venir, por 2 con una.
 
-Un proyecto de color de 9 outs liga para el river alrededor del ==g:35%== de las veces (9 × 4 = 36% como estimación rápida — la cifra real es 35.0%). Esa cifra cuenta ambas cartas restantes, así que solo decide el call cuando de verdad ves las dos: estás all-in en el flop y no queda nada más que apostar. Si hay una apuesta en el flop que tendrás que volver a pagar en el turn, cuenta solo la siguiente carta: ==9 ÷ 47 = 19.1%==. El método completo — outs sucias, proyectos combinados, porcentajes exactos — está en la [guía para contar outs](/es/blog/holdem-outs), y las odds detrás de cada proyecto viven en la [tabla de probabilidades](/es/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
+Un proyecto de color de 9 outs liga para el river alrededor del ==g:35%== de las veces (9 × 4 = 36% como estimación rápida — la cifra real es 35.0%). Esa cifra cuenta ambas cartas restantes, así que solo decide el call cuando de verdad ves las dos — sin más apuestas por delante, como cuando estás all-in o has pagado un all-in. Si hay una apuesta en el flop que tendrás que volver a pagar en el turn, cuenta solo la siguiente carta: ==9 ÷ 47 = 19.1%==. El método completo — outs sucias, proyectos combinados, porcentajes exactos — está en la [guía para contar outs](/es/blog/holdem-outs), y las odds detrás de cada proyecto viven en la [tabla de probabilidades](/es/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
 ### Bloqueadores (eliminación de cartas)
 
@@ -90,11 +90,11 @@ Un ==bloqueador== es una carta de tu mano que reduce las combinaciones que puede
 
 ![Infografía de A♠ J♦ en un flop de tres picas K♠ 9♠ 4♠ — tener el as de picas bloquea el color máximo](/images/holdem-card-counting-blocker.webp "Tener el A♠ en una mesa de tres picas significa que ningún rival puede llevar el color máximo — eso es eliminación de cartas en acción")
 
-Los bloqueadores también funcionan parcialmente. En una mesa ==b:Q-J-9==, la escalera máxima es K-10. Normalmente hay 16 formas de llevar K-10 (4 reyes × 4 dieces); si tú tienes un rey o un diez, la reduces a ==12 combinaciones==, así que la escalera máxima es un 25% menos probable en su rango. Este es el núcleo de la selección moderna de faroles — más en la [guía de 3-bet y bloqueadores](/es/blog/holdem-3bet).
+Los bloqueadores también funcionan parcialmente. En una mesa ==b:Q-J-9==, la escalera máxima es K-10. Normalmente hay 16 formas de llevar K-10 (4 reyes × 4 dieces); si tú tienes un rey o un diez, la reduces a ==12 combinaciones==, así que su rango tiene un 25% menos de combinaciones de escalera máxima. Este es el núcleo de la selección moderna de faroles — más en la [guía de 3-bet y bloqueadores](/es/blog/holdem-3bet).
 
 ### Eliminación de cartas y cartas muertas
 
-Cada carta que ves elimina posibilidades. En el Hold'em un out no puede estar sobre la mesa — si lo estuviera, tu mano ya estaría hecha — así que las ==cartas muertas== que hay que rastrear son las que se ven *fuera* de la mesa: una carta que se enseña por error, una mano que se muestra antes de irse al muck, el fold de un vecino que alcanzaste a ver. Cada una que has visto es un out que ya no tienes. Ajustar por ellas es una costumbre constante y silenciosa que los buenos jugadores mantienen en cada calle. Es contar, solo que no del tipo que necesita un total corrido.
+Cada carta que ves elimina posibilidades. En el Hold'em un out no puede estar sobre la mesa — si lo estuviera, tu mano ya estaría hecha — así que las ==cartas muertas== que hay que rastrear son las que se ven *fuera* de la mesa: una carta que se enseña por error, una mano que se muestra antes de irse al muck, el fold de un vecino que alcanzaste a ver. Cada out que esté entre ellas es un out que ya no tienes; cualquier otra carta expuesta solo encoge la baraja no vista. Ajustar por ellas es una costumbre constante y silenciosa que los buenos jugadores mantienen en cada calle. Es contar, solo que no del tipo que necesita un total corrido.
 
 ---
 
@@ -125,7 +125,7 @@ En el Hold'em las únicas cartas que se reparten boca arriba son las cinco carta
 **No necesitas un sistema — solo tres hábitos que convierten las cartas visibles en mejores decisiones.**
 
 :::steps
-Cuenta tus outs en cada proyecto | En cuanto tengas un proyecto, cuenta las cartas que lo completan y multiplica — ×4 solo cuando vienen las dos cartas (estás all-in, o el turn y el river salen los dos gratis), y si no ×2 solo por la siguiente carta. Iguala cuando esa probabilidad supera el precio
+Cuenta tus outs en cada proyecto | En cuanto tengas un proyecto, cuenta las cartas que lo completan y multiplica — ×4 solo cuando vienen las dos cartas (estás all-in, o el turn y el river salen los dos gratis), y si no ×2 solo por la siguiente carta. Iguala cuando esa probabilidad — solo con outs limpias — supera el precio, o cuando las implied odds cubren la diferencia
 Pregúntate qué bloquea tu mano | Antes de farolear, comprueba si llevas una carta que vuelve imposible o menos probable su mano más fuerte para pagar
 Ajusta por las cartas muertas | Resta cualquier out que hayas visto expuesto fuera de la mesa — una carta que se enseñó por error, una mano mostrada, un fold que alcanzaste a ver. Una carta expuesta ya no puede salir en el board — pero solo cuentan las vistas por accidente: intentar ver a propósito las cartas de otro jugador no forma parte de este método — solo cuenta la exposición accidental
 :::
@@ -155,7 +155,7 @@ A. El conteo de baraja estilo blackjack no — la baraja se reinicia cada mano y
 
 **Q. ¿Por qué funciona el conteo de cartas en el blackjack pero no en el póker?**
 
-A. El blackjack es tú contra un repartidor de reglas fijas usando un zapato a lo largo de muchas manos, así que una baraja rica en cartas altas te favorece matemáticamente y apuestas en consecuencia. El póker rebaraja en cada mano y te enfrenta a otros jugadores, así que no hay "baraja favorable" que rastrear — la ventaja viene de leer a los rivales.
+A. El blackjack es tú contra un repartidor de reglas fijas usando un zapato a lo largo de muchas manos, así que una baraja rica en cartas altas te favorece matemáticamente y apuestas en consecuencia. El póker rebaraja en cada mano y te enfrenta a otros jugadores, así que no hay "baraja favorable" que rastrear — la ventaja viene de leer a los rivales y las cartas que puedes ver: outs, bloqueadores, la mesa.
 
 **Q. ¿Cuál es el equivalente del conteo de cartas en el póker?**
 

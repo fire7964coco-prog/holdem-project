@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Limp no poker: por que 'só pagar' o pré-flop quase sempre te custa fichas",
   seoTitle: "Por que 'só pagar' o pré-flop te sangra — Limp no poker",
   desc: "Limpar é só pagar o big blind no pré-flop. Por que quase sempre é erro, os spots em que é ok de verdade, e como bons jogadores punem quem limpa.",
-  tldr: "Limpar é entrar num pote no pré-flop só pagando o big blind em vez de aumentar ou foldar. Open-limpar (ser o primeiro a entrar) é quase sempre um erro — você não consegue ganhar o pote no pré-flop, abre mão da iniciativa, e bons jogadores te punem. Mas limpar nem sempre é errado: completar o small blind, over-limpar mãos especulativas atrás de outros limpers, e alguns spots ao vivo e de torneio com stack curto são exceções legítimas.",
+  tldr: "Limpar é entrar num pote no pré-flop só pagando o big blind em vez de aumentar ou foldar. Open-limpar (ser o primeiro a entrar) é quase sempre um erro — um limp não consegue ganhar os blinds sem disputa, você abre mão da iniciativa, e bons jogadores te punem. Mas limpar nem sempre é errado: completar o small blind, over-limpar mãos especulativas atrás de outros limpers, e alguns spots ao vivo e de torneio com stack curto são exceções legítimas.",
   category: "strategy",
   date: "2026-07-05",
-  updated: "2026-09-22",
-  masterUpdated: "2026-09-22",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🚶",
@@ -27,7 +27,7 @@ Um **limp** é quando você entra num pote antes do flop só *pagando* o big bli
 
 :::stripe
 Pagar o big blind | O que é um limp (sem aumento)
-0% | Sua chance de ganhar o pote no pré-flop
+0% | Chance de um limp ganhar os blinds sem disputa
 Open-limp | A versão que é quase sempre errada
 Over-limp / SB | Os spots em que é ok de verdade
 :::
@@ -38,7 +38,7 @@ Over-limp / SB | Os spots em que é ok de verdade
 
 **Limpar é entrar no pote no pré-flop pagando o valor exato do big blind — sem aumento.** Você coloca o mínimo para ver um flop. E o mais importante: limpar só se aplica quando *ninguém aumentou ainda*. Se alguém já aumentou e você iguala, isso é um **call** (pagar), não um limp. A palavra descreve especificamente pegar o caminho passivo e mais barato para dentro de um pote não aumentado.
 
-Vale separar dois termos que as pessoas confundem. Um **limper** é quem entra em potes não aumentados pagando o big blind. Uma **calling station** é um jogador que paga apostas demais no pós-flop, no flop, no turn e no river. Muitas vezes descrevem o mesmo jogador loose-passivo, mas são hábitos diferentes — um é sobre como você *entra* nos potes, o outro sobre como você *continua* neles. Este glossário de [termos de poker](/pt/blog/holdem-glossary) resolve o resto do vocabulário se alguma coisa te confundir.
+Vale separar dois termos que as pessoas confundem. Um **limper** é quem entra em potes não aumentados pagando o big blind. Uma **calling station** é um jogador que paga demais e raramente aumenta ou folda — um hábito que aparece mais no flop, no turn e no river. Muitas vezes descrevem o mesmo jogador loose-passivo, mas enfatizam hábitos diferentes — um é sobre como você *entra* nos potes, o outro sobretudo sobre como você *continua* neles. Este glossário de [termos de poker](/pt/blog/holdem-glossary) resolve o resto do vocabulário se alguma coisa te confundir.
 
 ---
 
@@ -64,7 +64,7 @@ Essa distinção importa porque a maior parte do conselho "limpar é terrível" 
 
 Quando você open-limpa, abre mão de uma quantidade surpreendente de coisas. Eis exatamente o quê:
 
-1. **Você não consegue ganhar o pote no pré-flop.** Esse é o principal. Quando você *aumenta* primeiro a entrar, todo mundo pode foldar e você embolsa os blinds sem disputa — dinheiro de graça, numa fatia considerável das vezes. Quando você limpa, esse número é **zero**. Você garantiu que precisa formar uma mão ou ganhar depois; jogou fora o jeito mais limpo de vencer.
+1. **Um limp não consegue ganhar os blinds sem disputa.** Esse é o principal. Quando você *aumenta* primeiro a entrar, todo mundo pode foldar e você embolsa os blinds sem disputa — dinheiro de graça, numa fatia considerável das vezes. Quando você limpa, esse número é **zero**. Você garantiu que precisa formar uma mão ou ganhar depois; jogou fora o jeito mais limpo de vencer.
 2. **Você entrega a iniciativa.** Quem aumentou no pré-flop vira o agressor — ele pode disparar uma [continuation bet](/pt/blog/holdem-continuation-bet) no flop e representar uma mão forte, muitas vezes levando o pote com nada. Limpe, e você entregou essa narrativa para outra pessoa. Agora você reage em vez de liderar.
 3. **Você monta um pote multiway inflado — muitas vezes fora de posição.** Limpar convida mais pagadores e deixa o big blind entrar barato. Quanto mais jogadores veem o flop, menos a sua mão vale, e se você limpou de posição inicial vai estar *fora de posição* contra quase toda a mesa em toda street, e sem iniciativa. Essa é a pior cadeira da casa.
 4. **Você se torna legível — e explorável.** Limpers habituais aparecem com um range limitado e transparente. Bons jogadores atacam isso sem trégua (mais sobre isso abaixo), então você acaba em spots difíceis fora de posição repetidas vezes. Como diz o ditado antigo, limpers crônicos "ganham potes pequenos e perdem os grandes".
@@ -169,17 +169,17 @@ A. Em mesa passiva, sim — num pote sem aumento, completar o small blind é um 
 
 **Q. Qual a diferença entre um limper e uma calling station?**
 
-A. Um limper entra em potes não aumentados só pagando o big blind antes do flop — é sobre como ele *entra* nos potes. Uma calling station paga apostas demais depois do flop, no turn e no river — é sobre como ele *continua*. O mesmo jogador loose-passivo muitas vezes faz os dois, mas os termos descrevem hábitos diferentes e não deveriam ser usados como sinônimos.
+A. Um limper entra em potes não aumentados só pagando o big blind antes do flop — é sobre como ele *entra* nos potes. Uma calling station paga demais e raramente aumenta ou folda, em qualquer street — o rótulo é sobretudo sobre como ele *continua*, especialmente depois do flop. O mesmo jogador loose-passivo muitas vezes faz os dois, mas os termos enfatizam hábitos diferentes e não deveriam ser usados como sinônimos.
 
 **Q. Como se chama um jogador que limpa demais?**
 
-A. Normalmente de "fish" — o termo geral para um jogador fraco e perdedor — ou de "donk" (joga mal). ("Calling station" costuma cair no mesmo jogador, mas esse termo é sobre pagar apostas demais no *pós-flop*, não sobre como ele entra nos potes.) O open-limp habitual é um dos tells mais claros de jogador inexperiente, e é exatamente por isso que os jogadores mais fortes atacam limpers com aumentos de isolamento. Se você prefere não carregar o rótulo, use aumentar-ou-foldar como padrão.
+A. Normalmente de "fish" — o termo geral para um jogador fraco e perdedor — ou de "donk" (joga mal). ("Calling station" costuma cair no mesmo jogador, mas esse termo cobre pagar demais em qualquer street, não especificamente o hábito de open-limpar.) O open-limp habitual é um dos tells mais claros de jogador inexperiente, e é exatamente por isso que os jogadores mais fortes atacam limpers com aumentos de isolamento. Se você prefere não carregar o rótulo, use aumentar-ou-foldar como padrão.
 
 ---
 
 ## As 3 coisas para lembrar
 
-1. **Limpar é pagar o big blind em vez de aumentar** — e open-limpar, ser o primeiro a entrar, é quase sempre um erro: você não consegue ganhar o pote no pré-flop, abre mão da iniciativa, e se marca como um alvo fácil.
+1. **Limpar é pagar o big blind em vez de aumentar** — e open-limpar, ser o primeiro a entrar, é quase sempre um erro: um limp não consegue ganhar os blinds sem disputa, você abre mão da iniciativa, e se marca como um alvo fácil.
 2. **Mas não é *sempre* errado.** Completar o small blind, over-limpar mãos especulativas atrás de outros limpers, e spots ao vivo passivos ou de torneio com stack curto são exceções legítimas. O dogmático "nunca limpe" é um exagero.
 3. **Padrão é aumentar-ou-foldar.** Reserve o limp para aqueles spots específicos, e você vai parar de dar a jogadores fortes chances de graça de te isolar e explorar.
 

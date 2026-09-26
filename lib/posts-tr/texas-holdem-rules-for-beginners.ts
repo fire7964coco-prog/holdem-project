@@ -186,7 +186,7 @@ Küçük bir ev cash game'i oynuyorsan, herkesin kaybetmeye gönül rahatlığı
 
 ==r:İnsanları geren bahislerle başlama.== Gergin yeni başlayanlar daha hızlı öğrenmez. Sadece fazla pas geçer, duygusal call yapar ya da kurallar üzerine tartışır.
 
-Şunu da bil: bir **turnuva** buy-in'i cash game'den farklı çalışır — tek sabit bir giriş ücreti ödersin, paraya çevrilemeyen belirli bir stack alırsın ve bir oyuncu tüm çipleri toplayana kadar oynanır. Hangisini istediğinden emin değilsen önce [cash game mi turnuva mı](/tr/blog/holdem-tournament-vs-cash-game) yazısını oku.
+Şunu da bil: bir **turnuva** buy-in'i cash game'den farklı çalışır — sabit bir giriş ücreti ödersin, paraya çevrilemeyen belirli bir stack alırsın ve bir oyuncu tüm çipleri toplayana kadar oynanır (re-entry turnuvalarında elendikten sonra yeniden giriş yapabilirsin). Hangisini istediğinden emin değilsen önce [cash game mi turnuva mı](/tr/blog/holdem-tournament-vs-cash-game) yazısını oku.
 
 Online pratik için, aksiyon sırasını düşünmeden anlatabilene kadar ücretsiz masaları kullan. Sonra yavaşça yüksel.
 
@@ -194,7 +194,7 @@ Online pratik için, aksiyon sırasını düşünmeden anlatabilene kadar ücret
 
 ## No-Limit, Limit mi Pot-Limit mi? Hangi Texas Hold'em'i oynuyorsun?
 
-İnsanlar "Texas Hold'em" dediğinde neredeyse her zaman **No-Limit Hold'em (NLHE)** kastederler — WSOP Ana Turnuvası'nda ve neredeyse her ev oyununda kullanılan format. Dağıtım, blindler ve el sıralaması üç formatta da aynıdır. Değişen tek şey **ne kadar bahis yapabileceğindir.**
+İnsanlar "Texas Hold'em" dediğinde neredeyse her zaman **No-Limit Hold'em (NLHE)** kastederler — WSOP Ana Turnuvası'nda ve neredeyse her ev oyununda kullanılan format. Dağıtım ve el sıralaması üç formatta da aynıdır. Değişen asıl şey **ne kadar bahis yapabileceğindir** — Fixed-Limit ayrıca genelde bir turdaki yükseltme sayısını da sınırlar (WSOP'ta bir bahis artı dört yükseltme).
 
 | Format | Ne kadar bahis yapabilirsin? | Nerede görürsün |
 |--------|-----------------------|---------------------|
@@ -299,7 +299,7 @@ Pot odds'un **$120'ye $20**, yani **6'ya 1**. Bu, bu call'ın kârlı olması i�
 
 ### 2 ve 4 kuralı — anında olasılık kestirmesi
 
-Draw eli tuttuğunda (örn. floşa dört kart), **out'larını** say — elini tamamlayacak kartlar.
+Draw eli tuttuğunda (örn. floşa dört kart), **out'larını** say — draw'ını muhtemel kazanan bir ele çevirecek kartlar.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

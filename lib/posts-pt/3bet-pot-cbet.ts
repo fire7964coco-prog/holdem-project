@@ -6,11 +6,11 @@ export const POST: Post = {
   title: "A-K-2: c-bet com todo o range",
   seoTitle: "C-bet em pote de 3-bet: 100% de apostas no A-K-2",
   desc: "No A-K-2 em pote de 3-bet, os 63 combos do BB apostam. Veja como SPR, ranges pré-flop e ausência de AA e KK no BTN mudam o spot.",
-  tldr: "No A♦K♠2♥ em pote de 3-bet, o big blind aposta em 100%. O check fica em 0,0%: nenhum dos 63 combos. Nos sete spots anteriores, o padrão era dar check entre 76,2% e 99,9%. A principal mudança está na ação pré-flop: o BB deu 3-bet em vez de pagar e mantém as mãos do topo neste flop, enquanto AA e KK do botão saíram do range de call por darem 4-bet. Com SPR de 4,0, há menos espaço para adiar a construção do pote.",
+  tldr: "No A♦K♠2♥ em pote de 3-bet, o big blind aposta com o range inteiro: o check arredonda para 0,0%, e nenhum dos 63 combos dá check nem em 0,1% das vezes. Nos sete spots anteriores, o padrão era dar check entre 76,2% e 99,9%. A principal mudança está na ação pré-flop: o BB deu 3-bet em vez de pagar e mantém as mãos do topo neste flop, enquanto AA e KK do botão saíram do range de call por darem 4-bet. Com SPR de 4,0, há menos espaço para adiar a construção do pote.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-15",
-  masterUpdated: "2026-09-02",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   readTime: "12 min",
   emoji: "🔥",
   image: "/images/gto-3bp-ace-king-oop-pt.webp",
@@ -20,7 +20,7 @@ export const POST: Post = {
   content: `
 Nos sete spots anteriores, a resposta do big blind era quase sempre dar check. Mesmo no [flop 9-8-7](/pt/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-pt.webp"), onde sair apostando tinha mais importância, ele apostava em apenas 23,7%. Nos demais, dava check entre 88,8% e 99,9%.
 
-Aqui acontece o contrário: **o big blind aposta com o range inteiro**, todos os 63 combos, todas as vezes.
+Aqui acontece o contrário: **o big blind aposta com o range inteiro**, todos os 63 combos, cada um em pelo menos 99,9% das vezes.
 
 A principal mudança está na ação pré-flop: o big blind **deu 3-bet** em vez de pagar. O pote passou de 5,5bb para 22,5bb. ⚠ O board também mudou: o spot ① era A♥7♦2♣, e este é A♦K♠2♥. Portanto, não é uma comparação controlada em que só o pré-flop muda. Essa diferença transforma a estratégia no flop. Todos os números abaixo vêm do [solver de poker gratuito](/pt/solver) do HoldemMaster.
 
@@ -54,7 +54,7 @@ O pote de 22,5bb vem de ==11 da 3-bet + 11 do call + 0,5 do small blind que fold
 
 ## A frequência de check é mesmo 0%?
 
-**0,0%.** A coluna de combos também mostra 0,0: nenhum dos 63 combos dá check, sem uma pequena parcela escondida pelo arredondamento. As apostas se dividem entre dois tamanhos: 57,8% usam 7,4bb e 42,2% usam 14,9bb. Em cada um dos sete potes com um único aumento pré-flop anteriores, o padrão do big blind era o oposto.
+**0,0% na tela.** O resultado bruto guarda um resíduo: 41 dos 63 combos têm uma fração mínima de check, a maior em K♥K♦, com 0,09%, e todas juntas somam menos de um centésimo de combo. Isso é ruído do solver, não uma estratégia; leia como zero. As apostas se dividem entre dois tamanhos: 57,8% usam 7,4bb e 42,2% usam 14,9bb. Em cada um dos sete potes com um único aumento pré-flop anteriores, o padrão do big blind era o oposto.
 
 | Primeira ação do BB | Frequência | Combos |
 |---|---|---|
@@ -130,7 +130,7 @@ O sinal está nas **contagens fracionadas de combos**: 26,4 na aposta grande e 3
 
 Underpairs somam 46,2%, ou 60 combos: QQ a 33, dez pares com seis combos cada. São mãos com dificuldade para pagar duas apostas seguidas nesta textura.
 
-Uma ressalva: esses 130 combos representam a **defesa teórica definida para o exemplo**. Na prática, há adversários que foldam pares médios e pagam com A-Q, A-J e K-Q. Contra esse jogador, os 46,2% não estarão presentes. Considere o que o adversário realmente paga antes de aplicar os números numa mesa ao vivo.
+Uma ressalva: esses 130 combos são o **range de call fornecido a esta resolução**: uma configuração pré-flop inserida na árvore, não uma defesa que o solver calculou. Na prática, há adversários que foldam pares médios e pagam com A-Q, A-J e K-Q. Contra esse jogador, os 46,2% não estarão presentes. Considere o que o adversário realmente paga antes de aplicar os números numa mesa ao vivo.
 
 ## Como o botão responde à c-bet de um terço do pote?
 
@@ -140,7 +140,7 @@ Uma ressalva: esses 130 combos representam a **defesa teórica definida para o e
 
 Contra 7,4bb em 22,5bb, impedir lucro automático de um blefe puro exigiria continuar com cerca de ==22,5 ÷ (22,5 + 7,4) = 75,3%== do range: a **frequência mínima de defesa (MDF)**. Mas as mãos do botão que acertaram o A-K-2 somam apenas ==20,8 + 11,5 + 6,9 + 2,3 = 41,5%==. 🪶 Os 2,3% de sets são **22**, que acertou o dois, não o ás nem o rei. Contando apenas as mãos que fizeram par com ás ou rei, o total é **39,2%**.
 
-⚠ **Neste spot, porém, a premissa da MDF não se aplica diretamente.** Ela encontra a frequência que torna indiferente um **blefe puro com equity zero**. O range de aposta do BB tem **0,0% na categoria Sem mão feita: nenhum combo**. Sem blefes puros de equity zero, não há esse blefe a tornar indiferente, e a interpretação aponta para foldar **mais**, não menos. ⚠ Duas ressalvas são essenciais: ① “0% sem mão feita” não significa “0% blefes”; um underpair fraco pode apostar como blefe ou por proteção. ② A resposta do botão não está disponível nesta resolução, então não é possível confirmar a frequência ideal de defesa. Não leia os 41,5% como “logo, preciso continuar com pares médios”. O tamanho pequeno oferece um preço melhor aos 60 combos, mas sua razão principal continua sendo o **formato do range**, discutido antes; esse preço é uma consequência.
+⚠ **Neste spot, porém, a premissa da MDF tem base fraca.** Ela encontra a frequência que torna indiferente um **blefe puro com equity zero**. O range de aposta do BB tem **0,0% na categoria Sem mão feita: nenhum combo**. Um range sem nenhuma mão sem par deixa pouco do blefe puro que a MDF pressupõe, e a interpretação aponta para foldar **mais**, não menos. ⚠ Duas ressalvas são essenciais: ① “0% sem mão feita” não significa “0% blefes”; um underpair fraco pode apostar como blefe ou por proteção. ② A resposta do botão não está disponível nesta resolução, então não é possível confirmar a frequência ideal de defesa. Não leia os 41,5% como “logo, preciso continuar com pares médios”. É duvidoso até que o tamanho pequeno dê preço a esses 60 combos: contra o range inteiro do BB, só QQ e JJ têm mais que os 19,8% exigidos, enquanto 99 até 33 ficam entre 7,6% e 9,2%. De todo modo, a razão principal do tamanho continua sendo o **formato do range**, discutido antes; esse preço é uma consequência.
 
 :::note[⚠ A MDF simplifica a aposta como um blefe puro. Sua aplicação depende da presença de blefes; quando todo o range tem par ou melhor, como aqui, a hipótese de blefe puro com equity zero deixa de descrever a situação. O número é apenas uma referência aproximada. Na prática, considere também quanto a mão resiste às apostas nas streets seguintes.]:::
 
@@ -190,7 +190,7 @@ A. É a relação entre stack e pote. Na prática, ajuda a estimar quantas apost
 
 **Q. Quantas apostas cabem com SPR de 4?**
 
-A. Nesta sequência, três, com a terceira em all-in. Usar 66% do pote e ajustar a última ao stack dá 14,9 → 34,5 → 39,6bb, exatamente os 89bb restantes. Parar depois de duas significa investir 49,4bb, pouco mais da metade. Um tamanho maior pode chegar ao all-in em duas: o tamanho escolhido determina quantas decisões ainda cabem.
+A. Nesta sequência, três, com a terceira em all-in. Dois terços do pote no flop e no turn dão 14,9 → 34,5bb, e os 39,6bb que sobram equivalem a cerca de um terço do pote do river — então a terceira aposta é exatamente o resto do stack de 89bb. Parar depois de duas significa investir 49,4bb, pouco mais da metade. Um tamanho maior pode chegar ao all-in em duas: o tamanho escolhido determina quantas decisões ainda cabem.
 
 **Q. Quem deu a 3-bet deve sempre fazer c-bet?**
 

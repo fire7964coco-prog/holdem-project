@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ein Flush (fünf Karten einer Farbe – ~0,197% aller Fünf-Karten-Deals) schlägt im Texas Hold'em immer eine Straße (fünf in Folge, ~0,392%) – weil ein Flush seltener ist: über alle sieben Karten bis zum River 3,03% gegenüber 4,62% für die Straße.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-11",
-  masterUpdated: "2026-09-24",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "⚡",
@@ -66,13 +66,13 @@ Zähl die 2.598.960 möglichen Fünf-Karten-Hände aus einem 52-Karten-Deck, und
 | **Straße** | **10.200** | **0,392%** | **Verliert gegen Flush ❌** |
 | Drilling | 54.912 | 2,11% | Verliert gegen Straße |
 
-Eine Straße hat rund ==r:**doppelt** so viele Wege zustande zu kommen wie ein Flush== – 10.200 gegenüber 5.108 unter den 2.598.960 Fünf-Karten-Händen. Über alle sieben Karten bis zum River schrumpft der Abstand auf das ==1,5-Fache== (4,62% gegenüber 3,03%), aber die Richtung bleibt dieselbe: Die Straße taucht häufiger auf – und genau das macht sie zur schwächeren Hand. Dieselbe Häufigkeitsregel erklärt die gesamte Leiter; die genauen Zahlen für jede Hand stehen im [Poker-Odds- und Wahrscheinlichkeits-Chart](/de/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
+Eine Straße hat rund ==r:**doppelt** so viele Wege zustande zu kommen wie ein Flush== – 10.200 gegenüber 5.108 unter den 2.598.960 Fünf-Karten-Händen. Über alle sieben Karten bis zum River schrumpft der Abstand auf das ==1,5-Fache== (4,62% gegenüber 3,03%), aber die Richtung bleibt dieselbe: Die Straße taucht häufiger auf – und genau das macht sie zur schwächeren Hand. Dieselbe Fünf-Karten-Häufigkeitsregel erklärt die gesamte Leiter (über sieben Karten ist eine bloße High Card sogar seltener als zwei Paare, aber die Rangfolge wurde auf fünf Karten festgelegt); die genauen Zahlen für jede Hand stehen im [Poker-Odds- und Wahrscheinlichkeits-Chart](/de/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
 ### Warum sich das falsch anfühlt
 
 Eine Straße braucht nur fünf Ränge in Folge, und ==**die Farben spielen keine Rolle**==. Diese Freiheit erzeugt eine riesige Zahl an Kombinationen. Ein Flush ist das Gegenteil: Jede der fünf Karten muss ==**dieselbe Farbe**== teilen, und nur eine von vier Farben schafft das zur selben Zeit. ==g:Weit weniger Wege dorthin bedeuten, dass der Flush seltener ist – und das Seltenere gewinnt immer.==
 
-:::tip[Wenn du einen Flushdraw hältst und dein Gegner auf eine Straße zieht, sitzt du bestens – selbst wenn **beide** Draws ankommen, schlägt dein Flush seine Straße im Showdown.]:::
+:::tip[Wenn du einen Flushdraw hältst und dein Gegner auf eine Straße zieht, gewinnst du den Zusammenstoß – wenn **beide** Draws ankommen, schlägt dein Flush seine Straße im Showdown. Das heißt nicht, dass du Favorit bist: Kommt sein Straßendraw mit einem Paar oder höheren Karten, kann er vor dem River trotzdem vorn liegen.]:::
 
 ---
 
@@ -121,7 +121,7 @@ Das Matchup, über das nach Flush vs Straße am meisten gestritten wird, ist **F
 
 :::hand[K♠,9♠,9♥,4♠,2♦] Board (5 Karten):::
 
-Du hältst **A♠ 5♠** für den Nut-Flush: **A♠ K♠ 9♠ 5♠ 4♠**. Dein Gegner hält **K♦ 9♦** und zeigt **9♦ 9♠ 9♥ K♦ K♠** – Neunen über Könige. ==r:Full House schlägt Flush==, und kein Flush überlebt das. Auf einem ungepaarten Board wird dein Ace-High-Flush nur von einem Straight Flush geschlagen; in dem Moment, in dem das Board paart, kommen Full Houses und Vierlinge ins Spiel.
+Du hältst **A♠ 5♠** für den Nut-Flush: **A♠ K♠ 9♠ 5♠ 4♠**. Dein Gegner hält **K♦ 9♦** und zeigt **9♦ 9♠ 9♥ K♦ K♠** – Neunen über Könige. ==r:Full House schlägt Flush==, und kein Flush überlebt das. Auf einem ungepaarten Board wird der Nut-Flush nur von einem Straight Flush geschlagen; in dem Moment, in dem das Board paart, kommen Full Houses und Vierlinge ins Spiel.
 
 Wenn zwei Spieler denselben Handtyp halten, entscheidet der Vergleich Karte für Karte über den Gewinner – das komplette System steht in den [Poker-Tie-Breaker- und Kicker-Regeln](/de/blog/holdem-tiebreak-rules).
 
@@ -158,9 +158,9 @@ Die Dame übertrumpft den Buben, also gewinnt A. Sind die besten fünf Karten be
 
 ## Was ist ein Straight Flush? Wenn beides auf einmal passiert
 
-![9♥ 8♥ 7♥ 6♥ 5♥ – ein Straight Flush in Herz, die #2-Hand im Poker](/images/holdem-flush-vs-straight-sf.webp "Straight Flush – fünf Herz in Folge, nur von einem Royal Flush geschlagen")
+![9♥ 8♥ 7♥ 6♥ 5♥ – ein Straight Flush in Herz, die #2-Hand im Poker](/images/holdem-flush-vs-straight-sf.webp "Straight Flush – fünf Herz in Folge; nur ein höherer Straight Flush oder ein Royal Flush schlägt ihn")
 
-Ein **Straight Flush** ist fünf *aufeinanderfolgende* Karten *einer Farbe* – wie 9♥ 8♥ 7♥ 6♥ 5♥. Es ist die **#2-Hand im Poker**, nur von einem Royal Flush geschlagen (der einfach der Ace-High-Straight-Flush ist, A-K-Q-J-10 suited). Mit gerade mal **36 Kombinationen** – das sind 0,00139% auf Fünf-Karten-Basis, in Hold'em mit sieben Karten rund 0,028% – ist er seltener als alles außer dem Royal selbst.
+Ein **Straight Flush** ist fünf *aufeinanderfolgende* Karten *einer Farbe* – wie 9♥ 8♥ 7♥ 6♥ 5♥. Es ist die **#2-Hand im Poker**: Nur ein höherer Straight Flush oder ein Royal Flush (der einfach der Ace-High-Straight-Flush ist, A-K-Q-J-10 suited) schlägt ihn. Mit gerade mal **36 Kombinationen** – das sind 0,00139% auf Fünf-Karten-Basis, in Hold'em mit sieben Karten rund 0,028% – ist er seltener als alles außer dem Royal selbst.
 
 Der Haken: ==die *gleichen fünf Karten* müssen sowohl suited als auch in Folge sein==. Achte auf den Unterschied auf dem Board **8♥ 7♥ 6♥ Q♠ 3♦**:
 
@@ -186,7 +186,7 @@ Im **Short Deck (6+) Hold'em** werden die Zweien bis Fünfen aus dem Deck entfer
 
 **Q. Ist ein Flush oder eine Straße besser?**
 
-A. Der Flush. Er ist die #5-Hand und die Straße die #6, also gewinnt ein Flush im Standard-Texas-Hold'em immer. Fünf Karten einer Farbe sind statistisch schwerer zu treffen als fünf in Folge, und die seltenere Hand rangiert immer höher.
+A. Der Flush. Er ist die #5-Hand und die Straße die #6, also gewinnt ein Flush im Standard-Texas-Hold'em immer. Fünf Karten einer Farbe sind statistisch schwerer zu treffen als fünf in Folge, und unter Fünf-Karten-Händen rangiert die seltenere Hand immer höher.
 
 **Q. Schlägt eine Straße einen Flush?**
 
@@ -194,7 +194,7 @@ A. Nein. Eine Straße (#6) schlägt im Standard-Texas-Hold'em nie einen Flush (#
 
 **Q. Wie viel seltener ist ein Flush als eine Straße?**
 
-A. Reine Mathematik. Eine Straße ignoriert die Farben, also gibt es etwa 10.200 Wege, eine zu treffen, gegenüber nur 5.108 Wegen zu einem Flush. Der Flush ist damit etwa doppelt so selten; über alle sieben Karten bis zum River bleibt ein Faktor von rund 1,5 (3,03% gegenüber 4,62%). Im Poker rangiert die seltenere Hand immer höher.
+A. Reine Mathematik. Eine Straße ignoriert die Farben, also gibt es etwa 10.200 Wege, eine zu treffen, gegenüber nur 5.108 Wegen zu einem Flush. Der Flush ist damit etwa doppelt so selten; über alle sieben Karten bis zum River bleibt ein Faktor von rund 1,5 (3,03% gegenüber 4,62%). Gezählt über Fünf-Karten-Hände – so wurde die Rangfolge festgelegt – rangiert die seltenere Hand immer höher.
 
 **Q. Welche Hände sind höher als ein Flush?**
 
@@ -206,7 +206,7 @@ A. Ein Flush, Full House, Vierling, Straight Flush und Royal Flush schlagen alle
 
 **Q. Kann man einen höheren Flush haben als ein anderer Spieler?**
 
-A. Ja. Zwei Flushes werden Karte für Karte von oben nach unten verglichen, also schlägt ein Ace-High-Flush („Nut“-Flush) einen King-High-Flush. Stimmen die Topkarten überein, entscheidet die zweithöchste, und so weiter durch alle fünf.
+A. Ja. Zwei Flushes werden Karte für Karte von oben nach unten verglichen, also schlägt ein Ace-High-Flush einen King-High-Flush. Stimmen die Topkarten überein, entscheidet die zweithöchste, und so weiter durch alle fünf.
 
 **Q. Spielt die Farbe eines Flushs eine Rolle?**
 

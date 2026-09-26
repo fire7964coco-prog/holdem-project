@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "rules",
   date: "2026-06-15",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-21",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 menit",
   emoji: "♠",
@@ -59,7 +59,7 @@ Ada dua cara yang sah:
 
 **1. Deklarasi verbal** — Ucapkan "all-in" dengan jelas sampai dealer dan lawan mendengarnya. Ini cara paling aman. Begitu Anda mengucapkannya, Anda terikat.
 
-**2. Dorong semua chip ke depan** — Geser seluruh stack Anda ke tengah dalam satu gerakan bersih. Mendorong chip sebagian-sebagian bisa terlihat seperti string bet, jadi pindahkan semuanya sekaligus. ==r:Mendorong saja tidak selalu cukup: kalau Anda menghadapi bet dan setiap chip Anda dibutuhkan hanya untuk call, dorongan tanpa suara dinilai sebagai call, bukan all-in (TDA Rule 45-A, WSOP Tournament Rule 92).== Di luar itu, mendorong chip terakhir Anda **memang** all-in (TDA Rule 45-B).
+**2. Dorong semua chip ke depan** — Geser seluruh stack Anda ke tengah dalam satu gerakan bersih. Mendorong chip sebagian-sebagian bisa terlihat seperti string bet, jadi pindahkan semuanya sekaligus. ==r:Mendorong saja tidak selalu cukup: kalau Anda menghadapi bet dan setiap chip Anda dibutuhkan hanya untuk call, dorongan tanpa suara dinilai sebagai call, bukan all-in (TDA 2024 Rule 45-A, WSOP Tournament Rule 92).== Di luar itu, mendorong chip terakhir Anda **memang** all-in (TDA 2024 Rule 45-B) — satu-satunya pengecualian adalah satu chip terakhir berukuran besar yang didorong tanpa suara ke sebuah bet, yang hanya dihitung call (TDA 2024 Rule 44).
 
 ![Showdown all-in Texas Hold'em — board K♠ 10♣ 7♦ 4♥ 2♣ dengan chip yang dipisahkan menjadi pot utama dan side pot berlabel](/images/holdem-all-in-declare.webp)
 
@@ -146,7 +146,7 @@ Kenapa aturan ini ada? Untuk melindungi pemain agar tidak dipaksa masuk ke raise
 
 ### Kasus Lanjutan: Bagaimana Kalau Beberapa Pemain All-In Pendek?
 
-Ini versi yang bikin tersandung bahkan pemain reguler. Beberapa all-in pendek bisa **terakumulasi** menjadi satu raise penuh — dan kalau gabungan inkremen-nya mencapai ambang, taruhan terbuka kembali bagi seorang pemain yang sudah beraksi. ==r:Ujiannya dilakukan pemain per pemain, bukan sekali untuk seluruh meja:== taruhan hanya terbuka kembali bagi pemain yang, **saat aksi kembali kepadanya, menghadapi setidaknya satu raise penuh di atas yang sudah ia masukkan** (==TDA Rule 47==).
+Ini versi yang bikin tersandung bahkan pemain reguler. Beberapa all-in pendek bisa **terakumulasi** menjadi satu raise penuh — dan kalau gabungan inkremen-nya mencapai ambang, taruhan terbuka kembali bagi seorang pemain yang sudah beraksi. ==r:Ujiannya dilakukan pemain per pemain, bukan sekali untuk seluruh meja:== taruhan hanya terbuka kembali bagi pemain yang, **saat aksi kembali kepadanya, menghadapi setidaknya satu raise penuh di atas yang sudah ia masukkan** (==TDA 2024 Rule 47==).
 
 Ini aturan resmi TDA soal "re-opening the bet", dan mayoritas card room mengikutinya.
 
@@ -182,7 +182,7 @@ Ambang raise minimum selalu berdasarkan *bet atau raise penuh terakhir yang sah*
 | Satu all-in ≥ raise penuh | ✅ Ya — semua boleh re-raise |
 | Beberapa all-in pendek, gabungan < raise penuh | ❌ Tidak |
 | Beberapa all-in pendek, gabungan ≥ raise penuh | ✅ Ya — bagi tiap pemain yang kini menghadapi setidaknya satu raise penuh di atas aksi terakhirnya sendiri |
-| Pemain yang BELUM beraksi | ✅ Batas pembukaan kembali tidak pernah berlaku untuk dia — dia tetap boleh raise sejauh chip miliknya mengizinkan (dan, di permainan limit, batas raise rumah — TDA Rule 48) |
+| Pemain yang BELUM beraksi | ✅ Batas pembukaan kembali tidak pernah berlaku untuk dia — dia tetap boleh raise sejauh chip miliknya mengizinkan (dan, di permainan limit, batas raise rumah — TDA 2024 Rule 48) |
 
 </div>
 
@@ -221,7 +221,7 @@ Table stakes. Yang ada di meja adalah semua yang bisa Anda pertaruhkan. Kalau An
 
 ### Kesalahan 4: Membuang kartu (muck) terlalu cepat
 
-Anda all-in untuk pot utama. Dua pemain lain bertarung memperebutkan side pot. Di turnamen, ini selesai sendiri — begitu taruhan mereka berakhir, ==TDA Rule 16== mewajibkan semua hand dibuka, termasuk milik Anda. Di cash game tidak: saya pernah melihat seorang short stack melempar kartunya begitu showdown side pot berbalik melawannya — lupa bahwa dia bahkan tidak ikut di pot itu, dan pot utama masih bisa ia menangkan. Begitu dealer menyapunya ke dalam muck, kartu itu tak lagi bisa diidentifikasi — mati, dan pot utama jatuh ke pemain lain. (Kartu yang masih bisa dikenali dengan jelas kadang boleh diambil kembali atas kebijakan floor, tapi jangan pernah mengandalkan itu.) Jangan muck — kartu Anda masih hidup untuk pot utama. ==Selalu tunggu dealer menyelesaikan setiap pot sebelum menyentuh kartu Anda.==
+Anda all-in untuk pot utama. Dua pemain lain bertarung memperebutkan side pot. Di turnamen, ini selesai sendiri — begitu taruhan mereka berakhir, ==TDA 2024 Rule 16== mewajibkan semua hand dibuka, termasuk milik Anda. Di cash game tidak: saya pernah melihat seorang short stack melempar kartunya begitu showdown side pot berbalik melawannya — lupa bahwa dia bahkan tidak ikut di pot itu, dan pot utama masih bisa ia menangkan. Begitu dealer menyapunya ke dalam muck, kartu itu tak lagi bisa diidentifikasi — mati, dan pot utama jatuh ke pemain lain. (Kartu yang masih bisa dikenali dengan jelas kadang boleh diambil kembali atas kebijakan floor, tapi jangan pernah mengandalkan itu.) Jangan muck — kartu Anda masih hidup untuk pot utama. ==Selalu tunggu dealer menyelesaikan setiap pot sebelum menyentuh kartu Anda.==
 
 ### Kesalahan 5: All-in karena frustrasi
 
@@ -258,11 +258,11 @@ A. Table stakes artinya Anda hanya boleh mempertaruhkan chip yang ada di depan A
 
 **Q. Kalau dua pemain all-in dengan jumlah berbeda, siapa yang membuka kartu duluan?**
 
-A. All-in terakhir yang berupa bet atau raise adalah aksi agresif terakhir dan membuka kartu duluan. All-in yang cuma call untuk jumlah lebih kecil bukan aksi agresif — di cash game yang tetap membuka duluan adalah si pembuat bet semula, dan selanjutnya WSOP Live Action Rules berjalan per pot: siapa pun yang ada di side pot membuka sebelum pemain yang all-in hanya untuk pot utama (Rule 149). ==r:Di turnamen tidak ada urutan membuka sama sekali di sini== — begitu taruhan all-in selesai, semua kartu yang terlibat dibuka bersamaan (TDA Rule 16); aturan yang menetapkan urutan, TDA Rule 17, hanya mengatur showdown tanpa all-in. Di cash game, kalau itu all-in yang di-call tanpa aksi lanjutan, pemain yang call boleh muck kalau kalah setelah melihat kartu si pemain all-in (di turnamen semua kartu yang terlibat tetap terbuka).
+A. All-in terakhir yang berupa bet atau raise adalah aksi agresif terakhir dan membuka kartu duluan. All-in yang cuma call untuk jumlah lebih kecil bukan aksi agresif — di cash game yang tetap membuka duluan adalah si pembuat bet semula, dan selanjutnya WSOP Live Action Rules berjalan per pot: siapa pun yang ada di side pot membuka sebelum pemain yang all-in hanya untuk pot utama (Rule 149). ==r:Di turnamen tidak ada urutan membuka sama sekali di sini== — begitu taruhan all-in selesai, semua kartu yang terlibat dibuka bersamaan (TDA 2024 Rule 16); aturan yang menetapkan urutan, TDA 2024 Rule 17, hanya mengatur showdown tanpa all-in. Di cash game, kalau itu all-in yang di-call tanpa aksi lanjutan, pemain yang call boleh muck kalau kalah setelah melihat kartu si pemain all-in (di turnamen semua kartu yang terlibat tetap terbuka).
 
 **Q. Apakah aturan all-in berbeda antara turnamen dan cash game?**
 
-A. Aturan intinya sama, tapi ada dua perbedaan praktis. Pertama, di turnamen semua kartu yang terlibat dalam all-in dibuka begitu semua taruhan selesai (TDA Rule 16) — Anda tidak boleh muck sebelum showdown. Di cash game, urutan showdown standar berlaku — kecuali permainannya no-limit dan taruhan berakhir sebelum river, saat pemain all-in membuka duluan (Live Action Rule 149) — dan pemain boleh muck. Kedua, run it twice umum di cash game (kalau semua yang masih di pot setuju) tapi umumnya tidak diizinkan di turnamen.
+A. Aturan intinya sama, tapi ada dua perbedaan praktis. Pertama, di turnamen semua kartu yang terlibat dalam all-in dibuka begitu semua taruhan selesai (TDA 2024 Rule 16) — Anda tidak boleh muck sebelum showdown. Di cash game, urutan showdown standar berlaku — kecuali permainannya no-limit dan taruhan berakhir sebelum river, saat pemain all-in membuka duluan (Live Action Rule 149) — dan pemain boleh muck. Kedua, run it twice umum di cash game (kalau semua yang masih di pot setuju) tapi umumnya tidak diizinkan di turnamen.
 
 ---
 

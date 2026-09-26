@@ -186,7 +186,7 @@ Kung naglalaro ng maliit na home cash game, pumili ng buy-in na komportable mawa
 
 ==r:Huwag magsimula sa stakes na ikakaba ng mga tao.== Ang kinakabahang beginner ay hindi mas mabilis natututo. Sobrang nag-fold lang sila, nag-call nang sobrang emosyonal, o nag-aaway tungkol sa rules.
 
-Tandaan na iba ang paggana ng **tournament** buy-in kaysa sa cash game: nagbabayad ka ng isang fixed entry, tumatanggap ng set stack ng chips na hindi maka-cash, at naglalaro hanggang mapunta sa isang player ang lahat. Kung hindi ka sigurado kung alin ang gusto mo, basahin muna ang cash game vs tournament.
+Tandaan na iba ang paggana ng **tournament** buy-in kaysa sa cash game: nagbabayad ka ng isang fixed entry, tumatanggap ng set stack ng chips na hindi maka-cash, at naglalaro hanggang mapunta sa isang player ang lahat (sa re-entry events, puwede kang mag-buy-in ulit pagka-bust mo). Kung hindi ka sigurado kung alin ang gusto mo, basahin muna ang cash game vs tournament.
 
 Para sa online practice, gumamit ng free tables hanggang kaya mo nang ipaliwanag ang order ng action nang hindi nag-iisip. Tapos umakyat nang dahan-dahan.
 
@@ -194,7 +194,7 @@ Para sa online practice, gumamit ng free tables hanggang kaya mo nang ipaliwanag
 
 ## No-Limit, Limit, o Pot-Limit? Aling Texas Hold'em ang Nilalaro Mo?
 
-Kapag sinabi ng mga tao na "Texas Hold'em," halos palaging ang ibig sabihin ay **No-Limit Hold'em (NLHE)** — ang format na ginagamit sa WSOP Main Event at halos bawat home game. Magkatulad ang dealing, blinds, at hand rankings sa lahat ng tatlong format. Ang tanging nagbabago ay **kung magkano ang puwede mong i-bet.**
+Kapag sinabi ng mga tao na "Texas Hold'em," halos palaging ang ibig sabihin ay **No-Limit Hold'em (NLHE)** — ang format na ginagamit sa WSOP Main Event at halos bawat home game. Magkatulad ang dealing at hand rankings sa lahat ng tatlong format. Ang pangunahing nagbabago ay **kung magkano ang puwede mong i-bet** — at sa Fixed-Limit, kadalasang may cap din kung ilang raise ang puwede sa isang round (sa WSOP, isang bet at apat na raise).
 
 | Format | Magkano ang puwede mong i-bet? | Saan mo makikita |
 |--------|-----------------------|---------------------|
@@ -299,7 +299,7 @@ Ang pot odds mo ay **$120 kontra $20**, o **6 to 1**. Ibig sabihin, kailangan mo
 
 ### The Rule of 2 and 4 — instant probability shortcut
 
-Kapag may drawing hand ka (halimbawa, apat na card para sa flush), bilangin ang iyong **outs** — ang mga card na kukumpleto sa hand mo.
+Kapag may drawing hand ka (halimbawa, apat na card para sa flush), bilangin ang iyong **outs** — ang mga card na gagawing malamang na panalong hand ang draw mo.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

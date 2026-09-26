@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Fold adalah skill paling diremehkan di poker — hasil terburuk sebuah fold adalah nol, sementara call yang kalah menguras chip setiap kali. Pemain solid fold sekitar 75–85% tangan sebelum flop, melepas tangan yang meleset dan draw lemah yang tak memenuhi pot odds mereka setelahnya, dan — yang paling sulit — melepas tangan kuat-tapi-kalah saat line lawan pasif jelas menunjukkan value. Kebanyakan pemain tidak call terlalu banyak karena tak bisa membaca tangan; mereka call karena chip yang sudah ada di pot terasa milik mereka. Padahal bukan.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-12",
-  masterUpdated: "2026-09-13",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "16 mnt",
   emoji: "🛡️",
@@ -38,7 +38,7 @@ Matematika > rasa takut | Satu-satunya alasan untuk fold, atau tidak
 
 Menghadapi bet, Anda punya tiga pilihan: fold, call, atau raise. Kalau tidak ada bet, pilihannya dua: check atau bet. Fold berarti menyerahkan pot dan tidak lagi mempertaruhkan chip. Pemain baru menganggapnya kalah. Pemain pemenang menganggapnya ==menolak untuk kalah lebih banyak.==
 
-Inilah ide yang membingkai ulang segalanya: **expected value sebuah fold, dari keputusan itu ke depan, adalah nol.** Saat Anda benar-benar kalah, setiap pilihan lain bernilai *negatif* — call membebani Anda sebesar call, raise membebani lebih banyak. Nol mengalahkan negatif. Fold tidak memenangkan pot, tapi ia memenangkan permainan jangka panjang dengan tidak menyumbangkan chip ke spot di mana Anda tertinggal.
+Inilah ide yang membingkai ulang segalanya: **expected value sebuah fold, dari keputusan itu ke depan, adalah nol.** Saat Anda benar-benar kalah (tertinggal sekarang, tanpa odds untuk menyusul atau fold equity untuk mendorong lawan lepas), setiap pilihan lain bernilai *negatif*: call membebani Anda sebesar call, raise membebani lebih banyak. Nol mengalahkan negatif. Fold tidak memenangkan pot, tapi ia memenangkan permainan jangka panjang dengan tidak menyumbangkan chip ke spot di mana Anda tertinggal.
 
 Satu catatan penting, karena ini krusial: fold *tidaklah gratis.* Chip yang sudah ada di pot lenyap begitu Anda memasukkannya — fold hanya menghentikan Anda menambah *kerugian baru di atas kerugian yang sudah ada.* Perbedaan itulah seluruh psikologi fold, dan kita akan kembali ke sana. Pertama, mekanikanya.
 

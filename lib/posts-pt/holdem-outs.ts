@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Um out é qualquer carta que sobrou no baralho e melhora sua mão para uma provável vencedora. Conte-os e converta: multiplique os outs por 4 no flop ou por 2 no turn para a % aproximada de acertar. Um projeto de flush são 9 outs ≈ 36% até o river.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-24",
-  masterUpdated: "2026-09-24",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🎯",
@@ -35,7 +35,7 @@ Esse hábito se chama contar **outs** — [a verdadeira resposta do poker para "
 
 ## O que são outs no poker?
 
-**Um out é qualquer carta que ainda está no baralho e transforma sua mão em uma provável vencedora.** Se você tem um projeto de flush, toda carta restante do seu naipe é um out — pegue uma e você tem um flush.
+**Um out é qualquer carta que ainda está no baralho e transforma sua mão em uma provável vencedora.** Se você tem um projeto de flush, toda carta restante do seu naipe completa o flush — e cada uma é um out desde que esse flush de fato ganhe.
 
 É a palavra "provável" que carrega o peso aí. Um out de verdade tem que de fato *vencer* a mão, não só melhorar suas cartas. Parear seu 10 quando já há um flush na mesa não é um out — você melhorou, mas continua perdendo. Aprender a contar outs é na verdade aprender a contar as cartas que vencem, e a ignorar as que só *parecem* úteis.
 
@@ -60,7 +60,7 @@ Elimine as falsas | Risque qualquer "out" que completa sua mão mas ainda perde 
 
 Pegue um projeto de flush: existem 13 cartas do seu naipe, você consegue ver **quatro** delas (duas na sua mão, duas na mesa), então ==g:13 − 4 = 9 outs==. Essa subtração — contar as que você *não pode* pegar porque já as tem na mão — é onde os iniciantes escorregam.
 
-A contagem só usa cartas que você consegue ver. Você não subtrai as cartas desconhecidas do adversário; você trata toda carta não vista como ainda viva. É por isso que as contagens de outs padrão abaixo se sustentam independentemente do que qualquer outro tenha na mão.
+A contagem só usa cartas que você consegue ver. Você não subtrai as cartas desconhecidas do adversário; você trata toda carta não vista como ainda viva. É por isso que as contagens brutas abaixo são as mesmas seja o que for que os outros tenham na mão — elas são o ponto de partida, antes de você riscar os outs sujos mais adiante.
 
 ---
 
@@ -112,9 +112,9 @@ Os dois projetos combinados no topo são onde os jogadores erram a conta, então
 
 </div>
 
-Dois números importam para todo projeto. **"Até o river"** conta as duas cartas restantes e vale quando você está all-in no flop sem mais nada para apostar. **"Flop → turn"** conta só a próxima carta (9 ÷ 47 = 19,1%; do turn para o river vira 9 ÷ 46 = 19,6%) — use isso no momento em que ainda há aposta por vir, porque você só tem garantia de ver uma carta de cada vez. Iniciantes citam o número gordo do "até o river" enquanto encaram uma aposta no turn, se convencem a pagar, e pagam caro por isso.
+Dois números importam para todo projeto. **"Até o river"** conta as duas cartas restantes e vale quando não pode haver mais apostas — você está all-in, ou pagou um all-in. **"Flop → turn"** conta só a próxima carta (9 ÷ 47 = 19,1%; do turn para o river vira 9 ÷ 46 = 19,6%) — use isso no momento em que ainda há aposta por vir, porque você só tem garantia de ver uma carta de cada vez. Iniciantes citam o número gordo do "até o river" enquanto encaram uma aposta no turn, se convencem a pagar, e pagam caro por isso.
 
-Repare no monstro de 15 outs: com duas cartas por vir ele é na verdade **favorito** (54,1%), o raro projeto com o qual você pode alegremente ir de all-in no flop.
+Repare no monstro de 15 outs: com duas cartas por vir ele completa 54,1% das vezes — contra um único par, isso normalmente o torna **favorito**, o raro projeto com o qual você pode alegremente ir de all-in no flop. Contra um set, não: a mesa pode parear e completar o full house do set — o exemplo de J♠ 10♠ em 9♠ 8♣ 2♠ mais abaixo tem só cerca de 40% contra um par de noves.
 
 ---
 
@@ -128,7 +128,7 @@ Repare no monstro de 15 outs: com duas cartas por vir ele é na verdade **favori
 
 Um projeto de flush são 9 outs. No flop: 9 × 4 = **36%** (valor real 35,0% — na mosca). No turn: 9 × 2 = **18%** (real 19,6% — perto o suficiente para agir).
 
-:::tip[O atalho do ×4 assume em silêncio que você verá *as duas* cartas sem mais aposta — só garantido quando você já está all-in. Se há uma aposta na sua frente, use o número do ×2 (uma carta) para a street em que você realmente está.]:::
+:::tip[O atalho do ×4 assume em silêncio que você verá *as duas* cartas sem mais aposta — só garantido quando não pode haver mais apostas (você está all-in, ou pagou um all-in). Se há uma aposta na sua frente, use o número do ×2 (uma carta) para a street em que você realmente está.]:::
 
 O ponto fraco principal são as **contagens altas de outs no flop**. O cálculo exato de duas cartas considera acertar em qualquer uma das streets sem contar duas vezes o acerto duplo. A estimativa do ×4 começa a ficar um pouco alta já com 7 outs, mas a diferença cresce com projetos maiores; a correção usual abaixo é usada para mais de 8 outs.
 
@@ -222,14 +222,14 @@ A. 15, não 17. Um projeto de flush são 9 outs e um projeto aberto de sequênci
 
 **Q. Você conta as cartas do adversário ao contar outs?**
 
-A. Não. Você só subtrai cartas que consegue de fato ver — suas cartas na mão e a mesa comunitária. Toda outra carta não vista é tratada como viva, e é por isso que as contagens de outs padrão (9 para um flush, 8 para um projeto aberto) valem não importa o que seus adversários tenham.
+A. Não. Você só subtrai cartas que consegue de fato ver — suas cartas na mão e a mesa comunitária. Toda outra carta não vista é tratada como viva, e é por isso que as contagens brutas (9 para um flush, 8 para um projeto aberto) continuam as mesmas seja o que for que seus adversários tenham. Se cada uma dessas cartas de fato ganha ainda depende da mão deles — essa é a checagem dos outs sujos.
 
 ---
 
 ## As 3 coisas para lembrar
 
 1. **Conte o que vence, não o que melhora.** Um out tem que fazer a *melhor* mão, não só uma melhor. Subtraia só as cartas que você consegue ver.
-2. **Converta com o 4 e o 2.** Outs × 4 no flop, × 2 no turn. Corte a estimativa para projetos grandes (mais de 8 outs) subtraindo *(outs − 8)*.
+2. **Converta com o 4 e o 2.** Outs × 4 no flop, × 2 no turn. No flop, corte a estimativa do ×4 para projetos grandes (mais de 8 outs) subtraindo *(outs − 8)*.
 3. **Desconte as sujas.** Flushes que não são nut, mesas pareadas e overcards contra força — todos encolhem sua contagem real de outs. Na dúvida, conte menos.
 
 Acerte a contagem e o resto da matemática do poker se encaixa. Leve sua contagem de outs direto para [como calcular pot odds](/pt/blog/holdem-pot-odds) e veja se o preço está certo, ou volte para a [tabela completa de odds e probabilidade do poker](/pt/blog/holdem-probability) para o número exato por trás de cada projeto.

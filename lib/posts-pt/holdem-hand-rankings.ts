@@ -8,9 +8,9 @@ export const POST: Post = {
   tldr: "A ordem das mãos do poker, da melhor à pior: Royal Flush, Straight Flush, Quadra, Full House, Flush, Sequência, Trinca, Dois Pares, Par e Carta Alta. Essa escada vale para o Texas Hold'em e quase todas as variantes.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-09-17",
+  updated: "2026-09-26",
 
-  masterUpdated: "2026-09-17",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🃏",
@@ -131,10 +131,11 @@ Entre duas sequências, ganha a de carta mais alta.
 
 **J♣ J♠ J♥ A♦ 4♠** — três cartas do mesmo valor.
 
-Há duas formas de fechá-la, e a diferença importa:
+Há três formas de fechá-la, e a diferença importa:
 
 - **Set:** um par na mão mais uma carta da mesa (ex.: você tem J♣ J♠ e a mesa traz J♥). Disfarçado e perigoso.
 - **Trips:** um par na mesa mais uma carta sua. Mais fácil de o adversário ler e de compartilhar.
+- **Trinca na mesa:** as três estão no board (ex.: J♣ J♠ J♥ no meio). Todo mundo divide essa trinca, então, a menos que alguém melhore para full house ou quadra, só os kickers separam vocês.
 
 O set tira mais fichas porque ninguém vê chegar.
 
@@ -206,7 +207,7 @@ Saber a ordem não é o mesmo que lê-la rápido. Aqui vão três situações re
 
 Você tem **Q♥ Q♦**. Qual é sua melhor mão?
 
-→ O board já mostra dois pares (A-A e K-K). Suas duas damas mais a Q♠ do board fazem **trinca de damas**, e junto com os ases você tem um **full house — QQQ + AA**. Essas são suas melhores cinco. Os iniciantes travam em "AAKK + Q não é só dois pares?" — não. Assim que você tem trinca, fica com o full house. **O full house ganha dos dois pares.**
+→ O board já mostra dois pares (A-A e K-K). Suas duas damas mais a Q♠ do board fazem **trinca de damas**, e junto com os ases você tem um **full house — QQQ + AA**. Essas são suas melhores cinco. Os iniciantes travam em "AAKK + Q não é só dois pares?" — não. Assim que você tem trinca e o board acrescenta um par próprio, fica com o full house. **O full house ganha dos dois pares.**
 
 ### Problema 2 — O flush que na verdade é melhor
 
@@ -242,7 +243,7 @@ Você tem **A♥ 3♣**. O board já traz trinca de reis.
 
 ## Por que a ordem é essa
 
-O ranking não é arbitrário: é pura probabilidade. **Quanto mais difícil de fechar uma mão, mais alto ela está.** Em um baralho de 52 cartas, simplesmente há menos formas de fazer cinco do mesmo naipe do que cinco em sequência de qualquer naipe — por isso o flush fica acima da sequência. Esse único princípio explica todo o ranking — medido nas combinações de cinco cartas, de onde a ordem oficial vem (jogando sete cartas até o river, um par até sai mais vezes que uma carta alta, mas a escada não muda). Veja os números exatos no [gráfico de odds e probabilidade do poker](/pt/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
+O ranking não é arbitrário: é pura probabilidade. **Quanto mais difícil de fechar uma mão com cinco cartas, mais alto ela está.** Em um baralho de 52 cartas, simplesmente há menos formas de fazer cinco do mesmo naipe do que cinco em sequência de qualquer naipe — por isso o flush fica acima da sequência. Esse único princípio explica todo o ranking — medido nas combinações de cinco cartas, de onde a ordem oficial vem (jogando sete cartas até o river, um par até sai mais vezes que uma carta alta, mas a escada não muda). Veja os números exatos no [gráfico de odds e probabilidade do poker](/pt/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
 Ele também explica a grande exceção que você vai encontrar: no **Short Deck (6+) Hold'em**, onde as cartas do 2 ao 5 são retiradas do baralho, os flushes ficam mais difíceis que os full houses — então, nesse formato, um **flush ganha de um full house**. A matemática mudou, a ordem mudou. Mais sobre as diferenças por modalidade abaixo.
 
@@ -364,7 +365,7 @@ A. Sim. A trinca é a #7 e os dois pares a #8, então a trinca ganha. Dois pares
 
 **Q. O straight flush ganha da quadra?**
 
-A. Sim. O straight flush (#2) ganha da quadra (#3) — cinco cartas em sequência do mesmo naipe superam quatro cartas iguais. A única coisa acima do straight flush é o royal flush, que é só a versão dele com o ás no topo.
+A. Sim. O straight flush (#2) ganha da quadra (#3) — cinco cartas em sequência do mesmo naipe superam quatro cartas iguais. As únicas mãos acima de um straight flush são um straight flush mais alto e o royal flush, que é só a versão dele com o ás no topo.
 
 **Q. Quais são as piores mãos do poker?**
 

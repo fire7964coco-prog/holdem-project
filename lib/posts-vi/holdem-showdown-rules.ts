@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ở showdown của một giải đấu không có all-in, người chủ động cuối ở river lật trước; nếu river check hết, người còn bài đầu tiên bên trái nút Dealer lật trước. Khi có all-in, mọi tay bài còn sống phải lật ngay sau khi toàn bộ cược kết thúc. Người đã theo cú cược ở river và còn giữ hoặc đã ngửa bài có quyền yêu cầu xem bài của người chủ động cuối. Cash game áp dụng luật nhà về lật và muck.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-22",
+  updated: "2026-09-26",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "10 phút",
@@ -170,7 +170,7 @@ A. Trong giải đấu không có all-in, người chủ động cuối ở rive
 
 **Q. Có được muck khi showdown mà không lật bài không?**
 
-A. Ngoài nghĩa vụ lật bài khi all-in trong giải đấu, tay bài thua có thể muck nhưng vẫn phải tuân theo yêu cầu xem bài được phép. Khi có all-in và toàn bộ cược đã hoàn tất, tất cả tay bài còn sống phải lật ngay, không được muck (TDA 2024, Luật 16). Người đã theo cú cược ở river và còn giữ hoặc đã ngửa bài có quyền yêu cầu xem bài của người chủ động cuối (TDA 2024, Luật 18). Yêu cầu khác do giám đốc giải quyết; cash game theo luật nhà. Nếu chưa chắc ai thắng, hãy để Dealer đọc cả hai tay bài.
+A. Ngoài nghĩa vụ lật bài khi all-in trong giải đấu, tay bài thua có thể muck nhưng vẫn phải tuân theo yêu cầu xem bài được phép. Khi có all-in và toàn bộ cược đã hoàn tất, tất cả tay bài còn sống phải lật ngay, không được muck (TDA 2024, Luật 16). Trong giải đấu, người đã theo cú cược ở river và còn giữ hoặc đã ngửa bài có quyền yêu cầu xem bài của người chủ động cuối (TDA 2024, Luật 18). Yêu cầu khác do giám đốc giải quyết; cash game theo luật nhà. Nếu chưa chắc ai thắng, hãy để Dealer đọc cả hai tay bài.
 
 **Q. Slow roll trong poker là gì và vì sao bị ghét?**
 

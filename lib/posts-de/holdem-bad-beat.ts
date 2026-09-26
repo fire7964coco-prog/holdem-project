@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Was ist ein Bad Beat beim Poker? Wenn Favorit sein nicht reicht",
   seoTitle: "Was ist ein Bad Beat beim Poker? Zu 80% vorn, verloren",
   desc: "Ein Bad Beat ist ein Verlust als klarer Favorit, weil dein Gegner Glück hat. Wie er sich vom Cooler unterscheidet, der Bad Beat Jackpot und warum er dir hilft.",
-  tldr: "Ein Bad Beat ist, wenn du dein Geld als klarer Favorit reinbekommst – meist mit 80% oder mehr – und verlierst, weil dein Gegner eine Glückskarte trifft und dich aussaugt. Anders als beim Cooler im engeren Sinn warst du vorne, als das Geld reinging; das Deck hat dich erst am Ende verraten. Es schmerzt, aber Bad Beats sind eigentlich ein Zeichen, dass du in einem profitablen Spiel sitzt.",
+  tldr: "Ein Bad Beat ist, wenn du dein Geld als klarer Favorit reinbekommst – meist mit 80% oder mehr – und verlierst, weil dein Gegner eine Glückskarte trifft und dich aussaugt. Anders als beim Cooler im engeren Sinn warst du vorne, als das Geld reinging; das Deck hat dich erst am Ende verraten. Es schmerzt, aber eine stetige Reihe von Bad Beats bedeutet meist, dass Gegner ihr Geld hinten reinstecken – genau die Art Spiel, in der du sitzen willst.",
   category: "glossary",
   date: "2026-07-05",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-21",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "💔",
@@ -19,7 +19,7 @@ export const POST: Post = {
   content: `
 Der eine, der immer noch schmerzt: Ich hielt zwei Asse, bin all-in gegangen gegen einen Spieler, der mit einem Paar Fünfen gecallt hat, und musste zusehen, wie eine der letzten beiden Fünfen auf den River knallte. Ich hatte alles richtig gemacht. Mein Geld ging als besser als 4:1-Favorit rein, und trotzdem verlor ich den ganzen Stack an ==eine der beiden Karten im Deck, die mich schlagen konnten==. Das ist ein Bad Beat, und wenn du lange genug Poker spielst, wird er dir tausende Male passieren.
 
-Ein **Bad Beat** ist, wenn du deine Chips als klarer statistischer Favorit reinbekommst und trotzdem verlierst, weil dein Gegner eine Glückskarte fängt und dich ==g:aussaugt==. Das Schlüsselwort ist *Favorit* – du warst vorne, als das Geld reinging, und nur eine unwahrscheinliche Karte hat das Ergebnis gedreht. Es ist eines der am häufigsten überstrapazierten Wörter im ganzen [Poker-Glossar](/de/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp") – hier steht deshalb genau, was wirklich als Bad Beat zählt: wie er sich von einem [Cooler](/de/blog/holdem-cooler "thumb:/images/holdem-cooler-hero.webp") unterscheidet, was ein „Bad Beat Jackpot“ auszahlt, und die kontraintuitive Wahrheit, die jeder gewinnende Spieler irgendwann lernt: Bad Beats sind *gut* für dich.
+Ein **Bad Beat** ist, wenn du deine Chips als klarer statistischer Favorit reinbekommst und trotzdem verlierst, weil dein Gegner eine Glückskarte fängt und dich ==g:aussaugt==. Das Schlüsselwort ist *Favorit* – du warst vorne, als das Geld reinging, und nur eine unwahrscheinliche Karte hat das Ergebnis gedreht. Es ist eines der am häufigsten überstrapazierten Wörter im ganzen [Poker-Glossar](/de/blog/holdem-glossary "thumb:/images/holdem-glossary-hero.webp") – hier steht deshalb genau, was wirklich als Bad Beat zählt: wie er sich von einem [Cooler](/de/blog/holdem-cooler "thumb:/images/holdem-cooler-hero.webp") unterscheidet, was ein „Bad Beat Jackpot“ auszahlt, und die kontraintuitive Wahrheit, die jeder gewinnende Spieler irgendwann lernt: Bad Beats sind meist ein *gutes* Zeichen.
 
 ---
 
@@ -37,7 +37,7 @@ Insgeheim gut | Was es für deinen langfristigen Profit bedeutet
 ## Was ist ein Bad Beat beim Poker?
 
 > **Kurze Antwort**
-> Ein Bad Beat ist eine Hand, die du verlierst, obwohl du beim Einsetzen der Chips ==ein starker statistischer Favorit== warst – dein Gegner hat eine unwahrscheinliche Karte getroffen und dich überholt. Du hast dein Geld „gut“ reinbekommen, in der Mathematik vorne, und das Deck hat trotzdem den einen Runout geliefert, der dich schlägt. Der Verlust ist nicht dein Fehler, sondern Varianz von ihrer schlimmsten Seite.
+> Ein Bad Beat ist eine Hand, die du verlierst, obwohl du beim Einsetzen der Chips ==ein starker statistischer Favorit== warst – dein Gegner hat eine unwahrscheinliche Karte getroffen und dich überholt. Du hast dein Geld „gut“ reinbekommen, in der Mathematik vorne – meist der richtige Spielzug –, und das Deck hat trotzdem den einen Runout geliefert, der dich schlägt. Der Verlust ist nicht dein Fehler, sondern Varianz von ihrer schlimmsten Seite.
 
 Der Mechanismus ist immer ein **Suckout**: eine Karte – am Flop, Turn oder River –, die ankommt, nachdem das Geld reingegangen ist, und eine verlierende Hand in eine gewinnende verwandelt. Deine Asse haben ihr Paar Fünfen zerlegt, bis diese dritte Fünf auftauchte. Dein Top Pair lag vor ihrem Flushdraw, bis das letzte Herz fiel. Dieser Moment – der Favorit, der von einem Draw überrannt wird, der es nie hätte schaffen dürfen – ist der Kern des Begriffs. Ihn zu verstehen ist auch der erste Schritt, ihn deine Session nicht ruinieren zu lassen, dieselbe emotionale Disziplin, die einen Profi von einem [Fish](/de/blog/holdem-fish) trennt.
 
@@ -108,7 +108,7 @@ Die häufigsten Versionen, mit ungefähren Preflop- und Flop-Equities:
 
 *Gemessen an der Latte von oben ist Overpair gegen Flushdraw der Grenzfall der Familie: Bei ~63% ist es eher Varianz als ein „echter“ Bad Beat – aber am Tisch heißt es trotzdem so.*
 
-Am ikonischsten ist **Asse geknackt durch ein Set.** Du bekommst zwei Asse all-in preflop gegen ein Paar Siebenen – du bist ungefähr ein 80%-Favorit, ein klarer 4:1-Vorsprung zu deinen Gunsten. Aber es sind noch zwei Siebenen im Deck, und wenn eine das Board trifft – und kein Ass dazukommt –, schlägt ihr Drilling dein Paar. Vier von fünf Malen holst du den Pot; beim fünften hast du eine Bad-Beat-Story, die niemand hören will. Die Mathematik war nie falsch – du bist nur auf der falschen Seite gelandet, was genau der Grund ist, warum eine einzelne Hand dir [nichts darüber sagt, ob du gut gespielt hast](/de/blog/holdem-cooler).
+Am ikonischsten ist **Asse geknackt durch ein Set.** Du bekommst zwei Asse all-in preflop gegen ein Paar Siebenen – du bist ungefähr ein 80%-Favorit, ein klarer 4:1-Vorsprung zu deinen Gunsten. Aber es sind noch zwei Siebenen im Deck, und wenn eine das Board trifft, schlägt ihr Drilling dein Paar fast immer – nur ein Ass oder ein seltener Runout (ein Flush, eine Straße oder ein Drilling auf dem Board) rettet dich. Vier von fünf Malen holst du den Pot; beim fünften hast du eine Bad-Beat-Story, die niemand hören will. Die Mathematik war nie falsch – du bist nur auf der falschen Seite gelandet, was genau der Grund ist, warum eine einzelne Hand dir [nichts darüber sagt, ob du gut gespielt hast](/de/blog/holdem-cooler).
 
 ---
 
@@ -158,13 +158,13 @@ Das ist die Obergrenze des Bad-Beat-Schmerzes: nicht ein 80%-Favorit, der unterg
 ## Warum sind Bad Beats eigentlich gut für dich?
 
 > **Kurze Antwort**
-> Weil ein Bad Beat einen Gegner voraussetzt, der ==hinten lag, als er bezahlt hat== – und genau diesen Gegner willst du am Tisch haben. An einem Tisch, an dem dir niemand mehr rausdrawt, spielen alle ihre schwachen Hände korrekt weg, und dann ist dort auch nichts mehr zu verdienen. Jeder Beat, den du kassierst, ist damit eine Quittung dafür, dass an deinem Tisch Gegner sitzen, an denen du verdienst.
+> Weil ein Bad Beat einen Gegner voraussetzt, der ==hinten lag, als er bezahlt hat== – und genau diesen Gegner willst du am Tisch haben. An einem Tisch, an dem niemand mehr solche verlierenden Calls macht, spielen alle ihre schwachen Hände korrekt weg – ein weit härteres Spiel. Eine stetige Reihe von Beats ist damit meist ein Zeichen, dass an deinem Tisch Gegner sitzen, an denen du verdienst.
 
-**Jeder Bad Beat, den du kassierst, ist der Beweis, dass du in einem schlagbaren Spiel sitzt.**
+**Eine stetige Reihe von Bad Beats ist meist ein Zeichen, dass du in einem schlagbaren Spiel sitzt.**
 
-Denk darüber nach, was ein Bad Beat braucht: einen Gegner, der sein Geld als mathematischer Underdog *hinten* reingesteckt hat und Glück hatte. Meistens ist das ein Spieler, der **verlierende Entscheidungen** trifft – genau der Gegner, den du willst. Wenn niemand an deinem Tisch je gegen dich rausdrawen würde, hieße das, dass alle ihre schwachen Hände korrekt folden, und es gäbe kein Geld zu gewinnen. Wie eine bekannte Coaching-Maxime es ausdrückt: Ein Suckout von einem schwachen Spieler ist ein *Geschenk* – es ist der Eintrittspreis dafür, die anderen vier Male an seine Chips zu kommen.
+Denk darüber nach, was ein Bad Beat braucht: einen Gegner, der sein Geld als mathematischer Underdog *hinten* reingesteckt hat und Glück hatte. Meistens ist das ein Spieler, der **verlierende Entscheidungen** trifft – genau der Gegner, den du willst. Wenn niemand an deinem Tisch je solche verlierenden Calls machen würde, hieße das, dass alle ihre schwachen Hände korrekt folden – ein weit härteres Spiel. Wie eine bekannte Coaching-Maxime es ausdrückt: Ein Suckout von einem schwachen Spieler ist ein *Geschenk* – es ist der Eintrittspreis dafür, die anderen vier Male an seine Chips zu kommen.
 
-Und je besser du spielst, desto mehr Beats kassierst du und desto weniger teilst du selbst aus – genau das ist das Vorzeichen eines Edges. Was übrig bleibt – das Einzige, was deine langfristigen Ergebnisse tatsächlich bestimmt – ist die Qualität deiner Entscheidungen. **Dein Geld gut reinzubekommen und zu verlieren ist auf Dauer trotzdem ein Sieg** in allem, worauf es ankommt. Die Chips kommen zurück; der Edge ist dauerhaft, die Varianz vorübergehend.
+Über eine ausreichend große Stichprobe gleicht sich das Glück um deine Erwartung herum aus. Bist du derjenige, der sein Geld gut reinbekommt, kassierst du mehr Beats, als du austeilst – sie sind die Kehrseite all der Pots, die du als Favorit gewinnst. Was deine langfristigen Ergebnisse bestimmt, ist die Qualität deiner Entscheidungen. **Dein Geld gut reinzubekommen und zu verlieren ist auf Dauer trotzdem ein Sieg** in allem, worauf es ankommt. Der Edge ist das, was sich über Tausende von Händen aufsummiert; ein einzelner Beat ist nur Rauschen drumherum.
 
 ---
 
@@ -173,12 +173,12 @@ Und je besser du spielst, desto mehr Beats kassierst du und desto weniger teilst
 > **Kurze Antwort**
 > Indem du die *nächsten* Hände schützt, nicht die verlorene. Ein Bad Beat enthält keine Lektion über dein Spiel – er kann dir nur schaden, wenn er ändert, wie du danach spielst. Benenne ihn kurz, achte scharf auf Tilt, mach notfalls fünf Minuten Pause und vertrau der Bankroll, die genau für diese Schwankungen existiert.
 
-Weil ein Bad Beat keine Lektion über dein Spiel enthält, ist seine einzige echte Gefahr, was er mit deinen *nächsten* paar Händen macht. Schütze sie:
+Sobald du geprüft hast, dass das Reingehen richtig war – Sizing, Stacktiefe, Turnierdruck –, enthält ein Bad Beat keine Lektion über dein Spiel, und seine größte Gefahr ist, was er mit deinen *nächsten* paar Händen macht. Schütze sie:
 
 1. **Sprich es laut aus.** Ein einfaches „Ich hatte es gut drin, ich konnte nichts machen“ schlägt stilles Grübeln. Es als Varianz zu benennen schließt die Akte.
 2. **Achte auf Tilt.** Der Pot, den du verloren hast, ist weg; die drei leichtsinnigen Hände, die du spielst, um ihn zurückzugewinnen, sind der eigentliche Preis eines Bad Beats. Wenn du die Hitze aufsteigen fühlst, ist das dein Signal, langsamer zu machen.
 3. **Mach eine Pause.** Setz eine Runde aus, hol dir Wasser, geh fünf Minuten weg. Es ist die günstigste Versicherung im Poker dagegen, aus einer verlorenen Hand eine verlorene Session zu machen.
-4. **Vertrau deiner Bankroll.** Bad Beats sind der Grund, warum du eine Bankroll führst, die dafür gebaut ist, Varianz zu absorbieren. Ein Beat ist ein Rundungsfehler über zehntausende von Händen – er schadet deinen Ergebnissen nur, wenn du zulässt, dass er ändert, wie du spielst.
+4. **Vertrau deiner Bankroll.** Bad Beats sind der Grund, warum du eine Bankroll führst, die dafür gebaut ist, Varianz zu absorbieren. Im Cashgame ist ein Beat ein Rundungsfehler über zehntausende von Händen – der bleibende Schaden entsteht erst, wenn du zulässt, dass er ändert, wie du spielst. Im Turnier kann er deinen Run sofort beenden; das ist die Varianz, die du mit der Anmeldung akzeptierst.
 5. **Verzichte auf die Bad-Beat-Story.** Niemand will sie hören, und sie zu wiederholen lässt dich den Tilt nur noch einmal durchleben. Das Kennzeichen eines Profis ist nicht, nie Beats zu kassieren – es ist, sie bis zur nächsten Hand vergessen zu haben.
 
 ---
@@ -208,7 +208,7 @@ A. Die Spieler selbst. Der Jackpot wächst aus einem zusätzlichen Drop, den der
 
 **Q. Was ist der Unterschied zwischen einem Bad Beat und einem Suckout?**
 
-A. Ein Suckout ist die *Karte*, ein Bad Beat die *ganze Hand* aus Sicht des Verlierers. Trifft der Underdog die Karte, die er brauchte, nachdem das Geld drin war, war das ein Suckout – und aus Sicht dessen, der vorn lag, wird daraus ein Bad Beat. Beides beschreibt denselben Moment aus zwei Blickwinkeln: „Ich hab ihn ausgesaugt“ sagt der Gewinner, „ich habe einen Bad Beat kassiert“ der Verlierer.
+A. Ein Suckout ist die *Karte*, ein Bad Beat die *ganze Hand* aus Sicht des Verlierers. Trifft der Underdog die Karte, die er brauchte, nachdem das Geld drin war, war das ein Suckout – und lag der Verlierer dabei als klarer Favorit vorn, wird daraus aus seiner Sicht ein Bad Beat. Beides beschreibt denselben Moment aus zwei Blickwinkeln: „Ich hab ihn ausgesaugt“ sagt der Gewinner, „ich habe einen Bad Beat kassiert“ der Verlierer.
 
 **Q. Sind Bad Beats online häufiger?**
 
@@ -226,11 +226,11 @@ A. Nein – in fast jedem Fall sind sie Gegensätze. Ein Bad Beat bedeutet, dass
 
 ## Die 3 Dinge, die du dir merken solltest
 
-1. **Ein Bad Beat ist ein Verlust als großer Favorit an einen glücklichen Suckout** – du warst vorne, als das Geld reinging, hast es richtig gespielt und wurdest outgedrawt. Es ist Varianz, kein Fehler.
+1. **Ein Bad Beat ist ein Verlust als großer Favorit an einen glücklichen Suckout** – du warst vorne, als das Geld reinging, und wurdest outgedrawt. War das Reingehen der richtige Spielzug, ist es Varianz, kein Fehler.
 2. **Streng definiert ist es das Gegenteil eines Coolers.** Ein Bad Beat braucht einen großen Vorteil und einen Suckout (der Underdog verbessert sich); ein Cooler im engeren Sinn hat keinen Suckout (der Führende blieb vorn). Wenn du beim Reingehen klarer Favorit warst und dein Gegner sich verbessern musste, um zu gewinnen, war es ein Bad Beat.
 3. **Bad Beats sind insgeheim gut für dich.** Sie bedeuten, dass Gegner ihr Geld hinten reinstecken und Glück haben – meistens verlierende Entscheidungen, die dich weit öfter auszahlen, als sie dich verbrennen. Bekomm es gut rein, schüttel den Beat ab und lass die Varianz sich ausgleichen.
 
-Bad Beats sind die Steuer, die du für ein gewinnendes Spiel zahlst. Die besten Spieler kassieren genau so viele wie alle anderen – sie haben nur gelernt, sie als Varianz abzuhaken, die nächste Hand vor Tilt zu schützen und zurück dazu zu kommen, [den Tisch auszuspielen](/de/blog/holdem-fish). Bekomm dein Geld oft genug gut rein, und die Grausamkeit des Decks wird zu deinem Profit.
+Bad Beats sind die Steuer, die du für ein gewinnendes Spiel zahlst. Die besten Spieler kassieren reichlich davon – oft sogar mehr, weil sie öfter Favorit sind –, sie haben nur gelernt, sie als Varianz abzuhaken, die nächste Hand vor Tilt zu schützen und zurück dazu zu kommen, [den Tisch auszuspielen](/de/blog/holdem-fish). Bekomm dein Geld oft genug gut rein, und die Grausamkeit des Decks wird zu deinem Profit.
 
 ---
 

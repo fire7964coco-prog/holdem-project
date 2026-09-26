@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Estar in position significa agir por último — você vê a decisão de cada adversário antes de gastar uma ficha. Exemplos de solver mostram que a posição costuma melhorar a realização de equity, mas nenhum assento fica necessariamente acima ou abaixo de 100%: ranges, board e ação podem inverter o padrão habitual. É por isso que o UTG abre ~13% das mãos e o button ~43% — e por que posição reescreve cada c-bet, bluff e decisão de controle de pote no pós-flop.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-09-22",
-  masterUpdated: "2026-09-22",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎯",
@@ -177,7 +177,7 @@ Cada cadeira ganha o seu próprio range de abertura porque **o número de jogado
 | Hijack | ~20% | Começam as oportunidades de roubo |
 | **Cutoff** | **~27%** | Só o button atrás — cadeira nobre de roubo |
 | **Button** | ==g:**~43%**== | Última ação pós-flop garantida — abertura mais larga |
-| Small blind | ~40% quando folda até você (diante de um aumento: 3-bet ou fold) | Largo quando folda até você — aumente por padrão, embora completar seja um [limp](/pt/blog/holdem-limping) defensável em pote não aumentado; diante de um aumento, 3-bet ou fold — não pague |
+| Small blind | ~40% quando folda até você (diante de um aumento: 3-bet ou fold) | Largo quando folda até você — aumente por padrão, embora completar seja um [limp](/pt/blog/holdem-limping) defensável em pote não aumentado; diante de um aumento, 3-bet ou fold — quase nunca só pague |
 | Big blind | Defende largo vs roubos | Ação de fechamento + pot odds, não aberturas |
 
 ![Mesa de poker de 9 jogadores mostrando ranges de abertura alargando do UTG (~13%, vermelho apertado) ao Button (~43%, verde largo)](/images/holdem-position-play-opening-range.webp "Range de abertura por posição — o UTG abre ~13%, o button ~43%")
@@ -194,11 +194,11 @@ A maioria dos guias para em "evite jogar OOP". Beleza — mas você está nos bl
 
 **1. O [check-raise](/pt/blog/low-board-check-raise) é o seu equalizador.** É a única arma que o OOP tem e o IP não: como ele espera apostar quando recebe check, ==g:um check-raise vira o piloto automático posicional dele contra ele mesmo.== Monte o range com honestidade — mãos fortes (trincas, two pair) mais projetos com equity de verdade (sequências abertas, flush draws) — para nunca ser só bluff nem só valor.
 
-**2. Aposte maior quando apostar.** Apostas OOP precisam encerrar a mão mais cedo. Um sizing maior (pense em dois terços a três quartos do pote em vez de um terço) nega as cartas grátis e os floats baratos que, sem isso, a posição daria de graça ao seu adversário. Jogar small-ball OOP só estende a mão — e cada street extra favorece quem age por último.
+**2. Dê uma função a cada aposta — e ajuste o tamanho ao spot.** Não existe um tamanho único fora de posição. Nos potes de um aumento só que resolvemos, o jogador OOP que apostou escolheu sobretudo cerca de um terço do pote (79,6% do range do small blind usou esse tamanho no A♠A♥6♦, um board de ás pareado que favorece muito o aumentador). Nos potes de 3-bet, o 3-bettor OOP ainda preferiu o tamanho pequeno no A♦K♠2♥ (57,8%), mas passou para dois terços do pote no Q♥T♥7♠ e no 8♦5♣2♠. O tamanho maior serve para negar as cartas grátis e os floats baratos que, sem isso, a posição daria ao seu adversário; o menor deixa você apostar um range largo gastando pouco. O que perde é apostar sem plano — cada street extra em que você vai à deriva favorece quem age por último.
 
 **3. Controle de pote significa dar mais check, pagar mais e foldar mais cedo.** Mãos de força média OOP querem showdowns baratos. Linhas de check-call chegam lá; linhas de aposta-e-leva-aumento não. E quando o terceiro barril chega e a sua mão não melhorou, lembre o que mãos marginais OOP de fato são: ==r:bluff-catchers que sub-realizam.== Foldar o river OOP mais vezes do que parece natural costuma ser o certo.
 
-**4. Dê lead (donk-bet) raramente e com propósito.** Apostar contra o aumentador do pré-flop só funciona em boards que favorecem o seu range — flops baixos e conectados que arrebentam um range de defesa de blind e erram um range de aumentador. Como linha padrão é legível e explorável; como bisturi nos boards certos, é tranquilo.
+**4. Dê lead (donk-bet) raramente e com propósito.** Apostar contra o aumentador do pré-flop funciona melhor em boards que favorecem o seu range — flops baixos e conectados que arrebentam um range de defesa de blind e erram um range de aumentador. Como linha padrão é legível e explorável; como bisturi nos boards certos, é tranquilo.
 
 **5. Melhor de tudo: não chegue nesse spot.** Só pagar aumentos do small blind, cold-callar em middle position com mãos dominadas, defender o big blind contra aberturas de early position com lixo — a maior parte da desgraça OOP é autoinfligida na decisão pré-flop.
 
@@ -211,10 +211,10 @@ Massivamente. A continuation bet é fundamentalmente uma jogada de informação,
 | Situação | Frequência típica de c-bet no solver (flop) |
 |---|---|
 | **IP (BTN/CO vs defesa de blind)** | **~65–75%** dos boards |
-| OOP como 3-bettor (potes de 3-bet dos blinds) | Altíssima — nas nossas rodadas de solver o big blind c-beta mais de 97% das vezes nos dois boards, Q♥T♥7♠ e 8♦5♣2♠ — no tamanho de dois terços do pote; o de um terço ficou abaixo de 1% |
+| OOP como 3-bettor (potes de 3-bet dos blinds) | Altíssima — nas nossas rodadas de solver o big blind c-beta mais de 97% das vezes nos dois boards, Q♥T♥7♠ e 8♦5♣2♠ — no tamanho de dois terços do pote; o de um terço ficou abaixo de 1% (no A♦K♠2♥ quem liderou foi o tamanho de um terço, 57,8%) |
 | Aumentador OOP vs pagador IP (pote de um aumento) | ~30–45% — o mais seletivo |
 
-In position, você pode dar c-bet num range largo — incluindo ar e backdoor draws — porque o seu adversário precisa responder sem saber a sua próxima jogada, e quando pagam você ainda age por último no turn. Out of position, a mesma aposta é mais arriscada: um check-raise encerra o seu bluff, e um call te deixa adivinhando primeiro em toda street restante. É por isso que dar c-bet 100% cegamente "porque você aumentou no pré-flop" queima dinheiro OOP num pote de um aumento só — a linha de quase 100% ali em cima é do 3-bettor, e é a vantagem de range dele que autoriza isso.
+In position, você pode dar c-bet num range largo — incluindo ar e backdoor draws — porque o seu adversário precisa responder sem saber a sua próxima jogada, e quando pagam você ainda age por último no turn. Out of position, a mesma aposta é mais arriscada: um raise encerra o seu bluff, e um call te deixa adivinhando primeiro em toda street restante. É por isso que dar c-bet 100% cegamente "porque você aumentou no pré-flop" queima dinheiro OOP num pote de um aumento só — a linha de quase 100% ali em cima é do 3-bettor, e é a vantagem de range dele que autoriza isso.
 
 O framework completo de sizing e textura de board está no [guia de continuation bet](/pt/blog/holdem-continuation-bet).
 
@@ -236,7 +236,7 @@ Para a mecânica dos próprios blinds — por que existem e como as apostas for�
 
 ## 6-max vs full ring — e torneios vs cash
 
-**O 6-max comprime o mapa.** Com três cadeiras de early removidas, o primeiro a agir no 6-max enfrenta só cinco adversários — então ==**o UTG de 6-max joga como o lojack de full ring, abrindo em torno de ~17%**== em vez dos ~13% do UTG de full ring. Toda outra cadeira alarga na mesma proporção, roubos aparecem mais vezes e 3-bets ficam mais frequentes no geral. O leak mais comum ao trocar de formato é carregar o aperto do 9-max para o 6-max — você acaba foldando até sumir da mesa.
+**O 6-max comprime o mapa.** Com três cadeiras de early removidas, o primeiro a agir no 6-max enfrenta só cinco adversários — então ==**o UTG de 6-max joga como o lojack de full ring, abrindo em torno de ~17%**== em vez dos ~13% do UTG de full ring. As cadeiras finais continuam com o mesmo número de jogadores atrás, então os ranges delas quase não mudam — mas você senta nelas com mais frequência, os roubos são mais comuns e os 3-bets ficam mais frequentes no geral. O leak mais comum ao trocar de formato é carregar o aperto do 9-max para o 6-max — você acaba foldando até sumir da mesa.
 
 **Torneios mantêm a mesma mecânica com apostas diferentes em cada decisão.** Em cash games, vantagens posicionais se acumulam com calma ao longo de horas e os rebuys permitem repor as fichas perdidas com esses leaks. Em torneios, stacks encolhendo mudam a textura: abaixo de ~15 big blinds, o jogo colapsa para push/fold, onde a nuance posicional importa menos, enquanto em 20–30 BB o roubo de late position vira o motor da sobrevivência — até que o ICM da bolha torne alguns roubos matematicamente corretos em suicídio de torneio. A comparação completa está no [guia de torneio vs cash game](/pt/blog/holdem-tournament-vs-cash-game).
 
@@ -251,7 +251,7 @@ Para a mecânica dos próprios blinds — por que existem e como as apostas for�
 
 **Q. O que significa out of position no poker?**
 
-A. Out of position (OOP) significa que você precisa agir antes do seu adversário nas streets pós-flop — flop, turn e river. Você compromete fichas sem saber o que ele vai fazer, não consegue pegar cartas grátis e sofre para controlar o tamanho do pote. Os blinds ficam OOP contra toda outra cadeira (entre os dois, o small blind age primeiro — então o big blind na verdade tem posição sobre o small blind); o button nunca fica OOP contra ninguém.
+A. Out of position (OOP) significa que você precisa agir antes do seu adversário nas streets pós-flop — flop, turn e river. Você compromete fichas sem saber o que ele vai fazer, não consegue pegar cartas grátis e sofre para controlar o tamanho do pote. Os blinds ficam OOP contra toda cadeira que não é blind (entre os dois, o small blind age primeiro — então o big blind na verdade tem posição sobre o small blind); o button nunca fica OOP contra ninguém.
 
 **Q. Quem age primeiro — o small blind ou o big blind?**
 
@@ -271,11 +271,11 @@ A. Duas respostas, dependendo da pergunta. O small blind é a cadeira estrutural
 
 **Q. O small blind é uma posição inicial?**
 
-A. Não — o small blind é um blind, não uma cadeira de "posição inicial". Os jogadores de posição inicial (UTG e as cadeiras ao lado dele) abrem apertado porque a mesa inteira age atrás — e no pós-flop eles pelo menos agem *depois* dos blinds. O small blind é na verdade a pior cadeira para se jogar uma mão: posta metade de um blind e depois age primeiro em toda street pós-flop. Não trate como posição inicial — o padrão moderno do small blind é dar 3-bet ou foldar.
+A. Não — o small blind é um blind, não uma cadeira de "posição inicial". Os jogadores de posição inicial (UTG e as cadeiras ao lado dele) abrem apertado porque a mesa inteira age atrás — e no pós-flop eles pelo menos agem *depois* dos blinds. O small blind é na verdade a pior cadeira para se jogar uma mão: posta metade de um blind e depois age primeiro em toda street pós-flop. Não trate como posição inicial — diante de um aumento, o padrão moderno do small blind é dar 3-bet ou foldar, quase nunca só pagar; quando foldam até você, aumente na maioria das vezes.
 
 **Q. É melhor limpar ou aumentar do UTG?**
 
-A. Aumente ou folde — não abra com limp. Uma mão forte o bastante para jogar da pior cadeira pré-flop é forte o bastante para aumentar; limpar convida potes multiway que você vai jogar out of position, limita o seu range percebido e nunca ganha os blinds de cara. A exceção rara é limpar atrás de limpers já existentes em jogos ao vivo passivos com pares pequenos e suited connectors.
+A. Aumente ou folde — não abra com limp. Uma mão forte o bastante para jogar da pior cadeira pré-flop é forte o bastante para aumentar; limpar convida potes multiway que você vai jogar out of position, limita o seu range percebido e nunca ganha os blinds de cara. O UTG não tem ninguém à frente para limpar atrás, então a exceção de costume — o over-limp atrás de limpers já existentes em jogos ao vivo passivos com pares pequenos e suited connectors — pertence às cadeiras mais tardias.
 
 **Q. Quão largo eu devo abrir do UTG vs do button?**
 
@@ -283,7 +283,7 @@ A. Do UTG num jogo full ring, abra mais ou menos as ~13% melhores mãos — pare
 
 **Q. Como a posição afeta a frequência de c-bet?**
 
-A. In position (button ou cutoff), solvers dão c-bet em cerca de 65–75% dos flops — você age por último em toda street seguinte, então apostar largo, incluindo ar, é seguro. Out of position, num pote de um aumento só, isso cai para cerca de 30–45%, porque um check-raise pode encerrar o seu bluff e um call te deixa adivinhando primeiro no turn e no river (como 3-bettor fora de posição a história é outra — a vantagem de range deixa você dar c-bet em quase todo flop nos boards que rodamos). Dar c-bet na mesma frequência OOP e IP é um dos leaks mais comuns e mais caros.
+A. In position (button ou cutoff), solvers dão c-bet em cerca de 65–75% dos flops — você age por último em toda street seguinte, então apostar largo, incluindo ar, é seguro. Out of position, num pote de um aumento só, isso cai para cerca de 30–45%, porque um raise pode encerrar o seu bluff e um call te deixa adivinhando primeiro no turn e no river (como 3-bettor fora de posição a história é outra — a vantagem de range deixa você dar c-bet em quase todo flop nos boards que rodamos). Dar c-bet na mesma frequência OOP e IP é um dos leaks mais comuns e mais caros.
 
 **Q. Você deveria sempre dar 3-bet do small blind?**
 
@@ -295,8 +295,8 @@ A. Quando você entra num pote já aumentado, na maioria das vezes sim — o pad
 
 1. **A posição melhora a realização de equity em média.** Nenhum assento fica fixo acima ou abaixo de 100%; ranges, board e ação determinam o valor. A vantagem habitual vem de agir por último, não de cartas melhores.
 2. **Ranges deslizam com a posição.** O UTG abre ~13%, o button ==g:~43%== — e cada cadeira no meio ganha um degrau na escada. ==r:Jogar mãos de button do UTG sangra fichas.==
-3. **O button é a melhor cadeira; os blinds são as piores.** O BB perde mais fichas brutas (aposta forçada); o SB é a pior cadeira para de fato jogar (primeiro a agir em toda street). Proteja o seu button e faça 3-bet-ou-fold do seu small blind.
-4. **OOP não é caso perdido — é disciplina.** Check-raise como equalizador, aumente o tamanho ao apostar, controle potes com mãos médias e folde rivers mais do que parece natural.
+3. **O button é a melhor cadeira; os blinds são as piores.** O BB perde mais fichas brutas (aposta forçada); o SB é a pior cadeira para de fato jogar (primeiro a agir em toda street). Proteja o seu button e, diante de um aumento no small blind, dê 3-bet ou fold quase sempre.
+4. **OOP não é caso perdido — é disciplina.** Check-raise como equalizador, ajuste o tamanho das apostas ao board e ao tipo de pote, controle potes com mãos médias e folde rivers mais do que parece natural.
 5. **Aumente ou folde no under the gun.** Abrir com limp no UTG combina a pior cadeira pré-flop com a linha mais fraca.
 6. **O 6-max comprime o mapa.** O UTG de 6-max joga como o lojack de full ring (~17%) — recalibre ao trocar de formato.
 

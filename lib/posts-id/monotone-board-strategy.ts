@@ -10,7 +10,7 @@ export const POST: Post = {
   category: "strategy",
   date: "2026-09-15",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-02",
+  masterUpdated: "2026-09-26",
   readTime: "10 mnt",
   emoji: "♠️",
   image: "/images/gto-srp-monotone-oop-id.webp",
@@ -70,7 +70,7 @@ Kejelasan itu membatasi keuntungan dari taruhan besar.
 
 :::compare
 Jika Anda memiliki flush | Jika Anda tidak memiliki flush
-Bet besar membuat banyak hand tanpa flush fold | Semakin besar bet, semakin terkonsentrasi call pada flush
+Bet besar membuat banyak hand tanpa flush fold | Semakin besar bet, semakin terkonsentrasi call pada flush dan draw sekop
 Bet kecil dapat mempertahankan one pair | Bet kecil murah, tetapi one pair juga belum tentu fold
 :::
 
@@ -95,13 +95,13 @@ Bet kecil dapat mempertahankan one pair | Bet kecil murah, tetapi one pair juga 
 
 Mengapa hanya delapan combo? Tiga kombinasi As suited tidak mungkin ada karena **Q♠, 9♠, dan 2♠ sudah berada di board**. Dari sembilan yang tersisa, A♠K♠ masuk range 3-bet preflop sehingga tidak tiba sebagai caller. Tersisa delapan.
 
-Pertimbangannya adalah hasil sepanjang hand, bukan hanya uang yang masuk sekarang. Bet besar membuat banyak one pair dan high card fold. Hand dengan satu sekop mungkin call, tetapi tidak dapat menyelesaikan flush yang mengalahkan nut flush Anda; kemungkinan perbaikan lain tetap bergantung pada kartu berikutnya. Dengan check, Anda memberi lawan kesempatan bet dengan pair atau bluff, lalu mengumpulkan value di turn dan river. Ini penjelasan strategis atas hasil, bukan tabel frekuensi bet lanjutan BTN.
+Pertimbangannya adalah hasil sepanjang hand, bukan hanya uang yang masuk sekarang. Bet besar membuat banyak one pair dan high card fold. Hand dengan satu sekop mungkin call, tetapi tidak akan pernah membuat flush yang lebih tinggi daripada nut flush Anda; untuk menang, ia membutuhkan bantuan runner-runner seperti full house. Dengan check, Anda memberi lawan kesempatan bet dengan pair atau bluff, lalu mengumpulkan value di turn dan river. Ini penjelasan strategis atas hasil, bukan tabel frekuensi bet lanjutan BTN.
 
 Angkanya memperlihatkan potensi itu: **EQR sekitar 230%**, lebih dari dua kali bagian pot berdasarkan equity. Pot awal 5,5bb, sedangkan expected value A♠J♠ mencapai ==12,36bb==. Potensi taruhan berikutnya membuat EV hand ini melampaui isi pot awal.
 
-Blocker juga terlihat dalam tabel. **A♠J♠ dan A♠T♠ check lebih dari 80%, sementara A♠7♠ sampai A♠4♠ berada di kisaran 52–64% dan lebih sering bet.** J♠ atau T♠ mengurangi kombinasi flush non-nut yang memakai kartu tersebut. Tidak ada flush J-high pada board ini: Q♠ sudah terbuka, sehingga setiap flush setidaknya Q-high; flush terbaik kedua adalah K-high. J♠ dan T♠ memblokir **kartu pembeda berikutnya** dalam flush seperti K♠J♠ atau J♠T♠, yakni hand yang dapat membayar bet Anda.
+Blocker juga terlihat dalam tabel. **A♠J♠ dan A♠T♠ check lebih dari 80%, sementara A♠7♠ sampai A♠4♠ berada di kisaran 52–64% dan lebih sering bet.** J♠ atau T♠ mengurangi kombinasi flush non-nut yang memakai kartu tersebut. Tidak ada flush J-high pada board ini: Q♠ sudah terbuka, sehingga setiap flush setidaknya Q-high; flush terbaik kedua adalah K-high. J♠ dan T♠ memblokir **kartu pembeda berikutnya** dalam flush seperti K♠J♠ atau J♠T♠.
 
-Ketika sebagian calon caller itu hilang, value bet berkurang dan check menjadi lebih menarik. Kicker rendah tidak memblokir kombinasi J♠/T♠ tersebut, sehingga lebih banyak hand yang dapat membayar. Ini kecenderungan, bukan rumus mutlak: A♠3♠ kembali check 79,7%.
+Namun, blocker saja tidak menjelaskan perbedaan itu. Hitung 18 flush non-nut milik BTN: J♠ dan T♠ masing-masing menghapus 4, sedangkan 7♠ menghapus 6, 8♠ dan 6♠ masing-masing 5, 5♠ 4, dan 4♠ hanya 2. A♠7♠, blocker terbesar di antara semuanya, tetap bet 44,0% dari waktu, kedua setelah A♠4♠ (47,3%) yang hanya memblokir 2. Hanya 3♠ yang tidak memblokir satu pun, dan A♠3♠ check 79,7%. Untuk setiap combo nut flush, ketiga aksi berselisih tidak lebih dari 0,05bb, jadi baca kolom ini sebagai campuran di antara pilihan yang nilainya hampir sama, bukan aturan blocker.
 
 ## Apakah flush selain nuts dimainkan berbeda?
 
@@ -140,7 +140,7 @@ Sebaliknya, BTN memiliki lebih banyak **Ax dan Kx offsuit dengan satu sekop**. H
 
 **Top pair yang sama dapat memiliki prospek sangat berbeda, tergantung apakah ada sekop di tangan.**
 
-Ambil Q♥J♦: top pair tanpa sekop. Hand ini sudah tertinggal dari **12,0%** range BTN: flush 5,7%, overpair 2,5%, serta set dan two pair. Ia juga kalah kicker dari **AQ dan KQ**. Q♠ ada di board dan Q♥ di tangan Anda, menyisakan dua queen: 8 combo AQ dan 8 combo KQ, atau **sekitar 3,4%** dari 474. Jadi, kategori yang sudah unggul berjumlah kira-kira **15,4%** menurut perhitungan tersebut.
+Ambil Q♥J♦: top pair tanpa sekop. Hand ini sudah tertinggal dari **12,0%** seluruh range BTN yang berjumlah 474 combo: flush 5,7%, overpair 2,5%, serta set dan two pair. Ia juga kalah kicker dari **AQ dan KQ**. Q♠ ada di board dan Q♥ di tangan Anda, menyisakan dua queen: 8 combo AQ dan 8 combo KQ, yaitu 16 dari 428 combo yang masih mungkin dipegang BTN setelah Q♥ dan J♦ Anda dikeluarkan, atau **sekitar 3,7%**. Dihitung dengan cara yang sama, semua hand yang sudah unggul berjumlah 68 dari 428, kira-kira **15,9%**.
 
 Selain itu, **29,2%** range BTN memiliki draw satu sekop yang dapat menyalip pada kartu berikutnya. Jangan langsung menjumlahkan kedua angka: empat dari 16 combo AQ/KQ tadi juga memegang sekop dan ikut tercakup dalam 29,2%. Q♥J♦ bukan hand yang nyaman mengambil value selama tiga street; perannya lebih dekat ke bluff-catcher untuk satu taruhan.
 
@@ -190,7 +190,7 @@ A. Flop dengan tiga kartu bersuit sama, misalnya Q♠ 9♠ 2♠. Dua kartu denga
 
 **Q. Apakah flush yang sudah jadi selalu harus bet?**
 
-A. Tidak. Delapan combo nut flush dalam hasil ini check antara 52,7% dan 84,2%, dengan rata-rata 69,9%. Flush non-nut check 81,4%. Bet besar membuat banyak one pair dan high card fold; satu sekop yang tetap call pun tidak dapat membuat flush lebih tinggi daripada nut flush. Check dapat mengundang bet lawan dan mempertahankan peluang value pada turn serta river.
+A. Tidak. Delapan combo nut flush dalam hasil ini check antara 52,7% dan 84,2%, dengan rata-rata 69,9%. Flush non-nut check 81,4%. Bet besar membuat banyak one pair dan high card fold; satu sekop yang tetap call pun tidak akan pernah membuat flush lebih tinggi daripada nut flush, dan membutuhkan bantuan runner-runner seperti full house untuk menang. Check dapat mengundang bet lawan dan mempertahankan peluang value pada turn serta river.
 
 **Q. Mengapa BB memiliki lebih banyak flush daripada BTN?**
 

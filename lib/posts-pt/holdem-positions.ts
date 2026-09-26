@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Posições no poker: nome de cada assento e o mapa",
   seoTitle: "Seu assento muda de nome toda mão — posições no poker",
   desc: "Os nomes andam com o button, não com as cadeiras. Cada posição do poker — UTG, hijack, cutoff, button — mais o mapa 6-max e quem age primeiro.",
-  tldr: "Posições no poker são nomes de assento medidos a partir do dealer button — UTG, lojack, hijack, cutoff, button e os blinds — e elas andam um assento no sentido horário toda mão. No pré-flop, o UTG age primeiro e o big blind por último; no pós-flop, o small blind age primeiro e o button por último. Os números de assento físicos nunca mudam; as posições sim.",
+  tldr: "Posições no poker são nomes de assento medidos a partir do dealer button — UTG, lojack, hijack, cutoff, button e os blinds — e elas normalmente andam um assento no sentido horário toda mão. No pré-flop, o UTG age primeiro e o big blind por último; no pós-flop, o small blind age primeiro e o button por último. Os números de assento físicos nunca mudam; as posições sim.",
   category: "strategy",
   date: "2026-06-13",
-  updated: "2026-09-13",
-  masterUpdated: "2026-09-13",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🎯",
@@ -34,13 +34,13 @@ Mesma mão. Resultado completamente diferente. A única coisa que mudou foi o me
 ---
 
 > **Resposta rápida**
-> Posições no poker são os ==assentos nomeados medidos a partir do dealer button== — UTG, lojack, hijack, cutoff, button, small blind, big blind — e elas ==andam um assento no sentido horário toda mão== conforme o button anda. No pré-flop, o UTG age primeiro e o big blind por último. No pós-flop, o small blind age primeiro e o button por último.
+> Posições no poker são os ==assentos nomeados medidos a partir do dealer button== — UTG, lojack, hijack, cutoff, button, small blind, big blind — e elas ==normalmente andam um assento no sentido horário toda mão== conforme o button anda. No pré-flop, o UTG age primeiro e o big blind por último. No pós-flop, o small blind age primeiro e o button por último.
 
 ---
 
 ## Quais são as posições numa mesa de poker? (mapa completo de assentos)
 
-Uma posição não é um assento fixo — é um **nome para onde você senta em relação ao dealer button**, e ela determina ==quando você age em cada street==. Como o button anda um assento no sentido horário depois de cada mão, cada jogador na mesa usa um nome diferente a cada mão.
+Uma posição não é um assento fixo — é um **nome para onde você senta em relação ao dealer button**, e ela determina ==quando você age em cada street==. Num jogo normal o button anda um assento no sentido horário depois de cada mão, então cada jogador na mesa usa um nome diferente de uma mão para a outra.
 
 Aqui está o mapa completo de posições 9-max — o nome de cada assento, a abreviação, a zona, e exatamente quando ele age antes e depois do flop:
 
@@ -91,13 +91,13 @@ Isso pega quase todo jogador ao vivo de primeira viagem: quando o floor chama **
 
 Na maioria dos card rooms, os assentos físicos são numerados a partir da esquerda imediata do dealer — ==o Assento 1 é convencionalmente a primeira cadeira à esquerda do dealer==, contando no sentido horário até o Assento 9 ou 10 à direita do dealer. Esses números estão parafusados nas cadeiras. A equipe os usa para logística: sentar novos jogadores, entregar fichas, marcar o tempo.
 
-As posições são o oposto — elas ==giram um assento no sentido horário a cada mão== com o button. O Assento 5 pode ser o button nesta mão, o cutoff na próxima, e o hijack na mão seguinte.
+As posições são o oposto — elas ==giram um assento no sentido horário com o button, normalmente a cada mão==. O Assento 5 pode ser o button nesta mão, o cutoff na próxima, e o hijack na mão seguinte.
 
 :::compare
 Números de assento (físicos) | Posições (poker)
 Fixos à cadeira — o Assento 1 costuma ser a esquerda imediata do dealer | Andam com o dealer button toda mão
 Usados pela equipe: "Assento 5, fichas a caminho" | Usados pela estratégia: "o cutoff abre"
-Nunca mudam durante uma sessão | Mudam a cada mão, um assento no sentido horário
+Nunca mudam durante uma sessão | Normalmente mudam a cada mão, um assento no sentido horário
 Te dizem ONDE você senta | Te dizem QUANDO você age
 :::
 
@@ -157,7 +157,7 @@ A pergunta mais feita sobre posições, respondida numa tabela só:
 
 | Street | Primeiro a agir | Último a agir |
 |:---|:---|:---|
-| **Pré-flop** | **UTG** — primeiro assento à esquerda do big blind | **Big blind** — pode dar check ou aumentar |
+| **Pré-flop** | **UTG** — primeiro assento à esquerda do big blind | **Big blind** — pode dar check ou aumentar se ninguém tiver aumentado |
 | **Flop / Turn / River** | **Small blind** — ou o primeiro assento ainda ativo à esquerda do button | **Button** — ou o assento ativo mais próximo antes dele |
 
 Então — **os blinds vão primeiro?** ==No pré-flop, não. No pós-flop, sim.== Antes do flop os blinds já colocaram dinheiro, então a ação começa no UTG e volta até eles por último — o big blind age por último de todos. Depois do flop a ordem reinicia no sentido horário a partir do button: o small blind fala primeiro, o big blind em segundo, e o button sempre por último.
@@ -184,7 +184,7 @@ Os nomes das posições não mudam com o tamanho da mesa — ==os nomes desapare
 
 **O heads-up é o que quebra a intuição de todo mundo.** Com só dois jogadores, ==o button posta o small blind== — o mesmo assento é BTN e SB ao mesmo tempo. Isso significa que o button age ==**primeiro** no pré-flop== (o big blind age por último, como sempre) mas ainda age ==**por último** em toda street pós-flop==, enquanto o big blind age primeiro no pós-flop. Todo outro tamanho de mesa segue o padrão normal; só o heads-up funde o melhor assento com um blind.
 
-**6-max vs full ring** é subtração pura: os três assentos de early (UTG, UTG+1 e UTG+2) somem e o lojack herda o nome UTG, então o 6-max roda UTG → HJ → CO → BTN → SB → BB. A consequência prática não é que um assento jogue "mais tarde" — o cutoff tem os mesmos três jogadores atrás dele nas duas mesas. É que ==com os assentos iniciais fora, você senta nos blinds e em posição tardia com muito mais frequência, e menos gente abre à sua frente== — o UTG do 6-max enfrenta cinco adversários, não oito — e é por isso que os ranges ficam mais amplos em toda a linha em jogos short-handed. Os números assento por assento vivem no [guia de estratégia de posição](/pt/blog/holdem-position-play), e as mãos exatas que preenchem cada range estão mapeadas na [tabela de starting hands](/pt/blog/holdem-starting-hands-chart).
+**6-max vs full ring** é subtração pura: os três assentos de early (UTG, UTG+1 e UTG+2) somem e o lojack herda o nome UTG, então o 6-max roda UTG → HJ → CO → BTN → SB → BB. A consequência prática não é que um assento jogue "mais tarde" — o cutoff tem os mesmos três jogadores atrás dele nas duas mesas. É que ==com os assentos iniciais fora, você senta nos blinds e em posição tardia com muito mais frequência, e menos gente abre à sua frente== — o UTG do 6-max enfrenta cinco adversários, não oito — e é por isso que o primeiro assento abre mais amplo e você joga mais mãos no geral em jogos short-handed, mesmo que o range do cutoff quase não mude. Os números assento por assento vivem no [guia de estratégia de posição](/pt/blog/holdem-position-play), e as mãos exatas que preenchem cada range estão mapeadas na [tabela de starting hands](/pt/blog/holdem-starting-hands-chart).
 
 > **Ressalva de nomenclatura:** alguns sites e salas rotulam o primeiro assento do 6-max como "LJ" ou "MP" em vez de UTG, e os assentos do meio no 10-handed às vezes aparecem como "MP1/MP2". Os rótulos variam; a ordem de ação nunca.
 
@@ -211,7 +211,7 @@ A. O lojack (LJ) é o assento três à direita do button — o mais adiantado do
 
 **Q. Quem vai primeiro, o small blind ou o big blind?**
 
-A. O small blind age antes do big blind em toda street. No pré-flop, os dois blinds agem por último (o big blind por último de todos, com a opção de dar check ou aumentar); no pós-flop, o small blind é o primeiro assento a agir na mesa. A única exceção é o heads-up, onde o button posta o small blind e o big blind age primeiro no pós-flop.
+A. O small blind age antes do big blind em toda street. No pré-flop, os dois blinds agem por último (o big blind por último de todos — com a opção de dar check ou aumentar se ninguém tiver aumentado); no pós-flop, o small blind é o primeiro assento a agir na mesa. A única exceção é o heads-up, onde o button posta o small blind e o big blind age primeiro no pós-flop.
 
 **Q. Quantas posições existem no poker 6-max?**
 
@@ -219,7 +219,7 @@ A. Seis: UTG (também chamado de lojack), hijack, cutoff, button, small blind e 
 
 **Q. As posições no poker mudam a cada mão?**
 
-A. Sim. O dealer button anda um assento no sentido horário depois de cada mão, e como todas as posições são nomeadas pela distância até o button, a posição de cada jogador se desloca um assento a cada mão. Ao longo de uma volta completa você vai ocupar cada posição da mesa exatamente uma vez.
+A. Sim. O dealer button anda um assento no sentido horário depois de cada mão, e como todas as posições são nomeadas pela distância até o button, a posição de cada jogador normalmente se desloca um assento a cada mão. Ao longo de uma volta completa numa mesa estável você vai ocupar cada posição exatamente uma vez — as exceções aparecem quando um jogador quebra ou sai e a mesa joga com dead button (o mesmo jogador pode então agir por último em duas mãos seguidas), ou quando entram jogadores, mesas são quebradas ou o jogo vira heads-up.
 
 **Q. O que é o Assento 1 no poker?**
 
@@ -229,7 +229,7 @@ A. O Assento 1 é uma cadeira física, não uma posição — na maioria dos car
 
 ## O que levar
 
-1. **Posições são nomes, não cadeiras.** Todo assento é nomeado pela distância até o dealer button, e todo nome anda um assento no sentido horário a cada mão.
+1. **Posições são nomes, não cadeiras.** Todo assento é nomeado pela distância até o dealer button, e todo nome normalmente anda um assento no sentido horário a cada mão.
 2. **O mapa numa linha:** UTG → UTG+1 → UTG+2 → LJ → HJ → CO → BTN → SB → BB. O pré-flop começa no UTG e termina no big blind; o pós-flop começa no small blind e termina no button.
 3. **Números de assento ≠ posições.** O Assento 1 é convencionalmente a esquerda imediata do dealer e nunca anda; as posições giram a cada mão. Um é um endereço, o outro é uma função.
 4. **O tamanho da mesa subtrai pela frente.** O 6-max derruba os assentos iniciais; o heads-up funde o button com o small blind — primeiro a agir no pré-flop, último a agir no pós-flop.

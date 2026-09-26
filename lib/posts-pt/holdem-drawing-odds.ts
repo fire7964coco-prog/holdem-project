@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "odds",
   date: "2026-07-04",
   updated: "2026-09-26",
-  masterUpdated: "2026-09-24",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🎲",
@@ -43,9 +43,9 @@ A mão que me fez aprender isso de cor: eu paguei um aumento com um par de cinco
 
 | Mão | Flopar feito | Flopar o projeto | Completar até o river |
 |:---|:---:|:---|:---|
-| Par na mão → set | 11,8% (7,5 para 1) | — | set→boat ou quadra 33% até o river |
+| Par na mão → set | 11,8% (7,5 para 1) | — | set→boat ou quadra 33,4% até o river |
 | Duas do naipe → flush | 0,84% (118 para 1) | 10,9% flush draw | 35% (9 outs) |
-| Conectores → sequência | 1,3% (76 para 1) | ~10% OESD | 31,5% (8 outs) |
+| Conectores 54–JT → sequência | 1,3% (76 para 1) | ~10% OESD | 31,5% (8 outs) |
 | Duas despareadas → par | ~32% | — | — |
 | Par na mão → quadra | 0,245% (407 para 1) | — | — |
 
@@ -86,7 +86,7 @@ Set mining é a jogada de [implied odds](/pt/blog/holdem-implied-odds "thumb:/im
 Dois números relacionados que as pessoas perguntam:
 
 - **Acertar um set até o river** (do preflop, vendo todas as cinco cartas da mesa) é ==**19,2%**== — 1 − C(48,5)/C(50,5). Maior que o número do flop porque você recebe mais duas cartas, mas você não pode contar em chegar ao river barato, e é por isso que o número do flop rege o set mining.
-- **Set sobre set** — dois jogadores com pares de bolso flopam set na mesma mão, e o menor perde para o maior — não tem um número fixo único porque depende de quantos adversários têm pares, mas com dois jogadores segurando pares, *os dois* floparem set dá perto de ~1%. É o clássico cooler: a matemática esteve do seu lado o caminho todo.
+- **Set sobre set** — dois jogadores com pares de bolso flopam set na mesma mão, e o menor perde para o maior — não tem um número fixo único porque depende de quantos adversários têm pares, mas com dois jogadores segurando pares, *os dois* floparem set dá perto de ~1%. É o clássico cooler — e a derrota sozinha não diz se o call de set mining estava certo; quem diz são o preço e os stacks.
 
 ---
 
@@ -113,7 +113,7 @@ Então a frase honesta é: duas cartas do mesmo naipe flopam um **projeto** muit
 
 O número de completar se divide por street, e isso importa no instante em que ainda há aposta:
 
-- **Flop → river (as duas cartas):** 35,0% — use isso só quando você está all-in no flop.
+- **Flop → river (as duas cartas):** 35,0% — use isso só quando você vai ver as duas cartas sem mais apostas (você está all-in, ou pagou um all-in).
 - **Flop → turn (uma carta):** 9 ÷ 47 = 19,1%.
 - **Turn → river (uma carta):** 9 ÷ 46 = 19,6%.
 
@@ -149,7 +149,7 @@ Repare que o OESD (31,5%) e o flush draw (35%) estão perto — os dois são "um
 | **Quadra** | Um par na mão | 0,245% · 407 para 1 | 48 ÷ 19.600 |
 | **Full house** | Um par na mão | 0,98% · 101 para 1 | 192 ÷ 19.600 |
 | **Trinca** | Duas cartas despareadas | 1,35% · 73 para 1 | 264 ÷ 19.600 |
-| **Straight flush** | Conectores do mesmo naipe | 0,02% · ~4.900 para 1 | 4 ÷ 19.600 |
+| **Straight flush** | Conectores do mesmo naipe 54s–JTs | 0,02% · ~4.900 para 1 | 4 ÷ 19.600 |
 
 </div>
 
@@ -190,7 +190,7 @@ O que surpreende as pessoas: se **você** tem ases numa mesa de 10 jogadores, a 
 
 **Q. Quais são as odds de flopar um set?**
 
-A. Cerca de 11,8%, ou 1 em 8,5, quando você tem um par na mão — geralmente citado como "7,5 para 1 contra". Vem de 1 − C(48,3)/C(50,3): dos 19.600 flops possíveis, 17.296 erram seu par. Esse número é a base inteira pra saber se fazer set mining com um par pequeno é lucrativo.
+A. Cerca de 11,8%, ou 1 em 8,5, quando você tem um par na mão — geralmente citado como "7,5 para 1 contra". Vem de 1 − C(48,3)/C(50,3): dos 19.600 flops possíveis, 17.296 erram seu par. Esse número é o ponto de partida do set mining com um par pequeno — se o call é lucrativo também depende de quanto você consegue ganhar quando acerta.
 
 **Q. Por que dizem 7,5 para 1 mas também 1 em 8?**
 
@@ -222,21 +222,21 @@ A. Projeto de sequência é ter quatro cartas rumo a uma sequência. Um open-end
 
 **Q. Quais são as odds de flopar quadra?**
 
-A. 0,245%, ou 407 para 1, segurando um par na mão — existem exatamente 48 flops (suas duas últimas cartas iguais mais qualquer terceira carta, C(48,1)) em 19.600. Flopar um straight flush é ainda mais raro, cerca de 1 em 4.900.
+A. 0,245%, ou 407 para 1, segurando um par na mão — existem exatamente 48 flops (suas duas últimas cartas iguais mais qualquer terceira carta, C(48,1)) em 19.600. Flopar um straight flush com conectores do mesmo naipe de 54s a JTs é ainda mais raro, cerca de 1 em 4.900.
 
 **Q. Quais são as odds de receber um par de ases?**
 
-A. 220 para 1 (0,45%) pra ases especificamente — 6 das 1.326 combinações iniciais. Qualquer par na mão é bem mais comum, a 16 para 1 (5,9%). E se você tem ases numa mesa cheia, outro jogador também com ases é cerca de 1 em 136.
+A. 220 para 1 (0,45%) pra ases especificamente — 6 das 1.326 combinações iniciais. Qualquer par na mão é bem mais comum, a 16 para 1 (5,9%). E se você tem ases numa mesa de 10 jogadores, outro jogador também com ases é cerca de 1 em 136 (cerca de 1 em 153 com nove jogadores).
 
 **Q. Quais são as odds de set sobre set?**
 
-A. Não existe um número fixo único — depende de quantos adversários têm pares na mão — mas quando dois jogadores têm pares e ambos flopam sets é mais ou menos 1%. É o cooler máximo: você flopa um set só 11,8% das vezes pra começar, então dois de vocês fazendo isso na mesma mesa é uma história, não um erro.
+A. Não existe um número fixo único — depende de quantos adversários têm pares na mão — mas quando dois jogadores têm pares e ambos flopam sets é mais ou menos 1%. É o cooler máximo: você flopa um set só 11,8% das vezes pra começar, então dois de vocês fazendo isso na mesma mesa é raro — e o resultado sozinho não mostra se algum dos calls foi um erro.
 
 ---
 
 ## As 3 coisas pra lembrar
 
-1. **Flopar um set: 11,8% (7,5 para 1).** O número que decide todo call de set mining — só pague fundo o bastante pra ser pago 15× ou mais quando você acerta.
+1. **Flopar um set: 11,8% (7,5 para 1).** O ponto de partida de todo call de set mining — a profundidade dos stacks e um adversário que provavelmente paga decidem se ele é lucrativo, então mire em ganhar 15× ou mais quando você acerta.
 2. **Feito vs projeto vs completar são números diferentes.** Duas cartas do mesmo naipe flopam um flush feito 0,84%, um flush draw 10,9%, e completam esse projeto 35%. Nunca cite o errado.
 3. **Um projeto grande é cerca de um em três até o river.** Flush draw 35%, open-ended 31,5% — e mais ou menos um em cinco ou seis numa street só.
 

@@ -8,10 +8,10 @@ export const POST: Post = {
   tldr: "Continuation bet (c-bet) adalah taruhan di flop oleh pemain yang raise preflop. Aturan modern bukan 'c-bet tiap flop' — melainkan taruh kecil dan sering di flop yang menguntungkan range Anda (board tinggi dan kering seperti K-7-2) dan check yang menguntungkan lawan (board rendah dan nyambung seperti 7-6-5). Beri sizing kecil — sekitar sepertiga pot — di board kering, besar — dua pertiga pot atau lebih — di board basah, c-bet lebih jarang saat out of position kalau Anda raiser tunggalnya (sebagai 3-bettor out of position keadaannya justru berbalik — hampir selalu bertaruh), dan jauh lebih jarang di pot multiway.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-15",
+  updated: "2026-09-26",
   // 2026-09-15: ID GTO ①·⑨ 발행에 맞춰 해당 해설과 ID 이미지 역링크 반영.
   // EN 09-11 본문 대응 상태는 유지한다. 세부 이력: docs/locale-intentional-diffs.md.
-  masterUpdated: "2026-09-11",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "15 mnt",
   emoji: "🔥",
@@ -40,7 +40,7 @@ Check | Sering langkah terbaik, bukan kelemahan
 
 **Continuation bet adalah taruhan yang dibuat di flop oleh pemain yang menjadi agresor sebelum flop** — orang terakhir yang raise. Anda "melanjutkan" cerita kekuatan yang Anda mulai preflop. Yang penting, ==Anda tak perlu mengenai flop untuk c-bet==; sebagian besar c-bet bagus dibuat dengan tangan yang benar-benar meleset.
 
-Alasannya berhasil adalah satu statistik sederhana: **sebuah tangan meleset di flop — tak membentuk pair atau lebih baik — sekitar dua pertiga dari waktu.** Jadi saat Anda bertaruh, lawan Anda biasanya juga tak punya apa-apa, dan fold. Anda bertaruh bukan karena kuat; Anda bertaruh karena *mereka mungkin lemah* dan Andalah yang mengklaim pimpinan.
+Alasannya berhasil adalah satu statistik sederhana: **dua kartu hole yang tidak berpasangan gagal membentuk pair di flop sekitar dua pertiga dari waktu (67,6%).** Jadi saat Anda bertaruh, lawan Anda sering juga meleset — dan banyak dari tangan itu fold. Anda bertaruh bukan karena kuat; Anda bertaruh karena *mereka mungkin lemah* dan Andalah yang mengklaim pimpinan.
 
 Begitu Anda paham c-bet flop, sisa tangga "barreling" mengikuti:
 
@@ -103,7 +103,7 @@ Tak ada satu persentase c-bet yang "benar" — siapa pun yang memberi Anda satu 
 |:---|:---:|:---|
 | **In position, heads-up, board kering** | **70–100%** (kecil) | "Range bet" klasik — taruh nyaris semuanya, mungil |
 | **In position, heads-up, board basah** | **~50–60%** | Lebih terpolarisasi — value dan draw bertaruh, tangan kosong check |
-| **Out of position, heads-up (pot single-raised, Anda yang raise)** | **~30–45%** | Check jauh lebih banyak untuk melindungi checking range. Sebagai *3-bettor* out of position keadaannya berbalik — di atas 97% pada dua board yang kami solve, hampir semuanya dengan ukuran dua pertiga pot (ukuran sepertiga hanya di bawah 1%), lihat [panduan posisi](/id/blog/holdem-position-play) |
+| **Out of position, heads-up (pot single-raised, Anda yang raise)** | **~30–45%** | Check jauh lebih banyak untuk melindungi checking range. Sebagai *3-bettor* out of position keadaannya berbalik: di atas 97% pada ketiga board yang kami solve, hampir semuanya dengan dua pertiga pot di Q♥T♥7♠ dan 8♦5♣2♠, tapi sebagian besar dengan sepertiga pot di A♦K♠2♥ (57,8%); lihat [panduan posisi](/id/blog/holdem-position-play) |
 | **Multiway (2 lawan)** | **~50% atau kurang** | Ada yang mungkin nyambung — perketat |
 | **Multiway (3+ lawan)** | **Hanya tangan kuat & draw bagus** | Fold equity praktis lenyap |
 
@@ -156,7 +156,7 @@ Meng-check flop bukan akhir tangan. **Delayed c-bet** — meng-check flop sebaga
 
 - **Flop menguntungkan lawan** (board rendah, nyambung), jadi bertaruh buruk — tapi **turn mengubah gambar** (overcard, atau kartu yang menaikkan equity Anda).
 - Anda **meng-check-back tangan lumayan** in position dan ingin bertaruh satu street value kini setelah board lebih aman.
-- Anda ingin **menangkap float**: pemain yang berencana bluff-raise c-bet flop Anda tak mendapat taruhan untuk diserang, dan malah menghadapi taruhan turn Anda.
+- Anda ingin **meniadakan raise di flop**: pemain yang berencana bluff-raise c-bet flop Anda tak mendapat taruhan untuk diserang, dan malah menghadapi taruhan turn Anda.
 
 Menunda mengubah spot di mana c-bet otomatis akan menguras chip menjadi taruhan terkendali dan terinformasi satu street kemudian.
 
@@ -166,7 +166,7 @@ Menunda mengubah spot di mana c-bet otomatis akan menguras chip menjadi taruhan 
 
 Mari buat "jangan"-nya eksplisit, karena di sinilah uang diselamatkan:
 
-- **Board menghantam range lawan.** Flop 7‑6‑5 atau 9‑8‑7 mengenai tangan yang meng-call raise jauh lebih keras daripada mengenai tangan Anda. Bertaruh di sini cuma menyumbang chip — check.
+- **Board menghantam range lawan.** Flop 7‑6‑5 atau 9‑8‑7 mengenai tangan yang meng-call raise jauh lebih keras daripada mengenai tangan Anda. Bertaruh di sini dengan sebagian besar range Anda cuma menyumbang chip — check jauh lebih sering, dan saat Anda bertaruh, pilih ukuran besar dan selektif.
 - **Anda out of position di board dinamis** dengan tangan marginal. Beraksi lebih dulu tanpa informasi, jaga pot tetap kecil dan check.
 - **Anda multiway dengan tangan kosong.** Dibahas di atas — tak ada fold equity, tak ada taruhan.
 - **Tangan Anda ingin melindungi checking range.** Kadang Anda meng-check tangan kuat dengan sengaja supaya check Anda tak otomatis lemah.
@@ -197,7 +197,7 @@ Raise preflop sama, flop berlawanan, langkah tepat berlawanan. Itu seluruh pelaj
 | **Bertaruh besar dengan range lebar** | Range lebar ingin sizing kecil, bukan besar | Kecil di kering, besar hanya saat terpolarisasi |
 | **C-bet ringan di multiway** | Fold equity runtuh dengan lebih banyak pemain | Hanya value & draw vs 2+ |
 | **C-bet OOP terlalu sering** | Anda tak bisa merealisasikan equity saat beraksi lebih dulu | Check lebih banyak, bangun checking range |
-| **Bertaruh ke board yang mengenai mereka** | 7‑6‑5 menghantam range mereka, bukan Anda | Check dan menyerah |
+| **Bertaruh ke board yang mengenai mereka** | 7‑6‑5 menghantam range mereka, bukan Anda | Check lebih banyak; saat bertaruh, besar dan selektif |
 | **Barreling "sekali-lalu-berhenti"** | C-bet flop, selalu menyerah di turn = mudah di-float | Punya rencana turn sebelum menembak |
 | **Triple-barrel tanpa equity** | Bluff habis-habisan tanpa out atau blocker | Bluff dengan equity cadangan atau blocker bagus |
 
@@ -248,7 +248,7 @@ A. Delayed c-bet adalah saat raiser preflop meng-check flop lalu bertaruh di tur
 
 **Q. Kapan Anda TIDAK boleh c-bet?**
 
-A. Jangan c-bet saat board menghantam range lawan (board rendah dan nyambung), saat Anda out of position dengan tangan marginal di board dinamis, saat Anda multiway dengan tangan kosong, atau saat tangan Anda lebih baik melindungi checking range. Meng-check di spot-spot ini bukan kelemahan — itu menyelamatkan chip dan membuat taruhan Anda di masa depan lebih kredibel.
+A. Jangan c-bet secara default saat board menghantam range lawan (board rendah dan nyambung — check lebih banyak, dan saat bertaruh, besar dan selektif), saat Anda out of position dengan tangan marginal di board dinamis, saat Anda multiway dengan tangan kosong, atau saat tangan Anda lebih baik melindungi checking range. Meng-check di spot-spot ini bukan kelemahan — itu menyelamatkan chip dan membuat taruhan Anda di masa depan lebih kredibel.
 
 **Q. Apakah c-bet itu bluff?**
 
@@ -268,7 +268,7 @@ A. Sekitar 55–70% untuk c-bet flop adalah band yang sehat dan seimbang. Di ata
 
 1. **C-bet adalah taruhan flop oleh raiser preflop** — dan ia berhasil karena tangan meleset di flop sekitar dua pertiga dari waktu.
 2. **Board yang memutuskan.** Taruh board tinggi dan kering yang menguntungkan range Anda; check board rendah dan nyambung yang menguntungkan lawan.
-3. **Range advantage menetapkan frekuensi; nut advantage menetapkan ukuran.** Bertaruh sering di board yang Anda dominasi; bertaruh besar hanya saat Anda memegang lebih banyak nut.
+3. **Range advantage menetapkan frekuensi; nut advantage menetapkan ukuran.** Bertaruh sering di board yang Anda dominasi; bertaruh besar saat Anda memegang lebih banyak nut atau perlu membebani draw di board basah.
 4. **Kecil (⅓) di kering, besar (⅔+) di basah.** C-bet lebih jarang out of position kalau Anda raiser tunggalnya (sebagai 3-bettor out of position keadaannya justru berbalik — hampir selalu bertaruh), dan jauh lebih jarang di multiway.
 5. **Check itu senjata.** Pemain terbaik meng-check sering dan dengan sengaja — c-bet itu pisau bedah, bukan palu.
 

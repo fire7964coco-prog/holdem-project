@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "O straddle é uma aposta de blind opcional — normalmente o dobro do big blind — postada antes de as cartas serem distribuídas. Ela compra pro straddler a última ação no pré-flop e a opção de aumentar, dobrando os blinds do jogo. Em quase todo caso é uma jogada -EV, e na prática só existe em cash games, conforme as regras da casa.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-09-22",
-  masterUpdated: "2026-09-22",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "💰",
@@ -79,7 +79,7 @@ Nem todos os straddles são iguais — e as diferenças são todas sobre **onde 
 | **Mississippi** | Qualquer cadeira (muitas vezes button/CO) | À esquerda do straddler | Pré-flop — pós-flop só a partir do button* | Sim |
 | **Button** | O button | Small blind | Pré + pós-flop | Sim |
 | **Sleeper** | Uma cadeira que não é UTG | Normal (UTG) | Não | Regra da casa |
-| **Re-straddle** | À esquerda de um straddler | À esquerda do re-straddler | Só pré-flop | Sim |
+| **Re-straddle** | À esquerda de um straddler (algumas salas permitem qualquer cadeira) | À esquerda do re-straddler | Só pré-flop | Sim |
 
 </div>
 
@@ -124,7 +124,7 @@ A resposta honesta, e a que os solvers concordam: **pra quase todo mundo, não.*
 
 :::card
 🎯 | Você compromete às cegas | O dinheiro entra antes de você ver suas cartas, então você está jogando um pote inchado sem informação — a mesma desvantagem que faz dos blinds as piores cadeiras da mesa. E ainda corta pela metade a sua profundidade efetiva: num $1/$2, um stack de $200 são 100 big blinds, mas com um straddle de $4 na mesa o mesmo stack joga como 50
-📉 | Encolhe sua vantagem posicional | Dobrar o blind incha o pote inicial e deixa mais jogadores ainda pra agir quando você está nas suas melhores cadeiras de roubo. Contra a intuição, os solvers respondem abrindo **menos** mãos em potes com straddle — cerca de 15–20% menos no button, segundo as [simulações de potes com straddle do GTO Wizard](https://blog.gtowizard.com/preflop-strategy-in-straddled-pots/) — não mais
+📉 | Encolhe sua vantagem posicional | Dobrar o blind incha o pote inicial e deixa mais jogadores ainda pra agir quando você está nas suas melhores cadeiras de roubo. Contra a intuição, os solvers respondem abrindo **menos** mãos do button em potes com straddle — cerca de 15–20% menos, segundo as [simulações de potes com straddle do GTO Wizard](https://blog.gtowizard.com/preflop-strategy-in-straddled-pots/) — não mais
 💸 | Pode aumentar o rake do pote | Nos potes sujeitos a [rake](/pt/blog/holdem-rake), um pote maior pode pagar mais até atingir o cap. Esse aumento não se aplica a potes pré-flop sob a regra no flop, no drop, a jogos com time charge nem a potes que já atingiram o cap
 :::
 
@@ -179,7 +179,7 @@ A. Quase nunca. Torneios dependem de uma estrutura fixa de blinds que precisa se
 
 **Q. Straddle dá lucro? Você deveria straddar?**
 
-A. Pra maioria dos jogadores, não — é uma jogada -EV. Você compromete dinheiro às cegas, encolhe sua vantagem posicional (os solvers abrem *menos* mãos em potes com straddle, não mais) e pode pagar mais rake. Só é defensável em mesas loose-passive, em jogos onde todos dão straddle por turnos e nas mesmas condições, ou puramente por diversão — quase nunca como um jeito de ganhar dinheiro. Se todos participam por turnos e nas mesmas condições, o GTO Wizard observa que esses stakes maiores podem favorecer os melhores jogadores da mesa.
+A. Pra maioria dos jogadores, não — é uma jogada -EV. Você compromete dinheiro às cegas, encolhe sua vantagem posicional (os solvers abrem *menos* mãos do button em potes com straddle, não mais) e pode pagar mais rake. Só é defensável em mesas loose-passive, em jogos onde todos dão straddle por turnos e nas mesmas condições, ou puramente por diversão — quase nunca como um jeito de ganhar dinheiro. Se todos participam por turnos e nas mesmas condições, o GTO Wizard observa que esses stakes maiores podem favorecer os melhores jogadores da mesa.
 
 ---
 

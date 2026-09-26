@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Di Texas Hold'em Anda selalu memainkan tangan 5-kartu terbaik dari 7 (2 kartu tertutup + 5 kartu komunitas) — memakai kedua kartu tertutup, satu, atau tak satu pun (main dengan board). Pindai ketujuh kartu dengan urutan tetap: flush → straight → nilai berpasangan → kartu tinggi.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-09-13",
-  masterUpdated: "2026-09-13",
+  updated: "2026-09-26",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "11 mnt",
   emoji: "🃏",
@@ -172,7 +172,7 @@ Perhatikan baris terakhir: ==bahkan tanpa apa-apa, pasangan di board jadi bagian
 Anda bisa MEMEGANG keduanya — Anda tak pernah bisa MEMAINKAN keduanya. ==Sebuah tangan poker adalah tepat 5 kartu, jadi kombinasi yang tumpang tindih tidak menumpuk; Anda cukup memainkan yang lebih kuat.==
 
 - Anda memegang A♠ K♠ di Q♠ 7♠ 2♠ K♦ 3♣. Anda membentuk sepasang K DAN lima sekop. Tangan Anda adalah ==nut flush, A♠ K♠ Q♠ 7♠ 2♠== — sepasang K itu tak pernah muncul.
-- Anda memegang 8♥ 8♦ di 7♣ 6♦ 5♠ 4♥ K♦. Sepasang 8 DAN 8-7-6-5-4. Tangan Anda adalah ==straight eight high== — bukan "sepasang dengan straight." Saat showdown Anda tak perlu menyebutnya: kartu yang berbicara, dan dealer yang membaca tangan (TDA Rule 12). Yang harus Anda lakukan adalah membuka kedua kartu — kartu hanya berbicara untuk tangan yang dibuka dengan benar (Rule 13-A) — dan kalau dealer salah membacanya, katakan sebelum pot didorong.
+- Anda memegang 8♥ 8♦ di 7♣ 6♦ 5♠ 4♥ K♦. Sepasang 8 DAN 8-7-6-5-4. Tangan Anda adalah ==straight eight high== — bukan "sepasang dengan straight." Saat showdown Anda tak perlu menyebutnya: kartu yang berbicara, dan dealer yang membaca tangan (TDA 2024 Rule 12). Yang harus Anda lakukan adalah membuka kedua kartu — kartu hanya berbicara untuk tangan yang dibuka dengan benar (TDA 2024 Rule 13-A). Dan kalau dealer salah membacanya, langsung bicara: pembacaan tangan masih bisa digugat sampai hand berikutnya dimulai (TDA 2024 Rule 22), tapi jauh lebih mudah memperbaikinya sebelum pot didorong.
 
 Logika yang sama menjawab "bisakah punya three pair?" — Anda mungkin memegang tiga nilai berpasangan di antara 7 kartu, tapi hanya dua terbaik yang muat dalam 5 kartu (dibahas di [panduan peringkat tangan](/id/blog/holdem-hand-rankings)).
 
@@ -205,7 +205,7 @@ Top pair adalah tangan yang benar-benar kuat | Top pair rapuh — banyak river m
 
 ![Dry board vs wet board di Texas Hold'em — K72 rainbow (dry) vs JT8 two-tone (wet) dengan panah flush dan straight draw](/images/holdem-reading-dry-vs-wet-board.webp "Tekstur board: kering berarti aman, basah berarti banyak draw hidup")
 
-Di J♥ 10♥ 8♣, hati apa pun, 9 apa pun, 7 apa pun, dan Q apa pun mengubah siapa yang menang. Di K♠ 7♦ 2♣, hampir tak ada yang mengubahnya. ==Pair yang sama, tekanan yang sama sekali berbeda== — itu sebabnya kebiasaan urutan-pindai (flush → straight → pair) sekaligus jadi radar bahaya Anda.
+Di J♥ 10♥ 8♣, hati apa pun, 9 apa pun, 7 apa pun, dan Q apa pun bisa mengubah siapa yang menang. Di K♠ 7♦ 2♣, hampir tak ada yang mengubahnya. ==Pair yang sama, tekanan yang sama sekali berbeda== — itu sebabnya kebiasaan urutan-pindai (flush → straight → pair) sekaligus jadi radar bahaya Anda.
 
 ---
 
@@ -225,7 +225,7 @@ Pemula fold ke "dia pasti punya keriting" di board tiga keriting — tapi keriti
 
 ### Kesalahan 4 — Mengabaikan boat di paired board
 
-Anda river sebuah flush, board menampilkan dua Q, dan Anda tak pernah bertanya. Q-x mana pun punya trips; pocket pair mana pun yang cocok dengan board punya full house — dan ==full house mengalahkan flush==. Paired board + taruhan besar = cek boat sebelum Anda merayakan.
+Anda river sebuah flush, board menampilkan dua Q, dan Anda tak pernah bertanya. Tangan mana pun yang memegang satu Q setidaknya punya trips; pocket pair yang cocok dengan kartu board lainnya membentuk full house, dan pocket Q membentuk quads — dan ==full house mengalahkan flush==. Paired board + taruhan besar = cek boat sebelum Anda merayakan.
 
 ---
 
@@ -246,7 +246,7 @@ A. Tidak. Anda membentuk tangan lima-kartu terbaik dari kombinasi mana pun antar
 
 **Q. Apa arti "main dengan board" di Texas Hold'em?**
 
-A. Artinya 5 kartu komunitas sudah jadi tangan 5-kartu terbaik Anda — tak ada kartu tertutup yang memperbaikinya. Karena board itu bersama, setiap pemain bisa mengklaim tangan yang sama, jadi main dengan board biasanya berujung pada split pot kecuali kartu tertutup lawan memperbaiki board. Satu formalitas tetap memakan pot: sekalipun Anda main dengan board, Anda **wajib membuka kedua kartu tertutup** untuk mendapat bagian (==WSOP Tournament Rule 75==, TDA Rule 19) — kalau didorong ke muck tanpa dibuka, Anda tidak dapat apa-apa.
+A. Artinya 5 kartu komunitas sudah jadi tangan 5-kartu terbaik Anda — tak ada kartu tertutup yang memperbaikinya. Karena board itu bersama, setiap pemain bisa mengklaim tangan yang sama, jadi main dengan board biasanya berujung pada split pot kecuali kartu tertutup lawan memperbaiki board. Satu formalitas tetap memakan pot: sekalipun Anda main dengan board, Anda **wajib membuka kedua kartu tertutup** untuk mendapat bagian (==WSOP Tournament Rule 75==, TDA 2024 Rule 19) — kalau didorong ke muck tanpa dibuka, Anda tidak dapat apa-apa.
 
 **Q. Bisakah board jadi tangan terbaik untuk semua orang?**
 
@@ -278,7 +278,7 @@ A. Ketika lima kartu komunitas sudah membentuk straight, semua orang punya setid
 
 **Q. Apakah pair di board dihitung sebagai bagian tangan Anda?**
 
-A. Ya — kartu komunitas milik tangan setiap pemain. Pair di board dihitung ke dalam 5 terbaik Anda bahkan jika kartu tertutup Anda meleset total. Itu juga berarti lawan bisa memegang trips atau full house, jadi evaluasi ulang tangan sepasang di paired board mana pun.
+A. Ya — kartu komunitas milik tangan setiap pemain. Jika kartu tertutup Anda meleset total, pair di board tetap menjadi pair Anda. (Tapi pair itu tidak terkunci: jika kartu tertutup Anda membentuk straight atau flush, tangan yang lebih besar itulah yang dimainkan.) Itu juga berarti lawan bisa memegang trips atau full house, jadi evaluasi ulang tangan sepasang di paired board mana pun.
 
 ---
 
