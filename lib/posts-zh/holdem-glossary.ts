@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "这是一份大白话的德州扑克术语表，收的都是牌桌上真会碰到的词，按你怎么遇到它们来分组——下注动作、位置、牌型和牌面、玩家类型、钱，以及牌桌情境。先看下面那组“最容易搞混”的词（过牌 vs 跟注、set vs trips、cooler vs bad beat），再按分类随便翻。有深入指南的术语会直接给你链接。",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-22",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "12 分钟",
@@ -50,7 +50,7 @@ export const POST: Post = {
 | **过牌 vs 跟注（Check vs Call）** | 过牌 **不投一分筹码**（只有你不需要再补筹码跟上下注时才行）；跟注是 **跟上** 一个已经存在的下注。 |
 | **盲注 vs 前注（Blind vs Ante）** | 盲注是 **按位置** 收的强制下注（SB/BB）；前注用来起底池、由 **每个人** 出（如今的锦标赛通常用大盲前注，由一个座位代交）。 |
 | **set vs trips** | 两者都是三条——**set** 用的是一对口袋对子；**trips** 用的是一张手牌 + 牌面上的一对。 |
-| **cooler vs bad beat** | [cooler](/zh/blog/holdem-cooler) = 你一路落后又弃不掉；[bad beat](/zh/blog/holdem-bad-beat) = 你本来领先却被对手翻盘。 |
+| **cooler vs bad beat** | [cooler](/zh/blog/holdem-cooler) = 强到弃不掉的牌撞上更大的牌（严格意义上还要求进池时你已落后）；[bad beat](/zh/blog/holdem-bad-beat) = 你本来领先却被对手翻盘。 |
 | **价值下注 vs 诈唬（Value bet vs Bluff）** | 价值下注想 **让更差的牌跟你**；诈唬想 **让更好的牌弃掉**。 |
 | **底池赔率 vs 隐含赔率（Pot odds vs Implied odds）** | [底池赔率](/zh/blog/holdem-pot-odds) 只算 **现在池里** 的筹码；隐含赔率还加上你 **后面会赢到** 的部分。 |
 | **VPIP vs PFR** | VPIP = 你多常 **入池玩牌**；PFR = 你多常 **加注**。PFR 永远不可能超过 VPIP。 |
@@ -313,7 +313,7 @@ A. 两者都是三条、牌力也完全相同，但组成方式不一样。set �
 
 **Q. cooler 和 bad beat 有什么区别？**
 
-A. 在 bad beat 里，钱投进去时你本是热门，却被一张幸运牌翻盘。在 cooler 里，你一路落后、手里的牌又强到弃不掉，而且对手根本不需要什么幸运牌——那手更大的牌从一开始就领先。快速判断法：如果你的对手必须 *变强* 才能赢，那是 bad beat；如果不用，那就是 cooler。
+A. 在 bad beat 里，钱投进去时你本是热门，却被一张幸运牌翻盘。在严格意义上的 cooler 里，钱投进去时你就落后、手里的牌又强到弃不掉，对手也不需要什么幸运牌；也有牌手把任何一手大牌输给更大的牌都叫 cooler。快速判断法：如果钱投进去时你是大热门、而你的对手必须 *变强* 才能赢，那是 bad beat；如果钱投进去时他就已经领先，那就是 cooler。
 
 **Q. 扑克里的 3bet 是什么，为什么第一次加注不叫“1bet”？**
 

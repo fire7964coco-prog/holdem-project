@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Rake is the small cut the cardroom takes from most pots to host the game — usually 2.5–10% up to a cap of a few dollars. Most rooms take nothing if everyone folds before the flop ('no flop, no drop'). It hits low-stakes and short-handed players hardest, and rakeback returns a slice of it to regulars.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-09-22",
+  updated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🏦",
@@ -124,7 +124,7 @@ It's a genuine trade-off, and the answer surprises people:
 - **Live rake** tends to be a **higher percentage (often 10%) with a higher cap ($3–$6)** — but you only play ~30 hands an hour, so you pay it fewer times.
 - **Online rake** is usually a **lower percentage (3–5%) with a smaller cap ($1–$3)** — but you might see 250+ hands an hour across multiple tables, so a volume grinder can pay *more* rake per hour than a live player despite the lower rate.
 
-The lesson: never judge rake by the percentage alone. What matters is the percentage **times how often you pay it.** A "cheap" 5% online game you four-table can cost you more than a "pricey" 10% live game — which is exactly why rakeback and table selection matter more online.
+The lesson: never judge rake by the percentage alone. What matters is what you actually pay per pot — the percentage, up to the cap — **times how often you pay it.** A "cheap" 5% online game you four-table can cost you more than a "pricey" 10% live game — which is exactly why rakeback and table selection matter more online.
 
 ---
 
@@ -161,7 +161,7 @@ A. Rakeback returns a percentage of the rake you personally pay — often 20–4
 
 **Q. How can you pay less rake in poker?**
 
-A. You can't escape rake entirely in a raked game, but you can shrink it. Get the best rakeback deal you can, and choose rooms with player-friendly caps. Moving up in stakes shrinks rake too, since a fixed cap is a smaller share of each pot — but only take that step once your bankroll covers the swings *and* you still hold an edge over the tougher field, or the players will take far more than the rake ever did. Playing fewer, bigger pots rather than a flood of small ones lowers it too: the cap only kicks in on big pots, while small pots pay the full percentage. The same goes for avoiding very short-handed tables — where you play far more hands per hour and post blinds far more often, so you're in many more raked pots — and preferring high-stakes time-charge games — but moving to those games requires the same bankroll cushion and an edge over the field. On pure cost, a home game with no rake is the cheapest poker there is — nothing is skimmed from the pot.
+A. You can't escape rake entirely in a raked game, but you can shrink it. Get the best rakeback deal you can, and choose rooms with player-friendly caps. Moving up in stakes shrinks rake too, since a fixed cap is a smaller share of each pot — but only take that step once your bankroll covers the swings *and* you still hold an edge over the tougher field, or the players will take far more than the rake ever did. Playing fewer, bigger pots rather than a flood of small ones lowers it too: the cap only kicks in on big pots, while small pots pay the full percentage. The same goes for avoiding very short-handed tables, where you play far more hands per hour and post blinds far more often, so you're in many more raked pots per hour (even where the cap drops when fewer players are dealt in). It also helps to prefer high-stakes time-charge games — but moving to those games requires the same bankroll cushion and an edge over the field. On pure cost, a home game with no rake is the cheapest poker there is — nothing is skimmed from the pot.
 
 **Q. Is taking a rake illegal? Why is taking a rake in poker illegal?**
 

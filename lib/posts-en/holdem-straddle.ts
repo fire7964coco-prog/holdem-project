@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A straddle is an optional blind bet — usually twice the big blind — posted before the cards are dealt. It buys the straddler the last action preflop and the option to raise, doubling the stakes. In almost every case it's a -EV play, and outside cash games it's almost never allowed.",
   category: "glossary",
   date: "2026-07-04",
-  updated: "2026-09-22",
+  updated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "💰",
@@ -78,7 +78,7 @@ Not all straddles are the same — and the differences are all about **where the
 | **Mississippi** | Any seat (often button/CO) | Left of straddler | Preflop — postflop only from the button* | Yes |
 | **Button** | The button | Small blind | Pre + postflop | Yes |
 | **Sleeper** | A non-UTG seat | Normal (UTG) | No | House rules |
-| **Re-straddle** | Left of a straddler | Left of re-straddler | Preflop only | Yes |
+| **Re-straddle** | Left of a straddler (some rooms allow any seat) | Left of re-straddler | Preflop only | Yes |
 
 </div>
 
@@ -123,7 +123,7 @@ The honest answer, and the one the solvers agree on: **for almost everyone, no.*
 
 :::card
 🎯 | You commit blind | Money goes in before you see your cards, so you're playing a bloated pot with no information — the same disadvantage that makes the blinds the worst seats at the table. It also halves your effective depth: at $1/$2 a $200 stack is 100 big blinds, but with a $4 straddle on, the same stack plays like 50
-📉 | It shrinks your positional edge | Doubling the blind bloats the starting pot and leaves more players still to act when you're in your best stealing seats. Counterintuitively, solvers respond by opening **fewer** hands in straddled pots — around 15–20% fewer on the button, per [GTO Wizard's straddled-pot sims](https://blog.gtowizard.com/preflop-strategy-in-straddled-pots/) — not more
+📉 | It shrinks your positional edge | Doubling the blind bloats the starting pot and leaves more players still to act when you're in your best stealing seats. Counterintuitively, solvers respond by opening **fewer** hands from the button in straddled pots — around 15–20% fewer, per [GTO Wizard's straddled-pot sims](https://blog.gtowizard.com/preflop-strategy-in-straddled-pots/) — not more
 💸 | It can increase pot rake | In pots eligible for [rake](/en/blog/holdem-rake), a bigger pot can mean a bigger charge until the cap is reached. That increase does not apply to preflop pots under no-flop-no-drop rules, time-charge games, or pots already at the cap
 :::
 
@@ -178,7 +178,7 @@ A. Almost never. Tournaments rely on a fixed blind structure that must be identi
 
 **Q. Is straddling profitable? Should you straddle?**
 
-A. For most players, no — it's a -EV play. You commit money blind, you shrink your positional edge (solvers open *fewer* hands in straddled pots, not more), and you may pay more rake. It's defensible only at loose-passive tables, in games where everyone already straddles, or purely for fun — almost never as a way to make money. When everyone takes turns straddling on equal terms, the higher stakes can favor the stronger players.
+A. For most players, no — it's a -EV play. You commit money blind, you shrink your positional edge (solvers open *fewer* hands from the button in straddled pots, not more), and you may pay more rake. It's defensible only at loose-passive tables, in games where everyone already straddles, or purely for fun — almost never as a way to make money. When everyone takes turns straddling on equal terms, the higher stakes can favor the stronger players.
 
 ---
 

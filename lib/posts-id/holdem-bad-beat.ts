@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Apa itu bad beat di poker? Saat jadi favorit saja tak cukup",
   seoTitle: "Anda 80% menang — tapi kalah. Apa itu bad beat?",
   desc: "Bad beat adalah kalah sebagai favorit besar saat lawan beruntung. Bedanya dengan cooler, bad beat jackpot, dan kenapa diam-diam itu bagus untuk Anda.",
-  tldr: "Bad beat adalah saat uang Anda masuk sebagai favorit berat — biasanya 80% atau lebih — dan Anda kalah karena lawan menangkap kartu beruntung untuk 'suck out' pada Anda. Berbeda dengan cooler, Anda unggul saat uang masuk; hanya di akhir kartu berkhianat. Perih, tapi bad beat sebenarnya tanda Anda bermain di permainan yang menguntungkan.",
+  tldr: "Bad beat adalah saat uang Anda masuk sebagai favorit berat — biasanya 80% atau lebih — dan Anda kalah karena lawan menangkap kartu beruntung untuk 'suck out' pada Anda. Berbeda dengan cooler dalam arti ketat, Anda unggul saat uang masuk; hanya di akhir kartu berkhianat. Perih, tapi bad beat sebenarnya tanda Anda bermain di permainan yang menguntungkan.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-24",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-21",
   keepImagesInBody: true,
   readTime: "11 mnt",
@@ -36,7 +36,7 @@ Diam-diam bagus | Artinya bagi profit jangka panjang Anda
 
 ## Apa Itu Bad Beat di Poker?
 
-**Bad beat adalah tangan di mana Anda kalah meski Anda favorit statistik kuat saat chip masuk, karena lawan menangkap kartu tak terduga untuk menyalip Anda.** Anda memainkannya dengan benar — uang Anda masuk "good," unggul dalam matematika — dan dek sekadar menghasilkan satu-satunya runout yang mengalahkan Anda. Kekalahan itu bukan salah Anda; itu variance sedang melakukan yang terburuk.
+**Bad beat adalah tangan di mana Anda kalah meski Anda favorit statistik kuat saat chip masuk, karena lawan menangkap kartu tak terduga untuk menyalip Anda.** Uang Anda masuk "good," unggul dalam matematika — biasanya itulah permainan yang benar — dan dek sekadar menghasilkan satu-satunya runout yang mengalahkan Anda. Kekalahan itu bukan salah Anda; itu variance sedang melakukan yang terburuk.
 
 Mekanismenya selalu **suckout**: sebuah kartu — di flop, turn, atau river — yang datang setelah uang masuk dan mengubah tangan kalah menjadi tangan menang. Aces Anda menghancurkan pocket fives mereka sampai five ketiga itu muncul. Top pair Anda unggul atas flush draw mereka sampai heart terakhir jatuh di river. Momen itu — favorit dikejar hingga tersusul oleh draw yang seharusnya tak sampai — adalah inti dari istilah ini. Memahaminya juga langkah pertama agar tidak membiarkannya menghancurkan sesi Anda, disiplin emosional yang sama yang memisahkan pro dari [fish](/id/blog/holdem-fish).
 
@@ -44,13 +44,13 @@ Mekanismenya selalu **suckout**: sebuah kartu — di flop, turn, atau river — 
 
 ## Bad Beat vs Cooler: Perbedaan yang Penting
 
-![Infografis yang memisahkan bad beat dari cooler — aces melawan sevens yang improve jadi set, di sebelahnya kings yang bertemu aces yang tak pernah perlu improve](/images/holdem-bad-beat-litmus.webp "Satu pertanyaan menyelesaikannya: kalau lawan harus improve untuk menang, itu bad beat — kalau ia sudah unggul, itu cooler")
+![Infografis yang memisahkan bad beat dari cooler — aces melawan sevens yang improve jadi set, di sebelahnya kings yang bertemu aces yang tak pernah perlu improve](/images/holdem-bad-beat-litmus.webp "Pembagian ketatnya: aces unggul saat masuk lalu tersusul — bad beat; kings tertinggal saat masuk dan tak pernah menyusul — cooler")
 
-Orang memakai "bad beat" dan "cooler" secara bergantian, padahal keduanya berlawanan — dan mengetahui yang mana yang baru saja terjadi memberi tahu Anda apakah harus jengkel pada dek atau justru kagum padanya. Seluruh perbedaannya adalah **siapa yang unggul saat uang masuk, dan apakah suckout terjadi:**
+Orang memakai "bad beat" dan "cooler" secara bergantian, dan tak ada satu garis resmi di antara keduanya — tapi dalam arti ketat yang dipakai panduan ini, keduanya berlawanan, dan mengetahui yang mana yang baru saja terjadi memberi tahu Anda apakah harus jengkel pada dek atau justru kagum padanya. Seluruh perbedaannya adalah **siapa yang unggul saat uang masuk, dan apakah suckout terjadi:**
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| | Bad Beat | Cooler |
+| | Bad Beat | Cooler (arti ketat) |
 |:---|:---|:---|
 | **Siapa unggul saat chip masuk** | **Anda** yang favorit (sering 80%+) | Anda **tertinggal** |
 | **Apakah suckout terjadi?** | Ya — kartu beruntung membalikkannya | Tidak — pemimpin unggul sepanjang jalan |
@@ -60,7 +60,7 @@ Orang memakai "bad beat" dan "cooler" secara bergantian, padahal keduanya berlaw
 
 </div>
 
-Uji cepat: **jika lawan Anda perlu *improve* untuk menang, itu bad beat.** Jika mereka sudah unggul saat uang masuk dan Anda sekadar tak bisa fold monster Anda, itu [cooler](/id/blog/holdem-cooler) — tanpa suckout, tanpa bad beat. Dan perhatikan jebakannya: **set over set yang sama-sama di-flop bukan bad beat.** Saat set of queens Anda kalah ke set of kings yang jadi di flop yang sama, tak ada yang beruntung di river — set yang lebih besar unggul sepanjang jalan. (Kalau kings itu baru menemukan set-nya di turn atau river, uji tadi menyebutnya suckout — yang itu *memang* bad beat.) Itu cooler yang berpakaian bad beat.
+Uji cepat: **jika Anda favorit berat saat uang masuk dan lawan Anda perlu *improve* untuk menang, itu bad beat.** Jika mereka sudah unggul saat uang masuk dan Anda sekadar tak bisa fold monster Anda, itu [cooler](/id/blog/holdem-cooler) dalam arti ketat — tanpa suckout, tanpa bad beat. Dan perhatikan jebakannya: **set over set yang sama-sama di-flop bukan bad beat.** Saat set of queens Anda kalah ke set of kings yang jadi di flop yang sama, tak ada yang beruntung di river — set yang lebih besar unggul sepanjang jalan. (Kalau kings itu baru menemukan set-nya di turn atau river *setelah* uang masuk, uji tadi menyebutnya suckout — yang itu *memang* bad beat. Kalau chip baru masuk setelah set yang lebih besar datang, itu tetap cooler.) Itu cooler yang berpakaian bad beat.
 
 ---
 
@@ -173,7 +173,7 @@ A. Bad beat adalah saat Anda kalah di sebuah tangan yang seharusnya Anda menangk
 
 **Q. Apa perbedaan antara bad beat dan cooler?**
 
-A. Dalam bad beat Anda favorit saat uang masuk dan di-outdraw — sebuah suckout terjadi. Dalam cooler Anda tertinggal sepanjang jalan dengan tangan terlalu kuat untuk fold, dan tak ada suckout. Uji cepat: jika lawan Anda harus *improve* untuk menang, itu bad beat; jika mereka sudah unggul, itu cooler. Set over set yang kedua set-nya sama-sama di-flop, misalnya, adalah cooler, bukan bad beat — kalau set yang lebih besar baru datang di turn atau river, itu suckout.
+A. Dalam bad beat Anda favorit saat uang masuk dan di-outdraw — sebuah suckout terjadi. Dalam cooler, dalam arti ketat, Anda sudah tertinggal saat uang masuk dengan tangan terlalu kuat untuk fold, dan tak ada suckout (sebagian pemain memakai "cooler" lebih longgar, untuk tangan besar apa pun yang kalah oleh tangan lebih besar). Uji cepat: jika Anda favorit berat saat masuk dan lawan Anda harus *improve* untuk menang, itu bad beat; jika mereka sudah unggul saat masuk, itu cooler. Set over set yang kedua set-nya sama-sama di-flop dan uangnya masuk di flop, misalnya, adalah cooler, bukan bad beat — kalau set yang lebih besar baru datang di turn atau river setelah chip masuk, itu suckout.
 
 **Q. Apakah kalah coinflip itu bad beat?**
 
@@ -203,8 +203,8 @@ A. Tidak — di hampir semua kasus keduanya berlawanan. Bad beat berarti uang An
 
 ## 3 Hal yang Harus Diingat
 
-1. **Bad beat adalah kalah sebagai favorit besar ke suckout beruntung** — Anda unggul saat uang masuk, memainkannya benar, dan di-outdraw. Itu variance, bukan kesalahan.
-2. **Itu kebalikan dari cooler.** Bad beat butuh suckout (underdog membaik); cooler tidak (pemimpin unggul sepanjang jalan). Jika lawan Anda harus improve untuk menang, itu bad beat.
+1. **Bad beat adalah kalah sebagai favorit besar ke suckout beruntung** — Anda unggul saat uang masuk lalu di-outdraw. Jika memasukkan uang memang permainan yang benar, itu variance, bukan kesalahan.
+2. **Dalam definisi ketat, itu kebalikan dari cooler.** Bad beat butuh keunggulan besar dan suckout (underdog membaik); cooler ketat tak punya suckout (pemimpin tetap unggul). Jika Anda favorit berat saat masuk dan lawan Anda harus improve untuk menang, itu bad beat.
 3. **Bad beat diam-diam bagus untuk Anda.** Artinya lawan memasukkan uang saat tertinggal dan beruntung — sebagian besar waktu, keputusan kalah yang membayar Anda jauh lebih sering daripada membakar Anda. Masukkan uang saat unggul, abaikan bad beat-nya, dan biarkan variance meratakan diri.
 
 Bad beat adalah pajak yang Anda bayar untuk memainkan permainan yang menang. Pemain terbaik menerima persis sebanyak orang lain — mereka hanya belajar mencatatnya sebagai variance, melindungi hand berikutnya dari tilt, dan kembali [mengungguli meja](/id/blog/holdem-fish). Masukkan uang saat unggul cukup sering, dan kekejaman dek menjadi profit Anda.

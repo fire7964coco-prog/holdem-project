@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ini glosarium bahasa sederhana untuk istilah poker yang benar-benar muncul di permainan Texas Hold'em, dikelompokkan berdasarkan cara Anda menemuinya — aksi taruhan, posisi, tangan dan board, tipe pemain, uang, dan situasi meja. Mulai dari istilah yang paling sering tertukar di bawah (check vs call, set vs trips, cooler vs bad beat), lalu jelajahi per kategori. Istilah dengan panduan mendalam langsung tertaut ke sana.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-24",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "12 mnt",
@@ -45,7 +45,7 @@ Kalau Anda hanya sempat memperjelas selusin istilah, jadikan yang ini — inilah
 | **Check vs Call** | Check tidak mempertaruhkan **chip apa pun** (hanya saat tidak ada lagi jumlah taruhan yang perlu Anda samai); call **menyamai** taruhan yang sudah ada. |
 | **Blind vs Ante** | Blind adalah taruhan wajib berdasarkan **posisi** (SB/BB); ante mengisi pot dan datang dari **semua orang** (di turnamen masa kini biasanya lewat big blind ante). |
 | **Set vs Trips** | Keduanya three of a kind — **set** memakai pocket pair; **trips** memakai satu kartu tertutup + pair di board. |
-| **Cooler vs Bad Beat** | [Cooler](/id/blog/holdem-cooler) = Anda tertinggal dan tak bisa fold; [bad beat](/id/blog/holdem-bad-beat) = Anda unggul lalu tersalip. |
+| **Cooler vs Bad Beat** | [Cooler](/id/blog/holdem-cooler) = tangan terlalu kuat untuk fold bertemu tangan lebih besar (dalam arti ketat, Anda sudah tertinggal saat masuk); [bad beat](/id/blog/holdem-bad-beat) = Anda unggul lalu tersalip. |
 | **Value bet vs Bluff** | Value bet ingin **call dari tangan lebih lemah**; bluff ingin **tangan lebih kuat fold**. |
 | **Pot odds vs Implied odds** | [Pot odds](/id/blog/holdem-pot-odds) hanya menghitung chip **yang ada di pot sekarang**; implied odds menambah apa yang akan Anda **menangkan nanti**. |
 | **VPIP vs PFR** | VPIP = seberapa sering Anda **bermain**; PFR = seberapa sering Anda **raise**. PFR tak pernah melebihi VPIP. |
@@ -275,7 +275,7 @@ A. Keduanya three of a kind dan berperingkat identik, tapi dibuat secara berbeda
 
 **Q. Apa perbedaan antara cooler dan bad beat?**
 
-A. Dalam bad beat Anda adalah favorit saat uang masuk lalu tersalip oleh kartu beruntung. Dalam cooler Anda tertinggal sepanjang jalan dengan tangan yang terlalu kuat untuk difold, dan tak butuh kartu beruntung apa pun — tangan lebih besar sudah unggul sejak awal. Tes cepat: kalau lawan Anda harus *membaik* untuk menang, itu bad beat; kalau tidak, itu cooler.
+A. Dalam bad beat Anda adalah favorit saat uang masuk lalu tersalip oleh kartu beruntung. Dalam cooler — dalam arti ketat — Anda sudah tertinggal saat uang masuk dengan tangan yang terlalu kuat untuk difold, dan tak butuh kartu beruntung apa pun; sebagian pemain memakai "cooler" untuk tangan besar apa pun yang kalah oleh tangan lebih besar. Tes cepat: kalau Anda favorit berat saat masuk dan lawan Anda harus *membaik* untuk menang, itu bad beat; kalau lawan sudah unggul saat masuk, itu cooler.
 
 **Q. Apa itu 3-bet di poker, dan kenapa raise pertama bukan disebut "1-bet"?**
 

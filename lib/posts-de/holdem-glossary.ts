@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Das ist ein Poker-Lexikon in einfachem Deutsch mit den Begriffen, die in einem Texas-Hold'em-Spiel wirklich vorkommen, gruppiert danach, wie du ihnen begegnest – Setzaktionen, Positionen, Hände und Board, Spielertypen, Geld, Tischsituationen und die Turnier- und Online-Abkürzungen. Beginn mit den „am häufigsten verwechselten“ Begriffen unten (Check vs. Call, Set vs. Trips, Cooler vs. Bad Beat), dann stöber nach Kategorie. Begriffe mit einem tieferen Guide verlinken direkt darauf.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-22",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "12 Min.",
@@ -46,7 +46,7 @@ Poker hat sein eigenes Vokabular, und es zu kennen bringt zwei Dinge: Es verhind
 | **Check vs. Call** | Ein Check riskiert **keine Chips** – möglich nur, wenn du keinen Einsatz mehr ausgleichen musst; ein Call **gleicht** eine bestehende Bet aus. |
 | **Blind vs. Ante** | Blinds sind **positionale** Pflichteinsätze (SB/BB); Antes füttern den Pot und kommen von **allen** (im modernen Turnier meist als Big Blind Ante). |
 | **Set vs. Trips** | Beide sind ein Drilling – ein **Set** nutzt ein Pocket Pair; **Trips** nutzt eine Hole Card + ein Paar auf dem Board. |
-| **Cooler vs. Bad Beat** | Ein [Cooler](/de/blog/holdem-cooler) = du lagst hinten und konntest nicht folden; ein [Bad Beat](/de/blog/holdem-bad-beat) = du lagst vorn und wurdest outgedrawt. |
+| **Cooler vs. Bad Beat** | Ein [Cooler](/de/blog/holdem-cooler) = eine Hand, zu stark zum Folden, trifft auf eine größere (im engeren Sinn: du lagst schon beim Reingehen hinten); ein [Bad Beat](/de/blog/holdem-bad-beat) = du lagst vorn und wurdest outgedrawt. |
 | **Value Bet vs. Bluff** | Eine Value Bet will einen **Call von einer schwächeren Hand**; ein Bluff will, dass **bessere Hände folden**. |
 | **Pot Odds vs. Implied Odds** | [Pot Odds](/de/blog/holdem-pot-odds) zählen nur die Chips, die **jetzt im Pot** sind; Implied Odds addieren, was du **später gewinnst**. |
 | **VPIP vs. PFR** | VPIP = wie oft du **spielst**; PFR = wie oft du **raist**. PFR kann VPIP nie übersteigen. |
@@ -316,7 +316,7 @@ A. Beide sind ein Drilling und ranken gleich, aber sie entstehen unterschiedlich
 
 **Q. Was ist der Unterschied zwischen einem Cooler und einem Bad Beat?**
 
-A. Bei einem Bad Beat warst du der Favorit, als das Geld reinging, und wurdest von einer Glückskarte outgedrawt. Bei einem Cooler lagst du die ganze Zeit hinten mit einer Hand, die zu stark zum Folden war, und es brauchte keine Glückskarte – die größere Hand lag von Anfang an vorn. Schnelltest: Wenn dein Gegner sich *verbessern* musste, um zu gewinnen, ist es ein Bad Beat; wenn nicht, ist es ein Cooler.
+A. Bei einem Bad Beat warst du der Favorit, als das Geld reinging, und wurdest von einer Glückskarte outgedrawt. Bei einem Cooler – im engeren Sinn – lagst du schon beim Reingehen hinten, mit einer Hand, die zu stark zum Folden war, und es brauchte keine Glückskarte; manche Spieler nennen allerdings jede große Hand, die gegen eine noch größere verliert, einen Cooler. Schnelltest: Warst du beim Reingehen klarer Favorit und musste dein Gegner sich *verbessern*, um zu gewinnen, ist es ein Bad Beat; lag er beim Reingehen schon vorn, ist es ein Cooler.
 
 **Q. Was ist eine 3-Bet im Poker, und warum ist der erste Raise nicht die „1-Bet“?**
 

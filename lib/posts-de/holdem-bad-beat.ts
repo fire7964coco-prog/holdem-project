@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "Was ist ein Bad Beat beim Poker? Wenn Favorit sein nicht reicht",
   seoTitle: "Was ist ein Bad Beat beim Poker? Zu 80% vorn, verloren",
   desc: "Ein Bad Beat ist ein Verlust als klarer Favorit, weil dein Gegner Glück hat. Wie er sich vom Cooler unterscheidet, der Bad Beat Jackpot und warum er dir hilft.",
-  tldr: "Ein Bad Beat ist, wenn du dein Geld als klarer Favorit reinbekommst – meist mit 80% oder mehr – und verlierst, weil dein Gegner eine Glückskarte trifft und dich aussaugt. Anders als beim Cooler warst du vorne, als das Geld reinging; das Deck hat dich erst am Ende verraten. Es schmerzt, aber Bad Beats sind eigentlich ein Zeichen, dass du in einem profitablen Spiel sitzt.",
+  tldr: "Ein Bad Beat ist, wenn du dein Geld als klarer Favorit reinbekommst – meist mit 80% oder mehr – und verlierst, weil dein Gegner eine Glückskarte trifft und dich aussaugt. Anders als beim Cooler im engeren Sinn warst du vorne, als das Geld reinging; das Deck hat dich erst am Ende verraten. Es schmerzt, aber Bad Beats sind eigentlich ein Zeichen, dass du in einem profitablen Spiel sitzt.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-21",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-21",
   keepImagesInBody: true,
   readTime: "11 Min.",
@@ -45,16 +45,16 @@ Der Mechanismus ist immer ein **Suckout**: eine Karte – am Flop, Turn oder Riv
 
 ## Bad Beat oder Cooler – was ist der Unterschied?
 
-![Infografik, die Bad Beat und Cooler trennt – Asse gegen Siebenen, die sich zum Set verbessern, daneben Könige, die auf Asse treffen, die sich nie verbessern mussten](/images/holdem-bad-beat-litmus.webp "Eine Frage entscheidet: musste der Gegner sich verbessern, um zu gewinnen, war es ein Bad Beat – lag er schon vorne, war es ein Cooler")
+![Infografik, die Bad Beat und Cooler trennt – Asse gegen Siebenen, die sich zum Set verbessern, daneben Könige, die auf Asse treffen, die sich nie verbessern mussten](/images/holdem-bad-beat-litmus.webp "Die Trennung im engeren Sinn: Die Asse lagen beim Reingehen vorn und wurden ausgedrawt – ein Bad Beat; die Könige lagen beim Reingehen hinten und kamen nie heran – ein Cooler")
 
 > **Kurze Antwort**
-> Entscheidend ist, **wer vorn lag, als das Geld reinging**. Beim Bad Beat warst du der Favorit und wurdest von einer Glückskarte überholt. Beim Cooler lagst du von Anfang an hinten und konntest die Hand trotzdem nicht folden – es kam gar kein Suckout. ==Set über Set ist deshalb meist kein Bad Beat==, sondern ein Cooler: Standen beide Sets schon, als das Geld reinging, führte das größere die ganze Zeit.
+> Entscheidend ist, **wer vorn lag, als das Geld reinging**. Beim Bad Beat warst du der Favorit und wurdest von einer Glückskarte überholt. Beim Cooler im engeren Sinn lagst du schon beim Reingehen hinten und konntest die Hand trotzdem kaum folden – es kam gar kein Suckout. Eine offizielle Definition gibt es nicht, und manche nennen jede große Hand, die gegen eine größere verliert, einen Cooler. ==Set über Set ist deshalb meist kein Bad Beat==, sondern ein Cooler: Standen beide Sets schon, als das Geld reinging, führte das größere die ganze Zeit.
 
-Die Leute benutzen „Bad Beat“ und „Cooler“ synonym, aber sie sind Gegensätze – und zu wissen, welcher gerade passiert ist, sagt dir, ob du dich über das Deck ärgern oder von ihm beeindruckt sein solltest. Der ganze Unterschied ist, **wer vorne war, als das Geld reinging, und ob ein Suckout stattfand:**
+Die Leute benutzen „Bad Beat“ und „Cooler“ synonym, und eine offizielle Grenze zwischen beiden gibt es nicht – aber im engeren Sinn, den dieser Guide verwendet, sind sie Gegensätze, und zu wissen, welcher gerade passiert ist, sagt dir, ob du dich über das Deck ärgern oder von ihm beeindruckt sein solltest. Der ganze Unterschied ist, **wer vorne war, als das Geld reinging, und ob ein Suckout stattfand:**
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| | Bad Beat | Cooler |
+| | Bad Beat | Cooler (im engeren Sinn) |
 |:---|:---|:---|
 | **Wer führte, als die Chips reingingen** | **Du** warst der Favorit (oft 80%+) | Du warst **hinten** |
 | **Gab es einen Suckout?** | Ja – eine Glückskarte hat es gedreht | Nein – der Führende führte die ganze Zeit |
@@ -64,7 +64,7 @@ Die Leute benutzen „Bad Beat“ und „Cooler“ synonym, aber sie sind Gegens
 
 </div>
 
-Ein schneller Lackmustest: **Wenn dein Gegner sich *verbessern* musste, um zu gewinnen, ist es ein Bad Beat.** Wenn er schon vorne war, als das Geld reinging, und du dein Monster einfach nicht folden konntest, ist das ein [Cooler](/de/blog/holdem-cooler) – kein Suckout, kein Bad Beat. Und beachte die Falle: **Set über Set ist meist kein Bad Beat.** Wenn dein Set Damen gegen ein Set Könige verliert, das schon auf dem Flop stand, hatte niemand Glück auf dem River – das größere Set war die ganze Zeit vorne. Das ist ein Cooler im Bad-Beat-Gewand. Kommt das größere Set dagegen erst auf Turn oder River, lagst du vorn, als das Geld reinging – dann ist es sehr wohl ein Bad Beat.
+Ein schneller Lackmustest: **Wenn du beim Reingehen klarer Favorit warst und dein Gegner sich *verbessern* musste, um zu gewinnen, ist es ein Bad Beat.** Wenn er schon vorne war, als das Geld reinging, und du dein Monster einfach nicht folden konntest, ist das ein [Cooler](/de/blog/holdem-cooler) im engeren Sinn – kein Suckout, kein Bad Beat. Und beachte die Falle: **Set über Set ist meist kein Bad Beat.** Wenn dein Set Damen gegen ein Set Könige verliert, das schon auf dem Flop stand, hatte niemand Glück auf dem River – das größere Set war die ganze Zeit vorne. Das ist ein Cooler im Bad-Beat-Gewand. Kommt das größere Set dagegen erst auf Turn oder River, *nachdem* das Geld drin war, lagst du vorn, als es reinging – dann ist es sehr wohl ein Bad Beat. Gingen die Chips erst rein, als das größere Set schon stand, bleibt es ein Cooler.
 
 ---
 
@@ -196,7 +196,7 @@ A. Nein, und du solltest es auch nicht wollen. Ein Bad Beat entsteht dadurch, da
 
 **Q. Ist Set über Set ein Bad Beat?**
 
-A. Nein, das ist ein Cooler. Der Unterschied liegt daran, ob der Gewinner sich verbessern musste. Wenn dein geflopptes Set Damen gegen ein Set Könige verliert, das auf demselben Flop entstanden ist, hatte niemand Glück auf dem River – das größere Set lag von der ersten Sekunde an vorn, und du konntest ein geflopptes Set trotzdem nicht folden. Genau diese Kombination aus „die ganze Zeit hinten“ und „unmöglich zu folden“ definiert den Cooler. Ein Bad Beat wäre es nur, wenn die entscheidende Karte erst später gekommen wäre.
+A. Nein, meist ist das ein Cooler. Der Unterschied liegt daran, ob der Gewinner sich nach dem Einsatz noch verbessern musste. Wenn dein geflopptes Set Damen gegen ein Set Könige verliert, das auf demselben Flop entstanden ist, und das Geld am Flop reinging, hatte niemand Glück auf dem River – das größere Set lag von der ersten Sekunde an vorn, und ein geflopptes Set foldet man trotzdem so gut wie nie. Genau diese Kombination aus „beim Reingehen hinten“ und „kaum zu folden“ definiert den Cooler im engeren Sinn, den dieser Guide verwendet. Ein Bad Beat wäre es nur, wenn die entscheidende Karte erst nach dem Einsatz gekommen wäre.
 
 **Q. Ist der Verlust eines Coinflips ein Bad Beat?**
 
@@ -227,7 +227,7 @@ A. Nein – in fast jedem Fall sind sie Gegensätze. Ein Bad Beat bedeutet, dass
 ## Die 3 Dinge, die du dir merken solltest
 
 1. **Ein Bad Beat ist ein Verlust als großer Favorit an einen glücklichen Suckout** – du warst vorne, als das Geld reinging, hast es richtig gespielt und wurdest outgedrawt. Es ist Varianz, kein Fehler.
-2. **Es ist das Gegenteil eines Coolers.** Ein Bad Beat braucht einen Suckout (der Underdog verbessert sich); ein Cooler nicht (der Führende führte die ganze Zeit). Wenn dein Gegner sich verbessern musste, um zu gewinnen, war es ein Bad Beat.
+2. **Streng definiert ist es das Gegenteil eines Coolers.** Ein Bad Beat braucht einen großen Vorteil und einen Suckout (der Underdog verbessert sich); ein Cooler im engeren Sinn hat keinen Suckout (der Führende blieb vorn). Wenn du beim Reingehen klarer Favorit warst und dein Gegner sich verbessern musste, um zu gewinnen, war es ein Bad Beat.
 3. **Bad Beats sind insgeheim gut für dich.** Sie bedeuten, dass Gegner ihr Geld hinten reinstecken und Glück haben – meistens verlierende Entscheidungen, die dich weit öfter auszahlen, als sie dich verbrennen. Bekomm es gut rein, schüttel den Beat ab und lass die Varianz sich ausgleichen.
 
 Bad Beats sind die Steuer, die du für ein gewinnendes Spiel zahlst. Die besten Spieler kassieren genau so viele wie alle anderen – sie haben nur gelernt, sie als Varianz abzuhaken, die nächste Hand vor Tilt zu schützen und zurück dazu zu kommen, [den Tisch auszuspielen](/de/blog/holdem-fish). Bekomm dein Geld oft genug gut rein, und die Grausamkeit des Decks wird zu deinem Profit.

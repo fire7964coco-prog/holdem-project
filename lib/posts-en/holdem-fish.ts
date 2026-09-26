@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A 'fish' is poker slang for a weak, losing player the stronger players ('sharks') make their money from. Fish play too many hands, call too much, and can't fold — and the famous line warns that if you can't spot the fish at your table, you're it. It's the single most important read in the game: find the fish, or become one.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-21",
+  updated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🐟",
@@ -66,7 +66,7 @@ Shows up at showdown weak | Turns over hands that never should have gotten that 
 Plays emotionally | Tilts after a bad beat, chases losses, plays scared when stuck
 :::
 
-No single sign is proof — even good players limp occasionally or chase a big draw. But when you see three or four of these from the same player, you've found the fish. The most reliable single tell is **passivity plus loose calling**: a player who calls far too many hands but almost never raises is the classic fish, and the easiest opponent to beat because you can value-bet them relentlessly without fear of a bluff-raise. Knowing which starting hands are even worth playing is the first thing that separates them from you — the [starting hands chart](/en/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") is where that gap begins.
+No single sign is proof — even good players limp occasionally or chase a big draw. But when you see three or four of these from the same player, you've probably found the fish — treat it as a working read and keep updating it. The most reliable single tell is **passivity plus loose calling**: a player who calls far too many hands but almost never raises is the classic fish, and the easiest opponent to beat because you can value-bet them relentlessly without fear of a bluff-raise. Knowing which starting hands are even worth playing is the first thing that separates them from you — the [starting hands chart](/en/blog/holdem-starting-hands-chart "thumb:/images/holdem-starting-hands-chart-hero.webp") is where that gap begins.
 
 ---
 
@@ -88,8 +88,8 @@ No single sign is proof — even good players limp occasionally or chase a big d
 | **Calling station** | Passive over-caller | Calls anything, never raises/folds | Value-bet endlessly, never bluff |
 | **Reg** | A "regular" at a stake | Varies — not always a winner | Read them individually |
 | **Grinder** | Pro/semi-pro playing high volume | Solid, steady, low variance | Avoid; find the recreational player |
-| **TAG** | A *winning* style (tight-aggressive) | Narrow range, but bets and raises it hard | Not a fish — respect their bets |
-| **LAG** | A *winning* style (loose-aggressive) | Wide range, constant pressure, bluffs often | Don't over-fold — widen your calls and 3-bets and catch bluffs |
+| **TAG** | A style many winning players use (tight-aggressive) | Narrow range, but bets and raises it hard | Usually not a fish — respect their bets |
+| **LAG** | A style many strong players use (loose-aggressive) | Wide range, constant pressure, bluffs often | Don't over-fold — widen your calls and 3-bets and catch bluffs |
 
 </div>
 
@@ -97,7 +97,7 @@ Three distinctions competitors constantly blur, worth getting right:
 
 - **Fish ≠ whale.** A whale is a *subset* of fish — one who loses **large** sums, usually wealthy and playing high stakes loosely. All whales are fish; not all fish are whales. A whale in the game is why sharks show up.
 - **Fish ≠ donkey.** Near-synonyms, but "donkey" stresses *bad decisions* and is harsher; "fish" stresses *inexperience and losing.* Calling someone a donk is more of an insult.
-- **A nit is not a fish.** Nits are *tight* — often break-even or slightly winning. They're exploitable because their range is transparent, but they're not spewing chips like a fish. And **LAG/TAG are winning styles**, not weak-player labels — only their broken versions (the reckless "maniac," the frozen "TAG fish") are leaks.
+- **A nit is usually not a fish.** Nits are *tight* — often break-even or slightly winning. They're exploitable because their range is transparent, but they're not spewing chips like a fish (though a nit who folds away too much can still be a losing player). And **LAG/TAG are styles many winning players use**, not weak-player labels — only their broken versions (the reckless "maniac," the frozen "TAG fish") are leaks.
 
 ---
 
@@ -129,7 +129,7 @@ Here's the uncomfortable part. If you've read this far quietly hoping you're a s
 |:---|:---:|:---:|:---|
 | **Solid player** | 15–22% | 12–18% (never higher than their VPIP) | Tight, aggressive, close gap |
 | **Fish** | 40–70% | under 10% | Loose and passive — playing everything, leading nothing |
-| **Nit** | under 12% | under 8% | Too tight — predictable, not a fish |
+| **Nit** | under 12% | under 8% | Too tight — predictable, usually not a fish |
 
 </div>
 
@@ -188,7 +188,7 @@ A. They're near-synonyms, but the tone differs. "Fish" emphasizes inexperience a
 
 **Q. How do you tell if someone is a fish?**
 
-A. Watch for a cluster of signs: playing far too many hands, limping instead of raising, calling too much and rarely raising, never folding a pair, chasing every draw, and erratic bet sizing. No single tell is proof, but three or four together — especially loose calling combined with passivity — reliably identifies the fish within an orbit or two.
+A. Watch for a cluster of signs: playing far too many hands, limping instead of raising, calling too much and rarely raising, never folding a pair, chasing every draw, and erratic bet sizing. No single tell is proof, but three or four together — especially loose calling combined with passivity — give you a strong working read within an orbit or two; confirm it as the sample grows.
 
 **Q. How do you stop being a fish in poker?**
 

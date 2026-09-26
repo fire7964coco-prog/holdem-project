@@ -5,10 +5,10 @@ export const POST: Post = {
   title: "O que é um bad beat no poker? Quando ser o favorito não basta",
   seoTitle: "Você tinha 80% e perdeu — o que é um bad beat?",
   desc: "Bad beat é perder como grande favorito quando o adversário dá sorte. A diferença para o cooler, o bad beat jackpot e por que ele é secretamente bom pra você.",
-  tldr: "Um bad beat é quando você coloca suas fichas como favorito pesado — geralmente 80% ou mais — e perde porque o adversário pega uma carta de sorte pra dar um 'suckout' em você. Diferente de um cooler, você estava na frente quando o dinheiro entrou; o baralho só te traiu no fim. Dói, mas bad beats são na verdade um sinal de que você está jogando num jogo lucrativo.",
+  tldr: "Um bad beat é quando você coloca suas fichas como favorito pesado — geralmente 80% ou mais — e perde porque o adversário pega uma carta de sorte pra dar um 'suckout' em você. Diferente de um cooler no sentido estrito, você estava na frente quando o dinheiro entrou; o baralho só te traiu no fim. Dói, mas bad beats são na verdade um sinal de que você está jogando num jogo lucrativo.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-21",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-21",
   keepImagesInBody: true,
   readTime: "11 min",
@@ -44,13 +44,13 @@ O mecanismo é sempre um **suckout**: uma carta — no flop, no turn ou no river
 
 ## Bad beat vs cooler: a diferença que importa
 
-![Infográfico que separa o bad beat do cooler — ases contra setes que melhoram para uma trinca, ao lado de reis que esbarram em ases que nunca precisaram melhorar](/images/holdem-bad-beat-litmus.webp "Uma pergunta resolve: se o adversário precisou melhorar pra ganhar, foi um bad beat — se ele já estava na frente, foi um cooler")
+![Infográfico que separa o bad beat do cooler — ases contra setes que melhoram para uma trinca, ao lado de reis que esbarram em ases que nunca precisaram melhorar](/images/holdem-bad-beat-litmus.webp "A divisão estrita: os ases estavam na frente quando as fichas entraram e foram superados — bad beat; os reis entraram atrás e nunca alcançaram — cooler")
 
-As pessoas usam "bad beat" e "cooler" como sinônimos, mas eles são opostos — e saber qual dos dois acabou de acontecer te diz se você deve ficar irritado com o baralho ou impressionado com ele. A diferença toda é **quem estava na frente quando o dinheiro entrou, e se houve um suckout:**
+As pessoas usam "bad beat" e "cooler" como sinônimos, e não existe uma linha oficial única entre os dois — mas, no sentido estrito que este guia usa, eles são opostos, e saber qual dos dois acabou de acontecer te diz se você deve ficar irritado com o baralho ou impressionado com ele. A diferença toda é **quem estava na frente quando o dinheiro entrou, e se houve um suckout:**
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| | Bad Beat | Cooler |
+| | Bad Beat | Cooler (sentido estrito) |
 |:---|:---|:---|
 | **Quem liderava quando as fichas entraram** | **Você** era o favorito (muitas vezes 80%+) | Você estava **atrás** |
 | **Houve um suckout?** | Sim — uma carta de sorte virou tudo | Não — o líder liderou o caminho todo |
@@ -60,7 +60,7 @@ As pessoas usam "bad beat" e "cooler" como sinônimos, mas eles são opostos —
 
 </div>
 
-Um teste rápido: **se o seu adversário precisou *melhorar* pra ganhar, é um bad beat.** Se ele já estava na frente quando o dinheiro entrou e você simplesmente não conseguiu foldar seu monstro, isso é um [cooler](/pt/blog/holdem-cooler) — sem suckout, sem bad beat. E repare na armadilha: **trinca flopada sobre trinca flopada não é bad beat.** Quando a sua trinca de damas perde pra uma trinca de reis feita no mesmo flop, ninguém deu sorte no river — a trinca maior estava na frente o tempo inteiro. (Se os reis só acertaram a trinca no turn ou no river, o teste aponta suckout — aí *é* bad beat.) Isso é um cooler vestido de bad beat.
+Um teste rápido: **se você era favorito pesado quando o dinheiro entrou e o seu adversário precisou *melhorar* pra ganhar, é um bad beat.** Se ele já estava na frente quando o dinheiro entrou e você simplesmente não conseguiu foldar seu monstro, isso é um [cooler](/pt/blog/holdem-cooler) no sentido estrito — sem suckout, sem bad beat. E repare na armadilha: **trinca flopada sobre trinca flopada não é bad beat.** Quando a sua trinca de damas perde pra uma trinca de reis feita no mesmo flop, ninguém deu sorte no river — a trinca maior estava na frente o tempo inteiro. (Se os reis só acertaram a trinca no turn ou no river *depois* que o dinheiro entrou, o teste aponta suckout — aí *é* bad beat. Se as fichas só entraram depois que a trinca maior chegou, continua sendo cooler.) Isso é um cooler vestido de bad beat.
 
 ---
 
@@ -173,7 +173,7 @@ A. Um bad beat é quando você perde uma mão que era favorito estatístico fort
 
 **Q. Qual a diferença entre um bad beat e um cooler?**
 
-A. Num bad beat você era o favorito quando o dinheiro entrou e foi outdrawn — houve um suckout. Num cooler você estava atrás o caminho todo com uma mão forte demais pra foldar, e nenhum suckout aconteceu. Teste rápido: se o seu adversário teve que *melhorar* pra ganhar, é um bad beat; se ele já estava na frente, é um cooler. Trinca sobre trinca com as duas flopadas, por exemplo, é um cooler, não um bad beat — se a trinca maior chegou no turn ou no river, foi suckout.
+A. Num bad beat você era o favorito quando o dinheiro entrou e foi outdrawn — houve um suckout. Num cooler, no sentido estrito, você estava atrás quando o dinheiro entrou com uma mão forte demais pra foldar, e nenhum suckout aconteceu (tem jogador que usa "cooler" de forma mais solta, pra qualquer mão grande que perde pra uma maior). Teste rápido: se você era favorito pesado ao entrar e o seu adversário teve que *melhorar* pra ganhar, é um bad beat; se ele já estava na frente quando o dinheiro entrou, é um cooler. Trinca sobre trinca com as duas flopadas e o dinheiro entrando no flop, por exemplo, é um cooler, não um bad beat — se a trinca maior chegou no turn ou no river depois que as fichas entraram, foi suckout.
 
 **Q. Perder um coinflip é um bad beat?**
 
@@ -204,7 +204,7 @@ A. Não — em quase todos os casos são opostos. Um bad beat significa que o se
 ## As 3 coisas para lembrar
 
 1. **Um bad beat é perder como grande favorito pra um suckout de sorte** — você estava na frente quando o dinheiro entrou, jogou certo, e foi outdrawn. É variância, não erro.
-2. **É o oposto de um cooler.** Um bad beat precisa de um suckout (o azarão melhora); um cooler não (o líder liderou o tempo todo). Se o seu adversário teve que melhorar pra ganhar, foi um bad beat.
+2. **Na definição estrita, é o oposto de um cooler.** Um bad beat precisa de uma grande vantagem e de um suckout (o azarão melhora); um cooler estrito não tem suckout (o líder continuou na frente). Se você era favorito pesado ao entrar e o seu adversário teve que melhorar pra ganhar, foi um bad beat.
 3. **Bad beats são secretamente bons pra você.** Eles significam que os adversários estão colocando dinheiro atrás e dando sorte — na maior parte das vezes, decisões perdedoras que te pagam muito mais vezes do que te queimam. Coloque bem, dê de ombros pra batida, e deixe a variância se equilibrar.
 
 Bad beats são o imposto que você paga por jogar um jogo vencedor. Os melhores jogadores levam exatamente tantos quanto todo mundo — eles só aprenderam a registrá-los como variância, proteger a próxima mão do tilt, e voltar a [jogar melhor que a mesa](/pt/blog/holdem-fish). Coloque o seu dinheiro bem com frequência suficiente, e a crueldade do baralho vira o seu lucro.

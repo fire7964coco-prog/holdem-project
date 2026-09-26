@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "這是一份大白話的德州撲克術語表，收的都是牌桌上真會碰到的詞，按你怎麼遇到它們來分組——下注動作、位置、牌型與牌面、玩家類型、錢，以及牌桌局面。先看下面那組「最容易搞混」的詞（過牌 vs 跟注、暗三條 vs 明三條、Cooler vs Bad Beat），再按分類隨便翻。有深入指南的術語會直接給你連結。",
   category: "glossary",
   date: "2026-07-22",
-  updated: "2026-09-22",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "12 分鐘",
@@ -48,7 +48,7 @@ export const POST: Post = {
 | **過牌 vs 跟注（Check vs Call）** | 過牌 **不投一分籌碼**（只有你不需要再補籌碼跟上下注時才行）；跟注是 **跟上**一個已經存在的下注。 |
 | **盲注 vs 底注（Blind vs Ante）** | 盲注是 **按位置**收的強制下注（SB/BB）；底注用來墊底池、由 **每個人**出（現今的錦標賽通常用大盲底注，由一個座位替全桌交）。 |
 | **暗三條 vs 明三條（Set vs Trips）** | 兩者都是三條——**暗三條**用的是一對口袋對子；**明三條**用的是一張底牌 + 牌面上的一對。 |
-| **Cooler vs Bad Beat** | [Cooler（冤家牌）](/zh-hant/blog/holdem-cooler)＝你一路落後又蓋不掉；Bad Beat（爆冷門）＝你本來領先卻被對手超車。 |
+| **Cooler vs Bad Beat** | [Cooler（冤家牌）](/zh-hant/blog/holdem-cooler)＝強到蓋不掉的牌撞上更大的牌（嚴格意義上還要求進池時你已落後）；Bad Beat（爆冷門）＝你本來領先卻被對手超車。 |
 | **價值下注 vs 詐唬（Value bet vs Bluff）** | 價值下注想 **讓更差的牌跟你**；詐唬想 **讓更好的牌蓋掉**。 |
 | **底池賠率 vs 隱含賠率（Pot odds vs Implied odds）** | [底池賠率](/zh-hant/blog/holdem-pot-odds) 只算 **現在池裡**的籌碼；隱含賠率還加上你 **後面會贏到**的部分。 |
 | **VPIP vs PFR** | VPIP＝你多常 **入池玩牌**；PFR＝你多常 **加注**。PFR 永遠不可能超過 VPIP。 |
@@ -302,7 +302,7 @@ A. 兩者都是三條、大小也相同，但做法不同。暗三條（Set）�
 
 **Q. Cooler 和 Bad Beat 差在哪？**
 
-A. Bad Beat（爆冷門）是錢進去時你是大熱門，卻被一張幸運牌超車。Cooler（冤家牌）是你一路落後、手上又是一手強到蓋不掉的牌，對手根本不需要運氣——大牌從頭到尾都領先。快速判斷：如果對手要 *改善* 才能贏，那是 Bad Beat；不用，就是 Cooler。
+A. Bad Beat（爆冷門）是錢進去時你是大熱門，卻被一張幸運牌超車。嚴格意義上的 Cooler（冤家牌）是錢進去時你就落後、手上又是一手強到蓋不掉的牌，對手也不需要運氣；也有牌手把任何一手大牌輸給更大的牌都叫 Cooler。快速判斷：如果錢進去時你是大熱門、而對手要 *改善* 才能贏，那是 Bad Beat；如果錢進去時他早就領先，就是 Cooler。
 
 **Q. 什麼是 3-bet？為什麼第一次加注不算「1-bet」？**
 

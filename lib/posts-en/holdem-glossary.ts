@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "This is a plain-English glossary of the poker terms that actually come up in a Texas Hold'em game, grouped by how you'll meet them — betting actions, positions, hands and board, player types, money, and table situations. Start with the 'most confused' terms below (check vs call, set vs trips, cooler vs bad beat), then browse by category. Terms with a deeper guide link straight to it.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-22",
+  updated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "📖",
@@ -42,9 +42,9 @@ If you only clear up a dozen terms, make it these — they're the ones that caus
 | These get mixed up | The difference |
 |:---|:---|
 | **Check vs Call** | A check risks **no chips** (only when you have no outstanding bet to match); a call **matches** an existing bet. |
-| **Blind vs Ante** | Blinds are **positional** forced bets (SB/BB); antes seed the pot and come from **everyone** (in tournaments today, usually via a big blind ante). |
+| **Blind vs Ante** | Blinds are **positional** forced bets (SB/BB); antes seed the pot — traditionally from **everyone**, though most tournaments today use a big blind ante paid by one seat. |
 | **Set vs Trips** | Both are three of a kind — a **set** uses a pocket pair; **trips** uses one hole card + a board pair. |
-| **Cooler vs Bad Beat** | A [cooler](/en/blog/holdem-cooler) = you were behind and couldn't fold; a [bad beat](/en/blog/holdem-bad-beat) = you were ahead and got outdrawn. |
+| **Cooler vs Bad Beat** | A [cooler](/en/blog/holdem-cooler) = a hand too strong to fold runs into a bigger one (in the strict sense, you were behind going in); a [bad beat](/en/blog/holdem-bad-beat) = you were a big favorite going in and got outdrawn. |
 | **Value bet vs Bluff** | A value bet wants a **call from worse**; a bluff wants **better hands to fold**. |
 | **Pot odds vs Implied odds** | [Pot odds](/en/blog/holdem-pot-odds) count only chips **in the pot now**; implied odds add what you'll **win later**. |
 | **VPIP vs PFR** | VPIP = how often you **play**; PFR = how often you **raise**. PFR can never exceed VPIP. |
@@ -80,7 +80,7 @@ Everything you can physically do on your turn. If you're brand new, start with t
 | **Bluff / Semi-bluff** | A bluff bets a weak hand to fold out better; a semi-bluff does it with a draw that can still improve. |
 | **Check-raise** | Check, then raise after an opponent bets — a strong, deceptive line (legal in modern rooms). |
 | **Min-raise** | The smallest legal raise. |
-| **String bet** | An undeclared reach-back for more chips — only the first motion counts (usually ruled a call). Announcing "raise" first makes split motions legal. |
+| **String bet** | An undeclared reach-back for more chips — only the first motion counts (usually ruled a call). Declaring the full raise amount first makes split motions legal; some rulebooks (WSOP) accept a bare "raise," while TDA rules want the amount stated or pushed in one motion. |
 | **Jam / Shove** | To move all-in. |
 | **Snap call** | An instant, no-hesitation call. |
 | **Hero call** | Calling with a weak hand because you've read the opponent as bluffing. |
@@ -173,7 +173,7 @@ The zoo of nicknames for the people across the felt. The full breakdown lives in
 | **Calling station** | A passive player who calls far too much and rarely folds or raises. |
 | **Reg** | A "regular" — a habitual, usually competent player at a stake. |
 | **Grinder** | A player who profits through steady volume and discipline. |
-| **LAG / TAG** | Loose-aggressive / tight-aggressive — two winning aggressive styles. |
+| **LAG / TAG** | Loose-aggressive / tight-aggressive — two aggressive styles most winning players build on (the style alone doesn't make anyone a winner). |
 | **Maniac** | A hyper-aggressive player who raises and bluffs wildly. |
 | **Mark** | The weak player the table is trying to win money from. |
 
@@ -274,7 +274,7 @@ A. Both are three of a kind and rank identically, but they're made differently. 
 
 **Q. What is the difference between a cooler and a bad beat?**
 
-A. In a bad beat you were the favorite when the money went in and got outdrawn by a lucky card. In a cooler you were behind the whole way with a hand too strong to fold, and no lucky card was needed — the bigger hand was ahead from the start. Quick test: if your opponent had to *improve* to win, it's a bad beat; if not, it's a cooler.
+A. In a bad beat you were the favorite when the money went in and got outdrawn by a lucky card. In a cooler — in the strict sense — you were behind when the money went in with a hand too strong to fold, and no lucky card was needed; some players use "cooler" for any big hand that loses to a bigger one. Quick test: if you were a heavy favorite going in and your opponent had to *improve* to win, it's a bad beat; if they were already ahead going in, it's a cooler.
 
 **Q. What is a 3-bet in poker, and why isn't the first raise the "1-bet"?**
 
