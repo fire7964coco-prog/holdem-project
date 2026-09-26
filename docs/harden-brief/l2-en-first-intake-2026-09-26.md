@@ -34,8 +34,8 @@ UNVERIFIABLE 행은 **자동 재작성 대상이 아니다**(MA-172·179 명시)
 
 | 회차 | 묶음 | 원장 미결 | 동반 | 상태 |
 |---|---|---:|---|---|
-| **L-2a** | 용어 6 — cooler · bad-beat · glossary · fish · straddle · rake | 58 (W28) | MA-179 요청 1 cooler 한정절 + **형제 7로케일 ≈45자리**(보고 §3-3 · 행별 재확인) · MA-182 de cooler Kurze Antwort 3문장 · MA-180 ⓒ KK 폴드 FAQ가 한정절 자리와 겹치면 한 커밋 · bad-beat AA vs 77 승자 단정(§13 검산) | ▶ 착수 |
-| **L-2b** | GTO 13 | 68 (W29) | paired-board 13.0% **ko+EN+8로케일 10사본** · monotone 74s 10사본 · «sixes lead most» 8사본 · history 문장 4편 × 5로케일 · 원시 캡처 `.solver-captures/data.json` 대조 | 대기 |
+| **L-2a** | 용어 6 — cooler · bad-beat · glossary · fish · straddle · rake | 58 (W28) | MA-179 요청 1 cooler 한정절 + **형제 7로케일 ≈45자리**(보고 §3-3 · 행별 재확인) · MA-182 de cooler Kurze Antwort 3문장 · MA-180 ⓒ KK 폴드 FAQ가 한정절 자리와 겹치면 한 커밋 · bad-beat AA vs 77 승자 단정(§13 검산) | ✅ `18b8eaf9`(MB-089) · 정의 계열 밖 EN 변경의 7로케일 전파는 L-2g |
+| **L-2b** | GTO 13 | 68 (W29) | paired-board 13.0% **ko+EN+8로케일 10사본** · monotone 74s 10사본 · «sixes lead most» 8사본 · history 문장 4편 × 5로케일 · 원시 캡처 `.solver-captures/data.json` 대조 | ▶ 다음 |
 | **L-2c** | 전략 8 | 56 (W0) | MA-144 ⓑ · SB «3-bet or fold» 라벨 차이 = 의도(MA-179 ⑥ · 손대지 않음) | 대기 |
 | **L-2d** | 확률·아웃츠 7 | 52 (W5) | L-1 이월(es·zh·zh-hant equity 벳 문턱 등) | 대기 |
 | **L-2e** | 족보·규칙 8 | 28 (W2) | MA-179 요청 3 TDA 판 접두 · MA-182 통지 2(de TDA 14행 · all-in «Rule 174») · beginners «match the big blind» 24사본 | 대기 |

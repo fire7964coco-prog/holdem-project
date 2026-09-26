@@ -1,3 +1,10 @@
+## 2026-09-26 (4) — L-2 EN-먼저 착수 · L-2a 용어 6편 배포 (MB-088 · MB-089)
+
+- 착수: MA-172를 MA-179로 거르는 대신 **현행 EN 원장 미결 262행**을 범위로 삼았다(원장이 철회·강등을 이미 반영 — 철회 표본 10문구 미결 0 · 강등 8행 RISKY 실측). intake `docs/harden-brief/l2-en-first-intake-2026-09-26.md` · 작업판 `l2-en-open-rows-2026-09-26.md` · 착수 공지 MB-088(MA-182·183 등재 포함) `c6a0f995`.
+- `18b8eaf9` L-2a: EN 6편 58행 전건(WRONG 28 · RISKY 30 · 기각 0) + 형제 7로케일 cooler 정의 계열 21파일. cooler는 재작성 없이 «strict sense» 약정 한정절(사장님 09-25 결재 · MA-179 ①). §13: AA vs 77 «7이 뜨고 A가 없으면 진다»는 거짓(플러시·스트레이트·보드 트립스 구제 — 7♠K♣K♦K♥2♣ AA KKKAA 승) → 정정.
+- 3층: 교열·딜러 렌즈 1회 → 13건 중 12 반영(결미 «take exactly as many» ↔ 새 «more beats than you deliver» 모순 등 · WSOP 표기 1건은 정확해 유지). 로케일은 레인 에이전트 6개 병렬(정의 계열만 · 나머지 EN 변경은 L-2g로 목록화).
+- audit:hard 8로케일 0err · check:stamp 0 · build 776. masterUpdated 미상향(부분 전파 · §1-C 조건).
+
 ## 2026-09-26 (3) — L-1 zh-hant 로케일 고유 정정 · L-1 종결 (MB-087)
 
 - `9a991e37` zh-hant 16편 31자리(WRONG 3 = outs 복합 드로 겹침 1·2장 · bad-beat 快速回答 전칭 · betting FAQ 過牌 조건). 66705ba8의 zh 완화가 zh-hant에 안 넘어온 자리(整個基礎 2 · 9張 한정) 전파 · 快速解答 층 전칭 다수를 본문 문면으로 한정.

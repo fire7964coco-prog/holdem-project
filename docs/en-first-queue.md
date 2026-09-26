@@ -155,7 +155,7 @@ ms에서는 **고치지 않았다**(EN과 갈라지지 않게). EN을 고치면 
 | 묶음 | 상태 | 규모 |
 |---|---|---|
 | **L-1 로케일 고유**(es·zh·zh-hant) | ✅ **종결 09-26** — es `14845d6f`(10) · zh `b19932db`(25) · zh-hant `9a991e37`(31) · EN 동형 이월분(es ~10 · zh·zh-hant equity 벳 문턱)은 L-2에 합침 | — |
-| **L-2 EN-먼저**(MA-144 ⓐⓑⓒ · 167 fish · 174 paired 13%·monotone 74s·history · 175~178 통지 · L-1 es 이월분) | ▶ **착수 09-26**(착수 공지 MB-088) — intake = `docs/harden-brief/l2-en-first-intake-2026-09-26.md`(범위 = 현행 EN 원장 미결 **262행** · MA-179 철회분은 원장에서 이미 OK) · 회차 L-2a 용어 → b GTO → c 전략 → d 확률 → e 족보·규칙 → f 계산기 AQo↔KQo(MA-183) → g 로케일 전파 | 262행 · 🔴 paired-board는 **ko 원본(23%)도** 13.0%로 |
+| **L-2 EN-먼저**(MA-144 ⓐⓑⓒ · 167 fish · 174 paired 13%·monotone 74s·history · 175~178 통지 · L-1 es 이월분) | ▶ **착수 09-26**(착수 공지 MB-088) — intake = `docs/harden-brief/l2-en-first-intake-2026-09-26.md`(범위 = 현행 EN 원장 미결 **262행** · MA-179 철회분은 원장에서 이미 OK) · 회차 **L-2a 용어 ✅ `18b8eaf9`(MB-089)** → b GTO → c 전략 → d 확률 → e 족보·규칙 → f 계산기 AQo↔KQo(MA-183) → g 로케일 전파 | 262행 · 🔴 paired-board는 **ko 원본(23%)도** 13.0%로 |
 | **L-3 계산기**: 문구 5종(A55·A81·A85·B22·B111) + orHigher 3 · spr.low 3 | ✅ **종결 `0932f093`**(09-25 · ko 동형 3자리 포함) · 남긴 것: 푸시/폴드 토글 «BB ante ON» 라벨(A81 인접 · intake 채택 범위 밖) | — |
 | **L-3 계산기 레인지 3건**(K10o↔Q10o 역전 · A10s · 88) | ✅ **종결 `104fac47`**(09-25 · 169핸드 지배 쌍 1,168 역전 5→0 · A3s·A2s 역전 추가 발견·정정 · 권고안 수정 2자리는 intake §3) | — |
 | **L-4 판단 필요**(cooler 인접 2 · outs spade · id melepas) | ⏸ — cooler 인접 2는 MA-180 ⓒ «본체 진행 · 한정절 자리와 겹치면 한 커밋» → L-2a에서 | — |

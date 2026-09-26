@@ -6,64 +6,64 @@
 
 | 글 | # | 판정 | 원문(앞 110자) | 처리 |
 |---|---:|---|---|---|
-| cooler | 1 | WRONG | Unlike a bad beat, you were behind the whole way and no lucky card 'sucked out' on you: you played it right… | |
-| cooler | 3 | WRONG | No suckout / The winner led start to finish | |
-| cooler | 4 | WRONG | A cooler is a hand in which two very strong holdings collide, and the losing player was always behind but c… | |
-| cooler | 5 | RISKY | What makes a cooler different from an ordinary loss is that a good player would lose the exact same chips e… | |
-| cooler | 6 | WRONG | Both feel terrible, but they are opposites: | |
-| cooler | 7 | WRONG | you were behind when the money went in and stayed behind. No lucky card saved anyone; the winner was ahead … | |
-| cooler | 10 | RISKY | You were the underdog the whole way and simply couldn't fold a flopped set. | |
-| cooler | 22 | RISKY | If yes, you got coolered. If no, you misplayed | |
-| cooler | 23 | RISKY | there's nothing to study, so don't relive it. | |
-| cooler | 24 | WRONG | One cooler is a rounding error over tens of thousands of hands — it only hurts if you let it change how you… | |
-| cooler | 25 | WRONG | You were behind from the moment the chips went in, and no misplay was involved. | |
-| cooler | 26 | WRONG | In a cooler you were behind the whole way and lost to a bigger hand — no lucky card changed anything. | |
-| cooler | 31 | WRONG | It's the opposite of a bad beat. | |
-| cooler | 33 | RISKY | A cooler is a hand where you lose a big pot with a very strong holding you could never correctly fold — lik… | |
-| cooler | 35 | RISKY | only a read that screams aces makes it foldable, and preflop that read almost never arrives | |
-| cooler | 41 | WRONG | A cooler is an unavoidable loss with a hand too strong to fold — you were behind the whole way, no suckout … | |
-| cooler | 42 | WRONG | A bad beat is being ahead and getting outdrawn; a cooler is being behind and never having a chance. | |
-| cooler | 43 | RISKY | The test: would you make the same play again with the same information? If yes, it was a cooler; if no, it … | |
-| cooler | 50 | WRONG | Behind going in / Where you stood when the money went in | |
-| bad-beat | 2 | RISKY | bad beats are actually a sign you're playing in a profitable game. | |
-| bad-beat | 5 | RISKY | You played it correctly — you got your money in "good," ahead in the math | |
-| bad-beat | 6 | WRONG | People use "bad beat" and "cooler" interchangeably, but they're opposites | |
-| bad-beat | 7 | WRONG | No — the leader led all the way | |
-| bad-beat | 8 | WRONG | if your opponent needed to *improve* to win, it's a bad beat. | |
-| bad-beat | 10 | RISKY | (If the kings only found their set on the turn or river, the test says suckout — that one *is* a bad beat.) | |
-| bad-beat | 18 | WRONG | if one hits the board — and no ace comes along — their three-of-a-kind beats your pair. | |
-| bad-beat | 32 | WRONG | Every bad beat you take is proof you're playing in a beatable game. | |
-| bad-beat | 34 | WRONG | If nobody at your table ever drew out on you, it would mean everyone was folding their weak hands correctly… | |
-| bad-beat | 35 | WRONG | Over a large enough sample, the beats you take and the beats you *deliver* roughly cancel out. | |
-| bad-beat | 36 | RISKY | The chips will come back; the edge is permanent, the variance is temporary. | |
-| bad-beat | 37 | RISKY | Because a bad beat carries no lesson about your play | |
-| bad-beat | 38 | WRONG | One beat is a rounding error across tens of thousands of hands — it only hurts your results if you let it c… | |
-| bad-beat | 39 | WRONG | In a cooler you were behind the whole way with a hand too strong to fold, and no suckout occurred. | |
-| bad-beat | 42 | WRONG | It's the opposite of a cooler. | |
-| bad-beat | 44 | WRONG | One question settles it: if they had to improve to win, it was a bad beat — if they were already ahead, it … | |
-| bad-beat | 45 | WRONG | Quick test: if your opponent had to *improve* to win, it's a bad beat; if they were already ahead, it's a c… | |
-| bad-beat | 46 | RISKY | if the bigger set arrived on the turn or river, it was a suckout. | |
-| bad-beat | 47 | WRONG | If your opponent had to improve to win, it was a bad beat. | |
-| bad-beat | 48 | WRONG | A bad beat needs a suckout (the underdog improves); a cooler doesn't (the leader led all along). | |
-| bad-beat | 49 | RISKY | you were ahead when the money went in, played it right, and got outdrawn. It's variance, not a mistake. | |
-| bad-beat | 51 | RISKY | Unlike a cooler, you were ahead when the money went in; the deck just betrayed you at the end. | |
-| glossary | 3 | RISKY | Blinds are positional forced bets (SB/BB); antes seed the pot and come from everyone (in tournaments today,… | |
-| glossary | 5 | RISKY | A [cooler](/en/blog/holdem-cooler) = you were behind and couldn't fold; a [bad beat](/en/blog/holdem-bad-be… | |
-| glossary | 13 | RISKY | String bet / An undeclared reach-back for more chips — only the first motion counts (usually ruled a call).… | |
-| glossary | 22 | RISKY | LAG / TAG / Loose-aggressive / tight-aggressive — two winning aggressive styles. | |
-| glossary | 34 | WRONG | A. In a bad beat you were the favorite when the money went in and got outdrawn by a lucky card. In a cooler… | |
-| glossary | 36 | WRONG | Quick test: if your opponent had to *improve* to win, it's a bad beat; if not, it's a cooler. | |
-| fish | 10 | RISKY | But when you see three or four of these from the same player, you've found the fish. | |
-| fish | 15 | RISKY | TAG / A *winning* style (tight-aggressive) / Narrow range, but bets and raises it hard / Not a fish — respe… | |
-| fish | 16 | RISKY | LAG / A *winning* style (loose-aggressive) / Wide range, constant pressure, bluffs often / Don't over-fold … | |
-| fish | 18 | RISKY | A nit is not a fish. | |
-| fish | 20 | RISKY | And LAG/TAG are winning styles, not weak-player labels | |
-| fish | 27 | RISKY | No single tell is proof, but three or four together — especially loose calling combined with passivity — re… | |
-| fish | 40 | RISKY | Nit / under 12% / under 8% / Too tight — predictable, not a fish | |
-| straddle | 15 | RISKY | Re-straddle / Left of a straddler / Left of re-straddler / Preflop only / Yes | |
-| straddle | 23 | RISKY | You commit money blind, you shrink your positional edge (solvers open *fewer* hands in straddled pots, not … | |
-| rake | 33 | RISKY | The same goes for avoiding very short-handed tables | |
-| rake | 34 | RISKY | What matters is the percentage times how often you pay it. | |
+| cooler | 1 | WRONG | Unlike a bad beat, you were behind the whole way and no lucky card 'sucked out' on you: you played it right… | 채택 `18b8eaf9` |
+| cooler | 3 | WRONG | No suckout / The winner led start to finish | 채택 `18b8eaf9` |
+| cooler | 4 | WRONG | A cooler is a hand in which two very strong holdings collide, and the losing player was always behind but c… | 채택 `18b8eaf9` |
+| cooler | 5 | RISKY | What makes a cooler different from an ordinary loss is that a good player would lose the exact same chips e… | 채택 `18b8eaf9` |
+| cooler | 6 | WRONG | Both feel terrible, but they are opposites: | 채택 `18b8eaf9` |
+| cooler | 7 | WRONG | you were behind when the money went in and stayed behind. No lucky card saved anyone; the winner was ahead … | 채택 `18b8eaf9` |
+| cooler | 10 | RISKY | You were the underdog the whole way and simply couldn't fold a flopped set. | 채택 `18b8eaf9` |
+| cooler | 22 | RISKY | If yes, you got coolered. If no, you misplayed | 채택 `18b8eaf9` |
+| cooler | 23 | RISKY | there's nothing to study, so don't relive it. | 채택 `18b8eaf9` |
+| cooler | 24 | WRONG | One cooler is a rounding error over tens of thousands of hands — it only hurts if you let it change how you… | 채택 `18b8eaf9` |
+| cooler | 25 | WRONG | You were behind from the moment the chips went in, and no misplay was involved. | 채택 `18b8eaf9` |
+| cooler | 26 | WRONG | In a cooler you were behind the whole way and lost to a bigger hand — no lucky card changed anything. | 채택 `18b8eaf9` |
+| cooler | 31 | WRONG | It's the opposite of a bad beat. | 채택 `18b8eaf9` |
+| cooler | 33 | RISKY | A cooler is a hand where you lose a big pot with a very strong holding you could never correctly fold — lik… | 채택 `18b8eaf9` |
+| cooler | 35 | RISKY | only a read that screams aces makes it foldable, and preflop that read almost never arrives | 채택 `18b8eaf9` |
+| cooler | 41 | WRONG | A cooler is an unavoidable loss with a hand too strong to fold — you were behind the whole way, no suckout … | 채택 `18b8eaf9` |
+| cooler | 42 | WRONG | A bad beat is being ahead and getting outdrawn; a cooler is being behind and never having a chance. | 채택 `18b8eaf9` |
+| cooler | 43 | RISKY | The test: would you make the same play again with the same information? If yes, it was a cooler; if no, it … | 채택 `18b8eaf9` |
+| cooler | 50 | WRONG | Behind going in / Where you stood when the money went in | 채택 `18b8eaf9` |
+| bad-beat | 2 | RISKY | bad beats are actually a sign you're playing in a profitable game. | 채택 `18b8eaf9` |
+| bad-beat | 5 | RISKY | You played it correctly — you got your money in "good," ahead in the math | 채택 `18b8eaf9` |
+| bad-beat | 6 | WRONG | People use "bad beat" and "cooler" interchangeably, but they're opposites | 채택 `18b8eaf9` |
+| bad-beat | 7 | WRONG | No — the leader led all the way | 채택 `18b8eaf9` |
+| bad-beat | 8 | WRONG | if your opponent needed to *improve* to win, it's a bad beat. | 채택 `18b8eaf9` |
+| bad-beat | 10 | RISKY | (If the kings only found their set on the turn or river, the test says suckout — that one *is* a bad beat.) | 채택 `18b8eaf9` |
+| bad-beat | 18 | WRONG | if one hits the board — and no ace comes along — their three-of-a-kind beats your pair. | 채택 `18b8eaf9` |
+| bad-beat | 32 | WRONG | Every bad beat you take is proof you're playing in a beatable game. | 채택 `18b8eaf9` |
+| bad-beat | 34 | WRONG | If nobody at your table ever drew out on you, it would mean everyone was folding their weak hands correctly… | 채택 `18b8eaf9` |
+| bad-beat | 35 | WRONG | Over a large enough sample, the beats you take and the beats you *deliver* roughly cancel out. | 채택 `18b8eaf9` |
+| bad-beat | 36 | RISKY | The chips will come back; the edge is permanent, the variance is temporary. | 채택 `18b8eaf9` |
+| bad-beat | 37 | RISKY | Because a bad beat carries no lesson about your play | 채택 `18b8eaf9` |
+| bad-beat | 38 | WRONG | One beat is a rounding error across tens of thousands of hands — it only hurts your results if you let it c… | 채택 `18b8eaf9` |
+| bad-beat | 39 | WRONG | In a cooler you were behind the whole way with a hand too strong to fold, and no suckout occurred. | 채택 `18b8eaf9` |
+| bad-beat | 42 | WRONG | It's the opposite of a cooler. | 채택 `18b8eaf9` |
+| bad-beat | 44 | WRONG | One question settles it: if they had to improve to win, it was a bad beat — if they were already ahead, it … | 채택 `18b8eaf9` |
+| bad-beat | 45 | WRONG | Quick test: if your opponent had to *improve* to win, it's a bad beat; if they were already ahead, it's a c… | 채택 `18b8eaf9` |
+| bad-beat | 46 | RISKY | if the bigger set arrived on the turn or river, it was a suckout. | 채택 `18b8eaf9` |
+| bad-beat | 47 | WRONG | If your opponent had to improve to win, it was a bad beat. | 채택 `18b8eaf9` |
+| bad-beat | 48 | WRONG | A bad beat needs a suckout (the underdog improves); a cooler doesn't (the leader led all along). | 채택 `18b8eaf9` |
+| bad-beat | 49 | RISKY | you were ahead when the money went in, played it right, and got outdrawn. It's variance, not a mistake. | 채택 `18b8eaf9` |
+| bad-beat | 51 | RISKY | Unlike a cooler, you were ahead when the money went in; the deck just betrayed you at the end. | 채택 `18b8eaf9` |
+| glossary | 3 | RISKY | Blinds are positional forced bets (SB/BB); antes seed the pot and come from everyone (in tournaments today,… | 채택 `18b8eaf9` |
+| glossary | 5 | RISKY | A [cooler](/en/blog/holdem-cooler) = you were behind and couldn't fold; a [bad beat](/en/blog/holdem-bad-be… | 채택 `18b8eaf9` |
+| glossary | 13 | RISKY | String bet / An undeclared reach-back for more chips — only the first motion counts (usually ruled a call).… | 채택 `18b8eaf9` |
+| glossary | 22 | RISKY | LAG / TAG / Loose-aggressive / tight-aggressive — two winning aggressive styles. | 채택 `18b8eaf9` |
+| glossary | 34 | WRONG | A. In a bad beat you were the favorite when the money went in and got outdrawn by a lucky card. In a cooler… | 채택 `18b8eaf9` |
+| glossary | 36 | WRONG | Quick test: if your opponent had to *improve* to win, it's a bad beat; if not, it's a cooler. | 채택 `18b8eaf9` |
+| fish | 10 | RISKY | But when you see three or four of these from the same player, you've found the fish. | 채택 `18b8eaf9` |
+| fish | 15 | RISKY | TAG / A *winning* style (tight-aggressive) / Narrow range, but bets and raises it hard / Not a fish — respe… | 채택 `18b8eaf9` |
+| fish | 16 | RISKY | LAG / A *winning* style (loose-aggressive) / Wide range, constant pressure, bluffs often / Don't over-fold … | 채택 `18b8eaf9` |
+| fish | 18 | RISKY | A nit is not a fish. | 채택 `18b8eaf9` |
+| fish | 20 | RISKY | And LAG/TAG are winning styles, not weak-player labels | 채택 `18b8eaf9` |
+| fish | 27 | RISKY | No single tell is proof, but three or four together — especially loose calling combined with passivity — re… | 채택 `18b8eaf9` |
+| fish | 40 | RISKY | Nit / under 12% / under 8% / Too tight — predictable, not a fish | 채택 `18b8eaf9` |
+| straddle | 15 | RISKY | Re-straddle / Left of a straddler / Left of re-straddler / Preflop only / Yes | 채택 `18b8eaf9` |
+| straddle | 23 | RISKY | You commit money blind, you shrink your positional edge (solvers open *fewer* hands in straddled pots, not … | 채택 `18b8eaf9` |
+| rake | 33 | RISKY | The same goes for avoiding very short-handed tables | 채택 `18b8eaf9` |
+| rake | 34 | RISKY | What matters is the percentage times how often you pay it. | 채택 `18b8eaf9` |
 
 ## L-2b GTO 13 — 68행 (WRONG 29 · RISKY 39)
 
