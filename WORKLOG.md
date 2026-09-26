@@ -1,3 +1,11 @@
+## 2026-09-26 (8) — L-2e 족보·규칙 배포 · MA-188 ②③ · MA-182 통지 2 이행 (MB-093)
+
+- `10e5997b` EN 11편 원장 미결 28행 = 채택 27 · 기각 1(game-order #17 — 작업판 스냅숏이 원장의 zh 사유 행을 EN 행으로 뽑은 혼입). WRONG 2: 트리플 «two ways» → 세 구성(보드 트리플) · reading «changes who's winning» → can change(AA vs KK에 7 반례).
+- 핵심: SF = 더 높은 SF·로열에 짐(본문+캡션) · 5장 기준 한정(hand-rankings·flush 3자리) · K-K-9-9-5 «무늬 3장 없음»(플러시 반례) · 버튼 추첨 무늬(WSOP 85 + 용어집) · 이의 제기 = 다음 핸드 전(TDA 2024 Rule 22) · beginners 리엔트리·리밋 캡·BB 미만 올인·likely winner.
+- TDA 판 접두: EN 6편 인용 전부 «TDA 2024 Rule N»(2024 원문 전 번호 대조) · de TDA-2024-Regel 6편 · Live Action Rule 174→175(올인 예외 = 175) 9로케일.
+- 동반: betting «Rule 103 also bans» es·zh·zh-hant · showdown FAQ 18-B 토너먼트 한정 zh·zh-hant · beginners 올인 단서 21로케일(서브에이전트 · it·fa·zh-hant·ko 해당 문장 없음). 나머지는 L-2g(작업판 L-2e 절 🪶).
+- 렌즈 2종: 딜러 결함 0(참고: 단일 오버칩 = 콜 TDA 44 반영) · 교열 9 중 8 반영(hand-rankings FAQ «only thing above SF» 잔존 · flush FAQ 1 «rarer always» 잔존 · 보드 트리플 풀/쿼즈 예외 · zh 판 표기 통일 등). audit:hard 0err · check:stamp 0 · build 73+577.
+
 ## 2026-09-26 (7) — L-2d 확률·아웃츠 7편 배포 · MA-188 ① 이행 (MB-092)
 
 - `7d2a0822` EN 7편 원장 미결 52행 전건 채택(WRONG 5 · RISKY 47 · 기각 0). 핵심: Set→FH 33.4% = «full house or quads»(풀만 29.1/19.6 · 쿼즈 2/47) · 스트플 1/4,900 = 54s–JTs · «×4 only when all-in» → no more betting(올인·올인 콜) · 4·2 규칙 = chance to hit · pot-odds 경험담 리버 콜 → 턴(국면 WRONG) · 넛 드로 필요조건 삭제 · implied 셋 상대 클린 7장 x≈$129 · 15아웃 vs 99 40.3%(열거) · AA 10인 1/136·9인 1/153 · 결과론(«math on your side») 삭제 · 벳 문턱 = 순수 블러프 한정.

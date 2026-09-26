@@ -262,31 +262,33 @@
 
 | 글 | # | 판정 | 원문(앞 110자) | 처리 |
 |---|---:|---|---|---|
-| hand-rankings | 42 | WRONG | There are two ways to make it, and the difference matters: | |
-| hand-rankings | 79 | RISKY | ==g:The harder a hand is to make, the higher it ranks.== That single principle explains the entire hierarchy | |
-| hand-rankings | 124 | RISKY | Once you have trips, you take the full house. Full house beats two pair. | |
-| flush-vs-straight | 20 | RISKY | If you hold a flush draw and your opponent is drawing to a straight, you're in great shape | |
-| flush-vs-straight | 32 | RISKY | On an unpaired board your ace-high flush is beaten only by a straight flush | |
-| flush-vs-straight | 41 | RISKY | A straight flush is five *consecutive* cards of *one suit* — like 9♥ 8♥ 7♥ 6♥ 5♥. It's the #2 hand in poker… | |
-| flush-vs-straight | 51 | RISKY | an ace-high ("nut") flush beats a king-high flush. | |
-| flush-vs-straight | 55 | RISKY | The same frequency rule explains the entire ladder | |
-| flush-vs-straight | 75 | RISKY | In poker the rarer hand always ranks higher. | |
-| kicker | 27 | RISKY | but only if you turn your hole cards face up; muck them and you get nothing, even here (TDA Rule 19). | |
-| tiebreak-rules | 57 | RISKY | The case that catches people is a double-paired board like K-K-9-9-5: unless someone holds a king, a nine, … | |
-| tiebreak-rules | 58 | RISKY | and if nobody's hole card beats the board's five, everyone plays the board and the pot is chopped. | |
-| tiebreak-rules | 75 | RISKY | — no suit involved.) | |
-| tiebreak-rules | 76 | RISKY | The only suit order in the tournament rulebook belongs to stud and razz. | |
-| tiebreak-rules | 100 | RISKY | The question keeps coming up because suit order genuinely exists in poker — just not in this game. | |
-| split-pot-rules | 44 | RISKY | smallest denomination in play (TDA Rule 20) | |
-| reading-the-board | 52 | RISKY | At showdown you don't have to call it: cards speak, and the dealer reads the hand (TDA Rule 12). | |
-| reading-the-board | 53 | RISKY | What you do have to do is turn both cards face up — cards only speak for a properly tabled hand (Rule 13-A) | |
-| reading-the-board | 54 | RISKY | if the dealer misreads it, say so before the pot is pushed. | |
-| reading-the-board | 64 | WRONG | On J♥ 10♥ 8♣, any heart, any 9, any 7, and any Q changes who's winning. | |
-| reading-the-board | 71 | RISKY | Any Q-x has trips; any pocket pair matching the board has a full house | |
-| reading-the-board | 78 | RISKY | even when you play the board you must table both hole cards to claim a share (==WSOP tournament Rule 75==, … | |
-| reading-the-board | 92 | RISKY | A pair on the board counts toward your best 5 even if your hole cards miss completely. | |
-| game-order | 17 | RISKY | zh #120 | |
-| texas-holdem-rules-for-beginners | 25 | RISKY | you pay one fixed entry, get a set stack of non-cashable chips, and play until one player has them all | |
-| texas-holdem-rules-for-beginners | 27 | RISKY | The dealing, blinds, and hand rankings are identical across all three formats. The only thing that changes … | |
-| texas-holdem-rules-for-beginners | 68 | RISKY | Every other player must at least match the big blind to stay in the hand. | |
-| texas-holdem-rules-for-beginners | 77 | RISKY | When you have a drawing hand (e.g. four cards to a flush), count your outs — the cards that will complete y… | |
+| hand-rankings | 42 | WRONG | There are two ways to make it, and the difference matters: | 채택 `10e5997b` — 세 구성(보드 트리플) |
+| hand-rankings | 79 | RISKY | ==g:The harder a hand is to make, the higher it ranks.== That single principle explains the entire hierarchy | 채택 `10e5997b` — from five cards |
+| hand-rankings | 124 | RISKY | Once you have trips, you take the full house. Full house beats two pair. | 채택 `10e5997b` — 보드 페어 조건 |
+| flush-vs-straight | 20 | RISKY | If you hold a flush draw and your opponent is drawing to a straight, you're in great shape | 채택 `10e5997b` — favorite 단정 완화 |
+| flush-vs-straight | 32 | RISKY | On an unpaired board your ace-high flush is beaten only by a straight flush | 채택 `10e5997b` — nut flush |
+| flush-vs-straight | 41 | RISKY | A straight flush is five *consecutive* cards of *one suit* — like 9♥ 8♥ 7♥ 6♥ 5♥. It's the #2 hand in poker… | 채택 `10e5997b` — 더 높은 SF · 캡션 동반 |
+| flush-vs-straight | 51 | RISKY | an ace-high ("nut") flush beats a king-high flush. | 채택 `10e5997b` — nut 삭제 |
+| flush-vs-straight | 55 | RISKY | The same frequency rule explains the entire ladder | 채택 `10e5997b` — five-card 한정 |
+| flush-vs-straight | 75 | RISKY | In poker the rarer hand always ranks higher. | 채택 `10e5997b` — five-card 한정 · FAQ 1 동반 |
+| kicker | 27 | RISKY | but only if you turn your hole cards face up; muck them and you get nothing, even here (TDA Rule 19). | 채택 `10e5997b` — TDA 2024 접두 |
+| tiebreak-rules | 57 | RISKY | The case that catches people is a double-paired board like K-K-9-9-5: unless someone holds a king, a nine, … | 채택 `10e5997b` — 무늬 3장 없음 조건 |
+| tiebreak-rules | 58 | RISKY | and if nobody's hole card beats the board's five, everyone plays the board and the pot is chopped. | 채택 `10e5997b` — #57 동일 뿌리 |
+| tiebreak-rules | 75 | RISKY | — no suit involved.) | 채택 `10e5997b` — no suit involved 삭제 |
+| tiebreak-rules | 76 | RISKY | The only suit order in the tournament rulebook belongs to stud and razz. | 채택 `10e5997b` — 버튼 추첨 rank and suit 예외 |
+| tiebreak-rules | 100 | RISKY | The question keeps coming up because suit order genuinely exists in poker — just not in this game. | 채택 `10e5997b` — never for ranking hands |
+| split-pot-rules | 44 | RISKY | smallest denomination in play (TDA Rule 20) | 채택 `10e5997b` — TDA 2024 접두 |
+| reading-the-board | 52 | RISKY | At showdown you don't have to call it: cards speak, and the dealer reads the hand (TDA Rule 12). | 채택 `10e5997b` — TDA 2024 접두 |
+| reading-the-board | 53 | RISKY | What you do have to do is turn both cards face up — cards only speak for a properly tabled hand (Rule 13-A) | 채택 `10e5997b` — TDA 2024 접두 |
+| reading-the-board | 54 | RISKY | if the dealer misreads it, say so before the pot is pushed. | 채택 `10e5997b` — TDA 2024 Rule 22 다음 핸드 전 |
+| reading-the-board | 64 | WRONG | On J♥ 10♥ 8♣, any heart, any 9, any 7, and any Q changes who's winning. | 채택 `10e5997b` — can change |
+| reading-the-board | 71 | RISKY | Any Q-x has trips; any pocket pair matching the board has a full house | 채택 `10e5997b` — 트립스·풀·쿼즈 구분 |
+| reading-the-board | 78 | RISKY | even when you play the board you must table both hole cards to claim a share (==WSOP tournament Rule 75==, … | 채택 `10e5997b` — TDA 2024 접두 |
+| reading-the-board | 92 | RISKY | A pair on the board counts toward your best 5 even if your hole cards miss completely. | 채택 `10e5997b` — not locked in |
+| game-order | 17 | RISKY | zh #120 | 기각 — 원장 행 = zh #120 사유 기록(EN 결함 없음) · 스냅숏 추출 혼입 |
+| texas-holdem-rules-for-beginners | 25 | RISKY | you pay one fixed entry, get a set stack of non-cashable chips, and play until one player has them all | 채택 `10e5997b` — re-entry |
+| texas-holdem-rules-for-beginners | 27 | RISKY | The dealing, blinds, and hand rankings are identical across all three formats. The only thing that changes … | 채택 `10e5997b` — 리밋 레이즈 캡 |
+| texas-holdem-rules-for-beginners | 68 | RISKY | Every other player must at least match the big blind to stay in the hand. | 채택 `10e5997b` — 올인 단서 · 21로케일 동반 |
+| texas-holdem-rules-for-beginners | 77 | RISKY | When you have a drawing hand (e.g. four cards to a flush), count your outs — the cards that will complete y… | 채택 `10e5997b` — likely winner |
+
+> 🪶 L-2e 로케일: 이번 커밋 동반 = MA-188 ② betting Rule 103(es·zh·zh-hant) · ③ showdown FAQ 18-B(zh·zh-hant) · de TDA-2024-Regel 접두 6편(MA-182 통지 2) · Live Action Rule 174→175 9로케일 · beginners #68 올인 단서 21로케일. **나머지 EN 변경의 형제 로케일 전파 = L-2g** — 특히 TDA 판 접두(de 외 전 로케일) · reading #54 Rule 22 절(de 포함) · all-in 단일 오버칩 TDA 44 · SF «더 높은 SF» 본문+캡션 · 트리플 세 구성 · K-K-9-9-5 무늬 · 5장 기준 한정 · beginners #25·#27·#77.
