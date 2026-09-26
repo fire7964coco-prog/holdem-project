@@ -37,8 +37,8 @@ UNVERIFIABLE 행은 **자동 재작성 대상이 아니다**(MA-172·179 명시)
 | **L-2a** | 용어 6 — cooler · bad-beat · glossary · fish · straddle · rake | 58 (W28) | MA-179 요청 1 cooler 한정절 + **형제 7로케일 ≈45자리**(보고 §3-3 · 행별 재확인) · MA-182 de cooler Kurze Antwort 3문장 · MA-180 ⓒ KK 폴드 FAQ가 한정절 자리와 겹치면 한 커밋 · bad-beat AA vs 77 승자 단정(§13 검산) | ✅ `18b8eaf9`(MB-089) · 정의 계열 밖 EN 변경의 7로케일 전파는 L-2g |
 | **L-2b** | GTO 13 | 68 (W29) | paired-board 13.0% **ko+EN+8로케일 10사본** · monotone 74s 10사본 · «sixes lead most» 8사본 · history 문장 4편 × 5로케일 · 원시 캡처 `.solver-captures/data.json` 대조 | ✅ `1bbe1bfe`(MB-090) · 원시 재검산 · 렌즈 반영 10 · ko 원본 동형 결함 동반 정정 · 동반 밖 EN 변경의 로케일 전파는 L-2g |
 | **L-2c** | 전략 8 | 56 (W0) | MA-144 ⓑ · SB «3-bet or fold» 라벨 차이 = 의도(MA-179 ⑥ · 손대지 않음) | ✅ `a879e603`(MB-091) · 채택 55 · 기각 1(3bet #79 재라벨 누락) · MA-187 ① 동반 · 로케일 전파 L-2g |
-| **L-2d** | 확률·아웃츠 7 | 52 (W5) | L-1 이월(es·zh·zh-hant equity 벳 문턱 등) | ▶ 다음 |
-| **L-2e** | 족보·규칙 8 | 28 (W2) | MA-179 요청 3 TDA 판 접두 · MA-182 통지 2(de TDA 14행 · all-in «Rule 174») · beginners «match the big blind» 24사본 | 대기 |
+| **L-2d** | 확률·아웃츠 7 | 52 (W5) | L-1 이월(es·zh·zh-hant equity 벳 문턱 등) · MA-188 ① Set→FH 8로케일 | ✅ `7d2a0822`(MB-092) · 채택 52 · 기각 0 · 동반 밖 로케일 전파 L-2g |
+| **L-2e** | 족보·규칙 8 | 28 (W2) | **MA-188 ② betting «The same rule also bans» EN #73 → «Rule 103 also bans…»(es·zh·zh-hant 동반) · ③ showdown FAQ «caller who paid may ask» EN #81 신설 RISKY(zh #87·zh-hant #86 동반 · es OK)** · MA-179 요청 3 TDA 판 접두 · MA-182 통지 2(de TDA 14행 · all-in «Rule 174») · beginners «match the big blind» 24사본 | ▶ 다음 |
 | **L-2f** | 계산기 AQo↔KQo | — | MA-183 ① · EN + 10로케일 + ko · 169쌍 역전 0 재확인 | 대기 |
 | **L-2g** | 로케일 전파 | — | EN 정정분을 12로케일로 · 레인별(`docs/audit-lanes.md`) · MB-080 형제 무효(es 5 · de 19 · ja 21 · pt 20 · id 10)와 합침 | 대기 |
 

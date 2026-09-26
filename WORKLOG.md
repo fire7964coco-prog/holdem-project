@@ -1,3 +1,10 @@
+## 2026-09-26 (7) — L-2d 확률·아웃츠 7편 배포 · MA-188 ① 이행 (MB-092)
+
+- `7d2a0822` EN 7편 원장 미결 52행 전건 채택(WRONG 5 · RISKY 47 · 기각 0). 핵심: Set→FH 33.4% = «full house or quads»(풀만 29.1/19.6 · 쿼즈 2/47) · 스트플 1/4,900 = 54s–JTs · «×4 only when all-in» → no more betting(올인·올인 콜) · 4·2 규칙 = chance to hit · pot-odds 경험담 리버 콜 → 턴(국면 WRONG) · 넛 드로 필요조건 삭제 · implied 셋 상대 클린 7장 x≈$129 · 15아웃 vs 99 40.3%(열거) · AA 10인 1/136·9인 1/153 · 결과론(«math on your side») 삭제 · 벳 문턱 = 순수 블러프 한정.
+- 동반: MA-188 ① Set→FH 라벨 probability 7로케일 + drawing 6로케일 · L-1 이월 es 5편 9자리 + zh·zh-hant equity 벳 문턱. 나머지 로케일 전파 = L-2g(작업판 L-2d 절 🪶).
+- 렌즈 2종: 딜러 결함 0(참고 1 반영) · 교열 5 반영(outs L114 «all-in only» 잔존 · equity 올인 예시 HU 콜 누락 · 줄표 겹침 2 · «fill them up»). audit:hard 8로케일 0err · check:stamp 0 · build 73+577.
+- MA-188 등재: ②③ → L-2e · ④⑤ → L-2g(intake §2).
+
 ## 2026-09-26 (6) — L-2c 전략 8편 배포 · MA-187 이행 (MB-091)
 
 - `a879e603` EN 8편 원장 미결 56행 = 채택 55 · 기각 1(3bet #79 — 같은 뿌리 #1·#23·#61이 09-25 OK, 원장 재라벨 누락 추정 → MB 요청 1). 새 수치는 솔버 캡처 `.solver-captures/data.json` 대조(A-7-2 45.1/54.9 · 98.2 · 3bp 3보드 사이즈 · SRP ⅓ 선호) + 72o/32o MC 30만(34.5 / 32.2) + 67.6% = C(44,3)/C(50,3).

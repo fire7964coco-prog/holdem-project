@@ -203,58 +203,60 @@
 
 | 글 | # | 판정 | 원문(앞 110자) | 처리 |
 |---|---:|---|---|---|
-| probability | 39 | RISKY | / Set → full house / 7 (flop) / 10 (turn) / 33.4% / 21.7% / | |
-| probability | 51 | RISKY | / Flopping a straight flush (suited connectors) / ~1 in 4,900 / | |
-| probability | 52 | RISKY | When it happens, it's variance, not a mistake — the math was on your side the whole way. | |
-| outs | 3 | RISKY | every remaining card of your suit is an out | |
-| outs | 8 | RISKY | the standard out counts below hold up regardless of what anyone else is holding | |
-| outs | 25 | RISKY | it's actually a favorite (54.1%), the rare draw you can happily get all-in with on the flop | |
-| outs | 27 | RISKY | The ×4 shortcut quietly assumes you'll see *both* cards with no more betting — only guaranteed when you're … | |
-| outs | 39 | RISKY | the standard out counts (9 for a flush, 8 for an open-ender) hold no matter what your opponents hold | |
-| outs | 40 | RISKY | Trim the estimate for big draws (over 8 outs) by subtracting *(outs − 8)*. | |
-| pot-odds | 2 | WRONG | calling river bets because my flush draw *might* get there | |
-| pot-odds | 25 | RISKY | / Your draw / Outs / Equity, 1 card (turn → river) / Equity, 2 cards (flop → river) / | |
-| pot-odds | 27 | RISKY | Equity / Your actual chance of winning the hand right now | |
-| pot-odds | 31 | RISKY | which is only guaranteed when you're already all-in | |
-| pot-odds | 42 | RISKY | A shortcut to turn outs into equity | |
-| pot-odds | 43 | RISKY | call when your equity (outs × 4 or × 2) beats your pot odds. That's the entire decision. | |
-| pot-odds | 44 | WRONG | but only when stacks are deep and your draw is to the nuts | |
-| pot-odds | 83 | RISKY | Count your outs, convert with the Rule of 4 and 2, and call when your equity clears the bar. | |
-| drawing-odds | 5 | RISKY | / Pocket pair → set / 11.8% (7.5-to-1) / — / set→boat 33% by river / | |
-| drawing-odds | 6 | RISKY | / Connectors → straight / 1.3% (76-to-1) / ~10% OESD / 31.5% (8 outs) / | |
-| drawing-odds | 15 | RISKY | the math was on your side the whole way | |
-| drawing-odds | 19 | RISKY | use this only when you're all-in on the flop | |
-| drawing-odds | 29 | RISKY | / Straight flush / Suited connectors / 0.02% · ~4,900-to-1 / 4 ÷ 19,600 / | |
-| drawing-odds | 40 | RISKY | Flopping a straight flush is even rarer at about 1 in 4,900. | |
-| drawing-odds | 41 | RISKY | if you have aces at a full table, another player also holding aces is about 1 in 136 | |
-| drawing-odds | 42 | RISKY | a story, not a mistake | |
-| drawing-odds | 76 | RISKY | That number is the entire basis for whether set-mining a small pair is profitable. | |
-| drawing-odds | 87 | RISKY | The number that decides every set-mining call — only call deep enough to be paid 15× or more when you hit. | |
-| implied-odds | 13 | RISKY | on a board where a fourth heart kills their action | |
-| implied-odds | 21 | WRONG | it doesn't lose when it hits | |
-| implied-odds | 27 | RISKY | the board brings a third diamond. You make your flush — and pay off a stack to the guy holding ==b:A♦== for… | |
-| implied-odds | 31 | RISKY | If there's only half a pot left to win, "I'll get paid on the river" is a fantasy | |
-| implied-odds | 32 | RISKY | If the card that completes your draw also freezes the action (four to a flush, paired board), nobody pays you | |
-| implied-odds | 33 | RISKY | If the draw misses the price by a mile, or your opponent is all-in or short-stacked, implied odds can't res… | |
-| implied-odds | 41 | RISKY | set mining needs about 15–20× (the "5% rule") | |
-| implied-odds | 50 | RISKY | Against a deep opponent who'll pay off a river bet with top pair or a set, that's easy — you call. | |
-| implied-odds | 62 | RISKY | Reach for implied odds only when your draw *just misses* that price | |
-| equity | 4 | RISKY | 70% to win a $200 pot, ==g:$140 of it is "yours"== | |
-| equity | 7 | RISKY | / Draw / Outs / Equity (2 cards) / | |
-| equity | 24 | RISKY | When you're all-in, there are no more decisions — so you realize 100% of your equity | |
-| equity | 26 | RISKY | All-in is the one spot in poker where, with cards still to come, the pie is sliced exactly as the math says | |
-| equity | 49 | RISKY | On a draw, multiply your outs by 4 on the flop or by 2 on the turn; preflop, memorize the handful of matchu… | |
-| equity | 63 | RISKY | Betting? How often villain folds vs the break-even fold rate, bet ÷ (pot + bet) → call, bet, or fold | |
-| equity | 65 | RISKY | For draws, use the Rule of 4 and 2: multiply your outs by 4 on the flop (two cards to come) or by 2 on the … | |
-| card-counting | 8 | WRONG | You only ever see the shared board | |
-| card-counting | 11 | RISKY | the edge comes entirely from playing the *players* | |
-| card-counting | 12 | RISKY | Counting can get you barred / Counting is expected and legal | |
-| card-counting | 21 | RISKY | the nut straight is 25% less likely in their range | |
-| card-counting | 23 | RISKY | Each one you've seen is an out you no longer have. | |
-| card-counting | 35 | WRONG | anything else you see is an accident | |
-| card-counting | 37 | RISKY | Call when that chance beats the price | |
-| card-counting | 51 | RISKY | so it settles the call only when you'll actually see both — you're all-in on the flop with nothing left to … | |
-| card-counting | 66 | RISKY | so there's no "favorable deck" to track — the edge comes from reading opponents | |
+| probability | 39 | RISKY | / Set → full house / 7 (flop) / 10 (turn) / 33.4% / 21.7% / | 채택 `7d2a0822` — full house or quads · 풀만 29.1/19.6 병기 · MA-188 ① 7로케일 동반(de·es·id·ja·pt·zh·zh-hant) |
+| probability | 51 | RISKY | / Flopping a straight flush (suited connectors) / ~1 in 4,900 / | 채택 `7d2a0822` — suited connectors 54s–JTs |
+| probability | 52 | RISKY | When it happens, it's variance, not a mistake — the math was on your side the whole way. | 채택 `7d2a0822` — «결과만으로 판정 불가 · 가격·스택으로» (#91 직답 문면) · es 동반 |
+| outs | 3 | RISKY | every remaining card of your suit is an out | 채택 `7d2a0822` — completes it + 이기는 한에서 out |
+| outs | 8 | RISKY | the standard out counts below hold up regardless of what anyone else is holding | 채택 `7d2a0822` — raw counts 상대 무관 · dirty-out 차감 출발점 |
+| outs | 25 | RISKY | it's actually a favorite (54.1%), the rare draw you can happily get all-in with on the flop | 채택 `7d2a0822` — 완성 54.1% · 원페어 상대 대개 우위 · 셋 상대 약 40%(J♠T♠ vs 99 열거 40.3) |
+| outs | 27 | RISKY | The ×4 shortcut quietly assumes you'll see *both* cards with no more betting — only guaranteed when you're … | 채택 `7d2a0822` — no more betting can happen(올인 · 올인 콜) |
+| outs | 39 | RISKY | the standard out counts (9 for a flush, 8 for an open-ender) hold no matter what your opponents hold | 채택 `7d2a0822` — raw counts · 실제 승리는 상대 패 의존 |
+| outs | 40 | RISKY | Trim the estimate for big draws (over 8 outs) by subtracting *(outs − 8)*. | 채택 `7d2a0822` — 플랍 ×4 한정 |
+| pot-odds | 2 | WRONG | calling river bets because my flush draw *might* get there | 채택 `7d2a0822` — turn bets … on the river(국면) |
+| pot-odds | 25 | RISKY | / Your draw / Outs / Equity, 1 card (turn → river) / Equity, 2 cards (flop → river) / | 채택 `7d2a0822` — 표 머리 Chance to hit |
+| pot-odds | 27 | RISKY | Equity / Your actual chance of winning the hand right now | 채택 `7d2a0822` — expected share(승+무 지분) · FAQ «how often you win»도 동반 |
+| pot-odds | 31 | RISKY | which is only guaranteed when you're already all-in | 채택 `7d2a0822` — no more betting can happen |
+| pot-odds | 42 | RISKY | A shortcut to turn outs into equity | 채택 `7d2a0822` — clean outs → chance of hitting |
+| pot-odds | 43 | RISKY | call when your equity (outs × 4 or × 2) beats your pot odds. That's the entire decision. | 채택 `7d2a0822` — entire decision 삭제 · clean outs·×2 조건 |
+| pot-odds | 44 | WRONG | but only when stacks are deep and your draw is to the nuts | 채택 `7d2a0822` — 칩·지불 상대 조건 · 넛은 «safer» |
+| pot-odds | 83 | RISKY | Count your outs, convert with the Rule of 4 and 2, and call when your equity clears the bar. | 채택 `7d2a0822` — clean outs · 이 콜이 사는 카드 수 · implied |
+| drawing-odds | 5 | RISKY | / Pocket pair → set / 11.8% (7.5-to-1) / — / set→boat 33% by river / | 채택 `7d2a0822` — boat or quads 33.4% · MA-188 ① 6로케일 동반 |
+| drawing-odds | 6 | RISKY | / Connectors → straight / 1.3% (76-to-1) / ~10% OESD / 31.5% (8 outs) / | 채택 `7d2a0822` — Connectors 54–JT · es 동반 |
+| drawing-odds | 15 | RISKY | the math was on your side the whole way | 채택 `7d2a0822` — 결과만으로 판정 불가 |
+| drawing-odds | 19 | RISKY | use this only when you're all-in on the flop | 채택 `7d2a0822` — no more betting · es 동반 |
+| drawing-odds | 29 | RISKY | / Straight flush / Suited connectors / 0.02% · ~4,900-to-1 / 4 ÷ 19,600 / | 채택 `7d2a0822` — 54s–JTs · es 동반 |
+| drawing-odds | 40 | RISKY | Flopping a straight flush is even rarer at about 1 in 4,900. | 채택 `7d2a0822` — 54s~JTs 한정 |
+| drawing-odds | 41 | RISKY | if you have aces at a full table, another player also holding aces is about 1 in 136 | 채택 `7d2a0822` — 10-handed 1/136 · 9-handed 1/153 |
+| drawing-odds | 42 | RISKY | a story, not a mistake | 채택 `7d2a0822` — 결과만으로 판정 불가 |
+| drawing-odds | 76 | RISKY | That number is the entire basis for whether set-mining a small pair is profitable. | 채택 `7d2a0822` — starting point + 지불 조건 |
+| drawing-odds | 87 | RISKY | The number that decides every set-mining call — only call deep enough to be paid 15× or more when you hit. | 채택 `7d2a0822` — starting point · 스택·지불이 결정 |
+| implied-odds | 13 | RISKY | on a board where a fourth heart kills their action | 채택 `7d2a0822` — third heart에 멈추는 상대 |
+| implied-odds | 21 | WRONG | it doesn't lose when it hits | 채택 `7d2a0822` — never loses to a higher flush |
+| implied-odds | 27 | RISKY | the board brings a third diamond. You make your flush — and pay off a stack to the guy holding ==b:A♦== for… | 채택 `7d2a0822` — A♦ + 두 번째 다이아 |
+| implied-odds | 31 | RISKY | If there's only half a pot left to win, "I'll get paid on the river" is a fantasy | 채택 `7d2a0822` — 남은 스택 < x |
+| implied-odds | 32 | RISKY | If the card that completes your draw also freezes the action (four to a flush, paired board), nobody pays you | 채택 `7d2a0822` — fewer hands pay · 지불자는 이길 수 있음 |
+| implied-odds | 33 | RISKY | If the draw misses the price by a mile, or your opponent is all-in or short-stacked, implied odds can't res… | 채택 `7d2a0822` — 스택이 x를 못 덮을 때 · HU 올인 예시 · es 동반 |
+| implied-odds | 41 | RISKY | set mining needs about 15–20× (the "5% rule") | 채택 `7d2a0822` — 15–20× 실전 범위 · 5% 규칙 = 20× |
+| implied-odds | 50 | RISKY | Against a deep opponent who'll pay off a river bet with top pair or a set, that's easy — you call. | 채택 `7d2a0822` — top pair 한정 · 셋 상대 클린 7장 x≈$129 |
+| implied-odds | 62 | RISKY | Reach for implied odds only when your draw *just misses* that price | 채택 `7d2a0822` — just misses 삭제 · x 비교 · es 동반 |
+| equity | 4 | RISKY | 70% to win a $200 pot, ==g:$140 of it is "yours"== | 채택 `7d2a0822` — 70% equity |
+| equity | 7 | RISKY | / Draw / Outs / Equity (2 cards) / | 채택 `7d2a0822` — 표 머리 Chance to hit |
+| equity | 24 | RISKY | When you're all-in, there are no more decisions — so you realize 100% of your equity | 채택 `7d2a0822` — 더 이상 베팅 불가(HU 올인 · 전원 올인) · es 동반 |
+| equity | 26 | RISKY | All-in is the one spot in poker where, with cards still to come, the pie is sliced exactly as the math says | 채택 `7d2a0822` — 베팅 남지 않은 올인 · es 동반 |
+| equity | 49 | RISKY | On a draw, multiply your outs by 4 on the flop or by 2 on the turn; preflop, memorize the handful of matchu… | 채택 `7d2a0822` — clean outs · chance to hit ≈ equity 조건 |
+| equity | 63 | RISKY | Betting? How often villain folds vs the break-even fold rate, bet ÷ (pot + bet) → call, bet, or fold | 채택 `7d2a0822` — 순수 블러프 한정 · 에퀴티 있으면 더 낮음 · L-1 이월 es·zh·zh-hant 동반 |
+| equity | 65 | RISKY | For draws, use the Rule of 4 and 2: multiply your outs by 4 on the flop (two cards to come) or by 2 on the … | 채택 `7d2a0822` — clean outs · chance to hit |
+| card-counting | 8 | WRONG | You only ever see the shared board | 채택 `7d2a0822` — 자기 홀카드 + 보드 + 쇼다운 |
+| card-counting | 11 | RISKY | the edge comes entirely from playing the *players* | 채택 `7d2a0822` — players + 보이는 카드(아웃·블로커·보드) |
+| card-counting | 12 | RISKY | Counting can get you barred / Counting is expected and legal | 채택 `7d2a0822` — Counting outs in your head is ordinary play |
+| card-counting | 21 | RISKY | the nut straight is 25% less likely in their range | 채택 `7d2a0822` — 콤보 수 25% 감소로 표현 |
+| card-counting | 23 | RISKY | Each one you've seen is an out you no longer have. | 채택 `7d2a0822` — 노출 아웃만 감소 · 비아웃은 분모만 |
+| card-counting | 35 | WRONG | anything else you see is an accident | 채택 `7d2a0822` — 쇼다운·올인 공개·사고 구분 · es 동반 |
+| card-counting | 37 | RISKY | Call when that chance beats the price | 채택 `7d2a0822` — clean outs · implied |
+| card-counting | 51 | RISKY | so it settles the call only when you'll actually see both — you're all-in on the flop with nothing left to … | 채택 `7d2a0822` — no more betting(올인 · 올인 콜) |
+| card-counting | 66 | RISKY | so there's no "favorable deck" to track — the edge comes from reading opponents | 채택 `7d2a0822` — reading opponents + 보이는 카드 |
+
+> 🪶 L-2d 로케일: 이번 커밋 동반 = MA-188 ① Set→FH 라벨(probability 7로케일 · drawing 6로케일) + L-1 이월(es drawing 표 2행·«all-in only» · probability 결과론 · card-counting 노출 · equity 올인 2·벳 문턱 · implied FAQ / zh·zh-hant equity 벳 문턱). **나머지 EN 변경 전부(52행 − 위 동반)의 형제 로케일 전파 = L-2g** — 특히 id·ja·pt·zh·zh-hant drawing 표 «Connectors 54–JT»·스트플 54s–JTs 한정, EN probability «풀하우스 단독 29.1/19.6» 병기 문장, outs·pot-odds·equity «chance to hit» 표 머리.
 
 ## L-2e 족보·규칙 — 28행 (WRONG 2 · RISKY 26)
 
