@@ -210,7 +210,7 @@ export const CALC_DICT_PT: CalcDict = {
       KJs: { desc: "Mão de draw forte", action: "Aumente em posição tardia; em posição inicial aumente ou folde — nunca dê limp" },
       "99": { desc: "Par médio, cuidado com flops de overcards", action: "Aumente da maioria das posições; cuidado com stacks profundos" },
       "88": { desc: "Par na mão com bom potencial de set", action: "Aumente da maioria das posições; pague um aumento — não dê open-limp" },
-      AQo: { desc: "Offsuit mais fraca; a posição importa", action: "Aumente de posição média/tardia" },
+      AQo: { desc: "Offsuit mais fraca; a posição importa", action: "Aumente de posição média/tardia; do UTG aumente ou folde — nunca dê limp" },
       AJo: { desc: "Fraca em posição inicial, forte em posição tardia", action: "Aumente do CO/BTN, cuidado em posição inicial" },
       KQo: { desc: "O melhor conector offsuit", action: "Aumente em posição tardia; em posição inicial, aumente ou folde se ninguém entrou e geralmente folde diante de um aumento — não dê open-limp" },
       K10s: { desc: "Rei suited, forte em posição tardia", action: "Aumente em posição tardia, folde em posição inicial" },

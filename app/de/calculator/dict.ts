@@ -207,7 +207,7 @@ export const CALC_DICT_DE: CalcDict = {
       KJs: { desc: "Starke Draw-Hand", action: "Spät raisen; aus früher Position folden oder raisen – niemals limpen" },
       "99": { desc: "Mittleres Paar, auf Overcard-Flops achten", action: "Meist raisen; bei tiefen Stacks vorsichtig" },
       "88": { desc: "Pocket Pair mit gutem Set-Potenzial", action: "Meist raisen; einen Raise callen – niemals open-limpen" },
-      AQo: { desc: "Offsuit schwächer; Position entscheidet", action: "Aus mittlerer/später Position raisen" },
+      AQo: { desc: "Offsuit schwächer; Position entscheidet", action: "Mittel/spät raisen; aus UTG raisen oder folden – niemals limpen" },
       AJo: { desc: "Früh schwach, spät stark", action: "CO/BTN raisen, früh vorsichtig" },
       KQo: { desc: "Bester Offsuit-Connector", action: "Spät raisen; früh: wenn noch niemand eingestiegen ist, raisen oder folden – gegen einen Raise meist folden" },
       K10s: { desc: "Suited König, spät stark", action: "Spät raisen, früh folden" },

@@ -210,7 +210,7 @@ export const CALC_DICT_ES: CalcDict = {
       KJs: { desc: "Mano fuerte con proyectos", action: "Subir en tardía; en temprana sube o foldea — nunca limpees" },
       "99": { desc: "Par medio, vigila los flops con sobrecartas", action: "Subir desde casi cualquier posición; cuidado con stacks profundos" },
       "88": { desc: "Par servido con buen potencial de set", action: "Subir desde casi cualquier posición; ante una subida, paga — no hagas open-limp" },
-      AQo: { desc: "Más floja de distinto palo; la posición importa", action: "Subir en posición media/tardía" },
+      AQo: { desc: "Más floja de distinto palo; la posición importa", action: "Subir en posición media/tardía; desde UTG sube o foldea — nunca limpees" },
       AJo: { desc: "Floja en posición temprana, fuerte en tardía", action: "Subir en CO/BTN, cuidado en temprana" },
       KQo: { desc: "El mejor conector de distinto palo", action: "Subir en tardía; en temprana sube o foldea si nadie ha entrado, y ante una subida normalmente foldea" },
       K10s: { desc: "Rey del mismo palo, fuerte en posición tardía", action: "Subir en tardía, fold en temprana" },

@@ -560,7 +560,9 @@ export const CALC_DICT_EN: CalcDict = {
       //    T2 배지 옆에 T3 문구가 뜨는 설계라 폐기했다(MA-153~157). 원칙 = 단조성: 지배하는 핸드가
       //    지배당하는 핸드보다 좁게 권고되지 않는다(99 ≥ 88 ≥ 77). 검산 = 169핸드 지배 쌍 역전 0.
       "88": { desc: "Pocket pair with good set potential", action: "Raise most positions; call a raise — never open-limp" },
-      AQo: { desc: "Weaker offsuit; position matters", action: "Raise in mid/late position" },
+      // 🔴 2026-09-26 — AQo «mid/late»는 EP가 비어 지배당하는 KQo(EP 레이즈 또는 폴드)보다 좁았다(MA-183).
+      //    AJs·A10s와 같은 문구. 09-25 검산의 커넥터 예외가 KQo(오프수트)까지 빼서 놓쳤다 → 예외는 수티드 커넥터만.
+      AQo: { desc: "Weaker offsuit; position matters", action: "Raise mid/late; from UTG raise or fold — never limp" },
       AJo: { desc: "Weak in EP, strong in LP", action: "Raise CO/BTN, careful in EP" },
       KQo: { desc: "Top offsuit connector", action: "Raise in LP; in EP raise or fold when nobody has entered, and usually fold facing a raise" },
       K10s: { desc: "Suited king, strong in LP", action: "Raise LP, fold EP" },

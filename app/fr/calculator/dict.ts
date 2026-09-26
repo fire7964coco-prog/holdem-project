@@ -222,7 +222,7 @@ export const CALC_DICT_FR: CalcDict = {
       KJs: { desc: "Main à tirages solide", action: "Relancer en LP ; en EP, relancer ou se coucher — jamais de limp" },
       "99": { desc: "Paire moyenne, attention aux flops avec overcards", action: "Relancer depuis la plupart des positions ; prudence en tapis profond" },
       "88": { desc: "Paire servie avec un bon potentiel de brelan", action: "Relancer depuis la plupart des positions ; payer une relance — jamais d'open-limp" },
-      AQo: { desc: "Dépareillée, plus faible ; la position compte", action: "Relancer en position mid/late" },
+      AQo: { desc: "Dépareillée, plus faible ; la position compte", action: "Relancer en mid/late ; depuis UTG, relancer ou se coucher — jamais de limp" },
       AJo: { desc: "Faible en EP, forte en LP", action: "Relancer au CO/BTN, prudence en EP" },
       // 🔴 딜러 렌즈 09-18(高): 초안이 EP를 «personne n'est entré면 relancer»로만 적어 **폴드 선택지를 지웠다** —
       //    ✅ 2026-09-20: EN은 이제 «raise or fold when nobody has entered, and usually fold facing a raise», de도 동형이다.

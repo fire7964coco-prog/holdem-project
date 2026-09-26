@@ -200,7 +200,7 @@ export const CALC_DICT_MS: CalcDict = {
       KJs: { desc: "Tangan drawing yang kuat", action: "Raise di posisi lewat; dari posisi awal raise atau fold — jangan limp" },
       "99": { desc: "Pair sederhana, berjaga-jaga dengan flop overcard", action: "Raise dari kebanyakan posisi; berhati-hati apabila deep" },
       "88": { desc: "Pocket pair dengan potensi set yang baik", action: "Raise dari kebanyakan posisi; call raise — jangan open-limp" },
-      AQo: { desc: "Offsuit lebih lemah; posisi penting", action: "Raise di posisi tengah/lewat" },
+      AQo: { desc: "Offsuit lebih lemah; posisi penting", action: "Raise di posisi tengah/lewat; dari UTG raise atau fold — jangan limp" },
       AJo: { desc: "Lemah di posisi awal, kuat di posisi lewat", action: "Raise di CO/BTN, berhati-hati di posisi awal" },
       KQo: { desc: "Connector offsuit teratas", action: "Raise di posisi lewat; di posisi awal, jika belum ada yang masuk raise atau fold, dan biasanya fold apabila menghadapi raise" },
       K10s: { desc: "Suited king, kuat di posisi lewat", action: "Raise di posisi lewat, fold di posisi awal" },

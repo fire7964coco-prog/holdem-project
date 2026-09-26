@@ -223,7 +223,7 @@ export const CALC_DICT_HI: CalcDict = {
       KJs: { desc: "मज़बूत drawing हैंड", action: "LP में raise; EP से raise या fold — limp कभी नहीं" },
       "99": { desc: "मध्यम pair, overcard वाले flop से सावधान", action: "ज़्यादातर positions से raise; deep में सावधान" },
       "88": { desc: "अच्छी set संभावना वाला pocket pair", action: "ज़्यादातर positions से raise; सामने raise हो तो call — open limp नहीं" },
-      AQo: { desc: "AQs से कमज़ोर, पर फिर भी मज़बूत; position मायने रखता है", action: "Mid/late position से raise" },
+      AQo: { desc: "AQs से कमज़ोर, पर फिर भी मज़बूत; position मायने रखता है", action: "Mid/late से raise; UTG से या तो raise या fold — limp कभी नहीं" },
       AJo: { desc: "EP में कमज़ोर, LP में मज़बूत", action: "CO/BTN से raise, EP में सावधान" },
       KQo: { desc: "सबसे अच्छा offsuit connector", action: "LP में raise; EP में first in हों तो raise या fold, और किसी की raise के सामने आम तौर पर fold — open limp नहीं" },
       K10s: { desc: "Suited king, LP में मज़बूत", action: "LP में raise, EP में fold" },
