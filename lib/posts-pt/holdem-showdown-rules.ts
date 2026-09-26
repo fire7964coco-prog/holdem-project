@@ -90,7 +90,7 @@ Em **torneio**, quando um jogador vai de all-in e não há mais apostas possíve
 
 </div>
 
-Um detalhe: se existe um **side pot** (pote paralelo — outros jogadores ainda têm fichas e continuam apostando), o side pot é pago primeiro e o pote principal depois. Essa é a **ordem de pagamento**. Em torneio ela não tem nada a ver com a hora de virar as cartas: a mão de quem está all-in já está aberta desde o instante em que nenhuma aposta é mais possível. A ilustração da TDA para a regra 16 diz isso com todas as letras — não se espera o side pot ser dividido para virar a mão do all-in. No cash, pelas WSOP Live Action Rules, a ordem de mostrar segue os potes: primeiro os do pote paralelo, depois quem está all-in só pelo pote principal (regra 149).
+Um detalhe: se existe um **side pot** (pote paralelo — outros jogadores ainda têm fichas e continuam apostando), o side pot é pago primeiro e o pote principal depois. Essa é a **ordem de pagamento**. Em torneio ela não tem nada a ver com a hora de virar as cartas: a mão de quem está all-in já está aberta desde o instante em que nenhuma aposta é mais possível. A ilustração da TDA (edição de 2024) para a regra 16 diz isso com todas as letras — não se espera o side pot ser dividido para virar a mão do all-in. No cash, pelas WSOP Live Action Rules, a ordem de mostrar segue os potes: primeiro os do pote paralelo, depois quem está all-in só pelo pote principal (regra 149).
 
 Para entender como os side pots são montados e pagos quando alguém está all-in, veja [as regras de all-in e side pots](/pt/blog/holdem-all-in-rules); para potes divididos, veja as [regras de split pot e divisão do pote](/pt/blog/holdem-split-pot-rules).
 

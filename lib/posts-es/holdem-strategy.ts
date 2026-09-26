@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Estrategia de Texas Hold'em: las 5 decisiones detrás de cada mano ganadora",
   seoTitle: "¿Por qué los «tips» nunca te sirvieron? — Estrategia de Texas Holdem",
   desc: "Ganar al póker no son diez tips sueltos: son las mismas cinco decisiones cada mano — posición, selección de manos, subir o foldear, c-bet y cuándo soltar.",
-  tldr: "Cada decisión ganadora en Texas Hold'em se reduce a cinco preguntas repetibles: dónde estoy sentado (posición), ¿vale la pena jugar esta mano?, ¿subo o foldeo? (nunca abro con limp), ¿sigo apostando en el flop?, y ¿cuándo suelto la mano? Un jugador tight-aggressive que responde bien esas cinco foldea ~80% de sus manos preflop, las juega con agresividad cuando entra, y le gana a casi cualquier partida casual — sin necesidad de memorizar listas de tips.",
+  tldr: "Cada decisión ganadora en Texas Hold'em se reduce a cinco preguntas repetibles: dónde estoy sentado (posición), ¿vale la pena jugar esta mano?, ¿subo o foldeo en vez de abrir con limp?, ¿sigo apostando en el flop?, y ¿cuándo suelto la mano? Un jugador tight-aggressive que responde bien esas cinco foldea ~80% de sus manos preflop, las juega con agresividad cuando entra, y le gana a casi cualquier partida casual — sin necesidad de memorizar listas de tips.",
   category: "strategy",
   date: "2026-07-06",
   updated: "2026-09-26",
@@ -46,7 +46,7 @@ Así que en vez de una lista, usa una **espina dorsal de decisiones**. Cada mano
 |:---:|:---|:---|:---|
 | **1** | **Posición** | ¿Dónde estoy sentado, y quién actúa después de mí? | [Juego posicional](/es/blog/holdem-position-play) |
 | **2** | **Selección de manos** | ¿Vale la pena siquiera entrar al bote con esta mano? | [Manos iniciales](/es/blog/holdem-starting-hands-chart) |
-| **3** | **Agresión preflop** | ¿Subo o foldeo — nunca abro con limp? | [Por qué limpear te cuesta caro](/es/blog/holdem-limping) |
+| **3** | **Agresión preflop** | ¿Subo o foldeo en vez de abrir con limp? | [Por qué limpear te cuesta caro](/es/blog/holdem-limping) |
 | **4** | **Continuación** | ¿Sigo apostando en el flop, o cierro el grifo? | [Acciones de apuesta](/es/blog/holdem-betting-actions) |
 | **5** | **Disciplina** | ¿Cuándo suelto una mano? | [Pot odds y foldear](/es/blog/holdem-pot-odds) |
 
@@ -89,9 +89,9 @@ La [tabla de manos iniciales](/es/blog/holdem-starting-hands-chart) convierte es
 
 ---
 
-## Decisión 3 — Sube o foldea. Nunca solo limpees.
+## Decisión 3 — Sube o foldea. No te limites a limpear.
 
-![Tres tarjetas numeradas bajo el titular RAISE / FOLD — OVER-LIMP con fichas y una marca de asiento, BIG BLIND con 1.5 ÷ 5.5 y 27%, SET-MINING con una pareja de cincos y 11.8%](/images/holdem-strategy-raise-or-fold.webp "Primero en el bote, sube o foldea — los únicos descuentos son el over-limp en posición, una defensa de ciega grande al 27% y el set-mining")
+![Tres tarjetas numeradas bajo el titular RAISE / FOLD — OVER-LIMP con fichas y una marca de asiento, BIG BLIND con 1.5 ÷ 5.5 y 27%, SET-MINING con una pareja de cincos y 11.8%](/images/holdem-strategy-raise-or-fold.webp "Primero en el bote, sube o foldea — los principales descuentos son el over-limp en posición, una defensa de ciega grande al 27% y el set-mining")
 
 Una vez que has decidido que vale la pena jugar una mano, hay una segunda decisión que la mayoría de los principiantes falla: *cómo* entrar al bote. La respuesta, casi siempre, es **subir — no limpear.**
 
@@ -101,7 +101,7 @@ Una vez que has decidido que vale la pena jugar una mano, hay una segunda decisi
 2. **Renuncias a la iniciativa.** El que sube preflop puede seguir contando una historia en el flop (Decisión 4). Limpea, y le entregas esa historia a otro.
 3. **Te pintas una diana encima.** Los jugadores fuertes suben grande por detrás de un limper para aislarlo, y luego lo superan jugando en posición toda la mano. Un open-limp anuncia «aquí hay un jugador débil y pasivo».
 
-El default que lo arregla es contundente: **si una mano es lo bastante buena para jugarla, es lo bastante buena para subir; si no lo es, foldea.** Y cuando *otro* ya ha subido, volver a subir — un [3-bet](/es/blog/holdem-3bet "thumb:/images/holdem-3bet-hero.webp") — es como castigas las aperturas amplias y agrandas los botes con tus mejores manos. Las excepciones a ese default de subir-o-foldear son reales, y todas van del **precio**. El *over*-limp — igualar *por detrás* de alguien que ya limpeó, en posición, con una mano especulativa como un par pequeño — te compra un asiento barato en un bote multiway. La mayor es **defender la ciega grande**: contra una apertura de 2.5bb (mano a mano, con la ciega pequeña foldeada y sin antes) ya tienes ==1bb puesto==, así que igualas 1.5bb a un bote de 4bb y necesitas solo ==1.5 ÷ 5.5 = 27%== de equity sobre el papel. Fuera de posición realizarás menos que tu equity bruta, así que trata ese 27% como el suelo, no como la meta. Y como tu call cierra la ronda, buena parte del rango de la ciega grande paga en lugar de subir o foldear. La tercera es el **set-mining** con un par pequeño frente a una subida y con stacks profundos (la matemática está más abajo). Eso son descuentos, no estrategias — fuera de sitios así, sube o foldea.
+El default que lo arregla es contundente: **si una mano es lo bastante buena para jugarla, es lo bastante buena para subir; si no lo es, foldea.** Y cuando *otro* ya ha subido, volver a subir — un [3-bet](/es/blog/holdem-3bet "thumb:/images/holdem-3bet-hero.webp") — es como castigas las aperturas amplias y agrandas los botes con tus mejores manos. Las excepciones a ese default de subir-o-foldear son reales, y todas van del **precio**. El *over*-limp — igualar *por detrás* de alguien que ya limpeó, en posición, con una mano especulativa como un par pequeño — te compra un asiento barato en un bote multiway. La mayor es **defender la ciega grande**: contra una apertura de 2.5bb (mano a mano, con la ciega pequeña foldeada y sin antes) ya tienes ==1bb puesto==, así que igualas 1.5bb a un bote de 4bb y necesitas solo ==1.5 ÷ 5.5 = 27%== de equity sobre el papel. Fuera de posición realizarás menos que tu equity bruta, así que trata ese 27% como el suelo, no como la meta. Y como tu call cierra la ronda, buena parte del rango de la ciega grande paga en lugar de subir o foldear. La tercera es el **set-mining** con un par pequeño frente a una subida y con stacks profundos (la matemática está más abajo). Eso son descuentos, no estrategias — fuera de sitios así, sube o foldea. La propia regla de entrar primero subiendo o foldeando es un default de cash con stacks normales: completar la ciega pequeña en un bote sin subidas y los open-limps desde el botón que usan los solvers con stacks cortos de torneo son los principales limps legítimos que no cubre.
 
 ---
 
@@ -258,7 +258,7 @@ A. Un tell es una pista involuntaria — física o de patrón de apuesta — que
 
 1. **Posición** — juega más manos tarde, menos temprano; el botón es tu asiento más rentable.
 2. **Selección de manos** — foldea ~80% preflop; las manos que te quedas son más fuertes que las de tus rivales.
-3. **Subir o foldear** — nunca hagas open-limp; una subida puede ganar el bote ya, un limp nunca.
+3. **Subir o foldear** — no hagas open-limp con stacks normales de cash; una subida puede ganar el bote ya, un limp nunca.
 4. **Continuación** — haz c-bet cuando tengas la iniciativa, pero ajusta por board, posición y rivales.
 5. **Disciplina** — foldea las manos batidas y los proyectos sin odds; es la jugada que más dinero salva.
 

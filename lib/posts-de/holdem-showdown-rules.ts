@@ -89,7 +89,7 @@ Im **Turnier** gilt: Geht ein Spieler All-in und sind keine weiteren Bets mehr m
 
 </div>
 
-Eine Feinheit: Gibt es einen **Side Pot** (andere Spieler haben noch Chips und setzen weiter), wird zuerst der Side Pot vergeben und danach der Hauptpot. Das ist die **Auszahlungsreihenfolge**. Im Turnier hat sie mit dem Aufdecken nichts zu tun: Die Karten des All-in-Spielers liegen längst offen, sobald kein Einsatz mehr möglich ist. Die TDA-Illustration zu Regel 16 sagt es wörtlich – man wartet *nicht*, bis der Side Pot verteilt ist, bevor man die Hand des All-in-Spielers umdreht. Im Cashgame folgt die Zeigereihenfolge nach den WSOP Live Action Rules dagegen den Pots: Erst zeigen die Side-Pot-Spieler, dann der, der nur im Main Pot All-in ist (Rule 149).
+Eine Feinheit: Gibt es einen **Side Pot** (andere Spieler haben noch Chips und setzen weiter), wird zuerst der Side Pot vergeben und danach der Hauptpot. Das ist die **Auszahlungsreihenfolge**. Im Turnier hat sie mit dem Aufdecken nichts zu tun: Die Karten des All-in-Spielers liegen längst offen, sobald kein Einsatz mehr möglich ist. Die TDA-2024-Illustration zu Regel 16 sagt es wörtlich – man wartet *nicht*, bis der Side Pot verteilt ist, bevor man die Hand des All-in-Spielers umdreht. Im Cashgame folgt die Zeigereihenfolge nach den WSOP Live Action Rules dagegen den Pots: Erst zeigen die Side-Pot-Spieler, dann der, der nur im Main Pot All-in ist (Rule 149).
 
 Wie Side Pots entstehen und ausbezahlt werden, wenn Spieler All-in sind, liest du in den [All-in-Regeln und Side Pots](/de/blog/holdem-all-in-rules); für geteilte Pots siehe die [Split-Pot- und Chop-Regeln](/de/blog/holdem-split-pot-rules).
 

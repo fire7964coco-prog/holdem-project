@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Texas Hold'em Strategie: Die 5 Entscheidungen hinter jeder gewonnenen Hand",
   seoTitle: "Warum Poker-'Tipps' nie hängenblieben – Texas Hold'em Strategie",
   desc: "Gutes Poker ist nicht zehn Tipps – es sind dieselben fünf Entscheidungen pro Hand: Position, Handauswahl, Raise-or-Fold, C-Bet und wann du loslässt.",
-  tldr: "Jede gewinnende Texas-Hold'em-Entscheidung reduziert sich auf fünf wiederholbare Fragen: Wo sitze ich (Position), ist diese Hand spielenswert, raise oder fold ich (nie open-limpen), bette ich auf dem Flop weiter, und wann lasse ich los? Ein Tight-Aggressive-Spieler, der diese fünf gut beantwortet, foldet ~80% der Hände preflop, spielt sie aggressiv, wenn er sie spielt, und schlägt fast jedes Freizeitspiel – ohne auswendig gelernte Tippliste.",
+  tldr: "Jede gewinnende Texas-Hold'em-Entscheidung reduziert sich auf fünf wiederholbare Fragen: Wo sitze ich (Position), ist diese Hand spielenswert, raise oder fold ich, statt zu open-limpen, bette ich auf dem Flop weiter, und wann lasse ich los? Ein Tight-Aggressive-Spieler, der diese fünf gut beantwortet, foldet ~80% der Hände preflop, spielt sie aggressiv, wenn er sie spielt, und schlägt fast jedes Freizeitspiel – ohne auswendig gelernte Tippliste.",
   category: "strategy",
   date: "2026-07-06",
   updated: "2026-09-26",
@@ -49,7 +49,7 @@ Statt einer Liste nutze also ein **Entscheidungsgerüst**. Jede Hand, die du spi
 |:---:|:---|:---|:---|
 | **1** | **Position** | Wo sitze ich, und wer handelt nach mir? | [Position Play](/de/blog/holdem-position-play) |
 | **2** | **Handauswahl** | Ist diese Hand überhaupt spielenswert? | [Starthände](/de/blog/holdem-starting-hands-chart) |
-| **3** | **Preflop-Aggression** | Raise oder fold ich – nie open-limpen? | [Warum Limpen dich kostet](/de/blog/holdem-limping) |
+| **3** | **Preflop-Aggression** | Raise oder fold ich, statt zu open-limpen? | [Warum Limpen dich kostet](/de/blog/holdem-limping) |
 | **4** | **Continuation** | Bette ich auf dem Flop weiter, oder mache ich zu? | [Betting Actions](/de/blog/holdem-betting-actions) |
 | **5** | **Disziplin** | Wann lasse ich eine Hand los? | [Pot Odds & Folden](/de/blog/holdem-pot-odds) |
 
@@ -98,12 +98,12 @@ Die [Starthände-Tabelle](/de/blog/holdem-starting-hands-chart) verwandelt das i
 
 ---
 
-## Entscheidung 3: Raise oder Fold – warum solltest du nie limpen?
+## Entscheidung 3: Raise oder Fold – warum solltest du nicht einfach limpen?
 
 > **Kurze Antwort**
 > Weil ein Limp den Pot vor dem Flop **nie** gewinnen kann. Ein First-in-Raise gewinnt die Blinds sofort, wenn alle folden; ein Limp wirft genau diesen Weg weg, gibt die Initiative ab und lädt starke Spieler ein, dich zu isolieren. Echte Ausnahmen von dieser Raise-oder-Fold-Grundregel gibt es – Over-Limpen in Position, die BB-Defense und Set-Mining bei tiefen Stacks –, aber bei allen dreien geht es um den **Preis**, nicht um Bequemlichkeit.
 
-![Drei nummerierte Kacheln unter der Überschrift RAISE / FOLD – OVER-LIMP mit Chips und Sitzmarkierung, BIG BLIND mit 1,5 ÷ 5,5 und 27%, SET-MINING mit einem Fünfer-Paar und 11,8%](/images/holdem-strategy-raise-or-fold.webp "Als Erster im Pot gilt raise oder fold – die einzigen Ausnahmen sind billige Einstiege: Over-Limpen in Position, eine 27%-BB-Defense und Set-Mining")
+![Drei nummerierte Kacheln unter der Überschrift RAISE / FOLD – OVER-LIMP mit Chips und Sitzmarkierung, BIG BLIND mit 1,5 ÷ 5,5 und 27%, SET-MINING mit einem Fünfer-Paar und 11,8%](/images/holdem-strategy-raise-or-fold.webp "Als Erster im Pot gilt raise oder fold – die wichtigsten Ausnahmen sind billige Einstiege: Over-Limpen in Position, eine 27%-BB-Defense und Set-Mining")
 
 Sobald du entschieden hast, dass eine Hand spielenswert ist, gibt es eine zweite Entscheidung, die die meisten Anfänger falsch machen: *wie* du in den Pot einsteigst. Die Antwort ist fast immer: **raise – nicht limpen.**
 
@@ -113,7 +113,7 @@ Zu [limpen](/de/blog/holdem-limping) heißt, den Big Blind nur zu callen, statt 
 2. **Du gibst die Initiative ab.** Der Preflop-Raiser darf auf dem Flop weiter eine Geschichte erzählen (Entscheidung 4). Limp, und du überreichst diese Geschichte jemand anderem.
 3. **Du malst dir ein Ziel auf den Rücken.** Starke Spieler raisen groß hinter einem Limper, um ihn zu isolieren, und überspielen ihn dann in Position die ganze Hand. Ein Open-Limp verkündet „schwacher, passiver Spieler hier“.
 
-Der Standard, der das behebt, ist unmissverständlich: **ist eine Hand gut genug zum Spielen, ist sie gut genug zum Raisen; ist sie es nicht, folde.** Und wenn jemand *anderes* bereits geraist hat, ist erneut zu raisen – eine [3-Bet](/de/blog/holdem-3bet "thumb:/images/holdem-3bet-hero.webp") – der Weg, weite Opens zu bestrafen und Pots mit deinen besten Händen aufzubauen. Die Ausnahmen sind echt, und bei jeder geht es um den **Preis**. Das *Over*-Limpen – *hinter* jemandem callen, der bereits gelimpt hat, in Position, mit einer spekulativen Hand wie einem kleinen Pair – kauft dir einen billigen Platz im Multiway-Pot. Die größere ist die **BB-Defense**: gegen ein 2,5bb-Open (heads-up, der Small Blind hat gefoldet, keine Antes) hast du ==1bb bereits gepostet==, callst also 1,5bb in einen 4bb-Pot und brauchst auf dem Papier nur ==1,5 ÷ 5,5 = 27%== Equity. Außer Position realisierst du weniger als deine rohe Equity – sieh die 27% also als Untergrenze, nicht als Ziellinie. Und weil du als Letzter agierst und dein Call die Runde beendet, callt ein breiter Teil der BB-Range flat, statt zu 3-betten oder zu folden. Die dritte ist **Set-Mining** mit einem kleinen Pair gegen einen Raise bei tiefen Stacks (die Mathematik steht unten). Das sind Ausnahmen wegen des Preises, keine Strategien – außerhalb solcher Spots gilt: Raise oder fold.
+Der Standard, der das behebt, ist unmissverständlich: **ist eine Hand gut genug zum Spielen, ist sie gut genug zum Raisen; ist sie es nicht, folde.** Und wenn jemand *anderes* bereits geraist hat, ist erneut zu raisen – eine [3-Bet](/de/blog/holdem-3bet "thumb:/images/holdem-3bet-hero.webp") – der Weg, weite Opens zu bestrafen und Pots mit deinen besten Händen aufzubauen. Die Ausnahmen sind echt, und bei jeder geht es um den **Preis**. Das *Over*-Limpen – *hinter* jemandem callen, der bereits gelimpt hat, in Position, mit einer spekulativen Hand wie einem kleinen Pair – kauft dir einen billigen Platz im Multiway-Pot. Die größere ist die **BB-Defense**: gegen ein 2,5bb-Open (heads-up, der Small Blind hat gefoldet, keine Antes) hast du ==1bb bereits gepostet==, callst also 1,5bb in einen 4bb-Pot und brauchst auf dem Papier nur ==1,5 ÷ 5,5 = 27%== Equity. Außer Position realisierst du weniger als deine rohe Equity – sieh die 27% also als Untergrenze, nicht als Ziellinie. Und weil du als Letzter agierst und dein Call die Runde beendet, callt ein breiter Teil der BB-Range flat, statt zu 3-betten oder zu folden. Die dritte ist **Set-Mining** mit einem kleinen Pair gegen einen Raise bei tiefen Stacks (die Mathematik steht unten). Das sind Ausnahmen wegen des Preises, keine Strategien – außerhalb solcher Spots gilt: Raise oder fold. Die Raise-oder-Fold-Regel für den ersten Einstieg ist selbst ein Standard für Cash Games mit normaler Stacktiefe: den Small Blind in einem ungeraisten Pot zu completen und die Button-Open-Limps, die Solver bei kurzen Turnierstacks spielen, sind die wichtigsten legitimen Limps, die sie nicht abdeckt.
 
 ---
 
@@ -282,7 +282,7 @@ A. Es gibt keine einzelne Zahl – es hängt von Position, Board und der Anzahl 
 
 1. **Position** – spiele mehr Hände spät, weniger früh; der Button ist dein profitabelster Platz.
 2. **Handauswahl** – folde ~80% preflop; die Hände, die du behältst, sind stärker als die deiner Gegner.
-3. **Raise oder fold** – nie open-limpen; ein Raise kann den Pot jetzt gewinnen, ein Limp nie.
+3. **Raise oder fold** – bei normaler Cash-Game-Stacktiefe nicht open-limpen; ein Raise kann den Pot jetzt gewinnen, ein Limp nie.
 4. **Continuation** – C-bette, wenn du die Initiative hast, aber passe für Board, Position und Gegner an.
 5. **Disziplin** – folde geschlagene Hände und Draws ohne Odds; es ist der Move, der am meisten Geld spart.
 

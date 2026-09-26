@@ -116,7 +116,7 @@ Em torneios que usam as [regras da Poker TDA de 2026](https://www.pokertda.com/p
 
 **No Seven Card Stud, uma boa parte das cartas de cada jogador é distribuída virada para cima — então você genuinamente consegue contar o baralho à moda antiga.** Se você precisa de uma carta específica para completar a sua mão, dá para olhar em volta da mesa e literalmente contar quantos dos seus outs já estão aparecendo nas up-cards dos adversários. Cada um que você identifica é um out morto.
 
-No Hold'em, as únicas cartas distribuídas viradas para cima são as cinco cartas comunitárias compartilhadas — todo o resto fica virado para baixo, a menos que seja mostrado no showdown, aberto num all-in ou exposto por acidente (uma carta virada por engano, uma mão mostrada no fold), então há pouco a rastrear. Mas o Stud — e os seus parentes, o Razz e o Stud Hi-Lo, que distribuem as mesmas cartas viradas para cima — recompensa exatamente o tipo de rastreamento de cartas em que os contadores de blackjack são bons. É o mais perto que o poker chega da versão do filme.
+No Hold'em, as únicas cartas distribuídas viradas para cima são as cinco cartas comunitárias compartilhadas — todo o resto fica virado para baixo, a menos que seja mostrado no showdown, aberto num all-in, mostrado voluntariamente ou exposto por acidente (uma carta virada por engano), então há pouco a rastrear. Mas o Stud — e os seus parentes, o Razz e o Stud Hi-Lo, que distribuem as mesmas cartas viradas para cima — recompensa exatamente o tipo de rastreamento de cartas em que os contadores de blackjack são bons. É o mais perto que o poker chega da versão do filme.
 
 ---
 

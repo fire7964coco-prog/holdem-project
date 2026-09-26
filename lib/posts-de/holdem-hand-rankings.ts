@@ -155,7 +155,7 @@ Es gibt drei Wege, ihn zu bilden, und der Unterschied zählt:
 
 - **Set:** ein Pocket-Paar plus eine passende Board-Karte (z. B. du hältst J♣ J♠, das Board bringt J♥). Versteckt und gefährlich.
 - **Trips:** ein Paar auf dem Board plus eine deiner Karten. Für den Gegner leichter zu lesen und häufiger geteilt.
-- **Board-Trips:** alle drei liegen auf dem Board (z. B. J♣ J♠ J♥ in der Mitte). Alle teilen sie sich – solange sich niemand zum Full House oder zu Quads verbessert, trennen euch nur die Kicker.
+- **Board-Trips:** alle drei liegen auf dem Board (z. B. J♣ J♠ J♥ in der Mitte). Alle teilen sie sich – solange niemand eine Straße oder Besseres bildet, trennen euch nur die Kicker.
 
 Ein Set holt mehr Chips, weil niemand es kommen sieht.
 

@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Estratégia de Texas Hold'em: as 5 decisões por trás de toda mão vencedora",
   seoTitle: "Por que dicas de poker não colam — estratégia em 5 decisões",
   desc: "Poker vencedor não são dez dicas soltas — são as mesmas cinco decisões toda mão: posição, seleção de mãos, aumentar ou foldar, c-bet e quando largar.",
-  tldr: "Toda decisão vencedora no Texas Hold'em se resume a cinco perguntas que se repetem: onde estou sentado (posição), essa mão vale a pena jogar, eu aumento ou foldo (nunca dou open-limp), continuo apostando no flop, e quando eu largo a mão? Um jogador tight-aggressive que responde bem a essas cinco folda ~80% das mãos no pré-flop, joga com agressividade quando entra, e ganha de quase todo jogo casual — sem lista de dicas decorada.",
+  tldr: "Toda decisão vencedora no Texas Hold'em se resume a cinco perguntas que se repetem: onde estou sentado (posição), essa mão vale a pena jogar, eu aumento ou foldo em vez de dar open-limp, continuo apostando no flop, e quando eu largo a mão? Um jogador tight-aggressive que responde bem a essas cinco folda ~80% das mãos no pré-flop, joga com agressividade quando entra, e ganha de quase todo jogo casual — sem lista de dicas decorada.",
   category: "strategy",
   date: "2026-07-06",
   updated: "2026-09-26",
@@ -46,7 +46,7 @@ Então, em vez de uma lista, use uma **espinha dorsal de decisões**. Toda mão 
 |:---:|:---|:---|:---|
 | **1** | **Posição** | Onde estou sentado, e quem age depois de mim? | [Jogar a posição](/pt/blog/holdem-position-play) |
 | **2** | **Seleção de mãos** | Essa mão vale a pena entrar no pote? | [Starting hands](/pt/blog/holdem-starting-hands-chart) |
-| **3** | **Agressão pré-flop** | Eu aumento ou foldo — nunca dou open-limp? | [Por que limpar custa caro](/pt/blog/holdem-limping) |
+| **3** | **Agressão pré-flop** | Eu aumento ou foldo em vez de dar open-limp? | [Por que limpar custa caro](/pt/blog/holdem-limping) |
 | **4** | **Continuação** | Continuo apostando no flop, ou desisto? | [Ações de aposta](/pt/blog/holdem-betting-actions) |
 | **5** | **Disciplina** | Quando eu largo uma mão? | [Pot odds e folds](/pt/blog/holdem-pot-odds) |
 
@@ -89,9 +89,9 @@ O [starting hands chart](/pt/blog/holdem-starting-hands-chart) transforma isso n
 
 ---
 
-## Decisão 3 — Aumentar ou foldar. Nunca só dar limp.
+## Decisão 3 — Aumentar ou foldar. Não se limite ao limp.
 
-![Três cartões numerados sob o título RAISE / FOLD — OVER-LIMP com fichas e um marcador de assento, BIG BLIND com 1,5 ÷ 5,5 e 27%, SET-MINING com um par de cincos e 11,8%](/images/holdem-strategy-raise-or-fold.webp "Primeiro a entrar no pote é aumentar ou foldar — os únicos descontos são o over-limp em posição, uma defesa de big blind a 27% e o set-mining")
+![Três cartões numerados sob o título RAISE / FOLD — OVER-LIMP com fichas e um marcador de assento, BIG BLIND com 1,5 ÷ 5,5 e 27%, SET-MINING com um par de cincos e 11,8%](/images/holdem-strategy-raise-or-fold.webp "Primeiro a entrar no pote é aumentar ou foldar — os principais descontos são o over-limp em posição, uma defesa de big blind a 27% e o set-mining")
 
 Depois de decidir que uma mão vale a pena jogar, tem uma segunda decisão que a maioria dos iniciantes erra: *como* entrar no pote. A resposta, quase sempre, é **aumentar — não dar limp.**
 
@@ -101,7 +101,7 @@ Dar [limp](/pt/blog/holdem-limping) é só igualar o big blind em vez de aumenta
 2. **Você entrega a iniciativa.** Quem aumentou no pré-flop continua contando uma história no flop (Decisão 4). Dê limp e você entrega essa história para outra pessoa.
 3. **Você pinta um alvo nas suas costas.** Jogadores fortes aumentam grande atrás de um limper para isolá-lo, e depois passam a mão inteira jogando melhor em posição. Um open-limp anuncia "jogador fraco e passivo aqui".
 
-O padrão que corrige isso é direto: **se a mão é boa o suficiente para jogar, é boa o suficiente para aumentar; se não é, folde.** E quando *outra* pessoa já aumentou, aumentar de novo — um [3-bet](/pt/blog/holdem-3bet "thumb:/images/holdem-3bet-hero.webp") — é como você pune aberturas largas e constrói potes com suas melhores mãos. As exceções a esse padrão de aumentar-ou-foldar são reais, e todas elas são sobre **preço**. O *over*-limp — pagar *atrás* de alguém que já deu limp, em posição, com uma mão especulativa como um par pequeno — compra um lugar barato num pote multiway. A maior é **defender o big blind**: contra uma abertura de 2,5bb (heads-up, small blind já foldou, sem antes) você já tem ==1bb postado==, então paga 1,5bb num pote de 4bb e precisa de apenas ==1,5 ÷ 5,5 = 27%== de equity — e o seu call fecha a ação. (Na prática a barra é um pouco mais alta: fora de posição você não realiza 100% dessa equity.) Por isso boa parte do range do big blind paga em vez de dar 3-bet ou foldar. A terceira é o **set-mining** de um par pequeno contra um aumento com stacks profundos (a matemática está abaixo). Isso são descontos, não estratégias — fora de spots assim, aumentar ou foldar.
+O padrão que corrige isso é direto: **se a mão é boa o suficiente para jogar, é boa o suficiente para aumentar; se não é, folde.** E quando *outra* pessoa já aumentou, aumentar de novo — um [3-bet](/pt/blog/holdem-3bet "thumb:/images/holdem-3bet-hero.webp") — é como você pune aberturas largas e constrói potes com suas melhores mãos. As exceções a esse padrão de aumentar-ou-foldar são reais, e todas elas são sobre **preço**. O *over*-limp — pagar *atrás* de alguém que já deu limp, em posição, com uma mão especulativa como um par pequeno — compra um lugar barato num pote multiway. A maior é **defender o big blind**: contra uma abertura de 2,5bb (heads-up, small blind já foldou, sem antes) você já tem ==1bb postado==, então paga 1,5bb num pote de 4bb e precisa de apenas ==1,5 ÷ 5,5 = 27%== de equity — e o seu call fecha a ação. (Na prática a barra é um pouco mais alta: fora de posição você não realiza 100% dessa equity.) Por isso boa parte do range do big blind paga em vez de dar 3-bet ou foldar. A terceira é o **set-mining** de um par pequeno contra um aumento com stacks profundos (a matemática está abaixo). Isso são descontos, não estratégias — fora de spots assim, aumentar ou foldar. A própria regra de entrar primeiro aumentando ou foldando é um padrão de cash game com stacks normais: completar o small blind num pote sem aumento e os open-limps do botão que os solvers usam com stacks curtos de torneio são os principais limps legítimos que ela não cobre.
 
 ---
 
@@ -257,7 +257,7 @@ A. Estude longe da mesa e aperte o jogo nela. Os ganhos mais rápidos para a mai
 
 1. **Posição** — jogue mais mãos tarde, menos cedo; o botão é sua cadeira mais lucrativa.
 2. **Seleção de mãos** — folde ~80% no pré-flop; as mãos que você guarda são mais fortes que as dos adversários.
-3. **Aumentar ou foldar** — nunca dê open-limp; um aumento pode ganhar o pote agora, um limp nunca.
+3. **Aumentar ou foldar** — não dê open-limp com stacks normais de cash game; um aumento pode ganhar o pote agora, um limp nunca.
 4. **Continuação** — dê c-bet quando tiver a iniciativa, mas ajuste para o board, a posição e os adversários.
 5. **Disciplina** — folde mãos vencidas e projetos sem odds; é a jogada que mais economiza dinheiro.
 

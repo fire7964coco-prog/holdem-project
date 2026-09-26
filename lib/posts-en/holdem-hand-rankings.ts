@@ -139,7 +139,7 @@ There are three ways to make it, and the difference matters:
 
 - **Set:** a pocket pair plus one matching board card (e.g. you hold J♣ J♠, board has J♥). Disguised and dangerous.
 - **Trips:** a pair on the board plus one in your hand. Easier for opponents to read and to share.
-- **Board trips:** all three sit on the board (e.g. J♣ J♠ J♥ in the middle). Everyone shares them, so unless someone improves to a full house or quads, only kickers separate you.
+- **Board trips:** all three sit on the board (e.g. J♣ J♠ J♥ in the middle). Everyone shares them, so unless someone makes a straight or better, only kickers separate you.
 
 A set wins more chips because nobody sees it coming.
 

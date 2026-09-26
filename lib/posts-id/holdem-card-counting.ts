@@ -116,7 +116,7 @@ Di turnamen yang memakai [aturan Poker TDA 2026](https://www.pokertda.com/poker-
 
 **Di Seven Card Stud, sebagian besar kartu setiap pemain dibagikan menghadap ke atas — jadi Anda benar-benar bisa menghitung dek dengan cara kuno.** Jika Anda butuh kartu tertentu untuk melengkapi tangan, Anda bisa memandang sekeliling meja dan secara harfiah menghitung berapa banyak outs Anda yang sudah terlihat di up-card lawan. Setiap yang Anda temukan adalah dead out.
 
-Di Hold'em satu-satunya kartu yang dibagikan menghadap ke atas adalah lima community card bersama — semua kartu lain tetap tertutup kecuali dibuka di showdown, dibuka di atas meja saat all-in, atau tersingkap karena kecelakaan (kartu yang tersingkap, tangan yang ditunjukkan saat fold), jadi hanya sedikit yang bisa dilacak. Tapi Stud — dan kerabatnya, Razz dan Stud Hi-Lo, yang membagikan kartu terbuka dengan cara yang sama — memberi imbalan tepat pada jenis pelacakan kartu yang dikuasai penghitung blackjack. Inilah yang paling dekat poker mendekati versi film.
+Di Hold'em satu-satunya kartu yang dibagikan menghadap ke atas adalah lima community card bersama — semua kartu lain tetap tertutup kecuali dibuka di showdown, dibuka di atas meja saat all-in, ditunjukkan secara sukarela, atau tersingkap karena kecelakaan (kartu yang tak sengaja terlihat), jadi hanya sedikit yang bisa dilacak. Tapi Stud — dan kerabatnya, Razz dan Stud Hi-Lo, yang membagikan kartu terbuka dengan cara yang sama — memberi imbalan tepat pada jenis pelacakan kartu yang dikuasai penghitung blackjack. Inilah yang paling dekat poker mendekati versi film.
 
 ---
 

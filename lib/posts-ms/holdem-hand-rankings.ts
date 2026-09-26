@@ -140,7 +140,7 @@ Ada tiga cara membentuknya, dan perbezaannya penting:
 
 - **Set:** pocket pair ditambah satu kad board yang sepadan (cth. anda pegang J♣ J♠, board ada J♥). Tersembunyi dan berbahaya.
 - **Trips:** sepasang di board ditambah satu kad di tangan anda. Lebih mudah dibaca lawan dan lebih mudah dikongsi.
-- **Trips di board:** ketiga-tiga kad berada di board (cth. J♣ J♠ J♥ di tengah meja). Semua pemain berkongsinya, jadi melainkan seseorang meningkat kepada full house atau quads, hanya kicker yang membezakan anda.
+- **Trips di board:** ketiga-tiga kad berada di board (cth. J♣ J♠ J♥ di tengah meja). Semua pemain berkongsinya, jadi melainkan seseorang membentuk straight atau yang lebih kuat, hanya kicker yang membezakan anda.
 
 Set memenangi lebih banyak cip kerana tiada siapa menyangkanya.
 

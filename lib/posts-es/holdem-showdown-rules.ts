@@ -89,7 +89,7 @@ En **torneo**, cuando un jugador va all-in y ya no hay más apuestas posibles, l
 
 </div>
 
-Un matiz: si hay un **side pot** (otros jugadores aún tienen fichas y siguen apostando), el side pot se adjudica primero y después el bote principal. Ese es el **orden de pago**. En torneo nada tiene que ver con cuándo se enseñan las cartas: la mano del jugador all-in ya está boca arriba desde el momento en que no cabe más apuesta. La ilustración de la TDA a la regla 16 lo dice con todas las letras: no se espera a repartir el side pot para darle la vuelta a la mano del all-in. En cash, según las WSOP Live Action Rules, el orden de enseñar sigue a los botes: primero los del side pot, después quien solo está all-in por el bote principal (regla 149).
+Un matiz: si hay un **side pot** (otros jugadores aún tienen fichas y siguen apostando), el side pot se adjudica primero y después el bote principal. Ese es el **orden de pago**. En torneo nada tiene que ver con cuándo se enseñan las cartas: la mano del jugador all-in ya está boca arriba desde el momento en que no cabe más apuesta. La ilustración de la TDA 2024 a la regla 16 lo dice con todas las letras: no se espera a repartir el side pot para darle la vuelta a la mano del all-in. En cash, según las WSOP Live Action Rules, el orden de enseñar sigue a los botes: primero los del side pot, después quien solo está all-in por el bote principal (regla 149).
 
 Para ver cómo se forman y se pagan los side pots cuando hay jugadores all-in, mira [las reglas del all-in y los side pots](/es/blog/holdem-all-in-rules); para los botes divididos, mira [las reglas del split pot y el reparto del bote](/es/blog/holdem-split-pot-rules).
 

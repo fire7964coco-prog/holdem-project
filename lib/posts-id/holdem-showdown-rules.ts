@@ -89,7 +89,7 @@ Di **turnamen**, ketika seorang pemain all-in dan tidak ada taruhan lagi yang mu
 
 </div>
 
-Satu detail penting: kalau ada **side pot** (pemain lain masih punya chip dan terus bertaruh), side pot dibagikan lebih dulu, baru pot utama. Itu **urutan pembayaran**. Di turnamen ia tidak ada hubungannya dengan kapan kartu dibuka: hand pemain all-in sudah terbuka sejak tidak ada taruhan lagi yang mungkin. Ilustrasi TDA untuk Rule 16 menyebutkannya secara eksplisit — jangan menunggu side pot dibagi dulu baru membuka hand pemain all-in. Di cash game, menurut WSOP Live Action Rules, urutan membuka mengikuti pot: pemain side pot dulu, lalu pemain yang all-in hanya untuk pot utama (Rule 149).
+Satu detail penting: kalau ada **side pot** (pemain lain masih punya chip dan terus bertaruh), side pot dibagikan lebih dulu, baru pot utama. Itu **urutan pembayaran**. Di turnamen ia tidak ada hubungannya dengan kapan kartu dibuka: hand pemain all-in sudah terbuka sejak tidak ada taruhan lagi yang mungkin. Ilustrasi TDA 2024 untuk Rule 16 menyebutkannya secara eksplisit — jangan menunggu side pot dibagi dulu baru membuka hand pemain all-in. Di cash game, menurut WSOP Live Action Rules, urutan membuka mengikuti pot: pemain side pot dulu, lalu pemain yang all-in hanya untuk pot utama (Rule 149).
 
 Untuk cara side pot dibentuk dan dibayarkan saat ada pemain all-in, lihat [aturan all-in dan side pot](/id/blog/holdem-all-in-rules); untuk pot yang dibagi rata, lihat [aturan split pot dan chop](/id/blog/holdem-split-pot-rules).
 

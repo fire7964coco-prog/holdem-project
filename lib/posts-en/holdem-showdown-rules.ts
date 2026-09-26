@@ -88,7 +88,7 @@ In a **tournament**, when a player goes all-in and there's no more betting possi
 
 </div>
 
-One nuance: if there is a **side pot** (other players still have chips and keep betting), the side pot is awarded first and then the main pot. That is the **payout order**. In a tournament it has nothing to do with when cards come up — the all-in player's hand is already face-up the moment no further betting is possible; the TDA illustration to Rule 16 says it outright: do *not* wait for the side pot to be divided before turning up the all-in. In a cash game under the WSOP Live Action rules the show order follows the pots instead: the side-pot players show first, then the player who is all-in for only the main pot (Rule 149).
+One nuance: if there is a **side pot** (other players still have chips and keep betting), the side pot is awarded first and then the main pot. That is the **payout order**. In a tournament it has nothing to do with when cards come up — the all-in player's hand is already face-up the moment no further betting is possible; the TDA 2024 illustration to Rule 16 says it outright: do *not* wait for the side pot to be divided before turning up the all-in. In a cash game under the WSOP Live Action rules the show order follows the pots instead: the side-pot players show first, then the player who is all-in for only the main pot (Rule 149).
 
 For how side pots are built and paid when players are all-in, see [all-in rules and side pots](/en/blog/holdem-all-in-rules); for chopped pots, see [split pot and chop rules](/en/blog/holdem-split-pot-rules).
 

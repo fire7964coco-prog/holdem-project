@@ -116,7 +116,7 @@ Bei Turnieren nach den [Poker-TDA-Regeln 2026](https://www.pokertda.com/poker-td
 
 **Bei Seven Card Stud wird ein großer Teil der Karten jedes Spielers offen ausgeteilt – also kannst du das Deck tatsächlich auf die altmodische Art zählen.** Wenn du eine bestimmte Karte brauchst, um deine Hand zu vervollständigen, kannst du dich am Tisch umsehen und buchstäblich zählen, wie viele deiner Outs bereits offen in den Up-Cards der Gegner liegen. Jedes, das du entdeckst, ist ein totes Out.
 
-Beim Hold'em werden als einzige Karten die fünf gemeinsamen Community Cards offen ausgeteilt – alles andere bleibt verdeckt, sofern es nicht im Showdown gezeigt, bei einem All-in aufgedeckt oder durch ein Versehen sichtbar wird (eine aufgeblitzte Karte, eine beim Folden gezeigte Hand), also gibt es kaum etwas zu tracken. Aber Stud – und seine Verwandten Razz und Stud Hi-Lo, die genauso offen austeilen – belohnt genau die Art von Karten-Tracking, in der Blackjack-Zähler gut sind. Das ist das, was der Filmversion am nächsten kommt, was Poker bietet.
+Beim Hold'em werden als einzige Karten die fünf gemeinsamen Community Cards offen ausgeteilt – alles andere bleibt verdeckt, sofern es nicht im Showdown gezeigt, bei einem All-in aufgedeckt, freiwillig gezeigt oder durch ein Versehen sichtbar wird (eine aufgeblitzte Karte), also gibt es kaum etwas zu tracken. Aber Stud – und seine Verwandten Razz und Stud Hi-Lo, die genauso offen austeilen – belohnt genau die Art von Karten-Tracking, in der Blackjack-Zähler gut sind. Das ist das, was der Filmversion am nächsten kommt, was Poker bietet.
 
 ---
 

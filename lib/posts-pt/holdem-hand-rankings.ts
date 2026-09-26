@@ -135,7 +135,7 @@ Há três formas de fechá-la, e a diferença importa:
 
 - **Set:** um par na mão mais uma carta da mesa (ex.: você tem J♣ J♠ e a mesa traz J♥). Disfarçado e perigoso.
 - **Trips:** um par na mesa mais uma carta sua. Mais fácil de o adversário ler e de compartilhar.
-- **Trinca na mesa:** as três estão no board (ex.: J♣ J♠ J♥ no meio). Todo mundo divide essa trinca, então, a menos que alguém melhore para full house ou quadra, só os kickers separam vocês.
+- **Trinca na mesa:** as três estão no board (ex.: J♣ J♠ J♥ no meio). Todo mundo divide essa trinca, então, a menos que alguém forme uma sequência ou algo melhor, só os kickers separam vocês.
 
 O set tira mais fichas porque ninguém vê chegar.
 

@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Strategi Texas Hold'em: 5 Keputusan di Balik Setiap Tangan yang Menang",
   seoTitle: "Kenapa 'Tips' Poker Tak Pernah Melekat — Strategi Texas Holdem",
   desc: "Poker yang menang bukan sepuluh tips terpisah — melainkan lima keputusan sama setiap tangan: position, seleksi tangan, raise-atau-fold, c-bet, dan kapan lepas.",
-  tldr: "Setiap keputusan Texas Hold'em yang menang menyusut menjadi lima pertanyaan berulang: di mana saya duduk (position), apakah tangan ini layak dimainkan, apakah saya raise atau fold (jangan pernah open-limp), apakah saya terus bertaruh di flop, dan kapan saya melepasnya? Pemain tight-aggressive yang menjawab lima ini dengan baik akan fold ~80% tangan preflop, memainkannya secara agresif saat main, dan mengalahkan hampir setiap permainan santai — tanpa perlu daftar tips hafalan.",
+  tldr: "Setiap keputusan Texas Hold'em yang menang menyusut menjadi lima pertanyaan berulang: di mana saya duduk (position), apakah tangan ini layak dimainkan, apakah saya raise atau fold alih-alih open-limp, apakah saya terus bertaruh di flop, dan kapan saya melepasnya? Pemain tight-aggressive yang menjawab lima ini dengan baik akan fold ~80% tangan preflop, memainkannya secara agresif saat main, dan mengalahkan hampir setiap permainan santai — tanpa perlu daftar tips hafalan.",
   category: "strategy",
   date: "2026-07-06",
   updated: "2026-09-26",
@@ -46,7 +46,7 @@ Jadi alih-alih daftar, gunakan **tulang punggung keputusan**. Setiap hand yang A
 |:---:|:---|:---|:---|
 | **1** | **Position** | Di mana saya duduk, dan siapa yang beraksi setelah saya? | [Position play](/id/blog/holdem-position-play) |
 | **2** | **Seleksi tangan** | Apakah tangan ini bahkan layak masuk pot? | [Starting hands](/id/blog/holdem-starting-hands-chart) |
-| **3** | **Agresi preflop** | Apakah saya raise atau fold — jangan pernah open-limp? | [Kenapa limping merugikan Anda](/id/blog/holdem-limping) |
+| **3** | **Agresi preflop** | Apakah saya raise atau fold alih-alih open-limp? | [Kenapa limping merugikan Anda](/id/blog/holdem-limping) |
 | **4** | **Kelanjutan** | Apakah saya terus bertaruh di flop, atau berhenti? | [Aksi bertaruh](/id/blog/holdem-betting-actions) |
 | **5** | **Disiplin** | Kapan saya melepas sebuah tangan? | [Pot odds & fold](/id/blog/holdem-pot-odds) |
 
@@ -89,9 +89,9 @@ Tangan mana yang lolos tergantung pada position Anda (Keputusan 1 memberi umpan 
 
 ---
 
-## Keputusan 3 — Raise atau Fold. Jangan Pernah Sekadar Limp.
+## Keputusan 3 — Raise atau Fold. Jangan Sekadar Limp.
 
-![Tiga panel bernomor di bawah judul RAISE / FOLD — OVER-LIMP dengan chip dan penanda kursi, BIG BLIND dengan 1,5 ÷ 5,5 dan 27%, SET-MINING dengan sepasang lima dan 11,8%](/images/holdem-strategy-raise-or-fold.webp "Masuk pertama berarti raise atau fold — satu-satunya diskon adalah over-limp dalam position, big blind defense di 27%, dan set-mining")
+![Tiga panel bernomor di bawah judul RAISE / FOLD — OVER-LIMP dengan chip dan penanda kursi, BIG BLIND dengan 1,5 ÷ 5,5 dan 27%, SET-MINING dengan sepasang lima dan 11,8%](/images/holdem-strategy-raise-or-fold.webp "Masuk pertama berarti raise atau fold — diskon utamanya adalah over-limp dalam position, big blind defense di 27%, dan set-mining")
 
 Setelah Anda memutuskan sebuah tangan layak dimainkan, ada keputusan kedua yang salah dilakukan sebagian besar pemula: *bagaimana* masuk ke pot. Jawabannya, hampir selalu, adalah **raise — jangan limp.**
 
@@ -101,7 +101,7 @@ Setelah Anda memutuskan sebuah tangan layak dimainkan, ada keputusan kedua yang 
 2. **Anda menyerahkan inisiatif.** Preflop raiser bisa terus menceritakan sebuah kisah di flop (Keputusan 4). Limp, dan Anda menyerahkan kisah itu ke orang lain.
 3. **Anda memasang target di punggung sendiri.** Pemain kuat raise besar di belakang limper untuk mengisolasinya, lalu mengalahkannya dalam position sepanjang tangan. Sebuah open-limp mengumumkan "ada pemain lemah dan pasif di sini."
 
-Default yang memperbaikinya tegas: **jika sebuah tangan cukup baik untuk dimainkan, ia cukup baik untuk di-raise; jika tidak, fold.** Dan ketika orang *lain* sudah raise, raise lagi — sebuah [3-bet](/id/blog/holdem-3bet "thumb:/images/holdem-3bet-hero.webp") — adalah cara Anda menghukum open yang lebar dan membangun pot dengan tangan terbaik Anda. Pengecualian terhadap default raise-atau-fold itu nyata, dan semuanya soal **harga**. *Over*-limp — call *di belakang* seseorang yang sudah limp, dalam position, dengan tangan spekulatif seperti small pair — membelikan Anda kursi murah di pot multiway. Yang lebih besar adalah **big blind defense**: melawan open 2,5bb (heads-up, small blind fold, tanpa ante) Anda sudah memasang ==1bb==, jadi Anda call 1,5bb ke pot 4bb dan hanya butuh ==1,5 ÷ 5,5 = 27%== equity di atas kertas. Di luar position Anda akan merealisasikan lebih sedikit dari equity mentah Anda, jadi anggap 27% sebagai batas bawah, bukan garis finis. Dan karena call Anda menutup aksi, porsi yang lebar dari range big blind memilih call ketimbang 3-bet atau fold. Yang ketiga adalah **set-mining** small pair melawan raise saat stack dalam (matematikanya ada di bawah). Itu diskon, bukan strategi — di luar spot seperti itu, raise atau fold.
+Default yang memperbaikinya tegas: **jika sebuah tangan cukup baik untuk dimainkan, ia cukup baik untuk di-raise; jika tidak, fold.** Dan ketika orang *lain* sudah raise, raise lagi — sebuah [3-bet](/id/blog/holdem-3bet "thumb:/images/holdem-3bet-hero.webp") — adalah cara Anda menghukum open yang lebar dan membangun pot dengan tangan terbaik Anda. Pengecualian terhadap default raise-atau-fold itu nyata, dan semuanya soal **harga**. *Over*-limp — call *di belakang* seseorang yang sudah limp, dalam position, dengan tangan spekulatif seperti small pair — membelikan Anda kursi murah di pot multiway. Yang lebih besar adalah **big blind defense**: melawan open 2,5bb (heads-up, small blind fold, tanpa ante) Anda sudah memasang ==1bb==, jadi Anda call 1,5bb ke pot 4bb dan hanya butuh ==1,5 ÷ 5,5 = 27%== equity di atas kertas. Di luar position Anda akan merealisasikan lebih sedikit dari equity mentah Anda, jadi anggap 27% sebagai batas bawah, bukan garis finis. Dan karena call Anda menutup aksi, porsi yang lebar dari range big blind memilih call ketimbang 3-bet atau fold. Yang ketiga adalah **set-mining** small pair melawan raise saat stack dalam (matematikanya ada di bawah). Itu diskon, bukan strategi — di luar spot seperti itu, raise atau fold. Aturan raise-atau-fold saat masuk pertama itu sendiri adalah default cash game dengan kedalaman stack normal: melakukan complete dari small blind di pot yang belum di-raise dan open-limp dari button yang dipakai solver pada stack turnamen pendek adalah limp sah utama yang tidak dicakupnya.
 
 ---
 
@@ -242,7 +242,7 @@ A. Belajar di luar meja, dan main lebih ketat di meja. Perbaikan tercepat bagi k
 
 1. **Position** — main lebih banyak tangan di belakang, lebih sedikit di awal; button adalah kursi paling menguntungkan Anda.
 2. **Seleksi tangan** — fold ~80% preflop; tangan yang Anda simpan lebih kuat daripada lawan Anda.
-3. **Raise atau fold** — jangan pernah open-limp; sebuah raise bisa memenangkan pot sekarang, sebuah limp tak pernah bisa.
+3. **Raise atau fold** — jangan open-limp di kedalaman stack cash game normal; sebuah raise bisa memenangkan pot sekarang, sebuah limp tak pernah bisa.
 4. **Kelanjutan** — c-bet saat Anda punya inisiatif, tapi sesuaikan dengan board, position, dan lawan.
 5. **Disiplin** — fold tangan yang kalah dan draw tanpa odds; itu langkah yang paling banyak menghemat uang.
 

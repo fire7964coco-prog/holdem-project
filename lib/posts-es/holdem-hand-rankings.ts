@@ -140,7 +140,7 @@ Hay tres formas de ligarlo, y la diferencia importa:
 
 - **Set:** una pareja servida más una carta de la mesa que empareja (p. ej. tienes J♣ J♠ y la mesa trae J♥). Disimulado y peligroso.
 - **Trips:** una pareja en la mesa más una carta tuya. Más fácil de leer para el rival y de compartir.
-- **Trío en la mesa:** las tres cartas están en la mesa (p. ej. J♣ J♠ J♥ en el centro). Lo comparten todos, así que, salvo que alguien mejore a full o a póker, solo os separan los kickers.
+- **Trío en la mesa:** las tres cartas están en la mesa (p. ej. J♣ J♠ J♥ en el centro). Lo comparten todos, así que, salvo que alguien haga escalera o algo mejor, solo os separan los kickers.
 
 El set saca más fichas porque nadie lo ve venir.
 

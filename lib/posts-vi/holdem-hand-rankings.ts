@@ -131,7 +131,7 @@ Có ba cách tạo thành, và sự khác biệt rất quan trọng:
 
 - **Set:** một đôi trên tay cộng một lá trên bàn (ví dụ bạn cầm J♣ J♠ và bàn ra J♥). Kín đáo và nguy hiểm.
 - **Trips:** một đôi trên bàn cộng một lá của bạn. Dễ bị đối thủ đọc hơn và dễ bị chia hơn.
-- **Sám Cô trên bàn:** cả ba lá đều nằm trên bàn (ví dụ J♣ J♠ J♥ ở giữa). Ai cũng dùng chung, nên trừ khi có người cải thiện lên Cù Lũ hoặc Tứ Quý, chỉ lá kicker mới phân định thắng thua.
+- **Sám Cô trên bàn:** cả ba lá đều nằm trên bàn (ví dụ J♣ J♠ J♥ ở giữa). Ai cũng dùng chung, nên trừ khi có người tạo được Sảnh hoặc bài mạnh hơn, chỉ lá kicker mới phân định thắng thua.
 
 Set ăn được nhiều chip hơn vì không ai ngờ tới.
 

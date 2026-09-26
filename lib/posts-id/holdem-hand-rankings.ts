@@ -133,7 +133,7 @@ Ada tiga cara membentuknya, dan bedanya penting:
 
 - **Set:** sepasang di tangan plus satu kartu board (mis. Anda pegang J♣ J♠ lalu keluar J♥). Tersembunyi dan berbahaya.
 - **Trips:** sepasang di board plus satu kartu Anda. Lebih mudah dibaca lawan dan lebih sering dibagi.
-- **Trips di board:** ketiganya ada di board (mis. J♣ J♠ J♥ di tengah). Semua orang berbagi kartu itu, jadi kecuali ada yang naik ke full house atau quads, hanya kicker yang membedakan Anda.
+- **Trips di board:** ketiganya ada di board (mis. J♣ J♠ J♥ di tengah). Semua orang berbagi kartu itu, jadi kecuali ada yang membentuk straight atau yang lebih kuat, hanya kicker yang membedakan Anda.
 
 Set meraup lebih banyak chip karena tak ada yang menyangka.
 

@@ -115,7 +115,7 @@ At tournaments using the [2026 Poker TDA rules](https://www.pokertda.com/poker-t
 
 **In Seven Card Stud, a big chunk of every player's cards are dealt face up — so you genuinely can count the deck the old-fashioned way.** If you need a specific card to complete your hand, you can look around the table and literally count how many of your outs are already showing in opponents' up-cards. Every one you spot is a dead out.
 
-In Hold'em the only cards dealt face-up are the five shared community cards — everything else stays face-down unless it's shown at showdown, tabled in an all-in, or exposed by accident (a flashed card, a hand shown on the fold), so there is little to track. But Stud — and its relatives Razz and Stud Hi-Lo, which deal the same face-up cards — rewards exactly the kind of card-tracking that blackjack counters are good at. It's the closest poker gets to the movie version.
+In Hold'em the only cards dealt face-up are the five shared community cards — everything else stays face-down unless it's shown at showdown, tabled in an all-in, shown voluntarily, or exposed by accident (a flashed card), so there is little to track. But Stud — and its relatives Razz and Stud Hi-Lo, which deal the same face-up cards — rewards exactly the kind of card-tracking that blackjack counters are good at. It's the closest poker gets to the movie version.
 
 ---
 

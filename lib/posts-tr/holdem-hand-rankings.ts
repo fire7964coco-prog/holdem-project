@@ -131,7 +131,7 @@ Onu oluşturmanın üç yolu vardır ve fark önemlidir:
 
 - **Set:** elindeki bir çift artı bir board kartı (örneğin J♣ J♠ tutarsın ve board J♥ getirir). Gizli ve tehlikeli.
 - **Trips:** board'daki bir çift artı senin bir kartın. Rakip için okuması daha kolay ve daha çok paylaşılır.
-- **Board'da üçlü:** üç kartın üçü de board'dadır (örneğin ortada J♣ J♠ J♥). Herkes paylaşır; biri full house'a ya da kareye yükselmedikçe sizi yalnızca kicker'lar ayırır.
+- **Board'da üçlü:** üç kartın üçü de board'dadır (örneğin ortada J♣ J♠ J♥). Herkes paylaşır; biri straight ya da daha güçlü bir el yapmadıkça sizi yalnızca kicker'lar ayırır.
 
 Set daha çok çip kazandırır çünkü kimse onu görmez.
 
