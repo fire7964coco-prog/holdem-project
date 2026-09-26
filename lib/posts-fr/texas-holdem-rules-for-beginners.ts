@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Au Texas Hold'em, chaque joueur reçoit 2 cartes fermées, on utilise 5 cartes communes, et la meilleure main de 5 cartes l'emporte après quatre tours d'enchères.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-22",
+  updated: "2026-09-26",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -415,7 +415,7 @@ A. La version la plus simple : chaque joueur reçoit 2 cartes privées. Cinq car
 
 **Q. Que veulent dire les blindes au Texas Hold'em ?**
 
-A. Les deux joueurs à gauche du bouton du donneur doivent poser des mises obligatoires avant la distribution. Le premier pose la petite blinde, le second la grosse blinde (en général le double). Ces mises garantissent qu'il y a toujours de l'argent dans le pot à se disputer. Tous les autres joueurs doivent au moins égaler la grosse blinde pour rester dans le coup.
+A. Les deux joueurs à gauche du bouton du donneur doivent poser des mises obligatoires avant la distribution. Le premier pose la petite blinde, le second la grosse blinde (en général le double). Ces mises garantissent qu'il y a toujours de l'argent dans le pot à se disputer. Tous les autres joueurs doivent au moins égaler la grosse blinde pour rester dans le coup (ou faire tapis pour moins, si ce sont tous leurs jetons).
 
 **Q. Quelle est la version express des règles du Texas Hold'em ?**
 

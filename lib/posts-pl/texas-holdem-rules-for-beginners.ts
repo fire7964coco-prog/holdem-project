@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "W Texas Hold'em każdy gracz dostaje 2 karty zakryte, na stole leży 5 kart wspólnych, a po czterech rundach licytacji wygrywa najlepszy 5-kartowy układ.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-19",
+  updated: "2026-09-26",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -414,7 +414,7 @@ A. Najprościej: każdy gracz dostaje 2 prywatne karty. Pięć wspólnych kart o
 
 **Q. Zasady Texas Hold'em dla laika — co oznaczają blindy?**
 
-A. Dwaj gracze po lewej od buttona rozdającego muszą wyłożyć przymusowe zakłady przed rozdaniem kart. Pierwszy wykłada mały blind, drugi duży blind (zwykle dwa razy większy). Te zakłady gwarantują, że w puli zawsze jest o co walczyć. Każdy pozostały gracz musi przynajmniej dorównać dużemu blindowi, żeby zostać w rozdaniu.
+A. Dwaj gracze po lewej od buttona rozdającego muszą wyłożyć przymusowe zakłady przed rozdaniem kart. Pierwszy wykłada mały blind, drugi duży blind (zwykle dwa razy większy). Te zakłady gwarantują, że w puli zawsze jest o co walczyć. Każdy pozostały gracz musi przynajmniej dorównać dużemu blindowi, żeby zostać w rozdaniu (albo pójść all-in za mniej, jeśli to wszystkie jego żetony).
 
 **Q. Jaka jest szybka wersja zasad Texas Hold'em?**
 

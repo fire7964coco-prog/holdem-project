@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ir de all-in é apostar todas as fichas que você tem. Você só pode ganhar de cada adversário o valor que igualou (o pote principal). O que os stacks maiores apostam além disso vira um pote paralelo (side pot) que só os jogadores que cobriram esse valor podem ganhar. Um all-in menor que um aumento completo NÃO reabre a aposta para quem já agiu.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-21",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-21",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -132,7 +132,7 @@ Blinds de $1/$2. Quatro jogadores veem o flop.
 O que acontece com o Jogador A e com o Jogador C, que ainda não agiu?
 
 - O Jogador A já agiu (apostou $10) e agora enfrenta apenas um aumento incompleto. Como o all-in de $14 de B é **menor que um aumento completo**, a ação NÃO reabre para o Jogador A. ==A só pode pagar ou foldar — não pode aumentar de novo.==
-- O Jogador C ainda não agiu — **C continua podendo aumentar**. O limite de reabertura nunca alcança quem ainda não agiu. Repare no tamanho, porém: **se C aumentar**, o mínimo é um **total** igual ao all-in de B mais a última aposta completa — $14 + $10 = **$24**, e não os $20 que teriam sido um aumento completo sobre A (regra 176 das WSOP Live Action Rules). C ainda pode ir de all-in por menos: o mínimo nunca prende quem vai de all-in (regra 174 das Live Action Rules).
+- O Jogador C ainda não agiu — **C continua podendo aumentar**. O limite de reabertura nunca alcança quem ainda não agiu. Repare no tamanho, porém: **se C aumentar**, o mínimo é um **total** igual ao all-in de B mais a última aposta completa — $14 + $10 = **$24**, e não os $20 que teriam sido um aumento completo sobre A (regra 176 das WSOP Live Action Rules). C ainda pode ir de all-in por menos: o mínimo nunca prende quem vai de all-in (regra 175 das Live Action Rules).
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

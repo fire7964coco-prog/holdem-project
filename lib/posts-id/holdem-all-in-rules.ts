@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "All-in artinya mempertaruhkan seluruh chip yang Anda punya. Anda hanya bisa memenangkan jumlah yang Anda samakan dari tiap lawan (pot utama). Taruhan ekstra dari stack yang lebih besar membentuk side pot yang hanya bisa dimenangkan pemain yang menyamai taruhan itu. All-in yang kurang dari satu raise penuh TIDAK membuka kembali taruhan bagi pemain yang sudah beraksi.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-21",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-21",
   keepImagesInBody: true,
   readTime: "10 menit",
@@ -131,7 +131,7 @@ Blinds $1/$2. Empat pemain melihat flop.
 Apa yang terjadi pada Pemain A, dan pada Pemain C yang belum beraksi?
 
 - Pemain A sudah beraksi (bet $10) dan sekarang hanya menghadapi raise yang tidak lengkap. Karena all-in B sebesar $14 **kurang dari satu raise penuh**, aksi TIDAK terbuka kembali untuk Pemain A. ==A hanya bisa call atau fold — dia tidak boleh re-raise.==
-- Pemain C belum beraksi — **Pemain C tetap boleh raise**. Batas pembukaan kembali tidak pernah mengenai pemain yang belum beraksi. Perhatikan ukurannya: **kalau C raise**, minimumnya adalah **total** all-in B ditambah bet penuh terakhir — $14 + $10 = **$24**, bukan $20 yang tadinya menjadi raise penuh atas A (WSOP Live Action Rule 176). C tetap boleh all-in dengan jumlah lebih kecil: batas minimum tidak pernah mengikat pemain yang all-in (Live Action Rule 174).
+- Pemain C belum beraksi — **Pemain C tetap boleh raise**. Batas pembukaan kembali tidak pernah mengenai pemain yang belum beraksi. Perhatikan ukurannya: **kalau C raise**, minimumnya adalah **total** all-in B ditambah bet penuh terakhir — $14 + $10 = **$24**, bukan $20 yang tadinya menjadi raise penuh atas A (WSOP Live Action Rule 176). C tetap boleh all-in dengan jumlah lebih kecil: batas minimum tidak pernah mengikat pemain yang all-in (Live Action Rule 175).
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

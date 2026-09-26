@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "En el Texas Hold'em cada jugador recibe 2 cartas propias y comparte 5 cartas comunitarias en la mesa. Se apuesta en cuatro rondas — preflop, flop, turn y river — y gana quien forma la mejor mano de póker de 5 cartas, o el último que quede si todos los demás se retiran. Puedes usar tus dos cartas, una sola o ninguna: lo que forme la mano más fuerte.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-13",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -426,7 +426,7 @@ A. La versión más simple: cada jugador recibe 2 cartas privadas. Se descubren 
 
 **Q. Reglas del Texas Hold'em para novatos — ¿qué significan las ciegas?**
 
-A. Los dos jugadores a la izquierda del botón del dealer deben poner apuestas obligatorias antes de repartir. El primero pone la ciega pequeña y el segundo la ciega grande (normalmente el doble). Estas apuestas garantizan que siempre haya dinero en el bote por el que luchar. Los demás jugadores deben al menos igualar la ciega grande para seguir en la mano.
+A. Los dos jugadores a la izquierda del botón del dealer deben poner apuestas obligatorias antes de repartir. El primero pone la ciega pequeña y el segundo la ciega grande (normalmente el doble). Estas apuestas garantizan que siempre haya dinero en el bote por el que luchar. Los demás jugadores deben al menos igualar la ciega grande para seguir en la mano (o ir all-in por menos, si eso es todo su stack).
 
 **Q. ¿Cuál es la versión rápida de las reglas del Texas Hold'em?**
 

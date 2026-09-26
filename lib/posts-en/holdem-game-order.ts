@@ -15,7 +15,7 @@ export const POST: Post = {
   tldr: "Preflop, the player to the left of the big blind bets first. On the flop, turn and river it is the first live player to the left of the button — usually the small blind. (Heads-up flips this.) The hand itself runs blinds → hole cards → preflop → flop → turn → river → showdown, with four betting rounds.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-09-22",
+  updated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎬",
@@ -143,7 +143,7 @@ Showdown rules:
 - Each player makes their **best five-card hand** from their two hole cards and the five community cards.
 - You don't have to use both hole cards — you can use one, or even play the board (zero) if that's your best five.
 - The player who made the last aggressive action (bet or raise) shows first; if the river was checked through, the first active player to the left of the button shows first.
-- A losing player may simply **muck** (fold without showing) — except in a tournament all-in: once a player is all-in and betting is complete, every hand is turned face up (TDA Rule 16 · WSOP Tournament Rule 70).
+- A losing player may simply **muck** (fold without showing) — except in a tournament all-in: once a player is all-in and betting is complete, every hand is turned face up (TDA 2024 Rule 16 · WSOP Tournament Rule 70).
 - Equal hands **split the pot** ("chop") evenly.
 
 Who has to show first, when you can muck, and the etiquette around slow-rolling are covered in full in the [showdown rules](/en/blog/holdem-showdown-rules).
@@ -361,7 +361,7 @@ A. The first live player to the left of the button — at a full table that is t
 
 **Q. Who shows their cards first at showdown?**
 
-A. Whoever made the last aggressive action — the final bet or raise on the river — has to show first. If the river checked through with no bet at all, the first active player to the left of the button shows first and the rest follow clockwise. A player who knows they are beaten can muck instead of showing — unless someone is all-in in a tournament, where every hand gets tabled (TDA Rule 16).
+A. Whoever made the last aggressive action — the final bet or raise on the river — has to show first. If the river checked through with no bet at all, the first active player to the left of the button shows first and the rest follow clockwise. A player who knows they are beaten can muck instead of showing — unless someone is all-in in a tournament, where every hand gets tabled (TDA 2024 Rule 16).
 
 **Q. What's the difference between preflop and the flop?**
 

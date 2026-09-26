@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Yes — poker hands can tie. A pot is split (a chop) when two or more players show down the identical best five-card hand. Suits never break the tie, and any leftover odd chip goes to the first tied player left of the dealer button.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-09",
+  updated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🃏",
@@ -113,7 +113,7 @@ Board 9♠ 8♦ 7♣ 6♥ 5♠ — a made straight. You hold A♠ K♦; your opp
 
 ## Who Gets the Extra Chip? The Odd Chip Rule
 
-Sometimes a pot won't divide evenly — a 101-chip pot between two players is 50 each with one chip left over, and there are no half-chips. Before that last chip is pushed to anyone, the dealer breaks it down into the smallest denomination in play (TDA Rule 20): if 5s are the smallest chips on the table, a lone 25 becomes five 5s, which divide again, and only the chip that still won't divide is the "odd chip." Then the standard rule:
+Sometimes a pot won't divide evenly — a 101-chip pot between two players is 50 each with one chip left over, and there are no half-chips. Before that last chip is pushed to anyone, the dealer breaks it down into the smallest denomination in play (TDA 2024 Rule 20): if 5s are the smallest chips on the table, a lone 25 becomes five 5s, which divide again, and only the chip that still won't divide is the "odd chip." Then the standard rule:
 
 > ==The leftover odd chip goes to the first tied player **left of the dealer button**== (the earliest winning seat clockwise from the button).
 

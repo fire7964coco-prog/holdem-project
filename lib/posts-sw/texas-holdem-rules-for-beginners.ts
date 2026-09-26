@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Katika Texas Hold'em kila mchezaji anapata karata 2 za mkononi, kunatumika karata 5 za pamoja, na baada ya raundi nne za kuweka dau, mkono bora wa karata 5 unashinda.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-19",
+  updated: "2026-09-26",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -415,7 +415,7 @@ A. Toleo rahisi zaidi: kila mchezaji anapata karata 2 za siri. Karata tano za pa
 
 **Q. Sheria za Texas Hold'em kwa wanaoanza — blinds zina maana gani?**
 
-A. Wachezaji wawili walio upande wa kushoto wa dealer button lazima waweke dau la lazima kabla ya karata kugawiwa. Mchezaji wa kwanza anaweka small blind, wa pili anaweka big blind (kwa kawaida maradufu). Dau hili linahakikisha kuna pesa katika pot kila mara za kupigania. Kila mchezaji mwingine lazima angalau alingane na big blind ili kubaki kwenye mkono.
+A. Wachezaji wawili walio upande wa kushoto wa dealer button lazima waweke dau la lazima kabla ya karata kugawiwa. Mchezaji wa kwanza anaweka small blind, wa pili anaweka big blind (kwa kawaida maradufu). Dau hili linahakikisha kuna pesa katika pot kila mara za kupigania. Kila mchezaji mwingine lazima angalau alingane na big blind ili kubaki kwenye mkono (au aweke all-in kwa kiasi kidogo zaidi, kama hicho ndicho chipsi chake chote).
 
 **Q. Toleo la haraka la sheria za Texas Hold'em ni lipi?**
 

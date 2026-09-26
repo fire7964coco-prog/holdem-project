@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Poker hand rankings from best to worst are: Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, One Pair, and High Card.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-09-17",
+  updated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "🃏",
@@ -135,10 +135,11 @@ Higher top card wins between two straights.
 
 **J♣ J♠ J♥ A♦ 4♠** — three cards of one rank.
 
-There are two ways to make it, and the difference matters:
+There are three ways to make it, and the difference matters:
 
 - **Set:** a pocket pair plus one matching board card (e.g. you hold J♣ J♠, board has J♥). Disguised and dangerous.
 - **Trips:** a pair on the board plus one in your hand. Easier for opponents to read and to share.
+- **Board trips:** all three sit on the board (e.g. J♣ J♠ J♥ in the middle). Everyone shares them, so unless someone improves to a full house or quads, only kickers separate you.
 
 A set wins more chips because nobody sees it coming.
 
@@ -210,7 +211,7 @@ Knowing the order isn't the same as reading it fast. Here are three real spots. 
 
 You hold **Q♥ Q♦**. What's your best hand?
 
-→ The board already shows two pair (A-A and K-K). Your two queens plus the board's Q♠ make **trip queens**, and combined with the board's aces you have a **full house — QQQ + AA**. That's your best five. The first home game I ever dealt, I watched two different players muck this exact hand thinking "AAKK + Q is just two pair" — it isn't. Once you have trips, you take the full house. **Full house beats two pair.**
+→ The board already shows two pair (A-A and K-K). Your two queens plus the board's Q♠ make **trip queens**, and combined with the board's aces you have a **full house — QQQ + AA**. That's your best five. The first home game I ever dealt, I watched two different players muck this exact hand thinking "AAKK + Q is just two pair" — it isn't. Once you have trips and the board adds a pair of its own, you take the full house. **Full house beats two pair.**
 
 ### Puzzle 2 — The flush that's actually better
 
@@ -252,7 +253,7 @@ The short answers to the arguments that break out at every table: a flush beats 
 
 ## Why Does a Flush Beat a Straight?
 
-A flush beats a straight because it is simply harder to make: in a 52-card deck there are fewer ways to draw five cards of one suit (3.03% of seven-card hands by the river) than five in sequence across any suits (4.62%). The ranking isn't arbitrary — it's ==pure probability==. ==g:**The harder a hand is to make, the higher it ranks.**== That single principle explains the entire hierarchy — see the exact numbers in the [poker odds and probability chart](/en/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
+A flush beats a straight because it is simply harder to make: in a 52-card deck there are fewer ways to draw five cards of one suit (3.03% of seven-card hands by the river) than five in sequence across any suits (4.62%). The ranking isn't arbitrary — it's ==pure probability==. ==g:**The harder a hand is to make from five cards, the higher it ranks.**== That single principle explains the entire hierarchy — see the exact numbers in the [poker odds and probability chart](/en/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
 It also explains the one big exception you'll meet: in **Short Deck (6+) Hold'em**, where the 2s through 5s are removed, flushes become harder than full houses — so in that format a ==r:**flush beats a full house**==. The math changed, so the order changed. More on game-by-game differences below.
 
@@ -376,7 +377,7 @@ A. Yes. Three of a kind is #7 and two pair is #8, so trips win. Two pair only be
 
 **Q. Does a straight flush beat four of a kind?**
 
-A. Yes. A straight flush (#2) beats four of a kind (#3) — five cards in sequence of one suit outrank quads. The only thing above a straight flush is a royal flush, which is just the ace-high version of it.
+A. Yes. A straight flush (#2) beats four of a kind (#3) — five cards in sequence of one suit outrank quads. The only hands above a straight flush are a higher straight flush and a royal flush, which is just the ace-high version of it.
 
 **Q. What is the lowest (worst) hand in poker?**
 

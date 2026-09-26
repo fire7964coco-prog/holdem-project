@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Sa Texas Hold'em, bawat player ay may 2 hole cards, may 5 community cards, at ang pinakamagandang 5-card poker hand ang panalo pagkatapos ng apat na betting rounds.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-19",
+  updated: "2026-09-26",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -415,7 +415,7 @@ A. Ang pinakasimpleng version: bawat player ay may 2 private cards. Limang share
 
 **Q. Texas Hold'em rules para sa dummies — ano ang ibig sabihin ng blinds?**
 
-A. Ang dalawang players sa kaliwa ng dealer button ay dapat maglagay ng forced bets bago ideal ang cards. Ang unang player ay naglalagay ng small blind, ang pangalawa ay big blind (kadalasang doble). Sinisiguro ng bets na ito na laging may perang lalabanan sa pot. Bawat ibang player ay dapat man lang tumapat sa big blind para manatili sa hand.
+A. Ang dalawang players sa kaliwa ng dealer button ay dapat maglagay ng forced bets bago ideal ang cards. Ang unang player ay naglalagay ng small blind, ang pangalawa ay big blind (kadalasang doble). Sinisiguro ng bets na ito na laging may perang lalabanan sa pot. Bawat ibang player ay dapat man lang tumapat sa big blind para manatili sa hand (o mag-all-in para sa mas mababa, kung iyon na ang buo niyang stack).
 
 **Q. Ano ang quick version ng Texas Hold'em rules?**
 

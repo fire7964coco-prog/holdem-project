@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Texas Hold'em has 5 betting actions: check (pass for free), bet (open the round), call (match a bet), raise (increase it — the minimum raise equals the previous bet or raise), and fold. You can only check when there is no live bet in front of you — preflop that normally means only the big blind (or whoever posted a live straddle).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-09-22",
+  updated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "🃏",
@@ -226,7 +226,7 @@ A. It depends on the all-in's size. If the all-in is a full legal raise, action 
 
 **Q. What is a string bet in poker?**
 
-A. Trying to bet or raise in multiple motions — going back to your stack in between — without announcing "raise" first (==Rule 103==). The second motion never counts — only the first chips stand, judged under the single- and multiple-chip call rules first (TDA 2024 Rules 44–45). Where Rule 43-A’s half-minimum threshold applies, measure the increase over the call, not the total chips: below half the largest prior full bet or raise is a call; half or more requires a full min-raise. A prior raise declaration or an all-in is treated under its own rules. The same rule also bans a deceptive gesture meant to induce action out of turn before your own action is complete. Saying "call" and then adding is not a string bet but a binding declaration (==Rule 90.d==) — same effect. Announce your action verbally or move all chips in one motion.
+A. Trying to bet or raise in multiple motions — going back to your stack in between — without announcing "raise" first (==Rule 103==). The second motion never counts — only the first chips stand, judged under the single- and multiple-chip call rules first (TDA 2024 Rules 44–45). Where Rule 43-A’s half-minimum threshold applies, measure the increase over the call, not the total chips: below half the largest prior full bet or raise is a call; half or more requires a full min-raise. A prior raise declaration or an all-in is treated under its own rules. Rule 103 also bans a deceptive gesture meant to induce action out of turn before your own action is complete. Saying "call" and then adding is not a string bet but a binding declaration (==Rule 90.d==) — same effect. Announce your action verbally or move all chips in one motion.
 
 **Q. What does it mean to limp in poker?**
 

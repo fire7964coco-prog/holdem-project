@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Dalam Texas Hold'em, setiap pemain menerima 2 kad pemula, 5 kad komuniti dikongsi bersama, dan tangan poker 5 kad terbaik menang selepas empat pusingan pertaruhan.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-19",
+  updated: "2026-09-26",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 minit",
@@ -417,7 +417,7 @@ A. Versi paling ringkas: setiap pemain dapat 2 kad peribadi. Lima kad kongsi dib
 
 **Q. Peraturan Texas Hold'em untuk pemula — apa maksud blinds?**
 
-A. Dua pemain di kiri butang pengedar mesti meletakkan pertaruhan wajib sebelum kad diedarkan. Pemain pertama meletakkan Small Blind, pemain kedua meletakkan Big Blind (biasanya dua kali ganda). Pertaruhan ini memastikan sentiasa ada wang dalam pot untuk direbut. Setiap pemain lain mesti sekurang-kurangnya menyamai Big Blind untuk kekal dalam tangan.
+A. Dua pemain di kiri butang pengedar mesti meletakkan pertaruhan wajib sebelum kad diedarkan. Pemain pertama meletakkan Small Blind, pemain kedua meletakkan Big Blind (biasanya dua kali ganda). Pertaruhan ini memastikan sentiasa ada wang dalam pot untuk direbut. Setiap pemain lain mesti sekurang-kurangnya menyamai Big Blind untuk kekal dalam tangan (atau all-in dengan jumlah lebih kecil, jika itu seluruh cip mereka).
 
 **Q. Apakah versi pantas peraturan Texas Hold'em?**
 

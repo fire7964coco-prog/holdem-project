@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Im Texas Hold'em spielst du immer die beste 5-Karten-Hand aus 7 (2 Hole Cards + 5 Gemeinschaftskarten) – mit beiden Hole Cards, einer oder gar keiner („playing the board“). Scanne alle 7 Karten in fester Reihenfolge: Flush → Straße → gepaarte Ränge → High Card.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-09-13",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "11 Min.",
@@ -172,7 +172,7 @@ Beachte die letzte Zeile: ==selbst mit nichts ist das Paar des Boards Teil deine
 Du kannst beide HALTEN – du kannst nie beide SPIELEN. ==Eine Pokerhand besteht aus genau 5 Karten, also stapeln sich überlappende Kombinationen nicht; du spielst einfach die stärkere.==
 
 - Du hältst A♠ K♠ auf Q♠ 7♠ 2♠ K♦ 3♣. Du hast ein Paar Könige UND fünf Pik gemacht. Deine Hand ist der ==Nut Flush, A♠ K♠ Q♠ 7♠ 2♠== – das Paar Könige kommt einfach nie zum Tragen.
-- Du hältst 8♥ 8♦ auf 7♣ 6♦ 5♠ 4♥ K♦. Paar Achten UND 8-7-6-5-4. Deine Hand ist die ==Acht-hohe Straße== – nicht „ein Paar mit einer Straße“. Im Showdown musst du sie nicht ansagen: Die Karten sprechen, der Dealer liest die Hand (TDA-Regel 12). Was du tun musst: beide Karten offen hinlegen – die Karten sprechen nur für eine sauber aufgedeckte Hand (Regel 13-A) – und wenn der Dealer sie falsch liest, sag es, bevor der Pot geschoben wird.
+- Du hältst 8♥ 8♦ auf 7♣ 6♦ 5♠ 4♥ K♦. Paar Achten UND 8-7-6-5-4. Deine Hand ist die ==Acht-hohe Straße== – nicht „ein Paar mit einer Straße“. Im Showdown musst du sie nicht ansagen: Die Karten sprechen, der Dealer liest die Hand (TDA-2024-Regel 12). Was du tun musst: beide Karten offen hinlegen – die Karten sprechen nur für eine sauber aufgedeckte Hand (TDA-2024-Regel 13-A) – und wenn der Dealer sie falsch liest, sag es, bevor der Pot geschoben wird.
 
 Dieselbe Logik beantwortet „kann man drei Paare haben?“ – du hältst vielleicht drei gepaarte Ränge über 7 Karten, aber nur die besten zwei passen in 5 Karten (behandelt im [Leitfaden zur Pokerhände-Reihenfolge](/de/blog/holdem-hand-rankings)).
 
@@ -274,7 +274,7 @@ A. Dann hat jeder mindestens diese Straße. Es gewinnt, wer sie mit einer Hole C
 
 **Q. Musst du im Texas Hold'em beide Hole Cards benutzen?**
 
-A. Nein. Du baust deine besten fünf Karten aus jeder beliebigen Kombination deiner zwei Hole Cards und der fünf Gemeinschaftskarten – beide, nur eine oder gar keine. Gar keine zu benutzen heißt „das Board spielen“ – und dabei gilt eine Formalie, die immer wieder Pots kostet: Wer das Board spielt, muss beim Showdown **beide Hole Cards aufdecken**, um überhaupt einen Anteil zu bekommen (==WSOP-Turnierregel 75==, TDA-Regel 19). Omaha ist genau umgekehrt: Dort musst du exakt zwei deiner vier Hole Cards nutzen.
+A. Nein. Du baust deine besten fünf Karten aus jeder beliebigen Kombination deiner zwei Hole Cards und der fünf Gemeinschaftskarten – beide, nur eine oder gar keine. Gar keine zu benutzen heißt „das Board spielen“ – und dabei gilt eine Formalie, die immer wieder Pots kostet: Wer das Board spielt, muss beim Showdown **beide Hole Cards aufdecken**, um überhaupt einen Anteil zu bekommen (==WSOP-Turnierregel 75==, TDA-2024-Regel 19). Omaha ist genau umgekehrt: Dort musst du exakt zwei deiner vier Hole Cards nutzen.
 
 **Q. Zählt ein Paar auf dem Board als Teil deiner Hand?**
 

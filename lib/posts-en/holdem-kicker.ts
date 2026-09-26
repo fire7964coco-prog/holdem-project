@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "A kicker is the highest side card that isn't part of your main hand — it breaks ties when two players share the same rank. High card uses 4 kickers, one pair 3, two pair 1, trips 2; straights, flushes, full houses, and straight flushes have none. It's why AK beats AQ when the board pairs an ace.",
   category: "hand-rankings",
   date: "2026-07-08",
-  updated: "2026-09-17",
+  updated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -115,7 +115,7 @@ The board is ==b:10♠ J♦ Q♣ K♥ A♠== — a made ten-to-ace straight (Bro
 - You hold ==b:2♣ 3♦==. Your best five is the board straight; the 2 and 3 add nothing.
 - Your opponent holds ==b:4♥ 5♦==. Same story — the board straight is their best five too.
 
-Neither of you can go higher than an ace, so you both "play the board" and ==g:chop the pot== — but only if you turn your hole cards face up; muck them and you get nothing, even here (TDA Rule 19). A straight has no kicker, so those hole cards are dead weight. When you hear "the board plays," this is it — and it's the one spot where a strong-looking hole card is worth exactly nothing. (More on spotting these runouts in [reading the board](/en/blog/holdem-reading-the-board).)
+Neither of you can go higher than an ace, so you both "play the board" and ==g:chop the pot== — but only if you turn your hole cards face up; muck them and you get nothing, even here (TDA 2024 Rule 19). A straight has no kicker, so those hole cards are dead weight. When you hear "the board plays," this is it — and it's the one spot where a strong-looking hole card is worth exactly nothing. (More on spotting these runouts in [reading the board](/en/blog/holdem-reading-the-board).)
 
 ---
 

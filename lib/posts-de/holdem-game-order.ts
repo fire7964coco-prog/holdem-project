@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Eine Texas-Hold'em-Hand läuft so ab: Blinds setzen → zwei Hole Cards erhalten → Preflop → Flop (3 Karten) → Turn (1 Karte) → River (1 Karte) → Showdown – mit insgesamt vier Setzrunden.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-09-22",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "16 Min.",
@@ -136,7 +136,7 @@ Die Showdown-Regeln:
 - Jeder Spieler bildet seine **beste Fünf-Karten-Hand** aus seinen zwei Hole Cards und den fünf Gemeinschaftskarten.
 - Du musst nicht beide Hole Cards benutzen – du kannst auch nur eine spielen oder sogar nur das Board (null Karten), wenn das deine besten fünf sind.
 - Der Spieler mit der letzten aggressiven Aktion (Bet oder Raise) zeigt zuerst; wurde am River nur durchgecheckt, zeigt zuerst der erste aktive Spieler links vom Button.
-- Ein unterlegener Spieler darf einfach **mucken** (folden, ohne zu zeigen) – außer bei einem All-in im Turnier: Sobald ein Spieler All-in ist und das Setzen beendet ist, wird jede Hand offen hingelegt (TDA-Regel 16 · WSOP Tournament Rule 70).
+- Ein unterlegener Spieler darf einfach **mucken** (folden, ohne zu zeigen) – außer bei einem All-in im Turnier: Sobald ein Spieler All-in ist und das Setzen beendet ist, wird jede Hand offen hingelegt (TDA-2024-Regel 16 · WSOP Tournament Rule 70).
 - Bei gleichwertigen Händen wird der Pot **geteilt** („Chop“) – zu gleichen Teilen.
 
 Wer zuerst zeigen muss, wann du mucken darfst und was es mit der Etikette rund ums Slow-Rolling auf sich hat, steht ausführlich in den [Showdown-Regeln](/de/blog/holdem-showdown-rules).
@@ -352,7 +352,7 @@ A. Der erste noch aktive Spieler links vom Button – am vollen Tisch ist das de
 
 **Q. Wer zeigt im Showdown seine Karten zuerst?**
 
-A. Wer die letzte aggressive Aktion gemacht hat – die letzte Bet oder den letzten Raise am River –, muss zuerst zeigen. Wurde der River komplett durchgecheckt, zeigt der erste aktive Spieler links vom Button zuerst, der Rest folgt im Uhrzeigersinn. Wer weiß, dass er geschlagen ist, darf stattdessen mucken – es sei denn, im Turnier ist jemand All-in: Dann wird jede Hand offen hingelegt (TDA-Regel 16).
+A. Wer die letzte aggressive Aktion gemacht hat – die letzte Bet oder den letzten Raise am River –, muss zuerst zeigen. Wurde der River komplett durchgecheckt, zeigt der erste aktive Spieler links vom Button zuerst, der Rest folgt im Uhrzeigersinn. Wer weiß, dass er geschlagen ist, darf stattdessen mucken – es sei denn, im Turnier ist jemand All-in: Dann wird jede Hand offen hingelegt (TDA-2024-Regel 16).
 
 **Q. Was ist der Unterschied zwischen Preflop und Flop?**
 

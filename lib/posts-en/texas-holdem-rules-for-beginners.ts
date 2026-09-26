@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Texas Hold'em gives each player 2 hole cards, uses 5 community cards, and the best 5-card poker hand wins after four betting rounds.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-13",
+  updated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
@@ -187,7 +187,7 @@ If you are playing a small home cash game, choose a buy-in that everyone is comf
 
 ==r:Do not start with stakes that make people nervous.== Nervous beginners do not learn faster. They just fold too much, call too emotionally, or argue about rules.
 
-Note that a **tournament** buy-in works differently from a cash game: you pay one fixed entry, get a set stack of non-cashable chips, and play until one player has them all. If you are unsure which you want, read [cash game vs tournament](/en/blog/holdem-tournament-vs-cash-game) first.
+Note that a **tournament** buy-in works differently from a cash game: you pay a fixed entry, get a set stack of non-cashable chips, and play until one player has them all (re-entry events let you buy in again after you bust). If you are unsure which you want, read [cash game vs tournament](/en/blog/holdem-tournament-vs-cash-game) first.
 
 For online practice, use free tables until you can explain the action order without thinking. Then move up slowly.
 
@@ -195,7 +195,7 @@ For online practice, use free tables until you can explain the action order with
 
 ## No-Limit, Limit, or Pot-Limit? Which Texas Hold'em Are You Playing?
 
-When people say "Texas Hold'em," they almost always mean **No-Limit Hold'em (NLHE)** — the format used in the WSOP Main Event and nearly every home game. The dealing, blinds, and hand rankings are identical across all three formats. The only thing that changes is **how much you are allowed to bet.**
+When people say "Texas Hold'em," they almost always mean **No-Limit Hold'em (NLHE)** — the format used in the WSOP Main Event and nearly every home game. The dealing and hand rankings are identical across all three formats. The main thing that changes is **how much you are allowed to bet** — and Fixed-Limit usually also caps how many raises a round allows (at the WSOP, one bet and four raises).
 
 | Format | How much can you bet? | Where you'll see it |
 |--------|-----------------------|---------------------|
@@ -300,7 +300,7 @@ Your pot odds are **$120 to $20**, or **6 to 1**. That means you need to win at 
 
 ### The Rule of 2 and 4 — instant probability shortcut
 
-When you have a drawing hand (e.g. four cards to a flush), count your **outs** — the cards that will complete your hand.
+When you have a drawing hand (e.g. four cards to a flush), count your **outs** — the cards that will turn your draw into a likely winner.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -420,7 +420,7 @@ A. The simplest version: each player gets 2 private cards. Five shared cards are
 
 **Q. Texas Hold'em rules for dummies — what do the blinds mean?**
 
-A. The two players to the left of the dealer button must post forced bets before cards are dealt. The first player posts the small blind, the second posts the big blind (usually double). These bets guarantee there is always money in the pot to fight for. Every other player must at least match the big blind to stay in the hand.
+A. The two players to the left of the dealer button must post forced bets before cards are dealt. The first player posts the small blind, the second posts the big blind (usually double). These bets guarantee there is always money in the pot to fight for. Every other player must at least match the big blind to stay in the hand (or go all-in for less, if that is their whole stack).
 
 **Q. What is the quick version of Texas Hold'em rules?**
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "La Texas Hold'em fiecare jucător primește 2 cărți din mână, se folosesc 5 cărți comune, iar după patru runde de pariere câștigă cea mai bună mână de 5 cărți.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-19",
+  updated: "2026-09-26",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -415,7 +415,7 @@ A. Cea mai simplă versiune: fiecare jucător primește 2 cărți private. Cinci
 
 **Q. Regulile de Texas Hold'em pe înțelesul tuturor — ce înseamnă blind-urile?**
 
-A. Cei doi jucători din stânga butonului de dealer trebuie să pună pariuri obligatorii înainte de împărțirea cărților. Primul jucător pune small blind-ul, al doilea pune big blind-ul (de obicei dublu). Aceste pariuri garantează că există mereu bani în pot pentru care să te lupți. Fiecare alt jucător trebuie măcar să egaleze big blind-ul ca să rămână în mână.
+A. Cei doi jucători din stânga butonului de dealer trebuie să pună pariuri obligatorii înainte de împărțirea cărților. Primul jucător pune small blind-ul, al doilea pune big blind-ul (de obicei dublu). Aceste pariuri garantează că există mereu bani în pot pentru care să te lupți. Fiecare alt jucător trebuie măcar să egaleze big blind-ul ca să rămână în mână (sau să meargă all-in cu mai puțin, dacă ăsta e tot stack-ul lui).
 
 **Q. Care e versiunea rapidă a regulilor de Texas Hold'em?**
 

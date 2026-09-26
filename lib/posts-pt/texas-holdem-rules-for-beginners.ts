@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "No Texas Hold'em cada jogador recebe 2 cartas fechadas, usa 5 cartas comunitárias, e a melhor mão de 5 cartas ganha depois de quatro rodadas de apostas.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-11",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -430,7 +430,7 @@ A. A versão mais simples: cada jogador recebe 2 cartas privadas. Cinco cartas c
 
 **Q. O que significam os blinds nas regras do Texas Hold'em?**
 
-A. Os dois jogadores à esquerda do botão do dealer precisam pagar apostas obrigatórias antes das cartas serem distribuídas. O primeiro paga o small blind, o segundo paga o big blind (geralmente o dobro). Essas apostas garantem que sempre há dinheiro no pote para disputar. Todos os outros jogadores precisam, no mínimo, igualar o big blind para continuar na mão.
+A. Os dois jogadores à esquerda do botão do dealer precisam pagar apostas obrigatórias antes das cartas serem distribuídas. O primeiro paga o small blind, o segundo paga o big blind (geralmente o dobro). Essas apostas garantem que sempre há dinheiro no pote para disputar. Todos os outros jogadores precisam, no mínimo, igualar o big blind para continuar na mão (ou ir all-in por menos, se isso for toda a sua pilha de fichas).
 
 **Q. Qual é a versão rápida das regras do Texas Hold'em?**
 

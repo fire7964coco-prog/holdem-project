@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Trong Texas Hold'em, mỗi người chơi nhận 2 lá bài tẩy, dùng chung 5 lá bài chung, và tay bài poker 5 lá mạnh nhất sẽ thắng sau bốn vòng cược.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-19",
+  updated: "2026-09-26",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 phút",
@@ -415,7 +415,7 @@ A. Phiên bản đơn giản nhất: mỗi người nhận 2 lá bài riêng. N�
 
 **Q. Luật Texas Hold'em cho người mới — mù nghĩa là gì?**
 
-A. Hai người chơi bên trái nút Dealer phải đặt cược bắt buộc trước khi chia bài. Người đầu tiên đặt mù nhỏ, người thứ hai đặt mù lớn (thường gấp đôi). Những khoản cược này bảo đảm pot luôn có tiền để tranh. Mọi người chơi khác phải theo ít nhất bằng mù lớn để tiếp tục ván bài.
+A. Hai người chơi bên trái nút Dealer phải đặt cược bắt buộc trước khi chia bài. Người đầu tiên đặt mù nhỏ, người thứ hai đặt mù lớn (thường gấp đôi). Những khoản cược này bảo đảm pot luôn có tiền để tranh. Mọi người chơi khác phải theo ít nhất bằng mù lớn để tiếp tục ván bài (hoặc all-in với số ít hơn, nếu đó là toàn bộ chip của họ).
 
 **Q. Phiên bản rút gọn của luật Texas Hold'em là gì?**
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In a non-all-in tournament showdown, the last river aggressor shows first; if the river checks through, the first active player left of the button does. With an all-in, all remaining hands must be shown once betting is complete. A river caller who retains or tables their cards can request the last aggressor's hand. Cash games follow house rules for showing and mucking.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-22",
+  updated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -40,7 +40,7 @@ The rule depends on how the final betting round ended (for the full street-by-st
 |--------------------|-----------------|
 | Someone bet or raised on the river | ==The last player to bet or raise== shows first — unless it was an all-in in a tournament (see below) |
 | Everyone checked the river | First active player left of the dealer button shows first |
-| All-in on earlier street (no river betting) | Tournament: every hand tabled without delay once all betting is complete (TDA Rule 16). Cash: with a side pot, the side-pot players show first; and in a no-limit game the player who pushed all-in turns over first (Live Action Rule 149) |
+| All-in on earlier street (no river betting) | Tournament: every hand tabled without delay once all betting is complete (TDA 2024 Rule 16). Cash: with a side pot, the side-pot players show first; and in a no-limit game the player who pushed all-in turns over first (Live Action Rule 149) |
 
 </div>
 
@@ -56,11 +56,11 @@ Yes — **if you lost**.
 
 Once the last aggressor shows their hand, the other players can either:
 - **Show their hand** if they think they win
-- **Muck face-down** if they see they've lost — no need to reveal your cards. That only holds while nobody was all-in: in a tournament, once a player is all-in **and all betting action by the other players is complete**, ==TDA Rule 16== requires every hand in the pot to be tabled, and nobody may muck. While the others still have chips and can bet, everything stays face-down (cash games follow house rules, and most let the caller muck)
+- **Muck face-down** if they see they've lost — no need to reveal your cards. That only holds while nobody was all-in: in a tournament, once a player is all-in **and all betting action by the other players is complete**, ==TDA 2024 Rule 16== requires every hand in the pot to be tabled, and nobody may muck. While the others still have chips and can bet, everything stays face-down (cash games follow house rules, and most let the caller muck)
 
-==r:But there's one important exception:== if your river bet was called, the caller paid full price to see your hand. That request — asking the dealer to turn up a mucked hand — is the **"I want to see that hand"** rule. In tournaments ==TDA Rule 18== draws it tightly: anyone who no longer holds cards at showdown, or who mucked face-down, forfeits the right to ask. The right is inalienable only for a player who called the river bet and either tabled or retained their cards, and only for the ==last aggressor's== hand — the one they paid to see. Everything else is at the tournament director's discretion. Cash games run on house rules, and they are not automatically looser: under the WSOP Live Action rules a request to see an unexposed hand needs suspected collusion **and** a floor person present (==Live Action Rule 147==). (Don't confuse it with "show one, show all," which means that if you voluntarily show your cards to one player, everyone at the table gets to see them.)
+==r:But there's one important exception:== if your river bet was called, the caller paid full price to see your hand. That request — asking the dealer to turn up a mucked hand — is the **"I want to see that hand"** rule. In tournaments ==TDA 2024 Rule 18== draws it tightly: anyone who no longer holds cards at showdown, or who mucked face-down, forfeits the right to ask. The right is inalienable only for a player who called the river bet and either tabled or retained their cards, and only for the ==last aggressor's== hand — the one they paid to see. Everything else is at the tournament director's discretion. Cash games run on house rules, and they are not automatically looser: under the WSOP Live Action rules a request to see an unexposed hand needs suspected collusion **and** a floor person present (==Live Action Rule 147==). (Don't confuse it with "show one, show all," which means that if you voluntarily show your cards to one player, everyone at the table gets to see them.)
 
-Practical rule: ==as the last aggressor you turn your cards over — even on a bluff that got called.== Mucking face-down is the caller's option, taken after seeing the bettor's hand. Muck fast as the bettor and you lose twice: in a tournament the caller who paid to see it can demand your hand anyway (==TDA Rule 18==) — in a WSOP cash game they cannot, absent suspected collusion and a floor person (Live Action Rule 147) — and because cards speak, plenty of pots have been thrown away by players whose ace-high was actually ahead.
+Practical rule: ==as the last aggressor you turn your cards over — even on a bluff that got called.== Mucking face-down is the caller's option, taken after seeing the bettor's hand. Muck fast as the bettor and you lose twice: in a tournament the caller who paid to see it can demand your hand anyway (==TDA 2024 Rule 18==) — in a WSOP cash game they cannot, absent suspected collusion and a floor person (Live Action Rule 147) — and because cards speak, plenty of pots have been thrown away by players whose ace-high was actually ahead.
 
 ---
 
@@ -76,14 +76,14 @@ Example: Button, small blind, and big blind see the river. SB checks, BB checks,
 
 ## All-In Showdown Rules — Does the All-In Player Show First?
 
-In a **tournament**, when a player goes all-in and there's no more betting possible, all remaining cards are run out with **all hands shown face-up** (==TDA Rule 16==). This protects the integrity of the hand — no player should be able to muck strategically in an all-in situation. **Cash games run on house rules**, and the WSOP Live Action rules put it the other way round: **in a no-limit game**, if betting ended before the river, the player who pushed all-in is responsible for turning over first; and in any cash game, when there is a side pot, the players contesting it show before anyone who is all-in for only the main pot (==Live Action Rule 149==).
+In a **tournament**, when a player goes all-in and there's no more betting possible, all remaining cards are run out with **all hands shown face-up** (==TDA 2024 Rule 16==). This protects the integrity of the hand — no player should be able to muck strategically in an all-in situation. **Cash games run on house rules**, and the WSOP Live Action rules put it the other way round: **in a no-limit game**, if betting ended before the river, the player who pushed all-in is responsible for turning over first; and in any cash game, when there is a side pot, the players contesting it show before anyone who is all-in for only the main pot (==Live Action Rule 149==).
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | All-in scenario | Showdown rule |
 |----------------|---------------|
 | Player goes all-in on an earlier street, others call, no more betting possible | Tournament: every hand tabled without delay once all betting is complete. Cash: with a side pot, the side-pot players show first; and in a no-limit game the player who pushed all-in turns over first (Live Action Rule 149) |
-| All-in bet on the river gets called | Cash: the all-in bettor shows first as last aggressor. Tournament: no show-first order at all — under TDA Rule 16 every hand goes up at once and ==r:nobody may muck here== |
+| All-in bet on the river gets called | Cash: the all-in bettor shows first as last aggressor. Tournament: no show-first order at all — under TDA 2024 Rule 16 every hand goes up at once and ==r:nobody may muck here== |
 | Multiple all-ins creating multiple side pots | Each pot resolved separately; all involved hands shown |
 
 </div>
@@ -102,7 +102,7 @@ For how side pots are built and paid when players are all-in, see [all-in rules 
 
 If a player misreads their hand and says "I have a pair," but they actually have a straight — the straight wins. The dealer reads the cards and awards the pot to the best hand shown.
 
-This works both ways. If you think you lost and muck without showing, but your hand would have been the winner — ==r:the pot is gone==. Your hand is dead once the dealer has pushed it into the muck, or once it can no longer be identified and retrieved — cards laid face-down are not automatically dead (==TDA Rule 14==). Never rely on that, though. Always let the dealer read your hand before mucking if you're not 100% sure you lost.
+This works both ways. If you think you lost and muck without showing, but your hand would have been the winner — ==r:the pot is gone==. Your hand is dead once the dealer has pushed it into the muck, or once it can no longer be identified and retrieved — cards laid face-down are not automatically dead (==TDA 2024 Rule 14==). Never rely on that, though. Always let the dealer read your hand before mucking if you're not 100% sure you lost.
 
 Real situation: you hold J♥ 10♥ on a board of Q♥ 9♥ 8♥ 2♣ 5♦. You have a queen-high straight flush (Q-J-10-9-8 of hearts). Opponent shows K♣ Q♦ (one pair of queens). You win by a mile. Don't muck just because you see their queen.
 
@@ -142,11 +142,11 @@ You bet the river. Someone calls you. You freeze and wait for them to show. That
 
 ### Mistake 2: Mucking before the dealer reads the hand
 
-You're pretty sure you lost. You slide your cards face-down toward the muck. Dealer pulls them in. Turns out you had the winner. Under ==TDA Rule 14== the hand is dead the moment the dealer pushes it into the muck, and the pot is almost certainly gone — but call the floor before you give up: the WSOP tournament rules let management retrieve a hand that is still clearly identifiable, and an extra effort is made if the muck was caused by dealer error or wrong information (WSOP Tournament Rules 109 and 110). ==Never muck until you're certain.== Let the dealer read both hands.
+You're pretty sure you lost. You slide your cards face-down toward the muck. Dealer pulls them in. Turns out you had the winner. Under ==TDA 2024 Rule 14== the hand is dead the moment the dealer pushes it into the muck, and the pot is almost certainly gone — but call the floor before you give up: the WSOP tournament rules let management retrieve a hand that is still clearly identifiable, and an extra effort is made if the muck was caused by dealer error or wrong information (WSOP Tournament Rules 109 and 110). ==Never muck until you're certain.== Let the dealer read both hands.
 
 ### Mistake 3: Demanding to see every called hand
 
-In most cardrooms you can ask the dealer to expose a mucked hand. In a tournament the right is drawn tightly: you may ask only if you tabled your own cards or still hold them, and a player who mucked face-down forfeits it entirely (==TDA Rule 18-A==). Beyond that, only one request is guaranteed: the last aggressor's hand, the one a caller paid to see. Everything else, including a hand that was never called or a river that went unbet, is at the director's discretion — which is not the same as refused (==TDA Rule 18-B==). A folded hand is dead once it is in the muck, and only a hand that is still clearly identifiable may be retrieved (WSOP Tournament Rule 109). The request rule exists to guard against collusion, not to satisfy curiosity, and abusing it is considered rude. Use it sparingly.
+In most cardrooms you can ask the dealer to expose a mucked hand. In a tournament the right is drawn tightly: you may ask only if you tabled your own cards or still hold them, and a player who mucked face-down forfeits it entirely (==TDA 2024 Rule 18-A==). Beyond that, only one request is guaranteed: the last aggressor's hand, the one a caller paid to see. Everything else, including a hand that was never called or a river that went unbet, is at the director's discretion — which is not the same as refused (==TDA 2024 Rule 18-B==). A folded hand is dead once it is in the muck, and only a hand that is still clearly identifiable may be retrieved (WSOP Tournament Rule 109). The request rule exists to guard against collusion, not to satisfy curiosity, and abusing it is considered rude. Use it sparingly.
 
 ### Mistake 4: Not knowing you can show early
 
@@ -167,11 +167,11 @@ A. The last player to make an aggressive action (bet or raise) on the final bett
 
 **Q. Do you have to show your cards if you get called at showdown?**
 
-A. Yes — if you were the last bettor or raiser on the river, you must show first when called. If you called someone else's bet, you can muck face-down after seeing their hand if you've lost. The exception is a tournament all-in: under ==TDA Rule 16== the caller has to table as well. And in tournaments the guaranteed right to ask belongs to whoever **called the river bet** — provided they tabled or still hold their cards — and it covers only the last aggressor's hand, the one they paid to see (==TDA Rule 18==). A player who mucked face-down has no right to ask at all, and every other request is at the director's discretion.
+A. Yes — if you were the last bettor or raiser on the river, you must show first when called. If you called someone else's bet, you can muck face-down after seeing their hand if you've lost. The exception is a tournament all-in: under ==TDA 2024 Rule 16== the caller has to table as well. And in tournaments the guaranteed right to ask belongs to whoever **called the river bet** — provided they tabled or still hold their cards — and it covers only the last aggressor's hand, the one they paid to see (==TDA 2024 Rule 18==). A player who mucked face-down has no right to ask at all, and every other request is at the director's discretion.
 
 **Q. Can you muck at showdown without showing?**
 
-A. Yes, but only if you clearly lost. Once the winner's hand is shown, losing players can muck face-down. The exception is if your hand was called — the caller who paid for it may ask to see it, and in a tournament, once a player is all-in and all betting action is complete, every hand in the main and side pots must be tabled — nobody may muck (TDA Rule 16). Never muck before the dealer reads both hands if there's any uncertainty about who won.
+A. Yes, but only if you clearly lost. Once the winner's hand is shown, losing players can muck face-down. The exceptions are tournament rules: if you made the last bet on the river and got called, the caller who paid to see your hand can demand it (TDA 2024 Rule 18-B — in a WSOP cash game they can't, absent suspected collusion), and once a player is all-in and all betting action is complete, every hand in the main and side pots must be tabled — nobody may muck (TDA 2024 Rule 16). Never muck before the dealer reads both hands if there's any uncertainty about who won.
 
 **Q. What is slow rolling in poker and why is it bad?**
 
@@ -179,11 +179,11 @@ A. Slow rolling is deliberately delaying showing a winning hand you already know
 
 **Q. In an all-in situation, who shows their cards first?**
 
-A. In a tournament, when a player goes all-in and no further betting is possible, all hands involved in that pot are tabled without delay once all betting action is complete — before the remaining community cards are dealt (TDA Rule 16). If there is a side pot, it is awarded first and the main pot after it — but the all-in player's cards are face-up long before that. In a no-limit cash game, if betting ended before the river, the WSOP Live Action rules have the player who pushed all-in turn over first; in any cash game, side-pot players show before anyone who is all-in for only the main pot (Rule 149). While the others still have chips and can bet, everything stays face-down.
+A. In a tournament, when a player goes all-in and no further betting is possible, all hands involved in that pot are tabled without delay once all betting action is complete — before the remaining community cards are dealt (TDA 2024 Rule 16). If there is a side pot, it is awarded first and the main pot after it — but the all-in player's cards are face-up long before that. In a no-limit cash game, if betting ended before the river, the WSOP Live Action rules have the player who pushed all-in turn over first; in any cash game, side-pot players show before anyone who is all-in for only the main pot (Rule 149). While the others still have chips and can bet, everything stays face-down.
 
 **Q. What does "cards speak" mean in poker?**
 
-A. Cards speak means the best hand wins based on what the cards actually show — not based on what players say. A player who misreads their hand and declares the wrong hand still wins if their actual cards are the best hand. Conversely, a player who mucks without verifying they lost usually throws the pot away: the hand is dead the moment the dealer pushes it into the muck, or once it otherwise can't be identified, even if it would have won (TDA Rule 14 — until then, face-down cards that are still 100% identifiable and retrievable can be tabled, but never count on it).
+A. Cards speak means the best hand wins based on what the cards actually show — not based on what players say. A player who misreads their hand and declares the wrong hand still wins if their actual cards are the best hand. Conversely, a player who mucks without verifying they lost usually throws the pot away: the hand is dead the moment the dealer pushes it into the muck, or once it otherwise can't be identified, even if it would have won (TDA 2024 Rule 14 — until then, face-down cards that are still 100% identifiable and retrievable can be tabled, but never count on it).
 
 **Q. Do you have to show your cards if you win without a showdown?**
 

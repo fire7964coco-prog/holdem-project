@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ja – Pokerhände können unentschieden sein. Ein Pot wird geteilt (ein Chop), wenn zwei oder mehr Spieler im Showdown die identische beste Fünf-Karten-Hand zeigen. Die Farbe entscheidet nie, und ein übrig gebliebener Odd Chip geht an den ersten am Chop beteiligten Spieler links vom Dealer-Button.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-09",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-09",
   keepImagesInBody: true,
   readTime: "12 Min.",
@@ -114,7 +114,7 @@ Board 9♠ 8♦ 7♣ 6♥ 5♠ – eine fertige Straße. Du hältst A♠ K♦; d
 
 ## Wer bekommt den zusätzlichen Chip? Die Odd-Chip-Regel
 
-Manchmal lässt sich ein Pot nicht gleichmäßig teilen – ein Pot aus 101 Chips zwischen zwei Spielern sind 50 pro Person mit einem Chip Rest, und halbe Chips gibt es nicht. Bevor dieser letzte Chip jemandem zugeschoben wird, wechselt ihn der Dealer in die kleinste im Spiel befindliche Chip-Einheit (TDA-Regel 20): Sind 5er die kleinsten Chips am Tisch, wird ein einzelner 25er zu fünf 5ern, die erneut geteilt werden – nur der Chip, der sich dann immer noch nicht teilen lässt, ist der „Odd Chip“. Dann gilt die Standardregel:
+Manchmal lässt sich ein Pot nicht gleichmäßig teilen – ein Pot aus 101 Chips zwischen zwei Spielern sind 50 pro Person mit einem Chip Rest, und halbe Chips gibt es nicht. Bevor dieser letzte Chip jemandem zugeschoben wird, wechselt ihn der Dealer in die kleinste im Spiel befindliche Chip-Einheit (TDA-2024-Regel 20): Sind 5er die kleinsten Chips am Tisch, wird ein einzelner 25er zu fünf 5ern, die erneut geteilt werden – nur der Chip, der sich dann immer noch nicht teilen lässt, ist der „Odd Chip“. Dann gilt die Standardregel:
 
 > ==Der übrig gebliebene Odd Chip geht an den ersten am Chop beteiligten Spieler **links vom Dealer-Button**== (der früheste gewinnende Sitz im Uhrzeigersinn vom Button aus).
 

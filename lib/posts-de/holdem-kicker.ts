@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ein Kicker ist die höchste Beikarte, die nicht zu deiner eigentlichen Hand gehört – er bricht den Gleichstand, wenn zwei Spieler denselben Rang teilen. High Card nutzt 4 Kicker, ein Paar 3, Zwei Paare 1, Drilling 2; Straße, Flush, Full House und Straight Flush haben keinen. Deshalb schlägt AK das AQ, wenn das Board ein Ass pairt.",
   category: "hand-rankings",
   date: "2026-07-08",
-  updated: "2026-09-17",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-17",
   keepImagesInBody: true,
   readTime: "10 Min.",
@@ -119,7 +119,7 @@ Das Board ist ==b:10♠ J♦ Q♣ K♥ A♠== – eine fertige Zehn-bis-Ass-Stra
 - Du hältst ==b:2♣ 3♦==. Deine besten fünf sind die Board-Straße; die 2 und die 3 bringen nichts.
 - Dein Gegner hält ==b:4♥ 5♦==. Dieselbe Geschichte – die Board-Straße ist auch seine besten fünf.
 
-Keiner von euch kann höher als bis zum Ass gehen, also „spielt ihr beide das Board“ und ==g:teilt den Pot== – aber nur, wenn ihr eure Hole Cards aufdeckt; wer sie muckt, bekommt nichts, auch hier nicht (TDA-Regel 19). Eine Straße hat keinen Kicker, also sind diese Hole Cards totes Gewicht. Wenn du hörst „das Board spielt“, ist genau das gemeint – und es ist der eine Fall, in dem eine stark aussehende Hole Card exakt nichts wert ist. (Mehr zum Erkennen solcher Runouts in [das Board lesen](/de/blog/holdem-reading-the-board).)
+Keiner von euch kann höher als bis zum Ass gehen, also „spielt ihr beide das Board“ und ==g:teilt den Pot== – aber nur, wenn ihr eure Hole Cards aufdeckt; wer sie muckt, bekommt nichts, auch hier nicht (TDA-2024-Regel 19). Eine Straße hat keinen Kicker, also sind diese Hole Cards totes Gewicht. Wenn du hörst „das Board spielt“, ist genau das gemeint – und es ist der eine Fall, in dem eine stark aussehende Hole Card exakt nichts wert ist. (Mehr zum Erkennen solcher Runouts in [das Board lesen](/de/blog/holdem-reading-the-board).)
 
 ---
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "All-in gehen heißt, jeden Chip zu setzen, den du hast. Du kannst von jedem Gegner nur so viel gewinnen, wie du selbst gematcht hast (den Main Pot). Zusätzliche Einsätze größerer Stacks bilden einen Side Pot, den nur die Spieler gewinnen können, die diese Einsätze gedeckt haben. Ein All-in unterhalb einer vollen Erhöhung öffnet die Setzrunde für Spieler, die bereits gehandelt haben, NICHT neu.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-21",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-21",
   keepImagesInBody: true,
   readTime: "10 Min.",
@@ -59,7 +59,7 @@ Zwei gültige Wege:
 
 **1. Mündliche Ansage** – Sag klar und deutlich „All-in“, sodass Dealer und Gegner es hören. Das ist die sicherste Methode. Einmal ausgesprochen, bist du gebunden.
 
-**2. Alle Chips nach vorn schieben** – Schieb deinen kompletten Stack in einer einzigen, sauberen Bewegung Richtung Mitte. Chips häppchenweise nachzuschieben kann wie eine String Bet aussehen, also beweg alles auf einmal. ==r:Schieben allein reicht aber nicht immer: Stehst du vor einer Bet und wird jeder einzelne deiner Chips gebraucht, um sie nur zu callen, gilt das wortlose Schieben als Call und nicht als All-in (TDA-Regel 45-A, WSOP Tournament Rule 92).== Sonst **ist** das Schieben deiner letzten Chips – mehrerer, nicht eines einzelnen Überchips – ein All-in-Einsatz (TDA-Regel 45-B).
+**2. Alle Chips nach vorn schieben** – Schieb deinen kompletten Stack in einer einzigen, sauberen Bewegung Richtung Mitte. Chips häppchenweise nachzuschieben kann wie eine String Bet aussehen, also beweg alles auf einmal. ==r:Schieben allein reicht aber nicht immer: Stehst du vor einer Bet und wird jeder einzelne deiner Chips gebraucht, um sie nur zu callen, gilt das wortlose Schieben als Call und nicht als All-in (TDA-2024-Regel 45-A, WSOP Tournament Rule 92).== Sonst **ist** das Schieben deiner letzten Chips – mehrerer, nicht eines einzelnen Überchips – ein All-in-Einsatz (TDA-2024-Regel 45-B).
 
 ![Texas Hold'em All-in-Showdown – ein Board mit K♠ 10♣ 7♦ 4♥ 2♣, die Chips getrennt in beschrifteten Main Pot und Side Pot](/images/holdem-all-in-declare.webp)
 
@@ -131,7 +131,7 @@ Blinds €1/€2. Vier Spieler sehen den Flop.
 Was passiert mit Spieler A und mit Spieler C, der noch nicht gehandelt hat?
 
 - Spieler A hat bereits gehandelt (€10 gesetzt) und steht jetzt nur vor einer unvollständigen Erhöhung. Weil Bs All-in von €14 **weniger als eine volle Erhöhung** ist, wird die Setzrunde für Spieler A NICHT neu geöffnet. ==A kann nur callen oder folden – re-raisen ist nicht erlaubt.==
-- Spieler C hat noch nicht gehandelt – **Spieler C darf erhöhen**. Die Wiedereröffnungs-Grenze gilt für einen Spieler, der noch nicht gehandelt hat, grundsätzlich nicht. Achte aber auf die Höhe: **wenn C erhöht**, ist das Minimum ein **Gesamtbetrag** aus Bs All-in plus der letzten vollen Bet – €14 + €10 = **€24**, nicht die €20, die eine volle Erhöhung über A gewesen wären (WSOP Live Action Rule 176). C darf trotzdem für weniger All-in gehen: das Minimum bindet niemanden, der All-in geht (Live Action Rule 174).
+- Spieler C hat noch nicht gehandelt – **Spieler C darf erhöhen**. Die Wiedereröffnungs-Grenze gilt für einen Spieler, der noch nicht gehandelt hat, grundsätzlich nicht. Achte aber auf die Höhe: **wenn C erhöht**, ist das Minimum ein **Gesamtbetrag** aus Bs All-in plus der letzten vollen Bet – €14 + €10 = **€24**, nicht die €20, die eine volle Erhöhung über A gewesen wären (WSOP Live Action Rule 176). C darf trotzdem für weniger All-in gehen: das Minimum bindet niemanden, der All-in geht (Live Action Rule 175).
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -146,9 +146,9 @@ Warum gibt es diese Regel? Sie schützt Spieler davor, durch Teil-All-ins in imm
 
 ### Fortgeschrittener Fall: Was, wenn mehrere Spieler kurz All-in gehen?
 
-An dieser Variante scheitern selbst Regulars. Mehrere kurze All-ins können sich zu einer vollen Erhöhung **aufsummieren** – und erreichen ihre kombinierten Erhöhungsschritte die Schwelle, wird die Setzrunde für einen Spieler, der bereits gehandelt hat, neu geöffnet. ==r:Geprüft wird das Spieler für Spieler, nicht pauschal für den ganzen Tisch:== Neu geöffnet wird nur für den, der, **wenn die Action zu ihm zurückkommt, vor mindestens einer vollen Erhöhung über dem steht, was er selbst schon gelegt hat** (==TDA-Regel 47==).
+An dieser Variante scheitern selbst Regulars. Mehrere kurze All-ins können sich zu einer vollen Erhöhung **aufsummieren** – und erreichen ihre kombinierten Erhöhungsschritte die Schwelle, wird die Setzrunde für einen Spieler, der bereits gehandelt hat, neu geöffnet. ==r:Geprüft wird das Spieler für Spieler, nicht pauschal für den ganzen Tisch:== Neu geöffnet wird nur für den, der, **wenn die Action zu ihm zurückkommt, vor mindestens einer vollen Erhöhung über dem steht, was er selbst schon gelegt hat** (==TDA-2024-Regel 47==).
 
-Das ist die offizielle TDA-Regel zum „Re-opening the Bet“, und die meisten Kartenräume folgen ihr.
+Das ist die offizielle TDA-2024-Regel zum „Re-opening the Bet“, und die meisten Kartenräume folgen ihr.
 
 **Beispiel (Blinds €1/€2, am Flop):**
 
@@ -182,7 +182,7 @@ Die Mindesterhöhung bemisst sich immer an der *letzten vollen gültigen Bet ode
 | Einzelnes All-in ≥ volle Erhöhung | ✅ Ja – alle dürfen re-raisen |
 | Mehrere kurze All-ins, kombiniert < volle Erhöhung | ❌ Nein |
 | Mehrere kurze All-ins, kombiniert ≥ volle Erhöhung | ✅ Ja – für jeden Spieler, der jetzt vor mindestens einer vollen Erhöhung über seiner eigenen letzten Aktion steht |
-| Spieler, der noch NICHT gehandelt hat | ✅ Die Wiedereröffnungs-Grenze gilt für ihn nie – er darf erhöhen, soweit seine eigenen Chips es zulassen (und im Limit-Spiel das Raise-Limit des Hauses – TDA-Regel 48) |
+| Spieler, der noch NICHT gehandelt hat | ✅ Die Wiedereröffnungs-Grenze gilt für ihn nie – er darf erhöhen, soweit seine eigenen Chips es zulassen (und im Limit-Spiel das Raise-Limit des Hauses – TDA-2024-Regel 48) |
 
 </div>
 
@@ -217,7 +217,7 @@ Ein Teil-All-in gibt Spielern, die in dieser Runde **bereits gehandelt haben**, 
 Table Stakes. Was auf dem Tisch liegt, ist alles, was du setzen kannst. Bist du für €80 All-in und der Pot beträgt €400, kannst du von jedem Caller trotzdem nur €80 gewinnen.
 
 ### Fehler 4: Die Hand zu schnell mucken
-Du bist für den Main Pot All-in. Zwei andere Spieler kämpfen um den Side Pot. Im Turnier erledigt sich das von selbst – sobald deren Setzrunde endet, verlangt ==TDA-Regel 16==, dass jede Hand getablet wird, deine eingeschlossen. Im Cashgame nicht: Ich habe einmal gesehen, wie ein Shortstack seine Karten wegwarf, sobald der Showdown um den Side Pot gegen ihn lief – er hatte vergessen, dass er in diesem Pot gar nicht drin war und seine Hand für den Main Pot noch live war. Sobald der Dealer sie in den Muck gezogen hatte, waren sie nicht mehr identifizierbar – tot, und der Main Pot ging an den anderen. (Eine Hand, die sich noch eindeutig identifizieren lässt, kann nach Ermessen des Floors zurückgeholt werden – verlass dich aber nie darauf.) Muck nicht – deine Hand ist für den Main Pot noch live. ==Warte immer, bis der Dealer jeden Pot aufgelöst hat, bevor du deine Karten anfasst.==
+Du bist für den Main Pot All-in. Zwei andere Spieler kämpfen um den Side Pot. Im Turnier erledigt sich das von selbst – sobald deren Setzrunde endet, verlangt ==TDA-2024-Regel 16==, dass jede Hand getablet wird, deine eingeschlossen. Im Cashgame nicht: Ich habe einmal gesehen, wie ein Shortstack seine Karten wegwarf, sobald der Showdown um den Side Pot gegen ihn lief – er hatte vergessen, dass er in diesem Pot gar nicht drin war und seine Hand für den Main Pot noch live war. Sobald der Dealer sie in den Muck gezogen hatte, waren sie nicht mehr identifizierbar – tot, und der Main Pot ging an den anderen. (Eine Hand, die sich noch eindeutig identifizieren lässt, kann nach Ermessen des Floors zurückgeholt werden – verlass dich aber nie darauf.) Muck nicht – deine Hand ist für den Main Pot noch live. ==Warte immer, bis der Dealer jeden Pot aufgelöst hat, bevor du deine Karten anfasst.==
 
 ### Fehler 5: Aus Frust All-in gehen
 Das All-in ist der mächtigste Zug am Tisch. Es zwingt Gegner in Alles-oder-nichts-Entscheidungen. Diese Macht verpufft, wenn du wahllos alles reinschiebst. Setz es im richtigen Moment ein – als Shortstack-Druckmittel, mit Value-Händen, die gecallt werden sollen, oder als Bluff mit echter Fold Equity.
@@ -253,11 +253,11 @@ A. Table Stakes bedeutet: Du darfst nur Chips setzen, die zu Beginn der Hand vor
 
 **Q. Wenn zwei Spieler für unterschiedliche Beträge All-in gehen – wer zeigt zuerst?**
 
-A. Das letzte All-in, das eine Bet oder ein Raise war, gilt als letzte aggressive Aktion und zeigt zuerst. Ein All-in, das für weniger nur callt, ist nicht aggressiv – im Cashgame zeigt dann der ursprüngliche Setzer zuerst, und die WSOP Live Action Rules gehen anschließend nach Pots: Wer im Side Pot ist, zeigt vor dem Spieler, der nur im Main Pot All-in ist (Rule 149). ==r:Im Turnier gibt es hier überhaupt keine Reihenfolge des Zeigens== – sobald die All-in-Setzrunde abgeschlossen ist, werden alle beteiligten Hände gleichzeitig aufgedeckt (TDA-Regel 16); die Regel, die eine Reihenfolge festlegt, TDA-Regel 17, betrifft ausschließlich Showdowns ohne All-in. In Cash Games darf der Caller bei einem gecallten All-in ohne weitere Action mucken, wenn er nach dem Aufdecken der All-in-Hand verloren hat (in Turnieren bleiben alle beteiligten Hände offen).
+A. Das letzte All-in, das eine Bet oder ein Raise war, gilt als letzte aggressive Aktion und zeigt zuerst. Ein All-in, das für weniger nur callt, ist nicht aggressiv – im Cashgame zeigt dann der ursprüngliche Setzer zuerst, und die WSOP Live Action Rules gehen anschließend nach Pots: Wer im Side Pot ist, zeigt vor dem Spieler, der nur im Main Pot All-in ist (Rule 149). ==r:Im Turnier gibt es hier überhaupt keine Reihenfolge des Zeigens== – sobald die All-in-Setzrunde abgeschlossen ist, werden alle beteiligten Hände gleichzeitig aufgedeckt (TDA-2024-Regel 16); die Regel, die eine Reihenfolge festlegt, TDA-2024-Regel 17, betrifft ausschließlich Showdowns ohne All-in. In Cash Games darf der Caller bei einem gecallten All-in ohne weitere Action mucken, wenn er nach dem Aufdecken der All-in-Hand verloren hat (in Turnieren bleiben alle beteiligten Hände offen).
 
 **Q. Unterscheiden sich die All-in-Regeln zwischen Turnier und Cash Game?**
 
-A. Die Kernregeln sind identisch, aber es gibt zwei praktische Unterschiede. Erstens: In Turnieren werden alle am All-in beteiligten Hände offen hingelegt, sobald keine Einsätze mehr möglich sind (TDA-Regel 16) – mucken vor dem Showdown ist nicht erlaubt. In Cash Games gilt die übliche Showdown-Reihenfolge – außer es ist ein No-Limit-Spiel und das Setzen endete vor dem River, dann dreht der All-in-Spieler zuerst um (Live Action Rule 149) –, und Spieler dürfen mucken. Zweitens: Run it twice ist in Cash Games verbreitet (wenn alle noch im Pot verbliebenen Spieler zustimmen), in Turnieren aber grundsätzlich nicht gestattet.
+A. Die Kernregeln sind identisch, aber es gibt zwei praktische Unterschiede. Erstens: In Turnieren werden alle am All-in beteiligten Hände offen hingelegt, sobald keine Einsätze mehr möglich sind (TDA-2024-Regel 16) – mucken vor dem Showdown ist nicht erlaubt. In Cash Games gilt die übliche Showdown-Reihenfolge – außer es ist ein No-Limit-Spiel und das Setzen endete vor dem River, dann dreht der All-in-Spieler zuerst um (Live Action Rule 149) –, und Spieler dürfen mucken. Zweitens: Run it twice ist in Cash Games verbreitet (wenn alle noch im Pot verbliebenen Spieler zustimmen), in Turnieren aber grundsätzlich nicht gestattet.
 
 ---
 

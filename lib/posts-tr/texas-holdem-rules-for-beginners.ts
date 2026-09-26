@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Texas Hold'em'de her oyuncu 2 kapalı kart alır, 5 ortak kart açılır ve dört bahis turunun sonunda en iyi 5 kartlık poker eli kazanır.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-19",
+  updated: "2026-09-26",
   masterUpdated: "2026-07-12",
   keepImagesInBody: true,
   readTime: "14 dk",
@@ -415,7 +415,7 @@ En basit hali: her oyuncu 2 kapalı kart alır. Beş paylaşımlı kart üç aş
 
 ### Texas Hold'em kuralları — blindler ne demek?
 
-Dağıtıcı butonunun solundaki iki oyuncu, kartlar dağıtılmadan önce zorunlu bahisleri koymak zorundadır. İlk oyuncu small blind'ı, ikincisi big blind'ı (genelde iki katı) koyar. Bu bahisler potta her zaman uğruna savaşılacak para olmasını garanti eder. Diğer her oyuncu, elde kalmak için en azından big blind'ı görmek zorundadır.
+Dağıtıcı butonunun solundaki iki oyuncu, kartlar dağıtılmadan önce zorunlu bahisleri koymak zorundadır. İlk oyuncu small blind'ı, ikincisi big blind'ı (genelde iki katı) koyar. Bu bahisler potta her zaman uğruna savaşılacak para olmasını garanti eder. Diğer her oyuncu, elde kalmak için en azından big blind'ı görmek zorundadır (ya da tüm chip'i buysa daha az bir miktarla all-in olabilir).
 
 ### Texas Hold'em kurallarının hızlı sürümü nedir?
 

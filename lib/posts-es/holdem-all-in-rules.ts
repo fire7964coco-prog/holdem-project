@@ -131,7 +131,7 @@ Ciegas $1/$2. Cuatro jugadores ven el flop.
 ¿Qué pasa con el Jugador A y con el Jugador C, que aún no ha actuado?
 
 - El Jugador A ya actuó (apostó $10) y ahora se enfrenta solo a una subida incompleta. Como el all-in de B por $14 es **menos que una subida completa**, la acción NO se reabre para el Jugador A. ==A solo puede pagar o retirarse — no puede resubir.==
-- El Jugador C todavía no ha actuado — **el Jugador C sí puede subir**. El límite de reapertura nunca afecta a quien aún no ha actuado. Ojo al tamaño, eso sí: **si C sube**, el mínimo es un **total** igual al all-in de B más la última apuesta completa — $14 + $10 = **$24**, no los $20 que habrían sido una subida completa sobre A (regla 176 de las WSOP Live Action Rules). C igual puede irse all-in por menos: el mínimo nunca obliga a quien va all-in (regla 174 de las Live Action Rules).
+- El Jugador C todavía no ha actuado — **el Jugador C sí puede subir**. El límite de reapertura nunca afecta a quien aún no ha actuado. Ojo al tamaño, eso sí: **si C sube**, el mínimo es un **total** igual al all-in de B más la última apuesta completa — $14 + $10 = **$24**, no los $20 que habrían sido una subida completa sobre A (regla 176 de las WSOP Live Action Rules). C igual puede irse all-in por menos: el mínimo nunca obliga a quien va all-in (regla 175 de las Live Action Rules).
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 

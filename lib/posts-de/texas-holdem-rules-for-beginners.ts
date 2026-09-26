@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Beim Texas Hold'em bekommt jeder Spieler 2 Hole Cards, dazu kommen 5 Gemeinschaftskarten – nach vier Setzrunden gewinnt die beste Fünf-Karten-Hand.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-19",
+  updated: "2026-09-26",
   // 🪶 「masterUpdated 07-12 동결」 지시는 해소됐다(queue Q5-a 실측 2026-09-13 · 값별 전건 추적).
   //    ddf265db(07-12)=07-12 · 125c83f5(09-09)=07-12(동결 유지) · 01c30673(09-10)=09-09 ← 실제로 푼 커밋
   //    · 522b57f8(09-11)=09-11 · queue Q5-a(09-13)=09-13.
@@ -474,7 +474,7 @@ A. In einem Satz: Aus deinen 2 verdeckten Karten und den 5 offenen in der Tischm
 
 **Q. Was bedeuten die Blinds – einfach erklärt?**
 
-A. Die zwei Spieler links vom Dealer-Button müssen Pflichteinsätze setzen, bevor Karten gegeben werden. Der erste setzt den Small Blind, der zweite den Big Blind (meist das Doppelte). Diese Einsätze garantieren, dass immer Geld im Pot liegt, um das es sich zu kämpfen lohnt. Jeder andere Spieler muss mindestens den Big Blind mitgehen, um in der Hand zu bleiben.
+A. Die zwei Spieler links vom Dealer-Button müssen Pflichteinsätze setzen, bevor Karten gegeben werden. Der erste setzt den Small Blind, der zweite den Big Blind (meist das Doppelte). Diese Einsätze garantieren, dass immer Geld im Pot liegt, um das es sich zu kämpfen lohnt. Jeder andere Spieler muss mindestens den Big Blind mitgehen, um in der Hand zu bleiben (oder für weniger all-in gehen, wenn das sein gesamter Stack ist).
 
 **Q. Kann man Texas Hold'em zu zweit spielen?**
 

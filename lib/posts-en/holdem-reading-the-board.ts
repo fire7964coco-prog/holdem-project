@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In Texas Hold'em you always play the best 5-card hand from 7 (2 hole cards + 5 community cards) — using both hole cards, one, or none at all (playing the board). Scan all 7 cards in a fixed order: flush → straight → paired ranks → high card.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-09-13",
+  updated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🃏",
@@ -171,7 +171,7 @@ Notice the last row: ==even with nothing, the board's pair is part of your hand=
 You can HOLD both — you can never PLAY both. ==A poker hand is exactly 5 cards, so overlapping combinations don't stack; you simply play the stronger one.==
 
 - You hold A♠ K♠ on Q♠ 7♠ 2♠ K♦ 3♣. You've made a pair of kings AND five spades. Your hand is the ==nut flush, A♠ K♠ Q♠ 7♠ 2♠== — the pair of kings simply never comes up.
-- You hold 8♥ 8♦ on 7♣ 6♦ 5♠ 4♥ K♦. Pair of eights AND 8-7-6-5-4. Your hand is the ==eight-high straight== — not "a pair with a straight." At showdown you don't have to call it: cards speak, and the dealer reads the hand (TDA Rule 12). What you do have to do is turn both cards face up — cards only speak for a properly tabled hand (Rule 13-A) — and if the dealer misreads it, say so before the pot is pushed.
+- You hold 8♥ 8♦ on 7♣ 6♦ 5♠ 4♥ K♦. Pair of eights AND 8-7-6-5-4. Your hand is the ==eight-high straight== — not "a pair with a straight." At showdown you don't have to call it: cards speak, and the dealer reads the hand (TDA 2024 Rule 12). What you do have to do is turn both cards face up — cards only speak for a properly tabled hand (TDA 2024 Rule 13-A). And if the dealer misreads it, speak up at once: a reading can be disputed until the next hand begins (TDA 2024 Rule 22), but it is far easier to fix before the pot is pushed.
 
 Same logic answers "can you have three pairs?" — you might hold three paired ranks across 7 cards, but only the best two fit into 5 cards (covered in the [hand rankings guide](/en/blog/holdem-hand-rankings)).
 
@@ -204,7 +204,7 @@ Top pair is a genuinely strong hand | Top pair is fragile — many rivers beat i
 
 ![Dry board vs wet board in Texas Hold'em — K72 rainbow (dry) vs JT8 two-tone (wet) with flush and straight draw arrows](/images/holdem-reading-dry-vs-wet-board.webp)
 
-On J♥ 10♥ 8♣, any heart, any 9, any 7, and any Q changes who's winning. On K♠ 7♦ 2♣, almost nothing does. ==Same pair, completely different pressure== — that's why the scan-order habit (flush → straight → pairs) doubles as your danger radar.
+On J♥ 10♥ 8♣, any heart, any 9, any 7, and any Q can change who's winning. On K♠ 7♦ 2♣, almost nothing does. ==Same pair, completely different pressure== — that's why the scan-order habit (flush → straight → pairs) doubles as your danger radar.
 
 ---
 
@@ -224,7 +224,7 @@ Beginners fold to "he must have a club" on a three-club board — but those club
 
 ### Mistake 4 — Ignoring the boat on a paired board
 
-You river a flush, the board shows two queens, and you never ask the question. Any Q-x has trips; any pocket pair matching the board has a full house — and ==full house beats flush==. Paired board + big bet = check for boats before you celebrate.
+You river a flush, the board shows two queens, and you never ask the question. Any hand holding one queen has at least trips; a pocket pair matching another board card makes a full house, and pocket queens make quads — and ==full house beats flush==. Paired board + big bet = check for boats before you celebrate.
 
 ---
 
@@ -245,7 +245,7 @@ A. No. You make the best five-card hand from any combination of your two hole ca
 
 **Q. What does "playing the board" mean in Texas Hold'em?**
 
-A. It means the 5 community cards are already your best possible 5-card hand — neither hole card improves on them. Since the board is shared, every player can claim that same hand, so playing the board usually leads to a split pot unless an opponent's hole cards improve on the board. One formality still costs people pots: even when you play the board you **must table both hole cards** to claim a share (==WSOP tournament Rule 75==, TDA Rule 19) — push them into the muck unseen and you get nothing.
+A. It means the 5 community cards are already your best possible 5-card hand — neither hole card improves on them. Since the board is shared, every player can claim that same hand, so playing the board usually leads to a split pot unless an opponent's hole cards improve on the board. One formality still costs people pots: even when you play the board you **must table both hole cards** to claim a share (==WSOP tournament Rule 75==, TDA 2024 Rule 19) — push them into the muck unseen and you get nothing.
 
 **Q. Can the board be the best hand for everyone?**
 
@@ -277,7 +277,7 @@ A. When the five community cards already form a straight, everyone has at least 
 
 **Q. Does a pair on the board count as part of your hand?**
 
-A. Yes — community cards belong to every player's hand. A pair on the board counts toward your best 5 even if your hole cards miss completely. It also means opponents can hold trips or full houses, so re-evaluate one-pair hands on any paired board.
+A. Yes — community cards belong to every player's hand. If your hole cards miss completely, the board's pair is still your pair. (It isn't locked in, though: if your hole cards make a straight or a flush, that bigger hand plays instead.) It also means opponents can hold trips or full houses, so re-evaluate one-pair hands on any paired board.
 
 ---
 

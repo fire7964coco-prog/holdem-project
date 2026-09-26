@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Di Texas Hold'em, setiap pemain menerima 2 hole cards, ada 5 kartu bersama di tengah meja, dan tangan poker 5 kartu terbaik menang setelah empat ronde taruhan.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-24",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-13",
   keepImagesInBody: true,
   readTime: "14 menit",
@@ -424,7 +424,7 @@ A. Versi paling sederhana: setiap pemain mendapat 2 kartu pribadi. Lima kartu be
 
 **Q. Aturan Texas Hold'em untuk pemula total — apa arti blind?**
 
-A. Dua pemain di kiri tombol dealer wajib memasang taruhan sebelum kartu dibagikan. Pemain pertama memasang small blind, pemain kedua memasang big blind (biasanya dua kali lipatnya). Taruhan ini menjamin selalu ada uang di pot yang diperebutkan. Pemain lain minimal harus menyamai big blind untuk tetap ikut di hand itu.
+A. Dua pemain di kiri tombol dealer wajib memasang taruhan sebelum kartu dibagikan. Pemain pertama memasang small blind, pemain kedua memasang big blind (biasanya dua kali lipatnya). Taruhan ini menjamin selalu ada uang di pot yang diperebutkan. Pemain lain minimal harus menyamai big blind untuk tetap ikut di hand itu (atau all-in dengan jumlah lebih kecil, kalau itu seluruh chip yang dimilikinya).
 
 **Q. Apa versi cepat aturan Texas Hold'em?**
 
