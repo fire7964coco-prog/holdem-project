@@ -1,3 +1,10 @@
+## 2026-09-26 (13) — 🇲🇾 ms 신규 번역 5레인 준비
+
+- 사장님 지시: ms를 별도 레인 창에서 · 35편 → **대회 가이드 5 제외 30편** · 클러스터별 5레인 동시 · Opus 5.5 중심 · Fable 최소 · 검수 폴더 = GPT 아스트라 · 키워드 MCP 2종 활용 · 고품질 프로세스.
+- `cd4e5eaa`: 정본 `docs/ms-translation-lanes.md`(범위·공통 고정문 21편 다수결 실측·모델 배치·A/B/C·헤드 절차·아스트라 동결) · 진행 파일 5 · `lib/posts-ms/index.ts` 레인 칸(병합 시뮬레이션 충돌 0) · `lane-sync` ms 5레인 슬러그 단위 소유(셀프테스트 37/37) · pre-commit 훅 `ms-*`.
+- 워크트리 5개 + node_modules junction · 레인별 비추적 `HARDEN.md` · `.claude/settings.local.json` 복사 · 라쿠 MCP(경로 스코프)를 5경로에 등록(DataForSEO는 `.mcp.json`+환경변수라 자동) · 상태표시줄 MAP에 🇲🇾 5줄 · 기존 레인 3개 lane:sync.
+- 발견: 기존 ms 21편 고정문이 이미 갈려 있다(readnext «Baca seterusnya» 16 / «Teruskan membaca» 5 · FAQ H2 «Soalan Lazim» 8 / «Soalan lazim» 9) → 정본은 다수결로 박고 기존 편 정리는 링크 복원 queue 회차에 얹었다.
+
 ## 2026-09-26 (12) — GTO 예제 13편 전략 확정 · 동크벳 «뜻» 보강 · 블라인드전 헤드텀 반납
 
 - 사장님 논의(«예제는 너무 니치한데 검색할까 · 카니발은?») → GSC 45일 실측: 13편 합계 노출 약 374 · 클릭 6(`donk-bet-strategy` 218 · monotone 58 · broadway 30 · 나머지 각 2~10). 쿼리→페이지 대조로 카니발 없음(c벳·체크레이즈·3벳·홀덤 spr·홀덤 gto 표 전부 단일 페이지).
