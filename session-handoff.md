@@ -25,6 +25,11 @@
 - 워크트리 확인: `git worktree list` — calc-ko·ja·queue·zh·zh-hant 모두 09-24에 main `73d0818d`로 ff 동기화(calc-ko 초안 diff 보존 확인). **calc-ko의 미커밋 초안을 `git add -A`·강제동기화·reset으로 날리지 마라.**
 - 장기 미결(자동 착수 대상 아님): 확률 묶음 잔여(answer-echo LABELS de·es·id·pt 미등록 · ja/zh 기존 도입문 과장 단정 등 = `docs/harden-brief/probability-closeout.md` §7-D «남긴 것») · re-entry zh/zh-hant 용어 판정 · solver-client5 SEO 표현 · es LATAM · 우편함(09-26 · MA-172·179·182·183 = MB-088로 회신·등재): 수신 11건은 `docs/en-first-queue.md` §2-L로 등재·MB-083 회신. **L-1 종결**(09-26 · es·zh·zh-hant 66자리 · MB-085~087) → ✅ **L-2 EN-먼저 종결**(09-26 · a 용어 `18b8eaf9` → b GTO `1bbe1bfe` → c 전략 `a879e603` → d 확률 `7d2a0822` → e 족보·규칙 `10e5997b` → f 계산기 `4acd45c5` → **g 로케일 전파 `52093176`(MB-096 · 372파일)** · intake `docs/harden-brief/l2-en-first-intake-2026-09-26.md` §2). ✅ **L-2h**(09-26 · `95fef741` · MB-097): MA-192·194·196 요청 4건 이행 + MA-184 ACK. ▶ **다음 = 검수장 MA 수신 대기** — L-2f(MB-094)·L-2g(MB-096)·L-2h(MB-097) 대조 결과 → 받은 MA는 다음 세션 안에 회신+등재. L-2h 남긴 것 = 작업판 L-2h 절 🪶(card-counting «2026 TDA» 판 표기 · 판정 선행). **L-2g가 남긴 것 9항 = 작업판 `l2-en-open-rows-2026-09-26.md` L-2g 절 🪶**(EN-먼저 후보 hand-rankings FAQ 풀하우스 = MB-096 요청 1 · 판정 받기 전 착수 금지). 그 밖엔 사장님 09-24 우선순위(언어별 번역작업 · 신규 포스팅) 지시 대기. 계산기 L-3은 09-25 종결(`104fac47`·`0932f093` · MB-084). 보류 = EN-먼저 전부(검수장 EN 재검증 최종 MA와 합침) · cooler 인접 2건(검수장 회신 대기 · MB-083 요청 1). 🔴 세션 시작 시 우편함 점검(CLAUDE.md 세션 시작 4). 시한은 `docs/update-calendar.md`.
 
+## C. GTO 예제 전략 (09-26 확정 · `settled-decisions` §1-E)
+
+- 13편 = 솔버 증거 자료. **⑭ 이후 새 글 금지 → 필라 흡수.** 동크벳 «뜻» 보강 · ⑪⑫ 헤드텀 반납 배포 완료(WORKLOG 09-26 (12)).
+- ▶ 미결(사장님 판단): ① 포지션 필라 `position-is-everything-in-holdem` 제목이 `holdem-button-position`과 거의 같고 «홀덤 포지션»(390)이 없다(26위) — 제목 정리할지 ② «리드벳»(140) — 동크벳 글 흡수로 충분한지, 효과는 10/21 전후 GSC로 판독.
+
 ## 참고 경계
 
 - 새 세션이라는 이유로 완료 글 전수 재검수·새 레인 생성·ID/DE 자동 착수 금지(GPT 체크포인트 §5와 같은 규율).

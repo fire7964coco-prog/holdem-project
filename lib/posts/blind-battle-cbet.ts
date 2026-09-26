@@ -63,7 +63,7 @@ import type { Post } from "../posts";
 export const POST: Post = {
   slug: "blind-battle-cbet",
   title: "블라인드전 C벳 — SB가 67.4%를 먼저 치는 이유",
-  seoTitle: "포지션 없이 67% 벳 — 홀덤 포지션과 GTO 솔버",
+  seoTitle: "포지션 없이 67% 벳 — SB 대 BB 블라인드전 GTO",
   desc: "SB가 오픈하고 BB가 콜한 KT6 플랍에서 SB는 67.4%를 먼저 칩니다. 포지션이 없는데도 EQR이 103.1%가 되는 구조를 봅니다.",
   tldr: "SB가 3bb 오픈하고 BB가 콜한 K♥T♦6♠ 플랍에서 SB의 첫 액션은 벳 67.4% · 체크 32.6%다. 싱글 레이즈 팟 일곱 편(①~⑦)에서 OOP의 벳이 0.1~23.7%에 그치던 것과 정반대인데, 달라진 것은 «OOP가 누구냐»와 보드 둘 다다. 여기서 OOP는 콜러가 아니라 오픈 레이저이고, 그 레인지 우위가 포지션 열세를 간신히 넘어서 EQR 103.1%를 만든다.",
   category: "전략",
@@ -77,7 +77,7 @@ export const POST: Post = {
   // 태그는 2026-08-08 실측 기준. 「홀덤 sb vs bb」·「블라인드 배틀」은 검색량 0이라 뺐다.
   tags: [
     "홀덤 GTO",
-    "홀덤 포지션",
+    "블라인드전",
     "GTO 솔버",
     "홀덤 c벳",
     "홀덤 레인지",

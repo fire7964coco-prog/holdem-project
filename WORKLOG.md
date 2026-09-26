@@ -1,3 +1,12 @@
+## 2026-09-26 (12) — GTO 예제 13편 전략 확정 · 동크벳 «뜻» 보강 · 블라인드전 헤드텀 반납
+
+- 사장님 논의(«예제는 너무 니치한데 검색할까 · 카니발은?») → GSC 45일 실측: 13편 합계 노출 약 374 · 클릭 6(`donk-bet-strategy` 218 · monotone 58 · broadway 30 · 나머지 각 2~10). 쿼리→페이지 대조로 카니발 없음(c벳·체크레이즈·3벳·홀덤 spr·홀덤 gto 표 전부 단일 페이지).
+- 결재 = `settled-decisions` **§1-E**: 13편은 솔버 증거 자료(지표 = solver_open·내부 링크) · 새 스팟은 필라에 흡수 · 새 글은 주인 없는 검색어 실측 또는 앱 새 예제 짝일 때만 · noindex 안 함 · 수동 색인 요청 안 씀. spec §0에 포인터.
+- `donk-bet-strategy`: seoTitle에 뜻·리드벳 보강(훅 유지) · desc 93자 · 바로 답 첫 문장 정의 · H2 «동크벳은 무슨 뜻이고, 왜 안 좋다고 하나요?» 신설 · FAQ 1 → «리드벳과 동크벳은 다른 말인가요?». 수치·전략 서술 불변.
+- ⑪ `blind-battle-cbet` seoTitle·태그에서 «홀덤 포지션» 반납 · ⑫ `blind-battle-connected-board` «홀덤 포지션별 핸드레인지»(/hand-chart가 받음) 반납.
+- 게이트: audit:hard 3편 🔴 0(⑫ H1 1건은 기준선에도 있는 오탐 — L265 「A♣7♣·K♣7♣」 두 콤보 나열을 보드로 읽음) · build 73+577.
+- 🟡 발견(미처리 · 사장님 판단 대기): 포지션 필라 `position-is-everything-in-holdem` seoTitle이 `holdem-button-position`과 거의 같다(«버튼에서 약패도 들어가는 이유 — …»). 필라 제목에 «홀덤 포지션»(390)이 없고 GSC 26위.
+
 ## 2026-09-26 (11) — L-2h 검수장 대조 요청 4건 이행 (MA-192·194·196 회신 · MA-184 ACK · MB-097)
 
 - `95fef741` 34파일. ① MA-196 요청 1 hand-rankings «Board trips» WRONG(풀·쿼즈만 키커를 넘는다) → «a straight or better»(EN+12로케일). 검수장 제안 열거(straight·flush·FH·quads)는 SF·로열이 빠져 딜러 렌즈 지적으로 «스트레이트 이상»으로 바꿈(J♣J♠J♥10♥9♥ + Q♥8♥ = SF 검산). ② 요청 2 showdown «TDA illustration to Rule 16» → 2024(EN·de·es·id·pt · 원문 `docs/sources/tda-2024-rules-v1.txt` Illustration Addendum 대조). ③ MA-194 card-counting 노출 문장 «shown voluntarily» + 폴드 때 보여 준 손 제거(EN+7). ④ MA-192 strategy «never open-limp» → normal-depth 현금 기본값 + SB 컴플리트·숏스택 BTN 한 문장 · 이미지 title «only»→«main» · ja·zh-hant 바로 답 정합(EN+7).
