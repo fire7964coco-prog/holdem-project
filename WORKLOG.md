@@ -5,7 +5,7 @@
 - `donk-bet-strategy`: seoTitle에 뜻·리드벳 보강(훅 유지) · desc 93자 · 바로 답 첫 문장 정의 · H2 «동크벳은 무슨 뜻이고, 왜 안 좋다고 하나요?» 신설 · FAQ 1 → «리드벳과 동크벳은 다른 말인가요?». 수치·전략 서술 불변.
 - ⑪ `blind-battle-cbet` seoTitle·태그에서 «홀덤 포지션» 반납 · ⑫ `blind-battle-connected-board` «홀덤 포지션별 핸드레인지»(/hand-chart가 받음) 반납.
 - 게이트: audit:hard 3편 🔴 0(⑫ H1 1건은 기준선에도 있는 오탐 — L265 「A♣7♣·K♣7♣」 두 콤보 나열을 보드로 읽음) · build 73+577.
-- 🟡 발견(미처리 · 사장님 판단 대기): 포지션 필라 `position-is-everything-in-holdem` seoTitle이 `holdem-button-position`과 거의 같다(«버튼에서 약패도 들어가는 이유 — …»). 필라 제목에 «홀덤 포지션»(390)이 없고 GSC 26위.
+- 발견 → 사장님 «진행해»: 포지션 필라 `position-is-everything-in-holdem`(LEGACY) seoTitle이 `holdem-button-position`과 거의 같았다(«버튼에서 약패도 들어가는 이유 — …»). 필라 45일 294노출·CTR 3.4%·11.0위인데 «홀덤 포지션»은 26위. → seoTitle «같은 패, 자리마다 다른 답 — 홀덤 포지션과 오픈 레인지»(32자 · 새 훅 + 헤드텀 + 이 글이 받는 오픈레인지 쿼리) · desc 첫 문장을 본문 L184 축어(KTo UTG 폴드·BTN 레이즈)로 · 태그 «홀덤 포지션» · updated 09-26. 버튼 글 제목은 불변(버튼포지션 5.7위). 판독 = 10/21 전후 GSC(필라 «홀덤 포지션» 순위 · CTR 3.4% 유지 여부).
 
 ## 2026-09-26 (11) — L-2h 검수장 대조 요청 4건 이행 (MA-192·194·196 회신 · MA-184 ACK · MB-097)
 

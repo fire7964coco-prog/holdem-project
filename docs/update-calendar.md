@@ -43,6 +43,11 @@
 - 볼륨(DFS id 09-24): urutan kartu poker tertinggi 1,600(8월 2,900) · tingkatan kartu poker 390 · rumus poker 390. 근거 = `docs/locale-intentional-diffs.md` 2026-09-24 행.
 - 재기 = `npm run gsc:page -- id/blog/<slug> --days 28`. 좋아졌으면 같은 방식(검색어 표현 일치)을 다른 로케일에 쓸지 판단, 아니면 권위 문제로 닫는다.
 
+### 10/21경 — ko 동크벳 «뜻» 보강 · 포지션 필라 제목 (배포 2026-09-26 · `settled-decisions` §1-E)
+
+- 기준선(GSC 45일 08-09~09-23): `donk-bet-strategy` 218노출/2클릭 r8.9 · 「동크벳」 88 r9.3 · 「동크벳 뜻」 31 r10.3 · 「리드벳」 0. `position-is-everything-in-holdem` 294노출/10클릭 CTR 3.4% r11.0 · 「홀덤 포지션」 r26.
+- 재기 = `npm run gsc:page -- blog/<slug> --days 28` · `node scripts/gsc-query-pages.mjs "홀덤 포지션" --days 28`. 🔴 필라 CTR이 3.4%에서 떨어졌으면 새 훅 탓인지 먼저 본다(옛 훅은 버튼 글과 중복이라 되돌리지 않는다). 리드벳 노출이 0이면 별도 글 여부를 그때 판단.
+
 ### 10/7경 — AI 유입 솔버 랜딩 `solver_open` 2주 판독 (계측 배포 2026-09-23)
 - **배경**: 솔버 앱은 같은 루트 도메인이라 GA4 outbound click이 안 남는다 → /en/solver AI 유입 «절반 10초 이탈»에 «앱으로 넘어간 사람»이 섞여 판정 불가였다. 09-23 `app/layout.tsx`에 `solver_open` 이벤트를 달았다.
 - **볼 것**: GA4 eventName=`solver_open` × landingPage × sessionSource(chatgpt) × deviceCategory. 비율 = solver_open 세션 ÷ 랜딩 세션.
