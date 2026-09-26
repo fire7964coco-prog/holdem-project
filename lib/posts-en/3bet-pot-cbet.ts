@@ -88,11 +88,11 @@ export const POST: Post = {
   title: "Nobody Checks This Flop",
   seoTitle: "Nobody Checks This Flop — What Poker SPR 4 Really Does",
   // 145자 (디코딩 기준 · EN 하드리밋 160)
-  desc: "In this 3-bet pot the solver never checks — all 63 combos bet. Not because the range is strong, but because the caller has no pocket aces or kings left.",
-  tldr: "On A♦K♠2♥ in a 3-bet pot the big blind bets 100% of the time. Checking is 0.0% — not one combo out of 63. In the seven earlier spots its default was to check, between 76.2% and 99.9% of the time. What flipped is mainly the preflop action: the big blind three-bet instead of calling, so it owns the top of this flop while the button four-bet its pocket aces and kings away. And with an SPR of 4.0 there is no later street to defer to.",
+  desc: "In this 3-bet pot every one of the 63 combos bets. Not because the range is strong, but because the caller has no pocket aces or kings left.",
+  tldr: "On A♦K♠2♥ in a 3-bet pot the big blind bets its whole range: checking rounds to 0.0%, and no combo out of 63 checks even 0.1% of the time. In the seven earlier spots its default was to check, between 76.2% and 99.9% of the time. What flipped is mainly the preflop action: the big blind three-bet instead of calling, so it owns the top of this flop while the button four-bet its pocket aces and kings away. And with an SPR of 4.0 there is no later street to defer to.",
   category: "strategy",
   date: "2026-08-20",
-  updated: "2026-09-02",
+  updated: "2026-09-26",
   readTime: "12 min",
   emoji: "🔥",
   image: "/images/gto-3bp-ace-king-oop-en.webp",
@@ -109,7 +109,7 @@ export const POST: Post = {
   content: `
 In the seven spots before this one, the big blind's answer was almost always to check. Even on the [9-8-7 flop](/en/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-en.webp"), where leading mattered most, it only bet 23.7% of the time. Everywhere else it checked between 88.8% and 99.9%.
 
-Here it does the opposite: **the big blind bets its entire range** — all 63 combos, every single time.
+Here it does the opposite: **the big blind bets its entire range** — all 63 combos, each at least 99.9% of the time.
 
 What changed is mainly the preflop action: the big blind **three-bet** instead of calling, so the pot is 22.5bb instead of 5.5bb. (⚠ The board moved too — spot ① was A♥7♦2♣, this is A♦K♠2♥ — so this is not a controlled comparison with preflop as the only variable.) That difference flips the entire flop on its head. Every figure below comes from HoldemMaster's [free GTO solver](/en/solver).
 
@@ -144,7 +144,7 @@ The 22.5bb pot is ==11 three-bet + 11 call + 0.5 dead small blind==, and the eff
 
 ## Is the check frequency really 0%?
 
-**0.0%.** The combo column reads 0.0 as well, so none of the 63 combos checks — nothing is hiding under the rounding. Betting splits between two sizes instead: 57.8% takes the small one at 7.4bb and 42.2% the large one at 14.9bb. Across the seven single-raised pots before this, the big blind's default was the opposite in every single one.
+**0.0% on screen.** The raw output does hold a residue — 41 of the 63 combos carry a sliver of checking, the largest K♥K♦ at 0.09%, together less than a hundredth of a combo. That is solver noise, not a strategy, so read it as zero. Betting splits between two sizes instead: 57.8% takes the small one at 7.4bb and 42.2% the large one at 14.9bb. Across the seven single-raised pots before this, the big blind's default was the opposite in every single one.
 
 | Big blind's first action | Frequency | Combos |
 |---|---|---|
@@ -220,7 +220,7 @@ The giveaway is that **the combo counts are not whole numbers**: 26.4 large and 
 
 Underpairs are 46.2%, or 60 combos: QQ down to 33, ten pairs at six combos each. They cannot call two barrels on this texture.
 
-One caveat worth naming: those 130 combos are what a **theoretically correct defense** looks like. Real opponents fold middle pocket pairs and call with A-Q, A-J and K-Q instead. Against that player the 46.2% is not there — so look at what your opponent actually called with before you take these numbers into a live game.
+One caveat worth naming: those 130 combos are the **calling range this solve was given** — a preflop setting written into the tree, not a defense the solver worked out. Real opponents fold middle pocket pairs and call with A-Q, A-J and K-Q instead. Against that player the 46.2% is not there — so look at what your opponent actually called with before you take these numbers into a live game.
 
 ## How does the button respond to a third-pot c-bet?
 
@@ -230,7 +230,7 @@ One caveat worth naming: those 130 combos are what a **theoretically correct def
 
 Facing 7.4bb into 22.5bb, denying a pure bluff any profit takes about ==22.5 ÷ (22.5 + 7.4) = 75.3%== of the range — the **minimum defense frequency**. But the button's hands that actually connected with A-K-2 add up to only ==20.8 + 11.5 + 6.9 + 2.3 = 41.5%==. 🪶 Note that the 2.3% of sets is **22** — it paired the deuce, not the ace or the king. Counting only the hands that paired an ace or a king gives **39.2%**.
 
-⚠ **In this spot, though, the premise behind MDF does not hold.** MDF is the frequency that makes a **pure bluff with zero equity** indifferent — and the big blind's betting range contains **0.0% no-made-hand, not one combo.** Against a bet with no pure bluffs in it there is no bluff to make indifferent, so the lean is toward folding **more**, not less. ⚠ Two qualifications keep that honest: ① "0% no-made-hand" is not "0% bluffs" — a weak underpair in the betting range can be doing the work of a bluff or a protection bet; ② the button's response node is not in this solve, so the actual optimal defense frequency cannot be confirmed here. So do not read the 41.5% as "therefore continue with middle pocket pairs." That the small size prices those 60 combos in is separately true, but the reason for the size is the **shape of the range** from the previous section; this is a side effect.
+⚠ **In this spot, though, the premise behind MDF stands on weak ground.** MDF is the frequency that makes a **pure bluff with zero equity** indifferent — and the big blind's betting range contains **0.0% no-made-hand, not one combo.** A range with no unpaired hand in it leaves little of the pure bluffing MDF assumes, so the lean is toward folding **more**, not less. ⚠ Two qualifications keep that honest: ① "0% no-made-hand" is not "0% bluffs" — a weak underpair in the betting range can be doing the work of a bluff or a protection bet; ② the button's response node is not in this solve, so the actual optimal defense frequency cannot be confirmed here. So do not read the 41.5% as "therefore continue with middle pocket pairs." Whether the small size even prices those 60 combos in is doubtful: against the big blind's whole range only QQ and JJ hold more than the 19.8% it asks for, while 99 down to 33 sit at 7.6–9.2%. Either way, the reason for the size is the **shape of the range** from the previous section; this is a side effect.
 
 :::note[⚠ MDF simplifies the bet to a pure bluff. It only means something when the opponent actually has bluffs — where the betting range is a pair or better all the way down, as it is here, the pure-bluff assumption breaks and the figure is only a rough guide. In practice also weigh how well a hand holds up on later streets.]:::
 
@@ -280,7 +280,7 @@ A. It stands for stack-to-pot ratio. What it measures in practice is how many be
 
 **Q. How many bets can you make at an SPR of 4?**
 
-A. Three, and the third one is all in. Betting 66% of the pot each street runs 14.9 → 34.5 → 39.6bb, exactly the 89bb stack. Stop after two and you have 49.4bb in — a little over half. Pick a bigger size and you get there in two — which is the point: the size you choose decides how many decisions you still own.
+A. Three, and the third one is all in. Two thirds of the pot on the flop and turn runs 14.9 → 34.5bb, and the 39.6bb left is about a third of the river pot — so the third bet is exactly the rest of the 89bb stack. Stop after two and you have 49.4bb in — a little over half. Pick a bigger size and you get there in two — which is the point: the size you choose decides how many decisions you still own.
 
 **Q. Should the three-bettor always c-bet?**
 

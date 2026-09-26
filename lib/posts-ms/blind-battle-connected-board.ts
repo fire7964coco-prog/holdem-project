@@ -9,7 +9,7 @@ export const POST: Post = {
   tldr: "Selepas SB open dan BB call, flop 7♦6♦5♣ menghasilkan bet 9.6% dan check 90.4%. Pot, stack, SPR, saiz bet serta kedua-dua range sama seperti KT6; hanya board berubah. Kelebihan kad tinggi opener hilang pada flop rendah bersambung. Equity SB beralih kepada 49.6% berbanding 50.4%, dan EQR OOP turun kepada 85.3%.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-15",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-02",
   readTime: "10 minit",
   emoji: "🪜",
@@ -200,7 +200,7 @@ Bet 9.6% mencampurkan sedikit value dengan draw terpilih. 88 mendahului purata k
 
 ## Bagaimanakah anda menyemak sendiri?
 
-Buka [solver GTO](/ms/solver), kemudian **Spot belajar → Board rendah bersambung, two-tone → ⚡ Lihat hasil**. Untuk latihan keputusan, buka [Trainer GTO](/ms/solver) daripada sidebar. Ia memberikan tangan rawak daripada range spot tersebut. Selepas tindakan dipilih, ia menunjukkan kekerapan campuran serta **kerugian EV (bb)**. Tanpa log masuk, rekod berada dalam pelayar; penyegerakan akaun bagi spot belajar adalah pilihan. Masalah daripada solve tersuai dan rekod latihannya tetap pada peranti walaupun log masuk.
+Buka [solver GTO](/ms/solver), kemudian **Spot belajar → Board rendah bersambung, two-tone → ⚡ Lihat hasil**. Untuk latihan keputusan, buka [Trainer GTO](/ms/solver) daripada sidebar. Ia memberikan tangan rawak daripada range spot tersebut. Selepas tindakan dipilih, ia menunjukkan kekerapan campuran serta **kerugian EV (bb)**. Secara lalai, rekod disimpan pada peranti ini; jika anda log masuk dengan akaun HoldemMaster, rekod latihan Spot belajar dan Cabaran Harian disegerakkan antara peranti. Masalah daripada solve tersuai dan rekod latihannya tetap pada peranti walaupun log masuk.
 
 **Bandingkan terus dengan “Board K-high dengan T”.** Label pemain kedua-duanya **OOP (SB (opener))**, pot dan stack sama, tetapi warna matriks berubah. Itulah demonstrasi ringkas kesan board. Percuma, tanpa pemasangan atau akaun.
 

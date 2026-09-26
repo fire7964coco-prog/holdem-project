@@ -9,7 +9,7 @@ export const POST: Post = {
   tldr: "Setelah small blind open dan big blind call, SB bet dengan 80,1% range-nya di flop A♠A♥6♦: 79,6% memakai sepertiga pot dan 0,5% memakai tiga perempat, sedangkan 19,8% check. Pada board berpasangan 6♣6♦3♥, frekuensi bet hanya 3,0%, tetapi posisi, peran preflop, dan range juga berbeda. Jadi, yang menentukan bukan sekadar adanya pair di board, melainkan range mana yang diuntungkan. Di sini, trips dengan satu As berjumlah 88 combo melawan 66. A-K dan A-Q, sebanyak 16 combo, sama sekali tidak ada dalam range call BB.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-15",
+  updated: "2026-09-26",
   masterUpdated: "2026-08-21",
   readTime: "10 mnt",
   emoji: "🅰️",
@@ -169,7 +169,7 @@ Value-nya tipis karena **banyak hand yang lebih lemah bisa call sekali, tetapi e
 
 ## Bagaimana mengeceknya di solver poker?
 
-Anda bisa melihat angka-angka ini dengan membuka [solver GTO](/id/solver), lalu memilih **Spot belajar → "Board dengan dua As" → [⚡ Lihat hasil]**. Untuk mencoba spot yang sama sebagai latihan, buka [Trainer GTO](/id/solver) dari sidebar. Anda mendapat hand acak; setelah memilih aksi, Anda melihat frekuensi strategi campuran dan **kerugian EV (bb)** dari pilihan tersebut. Tanpa login, riwayat tersimpan di browser Anda.
+Anda bisa melihat angka-angka ini dengan membuka [solver GTO](/id/solver), lalu memilih **Spot belajar → "Board dengan dua As" → [⚡ Lihat hasil]**. Untuk mencoba spot yang sama sebagai latihan, buka [Trainer GTO](/id/solver) dari sidebar. Anda mendapat hand acak; setelah memilih aksi, Anda melihat frekuensi strategi campuran dan **kerugian EV (bb)** dari pilihan tersebut. Secara default, riwayat latihan tersimpan di perangkat ini; dengan login ke akun HoldemMaster, riwayat latihan Spot belajar dan Tantangan Harian bisa disimpan di akun dan dilanjutkan di perangkat lain.
 
 **Bandingkan langsung dengan board berpasangan 6-6-3.** Keduanya memiliki pair, tetapi matriksnya didominasi warna yang berlawanan. Perbandingan ini juga mengubah peran preflop dan range. Setelah mempelajari contoh-contohnya, satu kesimpulan menjadi jelas: tanyakan bukan hanya **board apa yang muncul**, tetapi juga **range siapa yang diuntungkan olehnya**. Gratis, tanpa instalasi, dan tanpa keharusan membuat akun.
 

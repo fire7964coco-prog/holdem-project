@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Setelah small blind open dan big blind call, flop K♥T♦6♠ menghasilkan bet 67,4% dan check 32,6% untuk SB. Pada tujuh single-raised pot sebelumnya, pemain tanpa posisi hanya bet 0,1%–23,7%. Ada dua perubahan: pemain OOP kini adalah raiser, dan board mendukung range-nya. Keduanya membuat realisasi equity SB mencapai 103,1%, meskipun ia bertindak lebih dulu.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-15",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-02",
   readTime: "10 mnt",
   emoji: "⚔️",
@@ -193,7 +193,7 @@ EQR BB sebesar 96,1% melengkapi gambaran tersebut: **meski memiliki posisi, hasi
 
 ## Cara mengecek hasilnya sendiri
 
-Buka [solver GTO](/id/solver), lalu pilih **Spot belajar → "Board K-high dengan T" → ⚡ Lihat hasil**. Untuk berlatih pada spot yang sama, buka [Trainer GTO](/id/solver) dari menu samping. Anda mendapat hand acak, kemudian melihat frekuensi campuran dan **kerugian EV dalam bb** setelah memilih aksi. Tanpa login, riwayat tersimpan di browser yang Anda gunakan.
+Buka [solver GTO](/id/solver), lalu pilih **Spot belajar → "Board K-high dengan T" → ⚡ Lihat hasil**. Untuk berlatih pada spot yang sama, buka [Trainer GTO](/id/solver) dari menu samping. Anda mendapat hand acak, kemudian melihat frekuensi campuran dan **kerugian EV dalam bb** setelah memilih aksi. Secara default, riwayat latihan tersimpan di perangkat ini; dengan login ke akun HoldemMaster, riwayat latihan Spot belajar dan Tantangan Harian bisa disimpan di akun dan dilanjutkan di perangkat lain.
 
 Periksa label pemain di bagian atas: **"OOP (SB (opener))"**. Bandingkan dengan "OOP (BB (caller))" pada kelompok sebelumnya. Perubahan label itu menjelaskan perubahan peran yang dibahas dalam artikel ini. Gratis, tanpa instalasi, dan tanpa akun.
 

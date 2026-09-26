@@ -91,7 +91,7 @@ export const POST: Post = {
   tldr: "After a small-blind open and a big-blind call, the 7♦6♦5♣ flop gets a bet just 9.6% of the time and a check 90.4%. Pot, stack, SPR, bet size and both ranges are identical to the previous spot — only the three board cards changed, and the bet collapsed from 67.4% to 9.6%. The range edge won preflop was an edge in high cards, and a low connected board erases it outright. Equity flips to 49.6% against 50.4% and the out-of-position realization drops to 85.3%.",
   category: "strategy",
   date: "2026-08-21",
-  updated: "2026-09-02",
+  updated: "2026-09-26",
   readTime: "10 min",
   emoji: "🪜",
   image: "/images/gto-sb-connected-oop-en.webp",
@@ -188,7 +188,7 @@ The previous article ended by saying *"on boards that fit the caller the check c
 
 ## Why does this board favor the big blind?
 
-**Because the combinations that connect with 5-6-7 survive only in the big blind's calling range.** The top five rows below are the classes that actually hit this board, and apart from overpairs the small blind does not lead a single one.
+**Because the big blind's calling range adds hands the small blind never opens that hit 7-6-5 — T7o, 97o, 87o, 76o, 74s and 43s among them — on top of the straights, sets and two pair both ranges hold.** The top five rows below are the classes that actually hit this board, and apart from overpairs the small blind does not lead a single one.
 
 ![Range composition infographic comparing the small blind and big blind hand classes on a 7-6-5 board](/images/gto-sb-connected-ranges-en.webp "7-6-5 blind vs blind · class-by-class composition — top pair runs 6.8% to 11.2% in the big blind's favor")
 
@@ -268,7 +268,7 @@ Three kinds of cell carry a visibly thicker stripe. (The frequencies below are c
 - **A-7 suited and K-7 suited** — top pair with a seven. They get picked not for strength but because **thin value comes with an ace or king blocker** (one fewer ace-high or king-high in the opponent's range). Top pair on this board actually trails, 39 combos to 60.
 - **K-4 suited and Q-4 suited** — a suited four. Add a four to 7-6-5 and you hold ==4-5-6-7==, an open-ender completing on a three or an eight. By class average that is Q-4s at 30.9% and K-4s at 27.1%, but **as individual combos Q♠4♠ and Q♥4♥ hit 54.7%, the highest in the entire spot.**
 
-The 9.6% is built by mixing a little value with a few draws. Eight-eight tops the class ranking because **one hand does both jobs at once.** ⚠ That is not a general rule, though — **none of the top three individual combos does both** (Q♠4♠ at 54.7% is a pure draw, A♣7♣ at 54.4% is thin value with a blocker, T♣9♣ at 52.2% is a gutshot). The best single combo of the double-duty hand, 8♦8♣, is *lower* at 47.1%. **The 9.6% was not selected by any one criterion.** **And checking 90.4% is not the small blind giving up on this board** — it is that leading with thin value and then facing a raise costs far more than it makes. ⚠ Do not look for the reason in the 6bb pot, the 97bb stack or the SPR of 16.2, though — those three are **exactly the same constants** on [⑪ K-T-6](/en/blog/blind-battle-cbet "thumb:/images/gto-sb-king-mid-oop-en.webp") and on [the A-A-6 board](/en/blog/ace-paired-board-strategy "thumb:/images/gto-sb-paired-ace-oop-en.webp") later in the series, where the same small blind bets 67.4% and 80.1%. What produced 9.6% is not the stack; it is **three board cards**.
+The 9.6% is built by mixing a little value with a few draws. Eight-eight tops the class ranking because **one hand does both jobs at once.** ⚠ That is not a general rule, though — **none of the top individual combos does both** (Q♥4♥ and Q♠4♠ at 54.7% are pure draws, A♣7♣ at 54.4% is thin value with a blocker, and next comes T♣9♣ at 52.2%, a gutshot). The best single combo of the double-duty hand, 8♦8♣, is *lower* at 47.1%. **The 9.6% was not selected by any one criterion.** **And checking 90.4% is not the small blind giving up on this board** — it is that for thin value like A♣7♣ and K♣7♣, betting and checking come out within 0.03bb of each other, so checking gives up almost nothing. ⚠ Do not look for the reason in the 6bb pot, the 97bb stack or the SPR of 16.2, though — those three are **exactly the same constants** on [⑪ K-T-6](/en/blog/blind-battle-cbet "thumb:/images/gto-sb-king-mid-oop-en.webp") and on [the A-A-6 board](/en/blog/ace-paired-board-strategy "thumb:/images/gto-sb-paired-ace-oop-en.webp") later in the series, where the same small blind bets 67.4% and 80.1%. What produced 9.6% is not the stack; it is **three board cards**.
 
 :::note[⚠ This study spot was solved with a single bet size — a third of the pot — as the only option. Open a larger size in the tree and the 9.6% can move. Read it as "under these conditions there is almost nothing worth betting, even small."]:::
 
@@ -276,7 +276,7 @@ The 9.6% is built by mixing a little value with a few draws. Eight-eight tops th
 
 - **Do not turn "it's blind versus blind, so bet" into a rule.** The 67.4% of the previous spot and the 9.6% here were split by the board, not the seat. Even if you opened from the small blind, once the flop runs low and connected — 5, 6, 7, 8 — the initiative in that hand has already crossed the table.
 - **Do not treat an overpair as a reason to build a big pot.** The small blind's 42 combos of overpairs are three and a half times the big blind's, but on a board where the opponent holds 42 combos that already beat them, this is not a hand for two or three barrels. That is not an argument against a single small bet — the point is **not to treat it as a stack-off hand**. ⚠ Nor does it mean "fold the moment a raise comes." The opponent's range holds 24.9% open-enders, 23.8% gutshots and 3.7% combo draws, so a flop raise cannot be all value, and auto-folding an overpair to a draw-heavy opponent's raise is itself an exploitable habit. **Declining to stack off and folding are different things.** And the bet-then-raise node is not in this solve, so no frequency comes out of it. This series keeps reaching the same conclusion, that [a connected board shaves the preflop aggressor's edge](/en/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-en.webp").
-- **Do not mistake ace-high for strength.** A quarter of the small blind's range is ace-high, and on this board the best it does is pair up. The opponent's draws, when they hit, are straights — what differs is not the chance of improving but **what the improvement is worth**. The 49.6% equity figure is the result.
+- **Do not mistake ace-high for strength.** A quarter of the small blind's range is ace-high, and on this board most of it can only pair up (A4 and A8 pick up open-enders, and the A♦x♦ hands a flush draw). The opponent's draws, when they hit, are mostly straights — what differs is not the chance of improving but **what the improvement is worth**. The 49.6% equity figure is the result.
 - **Decide in advance what you do after checking.** Having passed 90.4% into a check, what you call and what you [check-raise](/en/blog/low-board-check-raise "thumb:/images/gto-srp-low-rainbow-oop-en.webp") against the opponent's bet is the next real problem. ⚠ **That answer is not in this calculation** — the study spot solves only the **first action on the flop**, so the nodes after a check (the big blind's betting frequency, the small blind's check-raise) simply do not exist. If you want a spot where a check-raise was actually solved, the low-rainbow board is the only one in the series with re-solved frequencies — **though the seat is different** (there the big blind is the caller facing a button).
 
 :::readnext[Keep reading]
@@ -286,7 +286,7 @@ The 9.6% is built by mixing a little value with a few draws. Eight-eight tops th
 
 ## Check it yourself
 
-Every figure here comes up if you open the [GTO solver](/en/solver) and hit **Study Spots → "Connected Low Board, Two-Tone" → [⚡ View results]**. To play the same spot as a problem instead, open the [GTO Trainer](/en/solver) from the sidebar — it deals you a random hand, and once you pick an action it shows the mixed frequency and the **EV loss (bb)** of your choice. Your history stays in your own browser.
+Every figure here comes up if you open the [GTO solver](/en/solver) and hit **Study Spots → "Connected Low Board, Two-Tone" → [⚡ View results]**. To play the same spot as a problem instead, open the [GTO Trainer](/en/solver) from the sidebar — it deals you a random hand, and once you pick an action it shows the mixed frequency and the **EV loss (bb)** of your choice. Your history is kept on this device by default; signing in with a HoldemMaster account syncs your Study Spots and Daily Challenge history across devices.
 
 **Click back and forth with "King-High with a Ten"**, the previous spot. The player labels read "OOP (SB (Opener))" on both, the pot and stack are identical — and the matrix flips colour completely. It is the shortest demonstration in this series of what a board actually does. Free, no install, no account.
 
@@ -296,7 +296,7 @@ A. Because a range is concentrated in particular cards. The small blind's openin
 
 **Q. You opened from the small blind and the flop comes low and connected. Now what?**
 
-A. Mostly you check. The solver passes 90.4% into a check on 7♦6♦5♣. Even the 9.6% that bets is spread thinly across **8-8, an overpair that is also an open-ender** (39.5% by class average, the highest here), top pair (A-7s, K-7s) and a suited four making an open-ender (K-4s, Q-4s). But this is not the same as giving up — checking and then answering the opponent's bet with calls and check-raises beats leading with thin value and getting raised.
+A. Mostly you check. The solver passes 90.4% into a check on 7♦6♦5♣. Even the 9.6% that bets is spread thinly across **8-8, an overpair that is also an open-ender** (39.5% by class average, the highest here), top pair (A-7s, K-7s) and a suited four making an open-ender (K-4s, Q-4s). But this is not the same as giving up — for the thin value hands, checking is worth about as much as betting (within 0.03bb), and what happens after the check, calls and check-raises included, is not in this solve.
 
 **Q. The small blind has three times as many overpairs. Why is the bet only 9.6%?**
 

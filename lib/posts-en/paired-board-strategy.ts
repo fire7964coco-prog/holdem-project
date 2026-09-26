@@ -62,7 +62,8 @@ import type { Post } from "../posts";
  *    A6일 때만 «4콤보»가 참이고, 76s면 BTN의 A6·K6s·Q6s·86s·33·66 **18콤보**에 진다.
  *    이 조언대로 76s로 팟을 키우면 페어 보드 최대 파산 패턴에 걸린다. → 키커 경고로 교체.
  * ② 🔴 **「리드하는 핸드가 대부분 6x」는 자기 표가 반증했다.** 큰 벳 총량 9.6콤보 중
- *    6x+쿼드 기여는 26×0.08 + 1×0.096 ≈ **2.2콤보(23%)**뿐이다. 참인 명제는
+ *    6x+쿼드 기여는 원시 가중합 1.240 + 0.096 ≈ **1.34콤보(14.0% · 6x만 13.0%)**뿐이다
+ *    (09-26 L-2b 원시 재계산 — 옛 «26×0.08 ≈ 2.2콤보(23%)»는 틀린 근사였다 · MA-174). 참인 명제는
  *    «6x가 작은 사이즈를 안 고른다»(레인지 평균 2.0% 대비 4배 over-index)이지 «다수»가 아니다.
  * ③ 🔴 **EQR 100%를 «손익분기»로 오독했다.** EQR은 실현률이지 손익이 아니다 —
  *    44의 EV는 **3.42bb**로 레인지 평균 **2.17bb**의 1.6배다. 22도 1.83bb로 «쓸모없다»가 아니다.
@@ -94,7 +95,7 @@ export const POST: Post = {
   tldr: "On the low paired flop 6♣6♦3♥ the big blind checks 97.0%. The odd part is that it holds more trips than the button: 26 six-x combos against 20. It checks anyway, because only 18.4% of its range has anything beyond the board's pair, and the other 81.6% is a high-card contest the button wins. What does gain value is any pocket pair above a six — TT is 76.0% equity here.",
   category: "strategy",
   date: "2026-08-20",
-  updated: "2026-09-24",
+  updated: "2026-09-26",
   readTime: "10 min",
   emoji: "👯",
   image: "/images/gto-srp-paired-oop-en.webp",
@@ -268,9 +269,9 @@ Trips and quads do take the small size occasionally — K♠6♠ 0.3%, Q♥6♥ 
 
 It comes down to what the opponent can call with. A six is close to unbeatable here, so the point is to build a pot — and since most sixes are checking anyway, **the few that do bet have every reason to go big.** Two pair is behind every six and all three 33s, so it has no interest in a big pot. The class that wants a big pot refuses the small size; the class that only wants a call refuses the large one.
 
-⚠ **Do not read this as "the better the kicker, the bigger the bet" — the table runs the other way.** Large-bet frequency goes K♠6♠ 7.8% < Q♥6♥ 7.9% < **J♥6♥ 9.0%**: the weakest kicker bets most. The reason is blockers, not kickers. J6s, T6s and 96s are not in the button's opening range at all, so holding one removes none of the button's trips. K6 and Q6 are hands the button also holds, so taking one out of the deck thins the very range that would call.
+⚠ **Do not read this as "the better the kicker, the bigger the bet" — the table runs the other way.** Large-bet frequency goes K♠6♠ 7.8% < Q♥6♥ 7.9% < **J♥6♥ 9.0%**: the weakest kicker bets most. Blockers do not explain it either. Whichever six you hold removes the button's trips of its own suit — K♠6♠, Q♥6♥ and J♥6♥ each leave the button exactly 10 of its 20 — and the kicker removes nothing more, because the button opens K6 and Q6 only suited and your six has already taken that suit. The table shows the calculated mix; it does not isolate the cause of a gap this small.
 
-And this does not account for all of the large bets — the sixes are 26 of 486 combos, roughly a quarter of the large-bet total of about 9.7 combos. The rest comes from other classes.
+And the sixes do not account for most of the large bets. They are 26 of 486 combos and contribute about 1.2 of the roughly 9.6 large-bet combos — about one eighth (13.0%). Most of the rest comes from hands with no six at all.
 
 The big blind leads only 3.0% of the time, so you will rarely run into this at the table. It is a clean demonstration of a principle, though: **sizing is chosen by the range, not by the hand.**
 
@@ -293,7 +294,7 @@ What this arithmetic is good for, then, is not "hit 75%" but **"do not fold on t
 ## What changes at the table?
 
 - **Do not undervalue middle pocket pairs on low paired boards.** 77 through TT are 68–76% equity here, the top of the calling range. But the floor is real: 44 and 55 still beat the range average, while 22 keeps only two-thirds of what its equity is worth, because it pairs below both board ranks.
-- **Flopping trips is not a reason to lead.** The sixes lead more than any other class here, and they still check nine times out of ten. Leading only folds out the hands you already beat; checking lets those hands put the money in themselves, and leaves you a check-raise or a call-down. ⚠ What this solve cannot tell you is *how much* more the check-raise line makes: the study spot solves **the flop's first action only**, so the button's c-bet frequency and any check-raise EV simply do not exist in it.
+- **Flopping trips is not a reason to lead.** The sixes lead 6.8% — more than any two-pair or high-card hand, less only than the 33 full houses (8.8%) and the single quads combo (9.6%) — and they still check nine times out of ten. Leading only folds out the hands you already beat; checking lets those hands put the money in themselves, and leaves you a check-raise or a call-down. ⚠ What this solve cannot tell you is *how much* more the check-raise line makes: the study spot solves **the flop's first action only**, so the button's c-bet frequency and any check-raise EV simply do not exist in it.
 - **Do not fold ace-high to one small bet.** 79.7% of the button’s range has nothing beyond the board’s pair either — ace-high 31.9%, king-high 15.1% and no made hand 32.7%.
 - **Your kicker decides the hand.** Only three combos beat trips outright — the three 33 full houses. (Quads is off the table: once you hold a six yourself, 6♠6♥ cannot exist, so the four combos counted in the full-house section become three from your seat.) And even that holds only when your kicker is an ace. The second kicker is fixed by the board's 3, so the single card beside your six is the whole hand: with 76s the button's A6, K6, Q6 and 86 all have you dominated. Trips with a weak kicker is a bluff-catcher, not a hand to build a pot with.
 
@@ -306,7 +307,7 @@ What this arithmetic is good for, then, is not "hit 75%" but **"do not fold on t
 
 Open the [free GTO solver](/en/solver), then go to **Study Spots → Paired Board → [⚡ View results]**.
 
-What to look for is **the single 6♠6♥ row** in the per-hand table — the only quads this board allows, and at **359.7%** the highest equity realization anywhere in this series (second is 6♥6♣ on the [low rainbow flop](/en/blog/low-board-check-raise "thumb:/images/gto-srp-low-rainbow-oop-en.webp") at **318.9%**). Compare it with the three 33 rows just below and you can see how few combos the very top of a paired board actually contains.
+What to look for is **the single 6♠6♥ row** in the per-hand table — the only quads this board allows, and at **359.7%** the highest equity realization anywhere in this series (second is the button's 88 in the [3-bet pot on a low board](/en/blog/3bet-pot-low-board) at **346.0%**; on the big blind's side the runner-up is 6♥6♣ on the [low rainbow flop](/en/blog/low-board-check-raise "thumb:/images/gto-srp-low-rainbow-oop-en.webp") at **318.9%**). Compare it with the three 33 rows just below and you can see how few combos the very top of a paired board actually contains.
 
 Then open the **GTO Trainer** in the sidebar: it deals you a hand using the actual range weights and grades your action in big blinds lost. Free, nothing to install, no account.
 

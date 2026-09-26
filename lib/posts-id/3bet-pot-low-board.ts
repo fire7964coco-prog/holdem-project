@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Setelah big blind 3-bet dan button call, flop 8♦5♣2♠ mendapat bet dua pertiga pot sebanyak 97,8%. Dari 83 combo big blind, hanya tiga A5s yang membentuk pair dengan board; 88, 55, dan 22 sama sekali tidak ada dalam range contoh ini. Bet besar tetap dominan karena range terbagi menjadi 36 combo overpair dan 40 combo Ace-High, dengan hampir tidak ada hand berkekuatan sedang di antaranya. Bentuk range yang terpolarisasi menjelaskan ukuran tersebut.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-15",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-02",
   readTime: "10 mnt",
   emoji: "🎲",
@@ -154,7 +154,7 @@ Letak set membantu menjelaskannya. **Hanya BTN yang dapat memegang set**, dan se
 
 ## Cara mengecek hasilnya sendiri
 
-Buka [solver GTO](/id/solver), lalu pilih **Spot belajar → "Board rendah kering" → ⚡ Lihat hasil**. Untuk berlatih mengambil keputusan pada spot yang sama, buka [Trainer GTO](/id/solver) dari menu samping. Trainer memberikan hand acak, lalu memperlihatkan frekuensi campuran dan **kerugian EV dalam bb** setelah Anda memilih aksi. Tanpa login, riwayat latihan tersimpan di browser yang Anda gunakan.
+Buka [solver GTO](/id/solver), lalu pilih **Spot belajar → "Board rendah kering" → ⚡ Lihat hasil**. Untuk berlatih mengambil keputusan pada spot yang sama, buka [Trainer GTO](/id/solver) dari menu samping. Trainer memberikan hand acak, lalu memperlihatkan frekuensi campuran dan **kerugian EV dalam bb** setelah Anda memilih aksi. Secara default, riwayat latihan tersimpan di perangkat ini; dengan login ke akun HoldemMaster, riwayat latihan Spot belajar dan Tantangan Harian bisa disimpan di akun dan dilanjutkan di perangkat lain.
 
 Perhatikan bahwa **baris "Set/Trips" tidak muncul** pada panel Hand BB. Ganti Pemain ke IP (BTN), dan baris itu muncul dengan angka 6,3%. Satu baris tersebut menunjukkan siapa yang memiliki hand terkuat pada board ini. Gratis, tanpa instalasi, dan tanpa akun.
 

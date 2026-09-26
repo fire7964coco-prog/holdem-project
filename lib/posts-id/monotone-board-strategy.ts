@@ -9,7 +9,7 @@ export const POST: Post = {
   tldr: "Pada Q♠9♠2♠, big blind check 88,8%, bet kecil 8,0%, dan bet besar hanya 3,2%. Flush sudah terbentuk dengan dua sekop, sehingga bet besar cenderung menyaring lawan ke hand yang lebih kuat. Delapan combo nut flush rata-rata check 69,9%; flush selain nuts bahkan check 81,4%. Angka ini menggambarkan keputusan pertama BB, bukan frekuensi bet BTN.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-15",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-02",
   readTime: "10 mnt",
   emoji: "♠️",
@@ -132,7 +132,7 @@ Equity hanya turun dari 97,7% menjadi 94,0%, tetapi EQR turun ke 197,0%. **Besar
 
 Baris flush draw merupakan **hasil penjumlahan**. Solver memisahkan “Flush draw” dan “Combo draw”; hand dengan satu sekop dapat masuk salah satu kategori itu. Untuk BB, ==20,5 + 5,1 = 25,6%==, sedangkan untuk BTN, ==24,1 + 5,1 = 29,2%==. Gunakan pemisahan ini ketika mencocokkan tabel dengan layar.
 
-Perbedaannya berawal dari preflop. **BB mempertahankan sejumlah hand suited lemah dengan biaya call lebih murah**, termasuk J5s, 85s, dan 74s. Versi sekopnya menjadi flush. Hand tersebut tidak berada dalam range open BTN pada contoh ini.
+Perbedaannya berawal dari preflop. **BB mempertahankan sejumlah hand suited lemah dengan biaya call lebih murah**, termasuk J4s, J5s, dan 85s. Versi sekopnya menjadi flush. Hand tersebut tidak berada dalam range open BTN pada contoh ini.
 
 Sebaliknya, BTN memiliki lebih banyak **Ax dan Kx offsuit dengan satu sekop**. Hand itu belum menjadi flush, tetapi memiliki draw. A♠ sangat berharga karena dapat membentuk nut flush sekaligus memastikan lawan **tidak** memegang nut flush sekarang.
 
@@ -194,7 +194,7 @@ A. Tidak. Delapan combo nut flush dalam hasil ini check antara 52,7% dan 84,2%, 
 
 **Q. Mengapa BB memiliki lebih banyak flush daripada BTN?**
 
-A. BB sudah memasang sebagian taruhan wajib dan dapat mempertahankan hand suited seperti J5s, 85s, serta 74s dengan biaya tambahan lebih murah. Dalam range contoh ini, BTN tidak open hand tersebut. Versi sekopnya menambah flush BB menjadi 7,1%, dibandingkan 5,7% milik BTN.
+A. BB sudah memasang sebagian taruhan wajib dan dapat mempertahankan hand suited seperti J4s, J5s, serta 85s dengan biaya tambahan lebih murah. Dalam range contoh ini, BTN tidak open hand tersebut. Versi sekopnya menambah flush BB menjadi 7,1%, dibandingkan 5,7% milik BTN.
 
 **Q. Seberapa besar peluang langsung mendapat flush di flop?**
 

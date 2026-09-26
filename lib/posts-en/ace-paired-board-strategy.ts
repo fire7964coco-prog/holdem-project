@@ -101,7 +101,7 @@ export const POST: Post = {
   tldr: "After a small-blind open and a big-blind call, the A♠A♥6♦ flop gets a bet 80.1% of the time (79.6% at a third of the pot, 0.5% at three quarters, check 19.8%). That is the reverse of the 3.0% seen on the 6♣6♦3♥ paired board — and what split them is not that the board paired, but whose card paired. Hands making trips with an ace run 88 combos to 66, and 16 of those combos, A-K and A-Q, are absent from the calling range entirely.",
   category: "strategy",
   date: "2026-08-21",
-  updated: "2026-08-21",
+  updated: "2026-09-26",
   readTime: "10 min",
   emoji: "🅰️",
   image: "/images/gto-sb-paired-ace-oop-en.webp",
@@ -217,7 +217,7 @@ Three lines are the whole spot.
 
 - **The big blind's trips contain no A-K and no A-Q.** Those get three-bet against a 3bb small-blind open rather than called. The upper trips the small blind holds alone are ==8 combos of A-K + 8 of A-Q + 6 of offsuit A-J = 22 combos==. Same trips, and the kicker fight is already decided.
 - **Quads belong to the small blind alone.** With A♠ and A♥ on the board, the only aces left are A♦ and A♣, so A-A is **exactly one combo**. The big blind three-bets A-A and holds zero.
-- **More than half of the big blind's range is nothing.** 260 combos (51.5%) missed. That is how large a share a single bet can fold out.
+- **More than half of the big blind's range is nothing.** 260 combos (51.5%) missed. That is the pool a bet presses on, not a fold rate: against a third of the pot, MDF says to keep about 75% of the range, so a balanced opponent folds nearer a quarter. (The big blind's response is not in this solve.)
 
 Only full houses are exactly level: both hold ==3 combos of 6-6 + 6 combos of A-6 = 9==. **Take that one cell away and every class above tilts to the small blind, while only the bottom — the misses — runs 11.7 points heavier for the big blind.**
 
@@ -239,7 +239,7 @@ The pot is 6bb, so the small blind's share is ==6 × 56.2% = 3.372bb== against a
 
 The three-bet pots were the opposite. On the [8-5-2 low board](/en/blog/3bet-pot-low-board "thumb:/images/gto-3bp-low-oop-en.webp") the big blind used two thirds of the pot 97.8% of the time, because that range split roughly in half into **overpairs or ace-high** — a polarized shape. A range pulled to the extremes calls for a big size.
 
-This spot is not that. The small blind's range runs **continuously** — trips 17.5%, two pair 18.5%, king-high 22.3%, misses 39.8%. With that shape, pushing the whole range in at a small size is worth more: fold out the opponent's 51.5% and that alone is profit, and when they do not fold the pot stays small enough that the 97bb behind is never at risk.
+This spot is not that. The small blind's range runs **continuously** — trips 17.5%, two pair 18.5%, king-high 22.3%, misses 39.8%. With that shape, pushing the whole range in at a small size is worth more: the opponent's 51.5% of misses is what a small bet presses on — a 2bb bluff into 6bb needs only 25% folds to break even — and the bet itself risks just 2bb now, though the 97bb behind can still come into play on the turn and river.
 
 :::note[⚠ This study spot was solved with two size candidates, 33% and 75%. Add a smaller one — a fifth or a quarter of the pot — and the 79.6% could migrate there. Read it as "the small one of the sizes offered," not as "33% is the answer."]:::
 
@@ -256,7 +256,7 @@ The reason lies in **who calls you.** K-K makes two pair with the board's aces, 
 - **Do not turn "paired board means check" into a rule.** It is 3.0% on 6-6-3 and 80.1% on A-A-6. The test is not whether the board paired, and **not how many combos of that rank you hold either** — on 6-6-3 the big blind held sixes more heavily (5.3% against 4.0%) and still bet only 3.0%. The test is **whether your range *as a whole* is better than theirs.** The bet reached 80% here because the top and the rest tilted **the same way**.
 - **With two aces out there, do not assume your ace is worthless.** If the opponent three-bets A-K and A-Q, the kicker fight is already leaning your way. **That does rest on them three-betting, though** — against a table that only ever calls with A-K and A-Q the premise collapses, so with a weakly kicked trips hand, bet but stay out of a big raising war.
 - **Small size, high frequency.** When the range runs continuously, pushing wide at a third of the pot is better. The large size is the tool for [a range split into strong and weak](/en/blog/3bet-pot-low-board) — though even within three-bet pots the reason differs on [a board thick with draws](/en/blog/3bet-pot-bet-sizing "thumb:/images/gto-3bp-dynamic-oop-en.webp"), where a big bet is about holding the opponent at a bad price. **Note also that 80.1% is a heads-up calculation** — with more than one opponent still in, cut the bets from the missed hands sharply and narrow toward trips and two pair.
-- **Do not bet K-K and Q-Q "because they are strong."** On this board they struggle to get called by anything worse. Checking to catch the opponent's bluffs is better. ⚠ That is **a judgment drawn from range composition**, not a value this series measured — the study spot shows only the frequency of the first action on the flop, and no node after a check is solved anywhere in the series. **It also assumes the opponent mixes in bluffs** — against someone who almost never does, a bet arriving after your check is usually an ace, and folding beats digging in.
+- **Do not bet K-K and Q-Q "because they are strong."** On this board they struggle to get called by anything worse. Checking to catch the opponent's bluffs is better. ⚠ That is **a judgment drawn from range composition**, not a value this series measured — the study spot shows only the frequency of the first action on the flop, and no node after a check is solved for this spot (the only check-then-bet node in the series is the re-solve on the [low rainbow board](/en/blog/low-board-check-raise)). **It also assumes the opponent mixes in bluffs** — against someone who almost never does, a bet arriving after your check is usually an ace, and folding beats digging in.
 
 :::readnext[Keep reading]
 /en/blog/blind-battle-connected-board | Same Seat, Same Stack — and the Bet Falls from 67% to 9.6% | /images/gto-sb-connected-oop-en.webp
@@ -265,7 +265,7 @@ The reason lies in **who calls you.** K-K makes two pair with the board's aces, 
 
 ## Check it yourself
 
-Every figure here comes up if you open the [GTO solver](/en/solver) and hit **Study Spots → "Ace-Paired Board" → [⚡ View results]**. To play the same spot as a problem instead, open the [GTO Trainer](/en/solver) from the sidebar — it deals you a random hand, and once you pick an action it shows the mixed frequency and the **EV loss (bb)** of your choice. Your history stays in your own browser.
+Every figure here comes up if you open the [GTO solver](/en/solver) and hit **Study Spots → "Ace-Paired Board" → [⚡ View results]**. To play the same spot as a problem instead, open the [GTO Trainer](/en/solver) from the sidebar — it deals you a random hand, and once you pick an action it shows the mixed frequency and the **EV loss (bb)** of your choice. Your history is kept on this device by default; signing in with a HoldemMaster account syncs your Study Spots and Daily Challenge history across devices.
 
 **Click back and forth with the 6-6-3 paired board.** Both are paired boards and the matrices are opposite colours. Work through the study spots once and one conclusion is left: look first not at **what board it is** but at **whose range this board attaches to**. Free, no install, no account.
 
@@ -275,7 +275,7 @@ A. Trips are made when the board shows two cards of the same rank and you hold o
 
 **Q. If you also bet with hands that missed, isn't that bluffing?**
 
-A. Hand by hand, yes. But in GTO **bluffing is not "I am deceiving with this hand" — it is "what percentage of bluffs sits in my range."** The solver does not decide whether a hand is a bluff; it decides **the betting frequency of the whole range.** With 51.5% of the opponent's range having missed, the bet earns its keep, and when it does not fold them out, the small blind's 88 combos of trips collect. Value and bluff leave at the same size, so the opponent cannot tell them apart.
+A. Hand by hand, yes. But in GTO **bluffing is not "I am deceiving with this hand" — it is "what percentage of bluffs sits in my range."** The solver does not label a hand a bluff; it sets **a frequency for every hand**, and the range's betting frequency is simply those frequencies averaged over its combos. With 51.5% of the opponent's range having missed, a small bet has plenty to press on, and when it does not fold them out, the small blind's 88 combos of trips collect. Value and bluff leave at the same size, so the opponent cannot tell them apart.
 
 **Q. On a board like A-A-6, how likely is the opponent to hold an ace?**
 

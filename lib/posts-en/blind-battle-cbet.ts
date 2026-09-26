@@ -93,7 +93,7 @@ export const POST: Post = {
   tldr: "After a small-blind open and a big-blind call, the K♥T♦6♠ flop gets a bet 67.4% of the time and a check 32.6%. In the seven single-raised pots earlier in this series the out-of-position player bet only 0.1% to 23.7% — and two things changed, not one. Here the out-of-position player is the raiser rather than the caller, and the board favors that range. Together they push the out-of-position equity realization to 103.1%.",
   category: "strategy",
   date: "2026-08-21",
-  updated: "2026-09-02",
+  updated: "2026-09-26",
   readTime: "10 min",
   emoji: "⚔️",
   image: "/images/gto-sb-king-mid-oop-en.webp",
@@ -118,7 +118,7 @@ What changed? The pot is small at 6bb and the stacks are 97bb deep. What changed
 Spot | SB opens 3bb → BB calls (blind vs blind)
 Flop | K♥ T♦ 6♠ (rainbow)
 Pot · stack | Pot 6bb · effective stack 97bb · **SPR 16.2**
-Result | SB bets **67.4%** — the first single-raised pot where the out-of-position player leads
+Result | SB bets **67.4%** — the first single-raised pot where the out-of-position player leads more often than not
 :::
 
 > **Quick answer**
@@ -170,7 +170,7 @@ Lined up against the rest of the series, the gap is obvious.
 
 ## Why does the out-of-position player lead here?
 
-**Because this is the seat where the preflop aggressor also acts first on the flop.** ⚠ That is a *necessary* condition, not a sufficient one — the same structure produces **9.6%** [at ⑫](/en/blog/blind-battle-connected-board "thumb:/images/gto-sb-connected-oop-en.webp") and **80.1%** [at ⑬](/en/blog/ace-paired-board-strategy "thumb:/images/gto-sb-paired-ace-oop-en.webp"). The seat opens the door; the board decides how far you walk through it.
+**Because this is the seat where the preflop aggressor also acts first on the flop.** ⚠ In this series every majority lead comes from that seat, but the seat guarantees nothing, and a caller can still lead some of the time (23.7% at ④). The same structure produces **9.6%** [at ⑫](/en/blog/blind-battle-connected-board "thumb:/images/gto-sb-connected-oop-en.webp") and **80.1%** [at ⑬](/en/blog/ace-paired-board-strategy "thumb:/images/gto-sb-paired-ace-oop-en.webp"). The seat opens the door; the board decides how far you walk through it.
 
 In an ordinary hand these two come apart. When the button opens and the big blind calls, **the aggressor is the button but the first to act is the big blind.** That is what builds the check-then-c-bet structure, and it is what ① through ⑦ all looked like.
 
@@ -186,7 +186,7 @@ Blind versus blind, the two collapse into one. The small blind raised, and the s
 
 Equity puts a number on that edge. **SB 55.3% against BB 44.7%.** In ① through ⑦ the out-of-position player sat at 45.1%–48.5%, always short of half — the opposite direction.
 
-:::pull[Whether you bet first is decided not by position, but by how strong your range is on this particular board.]:::
+:::pull[Being out of position does not decide whether you bet first — how your range meets this particular board does most of the work.]:::
 
 Lacking position is the same for the big blind in ①–⑦ and the small blind here. What splits them is **the relationship between range and board** — ⚠ and you cannot reduce that to "range" alone. On [the 7-6-5 board](/en/blog/blind-battle-connected-board) the range is *literally identical* and the check runs to 90.4%.
 
@@ -284,7 +284,7 @@ The big blind's 96.1% is the other face of the same story. **Position, and still
 
 ## Check it yourself
 
-Every figure here comes up if you open the [GTO solver](/en/solver) and hit **Study Spots → "King-High with a Ten" → [⚡ View results]**. To play the same spot as a problem instead, open the [GTO Trainer](/en/solver) from the sidebar — it deals you a random hand, and once you pick an action it shows the mixed frequency and the **EV loss (bb)** of your choice. Your history stays in your own browser.
+Every figure here comes up if you open the [GTO solver](/en/solver) and hit **Study Spots → "King-High with a Ten" → [⚡ View results]**. To play the same spot as a problem instead, open the [GTO Trainer](/en/solver) from the sidebar — it deals you a random hand, and once you pick an action it shows the mixed frequency and the **EV loss (bb)** of your choice. Your history is kept on this device by default; signing in with a HoldemMaster account syncs your Study Spots and Daily Challenge history across devices.
 
 Look at the player labels across the top first: **"OOP (SB (Opener))"**. Once you see that it differs from the earlier spots' "OOP (BB (Caller))", what this article means by "the role changed" lands immediately. Free, no install, no account.
 

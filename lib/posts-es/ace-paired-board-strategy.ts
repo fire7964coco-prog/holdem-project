@@ -29,7 +29,7 @@ export const POST: Post = {
   tldr: "Tras una apertura de la ciega pequeña y un call de la ciega grande, el flop A♠A♥6♦ recibe una apuesta el 80.1% de las veces (79.6% a un tercio del bote, 0.5% a tres cuartos, check 19.8%). Es lo contrario del 3.0% que se vio en el board pareado 6♣6♦3♥ — y lo que los separó no es que el board viniera pareado, sino de quién era la carta que formó esa pareja. Las manos que hacen trips con un as van 88 combos contra 66, y 16 de esos combos, A-K y A-Q, faltan por completo en el rango con el que se paga.",
   category: "strategy",
   date: "2026-09-02",
-  updated: "2026-09-02",
+  updated: "2026-09-26",
   masterUpdated: "2026-08-21",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -195,7 +195,7 @@ La razón está en **quién te paga.** KK hace doble pareja con los ases del boa
 
 ## Compruébalo tú mismo
 
-Todas las cifras de aquí aparecen si abres el [solver GTO](/es/solver) y entras en **Spots de estudio → "Board con A pareado" → [⚡ Ver resultados]**. Si prefieres jugar el mismo spot como ejercicio, abre el [Entrenador GTO](/es/solver) desde la barra lateral — te reparte una mano al azar y, en cuanto eliges una acción, te enseña la frecuencia mezclada y el **EV perdido (bb)** de tu elección. Tu historial se queda en tu propio navegador.
+Todas las cifras de aquí aparecen si abres el [solver GTO](/es/solver) y entras en **Spots de estudio → "Board con A pareado" → [⚡ Ver resultados]**. Si prefieres jugar el mismo spot como ejercicio, abre el [Entrenador GTO](/es/solver) desde la barra lateral — te reparte una mano al azar y, en cuanto eliges una acción, te enseña la frecuencia mezclada y el **EV perdido (bb)** de tu elección. Tu historial se guarda por defecto en este dispositivo; si inicias sesión con una cuenta de HoldemMaster, el historial de práctica de los Spots de estudio y las preguntas del día se sincroniza entre tus dispositivos.
 
 **Alterna entre este spot y el board pareado 6-6-3.** Los dos son boards pareados y las matrices tienen colores opuestos. Recorre los Spots de estudio una vez y queda una sola conclusión: mira primero no **qué board es**, sino **a qué rango se engancha este board**. Gratis, sin instalar nada y sin cuenta.
 

@@ -9,7 +9,7 @@ export const POST: Post = {
   tldr: "Pada 6♣6♦3♥, big blind check 97,0% meski memiliki 26 combo trips, lebih banyak daripada 20 milik button. Trips hanya sebagian kecil range: 18,4% range BB memiliki hand di atas pair bawaan board, sementara 81,6% sisanya mengandalkan high card. Pocket pair yang lebih tinggi dari enam menjadi kuat; TT memiliki equity 76,0% dalam contoh ini.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-24",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-24",
   readTime: "10 mnt",
   emoji: "👯",
@@ -178,7 +178,7 @@ Penjelasannya terkait hand yang bisa membayar. Trips yang kuat dan quads dapat m
 
 **Tabel ini juga bukan aturan “kicker lebih tinggi berarti bet lebih besar”.** Frekuensinya justru K♠6♠ 7,8% < Q♥6♥ 7,9% < **J♥6♥ 9,0%**. Perbedaan itu tidak boleh dijelaskan dengan klaim bahwa K atau Q suited memblokir trips lawan lebih banyak. Pada board ini, kartu enam yang Anda pegang sudah menghilangkan kombinasi 6x suited dengan suit tersebut. K6o dan Q6o tidak berada dalam range lawan, sehingga K/Q pendamping tidak menambah blocker trips melalui jalur itu. Nilai output tetap benar; penyebab khusus selisih kecilnya tidak dapat ditetapkan dari tabel ini saja.
 
-6x juga bukan mayoritas seluruh bet besar. Ada 26 combo dari total 486; kontribusi berbobotnya hanya sekitar seperempat dari total kira-kira 9,7 combo yang bet besar. Kategori lain menyumbang sisanya.
+6x juga bukan mayoritas seluruh bet besar. Ada 26 combo dari total 486; kontribusi berbobotnya hanya sekitar 1,2 dari total kira-kira 9,6 combo yang bet besar, atau sekitar seperdelapan (13,0%). Sebagian besar sisanya datang dari hand yang sama sekali tidak memegang enam.
 
 Karena total lead hanya 3,0%, situasi ini jarang muncul. Pelajarannya tetap berguna: **ukuran taruhan mengikuti interaksi seluruh range, bukan sekadar nama hand**.
 
@@ -201,7 +201,7 @@ Pada board berpasangan, tidak ada hand yang secara literal hanya As-high: semua 
 ## Apa yang dapat Anda terapkan saat bermain?
 
 - **Jangan meremehkan pocket pair menengah pada board rendah berpasangan.** 77 hingga TT memiliki equity sekitar 68–76% di sini. 44 dan 55 juga melampaui rata-rata range. Pocket 22 berbeda: ia merealisasikan sekitar dua pertiga bagian equity karena berada di bawah kedua rank board.
-- **Trips di flop bukan alasan otomatis untuk lead.** Combo enam lebih sering lead daripada rata-rata range, tetapi masih check kira-kira sembilan dari sepuluh kali. Check memberi hand lebih lemah kesempatan memasukkan uang dan mempertahankan pilihan check-raise atau call-down. Namun, **nilai tambahan check-raise belum diukur**: hasil ini tidak menyediakan frekuensi c-bet BTN ataupun EV check-raise.
+- **Trips di flop bukan alasan otomatis untuk lead.** Combo enam lead 6,8%, lebih sering daripada hand two pair atau kartu tinggi mana pun, dan hanya lebih jarang daripada full house 33 (8,8%) serta satu-satunya combo quads 6♠6♥ (9,6%); combo enam tetap check kira-kira sembilan dari sepuluh kali. Check memberi hand lebih lemah kesempatan memasukkan uang dan mempertahankan pilihan check-raise atau call-down. Namun, **nilai tambahan check-raise belum diukur**: hasil ini tidak menyediakan frekuensi c-bet BTN ataupun EV check-raise.
 - **Evaluasi As-high terhadap taruhan kecil, jangan fold otomatis.** Sebanyak 79,7% range BTN juga hanya memakai pair board: Ace-High 31,9%, King-High 15,1%, dan Belum jadi 32,7%.
 - **Kicker menentukan trips mana yang unggul.** Setelah Anda memegang satu kartu enam, quads 6♠6♥ tidak mungkin ada di tangan lawan. Tinggal tiga combo 33 yang merupakan kategori lebih tinggi. Akan tetapi, hanya trips dengan kicker As yang tidak kalah dari trips lain. Kicker kedua di flop ini adalah tiga dari board; kartu di samping enam menjadi pembeda. Dengan 76s, Anda masih kalah dari A6, K6, Q6, dan 86 milik BTN. Trips berkicker lemah lebih cocok dinilai sebagai bluff-catcher daripada alasan otomatis membesarkan pot.
 
@@ -214,7 +214,7 @@ Pada board berpasangan, tidak ada hand yang secara literal hanya As-high: semua 
 
 Buka [solver GTO gratis](/id/solver), lalu **Spot belajar → Board paired → ⚡ Lihat hasil**.
 
-Cari **satu baris 6♠6♥** di tabel per-hand. Itulah satu-satunya quads yang mungkin. EQR-nya **359,7%**, tertinggi dalam seri ini; pembanding berikutnya ialah 6♥6♣ pada [flop rendah rainbow](/id/blog/low-board-check-raise "thumb:/images/gto-srp-low-rainbow-oop-id.webp") dengan **318,9%**. Bandingkan dengan tiga baris 33 untuk melihat betapa sedikit combo yang mengisi puncak range.
+Cari **satu baris 6♠6♥** di tabel per-hand. Itulah satu-satunya quads yang mungkin. EQR-nya **359,7%**, tertinggi dalam seri ini. Peringkat kedua secara keseluruhan ialah 88 milik BTN di [pot 3-bet pada board rendah](/id/blog/3bet-pot-low-board) dengan **346,0%**; di sisi BB, peringkat berikutnya ialah 6♥6♣ pada [flop rendah rainbow](/id/blog/low-board-check-raise "thumb:/images/gto-srp-low-rainbow-oop-id.webp") dengan **318,9%**. Bandingkan dengan tiga baris 33 untuk melihat betapa sedikit combo yang mengisi puncak range.
 
 Buka **Trainer GTO** di sidebar untuk berlatih dengan bobot range yang sebenarnya dan membaca kerugian EV dari keputusan Anda. Gratis, tanpa instalasi, serta dapat digunakan tanpa akun.
 

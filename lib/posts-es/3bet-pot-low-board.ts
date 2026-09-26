@@ -27,7 +27,7 @@ export const POST: Post = {
   tldr: "Tras un 3-bet de la ciega grande y un call del botón, el flop 8♦5♣2♠ recibe una apuesta de dos tercios del bote el 97.8% de las veces. Lo raro: de los 83 combos de la ciega grande, exactamente tres ligaron pareja con este board — los A5s — y ni 88 ni 55 ni 22 están en el rango. La apuesta entra igual porque el rango se parte en 36 combos de sobrepares y 40 combos de A-high sin nada en medio. Una forma polarizada apuesta grande.",
   category: "strategy",
   date: "2026-09-02",
-  updated: "2026-09-02",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-02",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -181,7 +181,7 @@ La razón es dónde viven los sets. **El botón es el único jugador que puede t
 
 ## Compruébalo tú mismo
 
-Todas las cifras de aquí aparecen si abres el [solver GTO](/es/solver) y entras en **Spots de estudio → "Board bajo y seco" → [⚡ Ver resultados]**. Si prefieres jugar el mismo spot como ejercicio, abre el [Entrenador GTO](/es/solver) desde la barra lateral — te reparte una mano al azar y, en cuanto eliges una acción, te enseña la frecuencia mezclada y el **EV perdido (bb)** de tu elección. Tu historial se queda en tu propio navegador.
+Todas las cifras de aquí aparecen si abres el [solver GTO](/es/solver) y entras en **Spots de estudio → "Board bajo y seco" → [⚡ Ver resultados]**. Si prefieres jugar el mismo spot como ejercicio, abre el [Entrenador GTO](/es/solver) desde la barra lateral — te reparte una mano al azar y, en cuanto eliges una acción, te enseña la frecuencia mezclada y el **EV perdido (bb)** de tu elección. Tu historial se guarda por defecto en este dispositivo; si inicias sesión con una cuenta de HoldemMaster, el historial de práctica de los Spots de estudio y las preguntas del día se sincroniza entre tus dispositivos.
 
 Busca la **fila de "Trío" que falta** en el panel de Manos. Después cambia el jugador a IP (BTN (caller)) y aparece con 6.3%. Esa sola línea es toda la historia de quién tiene la parte alta de este board. Gratis, sin instalar nada y sin cuenta.
 

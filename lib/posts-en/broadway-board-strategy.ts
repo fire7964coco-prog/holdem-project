@@ -53,7 +53,7 @@ export const POST: Post = {
   tldr: "On Q♠J♦T♠ after a button open and a big blind call, the big blind checks 99.9% — even though 68.4% of its range holds a draw. The cause is nut advantage: straights 10.5% against 7.1%, sets 2.0% against 0.7%, overpairs 2.6% against 0%. Equity realization splits 77.9% against 119.4%, the widest gap of the three dry-to-wet flops so far.",
   category: "strategy",
   date: "2026-08-19",
-  updated: "2026-09-02",
+  updated: "2026-09-26",
   readTime: "10 min",
   emoji: "🎴",
   image: "/images/gto-srp-broadway-oop-en.webp",
@@ -141,7 +141,7 @@ The combinations match exactly. Only three hands make a straight here: ==AK (A-K
 | On Q-J-T | Nearly even — 46.7% against 53.3% | Lopsided — straights, sets and overpairs all favor the button |
 | What it drives | Whether you bet at all | **How big you bet, and who can raise** |
 
-Average equity says this flop is close to a coin flip. The top of the range says one player can never get raised off a big bet and the other can never make one. When the two disagree, **nut advantage decides the sizing** — and, for the player without it, decides that betting first is not an option.
+Average equity says this flop is close to a coin flip. The top of the range says one player holds most of the hands that stand up to a big bet, and the other holds few that can push back. When the two disagree, **nut advantage decides the sizing** — and, for the player without it, decides that betting first is not an option.
 
 ## How much of each range is drawing?
 
@@ -173,7 +173,7 @@ On the dry king-high flop, the same calculation came to **3.6%** — sets 1.9%, 
 | Dry king-high flop (K-8-3) | 3.6% |
 | **Broadway flop (Q-J-T)** | **21.0%** |
 
-**Same "top pair", roughly six times the risk.** On top of that, 68.7% of the opponent's range keeps drawing at you through the turn and river. Pushing one pair for three streets on Q-J-T means the big action that comes back is almost never one you beat. This is a pot to control, not to build.
+**Same "top pair", roughly six times the risk.** Separately, 68.7% of the opponent's range holds some draw — a different axis that overlaps the made hands already ahead of you, not an extra 68.7% on top — so even hands you beat now can pass you on the turn and river. Pushing one pair for three streets on Q-J-T means the big action that comes back is almost never one you beat. This is a pot to control, not to build.
 
 ## Why is EQR 78 against 119 when equity is 47 against 53?
 
@@ -199,7 +199,7 @@ Three spots make it look like *busier board, wider gap*. **That rule breaks in t
 
 ## How should the button bet a dynamic board like this?
 
-**Not small-only — the large size comes into the mix here.** With the nut advantage, a large bet is hard to raise: the straights, sets and overpairs are all on one side, so the other player has little to push back with.
+**Not small-only — the large size comes into the mix here.** With the nut advantage, a large bet is hard to raise: the straights, sets and overpairs sit mostly on one side (the big blind holds just 7.1% straights and 0.7% sets), so the other player has little to push back with.
 
 That is the opposite of the dry-board recipe. There, small and frequent worked because the goal was folding out air. Here, **68.4%** of the opponent's range is drawing, so **folds are expensive to buy** — the small size alone cannot do the work, and the large one has to come along. ⚠ Do not push that as far as "so the frequency drops": this study spot solves the flop's first action only, so the button's actual sizing split and c-bet frequency are not in it. The board-by-board version is in [continuation bet strategy](/en/blog/holdem-continuation-bet "thumb:/images/holdem-continuation-bet-hero.webp").
 
@@ -233,7 +233,7 @@ A. Three: AK for A-K-Q-J-T, K9 for K-Q-J-T-9, and 98 for Q-J-T-9-8. None of the 
 
 **Q. Isn't a wet board the place to semi-bluff lead?**
 
-A. No — the count of draws alone does not decide it. Made-hand distribution, nut advantage and blockers have to be weighed together. Here open-enders are 28.7% against 27.7% — effectively identical — while completed straights are 7.1% against 10.5% in the button's favor. A lead needs the top of the range on your side, not the average, and this flop is exactly the reverse. There is a board in the study set where the condition genuinely is met — the [middle connected 9-8-7](/en/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-en.webp"), where the big blind leads instead of checking.
+A. No — the count of draws alone does not decide it. Made-hand distribution, nut advantage and blockers have to be weighed together. Here open-enders are 28.7% against 27.7% — effectively identical — while completed straights are 7.1% against 10.5% in the button's favor. A lead needs the top of the range on your side, not the average, and this flop is exactly the reverse. There is a board in the study set where the condition genuinely is met — the [middle connected 9-8-7](/en/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-en.webp"), where the big blind leads 23.7% of the time instead of almost never.
 
 **Q. What is the difference between range advantage and nut advantage?**
 

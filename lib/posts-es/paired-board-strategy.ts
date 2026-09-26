@@ -27,7 +27,7 @@ export const POST: Post = {
   tldr: "En el board pareado bajo 6♣6♦3♥ la ciega grande hace check el 97.0%. Lo raro es que tiene más trips que el botón: 26 combos con un seis contra 20. Hace check igual, porque solo el 18.4% de su rango tiene algo más allá de la pareja del board, y el otro 81.6% es una pelea de cartas altas que gana el botón. Lo que sí gana valor es cualquier par servido por encima del seis — TT tiene un 76.0% de equity aquí.",
   category: "strategy",
   date: "2026-09-02",
-  updated: "2026-09-24",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -203,9 +203,9 @@ Los trips y los quads sí toman el tamaño pequeño de vez en cuando — K♠6�
 
 Todo se reduce a con qué puede pagar el rival. Un seis es casi imbatible aquí, así que la idea es construir bote — y como la mayoría de los seises están haciendo check de todos modos, **los pocos que sí apuestan tienen todas las razones para ir grande.** La doble pareja va por detrás de cualquier seis y de los tres 33, así que no tiene ningún interés en un bote grande. La clase que quiere bote grande rechaza el tamaño pequeño; la clase que solo quiere un call rechaza el grande.
 
-⚠ **No leas esto como "mientras mejor el kicker, más grande la apuesta" — la tabla va al revés.** La frecuencia de apuesta grande va K♠6♠ 7.8% < Q♥6♥ 7.9% < **J♥6♥ 9.0%**: el kicker más débil es el que más apuesta. La razón son los blockers, no los kickers. J6s, T6s y 96s no están en el rango de apertura del botón, así que tener uno no le quita ningún combo de trips al botón. K6 y Q6 son manos que el botón también tiene, así que sacar una del mazo adelgaza justo el rango que pagaría.
+⚠ **No leas esto como "mientras mejor el kicker, más grande la apuesta" — la tabla va al revés.** La frecuencia de apuesta grande va K♠6♠ 7.8% < Q♥6♥ 7.9% < **J♥6♥ 9.0%**: el kicker más débil es el que más apuesta. Tampoco lo explican los blockers. El seis que tengas le quita al botón los trips de su propio palo — con K♠6♠, Q♥6♥ o J♥6♥ al botón le quedan exactamente 10 de sus 20 — y el kicker no le quita nada más, porque el botón abre K6 y Q6 solo suited y tu seis ya se llevó ese palo. La tabla muestra la mezcla calculada; no aísla la causa de una diferencia tan pequeña.
 
-Y esto no explica todas las apuestas grandes — los seises son 26 de 486 combos, aproximadamente una cuarta parte del total de apuesta grande, que ronda los 9.7 combos. El resto viene de otras clases.
+Y los seises no explican la mayoría de las apuestas grandes. Son 26 de 486 combos y aportan unos 1.2 de los cerca de 9.6 combos de apuesta grande — alrededor de una octava parte (13.0%). La mayor parte del resto viene de manos que no tienen ningún seis.
 
 La ciega grande apuesta primero solo el 3.0% del tiempo, así que rara vez te toparás con esto en la mesa. Pero es una demostración limpia de un principio: **el tamaño lo elige el rango, no la mano.**
 
@@ -228,7 +228,7 @@ Para lo que sirve esta aritmética, entonces, no es para "llegar al 75%" sino pa
 ## ¿Qué cambia en la mesa?
 
 - **No subestimes los pares servidos medianos en boards pareados bajos.** De 77 a TT tienes entre 68 y 76% de equity aquí, la parte más alta del rango que paga. Pero el piso es real: 44 y 55 siguen por encima del promedio del rango, mientras que 22 conserva solo dos tercios de lo que vale su equity, porque liga por debajo de las dos cartas del board.
-- **Ligar trips no es motivo para apostar primero.** Los seises apuestan primero más que cualquier otra clase aquí, y aun así hacen check nueve de cada diez veces. Apostar primero solo hace foldear a las manos que ya le ganas; hacer check deja que esas manos metan el dinero solas, y te deja un check-raise o un call-down. ⚠ Lo que este solve no te puede decir es *cuánto* más gana la línea de check-raise: el spot de estudio resuelve **solo la primera acción del flop**, así que la frecuencia de c-bet del botón y cualquier EV de check-raise sencillamente no existen ahí dentro.
+- **Ligar trips no es motivo para apostar primero.** Los seises apuestan primero el 6.8% — más que cualquier doble pareja o carta alta, y menos solo que los full houses de 33 (8.8%) y el único combo de quads, 6♠6♥ (9.6%) — y aun así hacen check nueve de cada diez veces. Apostar primero solo hace foldear a las manos que ya le ganas; hacer check deja que esas manos metan el dinero solas, y te deja un check-raise o un call-down. ⚠ Lo que este solve no te puede decir es *cuánto* más gana la línea de check-raise: el spot de estudio resuelve **solo la primera acción del flop**, así que la frecuencia de c-bet del botón y cualquier EV de check-raise sencillamente no existen ahí dentro.
 - **No foldees A-high ante una sola apuesta pequeña.** El 79.7% del rango del botón tampoco tiene nada más allá de la pareja del board — A-high 31.9%, K-high 15.1% y sin jugada 32.7%.
 - **Tu kicker decide la mano.** Solo tres combos le ganan de frente a los trips — los tres full houses de 33. (Los quads quedan fuera de la cuenta: en cuanto tú tienes un seis, 6♠6♥ no puede existir, así que los cuatro combos contados en la sección de full houses son tres desde tu asiento.) Y ni eso se sostiene si tu kicker no es un as. El segundo kicker lo fija el 3 del board, así que la única carta al lado de tu seis es toda la mano: con 76s, el A6, K6, Q6 y 86 del botón te tienen dominado. Trips con kicker débil es un bluff catcher, no una mano para construir bote.
 
@@ -241,7 +241,7 @@ Para lo que sirve esta aritmética, entonces, no es para "llegar al 75%" sino pa
 
 Abre el [solver GTO gratuito](/es/solver) y ve a **Spots de estudio → Board pareado → [⚡ Ver resultados]**.
 
-Lo que hay que buscar es **la única fila de 6♠6♥** en la tabla por mano — los únicos quads que este board permite y, con su **359.7%**, la realización de equity más alta de toda esta serie (la segunda es 6♥6♣ en el [flop bajo y rainbow](/es/blog/low-board-check-raise "thumb:/images/gto-srp-low-rainbow-oop-es.webp") con **318.9%**). Compárala con las tres filas de 33 justo debajo y verás qué pocos combos contiene de verdad la cima de un board pareado.
+Lo que hay que buscar es **la única fila de 6♠6♥** en la tabla por mano — los únicos quads que este board permite y, con su **359.7%**, la realización de equity más alta de toda esta serie (la segunda es el 88 del botón en el [bote de 3-bet con board bajo](/es/blog/3bet-pot-low-board) con **346.0%**; del lado de la ciega grande, la siguiente es 6♥6♣ en el [flop bajo y rainbow](/es/blog/low-board-check-raise "thumb:/images/gto-srp-low-rainbow-oop-es.webp") con **318.9%**). Compárala con las tres filas de 33 justo debajo y verás qué pocos combos contiene de verdad la cima de un board pareado.
 
 Después abre el **Entrenador GTO** en la barra lateral: te reparte una mano usando los pesos reales del rango y califica tu acción en ciegas grandes perdidas. Gratis, sin instalar nada, sin cuenta.
 

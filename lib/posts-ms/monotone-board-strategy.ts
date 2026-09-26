@@ -9,7 +9,7 @@ export const POST: Post = {
   tldr: "Pada Q♠9♠2♠, BB check 88.8%, bet kecil 8.0% dan bet besar hanya 3.2%. Apabila tiga kad flop sama suit, bet besar tanpa flush semakin menumpukan tangan yang call kepada flush. Nut flush pun check 69.9% secara purata; flush bukan nuts lebih kerap check, iaitu 81.4%. Angka tindakan ini ialah keputusan pertama BB, bukan strategi tindakan susulan BTN.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-15",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-02",
   readTime: "10 minit",
   emoji: "♠️",
@@ -130,7 +130,7 @@ Equity berubah sedikit sahaja — 94% berbanding 97.7% — tetapi EQR jatuh kepa
 
 ⚠ Baris flush draw ialah **hasil penjumlahan**: solver menyenaraikan "Flush draw" dan "Combo draw" secara berasingan. Tangan dengan satu spade boleh masuk salah satu kategori itu. Jumlahnya ialah ==20.5 + 5.1 = 25.6%== bagi BB dan ==24.1 + 5.1 = 29.2%== bagi BTN. Perbezaan ini penting apabila anda menyemak jadual dengan skrin.
 
-Pembahagian itu bermula pada preflop. **BB mempertahankan tangan suited lemah dengan kos rendah** — J5s, 85s dan 74s termasuk dalam range call BB; kombinasi spadenya menjadi flush. BTN tidak open tangan tersebut dalam range ini.
+Pembahagian itu bermula pada preflop. **BB mempertahankan tangan suited lemah dengan kos rendah** — J4s, J5s dan 85s termasuk dalam range call BB; kombinasi spadenya menjadi flush. BTN tidak open tangan tersebut dalam range ini.
 
 Sebaliknya, BTN mempunyai jauh lebih banyak **Ace-x dan King-x offsuit dengan satu spade.** Ia belum menjadi flush, tetapi mempunyai draw. Di sinilah A♠ menjadi istimewa: kad itu boleh membentuk nut flush sambil memberitahu anda bahawa lawan **tidak mungkin** mempunyai nut flush sekarang.
 
@@ -190,7 +190,7 @@ A. Tidak. Dalam solve ini, lapan kombo nut flush check antara 52.7% dengan 84.2%
 
 **Q. Mengapa BB mempunyai lebih banyak flush berbanding BTN?**
 
-A. BB sudah membayar sebahagian kos melalui blind dan mempertahankan tangan suited murah seperti J5s, 85s dan 74s. Kombinasi spadenya menjadi flush pada board ini. BTN tidak open tangan tersebut dalam range contoh, sebab itulah flush BTN 5.7% berbanding BB 7.1%.
+A. BB sudah membayar sebahagian kos melalui blind dan mempertahankan tangan suited murah seperti J4s, J5s dan 85s. Kombinasi spadenya menjadi flush pada board ini. BTN tidak open tangan tersebut dalam range contoh, sebab itulah flush BTN 5.7% berbanding BB 7.1%.
 
 **Q. Berapa kerap flush terbentuk terus pada flop?**
 

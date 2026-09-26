@@ -9,7 +9,7 @@ export const POST: Post = {
   tldr: "Pada flop berpasangan rendah 6♣6♦3♥, BB check 97.0% walaupun mempunyai lebih banyak trips: 26 kombo 6x berbanding BTN 20. Hanya 18.4% range BB mempunyai sesuatu melebihi pair pada board; baki 81.6% banyak bergantung pada kad tinggi, dan BTN lebih kuat pada bahagian itu. Pocket pair melebihi enam pula meningkat nilainya: equity TT ialah 76.0%.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-24",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-24",
   readTime: "10 minit",
   emoji: "👯",
@@ -178,7 +178,7 @@ Asasnya ialah apa yang boleh digunakan lawan untuk call. Enam berada tinggi dala
 
 ⚠ **Jangan baca ini sebagai "kicker lebih baik, bet lebih besar" — jadual menunjukkan arah sebaliknya.** Kekerapan bet besar ialah K♠6♠ 7.8% < Q♥6♥ 7.9% < **J♥6♥ 9.0%**. Namun, jangan pula menyandarkan perbezaan ini kepada K♠ atau Q♥ yang kononnya menyekat lebih banyak trips lawan. Enam di tangan anda sudah mengeluarkan 6x suited dengan suit itu, dan BTN tidak mempunyai K6o atau Q6o. Kicker tersebut tidak menambah blocker trips. Kekerapan paparan kekal sah, tetapi sebab khusus perbezaannya tidak dapat diasingkan daripada jadual ini sahaja.
 
-Ini juga bukan keseluruhan bet besar. Kumpulan enam hanya 26 daripada 486 kombo, dan sumbangan berwajaran tindakannya sekitar satu perempat daripada jumlah bet besar kira-kira 9.7 kombo. Selebihnya datang daripada kategori lain.
+Ini juga bukan keseluruhan bet besar. Kumpulan enam hanya 26 daripada 486 kombo, dan sumbangan berwajaran tindakannya hanya kira-kira 1.2 daripada jumlah bet besar sekitar 9.6 kombo — lebih kurang satu perlapan (13.0%). Kebanyakan selebihnya datang daripada tangan yang langsung tidak memegang enam.
 
 BB lead hanya 3.0%, jadi situasi ini jarang muncul dalam permainan. Namun prinsipnya jelas: **saiz dipilih dalam konteks range, bukan kekuatan satu tangan sahaja.**
 
@@ -201,7 +201,7 @@ Maka kegunaan pengiraan ini bukan "capai 75%", tetapi **"jangan fold semata-mata
 ## Apakah yang berubah semasa bermain?
 
 - **Jangan merendahkan nilai pocket pair sederhana pada board berpasangan rendah.** 77 hingga TT mempunyai equity 68–76%, di bahagian teratas range call. Tetapi batas bawah itu nyata: 44 dan 55 masih melebihi purata range, manakala 22 hanya merealisasikan dua pertiga nilai equity kerana pairnya lebih rendah daripada kedua-dua rank board.
-- **Mendapat trips pada flop bukan alasan untuk lead.** Kumpulan enam lebih cenderung lead berbanding kategori lain, tetapi masih check kira-kira sembilan daripada sepuluh kali. Lead membuat banyak tangan lebih lemah fold; check membolehkan tangan itu memasukkan cip sendiri, serta membuka pilihan check-raise atau call-down. ⚠ Solve ini tidak menunjukkan *berapa banyak* tambahan EV bagi laluan check-raise: ia hanya mengira **tindakan pertama flop**, jadi kekerapan c-bet BTN dan EV check-raise tidak tersedia.
+- **Mendapat trips pada flop bukan alasan untuk lead.** Kumpulan enam lead 6.8% — lebih kerap daripada mana-mana tangan two pair atau kad tinggi, dan hanya kurang daripada full house 33 (8.8%) serta satu-satunya kombo quads 6♠6♥ (9.6%) — dan masih check kira-kira sembilan daripada sepuluh kali. Lead membuat banyak tangan lebih lemah fold; check membolehkan tangan itu memasukkan cip sendiri, serta membuka pilihan check-raise atau call-down. ⚠ Solve ini tidak menunjukkan *berapa banyak* tambahan EV bagi laluan check-raise: ia hanya mengira **tindakan pertama flop**, jadi kekerapan c-bet BTN dan EV check-raise tidak tersedia.
 - **Jangan automatik fold Ace-high kepada satu bet kecil.** 79.7% range BTN juga tidak mempunyai sesuatu melebihi pair board: Ace-high 31.9%, King-high 15.1% dan Tiada made hand 32.7%.
 - **Kicker menentukan kekuatan trips anda.** Tiga kombo sahaja menewaskan trips tanpa bergantung pada kicker: tiga full house 33. (Quads tidak lagi mungkin bagi lawan selepas anda sendiri memegang satu enam. Empat kombo dalam bahagian terdahulu menjadi tiga dari sudut tangan anda.) Namun, hanya trips dengan kicker Ace selamat daripada trips lebih tinggi. Kicker kedua ditetapkan oleh tiga pada board, jadi kad di sebelah enam anda sangat menentukan. Dengan 76s, A6, K6, Q6 dan 86 BTN semuanya mendominasi anda. Trips dengan kicker lemah ialah bluff-catcher, bukan alasan untuk membesarkan pot tanpa syarat.
 
@@ -214,7 +214,7 @@ Maka kegunaan pengiraan ini bukan "capai 75%", tetapi **"jangan fold semata-mata
 
 Buka [solver GTO percuma](/ms/solver), kemudian pilih **Spot belajar → Board paired → [⚡ Lihat hasil]**.
 
-Cari **satu baris 6♠6♥** dalam jadual setiap tangan — satu-satunya quads pada board ini. EQR **359.7%** ialah yang tertinggi antara contoh tangan yang dibincangkan dalam siri ini; kedua ialah 6♥6♣ pada [flop rendah rainbow](/ms/blog/low-board-check-raise "thumb:/images/gto-srp-low-rainbow-oop-ms.webp") dengan **318.9%**. Bandingkan dengan tiga baris 33 di bawahnya untuk melihat betapa kecilnya jumlah kombo di bahagian paling atas board berpasangan.
+Cari **satu baris 6♠6♥** dalam jadual setiap tangan — satu-satunya quads pada board ini. EQR **359.7%** ialah yang tertinggi antara contoh tangan yang dibincangkan dalam siri ini; kedua secara keseluruhan ialah 88 milik BTN dalam [pot 3-bet pada board rendah](/ms/blog/3bet-pot-low-board) dengan **346.0%**, manakala di pihak BB, tempat kedua ialah 6♥6♣ pada [flop rendah rainbow](/ms/blog/low-board-check-raise "thumb:/images/gto-srp-low-rainbow-oop-ms.webp") dengan **318.9%**. Bandingkan dengan tiga baris 33 di bawahnya untuk melihat betapa kecilnya jumlah kombo di bahagian paling atas board berpasangan.
 
 Kemudian buka **Trainer GTO** pada bar sisi. Tangan dipilih mengikut wajaran range sebenar, dan maklum balas menunjukkan kerugian EV dalam big blind. Percuma, tanpa pemasangan dan tanpa akaun wajib.
 

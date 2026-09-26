@@ -26,7 +26,7 @@ export const POST: Post = {
   tldr: "Tras una apertura de la ciega pequeña y un call de la ciega grande, el flop K♥10♦6♠ recibe una apuesta el 67.4% de las veces y un check el 32.6%. En los siete botes de subida simple anteriores de esta serie el jugador fuera de posición apostaba solo entre 0.1% y 23.7% — y cambiaron dos cosas, no una. Aquí el jugador fuera de posición es el que subió y no el que pagó, y el board le viene bien a ese rango. Juntas, llevan la realización de equity fuera de posición al 103.1%.",
   category: "strategy",
   date: "2026-09-02",
-  updated: "2026-09-02",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-02",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -219,7 +219,7 @@ El 96.1% de la ciega grande es la otra cara de la misma historia. **Tiene posici
 
 ## Compruébalo tú mismo
 
-Todas las cifras de aquí aparecen si abres el [solver GTO](/es/solver) y entras en **Spots de estudio → "Board K-T high" → [⚡ Ver resultados]**. Si prefieres jugar el mismo spot como ejercicio, abre el [Entrenador GTO](/es/solver) desde la barra lateral — te reparte una mano al azar y, en cuanto eliges una acción, te enseña la frecuencia mezclada y el **EV perdido (bb)** de tu elección. Tu historial se queda en tu propio navegador.
+Todas las cifras de aquí aparecen si abres el [solver GTO](/es/solver) y entras en **Spots de estudio → "Board K-T high" → [⚡ Ver resultados]**. Si prefieres jugar el mismo spot como ejercicio, abre el [Entrenador GTO](/es/solver) desde la barra lateral — te reparte una mano al azar y, en cuanto eliges una acción, te enseña la frecuencia mezclada y el **EV perdido (bb)** de tu elección. Tu historial se guarda por defecto en este dispositivo; si inicias sesión con una cuenta de HoldemMaster, el historial de práctica de los Spots de estudio y las preguntas del día se sincroniza entre tus dispositivos.
 
 Mira primero las etiquetas de jugador de arriba: **"OOP (SB (open-raiser))"**. En cuanto veas que se diferencia del "OOP (BB (caller))" de los spots anteriores, lo que este artículo llama "cambió el papel" se entiende al instante. Gratis, sin instalar nada y sin cuenta.
 

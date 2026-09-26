@@ -75,7 +75,7 @@ export const POST: Post = {
   tldr: "On A♥7♦2♣ after a button open and a big blind call, the big blind checks 98.2% of its range — top pair, two pair and sets included. Equity is nearly even at 45.1% against 54.9%; what splits the two seats is equity realization, 84.0% out of position against 113.1% in position.",
   category: "strategy",
   date: "2026-08-19",
-  updated: "2026-09-02",
+  updated: "2026-09-26",
   readTime: "9 min",
   emoji: "🅰️",
   image: "/images/gto-srp-dry-ace-oop-en.webp",
@@ -140,7 +140,7 @@ Out of 464 combos, about eight combos bet — 1.9% across both sizes, rounded. I
 
 Because the pot is easier to win by checking than by betting into it. Leading with one pair, out of position, against the player who took the initiative preflop is the expensive way to play a hand you are happy to see showdown with.
 
-Three things are working against a lead. First, **equity realization**: the numbers below show the big blind banking 84.0% of its equity and the button 113.1%. Building a bigger pot out of position makes that gap cost more, not less. Second, the button c-bets this flop at a high frequency — **checking keeps its bluffs in the pot**, while leading lets them fold and take nothing. Third, the big blind's range is capped: with no AA, AK or AQ in it, a lead invites a raise from exactly the hands it cannot continue against.
+Three things are working against a lead. First, **equity realization**: the numbers below show the big blind banking 84.0% of its equity and the button 113.1%. Building a bigger pot out of position makes that gap cost more, not less. Second, the button c-bets this flop at a high frequency — **checking keeps its bluffs in the pot**, while leading lets them fold and take nothing. Third, the big blind's range is capped: with no AA, AK or AQ in it, a lead invites raises from strong aces, and most of the big blind's range cannot continue against them — only 24 combos can stand a raise (the sets 77 and 22, the two pair A7 and A2). (No raise node is solved here.)
 
 What a lead does **not** do is fold out better hands. The button's opening range keeps every ace down to A2, plus underpairs and sevens, so plenty of worse hands would call — that is not the problem. The problem is the pot you are building to win it.
 
@@ -150,7 +150,7 @@ It also matters that "an ace" is not one hand type. A9 loses kicker battles to A
 
 ## What is a dry board, and why does this one favor the raiser?
 
-A dry board is one with no flush draw and almost no straight draw — three unconnected cards in three different suits, like A♥ 7♦ 2♣. Almost nothing is chasing anything: **71.3% of the big blind's range has no draw**, and most of the rest is a backdoor flush draw. It favors the raiser because the button's opening range keeps AK, AQ and AJ while the big blind's calling range does not — the aces are stacked on one side, and there are no draws to even out later.
+A dry board is one with no flush draw and almost no straight draw — three unconnected cards in three different suits, like A♥ 7♦ 2♣. Almost nothing is chasing anything: **71.3% of the big blind's range has no draw**, and most of the rest is a backdoor flush draw. It favors the raiser because the button's opening range keeps AK and AQ while the big blind's calling range tops out at AJ — the aces are stacked on one side, and there are no draws to even out later.
 
 ![Range composition infographic comparing the big blind and button hand categories on a dry ace-high board, green and gold bars side by side](/images/gto-srp-dry-ace-ranges-en.webp "A♥7♦2♣ · category split — the button holds more top pair, the big blind more air")
 

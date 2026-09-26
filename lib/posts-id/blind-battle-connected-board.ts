@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Setelah small blind open dan big blind call, flop 7♦6♦5♣ menghasilkan bet hanya 9,6% dan check 90,4%. Pot, stack, SPR, pilihan ukuran, dan kedua range preflop sama dengan contoh sebelumnya. Hanya tiga kartu board yang berubah, tetapi frekuensi bet turun dari 67,4% menjadi 9,6%. Keunggulan kartu tinggi opener hilang pada board rendah yang terhubung: equity berbalik menjadi 49,6% versus 50,4%, sementara EQR SB turun ke 85,3%.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-15",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-02",
   readTime: "10 mnt",
   emoji: "🪜",
@@ -199,7 +199,7 @@ Bet 9,6% tersusun dari sedikit value dan beberapa draw. Kelas 8-8 berada di punc
 
 ## Cara mengecek hasilnya sendiri
 
-Buka [solver GTO](/id/solver), lalu pilih **Spot belajar → "Board rendah terhubung, two-tone" → ⚡ Lihat hasil**. Untuk mengerjakannya sebagai latihan keputusan, buka [Trainer GTO](/id/solver) dari menu samping. Trainer memberikan hand acak dan memperlihatkan frekuensi campuran serta **kerugian EV dalam bb** setelah Anda memilih aksi. Tanpa login, riwayat latihan tersimpan di browser yang Anda gunakan.
+Buka [solver GTO](/id/solver), lalu pilih **Spot belajar → "Board rendah terhubung, two-tone" → ⚡ Lihat hasil**. Untuk mengerjakannya sebagai latihan keputusan, buka [Trainer GTO](/id/solver) dari menu samping. Trainer memberikan hand acak dan memperlihatkan frekuensi campuran serta **kerugian EV dalam bb** setelah Anda memilih aksi. Secara default, riwayat latihan tersimpan di perangkat ini; dengan login ke akun HoldemMaster, riwayat latihan Spot belajar dan Tantangan Harian bisa disimpan di akun dan dilanjutkan di perangkat lain.
 
 **Bandingkan bergantian dengan "Board K-high dengan T"**, contoh sebelumnya. Keduanya berlabel "OOP (SB (opener))", dengan pot dan stack sama, tetapi warna matriks berubah drastis. Perbandingan ini memperlihatkan secara langsung dampak tiga kartu board. Gratis, tanpa instalasi, dan tanpa akun.
 

@@ -107,7 +107,7 @@ export const POST: Post = {
   tldr: "On the low rainbow flop 6♠5♥2♦ the big blind checks 96.8% and leads just 3.2% — even though its 48.3% equity is the second highest of the seven spots where it defends. Only one hand makes a straight here, 4-3, and neither range holds it. Nobody has a top end, so nobody leads out of position. The action comes later: re-solve the same tree to see past the flop and the big blind check-raises a 1.8bb bet 14.9% of the time, almost all of it draws.",
   category: "strategy",
   date: "2026-08-20",
-  updated: "2026-09-02",
+  updated: "2026-09-26",
   readTime: "11 min",
   emoji: "🌊",
   image: "/images/gto-srp-low-rainbow-oop-en.webp",
@@ -240,7 +240,7 @@ The number to compare it against is the [ace-high flop](/en/blog/a-high-board-cb
 
 **When the button bets, and often.** Facing a 1.8bb bet the big blind raises **14.9%** of the time.
 
-:::note[⚠ **This section comes from a different solve.** The study spot published in the app is flop-only — it stops at the first decision and its action chips are not clickable, so the responses to a bet are not in it. To get them we rebuilt the same tree (33% bet, 60% raise, 5.5bb pot, 97.5bb stack) and ran it: **190 iterations, exploitability 0.16, which is 0.29% of the pot.** Every number in the two tables below is from that run, not from the study spot.]:::
+:::note[⚠ **This section comes from a different solve.** The study spot published in the app is flop-only — it stops at the first decision and its action chips are not clickable, so the responses to a bet are not in it. To get them we rebuilt the same tree (33% bet, 60% raise, 5.5bb pot, 97.5bb stack) and ran it: **190 iterations, exploitability 0.16 in the engine's internal units (tenths of a big blind) — 0.016bb, or 0.29% of the 5.5bb pot.** Every number in the two tables below is from that run, not from the study spot.]:::
 
 First, what the button does when the action is checked to it:
 
@@ -304,7 +304,7 @@ And straight draws are what the solver chooses to spend that edge on.
 | Backdoor flush | **20.5%** | 18.5% |
 | No draw | 60.2% | **66.8%** |
 
-**Gutshots: 18.5% against 13.9%.** With sets split evenly at 1.8% and overpairs running 4.9% against 9.5%, the gutshot row is where the raising range comes from — the solver takes the group the big blind has more of and turns all of it into one action.
+**Gutshots: 18.5% against 13.9%.** With sets split evenly at 1.8% and overpairs running 4.9% against 9.5%, the gutshot row is where most of the raising range comes from — the solver leans on the group the big blind has more of, though not all of it raises: 18.5% of 487 is about 90 gutshot combos, more than the 69.7 raising combos in total, and even J4s and Q4s near the top of the list raise only 67–90%.
 
 ## Is 6-5-2 a wet board or a dry one?
 
@@ -358,7 +358,7 @@ A. All nine set combos (66, 55, 22), both combos of 65 suited, and then straight
 
 **Q. Is a check-raise allowed, and is it rude?**
 
-A. Legal everywhere, and the rule itself is covered in the [betting actions](/en/blog/holdem-betting-actions) guide. The etiquette worry is a leftover: some old home games banned check-raising by house rule, and the stigma outlived the rule. Nobody plays that way now, and the numbers above are the reason — take the check-raise out of the big blind's game on this flop and you delete 14.9% of its range with nothing to replace it.
+A. Allowed in almost every casino and in standard online games — only a private home game might still have its own house rule — and the rule itself is covered in the [betting actions](/en/blog/holdem-betting-actions) guide. The etiquette worry is a leftover: some old home games banned check-raising by house rule, and the stigma outlived the rule. Few games play that way now, and the numbers above are the reason — take the check-raise out of the big blind's game on this flop and you delete 14.9% of its range with nothing to replace it.
 
 **Q. Do these numbers hold at my stake?**
 

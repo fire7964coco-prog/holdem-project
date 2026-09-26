@@ -9,7 +9,7 @@ export const POST: Post = {
   tldr: "Selepas SB open dan BB call, flop A♠A♥6♦ menghasilkan bet 80.1%: 79.6% pada satu pertiga pot dan 0.5% pada tiga perempat, dengan check 19.8%. Pada 6♣6♦3♥, bet hanya 3.0%. Perbezaannya ialah rank yang berpasangan dan hubungan seluruh range dengan board. Trips ace berjumlah 88 kombo pada SB berbanding 66 pada BB; AK dan AQ, 16 kombo, langsung tiada dalam range call BB.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-15",
+  updated: "2026-09-26",
   masterUpdated: "2026-08-21",
   readTime: "10 minit",
   emoji: "🅰️",
@@ -175,7 +175,7 @@ Check memberi ruang kepada 260 kombo terlepas BB untuk melakukan bluff, lalu cal
 
 ## Bagaimanakah anda menyemak sendiri?
 
-Buka [solver GTO](/ms/solver), kemudian **Spot belajar → Board dengan dua Ace → ⚡ Lihat hasil**. Untuk berlatih memilih tindakan, buka [Trainer GTO](/ms/solver) daripada sidebar. Ia memberikan tangan rawak daripada range spot tersebut. Selepas memilih tindakan, ia menunjukkan kekerapan campuran dan **kerugian EV (bb)**. Tanpa log masuk, rekod kekal dalam pelayar. Rekod spot belajar boleh disegerakkan ke akaun secara pilihan; masalah daripada solve tersuai serta rekod latihannya tetap pada peranti walaupun log masuk.
+Buka [solver GTO](/ms/solver), kemudian **Spot belajar → Board dengan dua Ace → ⚡ Lihat hasil**. Untuk berlatih memilih tindakan, buka [Trainer GTO](/ms/solver) daripada sidebar. Ia memberikan tangan rawak daripada range spot tersebut. Selepas memilih tindakan, ia menunjukkan kekerapan campuran dan **kerugian EV (bb)**. Secara lalai, rekod disimpan pada peranti ini; jika anda log masuk dengan akaun HoldemMaster, rekod latihan Spot belajar dan Cabaran Harian disegerakkan antara peranti. Namun, masalah daripada solve tersuai serta rekod latihannya tetap pada peranti walaupun log masuk.
 
 **Bandingkan dengan board berpasangan 663.** Kedua-duanya berpasangan, tetapi matriks mempunyai warna hampir bertentangan. Selepas meneliti contoh-contoh ini, soalan yang paling berguna ialah **range siapa yang paling sesuai dengan board**, bukan label board sahaja. Percuma, tanpa pemasangan atau akaun.
 

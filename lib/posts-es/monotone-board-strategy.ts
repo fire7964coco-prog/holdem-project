@@ -28,7 +28,7 @@ export const POST: Post = {
   tldr: "En Q♠9♠2♠, donde las tres cartas del flop comparten palo, la ciega grande hace check el 88.8%, apuesta pequeño el 8.0% y grande apenas el 3.2%. El tamaño grande casi se evapora porque las nuts quedan fijadas: un color hecho ya recibe call de una apuesta pequeña, y cuanto más grande apuestas sin color, más se estrecha a colores el rango que te paga. Incluso el color máximo hace check el 69.9% de media — y los colores que no son máximos hacen check todavía más, un 81.4%.",
   category: "strategy",
   date: "2026-09-02",
-  updated: "2026-09-02",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-02",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -158,7 +158,7 @@ La equity apenas se mueve — 94% frente a 97.7% — pero el EQR cae al 197%. **
 
 ⚠ La fila del proyecto de color es **un valor derivado**: el solver lista "Proyecto de color" y "Proyecto combinado" por separado, y una mano con una sola pica puede caer en cualquiera de las dos. Así que es ==20.5 + 5.1 = 25.6%== para la ciega grande y ==24.1 + 5.1 = 29.2%== para el botón. Conviene saberlo si estás cotejando esto contra la pantalla.
 
-El reparto viene del preflop. **La ciega grande defiende basura barata del mismo palo** — manos como J5s, 85s y 74s reciben call desde la ciega grande, y las de picas se convierten en colores. El botón no las abre nunca.
+El reparto viene del preflop. **La ciega grande defiende basura barata del mismo palo** — manos como J4s, J5s y 85s reciben call desde la ciega grande, y las de picas se convierten en colores. El botón no las abre nunca.
 
 Lo que el botón tiene en cambio es mucho más **A-x y K-x de distinto palo con una pica.** Sin ligar, pero con proyecto — y aquí es donde el A♠ se vuelve especial. Puede hacer el color máximo, y además te dice que tu rival **no** puede tenerlo.
 
@@ -218,7 +218,7 @@ A. No. En este solve los ocho combos del color máximo hacen check entre el 52.7
 
 **Q. ¿Por qué la ciega grande tiene más colores que el botón?**
 
-A. Porque la ciega grande ya tiene fichas puestas en el bote y defiende manos suited baratas como J5s, 85s y 74s. Esas se convierten en color en un board monotone. El botón no las abre nunca, y por eso sus colores hechos se quedan en el 5.7% frente al 7.1% de la ciega grande.
+A. Porque la ciega grande ya tiene fichas puestas en el bote y defiende manos suited baratas como J4s, J5s y 85s. Esas se convierten en color en un board monotone. El botón no las abre nunca, y por eso sus colores hechos se quedan en el 5.7% frente al 7.1% de la ciega grande.
 
 **Q. ¿Qué tan probable es ligar color en el flop?**
 

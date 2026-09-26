@@ -57,7 +57,7 @@ export const POST: Post = {
   tldr: "On 9♥8♥7♣ after a button open and a big blind call, the big blind checks 76.2% and leads 23.7% — the first spot in this series where the lead is a real strategy rather than a rounding artifact. Range advantage has not flipped: equity is still 48.5% against 51.5%. What changed is the gap and where each side's strong hands sit.",
   category: "strategy",
   date: "2026-08-19",
-  updated: "2026-09-02",
+  updated: "2026-09-26",
   readTime: "9 min",
   emoji: "🎯",
   image: "/images/gto-srp-middle-connected-oop-en.webp",
@@ -174,7 +174,7 @@ It cuts the other way too. Overpairs belong to the button.
 
 (The columns come to 99.9 and 100.1 — that is rounding.)
 
-**Only two rows favor the button**: overpairs, 6.4% against 1.3%, and ace-high, 30.5% against 24.2%. Two pair is dead level at 2.8%, and every other row belongs to the big blind.
+**Only two rows favor the button**: overpairs, 6.4% against 1.3%, and ace-high, 30.5% against 24.2%. Two pair is dead level at 2.8% and sets at 1.9%, and every other row belongs to the big blind.
 
 The draws have to be read alongside it.
 
@@ -205,7 +205,7 @@ Two things changed to make that happen.
 
 **Second, the button's strength sits in vulnerable places.** The only two categories where it leads are overpairs (6.4%) and ace-high (30.5%) — and one of those is not strength at all. Most of that ace-high has no pair here — and where it does have a draw, so does the big blind, so the draws cancel rather than favor anyone. The overpairs are fragile for the reason in the next section. The big blind's edge, by contrast, is in hands that are **already made**.
 
-A lead becomes correct not from average strength alone, but when **you hold more of the nuts and your opponent cannot bet confidently.** Both conditions are met here: the big blind has more straights, and with 30.5% of its range as ace-high the button cannot fire wide. That unclaimed space is what the lead takes.
+A lead becomes correct not from average strength alone, but when **you hold more of the strongest hands and your opponent cannot bet confidently.** Both conditions look met here: the big blind has more straights (24 combos against 20, while the nut J-T is 16 for each), and with 30.5% of its range as ace-high the button would struggle to fire wide — a read from range composition, since the button's own betting node is not in this solve. That unclaimed space is what the lead takes.
 
 ## Why are the button's overpairs vulnerable?
 
@@ -240,7 +240,7 @@ Missed **offsuit** high cards like AKo and AQo are standard check-backs: they ho
 
 ## What changes at the table?
 
-- **Leads live on middle connected boards after a wide late-position open.** The monotone board in the next spot has about 11% too, while ace-high and king-high dry flops are effectively zero. ⚠ The only middle connected board this series actually solves is 9-8-7, though, and the condition is not the texture alone but **which range holds more of the nuts on it.** The proof is inside the series: the [6-5-2 flop](/en/blog/low-board-check-raise "thumb:/images/gto-srp-low-rainbow-oop-en.webp") is the same button-versus-big-blind single-raised pot and the big blind leads just **3.2%** there, because the only hand that makes a straight is 4-3 and neither range holds it. Low and connected on its own does not produce a lead.
+- **Leads live on middle connected boards after a wide late-position open.** The monotone board in the next spot has about 11% too, while ace-high and king-high dry flops are effectively zero. ⚠ The only middle connected board this series actually solves is 9-8-7, though, and the condition is not the texture alone but **which range holds more of the strongest hands on it.** The proof is inside the series: the [6-5-2 flop](/en/blog/low-board-check-raise "thumb:/images/gto-srp-low-rainbow-oop-en.webp") is the same button-versus-big-blind single-raised pot and the big blind leads just **3.2%** there, because the only hand that makes a straight is 4-3 and neither range holds it. Low and connected on its own does not produce a lead.
 - **You still check three-quarters of the time.** When you do lead: small, and with more than your best hands — a range that only leads straights gets read immediately, so top pair and draws belong in the same size. Keep the total in view, though: **the whole lead is 23.7%, 16.8 of it at the small size.** Turned into "lead every draw," it becomes half the range and inverts the strategy. The other 76.2% checks.
 - **On the button, resist the c-bet on this texture.** More than half your range has no pair, and the overpairs want a controlled pot rather than a big one.
 - **Against an opponent who c-bets far too often, checking can be worth more than leading** — and check-**raise**, rather than only check-calling, with the straights and top pairs. Letting them bet your strong hands for you is worth more than taking the initiative, but only if you then charge for it.

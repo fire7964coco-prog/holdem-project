@@ -9,7 +9,7 @@ export const POST: Post = {
   tldr: "Selepas SB open dan BB call, flop K♥T♦6♠ menghasilkan bet 67.4% dan check 32.6%. Dalam tujuh pot single-raised terdahulu, pemain OOP hanya bet 0.1% hingga 23.7%. Dua perkara berubah: OOP kini raiser, dan board sesuai dengan rangenya. Gabungan itu membawa realisasi equity OOP kepada 103.1%. Peranan sahaja tidak cukup; SB yang sama hanya bet 9.6% pada 765.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-15",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-02",
   readTime: "10 minit",
   emoji: "⚔️",
@@ -192,7 +192,7 @@ BB pula mempunyai posisi tetapi EQR hanya 96.1%, sisi lain bagi pembahagian nila
 
 ## Bagaimanakah anda menyemak sendiri?
 
-Buka [solver GTO](/ms/solver), kemudian **Spot belajar → Board K-high dengan T → ⚡ Lihat hasil**. Untuk menjadikannya latihan keputusan, buka [Trainer GTO](/ms/solver) daripada sidebar. Selepas anda memilih tindakan, ia memaparkan kekerapan campuran dan **kerugian EV (bb)**. Tanpa log masuk, rekod berada dalam pelayar; rekod spot belajar boleh disegerakkan ke akaun secara pilihan. Masalah daripada solve tersuai serta rekod latihannya tetap pada peranti walaupun log masuk.
+Buka [solver GTO](/ms/solver), kemudian **Spot belajar → Board K-high dengan T → ⚡ Lihat hasil**. Untuk menjadikannya latihan keputusan, buka [Trainer GTO](/ms/solver) daripada sidebar. Selepas anda memilih tindakan, ia memaparkan kekerapan campuran dan **kerugian EV (bb)**. Secara lalai, rekod disimpan pada peranti ini; jika anda log masuk dengan akaun HoldemMaster, rekod latihan Spot belajar dan Cabaran Harian disegerakkan antara peranti. Masalah daripada solve tersuai serta rekod latihannya tetap pada peranti walaupun log masuk.
 
 Perhatikan label **OOP (SB (opener))** terlebih dahulu. Ia berbeza daripada **OOP (BB (caller))** dalam contoh awal; inilah maksud “peranan berubah”. Percuma, tanpa pemasangan atau akaun.
 

@@ -27,7 +27,7 @@ export const POST: Post = {
   tldr: "Tras una apertura de la ciega pequeña y un call de la ciega grande, el flop 7♦6♦5♣ recibe una apuesta apenas el 9.6% de las veces y un check el 90.4%. Bote, stack, SPR, tamaño de apuesta y los dos rangos son idénticos al spot anterior — solo cambiaron las tres cartas del board, y la apuesta pasó del 67.4% al 9.6%. La ventaja de rango que se ganó preflop era una ventaja en cartas altas, y un board bajo y conectado la borra de golpe. La equity se invierte, 49.6% contra 50.4%, y la realización fuera de posición baja al 85.3%.",
   category: "strategy",
   date: "2026-09-02",
-  updated: "2026-09-02",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-02",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -224,7 +224,7 @@ El 9.6% se construye mezclando un poco de valor con unos cuantos proyectos. 88 e
 
 ## Compruébalo tú mismo
 
-Todas las cifras de aquí aparecen si abres el [solver GTO](/es/solver) y entras en **Spots de estudio → "Bajo conectado, two-tone" → [⚡ Ver resultados]**. Si prefieres jugar el mismo spot como ejercicio, abre el [Entrenador GTO](/es/solver) desde la barra lateral — te reparte una mano al azar y, en cuanto eliges una acción, te enseña la frecuencia mezclada y el **EV perdido (bb)** de tu elección. Tu historial se queda en tu propio navegador.
+Todas las cifras de aquí aparecen si abres el [solver GTO](/es/solver) y entras en **Spots de estudio → "Bajo conectado, two-tone" → [⚡ Ver resultados]**. Si prefieres jugar el mismo spot como ejercicio, abre el [Entrenador GTO](/es/solver) desde la barra lateral — te reparte una mano al azar y, en cuanto eliges una acción, te enseña la frecuencia mezclada y el **EV perdido (bb)** de tu elección. Tu historial se guarda por defecto en este dispositivo; si inicias sesión con una cuenta de HoldemMaster, el historial de práctica de los Spots de estudio y las preguntas del día se sincroniza entre tus dispositivos.
 
 **Alterna entre este spot y "Board K-T high"**, el anterior. Las etiquetas de jugador dicen "OOP (SB (open-raiser))" en los dos, el bote y el stack son idénticos — y la matriz cambia de color por completo. Es la demostración más corta de esta serie de lo que hace de verdad un board. Gratis, sin instalar nada y sin cuenta.
 

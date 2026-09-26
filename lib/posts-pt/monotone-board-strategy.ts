@@ -9,7 +9,7 @@ export const POST: Post = {
   tldr: "No Q♠9♠2♠, com as três cartas do flop do mesmo naipe, o big blind dá check em 88,8%, aposta pequeno em 8,0% e aposta grande em apenas 3,2%. O tamanho grande quase desaparece porque o topo está concentrado nos flushes: um flush pronto já recebe calls de apostas pequenas, e apostar mais sem flush concentra os calls adversários em flushes. Até o nut flush dá check em 69,9% na média; os flushes abaixo dele dão ainda mais check, em 81,4%.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-15",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-02",
   readTime: "10 min",
   emoji: "♠️",
@@ -130,7 +130,7 @@ A equity muda pouco, de 97,7% para 94%, mas a EQR cai para 197%. **Você ganha m
 
 ⚠ A linha de flush draws é um valor **derivado**: o solver separa “Flush draw” e “Combo draw”, e uma mão com uma espada pode aparecer em qualquer uma das duas categorias. A soma é ==20,5 + 5,1 = 25,6%== para o big blind e ==24,1 + 5,1 = 29,2%== para o botão. Lembre disso ao conferir os números na tela.
 
-A diferença começa antes do flop. **O big blind defende mãos fracas do mesmo naipe por um preço baixo**: J5s, 85s e 74s entram no range de call, e suas versões de espadas viram flushes. O botão não abre essas mãos neste range.
+A diferença começa antes do flop. **O big blind defende mãos fracas do mesmo naipe por um preço baixo**: J4s, J5s e 85s entram no range de call, e suas versões de espadas viram flushes. O botão não abre essas mãos neste range.
 
 Em compensação, o botão tem muito mais **Ax e Kx de naipes diferentes com uma espada**. Ainda não são flushes, mas podem se tornar um. É aí que A♠ ganha uma função especial: permite completar o nut flush e garante que o adversário **não pode** ter esse flush.
 
@@ -190,7 +190,7 @@ A. Não. Nesta resolução, os oito combos de nut flush dão check entre 52,7% e
 
 **Q. Por que o big blind tem mais flushes que o botão?**
 
-A. Porque já investiu parte do valor para entrar no pote e defende mãos baratas do mesmo naipe, como J5s, 85s e 74s. Elas viram flushes no board monotone. O botão não abre essas mãos neste range, por isso tem 5,7% de flushes prontos contra 7,1% do big blind.
+A. Porque já investiu parte do valor para entrar no pote e defende mãos baratas do mesmo naipe, como J4s, J5s e 85s. Elas viram flushes no board monotone. O botão não abre essas mãos neste range, por isso tem 5,7% de flushes prontos contra 7,1% do big blind.
 
 **Q. Qual é a chance de acertar um flush no flop?**
 

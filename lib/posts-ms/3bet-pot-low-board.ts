@@ -9,7 +9,7 @@ export const POST: Post = {
   tldr: "Selepas BB melakukan 3-bet dan BTN call, flop 8♦5♣2♠ menghasilkan bet dua pertiga pot pada kekerapan 97.8%. Daripada 83 kombo BB, hanya tiga mendapat pair baharu daripada board, iaitu A5s; 88, 55 dan 22 langsung tiada dalam range. Namun BB sudah mempunyai 36 kombo overpair dan 40 kombo A-high, dengan sangat sedikit tangan pertengahan. Bentuk range terpolarisasi inilah yang membantu menjelaskan pilihan saiz besar.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-15",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-02",
   readTime: "10 minit",
   emoji: "🎲",
@@ -155,7 +155,7 @@ Sebab utamanya ialah lokasi set. **Hanya BTN boleh memegang set**, dan sembilan 
 
 ## Bagaimanakah anda menyemak sendiri?
 
-Buka [solver GTO](/ms/solver), kemudian **Spot belajar → Board rendah kering → ⚡ Lihat hasil**. Untuk berlatih membuat keputusan, buka [Trainer GTO](/ms/solver) melalui sidebar. Ia memberikan tangan rawak daripada range spot tersebut. Selepas memilih tindakan, anda melihat kekerapan campuran dan **kerugian EV (bb)**. Tanpa log masuk, rekod kekal dalam pelayar; penyegerakan akaun bagi rekod spot belajar adalah pilihan. Masalah Trainer daripada pengiraan tersuai dan rekod latihannya tetap disimpan pada peranti walaupun anda log masuk.
+Buka [solver GTO](/ms/solver), kemudian **Spot belajar → Board rendah kering → ⚡ Lihat hasil**. Untuk berlatih membuat keputusan, buka [Trainer GTO](/ms/solver) melalui sidebar. Ia memberikan tangan rawak daripada range spot tersebut. Selepas memilih tindakan, anda melihat kekerapan campuran dan **kerugian EV (bb)**. Secara lalai, rekod disimpan pada peranti ini; jika anda log masuk dengan akaun HoldemMaster, rekod latihan Spot belajar dan Cabaran Harian disegerakkan antara peranti. Masalah Trainer daripada pengiraan tersuai dan rekod latihannya tetap disimpan pada peranti walaupun anda log masuk.
 
 Cari **baris “Set/Trips” yang tiada** pada panel BB. Tukar pemain kepada IP (BTN), dan baris itu muncul pada 6.3%. Itulah cara paling ringkas melihat siapa memegang tangan teratas pada board ini. Percuma, tanpa pemasangan atau akaun.
 

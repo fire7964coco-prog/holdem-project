@@ -67,10 +67,10 @@ export const POST: Post = {
   seoTitle: "A Polarized Range Bets 97.8% on a Board It Missed",
   // 152자 (디코딩 기준 · EN 하드리밋 160)
   desc: "In a 3-bet pot on 8-5-2, only three combos in the big blind's range paired the board — and it fires two-thirds pot 97.8% of the time. Here is why.",
-  tldr: "After a big blind three-bet and a button call, the flop 8♦5♣2♠ gets a two-thirds-pot bet 97.8% of the time. The odd part: of the big blind's 83 combos, exactly three paired this board — the A5s — and none of 88, 55 or 22 is in the range at all. The bet goes anyway because the range splits into 36 combos of overpairs and 40 combos of ace-high with nothing in between. A polarized shape bets big.",
+  tldr: "After a big blind three-bet and a button call, the flop 8♦5♣2♠ gets a two-thirds-pot bet 97.8% of the time. The odd part: of the big blind's 83 combos, exactly three paired this board — the A5s — and none of 88, 55 or 22 is in the range at all. The bet goes anyway because the range splits into 36 combos of overpairs and 40 combos of ace-high with almost nothing in between — only the three A5s. A polarized shape bets big.",
   category: "strategy",
   date: "2026-08-21",
-  updated: "2026-09-02",
+  updated: "2026-09-26",
   readTime: "10 min",
   emoji: "🎲",
   image: "/images/gto-3bp-low-oop-en.webp",
@@ -84,7 +84,7 @@ export const POST: Post = {
     "gto solver",
   ],
   content: `
-The flop comes **8♦ 5♣ 2♠**. You three-bet before the flop, the board is as dry as it gets, and you are holding A-K. No pair, no draw. **This is where checking feels obvious.**
+The flop comes **8♦ 5♣ 2♠**. You three-bet before the flop, the board is as dry as it gets, and you are holding A-K. No pair, and nothing better than backdoor draws. **This is where checking feels obvious.**
 
 The solver does the opposite. **It bets 14.9bb — two-thirds of the pot — 97.8% of the time.** And this is not a statement about A-K. Of the big blind's 83 combos, the number that actually *paired* this board is ==three==.
 
@@ -189,7 +189,7 @@ The button's nine combos are 88, 55 and 22, three each — one of every rank sit
 
 ## Why does the caller realize more equity here than in the last two spots?
 
-**The button's realization climbs to 90.3% in the same three-bet-pot structure.** It was 78.7% and 75.1% in the previous two. ⚠ It is not that the button alone went up — the two EVs sum to the pot, so **when one side rises the other must fall.** The big blind came down from 117.8% to 106.9%. These are not two facts but two sides of one.
+**The button's realization climbs to 90.3% in the same three-bet-pot structure.** It was 78.7% and 75.1% in the previous two. ⚠ It is not that the button alone went up — the two EVs sum to the pot, so **with the equities held fixed, one side's gain in realization is the other side's loss.** Across different boards the equities move too, so that link is not automatic — but here it is what happened: the big blind came down from 117.8% to 106.9%. Here, at least, these are two sides of one fact.
 
 | | BB (OOP) | BTN (IP) |
 |---|---|---|
@@ -213,7 +213,7 @@ The reason is where the sets live. **The button is the only player who can hold 
 - **But do not treat an overpair as the nuts when a raise comes back.** All nine set combos are on the other side, and the button also holds 24 combos of QQ through 99. **Your 99 and TT are overpairs that lose to overpairs.**
 - **Against someone who rarely folds, cut the ace-high portion.** The 97.8% figure rests on the fact that much of the opponent's range missed. ⚠ Again, "58.3% missed" is not "58.3% folds" — no fold frequency comes out of this solve, and the button's 36.1% of ace-high is the A-K, A-Q, A-J, A-T family with no weak aces in it. 🪶 Facing 14.9bb into 22.5bb the MDF is **60.2%**, but that is a **starting point, not a calling quota** — MDF treats the bet as a pure bluff with zero equity, whereas the range betting here contains 36 combos of overpairs, so that assumption does not hold. Whether the true optimal defense sits below it is a question this solve does not answer. Against a calling station, firing ace-high twice and three times turns the whole bluff portion into losses; narrow to the overpairs for value instead.
 - **From the button, small pocket pairs are worth more here than anywhere in this series.** 88, 55 and 22 make sets, and 77, 66, 44 and 33 are all ahead of ace-high. That is the exact opposite of [the A-K-2 spot](/en/blog/3bet-pot-cbet), where the underpairs were helpless. How the three-betting range is built decides this, and that is in [3-bet strategy](/en/blog/holdem-3bet "thumb:/images/holdem-3bet-hero.webp").
-- **Count the SPR before you bet.** At SPR 4, two-thirds-pot twice (14.9 → 34.5) plus a river shove of 39.6 empties 89bb precisely. The moment you bet the flop, whether you are going all the way is effectively already decided.
+- **Count the SPR before you bet.** At SPR 4, two-thirds-pot twice (14.9 → 34.5) plus a river shove of 39.6 empties 89bb precisely. Once you bet the flop, the rest of the stack is one or two more bets away, so decide before that first bet which turns and rivers you will keep firing on — the turn and river are not in this solve, and a runout or an opponent can still change the answer.
 
 :::readnext[Keep reading]
 /en/blog/3bet-pot-bet-sizing | One Size, 98.4% of the Time — Q-T-7 in a 3-Bet Pot | /images/gto-3bp-dynamic-oop-en.webp
@@ -222,13 +222,13 @@ The reason is where the sets live. **The button is the only player who can hold 
 
 ## Check it yourself
 
-Every figure here comes up if you open the [GTO solver](/en/solver) and hit **Study Spots → "Low Dry Board" → [⚡ View results]**. To play the same spot as a problem instead, open the [GTO Trainer](/en/solver) from the sidebar — it deals you a random hand, and once you pick an action it shows the mixed frequency and the **EV loss (bb)** of your choice. Your history stays in your own browser.
+Every figure here comes up if you open the [GTO solver](/en/solver) and hit **Study Spots → "Low Dry Board" → [⚡ View results]**. To play the same spot as a problem instead, open the [GTO Trainer](/en/solver) from the sidebar — it deals you a random hand, and once you pick an action it shows the mixed frequency and the **EV loss (bb)** of your choice. Your history is kept on this device by default; signing in with a HoldemMaster account syncs your Study Spots and Daily Challenge history across devices.
 
 Look for the **missing "Set/Trips" row** in the hand panel. Then switch the player to IP (BTN) and it appears at 6.3%. That one line is the whole story of who holds the top of this board. Free, no install, no account.
 
 **Q. Should you c-bet A-K on a low board in a three-bet pot?**
 
-A. Yes. On 8-5-2 A-K has neither a pair nor a draw, yet the solver puts the whole range into the large size 97.8% of the time. The reason is that the big blind's range is **polarized — overpairs or ace-high, split roughly in half** — and when the middle is empty the size goes up, with the entire range using it. That 58.3% of the opponent's range failed to pair helps, but do not read it as "58.3% folds"; the response node is not in this solve.
+A. Yes. On 8-5-2 A-K has no pair and no immediate draw (only backdoor draws — a runner-runner wheel, plus a backdoor flush for three suited combos), yet the solver puts the whole range into the large size 97.8% of the time. The reason is that the big blind's range is **polarized — overpairs or ace-high, split roughly in half** — and when the middle is empty the size goes up, with the entire range using it. That 58.3% of the opponent's range failed to pair helps, but do not read it as "58.3% folds"; the response node is not in this solve.
 
 **Q. What does a polarized range mean?**
 
