@@ -300,6 +300,11 @@
 
 > 🪶 **L-2g 전파 목록(MA-190 ② · 검수장 보고 `reports/검수-본부-L2b이행-2026-09-26.md` §3-2 자리표)**: ko WRONG 4 — ace-paired «체크 이후 노드는 어느 편에도 계산돼 있지 않습니다» · blind-connected «BB의 콜 레인지에만» · «맞아 봐야 원 페어» · (monotone A♠7♠ = 이번 동반 ✅) + RISKY 19 · es WRONG 7 — ace-paired #97 · blind-connected #40·#90 · monotone #13·#53·#54·#57 + bet-sizing #58 JJ 경로 · RISKY 다수. 🔴 monotone A♠7♠ 문장은 es에 **옮기지 말 것**(es엔 원래 없음). 참고(요청 아님): blind-connected #12 거트샷 A3·A9 32 누락 · low-board «almost every casino» · zh reading #7 «没有顺子听牌» RISKY.
 
+## L-2h 검수장 대조 요청 4건 — `95fef741`(MB-097)
+
+- MA-196 ① hand-rankings Board trips WRONG → «a straight or better»(EN+12 · SF·로열 누락 방지) · ② showdown TDA 2024 illustration(EN·de·es·id·pt) · MA-194 ① card-counting 자발 공개(EN+7) · MA-192 ① strategy open-limp 범위(EN+7).
+- 🪶 남긴 것: card-counting L109 «2026 Poker TDA rules» 판 표기(레포 원문 2024 v1.0뿐 · 판정 선행) · MA-192·194·196 통지(요청 아님)는 검수장 L-2g 대조 회차 몫.
+
 ## L-2g 로케일 전파 — `52093176`(MB-096)
 
 - 방식: 로케일 레인 17 + 보충 1(서브에이전트 · 파일 겹침 0) · 패킷 = EN 순 diff `18b8eaf9^..4acd45c5` + 같은 범위 로케일 기반영 diff. 372파일.

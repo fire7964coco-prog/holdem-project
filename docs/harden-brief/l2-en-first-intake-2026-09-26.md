@@ -41,6 +41,7 @@ UNVERIFIABLE 행은 **자동 재작성 대상이 아니다**(MA-172·179 명시)
 | **L-2e** | 족보·규칙 8 | 28 (W2) | **MA-188 ② betting «The same rule also bans» EN #73 → «Rule 103 also bans…»(es·zh·zh-hant 동반) · ③ showdown FAQ «caller who paid may ask» EN #81 신설 RISKY(zh #87·zh-hant #86 동반 · es OK)** · MA-179 요청 3 TDA 판 접두 · MA-182 통지 2(de TDA 14행 · all-in «Rule 174») · beginners «match the big blind» 24사본 | ✅ `10e5997b`(MB-093) · 채택 27 · 기각 1(game-order #17) · 동반 밖 로케일 전파 L-2g |
 | **L-2f** | 계산기 AQo↔KQo | — | MA-183 ① · EN + 10로케일 + ko · 169쌍 역전 0 재확인 | ✅ `4acd45c5`(MB-094) · 쌍 1,234 역전 1→0(커넥터 예외 = 수티드 한정) · MA-190 요청 1 동반 |
 | **L-2g** | 로케일 전파 | — | EN 정정분을 12로케일로 · 레인별(`docs/audit-lanes.md`) · MB-080 형제 무효(es 5 · de 19 · ja 21 · pt 20 · id 10)와 합침 · MA-190 ② 목록(작업판 L-2f 절) | ✅ `52093176`(MB-096) · 372파일 · 동기/지연 분리 · 남긴 것 = 작업판 L-2g 절 🪶 |
+| **L-2h** | 검수장 대조 요청 4건 | — | MA-192 ① · MA-194 ① · MA-196 ①② | ✅ `95fef741`(MB-097) · 34파일 · 작업판 L-2h 절 |
 
 **회차 규율**: ① 원장 행마다 채택/기각을 판정하고 기각은 이유를 남긴다(MB 회신 재료) ② 핸드·수치는 §13 검산 ③ 한 회차 = 커밋 1~2 · MB 1행(규율 B) ④ 로케일 동반 자리는 **같은 커밋**(두 번 고치지 않는다).
 

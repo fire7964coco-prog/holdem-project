@@ -1,3 +1,9 @@
+## 2026-09-26 (11) — L-2h 검수장 대조 요청 4건 이행 (MA-192·194·196 회신 · MA-184 ACK · MB-097)
+
+- `95fef741` 34파일. ① MA-196 요청 1 hand-rankings «Board trips» WRONG(풀·쿼즈만 키커를 넘는다) → «a straight or better»(EN+12로케일). 검수장 제안 열거(straight·flush·FH·quads)는 SF·로열이 빠져 딜러 렌즈 지적으로 «스트레이트 이상»으로 바꿈(J♣J♠J♥10♥9♥ + Q♥8♥ = SF 검산). ② 요청 2 showdown «TDA illustration to Rule 16» → 2024(EN·de·es·id·pt · 원문 `docs/sources/tda-2024-rules-v1.txt` Illustration Addendum 대조). ③ MA-194 card-counting 노출 문장 «shown voluntarily» + 폴드 때 보여 준 손 제거(EN+7). ④ MA-192 strategy «never open-limp» → normal-depth 현금 기본값 + SB 컴플리트·숏스택 BTN 한 문장 · 이미지 title «only»→«main» · ja·zh-hant 바로 답 정합(EN+7).
+- 게이트: audit:hard 13로케일 🔴 0(🟠 es·zh·zh-hant 1 = 기준선 동일) · 렌즈 2종(교열 diff · 딜러) 지적 7 반영 · build 73+577.
+- 남긴 것: card-counting L109 «2026 Poker TDA rules» 5C/5D 판 표기 — 레포 원문은 2024 v1.0뿐(딜러 렌즈 · 저확신 · 판정 선행).
+
 ## 2026-09-26 (10) — L-2g 로케일 전파 · L-2 종결 (MB-095 착수 · MB-096 배포)
 
 - `52093176` L-2a~f EN 변경 45편의 동반 밖 잔여를 로케일로(372파일 · +2552/−2522). 로케일 레인 17 + reading-the-board 보충 1(서브에이전트 · 파일 겹침 0). 패킷 = EN 순 diff + 같은 범위 로케일 기반영 diff.
