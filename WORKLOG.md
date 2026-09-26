@@ -1,3 +1,12 @@
+## 2026-09-26 (10) — L-2g 로케일 전파 · L-2 종결 (MB-095 착수 · MB-096 배포)
+
+- `52093176` L-2a~f EN 변경 45편의 동반 밖 잔여를 로케일로(372파일 · +2552/−2522). 로케일 레인 17 + reading-the-board 보충 1(서브에이전트 · 파일 겹침 0). 패킷 = EN 순 diff + 같은 범위 로케일 기반영 diff.
+- 동기 로케일(de·es·pt·ja·zh·zh-hant·id 전편 · ms·hi GTO · ms hand-rankings · ar 규칙 6) = 전량 대조 + masterUpdated 09-26. 지연 로케일(14개 규칙 5편 · ms·hi 규칙 · hi·vi·tr hand-rankings) = L-2 이전부터 EN보다 뒤처진 옛 번역이라 사실 앵커만 이식 · masterUpdated 유지(`settled-decisions` §1-C).
+- 동반 요청: MA-190 ② ko·es 자리표 전건 · MA-188 ④⑤ · MA-187 ② · zh reading #7. 로케일 고유 §13: zh reading K♠K♦7♣ 포켓페어 = 풀 단정 정정.
+- 헤드 사고 2: ① 레인 분할을 slug 패턴 `*board*`로 해서 `holdem-reading-the-board`가 GTO로 잘못 분류 → id·ja·pt 누락 · 보충 레인으로 처리(es·zh·zh-hant·de는 레인이 스스로 포함) ② zh GTO 레인이 게이트 기준선 보려고 `git stash`(작업 트리 전체) → 충돌 없이 pop · 로케일별 수정 파일 수가 보고와 일치함을 확인. 교훈: 레인 파일 목록은 패턴이 아니라 명시 목록으로 · 기준선은 `git worktree add --detach` 임시 트리로(이번 헤드 대조가 이 방식).
+- 게이트: 숫자 대조 스크립트(추가 줄 숫자가 EN 현재·로케일 기존 문면에 존재 — 371파일 중 예외 1 = EN «hundredth» ↔ 0.01 정상) · 렌즈 4종 지적 12 반영(유형 1 = 0) · audit:hard 25로케일 0 · check:drift 핵심 0 · cjk 0 · mirror-pair 기준선 동일(28/28) · check:gto 기준선 대비 신규 = 범위 표기·ko 부재(broadway 23.7) · check:stamp 0 · build 73+577.
+- 남긴 것 = 작업판 L-2g 절 🪶(EN-먼저 후보 hand-rankings L332 풀하우스 포함 9항).
+
 ## 2026-09-26 (9) — L-2f 계산기 AQo↔KQo · MA-190 요청 1 이행 (MB-094)
 
 - `4acd45c5` 계산기 AQo «mid/late»(EP 없음) < 지배당하는 KQo «EP 레이즈 또는 폴드» 역전(MA-183 ①) → AQo = 같은 파일 AJs·A10s 문구 축어(EN+10로케일+ko 12파일).

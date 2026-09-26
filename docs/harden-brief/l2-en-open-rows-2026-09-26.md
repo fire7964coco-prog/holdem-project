@@ -299,3 +299,12 @@
 - MA-190 ⓐ monotone A♠7♠ «bets the most» WRONG → 44.0%·A♠4♠ 47.3% 명시(EN+ko) · ⓑ paired «Trips blockers»(EN+ko+es).
 
 > 🪶 **L-2g 전파 목록(MA-190 ② · 검수장 보고 `reports/검수-본부-L2b이행-2026-09-26.md` §3-2 자리표)**: ko WRONG 4 — ace-paired «체크 이후 노드는 어느 편에도 계산돼 있지 않습니다» · blind-connected «BB의 콜 레인지에만» · «맞아 봐야 원 페어» · (monotone A♠7♠ = 이번 동반 ✅) + RISKY 19 · es WRONG 7 — ace-paired #97 · blind-connected #40·#90 · monotone #13·#53·#54·#57 + bet-sizing #58 JJ 경로 · RISKY 다수. 🔴 monotone A♠7♠ 문장은 es에 **옮기지 말 것**(es엔 원래 없음). 참고(요청 아님): blind-connected #12 거트샷 A3·A9 32 누락 · low-board «almost every casino» · zh reading #7 «没有顺子听牌» RISKY.
+
+## L-2g 로케일 전파 — `52093176`(MB-096)
+
+- 방식: 로케일 레인 17 + 보충 1(서브에이전트 · 파일 겹침 0) · 패킷 = EN 순 diff `18b8eaf9^..4acd45c5` + 같은 범위 로케일 기반영 diff. 372파일.
+- **동기**(masterUpdated 09-26): de·es·pt·ja·zh·zh-hant·id 전편 · ms·hi GTO 13 · ms hand-rankings · ar 규칙 6. **지연**(masterUpdated 유지 · 사실 앵커만): vi·tr·fr·it·th·bn·fa·he·ru·uk·pl·ro·fil·sw 규칙 5 · ms·hi 규칙 5 · hi·vi·tr hand-rankings.
+- 위 🪶 목록 처리: MA-190 ② ko 자리표 전건(기각 0 · paired 이미 반영) · es 자리표 전건(monotone A♠7♠ 절 미이식 유지) · MA-188 ④ ja #45·zh #13·zh-hant #53 «Mid-ranked» · es probability #108 · ⑤ fish es #77·id #83·ja #32 · MA-187 ② de cooler · zh reading #7 거트샷 한정(K94 = Q-J·J-10·Q-10).
+- 로케일 고유 정정(EN 동형 아님): zh reading K♠K♦7♣ «任何口袋对子 = 葫芦» → 77 풀·KK 쿼즈·나머지 투페어(§13) · pt implied «um naipe» → copas · id strategy «sebagian besar» 과장.
+- 렌즈 4종(Fable: ko+es · de+pt / Opus: ja+zh+zh-hant · id+ms+hi+ar+지연) = 지적 12 반영 · 유형 1(의미 역전·수치) 0.
+- 🪶 **남긴 것(요청 후보 · 이번 회차 밖)**: ① **EN-먼저** hand-rankings FAQ L332 «only loses to four of a kind, SF, royal» — 더 높은 풀하우스 누락(같은 글 L344는 맞음 · ja 동형) ② ko donk-bet L194 «A 하이가 많아서가 아니라» ↔ EN «30.5% ace-high → struggle to fire wide» 인과 귀속 반대(정본 결정 필요) ③ ko broadway FAQ «23.7%» 부재 → check:gto 🔴(EN 기준선부터 · 6로케일로 확대) ④ 지연 로케일 all-in 45-A 단서·game-order 토너먼트 올인 예외(ms L139)·betting FAQ string bet ↔ Rule 90.d 파일 내 모순(ms·hi) = 옛 번역 격차 ⑤ zh probability 직답 «同花连张 1.3%» 54s–JTs 미한정(EN 대응 문장 없음) ⑥ zh-hant T 표기 3자리(a-high AT · donk T6s·T7s · paired 77到TT) ⑦ es out 성 혼용(limpios/limpias) ⑧ pt all-in Mistake 4 연결 · card-counting steps ×4 조건 좁음 · 3bet 캡션·FAQ 스퀴즈 단정 ⑨ de-style 기존 🔴 5파일(편집 무관).
