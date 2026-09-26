@@ -142,62 +142,62 @@
 
 | 글 | # | 판정 | 원문(앞 110자) | 처리 |
 |---|---:|---|---|---|
-| strategy | 6 | RISKY | Defending your big blind is the bigger one: against a 2.5bb open you have ==1bb already posted==, so you're… | |
-| strategy | 20 | RISKY | Prefer raising to calling whenever you have a hand worth continuing with. | |
-| strategy | 21 | RISKY | do I raise or fold (never limp) | |
-| strategy | 62 | RISKY | Do I raise or fold — never just limp? | |
-| position-play | 11 | RISKY | 2. Bet bigger when you do bet. OOP bets need to end hands sooner. | |
-| position-play | 58 | RISKY | facing a raise, 3-bet or fold — don't flat-call | |
-| position-play | 62 | RISKY | A larger sizing (think two-thirds to three-quarters pot rather than a third) denies the free cards and chea… | |
-| position-play | 64 | RISKY | Betting into the preflop raiser works only on boards that favor your range — low, connected flops that smas… | |
-| position-play | 66 | RISKY | Out of position, the same bet is riskier: a check-raise ends your bluff | |
-| position-play | 70 | RISKY | Every other seat widens similarly | |
-| position-play | 73 | RISKY | The blinds are OOP against every other seat; | |
-| position-play | 81 | RISKY | the modern default from the small blind is to 3-bet or fold. | |
-| position-play | 82 | RISKY | The rare exception is limping behind existing limpers in passive live games with small pairs and suited con… | |
-| position-play | 86 | RISKY | Out of position in a single-raised pot that drops to roughly 30–45%, because a check-raise can end your bluff | |
-| position-play | 93 | RISKY | Protect your button, and 3-bet-or-fold your small blind. | |
-| position-play | 94 | RISKY | Check-raise as your equalizer, size up when betting | |
-| positions | 1 | RISKY | they ==move one seat clockwise every hand== as the button moves. | |
-| positions | 9 | RISKY | Big blind — may check or raise | |
-| positions | 13 | RISKY | ranges widen across the board in short-handed games. | |
-| positions | 14 | RISKY | Over a full orbit you'll hold every position at the table exactly once. | |
-| positions | 19 | RISKY | and they move one seat clockwise every hand. Preflop | |
-| positions | 23 | RISKY | every player at the table wears a different name every single hand | |
-| positions | 37 | RISKY | they ==rotate one seat clockwise every single hand== with the button | |
-| positions | 38 | RISKY | Change every single hand, one seat clockwise | |
-| positions | 63 | RISKY | (the big blind last of all, with the option to check or raise) | |
-| positions | 68 | RISKY | every player's position shifts by one seat each hand | |
-| positions | 70 | RISKY | every name moves one seat clockwise each hand | |
-| limping | 4 | RISKY | A calling station is a player who calls too many *bets* postflop, on the flop, turn, and river. | |
-| limping | 18 | RISKY | Open-limping (being first in) is almost always a mistake — you can't win the pot preflop, you give up initi… | |
-| limping | 20 | RISKY | 0% / Your chance to win the pot preflop | |
-| limping | 26 | RISKY | You can't win the pot preflop. This is the big one. | |
-| limping | 54 | RISKY | A calling station calls too many bets after the flop, on the turn and river | |
-| limping | 56 | RISKY | but that term is about calling too many *postflop* bets — not how they enter pots. | |
-| limping | 57 | RISKY | you can't win the pot preflop, you give up initiative, and you mark yourself as an easy target | |
-| continuation-bet | 2 | RISKY | a hand misses the flop — makes no pair or better — about two-thirds of the time. | |
-| continuation-bet | 3 | RISKY | So when you bet, your opponent usually has nothing either, and folds. | |
-| continuation-bet | 7 | RISKY | even though equity is nearly even. | |
-| continuation-bet | 11 | RISKY | over 97% on the two boards we solved, almost all of it at the two-thirds-pot size (the one-third size got u… | |
-| continuation-bet | 20 | RISKY | players who planned to bluff-raise your flop c-bet get no bet to attack | |
-| continuation-bet | 48 | RISKY | Betting here just donates chips — check. | |
-| continuation-bet | 49 | RISKY | Betting into a board that hit them / 7‑6‑5 smashed their range, not yours / Check and give up | |
-| continuation-bet | 60 | RISKY | Don't c-bet when the board smashed your opponent's range (low connected boards) | |
-| continuation-bet | 64 | RISKY | Bet often on boards you dominate; bet big only when you hold more of the nuts. | |
-| 3bet | 11 | RISKY | 4-bet says "I'm not going anywhere." | |
-| 3bet | 40 | RISKY | Stop min-3-betting and start jamming as you get short. | |
-| 3bet | 46 | RISKY | so a successful squeeze wins more, meaning your bluffs need to work *less* often to profit | |
-| 3bet | 51 | RISKY | ~35% (rarely folds) / A calling station — they call with almost anything, so a bluff has no fold equity | |
-| 3bet | 60 | RISKY | Facing a raise, 3-bet-or-fold from the SB; save the wide flats for the big blind | |
-| 3bet | 73 | RISKY | which against a big 3-bet would have you defend only about a third — in other words, fold no more than abou… | |
-| 3bet | 79 | RISKY | A 3-bet is the first pre-flop re-raise — third bet in the sequence, because the blind counts as bet one. | |
-| starting-hands-chart | 11 | RISKY | Speculative / Small pairs (77–22), suited connectors (JTs, T9s, 98s), suited aces (A2s–A9s) / Late position… | |
-| starting-hands-chart | 12 | RISKY | Remove the three tightest seats from a 9-max table and every remaining position effectively "moves up." | |
-| starting-hands-chart | 41 | RISKY | If a UTG player raises in front of you, most of them go straight into the muck — their edge disappears with… | |
-| starting-hands-chart | 54 | RISKY | (And the actual worst hand in poker? 7-2 offsuit | |
-| starting-hands-chart | 60 | RISKY | if a player wins a pot with 7-2 offsuit — the worst hand — | |
-| when-to-fold | 27 | RISKY | When you're genuinely beaten, every other option is *negative* — calling costs you the call, raising costs … | |
+| strategy | 6 | RISKY | Defending your big blind is the bigger one: against a 2.5bb open you have ==1bb already posted==, so you're… | 채택 `a879e603` · 로케일 L-2g — 헤드업·SB 폴드·앤티 없음 전제 + «실현 에퀴티는 그보다 낮다» 한정 |
+| strategy | 20 | RISKY | Prefer raising to calling whenever you have a hand worth continuing with. | 채택 `a879e603` · 로케일 L-2g — «In most spots» |
+| strategy | 21 | RISKY | do I raise or fold (never limp) | 채택 `a879e603` · 로케일 L-2g — never open-limp(#61 문면) |
+| strategy | 62 | RISKY | Do I raise or fold — never just limp? | 채택 `a879e603` · 로케일 L-2g — never open-limp |
+| position-play | 11 | RISKY | 2. Bet bigger when you do bet. OOP bets need to end hands sooner. | 채택 `a879e603` · 로케일 L-2g — «size it for the spot» 원시 재검산 수치(AA6 79.6 · AK2 57.8 · QT7·852 ⅔) |
+| position-play | 58 | RISKY | facing a raise, 3-bet or fold — don't flat-call | 채택 `a879e603` · 로케일 L-2g — almost never flat-call(#16) |
+| position-play | 62 | RISKY | A larger sizing (think two-thirds to three-quarters pot rather than a third) denies the free cards and chea… | 채택 `a879e603` · 로케일 L-2g — #11과 한 문단 |
+| position-play | 64 | RISKY | Betting into the preflop raiser works only on boards that favor your range — low, connected flops that smas… | 채택 `a879e603` · 로케일 L-2g — works best |
+| position-play | 66 | RISKY | Out of position, the same bet is riskier: a check-raise ends your bluff | 채택 `a879e603` · 로케일 L-2g — check-raise → raise |
+| position-play | 70 | RISKY | Every other seat widens similarly | 채택 `a879e603` · 로케일 L-2g — 뒤 좌석은 뒤 인원 동일·자리 빈도만 증가 |
+| position-play | 73 | RISKY | The blinds are OOP against every other seat; | 채택 `a879e603` · 로케일 L-2g — non-blind(#28) + SB는 BB에도 OOP |
+| position-play | 81 | RISKY | the modern default from the small blind is to 3-bet or fold. | 채택 `a879e603` · 로케일 L-2g — facing a raise · almost never · 폴드로 오면 레이즈 |
+| position-play | 82 | RISKY | The rare exception is limping behind existing limpers in passive live games with small pairs and suited con… | 채택 `a879e603` · 로케일 L-2g — UTG엔 앞 림퍼 없음 → 예외는 뒤 좌석 |
+| position-play | 86 | RISKY | Out of position in a single-raised pot that drops to roughly 30–45%, because a check-raise can end your bluff | 채택 `a879e603` · 로케일 L-2g — raise |
+| position-play | 93 | RISKY | Protect your button, and 3-bet-or-fold your small blind. | 채택 `a879e603` · 로케일 L-2g — facing a raise · almost every time |
+| position-play | 94 | RISKY | Check-raise as your equalizer, size up when betting | 채택 `a879e603` · 로케일 L-2g — 보드·팟 종류별 사이즈 |
+| positions | 1 | RISKY | they ==move one seat clockwise every hand== as the button moves. | 채택 `a879e603` · 로케일 L-2g — normally |
+| positions | 9 | RISKY | Big blind — may check or raise | 채택 `a879e603` · 로케일 L-2g — if no one has raised |
+| positions | 13 | RISKY | ranges widen across the board in short-handed games. | 채택 `a879e603` · 로케일 L-2g — 첫 좌석만 넓어짐 · 전체 참가 증가 |
+| positions | 14 | RISKY | Over a full orbit you'll hold every position at the table exactly once. | 채택 `a879e603` · 로케일 L-2g — stable table + 데드 버튼·결원·HU 예외 문장 |
+| positions | 19 | RISKY | and they move one seat clockwise every hand. Preflop | 채택 `a879e603` · 로케일 L-2g — normally |
+| positions | 23 | RISKY | every player at the table wears a different name every single hand | 채택 `a879e603` · 로케일 L-2g — from one hand to the next(normal game) |
+| positions | 37 | RISKY | they ==rotate one seat clockwise every single hand== with the button | 채택 `a879e603` · 로케일 L-2g — normally |
+| positions | 38 | RISKY | Change every single hand, one seat clockwise | 채택 `a879e603` · 로케일 L-2g — Normally |
+| positions | 63 | RISKY | (the big blind last of all, with the option to check or raise) | 채택 `a879e603` · 로케일 L-2g — if no one has raised |
+| positions | 68 | RISKY | every player's position shifts by one seat each hand | 채택 `a879e603` · 로케일 L-2g — #14와 한 문장 |
+| positions | 70 | RISKY | every name moves one seat clockwise each hand | 채택 `a879e603` · 로케일 L-2g — normally |
+| limping | 4 | RISKY | A calling station is a player who calls too many *bets* postflop, on the flop, turn, and river. | 채택 `a879e603` · 로케일 L-2g — calls too much·rarely raises or folds(스트리트 무제한) |
+| limping | 18 | RISKY | Open-limping (being first in) is almost always a mistake — you can't win the pot preflop, you give up initi… | 채택 `a879e603` · 로케일 L-2g — a limp can't win the blinds uncontested |
+| limping | 20 | RISKY | 0% / Your chance to win the pot preflop | 채택 `a879e603` · 로케일 L-2g — Chance a limp wins …(strategy #2 문면) |
+| limping | 26 | RISKY | You can't win the pot preflop. This is the big one. | 채택 `a879e603` · 로케일 L-2g — 표제 액션 주어 |
+| limping | 54 | RISKY | A calling station calls too many bets after the flop, on the turn and river | 채택 `a879e603` · 로케일 L-2g — on any street |
+| limping | 56 | RISKY | but that term is about calling too many *postflop* bets — not how they enter pots. | 채택 `a879e603` · 로케일 L-2g — not the open-limping habit specifically |
+| limping | 57 | RISKY | you can't win the pot preflop, you give up initiative, and you mark yourself as an easy target | 채택 `a879e603` · 로케일 L-2g — #18 문면 |
+| continuation-bet | 2 | RISKY | a hand misses the flop — makes no pair or better — about two-thirds of the time. | 채택 `a879e603` · 로케일 L-2g — 언페어 홀카드 플랍 무페어 67.6%(C(44,3)/C(50,3)) |
+| continuation-bet | 3 | RISKY | So when you bet, your opponent usually has nothing either, and folds. | 채택 `a879e603` · 로케일 L-2g — often missed · many fold |
+| continuation-bet | 7 | RISKY | even though equity is nearly even. | 채택 `a879e603` · 로케일 L-2g — 45.1 vs 54.9 원시 · 포지션이 격차 증폭 |
+| continuation-bet | 11 | RISKY | over 97% on the two boards we solved, almost all of it at the two-thirds-pot size (the one-third size got u… | 채택 `a879e603` · 로케일 L-2g — 3보드 전부 97%+ · AK2 ⅓ 57.8 |
+| continuation-bet | 20 | RISKY | players who planned to bluff-raise your flop c-bet get no bet to attack | 채택 `a879e603` · 로케일 L-2g — float 라벨 삭제(take away the flop raise) |
+| continuation-bet | 48 | RISKY | Betting here just donates chips — check. | 채택 `a879e603` · 로케일 L-2g — 표 #31 한정어 |
+| continuation-bet | 49 | RISKY | Betting into a board that hit them / 7‑6‑5 smashed their range, not yours / Check and give up | 채택 `a879e603` · 로케일 L-2g — 표 한정어 |
+| continuation-bet | 60 | RISKY | Don't c-bet when the board smashed your opponent's range (low connected boards) | 채택 `a879e603` · 로케일 L-2g — by default + 표 한정어 |
+| continuation-bet | 64 | RISKY | Bet often on boards you dominate; bet big only when you hold more of the nuts. | 채택 `a879e603` · 로케일 L-2g — 드로 과금 사유 추가 |
+| 3bet | 11 | RISKY | 4-bet says "I'm not going anywhere." | 채택 `a879e603` · 로케일 L-2g — value 4-bet 한정 · 블로커 블러프는 5-bet에 폴드 |
+| 3bet | 40 | RISKY | Stop min-3-betting and start jamming as you get short. | 채택 `a879e603` · 로케일 L-2g — FAQ #78 소형 3-bet 혼합 |
+| 3bet | 46 | RISKY | so a successful squeeze wins more, meaning your bluffs need to work *less* often to profit | 채택 `a879e603` · 로케일 L-2g — 블라인드 하락·버튼 동일(72.7→66.7 · 66.7=66.7) |
+| 3bet | 51 | RISKY | ~35% (rarely folds) / A calling station — they call with almost anything, so a bluff has no fold equity | 채택 `a879e603` · 로케일 L-2g — rarely gets enough folds(35% < 66.7%) |
+| 3bet | 60 | RISKY | Facing a raise, 3-bet-or-fold from the SB; save the wide flats for the big blind | 채택 `a879e603` · 로케일 L-2g — mostly |
+| 3bet | 73 | RISKY | which against a big 3-bet would have you defend only about a third — in other words, fold no more than abou… | 채택 `a879e603` · 로케일 L-2g — typical 3x IP · 66.7% |
+| 3bet | 79 | RISKY | A 3-bet is the first pre-flop re-raise — third bet in the sequence, because the blind counts as bet one. | 기각 — 같은 뿌리 #1·#23·#61이 09-25 잣대통일로 OK(MA-179 ① «first re-raise» 철회) · 원장 재라벨 누락 추정(MB 통지) |
+| starting-hands-chart | 11 | RISKY | Speculative / Small pairs (77–22), suited connectors (JTs, T9s, 98s), suited aces (A2s–A9s) / Late position… | 채택 `a879e603` · 로케일 L-2g — Mostly late position · full UTG keeps 77 |
+| starting-hands-chart | 12 | RISKY | Remove the three tightest seats from a 9-max table and every remaining position effectively "moves up." | 채택 `a879e603` · 로케일 L-2g — 첫 좌석만 moves up · 테이블 전체는 넓어짐 |
+| starting-hands-chart | 41 | RISKY | If a UTG player raises in front of you, most of them go straight into the muck — their edge disappears with… | 채택 `a879e603` · 로케일 L-2g — 폴드 사유 = 가격·상대 레인지(포지션 유지) |
+| starting-hands-chart | 54 | RISKY | (And the actual worst hand in poker? 7-2 offsuit | 채택 `a879e603` · 로케일 L-2g — usually called · 32o 약 32% < 72o 약 35%(MC 30만 재검산 32.2 / 34.5) |
+| starting-hands-chart | 60 | RISKY | if a player wins a pot with 7-2 offsuit — the worst hand — | 채택 `a879e603` · 로케일 L-2g — the hand most players call the worst |
+| when-to-fold | 27 | RISKY | When you're genuinely beaten, every other option is *negative* — calling costs you the call, raising costs … | 채택 `a879e603` · 로케일 L-2g — behind now and without the odds to catch up |
 
 ## L-2d 확률·아웃츠 7 — 52행 (WRONG 5 · RISKY 47)
 

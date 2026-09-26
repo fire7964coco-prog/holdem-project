@@ -1,3 +1,10 @@
+## 2026-09-26 (6) — L-2c 전략 8편 배포 · MA-187 이행 (MB-091)
+
+- `a879e603` EN 8편 원장 미결 56행 = 채택 55 · 기각 1(3bet #79 — 같은 뿌리 #1·#23·#61이 09-25 OK, 원장 재라벨 누락 추정 → MB 요청 1). 새 수치는 솔버 캡처 `.solver-captures/data.json` 대조(A-7-2 45.1/54.9 · 98.2 · 3bp 3보드 사이즈 · SRP ⅓ 선호) + 72o/32o MC 30만(34.5 / 32.2) + 67.6% = C(44,3)/C(50,3).
+- 핵심: positions «normally»+데드 버튼 예외 · limp «블라인드를 싸움 없이» · calling station 스트리트 무제한 · OOP 사이즈 보드·팟별 · IP 반격 = raise · 스퀴즈 손익분기 재계산 · MDF typical 3x.
+- MA-187 ①(L-2a 잔여) 동반: cooler FAQ 리트머스 strict sense+판단 기준 8로케일(ja 콜아웃) · bad-beat 카드 부제 EN+6 · cooler 표 머리 id·pt·zh·zh-hant(+es) · de glossary.
+- 렌즈 2종(딜러·교열) 14건 중 13 반영(c-bet FAQ·요약 «two-thirds»는 원장 OK 문면이라 유지). audit:hard 8로케일 0err · check:stamp 0 · build 73+577 · masterUpdated 미상향(부분 전파). 로케일 전파는 L-2g.
+
 ## 2026-09-26 (5) — L-2b GTO 13편 배포 · MA-185 이행 (MB-090)
 
 - `1bbe1bfe` EN 13편 원장 미결 68행 전건(WRONG 29 · RISKY 39 · 기각 0). 새 수치는 솔버 원시 `preset-results` 디코딩(rank c>>2 · suit c&3 · strategy[a*N+h])으로 전부 재검산 — paired 6x 큰 벳 기여 13.0% · monotone 차단 수·74s 부재 · bet-sizing 38 중 30콤보 28.5% 초과 · cbet 체크 잔여 0.0087콤보 · 9-8-7 스트레이트 24/20.
