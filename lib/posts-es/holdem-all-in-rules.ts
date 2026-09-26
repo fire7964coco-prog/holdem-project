@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ir all-in es apostar todas las fichas que tienes delante. Solo puedes ganar de cada rival lo que hayas igualado (el bote principal); las fichas extra de los stacks más grandes forman un side pot que solo pueden ganar los jugadores que las cubrieron. Un all-in menor que una subida completa NO reabre la apuesta para quienes ya actuaron.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-21",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-21",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -272,7 +272,7 @@ A. El all-in no es una cantidad fija: es apostar exactamente todas las fichas qu
 
 **Q. ¿Qué pasa si alguien hace all-in?**
 
-A. Cuando un rival hace all-in, tú decides entre pagar (igualar sus fichas), resubir o retirarte; él ya no puede hacer ninguna acción más en esa mano y verá todas las cartas comunitarias que queden. Si su all-in es menor que tu stack, solo estás obligado a igualar hasta esa cantidad para seguir en el bote. Si es por más de lo que tienes, no te preocupes: nunca puedes perder más que tu propio stack, y el exceso del rival forma un side pot que a ti no te afecta.
+A. Cuando un rival hace all-in, tú decides entre pagar (igualar sus fichas), resubir o retirarte; él ya no puede hacer ninguna acción más en esa mano y verá todas las cartas comunitarias que queden. Si su all-in es menor que tu stack, solo estás obligado a igualar hasta esa cantidad para seguir en el bote. Si es por más de lo que tienes, no te preocupes: nunca puedes perder más que tu propio stack, y el exceso del rival no te afecta: vuelve a su stack como apuesta no igualada o, si otro jugador también lo cubre, forma un side pot.
 
 **Q. ¿Qué pasa si no puedes igualar la apuesta (no cubres el all-in)?**
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "De los 169 tipos de mano inicial, solo una pequeña franja superior — cerca del 15–20% de las manos que te reparten — es rentable para un principiante. Los pares grandes (AA–TT) y AK suben desde cualquier asiento; cuanto más tarde actúas, más abres tu rango — desde ~13% en UTG hasta ~43% en el botón (más amplio aún en 6-max). Empieza con una tabla simplificada y añade las tablas preflop GTO cuando el subir-o-foldear ya te salga automático.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-09-24",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-24",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -196,7 +196,7 @@ Las peores manos iniciales del póker no son morralla al azar como 7-2 — nadie
 
 | Tipo de mano | Por qué pierde | Lo que piensan los principiantes |
 |-----------|-------------|---------------------|
-| ==r:Ases débiles (A2o–A8o)== | Hacen pareja de segundas frente a ases mejores | "Tengo un as, tiene que ser buena" |
+| ==r:Ases débiles (A2o–A8o)== | Su pareja de ases queda segunda frente a ases mejores | "Tengo un as, tiene que ser buena" |
 | Conectores bajos de distinto palo (76o, 65o) | Rara vez ligan limpio, difíciles de jugar cuando lo hacen | "Podría hacer una escalera" |
 | Rey-basura de distinto palo (K3o, K4o) | Dominados por cualquier rey mejor | "Un rey es una carta grande" |
 | Dos cartas cualesquiera del mismo palo | Hacen color en el river solo ~6.4% de las veces (lo ligan en el flop ~0.8%) | "Pero son del mismo palo" |
@@ -284,7 +284,7 @@ A. Ser del mismo palo añade en torno a 2 puntos porcentuales de equity sobre la
 
 **Q. ¿Debería foldear siempre los pares servidos bajos como 22 o 33?**
 
-A. No siempre — decide la posición. Desde el cutoff o el botón, los pares bajos vale la pena jugarlos para "buscar trío": ligas un trío o mejor cerca del 11.8% de las veces (más o menos 1 de cada 8.5). Desde posición temprana son difíciles de jugar de forma rentable y suelen ser fold.
+A. No siempre — decide la posición. Desde el cutoff o el botón, los pares bajos vale la pena jugarlos para "buscar trío": ligas un trío o mejor en el flop cerca del 11.8% de las veces (más o menos 1 de cada 8.5). Desde posición temprana son difíciles de jugar de forma rentable y suelen ser fold.
 
 **Q. ¿Cuál es la tabla de manos iniciales del póker?**
 

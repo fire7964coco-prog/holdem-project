@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Una apuesta de continuación (c-bet) es una apuesta en el flop del jugador que subió antes del flop. La regla moderna no es 'cbetear cada flop' — es apostar los flops que favorecen tu rango (boards altos y secos como K-7-2) pequeño y a menudo, y pasar los que favorecen a tu rival (boards bajos y conectados como 7-6-5). Apuesta pequeño — un tercio del bote — en boards secos, grande — dos tercios o más — en los húmedos, cbetea menos fuera de posición cuando eras el agresor de un bote de subida simple (como 3-bettor fuera de posición se invierte: casi siempre), y mucho menos multiway.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-11",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "15 min",
@@ -262,7 +262,7 @@ A. El tamaño lo marca la textura del board, con dos marchas que cubren casi tod
 
 **Q. ¿Cuál es un buen porcentaje de c-bet?**
 
-A. Una banda sana y equilibrada de c-bet en el flop está cerca del 55–70% agregando todos los boards. Pero no hay un solo número correcto: en posición mano a mano sobre un board seco cbeteas el 70–100% (a un tamaño pequeño), fuera de posición bajas al 30–45%, y multiway apuestas el 50% o menos. Más del ~85% delata piloto automático que los buenos jugadores castigan; por debajo del ~40% eres demasiado honesto. Trátalo como un chequeo de salud, no como un objetivo.
+A. Una banda sana y equilibrada de c-bet en el flop está cerca del 55–70% agregando todos los boards. Pero no hay un solo número correcto: en posición mano a mano sobre un board seco cbeteas el 70–100% (a un tamaño pequeño), fuera de posición como agresor en un bote de subida simple bajas al 30–45% (más alto cuando eres tú quien 3-betea), y multiway apuestas el 50% o menos. Más del ~85% delata piloto automático que los buenos jugadores castigan; por debajo del ~40% eres demasiado honesto. Trátalo como un chequeo de salud, no como un objetivo.
 
 **Q. ¿Cuándo NO hacer c-bet?**
 

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Cada decisión ganadora en Texas Hold'em se reduce a cinco preguntas repetibles: dónde estoy sentado (posición), ¿vale la pena jugar esta mano?, ¿subo o foldeo? (nunca limpeo), ¿sigo apostando en el flop?, y ¿cuándo suelto la mano? Un jugador tight-aggressive que responde bien esas cinco foldea ~80% de sus manos preflop, las juega con agresividad cuando entra, y le gana a casi cualquier partida casual — sin necesidad de memorizar listas de tips.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-11",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-11",
   keepImagesInBody: true,
   readTime: "14 min",
@@ -135,7 +135,7 @@ La regla general: **[cuando la historia que cuenta tu rival le gana a la mano qu
 
 No hace falta que seas matemático, pero dos números sostienen la mitad de tus decisiones.
 
-**Las pot odds** te dicen si un call es rentable: compara el precio del call con el tamaño del bote, y luego con tu probabilidad de ligar. Si el bote te ofrece 4 a 1 y tu proyecto liga aproximadamente 1 de cada 5, pagar es más o menos rentable a la larga; mejor que eso, es beneficio. Este es el motor detrás de cada spot de «¿persigo este proyecto?» — y la [guía de pot odds](/es/blog/holdem-pot-odds) lo convierte en una lectura de tabla de 10 segundos.
+**Las pot odds** te dicen si un call es rentable: compara el precio del call con el tamaño del bote, y luego con tu probabilidad de ligar. Si el bote te ofrece 4 a 1 y tu proyecto liga aproximadamente 1 de cada 5, pagar queda más o menos en el punto de equilibrio a la larga; mejor que eso, es beneficio. Este es el motor detrás de cada spot de «¿persigo este proyecto?» — y la [guía de pot odds](/es/blog/holdem-pot-odds) lo convierte en una lectura de tabla de 10 segundos.
 
 **Las odds de set-mining** explican por qué los pares pequeños son especulativos. Iguala una subida con un par de cincos esperando ligar un trío en el flop — tres iguales — y conectarás solo alrededor del **11.8% de las veces, más o menos 1 de cada 8.5.** Cuando funciona es precioso: ligas un flop ==5♣ K♠ 2♦== con ==5♠5♦== y tienes un trío escondido que le saca todo el stack a un sobrepar. Pero como fallas el ~88% de los flops, buscar trío solo es rentable cuando los stacks efectivos son lo bastante profundos como para pagarte cuando ligas — una guía aproximada es **al menos ~15–20× el tamaño del call.** ¿Stacks cortos? Ese call especulativo se convierte en una fuga. La [tabla completa de odds y probabilidades](/es/blog/holdem-probability) tiene todos los números que vas a necesitar.
 

@@ -28,11 +28,11 @@ export const POST: Post = {
   title: "Nadie hace check en este flop",
   seoTitle: "Nadie hace check en este flop — qué hace el SPR 4 en poker",
   // 153자
-  desc: "En este bote de 3-bet el solver nunca hace check: apuestan los 63 combos. No porque el rango sea fuerte, sino porque al rival no le quedan ases ni reyes.",
+  desc: "En este bote de 3-bet el solver nunca hace check: apuestan los 63 combos. No por la fuerza del rango, sino porque al rival no le quedan ases ni reyes servidos.",
   tldr: "En A♦K♠2♥, en un bote de 3-bet, la ciega grande apuesta el 100% de las veces. El check es 0.0% — ni un combo de 63. En los siete spots anteriores su opción por defecto era hacer check, entre el 76.2% y el 99.9% del tiempo. Lo que cambió es sobre todo la acción preflop: la ciega grande hizo 3-bet en lugar de pagar, así que es dueña de la parte alta de este flop mientras el botón se deshizo de sus ases y reyes servidos con el 4-bet. Y con un SPR de 4.0 no hay calle posterior a la que aplazar nada.",
   category: "strategy",
   date: "2026-09-02",
-  updated: "2026-09-02",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-02",
   keepImagesInBody: true,
   readTime: "12 min",

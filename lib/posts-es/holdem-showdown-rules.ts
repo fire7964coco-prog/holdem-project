@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "En torneos, sin all-in, enseña primero el último agresor del river; si todos pasan, empieza el primer jugador activo a la izquierda del botón. Con all-in, todas las manos restantes se muestran en cuanto terminan las apuestas. Quien pagó en el river y conserva o ya mostró sus cartas puede pedir ver la mano del último agresor. En cash, la sala fija las reglas para mostrar y hacer muck.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-22",
+  updated: "2026-09-26",
   masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "10 min",
@@ -200,7 +200,7 @@ A. No. Si todos los demás se tiran antes del showdown, ganas el bote inmediatam
 
 **Q. ¿Qué pasa si hay un empate en el showdown?**
 
-A. Si dos o más jugadores enseñan exactamente la misma mejor mano de cinco cartas, el bote se reparte a partes iguales entre ellos: es un bote dividido (split). Ojo, no basta con tener la misma jugada — cuenta la mejor combinación de cinco cartas, y a menudo el kicker o una carta de la mesa deshace el empate. Lo tienes detallado en [las reglas del split pot y del reparto del bote](/es/blog/holdem-split-pot-rules) y en [las reglas del desempate y el kicker](/es/blog/holdem-tiebreak-rules).
+A. Si dos o más jugadores enseñan exactamente la misma mejor mano de cinco cartas, el bote se reparte a partes iguales entre ellos: es un bote dividido (split). Ojo, no basta con tener la misma jugada — cuenta la mejor combinación de cinco cartas, y a menudo es el kicker el que deshace el empate (las cartas de la mesa son comunes a todos, así que por sí solas no desempatan). Lo tienes detallado en [las reglas del split pot y del reparto del bote](/es/blog/holdem-split-pot-rules) y en [las reglas del desempate y el kicker](/es/blog/holdem-tiebreak-rules).
 
 ---
 
