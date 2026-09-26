@@ -292,3 +292,10 @@
 | texas-holdem-rules-for-beginners | 77 | RISKY | When you have a drawing hand (e.g. four cards to a flush), count your outs — the cards that will complete y… | 채택 `10e5997b` — likely winner |
 
 > 🪶 L-2e 로케일: 이번 커밋 동반 = MA-188 ② betting Rule 103(es·zh·zh-hant) · ③ showdown FAQ 18-B(zh·zh-hant) · de TDA-2024-Regel 접두 6편(MA-182 통지 2) · Live Action Rule 174→175 9로케일 · beginners #68 올인 단서 21로케일. **나머지 EN 변경의 형제 로케일 전파 = L-2g** — 특히 TDA 판 접두(de 외 전 로케일) · reading #54 Rule 22 절(de 포함) · all-in 단일 오버칩 TDA 44 · SF «더 높은 SF» 본문+캡션 · 트리플 세 구성 · K-K-9-9-5 무늬 · 5장 기준 한정 · beginners #25·#27·#77.
+
+## L-2f 계산기 AQo↔KQo + MA-190 요청 1 — `4acd45c5`(MB-094)
+
+- 계산기(게시물 원장 밖): AQo 권고 = AJs 문구 · EN+10로케일+ko 12파일 · 169쌍 역전 0.
+- MA-190 ⓐ monotone A♠7♠ «bets the most» WRONG → 44.0%·A♠4♠ 47.3% 명시(EN+ko) · ⓑ paired «Trips blockers»(EN+ko+es).
+
+> 🪶 **L-2g 전파 목록(MA-190 ② · 검수장 보고 `reports/검수-본부-L2b이행-2026-09-26.md` §3-2 자리표)**: ko WRONG 4 — ace-paired «체크 이후 노드는 어느 편에도 계산돼 있지 않습니다» · blind-connected «BB의 콜 레인지에만» · «맞아 봐야 원 페어» · (monotone A♠7♠ = 이번 동반 ✅) + RISKY 19 · es WRONG 7 — ace-paired #97 · blind-connected #40·#90 · monotone #13·#53·#54·#57 + bet-sizing #58 JJ 경로 · RISKY 다수. 🔴 monotone A♠7♠ 문장은 es에 **옮기지 말 것**(es엔 원래 없음). 참고(요청 아님): blind-connected #12 거트샷 A3·A9 32 누락 · low-board «almost every casino» · zh reading #7 «没有顺子听牌» RISKY.

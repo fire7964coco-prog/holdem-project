@@ -1,3 +1,10 @@
+## 2026-09-26 (9) — L-2f 계산기 AQo↔KQo · MA-190 요청 1 이행 (MB-094)
+
+- `4acd45c5` 계산기 AQo «mid/late»(EP 없음) < 지배당하는 KQo «EP 레이즈 또는 폴드» 역전(MA-183 ①) → AQo = 같은 파일 AJs·A10s 문구 축어(EN+10로케일+ko 12파일).
+- 169핸드 지배 쌍 재검산: 09-25(`104fac47`) 스크립트의 커넥터 예외가 KQo(**오프수트** 커넥터)까지 빼서 이 쌍을 놓친 것이 원인. 예외를 수티드 커넥터로 한정 → 쌍 1,234 · 전 역전 1(AQo<KQo) → 후 0. (예외 없이 돌리면 Q7s<87s 류 22쌍 = 폴백 BTN vs 수티드 커넥터 LP — 표준 레인지상 정상이라 예외 유지.)
+- MA-190 요청 1: ⓐ monotone «A♠7♠ … still bets the most» = 표 A♠4♠ 벳 47.3% > A♠7♠ 44.0% → WRONG · «44.0%, second only to A♠4♠ (47.3%), which blocks just 2» EN+ko(es 해당 문장 없음) ⓑ paired «Blockers do not explain» → «Trips blockers» EN+ko+es. MA-190 ② L-2g 전파 목록 = 작업판 L-2f 절.
+- audit:hard 0err · check:stamp 0 · build 73+577(check:calc-parity:all 포함).
+
 ## 2026-09-26 (8) — L-2e 족보·규칙 배포 · MA-188 ②③ · MA-182 통지 2 이행 (MB-093)
 
 - `10e5997b` EN 11편 원장 미결 28행 = 채택 27 · 기각 1(game-order #17 — 작업판 스냅숏이 원장의 zh 사유 행을 EN 행으로 뽑은 혼입). WRONG 2: 트리플 «two ways» → 세 구성(보드 트리플) · reading «changes who's winning» → can change(AA vs KK에 7 반례).
