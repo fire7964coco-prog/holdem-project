@@ -37,7 +37,7 @@
 - game-order L87–88 A♠J♥ ↔ 9♠9♥ 자리 뒤바뀜 · split-pot L44 ↔ L278 자기모순 · reading L62 «几乎没别的»
 - pot-odds L239 «Correct fold» 근거 이식(EN L191)
 
-**zh-hant** (MA-144 ③ · MA-175 · MA-177 · MA-178)
+**zh-hant** (MA-144 ③ · MA-175 · MA-177 · MA-178) — ✅ **31자리 이행 `9a991e37`(09-26 · MB-087)** · equity L192 벳 문턱만 EN L170 동형이라 L-2 이월
 - outs L168 «少一張» (WRONG · EN L139 이식) · outs tldr L8 «變成大牌» · outs L41 «三張同花時…你還是輸»
 - drawing «打 100 手還成不了»(L116) · «8 倍 補不回»(L63) · L67·L201 «整個基礎» · probability L269 «多人時更低» · L153·FAQ L273 4-2 «9 張以內» 한정 복원
 - implied «小同花（K花那種）» · card-counting «牌靴式»

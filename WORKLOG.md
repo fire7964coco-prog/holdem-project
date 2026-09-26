@@ -1,3 +1,10 @@
+## 2026-09-26 (3) — L-1 zh-hant 로케일 고유 정정 · L-1 종결 (MB-087)
+
+- `9a991e37` zh-hant 16편 31자리(WRONG 3 = outs 복합 드로 겹침 1·2장 · bad-beat 快速回答 전칭 · betting FAQ 過牌 조건). 66705ba8의 zh 완화가 zh-hant에 안 넘어온 자리(整個基礎 2 · 9張 한정) 전파 · 快速解答 층 전칭 다수를 본문 문면으로 한정.
+- bad-beat 코치 박스의 내부 규칙 번호(«§13 紅線») 노출 삭제.
+- equity 벳 문턱(L192)은 EN 동형 → L-2. audit:hard zh-hant 57편 0err · 빌드 ✅.
+- **L-1 종결**: es 10 · zh 25 · zh-hant 31 = 66자리.
+
 ## 2026-09-26 (2) — L-1 zh 로케일 고유 정정 (MB-086)
 
 - `b19932db` zh 17편 25자리(WRONG 3 = implied steps 底池+跟注 · tiebreak 零头 버튼 기준 · reading K-9-4 A-K를 이기는 31콤보). 정답형은 같은 글 문면 또는 EN·zh-hant 사본(game-order 순서 · pot-odds 正确弃牌 근거 EN L191).
