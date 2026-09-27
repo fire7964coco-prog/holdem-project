@@ -330,7 +330,7 @@ A. Ya. Flush ialah #5 dan straight #6, jadi flush sentiasa menang. Ia lebih ting
 
 **Q. Adakah full house menang ke atas flush?**
 
-A. Ya. Full house (#4) menang ke atas flush (#5) dan straight. Ia hanya kalah kepada four of a kind, straight flush, atau royal flush.
+A. Ya. Full house (#4) menang ke atas flush (#5) dan straight. Ia hanya kalah kepada full house yang lebih tinggi, four of a kind, straight flush, atau royal flush.
 
 **Q. Apa yang menang ke atas straight dalam poker?**
 

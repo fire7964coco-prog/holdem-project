@@ -292,7 +292,7 @@ A. Có. Thùng là #5 và Sảnh là #6, nên Thùng luôn thắng. Nó xếp ca
 
 **Q. Cù Lũ có thắng Thùng không?**
 
-A. Có. Cù Lũ (#4) thắng Thùng (#5) và Sảnh. Nó chỉ thua Tứ Quý, Thùng Phá Sảnh và Royal Flush.
+A. Có. Cù Lũ (#4) thắng Thùng (#5) và Sảnh. Nó chỉ thua Cù Lũ cao hơn, Tứ Quý, Thùng Phá Sảnh và Royal Flush.
 
 **Q. Kicker là gì?**
 

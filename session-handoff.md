@@ -1,6 +1,6 @@
 # 다음 세션 알림장
 
-> 갱신: 2026-09-26 (L-2h 검수장 대조 요청 4건 · MB-097) · 그 전 09-26 (L-2g 로케일 전파 · L-2 종결) · 이전 2026-09-24 (B4 종결 · B 대기열 소진). 시작 순서: AGENTS.md → CLAUDE.md 전문 → 이 파일 → `git status` + **워크트리 3곳 status**(아래).
+> 갱신: 2026-09-27 (L-2i 검수장 대조 요청 3건 · MB-101) · 그 전 09-26 (L-2h · MB-097) · 그 전 09-26 (L-2g 로케일 전파 · L-2 종결) · 이전 2026-09-24 (B4 종결 · B 대기열 소진). 시작 순서: AGENTS.md → CLAUDE.md 전문 → 이 파일 → `git status` + **워크트리 3곳 status**(아래).
 > 🔴 **작업 주체가 바뀐다**: 09-22까지는 **GPT(커서/Codex)로 이 폴더를 열어 작업**했다(커밋 트레일러 없음·영어 커밋 메시지 = GPT분). 09-23 GA·GSC 보고서와 처방 1회차는 Claude. **한도 리셋 후 다시 Claude 본체로 간다.** GPT가 남긴 미결은 아래 «B. 이월 대기열»에 모았다 — 정본은 `docs/backlog-closeout-2026-09-22.md` §3·§4(GPT가 쓴 체크포인트. 그 뒤 **규칙 41편·Q8-a PT·086161eb는 09-22에 배포·마감 완료**라 그 표의 해당 «남음» 칸은 낡았다).
 
 ## 사장님이 정한 순서 (09-23)
@@ -23,7 +23,7 @@
 ▶ **B 대기열 소진** (B1 확률 09-24 (4)~(7) · B2 ID 용어 (8) · B3 DE 용어 (9) · B4 EN-먼저 사실·표현 (10) 종결). **다음 세션 = 사장님 09-24 우선순위(언어별 번역작업 · 신규 포스팅) 중 지시 대기** — 자동 착수 금지. B4가 남긴 것: J-2 cooler «could never correctly fold» 판정(판정 선행 · en-first-queue §2-J) · TDA 판본 부채(별건) · §2-K 11건(자동 착수 대상 아님). DE 계산기→bubble 링크는 EN related 패리티로 **하지 않는다**(backlog §4 확정).
 
 - 워크트리 확인: `git worktree list` — calc-ko·ja·queue·zh·zh-hant 모두 09-24에 main `73d0818d`로 ff 동기화(calc-ko 초안 diff 보존 확인). **calc-ko의 미커밋 초안을 `git add -A`·강제동기화·reset으로 날리지 마라.**
-- 장기 미결(자동 착수 대상 아님): 확률 묶음 잔여(answer-echo LABELS de·es·id·pt 미등록 · ja/zh 기존 도입문 과장 단정 등 = `docs/harden-brief/probability-closeout.md` §7-D «남긴 것») · re-entry zh/zh-hant 용어 판정 · solver-client5 SEO 표현 · es LATAM · 우편함(09-26 · MA-172·179·182·183 = MB-088로 회신·등재): 수신 11건은 `docs/en-first-queue.md` §2-L로 등재·MB-083 회신. **L-1 종결**(09-26 · es·zh·zh-hant 66자리 · MB-085~087) → ✅ **L-2 EN-먼저 종결**(09-26 · a 용어 `18b8eaf9` → b GTO `1bbe1bfe` → c 전략 `a879e603` → d 확률 `7d2a0822` → e 족보·규칙 `10e5997b` → f 계산기 `4acd45c5` → **g 로케일 전파 `52093176`(MB-096 · 372파일)** · intake `docs/harden-brief/l2-en-first-intake-2026-09-26.md` §2). ✅ **L-2h**(09-26 · `95fef741` · MB-097): MA-192·194·196 요청 4건 이행 + MA-184 ACK. ▶ **다음 = 검수장 MA 수신 대기** — L-2f(MB-094)·L-2g(MB-096)·L-2h(MB-097) 대조 결과 → 받은 MA는 다음 세션 안에 회신+등재. L-2h 남긴 것 = 작업판 L-2h 절 🪶(card-counting «2026 TDA» 판 표기 · 판정 선행). **L-2g가 남긴 것 9항 = 작업판 `l2-en-open-rows-2026-09-26.md` L-2g 절 🪶**(EN-먼저 후보 hand-rankings FAQ 풀하우스 = MB-096 요청 1 · 판정 받기 전 착수 금지). 그 밖엔 사장님 09-24 우선순위(언어별 번역작업 · 신규 포스팅) 지시 대기. 계산기 L-3은 09-25 종결(`104fac47`·`0932f093` · MB-084). 보류 = EN-먼저 전부(검수장 EN 재검증 최종 MA와 합침) · cooler 인접 2건(검수장 회신 대기 · MB-083 요청 1). 🔴 세션 시작 시 우편함 점검(CLAUDE.md 세션 시작 4). 시한은 `docs/update-calendar.md`.
+- 장기 미결(자동 착수 대상 아님): 확률 묶음 잔여(answer-echo LABELS de·es·id·pt 미등록 · ja/zh 기존 도입문 과장 단정 등 = `docs/harden-brief/probability-closeout.md` §7-D «남긴 것») · re-entry zh/zh-hant 용어 판정 · solver-client5 SEO 표현 · es LATAM · 우편함(09-26 · MA-172·179·182·183 = MB-088로 회신·등재): 수신 11건은 `docs/en-first-queue.md` §2-L로 등재·MB-083 회신. **L-1 종결**(09-26 · es·zh·zh-hant 66자리 · MB-085~087) → ✅ **L-2 EN-먼저 종결**(09-26 · a 용어 `18b8eaf9` → b GTO `1bbe1bfe` → c 전략 `a879e603` → d 확률 `7d2a0822` → e 족보·규칙 `10e5997b` → f 계산기 `4acd45c5` → **g 로케일 전파 `52093176`(MB-096 · 372파일)** · intake `docs/harden-brief/l2-en-first-intake-2026-09-26.md` §2). ✅ **L-2h**(09-26 · `95fef741` · MB-097) · ✅ **L-2i**(09-27 · `541394e0` · MB-101): MA-200·202 요청 3건 이행(풀하우스 FAQ EN+12 · 로케일 고유 9 · strategy 요약 SB 예외 EN+7). ▶ **다음 = 검수장 MA 수신 대기**(MB-101 대조) → 받은 MA는 다음 세션 안에 회신+등재. 남긴 것 = 작업판 `l2-en-open-rows-2026-09-26.md` **L-2i·L-2h·L-2g 절 🪶**(EN-먼저 후보 reading-the-board «any king … is trips» · ko donk 인과 귀속 정본 방향 등 · 판정 받기 전 착수 금지). 그 밖엔 사장님 09-24 우선순위(언어별 번역작업 · 신규 포스팅) 지시 대기. 계산기 L-3은 09-25 종결(`104fac47`·`0932f093` · MB-084). 보류 = EN-먼저 전부(검수장 EN 재검증 최종 MA와 합침) · cooler 인접 2건(검수장 회신 대기 · MB-083 요청 1). 🔴 세션 시작 시 우편함 점검(CLAUDE.md 세션 시작 4). 시한은 `docs/update-calendar.md`.
 
 ## C. GTO 예제 전략 (09-26 확정 · `settled-decisions` §1-E)
 
@@ -34,6 +34,7 @@
 
 - 30편(대회 가이드 5 제외) · 레인 = `Holdem-ms-rank`·`-prob`·`-strat`·`-tour`·`-gloss`(브랜치 `harden-ms-*` · main `cd4e5eaa`에서 분기). 상태 = `docs/ms-lanes/<id>-진행.md`.
 - 레인 창 첫 마디: 「HARDEN.md 읽고 A 시작해」 → `/clear` → B → `/clear` → C. 모델 = Opus 5.5(카피만 Fable 서브).
+- 🔴 **ms-strat 머지 때**: EN strategy 말미 요약이 `541394e0`에서 바뀌었다(SB 컴플리트 예외 괄호) — 레인은 `cd4e5eaa` EN 기준이라 헤드가 반영한다.
 - ▶ 헤드 몫: 레인 끝나는 대로 머지(🔴 **배포는 5레인 전부 머지 후 1회**) → 신규 용어 대조 · 교차 렌즈 · 기존 21편 링크 복원(queue 회차) → 빌드·배포 → MB로 **GPT 아스트라** 검수 요청 + ms 동결(§7·§8).
 
 ## 참고 경계

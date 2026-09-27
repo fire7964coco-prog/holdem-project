@@ -36,7 +36,7 @@ Genau das sind Drawing Odds in Wahrheit: kein Glück, sondern die ==feste Mathem
 
 ## Was floppst du wie oft? Der ganze Lebenszyklus einer Hand
 
-Ein Pocket Pair wird in **11,8%** der Fälle zum Set. Zwei suited Karten werden nur in **0,84%** direkt zum Flush, aber in **10,9%** zum Flushdraw – und der kommt danach in 35% bis zum River an. Connectors floppen in 1,3% eine fertige Straße. Diese drei Ebenen – fertig, Draw, komplettiert – werden ständig vermengt, und genau daraus entstehen die meisten Odds-Fehler.
+Ein Pocket Pair wird in **11,8%** der Fälle zum Set. Zwei suited Karten werden nur in **0,84%** direkt zum Flush, aber in **10,9%** zum Flushdraw – und der kommt danach in 35% bis zum River an. Connectors aus der Mitte (54 bis JT) floppen in etwa 1,3% eine fertige Straße. Diese drei Ebenen – fertig, Draw, komplettiert – werden ständig vermengt, und genau daraus entstehen die meisten Odds-Fehler.
 
 Hier ist die Tabelle, die niemand an einem Ort baut. Die meisten Seiten nennen dir die Chance, eine Hand zu *floppen*, auf einer Seite und die Chance, einen Draw zu *komplettieren*, auf einer anderen – aber am Tisch ist es eine durchgehende Geschichte. (Für einen konkreten Spot statt der Übersicht: [Poker-Rechner](/de/calculator).) Du bekommst zwei Karten, du floppst etwas Fertiges **oder** einen Draw, und wenn es ein Draw ist, komplettierst du ihn oder eben nicht.
 

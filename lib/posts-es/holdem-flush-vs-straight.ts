@@ -222,7 +222,7 @@ A. Una escalera es más frecuente. Hay unas 10,200 formas de armar una escalera 
 
 **Q. ¿Qué es mejor, una escalera de color o un full?**
 
-A. La escalera de color. Con solo 36 combinaciones (~0.00139%) es muchísimo más rara que un full, así que la escalera de color (#2) gana al full (#4) con claridad. Solo la bate una escalera real u otra escalera de color más alta.
+A. La escalera de color. Con solo 36 combinaciones (~0.00139% de las manos de cinco cartas, frente al 0.144% del full) es muchísimo más rara que un full, así que la escalera de color (#2) gana al full (#4) con claridad. Solo la bate una escalera real u otra escalera de color más alta.
 
 **Q. ¿Qué le gana a la escalera de color?**
 
