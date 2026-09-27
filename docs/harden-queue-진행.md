@@ -1363,6 +1363,8 @@ B 176 축어 예시(100 벳 + 140 올인 → **240**)·A 96.a(1,700 + 500 → **
 
 ### Q16 (2026-09-27 · 게이트·렌더러 4파일 — **배포가 걸린 회차다**: 렌더러 변경으로 9로케일 앵커 id 9개가 바뀐다)
 
+> 🔵 **헤드 처리 (2026-09-27 (5) · ff 머지·배포 `2da14f91`)** — Q16-1 ✅ build 73+607 · check:heading-text 675파일 🔴 0 · audit selftest 80/80 · 라이브 en·ms paired-board 새 id 확인 · **MB-104**. Q16-2 ✅ Q15-3·Q15-4 종결. Q16-3 ✅ `hardening-protocol` §7-F 게이트(C) 행 등재 · 빌드 훅에는 안 물린다(256자). Q16-4 = **ms 동결 해제 뒤** EN-먼저 한 회차로 판단(지금 열지 않는다).
+
 - 🔴 **Q16-1 배포 + MB 통지 초안**: 「렌더러 Q16 — `lib/blog-headings.ts` `headingText()`: H2 안 마크다운 링크를 목차 문자열·헤딩 id에서 벗긴다. 본문 문장 변경 0 · `updated` 불변. **바뀐 앵커 9** = `paired-board-strategy` en·es·hi·id·ja·ms·pt·zh·zh-hant의 링크 든 H2 1개씩(URL 조각이 붙은 옛 id → 글자만의 id · 예 en `#should-you-fold-acehigh-to-a-continuation-bet`). 원장 앵커에 옛 id가 있으면 갱신 요청(레포·검수장 grep 0).」 🪶 ms 파일 원문은 안 건드렸다(동결 준수) — 산출 HTML의 id만 바뀐다. sitemap은 `updated` 불변이라 행 변화 0이 정상.
 - 🟠 **Q16-2 Q15-3 · Q15-4 ✅ 처리**: 위 §5 Q15의 두 행을 종결로(해결 = 이 회차 커밋).
 - 🟠 **Q16-3 게이트 등재**: 신설 `check:heading-text`(+`:selftest`)를 프로토콜 §7-F «게이트(C)» 행에 «헤딩·H2를 손댔거나 `lib/blog-headings.ts`·렌더러를 손댔으면» 조건으로 추가(정본 문서 = 헤드 몫). `prebuild`·`build:vercel`에는 **물리지 않았다**(`buildCommand` 256자 한도 · 올릴지 헤드 판단 — 올리면 두 곳 다).
@@ -1374,8 +1376,8 @@ B 176 축어 예시(100 벳 + 140 올인 → **240**)·A 96.a(1,700 + 500 → **
 
 - 🔴 **Q15-1 배포 + MB 통지 초안**: 「ms Q15 — 신규 30편 용어 통일(favourite·leak·stakes rendah·Ringkasan pantas·N Perkara·tournament·posisi·rangka kerja·orbit) + 기존 20편 EN 링크 복원(본문·readnext·카드) + 구판 라벨 14. `updated`·`masterUpdated` 불변. 되돌리지 마라: hand-rankings L111 «cooler»(EN L110 «beat») · tiebreak L233 «Kejohanan WSOP»(룰북명과 한 괄호). 이 해시로 **GPT 아스트라 교차 검수 요청 + ms 동결**(브리프 머리).」 로케일 = ms만(EN·ja·zh·zh-hant 무변경 → §6-0 통지 불요). sitemap은 `updated` 불변이라 행 변화 0이 정상.
 - 🟠 **Q15-2 ms 드리프트 회차 재료**: `holdem-game-order` FAQ 4문항 번역(EN L354·L358·L362·L390) + 꼬리 드리프트 ms 6편(`audit:hard --locale=ms` 미러 드리프트 절). 동결과 충돌하면 아스트라 판정 뒤로.
-- 🟠 **Q15-3 게이트 결함**: `audit:hard -- --schema --locale=<loc>`이 `--locale`을 무시하고 `.next/server/app/blog`(KO)와 대조한다(`scripts/audit-hardening.mjs:1635`) → 비KO 로케일에서 «산출물 없음»·문항 불일치가 가짜로 뜬다. 처방 = 로케일이면 `.next/server/app/<loc>/blog` · 셀프테스트 1건. 이번 회차는 scratch 스크립트로 ms 51/51 직접 대조했다.
-- 🟠 **Q15-4 렌더러**: H2 안 링크(`## …[c-bet](/…)?`)가 TOC 문자열과 앵커 id에 마크다운 원문을 흘린다(ms paired-board L185 · EN L278 동형 · 레포 9편 · 렌즈 3 실측 id `#patutkah-acehigh-fold-kepada-cbetmsblogholdemcontinuationbet`). 근본책 = TOC·slugify에서 `[x](url)` 벗기기 — EN-먼저·게이트 회차.
+- ✅ (Q16 `2da14f91` 종결) **Q15-3 게이트 결함**: `audit:hard -- --schema --locale=<loc>`이 `--locale`을 무시하고 `.next/server/app/blog`(KO)와 대조한다(`scripts/audit-hardening.mjs:1635`) → 비KO 로케일에서 «산출물 없음»·문항 불일치가 가짜로 뜬다. 처방 = 로케일이면 `.next/server/app/<loc>/blog` · 셀프테스트 1건. 이번 회차는 scratch 스크립트로 ms 51/51 직접 대조했다.
+- ✅ (Q16 `2da14f91` 종결) **Q15-4 렌더러**: H2 안 링크(`## …[c-bet](/…)?`)가 TOC 문자열과 앵커 id에 마크다운 원문을 흘린다(ms paired-board L185 · EN L278 동형 · 레포 9편 · 렌즈 3 실측 id `#patutkah-acehigh-fold-kepada-cbetmsblogholdemcontinuationbet`). 근본책 = TOC·slugify에서 `[x](url)` 벗기기 — EN-먼저·게이트 회차.
 - 🟡 **Q15-5 판정 요청**: §2 «Q15가 남긴 것» ⓑ(기존 21편 kejohanan 통일 여부)를 동결 전에 할지 헤드 결정.
 
 ### Q14 (2026-09-22 · MA-148 이행 — 30포스트 + 공용 도표)

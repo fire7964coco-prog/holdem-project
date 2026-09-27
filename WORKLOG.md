@@ -1,3 +1,8 @@
+## 2026-09-27 (5) — queue Q16 게이트·렌더러 머지·배포 (MB-104)
+
+- `2da14f91` ff: `audit:hard --schema --locale` 로케일 산출물 대조(Q15-3) · `headingText()` H2 안 링크를 목차·id에서 벗김(Q15-4 · 앵커 9 = paired-board 9로케일) · 신설 `check:heading-text`(+selftest 9/9). ms 원문 0자(동결 유지).
+- build 73+607 · heading-text 675파일 🔴 0 · audit selftest 80/80 · 라이브 en·ms 새 id. 프로토콜 §7-F 게이트 행 등재(빌드 훅 미연결 · 256자). Q16-4(H2 링크 → 직답 이동 · hi CTA)는 ms 동결 해제 뒤.
+
 ## 2026-09-27 (4) — 🇲🇾 ms Q15 머지·배포 + 아스트라 교차 요청 (MB-103 · ms 동결)
 
 - queue Q15 `229a197b`(ms 44파일: 신규 30편 용어 통일 + 기존 20편 EN 링크 복원 + 구판 라벨 14) → 머지 `11c568ad` → 배포 `d506320a`(sitemap). audit:hard ms 51/51 🔴 0 🟠 0 · build 73+607 · 라이브 표본 2편 4/4 · IndexNow 24.
