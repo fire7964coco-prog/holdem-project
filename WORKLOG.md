@@ -1,3 +1,9 @@
+## 2026-09-27 (3) — `wpt-australia-2026-guide` 원문 실측 · 회차 10/1 이후로 (사장님 결정 B)
+
+- starpoker.com.au 실측 → `docs/tournament-factsheets/2026-09-wpt-australia.md`: 현장 위성 PDF(9월판 · $290 Championship DQ 없음 · $550 DQ 마지막 9/25 · 전체 마지막 9/28 PLO · 글 표에 없는 위성 3종) · Results 첫 페이지(Prime $1,346,900 등) · Championship 페이지(Unlimited re-entry — 글 FAQ «WPT once per flight»와 대조 필요).
+- 🪶 `pdftotext -layout`은 이 PDF의 날짜 열을 어긋나게 뽑는다 → PNG 렌더 육안으로 대응 확인.
+- 결정: 창구 만료 정리 + 결과 아카이브를 10/1 이후 한 회차로(글이 마감 날짜를 명시해 거짓 안내는 아님). 본문 변경 0 → MB 없음. 캘린더 9/30 항목·핸드오프 E절 갱신.
+
 ## 2026-09-27 (2) — 🇲🇾 ms 신규 30편 5레인 머지·배포 (MB-102)
 
 - 5레인 C 완료 → 머지(rank·prob·strat·tour·gloss · 충돌 0) · `469d08f8` ms 계산기 사전 빠른 참조 표1~5·related 8·deal·shortStack 링크를 EN 슬러그로(calc-parity ms 13→0) · ms 21 → 51편 · build 73+607 · audit:hard ms 51/51 🔴 0 · 라이브 표본 200 · IndexNow 457 · lane:sync 10레인.
