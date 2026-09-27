@@ -871,12 +871,91 @@ export function clusterForSlug(slug: string, clusters: PillarCluster[] = EN_CLUS
  * 데이터 모듈이 로케일 레지스트리에 의존하게 된다. 값 자체는 문자열 키라 좁힐 실익이 없다.
  */
 /**
- * hi·ms — 필라 클러스터 맵이 없는 로케일이지만 GTO 시리즈 13편은 있다(2026-09-16).
+ * hi — 필라 클러스터 맵이 없는 로케일이지만 GTO 시리즈 13편은 있다(2026-09-16).
  * 시리즈 글에 우측 사이드바·러닝맵이 붙도록 «솔버 필라 하나짜리» 맵을 둔다.
  * 다른 글은 여전히 클러스터 없음(관련글은 카테고리 회전 폴백 · 미니맵 미표시) — 종전과 같다.
  */
 export const HI_CLUSTERS: PillarCluster[] = [...solverOf("hi")];
-export const MS_CLUSTERS: PillarCluster[] = [...solverOf("ms")];
+
+// ms — 2026-09-27 신규 30편 머지로 EN 6필라 슬러그가 전부 실재 → ID와 같은 구조(사장님 지적: 사이드바 로드맵 미표시).
+// 대회 가이드 4편(apt-incheon·korea-marathon·wpt-australia·ept-barcelona)은 ms에 없어 뺀다. 라벨 = ms 글 제목·용어 정본.
+export const MS_CLUSTERS: PillarCluster[] = [
+  {
+    id: "rules",
+    pillarSlug: "texas-holdem-rules-for-beginners",
+    pillarLabel: "Peraturan",
+    nodes: [
+      { slug: "holdem-game-order", label: "Urutan Permainan" },
+      { slug: "holdem-betting-actions", label: "Aksi Pertaruhan" },
+      { slug: "holdem-blind-meaning", label: "Blind" },
+      { slug: "holdem-all-in-rules", label: "Peraturan All-In" },
+      { slug: "holdem-showdown-rules", label: "Showdown" },
+    ],
+  },
+  {
+    id: "rankings",
+    pillarSlug: "holdem-hand-rankings",
+    pillarLabel: "Susunan Tangan",
+    nodes: [
+      { slug: "holdem-flush-vs-straight", label: "Flush vs Straight" },
+      { slug: "holdem-kicker", label: "Kicker" },
+      { slug: "holdem-tiebreak-rules", label: "Pemecah Seri" },
+      { slug: "holdem-split-pot-rules", label: "Split Pot" },
+      { slug: "holdem-reading-the-board", label: "Membaca Board" },
+    ],
+  },
+  {
+    id: "odds",
+    pillarSlug: "holdem-probability",
+    pillarLabel: "Odds & Matematik",
+    nodes: [
+      { slug: "holdem-pot-odds", label: "Pot Odds" },
+      { slug: "holdem-outs", label: "Kira Outs" },
+      { slug: "holdem-drawing-odds", label: "Odds Draw" },
+      { slug: "holdem-implied-odds", label: "Implied Odds" },
+      { slug: "holdem-equity", label: "Equity" },
+    ],
+  },
+  {
+    id: "strategy",
+    pillarSlug: "holdem-strategy",
+    pillarLabel: "Strategi",
+    nodes: [
+      { slug: "holdem-positions", label: "Posisi" },
+      { slug: "holdem-position-play", label: "Main Ikut Posisi" },
+      { slug: "holdem-starting-hands-chart", label: "Tangan Permulaan" },
+      { slug: "holdem-limping", label: "Limp" },
+      { slug: "holdem-3bet", label: "3-Bet" },
+      { slug: "holdem-continuation-bet", label: "C-Bet" },
+      { slug: "holdem-when-to-fold", label: "Bila Patut Fold" },
+    ],
+  },
+  {
+    id: "tournament",
+    pillarSlug: "holdem-tournament",
+    pillarLabel: "Tournament",
+    nodes: [
+      { slug: "holdem-tournament-vs-cash-game", label: "MTT vs Cash" },
+      { slug: "holdem-icm", label: "Asas ICM" },
+      { slug: "holdem-bubble", label: "Main Bubble" },
+      { slug: "holdem-short-stack", label: "Short Stack" },
+    ],
+  },
+  {
+    id: "glossary",
+    pillarSlug: "holdem-glossary",
+    pillarLabel: "Glosari",
+    nodes: [
+      { slug: "holdem-straddle", label: "Straddle" },
+      { slug: "holdem-rake", label: "Rake" },
+      { slug: "holdem-fish", label: "Fish" },
+      { slug: "holdem-cooler", label: "Cooler" },
+      { slug: "holdem-bad-beat", label: "Bad Beat" },
+    ],
+  },
+  // GTO 솔버 시리즈 13편 — 라벨 정본 = lib/gto-series-i18n.ts
+  ...solverOf("ms"),
+];
 
 const CLUSTERS_BY_LOCALE: Record<string, PillarCluster[]> = {
   en: EN_CLUSTERS,
