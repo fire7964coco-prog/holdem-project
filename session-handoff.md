@@ -45,8 +45,12 @@
 
 ## F. 나라별 대회 트랙 재개 — ja 먼저 (사장님 09-27 · 플레이북 §00 개정)
 
-- 후보 서치 완료 = `docs/tournament-factsheets/2026-q4-ja-candidates.md` (A 오사카#02 10/15 시한 · B 한국 원정 GOP·WPT서울 10월 초 · C APT 타이베이 11/9 · D JOPT 2027 도쿄#01 12/10 · E WPT WC · F SPADIE).
-- 🔴 기존 ja `japan-poker-tournaments-guide` 사실 낡음(JOPT 메인 DBI 폐지 ✅✅ · WPT TOKYO 보류 · 오사카 금액표) → 신규 글 전에 갱신. ▶ 사장님 후보 선택 대기.
+- ✅ 기존 ja `japan-poker-tournaments-guide` 갱신 `6ef03433` · 보드 `ff9b4a94` · 스파인 09-27 갱신 · MB-107 (WORKLOG 09-27 (8)).
+- ▶ **다음 = Fable 새 세션으로 ja 신규 2편 집필** (사장님 09-27 「다시 와서 fable로 집필」):
+  - 🔴 **A 오사카#02 D-28 = 10/1** · 시트 `docs/tournament-factsheets/2026-10-jopt-osaka-02.md` — **7/30에 한 번 발행 취소된 주제**(계층 혼동 6건 · 시트 머리에 표)
+  - 🔴 **B 한국 원정 GOP 인천 II + WPT 서울 D-28 = 10/2~10/6** · 시트 `2026-11-ja-korea-trip-gop-wpt.md` (훅 = WPT TOKYO 보류 → 서울 바우처 ✅✅) · 🔴 WPT Global 온라인 예선을 ja에 안내할지 **사장님 판정 먼저**(시트 §2)
+  - 집필 정본 = `docs/native-tournament-posting-workflow.md`(참고 4계열 · 현지 서치 3회 · 한 편당 체크리스트) · 플레이북 §00 · 후보 전체 `2026-q4-ja-candidates.md`
+- 남은 후보 C APT 타이베이(D-28 10/15~26) · D JOPT 2027 도쿄#01(11/26) · E WPT WC · F SPADIE — 캘린더 등재. `lib/tournaments.ts` 어긋남 4건(후보 문서 §4)은 별도 회차.
 
 ## 참고 경계
 
