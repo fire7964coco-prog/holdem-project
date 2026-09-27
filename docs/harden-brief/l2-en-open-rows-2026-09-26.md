@@ -304,7 +304,7 @@
 
 - MA-200 ① hand-rankings FAQ «Does a full house beat a flush?» «+ a higher full house»(EN+12 = 위 L-2g 🪶 ① 종결) · ② 로케일 고유 9자리(de bad-beat Kurze Antwort #81·#82 · de drawing-odds #6 · de position-play #88 · es flush-vs-straight #74 · zh card-counting #15 · zh-hant #14 · zh outs #44 · zh reading #67) · MA-202 ① strategy 말미 요약 SB 컴플리트 예외(EN+7).
 - 렌즈 2종(교열 diff · 딜러) 편집 유래 결함 0.
-- 🪶 **남긴 것(판정 선행 · 자동 착수 금지)**: ⓐ **EN-먼저** reading-the-board L163 «any king in someone's hand is trips»(보드 K♣K♦7♠3♥2♣ · K-7·K-3·K-2 = 풀하우스 · zh L197 동형 · 전 로케일 복제 추정) ⓑ hand-rankings FAQ «Only three hands beat a full house … A higher full house wins too» 열거 틀(교열 렌즈 중간 · 검수장은 반례 근거로 씀) ⓒ zh card-counting 표 #17 «只有» 잔존(검수장 OK 판정 · zh-hant 동형 #14는 이번에 고침) ⓓ MA-200 통지 ⓒ ko donk 인과 귀속 정본 방향(= L-2g 🪶 ②) ⓔ 🇲🇾 ms-strat 레인이 EN `cd4e5eaa` 기준으로 strategy 번역 중 → **머지 때 헤드가 요약 SB 예외 반영**.
+- 🪶 **남긴 것(판정 선행 · 자동 착수 금지)**: (ⓐ reading-the-board «any king … is trips» · ⓒ zh card-counting «只有»는 MA-206 → `31a53ff2`로 종결) ⓑ hand-rankings FAQ «Only three hands beat a full house … A higher full house wins too» 열거 틀(교열 렌즈 중간 · 검수장은 반례 근거로 씀) ⓓ MA-200 통지 ⓒ ko donk 인과 귀속 정본 방향(= L-2g 🪶 ②) ⓔ 🇲🇾 ms-strat 레인이 EN `cd4e5eaa` 기준으로 strategy 번역 중 → **머지 때 헤드가 요약 SB 예외 반영**.
 
 ## L-2h 검수장 대조 요청 4건 — `95fef741`(MB-097)
 
