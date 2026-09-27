@@ -120,7 +120,7 @@ Pot 5.5 bb memberikan bahagian equity BB sebanyak ==5.5 × 46.3% = 2.55 bb==, te
 
 :::note[Angka EQR dalam siri ini mengikut paparan solver. Jika anda mengiranya semula menggunakan equity dan EV yang sudah dibundarkan pada skrin, hasil boleh berbeza sedikit, sekitar beberapa persepuluh mata peratusan. Itu kesan pembundaran, bukan percanggahan.]:::
 
-Pada flop A-high, EQR ialah 84.0% berbanding 113.1%. **Kedua-duanya board kering, tetapi jurang lebih besar pada board king.** Ini bukan hukum bahawa board yang lebih tenang semestinya menghasilkan jurang lebih besar. Dua jurang terluas dalam siri ini terdapat pada board yang banyak draw: [flop Q-J-T two-tone](/ms/blog/broadway-board-strategy "thumb:/images/gto-srp-broadway-oop-ms.webp") sebanyak 41.5 mata peratusan dan pot 3-bet Q-T-7 sebanyak 42.7. Pada K-8-3, antara perbezaan penting ialah overpair: BTN mempunyai 1.3%, BB tiada; pada A-7-2 kedua-duanya tiada. Asas kepentingan giliran terakhir boleh dibaca dalam [urutan tindakan dan posisi](/ms/blog/holdem-game-order "thumb:/images/blog-holdem-game-flow.webp").
+Pada flop A-high, EQR ialah 84.0% berbanding 113.1%. **Kedua-duanya board kering, tetapi jurang lebih besar pada board king.** Ini bukan hukum bahawa board yang lebih tenang semestinya menghasilkan jurang lebih besar. Dua jurang terluas dalam siri ini terdapat pada board yang banyak draw: [flop Q-J-T two-tone](/ms/blog/broadway-board-strategy "thumb:/images/gto-srp-broadway-oop-ms.webp") sebanyak 41.5 mata peratusan dan pot 3-bet Q-T-7 sebanyak 42.7. Pada K-8-3, antara perbezaan penting ialah overpair: BTN mempunyai 1.3%, BB tiada; pada A-7-2 kedua-duanya tiada. Mengapa tempat duduk itu sendiri begitu bernilai diterangkan dalam [strategi posisi](/ms/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp").
 
 ## Adakah flop K83 benar-benar tiada draw?
 
@@ -152,7 +152,7 @@ Nasihat bahawa semua ace-high bernilai showdown mesti check back juga terlalu mu
 
 :::readnext[Baca seterusnya]
 /ms/blog/a-high-board-cbet | Top Pair, Mengapa Masih Check? | /images/gto-srp-dry-ace-oop-ms.webp
-/ms/blog/broadway-board-strategy | Banyak Draw, Mengapa Check 99.9%? | /images/gto-srp-broadway-oop-ms.webp
+/ms/blog/holdem-continuation-bet | 'C-Bet Setiap Flop' Buat Cip Bocor? | /images/holdem-continuation-bet-hero.webp
 :::
 
 ## Bagaimanakah anda menyemak hasil ini sendiri?
@@ -161,7 +161,7 @@ Buka [solver GTO percuma](/ms/solver), kemudian **Spot belajar → Board kering 
 
 Untuk latihan, buka **Trainer GTO** di bar sisi. Tangan diberikan mengikut wajaran range sebenar, kemudian pilihan anda dinilai melalui kerugian EV dalam big blind; skor menggunakan kerugian berbanding pot. Percuma, tanpa pemasangan dan tanpa akaun wajib.
 
-## Soalan lazim
+## Soalan Lazim
 
 **Q. Mengapa BB hampir tidak pernah bet pada K-8-3?**
 

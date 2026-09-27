@@ -209,7 +209,7 @@ Tiada flush draw satu kad, dan seperti diterangkan tadi, kedua-dua range tiada s
 
 Namun **19.3% range BB mempunyai straight draw** (0.8% open-ended ditambah 18.5% gutshot), dan 20.5% lagi mempunyai backdoor flush. Hanya 60.2% tiada kedua-duanya. Banyak tangan masih mempunyai sebab untuk meneruskan walaupun belum membentuk pair.
 
-Gabungan tangan teratas yang sama kuat dan banyak peluang peningkatan menghasilkan angka di atas. Tiada pihak mempunyai kelebihan eksklusif pada tangan terkuat untuk kerap lead, sementara banyak tangan masih boleh mempertahankan pot. Board [Q♠9♠2♠](/ms/blog/monotone-board-strategy) berbeza: tangan teratas ialah flush, dan kedua-dua pihak perlu mengambil kira lawan mungkin sudah memilikinya. Keupayaan bet dipengaruhi bahagian teratas range, bukan sekadar berapa banyak tangan lemah boleh meningkat. Prinsip itu juga boleh diperhatikan merentas tekstur melalui [spot c-bet dalam solver](/ms/solver).
+Gabungan tangan teratas yang sama kuat dan banyak peluang peningkatan menghasilkan angka di atas. Tiada pihak mempunyai kelebihan eksklusif pada tangan terkuat untuk kerap lead, sementara banyak tangan masih boleh mempertahankan pot. Board [Q♠9♠2♠](/ms/blog/monotone-board-strategy) berbeza: tangan teratas ialah flush, dan kedua-dua pihak perlu mengambil kira lawan mungkin sudah memilikinya. Keupayaan bet dipengaruhi bahagian teratas range, bukan sekadar berapa banyak tangan lemah boleh meningkat. Prinsip yang sama dihuraikan pada tekstur lain dalam panduan [continuation bet](/ms/blog/holdem-continuation-bet).
 
 ## Apakah yang berubah semasa bermain?
 
@@ -233,7 +233,7 @@ Untuk meneroka check-raise, anda perlu mengira sendiri kerana Spot belajar hanya
 
 Kemudian buka **Trainer GTO** pada bar sisi. Tangan dipilih mengikut wajaran range sebenar dan maklum balas menunjukkan kerugian EV dalam big blind. Percuma, tanpa pemasangan dan tanpa akaun wajib.
 
-## Soalan lazim
+## Soalan Lazim
 
 **Q. Bilakah patut check-raise dalam poker?**
 

@@ -25,7 +25,7 @@ Kebanyakan kerja dilakukan oleh satu kad: ==**kicker**==. Definisi penuhnya — 
 
 ---
 
-### Pemecah Seri Sekali Pandang
+### Ringkasan pantas
 
 :::stripe
 3 | Langkah yang menyelesaikan setiap seri dalam Hold'em

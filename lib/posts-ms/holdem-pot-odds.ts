@@ -108,7 +108,7 @@ Hafal tujuh titik rujukan ini supaya anda boleh menilai harga call sebelum memut
 
 </div>
 
-Malah **overbet 2× pot yang besar hanya meminta 40% equity**. Anda hampir tidak pernah perlu menjadi favorite (lebih berpeluang menang) untuk call dengan untung — salah baca yang biasa dan membuatkan orang fold call yang sepatutnya betul. Semakin besar bet, semakin banyak equity yang anda perlukan, tetapi ia naik lebih perlahan daripada sangkaan kebanyakan pemain.
+Malah **overbet 2× pot yang besar hanya meminta 40% equity**. Anda hampir tidak pernah perlu menjadi favourite (lebih berpeluang menang) untuk call dengan untung — salah baca yang biasa dan membuatkan orang fold call yang sepatutnya betul. Semakin besar bet, semakin banyak equity yang anda perlukan, tetapi ia naik lebih perlahan daripada sangkaan kebanyakan pemain.
 
 ---
 

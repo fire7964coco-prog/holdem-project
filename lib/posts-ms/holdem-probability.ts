@@ -86,7 +86,7 @@ Sebelum flop, ada tepat **1,326 kemungkinan starting hand dua kad**. Beginilah k
 | A-K (satu jenis *atau* offsuit) | 1 dalam 83 (1.2%) | — |
 | Mana-mana dua kad satu jenis | 1 dalam 4.3 (23.5%) | Hampir sekali dalam setiap empat tangan |
 
-Jadi lain kali ada orang kata "saya tak pernah dapat aces", mereka lebih kurang betul — anda akan diagihkan pair *tertentu* seperti aces hanya lebih kurang ==sekali setiap 221 tangan==. Tetapi **mana-mana** pocket pair datang setiap 17 tangan, dan sebab itulah set mining ialah strategi sebenar, bukan angan-angan. Pair dan tangan satu jenis mana yang berbaloi dimainkan dari setiap kerusi diterangkan dalam [carta starting hand ikut posisi](/ms/blog/holdem-starting-hands-chart).
+Jadi lain kali ada orang kata "saya tak pernah dapat aces", mereka lebih kurang betul — anda akan diagihkan pair *tertentu* seperti aces hanya lebih kurang ==sekali setiap 221 tangan==. Tetapi **mana-mana** pocket pair datang setiap 17 tangan, dan sebab itulah set mining ialah strategi sebenar, bukan angan-angan. Pair dan tangan satu jenis mana yang berbaloi dimainkan dari setiap posisi diterangkan dalam [carta starting hand ikut posisi](/ms/blog/holdem-starting-hands-chart).
 
 ---
 

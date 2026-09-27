@@ -160,7 +160,7 @@ Anggap anda memegang QQ. Tangan itu masih kuat sekarang. Daripada 47 kad yang be
 - **T, J, 6 dan 5: 16 kad.** Setiap rank itu membolehkan satu kad tertentu dalam tangan lawan melengkapkan straight. Contohnya, jack menghasilkan board J-9-8-7; **pemain yang memegang ten sudah mempunyai J-T-9-8-7**.
 - **Heart lain yang belum dikira: 7 kad.** Kad ini melengkapkan flush untuk lawan yang memegang dua heart.
 
-Jumlahnya **23 daripada 47 kad, kira-kira 49%**. ⚠ Ini untuk QQ tanpa heart. Jika anda memegang Q♥, satu daripada tujuh heart itu berada dalam tangan sendiri, maka jumlahnya 22 daripada 47, kira-kira 47%. Hampir setiap dua turn, satu daripadanya membawa ancaman baharu. Untuk memahami asas mengira peluang dari pihak pemegang draw, baca [asas peluang draw dan pot odds](/ms/blog/texas-holdem-rules-for-beginners).
+Jumlahnya **23 daripada 47 kad, kira-kira 49%**. ⚠ Ini untuk QQ tanpa heart. Jika anda memegang Q♥, satu daripada tujuh heart itu berada dalam tangan sendiri, maka jumlahnya 22 daripada 47, kira-kira 47%. Hampir setiap dua turn, satu daripadanya membawa ancaman baharu. Untuk mengukuhkan cara mengira outs itu dari sudut lawan, mulakan dengan [drawing odds](/ms/blog/holdem-drawing-odds).
 
 Overpair masih boleh **mengenakan harga kepada draw sekarang**, tetapi perlu menilai semula apabila menghadapi raise atau turn buruk. Ia bukan lesen untuk membina pot besar tanpa had. Pot yang perlu dielakkan ialah pot yang terus dibesarkan selepas keadaan menjadi buruk, bukan setiap pot yang dibina pada flop.
 
@@ -174,7 +174,7 @@ Saiz besar masih mempunyai peranan. Jika semua straight hanya menggunakan bet ke
 
 ## Bilakah BTN patut mengurangkan c-bet pada 9-8-7?
 
-**Apabila range sendiri tidak menyokong bet luas pada tekstur ini.** Selepas BB check, BTN mempunyai alasan untuk check back lebih banyak tangan. Jika BB lead, BTN pula sedang menghadapi bet, jadi pilihannya ialah call, raise atau fold, bukannya membuat c-bet. Untuk mengkaji perbezaan tindakan mengikut board, gunakan [solver dan latihan c-bet](/ms/solver).
+**Apabila range sendiri tidak menyokong bet luas pada tekstur ini.** Selepas BB check, BTN mempunyai alasan untuk check back lebih banyak tangan. Jika BB lead, BTN pula sedang menghadapi bet, jadi pilihannya ialah call, raise atau fold, bukannya membuat c-bet. Bagaimana penilaian itu terpakai merentas jenis board diterangkan dalam [strategi continuation bet](/ms/blog/holdem-continuation-bet "thumb:/images/holdem-continuation-bet-hero.webp").
 
 Komposisi BTN ialah ace-high 30.5%, king-high 11.9% dan Tiada made hand 9.3%, berjumlah **51.7% tanpa pair**. ⚠ **Tiada pair bukan alasan tunggal untuk check.** Kiraan sama bagi BB ialah **53.7%**, lebih banyak sebanyak 2.0 mata peratusan, tetapi BB yang lead 23.7%.
 
@@ -205,7 +205,7 @@ Cara paling berguna ialah **membandingkannya dengan board kering**. Buka **Board
 
 Selepas itu, buka **Trainer GTO** di bar sisi. Tangan diberikan mengikut wajaran range sebenar untuk menguji keputusan yang baru dipelajari. Aplikasi menunjukkan kerugian EV pilihan anda dalam big blind, dengan skor berdasarkan kerugian berbanding pot. Percuma, tanpa pemasangan dan tanpa akaun wajib.
 
-## Soalan lazim
+## Soalan Lazim
 
 **Q. Apakah donk bet dalam poker?**
 

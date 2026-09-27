@@ -188,7 +188,7 @@ Berapa banyak yang patut anda teruskan? Garis asas teori ialah **Minimum Defense
 
 </div>
 
-Sekarang tukar semula. MDF menganggap lawan yang *seimbang*. Pada stake rendah dan dalam permainan live, pemain sangat **kurang bluff** dengan 3-bet mereka — jadi apabila pemain pasif tiba-tiba re-raise, percayalah dan **pertahankan kurang daripada garis asas MDF; dengan kata lain, fold lebih daripada 1−MDF.** Anda tidak berhutang pertahanan "seimbang" kepada seorang nit.
+Sekarang tukar semula. MDF menganggap lawan yang *seimbang*. Pada stakes rendah dan dalam permainan live, pemain sangat **kurang bluff** dengan 3-bet mereka — jadi apabila pemain pasif tiba-tiba re-raise, percayalah dan **pertahankan kurang daripada garis asas MDF; dengan kata lain, fold lebih daripada 1−MDF.** Anda tidak berhutang pertahanan "seimbang" kepada seorang nit.
 
 ---
 
@@ -250,7 +250,7 @@ A. 4-bet dengan range terpolarisasi: premium untuk value (QQ+ dan AK — terhada
 
 **Q. Bila patut anda 5-bet dalam poker?**
 
-A. 5-bet ialah re-raise ke atas 4-bet, dan pada sekitar 100 big blinds ia hampir sentiasa all-in. 5-bet untuk value dengan bahagian paling atas range anda (AA, KK, selalunya AK) dan, terhadap pemain agresif yang 4-bet ringan, tambah bluff blocker As sekali-sekala. Terhadap kebanyakan lawan stake rendah, 5-bet hampir pasti bermaksud "AA atau KK", jadi jika pemain pasif 5-bet, fold semua kecuali premium mutlak anda.
+A. 5-bet ialah re-raise ke atas 4-bet, dan pada sekitar 100 big blinds ia hampir sentiasa all-in. 5-bet untuk value dengan bahagian paling atas range anda (AA, KK, selalunya AK) dan, terhadap pemain agresif yang 4-bet ringan, tambah bluff blocker As sekali-sekala. Terhadap kebanyakan lawan stakes rendah, 5-bet hampir pasti bermaksud "AA atau KK", jadi jika pemain pasif 5-bet, fold semua kecuali premium mutlak anda.
 
 **Q. Tangan apa yang patut anda 3-bet?**
 

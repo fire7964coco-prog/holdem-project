@@ -111,11 +111,11 @@ Caller juga tidak boleh dianggap akan fold segala-galanya. Menghadapi 14.9 bb ke
 
 🪶 Jangan ringkaskan kepada “flush draw tetap call”. Flush draw sahaja mempunyai sembilan outs, ==9 ÷ 47 = 19.1%==, belum pun melepasi harga kecil 19.8%. **Range BTN ini tiada flush draw sahaja**, seperti tanda sengkang dalam jadual. Tepat empat tangan dua heart semuanya turut mempunyai straight draw: dua gutshot dan dua OESD. Oleh itu, semuanya masuk baris combo draw. Peluang flush draw sahaja mencapai ==kira-kira 35.0%== menjelang river memang benar, tetapi itu bukan kategori yang ada pada BTN di sini.
 
-Untuk asas mengira outs dan harga call, rujuk [peluang draw untuk pemula](/ms/blog/texas-holdem-rules-for-beginners) dan [asas pot odds](/ms/blog/texas-holdem-rules-for-beginners).
+Untuk asas mengira outs dan harga call, rujuk [drawing odds](/ms/blog/holdem-drawing-odds) dan [pot odds](/ms/blog/holdem-pot-odds).
 
 :::pull[Saiz bet perlu mengambil kira harga yang mampu dibayar oleh range lawan untuk call.]:::
 
-:::note[⚠ Tekstur serupa boleh menghasilkan tindakan bertentangan apabila peranan preflop berubah. Dalam **pot single-raised**, raiser memegang bahagian atas range pada flop Broadway two-tone, sementara BB yang hanya call hampir sentiasa check: pada [Q♠J♦T♠](/ms/blog/broadway-board-strategy "thumb:/images/gto-srp-broadway-oop-ms.webp"), kekerapan check ialah 99.9%. Semasa mengkaji prinsip c-bet dalam [solver](/ms/solver), pastikan anda melihat pihak raiser. **3-bet menukar siapa yang memegang range itu.** Di sini BB ialah 3-bettor dan range itulah yang sesuai dengan board, maka BB bet hampir seluruhnya. Baca tindakan preflop sebelum membuat keputusan daripada tekstur sahaja.]:::
+:::note[⚠ Tekstur serupa boleh menghasilkan tindakan bertentangan apabila peranan preflop berubah. Dalam **pot single-raised**, raiser memegang bahagian atas range pada flop Broadway two-tone, sementara BB yang hanya call hampir sentiasa check: pada [Q♠J♦T♠](/ms/blog/broadway-board-strategy "thumb:/images/gto-srp-broadway-oop-ms.webp"), kekerapan check ialah 99.9%. Nasihat lazim seperti "bet besar pada board basah dan polarize" dalam [panduan c-bet](/ms/blog/holdem-continuation-bet) ditulis untuk pihak raiser, bukan caller. **3-bet menukar siapa yang memegang range itu.** Di sini BB ialah 3-bettor dan range itulah yang sesuai dengan board, maka BB bet hampir seluruhnya. Baca tindakan preflop sebelum membuat keputusan daripada tekstur sahaja.]:::
 
 ## Apakah geometric bet sizing?
 
@@ -189,7 +189,7 @@ Dalam pot 22.5 bb, equity 58.3% bersamaan ==22.5 × 58.3% = 13.12 bb==. EV 15.46
 
 Jurang equity lebih kecil daripada A-K-2, yang mempunyai 68.9% berbanding 31.1%, tetapi nisbah realisasi meningkat. **Sebahagiannya kerana penyebut mengecil.** EQR dibandingkan dengan bahagian equity sendiri. ⚠ Namun lebihan EV di atas bahagian mentah turut benar-benar meningkat: A-K-2 memberikan ==16.99 − 22.5 × 68.9% = kira-kira 1.49 bb==, manakala board ini ==15.46 − 22.5 × 58.3% = kira-kira 2.34 bb==. Bahagian pot yang diambil BB tetap mengecil: ==16.99 ÷ 22.5 = 75.5%== pada A-K-2 berbanding ==15.46 ÷ 22.5 = 68.7%== di sini. EQR dan bahagian pot mengukur perkara berbeza.
 
-EQR BTN 75.1% juga bukan bukti bebas yang berasingan. Kedua-dua EV berjumlah nilai pot; satu pihak melebihi bahagian equity mentahnya bermakna pihak lain berada di bawahnya. Di sini BB memegang semua overpair dan boleh mengenakan harga sukar kepada tangan pertengahan BTN. Untuk asas siapa bertindak dahulu dan kelebihan maklumat, baca [urutan tindakan dan posisi](/ms/blog/holdem-game-order).
+EQR BTN 75.1% juga bukan bukti bebas yang berasingan. Kedua-dua EV berjumlah nilai pot; satu pihak melebihi bahagian equity mentahnya bermakna pihak lain berada di bawahnya. Di sini BB memegang semua overpair dan boleh mengenakan harga sukar kepada tangan pertengahan BTN. Mengapa posisi lazimnya menguntungkan diterangkan dalam [strategi posisi](/ms/blog/holdem-position-play).
 
 :::note[Semua EQR dalam siri ini dikekalkan seperti paparan solver. Membahagikan equity dan EV yang sudah dibundarkan boleh menghasilkan perbezaan pada tempat perpuluhan; itu kesan pembundaran.]:::
 
@@ -219,7 +219,7 @@ Kemudian buka **Trainer GTO** pada sidebar. Ia memilih tangan mengikut wajaran r
 
 Bandingkan dengan A♦K♠2♥ daripada contoh sebelumnya. Board itu rainbow, maka **tiada flush draw bagi mana-mana pemain**, dan seluruh range BB ialah pair atau lebih baik. Di sini baris “Tiada draw” hanya 43.8%. ⚠ Baki 56.2% bukan semuanya draw langsung: 26.0 mata ialah **backdoor**, yang memerlukan dua kad suit yang betul berturut-turut dan lengkap kira-kira 4.2%. Draw langsung berjumlah 30.1%. Namun [flop 8-5-2](/ms/blog/3bet-pot-low-board "thumb:/images/gto-3bp-low-oop-ms.webp") mempunyai 78.3% “Tiada draw” dan masih memilih saiz besar 97.8%. Kedua-dua kepadatan draw dan bentuk range perlu dibaca.
 
-## Soalan lazim
+## Soalan Lazim
 
 **Q. Berapakah saiz bet yang sesuai dalam poker?**
 

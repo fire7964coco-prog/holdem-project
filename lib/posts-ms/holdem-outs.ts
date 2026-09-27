@@ -114,7 +114,7 @@ Dua combo draw di bahagian atas ialah tempat pemain tersilap aritmetik, jadi ia 
 
 Dua nombor penting untuk setiap draw. **"Menjelang river"** mengira kedua-dua kad yang tinggal dan terpakai apabila tiada lagi pertaruhan boleh berlaku — anda all-in, atau anda sudah call all-in. **"Flop → turn"** mengira kad seterusnya sahaja (9 ÷ 47 = 19.1%; dari turn ke river ia menjadi 9 ÷ 46 = 19.6%) — gunakan ini selagi masih ada pertaruhan akan datang, kerana anda hanya dijamin melihat satu kad pada satu masa. Pemula memetik nombor "menjelang river" yang besar sambil menghadapi bet di turn, memujuk diri sendiri untuk call, dan membayar harganya.
 
-Perhatikan draw raksasa 15 outs: dengan dua kad lagi ia lengkap 54.1% daripada masa — menentang satu pair, itu biasanya menjadikannya **favorite**, draw jarang yang anda boleh all-in dengan senang hati di flop. Menentang set pula tidak: board boleh berpasangan dan melengkapkan full house bagi set itu — contoh J♠ T♠ pada 9♠ 8♣ 2♠ di bawah hanya lebih kurang 40% menentang pocket nines.
+Perhatikan draw raksasa 15 outs: dengan dua kad lagi ia lengkap 54.1% daripada masa — menentang satu pair, itu biasanya menjadikannya **favourite** (lebih berpeluang menang), draw jarang yang anda boleh all-in dengan senang hati di flop. Menentang set pula tidak: board boleh berpasangan dan melengkapkan full house bagi set itu — contoh J♠ T♠ pada 9♠ 8♣ 2♠ di bawah hanya lebih kurang 40% menentang pocket nines.
 
 ---
 
@@ -218,7 +218,7 @@ A. Kad yang melengkapkan tangan anda tetapi masih boleh kalah — kad flush apab
 
 **Q. Berapa outs untuk flush draw campur straight draw?**
 
-A. 15, bukan 17. Flush draw ialah 9 outs dan open-ended straight ialah 8, tetapi dua kad straight juga jenis anda dan sudah dikira dalam flush — jadi anda tolak pertindihannya. Lima belas outs ialah favorite untuk kena menjelang river (lebih kurang 54%) — tetapi hanya apabila anda akan melihat kedua-dua kad; jika bet di turn masih akan datang, 32% satu kad itulah yang menentukan harga call anda.
+A. 15, bukan 17. Flush draw ialah 9 outs dan open-ended straight ialah 8, tetapi dua kad straight juga jenis anda dan sudah dikira dalam flush — jadi anda tolak pertindihannya. Lima belas outs ialah favourite untuk kena menjelang river (lebih kurang 54%) — tetapi hanya apabila anda akan melihat kedua-dua kad; jika bet di turn masih akan datang, 32% satu kad itulah yang menentukan harga call anda.
 
 **Q. Adakah kad lawan dikira semasa mengira outs?**
 

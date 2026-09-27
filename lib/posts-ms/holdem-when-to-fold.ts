@@ -46,7 +46,7 @@ Satu kaveat yang tepat, kerana ia penting: fold *bukan percuma.* Cip yang sudah 
 
 ## Bila Patut Fold Sebelum Flop?
 
-Kebocoran terbesar dalam poker ialah bermain terlalu banyak tangan, jadi pembetulan tunggal terbesar ialah fold kebanyakannya. **Pemain tight-aggressive (TAG) yang mantap fold kira-kira 75–85% tangannya preflop** — lebih dekat kepada 75–80% dalam permainan 6-max, dan 80–85% dalam full-ring. Jika angka itu kedengaran melampau, ingat: tangan yang anda simpan secara purata lebih kuat daripada tangan lawan, dan di situlah datangnya kelebihan anda.
+Leak (kelemahan berulang) terbesar dalam poker ialah bermain terlalu banyak tangan, jadi pembetulan tunggal terbesar ialah fold kebanyakannya. **Pemain tight-aggressive (TAG) yang mantap fold kira-kira 75–85% tangannya preflop** — lebih dekat kepada 75–80% dalam permainan 6-max, dan 80–85% dalam full-ring. Jika angka itu kedengaran melampau, ingat: tangan yang anda simpan secara purata lebih kuat daripada tangan lawan, dan di situlah datangnya kelebihan anda.
 
 Fold preflop apabila:
 
@@ -186,7 +186,7 @@ Tujuh kesilapan di bawah datang dari dua arah yang bertentangan: call terlalu ba
 
 </div>
 
-Perhatikan kedua-dua hujung ada di sini: fold *lebih banyak* menentang pemain yang condong kepada value dan tidak pernah bluff (kebanyakan pemain stake rendah), dan fold *kurang* menentang regular yang berfikir dan cukup kerap bluff untuk mengeksploitasi seorang nit.
+Perhatikan kedua-dua hujung ada di sini: fold *lebih banyak* menentang pemain yang condong kepada value dan tidak pernah bluff (kebanyakan pemain stakes rendah), dan fold *kurang* menentang regular yang berfikir dan cukup kerap bluff untuk mengeksploitasi seorang nit.
 
 ---
 
@@ -227,7 +227,7 @@ A. Ia kepercayaan palsu bahawa kerana anda sudah memasukkan cip ke dalam pot, an
 
 **Q. Patutkah saya fold atau call apabila tidak pasti?**
 
-A. Apabila spot itu benar-benar tipis dan anda tidak pasti, fold biasanya pilihan lalai yang lebih baik — terutamanya di stake rendah, di mana lawan bluff jauh lebih jarang daripada sepatutnya. Tanya sama ada anda melepasi ambang pot odds dan sama ada corak mereka nampak seperti value atau bluff. Jika anda tidak dapat menamakan cukup banyak tangan lebih lemah yang mereka akan bet, fold dan tunggu spot yang lebih jelas.
+A. Apabila spot itu benar-benar tipis dan anda tidak pasti, fold biasanya pilihan lalai yang lebih baik — terutamanya di stakes rendah, di mana lawan bluff jauh lebih jarang daripada sepatutnya. Tanya sama ada anda melepasi ambang pot odds dan sama ada corak mereka nampak seperti value atau bluff. Jika anda tidak dapat menamakan cukup banyak tangan lebih lemah yang mereka akan bet, fold dan tunggu spot yang lebih jelas.
 
 **Q. Bagaimana anda tahu bila patut fold kepada raise di river?**
 

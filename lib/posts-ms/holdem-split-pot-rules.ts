@@ -203,9 +203,9 @@ A. Hanya pemain yang memasukkan cip ke dalam side pot tertentu itu — mereka ya
 
 A. Boleh. Pemain dengan stack lebih dalam yang memegang tangan terbaik boleh memenangi pot utama dan setiap side pot yang dia layak — mengaut kesemuanya. Sebaliknya, short stack yang all-in hanya boleh memenangi pot utama (dan mana-mana side pot terdahulu yang disumbangnya); dia tidak boleh mengutip cip yang tidak disamainya, betapa kuat pun tangannya.
 
-**Q. Adakah chop kejohanan sama dengan split pot?**
+**Q. Adakah chop tournament sama dengan split pot?**
 
-A. Tidak — perkataan yang sama, dua perkara berbeza. Split pot di showdown berlaku secara automatik: apabila tangan seri, pengedar membahagi cip. "Chop" kejohanan pula ialah perjanjian sukarela antara pemain yang tinggal untuk membahagi kumpulan hadiah, biasanya berdasarkan jumlah cip atau [ICM](/ms/blog/holdem-icm), dan ia hanya berlaku jika semua orang bersetuju. Lihat [tournament lawan cash game](/ms/blog/holdem-tournament-vs-cash-game) untuk perbezaan bayaran kejohanan.
+A. Tidak — perkataan yang sama, dua perkara berbeza. Split pot di showdown berlaku secara automatik: apabila tangan seri, pengedar membahagi cip. "Chop" tournament pula ialah perjanjian sukarela antara pemain yang tinggal untuk membahagi kumpulan hadiah, biasanya berdasarkan jumlah cip atau [ICM](/ms/blog/holdem-icm), dan ia hanya berlaku jika semua orang bersetuju. Lihat [tournament lawan cash game](/ms/blog/holdem-tournament-vs-cash-game) untuk perbezaan bayaran tournament.
 
 ---
 

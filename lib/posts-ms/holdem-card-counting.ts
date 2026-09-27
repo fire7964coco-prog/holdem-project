@@ -107,7 +107,7 @@ Perbandingan dengan blackjack berkaitan dengan siapa lawan anda. Di meja poker, 
 :::note
 Asingkan kiraan mental daripada kad bertanda, pakatan sulit, atau perkongsian maklumat hole card. Perisian dalam talian ada peraturan sendiri: contohnya, [polisi alat PokerStars](https://www.pokerstars.com/poker/room/prohibited/) melarang nasihat aksi masa nyata dan menyekat penggunaan solver ketika klien mereka dibuka. Semak kebenaran platform berkenaan dan jangan anggap setiap alat sama seperti kiraan mental.
 
-Di kejohanan yang menggunakan [peraturan Poker TDA 2026](https://www.pokertda.com/poker-tda-rules/), Rule 5C melarang mengendalikan peranti elektronik atau komunikasi ketika tangan masih hidup. Rule 5D pergi lebih jauh: aplikasi pertaruhan, carta dan alat strategi lain tidak boleh digunakan di meja, dan data strategi dari luar tidak dibenarkan. Belajar dengan alat di luar permainan; buat keputusan di meja sendiri.
+Dalam tournament yang menggunakan [peraturan Poker TDA 2026](https://www.pokertda.com/poker-tda-rules/), Rule 5C melarang mengendalikan peranti elektronik atau komunikasi ketika tangan masih hidup. Rule 5D pergi lebih jauh: aplikasi pertaruhan, carta dan alat strategi lain tidak boleh digunakan di meja, dan data strategi dari luar tidak dibenarkan. Belajar dengan alat di luar permainan; buat keputusan di meja sendiri.
 :::
 
 ---

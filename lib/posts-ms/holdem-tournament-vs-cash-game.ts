@@ -35,14 +35,14 @@ Hampir setiap pemain Hold'em baharu akhirnya tanya soalan yang sama:
 
 Dari luar, kedua-duanya nampak macam permainan yang sama. Anda masih dapat dua hole card, lima kad komuniti, dan empat pusingan pertaruhan dari preflop sampai river. Tetapi dari segi strategi, ia hampir dua dunia yang berbeza. Dalam cash game, cip anda ialah duit. Dalam tournament, cip anda ialah nyawa anda dalam kejohanan itu.
 
-Panduan ini membandingkan ==cash game vs tournament poker== dengan cara yang pemula benar-benar perlukan: apa itu cash game dan bagaimana ia berjalan, nilai cip, struktur blind, apa yang berubah dalam strategi, format mana lebih susah, mana lebih menguntungkan, bankroll, ICM, bila patut bangun dari meja, dan format mana patut anda mulakan. Artikel ini membandingkan dua format tersebut — ia bukan panduan struktur tournament yang menerangkan buy-in dan blind level satu per satu.
+Panduan ini membandingkan ==cash game vs tournament poker== dengan cara yang pemula benar-benar perlukan: apa itu cash game dan bagaimana ia berjalan, nilai cip, struktur blind, apa yang berubah dalam strategi, format mana lebih susah, mana lebih menguntungkan, bankroll, ICM, bila patut bangun dari meja, dan format mana patut anda mulakan. Artikel ini membandingkan dua format tersebut — ia bukan panduan struktur tournament yang menerangkan buy-in dan blind level satu per satu. Jika tournament itu sendiri masih misteri, baca dahulu [bagaimana poker tournament berjalan — buy-in, blind level dan aliran Day 1](/ms/blog/holdem-tournament).
 
 ### Jawapan dalam 15 saat
 
 - **Cash game:** cip sama dengan duit sebenar, blind kekal, dan anda boleh bangun bila-bila masa.
 - **Tournament:** anda bayar satu yuran masuk, dapat cip kejohanan, dan main sampai bust atau menang.
 - **Cash game mengajar asas dengan lebih cepat** kerana stack lebih dalam dan gelung maklum balas lebih pendek.
-- **Tournament menawarkan peluang skor yang lebih besar**, tetapi variance jauh lebih tinggi, sesi lebih panjang, dan ada tekanan ICM.
+- **Tournament menawarkan peluang skor yang lebih besar**, tetapi variance jauh lebih tinggi, sesi lebih panjang, dan ada [tekanan ICM](/ms/blog/holdem-icm).
 - **Untuk kebanyakan pemula, cash game ialah titik permulaan yang lebih bersih.** Tambah tournament apabila asas sudah terasa automatik.
 
 ---
@@ -88,7 +88,7 @@ Jika anda faham jadual ini, ==g:anda sudah faham asas keseluruhan perbandingan i
 
 **Anda boleh reload dan bangun dengan bebas.** Habis stack? Anda boleh beli cip lagi di situ juga (sehingga had maksimum meja). Perlu pergi? Kemas cip anda dan tunaikan — tak perlu minta izin siapa-siapa.
 
-**Pihak kasino atau kelab mengambil rake.** Dalam kebanyakan cash game, mereka mengambil potongan kecil daripada setiap pot (atau mengenakan bayaran tempat duduk berdasarkan masa). Ia secara senyap menentukan stakes mana yang boleh dikalahkan, jadi berbaloi memahami cara rake berfungsi sebelum anda memilih meja.
+**Pihak kasino atau kelab mengambil rake.** Dalam kebanyakan cash game, mereka mengambil potongan kecil daripada setiap pot (atau mengenakan bayaran tempat duduk berdasarkan masa). Ia secara senyap menentukan stakes mana yang boleh dikalahkan, jadi berbaloi memahami [cara rake poker berfungsi](/ms/blog/holdem-rake) sebelum anda memilih meja.
 
 ---
 
@@ -142,7 +142,7 @@ Jika cip membawa makna berbeza dan blind berkelakuan berbeza, strategi juga mest
 
 **Cash game ialah satu permainan panjang; tournament ialah banyak permainan pendek.** Dalam cash game, setiap keputusan dinilai dengan satu soalan: adakah ia menghasilkan duit selepas beribu-ribu ulangan? Dalam tournament, keputusan yang sama juga perlu menjawab soalan kedua: apa kesannya terhadap peluang saya untuk bertahan sehingga masuk payout?
 
-**Garis asas preflop anda bermula sama, kemudian bercabang.** Carta tangan permulaan yang kukuh ialah asas dalam kedua-dua format — tetapi tournament memaksa anda keluar daripada garis asas itu apabila stack makin cetek, ante mula dikenakan, dan pay jump semakin hampir, manakala cash game membenarkan anda bermain range berdisiplin yang sama sepanjang malam.
+**Garis asas preflop anda bermula sama, kemudian bercabang.** [Carta tangan permulaan](/ms/blog/holdem-starting-hands-chart) yang kukuh ialah asas dalam kedua-dua format — tetapi tournament memaksa anda keluar daripada garis asas itu apabila stack makin cetek, ante mula dikenakan, dan pay jump semakin hampir, manakala cash game membenarkan anda bermain range berdisiplin yang sama sepanjang malam.
 
 **Reload mengubah cara agresi berfungsi.** Dalam cash game, kehilangan satu stack bermaksud menyeluk poket, jadi bluff besar dan call nipis "hanya" melibatkan duit. Dalam tournament, kesilapan yang sama bermaksud tersingkir, dan sebab itulah pemain tournament yang bagus memilih spot mereka berdasarkan saiz stack dan survival, bukan kad semata-mata.
 
@@ -150,7 +150,7 @@ Jika cip membawa makna berbeza dan blind berkelakuan berbeza, strategi juga mest
 
 Cash game biasanya memberi ganjaran kepada kemahiran deep-stack. Anda kerap bermain sekitar 100 big blind, jadi keputusan flop, turn dan river sangat penting. Anda perlu faham value bet, bluff, tekstur board, posisi dan range lawan.
 
-Tournament bermula deep tetapi sering berubah menjadi short-stack. Pada 25 big blind, 15 big blind atau 10 big blind, keputusan preflop menjadi jauh lebih penting. Daripada merancang tiga street, anda mungkin hanya memutuskan sama ada mahu open, reshove, call off atau fold — dan keputusan itu dipandu oleh disiplin push/fold short-stack.
+Tournament bermula deep tetapi sering berubah menjadi short-stack. Pada 25 big blind, 15 big blind atau 10 big blind, keputusan preflop menjadi jauh lebih penting. Daripada merancang tiga street, anda mungkin hanya memutuskan sama ada mahu open, reshove, call off atau fold — dan range tepatnya ada dalam [strategi short stack: bila push atau fold](/ms/blog/holdem-short-stack).
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -173,7 +173,7 @@ Perbezaan strategi terbesar antara cash game dan tournament ialah ==ICM==.
 
 ICM bermaksud **Independent Chip Model**. Ia menganggar nilai duit sebenar stack tournament anda berdasarkan saiz stack, bilangan pemain yang tinggal, dan struktur payout. Cash game tidak perlukan ICM kerana cip sudah sama dengan duit.
 
-Di mana ia paling terasa? Kebanyakannya di bubble dan di final table. Katakan anda pegang AKo di bubble dengan stack sederhana dan seorang pemain lain shove. Dalam cash game, jika call itu menguntungkan mengikut pot odds dan equity, anda call. Dalam tournament, kalah bermaksud pulang dengan $0, manakala menang tidak menggandakan payout equity anda — jadi call yang mencetak duit dalam cash game boleh menjadi fold yang jelas di bawah ICM.
+Di mana ia paling terasa? Kebanyakannya [di bubble](/ms/blog/holdem-bubble) dan di final table. Katakan anda pegang AKo di bubble dengan stack sederhana dan seorang pemain lain shove. Dalam cash game, jika call itu menguntungkan mengikut pot odds dan equity, anda call. Dalam tournament, kalah bermaksud pulang dengan $0, manakala menang tidak menggandakan payout equity anda — jadi call yang mencetak duit dalam cash game boleh menjadi fold yang jelas di bawah ICM.
 
 | Faktor keputusan | Cash Game | Tournament |
 |------|------|------|
@@ -182,7 +182,7 @@ Di mana ia paling terasa? Kebanyakannya di bubble dan di final table. Katakan an
 | Nilai tangan kuat | Lebih stabil | Berubah mengikut tekanan payout |
 | Tekanan bubble | Tiada | Sangat besar |
 
-==g:Apabila anda melihat pemain tournament yang kuat fold tangan yang nampak terlalu bagus untuk di-fold, ICM selalunya sebabnya.== Satu perenggan tidak cukup untuk menerangkan pengiraannya sepenuhnya — tetapi prinsip asasnya sudah cukup untuk memahami kenapa fold seperti itu berlaku.
+==g:Apabila anda melihat pemain tournament yang kuat fold tangan yang nampak terlalu bagus untuk di-fold, ICM selalunya sebabnya.== Satu perenggan tidak cukup untuk menerangkan pengiraannya sepenuhnya — contoh pengiraan penuhnya ada dalam [ICM dijelaskan: kenapa cip tournament bukan duit](/ms/blog/holdem-icm).
 
 ![Infografik menunjukkan menggandakan stack tournament menambah prize equity kurang daripada dua kali ganda — teras tekanan ICM](/images/holdem-tournament-icm-bubble.webp "Tekanan bubble tournament dan keputusan ICM")
 
@@ -299,7 +299,7 @@ Tournament tetap boleh menjadi pilihan hebat untuk pemula jika anda suka persain
 | Main sesi pendek | Cash game |
 | Belajar ICM dan tekanan bubble | Tournament |
 
-Jika anda benar-benar baharu, belajar dulu [bagaimana satu tangan Texas Hold'em berjalan](/ms/blog/holdem-game-order "thumb:/images/blog-holdem-game-flow.webp") dan [susunan kad poker](/ms/blog/holdem-hand-rankings). Memilih format jauh lebih mudah apabila peraturan asas sudah automatik — dan jika anda condong kepada tournament, tanya dulu tentang buy-in, blind level dan aliran Day 1 sebelum mendaftar.
+Jika anda benar-benar baharu, belajar dulu [bagaimana satu tangan Texas Hold'em berjalan](/ms/blog/holdem-game-order "thumb:/images/blog-holdem-game-flow.webp") dan [susunan kad poker](/ms/blog/holdem-hand-rankings). Memilih format jauh lebih mudah apabila peraturan asas sudah automatik — dan jika anda condong kepada tournament, lihat [bagaimana poker tournament berjalan](/ms/blog/holdem-tournament "thumb:/images/holdem-tournament-hero.webp") untuk buy-in, blind level dan aliran Day 1.
 
 ### Rangka Keputusan untuk Pemula
 
@@ -355,8 +355,8 @@ Jika anda tidak boleh jelaskan strukturnya, jangan buy-in dahulu. Tanya dahulu, 
 ---
 
 :::readnext[Baca seterusnya]
-/ms/blog/holdem-blind-meaning | Apa Itu Blind Dalam Poker? Small Blind vs Big Blind | /images/holdem-blind-meaning-hero.webp
-/ms/blog/holdem-all-in-rules | Peraturan All-In: Side Pot, Re-Raise & Showdown | /images/holdem-all-in-rules-hero.webp
+/ms/blog/holdem-pot-odds | Cara Kira Pot Odds | /images/holdem-pot-odds-hero.webp
+/ms/blog/holdem-probability | Carta Odds & Kebarangkalian Poker | /images/holdem-probability-hero.webp
 :::
 
 ## Soalan Lazim
@@ -416,6 +416,11 @@ Kuasai asas cash game dahulu, kemudian tambah tournament apabila anda bersedia u
 ## Artikel Berkaitan
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
+  <a href="/ms/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Tournament</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Bagaimana Poker Tournament Berjalan</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Buy-in, blind level, format dan senarai semak Day 1</div>
+  </a>
   <a href="/ms/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Urutan Permainan</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Urutan Permainan Texas Hold'em</div>
@@ -430,11 +435,6 @@ Kuasai asas cash game dahulu, kemudian tambah tournament apabila anda bersedia u
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Blinds</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Apa Itu Blind Dalam Poker?</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Small Blind, Big Blind, blind steal dan option — semua dijelaskan</div>
-  </a>
-  <a href="/ms/blog/holdem-all-in-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">All-In</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Peraturan All-In & Side Pot</div>
-    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Side pot, re-raise dan showdown apabila stack tidak sama</div>
   </a>
 </div>
 `.trim(),

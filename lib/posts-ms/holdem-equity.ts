@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Dua pemain all-in dengan kad terbuka di atas kain hijau dan timbunan cip di tengah — saat equity setiap tangan bertukar menjadi bahagian pot yang sebenar",
   tags: ["equity poker", "equity dalam poker", "what is equity in poker", "fold equity", "equity realization", "realisasi equity", "equity vs pot odds", "all in equity"],
   content: `
-Selama setahun saya sangka "equity" cuma perkataan canggih untuk "sejauh mana saya berkemungkinan menang". Kemudian saya kalah tiga pot besar dalam satu malam walaupun saya favorite (lebih berpeluang menang) setiap kali masuk, dan seorang pemain yang lebih baik memberitahu saya sesuatu yang mengubah cara saya melihat seluruh permainan: ==equity anda ialah apa yang anda *layak dapat*, bukan apa yang anda *kutip*.== Anda boleh ada peluang 40% untuk menang sesuatu tangan tetapi hampir tidak merealisasikan apa-apa daripadanya — atau berada di belakang dan tetap mencetak wang. Memahami jurang antara kedua-duanya ialah sebahagian besar perkara yang membezakan pemain yang menang dengan pemain yang sekadar berharap.
+Selama setahun saya sangka "equity" cuma perkataan canggih untuk "sejauh mana saya berkemungkinan menang". Kemudian saya kalah tiga pot besar dalam satu malam walaupun saya favourite (lebih berpeluang menang) setiap kali masuk, dan seorang pemain yang lebih baik memberitahu saya sesuatu yang mengubah cara saya melihat seluruh permainan: ==equity anda ialah apa yang anda *layak dapat*, bukan apa yang anda *kutip*.== Anda boleh ada peluang 40% untuk menang sesuatu tangan tetapi hampir tidak merealisasikan apa-apa daripadanya — atau berada di belakang dan tetap mencetak wang. Memahami jurang antara kedua-duanya ialah sebahagian besar perkara yang membezakan pemain yang menang dengan pemain yang sekadar berharap.
 
 ==Equity ialah satu-satunya nombor yang mengikat setiap kepingan matematik poker yang lain — outs, pot odds, posisi dan keagresifan semuanya berakhir pada satu soalan: berapa bahagian pot ini yang benar-benar milik saya?== Panduan ini menerangkan apa itu equity, cara menganggarnya, dan tiga perkara yang tiada siapa beritahu pemula: kenapa anda tidak menyimpan semuanya, bagaimana lawan yang fold memberi anda tambahan, dan kenapa tangan besar anda mengecil menentang ramai pemain.
 
@@ -76,7 +76,7 @@ Itulah sebab utama equity penting: ia menukar soalan "adakah saya di depan?" men
 
 </div>
 
-Dua perkara yang selalu mengelirukan orang di sini. Pair menentang dua overcard (QQ vs AK) ==r:bukan 50/50== — pair itu favorite yang sederhana, lebih kurang 57/43 offsuit (sedikit lebih rapat, ~54/46, apabila AK satu jenis). Dan istilah "coin flip" sebenarnya hanya sesuai untuk pair rendah menentang dua kad lebih besar (22 vs AK), di mana ia benar-benar rapat.
+Dua perkara yang selalu mengelirukan orang di sini. Pair menentang dua overcard (QQ vs AK) ==r:bukan 50/50== — pair itu favourite yang sederhana, lebih kurang 57/43 offsuit (sedikit lebih rapat, ~54/46, apabila AK satu jenis). Dan istilah "coin flip" sebenarnya hanya sesuai untuk pair rendah menentang dua kad lebih besar (22 vs AK), di mana ia benar-benar rapat.
 
 ---
 
@@ -171,7 +171,7 @@ Tambah fold equity | Jika anda bet, sekerap mana lawan fold? Itu equity tambahan
 Bandingkan dengan harga | Call? Equity direalisasi vs pot odds anda. Bet? Sekerap mana lawan fold vs kadar fold pulang modal — bet ÷ (pot + bet) untuk bluff tulen, lebih rendah apabila tangan anda masih ada equity jika di-call → call, bet atau fold
 :::
 
-Malam yang saya sebut di awal tadi, saya membuat langkah pertama lalu berhenti — mengira equity mentah dan mengabaikan hakikat bahawa ketika out of position, menentang pemain yang bagus, saya tidak akan merealisasikannya. Sebaik saya mula memotong nilai untuk posisi dan memikirkan fold *mereka* dan bukan hanya kad saya, kebocoran itu tertutup. Equity bukan nombor yang anda cari dalam jadual; ia kanta yang anda gunakan untuk melihat setiap keputusan.
+Malam yang saya sebut di awal tadi, saya membuat langkah pertama lalu berhenti — mengira equity mentah dan mengabaikan hakikat bahawa ketika out of position, menentang pemain yang bagus, saya tidak akan merealisasikannya. Sebaik saya mula memotong nilai untuk posisi dan memikirkan fold *mereka* dan bukan hanya kad saya, leak (kelemahan berulang) itu tertutup. Equity bukan nombor yang anda cari dalam jadual; ia kanta yang anda gunakan untuk melihat setiap keputusan.
 
 ---
 

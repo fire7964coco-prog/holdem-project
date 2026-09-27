@@ -112,7 +112,7 @@ Blocker juga kelihatan dalam jadual yang sama. **A♠J♠ dan A♠T♠ check leb
 | K♠8♠ | 93.6% | **76.3%** | 193.0% |
 | K♠6♠ | 93.6% | **61.0%** | 193.7% |
 
-Equity berubah sedikit sahaja — 94% berbanding 97.7% — tetapi EQR jatuh kepada 197%. **Apabila menang, kutipannya lebih kecil.** Flush K-high kini hanya kalah kepada flush A-high, dan tangan itulah yang sanggup memasukkan banyak cip. Menang kecil tetapi kalah besar ialah **reverse implied odds**, sisi terbalik peluang kutipan masa depan yang boleh anda teliti melalui [analisis range dalam solver](/ms/solver).
+Equity berubah sedikit sahaja — 94% berbanding 97.7% — tetapi EQR jatuh kepada 197%. **Apabila menang, kutipannya lebih kecil.** Flush K-high kini hanya kalah kepada flush A-high, dan tangan itulah yang sanggup memasukkan banyak cip. Menang kecil tetapi kalah besar ialah **reverse implied odds**, sisi terbalik kepada [implied odds](/ms/blog/holdem-implied-odds).
 
 ## Siapa mempunyai lebih banyak flush di sini?
 
@@ -178,7 +178,7 @@ Untuk spot ini, jadual setiap tangan di bahagian bawah menyimpan pelajaran utama
 
 Kemudian buka **Trainer GTO** pada bar sisi dan cuba keputusan dengan flush pada board ini. Memilih tindakan lalu melihat kos EV membantu menghubungkan angka dengan keputusan. Percuma, tanpa pemasangan dan tanpa akaun wajib.
 
-## Soalan lazim
+## Soalan Lazim
 
 **Q. Apakah flop monotone?**
 
@@ -194,7 +194,7 @@ A. BB sudah membayar sebahagian kos melalui blind dan mempertahankan tangan suit
 
 **Q. Berapa kerap flush terbentuk terus pada flop?**
 
-A. Ia jarang: anda memerlukan dua kad suited serta ketiga-tiga kad flop daripada suit yang sama. Untuk asas membaca peluang draw dan harga menyambung, rujuk [panduan asas Texas Hold'em](/ms/blog/texas-holdem-rules-for-beginners). Fokus di sini ialah keputusan selepas board itu muncul.
+A. Ia jarang: anda memerlukan dua kad suited serta ketiga-tiga kad flop daripada suit yang sama. Peratusan tepat untuk flop dan melengkapkan flush dihuraikan dalam [drawing odds](/ms/blog/holdem-drawing-odds). Fokus di sini ialah keputusan selepas board itu muncul.
 
 **Q. Mengapa A♠ sangat penting walaupun saya belum mempunyai flush?**
 
