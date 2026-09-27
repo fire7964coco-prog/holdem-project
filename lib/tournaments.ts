@@ -966,15 +966,16 @@ const RAW_TOURNAMENTS: Tournament[] = [
     city: "Osaka",
     country: "JP",
     venue: "堂島リバーフォーラム",
-    // 「다양」 → 「미발표」 (2026-08-31). `events…/2026-osaka-02` **404** — 스파인 §3-2가
-    // 이미 「이벤트별 바이인 ==미공개== (2026-07-30)」이라 적어 둔 것과 표기를 맞췄다.
-    buyin: "미발표",
+    // 「미발표」 → 공개 (2026-09-27): japanopenpoker.com/osaka/ 이벤트 표 — ME 「3 Tickets + ¥8,000」 ·
+    // 사이드 최저 ¥8,800(NLH Lucky 8's · 스태프용 ¥3,000 NLH Employees 제외) ~ 최고 ¥300,000(NLH Platinum).
+    // events 서브도메인 2026-osaka-02는 여전히 404 — 금액 정본은 도시 페이지 표.
+    buyin: "¥8,800~¥300,000",
     emoji: "🇯🇵",
     color: "bg-rose-500/15 text-rose-400 border-rose-500/30",
     blogLink: "/blog/japan-poker-tournaments-guide",
-    sourceUrl: "https://japanopenpoker.com/events/",
+    sourceUrl: "https://japanopenpoker.com/osaka/",
     sourceTier: "A",
-    verifiedAt: "2026-09-03",
+    verifiedAt: "2026-09-27",
   },
   {
     id: "jopt-tokyo-2027-1",
@@ -995,6 +996,27 @@ const RAW_TOURNAMENTS: Tournament[] = [
     sourceUrl: "https://japanopenpoker.com/events/",
     sourceTier: "A",
     verifiedAt: "2026-09-03",
+  },
+  /* 2026-09-27 편입: `japanopenpoker.com/events/` Upcoming에 새로 게시(「2027 Sapporo #01 · 2027.01.28 – 01.31 ·
+     Sapporo Factry Hall」). 바이인 미발표 · 2027 시즌부터 메인은 새 「参加権利」 제도(09-10 공지). */
+  {
+    id: "jopt-sapporo-2027-1",
+    name: "JOPT 2027 Sapporo #01",
+    nameEn: "JOPT 2027 Sapporo #01",
+    type: "international",
+    startDate: "2027-01-28",
+    endDate: "2027-01-31",
+    location: "일본 삿포로 (삿포로 팩토리 홀)",
+    city: "Sapporo",
+    country: "JP",
+    venue: "サッポロファクトリーホール",
+    buyin: "미발표",
+    emoji: "🇯🇵",
+    color: "bg-rose-500/15 text-rose-400 border-rose-500/30",
+    blogLink: "/blog/japan-poker-tournaments-guide",
+    sourceUrl: "https://japanopenpoker.com/events/",
+    sourceTier: "A",
+    verifiedAt: "2026-09-27",
   },
   /* ★ 아래 2건은 2026-08-31 스파인 재대조에서 편입했다.
      `japanopenpoker.com/events/`의 **Upcoming Events**에 공식 게시돼 있는데
