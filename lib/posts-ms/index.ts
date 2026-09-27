@@ -42,6 +42,14 @@ import { POST as holdemCardCounting } from "./holdem-card-counting";
 // [ms-prob import 끝]
 
 // [ms-strat import 시작]
+import { POST as holdemStrategy } from "./holdem-strategy";
+import { POST as holdemPositions } from "./holdem-positions";
+import { POST as holdemPositionPlay } from "./holdem-position-play";
+import { POST as holdemStartingHandsChart } from "./holdem-starting-hands-chart";
+import { POST as holdemLimping } from "./holdem-limping";
+import { POST as holdem3bet } from "./holdem-3bet";
+import { POST as holdemContinuationBet } from "./holdem-continuation-bet";
+import { POST as holdemWhenToFold } from "./holdem-when-to-fold";
 // [ms-strat import 끝]
 
 // [ms-tour import 시작]
@@ -101,6 +109,14 @@ export const MS_POSTS: Post[] = [
   // [ms-prob 배열 끝]
 
   // [ms-strat 배열 시작]
+  holdemStrategy,
+  holdemPositions,
+  holdemPositionPlay,
+  holdemStartingHandsChart,
+  holdemLimping,
+  holdem3bet,
+  holdemContinuationBet,
+  holdemWhenToFold,
   // [ms-strat 배열 끝]
 
   // [ms-tour 배열 시작]
