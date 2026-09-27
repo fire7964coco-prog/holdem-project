@@ -317,7 +317,7 @@ A. Sim. O flush é a #5 e a sequência a #6, então o flush sempre ganha — vej
 
 **Q. O full house ganha do flush?**
 
-A. Sim. O full house (#4) ganha do flush (#5) e da sequência. Só perde para a quadra, o straight flush e o royal flush.
+A. Sim. O full house (#4) ganha do flush (#5) e da sequência. Só perde para um full house mais alto, a quadra, o straight flush e o royal flush.
 
 **Q. O que ganha de uma sequência no poker?**
 

@@ -257,7 +257,7 @@ A. Estude longe da mesa e aperte o jogo nela. Os ganhos mais rápidos para a mai
 
 1. **Posição** — jogue mais mãos tarde, menos cedo; o botão é sua cadeira mais lucrativa.
 2. **Seleção de mãos** — folde ~80% no pré-flop; as mãos que você guarda são mais fortes que as dos adversários.
-3. **Aumentar ou foldar** — não dê open-limp com stacks normais de cash game; um aumento pode ganhar o pote agora, um limp nunca.
+3. **Aumentar ou foldar** — não dê open-limp com stacks normais de cash game (a exceção é completar o small blind num pote sem aumento); um aumento pode ganhar o pote agora, um limp nunca.
 4. **Continuação** — dê c-bet quando tiver a iniciativa, mas ajuste para o board, a posição e os adversários.
 5. **Disciplina** — folde mãos vencidas e projetos sem odds; é a jogada que mais economiza dinheiro.
 
