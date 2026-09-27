@@ -241,7 +241,7 @@ A. Study away from the table and tighten up at it. The fastest gains for most pl
 
 1. **Position** — play more hands late, fewer early; the button is your most profitable seat.
 2. **Hand selection** — fold ~80% preflop; the hands you keep are stronger than your opponents'.
-3. **Raise or fold** — don't open-limp at normal cash-game depth; a raise can win the pot now, a limp never can.
+3. **Raise or fold** — don't open-limp at normal cash-game depth (completing the small blind in an unraised pot is the exception); a raise can win the pot now, a limp never can.
 4. **Continuation** — c-bet when you have initiative, but adjust for board, position, and opponents.
 5. **Discipline** — fold beaten hands and draws without odds; it's the move that saves the most money.
 

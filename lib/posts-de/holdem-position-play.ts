@@ -277,7 +277,7 @@ A. Zwei Antworten, je nach Frage. Der Small Blind ist der strukturell schlechtes
 
 **Q. Ist der Small Blind eine frühe Position?**
 
-A. Nein – der Small Blind ist ein Blind, kein „Early-Position“-Sitz. Spieler in früher Position (UTG und die Sitze daneben) öffnen tight, weil der ganze Tisch hinter ihnen handelt – und postflop handeln sie immerhin *nach* den Blinds. Der Small Blind ist in Wahrheit der schlechteste Sitz überhaupt: Er postet einen halben Blind und ist danach auf jeder Postflop-Street als Erster dran. Behandle ihn nicht wie Early Position – gegen einen Raise ist der moderne Standard aus dem Small Blind 3-Bet oder Fold, fast nie Flat-Call; wird zu dir gefoldet, raist du meistens.
+A. Nein – der Small Blind ist ein Blind, kein „Early-Position“-Sitz. Spieler in früher Position (UTG und die Sitze daneben) öffnen tight, weil der ganze Tisch hinter ihnen handelt – und postflop handeln sie immerhin *nach* den Blinds. Der Small Blind ist in Wahrheit der schlechteste Sitz, um eine Hand zu spielen: Er postet einen halben Blind und ist danach auf jeder Postflop-Street als Erster dran. Behandle ihn nicht wie Early Position – gegen einen Raise ist der moderne Standard aus dem Small Blind 3-Bet oder Fold, fast nie Flat-Call; wird zu dir gefoldet, raist du meistens.
 
 **Q. Ist es besser, aus UTG zu limpen oder zu raisen?**
 

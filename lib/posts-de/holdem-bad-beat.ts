@@ -171,7 +171,7 @@ Denk darüber nach, was ein Bad Beat braucht: einen Gegner, der sein Geld als ma
 ## Wie gehst du mit einem Bad Beat um?
 
 > **Kurze Antwort**
-> Indem du die *nächsten* Hände schützt, nicht die verlorene. Ein Bad Beat enthält keine Lektion über dein Spiel – er kann dir nur schaden, wenn er ändert, wie du danach spielst. Benenne ihn kurz, achte scharf auf Tilt, mach notfalls fünf Minuten Pause und vertrau der Bankroll, die genau für diese Schwankungen existiert.
+> Indem du die *nächsten* Hände schützt, nicht die verlorene. War das Reingehen richtig, enthält ein Bad Beat keine Lektion über dein Spiel – im Cashgame entsteht der bleibende Schaden erst, wenn du zulässt, dass er ändert, wie du danach spielst; im Turnier kann er deinen Run sofort beenden. Benenne ihn kurz, achte scharf auf Tilt, mach notfalls fünf Minuten Pause und vertrau der Bankroll, die genau für diese Schwankungen existiert.
 
 Sobald du geprüft hast, dass das Reingehen richtig war – Sizing, Stacktiefe, Turnierdruck –, enthält ein Bad Beat keine Lektion über dein Spiel, und seine größte Gefahr ist, was er mit deinen *nächsten* paar Händen macht. Schütze sie:
 

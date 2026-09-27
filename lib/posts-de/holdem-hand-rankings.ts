@@ -350,7 +350,7 @@ A. Ja. Ein Flush ist #5 und eine Straße #6, also gewinnt der Flush immer – si
 
 **Q. Schlägt ein Full House einen Flush?**
 
-A. Ja. Ein Full House (#4) schlägt einen Flush (#5) und eine Straße. Es verliert nur gegen Vierling, Straight Flush und Royal Flush.
+A. Ja. Ein Full House (#4) schlägt einen Flush (#5) und eine Straße. Es verliert nur gegen ein höheres Full House, Vierling, Straight Flush und Royal Flush.
 
 **Q. Was schlägt eine Straße im Poker?**
 

@@ -1,3 +1,9 @@
+## 2026-09-27 (1) — L-2i 검수장 대조 요청 3건 이행 (MA-200·202 회신 · MB-101)
+
+- `541394e0` 29파일(각 1줄 · updated 불변). ① MA-200 요청 1 hand-rankings FAQ «full house only loses to …» 상위 풀하우스 누락 WRONG → EN+12로케일 ② MA-200 요청 2 로케일 고유 9자리(de bad-beat·drawing-odds·position-play · es flush-vs-straight · zh·zh-hant card-counting · zh outs·reading) ③ MA-202 요청 1 strategy 말미 요약 SB 컴플리트 예외(EN+7).
+- 게이트: audit:hard 13로케일 🔴 0(🟠 es·zh·zh-hant 1 = 기준선 동일) · 렌즈 2종(교열 diff · 딜러) 편집 유래 결함 0 · build 73+577.
+- 남긴 것 = 작업판 L-2i 절 🪶(EN-먼저 후보 reading-the-board L163 «any king … is trips» 등 · 판정 선행) · ms-strat 머지 때 요약 SB 예외 반영.
+
 ## 2026-09-26 (13) — 🇲🇾 ms 신규 번역 5레인 준비
 
 - 사장님 지시: ms를 별도 레인 창에서 · 35편 → **대회 가이드 5 제외 30편** · 클러스터별 5레인 동시 · Opus 5.5 중심 · Fable 최소 · 검수 폴더 = GPT 아스트라 · 키워드 MCP 2종 활용 · 고품질 프로세스.

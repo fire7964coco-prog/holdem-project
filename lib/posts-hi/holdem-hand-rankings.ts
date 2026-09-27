@@ -292,7 +292,7 @@ A. हाँ। Flush #5 है और straight #6, तो flush हमेशा
 
 **Q. क्या full house, flush से जीतता है?**
 
-A. हाँ। Full house (#4), flush (#5) और straight से जीतता है। यह केवल four of a kind, straight flush और royal flush से हारता है।
+A. हाँ। Full house (#4), flush (#5) और straight से जीतता है। यह केवल ऊँचे full house, four of a kind, straight flush और royal flush से हारता है।
 
 **Q. Kicker क्या है?**
 

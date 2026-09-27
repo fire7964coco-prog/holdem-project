@@ -328,7 +328,7 @@ A. Sí. El color es la #5 y la escalera la #6, así que el color siempre gana �
 
 **Q. ¿El full gana al color?**
 
-A. Sí. El full (#4) gana al color (#5) y a la escalera. Solo pierde contra el póker, la escalera de color y la escalera real.
+A. Sí. El full (#4) gana al color (#5) y a la escalera. Solo pierde contra un full más alto, el póker, la escalera de color y la escalera real.
 
 **Q. ¿Qué gana a una escalera en el póker?**
 

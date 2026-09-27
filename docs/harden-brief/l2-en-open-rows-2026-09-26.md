@@ -300,6 +300,12 @@
 
 > 🪶 **L-2g 전파 목록(MA-190 ② · 검수장 보고 `reports/검수-본부-L2b이행-2026-09-26.md` §3-2 자리표)**: ko WRONG 4 — ace-paired «체크 이후 노드는 어느 편에도 계산돼 있지 않습니다» · blind-connected «BB의 콜 레인지에만» · «맞아 봐야 원 페어» · (monotone A♠7♠ = 이번 동반 ✅) + RISKY 19 · es WRONG 7 — ace-paired #97 · blind-connected #40·#90 · monotone #13·#53·#54·#57 + bet-sizing #58 JJ 경로 · RISKY 다수. 🔴 monotone A♠7♠ 문장은 es에 **옮기지 말 것**(es엔 원래 없음). 참고(요청 아님): blind-connected #12 거트샷 A3·A9 32 누락 · low-board «almost every casino» · zh reading #7 «没有顺子听牌» RISKY.
 
+## L-2i 검수장 대조 요청 3건 — `541394e0`(MB-101)
+
+- MA-200 ① hand-rankings FAQ «Does a full house beat a flush?» «+ a higher full house»(EN+12 = 위 L-2g 🪶 ① 종결) · ② 로케일 고유 9자리(de bad-beat Kurze Antwort #81·#82 · de drawing-odds #6 · de position-play #88 · es flush-vs-straight #74 · zh card-counting #15 · zh-hant #14 · zh outs #44 · zh reading #67) · MA-202 ① strategy 말미 요약 SB 컴플리트 예외(EN+7).
+- 렌즈 2종(교열 diff · 딜러) 편집 유래 결함 0.
+- 🪶 **남긴 것(판정 선행 · 자동 착수 금지)**: ⓐ **EN-먼저** reading-the-board L163 «any king in someone's hand is trips»(보드 K♣K♦7♠3♥2♣ · K-7·K-3·K-2 = 풀하우스 · zh L197 동형 · 전 로케일 복제 추정) ⓑ hand-rankings FAQ «Only three hands beat a full house … A higher full house wins too» 열거 틀(교열 렌즈 중간 · 검수장은 반례 근거로 씀) ⓒ zh card-counting 표 #17 «只有» 잔존(검수장 OK 판정 · zh-hant 동형 #14는 이번에 고침) ⓓ MA-200 통지 ⓒ ko donk 인과 귀속 정본 방향(= L-2g 🪶 ②) ⓔ 🇲🇾 ms-strat 레인이 EN `cd4e5eaa` 기준으로 strategy 번역 중 → **머지 때 헤드가 요약 SB 예외 반영**.
+
 ## L-2h 검수장 대조 요청 4건 — `95fef741`(MB-097)
 
 - MA-196 ① hand-rankings Board trips WRONG → «a straight or better»(EN+12 · SF·로열 누락 방지) · ② showdown TDA 2024 illustration(EN·de·es·id·pt) · MA-194 ① card-counting 자발 공개(EN+7) · MA-192 ① strategy open-limp 범위(EN+7).
