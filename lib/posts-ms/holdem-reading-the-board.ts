@@ -162,7 +162,7 @@ Board: K♣ K♦ 7♠ 3♥ 2♣
 | 7♥ 7♦ | 7-7-7-K-K | Full house, sevens full of kings |
 | A♠ Q♦ | K-K-A-Q-7 | Hanya one pair — pasangan K di board — dengan A-Q di belakang |
 
-Perhatikan baris terakhir: ==walaupun anda tiada apa-apa, pasangan di board ialah sebahagian daripada tangan anda==. "Adakah pair di board dikira?" — ya, bagi semua orang serentak. Itulah sebabnya top pair mengecil di board berpasangan: mana-mana K di tangan seseorang ialah trips, mana-mana 7-7 ialah boat, dan one pair anda tiba-tiba menjadi yang ketiga terbaik.
+Perhatikan baris terakhir: ==walaupun anda tiada apa-apa, pasangan di board ialah sebahagian daripada tangan anda==. "Adakah pair di board dikira?" — ya, bagi semua orang serentak. Itulah sebabnya top pair mengecil di board berpasangan: mana-mana K di tangan seseorang sekurang-kurangnya trips (K-7, K-3 atau K-2 sudah full house), mana-mana 7-7 ialah boat, dan one pair anda tiba-tiba menjadi yang ketiga terbaik.
 
 ==g:Board berpasangan = baca semula tangan dari awal sebelum memasukkan cip.==
 
