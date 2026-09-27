@@ -329,7 +329,7 @@ A. Yes. A flush is #5 and a straight is #6, so a flush always wins — see [why 
 
 **Q. Does a full house beat a flush?**
 
-A. Yes. A full house (#4) beats a flush (#5) and a straight. It only loses to four of a kind, a straight flush, or a royal flush.
+A. Yes. A full house (#4) beats a flush (#5) and a straight. It only loses to a higher full house, four of a kind, a straight flush, or a royal flush.
 
 **Q. What beats a straight in poker?**
 

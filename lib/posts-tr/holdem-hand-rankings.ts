@@ -292,7 +292,7 @@ A. Evet. Flush #5, kent #6, yani flush her zaman kazanır. Daha yukarıdadır ç
 
 **Q. Full house flush'ı yener mi?**
 
-A. Evet. Full house (#4), flush (#5) ve kenti yener. Yalnızca kare, straight flush ve royal flush'a kaybeder.
+A. Evet. Full house (#4), flush (#5) ve kenti yener. Yalnızca daha yüksek bir full house, kare, straight flush ve royal flush'a kaybeder.
 
 **Q. Kicker nedir?**
 

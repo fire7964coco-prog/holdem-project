@@ -258,7 +258,7 @@ A. Un tell es una pista involuntaria — física o de patrón de apuesta — que
 
 1. **Posición** — juega más manos tarde, menos temprano; el botón es tu asiento más rentable.
 2. **Selección de manos** — foldea ~80% preflop; las manos que te quedas son más fuertes que las de tus rivales.
-3. **Subir o foldear** — no hagas open-limp con stacks normales de cash; una subida puede ganar el bote ya, un limp nunca.
+3. **Subir o foldear** — no hagas open-limp con stacks normales de cash (la excepción es completar la ciega pequeña en un bote sin subidas); una subida puede ganar el bote ya, un limp nunca.
 4. **Continuación** — haz c-bet cuando tengas la iniciativa, pero ajusta por board, posición y rivales.
 5. **Disciplina** — foldea las manos batidas y los proyectos sin odds; es la jugada que más dinero salva.
 

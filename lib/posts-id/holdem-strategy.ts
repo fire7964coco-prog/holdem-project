@@ -242,7 +242,7 @@ A. Belajar di luar meja, dan main lebih ketat di meja. Perbaikan tercepat bagi k
 
 1. **Position** — main lebih banyak tangan di belakang, lebih sedikit di awal; button adalah kursi paling menguntungkan Anda.
 2. **Seleksi tangan** — fold ~80% preflop; tangan yang Anda simpan lebih kuat daripada lawan Anda.
-3. **Raise atau fold** — jangan open-limp di kedalaman stack cash game normal; sebuah raise bisa memenangkan pot sekarang, sebuah limp tak pernah bisa.
+3. **Raise atau fold** — jangan open-limp di kedalaman stack cash game normal (pengecualiannya: complete dari small blind di pot yang belum di-raise); sebuah raise bisa memenangkan pot sekarang, sebuah limp tak pernah bisa.
 4. **Kelanjutan** — c-bet saat Anda punya inisiatif, tapi sesuaikan dengan board, position, dan lawan.
 5. **Disiplin** — fold tangan yang kalah dan draw tanpa odds; itu langkah yang paling banyak menghemat uang.
 

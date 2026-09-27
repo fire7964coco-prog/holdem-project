@@ -282,7 +282,7 @@ A. Es gibt keine einzelne Zahl – es hängt von Position, Board und der Anzahl 
 
 1. **Position** – spiele mehr Hände spät, weniger früh; der Button ist dein profitabelster Platz.
 2. **Handauswahl** – folde ~80% preflop; die Hände, die du behältst, sind stärker als die deiner Gegner.
-3. **Raise oder fold** – bei normaler Cash-Game-Stacktiefe nicht open-limpen; ein Raise kann den Pot jetzt gewinnen, ein Limp nie.
+3. **Raise oder fold** – bei normaler Cash-Game-Stacktiefe nicht open-limpen (Ausnahme: den Small Blind in einem ungeraisten Pot completen); ein Raise kann den Pot jetzt gewinnen, ein Limp nie.
 4. **Continuation** – C-bette, wenn du die Initiative hast, aber passe für Board, Position und Gegner an.
 5. **Disziplin** – folde geschlagene Hände und Draws ohne Odds; es ist der Move, der am meisten Geld spart.
 
