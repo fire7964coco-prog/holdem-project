@@ -53,6 +53,10 @@ import { POST as holdemWhenToFold } from "./holdem-when-to-fold";
 // [ms-strat import 끝]
 
 // [ms-tour import 시작]
+import { POST as holdemTournament } from "./holdem-tournament";
+import { POST as holdemIcm } from "./holdem-icm";
+import { POST as holdemBubble } from "./holdem-bubble";
+import { POST as holdemShortStack } from "./holdem-short-stack";
 // [ms-tour import 끝]
 
 // [ms-gloss import 시작]
@@ -120,6 +124,10 @@ export const MS_POSTS: Post[] = [
   // [ms-strat 배열 끝]
 
   // [ms-tour 배열 시작]
+  holdemTournament,
+  holdemIcm,
+  holdemBubble,
+  holdemShortStack,
   // [ms-tour 배열 끝]
 
   // [ms-gloss 배열 시작]
