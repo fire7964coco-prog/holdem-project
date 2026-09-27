@@ -357,9 +357,9 @@ export const CALC_DICT_MS: CalcDict = {
       strong2: "chip-EV tulen",
       p2: " — range call pemain di belakang diselesaikan serentak — dengan anggaran standard bahawa pot yang di-call diselesaikan secara heads-up lawan caller pertama (pot dengan lebih daripada seorang caller diabaikan). Range melebar apabila makin sedikit pemain tinggal di belakang anda (UTG → BTN → SB), apabila stack semakin pendek, dan apabila ante ON (0.125bb setiap pemain). Kerana ia chip-EV tulen, range 10bb dari posisi awal (UTG/MP) keluar lebih ketat daripada peraturan umum yang popular (tanpa ante, pair kecil fold) — sesuaikan dengan ICM dan lawan dalam permainan sebenar.",
     },
-    readMore: "Untuk asas tekanan stack dan ICM dalam kejohanan, baca",
-    shortStackLink: { slug: "holdem-tournament-vs-cash-game", text: "perbandingan tournament dan cash game kami" },
-    readMoreEnd: ".",
+    readMore: "Untuk asas short stack, baca",
+    shortStackLink: { slug: "holdem-short-stack", text: "panduan strategi short stack" },
+    readMoreEnd: " kami.",
   },
 
   icmGuide: {
@@ -401,17 +401,14 @@ export const CALC_DICT_MS: CalcDict = {
         b2: "lebih adil kepada short stack",
         b3: "$182 lebih",
       },
-      // 🔴 ms 코퍼스에 holdem-icm이 없다(EN 고유 9슬러그 중 ms 실재는 tournament-vs-cash-game 1개 · 나머지 8개는 0) →
-      //    실제로 ICM을 다루는 그 글로 보낸다(icm 언급 24회).
-      linkLead: "Model di sebalik nombor ini, bersama tekanan bubble dan nilai cip kejohanan, ada dalam",
-      link: { slug: "holdem-tournament-vs-cash-game", text: "Poker tournament atau cash game" },
+      linkLead: "Model di sebalik nombor ini, lengkap dengan bubble factor dan etika deal, ada dalam",
+      link: { slug: "holdem-icm", text: "Apakah Itu ICM dalam Poker?" },
     },
   },
 
   // ★2026-09-19 빠른 참조 6표 — 🔴 모든 값 = scripts/calc-reference-tables.ts 출력(EN 그대로 · §13 언어 불변).
-  //   🔴 link는 lib/posts-ms/에 «실재하는» 슬러그만(EN 고유 9슬러그 중 ms 실재는 tournament-vs-cash-game 1개뿐 ·
-  //   브리프 §3-J · 게이트 F항). 🔴 그 1개가 한 페이지에서 4자리(pushfold·deal.link·quickRef⑥·related[0])에 쓰인다 —
-  //   EN은 그 네 자리에 서로 다른 4슬러그를 쓴다. ms에 대체 글이 생기면 우선 분산 대상이다.
+  //   🔴 link는 lib/posts-ms/에 «실재하는» 슬러그만(게이트 F항). 2026-09-27 ms 30편 머지로 EN 슬러그가 전부 실재 →
+  //   pushfold·deal.link·quickRef·related를 EN과 같은 슬러그로 분산했다.
   quickRef: [
     {
       badge: "Rujukan pantas",
@@ -437,7 +434,9 @@ export const CALC_DICT_MS: CalcDict = {
         ["AKs vs QJs", "63.5%", "36.5%", "0.5%"],
         ["AKo vs JTs", "59.5%", "40.5%", "0.5%"],
       ],
-      note: "Equity ialah purata bahagian pot anda, termasuk seri (chop). Satu pair lawan dua overcard ialah race klasik; satu pair lawan pair yang lebih tinggi kira-kira 4.5 berbanding 1 sebagai underdog.",
+      note: "Equity ialah purata bahagian pot anda, termasuk seri (chop). Satu pair lawan dua overcard ialah race klasik; satu pair lawan pair yang lebih tinggi kira-kira 4.5 berbanding 1 sebagai underdog. Carta odds penuh, street demi street, ada dalam",
+      link: { slug: "holdem-probability", text: "Carta Odds & Kebarangkalian Poker" },
+      linkTail: ".",
     },
     {
       badge: "Rujukan pantas",
@@ -451,7 +450,9 @@ export const CALC_DICT_MS: CalcDict = {
         ["1", "85.2%"], ["2", "73.4%"], ["3", "63.8%"], ["4", "55.9%"],
         ["5", "49.2%"], ["6", "43.6%"], ["7", "38.7%"], ["8", "34.6%"],
       ],
-      note: "Itulah sebabnya ace mahukan pot heads-up: apabila menghadapi lima tangan rawak, equity tangan permulaan terbaik dalam Hold'em jatuh di bawah 50% (49.2%, dengan lima yang lain berkongsi bakinya). Tetapkan seorang lawan kepada “Tangan rawak” dalam kalkulator equity untuk menguji mana-mana tangan dengan cara yang sama (ia menerima sehingga tiga lawan).",
+      note: "Itulah sebabnya ace mahukan pot heads-up: apabila menghadapi lima tangan rawak, equity tangan permulaan terbaik dalam Hold'em jatuh di bawah 50% (49.2%, dengan lima yang lain berkongsi bakinya). Tetapkan seorang lawan kepada “Tangan rawak” dalam kalkulator equity untuk menguji mana-mana tangan dengan cara yang sama (ia menerima sehingga tiga lawan). Kenapa tangan besar mengecil dalam pot multiway dibincangkan dalam",
+      link: { slug: "holdem-equity", text: "Equity dalam Poker" },
+      linkTail: ".",
     },
     {
       badge: "Rujukan pantas",
@@ -483,8 +484,8 @@ export const CALC_DICT_MS: CalcDict = {
         ["19", "–", "65.0%", "40.4%", "41.3%", "76% · 38%"],
         ["20", "–", "67.5%", "42.6%", "43.5%", "80% · 40%"],
       ],
-      note: "Angka dua kad hanya terpakai apabila anda akan melihat kedua-dua kad tanpa membayar lagi (satu all-in). Apabila menghadapi satu bet pada flop, gunakan lajur flop → turn: 9 outs = 19.1%. Overcard ialah outs yang paling tidak boleh dipercayai — menghadapi made hand, memasangkan satu daripadanya selalunya masih kalah, jadi potong nilainya. Bagaimana 40 kombo draw dinilai berbanding harga call ada dalam",
-      link: { slug: "3bet-pot-bet-sizing", text: "Outs dan harga draw dalam pot 3-bet" },
+      note: "Angka dua kad hanya terpakai apabila anda akan melihat kedua-dua kad tanpa membayar lagi (satu all-in). Apabila menghadapi satu bet pada flop, gunakan lajur flop → turn: 9 outs = 19.1%. Overcard ialah outs yang paling tidak boleh dipercayai — menghadapi made hand, memasangkan satu daripadanya selalunya masih kalah, jadi potong nilainya. Cara mengira outs tanpa mengira dua kali ada dalam",
+      link: { slug: "holdem-outs", text: "Cara Kira Outs dalam Poker" },
       linkTail: ".",
     },
     {
@@ -506,8 +507,8 @@ export const CALC_DICT_MS: CalcDict = {
         ["2× pot", "1.5 : 1", "40.0%"],
         ["3× pot", "1.33 : 1", "42.9%"],
       ],
-      note: "Satu flush draw (35.0% dengan dua kad akan datang, 19.1% pada kad seterusnya) hanya call bet sebesar pot pada flop apabila ia all-in. Jika tidak, kalkulator implied odds — togol dalam tab pot odds — menambah wang yang anda jangka menang kemudian, dengan syarat lawan ada cip di belakang dan tangan yang akan membayar; potong banyak apabila anda bukan draw kepada nut. Asas pot odds untuk pemula ada dalam",
-      link: { slug: "texas-holdem-rules-for-beginners", text: "Cara main Texas Hold'em untuk pemula" },
+      note: "Satu flush draw (35.0% dengan dua kad akan datang, 19.1% pada kad seterusnya) hanya call bet sebesar pot pada flop apabila ia all-in. Jika tidak, kalkulator implied odds — togol dalam tab pot odds — menambah wang yang anda jangka menang kemudian, dengan syarat lawan ada cip di belakang dan tangan yang akan membayar; potong banyak apabila anda bukan draw kepada nut. Kaedah 10 saat untuk mana-mana spot ada dalam",
+      link: { slug: "holdem-pot-odds", text: "Cara Kira Pot Odds dalam Poker" },
       linkTail: ".",
     },
     {
@@ -523,8 +524,8 @@ export const CALC_DICT_MS: CalcDict = {
         ["8 ≤ SPR < 15", "Semakin deep", "Set dan yang lebih baik bermain untuk stack; draw mendapat implied odds"],
         ["SPR ≥ 15", "Deep", "Pot besar hanya dengan tangan kelas nut — made hand yang lemah menjadi sasaran bluff"],
       ],
-      note: "Tab “SPR” di atas menukar mana-mana stack dan pot kepada salah satu daripada empat zon ini. Untuk cara SPR terbentuk dalam pot 3-bet, lihat",
-      link: { slug: "3bet-pot-cbet", text: "SPR dan stack dalam pot 3-bet" },
+      note: "Tab “SPR” di atas menukar mana-mana stack dan pot kepada salah satu daripada empat zon ini. Untuk range mengikut kedalaman stack, lihat",
+      link: { slug: "holdem-short-stack", text: "Strategi Short Stack & Push/Fold" },
       linkTail: ".",
     },
     {
@@ -572,17 +573,16 @@ export const CALC_DICT_MS: CalcDict = {
   related: {
     badge: "Baca seterusnya",
     h2: "Panduan untuk dibaca selepas pengiraannya sudah masuk akal",
-    // 🔴 EN 8슬러그(holdem-icm·equity·pot-odds·outs·probability·starting-hands-chart·short-stack·implied-odds)는
-    //    ms에 «0개» 실재한다 → 전부 ms 코퍼스(21편)에서 고른다. 개수만 EN과 동일(8).
+    // 2026-09-27 ms 30편 머지로 EN 8슬러그가 전부 ms에 실재 → EN과 같은 순서·슬러그(check:calc-parity F항).
     links: [
-      { slug: "holdem-tournament-vs-cash-game", title: "Tournament atau Cash Game", desc: "Nilai cip, ICM dan tekanan bubble" },
-      { slug: "a-high-board-cbet", title: "Equity dan EQR dalam Solver", desc: "Range check, equity dan realisasi equity pada A72" },
-      { slug: "texas-holdem-rules-for-beginners", title: "Cara Main Texas Hold'em", desc: "Asas pot odds dan tangan permulaan untuk pemula" },
-      { slug: "3bet-pot-bet-sizing", title: "Outs dan Harga Draw", desc: "40 kombo draw berbanding harga call dalam pot 3-bet" },
-      { slug: "3bet-pot-cbet", title: "SPR dan Stack dalam Pot 3-bet", desc: "Kenapa SPR rendah mengubah rancangan flop anda" },
-      { slug: "holdem-hand-rankings", title: "Susunan Tangan Poker", desc: "10 tangan dengan kebarangkalian dan kicker" },
-      { slug: "holdem-all-in-rules", title: "Peraturan All-In dan Side Pot", desc: "Apa yang berlaku apabila stack tidak sama besar" },
-      { slug: "holdem-game-order", title: "Urutan Permainan Hold'em", desc: "Preflop hingga showdown dan posisi di meja" },
+      { slug: "holdem-icm", title: "Apakah Itu ICM dalam Poker?", desc: "Chip EV lawan EV hadiah, bubble factor, deal" },
+      { slug: "holdem-equity", title: "Equity dalam Poker", desc: "Peratus menang, fold equity dan realisasi" },
+      { slug: "holdem-pot-odds", title: "Cara Kira Pot Odds", desc: "Tukar spot call/fold kepada matematik" },
+      { slug: "holdem-outs", title: "Cara Kira Outs", desc: "Outs mengikut jenis draw dan peraturan 4 dan 2" },
+      { slug: "holdem-probability", title: "Carta Odds & Kebarangkalian Poker", desc: "Carta odds penuh di sebalik setiap tangan" },
+      { slug: "holdem-starting-hands-chart", title: "Carta Tangan Permulaan", desc: "Tangan yang dimainkan mengikut posisi" },
+      { slug: "holdem-short-stack", title: "Short Stack & Push/Fold", desc: "Cara guna carta push/fold dan hadnya" },
+      { slug: "holdem-implied-odds", title: "Implied Odds Dijelaskan", desc: "Bila harga buruk tetap jadi call yang betul" },
     ],
   },
 };
