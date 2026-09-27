@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Peraturan All-In Texas Hold'em: Side Pot, Re-Raise & Showdown",
   seoTitle: "Dah All-In Tapi Keliru? — Peraturan All-In & Side Pot Hold'em",
   desc: "Semua cip masuk, tapi tak pasti apa yang boleh anda menangi? Peraturan all-in Texas Hold'em — table stakes, pot utama, side pot, hak re-raise dan showdown.",
-  tldr: "All-in bermaksud mempertaruhkan semua cip yang anda ada. Anda hanya boleh menang jumlah yang anda samai daripada setiap lawan (pot utama). Pertaruhan lebihan daripada stack yang lebih besar membentuk side pot yang anda tidak boleh menangi. All-in yang kurang daripada satu raise penuh TIDAK membuka semula pertaruhan bagi pemain yang sudah bertindak.",
+  tldr: "All-in bermaksud mempertaruhkan semua cip yang anda ada. Anda hanya boleh menang jumlah yang anda samai daripada setiap lawan (pot utama). Pertaruhan lebihan daripada stack yang lebih besar membentuk side pot yang hanya boleh dimenangi oleh pemain yang menyamainya. All-in yang kurang daripada satu raise penuh TIDAK membuka semula pertaruhan bagi pemain yang sudah bertindak.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-22",
-  masterUpdated: "2026-08-12",
+  updated: "2026-09-27",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 minit",
   emoji: "♠",
@@ -45,11 +45,11 @@ Asasnya ialah peraturan **table stakes**: anda hanya boleh mempertaruhkan cip ya
 | Table stakes | Anda hanya boleh bertaruh apa yang ada ketika hand bermula |
 | Double up | Menang all-in dan menggandakan stack anda |
 | Pot utama (main pot) | Pot yang semua orang — termasuk pemain all-in — boleh menangi |
-| Side pot (pot sampingan) | Cip yang hanya boleh dimenangi stack besar; pemain all-in dikecualikan |
+| Side pot (pot sampingan) | Cip yang hanya boleh dimenangi stack besar; pemain yang all-in dengan jumlah lebih kecil dikecualikan |
 
 </div>
 
-==g:Sebaik sahaja anda all-in, anda dijamin dapat melihat semua kad komuniti yang berbaki.== Tiada siapa boleh bluff untuk menghalau anda daripada hand itu. Kad anda kekal hidup sehingga river.
+==g:Sebaik sahaja anda all-in dan di-call, anda dijamin dapat melihat semua kad komuniti yang berbaki.== Tiada siapa boleh bluff untuk menghalau anda daripada hand itu. Kad anda kekal hidup sehingga river.
 
 ---
 
@@ -59,17 +59,17 @@ Ada dua cara yang sah:
 
 **1. Isytihar secara lisan** — Sebut "all-in" dengan jelas supaya pengedar dan lawan mendengarnya. Ini kaedah paling selamat. Sebaik sahaja anda menyebutnya, anda terikat.
 
-**2. Tolak semua cip ke hadapan** — Sorong seluruh stack anda ke tengah dalam satu pergerakan yang kemas. Menolak cip sedikit demi sedikit boleh kelihatan seperti string bet, jadi gerakkan semuanya sekali gus.
+**2. Tolak semua cip ke hadapan** — Sorong seluruh stack anda ke tengah dalam satu pergerakan yang kemas. Menolak cip sedikit demi sedikit boleh kelihatan seperti string bet, jadi gerakkan semuanya sekali gus. ==r:Menolak cip sahaja tidak selalu mencukupi: jika anda sedang berdepan dengan bet dan setiap cip anda diperlukan hanya untuk call bet itu, tolakan tanpa kata dikira sebagai call, bukan all-in (Peraturan 45-A TDA 2024, Peraturan 92 tournament WSOP).== Pada masa lain, menolak cip terakhir anda **memang** dikira sebagai bet all-in (Peraturan 45-B TDA 2024) — satu-satunya pengecualian ialah satu cip terakhir yang besar ditolak tanpa kata ke dalam bet, yang hanya dikira sebagai call (Peraturan 44 TDA 2024).
 
 ![Showdown all-in Texas Hold'em — board K♠ 10♣ 7♦ 4♥ 2♣ dengan cip diasingkan kepada pot utama dan side pot yang berlabel](/images/holdem-all-in-declare.webp)
 
-==r:Jangan sesekali tolak satu cip ke hadapan tanpa berkata apa-apa — pengedar akan mengiranya sebagai nilai cip itu sahaja, bukan seluruh stack anda.== Sentiasa isytiharkan "all-in" dengan kuat, atau gerakkan seluruh stack anda sekali gus.
+==r:Jangan sesekali tolak satu cip ke hadapan tanpa berkata apa-apa — jika anda berdepan dengan bet, pengedar mengiranya sebagai call (jika tiada bet, sebagai nilai cip itu sahaja), bukan seluruh stack anda.== Sentiasa isytiharkan "all-in" dengan kuat — itulah satu-satunya cara yang tidak akan ditafsir sebagai tindakan lain.
 
 ---
 
 ## Bagaimana Side Pot Berfungsi dalam Poker? (Kenapa Pemain All-In Dihadkan)
 
-Pemain all-in hanya boleh menang taruhannya sendiri ditambah jumlah yang sama daripada setiap pemain lain yang masih dalam pot. Mana-mana cip yang dipertaruhkan melebihi itu membentuk **side pot** yang hanya menjadi milik pemain yang membiayainya.
+Pemain all-in hanya boleh menang taruhannya sendiri ditambah jumlah yang sama daripada setiap pemain lain yang masih dalam pot. Cip yang dipertaruhkan melebihi itu masuk ke **side pot** yang hanya menjadi milik pemain yang membiayainya — tetapi hanya jika dua pemain atau lebih memasukkannya. Jika hanya seorang pemain berada di atas had itu, tiada siapa yang boleh merebut side pot, dan lebihan itu terus dipulangkan kepadanya sebagai bet yang tidak di-call.
 
 ![Side pot selepas all-in Texas Hold'em — pengedar mengasingkan cip kepada pot utama dan side pot sementara Pemain A dihadkan](/images/holdem-all-in-side-pot.webp)
 
@@ -131,7 +131,7 @@ Blind $1/$2. Empat pemain melihat flop.
 Apa yang berlaku kepada Pemain A, dan kepada Pemain C yang belum bertindak lagi?
 
 - Pemain A sudah bertindak (bertaruh $10) dan kini hanya berdepan dengan raise yang tak lengkap. Oleh sebab all-in B sebanyak $14 adalah **kurang daripada satu raise penuh**, tindakan TIDAK dibuka semula untuk Pemain A. ==A hanya boleh call atau fold — dia tidak boleh re-raise.==
-- Pemain C belum bertindak lagi — **Pemain C masih boleh raise seperti biasa**.
+- Pemain C belum bertindak lagi — **Pemain C masih boleh raise**. Had pembukaan semula tidak pernah menyentuh pemain yang belum bertindak. Tetapi perhatikan saiznya: jika C raise, minimumnya ialah **jumlah keseluruhan** all-in B ditambah bet penuh terakhir — $14 + $10 = **$24**, bukan $20 yang sepatutnya menjadi raise penuh ke atas A (Peraturan Live Action WSOP 176). C masih boleh all-in dengan jumlah kurang daripada itu: minimum tersebut tidak mengikat pemain yang all-in (Peraturan Live Action 175).
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -182,7 +182,7 @@ Ambang raise minimum sentiasa merujuk kepada *bet atau raise penuh sah yang tera
 | Satu all-in ≥ raise penuh | ✅ Ya — semua boleh re-raise |
 | Beberapa all-in pendek, gabungan < raise penuh | ❌ Tidak |
 | Beberapa all-in pendek; kenaikan sejak tindakan terakhir pemain ≥ bet/raise penuh | ✅ Ya — untuk pemain itu sahaja |
-| Pemain yang BELUM bertindak | ✅ Sentiasa boleh raise (walau apa pun) |
+| Pemain yang BELUM bertindak | ✅ Had pembukaan semula tidak terpakai kepadanya — dia masih boleh raise, setakat yang dibenarkan oleh cipnya sendiri (dan dalam permainan limit, had bilangan raise yang ditetapkan rumah — Peraturan 48 TDA 2024) |
 
 </div>
 
@@ -211,7 +211,7 @@ Tidak boleh. Sebaik sahaja pemain all-in dihadkan, sebarang cip tambahan yang di
 
 ### Kesilapan 2: Tidak tahu peraturan hak re-raise
 
-All-in separa tidak memberi peluang kedua untuk re-raise kepada pemain yang **sudah bertindak** dalam pusingan itu — sesiapa yang belum bertindak masih boleh raise seperti biasa. Faham betul-betul peraturan ini dan pertikaman lidah dapat dielakkan sebelum ia bermula.
+All-in separa tidak memberi peluang kedua untuk re-raise kepada pemain yang **sudah bertindak** dalam pusingan itu — kecuali beberapa all-in pendek terkumpul sehingga salah seorang daripada mereka berdepan dengan sekurang-kurangnya satu raise penuh apabila giliran kembali kepadanya. Sesiapa yang belum bertindak masih boleh raise, pada jumlah minimum yang ditunjukkan di atas. Faham betul-betul peraturan ini dan pertikaman lidah dapat dielakkan sebelum ia bermula.
 
 ### Kesilapan 3: Menambah cip dari poket di tengah hand
 
@@ -219,7 +219,7 @@ Table stakes. Apa yang ada di atas meja itu sahaja yang boleh anda pertaruhkan. 
 
 ### Kesilapan 4: Membuang hand terlalu cepat
 
-Anda all-in untuk pot utama. Dua pemain lain bertarung untuk side pot. Jangan buang kad anda — hand anda masih hidup untuk pot utama. ==Sentiasa tunggu pengedar menyelesaikan setiap pot sebelum menyentuh kad anda.==
+Anda all-in untuk pot utama. Dua pemain lain bertarung untuk side pot. Dalam tournament, perkara ini selesai dengan sendirinya — sebaik sahaja pertaruhan mereka tamat, ==Peraturan 16 TDA 2024== mewajibkan setiap hand dibuka, termasuk hand anda. Dalam cash game tidak begitu: saya pernah melihat seorang pemain stack pendek membuang kadnya sebaik sahaja showdown side pot tidak memihak kepadanya — dia terlupa bahawa dia langsung tiada dalam pot itu, dan pot utama masih boleh dimenanginya. Sebaik sahaja pengedar menyapu kad itu ke dalam muck, kad itu tidak lagi dapat dikenal pasti — mati, dan pot utama jatuh ke tangan orang lain. (Hand yang masih jelas dapat dikenal pasti mungkin boleh diambil semula atas budi bicara floor, tetapi jangan sekali-kali bergantung pada itu.) Jangan buang kad anda — hand anda masih hidup untuk pot utama. ==Sentiasa tunggu pengedar menyelesaikan setiap pot sebelum menyentuh kad anda.==
 
 ### Kesilapan 5: All-in kerana geram
 
@@ -248,19 +248,19 @@ A. Dalam tournament, ya—apabila seorang pemain all-in dan semua pertaruhan sel
 
 **Q. Boleh ke buat "run it twice" dalam all-in poker?**
 
-A. Run it twice (mengedarkan baki kad komuniti dua kali dan membahagikan pot) dibenarkan dalam banyak cash game jika kedua-dua pemain bersetuju selepas all-in. Ia lazimnya tidak dibenarkan dalam tournament. Pilihan ini mesti dipersetujui sebelum baki kad komuniti diedarkan.
+A. Run it twice (mengedarkan baki kad komuniti dua kali dan membahagikan pot) dibenarkan dalam banyak cash game jika semua pemain yang masih dalam pot bersetuju selepas all-in — bukan dua orang sahaja (Peraturan Live Action WSOP 210). Ia lazimnya tidak dibenarkan dalam tournament. Pilihan ini mesti dipersetujui sebelum baki kad komuniti diedarkan.
 
 **Q. Apa sebenarnya peraturan "table stakes"?**
 
-A. Table stakes bermaksud anda hanya boleh mempertaruhkan cip yang ada di hadapan anda ketika hand bermula. Anda tidak boleh menambah wang setelah hand sedang berjalan. Ia melindungi kedua-dua pihak — anda tidak boleh dipaksa mempertaruhkan lebih daripada stack anda, dan lawan tidak boleh tiba-tiba bertaruh lebih daripada yang mampu anda tampung.
+A. Table stakes bermaksud anda hanya boleh mempertaruhkan cip yang ada di hadapan anda ketika hand bermula. Anda tidak boleh menambah wang setelah hand sedang berjalan. Ia melindungi kedua-dua pihak — anda tidak boleh dipaksa mempertaruhkan lebih daripada stack anda, dan apa sahaja yang dipertaruhkan lawan melebihi stack anda tidak boleh merugikan anda: ia masuk ke side pot atau dipulangkan sebagai bet yang tidak di-call.
 
 **Q. Kalau dua pemain all-in dengan jumlah berbeza, siapa tunjuk dahulu?**
 
-A. ==r:Dalam tournament, tiada susunan "siapa menunjukkan dahulu"==—apabila seorang pemain all-in dan pertaruhan selesai, semua hand yang masih hidup mesti segera ditunjukkan (Peraturan 16 TDA 2024). Dalam cash game, house rule terpakai; menurut WSOP 2026 B149, pemain side pot menunjukkan dahulu, dan dalam No-Limit yang tamat sebelum river, pemain all-in menunjukkan dahulu. Jumlah all-in sahaja tidak menentukan siapa yang bermula.
+A. ==r:Dalam tournament, tiada susunan "siapa menunjukkan dahulu"==—apabila seorang pemain all-in dan pertaruhan selesai, semua hand yang masih hidup mesti segera ditunjukkan (Peraturan 16 TDA 2024); peraturan yang menetapkan susunan menunjukkan kad, Peraturan 17 TDA 2024, hanya meliputi showdown tanpa all-in. Dalam cash game, house rule terpakai; menurut WSOP 2026 B149, pemain side pot menunjukkan dahulu, dan dalam No-Limit yang tamat sebelum river, pemain all-in menunjukkan dahulu. Jumlah all-in sahaja tidak menentukan siapa yang bermula.
 
 **Q. Adakah peraturan all-in berbeza antara tournament dan cash game?**
 
-A. Dalam tournament, apabila seorang pemain all-in dan pertaruhan selesai, semua hand yang masih hidup mesti segera ditunjukkan dan tidak boleh muck (Peraturan 16 TDA 2024). Dalam cash game, house rule serta susunan khusus bilik seperti WSOP 2026 B149 terpakai, jadi peluang untuk muck juga bergantung pada house rule. Run it twice lazim dalam banyak cash game dengan persetujuan, tetapi biasanya tidak dibenarkan dalam tournament.
+A. Dalam tournament, apabila seorang pemain all-in dan pertaruhan selesai, semua hand yang masih hidup mesti segera ditunjukkan dan tidak boleh muck (Peraturan 16 TDA 2024). Dalam cash game, house rule serta susunan khusus bilik seperti WSOP 2026 B149 terpakai, jadi peluang untuk muck juga bergantung pada house rule. Run it twice lazim dalam banyak cash game jika semua pemain yang masih dalam pot bersetuju, tetapi biasanya tidak dibenarkan dalam tournament.
 
 ---
 

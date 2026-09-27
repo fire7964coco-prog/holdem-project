@@ -3,19 +3,19 @@ import type { Post } from "../posts";
 export const POST: Post = {
   slug: "holdem-game-order",
   title: "Cara Main Texas Hold'em: Urutan Permainan Dari Blinds Hingga Showdown",
-  seoTitle: "Keliru Bila Giliran Bertaruh? — Urutan Permainan Texas Hold'em",
-  desc: "Terkaku bila giliran anda di meja Hold'em? Ini urutan penuh — preflop, flop, turn, river, showdown — dengan satu tangan sebenar langkah demi langkah.",
-  tldr: "Satu tangan Texas Hold'em berjalan begini: letak blinds → terima dua kad pemula → preflop → flop (3 kad) → turn (1 kad) → river (1 kad) → showdown, dengan empat pusingan pertaruhan kesemuanya.",
+  seoTitle: "Siapa Bertaruh Dulu dalam Texas Hold'em? — Urutan Permainan",
+  desc: "Giliran siapa — dan siapa bertaruh dulu? Urutan penuh Texas Hold'em: blinds, preflop, flop, turn, river, showdown, dan siapa bertindak dulu setiap pusingan.",
+  tldr: "Pada preflop, pemain di kiri big blind bertaruh dulu. Pada flop, turn dan river, giliran pertama ialah pemain aktif pertama di kiri butang — biasanya small blind. (Heads-up menterbalikkan urutan ini.) Tangan itu sendiri berjalan: blinds → kad pemula → preflop → flop → turn → river → showdown, dengan empat pusingan pertaruhan.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-09-21",
-  masterUpdated: "2026-07-02",
+  updated: "2026-09-27",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "16 minit",
   emoji: "🎬",
   image: "/images/blog-holdem-game-flow.webp",
   imageAlt: "Rajah urutan permainan Texas Hold'em — keenam-enam peringkat: blinds, preflop, flop, turn, river dan showdown",
-  tags: ["cara main texas holdem", "peraturan texas holdem", "urutan permainan poker", "preflop flop turn river", "pusingan pertaruhan poker", "siapa bertindak dulu dalam poker", "cara satu tangan poker berjalan", "showdown poker"],
+  tags: ["siapa bertaruh dulu dalam texas holdem", "siapa mula dulu dalam poker", "urutan pertaruhan poker", "urutan permainan texas holdem", "urutan permainan poker", "siapa bertindak dulu dalam poker", "preflop flop turn river", "showdown poker"],
   content: `
 Semua orang yang duduk untuk permainan Texas Hold'em pertama mereka tanya soalan yang sama: ==r:*"Kejap — giliran siapa sekarang, dan bila saya kena masukkan wang?"*== Anda tahu anda akan dapat kad. Yang anda tak tahu ialah bila nak bertaruh, bila kad tambahan akan dibuka, dan bagaimana pemenang sebenarnya ditentukan.
 
@@ -75,8 +75,8 @@ Aksi bermula dari pemain di kiri big blind dan bergerak mengikut arah jam. Bila 
 ### Tangan permulaan yang mantap untuk pemula
 
 - **Premium:** A♠A♥ (pocket aces), K♠K♥, Q♠Q♥, J♠J♥
-- **Kuat:** A♠K♥ ("Big Slick"), A♠Q♥, A♠J♥, 10♠10♥
-- **Ikut situasi:** 9♠9♥, 8♠8♥, K♠Q♥, K♠J♥
+- **Kuat:** A♠K♥ ("Big Slick"), A♠Q♥, 10♠10♥, 9♠9♥
+- **Ikut situasi:** A♠J♥, 8♠8♥, K♠Q♥, K♠J♥
 
 Yang mana satu antara ini boleh anda buka sebenarnya bergantung pada tempat duduk anda. Untuk carta penuh 169 tangan yang dipecahkan mengikut posisi, lihat [carta tangan permulaan Texas Hold'em](/ms/blog/holdem-starting-hands-chart).
 
@@ -99,7 +99,7 @@ Flop juga membuka satu pilihan baru: **check (cek)**. Kalau belum ada sesiapa be
 
 ## Peringkat 3 — Turn: Gambaran Semakin Jelas
 
-Selepas pusingan pertaruhan flop, satu lagi kad komuniti diedar — **turn**. Kini ada empat kad di atas meja.
+Selepas pusingan pertaruhan flop, satu lagi kad komuniti diedar — **turn** (juga dipanggil *fourth street*). Kini ada empat kad di atas meja.
 
 Turn ialah pusingan yang berat dari segi strategi:
 
@@ -113,7 +113,7 @@ Turn ialah pusingan yang berat dari segi strategi:
 
 ## Peringkat 4 — River: Kad Terakhir, Keputusan Terakhir
 
-Selepas pusingan pertaruhan turn, kad komuniti kelima dan terakhir dibuka — **river**. Kelima-lima kad komuniti kini sudah terbuka, dan tiada lagi maklumat baru yang akan datang.
+Selepas pusingan pertaruhan turn, kad komuniti kelima dan terakhir dibuka — **river** (juga dipanggil *fifth street*). Kelima-lima kad komuniti kini sudah terbuka, dan tiada lagi maklumat baru yang akan datang.
 
 Kesilapan klasik di river:
 
@@ -136,16 +136,18 @@ Peraturan showdown:
 - Setiap pemain membentuk **tangan lima kad terbaik** daripada dua kad pemula mereka dan lima kad komuniti.
 - Anda tak wajib guna kedua-dua kad pemula — boleh guna satu sahaja, malah boleh main board sepenuhnya (sifar kad pemula) kalau itulah lima kad terbaik anda.
 - Pemain yang membuat aksi agresif terakhir (bertaruh atau raise) tunjuk dulu; kalau river dicek oleh semua, pemain aktif pertama di kiri butang yang tunjuk dulu.
-- Pemain yang kalah boleh terus **muck** (fold tanpa menunjukkan kad).
+- Pemain yang kalah boleh terus **muck** (fold tanpa menunjukkan kad) — kecuali dalam all-in tournament: sebaik sahaja ada pemain all-in dan semua pertaruhan selesai, setiap tangan dibuka menghadap ke atas (TDA 2024 Rule 16 · WSOP Tournament Rule 70).
 - Tangan yang sama kuat **membahagi pot** ("chop") sama rata.
 
 Siapa yang wajib tunjuk dulu, bila anda boleh muck, dan adab berkaitan slow roll — semuanya dihuraikan penuh dalam [peraturan showdown](/ms/blog/holdem-showdown-rules).
 
 ---
 
-## Siapa Bertindak Dulu Pada Setiap Pusingan?
+## Siapa Bertaruh Dulu dalam Texas Hold'em?
 
-"Giliran siapa sekarang?" ada jawapan berbeza sebelum dan selepas flop — dan perubahan tunggal itulah enjin di sebalik strategi posisi.
+**Dua tempat duduk memegang gelaran "dulu", dan yang mana satu bertugas bergantung pada sama ada flop sudah dibuka. Sebelum flop, ia ialah UTG — "under the gun", tempat duduk betul-betul di kiri big blind — tepat kerana blinds sudah pun memasukkan wang dan dapat bertindak paling akhir. Sebaik sahaja flop dibuka, keistimewaan itu habis, jadi aksi bermula semula pada pemain aktif pertama di kiri butang, dan butang menutup setiap pusingan dari situ.**
+
+Sebab itulah "Giliran siapa sekarang?" ada jawapan berbeza sebelum dan selepas flop — dan perubahan tunggal itulah enjin di sebalik strategi posisi.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -243,7 +245,7 @@ Pengajarannya: ==r:bila river memasangkan tangan A menjadi Two Pair, ia *terasa*
 
 ---
 
-## 7 Aksi Pertaruhan, Dihuraikan Sepenuhnya
+## 7 Langkah Yang Boleh Anda Buat, Dihuraikan Sepenuhnya
 
 ![Aksi pertaruhan poker — check, call, fold, bet, raise, re-raise dan all-in](/images/holdem-betting-options-guide.webp "Setiap aksi pertaruhan yang boleh anda buat dalam Texas Hold'em")
 
@@ -253,17 +255,17 @@ Ini semua aksi yang ada di meja — bahagian yang paling kerap mengelirukan pemu
 
 | Aksi | Apa fungsinya | Bila ia tersedia |
 |------|------|------|
-| Fold | Lepaskan tangan, buang kad anda | Bila-bila masa |
+| Fold | Lepaskan tangan, buang kad anda | Mana-mana pusingan — ikut giliran |
 | Check (cek) | Lepaskan giliran tanpa bertaruh | Hanya bila tiada pertaruhan di depan anda |
 | Call | Samai pertaruhan semasa | Bila ada pertaruhan di depan anda |
 | Bet | Buat pertaruhan pertama dalam pusingan | Bila belum ada sesiapa bertaruh |
 | Raise | Naikkan melebihi pertaruhan semasa | Bila ada pertaruhan di depan anda |
 | Re-raise (3-bet) | Naikkan di atas satu kenaikan | Bila ada kenaikan di depan anda |
-| All-in | Masukkan semua cip anda | Bila-bila masa |
+| All-in | Masukkan semua cip anda | Mana-mana pusingan — ikut giliran, sebagai bet, call atau raise |
 
 </div>
 
-==r:**Penting:** pada preflop anda tak boleh cek — dengan satu pengecualian.== Big blind sudah dikira pertaruhan hidup, jadi semua orang lain mesti call, raise atau fold. ==Hanya big blind sahaja boleh cek kalau tiada sesiapa yang raise; bagi yang lain, cek baru bermula pada flop.==
+==r:**Penting:** pada preflop anda tak boleh cek — kecuali pertaruhan wajib anda sendiri sudah pun menjadi pertaruhan hidup.== Big blind ialah pertaruhan hidup, jadi setiap posisi yang pertaruhan wajibnya sendiri belum menjadi pertaruhan hidup mesti call, raise atau fold. ==Big blind boleh cek kalau tiada sesiapa yang raise atau straddle — begitu juga pemain yang live straddle-nya belum di-raise atau di-re-straddle, kerana pertaruhan itu ialah bet pembukaannya dan dia bertindak paling akhir pada preflop (WSOP Live Action Rules 159 · 165); bagi yang lain, cek bermula pada flop.==
 
 Untuk panduan keputusan lebih mendalam tentang bila nak guna setiap langkah — lengkap dengan jadual keputusan check-call-raise-fold — lihat [aksi pertaruhan dihuraikan](/ms/blog/holdem-betting-actions).
 
@@ -296,11 +298,11 @@ Mahukan pecahan penuh — termasuk bagaimana kicker dan seri menentukan pemenang
 
 ## 5 Kesilapan Yang Setiap Pemula Wajib Elakkan
 
-Anda boleh hafal urutan permainan tetapi masih terus rugi cip kalau buat kesilapan ini.
+Anda boleh hafal urutan permainan tetapi masih terus rugi cip kalau buat kesilapan ini. Saya pernah lihat setiap satunya membuatkan pemula kehilangan pot di depan mata — selalunya lebih daripada sekali dalam satu sesi.
 
 ### 1. Main hampir setiap tangan
 
-"Saja nak tengok flop" ialah formula rugi jangka panjang. Pemain kuat hanya main 15–25% tangan dan fold selebihnya tanpa ragu. Kalau anda call preflop dengan mana-mana dua kad, anda sebenarnya membayar untuk kalah.
+"Saja nak tengok flop" ialah formula rugi jangka panjang — inilah leak paling biasa yang saya lihat di meja pertama seorang pemain baru. Pemain kuat hanya main 15–25% tangan dan fold selebihnya tanpa ragu. Kalau anda call preflop dengan mana-mana dua kad, anda sebenarnya membayar untuk kalah.
 
 ### 2. Mengabaikan posisi
 
@@ -316,7 +318,7 @@ Kalau anda cek secara pasif sepanjang jalan dan tiba-tiba sorong semua di river,
 
 ### 5. Tersalah baca tangan sendiri di showdown
 
-Kesilapan klasik pemula: fikir "saya ada Two Pair!" sedangkan sebenarnya cuma satu Pair. Berlatih memilih **lima kad terbaik** daripada dua kad pemula anda dan lima kad di meja sehingga jadi automatik.
+Kesilapan klasik pemula: fikir "saya ada Two Pair!" sedangkan sebenarnya cuma satu Pair. Saya pernah lihat pemain dengan bangga membuka apa yang mereka yakin satu Straight, rupa-rupanya kad itu tidak bersambung — meja terus senyap, dan pot beralih ke arah lain. Berlatih memilih **lima kad terbaik** daripada dua kad pemula anda dan lima kad di meja sehingga jadi automatik.
 
 ---
 
@@ -344,6 +346,18 @@ Texas Hold'em mengambil masa tiga puluh minit untuk dipelajari dan seumur hidup 
 
 A. Letak blinds → terima dua kad pemula → pertaruhan preflop → buka flop (3 kad) dan bertaruh → turn (1 kad) dan bertaruh → river (kad terakhir) dan bertaruh → showdown (lima kad terbaik dibandingkan).
 
+**Q. Siapa mula dulu dalam poker?**
+
+A. Ia bergantung pada "dulu" yang mana satu anda maksudkan, dan itulah sebabnya soalan ini selalu mengelirukan. Tiga saat berbeza menuntut perkataan itu dalam satu tangan: yang pertama *meletakkan* pertaruhan wajib (small blind), yang pertama *bertindak* pada preflop (UTG, betul-betul di kiri big blind), dan yang pertama bertindak selepas flop dibuka (kembali kepada small blind). Jadi jawapannya bertukar di tengah tangan — UTG membuka pusingan preflop, kemudian small blind membuka setiap pusingan selepasnya. (Heads-up menterbalikkan urutan ini — lihat soalan seterusnya.)
+
+**Q. Siapa bertaruh dulu selepas flop?**
+
+A. Pemain aktif pertama di kiri butang — di meja penuh, itulah small blind. Kalau small blind sudah fold, giliran beralih kepada big blind, kemudian seterusnya mengikut arah jam. Tempat duduk yang sama memulakan turn dan river juga; hanya preflop yang bermula di tempat lain. Heads-up ialah pengecualian: di situ butang bertindak dulu pada preflop dan paling akhir pada setiap pusingan selepasnya.
+
+**Q. Siapa tunjuk kad dulu di showdown?**
+
+A. Sesiapa yang membuat aksi agresif terakhir — bet atau raise terakhir di river — wajib tunjuk dulu. Kalau river dicek oleh semua tanpa sebarang pertaruhan, pemain aktif pertama di kiri butang tunjuk dulu dan yang lain menyusul mengikut arah jam. Pemain yang tahu dirinya kalah boleh muck tanpa menunjukkan kad — kecuali ada pemain all-in dalam tournament, di mana setiap tangan mesti dibuka (TDA 2024 Rule 16).
+
 **Q. Apa beza antara preflop dan flop?**
 
 A. Preflop ialah sebelum sebarang kad komuniti dibuka — anda buat keputusan berdasarkan dua kad pemula anda sahaja. Flop pula selepas tiga kad komuniti dibuka, dan di situ anda membaca tangan semasa anda sekali gus potensi draw anda.
@@ -367,6 +381,10 @@ A. All-in bermaksud mempertaruhkan semua cip yang anda ada. Gunakannya dengan ta
 **Q. Berapa pusingan pertaruhan ada dalam satu tangan?**
 
 A. Empat: preflop, flop, turn dan river. Blinds ialah pertaruhan wajib, dan pada showdown tiada lagi pertaruhan.
+
+**Q. Kenapa pengedar buang satu kad (burn), dan berapa kad yang dibuang?**
+
+A. Sebelum mengedar flop, turn dan river, pengedar membuang kad teratas dek secara tertutup — itulah "kad burn". Jadi ada tiga kad burn dalam satu tangan, satu sebelum setiap pusingan kad komuniti. Burn melindungi permainan: kalau kad teratas bertanda atau terbuka secara tidak sengaja, pemain boleh mendapat maklumat tentang kad yang akan datang, jadi kad itu dikeluarkan daripada permainan dahulu.
 
 ---
 

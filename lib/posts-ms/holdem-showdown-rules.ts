@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Dalam showdown kejohanan bukan all-in, last river aggressor menunjukkan kad dahulu; jika semua pemain cek di river, pemain aktif pertama di kiri butang. Apabila ada all-in dan semua pertaruhan selesai, semua tangan yang masih hidup mesti segera ditunjukkan. River caller yang masih memegang atau sudah menunjukkan kadnya boleh meminta tangan last aggressor. Cash game mengikut house rule.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-26",
-  masterUpdated: "2026-07-12",
+  updated: "2026-09-27",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 minit",
   emoji: "🃏",
@@ -41,7 +41,7 @@ Peraturannya bergantung pada bagaimana pusingan pertaruhan terakhir berakhir (un
 |--------------------|-----------------|
 | Kejohanan bukan all-in; ada pemain bertaruh atau raise di river | ==Pemain terakhir yang bertaruh atau raise== buka dulu |
 | Semua pemain cek di river | Pemain aktif pertama di kiri butang pengedar buka dulu |
-| Kejohanan; ada all-in dan semua pertaruhan selesai | Semua tangan yang masih hidup segera ditunjukkan sebelum runout diteruskan; tiada muck |
+| Kejohanan; ada all-in dan semua pertaruhan selesai | Semua tangan yang masih hidup segera ditunjukkan sebelum runout diteruskan; tiada muck. Cash game: jika ada side pot, pemain side pot menunjukkan dahulu; dan dalam No-Limit, pemain yang all-in membuka kad dahulu (WSOP 2026 B149) |
 
 </div>
 
@@ -57,11 +57,11 @@ Boleh — **jika anda kalah**.
 
 Sebaik sahaja last aggressor menunjukkan tangannya, pemain lain boleh memilih:
 - **Tunjuk tangan mereka** jika mereka rasa mereka menang
-- **Muck menghadap ke bawah** jika jelas kalah—tetapi mungkin ada permintaan sah untuk melihat tangan. Dalam kejohanan, apabila ada all-in dan semua pertaruhan selesai, semua tangan yang masih hidup mesti segera ditunjukkan dan tiada muck (TDA 2024 Rule 16). Cash game mengikut house rule.
+- **Muck menghadap ke bawah** jika jelas kalah—tetapi mungkin ada permintaan sah untuk melihat tangan. Dalam kejohanan, apabila ada all-in dan semua pertaruhan selesai, semua tangan yang masih hidup mesti segera ditunjukkan dan tiada muck (TDA 2024 Rule 16). Selagi pemain lain masih ada cip dan boleh bertaruh, semua kad kekal tertutup. Cash game mengikut house rule, dan kebanyakannya membenarkan pemain yang call untuk muck.
 
-==r:Pengecualian penting:== menurut TDA 2024 Rule 18, river caller yang masih memegang atau sudah menunjukkan kadnya mempunyai hak yang tidak boleh dinafikan untuk melihat tangan last aggressor. Permintaan lain terpulang kepada pengarah kejohanan; muck menghadap ke bawah membatalkan hak itu. Dalam cash game, house rule terpakai dan floor menilai konteks collusion. Ini berbeza daripada "show one, show all".
+==r:Pengecualian penting:== menurut TDA 2024 Rule 18, river caller yang masih memegang atau sudah menunjukkan kadnya mempunyai hak yang tidak boleh dinafikan untuk melihat tangan last aggressor. Permintaan lain terpulang kepada pengarah kejohanan; muck menghadap ke bawah membatalkan hak itu. Dalam cash game, house rule terpakai, dan ia tidak semestinya lebih longgar: di bawah peraturan WSOP Live Action, permintaan untuk melihat tangan yang belum didedahkan memerlukan syak collusion **dan** kehadiran floor (WSOP 2026 B147). Ini berbeza daripada "show one, show all" — jika anda sukarela menunjukkan kad kepada seorang pemain, semua orang di meja berhak melihatnya.
 
-Peraturan praktikal: dalam kejohanan bukan all-in, ==last aggressor menunjukkan kad—termasuk bluff yang di-call.== River caller yang masih memegang atau sudah menunjukkan kadnya boleh meminta tangan itu. Dalam cash game, ikut house rule dan jangan muck sebelum anda pasti kalah.
+Peraturan praktikal: dalam kejohanan bukan all-in, ==last aggressor menunjukkan kad—termasuk bluff yang di-call.== Muck menghadap ke bawah ialah pilihan pemain yang call, selepas dia melihat tangan pemain yang bertaruh. Jika anda sebagai pemain yang bertaruh cepat-cepat muck, anda rugi dua kali: dalam kejohanan, pemain yang call dan membayar untuk melihatnya tetap boleh menuntut tangan anda (TDA 2024 Rule 18) — dalam cash game WSOP dia tidak boleh, kecuali ada syak collusion dan floor hadir (WSOP 2026 B147) — dan kerana cards speak, banyak pot telah dibuang oleh pemain yang ace-high mereka sebenarnya sedang mendahului. Dalam cash game, ikut house rule dan jangan muck sebelum anda pasti kalah.
 
 ---
 
@@ -77,19 +77,19 @@ Contoh: Butang, small blind dan big blind sampai ke river. SB cek, BB cek, Butan
 
 ## Peraturan Showdown All-In — Adakah Pemain All-In Buka Dulu?
 
-Dalam kejohanan, apabila ada all-in dan semua pertaruhan selesai, semua tangan yang masih hidup mesti **segera ditunjukkan** sebelum board diteruskan (TDA 2024 Rule 16). Dalam cash game, house rule terpakai dan WSOP 2026 B149 mempunyai susunan berasingan.
+Dalam kejohanan, apabila ada all-in dan semua pertaruhan selesai, semua tangan yang masih hidup mesti **segera ditunjukkan** sebelum board diteruskan (TDA 2024 Rule 16). Dalam cash game, house rule terpakai, dan peraturan WSOP Live Action menetapkan susunan yang berbeza: **dalam No-Limit**, jika pertaruhan tamat sebelum river, pemain yang all-in bertanggungjawab membuka kad dahulu; dan dalam mana-mana cash game yang ada side pot, pemain yang bersaing untuk side pot menunjukkan kad sebelum pemain yang all-in untuk pot utama sahaja (WSOP 2026 B149).
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Senario all-in | Peraturan showdown |
 |----------------|---------------|
-| Kejohanan; pemain all-in, yang lain call, semua pertaruhan selesai | Semua tangan yang masih hidup segera ditunjukkan sebelum runout; tiada muck |
-| Kejohanan; pertaruhan all-in di river di-call | Semua tangan yang masih hidup segera ditunjukkan; jangan tunggu susunan siapa buka dahulu |
+| Pemain all-in pada street lebih awal, yang lain call, semua pertaruhan selesai | Kejohanan: semua tangan yang masih hidup segera ditunjukkan sebelum runout; tiada muck. Cash game: jika ada side pot, pemain side pot menunjukkan dahulu; dan dalam No-Limit, pemain yang all-in membuka kad dahulu (WSOP 2026 B149) |
+| Pertaruhan all-in di river di-call | Cash game: pemain yang all-in membuka kad dahulu sebagai last aggressor. Kejohanan: tiada susunan siapa buka dahulu — di bawah TDA 2024 Rule 16 semua tangan ditunjukkan serentak dan ==r:tiada sesiapa boleh muck di sini== |
 | Beberapa all-in dan side pot, semua pertaruhan selesai | Semua tangan yang masih hidup ditunjukkan; setiap pot diselesaikan berasingan |
 
 </div>
 
-Satu perincian: **side pot dibayar** dahulu, tetapi susunan pembayaran berbeza daripada susunan menunjukkan kad. Dalam kejohanan, semua tangan yang masih hidup ditunjukkan apabila semua pertaruhan selesai. Dalam cash game WSOP 2026 B149, pemain side pot menunjukkan dahulu; dalam No-Limit yang tamat sebelum river, pemain all-in menunjukkan dahulu.
+Satu perincian: **side pot dibayar** dahulu, tetapi susunan pembayaran berbeza daripada susunan menunjukkan kad. Dalam kejohanan, semua tangan yang masih hidup ditunjukkan apabila semua pertaruhan selesai; ilustrasi TDA 2024 untuk Rule 16 menyatakannya dengan jelas: *jangan* tunggu side pot dibahagikan sebelum membuka tangan pemain all-in. Dalam cash game WSOP 2026 B149, pemain side pot menunjukkan dahulu; dalam No-Limit yang tamat sebelum river, pemain all-in menunjukkan dahulu.
 
 Untuk cara side pot dibina dan dibayar apabila pemain all-in, lihat [peraturan all-in dan side pot](/ms/blog/holdem-all-in-rules); untuk pot yang dibahagi, lihat [peraturan split pot dan chop](/ms/blog/holdem-split-pot-rules).
 
@@ -135,21 +135,23 @@ Inilah salah satu sebab poker menarik. Tangan terbaik tidak selalu menang — or
 
 ## Etika Showdown — Kesilapan Biasa Pemain Baru
 
+Tiada apa yang merosakkan suasana meja lebih cepat daripada showdown yang dikendalikan dengan salah. Kebanyakannya bukan soal peraturan — ia tabiat yang tidak pernah diajar kepada pemain baru. Inilah empat perkara yang paling kerap saya betulkan.
+
 ### Kesilapan 1: Menunggu pemain yang call buka dulu
 
-Anda bertaruh di river. Ada yang call. Anda kaku dan menunggu dia tunjuk. Itu terbalik. ==Anda yang buka dulu — anda last aggressor.== Menunggu kelihatan seperti slow roll walaupun bukan.
+Anda bertaruh di river. Ada yang call. Anda kaku dan menunggu dia tunjuk. Itu terbalik. ==Anda yang buka dulu — anda last aggressor.== Menunggu kelihatan seperti slow roll walaupun bukan — saya pernah melihat suasana permainan santai antara kawan menjadi dingin selama satu pusingan penuh kerana seorang pemain asyik membiarkan pemain yang call berdebar-debar sebelum membuka tangan pemenangnya.
 
 ### Kesilapan 2: Muck sebelum pengedar membaca tangan
 
-Anda menolak kad menghadap ke bawah. Jika kesilapan dikesan sebelum pengedar mengambilnya, atau ketika kad masih 100% boleh dikenal pasti dan diambil semula, floor boleh menunjukkan tangan itu. Selepas kad bercampur dalam muck atau tidak lagi pasti boleh dikenal pasti dan diambil semula, tangan itu mati. ==Jangan muck sehingga anda betul-betul pasti.==
+Anda menolak kad menghadap ke bawah. Jika kesilapan dikesan sebelum pengedar mengambilnya, atau ketika kad masih 100% boleh dikenal pasti dan diambil semula, floor boleh menunjukkan tangan itu. Selepas kad bercampur dalam muck atau tidak lagi pasti boleh dikenal pasti dan diambil semula, tangan itu mati, dan pot hampir pasti hilang — tetapi panggil floor sebelum anda berputus asa: peraturan kejohanan WSOP membenarkan pihak pengurusan mengambil semula tangan yang masih jelas boleh dikenal pasti, dan usaha tambahan dibuat jika muck itu berpunca daripada kesilapan pengedar atau maklumat yang salah (WSOP Tournament Rules 109 dan 110). ==Jangan muck sehingga anda betul-betul pasti.== Biarkan pengedar membaca kedua-dua tangan.
 
 ### Kesilapan 3: Mendesak untuk melihat setiap tangan yang di-call
 
-Dalam kejohanan, river caller yang masih memegang atau sudah menunjukkan kadnya boleh meminta tangan last aggressor (TDA 2024 Rule 18); permintaan lain ialah keputusan floor. Hak yang tidak boleh dinafikan itu hilang selepas muck menghadap ke bawah. Dalam cash game, house rule terpakai; WSOP 2026 B147 meletakkan permintaan ini dalam konteks keputusan floor dan collusion.
+Dalam kejohanan, river caller yang masih memegang atau sudah menunjukkan kadnya boleh meminta tangan last aggressor (TDA 2024 Rule 18). Hak yang tidak boleh dinafikan itu hilang selepas muck menghadap ke bawah (TDA 2024 Rule 18-A). Permintaan lain — termasuk tangan yang tidak pernah di-call atau river yang tiada pertaruhan — terpulang kepada budi bicara pengarah, dan itu tidak sama dengan ditolak (TDA 2024 Rule 18-B). Tangan yang fold mati sebaik sahaja masuk ke muck, dan hanya tangan yang masih jelas boleh dikenal pasti boleh diambil semula (WSOP Tournament Rule 109). Dalam cash game, house rule terpakai; WSOP 2026 B147 meletakkan permintaan ini dalam konteks keputusan floor dan collusion. Peraturan permintaan ini wujud untuk mencegah collusion, bukan untuk memuaskan rasa ingin tahu, dan menyalahgunakannya dianggap biadab. Gunakan dengan berhemah.
 
 ### Kesilapan 4: Tidak tahu anda boleh tunjuk lebih awal
 
-Selepas pertaruhan selesai, anda boleh menunjukkan kad lebih awal semasa showdown. Tetapi menunjukkan kad ketika masih ada action akan dikenakan penalti di bawah ==WSOP Tournament Rules 2026 Rule 117==; ia tidak mematikan tangan secara automatik. Pastikan semua pertaruhan selesai sebelum menunjukkan kad.
+Selepas pertaruhan selesai, anda boleh menunjukkan kad lebih awal semasa showdown. Tetapi menunjukkan kad ketika masih ada action akan dikenakan penalti di bawah ==WSOP Tournament Rules 2026 Rule 117== (buku peraturan Live Action menomborkan klausanya secara berbeza); ia tidak mematikan tangan secara automatik. Pastikan semua pertaruhan selesai sebelum menunjukkan kad.
 
 ---
 
@@ -166,11 +168,11 @@ A. Dalam kejohanan bukan all-in, last aggressor pada pusingan terakhir menunjukk
 
 **Q. Perlukah anda tunjuk kad jika di-call semasa showdown?**
 
-A. Dalam kejohanan bukan all-in, last river aggressor menunjukkan kad dahulu apabila di-call. River caller yang masih memegang atau sudah menunjukkan kadnya boleh meminta tangan itu (TDA 2024 Rule 18); hak itu hilang selepas muck menghadap ke bawah. Peraturan all-in dan cash game adalah berasingan.
+A. Dalam kejohanan bukan all-in, last river aggressor menunjukkan kad dahulu apabila di-call. River caller yang masih memegang atau sudah menunjukkan kadnya boleh meminta tangan itu (TDA 2024 Rule 18); hak itu hilang selepas muck menghadap ke bawah, dan hak itu hanya meliputi tangan last aggressor. Permintaan lain terpulang kepada budi bicara pengarah. Pengecualiannya ialah all-in dalam kejohanan: di bawah TDA 2024 Rule 16, pemain yang call juga mesti menunjukkan kad. Peraturan cash game adalah berasingan.
 
 **Q. Boleh muck semasa showdown tanpa tunjuk kad?**
 
-A. Dalam showdown bukan all-in, anda boleh muck jika jelas kalah. Pengecualiannya ialah peraturan kejohanan: jika anda membuat bet terakhir di river dan di-call, pemain yang membayar untuk melihat tangan anda boleh menuntutnya (TDA 2024 Rule 18-B — dalam cash game WSOP, dia tidak boleh berbuat demikian tanpa syak collusion). Dalam kejohanan yang ada all-in dan semua pertaruhan selesai, semua tangan yang masih hidup mesti ditunjukkan. Jangan muck sebelum pengedar membaca tangan jika ada keraguan.
+A. Dalam showdown bukan all-in, anda boleh muck jika jelas kalah. Pengecualiannya ialah peraturan kejohanan: jika anda membuat bet terakhir di river dan di-call, pemain yang membayar untuk melihat tangan anda boleh menuntutnya (TDA 2024 Rule 18-B — dalam cash game WSOP, dia tidak boleh berbuat demikian tanpa syak collusion). Dalam kejohanan yang ada all-in dan semua pertaruhan selesai, semua tangan yang masih hidup dalam pot utama dan side pot mesti ditunjukkan — tiada sesiapa boleh muck (TDA 2024 Rule 16). Jangan muck sebelum pengedar membaca tangan jika ada keraguan.
 
 **Q. Apa itu slow roll dalam poker dan kenapa ia buruk?**
 
@@ -178,7 +180,7 @@ A. Slow roll ialah sengaja melengahkan menunjukkan tangan pemenang yang anda sud
 
 **Q. Dalam situasi all-in, siapa yang tunjuk kad dulu?**
 
-A. Dalam kejohanan, semua tangan belum ditunjukkan jika pertaruhan side pot masih berjalan; apabila semua pertaruhan selesai, semua tangan yang masih hidup segera ditunjukkan. Dalam cash game WSOP 2026 B149, pemain side pot menunjukkan dahulu; dalam No-Limit yang tamat sebelum river, pemain all-in menunjukkan dahulu, jika tidak susunan river digunakan.
+A. Dalam kejohanan, semua tangan belum ditunjukkan jika pertaruhan side pot masih berjalan; apabila semua pertaruhan selesai, semua tangan yang masih hidup segera ditunjukkan — sebelum kad komuniti selebihnya diedarkan (TDA 2024 Rule 16). Jika ada side pot, ia dibayar dahulu dan pot utama selepasnya — tetapi kad pemain all-in sudah terbuka jauh lebih awal. Dalam cash game WSOP 2026 B149, pemain side pot menunjukkan dahulu; dalam No-Limit yang tamat sebelum river, pemain all-in menunjukkan dahulu, jika tidak susunan river digunakan.
 
 **Q. Apa maksud "cards speak" dalam poker?**
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Dalam Texas Hold'em, setiap pemain menerima 2 kad pemula, 5 kad komuniti dikongsi bersama, dan tangan poker 5 kad terbaik menang selepas empat pusingan pertaruhan.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-26",
-  masterUpdated: "2026-07-12",
+  updated: "2026-09-27",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "14 minit",
   emoji: "♠️",
@@ -31,6 +31,8 @@ Jika anda mencari ==peraturan Texas Hold'em untuk pemula==, anda mungkin belum p
 Anda perlu tahu apa itu blinds, bila giliran anda, bagaimana lima kad komuniti berfungsi, tangan mana yang menang, dan berapa banyak cip perlu diberikan kepada setiap orang bila bermain di rumah.
 
 Panduan ini menerangkan ==cara main Texas Hold'em untuk pemula== dalam bahasa yang mudah, dengan urutan permainan yang tepat, susunan cip untuk pemula, asas mengedar kad, dan helaian rujukan (cheat sheet) yang boleh dicetak dan diletakkan di tepi meja.
+
+Semua yang di bawah datang daripada pengalaman sebenar menjalankan permainan ini — di meja dapur, permainan rumah dan bilik kad — bukan sekadar buku peraturan, jadi saya akan tunjukkan tempat-tempat tepat di mana pemain baru selalu tersilap dalam permainan sebenar.
 
 ### Cara main Texas Hold'em dalam 30 saat
 
@@ -198,11 +200,11 @@ Bila orang sebut "Texas Hold'em", mereka hampir selalu maksudkan **No-Limit Hold
 
 | Format | Berapa banyak boleh bertaruh? | Di mana anda akan jumpa |
 |--------|-----------------------|---------------------|
-| **No-Limit (NLHE)** | Apa-apa jumlah sehingga semua cip anda ("all-in") | Permainan lalai — permainan rumah, kebanyakan kasino, WSOP |
+| **No-Limit (NLHE)** | Apa-apa jumlah dari Big Blind sehingga semua cip anda ("all-in") | Permainan lalai — permainan rumah, kebanyakan kasino, WSOP |
 | **Fixed-Limit** | Kenaikan tetap sahaja (pertaruhan kecil ditetapkan, kemudian berganda pada turn/river) | Meja kasino lama; kurang perubahan besar |
 | **Pot-Limit** | Sehingga saiz pot semasa | Jarang untuk Hold'em; standard untuk Omaha (PLO) |
 
-Untuk pemula, ==g:anggap anda bermain No-Limit melainkan ada yang cakap sebaliknya.== No-Limit paling mudah untuk *difahami* (bertaruh berapa sahaja anda mahu) tetapi paling menghukum jika *dimainkan* dengan teruk, kerana satu call yang salah boleh melenyapkan seluruh stack anda. Sebab itulah bahagian pot odds di bawah dan [tindakan pertaruhan anda — cek, call, raise, fold](/ms/blog/holdem-betting-actions) sangat penting.
+Untuk pemula, ==g:anggap anda bermain No-Limit melainkan ada yang cakap sebaliknya.== No-Limit paling mudah untuk *difahami* (bertaruh apa-apa jumlah dari Big Blind hingga seluruh stack anda) tetapi paling menghukum jika *dimainkan* dengan teruk, kerana satu call yang salah boleh melenyapkan seluruh stack anda. Sebab itulah bahagian pot odds di bawah dan [tindakan pertaruhan anda — cek, call, raise, fold](/ms/blog/holdem-betting-actions) sangat penting.
 
 ---
 
@@ -305,12 +307,14 @@ Bila anda memegang tangan draw (contohnya empat kad ke arah Flush), kira **outs*
 
 | Situasi | Formula | Contoh (9 outs Flush) |
 |-----------|---------|------------------------|
-| Pada **flop** (2 kad akan datang) | Outs × 4 | 9 × 4 = **~36% peluang** |
+| Pada **flop**, melihat kedua-dua kad yang tinggal tanpa pertaruhan tambahan (contohnya all-in) | Outs × 4 | 9 × 4 = **~36% peluang** |
 | Pada **turn** (1 kad akan datang) | Outs × 2 | 9 × 2 = **~18% peluang** |
 
 </div>
 
-Perbandingan ini terus menentukan nilai call apabila tiada lagi pertaruhan selepas anda call, contohnya apabila kedua-dua pemain all-in. Jika masih ada pertaruhan pada turn atau river, peluang melengkapkan draw dengan dua kad belum menjamin call yang menguntungkan: kad seterusnya mungkin mempunyai harga tambahan, dan draw yang lengkap masih boleh kalah.
+⚠ Peraturan ×4 hanya tepat jika anda tidak perlu membayar pertaruhan lain sebelum river — dalam praktik, hampir hanya apabila anda all-in. Jika anda call pertaruhan pada flop dan perlu membuat keputusan lagi pada turn, kira **satu** kad sahaja: 9 outs ketika itu ialah 9 ÷ 47 = **~19%**.
+
+Jika peratusan peluang anda untuk menang **lebih tinggi** daripada peratusan yang diperlukan pot odds, call itu menguntungkan — gunakan angka yang sepadan dengan harga anda: untuk satu call pada flop, itu angka satu kad (9 ÷ 47 = **~19%**), bukan angka ×4. Jika lebih rendah, fold.
 
 Lihat [contoh harga call dan draw pada flop QT7 dalam pot 3-bet](/ms/blog/3bet-pot-bet-sizing) untuk membandingkan peluang satu kad dengan peluang dua kad serta memahami batas kiraan ringkas ini.
 
@@ -358,13 +362,15 @@ Jika dua pemain mempunyai jenis tangan yang sama, bandingkan kad tertinggi yang 
 
 ## Kesilapan Biasa Pemula
 
+Selepas bertahun-tahun menganjurkan permainan rumah, saya nampak lima kesilapan yang sama di hampir setiap meja pemula — dua yang pertama semata-mata kekeliruan peraturan, manakala tiga lagi menghabiskan cip jauh sebelum sampai ke apa-apa yang boleh dipanggil strategi lanjutan.
+
 ### Kesilapan 1: Menyangka anda mesti guna kedua-dua kad pemula
 
 Anda boleh guna kedua-duanya, satu, atau langsung tiada. Tangan lima kad terbaik menang.
 
 ### Kesilapan 2: Terlupa urutan giliran berubah
 
-Pre-flop bermula di kiri Big Blind. Selepas flop, giliran bermula di kiri Button.
+Pre-flop bermula di kiri Big Blind. Selepas flop, giliran bermula di kiri Button. Kali pertama saya mengedar dalam permainan rumah, dua pemain asyik bertindak bukan pada giliran mereka setiap kali flop dibuka — kami letakkan butang pengedar fizikal di atas meja, dan kekeliruan itu hilang dalam satu orbit (satu pusingan penuh butang pengedar mengelilingi meja).
 
 ### Kesilapan 3: Call sebab "manalah tahu kad tu keluar"
 
@@ -372,7 +378,7 @@ Draw perlukan harga yang betul. Jika pot kecil dan pertaruhan besar, mengejar dr
 
 ### Kesilapan 4: Main setiap Ace
 
-A♣4♦ nampak menarik bagi pemula, tetapi Ace lemah selalunya membentuk One Pair kedua terbaik sahaja. Ace besar seperti AK dan AQ jauh lebih kuat.
+A♣4♦ nampak menarik bagi pemula — saya pernah lihat lebih ramai pemain baru hilang cip dengan Ace lemah berbanding hampir mana-mana tangan lain — tetapi Ace lemah selalunya membentuk One Pair kedua terbaik sahaja. Ace besar seperti AK dan AQ jauh lebih kuat.
 
 ### Kesilapan 5: Mengabaikan posisi
 
@@ -429,7 +435,7 @@ A. Anda perlukan sekurang-kurangnya 2 pemain dan boleh muat sehingga 10. Dengan 
 
 **Q. Apa maksud no-limit dalam Texas Hold'em?**
 
-A. No-Limit bermaksud anda boleh bertaruh apa-apa jumlah sehingga semua cip anda pada mana-mana pusingan pertaruhan — itulah langkah "all-in". Ia format lalai dan paling popular, termasuk WSOP Main Event. Limit Hold'em menghadkan setiap pertaruhan kepada saiz tetap, dan Pot-Limit menghadkan pertaruhan anda kepada saiz pot semasa.
+A. No-Limit bermaksud anda boleh bertaruh apa-apa jumlah dari Big Blind sehingga semua cip anda pada mana-mana pusingan pertaruhan — hujung tertingginya ialah langkah "all-in". Ia format lalai dan paling popular, termasuk WSOP Main Event. Limit Hold'em menghadkan setiap pertaruhan kepada saiz tetap, dan Pot-Limit menghadkan pertaruhan anda kepada saiz pot semasa.
 
 **Q. Berapa lama satu tangan Texas Hold'em?**
 

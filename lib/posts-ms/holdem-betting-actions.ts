@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Aksi Pertaruhan Texas Hold'em: Cek, Call, Raise, Fold",
   seoTitle: "Cek, Call atau Fold? — Aksi Pertaruhan Poker & Peraturan Raise",
   desc: "Giliran anda tiba dan fikiran terus kosong? Ketahui maksud cek, call, raise dan fold dalam poker, peraturan min-raise, dan berapa kali anda boleh re-raise.",
-  tldr: "Texas Hold'em ada 5 aksi pertaruhan: cek (lepas giliran secara percuma), bertaruh (buka pusingan), call (samai pertaruhan), raise (menaikkannya — kenaikan minimum sama dengan saiz pertaruhan atau raise sebelumnya), dan fold. Anda hanya boleh cek apabila tiada pertaruhan aktif di hadapan anda — pada praflop itu hanya berlaku jika anda big blind.",
+  tldr: "Texas Hold'em ada 5 aksi pertaruhan: cek (lepas giliran secara percuma), bertaruh (buka pusingan), call (samai pertaruhan), raise (menaikkannya — kenaikan minimum sama dengan saiz pertaruhan atau raise sebelumnya), dan fold. Anda hanya boleh cek apabila tiada pertaruhan aktif di hadapan anda — pada praflop itu biasanya hanya big blind (atau pemain yang meletakkan straddle hidup).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-09-15",
-  masterUpdated: "2026-07-11",
+  updated: "2026-09-27",
+  masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "9 minit",
   emoji: "🃏",
@@ -49,7 +49,7 @@ Setiap keputusan yang anda buat di meja poker adalah salah satu daripada lima in
 | Aksi | Bila boleh dibuat | Kos cip |
 |--------|---------------|-----------|
 | Fold | Bila-bila masa giliran anda | Percuma — tetapi anda lepaskan cip yang sudah masuk dalam pot |
-| Cek | Hanya apabila tiada pertaruhan aktif di hadapan anda (praflop: hanya sebagai big blind) | Percuma — anda lepas giliran tanpa menambah cip |
+| Cek | Hanya apabila tiada pertaruhan aktif di hadapan anda (praflop: sebagai big blind, atau sebagai pemain yang meletakkan straddle hidup) | Percuma — anda lepas giliran tanpa menambah cip |
 | Call | Selepas seseorang bertaruh atau raise | Anda samai pertaruhan semasa dengan tepat |
 | Bertaruh (bet) | Pertaruhan pertama dalam pusingan | Jumlah pilihan anda (minimum = 1 big blind) |
 | Raise | Selepas seseorang bertaruh | Sekurang-kurangnya sebesar pertaruhan atau raise sebelumnya, ditambah di atasnya |
@@ -72,10 +72,10 @@ Cek bukan bermakna menyerah. Anda simpan kad anda, anda kekalkan semua pilihan, 
 
 ## Bila Anda Boleh Cek dalam Poker?
 
-Anda boleh cek dalam tepat dua situasi:
+Anda boleh cek dalam dua jenis situasi:
 
 - **Belum ada sesiapa bertaruh** dalam pusingan semasa (flop, turn atau river)
-- **Anda big blind pada pre-flop dan tiada sesiapa raise** — blind anda sudah dikira sebagai pertaruhan hidup, jadi anda boleh cek dan melihat flop secara percuma
+- **Anda big blind pada pre-flop dan tiada sesiapa raise atau straddle** — blind anda sudah dikira sebagai pertaruhan hidup, jadi anda boleh cek dan melihat flop secara percuma (begitu juga pemain yang meletakkan straddle hidup, jika tiada sesiapa raise atau re-straddle selepasnya)
 
 Jika seseorang bertaruh selepas anda cek, anda berdepan keputusan baharu: fold, call atau raise. Cek dahulu kemudian raise apabila lawan bertaruh dipanggil ==check-raise== — ia sepenuhnya sah dalam Texas Hold'em dan senjata standard, bukan helah kotor.
 
@@ -93,7 +93,7 @@ Cek vs call ialah kekeliruan pemain baharu yang paling kerap, jadi ini pembahagi
 
 | | Cek | Call |
 |-|-------|------|
-| Bila wujud | Tiada pertaruhan aktif di hadapan anda (praflop: hanya sebagai big blind) | Seseorang sudah bertaruh sebelum anda |
+| Bila wujud | Tiada pertaruhan aktif di hadapan anda (praflop: sebagai big blind, atau sebagai pemain yang meletakkan straddle hidup) | Seseorang sudah bertaruh sebelum anda |
 | Kos cip | Percuma | Anda samai pertaruhan semasa |
 | Maksudnya | "Saya lepas giliran, masih dalam permainan" | "Saya bayar untuk teruskan" |
 
@@ -132,7 +132,7 @@ Perkara utamanya: min-raise mengikut ==inkremen== pertaruhan atau raise terakhir
 
 Dua peraturan poker live yang datang bersama raise:
 
-1. **Umumkan "raise" sebelum menggerakkan cip.** Sebut "call" kemudian tolak cip tambahan? Pengumuman anda sudah mengikat sejak saat itu (==Rule 90.d==) — lebihannya tidak dikira. ==String bet== yang sebenar lain: menolak cip dalam beberapa pergerakan **tanpa** mengumumkan "raise" dahulu (==Rule 103==).
+1. **Umumkan "raise" sebelum menggerakkan cip.** Sebut "call" kemudian tolak cip tambahan? Pengumuman anda sudah mengikat sejak saat itu (==Rule 90.d==) — lebihannya tidak dikira. ==String bet== yang sebenar lain: bertaruh atau raise dalam beberapa pergerakan yang termasuk kembali ke stack anda **tanpa** mengumumkan "raise" dahulu — atau isyarat mengelirukan yang bertujuan memancing aksi di luar giliran (==Rule 103==).
 2. **Satu pergerakan.** Jika anda tidak mengumumkan, cip anda mesti masuk dalam satu pergerakan ke hadapan sahaja.
 
 *Berapa banyak* anda patut raise (open 2.5x, 3-bet 3x, saiz mengikut tekstur board) ialah strategi, bukan peraturan — tempatnya dalam [panduan utama strategi Texas Hold'em](/ms/blog/holdem-strategy). Selepas 3-bet dan call berlaku, [contoh pot 3-bet pada flop AK2](/ms/blog/3bet-pot-cbet) menunjukkan bagaimana range dan stack yang tinggal mempengaruhi keputusan seterusnya.
@@ -156,7 +156,7 @@ Dalam permainan **Fixed-Limit**, setiap pusingan ada had (pot "capped"). Peratur
 
 All-in bermaksud mempertaruhkan ==semua cip yang anda ada==. Anda boleh melakukannya bila-bila masa giliran anda — sebagai bertaruh, call atau raise.
 
-Jika all-in anda *lebih kecil* daripada pertaruhan semasa, anda tidak terkeluar: anda cuma bersaing untuk ==pot utama== yang dihadkan pada sumbangan anda, manakala cip lebihan daripada stack yang lebih besar membentuk ==side pot== yang anda tidak boleh menang. Dan all-in yang *kurang daripada satu min-raise penuh* umumnya tidak membuka semula raise untuk pemain yang sudah bertindak — peraturan halus yang mengejutkan pemain tetap sekalipun.
+Jika all-in anda *lebih kecil* daripada pertaruhan semasa, anda tidak terkeluar: anda cuma bersaing untuk ==pot utama== yang dihadkan pada sumbangan anda, manakala cip lebihan daripada stack yang lebih besar membentuk ==side pot== yang anda tidak boleh menang. (Jika ada pemain yang stack-nya lebih pendek daripada anda, anda tetap bermain untuk side pot yang tidak dapat dicapainya — setiap all-in hanya mengehadkan lapisannya sendiri.) Dan all-in yang *kurang daripada satu min-raise penuh* umumnya tidak membuka semula raise untuk pemain yang sudah bertindak — peraturan halus yang mengejutkan pemain tetap sekalipun.
 
 Mekanik penuhnya — kiraan side pot, siapa tunjuk kad dahulu, table stakes — ada dalam [peraturan all-in dan side pot](/ms/blog/holdem-all-in-rules), dan apa yang berlaku apabila hand all-in seri diliputi oleh [peraturan split pot dan chop](/ms/blog/holdem-split-pot-rules).
 
@@ -221,15 +221,15 @@ A. Tak patut. Aksi mesti bergerak mengikut arah jam secara teratur, dan fold di 
 
 **Q. Boleh cek pada pre-flop?**
 
-A. Hanya sebagai big blind, dan hanya jika tiada sesiapa raise. BB sudah pun meletakkan pertaruhan hidup, jadi dia boleh cek untuk melihat flop secara percuma. Semua posisi lain pada pre-flop mesti call, raise atau fold.
+A. Hanya jika taruhan wajib yang anda letakkan sendiri ialah pertaruhan hidup dan tiada sesiapa raise — biasanya big blind, tetapi juga straddle hidup (WSOP Live Action Rules 159 · 165): taruhan itu dikira sebagai pertaruhan pembuka anda, jadi anda boleh cek untuk melihat flop secara percuma. Setiap posisi yang tidak meletakkan pertaruhan hidup sendiri mesti call, raise atau fold pada pre-flop.
 
 **Q. Boleh raise selepas seseorang all-in?**
 
-A. Bergantung pada saiz all-in itu. Jika all-in itu merupakan raise sah yang penuh, aksi dibuka semula dan anda boleh re-raise. Jika ia *kurang* daripada satu min-raise penuh, pemain yang sudah bertindak umumnya hanya boleh call atau fold — all-in pendek itu tidak membuka semula raise untuk mereka di kebanyakan bilik kad.
+A. Bergantung pada saiz all-in itu. Jika all-in itu merupakan raise sah yang penuh, aksi dibuka semula dan anda boleh re-raise — dengan syarat sekurang-kurangnya seorang lawan yang tidak all-in masih dalam hand itu; heads-up menentang all-in, tiada lagi pihak untuk di-raise, jadi anda hanya boleh call atau fold. Jika ia *kurang* daripada satu min-raise penuh, pemain yang sudah bertindak umumnya hanya boleh call atau fold — all-in pendek itu tidak membuka semula raise untuk mereka di kebanyakan bilik kad.
 
 **Q. Apa itu string bet dalam poker?**
 
-A. Memasukkan cip dalam beberapa pergerakan, atau menyebut "call" kemudian menambah raise, tanpa mengumumkan "raise" dahulu. Pengedar akan mengira string bet sebagai call pada jumlah asal. Umumkan aksi anda secara lisan atau gerakkan semua cip dalam satu pergerakan.
+A. Cubaan bertaruh atau raise dalam beberapa pergerakan — kembali ke stack anda di antaranya — tanpa mengumumkan "raise" dahulu (==Rule 103==). Pergerakan kedua tidak pernah dikira — hanya cip pertama yang kekal, dinilai terlebih dahulu di bawah peraturan call satu cip dan berbilang cip (TDA 2024 Rules 44–45). Jika ambang separuh minimum Rule 43-A terpakai, ukur kenaikan di atas jumlah call, bukan jumlah keseluruhan cip: kurang daripada separuh pertaruhan atau raise penuh terbesar sebelumnya dikira call; separuh atau lebih mewajibkan min-raise penuh. Pengumuman raise yang dibuat lebih awal atau all-in dinilai di bawah peraturannya sendiri. Rule 103 juga melarang isyarat mengelirukan yang bertujuan memancing aksi di luar giliran sebelum aksi anda sendiri selesai. Menyebut "call" kemudian menambah bukan string bet tetapi pengumuman yang mengikat (==Rule 90.d==) — kesannya sama. Umumkan aksi anda secara lisan atau gerakkan semua cip dalam satu pergerakan.
 
 **Q. Apa maksud limp dalam poker?**
 

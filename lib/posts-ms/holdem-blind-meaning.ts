@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Blinds ialah pertaruhan wajib yang dibayar sebelum kad diedar. Small Blind duduk di sebelah kiri butang pengedar dan Big Blind di sebelah kirinya pula; Big Blind — biasanya dua kali ganda Small Blind — ialah unit pertaruhan meja.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-07-13",
-  masterUpdated: "2026-07-11",
+  updated: "2026-09-27",
+  masterUpdated: "2026-09-22",
   keepImagesInBody: true,
   readTime: "9 minit",
   emoji: "💰",
@@ -31,7 +31,7 @@ Blinds ialah ==enjin yang memastikan poker terus bergerak== — bahagian pertama
 ### Nombor-nombor utama
 
 :::stripe
-2 | pertaruhan wajib dibayar pada setiap tangan
+2 | pertaruhan wajib — Small Blind dan Big Blind
 1/2 | Small Blind biasanya separuh daripada Big Blind
 1 BB | Big Blind = unit pertaruhan meja
 :::
@@ -40,7 +40,7 @@ Blinds ialah ==enjin yang memastikan poker terus bergerak== — bahagian pertama
 
 ## Apa Itu Blind Dalam Poker — dan Kenapa Ia Wujud?
 
-**Blind** ialah pertaruhan yang anda terpaksa buat *sebelum* kad anda sampai — anda bertaruh secara "buta", tanpa melihat apa-apa. Dua pemain membayarnya pada setiap tangan: Small Blind dan Big Blind, dua tempat duduk yang berada betul-betul di sebelah kiri butang pengedar.
+**Blind** ialah pertaruhan yang anda terpaksa buat *sebelum* kad anda sampai — anda bertaruh secara "buta", tanpa melihat apa-apa. Dua pemain membayarnya pada setiap tangan biasa: Small Blind dan Big Blind, dua tempat duduk yang berada betul-betul di sebelah kiri butang pengedar. (Dua pengecualian yang lazim: dead button, yang boleh menyebabkan Small Blind tidak dibayar untuk satu tangan, dan permainan heads-up, di mana butang itu sendiri yang membayar Small Blind — lihat di bawah.)
 
 Kenapa perlu paksa orang bayar? Untuk memastikan permainan terus hidup. ==r:Tanpa blinds, setiap pemain boleh fold dan menunggu tanpa henti untuk tangan premium==; pot akan kosong, bluff jadi tak bermakna, dan permainan akan terhenti. ==g:Dua pertaruhan wajib pada setiap tangan menjamin sentiasa ada sesuatu untuk direbut.==
 
@@ -78,7 +78,7 @@ Faham Big Blind, dan semua istilah nombor permainan — saiz raise, kedalaman st
 
 ## Peraturan Small Blind dan Big Blind: Siapa Bayar, dan Bila
 
-Kedua-dua blinds dibayar **sebelum kad diedar**, dan butang pengedar bergerak satu tempat duduk mengikut arah jam selepas setiap tangan — jadi tempat duduk blinds turut berpusing dan ==semua orang membayar kedua-dua blinds sekali setiap pusingan meja==. Tiada siapa boleh melangkau giliran.
+Kedua-dua blinds dibayar **sebelum kad diedar**, dan butang pengedar bergerak satu tempat duduk mengikut arah jam selepas setiap tangan — jadi tempat duduk blinds turut berpusing dan, dalam putaran biasa, ==semua orang membayar kedua-dua blinds sekali setiap pusingan meja==. Jika anda meninggalkan meja, apa yang berlaku seterusnya bergantung pada format: dalam cash game, anda membayar blinds yang terlepas apabila kembali, menunggu sehingga Big Blind sampai semula kepada anda, atau — jika dibenarkan oleh pihak rumah — memasang live straddle dari UTG (under the gun) sebagai ganti; dalam tournament pula, blinds dan ante tetap diambil daripada stack anda sama ada anda berada di tempat duduk atau tidak.
 
 | | Small Blind | Big Blind |
 |------|-------------|-------------|
@@ -97,7 +97,7 @@ Stakes ditulis sebagai **SB/BB**. Permainan "$1/$2" bermaksud Small Blind $1 dan
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| Stakes | Small Blind | Big Blind | Buy-in biasa |
+| Stakes | Small Blind | Big Blind | Buy-in biasa / tahap |
 |:---|:---:|:---:|:---:|
 | $0.5/$1 | $0.50 | $1 | $60–$100 |
 | $1/$2 | $1 | $2 | $100–$300 |
@@ -119,19 +119,19 @@ Stakes ditulis sebagai **SB/BB**. Permainan "$1/$2" bermaksud Small Blind $1 dan
 
 Dari peringkat awal atau pertengahan kebanyakan kejohanan, **ante** ditambah — pertaruhan wajib kecil tambahan yang dikutip pada setiap tangan di atas blinds, yang membesarkan pot dan memberi ganjaran kepada permainan agresif. Versi moden yang lazim ialah **big blind ante**: bukannya semua orang mencampakkan cip, ==Big Blind membayar satu ante — biasanya bersamaan satu Big Blind — bagi pihak seluruh meja==, yang menjadikan permainan pantas dan kemas. Bila dan bagaimana ante bermula adalah sebahagian daripada [struktur blind kejohanan](/ms/blog/holdem-tournament).
 
-Satu lagi saudara pertaruhan wajib yang anda akan jumpa dalam cash game: **straddle** — blind tambahan *sukarela* (biasanya 2x BB) yang dibayar dari tempat duduk di sebelah kiri Big Blind, yang menaikkan stakes buat sementara untuk tangan itu. Ia ada peraturan, jenis dan susunan aksi tersendiri — huraian penuhnya ada dalam [panduan tentang apa itu straddle dan sama ada anda patut membayarnya](/ms/blog/holdem-straddle "thumb:/images/holdem-straddle-hero.webp").
+Satu lagi saudara pertaruhan wajib yang anda akan jumpa dalam cash game: **straddle** — blind tambahan *sukarela* (biasanya 2x BB) yang dibayar dari UTG (di sebelah kiri Big Blind) atau, jika dibenarkan, dari butang, yang menaikkan stakes buat sementara untuk tangan itu. Di bawah peraturan WSOP, button straddle diberi keutamaan dan tidak dibenarkan dalam permainan limit. Ia ada peraturan, jenis dan susunan aksi tersendiri — huraian penuhnya ada dalam [panduan tentang apa itu straddle dan sama ada anda patut membayarnya](/ms/blog/holdem-straddle "thumb:/images/holdem-straddle-hero.webp").
 
 ---
 
 ## Siapa Bayar Blinds Dalam Poker Heads-Up?
 
-Apabila hanya tinggal dua pemain (atau dalam perlawanan heads-up), peraturan biasa ==r:diterbalikkan==. **Butang pengedar membayar Small Blind** dan bertindak ==**dahulu**== sebelum flop, manakala pemain satu lagi membayar Big Blind dan bertindak ==**terakhir**== pre-flop — kemudian dahulu pada setiap street selepas itu. Inilah satu-satunya masa butang membayar blind, dan ia mengelirukan hampir semua orang pada kali pertama.
+Apabila hanya tinggal dua pemain (atau dalam perlawanan heads-up), peraturan biasa ==r:diterbalikkan==. **Butang pengedar membayar Small Blind** dan bertindak ==**dahulu**== sebelum flop, manakala pemain satu lagi membayar Big Blind dan bertindak ==**terakhir**== pre-flop — kemudian dahulu pada setiap street selepas itu.
 
 ---
 
 ## Apa Berlaku Jika Anda Terlepas Blind? (Dead Blinds)
 
-Duduk di meja cash game live dan biasanya anda tak boleh main secara percuma: sama ada anda **membayar satu Big Blind** untuk terus diedarkan kad, atau menunggu blind sampai ke tempat duduk anda. Jika anda meninggalkan meja dan ==**terlepas blinds anda**==, di kebanyakan bilik kad anda membayarnya semula apabila kembali untuk menyertai permainan — Big Blind yang terlepas dikira sebagai pertaruhan hidup, dan Small Blind yang terlepas ialah cip ==**mati (dead)**== yang terus masuk ke dalam pot. Meja online menguruskan semua ini secara automatik.
+Duduk di meja cash game live dan biasanya anda tak boleh main secara percuma: kebanyakan bilik kad meminta anda sama ada **membayar satu Big Blind** untuk terus diedarkan kad, atau menunggu blind sampai ke tempat duduk anda — walaupun sesetengah bilik kad tidak mewajibkan pemain baharu dalam permainan no-limit atau pot-limit membayar apa-apa (WSOP Live Action Rules 104.a), jadi tanya pengedar sebelum anda duduk. Jika anda meninggalkan meja dan ==**terlepas blinds anda**==, di kebanyakan bilik kad anda membayarnya semula apabila kembali untuk menyertai permainan — Big Blind yang terlepas dikira sebagai pertaruhan hidup, dan Small Blind yang terlepas ialah cip ==**mati (dead)**== yang terus masuk ke dalam pot. Meja online menguruskan semua ini secara automatik.
 
 ---
 
@@ -139,7 +139,9 @@ Duduk di meja cash game live dan biasanya anda tak boleh main secara percuma: sa
 
 ![Timbunan cip jatuh ke arah pot di atas meja poker — cubaan blind steal dari butang](/images/holdem-blind-steal.webp)
 
-- **Small Blind: pastikan ringkas.** Kedua terakhir pre-flop tetapi **bertindak dahulu** selepas flop, pendekatan bersih untuk pemain baru ialah **raise atau fold**, bukan call. Limp dan kena serang balik di luar posisi ialah kebocoran cip yang berterusan.
+Blinds ialah tempat saya paling kerap melihat pemain baharu kehilangan cip secara senyap — bukan dalam satu pot besar, tetapi sedikit demi sedikit setiap pusingan meja. Dua tabiat di blinds membetulkan kebanyakannya — dan satu langkah dari posisi lewat memenangi sebahagiannya semula:
+
+- **Small Blind: pastikan ringkas.** Kedua terakhir pre-flop tetapi **bertindak dahulu** selepas flop, pendekatan bersih untuk pemain baru ialah **raise atau fold**, bukan call. Limp dan kena serang balik di luar posisi ialah kebocoran cip yang berterusan — Small Blind ialah tempat duduk yang paling kerap saya lihat pemain baharu rugi sepanjang satu sesi penuh.
 - **Big Blind: pertahan dengan pot odds.** Anda sudah membayar satu pertaruhan penuh, jadi anda boleh call raise dengan julat lebih luas daripada mana-mana tempat duduk lain secara berbaloi. Berdepan open 2.5 BB (dengan Small Blind fold), anda call 1.5 BB untuk pot 4 BB — lebih kurang 2.7:1, bermakna sekitar 27% equity sudah cukup untuk pulang modal pada call itu. Kiraan itulah [pot odds](/ms/blog/holdem-pot-odds), dan sebab itulah wujudnya "pertahanan Big Blind".
 - **Posisi lewat: steal.** Apabila semua orang fold sehingga ke butang atau cutoff, raise yang bertujuan memenangi dua blinds sahaja ialah **blind steal** — dan raise semula sebagai balasan ialah **re-steal**. Saiz steal, julat mengikut tempat duduk dan sejauh mana perlu bertahan adalah topik strategi, yang dibincangkan mendalam dalam [panduan strategi in position vs out of position](/ms/blog/holdem-position-play).
 
@@ -170,15 +172,15 @@ A. Boleh — itulah "option" Big Blind. Jika semua orang hanya call, Big Blind b
 
 **Q. Bolehkah fold selepas membayar blind?**
 
-A. Boleh. Pada giliran anda, anda boleh fold seperti pemain lain; Small Blind boleh mengalah daripada menambah sehingga jumlah Big Blind, tetapi blinds yang sudah dibayar tidak akan dipulangkan.
+A. Boleh. Pada giliran anda, anda boleh fold seperti pemain lain; Small Blind boleh mengalah daripada menambah sehingga jumlah Big Blind, tetapi blind yang sudah dibayar tidak akan dipulangkan kepada anda hanya kerana anda fold.
 
 **Q. Siapa bayar blinds dalam poker heads-up?**
 
-A. Dengan hanya dua pemain, peraturannya terbalik: butang pengedar membayar Small Blind dan bertindak dahulu sebelum flop, manakala pemain satu lagi membayar Big Blind dan bertindak terakhir pre-flop. Inilah satu-satunya masa butang membayar blind.
+A. Dengan hanya dua pemain, peraturannya terbalik: butang pengedar membayar Small Blind dan bertindak dahulu sebelum flop, manakala pemain satu lagi membayar Big Blind dan bertindak terakhir pre-flop.
 
 **Q. Apa berlaku jika anda terlepas blind anda?**
 
-A. Di kebanyakan bilik kad, anda membayar blinds yang terlepas apabila kembali — Big Blind dikira sebagai pertaruhan hidup dan Small Blind ialah cip mati yang dimasukkan ke dalam pot. Sebagai pilihan lain, anda boleh menunggu sehingga Big Blind sampai secara semula jadi ke tempat duduk anda.
+A. Di kebanyakan bilik kad, anda membayar blinds yang terlepas apabila kembali — Big Blind dikira sebagai pertaruhan hidup dan Small Blind ialah cip mati yang dimasukkan ke dalam pot. Sebagai pilihan lain, anda boleh menunggu sehingga Big Blind sampai secara semula jadi ke tempat duduk anda — atau, di bilik kad yang membenarkannya, kembali bermain dengan memasang live straddle dari UTG.
 
 **Q. Adakah "Big Blind" sama dengan "blinds"?**
 
