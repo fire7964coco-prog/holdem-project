@@ -27,6 +27,13 @@ import { POST as holdemTournamentVsCashGame } from "./holdem-tournament-vs-cash-
 // [ms-rank import 끝]
 
 // [ms-prob import 시작]
+import { POST as holdemProbability } from "./holdem-probability";
+import { POST as holdemPotOdds } from "./holdem-pot-odds";
+import { POST as holdemOuts } from "./holdem-outs";
+import { POST as holdemDrawingOdds } from "./holdem-drawing-odds";
+import { POST as holdemImpliedOdds } from "./holdem-implied-odds";
+import { POST as holdemEquity } from "./holdem-equity";
+import { POST as holdemCardCounting } from "./holdem-card-counting";
 // [ms-prob import 끝]
 
 // [ms-strat import 시작]
@@ -74,6 +81,13 @@ export const MS_POSTS: Post[] = [
   // [ms-rank 배열 끝]
 
   // [ms-prob 배열 시작]
+  holdemProbability,
+  holdemPotOdds,
+  holdemOuts,
+  holdemDrawingOdds,
+  holdemImpliedOdds,
+  holdemEquity,
+  holdemCardCounting,
   // [ms-prob 배열 끝]
 
   // [ms-strat 배열 시작]
