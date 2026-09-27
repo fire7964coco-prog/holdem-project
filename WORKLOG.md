@@ -1,3 +1,9 @@
+## 2026-09-27 (4) — 🇲🇾 ms Q15 머지·배포 + 아스트라 교차 요청 (MB-103 · ms 동결)
+
+- queue Q15 `229a197b`(ms 44파일: 신규 30편 용어 통일 + 기존 20편 EN 링크 복원 + 구판 라벨 14) → 머지 `11c568ad` → 배포 `d506320a`(sitemap). audit:hard ms 51/51 🔴 0 🟠 0 · build 73+607 · 라이브 표본 2편 4/4 · IndexNow 24.
+- MB-103: 아스트라 교차 검수 요청(ms 51편 · ① 인니어·register ② §13 전사 ③ 의미 왜곡 ④ 메타) + 판정 부탁 3(kejohanan 통일 · Button/butang · «di hadapan») + **ms 동결 개시**. Q15-5(kejohanan)는 동결 전에 하지 않기로 헤드 결정.
+- 남김: Q15-3 `audit:hard --schema --locale` KO 대조 결함 · Q15-4 H2 안 링크 TOC/앵커 누출 → 게이트·렌더러 회차 재료.
+
 ## 2026-09-27 (3) — `wpt-australia-2026-guide` 원문 실측 · 회차 10/1 이후로 (사장님 결정 B)
 
 - starpoker.com.au 실측 → `docs/tournament-factsheets/2026-09-wpt-australia.md`: 현장 위성 PDF(9월판 · $290 Championship DQ 없음 · $550 DQ 마지막 9/25 · 전체 마지막 9/28 PLO · 글 표에 없는 위성 3종) · Results 첫 페이지(Prime $1,346,900 등) · Championship 페이지(Unlimited re-entry — 글 FAQ «WPT once per flight»와 대조 필요).

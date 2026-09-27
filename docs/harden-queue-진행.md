@@ -1348,6 +1348,8 @@ B 176 축어 예시(100 벳 + 140 올인 → **240**)·A 96.a(1,700 + 500 → **
 
 ### Q15 (2026-09-27 · ms 44파일 — 용어·링크·라벨 · **배포가 걸린 회차다**)
 
+> 🔵 **헤드 처리 (2026-09-27 (4) · 머지 `11c568ad` · 배포 `d506320a`)** — Q15-1 ✅ 배포·라이브 4/4·IndexNow 24·**MB-103**(아스트라 교차 요청 + ms 동결 개시). Q15-5 = **동결 전에 하지 않는다** — kejohanan 통일 여부를 Button/butang·«di hadapan»과 함께 MB-103 판정 요청에 넣었다(아스트라 MA 뒤 한 회차로). Q15-2 = 동결로 MA 뒤. Q15-3·Q15-4 = 게이트·렌더러 회차 재료로 남김(ms 동결과 무관 · 착수는 지시 대기).
+
 - 🔴 **Q15-1 배포 + MB 통지 초안**: 「ms Q15 — 신규 30편 용어 통일(favourite·leak·stakes rendah·Ringkasan pantas·N Perkara·tournament·posisi·rangka kerja·orbit) + 기존 20편 EN 링크 복원(본문·readnext·카드) + 구판 라벨 14. `updated`·`masterUpdated` 불변. 되돌리지 마라: hand-rankings L111 «cooler»(EN L110 «beat») · tiebreak L233 «Kejohanan WSOP»(룰북명과 한 괄호). 이 해시로 **GPT 아스트라 교차 검수 요청 + ms 동결**(브리프 머리).」 로케일 = ms만(EN·ja·zh·zh-hant 무변경 → §6-0 통지 불요). sitemap은 `updated` 불변이라 행 변화 0이 정상.
 - 🟠 **Q15-2 ms 드리프트 회차 재료**: `holdem-game-order` FAQ 4문항 번역(EN L354·L358·L362·L390) + 꼬리 드리프트 ms 6편(`audit:hard --locale=ms` 미러 드리프트 절). 동결과 충돌하면 아스트라 판정 뒤로.
 - 🟠 **Q15-3 게이트 결함**: `audit:hard -- --schema --locale=<loc>`이 `--locale`을 무시하고 `.next/server/app/blog`(KO)와 대조한다(`scripts/audit-hardening.mjs:1635`) → 비KO 로케일에서 «산출물 없음»·문항 불일치가 가짜로 뜬다. 처방 = 로케일이면 `.next/server/app/<loc>/blog` · 셀프테스트 1건. 이번 회차는 scratch 스크립트로 ms 51/51 직접 대조했다.
