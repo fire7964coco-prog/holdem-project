@@ -291,7 +291,7 @@ A. Apabila anda masuk ke pot yang sudah di-raise, kebanyakannya ya — pilihan l
 
 ---
 
-## Perkara yang Perlu Diingat
+## 6 Perkara untuk Diingati
 
 1. **Posisi meningkatkan realisasi equity secara purata.** Tiada tempat duduk yang tetap di atas atau di bawah 100%; range, board dan aksi yang menentukan angkanya. Kelebihan biasa datang daripada bertindak terakhir, bukan daripada kad yang lebih baik.
 2. **Range bergeser mengikut posisi.** UTG open ~13%, button ==g:~43%== — dan setiap tempat duduk di antaranya mendapat satu anak tangga. ==r:Bermain tangan button dari UTG menghakis cip.==

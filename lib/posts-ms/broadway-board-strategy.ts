@@ -108,7 +108,7 @@ Equity purata menunjukkan pertandingan yang agak rapat. Bahagian terkuat range p
 
 **Pembahagian draw hampir seimbang.** Pada flop K-high, 72.2% daripada range BB tiada draw; di sini hanya sekitar satu perempat. Kategori tangan dan draw ialah dua cara pengelasan berasingan: setiap jadual berjumlah kira-kira 100% sendiri. Panel Draw mengira **peluang yang masih belum lengkap**. Straight yang sudah terbentuk tetapi mempunyai dua spade, seperti K♠9♠, boleh berada dalam baris flush draw. Straight yang tiada draw tambahan pula masuk baris Tiada draw.
 
-Jadi, persoalan utama bukan siapa mempunyai lebih banyak draw. Kedua-duanya hampir seimbang pada ukuran itu; yang tidak seimbang ialah bahagian tangan terkuat. Untuk mengukuhkan asas mengira peluang kad yang melengkapkan draw, baca [asas peluang draw dan pot odds](/ms/blog/texas-holdem-rules-for-beginners).
+Jadi, persoalan utama bukan siapa mempunyai lebih banyak draw. Kedua-duanya hampir seimbang pada ukuran itu; yang tidak seimbang ialah bahagian tangan terkuat. Untuk mengukuhkan cara mengira outs, mulakan dengan [drawing odds](/ms/blog/holdem-drawing-odds).
 
 ## Mengapa top pair lebih berbahaya pada QJT?
 
@@ -145,13 +145,13 @@ Bandingkan tiga flop pertama:
 
 Tiga contoh ini seolah-olah menunjukkan lebih banyak draw menghasilkan jurang lebih besar. **Contoh berikutnya membatalkan kesimpulan mudah itu.** [9♥8♥7♣](/ms/blog/donk-bet-strategy "thumb:/images/gto-srp-middle-connected-oop-ms.webp") juga tiga kad berturutan dengan dua suit, tetapi jurang EQRnya hanya **13.2 mata peratusan, paling kecil dalam tujuh pot single-raise**. BB merealisasikan 93.2%, paling tinggi antara tujuh contoh tersebut; dalam seluruh siri, 117.8% pada pot 3-bet Q-T-7 masih lebih tinggi.
 
-Yang penting ialah **range siapa lebih sesuai dengan tangan terkuat pada board**, bukan jumlah draw semata-mata. Q-J-T memberikan peranan kuat kepada AK, QQ, JJ, AA dan KK milik BTN. Pada 9-8-7, kad-kad itu tidak membentuk set atau straight yang sama. ⚠ Ia masih relevan: overpair pada 9-8-7 ialah 1.3% berbanding 6.4%, jurang lebih besar daripada 0% berbanding 2.6% pada Q-J-T. Namun, overpair mudah terancam pada board bersambung, jadi kelebihan itu tidak sama dengan menguasai tangan teratas. Asas bertindak kemudian diterangkan dalam [urutan tindakan dan posisi](/ms/blog/holdem-game-order "thumb:/images/blog-holdem-game-flow.webp").
+Yang penting ialah **range siapa lebih sesuai dengan tangan terkuat pada board**, bukan jumlah draw semata-mata. Q-J-T memberikan peranan kuat kepada AK, QQ, JJ, AA dan KK milik BTN. Pada 9-8-7, kad-kad itu tidak membentuk set atau straight yang sama. ⚠ Ia masih relevan: overpair pada 9-8-7 ialah 1.3% berbanding 6.4%, jurang lebih besar daripada 0% berbanding 2.6% pada Q-J-T. Namun, overpair mudah terancam pada board bersambung, jadi kelebihan itu tidak sama dengan menguasai tangan teratas. Mengapa bertindak terakhir begitu bernilai diterangkan dalam [strategi posisi](/ms/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp").
 
 ## Bagaimanakah BTN memilih saiz bet pada board dinamik ini?
 
 **Saiz kecil sahaja tidak mencukupi sebagai panduan; saiz besar juga perlu dipertimbangkan.** Nut advantage memberi BTN lebih banyak tangan kuat untuk menyokong bet besar. Ini menjadikan **raise lebih sukar untuk pihak lawan**, kerana BB mempunyai lebih sedikit tangan teratas untuk membalas tekanan tersebut.
 
-Pada board kering, bet kecil dan kerap boleh menolak banyak tangan kosong. Di sini, **68.4%** daripada range lawan mempunyai draw, jadi membeli fold lebih mahal: bet kecil sahaja tidak semestinya menghasilkan tekanan yang dikehendaki. ⚠ Namun, jangan terus membuat kesimpulan bahawa kekerapan c-bet pasti turun. Contoh ini hanya mengira tindakan pertama BB; pecahan saiz dan kekerapan sebenar c-bet BTN belum diberikan. Anda boleh mengkaji perbezaan board melalui [solver dan latihan c-bet](/ms/solver).
+Pada board kering, bet kecil dan kerap boleh menolak banyak tangan kosong. Di sini, **68.4%** daripada range lawan mempunyai draw, jadi membeli fold lebih mahal: bet kecil sahaja tidak semestinya menghasilkan tekanan yang dikehendaki. ⚠ Namun, jangan terus membuat kesimpulan bahawa kekerapan c-bet pasti turun. Contoh ini hanya mengira tindakan pertama BB; pecahan saiz dan kekerapan sebenar c-bet BTN belum diberikan. Huraian board demi board ada dalam [strategi continuation bet](/ms/blog/holdem-continuation-bet "thumb:/images/holdem-continuation-bet-hero.webp").
 
 :::note[⚠ Jadual dan angka tadi ialah hasil solver; cadangan saiz BTN dalam bahagian ini ialah tafsiran terhadapnya. Contoh pembelajaran hanya menyediakan tindakan pertama BB pada flop, jadi pecahan saiz BTN tiada pada skrin ini. Pilih "Kira sendiri spot ini" dan jalankan tree untuk memperoleh angka tersebut.]:::
 
@@ -175,7 +175,7 @@ Mulakan dengan panel **Draw** di sebelah kanan. OESD dan gutshot bersama-sama me
 
 Untuk berlatih, buka **Trainer GTO** di bar sisi. Tangan dipilih mengikut wajaran range sebenar, dan tindakan anda dinilai berdasarkan kerugian EV dalam big blind; skor menggunakan kerugian berbanding pot. Percuma, tanpa pemasangan dan tanpa akaun wajib.
 
-## Soalan lazim
+## Soalan Lazim
 
 **Q. Tangan manakah melengkapkan straight pada Q-J-T?**
 

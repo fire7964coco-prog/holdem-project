@@ -183,7 +183,7 @@ Kebanyakan festival live utama membenarkan anda mendaftar dalam talian lebih awa
 
 ## Bagaimana Cara Main Tournament Poker? Strategi Ikut Peringkat
 
-Satu artikel tidak dapat mengajar keseluruhan strategi tournament — itulah tujuan panduan-panduan dalam kelompok ini — tetapi inilah kerangka ikut peringkat yang menjadi asas setiap pelan yang menang:
+Satu artikel tidak dapat mengajar keseluruhan strategi tournament — itulah tujuan panduan-panduan dalam kelompok ini — tetapi inilah rangka kerja ikut peringkat yang menjadi asas setiap pelan yang menang:
 
 **Level awal (100BB+):** Mainkan poker yang ketat dan peka posisi, dan lihat flop murah dengan tangan yang boleh mengalahkan pasangan besar. [Carta tangan permulaan](/ms/blog/holdem-starting-hands-chart) yang dipatuhi dengan disiplin mengelakkan kebanyakan bencana pemula. Jangan bluff sehingga habis stack pada jam pertama — tiada siapa fold pada Level 1.
 
@@ -276,7 +276,7 @@ Jadual payout boleh disemak sebelum tournament bermula, tetapi bilangan akhir te
 | **Mystery Bounty** | Format bounty di mana hadiah bagi setiap knockout dicabut secara rawak |
 | **Turbo** | Struktur dengan blind level yang jauh lebih pendek; hyper-turbo lebih pendek lagi |
 | **Add-on** | Pembelian cip tambahan sekali sahaja yang ditawarkan kepada semua orang pada akhir tempoh rebuy, tanpa mengira saiz stack |
-| **ICM** | Independent Chip Model — kerangka matematik untuk nilai cip tournament |
+| **ICM** | Independent Chip Model — rangka kerja matematik untuk nilai cip tournament |
 | **Min-cash** | Kedudukan payout terendah — jumlah minimum yang anda peroleh apabila masuk ke kedudukan berbayar |
 
 ---

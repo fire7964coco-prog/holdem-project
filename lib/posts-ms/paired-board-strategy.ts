@@ -182,7 +182,7 @@ Ini juga bukan keseluruhan bet besar. Kumpulan enam hanya 26 daripada 486 kombo,
 
 BB lead hanya 3.0%, jadi situasi ini jarang muncul dalam permainan. Namun prinsipnya jelas: **saiz dipilih dalam konteks range, bukan kekuatan satu tangan sahaja.**
 
-## Patutkah Ace-high fold kepada [c-bet](/ms/solver)?
+## Patutkah Ace-high fold kepada [c-bet](/ms/blog/holdem-continuation-bet)?
 
 **Jangan fold sekerap yang mungkin dicadangkan oleh naluri.** Hanya 18.4% range BB mempunyai sesuatu melebihi pair board. Membuang semua yang lain menyerahkan terlalu banyak pot.
 
@@ -196,7 +196,7 @@ Maka kegunaan pengiraan ini bukan "capai 75%", tetapi **"jangan fold semata-mata
 
 (Pada board berpasangan, tiada siapa secara literal hanya mempunyai Ace-high: semua orang mempunyai pair enam pada board. "Ace-high" di sini bermaksud pair itu bersama Ace sebagai kad tertinggi tambahan.)
 
-:::note[MDF memudahkan bet lawan kepada pure bluff. Kekerapan yang sesuai juga bergantung pada sejauh mana tangan anda merealisasikan equity pada street seterusnya; gunakannya sebagai titik mula, bukan arahan tetap. Sisi harga call diterangkan dalam [asas pot odds](/ms/blog/texas-holdem-rules-for-beginners "thumb:/images/rules-texas-holdem.webp"). Untuk konteks raise sebelum menggunakan rumus yang sama pada preflop, baca [peraturan raise dan re-raise](/ms/blog/holdem-betting-actions).]:::
+:::note[MDF memudahkan bet lawan kepada pure bluff. Kekerapan yang sesuai juga bergantung pada sejauh mana tangan anda merealisasikan equity pada street seterusnya; gunakannya sebagai titik mula, bukan arahan tetap. Sisi harga call bagi aritmetik yang sama diterangkan dalam [pot odds](/ms/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp"), dan [pertahanan 3-bet](/ms/blog/holdem-3bet) menggunakan rumus yang sama pada preflop.]:::
 
 ## Apakah yang berubah semasa bermain?
 
@@ -218,7 +218,7 @@ Cari **satu baris 6♠6♥** dalam jadual setiap tangan — satu-satunya quads p
 
 Kemudian buka **Trainer GTO** pada bar sisi. Tangan dipilih mengikut wajaran range sebenar, dan maklum balas menunjukkan kerugian EV dalam big blind. Percuma, tanpa pemasangan dan tanpa akaun wajib.
 
-## Soalan lazim
+## Soalan Lazim
 
 **Q. Mengapa trips lebih terdedah berbanding set pada board berpasangan?**
 

@@ -183,12 +183,12 @@ Saya sentiasa membuka output solver ketika belajar, namun saya tetap memberikan 
 GTO Preflop Chart | Carta Pemula Ringkas
 Kekerapan bercampur — raise 25% / fold 75% masa | Satu aksi jelas bagi setiap tangan — raise atau fold
 Menganggap lawan juga bermain hampir sempurna | Menganggap lawan membuat kesilapan (memang pun)
-Dibina untuk kedalaman stack, rake dan format tertentu | Kukuh merentasi permainan live dan stake rendah biasa
+Dibina untuk kedalaman stack, rake dan format tertentu | Kukuh merentasi permainan live dan stakes rendah biasa
 Terbaik untuk: regular online, sesi belajar, semakan range | Terbaik untuk: tahun pertama anda, permainan live, membina disiplin
 Salah guna = keputusan yang terasa rawak dan tidak dapat anda jelaskan | Sedikit "terlalu ketat" — kelemahan paling murah dalam poker
 :::
 
-Inilah sebabnya menghafal carta solver secara membuta tuli memakan diri: kekerapan GTO ialah pertahanan menentang lawan yang sempurna. Lawan anda di stake rendah terlalu banyak call, terlalu jarang fold, dan tidak pernah 3-bet ringan (light 3-bet) — menentang mereka, bluff solver yang diseimbangkan dengan teliti menghasilkan *kurang* wang berbanding sekadar raise tangan bagus dan fold sampah. Anda akhirnya membuat langkah kekerapan bercampur yang tidak dapat anda jelaskan, dalam permainan di mana langkah biasa memperoleh lebih banyak. ==g:Pelajari carta ringkas sehingga raise-or-fold menjadi automatik; tambah GTO preflop chart apabila anda beralih ke online atau mula belajar secara serius.== Jambatan antara kedua-duanya ialah memahami [equity poker](/ms/blog/holdem-equity "thumb:/images/holdem-equity-hero.webp") — matematik bahagian kemenangan yang menjadi asas EV solver.
+Inilah sebabnya menghafal carta solver secara membuta tuli memakan diri: kekerapan GTO ialah pertahanan menentang lawan yang sempurna. Lawan anda di stakes rendah terlalu banyak call, terlalu jarang fold, dan tidak pernah 3-bet ringan (light 3-bet) — menentang mereka, bluff solver yang diseimbangkan dengan teliti menghasilkan *kurang* wang berbanding sekadar raise tangan bagus dan fold sampah. Anda akhirnya membuat langkah kekerapan bercampur yang tidak dapat anda jelaskan, dalam permainan di mana langkah biasa memperoleh lebih banyak. ==g:Pelajari carta ringkas sehingga raise-or-fold menjadi automatik; tambah GTO preflop chart apabila anda beralih ke online atau mula belajar secara serius.== Jambatan antara kedua-duanya ialah memahami [equity poker](/ms/blog/holdem-equity "thumb:/images/holdem-equity-hero.webp") — matematik bahagian kemenangan yang menjadi asas EV solver.
 
 ---
 

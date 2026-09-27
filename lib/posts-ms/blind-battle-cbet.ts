@@ -175,7 +175,7 @@ Semua baris melebihi 100% dalam petikan ini ialah pemain yang bukan caller. ⚠ 
 
 ⚠ **EQR lebih tinggi juga tidak semestinya bermakna kelebihan lebih besar.** Equity tertinggi dalam jadual, ⑧ pada **68.9%**, memberikan EQR **109.6%**, lebih rendah daripada **117.8%** pada ⑨ walaupun equity ⑨ hanya **58.3%**, kira-kira sepuluh mata lebih rendah. Rumusnya ==EV ÷ (equity × pot)==: equity ialah penyebut. Bagi EV sama, penyebut lebih kecil menghasilkan nisbah lebih besar. Nilai 103.1% di sini tidak patut dinilai sebagai “gagal mencapai 117.8%”.
 
-BB pula mempunyai posisi tetapi EQR hanya 96.1%, sisi lain bagi pembahagian nilai yang sama. Asas [urutan tindakan dan posisi](/ms/blog/holdem-game-order "thumb:/images/blog-holdem-game-flow.webp") membantu memahami kelebihan maklumat itu sebelum membandingkannya dengan kekuatan range.
+BB pula mempunyai posisi tetapi EQR hanya 96.1%, sisi lain bagi pembahagian nilai yang sama. Mengapa posisi lazimnya menguntungkan, dan bila ia tidak mencukupi, diterangkan dalam [strategi posisi](/ms/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp").
 
 ## Apakah pelajaran yang boleh digunakan di meja?
 
@@ -183,7 +183,7 @@ BB pula mempunyai posisi tetapi EQR hanya 96.1%, sisi lain bagi pembahagian nila
 - **Saiz yang digunakan ialah satu pertiga pot.** Range BB dengan 525 kombo boleh ditekan secara luas melalui saiz kecil. ⚠ Tetapi tree hanya menawarkan **33%**. Pengiraan ini tidak boleh menjawab sama ada bet besar lebih buruk. [Contoh AA6](/ms/blog/ace-paired-board-strategy) kemudian mempunyai pilihan 75% juga.
 - **★Pada SPR 16.2, rancang respons kepada raise terlebih dahulu.** Bet dengan 67.4% range membuka banyak peluang untuk lawan raise. Dengan baki bersamaan kira-kira **enam belas pot**, top pair tidak secara automatik sesuai untuk seluruh stack. Pot 3-bet SPR 4.0 mempunyai ruang manuver jauh lebih kecil. Di sini, call lalu menilai turn sesuai dipertimbangkan bagi lebih banyak tangan. Di luar sembilan set dan **two pair KT, K6, T6**, sebab untuk segera melakukan commitment penuh lebih terhad. 🪶 **AA berada di bawah two pair**, kerana overpair masih hanya satu pair; ia bukan dilemahkan oleh sebarang “sekatan” king. Jadual menyusun set → two pair → overpair, sementara 1.7%, 2.4%, 1.1% ialah bahagian range, bukannya markah kekuatan. ⚠ Node selepas raise tidak dikira; ini pertimbangan berdasarkan SPR, bukan arahan solver.
 - **Sebagai BB, sedar kesan memindahkan KK dan TT kepada 3-bet.** Range call anda kemudian hanya memegang set 66 pada board ini. Bahagian atas range call menjadi lebih nipis.
-- **Jangan baca check 32.6% sebagai kelemahan semata-mata.** Sebahagian tangan boleh digunakan untuk meneruskan atau check-raise. Semak prinsip itu mengikut posisi ini dalam [solver dan latihan c-bet](/ms/solver), sambil mengingati bahawa node respons belum dikira dalam contoh ini.
+- **Jangan baca check 32.6% sebagai kelemahan semata-mata.** Sebahagian tangan boleh digunakan untuk meneruskan atau check-raise. Garis panduan umum dalam [strategi c-bet](/ms/blog/holdem-continuation-bet "thumb:/images/holdem-continuation-bet-hero.webp") patut disemak semula untuk tempat duduk ini, sambil mengingati bahawa node respons belum dikira dalam contoh ini.
 
 :::readnext[Baca seterusnya]
 /ms/blog/3bet-pot-low-board | Flop Rendah, Bet Besar 97.8% | /images/gto-3bp-low-oop-ms.webp

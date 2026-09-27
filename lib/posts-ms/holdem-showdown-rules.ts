@@ -91,7 +91,7 @@ Dalam kejohanan, apabila ada all-in dan semua pertaruhan selesai, semua tangan y
 
 Satu perincian: **side pot dibayar** dahulu, tetapi susunan pembayaran berbeza daripada susunan menunjukkan kad. Dalam kejohanan, semua tangan yang masih hidup ditunjukkan apabila semua pertaruhan selesai. Dalam cash game WSOP 2026 B149, pemain side pot menunjukkan dahulu; dalam No-Limit yang tamat sebelum river, pemain all-in menunjukkan dahulu.
 
-Untuk cara side pot dibina dan dibayar apabila pemain all-in, lihat [peraturan all-in dan side pot](/ms/blog/holdem-all-in-rules); untuk pot yang dibahagi, lihat peraturan split pot.
+Untuk cara side pot dibina dan dibayar apabila pemain all-in, lihat [peraturan all-in dan side pot](/ms/blog/holdem-all-in-rules); untuk pot yang dibahagi, lihat [peraturan split pot dan chop](/ms/blog/holdem-split-pot-rules).
 
 ---
 
@@ -197,6 +197,16 @@ A. Tidak. Jika semua orang lain fold sebelum showdown, anda menang pot serta-mer
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Pillar</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Peraturan Texas Hold'em untuk Pemain Baru</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Peraturan lengkap — dari blind hingga showdown</div>
+  </a>
+  <a href="/ms/blog/holdem-split-pot-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Split Pot</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Peraturan Split Pot dan Side Pot</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Bila pot dibahagi dan cara side pot berfungsi</div>
+  </a>
+  <a href="/ms/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Pemecah Seri</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Peraturan Kicker dan Pemecah Seri</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Tangan sama — siapa menang ketika showdown?</div>
   </a>
 </div>
 `.trim(),

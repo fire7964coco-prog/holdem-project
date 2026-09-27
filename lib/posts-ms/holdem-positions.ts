@@ -232,7 +232,7 @@ A. Seat 1 ialah kerusi fizikal, bukan posisi — di kebanyakan bilik kad, ia tem
 
 ---
 
-## Perkara yang Perlu Diingat
+## 4 Perkara untuk Diingati
 
 1. **Posisi ialah nama, bukan kerusi.** Setiap tempat duduk dinamakan mengikut jaraknya dari butang pengedar, dan setiap nama biasanya beralih satu tempat ikut arah jam setiap tangan.
 2. **Carta dalam satu baris:** UTG → UTG+1 → UTG+2 → LJ → HJ → CO → BTN → SB → BB. Preflop bermula di UTG dan berakhir di big blind; postflop bermula di small blind dan berakhir di button.

@@ -39,7 +39,7 @@
 | **Q13-a** | **MA-147 ②③ (1/2) — cooler · bad-beat · fish** | 브리프 = `docs/harden-brief/queue-Q13-용어클러스터.md`(§0 분할 근거 · §1 자리 표 · §2 1차 출처 축어). 앵커 C1~C5 · B1~B4 · F1~F2 · es 고유 2(fish 「izquierda」→「derecha」 **WRONG** · cooler FAQ 「~75%」 삭제) | **Opus 전 구간 · 1세션** | ✅ | (아래 §1-Q13-a) | 1차 렌즈 5종 지적 **54**(렌즈 간 중복 9 제거 후 **45**) · 반영 **38** · 기각·판정유지 **5** · 등재만 **2** / **2차 교열 지적 10 · 반영 8 · 기록 2** | 09-21 |
 | **Q13-b** | **MA-147 ②③ (2/2) — glossary · rake · straddle** | 같은 브리프 §1 「Q13-b」 표(G1~G3 · R1~R5 · S1~S4 · 약 110자리) + §3 처방 문면. 🔴 **Q13-a가 남긴 것 = §2 「Q13-a가 남긴 것」 절을 먼저 읽어라** | **Codex 현재 모델 A/B/C · 1세션** | ✅ | (아래 §1-Q13-b) | 독립 4렌즈 + 2차 교열 · 통합 쟁점 10종: 반영 7 · 이관 2 · 기각 1 | 09-22 |
 | **Q14** | **MA-148 이행 — zh+zh-hant 정정 13 + EN-먼저 신규 4** | **MA-148 ①~④**(보고서 §D · 원장 `ledger/zh/`·`ledger/zh-hant/` 16편 1,958행). 🔴 **헤드 09-21 실측: 17개 앵커 중 «고쳐진 것 1»**(④ `3-bet-or-fold from the SB` «vs a raise»는 표 L179·본문 L222~224가 이미 닫혔고 **요약 L297·FAQ L273 두 자리만 남았다** — 검수장 지적이 이 둘을 정확히 가리킨다). ① zh+zh-hant 공통 c-bet 직답 「四到五成」→「約 30–45%」(+ pt·de·ja 옛 값 인용 = **5로케일**) ② zh 4 ③ zh-hant 8 ④ EN-먼저 4(`position-play` 「necessarily above 100%」 = 자사 캡처 5/13 스팟 반례 · `3bet` 「position leverage」 · SB 2자리 · `limping` tldr 토너 전제). 🟠 요청 = `.solver-captures/data-zh.json` 13스팟 **IP 측 `actions` 빈 배열** → 「IP 65–75% c-bet」 4행 대조 불가(UNV) | **Opus 전 구간 · 1세션** | ✅ | (아래 §1-Q14) | 독립 4렌즈 + 2차 교열 · 신규 **5종 반영** · 범위 밖 **2종 이관** | 09-22 |
-| **Q15** | **ms 30편 레인 경계 용어 통일 + 기존 21편 링크 복원 + 구판 라벨** | 브리프 = `docs/harden-brief/queue-Q15-ms-용어통일-링크복원.md`(§1 교차 렌즈 판정 10항 · §1-X 치환 금지 예외 · §2 check:structure ms 행 · §3 게이트). 기준 `469d08f8`. 🔴 끝나면 헤드가 배포 → 아스트라 교차 요청 + ms 동결 | Opus 5.5 · 1세션 | ☐ 대기 | — | — | 09-27 등재 |
+| **Q15** | **ms 30편 레인 경계 용어 통일 + 기존 21편 링크 복원 + 구판 라벨** | 브리프 = `docs/harden-brief/queue-Q15-ms-용어통일-링크복원.md`(§1 교차 렌즈 판정 10항 · §1-X 치환 금지 예외 · §2 check:structure ms 행 · §3 게이트). 기준 `469d08f8`. 🔴 끝나면 헤드가 배포 → 아스트라 교차 요청 + ms 동결 | Opus 5.5 · 1세션 | ✅ | (아래 §1-Q15) | 렌즈 4종 지적 **30**(렌즈 간 중복 5 제거 후 **25**) · 반영 **15**(편집 20자리) · 기각·유지 **6** · 기록/이관 **4** + 2차 교열 새 결함 3/반영 3 | 09-27 |
 
 ### §1-Q1. 회차 Q1 판정 — 결재 1(shc #13) · 결재 6·소품 5건 (2026-09-11)
 
@@ -744,6 +744,22 @@ T1 **7/7** · T2 **8/8** · T3 **9/9**(`Q10s` 포함) · T4 **23/23**(`66–22` 
 
 🔴 **환경 사고 1건 — `node_modules` 정션이 풀렸다(보고)**: `npm install -D tsx`가 이 워크트리의 `node_modules` **정션을 지우고 실디렉터리로 교체**했다(`npm warn reify Removing non-directory …`). **원본은 무사하다** — 본체 `Holdem_Project/node_modules`는 149개·8/1 그대로이고 본체 `git status`도 clean. 지금 상태로 빌드·게이트 전부 정상이다. 다시 정션으로 묶을지는 §5 Q11-5.
 
+### §1-Q15 (2026-09-27 · ms 51편 — 용어 통일 + 링크 복원 + 구판 라벨)
+
+**범위**: `lib/posts-ms/` 44파일(브리프 `docs/harden-brief/queue-Q15-ms-용어통일-링크복원.md` · 기준 `469d08f8` → 착수 시 `3f9a32a9`, C 전 `git merge main` = `bd23ae4d` · ms 파일 충돌 0). EN·다른 로케일·KO는 한 자도 안 고쳤다. `updated`·`masterUpdated` 불변(L-2h·L-2i 선례 · 링크·용어만).
+
+**§2 링크 복원 (21편 중 20편 행)**: `check:structure --locale=ms` 🟠 **20 → 1**. 방식 = EN 같은 문장 자리의 `/en/blog/<t>`를 찾아 ① ms가 문장을 살리고 링크만 뺀 곳은 **앵커만 씌움** ② 대체 대상(`/ms/solver`·`holdem-game-order`·`texas-holdem-rules-for-beginners`·`holdem-betting-actions`)으로 돌려 둔 곳은 **EN 문장으로 되돌림** ③ 문장째 뺀 곳(beginners L140·L247·L286 · tvc L38 · betting-actions L138)은 **EN 축어 번역으로 복원** ④ readnext 6블록·카드 그리드 7블록을 EN 대상·순서로. 🪶 인바운드는 줄었지만(game-order 24→16 · `/ms/solver` 42→31) **EN 분포와 1:1**이 됐다(렌즈 3 실측) — 옛 링크는 «대상 부재 대체»였다. 남은 1 = `holdem-game-order faq −4`(EN이 07-02 이후 FAQ 4문항 추가 · 번역 필요 · 범위 밖 → §5 Q15-2).
+
+**§1 용어 (신규 30편)**: ① favourite 5 + gloss 3(+ outs 첫 등장 gloss) · ③ leak 8(첫 등장 «leak (kelemahan berulang)» · implied-odds L128 예외 유지) · ④ stakes rendah 13 · ⑤ Ringkasan pantas 2 + kicker L51 · ⑥ «4/6 Perkara untuk Diingati»(항목 직접 셈) · ⑦ tournament 5(split-pot 3 · card-counting 1 · tiebreak L233은 **렌즈 지적으로 되돌림** — 같은 괄호 안 룰북명 «Peraturan Kejohanan 85»와 충돌) · ⑧ posisi 2 · ⑪ rangka kerja 3 · ② orbit 병기 3편 · 🟡 **⑨(di hadapan · 확신 낮음)은 적용 안 함**. gloss ① hand-rankings L111 «bad beat» → «cooler»(EN L110 «beat» 오역 · 사실 모순 해소).
+
+**§3 라벨**: readnext «Teruskan membaca» 5 → «Baca seterusnya» · «## Soalan lazim» 9 → «## Soalan Lazim»(잔존 0 · 47/51).
+
+**렌즈 4종**(말레이 네이티브 · EN 대조 · SEO/GEO · 교열 — 전부 Opus 서브): 🔴 이번 편집 유래 실결함 **1**(betting-actions L110 «dibincangkan dalam [bila masa…]» — «panduan» 누락 비문) · 번역투·어색 11 · 파일 내 용어 혼재 4 · 원본 유래 3 · 렌더러 1. **반영 15건 = 편집 20자리**(비문 1 · 번역투·조각문 11 · Button 표기 1건 4자리 · tiebreak 되돌림 1 · donk «terpakai» 1) · **기각·유지 6**(a-high·k-high «tempat duduk itu sendiri» = EN «seat itself» 축어 · readnext 제목은 코퍼스 라벨 재사용 · icm «bukan satu leak» 뜻 유지 · hand-rankings L199 showdown 절·blind-battle L186 단서 절 = ms 원본 부가 · 해 없음) · **기록/이관 4**(§2 ⓑⓒ · §5 Q15-4 렌더러 · kejohanan 혼재). **2차 교열**(반영 20자리 · 네이티브 1렌즈) = 17 문제 없음 · 새 결함 **3 전부 반영**(beginners 카드 제목 «Butang»↔부제 «Button» 갈림 · broadway «pecahan» 연속 이의 · hand-rankings «panduan» 연속). 🪶 로케일 전체 Button/butang 표기 갈림(game-order·blind-meaning·hand-rankings·starting-hands-chart)은 범위 밖 → §2 «Q15가 남긴 것» ⓔ.
+
+**§13**: 카드·수치 문단은 링크 문장만 건드렸다. diff 기계 대조 = 본문 수치 변경 0(추가 숫자는 카드 CSS · EN 복원문의 169 · 6-max/9-max · N Perkara뿐 · 제거는 readnext 제목의 «K83»·«99.8%»·«99.9%» = 행 교체).
+
+**게이트**: `audit:hard --locale=ms` 51/51 🔴0 🟠0(커버리지 «미검사 28편»은 카드 문단 무변경) · `check:structure` ms 🟠1(범위 밖) · `check:intl-links` 607편 통과 · `check:meta` 초과 0 · `check:seo-sync` 🔴0 · `check:calc-parity:all` 12사본 0 · `check:hangul` 0 · `check:answer-echo` 🔴0 · build 73 + intl 607 · **FAQ 스키마 = ms 산출물 직접 대조 51/51 일치**(`audit:hard --schema`는 ms에 무효 — §5 Q15-3).
+
 ### §1-Q14 (2026-09-22 · MA-148 — zh·zh-hant 정정 13 + EN-먼저 4)
 
 > 🔵 **헤드 처리 (2026-09-22 (7) · Q14 `3cfabdc6` + 독립검수 수정 `8bfcd35c` → 머지 `603deb7a` · 배포 `086161eb`)** — Q14-1=MB-079 발신 · Q14-2=ja·zh·zh-hant HARDEN §6-0 통지 · Q14-3=KO 후속 `649c2f0c` · Q14-4=solver 캡처 IP actions 빈 배열은 미검증으로 유지 · Q14-5=`settled-decisions` §3-T 승격 · Q14-6=round2 라이브 118URL/FAQ1325/본문106 일치, IndexNow 신규103 HTTP200, WORKLOG·핸드오프 갱신. 새 intentional diff·update-calendar 요청 0. 전체 재검수나 별도 잔여 묶음은 열지 않았다.
@@ -904,6 +920,8 @@ B 176 축어 예시(100 벳 + 140 올인 → **240**)·A 96.a(1,700 + 500 → **
 🪶 **회차 중 자기 수리 2건**: ja 직답이 178자(규격 90~170) + 본문과 축어 겹침 🔴 → 재작성해 164자·echo 0으로. **게이트가 내 수리를 되받아쳤다.**
 
 ## 2. 미결 (해결될 때까지 유지)
+
+- 🟠 **Q15가 남긴 것 (2026-09-27 · ms)** — ⓐ `holdem-game-order` FAQ −4(EN 07-02 이후 추가분 번역 · masterUpdated 07-02 · 꼬리 드리프트 6편 중 하나) ⓑ 기존 21편의 «kejohanan»(일반 명사) 잔존 — tvc L43·L66·L378 «cip/Equity kejohanan» · blind-meaning 본문 «kejohanan» vs 이번 카드 «Tournament»(§1-⑦은 신규 30편만이라 범위 밖 · 동결 전 판정 필요) ⓒ `holdem-game-order:169` «Keseluruhan Urutan Sekali Pandang»(⑤ 라벨 잔존 · 범위 밖) ⓓ ⑨ «di hadapan»(확신 낮음 · 미적용) ⓔ 좌석명 «Button»/«butang» 로케일 내 갈림(beginners는 Button으로 통일 · 나머지 편 미정 · «butang pengedar»=물리 버튼은 소문자 유지가 맞다).
 
 - ✅ ~~`lib/render-markdown.ts:200`이 모든 이미지에 `width="1200" height="630"`~~ → **Q7-a에서 닫았다.** 파일별 실제 치수표
   (`lib/image-dims.ts` · 생성기 `scripts/gen-image-dims.mjs` · 게이트 `npm run check:image-dims`)를 보게 바꿨다.
@@ -1327,6 +1345,14 @@ B 176 축어 예시(100 벳 + 140 올인 → **240**)·A 96.a(1,700 + 500 → **
 ## 5. 헤드 요청 (헤드가 처리하면 ✅)
 
 > 회차마다 여기에 쌓는다: ① MB 통지 초안(EN 변경 슬러그·자리·되돌리지 마라·앵커 갱신) ② ja·zh·zh-hant 파일 목록(§6-0 통지용) ③ `locale-intentional-diffs`·`settled-decisions` 승격 ④ 정본(en-first-queue·핸드오프)에서 지울 항목.
+
+### Q15 (2026-09-27 · ms 44파일 — 용어·링크·라벨 · **배포가 걸린 회차다**)
+
+- 🔴 **Q15-1 배포 + MB 통지 초안**: 「ms Q15 — 신규 30편 용어 통일(favourite·leak·stakes rendah·Ringkasan pantas·N Perkara·tournament·posisi·rangka kerja·orbit) + 기존 20편 EN 링크 복원(본문·readnext·카드) + 구판 라벨 14. `updated`·`masterUpdated` 불변. 되돌리지 마라: hand-rankings L111 «cooler»(EN L110 «beat») · tiebreak L233 «Kejohanan WSOP»(룰북명과 한 괄호). 이 해시로 **GPT 아스트라 교차 검수 요청 + ms 동결**(브리프 머리).」 로케일 = ms만(EN·ja·zh·zh-hant 무변경 → §6-0 통지 불요). sitemap은 `updated` 불변이라 행 변화 0이 정상.
+- 🟠 **Q15-2 ms 드리프트 회차 재료**: `holdem-game-order` FAQ 4문항 번역(EN L354·L358·L362·L390) + 꼬리 드리프트 ms 6편(`audit:hard --locale=ms` 미러 드리프트 절). 동결과 충돌하면 아스트라 판정 뒤로.
+- 🟠 **Q15-3 게이트 결함**: `audit:hard -- --schema --locale=<loc>`이 `--locale`을 무시하고 `.next/server/app/blog`(KO)와 대조한다(`scripts/audit-hardening.mjs:1635`) → 비KO 로케일에서 «산출물 없음»·문항 불일치가 가짜로 뜬다. 처방 = 로케일이면 `.next/server/app/<loc>/blog` · 셀프테스트 1건. 이번 회차는 scratch 스크립트로 ms 51/51 직접 대조했다.
+- 🟠 **Q15-4 렌더러**: H2 안 링크(`## …[c-bet](/…)?`)가 TOC 문자열과 앵커 id에 마크다운 원문을 흘린다(ms paired-board L185 · EN L278 동형 · 레포 9편 · 렌즈 3 실측 id `#patutkah-acehigh-fold-kepada-cbetmsblogholdemcontinuationbet`). 근본책 = TOC·slugify에서 `[x](url)` 벗기기 — EN-먼저·게이트 회차.
+- 🟡 **Q15-5 판정 요청**: §2 «Q15가 남긴 것» ⓑ(기존 21편 kejohanan 통일 여부)를 동결 전에 할지 헤드 결정.
 
 ### Q14 (2026-09-22 · MA-148 이행 — 30포스트 + 공용 도표)
 
@@ -2074,6 +2100,8 @@ pdf-page 19 · number-format 24 · image-dims 8). 전 게이트에 «못 보는 
 ## 6. 자산 축적 체크 (매 회차 마감 3종)
 
 ① 키워드뱅크 — 해당 회차만 ② 편차 판정 → §5 ③ 판정 정본 승격 → §5
+
+**Q15**: ① 키워드뱅크 해당 없음(메타·키워드 축 무변경 · 메타 변경은 bad-beat tldr gloss 1). ② 새 의도적 편차 0 · ms 추가 절 2(hand-rankings showdown · blind-battle 단서)는 원본 유지 판정. ③ 정본 후보 = «대상 부재로 링크를 뺄 때는 문장을 살리고 대체 대상으로 돌리지 마라 — 대체 링크는 나중에 복원할 때 문장까지 되돌려야 한다»(이번 20편 중 12편이 대체 링크였다) → 헤드가 `docs/ms-translation-lanes.md`에 승격할지 판단.
 
 **Q13-b**: ① 키워드뱅크 해당없음(기존 원장 사실/범위어 정정, 키워드축 불변; desc수정은 rake8+zh-hant straddle 사실정합). ② 새편차0·기존거울쌍판정은 §4/§5 Q13b-6. ③ 정본승격 후보는 §5 Q13b-3. 교훈: 같은 명제는 다른 편의 정의/직답에도 남는다(glossary의수수료·straddle의레이크). 레이크 조건을 고칠 때 관련 세 편의 문장까지 확인할 것.
 

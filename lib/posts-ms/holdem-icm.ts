@@ -101,7 +101,7 @@ Itulah dia dalam angka: Leader memegang ==separuh cip tetapi hanya 38.4% wang==,
 
 Pertembungan klasik ialah *call* all-in yang marginal. Dalam chip EV, coin flip untuk pot besar boleh jadi okey malah bagus — anda menang cip sebanyak yang anda hilang. Dalam ICM ia boleh menjadi ==fold== yang jelas, kerana tersingkir menyebabkan anda kehilangan equity dalam setiap hadiah di atas hadiah yang sudah anda kunci (hadiah minimum yang dijamin itu sendiri kekal milik anda; di bubble, ketika belum ada apa-apa yang terkunci, anda kehilangan segala-galanya), manakala cip yang anda menangi bernilai kurang daripada nilai mukanya.
 
-Di situlah selama ini saya salah faham tentang jacks itu. Cukai itu dikenakan pada *call*, dan sisi sebaliknya itulah yang membuatkan bubble boleh dimainkan: kerana calling range semua orang mengetat, fold equity anda bernilai **lebih** daripada nilainya dalam cip. Shove first-in ialah senjata medium stack (stack sederhana) di bubble, bukan kebocorannya — saya cuma bertembung dengan satu-satunya pemain yang boleh call paling luas, dan itu varians, bukan kesilapan strategi. ==Chip EV bertanya "adakah ini membina stack saya?" ICM bertanya "adakah ini membina bankroll saya?"== — dan hanya yang kedua itu yang membayar.
+Di situlah selama ini saya salah faham tentang jacks itu. Cukai itu dikenakan pada *call*, dan sisi sebaliknya itulah yang membuatkan bubble boleh dimainkan: kerana calling range semua orang mengetat, fold equity anda bernilai **lebih** daripada nilainya dalam cip. Shove first-in ialah senjata medium stack (stack sederhana) di bubble, bukan satu leak (kelemahan berulang) — saya cuma bertembung dengan satu-satunya pemain yang boleh call paling luas, dan itu varians, bukan kesilapan strategi. ==Chip EV bertanya "adakah ini membina stack saya?" ICM bertanya "adakah ini membina bankroll saya?"== — dan hanya yang kedua itu yang membayar.
 
 ---
 
@@ -164,7 +164,7 @@ Gunakan chip EV sebagai anggaran yang memadai apabila:
 - **Permainan deep-stack dengan blind yang kecil**, ketika anda ada ruang untuk mengatasi lawan dengan permainan, bukan sekadar all-in.
 - **Heads-up untuk gelaran juara**, ketika hanya dua hadiah tinggal, jadi wang yang masih dipertaruhkan boleh dinilai berdasarkan chip EV.
 
-Kebocoran yang biasa ialah menggunakan ICM secara berlebihan: fold terus-menerus sehingga menjadi short stack "untuk naik tangga payout" dan bukannya mengumpul cip ketika tekanan belum benar-benar wujud. ICM ialah alat peringkat akhir, bukan alasan untuk bermain takut sepanjang tournament.
+Leak yang biasa ialah menggunakan ICM secara berlebihan: fold terus-menerus sehingga menjadi short stack "untuk naik tangga payout" dan bukannya mengumpul cip ketika tekanan belum benar-benar wujud. ICM ialah alat peringkat akhir, bukan alasan untuk bermain takut sepanjang tournament.
 
 ---
 
@@ -174,7 +174,7 @@ Kebocoran yang biasa ialah menggunakan ICM secara berlebihan: fold terus-menerus
 
 - **Kemahiran.** ICM menganggap juara dunia dan pemain kali pertama dengan stack yang sama sebagai setara. Cip pemain yang lebih mahir bernilai lebih daripada yang dikatakan model.
 - **Posisi.** Stack 3-big-blind di button (masih bebas memilih saatnya dan open-shove dengan fold equity penuh dari kerusi terbaik) bernilai lebih daripada stack yang sama di big blind (satu pertiga daripadanya sudah dipasang, terpaksa all-in dalam satu dua tangan). ICM tidak nampak kerusi.
-- **Blind dan permainan akan datang.** ICM membekukan tournament pada saat ini; ia mengabaikan blind dan ante yang meningkat, serta bagaimana beberapa pusingan meja seterusnya akan berlangsung.
+- **Blind dan permainan akan datang.** ICM membekukan tournament pada saat ini; ia mengabaikan blind dan ante yang meningkat, serta bagaimana beberapa pusingan meja (orbit) seterusnya akan berlangsung.
 
 Malah ada sokongan empirikal untuk kelemahan ini: satu kajian besar pada 2025 yang menguji semula ICM terhadap keputusan tournament sebenar mendapati ia cenderung ==menilai terlalu rendah big stack dan terlalu tinggi short stack==, sebahagiannya kerana chip leader yang mahir boleh memanfaatkan tekanan ICM untuk menang *lebih* daripada ramalan model mentah. Solver lanjutan menambah pembetulan "future game" atas sebab inilah. Semua itu tidak menjadikan ICM salah — ia menjadikannya anggaran pertama yang kukuh yang anda laraskan mengikut kemahiran dan posisi, bukan hukum fizik.
 

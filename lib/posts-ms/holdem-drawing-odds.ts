@@ -81,7 +81,7 @@ Flop set 11.8% daripada masa bermakna anda **terlepas 88% daripada masa** dan fo
 
 :::tip[Peraturan mudahnya: hanya call raise untuk set mining jika effective stack lebih kurang 15-20× harga call itu. Stack yang dalam menjadikan pair kecil emas; stack yang pendek menjadikannya sampah. Pair itu tidak berubah — implied odds yang berubah.]:::
 
-Set mining ialah permainan [implied odds](/ms/blog/holdem-implied-odds "thumb:/images/holdem-implied-odds-hero.webp") yang paling tulen — peluang kecil untuk memenangi pot besar kemudian. Kerangka penuhnya — formula, gandaan stack ikut draw, dan reverse implied odds — ada dalam panduan itu.
+Set mining ialah permainan [implied odds](/ms/blog/holdem-implied-odds "thumb:/images/holdem-implied-odds-hero.webp") yang paling tulen — peluang kecil untuk memenangi pot besar kemudian. Rangka kerja penuhnya — formula, gandaan stack ikut draw, dan reverse implied odds — ada dalam panduan itu.
 
 Dua nombor berkaitan yang sering ditanya:
 
@@ -177,7 +177,7 @@ Angka full house mengira setiap cara flop memberi anda full house dengan pocket 
 
 </div>
 
-Yang mengejutkan ramai: jika **anda** memegang aces di meja 10 pemain, peluang pemain *kedua* juga memegang aces lebih kurang **1 dalam 136** (sembilan lawan, masing-masing 1 ÷ C(50,2) = 1/1,225). Jarang, tetapi itulah cooler aces-lawan-aces yang mengosongkan stack dan dipersalahkan kepada perisian "dimanipulasi". Itu cuma dek. Untuk tangan mana daripada 1,326 itu yang berbaloi dimainkan dari setiap kerusi, lihat [carta starting hand ikut posisi](/ms/blog/holdem-starting-hands-chart).
+Yang mengejutkan ramai: jika **anda** memegang aces di meja 10 pemain, peluang pemain *kedua* juga memegang aces lebih kurang **1 dalam 136** (sembilan lawan, masing-masing 1 ÷ C(50,2) = 1/1,225). Jarang, tetapi itulah cooler aces-lawan-aces yang mengosongkan stack dan dipersalahkan kepada perisian "dimanipulasi". Itu cuma dek. Untuk tangan mana daripada 1,326 itu yang berbaloi dimainkan dari setiap posisi, lihat [carta starting hand ikut posisi](/ms/blog/holdem-starting-hands-chart).
 
 ---
 

@@ -107,7 +107,7 @@ Fold bermaksud anda serahkan kad anda dan keluar daripada hand itu. Anda tidak b
 
 Ya — bila-bila masa giliran anda, anda boleh fold, walaupun sebelum bertaruh apa-apa, dan fold itu mengikat. Namun ia bukan tanpa akibat: dalam kejohanan, fold sedangkan tiada pertaruhan di hadapan anda dikira "non-standard fold" di bawah ==WSOP Rule 84== dan boleh menerima amaran. Dan awas perangkap ini: **fold ketika anda boleh cek secara percuma bermakna membuang hand tanpa sebab**. Kalau tiada sesiapa bertaruh, cek sahaja.
 
-Satu adab poker live: jangan fold ==di luar giliran==. Tunggu sehingga aksi sampai kepada anda — fold awal memberi maklumat kepada pemain yang masih membuat keputusan, dan kebanyakan bilik kad akan memberi amaran atau penalti. Mengetahui *bila* fold adalah langkah yang betul ialah kemahiran tersendiri — itu dibincangkan dalam panduan bila masa untuk fold dalam poker.
+Satu adab poker live: jangan fold ==di luar giliran==. Tunggu sehingga aksi sampai kepada anda — fold awal memberi maklumat kepada pemain yang masih membuat keputusan, dan kebanyakan bilik kad akan memberi amaran atau penalti. Mengetahui *bila* fold adalah langkah yang betul ialah kemahiran tersendiri — itu dibincangkan dalam [panduan bila masa untuk fold dalam poker](/ms/blog/holdem-when-to-fold).
 
 ---
 
@@ -135,7 +135,7 @@ Dua peraturan poker live yang datang bersama raise:
 1. **Umumkan "raise" sebelum menggerakkan cip.** Sebut "call" kemudian tolak cip tambahan? Pengumuman anda sudah mengikat sejak saat itu (==Rule 90.d==) — lebihannya tidak dikira. ==String bet== yang sebenar lain: menolak cip dalam beberapa pergerakan **tanpa** mengumumkan "raise" dahulu (==Rule 103==).
 2. **Satu pergerakan.** Jika anda tidak mengumumkan, cip anda mesti masuk dalam satu pergerakan ke hadapan sahaja.
 
-*Berapa banyak* anda patut raise (open 2.5x, 3-bet 3x, saiz mengikut tekstur board) ialah strategi, bukan peraturan. Selepas 3-bet dan call berlaku, [contoh pot 3-bet pada flop AK2](/ms/blog/3bet-pot-cbet) menunjukkan bagaimana range dan stack yang tinggal mempengaruhi keputusan seterusnya.
+*Berapa banyak* anda patut raise (open 2.5x, 3-bet 3x, saiz mengikut tekstur board) ialah strategi, bukan peraturan — tempatnya dalam [panduan utama strategi Texas Hold'em](/ms/blog/holdem-strategy). Selepas 3-bet dan call berlaku, [contoh pot 3-bet pada flop AK2](/ms/blog/3bet-pot-cbet) menunjukkan bagaimana range dan stack yang tinggal mempengaruhi keputusan seterusnya.
 
 ---
 
@@ -158,7 +158,7 @@ All-in bermaksud mempertaruhkan ==semua cip yang anda ada==. Anda boleh melakuka
 
 Jika all-in anda *lebih kecil* daripada pertaruhan semasa, anda tidak terkeluar: anda cuma bersaing untuk ==pot utama== yang dihadkan pada sumbangan anda, manakala cip lebihan daripada stack yang lebih besar membentuk ==side pot== yang anda tidak boleh menang. Dan all-in yang *kurang daripada satu min-raise penuh* umumnya tidak membuka semula raise untuk pemain yang sudah bertindak — peraturan halus yang mengejutkan pemain tetap sekalipun.
 
-Mekanik penuhnya — kiraan side pot, siapa tunjuk kad dahulu, table stakes — ada dalam [peraturan all-in dan side pot](/ms/blog/holdem-all-in-rules), dan apa yang berlaku apabila hand all-in seri diliputi oleh peraturan split pot.
+Mekanik penuhnya — kiraan side pot, siapa tunjuk kad dahulu, table stakes — ada dalam [peraturan all-in dan side pot](/ms/blog/holdem-all-in-rules), dan apa yang berlaku apabila hand all-in seri diliputi oleh [peraturan split pot dan chop](/ms/blog/holdem-split-pot-rules).
 
 ---
 
@@ -167,8 +167,8 @@ Mekanik penuhnya — kiraan side pot, siapa tunjuk kad dahulu, table stakes — 
 Panduan ini merangkumi apa *itu* setiap aksi dan bila ia *sah*. Yang mana untuk dipilih — bila untuk bertaruh, bila call menguntungkan, bila hand yang bagus mesti di-fold — ialah cabang kemahiran yang lain:
 
 - Menilai kekuatan mentah hand anda dahulu: [kedudukan tangan poker](/ms/blog/holdem-hand-rankings)
-- Kerangka untuk setiap keputusan: strategi Texas Hold'em dan 5 keputusannya
-- Kenapa tempat duduk anda mengubah segalanya: penjelasan posisi dalam poker
+- Rangka kerja untuk setiap keputusan: [strategi Texas Hold'em — 5 keputusan](/ms/blog/holdem-strategy)
+- Kenapa tempat duduk anda mengubah segalanya: [penjelasan posisi dalam poker](/ms/blog/holdem-positions)
 
 Satu petua yang menjimatkan wang sebenar pemain baharu sehingga tahap itu: ==jika sesuatu hand tidak cukup kuat untuk raise, fold biasanya lebih baik daripada call.==
 
@@ -196,8 +196,9 @@ Berdepan pertaruhan $10, seorang pemain diam-diam campak satu cip $100 sambil me
 
 ---
 
-:::readnext[Teruskan membaca]
+:::readnext[Baca seterusnya]
 /ms/blog/holdem-all-in-rules | Peraturan All-In & Side Pot | /images/holdem-all-in-rules-hero.webp
+/ms/blog/holdem-strategy | 5 Keputusan di Sebalik Poker yang Menang | /images/holdem-strategy-hero.webp
 :::
 
 ## Soalan Lazim
@@ -232,7 +233,7 @@ A. Memasukkan cip dalam beberapa pergerakan, atau menyebut "call" kemudian menam
 
 **Q. Apa maksud limp dalam poker?**
 
-A. Limp ialah masuk ke dalam pot pada pre-flop dengan hanya call big blind dan bukannya raise. Ia sah tetapi biasanya permainan yang lemah — ada situasi tertentu ia masuk akal, tetapi itu pengecualian.
+A. Limp ialah masuk ke dalam pot pada pre-flop dengan hanya call big blind dan bukannya raise. Ia sah tetapi biasanya permainan yang lemah — lihat [mengapa limp merugikan anda](/ms/blog/holdem-limping) untuk situasi apabila ia sebenarnya wajar.
 
 ---
 

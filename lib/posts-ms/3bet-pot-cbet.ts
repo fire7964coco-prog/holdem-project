@@ -158,7 +158,7 @@ Dalam pot 22.5 bb, equity 68.9% bernilai ==22.5 × 68.9% = 15.50 bb==. EV (nilai
 
 :::pull[Posisi membesarkan kelebihan yang ada. Ia tidak menciptanya daripada tiada.]:::
 
-EQR BTN 78.7% bukan bukti berasingan: ia sisi lain hubungan yang sama. Kedua-dua EV berjumlah pot; apabila satu pihak merealisasikan lebih 100% bahagian equity, pihak lain berada di bawahnya. Yang penting ialah saiz jurang. Dalam ①–⑦, realisasi OOP antara **77.9% dengan 93.2%**. Di sini ia melebihi 100%, dibantu pot yang dimenangi apabila BTN fold. Asas mengapa tindakan terakhir lazimnya bernilai diterangkan melalui [urutan tindakan dan posisi](/ms/blog/holdem-game-order).
+EQR BTN 78.7% bukan bukti berasingan: ia sisi lain hubungan yang sama. Kedua-dua EV berjumlah pot; apabila satu pihak merealisasikan lebih 100% bahagian equity, pihak lain berada di bawahnya. Yang penting ialah saiz jurang. Dalam ①–⑦, realisasi OOP antara **77.9% dengan 93.2%**. Di sini ia melebihi 100%, dibantu pot yang dimenangi apabila BTN fold. Mengapa posisi lazimnya menguntungkan diterangkan dalam [strategi posisi](/ms/blog/holdem-position-play).
 
 ## Apakah yang berubah semasa bermain?
 
@@ -167,7 +167,7 @@ EQR BTN 78.7% bukan bukti berasingan: ia sisi lain hubungan yang sama. Kedua-dua
 - **★Bet seluruh range bukan bermakna memasukkan seluruh stack dengan seluruh range.** Sebanyak 38.1% yang bet ialah pocket pair di bawah King. Dalam kumpulan itu pun nilainya berbeza: QQ menewaskan lebih separuh range call BTN dan boleh dipertimbangkan untuk check turn, sementara TT dan 99 antara calon awal untuk dilepaskan apabila menghadapi raise. Ini tafsiran range, bukan nod turn atau respons raise yang telah dikira di sini.
 - **★Top pair berbeza mengikut kicker.** Dua puluh satu kombo itu termasuk **A5s dan A4s**, tangan blocker yang digunakan untuk 3-bet dengan kicker lemah. Range lawan yang sanggup call seluruh 89 bb lebih sempit — **22 dan A-K di bahagian teras**, ditambah top pair kuat seperti A-Q bergantung pada lawan. **A-4 tidak menewaskan mana-mana tangan itu.** Set AA dan KK menewaskan semuanya. **A-K berada di tengah**: chop dengan A-K BTN dan kalah kepada 22. Jadi terhadap range tersebut, hujah memasukkan semua cip kukuh untuk **AA dan KK**; A-K bergantung pada keluasan range call lawan.
 - **★Raise pada flop boleh menjadikan baki stack isu serta-merta.** Pada SPR 4, bergantung pada saiz raise, anda mungkin perlu membuat keputusan melibatkan seluruh baki stack. Jangan menganggap call sentiasa memberi turn murah: set cenderung meneruskan, sementara underpair rendah dan top pair berkicker lemah perlu lebih berhati-hati. ⚠ Ini dasar tafsiran daripada SPR dan kategori tangan, bukan output solver. Contoh ini tiada nod menghadapi raise, jadi sempadan jam, call dan fold tidak dapat disahkan. A-K bergantung pada keluasan range raise; terhadap set dan A-K sahaja, ia tidak pernah mendahului.
-- **Jangan pindahkan "check 0%" kepada setiap pot 3-bet.** Board mengubah hasil walaupun range 3-bet kekal: pada [8-5-2](/ms/blog/3bet-pot-low-board), check ialah 2.0%. Board yang lebih memihak caller boleh memerlukan check yang nyata. **Ace dan King yang muncul bersama menghasilkan sifar ini dalam contoh khusus tersebut — bukan semua pot 3-bet mesti bet 100%.** Untuk asas membina tindakan preflopnya, rujuk [peraturan raise dan re-raise](/ms/blog/holdem-betting-actions).
+- **Jangan pindahkan "check 0%" kepada setiap pot 3-bet.** Board mengubah hasil walaupun range 3-bet kekal: pada [8-5-2](/ms/blog/3bet-pot-low-board), check ialah 2.0%. Board yang lebih memihak caller boleh memerlukan check yang nyata. **Ace dan King yang muncul bersama menghasilkan sifar ini dalam contoh khusus tersebut — bukan semua pot 3-bet mesti bet 100%.** Cara membina range 3-bet itu sendiri diterangkan dalam [strategi 3-bet](/ms/blog/holdem-3bet).
 
 :::readnext[Baca seterusnya]
 /ms/blog/low-board-check-raise | Tiada Straight, Bila Check-Raise? | /images/gto-srp-low-rainbow-oop-ms.webp
@@ -182,7 +182,7 @@ Semak kepala panel dahulu: **Pot 22.5 bb · Stack 89 bb**. Perbezaannya daripada
 
 Kemudian buka **Trainer GTO** pada bar sisi. Tangan dipilih mengikut wajaran range sebenar, dan maklum balas menunjukkan kerugian EV dalam big blind. Percuma, tanpa pemasangan dan tanpa akaun wajib.
 
-## Soalan lazim
+## Soalan Lazim
 
 **Q. Apakah maksud SPR dalam poker?**
 

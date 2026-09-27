@@ -5,7 +5,7 @@ export const POST: Post = {
   title: "Apa Itu Bad Beat dalam Poker? Bila Jadi Favourite Pun Tak Cukup",
   seoTitle: "Peluang 80% tetapi kalah? — Apa Itu Bad Beat dalam Poker",
   desc: "Favourite 80% tetapi kalah? Itu bad beat. Ketahui bezanya dengan cooler, cara bad beat jackpot berfungsi, dan kenapa ia sebenarnya petanda baik untuk anda.",
-  tldr: "Bad beat berlaku apabila wang anda masuk sebagai favourite besar (pilihan utama) — biasanya 80% atau lebih — dan kalah kerana lawan dapat kad bertuah yang 'suck out' anda. Tidak seperti cooler dalam erti yang ketat, anda memang di hadapan ketika wang masuk; kad terakhir sahaja yang mengkhianati anda. Memang pedih, tetapi bad beat yang datang berterusan biasanya bermakna lawan memasukkan wang ketika di belakang — itulah jenis permainan yang anda mahukan.",
+  tldr: "Bad beat berlaku apabila wang anda masuk sebagai favourite besar (lebih berpeluang menang) — biasanya 80% atau lebih — dan kalah kerana lawan dapat kad bertuah yang 'suck out' anda. Tidak seperti cooler dalam erti yang ketat, anda memang di hadapan ketika wang masuk; kad terakhir sahaja yang mengkhianati anda. Memang pedih, tetapi bad beat yang datang berterusan biasanya bermakna lawan memasukkan wang ketika di belakang — itulah jenis permainan yang anda mahukan.",
   category: "glossary",
   date: "2026-09-27",
   updated: "2026-09-27",

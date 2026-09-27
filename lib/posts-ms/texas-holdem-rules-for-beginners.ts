@@ -69,7 +69,7 @@ Kemudian, pengedar membuka lima kad kongsi di tengah meja:
 
 </div>
 
-==r:Anda **tidak** wajib menggunakan kedua-dua kad pemula anda.== Anda boleh guna dua, satu, atau langsung sifar kad pemula jika board itu sendiri membentuk tangan terbaik — kemahiran yang dipanggil membaca board.
+==r:Anda **tidak** wajib menggunakan kedua-dua kad pemula anda.== Anda boleh guna dua, satu, atau langsung sifar kad pemula jika board itu sendiri membentuk tangan terbaik — kemahiran yang dipanggil [membaca board](/ms/blog/holdem-reading-the-board).
 
 Contohnya:
 
@@ -79,7 +79,7 @@ Contohnya:
 | 8♠ 8♦ | K♣ 8♥ 4♠ 4♦ J♣ | Full House, tiga lapan dengan sepasang empat |
 | 2♣ 3♦ | A♠ K♠ Q♠ J♠ 10♠ | Royal Flush di atas board |
 
-Jika kedudukan tangan poker masih baru bagi anda, buka [kedudukan tangan Texas Hold'em](/ms/blog/holdem-hand-rankings) sebelum bermain. Tahu sama ada Flush mengalahkan Straight lebih penting daripada menghafal strategi lanjutan.
+Jika kedudukan tangan poker masih baru bagi anda, buka [kedudukan tangan Texas Hold'em](/ms/blog/holdem-hand-rankings) sebelum bermain. Tahu [sama ada Flush mengalahkan Straight](/ms/blog/holdem-flush-vs-straight) lebih penting daripada menghafal strategi lanjutan.
 
 ---
 
@@ -137,7 +137,7 @@ Cara mudah untuk ingat:
 
 ==**Sebelum flop, lihat ke kiri Big Blind. Selepas flop, lihat ke kiri Button.**==
 
-Sebab itulah ==g:Button ialah posisi yang begitu berkuasa==. ==Button biasanya bertindak terakhir pada flop, turn dan river==, yang bermakna dia dapat melihat apa yang semua pemain lain buat terlebih dahulu.
+Sebab itulah ==g:Button ialah posisi yang begitu berkuasa==. ==Button biasanya bertindak terakhir pada flop, turn dan river==, yang bermakna dia dapat melihat apa yang semua pemain lain buat terlebih dahulu. Untuk pecahan penuh setiap nama tempat duduk — UTG hingga Button, 6-max vs 9-max, dan julat open yang sesuai bagi setiap tempat duduk — lihat [panduan posisi poker](/ms/blog/holdem-positions).
 
 ---
 
@@ -244,7 +244,7 @@ Posisi bermaksud **bila anda bertindak dalam setiap pusingan pertaruhan**. Berti
 | Kiri pengedar | SB (Small Blind) | Ke-8 pre, ke-1 post | Tempat duduk paling teruk — bertindak dahulu pada setiap jalan post-flop |
 | Dua kiri pengedar | BB (Big Blind) | Terakhir pre (ke-9), ke-2 post | Ada pilihan untuk raise pre-flop; luar posisi post-flop |
 
-==g:Button ialah tempat duduk paling menguntungkan di meja.== Anda bertindak terakhir pada flop, turn dan river — bermakna setiap pemain menunjukkan kekuatan tangan mereka sebelum anda membuat keputusan.
+==g:Button ialah tempat duduk paling menguntungkan di meja.== Anda bertindak terakhir pada flop, turn dan river — bermakna setiap pemain menunjukkan kekuatan tangan mereka sebelum anda membuat keputusan. Untuk panduan posisi penuh, lihat [posisi poker: UTG hingga Button](/ms/blog/holdem-positions).
 
 ---
 
@@ -283,7 +283,7 @@ Tangan permulaan yang baik untuk pemula termasuk:
 
 </div>
 
-Dan sebelum anda boleh menggunakan tangan permulaan dengan betul, anda perlu tahu [tindakan pertaruhan anda — cek, call, raise, fold](/ms/blog/holdem-betting-actions).
+Untuk carta penuh 169 tangan yang disusun mengikut posisi (UTG hingga Button), lihat [carta tangan permulaan Texas Hold'em mengikut posisi](/ms/blog/holdem-starting-hands-chart). Dan sebelum anda boleh menggunakan tangan permulaan dengan betul, anda perlu tahu [tindakan pertaruhan anda — cek, call, raise, fold](/ms/blog/holdem-betting-actions).
 
 ---
 
@@ -352,7 +352,7 @@ Kedudukan tangan asas dari paling kuat ke paling lemah (dengan kekerapan anda me
 | 9 | Pair | 43.8% — tangan paling kerap di showdown |
 | 10 | High Card | 17.4% — tangan paling lemah di showdown; biasanya menang hanya apabila pemain lain pun tidak dapat apa-apa |
 
-Jika dua pemain mempunyai jenis tangan yang sama, bandingkan kad tertinggi yang berkaitan — itulah peraturan kicker dan pemutus seri. Jika lima kad terbaik betul-betul sama, pot dibahagikan.
+Jika dua pemain mempunyai jenis tangan yang sama, bandingkan kad tertinggi yang berkaitan — lihat [peraturan kicker dan pemecah seri](/ms/blog/holdem-tiebreak-rules). Jika lima kad terbaik betul-betul sama, pot [dibahagikan](/ms/blog/holdem-split-pot-rules).
 
 ---
 
@@ -380,7 +380,7 @@ Tangan lebih mudah dimainkan bila anda bertindak kemudian. Jika anda yang pertam
 
 ---
 
-:::readnext[Teruskan membaca]
+:::readnext[Baca seterusnya]
 /ms/blog/holdem-game-order | Urutan Permainan | /images/blog-holdem-game-flow.webp
 /ms/blog/holdem-hand-rankings | Kedudukan Tangan Poker | /images/holdem-hand-rankings-hero.webp
 :::
@@ -459,6 +459,11 @@ Sebagai langkah seterusnya, semak [kedudukan tangan Texas Hold'em](/ms/blog/hold
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Kedudukan Tangan</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Kedudukan Tangan Poker — Terbaik ke Terlemah</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Kesemua 10 tangan dengan odds, contoh dan teka-teki board</div>
+  </a>
+  <a href="/ms/blog/holdem-positions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Posisi</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Posisi Poker: UTG hingga Button</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Kenapa Button menang — peta tempat duduk dan julat open</div>
   </a>
   <a href="/ms/blog/holdem-betting-actions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Pertaruhan</div>

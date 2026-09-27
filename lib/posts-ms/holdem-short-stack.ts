@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Short stack cip tournament di sebelah stack besar di atas felt hijau dengan jam tournament di belakang — saat pemain short stack perlu all-in atau fold",
   tags: ["short stack poker", "short stack strategy", "push fold strategy", "push fold chart", "M ratio poker", "fold equity", "jam poker", "cara main short stack poker"],
   content: `
-Kali paling pantas saya pernah beralih daripada "masih hidup" kepada "tersingkir" ialah pada satu malam saya asyik min-raise dengan stack 12 big blind, fold setiap kali di-re-raise, dan kehilangan satu setengah blind setiap pusingan meja sehingga stack saya terlalu kecil untuk menakutkan sesiapa. Apabila saya akhirnya shove, saya tinggal empat big blind dan di-call oleh dua pemain. ==Saya bukan bernasib malang — saya main short stack seolah-olah ia stack yang dalam.== Sebaik sahaja stack anda mengecil, seluruh permainan berubah, dan pemain yang tahu peraturan baharunya itulah yang menguasai meja.
+Kali paling pantas saya pernah beralih daripada "masih hidup" kepada "tersingkir" ialah pada satu malam saya asyik min-raise dengan stack 12 big blind, fold setiap kali di-re-raise, dan kehilangan satu setengah blind setiap pusingan meja (orbit) sehingga stack saya terlalu kecil untuk menakutkan sesiapa. Apabila saya akhirnya shove, saya tinggal empat big blind dan di-call oleh dua pemain. ==Saya bukan bernasib malang — saya main short stack seolah-olah ia stack yang dalam.== Sebaik sahaja stack anda mengecil, seluruh permainan berubah, dan pemain yang tahu peraturan baharunya itulah yang menguasai meja.
 
 ==Short stack cuma ada satu tugas: all-in dahulu, jaga fold equity anda, dan pilih saat yang tepat sebelum blind memilihnya untuk anda.== Inilah poker push/fold, dan ia kelebihan paling mudah dipelajari dalam tournament — satu set peraturan yang jelas yang boleh anda guna sebaik sahaja stack anda jatuh. Panduan ini bab tindakan dalam trilogi matematik tournament: [ICM](/ms/blog/holdem-icm "thumb:/images/holdem-icm-hero.webp") ialah teorinya, [bubble](/ms/blog/holdem-bubble "thumb:/images/holdem-bubble-hero.webp") ialah situasinya, dan permainan short stack ialah langkah yang benar-benar anda buat dalam [tournament](/ms/blog/holdem-tournament "thumb:/images/holdem-tournament-hero.webp").
 
@@ -109,7 +109,7 @@ Apabila anda ==shove first-in==, anda menang dengan dua cara: semua orang fold (
 - **Shove first-in:** luas, terutamanya di posisi lewat — sebahagiannya anda main untuk fold.
 - **Call shove:** ketat — anda perlukan tangan yang mengalahkan *range* pemain yang shove, bukan sekadar tangan rawak.
 
-"Ketat" bermaksud lebih ketat daripada shoving range anda, bukan "hanya apabila saya pasti saya di depan." Call ialah soal harga: di big blind menentang shove 10bb, anda mempertaruhkan 9bb untuk memenangi pot 20.5bb, jadi palangnya ==43.9%== equity menentang range itu. Pair kecil dan ace lemah ialah *teras* calling range big blind atas sebab itulah — malah menentang AKo, hampir di puncak shoving range sesiapa pun, 22 mencatat ==52.65%==. Kebocorannya bukan pada kelas tangan; ia pada andaian "mungkin coin flip" dan bukannya menyemak angkanya (lihat [bila patut fold](/ms/blog/holdem-when-to-fold)).
+"Ketat" bermaksud lebih ketat daripada shoving range anda, bukan "hanya apabila saya pasti saya di depan." Call ialah soal harga: di big blind menentang shove 10bb, anda mempertaruhkan 9bb untuk memenangi pot 20.5bb, jadi palangnya ==43.9%== equity menentang range itu. Pair kecil dan ace lemah ialah *teras* calling range big blind atas sebab itulah — malah menentang AKo, hampir di puncak shoving range sesiapa pun, 22 mencatat ==52.65%==. Leak (kelemahan berulang) di sini bukan pada kelas tangan; ia pada andaian "mungkin coin flip" dan bukannya menyemak angkanya (lihat [bila patut fold](/ms/blog/holdem-when-to-fold)).
 
 Satu ayat untuk diingat: ==jadilah orang yang shove, bukan orang yang call.== Keagresifan first-in ialah sumber keuntungan short stack; hero-call all-in ialah tempat short stack mati.
 
@@ -184,7 +184,7 @@ A. Hampir tidak pernah apabila anda pemain pertama masuk. Open-limp melepaskan f
 
 **Q. Adakah min-raise pernah betul ketika short stack?**
 
-A. Sebagai pilihan asas pemula, tidak — min-raise lalu fold ialah kebocoran klasik. Sebagai langkah lanjutan pada 10–15 big blind, pemain kuat kadangkala min-raise tangan premium untuk memancing shove daripada tangan yang lebih lemah. Kuasai push/fold yang boleh dipercayai dahulu; tambah variasi min-raise hanya selepas ia menjadi automatik.
+A. Sebagai pilihan asas pemula, tidak — min-raise lalu fold ialah leak klasik. Sebagai langkah lanjutan pada 10–15 big blind, pemain kuat kadangkala min-raise tangan premium untuk memancing shove daripada tangan yang lebih lemah. Kuasai push/fold yang boleh dipercayai dahulu; tambah variasi min-raise hanya selepas ia menjadi automatik.
 
 **Q. Apakah itu M-ratio dalam poker?**
 

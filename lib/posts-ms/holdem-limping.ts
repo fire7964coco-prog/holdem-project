@@ -17,7 +17,7 @@ export const POST: Post = {
   imageAlt: "Seorang pemain poker menolak cip ke hadapan dengan senyap untuk sekadar call big blind preflop sementara pemain lain menunggu, menggambarkan limp yang pasif",
   tags: ["limp dalam poker", "apa itu limp poker", "limping poker", "open-limp", "over-limp", "limp-reraise", "kenapa limp merugikan", "bila limp OK"],
   content: `
-Semasa mula bermain dulu, saya limp ke dalam hampir setiap pot. Rasanya selamat — saya dapat melihat flop dengan murah, risikonya kecil, dan saya "membiarkan pilihan terbuka." Apa yang saya tidak sedar, setiap pemain berpengalaman di meja sudah dapat membaca saya sebaik sahaja saya berbuat begitu. Limp ialah tell paling jelas dalam poker stake rendah bahawa seseorang belum benar-benar faham apa yang dia lakukan — dan selama dua tahun, orang itu ialah saya.
+Semasa mula bermain dulu, saya limp ke dalam hampir setiap pot. Rasanya selamat — saya dapat melihat flop dengan murah, risikonya kecil, dan saya "membiarkan pilihan terbuka." Apa yang saya tidak sedar, setiap pemain berpengalaman di meja sudah dapat membaca saya sebaik sahaja saya berbuat begitu. Limp ialah tell paling jelas dalam poker stakes rendah bahawa seseorang belum benar-benar faham apa yang dia lakukan — dan selama dua tahun, orang itu ialah saya.
 
 **Limp** bermaksud anda masuk pot sebelum flop dengan sekadar *call* big blind, bukan raise atau fold. Bunyinya tidak berbahaya, dan kadang-kadang ia OK — tetapi ==r:open-limp sebagai pemain pertama yang masuk== ialah antara tabiat paling biasa dan paling mahal dalam permainan ini. Di bawah ialah apa sebenarnya limp, mengapa ia biasanya merugikan wang, spot tertentu di mana ia sebenarnya betul (ia bukan *selalu* salah), dan bagaimana pemain kuat menukar limp anda menjadi keuntungan mereka. Memahami satu konsep ini dengan betul ialah lonjakan yang lebih besar daripada yang disangka kebanyakan pemain — ia keputusan ketiga dalam [strategi Texas Hold'em](/ms/blog/holdem-strategy "thumb:/images/holdem-strategy-hero.webp") yang menang, sejurus selepas memilih tempat duduk dan tangan permulaan anda.
 
@@ -83,7 +83,7 @@ Ada manfaat kedua yang lebih senyap: raise **menafikan equity** kepada blinds. J
 
 ## Jadi, Bila Limp Sebenarnya OK?
 
-Di sinilah dogma pergi terlalu jauh. Limp *bukan* selalu salah. Jawapan yang jujur dan moden: **open-limp sebagai yang pertama masuk hampir selalu kesilapan, tetapi beberapa spot tertentu ialah pengecualian yang sah** — complete small blind, over-limp di belakang limper lain, permainan live stake rendah yang sangat pasif, dan posisi lewat dengan short stack dalam tournament:
+Di sinilah dogma pergi terlalu jauh. Limp *bukan* selalu salah. Jawapan yang jujur dan moden: **open-limp sebagai yang pertama masuk hampir selalu kesilapan, tetapi beberapa spot tertentu ialah pengecualian yang sah** — complete small blind, over-limp di belakang limper lain, permainan live stakes rendah yang sangat pasif, dan posisi lewat dengan short stack dalam tournament:
 
 ![Beberapa pemain telah limp ke dalam tangan yang sama, jadi beberapa timbunan kecil cip ditolak ke hadapan di sekeliling felt hijau dalam pot multiway yang murah](/images/holdem-limping-multiway.webp "Over-limp di belakang pemain lain ke dalam pot multiway yang murah ialah tempat tangan spekulatif seperti pair kecil benar-benar boleh membuahkan hasil")
 
@@ -93,7 +93,7 @@ Di sinilah dogma pergi terlalu jauh. Limp *bukan* selalu salah. Jawapan yang juj
 |:---|:---|
 | **Complete small blind (pot tanpa raise)** | Tiada sesiapa raise, separuh wang anda sudah masuk dan hanya big blind bertindak selepas anda — peraturan raise-atau-fold tidak lagi terpakai sepenuhnya kerana anda mendapat diskaun. Jika berdepan raise, soalannya lain: 3-bet atau fold. |
 | **Over-limp dengan tangan spekulatif** | Di belakang limper lain dengan pair kecil atau suited connector, anda mendapat odds yang bagus untuk flop tangan monster dalam pot multiway. |
-| **Live stake rendah yang sangat pasif** | Jika lawan hanya raise dengan tangan monster dan tidak pernah menghukum limper, anda boleh melihat flop murah dengan tangan spekulatif dan merealisasikan equity. |
+| **Live stakes rendah yang sangat pasif** | Jika lawan hanya raise dengan tangan monster dan tidak pernah menghukum limper, anda boleh melihat flop murah dengan tangan spekulatif dan merealisasikan equity. |
 | **Posisi lewat dengan short stack (tournament)** | Pada stack tournament yang pendek — jauh di bawah 100bb dalam cash game standard — solver moden membentuk range open-limp dari button, di mana raise tidak banyak memberi keuntungan dan limp mengurangkan kos anda. |
 
 </div>
@@ -128,7 +128,7 @@ Penyelesaiannya ringkas: **jadikan raise atau fold sebagai lalai anda, dan simpa
 
 Satu kaveat jujur, kerana konteks mengubah segalanya. Dalam **permainan online dan permainan yang lebih sukar**, open-limp hampir mustahil dipertahankan — pemainnya agresif, seseorang akan iso-raise anda hampir setiap kali, dan asas GTO pada dasarnya ialah "jangan open-limp dalam permainan 100bb biasa" — kecuali dari small blind, di mana complete kekal boleh dipertahankan atas sebab-sebab di atas.
 
-Dalam **permainan live stake rendah yang sangat pasif**, dunianya berbeza. Jika meja kerap membiarkan limper melihat flop murah dan tiada sesiapa menghukum mereka, limp bersama tangan spekulatif jauh lebih murah — anda tidak diisolasi, dan anda dapat merealisasikan equity dengan tangan yang lebih suka tidak berdepan raise. Ia masih bukan *optimum* — dan open-limp dari posisi awal kekal versi paling teruk — tetapi penaltinya kecil, dan set-mining dalam family pot boleh menjana keuntungan lumayan. Baca meja anda: semakin lembut dan pasif permainan, semakin banyak limp yang boleh anda lakukan tanpa dihukum; semakin sukar permainan, semakin ketat anda patut raise atau fold.
+Dalam **permainan live stakes rendah yang sangat pasif**, dunianya berbeza. Jika meja kerap membiarkan limper melihat flop murah dan tiada sesiapa menghukum mereka, limp bersama tangan spekulatif jauh lebih murah — anda tidak diisolasi, dan anda dapat merealisasikan equity dengan tangan yang lebih suka tidak berdepan raise. Ia masih bukan *optimum* — dan open-limp dari posisi awal kekal versi paling teruk — tetapi penaltinya kecil, dan set-mining dalam family pot boleh menjana keuntungan lumayan. Baca meja anda: semakin lembut dan pasif permainan, semakin banyak limp yang boleh anda lakukan tanpa dihukum; semakin sukar permainan, semakin ketat anda patut raise atau fold.
 
 ---
 
@@ -149,7 +149,7 @@ A. Open-limp melepaskan banyak perkara: anda tidak boleh memenangi pot preflop s
 
 **Q. Adakah limp pernah menjadi strategi yang baik?**
 
-A. Ya, dalam spot tertentu. Complete dari small blind, over-limp dengan tangan spekulatif seperti pair kecil dan suited connector di belakang limper lain, permainan live stake rendah yang sangat pasif, dan beberapa situasi button dengan short stack dalam tournament semuanya sah. Yang hampir selalu salah ialah open-limp — menjadi pemain pertama yang masuk dan memilih untuk sekadar call dan bukan raise.
+A. Ya, dalam spot tertentu. Complete dari small blind, over-limp dengan tangan spekulatif seperti pair kecil dan suited connector di belakang limper lain, permainan live stakes rendah yang sangat pasif, dan beberapa situasi button dengan short stack dalam tournament semuanya sah. Yang hampir selalu salah ialah open-limp — menjadi pemain pertama yang masuk dan memilih untuk sekadar call dan bukan raise.
 
 **Q. Apakah beza open-limp dan over-limp?**
 

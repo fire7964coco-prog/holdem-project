@@ -49,7 +49,7 @@ Dari tertinggi hingga terendah, sepuluh tangan Texas Hold'em disusun begini: Roy
 *Ini ialah kekerapan tangan tujuh kad standard untuk dek penuh 52 kad — kebarangkalian yang sama digunakan oleh setiap solver poker dan laman latihan.*
 
 > **Peraturan yang menamatkan pertikaian**
-> Pair dan High Card jika digabung meliputi kira-kira 61% daripada semua tangan tujuh kad menjelang river. Tangan besar terasa lazim kerana ia mudah diingati — tetapi kebanyakan pot ditentukan oleh sepasang kad atau high card berserta kicker yang mengiringinya.
+> Pair dan High Card jika digabung meliputi kira-kira 61% daripada semua tangan tujuh kad menjelang river. Tangan besar terasa lazim kerana ia mudah diingati — tetapi kebanyakan pot ditentukan oleh sepasang kad atau high card berserta [kicker](/ms/blog/holdem-kicker "thumb:/images/holdem-kicker-hero.webp") yang mengiringinya.
 
 :::quiz:::
 
@@ -108,7 +108,7 @@ Antara dua quads, four of a kind yang lebih tinggi menang. Jika quads itu *di bo
 Bandingkan **three of a kind dahulu**: QQQ55 menang ke atas JJJ99 kerana Q mengatasi J, tidak kira sebesar mana pasangannya. Pasangan hanya dibandingkan jika trio itu seri.
 
 > **Cooler paling lazim**
-> Dalam dua belas tahun di meja poker, "nut flush saya kalah kepada boat" ialah bad beat yang paling kerap saya dengar dirungutkan pemain. Setiap kali board berpasangan, semak full house *sebelum* anda komited dengan flush atau straight.
+> Dalam dua belas tahun di meja poker, "nut flush saya kalah kepada boat" ialah cooler yang paling kerap saya dengar dirungutkan pemain. Setiap kali board berpasangan, semak full house *sebelum* anda komited dengan flush atau straight.
 
 ### #5 — Flush
 
@@ -196,7 +196,7 @@ Pair|Nilai pasangan → 3 kicker|+Guna kicker
 High Card|Kelima-limanya, tinggi ke rendah|+Guna kicker
 :::
 
-**Kicker** ialah sekadar kad yang bukan sebahagian daripada tangan siap anda tetapi masih digunakan untuk memecahkan seri. Dengan A-A-K lawan A-A-Q, kedua-duanya ada sepasang As — kicker K yang menang. Itulah sebabnya pemain pro begitu mengambil berat tentang *kualiti* kad tinggi mereka, bukan sekadar sama ada ia berpasangan. Apabila lima kad terbaik sepadan sepenuhnya, pot dibahagi — urutan membuka kad dan prinsip "cards speak" yang menyelesaikannya ada dalam [peraturan showdown Texas Hold'em](/ms/blog/holdem-showdown-rules "thumb:/images/holdem-showdown-rules-hero.webp").
+**Kicker** ialah sekadar kad yang bukan sebahagian daripada tangan siap anda tetapi masih digunakan untuk memecahkan seri. Dengan A-A-K lawan A-A-Q, kedua-duanya ada sepasang As — kicker K yang menang. Itulah sebabnya pemain pro begitu mengambil berat tentang *kualiti* kad tinggi mereka, bukan sekadar sama ada ia berpasangan. Untuk semua peraturan seri setiap tangan dalam satu halaman, lihat [panduan kicker dan pemecah seri](/ms/blog/holdem-tiebreak-rules); apabila lima kad terbaik sepadan sepenuhnya, pot [dibahagi](/ms/blog/holdem-split-pot-rules) — urutan membuka kad dan prinsip "cards speak" yang menyelesaikannya ada dalam [peraturan showdown Texas Hold'em](/ms/blog/holdem-showdown-rules "thumb:/images/holdem-showdown-rules-hero.webp").
 
 ---
 
@@ -254,7 +254,7 @@ Jawapan pendek untuk pertikaian yang meletus di setiap meja: flush menang ke ata
 
 ## Mengapa Flush Menang ke atas Straight?
 
-Flush menang ke atas straight kerana ia lebih sukar dibentuk: dalam dek 52 kad, terdapat lebih sedikit cara mendapat lima kad satu jenis (3.03% daripada tangan tujuh kad menjelang river) berbanding lima berturutan dalam mana-mana jenis (4.62%). Susunan ini bukan sewenang-wenangnya — ia ==kebarangkalian semata-mata==. ==g:**Semakin sukar sesuatu tangan dibentuk daripada lima kad, semakin tinggi kedudukannya.**== Satu prinsip itu menjelaskan keseluruhan hierarki — angka tepat setiap tangan ada dalam jadual kebarangkalian di atas.
+Flush menang ke atas straight kerana ia lebih sukar dibentuk: dalam dek 52 kad, terdapat lebih sedikit cara mendapat lima kad satu jenis (3.03% daripada tangan tujuh kad menjelang river) berbanding lima berturutan dalam mana-mana jenis (4.62%). Susunan ini bukan sewenang-wenangnya — ia ==kebarangkalian semata-mata==. ==g:**Semakin sukar sesuatu tangan dibentuk daripada lima kad, semakin tinggi kedudukannya.**== Satu prinsip itu menjelaskan keseluruhan hierarki — lihat angka tepatnya dalam [carta odds dan kebarangkalian poker](/ms/blog/holdem-probability "thumb:/images/holdem-probability-hero.webp").
 
 Ia juga menjelaskan satu pengecualian besar yang akan anda temui: dalam **Short Deck (6+) Hold'em**, di mana kad 2 hingga 5 dikeluarkan, flush menjadi lebih sukar daripada full house — jadi dalam format itu ==r:**flush menang ke atas full house**==. Matematiknya berubah, maka susunannya berubah. Lebih lanjut tentang perbezaan setiap permainan di bawah.
 
@@ -306,8 +306,8 @@ Intinya: pelajari susunan standard sekali dan ia terpakai dalam hampir setiap pe
 ---
 
 :::readnext[Baca seterusnya]
-/ms/blog/holdem-showdown-rules | Peraturan Showdown | /images/holdem-showdown-rules-hero.webp
-/ms/blog/texas-holdem-rules-for-beginners | Peraturan Texas Hold'em untuk Pemula | /images/rules-texas-holdem.webp
+/ms/blog/holdem-flush-vs-straight | Adakah Flush Menang ke atas Straight? | /images/holdem-flush-vs-straight-hero.webp
+/ms/blog/holdem-tiebreak-rules | Peraturan Kicker & Pemecah Seri | /images/holdem-tiebreak-hero.webp
 :::
 
 ## Soalan Lazim
@@ -326,7 +326,7 @@ A. Straight ialah lima kad berturutan mengikut nilai dengan jenis bercampur, sep
 
 **Q. Adakah flush menang ke atas straight dalam poker?**
 
-A. Ya. Flush ialah #5 dan straight #6, jadi flush sentiasa menang. Ia lebih tinggi kerana lima kad satu jenis secara statistik lebih sukar dibentuk berbanding lima berturutan.
+A. Ya. Flush ialah #5 dan straight #6, jadi flush sentiasa menang — lihat [mengapa flush menang ke atas straight](/ms/blog/holdem-flush-vs-straight). Ia lebih tinggi kerana lima kad satu jenis secara statistik lebih sukar dibentuk berbanding lima berturutan.
 
 **Q. Adakah full house menang ke atas flush?**
 
@@ -402,37 +402,42 @@ A. Boleh. As main tinggi dan rendah, jadi A-2-3-4-5 ("the wheel") ialah straight
 
 Pelajari susunannya dalam satu petang, latih pasangan yang mengelirukan, dan jalankan imbasan flush → straight → pasangan pada setiap board. Buat begitu dan anda tidak akan lagi menolak pot ke arah yang salah.
 
-Sebaik sahaja anda tahu susunannya, langkah seterusnya yang wajar ialah memahami keseluruhan aliran permainan — dari cip dan posisi hingga strategi pertama anda — dalam [panduan Texas Hold'em untuk pemula](/ms/blog/texas-holdem-rules-for-beginners "thumb:/images/rules-texas-holdem.webp").
+Sebaik sahaja anda tahu susunannya, langkah seterusnya yang wajar ialah mengetahui tangan mana untuk dimulakan — gunakan [carta tangan permulaan Texas Hold'em mengikut posisi](/ms/blog/holdem-starting-hands-chart) untuk melihat dengan tepat hole card mana yang patut dimainkan dari setiap tempat duduk.
 
 ---
 
 ## Artikel Berkaitan
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
+  <a href="/ms/blog/holdem-flush-vs-straight" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Pertembungan Tangan</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Adakah Flush Menang ke atas Straight?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Matematik, salah baca dan setiap peraturan seri</div>
+  </a>
+  <a href="/ms/blog/holdem-tiebreak-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Pemecah Seri</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Peraturan Kicker & Pemecah Seri</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Pasangan sama — siapa menang? Peraturan kicker dan split pot</div>
+  </a>
+  <a href="/ms/blog/holdem-split-pot-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Split Pot</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Bilakah Pot Dibahagi?</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Peraturan chop dan 5 situasi seri dijelaskan</div>
+  </a>
   <a href="/ms/blog/texas-holdem-rules-for-beginners" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Panduan Pemula</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Peraturan Texas Hold'em untuk Pemula</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Peraturan lengkap — dari blind hingga showdown</div>
   </a>
-  <a href="/ms/blog/holdem-showdown-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Showdown</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Peraturan Showdown Texas Hold'em</div>
-    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Siapa buka kad dulu, muck dan slow roll</div>
+  <a href="/ms/blog/holdem-starting-hands-chart" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Starting Hand</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Carta Starting Hand Ikut Posisi</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Hole card mana untuk dimainkan dari UTG hingga butang</div>
   </a>
-  <a href="/ms/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Urutan Permainan</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Urutan Permainan Texas Hold'em</div>
-    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Dari blind hingga showdown, langkah demi langkah</div>
-  </a>
-  <a href="/ms/blog/holdem-betting-actions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Aksi Pertaruhan</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Cek, Call, Raise, Fold</div>
-    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Setiap aksi pertaruhan Texas Hold'em dijelaskan</div>
-  </a>
-  <a href="/ms/blog/holdem-all-in-rules" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">All-In</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Peraturan All-In & Side Pot</div>
-    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Side pot, re-raise dan showdown all-in</div>
+  <a href="/ms/blog/holdem-reading-the-board" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Membaca Board</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Cara Membaca Board dalam Hold'em</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Cari 5 kad terbaik daripada 7 — board basah vs kering</div>
   </a>
 </div>
 `.trim(),

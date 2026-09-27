@@ -126,7 +126,7 @@ Inilah pecahan jujur yang dilangkau kebanyakan artikel:
 
 - **Pulang modal tulen ialah 7.5:1.** Dalam dunia khayalan di mana anda memenangi *seluruh* stack lawan setiap kali anda flop set, anda hanya perlu lebih kurang 7.5× di belakang.
 - **Kehidupan sebenar menuntut 15–20×.** Anda tidak selalu mendapat seluruh stack, kadang-kadang anda flop set dan *masih kalah* (set over set, atau mereka melengkapkan tangan lebih besar), dan posisi penting. Kusyen tambahan menampung kebocoran itu.
-- Jadi ==b:7.5:1 ialah lantai teori; 15–20× ialah peraturan praktikal.== Jangan keliru antara keduanya — menggunakan nombor 7.5 sebagai panduan di meja sebenar ialah kebocoran perlahan.
+- Jadi ==b:7.5:1 ialah lantai teori; 15–20× ialah peraturan praktikal.== Jangan keliru antara keduanya — menggunakan nombor 7.5 sebagai panduan di meja sebenar ialah leak (kelemahan berulang) yang perlahan.
 
 Kiraan tepat flop set dan setiap nombor "odds flop X" yang lain ada dalam [drawing odds](/ms/blog/holdem-drawing-odds "thumb:/images/holdem-drawing-odds-hero.webp"); pengajaran di sini ialah pair kecil menjadi emas apabila stack dalam dan sampah apabila stack pendek — pair itu tidak berubah, implied odds yang berubah.
 
@@ -157,7 +157,7 @@ Pengajarannya: draw ke ==g:nuts== jauh lebih bernilai daripada draw yang sama ke
 
 **Secara heads-up, sebaik lawan anda all-in, implied odds anda tepat sifar — tiada lagi wang untuk dimenangi daripadanya, jadi anda kembali kepada pot odds semata-mata.** (Dalam pot multiway, pemain ketiga yang masih memegang cip boleh mengekalkan side pot — tetapi pemain yang all-in tidak akan sekali-kali boleh membayar anda satu sen lagi.) Inilah konsep yang paling kerap disalahgunakan dalam poker: "saya ada implied odds" ialah alasan yang digunakan pemain selepas call yang memang tidak pernah wajar.
 
-Berhati-hati dengan kebocoran ini:
+Berhati-hati dengan leak ini:
 
 :::card
 🚫 | Lawan sudah all-in | Tiada street masa depan bermakna tiada wang masa depan daripadanya. Secara heads-up, implied odds = 0 — guna pot odds sahaja

@@ -50,7 +50,7 @@ Pot menjadi 5.5 bb daripada open BTN 2.5 bb, call BB 2.5 bb dan small blind 0.5 
 
 ## Berapakah kekerapan c-bet pada flop A-high yang kering?
 
-Jawapannya bergantung pada tempat duduk anda. Bagi preflop raiser yang mempunyai posisi dalam pot heads-up, panduan umum untuk board sekering ini ialah **70%–100% dengan saiz kecil**. Gunakan [solver untuk mengkaji c-bet mengikut board](/ms/solver) dan bezakan panduan umum itu daripada hasil nod yang sedang dibaca. Bagi pemain yang hanya call preflop, kekerapan bet dahulu di sini **hampir sifar**.
+Jawapannya bergantung pada tempat duduk anda. Bagi preflop raiser yang mempunyai posisi dalam pot heads-up, panduan umum untuk board sekering ini ialah **70%–100% dengan saiz kecil**. Panduan [continuation bet](/ms/blog/holdem-continuation-bet "thumb:/images/holdem-continuation-bet-hero.webp") memperincikannya mengikut jenis board. Bagi pemain yang hanya call preflop, kekerapan bet dahulu di sini **hampir sifar**.
 
 Secara tepat, caller tidak membuat c-bet. Istilah itu merujuk kepada bet flop oleh preflop raiser. Bet pertama daripada BB pula ialah **lead**. Inilah perbezaan yang perlu jelas sebelum membaca angkanya:
 
@@ -109,7 +109,7 @@ Range advantage, atau kelebihan range, bermaksud keseluruhan julat tangan seoran
 
 Equity ialah bahagian jangkaan pot jika baki kad dibuka hingga showdown, termasuk pembahagian pot apabila seri. EQR membandingkan EV strategi dengan bahagian itu. Bahagian BB bernilai ==5.5 × 45.1% = 2.48 bb==, tetapi EV (nilai jangkaan) ialah 2.09 bb: kira-kira satu perenam nilainya tidak direalisasikan. EQR BTN 113.1% pula bermaksud ia memperoleh **lebih daripada bahagian equity mentahnya**, dibantu posisi dan range yang mampu memberi tekanan. Nilai skrin dibundarkan; pengiraan semula EQR menggunakan angka paparan boleh berbeza sehingga 0.3 mata peratusan.
 
-Posisi dan kelebihan range saling menguatkan di sini. BTN mempunyai bahagian lebih besar serta kemampuan lebih baik untuk merealisasikannya. Anda boleh membandingkan metrik tersebut dalam [solver dan analisis equity](/ms/solver), kemudian menyemak asas mengapa giliran bertindak penting dalam [urutan tindakan dan posisi](/ms/blog/holdem-game-order "thumb:/images/blog-holdem-game-flow.webp").
+Posisi dan kelebihan range saling menguatkan di sini. BTN mempunyai bahagian lebih besar serta kemampuan lebih baik untuk merealisasikannya. Prinsip umumnya ada dalam [panduan equity](/ms/blog/holdem-equity), dan mengapa tempat duduk itu sendiri begitu bernilai diterangkan dalam [strategi posisi](/ms/blog/holdem-position-play "thumb:/images/holdem-position-play-hero.webp").
 
 ## Bilakah BTN patut c-bet kecil pada flop A-high kering?
 
@@ -117,7 +117,7 @@ BTN patut kerap c-bet kecil **terhadap lawan yang boleh fold**. Range BB mempuny
 
 Terhadap pemain yang call hampir apa sahaja, bet kecil dengan semua tangan tidak lagi memberi hasil yang sama. Apabila lawan tidak fold, anda sekadar membina pot dengan tangan yang tidak mahu pot besar. Pelarasannya ialah mengurangkan bluff dan menumpukan value.
 
-Panduan umum itu mempunyai syarat: **pihak dengan kelebihan range, tetapi tanpa kelebihan nuts yang jelas, lazimnya bet kecil dengan kerap**. Jika pihak yang sama turut menguasai tangan terkuat, saiz besar menjadi lebih relevan. Bandingkan keadaan itu melalui [latihan c-bet dalam solver](/ms/solver).
+Panduan umum itu mempunyai syarat: **pihak dengan kelebihan range, tetapi tanpa kelebihan nuts yang jelas, lazimnya bet kecil dengan kerap**. Jika pihak yang sama turut menguasai tangan terkuat, saiz besar menjadi lebih relevan. Bagaimana perkara itu berubah mengikut jenis board diterangkan dalam [strategi continuation bet](/ms/blog/holdem-continuation-bet "thumb:/images/holdem-continuation-bet-hero.webp").
 
 :::note[Contoh pembelajaran ini hanya menyediakan hasil prapengiraan bagi tindakan pertama pada flop. Kekerapan tepat c-bet BTN bukan sebahagian daripada angka halaman ini. Untuk mendapatkannya, pilih "Kira sendiri spot ini" dan jalankan pengiraan tree.]:::
 
@@ -129,8 +129,8 @@ Panduan umum itu mempunyai syarat: **pihak dengan kelebihan range, tetapi tanpa 
 - **Terhadap lawan seimbang, check bukan tanda lemah.** Range check masih mengandungi set 77 dan 22 serta two pair A7 dan A2; tekanan berlebihan boleh dibalas check-raise. Pada taruhan rendah, sesetengah pemain terus lead apabila kuat, lalu range check mereka lebih lemah. Teruskan value bet apabila sesuai; kemungkinan check-raise sahaja bukan alasan untuk berhenti memperoleh value.
 
 :::readnext[Baca seterusnya]
-/ms/blog/k-high-board-cbet | BB Check 99.8% pada Flop K83 | /images/gto-srp-dry-king-oop-ms.webp
-/ms/blog/holdem-game-order | Cara Main Texas Hold'em: Urutan Permainan Dari Blinds Hingga Showdown | /images/blog-holdem-game-flow.webp
+/ms/blog/holdem-continuation-bet | 'C-Bet Setiap Flop' Buat Cip Bocor? | /images/holdem-continuation-bet-hero.webp
+/ms/blog/holdem-position-play | Bagaimana Posisi Memenangi Pot untuk Anda | /images/holdem-position-play-hero.webp
 :::
 
 ## Bagaimanakah anda menyemak hasil ini sendiri?
@@ -139,7 +139,7 @@ Buka [solver GTO percuma](/ms/solver), kemudian pilih **Spot belajar → Board k
 
 Untuk berlatih membuat keputusan, buka **Trainer GTO** di bar sisi. Aplikasi memberikan tangan berdasarkan range sebenar, anda memilih tindakan, kemudian melihat kerugian EV pilihan itu dalam big blind; skor menilai kerugian tersebut berbanding pot. Penggunaannya percuma, tanpa pemasangan dan tanpa akaun wajib.
 
-## Soalan lazim
+## Soalan Lazim
 
 **Q. Adakah A7 top pair pada board A-7-2?**
 

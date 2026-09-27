@@ -87,7 +87,7 @@ Kedua-dua blinds dibayar **sebelum kad diedar**, dan butang pengedar bergerak sa
 | Susunan pre-flop | Bertindak kedua terakhir | Bertindak **terakhir** ("option") |
 | Susunan post-flop | Bertindak **dahulu** (satu kelemahan) | Bertindak kedua |
 
-> **Nota:** sebelum flop, aksi bermula dengan pemain di sebelah kiri Big Blind dan BB bertindak terakhir — dia melihat keputusan semua orang lain dahulu. Dari flop ke atas, susunan diset semula dan blinds bertindak awal. Turutan street demi street dihuraikan dalam [urutan permainan Texas Hold'em](/ms/blog/holdem-game-order), dan setiap nama tempat duduk di sekeliling butang dibincangkan dalam panduan posisi poker.
+> **Nota:** sebelum flop, aksi bermula dengan pemain di sebelah kiri Big Blind dan BB bertindak terakhir — dia melihat keputusan semua orang lain dahulu. Dari flop ke atas, susunan diset semula dan blinds bertindak awal. Turutan street demi street dihuraikan dalam [urutan permainan Texas Hold'em](/ms/blog/holdem-game-order), dan setiap nama tempat duduk di sekeliling butang dibincangkan dalam [panduan posisi poker](/ms/blog/holdem-positions).
 
 ---
 
@@ -111,15 +111,15 @@ Stakes ditulis sebagai **SB/BB**. Permainan "$1/$2" bermaksud Small Blind $1 dan
 </div>
 
 - **Cash game:** blinds kekal ==g:**tetap**==. Duduk di meja $1/$2 dan ia kekal $1/$2 sehingga anda bangun. (Untuk perbandingan lebih mendalam, lihat [kejohanan vs cash game](/ms/blog/holdem-tournament-vs-cash-game).)
-- **Kejohanan:** blinds ==r:**naik** mengikut masa== (cth. 25/50 → 50/100 → 100/200), jadi tekanan semakin meningkat sepanjang malam. Tahap blind, jam kejohanan dan helaian struktur dibincangkan dalam panduan cara kejohanan poker berfungsi.
+- **Kejohanan:** blinds ==r:**naik** mengikut masa== (cth. 25/50 → 50/100 → 100/200), jadi tekanan semakin meningkat sepanjang malam. Tahap blind, jam kejohanan dan helaian struktur dibincangkan dalam [panduan cara kejohanan poker berfungsi](/ms/blog/holdem-tournament).
 
 ---
 
 ## Apa Itu Big Blind Ante? (Serta Straddle)
 
-Dari peringkat awal atau pertengahan kebanyakan kejohanan, **ante** ditambah — pertaruhan wajib kecil tambahan yang dikutip pada setiap tangan di atas blinds, yang membesarkan pot dan memberi ganjaran kepada permainan agresif. Versi moden yang lazim ialah **big blind ante**: bukannya semua orang mencampakkan cip, ==Big Blind membayar satu ante — biasanya bersamaan satu Big Blind — bagi pihak seluruh meja==, yang menjadikan permainan pantas dan kemas. Bila dan bagaimana ante bermula adalah sebahagian daripada struktur blind kejohanan.
+Dari peringkat awal atau pertengahan kebanyakan kejohanan, **ante** ditambah — pertaruhan wajib kecil tambahan yang dikutip pada setiap tangan di atas blinds, yang membesarkan pot dan memberi ganjaran kepada permainan agresif. Versi moden yang lazim ialah **big blind ante**: bukannya semua orang mencampakkan cip, ==Big Blind membayar satu ante — biasanya bersamaan satu Big Blind — bagi pihak seluruh meja==, yang menjadikan permainan pantas dan kemas. Bila dan bagaimana ante bermula adalah sebahagian daripada [struktur blind kejohanan](/ms/blog/holdem-tournament).
 
-Satu lagi saudara pertaruhan wajib yang anda akan jumpa dalam cash game: **straddle** — blind tambahan *sukarela* (biasanya 2x BB) yang dibayar dari tempat duduk di sebelah kiri Big Blind, yang menaikkan stakes buat sementara untuk tangan itu. Ia ada peraturan, jenis dan susunan aksi tersendiri — huraian penuhnya ada dalam panduan tentang apa itu straddle dan sama ada anda patut membayarnya.
+Satu lagi saudara pertaruhan wajib yang anda akan jumpa dalam cash game: **straddle** — blind tambahan *sukarela* (biasanya 2x BB) yang dibayar dari tempat duduk di sebelah kiri Big Blind, yang menaikkan stakes buat sementara untuk tangan itu. Ia ada peraturan, jenis dan susunan aksi tersendiri — huraian penuhnya ada dalam [panduan tentang apa itu straddle dan sama ada anda patut membayarnya](/ms/blog/holdem-straddle "thumb:/images/holdem-straddle-hero.webp").
 
 ---
 
@@ -140,14 +140,14 @@ Duduk di meja cash game live dan biasanya anda tak boleh main secara percuma: sa
 ![Timbunan cip jatuh ke arah pot di atas meja poker — cubaan blind steal dari butang](/images/holdem-blind-steal.webp)
 
 - **Small Blind: pastikan ringkas.** Kedua terakhir pre-flop tetapi **bertindak dahulu** selepas flop, pendekatan bersih untuk pemain baru ialah **raise atau fold**, bukan call. Limp dan kena serang balik di luar posisi ialah kebocoran cip yang berterusan.
-- **Big Blind: pertahan dengan pot odds.** Anda sudah membayar satu pertaruhan penuh, jadi anda boleh call raise dengan julat lebih luas daripada mana-mana tempat duduk lain secara berbaloi. Berdepan open 2.5 BB (dengan Small Blind fold), anda call 1.5 BB untuk pot 4 BB — lebih kurang 2.7:1, bermakna sekitar 27% equity sudah cukup untuk pulang modal pada call itu. Kiraan itulah pot odds, dan sebab itulah wujudnya "pertahanan Big Blind".
-- **Posisi lewat: steal.** Apabila semua orang fold sehingga ke butang atau cutoff, raise yang bertujuan memenangi dua blinds sahaja ialah **blind steal** — dan raise semula sebagai balasan ialah **re-steal**. Saiz steal, julat mengikut tempat duduk dan sejauh mana perlu bertahan adalah topik strategi, yang dibincangkan mendalam dalam panduan strategi in position vs out of position.
+- **Big Blind: pertahan dengan pot odds.** Anda sudah membayar satu pertaruhan penuh, jadi anda boleh call raise dengan julat lebih luas daripada mana-mana tempat duduk lain secara berbaloi. Berdepan open 2.5 BB (dengan Small Blind fold), anda call 1.5 BB untuk pot 4 BB — lebih kurang 2.7:1, bermakna sekitar 27% equity sudah cukup untuk pulang modal pada call itu. Kiraan itulah [pot odds](/ms/blog/holdem-pot-odds), dan sebab itulah wujudnya "pertahanan Big Blind".
+- **Posisi lewat: steal.** Apabila semua orang fold sehingga ke butang atau cutoff, raise yang bertujuan memenangi dua blinds sahaja ialah **blind steal** — dan raise semula sebagai balasan ialah **re-steal**. Saiz steal, julat mengikut tempat duduk dan sejauh mana perlu bertahan adalah topik strategi, yang dibincangkan mendalam dalam [panduan strategi in position vs out of position](/ms/blog/holdem-position-play).
 
 ---
 
-:::readnext[Teruskan membaca]
+:::readnext[Baca seterusnya]
 /ms/blog/texas-holdem-rules-for-beginners | Peraturan Texas Hold'em Untuk Pemula | /images/rules-texas-holdem.webp
-/ms/blog/holdem-betting-actions | Cek, Bet, Call, Raise dan Fold — Aksi Pertaruhan | /images/holdem-betting-actions-hero.webp
+/ms/blog/holdem-position-play | Strategi Posisi: In Position vs Out of Position | /images/holdem-position-play-hero.webp
 :::
 
 ## Soalan Lazim
@@ -192,27 +192,27 @@ A. Tidak juga — "blinds" merujuk kepada Small Blind dan Big Blind bersama-sama
 2. **Big Blind ialah unit meja** — raise, stack dan tekanan kejohanan semuanya diukur dalam BB.
 3. Mainkan blinds dengan cermat: **raise atau fold dari Small Blind**, **pertahan Big Blind dengan pot odds**, dan pelajari steal dari posisi lewat apabila semua orang fold sehingga ke anda.
 
-Baru berjinak dengan permainan ini? [Panduan peraturan Texas Hold'em untuk pemula](/ms/blog/texas-holdem-rules-for-beginners "thumb:/images/rules-texas-holdem.webp") merangkumi asasnya, [urutan permainan dalam satu tangan](/ms/blog/holdem-game-order) menunjukkan dengan tepat bila setiap blind bertindak, dan panduan posisi poker menerangkan bagaimana tempat duduk anda — bukan blinds sahaja — mencorakkan setiap keputusan.
+Baru berjinak dengan permainan ini? [Panduan peraturan Texas Hold'em untuk pemula](/ms/blog/texas-holdem-rules-for-beginners "thumb:/images/rules-texas-holdem.webp") merangkumi asasnya, [urutan permainan dalam satu tangan](/ms/blog/holdem-game-order) menunjukkan dengan tepat bila setiap blind bertindak, dan [panduan posisi poker](/ms/blog/holdem-positions) menerangkan bagaimana tempat duduk anda — bukan blinds sahaja — mencorakkan setiap keputusan.
 
 ---
 
 ## Artikel Berkaitan
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:24px 0">
-  <a href="/ms/blog/holdem-betting-actions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Aksi</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Cek, Bet, Call, Raise dan Fold, Dijelaskan</div>
-    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Lima aksi pertaruhan dan bila masa untuk guna setiap satu</div>
+  <a href="/ms/blog/holdem-positions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Posisi</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Posisi Meja Poker Dijelaskan</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">UTG hingga butang, 6-max vs 9-max, julat open</div>
   </a>
   <a href="/ms/blog/holdem-game-order" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Urutan Permainan</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Urutan Permainan Texas Hold'em</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Turutan aksi: pre-flop → flop → turn → river</div>
   </a>
-  <a href="/ms/blog/holdem-tournament-vs-cash-game" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
-    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Format</div>
-    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Kejohanan vs Cash Game</div>
-    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Blinds tetap atau menaik, buy-in dan format mana sesuai untuk anda</div>
+  <a href="/ms/blog/holdem-tournament" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Tournament</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Bagaimana Poker Tournament Berjalan</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Tahap blind, ante, bayaran dan format</div>
   </a>
 </div>
 `.trim(),

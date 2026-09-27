@@ -78,7 +78,7 @@ Aksi bermula dari pemain di kiri big blind dan bergerak mengikut arah jam. Bila 
 - **Kuat:** A♠K♥ ("Big Slick"), A♠Q♥, A♠J♥, 10♠10♥
 - **Ikut situasi:** 9♠9♥, 8♠8♥, K♠Q♥, K♠J♥
 
-Yang mana satu antara ini boleh anda buka sebenarnya bergantung pada tempat duduk anda. Untuk lebih mendalam, cari carta penuh 169 tangan permulaan Texas Hold'em yang dipecahkan mengikut posisi.
+Yang mana satu antara ini boleh anda buka sebenarnya bergantung pada tempat duduk anda. Untuk carta penuh 169 tangan yang dipecahkan mengikut posisi, lihat [carta tangan permulaan Texas Hold'em](/ms/blog/holdem-starting-hands-chart).
 
 ---
 
@@ -158,7 +158,7 @@ Siapa yang wajib tunjuk dulu, bila anda boleh muck, dan adab berkaitan slow roll
 
 </div>
 
-Helah untuk mengingatnya: ==**sebelum flop, tengok kiri big blind; selepas flop, tengok kiri butang.**== Butang bertindak paling akhir pada setiap pusingan selepas flop — sebab itulah ia tempat duduk paling menguntungkan di meja, dan posisi poker dari UTG hingga butang layak dijadikan panduan tersendiri.
+Helah untuk mengingatnya: ==**sebelum flop, tengok kiri big blind; selepas flop, tengok kiri butang.**== Butang bertindak paling akhir pada setiap pusingan selepas flop — sebab itulah ia tempat duduk paling menguntungkan di meja. Lihat [posisi poker: UTG hingga butang](/ms/blog/holdem-positions).
 
 Kesan bertindak dahulu juga boleh dilihat dalam [perbandingan BB dan BTN pada flop K83](/ms/blog/k-high-board-cbet): equity, nilai jangkaan dan realisasi equity menerangkan bahagian berlainan daripada kelebihan posisi.
 
@@ -304,7 +304,7 @@ Anda boleh hafal urutan permainan tetapi masih terus rugi cip kalau buat kesilap
 
 ### 2. Mengabaikan posisi
 
-Semakin dekat anda dengan butang, semakin bagus — bertindak paling akhir membolehkan anda melihat apa yang semua orang buat sebelum anda buat keputusan. Main ketat (tight) di posisi awal dan lebih agresif di posisi lewat, dan pelajari peta tempat duduk serta julat pembukaan setiap posisi, dari UTG hingga butang.
+Semakin dekat anda dengan butang, semakin bagus — bertindak paling akhir membolehkan anda melihat apa yang semua orang buat sebelum anda buat keputusan. Main ketat (tight) di posisi awal dan lebih agresif di posisi lewat. Untuk peta tempat duduk penuh dan julat pembukaan setiap posisi, lihat [penjelasan posisi poker: UTG hingga butang](/ms/blog/holdem-positions).
 
 ### 3. Mengejar draw secara membuta tuli
 
@@ -333,7 +333,7 @@ Texas Hold'em mengambil masa tiga puluh minit untuk dipelajari dan seumur hidup 
 
 ---
 
-:::readnext[Teruskan membaca]
+:::readnext[Baca seterusnya]
 /ms/blog/texas-holdem-rules-for-beginners | Peraturan Texas Hold'em untuk Pemula | /images/rules-texas-holdem.webp
 /ms/blog/holdem-betting-actions | Aksi Pertaruhan Dihuraikan | /images/holdem-betting-actions-hero.webp
 :::
@@ -392,6 +392,11 @@ Hafal urutannya sampai lancar, asah dalam permainan percuma, dan anda tak akan l
     <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Kedudukan Tangan</div>
     <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Kedudukan Tangan Poker — Terbaik ke Terburuk</div>
     <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Kesemua 10 tangan dengan odds, contoh dan teka-teki board</div>
+  </a>
+  <a href="/ms/blog/holdem-positions" style="display:block;padding:16px 18px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.10);border-radius:12px;text-decoration:none;transition:border-color 0.2s" onmouseover="this.style.borderColor='rgba(212,175,55,0.45)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.10)'">
+    <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:hsl(var(--primary));margin-bottom:6px">Posisi</div>
+    <div style="font-size:14px;font-weight:700;color:hsl(var(--foreground));line-height:1.4">Posisi Poker: UTG hingga Butang</div>
+    <div style="font-size:12px;color:hsl(var(--muted-foreground));margin-top:4px">Peta tempat duduk, julat open dan kenapa posisi menang</div>
   </a>
 </div>
 `.trim(),

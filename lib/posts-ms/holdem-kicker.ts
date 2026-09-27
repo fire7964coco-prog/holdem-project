@@ -25,7 +25,7 @@ Kedudukan kicker dalam gambaran besar [susunan kad poker](/ms/blog/holdem-hand-r
 
 ---
 
-### Kicker Sekali Pandang
+### Ringkasan pantas
 
 :::stripe
 4 | Kicker dalam tangan high card
@@ -48,7 +48,7 @@ Katakan anda memegang A-K dan lawan anda memegang A-Q, dan board berpasangan den
 
 ## Tangan Poker Mana yang Ada Kicker — dan Mana yang Tiada?
 
-**Hanya tangan yang menggunakan kurang daripada lima kad untuk kombinasinya mempunyai kicker — semua tangan yang mengisi kelima-lima kad dengan sendirinya tiada kicker.** Inilah jadual yang disorokkan oleh pesaing dalam perenggan panjang. Ini dia sekali pandang:
+**Hanya tangan yang menggunakan kurang daripada lima kad untuk kombinasinya mempunyai kicker — semua tangan yang mengisi kelima-lima kad dengan sendirinya tiada kicker.** Inilah jadual yang disorokkan oleh pesaing dalam perenggan panjang. Ini ringkasannya sekali imbas:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
