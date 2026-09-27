@@ -3,6 +3,8 @@
 - 5레인 C 완료 → 머지(rank·prob·strat·tour·gloss · 충돌 0) · `469d08f8` ms 계산기 사전 빠른 참조 표1~5·related 8·deal·shortStack 링크를 EN 슬러그로(calc-parity ms 13→0) · ms 21 → 51편 · build 73+607 · audit:hard ms 51/51 🔴 0 · 라이브 표본 200 · IndexNow 457 · lane:sync 10레인.
 - §7-③④: 5레인 신규 용어표 대조 + 교차 렌즈(KL 편집자 · Opus) → 인니어 유입 0 · 통일 10항 약 45자리(favourite · leak · stakes rendah · Ringkasan pantas 등) + 치환 금지 예외 → queue **Q15** 브리프(§7-⑤ 21편 링크 복원 · 구판 라벨 동반).
 - 다음: Q15 → 헤드 배포 → 아스트라 교차 요청 + ms 동결.
+- 후속 `65d1b627`(사장님 지적): ms 사이드바 학습 로드맵이 솔버 13편에만 떴다 — `MS_CLUSTERS`가 솔버 필라뿐이었음 → ID 구조 6필라 추가(대회 가이드 4 제외). 1440 화면 확인.
+- 규정 정정 `3f9a32a9`: «헤드는 글을 고치지 않는다» 삭제 — 분담은 일감 양에 따른 선택(사장님 09-27).
 
 ## 2026-09-27 (1) — L-2i 검수장 대조 요청 3건 이행 (MA-200·202 회신 · MB-101)
 
