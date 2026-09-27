@@ -24,6 +24,11 @@ import { POST as holdemTournamentVsCashGame } from "./holdem-tournament-vs-cash-
 // ── ms 신규 번역 레인 import 칸 (2026-09-26 · docs/ms-translation-lanes.md) ──
 // 🔴 레인은 자기 칸의 «시작»과 «끝» 줄 사이에만 넣는다. 칸 밖을 고치면 다섯 레인이 충돌한다.
 // [ms-rank import 시작]
+import { POST as holdemFlushVsStraight } from "./holdem-flush-vs-straight";
+import { POST as holdemKicker } from "./holdem-kicker";
+import { POST as holdemTiebreakRules } from "./holdem-tiebreak-rules";
+import { POST as holdemSplitPotRules } from "./holdem-split-pot-rules";
+import { POST as holdemReadingTheBoard } from "./holdem-reading-the-board";
 // [ms-rank import 끝]
 
 // [ms-prob import 시작]
@@ -71,6 +76,11 @@ export const MS_POSTS: Post[] = [
 
   // ── ms 신규 번역 레인 배열 칸 — 자기 칸 사이에만 ──
   // [ms-rank 배열 시작]
+  holdemFlushVsStraight,
+  holdemKicker,
+  holdemTiebreakRules,
+  holdemSplitPotRules,
+  holdemReadingTheBoard,
   // [ms-rank 배열 끝]
 
   // [ms-prob 배열 시작]
