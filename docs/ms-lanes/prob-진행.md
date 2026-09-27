@@ -2,7 +2,7 @@
 
 > 정본 = docs/ms-translation-lanes.md · 이 파일은 이 레인만 쓴다.
 
-## 상태 — A ✅ / B ✅ / C ✅ · 커밋 (아래 C 산출 커밋 — 헤드 머지 대기)
+## 상태 — A ✅ / B ✅ / C ✅ · 커밋 52ac5121 (+ main 병합 900b58b7) — 헤드 머지 대기
 
 A 산출(2026-09-26): `docs/ms-lanes/prob-brief.md` · `docs/keyword-bank/ms-prob.md`
 - 키워드 실측: DFS Ads 88개 + Labs suggestions 20시드 · 라쿠 39개(DFS와 전 행 일치) · 자동완성 20시드×2 · SERP 8회 · 현지 원문 3페이지(Playwright)
