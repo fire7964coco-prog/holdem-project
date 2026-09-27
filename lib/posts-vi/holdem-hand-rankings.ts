@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Thứ hạng các tay bài poker từ mạnh nhất đến yếu nhất là: Thùng Phá Sảnh Hoàng Gia, Thùng Phá Sảnh, Tứ Quý, Cù Lũ, Thùng, Sảnh, Sám Cô, Hai Đôi, Một Đôi, và Mậu Thầu.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-09-26",
+  updated: "2026-09-27",
 
   masterUpdated: "2026-09-07",
   keepImagesInBody: true,

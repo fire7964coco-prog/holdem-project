@@ -9,7 +9,7 @@ export const POST: Post = {
   tldr: "Selepas BB melakukan 3-bet dan BTN call, flop 8♦5♣2♠ menghasilkan bet dua pertiga pot pada kekerapan 97.8%. Daripada 83 kombo BB, hanya tiga mendapat pair baharu daripada board, iaitu A5s; 88, 55 dan 22 langsung tiada dalam range. Namun BB sudah mempunyai 36 kombo overpair dan 40 kombo A-high, dengan sangat sedikit tangan pertengahan. Bentuk range terpolarisasi inilah yang membantu menjelaskan pilihan saiz besar.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-26",
+  updated: "2026-09-27",
   masterUpdated: "2026-09-26",
   readTime: "10 minit",
   emoji: "🎲",

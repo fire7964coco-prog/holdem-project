@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "补牌（outs）就是牌堆里剩下、能让你成牌的牌张数。先数出补牌，再用二四法则换算：翻牌圈 ×4、转牌圈 ×2，就是你击中的大致胜率。同花听牌 9 张补牌从翻牌圈算 ≈ 到河牌 35%、只看转牌一张 19.1%。",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-26",
+  updated: "2026-09-27",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "11 分钟",

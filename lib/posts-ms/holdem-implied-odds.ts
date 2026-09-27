@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Implied odds ialah cip tambahan yang anda jangka menang di street seterusnya apabila draw anda hit. Ia membolehkan anda call draw dengan untung walaupun pot odds semata-mata kata fold — tetapi hanya jika stack cukup dalam dan lawan anda memang akan bayar.",
   category: "odds",
   date: "2026-09-26",
-  updated: "2026-09-26",
+  updated: "2026-09-27",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "11 minit",

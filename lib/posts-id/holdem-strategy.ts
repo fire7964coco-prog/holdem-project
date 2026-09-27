@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Setiap keputusan Texas Hold'em yang menang menyusut menjadi lima pertanyaan berulang: di mana saya duduk (position), apakah tangan ini layak dimainkan, apakah saya raise atau fold alih-alih open-limp, apakah saya terus bertaruh di flop, dan kapan saya melepasnya? Pemain tight-aggressive yang menjawab lima ini dengan baik akan fold ~80% tangan preflop, memainkannya secara agresif saat main, dan mengalahkan hampir setiap permainan santai — tanpa perlu daftar tips hafalan.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-26",
+  updated: "2026-09-27",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "14 mnt",

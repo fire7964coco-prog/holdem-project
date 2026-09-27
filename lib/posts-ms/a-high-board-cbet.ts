@@ -9,7 +9,7 @@ export const POST: Post = {
   tldr: "Pada A♥7♦2♣ selepas BTN open dan BB call, BB check 98.2% daripada seluruh range, termasuk top pair, two pair dan set. Equity ialah 45.1% berbanding 54.9%; jurang yang lebih ketara ialah realisasi equity: 84.0% untuk BB yang bertindak dahulu, berbanding 113.1% untuk BTN.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-26",
+  updated: "2026-09-27",
   masterUpdated: "2026-09-26",
   readTime: "9 minit",
   emoji: "🅰️",

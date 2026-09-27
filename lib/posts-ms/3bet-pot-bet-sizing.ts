@@ -9,7 +9,7 @@ export const POST: Post = {
   tldr: "Pada Q♥T♥7♠ dalam pot 3-bet, BB memilih bet dua pertiga pot, 14.9 bb, pada kekerapan 98.4%. Bet kecil mendapat 0.7% dan check 0.8%: kedua-duanya bersama hampir satu kombo daripada 73. Pada A♦K♠2♥, range yang sama membahagikan saiz 57.8/42.2. Perubahan ini berkait dengan harga yang dibayar caller untuk meneruskan draw. Bet kecil memberi harga yang lebih murah pada board yang mempunyai banyak draw.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-26",
+  updated: "2026-09-27",
   masterUpdated: "2026-09-26",
   readTime: "12 minit",
   emoji: "💧",

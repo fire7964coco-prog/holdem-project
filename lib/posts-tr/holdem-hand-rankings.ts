@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Poker el sıralaması en güçlüden en zayıfa şöyledir: Royal Flush, Straight Flush, Four of a Kind (Kare), Full House, Flush, Straight (Kent), Three of a Kind (Üçlü), Two Pair (İki Çift), Pair (Çift) ve High Card (Yüksek Kart).",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-09-26",
+  updated: "2026-09-27",
 
   masterUpdated: "2026-09-07",
   keepImagesInBody: true,

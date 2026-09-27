@@ -9,7 +9,7 @@ export const POST: Post = {
   tldr: "Pada 9♥8♥7♣ selepas BTN open dan BB call, BB check 76.2% serta lead 23.7%. Inilah contoh pertama siri ini yang mempunyai lead sebagai bahagian strategi yang ketara. Kelebihan range belum berpindah: equity masih 48.5% berbanding 51.5% memihak BTN. Yang berubah ialah jurang equity dan taburan tangan kuat, dengan lebih banyak straight siap pada BB.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-26",
+  updated: "2026-09-27",
   masterUpdated: "2026-09-26",
   readTime: "9 minit",
   emoji: "🎯",

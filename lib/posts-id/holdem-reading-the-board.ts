@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Di Texas Hold'em Anda selalu memainkan tangan 5-kartu terbaik dari 7 (2 kartu tertutup + 5 kartu komunitas) — memakai kedua kartu tertutup, satu, atau tak satu pun (main dengan board). Pindai ketujuh kartu dengan urutan tetap: flush → straight → nilai berpasangan → kartu tinggi.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-09-26",
+  updated: "2026-09-27",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "11 mnt",

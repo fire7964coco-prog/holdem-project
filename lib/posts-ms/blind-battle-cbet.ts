@@ -9,7 +9,7 @@ export const POST: Post = {
   tldr: "Selepas SB open dan BB call, flop K♥T♦6♠ menghasilkan bet 67.4% dan check 32.6%. Dalam tujuh pot single-raised terdahulu, pemain OOP hanya bet 0.1% hingga 23.7%. Dua perkara berubah: OOP kini raiser, dan board sesuai dengan rangenya. Gabungan itu membawa realisasi equity OOP kepada 103.1%. Peranan sahaja tidak cukup; SB yang sama hanya bet 9.6% pada 765.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-26",
+  updated: "2026-09-27",
   masterUpdated: "2026-09-26",
   readTime: "10 minit",
   emoji: "⚔️",

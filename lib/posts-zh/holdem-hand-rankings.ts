@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "德州扑克牌型从大到小依次为：皇家同花顺、同花顺、四条、葫芦、同花、顺子、三条、两对、一对、高牌。花色不分大小；两人牌型相同时，先比组成牌型的牌，再从大到小比踢脚牌，五张全一样才平分底池。",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-09-26",
+  updated: "2026-09-27",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "14 分钟",

@@ -9,7 +9,7 @@ export const POST: Post = {
   tldr: "Pada flop berpasangan rendah 6♣6♦3♥, BB check 97.0% walaupun mempunyai lebih banyak trips: 26 kombo 6x berbanding BTN 20. Hanya 18.4% range BB mempunyai sesuatu melebihi pair pada board; baki 81.6% banyak bergantung pada kad tinggi, dan BTN lebih kuat pada bahagian itu. Pocket pair melebihi enam pula meningkat nilainya: equity TT ialah 76.0%.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-26",
+  updated: "2026-09-27",
   masterUpdated: "2026-09-26",
   readTime: "10 minit",
   emoji: "👯",

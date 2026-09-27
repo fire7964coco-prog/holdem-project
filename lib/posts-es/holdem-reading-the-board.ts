@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "En Texas Hold'em siempre juegas la mejor mano de 5 cartas entre 7 (2 cartas propias + 5 cartas comunitarias) — usando las dos, una, o ninguna (jugar con la mesa). Repasa las 7 cartas en un orden fijo: color → escalera → parejas → carta alta.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-09-26",
+  updated: "2026-09-27",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 min",

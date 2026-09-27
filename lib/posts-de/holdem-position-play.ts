@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "In Position zu sein bedeutet, dass du zuletzt handelst – du siehst jede Entscheidung deiner Gegner, bevor du einen Chip ausgibst. Solver-Beispiele zeigen, dass Position die Equity-Realisierung meist verbessert. Doch kein Sitz liegt zwangsläufig über oder unter 100%: Ranges, Board und Action können das übliche Muster umkehren. Deshalb öffnet UTG ~13% der Hände und der Button ~43% – und deshalb schreibt Position postflop jede C-Bet, jeden Bluff und jede Pot-Control-Entscheidung neu.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-09-26",
+  updated: "2026-09-27",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "16 Min.",

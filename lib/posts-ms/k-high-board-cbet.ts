@@ -9,7 +9,7 @@ export const POST: Post = {
   tldr: "Pada K♠8♦3♣ selepas BTN open dan BB call, BB check 99.8% daripada range — lebih hampir kepada range check penuh berbanding 98.2% pada flop A-high. BB tidak mempunyai overpair kerana AA digunakan untuk 3-bet preflop. Walaupun equity 46.3% berbanding 53.7%, EQR terpisah kepada 80.7% berbanding 116.7%.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-15",
+  updated: "2026-09-27",
   masterUpdated: "2026-09-26",
   readTime: "9 minit",
   emoji: "👑",

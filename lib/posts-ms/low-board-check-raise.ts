@@ -9,7 +9,7 @@ export const POST: Post = {
   tldr: "Pada 6♠5♥2♦, BB check 96.8% dan lead 3.2%, walaupun equity 48.3% ialah kedua tertinggi antara tujuh spot BB sebagai caller. Hanya 43 membentuk straight, tetapi kedua-dua range tidak memilikinya. Kedua-duanya mempunyai set tanpa kelebihan di bahagian paling atas. Dalam pengiraan semula berasingan, BB check-raise bet 1.8 bb sebanyak 14.9%, dengan sebahagian besar range raise terdiri daripada draw.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-15",
+  updated: "2026-09-27",
   masterUpdated: "2026-09-26",
   readTime: "11 minit",
   emoji: "🌊",

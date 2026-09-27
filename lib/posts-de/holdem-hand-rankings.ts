@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Die Reihenfolge der Pokerhände von der besten zur schlechtesten lautet: Royal Flush, Straight Flush, Vierling, Full House, Flush, Straße, Drilling, Zwei Paare, Paar und High Card.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-09-26",
+  updated: "2026-09-27",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "14 Min.",

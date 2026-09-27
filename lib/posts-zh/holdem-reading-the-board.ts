@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "在德州扑克里，你永远打的是 7 张牌（2 张底牌 + 5 张公共牌）中最强的 5 张——可以用上两张底牌、一张，甚至一张都不用（打公共牌）。按固定顺序扫过全部 7 张牌：同花 → 顺子 → 成对的点数 → 高牌。",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-09-26",
+  updated: "2026-09-27",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "13 分钟",

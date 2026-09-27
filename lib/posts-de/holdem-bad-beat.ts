@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Ein Bad Beat ist, wenn du dein Geld als klarer Favorit reinbekommst – meist mit 80% oder mehr – und verlierst, weil dein Gegner eine Glückskarte trifft und dich aussaugt. Anders als beim Cooler im engeren Sinn warst du vorne, als das Geld reinging; das Deck hat dich erst am Ende verraten. Es schmerzt, aber eine stetige Reihe von Bad Beats bedeutet meist, dass Gegner ihr Geld hinten reinstecken – genau die Art Spiel, in der du sitzen willst.",
   category: "glossary",
   date: "2026-07-05",
-  updated: "2026-09-26",
+  updated: "2026-09-27",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "11 Min.",

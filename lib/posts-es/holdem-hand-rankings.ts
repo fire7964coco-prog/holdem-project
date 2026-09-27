@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "La jerarquía de manos de póker, de la mejor a la peor, es: Escalera Real, Escalera de Color, Póker, Full, Color, Escalera, Trío, Doble Pareja, Pareja y Carta Alta. La regla básica: cuanto más rara es una mano de ligar con cinco cartas, más alto está — por eso el color gana a la escalera y el full gana al color. Cuando dos jugadores tienen el mismo tipo de mano, decide el kicker; si las cinco cartas coinciden, el bote se divide.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-09-26",
+  updated: "2026-09-27",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "14 min",

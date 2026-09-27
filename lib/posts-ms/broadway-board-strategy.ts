@@ -9,7 +9,7 @@ export const POST: Post = {
   tldr: "Pada Q♠J♦T♠ selepas BTN open dan BB call, BB check 99.9% walaupun 68.4% daripada range mempunyai draw. BTN mempunyai lebih banyak straight, 10.5% berbanding 7.1%, set 2.0% berbanding 0.7% dan overpair 2.6% berbanding 0%. EQR ialah 77.9% berbanding 119.4%, jurang terluas antara tiga flop pertama siri ini.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-15",
+  updated: "2026-09-27",
   masterUpdated: "2026-09-26",
   readTime: "10 minit",
   emoji: "🎴",

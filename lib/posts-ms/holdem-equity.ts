@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Equity ialah bahagian pot anda — hirisan yang tangan anda layak dapat secara purata selepas semua kad dibuka, dengan split pot dikira secara pro rata. Anda call apabila equity anda mengatasi pot odds, tetapi posisi dan pertaruhan menyebabkan anda jarang dapat menyimpan equity penuh — dan fold equity membolehkan anda menang pot walaupun tangan anda di belakang.",
   category: "odds",
   date: "2026-09-26",
-  updated: "2026-09-26",
+  updated: "2026-09-27",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 minit",

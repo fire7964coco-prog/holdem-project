@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "不是 21 点那种算法——德扑每一手都重新洗牌、亮出来的牌又太少，盯着大小牌数根本占不到便宜。但德扑有它自己的合法算牌：数 outs、用阻挡牌、追踪已死的牌，从而读出对手不可能拿到什么。outs 换成胜率靠二四法则，阻挡牌则是现代诈唬选牌的核心。",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-26",
+  updated: "2026-09-27",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 分钟",

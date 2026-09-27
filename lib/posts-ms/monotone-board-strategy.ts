@@ -9,7 +9,7 @@ export const POST: Post = {
   tldr: "Pada Q♠9♠2♠, BB check 88.8%, bet kecil 8.0% dan bet besar hanya 3.2%. Apabila tiga kad flop sama suit, bet besar tanpa flush semakin menumpukan tangan yang call kepada flush. Nut flush pun check 69.9% secara purata; flush bukan nuts lebih kerap check, iaitu 81.4%. Angka tindakan ini ialah keputusan pertama BB, bukan strategi tindakan susulan BTN.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-26",
+  updated: "2026-09-27",
   masterUpdated: "2026-09-26",
   readTime: "10 minit",
   emoji: "♠️",

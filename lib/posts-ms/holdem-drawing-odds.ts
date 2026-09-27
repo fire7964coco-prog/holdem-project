@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Anda flop set dengan pocket pair dalam 11.8% tangan (odds 7.5:1 menentang anda), flop flush dengan dua kad satu jenis hanya 0.84%, dan melengkapkan flush draw dari flop menjelang river dalam 35% kes. Setiap nombor di bawah dikira terus daripada dek, bukan diagak.",
   category: "odds",
   date: "2026-09-26",
-  updated: "2026-09-26",
+  updated: "2026-09-27",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 minit",

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Out ialah mana-mana kad yang masih tinggal dalam dek dan boleh menaikkan tangan anda menjadi tangan yang berkemungkinan menang. Kira dulu, kemudian tukar: darab outs dengan 4 di flop atau dengan 2 di turn untuk anggaran peratus anda hit. Flush draw ada 9 outs, lebih kurang 36% menjelang river.",
   category: "odds",
   date: "2026-09-26",
-  updated: "2026-09-26",
+  updated: "2026-09-27",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "11 minit",

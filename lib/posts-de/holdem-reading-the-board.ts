@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Im Texas Hold'em spielst du immer die beste 5-Karten-Hand aus 7 (2 Hole Cards + 5 Gemeinschaftskarten) – mit beiden Hole Cards, einer oder gar keiner („playing the board“). Scanne alle 7 Karten in fester Reihenfolge: Flush → Straße → gepaarte Ränge → High Card.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-09-26",
+  updated: "2026-09-27",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "11 Min.",

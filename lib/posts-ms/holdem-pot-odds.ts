@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Untuk kira pot odds, bahagikan jumlah yang anda perlu call dengan jumlah pot selepas call anda. Call $50 ke dalam pot $150 = 50 ÷ 200 = 25% — jadi anda perlu sekurang-kurangnya 25% equity supaya call itu menguntungkan.",
   category: "odds",
   date: "2026-09-26",
-  updated: "2026-09-26",
+  updated: "2026-09-27",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "12 minit",

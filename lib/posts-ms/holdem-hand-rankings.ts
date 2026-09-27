@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Susunan kad poker dari tertinggi hingga terendah ialah Royal Flush, Straight Flush, Four of a Kind, Full House, Flush, Straight, Three of a Kind, Two Pair, Pair dan High Card. Semakin sukar sesuatu tangan dibentuk daripada lima kad, semakin tinggi kedudukannya.",
   category: "hand-rankings",
   date: "2026-06-09",
-  updated: "2026-09-26",
+  updated: "2026-09-27",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "14 minit",

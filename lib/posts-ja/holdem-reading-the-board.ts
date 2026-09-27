@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "テキサスホールデムでは、いつでも7枚(手札2枚+コミュニティカード5枚)からベスト5枚で勝負します。手札を2枚とも使う・1枚だけ使う・1枚も使わない(ボードで勝負する)の3通り。ボードは必ず「フラッシュ → ストレート → ペア → ハイカード」の順で7枚まとめて読みましょう。",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-09-26",
+  updated: "2026-09-27",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "11分",

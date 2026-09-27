@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Menjelang river, anda membentuk one pair dalam 43.8% tangan, two pair 23.5%, flush 3.0% dan full house 2.6%. Royal flush pula muncul hanya sekali dalam kira-kira 31,000 tangan — itu asas 7 kad Texas Hold'em, bukan 5 kad.",
   category: "odds",
   date: "2026-09-26",
-  updated: "2026-09-26",
+  updated: "2026-09-27",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "13 minit",

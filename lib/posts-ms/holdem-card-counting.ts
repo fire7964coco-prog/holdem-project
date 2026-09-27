@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Bukan seperti dalam blackjack — dek dikocok semula setiap tangan dan terlalu sedikit kad yang terdedah, jadi menjejak kad tinggi dan rendah tidak memberi anda apa-apa kelebihan. Tetapi poker ada kiraan sah tersendiri: kira outs, guna blocker dan jejak kad mati untuk membaca apa yang lawan anda tidak mungkin pegang.",
   category: "odds",
   date: "2026-09-26",
-  updated: "2026-09-26",
+  updated: "2026-09-27",
   masterUpdated: "2026-09-26",
   keepImagesInBody: true,
   readTime: "10 minit",

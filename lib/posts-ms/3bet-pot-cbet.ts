@@ -9,7 +9,7 @@ export const POST: Post = {
   tldr: "Pada A♦K♠2♥ dalam pot 3-bet, BB bet dengan seluruh range: check dibundarkan kepada 0.0%, dan tiada satu pun daripada 63 kombo check walau 0.1% daripada masa. Dalam tujuh spot sebelumnya, BB check antara 76.2% dengan 99.9%. Perubahan utama ialah BB melakukan 3-bet, jadi ia mengekalkan AA dan KK yang tiada dalam range call BTN. SPR 4.0 pula mengecilkan ruang untuk menangguhkan pembinaan pot; ia tidak bermakna turn dan river tiada.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-26",
+  updated: "2026-09-27",
   masterUpdated: "2026-09-26",
   readTime: "12 minit",
   emoji: "🔥",

@@ -8,7 +8,7 @@ export const POST: Post = {
   tldr: "Dalam cash game, cip ialah duit sebenar dan blind kekal tetap. Dalam tournament, cip ialah equity untuk bertahan, blind menaik, dan payout bergantung pada kedudukan akhir anda. Untuk kebanyakan pemula, cash game ialah titik permulaan yang lebih bersih.",
   category: "tournament",
   date: "2026-06-11",
-  updated: "2026-09-24",
+  updated: "2026-09-27",
   masterUpdated: "2026-09-13",
   hideSummaryImageSlot: true,
   keepImagesInBody: true,

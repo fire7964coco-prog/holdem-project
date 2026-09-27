@@ -9,7 +9,7 @@ export const POST: Post = {
   tldr: "Selepas SB open dan BB call, flop A♠A♥6♦ menghasilkan bet 80.1%: 79.6% pada satu pertiga pot dan 0.5% pada tiga perempat, dengan check 19.8%. Pada 6♣6♦3♥, bet hanya 3.0%. Perbezaannya ialah rank yang berpasangan dan hubungan seluruh range dengan board. Trips ace berjumlah 88 kombo pada SB berbanding 66 pada BB; AK dan AQ, 16 kombo, langsung tiada dalam range call BB.",
   category: "strategy",
   date: "2026-09-15",
-  updated: "2026-09-26",
+  updated: "2026-09-27",
   masterUpdated: "2026-09-26",
   readTime: "10 minit",
   emoji: "🅰️",
