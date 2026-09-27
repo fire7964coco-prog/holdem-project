@@ -1,3 +1,10 @@
+## 2026-09-27 (6) — 🇲🇾 ms 동결 해제 + 꼬리 드리프트 6편 EN 델타 반영 (MB-105)
+
+- 사장님 결정: 검수 폴더는 자체 순서(pt → ja → …, ms 마지막) → MB-103 아스트라는 ms 차례에 그 시점 해시로 · 본체 ms 동결 해제.
+- `16092c4d`: game-order(FAQ +4 · 메타 «누가 먼저 베팅» 축) · all-in-rules · betting-actions · blind-meaning · showdown-rules · beginners — Opus 서브 6개가 EN 델타 hunk 단위 전수 대조(이미 반영 a / 누락 반영 b), 헤드가 diff 전량 판독(수치 $24·19%·36% EN 일치 · 새 핸드 0). updated 09-27 · masterUpdated = EN updated.
+- audit ms 51/51 🔴 0 🟠 0 · 꼬리 드리프트 6 → 0 · structure ms 0 · build 73+607 · 라이브 6/6 · IndexNow 30. 교차 모델 검수는 아스트라 ms 회차가 이 해시 이후 판본을 본다.
+- 🪶 kejohanan·butang 체계 파일(showdown·blind·betting)은 새 문장도 파일 표기를 따름 — 통일 판정은 MB-103 부탁 ⓐⓑ.
+
 ## 2026-09-27 (5) — queue Q16 게이트·렌더러 머지·배포 (MB-104)
 
 - `2da14f91` ff: `audit:hard --schema --locale` 로케일 산출물 대조(Q15-3) · `headingText()` H2 안 링크를 목차·id에서 벗김(Q15-4 · 앵커 9 = paired-board 9로케일) · 신설 `check:heading-text`(+selftest 9/9). ms 원문 0자(동결 유지).
