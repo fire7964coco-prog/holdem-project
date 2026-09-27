@@ -79,7 +79,7 @@
 🔴 **머지 대기 확인**: `for l in zh zh-hant ja queue; do git log --oneline main..harden-$l | wc -l; done`
 🪶 **레인 창 띄우기**: `wt.exe -w new new-tab --suppressApplicationTitle --title "🇯🇵 harden-ja (일본어 경화)" -d "C:\Users\하봄\Downloads\Holdem-ja" claude`
 🪶 **🧰 queue 창**: `wt.exe -w new new-tab --suppressApplicationTitle --title "🧰 harden-queue (잔여 작업)" -d "C:\Users\하봄\Downloads\Holdem-queue" claude`
-🔴 **2026-09-11부터 헤드(본체 main)는 «글을 고치지 않는다».** 헤드 몫 = 머지·빌드·배포·우편함·핸드오프·WORKLOG·정본 승격·`lane:sync`. 글·이미지·게이트 손질은 전부 🧰 queue 레인 회차로 간다(사장님 지시 「여기서 작업하니까 컨텍스트가 길어지고 맥락이 자꾸 끊기네」). 예외 = KO 신규 발행(`new-post` 스킬)과 한 줄짜리 긴급 정정.
+🪶 **분담은 «일이 많을 때의 선택»이지 금지가 아니다**(2026-09-27 사장님 정정: *「본체창은 직접 고치지 않는다라는 규정은 삭제해 … 그 당시 할 게 많아서 레인창으로 작업했고 본체는 다른 거 한 거지 · 아예 글작업하지 말라는 말이 아니었어」*). 본체 main도 글·이미지·게이트를 직접 고칠 수 있다. 헤드 몫(머지·빌드·배포·우편함·핸드오프·WORKLOG·정본 승격·`lane:sync`)이 쌓였거나 작업이 길어 맥락이 끊길 것 같으면 🧰 queue 레인 회차로 넘긴다 — 판단 기준은 그때의 일감 양이다.
 
 **회차 표**(두 레인 공통) = 1 규칙 6 → 2 족보 6 → 3 확률 7 → 4 전략 8 → 5 토너먼트 9 → 6 용어 6 = **42편**.
 대상 밖 = GTO 13 · wsop · taiwan-clubs.
