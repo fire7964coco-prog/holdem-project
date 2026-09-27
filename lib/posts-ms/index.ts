@@ -36,6 +36,12 @@ import { POST as holdemTournamentVsCashGame } from "./holdem-tournament-vs-cash-
 // [ms-tour import 끝]
 
 // [ms-gloss import 시작]
+import { POST as holdemGlossary } from "./holdem-glossary";
+import { POST as holdemBadBeat } from "./holdem-bad-beat";
+import { POST as holdemCooler } from "./holdem-cooler";
+import { POST as holdemFish } from "./holdem-fish";
+import { POST as holdemRake } from "./holdem-rake";
+import { POST as holdemStraddle } from "./holdem-straddle";
 // [ms-gloss import 끝]
 
 /**
@@ -83,6 +89,12 @@ export const MS_POSTS: Post[] = [
   // [ms-tour 배열 끝]
 
   // [ms-gloss 배열 시작]
+  holdemGlossary,
+  holdemBadBeat,
+  holdemCooler,
+  holdemFish,
+  holdemRake,
+  holdemStraddle,
   // [ms-gloss 배열 끝]
 ];
 
