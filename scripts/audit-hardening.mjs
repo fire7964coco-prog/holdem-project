@@ -1224,6 +1224,15 @@ const oneSlug = arg('slug');
 const oneCluster = arg('cluster');
 
 const oneLocale = arg('locale');
+
+/* --schema 가 대조할 빌드 산출물 폴더. KO는 app/blog, 로케일은 app/<loc>/blog.
+   (2026-09-27 queue Q16: 예전엔 --locale 을 무시하고 늘 KO 산출물과 대조해 비KO 로케일에서
+   «산출물 없음»·문항 불일치가 가짜로 떴다 — queue Q15-3 · ms 51편에서 실증) */
+function schemaOutDir(root, locale) {
+  const app = path.join(root, '.next', 'server', 'app');
+  return locale && locale !== 'ko' ? path.join(app, locale, 'blog') : path.join(app, 'blog');
+}
+
 const POSTS = oneLocale && oneLocale !== 'ko' ? await loadLocalePosts(oneLocale) : await loadPosts();
 const PE = await loadPokerEval();
 
@@ -1495,7 +1504,21 @@ if (argv.includes('--selftest')) {
     for (const x of found) console.log(`      → [${x.code}] ${x.msg}`);
   }
 
-  const TOTAL = FIX.length + H7FIX.length + CFIX.length + WFIX.length + KFIX.length + AFIX.length + OFIX.length + DFIX.length;
+  /* --schema 산출물 경로 — 로케일이면 그 로케일 폴더를 봐야 한다(queue Q15-3 · ms가 KO와 대조됐다) */
+  const app = path.join('R', '.next', 'server', 'app');
+  const SFIX = [
+    ['--schema KO(로케일 없음) = app/blog', schemaOutDir('R', null), path.join(app, 'blog')],
+    ['--schema --locale=ko = app/blog', schemaOutDir('R', 'ko'), path.join(app, 'blog')],
+    ['--schema --locale=ms = app/ms/blog (KO와 대조하면 안 됨)', schemaOutDir('R', 'ms'), path.join(app, 'ms', 'blog')],
+    ['--schema --locale=zh-hant = app/zh-hant/blog', schemaOutDir('R', 'zh-hant'), path.join(app, 'zh-hant', 'blog')],
+  ];
+  for (const [name, got, want] of SFIX) {
+    const ok = got === want;
+    if (ok) pass++;
+    console.log(`${ok ? '✅' : '❌'} [경로] ${name}${ok ? '' : `\n      → ${got}`}`);
+  }
+
+  const TOTAL = FIX.length + H7FIX.length + CFIX.length + WFIX.length + KFIX.length + AFIX.length + OFIX.length + DFIX.length + SFIX.length;
   console.log(`\n${pass}/${TOTAL} 통과`);
   process.exit(pass === TOTAL ? 0 : 1);
 }
@@ -1632,8 +1655,8 @@ for (const r of report) for (const x of r.findings) {
 /* F11 — FAQ 스키마는 빌드 산출물이 진실 (§14-A 5). `npm run build` 후 --schema 로 검사.
    주의: 산출물에서 "@type":"Question" 문자열은 이스케이프돼 0으로 세진다 → acceptedAnswer 로 센다. */
 if (argv.includes('--schema')) {
-  const dir = path.join(ROOT, '.next', 'server', 'app', 'blog');
-  console.log('\n\n══════ FAQ 스키마 (빌드 산출물 기준) ══════');
+  const dir = schemaOutDir(ROOT, oneLocale);
+  console.log(`\n\n══════ FAQ 스키마 (빌드 산출물 기준 · ${path.relative(ROOT, dir)}) ══════`);
   if (!fs.existsSync(dir)) {
     console.log('⚠ .next 산출물이 없다 — npm run build 를 먼저 돌려야 이 검사가 의미를 가진다.');
   } else {

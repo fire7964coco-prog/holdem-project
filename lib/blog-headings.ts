@@ -35,6 +35,18 @@ export function slugify(text: string): string {
     .toLowerCase();
 }
 
+/**
+ * 헤딩 원문에서 마크다운 링크 `[글자](url)` 를 «글자»만 남긴다 — id·목차 문자열 전용.
+ * 🔴 2026-09-27 수리(queue Q16 · Q15-4): H2 안 링크가 목차에 「[c-bet](/ms/blog/…)」 원문으로
+ * 찍히고, id 에는 URL 이 붙어 `…-cbetmsblogholdemcontinuationbet` 이 됐다(9로케일 paired-board 1자리씩).
+ * 본문 <h2> 의 링크 자체는 렌더러가 그대로 <a> 로 만든다 — 여기서는 «이름표»만 벗긴다.
+ * 🪶 링크 없는 헤딩은 입력 = 출력이라 기존 앵커는 한 개도 안 바뀐다.
+ */
+export function headingText(text: string): string {
+  // 🪶 이미지 `![alt](src)` 는 벗기지 않는다(`!alt` 가 되므로) — 남겨 두면 check:heading-text 가 잡는다.
+  return text.replace(/(?<!!)\[([^\]]+)\]\([^)\s]*\)/g, '$1');
+}
+
 /** H2·H3 를 문서 순서로 잡는다 — 렌더러와 목차가 **같은 순서**를 보게 하는 단일 출처. */
 export const HEADING_RE = /^(#{2,3}) (.+)$/gm;
 
@@ -50,7 +62,7 @@ export function createHeadingSlugger(): (text: string) => string {
   const used = new Map<string, number>();
   return (text: string): string => {
     // 문장부호만으로 된 헤딩이 빈 id 를 만들지 않도록 최후 보루를 둔다(현재 코퍼스 해당 0건).
-    const base = slugify(text) || 'section';
+    const base = slugify(headingText(text)) || 'section';
     const n = (used.get(base) ?? 0) + 1;
     used.set(base, n);
     return n === 1 ? base : `${base}-${n}`;
@@ -63,7 +75,7 @@ export function extractHeadings(content: string): { id: string; text: string; le
   // 🔴 H3 도 «발급기에는» 먹인다 — 렌더러가 H2·H3 를 한 패스로 돌기 때문에
   //    번호를 맞추려면 목차 쪽도 같은 순서로 소비해야 한다. 반환에서만 H2 를 고른다.
   return [...content.matchAll(HEADING_RE)]
-    .map((m) => ({ id: slug(m[2]), text: m[2].trim(), level: m[1].length }))
+    .map((m) => ({ id: slug(m[2]), text: headingText(m[2]).trim(), level: m[1].length }))
     .filter((h) => h.level === 2)
     .filter((h) => !/이 글 핵심 요약/.test(h.text));
 }

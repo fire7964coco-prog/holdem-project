@@ -40,6 +40,7 @@
 | **Q13-b** | **MA-147 ②③ (2/2) — glossary · rake · straddle** | 같은 브리프 §1 「Q13-b」 표(G1~G3 · R1~R5 · S1~S4 · 약 110자리) + §3 처방 문면. 🔴 **Q13-a가 남긴 것 = §2 「Q13-a가 남긴 것」 절을 먼저 읽어라** | **Codex 현재 모델 A/B/C · 1세션** | ✅ | (아래 §1-Q13-b) | 독립 4렌즈 + 2차 교열 · 통합 쟁점 10종: 반영 7 · 이관 2 · 기각 1 | 09-22 |
 | **Q14** | **MA-148 이행 — zh+zh-hant 정정 13 + EN-먼저 신규 4** | **MA-148 ①~④**(보고서 §D · 원장 `ledger/zh/`·`ledger/zh-hant/` 16편 1,958행). 🔴 **헤드 09-21 실측: 17개 앵커 중 «고쳐진 것 1»**(④ `3-bet-or-fold from the SB` «vs a raise»는 표 L179·본문 L222~224가 이미 닫혔고 **요약 L297·FAQ L273 두 자리만 남았다** — 검수장 지적이 이 둘을 정확히 가리킨다). ① zh+zh-hant 공통 c-bet 직답 「四到五成」→「約 30–45%」(+ pt·de·ja 옛 값 인용 = **5로케일**) ② zh 4 ③ zh-hant 8 ④ EN-먼저 4(`position-play` 「necessarily above 100%」 = 자사 캡처 5/13 스팟 반례 · `3bet` 「position leverage」 · SB 2자리 · `limping` tldr 토너 전제). 🟠 요청 = `.solver-captures/data-zh.json` 13스팟 **IP 측 `actions` 빈 배열** → 「IP 65–75% c-bet」 4행 대조 불가(UNV) | **Opus 전 구간 · 1세션** | ✅ | (아래 §1-Q14) | 독립 4렌즈 + 2차 교열 · 신규 **5종 반영** · 범위 밖 **2종 이관** | 09-22 |
 | **Q15** | **ms 30편 레인 경계 용어 통일 + 기존 21편 링크 복원 + 구판 라벨** | 브리프 = `docs/harden-brief/queue-Q15-ms-용어통일-링크복원.md`(§1 교차 렌즈 판정 10항 · §1-X 치환 금지 예외 · §2 check:structure ms 행 · §3 게이트). 기준 `469d08f8`. 🔴 끝나면 헤드가 배포 → 아스트라 교차 요청 + ms 동결 | Opus 5.5 · 1세션 | ✅ | (아래 §1-Q15) | 렌즈 4종 지적 **30**(렌즈 간 중복 5 제거 후 **25**) · 반영 **15**(편집 20자리) · 기각·유지 **6** · 기록/이관 **4** + 2차 교열 새 결함 3/반영 3 | 09-27 |
+| **Q16** | **게이트·렌더러 — `audit:hard --schema` 로케일 경로 + H2 안 링크의 목차·앵커 누출** | §5 **Q15-3**(`scripts/audit-hardening.mjs` `--schema`가 `--locale` 무시 → KO 산출물과 대조) · **Q15-4**(H2 안 `[x](url)`가 목차 문자열·헤딩 id에 원문 누출 · paired-board 9로케일). 🔴 ms 동결 중 — `lib/posts-ms/` 원문 0자 수정(헤드 통지 09-27 (4)) | Opus 5.5 · 1세션(코드·판정 · 새 문장 0) | ✅ | (아래 §1-Q16) | 렌즈 3종 지적 **11**(렌즈 간 중복 3 제거) · 반영 **4** · 기록 **3** · 이관 **3** · 기각 **1** + 2차 교열 새 결함 0 · 우려 1 반영 | 09-27 |
 
 ### §1-Q1. 회차 Q1 판정 — 결재 1(shc #13) · 결재 6·소품 5건 (2026-09-11)
 
@@ -744,6 +745,18 @@ T1 **7/7** · T2 **8/8** · T3 **9/9**(`Q10s` 포함) · T4 **23/23**(`66–22` 
 
 🔴 **환경 사고 1건 — `node_modules` 정션이 풀렸다(보고)**: `npm install -D tsx`가 이 워크트리의 `node_modules` **정션을 지우고 실디렉터리로 교체**했다(`npm warn reify Removing non-directory …`). **원본은 무사하다** — 본체 `Holdem_Project/node_modules`는 149개·8/1 그대로이고 본체 `git status`도 clean. 지금 상태로 빌드·게이트 전부 정상이다. 다시 정션으로 묶을지는 §5 Q11-5.
 
+### §1-Q16 (2026-09-27 · 게이트·렌더러 — Q15-3 · Q15-4)
+
+**변경 4파일**(글 0 · 이미지 0): ① `scripts/audit-hardening.mjs` — `schemaOutDir(ROOT, locale)` 신설(KO = `.next/server/app/blog` · 로케일 = `.next/server/app/<loc>/blog`) · 셀프테스트 경로 4건(76 → **80/80**) ② `lib/blog-headings.ts` — `headingText()` 신설: 헤딩 원문에서 `[글자](url)` → «글자»(이미지 `![…]`는 lookbehind로 제외) · `createHeadingSlugger`(렌더러 id·목차 id 공용)와 `extractHeadings` 목차 문자열에 적용. 본문 `<h2>` 안 링크는 그대로 `<a>`로 남는다 ③ 🆕 게이트 `scripts/check-heading-text.mjs`(`npm run check:heading-text` · `:selftest` **9/9**) — 목차 문자열에 `](`·`**`·`==` 잔존 + «id ≠ 목차 문자열의 slug(+`-N`)» 를 🔴 ④ `package.json` 별칭 2.
+
+**실측**: Q15-3 — 수리 후 `--schema --locale=ms|en|ja` 전편 소스=산출물 일치(비KO 25로케일 전부 `app/<loc>/blog` 산출물 실존 확인). Q15-4 — 전 코퍼스 701파일·헤딩 **10,509개** 수리 전/후 id 대조 = **바뀐 id 정확히 9개**(paired-board 9로케일 링크 H2 · en·es·hi·id·ja·ms·pt·zh·zh-hant) · 나머지 10,500개 불변. 옛 id 참조 = 레포·`홀덤검수` 전체 grep **0**(렌즈 2 독립 확인). 빌드 산출물 9로케일: 새 id = 목차 href 일치 · `](/` 누출 0. 예: ms `#patutkah-acehigh-fold-kepada-cbetmsblogholdemcontinuationbet` → `#patutkah-acehigh-fold-kepada-cbet`.
+
+**변이 시험**: `lib/blog-headings.ts`를 HEAD 판으로 되돌리면 게이트 🔴 **9** · 셀프테스트 실패 → 게이트가 실제 사고를 잡는다(복원 후 0).
+
+**렌즈 3종**(코드 정확성 · SEO/앵커 · 교열 — Opus 서브): 지적 11(중복 3 제거) · **반영 4**(`const POSTS =oneLocale` 공백 · 게이트의 죽은 id 검사 → slug 대조로 교체 · Q15-3 라벨 통일 · 이미지 문법 `![alt]`가 `!alt`로 벗겨지던 엣지) · **기록 3**(괄호 든 URL · title 붙은 링크 · `*기울임*`·`~~`·HTML 태그는 게이트 범위 밖 — 전부 현재 코퍼스 0건 · 앞 둘은 `](`로 게이트가 운다) · **이관 3**(§2 «Q16이 남긴 것») · **기각 1**(`index.ts` 제외 — 전 index.ts 헤딩 0). **2차 교열**: 새 결함 0 · 우려 1 반영(id 축이 구조상 늘 참 → 게이트 머리에 «경로 분기 회귀용» 한정 명기) · 사소 1 기각(셀프테스트 이름의 «(잡아야 함)» 중복 표기 = audit-hardening 기존 관례).
+
+**게이트**: `audit:hard:selftest` 80/80 · `check:heading-text` 675파일·목차 H2 7,979 🔴 0 · `check:hangul` 0 · `npm run build` 통과(73 + intl 607 · prebuild 게이트 전부) · sitemap 되돌림.
+
 ### §1-Q15 (2026-09-27 · ms 51편 — 용어 통일 + 링크 복원 + 구판 라벨)
 
 **범위**: `lib/posts-ms/` 44파일(브리프 `docs/harden-brief/queue-Q15-ms-용어통일-링크복원.md` · 기준 `469d08f8` → 착수 시 `3f9a32a9`, C 전 `git merge main` = `bd23ae4d` · ms 파일 충돌 0). EN·다른 로케일·KO는 한 자도 안 고쳤다. `updated`·`masterUpdated` 불변(L-2h·L-2i 선례 · 링크·용어만).
@@ -920,6 +933,8 @@ B 176 축어 예시(100 벳 + 140 올인 → **240**)·A 96.a(1,700 + 500 → **
 🪶 **회차 중 자기 수리 2건**: ja 직답이 178자(규격 90~170) + 본문과 축어 겹침 🔴 → 재작성해 164자·echo 0으로. **게이트가 내 수리를 되받아쳤다.**
 
 ## 2. 미결 (해결될 때까지 유지)
+
+- 🟠 **Q16이 남긴 것 (2026-09-27 · 게이트·렌더러)** — ⓐ **KO 퀴즈 분할 slugger**(렌즈 1 · ① 원본 유래 · 확신 낮음): `app/blog/[slug]/page.tsx:398`이 `:::quiz:::` 기준으로 본문을 쪼개 조각마다 `renderMarkdown`을 부른다 → 조각마다 새 slugger라 **조각을 넘어 같은 헤딩이 반복되면** 본문 id 접미(`-2`)와 목차 href가 어긋날 수 있다(현재 발생 여부 미실측) ⓑ **H2 안 링크 패턴 자체**(렌즈 2 · EN-먼저 · 🔴 ms 동결 뒤): paired-board 9로케일 링크를 H2 직후 직답 문단으로 내리는 편이 UX·GEO상 낫다 — 헤딩 문안 변경은 앵커를 또 바꾸므로 한 번에 ⓒ **hi 헤딩 CTA 혼입**(렌즈 2): `lib/posts-hi/paired-board-strategy.ts:184` 「… fold करें? [सॉल्वर से समझें](/hi/solver)」 — 다른 8로케일과 달리 질문 + 솔버 CTA 결합 · 질문만 남기고 CTA는 본문으로(ⓑ와 한 회차).
 
 - 🟠 **Q15가 남긴 것 (2026-09-27 · ms)** — ⓐ `holdem-game-order` FAQ −4(EN 07-02 이후 추가분 번역 · masterUpdated 07-02 · 꼬리 드리프트 6편 중 하나) ⓑ 기존 21편의 «kejohanan»(일반 명사) 잔존 — tvc L43·L66·L378 «cip/Equity kejohanan» · blind-meaning 본문 «kejohanan» vs 이번 카드 «Tournament»(§1-⑦은 신규 30편만이라 범위 밖 · 동결 전 판정 필요) ⓒ `holdem-game-order:169` «Keseluruhan Urutan Sekali Pandang»(⑤ 라벨 잔존 · 범위 밖) ⓓ ⑨ «di hadapan»(확신 낮음 · 미적용) ⓔ 좌석명 «Button»/«butang» 로케일 내 갈림(beginners는 Button으로 통일 · 나머지 편 미정 · «butang pengedar»=물리 버튼은 소문자 유지가 맞다).
 
@@ -1345,6 +1360,13 @@ B 176 축어 예시(100 벳 + 140 올인 → **240**)·A 96.a(1,700 + 500 → **
 ## 5. 헤드 요청 (헤드가 처리하면 ✅)
 
 > 회차마다 여기에 쌓는다: ① MB 통지 초안(EN 변경 슬러그·자리·되돌리지 마라·앵커 갱신) ② ja·zh·zh-hant 파일 목록(§6-0 통지용) ③ `locale-intentional-diffs`·`settled-decisions` 승격 ④ 정본(en-first-queue·핸드오프)에서 지울 항목.
+
+### Q16 (2026-09-27 · 게이트·렌더러 4파일 — **배포가 걸린 회차다**: 렌더러 변경으로 9로케일 앵커 id 9개가 바뀐다)
+
+- 🔴 **Q16-1 배포 + MB 통지 초안**: 「렌더러 Q16 — `lib/blog-headings.ts` `headingText()`: H2 안 마크다운 링크를 목차 문자열·헤딩 id에서 벗긴다. 본문 문장 변경 0 · `updated` 불변. **바뀐 앵커 9** = `paired-board-strategy` en·es·hi·id·ja·ms·pt·zh·zh-hant의 링크 든 H2 1개씩(URL 조각이 붙은 옛 id → 글자만의 id · 예 en `#should-you-fold-acehigh-to-a-continuation-bet`). 원장 앵커에 옛 id가 있으면 갱신 요청(레포·검수장 grep 0).」 🪶 ms 파일 원문은 안 건드렸다(동결 준수) — 산출 HTML의 id만 바뀐다. sitemap은 `updated` 불변이라 행 변화 0이 정상.
+- 🟠 **Q16-2 Q15-3 · Q15-4 ✅ 처리**: 위 §5 Q15의 두 행을 종결로(해결 = 이 회차 커밋).
+- 🟠 **Q16-3 게이트 등재**: 신설 `check:heading-text`(+`:selftest`)를 프로토콜 §7-F «게이트(C)» 행에 «헤딩·H2를 손댔거나 `lib/blog-headings.ts`·렌더러를 손댔으면» 조건으로 추가(정본 문서 = 헤드 몫). `prebuild`·`build:vercel`에는 **물리지 않았다**(`buildCommand` 256자 한도 · 올릴지 헤드 판단 — 올리면 두 곳 다).
+- 🟡 **Q16-4 판정 요청**: §2 «Q16이 남긴 것» ⓑⓒ(H2 링크 → 직답 문단 이동 · hi CTA)는 ms 동결 해제 뒤 EN-먼저 한 회차로 묶을지.
 
 ### Q15 (2026-09-27 · ms 44파일 — 용어·링크·라벨 · **배포가 걸린 회차다**)
 
