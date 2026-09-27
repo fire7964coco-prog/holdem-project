@@ -1,3 +1,9 @@
+## 2026-09-27 (2) — 🇲🇾 ms 신규 30편 5레인 머지·배포 (MB-102)
+
+- 5레인 C 완료 → 머지(rank·prob·strat·tour·gloss · 충돌 0) · `469d08f8` ms 계산기 사전 빠른 참조 표1~5·related 8·deal·shortStack 링크를 EN 슬러그로(calc-parity ms 13→0) · ms 21 → 51편 · build 73+607 · audit:hard ms 51/51 🔴 0 · 라이브 표본 200 · IndexNow 457 · lane:sync 10레인.
+- §7-③④: 5레인 신규 용어표 대조 + 교차 렌즈(KL 편집자 · Opus) → 인니어 유입 0 · 통일 10항 약 45자리(favourite · leak · stakes rendah · Ringkasan pantas 등) + 치환 금지 예외 → queue **Q15** 브리프(§7-⑤ 21편 링크 복원 · 구판 라벨 동반).
+- 다음: Q15 → 헤드 배포 → 아스트라 교차 요청 + ms 동결.
+
 ## 2026-09-27 (1) — L-2i 검수장 대조 요청 3건 이행 (MA-200·202 회신 · MB-101)
 
 - `541394e0` 29파일(각 1줄 · updated 불변). ① MA-200 요청 1 hand-rankings FAQ «full house only loses to …» 상위 풀하우스 누락 WRONG → EN+12로케일 ② MA-200 요청 2 로케일 고유 9자리(de bad-beat·drawing-odds·position-play · es flush-vs-straight · zh·zh-hant card-counting · zh outs·reading) ③ MA-202 요청 1 strategy 말미 요약 SB 컴플리트 예외(EN+7).
