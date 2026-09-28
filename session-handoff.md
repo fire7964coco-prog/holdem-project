@@ -48,7 +48,7 @@
 - ✅ **ja 신규 2편 발행**(09-28 · MB-108 · WORKLOG 09-28 (1)): `jopt-osaka-02-2026-guide` · `korea-poker-trip-gop-wpt-seoul-2026`. 사실 정본 = 각 사실 시트 §7(09-28 재확인).
 - ✅ **3편째 `apt-championship-taipei-2026-guide`**(09-28 · MB-114 · WORKLOG 09-28 (4)) · 시트 `docs/tournament-factsheets/2026-11-apt-championship-taipei.md` · 훅 만료는 캘린더(10/10~11 JOPT Games · 11/29 결과). 검수 폴더(GPT 아스트라)에 MB-113과 함께 청구.
 - ▶ **두 글의 후속 갱신은 전부 캘린더에**(`docs/update-calendar.md` 10월 «미발표 → 공개 추적» · «마지막 입구» · 11월 종료 회차): 오사카 Players Guide(受付締切·プライズ総額) · 오사카 Online Day 1 공지 · WPT 서울 바우처 이용 방법 공지 · 10/25 온라인 예선 종료 · 11/3·11/8·11/9 결과 아카이브(4곳 동시).
-- 남은 후보 D JOPT 2027 도쿄#01(11/26 · 権利 수 공개 대기) · E WPT WC(10/30 · 일본 관련성 약함) · F SPADIE(10/22 · 본전 비용 미발표) — 캘린더 등재 · 지시 대기. `lib/tournaments.ts` 어긋남 4건(후보 문서 §4)은 별도 회차.
+- ⏸ **남은 후보 D·E·F는 보류**(사장님 09-28 «미결정이 있으니 나중에») — D JOPT 2027 도쿄#01(11/26 · 権利 수 공개 대기) · E WPT WC(10/30 · 일본 관련성 약함) · F SPADIE(10/22 · 본전 비용 미발표). 자동 착수 금지 · 공개되면 사장님 지시로 — 캘린더 등재 · 지시 대기. `lib/tournaments.ts` 어긋남 4건(후보 문서 §4)은 별도 회차.
 - 🪶 보드 링크: 로케일 고유 글은 `blogLinkByLocale`(`lib/tournaments.ts` · 해석 = `lib/tournaments-blog-links.ts`)에 건다 — KO 가이드와 슬러그가 다른 ja 글을 대회 카드에 띄우는 자리.
 
 ## G. 검수장 PT 재판정 보고 — 판정·전파 끝 (MB-110 · MB-112)
