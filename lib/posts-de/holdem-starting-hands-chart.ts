@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Von den 169 Starthand-Typen ist nur eine kleine Spitzengruppe – etwa 15–20% der Hände, die du bekommst – für einen Anfänger profitabel. Große Paare (AA–TT) und AK raist du aus jeder Position; je später du agierst, desto weiter öffnest du – von ~13% unter der Gun bis ~43% am Button (im 6-Max nochmals weiter). Starte mit einem vereinfachten Chart, füge GTO-Preflop-Charts hinzu, sobald Raise-or-Fold automatisch sitzt.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "🂡",
@@ -142,7 +142,7 @@ Der Button ist die beste Position im Poker. ==g:Du agierst jede Hand auf Flop, T
 - **Suited Connectors (T9s, 98s, 87s)** – billige Hände mit hohen Implied Odds
 - **Schwächere Broadway-Offsuit (KTo, QJo)** – nur in später Position, niemals früh
 
-Kernregel: ==diese spekulativen Hände brauchen Position, um profitabel zu sein==. Wenn ein UTG-Spieler vor dir raist, wandern die meisten davon direkt in den Muck – du würdest einen Raise bezahlen, um eine spekulative Hand gegen eine starke Range zu spielen, und der billige Flop, den sie braucht, ist weg.
+Kernregel: ==als Eröffnungshände brauchen diese spekulativen Hände Position, um profitabel zu sein==. Und wenn ein UTG-Spieler vor dir raist, wandern die meisten davon direkt in den Muck – du würdest einen Raise bezahlen, um eine spekulative Hand gegen eine starke Range zu spielen, und der billige Flop, den sie braucht, ist weg.
 
 ---
 
@@ -179,7 +179,7 @@ Ein Hinweis zum Rahmen: Hier geht es darum, welchen Prozentsatz deiner *Range* d
 
 Ich halte beim Lernen Solver-Outputs offen, und trotzdem gebe ich jedem Anfänger zuerst ein vereinfachtes Chart. Das sind zwei verschiedene Werkzeuge, und zu wissen, welches man nutzt, ist mehr wert als jedes Chart allein.
 
-**GTO-Preflop-Charts** kommen von Solvern (PioSOLVER, GTO Wizard und Konsorten). Sie sind theoretisch unexploitbar – und sie sind auch voll mit gemischten Frequenzen: öffne diese Hand zu 25% der Zeit, folde sie zu 75%, 3-bette diese Kombo, aber nur mit diesen Farben. **Anfänger-Charts** – wie das auf dieser Seite – pressen all das in eine klare Aktion pro Hand.
+**GTO-Preflop-Charts** kommen von Solvern (PioSOLVER, GTO Wizard und Konsorten). Sie sind darauf ausgelegt, möglichst unexploitbar zu sein – und sie sind auch voll mit gemischten Frequenzen: öffne diese Hand zu 25% der Zeit, folde sie zu 75%, 3-bette diese Kombo, aber nur mit diesen Farben. **Anfänger-Charts** – wie das auf dieser Seite – pressen all das in eine klare Aktion pro Hand.
 
 :::compare
 GTO-Preflop-Charts | Vereinfachtes Anfänger-Chart
@@ -217,7 +217,7 @@ Der ==r:teuerste Fehler, den Anfänger machen, ist Raises mit schwachen Assen zu
 
 Charts funktionieren nur, wenn sie vor dir liegen, wenn es zählt. Für Homegames und Study-Sessions haben wir das Ganze druckbar gemacht:
 
-**[Lade das kostenlose druckbare Poker-Starthände-Chart (PDF) herunter](/downloads/poker-starting-hands-chart.pdf)** – eine Seite: das komplette 9-Max-Opening-Chart plus die 6-Max-Anpassung in einer Zeile, Cheat-Sheet-Format. Druck es aus oder lass es zwischen den Händen auf deinem Handy offen.
+**[Lade das kostenlose druckbare Poker-Starthände-Chart (PDF) herunter](/downloads/poker-starting-hands-chart.pdf)** – eine Seite: das 9-Max-Opening-Chart nach Position plus die 6-Max-Anpassung in einer Zeile, Cheat-Sheet-Format. Druck es aus oder lass es zwischen den Händen auf deinem Handy offen.
 
 Dann nutze es wörtlich, jede Hand, für deine ersten 20+ Sessions:
 
@@ -260,11 +260,11 @@ Alle drei richtig? Probier das komplette [10-Fragen-Poker-Hand-Quiz](/en/quiz) �
 
 **Q. Was ist die beste Starthand im Poker?**
 
-A. Pocket Aces (AA) ist die beste Starthand im Poker. Preflop gewinnen Asse rund 85% der Zeit gegen eine zufällige Hand. Raise und re-raise immer mit Assen – das Ziel ist, als statistischer Favorit einen großen Pot aufzubauen.
+A. Pocket Aces (AA) ist die beste Starthand im Poker. Preflop gewinnen Asse rund 85% der Zeit gegen eine zufällige Hand. Als Standard raist und re-raist du mit Assen – das Ziel ist, als statistischer Favorit einen großen Pot aufzubauen.
 
 **Q. Was sind gute Starthände im Poker?**
 
-A. Gute Starthände im Poker sind Premium-Paare (AA–TT), große Asse (AK, AQ) und starke Suited Broadways (KQs, AJs). Das sind zusammen 70 der 1.326 möglichen Kombinationen, also gut 5% – auf die 15–20% der ausgeteilten Hände, die ein solider Anfänger spielt, kommst du erst mit Position und spekulativen Händen. Spekulative Hände wie kleine Paare und Suited Connectors sind nur aus später Position gut.
+A. Gute Starthände im Poker sind Premium-Paare (AA–TT), große Asse (AK, AQ) und starke Suited Broadways (KQs, AJs). Das sind zusammen 70 der 1.326 möglichen Kombinationen, also gut 5% – auf die 15–20% der ausgeteilten Hände, die ein solider Anfänger spielt, kommst du erst mit Position und spekulativen Händen. Spekulative Hände wie kleine Paare und Suited Connectors spielen sich aus später Position am besten.
 
 **Q. Wie viele Starthände gibt es im Poker?**
 
@@ -276,11 +276,11 @@ A. Die 7-2-Regel ist ein Haus-Nebenspiel, keine offizielle Poker-Regel: gewinnt 
 
 **Q. Was ist die schlechteste Starthand im Poker?**
 
-A. 7-2 offsuit gilt weithin als die schlechteste Starthand im Poker. Die Karten liegen zu weit auseinander, um zusammen eine Straße zu machen, sind zu niedrig, um unverbessert zu gewinnen, und selbst ein Paar zu treffen lässt dich mit einer schwachen Hand und einem schlechten Kicker zurück.
+A. 7-2 offsuit gilt weithin als die schlechteste Starthand im Poker. Die Karten liegen zu weit auseinander, um zusammen eine Straße zu machen, sind zu niedrig, um oft ohne Verbesserung zu gewinnen, und selbst ein Paar zu treffen lässt dich mit einer schwachen Hand und einem schlechten Kicker zurück.
 
 **Q. Sollten Anfänger GTO-Preflop-Charts nutzen?**
 
-A. Nicht am Anfang. GTO-Preflop-Charts nutzen gemischte Frequenzen, die gegen starke Gegner unexploitbar sein sollen – Overkill in Anfänger-Spielen, wo ein vereinfachtes Raise-or-Fold-Chart mehr einbringt. Lerne das einfache Chart, bis es automatisch sitzt, und füge dann GTO-Charts hinzu, wenn du studierst oder online aufsteigst.
+A. Nicht am Anfang. GTO-Preflop-Charts nutzen gemischte Frequenzen, die selbst für starke Gegner schwer auszubeuten sein sollen – Overkill in Anfänger-Spielen, wo ein vereinfachtes Raise-or-Fold-Chart mehr einbringt. Lerne das einfache Chart, bis es automatisch sitzt, und füge dann GTO-Charts hinzu, wenn du studierst oder online aufsteigst.
 
 **Q. Macht suited zu sein wirklich einen Unterschied?**
 

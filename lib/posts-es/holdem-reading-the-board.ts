@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "En Texas Hold'em siempre juegas la mejor mano de 5 cartas entre 7 (2 cartas propias + 5 cartas comunitarias) — usando las dos, una, o ninguna (jugar con la mesa). Repasa las 7 cartas en un orden fijo: color → escalera → parejas → carta alta.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-09-27",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🃏",
@@ -254,7 +254,7 @@ A. Las cartas comunitarias son las 5 cartas que se reparten boca arriba en el ce
 
 **Q. ¿Qué significa "jugar con la mesa" en Texas Hold'em?**
 
-A. Significa que las 5 cartas comunitarias ya son tu mejor mano posible de 5 cartas — ninguna carta propia las mejora. Como la mesa es compartida, todos los jugadores pueden reclamar esa misma mano, así que jugar con la mesa suele acabar en bote dividido, salvo que las cartas propias de un rival mejoren la mesa. Hay una formalidad que aun así cuesta botes: aunque juegues con la mesa **tienes que enseñar tus dos cartas** para llevarte tu parte (==regla 75 del reglamento de torneos de la WSOP==, regla 19 de la TDA 2024) — si las tiras al muck sin mostrarlas, no te llevas nada.
+A. Significa que las 5 cartas comunitarias ya son tu mejor mano posible de 5 cartas — ninguna carta propia las mejora. Como la mesa es compartida, todos los jugadores pueden reclamar esa misma mano, así que jugar con la mesa suele acabar en bote dividido, salvo que las cartas propias de un rival mejoren la mesa. Hay una formalidad que aun así cuesta botes: aunque juegues con la mesa **tienes que enseñar tus dos cartas** para llevarte tu parte (==regla 75 del reglamento de torneos de la WSOP==, regla 19 de la TDA 2024) — si las tiras al muck sin mostrarlas, normalmente no te llevas nada (el floor solo puede recuperar una mano mientras siga siendo claramente identificable; regla 109 del reglamento de torneos de la WSOP).
 
 **Q. ¿Puede la mesa ser la mejor mano para todos?**
 

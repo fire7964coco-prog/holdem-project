@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Dalam turnamen tanpa all-in, agresor terakhir di river membuka kartu lebih dulu; jika semua check, giliran pemain aktif pertama di kiri tombol dealer. Jika ada all-in, semua hand yang tersisa wajib langsung dibuka setelah seluruh betting selesai. Caller river yang masih memegang atau sudah membuka kartunya berhak meminta melihat hand agresor terakhir. Dalam cash game, aturan membuka kartu dan muck mengikuti aturan room.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "10 menit",
   emoji: "🃏",
@@ -41,7 +41,7 @@ Aturannya tergantung bagaimana ronde taruhan terakhir berakhir (untuk urutan len
 |--------------------|-----------------|
 | Ada yang bet atau raise di river | ==Pemain terakhir yang bet atau raise== buka duluan — kecuali itu all-in di turnamen (lihat di bawah) |
 | Semua orang check di river | Pemain aktif pertama di kiri tombol dealer buka duluan |
-| All-in di street sebelumnya (tidak ada taruhan di river) | Turnamen: semua hand dibuka tanpa ditunda begitu seluruh aksi taruhan selesai (TDA 2024 Rule 16). Cash game: kalau ada side pot, pemain side pot membuka lebih dulu; dan di permainan no-limit, pemain yang all-in membuka duluan (Live Action Rule 149) |
+| All-in di street sebelumnya (taruhan berakhir sebelum river) | Turnamen: semua hand dibuka tanpa ditunda begitu seluruh aksi taruhan selesai (TDA 2024 Rule 16). Cash game: kalau ada side pot, pemain side pot membuka lebih dulu; dan di permainan no-limit, pemain yang all-in membuka duluan (Live Action Rule 149) |
 
 </div>
 
@@ -61,13 +61,13 @@ Begitu agresor terakhir membuka hand-nya, pemain lain bisa memilih:
 
 ==r:Tapi ada satu pengecualian penting:== kalau bet river Anda di-call, pemain yang call sudah membayar harga penuh untuk melihat hand Anda. Aturan **"I want to see that hand"** inilah yang memungkinkan ia meminta dealer membuka hand yang sudah di-muck. Di turnamen, ==TDA 2024 Rule 18== membatasinya ketat: siapa pun yang di showdown sudah tidak memegang kartu, atau sudah muck tertutup, kehilangan hak untuk memintanya. Hak yang tak bisa diganggu gugat hanya milik pemain yang meng-call bet river dan membuka atau masih memegang kartunya — dan hanya atas hand ==agresor terakhir==, yaitu hand yang ia bayar untuk dilihat. Sisanya adalah kewenangan direktur turnamen. Cash game mengikuti house rule, dan itu tidak otomatis lebih longgar: menurut WSOP Live Action Rules, permintaan melihat hand yang belum terbuka menuntut adanya dugaan kolusi **dan** kehadiran floor person (==Live Action Rule 147==). (Jangan tertukar dengan "show one, show all", yang artinya kalau Anda sukarela memperlihatkan kartu ke satu pemain, semua orang di meja berhak melihatnya.)
 
-Aturan praktisnya: ==sebagai agresor terakhir Andalah yang membuka kartu — termasuk gertakan yang di-call.== Muck tertutup itu pilihan pemain yang call, setelah ia melihat hand si pembuat bet. Kalau Anda yang bet lalu buru-buru muck, Anda rugi dua kali: di turnamen, pemain yang call dan sudah membayar untuk melihatnya tetap boleh meminta hand Anda (==TDA 2024 Rule 18==) — di cash game WSOP ia tidak boleh, kecuali ada dugaan kolusi dan floor person hadir (Live Action Rule 147) — dan karena cards speak, banyak pot melayang gara-gara pemain yang ace-high-nya sebenarnya unggul malah ikut muck.
+Aturan praktisnya: ==sebagai agresor terakhir, buka kartu Anda — termasuk gertakan yang di-call.== Pemain yang call lalu membuka atau muck setelah melihat hand Anda. Sebagai pembuat bet, Anda boleh muck alih-alih membuka dan menyerahkan pot, tapi kalau buru-buru muck, Anda rugi dua kali: di turnamen, pemain yang call dan sudah membayar untuk melihatnya tetap boleh meminta hand Anda (==TDA 2024 Rule 18==) — di cash game WSOP ia tidak boleh, kecuali ada dugaan kolusi dan floor person hadir (Live Action Rule 147) — dan karena cards speak, banyak pot melayang gara-gara pemain yang ace-high-nya sebenarnya unggul malah ikut muck.
 
 ---
 
 ## Urutan Showdown Kalau Semua Orang Check di River
 
-Kalau tidak ada yang bet di river (semua check), showdown dimulai dari **pemain aktif pertama di kiri tombol dealer** dan berlanjut searah jarum jam.
+Kalau tidak ada yang bet di river (semua check) dan tidak ada yang all-in, showdown dimulai dari **pemain aktif pertama di kiri tombol dealer** dan berlanjut searah jarum jam.
 
 Contoh: Button, small blind, dan big blind sampai ke river. SB check, BB check, Button check. Showdown dimulai dari SB (pemain aktif pertama di kiri button). SB boleh buka atau muck. Lalu BB. Terakhir baru button.
 
@@ -85,7 +85,7 @@ Di **turnamen**, ketika seorang pemain all-in dan tidak ada taruhan lagi yang mu
 |----------------|---------------|
 | Pemain all-in di street sebelumnya, yang lain call, tidak ada taruhan lagi | Turnamen: semua hand dibuka tanpa ditunda begitu seluruh aksi taruhan selesai (TDA 2024 Rule 16). Cash game: kalau ada side pot, pemain side pot membuka lebih dulu; dan di permainan no-limit, pemain all-in membuka duluan (Live Action Rule 149) |
 | Bet all-in di river di-call | Cash game: pemain yang all-in buka duluan sebagai agresor terakhir. Turnamen: tidak ada urutan membuka sama sekali — menurut TDA 2024 Rule 16 semua hand dibuka bersamaan dan ==r:tidak ada yang boleh muck== |
-| Beberapa all-in menciptakan beberapa side pot | Setiap pot diselesaikan terpisah; semua hand yang terlibat dibuka |
+| Beberapa all-in menciptakan beberapa side pot | Setiap pot diselesaikan terpisah. Turnamen: setiap hand yang terlibat dibuka. Cash game: untuk memenangkan bagian pot mana pun, pemain wajib membuka kartunya (WSOP Live Action Rule 143) |
 
 </div>
 
@@ -113,7 +113,7 @@ Situasi nyata: Anda pegang J♥ 10♥ di board Q♥ 9♥ 8♥ 2♣ 5♦. Anda pu
 
 Slow roll adalah ==sengaja berlama-lama membuka hand yang sangat kuat padahal Anda sudah tahu menang==.
 
-Anda pegang nuts. Lawan membuka hand yang kuat. Anda berhenti sejenak, pura-pura berpikir, mengintip kartu Anda pelan-pelan, membuat semua orang menunggu — lalu membuka kartu pemenang. Secara teknis legal. Dan dibenci semua orang.
+Anda pegang nuts. Lawan membuka hand yang kuat. Anda berhenti sejenak, pura-pura berpikir, mengintip kartu Anda pelan-pelan, membuat semua orang menunggu — lalu membuka kartu pemenang. Tak ada aturan yang melarangnya secara eksplisit, tapi ia juga tidak dilindungi: mengejek lawan lewat sandiwara (WSOP Tournament Rule 47) dan menunda permainan terus-menerus (TDA 2024 Rule 70) sama-sama bisa berujung penalti. Dan ia dibenci semua orang.
 
 ![Slow roll dalam poker — pemain lain frustrasi karena satu pemain sengaja menunda membuka hand pemenang](/images/holdem-showdown-slow-roll.webp)
 
@@ -164,7 +164,7 @@ Di showdown — yaitu setelah semua taruhan ditutup — tidak ada aturan yang me
 
 **Q. Siapa yang buka kartu duluan saat showdown poker?**
 
-A. Pemain terakhir yang melakukan aksi agresif (bet atau raise) di ronde taruhan terakhir wajib buka duluan. Kalau ronde terakhir di-check habis oleh semua pemain, pemain aktif pertama di kiri tombol dealer buka duluan, lalu berlanjut searah jarum jam.
+A. Kalau tidak ada yang all-in, pemain terakhir yang melakukan aksi agresif (bet atau raise) di ronde taruhan terakhir wajib buka duluan. Kalau ronde terakhir di-check habis oleh semua pemain, pemain aktif pertama di kiri tombol dealer buka duluan, lalu berlanjut searah jarum jam. Pot dengan all-in mengikuti aturannya sendiri — lihat pertanyaan soal all-in di bawah.
 
 **Q. Apakah Anda wajib menunjukkan kartu kalau di-call saat showdown?**
 
@@ -172,11 +172,11 @@ A. Ya — kalau Anda pemain terakhir yang bet atau raise di river, Anda wajib bu
 
 **Q. Boleh muck saat showdown tanpa menunjukkan kartu?**
 
-A. Boleh, tapi hanya kalau Anda jelas-jelas kalah. Begitu hand pemenang dibuka, pemain yang kalah boleh muck menghadap ke bawah. Pengecualiannya ada di aturan turnamen: kalau Anda yang bet terakhir di river dan di-call, pemain yang sudah membayar untuk melihat hand Anda boleh menuntutnya dibuka (TDA 2024 Rule 18-B — di cash game WSOP tidak bisa, kecuali ada dugaan kolusi), dan begitu seorang pemain all-in dan seluruh aksi taruhan selesai, setiap hand di pot utama maupun side pot wajib dibuka — tidak seorang pun boleh muck (TDA 2024 Rule 16). Kalau masih ada keraguan siapa yang menang, jangan pernah muck sebelum dealer membaca kedua hand.
+A. Boleh — tapi muck berarti menyerahkan pot, jadi lakukan hanya kalau Anda yakin kalah. Begitu hand pemenang dibuka, pemain yang kalah boleh muck menghadap ke bawah. Pengecualiannya ada di aturan turnamen: kalau Anda yang bet terakhir di river dan di-call, pemain yang sudah membayar untuk melihat hand Anda boleh menuntutnya dibuka, asalkan ia masih memegang atau sudah membuka kartunya sendiri (TDA 2024 Rule 18-B — di cash game WSOP tidak bisa, kecuali ada dugaan kolusi), dan begitu seorang pemain all-in dan seluruh aksi taruhan selesai, setiap hand di pot utama maupun side pot wajib dibuka — tidak seorang pun boleh muck (TDA 2024 Rule 16). Kalau masih ada keraguan siapa yang menang, jangan pernah muck sebelum dealer membaca kedua hand.
 
 **Q. Apa itu slow roll dalam poker dan kenapa buruk?**
 
-A. Slow roll adalah sengaja menunda membuka hand pemenang yang Anda sudah tahu paling kuat. Legal, tapi dibenci secara universal karena dianggap sengaja mempermalukan lawan. Kalau Anda pegang nuts atau pemenang yang jelas, langsung buka kartu Anda. Kecepatan Anda membuka kartu berbicara banyak tentang karakter Anda di meja.
+A. Slow roll adalah sengaja menunda membuka hand pemenang yang Anda sudah tahu paling kuat. Tak ada aturan yang melarangnya secara eksplisit, tapi ia dibenci secara universal karena dianggap sengaja mempermalukan lawan — dan mengejek atau menunda permainan terus-menerus bisa dikenai penalti (WSOP Tournament Rule 47 · TDA 2024 Rule 70). Kalau Anda pegang nuts atau pemenang yang jelas, langsung buka kartu Anda. Kecepatan Anda membuka kartu berbicara banyak tentang karakter Anda di meja.
 
 **Q. Dalam situasi all-in, siapa yang buka kartu duluan?**
 

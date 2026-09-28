@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Was sind Blinds beim Poker? Small Blind vs. Big Blind einfach erklärt",
   seoTitle: "Was bedeutet Blind beim Poker? – Small Blind vs. Big Blind",
   desc: "Zwei Spieler zahlen, bevor eine Karte kommt – warum? Small Blind und Big Blind erklärt: wer setzt sie, SB vs. BB, Big Blind Ante und die Heads-up-Regeln.",
-  tldr: "Blinds sind Zwangseinsätze, die vor dem Austeilen der Karten gesetzt werden. Der Small Blind sitzt direkt links vom Dealer-Button, der Big Blind links daneben; der Big Blind – meist das Doppelte des Small Blinds – ist die Setzeinheit des Tischs.",
+  tldr: "Blinds sind Zwangseinsätze, die vor dem Austeilen der Karten gesetzt werden. Der Small Blind sitzt direkt links vom Dealer-Button, der Big Blind links daneben (heads-up setzt der Button selbst den Small Blind); der Big Blind – meist das Doppelte des Small Blinds – ist die Setzeinheit des Tischs.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-09-24",
-  masterUpdated: "2026-09-22",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "9 Min.",
   emoji: "💰",
@@ -26,7 +26,7 @@ Blinds sind ==der Motor, der Poker am Laufen hält== – das erste Stück der [T
 ---
 
 > **Schnelle Antwort**
-> Ein Blind ist ein **Zwangseinsatz**, der gesetzt wird, bevor irgendeine Karte ausgeteilt ist. Der **Small Blind (SB)** sitzt direkt links vom Dealer-Button; der **Big Blind (BB)** links vom Small Blind. Der Big Blind ist meist **doppelt so hoch** wie der Small Blind und dient als Standard-Setzeinheit des Tischs.
+> Ein Blind ist ein **Zwangseinsatz**, der gesetzt wird, bevor irgendeine Karte ausgeteilt ist. Der **Small Blind (SB)** sitzt direkt links vom Dealer-Button; der **Big Blind (BB)** links vom Small Blind (heads-up setzt der Button den Small Blind). Der Big Blind ist meist **doppelt so hoch** wie der Small Blind und dient als Standard-Setzeinheit des Tischs.
 
 ---
 
@@ -44,7 +44,7 @@ Blinds sind ==der Motor, der Poker am Laufen hält== – das erste Stück der [T
 
 Ein **Blind** ist ein Einsatz, den du bringen musst, *bevor* deine Karten ankommen – du setzt „blind“, ohne etwas gesehen zu haben. Zwei Spieler setzen ihn in jeder normalen Hand: der Small Blind und der Big Blind, die beiden Sitze direkt links vom Dealer-Button. (Zwei häufige Ausnahmen: der Dead Button, bei dem der Small Blind in einer Hand ausfallen kann, und das Heads-up, wo der Button selbst den Small Blind setzt – siehe unten.)
 
-Warum überhaupt jemanden zum Zahlen zwingen? Damit das Spiel lebt. ==r:Ohne Blinds könnte jeder Spieler endlos folden und auf Premiumhände warten==; die Pots wären leer, Bluffen wäre sinnlos, und das Spiel käme zum Stillstand. ==g:Zwei Zwangseinsätze pro Hand garantieren, dass es immer etwas zu holen gibt.==
+Warum überhaupt jemanden zum Zahlen zwingen? Damit das Spiel lebt. ==r:Ohne Blinds oder einen anderen Zwangseinsatz könnte jeder Spieler endlos folden und auf Premiumhände warten==; die Pots wären leer, Bluffen wäre sinnlos, und das Spiel käme zum Stillstand. ==g:Zwei Zwangseinsätze pro Hand garantieren, dass es immer etwas zu holen gibt.==
 
 ---
 
@@ -52,13 +52,13 @@ Warum überhaupt jemanden zum Zahlen zwingen? Damit das Spiel lebt. ==r:Ohne Bli
 
 Der **Small Blind (SB)** ist der kleinere der beiden Zwangseinsätze, gesetzt vom Spieler **direkt links vom Dealer-Button**. Er beträgt meist **die Hälfte des Big Blinds** – in einem €1/€2-Game ist der Small Blind €1.
 
-Er ist außerdem berüchtigt als der schwierigste Sitz am Tisch: Du hast mit einer zufälligen Hand einen halben Einsatz bezahlt, und ab dem Flop bist du auf jeder Street als **Erster** an der Reihe – mit den wenigsten Informationen. Deshalb verliert praktisch jeder im Small Blind langfristig Geld. Das Ziel dort ist, *weniger* zu verlieren, nicht zu gewinnen.
+Er ist außerdem berüchtigt als der schwierigste Sitz am Tisch: Du hast mit einer zufälligen Hand einen halben Einsatz bezahlt, und ab dem Flop bist du auf jeder Street als **Erster** an der Reihe – mit den wenigsten Informationen (die eine Ausnahme ist Heads-up: Dort ist der Small Blind der Button und handelt als Letzter). Deshalb verliert praktisch jeder im Small Blind langfristig Geld. Das Ziel dort ist, *weniger* zu verlieren, nicht zu gewinnen.
 
 ---
 
 ## Was ist der Big Blind?
 
-Der **Big Blind (BB)** ist der **volle Grundeinsatz**, gesetzt vom Spieler direkt **links vom Small Blind**. In einem €1/€2-Game beträgt der Big Blind €2. Raist vor dem Flop niemand, bekommt der Big Blind ein besonderes Privileg – die **„Option“**, zu [checken](/de/blog/holdem-betting-actions) und den Flop gratis zu sehen.
+Der **Big Blind (BB)** ist der **volle Grundeinsatz**, gesetzt vom Spieler direkt **links vom Small Blind**. In einem €1/€2-Game beträgt der Big Blind €2. Raist oder straddelt vor dem Flop niemand, bekommt der Big Blind ein besonderes Privileg – die **„Option“**, zu [checken](/de/blog/holdem-betting-actions) und den Flop gratis zu sehen.
 
 Nicht umsonst suchen Leute gezielt nach „Big Blind“: Er ist nicht nur ein Sitz, sondern ==der **Maßstab** für das ganze Spiel==.
 
@@ -80,7 +80,7 @@ Verstehst du den Big Blind, erschließt sich das gesamte Zahlen-Vokabular des Sp
 
 ## Small-Blind- und Big-Blind-Regeln: Wer setzt sie – und wann?
 
-Beide Blinds werden **vor dem Austeilen** gesetzt, und der Dealer-Button wandert nach jeder Hand einen Sitz im Uhrzeigersinn weiter – die Blind-Sitze rotieren mit, und ==jeder zahlt beide Blinds in der normalen Rotation einmal pro Runde (Orbit)==. Was dann passiert, hängt vom Format ab: Im Cashgame setzt du die verpassten Blinds bei der Rückkehr nach, wartest, bis der Big Blind wieder zu dir kommt, oder steigst – wo der Kartenraum es zulässt – als Under-the-Gun-Live-Straddle wieder ein; im Turnier werden Blinds und Antes von deinem Stack abgezogen, ob du am Platz sitzt oder nicht.
+Beide Blinds werden **vor dem Austeilen** gesetzt, und in der normalen Rotation wandert der Dealer-Button nach jeder Hand einen Sitz im Uhrzeigersinn weiter – die Blind-Sitze rotieren mit, und ==jeder zahlt beide Blinds einmal pro Runde (Orbit)==. Was dann passiert, hängt vom Format ab: Im Cashgame setzt du die verpassten Blinds bei der Rückkehr nach, wartest, bis der Big Blind wieder zu dir kommt, oder steigst – wo der Kartenraum es zulässt – als Under-the-Gun-Live-Straddle wieder ein; im Turnier werden Blinds und Antes von deinem Stack abgezogen, ob du am Platz sitzt oder nicht.
 
 | | Small Blind | Big Blind |
 |------|-------------|-------------|
@@ -89,13 +89,13 @@ Beide Blinds werden **vor dem Austeilen** gesetzt, und der Dealer-Button wandert
 | Reihenfolge preflop | Handelt als Vorletzter | Handelt als **Letzter** (die „Option“) |
 | Reihenfolge postflop | Handelt als **Erster** (ein Nachteil) | Handelt als Zweiter |
 
-> **Hinweis:** Vor dem Flop beginnt die Action beim Spieler links vom Big Blind, und der BB handelt zuletzt – er sieht die Entscheidungen aller anderen zuerst. Ab dem Flop wird die Reihenfolge zurückgesetzt, und die Blinds sind früh dran. Die Abfolge Street für Street findest du im Guide zum [Spielablauf im Texas Hold'em](/de/blog/holdem-game-order); die Namen aller Sitze rund um den Button sind ein eigenes Thema – [die Positionen am Pokertisch erklärt](/de/blog/holdem-positions).
+> **Hinweis:** Vor dem Flop beginnt die Action beim Spieler links vom Big Blind, und der BB handelt zuletzt – er sieht die Entscheidungen aller anderen zuerst. Ab dem Flop wird die Reihenfolge zurückgesetzt, und die Blinds sind früh dran. Zwei Dinge ändern diese Tabelle: Heads-up ist der Button der Small Blind und handelt nach dem Flop als Letzter; und ein Live Straddle, wo der Kartenraum ihn erlaubt, lässt die Preflop-Action links von sich beginnen und übernimmt den Platz des Letzten. Die Abfolge Street für Street findest du im Guide zum [Spielablauf im Texas Hold'em](/de/blog/holdem-game-order); die Namen aller Sitze rund um den Button sind ein eigenes Thema – [die Positionen am Pokertisch erklärt](/de/blog/holdem-positions).
 
 ---
 
 ## Wie hoch sind die Blinds? Stakes in Cash Games und Turnieren
 
-Stakes werden als **SB/BB** geschrieben. Ein „€1/€2“-Game bedeutet: €1 Small Blind und €2 Big Blind; der Small Blind ist die kleinere Zahl, der Big Blind die größere. Diese **Blinds-Tabelle** zeigt die Stakes, die dir am häufigsten begegnen:
+Im No-Limit und Pot-Limit werden Stakes als **SB/BB** geschrieben. Ein „€1/€2“-Game bedeutet: €1 Small Blind und €2 Big Blind; der Small Blind ist die kleinere Zahl, der Big Blind die größere. (Ein Fixed-Limit-Tisch wird stattdessen nach seinen beiden Einsatzgrößen benannt – im 4-8-Limit-Game ist die Mindest-Bet €4; WSOP Live Action Rule 104.) Diese **Blinds-Tabelle** zeigt die Stakes, die dir am häufigsten begegnen:
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -112,7 +112,7 @@ Stakes werden als **SB/BB** geschrieben. Ein „€1/€2“-Game bedeutet: €1
 
 </div>
 
-- **Cash Game:** Die Blinds bleiben ==g:**fix**==. Setzt du dich an ein €1/€2-Game, bleibt es €1/€2, bis du gehst. (Den ausführlichen Vergleich findest du unter [Turnier vs. Cash Game](/de/blog/holdem-tournament-vs-cash-game).)
+- **Cash Game:** Die Blinds bleiben ==g:**fix**== – keine Uhr erhöht sie. Ein €1/€2-Game bleibt €1/€2, solange Tisch und Kartenraum sich nicht auf andere Stakes einigen. (Den ausführlichen Vergleich findest du unter [Turnier vs. Cash Game](/de/blog/holdem-tournament-vs-cash-game).)
 - **Turnier:** Die Blinds ==r:**steigen** nach Zeitplan== (z. B. 25/50 → 50/100 → 100/200) – der Druck wächst also im Lauf des Abends. Blind-Level, Uhr und Struktur-Sheets gehören zum Thema [wie Pokerturniere funktionieren](/de/blog/holdem-tournament).
 
 ---
@@ -143,8 +143,8 @@ Setzt du dich an ein Live-Cash-Game, spielst du in der Regel nicht gratis mit: I
 
 In den Blinds sehe ich Anfänger am leisesten Chips verlieren – nicht in einem großen Pot, sondern jede Runde ein bisschen. Zwei Gewohnheiten in den Blinds beheben das meiste davon, ein dritter Zug holt es aus später Position zurück:
 
-- **Small Blind: Halt es simpel.** Preflop Vorletzter, aber nach dem Flop **als Erster dran** – der saubere Anfängeransatz lautet **raisen oder folden**, nicht callen. Zu limpen und dann out of position angespielt zu werden, ist ein Leak, das dich stetig Chips kostet.
-- **Big Blind: Verteidige mit den Odds.** Du hast bereits einen vollen Einsatz gebracht, deshalb kannst du Raises profitabel weiter callen als jeder andere Sitz. Gegen einen Open-Raise auf 2,5 BB (der Small Blind foldet) callst du 1,5 BB in einen 4-BB-Pot – etwa 2,7:1. Heißt: Rund 27% Equity reichen, damit der Call break-even ist. Diese Mathematik nennt sich [Pot Odds](/de/blog/holdem-pot-odds) – und sie ist der Grund, warum es „Big Blind Defense“ überhaupt gibt.
+- **Small Blind: Halt es simpel.** An einem Tisch mit drei oder mehr Spielern bist du preflop Vorletzter, aber nach dem Flop **als Erster dran** – deshalb lautet der saubere Anfängeransatz **raisen oder folden**, nicht callen. Zu limpen und dann out of position angespielt zu werden, ist ein Leak, das dich stetig Chips kostet.
+- **Big Blind: Verteidige mit den Odds.** Du hast bereits einen vollen Einsatz gebracht, deshalb kostet dich ein Call weniger als jeden anderen Sitz, und du kannst weiter verteidigen. Gegen einen Open-Raise auf 2,5 BB (der Small Blind foldet) callst du 1,5 BB in einen 4-BB-Pot – etwa 2,7:1. Heißt: Rund 27% Equity reichen, damit der Call für sich genommen break-even ist. In der Praxis brauchst du etwas mehr: Out of Position, mit noch ausstehenden Setzrunden, realisierst du nicht deine ganze Equity. Diese Mathematik nennt sich [Pot Odds](/de/blog/holdem-pot-odds) – und sie ist der Grund, warum es „Big Blind Defense“ überhaupt gibt.
 - **Late Position: der Steal.** Folden alle bis zum Button oder Cutoff, ist ein Raise, der nur die beiden Blinds abgreifen soll, ein **Blind Steal** – und der Re-Raise dagegen ein **Re-Steal**. Steal-Größen, Ranges je Sitz und wie weit du verteidigen solltest, sind Strategie-Themen und werden ausführlich im [Strategie-Guide zu In Position vs. Out of Position](/de/blog/holdem-position-play) behandelt.
 
 ---
@@ -162,7 +162,7 @@ A. Blinds sind Zwangseinsätze, die garantieren, dass immer Geld im Pot ist. Das
 
 **Q. Ist der Big Blind oder der Small Blind zuerst dran?**
 
-A. Vor dem Flop handelt der Small Blind als Vorletzter und der Big Blind als Letzter. Nach dem Flop dreht sich die Reihenfolge um: Der Small Blind handelt als Erster und der Big Blind als Zweiter, vor dem Rest des Tischs.
+A. Vor dem Flop handelt der Small Blind als Vorletzter und der Big Blind als Letzter. Nach dem Flop dreht sich die Reihenfolge um: Der Small Blind handelt als Erster und der Big Blind als Zweiter, vor dem Rest des Tischs. (Heads-up ist die Ausnahme: Der Small Blind sitzt am Button, handelt also preflop zuerst und nach dem Flop als Letzter.)
 
 **Q. Ist der Small Blind immer genau die Hälfte des Big Blinds?**
 
@@ -170,7 +170,7 @@ A. Meistens, aber nicht immer – manche Strukturen (wie €1/€3 oder €2/€
 
 **Q. Kann der Big Blind einfach checken, wenn niemand raist?**
 
-A. Ja – das ist die „Option“ des Big Blinds. Callen alle nur, kann der Big Blind checken und den Flop gratis sehen – oder mit einer starken Hand raisen.
+A. Ja – das ist die „Option“ des Big Blinds. Callen alle nur den Big Blind – kein Raise und kein Straddle –, kann der Big Blind checken und den Flop gratis sehen – oder mit einer starken Hand raisen.
 
 **Q. Kann man nach dem Setzen eines Blinds noch folden?**
 
@@ -192,7 +192,7 @@ A. Nicht ganz – „die Blinds“ meint Small Blind und Big Blind zusammen, wä
 
 ## Das Wichtigste in Kürze
 
-1. Blinds sind **Zwangseinsätze vor dem Austeilen**: Small Blind links vom Button, Big Blind links daneben, BB meist das Doppelte des SB.
+1. Blinds sind **Zwangseinsätze vor dem Austeilen**: Small Blind links vom Button (heads-up: am Button), Big Blind links daneben, BB meist das Doppelte des SB.
 2. Der **Big Blind ist die Einheit des Tischs** – Raises, Stacks und Turnierdruck werden alle in BB gemessen.
 3. Spiel die Blinds mit Bedacht: **Raise-or-Fold im Small Blind**, **Big Blind mit Pot Odds verteidigen** – und lerne Steals aus später Position, wenn alle zu dir folden.
 

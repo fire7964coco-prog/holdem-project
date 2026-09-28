@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "odds",
   date: "2026-07-08",
   updated: "2026-09-28",
-  masterUpdated: "2026-09-26",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "11 mnt",
   emoji: "💰",
@@ -57,7 +57,7 @@ Memberi tahu apakah call membayar dirinya sendiri hari ini | Memberi tahu apakah
 Berlaku bahkan melawan all-in | Bernilai nol melawan all-in (heads-up — tak ada taruhan lagi)
 :::
 
-Aturan praktisnya: **mulai dari pot odds.** Jika equity Anda sudah mengalahkan harganya, call — tak perlu cerita. Jika draw Anda *nyaris meleset* dari harganya, di situlah implied odds menjadi faktor penentu. Dan jika draw Anda meleset jauh dari harganya, implied odds biasanya juga tak bisa menyelamatkannya.
+Aturan praktisnya: **mulai dari pot odds.** Jika equity Anda sudah mengalahkan harganya — dihitung hanya atas kartu yang dibayar oleh call ini — call; tak perlu cerita. Jika draw Anda *nyaris meleset* dari harganya, di situlah implied odds menjadi faktor penentu. Dan jika draw Anda meleset jauh dari harganya, implied odds biasanya juga tak bisa menyelamatkannya.
 
 ---
 
@@ -124,9 +124,9 @@ Karena Anda meleset ==r:tujuh dari delapan kali==, matematikanya kejam kecuali p
 
 Inilah rincian jujur yang dilewati sebagian besar artikel:
 
-- **Impas murninya adalah 7,5:1.** Dalam skenario ideal saat Anda memenangkan *seluruh* stack lawan setiap kali Anda mem-flop set, Anda hanya butuh sekitar 7,5× di belakang.
-- **Kenyataan menuntut 15–20×.** Anda tak selalu mendapat seluruh stack, Anda kadang mem-flop set dan *tetap kalah* (set-over-set, atau mereka mengisi tangan lebih besar), dan posisi penting. Bantalan ekstra menutup kebocoran itu.
-- Jadi ==b:7,5:1 adalah lantai teoretis; 15–20× adalah aturan praktis.== Jangan mencampuradukkan keduanya — memakai angka 7,5 sebagai panduan meja nyata adalah kebocoran pelan.
+- **Impas murninya adalah 7,5:1.** Dalam skenario ideal saat Anda dibayar penuh setiap kali Anda mem-flop set, pot ditambah yang Anda menangkan sesudahnya hanya perlu berjumlah sekitar 7,5× call Anda.
+- **Kenyataan menuntut stack 15–20× call Anda.** Anda tak selalu mendapat seluruh stack, Anda kadang mem-flop set dan *tetap kalah* (set-over-set, atau mereka mengisi tangan lebih besar), dan posisi penting. Bantalan ekstra menutup kebocoran itu.
+- Jadi ==b:7,5:1 adalah lantai payoff teoretis; stack 15–20× call Anda adalah aturan praktis.== Jangan mencampuradukkan keduanya — memakai angka 7,5 sebagai panduan meja nyata adalah kebocoran pelan.
 
 Matematika mem-flop-set persisnya dan setiap angka "peluang mem-flop X" lainnya ada di [drawing odds](/id/blog/holdem-drawing-odds "thumb:/images/holdem-drawing-odds-hero.webp"); intinya di sini adalah pair kecil adalah emas saat stack dalam dan sampah saat stack pendek — pair-nya tak berubah, implied odds-nya yang berubah.
 
@@ -184,7 +184,7 @@ A. Implied odds adalah chip tambahan yang Anda harapkan menang di street berikut
 
 **Q. Bagaimana cara menghitung implied odds?**
 
-A. Pakai: ekstra dibutuhkan = (call Anda ÷ peluang jadi Anda) − (pot saat ini + call Anda). Meng-call $50 di turn dengan flush draw yang jadi 19,6% dari waktu di river (9 ÷ 46) berarti 50 ÷ 0,196 = $255, dikurangi $200 yang sudah bermain (pot $150 plus call $50 Anda) = sekitar $55. Jika Anda realistis bisa menang $55 lebih saat Anda jadi, call-nya menguntungkan. Perhatikan bahwa ini selalu perkiraan, karena taruhan masa depan tak terjamin.
+A. Pakai: ekstra dibutuhkan = (call Anda ÷ peluang jadi Anda) − (pot saat ini + call Anda). Meng-call $50 di turn dengan flush draw yang jadi 19,6% dari waktu di river (9 ÷ 46) berarti 50 ÷ 0,196 = $255, dikurangi $200 yang sudah bermain (pot $150 plus call $50 Anda) = sekitar $55. Jika Anda realistis bisa menang $55 lebih saat Anda jadi — dan flush yang Anda buat adalah tangan terbaik — call-nya menguntungkan. Perhatikan bahwa ini selalu perkiraan, karena taruhan masa depan tak terjamin.
 
 **Q. Apa perbedaan antara pot odds dan implied odds?**
 
@@ -192,7 +192,7 @@ A. Perbedaan pot odds dan implied odds ada pada kepastiannya: pot saat ini dan j
 
 **Q. Kapan sebaiknya Anda memakai implied odds?**
 
-A. Mulailah dari pot odds. Jika equity Anda sudah mengalahkan harga langsungnya, cukup call — implied odds tak diperlukan. Raih implied odds saat draw Anda meleset dari harga itu dan stack di belakang cukup dalam sehingga hit memberi Anda lebih dari x dari rumusnya — makin jauh draw meleset, makin besar x-nya. Idealnya itu draw yang kuat, tersamar, atau nut, melawan lawan yang mau membayar. Jika stack di belakang tak bisa menutup x — lawan heads-up yang sudah all-in atau short stack, misalnya — implied odds tak bisa menyelamatkan call itu.
+A. Mulailah dari pot odds. Jika equity Anda sudah mengalahkan harga langsungnya — diukur atas kartu yang dibayar oleh call ini — cukup call — implied odds tak diperlukan. Raih implied odds saat draw Anda meleset dari harga itu dan stack di belakang cukup dalam sehingga hit memberi Anda lebih dari x dari rumusnya — makin jauh draw meleset, makin besar x-nya. Idealnya itu draw yang kuat, tersamar, atau nut, melawan lawan yang mau membayar. Jika stack di belakang tak bisa menutup x — lawan heads-up yang sudah all-in atau short stack, misalnya — implied odds tak bisa menyelamatkan call itu.
 
 **Q. Apa itu reverse implied odds?**
 
@@ -208,7 +208,7 @@ A. Tidak — dalam pot heads-up, saat lawan Anda all-in tak ada lagi ronde taruh
 
 **Q. Bagaimana implied odds bekerja dalam set mining?**
 
-A. Anda mem-flop set dengan pocket pair hanya 11,8% dari waktu (sekitar 7,5:1), jadi Anda butuh payoff besar saat Anda jadi. Impas teoretisnya kira-kira 7,5× call Anda dalam stack, tapi pedoman praktisnya 15–20× — bantalan ekstra menutup kali Anda meleset, tak mendapat aksi, atau kalah dengan set.
+A. Anda mem-flop set dengan pocket pair hanya 11,8% dari waktu (sekitar 7,5:1), jadi Anda butuh payoff besar saat Anda jadi. Impas teoretisnya adalah total payoff (pot ditambah yang Anda menangkan sesudahnya) kira-kira 7,5× call Anda, tapi pedoman praktisnya stack 15–20× call Anda — bantalan ekstra menutup kali Anda meleset, tak mendapat aksi, atau kalah dengan set.
 
 **Q. Apakah Anda punya implied odds dengan flush draw?**
 

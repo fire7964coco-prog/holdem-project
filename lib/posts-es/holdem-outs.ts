@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un out es cualquier carta que queda en la baraja y convierte tu mano en una probable ganadora. Cuéntalos y conviértelos: multiplica los outs por 4 en el flop o por 2 en el turn para tu % aproximado de ligar. Un proyecto de color son 9 outs ≈ 36% para el river.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "🎯",
@@ -28,7 +28,7 @@ Ese hábito se llama contar **outs** — [la respuesta real del póker a "contar
 :::stripe
 9 | Outs en un proyecto de color
 8 | Outs en un proyecto de escalera abierto
-×4 / ×2 | Multiplica los outs en el flop / turn para tu %
+×4 / ×2 | Multiplica los outs en el flop (con dos cartas por venir) / turn para un % aproximado
 :::
 
 ---
@@ -174,10 +174,10 @@ Tres situaciones para entrenar el ojo:
 :::card
 ♠ | El color que no es máximo | Con 8♠7♠ en K♠9♠2♣, tienes 9 "outs" de picas — pero si sale una pica y un rival iba al mismo color con una pica mayor, haces color y aun así pierdes. Descuenta tus outs cuando no vas al color máximo
 🂮 | La mesa emparejada | Un proyecto de color en una mesa como J♥8♥8♣ parece 9 outs limpios, pero la mesa ya está emparejada — un full ya hecho puede estar esperando, así que algunos de tus colores nacen muertos
-🃁 | Sobrecartas contra fuerza | Dos sobrecartas (A-K en Q-8-3) cuentan como 6 outs sobre el papel, pero si un raise grande grita trío o doble pareja, emparejar tu as a menudo no vale — cuenta 3, quizá 4, no 6
+🃁 | Sobrecartas contra fuerza | Dos sobrecartas (A-K en Q-8-3) cuentan como 6 outs sobre el papel, pero si un raise grande grita trío o doble pareja, emparejar tu as a menudo no vale — cuenta 3 como mucho, no 6, y ninguno en cuanto estés seguro del trío o la doble pareja
 :::
 
-Rara vez sabes el descuento exacto, y no pasa nada. La jugada es direccional: cuando la mesa o la acción te dicen que un out podría no ganar, recorta el número *hacia abajo* antes de convertir. Un jugador que cuenta 9 outs en una mesa emparejada e iguala el bote está pagando precio completo por un proyecto que en silencio vale seis. Leer qué outs están limpios es una habilidad de textura de mesa — desarróllala con [cómo leer la mesa](/es/blog/holdem-reading-the-board).
+Rara vez sabes el descuento exacto, y no pasa nada. La jugada es direccional: cuando la mesa o la acción te dicen que un out podría no ganar, recorta el número *hacia abajo* antes de convertir. Un jugador que cuenta 9 outs en una mesa emparejada e iguala el bote está pagando precio completo por un proyecto que en silencio vale menos que eso. Leer qué outs están limpios es una habilidad de textura de mesa — desarróllala con [cómo leer la mesa](/es/blog/holdem-reading-the-board).
 
 ---
 
@@ -194,7 +194,7 @@ A. Los outs son las cartas que quedan en la baraja y mejoran tu mano hasta una p
 
 **Q. ¿Qué significan 9 outs en el póker?**
 
-A. Significa que nueve cartas que quedan en la baraja pueden completar tu mano — casi siempre un proyecto de color (13 de un palo menos las 4 que ves). Nueve outs equivalen a un 35% de ligar para el river desde el flop — una cifra de dos cartas que da por hecho que no te va a caer otra apuesta — o un 19.1% en la única carta del turn. La regla vale para cualquier número: más outs significa más probabilidad de ligar, y multiplicar tus outs por 4 en el flop (o por 2 en el turn) te da un porcentaje rápido.
+A. Significa que nueve cartas que quedan en la baraja pueden completar tu mano — casi siempre un proyecto de color (13 de un palo menos las 4 que ves). Nueve outs equivalen a un 35% de ligar para el river desde el flop — una cifra de dos cartas que da por hecho que no te va a caer otra apuesta — o un 19.1% en la única carta del turn. La lógica vale para cualquier número: más outs significa más probabilidad de ligar, y multiplicar tus outs por 4 en el flop (o por 2 en el turn) te da un porcentaje rápido y aproximado (×4 se pasa en proyectos grandes: 15 outs son un 54%, no un 60%).
 
 **Q. ¿Cómo se cuentan los outs en el póker?**
 
@@ -218,7 +218,7 @@ A. Cartas que completan tu mano pero aun así pueden perder — una carta de col
 
 **Q. ¿Cuántos outs es un proyecto de color más un proyecto de escalera?**
 
-A. 15, no 17. Un proyecto de color son 9 outs y una escalera abierta son 8, pero dos de las cartas de escalera son también de tu palo y ya están contadas en el color — así que restas el solapamiento. Quince outs es favorito para ligar para el river (alrededor del 54%), pero solo si vas a ver las dos cartas; si aún te espera una apuesta en el turn, el que pone precio a tu call es el 32% de una carta.
+A. 15, no 17. Un proyecto de color son 9 outs y una escalera abierta son 8, pero dos de las cartas de escalera son también de tu palo y ya están contadas en el color — así que restas el solapamiento. Quince outs es favorito para ligar para el river (alrededor del 54%), pero solo si vas a ver las dos cartas; si aún te espera una apuesta en el turn, el que pone precio a tu call es el 32% de una carta — y en ambas cifras solo cuentan los outs que de verdad ganan.
 
 **Q. ¿Se cuentan las cartas del rival al contar outs?**
 
@@ -230,7 +230,7 @@ A. Identifica las cartas que te ayudan: nombra el proyecto que persigues, cuenta
 
 **Q. ¿Qué son las odds y los outs?**
 
-A. Son las dos mitades de la misma decisión. Los outs son las cartas que completan tu mano; las odds son la probabilidad de que salga uno de esos outs, expresada como porcentaje o como relación (por ejemplo, 9 outs ≈ 35% o 1.9 a 1 para el river). Cuentas los outs, los conviertes en odds con la regla del 2 y 4, y luego comparas esas odds con las [pot odds](/es/blog/holdem-pot-odds) para decidir si el call es rentable.
+A. Son las dos mitades de la misma decisión. Los outs son las cartas que completan tu mano; las odds son la probabilidad de que salga uno de esos outs, expresada como porcentaje o como relación (por ejemplo, 9 outs ≈ 35% o 1.9 a 1 para el river). Cuentas los outs, los conviertes en odds con la regla del 2 y 4, y luego comparas esas odds — contando solo los outs limpios y las cartas que de verdad verás — con las [pot odds](/es/blog/holdem-pot-odds) para decidir si el call es rentable.
 
 ---
 

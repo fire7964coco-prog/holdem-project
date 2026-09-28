@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Die Equity ist dein Anteil am Pot – der Anteil, der deiner Hand im Schnitt zufällt, wenn alle Karten ausgeteilt werden (Splits zählen anteilig). Du callst, wenn deine Equity die Pot Odds schlägt, aber Position und Setzen bedeuten, dass du selten deine volle Equity behältst – und die Fold Equity lässt dich Pots gewinnen, selbst wenn deine Hand hinten liegt.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "12 Min.",
   emoji: "🥧",
@@ -76,7 +76,7 @@ Das ist der ganze Grund, warum die Equity zählt: sie verwandelt „liege ich vo
 
 </div>
 
-Zwei Dinge bringen Leute hier durcheinander. Ein Paar gegen zwei Overcards (QQ vs. AK) ist ==r:kein 50/50== – das Paar ist ein moderater Favorit, etwa 57/43 offsuit (eine Spur enger, ~54/46, wenn AK suited ist). Und der Begriff „Coinflip“ passt wirklich nur auf ein niedriges Paar gegen zwei größere Karten (22 vs. AK), wo es echt eng ist.
+Zwei Dinge bringen Leute hier durcheinander. Ein Paar gegen zwei Overcards (QQ vs. AK) ist ==r:kein 50/50== – das Paar ist ein moderater Favorit, etwa 57/43 offsuit (eine Spur enger, ~54/46, wenn AK suited ist). Spieler nennen jedes Rennen Paar gegen Overcards einen „Coinflip“, aber nur ein niedriges Paar gegen zwei größere Karten (22 vs. AK) liegt wirklich nahe an 50/50.
 
 ---
 
@@ -141,20 +141,20 @@ Das ist die mit Abstand wichtigste Idee, die die meisten Anfänger-Guides weglas
 
 Deshalb zählen Preflop-All-in-Equities so viel: AA all-in gegen KK kassiert seine vollen ==82%== – keine Realization-Steuer, keine Fold Equity, nur die rohe Zahl, die sich ausspielt. Es ist auch der Grund, warum ein „Coinflip“ (22 vs. AK bei ~52/48) all-in ein echtes Kopf-an-Kopf-Rennen ist, obwohl dieselben zwei Hände postflop je nach Board und Position wild auseinanderlaufen würden.
 
-Ein All-in ohne verbleibendes Setzen ist der eine Spot im Poker, wo der Kuchen – solange noch Karten kommen – genau so geschnitten wird, wie die Mathematik es sagt – was zugleich sein Reiz und seine Gefahr ist.
+Ein All-in ohne verbleibendes Setzen ist der sauberste Spot im Poker, wo der Kuchen – solange noch Karten kommen – genau so geschnitten wird, wie die Mathematik es sagt – was zugleich sein Reiz und seine Gefahr ist.
 
 ---
 
 ## Warum schrumpft deine Equity in Multiway-Pots?
 
-**Deine Equity fällt in Multiway-Pots schnell, weil derselbe 100%-Kuchen jetzt unter mehr Hände aufgeteilt wird.** Pocket Aces sind heads-up um die 85%, aber gegen drei Gegner rutscht das auf ==r:~64%==, und gegen vier auf ~56% – immer noch die beste Hand, aber nicht mehr der Crush, nach dem es sich anfühlt. Im Three-way-Pot beträgt die Equity per Definition im *Schnitt* 33%, weil drei Spieler einen Pot teilen.
+**Deine Equity fällt in Multiway-Pots schnell, weil derselbe 100%-Kuchen jetzt unter mehr Hände aufgeteilt wird.** Preflop gegen zufällige Hände sind Pocket Aces heads-up um die 85%, aber gegen drei Gegner rutscht das auf ==r:~64%==, und gegen vier auf ~56% – immer noch die beste Hand, aber nicht mehr der Crush, nach dem es sich anfühlt. Im Three-way-Pot beträgt die Equity per Definition im *Schnitt* 33%, weil drei Spieler einen Pot teilen.
 
-![Infografik eines Q♣ 9♥ 5♦ 3♠ J♦ Boards, die zeigt, wie jeder zusätzliche Spieler im Pot die Equity jeder Hand kürzt](/images/holdem-equity-multiway.webp "Je mehr Spieler noch im Pot sind, desto kleiner das Stück jedes Einzelnen – sogar Pocket Aces")
+![Infografik eines Q♣ 9♥ 5♦ 3♠ J♦ Boards, die zeigt, wie jeder zusätzliche Spieler im Pot den durchschnittlichen Equity-Anteil schrumpfen lässt](/images/holdem-equity-multiway.webp "Je mehr Spieler noch im Pot sind, desto kleiner das durchschnittliche Stück – sogar Pocket Aces verlieren an Boden")
 
 Zwei Dinge werden multiway schlechter, nicht nur dein roher Anteil:
 
 - **Die Fold Equity bricht zusammen.** Um einen Pot mit einer Bet zu gewinnen, müssen jetzt *alle* folden – viel unwahrscheinlicher mit drei Gegnern als mit einem. Bluffs und dünne Semi-Bluffs verlieren schnell an Wert.
-- **Die Realization fällt.** Mehr Spieler, die noch handeln, bedeuten mehr Wege, überholt oder aus der Hand gebettet zu werden, also realisierst du sogar noch weniger von einem bereits kleineren Stück.
+- **Die Realization fällt.** Mehr Spieler, die noch handeln, bedeuten mehr Bets und Raises, die dich vor dem Showdown aus der Hand drängen können, also realisierst du sogar noch weniger von einem bereits kleineren Stück.
 
 Die praktische Erkenntnis: Hände, die einen Multiway-Pot wollen, sind die, die die Nuts machen (Sets, suited Asse für den Nut-Flush), nicht große Paare, die sich am besten heads-up spielen. Wenn das Feld groß ist, spiel enger und nimm nur Hände, deren Equity auch dann standhält, wenn der Kuchen fünffach geschnitten wird.
 
@@ -216,11 +216,11 @@ A. Die Equity Realization ist, wie viel deiner rohen Equity du tatsächlich eins
 
 **Q. Was ist All-in-Equity?**
 
-A. Die All-in-Equity ist schlicht deine rohe Equity – dein Anteil am Pot, Splits anteilig –, wenn kein weiteres Setzen mehr passieren kann. Weil es keine zukünftigen Entscheidungen gibt, realisierst du 100% davon, sodass die rohe Equity zum exakten Anteil am Pot wird, den du über die Zeit einsammelst. Es ist der eine Spot, wo „Equity ist gleich Pot-Anteil“ – solange noch Karten kommen – wörtlich wahr ist.
+A. Die All-in-Equity ist schlicht deine rohe Equity – dein Anteil am Pot, Splits anteilig –, wenn kein weiteres Setzen mehr passieren kann. Weil es keine zukünftigen Entscheidungen gibt, realisierst du 100% davon, sodass die rohe Equity zum exakten Anteil am Pot wird, den du über die Zeit einsammelst. Es ist der klarste Fall, wo „Equity ist gleich Pot-Anteil“ – solange noch Karten kommen – wörtlich wahr ist.
 
 **Q. Warum sinkt meine Equity in Multiway-Pots?**
 
-A. Weil derselbe Pot jetzt auf mehr Hände aufgeteilt wird – Pocket-Asse mit rund 85% im Heads-up fallen gegen drei Gegner auf etwa 64% und gegen vier Gegner auf etwa 56%. Multiway schrumpft zusätzlich deine Fold Equity (alle müssen folden, nicht nur einer) und deine Realization (mehr Spieler heißt mehr Wege, überholt zu werden) – dein roher Anteil und das, was du davon behältst, geben also beide nach.
+A. Weil derselbe Pot jetzt auf mehr Hände aufgeteilt wird – preflop gegen zufällige Hände fallen Pocket-Asse mit rund 85% im Heads-up gegen drei Gegner auf etwa 64% und gegen vier Gegner auf etwa 56%. Multiway schrumpft zusätzlich deine Fold Equity (alle müssen folden, nicht nur einer) und deine Realization (mehr Spieler heißt mehr Bets, die dich vor dem Showdown aus der Hand drängen können) – dein roher Anteil und das, was du davon behältst, geben also beide nach.
 
 **Q. Was bedeutet 20% Equity?**
 

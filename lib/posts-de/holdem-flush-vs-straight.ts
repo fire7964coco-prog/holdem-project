@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ein Flush (fünf Karten einer Farbe – ~0,197% aller Fünf-Karten-Deals) schlägt im Texas Hold'em immer eine Straße (fünf in Folge, ~0,392%) – weil ein Flush seltener ist: über alle sieben Karten bis zum River 3,03% gegenüber 4,62% für die Straße.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "⚡",
@@ -78,7 +78,7 @@ Eine Straße braucht nur fünf Ränge in Folge, und ==**die Farben spielen keine
 
 ## 3 Board-Situationen, die Spieler immer noch täuschen
 
-![Board zeigt 8♥ 7♥ 6♥ 5♠ A♣ – drei Herz auf dem Board bedeuten, dass ein Flush möglich ist, selbst wenn du eine Straße hältst](/images/holdem-flush-vs-straight-board.webp "Drei Karten gleicher Farbe auf dem Board – Flushdraw möglich gegen deine Straße")
+![Board zeigt 8♥ 7♥ 6♥ 5♠ A♣ – drei Herz auf dem Board bedeuten, dass ein Flush möglich ist, selbst wenn du eine Straße hältst](/images/holdem-flush-vs-straight-board.webp "Drei Karten gleicher Farbe auf dem Board – ein Flush ist gegen deine Straße möglich")
 
 Die Regel zu kennen ist nicht dasselbe wie sie live zu lesen – genau diese Fähigkeit trainiert [das Board lesen](/de/blog/holdem-reading-the-board). Das sind die drei Situationen, in denen der Fehler tatsächlich passiert.
 
@@ -173,7 +173,7 @@ Wenn deine Straße einige Karten nutzt und dein Flush andere, addierst du sie ni
 
 ## Die eine echte Ausnahme: Short Deck
 
-Im **Short Deck (6+) Hold'em** werden die Zweien bis Fünfen aus dem Deck entfernt. Mit weniger Karten wird ein Flush *schwerer* zu treffen als ein Full House – deshalb verschiebt sich in dieser Variante die Rangfolge, und ein ==r:**Flush schlägt ein Full House**==. Das Prinzip ändert sich nie: ==die seltenere Hand gewinnt==. Nur das Deck hat sich geändert. Im Standard-Texas-Hold'em mit einem vollen 52-Karten-Deck ==g:schlägt ein Flush eine Straße und verliert gegen ein Full House, jedes Mal==.
+Im **Short Deck (6+) Hold'em** werden die Zweien bis Fünfen aus dem Deck entfernt. Mit weniger Karten wird ein Flush *schwerer* zu treffen als ein Full House – deshalb verschiebt sich in dieser Variante die Rangfolge, und ein ==r:**Flush schlägt ein Full House**==. Die Logik ist dieselbe wie mit dem vollen Deck: Von diesen beiden Händen ==rangiert die seltenere höher==. Nur das Deck hat sich geändert. Im Standard-Texas-Hold'em mit einem vollen 52-Karten-Deck ==g:schlägt ein Flush eine Straße und verliert gegen ein Full House, jedes Mal==.
 
 ---
 

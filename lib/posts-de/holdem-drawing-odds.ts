@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Mit einem Pocket Pair floppst du in 11,8% der Fälle ein Set (7,5:1 dagegen), mit zwei suited Karten nur 0,84% einen Flush, und einen gefloppten Flushdraw komplettierst du bis zum River in 35% der Fälle. Jede Zahl unten stammt aus dem Deck, nicht aus dem Bauch.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-09-27",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "12 Min.",
   emoji: "🎲",
@@ -118,7 +118,7 @@ Die Komplettierungs-Zahl teilt sich nach Street auf, was in dem Moment zählt, i
 - **Flop → Turn (eine Karte):** 9 ÷ 47 = 19,1%.
 - **Turn → River (eine Karte):** 9 ÷ 46 = 19,6%.
 
-Ein **Backdoor** (Runner-Runner) Flush – du floppst nur *eine* zusätzliche Karte deiner Farbe und brauchst sowohl Turn als auch River in deiner Farbe – kommt in etwa 4,2% der Fälle an, ungefähr ein zusätzliches Out an Equity wert. Kein Grund zu callen, aber ein echter Tiebreaker bei knappen Spots. Um irgendeine davon in einen Call-oder-Fold zu verwandeln, jage die Zahl durch [wie man Pot Odds berechnet](/de/blog/holdem-pot-odds).
+Ein **Backdoor** (Runner-Runner) Flush – du floppst nur *eine* zusätzliche Karte deiner Farbe und brauchst sowohl Turn als auch River in deiner Farbe – kommt in etwa 4,2% der Fälle an – ungefähr so viel, wie ein zusätzliches Out zu deiner Trefferchance beiträgt. Kein Grund zu callen, aber ein echter Tiebreaker bei knappen Spots. Um irgendeine davon in einen Call-oder-Fold zu verwandeln, jage die Zahl durch [wie man Pot Odds berechnet](/de/blog/holdem-pot-odds).
 
 ---
 
@@ -132,7 +132,7 @@ Ein **Backdoor** (Runner-Runner) Flush – du floppst nur *eine* zusätzliche Ka
 Connectors wie 8♠7♠ haben ihren eigenen Lebenszyklus. Du **floppst nur in 1,3%** der Fälle eine fertige Straße (76:1) – seltener, als die meisten Spieler annehmen. Dieser Wert gilt für 54s bis JTs, also die Connectors, die eine Straße von beiden Enden füllen können; Hände am Rand des Decks haben weniger Sequenzen, bis hinunter zu 0,33% für A-K. Weit häufiger floppst du einen **Draw**:
 
 - **Open-Ended Straight Draw (OESD):** ~10% der Flops mit Connectors. Acht Outs, komplettiert **31,5%** bis zum River – 1 − C(39,2)/C(47,2) – oder 17% vom Flop zum Turn.
-- **Gutshot (Inside) Straight Draw:** vier Outs, komplettiert **16,5%** bis zum River, 8,5% vom Flop zum Turn. Die halbe Equity eines Open-Enders, weshalb sich dieselben Connectors je nach Flop so unterschiedlich spielen.
+- **Gutshot (Inside) Straight Draw:** vier Outs, komplettiert **16,5%** bis zum River, 8,5% vom Flop zum Turn. Kommt etwa halb so oft an wie ein Open-Ender, weshalb sich dieselben Connectors je nach Flop so unterschiedlich spielen.
 
 Beachte, dass der OESD (31,5%) und der Flushdraw (35%) nah beieinanderliegen – beide sind „ein großer Draw“, beide ungefähr ein Drittel, bis zum River zu treffen. Das ist die Abkürzung, die es sich zu verinnerlichen lohnt: ein normaler großer Draw ist etwa ==**einer von drei**== bis zum River zu komplettieren, und auf einer einzelnen Street sinkt er auf etwa einen von fünf bis sechs.
 

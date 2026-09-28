@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Para calcular las pot odds, divide lo que tienes que igualar entre el bote total después de tu call. Igualar $50 en un bote de $150 = 50 ÷ 200 = 25% — necesitas al menos un 25% de equity para que el call sea rentable.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🧮",
@@ -54,7 +54,7 @@ Ese número de "cuántas veces necesitas ganar" es lo que importa. Recibir 3 a 1
 Suma el bote final | Bote actual + la apuesta + tu call. Ejemplo: bote de $100 + apuesta de $50 + tu call de $50 = $200
 Divide tu call entre ese bote final | $50 ÷ $200 = 0.25
 Esa es tu equity necesaria | Necesitas ganar al menos el 25% de las veces para pagar de forma rentable
-Compárala con tu equity real | Proyecto de color ≈ 35% de ligar con dos cartas por venir y sin más apuestas → 35% supera al 25% → ==g:paga==
+Compárala con tu equity real | Proyecto de color con 9 outs limpios ≈ 35% de ligar con dos cartas por venir y sin más apuestas → 35% supera al 25% → ==g:paga==
 :::
 
 Eso es todo. **Equity necesaria = tu call ÷ el bote final.** Si tu probabilidad real de ganar es mayor que ese número, pagar gana dinero a la larga — incluso cuando pierdas la mano más veces de las que la ganas.
@@ -202,7 +202,7 @@ El turn es el 3♠ — un ladrillo. El bote es de $200 y el villano empuja $200 
 
 **Q. ¿Cómo se calculan rápido las pot odds?**
 
-A. Divide lo que tienes que igualar entre el bote total *después* de tu call. Igualar $50 en un bote de $150 es 50 ÷ 200 = 25% — esa es la equity que necesitas. Si tu probabilidad de ganar la supera, paga.
+A. Divide lo que tienes que igualar entre el bote total *después* de tu call. Igualar $50 en un bote de $150 es 50 ÷ 200 = 25% — esa es la equity que necesitas. Si tu probabilidad de ganar — contada solo sobre las cartas que este call te deja ver — la supera, paga.
 
 **Q. ¿Se cuenta tu propio call en las pot odds?**
 
@@ -218,7 +218,7 @@ A. Los pot odds (o probabilidades del bote) son el precio que te ofrecen por seg
 
 **Q. ¿Qué es un buen ratio de pot odds?**
 
-A. Cuanto más alto, mejor — te encantaría estar "recibiendo 5 a 1" (necesitando solo un 16.7%). Pero lo "bueno" es relativo a tu mano: recibir 2 a 1 (necesitar un 33%) funciona con un proyecto de color solo cuando ya vas a ver las dos cartas (all-in, o sin más apuestas por venir — 35%); no cubre el precio si con el call solo ves una carta (19.1% desde el flop, 19.6% desde el turn); y es terrible con un gutshot. Compara siempre el precio con tu equity.
+A. Cuanto más alto, mejor — te encantaría estar "recibiendo 5 a 1" (necesitando solo un 16.7%). Pero lo "bueno" es relativo a tu mano: recibir 2 a 1 (necesitar un 33%) funciona con un proyecto de color limpio solo cuando ya vas a ver las dos cartas (all-in, o sin más apuestas por venir — 35%); no cubre el precio si con el call solo ves una carta (19.1% desde el flop, 19.6% desde el turn); y es terrible con un gutshot. Compara siempre el precio con tu equity.
 
 **Q. ¿Cómo se convierten las pot odds de ratio a porcentaje?**
 
@@ -246,7 +246,7 @@ A. El sizing de la apuesta es la otra cara de las pot odds — tu apuesta fija e
 
 **Q. ¿Tu equity debería ser mayor o menor que tus pot odds?**
 
-A. Mayor. Tus pot odds te dan la equity que *necesitas* para pagar (call ÷ bote final); tu equity es tu parte esperada del bote. Pagas cuando tu equity es *mayor* que ese número necesario y foldeas cuando es menor. Si una apuesta de medio bote necesita un 25% y tu proyecto de color tiene un 35% (con dos cartas por venir — verás el turn y el river sin más apuestas), entonces 35% > 25% → un call rentable.
+A. Mayor. Tus pot odds te dan la equity que *necesitas* para pagar (call ÷ bote final); tu equity es tu parte esperada del bote. Pagas cuando tu equity es *mayor* que ese número necesario y foldeas cuando es menor. Si una apuesta de medio bote necesita un 25% y tu proyecto de color limpio tiene un 35% (con dos cartas por venir — verás el turn y el river sin más apuestas), entonces 35% > 25% → un call rentable.
 
 **Q. ¿Qué es el MDF (frecuencia mínima de defensa) en el póker?**
 

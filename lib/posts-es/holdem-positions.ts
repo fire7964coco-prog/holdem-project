@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Posiciones en el póker: nombre de cada asiento y chart",
   seoTitle: "Tu asiento cambia de nombre cada mano — posiciones del póker",
   desc: "Los nombres se mueven con el botón, no con las sillas. Cada posición — UTG, hijack, cutoff, botón — más números de asiento, mapa 6-max y quién actúa primero.",
-  tldr: "Las posiciones del póker son nombres de asiento que se miden desde el botón del repartidor — UTG, lojack, hijack, cutoff, botón y las ciegas — y normalmente se mueven un asiento en el sentido de las agujas del reloj cada mano. En el preflop, UTG actúa primero y la ciega grande última; en el postflop, la ciega pequeña actúa primero y el botón último. Los números de asiento físicos nunca se mueven; las posiciones sí.",
+  tldr: "Las posiciones del póker son nombres de asiento que se miden desde el botón del repartidor — UTG, lojack, hijack, cutoff, botón y las ciegas — y normalmente se mueven un asiento en el sentido de las agujas del reloj cada mano. En el preflop, UTG actúa primero y la ciega grande última; en el postflop, la ciega pequeña actúa primero y el botón último (en heads-up el botón es la ciega pequeña: primero en actuar en el preflop, último en el postflop). Los números de asiento físicos nunca se mueven; las posiciones sí.",
   category: "strategy",
   date: "2026-06-13",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🎯",
@@ -34,7 +34,7 @@ La misma mano. Un resultado completamente distinto. Lo único que cambió fue mi
 ---
 
 > **Respuesta rápida**
-> Las posiciones del póker son los ==asientos con nombre que se miden desde el botón del repartidor== — UTG, lojack, hijack, cutoff, botón, ciega pequeña, ciega grande — y ==normalmente se mueven un asiento en el sentido de las agujas del reloj cada mano== conforme se mueve el botón. En el preflop, UTG actúa primero y la ciega grande actúa última. En el postflop, la ciega pequeña actúa primero y el botón actúa último.
+> Las posiciones del póker son los ==asientos con nombre que se miden desde el botón del repartidor== — UTG, lojack, hijack, cutoff, botón, ciega pequeña, ciega grande — y ==normalmente se mueven un asiento en el sentido de las agujas del reloj cada mano== conforme se mueve el botón. En el preflop, UTG actúa primero y la ciega grande actúa última. En el postflop, la ciega pequeña actúa primero y el botón actúa último. (En heads-up, el botón es la ciega pequeña: primero en actuar en el preflop, último en el postflop.)
 
 ---
 
@@ -60,7 +60,7 @@ Aquí tienes el chart completo de posiciones a 9-max — cada nombre de asiento,
 
 Fíjate en el vuelco: ==las ciegas actúan últimas en el preflop pero primeras en el postflop==, mientras que el botón actúa último en cada calle postflop. Ese orden — no las cartas — es lo que hace que algunos asientos sean estructuralmente mejores que otros.
 
-> **Nota de mesa en vivo:** el botón es un disco físico que se mueve un asiento en el sentido de las agujas del reloj cada mano. "UTG" es quien esté sentado tres asientos a la izquierda del botón en ese momento — no una silla fija.
+> **Nota de mesa en vivo:** el botón es un disco físico que normalmente se mueve un asiento en el sentido de las agujas del reloj cada mano. "UTG" es quien esté sentado tres asientos a la izquierda del botón en ese momento — no una silla fija.
 
 ---
 
@@ -124,7 +124,7 @@ Los nombres no tienen un origen oficial documentado — la jerga del póker rara
 - **Hijack:** el cutoff y el botón son los asientos clásicos para robar ciegas. Cuando el jugador un asiento antes sube primero, ==**"secuestra" (hijack) el robo**== que los asientos tardíos estaban esperando hacer — así que el propio asiento se quedó con el nombre.
 - **Lojack:** llegó después, como un ==juego de palabras con "hijack"== — el asiento un escalón "más bajo" en el orden jerárquico. La mayoría de las versiones oyen también un eco de la marca antirrobo LoJack: un hijack, un peldaño por debajo.
 
-Tómate ambas como leyenda de mesa más que como etimología. Lo que no es leyenda: el hijack y el lojack son nombres reales y estándar que verás en cada range chart y sitio de entrenamiento moderno, y por eso vale la pena tenerlos claros.
+Tómate ambas como leyenda de mesa más que como etimología. Lo que no es leyenda: el hijack y el lojack son nombres reales y estándar que verás en la mayoría de los range charts y sitios de entrenamiento modernos, y por eso vale la pena tenerlos claros.
 
 ---
 
@@ -227,7 +227,7 @@ A. El Asiento 1 es una silla física, no una posición — en la mayoría de las
 
 **Q. ¿Cuáles son las posiciones en una mesa de póker de 9 jugadores?**
 
-A. Por orden de acción en el preflop: UTG, UTG+1, UTG+2 (posición temprana), lojack (LJ) y hijack (HJ) (posición media), cutoff (CO) y botón (BTN) (posición tardía), y luego las dos ciegas: ciega pequeña (SB) y ciega grande (BB). Todas se nombran por su distancia al botón, así que se desplazan un asiento cada mano.
+A. Por orden de acción en el preflop: UTG, UTG+1, UTG+2 (posición temprana), lojack (LJ) y hijack (HJ) (posición media), cutoff (CO) y botón (BTN) (posición tardía), y luego las dos ciegas: ciega pequeña (SB) y ciega grande (BB). Todas se nombran por su distancia al botón, así que normalmente se desplazan un asiento cada mano.
 
 **Q. ¿Cuál es la mejor posición en la mesa?**
 

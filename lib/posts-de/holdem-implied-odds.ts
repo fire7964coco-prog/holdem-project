@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "odds",
   date: "2026-07-08",
   updated: "2026-09-28",
-  masterUpdated: "2026-09-26",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "💰",
@@ -57,7 +57,7 @@ Sagt dir, ob der Call sich heute selbst bezahlt | Sagt dir, ob der Call sich üb
 Funktioniert sogar gegen ein All-in | Wert null gegen ein All-in (heads-up – keine Bets mehr)
 :::
 
-Die praktische Regel: **Fang mit den Pot Odds an.** Wenn deine Equity den Preis bereits schlägt, calle – keine Geschichte nötig. Wenn dein Draw den Preis *knapp verfehlt*, dann werden Implied Odds zum Tiebreaker. Und wenn dein Draw den Preis um Längen verfehlt, können Implied Odds ihn meist auch nicht retten.
+Die praktische Regel: **Fang mit den Pot Odds an.** Wenn deine Equity den Preis bereits schlägt – gezählt nur über die Karten, die dieser Call bezahlt –, calle; keine Geschichte nötig. Wenn dein Draw den Preis *knapp verfehlt*, dann werden Implied Odds zum Tiebreaker. Und wenn dein Draw den Preis um Längen verfehlt, können Implied Odds ihn meist auch nicht retten.
 
 ---
 
@@ -124,9 +124,9 @@ Weil du ==r:sieben von acht Malen verfehlst==, ist die Mathematik brutal, es sei
 
 Hier die ehrliche Aufschlüsselung, die die meisten Artikel überspringen:
 
-- **Der reine Break-even liegt bei 7,5:1.** In einer Fantasie, in der du jedes Mal den *gesamten* Stack deines Gegners gewinnst, wenn du ein Set floppst, bräuchtest du nur etwa 7,5× dahinter.
+- **Der reine Break-even liegt bei 7,5:1.** In einer Fantasie, in der du jedes Mal voll ausgezahlt wirst, wenn du ein Set floppst, müssten der Pot und das, was du danach gewinnst, zusammen nur etwa 7,5× deinen Call ergeben.
 - **Das echte Leben verlangt 15–20×.** Du bekommst nicht immer den ganzen Stack, du floppst manchmal ein Set und *verlierst trotzdem* (Set-over-Set, oder er füllt eine größere Hand), und die Position zählt. Der Extra-Puffer deckt diese Verluste.
-- Also ==b:7,5:1 ist der theoretische Boden; 15–20× ist die praktische Regel.== Verwechsle die beiden nicht – die 7,5er-Zahl als deine Regel am echten Tisch zu nutzen, ist ein schleichendes Leak.
+- Also ==b:7,5:1 ist der theoretische Payoff-Boden; Stacks von 15–20× deinem Call sind die praktische Regel.== Verwechsle die beiden nicht – die 7,5er-Zahl als deine Regel am echten Tisch zu nutzen, ist ein schleichendes Leak.
 
 Die genaue Set-floppen-Mathematik und jede andere „Odds, X zu floppen“-Zahl leben in den [Drawing Odds](/de/blog/holdem-drawing-odds "thumb:/images/holdem-drawing-odds-hero.webp"); die Kernaussage hier ist, dass kleine Paare Gold sind, wenn die Stacks tief sind, und Müll, wenn sie kurz sind: Das Paar hat sich nicht geändert – die Implied Odds schon.
 
@@ -188,7 +188,7 @@ A. Nein. Nach dem River kommt keine Karte mehr und keine Setzrunde mehr – es g
 
 **Q. Wie viel muss ich mit einem Flushdraw am Turn zusätzlich gewinnen?**
 
-A. Bei einem $50-Call in einen $150-Pot am Turn, mit einem Flushdraw, der am River zu 19,6% ankommt (9 ÷ 46): 50 ÷ 0,196 = $255, minus die $200, die schon im Spiel sind, macht rund **$55**. So viel musst du am River im Schnitt zusätzlich holen, damit der Call aufgeht. Kann dein Gegner das nicht mehr bezahlen, ist es ein Fold.
+A. Bei einem $50-Call in einen $150-Pot am Turn, mit einem Flushdraw, der am River zu 19,6% ankommt (9 ÷ 46): 50 ÷ 0,196 = $255, minus die $200, die schon im Spiel sind, macht rund **$55**. So viel musst du am River im Schnitt zusätzlich holen, wenn dein Flush ankommt – und er die beste Hand ist –, damit der Call aufgeht. Kann dein Gegner das nicht mehr bezahlen, ist es ein Fold.
 
 **Q. Was ist der Unterschied zwischen Pot Odds und Implied Odds?**
 
@@ -196,7 +196,7 @@ A. Der Unterschied zwischen Pot Odds und Implied Odds ist die Gewissheit: Den ak
 
 **Q. Wann solltest du mit Implied Odds rechnen?**
 
-A. Fang mit den Pot Odds an. Schlägt deine Equity den sofortigen Preis bereits, callst du einfach – Implied Odds brauchst du dafür nicht. Greif zu ihnen, wenn dein Draw diesen Preis verfehlt und die Stacks dahinter tief genug sind, dass ein Treffer dir mehr einbringt als das x aus der Formel – je weiter der Draw den Preis verfehlt, desto größer wird x. Idealerweise ist das ein starker, versteckter oder Nut-Draw gegen einen Gegner, der auch wirklich zahlt. Können die Stacks dahinter x nicht decken – etwa weil ein Heads-up-Gegner all-in oder short gestackt ist –, retten Implied Odds den Call nicht mehr.
+A. Fang mit den Pot Odds an. Schlägt deine Equity den sofortigen Preis bereits – gemessen über die Karten, die dieser Call bezahlt –, callst du einfach – Implied Odds brauchst du dafür nicht. Greif zu ihnen, wenn dein Draw diesen Preis verfehlt und die Stacks dahinter tief genug sind, dass ein Treffer dir mehr einbringt als das x aus der Formel – je weiter der Draw den Preis verfehlt, desto größer wird x. Idealerweise ist das ein starker, versteckter oder Nut-Draw gegen einen Gegner, der auch wirklich zahlt. Können die Stacks dahinter x nicht decken – etwa weil ein Heads-up-Gegner all-in oder short gestackt ist –, retten Implied Odds den Call nicht mehr.
 
 **Q. Was sind Reverse Implied Odds?**
 
@@ -216,7 +216,7 @@ A. Nein – heads-up gibt es, wenn dein Gegner all-in ist, keine weiteren Setzru
 
 **Q. Wie funktionieren Implied Odds beim Set Mining?**
 
-A. Du floppst mit einem Pocket Pair nur 11,8% der Fälle ein Set (etwa 7,5:1 dagegen), du brauchst also einen großen Payoff für die Male, in denen du triffst. Der theoretische Break-even liegt bei etwa 7,5× deinem Call an Stacks, aber die praktische Richtlinie ist 15–20× – der Extra-Puffer deckt die Male, in denen du verfehlst, keine Action bekommst oder mit einem Set verlierst.
+A. Du floppst mit einem Pocket Pair nur 11,8% der Fälle ein Set (etwa 7,5:1 dagegen), du brauchst also einen großen Payoff für die Male, in denen du triffst. Der theoretische Break-even liegt bei einem Gesamt-Payoff (Pot plus das, was du danach gewinnst) von etwa 7,5× deinem Call, aber die praktische Richtlinie sind Stacks von 15–20× deinem Call – der Extra-Puffer deckt die Male, in denen du verfehlst, keine Action bekommst oder mit einem Set verlierst.
 
 **Q. Hast du Implied Odds mit einem Flushdraw?**
 

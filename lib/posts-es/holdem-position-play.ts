@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Estar en posición significa que hablas último — ves la decisión de cada rival antes de gastar una ficha. Los ejemplos de solver muestran que la posición suele mejorar la realización de equity, pero ningún asiento queda necesariamente por encima o por debajo del 100%: los rangos, el board y la acción pueden invertir el patrón habitual. Por eso UTG abre ~13% de las manos y el botón ~43% — y por eso la posición reescribe cada c-bet, cada farol y cada decisión de control del bote en el postflop.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎯",
@@ -67,8 +67,8 @@ Esto es lo que hablar primero te cuesta de verdad:
 :::compare
 Fuera de posición (hablas primero) | En posición (hablas último)
 Apuestas a ciegas — puede subir, igualar o foldear, y te enteras después de haber metido tu dinero | Ves su check, su apuesta o su fold antes de decidir nada
-No puedes tomar una carta gratis — pasas y te pueden echar de tu proyecto con una apuesta | Pasas detrás cuando quieras para ver la siguiente carta gratis
-El tamaño del bote se te escapa — no puedes frenar sus apuestas cuando quieres un showdown barato | Tú decides si la mano avanza otra calle
+No puedes tomar una carta gratis por tu cuenta — pasas y te pueden echar de tu proyecto con una apuesta | Cuando te pasan, pasas detrás y ves la siguiente carta gratis
+El tamaño del bote se te escapa — no puedes frenar sus apuestas cuando quieres un showdown barato | Cuando te pasan, tú decides si entra más dinero en esta calle
 Te leen el rango — las líneas de pasar-igualar se vuelven transparentes con el tiempo | Tus checks y tus apuestas siguen siendo ambiguos porque él actúa a ciegas
 :::
 
@@ -144,7 +144,7 @@ El open-limp falla por tres motivos desde UTG:
 2. **Encasilla tu rango percibido** — los jugadores observadores atacan a los que limpean sin piedad, y te enfrentarás a subidas contra las que no puedes continuar cómodamente.
 3. **No gana nada en el preflop.** Una subida puede llevarse las ciegas directamente; un limp nunca lo hace.
 
-Hay una excepción muy concreta en partidas en vivo muy pasivas — limpear detrás de otros que ya han limpeado con pares pequeños y conectores del mismo palo para ver un flop multiway barato — pero *abrir* con limp desde UTG es una fuga en prácticamente cualquier mesa. El argumento completo, incluido cuándo limpear detrás sí está bien, está en la [guía del limping](/es/blog/holdem-limping).
+Hay una excepción muy concreta en partidas en vivo muy pasivas — limpear detrás de otros que ya han limpeado con pares pequeños y conectores del mismo palo para ver un flop multiway barato — pero *abrir* con limp desde UTG es una fuga en prácticamente cualquier mesa con profundidades de stack normales. El argumento completo, incluido cuándo limpear detrás sí está bien, está en la [guía del limping](/es/blog/holdem-limping).
 
 ---
 
@@ -251,7 +251,7 @@ Para la mecánica de las ciegas en sí — por qué existen y cómo las apuestas
 
 **Q. ¿Qué significa fuera de posición en el póker?**
 
-A. Fuera de posición (OOP) significa que tienes que actuar antes que tu rival en las calles del postflop — flop, turn y river. Comprometes fichas sin saber qué hará él, no puedes tomar cartas gratis y te cuesta controlar el tamaño del bote. Las ciegas están OOP contra todos los asientos que no son ciegas (y la ciega pequeña también lo está contra la ciega grande: entre las dos, la ciega pequeña actúa primero, así que la ciega grande tiene posición sobre ella); el botón nunca está OOP contra nadie.
+A. Fuera de posición (OOP) significa que tienes que actuar antes que tu rival en las calles del postflop — flop, turn y river. Comprometes fichas sin saber qué hará él, no puedes tomar una carta gratis por tu cuenta y te cuesta controlar el tamaño del bote. Las ciegas están OOP contra todos los asientos que no son ciegas (y la ciega pequeña también lo está contra la ciega grande: entre las dos, la ciega pequeña actúa primero, así que la ciega grande tiene posición sobre ella — salvo en heads-up, donde la ciega pequeña es el botón); el botón nunca está OOP contra nadie.
 
 **Q. ¿Quién habla primero, la ciega pequeña o la ciega grande?**
 
@@ -263,7 +263,7 @@ A. En posición (IP) significa que hablas el último en el flop, el turn y el ri
 
 **Q. ¿Por qué es una ventaja actuar el último (tener posición)?**
 
-A. Porque tener posición sobre alguien te deja llevar las riendas de la mano: ves cada decisión suya antes de tomar la tuya. Puedes tomar una carta gratis pasando detrás, controlar el tamaño del bote y elegir el momento justo para apostar por valor o farolear. Esa información suele mejorar la realización de equity, pero no fija a ningún asiento por encima o por debajo del 100%: los rangos, el board y la acción pueden invertir el patrón.
+A. Porque tener posición sobre alguien te deja llevar las riendas de la mano: ves cada decisión suya antes de tomar la tuya. Cuando te pasan, puedes tomar una carta gratis pasando detrás o controlar el tamaño del bote, y eliges mejor el momento para apostar por valor o farolear. Esa información suele mejorar la realización de equity, pero no fija a ningún asiento por encima o por debajo del 100%: los rangos, el board y la acción pueden invertir el patrón.
 
 **Q. ¿Por qué importa tanto la posición en el póker?**
 
@@ -275,11 +275,11 @@ A. El botón. Es el único asiento que tiene garantizado hablar último en cada 
 
 **Q. ¿Cuál es la posición más débil en el póker?**
 
-A. Dos respuestas, según la pregunta. La ciega pequeña es el peor asiento estructural desde el que jugar una mano — el primero en actuar en cada calle del postflop. La ciega grande pierde más fichas brutas por cada 100 manos, simplemente porque pone una ciega obligada completa en cada órbita; ni el juego perfecto reduce del todo esa pérdida. Entre los asientos no ciegos, UTG es el más débil: primero en el preflop, el rango más cerrado, normalmente OOP tras el flop.
+A. Dos respuestas, según la pregunta. La ciega pequeña es el peor asiento estructural desde el que jugar una mano — en una mesa de tres o más, el primero en actuar en cada calle del postflop. La ciega grande pierde más fichas brutas por cada 100 manos, simplemente porque pone una ciega obligada completa en cada órbita; ni el juego perfecto reduce del todo esa pérdida. Entre los asientos no ciegos, UTG es el más débil: primero en el preflop, el rango más cerrado, normalmente OOP tras el flop.
 
 **Q. ¿Es la ciega pequeña una posición temprana?**
 
-A. No — la ciega pequeña es una ciega, no un asiento de «posición temprana». Los jugadores de posición temprana (UTG y los asientos de al lado) abren cerrado porque toda la mesa actúa detrás de ellos — y en el postflop al menos hablan *después* de las ciegas. La ciega pequeña es en realidad el peor asiento para jugar: pone media ciega y luego actúa primero en cada calle del postflop. No la trates como posición temprana — frente a una subida, el estándar moderno desde la ciega pequeña es 3-bet o fold, casi nunca igualar; cuando te llega foldeado, sube la mayoría de las veces.
+A. No — la ciega pequeña es una ciega, no un asiento de «posición temprana». Los jugadores de posición temprana (UTG y los asientos de al lado) abren cerrado porque toda la mesa actúa detrás de ellos — y en el postflop al menos hablan *después* de las ciegas. La ciega pequeña es en realidad el peor asiento para jugar: pone media ciega y luego, en cualquier mesa de tres o más, actúa primero en cada calle del postflop. No la trates como posición temprana — frente a una subida, el estándar moderno desde la ciega pequeña es 3-bet o fold, casi nunca igualar; cuando te llega foldeado, sube la mayoría de las veces.
 
 **Q. ¿Cómo se juega fuera de posición (OOP)?**
 

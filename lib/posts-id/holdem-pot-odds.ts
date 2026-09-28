@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Untuk menghitung pot odds, bagi jumlah yang harus Anda call dengan total pot setelah call Anda. Call $50 ke pot $150 = 50 ÷ 200 = 25% — jadi Anda butuh minimal 25% equity agar call ini profit.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "🧮",
@@ -54,7 +54,7 @@ Angka "seberapa sering Anda perlu menang" itulah intinya. Mendapat 3:1 berarti c
 Jumlahkan pot akhir | Pot saat ini + taruhan + call Anda. Contoh: pot $100 + taruhan $50 + call $50 Anda = $200
 Bagi call Anda dengan pot akhir itu | $50 ÷ $200 = 0,25
 Itulah equity yang Anda butuhkan | Anda perlu menang setidaknya 25% dari waktu agar call ini profit
-Bandingkan dengan equity Anda yang sebenarnya | Flush draw ≈ 35% untuk jadi dengan dua kartu tersisa dan tanpa taruhan lagi → 35% mengalahkan 25% → ==g:call==
+Bandingkan dengan equity Anda yang sebenarnya | Flush draw dengan 9 outs bersih ≈ 35% untuk jadi dengan dua kartu tersisa dan tanpa taruhan lagi → 35% mengalahkan 25% → ==g:call==
 :::
 
 Itu saja. **Equity yang dibutuhkan = call Anda ÷ pot akhir.** Jika peluang menang Anda yang sebenarnya lebih besar dari angka itu, call menghasilkan uang dalam jangka panjang — bahkan saat Anda lebih sering kalah di tangan itu daripada menang.
@@ -202,7 +202,7 @@ Turn adalah 3♠ — kartu mati. Pot-nya $200 dan villain jam $200 — taruhan s
 
 **Q. Bagaimana cara menghitung pot odds dengan cepat?**
 
-A. Bagi jumlah yang harus Anda call dengan total pot *setelah* call Anda. Call $50 ke pot $150 adalah 50 ÷ 200 = 25% — itulah equity yang Anda butuhkan. Jika peluang menang Anda mengalahkannya, call.
+A. Bagi jumlah yang harus Anda call dengan total pot *setelah* call Anda. Call $50 ke pot $150 adalah 50 ÷ 200 = 25% — itulah equity yang Anda butuhkan. Jika peluang menang Anda — dihitung hanya atas kartu yang bisa Anda lihat dengan call ini — mengalahkannya, call.
 
 **Q. Apakah call Anda dihitung dalam pot odds?**
 
@@ -214,7 +214,7 @@ A. Pot adalah semua chip yang sudah ada di tengah plus taruhan apa pun di street
 
 **Q. Berapa rasio pot odds yang bagus?**
 
-A. Makin tinggi makin bagus — Anda pasti ingin "mendapat 5:1" (butuh hanya 16,7%). Tapi "bagus" itu relatif terhadap tangan Anda: mendapat 2:1 (butuh 33%) baru cukup dengan flush draw kalau Anda memang akan melihat kedua kartu (all-in, atau tak ada taruhan lagi — 35%); harga itu tidak terpenuhi kalau call Anda hanya membeli satu kartu (19,1% dari flop, 19,6% dari turn); dan buruk dengan gutshot. Selalu bandingkan harga dengan equity Anda.
+A. Makin tinggi makin bagus — Anda pasti ingin "mendapat 5:1" (butuh hanya 16,7%). Tapi "bagus" itu relatif terhadap tangan Anda: mendapat 2:1 (butuh 33%) baru cukup dengan flush draw yang bersih kalau Anda memang akan melihat kedua kartu (all-in, atau tak ada taruhan lagi — 35%); harga itu tidak terpenuhi kalau call Anda hanya membeli satu kartu (19,1% dari flop, 19,6% dari turn); dan buruk dengan gutshot. Selalu bandingkan harga dengan equity Anda.
 
 **Q. Bagaimana mengubah pot odds dari rasio ke persentase?**
 
@@ -242,7 +242,7 @@ A. Tepat pot odds Anda sebagai persentase: call ÷ pot akhir. Melawan taruhan se
 
 **Q. Equity Anda harus lebih tinggi atau lebih rendah dari pot odds?**
 
-A. Lebih tinggi. Pot odds memberi tahu equity yang Anda *butuhkan* untuk call (call ÷ pot akhir); equity adalah bagian pot yang diharapkan menjadi milik Anda. Call saat equity Anda *lebih tinggi* dari angka yang dibutuhkan itu, fold saat lebih rendah. Jika taruhan setengah pot butuh 25% dan flush draw Anda punya 35% (dengan dua kartu tersisa — Anda melihat turn dan river tanpa taruhan lagi), maka 35% > 25% → call yang profit.
+A. Lebih tinggi. Pot odds memberi tahu equity yang Anda *butuhkan* untuk call (call ÷ pot akhir); equity adalah bagian pot yang diharapkan menjadi milik Anda. Call saat equity Anda *lebih tinggi* dari angka yang dibutuhkan itu, fold saat lebih rendah. Jika taruhan setengah pot butuh 25% dan flush draw bersih Anda punya 35% (dengan dua kartu tersisa — Anda melihat turn dan river tanpa taruhan lagi), maka 35% > 25% → call yang profit.
 
 ---
 

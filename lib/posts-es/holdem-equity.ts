@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "El equity es tu parte del bote: la parte que le corresponde a tu mano en promedio cuando se reparten todas las cartas, contando los empates en su parte proporcional. Igualas cuando tu equity supera a tus pot odds, pero la posición y las apuestas hacen que casi nunca te quedes con todo tu equity — y el fold equity te deja ganar botes incluso cuando tu mano va por detrás.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🥧",
@@ -76,7 +76,7 @@ Esa es toda la razón por la que el equity importa: convierte "¿voy por delante
 
 </div>
 
-Aquí hay dos cosas que confunden a la gente. Una pareja contra dos sobrecartas (QQ vs AK) ==r:no es un 50/50== — la pareja es una favorita modesta, en torno a 57/43 offsuit (un pelín más ajustado, ~54/46, cuando el AK va suited). Y la expresión "coin flip" solo encaja de verdad con una pareja baja contra dos cartas mayores (22 vs AK), donde está genuinamente cerca.
+Aquí hay dos cosas que confunden a la gente. Una pareja contra dos sobrecartas (QQ vs AK) ==r:no es un 50/50== — la pareja es una favorita modesta, en torno a 57/43 offsuit (un pelín más ajustado, ~54/46, cuando el AK va suited). Los jugadores llaman "coin flip" a cualquier carrera de pareja contra sobrecartas, pero solo una pareja baja contra dos cartas mayores (22 vs AK) está genuinamente cerca del 50/50.
 
 ---
 
@@ -141,20 +141,20 @@ Esta es la idea más importante que la mayoría de guías para principiantes dej
 
 Por eso los equities de all-in preflop importan tanto: AA all-in contra KK cobra su ==82%== íntegro — sin impuesto de realización, sin fold equity, solo el número bruto desplegándose. También es la razón por la que un "coin flip" (22 vs AK a ~52/48) es un all-in genuinamente al filo, aunque esas mismas dos manos jugadas postflop divergirían muchísimo según la mesa y quién tenga posición.
 
-Un all-in sin más apuestas posibles es el único punto del póker donde, con cartas por venir, la tarta se corta exactamente como dice la matemática — que es a la vez su atractivo y su peligro.
+Un all-in sin más apuestas posibles es el punto más limpio del póker donde, con cartas por venir, la tarta se corta exactamente como dice la matemática — que es a la vez su atractivo y su peligro.
 
 ---
 
 ## Equity multiway: por qué tu manaza se encoge contra una multitud
 
-**Tu equity cae rápido en botes multiway, porque la misma tarta del 100% ahora se reparte entre más manos.** Un par de ases va en torno al 85% mano a mano, pero contra tres rivales baja a ==r:~64%==, y contra cuatro a ~56% — sigue siendo la mejor mano, pero ya no el aplastamiento que parece. A tres bandas, el equity *promedia* un 33% por definición, porque tres jugadores dividen un bote.
+**Tu equity cae rápido en botes multiway, porque la misma tarta del 100% ahora se reparte entre más manos.** Preflop contra manos aleatorias, un par de ases va en torno al 85% mano a mano, pero contra tres rivales baja a ==r:~64%==, y contra cuatro a ~56% — sigue siendo la mejor mano, pero ya no el aplastamiento que parece. A tres bandas, el equity *promedia* un 33% por definición, porque tres jugadores dividen un bote.
 
-![Infografía de una mesa Q♣ 9♥ 5♦ 3♠ J♦ que muestra cómo cada jugador extra en el bote recorta el equity de todas las manos](/images/holdem-equity-multiway.webp "Cuantos más jugadores sigan en el bote, más pequeño es el trozo de cada uno — incluso un par de ases")
+![Infografía de una mesa Q♣ 9♥ 5♦ 3♠ J♦ que muestra cómo cada jugador extra en el bote encoge la parte media de equity](/images/holdem-equity-multiway.webp "Cuantos más jugadores sigan en el bote, más pequeño es el trozo medio — incluso un par de ases pierde terreno")
 
 Dos cosas empeoran en multiway, no solo tu parte bruta:
 
 - **El fold equity se derrumba.** Para ganar un bote con una apuesta, ahora *todos* tienen que retirarse — mucho menos probable con tres rivales que con uno. Los faroles y los semi-faroles finos pierden valor rápido.
-- **La realización cae.** Más jugadores por actuar significa más formas de que te superen ligando o te echen de la mano, así que realizas todavía menos de un trozo ya de por sí más pequeño.
+- **La realización cae.** Más jugadores por actuar significa más apuestas y subidas que pueden echarte de la mano antes del showdown, así que realizas todavía menos de un trozo ya de por sí más pequeño.
 
 La conclusión práctica: las manos que quieren un bote multiway son las que ligan la nuts (sets, ases suited para el color máximo), no las parejas grandes que se juegan mejor mano a mano. Cuando el campo es grande, ajústate hacia manos cuyo equity aguanta cuando la tarta se corta en cinco.
 
@@ -220,11 +220,11 @@ A. La realización de equity es cuánto de tu equity bruta cobras de verdad: equ
 
 **Q. ¿Qué es el equity all-in?**
 
-A. El equity all-in es simplemente tu equity bruta — tu parte del bote, con los empates en su parte proporcional — cuando ya no puede haber más apuestas. Como no hay decisiones futuras, realizas el 100%, así que el equity bruto se convierte en la parte exacta del bote que cobras a largo plazo. Es el único punto donde, con cartas por venir, "equity equivale a parte del bote" es literalmente cierto.
+A. El equity all-in es simplemente tu equity bruta — tu parte del bote, con los empates en su parte proporcional — cuando ya no puede haber más apuestas. Como no hay decisiones futuras, realizas el 100%, así que el equity bruto se convierte en la parte exacta del bote que cobras a largo plazo. Es el caso más claro donde, con cartas por venir, "equity equivale a parte del bote" es literalmente cierto.
 
 **Q. ¿Por qué baja mi equity en botes multiway?**
 
-A. Porque el mismo bote del 100% ahora se reparte entre más manos — un par de ases al ~85% mano a mano cae al ~64% contra tres rivales y al ~56% contra cuatro rivales. El multiway también recorta tu fold equity (todos tienen que retirarse, no solo un jugador) y tu realización (más jugadores significan más formas de que te superen ligando), así que se encogen tanto tu parte bruta como lo que te quedas de ella.
+A. Porque el mismo bote del 100% ahora se reparte entre más manos — preflop contra manos aleatorias, un par de ases al ~85% mano a mano cae al ~64% contra tres rivales y al ~56% contra cuatro rivales. El multiway también recorta tu fold equity (todos tienen que retirarse, no solo un jugador) y tu realización (más jugadores significan más apuestas que pueden echarte de la mano antes del showdown), así que se encogen tanto tu parte bruta como lo que te quedas de ella.
 
 **Q. ¿Qué es el EV (valor esperado) en el póker?**
 

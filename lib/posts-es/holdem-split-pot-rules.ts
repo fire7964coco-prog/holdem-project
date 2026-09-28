@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Sí — en el póker se puede empatar. El bote se divide (un \"split\" o \"chop\") cuando dos o más jugadores muestran las mismas mejores cinco cartas en el showdown. El palo nunca rompe el empate, y la ficha impar que sobra va al primer jugador empatado a la izquierda del botón.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "🃏",
@@ -89,7 +89,7 @@ Es mi mano 8-8-8-A-K: mi J♠ 10♥ y su 5♣ 2♦ jugaban los dos el trío de o
 
 > **La comprobación:** ¿*tus* mejores cinco —usando al menos una carta tuya— superan las cinco de la mesa? Si sí, juegas tu mano. Si no, la mesa juega y lo más probable es que partas. El método completo para escanear una mesa así lo tienes en [cómo leer la mesa y encontrar tus mejores cinco](/es/blog/holdem-reading-the-board).
 
-**Y lo que más importa en la mesa: tu mano solo gana si la enseñas boca arriba.** Una mano tirada al muck está muerta aunque hubiera partido — cuando juegas la mesa sigues teniendo que mostrar tus cartas boca arriba, o pierdes tu parte del bote (regla 172 del reglamento de cash —"Live Action"— de la WSOP; las reglas de torneo de la WSOP lo repiten en la regla 75). Quién muestra primero y cómo va la secuencia lo tienes en las [reglas del showdown](/es/blog/holdem-showdown-rules).
+**Y lo que más importa en la mesa: tu mano solo gana si la enseñas boca arriba.** Una mano tirada al muck normalmente está muerta aunque hubiera partido (solo se puede recuperar una mano que siga siendo claramente identificable, y solo a criterio del floor; regla 109 del reglamento de torneos de la WSOP) — cuando juegas la mesa sigues teniendo que mostrar tus cartas boca arriba, o pierdes tu parte del bote (regla 172 del reglamento de cash —"Live Action"— de la WSOP; las reglas de torneo de la WSOP lo repiten en la regla 75). Quién muestra primero y cómo va la secuencia lo tienes en las [reglas del showdown](/es/blog/holdem-showdown-rules).
 
 :::tip[Si la mesa juega y alguien apuesta en el river, **el error es foldear en automático**. Cuando nada puede superar la mesa el empate está asegurado, y pagar te devuelve tu parte de todo lo que ya había en el bote (la mitad en heads-up) — foldear regala esa parte gratis. Cuando la mesa sí se puede superar, calcula la frecuencia: heads-up, ante una apuesta del tamaño del bote necesitas que tu rival también esté jugando la mesa unas 2 de cada 3 veces; ante medio bote, la mitad de las veces (con tres o más jugadores en el bote tu parte del empate se reduce y el listón sube). Es un listón alto para pagar — y bajo para foldear: ante una apuesta del tamaño del bote, foldear es correcto **en cuanto** tiene mano de verdad más de **una de cada tres veces**, y en un river en el que la mesa todavía se puede superar, eso es lo habitual.]:::
 
@@ -105,7 +105,7 @@ Estos son los malentendidos detrás de casi todas las discusiones de "¿pero por
 ==r:Un color de picas **no** gana a un color de corazones.== El Texas Hold'em no tiene jerarquía de palos — ==valores idénticos parten, punto==. (Esto despista a quien viene de juegos que *sí* ordenan los palos.)
 
 ### ❌ "Mis cartas son más altas, así que gano"
-Mesa 9♠ 8♦ 7♣ 6♥ 5♠ — una escalera servida. Tú tienes A♠ K♦; tu rival tiene 2♣ 3♥. ==r:**Split.**== Los dos jugáis la escalera 9-8-7-6-5 de la mesa, porque ==r:tus cartas altas nunca entran en las mejores cinco==. Una carta alta solo importa cuando de verdad juega como kicker — [qué es un kicker y cuándo entra en juego](/es/blog/holdem-kicker) traza esa línea con precisión.
+Mesa 9♠ 8♦ 7♣ 6♥ 5♠ — una escalera servida. Tú tienes A♠ K♦; tu rival tiene 2♣ 3♥. ==r:**Split.**== Los dos jugáis la escalera 9-8-7-6-5 de la mesa, porque ==r:tus cartas altas nunca entran en las mejores cinco==. Una carta alta solo importa cuando de verdad juega, como parte de la propia mano o como kicker — [qué es un kicker y cuándo entra en juego](/es/blog/holdem-kicker) traza esa línea con precisión.
 
 ### ❌ "Yo usé mis dos cartas y él solo una"
 ==r:Cuántas cartas propias uses da igual.== Lo único que cuenta son las cinco más fuertes de siete. ==g:Si ambos jugadores llegan a las mismas mejores cinco, es un chop sin importar cómo llegaron ahí.==
@@ -197,11 +197,11 @@ A. Sí. Si tres o más jugadores tienen las mismas mejores cinco cartas, el bote
 
 **Q. ¿Cómo se gestionan los botes divididos cuando alguien está all-in?**
 
-A. El bote se separa en un bote principal y botes laterales (side pots); cada uno se adjudica o se parte por separado según la mejor mano entre los jugadores elegibles para ese bote concreto.
+A. Cuando hay jugadores all-in por cantidades distintas y otros siguen apostando, el bote se separa en un bote principal y uno o más botes laterales (side pots); cada uno se adjudica o se parte por separado según la mejor mano entre los jugadores elegibles para ese bote concreto.
 
 **Q. ¿Cómo funciona un split pot con all-in o bote secundario?**
 
-A. Cada bote se resuelve por su cuenta. Si un all-in empata para el bote principal, ese bote se divide entre los jugadores empatados, mientras el bote secundario (side pot) lo pelean solo los que siguieron apostando. Un jugador all-in solo puede ganar o partir los botes a los que aportó fichas — nunca el bote secundario construido con fichas que no pudo igualar. Los detalles de cómo se forman están en la [guía de reglas del all-in y botes laterales](/es/blog/holdem-all-in-rules).
+A. Cada bote se resuelve por su cuenta. Si un all-in empata para el bote principal, ese bote se divide entre los jugadores empatados, mientras el bote secundario (side pot), si lo hay, lo pelean solo los que siguieron apostando. Un jugador all-in solo puede ganar o partir los botes a los que aportó fichas — nunca el bote secundario construido con fichas que no pudo igualar. Los detalles de cómo se forman están en la [guía de reglas del all-in y botes laterales](/es/blog/holdem-all-in-rules).
 
 **Q. ¿Cómo se calcula un bote secundario (side pot)?**
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "En el Texas Hold'em, un color (cinco cartas del mismo palo) siempre gana a una escalera (cinco cartas en secuencia), sin excepciones. La razón es pura frecuencia: hay unas 5,108 formas de ligar un color frente a 10,200 de armar una escalera, así que el color es casi el doble de raro entre las manos de cinco cartas; sobre las siete cartas hasta el river son 3.03% frente a 4.62%. Al color solo le ganan el full, el póker, la escalera de color, la escalera real y un color más alto.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-27",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "11 min",
   emoji: "⚡",
@@ -78,7 +78,7 @@ Una escalera solo necesita cinco valores seguidos, y ==**los palos no importan**
 
 ## 3 mesas que siguen engañando a los jugadores
 
-![Mesa mostrando 8♥ 7♥ 6♥ 5♠ A♣ — tres corazones en la mesa significan que un color está vivo aunque tú tengas una escalera](/images/holdem-flush-vs-straight-board.webp "Tres cartas del mismo palo en la mesa — proyecto de color vivo contra tu escalera")
+![Mesa mostrando 8♥ 7♥ 6♥ 5♠ A♣ — tres corazones en la mesa significan que un color está vivo aunque tú tengas una escalera](/images/holdem-flush-vs-straight-board.webp "Tres cartas del mismo palo en la mesa — un color es posible contra tu escalera")
 
 Conocer la regla no es lo mismo que leerla en vivo — esa destreza es justo lo que entrena [leer la mesa](/es/blog/holdem-reading-the-board). Estas son las tres situaciones donde el error ocurre de verdad.
 
@@ -169,7 +169,7 @@ Si tu escalera usa unas cartas y tu color usa otras, no se suman — simplemente
 
 ## La única excepción real: Short Deck
 
-En el **Short Deck (6+) Hold'em** se quitan de la baraja los doses hasta los cincos. Con menos cartas, un color se vuelve *más difícil* de ligar que un full — así que en ese formato la jerarquía cambia y un ==r:**color gana a un full**==. El principio nunca cambia: ==la mano más rara gana==. Solo cambió la baraja. En el Texas Hold'em estándar con la baraja completa de 52 cartas, ==g:un color gana a una escalera y pierde contra un full, siempre==.
+En el **Short Deck (6+) Hold'em** se quitan de la baraja los doses hasta los cincos. Con menos cartas, un color se vuelve *más difícil* de ligar que un full — así que en ese formato la jerarquía cambia y un ==r:**color gana a un full**==. La lógica es la misma que con la baraja completa: de esas dos manos, ==la más rara está más arriba==. Solo cambió la baraja. En el Texas Hold'em estándar con la baraja completa de 52 cartas, ==g:un color gana a una escalera y pierde contra un full, siempre==.
 
 ---
 

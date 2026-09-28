@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Cara Main Texas Hold'em: Urutan Permainan dari Blinds sampai Showdown",
   seoTitle: "Bingung Kapan Harus Bertaruh? — Urutan Main Texas Hold'em",
   desc: "Suka bengong soal 'sekarang giliran siapa?' saat main Hold'em? Ini urutan main lengkapnya — preflop, flop, turn, river, showdown — plus contoh satu hand nyata.",
-  tldr: "Satu hand Texas Hold'em berjalan begini: pasang blinds → bagikan dua kartu tertutup → preflop → flop (3 kartu) → turn (1 kartu) → river (1 kartu) → showdown, dengan total empat ronde taruhan.",
+  tldr: "Satu hand Texas Hold'em berjalan begini: pasang blinds → bagikan dua kartu tertutup → preflop → flop (3 kartu) → turn (1 kartu) → river (1 kartu) → showdown, dengan paling banyak empat ronde taruhan.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "16 menit",
   emoji: "🎬",
@@ -42,7 +42,7 @@ Aturan intinya sederhana: Anda membentuk **kombinasi lima kartu terbaik** dari *
 
 Sebelum satu kartu pun keluar, dua hal mengatur meja: **tombol dealer (button)** dan **blinds**.
 
-**Tombol dealer (si "button", ditandai huruf D)** adalah cakram bundar yang menandai siapa yang "giliran membagi" di hand itu. Meskipun ada dealer khusus (house dealer), button-lah yang menentukan urutan taruhan, dan button itu bergeser satu kursi searah jarum jam setiap selesai satu hand.
+**Tombol dealer (si "button", ditandai huruf D)** adalah cakram bundar yang menandai siapa yang "giliran membagi" di hand itu. Meskipun ada dealer khusus (house dealer), button-lah yang menentukan urutan taruhan, dan button itu biasanya bergeser satu kursi searah jarum jam setiap selesai satu hand (aturan dead button adalah pengecualiannya).
 
 **Blinds** adalah taruhan wajib yang dipasang sebelum kartu dibagikan. Tanpa blinds, semua orang bisa check dan fold gratis; ==g:blinds menaruh uang di tengah dan memberi pemain alasan untuk bertarung==. (Masih asing? Lihat persisnya [cara kerja small blind dan big blind](/id/blog/holdem-blind-meaning).)
 
@@ -54,6 +54,8 @@ Sebelum satu kartu pun keluar, dua hal mengatur meja: **tombol dealer (button)**
 | Big Blind (BB) | Kursi kedua di kiri button | 2.000 |
 
 </div>
+
+Kalau hanya ada dua pemain, button sendiri yang memasang small blind — susunan yang dipakai di contoh satu hand lengkap di bawah.
 
 Blinds bukan sekadar biaya masuk — ==blinds adalah titik awal posisi dan strategi==.
 
@@ -93,7 +95,7 @@ Sekarang Anda sudah bisa membaca kombinasi lima kartu sungguhan: dua kartu tertu
 
 ![Infografis tiga ronde di Texas Hold'em — flop K♥ 7♦ 2♣, turn 9♠, dan river Q♥](/images/blog-holdem-card-stages.webp "Rondenya: tiga kartu di flop, lalu satu di turn dan satu di river")
 
-Flop juga membuka opsi baru: **check**. Kalau belum ada yang bertaruh, Anda bisa check untuk melewatkan giliran tanpa memasukkan chip. Tapi kalau lawan bertaruh setelah Anda check, Anda harus call, raise, atau fold.
+Mulai flop, **check** terbuka bagi semua orang (di preflop, hanya pemain yang blind atau straddle-nya sendiri menjadi taruhan hidup yang boleh check). Kalau belum ada yang bertaruh, Anda bisa check untuk melewatkan giliran tanpa memasukkan chip. Tapi kalau lawan bertaruh setelah Anda check, Anda harus call, raise, atau fold.
 
 ---
 
@@ -136,7 +138,7 @@ Aturan showdown:
 - Setiap pemain membentuk **kombinasi lima kartu terbaik** dari dua kartu tertutupnya dan lima kartu bersama.
 - Anda tidak wajib memakai kedua kartu tertutup Anda — boleh pakai satu, atau bahkan main board saja (nol kartu) kalau itu lima kartu terbaik Anda.
 - Pemain yang melakukan aksi agresif terakhir (bet atau raise) buka kartu duluan; kalau di river semua check, yang buka duluan adalah pemain aktif pertama di kiri button.
-- Pemain yang kalah boleh langsung **muck** (fold tanpa memperlihatkan kartu) — kecuali pada all-in di turnamen: begitu seorang pemain all-in dan taruhan selesai, semua hand dibuka menghadap ke atas (TDA 2024 Rule 16 · WSOP Tournament Rule 70).
+- Pemain yang kalah biasanya boleh langsung **muck** (fold tanpa memperlihatkan kartu). Ada dua pengecualian di turnamen: begitu seorang pemain all-in dan taruhan selesai, semua hand dibuka menghadap ke atas (TDA 2024 Rule 16 · WSOP Tournament Rule 70); dan pemain yang bet di river lalu di-call wajib membuka kartunya kalau si pemanggil — yang masih memegang atau sudah membuka kartunya sendiri — meminta melihatnya (TDA 2024 Rule 18-B).
 - Kombinasi yang sama persis **membagi pot** ("split") sama rata.
 
 Siapa yang wajib buka duluan, kapan Anda boleh muck, dan etika soal slow roll dibahas tuntas di [aturan showdown](/id/blog/holdem-showdown-rules).
@@ -161,6 +163,8 @@ Siapa yang wajib buka duluan, kapan Anda boleh muck, dan etika soal slow roll di
 Trik mengingatnya: ==**sebelum flop, lihat ke kiri big blind; setelah flop, lihat ke kiri button.**== Button selalu bertindak terakhir di semua ronde postflop, dan justru karena itu button adalah kursi paling menguntungkan di meja — lihat [posisi poker: UTG sampai button](/id/blog/holdem-positions).
 
 ==g:**Heads-up (2 pemain) adalah pengecualiannya:**== button memasang *small* blind dan bertindak **duluan** di preflop, tapi **terakhir** di flop, turn, dan river. Urutan itulah yang dipakai di contoh satu hand lengkap di bawah.
+
+Satu catatan lagi, di cash game yang mengizinkannya: **live straddle** memindahkan awal aksi preflop ke kiri si straddler, dan si straddler — bukan big blind — bertindak terakhir sebelum flop (WSOP Live Action Rule 165). Setelah flop, urutannya kembali seperti biasa.
 
 ---
 
@@ -257,7 +261,7 @@ Ini semua aksi yang tersedia di meja — bagian yang paling sering bikin pemula 
 | Bet | Memasang taruhan pertama di satu ronde | Saat belum ada yang bertaruh |
 | Raise | Menaikkan di atas taruhan yang berjalan | Saat ada taruhan ke arah Anda |
 | Re-raise (3-bet) | Raise di atas sebuah raise | Saat ada raise ke arah Anda |
-| All-in | Mendorong semua chip Anda ke tengah | Street mana pun — saat giliran Anda, sebagai bet, call, atau raise |
+| All-in | Mendorong semua chip Anda ke tengah | Street mana pun — saat giliran Anda, sebagai bet, call, atau raise, mana pun yang terbuka bagi Anda |
 
 </div>
 
@@ -269,7 +273,7 @@ Untuk panduan keputusan yang lebih dalam soal kapan memakai tiap langkah — len
 
 ## 10 Peringkat Kartu Poker yang Wajib Anda Hafal
 
-Untuk menang di showdown, Anda harus langsung tahu kombinasi mana mengalahkan mana. Inilah urutan **peringkat kartu**.
+Untuk menang di showdown, Anda harus langsung tahu kombinasi mana mengalahkan mana. Inilah urutan **peringkat kartu**. (Kolom Frekuensi menghitung seberapa sering tiap kombinasi menjadi lima kartu terbaik Anda dari tujuh kartu — itulah kenapa high card lebih jarang muncul daripada two pair.)
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -344,7 +348,7 @@ A. Pasang blinds → bagikan dua kartu tertutup → taruhan preflop → buka flo
 
 **Q. Siapa yang duluan di poker?**
 
-A. Tergantung "duluan" yang mana Anda maksud, dan justru itulah yang membuat pertanyaan ini membingungkan. Dalam satu hand ada tiga momen yang sama-sama mengklaim kata itu: yang pertama *memasang* (small blind), yang pertama *bertindak* di preflop (UTG, tepat di kiri big blind), dan yang pertama bertindak setelah flop terbuka (kembali ke small blind). Jadi jawabannya berbalik di tengah hand — UTG membuka ronde preflop, lalu small blind membuka setiap ronde sesudahnya. (Di heads-up urutannya berbalik — lihat pertanyaan berikutnya.)
+A. Tergantung "duluan" yang mana Anda maksud, dan justru itulah yang membuat pertanyaan ini membingungkan. Dalam satu hand ada tiga momen yang sama-sama mengklaim kata itu: yang pertama *memasang* (small blind), yang pertama *bertindak* di preflop (UTG, tepat di kiri big blind), dan yang pertama bertindak setelah flop terbuka (kembali ke small blind). Jadi jawabannya berbalik di tengah hand — UTG membuka ronde preflop, lalu small blind (atau, kalau ia sudah fold, pemain aktif berikutnya di kiri button) membuka setiap ronde sesudahnya. (Di heads-up urutannya berbalik — lihat pertanyaan berikutnya.)
 
 **Q. Siapa yang bertaruh duluan setelah flop?**
 
@@ -352,7 +356,7 @@ A. Pemain aktif pertama di kiri button — di meja penuh itu adalah small blind.
 
 **Q. Siapa yang membuka kartu duluan saat showdown?**
 
-A. Siapa pun yang melakukan aksi agresif terakhir — bet atau raise terakhir di river — wajib membuka duluan. Jika di river semua orang check tanpa ada taruhan sama sekali, pemain aktif pertama di kiri button yang membuka duluan, lalu diikuti yang lain searah jarum jam. Pemain yang tahu dirinya sudah kalah boleh **muck** alih-alih memperlihatkan kartunya — kecuali ada yang all-in di turnamen, di mana semua hand dibuka (TDA 2024 Rule 16).
+A. Siapa pun yang melakukan aksi agresif terakhir — bet atau raise terakhir di river — wajib membuka duluan. Jika di river semua orang check tanpa ada taruhan sama sekali, pemain aktif pertama di kiri button yang membuka duluan, lalu diikuti yang lain searah jarum jam. Pemain yang tahu dirinya sudah kalah biasanya boleh **muck** alih-alih memperlihatkan kartunya. Ada dua pengecualian di turnamen: saat ada yang all-in, semua hand dibuka (TDA 2024 Rule 16); dan pemain yang bet di river lalu di-call wajib membuka kartunya kalau si pemanggil meminta melihatnya (TDA 2024 Rule 18-B).
 
 **Q. Apa bedanya preflop dan flop?**
 
@@ -372,21 +376,21 @@ A. Pot odds adalah perbandingan ukuran pot saat itu dengan jumlah yang harus And
 
 **Q. Kapan sebaiknya saya all-in?**
 
-A. All-in berarti mempertaruhkan semua chip yang Anda punya. Pakai dengan kartu yang sangat kuat (the nuts), atau sebagai bluff untuk membuat lawan fold. Begitu Anda all-in, Anda tidak bisa bertaruh lagi, tapi Anda tetap berhak atas bagian pot yang Anda samai. Saat jumlah chip pemain berbeda, terbentuklah side pot — lihat [aturan all-in dan side pot](/id/blog/holdem-all-in-rules).
+A. All-in berarti mempertaruhkan semua chip yang Anda punya. Pakai dengan kartu yang sangat kuat (the nuts), atau sebagai bluff untuk membuat lawan fold. Begitu Anda all-in, Anda tidak bisa bertaruh lagi, tapi Anda tetap berhak atas bagian pot yang Anda samai. Saat jumlah chip pemain berbeda dan dua pemain atau lebih terus bertaruh melewati all-in Anda, terbentuklah side pot — lihat [aturan all-in dan side pot](/id/blog/holdem-all-in-rules).
 
 **Q. Ada berapa ronde taruhan dalam satu hand?**
 
-A. Empat: preflop, flop, turn, dan river. Blinds adalah taruhan wajib, dan di showdown tidak ada taruhan lagi.
+A. Paling banyak empat: preflop, flop, turn, dan river. Hand yang berakhir lebih awal — semua fold ke satu pemain, atau para pemain all-in tanpa ada lagi lawan untuk bertaruh — punya lebih sedikit. Blinds adalah taruhan wajib, dan di showdown tidak ada taruhan lagi.
 
 **Q. Kenapa dealer membuang satu kartu, dan berapa yang dibuang dalam satu hand?**
 
-A. Tepat sebelum membagikan flop, turn, dan river, dealer menyingkirkan kartu paling atas dari dek dalam keadaan tertutup — inilah **burn card**. Karena dilakukan sekali sebelum setiap street kartu bersama, totalnya ==tiga kartu per hand==. Tujuannya melindungi permainan: kalau kartu teratas ternyata bertanda atau sempat terlihat tanpa sengaja, ada pemain yang jadi tahu kartu apa yang akan keluar berikutnya, jadi kartu itu dikeluarkan dulu dari permainan.
+A. Tepat sebelum membagikan flop, turn, dan river, dealer menyingkirkan kartu paling atas dari dek dalam keadaan tertutup — inilah **burn card**. Karena dilakukan sekali sebelum setiap street kartu bersama, totalnya ==tiga kartu per hand== yang berjalan sampai river. Tujuannya melindungi permainan: kalau kartu teratas ternyata bertanda atau sempat terlihat tanpa sengaja, ada pemain yang jadi tahu kartu apa yang akan keluar berikutnya, jadi kartu itu dikeluarkan dulu dari permainan.
 
 ---
 
 ## 3 Hal yang Harus Anda Ingat
 
-1. ==**Urutannya:**== blinds → preflop → flop (3) → turn (1) → river (1) → showdown, dengan ==empat ronde taruhan==.
+1. ==**Urutannya:**== blinds → preflop → flop (3) → turn (1) → river (1) → showdown, dengan ==paling banyak empat ronde taruhan==.
 2. ==**Bacaannya:**== di setiap ronde, nilai apa yang Anda pegang sekarang sekaligus apa yang masih bisa Anda bentuk — dan perhatikan seluruh board, bukan cuma kartu Anda sendiri.
 3. ==g:**Disiplinnya:**== fold sebagian besar hand di preflop, hormati posisi, dan bertaruh besar hanya saat cerita Anda masuk akal.
 

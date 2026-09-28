@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Texas Hold'em spielen: Der Ablauf einer Hand – von den Blinds bis zum Showdown",
   seoTitle: "Wann bist du dran? – Texas Hold'em Ablauf erklärt",
   desc: "Beim Hold'em nie sicher, wer dran ist? Der komplette Ablauf – Preflop, Flop, Turn, River, Showdown – mit einer echten Hand Schritt für Schritt durchgespielt.",
-  tldr: "Eine Texas-Hold'em-Hand läuft so ab: Blinds setzen → zwei Hole Cards erhalten → Preflop → Flop (3 Karten) → Turn (1 Karte) → River (1 Karte) → Showdown – mit insgesamt vier Setzrunden.",
+  tldr: "Eine Texas-Hold'em-Hand läuft so ab: Blinds setzen → zwei Hole Cards erhalten → Preflop → Flop (3 Karten) → Turn (1 Karte) → River (1 Karte) → Showdown – mit bis zu vier Setzrunden.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "16 Min.",
   emoji: "🎬",
@@ -42,7 +42,7 @@ Die Grundregel ist simpel: Du bildest deine **beste Fünf-Karten-Hand** aus dein
 
 Bevor auch nur eine Karte kommt, richten zwei Dinge den Tisch ein: der **Dealer-Button** und die **Blinds**.
 
-Der **Dealer-Button (kurz „Button“, markiert mit D)** ist eine runde Scheibe, die anzeigt, wer in dieser Hand „am Geben“ ist. Auch wenn ein Croupier die Karten austeilt: Der Button bestimmt die Setzreihenfolge – und er wandert nach jeder Hand einen Platz im Uhrzeigersinn weiter.
+Der **Dealer-Button (kurz „Button“, markiert mit D)** ist eine runde Scheibe, die anzeigt, wer in dieser Hand „am Geben“ ist. Auch wenn ein Croupier die Karten austeilt: Der Button bestimmt die Setzreihenfolge – und er wandert normalerweise nach jeder Hand einen Platz im Uhrzeigersinn weiter (die Dead-Button-Regel ist die Ausnahme).
 
 Die **Blinds** sind Pflichteinsätze, die vor dem Austeilen gesetzt werden. Ohne sie könnte jeder einfach kostenlos checken und folden; ==g:die Blinds legen Geld in die Mitte und geben allen einen Grund, um den Pot zu kämpfen==. (Noch neu für dich? Hier steht genau, [wie Small Blind und Big Blind funktionieren](/de/blog/holdem-blind-meaning).)
 
@@ -54,6 +54,8 @@ Die **Blinds** sind Pflichteinsätze, die vor dem Austeilen gesetzt werden. Ohne
 | Big Blind (BB) | Zweiter Platz links vom Button | 2.000 |
 
 </div>
+
+Mit nur zwei Spielern setzt der Button selbst den Small Blind – genau das Setup der kompletten Beispielhand weiter unten.
 
 Die Blinds sind nicht nur eine Eintrittsgebühr – ==sie sind der Ausgangspunkt von Position und Strategie==.
 
@@ -93,7 +95,7 @@ Jetzt kannst du zum ersten Mal eine echte Fünf-Karten-Hand lesen: deine zwei Ho
 
 ![Infografik der drei Streets im Texas Hold'em – Flop K♥ 7♦ 2♣, Turn 9♠, River Q♥](/images/blog-holdem-card-stages.webp "Die Streets: drei Karten am Flop, dann je eine am Turn und am River")
 
-Der Flop schaltet außerdem eine neue Option frei: den **Check**. Solange noch niemand gesetzt hat, kannst du checken und die Action weitergeben, ohne Chips zu investieren. Setzt aber ein Gegner nach deinem Check, musst du callen, raisen oder folden.
+Ab dem Flop steht der **Check** allen offen (preflop darf nur checken, wessen eigener Blind oder Straddle die aktive Bet ist). Solange noch niemand gesetzt hat, kannst du checken und die Action weitergeben, ohne Chips zu investieren. Setzt aber ein Gegner nach deinem Check, musst du callen, raisen oder folden.
 
 ---
 
@@ -136,7 +138,7 @@ Die Showdown-Regeln:
 - Jeder Spieler bildet seine **beste Fünf-Karten-Hand** aus seinen zwei Hole Cards und den fünf Gemeinschaftskarten.
 - Du musst nicht beide Hole Cards benutzen – du kannst auch nur eine spielen oder sogar nur das Board (null Karten), wenn das deine besten fünf sind.
 - Der Spieler mit der letzten aggressiven Aktion (Bet oder Raise) zeigt zuerst; wurde am River nur durchgecheckt, zeigt zuerst der erste aktive Spieler links vom Button.
-- Ein unterlegener Spieler darf einfach **mucken** (folden, ohne zu zeigen) – außer bei einem All-in im Turnier: Sobald ein Spieler All-in ist und das Setzen beendet ist, wird jede Hand offen hingelegt (TDA-2024-Regel 16 · WSOP Tournament Rule 70).
+- Ein unterlegener Spieler darf in der Regel einfach **mucken** (folden, ohne zu zeigen). Zwei Ausnahmen im Turnier: Sobald ein Spieler All-in ist und das Setzen beendet ist, wird jede Hand offen hingelegt (TDA-2024-Regel 16 · WSOP Tournament Rule 70); und wer am River gesetzt hat und gecallt wurde, muss zeigen, wenn der Caller – der seine Karten noch hält oder schon aufgedeckt hat – die Hand sehen will (TDA-2024-Regel 18-B).
 - Bei gleichwertigen Händen wird der Pot **geteilt** („Chop“) – zu gleichen Teilen.
 
 Wer zuerst zeigen muss, wann du mucken darfst und was es mit der Etikette rund ums Slow-Rolling auf sich hat, steht ausführlich in den [Showdown-Regeln](/de/blog/holdem-showdown-rules).
@@ -161,6 +163,8 @@ Wer zuerst zeigen muss, wann du mucken darfst und was es mit der Etikette rund u
 Die Eselsbrücke: ==**Vor dem Flop schaust du links vom Big Blind – nach dem Flop links vom Button.**== Der Button handelt auf jeder Postflop-Street als Letzter, und genau deshalb ist er der profitabelste Platz am Tisch – siehe [Pokerpositionen: von UTG bis Button](/de/blog/holdem-positions).
 
 ==g:**Heads-up (2 Spieler) ist die Ausnahme:**== Der Button zahlt den *Small* Blind und handelt preflop **zuerst** – auf Flop, Turn und River aber **zuletzt**. Genau diese Reihenfolge gilt auch in der kompletten Beispielhand weiter unten.
+
+Noch eine Besonderheit in Cash Games, die es erlauben: Ein **Live Straddle** verlegt den Preflop-Start links vom Straddler, und der Straddler – nicht der Big Blind – handelt vor dem Flop als Letzter (WSOP Live Action Rule 165). Nach dem Flop gilt die übliche Reihenfolge.
 
 ---
 
@@ -257,7 +261,7 @@ Hier ist jede Aktion, die dir am Tisch zur Verfügung steht – der Teil, den An
 | Bet | Den ersten Einsatz einer Runde machen | Wenn noch niemand gesetzt hat |
 | Raise | Über den aktuellen Einsatz erhöhen | Wenn eine Bet vor dir liegt |
 | Re-Raise (3-Bet) | Über einen Raise erhöhen | Wenn ein Raise vor dir liegt |
-| All-in | Alle eigenen Chips setzen | Jede Street – wenn du an der Reihe bist, als Bet, Call oder Raise |
+| All-in | Alle eigenen Chips setzen | Jede Street – wenn du an der Reihe bist, als Bet, Call oder Raise, je nachdem, was dir offensteht |
 
 </div>
 
@@ -269,7 +273,7 @@ Einen tieferen Entscheidungs-Guide dazu, wann welcher Zug der richtige ist – i
 
 ## Die 10 Pokerhände, die du kennen musst
 
-Um im Showdown zu gewinnen, musst du sofort wissen, welche Hand welche schlägt. Das ist die **Rangfolge der Pokerhände**.
+Um im Showdown zu gewinnen, musst du sofort wissen, welche Hand welche schlägt. Das ist die **Rangfolge der Pokerhände**. (Die Spalte Häufigkeit zählt, wie oft jede Hand deine besten fünf aus sieben Karten ist – deshalb taucht High Card seltener auf als Two Pair.)
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -344,7 +348,7 @@ A. Blinds setzen → zwei Hole Cards erhalten → Preflop-Setzrunde → Flop auf
 
 **Q. Wer ist im Poker als Erster dran?**
 
-A. Es kommt darauf an, welches „zuerst“ du meinst – und genau daran scheitert die Frage. Drei verschiedene Momente beanspruchen das Wort in einer einzigen Hand: zuerst *setzen* (der Small Blind), zuerst *handeln* preflop (UTG, direkt links vom Big Blind) und zuerst handeln, sobald der Flop liegt (wieder der Small Blind). Die Antwort kippt also mitten in der Hand: UTG eröffnet die Preflop-Runde, danach eröffnet der Small Blind jede weitere Runde. (Im Heads-up gilt das nicht – siehe die nächste Frage.)
+A. Es kommt darauf an, welches „zuerst“ du meinst – und genau daran scheitert die Frage. Drei verschiedene Momente beanspruchen das Wort in einer einzigen Hand: zuerst *setzen* (der Small Blind), zuerst *handeln* preflop (UTG, direkt links vom Big Blind) und zuerst handeln, sobald der Flop liegt (wieder der Small Blind). Die Antwort kippt also mitten in der Hand: UTG eröffnet die Preflop-Runde, danach eröffnet der Small Blind (oder, wenn er gefoldet hat, der nächste aktive Spieler links vom Button) jede weitere Runde. (Im Heads-up gilt das nicht – siehe die nächste Frage.)
 
 **Q. Wer setzt nach dem Flop zuerst?**
 
@@ -352,7 +356,7 @@ A. Der erste noch aktive Spieler links vom Button – am vollen Tisch ist das de
 
 **Q. Wer zeigt im Showdown seine Karten zuerst?**
 
-A. Wer die letzte aggressive Aktion gemacht hat – die letzte Bet oder den letzten Raise am River –, muss zuerst zeigen. Wurde der River komplett durchgecheckt, zeigt der erste aktive Spieler links vom Button zuerst, der Rest folgt im Uhrzeigersinn. Wer weiß, dass er geschlagen ist, darf stattdessen mucken – es sei denn, im Turnier ist jemand All-in: Dann wird jede Hand offen hingelegt (TDA-2024-Regel 16).
+A. Wer die letzte aggressive Aktion gemacht hat – die letzte Bet oder den letzten Raise am River –, muss zuerst zeigen. Wurde der River komplett durchgecheckt, zeigt der erste aktive Spieler links vom Button zuerst, der Rest folgt im Uhrzeigersinn. Wer weiß, dass er geschlagen ist, darf in der Regel stattdessen mucken. Zwei Ausnahmen im Turnier: Ist jemand All-in, wird jede Hand offen hingelegt (TDA-2024-Regel 16); und wer am River gesetzt hat und gecallt wurde, muss zeigen, wenn der Caller die Hand sehen will (TDA-2024-Regel 18-B).
 
 **Q. Was ist der Unterschied zwischen Preflop und Flop?**
 
@@ -372,21 +376,21 @@ A. Pot Odds sind das Verhältnis zwischen aktueller Potgröße und dem Betrag, d
 
 **Q. Wann sollte ich All-in gehen?**
 
-A. All-in bedeutet, jeden Chip zu setzen, den du hast. Nutze es mit einer sehr starken Hand (den Nuts) oder als Bluff, um Gegner zum Folden zu bringen. Nach dem All-in kannst du nicht mehr setzen, bleibst aber für den Teil des Pots spielberechtigt, den du gedeckt hast. Bei ungleichen Stacks entstehen dadurch Side Pots – siehe [All-in-Regeln und Side Pots](/de/blog/holdem-all-in-rules).
+A. All-in bedeutet, jeden Chip zu setzen, den du hast. Nutze es mit einer sehr starken Hand (den Nuts) oder als Bluff, um Gegner zum Folden zu bringen. Nach dem All-in kannst du nicht mehr setzen, bleibst aber für den Teil des Pots spielberechtigt, den du gedeckt hast. Bei ungleichen Stacks, wenn zwei oder mehr Spieler über dein All-in hinaus weitersetzen, entstehen dadurch Side Pots – siehe [All-in-Regeln und Side Pots](/de/blog/holdem-all-in-rules).
 
 **Q. Wie viele Setzrunden hat eine Hand?**
 
-A. Vier: Preflop, Flop, Turn und River. Die Blinds sind Pflichteinsätze, und im Showdown wird nicht mehr gesetzt.
+A. Bis zu vier: Preflop, Flop, Turn und River. Eine Hand, die früher endet – alle folden zu einem Spieler, oder Spieler sind All-in und niemand ist mehr da, gegen den man setzen könnte –, hat weniger. Die Blinds sind Pflichteinsätze, und im Showdown wird nicht mehr gesetzt.
 
 **Q. Warum verbrennt der Dealer eine Karte – und wie viele sind es?**
 
-A. Vor dem Flop, vor dem Turn und vor dem River legt der Dealer die oberste Karte des Decks verdeckt beiseite: die **Burn Card**. Das sind **drei pro Hand**, eine vor jeder Street mit Gemeinschaftskarten. Der Sinn ist Schutz: Wäre die oberste Karte markiert oder versehentlich kurz sichtbar gewesen, könnte ein Spieler wissen, was als Nächstes kommt – also fliegt sie vorher aus dem Spiel.
+A. Vor dem Flop, vor dem Turn und vor dem River legt der Dealer die oberste Karte des Decks verdeckt beiseite: die **Burn Card**. Das sind **drei pro Hand**, die bis zum River läuft, eine vor jeder Street mit Gemeinschaftskarten. Der Sinn ist Schutz: Wäre die oberste Karte markiert oder versehentlich kurz sichtbar gewesen, könnte ein Spieler wissen, was als Nächstes kommt – also fliegt sie vorher aus dem Spiel.
 
 ---
 
 ## Die 3 Dinge zum Mitnehmen
 
-1. ==**Die Reihenfolge:**== Blinds → Preflop → Flop (3) → Turn (1) → River (1) → Showdown – mit ==vier Setzrunden==.
+1. ==**Die Reihenfolge:**== Blinds → Preflop → Flop (3) → Turn (1) → River (1) → Showdown – mit ==bis zu vier Setzrunden==.
 2. ==**Das Lesen:**== Beurteile auf jeder Street, was du jetzt hast und was du noch machen kannst – und schau auf das ganze Board, nicht nur auf deine eigene Hand.
 3. ==g:**Die Disziplin:**== Folde preflop die meisten Hände, respektiere die Position und setz nur groß, wenn deine Geschichte Sinn ergibt.
 

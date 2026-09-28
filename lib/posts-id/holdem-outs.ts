@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Sebuah out adalah kartu mana pun yang tersisa di deck yang mengubah tangan Anda menjadi kemungkinan pemenang. Hitung, lalu konversi: kalikan outs dengan 4 di flop atau dengan 2 di turn untuk mendapat persen kasar Anda. Flush draw punya 9 outs ≈ 36% hingga river.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "11 mnt",
   emoji: "🎯",
@@ -28,7 +28,7 @@ Kebiasaan itu disebut menghitung **outs** — [jawaban nyata poker untuk "menghi
 :::stripe
 9 | Outs dalam flush draw
 8 | Outs dalam open-ended straight draw
-×4 / ×2 | Kalikan outs di flop / turn untuk persen Anda
+×4 / ×2 | Kalikan outs di flop (dua kartu masih akan datang) / turn untuk persen kasar Anda
 :::
 
 ---
@@ -174,10 +174,10 @@ Tiga situasi untuk melatih mata Anda:
 :::card
 ♠ | Flush bukan-nut | Memegang 8♠7♠ di K♠9♠2♣, Anda punya 9 "outs" sekop — tapi jika sekop datang dan lawan ternyata mengejar flush yang sama dengan sekop lebih tinggi, Anda membuat flush tapi tetap kalah. Kurangi hitungan outs Anda saat Anda tidak drawing ke nut flush
 🂮 | Board berpasangan | Flush draw di board seperti J♥8♥8♣ terlihat seperti 9 outs bersih, tapi board sudah berpasangan — full house jadi mungkin menunggu, jadi sebagian flush Anda mati sejak awal
-🃁 | Overcard melawan kekuatan | Dua overcard (A-K di Q-8-3) terhitung 6 outs di atas kertas, tapi jika raise besar meneriakkan set atau two pair, memasangkan ace Anda sering tidak cukup baik — hitung 3, mungkin 4, bukan 6
+🃁 | Overcard melawan kekuatan | Dua overcard (A-K di Q-8-3) terhitung 6 outs di atas kertas, tapi jika raise besar meneriakkan set atau two pair, memasangkan ace Anda sering tidak cukup baik — hitung paling banyak 3, bukan 6, dan sama sekali nol begitu Anda yakin itu set atau two pair
 :::
 
-Anda jarang tahu seberapa besar pangkasannya, dan itu tak apa. Langkahnya bersifat arah: saat board atau aksi memberi tahu bahwa suatu out mungkin tak menang, pangkas hitungannya *ke bawah* sebelum Anda mengonversi. Pemain yang menghitung 9 outs di board berpasangan lalu call pot membayar harga penuh untuk draw yang diam-diam bernilai enam. Membaca out mana yang bersih adalah keterampilan tekstur board — bangun dengan [cara membaca board](/id/blog/holdem-reading-the-board).
+Anda jarang tahu seberapa besar pangkasannya, dan itu tak apa. Langkahnya bersifat arah: saat board atau aksi memberi tahu bahwa suatu out mungkin tak menang, pangkas hitungannya *ke bawah* sebelum Anda mengonversi. Pemain yang menghitung 9 outs di board berpasangan lalu call pot membayar harga penuh untuk draw yang diam-diam bernilai lebih rendah dari itu. Membaca out mana yang bersih adalah keterampilan tekstur board — bangun dengan [cara membaca board](/id/blog/holdem-reading-the-board).
 
 ---
 
@@ -194,7 +194,7 @@ A. Outs adalah kartu yang tersisa di deck yang memperbaiki tangan Anda menjadi k
 
 **Q. Apa arti 9 outs di poker?**
 
-A. Artinya sembilan kartu yang tersisa di deck bisa melengkapi tangan Anda — paling sering flush draw (13 kartu satu jenis dikurangi 4 yang bisa Anda lihat). Sembilan outs berarti sekitar 35% untuk hit hingga river dari flop — angka dua-kartu yang mengandaikan tak ada taruhan lagi menghadang Anda — atau 19,1% pada satu kartu turn. Makin banyak outs, makin tinggi peluang hit, dan mengalikan outs dengan 4 di flop (atau 2 di turn) memberi persentase cepatnya.
+A. Artinya sembilan kartu yang tersisa di deck bisa melengkapi tangan Anda — paling sering flush draw (13 kartu satu jenis dikurangi 4 yang bisa Anda lihat). Sembilan outs berarti sekitar 35% untuk hit hingga river dari flop — angka dua-kartu yang mengandaikan tak ada taruhan lagi menghadang Anda — atau 19,1% pada satu kartu turn. Logika ini berlaku untuk jumlah berapa pun: makin banyak outs, makin tinggi peluang hit, dan mengalikan outs dengan 4 di flop (atau 2 di turn) memberi persentase cepat yang bersifat perkiraan (×4 terlalu tinggi di draw besar: 15 outs itu 54%, bukan 60%).
 
 **Q. Bagaimana cara menghitung outs di poker?**
 
@@ -218,7 +218,7 @@ A. Kartu yang melengkapi tangan Anda tapi masih bisa kalah — kartu flush saat 
 
 **Q. Berapa outs untuk flush draw plus straight draw?**
 
-A. 15, bukan 17. Flush draw adalah 9 outs dan open-ended straight adalah 8, tapi dua kartu straight juga jenis Anda dan sudah terhitung dalam flush — jadi Anda kurangi tumpang tindihnya. Lima belas outs adalah favorit untuk hit hingga river (sekitar 54%), tapi hanya kalau Anda akan melihat kedua kartu; kalau taruhan turn masih menanti, yang menentukan harga call Anda adalah angka satu-kartu 32%.
+A. 15, bukan 17. Flush draw adalah 9 outs dan open-ended straight adalah 8, tapi dua kartu straight juga jenis Anda dan sudah terhitung dalam flush — jadi Anda kurangi tumpang tindihnya. Lima belas outs adalah favorit untuk hit hingga river (sekitar 54%), tapi hanya kalau Anda akan melihat kedua kartu; kalau taruhan turn masih menanti, yang menentukan harga call Anda adalah angka satu-kartu 32% — dan hanya outs yang benar-benar menang yang dihitung untuk kedua angka itu.
 
 **Q. Apakah Anda menghitung kartu lawan saat menghitung outs?**
 

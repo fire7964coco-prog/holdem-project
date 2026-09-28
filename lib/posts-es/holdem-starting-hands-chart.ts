@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "De los 169 tipos de mano inicial, solo una pequeña franja superior — cerca del 15–20% de las manos que te reparten — es rentable para un principiante. Los pares grandes (AA–TT) y AK suben desde cualquier asiento; cuanto más tarde actúas, más abres tu rango — desde ~13% en UTG hasta ~43% en el botón (más amplio aún en 6-max). Empieza con una tabla simplificada y añade las tablas preflop GTO cuando el subir-o-foldear ya te salga automático.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🂡",
@@ -138,7 +138,7 @@ El botón es el mejor asiento del póker. ==g:Actúas último en el flop, el tur
 - **Conectores del mismo palo (T9s, 98s, 87s)** — manos baratas y con altas odds implícitas
 - **Broadways más flojos de distinto palo (KTo, QJo)** — solo en posición tardía, nunca temprana
 
-Regla clave: ==estas manos especulativas necesitan posición para ser rentables==. Si un jugador en UTG sube por delante de ti, la mayoría van derechas al muck — pagarías una subida para jugar una mano especulativa contra un rango fuerte, y el flop barato que necesitan ya no existe.
+Regla clave: ==como manos de apertura, estas manos especulativas necesitan posición para ser rentables==. Y si un jugador en UTG sube por delante de ti, la mayoría van derechas al muck — pagarías una subida para jugar una mano especulativa contra un rango fuerte, y el flop barato que necesitan ya no existe.
 
 ---
 
@@ -175,7 +175,7 @@ Una aclaración de alcance: esto va de qué porcentaje de tu *rango* jugar, no d
 
 Yo mantengo los outputs del solver abiertos cuando estudio, y aun así le doy a cada principiante una tabla simplificada primero. Son dos herramientas distintas, y saber cuál usar vale más que cualquiera de las dos tablas por separado.
 
-**Las tablas preflop GTO** salen de los solvers (PioSOLVER, GTO Wizard y compañía). Son teóricamente inexplotables — y también están llenas de frecuencias mixtas: abre esta mano el 25% de las veces, foldéala el 75%, haz 3-bet con esta combinación pero solo con estos palos. **Las tablas para principiantes** — como la de esta página — comprimen todo eso en una acción clara por mano.
+**Las tablas preflop GTO** salen de los solvers (PioSOLVER, GTO Wizard y compañía). Están construidas para acercarse lo más posible a lo inexplotable — y también están llenas de frecuencias mixtas: abre esta mano el 25% de las veces, foldéala el 75%, haz 3-bet con esta combinación pero solo con estos palos. **Las tablas para principiantes** — como la de esta página — comprimen todo eso en una acción clara por mano.
 
 :::compare
 Tablas preflop GTO | Tabla simplificada de principiante
@@ -213,7 +213,7 @@ El ==r:error más caro que cometen los principiantes es igualar subidas con ases
 
 Las tablas solo funcionan si las tienes delante cuando importa. Para partidas caseras y sesiones de estudio, la hicimos entera imprimible:
 
-**[Descarga gratis la tabla de manos iniciales de póker imprimible (PDF)](/downloads/poker-starting-hands-chart.pdf)** — una página: la tabla de apertura 9-max completa más el ajuste 6-max de una línea, en formato chuleta. Imprímela o mantenla abierta en el móvil entre mano y mano.
+**[Descarga gratis la tabla de manos iniciales de póker imprimible (PDF)](/downloads/poker-starting-hands-chart.pdf)** — una página: la tabla de apertura 9-max por posición más el ajuste 6-max de una línea, en formato chuleta. Imprímela o mantenla abierta en el móvil entre mano y mano.
 
 Luego úsala al pie de la letra, en cada mano, durante tus primeras 20+ sesiones:
 
@@ -256,11 +256,11 @@ Tres situaciones de tabla. Decide antes de espiar las respuestas:
 
 **Q. ¿Cuál es la mejor mano inicial del póker?**
 
-A. La pareja de ases (AA) es la mejor mano inicial del póker. En preflop, los ases ganan más o menos el 85% de las veces frente a una mano aleatoria. Sube y resube siempre con ases — el objetivo es agrandar el bote siendo el favorito estadístico.
+A. La pareja de ases (AA) es la mejor mano inicial del póker. En preflop, los ases ganan más o menos el 85% de las veces frente a una mano aleatoria. Como opción por defecto, sube y resube con ases — el objetivo es agrandar el bote siendo el favorito estadístico.
 
 **Q. ¿Cuáles son buenas manos iniciales en el póker?**
 
-A. Las buenas manos iniciales del póker son los pares premium (AA–TT), los ases grandes (AK, AQ) y los broadways fuertes del mismo palo (KQs, AJs) — el núcleo del ~15–20% de las manos repartidas que juega un principiante sólido (estos grupos premium por sí solos son solo cerca del 5% de todas las manos iniciales). Las manos especulativas como los pares bajos y los conectores del mismo palo solo son buenas desde posición tardía.
+A. Las buenas manos iniciales del póker son los pares premium (AA–TT), los ases grandes (AK, AQ) y los broadways fuertes del mismo palo (KQs, AJs) — el núcleo del ~15–20% de las manos repartidas que juega un principiante sólido (estos grupos premium por sí solos son solo cerca del 5% de todas las manos iniciales). Las manos especulativas como los pares bajos y los conectores del mismo palo rinden mejor desde posición tardía.
 
 **Q. ¿Cuántas manos iniciales hay en el póker?**
 
@@ -272,11 +272,11 @@ A. La regla del 7-2 es un juego paralelo de la casa, no una regla oficial del p�
 
 **Q. ¿Cuál es la peor mano inicial del póker?**
 
-A. El 7-2 de distinto palo se considera ampliamente la peor mano inicial del póker. Las cartas están demasiado separadas para hacer una escalera juntas, son demasiado bajas para ganar sin mejorar, y hasta ligar una pareja te deja con una mano débil y mal kicker.
+A. El 7-2 de distinto palo se considera ampliamente la peor mano inicial del póker. Las cartas están demasiado separadas para hacer una escalera juntas, son demasiado bajas para ganar a menudo sin mejorar, y hasta ligar una pareja te deja con una mano débil y mal kicker.
 
 **Q. ¿Deberían los principiantes usar tablas preflop GTO?**
 
-A. No al principio. Las tablas preflop GTO usan frecuencias mixtas diseñadas para ser inexplotables contra rivales fuertes — una exageración en partidas de principiantes, donde una tabla simplificada de subir-o-foldear gana más. Aprende la tabla simple hasta que te salga automática, y luego añade las tablas GTO cuando estudies o subas de nivel online.
+A. No al principio. Las tablas preflop GTO usan frecuencias mixtas diseñadas para ser difíciles de explotar incluso para rivales fuertes — una exageración en partidas de principiantes, donde una tabla simplificada de subir-o-foldear gana más. Aprende la tabla simple hasta que te salga automática, y luego añade las tablas GTO cuando estudies o subas de nivel online.
 
 **Q. ¿Importa de verdad ser del mismo palo?**
 
@@ -296,7 +296,7 @@ A. Cuanto más tarde actúas, más ancho es tu rango. En una mesa de 9-max: UTG 
 
 **Q. ¿Es 7-2 la peor mano inicial?**
 
-A. En general, sí. El 7-2 de distinto palo se considera la peor mano inicial del póker (aunque por equity bruta contra una mano aleatoria el 3-2 de distinto palo es algo más débil, alrededor del 32% frente al 35%): las cartas están demasiado separadas para hacer una escalera juntas y son demasiado bajas para ganar sin mejorar. De ahí sale la "regla del 7-2", un juego paralelo de la casa que premia a quien se atreva a ganar un bote con ella de farol.
+A. En general, sí. El 7-2 de distinto palo se considera la peor mano inicial del póker (aunque por equity bruta contra una mano aleatoria el 3-2 de distinto palo es algo más débil, alrededor del 32% frente al 35%): las cartas están demasiado separadas para hacer una escalera juntas y son demasiado bajas para ganar a menudo sin mejorar. De ahí sale la "regla del 7-2", un juego paralelo de la casa que premia a quien se atreva a ganar un bote con ella de farol.
 
 ---
 

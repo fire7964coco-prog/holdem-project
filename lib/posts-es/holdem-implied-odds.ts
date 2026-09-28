@@ -9,7 +9,7 @@ export const POST: Post = {
   category: "odds",
   date: "2026-07-08",
   updated: "2026-09-28",
-  masterUpdated: "2026-09-26",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "12 min",
   emoji: "💰",
@@ -57,7 +57,7 @@ Te dicen si el call se paga a sí mismo hoy | Te dicen si el call sale rentable 
 Sirven incluso contra un all-in | Valen cero contra un all-in (en mano a mano — no hay más apuestas)
 :::
 
-La regla práctica: **empieza por las pot odds.** Si tu equity ya supera el precio, paga — sin necesidad de cuentos. Si tu proyecto *se queda justo corto* del precio, ahí es cuando las odds implícitas se vuelven el desempate. Y si tu proyecto falla el precio por mucho, las odds implícitas normalmente tampoco pueden salvarlo.
+La regla práctica: **empieza por las pot odds.** Si tu equity ya supera el precio — contando solo las cartas que paga este call —, paga, sin necesidad de cuentos. Si tu proyecto *se queda justo corto* del precio, ahí es cuando las odds implícitas se vuelven el desempate. Y si tu proyecto falla el precio por mucho, las odds implícitas normalmente tampoco pueden salvarlo.
 
 ---
 
@@ -124,9 +124,9 @@ Como fallas ==r:siete de cada ocho veces==, la matemática es brutal a menos que
 
 Aquí va el desglose honesto que la mayoría de los artículos se salta:
 
-- **El break-even puro es 7.5 a 1.** En una fantasía donde ganas el *stack entero* de tu rival cada vez que ligas un set, solo necesitarías unos 7.5× detrás.
+- **El break-even puro es 7.5 a 1.** En una fantasía donde cobras al máximo cada vez que ligas un set, el bote más lo que ganas después solo tiene que sumar unos 7.5× tu call.
 - **La vida real exige 15–20×.** No siempre te llevarás el stack completo, a veces ligarás un set y *aun así perderás* (set sobre set, o completan una mano mayor), y la posición importa. El colchón extra cubre esas fugas.
-- Así que ==b:7.5 a 1 es el suelo teórico; 15–20× es la regla práctica.== No los confundas — usar el 7.5 como tu guía en la mesa real es una fuga lenta.
+- Así que ==b:7.5 a 1 es el suelo teórico del pago; stacks de 15–20× tu call son la regla práctica.== No los confundas — usar el 7.5 como tu guía en la mesa real es una fuga lenta.
 
 La matemática exacta de ligar set en el flop y todos los demás números de "odds de ligar X" están en [drawing odds](/es/blog/holdem-drawing-odds "thumb:/images/holdem-drawing-odds-hero.webp"); la conclusión aquí es que las parejas pequeñas son oro cuando los stacks son profundos y basura cuando son cortos — la pareja no cambió, cambiaron las odds implícitas.
 
@@ -184,7 +184,7 @@ A. Las odds implícitas son las fichas extra que esperas ganar en las calles sig
 
 **Q. ¿Cómo se calculan las odds implícitas?**
 
-A. Usa: extra necesario = (tu call ÷ tu probabilidad de ligar) − (el bote actual + tu call). Pagar $50 en el turn con un proyecto de color que liga el 19.6% de las veces en el river (9 ÷ 46) significa 50 ÷ 0.196 = $255, menos los $200 ya en juego (el bote de $150 más tu call de $50) = unos $55. Si de forma realista puedes ganar $55 más cuando ligues, el call es rentable. Ten en cuenta que siempre es una estimación, ya que las apuestas futuras no están garantizadas.
+A. Usa: extra necesario = (tu call ÷ tu probabilidad de ligar) − (el bote actual + tu call). Pagar $50 en el turn con un proyecto de color que liga el 19.6% de las veces en el river (9 ÷ 46) significa 50 ÷ 0.196 = $255, menos los $200 ya en juego (el bote de $150 más tu call de $50) = unos $55. Si de forma realista puedes ganar $55 más cuando ligues — y el color que haces es la mejor mano —, el call es rentable. Ten en cuenta que siempre es una estimación, ya que las apuestas futuras no están garantizadas.
 
 **Q. ¿Cuál es la diferencia entre pot odds y odds implícitas?**
 
@@ -192,7 +192,7 @@ A. La diferencia entre pot odds y odds implícitas es la certeza: el bote actual
 
 **Q. ¿Cuándo se deben usar las odds implícitas?**
 
-A. Empieza siempre por las pot odds. Si tu equity ya supera el precio inmediato, paga sin más — no hacen falta las odds implícitas. Recurre a ellas cuando tu proyecto no llega a ese precio y los stacks detrás son lo bastante profundos para que ligar te haga ganar más que la x de la fórmula — cuanto más lejos del precio, más grande es esa x. Lo ideal es un proyecto fuerte, escondido o al nut contra un rival que va a pagarte. Si los stacks detrás no cubren esa x — por ejemplo, un rival mano a mano que está all-in o corto de fichas —, las odds implícitas no pueden rescatar el call.
+A. Empieza siempre por las pot odds. Si tu equity ya supera el precio inmediato — medido sobre las cartas que paga este call —, paga sin más — no hacen falta las odds implícitas. Recurre a ellas cuando tu proyecto no llega a ese precio y los stacks detrás son lo bastante profundos para que ligar te haga ganar más que la x de la fórmula — cuanto más lejos del precio, más grande es esa x. Lo ideal es un proyecto fuerte, escondido o al nut contra un rival que va a pagarte. Si los stacks detrás no cubren esa x — por ejemplo, un rival mano a mano que está all-in o corto de fichas —, las odds implícitas no pueden rescatar el call.
 
 **Q. ¿Qué son las reverse implied odds?**
 
@@ -208,7 +208,7 @@ A. No — en mano a mano, cuando tu rival está all-in no hay más rondas de apu
 
 **Q. ¿Cómo funcionan las odds implícitas en el set mining?**
 
-A. Ligas un set con una pareja servida solo el 11.8% de las veces (unos 7.5 a 1 en contra), así que necesitas un pago grande las veces que ligas. El break-even teórico es de unos 7.5× tu call en stacks, pero la guía práctica es 15–20× — el colchón extra cubre las veces que fallas, no obtienes acción o pierdes con un set.
+A. Ligas un set con una pareja servida solo el 11.8% de las veces (unos 7.5 a 1 en contra), así que necesitas un pago grande las veces que ligas. El break-even teórico es un pago total (el bote más lo que ganas después) de unos 7.5× tu call, pero la guía práctica son stacks de 15–20× tu call — el colchón extra cubre las veces que fallas, no obtienes acción o pierdes con un set.
 
 **Q. ¿Tienes odds implícitas con un proyecto de color?**
 

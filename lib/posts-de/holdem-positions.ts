@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Poker Positionen: Jeder Sitzname & Chart",
   seoTitle: "Position Poker erklärt – jeder Sitzname & Chart",
   desc: "Die Namen wandern mit dem Button, nicht mit den Stühlen. Jede Poker-Position – UTG, Hijack, Cutoff, Button – plus Sitznummern, 6-Max-Map und wer zuerst handelt.",
-  tldr: "Poker-Positionen sind Sitznamen, gemessen vom Dealer-Button – UTG, Lojack, Hijack, Cutoff, Button und die Blinds – und sie wandern normalerweise jede Hand einen Sitz im Uhrzeigersinn. Preflop handelt UTG zuerst und der Big Blind zuletzt; postflop handelt der Small Blind zuerst und der Button zuletzt. Physische Sitznummern bewegen sich nie; Positionen schon.",
+  tldr: "Poker-Positionen sind Sitznamen, gemessen vom Dealer-Button – UTG, Lojack, Hijack, Cutoff, Button und die Blinds – und sie wandern normalerweise jede Hand einen Sitz im Uhrzeigersinn. Preflop handelt UTG zuerst und der Big Blind zuletzt; postflop handelt der Small Blind zuerst und der Button zuletzt (heads-up ist der Button der Small Blind: preflop zuerst dran, postflop zuletzt). Physische Sitznummern bewegen sich nie; Positionen schon.",
   category: "strategy",
   date: "2026-06-13",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "12 Min.",
   emoji: "🎯",
@@ -34,7 +34,7 @@ Dieselbe Hand. Völlig anderes Ergebnis. Das Einzige, was sich änderte, war mei
 ---
 
 > **Kurze Antwort**
-> Poker-Positionen sind die ==benannten Sitze, gemessen vom Dealer-Button== – UTG, Lojack, Hijack, Cutoff, Button, Small Blind, Big Blind – und sie ==wandern normalerweise jede Hand einen Sitz im Uhrzeigersinn==, wenn der Button weiterrückt. Preflop handelt UTG zuerst und der Big Blind zuletzt. Postflop handelt der Small Blind zuerst und der Button zuletzt.
+> Poker-Positionen sind die ==benannten Sitze, gemessen vom Dealer-Button== – UTG, Lojack, Hijack, Cutoff, Button, Small Blind, Big Blind – und sie ==wandern normalerweise jede Hand einen Sitz im Uhrzeigersinn==, wenn der Button weiterrückt. Preflop handelt UTG zuerst und der Big Blind zuletzt. Postflop handelt der Small Blind zuerst und der Button zuletzt. (Heads-up ist der Button der Small Blind: preflop zuerst dran, postflop zuletzt.)
 
 ---
 
@@ -60,7 +60,7 @@ Hier ist der komplette 9-Max-Positionen-Chart – jeder Sitzname, seine Abkürzu
 
 Beachte den Umschwung: ==die Blinds handeln preflop zuletzt, aber postflop zuerst==, während der Button auf jeder Postflop-Street zuletzt handelt. Diese Reihenfolge – nicht die Karten – ist es, was manche Sitze strukturell besser macht als andere.
 
-> **Live-Tisch-Hinweis:** Der Button ist eine physische Scheibe, die jede Hand einen Sitz im Uhrzeigersinn weiterrückt. „UTG“ ist derjenige, der in dem Moment drei Sitze links vom Button sitzt – kein fester Stuhl.
+> **Live-Tisch-Hinweis:** Der Button ist eine physische Scheibe, die normalerweise jede Hand einen Sitz im Uhrzeigersinn weiterrückt. „UTG“ ist derjenige, der in dem Moment drei Sitze links vom Button sitzt – kein fester Stuhl.
 
 ---
 
@@ -127,7 +127,7 @@ Die Namen haben keinen dokumentierten offiziellen Ursprung – Poker-Slang hat d
 - **Hijack:** Cutoff und Button sind die klassischen Blind-Steal-Sitze. Wenn der Spieler einen Sitz früher zuerst raist, ==**„hijackt“ er den Steal**==, den die späten Sitze machen wollten – also griff der Sitz selbst den Namen auf.
 - **Lojack:** kam später, als ==spielerische Anspielung auf „Hijack“== – der Sitz eine Stufe „tiefer“ in der Rangordnung. Die meisten Erzählungen hören darin auch ein Echo der Anti-Diebstahl-Marke LoJack: ein Hijack, eine Stufe darunter.
 
-Behandle beide als Tischfolklore statt als Etymologie. Was keine Folklore ist: Hijack und Lojack sind echte, gängige Namen, die du in jedem modernen Range-Chart und auf jeder Trainingsseite siehst, weshalb es sich lohnt, sie im Schlaf zu kennen.
+Behandle beide als Tischfolklore statt als Etymologie. Was keine Folklore ist: Hijack und Lojack sind echte, gängige Namen, die du in den meisten modernen Range-Charts und auf den meisten Trainingsseiten siehst, weshalb es sich lohnt, sie im Schlaf zu kennen.
 
 ---
 

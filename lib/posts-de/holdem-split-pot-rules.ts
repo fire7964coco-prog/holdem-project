@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ja – Pokerhände können unentschieden sein. Ein Pot wird geteilt (ein Chop), wenn zwei oder mehr Spieler im Showdown die identische beste Fünf-Karten-Hand zeigen. Die Farbe entscheidet nie, und ein übrig gebliebener Odd Chip geht an den ersten am Chop beteiligten Spieler links vom Dealer-Button.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "12 Min.",
   emoji: "🃏",
@@ -89,7 +89,7 @@ Das ist meine 8-8-8-A-K-Hand: meine J♠ 10♥ und seine 5♣ 2♦ spielten beid
 
 > **Der Check:** Schlägt *deine* beste Fünf – mit mindestens einer Hole Card – die eigenen Fünf des Boards? Wenn ja, spielst du deine Hand. Wenn nicht, spielt das Board und du choppst wahrscheinlich. Die vollständige Methode, ein Board so zu scannen, steht in [wie du das Board liest und deine besten 5 findest](/de/blog/holdem-reading-the-board).
 
-**Und das Wichtigste am Tisch: Deine Hand gewinnt nur, wenn du sie aufdeckst.** Eine gemuckte Hand ist tot, auch wenn sie den Pot geteilt hätte – auch wenn du nur das Board spielst, musst du deine Hole Cards offen hinlegen, sonst verlierst du deinen Anteil am Pot (WSOP-Cashgame-Regeln, Rule 172; die WSOP-Turnierregeln wiederholen es in Rule 75). Wer zuerst zeigen muss und wie der Ablauf genau läuft, steht in den [Showdown-Regeln](/de/blog/holdem-showdown-rules).
+**Und das Wichtigste am Tisch: Deine Hand gewinnt nur, wenn du sie aufdeckst.** Eine gemuckte Hand ist normalerweise tot, auch wenn sie den Pot geteilt hätte (zurückgeholt werden kann nur eine Hand, die noch eindeutig identifizierbar ist, und nur nach Ermessen des Floors; WSOP-Turnierregel 109) – auch wenn du nur das Board spielst, musst du deine Hole Cards offen hinlegen, sonst verlierst du deinen Anteil am Pot (WSOP-Cashgame-Regeln, Rule 172; die WSOP-Turnierregeln wiederholen es in Rule 75). Wer zuerst zeigen muss und wie der Ablauf genau läuft, steht in den [Showdown-Regeln](/de/blog/holdem-showdown-rules).
 
 :::tip[Wenn das Board spielt und jemand am River bettet: **automatisch zu folden ist hier falsch.** Die Chips im Pot gehören dir nicht mehr – ein Call, der sicher zum Chop führt, holt dir trotzdem deinen Anteil am bisherigen Pot zurück (heads-up die Hälfte). Kann das Board dagegen geschlagen werden, rechne mit der Frequenz: Heads-up lohnt der Call bei einer Pot-Size-Bet, wenn dein Gegner in etwa 2 von 3 Fällen ebenfalls nur das Board spielt, bei einer halben Pot-Bet reicht rund die Hälfte (sind noch drei oder mehr Spieler dabei, schrumpft dein Anteil am Chop und die Hürde steigt). Das ist eine hohe Hürde für einen Call – und eine niedrige fürs Folden: Hat dein Gegner bei einer Pot-Size-Bet öfter als in **einem Drittel** der Fälle eine echte Hand, ist Folden richtig, und auf einem River, auf dem das Board noch geschlagen werden kann, ist genau das der Normalfall.]:::
 
@@ -105,7 +105,7 @@ Das sind die Irrtümer hinter den meisten „Moment, warum ist das ein Split?!�
 ==r:Keine Farbe schlägt eine andere – Pik ist nicht mehr wert als Herz.== Zwei identische Straßen in verschiedenen Farben werden geteilt, und dasselbe gilt für jede andere Hand mit denselben fünf Rängen. (Bei zwei Flushes stellt sich die Frage übrigens nie: Im Hold'em teilen sich alle dasselbe Board, also ==g:haben zwei Flushes immer dieselbe Farbe==.) Texas Hold'em hat keine Rangfolge der Farben – ==identische Ränge werden geteilt, Punkt==. (Das bringt Spieler durcheinander, die von Spielen kommen, die Farben *doch* ranken.)
 
 ### ❌ „Meine Hole Cards sind höher, also gewinne ich“
-Board 9♠ 8♦ 7♣ 6♥ 5♠ – eine fertige Straße. Du hältst A♠ K♦; dein Gegner hält 2♣ 3♥. ==r:**Split.**== Ihr beide spielt die 9-8-7-6-5 des Boards, weil ==r:deine großen Hole Cards nie in die besten Fünf gelangen==. Eine hohe Hole Card zählt nur, wenn sie tatsächlich als Kicker spielt – [was ein Kicker ist und wann er spielt](/de/blog/holdem-kicker) zieht diese Linie präzise.
+Board 9♠ 8♦ 7♣ 6♥ 5♠ – eine fertige Straße. Du hältst A♠ K♦; dein Gegner hält 2♣ 3♥. ==r:**Split.**== Ihr beide spielt die 9-8-7-6-5 des Boards, weil ==r:deine großen Hole Cards nie in die besten Fünf gelangen==. Eine hohe Hole Card zählt nur, wenn sie tatsächlich spielt – als Teil der Hand selbst oder als Kicker – [was ein Kicker ist und wann er spielt](/de/blog/holdem-kicker) zieht diese Linie präzise.
 
 ### ❌ „Ich habe beide Karten benutzt und sie nur eine“
 ==r:Wie viele Hole Cards du benutzt, ist irrelevant.== Das Einzige, was zählt, sind die stärksten fünf von sieben. ==g:Wenn beide Spieler auf denselben besten Fünf landen, ist es ein Chop, egal wie du dorthin gekommen bist.==
@@ -189,7 +189,7 @@ A. Ja. Wenn drei oder mehr Spieler alle die identische beste Fünf-Karten-Hand h
 
 **Q. Wie werden Split Pots gehandhabt, wenn jemand All-in ist?**
 
-A. Der Pot bricht in einen Hauptpot und Nebenpots auf; jeder wird separat vergeben oder gechoppt, basierend auf der besten Hand unter den für diesen bestimmten Pot berechtigten Spielern.
+A. Sind Spieler für unterschiedliche Beträge All-in und setzen andere weiter, bricht der Pot in einen Hauptpot und einen oder mehrere Nebenpots auf; jeder wird separat vergeben oder gechoppt, basierend auf der besten Hand unter den für diesen bestimmten Pot berechtigten Spielern.
 
 **Q. Wie berechnet man einen Nebenpot?**
 

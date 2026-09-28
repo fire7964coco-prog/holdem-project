@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Setiap keputusan Texas Hold'em yang menang menyusut menjadi lima pertanyaan berulang: di mana saya duduk (position), apakah tangan ini layak dimainkan, apakah saya raise atau fold alih-alih open-limp, apakah saya terus bertaruh di flop, dan kapan saya melepasnya? Pemain tight-aggressive yang menjawab lima ini dengan baik akan fold ~80% tangan preflop, memainkannya secara agresif saat main, dan mengalahkan hampir setiap permainan santai — tanpa perlu daftar tips hafalan.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-27",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "14 mnt",
   emoji: "♠️",
@@ -127,7 +127,7 @@ Agresi memenangkan pot. **Disiplin menjaga stack.** Keputusan yang memisahkan pe
 
 Ini satu contoh konkret dari tangan yang saya mainkan. Saya raise ==A♣K♣== dan mendapat satu caller. Flop keluar ==2♥ 7♦ 9♠== — meleset total. Saya punya ace-high, tanpa pair, tanpa draw. Saya melepas c-bet (Keputusan 4, dalam position, board kering), dan lawan saya check-**raise**. Pada titik itu matematikanya sederhana: saya punya high card terbaik yang mungkin dan tak ada yang lain, dan sebuah check-raise di board itu hampir tak pernah bluff di stake rendah. Jadi saya fold ace-high dan kalah minimum. Dua tahun sebelumnya saya akan "sekadar call untuk melihat" — dan membayar set nines setiap kali.
 
-Aturan umumnya: **[ketika kisah yang diceritakan lawan mengalahkan tangan yang sebenarnya Anda pegang](/id/blog/holdem-when-to-fold "thumb:/images/holdem-when-to-fold-hero.webp"), dan Anda tak punya odds untuk draw out, lepaskan.** Fold tangan yang baik-tapi-kalah terasa seperti kalah. Itu justru kebiasaan tunggal paling menguntungkan dalam permainan. Ketika Anda *memang* punya draw, keputusan fold-atau-call bergantung pada [pot odds](/id/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") — harga yang Anda dapat versus peluang Anda mengenai.
+Aturan umumnya: **[ketika kisah yang diceritakan lawan mengalahkan tangan yang sebenarnya Anda pegang](/id/blog/holdem-when-to-fold "thumb:/images/holdem-when-to-fold-hero.webp"), dan Anda tak punya odds untuk draw out, lepaskan.** Fold tangan yang baik-tapi-kalah terasa seperti kalah. Itu justru kebiasaan tunggal paling menguntungkan dalam permainan. Ketika Anda *memang* punya draw, keputusan fold-atau-call bergantung pada [pot odds](/id/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") — harga yang Anda dapat versus peluang Anda mengenai tangan yang menang.
 
 ---
 
@@ -135,7 +135,7 @@ Aturan umumnya: **[ketika kisah yang diceritakan lawan mengalahkan tangan yang s
 
 Anda tak perlu menjadi matematikawan, tapi dua angka mendasari separuh keputusan Anda.
 
-**Pot odds** memberitahu Anda apakah sebuah call menguntungkan: bandingkan harga call dengan ukuran pot, lalu dengan peluang Anda mengenai. Jika pot memberi Anda 4:1 dan draw Anda mengenai sekitar 1 dari 5, call kira-kira impas; lebih baik dari itu, ia profit. Inilah mesin di balik setiap spot "haruskah saya mengejar draw ini?" — dan [panduan pot odds](/id/blog/holdem-pot-odds) mengubahnya menjadi pembacaan tabel 10 detik.
+**Pot odds** memberitahu Anda apakah sebuah call menguntungkan: bandingkan harga call dengan ukuran pot, lalu dengan peluang Anda mengenai kartu yang menang. Jika pot memberi Anda 4:1 dan draw Anda jadi dan menang sekitar 1 dari 5, call kira-kira impas; lebih baik dari itu, ia profit. Inilah mesin di balik setiap spot "haruskah saya mengejar draw ini?" — dan [panduan pot odds](/id/blog/holdem-pot-odds) mengubahnya menjadi pembacaan tabel 10 detik.
 
 **Odds set-mining** menjelaskan kenapa small pair itu spekulatif. Call sebuah raise dengan pocket fives berharap flop set — three-of-a-kind — dan Anda hanya terhubung sekitar **11,8% dari waktu, kira-kira 1 dari 8,5.** Ketika berhasil, hasilnya indah: Anda memegang ==5♠5♦==, flop datang ==5♣ K♠ 2♦==, dan set tersembunyi Anda menumpuk overpair. Tapi karena Anda meleset ~88% flop, set-mining hanya menguntungkan saat effective stack cukup dalam untuk membayari Anda ketika mengenai — patokan kasar adalah **setidaknya ~15–20× ukuran call.** Stack dangkal? Call spekulatif itu menjadi kebocoran. [Tabel odds dan probabilitas](/id/blog/holdem-probability) lengkap punya setiap angka yang akan pernah Anda butuhkan.
 
@@ -182,7 +182,7 @@ TAG bekerja karena ia menyerang dua kebocoran pemula terbesar sekaligus — berm
 
 **Q. Apa strategi terbaik untuk Texas Hold'em?**
 
-A. Mainkan gaya tight-aggressive yang dibangun di sekitar lima keputusan berulang: pilih tangan berdasarkan position Anda, fold sebagian besar dari apa yang dibagikan (sekitar 80% preflop), masuk ke pot dengan raise alih-alih limp, continuation-bet flop saat Anda punya inisiatif, dan buat fold yang disiplin saat Anda kalah. Kombinasi itu mengalahkan hampir setiap permainan santai tanpa teori lanjutan apa pun.
+A. Mainkan gaya tight-aggressive yang dibangun di sekitar lima keputusan berulang: pilih tangan berdasarkan position Anda, fold sebagian besar dari apa yang dibagikan (sekitar 80% preflop), masuk ke pot dengan raise alih-alih limp, continuation-bet flop saat Anda punya inisiatif dan board serta lawan memungkinkannya, dan buat fold yang disiplin saat Anda kalah. Kombinasi itu mengalahkan hampir setiap permainan santai tanpa teori lanjutan apa pun.
 
 **Q. Apa strategi poker terbaik untuk pemula?**
 
@@ -202,7 +202,7 @@ A. Bet saat Anda punya tangan yang layak untuk membangun pot, atau spot bluff ba
 
 **Q. Kapan Anda harus bluff di poker?**
 
-A. Bluff saat kisahnya meyakinkan dan lawan Anda benar-benar bisa fold — bukan sekadar karena Anda meleset. Bluff terbaik datang dengan cadangan: sebuah draw (semi-bluff) yang masih bisa menang jika di-call, dalam position, melawan satu lawan, di board yang menguntungkan range Anda. Bluff ke banyak caller atau pemain yang tak pernah fold sama saja dengan membakar uang.
+A. Bluff saat kisahnya meyakinkan dan lawan Anda benar-benar bisa fold — bukan sekadar karena Anda meleset. Bluff terbaik datang dengan cadangan: sebuah draw (semi-bluff) yang masih bisa menang jika di-call, dalam position, melawan satu lawan, di board yang menguntungkan range Anda. Bluff murni ke banyak caller atau pemain yang tak pernah fold sama saja dengan membakar uang.
 
 **Q. Kapan Anda harus 3-bet?**
 
@@ -230,7 +230,7 @@ A. Dua-duanya — tapi skill yang menang seiring waktu. Satu hand mana pun sarat
 
 **Q. Apa itu GTO poker?**
 
-A. GTO (Game Theory Optimal) adalah strategi seimbang secara matematis yang tak bisa dieksploitasi — Anda mencampur bluff dan value bet dalam rasio yang tak menyisakan counter menguntungkan bagi lawan. Ia ideal teoretis yang dihitung solver, tapi di stake rendah Anda menghasilkan lebih banyak dengan poker *eksploitatif*: menyimpang dari GTO untuk menghukum kebocoran spesifik (pemain yang terlalu sering fold atau terlalu banyak call). Mulailah dengan tight-aggressive, belajarlah mengeksploitasi, dan perlakukan GTO sebagai titik acuan — bukan target hari pertama.
+A. GTO (Game Theory Optimal) adalah strategi seimbang secara matematis yang, dalam heads-up, tak bisa dieksploitasi — Anda mencampur bluff dan value bet dalam rasio yang tak menyisakan counter menguntungkan bagi lawan. Ia ideal teoretis yang dihitung solver, tapi di stake rendah Anda menghasilkan lebih banyak dengan poker *eksploitatif*: menyimpang dari GTO untuk menghukum kebocoran spesifik (pemain yang terlalu sering fold atau terlalu banyak call). Mulailah dengan tight-aggressive, belajarlah mengeksploitasi, dan perlakukan GTO sebagai titik acuan — bukan target hari pertama.
 
 **Q. Bagaimana cara menjadi lebih jago main poker?**
 

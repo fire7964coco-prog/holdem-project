@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ein Kicker ist die höchste Beikarte, die nicht zu deiner eigentlichen Hand gehört – er bricht den Gleichstand, wenn zwei Spieler denselben Rang teilen. High Card nutzt 4 Kicker, ein Paar 3, Zwei Paare 1, Drilling 2; Straße, Flush, Full House und Straight Flush haben keinen. Deshalb schlägt AK das AQ, wenn das Board ein Ass pairt.",
   category: "hand-rankings",
   date: "2026-07-08",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "🃏",
@@ -119,7 +119,7 @@ Das Board ist ==b:10♠ J♦ Q♣ K♥ A♠== – eine fertige Zehn-bis-Ass-Stra
 - Du hältst ==b:2♣ 3♦==. Deine besten fünf sind die Board-Straße; die 2 und die 3 bringen nichts.
 - Dein Gegner hält ==b:4♥ 5♦==. Dieselbe Geschichte – die Board-Straße ist auch seine besten fünf.
 
-Keiner von euch kann höher als bis zum Ass gehen, also „spielt ihr beide das Board“ und ==g:teilt den Pot== – aber nur, wenn ihr eure Hole Cards aufdeckt; wer sie muckt, bekommt nichts, auch hier nicht (TDA-2024-Regel 19). Eine Straße hat keinen Kicker, also sind diese Hole Cards totes Gewicht. Wenn du hörst „das Board spielt“, ist genau das gemeint – und es ist der eine Fall, in dem eine stark aussehende Hole Card exakt nichts wert ist. (Mehr zum Erkennen solcher Runouts in [das Board lesen](/de/blog/holdem-reading-the-board).)
+Keiner von euch kann höher als bis zum Ass gehen, also „spielt ihr beide das Board“ und ==g:teilt den Pot== – aber nur, wenn ihr eure Hole Cards aufdeckt; wer sie muckt, bekommt normalerweise nichts, auch hier nicht (TDA-2024-Regel 19). Eine Straße hat keinen Kicker, also sind diese Hole Cards totes Gewicht. Wenn du hörst „das Board spielt“, ist genau das gemeint – ein Fall, in dem selbst eine stark aussehende Hole Card exakt nichts wert ist. (Mehr zum Erkennen solcher Runouts in [das Board lesen](/de/blog/holdem-reading-the-board).)
 
 ---
 
@@ -195,7 +195,7 @@ A. Es kommt auf die Hand an: High Card nutzt vier Kicker (alle fünf Karten werd
 
 **Q. Was ist ein guter Kicker beim Poker?**
 
-A. Ein hoher – ein Ass oder König als Kicker ist stark, während ein niedriger Kicker wie eine Neun dich „dominiert“ zurücklässt. Deshalb sind AK und AQ weit besser als A9 oder A5: Wenn alle ihr Ass pairen, gewinnt der größte Kicker den Pot.
+A. Ein hoher – ein Ass oder König als Kicker ist stark, während ein niedriger Kicker wie eine Neun dich „dominiert“ zurücklässt. Deshalb sind AK und AQ weit besser als A9 oder A5: Wenn zwei Spieler ihr Ass pairen und nichts Besseres machen, gewinnt der größte Kicker den Pot.
 
 **Q. Was bedeutet „das Board spielen“?**
 

@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Cara Main Poker Texas Hold'em untuk Pemula — Aturan, Chip, Peringkat Kartu, dan Strategi Pertama",
   seoTitle: "Cara Main Poker Texas Hold'em — Aturan, Chip & Cheat Sheet",
   desc: "Belum pernah main? Pelajari cara main poker Texas Hold'em langkah demi langkah — blind, chip, peringkat kartu, plus cheat sheet siap cetak untuk pemula.",
-  tldr: "Di Texas Hold'em, setiap pemain menerima 2 hole cards, ada 5 kartu bersama di tengah meja, dan tangan poker 5 kartu terbaik menang setelah empat ronde taruhan.",
+  tldr: "Di Texas Hold'em, setiap pemain menerima 2 hole cards dan ada 5 kartu bersama di tengah meja. Ada paling banyak empat ronde taruhan, dan tangan poker 5 kartu terbaik menang di showdown — kecuali semua pemain lain fold lebih dulu.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "14 menit",
   emoji: "♠️",
@@ -47,7 +47,7 @@ Semua isi panduan ini lahir dari pengalaman langsung menjalankan permainannya �
 
 Fakta kunci:
 - Anda boleh memakai kedua hole cards, satu saja, atau bahkan tidak sama sekali — mana pun yang membentuk tangan terbaik
-- Tombol dealer berputar setiap hand, jadi blind dan urutan aksi bergeser tiap ronde
+- Tombol dealer normalnya bergeser satu kursi setelah setiap hand, jadi blind dan urutan aksi ikut bergeser bersamanya
 - Anda menang tanpa showdown begitu semua pemain lain fold — kapan pun itu terjadi
 
 ---
@@ -56,7 +56,7 @@ Fakta kunci:
 
 Aturan dasar Texas Hold'em itu sederhana begitu Anda melihat urutan jalannya di meja.
 
-Setiap hand dimulai dengan tombol dealer. Dua pemain di kiri tombol memasang taruhan wajib yang disebut **small blind** dan **big blind** — kalau ini terasa membingungkan, baca [apa itu blind dan cara kerja small blind dan big blind](/id/blog/holdem-blind-meaning). Setelah itu, setiap pemain menerima dua kartu tertutup. Inilah hole cards Anda.
+Setiap hand dimulai dengan tombol dealer. Dua pemain di kiri tombol memasang taruhan wajib yang disebut **small blind** dan **big blind** (kalau hanya ada dua pemain, tombol itu sendiri yang memasang small blind) — kalau ini terasa membingungkan, baca [apa itu blind dan cara kerja small blind dan big blind](/id/blog/holdem-blind-meaning). Setelah itu, setiap pemain menerima dua kartu tertutup. Inilah hole cards Anda.
 
 Berikutnya, dealer membuka lima kartu bersama di tengah meja:
 
@@ -88,7 +88,7 @@ Kalau peringkat kartu poker masih terasa asing, buka dulu [peringkat kartu Texas
 
 ## Cara Main Poker Texas Hold'em — Ringkasan Alur untuk Pemula
 
-Cara main poker Texas Hold'em pada dasarnya begini: setiap pemain menerima 2 hole cards, dua pemain memasang blind lebih dulu, lalu 5 kartu bersama dibuka bertahap (3, lalu 1, lalu 1) dengan satu ronde taruhan setelah tiap tahap — dan kombinasi 5 kartu terbaik menang di showdown.
+Cara main poker Texas Hold'em pada dasarnya begini: setiap pemain menerima 2 hole cards, dua pemain memasang blind lebih dulu, lalu 5 kartu bersama dibuka bertahap (3, lalu 1, lalu 1) dengan satu ronde taruhan setelah tiap tahap (selama masih ada pemain yang bisa bertaruh) — dan kombinasi 5 kartu terbaik menang di showdown, kecuali semua pemain lain fold lebih dulu.
 
 Artikel ini memberi Anda **versi pemula dari alur permainan** supaya Anda bisa duduk di meja tanpa panik. Kalau Anda mau panduan lebih dalam street demi street dengan satu hand lengkap, urutan taruhan, dan contoh, lanjutkan ke [urutan main Texas Hold'em](/id/blog/holdem-game-order "thumb:/images/blog-holdem-game-flow.webp").
 
@@ -101,7 +101,7 @@ Artikel ini memberi Anda **versi pemula dari alur permainan** supaya Anda bisa d
 | 5 | Flop, turn, river | Kartu bersama keluar 3, lalu 1, lalu 1 |
 | 6 | Showdown | Pemain tersisa membandingkan tangan 5 kartu terbaik |
 
-Untuk sesi pertama Anda, ide kuncinya sederhana: ==**setiap kali street baru muncul, ada satu ronde taruhan lagi.**==
+Untuk sesi pertama Anda, ide kuncinya sederhana: ==**setiap kali street baru muncul, ada satu ronde taruhan lagi**== — kecuali ada pemain yang all-in dan tak ada lagi lawan untuk bertaruh; kalau begitu, sisa kartunya langsung dibagikan saja.
 
 ![Infografis tampak atas meja Texas Hold'em sebelum flop — tiap pemain memegang dua kartu tertutup dan board masih kosong](/images/rules-step2-preflop.webp "Cara main Texas Hold'em langkah demi langkah — aksi preflop setelah blind dipasang")
 
@@ -117,7 +117,7 @@ Texas Hold'em bisa dimainkan **2 sampai 10 pemain** di satu meja. Anda tidak per
 |--------:|------------------|----------------|
 | 2 | Heads-up | Cepat dan agresif; posisi blind dibalik (lihat di bawah) |
 | 3–6 | Short-handed (6-max) | Paling umum di online; lebih banyak tangan bisa dimainkan |
-| 7–10 | Full ring (9-max) | Permainan klasik rumahan/kasino; main lebih ketat, lebih sering fold |
+| 7–10 | Full ring (9-max atau 10-max) | Permainan klasik rumahan/kasino; main lebih ketat, lebih sering fold |
 
 Untuk home game pertama, **4 sampai 6 pemain** adalah titik ideal — cukup ramai untuk belajar, tapi cukup sedikit sehingga tiap tangan berjalan cepat.
 
@@ -279,7 +279,7 @@ Kartu awal yang bagus untuk pemula:
 
 | Tingkat | Tangan | Kapan dimainkan |
 |------|-------|--------------|
-| 🟥 **Premium — selalu raise** | AA, KK, QQ, JJ, AKs, AKo | Semua posisi, semua ukuran stack |
+| 🟥 **Premium — selalu raise** | AA, KK, QQ, JJ, AKs, AKo | Semua posisi, semua ukuran stack — raise saat membuka pot, re-raise di atas satu raise |
 | 🟧 **Kuat — biasanya raise** | TT, 99, AQs, AQo, AJs, KQs | Mayoritas posisi; lebih ketat dari UTG |
 | 🟦 **Bisa dimainkan — posisi menentukan** | 88, 77, ATs, AJo, KJs, QJs, JTs | Utamakan posisi akhir (CO, BTN) |
 | ⬜ **Fold secara default** | Semua tangan lain selama masih pemula | Terutama dari posisi awal |
@@ -424,11 +424,11 @@ A. Versi paling sederhana: setiap pemain mendapat 2 kartu pribadi. Lima kartu be
 
 **Q. Aturan Texas Hold'em untuk pemula total — apa arti blind?**
 
-A. Dua pemain di kiri tombol dealer wajib memasang taruhan sebelum kartu dibagikan. Pemain pertama memasang small blind, pemain kedua memasang big blind (biasanya dua kali lipatnya). Taruhan ini menjamin selalu ada uang di pot yang diperebutkan. Pemain lain minimal harus menyamai big blind untuk tetap ikut di hand itu (atau all-in dengan jumlah lebih kecil, kalau itu seluruh chip yang dimilikinya).
+A. Dua pemain di kiri tombol dealer wajib memasang taruhan sebelum kartu dibagikan (kalau hanya ada dua pemain, tombol sendiri yang memasang small blind). Pemain pertama memasang small blind, pemain kedua memasang big blind (biasanya dua kali lipatnya). Taruhan ini menjamin selalu ada uang di pot yang diperebutkan. Pemain lain minimal harus menyamai big blind untuk tetap ikut di hand itu (atau all-in dengan jumlah lebih kecil, kalau itu seluruh chip yang dimilikinya).
 
 **Q. Apa versi cepat aturan Texas Hold'em?**
 
-A. Pasang blind → bagikan 2 hole cards → taruhan preflop → buka 3 kartu bersama (flop) + taruhan → buka 1 kartu (turn) + taruhan → buka 1 kartu (river) + taruhan → tangan terbaik menang. Total: empat ronde taruhan, lima kartu bersama, satu pemenang — atau pot dibagi, kalau lima kartu terbaiknya persis sama.
+A. Pasang blind → bagikan 2 hole cards → taruhan preflop → buka 3 kartu bersama (flop) + taruhan → buka 1 kartu (turn) + taruhan → buka 1 kartu (river) + taruhan → tangan terbaik menang. Satu hand lengkap punya empat ronde taruhan dan lima kartu bersama, dan tangan lima kartu terbaik mengambil pot — atau membaginya, kalau lima kartu terbaiknya persis sama.
 
 **Q. Berapa pemain yang dibutuhkan untuk main Texas Hold'em?**
 
@@ -456,7 +456,7 @@ A. Di meja live, satu hand biasanya memakan waktu sekitar 30 detik sampai 2 meni
 
 Texas Hold'em lebih mudah dipelajari kalau Anda memisahkan aturan dari strategi.
 
-Pertama, ==pelajari alurnya==: blind, dua hole cards, lima kartu bersama, empat ronde taruhan, dan tangan lima kartu terbaik. ==g:Setelah itu pelajari posisi, kartu awal, dan keputusan pot dasar.==
+Pertama, ==pelajari alurnya==: blind, dua hole cards, lima kartu bersama, paling banyak empat ronde taruhan, dan tangan lima kartu terbaik. ==g:Setelah itu pelajari posisi, kartu awal, dan keputusan pot dasar.==
 
 Sebagai langkah berikutnya, ulas [peringkat kartu Texas Hold'em](/id/blog/holdem-hand-rankings), berlatih dengan [alat chart kartu awal interaktif](/en/hand-chart), dan pakai [kalkulator odds poker](/id/calculator) saat Anda ingin memahami kenapa sebuah call menguntungkan atau tidak.
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Hingga river Anda akan membuat one pair 43,8% dari waktu, two pair 23,5%, flush 3,0%, dan full house 2,6% — sementara royal flush hanya muncul sekali dalam sekitar 31.000 tangan.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "13 mnt",
   emoji: "🎲",
@@ -109,7 +109,7 @@ Jadi lain kali seseorang berkata "saya tak pernah dapat aces," mereka kira-kira 
 
 </div>
 
-Untuk set-mining, ==7,5:1 adalah bayaran impas teoretis, bukan aturan stack yang memadai==: angka itu mengandaikan setiap set yang jadi menang dan dibayar. Dalam praktik, patokan umum 15–20× stack efektif memberi ruang untuk value yang tak terbayar dan set yang tetap kalah; itu pun heuristik, bukan call otomatis. Itulah jembatan ke [pot odds](#pot-odds), di bawah. Untuk penurunan lengkap tiap baris di sini — plus aturan stack set-mining dan pemisahan flush made-vs-draw-vs-lengkap — lihat bahasan mendalam [drawing odds dan odds nge-flop tiap tangan](/id/blog/holdem-drawing-odds "thumb:/images/holdem-drawing-odds-hero.webp").
+Untuk set-mining, ==7,5:1 adalah bayaran impas teoretis, bukan aturan stack yang memadai==: angka itu mengandaikan setiap set yang jadi menang dan dibayar. Dalam praktik, patokan umum — stack efektif 15–20× call — memberi ruang untuk value yang tak terbayar dan set yang tetap kalah; itu pun heuristik, bukan call otomatis. Itulah jembatan ke [pot odds](#pot-odds), di bawah. Untuk penurunan lengkap tiap baris di sini — plus aturan stack set-mining dan pemisahan flush made-vs-draw-vs-lengkap — lihat bahasan mendalam [drawing odds dan odds nge-flop tiap tangan](/id/blog/holdem-drawing-odds "thumb:/images/holdem-drawing-odds-hero.webp").
 
 ---
 
@@ -175,11 +175,11 @@ Itulah jalan pintasnya: outs bersih → pengali untuk jumlah kartu yang akan And
 Pot setelah taruhan | $100 + $50 = $150
 Call Anda | $50 untuk menang $150 (pot akhir $200)
 Pot odds | 50 ÷ 200 = 25% — Anda butuh setidaknya 25% equity
-Equity Anda | Flush draw ≈ 35% hingga river (Aturan 4) — angka ini mengandaikan Anda melihat ==kedua== kartu
+Equity Anda | Flush draw dengan 9 outs bersih ≈ 35% hingga river (Aturan 4) — angka ini mengandaikan Anda melihat ==kedua== kartu
 Keputusan | Dengan dua kartu tersisa: 35% > 25% → sebuah ==g:call== yang jelas menguntungkan
 :::
 
-Itulah momen semua angka membuahkan hasil — tapi **pakai angka untuk street yang sedang Anda bayar**. Kalau kedua kartu memang akan datang (Anda all-in, atau turn lewat tanpa taruhan lagi), **35%** Anda mengalahkan harga **25%** dan call memenangkan uang dalam jangka panjang meski Anda akan lebih sering kalah di tangan ini daripada tidak. Kalau lawan akan bertaruh lagi di turn, call ini hanya membeli Anda kartu turn — dari flop itu ==9 ÷ 47 = 19,1%==, *di bawah* harga — dan draw itu lalu butuh [implied odds](/id/blog/holdem-implied-odds "thumb:/images/holdem-implied-odds-hero.webp"), yaitu uang yang Anda menangkan di street-street setelah Anda hit, untuk menutup celah itu. Memakai angka ×4 untuk keputusan satu kartu adalah cara paling umum pemula menaksir terlalu tinggi sebuah draw. Untuk metode lengkap dan contekan ukuran taruhan, lihat [cara menghitung pot odds](/id/blog/holdem-pot-odds).
+Itulah momen semua angka membuahkan hasil — tapi **pakai angka untuk street yang sedang Anda bayar**. Kalau kedua kartu memang akan datang (Anda all-in, atau turn lewat tanpa taruhan lagi), **35%** dari draw yang bersih mengalahkan harga **25%** dan call memenangkan uang dalam jangka panjang meski Anda akan lebih sering kalah di tangan ini daripada tidak. Kalau lawan akan bertaruh lagi di turn, call ini hanya membeli Anda kartu turn — dari flop itu ==9 ÷ 47 = 19,1%==, *di bawah* harga — dan draw itu lalu butuh [implied odds](/id/blog/holdem-implied-odds "thumb:/images/holdem-implied-odds-hero.webp"), yaitu uang yang Anda menangkan di street-street setelah Anda hit, untuk menutup celah itu. Memakai angka ×4 untuk keputusan satu kartu adalah cara paling umum pemula menaksir terlalu tinggi sebuah draw. Untuk metode lengkap dan contekan ukuran taruhan, lihat [cara menghitung pot odds](/id/blog/holdem-pot-odds).
 
 ---
 
@@ -246,7 +246,7 @@ A. Jika Anda nge-flop flush draw (sembilan outs), Anda akan menyempurnakannya se
 
 **Q. Berapa odds nge-flop set?**
 
-A. Sekitar 11,8%, atau kira-kira 1 dari 8,5, saat Anda memegang pocket pair. Odds setara 7,5:1 itu menggambarkan perbandingan meleset lawan kena, bukan kedalaman stack yang dianjurkan. Call set-mining juga butuh bayaran realistis di street berikutnya; patokan praktis 15–20× memberi ruang untuk set yang tak dibayar atau kalah.
+A. Sekitar 11,8%, atau kira-kira 1 dari 8,5, saat Anda memegang pocket pair. Odds setara 7,5:1 itu menggambarkan perbandingan meleset lawan kena, bukan kedalaman stack yang dianjurkan. Call set-mining juga butuh bayaran realistis di street berikutnya; patokan praktis — stack efektif 15–20× call — memberi ruang untuk set yang tak dibayar atau kalah.
 
 **Q. Berapa odds nge-flop royal flush?**
 
@@ -274,7 +274,7 @@ A. Tak ada angka tunggal yang tetap — bergantung berapa lawan memegang pocket 
 
 **Q. Tangan pemenang apa yang paling umum di poker?**
 
-A. One pair, disusul two pair. Karena semua pemain berbagi lima kartu bersama, kebanyakan pot Texas Hold'em diputuskan oleh satu pair dan kicker-nya — flush, straight, dan full house menang jauh lebih jarang daripada dugaan pemula. Bagan di atas menunjukkan seberapa sering Anda *berakhir* dengan tiap tangan.
+A. One pair, disusul two pair. Karena semua pemain berbagi lima kartu bersama, kebanyakan pot Texas Hold'em diputuskan oleh satu pair dan kicker-nya — flush, straight, dan full house menang jauh lebih jarang daripada dugaan pemula. Bagan di atas menunjukkan seberapa sering tiap tangan muncul sepanjang tujuh kartu — yang tidak sama dengan seberapa sering tangan itu memenangkan pot.
 
 **Q. Seberapa sering tangan terbaik menang di poker?**
 

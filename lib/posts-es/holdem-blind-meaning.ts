@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Qué son las ciegas en el póker: ciega pequeña y ciega grande, explicadas fácil",
   seoTitle: "¿Pagar sin ver tus cartas? — Las ciegas del póker (SB y BB)",
   desc: "Dos jugadores pagan antes de ver una sola carta, ¿por qué? Qué son la ciega pequeña y la ciega grande, cuánto valen, el ante de ciega grande y el heads-up.",
-  tldr: "Las ciegas son apuestas obligatorias que se ponen antes de repartir las cartas. La ciega pequeña se sienta a la izquierda del botón y la ciega grande a su izquierda; la ciega grande — normalmente el doble de la pequeña — es la unidad de apuesta de la mesa.",
+  tldr: "Las ciegas son apuestas obligatorias que se ponen antes de repartir las cartas. La ciega pequeña se sienta a la izquierda del botón y la ciega grande a su izquierda (en heads-up, el propio botón pone la ciega pequeña); la ciega grande — normalmente el doble de la pequeña — es la unidad de apuesta de la mesa.",
   category: "rules",
   date: "2026-06-13",
-  updated: "2026-09-22",
-  masterUpdated: "2026-09-22",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "💰",
@@ -24,7 +24,7 @@ Las ciegas son ==el motor que mantiene vivo el póker== — la primera pieza de 
 ---
 
 > **Respuesta rápida**
-> Una ciega es una **apuesta obligatoria** que se pone antes de repartir carta alguna. La **ciega pequeña (SB)** se sienta justo a la izquierda del botón del dealer; la **ciega grande (BB)** está a la izquierda de la ciega pequeña. La ciega grande suele ser **el doble** de la pequeña y funciona como la unidad de apuesta estándar de la mesa.
+> Una ciega es una **apuesta obligatoria** que se pone antes de repartir carta alguna. La **ciega pequeña (SB)** se sienta justo a la izquierda del botón del dealer; la **ciega grande (BB)** está a la izquierda de la ciega pequeña (en heads-up, el botón pone la ciega pequeña). La ciega grande suele ser **el doble** de la pequeña y funciona como la unidad de apuesta estándar de la mesa.
 
 ---
 
@@ -42,7 +42,7 @@ Las ciegas son ==el motor que mantiene vivo el póker== — la primera pieza de 
 
 Una **ciega** es una apuesta que estás obligado a hacer *antes* de recibir tus cartas — apuestas "a ciegas", sin haber visto nada. Dos jugadores la ponen en cada mano normal: la ciega pequeña y la ciega grande, los dos asientos inmediatamente a la izquierda del botón del dealer. (Dos excepciones habituales: el botón muerto, que puede dejar una mano sin ciega pequeña, y el heads-up, donde el propio botón pone la ciega pequeña — lo verás más abajo.)
 
-¿Por qué obligar a alguien a pagar? Para que el juego no muera. ==r:Sin ciegas, todos podrían tirar sus cartas y esperar eternamente a las manos premium==; los botes estarían vacíos, farolear no tendría sentido y la partida se pararía. ==g:Dos apuestas obligatorias en cada mano garantizan que siempre haya algo por lo que pelear.==
+¿Por qué obligar a alguien a pagar? Para que el juego no muera. ==r:Sin ciegas ni ninguna otra apuesta obligatoria, todos podrían tirar sus cartas y esperar eternamente a las manos premium==; los botes estarían vacíos, farolear no tendría sentido y la partida se pararía. ==g:Dos apuestas obligatorias en cada mano garantizan que siempre haya algo por lo que pelear.==
 
 ---
 
@@ -50,13 +50,13 @@ Una **ciega** es una apuesta que estás obligado a hacer *antes* de recibir tus 
 
 La **ciega pequeña (SB)** es la menor de las dos apuestas obligatorias, y la pone el jugador sentado **justo a la izquierda del botón del dealer**. Suele ser **la mitad de la ciega grande** — en una partida $1/$2, la ciega pequeña es $1.
 
-Es también, y con fama merecida, el asiento más incómodo de la mesa: has pagado media apuesta con una mano aleatoria y, del flop en adelante, hablas **primero** en cada calle, con la menor información posible. Por eso la ciega pequeña pierde dinero a largo plazo prácticamente para todo el mundo — el objetivo ahí es perder *menos*, no ganar.
+Es también, y con fama merecida, el asiento más incómodo de la mesa: has pagado media apuesta con una mano aleatoria y, del flop en adelante, hablas **primero** en cada calle, con la menor información posible (heads-up es la única excepción: ahí la ciega pequeña es el botón y habla la última). Por eso la ciega pequeña pierde dinero a largo plazo prácticamente para todo el mundo — el objetivo ahí es perder *menos*, no ganar.
 
 ---
 
 ## Qué es la ciega grande
 
-La **ciega grande (BB)** es la **apuesta base completa**, y la pone el jugador inmediatamente **a la izquierda de la ciega pequeña**. En una partida $1/$2, la ciega grande es $2. Si nadie sube antes del flop, la ciega grande tiene un privilegio especial — la **"opción"** de [pasar](/es/blog/holdem-betting-actions) y ver el flop gratis.
+La **ciega grande (BB)** es la **apuesta base completa**, y la pone el jugador inmediatamente **a la izquierda de la ciega pequeña**. En una partida $1/$2, la ciega grande es $2. Si nadie sube ni pone un straddle antes del flop, la ciega grande tiene un privilegio especial — la **"opción"** de [pasar](/es/blog/holdem-betting-actions) y ver el flop gratis.
 
 La gente busca "big blind" por separado por una razón: no es solo un asiento, es ==la **vara de medir** de todo el juego==.
 
@@ -78,7 +78,7 @@ En cuanto entiendes la ciega grande, toda la jerga numérica del juego — tama�
 
 ## Reglas de la ciega pequeña y la ciega grande: quién las pone y cuándo
 
-Las dos ciegas se ponen **antes del reparto**, y el botón del dealer avanza un asiento en el sentido de las agujas del reloj tras cada mano — así que los asientos de las ciegas rotan con él y, en la rotación normal, ==todos pagan ambas ciegas una vez por órbita==. Lo que pase después depende del formato: en una partida de cash, al volver pones las ciegas que te saltaste, esperas a que la ciega grande llegue a tu asiento o —donde la sala lo permita— vuelves a entrar con un straddle vivo desde UTG; en un torneo las ciegas y los antes salen de tu stack estés sentado o no.
+Las dos ciegas se ponen **antes del reparto**, y, en la rotación normal, el botón del dealer avanza un asiento en el sentido de las agujas del reloj tras cada mano — así que los asientos de las ciegas rotan con él y ==todos pagan ambas ciegas una vez por órbita==. Lo que pase después depende del formato: en una partida de cash, al volver pones las ciegas que te saltaste, esperas a que la ciega grande llegue a tu asiento o —donde la sala lo permita— vuelves a entrar con un straddle vivo desde UTG; en un torneo las ciegas y los antes salen de tu stack estés sentado o no.
 
 | | Ciega pequeña | Ciega grande |
 |------|-------------|-------------|
@@ -87,13 +87,13 @@ Las dos ciegas se ponen **antes del reparto**, y el botón del dealer avanza un 
 | Orden preflop | Habla penúltima | Habla **la última** (la "opción") |
 | Orden postflop | Habla **primera** (una desventaja) | Habla segunda |
 
-> **Ojo:** antes del flop, la acción empieza en el jugador a la izquierda de la ciega grande y la BB habla la última — ve la decisión de todos los demás antes de actuar. Del flop en adelante el orden se reinicia y las ciegas hablan pronto. La secuencia calle a calle está desglosada en [el orden de juego en Texas Hold'em](/es/blog/holdem-game-order), y el nombre de cada asiento alrededor del botón se explica en [las posiciones del póker explicadas](/es/blog/holdem-positions).
+> **Ojo:** antes del flop, la acción empieza en el jugador a la izquierda de la ciega grande y la BB habla la última — ve la decisión de todos los demás antes de actuar. Del flop en adelante el orden se reinicia y las ciegas hablan pronto. Dos cosas cambian esta tabla: en heads-up, el botón es la ciega pequeña y habla el último tras el flop; y un straddle vivo, donde la sala lo permita, hace que la acción preflop empiece a su izquierda y se queda con el último turno para hablar. La secuencia calle a calle está desglosada en [el orden de juego en Texas Hold'em](/es/blog/holdem-game-order), y el nombre de cada asiento alrededor del botón se explica en [las posiciones del póker explicadas](/es/blog/holdem-positions).
 
 ---
 
 ## ¿De cuánto son las ciegas? Niveles en cash y en torneos
 
-Los niveles se escriben **SB/BB**. Una partida "$1/$2" significa ciega pequeña de $1 y ciega grande de $2; la ciega pequeña es el número menor y la grande, el mayor.
+En las partidas sin límite y pot-limit, los niveles se escriben **SB/BB**. Una partida "$1/$2" significa ciega pequeña de $1 y ciega grande de $2; la ciega pequeña es el número menor y la grande, el mayor. (Una mesa de límite fijo se nombra en cambio por sus dos tamaños de apuesta — en una partida de límite 4-8 la apuesta mínima es $4; regla 104 de las WSOP Live Action Rules.)
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -110,7 +110,7 @@ Los niveles se escriben **SB/BB**. Una partida "$1/$2" significa ciega pequeña 
 
 </div>
 
-- **Cash game:** las ciegas se quedan ==g:**fijas**==. Te sientas en una $1/$2 y será $1/$2 hasta que te levantes. (Para una comparación a fondo, mira [torneos vs cash games](/es/blog/holdem-tournament-vs-cash-game).)
+- **Cash game:** las ciegas se quedan ==g:**fijas**== — ningún reloj las sube. Una $1/$2 sigue siendo $1/$2 salvo que la mesa y la sala acuerden cambiar los niveles. (Para una comparación a fondo, mira [torneos vs cash games](/es/blog/holdem-tournament-vs-cash-game).)
 - **Torneo:** las ciegas ==r:**suben** con un reloj== (p. ej. 25/50 → 50/100 → 100/200), así que la presión crece según avanza la noche. Los niveles de ciegas, el reloj y las hojas de estructura se explican en [cómo funcionan los torneos de póker](/es/blog/holdem-tournament).
 
 ---
@@ -141,8 +141,8 @@ Al sentarte en una mesa de cash en vivo normalmente no juegas gratis: en la mayo
 
 Las ciegas son el sitio donde veo a los principiantes sangrar fichas en silencio — no en un bote enorme, sino un poquito cada órbita. Dos hábitos en las ciegas arreglan casi todo — y un tercer movimiento, desde posición tardía, recupera parte de lo que se va:
 
-- **Ciega pequeña: sin complicarte.** Penúltima preflop pero **primera en hablar** tras el flop; el enfoque limpio para empezar es **subir o tirar**, no pagar. Entrar de limp y que te ataquen fuera de posición es una fuga constante de fichas — la ciega pequeña es el asiento desde el que más veo perder a los novatos a lo largo de una sesión entera.
-- **Ciega grande: defiende con las odds.** Ya has puesto una apuesta completa, así que puedes pagar subidas de forma rentable con más manos que desde cualquier otro asiento. Ante un open a 2.5 BB (con la ciega pequeña retirándose), pagas 1.5 BB por un bote de 4 BB — unas 2.7 a 1, es decir, con aproximadamente un 27% de equity el call ya sale a cuenta. Esa cuenta son las [pot odds](/es/blog/holdem-pot-odds), y por eso existe la "defensa de la ciega grande".
+- **Ciega pequeña: sin complicarte.** En una mesa de tres o más jugadores habla penúltima preflop pero es la **primera en hablar** tras el flop, así que el enfoque limpio para empezar es **subir o tirar**, no pagar. Entrar de limp y que te ataquen fuera de posición es una fuga constante de fichas — la ciega pequeña es el asiento desde el que más veo perder a los novatos a lo largo de una sesión entera.
+- **Ciega grande: defiende con las odds.** Ya has puesto una apuesta completa, así que pagar te cuesta menos que desde cualquier otro asiento y puedes defender con más manos. Ante un open a 2.5 BB (con la ciega pequeña retirándose), pagas 1.5 BB por un bote de 4 BB — unas 2.7 a 1, es decir, con aproximadamente un 27% de equity el call en sí ya sale a cuenta. En la práctica necesitas algo más: fuera de posición, con apuestas aún por venir, no llegarás a realizar toda tu equity. Esa cuenta son las [pot odds](/es/blog/holdem-pot-odds), y por eso existe la "defensa de la ciega grande".
 - **Posición tardía: el robo.** Cuando todos se retiran hasta el botón o el cutoff, una subida que solo busca llevarse las dos ciegas es un **robo de ciegas** — y contraatacar con una resubida es un **resteal**. Los tamaños de robo, los rangos por asiento y cuánto defender son temas de estrategia, tratados a fondo en [la guía de jugar en posición vs fuera de posición](/es/blog/holdem-position-play).
 
 ---
@@ -160,7 +160,7 @@ A. Las ciegas son apuestas obligatorias que garantizan que siempre haya dinero e
 
 **Q. ¿Quién habla primero, la ciega grande o la pequeña?**
 
-A. Antes del flop, la ciega pequeña habla penúltima y la ciega grande la última. Tras el flop, el orden se invierte: la ciega pequeña habla primera y la grande segunda, antes que el resto de la mesa.
+A. Antes del flop, la ciega pequeña habla penúltima y la ciega grande la última. Tras el flop, el orden se invierte: la ciega pequeña habla primera y la grande segunda, antes que el resto de la mesa. (Heads-up es la excepción: la ciega pequeña está en el botón, así que habla primero preflop y la última tras el flop.)
 
 **Q. ¿La ciega pequeña es siempre exactamente la mitad de la grande?**
 
@@ -168,7 +168,7 @@ A. Normalmente sí, pero no siempre — algunas estructuras (como $1/$3 o $2/$5)
 
 **Q. Si nadie sube, ¿la ciega grande puede simplemente pasar?**
 
-A. Sí — es la "opción" de la ciega grande. Si todos se limitan a pagar, la ciega grande puede pasar y ver el flop gratis, o subir si tiene una mano fuerte.
+A. Sí — es la "opción" de la ciega grande. Si todos se limitan a pagar la ciega grande — sin subida ni straddle —, la ciega grande puede pasar y ver el flop gratis, o subir si tiene una mano fuerte.
 
 **Q. ¿Puedes tirarte después de poner la ciega?**
 
@@ -188,15 +188,15 @@ A. No exactamente — "las ciegas" se refiere a la pequeña y la grande juntas, 
 
 **Q. ¿Cuánto vale una ciega en el póker?**
 
-A. Depende de los niveles de la mesa, que se escriben SB/BB. En una partida $1/$2 la ciega pequeña vale $1 y la grande $2; en una $2/$5, $2 y $5. La ciega grande marca la apuesta base y la ciega pequeña suele ser la mitad.
+A. Depende de los niveles de la mesa, que en sin límite y pot-limit se escriben SB/BB. En una partida $1/$2 la ciega pequeña vale $1 y la grande $2; en una $2/$5, $2 y $5. La ciega grande marca la apuesta base y la ciega pequeña suele ser la mitad.
 
 **Q. ¿Cada cuánto se suben las ciegas?**
 
-A. En un cash game no se suben nunca: te sientas en $1/$2 y sigue igual hasta que te levantas. En torneo suben con un reloj, normalmente cada 15–30 minutos por nivel (25/50 → 50/100 → 100/200), así que la presión crece según avanza la partida.
+A. En un cash game no las sube ningún reloj: te sientas en $1/$2 y sigue igual, salvo que la mesa y la sala acuerden cambiar los niveles. En torneo suben con un reloj, normalmente cada 15–30 minutos por nivel (25/50 → 50/100 → 100/200), así que la presión crece según avanza la partida.
 
 **Q. ¿Qué es "blin" o las ciegas en el póker?**
 
-A. "Blin" suele ser una forma abreviada o mal escrita de "blind", que en español es la ciega. Son las dos apuestas obligatorias — ciega pequeña y ciega grande — que ponen antes del reparto los dos jugadores a la izquierda del botón.
+A. "Blin" suele ser una forma abreviada o mal escrita de "blind", que en español es la ciega. Son las dos apuestas obligatorias — ciega pequeña y ciega grande — que ponen antes del reparto los dos jugadores a la izquierda del botón (en heads-up, el propio botón pone la ciega pequeña).
 
 **Q. ¿Qué es el "little blind" o el "big blind" en el póker?**
 
@@ -210,7 +210,7 @@ A. En la práctica son lo mismo: el repartidor que da las cartas. "Crupier" es e
 
 ## Lo que debes recordar
 
-1. Las ciegas son **apuestas obligatorias antes del reparto**: ciega pequeña a la izquierda del botón, ciega grande a su izquierda, y la BB normalmente el doble de la SB.
+1. Las ciegas son **apuestas obligatorias antes del reparto**: ciega pequeña a la izquierda del botón (en heads-up: en el botón), ciega grande a su izquierda, y la BB normalmente el doble de la SB.
 2. La **ciega grande es la unidad de la mesa** — subidas, stacks y presión de torneo se miden en BBs.
 3. Juega las ciegas con cabeza: **sube o tírate desde la ciega pequeña**, **defiende la ciega grande con las pot odds** y estudia los robos desde posición tardía cuando todos se retiran hasta ti.
 

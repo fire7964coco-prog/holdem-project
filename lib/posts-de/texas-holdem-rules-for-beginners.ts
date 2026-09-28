@@ -5,16 +5,16 @@ export const POST: Post = {
   title: "Poker Regeln für Anfänger – Texas Hold'em Ablauf, Chips, Pokerhände und deine erste Strategie",
   seoTitle: "Poker Regeln für Anfänger – Texas Hold'em einfach erklärt",
   desc: "Nie gespielt? So funktioniert Texas Hold'em Schritt für Schritt – Blinds, Chip-Verteilung, Pokerhände und ein Spickzettel für deinen ersten Pokerabend.",
-  tldr: "Beim Texas Hold'em bekommt jeder Spieler 2 Hole Cards, dazu kommen 5 Gemeinschaftskarten – nach vier Setzrunden gewinnt die beste Fünf-Karten-Hand.",
+  tldr: "Beim Texas Hold'em bekommt jeder Spieler 2 Hole Cards, dazu kommen 5 Gemeinschaftskarten, die sich alle teilen. Es gibt bis zu vier Setzrunden, und im Showdown gewinnt die beste Fünf-Karten-Hand – es sei denn, alle anderen folden vorher.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-26",
+  updated: "2026-09-28",
   // 🪶 「masterUpdated 07-12 동결」 지시는 해소됐다(queue Q5-a 실측 2026-09-13 · 값별 전건 추적).
   //    ddf265db(07-12)=07-12 · 125c83f5(09-09)=07-12(동결 유지) · 01c30673(09-10)=09-09 ← 실제로 푼 커밋
   //    · 522b57f8(09-11)=09-11 · queue Q5-a(09-13)=09-13.
   //    Q5-a는 판정식 «편집 전 masterUpdated ≥ 편집 전 EN updated»를 만족해 올렸다(09-11 ≥ 09-11).
   //    🔴 되돌리려면 EN 07-12~현재 델타를 먼저 실측하라 — 주석만 보고 되돌리지 마라.
-  masterUpdated: "2026-09-26",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "14 Min.",
   emoji: "♠️",
@@ -53,7 +53,7 @@ Alles hier unten kommt aus der Praxis – Küchentische, Pokerabende, Cardrooms 
 
 Das Wichtigste:
 - Du kannst beide Hole Cards nutzen, nur eine oder sogar keine – was immer die beste Hand ergibt
-- Der Dealer-Button wandert jede Hand weiter, also verschieben sich Blinds und Reihenfolge jede Runde
+- Der Dealer-Button rückt normalerweise nach jeder Hand einen Platz weiter, und Blinds und Reihenfolge wandern mit ihm
 - Du gewinnst ohne Showdown, wenn alle anderen folden – egal an welchem Punkt
 
 ---
@@ -64,7 +64,7 @@ Die Grundregeln von Texas Hold'em sind simpel, sobald du den Tisch einmal der Re
 
 Gespielt wird mit ==einem einzigen Blatt zu 52 Karten== – die Joker legst du beiseite. Mehr Material brauchst du nicht: Selbst am vollen Zehnertisch sind nur 20 Hole Cards, 5 Gemeinschaftskarten und 3 Burn Cards im Einsatz, zusammen 28 der 52 Karten.
 
-Jede Hand beginnt mit dem Dealer-Button. Die zwei Spieler links vom Button setzen Pflichteinsätze, den **Small Blind** und den **Big Blind** – wenn dich das verwirrt, lies [was die Blinds sind und wie Small Blind und Big Blind funktionieren](/de/blog/holdem-blind-meaning). Danach bekommt jeder Spieler zwei verdeckte Karten. Das sind deine Hole Cards.
+Jede Hand beginnt mit dem Dealer-Button. Die zwei Spieler links vom Button setzen Pflichteinsätze, den **Small Blind** und den **Big Blind** (mit nur zwei Spielern setzt der Button selbst den Small Blind) – wenn dich das verwirrt, lies [was die Blinds sind und wie Small Blind und Big Blind funktionieren](/de/blog/holdem-blind-meaning). Danach bekommt jeder Spieler zwei verdeckte Karten. Das sind deine Hole Cards.
 
 Anschließend deckt der Dealer fünf gemeinsame Karten in der Tischmitte auf:
 
@@ -107,7 +107,7 @@ Dieser Artikel gibt dir die **Anfänger-Version des Ablaufs**, damit du dich an 
 | 5 | Flop, Turn, River | Gemeinschaftskarten kommen 3, dann 1, dann 1 |
 | 6 | Showdown | Verbliebene Spieler vergleichen die beste Fünf-Karten-Hand |
 
-Für deine erste Session ist die Kernidee simpel: ==**Jedes Mal, wenn eine neue Street erscheint, gibt es eine weitere Setzrunde.**==
+Für deine erste Session ist die Kernidee simpel: ==**Jedes Mal, wenn eine neue Street erscheint, gibt es eine weitere Setzrunde**== – es sei denn, Spieler sind all-in und niemand ist mehr da, gegen den man setzen könnte; dann werden die restlichen Karten einfach ausgeteilt.
 
 ![Infografik eines Texas-Hold'em-Tischs von oben vor dem Flop – jeder Spieler hält zwei verdeckte Karten, das Board ist noch leer](/images/rules-step2-preflop.webp "Texas Hold'em Schritt für Schritt – Preflop-Action nach den Blinds")
 
@@ -123,7 +123,7 @@ Texas Hold'em funktioniert mit **2 bis 10 Spielern** an einem Tisch. Du brauchst
 |--------:|------------------|----------------|
 | 2 | Heads-up | Schnell und aggressiv; die Blinds sind vertauscht (siehe unten) |
 | 3–6 | Short-handed (6-max) | Online am verbreitetsten; mehr Hände sind spielbar |
-| 7–10 | Full Ring (9-max) | Klassische Heimrunde/Casino; tighter spielen, öfter folden |
+| 7–10 | Full Ring (9-max oder 10-max) | Klassische Heimrunde/Casino; tighter spielen, öfter folden |
 
 Für die erste Heimrunde sind **4 bis 6 Spieler** der Sweet Spot – genug Action zum Lernen, wenig genug, damit die Hände zügig durchlaufen.
 
@@ -317,7 +317,7 @@ Gute Starthände für Anfänger:
 
 | Stufe | Hände | Wann spielen |
 |------|-------|--------------|
-| 🟥 **Premium – immer raisen** | AA, KK, QQ, JJ, AKs, AKo | Jede Position, jeder Stack |
+| 🟥 **Premium – immer raisen** | AA, KK, QQ, JJ, AKs, AKo | Jede Position, jeder Stack – als Erster rein raisen, gegen einen einzelnen Raise re-raisen |
 | 🟧 **Stark – meistens raisen** | TT, 99, AQs, AQo, AJs, KQs | Die meisten Positionen; aus UTG tighter |
 | 🟦 **Spielbar – Position entscheidet** | 88, 77, ATs, AJo, KJs, QJs, JTs | Bevorzugt späte Position (CO, BTN) |
 | ⬜ **Standardmäßig folden** | Als Anfänger alles andere | Vor allem aus früher Position |
@@ -434,7 +434,7 @@ Hände spielen sich leichter, wenn du später an der Reihe bist. Bist du als Ers
 
 **Q. Wie spielt man Texas Hold'em Schritt für Schritt?**
 
-A. Blinds setzen, jedem Spieler zwei Hole Cards geben, Preflop-Setzrunde spielen, dann Flop, Turn und River aufdecken – mit einer Setzrunde nach jeder Street – und beim Showdown die besten Fünf-Karten-Hände vergleichen. Insgesamt: vier Setzrunden, fünf Gemeinschaftskarten, ein Gewinner – oder ein geteilter Pot, wenn die besten fünf Karten exakt gleich sind.
+A. Blinds setzen, jedem Spieler zwei Hole Cards geben, Preflop-Setzrunde spielen, dann Flop, Turn und River aufdecken – mit einer Setzrunde nach jeder Street – und beim Showdown die besten Fünf-Karten-Hände vergleichen. Eine vollständige Hand hat vier Setzrunden und fünf Gemeinschaftskarten, und die beste Fünf-Karten-Hand gewinnt den Pot – oder teilt ihn, wenn die besten fünf Karten exakt gleich sind.
 
 **Q. Wer fängt beim Texas Hold'em an?**
 
@@ -474,7 +474,7 @@ A. In einem Satz: Aus deinen 2 verdeckten Karten und den 5 offenen in der Tischm
 
 **Q. Was bedeuten die Blinds – einfach erklärt?**
 
-A. Die zwei Spieler links vom Dealer-Button müssen Pflichteinsätze setzen, bevor Karten gegeben werden. Der erste setzt den Small Blind, der zweite den Big Blind (meist das Doppelte). Diese Einsätze garantieren, dass immer Geld im Pot liegt, um das es sich zu kämpfen lohnt. Jeder andere Spieler muss mindestens den Big Blind mitgehen, um in der Hand zu bleiben (oder für weniger all-in gehen, wenn das sein gesamter Stack ist).
+A. Die zwei Spieler links vom Dealer-Button müssen Pflichteinsätze setzen, bevor Karten gegeben werden (mit nur zwei Spielern setzt der Button selbst den Small Blind). Der erste setzt den Small Blind, der zweite den Big Blind (meist das Doppelte). Diese Einsätze garantieren, dass immer Geld im Pot liegt, um das es sich zu kämpfen lohnt. Jeder andere Spieler muss mindestens den Big Blind mitgehen, um in der Hand zu bleiben (oder für weniger all-in gehen, wenn das sein gesamter Stack ist).
 
 **Q. Kann man Texas Hold'em zu zweit spielen?**
 
@@ -494,7 +494,7 @@ A. Eine einzelne Hand dauert live meist etwa 30 Sekunden bis 2 Minuten; ein gro�
 
 Texas Hold'em lernt sich leichter, wenn du Regeln und Strategie trennst.
 
-Lerne zuerst ==den Ablauf==: Blinds, zwei Hole Cards, fünf Gemeinschaftskarten, vier Setzrunden, beste Fünf-Karten-Hand. ==g:Dann lerne Position, Starthände und einfache Pot-Entscheidungen.==
+Lerne zuerst ==den Ablauf==: Blinds, zwei Hole Cards, fünf Gemeinschaftskarten, bis zu vier Setzrunden, beste Fünf-Karten-Hand. ==g:Dann lerne Position, Starthände und einfache Pot-Entscheidungen.==
 
 Als nächsten Schritt wiederhole die [Pokerhände-Reihenfolge im Texas Hold'em](/de/blog/holdem-hand-rankings), übe mit dem [Starthand-Chart](/en/hand-chart) und nutze den [Poker-Odds-Rechner](/de/calculator), wenn du verstehen willst, warum ein Call profitabel ist oder nicht.
 

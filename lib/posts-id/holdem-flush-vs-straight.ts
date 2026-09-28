@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Flush (lima kartu satu jenis — sekitar 0,197% dari pembagian lima kartu) selalu mengalahkan straight (lima kartu berurutan, sekitar 0,392%) di Texas Hold'em — karena flush lebih langka: sepanjang tujuh kartu sampai river, 3,03% berbanding 4,62% untuk straight.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "11 mnt",
   emoji: "⚡",
@@ -78,7 +78,7 @@ Straight hanya butuh lima rank berurutan, dan ==**jenisnya tidak penting**==. Ke
 
 ## 3 Situasi Meja yang Masih Mengecoh Pemain
 
-![Board menunjukkan 8♥ 7♥ 6♥ 5♠ A♣ — tiga hati di board berarti flush hidup meski Anda pegang straight](/images/holdem-flush-vs-straight-board.webp "Tiga kartu satu jenis di board — flush draw hidup melawan straight Anda")
+![Board menunjukkan 8♥ 7♥ 6♥ 5♠ A♣ — tiga hati di board berarti flush hidup meski Anda pegang straight](/images/holdem-flush-vs-straight-board.webp "Tiga kartu satu jenis di board — flush sudah mungkin terbentuk melawan straight Anda")
 
 Tahu aturannya tidak sama dengan membacanya secara live — keterampilan itulah yang dilatih oleh [membaca board](/id/blog/holdem-reading-the-board). Inilah tiga situasi di mana kesalahan itu benar-benar terjadi.
 
@@ -169,7 +169,7 @@ Kalau straight Anda memakai sebagian kartu dan flush Anda memakai kartu lain, An
 
 ## Satu Pengecualian Nyata: Short Deck
 
-Di **Short Deck (6+) Hold'em**, kartu 2 sampai 5 dibuang dari deck. Dengan lebih sedikit kartu, flush jadi *lebih sulit* dibentuk daripada full house — jadi di format itu peringkatnya bergeser dan ==r:**flush mengalahkan full house**==. Prinsipnya tak pernah berubah: ==tangan yang lebih langka menang==. Hanya deck-nya yang berubah. Di Texas Hold'em standar dengan deck penuh 52 kartu, ==g:flush mengalahkan straight dan kalah dari full house, setiap kali==.
+Di **Short Deck (6+) Hold'em**, kartu 2 sampai 5 dibuang dari deck. Dengan lebih sedikit kartu, flush jadi *lebih sulit* dibentuk daripada full house — jadi di format itu peringkatnya bergeser dan ==r:**flush mengalahkan full house**==. Logikanya sama seperti dengan deck penuh: dari dua tangan itu, ==yang lebih langka berperingkat lebih tinggi==. Hanya deck-nya yang berubah. Di Texas Hold'em standar dengan deck penuh 52 kartu, ==g:flush mengalahkan straight dan kalah dari full house, setiap kali==.
 
 ---
 

@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Nicht so wie im Blackjack – das Deck wird jede Hand neu gemischt und zu wenige Karten liegen offen, also bringt dir das Tracken hoher und niedriger Karten keinen Edge. Aber Poker hat sein eigenes legales Zählen: Outs zählen, Blocker nutzen und tote Karten tracken, um zu lesen, was dein Gegner nicht haben kann.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "🧮",
@@ -45,11 +45,11 @@ Wenn du dir einen Running High-Low-Count aus den Filmen vorstellst, lass ihn fal
 
 ## Warum Blackjack-Kartenzählen im Poker nicht funktioniert
 
-**Blackjack-Zählen funktioniert nur, weil ein Schuh über viele Hände heruntergespielt wird, während du einen Dealer mit festen Regeln schlagen willst – Poker bricht alle drei Bedingungen.** Hier ist genau, warum die Methode nicht übertragbar ist:
+**Blackjack-Zählen funktioniert, weil ein Schuh über viele Hände heruntergespielt wird, während du einen Dealer mit festen Regeln schlagen willst – Poker bricht alle drei Bedingungen.** Hier ist genau, warum die Methode nicht übertragbar ist:
 
 :::card
-🔀 | Das Deck wird jede Hand neu gesetzt | Blackjack-Zählen braucht einen Schuh, der über Dutzende Hände heruntergespielt wird, damit sich Information anhäuft. Poker mischt jede einzelne Hand neu, also trägt sich nichts weiter – jede Hand beginnt mit einem vollen, zufälligen Deck
-🙈 | Zu wenige Karten liegen offen | Die Hole Cards jedes Spielers liegen verdeckt. Du siehst deine eigenen zwei Karten, das gemeinsame Board und was im Showdown aufgedeckt wird – eine Handvoll Karten – nie genug, um die Zusammensetzung des Decks zu tracken
+🔀 | Das Deck wird jede Hand neu gesetzt | Blackjack-Zählen lebt von einem Schuh, der über viele Hände heruntergespielt wird, wobei sich Information anhäuft. Poker mischt jede einzelne Hand neu, also trägt sich nichts weiter – jede Hand beginnt mit einem vollen, zufälligen Deck
+🙈 | Zu wenige Karten liegen offen | Die Hole Cards jedes Spielers liegen verdeckt. Du siehst deine eigenen zwei Karten, das gemeinsame Board und was im Showdown aufgedeckt wird – eine Handvoll Karten – genug, um die Outs für die Hand vor dir zu zählen, aber nie genug für einen Running Count im Blackjack-Stil
 👥 | Du spielst gegen Gegner, nicht gegen das Haus | Es gibt keinen festen Dealer, gegen den man einen Edge gewinnen kann. Ein „Deck reich an hohen Karten“ bedeutet nichts, wenn Pocket Aces ohnehin premium sind – du gewinnst, indem du die bessere Hand hast oder die bessere Entscheidung triffst, nicht durch einen günstigen Count
 :::
 
@@ -127,7 +127,7 @@ Beim Hold'em werden als einzige Karten die fünf gemeinsamen Community Cards off
 :::steps
 Zähle deine Outs bei jedem Draw | Sobald du einen Draw hast, zähle die Karten, die ihn vervollständigen, und multipliziere – ×4 nur, wenn beide Karten kommen (du bist all-in, oder Turn und River kosten beide nichts mehr), sonst ×2 nur für die nächste Karte. Calle, wenn diese Chance – nur saubere Outs – den Preis schlägt oder Implied Odds die Lücke decken
 Frage, was deine Hand blockt | Bevor du bluffst, prüfe, ob du eine Karte hältst, die ihre stärkste Calling-Hand unmöglich oder unwahrscheinlicher macht
-Passe an tote Karten an | Ziehe jedes Out ab, das du abseits vom Board gesehen hast – eine aufgeblitzte Karte, eine gezeigte Hand, ein Fold, den du zufällig gesehen hast. Karten, die du sehen kannst, sind Karten, die dein Gegner nicht haben kann – aber nur zufällig erhascht: gezielt zu versuchen, die Karten eines anderen Spielers zu sehen, ist nicht Teil dieser Methode – es zählen nur versehentliche Aufdeckungen
+Passe an tote Karten an | Ziehe jedes Out ab, das du abseits vom Board gesehen hast – eine aufgeblitzte Karte, eine gezeigte Hand, ein Fold, den du zufällig gesehen hast. Eine Karte, die du gesehen hast, ist aus dem Deck (sie kann nicht aufs Board kommen, und kein anderer Spieler kann sie halten) – aber nur zufällig erhascht: gezielt zu versuchen, die Karten eines anderen Spielers zu sehen, ist nicht Teil dieser Methode – es zählen nur versehentliche Aufdeckungen
 :::
 
 Mach das ein paar Sessions lang und es wird automatisch – du wirst jede Hand „Karten zählen“, nur auf die Poker-Art. Der nächste Schritt ist, diese Zählungen mit [Pot Odds](/de/blog/holdem-pot-odds) in Calls und Folds zu verwandeln, der Mathematik, die dir sagt, ob deine Outs den Preis wert sind.

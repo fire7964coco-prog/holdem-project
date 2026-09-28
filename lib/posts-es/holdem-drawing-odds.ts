@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ligas un set en el flop con una pareja servida el 11.8% de las veces (7.5 a 1 en contra), ligas un color en el flop con dos cartas del mismo palo apenas un 0.84%, y completas un proyecto de color del flop al river el 35% de las veces. Cada número de abajo sale de la baraja, no se adivina.",
   category: "odds",
   date: "2026-07-04",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🎲",
@@ -117,7 +117,7 @@ La cifra de completar se reparte por calle, lo que importa en cuanto queda apues
 - **Flop → turn (una carta):** 9 ÷ 47 = 19.1%.
 - **Turn → river (una carta):** 9 ÷ 46 = 19.6%.
 
-Un color por **puerta trasera** (backdoor, runner-runner) — ligas solo *una* carta extra de tu palo y necesitas que tanto el turn como el river sean de tu palo — sale más o menos un 4.2%, lo que equivale más o menos a un out extra de equity. No es razón para pagar, pero sí un desempate real en spots ajustados. Para convertir cualquiera de estas en un call-o-fold, pasa el número por [cómo calcular las pot odds](/es/blog/holdem-pot-odds).
+Un color por **puerta trasera** (backdoor, runner-runner) — ligas solo *una* carta extra de tu palo y necesitas que tanto el turn como el river sean de tu palo — sale en torno a un 4.2% — más o menos lo que añade un out extra a tu probabilidad de ligar. No es razón para pagar, pero sí un desempate real en spots ajustados. Para convertir cualquiera de estas en un call-o-fold, pasa el número por [cómo calcular las pot odds](/es/blog/holdem-pot-odds).
 
 ---
 
@@ -131,7 +131,7 @@ Un color por **puerta trasera** (backdoor, runner-runner) — ligas solo *una* c
 Las conectoras como 8♠7♠ tienen su propio ciclo de vida. **Ligarás una escalera hecha en el flop solo el 1.3%** de las veces (76 a 1) — más raro de lo que asume la mayoría. Esa cifra vale de 54s a JTs, las conectoras que pueden cerrar la escalera por los dos extremos; las manos del borde de la baraja tienen menos secuencias posibles, hasta el 0.33% del A-K. Mucho más a menudo ligas un **proyecto**:
 
 - **Proyecto de escalera abierto (de dos puntas):** ~10% de los flops con conectoras. Ocho outs, se completa el **31.5%** al river — 1 − C(39,2)/C(47,2) — o un 17% del flop al turn.
-- **Proyecto interior (gutshot):** cuatro outs, se completa el **16.5%** al river, 8.5% del flop al turn. La mitad de la equity de un abierto, y por eso las mismas conectoras se juegan tan distinto según el flop.
+- **Proyecto interior (gutshot):** cuatro outs, se completa el **16.5%** al river, 8.5% del flop al turn. Se completa más o menos la mitad de las veces que un abierto, y por eso las mismas conectoras se juegan tan distinto según el flop.
 
 Fíjate en que el proyecto abierto (31.5%) y el proyecto de color (35%) están cerca — ambos son "un proyecto grande", ambos alrededor de un tercio de ligar al river. Ese es el atajo que vale la pena interiorizar: un proyecto grande normal es de ==**uno de cada tres**== de completarse al river, y baja a más o menos uno de cada cinco o seis en una sola calle.
 

@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Cómo jugar poker Texas Hold'em para principiantes — reglas, fichas, manos y primera estrategia",
   seoTitle: "Cómo jugar poker Texas Hold'em — reglas, fichas y chuleta",
   desc: "¿Primera partida? Cómo jugar al Texas Hold'em paso a paso: ciegas, reparto de fichas, jerarquía de manos y una chuleta imprimible para aprender desde cero.",
-  tldr: "En el Texas Hold'em cada jugador recibe 2 cartas propias y comparte 5 cartas comunitarias en la mesa. Se apuesta en cuatro rondas — preflop, flop, turn y river — y gana quien forma la mejor mano de póker de 5 cartas, o el último que quede si todos los demás se retiran. Puedes usar tus dos cartas, una sola o ninguna: lo que forme la mano más fuerte.",
+  tldr: "En el Texas Hold'em cada jugador recibe 2 cartas propias y comparte 5 cartas comunitarias en la mesa. Se apuesta en hasta cuatro rondas — preflop, flop, turn y river — y gana quien forma la mejor mano de póker de 5 cartas, o el último que quede si todos los demás se retiran. Puedes usar tus dos cartas, una sola o ninguna: lo que forme la mano más fuerte.",
   category: "rules",
   date: "2026-06-11",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
@@ -47,7 +47,7 @@ Todo lo que viene a continuación sale de haber montado la partida de verdad —
 
 Datos clave:
 - Puedes usar tus dos cartas propias, una sola o incluso ninguna — lo que forme la mejor mano
-- El botón del dealer rota cada mano, así que las ciegas y el orden de acción cambian en cada ronda
+- El botón del dealer normalmente avanza un asiento tras cada mano, así que las ciegas y el orden de acción se mueven con él
 - Ganas sin llegar al showdown si todos los demás se retiran en cualquier momento
 
 ---
@@ -56,7 +56,7 @@ Datos clave:
 
 Las reglas básicas del Texas Hold'em son sencillas en cuanto ves la mesa en orden.
 
-Cada mano empieza con el botón del dealer. Los dos jugadores a la izquierda del botón ponen apuestas obligatorias llamadas **ciega pequeña** y **ciega grande** — si te lían, mira [qué son las ciegas y cómo funcionan la ciega pequeña y la grande](/es/blog/holdem-blind-meaning). Después, cada jugador recibe dos cartas boca abajo. Son tus cartas propias (las *hole cards*).
+Cada mano empieza con el botón del dealer. Los dos jugadores a la izquierda del botón ponen apuestas obligatorias llamadas **ciega pequeña** y **ciega grande** (con solo dos jugadores, el propio botón pone la ciega pequeña) — si te lían, mira [qué son las ciegas y cómo funcionan la ciega pequeña y la grande](/es/blog/holdem-blind-meaning). Después, cada jugador recibe dos cartas boca abajo. Son tus cartas propias (las *hole cards*).
 
 A continuación, el dealer descubre cinco cartas compartidas en el centro de la mesa:
 
@@ -99,7 +99,7 @@ Este artículo te da la **versión para principiantes del flujo** para que pueda
 | 5 | Flop, turn, river | Las comunitarias salen 3, luego 1, luego 1 |
 | 6 | Showdown | Los que quedan comparan la mejor mano de 5 cartas |
 
-Para tu primera sesión, la idea clave es simple: ==**cada vez que aparece una calle nueva, hay otra ronda de apuestas.**==
+Para tu primera sesión, la idea clave es simple: ==**cada vez que aparece una calle nueva, hay otra ronda de apuestas**== — salvo que haya jugadores all-in y no quede nadie contra quien apostar; entonces las cartas restantes simplemente se reparten.
 
 ![Infografía cenital de una mesa de Texas Hold'em antes del flop — cada jugador tiene dos cartas ocultas y la mesa sigue vacía](/images/rules-step2-preflop.webp "Cómo jugar al Texas Hold'em paso a paso — acción preflop tras las ciegas")
 
@@ -115,7 +115,7 @@ El Texas Hold'em funciona con entre **2 y 10 jugadores** en una mesa. No necesit
 |--------:|------------------|----------------|
 | 2 | Heads-up | Rápido y agresivo; las ciegas se invierten (mira abajo) |
 | 3–6 | Mesa corta (6-max) | Lo más común online; se pueden jugar más manos |
-| 7–10 | Mesa completa (9-max) | La partida clásica de casa/casino; juega más tight, retírate más |
+| 7–10 | Mesa completa (9-max o 10-max) | La partida clásica de casa/casino; juega más tight, retírate más |
 
 Para una primera partida en casa, **de 4 a 6 jugadores** es el punto ideal — suficiente acción para aprender y pocos jugadores para que las manos vayan rápido.
 
@@ -277,7 +277,7 @@ Buenas manos iniciales para un principiante:
 
 | Nivel | Manos | Cuándo jugarlas |
 |------|-------|--------------|
-| 🟥 **Premium — sube siempre** | AA, KK, QQ, JJ, AKs, AKo | Desde cualquier posición, con cualquier stack |
+| 🟥 **Premium — sube siempre** | AA, KK, QQ, JJ, AKs, AKo | Desde cualquier posición, con cualquier stack — sube si eres el primero en entrar, resube ante una sola subida |
 | 🟧 **Fuertes — sube casi siempre** | TT, 99, AQs, AQo, AJs, KQs | Desde la mayoría de posiciones; más tight desde UTG |
 | 🟦 **Jugables — la posición importa** | 88, 77, ATs, AJo, KJs, QJs, JTs | Mejor en posición tardía (CO, BTN) |
 | ⬜ **Retírate por defecto** | Todo lo demás, siendo principiante | Sobre todo desde posición temprana |
@@ -426,11 +426,11 @@ A. La versión más simple: cada jugador recibe 2 cartas privadas. Se descubren 
 
 **Q. Reglas del Texas Hold'em para novatos — ¿qué significan las ciegas?**
 
-A. Los dos jugadores a la izquierda del botón del dealer deben poner apuestas obligatorias antes de repartir. El primero pone la ciega pequeña y el segundo la ciega grande (normalmente el doble). Estas apuestas garantizan que siempre haya dinero en el bote por el que luchar. Los demás jugadores deben al menos igualar la ciega grande para seguir en la mano (o ir all-in por menos, si eso es todo su stack).
+A. Los dos jugadores a la izquierda del botón del dealer deben poner apuestas obligatorias antes de repartir (con solo dos jugadores, el botón pone él mismo la ciega pequeña). El primero pone la ciega pequeña y el segundo la ciega grande (normalmente el doble). Estas apuestas garantizan que siempre haya dinero en el bote por el que luchar. Los demás jugadores deben al menos igualar la ciega grande para seguir en la mano (o ir all-in por menos, si eso es todo su stack).
 
 **Q. ¿Cuál es la versión rápida de las reglas del Texas Hold'em?**
 
-A. Poner ciegas → repartir 2 cartas propias → apuestas preflop → descubrir 3 comunitarias (flop) + apuestas → descubrir 1 carta (turn) + apuestas → descubrir 1 carta (river) + apuestas → gana la mejor mano. En total: cuatro rondas de apuestas, cinco cartas comunitarias, un ganador — o un bote dividido, si las mejores cinco cartas son exactamente iguales.
+A. Poner ciegas → repartir 2 cartas propias → apuestas preflop → descubrir 3 comunitarias (flop) + apuestas → descubrir 1 carta (turn) + apuestas → descubrir 1 carta (river) + apuestas → gana la mejor mano. Una mano completa tiene cuatro rondas de apuestas y cinco cartas comunitarias, y la mejor mano de cinco cartas se lleva el bote — o lo reparte, si las mejores cinco cartas son exactamente iguales.
 
 **Q. ¿Cuántos jugadores se necesitan para jugar al Texas Hold'em?**
 
@@ -466,7 +466,7 @@ A. El As es la carta de mayor valor: encabeza las manos altas (A-K-Q-J-10) y tam
 
 El Texas Hold'em es más fácil de aprender cuando separas las reglas de la estrategia.
 
-Primero, ==aprende el flujo==: ciegas, dos cartas propias, cinco comunitarias, cuatro rondas de apuestas y la mejor mano de cinco cartas. ==g:Después aprende la posición, las manos iniciales y las decisiones básicas de bote.==
+Primero, ==aprende el flujo==: ciegas, dos cartas propias, cinco comunitarias, hasta cuatro rondas de apuestas y la mejor mano de cinco cartas. ==g:Después aprende la posición, las manos iniciales y las decisiones básicas de bote.==
 
 Como siguiente paso, repasa la [jerarquía de manos del Texas Hold'em](/es/blog/holdem-hand-rankings), practica con el [chart de manos iniciales](/en/hand-chart) y usa la [calculadora de probabilidades de póker](/es/calculator) cuando quieras entender por qué un call es rentable o no.
 

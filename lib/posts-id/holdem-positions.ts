@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Posisi Poker: Nama Setiap Kursi & Bagan",
   seoTitle: "Kursi Anda Berganti Nama Tiap Tangan — Bagan Posisi Poker",
   desc: "Namanya bergerak mengikuti button, bukan kursinya. Setiap nama posisi poker — UTG, hijack, cutoff, button — plus nomor kursi, peta 6-max, dan siapa aksi dulu.",
-  tldr: "Posisi poker adalah nama kursi yang diukur dari tombol dealer — UTG, lojack, hijack, cutoff, button, dan blind — dan semuanya normalnya bergerak satu kursi searah jarum jam setiap hand. Preflop, UTG aksi lebih dulu dan big blind terakhir; postflop, small blind aksi lebih dulu dan button terakhir. Nomor kursi fisik tak pernah berpindah; posisi berpindah.",
+  tldr: "Posisi poker adalah nama kursi yang diukur dari tombol dealer — UTG, lojack, hijack, cutoff, button, dan blind — dan semuanya normalnya bergerak satu kursi searah jarum jam setiap hand. Preflop, UTG aksi lebih dulu dan big blind terakhir; postflop, small blind aksi lebih dulu dan button terakhir (di heads-up, button adalah small blind: aksi lebih dulu preflop, terakhir postflop). Nomor kursi fisik tak pernah berpindah; posisi berpindah.",
   category: "strategy",
   date: "2026-06-13",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "🎯",
@@ -34,7 +34,7 @@ Tangan yang sama. Hasil yang sepenuhnya berbeda. Satu-satunya yang berubah hanya
 ---
 
 > **Jawaban singkat**
-> Posisi poker adalah ==kursi bernama yang diukur dari tombol dealer== — UTG, lojack, hijack, cutoff, button, small blind, big blind — dan semuanya ==normalnya bergerak satu kursi searah jarum jam setiap hand== seiring button berpindah. Preflop, UTG aksi lebih dulu dan big blind aksi terakhir. Postflop, small blind aksi lebih dulu dan button aksi terakhir.
+> Posisi poker adalah ==kursi bernama yang diukur dari tombol dealer== — UTG, lojack, hijack, cutoff, button, small blind, big blind — dan semuanya ==normalnya bergerak satu kursi searah jarum jam setiap hand== seiring button berpindah. Preflop, UTG aksi lebih dulu dan big blind aksi terakhir. Postflop, small blind aksi lebih dulu dan button aksi terakhir. (Di heads-up, button adalah small blind: aksi lebih dulu preflop, terakhir postflop.)
 
 ---
 
@@ -60,7 +60,7 @@ Berikut bagan posisi 9-max lengkap — setiap nama kursi, singkatannya, zonanya,
 
 Perhatikan pembalikannya: ==blind aksi terakhir preflop tapi pertama postflop==, sementara button aksi terakhir di setiap street postflop. Urutan itulah — bukan kartunya — yang membuat sebagian kursi secara struktural lebih baik daripada yang lain.
 
-> **Catatan meja live:** button adalah cakram fisik yang berpindah satu kursi searah jarum jam setiap hand. "UTG" adalah siapa pun yang duduk tiga kursi di kiri button pada saat itu — bukan kursi tetap.
+> **Catatan meja live:** button adalah cakram fisik yang normalnya berpindah satu kursi searah jarum jam setiap hand. "UTG" adalah siapa pun yang duduk tiga kursi di kiri button pada saat itu — bukan kursi tetap.
 
 ---
 
@@ -124,7 +124,7 @@ Nama-nama itu tak punya asal-usul resmi yang terdokumentasi — slang poker jara
 - **Hijack:** cutoff dan button adalah kursi klasik pencuri blind. Ketika pemain satu kursi lebih awal raise lebih dulu, ia ==**"membajak" (hijack) steal**== yang hendak dilakukan kursi-kursi akhir — jadi kursi itu sendiri mendapat namanya.
 - **Lojack:** muncul belakangan, sebagai ==pelesetan main-main dari "hijack"== — kursi satu tingkat "lebih rendah" dalam hierarki. Banyak versi cerita juga mengaitkannya dengan merek anti-maling LoJack: sebuah hijack, satu tingkat di bawah.
 
-Anggap keduanya sebagai cerita rakyat meja, bukan etimologi. Yang bukan cerita rakyat: hijack dan lojack adalah nama nyata dan standar yang akan Anda lihat di setiap bagan range modern dan situs latihan, itulah kenapa mereka layak dihafal mati.
+Anggap keduanya sebagai cerita rakyat meja, bukan etimologi. Yang bukan cerita rakyat: hijack dan lojack adalah nama nyata dan standar yang akan Anda lihat di sebagian besar bagan range modern dan situs latihan, itulah kenapa mereka layak dihafal mati.
 
 ---
 

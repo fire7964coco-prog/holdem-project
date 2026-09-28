@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Un 3-bet es la primera resubida antes del flop — se llama 3-bet porque la ciega grande es la primera apuesta, la subida de apertura la segunda y tu resubida la tercera. Haz un 3-bet de valor con un núcleo cerrado (QQ+, AK) más unos pocos faroles con bloqueadores del mismo palo como A5s, dale un tamaño de unas 3x la apertura en posición y 4x fuera de posición, y mantén tu frecuencia global de 3-bet cerca del 6–10%. Cuando eres tú quien se enfrenta a un 3-bet, resube con un 4-bet tus manos premium, iguala las que se juegan bien y foldea el resto — foldeando más de lo 'balanceado' contra jugadores de stakes bajos que nunca farolean.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "♦️",
@@ -125,7 +125,7 @@ La mayoría de las guías te sueltan "3x en posición, 4x fuera de posición" y 
 
 Las cuentas están a la vista a propósito porque es donde los principiantes se filtran: **3 × 3bb = 9bb** en posición, **4 × 3bb = 12bb** fuera de posición. Dos reglas que anulan los multiplicadores:
 
-- **Nunca hagas un 3-bet pequeño fuera de posición.** Un 3-bet OOP pequeño le da a tu rival un gran precio para igualar y superarte con la posición — justo lo que estás intentando evitar. Usa el 4x+ completo.
+- **Con profundidades de stack normales, nunca hagas un 3-bet pequeño fuera de posición.** Un 3-bet OOP pequeño le da a tu rival un gran precio para igualar y superarte con la posición — justo lo que estás intentando evitar. Usa el 4x+ completo.
 - **El sizing no es una ley.** Baja *el tamaño* contra jugadores que foldean de más (estás faroleando más barato) y súbelo *y* ve puro valor contra calling stations que nunca foldean. El rake y la profundidad de stack también lo mueven.
 
 En torneos con stacks cortos, todo el cálculo cambia: con más o menos **10–25 ciegas grandes**, muchas manos se convierten en un **3-bet all-in (un "shove")** en lugar de una resubida pequeña, porque no hay margen para subir y foldear. Pasa del min-3-bet a jamear a medida que te quedas corto — aunque contra campos fuertes, conserva algunos 3-bets pequeños que no sean all-in en la mezcla.
@@ -154,7 +154,7 @@ La gran conclusión: **hacer flat es legítimo en posición** — los solvers mo
 
 ## El squeeze: 3-betear a un subidor *y* a un pagador
 
-![Las pilas de fichas de tres jugadores empujadas hacia el centro del tapete verde mientras un jugador desliza una resubida mayor, apretando a un subidor de apertura y a un pagador](/images/holdem-3bet-squeeze.webp "Un squeeze castiga a la vez a un subidor de apertura y a un pagador que hizo flat — el dinero muerto extra hace rentable incluso un 3-bet light")
+![Las pilas de fichas de tres jugadores empujadas hacia el centro del tapete verde mientras un jugador desliza una resubida mayor, apretando a un subidor de apertura y a un pagador](/images/holdem-3bet-squeeze.webp "Un squeeze castiga a la vez a un subidor de apertura y a un pagador que hizo flat — el dinero muerto extra aumenta lo que gana incluso un 3-bet light")
 
 Un **squeeze** es un 3-bet hecho después de que ya haya habido una subida de apertura *y* al menos un pagador. Se llama squeeze porque metes a los dos rivales en un torno: el subidor original ahora tiene que preocuparse por el pagador que tiene detrás, y el pagador — que acaba de mostrar una mano no lo bastante fuerte para resubir — raramente quiere continuar contra tu agresión.
 
@@ -176,13 +176,13 @@ Aquí tienes la mitad del 3-bet que casi todos los artículos se saltan: **estar
 - **Igualar** — con manos que ligan bien y tienen la equity o la posición para continuar: parejas servidas buscando trío, broadways del mismo palo y manos fuertes que no quieren inflar el bote hacia una guerra de 4-bets.
 - **Fold** — todo lo demás. La mayor parte de tu rango de apertura simplemente debería rendirse a un 3-bet; eso es normal, no debilidad.
 
-¿Cuánto deberías continuar? La base teórica es la **Frecuencia Mínima de Defensa (MDF)** — la parte de tu rango que debes continuar para que el que 3-betea no pueda ganar dinero faroleando con dos cartas cualquiera. Es ==bote ÷ (bote + apuesta)== — donde *bote* es lo que hay en el medio antes del 3-bet y *apuesta* es lo que el que 3-betea está **añadiendo** (desde una ciega, es la subida menos las fichas que ya tenía puestas) —, que contra tamaños típicos de 3-bet aterriza en torno a **un tercio de tu rango** en el vacío (con un 3-bet de 3x desde el botón: 4.5bb de bote ÷ (4.5bb + 9bb) ≈ 33%). Pero aquí tienes el exploit que gana dinero en las mesas reales. Se lee mejor desde la otra silla, así que, solo para la tabla de abajo, cámbiate de silla: el dato de abajo es con qué frecuencia foldean **ellos** cuando **tú** les haces 3-bet.
+¿Cuánto deberías continuar? La base teórica es la **Frecuencia Mínima de Defensa (MDF)** — la parte de tu rango que debes continuar para que el que 3-betea no pueda ganar dinero automáticamente faroleando con dos cartas cualquiera (la fórmula trata un farol como si no tuviera equity cuando lo pagan). Es ==bote ÷ (bote + apuesta)== — donde *bote* es lo que hay en el medio antes del 3-bet y *apuesta* es lo que el que 3-betea está **añadiendo** (desde una ciega, es la subida menos las fichas que ya tenía puestas) —, que contra tamaños típicos de 3-bet aterriza en torno a **un tercio de tu rango** en el vacío (con un 3-bet de 3x desde el botón: 4.5bb de bote ÷ (4.5bb + 9bb) ≈ 33%). Pero aquí tienes el exploit que gana dinero en las mesas reales. Se lee mejor desde la otra silla, así que, solo para la tabla de abajo, cámbiate de silla: el dato de abajo es con qué frecuencia foldean **ellos** cuando **tú** les haces 3-bet.
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Stat de fold-to-3-bet del villano | Qué te dice | Tu ajuste |
 |:---:|:---|:---|
-| **~35% (raramente foldea)** | Una calling station — paga con casi cualquier cosa, así que un farol rara vez consigue suficientes folds para ser rentable | 3-betéalo **solo por valor**, deja de farolear y apuesta por valor sin descanso |
+| **~35% (raramente foldea)** | Casi siempre una calling station — continúa con casi cualquier cosa, así que un farol rara vez consigue suficientes folds para ser rentable | 3-betéalo **solo por valor**, deja de farolear y apuesta por valor sin descanso |
 | **~55% (balanceado)** | Un regular que piensa | Juega cerca del GTO — mezcla valor y faroles con bloqueadores |
 | **~70%+ (foldea demasiado)** | Un nit explotable | 3-betéalo **light mucho más a menudo** — te regala el bote |
 
@@ -240,7 +240,7 @@ A. Porque el nombre cuenta las apuestas de la secuencia, no las subidas. La cieg
 
 **Q. ¿Cuál es la diferencia entre un 3-bet y un 4-bet?**
 
-A. Un 3-bet es la primera resubida (sobre una subida de apertura); un 4-bet es la siguiente resubida, hecha sobre un 3-bet. Así que la escalera va: subida de apertura (2ª apuesta) → 3-bet (3ª apuesta) → 4-bet (4ª apuesta) → 5-bet (normalmente all-in). Un 4-bet representa un rango muy fuerte y polarizado.
+A. Un 3-bet es la primera resubida (sobre una subida de apertura); un 4-bet es la siguiente resubida, hecha sobre un 3-bet. Así que la escalera va: subida de apertura (2ª apuesta) → 3-bet (3ª apuesta) → 4-bet (4ª apuesta) → 5-bet (normalmente all-in). Un 4-bet representa un rango muy fuerte — a menudo polarizado entre manos premium y unos pocos faroles.
 
 **Q. ¿Con qué manos deberías hacer un 4-bet y cuánto?**
 
@@ -268,7 +268,7 @@ A. Un rango lineal (merged) es un solo bloque sólido de tus mejores manos — s
 
 **Q. ¿Cuánto deberías subir en un 3-bet?**
 
-A. Unas 3x la apertura en posición y 4–4.5x fuera de posición. Así que contra una apertura de 3 ciegas grandes, llévalo a unas 9bb en posición o 12bb fuera de posición. Suma más o menos una subida de apertura extra por pagador cuando hagas squeeze. No hagas un 3-bet pequeño fuera de posición — le da a tu rival un call barato y fácil en posición.
+A. Unas 3x la apertura en posición y 4–4.5x fuera de posición. Así que contra una apertura de 3 ciegas grandes, llévalo a unas 9bb en posición o 12bb fuera de posición. Suma más o menos una subida de apertura extra por pagador cuando hagas squeeze. Con profundidades de stack normales, no hagas un 3-bet pequeño fuera de posición — le da a tu rival un call barato y fácil en posición.
 
 **Q. ¿Cuál es un buen rango de 3-bet por posición?**
 
@@ -280,7 +280,7 @@ A. Para un jugador sólido, una frecuencia global de 3-bet en torno al 6–10% e
 
 **Q. ¿Qué es un squeeze?**
 
-A. Un squeeze es un 3-bet hecho después de una subida de apertura y al menos un pagador. El dinero muerto extra del bote lo hace rentable, y presiona a los dos rivales a la vez — al subidor y al pagador con rango con techo. Dale a los squeezes un tamaño mayor que a un 3-bet normal, sumando más o menos una subida de apertura extra por cada pagador.
+A. Un squeeze es un 3-bet hecho después de una subida de apertura y al menos un pagador. El dinero muerto extra del bote aumenta la recompensa cuando el squeeze funciona, y la jugada presiona a los dos rivales a la vez — al subidor y al pagador con rango con techo. Dale a los squeezes un tamaño mayor que a un 3-bet normal, sumando más o menos una subida de apertura extra por cada pagador.
 
 **Q. ¿Cómo respondes a un 3-bet?**
 
@@ -300,7 +300,7 @@ A. A medida que los stacks se acortan — más o menos 10–25 ciegas grandes �
 
 1. **Un 3-bet es la primera resubida preflop** — tercera apuesta de la secuencia, porque la ciega cuenta como apuesta uno.
 2. **Construye dos rangos:** un núcleo de valor (QQ+, AK) con el que quieres que te paguen, y faroles con bloqueadores del mismo palo (A5s y compañía) elegidos por sus bloqueadores y su jugabilidad.
-3. **Dale un tamaño de ~3x en posición, ~4x fuera** — y nunca pequeño fuera de posición.
+3. **Dale un tamaño de ~3x en posición, ~4x fuera** — y, con profundidades de stack normales, no pequeño fuera de posición.
 4. **Ajusta la forma a la situación:** lineal vs aperturas amplias/débiles (y desde la ciega pequeña ante una subida), polarizado vs aperturas cerradas y desde la ciega grande.
 5. **Enfrentando un 3-bet, la mayoría de las manos foldean** — 4-bet con las premium, iguala las jugables y foldea más de lo "balanceado" contra rivales que nunca farolean.
 6. **Y entonces llega el flop.** Un bote de 3-bet no se juega en nada como uno de subida simple — con los números de este artículo (apertura de 3bb, 3-bet de 9bb, 100bb de profundidad) el bote es unas 2.6× más grande (19.5bb frente a los 7.5bb que construiría un flat mano a mano; un 3-bet más grande fuera de posición lo empuja hacia 3.5×) y el SPR baja hasta cerca de 4.7. Aun así, quien hizo el 3-bet a menudo [apuesta todo su rango en el flop](/es/blog/3bet-pot-cbet) — por la forma de ese rango, no porque el stack sea corto.

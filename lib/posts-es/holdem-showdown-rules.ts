@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "En torneos, sin all-in, enseña primero el último agresor del river; si todos pasan, empieza el primer jugador activo a la izquierda del botón. Con all-in, todas las manos restantes se muestran en cuanto terminan las apuestas. Quien pagó en el river y conserva o ya mostró sus cartas puede pedir ver la mano del último agresor. En cash, la sala fija las reglas para mostrar y hacer muck.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -41,7 +41,7 @@ La regla depende de cómo terminó la última ronda de apuestas (para la secuenc
 |--------------------|-----------------|
 | Alguien apostó o subió en el river | ==El último jugador que apostó o subió== enseña primero — salvo que fuera un all-in en torneo (ver abajo) |
 | Todos pasaron en el river | El primer jugador activo a la izquierda del botón enseña primero |
-| All-in en una calle anterior (sin apuestas en el river) | Torneo: todas las manos se muestran sin demora en cuanto termina toda la acción de apuestas (regla 16 de la TDA 2024). Cash: si hay side pot, los del side pot enseñan primero; y en una partida sin límite, el que fue all-in da la vuelta primero (regla 149 de las Live Action Rules) |
+| All-in en una calle anterior (las apuestas terminaron antes del river) | Torneo: todas las manos se muestran sin demora en cuanto termina toda la acción de apuestas (regla 16 de la TDA 2024). Cash: si hay side pot, los del side pot enseñan primero; y en una partida sin límite, el que fue all-in da la vuelta primero (regla 149 de las Live Action Rules) |
 
 </div>
 
@@ -61,13 +61,13 @@ Una vez que el último agresor enseña su mano, el resto de jugadores puede:
 
 ==r:Pero hay una excepción importante:== si tu apuesta del river fue pagada, el que pagó puso el precio completo por ver tu mano. Pedirle al dealer que dé la vuelta a una mano tirada al muck es la regla de **"I want to see that hand"**. En torneo la regla 18 de la TDA 2024 la acota: quien ya no tiene cartas en el showdown, o las tiró boca abajo, pierde el derecho a pedirlo; el derecho es intocable solo para quien pagó la apuesta del river y conserva o ha enseñado sus cartas, y solo sobre la mano del último agresor. Lo demás queda a criterio del director del torneo. En cash mandan las reglas de la casa, y no son automáticamente más laxas: con las WSOP Live Action Rules, pedir ver una mano que no se ha expuesto exige sospecha de colusión **y** la presencia de un floor (==regla 147 de las Live Action Rules==). (No la confundas con "show one, show all", que significa que si enseñas tus cartas voluntariamente a un jugador, toda la mesa tiene derecho a verlas.)
 
-Regla práctica: ==como último agresor enseñas tú, también con el farol pagado.== Tirar boca abajo es la opción del que paga, después de ver la mano del apostador. Si apuestas y tiras rápido pierdes dos veces: en torneo el que pagó por verla puede exigir tu mano igualmente (==regla 18 de la TDA 2024==) — en un cash de las WSOP no puede, salvo sospecha de colusión y con un floor delante (regla 147 de las Live Action Rules) — y, como mandan las cartas, más de un bote se ha tirado con un as alto que iba ganando.
+Regla práctica: ==como último agresor, da la vuelta a tus cartas — también con el farol pagado.== El que pagó enseña o tira después de ver tu mano. Como apostador puedes tirar en lugar de enseñar y renunciar al bote, pero si tiras rápido pierdes dos veces: en torneo el que pagó por verla puede exigir tu mano igualmente (==regla 18 de la TDA 2024==) — en un cash de las WSOP no puede, salvo sospecha de colusión y con un floor delante (regla 147 de las Live Action Rules) — y, como mandan las cartas, más de un bote se ha tirado con un as alto que iba ganando.
 
 ---
 
 ## Orden del showdown cuando todos pasaron en el river
 
-Si nadie apostó en el river (todos pasaron), el showdown empieza por el **primer jugador activo a la izquierda del botón** y sigue en el sentido de las agujas del reloj.
+Si nadie apostó en el river (todos pasaron) y nadie está all-in, el showdown empieza por el **primer jugador activo a la izquierda del botón** y sigue en el sentido de las agujas del reloj.
 
 Ejemplo: el botón, la ciega pequeña y la ciega grande llegan al river. La SB pasa, la BB pasa, el botón pasa. El showdown empieza por la SB (primer jugador activo a la izquierda del botón). La SB puede enseñar o tirar. Luego la BB. Y el botón, el último.
 
@@ -85,7 +85,7 @@ En **torneo**, cuando un jugador va all-in y ya no hay más apuestas posibles, l
 |----------------|---------------|
 | Un jugador va all-in en una calle anterior, los demás pagan, no hay más apuestas posibles | Torneo: todas las manos se muestran sin demora en cuanto termina toda la acción de apuestas. Cash: si hay side pot, los del side pot enseñan primero; y en una partida sin límite, el jugador all-in da la vuelta primero (regla 149 de las Live Action Rules) |
 | Una apuesta all-in en el river es pagada | Cash: el que fue all-in enseña primero como último agresor. Torneo: no hay ningún orden de mostrar — por la regla 16 de la TDA 2024 todas las manos se ponen boca arriba a la vez y ==r:aquí no puede tirar nadie== |
-| Varios all-ins que crean varios side pots | Cada bote se resuelve por separado; se enseñan todas las manos implicadas |
+| Varios all-ins que crean varios side pots | Cada bote se resuelve por separado. Torneo: se enseñan todas las manos implicadas. Cash: para ganar cualquier parte de un bote, un jugador tiene que enseñar sus cartas (regla 143 de las WSOP Live Action Rules) |
 
 </div>
 
@@ -113,7 +113,7 @@ Situación real: llevas J♥ 10♥ en una mesa Q♥ 9♥ 8♥ 2♣ 5♦. Tienes 
 
 El slow roll es ==tardar a propósito en enseñar una mano muy fuerte cuando ya sabes que has ganado==.
 
-Llevas las nuts. El rival enseña una mano fuerte. Tú haces una pausa, finges pensar, miras tus cartas despacio, haces esperar a todo el mundo — y entonces das la vuelta a la ganadora. Técnicamente legal. Universalmente odiado.
+Llevas las nuts. El rival enseña una mano fuerte. Tú haces una pausa, finges pensar, miras tus cartas despacio, haces esperar a todo el mundo — y entonces das la vuelta a la ganadora. Ninguna regla lo prohíbe por su nombre, pero tampoco está protegido: provocar a un rival con teatro (regla 47 del reglamento de torneos de la WSOP) y retrasar el juego de forma persistente (regla 70 de la TDA 2024) pueden acarrear sanción. Y es universalmente odiado.
 
 ![Slow roll en el póker — el resto de jugadores se exaspera mientras un jugador retrasa a propósito enseñar la mano ganadora](/images/holdem-showdown-slow-roll.webp)
 
@@ -168,11 +168,11 @@ A. El showdown es la apertura o muestra de cartas al final de la mano: cuando do
 
 **Q. ¿Cuándo se muestran las cartas en el póker?**
 
-A. Solo en el showdown, es decir, cuando queda al menos un rival tras la última ronda de apuestas del river. Si todos los demás se tiran antes de llegar ahí, ganas el bote sin enseñar nada. También puedes enseñar tus cartas voluntariamente en cualquier momento tras acabar la mano, pero no estás obligado salvo que llegues al showdown y te toque mostrar.
+A. Solo en el showdown, es decir, cuando queda al menos un rival tras la última ronda de apuestas del river (en un all-in de torneo, en cuanto termina toda la acción de apuestas). Si todos los demás se tiran antes de llegar ahí, ganas el bote sin enseñar nada. También puedes enseñar tus cartas voluntariamente en cualquier momento tras acabar la mano, pero no estás obligado salvo que llegues al showdown y te toque mostrar.
 
 **Q. ¿Quién enseña las cartas primero en el showdown de póker?**
 
-A. El último jugador que hizo una acción agresiva (apostar o subir) en la última ronda de apuestas debe enseñar primero. Si en la última ronda todos pasaron, enseña primero el primer jugador activo a la izquierda del botón, y el turno sigue en el sentido de las agujas del reloj.
+A. Cuando nadie está all-in, el último jugador que hizo una acción agresiva (apostar o subir) en la última ronda de apuestas debe enseñar primero. Si en la última ronda todos pasaron, enseña primero el primer jugador activo a la izquierda del botón, y el turno sigue en el sentido de las agujas del reloj. Los botes con all-in siguen su propia regla — mira la pregunta sobre el all-in más abajo.
 
 **Q. ¿Tienes que enseñar tus cartas si te pagan en el showdown?**
 
@@ -180,11 +180,11 @@ A. Sí — si fuiste el último en apostar o subir en el river, debes enseñar p
 
 **Q. ¿Puedes tirar tus cartas en el showdown sin enseñarlas?**
 
-A. Sí, pero solo si has perdido claramente. Una vez enseñada la mano ganadora, los jugadores que pierden pueden tirar sus cartas boca abajo. Las excepciones son reglas de torneo: si hiciste la última apuesta del river y te pagaron, quien pagó por ver tu mano puede exigirla (regla 18-B de la TDA 2024 — en una partida de cash de la WSOP no puede, salvo sospecha de colusión), y en cuanto un jugador está all-in y se ha completado toda la acción de apuestas, hay que enseñar todas las manos del bote principal y de los side pots, así que nadie puede tirar (regla 16 de la TDA 2024). Si hay cualquier duda sobre quién ganó, no tires nunca antes de que el dealer lea las dos manos.
+A. Sí — pero tirarlas supone renunciar al bote, así que hazlo solo cuando estés seguro de que has perdido. Una vez enseñada la mano ganadora, los jugadores que pierden pueden tirar sus cartas boca abajo. Las excepciones son reglas de torneo: si hiciste la última apuesta del river y te pagaron, quien pagó por ver tu mano puede exigirla, siempre que aún conserve o haya mostrado sus propias cartas (regla 18-B de la TDA 2024 — en una partida de cash de la WSOP no puede, salvo sospecha de colusión), y en cuanto un jugador está all-in y se ha completado toda la acción de apuestas, hay que enseñar todas las manos del bote principal y de los side pots, así que nadie puede tirar (regla 16 de la TDA 2024). Si hay cualquier duda sobre quién ganó, no tires nunca antes de que el dealer lea las dos manos.
 
 **Q. ¿Qué es el slow roll en el póker y por qué está mal visto?**
 
-A. El slow roll es retrasar a propósito enseñar una mano ganadora que ya sabes que es la mejor. Es legal, pero universalmente odiado, porque se ve como humillar al rival a propósito. Si llevas las nuts o una ganadora clara, da la vuelta a tus cartas inmediatamente. La velocidad con la que enseñas dice mucho de ti en la mesa.
+A. El slow roll es retrasar a propósito enseñar una mano ganadora que ya sabes que es la mejor. Ninguna regla lo prohíbe por su nombre, pero está universalmente mal visto, porque se ve como humillar al rival a propósito — y provocar o retrasar el juego de forma persistente puede sancionarse (regla 47 del reglamento de torneos de la WSOP · regla 70 de la TDA 2024). Si llevas las nuts o una ganadora clara, da la vuelta a tus cartas inmediatamente. La velocidad con la que enseñas dice mucho de ti en la mesa.
 
 **Q. En una situación de all-in, ¿quién enseña primero?**
 

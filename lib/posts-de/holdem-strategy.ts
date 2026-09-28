@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Jede gewinnende Texas-Hold'em-Entscheidung reduziert sich auf fünf wiederholbare Fragen: Wo sitze ich (Position), ist diese Hand spielenswert, raise oder fold ich, statt zu open-limpen, bette ich auf dem Flop weiter, und wann lasse ich los? Ein Tight-Aggressive-Spieler, der diese fünf gut beantwortet, foldet ~80% der Hände preflop, spielt sie aggressiv, wenn er sie spielt, und schlägt fast jedes Freizeitspiel – ohne auswendig gelernte Tippliste.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-27",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "14 Min.",
   emoji: "♠️",
@@ -145,18 +145,18 @@ Aggression gewinnt Pots. **Disziplin behält Stacks.** Die Entscheidung, die Bre
 
 Hier ein konkreter aus einer Hand, die ich gespielt habe. Ich raiste ==A♣K♣== und bekam einen Caller. Der Flop kam ==2♥ 7♦ 9♠== – ein totaler Miss. Ich habe Ass-hoch, kein Pair, keinen Draw. Ich feuere eine C-Bet (Entscheidung 4, in Position, trockenes Board), und mein Gegner check-**raist** mich. An diesem Punkt ist die Mathematik einfach: Ich habe die bestmögliche High Card und sonst nichts, und ein Check-Raise auf diesem Board ist bei niedrigen Stakes fast nie ein Bluff. Also folde ich Ass-hoch und verliere das Minimum. Zwei Jahre früher hätte ich „einfach gecallt, um zu sehen“ – und jedes Mal ein Set Neunen bezahlt.
 
-Die allgemeine Regel: **[wenn die Geschichte, die dein Gegner erzählt, die Hand schlägt, die du tatsächlich hältst](/de/blog/holdem-when-to-fold "thumb:/images/holdem-when-to-fold-hero.webp"), und du nicht die Odds hast, um auszudrawen, lass sie los.** Eine gute-aber-geschlagene Hand zu folden fühlt sich wie Verlieren an. Es ist tatsächlich die einzelne profitabelste Gewohnheit im Spiel. Wenn du *doch* einen Draw hast, kommt die Fold-oder-Call-Entscheidung auf [Pot Odds](/de/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") hinaus – den Preis, den du bekommst, gegen die Chance, dass du triffst.
+Die allgemeine Regel: **[wenn die Geschichte, die dein Gegner erzählt, die Hand schlägt, die du tatsächlich hältst](/de/blog/holdem-when-to-fold "thumb:/images/holdem-when-to-fold-hero.webp"), und du nicht die Odds hast, um auszudrawen, lass sie los.** Eine gute-aber-geschlagene Hand zu folden fühlt sich wie Verlieren an. Es ist tatsächlich die einzelne profitabelste Gewohnheit im Spiel. Wenn du *doch* einen Draw hast, kommt die Fold-oder-Call-Entscheidung auf [Pot Odds](/de/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") hinaus – den Preis, den du bekommst, gegen die Chance, eine Hand zu treffen, die gewinnt.
 
 ---
 
 ## Welche Mathematik brauchst du beim Poker wirklich?
 
 > **Kurze Antwort**
-> Zwei Zahlen reichen für den Anfang: **Pot Odds** – der Preis eines Calls gegen die Chance zu treffen – und die **Set-Mining-Odds**, die erklären, warum kleine Paare nur bei tiefen Stacks profitabel sind. Alles Weitere (Equity, Implied Odds, Fold Equity) baut darauf auf. Kopfrechnen im Sekundentakt ist nicht nötig; die Faustregel und eine Tabelle genügen.
+> Zwei Zahlen reichen für den Anfang: **Pot Odds** – der Preis eines Calls gegen die Chance, eine Hand zu treffen, die gewinnt – und die **Set-Mining-Odds**, die erklären, warum kleine Paare nur bei tiefen Stacks profitabel sind. Alles Weitere (Equity, Implied Odds, Fold Equity) baut darauf auf. Kopfrechnen im Sekundentakt ist nicht nötig; die Faustregel und eine Tabelle genügen.
 
 Beide lassen sich am Tisch in wenigen Sekunden anwenden – hier ist, was jede von ihnen dir sagt.
 
-**Pot Odds** sagen dir, ob ein Call profitabel ist: vergleiche den Preis des Calls mit der Größe des Pots, dann mit deiner Chance zu treffen. Wenn der Pot dir 4:1 legt und dein Draw etwa 1 zu 5 trifft, ist Callen grob Break-even; besser als das, ist es Profit. Das ist der Motor hinter jedem „jage ich diesen Draw?“-Spot – und der [Pot-Odds-Guide](/de/blog/holdem-pot-odds) verwandelt ihn in einen 10-Sekunden-Tabellenblick.
+**Pot Odds** sagen dir, ob ein Call profitabel ist: vergleiche den Preis des Calls mit der Größe des Pots, dann mit deiner Chance, eine Gewinnkarte zu treffen. Wenn der Pot dir 4:1 legt und dein Draw in etwa 1 von 5 Fällen ankommt und gewinnt, ist Callen grob Break-even; besser als das, ist es Profit. Das ist der Motor hinter jedem „jage ich diesen Draw?“-Spot – und der [Pot-Odds-Guide](/de/blog/holdem-pot-odds) verwandelt ihn in einen 10-Sekunden-Tabellenblick.
 
 **Set-Mining-Odds** erklären, warum kleine Pairs spekulativ sind. Calle einen Raise mit Pocket Fives in der Hoffnung, ein Set zu floppen – Three of a Kind – und du verbindest dich nur etwa **11,8% der Zeit, rund 1 von 8,5.** Wenn es klappt, ist es wunderschön: Flop ==5♣ K♠ 2♦== mit ==5♠5♦== und du hast ein verstecktes Set, das ein Overpair stackt. Aber weil du ~88% der Flops verfehlst, ist Set-Mining nur profitabel, wenn die effektiven Stacks tief genug sind, um dich beim Treffen auszuzahlen – eine grobe Richtschnur ist **mindestens ~15–20× die Größe des Calls.** Flache Stacks? Dann wird dieser spekulative Call zum Leak. Die vollständige [Odds- und Wahrscheinlichkeitstabelle](/de/blog/holdem-probability) hat jede Zahl, die du je brauchen wirst.
 
@@ -222,7 +222,7 @@ Auch **GTO** (*spieltheoretisch optimal*) ist im Kern nichts anderes: Was ein So
 
 **Q. Was ist die beste Strategie für Texas Hold'em?**
 
-A. Spiele einen tight-aggressiven Stil, der um fünf sich wiederholende Entscheidungen gebaut ist: wähle Hände nach deiner Position, folde das meiste, was du bekommst (rund 80% preflop), steige in Pots durch Raisen statt Limpen ein, C-bette den Flop, wenn du die Initiative hast, und mach disziplinierte Folds, wenn du geschlagen bist. Diese Kombination schlägt fast jedes Freizeitspiel ganz ohne fortgeschrittene Theorie.
+A. Spiele einen tight-aggressiven Stil, der um fünf sich wiederholende Entscheidungen gebaut ist: wähle Hände nach deiner Position, folde das meiste, was du bekommst (rund 80% preflop), steige in Pots durch Raisen statt Limpen ein, C-bette den Flop, wenn du die Initiative hast und Board und Gegner es zulassen, und mach disziplinierte Folds, wenn du geschlagen bist. Diese Kombination schlägt fast jedes Freizeitspiel ganz ohne fortgeschrittene Theorie.
 
 **Q. Was ist die beste Poker-Strategie für Anfänger?**
 
@@ -242,7 +242,7 @@ A. Bette, wenn du eine Hand hast, mit der es sich lohnt, einen Pot aufzubauen, o
 
 **Q. Wann sollte man im Poker bluffen?**
 
-A. Bluffe, wenn die Geschichte glaubwürdig ist und dein Gegner tatsächlich folden kann – nicht nur, weil du verfehlt hast. Die besten Bluffs kommen mit Rückversicherung: ein Draw (ein Semi-Bluff), der noch gewinnen kann, wenn gecallt wird, in Position, gegen einen Gegner, auf einem Board, das deine Range begünstigt. In mehrere Caller oder Spieler zu bluffen, die nie folden, ist einfach Geld verbrennen.
+A. Bluffe, wenn die Geschichte glaubwürdig ist und dein Gegner tatsächlich folden kann – nicht nur, weil du verfehlt hast. Die besten Bluffs kommen mit Rückversicherung: ein Draw (ein Semi-Bluff), der noch gewinnen kann, wenn gecallt wird, in Position, gegen einen Gegner, auf einem Board, das deine Range begünstigt. Ein reiner Bluff in mehrere Caller oder gegen Spieler, die nie folden, ist einfach Geld verbrennen.
 
 **Q. Wann sollte man 3-betten?**
 
@@ -266,7 +266,7 @@ A. Beides – nur auf unterschiedlichen Zeitskalen. In einer einzelnen Hand ents
 
 **Q. Was ist GTO-Poker?**
 
-A. GTO steht für *Game Theory Optimal*, auf Deutsch spieltheoretisch optimal: eine so ausbalancierte Strategie, dass kein Gegner sie profitabel kontern kann, egal was er tut. Solver berechnen genau das. Am Tisch ist GTO deshalb weniger ein Rezept als ein **Referenzpunkt** – die Linie, von der aus du bewusst abweichst. Wer gegen schwächere Gegner spielt, verdient mehr mit **exploitativem** Spiel, also mit gezielten Abweichungen gegen ihre konkreten Fehler.
+A. GTO steht für *Game Theory Optimal*, auf Deutsch spieltheoretisch optimal: eine so ausbalancierte Strategie, dass heads-up kein Gegner sie profitabel kontern kann, egal was er tut. Solver berechnen genau das. Am Tisch ist GTO deshalb weniger ein Rezept als ein **Referenzpunkt** – die Linie, von der aus du bewusst abweichst. Wer gegen schwächere Gegner spielt, verdient mehr mit **exploitativem** Spiel, also mit gezielten Abweichungen gegen ihre konkreten Fehler.
 
 **Q. Wie lernt man Poker-Strategie am schnellsten?**
 

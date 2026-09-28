@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Bis zum River endest du mit einem Paar in 43,8% der Fälle, mit zwei Paaren in 23,5%, mit einem Flush in 3,0% und mit einem Full House in 2,6% – während ein Royal Flush nur etwa einmal in 31.000 Händen auftaucht.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "13 Min.",
   emoji: "🎲",
@@ -34,7 +34,7 @@ Poker ist kein Ratespiel. Jeder Call, jeder Fold und jeder Shove ist eine ==als 
 :::
 
 > **Kurze Antwort**
-> Zwei Zahlen entscheiden die meisten Hände: Ein **Paar** ist mit 43,8% das mit Abstand häufigste Ergebnis bis zum River, ein **Flush** dagegen nur 3,03%. Für Draws brauchst du keine Tabelle – die ==**Faustregel**== genügt: Outs × 4 am Flop, Outs × 2 am Turn. Ein Flushdraw (9 Outs) kommt so auf rund 36% statt exakt 35,0%.
+> Zwei Zahlen entscheiden die meisten Hände: Ein **Paar** ist mit 43,8% das mit Abstand häufigste Ergebnis bis zum River, ein **Flush** dagegen nur 3,03%. Für Draws brauchst du keine Tabelle – die ==**Faustregel**== genügt: Outs × 4 am Flop (nur, wenn du beide Karten ohne weitere Zahlung siehst), Outs × 2 am Turn. Ein Flushdraw (9 Outs) kommt so auf rund 36% statt exakt 35,0%.
 
 ---
 
@@ -144,7 +144,7 @@ Beachte die zwei Spalten – und nimm die, die zu deiner Situation passt. Die li
 
 ## Poker-Wahrscheinlichkeiten im Kopf berechnen: die Faustregel
 
-Die **Faustregel** (auch „Regel der 2 und 4“ genannt) ersetzt am Tisch jede Tabelle: Zähle deine Outs, multipliziere sie am Flop mit **4** und am Turn mit **2** – das Ergebnis ist deine Trefferchance in Prozent. Neun Outs ergeben so 36% am Flop und 18% am Turn; die exakten Werte sind 35,0% und 19,6%. Näher musst du im Kopf nicht herankommen.
+Die **Faustregel** (auch „Regel der 2 und 4“ genannt) ersetzt am Tisch jede Tabelle: Zähle deine Outs, multipliziere sie am Flop mit **4** (wenn beide Karten kommen) und am Turn mit **2** – das Ergebnis ist deine Trefferchance in Prozent. Neun Outs ergeben so 36% am Flop und 18% am Turn; die exakten Werte sind 35,0% und 19,6%. Näher musst du im Kopf nicht herankommen.
 
 :::steps
 Zähle deine Outs | Die ungesehenen Karten, die deine Hand komplettieren (Flushdraw = 9)
@@ -164,7 +164,7 @@ Das ist die Abkürzung: saubere Outs → der Multiplikator für die Karten, die 
 
 ## Pot Odds anwenden: wann ein Call profitabel ist
 
-Die Pot Odds sind der Anteil am finalen Pot, den du für deinen Call bezahlst: Call ÷ (Pot nach deinem Call). Liegen nach der Bet deines Gegners $100 im Pot und kostet dich der Call $25, zahlst du 25 in einen Endpot von 125 – also **20%**. Ist deine Equity höher als dieser Preis, verdient der Call langfristig Geld. Deine Trefferchance allein sagt dir gar nichts, solange du den Preis nicht daneben legst.
+Die Pot Odds sind der Anteil am finalen Pot, den du für deinen Call bezahlst: Call ÷ (Pot nach deinem Call). Liegen nach der Bet deines Gegners $100 im Pot und kostet dich der Call $25, zahlst du 25 in einen Endpot von 125 – also **20%**. Ist deine Equity – gezählt über die Karten, die dieser Call kauft – höher als dieser Preis, verdient der Call langfristig Geld. Deine Trefferchance allein sagt dir gar nichts, solange du den Preis nicht daneben legst.
 
 ![Pot-Odds-Infografik – ein $100-Pot und ein $25-Call, also 25 ÷ 125 bedeutet, du brauchst 20% Equity](/images/holdem-probability-pot-odds.webp "Ein $25-Call in einen $100-Pot: 25 ÷ 125 = 20% Equity nötig, um die Nulllinie zu treffen")
 
@@ -174,11 +174,11 @@ Die Pot Odds sind der Anteil am finalen Pot, den du für deinen Call bezahlst: C
 Pot nach der Bet | $100 + $50 = $150
 Dein Call | $50, um $150 zu gewinnen (finaler Pot $200)
 Pot Odds | 50 ÷ 200 = 25% – du brauchst mindestens 25% Equity
-Deine Equity | Flushdraw ≈ 35% bis zum River (Faustregel: 9 × 4) – die Zahl setzt voraus, dass du ==beide== Karten siehst
+Deine Equity | Flushdraw mit 9 sauberen Outs ≈ 35% bis zum River (Faustregel: 9 × 4) – die Zahl setzt voraus, dass du ==beide== Karten siehst
 Entscheidung | Mit zwei kommenden Karten: 35% > 25% → ein klar profitabler ==g:Call==
 :::
 
-Das ist der Moment, in dem sich all die Zahlen auszahlen – aber **nimm die Zahl der Street, die du gerade bezahlst**. Kommen beide Karten (du bist all-in, oder der Turn wird durchgecheckt), schlagen deine **35%** den Preis von **25%**, und Callen gewinnt langfristig Geld, obwohl du die Hand öfter verlieren wirst als nicht. Bettet dein Gegner am Turn erneut, kaufst du dir mit diesem Call nur die Turn-Karte – vom Flop aus sind das ==9 ÷ 47 = 19,1%==, *unter* dem Preis – dann braucht der Draw [Implied Odds](/de/blog/holdem-implied-odds "thumb:/images/holdem-implied-odds-hero.webp"), also das Geld, das du auf den Streets nach dem Treffer gewinnst, um die Lücke zu schließen. Die ×4-Zahl auf eine Entscheidung über eine einzige Karte anzuwenden ist der häufigste Weg, auf dem Anfänger einen Draw überschätzen. Für die vollständige Methode und den Bet-Size-Spickzettel siehe [wie man Pot Odds berechnet](/de/blog/holdem-pot-odds).
+Das ist der Moment, in dem sich all die Zahlen auszahlen – aber **nimm die Zahl der Street, die du gerade bezahlst**. Kommen beide Karten (du bist all-in, oder der Turn wird durchgecheckt), schlagen die **35%** eines sauberen Draws den Preis von **25%**, und Callen gewinnt langfristig Geld, obwohl du die Hand öfter verlieren wirst als nicht. Bettet dein Gegner am Turn erneut, kaufst du dir mit diesem Call nur die Turn-Karte – vom Flop aus sind das ==9 ÷ 47 = 19,1%==, *unter* dem Preis – dann braucht der Draw [Implied Odds](/de/blog/holdem-implied-odds "thumb:/images/holdem-implied-odds-hero.webp"), also das Geld, das du auf den Streets nach dem Treffer gewinnst, um die Lücke zu schließen. Die ×4-Zahl auf eine Entscheidung über eine einzige Karte anzuwenden ist der häufigste Weg, auf dem Anfänger einen Draw überschätzen. Für die vollständige Methode und den Bet-Size-Spickzettel siehe [wie man Pot Odds berechnet](/de/blog/holdem-pot-odds).
 
 ---
 
@@ -240,7 +240,7 @@ A. Wenn du einen Flushdraw floppst (neun Outs), komplettierst du ihn etwa 35% de
 
 **Q. Wie stehen die Odds, ein Set zu floppen?**
 
-A. Etwa 11,8%, oder grob 1 zu 8,5, wenn du ein Pocket Pair hältst. Die gleichwertigen Odds von 7,5:1 beschreiben Verfehlen gegen Treffen, keine empfohlene Stacktiefe. Ein Set-Mining-Call braucht zusätzlich realistische Auszahlungen später in der Hand; die praktische Richtlinie von etwa dem 15- bis 20-Fachen lässt Raum für Sets, die keine Action bekommen oder verlieren.
+A. Etwa 11,8%, oder grob 1 zu 8,5, wenn du ein Pocket Pair hältst. Die gleichwertigen Odds von 7,5:1 beschreiben Verfehlen gegen Treffen, keine empfohlene Stacktiefe. Ein Set-Mining-Call braucht zusätzlich realistische Auszahlungen später in der Hand; die praktische Richtlinie – effektive Stacks von etwa dem 15- bis 20-Fachen deines Calls – lässt Raum für Sets, die keine Action bekommen oder verlieren.
 
 **Q. Wie hoch ist die Chance, einen Royal Flush zu floppen?**
 
@@ -264,7 +264,7 @@ A. Es gibt keine einzelne feste Zahl – es hängt davon ab, wie viele Gegner Po
 
 **Q. Welche Hand gewinnt im Poker am häufigsten?**
 
-A. Ein Paar, danach zwei Paare. Weil sich alle Spieler die fünf Gemeinschaftskarten teilen, entscheiden sich die meisten Texas-Hold'em-Pots über ein einzelnes Paar und seinen Kicker – Flushes, Straights und Full Houses gewinnen weit seltener, als Anfänger erwarten. Die vollständigen Häufigkeiten stehen in der Tabelle weiter oben.
+A. Ein Paar, danach zwei Paare. Weil sich alle Spieler die fünf Gemeinschaftskarten teilen, entscheiden sich die meisten Texas-Hold'em-Pots über ein einzelnes Paar und seinen Kicker – Flushes, Straights und Full Houses gewinnen weit seltener, als Anfänger erwarten. Wie oft jede Hand über sieben Karten vorkommt – was nicht dasselbe ist wie, wie oft sie den Pot gewinnt –, steht in der Tabelle weiter oben.
 
 **Q. Wie oft gewinnt am Ende wirklich die beste Hand?**
 

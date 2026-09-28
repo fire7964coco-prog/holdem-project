@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Dari 169 tipe starting hand, hanya irisan atas kecil — sekitar 15–20% kartu yang Anda terima — yang profit untuk pemula. Pair besar (AA–TT) dan AK raise dari kursi mana pun; makin belakang Anda beraksi, makin lebar Anda open — dari ~13% di under the gun hingga ~43% di button (lebih lebar lagi di 6-max). Mulai dengan chart sederhana, tambahkan chart preflop GTO setelah raise-or-fold jadi otomatis.",
   category: "strategy",
   date: "2026-06-14",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "10 mnt",
   emoji: "🂡",
@@ -136,7 +136,7 @@ Button adalah kursi terbaik di poker. ==g:Anda beraksi terakhir di flop, turn, d
 - **Suited connector (T9s, 98s, 87s)** — murah, tangan implied-odds tinggi
 - **Broadway offsuit lebih lemah (KTo, QJo)** — hanya di posisi belakang, jangan pernah di awal
 
-Aturan kunci: ==tangan speculative ini butuh posisi agar profit==. Jika pemain UTG raise di depan Anda, kebanyakan langsung masuk muck — Anda akan membayar sebuah raise untuk memainkan tangan spekulatif melawan range yang kuat, dan flop murah yang mereka butuhkan sudah hilang.
+Aturan kunci: ==sebagai tangan pembuka, tangan speculative ini butuh posisi agar profit==. Dan jika pemain UTG raise di depan Anda, kebanyakan langsung masuk muck — Anda akan membayar sebuah raise untuk memainkan tangan spekulatif melawan range yang kuat, dan flop murah yang mereka butuhkan sudah hilang.
 
 ---
 
@@ -173,7 +173,7 @@ Satu catatan lingkup: ini soal berapa persen dari *range* Anda yang dimainkan, b
 
 Saya membuka output solver saat belajar, dan saya tetap memberi setiap pemula chart sederhana lebih dulu. Ini dua alat berbeda, dan tahu yang mana dipakai lebih berharga daripada salah satu chart sendirian.
 
-**Chart preflop GTO** berasal dari solver (PioSOLVER, GTO Wizard dan kawan-kawan). Secara teoretis tak bisa dieksploitasi — dan juga penuh frekuensi campuran: open tangan ini 25% dari waktu, fold 75%, 3-bet kombo ini tapi hanya dengan suit ini. **Chart pemula** — seperti yang ada di halaman ini — memampatkan semua itu menjadi satu aksi jelas per tangan.
+**Chart preflop GTO** berasal dari solver (PioSOLVER, GTO Wizard dan kawan-kawan). Dibangun agar sebisa mungkin tak bisa dieksploitasi — dan juga penuh frekuensi campuran: open tangan ini 25% dari waktu, fold 75%, 3-bet kombo ini tapi hanya dengan suit ini. **Chart pemula** — seperti yang ada di halaman ini — memampatkan semua itu menjadi satu aksi jelas per tangan.
 
 :::compare
 Chart Preflop GTO | Chart Pemula Sederhana
@@ -211,7 +211,7 @@ Starting hand terburuk di poker bukan sampah acak seperti 7-2 — tak ada yang b
 
 Chart hanya berguna jika ada di depan Anda saat penting. Untuk home game dan sesi belajar, kami membuat semuanya bisa dicetak:
 
-**[Unduh chart starting hands poker gratis yang bisa dicetak (PDF)](/downloads/poker-starting-hands-chart.pdf)** — satu halaman: chart open 9-max lengkap plus penyesuaian 6-max satu baris, format cheat-sheet. Cetak, atau biarkan terbuka di ponsel Anda di antara tangan.
+**[Unduh chart starting hands poker gratis yang bisa dicetak (PDF)](/downloads/poker-starting-hands-chart.pdf)** — satu halaman: chart open 9-max per posisi plus penyesuaian 6-max satu baris, format cheat-sheet. Cetak, atau biarkan terbuka di ponsel Anda di antara tangan.
 
 Lalu benar-benar pakai chart itu di setiap hand, untuk 20+ sesi pertama Anda:
 
@@ -254,11 +254,11 @@ Dapat ketiganya? Coba [kuis tangan poker 10 soal](/en/quiz) penuh — lima kartu
 
 **Q. Apa starting hand terbaik di poker?**
 
-A. Pocket aces (AA) adalah starting hand terbaik di poker. Preflop, ace menang kira-kira 85% dari waktu melawan satu tangan acak. Selalu raise dan re-raise dengan ace — tujuannya membangun pot besar sebagai favorit statistik.
+A. Pocket aces (AA) adalah starting hand terbaik di poker. Preflop, ace menang kira-kira 85% dari waktu melawan satu tangan acak. Sebagai default, raise dan re-raise dengan ace — tujuannya membangun pot besar sebagai favorit statistik.
 
 **Q. Apa saja starting hand yang bagus di poker?**
 
-A. Starting hand yang bagus di poker adalah pair premium (AA–TT), ace besar (AK, AQ), dan suited broadway kuat (KQs, AJs) — inti dari ~15–20% kartu yang dibagi yang dimainkan pemula solid (kelompok premium ini sendiri hanya sekitar 5% dari semua starting hand). Tangan speculative seperti pair kecil dan suited connector hanya bagus dari posisi belakang.
+A. Starting hand yang bagus di poker adalah pair premium (AA–TT), ace besar (AK, AQ), dan suited broadway kuat (KQs, AJs) — inti dari ~15–20% kartu yang dibagi yang dimainkan pemula solid (kelompok premium ini sendiri hanya sekitar 5% dari semua starting hand). Tangan speculative seperti pair kecil dan suited connector paling baik dimainkan dari posisi belakang.
 
 **Q. Ada berapa starting hand di poker?**
 
@@ -270,11 +270,11 @@ A. Aturan 7-2 adalah game sampingan rumahan, bukan aturan poker resmi: jika seor
 
 **Q. Apa starting hand terburuk di poker?**
 
-A. 7-2 offsuit umumnya dianggap sebagai starting hand terburuk di poker. Kartunya terlalu berjauhan untuk membuat straight bersama, terlalu rendah untuk menang tanpa perbaikan, dan bahkan kalau kena pair, tangan Anda tetap lemah dengan kicker buruk.
+A. 7-2 offsuit umumnya dianggap sebagai starting hand terburuk di poker. Kartunya terlalu berjauhan untuk membuat straight bersama, terlalu rendah untuk sering menang tanpa perbaikan, dan bahkan kalau kena pair, tangan Anda tetap lemah dengan kicker buruk.
 
 **Q. Apakah pemula harus memakai chart preflop GTO?**
 
-A. Tidak di awal. Chart preflop GTO memakai frekuensi campuran yang dirancang agar tak bisa dieksploitasi melawan lawan kuat — berlebihan di game pemula, di mana chart raise-or-fold sederhana menghasilkan lebih banyak. Pelajari chart sederhana sampai otomatis, lalu tambahkan chart GTO saat Anda belajar atau naik level online.
+A. Tidak di awal. Chart preflop GTO memakai frekuensi campuran yang dirancang agar sulit dieksploitasi bahkan oleh lawan kuat — berlebihan di game pemula, di mana chart raise-or-fold sederhana menghasilkan lebih banyak. Pelajari chart sederhana sampai otomatis, lalu tambahkan chart GTO saat Anda belajar atau naik level online.
 
 **Q. Apakah suited benar-benar penting?**
 

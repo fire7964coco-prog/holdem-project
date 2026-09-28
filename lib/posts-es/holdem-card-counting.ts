@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "No como en el blackjack — la baraja se rebaraja cada mano y se ven muy pocas cartas, así que rastrear cartas altas y bajas no te da ninguna ventaja. Pero el póker tiene su propio conteo legal: contar outs, usar bloqueadores y rastrear cartas muertas para leer lo que tu rival no puede tener.",
   category: "odds",
   date: "2026-07-08",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🧮",
@@ -45,11 +45,11 @@ Si te imaginas un conteo corrido high-low de las películas, olvídalo — muere
 
 ## Por qué el conteo de cartas del blackjack no funciona en el póker
 
-**El conteo del blackjack solo funciona porque se juega un zapato a lo largo de muchas manos mientras intentas batir a un repartidor de reglas fijas — el póker rompe esas tres condiciones.** Aquí tienes exactamente por qué el método no se transfiere:
+**El conteo del blackjack funciona porque se juega un zapato a lo largo de muchas manos mientras intentas batir a un repartidor de reglas fijas — el póker rompe esas tres condiciones.** Aquí tienes exactamente por qué el método no se transfiere:
 
 :::card
-🔀 | La baraja se reinicia cada mano | El conteo del blackjack necesita un zapato repartido a lo largo de decenas de manos para que la información se acumule. El póker rebaraja en cada mano, así que nada se arrastra — cada mano arranca desde una baraja completa y aleatoria
-🙈 | Se ven muy pocas cartas | Las cartas tapadas de cada jugador están boca abajo. Ves tus dos cartas, la mesa compartida y lo que se enseñe en el showdown — un puñado de cartas — nunca las suficientes para rastrear la composición de la baraja
+🔀 | La baraja se reinicia cada mano | El conteo del blackjack se alimenta de un zapato repartido a lo largo de muchas manos, donde la información se acumula. El póker rebaraja en cada mano, así que nada se arrastra — cada mano arranca desde una baraja completa y aleatoria
+🙈 | Se ven muy pocas cartas | Las cartas tapadas de cada jugador están boca abajo. Ves tus dos cartas, la mesa compartida y lo que se enseñe en el showdown — un puñado de cartas —, suficiente para contar los outs de la mano que tienes delante, pero nunca para un conteo corrido estilo blackjack
 👥 | Juegas contra rivales, no contra la casa | No hay un repartidor fijo sobre el que sacar ventaja. Una "baraja rica en cartas altas" no significa nada cuando un par de ases (AA) es premium igualmente — ganas teniendo una mejor mano o tomando una mejor decisión, no por un conteo favorable
 :::
 
@@ -127,7 +127,7 @@ En el Hold'em las únicas cartas que se reparten boca arriba son las cinco carta
 :::steps
 Cuenta tus outs en cada proyecto | En cuanto tengas un proyecto, cuenta las cartas que lo completan y multiplica — ×4 solo cuando vienen las dos cartas (estás all-in, o el turn y el river salen los dos gratis), y si no ×2 solo por la siguiente carta. Iguala cuando esa probabilidad — solo con outs limpias — supera el precio, o cuando las implied odds cubren la diferencia
 Pregúntate qué bloquea tu mano | Antes de farolear, comprueba si llevas una carta que vuelve imposible o menos probable su mano más fuerte para pagar
-Ajusta por las cartas muertas | Resta cualquier out que hayas visto expuesto fuera de la mesa — una carta que se enseñó por error, una mano mostrada, un fold que alcanzaste a ver. Una carta expuesta ya no puede salir en el board — pero solo cuentan las vistas por accidente: intentar ver a propósito las cartas de otro jugador no forma parte de este método — solo cuenta la exposición accidental
+Ajusta por las cartas muertas | Resta cualquier out que hayas visto expuesto fuera de la mesa — una carta que se enseñó por error, una mano mostrada, un fold que alcanzaste a ver. Una carta que has visto está fuera de la baraja (no puede salir en el board y ningún otro jugador puede tenerla) — pero solo cuentan las vistas por accidente: intentar ver a propósito las cartas de otro jugador no forma parte de este método — solo cuenta la exposición accidental
 :::
 
 Hazlo unas cuantas sesiones y se vuelve automático — estarás "contando cartas" en cada mano, solo que a la manera del póker. El siguiente paso es convertir esos conteos en calls y folds con las [pot odds](/es/blog/holdem-pot-odds), la matemática que te dice si tus outs valen el precio.

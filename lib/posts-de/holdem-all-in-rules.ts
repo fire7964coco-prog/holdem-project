@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Texas Hold'em All-in-Regeln: Side Pots, Re-Raises & Showdown",
   seoTitle: "All-in gegangen und verwirrt? – All-in-Regeln & Side Pots",
   desc: "Alle Chips reingeschoben und unsicher, was du gewinnen kannst? Texas Hold'em All-in-Regeln: Table Stakes, Side Pots, Re-Raise-Recht und Showdown-Reihenfolge.",
-  tldr: "All-in gehen heißt, jeden Chip zu setzen, den du hast. Du kannst von jedem Gegner nur so viel gewinnen, wie du selbst gematcht hast (den Main Pot). Zusätzliche Einsätze größerer Stacks bilden einen Side Pot, den nur die Spieler gewinnen können, die diese Einsätze gedeckt haben. Ein All-in unterhalb einer vollen Erhöhung öffnet die Setzrunde für Spieler, die bereits gehandelt haben, NICHT neu.",
+  tldr: "All-in gehen heißt, jeden Chip zu setzen, den du hast. Du kannst von jedem Gegner nur so viel gewinnen, wie du selbst gematcht hast (den Main Pot). Chips, die zwei oder mehr größere Stacks darüber hinaus setzen, bilden einen Side Pot, den nur sie gewinnen können; ein einzelner Überschuss-Einsatz geht einfach zurück. Im No-Limit und Pot-Limit öffnet ein All-in unterhalb einer vollen Erhöhung die Setzrunde für Spieler, die bereits gehandelt haben, NICHT neu.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "♠",
@@ -63,13 +63,13 @@ Zwei gültige Wege:
 
 ![Texas Hold'em All-in-Showdown – ein Board mit K♠ 10♣ 7♦ 4♥ 2♣, die Chips getrennt in beschrifteten Main Pot und Side Pot](/images/holdem-all-in-declare.webp)
 
-==r:Schieb niemals wortlos einen einzelnen großen Chip nach vorn.== Stehst du **vor einer Bet**, gilt ein einzelner übergroßer Chip ohne Ansage als **Call** – auch wenn es dein letzter Chip ist. Stehst du **nicht** vor einer Bet, zählt er als Bet in Höhe seines Werts. ==r:In keinem der beiden Fälle wird daraus automatisch ein All-in.== Sag immer laut „All-in“ – das ist die einzige Methode, die nie als etwas anderes gelesen wird.
+==r:Schieb niemals wortlos einen einzelnen großen Chip nach vorn und erwarte, dass er als All-in zählt.== Stehst du **vor einer Bet**, gilt ein einzelner übergroßer Chip ohne Ansage als **Call** – auch wenn es dein letzter Chip ist. Stehst du **nicht** vor einer Bet, zählt er als Bet in Höhe seines Werts. ==r:In keinem der beiden Fälle wird daraus automatisch ein All-in.== Sag immer laut „All-in“ – das ist die einzige Methode, die nie als etwas anderes gelesen wird.
 
 ---
 
 ## Wie funktionieren Side Pots beim Poker? (Warum der All-in-Spieler gedeckelt ist)
 
-Der All-in-Spieler kann nur gewinnen, was er selbst eingezahlt hat, plus den gleichen Betrag von jedem anderen Spieler, der noch im Pot ist. Chips, die darüber hinaus gesetzt werden, wandern in einen **Side Pot**, der ausschließlich den Spielern gehört, die ihn gefüllt haben – aber nur, wenn mindestens zwei Spieler einzahlen. Ist nur ein einziger Spieler über dem Deckel, gibt es niemanden, der den Side Pot bestreitet, und der Überschuss kommt direkt als ungecallter Einsatz zu ihm zurück.
+Der All-in-Spieler kann nur gewinnen, was er selbst eingezahlt hat, plus bis zu dem gleichen Betrag von jedem anderen Spieler, der Chips eingezahlt hat – auch von einem, der inzwischen gefoldet hat, denn eingezahlte Chips bleiben im Pot. Chips, die darüber hinaus gesetzt werden, wandern in einen **Side Pot**, der ausschließlich den Spielern gehört, die ihn gefüllt haben – aber nur, wenn mindestens zwei Spieler einzahlen. Ist nur ein einziger Spieler über dem Deckel, gibt es niemanden, der den Side Pot bestreitet, und der Überschuss kommt direkt als ungecallter Einsatz zu ihm zurück.
 
 ![Texas Hold'em All-in-Side-Pot – der Dealer trennt die Chips in Main Pot und Side Pot, während Spieler A gedeckelt ist](/images/holdem-all-in-side-pot.webp)
 
@@ -117,7 +117,7 @@ Die Regel: ==Jeder Side Pot entsteht aus der Differenz bis zum nächstkleineren 
 
 ==r:Das ist die meistdiskutierte All-in-Regel an Live-Tischen – ich habe erlebt, wie zwei Spieler fünf Minuten darüber gestritten haben, während der ganze Tisch wartete. Beide lagen falsch.==
 
-**Die Regel:** Geht ein Spieler für **weniger als eine [volle Erhöhung](/de/blog/holdem-betting-actions)** All-in, öffnet dieses All-in die Setzrunde für Spieler, die in dieser Runde bereits gehandelt haben, NICHT neu.
+**Die Regel (No-Limit und Pot-Limit):** Geht ein Spieler für **weniger als eine [volle Erhöhung](/de/blog/holdem-betting-actions)** All-in, öffnet dieses All-in die Setzrunde für Spieler, die in dieser Runde bereits gehandelt haben, NICHT neu. Limit-Spiele ziehen die Grenze niedriger: Dort öffnet ein All-in von mindestens einer halben Bet die Setzrunde neu (TDA-2024-Regel 47-B).
 
 ![Poker-Re-Raise-Regel nach All-in – ein kurzes All-in unter einer vollen Erhöhung, deshalb kann Spieler A, der bereits gehandelt hat, nur callen oder folden](/images/holdem-all-in-reraise-rule.webp)
 
@@ -135,7 +135,7 @@ Was passiert mit Spieler A und mit Spieler C, der noch nicht gehandelt hat?
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
-| All-in-Betrag | Volle Erhöhung? | Öffnet die Setzrunde neu? |
+| All-in-Betrag (No-Limit / Pot-Limit) | Volle Erhöhung? | Öffnet die Setzrunde neu? |
 |--------------|-------------|-----------------|
 | Weniger als eine volle Erhöhung | Nein | Nein – wer bereits gehandelt hat, kann nur callen oder folden |
 | Volle Erhöhung oder mehr | Ja | Ja – alle Spieler dürfen erneut re-raisen |
@@ -174,6 +174,8 @@ Die Mindesterhöhung bemisst sich immer an der *letzten vollen gültigen Bet ode
 
 ### Schnelle Entscheidungshilfe – Öffnet dieses All-in die Setzrunde neu?
 
+Die Tabelle gilt für No-Limit und Pot-Limit. Im Limit-Spiel liegt die Schwelle bei einer halben Bet, nicht bei einer vollen Erhöhung.
+
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
 | Situation | Neu geöffnet für Spieler, die bereits gehandelt haben? |
@@ -182,7 +184,7 @@ Die Mindesterhöhung bemisst sich immer an der *letzten vollen gültigen Bet ode
 | Einzelnes All-in ≥ volle Erhöhung | ✅ Ja – alle dürfen re-raisen |
 | Mehrere kurze All-ins, kombiniert < volle Erhöhung | ❌ Nein |
 | Mehrere kurze All-ins, kombiniert ≥ volle Erhöhung | ✅ Ja – für jeden Spieler, der jetzt vor mindestens einer vollen Erhöhung über seiner eigenen letzten Aktion steht |
-| Spieler, der noch NICHT gehandelt hat | ✅ Die Wiedereröffnungs-Grenze gilt für ihn nie – er darf erhöhen, soweit seine eigenen Chips es zulassen (und im Limit-Spiel das Raise-Limit des Hauses – TDA-2024-Regel 48) |
+| Spieler, der noch NICHT gehandelt hat | ✅ Die Wiedereröffnungs-Grenze gilt für ihn nie – er darf erhöhen, innerhalb der Setzgrenzen des Spiels: sein Stack im No-Limit, der Pot im Pot-Limit, die feste Einsatzhöhe und das Raise-Limit des Hauses im Limit (TDA-2024-Regel 48) |
 
 </div>
 
@@ -211,7 +213,7 @@ Wenn du genug All-in-Pots gespielt hast, merkst du: Das Chaos kommt fast immer a
 Kann er nicht. Sobald der All-in-Spieler gedeckelt ist, gehören alle zusätzlichen Chips der größeren Stacks zu einem Pot, auf den er keinerlei Anspruch hat.
 
 ### Fehler 2: Die Re-Raise-Regel nicht kennen
-Ein Teil-All-in gibt Spielern, die in dieser Runde **bereits gehandelt haben**, keine zweite Chance zum Re-Raise – es sei denn, mehrere kurze All-ins summieren sich so auf, dass einer von ihnen vor mindestens einer vollen Erhöhung steht, wenn die Action zurückkommt. Wer noch nicht gehandelt hat, darf erhöhen, und zwar zum oben gezeigten Mindest-Gesamtbetrag. Wer diese Regel sicher beherrscht, erstickt Streit, bevor er entsteht.
+Im No-Limit und Pot-Limit gibt ein Teil-All-in Spielern, die in dieser Runde **bereits gehandelt haben**, keine zweite Chance zum Re-Raise – es sei denn, mehrere kurze All-ins summieren sich so auf, dass einer von ihnen vor mindestens einer vollen Erhöhung steht, wenn die Action zurückkommt. Wer noch nicht gehandelt hat, darf erhöhen, und zwar zum oben gezeigten Mindest-Gesamtbetrag. Wer diese Regel sicher beherrscht, erstickt Streit, bevor er entsteht.
 
 ### Fehler 3: Mitten in der Hand Chips aus der Tasche nachlegen
 Table Stakes. Was auf dem Tisch liegt, ist alles, was du setzen kannst. Bist du für €80 All-in und der Pot beträgt €400, kannst du von jedem Caller trotzdem nur €80 gewinnen.
@@ -233,7 +235,7 @@ Das All-in ist der mächtigste Zug am Tisch. Es zwingt Gegner in Alles-oder-nich
 
 **Q. Kann man für weniger als den Big Blind All-in gehen?**
 
-A. Ja. Sitzt du mit weniger Chips als dem Big Blind am Tisch, bist du automatisch für alles All-in, was du hast, sobald die Blinds zu dir kommen. Die anderen Spieler zahlen weiterhin den vollen Big Blind – alles über deinem Beitrag wandert in einen Side Pot.
+A. Ja. Ist der Blind, den du schuldest, größer als dein ganzer Stack, setzt du, was dir bleibt, und bist damit All-in (WSOP Live Action Rule 154). Die anderen Spieler callen weiterhin den vollen Big Blind – was sie über deinem Beitrag einzahlen, bildet einen Side Pot unter ihnen oder geht an einen einzelnen Spieler als ungecallter Einsatz direkt zurück.
 
 **Q. Was passiert, wenn du das All-in gewinnst, aber den Side Pot verlierst?**
 
@@ -241,11 +243,11 @@ A. Du bekommst den Main Pot (das, was du von jedem Spieler gematcht hast), und d
 
 **Q. Müssen beim All-in die Karten gezeigt werden?**
 
-A. In Turnieren ja – sobald mit einem All-in keine Einsätze mehr möglich sind, werden alle beteiligten Hände in der Regel offen hingelegt. In Live-Cash-Games gelten die üblichen Showdown-Regeln – der letzte Aggressor zeigt zuerst, danach zeigen oder mucken die anderen –, es sei denn, es ist ein No-Limit-Spiel und das Setzen endete vor dem River: Dann dreht der Spieler, der All-in gegangen ist, zuerst um (WSOP Live Action Rule 149).
+A. In Turnieren ja – sobald mit einem All-in keine Einsätze mehr möglich sind, werden alle beteiligten Hände in der Regel offen hingelegt. In Live-Cash-Games gelten die üblichen Showdown-Regeln – der letzte Aggressor am River zeigt zuerst (wurde der River durchgecheckt, der Spieler in der frühesten Position), danach zeigen oder mucken die anderen –, es sei denn, es ist ein No-Limit-Spiel und das Setzen endete vor dem River: Dann dreht der Spieler, der All-in gegangen ist, zuerst um (WSOP Live Action Rule 149).
 
 **Q. Kann man bei einem Poker-All-in „run it twice“ spielen?**
 
-A. Run it twice (die restlichen Gemeinschaftskarten zweimal austeilen und den Pot aufteilen) ist in vielen Cash Games erlaubt, wenn alle noch im Pot verbliebenen Spieler nach dem All-in zustimmen – nicht nur zwei davon (WSOP Live Action Rule 210). In Turnieren ist es in der Regel nicht erlaubt. Die Option muss vereinbart werden, bevor die restlichen Gemeinschaftskarten ausgeteilt werden.
+A. Run it twice (die restlichen Gemeinschaftskarten zweimal austeilen und den Pot aufteilen) ist in vielen Cash Games erlaubt, wenn – sobald jemand All-in ist und keine Setzaktion mehr aussteht – alle noch im Pot verbliebenen Spieler zustimmen – nicht nur zwei davon (WSOP Live Action Rules 210 und 211). In Turnieren ist es in der Regel nicht erlaubt. Die Option muss vereinbart werden, bevor die restlichen Gemeinschaftskarten ausgeteilt werden.
 
 **Q. Was genau ist die „Table-Stakes“-Regel?**
 
@@ -253,7 +255,7 @@ A. Table Stakes bedeutet: Du darfst nur Chips setzen, die zu Beginn der Hand vor
 
 **Q. Wenn zwei Spieler für unterschiedliche Beträge All-in gehen – wer zeigt zuerst?**
 
-A. Das letzte All-in, das eine Bet oder ein Raise war, gilt als letzte aggressive Aktion und zeigt zuerst. Ein All-in, das für weniger nur callt, ist nicht aggressiv – im Cashgame zeigt dann der ursprüngliche Setzer zuerst, und die WSOP Live Action Rules gehen anschließend nach Pots: Wer im Side Pot ist, zeigt vor dem Spieler, der nur im Main Pot All-in ist (Rule 149). ==r:Im Turnier gibt es hier überhaupt keine Reihenfolge des Zeigens== – sobald die All-in-Setzrunde abgeschlossen ist, werden alle beteiligten Hände gleichzeitig aufgedeckt (TDA-2024-Regel 16); die Regel, die eine Reihenfolge festlegt, TDA-2024-Regel 17, betrifft ausschließlich Showdowns ohne All-in. In Cash Games darf der Caller bei einem gecallten All-in ohne weitere Action mucken, wenn er nach dem Aufdecken der All-in-Hand verloren hat (in Turnieren bleiben alle beteiligten Hände offen).
+A. Das letzte All-in, das eine Bet oder ein Raise war, gilt als letzte aggressive Aktion und zeigt zuerst. Ein All-in, das für weniger nur callt, ist nicht aggressiv – im Cashgame zeigt dann der ursprüngliche Setzer zuerst, wenn das Setzen am River endete (im No-Limit dreht bei einem Ende vor dem River der Spieler, der All-in geschoben hat, zuerst um); und gibt es einen Side Pot, gehen die WSOP Live Action Rules nach Pots: Wer im Side Pot ist, zeigt vor dem Spieler, der nur im Main Pot All-in ist (Rule 149). ==r:Im Turnier gibt es hier überhaupt keine Reihenfolge des Zeigens== – sobald die All-in-Setzrunde abgeschlossen ist, werden alle beteiligten Hände gleichzeitig aufgedeckt (TDA-2024-Regel 16); die Regel, die eine Reihenfolge festlegt, TDA-2024-Regel 17, betrifft ausschließlich Showdowns ohne All-in. In Cash Games darf der Caller bei einem gecallten All-in ohne weitere Action mucken, wenn er nach dem Aufdecken der All-in-Hand verloren hat (in Turnieren bleiben alle beteiligten Hände offen).
 
 **Q. Unterscheiden sich die All-in-Regeln zwischen Turnier und Cash Game?**
 

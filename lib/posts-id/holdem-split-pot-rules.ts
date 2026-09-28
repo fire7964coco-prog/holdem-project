@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ya — tangan poker bisa seri. Pot dibagi (split pot) ketika dua pemain atau lebih menunjukkan lima kartu terbaik yang identik saat showdown. Jenis kartu tak pernah memecah seri, dan sisa odd chip diberikan kepada pemain seri pertama di kiri tombol dealer.",
   category: "hand-rankings",
   date: "2026-06-13",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "12 mnt",
   emoji: "🃏",
@@ -89,7 +89,7 @@ Itulah tangan 8-8-8-A-K saya: J♠ 10♥ saya dan 5♣ 2♦ lawan sama-sama main
 
 > **Ceknya:** apakah lima kartu terbaik *Anda* — memakai setidaknya satu kartu tertutup — mengalahkan lima kartu board itu sendiri? Jika ya, Anda main tangan Anda. Jika tidak, board yang main dan Anda kemungkinan akan chop. Metode lengkap untuk memindai board dengan cara ini ada di [cara membaca board dan menemukan 5 kartu terbaik](/id/blog/holdem-reading-the-board).
 
-**Dan bagian yang paling penting di meja: tangan Anda baru menang kalau Anda membukanya menghadap ke atas.** Tangan yang di-muck itu mati bahkan ketika ia seharusnya chop — saat Anda memainkan board pun Anda tetap harus menunjukkan kartu tertutup Anda menghadap ke atas, atau Anda kehilangan bagian Anda dari pot (WSOP Rule 172 untuk live action; aturan turnamen WSOP mengulanginya di Rule 75). Siapa yang menunjukkan lebih dulu dan bagaimana urutannya berjalan dibahas di [aturan showdown](/id/blog/holdem-showdown-rules).
+**Dan bagian yang paling penting di meja: tangan Anda baru menang kalau Anda membukanya menghadap ke atas.** Tangan yang di-muck biasanya mati bahkan ketika ia seharusnya chop (hanya tangan yang masih jelas bisa dikenali yang bisa diambil kembali, dan itu pun atas kebijakan floor; WSOP Tournament Rule 109) — saat Anda memainkan board pun Anda tetap harus menunjukkan kartu tertutup Anda menghadap ke atas, atau Anda kehilangan bagian Anda dari pot (WSOP Rule 172 untuk live action; aturan turnamen WSOP mengulanginya di Rule 75). Siapa yang menunjukkan lebih dulu dan bagaimana urutannya berjalan dibahas di [aturan showdown](/id/blog/holdem-showdown-rules).
 
 :::tip[Jika board yang main dan seseorang bet di river, **fold secara refleks justru kesalahannya**. Kalau tidak ada tangan yang bisa mengalahkan board, seri sudah pasti, dan call tetap mengembalikan bagian Anda dari semua chip yang sudah ada di pot (setengahnya saat heads-up) — fold berarti menyerahkan bagian itu cuma-cuma. Kalau board masih bisa dikalahkan, hitung frekuensinya: heads-up, melawan bet sebesar pot, Anda butuh lawan juga sekadar memainkan board sekitar 2 dari 3 kali; melawan setengah pot, sekitar separuh waktu (dengan tiga pemain atau lebih yang masih bertahan, bagian Anda dari pot seri mengecil sehingga ambangnya naik). Itu ambang yang tinggi untuk call — dan rendah untuk fold: melawan bet sebesar pot, fold sudah benar begitu dia punya tangan sungguhan lebih dari **satu dari tiga kali**, dan di river yang board-nya masih bisa dikalahkan, itulah keadaan normalnya.]:::
 
@@ -105,7 +105,7 @@ Inilah miskonsepsi di balik sebagian besar perdebatan "tunggu, kenapa ini dibagi
 ==r:Flush sekop **tidak** mengalahkan flush hati.== Texas Hold'em tidak punya peringkat jenis — ==nilai yang identik dibagi, titik==. (Ini menjebak pemain yang datang dari permainan yang *memang* memeringkat jenis.)
 
 ### ❌ "Kartu tertutup saya lebih tinggi, jadi saya menang"
-Board 9♠ 8♦ 7♣ 6♥ 5♠ — sebuah straight jadi. Anda pegang A♠ K♦; lawan pegang 2♣ 3♥. ==r:**Dibagi.**== Kalian berdua main 9-8-7-6-5 board, karena ==r:kartu tertutup besar Anda tak pernah masuk ke lima kartu terbaik==. Kartu tertutup tinggi hanya penting kalau benar-benar main sebagai kicker — [apa itu kicker dan kapan ia main](/id/blog/holdem-kicker) menarik garis itu dengan tepat.
+Board 9♠ 8♦ 7♣ 6♥ 5♠ — sebuah straight jadi. Anda pegang A♠ K♦; lawan pegang 2♣ 3♥. ==r:**Dibagi.**== Kalian berdua main 9-8-7-6-5 board, karena ==r:kartu tertutup besar Anda tak pernah masuk ke lima kartu terbaik==. Kartu tertutup tinggi hanya penting kalau benar-benar main, sebagai bagian dari tangan itu sendiri atau sebagai kicker — [apa itu kicker dan kapan ia main](/id/blog/holdem-kicker) menarik garis itu dengan tepat.
 
 ### ❌ "Saya pakai kedua kartu saya dan mereka cuma satu"
 ==r:Berapa banyak kartu tertutup yang Anda pakai tidak relevan.== Satu-satunya yang dihitung adalah lima kartu terkuat dari tujuh. ==g:Jika kedua pemain mendarat di lima kartu terbaik yang sama, itu chop tak peduli bagaimana Anda sampai ke sana.==
@@ -189,7 +189,7 @@ A. Bisa. Jika tiga pemain atau lebih semuanya memegang lima kartu terbaik yang i
 
 **Q. Bagaimana split pot ditangani ketika seseorang all-in?**
 
-A. Pot pecah menjadi main pot dan side pot; masing-masing diberikan atau di-chop secara terpisah berdasarkan tangan terbaik di antara pemain yang berhak atas pot spesifik itu.
+A. Saat para pemain all-in dengan jumlah berbeda dan yang lain terus bertaruh, pot pecah menjadi main pot dan satu atau lebih side pot; masing-masing diberikan atau di-chop secara terpisah berdasarkan tangan terbaik di antara pemain yang berhak atas pot spesifik itu.
 
 **Q. Bagaimana cara menghitung side pot?**
 

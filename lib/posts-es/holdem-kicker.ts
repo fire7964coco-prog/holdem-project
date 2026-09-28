@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "El kicker es la carta lateral más alta que no forma parte de tu mano hecha — rompe el empate cuando dos jugadores comparten el mismo valor. La carta alta usa 4 kickers, la pareja 3, la doble pareja 1, el trío 2; escaleras, colores, fulls y escaleras de color no tienen ninguno. Es la razón por la que AK gana a AQ cuando la mesa empareja un as.",
   category: "hand-rankings",
   date: "2026-07-08",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "10 min",
   emoji: "🃏",
@@ -116,7 +116,7 @@ La mesa es ==b:10♠ J♦ Q♣ K♥ A♠== — una escalera del diez al as (Broa
 - Tú tienes ==b:2♣ 3♦==. Tu mejor mano es la escalera de la mesa; el 2 y el 3 no añaden nada.
 - Tu rival tiene ==b:4♥ 5♦==. La misma historia — la escalera de la mesa también es su mejor mano.
 
-Ninguno de los dos puede subir por encima de un as, así que ambos "jugáis la mesa" y ==g:se divide el bote== — pero solo si enseñáis las cartas boca arriba; si las tiráis al muck, no os lleváis nada, ni siquiera aquí (regla 19 de la TDA 2024). Una escalera no tiene kicker, así que esas cartas propias son peso muerto. Cuando oigas "la mesa juega", esto es — y es el único lugar donde una carta propia de aspecto fuerte vale exactamente nada. (Más sobre detectar estas mesas en [cómo leer la mesa](/es/blog/holdem-reading-the-board).)
+Ninguno de los dos puede subir por encima de un as, así que ambos "jugáis la mesa" y ==g:se divide el bote== — pero solo si enseñáis las cartas boca arriba; si las tiráis al muck, normalmente no os lleváis nada, ni siquiera aquí (regla 19 de la TDA 2024). Una escalera no tiene kicker, así que esas cartas propias son peso muerto. Cuando oigas "la mesa juega", esto es — y es un caso donde incluso una carta propia de aspecto fuerte vale exactamente nada. (Más sobre detectar estas mesas en [cómo leer la mesa](/es/blog/holdem-reading-the-board).)
 
 ---
 
@@ -188,7 +188,7 @@ A. Depende de la mano: cuatro para la carta alta (se comparan las cinco en orden
 
 **Q. ¿Qué es un buen kicker en el póker?**
 
-A. Uno alto — un kicker de as o de rey es fuerte, mientras que un kicker bajo como un nueve te deja "dominado". Por eso AK y AQ son mucho mejores que A9 o A5: cuando todos emparejan su as, gana el bote el kicker más grande.
+A. Uno alto — un kicker de as o de rey es fuerte, mientras que un kicker bajo como un nueve te deja "dominado". Por eso AK y AQ son mucho mejores que A9 o A5: cuando dos jugadores emparejan su as y no hacen nada mejor, gana el bote el kicker más grande.
 
 **Q. ¿Qué es un kicker de as (o un kicker de rey)?**
 

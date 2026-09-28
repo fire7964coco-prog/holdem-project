@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Poker-Aktionen im Texas Hold'em: Check, Call, Raise, Fold",
   seoTitle: "Checken, callen oder folden? – Poker-Aktionen & Raise-Regeln",
   desc: "Du bist dran und dein Kopf ist leer? Was Check, Call, Raise und Fold beim Poker bedeuten, die Min-Raise-Regel und wie oft du re-raisen darfst.",
-  tldr: "Texas Hold'em kennt 5 Setz-Aktionen: Check (kostenlos schieben), Bet (die Runde eröffnen), Call (einen Einsatz mitgehen), Raise (erhöhen – der Mindest-Raise entspricht dem vorherigen Bet oder Raise) und Fold. Checken darfst du nur, solange vor dir kein offener Einsatz steht – preflop also normalerweise nur als Big Blind (oder wer einen Live Straddle gepostet hat).",
+  tldr: "Texas Hold'em kennt 5 Setz-Aktionen: Check (kostenlos schieben), Bet (die Runde eröffnen), Call (einen Einsatz mitgehen), Raise (erhöhen – der Mindest-Raise entspricht der letzten vollen Bet oder dem letzten vollen Raise) und Fold. Checken darfst du nur, solange vor dir kein offener Einsatz steht – preflop also normalerweise nur als Big Blind (oder wer einen Live Straddle gepostet hat).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "9 Min.",
   emoji: "🃏",
@@ -39,7 +39,7 @@ Texas Hold'em hat nur ==5 Setz-Aktionen==, aber die Regeln drumherum (wann Check
 :::stripe
 5 | Setz-Aktionen: Check, Bet, Call, Raise, Fold
 1 BB | Mindest-Eröffnungsbet im No-Limit Hold'em
-= letzter Raise | Mindestgröße für jeden Re-Raise (Inkrement-Regel)
+= letzter voller Raise | Mindestgröße für jeden Re-Raise (Inkrement-Regel)
 Kein Limit | bei Re-Raises im No-Limit – du kannst raisen, bis jemand All-in ist
 :::
 
@@ -53,7 +53,7 @@ Jede einzelne Entscheidung am Pokertisch ist eine dieser fünf:
 | Check | Nur, wenn vor dir kein offener Einsatz steht (preflop: als Big Blind oder als Spieler, der einen Live Straddle gepostet hat) | Kostenlos – du schiebst, ohne Chips zu legen |
 | Call | Nachdem jemand gesetzt oder erhöht hat | Du gehst den aktuellen Einsatz exakt mit |
 | Bet | Der erste Einsatz der Runde | Frei wählbarer Betrag (Minimum = 1 Big Blind) |
-| Raise | Nachdem jemand gesetzt hat | Mindestens die Größe der vorherigen Bet oder des vorherigen Raises obendrauf |
+| Raise | Nachdem jemand gesetzt hat | Mindestens die Größe der letzten vollen Bet oder des letzten vollen Raises obendrauf |
 
 ==All-in== zu gehen ist keine separate sechste Aktion – es ist eine Bet, ein Call oder ein Raise mit allen Chips, die dir noch bleiben. Mehr dazu weiter unten.
 
@@ -86,7 +86,7 @@ Wer wann handelt, Street für Street, findest du im [Spielablauf beim Texas Hold
 
 ## Was bedeutet Call beim Poker? (Check vs. Call)
 
-Ein Call heißt: Du gehst ==den aktuellen Einsatz exakt mit==, um in der Hand zu bleiben. Jemand setzt €10, du callst €10 – nicht mehr, nicht weniger.
+Ein Call heißt: Du gehst ==den aktuellen Einsatz exakt mit==, um in der Hand zu bleiben. Jemand setzt €10, du callst €10 – nicht mehr, nicht weniger. (Hast du weniger als €10 übrig, kannst du trotzdem callen: Du gehst mit dem, was du hast, All-in.)
 
 Check vs. Call ist die häufigste Anfänger-Verwechslung überhaupt, darum hier die saubere Trennung:
 
@@ -117,7 +117,7 @@ Eine Regel der Live-Etikette: Folde nicht ==außer der Reihe==. Warte, bis die A
 Im No-Limit Hold'em (dem Format, das du fast immer spielen wirst):
 
 - **Mindest-Bet**: 1 Big Blind
-- **Mindest-Raise (der Min-Raise)**: mindestens ==die Größe der vorherigen Bet oder des vorherigen Raises== obendrauf
+- **Mindest-Raise (der Min-Raise)**: mindestens ==die Größe der letzten vollen Bet oder des letzten vollen Raises== obendrauf
 - **Maximum**: dein gesamter Stack – das ist das „No Limit“
 
 Zwei durchgerechnete Beispiele:
@@ -129,7 +129,7 @@ Zwei durchgerechnete Beispiele:
 
 Verschätzt du dich, entscheidet die 50-Prozent-Marke: Ein Raise von ==50% oder mehr== der vorherigen Bet, der den Min-Raise trotzdem verfehlt, wird im Turnier nach ==Rule 95== auf den vollen Min-Raise **aufgestockt** – du zahlst also mehr, als du wolltest. Unter 50% wird daraus schlicht ein Call.
 
-Der entscheidende Punkt: Der Min-Raise richtet sich nach dem ==Inkrement== der letzten Bet oder des letzten Raises, nicht nach dem Big Blind. Preflop zählt der Big Blind als Eröffnungsbet – deshalb ist der kleinste Open-Raise ein Raise auf 2 Big Blinds.
+Der entscheidende Punkt: Der Min-Raise richtet sich nach dem ==Inkrement== der letzten vollen Bet oder des letzten vollen Raises, nicht nach dem Big Blind. („Voll“ zählt, sobald jemand für weniger als einen Raise All-in ist: Nach einer €10-Bet und einem €14-All-in ist das zu matchende Inkrement weiterhin €10, der kleinste Raise geht also auf €24.) Preflop zählt der Big Blind als Eröffnungsbet – deshalb ist der kleinste Open-Raise ein Raise auf 2 Big Blinds.
 
 Zwei Live-Poker-Regeln, die zum Raisen dazugehören:
 
@@ -146,7 +146,7 @@ Im **No-Limit Hold'em: Es gibt keine Obergrenze.** Du kannst raisen, re-raist we
 
 Zwei Grenzen gelten trotzdem:
 
-- Jeder Re-Raise muss die ==Min-Raise-Inkrement-Regel== von oben erfüllen
+- Jeder Re-Raise muss die ==Min-Raise-Inkrement-Regel== von oben erfüllen – die eine Ausnahme ist ein All-in, das auch kleiner sein darf
 - ==r:Du kannst deinen eigenen Einsatz nicht raisen.== Wenn du setzt und alle nur callen, endet die Runde – du darfst nur dann erneut raisen, wenn dich vorher jemand *selbst* raist
 
 In **Fixed-Limit**-Spielen ist jede Runde gedeckelt (ein „gecappter“ Pot). Die WSOP-Turnierregeln setzen den Deckel bei ==einer Bet plus vier Raises== (Rule 100.b) – und die Ausnahme läuft anders, als die meisten erwarten: ==r:Der Deckel bleibt stehen, auch wenn in der Hand nur noch zwei Spieler sitzen==. Er fällt erst, wenn im **ganzen Turnier** nur noch zwei Spieler übrig sind. In Cashgames gelten oft andere Hausregeln – manche Räume deckeln früher, andere heben den Deckel auf, sobald die Hand heads-up wird. Frag im Zweifel den Dealer.
@@ -155,7 +155,7 @@ In **Fixed-Limit**-Spielen ist jede Runde gedeckelt (ein „gecappter“ Pot). D
 
 ## Was bedeutet All-in?
 
-All-in heißt, ==jeden Chip zu setzen, den du noch hast==. Du kannst es jederzeit tun, wenn du an der Reihe bist – als Bet, Call oder Raise.
+All-in heißt, ==jeden Chip zu setzen, den du noch hast==. Du kannst es tun, wenn du an der Reihe bist – als Bet, Call oder Raise, je nachdem, welche dieser Aktionen dir in dem Moment offensteht.
 
 Ist dein All-in *kleiner* als der aktuelle Einsatz, bist du nicht raus: Du spielst einfach um einen ==Hauptpot==, gedeckelt auf deinen Beitrag, während die überschüssigen Chips der größeren Stacks einen ==Side Pot== bilden, den du nicht gewinnen kannst. (Ist jemand noch kürzer als du, spielst du trotzdem um den Side Pot mit, an den er nicht herankommt – jedes All-in deckelt nur seine eigene Schicht.) Und ein All-in, das *kleiner als ein voller Min-Raise* ist, eröffnet das Raisen für Spieler, die bereits gehandelt haben, in der Regel nicht neu – eine subtile Regel, die selbst Regulars überrascht.
 
@@ -181,7 +181,7 @@ Ich spiele ein wöchentliches Low-Stakes-Live-Game, und dieselben Action-Fehler 
 
 ### Fehler 1 – Callen, wenn du checken könntest
 
-Am Flop ist er als Erster dran, niemand hat gesetzt, und ein neuer Spieler schiebt **wortlos** Chips rein, „um zu callen“. Da ist nichts zu callen: Einsätze erfolgen nach ==WSOP Rule 90.a== durch Ansage *oder* durch Herausschieben von Chips – er hat also gerade gesetzt, ohne es zu wollen. Hätte er „Call“ *angesagt*, wäre daraus nach ==Rule 90.b.1== schlicht ein Check geworden. Wenn die Street noch nicht eröffnet ist: checken und die Karte gratis sehen.
+Am Flop ist er als Erster dran, niemand hat gesetzt, und ein neuer Spieler schiebt **wortlos** Chips rein, „um zu callen“. Da ist nichts zu callen: Einsätze erfolgen nach ==WSOP Rule 90.a== durch Ansage *oder* durch Herausschieben von Chips – er hat also gerade gesetzt, ohne es zu wollen. Hätte er „Call“ *angesagt*, wäre daraus nach ==Rule 90.b.1== schlicht ein Check geworden. Wenn die Street noch nicht eröffnet ist: checken – setzt niemand hinter dir, siehst du die nächste Karte gratis.
 
 ### Fehler 2 – „Ich calle… nein, Raise!“
 
@@ -210,11 +210,11 @@ A. Ja – setzt jemand nach deinem Check, darfst du raisen, wenn die Action zu d
 
 **Q. Darf man seinen eigenen Einsatz raisen?**
 
-A. Nein. Wenn du setzt und die Gegner nur callen, kannst du nichts nachlegen – die Setzrunde endet. Erneut raisen darfst du nur, wenn ein anderer Spieler dich zuerst raist, was die Action wieder eröffnet.
+A. Nein. Wenn du setzt und die Gegner nur callen, kannst du nichts nachlegen – die Setzrunde endet. Erneut raisen darfst du nur, wenn ein anderer Spieler zuerst einen vollen Raise über dich legt – das eröffnet die Action wieder; ein All-in unterhalb eines vollen Raises tut das nicht.
 
 **Q. Wie oft darf man beim Texas Hold'em erhöhen?**
 
-A. Im No-Limit gibt es keine Obergrenze für die Anzahl der Raises – Re-Raises können weitergehen, bis ein Spieler All-in ist, solange jeder Raise das Mindest-Inkrement erfüllt. Nur im Fixed Limit gibt es ein hartes Cap – die Zahl und die Ausnahme dazu stehen oben im Abschnitt „Wie oft darfst du beim Poker erhöhen?“.
+A. Im No-Limit gibt es keine Obergrenze für die Anzahl der Raises – Re-Raises können weitergehen, bis ein Spieler All-in ist, solange jeder Raise das Mindest-Inkrement erfüllt (ein All-in darf kleiner sein). Nur im Fixed Limit gibt es ein hartes Cap – die Zahl und die Ausnahme dazu stehen oben im Abschnitt „Wie oft darfst du beim Poker erhöhen?“.
 
 **Q. Darf man außer der Reihe folden?**
 

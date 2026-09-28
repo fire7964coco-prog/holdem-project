@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Di Texas Hold'em Anda selalu memainkan tangan 5-kartu terbaik dari 7 (2 kartu tertutup + 5 kartu komunitas) — memakai kedua kartu tertutup, satu, atau tak satu pun (main dengan board). Pindai ketujuh kartu dengan urutan tetap: flush → straight → nilai berpasangan → kartu tinggi.",
   category: "hand-rankings",
   date: "2026-06-15",
-  updated: "2026-09-27",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "11 mnt",
   emoji: "🃏",
@@ -246,7 +246,7 @@ A. Tidak. Anda membentuk tangan lima-kartu terbaik dari kombinasi mana pun antar
 
 **Q. Apa arti "main dengan board" di Texas Hold'em?**
 
-A. Artinya 5 kartu komunitas sudah jadi tangan 5-kartu terbaik Anda — tak ada kartu tertutup yang memperbaikinya. Karena board itu bersama, setiap pemain bisa mengklaim tangan yang sama, jadi main dengan board biasanya berujung pada split pot kecuali kartu tertutup lawan memperbaiki board. Satu formalitas tetap memakan pot: sekalipun Anda main dengan board, Anda **wajib membuka kedua kartu tertutup** untuk mendapat bagian (==WSOP Tournament Rule 75==, TDA 2024 Rule 19) — kalau didorong ke muck tanpa dibuka, Anda tidak dapat apa-apa.
+A. Artinya 5 kartu komunitas sudah jadi tangan 5-kartu terbaik Anda — tak ada kartu tertutup yang memperbaikinya. Karena board itu bersama, setiap pemain bisa mengklaim tangan yang sama, jadi main dengan board biasanya berujung pada split pot kecuali kartu tertutup lawan memperbaiki board. Satu formalitas tetap memakan pot: sekalipun Anda main dengan board, Anda **wajib membuka kedua kartu tertutup** untuk mendapat bagian (==WSOP Tournament Rule 75==, TDA 2024 Rule 19) — kalau didorong ke muck tanpa dibuka, biasanya Anda tidak dapat apa-apa (floor hanya boleh mengambil kembali sebuah tangan selama tangan itu masih jelas bisa dikenali; WSOP Tournament Rule 109).
 
 **Q. Bisakah board jadi tangan terbaik untuk semua orang?**
 

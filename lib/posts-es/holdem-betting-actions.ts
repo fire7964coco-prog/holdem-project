@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Acciones de apuesta en Texas Hold'em: pasar, igualar, subir y retirarse",
   seoTitle: "¿Pasar, igualar o tirarte? — Acciones de apuesta en el póker",
   desc: "¿Te llega el turno y te quedas en blanco? Aprende qué significan check, call, raise y fold, la regla de la subida mínima y cuántas veces se puede resubir.",
-  tldr: "En Texas Hold'em hay 5 acciones de apuesta: pasar (check, gratis), apostar (abrir la ronda), igualar (call, pagar la apuesta), subir (raise — la subida mínima iguala la apuesta o subida anterior) y retirarse (fold). Solo puedes pasar cuando no tienes una apuesta viva por delante — preflop, eso normalmente solo pasa siendo la ciega grande (o quien puso un straddle vivo).",
+  tldr: "En Texas Hold'em hay 5 acciones de apuesta: pasar (check, gratis), apostar (abrir la ronda), igualar (call, pagar la apuesta), subir (raise — la subida mínima iguala la última apuesta o subida completa) y retirarse (fold). Solo puedes pasar cuando no tienes una apuesta viva por delante — preflop, eso normalmente solo pasa siendo la ciega grande (o quien puso un straddle vivo).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "9 min",
   emoji: "🃏",
@@ -38,7 +38,7 @@ En Texas Hold'em solo existen ==5 acciones de apuesta==, pero las reglas que las
 :::stripe
 5 | acciones de apuesta: pasar, apostar, igualar, subir y retirarse
 1 BB | apuesta mínima de apertura en No-Limit Hold'em
-= última subida | tamaño mínimo de la resubida (la regla del incremento)
+= última subida completa | tamaño mínimo de la resubida (la regla del incremento)
 Sin tope | de resubidas en No-Limit — se puede subir hasta que alguien esté all-in
 :::
 
@@ -52,7 +52,7 @@ Cada decisión que tomas en una mesa de póker es una de estas cinco:
 | Pasar (check) | Solo si no tienes una apuesta viva por delante (preflop: como ciega grande, o como el jugador que puso un straddle vivo) | Gratis — pasas el turno sin poner fichas |
 | Igualar (call) | Después de que alguien haya apostado o subido | Pagas exactamente la apuesta vigente |
 | Apostar (bet) | Primera apuesta de la ronda | La cantidad que elijas (mínimo = 1 ciega grande) |
-| Subir (raise) | Después de que alguien haya apostado | Al menos el tamaño de la apuesta o subida anterior por encima |
+| Subir (raise) | Después de que alguien haya apostado | Al menos el tamaño de la última apuesta o subida completa por encima |
 
 Ir ==all-in== no es una sexta acción aparte: es una apuesta, un pago o una subida con todas las fichas que te quedan. Más abajo lo vemos en detalle.
 
@@ -85,7 +85,7 @@ Para ver quién actúa y cuándo, calle por calle, consulta el [orden de juego d
 
 ## ¿Qué es un call (igualar) en el póker? Check vs call
 
-Igualar (o pagar) significa que ==pagas exactamente la apuesta vigente== para seguir en la mano. Alguien apuesta $10, tú pagas $10 — ni más, ni menos.
+Igualar (o pagar) significa que ==pagas exactamente la apuesta vigente== para seguir en la mano. Alguien apuesta $10, tú pagas $10 — ni más, ni menos. (Si te quedan menos de $10, igual puedes pagar: vas all-in por lo que tengas.)
 
 Check vs call es la confusión de principiante más habitual, así que aquí va la separación limpia:
 
@@ -116,7 +116,7 @@ Una regla de etiqueta en vivo: no te tires ==fuera de turno==. Espera a que la a
 En No-Limit Hold'em (el formato que jugarás casi siempre):
 
 - **Apuesta mínima**: 1 ciega grande
-- **Subida mínima (el min-raise)**: al menos ==el tamaño de la apuesta o subida anterior== añadido por encima
+- **Subida mínima (el min-raise)**: al menos ==el tamaño de la última apuesta o subida completa== añadido por encima
 - **Máximo**: todo tu stack — de ahí el "sin límite"
 
 Dos ejemplos resueltos:
@@ -126,7 +126,7 @@ Dos ejemplos resueltos:
 | Flop | Un jugador apuesta $6 | $6 más → $12 en total |
 | Preflop (ciegas $1/$2) | Un jugador sube a $6 (una subida de $4 sobre la ciega de $2) | $4 más → $10 en total |
 
-La clave: el min-raise iguala el ==incremento== de la última apuesta o subida, no la ciega grande. En el preflop, la ciega grande cuenta como apuesta de apertura — por eso la subida de apertura más pequeña es a 2 ciegas grandes.
+La clave: el min-raise iguala el ==incremento== de la última apuesta o subida completa, no la ciega grande. (Lo de «completa» importa cuando alguien va all-in por menos de una subida: tras una apuesta de $10 y un all-in de $14, el incremento a igualar sigue siendo $10, así que la subida mínima es a $24.) En el preflop, la ciega grande cuenta como apuesta de apertura — por eso la subida de apertura más pequeña es a 2 ciegas grandes.
 
 Dos reglas del póker en vivo que vienen con la subida:
 
@@ -143,7 +143,7 @@ En **No-Limit Hold'em: no hay tope**. Puedes subir, que te resuban y volver a su
 
 Aun así, hay dos límites:
 
-- Cada resubida debe cumplir la ==regla del incremento mínimo== de arriba
+- Cada resubida debe cumplir la ==regla del incremento mínimo== de arriba — la única excepción es un all-in, que puede ser por menos
 - ==r:No puedes subir tu propia apuesta.== Si apuestas y todos se limitan a pagar, la ronda termina — solo vuelves a poder subir si alguien te sube *a ti* primero
 
 En las partidas de **Fixed-Limit** cada ronda está capada (bote "capado"). Las reglas de torneo de la WSOP fijan el tope en ==una apuesta más cuatro subidas== (regla 100.b) — y la excepción funciona al revés de lo que casi todos esperan: ==r:el tope sigue en pie aunque en la mano queden solo dos jugadores==. Solo cae cuando **todo el torneo** se queda heads-up. En cash mandan las normas de la casa, así que pregunta al crupier.
@@ -152,7 +152,7 @@ En las partidas de **Fixed-Limit** cada ronda está capada (bote "capado"). Las 
 
 ## ¿Qué significa ir all-in?
 
-Ir all-in significa apostar ==todas las fichas que te quedan==. Puedes hacerlo en cualquier momento en que la acción sea tuya — como apuesta, como pago o como subida.
+Ir all-in significa apostar ==todas las fichas que te quedan==. Puedes hacerlo en tu turno como apuesta, como pago o como subida — la que de esas tengas disponible en ese momento.
 
 Si tu all-in es *menor* que la apuesta vigente, no estás fuera: simplemente compites por un ==bote principal== limitado a tu aportación, mientras que las fichas extra de los stacks más grandes forman un ==bote secundario (side pot)== que tú no puedes ganar. (Si alguien está aún más corto que tú, tú sí juegas por el side pot al que él no llega — cada all-in solo limita su propia capa.) Y un all-in que sea *menor que un min-raise completo* generalmente no reabre la acción para los jugadores que ya actuaron — una regla sutil que sorprende hasta a los habituales.
 
@@ -178,7 +178,7 @@ Juego una partida semanal en vivo de apuestas bajas, y los mismos errores de acc
 
 ### Error 1 — Pagar cuando podrías pasar
 
-Primero en hablar en el flop, nadie ha apostado, y un jugador novato suelta fichas **en silencio**, "para pagar". No hay nada que pagar: según la ==regla 90.a de la WSOP== se apuesta por declaración *o* empujando fichas — acaba de apostar sin querer. Si hubiera *dicho* "pago", la ==regla 90.b.1== lo habría convertido en un check. Cuando la calle está sin abrir, pasa y mira la carta gratis.
+Primero en hablar en el flop, nadie ha apostado, y un jugador novato suelta fichas **en silencio**, "para pagar". No hay nada que pagar: según la ==regla 90.a de la WSOP== se apuesta por declaración *o* empujando fichas — acaba de apostar sin querer. Si hubiera *dicho* "pago", la ==regla 90.b.1== lo habría convertido en un check. Cuando la calle está sin abrir, pasa — si nadie apuesta detrás de ti, ves la siguiente carta gratis.
 
 ### Error 2 — "Pago... ¡no, espera, subo!"
 
@@ -207,11 +207,11 @@ A. Sí — si alguien apuesta después de tu check, puedes subir cuando la acci�
 
 **Q. ¿Puedes subir tu propia apuesta?**
 
-A. No. Si apuestas y los rivales solo pagan, no puedes añadir más — la ronda de apuestas termina. Solo puedes volver a subir si otro jugador te sube primero, lo que reabre la acción.
+A. No. Si apuestas y los rivales solo pagan, no puedes añadir más — la ronda de apuestas termina. Solo puedes volver a subir si otro jugador te hace primero una subida completa — eso reabre la acción; un all-in por menos de una subida completa no.
 
 **Q. ¿Cuántas veces se puede subir en Texas Hold'em?**
 
-A. En No-Limit no hay tope al número de subidas — se puede resubir hasta que un jugador esté all-in, siempre que cada subida cumpla el incremento mínimo. En Fixed-Limit, las reglas de torneo de la WSOP capan la ronda en una apuesta más cuatro subidas (regla 100.b), y ese tope sigue en pie aunque en la mano queden solo dos jugadores.
+A. En No-Limit no hay tope al número de subidas — se puede resubir hasta que un jugador esté all-in, siempre que cada subida cumpla el incremento mínimo (un all-in puede ser por menos). En Fixed-Limit, las reglas de torneo de la WSOP capan la ronda en una apuesta más cuatro subidas (regla 100.b), y ese tope sigue en pie aunque en la mano queden solo dos jugadores — solo cae cuando todo el torneo queda heads-up.
 
 **Q. ¿Puedes retirarte fuera de turno?**
 

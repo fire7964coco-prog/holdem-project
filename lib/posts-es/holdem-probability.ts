@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Para el river ligarás pareja el 43.8% de las veces, doble pareja el 23.5%, color el 3.0% y full el 2.6% — mientras que una escalera real aparece solo una vez cada 31,000 manos.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "13 min",
   emoji: "🎲",
@@ -173,11 +173,11 @@ Ese es el atajo: outs limpias → el multiplicador de las cartas que vas a ver �
 Bote tras la apuesta | $100 + $50 = $150
 Tu call | $50 para ganar $150 (bote final $200)
 Pot odds | 50 ÷ 200 = 25% — necesitas al menos 25% de equity
-Tu equity | Proyecto de color ≈ 35% para el river (regla del 4) — el número asume que ves ==las dos== cartas
+Tu equity | Proyecto de color con 9 outs limpios ≈ 35% para el river (regla del 4) — el número asume que ves ==las dos== cartas
 Decisión | Con dos cartas por venir: 35% > 25% → un ==g:call== claramente rentable
 :::
 
-Ese es el momento en que todos los números dan sus frutos — pero **usa el número de la calle que estás pagando**. Si vienen las dos cartas (estás all-in, o el turn pasa sin más apuestas), tu **35%** supera el precio del **25%** y pagar gana dinero a largo plazo aunque pierdas la mano más veces que no. Si tu rival va a volver a apostar en el turn, este call solo te compra la carta del turn — desde el flop eso es ==9 ÷ 47 = 19.1%==, *por debajo* del precio — y entonces el proyecto necesita [odds implícitas](/es/blog/holdem-implied-odds "thumb:/images/holdem-implied-odds-hero.webp"), el dinero que ganas en las calles siguientes cuando ligas, para cubrir ese hueco. Gastar el número del ×4 en una decisión de una sola carta es la forma más común en que los principiantes sobrevaloran un proyecto. Para el método completo y la chuleta de tamaños de apuesta, mira [cómo calcular las pot odds](/es/blog/holdem-pot-odds).
+Ese es el momento en que todos los números dan sus frutos — pero **usa el número de la calle que estás pagando**. Si vienen las dos cartas (estás all-in, o el turn pasa sin más apuestas), el **35%** de un proyecto limpio supera el precio del **25%** y pagar gana dinero a largo plazo aunque pierdas la mano más veces que no. Si tu rival va a volver a apostar en el turn, este call solo te compra la carta del turn — desde el flop eso es ==9 ÷ 47 = 19.1%==, *por debajo* del precio — y entonces el proyecto necesita [odds implícitas](/es/blog/holdem-implied-odds "thumb:/images/holdem-implied-odds-hero.webp"), el dinero que ganas en las calles siguientes cuando ligas, para cubrir ese hueco. Gastar el número del ×4 en una decisión de una sola carta es la forma más común en que los principiantes sobrevaloran un proyecto. Para el método completo y la chuleta de tamaños de apuesta, mira [cómo calcular las pot odds](/es/blog/holdem-pot-odds).
 
 ---
 
@@ -248,7 +248,7 @@ A. Si ligas un proyecto de color en el flop (nueve outs), lo completarás alrede
 
 **Q. ¿Cuál es la probabilidad de ligar un set en el flop?**
 
-A. Alrededor del 11.8% en el flop, o más o menos 1 entre 8.5, cuando tienes una pareja servida. Las odds equivalentes de 7.5 a 1 describen fallos frente a aciertos, no una profundidad de stack recomendada. Un call de set mining también necesita un pago futuro realista; la pauta práctica de 15–20 veces deja margen para los sets que no reciben acción o que pierden.
+A. Alrededor del 11.8% en el flop, o más o menos 1 entre 8.5, cuando tienes una pareja servida. Las odds equivalentes de 7.5 a 1 describen fallos frente a aciertos, no una profundidad de stack recomendada. Un call de set mining también necesita un pago futuro realista; la pauta práctica — stacks efectivos de 15–20 veces el call — deja margen para los sets que no reciben acción o que pierden.
 
 **Q. ¿Cuál es la probabilidad de recibir pareja de ases?**
 
@@ -280,7 +280,7 @@ A. Ínfima. Incluso cuando ya tienes dos de sus cinco cartas del mismo palo — 
 
 **Q. ¿Cuál es la mano ganadora más común en el póker?**
 
-A. La pareja, seguida de la doble pareja. Como todos los jugadores comparten las cinco cartas comunitarias, la mayoría de los botes de Texas Hold'em se deciden con una sola pareja y su kicker — los colores, escaleras y fulls ganan mucho menos de lo que espera un principiante. La frecuencia completa de cada resultado está en la tabla de arriba.
+A. La pareja, seguida de la doble pareja. Como todos los jugadores comparten las cinco cartas comunitarias, la mayoría de los botes de Texas Hold'em se deciden con una sola pareja y su kicker — los colores, escaleras y fulls ganan mucho menos de lo que espera un principiante. Con qué frecuencia aparece cada mano sobre siete cartas — que no es lo mismo que con qué frecuencia gana el bote — está en la tabla de arriba.
 
 **Q. ¿Con qué frecuencia gana la mejor mano en el póker?**
 

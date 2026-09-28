@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Cada decisión ganadora en Texas Hold'em se reduce a cinco preguntas repetibles: dónde estoy sentado (posición), ¿vale la pena jugar esta mano?, ¿subo o foldeo en vez de abrir con limp?, ¿sigo apostando en el flop?, y ¿cuándo suelto la mano? Un jugador tight-aggressive que responde bien esas cinco foldea ~80% de sus manos preflop, las juega con agresividad cuando entra, y le gana a casi cualquier partida casual — sin necesidad de memorizar listas de tips.",
   category: "strategy",
   date: "2026-07-06",
-  updated: "2026-09-27",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "14 min",
   emoji: "♠️",
@@ -127,7 +127,7 @@ La agresión gana botes. **La disciplina conserva stacks.** La decisión que sep
 
 Aquí tienes uno concreto de una mano que jugué. Subí ==A♣K♣== y me pagó uno. El flop vino ==2♥ 7♦ 9♠== — un fallo total. Tengo as alto, sin pareja, sin proyecto. Disparo un c-bet (Decisión 4, en posición, board seco), y mi rival me hace **check-raise**. En ese punto la matemática es simple: tengo la mejor carta alta posible y nada más, y un check-raise en ese board casi nunca es un farol a stakes bajos. Así que foldeo el as alto y pierdo lo mínimo. Dos años antes «habría pagado solo por ver» — y le habría pagado un set de nueves cada vez.
 
-La regla general: **[cuando la historia que cuenta tu rival le gana a la mano que de verdad tienes](/es/blog/holdem-when-to-fold "thumb:/images/holdem-when-to-fold-hero.webp"), y no tienes las odds para ligar, suéltala.** Foldear una mano buena-pero-batida se siente como perder. En realidad es el hábito más rentable del juego. Cuando *sí* tienes un proyecto, la decisión de foldear o pagar se reduce a las [pot odds](/es/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") — el precio que te dan frente a la probabilidad de que ligues.
+La regla general: **[cuando la historia que cuenta tu rival le gana a la mano que de verdad tienes](/es/blog/holdem-when-to-fold "thumb:/images/holdem-when-to-fold-hero.webp"), y no tienes las odds para ligar, suéltala.** Foldear una mano buena-pero-batida se siente como perder. En realidad es el hábito más rentable del juego. Cuando *sí* tienes un proyecto, la decisión de foldear o pagar se reduce a las [pot odds](/es/blog/holdem-pot-odds "thumb:/images/holdem-pot-odds-hero.webp") — el precio que te dan frente a la probabilidad de que ligues una mano ganadora.
 
 ---
 
@@ -135,7 +135,7 @@ La regla general: **[cuando la historia que cuenta tu rival le gana a la mano qu
 
 No hace falta que seas matemático, pero dos números sostienen la mitad de tus decisiones.
 
-**Las pot odds** te dicen si un call es rentable: compara el precio del call con el tamaño del bote, y luego con tu probabilidad de ligar. Si el bote te ofrece 4 a 1 y tu proyecto liga aproximadamente 1 de cada 5, pagar queda más o menos en el punto de equilibrio a la larga; mejor que eso, es beneficio. Este es el motor detrás de cada spot de «¿persigo este proyecto?» — y la [guía de pot odds](/es/blog/holdem-pot-odds) lo convierte en una lectura de tabla de 10 segundos.
+**Las pot odds** te dicen si un call es rentable: compara el precio del call con el tamaño del bote, y luego con tu probabilidad de ligar una carta ganadora. Si el bote te ofrece 4 a 1 y tu proyecto entra y gana aproximadamente 1 de cada 5, pagar queda más o menos en el punto de equilibrio a la larga; mejor que eso, es beneficio. Este es el motor detrás de cada spot de «¿persigo este proyecto?» — y la [guía de pot odds](/es/blog/holdem-pot-odds) lo convierte en una lectura de tabla de 10 segundos.
 
 **Las odds de set-mining** explican por qué los pares pequeños son especulativos. Iguala una subida con un par de cincos esperando ligar un trío en el flop — tres iguales — y conectarás solo alrededor del **11.8% de las veces, más o menos 1 de cada 8.5.** Cuando funciona es precioso: ligas un flop ==5♣ K♠ 2♦== con ==5♠5♦== y tienes un trío escondido que le saca todo el stack a un sobrepar. Pero como fallas el ~88% de los flops, buscar trío solo es rentable cuando los stacks efectivos son lo bastante profundos como para pagarte cuando ligas — una guía aproximada es **al menos ~15–20× el tamaño del call.** ¿Stacks cortos? Ese call especulativo se convierte en una fuga. La [tabla completa de odds y probabilidades](/es/blog/holdem-probability) tiene todos los números que vas a necesitar.
 
@@ -182,7 +182,7 @@ El TAG funciona porque ataca las dos mayores fugas de principiante a la vez — 
 
 **Q. ¿Cuál es la mejor estrategia para Texas Hold'em?**
 
-A. Juega un estilo tight-aggressive construido en torno a cinco decisiones que se repiten: elige las manos según tu posición, foldea la mayoría de lo que te reparten (alrededor del 80% preflop), entra a los botes subiendo en vez de limpeando, haz c-bet en el flop cuando tengas la iniciativa, y foldea con disciplina cuando estés batido. Esa combinación le gana a casi cualquier partida casual sin ninguna teoría avanzada.
+A. Juega un estilo tight-aggressive construido en torno a cinco decisiones que se repiten: elige las manos según tu posición, foldea la mayoría de lo que te reparten (alrededor del 80% preflop), entra a los botes subiendo en vez de limpeando, haz c-bet en el flop cuando tengas la iniciativa y el board y los rivales lo permitan, y foldea con disciplina cuando estés batido. Esa combinación le gana a casi cualquier partida casual sin ninguna teoría avanzada.
 
 **Q. ¿Cuál es la mejor estrategia de póker para principiantes?**
 
@@ -202,7 +202,7 @@ A. Apuesta cuando tienes una mano con la que vale la pena agrandar el bote, o un
 
 **Q. ¿Cuándo deberías farolear en el póker?**
 
-A. Farolea cuando la historia es creíble y tu rival de verdad puede foldear — no solo porque fallaste. Los mejores faroles vienen con respaldo: un proyecto (un semifarol) que aún puede ganar si te pagan, en posición, contra un solo rival, en un board que favorece tu rango. Farolear contra varios que pagan o contra jugadores que nunca foldean es simplemente quemar dinero.
+A. Farolea cuando la historia es creíble y tu rival de verdad puede foldear — no solo porque fallaste. Los mejores faroles vienen con respaldo: un proyecto (un semifarol) que aún puede ganar si te pagan, en posición, contra un solo rival, en un board que favorece tu rango. Un farol puro contra varios que pagan o contra jugadores que nunca foldean es simplemente quemar dinero.
 
 **Q. ¿Cuándo deberías hacer 3-bet?**
 
@@ -230,7 +230,7 @@ A. Los dos — pero la habilidad gana a la larga. Cualquier mano suelta lleva un
 
 **Q. ¿Qué es el póker GTO?**
 
-A. El GTO (Game Theory Optimal, óptimo según la teoría de juegos) es una estrategia matemáticamente equilibrada que no se puede explotar — mezclas faroles y apuestas de valor en proporciones que no dejan a tus rivales ningún contraataque rentable. Es el ideal teórico que calculan los solvers, pero a stakes bajos ganas más dinero jugando póker *explotativo*: desviarte del GTO para castigar fugas concretas (jugadores que foldean de más o que igualan demasiado). Empieza con tight-aggressive, aprende a explotar, y trata el GTO como el punto de referencia — no como la meta del primer día.
+A. El GTO (Game Theory Optimal, óptimo según la teoría de juegos) es una estrategia matemáticamente equilibrada que, en heads-up, no se puede explotar — mezclas faroles y apuestas de valor en proporciones que no dejan a tus rivales ningún contraataque rentable. Es el ideal teórico que calculan los solvers, pero a stakes bajos ganas más dinero jugando póker *explotativo*: desviarte del GTO para castigar fugas concretas (jugadores que foldean de más o que igualan demasiado). Empieza con tight-aggressive, aprende a explotar, y trata el GTO como el punto de referencia — no como la meta del primer día.
 
 **Q. ¿Cómo se mejora en el póker?**
 

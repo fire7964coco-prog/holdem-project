@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "In Position zu sein bedeutet, dass du zuletzt handelst – du siehst jede Entscheidung deiner Gegner, bevor du einen Chip ausgibst. Solver-Beispiele zeigen, dass Position die Equity-Realisierung meist verbessert. Doch kein Sitz liegt zwangsläufig über oder unter 100%: Ranges, Board und Action können das übliche Muster umkehren. Deshalb öffnet UTG ~13% der Hände und der Button ~43% – und deshalb schreibt Position postflop jede C-Bet, jeden Bluff und jede Pot-Control-Entscheidung neu.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-09-27",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "16 Min.",
   emoji: "🎯",
@@ -67,8 +67,8 @@ Das kostet dich das Zuerst-Handeln tatsächlich:
 :::compare
 Out of Position (zuerst handeln) | In Position (zuletzt handeln)
 Ins Ungewisse betten – er kann raisen, callen oder folden, und du erfährst es, nachdem dein Geld drin ist | Seinen Check, seine Bet oder seinen Fold sehen, bevor du irgendetwas entscheidest
-Keine Free Card nehmen – checkst du, kann er dich von deinem Draw wegbetten | Immer dann hinterher checken, wenn du die nächste Karte gratis sehen willst
-Die Potgröße läuft dir davon – du kannst ihn nicht am Betten hindern, wenn du einen billigen Showdown willst | Du entscheidest, ob die Hand in eine weitere Street geht
+Keine Free Card aus eigener Kraft nehmen – checkst du, kann er dich von deinem Draw wegbetten | Wird zu dir gecheckt, hinterher checken und die nächste Karte gratis sehen
+Die Potgröße läuft dir davon – du kannst ihn nicht am Betten hindern, wenn du einen billigen Showdown willst | Wird zu dir gecheckt, entscheidest du, ob auf dieser Street noch Geld reingeht
 Deine Range wird gelesen – Check-Call-Linien sind mit der Zeit durchschaubar | Deine Checks und Bets bleiben mehrdeutig, weil er blind handelt
 :::
 
@@ -147,7 +147,7 @@ Der Open-Limp scheitert aus UTG an drei Punkten:
 2. **Er cappt deine wahrgenommene Range** – aufmerksame Spieler attackieren Limper unerbittlich, und du wirst Raises gegenüberstehen, gegen die du nicht bequem weiterspielen kannst.
 3. **Er gewinnt preflop nichts.** Ein Raise kann die Blinds direkt nehmen; ein Limp nie.
 
-Es gibt eine schmale Ausnahme in sehr passiven Live-Spielen – hinter anderen Limpern zu limpen mit kleinen Paaren und Suited Connectors, um einen billigen Multiway-Flop zu sehen – aber *Open*-Limpen aus UTG ist in praktisch jedem Lineup ein Leak. Das komplette Argument, inklusive wann Hinterher-Limpen tatsächlich in Ordnung ist, steht im [Limping-Leitfaden](/de/blog/holdem-limping).
+Es gibt eine schmale Ausnahme in sehr passiven Live-Spielen – hinter anderen Limpern zu limpen mit kleinen Paaren und Suited Connectors, um einen billigen Multiway-Flop zu sehen – aber *Open*-Limpen aus UTG ist bei normaler Stack-Tiefe in praktisch jedem Lineup ein Leak. Das komplette Argument, inklusive wann Hinterher-Limpen tatsächlich in Ordnung ist, steht im [Limping-Leitfaden](/de/blog/holdem-limping).
 
 ---
 
@@ -257,7 +257,7 @@ Für die Mechanik der Blinds selbst – warum es sie gibt und wie die Pflichtein
 
 **Q. Was bedeutet out of Position im Poker?**
 
-A. Out of Position (OOP) bedeutet, dass du auf den Postflop-Streets – Flop, Turn und River – vor deinem Gegner handeln musst. Du setzt Chips ein, ohne zu wissen, was er tun wird, kannst keine Free Cards nehmen und tust dich schwer, die Potgröße zu kontrollieren. Die Blinds sind OOP gegen jeden Nicht-Blind-Sitz (zwischen den beiden handelt der Small Blind zuerst – also hat der Big Blind tatsächlich Position auf den Small Blind); der Button ist gegen niemanden je OOP.
+A. Out of Position (OOP) bedeutet, dass du auf den Postflop-Streets – Flop, Turn und River – vor deinem Gegner handeln musst. Du setzt Chips ein, ohne zu wissen, was er tun wird, kannst keine Free Card aus eigener Kraft nehmen und tust dich schwer, die Potgröße zu kontrollieren. Die Blinds sind OOP gegen jeden Nicht-Blind-Sitz (zwischen den beiden handelt der Small Blind zuerst – also hat der Big Blind tatsächlich Position auf den Small Blind – außer heads-up, wo der Small Blind der Button ist); der Button ist gegen niemanden je OOP.
 
 **Q. Wer handelt zuerst – der Small Blind oder der Big Blind?**
 
@@ -273,11 +273,11 @@ A. Der Button. Es ist der einzige Sitz, der garantiert auf jeder Postflop-Street
 
 **Q. Was ist die schwächste Position im Poker?**
 
-A. Zwei Antworten, je nach Frage. Der Small Blind ist der strukturell schlechteste Sitz, um eine Hand zu spielen – als Erster dran auf jeder Postflop-Street. Der Big Blind verliert die meisten reinen Chips pro 100 Hände, einfach weil er jede Runde einen vollen Pflicht-Blind postet; selbst perfektes Spiel reduziert diesen Verlust nur. Unter den Nicht-Blind-Sitzen ist UTG am schwächsten: zuerst preflop, engste Range, meist OOP nach dem Flop.
+A. Zwei Antworten, je nach Frage. Der Small Blind ist der strukturell schlechteste Sitz, um eine Hand zu spielen – an einem Tisch mit drei oder mehr Spielern als Erster dran auf jeder Postflop-Street. Der Big Blind verliert die meisten reinen Chips pro 100 Hände, einfach weil er jede Runde einen vollen Pflicht-Blind postet; selbst perfektes Spiel reduziert diesen Verlust nur. Unter den Nicht-Blind-Sitzen ist UTG am schwächsten: zuerst preflop, engste Range, meist OOP nach dem Flop.
 
 **Q. Ist der Small Blind eine frühe Position?**
 
-A. Nein – der Small Blind ist ein Blind, kein „Early-Position“-Sitz. Spieler in früher Position (UTG und die Sitze daneben) öffnen tight, weil der ganze Tisch hinter ihnen handelt – und postflop handeln sie immerhin *nach* den Blinds. Der Small Blind ist in Wahrheit der schlechteste Sitz, um eine Hand zu spielen: Er postet einen halben Blind und ist danach auf jeder Postflop-Street als Erster dran. Behandle ihn nicht wie Early Position – gegen einen Raise ist der moderne Standard aus dem Small Blind 3-Bet oder Fold, fast nie Flat-Call; wird zu dir gefoldet, raist du meistens.
+A. Nein – der Small Blind ist ein Blind, kein „Early-Position“-Sitz. Spieler in früher Position (UTG und die Sitze daneben) öffnen tight, weil der ganze Tisch hinter ihnen handelt – und postflop handeln sie immerhin *nach* den Blinds. Der Small Blind ist in Wahrheit der schlechteste Sitz, um eine Hand zu spielen: Er postet einen halben Blind und ist danach, an jedem Tisch mit drei oder mehr Spielern, auf jeder Postflop-Street als Erster dran. Behandle ihn nicht wie Early Position – gegen einen Raise ist der moderne Standard aus dem Small Blind 3-Bet oder Fold, fast nie Flat-Call; wird zu dir gefoldet, raist du meistens.
 
 **Q. Ist es besser, aus UTG zu limpen oder zu raisen?**
 

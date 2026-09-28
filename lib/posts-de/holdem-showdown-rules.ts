@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Im Turnier zeigt ohne All-in der letzte River-Aggressor zuerst; nach einem durchgecheckten River beginnt der erste aktive Spieler links vom Button. Bei einem All-in müssen nach Abschluss aller Einsätze sofort alle verbliebenen Hände offenliegen. Wer die River-Bet gecallt und seine Karten behalten oder aufgedeckt hat, darf die Hand des letzten Aggressors verlangen. Im Cashgame gelten fürs Zeigen und Mucken die Hausregeln.",
   category: "rules",
   date: "2026-06-15",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "10 Min.",
   emoji: "🃏",
@@ -41,7 +41,7 @@ Die Regel hängt davon ab, wie die letzte Setzrunde geendet hat (den kompletten 
 |--------------------|-----------------|
 | Jemand hat am River gesetzt oder erhöht | ==Der Spieler, der zuletzt gesetzt oder erhöht hat==, zeigt zuerst – außer es war ein All-in im Turnier (siehe unten) |
 | Alle haben den River durchgecheckt | Der erste aktive Spieler links vom Dealer-Button zeigt zuerst |
-| All-in auf einer früheren Street | Turnier: Sobald das Setzen abgeschlossen ist, wird jede Hand unverzüglich offen hingelegt (TDA-2024-Regel 16). Cashgame: Gibt es einen Side Pot, zeigen dessen Spieler zuerst; und in einem No-Limit-Spiel dreht der Spieler, der All-in gegangen ist, zuerst um (Live Action Rule 149) |
+| All-in auf einer früheren Street (das Setzen endete vor dem River) | Turnier: Sobald das Setzen abgeschlossen ist, wird jede Hand unverzüglich offen hingelegt (TDA-2024-Regel 16). Cashgame: Gibt es einen Side Pot, zeigen dessen Spieler zuerst; und in einem No-Limit-Spiel dreht der Spieler, der All-in gegangen ist, zuerst um (Live Action Rule 149) |
 
 </div>
 
@@ -61,13 +61,13 @@ Sobald der letzte Aggressor seine Hand gezeigt hat, können die übrigen Spieler
 
 ==r:Aber es gibt eine wichtige Ausnahme:== Wurde deine River-Bet gecallt, hat der Caller den vollen Preis bezahlt, um deine Hand zu sehen – er kann den Dealer bitten, eine schon gemuckte Hand aufzudecken. Das ist die **„I want to see that hand“-Regel**. Im Turnier zieht ==TDA-2024-Regel 18== ihre Grenzen eng: Wer am Showdown keine Karten mehr hält oder verdeckt gemuckt hat, verliert das Recht, eine fremde Hand einzufordern. Unantastbar ist der Anspruch nur für den, der die River-Bet gecallt und seine Karten getablet oder behalten hat – und auch dann nur auf die Hand des ==letzten Aggressors==, also auf die Hand, für die er bezahlt hat. Über alles Weitere entscheidet der Turnierleiter. Cashgames laufen nach Hausregeln und sind nicht automatisch lockerer: Nach den WSOP Live Action Rules setzt die Bitte, eine nicht aufgedeckte Hand zu sehen, einen Verdacht auf Absprachen **und** die Anwesenheit eines Floormans voraus (==Live Action Rule 147==). (Nicht zu verwechseln mit „show one, show all“: Die besagt, dass jeder am Tisch deine Karten sehen darf, wenn du sie freiwillig einem einzelnen Spieler zeigst.)
 
-Praktische Faustregel: ==Als letzter Aggressor drehst du um – auch den gecallten Bluff.== Verdeckt mucken ist die Option des **Callers**, der die Hand des Bettors schon gesehen hat. Wer selbst gesetzt hat und schnell muckt, verliert doppelt: Im Turnier kann der Caller, der dafür bezahlt hat, deine Hand ohnehin einfordern (==TDA-2024-Regel 18==) – im WSOP-Cashgame kann er das nicht, solange kein Absprache-Verdacht und kein Floorman da sind (Live Action Rule 147) –, und weil „cards speak“ gilt, ist schon mancher Pot weggeworfen worden, dessen Ass-hoch am Ende vorne lag.
+Praktische Faustregel: ==Als letzter Aggressor drehst du um – auch den gecallten Bluff.== Der **Caller** zeigt oder muckt, nachdem er deine Hand gesehen hat. Als Setzer darfst du statt zu zeigen mucken und gibst damit den Pot auf – muckst du aber schnell, verlierst du doppelt: Im Turnier kann der Caller, der dafür bezahlt hat, deine Hand ohnehin einfordern (==TDA-2024-Regel 18==) – im WSOP-Cashgame kann er das nicht, solange kein Absprache-Verdacht und kein Floorman da sind (Live Action Rule 147) –, und weil „cards speak“ gilt, ist schon mancher Pot weggeworfen worden, dessen Ass-hoch am Ende vorne lag.
 
 ---
 
 ## Showdown-Reihenfolge, wenn alle den River durchgecheckt haben
 
-Hat am River niemand gesetzt (alle haben gecheckt), beginnt der Showdown beim **ersten aktiven Spieler links vom Dealer-Button** und läuft im Uhrzeigersinn weiter.
+Hat am River niemand gesetzt (alle haben gecheckt) und ist niemand All-in, beginnt der Showdown beim **ersten aktiven Spieler links vom Dealer-Button** und läuft im Uhrzeigersinn weiter.
 
 Beispiel: Button, Small Blind und Big Blind sehen den River. SB checkt, BB checkt, Button checkt. Der Showdown beginnt beim SB (erster aktiver Spieler links vom Button). Der SB kann zeigen oder mucken. Dann der BB. Der Button zuletzt.
 
@@ -85,7 +85,7 @@ Im **Turnier** gilt: Geht ein Spieler All-in und sind keine weiteren Bets mehr m
 |----------------|---------------|
 | Spieler geht auf einer früheren Street All-in, andere callen, keine Bets mehr möglich | Turnier: Sobald das Setzen abgeschlossen ist, wird jede Hand unverzüglich offen hingelegt (TDA-2024-Regel 16). Cashgame: Gibt es einen Side Pot, zeigen dessen Spieler zuerst; und in einem No-Limit-Spiel dreht der Spieler, der All-in gegangen ist, zuerst um (Live Action Rule 149) |
 | All-in-Bet am River wird gecallt | Cashgame: Der All-in-Spieler zeigt als letzter Aggressor zuerst. Turnier: gar keine Zeigereihenfolge – nach TDA-2024-Regel 16 gehen alle Hände gleichzeitig hoch und ==r:hier darf niemand mucken== |
-| Mehrere All-ins mit mehreren Side Pots | Jeder Pot wird separat vergeben; alle beteiligten Hände werden gezeigt |
+| Mehrere All-ins mit mehreren Side Pots | Jeder Pot wird separat vergeben. Turnier: Jede beteiligte Hand wird offen hingelegt. Cashgame: Um einen Teil eines Pots zu gewinnen, muss ein Spieler seine Karten zeigen (WSOP Live Action Rule 143) |
 
 </div>
 
@@ -113,7 +113,7 @@ Echte Situation: Du hältst J♥ 10♥ auf einem Board mit Q♥ 9♥ 8♥ 2♣ 5
 
 Slow Rolling heißt, ==sich absichtlich viel Zeit zu lassen, eine sehr starke Hand zu zeigen, obwohl man weiß, dass man gewonnen hat==.
 
-Du hast die Nuts. Der Gegner zeigt eine starke Hand. Du machst eine Pause, tust so, als würdest du nachdenken, schaust langsam auf deine Karten, lässt alle warten – und drehst dann den Gewinner um. Technisch erlaubt. Überall verhasst.
+Du hast die Nuts. Der Gegner zeigt eine starke Hand. Du machst eine Pause, tust so, als würdest du nachdenken, schaust langsam auf deine Karten, lässt alle warten – und drehst dann den Gewinner um. Keine Regel verbietet es ausdrücklich, geschützt ist es aber auch nicht: Einen Gegner mit Theater zu verhöhnen (WSOP Tournament Rule 47) und das Spiel anhaltend zu verzögern (TDA-2024-Regel 70) können beide eine Strafe nach sich ziehen. Und überall verhasst ist es sowieso.
 
 ![Slow Rolling beim Poker – die anderen Spieler sind frustriert, weil ein Spieler das Zeigen der Gewinnerhand absichtlich hinauszögert](/images/holdem-showdown-slow-roll.webp)
 
@@ -164,7 +164,7 @@ Beim Showdown – also sobald alle Einsätze abgeschlossen sind – verbietet di
 
 **Q. Was passiert, wenn niemand freiwillig zeigen will?**
 
-A. Der Spieler, der in der letzten Setzrunde die letzte aggressive Aktion gemacht hat (Bet oder Raise), muss zuerst zeigen. Wurde die letzte Runde von allen durchgecheckt, zeigt der erste aktive Spieler links vom Dealer-Button zuerst, und es geht im Uhrzeigersinn weiter.
+A. Ist niemand All-in, muss der Spieler, der in der letzten Setzrunde die letzte aggressive Aktion gemacht hat (Bet oder Raise), zuerst zeigen. Wurde die letzte Runde von allen durchgecheckt, zeigt der erste aktive Spieler links vom Dealer-Button zuerst, und es geht im Uhrzeigersinn weiter. All-in-Pots folgen ihrer eigenen Regel – siehe die All-in-Frage weiter unten.
 
 **Q. Muss man seine Karten zeigen, wenn man beim Showdown gecallt wird?**
 
@@ -176,7 +176,7 @@ A. Ja – das ist die Regel „show one, show all“, die in praktisch jedem Car
 
 **Q. Ist Slow Rolling beim Poker verboten?**
 
-A. Nein – verboten ist es nicht, aber überall verhasst. Slow Rolling bedeutet, das Zeigen einer Gewinnerhand absichtlich hinauszuzögern, obwohl man bereits weiß, dass sie die beste ist. Es gilt als grober Verstoß gegen die Etikette, weil es als bewusste Demütigung des Gegners gilt. Hältst du die Nuts oder einen klaren Gewinner, dreh deine Karten sofort um. Wie schnell du zeigst, sagt am Tisch viel über deinen Charakter aus.
+A. Nein – keine Regel verbietet es ausdrücklich, aber es ist überall verhasst. Slow Rolling bedeutet, das Zeigen einer Gewinnerhand absichtlich hinauszuzögern, obwohl man bereits weiß, dass sie die beste ist. Es gilt als grober Verstoß gegen die Etikette, weil es als bewusste Demütigung des Gegners gilt – und Verhöhnen oder anhaltendes Verzögern des Spiels kann bestraft werden (WSOP Tournament Rule 47 · TDA-2024-Regel 70). Hältst du die Nuts oder einen klaren Gewinner, dreh deine Karten sofort um. Wie schnell du zeigst, sagt am Tisch viel über deinen Charakter aus.
 
 **Q. Werden die Karten beim All-in sofort aufgedeckt?**
 

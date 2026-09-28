@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Aksi Taruhan di Texas Hold'em: Check, Call, Raise, Fold",
   seoTitle: "Check, Call, atau Fold? — Aksi Taruhan Poker & Aturan Raise",
   desc: "Giliran Anda tiba dan pikiran langsung kosong? Pelajari arti check, call, raise, dan fold di poker, aturan min-raise, dan berapa kali Anda boleh re-raise.",
-  tldr: "Texas Hold'em punya 5 aksi taruhan: check (lewat gratis), bet (membuka ronde), call (menyamai taruhan), raise (menaikkannya — raise minimum sama dengan bet atau raise sebelumnya), dan fold. Anda hanya boleh check kalau tidak ada taruhan aktif di depan Anda — di preflop itu biasanya cuma terjadi kalau Anda big blind (atau memasang live straddle).",
+  tldr: "Texas Hold'em punya 5 aksi taruhan: check (lewat gratis), bet (membuka ronde), call (menyamai taruhan), raise (menaikkannya — raise minimum sama dengan bet atau raise penuh terakhir), dan fold. Anda hanya boleh check kalau tidak ada taruhan aktif di depan Anda — di preflop itu biasanya cuma terjadi kalau Anda big blind (atau memasang live straddle).",
   category: "rules",
   date: "2026-06-14",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "9 menit",
   emoji: "🃏",
@@ -38,7 +38,7 @@ Texas Hold'em hanya punya ==5 aksi taruhan==, tapi aturan di sekelilingnya (kapa
 :::stripe
 5 | aksi taruhan: check, bet, call, raise, fold
 1 BB | taruhan pembuka minimum di No-Limit Hold'em
-= raise terakhir | ukuran minimum re-raise (aturan inkremen)
+= raise penuh terakhir | ukuran minimum re-raise (aturan inkremen)
 Tanpa batas | jumlah re-raise di No-Limit — Anda bisa terus raise sampai ada yang all-in
 :::
 
@@ -52,7 +52,7 @@ Setiap keputusan yang Anda ambil di meja poker adalah salah satu dari lima ini:
 | Check | Hanya kalau tidak ada taruhan aktif di depan Anda (preflop: sebagai big blind, atau sebagai pemain yang memasang live straddle) | Gratis — Anda lewat tanpa menambah chip |
 | Call | Setelah ada yang bet atau raise | Anda menyamai taruhan berjalan persis |
 | Bet | Taruhan pertama di ronde itu | Jumlah pilihan Anda (minimum = 1 big blind) |
-| Raise | Setelah ada yang bertaruh | Minimal sebesar bet atau raise sebelumnya, ditambahkan di atas taruhan berjalan |
+| Raise | Setelah ada yang bertaruh | Minimal sebesar bet atau raise penuh terakhir, ditambahkan di atas taruhan berjalan |
 
 ==All-in== bukan aksi keenam yang terpisah — itu adalah bet, call, atau raise dengan seluruh sisa chip yang Anda punya. Detailnya ada di bawah.
 
@@ -85,7 +85,7 @@ Untuk gambaran lengkap street demi street soal siapa bertindak kapan, lihat [uru
 
 ## Apa Itu Call di Poker? (Check vs Call)
 
-Call artinya Anda ==menyamai taruhan berjalan persis== untuk tetap ikut di hand itu. Ada yang bet $10, Anda call $10 — tidak lebih, tidak kurang.
+Call artinya Anda ==menyamai taruhan berjalan persis== untuk tetap ikut di hand itu. Ada yang bet $10, Anda call $10 — tidak lebih, tidak kurang. (Kalau sisa chip Anda kurang dari $10, Anda tetap bisa call: Anda all-in dengan apa yang Anda punya.)
 
 Check vs call adalah kebingungan pemula yang paling umum, jadi ini bedanya, sejelas mungkin:
 
@@ -116,7 +116,7 @@ Satu aturan etika di poker live: jangan fold ==di luar giliran==. Tunggu sampai 
 Di No-Limit Hold'em (format yang hampir selalu Anda mainkan):
 
 - **Taruhan minimum**: 1 big blind
-- **Raise minimum (min-raise)**: minimal ==sebesar bet atau raise sebelumnya== ditambahkan di atasnya
+- **Raise minimum (min-raise)**: minimal ==sebesar bet atau raise penuh terakhir== ditambahkan di atasnya
 - **Maksimum**: seluruh stack Anda — itulah arti "no limit"
 
 Dua contoh hitungan:
@@ -126,7 +126,7 @@ Dua contoh hitungan:
 | Flop | Pemain bet $6 | $6 lagi → total $12 |
 | Preflop (blind $1/$2) | Pemain raise ke $6 (kenaikan $4 di atas blind $2) | $4 lagi → total $10 |
 
-Kuncinya: min-raise mengikuti ==inkremen== dari bet atau raise terakhir, bukan big blind. Saat preflop, big blind dihitung sebagai taruhan pembuka — itulah kenapa open-raise terkecil adalah ke 2 big blind.
+Kuncinya: min-raise mengikuti ==inkremen== dari bet atau raise penuh terakhir, bukan big blind. (Kata "penuh" penting begitu ada yang all-in kurang dari satu raise: setelah bet $10 dan all-in $14, inkremen yang harus disamai tetap $10, jadi raise terkecil adalah ke $24.) Saat preflop, big blind dihitung sebagai taruhan pembuka — itulah kenapa open-raise terkecil adalah ke 2 big blind.
 
 Dua aturan poker live yang menyertai raise:
 
@@ -143,7 +143,7 @@ Di **No-Limit Hold'em: tidak ada batas**. Anda bisa raise, di-re-raise, lalu rai
 
 Tetap ada dua batasan:
 
-- Setiap re-raise wajib memenuhi ==aturan inkremen min-raise== di atas
+- Setiap re-raise wajib memenuhi ==aturan inkremen min-raise== di atas — satu-satunya pengecualian adalah all-in, yang boleh kurang dari itu
 - ==r:Anda tidak bisa me-raise taruhan Anda sendiri.== Kalau Anda bet dan semua orang hanya call, ronde berakhir — Anda baru bisa raise lagi kalau ada yang me-raise *Anda* lebih dulu
 
 Di permainan **Fixed-Limit**, tiap ronde punya batas (pot "capped"). Aturan turnamen WSOP menetapkan batas itu di ==satu bet plus empat raise== (Rule 100.b) — dan pengecualiannya berjalan terbalik dari dugaan kebanyakan orang: ==r:batas itu tetap berlaku sekalipun di hand itu tinggal dua pemain==. Batas baru lepas ketika **seluruh turnamen** tinggal dua orang. Di cash game berlaku aturan rumah, jadi tanyakan ke dealer.
@@ -152,7 +152,7 @@ Di permainan **Fixed-Limit**, tiap ronde punya batas (pot "capped"). Aturan turn
 
 ## Apa Arti All-In?
 
-All-in artinya mempertaruhkan ==setiap chip yang tersisa pada Anda==. Anda boleh melakukannya kapan saja giliran Anda — sebagai bet, call, atau raise.
+All-in artinya mempertaruhkan ==setiap chip yang tersisa pada Anda==. Anda boleh melakukannya pada giliran Anda sebagai bet, call, atau raise — mana pun yang terbuka bagi Anda saat itu.
 
 Kalau all-in Anda *lebih kecil* dari taruhan berjalan, Anda tidak dianggap fold: Anda tetap bersaing memperebutkan ==pot utama== yang dibatasi sebesar kontribusi Anda, sementara kelebihan chip dari stack yang lebih besar membentuk ==side pot== yang tidak bisa Anda menangkan. (Kalau ada yang lebih pendek lagi dari Anda, Anda tetap ikut memperebutkan side pot yang tidak bisa ia jangkau — tiap all-in hanya membatasi lapisannya sendiri.) Dan all-in yang *kurang dari min-raise penuh* umumnya tidak membuka kembali kesempatan raise bagi pemain yang sudah bertindak — aturan halus yang bahkan bikin pemain reguler kaget.
 
@@ -178,7 +178,7 @@ Saya main di game live taruhan kecil tiap minggu, dan kesalahan aksi yang sama b
 
 ### Kesalahan 1 — Call padahal bisa check
 
-Seorang pemain baru bertindak pertama di flop, belum ada yang bertaruh, tapi dia mendorong chip **tanpa bersuara** — maksudnya "untuk call". Tidak ada yang perlu di-call: menurut ==WSOP Rule 90.a==, bet dilakukan lewat ucapan *atau* dengan mendorong chip — dia baru saja bertaruh tanpa sengaja. Kalau dia *mengucapkan* "call", ==Rule 90.b.1== menjadikannya check. Kalau street belum dibuka, check saja dan lihat kartunya gratis.
+Seorang pemain baru bertindak pertama di flop, belum ada yang bertaruh, tapi dia mendorong chip **tanpa bersuara** — maksudnya "untuk call". Tidak ada yang perlu di-call: menurut ==WSOP Rule 90.a==, bet dilakukan lewat ucapan *atau* dengan mendorong chip — dia baru saja bertaruh tanpa sengaja. Kalau dia *mengucapkan* "call", ==Rule 90.b.1== menjadikannya check. Kalau street belum dibuka, check saja — kalau tidak ada yang bet di belakang Anda, Anda melihat kartu berikutnya gratis.
 
 ### Kesalahan 2 — "Saya call... eh, raise!"
 
@@ -207,11 +207,11 @@ A. Bisa — kalau ada yang bertaruh setelah Anda check, Anda boleh raise saat gi
 
 **Q. Bisakah Anda me-raise taruhan Anda sendiri?**
 
-A. Tidak. Kalau Anda bet dan lawan hanya call, Anda tidak bisa menambah lagi — ronde taruhan berakhir. Anda hanya bisa raise lagi kalau pemain lain me-raise Anda lebih dulu, yang membuka kembali aksi.
+A. Tidak. Kalau Anda bet dan lawan hanya call, Anda tidak bisa menambah lagi — ronde taruhan berakhir. Anda hanya bisa raise lagi kalau pemain lain lebih dulu memasang raise penuh di atas Anda — itu membuka kembali aksi; all-in yang kurang dari satu raise penuh tidak.
 
 **Q. Berapa kali boleh raise di Texas Hold'em?**
 
-A. Di No-Limit tidak ada batas jumlah raise — re-raise bisa terus berlanjut sampai ada pemain yang all-in, selama tiap raise memenuhi inkremen minimum. Di Fixed-Limit, aturan turnamen WSOP membatasi satu ronde pada satu bet plus empat raise (Rule 100.b), dan batas itu tetap berlaku sekalipun tinggal dua pemain di hand tersebut.
+A. Di No-Limit tidak ada batas jumlah raise — re-raise bisa terus berlanjut sampai ada pemain yang all-in, selama tiap raise memenuhi inkremen minimum (all-in boleh kurang dari itu). Di Fixed-Limit, aturan turnamen WSOP membatasi satu ronde pada satu bet plus empat raise (Rule 100.b), dan batas itu tetap berlaku sekalipun tinggal dua pemain di hand tersebut — batas baru lepas begitu seluruh turnamen tinggal heads-up.
 
 **Q. Bisakah fold di luar giliran?**
 

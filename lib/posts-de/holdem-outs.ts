@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Ein Out ist jede Karte im Deck, die deine Hand zu einem wahrscheinlichen Gewinner verbessert. Zähle sie, dann rechne um: multipliziere die Outs am Flop mit 4 oder am Turn mit 2 für deinen groben Prozentwert. Ein Flushdraw sind 9 Outs ≈ 36% bis zum River.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "11 Min.",
   emoji: "🎯",
@@ -28,7 +28,7 @@ Diese Gewohnheit heißt **Outs** zählen – [die echte Antwort des Pokers auf �
 :::stripe
 9 | Outs in einem Flushdraw
 8 | Outs in einem beidseitig offenen Straßendraw
-×4 / ×2 | Multipliziere Outs am Flop / Turn für deinen %
+×4 / ×2 | Multipliziere Outs am Flop (beide Karten kommen) / Turn für einen groben %
 :::
 
 ---
@@ -120,7 +120,7 @@ Beachte das 15-Outs-Monster: mit zwei kommenden Karten kommt es in 54,1% der Fä
 
 ## Outs im Kopf umrechnen: die Faustregel
 
-Die **Faustregel** (auch „Regel der 2 und 4“) macht aus deiner Out-Zahl in einer Sekunde einen Prozentwert: am Flop Outs × **4**, am Turn Outs × **2**. Bis acht Outs liegt die ×4-Regel weniger als einen Punkt daneben, darüber überschätzt sie deutlicher – und genau das ist der Grund, warum große Draws sich am Tisch besser anfühlen, als sie sind. Die ×2-Regel am Turn geht in die andere Richtung: Sie unterschätzt ab sechs Outs um gut einen Punkt (bei acht Outs sagt sie 16%, richtig sind 17,4%).
+Die **Faustregel** (auch „Regel der 2 und 4“) macht aus deiner Out-Zahl in einer Sekunde einen groben Prozentwert: am Flop Outs × **4** (beide Karten kommen), am Turn Outs × **2**. Bis acht Outs liegt die ×4-Regel weniger als einen Punkt daneben, darüber überschätzt sie deutlicher – und genau das ist der Grund, warum große Draws sich am Tisch besser anfühlen, als sie sind. Die ×2-Regel am Turn geht in die andere Richtung: Sie unterschätzt ab sechs Outs um gut einen Punkt (bei acht Outs sagt sie 16%, richtig sind 17,4%).
 
 Du kannst diese Tabelle nicht mit an den Tisch nehmen, also nutze die Abkürzung, auf die sich jeder Spieler verlässt:
 
@@ -177,10 +177,10 @@ Drei Situationen, für die du dein Auge trainierst:
 :::card
 ♠ | Der Nicht-Nut-Flush | Hältst du 8♠7♠ auf K♠9♠2♣, hast du 9 Pik-„Outs“ – aber wenn ein Pik kommt und ein Gegner mit einem höheren Pik auf denselben Flush gedrawt hat, machst du einen Flush und verlierst trotzdem. Zähle deine Outs nicht voll, wenn du nicht auf den Nut-Flush drawst
 🂮 | Das gepaarte Board | Ein Flushdraw auf einem Board wie J♥8♥8♣ sieht aus wie 9 saubere Outs, aber das Board ist schon gepaart – ein fertiges Full House könnte lauern, also kommen manche deiner Flushes an und sind trotzdem wertlos
-🃁 | Overcards gegen Stärke | Zwei Overcards (A-K auf Q-8-3) zählen auf dem Papier als 6 Outs, aber wenn ein großer Raise nach einem Set oder Zwei Paaren schreit, ist dein Ass zu paaren oft nicht gut – zähle 3, vielleicht 4, nicht 6
+🃁 | Overcards gegen Stärke | Zwei Overcards (A-K auf Q-8-3) zählen auf dem Papier als 6 Outs, aber wenn ein großer Raise nach einem Set oder Zwei Paaren schreit, ist dein Ass zu paaren oft nicht gut – zähle höchstens 3, nicht 6, und gar keine mehr, sobald du dir des Sets oder der Zwei Paare sicher bist
 :::
 
-Den exakten Abschlag kennst du selten, und das ist okay. Die Richtung stimmt aber immer: wenn das Board oder die Action dir sagt, dass ein Out vielleicht nicht gewinnt, kürze die Zahl *nach unten*, bevor du umrechnest. Ein Spieler, der 9 Outs auf einem gepaarten Board zählt und eine Pot-Size-Bet callt, zahlt vollen Preis für einen Draw, der still nur sechs wert ist. Zu lesen, welche Outs sauber sind, ist eine Board-Textur-Fähigkeit – baue sie mit [das Board lesen](/de/blog/holdem-reading-the-board) auf.
+Den exakten Abschlag kennst du selten, und das ist okay. Die Richtung stimmt aber immer: wenn das Board oder die Action dir sagt, dass ein Out vielleicht nicht gewinnt, kürze die Zahl *nach unten*, bevor du umrechnest. Ein Spieler, der 9 Outs auf einem gepaarten Board zählt und eine Pot-Size-Bet callt, zahlt vollen Preis für einen Draw, der still weniger wert ist. Zu lesen, welche Outs sauber sind, ist eine Board-Textur-Fähigkeit – baue sie mit [das Board lesen](/de/blog/holdem-reading-the-board) auf.
 
 ---
 
@@ -193,7 +193,7 @@ Den exakten Abschlag kennst du selten, und das ist okay. Die Richtung stimmt abe
 
 **Q. Wie viele Outs braucht man, um einen Call zu rechtfertigen?**
 
-A. Das hängt am Preis, nicht an einer festen Zahl. Die Zwei-Karten-Zahl darfst du nur ansetzen, wenn danach keine Bet mehr auf dich zukommt – etwa weil dich der Call am Flop all-in setzt: Dann reichen gegen eine Half-Pot-Bet (25% nötig) schon sieben Outs (27,8%). Musst du damit rechnen, am Turn noch einmal zu zahlen, rechnest du nur für die nächste Karte und brauchst zwölf Outs (25,5%). Genau deshalb zählst du erst die Outs und schaust dann auf die [Pot Odds](/de/blog/holdem-pot-odds).
+A. Das hängt am Preis, nicht an einer festen Zahl. Die Zwei-Karten-Zahl darfst du nur ansetzen, wenn danach keine Bet mehr auf dich zukommt – etwa weil dich der Call am Flop all-in setzt: Dann reichen gegen eine Half-Pot-Bet (25% nötig) schon sieben saubere Outs (27,8%). Musst du damit rechnen, am Turn noch einmal zu zahlen, rechnest du nur für die nächste Karte und brauchst zwölf saubere Outs (25,5%). Genau deshalb zählst du erst die Outs und schaust dann auf die [Pot Odds](/de/blog/holdem-pot-odds).
 
 **Q. Zählen Backdoor-Draws als Outs?**
 
@@ -225,7 +225,7 @@ A. Karten, die deine Hand vervollständigen und dich trotzdem verlieren lassen k
 
 **Q. Wie viele Outs sind Flushdraw plus Straßendraw?**
 
-A. 15, nicht 17. Ein Flushdraw sind 9 Outs und ein beidseitig offener Straßendraw 8, aber zwei der Straßenkarten sind selbst von deiner Farbe und stecken schon in den Flush-Outs – die Überschneidung ziehst du ab. Mit 15 Outs bist du bis zum River gegen ein einzelnes Paar meist Favorit (etwa 54%), gegen ein Set nicht – und auch das nur, wenn du beide Karten siehst; kommt am Turn noch eine Bet, bepreist die Ein-Karten-Zahl von 32% deinen Call.
+A. 15, nicht 17. Ein Flushdraw sind 9 Outs und ein beidseitig offener Straßendraw 8, aber zwei der Straßenkarten sind selbst von deiner Farbe und stecken schon in den Flush-Outs – die Überschneidung ziehst du ab. Mit 15 Outs bist du bis zum River gegen ein einzelnes Paar meist Favorit (etwa 54%), gegen ein Set nicht – und auch das nur, wenn du beide Karten siehst; kommt am Turn noch eine Bet, bepreist die Ein-Karten-Zahl von 32% deinen Call – und für beide Zahlen zählen nur Outs, die wirklich gewinnen.
 
 **Q. Ändern sich meine Outs, wenn mehrere Gegner im Pot sind?**
 

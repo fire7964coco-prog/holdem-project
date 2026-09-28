@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Um die Pot Odds zu berechnen, teilst du den Betrag, den du callen musst, durch den gesamten Pot nach deinem Call. Ein $50-Call in einen $150-Pot = 50 ÷ 200 = 25% – du brauchst also mindestens 25% Equity, damit der Call profitabel ist.",
   category: "odds",
   date: "2026-07-03",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "12 Min.",
   emoji: "🧮",
@@ -54,7 +54,7 @@ Diese Zahl – „wie oft du gewinnen musst“ – ist der ganze Punkt. 3:1 zu b
 Zähle den finalen Pot zusammen | Aktueller Pot + die Bet + dein Call. Beispiel: $100 Pot + $50 Bet + dein $50 Call = $200
 Teile deinen Call durch diesen finalen Pot | $50 ÷ $200 = 0,25
 Das ist deine benötigte Equity | Du musst mindestens 25% der Fälle gewinnen, um profitabel zu callen
-Vergleiche sie mit deiner tatsächlichen Equity | Flushdraw ≈ 35% zum Treffen, wenn zwei Karten kommen und nicht mehr gebettet wird → 35% schlägt 25% → ==g:call==
+Vergleiche sie mit deiner tatsächlichen Equity | Flushdraw mit 9 sauberen Outs ≈ 35% zum Treffen, wenn zwei Karten kommen und nicht mehr gebettet wird → 35% schlägt 25% → ==g:call==
 :::
 
 Das war's. **Benötigte Equity = dein Call ÷ der finale Pot.** Wenn deine echte Gewinnchance größer ist als diese Zahl, macht der Call auf lange Sicht Geld – selbst wenn du die Hand öfter verlierst als gewinnst.
@@ -110,7 +110,7 @@ Selbst ein massiver **2×-Pot-Overbet verlangt nur 40% Equity**. Du musst fast n
 
 ## Welche Draws schlagen welche Bets? Die Pot-Odds-Tabelle
 
-Ein Flushdraw (35% mit zwei Karten) schlägt jede Bet bis zur Pot-Size. Ein Open-Ender (31,5%) hält bis knapp darunter mit. Ein Gutshot (16,5% mit zwei Karten, 8,7% mit einer) verfehlt dagegen sogar die kleinste Bet der Tabelle – ¼ Pot verlangt 16,7%. Genau diese Gegenüberstellung – Draw gegen Bet-Größe – ist die ganze Entscheidung.
+Ein sauberer Flushdraw (35% – nur, wenn dir der Call beide Karten zeigt) schlägt jede Bet bis zur Pot-Size. Ein Open-Ender (31,5%, ebenso mit zwei Karten) hält bis knapp darunter mit. Ein Gutshot (16,5% mit zwei Karten, 8,7% mit einer) verfehlt dagegen sogar die kleinste Bet der Tabelle – ¼ Pot verlangt 16,7%. Genau diese Gegenüberstellung – Draw gegen Bet-Größe – ist die ganze Entscheidung.
 
 Jetzt verbinde den Preis mit deiner Hand. [Zähle deine **Outs**](/de/blog/holdem-outs "thumb:/images/holdem-outs-hero.webp") (Karten, die deine Hand vervollständigen), rechne sie in Equity um und prüfe sie gegen die Bet. Die Zeile mit den zwei Overcards (6 Outs) setzt voraus, dass ein Paar mit einer der beiden Overcards gewinnt – rechne Paar-Karten herunter, die gegen die wahrscheinlichen Hände deines Gegners trotzdem verlieren. Das sind die Draws, denen du am häufigsten begegnest:
 
@@ -151,7 +151,7 @@ Der dunkle Spiegel sind die **Reverse Implied Odds** – die Chips, die du *verl
 
 ## Outs in Equity umrechnen: die Faustregel
 
-Die **Faustregel** (auch „Regel der 2 und 4“) verwandelt gezählte Outs in einen Prozentwert: am Flop Outs × **4**, am Turn Outs × **2**. Mehr brauchst du am Tisch nicht, um deine Equity gegen die Pot Odds zu halten – die Abweichung liegt bis neun Outs bei ein bis zwei Punkten.
+Die **Faustregel** (auch „Regel der 2 und 4“) verwandelt gezählte saubere Outs in einen Prozentwert: am Flop Outs × **4** (beide Karten kommen), am Turn Outs × **2**. Mehr brauchst du am Tisch nicht, um deine Equity gegen die Pot Odds zu halten – die Abweichung liegt bis neun Outs bei ein bis zwei Punkten.
 
 Du kannst mitten in der Hand nicht die exakte Equity ausrechnen, also rechne so:
 
@@ -196,7 +196,7 @@ Der Turn ist die 3♠ – ein Brick. Der Pot ist $200 und Villain jammt $200 –
 
 **Q. Wie berechnet man Pot Odds schnell?**
 
-A. Teile den Betrag, den du callen musst, durch den gesamten Pot *nach* deinem Call. Ein $50-Call in einen $150-Pot ist 50 ÷ 200 = 25% – das ist die Equity, die du brauchst. Wenn deine Gewinnchance sie schlägt, calle.
+A. Teile den Betrag, den du callen musst, durch den gesamten Pot *nach* deinem Call. Ein $50-Call in einen $150-Pot ist 50 ÷ 200 = 25% – das ist die Equity, die du brauchst. Wenn deine Gewinnchance – gezählt nur über die Karten, die dich dieser Call sehen lässt – sie schlägt, calle.
 
 **Q. Zählt man seinen eigenen Call zu den Pot Odds dazu?**
 
@@ -208,7 +208,7 @@ A. Der Pot sind alle Chips, die schon in der Mitte liegen, plus alle Einsätze d
 
 **Q. Was ist ein gutes Pot-Odds-Verhältnis?**
 
-A. Je höher, desto besser – du würdest gern „5:1 bekommen“ (nur 16,7% nötig). Aber „gut“ ist relativ zu deiner Hand: 2:1 zu bekommen (33% nötig) funktioniert mit einem Flushdraw nur, wenn du ohnehin beide Karten siehst (all-in oder ohne weitere Bets – 35%); siehst du für den Call dagegen nur eine einzige Karte, reicht der Preis nicht (19,1% vom Flop aus, 19,6% vom Turn aus); und mit einem Gutshot ist er schrecklich. Vergleiche den Preis immer mit deiner Equity.
+A. Je höher, desto besser – du würdest gern „5:1 bekommen“ (nur 16,7% nötig). Aber „gut“ ist relativ zu deiner Hand: 2:1 zu bekommen (33% nötig) funktioniert mit einem sauberen Flushdraw nur, wenn du ohnehin beide Karten siehst (all-in oder ohne weitere Bets – 35%); siehst du für den Call dagegen nur eine einzige Karte, reicht der Preis nicht (19,1% vom Flop aus, 19,6% vom Turn aus); und mit einem Gutshot ist er schrecklich. Vergleiche den Preis immer mit deiner Equity.
 
 **Q. Wie rechnet man Pot Odds von einem Verhältnis in einen Prozentwert um?**
 
@@ -236,7 +236,7 @@ A. Genau deine Pot Odds als Prozentwert: Call ÷ finaler Pot. Gegen eine Half-Po
 
 **Q. Sollte meine Equity höher oder niedriger sein als meine Pot Odds?**
 
-A. Höher. Die Pot Odds geben die Equity an, die du zum Callen *brauchst* (Call ÷ finaler Pot); deine Equity ist dein erwarteter Anteil am Pot. Du callst, wenn deine Equity *über* dieser Schwelle liegt, und foldest, wenn sie darunter liegt. Verlangt eine Half-Pot-Bet 25% und hat dein Flushdraw 35% (mit zwei kommenden Karten – du siehst Turn und River ohne weitere Bets), dann ist 35% > 25% und der Call profitabel.
+A. Höher. Die Pot Odds geben die Equity an, die du zum Callen *brauchst* (Call ÷ finaler Pot); deine Equity ist dein erwarteter Anteil am Pot. Du callst, wenn deine Equity *über* dieser Schwelle liegt, und foldest, wenn sie darunter liegt. Verlangt eine Half-Pot-Bet 25% und hat dein sauberer Flushdraw 35% (mit zwei kommenden Karten – du siehst Turn und River ohne weitere Bets), dann ist 35% > 25% und der Call profitabel.
 
 **Q. Gelten Pot Odds auch, wenn noch Spieler hinter mir sitzen?**
 

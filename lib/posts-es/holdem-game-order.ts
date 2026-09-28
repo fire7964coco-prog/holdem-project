@@ -5,11 +5,11 @@ export const POST: Post = {
   title: "Cómo jugar al Texas Hold'em: el orden de juego, de las ciegas al showdown",
   seoTitle: "¿No sabes cuándo apostar? — Orden de juego en Texas Hold'em",
   desc: "¿Te quedas en blanco cuando te toca en el Hold'em? Aquí tienes el orden completo — preflop, flop, turn, river y showdown — con una mano real paso a paso.",
-  tldr: "Una mano de Texas Hold'em sigue este orden: se ponen las ciegas → se reparten dos cartas propias → preflop → flop (3 cartas) → turn (1 carta) → river (1 carta) → showdown, con cuatro rondas de apuestas en total. En el preflop habla primero el jugador a la izquierda de la ciega grande; a partir del flop, el primero a la izquierda del botón. Al final gana la mejor mano de cinco cartas entre tus dos cartas propias y las cinco comunitarias.",
+  tldr: "Una mano de Texas Hold'em sigue este orden: se ponen las ciegas → se reparten dos cartas propias → preflop → flop (3 cartas) → turn (1 carta) → river (1 carta) → showdown, con hasta cuatro rondas de apuestas. En el preflop habla primero el jugador a la izquierda de la ciega grande; a partir del flop, el primero a la izquierda del botón. Al final gana la mejor mano de cinco cartas entre tus dos cartas propias y las cinco comunitarias.",
   category: "rules",
   date: "2026-06-10",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "16 min",
   emoji: "🎬",
@@ -42,7 +42,7 @@ La regla central es simple: formas tu **mejor mano de cinco cartas** combinando 
 
 Antes de que salga ninguna carta, dos cosas ordenan la mesa: el **botón del dealer** y las **ciegas**.
 
-El **botón del dealer (el "botón", marcado con una D)** es un disco redondo que señala quién "reparte" en esa mano. Aunque haya un crupier de la casa, el botón decide el orden de las apuestas, y se mueve un asiento en el sentido de las agujas del reloj después de cada mano.
+El **botón del dealer (el "botón", marcado con una D)** es un disco redondo que señala quién "reparte" en esa mano. Aunque haya un crupier de la casa, el botón decide el orden de las apuestas, y normalmente se mueve un asiento en el sentido de las agujas del reloj después de cada mano (la regla del botón muerto es la excepción).
 
 Las **ciegas** son apuestas obligatorias que se ponen antes de repartir. Sin ellas, todo el mundo podría pasar y tirar las cartas gratis; ==g:las ciegas meten dinero en el centro y dan a los jugadores un motivo para pelear==. (¿Te suenan a chino? Aquí tienes exactamente [cómo funcionan la ciega pequeña y la ciega grande](/es/blog/holdem-blind-meaning).)
 
@@ -54,6 +54,8 @@ Las **ciegas** son apuestas obligatorias que se ponen antes de repartir. Sin ell
 | Ciega grande (BB) | Segundo asiento a la izquierda del botón | 2,000 |
 
 </div>
+
+Con solo dos jugadores el propio botón pone la ciega pequeña — la disposición que usa la mano completa de ejemplo de más abajo.
 
 Las ciegas no son solo una cuota de entrada — ==son el punto de partida de la posición y de la estrategia==.
 
@@ -93,7 +95,7 @@ Ahora ya puedes leer una mano real de cinco cartas: tus dos cartas propias más 
 
 ![Infografía de las tres calles del Texas Hold'em — el flop K♥ 7♦ 2♣, el turn 9♠ y el river Q♥](/images/blog-holdem-card-stages.webp "Las calles: tres cartas en el flop, luego una en el turn y una en el river")
 
-El flop también desbloquea una opción nueva: el **check (pasar)**. Si nadie ha apostado todavía, puedes pasar y ceder la acción sin poner fichas. Pero si un rival apuesta después de que pases, tendrás que pagar, subir o retirarte.
+Del flop en adelante, el **check (pasar)** está abierto para todos (en el preflop, solo puede pasar el jugador cuya propia ciega o straddle es la apuesta viva). Si nadie ha apostado todavía, puedes pasar y ceder la acción sin poner fichas. Pero si un rival apuesta después de que pases, tendrás que pagar, subir o retirarte.
 
 ---
 
@@ -136,7 +138,7 @@ Reglas del showdown:
 - Cada jugador forma su **mejor mano de cinco cartas** con sus dos cartas propias y las cinco comunitarias.
 - No estás obligado a usar tus dos cartas — puedes usar una, o incluso jugar la mesa (cero) si esas son tus mejores cinco.
 - El jugador que hizo la última acción agresiva (apuesta o subida) enseña primero; si en el river todos pasaron, enseña primero el **primer jugador activo a la izquierda del botón**.
-- Un jugador que pierde puede simplemente **tirar sus cartas sin enseñarlas** (hacer "muck") — salvo en un all-in de torneo: cuando un jugador está all-in y la acción ha terminado, todas las manos se ponen boca arriba (regla 16 de la TDA 2024 · regla 70 del reglamento de torneos de la WSOP).
+- Un jugador que pierde normalmente puede simplemente **tirar sus cartas sin enseñarlas** (hacer "muck"). Dos excepciones de torneo: cuando un jugador está all-in y la acción ha terminado, todas las manos se ponen boca arriba (regla 16 de la TDA 2024 · regla 70 del reglamento de torneos de la WSOP); y quien apostó en el river y recibió un call debe enseñar si el que pagó — que aún conserva sus cartas o ya las mostró — pide ver la mano (regla 18-B de la TDA 2024).
 - Las manos iguales **dividen el bote** ("split") a partes iguales.
 
 Quién tiene que enseñar primero, cuándo puedes tirar sin enseñar y la etiqueta en torno al slow roll están explicados al completo en las [reglas del showdown](/es/blog/holdem-showdown-rules).
@@ -163,6 +165,8 @@ Quién tiene que enseñar primero, cuándo puedes tirar sin enseñar y la etique
 El truco para recordarlo: ==**antes del flop, mira a la izquierda de la ciega grande; después del flop, mira a la izquierda del botón.**== El botón habla el último en todas las calles postflop, y precisamente por eso es el asiento más rentable de la mesa — mira las [posiciones en el póker: de UTG al botón](/es/blog/holdem-positions).
 
 ==g:**El heads-up (2 jugadores) es la excepción:**== el botón pone la ciega *pequeña* y habla **primero** en el preflop, pero **último** en el flop, el turn y el river. Ese es el orden que se usa en la mano completa de ejemplo de más abajo.
+
+Un matiz más, en las partidas de cash que lo permiten: un **straddle vivo** traslada el inicio del preflop a la izquierda de quien lo puso, y ese jugador — no la ciega grande — habla el último antes del flop (regla 165 del reglamento Live Action de la WSOP). Tras el flop, el orden es el habitual.
 
 ---
 
@@ -259,7 +263,7 @@ Aquí tienes todas las acciones disponibles en la mesa — la parte que más con
 | Bet (apostar) | Haces la primera apuesta de la ronda | Cuando nadie ha apostado todavía |
 | Raise (subir) | Aumentas por encima de la apuesta actual | Cuando hay una apuesta delante |
 | Re-raise (3-bet) | Subes por encima de una subida | Cuando hay una subida delante |
-| All-in | Metes todas tus fichas | En cualquier calle — en tu turno, como apuesta, pago o subida |
+| All-in | Metes todas tus fichas | En cualquier calle — en tu turno, como apuesta, pago o subida, la que tengas disponible |
 
 </div>
 
@@ -271,7 +275,7 @@ Para una guía de decisión más profunda sobre cuándo usar cada movimiento —
 
 ## Las 10 manos de póker que tienes que saberte
 
-Para ganar en el showdown necesitas saber al instante qué mano gana a cuál. Este es el orden de la **jerarquía de manos**.
+Para ganar en el showdown necesitas saber al instante qué mano gana a cuál. Este es el orden de la **jerarquía de manos**. (La columna Frecuencia cuenta cuántas veces cada mano es tu mejor jugada de cinco cartas entre siete — por eso la carta alta sale menos que la doble pareja.)
 
 <div style="background:rgba(255,248,210,0.10);border:1px solid rgba(255,240,180,0.35);border-radius:14px;padding:4px 20px 20px;margin:24px 0">
 
@@ -362,15 +366,15 @@ A. Las pot odds son la relación entre el tamaño actual del bote y lo que te cu
 
 **Q. ¿Cuándo debería ir all-in?**
 
-A. El all-in significa apostar todas las fichas que tienes. Úsalo con una mano muy fuerte (las nuts), o como farol para que los rivales tiren sus cartas. Una vez estás all-in ya no puedes apostar más, pero sigues optando a la parte del bote que igualaste. Cuando los stacks son distintos se crean botes secundarios (side pots) — mira las [reglas del all-in y los side pots](/es/blog/holdem-all-in-rules).
+A. El all-in significa apostar todas las fichas que tienes. Úsalo con una mano muy fuerte (las nuts), o como farol para que los rivales tiren sus cartas. Una vez estás all-in ya no puedes apostar más, pero sigues optando a la parte del bote que igualaste. Cuando los stacks son distintos y dos o más jugadores siguen apostando por encima de tu all-in, se crean botes secundarios (side pots) — mira las [reglas del all-in y los side pots](/es/blog/holdem-all-in-rules).
 
 **Q. ¿Cuántas rondas de apuestas hay en una mano?**
 
-A. Cuatro: preflop, flop, turn y river. Las ciegas son apuestas obligatorias, y en el showdown ya no se apuesta.
+A. Hasta cuatro: preflop, flop, turn y river. Una mano que termina antes — todos se retiran ante un jugador, o los jugadores están all-in sin nadie más contra quien apostar — tiene menos. Las ciegas son apuestas obligatorias, y en el showdown ya no se apuesta.
 
 **Q. ¿Por qué el dealer quema una carta, y cuántas se queman?**
 
-A. Antes de repartir el flop, el turn y el river, el dealer descarta boca abajo la primera carta del mazo — la "carta quemada". Son tres cartas quemadas por mano, una antes de cada calle de cartas comunitarias. Quemar protege la partida: si la carta de arriba estuviera marcada o se hubiera expuesto por accidente, un jugador podría sacar información de lo que viene, así que se retira del juego primero.
+A. Antes de repartir el flop, el turn y el river, el dealer descarta boca abajo la primera carta del mazo — la "carta quemada". Son tres cartas quemadas en una mano que llega hasta el river, una antes de cada calle de cartas comunitarias. Quemar protege la partida: si la carta de arriba estuviera marcada o se hubiera expuesto por accidente, un jugador podría sacar información de lo que viene, así que se retira del juego primero.
 
 **Q. ¿Quién empieza en el póker? ¿Quién habla primero?**
 
@@ -386,13 +390,13 @@ A. Cada jugador entra con el mismo stack inicial: en un torneo lo fija el buy-in
 
 **Q. ¿Cuál es el orden de las acciones en una mano?**
 
-A. Se ponen las ciegas → se reparten las cartas → y en cada ronda la acción avanza en el sentido de las agujas del reloj, jugador por jugador, hasta que todos los que siguen han igualado la apuesta más alta. Ese turno de acciones se repite en el preflop, el flop, el turn y el river. (Ojo: esto es el orden de juego; si buscas qué jugada gana a cuál, mira la [jerarquía de manos de póker](/es/blog/holdem-hand-rankings).)
+A. Se ponen las ciegas → se reparten las cartas → y en cada ronda la acción avanza en el sentido de las agujas del reloj, jugador por jugador, hasta que todos los que siguen han igualado la apuesta más alta. Ese turno de acciones se repite en el preflop, el flop, el turn y el river — hasta cuatro rondas, menos si la mano termina antes. (Ojo: esto es el orden de juego; si buscas qué jugada gana a cuál, mira la [jerarquía de manos de póker](/es/blog/holdem-hand-rankings).)
 
 ---
 
 ## Las 3 cosas que debes recordar
 
-1. ==**El orden:**== ciegas → preflop → flop (3) → turn (1) → river (1) → showdown, con ==cuatro rondas de apuestas==.
+1. ==**El orden:**== ciegas → preflop → flop (3) → turn (1) → river (1) → showdown, con ==hasta cuatro rondas de apuestas==.
 2. ==**Las lecturas:**== en cada calle, valora a la vez lo que tienes ahora y lo que aún puedes ligar — y mira la mesa completa, no solo tu propia mano.
 3. ==g:**La disciplina:**== tira la mayoría de las manos en el preflop, respeta la posición y apuesta fuerte solo cuando tu historia tenga sentido.
 

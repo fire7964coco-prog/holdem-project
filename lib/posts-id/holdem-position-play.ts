@@ -8,8 +8,8 @@ export const POST: Post = {
   tldr: "Berada in position berarti Anda beraksi terakhir — Anda melihat setiap keputusan lawan sebelum mengeluarkan satu chip pun. Contoh solver menunjukkan posisi biasanya meningkatkan realisasi equity, tetapi tak ada kursi yang otomatis terkunci di atas atau di bawah 100%: range, board, dan action bisa membalik pola umumnya. Itulah kenapa UTG membuka ~13% tangan dan button ~43% — dan kenapa posisi menulis ulang setiap keputusan c-bet, bluff, dan pot control di postflop.",
   category: "strategy",
   date: "2026-06-18",
-  updated: "2026-09-26",
-  masterUpdated: "2026-09-26",
+  updated: "2026-09-28",
+  masterUpdated: "2026-09-28",
   keepImagesInBody: true,
   readTime: "16 mnt",
   emoji: "🎯",
@@ -67,8 +67,8 @@ Inilah yang sebenarnya merugikan Anda ketika beraksi lebih dulu:
 :::compare
 Out of position (beraksi lebih dulu) | In position (beraksi terakhir)
 Bet ke ketidaktahuan — mereka bisa raise, call, atau fold, dan Anda baru tahu setelah uang Anda masuk | Lihat check, bet, atau fold mereka sebelum memutuskan apa pun
-Tak bisa ambil kartu gratis — check, dan mereka bisa membuat Anda fold dari draw | Check behind kapan pun Anda ingin melihat kartu berikutnya gratis
-Ukuran pot lepas kendali — Anda tak bisa menghentikan mereka bet saat Anda ingin showdown murah | Anda memutuskan apakah tangan lanjut ke street berikutnya
+Tak bisa ambil kartu gratis atas kemauan sendiri — check, dan mereka bisa membuat Anda fold dari draw | Check behind saat di-check kepada Anda dan lihat kartu berikutnya gratis
+Ukuran pot lepas kendali — Anda tak bisa menghentikan mereka bet saat Anda ingin showdown murah | Saat di-check kepada Anda, Anda yang memutuskan apakah ada uang lagi yang masuk di street ini
 Range Anda terbaca — lini check-call transparan seiring waktu | Check dan bet Anda tetap ambigu karena mereka beraksi buta
 :::
 
@@ -144,7 +144,7 @@ Open limp gagal di tiga hal dari UTG:
 2. **Limp membatasi persepsi range Anda** — pemain jeli menyerang limper tanpa henti, dan Anda akan menghadapi raise yang tak bisa Anda lanjutkan dengan nyaman.
 3. **Limp tak memenangkan apa pun preflop.** Sebuah raise bisa langsung mengambil blind; sebuah limp tak pernah bisa.
 
-Ada pengecualian sempit di game live yang sangat pasif — limp behind di belakang limper lain dengan pair kecil dan suited connector untuk melihat flop multiway murah — tapi *open*-limp UTG adalah kebocoran di hampir setiap komposisi meja. Argumen lengkapnya, termasuk kapan limp behind sebenarnya boleh, ada di [panduan limping](/id/blog/holdem-limping).
+Ada pengecualian sempit di game live yang sangat pasif — limp behind di belakang limper lain dengan pair kecil dan suited connector untuk melihat flop multiway murah — tapi *open*-limp UTG adalah kebocoran di hampir setiap komposisi meja pada kedalaman stack normal. Argumen lengkapnya, termasuk kapan limp behind sebenarnya boleh, ada di [panduan limping](/id/blog/holdem-limping).
 
 ---
 
@@ -251,7 +251,7 @@ Untuk mekanik blind itu sendiri — kenapa mereka ada dan bagaimana taruhan paks
 
 **Q. Apa arti out of position di poker?**
 
-A. Out of position (OOP) berarti Anda harus beraksi sebelum lawan di street postflop — flop, turn, dan river. Anda mengeluarkan chip tanpa tahu apa yang akan mereka lakukan, tak bisa mengambil kartu gratis, dan kesulitan mengendalikan ukuran pot. Blind OOP melawan setiap kursi non-blind (dan small blind juga OOP melawan big blind); button tak pernah OOP melawan siapa pun.
+A. Out of position (OOP) berarti Anda harus beraksi sebelum lawan di street postflop — flop, turn, dan river. Anda mengeluarkan chip tanpa tahu apa yang akan mereka lakukan, tak bisa mengambil kartu gratis atas kemauan sendiri, dan kesulitan mengendalikan ukuran pot. Blind OOP melawan setiap kursi non-blind (dan small blind juga OOP melawan big blind — kecuali di heads-up, di mana small blind adalah button); button tak pernah OOP melawan siapa pun.
 
 **Q. Siapa yang beraksi lebih dulu — small blind atau big blind?**
 
@@ -267,11 +267,11 @@ A. Button. Ini satu-satunya kursi yang dijamin beraksi terakhir di setiap street
 
 **Q. Apa posisi terlemah di poker?**
 
-A. Dua jawaban, tergantung pertanyaannya. Small blind adalah kursi terburuk secara struktural untuk memainkan tangan — pertama beraksi di setiap street postflop. Big blind kehilangan chip mentah terbanyak per 100 tangan, semata karena memasang blind paksa penuh setiap orbit; bahkan permainan sempurna hanya mengurangi kerugian itu. Di antara kursi non-blind, UTG paling lemah: pertama preflop, range paling ketat, biasanya OOP setelah flop.
+A. Dua jawaban, tergantung pertanyaannya. Small blind adalah kursi terburuk secara struktural untuk memainkan tangan — di meja tiga orang atau lebih, pertama beraksi di setiap street postflop. Big blind kehilangan chip mentah terbanyak per 100 tangan, semata karena memasang blind paksa penuh setiap orbit; bahkan permainan sempurna hanya mengurangi kerugian itu. Di antara kursi non-blind, UTG paling lemah: pertama preflop, range paling ketat, biasanya OOP setelah flop.
 
 **Q. Apakah small blind termasuk early position?**
 
-A. Bukan — small blind adalah blind, bukan kursi "early position". Pemain early position (UTG dan kursi-kursi di sebelahnya) membuka ketat karena seluruh meja beraksi setelah mereka — dan di postflop mereka setidaknya masih beraksi *setelah* blind. Small blind justru kursi yang paling sulit dimainkan: setengah blind sudah terpasang, dan begitu flop keluar dialah yang bicara pertama. Jangan perlakukan kursi ini seperti early position — saat menghadapi raise, default modern dari small blind adalah 3-bet atau fold, nyaris tak pernah flat-call; saat di-fold ke Anda, raise hampir setiap kali.
+A. Bukan — small blind adalah blind, bukan kursi "early position". Pemain early position (UTG dan kursi-kursi di sebelahnya) membuka ketat karena seluruh meja beraksi setelah mereka — dan di postflop mereka setidaknya masih beraksi *setelah* blind. Small blind justru kursi yang paling sulit dimainkan: setengah blind sudah terpasang, dan di meja tiga orang atau lebih, begitu flop keluar dialah yang bicara pertama. Jangan perlakukan kursi ini seperti early position — saat menghadapi raise, default modern dari small blind adalah 3-bet atau fold, nyaris tak pernah flat-call; saat di-fold ke Anda, raise hampir setiap kali.
 
 **Q. Lebih baik limp atau raise dari UTG?**
 
