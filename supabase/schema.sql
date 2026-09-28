@@ -340,3 +340,10 @@ drop policy if exists "본인 기록 삭제" on public.trainer_attempts;
 create policy "본인 기록 삭제"
   on public.trainer_attempts for delete
   using (auth.uid() = user_id);
+
+-- ============================================================
+-- 11. 참여 장치 5테이블 (2026-09-28) — tournament_attendance · tournament_reviews ·
+--     poll_votes · poll_comments · review_event_draws
+-- ============================================================
+-- 본문은 `supabase/participation.sql` 에 있다(대시보드에서 그 파일을 통째로 RUN).
+-- 🔴 다섯 테이블 모두 RLS on + 정책 0개가 정상이다 — 서버 액션(service role)만 접근한다.

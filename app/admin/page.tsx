@@ -3,6 +3,9 @@ import { requireAdmin } from "@/lib/admin";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { getCurrentEventId } from "@/lib/event-config";
 import AdminClient from "./admin-client";
+import { REVIEW_TOURNAMENTS, isDrawDue } from "@/lib/participation-config";
+import { tournamentDates } from "@/lib/review-event";
+import { POLLS } from "@/lib/polls";
 
 export const dynamic = "force-dynamic";
 export const metadata = { title: "Admin", robots: { index: false, follow: false } };
@@ -58,6 +61,23 @@ export default async function AdminPage() {
     db.from("event_draws").select("*").order("drawn_at", { ascending: false }).limit(10),
   ]);
 
+  // ── 참여 장치(2026-09-28) — 테이블이 아직 없으면 에러 → 빈 목록으로 떨어진다(어드민 화면은 그대로 뜬다).
+  const [reviewsRes, pollCommentsRes, reviewDrawsRes, attendCounts, pollCounts] = await Promise.all([
+    db.from("tournament_reviews")
+      .select("id, tournament_id, user_id, body, event_kind, result, rating, was_attending, is_event_entry, is_hidden, is_best, created_at, profiles(nickname)")
+      .order("created_at", { ascending: false }).limit(200),
+    db.from("poll_comments").select("id, poll_id, user_id, body, is_hidden, created_at, profiles(nickname)")
+      .order("created_at", { ascending: false }).limit(100),
+    db.from("review_event_draws").select("*"),
+    Promise.all(REVIEW_TOURNAMENTS.map((t) => count(db, "tournament_attendance", (q: any) => q.eq("tournament_id", t.id)))),
+    Promise.all(POLLS.map((p) => Promise.all(p.options.map((_, i) =>
+      count(db, "poll_votes", (q: any) => q.eq("poll_id", p.id).eq("option_idx", i)))))),
+  ]);
+  const winnerIds = [...new Set((reviewDrawsRes.data ?? []).flatMap((d: any) => d.winner_ids ?? []))];
+  const winnerRes = winnerIds.length
+    ? await db.from("tournament_reviews").select("id, user_id, profiles(nickname)").in("id", winnerIds)
+    : { data: [] as any[] };
+
   // 이메일 맵 (auth.users) 병합
   const emailMap = new Map<string, { email: string | null; lastSignIn: string | null }>();
   for (const u of usersRes?.data?.users ?? []) {
@@ -90,6 +110,24 @@ export default async function AdminPage() {
       currentEventId={eventId}
       entryCount={entriesRes.count ?? 0}
       draws={drawsRes.data ?? []}
+      participation={{
+        tableError: reviewsRes.error?.message ?? null,
+        tournaments: REVIEW_TOURNAMENTS.map((t, i) => {
+          const d = tournamentDates(t.id);
+          return { ...t, attend: attendCounts[i], due: !!d && isDrawDue(d.endDate, new Date()) };
+        }),
+        reviews: (reviewsRes.data ?? []).map((r: any) => ({ ...r, email: emailMap.get(r.user_id)?.email ?? null })),
+        pollComments: (pollCommentsRes.data ?? []).map((c: any) => ({ ...c, email: emailMap.get(c.user_id)?.email ?? null })),
+        polls: POLLS.map((p, i) => ({ id: p.id, hostSlug: p.hostSlug, labels: p.options.map((o) => o.label), counts: pollCounts[i] })),
+        draws: (reviewDrawsRes.data ?? []).map((d: any) => ({
+          ...d,
+          winners: (d.winner_ids ?? []).map((id: string) => {
+            const r: any = (winnerRes.data ?? []).find((x: any) => x.id === id);
+            const p = Array.isArray(r?.profiles) ? r.profiles[0] : r?.profiles;
+            return { no: (d.entry_ids ?? []).indexOf(id) + 1, nickname: p?.nickname ?? "(삭제된 후기)", email: r ? emailMap.get(r.user_id)?.email ?? null : null };
+          }),
+        })),
+      }}
     />
   );
 }

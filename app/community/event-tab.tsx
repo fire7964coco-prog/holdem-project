@@ -5,7 +5,8 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { createClient } from "@/lib/supabase/client";
 import { getEventData, submitEventEntry } from "./actions";
-import { EVENT_CONDITION, PRIZE_TABLE } from "@/lib/event-config";
+import { EVENT_CONDITION, EVENT_OPERATION, PRIZE_TABLE } from "@/lib/event-config";
+import ReviewEventPanel from "@/components/participation/review-event-panel";
 import { loginHref } from "@/lib/auth-navigation";
 import EventStatus, { useEventState } from "./event-status";
 import { GOLD, BG, CARD, BORDER, TEXT_PRIMARY, TEXT_BODY, TEXT_SECONDARY, TEXT_MUTED, SURFACE } from "./post-card";
@@ -386,6 +387,9 @@ export default function EventTab({
       ? myEntry.numbers.filter((n) => winningNumbers.includes(n)).length
       : 0;
   const prize = PRIZE_TABLE[matchCount] ?? null;
+
+  // 매주 번호 추첨을 멈춘 동안(2026-09-28~)은 «대회 후기 이벤트» 패널을 대신 그린다(훅은 전부 위에서 이미 호출됨).
+  if (!EVENT_OPERATION.acceptingEntries) return <ReviewEventPanel lang={lang} />;
 
   // ──────────────────────────────────────────────────────────
   // RENDER

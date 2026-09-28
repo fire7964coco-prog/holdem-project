@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { EVENT_CONDITION, getEventLabels, getEventState } from "@/lib/event-config";
+import { REVIEW_EVENT_BANNER_KO } from "@/lib/participation-config";
 
 export function useEventState() {
   const [state, setState] = useState<ReturnType<typeof getEventState> | null>(null);
@@ -27,6 +28,13 @@ export default function EventStatus({ lang = "ko" }: { lang?: string }) {
   const formatDate = (date: string) => new Intl.DateTimeFormat(lang === "ko" ? "ko-KR" : lang, {
     month: "short", day: "numeric", weekday: "short", hour: "numeric", minute: "2-digit", timeZone: "Asia/Seoul",
   }).format(new Date(date));
+  // 매주 번호 추첨을 멈춘 동안(2026-09-28~): 회차·번호 조건 대신 대회 후기 이벤트 안내(KO) / «준비 중»(그 밖)
+  if (state?.isPaused) {
+    return <div className="space-y-1 text-xs leading-relaxed text-muted-foreground whitespace-pre-line">
+      <p className="font-semibold text-foreground">{labels.paused}</p>
+      {lang === "ko" && <p>{REVIEW_EVENT_BANNER_KO.schedule}</p>}
+    </div>;
+  }
   return <div className="space-y-1 text-xs leading-relaxed text-muted-foreground">
     <p className="font-semibold text-foreground">{state ? `${labels.round} ${state.eventId} · ${state.isPaused ? labels.paused : state.isOpen ? labels.open : labels.closed}` : "…"}</p>
     {state && !state.isPaused && <p>{state.isOpen ? labels.draw : labels.next}: {formatDate(state.isOpen ? state.drawAt : state.nextOpenAt)} (KST)</p>}

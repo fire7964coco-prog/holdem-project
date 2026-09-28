@@ -44,11 +44,16 @@ export const DRAW_SCHEDULE = {
   utcHour: 10,
 };
 
-/** 기존 주간 접수 동작. 운영 중단 시 이 설정을 바꾸면 안내와 서버 접수가 함께 닫힌다. */
-export const EVENT_OPERATION = { acceptingEntries: true };
+/**
+ * 기존 주간 접수 동작. 운영 중단 시 이 설정을 바꾸면 안내와 서버 접수가 함께 닫힌다.
+ * 🔴 2026-09-28 false — 매주 번호 추첨을 멈추고 «대회 후기 이벤트»로 바꿨다(사장님 승인 · 설계
+ *    docs/participation-event-redesign-design.md §4). 주간 크론도 이 값을 보고 번호 추첨을 건너뛴다.
+ *    과거 추첨 기록(event_draws)과 코드는 지우지 않는다.
+ */
+export const EVENT_OPERATION = { acceptingEntries: false };
 
 /** 회차는 UTC ISO 주차를 유지한다. 일요일 추첨 후 다음 월요일 00:00 UTC까지 접수 마감. */
-export function getEventState(now: Date) {
+export function getEventState(now: Date, accepting: boolean = EVENT_OPERATION.acceptingEntries) {
   const monday = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()));
   monday.setUTCDate(monday.getUTCDate() - ((monday.getUTCDay() + 6) % 7));
   const draw = new Date(monday);
@@ -60,13 +65,13 @@ export function getEventState(now: Date) {
     eventId: getIsoWeekId(now),
     drawAt: draw.toISOString(),
     nextOpenAt: nextOpen.toISOString(),
-    isOpen: EVENT_OPERATION.acceptingEntries && now.getTime() < draw.getTime(),
-    isPaused: !EVENT_OPERATION.acceptingEntries,
+    isOpen: accepting && now.getTime() < draw.getTime(),
+    isPaused: !accepting,
   };
 }
 
 const EVENT_STATUS_LABELS: Record<string, { open: string; closed: string; paused: string; draw: string; next: string; round: string; conditions: (posts: number, likes: number) => string }> = {
-  ko: { open: "접수 중", closed: "이번 회차 접수 마감", paused: "이벤트 준비 중", draw: "추첨 예정", next: "다음 회차 접수", round: "회차", conditions: (p, l) => `로그인 · 커뮤니티 글 ${p}개 작성 · 내 글에 좋아요 ${l}개 받기` },
+  ko: { open: "접수 중", closed: "이번 회차 접수 마감", paused: "대회 후기 이벤트", draw: "추첨 예정", next: "다음 회차 접수", round: "회차", conditions: (p, l) => `로그인 · 커뮤니티 글 ${p}개 작성 · 내 글에 좋아요 ${l}개 받기` },
   en: { open: "Entries open", closed: "Entries closed", paused: "Coming soon", draw: "Scheduled draw", next: "Next entries open", round: "Round", conditions: (p, l) => `Log in · Write ${p} community post · Receive ${l} like on your posts` },
   ja: { open: "受付中", closed: "今週の受付終了", paused: "準備中", draw: "抽選予定", next: "次回受付開始", round: "回", conditions: (p, l) => `ログイン・投稿${p}件・自分の投稿にいいね${l}件` },
   zh: { open: "报名中", closed: "本期报名结束", paused: "准备中", draw: "计划开奖", next: "下期报名", round: "期数", conditions: (p, l) => `登录 · 发帖${p}篇 · 自己的帖子获得${l}个赞` },

@@ -8,6 +8,8 @@ import Link from "next/link";
 import { BG, CARD, BORDER, INK, MUTED, RED, FLAG, FONT_SANS, FONT_SERIF } from "@/lib/theme";
 import type { TrendingItem } from "@/lib/hub-trending";
 import { hubLabels } from "@/lib/hub-i18n";
+import { EVENT_OPERATION } from "@/lib/event-config";
+import { REVIEW_EVENT_BANNER_KO } from "@/lib/participation-config";
 import type { SecondaryLocale } from "@/lib/intl";
 import SolverPromo, { SOLVER_PROMO_LOCALES, type SolverPromoLocale } from "@/components/solver-promo";
 
@@ -77,29 +79,34 @@ export default function HubSidebar({
         </div>
       )}
 
-      {/* 이벤트 배너 */}
+      {/* 이벤트 배너 — 매주 번호 추첨을 멈춘 동안은 KO만 «대회 후기 이벤트»를 보이고 나머지 언어는 숨긴다(2026-09-28). */}
+      {(EVENT_OPERATION.acceptingEntries || current === "ko") && (() => {
+        const E = EVENT_OPERATION.acceptingEntries
+          ? { badge: L.eventBadge, title: L.eventTitle, desc: L.eventDesc, schedule: L.eventSchedule, button: L.eventButton }
+          : REVIEW_EVENT_BANNER_KO;
+        return (
       <div className="rounded p-4" style={{ background: CARD, border: `1px solid ${BORDER}` }}>
         <p
           className="text-[10px] font-bold tracking-widest uppercase mb-1"
           style={{ color: RED, fontFamily: FONT_SANS }}
         >
-          {L.eventBadge}
+          {E.badge}
         </p>
         <p
           className="text-[16px] font-medium mb-1.5 whitespace-pre-line"
           style={{ color: INK, fontFamily: FONT_SERIF }}
         >
-          {L.eventTitle}
+          {E.title}
         </p>
         <p className="text-[12px] mb-2 whitespace-pre-line" style={{ color: MUTED, fontFamily: FONT_SANS }}>
-          {L.eventDesc}
+          {E.desc}
         </p>
         <div
           className="rounded px-3 py-2 mb-3 whitespace-pre-line"
           style={{ background: "rgba(var(--gold-dark-rgb),0.07)", border: "1px solid rgba(var(--gold-dark-rgb),0.18)" }}
         >
           <p className="text-[11px] leading-relaxed" style={{ color: MUTED, fontFamily: FONT_SANS }}>
-            {L.eventSchedule}
+            {E.schedule}
           </p>
         </div>
         <Link
@@ -107,9 +114,11 @@ export default function HubSidebar({
           className="block w-full py-2 rounded text-sm font-semibold text-center"
           style={{ background: INK, color: BG, fontFamily: FONT_SANS }}
         >
-          {L.eventButton}
+          {E.button}
         </Link>
       </div>
+        );
+      })()}
 
       {/* 커뮤니티 언어 */}
       <div>

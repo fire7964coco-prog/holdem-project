@@ -26,7 +26,8 @@ import SideRail, { LEGAL_PAGES } from "@/components/side-rail";
 import SolverPromo, { SOLVER_PROMO_LOCALES, type SolverPromoLocale } from "@/components/solver-promo";
 import type { Post } from "@/lib/posts";
 import { isSecondaryLocale } from "@/lib/intl";
-import { getCurrentEventId } from "@/lib/event-config";
+import { getCurrentEventId, EVENT_OPERATION } from "@/lib/event-config";
+import { REVIEW_EVENT_BANNER_KO } from "@/lib/participation-config";
 import { loginHref } from "@/lib/auth-navigation";
 import MobileHomeNavigation from "./mobile-home-navigation";
 import EventStatus, { EventStatusBadge } from "./event-status";
@@ -1657,19 +1658,20 @@ export default function CommunityClient({
                 </div>
               )}
 
-              {/* 이벤트 배너 */}
+              {/* 이벤트 배너 — 매주 번호 추첨을 멈춘 동안은 KO만 «대회 후기 이벤트»를 보이고 나머지 언어는 숨긴다(2026-09-28). */}
+              {(EVENT_OPERATION.acceptingEntries || (pageLocale ?? myLanguage) === "ko") && (
               <div className="rounded p-4" style={{ background: CARD, border: `1px solid ${BORDER}` }}>
                 <p className="text-[10px] font-bold tracking-widest uppercase mb-1" style={{ color: RED, fontFamily: FONT_SANS }}>
-                  🎰 <EventStatusBadge lang={pageLocale ?? myLanguage} />
+                  {EVENT_OPERATION.acceptingEntries ? <>🎰 <EventStatusBadge lang={pageLocale ?? myLanguage} /></> : REVIEW_EVENT_BANNER_KO.badge}
                 </p>
                 <p
                   className="text-[16px] font-medium mb-1.5 whitespace-pre-line"
                   style={{ color: INK, fontFamily: FONT_SERIF }}
                 >
-                  {L.eventTitle}
+                  {EVENT_OPERATION.acceptingEntries ? L.eventTitle : REVIEW_EVENT_BANNER_KO.title}
                 </p>
                 <p className="text-[12px] mb-2 whitespace-pre-line" style={{ color: MUTED, fontFamily: FONT_SANS }}>
-                  {L.eventDesc}
+                  {EVENT_OPERATION.acceptingEntries ? L.eventDesc : REVIEW_EVENT_BANNER_KO.desc}
                 </p>
                 {/* 추첨 일정 안내 */}
                 <div
@@ -1686,6 +1688,7 @@ export default function CommunityClient({
                   {L.eventButton}
                 </button>
               </div>
+              )}
 
               {/* 커뮤니티 언어 */}
               <div>

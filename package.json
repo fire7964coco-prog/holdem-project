@@ -13,6 +13,8 @@
     "check:gto": "node scripts/check-gto-numbers.mjs",
     "check:gto:structure": "node scripts/check-gto-structure.mjs",
     "check:gto:selftest": "node scripts/check-gto-numbers.mjs --selftest",
+    "check:participation": "node scripts/check-participation.mjs",
+    "check:participation:selftest": "node scripts/check-participation.mjs --selftest",
     "audit:hard:selftest": "node scripts/audit-hardening.mjs --selftest",
     "check:de-style": "node scripts/check-de-style.mjs",
     "check:de-style:selftest": "node scripts/check-de-style.mjs --selftest",

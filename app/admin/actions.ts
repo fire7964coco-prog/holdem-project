@@ -4,6 +4,7 @@ import { revalidatePath } from "next/cache";
 import { requireAdmin } from "@/lib/admin";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { performDraw } from "@/lib/event-draw";
+import { performReviewDraw } from "@/lib/review-event";
 
 const BADGES = ["winner", "hot", "top", "participant"] as const;
 
@@ -137,6 +138,69 @@ export async function deleteDraw(eventId: string) {
   const { error, db } = await guard();
   if (error) return { error };
   const { error: e } = await db.from("event_draws").delete().eq("event_id", eventId);
+  if (e) return { error: e.message };
+  revalidatePath("/admin");
+  return { success: true };
+}
+
+// ── 참여 장치: 대회 후기 · 투표 코멘트 · 후기 이벤트 추첨 (2026-09-28) ──────────
+const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+
+/** 후기 숨김/복구 — 숨긴 후기는 목록·응모에서 빠진다(이미 끝난 추첨 결과는 그대로). */
+export async function setReviewHidden(id: string, hidden: boolean) {
+  const { error, db } = await guard();
+  if (error) return { error };
+  if (!UUID_RE.test(id)) return { error: "id 형식 오류" };
+  const { error: e } = await db.from("tournament_reviews").update({ is_hidden: !!hidden }).eq("id", id);
+  if (e) return { error: e.message };
+  revalidatePath("/admin");
+  return { success: true };
+}
+
+/** 베스트 후기 지정/해제 */
+export async function setReviewBest(id: string, best: boolean) {
+  const { error, db } = await guard();
+  if (error) return { error };
+  if (!UUID_RE.test(id)) return { error: "id 형식 오류" };
+  // 베스트는 대회당 1명(설계 §4) — 지정할 때 같은 대회의 다른 베스트를 먼저 해제한다.
+  if (best) {
+    const { data: row, error: rErr } = await db.from("tournament_reviews").select("tournament_id").eq("id", id).maybeSingle();
+    if (rErr || !row) return { error: rErr?.message ?? "후기를 찾지 못했습니다" };
+    const { error: cErr } = await db.from("tournament_reviews").update({ is_best: false }).eq("tournament_id", row.tournament_id).neq("id", id);
+    if (cErr) return { error: cErr.message };
+  }
+  const { error: e } = await db.from("tournament_reviews").update({ is_best: !!best }).eq("id", id);
+  if (e) return { error: e.message };
+  revalidatePath("/admin");
+  return { success: true };
+}
+
+/** 투표 코멘트 숨김/복구 */
+export async function setPollCommentHidden(id: string, hidden: boolean) {
+  const { error, db } = await guard();
+  if (error) return { error };
+  if (!UUID_RE.test(id)) return { error: "id 형식 오류" };
+  const { error: e } = await db.from("poll_comments").update({ is_hidden: !!hidden }).eq("id", id);
+  if (e) return { error: e.message };
+  revalidatePath("/admin");
+  return { success: true };
+}
+
+/** 대회 후기 이벤트 추첨을 지금 실행 — 크론이 실패했을 때의 수동 실행용. 응모 마감 전·이미 추첨한 회차는 거부/건너뜀. */
+export async function runReviewDraw(tournamentId: string) {
+  const { error, db } = await guard();
+  if (error) return { error };
+  const res = await performReviewDraw(db, tournamentId);
+  if (res.error) return { error: res.error };
+  revalidatePath("/admin");
+  return { success: true, ...res };
+}
+
+/** 대회 후기 이벤트 추첨 기록 삭제(테스트 정리용) */
+export async function deleteReviewDraw(tournamentId: string) {
+  const { error, db } = await guard();
+  if (error) return { error };
+  const { error: e } = await db.from("review_event_draws").delete().eq("tournament_id", tournamentId);
   if (e) return { error: e.message };
   revalidatePath("/admin");
   return { success: true };

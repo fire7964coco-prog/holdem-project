@@ -25,6 +25,7 @@ import ClusterMinimap, { PILLAR_ICONS } from "@/components/cluster-minimap";
 import RankingTable from "@/components/ranking-table";
 import CalcCtaButton from "@/components/calc-cta-button";
 import GtoSeriesNav from "@/components/gto-series-nav";
+import PollWidget from "@/components/participation/poll-widget";
 import { KO_CLUSTERS, clusterForSlug } from "@/lib/pillar-clusters";
 import Image from "next/image";
 import { useState, useRef, useEffect, useCallback } from "react";
@@ -90,6 +91,7 @@ export default function BlogPost({
   post,
   headings,
   bodyParts,
+  bodyPolls,
   summarySlot,
   prevPost,
   nextPost,
@@ -110,6 +112,11 @@ export default function BlogPost({
    * 길이가 2 이상이면 조각 사이마다 <QuizWidget/>이 들어간다(길이 1 = 퀴즈 없음).
    */
   bodyParts: string[];
+  /**
+   * 있으면 조각 사이마다 퀴즈 대신 이 투표가 들어간다(i번째 조각 뒤 = bodyPolls[i]).
+   * page.tsx 가 `:::poll[id]:::` 표식에서 잘라 넘긴다(lib/poll-slots.ts). 퀴즈와 한 글에 섞이지 않는다.
+   */
+  bodyPolls?: string[];
   /**
    * 서버(page.tsx)에서 본문 첫 이미지를 추출·제거 후 "이 글 전체 요약" 섹션으로 만들어 전달.
    * LCP를 제목 텍스트로 옮기기 위해 본문에서는 빠지고, 페이지 맨 하단(관련 글 다음)에 lazy 로드.
@@ -591,7 +598,9 @@ export default function BlogPost({
                               __html: `<p class="text-muted-foreground text-base leading-relaxed mb-4">${html}</p>`,
                             }}
                           />
-                          {i < bodyParts.length - 1 && <QuizWidget />}
+                          {i < bodyParts.length - 1 && (bodyPolls
+                            ? <PollWidget pollId={bodyPolls[i]} slug={post.slug} />
+                            : <QuizWidget />)}
                         </div>
                       ))}
                     </>

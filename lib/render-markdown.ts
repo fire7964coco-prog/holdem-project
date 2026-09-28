@@ -110,6 +110,10 @@ export function renderMarkdown(content: string, locale?: string): string {
   };
 
   return content
+    // :::poll[<id>]::: — 전략 글 투표 자리(lib/polls.ts). 여기서는 빈 표식 div만 남긴다.
+    // app/blog/[slug]/page.tsx 가 렌더 결과를 이 표식에서 잘라 그 사이에 <PollWidget/>을 넣는다
+    // (문서를 한 번에 렌더해 헤딩 id 발급기·LCP 판정이 둘로 쪼개지지 않게). 쪼개지 않는 레이아웃에선 빈 div라 보이지 않는다.
+    .replace(/^:::poll\[([a-z0-9-]+)\]:::$/gm, '<div data-hm-slot="poll:$1"></div>')
     // Tie-break rule rows — language-independent block (rows come from markdown).
     // Syntax: :::tiebreak  (then one row per line)  name|rule|(+/-)kickerLabel  ... :::
     // MUST run before table / bold processing so its "|" separators don't leak.
@@ -563,11 +567,13 @@ export function renderMarkdown(content: string, locale?: string): string {
       `<span style="font-size:12px;color:hsl(var(--muted-foreground))">${label}</span></div>`)
     // :::eventcta::: — 본문 중간 이벤트 참여 유도 소형 CTA (클릭 시 홈 커뮤니티 이벤트 탭)
     // 색: 프로젝트 팔레트(웜 크림 bg + 다크그린 텍스트 + 골드 액센트) 기준, 네이비 미사용
+    // 🔴 문구는 지금 운영 중인 이벤트와 같아야 한다 — 2026-09-28 매주 번호 추첨 → 대회 후기 이벤트로 교체
+    //    (lib/event-config.ts EVENT_OPERATION · lib/participation-config.ts REVIEW_EVENT).
     .replace(/^:::eventcta:::$/gm, () =>
       `<a href="/?tab=event" style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;text-decoration:none;margin:24px 0;padding:12px 14px 12px 16px;border-radius:12px;background:linear-gradient(135deg,hsl(40 45% 97%) 0%,hsl(40 48% 92%) 100%);border:1px solid hsl(43 55% 68%);box-shadow:0 3px 14px hsl(43 40% 40% / 0.14)">` +
       `<span style="flex:1;min-width:150px;display:flex;align-items:center;gap:9px">` +
-      `<span style="font-size:18px;flex-shrink:0">🎰</span>` +
-      `<span style="font-size:13.5px;font-weight:700;line-height:1.45;color:hsl(152 45% 12%)">매주 일요일 기프트콘 이벤트 진행 중 <span style="color:hsl(152 14% 38%);font-weight:500">· 번호 6개 선택</span></span>` +
+      `<span style="font-size:18px;flex-shrink:0">🎁</span>` +
+      `<span style="font-size:13.5px;font-weight:700;line-height:1.45;color:hsl(152 45% 12%)">대회 후기 쓰면 기프트콘 추첨 <span style="color:hsl(152 14% 38%);font-weight:500">· 베스트 후기 5만 원</span></span>` +
       `</span>` +
       `<span style="flex-shrink:0;display:inline-flex;align-items:center;gap:5px;padding:9px 16px;border-radius:9px;background:linear-gradient(135deg,hsl(43 68% 50%),hsl(43 65% 42%));color:hsl(40 45% 97%);font-size:13px;font-weight:800;white-space:nowrap;box-shadow:0 2px 8px hsl(43 60% 40% / 0.35)">이벤트 참여하기 →</span>` +
       `</a>`)

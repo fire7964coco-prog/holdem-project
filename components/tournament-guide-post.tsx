@@ -15,6 +15,9 @@ import { SITE } from "@/lib/site";
 import { useState, useRef } from "react";
 import ReadingProgressBar from "./reading-progress-bar";
 import BottomTabBar from "./bottom-tab-bar";
+import {
+  ParticipationBar, ReviewsSection, REVIEWS_ANCHOR, useTournamentParticipation, type ParticipationProps,
+} from "./participation/tournament-participation";
 
 export default function TournamentGuidePost({
   post,
@@ -23,6 +26,7 @@ export default function TournamentGuidePost({
   summarySlot,
   related,
   nextTourPost,
+  participation,
 }: {
   /** ★ content 없음 — 본문은 서버에서 렌더돼 bodyHtml로 온다. */
   post: Omit<Post, "content">;
@@ -35,6 +39,8 @@ export default function TournamentGuidePost({
   related: RelatedCard[];
   /** 시리즈의 다음 대회 가이드 — 서버에서 선별. */
   nextTourPost: NavLink | null;
+  /** «참가 예정 → 후기» 파일럿 대상이면 서버가 넘긴다(lib/participation-config.ts). 없으면 바·후기 없음. */
+  participation?: ParticipationProps;
 }) {
   const [copied, setCopied] = useState(false);
   const contentRef = useRef<HTMLDivElement>(null);
@@ -47,7 +53,13 @@ export default function TournamentGuidePost({
     });
   }
 
-  const hasToc = headings.length >= 2;
+  const part = useTournamentParticipation(participation);
+  // 대회가 끝나 후기 섹션이 실제로 그려질 때만 목차에 «참가자 후기»를 붙인다(없는 곳을 가리키지 않게).
+  const tocHeadings =
+    participation && part.data?.available && part.phase === "after"
+      ? [...headings, { id: REVIEWS_ANCHOR, text: "참가자 후기", level: 2 }]
+      : headings;
+  const hasToc = tocHeadings.length >= 2;
 
   return (
     <>
@@ -188,6 +200,8 @@ export default function TournamentGuidePost({
             <p className="text-base text-foreground font-medium leading-relaxed">{post.tldr}</p>
           </aside>
         )}
+
+        {participation && <ParticipationBar p={participation} state={part} />}
       </div>
 
       {/* ──── Main layout ──── */}
@@ -201,7 +215,7 @@ export default function TournamentGuidePost({
                 <nav className="bg-card border border-border rounded-2xl p-5" aria-label="목차">
                   <p className="text-[10px] font-bold uppercase tracking-widest text-primary mb-4">단계별 목차</p>
                   <ol className="space-y-2">
-                    {headings.map((h, i) => (
+                    {tocHeadings.map((h, i) => (
                       <li key={h.id} className="flex items-start gap-2.5">
                         <span className="flex-shrink-0 w-5 h-5 rounded-full text-[10px] font-bold flex items-center justify-center mt-0.5"
                           style={{ background: "rgba(var(--gold-dark-rgb),0.15)", color: "rgb(var(--gold-dark-rgb))", border: "1px solid rgba(var(--gold-dark-rgb),0.35)" }}>
@@ -243,13 +257,13 @@ export default function TournamentGuidePost({
               <details className="xl:hidden group bg-card border border-border rounded-2xl mb-6">
                 <summary className="flex items-center justify-between gap-3 px-6 py-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden rounded-2xl hover:bg-card/70 transition-colors">
                   <span className="flex items-center gap-2.5 text-xs font-bold uppercase tracking-widest text-primary">
-                    단계별 목차 <span className="text-muted-foreground/60 font-normal normal-case tracking-normal">({headings.length}단계)</span>
+                    단계별 목차 <span className="text-muted-foreground/60 font-normal normal-case tracking-normal">({tocHeadings.length}단계)</span>
                   </span>
                   <ChevronDown className="w-5 h-5 text-primary transition-transform duration-200 group-open:rotate-180" />
                 </summary>
                 <nav className="px-6 pb-6 pt-2 border-t border-border/60">
                   <ol className="space-y-2">
-                    {headings.map((h, i) => (
+                    {tocHeadings.map((h, i) => (
                       <li key={h.id} className="flex items-start gap-2.5">
                         <span className="flex-shrink-0 w-5 h-5 rounded-full text-[10px] font-bold flex items-center justify-center mt-0.5"
                           style={{ background: "rgba(var(--gold-dark-rgb),0.15)", color: "rgb(var(--gold-dark-rgb))", border: "1px solid rgba(var(--gold-dark-rgb),0.35)" }}>
@@ -275,6 +289,8 @@ export default function TournamentGuidePost({
                 }}
               />
             </article>
+
+            {participation && <ReviewsSection p={participation} state={part} />}
 
             {/* Next in series — mobile CTA */}
             {nextTourPost && (

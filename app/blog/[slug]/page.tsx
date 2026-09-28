@@ -10,6 +10,9 @@ import BlogPostClient from "./blog-post-client";
 import TournamentGuidePost from "@/components/tournament-guide-post";
 import { extractHeadings } from "@/lib/blog-headings";
 import { renderMarkdown } from "@/lib/render-markdown";
+import { splitPollSlots } from "@/lib/poll-slots";
+import { reviewTournamentBySlug } from "@/lib/participation-config";
+import { tournamentDates } from "@/lib/review-event";
 import { relatedFor, courseNeighbors, linkedSlugsIn } from "@/lib/related-posts";
 import { KO_CLUSTERS, STICKY_HUB, clusterForSlug } from "@/lib/pillar-clusters";
 
@@ -391,12 +394,26 @@ export default function Page({ params }: { params: { slug: string } }) {
   const { content: _rawContent, ...postMeta } = post;
   const headings = extractHeadings(contentForClient);
   // 토너먼트 레이아웃은 예나 지금이나 본문을 쪼개지 않는다(퀴즈 위젯이 없다) → 통째로 렌더.
-  const bodyParts =
-    post.layout !== "tournament-guide" && contentForClient.includes(":::quiz:::")
+  const hasQuiz = post.layout !== "tournament-guide" && contentForClient.includes(":::quiz:::");
+  // 투표(:::poll[id]:::)는 문서를 한 번에 렌더한 뒤 표식에서 자른다 — lib/poll-slots.ts.
+  const hasPoll = post.layout !== "tournament-guide" && /^:::poll\[/m.test(contentForClient);
+  if (hasQuiz && hasPoll) throw new Error(`[poll] ${post.slug}: 퀴즈와 투표를 한 글에 같이 넣지 않는다(조각 나누기 규칙이 둘이다)`);
+  const pollSplit = hasPoll ? splitPollSlots(renderMarkdown(contentForClient, "ko"), post.slug) : null;
+  const bodyParts = pollSplit
+    ? pollSplit.parts
+    : hasQuiz
       // 🔴 `.map(renderMarkdown)` 로 쓰지 마라 — map 이 2번째 인자로 인덱스를 넘겨
       //    renderMarkdown 의 locale 자리에 0·1 이 들어간다. 반드시 화살표로 감싼다.
       ? contentForClient.split(/^:::quiz:::$/m).map((c) => renderMarkdown(c, "ko"))
       : [renderMarkdown(contentForClient, "ko")];
+
+  // 대회 «참가 예정 → 후기» 파일럿(lib/participation-config.ts) — 날짜는 lib/tournaments.ts가 정본.
+  const reviewTournament = post.layout === "tournament-guide" ? reviewTournamentBySlug(post.slug) : undefined;
+  const reviewDates = reviewTournament ? tournamentDates(reviewTournament.id) : null;
+  if (reviewTournament && !reviewDates) throw new Error(`[participation] ${post.slug}: lib/tournaments.ts 에 «${reviewTournament.id}» 날짜가 없다`);
+  const participation = reviewTournament && reviewDates
+    ? { tournamentId: reviewTournament.id, label: reviewTournament.label, slug: post.slug, ...reviewDates }
+    : undefined;
 
   return (
     <>
@@ -415,12 +432,14 @@ export default function Page({ params }: { params: { slug: string } }) {
           summarySlot={summarySlot}
           related={relatedPosts}
           nextTourPost={nextTourPost}
+          participation={participation}
         />
       ) : (
         <BlogPostClient
           post={postMeta}
           headings={headings}
           bodyParts={bodyParts}
+          bodyPolls={pollSplit?.pollIds}
           summarySlot={summarySlot}
           prevPost={prevPost}
           nextPost={nextPost}

@@ -7611,6 +7611,8 @@ BB는 콜만 하면 OOP에서 포스트플랍을 시작하게 됩니다. 특정 
 
 더 자세한 플랍 운영은 [C벳 전략](/blog/holdem-cbet-strategy)과 함께 보면 좋습니다.
 
+:::poll[3bp-ak2-bb-first]:::
+
 비슷한 3벳팟 스팟들을 우리 GTO 솔버로 직접 계산해 뒀습니다. [3벳팟 A하이 보드](/blog/3bet-pot-cbet "thumb:/images/gto-3bp-ace-king-oop.webp")에서 3벳터의 체크는 **0.0%**이고, [젖은 QT7 보드](/blog/3bet-pot-bet-sizing)에서는 팟 2/3 한 사이즈가 98.4%입니다. 반대로 [로우 드라이 보드](/blog/3bet-pot-low-board)에서는 셋이 전부 콜러 쪽에 있어, 오버페어를 너트로 착각하면 스택이 통째로 넘어갑니다.
 
 ---

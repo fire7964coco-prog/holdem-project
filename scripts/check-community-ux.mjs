@@ -1,23 +1,28 @@
 import assert from "node:assert/strict";
-import { getEventState, getIsoWeekId } from "../lib/event-config.ts";
+import { getEventState, getIsoWeekId, EVENT_OPERATION } from "../lib/event-config.ts";
 import { mergeChatMessages } from "../lib/chat-messages.ts";
 
+// Weekly draw is paused since 2026-09-28 (tournament review event instead) — the flag must close entries.
+const pausedNow = getEventState(new Date("2026-09-20T09:59:59.999Z"));
+assert.equal(pausedNow.isOpen, EVENT_OPERATION.acceptingEntries);
+assert.equal(pausedNow.isPaused, !EVENT_OPERATION.acceptingEntries);
+// Week-boundary logic is checked with entries accepted (second argument), independent of the current flag.
 // Current ISO week is intentionally retained until Monday UTC, even after Sunday's draw.
-const beforeDraw = getEventState(new Date("2026-09-20T09:59:59.999Z"));
+const beforeDraw = getEventState(new Date("2026-09-20T09:59:59.999Z"), true);
 assert.equal(beforeDraw.eventId, "2026-W38");
 assert.equal(beforeDraw.isOpen, true);
 assert.equal(beforeDraw.drawAt, "2026-09-20T10:00:00.000Z");
 assert.equal(beforeDraw.nextOpenAt, "2026-09-21T00:00:00.000Z");
 for (const instant of ["2026-09-20T10:00:00Z", "2026-09-20T23:59:59.999Z"]) {
-  const state = getEventState(new Date(instant));
+  const state = getEventState(new Date(instant), true);
   assert.equal(state.isOpen, false);
   assert.equal(state.eventId, "2026-W38");
 }
-const monday = getEventState(new Date("2026-09-21T00:00:00Z"));
+const monday = getEventState(new Date("2026-09-21T00:00:00Z"), true);
 assert.equal(monday.isOpen, true);
 assert.equal(monday.eventId, "2026-W39");
 assert.equal(monday.drawAt, "2026-09-27T10:00:00.000Z");
-const newYear = getEventState(new Date("2027-01-01T00:00:00Z"));
+const newYear = getEventState(new Date("2027-01-01T00:00:00Z"), true);
 assert.equal(newYear.eventId, "2026-W53");
 assert.equal(newYear.drawAt, "2027-01-03T10:00:00.000Z");
 assert.equal(newYear.nextOpenAt, "2027-01-04T00:00:00.000Z");

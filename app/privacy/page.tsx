@@ -15,7 +15,7 @@ import { LegalPage, LegalSection } from "@/components/legal-page";
  *   스택을 바꾸면 이 문서도 같이 바꿔야 한다. 안 그러면 "사실과 다른 고지"가 된다.
  */
 
-const UPDATED = "2026-08-04";
+const UPDATED = "2026-09-28";
 
 export const metadata: Metadata = {
   title: "개인정보처리방침",
@@ -66,8 +66,8 @@ export default function PrivacyPage() {
             </tr>
             <tr>
               <td>소셜 로그인</td>
-              <td>Google 계정의 이메일 주소·이름·프로필 이미지 주소</td>
-              <td>Google 로그인 이용 시</td>
+              <td>Google 계정의 이메일 주소·이름·프로필 이미지 주소 / 카카오 계정의 닉네임·이메일 주소</td>
+              <td>Google·카카오 로그인 이용 시</td>
             </tr>
             <tr>
               <td>이용자 게시물</td>
@@ -76,8 +76,18 @@ export default function PrivacyPage() {
             </tr>
             <tr>
               <td>이벤트 참여</td>
-              <td>선택한 번호 6개, 참여 자격 여부</td>
+              <td>대회 후기 이벤트: 응모한 후기, 당첨 안내를 위한 가입 이메일 주소 · 주간 번호 추첨(2026년 9월까지 운영): 선택한 번호 6개, 참여 자격 여부</td>
               <td>이벤트 응모 시</td>
+            </tr>
+            <tr>
+              <td>대회 참가 예정·후기</td>
+              <td>참가 예정 표시 여부, 후기 본문·참가한 이벤트·결과·별점</td>
+              <td>해당 기능 이용 시</td>
+            </tr>
+            <tr>
+              <td>전략 글 투표</td>
+              <td>선택한 답, 브라우저에 저장되는 무작위 식별자, 접속 IP 주소를 변환한 값(해시 — 원래 IP 주소는 저장하지 않음), 한 줄 코멘트(로그인 시)</td>
+              <td>투표·코멘트 시</td>
             </tr>
             <tr>
               <td>자동 수집</td>
@@ -96,7 +106,8 @@ export default function PrivacyPage() {
         <ul>
           <li>회원 식별 및 로그인 상태 유지</li>
           <li>커뮤니티 글·댓글·채팅의 작성자 표시와 본인 게시물 관리</li>
-          <li>이벤트 참여 자격 확인 및 중복 응모 방지</li>
+          <li>이벤트 참여 자격 확인, 중복 응모 방지, 추첨·당첨 안내</li>
+          <li>대회 후기·투표 결과 표시와 중복 투표·도배 방지</li>
           <li>다국어 이용자를 위한 게시물 자동 번역 제공</li>
           <li>서비스 이용 통계 분석과 성능(로딩 속도) 개선</li>
           <li>부정 이용·스팸·불법 게시물 대응</li>
@@ -112,6 +123,10 @@ export default function PrivacyPage() {
             <strong>회원 정보</strong> — 회원 탈퇴 시 지체 없이 파기합니다. 계정이 삭제되면 그 계정이
             작성한 글·댓글·좋아요·채팅·이벤트 응모 기록도 함께 삭제됩니다(데이터베이스에 연쇄 삭제로
             설정되어 있습니다).
+          </li>
+          <li>
+            <strong>투표 기록</strong> — 무작위 식별자와 IP 주소 변환값만 남아 회원 계정과 연결되지 않으며,
+            투표 결과를 보여 주는 동안 보관합니다.
           </li>
           <li>
             <strong>접속 로그</strong> — 서비스 제공자(Vercel·Supabase)의 기본 보관 정책에 따르며, 별도의

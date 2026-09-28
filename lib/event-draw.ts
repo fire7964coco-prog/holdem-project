@@ -20,6 +20,26 @@ export function deriveNumbers(blockHash: string): number[] {
   return numbers.sort((a, b) => a - b);
 }
 
+/**
+ * 최신 비트코인 블록 높이·해시 (Blockstream 공개 API).
+ * 주간 번호 추첨과 대회 후기 이벤트 추첨(lib/review-event.ts)이 같이 쓴다.
+ */
+export async function fetchLatestBlock(): Promise<
+  { blockHeight: number; blockHash: string; explorerUrl: string } | { error: string }
+> {
+  const heightRes = await fetch("https://blockstream.info/api/blocks/tip/height", { cache: "no-store" });
+  if (!heightRes.ok) return { error: "블록 높이 조회 실패" };
+  const blockHeight = parseInt(await heightRes.text());
+  if (!Number.isFinite(blockHeight)) return { error: "블록 높이 형식 오류" };
+
+  const hashRes = await fetch(`https://blockstream.info/api/block-height/${blockHeight}`, { cache: "no-store" });
+  if (!hashRes.ok) return { error: "블록 해시 조회 실패" };
+  const blockHash = (await hashRes.text()).trim();
+  if (!/^[0-9a-f]{64}$/.test(blockHash)) return { error: "블록 해시 형식 오류" };
+
+  return { blockHeight, blockHash, explorerUrl: `https://blockstream.info/block/${blockHash}` };
+}
+
 export type DrawResult = {
   event_id: string;
   block_height: number;
@@ -50,17 +70,11 @@ export async function performDraw(
     await supabase.from("event_draws").delete().eq("event_id", eventId);
   }
 
-  // 최신 블록 높이 → 해시 (Blockstream 공개 API)
-  const heightRes = await fetch("https://blockstream.info/api/blocks/tip/height");
-  if (!heightRes.ok) return { error: "블록 높이 조회 실패" };
-  const blockHeight = parseInt(await heightRes.text());
-
-  const hashRes = await fetch(`https://blockstream.info/api/block-height/${blockHeight}`);
-  if (!hashRes.ok) return { error: "블록 해시 조회 실패" };
-  const blockHash = (await hashRes.text()).trim();
+  const block = await fetchLatestBlock();
+  if ("error" in block) return { error: block.error };
+  const { blockHeight, blockHash, explorerUrl } = block;
 
   const winningNumbers = deriveNumbers(blockHash);
-  const explorerUrl = `https://blockstream.info/block/${blockHash}`;
 
   const { error } = await supabase.from("event_draws").insert({
     event_id: eventId,
